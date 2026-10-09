@@ -11,6 +11,8 @@ def find(name,brand,kind):
         if re.search(r'(^|[^a-z])'+re.escape(n)+r'([^a-z]|$)',t):
             if best is None or len(t)<len(C['C'][best][2]): best=i
     return best
+for m in D['M']: del m[4:]
+for t in D['T']: del t[7:]
 hit=0
 for m in D['M']:
     j=find(m[0],m[1],1); m.append(j if j is not None else -1); hit+= j is not None
