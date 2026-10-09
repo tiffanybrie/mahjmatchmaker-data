@@ -1,0 +1,100 @@
+<title>Catalog Color Check</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Bitter:wght@400;600;700&display=swap">
+<style>
+/* Layout: phone column; color tabs scroll sideways; tap a piece to open a fixed bottom picker */
+:root{--navy:#1f3a6b;--rose:#c2547a;--cream:#f8efe6;--blush:#f2d6de;--paper:#ffffff;--line:#eadfd2;--muted:#5b6b86;
+--display:'Shrikhand',Georgia,serif;--body:'Bitter',Georgia,serif;color-scheme:light}
+*{box-sizing:border-box}
+body{background:var(--cream);color:var(--navy);font-family:var(--body);font-size:16px;line-height:1.5;margin:0;padding-inline:16px;padding-block:0 140px}
+h1{font-family:var(--display);font-weight:400;color:var(--rose);font-size:34px;line-height:1.05;margin:20px 0 4px}
+p.lede{margin:0 0 6px;max-width:60ch}
+.stat{font-size:14px;color:var(--muted)}
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);background:var(--cream);z-index:3;display:flex;gap:8px;overflow-x:auto;padding-block:10px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;display:flex;align-items:center;gap:8px;border:2px solid var(--line);background:var(--paper);border-radius:999px;padding:7px 12px 7px 8px;font:600 14px var(--body);color:var(--navy);cursor:pointer;min-height:44px}
+.tab i{width:22px;height:22px;border-radius:50%;display:inline-block;box-shadow:0 0 0 1px var(--line)}
+.tab[aria-pressed="true"]{border-color:var(--navy);background:var(--blush)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:10px}
+.it{position:relative;background:var(--paper);border:0;border-radius:14px;overflow:hidden;padding:0;cursor:pointer;text-align:left;font-family:inherit;color:inherit}
+.it .ph{aspect-ratio:1/1;background-color:var(--blush);background-repeat:no-repeat}
+.it span{display:block;font-size:11px;line-height:1.3;padding:5px 7px 7px;height:3.3em;overflow:hidden}
+.it.fixed::after{content:"✓ fixed";position:absolute;top:6px;left:6px;background:var(--navy);color:#fff;font-size:11px;font-weight:700;padding:2px 7px;border-radius:999px}
+.it.sel{outline:3px solid var(--rose)}
+.pick{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--paper);border-top:2px solid var(--blush);padding:12px 16px calc(14px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:10px;box-shadow:0 -10px 30px rgba(31,58,107,.12)}
+.pick .top{display:flex;gap:12px;align-items:center}
+.pick .ph{width:64px;height:64px;border-radius:12px;flex-shrink:0;background-color:var(--blush);background-repeat:no-repeat}
+.pick .nm{font-weight:700;font-size:14px;line-height:1.3;min-width:0}
+.pick .nm small{display:block;font-weight:400;color:var(--muted)}
+.sw{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.sw button{border:2px solid var(--line);background:var(--paper);border-radius:12px;padding:6px 2px;font:600 11px var(--body);color:var(--navy);display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;min-height:52px}
+.sw button i{width:22px;height:22px;border-radius:50%;box-shadow:0 0 0 1px var(--line)}
+.sw button[aria-pressed="true"]{border-color:var(--navy);background:var(--blush)}
+.close{margin-left:auto;width:40px;height:40px;border-radius:50%;border:0;background:var(--cream);font-size:18px;cursor:pointer;flex-shrink:0;color:var(--navy)}
+.msg{font-size:13px;color:var(--muted);font-style:italic}
+:focus-visible{outline:3px solid var(--rose);outline-offset:2px}
+</style>
+
+<h1>Catalog Color Check</h1>
+<p class="stat">Version 3 · one listing per multi-color piece · Bird &amp; Bamboo swatches</p>
+<p class="lede">Tap any piece that's in the wrong color group and pick the right color. Fixes save as you go, and I pick them up for the Match Builder.</p>
+<p class="lede"><strong>Check photo</strong> lists racks whose name says one color while the photo may show another. Pick the color you see, or Not mahj if the photo is wrong for that listing.</p>
+<p class="stat" id="stat">Loading the catalog…</p>
+<div class="tabs" id="tabs" role="group" aria-label="Color group"></div>
+<div class="grid" id="grid"></div>
+<div class="pick" id="pick" hidden></div>
+
+<script>
+(async function(){
+const $=s=>document.querySelector(s);
+const FAM=[['pink','#e9a3b8','Pink'],['red','#b8433c','Red'],['orange','#d9824b','Orange'],['yellow','#e7c75a','Yellow'],['green','#6f8a52','Green'],['teal','#3fa3a0','Teal'],['blue','#5b7fb5','Blue'],['purple','#9a7bb8','Purple'],['neutral','#e2d3bb','Neutral'],['black','#2b2b2b','Black'],['multi','conic-gradient(#e9a3b8,#e7c75a,#6f8a52,#5b7fb5,#9a7bb8,#e9a3b8)','Multi'],['remove','repeating-linear-gradient(45deg,#fff 0 4px,#c2547a 4px 6px)','Not mahj']];
+const esc=s=>String(s).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+let C,SP;
+try{[C,SP]=await Promise.all([fetch('catalog.json?v=20261009d',{cache:'no-store'}).then(r=>r.json()),fetch('sprites.json?v=20261009d',{cache:'no-store'}).then(r=>r.json())]);}
+catch(e){$('#stat').textContent='The catalog didn’t load. Refresh to try again.';return;}
+const KIND=['Tile set','Mat','Racks'];
+const sp=i=>{if(C.C[i][11])return `background:${C.C[i][11]}`;const e=SP.c[i];const col=e[1]%10,row=Math.floor(e[1]/10);return `background-image:url(c${e[0]}.webp?v=5);background-size:1000% 1000%;background-position:${col/9*100}% ${row/9*100}%`};
+const fixes={};let tab=-1,sel=-1,db=null;
+const keyOf=i=>{const c=C.C[i],b=C.B[c[0]];return (b[1]+'~'+c[3]+(c[4]?'@'+c[4]:'')).replace(/[^A-Za-z0-9_\-.~:@+]/g,'_')};
+const idxByKey={};C.C.forEach((c,i)=>idxByKey[keyOf(i)]=i);
+const colorOf=i=>fixes[i]?fixes[i]:(C.C[i][10]?'multi':FAM[C.C[i][8]][0]);
+function counts(){const n={};C.C.forEach((c,i)=>{const k=colorOf(i);n[k]=(n[k]||0)+1});return n;}
+function render(){
+  const n=counts();
+  const nchk=C.C.filter((c,i)=>c[12]&&!fixes[i]).length;
+  $('#tabs').innerHTML=`<button type="button" class="tab" data-t="-1" aria-pressed="${tab===-1}"><i style="background:#fff;box-shadow:0 0 0 2px var(--rose)"></i>Check photo ${nchk}</button>`+FAM.map((f,i)=>`<button type="button" class="tab" data-t="${i}" aria-pressed="${i===tab}"><i style="background:${f[1]}"></i>${f[2]} ${n[f[0]]||0}</button>`).join('');
+  const key=tab===-1?null:FAM[tab][0];
+  const L=C.C.map((c,i)=>i).filter(i=>key===null?(C.C[i][12]&&!fixes[i]):colorOf(i)===key);
+  $('#grid').innerHTML=L.length?L.map(i=>`<button type="button" class="it${fixes[i]?' fixed':''}${i===sel?' sel':''}" data-i="${i}"><div class="ph" style="${sp(i)}"></div><span>${esc(C.C[i][2])}</span></button>`).join(''):'<p class="msg">Nothing in this group.</p>';
+  const nf=Object.keys(fixes).length;
+  $('#stat').textContent=`${C.C.length.toLocaleString()} pieces · ${nf} fixed so far${db?'':' · fixes won’t save in this view'}`;
+}
+function openPick(i){
+  sel=i;const c=C.C[i],cur=colorOf(i);
+  $('#pick').hidden=false;
+  $('#pick').innerHTML=`<div class="top"><div class="ph" style="${sp(i)}"></div><div class="nm">${esc(c[2])}<small>${KIND[c[1]]} · ${esc(C.B[c[0]][0])}</small></div><button class="close" type="button" aria-label="Close">✕</button></div>
+  <div class="sw">${FAM.map(f=>`<button type="button" data-c="${f[0]}" aria-pressed="${f[0]===cur}"><i style="background:${f[1]}"></i>${f[2]}</button>`).join('')}</div>
+  <p class="msg" id="pmsg">Currently in ${FAM.find(f=>f[0]===cur)[2]}.</p>`;
+  render();
+}
+$('#tabs').addEventListener('click',e=>{const b=e.target.closest('.tab');if(!b)return;tab=+b.dataset.t;sel=-1;$('#pick').hidden=true;render();window.scrollTo({top:0});});
+$('#grid').addEventListener('click',e=>{const b=e.target.closest('.it');if(b)openPick(+b.dataset.i);});
+$('#pick').addEventListener('click',async e=>{
+  if(e.target.closest('.close')){sel=-1;$('#pick').hidden=true;render();return;}
+  const b=e.target.closest('[data-c]');if(!b||sel<0)return;
+  const i=sel,c=b.dataset.c;
+  const orig=C.C[i][10]?'multi':FAM[C.C[i][8]][0];
+  if(!db){$('#pmsg').textContent='Saving isn’t available in this view. Open the page from your Claude account.';return;}
+  try{
+    if(c===orig&&fixes[i]){await db.doc('fixes/'+keyOf(i)).delete();delete fixes[i];}
+    else{await db.doc('fixes/'+keyOf(i)).set({c,t:C.C[i][2],b:C.B[C.C[i][0]][0],from:orig,at:new Date().toISOString()});fixes[i]=c;}
+    sel=-1;$('#pick').hidden=true;render();
+  }catch(err){$('#pmsg').textContent='That fix didn’t save. Try again in a moment.';}
+});
+render();
+db=await claude.use('db');
+if(db){
+  db.collection('fixes').onSnapshot(s=>{for(const k in fixes)delete fixes[k];s.docs.forEach(d=>{const v=d.data();const ix=idxByKey[d.id];if(v&&v.c&&ix!==undefined)fixes[ix]=v.c;});render();},()=>{});
+}
+render();
+})();
+</script>
