@@ -5,7 +5,7 @@ FAM=['pink','red','orange','yellow','green','teal','blue','purple','neutral','bl
 WORDS={'pink':r'pink|blush|rose\b|rosé|coral|fuchsia|magenta|peony','red':r'\bred\b|cherry|crimson|scarlet|burgundy|oxblood','orange':r'orange|tangerine|terracotta|rust|apricot|peach','yellow':r'yellow|lemon|sunshine|butter|gold\b|mustard|limoncello','green':r'green|jade|emerald|sage|olive|malachite|mint|kelly|forest|palm|fern','teal':r'teal|aqua|turquoise|seafoam|lagoon','blue':r'blue|navy|cobalt|denim|periwinkle|indigo|chambray','purple':r'purple|lilac|lavender|violet|plum|orchid|amethyst','neutral':r'tortoise|ivory|cream|white|pearl|natural|wood|walnut|rattan|cane|tan\b|beige|taupe|brown|cognac|grey|gray|clear|neutral|oat','black':r'\bblack\b|onyx|noir|ebony'}
 def fam(h,s,v):
     if v<0.16: return 'black'
-    if s<0.16 or (v>0.9 and s<0.22): return 'neutral'
+    if s<0.10 or (v>0.93 and s<0.14): return 'neutral'
     d=h*360
     if (15<=d<50) and (s<0.5 and v<0.75): return 'neutral'
     if d<12 or d>=345: return 'red' if s>0.55 and v<0.85 else 'pink'
@@ -36,6 +36,7 @@ for i in it:
         except Exception: sh={}
     t=i['t'].lower()
     named=[f for f,w in WORDS.items() if re.search(w,t)]
+    if sh: named=[f for f in named if sh.get(f,0)>=0.08]  # the photo must actually show the color
     if named:
         prim=named[0] if len(named)==1 else max(named,key=lambda f:sh.get(f,0))
     else:
@@ -45,6 +46,7 @@ for i in it:
         prim=chrom[0][0] if chrom else (cand[0][0] if cand else 'neutral')
     cols=sorted({prim,*[f for f in named],*[f for f,v in sh.items() if v>=0.2]})
     multi=len([f for f,v in sh.items() if v>=0.15 and f not in('neutral',)])>=3
+    if i.get('many'): multi=True
     i['c']=prim; i['cs']=cols; i['multi']=multi
 json.dump(it,open('items-colored.json','w'))
 from collections import Counter

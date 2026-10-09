@@ -17,6 +17,7 @@ with open('thumb-list.txt','w') as f:
       f.write(i['i']+('&' if '?' in i['i'] else '?')+'width=120 thumbs/'+h+'.jpg\n')"
 sort -u thumb-list.txt | xargs -P 8 -n 2 sh -c 'test -s "$1" || curl -sS -m 30 -o "$1" "$0" || true'
 python3 colors.py
+python3 bbracks.py
 python3 compact.py
 curl -sS -m 30 https://www.mahjmatchmaker.com/sitemap.xml | grep -o '<loc>[^<]*-mahjong-tile-matches</loc>' | sed 's/<[^>]*>//g' | grep -v -E '/(pink|blue|green|yellow-orange|purple|neutral|masculine)-mahjong-tile-matches$' > album-urls.txt
 rm -f albums/*.html

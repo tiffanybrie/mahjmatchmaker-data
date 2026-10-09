@@ -31,17 +31,20 @@ for f in sorted(glob.glob('raw/*.json')):
         # racks: split color variants into separate items when variants carry images or color option
         opts=[o['name'].lower() for o in p.get('options',[])]
         ci=next((i for i,o in enumerate(opts) if 'color' in o or 'colour' in o),None)
-        if k=='rack' and ci is not None and len(vs)>1:
+        own=[v for v in vs if (v.get('featured_image') or {}).get('src') and (v.get('featured_image') or {}).get('src')!=img]
+        if k=='rack' and ci is not None and len(vs)>1 and len(own)>=max(2,len(vs)//2):
             imgs={im['id']:im['src'] for im in p.get('images',[])}
             seen=set()
             for v in vs:
                 col=v.get(f'option{ci+1}');
                 if not col or col in seen: continue
                 seen.add(col)
-                vi=(v.get('featured_image') or {}).get('src') or img
+                vi=(v.get('featured_image') or {}).get('src')
+                if not vi or vi==img: continue  # a color with no photo of its own isn't listed separately
                 items.append(dict(b=bname,d=dom,k=k,t=f"{p['title']} – {col}",u=link(v['id']),i=vi,p=float(v['price']),a=bool(v.get('available')),tags=p.get('tags',[]),pt=p.get('product_type','')))
         else:
-            items.append(dict(b=bname,d=dom,k=k,t=p['title'],u=link(),i=img,p=price,a=avail,tags=p.get('tags',[]),pt=p.get('product_type','')))
+            ncol=len({v.get(f'option{ci+1}') for v in vs}) if ci is not None else 0
+            items.append(dict(b=bname,d=dom,k=k,t=p['title'],u=link(),i=img,p=price,a=avail,tags=p.get('tags',[]),pt=p.get('product_type',''),many=ncol>=3))
 json.dump(items,open('items.json','w'))
 from collections import Counter
 print(len(items),Counter(i['k'] for i in items)); print(Counter(i['b'] for i in items).most_common(40))

@@ -7,7 +7,7 @@ def kind(p):
         if not re.search(r'\bmat\b|tiles?\b|rack',ti): return 'other'
         if re.search(r'rack bag|tile bag|mat bag|bag for|carrying|storage|case|tote|pouch|sample|swatch|scorecard|insurance',ti): return 'other'
     pt0=p.get('product_type','').lower()
-    if re.search(r'lamp|placemat|place mat|coaster|charger|table runner|napkin|table\b.*set of|coffee table|side table|cabinet|chest|t-shirt|mug|home decor|pillow|blanket|wall art|stool|chair|puzzle|jewelry',ti+' '+pt0): return 'other'
+    if re.search(r'lamp|art print|placemat|place mat|coaster|charger|table runner|napkin|table\b.*set of|coffee table|side table|cabinet|chest|t-shirt|mug|home decor|pillow|blanket|wall art|stool|chair|puzzle|jewelry',ti+' '+pt0): return 'other'
     if re.search(r'\bmat\b',ti) and not re.search(r'rack (set|and|&)|racks? (with|&|and) pushers',ti): return 'mat'
     if re.search(r'\brack|pusher',ti): return 'rack'
     if re.search(r'\bmat\b|\bmats\b|table cover|playmat|play mat|tablecloth topper',ti): return 'mat'
