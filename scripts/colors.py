@@ -36,7 +36,11 @@ for i in it:
         except Exception: sh={}
     t=i['t'].lower()
     named=[f for f,w in WORDS.items() if re.search(w,t)]
+    BASIC={'red':r'\bred\b','yellow':r'\byellow\b','green':r'\bgreen\b','blue':r'\bblue\b','pink':r'\bpink\b','purple':r'\bpurple\b','orange':r'\borange\b','teal':r'\bteal\b'}
+    named_all=[f for f,w in BASIC.items() if re.search(w,t)] if i['k']=='rack' else []
     if sh: named=[f for f in named if sh.get(f,0)>=0.08]  # the photo must actually show the color
+    # name says a color the photo doesn't show at all (store reused another color's photo): hide it
+    i['mismatch']=bool(sh and named_all and not any(sh.get(f,0)>=0.08 for f in named_all))
     if named:
         prim=named[0] if len(named)==1 else max(named,key=lambda f:sh.get(f,0))
     else:
