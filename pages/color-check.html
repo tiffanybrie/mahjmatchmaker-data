@@ -37,7 +37,7 @@ p.lede{margin:0 0 6px;max-width:60ch}
 <h1>Catalog Color Check</h1>
 <p class="stat">Version 3 · one listing per multi-color piece · Bird &amp; Bamboo swatches</p>
 <p class="lede">Tap any piece that's in the wrong color group and pick the right color. Fixes save as you go, and I pick them up for the Match Builder.</p>
-<p class="lede"><strong>Check photo</strong> lists racks whose name says one color while the photo may show another. Pick the color you see, or Not mahj if the photo is wrong for that listing.</p>
+<p class="lede"><strong>Pick mats</strong> shows brands with huge mat libraries (Splash of Color, Let's Be Besties). Only the mats you pick a color for go into the Match Builder; mats in your albums are already in. <strong>Check photo</strong> lists racks whose name says one color while the photo may show another. Pick the color you see, or Not mahj if the photo is wrong for that listing.</p>
 <p class="stat" id="stat">Loading the catalog…</p>
 <div class="tabs" id="tabs" role="group" aria-label="Color group"></div>
 <div class="grid" id="grid"></div>
@@ -49,10 +49,10 @@ const $=s=>document.querySelector(s);
 const FAM=[['pink','#e9a3b8','Pink'],['red','#b8433c','Red'],['orange','#d9824b','Orange'],['yellow','#e7c75a','Yellow'],['green','#6f8a52','Green'],['teal','#3fa3a0','Teal'],['blue','#5b7fb5','Blue'],['purple','#9a7bb8','Purple'],['neutral','#e2d3bb','Neutral'],['black','#2b2b2b','Black'],['multi','conic-gradient(#e9a3b8,#e7c75a,#6f8a52,#5b7fb5,#9a7bb8,#e9a3b8)','Multi'],['remove','repeating-linear-gradient(45deg,#fff 0 4px,#c2547a 4px 6px)','Not mahj']];
 const esc=s=>String(s).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
 let C,SP;
-try{[C,SP]=await Promise.all([fetch('catalog.json?v=20261009d',{cache:'no-store'}).then(r=>r.json()),fetch('sprites.json?v=20261009d',{cache:'no-store'}).then(r=>r.json())]);}
+try{[C,SP]=await Promise.all([fetch('catalog.json?v=20261009e',{cache:'no-store'}).then(r=>r.json()),fetch('sprites.json?v=20261009e',{cache:'no-store'}).then(r=>r.json())]);}
 catch(e){$('#stat').textContent='The catalog didn’t load. Refresh to try again.';return;}
 const KIND=['Tile set','Mat','Racks'];
-const sp=i=>{if(C.C[i][11])return `background:${C.C[i][11]}`;const e=SP.c[i];const col=e[1]%10,row=Math.floor(e[1]/10);return `background-image:url(c${e[0]}.webp?v=5);background-size:1000% 1000%;background-position:${col/9*100}% ${row/9*100}%`};
+const sp=i=>{if(C.C[i][11])return `background:${C.C[i][11]}`;const e=SP.c[i];const col=e[1]%10,row=Math.floor(e[1]/10);return `background-image:url(c${e[0]}.webp?v=6);background-size:1000% 1000%;background-position:${col/9*100}% ${row/9*100}%`};
 const fixes={};let tab=-1,sel=-1,db=null;
 const keyOf=i=>{const c=C.C[i],b=C.B[c[0]];return (b[1]+'~'+c[3]+(c[4]?'@'+c[4]:'')).replace(/[^A-Za-z0-9_\-.~:@+]/g,'_')};
 const idxByKey={};C.C.forEach((c,i)=>idxByKey[keyOf(i)]=i);
@@ -60,10 +60,10 @@ const colorOf=i=>fixes[i]?fixes[i]:(C.C[i][10]?'multi':FAM[C.C[i][8]][0]);
 function counts(){const n={};C.C.forEach((c,i)=>{const k=colorOf(i);n[k]=(n[k]||0)+1});return n;}
 function render(){
   const n=counts();
-  const nchk=C.C.filter((c,i)=>c[12]&&!fixes[i]).length;
-  $('#tabs').innerHTML=`<button type="button" class="tab" data-t="-1" aria-pressed="${tab===-1}"><i style="background:#fff;box-shadow:0 0 0 2px var(--rose)"></i>Check photo ${nchk}</button>`+FAM.map((f,i)=>`<button type="button" class="tab" data-t="${i}" aria-pressed="${i===tab}"><i style="background:${f[1]}"></i>${f[2]} ${n[f[0]]||0}</button>`).join('');
-  const key=tab===-1?null:FAM[tab][0];
-  const L=C.C.map((c,i)=>i).filter(i=>key===null?(C.C[i][12]&&!fixes[i]):colorOf(i)===key);
+  const nchk=C.C.filter((c,i)=>c[12]&&!fixes[i]).length; const ncur=C.C.filter((c,i)=>c[13]&&!fixes[i]).length;
+  $('#tabs').innerHTML=`<button type="button" class="tab" data-t="-2" aria-pressed="${tab===-2}"><i style="background:var(--rose)"></i>Pick mats ${ncur}</button><button type="button" class="tab" data-t="-1" aria-pressed="${tab===-1}"><i style="background:#fff;box-shadow:0 0 0 2px var(--rose)"></i>Check photo ${nchk}</button>`+FAM.map((f,i)=>`<button type="button" class="tab" data-t="${i}" aria-pressed="${i===tab}"><i style="background:${f[1]}"></i>${f[2]} ${n[f[0]]||0}</button>`).join('');
+  const key=tab<0?tab:FAM[tab][0];
+  const L=C.C.map((c,i)=>i).filter(i=>key===-1?(C.C[i][12]&&!fixes[i]&&!C.C[i][13]):key===-2?(C.C[i][13]&&!fixes[i]):(!C.C[i][13]||fixes[i])&&colorOf(i)===key);
   $('#grid').innerHTML=L.length?L.map(i=>`<button type="button" class="it${fixes[i]?' fixed':''}${i===sel?' sel':''}" data-i="${i}"><div class="ph" style="${sp(i)}"></div><span>${esc(C.C[i][2])}</span></button>`).join(''):'<p class="msg">Nothing in this group.</p>';
   const nf=Object.keys(fixes).length;
   $('#stat').textContent=`${C.C.length.toLocaleString()} pieces · ${nf} fixed so far${db?'':' · fixes won’t save in this view'}`;

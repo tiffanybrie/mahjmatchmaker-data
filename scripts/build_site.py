@@ -1,5 +1,5 @@
 import re,json
-s=open('/home/claude/mb/build/index.html').read()
+s=open('/home/claude/mahjmatchmaker-data/pages/review-preview.html').read()
 s=s.replace('<meta charset="utf-8">\n','')
 s=re.sub(r'<title>.*?</title>\n','',s)
 fonts=re.search(r'<link rel="preconnect"[^>]*>\n<link rel="stylesheet"[^>]*>\n',s).group(0); s=s.replace(fonts,'')
@@ -10,7 +10,7 @@ css=css.replace(':root{',':host{').replace('html,body{background:var(--cream);co
 old_body='body{font-family:var(--body);font-size:16px;line-height:1.5;padding-inline:16px;padding-block:0 40px;margin:0}'
 assert old_body in css
 css=css.replace(old_body,'.app{font-family:var(--body);font-size:16px;line-height:1.5;padding-inline:16px;padding-block:0 40px;background:var(--cream);color:var(--navy);border-radius:24px}')
-reps=[("const $=s=>document.querySelector(s);","const $=s=>ROOT.querySelector(s);"),("document.querySelectorAll(","ROOT.querySelectorAll("),("document.querySelector('.seg')","ROOT.querySelector('.seg')"),("document.body.appendChild(","ROOT.appendChild("),("fetch('data.json')","fetch(BASE+'data.json')"),("fetch('catalog.json')","fetch(BASE+'catalog.json')"),("let SP=null; try{const r=await fetch('sprites.json'); if(r.ok) SP=await r.json();}catch(e){}","let SP=null;")]
+reps=[("const $=s=>document.querySelector(s);","const $=s=>ROOT.querySelector(s);"),("document.querySelectorAll(","ROOT.querySelectorAll("),("document.querySelector('.seg')","ROOT.querySelector('.seg')"),("document.body.appendChild(","ROOT.appendChild("),("fetch('data.json?v=20261009e',{cache:'no-store'})","fetch(BASE+'data.json')"),("fetch('catalog.json?v=20261009e',{cache:'no-store'})","fetch(BASE+'catalog.json')"),("let SP=null; try{const r=await fetch('sprites.json?v=20261009e',{cache:'no-store'}); if(r.ok) SP=await r.json();}catch(e){}","let SP=null;")]
 for a,b in reps:
     assert a in js,a; js=js.replace(a,b)
 assert 'document.querySelector' not in js

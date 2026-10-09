@@ -12,6 +12,7 @@ for l in open('visit.tsv'):
 C=[]
 import os
 EXCLUDE=set(json.load(open('exclude-brands.json'))) if os.path.exists('exclude-brands.json') else set()
+CURATED=set(json.load(open('curated-brands.json'))) if os.path.exists('curated-brands.json') else set()
 FIX=json.load(open('color-fixes.json')) if os.path.exists('color-fixes.json') else {}
 def key(i):
     m=re.match(r'https://([^/]+)/products/([^?]+)(?:\?.*?variant=(\d+))?',i['u']); return f"{m.group(1)}/{m.group(2)}"+(f"#{m.group(3)}" if m.group(3) else '')
@@ -32,7 +33,7 @@ for i in it:
     var=re.search(r'variant=(\d+)',q); var=var.group(1) if var else ''
     img=i['i'].replace('https://cdn.shopify.com/s/files/','')
     mask=sum(1<<FAM.index(c) for c in i['cs'] if c in FAM)
-    C.append([bi[i['b']],K[i['k']],i['t'],handle,var,img,round(i['p']),1 if i['a'] else 0,FAM.index(i['c']),mask,1 if i['multi'] else 0,'',1 if (i.get('mismatch') and not FIX.get(key(i))) else 0])
+    C.append([bi[i['b']],K[i['k']],i['t'],handle,var,img,round(i['p']),1 if i['a'] else 0,FAM.index(i['c']),mask,1 if i['multi'] else 0,'',1 if (i.get('mismatch') and not FIX.get(key(i))) else 0,1 if (i['b'] in CURATED and not FIX.get(key(i))) else 0])
 # Bird & Bamboo rack colors: one item per color, shown as the real swatch from Tiffany's color guide
 if os.path.exists('bbracks.json'):
     bb=json.load(open('bbracks.json'))
@@ -46,7 +47,7 @@ if os.path.exists('bbracks.json'):
     for x in bb:
         m=re.match(r'https://[^/]+/products/([^?]+)\?.*?variant=(\d+)',x['url'])
         if not m: continue
-        C.append([bi['Bird & Bamboo'],2,f"20\" Wooden Rack & Pusher Set – {x['name']}",m.group(1),m.group(2),'',price,1,FAM.index(x['fam']),1<<FAM.index(x['fam']),0,x['hex'],0])
+        C.append([bi['Bird & Bamboo'],2,f"20\" Wooden Rack & Pusher Set – {x['name']}",m.group(1),m.group(2),'',price,1,FAM.index(x['fam']),1<<FAM.index(x['fam']),0,x['hex'],0,0])
 D=dict(F=FAM,B=brands,C=C)
 s=json.dumps(D,separators=(',',':'),ensure_ascii=False)
 open('catalog.json','w').write(s); print(len(C),len(s))

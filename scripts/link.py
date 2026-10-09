@@ -23,3 +23,7 @@ for t in D['T']:
 print('tiles linked',th,'/',len(D['T']))
 print([t[1] for t in D['T'] if t[-1]==-1])
 json.dump(D,open('data.json','w'),separators=(',',':'),ensure_ascii=False)
+# a curated-brand mat that appears in one of Tiffany's albums counts as approved
+for m in D['M']:
+    if m[4]>=0 and len(C['C'][m[4]])>13: C['C'][m[4]][13]=0
+json.dump(C,open('catalog.json','w'),separators=(',',':'),ensure_ascii=False)

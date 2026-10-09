@@ -15,7 +15,7 @@ const P=D.P, SH='https://cdn.shopify.com/s/files/';
 let SP=null;
 const GRID={c:[10,10],t:[7,6],x:[10,5]};
 function spStyle(sp){ if(!SP||!sp) return ''; const [k,i]=sp; const e=SP[k][i]; if(!e) return ''; const [c,r]=GRID[k]; const col=e[1]%c,row=Math.floor(e[1]/c);
-  return `background-image:url(${k}${e[0]}.webp);background-size:${c*100}% ${r*100}%;background-position:${c>1?col/(c-1)*100:0}% ${r>1?row/(r-1)*100:0}%`; }
+  return `background-image:url(${k}${e[0]}.webp?v=6);background-size:${c*100}% ${r*100}%;background-position:${c>1?col/(c-1)*100:0}% ${r>1?row/(r-1)*100:0}%`; }
 function pic(src,sp,cls,alt){ if(sp&&sp[0]==='c'&&C.C[sp[1]][11]) return `<div class="spr swatch ${cls||''}" role="img" aria-label="${esc(alt||'Rack color swatch')}" style="background:${C.C[sp[1]][11]}"><span>Rack color</span></div>`; if(SP&&sp) return `<div class="spr ${cls||''}" role="img" aria-label="${esc(alt||'')}" style="${spStyle(sp)}"></div>`; return `<img ${cls?`class="${cls}"`:''} src="${esc(src)}" alt="${esc(alt||'')}" loading="lazy">`; }
 const FI=Object.fromEntries(C.F.map((f,i)=>[f,i]));
 const albumColor=c=>c==='yellow'?['yellow','orange']:[c];
@@ -45,7 +45,7 @@ D.M.forEach((m,i)=>{ if(m[4]>=0) return; const xs=matchesByMat[i]||[]; if(!xs.le
   pieces.push({sp:['x',xs[0]],id:'m-'+i,k:1,name:m[0],brand:m[1],img:sqImg(x[2],500),url:m[2],mask:0,prim:-1,mat:i,fav:true,avail:m[3]?0:1,retired:!!m[3],price:0});
 });
 // catalog
-C.C.forEach((c,i)=>{ if(c[1]===0 && linkedCat.has(i)) return;
+C.C.forEach((c,i)=>{ if(c[13]) return; if(c[1]===0 && linkedCat.has(i)) return;
   const p={sp:['c',i],id:'c-'+i,k:c[1],name:c[2],brand:C.B[c[0]][0],img:shopImg(c[5],400),url:shopUrl(c),mask:c[9],prim:c[8],cat:i,avail:c[7],price:c[6]};
   if(c[1]===1 && matByCat[i]!==undefined){p.mat=matByCat[i];p.fav=true;}
   pieces.push(p);
@@ -176,7 +176,7 @@ async function share(xi){
   const x=D.X[xi],t=D.T[x[0]],m=D.M[x[1]];
   try{await document.fonts.load('40px Shrikhand');await document.fonts.load('700 30px Bitter');}catch(e){}
   let img=new Image(),sx=0,sy=0,sw,sh;
-  if(SP){const e=SP.x[xi];img.src='x'+e[0]+'.webp';sx=(e[1]%10)*240;sy=Math.floor(e[1]/10)*300;sw=240;sh=300;}
+  if(SP){const e=SP.x[xi];img.src="x"+e[0]+".webp?v=6";sx=(e[1]%10)*240;sy=Math.floor(e[1]/10)*300;sw=240;sh=300;}
   else{img.crossOrigin='anonymous';img.src=sqImg(x[2],1000);}
   try{await img.decode();}catch(e){toast('That photo didn’t load. Try again.');return;}
   if(!sw){sw=img.width;sh=img.height;}
