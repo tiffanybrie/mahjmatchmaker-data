@@ -250,7 +250,7 @@ function showSaved(keep,keys){
   if(!ps.length&&!xs.length) h+='<p>Nothing saved yet. Tap the ♡ on any tile set, mat or rack, or ♡ Save on a match, and it shows up here.</p>';
   else{
     h+=shared?'<p>Someone sent you these. Save them to your own list to keep them.</p>':'<p>Saved on this device. Copy your link to keep it or send it to your mahj group.</p>';
-    h+=`<div class="savebar"><button class="btn" type="button" data-copysaved>Copy my link</button>${shared?'<button class="btn ghost" type="button" data-importsaved>Save all to mine</button>':''}</div>`;
+    h+=`<div class="savebar"><button class="btn" type="button" data-copysaved>Copy my link</button><a class="btn ghost" href="mailto:?subject=${encodeURIComponent('My saved mahjong matches')}&body=${encodeURIComponent('Here are my saved matches from Mahj Matchmaker: '+savedLink())}">Email myself this link</a>${shared?'<button class="btn ghost" type="button" data-importsaved>Save all to mine</button>':''}</div>`;
     if(xs.length) h+=`<h3 class="section-h">Matches</h3><div class="feed">${xs.map(i=>matchCard(i,'tile')).join('')}</div>`;
     if(ps.length) h+=`<h3 class="section-h">Pieces</h3>${miniGrid(ps)}`;
   }
@@ -317,7 +317,7 @@ function showSheet(html){
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet();});
 function head(p,extra){
   return `<div class="ph"><h2>${esc(p.name)}</h2><button class="x" type="button" aria-label="Close">✕</button></div>
-  <div class="hero">${pic(p.img,p.sp,'heroimg','')}<div class="meta"><div class="eyebrow">${KIND[p.k]} · ${esc(p.brand)}</div>${p.price?`<div>$${p.price}${p.avail?'':' · Sold out'}</div>`:''}${p.retired?'<div class="ret">Retired: look for it secondhand</div>':''}<div class="acts">${p.url&&!p.retired?`<a class="btn" href="${esc(p.url)}" target="_blank" rel="sponsored noopener">Shop at ${esc(p.brand||'the shop')}</a>`:''}${extra||''}</div></div></div>`;
+  <div class="hero">${pic(p.img,p.sp,'heroimg','')}<div class="meta"><div class="eyebrow">${KIND[p.k]} · ${esc(p.brand)}</div>${p.price?`<div>$${p.price}${p.avail?'':' · Sold out'}</div>`:''}${p.retired?'<div class="ret">Retired: look for it secondhand</div>':''}<div class="acts"><button class="btn ghost sv" type="button" data-heart="${esc(favKey(p))}" aria-pressed="${FAV.has(favKey(p))}">${FAV.has(favKey(p))?'♥ Saved':'♡ Save'}</button>${p.url&&!p.retired?`<a class="btn" href="${esc(p.url)}" target="_blank" rel="sponsored noopener">Shop at ${esc(p.brand||'the shop')}</a>`:''}${extra||''}</div></div></div>`;
 }
 function open(id){
   const p=byId[id]; if(!p) return;
