@@ -1,0 +1,199 @@
+/* Mahj Matchmaker: The Matchmaking Table. Mounts into <div id="mmt-host">. */
+(function(){
+var host=document.getElementById("mmt-host"); if(!host||host.shadowRoot) return;
+var ROOT=host.attachShadow({mode:"open"});
+ROOT.innerHTML="<style>\n/* Layout: one phone-width column (max 1180 on desktop grids), sticky picker bar, bottom-sheet details */\n:host{\n  --navy:#1f3a6b; --navy-ink:#152a50; --rose:#c2547a; --rose-deep:#a8436a;\n  --cream:#f8efe6; --blush:#f2d6de; --paper:#ffffff; --line:#eadfd2; --muted:#5b6b86;\n  --display:'Shrikhand',Georgia,serif; --body:'Bitter',Georgia,'Times New Roman',serif;\n  color-scheme:light;\n}\n*{box-sizing:border-box}\n\n.app{font-family:var(--body);font-size:16px;line-height:1.5;padding-inline:16px;padding-block:0 40px;background:var(--cream);color:var(--navy);border-radius:24px}\na{color:var(--navy)}\nbutton{font-family:inherit;color:inherit}\n:focus-visible{outline:3px solid var(--rose);outline-offset:2px}\n.wrap{max-width:1180px;margin:0 auto}\nheader.top{display:flex;flex-direction:column;gap:6px;padding-block:22px 10px}\n.eyebrow{font-weight:700;letter-spacing:.18em;font-size:12px;text-transform:uppercase}\nh1{font-family:var(--display);font-weight:400;color:var(--rose);font-size:clamp(34px,7vw,52px);line-height:1.02;margin:0;text-wrap:balance}\n.lede{margin:4px 0 0;max-width:60ch;font-size:16px}\n.codechip{display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:#fff;border:0;border-radius:999px;padding:8px 14px;font-weight:700;font-size:14px;letter-spacing:.04em;cursor:pointer;align-self:flex-start}\n.codechip small{font-weight:400;opacity:.8;letter-spacing:0}\n.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--cream);padding-block:10px;display:flex;flex-direction:column;gap:10px;border-bottom:2px solid var(--blush)}\n.seg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;background:var(--paper);border-radius:999px;padding:4px}\n.seg button{border:0;background:transparent;border-radius:999px;padding:10px 6px;font-weight:600;font-size:15px;min-height:44px;cursor:pointer}\n.seg button[aria-pressed=\"true\"]{background:var(--blush);font-weight:700}\n.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}\n.search{flex:1 1 200px;min-width:0;font-family:inherit;font-size:16px;padding:11px 14px;border:2px solid var(--line);border-radius:14px;background:var(--paper);color:var(--navy)}\n.pill{border:2px solid var(--navy);background:var(--paper);border-radius:999px;padding:9px 14px;font-weight:700;font-size:14px;min-height:44px;cursor:pointer;white-space:nowrap}\n.pill.solid{background:var(--navy);color:#fff}\n.dots{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}\n.dots::-webkit-scrollbar{display:none}\n.dot{flex:0 0 auto;width:36px;height:36px;border-radius:50%;border:2px solid var(--paper);box-shadow:0 0 0 1px var(--line);cursor:pointer;position:relative}\n.dot[aria-pressed=\"true\"]{box-shadow:0 0 0 3px var(--navy)}\n.filters .search{flex:1 1 100%}\n.filters .brandsel{flex:1 1 0}\n.brandsel{font-family:inherit;font-size:15px;padding:10px 12px;border:2px solid var(--line);border-radius:14px;background:var(--paper);color:var(--navy);min-height:44px;max-width:100%}\n.count{font-size:13px;color:var(--muted);font-style:italic}\n.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;padding-block:14px}\n.card{background:var(--paper);border-radius:18px;overflow:hidden;border:0;padding:0;text-align:left;cursor:pointer;display:flex;flex-direction:column}\n.card .im{position:relative;aspect-ratio:1/1;background:var(--blush)}\n.card img{width:100%;height:100%;object-fit:cover;display:block}\n.spr{background-color:var(--blush);background-repeat:no-repeat}\n.swatch{position:relative}.swatch span{position:absolute;left:8px;bottom:8px;background:rgba(255,255,255,.85);color:var(--navy);font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px}\n.card .spr{width:100%;height:100%}\n.shot .four5{width:100%;aspect-ratio:4/5}\n.heroimg{width:120px;height:120px;border-radius:16px}\n.uniimg{width:70px;height:70px;border-radius:14px;flex-shrink:0}\n.card .t{padding:9px 11px 11px;display:flex;flex-direction:column;gap:2px;min-width:0}\n.card .n{font-weight:700;font-size:14px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}\n.card .b{font-size:12px;color:var(--muted)}\n.badge{position:absolute;left:8px;top:8px;background:var(--rose);color:#fff;font-size:11px;font-weight:700;padding:4px 9px;border-radius:999px}\n.sold{position:absolute;right:8px;top:8px;background:var(--paper);color:var(--navy);font-size:11px;font-weight:700;padding:4px 8px;border-radius:999px}\n.more{display:flex;justify-content:center;padding-block:6px 20px}\n.section-h{font-family:var(--display);font-weight:400;font-size:24px;color:var(--rose);margin:18px 0 0}\n.sub{margin:2px 0 0;font-size:14px;color:var(--muted)}\n/* sheet */\n.sheet{position:fixed;inset:0;z-index:20;background:rgba(21,42,80,.45);display:flex;justify-content:center;align-items:flex-end}\n.sheet .panel{background:var(--cream);width:100%;max-width:880px;max-height:92vh;overflow-y:auto;border-radius:26px 26px 0 0;padding:12px 16px calc(28px + env(safe-area-inset-bottom,0px))}\n.grab{width:48px;height:5px;border-radius:3px;background:var(--line);margin:0 auto 10px}\n.ph{display:flex;gap:12px;align-items:flex-start;justify-content:space-between}\n.ph h2{font-family:var(--display);font-weight:400;color:var(--rose);font-size:30px;line-height:1.05;margin:0;text-wrap:balance}\n.x{width:44px;height:44px;border-radius:50%;border:0;background:var(--paper);font-size:20px;flex-shrink:0;cursor:pointer}\n.hero{display:grid;grid-template-columns:120px minmax(0,1fr);gap:14px;align-items:center;margin-top:12px}\n.hero img{width:120px;height:120px;object-fit:cover;border-radius:16px;background:var(--blush)}\n.hero .meta{display:flex;flex-direction:column;gap:6px;min-width:0}\n.btn{display:inline-block;background:var(--rose);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:11px 18px;font-size:15px;border:0;cursor:pointer;text-align:center}\n.btn.ghost{background:var(--paper);color:var(--navy);border:2px solid var(--navy);padding:9px 16px}\n.btn:hover{background:var(--rose-deep)}\n.btn.ghost:hover{background:var(--blush)}\n.feed{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-top:14px}\n.match{background:var(--paper);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}\n.shot{position:relative;background:var(--blush)}\n.shot img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}\n.strip{position:absolute;left:0;right:0;bottom:0;background:rgba(31,58,107,.92);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:7px 12px;font-size:12px;font-weight:700;letter-spacing:.03em}\n.strip span:first-child{font-family:var(--display);font-weight:400;font-size:14px;letter-spacing:0}\n.fav{position:absolute;left:10px;top:10px;background:var(--rose);color:#fff;font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px}\n.mb{padding:12px 14px 14px;display:flex;flex-direction:column;gap:8px}\n.mb h3{margin:0;font-size:17px;line-height:1.25}\n.mb .by{font-size:13px;color:var(--muted);margin-top:-6px}\n.take{font-size:14px;line-height:1.55;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;cursor:pointer}\n.take.open{display:block}\n.racks{display:flex;flex-wrap:wrap;gap:6px}\n.racks a{font-size:12px;font-weight:600;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:5px 10px;background:var(--cream)}\n.acts{display:flex;gap:8px;flex-wrap:wrap}\n.ret{font-size:12px;font-weight:700;color:var(--rose)}\n.mini{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;margin-top:12px}\n.note{font-size:13px;color:var(--muted);font-style:italic;margin:8px 0 0}\n.uni{display:flex;flex-direction:column;gap:10px;margin-top:14px}\n.uni button{display:flex;align-items:center;gap:12px;background:var(--paper);border:0;border-radius:18px;padding:10px;text-align:left;cursor:pointer}\n.uni img{width:70px;height:70px;object-fit:cover;border-radius:14px}\n.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--navy);color:#fff;padding:10px 18px;border-radius:999px;font-weight:700;font-size:14px;z-index:40}\n.shareimg{width:100%;max-width:420px;display:block;margin:12px auto 0;border-radius:16px}\n.loading{padding:40px 0;text-align:center;font-style:italic}\n@media (min-width:760px){.bar{flex-direction:row;flex-wrap:wrap;align-items:center}.seg{flex:0 0 380px}.filters{flex:1 1 320px}.filters .search{flex:1 1 200px}.filters .brandsel{flex:0 1 auto}.grid{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}}\n@media (prefers-reduced-motion:no-preference){.sheet .panel{animation:up .22s ease-out}@keyframes up{from{transform:translateY(30px);opacity:.6}to{transform:none;opacity:1}}}\n</style>"+'<div class="app wrap">'+"\n<div class=\"wrap\">\n  <header class=\"top\">\n    <div class=\"eyebrow\">Mahj Matchmaker</div>\n    <h1>The Matchmaking Table</h1>\n    <p class=\"lede\">Pick a tile set, a mat or racks and see what goes with it. Hearts are my hand-styled matches; everything else is matched by color from our partner shops.</p>\n    <button class=\"codechip\" id=\"code\" type=\"button\">Code MAHJMATCH <small>tap to copy</small></button>\n  </header>\n\n  <div class=\"bar\" id=\"bar\">\n    <div class=\"seg\" role=\"group\" aria-label=\"Start with\">\n      <button type=\"button\" data-v=\"0\" aria-pressed=\"true\">Tiles</button>\n      <button type=\"button\" data-v=\"1\" aria-pressed=\"false\">Mats</button>\n      <button type=\"button\" data-v=\"2\" aria-pressed=\"false\">Racks</button>\n    </div>\n    <div class=\"row filters\">\n      <input class=\"search\" id=\"q\" type=\"search\" placeholder=\"Search by name or brand\" autocomplete=\"off\">\n      <select class=\"brandsel\" id=\"brand\" aria-label=\"Brand\"><option value=\"\">All brands</option></select>\n      <button class=\"pill\" type=\"button\" id=\"uniBtn\">Universal sets</button>\n    </div>\n    <div class=\"dots\" id=\"dots\" role=\"group\" aria-label=\"Color\"></div>\n  </div>\n\n  <div class=\"row\" style=\"justify-content:space-between;padding-top:10px\">\n    <span class=\"count\" id=\"count\"></span>\n    <label class=\"count\" style=\"display:flex;gap:6px;align-items:center;font-style:normal\"><input type=\"checkbox\" id=\"favOnly\"> Only Tiffany's matches \u2665</label>\n  </div>\n  <div class=\"grid\" id=\"grid\"><div class=\"loading\">Setting the table\u2026</div></div>\n  <div class=\"more\"><button class=\"pill\" type=\"button\" id=\"moreBtn\" hidden>Show more</button></div>\n</div>\n\n"+'</div>';
+var BASE="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@main/";
+
+(async function(){
+const $=s=>ROOT.querySelector(s);
+const FAMS=[['pink','#e9a3b8','Pink'],['red','#b8433c','Red'],['orange','#d9824b','Orange'],['yellow','#e7c75a','Yellow'],['green','#6f8a52','Green'],['teal','#3fa3a0','Teal'],['blue','#5b7fb5','Blue'],['purple','#9a7bb8','Purple'],['neutral','#e2d3bb','Neutral'],['black','#2b2b2b','Black']];
+let D,C;
+try{[D,C]=await Promise.all([fetch(BASE+'data.json').then(r=>r.json()),fetch(BASE+'catalog.json').then(r=>r.json())]);}
+catch(e){$('#grid').innerHTML='<div class="loading">The catalog didn’t load. Refresh the page to try again.</div>';return;}
+const P=D.P, SH='https://cdn.shopify.com/s/files/';
+let SP=null;
+const GRID={c:[10,10],t:[7,6],x:[10,5]};
+function spStyle(sp){ if(!SP||!sp) return ''; const [k,i]=sp; const e=SP[k][i]; if(!e) return ''; const [c,r]=GRID[k]; const col=e[1]%c,row=Math.floor(e[1]/c);
+  return `background-image:url(${k}${e[0]}.webp);background-size:${c*100}% ${r*100}%;background-position:${c>1?col/(c-1)*100:0}% ${r>1?row/(r-1)*100:0}%`; }
+function pic(src,sp,cls,alt){ if(sp&&sp[0]==='c'&&C.C[sp[1]][11]) return `<div class="spr swatch ${cls||''}" role="img" aria-label="${esc(alt||'Rack color swatch')}" style="background:${C.C[sp[1]][11]}"><span>Rack color</span></div>`; if(SP&&sp) return `<div class="spr ${cls||''}" role="img" aria-label="${esc(alt||'')}" style="${spStyle(sp)}"></div>`; return `<img ${cls?`class="${cls}"`:''} src="${esc(src)}" alt="${esc(alt||'')}" loading="lazy">`; }
+const FI=Object.fromEntries(C.F.map((f,i)=>[f,i]));
+const albumColor=c=>c==='yellow'?['yellow','orange']:[c];
+const shopUrl=c=>{const b=C.B[c[0]];const q=[];if(c[4])q.push('variant='+c[4]);if(b[2])q.push(b[2]);return 'https://'+b[1]+'/products/'+c[3]+(q.length?'?'+q.join('&'):'')};
+const shopImg=(path,w)=>SH+path+(path.includes('?')?'&':'?')+'width='+w;
+const sqImg=(path,w)=>P+path+'?format='+w+'w';
+const esc=s=>String(s).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+const pop=n=>{let c=0;while(n){c+=n&1;n>>=1}return c};
+const KIND=['Tile set','Mat','Racks'];
+
+// ---- build pieces ----
+const pieces=[];
+const linkedCat=new Set();
+D.T.forEach((t,i)=>{ if(t[7]>=0) linkedCat.add(t[7]); });
+const matByCat={};D.M.forEach((m,i)=>{ if(m[4]>=0){matByCat[m[4]]=i;linkedCat.add(m[4]);} });
+const matchesByTile={}, matchesByMat={};
+D.X.forEach((x,i)=>{(matchesByTile[x[0]]=matchesByTile[x[0]]||[]).push(i);(matchesByMat[x[1]]=matchesByMat[x[1]]||[]).push(i);});
+// album tiles
+D.T.forEach((t,i)=>{
+  let mask=0;t[5].forEach(c=>albumColor(c).forEach(f=>mask|=1<<FI[f]));
+  const cat=t[7]>=0?C.C[t[7]]:null;
+  pieces.push({sp:['t',i],id:'t-'+t[0],k:0,name:t[1],brand:t[2]||'',img:sqImg(t[3],500),url:cat?shopUrl(cat):t[4],mask,prim:mask?Math.log2(mask&-mask):8,album:i,fav:true,avail:cat?cat[7]:1,price:cat?cat[6]:0});
+});
+// album-only mats (not in partner catalog)
+D.M.forEach((m,i)=>{ if(m[4]>=0) return; const xs=matchesByMat[i]||[]; if(!xs.length) return;
+  const x=D.X[xs[0]];
+  pieces.push({sp:['x',xs[0]],id:'m-'+i,k:1,name:m[0],brand:m[1],img:sqImg(x[2],500),url:m[2],mask:0,prim:-1,mat:i,fav:true,avail:m[3]?0:1,retired:!!m[3],price:0});
+});
+// catalog
+C.C.forEach((c,i)=>{ if(c[1]===0 && linkedCat.has(i)) return;
+  const p={sp:['c',i],id:'c-'+i,k:c[1],name:c[2],brand:C.B[c[0]][0],img:shopImg(c[5],400),url:shopUrl(c),mask:c[9],prim:c[8],cat:i,avail:c[7],price:c[6]};
+  if(c[1]===1 && matByCat[i]!==undefined){p.mat=matByCat[i];p.fav=true;}
+  pieces.push(p);
+});
+const byId=Object.fromEntries(pieces.map(p=>[p.id,p]));
+
+// ---- state ----
+const st={v:0,q:'',brand:'',color:-1,fav:false,shown:36};
+try{const s=JSON.parse(localStorage.getItem('mmt')||'{}');if(s.v!==undefined)st.v=s.v;}catch(e){}
+const brands=[...new Set(pieces.map(p=>p.brand).filter(Boolean))].sort();
+$('#brand').insertAdjacentHTML('beforeend',brands.map(b=>`<option>${esc(b)}</option>`).join(''));
+$('#dots').innerHTML=FAMS.map((f,i)=>`<button type="button" class="dot" data-c="${i}" aria-pressed="false" aria-label="${f[2]}" title="${f[2]}" style="background:${f[1]}"></button>`).join('')+`<button type="button" class="dot" data-c="multi" aria-pressed="false" aria-label="Multicolor" title="Multicolor" style="background:conic-gradient(#e9a3b8,#e7c75a,#6f8a52,#5b7fb5,#9a7bb8,#e9a3b8)"></button>`;
+
+function list(){
+  const q=st.q.trim().toLowerCase();
+  let L=pieces.filter(p=>p.k===st.v);
+  if(st.brand) L=L.filter(p=>p.brand===st.brand);
+  if(st.fav) L=L.filter(p=>p.fav);
+  if(st.color==='multi') L=L.filter(p=>p.cat!==undefined&&C.C[p.cat][10]);
+  else if(st.color>=0) L=L.filter(p=>p.prim===st.color||(p.album!==undefined&&(p.mask>>st.color)&1));
+  if(q) L=L.filter(p=>(p.name+' '+p.brand).toLowerCase().includes(q));
+  L.sort((a,b)=>(b.fav?1:0)-(a.fav?1:0)||(b.avail-a.avail));
+  return L;
+}
+function cardHTML(p){
+  return `<button type="button" class="card" data-id="${p.id}"><div class="im">${pic(p.img,p.sp,'','')}${p.fav?'<span class="badge">♥ Tiffany</span>':''}${p.retired?'<span class="sold">Retired</span>':(!p.avail?'<span class="sold">Sold out</span>':'')}</div><div class="t"><span class="n">${esc(p.name)}</span><span class="b">${esc(p.brand)}${p.price?' · $'+p.price:''}</span></div></button>`;
+}
+function render(){
+  ROOT.querySelectorAll('.seg button').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.v===st.v)));
+  ROOT.querySelectorAll('.dot').forEach(b=>b.setAttribute('aria-pressed',String(String(st.color)===b.dataset.c)));
+  const L=list();
+  $('#count').textContent=`${L.length.toLocaleString()} ${['tile sets','mats','racks'][st.v]}`;
+  $('#grid').innerHTML=L.length?L.slice(0,st.shown).map(cardHTML).join(''):'<div class="loading">Nothing matches those filters. Try another color or brand.</div>';
+  $('#moreBtn').hidden=L.length<=st.shown;
+  try{localStorage.setItem('mmt',JSON.stringify({v:st.v}))}catch(e){}
+}
+ROOT.querySelector('.seg').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;st.v=+b.dataset.v;st.shown=36;render();});
+$('#q').addEventListener('input',e=>{st.q=e.target.value;st.shown=36;render();});
+$('#brand').addEventListener('change',e=>{st.brand=e.target.value;st.shown=36;render();});
+$('#favOnly').addEventListener('change',e=>{st.fav=e.target.checked;st.shown=36;render();});
+$('#dots').addEventListener('click',e=>{const b=e.target.closest('.dot');if(!b)return;const c=b.dataset.c==='multi'?'multi':+b.dataset.c;st.color=st.color===c?-1:c;st.shown=36;render();});
+$('#moreBtn').addEventListener('click',()=>{st.shown+=36;render();});
+$('#grid').addEventListener('click',e=>{const b=e.target.closest('.card');if(b)open(b.dataset.id);});
+
+// ---- toast / copy ----
+function toast(t){const d=document.createElement('div');d.className='toast';d.textContent=t;ROOT.appendChild(d);setTimeout(()=>d.remove(),1800);}
+function copyCode(){const done=()=>toast('Copied MAHJMATCH');if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText('MAHJMATCH').then(done,()=>toast('Code: MAHJMATCH'));}else toast('Code: MAHJMATCH');}
+$('#code').addEventListener('click',copyCode);
+
+// ---- matching ----
+function colorMatches(p,kind,limit){
+  const pm=p.mask||(1<<(p.prim>=0?p.prim:8));
+  const neutralBit=1<<FI.neutral;
+  return pieces.filter(q=>q.k===kind&&q.avail&&q.id!==p.id).map(q=>{
+    const qm=q.mask||(1<<q.prim);let s=0;
+    if(q.prim===p.prim) s+=3; s+=pop(qm&pm)*2;
+    if(kind!==1&&(qm&neutralBit)) s+=1; // neutral tiles and racks go with most mats
+    if(q.fav) s+=1;
+    return [s,q];}).filter(a=>a[0]>=3).sort((a,b)=>b[0]-a[0]).slice(0,limit).map(a=>a[1]);
+}
+function matchCard(xi,mode){
+  const x=D.X[xi],t=D.T[x[0]],m=D.M[x[1]];
+  const top=x[5]>0&&x[5]<=3;
+  const racks=x[4].map(r=>`<a href="${esc(D.R[r][1])}" target="_blank" rel="sponsored noopener">${esc(D.R[r][0])}</a>`).join('');
+  const shop=m[2]?`<a class="btn" href="${esc(m[2])}" target="_blank" rel="sponsored noopener">Shop the ${esc(m[0])} mat</a>`:'';
+  const shopT=mode==='mat'&&t[4]?`<a class="btn ghost" href="${esc(t[4])}" target="_blank" rel="sponsored noopener">Shop ${esc(t[1])} tiles</a>`:'';
+  return `<article class="match"><div class="shot">${pic(sqImg(x[2],750),['x',xi],'four5',t[1]+' tiles with '+m[0]+' mat')}</div>
+  <div class="mb">${top?'<span class="ret">♥ Top pick</span>':''}<h3>${esc(t[1])} + ${esc(m[0])}</h3><div class="by">Mat by ${esc(m[1])}${m[3]?' · <span class="ret">Retired</span>':''}</div>
+  <p class="take" tabindex="0">${esc(x[3])}</p>
+  <div class="acts">${shop}${shopT}<button class="btn ghost" type="button" data-share="${xi}">Share</button></div>
+  ${racks?`<div class="racks" aria-label="Rack matches">${racks}</div>`:''}</div></article>`;
+}
+function miniGrid(L){return `<div class="mini">${L.map(cardHTML).join('')}</div>`;}
+
+// ---- sheet ----
+let sheet=null;
+function closeSheet(){if(sheet){sheet.remove();sheet=null;}if(location.hash)history.replaceState(null,'',location.pathname+location.search);}
+function showSheet(html){
+  closeSheet();sheet=document.createElement('div');sheet.className='sheet';
+  sheet.innerHTML=`<div class="panel" role="dialog" aria-modal="true"><div class="grab"></div>${html}</div>`;
+  ROOT.appendChild(sheet);
+  sheet.addEventListener('click',e=>{
+    if(e.target===sheet||e.target.closest('.x')) return closeSheet();
+    const c=e.target.closest('.card'); if(c) return open(c.dataset.id);
+    const s=e.target.closest('[data-share]'); if(s) return share(+s.dataset.share);
+    const t=e.target.closest('.take'); if(t) t.classList.toggle('open');
+    const u=e.target.closest('[data-uni]'); if(u) return open(u.dataset.uni);
+  });
+  sheet.querySelector('.x')?.focus();
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet();});
+function head(p,extra){
+  return `<div class="ph"><h2>${esc(p.name)}</h2><button class="x" type="button" aria-label="Close">✕</button></div>
+  <div class="hero">${pic(p.img,p.sp,'heroimg','')}<div class="meta"><div class="eyebrow">${KIND[p.k]} · ${esc(p.brand)}</div>${p.price?`<div>$${p.price}${p.avail?'':' · Sold out'}</div>`:''}${p.retired?'<div class="ret">Retired: look for it secondhand</div>':''}<div class="acts">${p.url&&!p.retired?`<a class="btn" href="${esc(p.url)}" target="_blank" rel="sponsored noopener">Shop at ${esc(p.brand||'the shop')}</a>`:''}${extra||''}</div></div></div>`;
+}
+function open(id){
+  const p=byId[id]; if(!p) return;
+  let h='';
+  if(p.k===0&&p.album!==undefined){
+    const t=D.T[p.album],xs=(matchesByTile[p.album]||[]).slice().sort((a,b)=>D.X[a][5]-D.X[b][5]);
+    h=head(p,`<a class="btn ghost" href="/${t[0]}-mahjong-tile-matches" target="_blank">Full album</a>`)+
+      `<h3 class="section-h">♥ Tiffany's matches</h3><p class="sub">${xs.length} mats I styled with ${esc(t[1])}, top picks first.</p><div class="feed">${xs.map(x=>matchCard(x,'tile')).join('')}</div>`+
+      `<h3 class="section-h">More mats by color</h3><p class="sub">From our partner shops, matched to ${esc(t[1])}'s colors.</p>${miniGrid(colorMatches(p,1,12))}`;
+  } else if(p.k===0){
+    h=head(p)+`<h3 class="section-h">Mats that share its colors</h3><p class="sub">Matched by color from our partner shops.</p>${miniGrid(colorMatches(p,1,18))}
+      <h3 class="section-h">Racks that go</h3>${miniGrid(colorMatches(p,2,12))}
+      <p class="note">Want my hand-styled picks for this set? <a href="/request-an-album" target="_blank">Request an album</a>.</p>`;
+  } else if(p.k===1){
+    const xs=p.mat!==undefined?(matchesByMat[p.mat]||[]):[];
+    h=head(p);
+    if(xs.length) h+=`<h3 class="section-h">⚡ Tiffany's matches</h3><p class="sub">${xs.length} tile set${xs.length>1?'s':''} I've styled on this mat.</p><div class="feed">${xs.map(x=>matchCard(x,'mat')).join('')}</div>`;
+    h+=`<h3 class="section-h">${xs.length?'More tiles by color':'Tiles by color'}</h3><p class="sub">Hearts are sets with a full album.</p>${miniGrid(colorMatches(p,0,15))}<h3 class="section-h">Racks that go</h3>${miniGrid(colorMatches(p,2,12))}`;
+  } else {
+    h=head(p)+`<h3 class="section-h">Tiles by color</h3>${miniGrid(colorMatches(p,0,15))}<h3 class="section-h">Mats by color</h3>${miniGrid(colorMatches(p,1,12))}`;
+  }
+  showSheet(h);
+  history.replaceState(null,'','#'+id);
+}
+$('#uniBtn').addEventListener('click',()=>{
+  const U=D.T.map((t,i)=>[t,i]).filter(a=>a[0][6]>0).sort((a,b)=>a[0][6]-b[0][6]);
+  showSheet(`<div class="ph"><h2>The universal sets</h2><button class="x" type="button" aria-label="Close">✕</button></div><p>These sets are very neutral and match most mats. Can't decide? Start here.</p>
+  <div class="uni">${U.map(([t,i])=>`<button type="button" data-uni="t-${t[0]}">${pic(sqImg(t[3],300),['t',i],'uniimg','')}<span><strong>${esc(t[1])}</strong><br><small>${esc(t[2])} · ${(matchesByTile[i]||[]).length} styled mats</small></span></button>`).join('')}</div>
+  <p class="note"><a href="/blog/most-versatile-mahjong-tiles" target="_blank">Read: The Most Versatile Mahjong Tiles →</a></p>`);
+});
+
+// ---- share card (brand baked into the image) ----
+async function share(xi){
+  const x=D.X[xi],t=D.T[x[0]],m=D.M[x[1]];
+  try{await document.fonts.load('40px Shrikhand');await document.fonts.load('700 30px Bitter');}catch(e){}
+  let img=new Image(),sx=0,sy=0,sw,sh;
+  if(SP){const e=SP.x[xi];img.src='x'+e[0]+'.webp';sx=(e[1]%10)*240;sy=Math.floor(e[1]/10)*300;sw=240;sh=300;}
+  else{img.crossOrigin='anonymous';img.src=sqImg(x[2],1000);}
+  try{await img.decode();}catch(e){toast('That photo didn’t load. Try again.');return;}
+  if(!sw){sw=img.width;sh=img.height;}
+  const W=1080,H=1350,cv=document.createElement('canvas');cv.width=W;cv.height=H;const g=cv.getContext('2d');
+  g.fillStyle='#f8efe6';g.fillRect(0,0,W,H);
+  const ih=H-170,r=Math.max(W/sw,ih/sh),dw=sw*r,dh=sh*r;
+  g.drawImage(img,sx,sy,sw,sh,(W-dw)/2,(ih-dh)/2,dw,dh);
+  g.fillStyle='#1f3a6b';g.fillRect(0,ih,W,170);
+  g.fillStyle='#fff';g.font='44px Shrikhand, Georgia, serif';g.textBaseline='middle';g.fillText('mahjmatchmaker.com',48,ih+62);
+  g.font='700 30px Bitter, Georgia, serif';g.fillText(`${t[1]} + ${m[0]}`.slice(0,48),48,ih+122);
+  g.textAlign='right';g.font='700 34px Bitter, Georgia, serif';g.fillText('Code MAHJMATCH',W-48,ih+62);
+  let url;try{url=cv.toDataURL('image/jpeg',.9);}catch(e){toast('Sharing isn’t available for this photo.');return;}
+  showSheet(`<div class="ph"><h2>Save this look</h2><button class="x" type="button" aria-label="Close">✕</button></div><p>Press and hold the picture to save it or send it to your mahj group.</p><img class="shareimg" src="${url}" alt="${esc(t[1])} + ${esc(m[0])} match card">`);
+}
+
+render();
+const h=location.hash.slice(1); if(h&&byId[h]) open(h);
+})();
+
+})();
