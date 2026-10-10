@@ -1,0 +1,260 @@
+<style>
+.mmbg{--ink:#1e3a5f;--rose:#c8456f;--blush:#fdf2f5;--sand:#faf7f2;--line:#ead9df;max-width:880px;margin:0 auto;background:#fff;padding:36px 40px;border-radius:18px;color:var(--ink);line-height:1.65;font-size:17px}
+.mmbg *{box-sizing:border-box}
+.mmbg h1,.mmbg h2,.mmbg h3,.mmbg p,.mmbg li{color:var(--ink)}
+.mmbg a{color:var(--rose)}
+.mmbg .hero{position:relative;border-radius:20px;overflow:hidden;background:var(--sand)}
+.mmbg .hero img{display:block;width:100%;height:360px;object-fit:cover}
+.mmbg .hero-txt{padding:28px 36px 30px;background:#fff;margin:-70px 24px 0;position:relative;border-radius:16px;box-shadow:0 8px 30px rgba(30,58,95,.10)}
+.mmbg .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.72em;font-weight:700;color:var(--rose);margin:0 0 6px}
+.mmbg h1{font-size:2.3em;line-height:1.15;margin:0 0 10px}
+.mmbg .dek{font-size:1.08em;margin:0;opacity:.9}
+.mmbg section{margin:46px 0}
+.mmbg h2{font-size:1.55em;margin:0 0 14px;line-height:1.25}
+.mmbg .note{background:var(--sand);border-left:4px solid var(--rose);border-radius:0 14px 14px 0;padding:22px 26px}
+.mmbg .note p{margin:0 0 12px}.mmbg .note p:last-child{margin:0}
+.mmbg .sig{font-style:italic;font-weight:600}
+.mmbg .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.mmbg .card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.mmbg .card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--sand)}
+.mmbg .card .in{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.mmbg .card h3{font-size:1.08em;margin:0}
+.mmbg .card p{margin:0;font-size:.95em}
+.mmbg .card .go{margin-top:auto;font-weight:700;text-decoration:none;font-size:.92em}
+.mmbg .tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.mmbg .tiles a{text-decoration:none;color:var(--ink)}
+.mmbg .tiles img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;display:block}
+.mmbg .tiles span{display:block;font-weight:600;font-size:.92em;margin-top:6px}
+.mmbg .feat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;padding:0;margin:0}
+.mmbg .feat li{margin:0}
+.mmbg .feat a{display:block;padding:14px 16px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);background:#fff}
+.mmbg .feat a b{display:block;color:var(--rose);font-size:.75em;text-transform:uppercase;letter-spacing:.1em}
+.mmbg .perk{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--blush);border-radius:16px;padding:20px 24px}
+.mmbg .perk p{margin:0}
+.mmbg .perk .code{font-weight:800;letter-spacing:.08em;color:var(--rose)}
+.mmbg .btn{display:inline-block;background:var(--rose);color:#fff!important;padding:11px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.95em}
+.mmbg details{border-bottom:1px solid var(--line);padding:12px 0}
+.mmbg summary{cursor:pointer;font-weight:700}
+.mmbg details p{margin:8px 0 0}
+.mmbg .more{display:flex;flex-wrap:wrap;gap:8px}
+.mmbg .more a{border:1px solid var(--line);border-radius:999px;padding:6px 14px;text-decoration:none;font-size:.88em;color:var(--ink);background:#fff}
+.mmbg .small{font-size:.82em;opacity:.75}
+@media(max-width:700px){.mmbg{font-size:16px;padding:22px 16px}.mmbg .hero img{height:230px}.mmbg .hero-txt{margin:-40px 12px 0;padding:20px}.mmbg h1{font-size:1.8em}.mmbg .grid,.mmbg .feat{grid-template-columns:1fr}.mmbg .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.mmbg .me{display:flex;gap:16px;align-items:center;margin:0 0 16px}.mmbg .me img{width:76px;height:76px;border-radius:50%;object-fit:cover;flex:0 0 76px;border:3px solid #fff;box-shadow:0 2px 10px rgba(30,58,95,.15)}.mmbg .me strong{display:block;font-size:1.05em}.mmbg .me span{display:block;font-size:.88em;opacity:.8}
+
+
+.mmbg .tiles.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.mmbg .tiles small{display:block;font-size:.8em;margin-top:2px}
+.mmbg .tiles small a{color:var(--rose);font-weight:600}
+@media(max-width:700px){.mmbg .tiles.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<div class="mmbg">
+<div class="hero">
+<img src="https://cdn.shopify.com/s/files/1/0925/0491/6333/files/3_2.png?v=1759517797&width=1500" style="object-position:50% 50%" alt="The Royal Mahjong Society Newport mahjong tiles">
+<div class="hero-txt">
+<p class="eyebrow">Brand guide</p>
+<h1>The Royal Mahjong Society</h1>
+<p class="dek">Heirloom mahjong tile sets made in Rhode Island, coordinating mats, racks and totes. Plus, my Royal Mahjong Society discount code for readers.</p>
+</div>
+</div>
+<div class="perk perk-top" style="margin:22px 0 4px">
+<p><strong>A thank-you for Mahj Matchmaker readers:</strong> use code <span class="code">{{CODE}}</span> for 15% off at The Royal Mahjong Society.</p>
+<p style="font-size:14px;opacity:.75;margin:6px 0 14px">&#10003; Code verified {{VERIFIED}}</p>
+<a class="btn" href="{{LINK}}" target="_blank" rel="sponsored noopener">Visit The Royal Mahjong Society</a>
+</div>
+<section>
+<h2>Why I love The Royal Mahjong Society</h2>
+<div class="note">
+<div class="me">
+<img src="https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/fa40abe2-2b7e-426d-90d0-c88854212701/Tiffany+Headshot.png?format=300w" style="object-position:50% 22%" alt="Tiffany Emery, founder of Mahj Matchmaker">
+<div><strong>Hi, I&rsquo;m Tiffany.</strong> <span>Oh My Mahjong Mahji Mentor instructor and the matchmaker behind Mahj Matchmaker.</span></div>
+</div>
+<p>{{TIFFANY_TAKE}}</p>
+<p>The Royal Mahjong Society designs every tile set as a full look: each set has a coordinating mat, and every Heirloom tile set comes with a matching twilly scarf. Their newer Studio Series puts the same artwork on lighter-weight tiles, in full size or a travel size.</p>
+<p class="sig">&mdash; Tiffany, Mahj Matchmaker</p>
+</div>
+</section>
+<section>
+<h2>Royal Mahjong Society tile sets</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0925/0491/6333/files/3_2.png?v=1759517797&width=700" alt="Royal Mahjong Society Newport mahjong tile set" loading="lazy">
+<div class="in">
+<h3>Newport Tile Set</h3>
+<p>Anchors, hydrangeas, seagulls and lobsters: summers on the water in Newport, Rhode Island.</p>
+<a class="go" href="https://theroyalmahjongsociety.com/products/newport-mahjong-tile-set{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0925/0491/6333/files/3_cb16c30d-d767-4306-b437-1b8f562eb59d.png?v=1759517075&width=700" alt="Royal Mahjong Society Island mahjong tile set" loading="lazy">
+<div class="in">
+<h3>Island Tile Set</h3>
+<p>Inspired by life by the sea and winter escapes to the Caribbean.</p>
+<a class="go" href="https://theroyalmahjongsociety.com/products/island-mahjong-tile-set{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0925/0491/6333/files/1_f98d8804-98b2-4ae3-8157-fa48fd3e4ab5.png?v=1777409666&width=700" alt="Royal Mahjong Society Girly mahjong tile set" loading="lazy">
+<div class="in">
+<h3>Girly Tile Set</h3>
+<p>Sweet pastels and bows. Tea party, bridal shower or a random Tuesday.</p>
+<a class="go" href="https://theroyalmahjongsociety.com/products/girly-mahjong-tile-set{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0925/0491/6333/files/cottagetiles.png?v=1790021945&width=700" alt="Royal Mahjong Society Cottage mahjong tile set" loading="lazy">
+<div class="in">
+<h3>Cottage Tile Set</h3>
+<p>Fresh flowers on the table and windows open to the breeze.</p>
+<a class="go" href="https://theroyalmahjongsociety.com/products/cottage-mahjong-tile-set{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0925/0491/6333/files/Shoretiles_0201773a-228a-4d59-9890-f97e7da0bd35.png?v=1790022414&width=700" alt="Royal Mahjong Society Shore mahjong tile set" loading="lazy">
+<div class="in">
+<h3>Shore Tile Set</h3>
+<p>Cedar shingles, driftwood, sea glass and dune wildflowers.</p>
+<a class="go" href="https://theroyalmahjongsociety.com/products/shore-mahjong-tile-set{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0925/0491/6333/files/4_1c617a68-b349-428c-a690-0a8a30e74bf8.png?v=1790022235&width=700" alt="Royal Mahjong Society Mahj Royale mahjong tile set" loading="lazy">
+<div class="in">
+<h3>Mahj Royale Tile Set</h3>
+<p>Resort style: striped cabanas, garden parties, bold pinks and greens.</p>
+<a class="go" href="https://theroyalmahjongsociety.com/products/mahj-royale-mahjong-tile-set{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0925/0491/6333/files/crownjewels_2_bf3dd907-2864-4ad3-835e-172dcbb78e70.png?v=1790022817&width=700" alt="Royal Mahjong Society Crown Jewels mahjong tile set" loading="lazy">
+<div class="in">
+<h3>Crown Jewels Tile Set</h3>
+<p>Rich jewel tones and royal treasures for a champagne kind of night.</p>
+<a class="go" href="https://theroyalmahjongsociety.com/products/crown-jewels-tile-set{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+<p class="small">Several sets are on pre-order or restocking (fall 2026). Check each product page for timing.</p>
+</section>
+<section>
+<h2>Royal Mahjong Society mahjong mats</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0925/0491/6333/files/TheRoyalMahjongSociety_NewportTiles_3.jpg?v=1788866814&width=700" alt="Royal Mahjong Society Newport Mat" loading="lazy">
+<div class="in">
+<h3>Newport Mat</h3>
+<p>A nautical pop, made to go with the Newport tiles.</p>
+<a class="go" href="https://theroyalmahjongsociety.com/products/newport-mahjong-mat{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0925/0491/6333/files/TheRoyalMahjongSociety_IslandTiles_3.jpg?v=1788866855&width=700" alt="Royal Mahjong Society Island Mat" loading="lazy">
+<div class="in">
+<h3>Island Mat</h3>
+<p>Vacation colors that pair with the Island tiles.</p>
+<a class="go" href="https://theroyalmahjongsociety.com/products/island-mahjong-mat{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0925/0491/6333/files/Girly_Mat.png?v=1778181237&width=700" alt="Royal Mahjong Society Girly Mat" loading="lazy">
+<div class="in">
+<h3>Girly Mat</h3>
+<p>Soft colors and pretty bows.</p>
+<a class="go" href="https://theroyalmahjongsociety.com/products/girly-mahjong-mat{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0925/0491/6333/files/Cottage_mat_aa86d661-e053-49ea-bee9-73964ac3dac7.png?v=1788303806&width=700" alt="Royal Mahjong Society Cottage Mat" loading="lazy">
+<div class="in">
+<h3>Cottage Mat</h3>
+<p>A bit of sweet whimsy for the game table.</p>
+<a class="go" href="https://theroyalmahjongsociety.com/products/cottage-mahjong-mat{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0925/0491/6333/files/Hydrangea_mats.png?v=1777644994&width=700" alt="Royal Mahjong Society Hydrangea Mat" loading="lazy">
+<div class="in">
+<h3>Hydrangea Mat</h3>
+<p>Blue and white hydrangeas.</p>
+<a class="go" href="https://theroyalmahjongsociety.com/products/hydrangea-mahjong-mat{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0925/0491/6333/files/Shoremat_76dbcb2a-6841-4e1d-a68c-b2af453e0c1f.png?v=1790022477&width=700" alt="Royal Mahjong Society Shore Mat" loading="lazy">
+<div class="in">
+<h3>Shore Mat</h3>
+<p>The soft palette of the shore; works with lots of sets.</p>
+<a class="go" href="https://theroyalmahjongsociety.com/products/shore-mahjong-mat{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0925/0491/6333/files/MahjRoyaleMat_619794e2-51ac-4952-bb60-343d01e1b327.png?v=1790022637&width=700" alt="Royal Mahjong Society Mahj Royale Mat" loading="lazy">
+<div class="in">
+<h3>Mahj Royale Mat</h3>
+<p>Bold and colorful, made for the Mahj Royale tiles.</p>
+<a class="go" href="https://theroyalmahjongsociety.com/products/mahj-royale-mahjong-mat{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0925/0491/6333/files/1_ce81a557-855f-4f00-80f7-f0c9b9dd6a4b.png?v=1785795090&width=700" alt="Royal Mahjong Society Crown Jewels Mat" loading="lazy">
+<div class="in">
+<h3>Crown Jewels Mat</h3>
+<p>Jewel tones with pops of bright color.</p>
+<a class="go" href="https://theroyalmahjongsociety.com/products/crown-jewels-mahjong-mat{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Racks</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0925/0491/6333/files/ClearRacks_2.png?v=1770742986&width=700" alt="Royal Mahjong Society clear mahjong racks" loading="lazy">
+<div class="in">
+<h3>Clear Racks with Pushers</h3>
+<p>Four clear racks with attached pushers and a logo storage bag.</p>
+<a class="go" href="https://theroyalmahjongsociety.com/products/mahjong-rack-clear{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0925/0491/6333/files/WhiteRacks.png?v=1770743668&width=700" alt="Royal Mahjong Society white mahjong racks" loading="lazy">
+<div class="in">
+<h3>White Racks with Pushers</h3>
+<p>The same racks in white.</p>
+<a class="go" href="https://theroyalmahjongsociety.com/products/mahjong-rack-white{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Royal Mahjong Society Discount Code</h2>
+<div class="perk">
+<p><strong>A thank-you for Mahj Matchmaker readers:</strong> use code <span class="code">{{CODE}}</span> for 15% off. Shop through my link so the code tracks.</p>
+<a class="btn" href="{{LINK}}" target="_blank" rel="sponsored noopener">Visit The Royal Mahjong Society</a>
+</div>
+</section>
+<section>
+<h2>Questions about The Royal Mahjong Society</h2>
+<details><summary>Is there a Royal Mahjong Society discount code?</summary><p>Yes. Code {{CODE}} saves 15% at theroyalmahjongsociety.com. Enter it at checkout.</p></details>
+<details><summary>Where are Royal Mahjong Society tiles made?</summary><p>Their tiles are crafted in Rhode Island.</p></details>
+<details><summary>What is the Studio Series?</summary><p>A lighter-weight tile with the same artwork as their Heirloom Collection, in full size or a travel size.</p></details>
+<details><summary>Do the mats match the tile sets?</summary><p>Yes. Each tile set has a coordinating 32&quot; x 32&quot; mat that ships rolled in a matching canvas bag.</p></details>
+<details><summary>Can I combine the code with other offers?</summary><p>Most shops allow one discount code per order, so the code usually can&rsquo;t be combined with a sale or another code.</p></details>
+</section>
+<section>
+<h2>More brands I love</h2>
+<div class="more">
+<a href="/oh-my-mahjong-discount-code">Oh My Mahjong</a>
+<a href="/miss-mahjong-discount-code">Miss Mahjong</a>
+<a href="/my-fair-mahjong-discount-code">My Fair Mahjong</a>
+<a href="/mahjong-row-and-co-discount-code">Mahjong Row &amp; Co.</a>
+<a href="/peace-love-mahjong-discount-code">Peace Love Mahjong</a>
+<a href="/bird-and-bamboo-discount-code">Bird &amp; Bamboo</a>
+<a href="/mahj-squad-discount-code">Mahj Squad</a>
+<a href="/soiree-all-day-discount-code">Soir&eacute;e All Day</a>
+<a href="/mahjong-discount-codes">All brands &rarr;</a>
+</div>
+</section>
+<p class="small">Mahj Matchmaker may earn a commission when you shop through these links, at no extra cost to you. Thank you for supporting the tile match mock-ups and inspiration I share with the community.</p>
+</div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is there a Royal Mahjong Society discount code?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Code {{CODE}} saves 15% at theroyalmahjongsociety.com. Enter it at checkout."}}, {"@type": "Question", "name": "Where are Royal Mahjong Society tiles made?", "acceptedAnswer": {"@type": "Answer", "text": "Their tiles are crafted in Rhode Island."}}, {"@type": "Question", "name": "What is the Royal Mahjong Society Studio Series?", "acceptedAnswer": {"@type": "Answer", "text": "A lighter-weight tile with the same artwork as their Heirloom Collection, in full size or a travel size."}}]}</script>
