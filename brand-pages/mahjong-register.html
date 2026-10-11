@@ -1,0 +1,402 @@
+<style>
+.mmbg{--ink:#1e3a5f;--rose:#c8456f;--blush:#fdf2f5;--sand:#faf7f2;--line:#ead9df;max-width:880px;margin:0 auto;background:#fff;padding:36px 40px;border-radius:18px;color:var(--ink);line-height:1.65;font-size:17px}
+.mmbg *{box-sizing:border-box}
+.mmbg h1,.mmbg h2,.mmbg h3,.mmbg p,.mmbg li{color:var(--ink)}
+.mmbg a{color:var(--rose)}
+.mmbg .hero{position:relative;border-radius:20px;overflow:hidden;background:var(--sand)}
+.mmbg .hero img{display:block;width:100%;height:360px;object-fit:cover}
+.mmbg .hero-txt{padding:28px 36px 30px;background:#fff;margin:-70px 24px 0;position:relative;border-radius:16px;box-shadow:0 8px 30px rgba(30,58,95,.10)}
+.mmbg .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.72em;font-weight:700;color:var(--rose);margin:0 0 6px}
+.mmbg h1{font-size:2.3em;line-height:1.15;margin:0 0 10px}
+.mmbg .dek{font-size:1.08em;margin:0;opacity:.9}
+.mmbg section{margin:46px 0}
+.mmbg h2{font-size:1.55em;margin:0 0 14px;line-height:1.25}
+.mmbg .note{background:var(--sand);border-left:4px solid var(--rose);border-radius:0 14px 14px 0;padding:22px 26px}
+.mmbg .note p{margin:0 0 12px}.mmbg .note p:last-child{margin:0}
+.mmbg .sig{font-style:italic;font-weight:600}
+.mmbg .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.mmbg .card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.mmbg .card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--sand)}
+.mmbg .card .in{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.mmbg .card h3{font-size:1.08em;margin:0}
+.mmbg .card p{margin:0;font-size:.95em}
+.mmbg .card .go{margin-top:auto;font-weight:700;text-decoration:none;font-size:.92em}
+.mmbg .tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.mmbg .tiles a{text-decoration:none;color:var(--ink)}
+.mmbg .tiles img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;display:block}
+.mmbg .tiles span{display:block;font-weight:600;font-size:.92em;margin-top:6px}
+.mmbg .feat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;padding:0;margin:0}
+.mmbg .feat li{margin:0}
+.mmbg .feat a{display:block;padding:14px 16px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);background:#fff}
+.mmbg .feat a b{display:block;color:var(--rose);font-size:.75em;text-transform:uppercase;letter-spacing:.1em}
+.mmbg .perk{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--blush);border-radius:16px;padding:20px 24px}
+.mmbg .perk p{margin:0}
+.mmbg .perk .code{font-weight:800;letter-spacing:.08em;color:var(--rose)}
+.mmbg .btn{display:inline-block;background:var(--rose);color:#fff!important;padding:11px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.95em}
+.mmbg details{border-bottom:1px solid var(--line);padding:12px 0}
+.mmbg summary{cursor:pointer;font-weight:700}
+.mmbg details p{margin:8px 0 0}
+.mmbg .more{display:flex;flex-wrap:wrap;gap:8px}
+.mmbg .more a{border:1px solid var(--line);border-radius:999px;padding:6px 14px;text-decoration:none;font-size:.88em;color:var(--ink);background:#fff}
+.mmbg .small{font-size:.82em;opacity:.75}
+@media(max-width:700px){.mmbg{font-size:16px;padding:22px 16px}.mmbg .hero img{height:230px}.mmbg .hero-txt{margin:-40px 12px 0;padding:20px}.mmbg h1{font-size:1.8em}.mmbg .grid,.mmbg .feat{grid-template-columns:1fr}.mmbg .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.mmbg .me{display:flex;gap:16px;align-items:center;margin:0 0 16px}.mmbg .me img{width:76px;height:76px;border-radius:50%;object-fit:cover;flex:0 0 76px;border:3px solid #fff;box-shadow:0 2px 10px rgba(30,58,95,.15)}.mmbg .me strong{display:block;font-size:1.05em}.mmbg .me span{display:block;font-size:.88em;opacity:.8}
+
+
+.mmbg .tiles.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.mmbg .tiles small{display:block;font-size:.8em;margin-top:2px}
+.mmbg .tiles small a{color:var(--rose);font-weight:600}
+@media(max-width:700px){.mmbg .tiles.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<div class="mmbg">
+<div class="hero">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/blue_snowflake_mahjong_mat_double_sided.png?v=1790550307&width=1500" style="object-position:50% 50%" alt="Mahjong Register holiday mahjong mat">
+<div class="hero-txt">
+<p class="eyebrow">Brand guide</p>
+<h1>Mahjong Register</h1>
+<p class="dek">Mahjong mats in every mood: holiday, florals, animal prints and double-sided leatherette, plus pearlized racks. Plus, my Mahjong Register discount code for readers.</p>
+</div>
+</div>
+<div class="perk perk-top" style="margin:22px 0 4px">
+<p><strong>A thank-you for Mahj Matchmaker readers:</strong> use code <span class="code">MAHJMATCH</span> at Mahjong Register.</p>
+<p style="font-size:14px;opacity:.75;margin:6px 0 14px">&#10003; Code verified {{VERIFIED}}</p>
+<a class="btn" href="{{LINK}}" target="_blank" rel="sponsored noopener">Visit Mahjong Register</a>
+</div>
+<section>
+<h2>About Mahjong Register</h2>
+<div class="note">
+<p>Mahjong Register is mostly mats: 33 of them, from double-sided leatherette (two looks in one mat) to padded neoprene, in 31.5&quot; and 33&quot; sizes. Their holiday collection is one of the biggest we carry, and their Safari Club and &ldquo;in Bloom&rdquo; animal prints lean bold.</p>
+<p>They round it out with pearlized scalloped acrylic racks, dice, rack bags and hostess gifts.</p>
+</div>
+</section>
+<section>
+<h2>Holiday mahjong mats</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/blue_snowflake_mahjong_mat_double_sided.png?v=1790550307&width=700" alt="Mahjong Register Snowflake Reindeer Lodge Double-Sided Leatherette 31.5&quot; x 31.5&quot; mahjong mat" loading="lazy">
+<div class="in">
+<h3>Snowflake Reindeer Lodge Double-Sided Leatherette 31.5&quot; x 31.5&quot;</h3>
+<p>Double-sided leatherette, 31.5". $105.</p>
+<a class="go" href="https://mahjongregister.com/products/pre-order-letters-to-santa-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/santa_mahjong_leather_holiday.png?v=1791421452&width=700" alt="Mahjong Register Letters to Santa Double-Sided Leatherette 31.5&quot; x 31.5&quot; mahjong mat" loading="lazy">
+<div class="in">
+<h3>Letters to Santa Double-Sided Leatherette 31.5&quot; x 31.5&quot;</h3>
+<p>Double-sided leatherette, 31.5". $115.</p>
+<a class="go" href="https://mahjongregister.com/products/pre-order-very-merry-wreath-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy-1{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/holly_jolly_double-sided_leatherette_mahjong_mat.png?v=1790653699&width=700" alt="Mahjong Register Holly Jolly Double-Sided Leatherette 31.5&quot; x 31.5&quot; mahjong mat" loading="lazy">
+<div class="in">
+<h3>Holly Jolly Double-Sided Leatherette 31.5&quot; x 31.5&quot;</h3>
+<p>Double-sided leatherette, 31.5". $125.</p>
+<a class="go" href="https://mahjongregister.com/products/pre-order-very-merry-wreath-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/christmas_wreath_mahjong_mat_double_sided.png?v=1790552032&width=700" alt="Mahjong Register Very Merry Wreath Double-Sided Leatherette 31.5&quot; x 31.5&quot; mahjong mat" loading="lazy">
+<div class="in">
+<h3>Very Merry Wreath Double-Sided Leatherette 31.5&quot; x 31.5&quot;</h3>
+<p>Double-sided leatherette, 31.5". $115.</p>
+<a class="go" href="https://mahjongregister.com/products/pre-order-gold-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy-1{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/snowflake_blue_christmas_mahjong_mat.png?v=1790784174&width=700" alt="Mahjong Register Snowflake Lodge Premium mahjong mat" loading="lazy">
+<div class="in">
+<h3>Snowflake Lodge Premium</h3>
+<p>Neoprene, 33". $85.</p>
+<a class="go" href="https://mahjongregister.com/products/pre-order-snowflake-lodge-premium-mahjong-mat-33-estimated-ship-sep-25th-2026-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/peppermint_red_mahjong_mat_christmas.png?v=1790781125&width=700" alt="Mahjong Register Peppermint Patty Premium mahjong mat" loading="lazy">
+<div class="in">
+<h3>Peppermint Patty Premium</h3>
+<p>Neoprene, 33". $85.</p>
+<a class="go" href="https://mahjongregister.com/products/pre-order-letters-to-santa-premium-mahjong-mat-33-estimated-ship-sep-25th-2026-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/santa_vintage_mahjong_mat_christmas.png?v=1790780169&width=700" alt="Mahjong Register Letters to Santa Premium mahjong mat" loading="lazy">
+<div class="in">
+<h3>Letters to Santa Premium</h3>
+<p>Neoprene, 33". $85.</p>
+<a class="go" href="https://mahjongregister.com/products/preorder-letters-to-santa-premium-mahjong-mat-33-estimated-ship-oct-1st-2026{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/christmas_wreath_mahjong_mat_gift.png?v=1790783840&width=700" alt="Mahjong Register Very Merry Wreath Premium mahjong mat" loading="lazy">
+<div class="in">
+<h3>Very Merry Wreath Premium</h3>
+<p>Neoprene, 33". $85.</p>
+<a class="go" href="https://mahjongregister.com/products/preorder-moonlit-crane-premium-mahjong-mat-33-estimated-ship-aug-20th-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/christmas_mahjong_mat_vintage_christmas_art.png?v=1790549855&width=700" alt="Mahjong Register Holly Jolly Christmas - Neoprene mahjong mat" loading="lazy">
+<div class="in">
+<h3>Holly Jolly Christmas - Neoprene</h3>
+<p>Neoprene, 33". $85.</p>
+<a class="go" href="https://mahjongregister.com/products/preorder-holly-jolly-christams-mahjong-mat-33-estimated-ship-oct-1st-2026{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Florals, solids &amp; double-sided mats</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/Vibrant_Floral_Patterned_Mat_Lifted_Corner.png?v=1791489547&width=700" alt="Mahjong Register Lovely Lavender Double-Sided Leatherette 31.5&quot; x 31.5&quot; mahjong mat" loading="lazy">
+<div class="in">
+<h3>Lovely Lavender Double-Sided Leatherette 31.5&quot; x 31.5&quot;</h3>
+<p>Double-sided leatherette, 31.5". $115.</p>
+<a class="go" href="https://mahjongregister.com/products/colette-s-kaleidoscope-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/Floral_Mandala_Mat_Corner_Fold.png?v=1791489616&width=700" alt="Mahjong Register Colette’s Kaleidoscope Double-Sided Leatherette 31.5&quot; x 31.5&quot; mahjong mat" loading="lazy">
+<div class="in">
+<h3>Colette’s Kaleidoscope Double-Sided Leatherette 31.5&quot; x 31.5&quot;</h3>
+<p>Double-sided leatherette, 31.5". $115.</p>
+<a class="go" href="https://mahjongregister.com/products/sunday-sherbert-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/Reversible_Pastel_Floral_Medallion_Mat.png?v=1791489672&width=700" alt="Mahjong Register Sunday Sherbert Double-Sided Leatherette 31.5&quot; x 31.5&quot; mahjong mat" loading="lazy">
+<div class="in">
+<h3>Sunday Sherbert Double-Sided Leatherette 31.5&quot; x 31.5&quot;</h3>
+<p>Double-sided leatherette, 31.5". $115.</p>
+<a class="go" href="https://mahjongregister.com/products/snowflake-reindeer-lodge-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/gold_leatherette_mahjong_mat_double_sided_1.png?v=1790554465&width=700" alt="Mahjong Register Gold Leatherette mahjong mat" loading="lazy">
+<div class="in">
+<h3>Gold Leatherette</h3>
+<p>Leatherette, 33". $65.</p>
+<a class="go" href="https://mahjongregister.com/products/pre-order-gold-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/pink_purple_reversable_leatherette_mahjong_mat.png?v=1790781338&width=700" alt="Mahjong Register Purple &amp; Coral Pink Double-Sided Leatherette mahjong mat" loading="lazy">
+<div class="in">
+<h3>Purple &amp; Coral Pink Double-Sided Leatherette</h3>
+<p>Double-sided leatherette, 33". $80.</p>
+<a class="go" href="https://mahjongregister.com/products/pre-order-seafoam-green-slate-blue-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/green_double_sided_leatherette_mahjong_mat.png?v=1790647777&width=700" alt="Mahjong Register Hunter Green &amp; Navy Double-Sided Leatherette mahjong mat" loading="lazy">
+<div class="in">
+<h3>Hunter Green &amp; Navy Double-Sided Leatherette</h3>
+<p>Double-sided leatherette, 33". $80.</p>
+<a class="go" href="https://mahjongregister.com/products/pre-order-purple-coral-pink-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/seafoam_green_slate_blue_double_sided_leatherette_mahjong_mat.png?v=1790652245&width=700" alt="Mahjong Register Seafoam Green &amp; Slate Blue Double-Sided Leatherette mahjong mat" loading="lazy">
+<div class="in">
+<h3>Seafoam Green &amp; Slate Blue Double-Sided Leatherette</h3>
+<p>Double-sided leatherette, 33". $80.</p>
+<a class="go" href="https://mahjongregister.com/products/pre-order-emerald-teal-celedon-green-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/emerald_teal_green_double_sided_leatherette_mahjong_mat.png?v=1790652743&width=700" alt="Mahjong Register Emerald Teal &amp; Celedon Green Double-Sided Leatherette mahjong mat" loading="lazy">
+<div class="in">
+<h3>Emerald Teal &amp; Celedon Green Double-Sided Leatherette</h3>
+<p>Double-sided leatherette, 33". $80.</p>
+<a class="go" href="https://mahjongregister.com/products/pre-order-coral-aqua-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy-1{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/navy_leatherette_mahjong_mat.png?v=1790653055&width=700" alt="Mahjong Register Navy Leatherette mahjong mat" loading="lazy">
+<div class="in">
+<h3>Navy Leatherette</h3>
+<p>Leatherette, 33". $65.</p>
+<a class="go" href="https://mahjongregister.com/products/pre-order-coral-aqua-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/coral_aqua_double_sided_mahjong_mat.png?v=1790653305&width=700" alt="Mahjong Register Coral &amp; Aqua Double-Sided Leatherette mahjong mat" loading="lazy">
+<div class="in">
+<h3>Coral &amp; Aqua Double-Sided Leatherette</h3>
+<p>Double-sided leatherette, 33". $80.</p>
+<a class="go" href="https://mahjongregister.com/products/preorder-butterfly-belle-premium-mahjong-mat-33-estimated-ship-oct-30th-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/blue_pink_butterfly_mahjong_mat.png?v=1790780947&width=700" alt="Mahjong Register Butterfly Belle Premium mahjong mat" loading="lazy">
+<div class="in">
+<h3>Butterfly Belle Premium</h3>
+<p>Neoprene, 33". $85.</p>
+<a class="go" href="https://mahjongregister.com/products/preorder-pretty-in-plum-premium-mahjong-mat-33-estimated-ship-oct-30th-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/purple_plum_flowers_mahjong_mat.png?v=1790780982&width=700" alt="Mahjong Register Pretty in Plum Premium mahjong mat" loading="lazy">
+<div class="in">
+<h3>Pretty in Plum Premium</h3>
+<p>Neoprene, 33". $85.</p>
+<a class="go" href="https://mahjongregister.com/products/preorder-buttercup-cherie-premium-mahjong-mat-33-estimated-ship-oct-30th-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/blue_yellow_flower_mahjong_mat.png?v=1790783163&width=700" alt="Mahjong Register Buttercup Cherie Premium mahjong mat" loading="lazy">
+<div class="in">
+<h3>Buttercup Cherie Premium</h3>
+<p>Neoprene, 33". $85.</p>
+<a class="go" href="https://mahjongregister.com/products/preorder-moonlit-crane-premium-mahjong-mat-33-estimated-ship-oct-30th{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/mahjong_mat_paisley.jpg?v=1790785340&width=700" alt="Mahjong Register Paisley Jubilee Premium mahjong mat" loading="lazy">
+<div class="in">
+<h3>Paisley Jubilee Premium</h3>
+<p>Neoprene, 33". $85.</p>
+<a class="go" href="https://mahjongregister.com/products/peach-spotted-cheetah-in-bloom-premium-mahjong-mat-33-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/blue_white_crane_mahjong_mat_floral.jpg?v=1790785202&width=700" alt="Mahjong Register Moonlit Crane Premium mahjong mat" loading="lazy">
+<div class="in">
+<h3>Moonlit Crane Premium</h3>
+<p>Neoprene, 33". $85.</p>
+<a class="go" href="https://mahjongregister.com/products/peony-sociale-premium-mahjong-mat-33-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/mahjong_mat_neoprene_pink_blue_green.png?v=1790785260&width=700" alt="Mahjong Register Peony Sociale Premium mahjong mat" loading="lazy">
+<div class="in">
+<h3>Peony Sociale Premium</h3>
+<p>Neoprene, 33". $85.</p>
+<a class="go" href="https://mahjongregister.com/products/paisley-jubilee-premium-mahjong-mat-33-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/Savannah_Stripe_mahjong_mat.webp?v=1790787344&width=700" alt="Mahjong Register Savannah Stripe Safari Club Collection mahjong mat" loading="lazy">
+<div class="in">
+<h3>Savannah Stripe Safari Club Collection</h3>
+<p>Mahjong mat, 33". $80.</p>
+<a class="go" href="https://mahjongregister.com/products/savannah-stripe-safari-club-collection-33-mahjong-mat{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Animal prints</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/pink_leopard_mahjong_mat.webp?v=1790787095&width=700" alt="Mahjong Register Palm Beach Pink Leopard mahjong mat" loading="lazy">
+<div class="in">
+<h3>Palm Beach Pink Leopard</h3>
+<p>Mahjong mat, 33". $65.</p>
+<a class="go" href="https://mahjongregister.com/products/teal-rivera-leopard-33-mahjong-mat-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/leopard_teal_mahjong_mat.webp?v=1790787227&width=700" alt="Mahjong Register Teal Rivera Leopard mahjong mat" loading="lazy">
+<div class="in">
+<h3>Teal Rivera Leopard</h3>
+<p>Mahjong mat, 33". $65.</p>
+<a class="go" href="https://mahjongregister.com/products/teal-rivera-leopard-33-mahjong-mat{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/zebra_mahjong_mat.webp?v=1790787530&width=700" alt="Mahjong Register Zebra Noir Safari Club Collection mahjong mat" loading="lazy">
+<div class="in">
+<h3>Zebra Noir Safari Club Collection</h3>
+<p>Mahjong mat, 33". $80.</p>
+<a class="go" href="https://mahjongregister.com/products/zebra-noir-safari-club-collection-33-mahjong-mat{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/cow_mahjong_mat.webp?v=1790787686&width=700" alt="Mahjong Register Highland Cow Hide Safari Club Collection mahjong mat" loading="lazy">
+<div class="in">
+<h3>Highland Cow Hide Safari Club Collection</h3>
+<p>Mahjong mat, 33". $80.</p>
+<a class="go" href="https://mahjongregister.com/products/highland-cow-hide-safari-club-collection-mahjong-mat-33{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/zebra_pink_floral_mahjong_mat.webp?v=1790787818&width=700" alt="Mahjong Register Pink Zebra in Bloom Premium Padded mahjong mat" loading="lazy">
+<div class="in">
+<h3>Pink Zebra in Bloom Premium Padded</h3>
+<p>Neoprene, 33". $80.</p>
+<a class="go" href="https://mahjongregister.com/products/pink-zebra-in-bloom-premium-padded-mahjong-mat-33{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/green_floral_leopard_mahjong.jpg?v=1790787929&width=700" alt="Mahjong Register Emerald Leopard in Bloom Premium Padded mahjong mat" loading="lazy">
+<div class="in">
+<h3>Emerald Leopard in Bloom Premium Padded</h3>
+<p>Neoprene, 33". $80.</p>
+<a class="go" href="https://mahjongregister.com/products/emerald-leopard-in-bloom-premium-padded-mahjong-mat-33{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/peach_cheetah_mahjong_mat.jpg?v=1790787976&width=700" alt="Mahjong Register &quot;The Peppi&quot; Peach Spotted Cheetah in Bloom Premium mahjong mat" loading="lazy">
+<div class="in">
+<h3>&quot;The Peppi&quot; Peach Spotted Cheetah in Bloom Premium</h3>
+<p>Neoprene, 33". $80.</p>
+<a class="go" href="https://mahjongregister.com/products/peach-spotted-cheetah-in-bloom-premium-mahjong-mat-33{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Racks</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/pearl_mahjong_racks.jpg?v=1790786289&width=700" alt="Mahjong Register Set of 4 Luxury Pearlized Acrylic Mahjong Racks mahjong mat" loading="lazy">
+<div class="in">
+<h3>Set of 4 Luxury Pearlized Acrylic Mahjong Racks</h3>
+<p>Set of 4, 20&quot; scalloped acrylic racks. $135.</p>
+<a class="go" href="https://mahjongregister.com/products/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0877/7039/9032/files/acrylic_mahjong_racks.jpg?v=1790786721&width=700" alt="Mahjong Register Signature Collection Acrylic Mahjong Racks mahjong mat" loading="lazy">
+<div class="in">
+<h3>Signature Collection Acrylic Mahjong Racks</h3>
+<p>Set of 4, 20&quot; scalloped acrylic racks. $135.</p>
+<a class="go" href="https://mahjongregister.com/products/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders{{REF}}" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Mahjong Register Discount Code</h2>
+<div class="perk">
+<p><strong>A thank-you for Mahj Matchmaker readers:</strong> use code <span class="code">MAHJMATCH</span> at Mahjong Register. Shop through my link so the code tracks.</p>
+<a class="btn" href="{{LINK}}" target="_blank" rel="sponsored noopener">Visit Mahjong Register</a>
+</div>
+</section>
+<section>
+<h2>Questions about Mahjong Register</h2>
+<details><summary>Is there a Mahjong Register discount code?</summary><p>Yes. Use code MAHJMATCH at checkout on mahjongregister.com.</p></details>
+<details><summary>What is a double-sided mahjong mat?</summary><p>A leatherette mat with a different design on each side, so you get two looks in one mat.</p></details>
+<details><summary>Does Mahjong Register sell holiday mahjong mats?</summary><p>Yes: Letters to Santa, Holly Jolly, Very Merry Wreath, Snowflake Reindeer Lodge, Peppermint Patty and more, in neoprene or double-sided leatherette.</p></details>
+<details><summary>Can I combine the code with other offers?</summary><p>Most shops allow one discount code per order, so the code usually can&rsquo;t be combined with a sale or another code.</p></details>
+</section>
+<section>
+<h2>More brands I love</h2>
+<div class="more">
+<a href="/oh-my-mahjong-discount-code">Oh My Mahjong</a>
+<a href="/miss-mahjong-discount-code">Miss Mahjong</a>
+<a href="/my-fair-mahjong-discount-code">My Fair Mahjong</a>
+<a href="/mahjong-row-and-co-discount-code">Mahjong Row &amp; Co.</a>
+<a href="/royal-mahjong-society-discount-code">The Royal Mahjong Society</a>
+<a href="/bird-and-bamboo-discount-code">Bird &amp; Bamboo</a>
+<a href="/mahj-squad-discount-code">Mahj Squad</a>
+<a href="/soiree-all-day-discount-code">Soir&eacute;e All Day</a>
+<a href="/mahjong-discount-codes">All brands &rarr;</a>
+</div>
+</section>
+<p class="small">Mahj Matchmaker may earn a commission when you shop through these links, at no extra cost to you. Thank you for supporting the tile match mock-ups and inspiration I share with the community.</p>
+</div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is there a Mahjong Register discount code?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Use code MAHJMATCH at checkout on mahjongregister.com."}}, {"@type": "Question", "name": "Does Mahjong Register sell holiday mahjong mats?", "acceptedAnswer": {"@type": "Answer", "text": "Yes: Letters to Santa, Holly Jolly, Very Merry Wreath, Snowflake Reindeer Lodge, Peppermint Patty and more."}}]}</script>
