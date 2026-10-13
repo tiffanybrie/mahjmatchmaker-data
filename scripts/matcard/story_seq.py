@@ -44,18 +44,19 @@ frames['2-limoncello']=match('Limoncello','Limoncello',"TIFFANY'S TOP PICK","Oh 
 # 3 matching secret
 frames['3-secret']=page(f"""{eb('THE MATCHING SECRET')}<h2 style='font-size:84px'>Why it pops</h2>
 <div style='display:flex;align-items:center;gap:40px'>
- <div style='width:380px;height:380px;border-radius:50%;background:conic-gradient(#e8344a,#f08a24,#f7d33c,#a8d63a,#2fae5f,#22a6b3,#3a6fd8,#7b4fc9,#c23fa0,#e8344a);position:relative;box-shadow:0 10px 26px rgba(0,0,0,.18)'>
+ <div style='width:380px;height:380px;border-radius:50%;background:conic-gradient(#e8344a 0deg,#f08a24 40deg,#f7d33c 80deg,#c8dc3a 115deg,#a8d63a 150deg,#2fae5f 185deg,#22a6b3 220deg,#3a6fd8 255deg,#5b4fc9 285deg,#b03fa6 305deg,#ed5c76 330deg,#e8344a 360deg);position:relative;box-shadow:0 10px 26px rgba(0,0,0,.18)'>
   <div style='position:absolute;inset:95px;border-radius:50%;background:#f6e9df'></div>
-  <div style='position:absolute;left:186px;top:6px;width:8px;height:368px;background:#2a2036;transform:rotate(-40deg);transform-origin:center;border-radius:4px'></div>
+  <div style='position:absolute;left:186px;top:6px;width:8px;height:368px;background:#2a2036;transform:rotate(-30deg);transform-origin:center;border-radius:4px'></div>
+  <div style='position:absolute;left:0;top:0;width:380px;height:380px;transform:rotate(-30deg)'><i style='position:absolute;left:162px;top:-6px;width:56px;height:56px;border-radius:50%;background:#ed5c76;border:6px solid #fff;box-shadow:0 3px 8px rgba(0,0,0,.3);display:block'></i><i style='position:absolute;left:162px;bottom:-6px;width:56px;height:56px;border-radius:50%;background:#a8d63a;border:6px solid #fff;box-shadow:0 3px 8px rgba(0,0,0,.3);display:block'></i></div>
  </div>
  <div style='display:flex;flex-direction:column;gap:22px'>
-  <div style='display:flex;align-items:center;gap:18px'><i style='width:96px;height:96px;border-radius:50%;background:#e04a6a;display:block'></i><div class=nm style='text-align:left;font-size:38px'>Magenta<small>the mat's center</small></div></div>
+  <div style='display:flex;align-items:center;gap:18px'><i style='width:96px;height:96px;border-radius:50%;background:#ed5c76;display:block'></i><div class=nm style='text-align:left;font-size:38px'>Watermelon<small>the mat's center</small></div></div>
   <div style='font-family:BitterB;font-size:40px;color:#054689;padding-left:26px'>↕ opposites</div>
   <div style='display:flex;align-items:center;gap:18px'><i style='width:96px;height:96px;border-radius:50%;background:#AFE745;display:block'></i><div class=nm style='text-align:left;font-size:38px'>Lime green<small>maximum pop</small></div></div>
  </div></div>
 <div class=q style='font-size:42px'>Find the main color in the center of the mat, jump to its <b>opposite on the color wheel</b>, then match how light or bright it is.</div>
 <div style='display:flex;gap:22px;align-items:center'><div style='width:250px;height:250px;border-radius:18px;background:url({tile('Limoncello')}) center/cover;border:6px solid #fff;box-shadow:0 8px 20px rgba(0,0,0,.2)'></div>
-<div style='display:flex;flex-direction:column;gap:12px'><div style='background:#AFE745;border-radius:10px;padding:16px 24px;font-family:BitterB;font-size:34px;box-shadow:inset 0 -6px 0 rgba(0,0,0,.12)'>Lime Green racks</div><div class=nm style='font-size:32px;text-align:left'>+ Limoncello tiles<small>both land opposite magenta</small></div></div></div>""")
+<div style='display:flex;flex-direction:column;gap:12px'><div style='background:#AFE745;border-radius:10px;padding:16px 24px;font-family:BitterB;font-size:34px;box-shadow:inset 0 -6px 0 rgba(0,0,0,.12)'>Lime Green racks</div><div class=nm style='font-size:32px;text-align:left'>+ Limoncello tiles<small>both land opposite watermelon</small></div></div></div>""")
 frames['4-moonlight']=match('Moonlight','Moonlight',"TIFFANY'S TOP PICK","Moonlight's blues pick up Larkspur's periwinkle border and the deep blue birds.")
 frames['5-vault']=match('Spring Love (retired)','Spring Love',"HAVE AN OLDER SET?",T['vault-spring-love']['short'],True)
 os.makedirs(out,exist_ok=True)
