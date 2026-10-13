@@ -1,0 +1,33 @@
+{
+  "mat": "Larkspur (Oh My Mahjong)",
+  "rule": "short = album/builder caption, max ~2 lines (~120 chars), Tiffany's own words. full = her complete note, shown only behind 'Read more'. Never show full text inline.",
+  "source": "larkspurswipe_notes, Oct 13 2026",
+  "takes": {
+    "limoncello": {"star": false, "top_pick": true,
+      "short": "Top pick. Oh Limoncello, you are missed. It's almost as though this mat was made for you.",
+      "full": "Oh Limoncello, you are missed. It's almost as though this mat was made for you.\n\nIf you have ever wondered why some tile colors \"pop\" on a particular mat color, I'll share a matching secret with you. Complementary colors sit directly across from each other on the color wheel, i.e. Red & Green, Orange & Blue, Purple & Yellow, and they will always produce the maximum color contrast or \"pop\" when placed against each other. The center of this mat is a bright pink/magenta (a tint of red), so its complement is a bright tint of green: lime green. Tints are lighter because you add white; shades are darker because you add black. So to quickly shortlist the ever-present question of \"what tiles look best on this mat?\", identify the primary color in the center of the mat and jump to its complement. Then match the tint or shade level to find which tile back color gives maximum pop.",
+      "reuse": "Color-wheel lesson = social/blog content: 'The matching secret: complementary colors'"},
+    "moonlight": {"star": true, "top_pick": true, "short": "Top pick.", "full": ""},
+    "vault-spring-love": {"star": true,
+      "short": "A fantastic color match on back and layers. Pink on pink is low contrast, but a calmer center for a mat this colorful.",
+      "full": "Spring is actually a fantastic color match on tile back and layers for this mat, albeit a low contrast (no pop) one due to the pink on pink vibe. Due to how much color is in this mat, some may appreciate a calmer center and Spring is a great option for that."},
+    "seabreeze": {"star": false,
+      "short": "The turquoise back isn't a match, but the blue and magenta layers pull it in. On a mat this bright, one more bright just adds to the party.",
+      "full": "While the bright turquoise back of Seabreeze is not a match, its blue and magenta layers are a match to this mat and pull it in. Plus when a mat is bright like this, and especially when it's colorful and bright, throwing one more bright color into the mix just adds to the party."},
+    "pippa": {"star": false,
+      "short": "The yellow back isn't a match, but the layer colors coordinate and the brightness keeps these vibing.",
+      "full": "Like Seabreeze, Pippa's bright yellow back color is not a match but it coordinates thru its layer colors and these tiles and mat are still vibing based on a strong brightness level."},
+    "birdie": {"star": false,
+      "short": "The mint back isn't in this mat, but the layer colors are. Not perfect, but cool for summer.",
+      "full": "Birdie's mint back is not in this mat but its layer colors are and the match can work because Birdie is a friendly tile most anywhere brights and blues collide. Not a perfect match but they could be cool for the summer."},
+    "lola": {"star": false,
+      "short": "For the same reasons Birdie can work here, so can Lola.",
+      "full": ""},
+    "papaya-spritz": {"star": false,
+      "short": "No orange in this mat, but the layer colors match and the brightness makes it work. Low contrast, still a yes.",
+      "full": "Dream match? Not so much. There is no orange in this mat. But Papaya's layer colors are a great match and overall brightness can make these work. Orange tiles on a pink mat aren't a lot of contrast because the colors are analogous (next to each other on the color wheel) but that doesn't mean it can't work."},
+    "la-fete": {"star": true, "short": "", "full": ""},
+    "luminaire": {"star": true, "short": "", "full": ""},
+    "palm-royale": {"star": true, "short": "", "full": ""}
+  }
+}
