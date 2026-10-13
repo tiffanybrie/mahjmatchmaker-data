@@ -267,6 +267,15 @@ for _s in plan['sets']:
         _im=Image.open(_f).convert('RGB');_im.thumbnail((520,520))
         _u=[u for u in _AU if u.rstrip('/').endswith('/'+_slug+'-mahjong-tile-matches')]
         prods[_s['tile']]=dict(hide=False,k='tile',n=_s['name'],cut=b64(_im,'JPEG',80),photo=b64(_im,'JPEG',80),pile=b64(_im,'JPEG',80),clean=True,url=(_u[0] if _u else 'https://www.mahjmatchmaker.com'),retired=True)
+# --- Heritage (original) vs Heritage 2.0 (Oct 13 audit): both sets pointed at OMM's current product, which is 2.0
+# ("lighter in color than previous sets"), so Heritage 1 showed the 2.0 photo. Give Heritage 1 its own tile entry
+# using Tiffany's original pile shot (Dropbox 5_Tiles/Pile Shots/Heritage.webp -> assets/tiles/album/heritage.jpg).
+_H1='/home/claude/mahjmatchmaker-data/assets/tiles/album/heritage.jpg'
+for _s in plan['sets']:
+    if _s['slug']=='heritage' and _s['tile'] in prods and _os2.path.exists(_H1):
+        _im=Image.open(_H1).convert('RGB');_im.thumbnail((520,520))
+        prods['h1:heritage']=dict(prods[_s['tile']],n='Heritage',cut=b64(_im,'JPEG',80),photo=b64(_im,'JPEG',80),pile=b64(_im,'JPEG',80),clean=True)
+        _s['tile']='h1:heritage'
 for pid,v in prods.items():
     host=v['url'].split('//')[1].split('/')[0].replace('www.','')
     v['b']=BR.get(host,host);v['p']=host in PARTNER
