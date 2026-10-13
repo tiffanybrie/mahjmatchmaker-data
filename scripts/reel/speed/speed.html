@@ -1,0 +1,67 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Alfa;src:url(file:///tmp/cc/f/fontsource-alfa-slab-one-5.3.0/package/files/alfa-slab-one-latin-400-normal.woff2)}
+@font-face{font-family:Bitter;font-weight:700;src:url(file:///tmp/cc/f/fontsource-bitter-5.3.0/package/files/bitter-latin-700-normal.woff2)}
+@font-face{font-family:Play;font-style:italic;src:url(file:///tmp/cc/f/fontsource-playfair-display-5.3.0/package/files/playfair-display-latin-700-italic.woff2)}
+*{box-sizing:border-box;margin:0}
+body{width:1080px;height:1920px;overflow:hidden;position:relative;font-family:Bitter;background:#f6e9df}
+.abs{position:absolute}
+#bg{position:absolute;inset:0;background:repeating-linear-gradient(45deg,var(--c) 0 26px,transparent 26px 52px);opacity:.09}
+.big{font-family:Alfa;text-align:center;width:1080px;left:0;text-shadow:5px 5px 0 #fff}
+.it{font-family:Play;font-style:italic;text-align:center;width:1080px;left:0}
+#card{left:90px;top:400px;width:900px;height:1125px;border-radius:22px;box-shadow:0 18px 40px rgba(0,0,0,.28);overflow:hidden;background:#fff}
+#card img{width:100%;height:100%;display:block}
+#rank{left:0;top:110px;width:1080px;text-align:center;font-family:Alfa;font-size:200px;line-height:1;color:var(--c);text-shadow:6px 6px 0 #fff}
+#lbl{left:0;top:1580px;width:1080px;text-align:center;font:700 64px Bitter;color:#2a2036}
+#lbl small{display:block;font-family:Play;font-style:italic;font-size:48px;color:#6b5a77;font-weight:400}
+.conf{position:absolute;width:18px;height:28px;border-radius:4px}
+.heart{position:absolute;width:150px;height:140px}
+</style></head><body style="--c:__COL__">
+<div id="bg"></div>
+<div id="intro" class="abs" style="inset:0">
+ <div class="abs it" style="top:500px;font-size:84px;color:#6b5a77;white-space:nowrap">__TILE_T__ goes</div>
+ <div class="abs big" style="top:620px;font-size:190px;color:var(--c)">SPEED</div>
+ <div class="abs big" style="top:830px;font-size:190px;color:var(--c)">DATING</div>
+ <div class="abs it" style="top:1080px;font-size:60px;color:#2a2036;white-space:nowrap">5 mats &middot; 3 seconds each</div>
+ <div class="abs it" style="top:1160px;font-size:60px;color:#2a2036;white-space:nowrap">who gets a second date?</div>
+</div>
+<div id="main" class="abs" style="inset:0">
+ <div id="rank" class="abs" style="font-size:96px;top:150px;font-family:Play;font-style:italic;text-shadow:none;color:#2a2036">Date #1</div>
+ <svg id="timer" class="abs" style="left:880px;top:300px;width:150px;height:150px;z-index:5" viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" fill="#fff" stroke="#eee" stroke-width="10"/><circle id="tarc" cx="50" cy="50" r="44" fill="none" stroke="var(--c)" stroke-width="10" stroke-dasharray="276.5" stroke-dashoffset="0" transform="rotate(-90 50 50)" stroke-linecap="round"/><text id="tnum" x="50" y="62" text-anchor="middle" font-family="Alfa" font-size="34" fill="#2a2036">3</text></svg>
+ <div id="stamp" class="abs" style="left:110px;top:780px;width:860px;white-space:nowrap;text-align:center;font-family:Alfa;font-size:88px;color:#d6336c;border:12px solid #d6336c;border-radius:24px;padding:10px 0;background:rgba(255,255,255,.88);z-index:6">SECOND DATE &hearts;</div>
+ <div id="card" class="abs"><img id="cimg"></div>
+ <div id="lbl" class="abs"></div>
+ <div id="cf"></div>
+</div>
+<div id="end" class="abs" style="inset:0">
+ <svg class="heart" id="h1" style="left:300px;top:420px" viewBox="0 0 32 29"><path fill="__H1__" d="M16 29 2.6 15.6A8.3 8.3 0 0 1 14.4 3.9L16 5.5l1.6-1.6a8.3 8.3 0 0 1 11.8 11.7z"/></svg>
+ <svg class="heart" id="h2" style="left:630px;top:420px" viewBox="0 0 32 29"><path fill="__H2__" d="M16 29 2.6 15.6A8.3 8.3 0 0 1 14.4 3.9L16 5.5l1.6-1.6a8.3 8.3 0 0 1 11.8 11.7z"/></svg>
+ <div class="abs it" style="top:650px;font-size:80px;color:var(--c)">See all __N__ of</div>
+ <div class="abs big" style="top:760px;font-size:150px;color:var(--c)">__TILE__&rsquo;S</div>
+ <div class="abs big" style="top:940px;font-size:150px;color:var(--c)">MATCHES</div>
+ <div id="lib" class="abs big" style="top:1250px;font-size:130px;color:var(--c)">LINK IN BIO</div>
+ <img class="abs" src="__WORDMARK__" style="left:240px;top:1560px;width:600px">
+</div>
+<script>
+const C=__CARDS__;const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));const ease=x=>1-Math.pow(1-cl(x),3);const back=x=>{x=cl(x);const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const imgs=C.map(c=>{const i=new Image();i.src=c.img;return i});
+const cf=document.getElementById('cf');const P=[];const cols=['__H1__','__H2__','#f56c8c','#e9c77b','#054689'];
+for(let i=0;i<60;i++){const d=document.createElement('div');d.className='conf';d.style.background=cols[i%5];cf.appendChild(d);P.push({d,x:(i*97)%1080,vx:((i*53)%200-100)*2,vy:-600-((i*71)%500),r:(i*37)%360})}
+const INTRO=2.4,PER=3.6,ENDT=INTRO+PER*C.length;window.DUR=ENDT+3.6;
+function o(id,v){document.getElementById(id).style.opacity=v}
+window.render=function(t){
+ o('intro',t<INTRO?1:1-cl((t-INTRO)/.25));o('main',t<INTRO?0:(t<ENDT?cl((t-INTRO)/.25):1-cl((t-ENDT)/.25)));o('end',t<ENDT?0:cl((t-ENDT)/.3));
+ if(t>=INTRO&&t<ENDT+.3){const k=Math.min(C.length-1,Math.floor((t-INTRO)/PER)),u=(t-INTRO)-k*PER;const c=C[k];
+  const rk=document.getElementById('rank');rk.textContent=c.q;rk.style.transform=`scale(${back(u/.4)})`;
+  const tl=cl((u-.45)/2.4);document.getElementById('tarc').setAttribute('stroke-dashoffset',276.5*tl);document.getElementById('tnum').textContent=Math.max(0,Math.ceil(3-tl*3));document.getElementById('timer').style.opacity=cl(u/.3);
+  const st=document.getElementById('stamp');const su=u-2.85;st.style.opacity=su>0?1:0;st.style.transform=`rotate(-12deg) scale(${su>0?1+1.2*(1-ease(su/.22)):2})`;
+  const cd=document.getElementById('card');const ci=document.getElementById('cimg');if(ci.src!==c.img)ci.src=c.img;
+  const inx=1-ease(u/.45),out=cl((u-(PER-.35))/.35);cd.style.transform=`translateX(${inx*1100-out*1100}px) rotate(${(inx-out)*10}deg) scale(${1+0.015*Math.sin(u*2)})`;
+  const lb=document.getElementById('lbl');lb.innerHTML=c.mat+'<small>by '+c.brand+'</small>';lb.style.opacity=cl((u-.45)/.25);
+  // confetti on #1
+  P.forEach(p=>{if(c.last&&u>3.0){const s=u-3.0;p.d.style.display='block';p.d.style.left=(540+p.vx*s*.6+p.x*0-0)+'px';p.d.style.top=(900+p.vy*s+700*s*s)+'px';p.d.style.transform=`rotate(${p.r+s*400}deg)`}else p.d.style.display='none'});
+ }
+ const w=t-ENDT;document.getElementById('h1').style.transform=`scale(${back(w/.45)*(1+.08*Math.sin(w*7))})`;document.getElementById('h2').style.transform=`scale(${back((w-.15)/.45)*(1+.08*Math.sin(w*7+1))})`;
+ document.getElementById('lib').style.transform=`scale(${back((w-.8)/.45)*(1+.03*Math.sin(w*5))})`;
+};
+document.fonts.ready.then(()=>{document.querySelectorAll('.big').forEach(e=>{e.style.whiteSpace='nowrap';let f=parseFloat(getComputedStyle(e).fontSize);const sp=document.createElement('span');sp.textContent=e.textContent;sp.style.cssText='font:'+getComputedStyle(e).font+';white-space:nowrap;position:absolute;visibility:hidden';document.body.appendChild(sp);while(sp.offsetWidth>1000&&f>40){f-=4;sp.style.fontSize=f+'px'}e.style.fontSize=f+'px';sp.remove()})});render(0);
+</script></body></html>
