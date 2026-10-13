@@ -38,7 +38,7 @@ for c in spec['cards']:
         b=next((bn for bn in logos if rn.startswith(bn) or rn.startswith(bn.replace(' Mahjong','')+' ')),None)
         if b and not rlogo: rlogo=uri(R+'builder/logos/'+logos[b],'PNG')
     tile=uri(R+c['tile_file'],maxs=800)
-    h=html_tpl.replace('__DATA__',json.dumps({'title':c['title'],'col':c['col'],'mat':MAT,'tile':tile,'racks':ph,'rasp':rasp,'rlogo':rlogo,'bb':bbl,'bblogo':BBLOGO,'omm':OMM,'navy':NAVY,'code':spec.get('code','10% OFF  USE CODE : MAHJMATCH')}))
+    h=html_tpl.replace('__DATA__',json.dumps({'title':c['title'],'col':c['col'],'mat':MAT,'tile':tile,'racks':ph,'rasp':rasp,'rlogo':rlogo,'bb':bbl,'bblogo':BBLOGO,'omm':OMM,'navy':NAVY,'code':c.get('code',spec.get('code','10% OFF  USE CODE : MAHJMATCH'))}))
     f=f'/tmp/lark/cards/{c["slug"]}.html';open(f,'w').write(h);cards.append((f,os.path.join(out,c['file'])))
 js=os.path.join(os.path.dirname(__file__),'shot.js')
 subprocess.run(['node',js]+[x for p in cards for x in p],check=True,env={**os.environ,'NODE_PATH':subprocess.run(['npm','root','-g'],capture_output=True,text=True).stdout.strip()})
