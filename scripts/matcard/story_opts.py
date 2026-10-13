@@ -51,6 +51,8 @@ th=lambda t:f"<div class=h><img src='{flame}'>{t}<img src='{flame}'></div>"
 A=base+f""".row{{display:flex;gap:24px;align-items:stretch;width:100%}}.col{{flex:1;display:flex;flex-direction:column;gap:10px}}.pal{{display:grid;grid-template-columns:1fr 1fr;gap:8px}}.rks{{display:flex;flex-direction:column;gap:8px}}</style></head><body><div class=wrap>{hd}
 <div class=row style='margin-top:18px'><div class=mat style='width:462px;height:462px'></div><div class=col><div class='box pal'>{pal()}</div><div class='box rks'>{racks(46,74)}</div></div></div>
 <div class=tiles style='margin-top:36px'>{th(tt)}<div class=g>{tl(328,214)}</div></div>{ft}</div></body></html>"""
+# D: like A but bigger mat, shorter wide tiles
+D=A.replace("width:462px;height:462px","width:530px;height:530px").replace(tl(328,214),tl(328,166))
 # B: centered mat, palette dots strip, racks 2x2, tiles 3x2
 B=base+f""".pal{{display:flex;gap:18px;justify-content:center;flex-wrap:wrap}}.pal .sw span{{display:none}}.pal .sw i{{width:54px;height:54px}}.rks{{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%}}.rkp{{grid-row:span 2}}</style></head><body><div class=wrap>{hd}
 <div class=mat style='width:440px;height:440px'></div><div class=pal>{pal()}</div>
@@ -60,4 +62,4 @@ B=base+f""".pal{{display:flex;gap:18px;justify-content:center;flex-wrap:wrap}}.p
 C=base+f""".row{{display:flex;gap:22px;width:100%;align-items:center}}.col{{flex:1;display:flex;flex-direction:column;gap:8px}}.pal{{display:flex;gap:12px;justify-content:center}}.pal .sw span{{display:none}}.pal .sw i{{width:46px;height:46px}}</style></head><body><div class=wrap>{hd}
 <div class=tiles>{th(tt)}<div class=g>{tl(238)}</div></div>
 <div class=row style='margin-top:18px'><div class=mat style='width:440px;height:440px'></div><div class=col>{th('RACK MATCHES')}{racks(50,86)}<div class=pal style='margin-top:6px'>{pal()}</div></div></div>{ft}</div></body></html>"""
-for k,h in (('A',A),('B',B),('C',C)): open(f"{out}-{variant}-story{k}.html",'w').write(h)
+for k,h in (('A',A),('D',D)): open(f"{out}-{variant}-story{k}.html",'w').write(h)
