@@ -50,8 +50,8 @@ def mat_crop(im):
     Small source photos show the whole mat instead (zooming them goes blurry)."""
     im = trim(flat(im)); W, H = im.size
     z = .72 if W >= 900 else 1.0
-    cw = int(W * z); ch = int(cw / 1.08)
-    if ch > H: ch = H; cw = int(ch * 1.08)
+    cw = int(W * z); ch = int(cw / 0.973)
+    if ch > H: ch = H; cw = int(ch * 0.973)
     return im.crop((0, H - ch, cw, H))
 
 # --- tile images (album tile shots; holiday sets use their studio pile shots)
@@ -91,7 +91,9 @@ def brand_logo(key, name):
         if b in logos: return uri(R + 'builder/logos/' + logos[b], 'PNG')
     return None
 
-html_tpl = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'card.html')).read()
+html_tpl = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'card2.html')).read()
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import racks as RKS
 OMM = uri(R + 'assets/brand/omm_certified.png', 'PNG'); NAVY = uri(R + 'assets/brand/card_navy_logo.png', 'PNG')
 BBLOGO = uri(R + 'builder/logos/' + logos['Bird & Bamboo'], 'PNG')
 FLAME = uri(R + 'assets/brand/flame-heart-holiday.png', 'PNG')
@@ -106,17 +108,18 @@ for g in D['G']:
         mi = mat_image(r['m'], r)
         if mi is None: print('NO MAT PHOTO', g['t'], r['m']); continue
         mat = mat_crop(mi)
-        bbl = []; ph = []; rasp = []; rlogo = None
+        drawn = []; chart = []
         for k in r['def']:
+            if len(drawn) >= 2: break
             if k.startswith('bb:'):
-                n = k[3:]; hx = BB.get(n, '#999'); bbl.append({'name': n, 'hex': hx, 'light': lum(hx) > 185})
-            elif k in D['RK']:
-                nm, _hx, img = D['RK'][k][:3]
-                im = dimg(img)
-                if im.height > im.width * 1.1: im = im.rotate(90, expand=True)
-                rasp.append(im.width / im.height)
-                ph.append(uri(im, 'PNG') if im.mode in ('RGBA', 'LA', 'P') else uri(im))
-                if not rlogo: rlogo = brand_logo(k, nm)
+                im = RKS.bb(k[3:]); lab = 'Bird & Bamboo ' + k[3:]
+            else:
+                im = RKS.photo(k); lab = RKS.P[k]['n'] if k in RKS.P else D['RK'][k][0]
+            if im is not None: drawn.append({'img': uri(im, 'PNG'), 'label': lab})
+        dl = {d['label'] for d in drawn}
+        for k in r['def']:
+            if k.startswith('bb:') and 'Bird & Bamboo ' + k[3:] not in dl and k[3:] in BB:
+                chart.append({'name': k[3:], 'hex': BB[k[3:]], 'light': lum(BB[k[3:]]) > 185})
         tname = re.sub(r'\s*\(.*?\)', '', g['n']).strip()
         mname = re.sub(r'\s*\((retired|Nantucket pair|double-sided|Dapper 2)\)', '', r['n'], flags=re.I)
         mname = re.sub(r'\s*\((.*?)\)', r' \1', mname).replace(' Mat', '').replace(' Center', '').replace(' Border', '').strip()
@@ -125,9 +128,8 @@ for g in D['G']:
         col = COLS.get(g['t'], '#a3192e')
         slug = re.sub(r'[^a-z0-9]+', '-', f"{g['t']}-mahjong-tiles-{r['b']}-{mname}-mat".lower()).strip('-')
         fn = slug + '.jpg'
-        h = html_tpl.replace('__DATA__', json.dumps({'title': title, 'col': col, 'mat': uri(mat, maxs=1300), 'tile': tileuri,
-            'racks': ph, 'rasp': rasp, 'rlogo': rlogo, 'bb': bbl, 'bblogo': BBLOGO, 'omm': OMM, 'navy': NAVY,
-            'code': footer(r['b'], g['t']), 'hol': True, 'flame': FLAME}))
+        h = html_tpl.replace('__DATA__', json.dumps({'title': title, 'col': col, 'mat': uri(mat, maxs=1400), 'tile': tileuri,
+            'racks': drawn, 'bb': chart[:3], 'bblogo': BBLOGO, 'navy': NAVY, 'code': footer(r['b'], g['t']), 'hol': True, 'flame': FLAME}))
         hf = f"/tmp/holcards/html/{slug}.html"; open(hf, 'w').write(h)
         jobs.append((hf, os.path.join(out, fn)))
         manifest.append({'tile': g['t'], 'tileName': g['n'], 'hol': g['hol'], 'mat': r['m'], 'matName': r['n'], 'brand': r['b'],
