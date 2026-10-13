@@ -14,12 +14,17 @@ def font(n,p): return f"@font-face{{font-family:'{n}';src:url(file://{F}{p})}}"
 # album tile shots from the Larkspur book (same as album cards)
 IDX=json.load(open(ROOT+'/assets/tiles/album/index.json'))
 TILE={k:{'img':b64(ROOT+'/'+v['file'],size=300)} for k,v in IDX.items()}
+STORY='''.wrap{padding:200px 60px 220px}  /* IG story safe zones: keep text out of the top 200px and bottom 220px */
+.mid{flex-direction:column;align-items:center;gap:26px;margin-top:26px}.mat{width:620px!important;height:620px!important}
+.side{flex:none;width:860px}.pal{grid-template-columns:1fr 1fr 1fr}.side .h~.h,.rks{display:none}
+.tiles{margin-top:22px}h1{font-size:124px}'''
 def card(c,W,H,out):
     rt=set(c.get('retired',[]))
     tiles=''.join(f"<figure><div class='tp' style=\"background-image:url({TILE[t]['img']})\"></div><figcaption>{t}{'<small>retired</small>' if t in rt else ''}</figcaption></figure>" for t in c['tiles'])
     pal=''.join(f"<div class='sw'><i style='background:{h}'></i><span>{n}</span></div>" for n,h in c['palette'])
     rk=''.join(f"<div class='rk' style='background:{h};color:{'#fff' if dark else '#2a2036'}'>{n}</div>" for n,h,dark in c['racks'])
     pin=H/W>1.4
+    story=H/W>1.7
     html=f"""<!doctype html><html><head><meta charset=utf8><style>
 {font('Alfa','fontsource-alfa-slab-one-5.3.0/package/files/alfa-slab-one-latin-400-normal.woff2')}
 {font('PlayI','fontsource-playfair-display-5.3.0/package/files/playfair-display-latin-400-italic.woff2')}
@@ -44,7 +49,7 @@ figure{{width:132px;text-align:center}}.tp{{width:132px;height:132px;border-radi
 figcaption{{font-family:BitterB;font-size:17px;margin-top:8px;line-height:1.15}}figcaption small{{display:block;font-family:Bitter;font-size:13px;color:#6b5a77}}
 .web{{margin-top:auto;font-family:BitterB;font-size:28px;color:#054689;display:flex;align-items:center;gap:10px}}.web img{{height:34px}}
 .cp{{margin-top:16px;background:#054689;color:#fff;border-radius:999px;padding:14px 34px;font-family:BitterB;font-size:24px}}
-</style></head><body><div class=wrap>
+{STORY if story else ''}</style></head><body><div class=wrap>
 <img class=logo src="{c['logo']}">
 <div class=eb><img src="{c['flame']}">THE MAT EDIT<img src="{c['flame']}"></div>
 <h1>{c['name']}</h1><div class=by>by {c['brand']}</div><div class=tag>{c['tag']}</div>
@@ -65,5 +70,5 @@ if __name__=='__main__':
     for v,tl,tt in (('omm',c.get('tiles_omm',[]),"TIFFANY'S OMM TILE MATCHES"),('all',c.get('tiles_all',[]),"TIFFANY'S TILE MATCHES")):
         cc=dict(c,tiles=tl,tilesTitle=tt)
         if v=='omm': cc['racks']=c.get('racks_omm',[]); cc['rackNote']='Oh My Mahjong racks'  # OMM-only card shows only OMM products
-        card(cc,1080,1350,f"{sys.argv[2]}-{v}-fb.html"); card(cc,1000,1500,f"{sys.argv[2]}-{v}-pin.html")
+        card(cc,1080,1350,f"{sys.argv[2]}-{v}-fb.html"); card(cc,1000,1500,f"{sys.argv[2]}-{v}-pin.html"); card(cc,1080,1920,f"{sys.argv[2]}-{v}-story.html")  # IG story 9:16 (Tiffany Oct 12: stories on mat launch days)
     print('render the .html files with playwright (1080x1350 / 1000x1500 screenshots)')
