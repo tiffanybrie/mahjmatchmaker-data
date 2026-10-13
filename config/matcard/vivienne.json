@@ -1,0 +1,9 @@
+{"name": "Vivienne", "brand": "Oh My Mahjong", "tag": "Dusty coral, orchid pink, sage & sky blue lanterns", "color": "#d4483f", "mat_path": "config/matcard/vivienne_mat.jpg",
+ "palette": [["Coral", "#dc5853"], ["Orchid Pink", "#dc98b9"], ["Peach Blush", "#e09b92"], ["Sage", "#a8b1a0"], ["Chartreuse", "#c9c962"], ["Sky Blue", "#75b2da"]],
+ "racks": [["Pink Coral", "#F19089", false], ["Light Blue", "#85CDF9", false], ["Petal Purple", "#D3B4D7", false], ["Seafoam", "#9EB79B", false]],
+ "racks_omm": [["Pink Coral", "#F19089", false], ["Light Blue", "#85CDF9", false], ["Petal Purple", "#D3B4D7", false], ["Seafoam", "#9EB79B", false]],
+ "rackNote": "Painted wood racks by Bird &amp; Bamboo",
+ "tiles": [], "tiles_omm": [], "tiles_all": [],
+ "retired": ["Birdie", "Taylor", "Dandy", "Glitterville", "Lola", "Limoncello", "Sorbet", "Sunset"],
+ "rack_rule": "Launch watch draft Oct 13: nearest Bird & Bamboo racks to the mat's coral, sky-blue border, lilac and sage. Tile matches stay empty until Tiffany's Vivienne swipe is done.",
+ "source": "assets/launches/omm-vivienne-mat/01.jpg (flat overhead), cropped with palette.crop_mat"}
