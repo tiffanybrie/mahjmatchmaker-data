@@ -7,7 +7,9 @@ R='/home/claude/mahjmatchmaker-data/'
 tile=sys.argv[1];out=sys.argv[2];N=int(sys.argv[3]) if len(sys.argv)>3 else 8
 MUSIC=sys.argv[4] if len(sys.argv)>4 else None  # royalty-free track; cuts land on its beats
 BEATS=None
-if MUSIC:
+if MUSIC and MUSIC.startswith('bpm:'):  # pace cuts to a song Tiffany adds in Instagram (no audio baked in)
+    bpm=float(MUSIC[4:]);BEATS=[i*60/bpm for i in range(400)];MUSIC=None
+elif MUSIC:
     import librosa
     y,sr=librosa.load(MUSIC,sr=22050,duration=60);_,bf=librosa.beat.beat_track(y=y,sr=sr);BEATS=list(librosa.frames_to_time(bf,sr=sr))
 os.makedirs(out,exist_ok=True)
