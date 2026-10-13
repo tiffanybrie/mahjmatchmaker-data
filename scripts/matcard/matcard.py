@@ -22,7 +22,7 @@ def card(c,W,H,out):
     rt=set(c.get('retired',[]))
     tiles=''.join(f"<figure><div class='tp' style=\"background-image:url({TILE[t]['img']})\"></div><figcaption>{t.replace(' (retired)','')}{'<small>retired</small>' if (t in rt or '(retired)' in t) else ''}</figcaption></figure>" for t in c['tiles'])
     pal=''.join(f"<div class='sw'><i style='background:{h}'></i><span>{n}</span></div>" for n,h in c['palette'])
-    rk=''.join(f"<div class='rk' style='background:{h};color:{'#fff' if dark else '#2a2036'}'>{n}</div>" for n,h,dark in c['racks'])
+    rk=''.join((f"<div class='rkp'><div class='rki' style=\"background-image:url({b64(ROOT+'/'+r[3],'JPEG',700)})\"></div><span>{r[0]}</span></div>" if len(r)>3 and r[3] else f"<div class='rk' style='background:{r[1]};color:{'#fff' if r[2] else '#2a2036'}'>{r[0]}</div>") for r in c['racks'])  # Bird & Bamboo = painted color bar (generated); any other brand's rack = its REAL product photo (Tiffany, Oct 13)
     pin=H/W>1.4
     story=H/W>1.7
     html=f"""<!doctype html><html><head><meta charset=utf8><style>
@@ -43,7 +43,7 @@ h1{{font-family:Alfa;font-size:{c.get('ts',118)}px;line-height:1;color:{c['color
 .pal{{display:grid;grid-template-columns:1fr 1fr;gap:12px 10px;background:#fff8f2;border-radius:18px;padding:16px}}
 .sw{{display:flex;align-items:center;gap:10px;font-family:BitterB;font-size:16px;text-transform:uppercase;letter-spacing:.04em}}.sw i{{width:44px;height:44px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 2px rgba(255,255,255,.6)}}
 .rks{{display:flex;flex-direction:column;gap:7px;background:#fff8f2;border-radius:18px;padding:14px 16px}}.rk{{font-family:BitterB;font-size:17px;padding:7px 12px;border-radius:6px;box-shadow:inset 0 -4px 0 rgba(0,0,0,.12)}}
-.rks small{{font-size:13px;color:#6b5a77;text-align:center;margin-top:2px}}
+.rkp{{display:flex;flex-direction:column;gap:4px}}.rki{{height:92px;border-radius:8px;background:center/cover;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}}.rkp span{{font-family:BitterB;font-size:15px;color:#2a2036;text-align:center}}.rks small{{font-size:13px;color:#6b5a77;text-align:center;margin-top:2px}}
 .tiles{{margin-top:{30 if pin else 22}px;width:100%}}.trow{{display:flex;justify-content:center;gap:16px;margin-top:12px}}
 figure{{width:132px;text-align:center}}.tp{{width:132px;height:132px;border-radius:16px;background-size:cover;background-position:center;background-color:#efe2d6;box-shadow:0 4px 12px rgba(42,32,54,.15)}}
 figcaption{{font-family:BitterB;font-size:17px;margin-top:8px;line-height:1.15}}figcaption small{{display:block;font-family:Bitter;font-size:13px;color:#6b5a77}}
