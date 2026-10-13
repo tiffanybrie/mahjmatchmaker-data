@@ -204,6 +204,11 @@ try:
     _h=json.loads(get('https://www.middleandmainmahjong.com/products/hawksbill-heritage-mahjong-rack-and-pusher-set-of-4.json'))['product']
     _uni('mm:Hawksbill','Middle & Main Hawksbill Heritage (tortoise)','https://www.middleandmainmahjong.com/products/hawksbill-heritage-mahjong-rack-and-pusher-set-of-4?sca_ref=10574197.BKiJ48vXYfYfD31E',Image.open(io.BytesIO(get(_h['images'][4]['src']+'?width=700'))))
 except Exception as ex: print('uni mm',ex)
+try:
+    # Tiffany Oct 13: clear lucite racks + 16 magnetic pushers (mirror, confetti, wood, marble) = goes with every set. $225, sold out Oct 13.
+    _hh=json.loads(get('https://hiphipmahjong.com/products/hostess-with-the-mostest-racks.json'))['product']
+    _uni('hh:Hostess','Hip Hip Hostess With The Mostest (clear + 4 pusher styles)','https://hiphipmahjong.com/products/hostess-with-the-mostest-racks?sca_ref=10261850.duirHRGQQAhSk',Image.open(io.BytesIO(get(_hh['images'][0]['src']+'&width=700'))))
+except Exception as ex: print('uni hh',ex)
 for _p in UNI:print('uni',_p,prods[_p]['n'],'mult' if prods[_p].get('mult') else 'cut')
 # --- rebuild each set's matches from her real data (every rack colour she matched, in her order)
 T,M,X,R=DATA['T'],DATA['M'],DATA['X'],DATA['R']
