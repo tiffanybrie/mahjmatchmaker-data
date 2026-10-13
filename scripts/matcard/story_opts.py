@@ -10,7 +10,7 @@ def tl(sz):
     return ''.join(f"<figure><div class=tp style=\"width:{sz}px;height:{sz}px;background-image:url({M.TILE[t]['img']})\"></div><figcaption>{t.replace(' (retired)','')}{'<small>retired</small>' if (t in rt or '(retired)' in t) else ''}</figcaption></figure>" for t in tiles)
 def racks(h=64,img_h=96):
     o=''
-    for r in c['racks']:
+    for r in sorted(c['racks'],key=lambda r:1 if (len(r)>3 and r[3]) else 0):
         star='★ ' if (len(r)>4 and r[4]) else ''
         if len(r)>3 and r[3]:
             o+=f"<div class=rkp><div class=rki style=\"height:{img_h}px;background-image:url({M.b64(M.ROOT+'/'+r[3],'JPEG',700)})\"></div><span>{star}{r[0]}</span></div>"

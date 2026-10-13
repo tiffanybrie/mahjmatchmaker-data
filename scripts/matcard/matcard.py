@@ -20,6 +20,7 @@ STORY='''.wrap{padding:200px 60px 220px}  /* IG story safe zones: keep text out 
 .tiles{margin-top:22px}h1{font-size:124px}'''
 def card(c,W,H,out):
     rt=set(c.get('retired',[]))
+    c=dict(c,racks=sorted(c['racks'],key=lambda r:1 if (len(r)>3 and r[3]) else 0))  # Bird & Bamboo bars stack together; other brands' rack photos go below (Tiffany, Oct 13)
     tiles=''.join(f"<figure><div class='tp' style=\"background-image:url({TILE[t]['img']})\"></div><figcaption>{t.replace(' (retired)','')}{'<small>retired</small>' if (t in rt or '(retired)' in t) else ''}</figcaption></figure>" for t in c['tiles'])
     pal=''.join(f"<div class='sw'><i style='background:{h}'></i><span>{n}</span></div>" for n,h in c['palette'])
     rk=''.join((f"<div class='rkp'><div class='rki' style=\"background-image:url({b64(ROOT+'/'+r[3],'JPEG',700)})\"></div><span>{r[0]}</span></div>" if len(r)>3 and r[3] else f"<div class='rk' style='background:{r[1]};color:{'#fff' if r[2] else '#2a2036'}'>{r[0]}</div>") for r in c['racks'])  # Bird & Bamboo = painted color bar (generated); any other brand's rack = its REAL product photo (Tiffany, Oct 13)
@@ -69,6 +70,6 @@ if __name__=='__main__':
     # two versions (Tiffany, Oct 12): OMM-only (current + retired OMM sets, for OMM to reshare) and all album tile sets
     for v,tl,tt in (('omm',c.get('tiles_omm',[]),"TIFFANY'S OMM TILE MATCHES"),('all',c.get('tiles_all',[]),"TIFFANY'S TILE MATCHES")):
         cc=dict(c,tiles=tl,tilesTitle=tt)
-        if v=='omm': cc['racks']=c.get('racks_omm',[]); cc['rackNote']='Oh My Mahjong racks'  # OMM-only card shows only OMM products
+        if v=='omm': cc['racks']=c.get('racks_omm',c['racks'])  # OMM-only card shows only OMM products
         card(cc,1080,1350,f"{sys.argv[2]}-{v}-fb.html"); card(cc,1000,1500,f"{sys.argv[2]}-{v}-pin.html"); card(cc,1080,1920,f"{sys.argv[2]}-{v}-story.html")  # IG story 9:16 (Tiffany Oct 12: stories on mat launch days)
     print('render the .html files with playwright (1080x1350 / 1000x1500 screenshots)')
