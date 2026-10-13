@@ -1,0 +1,33 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Alfa;src:url(file:///tmp/cc/f/fontsource-alfa-slab-one-5.3.0/package/files/alfa-slab-one-latin-400-normal.woff2)}
+*{margin:0;box-sizing:border-box}html,body{width:1080px;height:1350px;overflow:hidden;background:#f0e1cd}
+#t{position:absolute;top:0;left:0;right:0;height:135px;display:flex;align-items:center;justify-content:center;font:108px/1 Alfa;letter-spacing:-.01em;text-transform:uppercase;white-space:nowrap;
+ -webkit-text-stroke:0;text-shadow:0 0 0 #fff,4px 4px 0 #fff,-4px -4px 0 #fff,4px -4px 0 #fff,-4px 4px 0 #fff,0 5px 0 #fff,0 -5px 0 #fff,5px 0 0 #fff,-5px 0 0 #fff}
+#t .plus{font-size:.55em;margin:0 .18em}
+#mat{position:absolute;top:135px;left:0;width:1080px;height:967px;background-size:cover;background-position:center}
+#racks{position:absolute;left:-30px;top:330px;width:560px;height:760px}
+#racks img{position:absolute;width:560px;filter:drop-shadow(0 10px 14px rgba(0,0,0,.35))}
+#tile{position:absolute;right:0;top:597px;width:420px;height:505px;border-top-left-radius:38px;overflow:hidden;box-shadow:-6px -6px 0 rgba(255,255,255,.85)}
+#tile img{width:100%;height:100%;object-fit:cover}
+#strip{position:absolute;top:1102px;left:0;right:0;height:140px}
+#strip .w{position:absolute;left:0;top:0;width:338px;height:140px}
+#strip img.s{position:absolute;left:338px;top:0;width:742px;height:140px}
+#badges{position:absolute;left:30px;top:-8px;display:flex;gap:10px}
+#badges div{width:150px;height:150px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.18);padding:18px}
+#badges img{max-width:100%;max-height:100%;object-fit:contain}
+#f{position:absolute;top:1242px;left:0;right:0;height:108px;display:flex;align-items:center;justify-content:center;overflow:hidden;font:68px/1 Alfa;color:#2a55a8;white-space:nowrap;
+ text-shadow:3px 3px 0 #fff,-3px -3px 0 #fff,3px -3px 0 #fff,-3px 3px 0 #fff}
+</style></head><body>
+<div id="t"></div><div id="mat"></div><div id="racks"></div><div id="tile"><img></div>
+<div id="strip"><div class="w"></div><img class="s"><div id="badges"></div></div><div id="f"></div>
+<script>
+const D=__DATA__;
+const t=document.getElementById('t');const [a,b]=D.title.split('+');t.innerHTML='<span id="ts">'+a.trim()+'<span class="plus">+</span>'+b.trim()+'</span>';t.style.color=D.col;
+window.fit=()=>{const ts=document.getElementById('ts');let fs=108;t.style.fontSize=fs+'px';while(ts.offsetWidth>1030&&fs>40){fs-=2;t.style.fontSize=fs+'px'}const fsn=document.getElementById('fs');let ff=70;f.style.fontSize=ff+'px';while(fsn.offsetWidth>1040&&ff>30){ff-=2;f.style.fontSize=ff+'px'}};
+document.getElementById('mat').style.backgroundImage=`url(${D.mat})`;
+const ti=document.querySelector('#tile img');ti.src=D.tile;ti.style.objectFit=D.tilefit;if(D.tilefit==='contain')document.getElementById('tile').style.background='#fff';
+const rk=document.getElementById('racks');D.racks.forEach((r,i)=>{const im=document.createElement('img');im.src=r.img;im.style.top=(i*170)+'px';im.style.left=(i%2?20:0)+'px';im.style.transform=`rotate(${-22+i*8}deg)`;rk.appendChild(im)});
+document.querySelector('#strip img.s').src=D.strip;
+const bg=document.getElementById('badges');D.badges.slice(0,2).forEach(u=>{const d=document.createElement('div');const im=document.createElement('img');im.src=u;d.appendChild(im);bg.appendChild(d)});
+const f=document.getElementById('f');f.innerHTML='<span id="fs">'+D.code+'</span>';
+</script></body></html>
