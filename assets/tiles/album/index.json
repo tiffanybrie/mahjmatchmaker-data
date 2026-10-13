@@ -142,5 +142,25 @@
  },
  "Papaya Spritz": {
   "file": "assets/tiles/album/papaya-spritz.jpg"
+ },
+ "Spring Love (retired)": {
+  "file": "assets/tiles/album/spring-love.jpg",
+  "retired": true,
+  "vault": true
+ },
+ "Lilac Soiree (retired)": {
+  "file": "assets/tiles/album/lilac-soiree.jpg",
+  "retired": true,
+  "vault": true
+ },
+ "Preppy Soiree (retired)": {
+  "file": "assets/tiles/album/preppy-soiree.jpg",
+  "retired": true,
+  "vault": true
+ },
+ "Shangri-la (retired)": {
+  "file": "assets/tiles/album/shangri-la.jpg",
+  "retired": true,
+  "vault": true
  }
 }
