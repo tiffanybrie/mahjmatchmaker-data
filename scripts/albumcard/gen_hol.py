@@ -94,6 +94,7 @@ def brand_logo(key, name):
 html_tpl = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'card.html')).read()
 OMM = uri(R + 'assets/brand/omm_certified.png', 'PNG'); NAVY = uri(R + 'assets/brand/card_navy_logo.png', 'PNG')
 BBLOGO = uri(R + 'builder/logos/' + logos['Bird & Bamboo'], 'PNG')
+FLAME = uri(R + 'assets/brand/flame-heart-holiday.png', 'PNG')
 COLS = json.load(open(R + 'scripts/albumcard/holiday_title_colors.json')) if os.path.exists(R + 'scripts/albumcard/holiday_title_colors.json') else {}
 SKIP = {'omm-dapper-1', 'omm-dapper-2', 'britt-crimson-harvest', 'christmas-solo-play-mahjong-mat', 'snowflake-reindeer-lodge-double-sided-leatherette-mahjong-ma'}
 jobs = []; manifest = []
@@ -126,7 +127,7 @@ for g in D['G']:
         fn = slug + '.jpg'
         h = html_tpl.replace('__DATA__', json.dumps({'title': title, 'col': col, 'mat': uri(mat, maxs=1300), 'tile': tileuri,
             'racks': ph, 'rasp': rasp, 'rlogo': rlogo, 'bb': bbl, 'bblogo': BBLOGO, 'omm': OMM, 'navy': NAVY,
-            'code': footer(r['b'], g['t'])}))
+            'code': footer(r['b'], g['t']), 'hol': True, 'flame': FLAME}))
         hf = f"/tmp/holcards/html/{slug}.html"; open(hf, 'w').write(h)
         jobs.append((hf, os.path.join(out, fn)))
         manifest.append({'tile': g['t'], 'tileName': g['n'], 'hol': g['hol'], 'mat': r['m'], 'matName': r['n'], 'brand': r['b'],

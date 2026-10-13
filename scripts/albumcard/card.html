@@ -48,4 +48,12 @@ const rk=document.getElementById('racks');const asp=D.rasp&&D.rasp[0]||6;
 let pos,w;if(asp>3){pos=[[-150,905,-24],[-190,995,-20],[-130,1075,-14],[-170,1150,-10]];w=720}else{pos=[[-40,880,0]];w=600}
 const rr=D.racks.length?Array.from({length:pos.length},(_,i)=>D.racks[i%D.racks.length]):[];rr.forEach((r,i)=>{const im=document.createElement('img');im.src=r;const p=pos[i];im.style.left=p[0]+'px';im.style.top=p[1]+'px';im.style.width=w+'px';im.style.transform=`rotate(${p[2]}deg)`;rk.appendChild(im)});
 if(D.rlogo){const d=document.createElement('div');d.id='rlogo';d.style.left='40px';d.style.top='1040px';d.innerHTML=`<img src="${D.rlogo}">`;rk.appendChild(d)}
+// Holiday look "B tinted" (Tiffany's pick, Oct 13): title band in the tile set's color, white title,
+// big HOLIDAY MATCH line with our holiday flame on both sides, pine footer with cream code text.
+if(D.hol){const tb=document.getElementById('tb');tb.style.background=D.col;tb.style.height='214px';
+ t.style.color='#fff';t.style.top='70px';t.style.textShadow='4px 4px 0 rgba(0,0,0,.28)';
+ const hl=document.createElement('div');hl.id='hl';hl.style.cssText='position:absolute;top:6px;left:0;width:1080px;height:64px;display:flex;align-items:center;justify-content:center;gap:18px;font:700 40px Bitter;letter-spacing:.24em;color:#fbe7b0;text-shadow:0 2px 3px rgba(0,0,0,.3)';
+ hl.innerHTML=`<img src="${D.flame}" style="height:58px">HOLIDAY MATCH<img src="${D.flame}" style="height:58px">`;document.body.appendChild(hl);
+ document.getElementById('bb').style.top='191px';
+ document.getElementById('fb').style.background='#3e6b52';f.style.color='#fbf1e3';f.style.textShadow='3px 3px 0 rgba(0,0,0,.3)'}
 </script></body></html>

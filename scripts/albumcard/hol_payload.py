@@ -25,7 +25,25 @@ def rack_link(k):
         d, h = k.split('/', 1); return nm, f'https://{d}/products/{h}'
     return nm, None
 
+CAT = json.load(open(R + 'work/catalog.json'))
+EXTRA = {'festive-plaid': 'https://sundaymahjong.com/products/festive-plaid-premium-mahjong-mat',
+         'polo-club': 'https://luxemahjong.com/products/coming-soon-the-polo-club-mahjong-mat',
+         'maison-chalet': 'https://maisonmahj.com/products/the-chalet-mat',
+         'maison-alpine': 'https://maisonmahj.com/products/the-alpine-mat',
+         'cmc-ski-club-periwinkle': 'https://www.charlestonmahjongclub.com/products/the-ski-club-mat-in-toile-w-matching-bag?sca_ref=10024640.r4MqWQJxOaKK',
+         'cmc-ski-club-red-sweater': 'https://www.charlestonmahjongclub.com/products/new-ski-mat-with-red-sweater-border-and-toilet-pattern?sca_ref=10024640.r4MqWQJxOaKK'}
+def norm(x): return re.sub(r'[^a-z0-9]+', ' ', x.lower().replace(' mat', ' ')).strip()
 def mat_link(m, name):
+    if m in EXTRA: return EXTRA[m]
+    r = mat_link0(m, name)
+    if r: return r
+    key = norm(re.sub(r'\(.*?\)', '', name))
+    for p in CAT['C']:
+        if p[1] == 1 and key and key in norm(p[2]):
+            b = CAT['B'][p[0]]; u = f"https://{b[1]}/products/{p[3]}"
+            return u + ('?' + b[2] if b[2] else '')
+    return None
+def mat_link0(m, name):
     for v in MM.values():
         h = v.get('handle', '')
         if h and (h == m or h.startswith(m) or m.startswith(h)):
