@@ -20,7 +20,7 @@ STORY='''.wrap{padding:200px 60px 220px}  /* IG story safe zones: keep text out 
 .tiles{margin-top:22px}h1{font-size:124px}'''
 def card(c,W,H,out):
     rt=set(c.get('retired',[]))
-    tiles=''.join(f"<figure><div class='tp' style=\"background-image:url({TILE[t]['img']})\"></div><figcaption>{t}{'<small>retired</small>' if t in rt else ''}</figcaption></figure>" for t in c['tiles'])
+    tiles=''.join(f"<figure><div class='tp' style=\"background-image:url({TILE[t]['img']})\"></div><figcaption>{t.replace(' (retired)','')}{'<small>retired</small>' if (t in rt or '(retired)' in t) else ''}</figcaption></figure>" for t in c['tiles'])
     pal=''.join(f"<div class='sw'><i style='background:{h}'></i><span>{n}</span></div>" for n,h in c['palette'])
     rk=''.join(f"<div class='rk' style='background:{h};color:{'#fff' if dark else '#2a2036'}'>{n}</div>" for n,h,dark in c['racks'])
     pin=H/W>1.4
