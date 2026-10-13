@@ -22,19 +22,23 @@ STRIP=uri(R+'assets/brand/card_strip_omm_mm.png','PNG')
 fonts='/tmp/cc/f/'
 html_tpl=open(os.path.join(os.path.dirname(__file__),'card.html')).read()
 cards=[]
+BB={x['name']:x['hex'] for x in json.load(open(R+'work/bbracks.json'))}
+OMM=uri(R+'assets/brand/omm_certified.png','PNG');NAVY=uri(R+'assets/brand/card_navy_logo.png','PNG');BBLOGO=uri(R+'builder/logos/'+logos['Bird & Bamboo'],'PNG')
+def lum(h):h=h.lstrip('#');r,g,b=[int(h[k:k+2],16) for k in (0,2,4)];return .299*r+.587*g+.114*b
 for c in spec['cards']:
-    racks=[]
-    for rn in c['racks']:
+    bbl=[{'name':n[len('Bird & Bamboo '):],'hex':BB.get(n[len('Bird & Bamboo '):],'#999'),'light':lum(BB.get(n[len('Bird & Bamboo '):],'#999'))>185} for n in c.get('bb',[])]
+    ph=[];rlogo=None;rasp=[]
+    for rn in c.get('photo',[]):
         k=byname.get(rn)
         if not k: print('NO RACK',rn);continue
-        p=P[k];racks.append({'n':rn,'img':p['cut'] if p.get('clean') else p['photo'],'brand':p.get('bn') or rn.split(' ')[0]})
-    rb=[]
-    for r in racks:
-        b=next((bn for bn in logos if r['n'].startswith(bn)),None)
-        if b and b not in rb: rb.append(b)
-    badges=[uri(R+'builder/logos/'+logos[b],'PNG') for b in rb]
-    tile=uri(R+c['tile_file'],maxs=700)
-    h=html_tpl.replace('__DATA__',json.dumps({'title':c['title'],'col':c['col'],'mat':MAT,'tile':tile,'racks':racks,'badges':badges,'strip':STRIP,'tilefit':c.get('tilefit','cover'),'code':spec.get('code','10% OFF  USE CODE: MAHJMATCH')}))
+        p=P[k];src=p['cut'] if p.get('clean') else p['photo']
+        im=Image.open(io.BytesIO(base64.b64decode(src.split(',',1)[1])))
+        if im.height>im.width*1.1: im=im.rotate(90,expand=True)
+        rasp.append(im.width/im.height);ph.append(uri(im,'PNG') if im.mode in ('RGBA','LA','P') else uri(im))
+        b=next((bn for bn in logos if rn.startswith(bn) or rn.startswith(bn.replace(' Mahjong','')+' ')),None)
+        if b and not rlogo: rlogo=uri(R+'builder/logos/'+logos[b],'PNG')
+    tile=uri(R+c['tile_file'],maxs=800)
+    h=html_tpl.replace('__DATA__',json.dumps({'title':c['title'],'col':c['col'],'mat':MAT,'tile':tile,'racks':ph,'rasp':rasp,'rlogo':rlogo,'bb':bbl,'bblogo':BBLOGO,'omm':OMM,'navy':NAVY,'code':spec.get('code','10% OFF  USE CODE : MAHJMATCH')}))
     f=f'/tmp/lark/cards/{c["slug"]}.html';open(f,'w').write(h);cards.append((f,os.path.join(out,c['file'])))
 js=os.path.join(os.path.dirname(__file__),'shot.js')
 subprocess.run(['node',js]+[x for p in cards for x in p],check=True,env={**os.environ,'NODE_PATH':subprocess.run(['npm','root','-g'],capture_output=True,text=True).stdout.strip()})
