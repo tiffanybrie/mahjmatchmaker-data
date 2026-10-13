@@ -5,6 +5,11 @@ sys.path.insert(0,'/home/claude/mahjmatchmaker-data/scripts/matcard')
 import matcard as M
 R='/home/claude/mahjmatchmaker-data/'
 tile=sys.argv[1];out=sys.argv[2];N=int(sys.argv[3]) if len(sys.argv)>3 else 8
+MUSIC=sys.argv[4] if len(sys.argv)>4 else None  # royalty-free track; cuts land on its beats
+BEATS=None
+if MUSIC:
+    import librosa
+    y,sr=librosa.load(MUSIC,sr=22050,duration=60);_,bf=librosa.beat.beat_track(y=y,sr=sr);BEATS=list(librosa.frames_to_time(bf,sr=sr))
 os.makedirs(out,exist_ok=True)
 A=[x for x in json.load(open(R+'work/albums.json')) if x['tile']==tile][0]
 NOCODE=tile=='Coquette'  # Coquette isn't eligible for MAHJMATCH; never pair the code with it
@@ -44,21 +49,30 @@ def emit(f): p.stdin.write(f.tobytes())
 prev=None
 def blend(a,b,t): return Image.blend(a,b,t)
 # cover full-bleed with slow zoom (2.2s)
-frames=int(2.2*FPS)
+def dur(a,b,default):
+    if not BEATS: return int(default*FPS)
+    return int(round((BEATS[b]-BEATS[a])*FPS))
+seg=[0,4]+[4+2*(k+1) for k in range(len(cards))];seg.append(seg[-1]+6)
+frames=dur(0,4,2.2)
 for i in range(frames):
     s=1920/cover.height*(1+0.05*i/frames);sz=(int(cover.width*s),int(cover.height*s));im=cover.resize(sz,Image.BILINEAR)
     l=(sz[0]-W)//2;t=(sz[1]-H)//2;f=im.crop((l,t,l+W,t+H));emit(f);prev=f
 # cards (1.2s each), card full width centered, gentle zoom, 6-frame crossfade
-for c in cards:
-    frames=int(1.2*FPS)
+for ci_,c in enumerate(cards):
+    frames=dur(seg[ci_+1],seg[ci_+2],1.2)
     for i in range(frames):
         s=1+0.035*i/frames;cw,ch=int(W*s),int(1350*s);ci=c.resize((cw,ch),Image.BILINEAR)
         f=Image.new('RGB',(W,H),CREAM);f.paste(ci,((W-cw)//2,285-(ch-1350)//2));f.paste(top,(0,0),top)
         if i<6 and prev is not None: f=blend(prev,f,(i+1)/6)
         emit(f)
     prev=f
-# end card (2.8s) fade in
-frames=int(2.8*FPS)
+# end card fade in
+frames=dur(seg[-2],seg[-1],2.8)+(int(1.0*FPS) if BEATS else 0)
 for i in range(frames):
     f=end if i>=8 else blend(prev,end,(i+1)/8);emit(f)
-p.stdin.close();p.wait();print(out+'/'+slug+'-reel.mp4')
+p.stdin.close();p.wait()
+if MUSIC:
+    src=f'{out}/{slug}-reel.mp4';dst=f'{out}/{slug}-reel-music.mp4'
+    d=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',src]))
+    subprocess.run(['ffmpeg','-y','-loglevel','error','-i',src,'-ss',str(BEATS[0]),'-i',MUSIC,'-map','0:v','-map','1:a','-c:v','copy','-c:a','aac','-b:a','192k','-af',f'afade=t=in:d=0.3,afade=t=out:st={d-1.2}:d=1.2','-t',str(d),'-movflags','+faststart',dst],check=True);print(dst)
+else: print(out+'/'+slug+'-reel.mp4')
