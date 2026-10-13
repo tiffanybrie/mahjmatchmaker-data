@@ -28,10 +28,10 @@ base=f"""<!doctype html><html><head><meta charset=utf8><style>
 .wrap{{position:absolute;left:0;right:0;top:200px;bottom:220px;padding:0 48px;display:flex;flex-direction:column;align-items:center;justify-content:space-between}}
 .hd{{display:flex;flex-direction:column;align-items:center}}.logo{{height:52px}}
 .eb{{font-family:BitterB;letter-spacing:.32em;font-size:22px;color:#054689;margin-top:14px;display:flex;align-items:center;gap:12px}}.eb img{{height:28px}}
-h1{{font-family:Alfa;font-size:118px;line-height:1;color:{c['color']};text-shadow:4px 4px 0 #fff;margin-top:6px;text-transform:uppercase}}
+h1{{font-family:Alfa;font-size:108px;line-height:1;color:{c['color']};text-shadow:4px 4px 0 #fff;margin-top:6px;text-transform:uppercase}}
 .by{{font-family:PlayI;font-size:36px;margin-top:4px}}
 .mat{{border-radius:22px;background:url({mat}) center/cover;box-shadow:0 10px 30px rgba(42,32,54,.18);flex:none}}
-.h{{font-family:BitterB;letter-spacing:.3em;font-size:20px;color:#054689;text-align:center;display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:10px}}.h img{{height:26px}}
+.h{{font-family:BitterB;letter-spacing:.3em;font-size:20px;color:#054689;text-align:center;display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:16px}}.h img{{height:26px}}
 .tiles .g{{display:grid;grid-template-columns:repeat(3,auto);gap:12px 22px;justify-content:center}}
 figure{{text-align:center}}.tp{{border-radius:18px;background:center/cover;box-shadow:0 6px 16px rgba(42,32,54,.18)}}
 figcaption{{font-family:BitterB;font-size:22px;margin-top:6px;line-height:1.1}}figcaption small{{display:block;font-family:Bitter;font-size:16px;color:#6b5a77}}
@@ -39,17 +39,17 @@ figcaption{{font-family:BitterB;font-size:22px;margin-top:6px;line-height:1.1}}f
 .rkp{{display:flex;flex-direction:column;gap:4px}}.rki{{border-radius:8px;background:center/cover}}.rkp span{{font-family:BitterB;font-size:18px;text-align:center}}
 .sw{{display:flex;align-items:center;gap:10px;font-family:BitterB;font-size:17px;letter-spacing:.06em;text-transform:uppercase}}.sw i{{width:40px;height:40px;border-radius:50%;flex:none;box-shadow:0 2px 6px rgba(0,0,0,.15)}}
 .box{{background:#fff8f2;border-radius:18px;padding:14px 16px}}
-.ft{{display:flex;flex-direction:column;align-items:center;gap:10px}}.web{{font-family:BitterB;font-size:30px;color:#054689;display:flex;align-items:center;gap:10px}}.web img{{height:32px}}
+.ft{{display:flex;flex-direction:column;align-items:center;gap:10px}}.web{{font-family:BitterB;font-size:30px;color:#054689;display:flex;align-items:center;gap:10px}}.web img{{height:32px}}.web small{{font-family:Bitter;font-size:26px;color:#2a2036}}
 .cp{{background:#054689;color:#fff;font-family:BitterB;font-size:27px;padding:12px 32px;border-radius:40px}}
 """
 hd=f"<div class=hd><img class=logo src='{logo}'><div class=eb><img src='{flame}'>THE MAT EDIT<img src='{flame}'></div><h1>{c['name']}</h1><div class=by>by {c['brand']}</div></div>"
-ft=f"<div class=ft><div class=web><img src='{flame}'>www.mahjmatchmaker.com</div><div class=cp>First date's on us. Use code MAHJMATCH to save 10%.</div></div>"
+ft=f"<div class=ft><div class=web><img src='{flame}'><span><small>See more matches at</small> www.mahjmatchmaker.com</span></div><div class=cp>First date's on us. Use code MAHJMATCH to save 10%.</div></div>"
 tt="TIFFANY'S OMM TILE MATCHES" if variant=='omm' else "TIFFANY'S TILE MATCHES"
 th=lambda t:f"<div class=h><img src='{flame}'>{t}<img src='{flame}'></div>"
 # A: mat left + palette/racks right, big 3x2 tiles
 A=base+f""".row{{display:flex;gap:24px;align-items:stretch;width:100%}}.col{{flex:1;display:flex;flex-direction:column;gap:10px}}.pal{{display:grid;grid-template-columns:1fr 1fr;gap:8px}}.rks{{display:flex;flex-direction:column;gap:8px}}</style></head><body><div class=wrap>{hd}
 <div class=row><div class=mat style='width:500px;height:500px'></div><div class=col><div class='box pal'>{pal()}</div><div class='box rks'>{racks(46,74)}</div></div></div>
-<div class=tiles>{th(tt)}<div class=g>{tl(222)}</div></div>{ft}</div></body></html>"""
+<div class=tiles style='margin-top:36px'>{th(tt)}<div class=g>{tl(192)}</div></div>{ft}</div></body></html>"""
 # B: centered mat, palette dots strip, racks 2x2, tiles 3x2
 B=base+f""".pal{{display:flex;gap:18px;justify-content:center;flex-wrap:wrap}}.pal .sw span{{display:none}}.pal .sw i{{width:54px;height:54px}}.rks{{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%}}.rkp{{grid-row:span 2}}</style></head><body><div class=wrap>{hd}
 <div class=mat style='width:440px;height:440px'></div><div class=pal>{pal()}</div>

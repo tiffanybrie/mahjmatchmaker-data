@@ -59,7 +59,7 @@ figcaption{{font-family:BitterB;font-size:17px;margin-top:8px;line-height:1.15}}
 {("<div class=h>RACK MATCHES</div><div class=rks>"+rk+"<small>"+c.get('rackNote','Bird &amp; Bamboo painted wood racks')+"</small></div>") if c['racks'] else ""}
 </div></div>
 {"<div class=tiles><div class=h><img src='"+c['flame']+"'>"+c.get('tilesTitle',"TIFFANY'S TILE MATCHES")+"<img src='"+c['flame']+"'></div><div class=trow>"+tiles+"</div></div>" if c['tiles'] else ""}
-<div class=web><img src="{c['flame']}">www.mahjmatchmaker.com</div>
+<div class=web><img src="{c['flame']}"><span><small style='font-family:Bitter;color:#2a2036'>See more matches at</small> www.mahjmatchmaker.com</span></div>
 <div class=cp>First date's on us. Use code MAHJMATCH to save 10%.</div>
 </div></body></html>"""
     open(out,'w').write(html)
