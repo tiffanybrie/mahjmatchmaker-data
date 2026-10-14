@@ -1,11 +1,13 @@
 import json,re,urllib.request,concurrent.futures as cf,collections
 H={'User-Agent':'Mozilla/5.0'}
-P=json.load(open('/tmp/mb/data_embed.json'))['prods']
-L=json.load(open('/home/claude/mahjmatchmaker-data/catalog/locked_decisions.json'))
-B=json.load(open('/home/claude/mahjmatchmaker-data/catalog.json'))['B']
+import os
+R0=os.path.dirname(os.path.abspath(__file__))+'/../'
+P=set(json.load(open(R0+'catalog/fym_mat_keys.json')))
+L=json.load(open(R0+'catalog/locked_decisions.json'))
+B=json.load(open(R0+'catalog.json'))['B']
 brands=[(b[0],b[1],True) for b in B]
 brands+=[('Mahjong Register','mahjongregister.com',True),('Royal Mahjong Society','theroyalmahjongsociety.com',True)]
-for b,d,t in json.load(open('/tmp/ab/probe.json')):
+for b,d,t in json.load(open(R0+'config/fym_extra_brands.json')):
     if d and t=='shopify' and b not in ('Mahjong Register','Mahjong Co.','Mini Mahjer'): brands.append((b,d,False))
 MAT=re.compile(r'\bmats?\b|playmat|play mat|game mat|mahjong mat',re.I)
 NOT=re.compile(r'rack|pusher|\bbag\b|tote|tube(?! *$)|caddy|storage|tile set|tiles\b|\bkit\b|bundle|solo play|practice|table ?cover|tablecloth|desk mat|coaster|mouse|puzzle|gift card|sticker|card holder|scorecard|\bcards?\b|book|class|lesson|ticket|strap|band\b|sleeve|wrap|ornament|candle|napkin|placemat|bar mat|cocktail|dice|wallet|pouch|case\b|hat\b|shirt|sweatshirt|mug|glass|charm|necklace|earring|bracelet|keychain|pin\b|patch|towel|blanket|pillow|umbrella stand|card table|table\b',re.I)
@@ -50,5 +52,5 @@ for name,dom,partner,out,n in R:
     have=[o for o in out if o['key'] in P]
     print(f"{name:28s} {dom:32s} products {n:4d} mats {len(out):4d} in-catalog {len(have):3d} NEW {len(new):4d}")
     allc+=new
-json.dump(allc,open('/tmp/ab/new.json','w'),indent=0)
+json.dump(allc,open(R0+'work/fym_new_items.json','w'),indent=0)
 print('TOTAL NEW',len(allc))
