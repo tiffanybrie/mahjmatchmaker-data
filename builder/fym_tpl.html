@@ -219,6 +219,16 @@ button{font-family:inherit;color:inherit}
 .msr img{width:44px;height:44px;object-fit:cover;border-radius:8px;flex:none;background:#f3f3f3}
 .msr b{display:block;font-size:14px;line-height:1.2}.msr small{color:#8a7579;font-size:12px}
 .msr .none{padding:12px;font-size:14px;color:#8a7579}
+
+.tsort{display:flex;gap:6px;justify-content:center;margin:4px 0 10px}
+.tsort button{font:inherit;font-size:13px;padding:6px 14px;border-radius:999px;border:1.5px solid #e3c9cf;background:#fff;color:#3a2a2e;cursor:pointer}
+.tsort button[aria-pressed=true]{background:#a3192e;border-color:#a3192e;color:#fff}
+.tgrp{grid-column:1/-1;display:flex;align-items:center;gap:8px;margin:10px 2px 2px;font-weight:700;font-size:14px;color:#3a2a2e}
+.tgrp i{width:14px;height:14px;border-radius:50%;display:inline-block}
+
+.tchips{text-align:center;margin:6px 0 12px}.tchips p{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;margin:0 0 8px;color:#3a2a2e}
+.tchips button{font:inherit;font-weight:700;font-size:14px;margin:4px 3px;padding:7px 14px;border-radius:999px;border:2px solid var(--c);background:#fff;color:#1f3a6b;cursor:pointer}
+.tchips button[aria-pressed=true]{background:var(--c);color:#fff}
 </style></head>
 <body>
 <div id="app"><header class="top"><img id="logo" alt="Mahj Matchmaker"><nav class="stp" id="stp" aria-label="Steps"></nav></header><main id="stage"><section id="s-tiles" class="sec"></section><section id="s-mats" class="sec"></section><section id="s-racks" class="sec"></section><section id="s-card" class="sec"></section></main></div>
@@ -267,6 +277,7 @@ function card(id,k,back){const mat=k==='m';const o=mat?M[id]:R[id];const her=mat
  ${back?'':`${mat&&!aer?'<div class="zb"><button type="button" data-z="-1" aria-label="Zoom out">−</button><button type="button" data-z="1" aria-label="Zoom in">+</button></div>':''}<span class="stamp yes">CRUSH</span><span class="stamp no">NEXT</span>`}</div>`;}
 function deck(k){const q=queue(k);
  if(k==='m'&&S.peek)return `<div class="deck m"><div class="peekbar"><span>Your suitor</span></div>${card(S.peek,k)}</div>`;
+ if(!q.length&&S.f[k].her)return `<div class="deck ${k}"><div class="empty">That’s every ${k==='m'?'mat':'rack'} that fits your current filters with <b>Tiffany’s matches on</b>. To see all the possibilities, turn Tiffany’s matches off.<button type="button" class="big gh" style="width:auto;padding:10px 16px" data-her="${k}">Turn Tiffany’s matches off</button></div></div>`;
  if(!q.length)return `<div class="deck ${k}"><div class="empty">${k==='m'?'That’s every mat that fits these filters.':'That’s every rack that fits these filters.'}<button type="button" class="big gh" style="width:auto;padding:10px 16px" data-clear="${k}">Loosen your standards</button></div></div>`;
  return `<div class="deck ${k}">${q[1]?card(q[1],k,true):''}${card(q[0],k)}</div>`;}
 function acts(k){if(k==='m'&&S.peek)return `<div class="acts"><button type="button" class="pill" data-unpeek>‹ Keep swiping</button><button type="button" class="pill pk" data-mock="${esc(S.peek)}">Mock this match ♥</button></div>`;
@@ -275,9 +286,20 @@ function tray(k){if(k==='m'){const L=S.liked;return `<div class="tray"><div clas
  const L=S.rliked;return `<div class="tray rk"><div class="tl"><b>${S.rpick.length}</b>of 2 picked</div>${L.length?`<div class="th">${L.slice().reverse().map(id=>`<button type="button" data-rp="${esc(id)}" aria-pressed="${S.rpick.includes(id)}" aria-label="${esc(R[id].n)}"><img src="${rackSrc(id)}" alt="">${S.rpick.includes(id)?'<span class="ck">✓</span>':''}</button>`).join('')}</div>`:'<div class="none">Swipe right on racks, then tap up to 2 here.</div>'}<button type="button" class="go" data-make ${S.rpick.length?'':'disabled'}>Make it official ♥</button></div>`;}
 function tileView(cls){const s=set();return `<div class="tilev ${cls||''}" id="tv-${cls||'m'}"><img src="${tileFull(s)}" alt="${esc(s.name)} tiles" draggable="false"><div class="zb"><button type="button" data-tz="-1" aria-label="Zoom out">−</button><button type="button" data-tz="1" aria-label="Zoom in">+</button></div></div>`;}
 /* ---------- sections ---------- */
+const BACKG={"Holiday":["Dear Santa","Rackin' Rudolph","Holly Jolly (Rudolph Red)","Holly Jolly (Grinch Green)","Holly Jolly (Sugarplum Pink)","Tinselle (Ruby Red)","Tinselle (Emerald Green)","Nivalee (Glacier Blue)","Nutcracker Ballet","Après Ski Club"],"Red":["Nantucket"],"Pink":["Amara","Coquette","Dandy","Glitterville","La Fete","Glow Wild"],"Yellow & Orange":["Solara","Sierra","Sunset","Classic Tortoise","Pippa","Sorbet"],"Green":["Limoncello","Drake","Emerald","Jasmine","Miss Classic Jade","Miss Classic Malachite","Palm Royale","Willow"],"Blue":["Birdie","Gatsby","Lagoon","Lola","Moonlight","Osler","Seabreeze"],"Purple":["Gemma","Luminaire","Taylor"],"Brown":["Heritage 1.0","Heritage 2.0","Cypress","Smith"],"Ivory":["Pearlescent","Talulah"],"Natural Patterns":["Heritage 1.0","Heritage 2.0","Cypress","Smith","Classic Tortoise","Talulah","Pearlescent","Palm Royale","Emerald","Miss Classic Jade","Miss Classic Malachite"]};
+/* Holiday group: first during the holiday season; set HOLIDAY_SEASON=false to push it to the bottom */
+const HOLIDAY_SEASON=true;
+const GDOT={Holiday:'linear-gradient(135deg,#c8202f 50%,#1f6b3a 50%)',Red:'#c8202f',Pink:'#e2558f',Orange:'#e07a2e',Yellow:'#e9c531',Green:'#3f9a52',Blue:'#3b6fc4',Purple:'#7d55b0',Ivory:'#efe6d2',Brown:'#7a4a2a','Natural Pattern':'linear-gradient(135deg,#8a5a2b,#d9b77e 45%,#2f6b4f 55%,#e8dfcf)'};
+function tileBtn(s,i){return `<button type="button" data-tile="${i}" aria-pressed="${S.set===i}"><img src="${pile(s)}" alt="" loading="lazy"><span>${esc(s.name)}</span><small>${esc(s.maker)}</small></button>`;}
+function tileOrder(){const ORD=Object.keys(BACKG).filter(g=>g!=='Holiday');if(HOLIDAY_SEASON)ORD.unshift('Holiday');else ORD.push('Holiday');return ORD;}
+function tileChips(){if(!S.tcol)S.tcol=tileOrder()[0];return tileOrder().map(g=>`<button type="button" data-tcol="${g}" aria-pressed="${S.tcol===g}" style="--c:${GCHIP[g]||'#3a2a2e'}">${g==='Holiday'?'Holiday':g}</button>`).join('')+`<button type="button" data-tcol="az" aria-pressed="${S.tcol==='az'}" style="--c:#1f3a6b">All A–Z</button>`;}
+function tileGrid(){const all=D.sets.map((s,i)=>[s,i]);if(!S.tcol)S.tcol=tileOrder()[0];
+ if(S.tcol==='az')return all.sort((a,b)=>a[0].name.localeCompare(b[0].name)).map(([s,i])=>tileBtn(s,i)).join('');
+ return (BACKG[S.tcol]||[]).map(n=>all.find(x=>x[0].name===n)).filter(Boolean).map(([s,i])=>tileBtn(s,i)).join('');}
+const GCHIP={Holiday:'#a3192e',Red:'#c8343c',Pink:'#d6568a',Orange:'#e07a2e','Yellow & Orange':'#e08a2e',Green:'#3f8f55',Blue:'#3f6fb5',Purple:'#7d55b0',Brown:'#7a4a2a',Ivory:'#b9a57a','Natural Patterns':'#8a6a3a'};
 function renderTiles(){const el=$('s-tiles');
  if(S.set!=null&&!S.tilesOpen){const s=set();el.innerHTML=`<div class="picked"><span class="num">1</span><img src="${pile(s)}" alt=""><div class="tx"><i>Your tiles</i><b>${esc(s.name)}</b><small>${esc(s.maker)}</small></div><button type="button" class="chip" data-opentiles>Change</button></div>`;return;}
- el.innerHTML=`<div class="lock"><div class="eb">mahjmatchmaker.com</div><h1 class="ttl">Find Your Match</h1><div class="by">Single &amp; ready to mingle? Pick the tiles you’re bringing to the table.</div></div><div class="how"><div><b>1</b>Swipe on mats</div><div><b>2</b>Pick your crush</div><div><b>3</b>Add racks</div></div><div class="tgrid">${D.sets.map((s,i)=>[s,i]).sort((a,b)=>a[0].name.localeCompare(b[0].name)).map(([s,i])=>`<button type="button" data-tile="${i}" aria-pressed="${S.set===i}"><img src="${pile(s)}" alt="" loading="lazy"><span>${esc(s.name)}</span><small>${esc(s.maker)}</small></button>`).join('')}</div>`;}
+ el.innerHTML=`<div class="lock"><div class="eb">mahjmatchmaker.com</div><h1 class="ttl">Find Your Match</h1><div class="by">Single &amp; ready to mingle? Pick the tiles you’re bringing to the table.</div></div><div class="how"><div><b>1</b>Swipe on mats</div><div><b>2</b>Pick your crush</div><div><b>3</b>Add racks</div></div><div class="tchips" role="group" aria-label="Shop tiles by color"><p>Shop by color</p>${tileChips()}</div><div class="tgrid">${tileGrid()}</div>`;}
 function renderMats(){const el=$('s-mats');if(S.set==null){el.innerHTML='';return;}const s=set();
  el.innerHTML=`<div class="shrow">${head(2,'Mat-ching','Right = crush, left = pass')}<div class="seg mode" role="group" aria-label="View"><button type="button" data-mode="close" aria-pressed="${S.mode==='close'}">Up close</button><button type="button" data-mode="aerial" aria-pressed="${S.mode==='aerial'}">Aerial</button></div></div>`+`<div class="msearch"><input id="msq" type="search" enterkeyhint="search" placeholder="Already own a mat? Search by name or brand" autocomplete="off" aria-label="Search mats"><div id="msr" class="msr" role="listbox"></div></div>`+filters('m')+
  (S.mode==='close'?`<div class="cmp">${tileView('m')}<div class="tcap"><span>${esc(s.name)} tiles</span><span>Pinch either photo to zoom</span></div>${deck('m')}</div>`:`<div class="cmp aer">${deck('m')}</div>`)+acts('m')+tray('m');
@@ -334,7 +356,8 @@ function resetFrom(level){if(level<=1){Object.assign(S,{seen:{},liked:[],hist:[]
 /* ---------- clicks ---------- */
 document.addEventListener('click',e=>{const q=s=>e.target.closest(s);let b;
  if(b=q('[data-jump]')){jump(b.dataset.jump);return;}
- if(b=q('[data-tile]')){const i=+b.dataset.tile;if(i!==S.set)resetFrom(1);S.set=i;S.tilesOpen=false;renderAll();jump('s-mats');return;}
+ if(b=q('[data-tile]')){const i=+b.dataset.tile;const nw=i!==S.set;if(nw)resetFrom(1);S.set=i;if(nw)S.f.m.her=set().m.length>0;S.tilesOpen=false;renderAll();jump('s-mats');return;}
+ if(b=q('[data-tcol]')){S.tcol=b.dataset.tcol;renderTiles();return;}
  if(q('[data-opentiles]')){S.tilesOpen=true;renderTiles();return;}
  if(b=q('[data-mode]')){S.mode=b.dataset.mode;renderMats();return;}
  if(b=q('[data-her]')){const f=S.f[b.dataset.her];f.her=!f.her;rerender(b.dataset.her);return;}

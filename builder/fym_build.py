@@ -33,8 +33,8 @@ for ti,s in enumerate(d['sets']):
     if _af:
         _src='data:image/jpeg;base64,'+base64.b64encode(open('/tmp/albtiles/'+_af.split('/')[-1],'rb').read()).decode()
     else: print('NO ALBUM TILE',s['name'])
-    t=dict(t,pile=_src);im(_src).convert('RGB').save(f'{SP}/t/{ti}.jpg','JPEG',quality=92);tiles[s['tile']]=dict(full=f't/{ti}.jpg',n={'Jade':'Miss Classic Jade','Malachite':'Miss Classic Malachite'}.get(s['name'],s['name']),bn=t.get('bn') or t['b'],u=t.get('url',''),dc=t.get('d',''),pa=T(t.get('p')),nc=T(t.get('nc')),rt=bool(t.get('retired')),pile=bund(t.get('pile') or t['cut'],'JPEG',80,620))
-    sets.append(dict(slug=s['slug'],name={'Jade':'Miss Classic Jade','Malachite':'Miss Classic Malachite'}.get(s['name'],s['name']),maker=s['maker'].replace(' Retired tile set',''),tile=s['tile'],tc=s.get('tc') or '#d6247f',tag=s.get('tag',''),album=s.get('album',''),rank=S['rank'][s['slug']],
+    t=dict(t,pile=_src);im(_src).convert('RGB').save(f'{SP}/t/{ti}.jpg','JPEG',quality=92);tiles[s['tile']]=dict(full=f't/{ti}.jpg',n={'Jade':'Miss Classic Jade','Malachite':'Miss Classic Malachite','Heritage':'Heritage 1.0'}.get(s['name'],s['name']),bn=t.get('bn') or t['b'],u=t.get('url',''),dc=t.get('d',''),pa=T(t.get('p')),nc=T(t.get('nc')),rt=bool(t.get('retired')),pile=bund(t.get('pile') or t['cut'],'JPEG',80,620))
+    sets.append(dict(slug=s['slug'],name={'Jade':'Miss Classic Jade','Malachite':'Miss Classic Malachite','Heritage':'Heritage 1.0'}.get(s['name'],s['name']),maker=s['maker'].replace(' Retired tile set',''),tile=s['tile'],tc=s.get('tc') or '#d6247f',tag=s.get('tag',''),album=s.get('album',''),rank=S['rank'][s['slug']],
       m=[[x['mat'],[r for r in x.get('racks',[]) if r in racks]] for x in s['matches'] if x['mat'] in mats]))
 logos={k:bund(v,'PNG',90,360) for k,v in d['logos'].items() if isinstance(v,str) and v.startswith('data:')}
 D=dict(mats=mats,racks=racks,tiles=tiles,sets=sets,uni=[u for u in d['uni'] if u in racks],order=S['mats'],logos=logos)
