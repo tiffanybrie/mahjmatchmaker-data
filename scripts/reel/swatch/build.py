@@ -10,7 +10,7 @@ wd = f'/tmp/sw_{slug}'; os.makedirs(wd, exist_ok=True)
 b64 = lambda f, m: f'data:{m};base64,' + base64.b64encode(open(f, 'rb').read()).decode()
 C = []
 for i, p in enumerate(json.load(open(picks))):
-    c = by[p['mat']]; f = f'{wd}/c{i}.jpg'
+    c = by[p['mat']]; f = f'{wd}/' + ''.join(ch if ch.isalnum() else '-' for ch in p['mat']) + '.jpg'
     if not os.path.exists(f): subprocess.run(['curl', '-s', '-o', f, c['img'] + '?format=1500w'], check=True)
     C.append({**p, 'brand': c['brand'], 'img': b64(f, 'image/jpeg')})
 h = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'swatch.html')).read()
