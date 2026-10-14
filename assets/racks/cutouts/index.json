@@ -61,15 +61,15 @@
    "horizontal": "miss-mahjong-peach-sorbet-scalloped-1.png",
    "angled": "miss-mahjong-peach-sorbet-scalloped-2.png"
   },
-  "UNCONFIRMED-tortoise-and-brass": {
-   "name": "Tortoise & Brass (brand to confirm)",
-   "horizontal": "UNCONFIRMED-tortoise-and-brass-1.png",
-   "angled": "UNCONFIRMED-tortoise-and-brass-2.png"
-  },
   "UNCONFIRMED-malachite": {
    "name": "Malachite (brand to confirm)",
    "horizontal": "UNCONFIRMED-malachite-1.png",
    "angled": "UNCONFIRMED-malachite-2.png"
+  },
+  "miss-mahjong-brass-and-tortoise": {
+   "name": "Miss Mahjong Brass & Tortoise",
+   "horizontal": "miss-mahjong-brass-and-tortoise-1.png",
+   "angled": "miss-mahjong-brass-and-tortoise-2.png"
   }
  }
 }
