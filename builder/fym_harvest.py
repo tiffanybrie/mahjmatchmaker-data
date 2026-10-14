@@ -44,6 +44,8 @@ def harvest(b):
         else:
             out.append(dict(key=base,base=base,n=t,var='',img=p['images'][0]['src'],imgs=list(imgs.values())[:10],url=f"https://{dom}/products/{p['handle']}",brand=name,partner=partner,avail=any(v.get('available',True) for v in p['variants'])))
     return name,dom,partner,out,len(allp)
+HELD=set(json.load(open(R0+'config/fym_held_brands.json')))
+brands=[b for b in brands if b[0] not in HELD]
 with cf.ThreadPoolExecutor(10) as ex: R=list(ex.map(harvest,brands))
 allc=[];
 for name,dom,partner,out,n in R:
