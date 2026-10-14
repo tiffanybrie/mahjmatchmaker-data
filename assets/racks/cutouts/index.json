@@ -1,5 +1,5 @@
 {
- "_note": "Tiffany's Canva cutouts, Oct 14. For MOCK-UPS ONLY (match cards, color cards, swipe books, reels). -1 = horizontal (color cards), -2 = angled (shows how it sits in a card corner; not required). NEVER use in the Find Your Match catalog: FYM keeps brand product photos. Some are AI-assisted, details may not be exact.",
+ "_note": "Tiffany's Canva cutouts, Oct 14. For MOCK-UPS ONLY (match cards, color cards, swipe books, reels). -1 = horizontal (color cards), -2 = angled (shows how it sits in a card corner; not required). NEVER use in the Find Your Match catalog: FYM keeps brand product photos. Some are AI-assisted, details may not be exact. OMM Agate: do NOT use a cutout, use assets/racks/omm/agate.jpg (OMM website single-rack photo), per doc 48.",
  "racks": {
   "mahjong-row-and-co-white": {
    "name": "Mahjong Row & Co. White",
@@ -60,11 +60,6 @@
    "name": "Miss Mahjong Peach Sorbet Scalloped",
    "horizontal": "miss-mahjong-peach-sorbet-scalloped-1.png",
    "angled": "miss-mahjong-peach-sorbet-scalloped-2.png"
-  },
-  "UNCONFIRMED-malachite": {
-   "name": "Malachite (brand to confirm)",
-   "horizontal": "UNCONFIRMED-malachite-1.png",
-   "angled": "UNCONFIRMED-malachite-2.png"
   },
   "miss-mahjong-brass-and-tortoise": {
    "name": "Miss Mahjong Brass & Tortoise",
