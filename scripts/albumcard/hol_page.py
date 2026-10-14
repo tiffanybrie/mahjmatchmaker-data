@@ -72,7 +72,7 @@ for k, v in sorted(((k, v) for k, v in P.items() if not k.startswith('_new')), k
 page = f"""<style>{css}</style>{HOLCSS}
 <div class="mm3" id="holiday-matches"><header class="mm3-hero" style="text-align:center;max-width:900px;margin:0 auto">
 <p class="mm3-kicker" style="color:#a3192e">Holiday 2026</p><h1>Holiday Mahjong Tile &amp; Mat Matches</h1>
-<div class="mm3-intro"><p>Every Christmas, Hanukkah and winter mahjong mat I&rsquo;ve matched, paired with tile sets and racks. Start with your tile set below, or jump to the new holiday tile sets.</p></div>
+<div class="mm3-intro"><p>Christmas, Hanukkah and winter mahjong mats I&rsquo;ve matched with tile sets and racks. Start with your tile set below, or jump to the new holiday tile sets.</p></div>
 <div class="mmhol-stats"><span><b>{N}</b>holiday matches</span><span><b>{NM}</b>mats</span><span><b>{NT}</b>tile sets</span><span><b>{NB}</b>brands</span></div>
 <p class="mm3-sub">Use code <strong>MAHJMATCH</strong> to save at most brands. See every <a href="/mahjong-discount-codes">mahjong discount code</a>.</p>
 <nav class="mmhol-nav" aria-label="Holiday tile sets">{''.join(nav)}<a class="g" href="#your-tiles">Tiles you already own</a></nav></header>
