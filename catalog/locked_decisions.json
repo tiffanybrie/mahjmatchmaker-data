@@ -915,7 +915,7 @@
  },
  "alb:solara:Regal Bloom": {
   "status": "hidden",
-  "reason": "duplicate/base or rejected photo"
+  "reason": "duplicate/mislabel: same mat as brittmillsdesign.com/regal-bloom-neoprene-mahjong-mat"
  },
  "alb:solara:Chinoiserie": {
   "status": "hidden",
@@ -1028,10 +1028,8 @@
   "brand": "Isabel Harte"
  },
  "alb:glow-wild:Regal Bloom": {
-  "status": "needs-photo",
-  "reason": "only a match card existed; needs real mat photo",
-  "name": "Regal Bloom",
-  "brand": "Britt Mills"
+  "status": "hidden",
+  "reason": "duplicate/mislabel: same mat as brittmillsdesign.com/regal-bloom-neoprene-mahjong-mat"
  },
  "alb:glow-wild:Zen Glow": {
   "status": "hidden",
@@ -1256,22 +1254,16 @@
   "reason": "duplicate/base or rejected photo"
  },
  "alb:pearlescent:Serengeti 2": {
-  "status": "needs-photo",
-  "reason": "only a match card existed; needs real mat photo",
-  "name": "Serengeti 2 (retired)",
-  "brand": "Oh My Mahjong"
+  "status": "hidden",
+  "reason": "duplicate/mislabel: same mat as alb:amara:Serengeti"
  },
  "alb:pearlescent:Enchanted 2": {
-  "status": "needs-photo",
-  "reason": "only a match card existed; needs real mat photo",
-  "name": "Enchanted 2 (retired)",
-  "brand": "Oh My Mahjong"
+  "status": "hidden",
+  "reason": "duplicate/mislabel: same mat as alb:amara:Enchanted"
  },
  "alb:pearlescent:Regal Bloom": {
-  "status": "needs-photo",
-  "reason": "only a match card existed; needs real mat photo",
-  "name": "Regal Bloom (retired)",
-  "brand": "Oh My Mahjong"
+  "status": "hidden",
+  "reason": "duplicate/mislabel: same mat as brittmillsdesign.com/regal-bloom-neoprene-mahjong-mat"
  },
  "alb:pippa:Goldie": {
   "status": "hidden",
