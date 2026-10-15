@@ -2,11 +2,17 @@
 At the end of the book (or any time via the top ✓ button) she sees her yes/no counts,
 can leave a note, tap 'Mark done', and jump back to HQ. Saves to collection <col>_status, doc 'done'.
 Usage: python3 finish_patch.py in.html out.html"""
-import sys
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+def _canon(p):
+    # Tiffany Oct 15: canonical Heritage 1.0 / 2.0, Sunday and Spring Fling photos, every build
+    from canon_tiles import fix_book
+    fix_book(p)
 HQ='https://claude.ai/artifact/Cor6pKtesou4mFRQ41P6Ye'
 t=open(sys.argv[1]).read()
 if 'id="fsheet"' in t:
-    open(sys.argv[2],'w').write(t);print('already patched');sys.exit()
+    open(sys.argv[2],'w').write(t);print('already patched')
+    _canon(sys.argv[2]);sys.exit()
 a='<button class="nav" id="nextGroup" title="Next">⏭</button>'
 assert a in t
 t=t.replace(a,a+'<button class="nav" id="finBtn" title="I\'m done" style="background:#2e9d5e">✓</button>',1)
@@ -42,3 +48,4 @@ const ft=$('foot');new MutationObserver(()=>{if(/All done/.test(ft.textContent))
 i=t.rfind('</body>')
 t=(t[:i]+js+t[i:]) if i>=0 else t+js
 open(sys.argv[2],'w').write(t);print('patched')
+_canon(sys.argv[2])
