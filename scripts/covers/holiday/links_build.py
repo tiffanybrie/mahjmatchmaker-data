@@ -1,11 +1,21 @@
 import json,sys
+# ALBUM ORDER (Oct 15, Tiffany: newest/most popular first, not by color):
+# pop.json = the 12 newest LIVE album pages, newest first. "Live date" = the creation
+# time embedded in each Squarespace page's collection id (first 8 hex chars of the
+# ObjectId, from <album-url>?format=json), checked Oct 15 2026 for all 37 albums in
+# work/album-urls.txt. We have no traffic numbers per album, so recency decides.
+# Images: 2x the CSS display size (album 140px -> 280x350, holiday ~150px -> 300x375),
+# resized with Lanczos from the 1080x1350 originals.
 pop=json.load(open('pop.json'))
+HOLIDAY=[('dear-santa','Dear Santa'),('rackin-rudolph',"Rackin' Rudolph"),('tinselle-emerald','Tinselle Emerald')]  # Tiffany's top 3 (Oct 15)
 S='https://www.mahjmatchmaker.com'
-def build(img):
+def build(img,tgt):
+    # tgt(url) -> target attrs; preview opens everything in a new tab
     COLORS=[('Holiday','#a3192e','/holiday-mahjong-matches'),('Red','#c8343c','/red-mahjong-tile-matches'),('Pink','#d6568a','/pink-mahjong-tile-matches'),('Yellow & Orange','#e08a2e','/yellow-orange-mahjong-tile-matches'),('Green','#3f8f55','/green-mahjong-tile-matches'),('Blue','#3f6fb5','/blue-mahjong-tile-matches'),('Purple','#7d55b0','/purple-mahjong-tile-matches'),('Brown','#7a4a2a','/brown-mahjong-tile-matches'),('Ivory','#b9a57a','/ivory-mahjong-tile-matches'),('Natural Patterns','#8a6a3a','/neutral-mahjong-tile-matches')]
-    chips=''.join(f'<a class="chip" href="{S}{u}" style="--c:{c}">{n}</a>' for n,c,u in COLORS)
-    strip=''.join(f'<a class="alb" href="{S}/{k}-mahjong-tile-matches"><img src="{img(k+".jpg")}" alt="{t} mahjong tile matches" loading="lazy"><span>{t}</span></a>' for k,t in pop.items())
-    btn=lambda ico,t,s,u: f'<a class="btn" href="{u}"><span class="ico">{ico}</span><span class="tx"><b>{t}</b><small>{s}</small></span><span class="ar">›</span></a>'
+    chips=''.join(f'<a class="chip" href="{S}{u}"{tgt(S+u)} style="--c:{c}">{n}</a>' for n,c,u in COLORS)
+    strip=''.join(f'<a class="alb" href="{S}/{k}-mahjong-tile-matches"{tgt(S)}><img src="{img("v2/album-"+k+".jpg")}" width="140" height="175" alt="{t} mahjong tile matches" loading="lazy"><span>{t}</span></a>' for k,t,_ in pop)
+    hol=''.join(f'<img src="{img("v2/holiday-"+k+".jpg")}" width="150" height="188" alt="{t} mahjong tiles holiday matches">' for k,t in HOLIDAY)
+    btn=lambda ico,t,s,u: f'<a class="btn" href="{u}"{tgt(u)}><span class="ico">{ico}</span><span class="tx"><b>{t}</b><small>{s}</small></span><span class="ar">›</span></a>'
     return f'''<style>
 .mml{{--cream:#fdf0e6;--navy:#1f3a6b;--pink:#e36a8f;--red:#a3192e;--card:#fff;max-width:480px;margin:0 auto;padding:22px 16px 40px;color:var(--navy);font-family:Montserrat,system-ui,sans-serif;background:var(--cream)}}
 .mml *{{box-sizing:border-box}}.mml a{{text-decoration:none!important;color:inherit}}
@@ -17,11 +27,11 @@ def build(img):
 .mml .code button{{font:700 14px Montserrat,system-ui,sans-serif;border:0;border-radius:999px;padding:10px 16px;background:var(--pink);color:#fff;cursor:pointer}}
 .mml .where{{display:block;text-align:center;font-size:13px;font-weight:600;margin-bottom:18px;text-decoration:underline!important}}
 .mml .feat{{display:block;border-radius:20px;overflow:hidden;background:var(--red);color:#fff;box-shadow:0 8px 22px rgba(163,25,46,.25);margin-bottom:18px}}
-.mml .feat img{{width:100%;display:block;aspect-ratio:1080/450;object-fit:cover}}.mml .feat div{{padding:12px 16px 14px;display:flex;align-items:center;gap:10px}}
+.mml .feat .hol{{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:8px 8px 0}}.mml .feat .hol img{{width:100%;height:auto;aspect-ratio:4/5;display:block;border-radius:12px}}.mml .feat div{{padding:12px 16px 14px;display:flex;align-items:center;gap:10px}}
 .mml .feat b{{font-family:Caprasimo,Georgia,serif;font-weight:400;font-size:24px;flex:1;line-height:1.1}}.mml .feat small{{display:block;font-family:Montserrat,system-ui,sans-serif;font-size:13px;opacity:.9;margin-top:3px}}
 .mml h2{{font-family:Caprasimo,Georgia,serif;font-weight:400;font-size:22px;margin:22px 0 10px;text-align:center;color:var(--red)}}
 .mml .row{{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 10px;margin:0 -16px;padding-left:16px;padding-right:16px;-webkit-overflow-scrolling:touch}}
-.mml .alb{{flex:0 0 118px;scroll-snap-align:start;text-align:center;font-size:13px;font-weight:700}}.mml .alb img{{width:118px;aspect-ratio:4/5;object-fit:cover;border-radius:12px;display:block;margin-bottom:5px;box-shadow:0 3px 10px rgba(0,0,0,.12)}}
+.mml .alb{{flex:0 0 140px;scroll-snap-align:start;text-align:center;font-size:13px;font-weight:700}}.mml .alb img{{width:140px;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:12px;display:block;margin-bottom:5px;box-shadow:0 3px 10px rgba(0,0,0,.12)}}
 .mml .all{{display:block;text-align:center;font-weight:700;font-size:14px;margin:2px 0 6px;text-decoration:underline!important}}
 .mml .chips{{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}}.mml .chip{{padding:8px 14px;border-radius:999px;background:var(--c);color:#fff!important;font-weight:700;font-size:14px}}
 .mml .btn{{display:flex;align-items:center;gap:12px;background:var(--card);border-radius:16px;padding:13px 14px;margin:10px 0;box-shadow:0 3px 12px rgba(31,58,107,.08);border:2px solid transparent;transition:transform .15s,border-color .15s}}
@@ -32,11 +42,12 @@ def build(img):
 <div class="mml">
 <div class="hd"><img class="hs" src="{img('headshot.png')}" alt="Tiffany of Mahj Matchmaker"><img class="lg" src="{img('logo.png')}" alt="Mahj Matchmaker"><div class="tag">Hooking up tiles, mats &amp; racks 💕</div><img class="omm" src="{img('omm.png')}" alt="Oh My Mahjong certified instructor"></div>
 <div class="code"><div><small>Partner brand discount</small><b>MAHJMATCH</b></div><button type="button" onclick="(navigator.clipboard?navigator.clipboard.writeText('MAHJMATCH'):Promise.reject()).then(()=>{{this.textContent='Copied ✓'}}).catch(()=>{{this.textContent='MAHJMATCH'}})">Copy code</button></div>
-<a class="where" href="{S}/mahjong-discount-codes">See which brands take the code ›</a>
-<a class="feat" href="{S}/holiday-mahjong-matches"><img src="{img('holiday.jpg')}" alt="Holiday mahjong tile and mat matches"><div><b>Holiday Matches 🎄<small>Christmas tiles, mats &amp; racks, matched</small></b><span style="font-size:26px">›</span></div></a>
+<a class="where" href="{S}/mahjong-discount-codes"{tgt(S)}>See all our partner brands ›</a>
+<a class="feat" href="{S}/holiday-mahjong-matches"{tgt(S)}><div class="hol">{hol}</div><div><b>Holiday Matches 🎄<small>Christmas tiles, mats &amp; racks, matched</small></b><span style="font-size:26px">›</span></div></a>
 <h2>Find your tiles&rsquo; match</h2>
+<!-- newest live albums first (see pop.json / build script comment) -->
 <div class="row">{strip}</div>
-<a class="all" href="{S}/mahjong-tile-matches">See all tile albums ›</a>
+<a class="all" href="{S}/mahjong-tile-matches"{tgt(S)}>See all tile albums ›</a>
 <h2>Shop by tile color</h2>
 <div class="chips">{chips}</div>
 <h2>More from Mahj Matchmaker</h2>
@@ -50,9 +61,10 @@ def build(img):
 <div class="ft"><img src="{img('flame.png')}" alt=""> mahjmatchmaker.com</div>
 </div>'''
 # preview artifact
-prev=build(lambda f:'img/'+f)
+prev=build(lambda f:'img/'+f, lambda u:' target="_blank" rel="noopener"')
 open('index.html','w').write('<title>Mahj Matchmaker Links</title><link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet"><style>:root{color-scheme:light}body{margin:0;background:#fdf0e6}</style>'+prev)
 # live squarespace code block (images via repo CDN)
 CDN='https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@partner-catalogs-sqsp/assets/links/'
-open('squarespace_code_block.html','w').write('<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">'+build(lambda f:CDN+f))
+# on the live site, own pages open in the same tab; outside sites (Facebook) open a new tab
+open('squarespace_code_block.html','w').write('<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">'+build(lambda f:CDN+f, lambda u:'' if u.startswith(S) else ' target="_blank" rel="noopener"'))
 print('ok')
