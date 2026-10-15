@@ -1,0 +1,313 @@
+{
+ "set": "Spring Love",
+ "cards": [
+  {
+   "order": 1,
+   "vote_id": "omm-camellia",
+   "star": true,
+   "mat": "Camellia",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "spring-love-mahjong-tiles-oh-my-mahjong-camellia-mat.jpg",
+   "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM",
+   "src": "assets/mats/omm-retired/camellia.jpg",
+   "src_size": [
+    1400,
+    1380
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "order": 2,
+   "vote_id": "omm-larkspur",
+   "star": false,
+   "mat": "Larkspur",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "spring-love-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "vault book m/omm-larkspur.jpg",
+   "src_size": [
+    1394,
+    1400
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "order": 3,
+   "vote_id": "omm-mirage",
+   "star": false,
+   "mat": "Mirage",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "spring-love-mahjong-tiles-oh-my-mahjong-mirage-mat.jpg",
+   "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM",
+   "src": "assets/mats/omm-retired/mirage.jpg",
+   "src_size": [
+    1663,
+    1677
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "order": 4,
+   "vote_id": "omm-goldie",
+   "star": false,
+   "mat": "Goldie",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "spring-love-mahjong-tiles-oh-my-mahjong-goldie-mat.jpg",
+   "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM",
+   "src": "assets/mats/omm-retired/goldie-color-corrected.jpg",
+   "src_size": [
+    1400,
+    1400
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "order": 5,
+   "vote_id": "omm-zen-glow",
+   "star": false,
+   "mat": "Zen Glow",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "spring-love-mahjong-tiles-oh-my-mahjong-zen-glow-mat.jpg",
+   "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM",
+   "src": "assets/mats/omm-retired/zen-glow.jpg",
+   "src_size": [
+    1752,
+    1748
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "order": 6,
+   "vote_id": "omm-delilah",
+   "star": false,
+   "mat": "Delilah",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "spring-love-mahjong-tiles-oh-my-mahjong-delilah-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "vault book m/omm-delilah.jpg",
+   "src_size": [
+    1390,
+    1400
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "order": 7,
+   "vote_id": "omm-amethyst",
+   "star": false,
+   "mat": "Amethyst",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "spring-love-mahjong-tiles-oh-my-mahjong-amethyst-mat.jpg",
+   "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM",
+   "src": "assets/mats/omm-retired/amethyst.jpg",
+   "src_size": [
+    1736,
+    1730
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "order": 8,
+   "vote_id": "omm-spring-fling",
+   "star": false,
+   "mat": "Spring Fling",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "spring-love-mahjong-tiles-oh-my-mahjong-spring-fling-mat.jpg",
+   "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM",
+   "src": "assets/mats/omm-retired/spring-fling.png",
+   "src_size": [
+    2000,
+    2000
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "order": 9,
+   "vote_id": "omm-serengeti",
+   "star": false,
+   "mat": "Serengeti",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "spring-love-mahjong-tiles-oh-my-mahjong-serengeti-mat.jpg",
+   "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM",
+   "src": "assets/mats/omm-retired/serengeti.jpg",
+   "src_size": [
+    1948,
+    1946
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "order": 10,
+   "vote_id": "omm-lorelei",
+   "star": false,
+   "mat": "Lorelei",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "spring-love-mahjong-tiles-oh-my-mahjong-lorelei-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "vault book m/omm-lorelei.jpg",
+   "src_size": [
+    1400,
+    1360
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "order": 11,
+   "vote_id": "omm-birdie-green",
+   "star": false,
+   "mat": "Birdie Green",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "spring-love-mahjong-tiles-oh-my-mahjong-birdie-green-mat.jpg",
+   "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM",
+   "src": "assets/mats/omm-retired/birdie-green.jpg",
+   "src_size": [
+    1952,
+    1947
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "order": 12,
+   "vote_id": "omm-veranda",
+   "star": false,
+   "mat": "Veranda",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "spring-love-mahjong-tiles-oh-my-mahjong-veranda-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "vault book m/omm-veranda.jpg",
+   "src_size": [
+    1383,
+    1400
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "order": 13,
+   "vote_id": "omm-jade",
+   "star": false,
+   "mat": "Jade",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "spring-love-mahjong-tiles-oh-my-mahjong-jade-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "vault book m/omm-jade.jpg",
+   "src_size": [
+    1400,
+    1398
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "order": 14,
+   "vote_id": "omm-vivienne",
+   "star": false,
+   "mat": "Vivienne",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "spring-love-mahjong-tiles-oh-my-mahjong-vivienne-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "vault book m/omm-vivienne.jpg",
+   "src_size": [
+    1394,
+    1400
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "order": 15,
+   "vote_id": "omm-hol-clara",
+   "star": false,
+   "mat": "Clara",
+   "retired_mat": false,
+   "holiday": true,
+   "file": "spring-love-mahjong-tiles-oh-my-mahjong-clara-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "vault book m/omm-hol-clara.jpg",
+   "src_size": [
+    1400,
+    1400
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "order": 16,
+   "vote_id": "omm-hol-sugarplum",
+   "star": false,
+   "mat": "Sugarplum",
+   "retired_mat": false,
+   "holiday": true,
+   "file": "spring-love-mahjong-tiles-oh-my-mahjong-sugarplum-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "vault book m/omm-hol-sugarplum.jpg",
+   "src_size": [
+    1390,
+    1400
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "order": 17,
+   "vote_id": "omm-hol-yuletide",
+   "star": false,
+   "mat": "Yuletide",
+   "retired_mat": false,
+   "holiday": true,
+   "file": "spring-love-mahjong-tiles-oh-my-mahjong-yuletide-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "vault book m/omm-hol-yuletide.jpg",
+   "src_size": [
+    1397,
+    1400
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ]
+  }
+ ],
+ "title_color": "#e0789c",
+ "racks_note": "no final_lists entry; Peace Love Mahjong Oak as on the live Larkspur card"
+}
