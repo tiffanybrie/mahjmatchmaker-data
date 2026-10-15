@@ -305,7 +305,7 @@ function renderMats(){const el=$('s-mats');if(S.set==null){el.innerHTML='';retur
  (S.mode==='close'?`<div class="cmp">${tileView('m')}<div class="tcap"><span>${esc(s.name)} tiles</span><span>Pinch either photo to zoom</span></div>${deck('m')}</div>`:`<div class="cmp aer">${deck('m')}</div>`)+acts('m')+tray('m');
  bindCard('m');if(S.mode==='close')bindTile('tv-m');preload();}
 function renderRacks(){const el=$('s-racks');if(!S.fav){el.innerHTML='';return;}const m=M[S.fav];
- el.innerHTML=head(3,'Love triangle','Every couple needs a wingman. Swipe on racks.')+filters('r')+
+ el.innerHTML=head(3,'Love triangle','Every couple needs a wingman. Swipe on racks.')+`<div class="msearch"><input id="rsq" type="search" enterkeyhint="search" placeholder="Own racks? Search name or brand" autocomplete="off" aria-label="Search racks"><div id="rsr" class="msr" role="listbox"></div></div>`+filters('r')+
  `<div class="cmp">${tileView('r')}<div class="matv"><img src="${matSrc(S.fav)}" alt="${esc(m.n)}" class="${m.c?'':'photo'}"><button type="button" class="chip mini" data-back-mats>Change mat</button></div>${deck('r')}</div>`+acts('r')+tray('r');
  bindCard('r');bindTile('tv-r');}
 function renderAll(){renderTiles();renderMats();renderRacks();if(S.made)renderCard();else $('s-card').innerHTML='';steps();}
@@ -383,6 +383,13 @@ document.addEventListener('input',e=>{if(e.target.id!=='msq')return;const v=e.ta
  const toks=v.split(/\s+/);const hits=Object.keys(M).filter(id=>{const s=(M[id].n+' '+(M[id].bn||'')).toLowerCase();return toks.every(t=>s.includes(t));})
   .sort((a,b)=>(M[a].n.toLowerCase().startsWith(toks[0])?0:1)-(M[b].n.toLowerCase().startsWith(toks[0])?0:1)||M[a].n.localeCompare(M[b].n)).slice(0,12);
  box.innerHTML=hits.length?hits.map(id=>`<button type="button" data-mock="${id}"><img src="${matTh(id)}" alt=""><span><b>${esc(M[id].n)}</b><small>${esc(M[id].bn||'')}</small></span></button>`).join(''):'<div class="none">No mat by that name yet. Try the brand name.</div>';});
+document.addEventListener('input',e=>{if(e.target.id!=='rsq')return;const v=e.target.value.trim().toLowerCase(),box=$('rsr');if(v.length<2){box.innerHTML='';return;}
+ const toks=v.split(/\s+/);const hits=Object.keys(R).filter(id=>{const s=(R[id].n+' '+(R[id].bn||'')).toLowerCase();return toks.every(t=>s.includes(t));})
+  .sort((a,b)=>(R[a].n.toLowerCase().startsWith(toks[0])?0:1)-(R[b].n.toLowerCase().startsWith(toks[0])?0:1)||R[a].n.localeCompare(R[b].n)).slice(0,12);
+ box.innerHTML=hits.length?hits.map(id=>`<button type="button" data-rown="${esc(id)}"><img src="${rackSrc(id)}" alt="" style="object-fit:contain;background:#fff"><span><b>${esc(shortR(id))}</b><small>${esc(R[id].bn||'')}</small></span></button>`).join(''):'<div class="none">No rack by that name yet. Try the brand name.</div>';});
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-rown]');if(!b)return;const id=b.getAttribute('data-rown');
+ S.rseen[id]=1;if(!S.rliked.includes(id))S.rliked.push(id);if(!S.rpick.includes(id)){if(S.rpick.length>=2)S.rpick.shift();S.rpick.push(id);}
+ renderRacks();const t=document.createElement('div');t.className='toast';t.textContent=shortR(id)+' added to your racks';document.body.appendChild(t);setTimeout(()=>t.remove(),1800);});
 $('logo').src=LG('icon')||LG('ours');
 renderAll();
 
