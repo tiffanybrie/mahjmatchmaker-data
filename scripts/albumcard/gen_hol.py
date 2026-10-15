@@ -72,7 +72,7 @@ def tile_image(g):
 # --- footer: code rules by MAT brand
 PCT = {'Britt Mills': '15%', 'Amanda Toppe': '20%', 'Royal Mahjong Society': '15%'}
 NOPCT = {'Anders Ruff', 'Mahjong Register', 'The Mahjong Press'}
-NOCODE = {'Sunday Mahjong', 'Luxe Mahjong', 'Maison Mahj', 'Lucky Daughters', 'Mahjong Studios', 'I Love Mahj', ''}
+NOCODE = {'Sunday Mahjong', 'Luxe Mahjong', 'Maison Mahj', 'Lucky Daughters', 'Mahjong Studios', 'I Love Mahj', 'Mahjong by SI', "Let's Be Besties", 'Mahj Tile Haus', 'Ozark Mahjongg', ''}  # no code on the hub
 def footer(brand, tileset):
     if tileset == 'coquette' or brand in NOCODE: return 'SHOP THE MATCH : MAHJMATCHMAKER.COM'
     if brand in NOPCT: return 'SAVE WITH CODE : MAHJMATCH'
