@@ -1,0 +1,755 @@
+{
+ "_note": "Oct 15 HD mat fix. Live pages load old_url (pinned commit 205158c). To go live: commit-pin new_file (jsDelivr @<commit with these files>) and swap each old_url on the listed pages (Squarespace holiday page + album pages). New files are 1080x1350 (same 4:5 as the 750x938 originals); everything except the mat is the identical render.",
+ "count": 68,
+ "cards": [
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/amara-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "new_file": "assets/cards/holiday/amara-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat-hd.jpg",
+   "pages": [
+    "/amara-mahjong-tile-matches"
+   ],
+   "title": "Amara + Peace Love Holiday",
+   "mat": "Holiday Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-holiday-sugarplum-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/birdie-mahjong-tiles-peace-love-mahjong-hanukkah-mat.jpg",
+   "new_file": "assets/cards/holiday/birdie-mahjong-tiles-peace-love-mahjong-hanukkah-mat-hd.jpg",
+   "pages": [
+    "/birdie-mahjong-tile-matches"
+   ],
+   "title": "Birdie + Hanukkah",
+   "mat": "Hanukkah Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-hanukkah.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/birdie-mahjong-tiles-charleston-mahjong-club-ski-club-periwinkle-mat.jpg",
+   "new_file": "assets/cards/holiday/birdie-mahjong-tiles-charleston-mahjong-club-ski-club-periwinkle-mat-hd.jpg",
+   "pages": [
+    "/birdie-mahjong-tile-matches"
+   ],
+   "title": "Birdie + Ski Club Periwinkle",
+   "mat": "Ski Club Mat (Periwinkle Center)",
+   "brand": "Charleston Mahjong Club",
+   "new_mat_photo": "assets/mats/holiday/hd/cmc-ski-club-periwinkle.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/birdie-mahjong-tiles-charleston-mahjong-club-ski-club-red-sweater-mat.jpg",
+   "new_file": "assets/cards/holiday/birdie-mahjong-tiles-charleston-mahjong-club-ski-club-red-sweater-mat-hd.jpg",
+   "pages": [
+    "/birdie-mahjong-tile-matches"
+   ],
+   "title": "Birdie + Ski Club Red Sweater",
+   "mat": "Ski Club Mat (Red Sweater Border)",
+   "brand": "Charleston Mahjong Club",
+   "new_mat_photo": "assets/mats/holiday/hd/cmc-ski-club-red-sweater.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/coquette-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "new_file": "assets/cards/holiday/coquette-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat-hd.jpg",
+   "pages": [
+    "/coquette-mahjong-tile-matches"
+   ],
+   "title": "Coquette + Peace Love Holiday",
+   "mat": "Holiday Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-holiday-sugarplum-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/cypress-forest-mahjong-tiles-sunday-mahjong-festive-plaid-mat.jpg",
+   "new_file": "assets/cards/holiday/cypress-forest-mahjong-tiles-sunday-mahjong-festive-plaid-mat-hd.jpg",
+   "pages": [
+    "/cypress-forest-mahjong-tile-matches"
+   ],
+   "title": "Cypress + Festive Plaid",
+   "mat": "Festive Plaid Mat",
+   "brand": "Sunday Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/sunday-festive-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/cypress-forest-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "new_file": "assets/cards/holiday/cypress-forest-mahjong-tiles-luxe-mahjong-the-polo-club-mat-hd.jpg",
+   "pages": [
+    "/cypress-forest-mahjong-tile-matches"
+   ],
+   "title": "Cypress + The Polo Club",
+   "mat": "The Polo Club Mat",
+   "brand": "Luxe Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/luxe-polo-club.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/dandy-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "new_file": "assets/cards/holiday/dandy-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat-hd.jpg",
+   "pages": [
+    "/dandy-mahjong-tile-matches"
+   ],
+   "title": "Dandy + Peace Love Holiday",
+   "mat": "Holiday Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-holiday-sugarplum-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/emerald-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "new_file": "assets/cards/holiday/emerald-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat-hd.jpg",
+   "pages": [
+    "/emerald-mahjong-tile-matches"
+   ],
+   "title": "Emerald + Peace Love Holiday",
+   "mat": "Holiday Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-holiday-sugarplum-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/gatsby-mahjong-tiles-charleston-mahjong-club-ski-club-red-sweater-mat.jpg",
+   "new_file": "assets/cards/holiday/gatsby-mahjong-tiles-charleston-mahjong-club-ski-club-red-sweater-mat-hd.jpg",
+   "pages": [
+    "/gatsby-mahjong-tile-matches"
+   ],
+   "title": "Gatsby + Ski Club Red Sweater",
+   "mat": "Ski Club Mat (Red Sweater Border)",
+   "brand": "Charleston Mahjong Club",
+   "new_mat_photo": "assets/mats/holiday/hd/cmc-ski-club-red-sweater.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/gatsby-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "new_file": "assets/cards/holiday/gatsby-mahjong-tiles-luxe-mahjong-the-polo-club-mat-hd.jpg",
+   "pages": [
+    "/gatsby-mahjong-tile-matches"
+   ],
+   "title": "Gatsby + The Polo Club",
+   "mat": "The Polo Club Mat",
+   "brand": "Luxe Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/luxe-polo-club.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/gemma-mahjong-tiles-charleston-mahjong-club-ski-club-periwinkle-mat.jpg",
+   "new_file": "assets/cards/holiday/gemma-mahjong-tiles-charleston-mahjong-club-ski-club-periwinkle-mat-hd.jpg",
+   "pages": [
+    "/gemma-mahjong-tile-matches"
+   ],
+   "title": "Gemma + Ski Club Periwinkle",
+   "mat": "Ski Club Mat (Periwinkle Center)",
+   "brand": "Charleston Mahjong Club",
+   "new_mat_photo": "assets/mats/holiday/hd/cmc-ski-club-periwinkle.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/glitterville-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "new_file": "assets/cards/holiday/glitterville-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat-hd.jpg",
+   "pages": [
+    "/glitterville-mahjong-tile-matches"
+   ],
+   "title": "Glitterville + Peace Love Holiday",
+   "mat": "Holiday Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-holiday-sugarplum-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/glow-wild-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "new_file": "assets/cards/holiday/glow-wild-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat-hd.jpg",
+   "pages": [
+    "/glow-wild-mahjong-tile-matches"
+   ],
+   "title": "Glow Wild + Peace Love Holiday",
+   "mat": "Holiday Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-holiday-sugarplum-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/heritage-2-0-mahjong-tiles-sunday-mahjong-festive-plaid-mat.jpg",
+   "new_file": "assets/cards/holiday/heritage-2-0-mahjong-tiles-sunday-mahjong-festive-plaid-mat-hd.jpg",
+   "pages": [
+    "/heritage-2-0-mahjong-tile-matches"
+   ],
+   "title": "Heritage 2.0 + Festive Plaid",
+   "mat": "Festive Plaid Mat",
+   "brand": "Sunday Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/sunday-festive-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/heritage-2-0-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "new_file": "assets/cards/holiday/heritage-2-0-mahjong-tiles-luxe-mahjong-the-polo-club-mat-hd.jpg",
+   "pages": [
+    "/heritage-2-0-mahjong-tile-matches"
+   ],
+   "title": "Heritage 2.0 + The Polo Club",
+   "mat": "The Polo Club Mat",
+   "brand": "Luxe Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/luxe-polo-club.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/hummingbird-mahjong-tiles-sunday-mahjong-festive-plaid-mat.jpg",
+   "new_file": "assets/cards/holiday/hummingbird-mahjong-tiles-sunday-mahjong-festive-plaid-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Hummingbird + Festive Plaid",
+   "mat": "Festive Plaid Mat",
+   "brand": "Sunday Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/sunday-festive-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/hummingbird-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "new_file": "assets/cards/holiday/hummingbird-mahjong-tiles-luxe-mahjong-the-polo-club-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Hummingbird + The Polo Club",
+   "mat": "The Polo Club Mat",
+   "brand": "Luxe Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/luxe-polo-club.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/jade-mahjong-tiles-anders-ruff-classic-very-merry-mahj-mat.jpg",
+   "new_file": "assets/cards/holiday/jade-mahjong-tiles-anders-ruff-classic-very-merry-mahj-mat-hd.jpg",
+   "pages": [
+    "/jade-mahjong-tile-matches"
+   ],
+   "title": "Jade + Classic Very Merry Mahj",
+   "mat": "Classic Very Merry Mahj Mat",
+   "brand": "Anders Ruff",
+   "new_mat_photo": "assets/mats/holiday/hd/ar-classic-very-merry-mahj.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/jade-mahjong-tiles-sunday-mahjong-festive-plaid-mat.jpg",
+   "new_file": "assets/cards/holiday/jade-mahjong-tiles-sunday-mahjong-festive-plaid-mat-hd.jpg",
+   "pages": [
+    "/jade-mahjong-tile-matches"
+   ],
+   "title": "Jade + Festive Plaid",
+   "mat": "Festive Plaid Mat",
+   "brand": "Sunday Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/sunday-festive-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/jade-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "new_file": "assets/cards/holiday/jade-mahjong-tiles-luxe-mahjong-the-polo-club-mat-hd.jpg",
+   "pages": [
+    "/jade-mahjong-tile-matches"
+   ],
+   "title": "Jade + The Polo Club",
+   "mat": "The Polo Club Mat",
+   "brand": "Luxe Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/luxe-polo-club.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/jasmine-mahjong-tiles-anders-ruff-classic-very-merry-mahj-mat.jpg",
+   "new_file": "assets/cards/holiday/jasmine-mahjong-tiles-anders-ruff-classic-very-merry-mahj-mat-hd.jpg",
+   "pages": [
+    "/jasmine-mahjong-tile-matches"
+   ],
+   "title": "Jasmine + Classic Very Merry Mahj",
+   "mat": "Classic Very Merry Mahj Mat",
+   "brand": "Anders Ruff",
+   "new_mat_photo": "assets/mats/holiday/hd/ar-classic-very-merry-mahj.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/la-fete-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "new_file": "assets/cards/holiday/la-fete-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat-hd.jpg",
+   "pages": [
+    "/la-fete-mahjong-tile-matches"
+   ],
+   "title": "La Fete + Peace Love Holiday",
+   "mat": "Holiday Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-holiday-sugarplum-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/lola-mahjong-tiles-peace-love-mahjong-hanukkah-mat.jpg",
+   "new_file": "assets/cards/holiday/lola-mahjong-tiles-peace-love-mahjong-hanukkah-mat-hd.jpg",
+   "pages": [
+    "/lola-mahjong-tile-matches"
+   ],
+   "title": "Lola + Hanukkah",
+   "mat": "Hanukkah Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-hanukkah.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/lola-mahjong-tiles-charleston-mahjong-club-ski-club-periwinkle-mat.jpg",
+   "new_file": "assets/cards/holiday/lola-mahjong-tiles-charleston-mahjong-club-ski-club-periwinkle-mat-hd.jpg",
+   "pages": [
+    "/lola-mahjong-tile-matches"
+   ],
+   "title": "Lola + Ski Club Periwinkle",
+   "mat": "Ski Club Mat (Periwinkle Center)",
+   "brand": "Charleston Mahjong Club",
+   "new_mat_photo": "assets/mats/holiday/hd/cmc-ski-club-periwinkle.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/malachite-mahjong-tiles-anders-ruff-classic-very-merry-mahj-mat.jpg",
+   "new_file": "assets/cards/holiday/malachite-mahjong-tiles-anders-ruff-classic-very-merry-mahj-mat-hd.jpg",
+   "pages": [
+    "/malachite-mahjong-tile-matches"
+   ],
+   "title": "Malachite + Classic Very Merry Mahj",
+   "mat": "Classic Very Merry Mahj Mat",
+   "brand": "Anders Ruff",
+   "new_mat_photo": "assets/mats/holiday/hd/ar-classic-very-merry-mahj.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/malachite-mahjong-tiles-sunday-mahjong-festive-plaid-mat.jpg",
+   "new_file": "assets/cards/holiday/malachite-mahjong-tiles-sunday-mahjong-festive-plaid-mat-hd.jpg",
+   "pages": [
+    "/malachite-mahjong-tile-matches"
+   ],
+   "title": "Malachite + Festive Plaid",
+   "mat": "Festive Plaid Mat",
+   "brand": "Sunday Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/sunday-festive-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/malachite-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "new_file": "assets/cards/holiday/malachite-mahjong-tiles-luxe-mahjong-the-polo-club-mat-hd.jpg",
+   "pages": [
+    "/malachite-mahjong-tile-matches"
+   ],
+   "title": "Malachite + The Polo Club",
+   "mat": "The Polo Club Mat",
+   "brand": "Luxe Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/luxe-polo-club.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/moonlight-mahjong-tiles-peace-love-mahjong-hanukkah-mat.jpg",
+   "new_file": "assets/cards/holiday/moonlight-mahjong-tiles-peace-love-mahjong-hanukkah-mat-hd.jpg",
+   "pages": [
+    "/moonlight-mahjong-tile-matches"
+   ],
+   "title": "Moonlight + Hanukkah",
+   "mat": "Hanukkah Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-hanukkah.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/moonlight-mahjong-tiles-charleston-mahjong-club-ski-club-periwinkle-mat.jpg",
+   "new_file": "assets/cards/holiday/moonlight-mahjong-tiles-charleston-mahjong-club-ski-club-periwinkle-mat-hd.jpg",
+   "pages": [
+    "/moonlight-mahjong-tile-matches"
+   ],
+   "title": "Moonlight + Ski Club Periwinkle",
+   "mat": "Ski Club Mat (Periwinkle Center)",
+   "brand": "Charleston Mahjong Club",
+   "new_mat_photo": "assets/mats/holiday/hd/cmc-ski-club-periwinkle.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/nantucket-mahjong-tiles-anders-ruff-classic-very-merry-mahj-mat.jpg",
+   "new_file": "assets/cards/holiday/nantucket-mahjong-tiles-anders-ruff-classic-very-merry-mahj-mat-hd.jpg",
+   "pages": [
+    "/nantucket-mahjong-tile-matches"
+   ],
+   "title": "Nantucket + Classic Very Merry Mahj",
+   "mat": "Classic Very Merry Mahj Mat",
+   "brand": "Anders Ruff",
+   "new_mat_photo": "assets/mats/holiday/hd/ar-classic-very-merry-mahj.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/nantucket-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "new_file": "assets/cards/holiday/nantucket-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat-hd.jpg",
+   "pages": [
+    "/nantucket-mahjong-tile-matches"
+   ],
+   "title": "Nantucket + Peace Love Holiday",
+   "mat": "Holiday Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-holiday-sugarplum-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/nantucket-mahjong-tiles-sunday-mahjong-festive-plaid-mat.jpg",
+   "new_file": "assets/cards/holiday/nantucket-mahjong-tiles-sunday-mahjong-festive-plaid-mat-hd.jpg",
+   "pages": [
+    "/nantucket-mahjong-tile-matches"
+   ],
+   "title": "Nantucket + Festive Plaid",
+   "mat": "Festive Plaid Mat",
+   "brand": "Sunday Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/sunday-festive-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/nantucket-mahjong-tiles-charleston-mahjong-club-ski-club-red-sweater-mat.jpg",
+   "new_file": "assets/cards/holiday/nantucket-mahjong-tiles-charleston-mahjong-club-ski-club-red-sweater-mat-hd.jpg",
+   "pages": [
+    "/nantucket-mahjong-tile-matches"
+   ],
+   "title": "Nantucket + Ski Club Red Sweater",
+   "mat": "Ski Club Mat (Red Sweater Border)",
+   "brand": "Charleston Mahjong Club",
+   "new_mat_photo": "assets/mats/holiday/hd/cmc-ski-club-red-sweater.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/nantucket-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "new_file": "assets/cards/holiday/nantucket-mahjong-tiles-luxe-mahjong-the-polo-club-mat-hd.jpg",
+   "pages": [
+    "/nantucket-mahjong-tile-matches"
+   ],
+   "title": "Nantucket + The Polo Club",
+   "mat": "The Polo Club Mat",
+   "brand": "Luxe Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/luxe-polo-club.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/nature-walk-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "new_file": "assets/cards/holiday/nature-walk-mahjong-tiles-luxe-mahjong-the-polo-club-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Nature Walk + The Polo Club",
+   "mat": "The Polo Club Mat",
+   "brand": "Luxe Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/luxe-polo-club.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/osler-mahjong-tiles-peace-love-mahjong-hanukkah-mat.jpg",
+   "new_file": "assets/cards/holiday/osler-mahjong-tiles-peace-love-mahjong-hanukkah-mat-hd.jpg",
+   "pages": [
+    "/osler-mahjong-tile-matches"
+   ],
+   "title": "Osler + Hanukkah",
+   "mat": "Hanukkah Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-hanukkah.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/osler-mahjong-tiles-charleston-mahjong-club-ski-club-periwinkle-mat.jpg",
+   "new_file": "assets/cards/holiday/osler-mahjong-tiles-charleston-mahjong-club-ski-club-periwinkle-mat-hd.jpg",
+   "pages": [
+    "/osler-mahjong-tile-matches"
+   ],
+   "title": "Osler + Ski Club Periwinkle",
+   "mat": "Ski Club Mat (Periwinkle Center)",
+   "brand": "Charleston Mahjong Club",
+   "new_mat_photo": "assets/mats/holiday/hd/cmc-ski-club-periwinkle.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/pearlescent-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "new_file": "assets/cards/holiday/pearlescent-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat-hd.jpg",
+   "pages": [
+    "/pearlescent-mahjong-tile-matches"
+   ],
+   "title": "Pearlescent + Peace Love Holiday",
+   "mat": "Holiday Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-holiday-sugarplum-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/seabreeze-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "new_file": "assets/cards/holiday/seabreeze-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat-hd.jpg",
+   "pages": [
+    "/seabreeze-mahjong-tile-matches"
+   ],
+   "title": "Seabreeze + Peace Love Holiday",
+   "mat": "Holiday Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-holiday-sugarplum-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/sierra-mahjong-tiles-sunday-mahjong-festive-plaid-mat.jpg",
+   "new_file": "assets/cards/holiday/sierra-mahjong-tiles-sunday-mahjong-festive-plaid-mat-hd.jpg",
+   "pages": [
+    "/sierra-mahjong-tile-matches"
+   ],
+   "title": "Sierra + Festive Plaid",
+   "mat": "Festive Plaid Mat",
+   "brand": "Sunday Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/sunday-festive-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/smith-mahjong-tiles-peace-love-mahjong-hanukkah-mat.jpg",
+   "new_file": "assets/cards/holiday/smith-mahjong-tiles-peace-love-mahjong-hanukkah-mat-hd.jpg",
+   "pages": [
+    "/smith-mahjong-tile-matches"
+   ],
+   "title": "Smith + Hanukkah",
+   "mat": "Hanukkah Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-hanukkah.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/sorbet-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "new_file": "assets/cards/holiday/sorbet-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat-hd.jpg",
+   "pages": [
+    "/sorbet-mahjong-tile-matches"
+   ],
+   "title": "Sorbet + Peace Love Holiday",
+   "mat": "Holiday Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-holiday-sugarplum-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/sunday-blues-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "new_file": "assets/cards/holiday/sunday-blues-mahjong-tiles-luxe-mahjong-the-polo-club-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Sunday Blues + The Polo Club",
+   "mat": "The Polo Club Mat",
+   "brand": "Luxe Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/luxe-polo-club.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/sunday-mahjong-tiles-sunday-mahjong-festive-plaid-mat.jpg",
+   "new_file": "assets/cards/holiday/sunday-mahjong-tiles-sunday-mahjong-festive-plaid-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Sunday Tile Set + Festive Plaid",
+   "mat": "Festive Plaid Mat",
+   "brand": "Sunday Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/sunday-festive-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/sunday-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "new_file": "assets/cards/holiday/sunday-mahjong-tiles-luxe-mahjong-the-polo-club-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Sunday Tile Set + The Polo Club",
+   "mat": "The Polo Club Mat",
+   "brand": "Luxe Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/luxe-polo-club.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/cmc-apres-ski-mahjong-tiles-charleston-mahjong-club-ski-club-red-sweater-mat.jpg",
+   "new_file": "assets/cards/holiday/cmc-apres-ski-mahjong-tiles-charleston-mahjong-club-ski-club-red-sweater-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Apr\u00e8s Ski Club + Ski Club Red Sweater",
+   "mat": "Ski Club Mat (Red Sweater Border)",
+   "brand": "Charleston Mahjong Club",
+   "new_mat_photo": "assets/mats/holiday/hd/cmc-ski-club-red-sweater.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/cmc-apres-ski-mahjong-tiles-charleston-mahjong-club-ski-club-periwinkle-mat.jpg",
+   "new_file": "assets/cards/holiday/cmc-apres-ski-mahjong-tiles-charleston-mahjong-club-ski-club-periwinkle-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Apr\u00e8s Ski Club + Ski Club Periwinkle",
+   "mat": "Ski Club Mat (Periwinkle Center)",
+   "brand": "Charleston Mahjong Club",
+   "new_mat_photo": "assets/mats/holiday/hd/cmc-ski-club-periwinkle.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/cmc-apres-ski-mahjong-tiles-maison-mahj-the-chalet-mat.jpg",
+   "new_file": "assets/cards/holiday/cmc-apres-ski-mahjong-tiles-maison-mahj-the-chalet-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Apr\u00e8s Ski Club + The Chalet",
+   "mat": "The Chalet Mat",
+   "brand": "Maison Mahj",
+   "new_mat_photo": "assets/mats/holiday/hd/maison-chalet.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/cmc-apres-ski-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "new_file": "assets/cards/holiday/cmc-apres-ski-mahjong-tiles-luxe-mahjong-the-polo-club-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Apr\u00e8s Ski Club + The Polo Club",
+   "mat": "The Polo Club Mat",
+   "brand": "Luxe Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/luxe-polo-club.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/dear-santa-mahjong-tiles-anders-ruff-classic-very-merry-mahj-mat.jpg",
+   "new_file": "assets/cards/holiday/dear-santa-mahjong-tiles-anders-ruff-classic-very-merry-mahj-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Dear Santa + Classic Very Merry Mahj",
+   "mat": "Classic Very Merry Mahj Mat",
+   "brand": "Anders Ruff",
+   "new_mat_photo": "assets/mats/holiday/hd/ar-classic-very-merry-mahj.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/dear-santa-mahjong-tiles-sunday-mahjong-festive-plaid-mat.jpg",
+   "new_file": "assets/cards/holiday/dear-santa-mahjong-tiles-sunday-mahjong-festive-plaid-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Dear Santa + Festive Plaid",
+   "mat": "Festive Plaid Mat",
+   "brand": "Sunday Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/sunday-festive-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/dear-santa-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "new_file": "assets/cards/holiday/dear-santa-mahjong-tiles-luxe-mahjong-the-polo-club-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Dear Santa + The Polo Club",
+   "mat": "The Polo Club Mat",
+   "brand": "Luxe Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/luxe-polo-club.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/december-1994-mahjong-tiles-sunday-mahjong-festive-plaid-mat.jpg",
+   "new_file": "assets/cards/holiday/december-1994-mahjong-tiles-sunday-mahjong-festive-plaid-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "December 1994 + Festive Plaid",
+   "mat": "Festive Plaid Mat",
+   "brand": "Sunday Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/sunday-festive-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/december-1994-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "new_file": "assets/cards/holiday/december-1994-mahjong-tiles-luxe-mahjong-the-polo-club-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "December 1994 + The Polo Club",
+   "mat": "The Polo Club Mat",
+   "brand": "Luxe Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/luxe-polo-club.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/holly-jolly-red-mahjong-tiles-anders-ruff-classic-very-merry-mahj-mat.jpg",
+   "new_file": "assets/cards/holiday/holly-jolly-red-mahjong-tiles-anders-ruff-classic-very-merry-mahj-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Holly Jolly + Classic Very Merry Mahj",
+   "mat": "Classic Very Merry Mahj Mat",
+   "brand": "Anders Ruff",
+   "new_mat_photo": "assets/mats/holiday/hd/ar-classic-very-merry-mahj.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/holly-jolly-red-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "new_file": "assets/cards/holiday/holly-jolly-red-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Holly Jolly + Peace Love Holiday",
+   "mat": "Holiday Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-holiday-sugarplum-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/holly-jolly-pink-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "new_file": "assets/cards/holiday/holly-jolly-pink-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Holly Jolly + Peace Love Holiday",
+   "mat": "Holiday Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-holiday-sugarplum-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/nivalee-blue-mahjong-tiles-charleston-mahjong-club-ski-club-red-sweater-mat.jpg",
+   "new_file": "assets/cards/holiday/nivalee-blue-mahjong-tiles-charleston-mahjong-club-ski-club-red-sweater-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Nivalee + Ski Club Red Sweater",
+   "mat": "Ski Club Mat (Red Sweater Border)",
+   "brand": "Charleston Mahjong Club",
+   "new_mat_photo": "assets/mats/holiday/hd/cmc-ski-club-red-sweater.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/nivalee-blue-mahjong-tiles-charleston-mahjong-club-ski-club-periwinkle-mat.jpg",
+   "new_file": "assets/cards/holiday/nivalee-blue-mahjong-tiles-charleston-mahjong-club-ski-club-periwinkle-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Nivalee + Ski Club Periwinkle",
+   "mat": "Ski Club Mat (Periwinkle Center)",
+   "brand": "Charleston Mahjong Club",
+   "new_mat_photo": "assets/mats/holiday/hd/cmc-ski-club-periwinkle.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/nutcracker-ballet-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "new_file": "assets/cards/holiday/nutcracker-ballet-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Nutcracker Ballet + Peace Love Holiday",
+   "mat": "Holiday Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-holiday-sugarplum-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/rackin-rudolph-mahjong-tiles-anders-ruff-classic-very-merry-mahj-mat.jpg",
+   "new_file": "assets/cards/holiday/rackin-rudolph-mahjong-tiles-anders-ruff-classic-very-merry-mahj-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Rackin' Rudolph + Classic Very Merry Mahj",
+   "mat": "Classic Very Merry Mahj Mat",
+   "brand": "Anders Ruff",
+   "new_mat_photo": "assets/mats/holiday/hd/ar-classic-very-merry-mahj.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/rackin-rudolph-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "new_file": "assets/cards/holiday/rackin-rudolph-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Rackin' Rudolph + Peace Love Holiday",
+   "mat": "Holiday Mat",
+   "brand": "Peace Love Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/plm-holiday-sugarplum-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/rackin-rudolph-mahjong-tiles-sunday-mahjong-festive-plaid-mat.jpg",
+   "new_file": "assets/cards/holiday/rackin-rudolph-mahjong-tiles-sunday-mahjong-festive-plaid-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Rackin' Rudolph + Festive Plaid",
+   "mat": "Festive Plaid Mat",
+   "brand": "Sunday Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/sunday-festive-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/rackin-rudolph-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "new_file": "assets/cards/holiday/rackin-rudolph-mahjong-tiles-luxe-mahjong-the-polo-club-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Rackin' Rudolph + The Polo Club",
+   "mat": "The Polo Club Mat",
+   "brand": "Luxe Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/luxe-polo-club.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/tinselle-emerald-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "new_file": "assets/cards/holiday/tinselle-emerald-mahjong-tiles-luxe-mahjong-the-polo-club-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Tinselle + The Polo Club",
+   "mat": "The Polo Club Mat",
+   "brand": "Luxe Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/luxe-polo-club.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/tinselle-ruby-mahjong-tiles-sunday-mahjong-festive-plaid-mat.jpg",
+   "new_file": "assets/cards/holiday/tinselle-ruby-mahjong-tiles-sunday-mahjong-festive-plaid-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches",
+    "/red-mahjong-tile-matches"
+   ],
+   "title": "Tinselle + Festive Plaid",
+   "mat": "Festive Plaid Mat",
+   "brand": "Sunday Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/sunday-festive-plaid.jpg"
+  },
+  {
+   "old_url": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@205158c5c487111325f734570199da7eced6637a/assets/cards/holiday/tinselle-ruby-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "new_file": "assets/cards/holiday/tinselle-ruby-mahjong-tiles-luxe-mahjong-the-polo-club-mat-hd.jpg",
+   "pages": [
+    "/holiday-mahjong-matches"
+   ],
+   "title": "Tinselle + The Polo Club",
+   "mat": "The Polo Club Mat",
+   "brand": "Luxe Mahjong",
+   "new_mat_photo": "assets/mats/holiday/hd/luxe-polo-club.jpg"
+  }
+ ]
+}
