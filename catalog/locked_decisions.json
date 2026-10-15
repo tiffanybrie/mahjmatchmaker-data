@@ -231,7 +231,8 @@
  },
  "myfairmahjong.com/mini-mahjong-mats": {
   "status": "hidden",
-  "reason": "duplicate/base or rejected photo"
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "brand": "My Fair Mahjong"
  },
  "myfairmahjong.com/standard-mahjong-mats": {
   "status": "hidden",
@@ -271,7 +272,8 @@
  },
  "peacelovemahjong.com/mile-high-mahj-club-travel-mats": {
   "status": "hidden",
-  "reason": "duplicate/base or rejected photo"
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "brand": "Peace Love Mahjong"
  },
  "shop.andersruff.com/the-mat-caddy": {
   "status": "hidden",
@@ -331,15 +333,16 @@
  },
  "www.bambirdboutique.com/travel-neoprene-mat": {
   "status": "hidden",
-  "reason": "duplicate/base or rejected photo"
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "brand": "Bam Bird Boutique"
  },
  "www.bambirdboutique.com/east-meets-west-neoprene-mat": {
   "status": "hidden",
   "reason": "duplicate/base or rejected photo"
  },
  "www.bespokemahjong.com/odd-lots-less-than-perfect-grateful-dead-xl-mega-tiles-cosmic-white-in-tile-bag-loose-no-box-copy": {
-  "status": "needs-photo",
-  "reason": "no isolated mat photo on product page",
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
   "name": "ODD LOTS LESS THAN PERFECT - GRATEFUL DEAD TRAVEL SIZE DOUBLE SIDED MAT 23.6\" x 23.6\"",
   "brand": "Bespoke Mahjong"
  },
@@ -373,7 +376,9 @@
  },
  "www.letsmahj-on.com/let-s-mahj-on-floating-pool-mahjong-mat": {
   "status": "hidden",
-  "reason": "duplicate/base or rejected photo"
+  "reason": "pool item: Tiffany said no to pool mats (Oct 15)",
+  "name": "LMO! Floating Pool Mahjong Mat",
+  "brand": "Let's Mahj On"
  },
  "www.letsmahj-on.com/lmo-floral-border-mat": {
   "status": "hidden",
@@ -389,19 +394,19 @@
  },
  "www.middleandmainmahjong.com/grandmother-kathryn-vintage-quilt-mat-copy": {
   "status": "needs-photo",
-  "reason": "no isolated mat photo on product page",
+  "reason": "Tiffany said YES Oct 15; every product photo is a patio-table lifestyle shot (tiles, umbrella pole, chairs, script name overlay); add when she sends a cutout",
   "name": "Grandmother \"Betty\" Vintage Quilt Mat",
   "brand": "Middle & Main Mahjong"
  },
  "www.middleandmainmahjong.com/grandmother-martha-vintage-quilt-mat": {
   "status": "needs-photo",
-  "reason": "no isolated mat photo on product page",
+  "reason": "Tiffany said YES Oct 15; every product photo is a patio-table lifestyle shot (tiles, umbrella pole, chairs, script name overlay); add when she sends a cutout",
   "name": "Grandmother \"Martha\" Vintage Quilt Mat",
   "brand": "Middle & Main Mahjong"
  },
  "www.middleandmainmahjong.com/grandmother-kathryn-vintage-quilt-mat": {
   "status": "needs-photo",
-  "reason": "no isolated mat photo on product page",
+  "reason": "Tiffany said YES Oct 15; every product photo is a patio-table lifestyle shot (tiles, umbrella pole, chairs, script name overlay); add when she sends a cutout",
   "name": "Grandmother \"Kathryn\" Vintage Quilt Mat",
   "brand": "Middle & Main Mahjong"
  },
@@ -411,11 +416,15 @@
  },
  "www.ohmymahjong.com/green-aqua-jong-pool-mat": {
   "status": "hidden",
-  "reason": "duplicate/base or rejected photo"
+  "reason": "pool item: Tiffany said no to pool mats (Oct 15)",
+  "name": "Green Aqua Jong Pool Mat",
+  "brand": "Oh My Mahjong"
  },
  "www.ohmymahjong.com/pink-aqua-jong-mat": {
   "status": "hidden",
-  "reason": "duplicate/base or rejected photo"
+  "reason": "pool item: Tiffany said no to pool mats (Oct 15)",
+  "name": "Pink Aqua Jong Pool Mat",
+  "brand": "Oh My Mahjong"
  },
  "alb:amara:Club Mat": {
   "status": "needs-photo",
@@ -1930,16 +1939,22 @@
   "reason": "photo hand-checked Oct 14"
  },
  "birdandbamboo.com/the-neutre-blanc-mahjong-travel-mat": {
-  "status": "photo-locked",
-  "reason": "photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "The Neutre Blanc Mahjong Travel Mat",
+  "brand": "Bird & Bamboo"
  },
  "birdandbamboo.com/the-paradise-mahjong-travel-mat-passion-pink": {
-  "status": "photo-locked",
-  "reason": "photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "The Paradise Mahjong Travel Mat - Passion Pink",
+  "brand": "Bird & Bamboo"
  },
  "birdandbamboo.com/the-paradise-mahjong-travel-mat-island-green": {
-  "status": "photo-locked",
-  "reason": "photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "The Paradise Mahjong Travel Mat - Island Green",
+  "brand": "Bird & Bamboo"
  },
  "birdandbamboo.com/the-tangelo-delphine-mahjong-mat": {
   "status": "photo-locked",
@@ -1970,12 +1985,16 @@
   "reason": "photo hand-checked Oct 14"
  },
  "mahjmood.com/secret-garden-travel-mat": {
-  "status": "photo-locked",
-  "reason": "photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Secret Garden Travel Mat",
+  "brand": "Mahj Mood"
  },
  "mahjmood.com/color-splash-travel-mat": {
-  "status": "photo-locked",
-  "reason": "photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Color Splash Travel Mat",
+  "brand": "Mahj Mood"
  },
  "mahjmood.com/spring-fling-mat": {
   "status": "photo-locked",
@@ -2322,24 +2341,34 @@
   "reason": "color variant, photo hand-checked Oct 14"
  },
  "myfairmahjong.com/mini-mahjong-mats?v=49809796202807": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mini Color Wave \u2013 Cobalt Center- Light Blue Scallop",
+  "brand": "My Fair Mahjong"
  },
  "myfairmahjong.com/mini-mahjong-mats?v=48312757518647": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mini Color Wave \u2013 Green Center- Pink Scallop",
+  "brand": "My Fair Mahjong"
  },
  "myfairmahjong.com/mini-mahjong-mats?v=48312757616951": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mini Color Wave \u2013 Blue Center- Green Scallop",
+  "brand": "My Fair Mahjong"
  },
  "myfairmahjong.com/mini-mahjong-mats?v=48984013537591": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mini Color Wave \u2013 Pink Center- Blue Scallop",
+  "brand": "My Fair Mahjong"
  },
  "myfairmahjong.com/mini-mahjong-mats?v=48984013570359": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mini Color Wave \u2013 Orange Center- Pink Scallop",
+  "brand": "My Fair Mahjong"
  },
  "myfairmahjong.com/standard-mahjong-mats?v=49809801937207": {
   "status": "photo-locked",
@@ -2598,36 +2627,52 @@
   "reason": "color variant, photo hand-checked Oct 14"
  },
  "peacelovemahjong.com/mile-high-mahj-club-travel-mats?v=50875812806948": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mile High Travel \u2013 Pink with Aqua/Chartreuse",
+  "brand": "Peace Love Mahjong"
  },
  "peacelovemahjong.com/mile-high-mahj-club-travel-mats?v=50875812839716": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mile High Travel \u2013 Dark Pink with Aqua/Light Pink/Purple",
+  "brand": "Peace Love Mahjong"
  },
  "peacelovemahjong.com/mile-high-mahj-club-travel-mats?v=50875812872484": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mile High Travel \u2013 Purple",
+  "brand": "Peace Love Mahjong"
  },
  "peacelovemahjong.com/mile-high-mahj-club-travel-mats?v=50875812905252": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mile High Travel \u2013 Chartreuse",
+  "brand": "Peace Love Mahjong"
  },
  "peacelovemahjong.com/mile-high-mahj-club-travel-mats?v=50875812938020": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mile High Travel \u2013 Aqua",
+  "brand": "Peace Love Mahjong"
  },
  "peacelovemahjong.com/mile-high-mahj-club-travel-mats?v=50875812970788": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mile High Travel \u2013 French Blue",
+  "brand": "Peace Love Mahjong"
  },
  "peacelovemahjong.com/mile-high-mahj-club-travel-mats?v=50875813036324": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mile High Travel \u2013 Light Pink with Chartreuse",
+  "brand": "Peace Love Mahjong"
  },
  "peacelovemahjong.com/mile-high-mahj-club-travel-mats?v=55365535105316": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mile High Travel \u2013 Dark Green",
+  "brand": "Peace Love Mahjong"
  },
  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy?v=53324522881333": {
   "status": "photo-locked",
@@ -2650,32 +2695,50 @@
   "reason": "color variant, photo hand-checked Oct 14"
  },
  "www.bambirdboutique.com/neoprene-umbrella-mahjong-mat?v=51245106266421": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "duplicate design: noted on original",
+  "name": "Neoprene Umbrella \u2013 Sky blue",
+  "brand": "Bam Bird Boutique",
+  "noted_on": "www.bambirdboutique.com/east-meets-west-neoprene-mat?v=49857170669877"
  },
  "www.bambirdboutique.com/neoprene-umbrella-mahjong-mat?v=51360623591733": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "duplicate design: noted on original",
+  "name": "Neoprene Umbrella \u2013 Purple",
+  "brand": "Bam Bird Boutique",
+  "noted_on": "www.bambirdboutique.com/east-meets-west-neoprene-mat?v=49857170702645"
  },
  "www.bambirdboutique.com/neoprene-umbrella-mahjong-mat?v=67630679916853": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "duplicate design: noted on original",
+  "name": "Neoprene Umbrella \u2013 Olive Green/Dusty Lilac accents",
+  "brand": "Bam Bird Boutique",
+  "noted_on": "www.bambirdboutique.com/bandana-neoprene-mahjong-mat?v=53345465172277"
  },
  "www.bambirdboutique.com/neoprene-umbrella-mahjong-mat?v=67630708490549": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "duplicate design: noted on original",
+  "name": "Neoprene Umbrella \u2013 Blue/Pink accents",
+  "brand": "Bam Bird Boutique",
+  "noted_on": "www.bambirdboutique.com/bandana-neoprene-mahjong-mat?v=53345465205045"
  },
  "www.bambirdboutique.com/travel-neoprene-mat?v=50912199147829": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Travel \u2013 Purple",
+  "brand": "Bam Bird Boutique"
  },
  "www.bambirdboutique.com/travel-neoprene-mat?v=50912199180597": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Travel \u2013 Sky blue",
+  "brand": "Bam Bird Boutique"
  },
  "www.bambirdboutique.com/travel-neoprene-mat?v=53279207653685": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Travel \u2013 Midnight Gray",
+  "brand": "Bam Bird Boutique"
  },
  "www.bambirdboutique.com/east-meets-west-neoprene-mat?v=49857170669877": {
   "status": "photo-locked",
@@ -2730,24 +2793,34 @@
   "reason": "color variant, photo hand-checked Oct 14"
  },
  "www.letsmahj-on.com/let-s-mahj-on-floating-pool-mahjong-mat?v=42905473777769": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "pool mat: Tiffany said no to pool mats (Oct 15)",
+  "name": "LMO! Floating Pool \u2013 Light Pink",
+  "brand": "Let's Mahj On"
  },
  "www.letsmahj-on.com/let-s-mahj-on-floating-pool-mahjong-mat?v=42905473810537": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "pool mat: Tiffany said no to pool mats (Oct 15)",
+  "name": "LMO! Floating Pool \u2013 Bright Blue",
+  "brand": "Let's Mahj On"
  },
  "www.letsmahj-on.com/let-s-mahj-on-floating-pool-mahjong-mat?v=43206778847337": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "pool mat: Tiffany said no to pool mats (Oct 15)",
+  "name": "LMO! Floating Pool \u2013 Turquoise",
+  "brand": "Let's Mahj On"
  },
  "www.letsmahj-on.com/let-s-mahj-on-floating-pool-mahjong-mat?v=43206786711657": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "pool mat: Tiffany said no to pool mats (Oct 15)",
+  "name": "LMO! Floating Pool \u2013 Bright Pink",
+  "brand": "Let's Mahj On"
  },
  "www.letsmahj-on.com/let-s-mahj-on-floating-pool-mahjong-mat?v=43206788644969": {
-  "status": "photo-locked",
-  "reason": "color variant, photo hand-checked Oct 14"
+  "status": "hidden",
+  "reason": "pool mat: Tiffany said no to pool mats (Oct 15)",
+  "name": "LMO! Floating Pool \u2013 Purple",
+  "brand": "Let's Mahj On"
  },
  "www.letsmahj-on.com/lmo-floral-border-mat?v=42705467342953": {
   "status": "photo-locked",
@@ -3537,20 +3610,28 @@
   "reason": "added Oct 14 all-brands harvest, photo hand-checked"
  },
  "modmahj.com/mod-mahj-mini-mat-in-watermelon": {
-  "status": "photo-locked",
-  "reason": "added Oct 14 all-brands harvest, photo hand-checked"
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mod Mahj Mini",
+  "brand": "Mod Mahj"
  },
  "brittmillsdesign.com/revelry-neoprene-mahjong-mat": {
   "status": "photo-locked",
   "reason": "added Oct 14 all-brands harvest, photo hand-checked"
  },
  "brittmillsdesign.com/novella-leatherette-mahjong-mat": {
-  "status": "photo-locked",
-  "reason": "added Oct 14 all-brands harvest, photo hand-checked"
+  "status": "hidden",
+  "reason": "duplicate design: noted on original",
+  "name": "Novella Leatherette",
+  "brand": "Britt Mills",
+  "noted_on": "brittmillsdesign.com/novella-neoprene-mahjong-mat-arriving-late-november"
  },
  "brittmillsdesign.com/enchanted-leatherette-mahjong-mat": {
-  "status": "photo-locked",
-  "reason": "added Oct 14 all-brands harvest, photo hand-checked"
+  "status": "hidden",
+  "reason": "duplicate design: noted on original",
+  "name": "Enchanted Leatherette",
+  "brand": "Britt Mills",
+  "noted_on": "brittmillsdesign.com/enchanted-neoprene-mahjong-mat-arriving-late-november"
  },
  "brittmillsdesign.com/novella-neoprene-mahjong-mat-arriving-late-november": {
   "status": "photo-locked",
@@ -3569,8 +3650,11 @@
   "reason": "added Oct 14 all-brands harvest, photo hand-checked"
  },
  "brittmillsdesign.com/revelry-leatherette-mahjong-mat": {
-  "status": "photo-locked",
-  "reason": "added Oct 14 all-brands harvest, photo hand-checked"
+  "status": "hidden",
+  "reason": "duplicate design: noted on original",
+  "name": "Revelry Leatherette",
+  "brand": "Britt Mills",
+  "noted_on": "brittmillsdesign.com/revelry-neoprene-mahjong-mat"
  },
  "brittmillsdesign.com/soiree-leatherette-mahjong-mat": {
   "status": "photo-locked",
@@ -3713,44 +3797,44 @@
   "reason": "not a mat (art print / pet or bath mat)"
  },
  "theroyalmahjongsociety.com/travel-size-mahj-royale-mahjong-mat": {
-  "status": "needs-photo",
-  "reason": "no isolated mat photo (lifestyle, tiles/racks on mat, stacks or text overlay)",
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
   "name": "Travel Size Mahj Royale Mahjong Mat",
   "brand": "Royal Mahjong Society"
  },
  "theroyalmahjongsociety.com/travel-size-crown-jewels-mahjong-mat": {
-  "status": "needs-photo",
-  "reason": "no isolated mat photo (lifestyle, tiles/racks on mat, stacks or text overlay)",
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
   "name": "Travel Size Crown Jewels Mahjong Mat",
   "brand": "Royal Mahjong Society"
  },
  "theroyalmahjongsociety.com/travel-size-shore-mahjong-mat": {
-  "status": "needs-photo",
-  "reason": "no isolated mat photo (lifestyle, tiles/racks on mat, stacks or text overlay)",
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
   "name": "Travel Size Shore Mahjong Mat",
   "brand": "Royal Mahjong Society"
  },
  "theroyalmahjongsociety.com/travel-size-cottage-mahjong-mat": {
-  "status": "needs-photo",
-  "reason": "no isolated mat photo (lifestyle, tiles/racks on mat, stacks or text overlay)",
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
   "name": "Travel Size Cottage Mahjong Mat",
   "brand": "Royal Mahjong Society"
  },
  "theroyalmahjongsociety.com/travel-size-girly-mahjong-mat": {
-  "status": "needs-photo",
-  "reason": "no isolated mat photo (lifestyle, tiles/racks on mat, stacks or text overlay)",
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
   "name": "Travel Size Girly Mahjong Mat",
   "brand": "Royal Mahjong Society"
  },
  "theroyalmahjongsociety.com/travel-size-island-mahjong-mat": {
-  "status": "needs-photo",
-  "reason": "no isolated mat photo (lifestyle, tiles/racks on mat, stacks or text overlay)",
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
   "name": "Travel Size Island Mahjong Mat",
   "brand": "Royal Mahjong Society"
  },
  "theroyalmahjongsociety.com/travel-size-newport-mahjong-mat": {
-  "status": "needs-photo",
-  "reason": "no isolated mat photo (lifestyle, tiles/racks on mat, stacks or text overlay)",
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
   "name": "Travel Size Newport Mahjong Mat",
   "brand": "Royal Mahjong Society"
  },
@@ -3779,8 +3863,8 @@
   "brand": "Mahj Tile Haus"
  },
  "sundaymahjong.com/vegan-leather-mini-mahjong-mat": {
-  "status": "needs-photo",
-  "reason": "no isolated mat photo (lifestyle, tiles/racks on mat, stacks or text overlay)",
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
   "name": "Vegan Leather Mini Mahjong Mat",
   "brand": "Sunday Mahjong"
  },
@@ -4032,10 +4116,1382 @@
  },
  "www.wrenmats.com/blue-travel-mat": {
   "status": "hidden",
-  "reason": "duplicate: Blue Travel Mat is the travel size of Blue Stripe Mat (same design) (Oct 15 partner fill)"
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Blue Travel Mat",
+  "brand": "Wren Mats"
  },
  "www.bespokemahjong.com/cranes-and-clouds": {
   "status": "hidden",
   "reason": "not a mat (shop lists it as other); removed Oct 15"
+ },
+ "www.charlestonmahjongclub.com/scratch-and-dent-cabana-club-neoprene-umbrella-mat-w-carrying-bag-copy": {
+  "status": "hidden",
+  "reason": "duplicate design: noted on original",
+  "name": "Cabana Club Umbrella",
+  "brand": "Charleston Mahjong Club",
+  "noted_on": "www.charlestonmahjongclub.com/cabana-club-neoprene-mat"
+ },
+ "www.bamletsmahjong.com/garden-party-travel-mahjong-mat": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Garden Party",
+  "brand": "Bam! Let's Mahjong"
+ },
+ "amahjline.com/mini-amahj-game-mat": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Green, Pink + Blue Mini Travel Mahjong Mat",
+  "brand": "Amahj"
+ },
+ "minimahjer.com/mini-mahjer-travel-mat": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mini Mahjer Travel Mat",
+  "brand": "Mini Mahjer"
+ },
+ "splashofcolorco.com/mediterranean-olive-old-world-tuscan-mahjong-mini-mahjong-travel-mat-20-9x20-9": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mediterranean Olive Old World Tuscan Mahjong Mini Mahjong Travel Mat 20.9\"x20.9\"",
+  "brand": "Splash of Color"
+ },
+ "splashofcolorco.com/william-morris-inspired-floral-travel-mini-mahjong-mat-20-9x20-9": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "William Morris Inspired Floral Travel  Mini Mahjong Mat 20.9\"x20.9\"",
+  "brand": "Splash of Color"
+ },
+ "www.bamletsmahjong.com/grandmillennial-travel-mahjong-mat": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Grandmillennial Travel Mahjong Mat",
+  "brand": "Bam! Let's Mahjong"
+ },
+ "www.ohmymahjong.com/pink-cane-mat": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mini Pink Cane Mat",
+  "brand": "Oh My Mahjong"
+ },
+ "www.ohmymahjong.com/blue-cane-mat": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mini Blue Cane Mat",
+  "brand": "Oh My Mahjong"
+ },
+ "www.ohmymahjong.com/orange-cane-mat": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mini Orange Cane Mat",
+  "brand": "Oh My Mahjong"
+ },
+ "www.ohmymahjong.com/green-cane-mat": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mini Green Cane Mat",
+  "brand": "Oh My Mahjong"
+ },
+ "www.bambirdboutique.com/neoprene-umbrella-mahjong-mat?v=67630700593461": {
+  "status": "hidden",
+  "reason": "duplicate design: noted on original",
+  "name": "Neoprene Umbrella \u2013 Bright Abstract",
+  "brand": "Bam Bird Boutique",
+  "noted_on": "www.bambirdboutique.com/bright-abstract-neoprene-mahjong-mat"
+ },
+ "brittmillsdesign.com/legacy-leatherette-mahjong-mat": {
+  "status": "hidden",
+  "reason": "duplicate design: noted on original",
+  "name": "Legacy Leatherette Mahjong Mat",
+  "brand": "Britt Mills",
+  "noted_on": "brittmillsdesign.com/legacy-britt-mills-mahjong-mat"
+ },
+ "brittmillsdesign.com/walk-in-the-park-leatherette-mahjong-mat": {
+  "status": "hidden",
+  "reason": "duplicate design: noted on original",
+  "name": "Walk in the Park Leatherette Mahjong Mat",
+  "brand": "Britt Mills",
+  "noted_on": "brittmillsdesign.com/walk-in-the-park-britt-mills-mahjong-mat"
+ },
+ "brittmillsdesign.com/quinn-leatherette-mahjong-mat": {
+  "status": "hidden",
+  "reason": "duplicate design: noted on original",
+  "name": "Quinn Leatherette Mahjong Mat",
+  "brand": "Britt Mills",
+  "noted_on": "brittmillsdesign.com/quinn-britt-mills-mahjong-mat"
+ },
+ "brittmillsdesign.com/savannah-leatherette-mahjong-mat": {
+  "status": "hidden",
+  "reason": "duplicate design: noted on original",
+  "name": "Savannah Leatherette Mahjong Mat",
+  "brand": "Britt Mills",
+  "noted_on": "brittmillsdesign.com/savannah-neoprene-mahjong-mat"
+ },
+ "brittmillsdesign.com/winter-berry-leatherette-mahjong-mat": {
+  "status": "hidden",
+  "reason": "duplicate design: noted on original",
+  "name": "Winter Berry Leatherette Mahjong Mat",
+  "brand": "Britt Mills",
+  "noted_on": "brittmillsdesign.com/winter-berry-neoprene-mahjong-mat"
+ },
+ "brittmillsdesign.com/nutcracker-leatherette-mahjong-mat": {
+  "status": "hidden",
+  "reason": "duplicate design: noted on original",
+  "name": "Nutcracker Leatherette Mahjong Mat",
+  "brand": "Britt Mills",
+  "noted_on": "brittmillsdesign.com/nutcracker-neoprene-mahjong-mat-arriving-late-october"
+ },
+ "brittmillsdesign.com/eden-leatherette-mahjong-mat": {
+  "status": "hidden",
+  "reason": "duplicate design: noted on original",
+  "name": "Eden Leatherette Mahjong Mat",
+  "brand": "Britt Mills",
+  "noted_on": "brittmillsdesign.com/eden-neoprene-mahjong-mat"
+ },
+ "www.bambirdboutique.com/travel-racks-set-of-4-racks-and-one-pusher?v=50008806555957": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Bam Bird Boutique Fuchsia Travel",
+  "brand": "Bam Bird Boutique",
+  "kind": "rack"
+ },
+ "www.bambirdboutique.com/travel-racks-set-of-4-racks-and-one-pusher": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "brand": "Bam Bird Boutique",
+  "kind": "rack"
+ },
+ "www.bambirdboutique.com/travel-racks-set-of-4-racks-and-one-pusher?v=51086820114741": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Bam Bird Boutique Tortoise Shell Travel",
+  "brand": "Bam Bird Boutique",
+  "kind": "rack"
+ },
+ "mahjmood.com/travel-racks-set-of-4-racks-and-1-pusher": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "brand": "Mahj Mood",
+  "kind": "rack"
+ },
+ "minimahjer.com/travel-rack-set-pusher": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mini Mahjer Travel Racks & Pusher",
+  "brand": "Mini Mahjer",
+  "kind": "rack"
+ },
+ "myfairmahjong.com/mini-acrylic-racks": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "brand": "My Fair Mahjong",
+  "kind": "rack"
+ },
+ "myfairmahjong.com/mini-traditional-series-upgradedracks": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "MINI TRADITIONAL SERIES with Upgraded Acrylic Racks | American Mahjong Tiny Travel Set",
+  "brand": "My Fair Mahjong",
+  "kind": "rack"
+ },
+ "peacelovemahjong.com/mile-high-mahj-club-travel-racks-set-of-4": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Travel and Kids Racks - Set of 4 \u2013 Pink",
+  "brand": "Peace Love Mahjong",
+  "kind": "rack"
+ },
+ "www.bambirdboutique.com/travel-racks-set-of-4-racks-and-one-pusher-copy-1": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "The Fuchsia Travel Racks",
+  "brand": "Bam Bird Boutique",
+  "kind": "rack"
+ },
+ "www.bamletsmahjong.com/double-mahjong-travel-size-racks": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Double Mahjong Travel Size Racks",
+  "brand": "Bam! Let's Mahjong",
+  "kind": "rack"
+ },
+ "www.bespokemahjong.com/the-ultimate-travel-racks": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "TRAVEL - The Ultimate Travel Racks",
+  "brand": "Bespoke Mahjong",
+  "kind": "rack"
+ },
+ "www.middleandmainmahjong.com/traveling-tiles-rack-pack": {
+  "status": "hidden",
+  "reason": "rack storage bag, not a rack (doc 49: no bags)",
+  "name": "Poolside Blue - Rack Pack",
+  "brand": "Middle & Main Mahjong",
+  "kind": "rack"
+ },
+ "www.bambirdboutique.com/travel-racks-set-of-4-racks-and-one-pusher?v=50008806490421": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Bam Bird Boutique Teal Travel",
+  "brand": "Bam Bird Boutique",
+  "kind": "rack"
+ },
+ "mahjmood.com/travel-racks-set-of-4-racks-and-1-pusher?v=56232244937007": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mahj Mood Tortoise Travel",
+  "brand": "Mahj Mood",
+  "kind": "rack"
+ },
+ "myfairmahjong.com/mini-acrylic-racks?v=51694566736183": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "My Fair Mahjong Mini Travel \u2013 Clear",
+  "brand": "My Fair Mahjong",
+  "kind": "rack"
+ },
+ "myfairmahjong.com/mini-acrylic-racks?v=51694566768951": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "My Fair Mahjong Mini Travel \u2013 Magenta",
+  "brand": "My Fair Mahjong",
+  "kind": "rack"
+ },
+ "myfairmahjong.com/mini-acrylic-racks?v=51694566801719": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "My Fair Mahjong Mini Travel \u2013 Teal",
+  "brand": "My Fair Mahjong",
+  "kind": "rack"
+ },
+ "myfairmahjong.com/mini-racks": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "My Fair Mahjong Mini Pastel Blue Wood",
+  "brand": "My Fair Mahjong",
+  "kind": "rack"
+ },
+ "mahjongstudios.com/single-one-pink-mahjong-rack-and-pusher": {
+  "status": "hidden",
+  "reason": "single rack: Tiffany said no to single racks (Oct 15)",
+  "name": "Single (ONE) Pink Mahjong Rack and Pusher",
+  "brand": "Mahjong Studios",
+  "kind": "rack"
+ },
+ "mahjongstudios.com/single-one-white-mahjong-rack-and-pusher": {
+  "status": "hidden",
+  "reason": "single rack: Tiffany said no to single racks (Oct 15)",
+  "name": "Single (ONE) White Mahjong Rack and Pusher",
+  "brand": "Mahjong Studios",
+  "kind": "rack"
+ },
+ "mahjongstudios.com/single-one-bright-blue-mahjong-rack-and-pusher": {
+  "status": "hidden",
+  "reason": "single rack: Tiffany said no to single racks (Oct 15)",
+  "name": "Single (ONE) Bright Blue Mahjong Rack and Pusher",
+  "brand": "Mahjong Studios",
+  "kind": "rack"
+ },
+ "mahjongstudios.com/single-one-green-mahjong-rack-and-pusher": {
+  "status": "hidden",
+  "reason": "single rack: Tiffany said no to single racks (Oct 15)",
+  "name": "Single (ONE) Green Mahjong Rack and Pusher",
+  "brand": "Mahjong Studios",
+  "kind": "rack"
+ },
+ "mahjongstudios.com/single-one-purple-mahjong-rack-and-pusher": {
+  "status": "hidden",
+  "reason": "single rack: Tiffany said no to single racks (Oct 15)",
+  "name": "Single (ONE) Purple Mahjong Rack and Pusher",
+  "brand": "Mahjong Studios",
+  "kind": "rack"
+ },
+ "mahjongstudios.com/single-one-blue-mahjong-rack-and-pusher": {
+  "status": "hidden",
+  "reason": "single rack: Tiffany said no to single racks (Oct 15)",
+  "name": "Single (ONE) Blue Mahjong Rack and Pusher",
+  "brand": "Mahjong Studios",
+  "kind": "rack"
+ },
+ "www.middleandmainmahjong.com/poolside-blue-rack-pack-copy": {
+  "status": "hidden",
+  "reason": "rack storage bag, not a rack (doc 49: no bags)",
+  "name": "Grounded Gray - Rack Pack",
+  "brand": "Middle & Main Mahjong",
+  "kind": "rack"
+ },
+ "amahjline.com/untitled-dec3_20-34": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Original Stamped Travel Mahjong Tile Set",
+  "brand": "Amahj"
+ },
+ "amahjline.com/garden-travel-tile-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Garden Stamped Travel Mahjong Tile Set",
+  "brand": "Amahj"
+ },
+ "amahjline.com/solo-amahj-mini-mat": {
+  "status": "hidden",
+  "reason": "solo-play mat: Tiffany said no to solo-play mats (Oct 15)",
+  "name": "Solo Amahj Mahjong Practice Mat",
+  "brand": "Amahj"
+ },
+ "birdandbamboo.com/the-iconic-travel-mahjong-tile-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "The Iconic Travel Mahjong Tile Set",
+  "brand": "Bird & Bamboo"
+ },
+ "brittmillsdesign.com/soiree-blue-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Soir\u00e9e Blue Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/soiree-pink-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Soir\u00e9e Pink Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/revelry-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Revelry Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/huntley-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Huntley Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/evil-eye-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Evil Eye Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/eden-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Eden Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/nutcracker-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Nutcracker Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/merrywood-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Merrywood Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/dabney-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Dabney Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/calista-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Calista Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/wren-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Wren Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/quinn-ii-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Quinn II Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/soiree-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Soir\u00e9e Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/bella-ii-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Bella II Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/knox-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Knox Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/calista-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Calista Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/bella-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Bella Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/east-coast-summer-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "East Coast Summer Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/quinn-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Quinn Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/rosalie-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Rosalie Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/crimson-harvest-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Crimson Harvest Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/regency-ii-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Regency II Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/savannah-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Savannah Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/flora-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Flora Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/flourish-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Flourish Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/glory-square-tablecloth-1": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Glory Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/winter-berry-ii-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Winter Berry II Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/winter-berry-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Winter Berry Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/daphne-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Daphne Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/willow-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Willow Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/english-countryside-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "English Countryside Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/regency-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Regency Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/soiree-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Soir\u00e9e Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/mabel-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Mabel Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/heiress-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Heiress Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/aria-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Aria Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/royal-blooms-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Royal Blooms Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/lola-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Lola Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/lola-ii-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Lola II Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/ginger-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Ginger Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/tory-blooms-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Tory Blooms Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/peacock-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Peacock Garden Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/colorful-coastal-chinoiserie-ii-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Colorful Chinoiserie II Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/veranda-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Veranda Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/legacy-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Legacy Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/walk-in-the-park-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Walk in the Park Square Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/chinoiserie-palms-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Chinoiserie Palms Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "brittmillsdesign.com/colorful-coastal-chinoiserie-square-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Colorful Chinoiserie Tablecloth",
+  "brand": "Britt Mills"
+ },
+ "mahjmood.com/white-pearl-travel-tiles": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "White Pearl Travel Tiles \u2013 Radiant Mood Collection | Pre-Order, Ships Late September",
+  "brand": "Mahj Mood"
+ },
+ "mahjongstudios.com/mahjong-studios-american-floating-mahjong-pool-tile-set": {
+  "status": "hidden",
+  "reason": "pool item: Tiffany said no to pool mats (Oct 15)",
+  "name": "Mahjong Studios \u2013 American Floating Pool Mahjong Tiles",
+  "brand": "Mahjong Studios"
+ },
+ "mahjongstudios.com/single-one-yellow-mahjong-rack-and-pusher": {
+  "status": "hidden",
+  "reason": "single rack: Tiffany said no to single racks (Oct 15)",
+  "name": "Single (ONE) Yellow Mahjong Rack and Pusher",
+  "brand": "Mahjong Studios"
+ },
+ "mahjongstudios.com/single-one-red-mahjong-rack-and-pusher": {
+  "status": "hidden",
+  "reason": "single rack: Tiffany said no to single racks (Oct 15)",
+  "name": "Single (ONE) Red Mahjong Rack and Pusher",
+  "brand": "Mahjong Studios"
+ },
+ "mahjsquadshop.com/pink-mid-century-mahjong-tablecloth-in-palm-springs-pattern": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Pink Mid-Century Mahjong Tablecloth in Palm Springs Pattern",
+  "brand": "Mahj Squad"
+ },
+ "minimahjer.com/bubbles-bows-travel-bundle": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "The Complete Travel Bundle: Bubbles & Bows Edition",
+  "brand": "Mini Mahjer"
+ },
+ "minimahjer.com/ski-travel-bundle": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "The Complete Travel Bundle: Ski Edition",
+  "brand": "Mini Mahjer"
+ },
+ "minimahjer.com/beach-travel-bundle": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "The Complete Travel Bundle: Beach Edition",
+  "brand": "Mini Mahjer"
+ },
+ "minimahjer.com/rookie-travel-bundle": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "The Complete Travel Bundle: Rookie Edition",
+  "brand": "Mini Mahjer"
+ },
+ "minimahjer.com/woodlands-travel-bundle": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "The Complete Travel Bundle: Woodlands Edition",
+  "brand": "Mini Mahjer"
+ },
+ "minimahjer.com/rackin-rosie-travel-bundle": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "The Complete Travel Bundle: Rackin' Rosie Edition",
+  "brand": "Mini Mahjer"
+ },
+ "minimahjer.com/og-travel-bundle": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "The Complete Travel Bundle: OG Edition",
+  "brand": "Mini Mahjer"
+ },
+ "minimahjer.com/mini-mahjer-starter-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mini Mahjer Starter Set",
+  "brand": "Mini Mahjer"
+ },
+ "missmahjong.com/mini-miss-darling-travel-mahjong-bundle": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mini Miss Darling: Travel Mahjong Bundle",
+  "brand": "Miss Mahjong"
+ },
+ "missmahjong.com/mini-miss-cowgirl-travel-mahjong-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mini Miss Cowgirl: Travel Mahjong Bundle",
+  "brand": "Miss Mahjong"
+ },
+ "missmahjong.com/mini-miss-out-of-office-travel-mahjong-bundle": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mini Miss Out Of Office: Travel Mahjong Bundle",
+  "brand": "Miss Mahjong"
+ },
+ "myfairmahjong.com/mini-travel-blue": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "MINI TRAVEL MAHJONG  |  Mini Anywhere Series  |  Blue",
+  "brand": "My Fair Mahjong"
+ },
+ "myfairmahjong.com/the-play-series-petite-ocean-blue": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "THE PLAY SERIES  |  PETITE  |  Mahjong with Something to Say  |  Ocean Blue",
+  "brand": "My Fair Mahjong"
+ },
+ "myfairmahjong.com/the-play-series-petite-cotton-candy-pink": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "THE PLAY SERIES  |  PETITE  |  Mahjong with Something to Say  |  Cotton Candy Pink",
+  "brand": "My Fair Mahjong"
+ },
+ "myfairmahjong.com/mini-anywhere-series-green": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "MINI TRAVEL MAHJONG  |  Mini Anywhere Series  |  Green",
+  "brand": "My Fair Mahjong"
+ },
+ "myfairmahjong.com/mini-anywhere-pink": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "MINI TRAVEL MAHJONG  |  Mini Anywhere Series  |  Pink",
+  "brand": "My Fair Mahjong"
+ },
+ "myfairmahjong.com/riichi-singaporean-animal-tile-add-on-mini-anywhere-series": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "RIICHI & SINGAPOREAN ANIMAL TILE ADD-ON  |  (PRE-ORDER) MINI ANYWHERE SERIES- Tiny Travel Mahjong Set | Small Size (0.8\"x0.5\"x0.4\")",
+  "brand": "My Fair Mahjong"
+ },
+ "myfairmahjong.com/mini-anywhere-series": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "MINI TRAVEL MAHJONG  |  Mini Anywhere Series  |  White",
+  "brand": "My Fair Mahjong"
+ },
+ "myfairmahjong.com/mini-mahjong": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "MINI TRADITIONAL TRAVEL MAHJONG | Tiny American Mahjong Set",
+  "brand": "My Fair Mahjong"
+ },
+ "peacelovemahjong.com/travel-kids-rack-bags": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Travel & Kids Rack Bags",
+  "brand": "Peace Love Mahjong"
+ },
+ "peacelovemahjong.com/vibrant-vibes-mile-high-mahj-club-travel-tiles-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Vibrant Vibes - Mile High Mahj Club Travel Tiles Set",
+  "brand": "Peace Love Mahjong"
+ },
+ "peacelovemahjong.com/pretty-in-pink-mile-high-mahj-club-travel-tiles-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Pretty in Pink - Mile High Mahj Club Travel Tiles Set",
+  "brand": "Peace Love Mahjong"
+ },
+ "peacelovemahjong.com/totally-teal-mile-high-mahj-club-travel-tiles-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Totally Teal - Mile High Mahj Club Travel Tiles Set",
+  "brand": "Peace Love Mahjong"
+ },
+ "peacelovemahjong.com/mod-chartreuse-mile-high-mahj-club-travel-tiles-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mod Chartreuse - Mile High Mahj Club Travel Tiles Set",
+  "brand": "Peace Love Mahjong"
+ },
+ "peacelovemahjong.com/mile-high-mahj-mix-match-travel-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mix & Match Mile High Mahj Travel Tiles Set",
+  "brand": "Peace Love Mahjong"
+ },
+ "peacelovemahjong.com/mile-high-mahj-club-travel-tiles": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Travel & Kids Mahjong Tiles",
+  "brand": "Peace Love Mahjong"
+ },
+ "shop.andersruff.com/bird-bam-the-bees-solo-play-mahjong-mat": {
+  "status": "hidden",
+  "reason": "solo-play mat: Tiffany said no to solo-play mats (Oct 15)",
+  "name": "Bird, Bam & The Bees Solo Play Mahjong Mat",
+  "brand": "Anders Ruff"
+ },
+ "shop.andersruff.com/green-light-gatsby-solo-play-mahjong-mat": {
+  "status": "hidden",
+  "reason": "solo-play mat: Tiffany said no to solo-play mats (Oct 15)",
+  "name": "Green Light Gatsby Solo Play Mahjong Mat",
+  "brand": "Anders Ruff"
+ },
+ "shop.andersruff.com/mahj-in-bloom-solo-play-mahjong-mat": {
+  "status": "hidden",
+  "reason": "solo-play mat: Tiffany said no to solo-play mats (Oct 15)",
+  "name": "Mahj in Bloom Solo Play Mahjong Mat",
+  "brand": "Anders Ruff"
+ },
+ "shop.andersruff.com/eau-de-mahj-solo-play-mahjong-mat": {
+  "status": "hidden",
+  "reason": "solo-play mat: Tiffany said no to solo-play mats (Oct 15)",
+  "name": "Eau De Mahj Solo Play Mahjong Mat",
+  "brand": "Anders Ruff"
+ },
+ "shop.andersruff.com/bams-bubbly-solo-play-mahjong-mat": {
+  "status": "hidden",
+  "reason": "solo-play mat: Tiffany said no to solo-play mats (Oct 15)",
+  "name": "Bams & Bubbly Solo Play Mahjong Mat",
+  "brand": "Anders Ruff"
+ },
+ "shop.andersruff.com/cabana-royale-solo-play-mahjong-mat": {
+  "status": "hidden",
+  "reason": "solo-play mat: Tiffany said no to solo-play mats (Oct 15)",
+  "name": "Cabana Royale Solo Play Mahjong Mat",
+  "brand": "Anders Ruff"
+ },
+ "shop.andersruff.com/house-of-hydrangea-solo-play-mahjong-mat": {
+  "status": "hidden",
+  "reason": "solo-play mat: Tiffany said no to solo-play mats (Oct 15)",
+  "name": "House of Hydrangea Solo Play Mahjong Mat",
+  "brand": "Anders Ruff"
+ },
+ "shop.andersruff.com/christmas-solo-play-mahjong-mat": {
+  "status": "hidden",
+  "reason": "solo-play mat: Tiffany said no to solo-play mats (Oct 15)",
+  "name": "Christmas Solo Play Mahjong Mat",
+  "brand": "Anders Ruff"
+ },
+ "shop.andersruff.com/mahj-in-bloom-trellis-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Mahj in Bloom Trellis Tablecloth",
+  "brand": "Anders Ruff"
+ },
+ "shop.andersruff.com/mahj-the-city-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Mahj & the City Tablecloth",
+  "brand": "Anders Ruff"
+ },
+ "shop.andersruff.com/saddles-silk-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Saddles & Silk Tablecloth",
+  "brand": "Anders Ruff"
+ },
+ "shop.andersruff.com/eau-de-mahj-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Eau de Mahj Tablecloth",
+  "brand": "Anders Ruff"
+ },
+ "shop.andersruff.com/champagne-mahj-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Bams & Bubbly Tablecloth",
+  "brand": "Anders Ruff"
+ },
+ "shop.andersruff.com/palm-estate-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Palm Estate Tablecloth",
+  "brand": "Anders Ruff"
+ },
+ "shop.andersruff.com/lobster-bay-coastal-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Lobster Bay Coastal Tablecloth",
+  "brand": "Anders Ruff"
+ },
+ "shop.andersruff.com/house-of-hydrangea-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "House of Hydrangea Tablecloth",
+  "brand": "Anders Ruff"
+ },
+ "tigredetartan.com/performance-tablecloth-trompe-l-oeil-cannage-blonde": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Performance Tablecloth, Trompe L'oeil CANNAGE BLONDE",
+  "brand": "Tigre de Tartan"
+ },
+ "www.bambirdboutique.com/build-your-travel-mahjong-bundle": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Build Your Travel Mahjong Bundle",
+  "brand": "Bam Bird Boutique"
+ },
+ "www.bambirdboutique.com/origami-travel-tile-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Origami Travel Tile Set",
+  "brand": "Bam Bird Boutique"
+ },
+ "www.bambirdboutique.com/classic-tortoise-travel-tile-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Classic Tortoise Shell Travel Tile Set",
+  "brand": "Bam Bird Boutique"
+ },
+ "www.bambirdboutique.com/east-meets-west-travel-tile-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "East Meets West Travel Tile Set",
+  "brand": "Bam Bird Boutique"
+ },
+ "www.bambirdboutique.com/classic-travel-tile-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Classic Travel Tile Set",
+  "brand": "Bam Bird Boutique"
+ },
+ "www.bamletsmahjong.com/travel-mahjong-tile-set-palm-royale": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Travel Mahjong Tile Set - Palm Royale",
+  "brand": "Bam! Let's Mahjong"
+ },
+ "www.bamletsmahjong.com/garden-party-bright-mahjong-tiles-travel-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Travel Mahjong Tile Set - Garden Party Bright Mahjong Tiles",
+  "brand": "Bam! Let's Mahjong"
+ },
+ "www.bamletsmahjong.com/garden-party-pastel-mahjong-tiles-travel-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Travel Mahjong Tile Set - Garden Party Pastel Mahjong Tiles",
+  "brand": "Bam! Let's Mahjong"
+ },
+ "www.bespokemahjong.com/lucky-charms-travel-tiles-kit-hamptons-pearl-blue": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Bespoke Travel Tiles Kit - LUCKY CHARMS HAMPTONS BLUE PEARL",
+  "brand": "Bespoke Mahjong"
+ },
+ "www.bespokemahjong.com/the-chalet-travel-tiles-kit-copy": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Bespoke Travel Tiles Kit - THE CHALET - FROSTY PEARL WHITE",
+  "brand": "Bespoke Mahjong"
+ },
+ "www.bespokemahjong.com/bespoke-x-gray-malin-travel-tiles-kit-getaway-dogs": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Bespoke X Gray Malin Travel Tiles Kit - GETAWAY DOGS",
+  "brand": "Bespoke Mahjong"
+ },
+ "www.bespokemahjong.com/bespoke-x-grateful-dead-travel-tiles-kit-cosmic-white-tiles": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Grateful Dead x Bespoke Mahjong Travel Tiles Kit - COSMIC WHITE PEARL",
+  "brand": "Bespoke Mahjong"
+ },
+ "www.bespokemahjong.com/bespoke-mahjong-x-gray-malin-beach-clubtraveltiles": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Bespoke X Gray Malin Travel Tiles Kit - BEACH CLUB",
+  "brand": "Bespoke Mahjong"
+ },
+ "www.charlestonmahjongclub.com/the-cabana-club-travel-bundle": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "The Cabana Club Travel Bundle",
+  "brand": "Charleston Mahjong Club"
+ },
+ "www.charlestonmahjongclub.com/table-cloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Pink & Green Floral Scalloped Tablecloth",
+  "brand": "Charleston Mahjong Club"
+ },
+ "www.charlestonmahjongclub.com/square-table-cloth-scalloped-trim-57-x57-1": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Denim Blue Floral Scalloped Tablecloth",
+  "brand": "Charleston Mahjong Club"
+ },
+ "www.charlestonmahjongclub.com/square-table-cloth-scalloped-trim-57-x57": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Green Floral Scalloped Tablecloth",
+  "brand": "Charleston Mahjong Club"
+ },
+ "www.charlestonmahjongclub.com/table-cloth-scalloped-trim": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Navy Floral Scalloped Tablecloth",
+  "brand": "Charleston Mahjong Club"
+ },
+ "www.letsmahj-on.com/cadet-mahjong-gametablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Dash Mahjong Tablecloth ~ Cadet",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/wholesale-scalloped-square-table-topper-lilac-botanical-stripe": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Lilac Botanical Stripe Scalloped Tablecloth",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/wholesale-scalloped-square-table-topper-blue-pagoda": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Blue Pagoda Scalloped Tablecloth",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/wholesale-scalloped-square-table-topper-pink-botanical-stripe": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Pink Botanical Stripe Scalloped Tablecloth",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/edna-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Edna Tablecloth",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/tropical-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Tropical Tablecloth",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/shells-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Shells Tablecloth",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/ainsley-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Ainsley Tablecloth",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/indiennes-mahjong-tablecloth-green": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Indiennes Mahjong TableCloth - Green",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/indiennes-mahjong-tablecloth-blue": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Indiennes Mahjong TableCloth - Blue",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/indiennes-mahjong-tablecloth-pink": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Indiennes Mahjong TableCloth - Pink",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/wholesale-scalloped-square-table-topper-jardin-de-fleurs-pink": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Jardin de Fleurs-Pink Scalloped Tablecloth",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/wholesale-scalloped-square-table-topper-pink-pagoda": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Pink Pagoda  Scalloped Tablecloth",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/trinny-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Trinny Tablecloth",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/ditsy-stripe-mahjong-and-game-tablecloth-soft-blue": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Ditsy Stripe Mahjong Tablecloth ~ Soft Blue",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/sachet-mahjong-game-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Dash Mahjong Tablecloth ~ Sachet",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/ditsy-stripe-mahjong-and-game-tablecloth-pink": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Ditsy Stripe Mahjong Tablecloth ~ Pink",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/ditsy-stripe-mahjong-and-game-tablecloth-seafoam": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Ditsy Stripe Mahjong Tablecloth ~ Seafoam",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/lattice-mahjong-and-game-tablecloth-pink": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Lattice Mahjong Tablecloth ~ Pink",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/lattice-mahjong-and-game-tablecloth-seafoam": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Lattice Mahjong Tablecloth ~ Seafoam",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/lattice-mahjong-and-game-tablecloth-soft-green": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Lattice Mahjong Tablecloth ~ Soft Green",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/lattice-mahjong-and-game-tablecloth-soft-blue": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Lattice Mahjong Tablecloth ~ Soft Blue",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/dash-mahjong-tablecloth-green-tea": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Dash Mahjong TableCloth - Lime Green",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/mahjong-tablecloth-cadet-copy": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Dash Mahjong Tablecloth ~ Sea",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/lavender-mahjong-game-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Dash Mahjong Tablecloth ~ Lavender",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/green-tea-mahjong-game-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Dash Mahjong TableCloth ~ Green Tea",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/camelia-mahjong-game-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Dash Mahjong TableCloth ~ Camelia",
+  "brand": "Let's Mahj On"
+ },
+ "www.letsmahj-on.com/ocean-mahjong-game-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Dash Mahjong Tablecloth ~ Ocean",
+  "brand": "Let's Mahj On"
+ },
+ "www.macandmillermahjong.com/heirloom-travel-tile-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "The Golden Heirloom Travel Mahjong Set (Coming Soon)",
+  "brand": "Mac + Miller Mahjong"
+ },
+ "www.middleandmainmahjong.com/odyssey-tiles-travel-bundle": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Odyssey Tiles Travel Bundle",
+  "brand": "Middle & Main Mahjong"
+ },
+ "www.middleandmainmahjong.com/wanderlust-tiles-travel-bundle-preorder": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Wanderlust Tiles Travel Bundle",
+  "brand": "Middle & Main Mahjong"
+ },
+ "www.middleandmainmahjong.com/carol-table-covering": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Carol Table Covering",
+  "brand": "Middle & Main Mahjong"
+ },
+ "www.middleandmainmahjong.com/holly-table-covering": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Holly Table Covering",
+  "brand": "Middle & Main Mahjong"
+ },
+ "www.middleandmainmahjong.com/annie-b-table-covering": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Annie B Table Covering",
+  "brand": "Middle & Main Mahjong"
+ },
+ "www.middleandmainmahjong.com/alice-ann-table-covering": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Alice Ann Table Covering",
+  "brand": "Middle & Main Mahjong"
+ },
+ "www.middleandmainmahjong.com/placeholder2-table-covering": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Sylvia Table Covering",
+  "brand": "Middle & Main Mahjong"
+ },
+ "www.middleandmainmahjong.com/merriweather-table-covering-copy": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Lucy Table Covering",
+  "brand": "Middle & Main Mahjong"
+ },
+ "www.ohmymahjong.com/naples-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Naples Tablecloth",
+  "brand": "Oh My Mahjong"
+ },
+ "www.ohmymahjong.com/flora-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Flora Tablecloth",
+  "brand": "Oh My Mahjong"
+ },
+ "www.ohmymahjong.com/zanzibar-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Zanzibar Tablecloth",
+  "brand": "Oh My Mahjong"
+ },
+ "www.ohmymahjong.com/charleston-mahjong-travel-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Charleston Mahjong Travel Set",
+  "brand": "Oh My Mahjong"
+ },
+ "www.ohmymahjong.com/aloha-mahjong-travel-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Aloha Mahjong Travel Set",
+  "brand": "Oh My Mahjong"
+ },
+ "www.ohmymahjong.com/bagua-blossom-mat": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Bagua Blossom Mahjong Tablecloth",
+  "brand": "Oh My Mahjong"
+ },
+ "www.ohmymahjong.com/aristrocrat-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Aristocrat Mahjong Tablecloth",
+  "brand": "Oh My Mahjong"
+ },
+ "www.ohmymahjong.com/palm-beach-green-mahjong-travel-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Palm Beach Mahjong Travel Set",
+  "brand": "Oh My Mahjong"
+ },
+ "www.ohmymahjong.com/mahjong-travel-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Parisian Mahjong Travel Set",
+  "brand": "Oh My Mahjong"
+ },
+ "www.ymimports.com/fx-cm001-a": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mini Chinese Mahjong Travel Game Set with Extra Small White Tiles, \"Little MJ\"",
+  "brand": "Yellow Mountain Imports"
+ },
+ "sundaymahjong.com/mini-blonde-tortoise-mahjong-rack-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Mini Blonde Tortoise Mahjong Rack Set",
+  "brand": "Sunday Mahjong"
+ },
+ "mahjandmoon.com/pink-christmas-village-mahjong-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Pink Christmas Village Mahjong Tablecloth",
+  "brand": "Mahj & Moon"
+ },
+ "mahjandmoon.com/pink-coquette-bow-garden-mahjong-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Pink Coquette Bow Garden Mahjong Tablecloth",
+  "brand": "Mahj & Moon"
+ },
+ "mahjandmoon.com/bird-garden-mahjong-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Bird Garden Mahjong Tablecloth",
+  "brand": "Mahj & Moon"
+ },
+ "mahjandmoon.com/citrus-garden-mahjong-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Citrus Garden Mahjong Tablecloth",
+  "brand": "Mahj & Moon"
+ },
+ "mahjandmoon.com/palm-beach-mahjong-tablecloth": {
+  "status": "hidden",
+  "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
+  "name": "Palm Beach Mahjong Tablecloth | American Mahjong Tablecloth",
+  "brand": "Mahj & Moon"
+ },
+ "themahjongline.com/travel-mahjong-tile-set": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Travel Mahjong Set: Paris Pink",
+  "brand": "The Mahjong Line"
+ },
+ "themahjongline.com/travel-line-cornflower-blue-mahjong-release": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Travel Mahjong Set: Cornflower Blue",
+  "brand": "The Mahjong Line"
+ },
+ "themahjongline.com/travel-line-lilac-rummy-release": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Travel Rummy Set: Lilac",
+  "brand": "The Mahjong Line"
+ },
+ "themahjongline.com/travel-line-plum-rummy-release": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "Travel Rummy Set: Plum",
+  "brand": "The Mahjong Line"
+ },
+ "www.wrenmats.com/kids-play-mat": {
+  "status": "hidden",
+  "reason": "kids mat: Tiffany said no to kids mats (Oct 15)",
+  "name": "Kids Play Mat",
+  "brand": "Wren Mats"
+ },
+ "www.wrenmats.com/the-pool-mat": {
+  "status": "hidden",
+  "reason": "pool item: Tiffany said no to pool mats (Oct 15)",
+  "name": "The Pool Mat",
+  "brand": "Wren Mats"
+ },
+ "birdandbamboo.com/the-iconic-travel-mahjong-mat-w-hot-pink-rack-bag": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "The Iconic Travel Mahjong Mat w/ Hot Pink Mat Bag",
+  "brand": "Bird & Bamboo"
+ },
+ "birdandbamboo.com/travel-wooden-mahjong-racks-w-rack-bag": {
+  "status": "hidden",
+  "reason": "travel item: main app is full size only (Tiffany Oct 15)",
+  "name": "*TRAVEL* Wooden Mahjong Racks w/ Rack Bag",
+  "brand": "Bird & Bamboo",
+  "kind": "rack"
  }
 }
