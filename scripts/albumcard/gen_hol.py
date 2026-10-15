@@ -57,7 +57,8 @@ def mat_crop(im):
 # --- tile images (album tile shots; holiday sets use their studio pile shots)
 TILE = {'cypress-forest': 'assets/tiles/album/cypress.jpg', 'tortoise': 'assets/tiles/album/classic-tortoise-zoom.jpg',
         'december-1994': 'assets/tiles/sunday_mahjong_december_1994_tilebox_CARD-ONLY-edited.jpg',
-        'sunday': 'assets/tiles/sunday-tile-set.png'}
+        'sunday': 'assets/tiles/sunday-tile-set.png',
+        'holly-jolly-red': 'assets/tiles/holiday/holly-jolly-red-pile.jpg', 'holly-jolly-pink': 'assets/tiles/holiday/holly-jolly-pink-pile.jpg'}  # Tiffany Oct 15: Bam!'s pile shots
 def tile_image(g):
     t = g['t']
     if t in TILE and os.path.exists(R + TILE[t]): return R + TILE[t]
