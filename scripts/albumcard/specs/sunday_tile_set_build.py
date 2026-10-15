@@ -1,13 +1,29 @@
 """Sunday Tile Set album: one card per YES mat (db sundayswipe, 37 yes), Tiffany's saved order.
-Writes spec.json for scripts/albumcard/gen2.py (per-card mat data URI; tile fixed = Sunday)."""
-import json, io, base64, re, os
+Writes spec.json for scripts/albumcard/gen2.py (per-card mat data URI; tile fixed = Sunday).
+v2 (Tiffany, Oct 15 review): "For Britt Mills don't make duplicate cards. You can make a note in the caption of
+the card that the mat is available in leatherette or neoprene. Move Plum Panda before Gaylord. Use Middle & Main
+Mahjong Tortoise, Bam Bird Boutique Walnut and Peace Love Mahjong Oak racks."
+- Britt Mills Legacy (neoprene) + Legacy Leatherette -> one Legacy card; Savannah card titled "Savannah"
+  (Britt Mills sells it in neoprene and leatherette). manifest caption_note carries the material line.
+- Tile racks (lower left, real photos from assets/racks/card/) = RACKS on every card.
+Usage: python3 sunday_tile_set_build.py <workdir>; then gen2.py <workdir>/spec.json <outdir>"""
+import json, io, base64, re, os, sys
 from PIL import Image
 R = '/home/claude/mahjmatchmaker-data/'
 W = os.path.dirname(os.path.abspath(__file__))
-order = json.load(open('/tmp/sun/album_order.json'))
-mp = {x['id']: x for x in json.load(open(W + '/map.json'))}
-names = [l.split('. ', 1)[1] for l in open('/tmp/sun/sunday_album_order.txt').read().strip().split('\n')]
+OUTW = sys.argv[1] if len(sys.argv) > 1 else W
+order = json.load(open(W + '/sunday_tile_set_order.json'))  # copy of /tmp/sun/album_order.json (her saved order)
+mp = {x['id']: x for x in json.load(open(W + '/sunday_tile_set_map.json'))}
+names = [l.split('. ', 1)[1] for l in open(W + '/sunday_tile_set_order.txt').read().strip().split('\n')]
 assert len(names) == len(order) == 37
+RACKS = ['Middle & Main Hawksbill Heritage Tortoise', 'Bam Bird Boutique Walnut', 'Peace Love Mahjong Oak']
+DROP = {'brittmil-legacy-mahjong-mat-art-print'}  # Legacy Leatherette: same design as Legacy (neoprene) -> one card
+RENAME = {'brittmil-savannah-mahjong-mat-art-print': 'Savannah'}
+NOTE = {'brittmil-legacy-britt-mills-mahjong-mat': 'Also available in leatherette',
+        'brittmil-savannah-mahjong-mat-art-print': 'Also available in neoprene'}
+pairs = [(m, n) for m, n in zip(order, names) if m not in DROP]
+pp = next(x for x in pairs if x[0] == 'sundayma-plum-panda-premium-mahjong-mat'); pairs.remove(pp)
+pairs.insert(next(i for i, x in enumerate(pairs) if x[0] == 'sundayma-gaylord-premium-mahjong-mat'), pp)  # Plum Panda before Gaylord
 PCT = {'Britt Mills': '15%'}
 TENPCT = {'Mahjong Row & Co', 'Charleston Mahjong Club', 'Mahj Squad'}
 NOPCT = {'Anders Ruff'}
@@ -35,13 +51,14 @@ tb = io.BytesIO(); tile.save(tb, 'JPEG', quality=92); TILE = 'data:image/jpeg;ba
 SRCFIX = {'letsbebe-tartan-tweed-mahjong-mat': '/tmp/sun/alb_src/letsbebe-tartan-tweed-mahjong-mat_0.jpg',
           'luxemahj-untitled-sep2916-36-07': '/tmp/sun/alb_src/luxemahj-untitled-sep2916-36-07_0.jpg'}
 cards = []; man = []
-for i, (mid, nm) in enumerate(zip(order, names)):
+for i, (mid, nm) in enumerate(pairs):
     mname, brand = [x.strip() for x in nm.split('·')]
+    mname = RENAME.get(mid, mname)
     brand = re.sub(r'\s*\(.*', '', brand)
     if mid == 'sundayma-vegan-leather-premium-mahjong-mat':
         # Oct 11 note in /tmp/sun/sunday_album_order.txt: replaced by Charleston Mahjong Club Brown Vegan Leather.
         # No flat full-mat photo exists; use CMC's close-up product photo (IMG_2810), same style as the live Cypress/Gatsby cards.
-        src = Image.open(os.path.dirname(os.path.dirname(W)) + '/bvl_full.jpg').convert('RGB').crop((130, 0, 3120, 3820))
+        src = Image.open('/tmp/claude-0/-home-claude-mahjmatchmaker-data/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/bvl_full.jpg').convert('RGB').crop((130, 0, 3120, 3820))
         lowres = False
     elif mid in SRCFIX:
         # the background-removal cut-out ate parts of these mats; use the brand's flat product photo, white margins trimmed
@@ -50,11 +67,11 @@ for i, (mid, nm) in enumerate(zip(order, names)):
         src = Image.open('/tmp/sun/alb_cut/' + mp[mid]['file']); lowres = src.width < 700
     mat = crop(src)
     fn = f"sunday-mahjong-tiles-{slug(brand)}-{slug(mname)}-mat.jpg"
-    cards.append({'slug': f'sun{i+1:02d}', 'title': f'Sunday + {mname}', 'col': '#9a6a1f', 'tile_file': TILE, 'racks': [],
+    cards.append({'slug': f'sun{i+1:02d}', 'title': f'Sunday + {mname}', 'col': '#9a6a1f', 'tile_file': TILE, 'racks': RACKS,
                   'file': fn, 'code': footer(brand), 'mat': uri(mat)})
     man.append({'order': i + 1, 'vote_id': mid, 'mat': mname, 'brand': brand, 'file': fn, 'code': footer(brand),
-                'src': 'cmc IMG_2810 close-up' if mid.startswith('sundayma-vegan') else SRCFIX.get(mid, mp[mid]['file']), 'lowres': lowres})
-json.dump({'_note': 'Sunday Tile Set album (Sunday Mahjong). 37 yes mats from db sundayswipe, her saved order. No tile racks: no approved Sunday rack list exists.',
-           'cards': cards, 'max_racks': 3}, open(W + '/spec.json', 'w'))
-json.dump(man, open(W + '/manifest.json', 'w'), indent=1)
+                'src': 'cmc IMG_2810 close-up' if mid.startswith('sundayma-vegan') else SRCFIX.get(mid, mp[mid]['file']), 'lowres': lowres, 'caption_note': NOTE.get(mid), 'racks': RACKS})
+json.dump({'_note': 'Sunday Tile Set album v2 (Sunday Mahjong). 37 yes mats from db sundayswipe, her saved order; Britt Mills Legacy merged (36 cards); tile racks per her Oct 15 note.',
+           'cards': cards, 'max_racks': 3}, open(OUTW + '/spec.json', 'w'))
+json.dump(man, open(OUTW + '/manifest.json', 'w'), indent=1)
 print(len(cards))
