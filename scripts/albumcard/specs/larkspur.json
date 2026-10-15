@@ -1,0 +1,490 @@
+{
+ "_note": "Larkspur album cards (30). Tile racks = Tiffany's approved final_lists (config/tile-racks-picks.json); mat racks = her Larkspur picks (config/matcard/larkspur.json: Lime Green + Miss Mahjong Cornflower Blue Scalloped, which replaced Periwinkle Blue Oct 13). Sets with no approved list keep their earlier non-B&B tile rack.",
+ "mat_file": "assets/launches/omm-larkspur-mat/01.jpg",
+ "mat_crop": [
+  150,
+  1000,
+  1650,
+  2541
+ ],
+ "max_racks": 3,
+ "mat_racks": [
+  "Bird & Bamboo Lime Green",
+  "Miss Mahjong Cornflower Blue Scalloped"
+ ],
+ "cards": [
+  {
+   "slug": "amara",
+   "title": "Amara + Larkspur",
+   "col": "#d52979",
+   "tile_file": "assets/tiles/album/amara.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Pink",
+    "Bird & Bamboo Kelly Green",
+    "Mahjong Row & Co. Scalloped Tortoise"
+   ],
+   "file": "amara-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Peace Love Mahjong Pink"
+   ]
+  },
+  {
+   "slug": "birdie",
+   "title": "Birdie + Larkspur",
+   "col": "#469694",
+   "tile_file": "assets/tiles/album/birdie.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Harbor Blue",
+    "Peace Love Mahjong Oak"
+   ],
+   "file": "birdie-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "slug": "coquette",
+   "title": "Coquette + Larkspur",
+   "col": "#d57198",
+   "tile_file": "assets/tiles/album/coquette.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Bird & Bamboo Lilac",
+    "Miss Mahjong Scalloped Iridescent Opal"
+   ],
+   "file": "coquette-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Oh My Mahjong Pink Quartz"
+   ],
+   "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM"
+  },
+  {
+   "slug": "dandy",
+   "title": "Dandy + Larkspur",
+   "col": "#ce1467",
+   "tile_file": "assets/tiles/album/dandy.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Avocado",
+    "Miss Mahjong Scalloped Iridescent Opal"
+   ],
+   "file": "dandy-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "slug": "drake",
+   "title": "Drake + Larkspur",
+   "col": "#4e4d1f",
+   "tile_file": "assets/tiles/album/drake.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Peace Love Mahjong Oak",
+    "Middle & Main Hawksbill Heritage Tortoise"
+   ],
+   "file": "drake-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Bam Bird Boutique Walnut"
+   ]
+  },
+  {
+   "slug": "gatsby",
+   "title": "Gatsby + Larkspur",
+   "col": "#12465a",
+   "tile_file": "assets/tiles/album/gatsby.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Bird & Bamboo Evergreen",
+    "Middle & Main Hawksbill Heritage Tortoise"
+   ],
+   "file": "gatsby-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "slug": "glitterville",
+   "title": "Glitterville + Larkspur",
+   "col": "#dc1c6c",
+   "tile_file": "assets/tiles/album/glitterville.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Ballet Pink"
+   ],
+   "file": "glitterville-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Oh My Mahjong Hot Pink"
+   ]
+  },
+  {
+   "slug": "glow-wild",
+   "title": "Glow Wild + Larkspur",
+   "col": "#db3175",
+   "tile_file": "assets/tiles/album/glow-wild.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Teal",
+    "Oh My Mahjong Tortoise Shell"
+   ],
+   "file": "glow-wild-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "slug": "heritage-2-0",
+   "title": "Heritage 2.0 + Larkspur",
+   "col": "#965a36",
+   "tile_file": "assets/tiles/album/heritage-2-0.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Oh My Mahjong Burl",
+    "Bam Bird Boutique Walnut"
+   ],
+   "file": "heritage-2-0-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "slug": "jade",
+   "title": "Jade + Larkspur",
+   "col": "#3d8d4f",
+   "tile_file": "assets/tiles/album/jade.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Miss Mahjong Jade & Brass",
+    "Miss Mahjong Opal & Brass"
+   ],
+   "file": "jade-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "slug": "la-fete",
+   "title": "La Fete + Larkspur",
+   "col": "#e97695",
+   "tile_file": "assets/tiles/album/la-fete.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Avocado"
+   ],
+   "file": "la-fete-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Oh My Mahjong White Acrylic"
+   ]
+  },
+  {
+   "slug": "limoncello",
+   "title": "Limoncello + Larkspur",
+   "col": "#97aa27",
+   "tile_file": "assets/tiles/album/limoncello.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Periwinkle Blue"
+   ],
+   "file": "limoncello-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Oh My Mahjong White Acrylic"
+   ]
+  },
+  {
+   "slug": "lola",
+   "title": "Lola + Larkspur",
+   "col": "#1558cf",
+   "tile_file": "assets/tiles/album/lola.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Powder Blue",
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "file": "lola-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Oh My Mahjong Tortoise Shell"
+   ]
+  },
+  {
+   "slug": "luminaire",
+   "title": "Luminaire + Larkspur",
+   "col": "#8382bd",
+   "tile_file": "assets/tiles/album/luminaire.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Miss Mahjong Peach Sorbet Scalloped",
+    "Bird & Bamboo Light Pink"
+   ],
+   "file": "luminaire-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Oh My Mahjong Tortoise Shell"
+   ]
+  },
+  {
+   "slug": "moonlight",
+   "title": "Moonlight + Larkspur",
+   "col": "#5082d0",
+   "tile_file": "assets/tiles/album/moonlight.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Miss Mahjong Opal & Brass"
+   ],
+   "file": "moonlight-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "slug": "nantucket",
+   "title": "Nantucket + Larkspur",
+   "col": "#dc282c",
+   "tile_file": "assets/tiles/album/nantucket.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Bird & Bamboo Powder Blue"
+   ],
+   "file": "nantucket-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Oh My Mahjong White Acrylic"
+   ]
+  },
+  {
+   "slug": "osler",
+   "title": "Osler + Larkspur",
+   "col": "#456fbe",
+   "tile_file": "assets/tiles/album/osler.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Tigre de Tartán Oxblood Scallop"
+   ],
+   "file": "osler-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "slug": "palm-royale",
+   "title": "Palm Royale + Larkspur",
+   "col": "#829645",
+   "tile_file": "assets/tiles/album/palm-royale.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Chartreuse",
+    "Miss Mahjong Opal & Brass",
+    "Peace Love Mahjong Oak"
+   ],
+   "file": "palm-royale-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Oh My Mahjong Hot Pink"
+   ]
+  },
+  {
+   "slug": "papaya-spritz",
+   "title": "Papaya Spritz + Larkspur",
+   "col": "#ef7a3c",
+   "tile_file": "assets/tiles/album/papaya-spritz.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ],
+   "file": "papaya-spritz-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Peace Love Mahjong Oak"
+   ],
+   "no_approved_list": true
+  },
+  {
+   "slug": "pearlescent",
+   "title": "Pearlescent + Larkspur",
+   "col": "#e67965",
+   "tile_file": "assets/tiles/album/pearlescent.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Miss Mahjong Peach Sorbet Scalloped",
+    "Bird & Bamboo Light Pink"
+   ],
+   "file": "pearlescent-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Oh My Mahjong Tortoise Shell"
+   ]
+  },
+  {
+   "slug": "pippa",
+   "title": "Pippa + Larkspur",
+   "col": "#e1ab13",
+   "tile_file": "assets/tiles/album/pippa.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Pink Coral",
+    "Bird & Bamboo Icy Mint"
+   ],
+   "file": "pippa-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Miss Mahjong Opal & Brass"
+   ]
+  },
+  {
+   "slug": "seabreeze",
+   "title": "Seabreeze + Larkspur",
+   "col": "#02aaa1",
+   "tile_file": "assets/tiles/album/seabreeze.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Hot Pink",
+    "Miss Mahjong Scalloped Iridescent Opal"
+   ],
+   "file": "seabreeze-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Oh My Mahjong White Acrylic"
+   ]
+  },
+  {
+   "slug": "smith",
+   "title": "Smith + Larkspur",
+   "col": "#8a492b",
+   "tile_file": "assets/tiles/album/smith.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Peace Love Mahjong Oak",
+    "Bird & Bamboo Dark Navy"
+   ],
+   "file": "smith-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Bam Bird Boutique Walnut"
+   ]
+  },
+  {
+   "slug": "solara",
+   "title": "Solara + Larkspur",
+   "col": "#e26959",
+   "tile_file": "assets/tiles/album/solara.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Peach Sorbet Scalloped",
+    "Miss Mahjong Iridescent Opal Scalloped"
+   ],
+   "file": "solara-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Miss Mahjong Peach Sorbet Scalloped"
+   ]
+  },
+  {
+   "slug": "sorbet",
+   "title": "Sorbet + Larkspur",
+   "col": "#e9a926",
+   "tile_file": "assets/tiles/album/sorbet.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Icy Mint",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Middle & Main Scalloped Beechwood"
+   ],
+   "file": "sorbet-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Oh My Mahjong White Acrylic"
+   ]
+  },
+  {
+   "slug": "talulah",
+   "title": "Talulah + Larkspur",
+   "col": "#18968b",
+   "tile_file": "assets/tiles/album/talulah.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Penny Metallic",
+    "Miss Mahjong Scalloped Iridescent Opal"
+   ],
+   "file": "talulah-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Middle & Main Scalloped Beechwood"
+   ]
+  },
+  {
+   "slug": "taylor",
+   "title": "Taylor + Larkspur",
+   "col": "#b68ccd",
+   "tile_file": "assets/tiles/album/taylor.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Light Pink",
+    "Middle & Main Scalloped Beechwood"
+   ],
+   "file": "taylor-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Oh My Mahjong Tortoise Shell"
+   ]
+  },
+  {
+   "slug": "tortoise",
+   "title": "Tortoise + Larkspur",
+   "col": "#aa5a15",
+   "tile_file": "assets/tiles/album/classic-tortoise-zoom.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Middle & Main Hawksbill Tortoise"
+   ],
+   "file": "tortoise-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Peace Love Mahjong Oak"
+   ]
+  },
+  {
+   "slug": "vault-lilac-soiree",
+   "title": "Lilac Soiree + Larkspur",
+   "col": "#8a6fb5",
+   "tile_file": "assets/tiles/album/lilac-soiree.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ],
+   "file": "vault-lilac-soiree-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Peace Love Mahjong Oak"
+   ],
+   "no_approved_list": true
+  },
+  {
+   "slug": "vault-spring-love",
+   "title": "Spring Love + Larkspur",
+   "col": "#e0789c",
+   "tile_file": "assets/tiles/album/spring-love.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Oak"
+   ],
+   "file": "vault-spring-love-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
+   "photo": [
+    "Peace Love Mahjong Oak"
+   ],
+   "no_approved_list": true
+  }
+ ]
+}

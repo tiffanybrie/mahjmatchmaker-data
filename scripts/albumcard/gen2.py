@@ -1,8 +1,12 @@
 """Album match cards in the live-album layout (card2.html).
 Usage: python3 gen2.py spec.json outdir
-spec: {mat_file, mat_crop, code?, cards:[{slug,title,col,tile_file,racks:[labels...],bb:[B&B labels],file,code?}]}
-Racks drawn: up to 3, one copy each — drawable non-B&B racks first, then B&B racks in order.
-B&B chart (top right) = the card's other B&B picks that aren't drawn."""
+spec: {mat_file, mat_crop, code?, max_racks?, mat_racks?:[labels], cards:[{slug,title,col,tile_file,racks:[labels...],bb:[B&B labels],file,code?}]}
+Lower left (doc 48 sec. 4) = racks that match the TILES: card['racks'] = Tiffany's approved list
+(config/tile-racks-picks.json final_lists), drawn in that order, up to max_racks (3), one copy each, each a
+REAL photo (racks.py); B&B is the one generated rack. A rack with no real photo is skipped and reported.
+Top right = racks that match the MAT: spec mat_racks (same on every card of a mat book). B&B picks are
+colour bars under the B&B logo; any other brand's pick is its real photo under that brand's logo.
+Without mat_racks, falls back to the old chart (card['bb'] B&B picks not drawn)."""
 import json, sys, os, io, base64, subprocess
 from PIL import Image
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -22,23 +26,45 @@ tpl = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'card2.html'
 logos = json.load(open(R + 'builder/logos/map.json'))
 BBLOGO = uri(R + 'builder/logos/' + logos['Bird & Bamboo'], 'PNG'); NAVY = uri(R + 'assets/brand/card_navy_logo.png', 'PNG')
 MAT = uri(Image.open(R + spec['mat_file']).convert('RGB').crop(tuple(spec['mat_crop'])), maxs=1400) if spec.get('mat_file') else None
-jobs = []
+BRANDS = {'Middle & Main': 'Middle & Main Mahjong'}  # rack-name prefix -> builder/logos/map.json key
+def brand_of(label):
+    for k in sorted(list(logos) + list(BRANDS), key=len, reverse=True):
+        if label.startswith(k + ' '): return BRANDS.get(k, k), label[len(k) + 1:]
+    return None, label
+def chart_for(c):
+    if 'mat_racks' not in spec and 'mat_racks' not in c: return None
+    bars, other = [], []
+    for l in c.get('mat_racks', spec.get('mat_racks', [])):
+        if l.startswith('Bird & Bamboo '):
+            n = l[len('Bird & Bamboo '):]; bars.append({'name': n, 'hex': RK.BBHEX[n], 'light': lum(RK.BBHEX[n]) > 185}); continue
+        im = RK.photo(l)
+        if im is None: RK.MISSING.add(l); continue
+        b, n = brand_of(l)
+        other.append({'img': uri(im, 'PNG', maxs=700), 'name': n, 'logo': uri(R + 'builder/logos/' + logos[b], 'PNG') if b in logos else None})
+    return bars, other
+jobs = []; missing = {}
 for c in spec['cards']:
     drawn = []
-    labels = [l for l in c['racks'] if not l.startswith('Bird & Bamboo')] + [l for l in c['racks'] if l.startswith('Bird & Bamboo')] + c.get('bb', [])
+    labels = list(c['racks']) if 'mat_racks' in spec or 'mat_racks' in c else [l for l in c['racks'] if not l.startswith('Bird & Bamboo')] + [l for l in c['racks'] if l.startswith('Bird & Bamboo')] + c.get('bb', [])
     seen = set()
     for l in labels:
         if l in seen or len(drawn) >= spec.get('max_racks', 3): continue
         seen.add(l); r = RK.by_label(l)
-        if r: drawn.append({'img': uri(r[0], 'PNG'), 'label': r[1]})
+        if r:
+            fr = 1.0 if l.startswith('Bird & Bamboo ') else RK.frac(l)  # size by the RACK; an OMM photo's pusher overhangs above it
+            drawn.append({'img': uri(r[0], 'PNG', maxs=1400), 'label': r[1], 'frac': fr, 'ar': r[0].width / r[0].height, 'w': round(spec.get('rack_h', 84) * r[0].width / (r[0].height * fr))})
+        else: missing.setdefault(c['slug'], []).append(l)
     dl = {d['label'] for d in drawn}
-    chart = []
-    for l in c.get('bb', []) + [x for x in c['racks'] if x.startswith('Bird & Bamboo')]:
-        n = l[len('Bird & Bamboo '):]
-        if l in dl or n in [x['name'] for x in chart] or n not in RK.BBHEX: continue
-        chart.append({'name': n, 'hex': RK.BBHEX[n], 'light': lum(RK.BBHEX[n]) > 185})
+    ch = chart_for(c); other = []
+    if ch is not None: chart, other = ch
+    else:
+        chart = []
+        for l in c.get('bb', []) + [x for x in c['racks'] if x.startswith('Bird & Bamboo')]:
+            n = l[len('Bird & Bamboo '):]
+            if l in dl or n in [x['name'] for x in chart] or n not in RK.BBHEX: continue
+            chart.append({'name': n, 'hex': RK.BBHEX[n], 'light': lum(RK.BBHEX[n]) > 185})
     data = {'title': c['title'], 'col': c['col'], 'mat': c.get('mat') or MAT, 'tile': uri(R + c['tile_file'], maxs=900) if not c['tile_file'].startswith('data:') else c['tile_file'],
-            'racks': drawn, 'bb': chart[:3], 'bblogo': BBLOGO, 'navy': NAVY,
+            'racks': drawn, 'bb': chart[:3], 'mr': other[:2], 'bblogo': BBLOGO, 'navy': NAVY,
             'code': c.get('code', spec.get('code', '10% OFF  USE CODE : MAHJMATCH')), 'hol': c.get('hol', False), 'flame': c.get('flame')}
     hf = f"/tmp/cards2/{c['slug']}.html"; open(hf, 'w').write(tpl.replace('__DATA__', json.dumps(data)))
     jobs.append((hf, os.path.join(out, c['file'])))
@@ -47,3 +73,5 @@ js = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'shot.js')
 for i in range(0, len(jobs), 40):
     subprocess.run(['node', js] + [x for p in jobs[i:i+40] for x in p], check=True, env={**os.environ, 'NODE_PATH': NP}, stdout=subprocess.DEVNULL)
 print(len(jobs), 'cards ->', out)
+if missing: print('NO REAL PHOTO (left off the card):', json.dumps(missing, ensure_ascii=False))
+json.dump(missing, open(os.path.join(out, '_missing_racks.json'), 'w'), indent=1, ensure_ascii=False)

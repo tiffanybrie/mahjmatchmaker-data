@@ -1,0 +1,142 @@
+{
+ "_note": "Real rack photos for album cards and mat cards (Tiffany, Oct 15: \"Still has rendered OMM ...\"). Real photos only; B&B = generated (doc 48). Missing racks listed under \"missing\".",
+ "racks": {
+  "Oh My Mahjong White Acrylic": {
+   "file": "assets/racks/card/oh-my-mahjong-white-acrylic.png",
+   "source": "assets/racks/omm/white.jpg",
+   "kind": "omm",
+   "rack_frac": 0.388
+  },
+  "Oh My Mahjong Tortoise Shell": {
+   "file": "assets/racks/card/oh-my-mahjong-tortoise-shell.png",
+   "source": "assets/racks/omm/tortoise-shell.jpg",
+   "kind": "omm",
+   "rack_frac": 0.426
+  },
+  "Oh My Mahjong Pink Quartz": {
+   "file": "assets/racks/card/oh-my-mahjong-pink-quartz.png",
+   "source": "assets/racks/omm/pink-quartz.jpg",
+   "kind": "omm",
+   "rack_frac": 0.422
+  },
+  "Oh My Mahjong Hot Pink": {
+   "file": "assets/racks/card/oh-my-mahjong-hot-pink.png",
+   "source": "assets/racks/omm/hot-pink.jpg",
+   "kind": "omm",
+   "rack_frac": 0.444
+  },
+  "Oh My Mahjong Burl": {
+   "file": "assets/racks/card/oh-my-mahjong-burl.png",
+   "source": "assets/racks/omm/burl.jpg",
+   "kind": "omm",
+   "rack_frac": 0.419
+  },
+  "Peace Love Mahjong Pink": {
+   "file": "assets/racks/card/peace-love-mahjong-pink.png",
+   "source": "/tmp/mb/plm/r_Pink.png",
+   "kind": "flat",
+   "rack_frac": 1.0
+  },
+  "Peace Love Mahjong Oak": {
+   "file": "assets/racks/card/peace-love-mahjong-oak.png",
+   "source": "/tmp/mb/plm/r_Oak.png",
+   "kind": "flat",
+   "rack_frac": 1.0
+  },
+  "Peace Love Mahjong Chartreuse": {
+   "file": "assets/racks/card/peace-love-mahjong-chartreuse.png",
+   "source": "/tmp/mb/plm/r_Chartreuse.png",
+   "kind": "flat",
+   "rack_frac": 1.0
+  },
+  "Bam Bird Boutique Walnut": {
+   "file": "assets/racks/card/bam-bird-boutique-walnut.png",
+   "source": "/tmp/mb/rkalt/walnut.png",
+   "kind": "flat",
+   "rack_frac": 1.0
+  },
+  "Middle & Main Hawksbill Heritage Tortoise": {
+   "file": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png",
+   "source": "assets/racks/cutouts/middle-and-main-hawksbill-tortoise-1.png",
+   "kind": "cut",
+   "rack_frac": 1.0
+  },
+  "Middle & Main Scalloped Beechwood": {
+   "file": "assets/racks/card/middle--main-scalloped-beechwood.png",
+   "source": "assets/racks/cutouts/middle-and-main-scalloped-beechwood-1.png",
+   "kind": "cut",
+   "rack_frac": 1.0
+  },
+  "Miss Mahjong Scalloped Iridescent Opal": {
+   "file": "assets/racks/card/miss-mahjong-scalloped-iridescent-opal.png",
+   "source": "assets/racks/cutouts/miss-mahjong-iridescent-opal-scalloped-1.png",
+   "kind": "cut",
+   "rack_frac": 1.0
+  },
+  "Miss Mahjong Peach Sorbet Scalloped": {
+   "file": "assets/racks/card/miss-mahjong-peach-sorbet-scalloped.png",
+   "source": "assets/racks/cutouts/miss-mahjong-peach-sorbet-scalloped-1.png",
+   "kind": "cut",
+   "rack_frac": 1.0
+  },
+  "Miss Mahjong Cornflower Blue Scalloped": {
+   "file": "assets/racks/card/miss-mahjong-cornflower-blue-scalloped.png",
+   "source": "assets/racks/cutouts/miss-mahjong-cornflower-blue-scalloped-1.png",
+   "kind": "cut",
+   "rack_frac": 1.0
+  },
+  "Miss Mahjong Opal & Brass": {
+   "file": "assets/racks/card/miss-mahjong-opal--brass.png",
+   "source": "assets/racks/cutouts/miss-mahjong-opal-and-brass-1.png",
+   "kind": "cut",
+   "rack_frac": 1.0
+  },
+  "Miss Mahjong Jade & Brass": {
+   "file": "assets/racks/card/miss-mahjong-jade--brass.png",
+   "source": "assets/racks/cutouts/miss-mahjong-jade-and-brass-1.png",
+   "kind": "cut",
+   "rack_frac": 1.0
+  },
+  "Miss Mahjong Brass & Tortoise": {
+   "file": "assets/racks/card/miss-mahjong-brass--tortoise.png",
+   "source": "assets/racks/cutouts/miss-mahjong-brass-and-tortoise-1.png",
+   "kind": "cut",
+   "rack_frac": 1.0
+  },
+  "Mahjong Row & Co. Matcha Green": {
+   "file": "assets/racks/card/mahjong-row--co-matcha-green.png",
+   "source": "assets/racks/cutouts/mahjong-row-and-co-matcha-green-1.png",
+   "kind": "cut",
+   "rack_frac": 1.0
+  },
+  "Mahjong Row & Co. Chestnut Cream": {
+   "file": "assets/racks/card/mahjong-row--co-chestnut-cream.png",
+   "source": "assets/racks/cutouts/mahjong-row-and-co-chestnut-cream-2.png",
+   "kind": "cut",
+   "rack_frac": 1.0
+  },
+  "Mahjong Row & Co. Scalloped Tortoise": {
+   "file": "assets/racks/card/mahjong-row--co-scalloped-tortoise.png",
+   "source": "assets/racks/mrc-scalloped-tortoise.png",
+   "kind": "front",
+   "rack_frac": 1.0
+  },
+  "Middle & Main Hawksbill Tortoise": {
+   "file": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png",
+   "source": "assets/racks/cutouts/middle-and-main-hawksbill-tortoise-1.png",
+   "kind": "cut",
+   "rack_frac": 1.0,
+   "alias_of": "Middle & Main Hawksbill Heritage Tortoise"
+  },
+  "Miss Mahjong Iridescent Opal Scalloped": {
+   "file": "assets/racks/card/miss-mahjong-scalloped-iridescent-opal.png",
+   "source": "assets/racks/cutouts/miss-mahjong-iridescent-opal-scalloped-1.png",
+   "kind": "cut",
+   "rack_frac": 1.0,
+   "alias_of": "Miss Mahjong Scalloped Iridescent Opal"
+  }
+ },
+ "missing": {
+  "Tigre de Tartán Oxblood Scallop": "no photo anywhere yet (doc 48: \"New rack image needed\")"
+ }
+}

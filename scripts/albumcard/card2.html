@@ -1,7 +1,7 @@
 <!doctype html><html><head><meta charset="utf-8"><style>
 /* Album match card (1080x1350), matching the live album cards (e.g. Talulah + Anastasia):
    cream title band, mat edge to edge down to the code footer, Bird & Bamboo chart top right,
-   2-3 separate racks (one copy each) angled across the lower left with white name pills,
+   2-3 separate racks (one copy each, real photos; B&B = our painted render) angled across the lower left with white name pills,
    tile box bottom right with the navy logo box under it, code footer. No brand logo strip. */
 @font-face{font-family:Alfa;src:url(file:///tmp/cc/f/fontsource-alfa-slab-one-5.3.0/package/files/alfa-slab-one-latin-400-normal.woff2)}
 @font-face{font-family:Bitter;font-weight:700;src:url(file:///tmp/cc/f/fontsource-bitter-5.3.0/package/files/bitter-latin-700-normal.woff2)}
@@ -13,6 +13,9 @@
 #bb{position:absolute;right:8px;top:158px;width:310px;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
 #bb .lg{width:246px;height:58px;background:#fbf3ea;border-radius:12px;display:flex;align-items:center;justify-content:center;padding:8px 14px;box-shadow:0 3px 8px rgba(0,0,0,.18)}
 #bb .lg img{max-height:100%;max-width:100%}
+#bb .mr{width:300px;background:#fbf3ea;border-radius:12px;padding:8px 10px 6px;display:flex;flex-direction:column;align-items:center;gap:2px;box-shadow:0 3px 8px rgba(0,0,0,.18)}
+#bb .mr img{width:100%;max-height:70px;object-fit:contain;filter:drop-shadow(0 4px 4px rgba(0,0,0,.25))}
+#bb .mr span{font:700 21px Bitter;color:#1f2a44;text-align:center;line-height:1.1}
 #bb .bar{width:300px;height:44px;display:flex;align-items:center;padding-left:14px;font:700 26px Bitter;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.45);border-radius:3px 0 0 3px;
  background-image:linear-gradient(180deg,rgba(255,255,255,.35),rgba(255,255,255,0) 45%,rgba(0,0,0,.18));box-shadow:0 3px 6px rgba(0,0,0,.25)}
 .rk{position:absolute;transform-origin:0 50%}
@@ -37,12 +40,15 @@ document.getElementById('mat').style.backgroundImage=`url(${D.mat})`;
 document.querySelector('#tile img').src=D.tile;document.getElementById('navy').src=D.navy;
 const bb=document.getElementById('bb');if(D.bb.length){const lg=document.createElement('div');lg.className='lg';lg.innerHTML=`<img src="${D.bblogo}">`;bb.appendChild(lg);
  D.bb.forEach(x=>{const r=document.createElement('div');r.className='bar';r.style.backgroundColor=x.hex;r.textContent=x.name;if(x.light)r.style.color='#2b2b2b',r.style.textShadow='none';bb.appendChild(r)})}
+// mat picks from other brands: brand logo pill + the rack's real photo (Tiffany, Oct 15)
+(D.mr||[]).forEach(x=>{if(x.logo){const lg=document.createElement('div');lg.className='lg';lg.innerHTML=`<img src="${x.logo}">`;bb.appendChild(lg)}
+ const m=document.createElement('div');m.className='mr';m.innerHTML=`<img src="${x.img}"><span>${x.name}</span>`;bb.appendChild(m)});
 // racks: one copy each, separate, angled across the lower left (slots from the live album cards)
 const SL=[[-70,975,-24,700],[-50,1090,-21,700],[-30,1195,-18,680]];
 const rk=document.getElementById('racks');
 D.racks.slice(0,3).forEach((r,i)=>{const s=SL[i+(3-Math.min(3,D.racks.length))];const d=document.createElement('div');d.className='rk';
- d.style.left=s[0]+'px';d.style.top=s[1]+'px';d.style.width=s[3]+'px';d.style.transform=`rotate(${s[2]}deg)`;
- d.innerHTML=`<img src="${r.img}"><b>${r.label}</b>`;rk.appendChild(d)});
+ const w=Math.min(s[3],r.w||s[3]);d.style.left=(w<s[3]?Math.max(s[0],-20):s[0])+'px';d.style.top=(s[1]-(r.ar?w/r.ar*(1-(r.frac||1)):0))+'px';d.style.width=w+'px';d.style.transform=`rotate(${s[2]}deg)`;
+ d.innerHTML=`<img src="${r.img}"><b style="bottom:${(r.frac||1)*100}%">${r.label}</b>`;rk.appendChild(d)});
 if(D.hol){const tb=document.createElement('div');tb.style.cssText=`position:absolute;top:0;left:0;width:1080px;height:132px;background:${D.col}`;document.body.insertBefore(tb,t);
  t.style.color='#fff';t.style.top='34px';t.style.height='98px';t.style.fontSize='80px';t.style.textShadow='4px 4px 0 rgba(0,0,0,.28)';
  const hl=document.createElement('div');hl.style.cssText='position:absolute;top:2px;left:0;width:1080px;height:46px;display:flex;align-items:center;justify-content:center;gap:16px;font:700 32px Bitter;letter-spacing:.24em;color:#fbe7b0;text-shadow:0 2px 3px rgba(0,0,0,.3)';
