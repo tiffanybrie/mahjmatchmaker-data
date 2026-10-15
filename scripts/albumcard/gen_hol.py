@@ -109,18 +109,35 @@ for g in D['G']:
         mi = mat_image(r['m'], r)
         if mi is None: print('NO MAT PHOTO', g['t'], r['m']); continue
         mat = mat_crop(mi)
-        drawn = []; chart = []
-        for k in r['def']:
-            if len(drawn) >= 2: break
-            if k.startswith('bb:'):
-                im = RKS.bb(k[3:]); lab = 'Bird & Bamboo ' + k[3:]
-            else:
-                im = RKS.photo(k); lab = RKS.P[k]['n'] if k in RKS.P else D['RK'][k][0]
-            if im is not None: drawn.append({'img': uri(im, 'PNG'), 'label': lab})
-        dl = {d['label'] for d in drawn}
-        for k in r['def']:
-            if k.startswith('bb:') and 'Bird & Bamboo ' + k[3:] not in dl and k[3:] in BB:
-                chart.append({'name': k[3:], 'hex': BB[k[3:]], 'light': lum(BB[k[3:]]) > 185})
+        drawn = []; chart = []; mr = []
+        def rack(k):
+            if k.startswith('bb:'): return RKS.bb(k[3:]), 'Bird & Bamboo ' + k[3:], 1.0
+            lab = RKS.P[k]['n'] if k in RKS.P else D.get('RK', {}).get(k, [k])[0]
+            return RKS.photo(k), lab, RKS.frac(k)
+        if 'tiles' in r:  # Oct 15: explicit tile racks (lower left, up to 4, same angle + length) and mat picks (upper right)
+            for k in r['tiles'][:4]:
+                im, lab, fr = rack(k)
+                if im is None: print('NO REAL PHOTO', r['m'], k); continue
+                drawn.append({'img': uri(im, 'PNG'), 'label': lab, 'frac': fr, 'ar': im.width / im.height})
+            for k in r.get('mats', []):
+                if k.startswith('bb:'):
+                    if k[3:] in BB: chart.append({'name': k[3:], 'hex': BB[k[3:]], 'light': lum(BB[k[3:]]) > 185})
+                    continue
+                im, lab, fr = rack(k)
+                if im is None: print('NO REAL PHOTO', r['m'], k); continue
+                b = next((b for b in sorted(logos, key=len, reverse=True) if lab.startswith(b + ' ')), None)
+                if b is None and lab.startswith('Middle & Main '): b = 'Middle & Main Mahjong'
+                nm = lab[len(b) + 1:] if b and lab.startswith(b + ' ') else lab.replace('Middle & Main ', '')
+                mr.append({'img': uri(im, 'PNG', maxs=700), 'name': nm, 'logo': uri(R + 'builder/logos/' + logos[b], 'PNG') if b in logos else None})
+        else:
+            for k in r['def']:
+                if len(drawn) >= 2: break
+                im, lab, fr = rack(k)
+                if im is not None: drawn.append({'img': uri(im, 'PNG'), 'label': lab, 'frac': fr, 'ar': im.width / im.height})
+            dl = {d['label'] for d in drawn}
+            for k in r['def']:
+                if k.startswith('bb:') and 'Bird & Bamboo ' + k[3:] not in dl and k[3:] in BB:
+                    chart.append({'name': k[3:], 'hex': BB[k[3:]], 'light': lum(BB[k[3:]]) > 185})
         tname = re.sub(r'\s*\(.*?\)', '', g['n']).strip()
         mname = re.sub(r'\s*\((retired|Nantucket pair|double-sided|Dapper 2)\)', '', r['n'], flags=re.I)
         mname = re.sub(r'\s*\((.*?)\)', r' \1', mname).replace(' Mat', '').replace(' Center', '').replace(' Border', '').strip()
@@ -130,11 +147,11 @@ for g in D['G']:
         slug = re.sub(r'[^a-z0-9]+', '-', f"{g['t']}-mahjong-tiles-{r['b']}-{mname}-mat".lower()).strip('-')
         fn = slug + '.jpg'
         h = html_tpl.replace('__DATA__', json.dumps({'title': title, 'col': col, 'mat': uri(mat, maxs=1400), 'tile': tileuri,
-            'racks': drawn, 'bb': chart[:3], 'bblogo': BBLOGO, 'navy': NAVY, 'code': footer(r['b'], g['t']), 'hol': True, 'flame': FLAME}))
+            'racks': drawn, 'bb': chart[:3], 'mr': mr[:2], 'bblogo': BBLOGO, 'navy': NAVY, 'code': footer(r['b'], g['t']), 'hol': True, 'flame': FLAME}))
         hf = f"/tmp/holcards/html/{slug}.html"; open(hf, 'w').write(h)
         jobs.append((hf, os.path.join(out, fn)))
         manifest.append({'tile': g['t'], 'tileName': g['n'], 'hol': g['hol'], 'mat': r['m'], 'matName': r['n'], 'brand': r['b'],
-                         'star': r.get('star', False), 'racks': r['def'], 'file': fn, 'title': title, 'order': i})
+                         'star': r.get('star', False), 'racks': r.get('tiles', r['def']), 'mat_picks': r.get('mats'), 'file': fn, 'title': title, 'order': i})
 json.dump(manifest, open(os.path.join(out, 'manifest.json'), 'w'), indent=1)
 js = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'shot.js')
 NP = subprocess.run(['npm', 'root', '-g'], capture_output=True, text=True).stdout.strip()

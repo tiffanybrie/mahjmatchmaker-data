@@ -5601,13 +5601,16 @@
   "brand": "Anders Ruff",
   "star": true,
   "racks": [
-   "bb:Radish",
-   "bb:Almond",
-   "bb:Red"
+   "bb:Red",
+   "bb:Evergreen",
+   "Peace Love Mahjong Oak"
   ],
   "file": "december-1994-mahjong-tiles-anders-ruff-evergreen-tartan-mat.jpg",
   "title": "December 1994 + Evergreen & Tartan",
-  "order": 0
+  "order": 0,
+  "mat_picks": [
+   "bb:Dark Teal"
+  ]
  },
  {
   "tile": "december-1994",
@@ -5618,13 +5621,16 @@
   "brand": "Sunday Mahjong",
   "star": true,
   "racks": [
-   "bb:Radish",
-   "bb:Almond",
-   "bb:Pink Coral"
+   "bb:Red",
+   "bb:Evergreen",
+   "Peace Love Mahjong Oak"
   ],
   "file": "december-1994-mahjong-tiles-sunday-mahjong-festive-plaid-mat.jpg",
   "title": "December 1994 + Festive Plaid",
-  "order": 1
+  "order": 1,
+  "mat_picks": [
+   "bb:Pink Coral"
+  ]
  },
  {
   "tile": "december-1994",
@@ -5635,13 +5641,16 @@
   "brand": "Anders Ruff",
   "star": true,
   "racks": [
-   "bb:Radish",
-   "bb:Almond",
-   "bb:Red"
+   "bb:Red",
+   "bb:Evergreen",
+   "Peace Love Mahjong Oak"
   ],
   "file": "december-1994-mahjong-tiles-anders-ruff-tartan-tidings-mat.jpg",
   "title": "December 1994 + Tartan Tidings",
-  "order": 2
+  "order": 2,
+  "mat_picks": [
+   "bb:Red Mahogany"
+  ]
  },
  {
   "tile": "december-1994",
@@ -5652,13 +5661,16 @@
   "brand": "Anders Ruff",
   "star": true,
   "racks": [
-   "bb:Radish",
-   "bb:Almond",
-   "bb:Provincial"
+   "bb:Red",
+   "bb:Evergreen",
+   "Peace Love Mahjong Oak"
   ],
   "file": "december-1994-mahjong-tiles-anders-ruff-tartan-toile-no-l-mat.jpg",
   "title": "December 1994 + Tartan Toile No\u00ebl",
-  "order": 3
+  "order": 3,
+  "mat_picks": [
+   "bb:Provincial"
+  ]
  },
  {
   "tile": "december-1994",
@@ -5669,13 +5681,16 @@
   "brand": "Luxe Mahjong",
   "star": true,
   "racks": [
-   "bb:Radish",
-   "bb:Almond",
-   "www.middleandmainmahjong.com/golden-grain-beechwood-mahjong-rack-and-pusher-set-of-4"
+   "bb:Red",
+   "bb:Evergreen",
+   "Peace Love Mahjong Oak"
   ],
   "file": "december-1994-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
   "title": "December 1994 + The Polo Club",
-  "order": 4
+  "order": 4,
+  "mat_picks": [
+   "www.middleandmainmahjong.com/golden-grain-beechwood-mahjong-rack-and-pusher-set-of-4"
+  ]
  },
  {
   "tile": "holly-jolly-green",

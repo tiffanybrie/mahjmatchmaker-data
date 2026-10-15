@@ -1,8 +1,11 @@
 """December 1994 holiday cards: the 26 YES mats (db xmastiles2, 31 yes) not yet live (5 live:
 Evergreen & Tartan, Tartan Tidings, Tartan Toile Noel, Polo Club, Festive Plaid).
 Writes data_d94.json (data5 + the new december-1994 rows) for scripts/albumcard/gen_hol.py.
-Racks: tile racks = B&B Radish + Almond (the same 2 used on all 5 live December 1994 cards, Claude's defaults
-she OK'd for the holiday launch); third (mat) pick = nearest B&B colour to the mat's main colour, as before."""
+Racks (Tiffany, Oct 15 1pm): tile racks on ALL 31 cards (the 26 new + the 5 live) = B&B Red + B&B Evergreen + PLM Oak
+(NO Radish, NO Almond), lower left, same angle and length (card2.html). Mat pick (upper right) = the row's earlier
+nearest-B&B pick (Polo Club: Middle & Main Scalloped Beechwood photo); if that pick is Red or Evergreen it is recomputed
+without them so the mat group never repeats a tile rack.
+Usage: python3 december_1994_build.py ; then gen_hol.py <S>dec1994_v1/data_d94.json <outdir> $(jq -r '.only[]' only.json)"""
 import json, io, base64, os
 import numpy as np
 from PIL import Image
@@ -15,7 +18,7 @@ ys = [x.split('__', 1)[1] for x in json.load(open(S + 'db/xmastiles2_yes.json'))
 X_order = json.load(open('/tmp/sun/xmas2.json'))['order']
 LIVE = {'evergreen-tartan-mahjong-mat', 'tartan-tidings-mahjong-mat', 'tartan-toile-noel-mahjong-mat', 'polo-club', 'festive-plaid'}
 BB = {x['name']: x['hex'] for x in json.load(open(R + 'work/bbracks.json'))}
-BBL = {k: rgb2lab(np.array([[[int(v[1:3], 16), int(v[3:5], 16), int(v[5:7], 16)]]]) / 255.)[0, 0] for k, v in BB.items() if 'Metallic' not in k and k not in ('Radish', 'Almond', 'Clear')}
+BBL = {k: rgb2lab(np.array([[[int(v[1:3], 16), int(v[3:5], 16), int(v[5:7], 16)]]]) / 255.)[0, 0] for k, v in BB.items() if 'Metallic' not in k and k not in ('Radish', 'Almond', 'Clear', 'Red', 'Evergreen')}
 def uri(im):
     im = im.copy(); im.thumbnail((1600, 1600)); b = io.BytesIO(); im.convert('RGB').save(b, 'JPEG', quality=90)
     return 'data:image/jpeg;base64,' + base64.b64encode(b.getvalue()).decode()
@@ -76,8 +79,18 @@ for y in ys:
         row = {'m': y, 'n': nm, 'b': br, 'img': X[y]['img']}
     t = third(Image.open(S + 'dec_src/' + y + '.png'))
     row['def'] = ['bb:Radish', 'bb:Almond', 'bb:' + t]; row['star'] = False
-    new.append(row); picks[y] = t
+    new.append(row)
 grp['rows'] = grp['rows'] + new
+TILES = ['bb:Red', 'bb:Evergreen', 'Peace Love Mahjong Oak']
+D.setdefault('RK', {})['Peace Love Mahjong Oak'] = ['Peace Love Mahjong Oak']
+for r in grp['rows']:
+    old = r['def'][2] if len(r['def']) > 2 else None
+    if old is None or old in ('bb:Red', 'bb:Evergreen'):
+        src = S + 'dec_src/' + r['m'] + '.png'
+        if not os.path.exists(src): src = S + 'dec_src/britt-crimson-harvest.png' if r['m'].startswith('crimson-harvest') else src
+        old = 'bb:' + third(Image.open(src))
+    r['tiles'] = TILES; r['mats'] = [old]; picks[r['m']] = old
+new = grp['rows']
 json.dump(D, open(S + 'dec1994_v1/data_d94.json', 'w'))
 json.dump({'only': [f"december-1994:{r['m']}" for r in new], 'third_pick': picks}, open(S + 'dec1994_v1/only.json', 'w'), indent=1)
 for r in new: print(r['m'], '|', r['n'], '|', r['b'], '|', r['def'][2])

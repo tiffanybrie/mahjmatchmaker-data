@@ -2,7 +2,7 @@
 Usage: python3 gen2.py spec.json outdir
 spec: {mat_file, mat_crop, code?, max_racks?, mat_racks?:[labels], cards:[{slug,title,col,tile_file,racks:[labels...],bb:[B&B labels],file,code?}]}
 Lower left (doc 48 sec. 4) = racks that match the TILES: card['racks'] = Tiffany's approved list
-(config/tile-racks-picks.json final_lists), drawn in that order, up to max_racks (3), one copy each, each a
+(config/tile-racks-picks.json final_lists), drawn in that order, up to max_racks (4), one copy each, each a
 REAL photo (racks.py); B&B is the one generated rack. A rack with no real photo is skipped and reported.
 Top right = racks that match the MAT: spec mat_racks (same on every card of a mat book). B&B picks are
 colour bars under the B&B logo; any other brand's pick is its real photo under that brand's logo.
@@ -42,17 +42,18 @@ def chart_for(c):
         b, n = brand_of(l)
         other.append({'img': uri(im, 'PNG', maxs=700), 'name': n, 'logo': uri(R + 'builder/logos/' + logos[b], 'PNG') if b in logos else None})
     return bars, other
-jobs = []; missing = {}
+jobs = []; missing = {}; over = {}
 for c in spec['cards']:
     drawn = []
     labels = list(c['racks']) if 'mat_racks' in spec or 'mat_racks' in c else [l for l in c['racks'] if not l.startswith('Bird & Bamboo')] + [l for l in c['racks'] if l.startswith('Bird & Bamboo')] + c.get('bb', [])
     seen = set()
     for l in labels:
-        if l in seen or len(drawn) >= spec.get('max_racks', 3): continue
+        if l in seen: continue
+        if len(drawn) >= min(4, spec.get('max_racks', 4)): over.setdefault(c['slug'], []).append(l); continue
         seen.add(l); r = RK.by_label(l)
         if r:
             fr = 1.0 if l.startswith('Bird & Bamboo ') else RK.frac(l)  # size by the RACK; an OMM photo's pusher overhangs above it
-            drawn.append({'img': uri(r[0], 'PNG', maxs=1400), 'label': r[1], 'frac': fr, 'ar': r[0].width / r[0].height, 'w': round(spec.get('rack_h', 84) * r[0].width / (r[0].height * fr))})
+            drawn.append({'img': uri(r[0], 'PNG', maxs=1400), 'label': r[1], 'frac': fr, 'ar': r[0].width / r[0].height})  # card2: same angle + same length for every rack (Oct 15)
         else: missing.setdefault(c['slug'], []).append(l)
     dl = {d['label'] for d in drawn}
     ch = chart_for(c); other = []
@@ -74,4 +75,5 @@ for i in range(0, len(jobs), 40):
     subprocess.run(['node', js] + [x for p in jobs[i:i+40] for x in p], check=True, env={**os.environ, 'NODE_PATH': NP}, stdout=subprocess.DEVNULL)
 print(len(jobs), 'cards ->', out)
 if missing: print('NO REAL PHOTO (left off the card):', json.dumps(missing, ensure_ascii=False))
-json.dump(missing, open(os.path.join(out, '_missing_racks.json'), 'w'), indent=1, ensure_ascii=False)
+if over: print('OVER THE 4-RACK CAPACITY (left off the card):', json.dumps(over, ensure_ascii=False))
+json.dump({'no_real_photo': missing, 'over_capacity': over} if over else missing, open(os.path.join(out, '_missing_racks.json'), 'w'), indent=1, ensure_ascii=False)

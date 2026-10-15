@@ -23,20 +23,21 @@ def panel_html(w, h):
         real = r[3] if len(r) > 3 else ''
         if real:
             if real not in IDX: missing.append(real); continue
-            im = Image.open(ROOT + '/' + IDX[real]['file']).convert('RGBA'); im.thumbnail((520, 120))
+            im = Image.open(ROOT + '/' + IDX[real]['file']).convert('RGBA'); im = im.resize((480, max(1, round(im.height * 480 / im.width))), Image.LANCZOS)
             rows.append(f"<div class=rp><img src='{b64(im)}'><span>{name}</span></div>")
         else:
             rows.append(f"<div class=rk style='background:{hx};color:{'#fff' if dark else '#2a2036'}'>{name}</div>")
+    n = len(rows); rh = max(24, min(42, int((h - 24 - (34 if spec.get('rackNote') else 0) - 5 * (n - 1)) / max(n, 1))))
     return f"""<!doctype html><html><head><meta charset=utf8><style>
 @font-face{{font-family:'Bitter';src:url(file://{F}fontsource-bitter-5.3.0/package/files/bitter-latin-400-normal.woff2)}}
 @font-face{{font-family:'BitterB';src:url(file://{F}fontsource-bitter-5.3.0/package/files/bitter-latin-700-normal.woff2)}}
 *{{box-sizing:border-box;margin:0}}html,body{{width:{w}px;height:{h}px;overflow:hidden;background:#f6e9df}}
-.rks{{width:{w}px;height:{h}px;display:flex;flex-direction:column;justify-content:center;gap:6px;background:#fff8f2;border-radius:18px;padding:12px 16px}}
-.rk{{font-family:BitterB;font-size:17px;padding:6px 12px;border-radius:6px;box-shadow:inset 0 -4px 0 rgba(0,0,0,.12)}}
-.rp{{display:flex;align-items:center;gap:10px;height:42px;padding:0 4px;border-radius:6px;background:#f3e6da}}
-.rp img{{height:38px;width:168px;object-fit:contain;object-position:left center;filter:drop-shadow(0 2px 2px rgba(0,0,0,.25))}}
-.rp span{{font-family:BitterB;font-size:17px;color:#2a2036;line-height:1.1}}
-small{{font-family:Bitter;font-size:13px;color:#6b5a77;text-align:center;line-height:1.3}}
+.rks{{width:{w}px;height:{h}px;display:flex;flex-direction:column;justify-content:center;gap:5px;background:#fff8f2;border-radius:18px;padding:10px 16px}}
+.rk{{font-family:BitterB;font-size:{min(17, rh - 9)}px;height:{rh}px;display:flex;align-items:center;padding:0 12px;border-radius:6px;box-shadow:inset 0 -4px 0 rgba(0,0,0,.12)}}
+.rp{{display:flex;align-items:center;gap:10px;height:{rh}px;padding:0 6px;border-radius:6px;background:#f3e6da;overflow:visible}}
+.rp img{{width:120px;height:auto;flex:none;filter:drop-shadow(0 2px 2px rgba(0,0,0,.25))}} /* Oct 15: every rack photo the SAME length */
+.rp span{{white-space:nowrap;font-family:BitterB;font-size:{min(16, rh - 9)}px;color:#2a2036;line-height:1.1}}
+small{{font-family:Bitter;font-size:12px;color:#6b5a77;text-align:center;line-height:1.3}}
 </style></head><body><div class=rks>{''.join(rows)}<small>{spec.get('rackNote', '')}</small></div></body></html>""", missing
 
 NP = subprocess.run(['npm', 'root', '-g'], capture_output=True, text=True).stdout.strip()
