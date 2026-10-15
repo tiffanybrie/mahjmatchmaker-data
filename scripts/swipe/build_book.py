@@ -26,8 +26,8 @@ from PIL import Image, ImageChops, ImageStat
 
 EXCL = re.compile(r"travel|\bmini\b|mini-|starter|\bkit\b|bundle|caddy|desk mat|desk\b|table cover|"
                   r"foldable|solo play|\bpool\b|logo mat|art print|\btube only|\bbag\b|pet mat|bath mat", re.I)
-HOLIDAY = re.compile(r"christmas|xmas|holly|yuletide|merriment|nutcracker|sugarplum|\bclara\b|santa|noel|jingle|"
-                     r"candy cane|\bcane mat|winter wonderland|mistletoe|reindeer|snowflake|halloween|spooky|valentine|easter|hanukkah", re.I)
+HOLIDAY = re.compile(r"christmas|xmas|holly|yuletide|merriment|winterberry|nutcracker|sugarplum|\bclara\b|santa|noel|jingle|"
+                     r"candy cane|\bcane mat|winter wonderland|mistletoe|reindeer|snowflake|halloween|o-ween|\bween\b|spooky|pumpkin|witch|valentine|easter|hanukkah", re.I)
 UA = {"User-Agent": "Mozilla/5.0"}
 
 
@@ -129,6 +129,11 @@ def main(spec_path, out):
     os.makedirs(out + "/t", exist_ok=True)
     rep, items = [], []
     for n, it in enumerate(S["items"]):
+        if it.get("file"):  # hand-kept clean photo (retired OMM mats, Squarespace brands, her cutouts)
+            im = trim(Image.open(it["file"]).convert("RGB")); im.thumbnail((1600, 1600))
+            fn = f"m/{n}.jpg"; im.save(os.path.join(out, fn), "JPEG", quality=86)
+            items.append({"id": it["id"], "label": it["label"], "img": fn, "url": it.get("url", ""), "w": im.width, "h": im.height})
+            rep.append((it["id"], f"OK file {im.width}x{im.height}")); continue
         key = it["key"]
         m = M.get(key)
         if not m or key.startswith("alb:"):
@@ -155,16 +160,32 @@ def main(spec_path, out):
         items.append({"id": it["id"], "label": it.get("label") or f"{m['n']} · {m['bn']}", "img": fn,
                       "url": m.get("u", ""), "w": im.width, "h": im.height})
         rep.append((it["id"], f"OK {how} {im.width}x{im.height}"))
+    # pool for "+ Try another mat": the rest of the vetted catalog (catalog-size images, lazy-loaded)
+    os.makedirs(out + "/p", exist_ok=True)
+    have = {x["id"] for x in items}
+    pool = []
+    for n, it in enumerate(S.get("pool", [])):
+        m = M.get(it["key"])
+        if not m or it["id"] in have or excluded(m, it["key"]) or m.get("f") not in R: continue
+        im = b64img(R[m["f"]])
+        if im.mode in ("RGBA", "LA", "P"):
+            im = im.convert("RGBA"); bg = Image.new("RGB", im.size, "white"); bg.paste(im, mask=im.split()[3]); im = bg
+        im = trim(im.convert("RGB")); fn = f"p/{n}.jpg"; im.save(os.path.join(out, fn), "JPEG", quality=82)
+        pool.append({"id": it["id"], "label": f"{m['n']} · {m['bn']}", "img": fn, "url": m.get("u", "")})
     g = S["group"]
     pile = Image.open(g["pile"]).convert("RGB")
     pile.thumbnail((1400, 1400))
     pile.save(out + "/t/pile.jpg", "JPEG", quality=90)
     D = {"col": S["col"], "mode": S.get("mode", "tile"), "listTitle": S["listTitle"],
          "groups": [{"id": g["id"], "label": g["label"], "sub": g["sub"], "img": "t/pile.jpg", "thumb": "t/pile.jpg"}],
-         "items": items, "order": {g["id"]: [x["id"] for x in items]}, "pileShadow": True}
+         "items": items + pool, "order": {g["id"]: [x["id"] for x in items]}, "pileShadow": True}
     tpl = open(S["template"]).read()
     html = tpl.replace("__DATA__", json.dumps(D, ensure_ascii=False))
     html = re.sub(r"<title>.*?</title>", f"<title>{S['title']}</title>", html, count=1)
+    # "+ Try another mat" sheet: lazy images + a search box (Tiffany, Oct 15: she must be able to pull in mats she thinks of)
+    html = html.replace("const im=document.createElement('img');im.src=x.img;", "const im=document.createElement('img');im.loading='lazy';im.src=x.img;")
+    html = html.replace("$('shT').textContent='Add another mat (all moody, classic and neutral mats)';",
+        "$('shT').textContent='Add another mat';{const q=document.createElement('input');q.placeholder='Search mats or brands…';q.style.cssText='grid-column:1/-1;font:inherit;font-size:16px;padding:10px 12px;border-radius:10px;border:0';q.oninput=()=>{const t=q.value.toLowerCase();[...B.querySelectorAll('button.it')].forEach(b=>b.style.display=b.textContent.toLowerCase().includes(t)?'':'none')};B.append(q);setTimeout(()=>q.focus(),50)}")
     open(out + "/index.html", "w").write(html)
     json.dump(rep, open(out + "/report.json", "w"), indent=0)
     ok = sum(1 for _, r in rep if r.startswith("OK"))
