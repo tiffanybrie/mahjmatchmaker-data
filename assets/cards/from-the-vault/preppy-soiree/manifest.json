@@ -3,19 +3,22 @@
  "cards": [
   {
    "order": 1,
-   "vote_id": "omm-chantilly",
+   "vote_id": "bam-navy-vegan-leather",
    "star": false,
-   "mat": "Chantilly",
+   "mat": "Navy Vegan Leather",
+   "brand": "Bam Bird Boutique",
    "retired_mat": false,
    "holiday": false,
-   "file": "preppy-soiree-mahjong-tiles-oh-my-mahjong-chantilly-mat.jpg",
+   "file": "preppy-soiree-mahjong-tiles-bam-bird-boutique-navy-vegan-leather-mat.jpg",
    "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "vault book m/omm-chantilly.jpg",
+   "src": "assets/mats/other/bam-bird-boutique-navy-vegan-leather.jpg",
    "src_size": [
-    1400,
-    1397
+    1746,
+    1741
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null,
+   "note": "added Oct 15 6:50pm (her 'Navy Leatherette')"
   },
   {
    "order": 2,
@@ -31,10 +34,28 @@
     1395,
     1400
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
    "order": 3,
+   "vote_id": "omm-chantilly",
+   "star": false,
+   "mat": "Chantilly",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "preppy-soiree-mahjong-tiles-oh-my-mahjong-chantilly-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "vault book m/omm-chantilly.jpg",
+   "src_size": [
+    1400,
+    1397
+   ],
+   "racks": [],
+   "mat_racks": null
+  },
+  {
+   "order": 4,
    "vote_id": "omm-jade",
    "star": false,
    "mat": "Jade",
@@ -47,10 +68,11 @@
     1400,
     1398
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
-   "order": 4,
+   "order": 5,
    "vote_id": "omm-radiance",
    "star": false,
    "mat": "Radiance",
@@ -63,10 +85,11 @@
     1400,
     1390
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
-   "order": 5,
+   "order": 6,
    "vote_id": "omm-isla",
    "star": false,
    "mat": "Isla",
@@ -79,10 +102,11 @@
     1398,
     1400
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
-   "order": 6,
+   "order": 7,
    "vote_id": "omm-vivara",
    "star": false,
    "mat": "Vivara",
@@ -95,10 +119,11 @@
     1395,
     1400
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
-   "order": 7,
+   "order": 8,
    "vote_id": "omm-astor",
    "star": false,
    "mat": "Astor",
@@ -111,10 +136,11 @@
     1400,
     1320
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
-   "order": 8,
+   "order": 9,
    "vote_id": "omm-peri-twinkle",
    "star": false,
    "mat": "Peri-twinkle",
@@ -127,10 +153,11 @@
     1393,
     1400
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
-   "order": 9,
+   "order": 10,
    "vote_id": "omm-amethyst",
    "star": false,
    "mat": "Amethyst",
@@ -143,10 +170,11 @@
     1736,
     1730
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
-   "order": 10,
+   "order": 11,
    "vote_id": "omm-hawthorne",
    "star": false,
    "mat": "Hawthorne",
@@ -159,10 +187,11 @@
     1400,
     1395
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
-   "order": 11,
+   "order": 12,
    "vote_id": "omm-elysium",
    "star": false,
    "mat": "Elysium",
@@ -175,10 +204,11 @@
     1400,
     1399
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
-   "order": 12,
+   "order": 13,
    "vote_id": "omm-sedona",
    "star": false,
    "mat": "Sedona",
@@ -191,10 +221,11 @@
     1379,
     1400
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
-   "order": 13,
+   "order": 14,
    "vote_id": "omm-larkspur",
    "star": false,
    "mat": "Larkspur",
@@ -207,23 +238,8 @@
     1394,
     1400
    ],
-   "racks": []
-  },
-  {
-   "order": 14,
-   "vote_id": "omm-cognac",
-   "star": false,
-   "mat": "Cognac",
-   "retired_mat": false,
-   "holiday": false,
-   "file": "preppy-soiree-mahjong-tiles-oh-my-mahjong-cognac-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "vault book m/omm-cognac.jpg",
-   "src_size": [
-    1392,
-    1400
-   ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
    "order": 15,
@@ -239,9 +255,27 @@
     520,
     520
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
+  },
+  {
+   "order": 16,
+   "vote_id": "omm-cognac",
+   "star": false,
+   "mat": "Cognac",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "preppy-soiree-mahjong-tiles-oh-my-mahjong-cognac-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "vault book m/omm-cognac.jpg",
+   "src_size": [
+    1392,
+    1400
+   ],
+   "racks": [],
+   "mat_racks": null
   }
  ],
  "title_color": "#5a7f9e",
- "racks_note": "no final_lists entry; no racks"
+ "racks_note": "no racks yet"
 }

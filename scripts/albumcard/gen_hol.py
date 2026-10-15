@@ -128,7 +128,7 @@ for g in D['G']:
                 b = next((b for b in sorted(logos, key=len, reverse=True) if lab.startswith(b + ' ')), None)
                 if b is None and lab.startswith('Middle & Main '): b = 'Middle & Main Mahjong'
                 nm = lab[len(b) + 1:] if b and lab.startswith(b + ' ') else lab.replace('Middle & Main ', '')
-                mr.append({'img': uri(im, 'PNG', maxs=700), 'name': nm, 'logo': uri(R + 'builder/logos/' + logos[b], 'PNG') if b in logos else None})
+                mr.append({'img': uri(im, 'PNG', maxs=700), 'name': nm, 'full': lab})  # Oct 15 evening: no rack-brand logos on the mat side
         else:
             for k in r['def']:
                 if len(drawn) >= 2: break
@@ -146,7 +146,8 @@ for g in D['G']:
         col = COLS.get(g['t'], '#a3192e')
         slug = re.sub(r'[^a-z0-9]+', '-', f"{g['t']}-mahjong-tiles-{r['b']}-{mname}-mat".lower()).strip('-')
         fn = slug + '.jpg'
-        h = html_tpl.replace('__DATA__', json.dumps({'title': title, 'col': col, 'mat': uri(mat, maxs=1400), 'tile': tileuri,
+        tl = RKS.tile_logo(g.get('b')); tl = uri(tl, 'PNG', maxs=500) if tl else None  # tile set logo flag (Oct 15 evening)
+        h = html_tpl.replace('__DATA__', json.dumps({'tlogo': tl, 'title': title, 'col': col, 'mat': uri(mat, maxs=1400), 'tile': tileuri,
             'racks': drawn, 'bb': chart[:3], 'mr': mr[:2], 'bblogo': BBLOGO, 'navy': NAVY, 'code': footer(r['b'], g['t']), 'hol': True, 'flame': FLAME}))
         hf = f"/tmp/holcards/html/{slug}.html"; open(hf, 'w').write(h)
         jobs.append((hf, os.path.join(out, fn)))

@@ -265,7 +265,7 @@
   "nantucket": [
    "Peace Love Mahjong Oak",
    "Middle & Main Hawksbill Heritage Tortoise",
-   "Bird & Bamboo Light Blue"
+   "Bird & Bamboo Kelly Green"
   ],
   "osler": [
    "Bam Bird Boutique Walnut",
@@ -285,7 +285,7 @@
   ],
   "pippa": [
    "Miss Mahjong Scalloped Iridescent Opal",
-   "Bird & Bamboo Cherry Red",
+   "Bird & Bamboo Magenta",
    "Bird & Bamboo Icy Mint"
   ],
   "seabreeze": [
@@ -354,28 +354,19 @@
   "papaya-spritz": [
    "Peace Love Mahjong Oak",
    "Bird & Bamboo Lime Green",
-   "Bird & Bamboo Periwinkle Blue"
-  ],
-  "pippa-magenta": [
-   "Miss Mahjong Scalloped Iridescent Opal",
-   "Bird & Bamboo Magenta",
-   "Bird & Bamboo Icy Mint"
-  ],
-  "pippa-cherry-red": [
-   "Miss Mahjong Scalloped Iridescent Opal",
-   "Bird & Bamboo Cherry Red",
-   "Bird & Bamboo Icy Mint"
+   "Bird & Bamboo Lavender"
   ],
   "lilac-soiree": [
    "Peace Love Mahjong Oak",
-   "Bird & Bamboo Dark Navy",
+   "Bird & Bamboo Dark Blue",
    "Bird & Bamboo Ballet Pink"
   ],
   "spring-love": [
-   "Peace Love Mahjong Oak",
+   "Middle & Main Scalloped Beechwood",
    "Bird & Bamboo Lime Green",
    "Bird & Bamboo Lavender"
   ]
  },
- "_note_oct15": "Oct 15 1pm (Tiffany, Larkspur card review): Glitterville Ballet Pink->Light Pink; Heritage 2.0 Bam Bird Walnut->B&B Evergreen; Limoncello Peony->Hot Pink; Lola M&M Tortoise->MMIOS (Miss Mahjong Scalloped Iridescent Opal); Luminaire Light Pink->Ballet Pink; Moonlight +Dark Blue; 'Dandy' Powder Blue->Light Blue applied to Nantucket (Dandy has no Powder Blue; confirm with Tiffany); Osler +Wine; Papaya Spritz +Lime Green +Periwinkle Blue (new list, PLM Oak kept); Pippa Pink Coral->Cherry Red OR Magenta (pippa = Cherry Red until she picks; both in pippa-cherry-red / pippa-magenta); Solara +Jade; Talulah Penny Metallic->Light Pink; Lilac Soiree (new) PLM Oak + Dark Navy + Ballet Pink; Spring Love (new) PLM Oak + Lime Green + Lavender."
+ "_note_oct15": "Oct 15 1pm (Tiffany, Larkspur card review): Glitterville Ballet Pink->Light Pink; Heritage 2.0 Bam Bird Walnut->B&B Evergreen; Limoncello Peony->Hot Pink; Lola M&M Tortoise->MMIOS (Miss Mahjong Scalloped Iridescent Opal); Luminaire Light Pink->Ballet Pink; Moonlight +Dark Blue; 'Dandy' Powder Blue->Light Blue applied to Nantucket (Dandy has no Powder Blue; confirm with Tiffany); Osler +Wine; Papaya Spritz +Lime Green +Periwinkle Blue (new list, PLM Oak kept); Pippa Pink Coral->Cherry Red OR Magenta (pippa = Cherry Red until she picks; both in pippa-cherry-red / pippa-magenta); Solara +Jade; Talulah Penny Metallic->Light Pink; Lilac Soiree (new) PLM Oak + Dark Navy + Ballet Pink; Spring Love (new) PLM Oak + Lime Green + Lavender.",
+ "_note_oct15_evening": "Oct 15 6:50pm (Tiffany, Larkspur card review round 2): Nantucket B&B Light Blue->Kelly Green; Papaya Spritz B&B Periwinkle Blue->Lavender; Pippa = Magenta (Cherry Red variant dropped; one pippa list); Lilac Soiree B&B Dark Navy->Dark Blue; Spring Love PLM Oak->Middle & Main Scalloped Beechwood. From the Vault Lilac Soiree album cards use their own tile racks (PLM Oak + B&B Light Pink + B&B Dark Navy, her vault note) in scripts/albumcard/specs/vault_build.py."
 }

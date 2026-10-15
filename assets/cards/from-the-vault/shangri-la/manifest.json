@@ -15,7 +15,8 @@
     1400,
     1398
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
    "order": 2,
@@ -31,74 +32,11 @@
     1400,
     1380
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
    "order": 3,
-   "vote_id": "omm-birdie-green",
-   "star": false,
-   "mat": "Birdie Green",
-   "retired_mat": true,
-   "holiday": false,
-   "file": "shangri-la-mahjong-tiles-oh-my-mahjong-birdie-green-mat.jpg",
-   "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM",
-   "src": "assets/mats/omm-retired/birdie-green.jpg",
-   "src_size": [
-    1952,
-    1947
-   ],
-   "racks": []
-  },
-  {
-   "order": 4,
-   "vote_id": "omm-birdie-pink",
-   "star": false,
-   "mat": "Birdie Pink",
-   "retired_mat": true,
-   "holiday": false,
-   "file": "shangri-la-mahjong-tiles-oh-my-mahjong-birdie-pink-mat.jpg",
-   "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM",
-   "src": "assets/mats/omm-retired/birdie-pink.jpg",
-   "src_size": [
-    1400,
-    1394
-   ],
-   "racks": []
-  },
-  {
-   "order": 5,
-   "vote_id": "omm-luna",
-   "star": false,
-   "mat": "Luna",
-   "retired_mat": false,
-   "holiday": false,
-   "file": "shangri-la-mahjong-tiles-oh-my-mahjong-luna-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "vault book m/omm-luna.jpg",
-   "src_size": [
-    1395,
-    1400
-   ],
-   "racks": []
-  },
-  {
-   "order": 6,
-   "vote_id": "omm-mirage",
-   "star": false,
-   "mat": "Mirage",
-   "retired_mat": true,
-   "holiday": false,
-   "file": "shangri-la-mahjong-tiles-oh-my-mahjong-mirage-mat.jpg",
-   "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM",
-   "src": "assets/mats/omm-retired/mirage.jpg",
-   "src_size": [
-    1663,
-    1677
-   ],
-   "racks": []
-  },
-  {
-   "order": 7,
    "vote_id": "omm-esme",
    "star": false,
    "mat": "Esme",
@@ -111,58 +49,45 @@
     1400,
     1397
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
-   "order": 8,
-   "vote_id": "omm-soho",
+   "order": 4,
+   "vote_id": "omm-birdie-green",
    "star": false,
-   "mat": "SoHo",
+   "mat": "Birdie Green",
    "retired_mat": true,
    "holiday": false,
-   "file": "shangri-la-mahjong-tiles-oh-my-mahjong-soho-mat.jpg",
+   "file": "shangri-la-mahjong-tiles-oh-my-mahjong-birdie-green-mat.jpg",
    "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM",
-   "src": "assets/mats/omm-retired/soho.jpg",
+   "src": "assets/mats/omm-retired/birdie-green.jpg",
    "src_size": [
-    1400,
-    1369
+    1952,
+    1947
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
-   "order": 9,
-   "vote_id": "omm-elysium",
+   "order": 5,
+   "vote_id": "omm-birdie-pink",
    "star": false,
-   "mat": "Elysium",
-   "retired_mat": false,
-   "holiday": false,
-   "file": "shangri-la-mahjong-tiles-oh-my-mahjong-elysium-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "vault book m/omm-elysium.jpg",
-   "src_size": [
-    1400,
-    1399
-   ],
-   "racks": []
-  },
-  {
-   "order": 10,
-   "vote_id": "omm-spring-fling",
-   "star": false,
-   "mat": "Spring Fling",
+   "mat": "Birdie Pink",
    "retired_mat": true,
    "holiday": false,
-   "file": "shangri-la-mahjong-tiles-oh-my-mahjong-spring-fling-mat.jpg",
+   "file": "shangri-la-mahjong-tiles-oh-my-mahjong-birdie-pink-mat.jpg",
    "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM",
-   "src": "assets/mats/omm-retired/spring-fling.png",
+   "src": "assets/mats/omm-retired/birdie-pink.jpg",
    "src_size": [
-    2000,
-    2000
+    1400,
+    1394
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
-   "order": 11,
+   "order": 6,
    "vote_id": "omm-veranda",
    "star": false,
    "mat": "Veranda",
@@ -175,7 +100,93 @@
     1383,
     1400
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
+  },
+  {
+   "order": 7,
+   "vote_id": "omm-luna",
+   "star": false,
+   "mat": "Luna",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "shangri-la-mahjong-tiles-oh-my-mahjong-luna-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "vault book m/omm-luna.jpg",
+   "src_size": [
+    1395,
+    1400
+   ],
+   "racks": [],
+   "mat_racks": null
+  },
+  {
+   "order": 8,
+   "vote_id": "omm-mirage",
+   "star": false,
+   "mat": "Mirage",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "shangri-la-mahjong-tiles-oh-my-mahjong-mirage-mat.jpg",
+   "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM",
+   "src": "assets/mats/omm-retired/mirage.jpg",
+   "src_size": [
+    1663,
+    1677
+   ],
+   "racks": [],
+   "mat_racks": null
+  },
+  {
+   "order": 9,
+   "vote_id": "omm-soho",
+   "star": false,
+   "mat": "SoHo",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "shangri-la-mahjong-tiles-oh-my-mahjong-soho-mat.jpg",
+   "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM",
+   "src": "assets/mats/omm-retired/soho.jpg",
+   "src_size": [
+    1400,
+    1369
+   ],
+   "racks": [],
+   "mat_racks": null
+  },
+  {
+   "order": 10,
+   "vote_id": "omm-elysium",
+   "star": false,
+   "mat": "Elysium",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "shangri-la-mahjong-tiles-oh-my-mahjong-elysium-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "vault book m/omm-elysium.jpg",
+   "src_size": [
+    1400,
+    1399
+   ],
+   "racks": [],
+   "mat_racks": null
+  },
+  {
+   "order": 11,
+   "vote_id": "omm-spring-fling",
+   "star": false,
+   "mat": "Spring Fling",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "shangri-la-mahjong-tiles-oh-my-mahjong-spring-fling-mat.jpg",
+   "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM",
+   "src": "assets/mats/omm-retired/spring-fling.png",
+   "src_size": [
+    2000,
+    2000
+   ],
+   "racks": [],
+   "mat_racks": null
   },
   {
    "order": 12,
@@ -191,7 +202,8 @@
     1392,
     1400
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
    "order": 13,
@@ -207,7 +219,8 @@
     1382,
     1400
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
    "order": 14,
@@ -223,7 +236,8 @@
     1397,
     1400
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   },
   {
    "order": 15,
@@ -239,9 +253,10 @@
     1374,
     1400
    ],
-   "racks": []
+   "racks": [],
+   "mat_racks": null
   }
  ],
  "title_color": "#1a7f63",
- "racks_note": "no final_lists entry; no racks"
+ "racks_note": "no racks yet"
 }

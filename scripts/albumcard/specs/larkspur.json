@@ -1,5 +1,5 @@
 {
- "_note": "Larkspur album cards (30). Tile racks = Tiffany's approved final_lists (config/tile-racks-picks.json); mat racks = her Larkspur picks (config/matcard/larkspur.json: Lime Green + Miss Mahjong Cornflower Blue Scalloped, which replaced Periwinkle Blue Oct 13). Sets with no approved list keep their earlier non-B&B tile rack. Oct 15: up to 4 tile racks, all the same angle/length; Pippa in two versions (Cherry Red / Magenta) for her pick.",
+ "_note": "Larkspur album cards (30). Tile racks = Tiffany's approved final_lists (config/tile-racks-picks.json); mat racks = her Larkspur picks (config/matcard/larkspur.json: Lime Green + Miss Mahjong Cornflower Blue Scalloped, which replaced Periwinkle Blue Oct 13). Sets with no approved list keep their earlier non-B&B tile rack. Oct 15: up to 4 tile racks, all the same angle/length. Oct 15 evening: one Pippa card (Magenta); racks off the left edge, tile logo flag (card2.html).",
  "mat_file": "assets/launches/omm-larkspur-mat/01.jpg",
  "mat_crop": [
   150,
@@ -261,7 +261,7 @@
    "racks": [
     "Peace Love Mahjong Oak",
     "Middle & Main Hawksbill Heritage Tortoise",
-    "Bird & Bamboo Light Blue"
+    "Bird & Bamboo Kelly Green"
    ],
    "file": "nantucket-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
    "photo": [
@@ -310,7 +310,7 @@
    "racks": [
     "Peace Love Mahjong Oak",
     "Bird & Bamboo Lime Green",
-    "Bird & Bamboo Periwinkle Blue"
+    "Bird & Bamboo Lavender"
    ],
    "file": "papaya-spritz-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
    "photo": [
@@ -335,23 +335,7 @@
    ]
   },
   {
-   "slug": "pippa-cherry-red",
-   "title": "Pippa + Larkspur",
-   "col": "#e1ab13",
-   "tile_file": "assets/tiles/album/pippa.jpg",
-   "tilefit": "cover",
-   "racks": [
-    "Miss Mahjong Scalloped Iridescent Opal",
-    "Bird & Bamboo Cherry Red",
-    "Bird & Bamboo Icy Mint"
-   ],
-   "file": "pippa-mahjong-tiles-oh-my-mahjong-larkspur-mat-cherry-red.jpg",
-   "photo": [
-    "Miss Mahjong Opal & Brass"
-   ]
-  },
-  {
-   "slug": "pippa-magenta",
+   "slug": "pippa",
    "title": "Pippa + Larkspur",
    "col": "#e1ab13",
    "tile_file": "assets/tiles/album/pippa.jpg",
@@ -361,7 +345,7 @@
     "Bird & Bamboo Magenta",
     "Bird & Bamboo Icy Mint"
    ],
-   "file": "pippa-mahjong-tiles-oh-my-mahjong-larkspur-mat-magenta.jpg",
+   "file": "pippa-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
    "photo": [
     "Miss Mahjong Opal & Brass"
    ]
@@ -485,7 +469,7 @@
    "tilefit": "cover",
    "racks": [
     "Peace Love Mahjong Oak",
-    "Bird & Bamboo Dark Navy",
+    "Bird & Bamboo Dark Blue",
     "Bird & Bamboo Ballet Pink"
    ],
    "file": "vault-lilac-soiree-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
@@ -501,7 +485,7 @@
    "tile_file": "assets/tiles/album/spring-love.jpg",
    "tilefit": "cover",
    "racks": [
-    "Peace Love Mahjong Oak",
+    "Middle & Main Scalloped Beechwood",
     "Bird & Bamboo Lime Green",
     "Bird & Bamboo Lavender"
    ],

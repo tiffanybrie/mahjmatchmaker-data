@@ -6,7 +6,9 @@ Lower left (doc 48 sec. 4) = racks that match the TILES: card['racks'] = Tiffany
 REAL photo (racks.py); B&B is the one generated rack. A rack with no real photo is skipped and reported.
 Top right = racks that match the MAT: spec mat_racks (same on every card of a mat book). B&B picks are
 colour bars under the B&B logo; any other brand's pick is its real photo under that brand's logo.
-Without mat_racks, falls back to the old chart (card['bb'] B&B picks not drawn)."""
+Without mat_racks, falls back to the old chart (card['bb'] B&B picks not drawn).
+Oct 15 evening (Tiffany): tile set brand logo flag left of the tile photo = spec/card 'tile_brand' (default Oh My Mahjong);
+no rack-brand logos on the MAT side (B&B bars and other racks are named in full instead)."""
 import json, sys, os, io, base64, subprocess
 from PIL import Image
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -40,8 +42,13 @@ def chart_for(c):
         im = RK.photo(l)
         if im is None: RK.MISSING.add(l); continue
         b, n = brand_of(l)
-        other.append({'img': uri(im, 'PNG', maxs=700), 'name': n, 'logo': uri(R + 'builder/logos/' + logos[b], 'PNG') if b in logos else None})
+        other.append({'img': uri(im, 'PNG', maxs=700), 'name': n, 'full': l})
     return bars, other
+TLOGO = {}
+def tlogo(b):
+    if b not in TLOGO:
+        f = RK.tile_logo(b); TLOGO[b] = uri(f, 'PNG', maxs=500) if f else None
+    return TLOGO[b]
 jobs = []; missing = {}; over = {}
 for c in spec['cards']:
     drawn = []
@@ -66,7 +73,8 @@ for c in spec['cards']:
             chart.append({'name': n, 'hex': RK.BBHEX[n], 'light': lum(RK.BBHEX[n]) > 185})
     data = {'title': c['title'], 'col': c['col'], 'mat': c.get('mat') or MAT, 'tile': uri(R + c['tile_file'], maxs=900) if not c['tile_file'].startswith('data:') else c['tile_file'],
             'racks': drawn, 'bb': chart[:3], 'mr': other[:2], 'bblogo': BBLOGO, 'navy': NAVY,
-            'code': c.get('code', spec.get('code', '10% OFF  USE CODE : MAHJMATCH')), 'hol': c.get('hol', False), 'flame': c.get('flame')}
+            'code': c.get('code', spec.get('code', '10% OFF  USE CODE : MAHJMATCH')), 'hol': c.get('hol', False), 'flame': c.get('flame'),
+            'tlogo': tlogo(c.get('tile_brand', spec.get('tile_brand', 'Oh My Mahjong')))}
     hf = f"/tmp/cards2/{c['slug']}.html"; open(hf, 'w').write(tpl.replace('__DATA__', json.dumps(data)))
     jobs.append((hf, os.path.join(out, c['file'])))
 NP = subprocess.run(['npm', 'root', '-g'], capture_output=True, text=True).stdout.strip()

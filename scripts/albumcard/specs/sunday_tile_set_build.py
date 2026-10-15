@@ -6,9 +6,14 @@ Mahjong Tortoise, Bam Bird Boutique Walnut and Peace Love Mahjong Oak racks."
 - Britt Mills Legacy (neoprene) + Legacy Leatherette -> one Legacy card; Savannah card titled "Savannah"
   (Britt Mills sells it in neoprene and leatherette). manifest caption_note carries the material line.
 - Tile racks (lower left, real photos from assets/racks/card/) = RACKS on every card.
+v3 (Tiffany, Oct 15 6:50pm): layout only (card2.html: racks off the left edge, Sunday Mahjong logo flag left of the
+tile photo, condensed MATCH THE MAT group) and "You will pick the mat matches for me": 1-2 Bird & Bamboo colours per
+mat nearest the mat's main colours (scripts/albumcard/matpick.py), per card in 'mat_racks'; listed in manifest.json.
 Usage: python3 sunday_tile_set_build.py <workdir>; then gen2.py <workdir>/spec.json <outdir>"""
 import json, io, base64, re, os, sys
 from PIL import Image
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from matpick import pick
 R = '/home/claude/mahjmatchmaker-data/'
 W = os.path.dirname(os.path.abspath(__file__))
 OUTW = sys.argv[1] if len(sys.argv) > 1 else W
@@ -67,11 +72,12 @@ for i, (mid, nm) in enumerate(pairs):
         src = Image.open('/tmp/sun/alb_cut/' + mp[mid]['file']); lowres = src.width < 700
     mat = crop(src)
     fn = f"sunday-mahjong-tiles-{slug(brand)}-{slug(mname)}-mat.jpg"
+    mp_ = pick(mat, exclude=RACKS)
     cards.append({'slug': f'sun{i+1:02d}', 'title': f'Sunday + {mname}', 'col': '#9a6a1f', 'tile_file': TILE, 'racks': RACKS,
-                  'file': fn, 'code': footer(brand), 'mat': uri(mat)})
+                  'file': fn, 'code': footer(brand), 'mat': uri(mat), 'mat_racks': mp_, 'tile_brand': 'Sunday Mahjong'})
     man.append({'order': i + 1, 'vote_id': mid, 'mat': mname, 'brand': brand, 'file': fn, 'code': footer(brand),
-                'src': 'cmc IMG_2810 close-up' if mid.startswith('sundayma-vegan') else SRCFIX.get(mid, mp[mid]['file']), 'lowres': lowres, 'caption_note': NOTE.get(mid), 'racks': RACKS})
-json.dump({'_note': 'Sunday Tile Set album v2 (Sunday Mahjong). 37 yes mats from db sundayswipe, her saved order; Britt Mills Legacy merged (36 cards); tile racks per her Oct 15 note.',
+                'src': 'cmc IMG_2810 close-up' if mid.startswith('sundayma-vegan') else SRCFIX.get(mid, mp[mid]['file']), 'lowres': lowres, 'caption_note': NOTE.get(mid), 'racks': RACKS, 'mat_racks': mp_})
+json.dump({'_note': 'Sunday Tile Set album v3 (Sunday Mahjong; Oct 15 evening layout + Claude B&B mat picks). 37 yes mats from db sundayswipe, her saved order; Britt Mills Legacy merged (36 cards); tile racks per her Oct 15 note.',
            'cards': cards, 'max_racks': 3}, open(OUTW + '/spec.json', 'w'))
 json.dump(man, open(OUTW + '/manifest.json', 'w'), indent=1)
 print(len(cards))

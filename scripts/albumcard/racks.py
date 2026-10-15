@@ -39,3 +39,18 @@ def frac(label):
     """share of the image height that is the rack itself (OMM photos also show the pusher above it)"""
     if label not in IDX['racks'] and label in P: label = P[label].get('n', label)
     return IDX['racks'].get(label, {}).get('rack_frac', 1.0)
+
+# Tile set brand logo for the white flag tab left of the tile photo (Tiffany, Oct 15 evening: tile set logo only).
+# Partner logos from each brand's site header (doc 52); OMM = the full Oh My Mahjong logo.
+TILE_LOGO = {'Oh My Mahjong': 'builder/logos/ohmymahjong_0.png', 'Sunday Mahjong': 'assets/brand/partner-logos/sunday.png',
+             "Bam! Let's Mahjong": 'assets/brand/partner-logos/bam.png', 'Virora': 'assets/brand/partner-logos/virora.png',
+             'Virora Mahjong': 'assets/brand/partner-logos/virora.png', 'Mahj Squad': 'assets/brand/partner-logos/squad.png',
+             'Hip Hip Mahjong': 'assets/brand/partner-logos/hiphip.png', 'Anders Ruff': 'assets/brand/partner-logos/ar.png',
+             'Charleston Mahjong Club': 'assets/brand/partner-logos/cmc.png'}
+
+def tile_logo(brand):
+    """tile set brand -> logo file path (or None)"""
+    if not brand: return None
+    if brand in TILE_LOGO: return R + TILE_LOGO[brand]
+    m = json.load(open(R + 'builder/logos/map.json'))
+    return R + 'builder/logos/' + m[brand] if brand in m else None

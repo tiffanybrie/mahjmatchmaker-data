@@ -33,7 +33,7 @@ def card(c,W,H,out):
 @font-face{{font-family:'BitterB';src:url(file://{F}fontsource-bitter-5.3.0/package/files/bitter-latin-700-normal.woff2)}}
 *{{box-sizing:border-box;margin:0}}body{{width:{W}px;height:{H}px;background:#f6e9df;font-family:Bitter;color:#2a2036;overflow:hidden;position:relative}}
 .wrap{{position:absolute;inset:0;padding:{44 if pin else 40}px 56px;display:flex;flex-direction:column;align-items:center}}
-.logo{{height:{66 if pin else 58}px}}
+.logo{{height:{78 if pin else 68}px}}  /* Oct 15 evening: no-tagline wordmark, bigger (the tagline was too small to read) */
 .eb{{font-family:BitterB;letter-spacing:.32em;font-size:22px;color:#054689;margin-top:{26 if pin else 18}px;display:flex;align-items:center;gap:14px}}.eb img{{height:30px}}
 h1{{font-family:Alfa;font-size:{c.get('ts',118)}px;line-height:1;color:{c['color']};text-shadow:4px 4px 0 #fff;margin-top:8px;text-transform:uppercase;letter-spacing:.01em}}
 .by{{font-family:PlayI;font-size:38px;color:#2a2036;margin-top:6px}}.tag{{font-family:PlayI;font-size:26px;color:#6b5a77;margin-top:4px}}
@@ -66,7 +66,7 @@ figcaption{{font-family:BitterB;font-size:17px;margin-top:8px;line-height:1.15}}
 if __name__=='__main__':
     c=json.load(open(sys.argv[1]))
     c['mat']=b64(c['mat_path'],'JPEG',1100)
-    c['logo']=b64(ROOT+'/assets/brand/mahjmatchmaker-wordmark.png',size=700); c['flame']=b64(ROOT+'/assets/brand/flame-heart.png',size=120)
+    c['logo']=b64(ROOT+'/assets/brand/mahjmatchmaker-wordmark-notag.png',size=900); c['flame']=b64(ROOT+'/assets/brand/flame-heart.png',size=120)
     # two versions (Tiffany, Oct 12): OMM-only (current + retired OMM sets, for OMM to reshare) and all album tile sets
     for v,tl,tt in (('omm',c.get('tiles_omm',[]),"TIFFANY'S OMM TILE MATCHES"),('all',c.get('tiles_all',[]),"TIFFANY'S TILE MATCHES")):
         cc=dict(c,tiles=tl,tilesTitle=tt)
