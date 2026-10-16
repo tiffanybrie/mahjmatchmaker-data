@@ -135,15 +135,15 @@
    "rack_frac": 1.0,
    "alias_of": "Miss Mahjong Scalloped Iridescent Opal"
   },
-  "Middle & Main White Lace": {
-   "file": "assets/racks/card/middle--main-white-lace.png",
-   "source": "assets/racks/cutouts/middle-and-main-white-lace-mid-2.png",
-   "kind": "cut",
-   "rack_frac": 1.0
-  },
   "Miss Mahjong Blonde Tortoise & Brass": {
    "file": "assets/racks/card/miss-mahjong-blonde-tortoise--brass.png",
    "source": "assets/racks/cutouts/miss-mahjong-blonde-tortoise-and-brass-2.png",
+   "kind": "cut",
+   "rack_frac": 1.0
+  },
+  "Middle & Main White Lace Acrylic": {
+   "file": "assets/racks/card/middle--main-white-lace.png",
+   "source": "assets/racks/cutouts/middle-and-main-white-lace-mid-2.png",
    "kind": "cut",
    "rack_frac": 1.0
   }
