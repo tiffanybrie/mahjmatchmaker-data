@@ -49,6 +49,42 @@
    "kind": "flat",
    "rack_frac": 1.0
   },
+  "Peace Love Mahjong Dark Green": {
+   "file": "assets/racks/card/peace-love-mahjong-dark-green.png",
+   "source": "/tmp/mb/plm/r_Dark_Green.png",
+   "kind": "flat",
+   "rack_frac": 1.0
+  },
+  "Peace Love Mahjong Light Pink": {
+   "file": "assets/racks/card/peace-love-mahjong-light-pink.png",
+   "source": "/tmp/mb/plm/r_Light_Pink.png",
+   "kind": "flat",
+   "rack_frac": 1.0
+  },
+  "Peace Love Mahjong Red": {
+   "file": "assets/racks/card/peace-love-mahjong-red.png",
+   "source": "/tmp/mb/plm/r_Red.png",
+   "kind": "flat",
+   "rack_frac": 1.0
+  },
+  "Peace Love Mahjong Navy": {
+   "file": "assets/racks/card/peace-love-mahjong-navy.png",
+   "source": "/tmp/mb/plm/r_Navy.png",
+   "kind": "flat",
+   "rack_frac": 1.0
+  },
+  "Peace Love Mahjong White": {
+   "file": "assets/racks/card/peace-love-mahjong-white.png",
+   "source": "/tmp/mb/plm/r_White.png",
+   "kind": "flat",
+   "rack_frac": 1.0
+  },
+  "Middle & Main Milk Glass Scalloped Acrylic": {
+   "file": "assets/racks/card/middle--main-milk-glass-scalloped-acrylic.png",
+   "source": "assets/racks/cutouts/middle-and-main-milk-glass-2.png",
+   "kind": "cut",
+   "rack_frac": 0.62
+  },
   "Bam Bird Boutique Walnut": {
    "file": "assets/racks/card/bam-bird-boutique-walnut.png",
    "source": "/tmp/mb/rkalt/walnut.png",
@@ -135,20 +171,20 @@
    "rack_frac": 1.0,
    "alias_of": "Miss Mahjong Scalloped Iridescent Opal"
   },
-  "Miss Mahjong Blonde Tortoise & Brass": {
-   "file": "assets/racks/card/miss-mahjong-blonde-tortoise--brass.png",
-   "source": "assets/racks/cutouts/miss-mahjong-blonde-tortoise-and-brass-2.png",
-   "kind": "cut",
-   "rack_frac": 1.0
-  },
   "Middle & Main White Lace Acrylic": {
    "file": "assets/racks/card/middle--main-white-lace.png",
    "source": "assets/racks/cutouts/middle-and-main-white-lace-mid-2.png",
    "kind": "cut",
    "rack_frac": 1.0
+  },
+  "Miss Mahjong Blonde Tortoise & Brass": {
+   "file": "assets/racks/card/miss-mahjong-blonde-tortoise--brass.png",
+   "source": "assets/racks/cutouts/miss-mahjong-blonde-tortoise-and-brass-2.png",
+   "kind": "cut",
+   "rack_frac": 1.0
   }
  },
  "missing": {
-  "Tigre de Tart\u00e1n Oxblood Scallop": "no photo anywhere yet (doc 48: \"New rack image needed\")"
+  "Tigre de Tartán Oxblood Scallop": "no photo anywhere yet (doc 48: \"New rack image needed\")"
  }
 }
