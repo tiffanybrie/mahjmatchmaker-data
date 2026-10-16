@@ -12,7 +12,9 @@ from scipy.cluster.vq import kmeans2
 R = '/home/claude/mahjmatchmaker-data/'
 BB = {x['name']: x['hex'] for x in json.load(open(R + 'work/bbracks.json'))}
 def _lab(h): return rgb2lab(np.array([[[int(h[1:3], 16), int(h[3:5], 16), int(h[5:7], 16)]]]) / 255.)[0, 0]
-BBL = {k: _lab(v) for k, v in BB.items() if 'Metallic' not in k and k != 'Clear'}
+# B&B wood finishes are BANNED (Tiffany, Oct 15 11:57pm): not sold now, and our renders look painted, not wood. Doc 57.
+BB_WOODS = {'Weathered Oak', 'Provincial', 'Red Mahogany', 'Dark Walnut'}
+BBL = {k: _lab(v) for k, v in BB.items() if 'Metallic' not in k and k != 'Clear' and k not in BB_WOODS}
 
 def pick(im, exclude=(), k=6, maxn=2):
     im = im.convert('RGB').copy(); im.thumbnail((220, 220))
