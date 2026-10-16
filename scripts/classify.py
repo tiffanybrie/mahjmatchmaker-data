@@ -1,6 +1,10 @@
 import json,glob,re,os
 from collections import Counter
 def kind(p):
+    # Oct 16 fix: rack sets whose titles mention a storage bag (e.g. Tigre de Tartan) were dropped as bags
+    _ti=p['title'].lower()
+    if re.search(r'racks?\b.{0,40}(pusher|with|&|and)|rack (set|and pusher)|racks?$|rack set',_ti) and not re.search(r'^(mahjong )?rack (bag|case|tote|pouch)|bag for|sample|swatch|insurance|sleeve|add ?ons?|domino',_ti):
+        if not re.search(r'mahjong set|mah jongg set|166 tiles',_ti): return 'rack'
     t=(p['title']+' '+p.get('product_type','')+' '+' '.join(p.get('tags',[]) if isinstance(p.get('tags'),list) else [p.get('tags','')])).lower()
     ti=p['title'].lower()
     if re.search(r'gift card|sample|swatch|bag|tote|pouch|case|card holder|scorecard|score card|shirt|tee|hat|sweatshirt|candle|napkin|coaster|sticker|pin\b|earring|necklace|bracelet|book|lesson|class|cup|tumbler|dice|charm|ornament|print\b|poster|towel|apron|socks|keychain|mug|glass|playing cards|card\b.*2026|2026.*card|tablecloth|runner|bundle|subscription|insurance|shipping',ti):
