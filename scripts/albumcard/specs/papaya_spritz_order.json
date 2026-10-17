@@ -1,0 +1,366 @@
+[
+ {
+  "n": 1,
+  "id": "cc-pre-order-zesty-plume-copy",
+  "name": "Greenly",
+  "brand": "Mahj & Vine",
+  "tier": "TOP"
+ },
+ {
+  "n": 2,
+  "id": "cc-sedona-mat-in-tube",
+  "name": "Sedona",
+  "brand": "Oh My Mahjong",
+  "tier": "TOP"
+ },
+ {
+  "n": 3,
+  "id": "ret-goldie",
+  "name": "Goldie (retired)",
+  "brand": "Oh My Mahjong",
+  "tier": "TOP"
+ },
+ {
+  "n": 4,
+  "id": "cc-haven-neoprene-mahjong-mat",
+  "name": "Haven",
+  "brand": "Britt Mills",
+  "tier": "TOP"
+ },
+ {
+  "n": 5,
+  "id": "cc-savannah-leatherette-mahjong-mat",
+  "name": "Savannah",
+  "brand": "Britt Mills",
+  "tier": "TOP"
+ },
+ {
+  "n": 6,
+  "id": "cc-heiress-scalloped-neoprene-mahjong-mat",
+  "name": "Heiress",
+  "brand": "Britt Mills",
+  "tier": "BEST"
+ },
+ {
+  "n": 7,
+  "id": "cc-leopard-animal-print-american-mahjong-mat",
+  "name": "Leopard American",
+  "brand": "Mahj & Moon",
+  "tier": "BEST"
+ },
+ {
+  "n": 8,
+  "id": "cc-retro-waves-mahjong-mat",
+  "name": "Retro Waves",
+  "brand": "Mahj & Moon",
+  "tier": "BEST"
+ },
+ {
+  "n": 9,
+  "id": "cc-grand-garden-estate-mahjong-mat",
+  "name": "Grand Garden Estate",
+  "brand": "Mahj & Moon",
+  "tier": "BEST"
+ },
+ {
+  "n": 10,
+  "id": "cc-neoprene-mat",
+  "name": "Classic in Lavender",
+  "brand": "Bam Bird Boutique",
+  "tier": "BEST"
+ },
+ {
+  "n": 11,
+  "id": "cc-fruit-stand-citrus-mat",
+  "name": "Fruit Stand",
+  "brand": "Middle & Main Mahjong",
+  "tier": "BEST"
+ },
+ {
+  "n": 12,
+  "id": "cc-cheetah-couture",
+  "name": "Cheetah Couture",
+  "brand": "Bespoke Mahjong",
+  "tier": "BEST"
+ },
+ {
+  "n": 13,
+  "id": "cc-simply-scalloped-neoprene-mahjong-mat",
+  "name": "Simply Scalloped",
+  "brand": "Bam Bird Boutique",
+  "tier": "BEST"
+ },
+ {
+  "n": 14,
+  "id": "cc-the-paradise-mahjong-mat-blue-bliss-copy",
+  "name": "Paradise Lovely Lavender",
+  "brand": "Bird & Bamboo",
+  "tier": "BEST"
+ },
+ {
+  "n": 15,
+  "id": "cc-the-paradise-mahjong-mat-blue-bliss",
+  "name": "Paradise Blue Bliss",
+  "brand": "Bird & Bamboo",
+  "tier": "BEST"
+ },
+ {
+  "n": 16,
+  "id": "cc-the-danay-mahjong-mat",
+  "name": "Danay",
+  "brand": "Bird & Bamboo",
+  "tier": "BEST"
+ },
+ {
+  "n": 17,
+  "id": "cc-pre-order-coral-orchard-copy",
+  "name": "Sapphire Soir\u00e9e",
+  "brand": "Mahj & Vine",
+  "tier": "BEST"
+ },
+ {
+  "n": 18,
+  "id": "cc-press-for-mahjong-mat",
+  "name": "Press for Mahjong",
+  "brand": "Anders Ruff",
+  "tier": "BEST"
+ },
+ {
+  "n": 19,
+  "id": "cc-bams-bubbly-mahjong-mat",
+  "name": "Bams & Bubbly",
+  "brand": "Anders Ruff",
+  "tier": "BEST"
+ },
+ {
+  "n": 20,
+  "id": "cc-coralia",
+  "name": "Coralia",
+  "brand": "Virora Mahjong",
+  "tier": "BEST"
+ },
+ {
+  "n": 21,
+  "id": "cc-the-tangelo-delphine-mahjong-mat",
+  "name": "Tangelo Delphine",
+  "brand": "Bird & Bamboo",
+  "tier": "BEST"
+ },
+ {
+  "n": 22,
+  "id": "cc-year-of-the-dragon-mat-plum",
+  "name": "YOTD Plum",
+  "brand": "Bespoke Mahjong",
+  "tier": "BEST"
+ },
+ {
+  "n": 23,
+  "id": "cc-anastasia-mat-in-tube",
+  "name": "Anastasia",
+  "brand": "Oh My Mahjong",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 24,
+  "id": "cc-chantilly-mat",
+  "name": "Chantilly",
+  "brand": "Oh My Mahjong",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 25,
+  "id": "ret-enchanted",
+  "name": "Enchanted (retired)",
+  "brand": "Oh My Mahjong",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 26,
+  "id": "ret-spring-fling",
+  "name": "Spring Fling (retired)",
+  "brand": "Oh My Mahjong",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 27,
+  "id": "ret-sweet-marie",
+  "name": "Sweet Marie (retired)",
+  "brand": "Oh My Mahjong",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 28,
+  "id": "ret-zen-glow",
+  "name": "Zen Glow (retired)",
+  "brand": "Oh My Mahjong",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 29,
+  "id": "cc-revelry-leatherette-mahjong-mat",
+  "name": "Revelry",
+  "brand": "Britt Mills",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 30,
+  "id": "cc-regency-scalloped-neoprene-mahjong-mat",
+  "name": "Regency Scalloped",
+  "brand": "Britt Mills",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 31,
+  "id": "cc-regal-bloom-neoprene-mahjong-mat",
+  "name": "Regal Bloom",
+  "brand": "Britt Mills",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 32,
+  "id": "cc-scarlett-neoprene-mahjong-mat",
+  "name": "Scarlett",
+  "brand": "Britt Mills",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 33,
+  "id": "cc-colorful-chinoiserie-britt-mills-mahjong-mat",
+  "name": "Colorful Chinoiserie",
+  "brand": "Britt Mills",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 34,
+  "id": "cc-enchanted-leatherette-mahjong-mat",
+  "name": "Enchanted",
+  "brand": "Britt Mills",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 35,
+  "id": "cc-vivienne-mat-in-tube",
+  "name": "Vivienne",
+  "brand": "Oh My Mahjong",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 36,
+  "id": "cc-larkspur-mat-in-tube",
+  "name": "Larkspur",
+  "brand": "Oh My Mahjong",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 37,
+  "id": "cc-chinoiserie-song-bird",
+  "name": "Chinoiserie Songbird",
+  "brand": "Mahj & Vine",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 38,
+  "id": "cc-delilah-mat-in-tube",
+  "name": "Delilah",
+  "brand": "Oh My Mahjong",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 39,
+  "id": "cc-georgia-mat",
+  "name": "Peaches 'n Cream",
+  "brand": "Middle & Main Mahjong",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 40,
+  "id": "cc-year-of-the-dragon-mat-periwinkle",
+  "name": "YOTD Periwinkle",
+  "brand": "Bespoke Mahjong",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 41,
+  "id": "cc-boots-bubbles-neoprene-mahjong-mat",
+  "name": "Boots & Bubbles in Periwinkle",
+  "brand": "Bam Bird Boutique",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 42,
+  "id": "cc-mat-tropical-palm",
+  "name": "Tropical Palm",
+  "brand": "My Fair Mahjong",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 43,
+  "id": "cc-mahjong-mat-brightside-33-x-33",
+  "name": "Brightside",
+  "brand": "My Fair Mahjong",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 44,
+  "id": "cc-garden-hydrangea-mahjong-mat",
+  "name": "Garden Hydrangea",
+  "brand": "Anders Ruff",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 45,
+  "id": "cc-color-splash-mat",
+  "name": "Color Splash",
+  "brand": "Mahj Mood",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 46,
+  "id": "cc-flora-belle-mahjong-mat",
+  "name": "Flora Belle",
+  "brand": "Anders Ruff",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 47,
+  "id": "cc-pre-order-sunset-swirl-copy",
+  "name": "Coral Orchard",
+  "brand": "Mahj & Vine",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 48,
+  "id": "cc-the-paradise-mahjong-mat-tropical-teal",
+  "name": "Paradise Tropical Teal",
+  "brand": "Bird & Bamboo",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 49,
+  "id": "cc-hummingbird-hydrangea-mahjong-mat",
+  "name": "Hummingbird Hydrangea",
+  "brand": "Anders Ruff",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 50,
+  "id": "cc-miss-cowgirl-lasso-mahjong-mat",
+  "name": "Lasso",
+  "brand": "Miss Mahjong",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 51,
+  "id": "cc-citrus-grove-copy",
+  "name": "Porcelain Bloom",
+  "brand": "Mahj & Vine",
+  "tier": "EVERYTHING"
+ },
+ {
+  "n": 52,
+  "id": "cc-bright-abstract-neoprene-mahjong-mat",
+  "name": "Bright Abstract",
+  "brand": "Bam Bird Boutique",
+  "tier": "EVERYTHING"
+ }
+]
