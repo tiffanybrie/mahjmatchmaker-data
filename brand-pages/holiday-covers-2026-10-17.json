@@ -1,0 +1,57 @@
+{
+ "page": "/holiday-mahjong-matches",
+ "fix": [
+  {
+   "find": ".mmhol-alb small{",
+   "replace": ".mmhol-cv{display:block;width:240px;max-width:62%;margin:8px auto 16px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.1)} .mmhol-alb small{"
+  },
+  {
+   "find": "</nav></header> ",
+   "replace": "</nav></header> <section id=\"new-holiday-sets\" style=\"margin-top:36px\"><h2>The new holiday tile sets</h2><p class=\"mm3-sub\">Tap a set to jump to its holiday matches.</p><div class=\"mmhol-alb\"><a href=\"#dear-santa\"><img src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/dear-santa.jpg\" alt=\"Dear Santa holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\"><b>Dear Santa</b></a><a href=\"#rackin-rudolph\"><img src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/rackin-rudolph.jpg\" alt=\"Rackin' Rudolph holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\"><b>Rackin' Rudolph</b></a><a href=\"#holly-jolly-red\"><img src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/holly-jolly-red.jpg\" alt=\"Holly Jolly (Rudolph Red) holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\"><b>Holly Jolly (Rudolph Red)</b></a><a href=\"#holly-jolly-green\"><img src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/holly-jolly-green.jpg\" alt=\"Holly Jolly (Grinch Green) holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\"><b>Holly Jolly (Grinch Green)</b></a><a href=\"#holly-jolly-pink\"><img src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/holly-jolly-pink.jpg\" alt=\"Holly Jolly (Sugarplum Pink) holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\"><b>Holly Jolly (Sugarplum Pink)</b></a><a href=\"#tinselle-emerald\"><img src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/tinselle-emerald.jpg\" alt=\"Tinselle (Emerald Green) holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\"><b>Tinselle (Emerald Green)</b></a><a href=\"#tinselle-ruby\"><img src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/tinselle-ruby.jpg\" alt=\"Tinselle (Ruby Red) holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\"><b>Tinselle (Ruby Red)</b></a><a href=\"#nivalee-blue\"><img src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/nivalee-blue.jpg\" alt=\"Nivalee (Glacier Blue) holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\"><b>Nivalee (Glacier Blue)</b></a><a href=\"#nutcracker-ballet\"><img src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/nutcracker-ballet.jpg\" alt=\"Nutcracker Ballet holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\"><b>Nutcracker Ballet</b></a><a href=\"#december-1994\"><img src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/december-1994.jpg\" alt=\"December 1994 holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\"><b>December 1994</b></a><a href=\"#cmc-apres-ski\"><img src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/cmc-apres-ski.jpg\" alt=\"Apr\u00e8s Ski Club holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\"><b>Apr\u00e8s Ski Club</b></a></div></section> "
+  },
+  {
+   "regex_after_h2_id": "dear-santa",
+   "img": "<img class=\"mmhol-cv\" src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/dear-santa.jpg\" alt=\"Dear Santa holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\">"
+  },
+  {
+   "regex_after_h2_id": "rackin-rudolph",
+   "img": "<img class=\"mmhol-cv\" src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/rackin-rudolph.jpg\" alt=\"Rackin' Rudolph holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\">"
+  },
+  {
+   "regex_after_h2_id": "holly-jolly-red",
+   "img": "<img class=\"mmhol-cv\" src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/holly-jolly-red.jpg\" alt=\"Holly Jolly (Rudolph Red) holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\">"
+  },
+  {
+   "regex_after_h2_id": "holly-jolly-green",
+   "img": "<img class=\"mmhol-cv\" src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/holly-jolly-green.jpg\" alt=\"Holly Jolly (Grinch Green) holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\">"
+  },
+  {
+   "regex_after_h2_id": "holly-jolly-pink",
+   "img": "<img class=\"mmhol-cv\" src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/holly-jolly-pink.jpg\" alt=\"Holly Jolly (Sugarplum Pink) holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\">"
+  },
+  {
+   "regex_after_h2_id": "tinselle-emerald",
+   "img": "<img class=\"mmhol-cv\" src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/tinselle-emerald.jpg\" alt=\"Tinselle (Emerald Green) holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\">"
+  },
+  {
+   "regex_after_h2_id": "tinselle-ruby",
+   "img": "<img class=\"mmhol-cv\" src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/tinselle-ruby.jpg\" alt=\"Tinselle (Ruby Red) holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\">"
+  },
+  {
+   "regex_after_h2_id": "nivalee-blue",
+   "img": "<img class=\"mmhol-cv\" src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/nivalee-blue.jpg\" alt=\"Nivalee (Glacier Blue) holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\">"
+  },
+  {
+   "regex_after_h2_id": "nutcracker-ballet",
+   "img": "<img class=\"mmhol-cv\" src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/nutcracker-ballet.jpg\" alt=\"Nutcracker Ballet holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\">"
+  },
+  {
+   "regex_after_h2_id": "december-1994",
+   "img": "<img class=\"mmhol-cv\" src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/december-1994.jpg\" alt=\"December 1994 holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\">"
+  },
+  {
+   "regex_after_h2_id": "cmc-apres-ski",
+   "img": "<img class=\"mmhol-cv\" src=\"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d295125ab4c1640c0b8099150d30acde2c3adcd9/assets/covers/holiday/w800/cmc-apres-ski.jpg\" alt=\"Apr\u00e8s Ski Club holiday mahjong tiles\" loading=\"lazy\" width=\"800\" height=\"1000\">"
+  }
+ ]
+}
