@@ -1,0 +1,197 @@
+{
+ "_note": "Peony & Parasol (Splash of Color) album cards from her swipe yeses; straight centered mat (her Oct 15 note).",
+ "mat_file": "assets/mats/splash-of-color/peony-parasol-straight.jpg",
+ "mat_crop": [
+  0,
+  0,
+  1180,
+  1180
+ ],
+ "max_racks": 3,
+ "mat_racks": [
+  "Bird & Bamboo Flamingo",
+  "Bird & Bamboo Turks Blue"
+ ],
+ "code": "10% OFF  USE CODE : MAHJMATCH",
+ "cards": [
+  {
+   "slug": "pp01",
+   "title": "Taylor + Peony & Parasol",
+   "col": "#b68ccd",
+   "tile_file": "assets/tiles/album/taylor.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Light Pink",
+    "Middle & Main Scalloped Beechwood"
+   ],
+   "file": "taylor-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg"
+  },
+  {
+   "slug": "pp02",
+   "title": "Sorbet + Peony & Parasol",
+   "col": "#e9a926",
+   "tile_file": "assets/tiles/album/sorbet.jpg",
+   "racks": [
+    "Bird & Bamboo Icy Mint",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Middle & Main Scalloped Beechwood"
+   ],
+   "file": "sorbet-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg"
+  },
+  {
+   "slug": "pp03",
+   "title": "Spring Love + Peony & Parasol",
+   "col": "#e0789c",
+   "tile_file": "assets/tiles/album/spring-love.jpg",
+   "racks": [
+    "Middle & Main Scalloped Beechwood",
+    "Bird & Bamboo Lime Green",
+    "Bird & Bamboo Lavender"
+   ],
+   "file": "spring-love-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg"
+  },
+  {
+   "slug": "pp04",
+   "title": "Jade + Peony & Parasol",
+   "col": "#3d8d4f",
+   "tile_file": "assets/tiles/album/jade.jpg",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Miss Mahjong Jade & Brass",
+    "Miss Mahjong Opal & Brass"
+   ],
+   "file": "jade-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg",
+   "tile_brand": "Miss Mahjong"
+  },
+  {
+   "slug": "pp05",
+   "title": "Lagoon + Peony & Parasol",
+   "col": "#0e8396",
+   "tile_file": "assets/tiles/album/lagoon.jpg",
+   "racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Lime Green"
+   ],
+   "file": "lagoon-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg"
+  },
+  {
+   "slug": "pp06",
+   "title": "Seabreeze + Peony & Parasol",
+   "col": "#02aaa1",
+   "tile_file": "assets/tiles/album/seabreeze.jpg",
+   "racks": [
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Hot Pink",
+    "Miss Mahjong Scalloped Iridescent Opal"
+   ],
+   "file": "seabreeze-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg"
+  },
+  {
+   "slug": "pp07",
+   "title": "Palm Royale + Peony & Parasol",
+   "col": "#829645",
+   "tile_file": "assets/tiles/album/palm-royale.jpg",
+   "racks": [
+    "Peace Love Mahjong Chartreuse",
+    "Miss Mahjong Opal & Brass",
+    "Peace Love Mahjong Oak"
+   ],
+   "file": "palm-royale-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg"
+  },
+  {
+   "slug": "pp08",
+   "title": "Papaya Spritz + Peony & Parasol",
+   "col": "#ef7a3c",
+   "tile_file": "assets/tiles/album/papaya-spritz.jpg",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Bird & Bamboo Lime Green",
+    "Bird & Bamboo Lavender"
+   ],
+   "file": "papaya-spritz-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg"
+  },
+  {
+   "slug": "pp09",
+   "title": "Lilac Soiree + Peony & Parasol",
+   "col": "#8a6fb5",
+   "tile_file": "assets/tiles/album/lilac-soiree.jpg",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Ballet Pink"
+   ],
+   "file": "lilac-soiree-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg"
+  },
+  {
+   "slug": "pp10",
+   "title": "Birdie + Peony & Parasol",
+   "col": "#469694",
+   "tile_file": "assets/tiles/album/birdie.jpg",
+   "racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Harbor Blue",
+    "Peace Love Mahjong Oak"
+   ],
+   "file": "birdie-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg"
+  },
+  {
+   "slug": "pp11",
+   "title": "Nantucket + Peony & Parasol",
+   "col": "#dc282c",
+   "tile_file": "assets/tiles/album/nantucket.jpg",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "file": "nantucket-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg"
+  },
+  {
+   "slug": "pp12",
+   "title": "Sunset + Peony & Parasol",
+   "col": "#e8743b",
+   "tile_file": "assets/tiles/album/sunset.jpg",
+   "racks": [
+    "Oh My Mahjong White Acrylic",
+    "Oh My Mahjong Hot Pink"
+   ],
+   "file": "sunset-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg"
+  },
+  {
+   "slug": "pp13",
+   "title": "Dandy + Peony & Parasol",
+   "col": "#ce1467",
+   "tile_file": "assets/tiles/album/dandy.jpg",
+   "racks": [
+    "Bird & Bamboo Avocado",
+    "Miss Mahjong Scalloped Iridescent Opal"
+   ],
+   "file": "dandy-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg"
+  },
+  {
+   "slug": "pp14",
+   "title": "Gemma + Peony & Parasol",
+   "col": "#40214b",
+   "tile_file": "assets/tiles/album/gemma.jpg",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Eggplant"
+   ],
+   "file": "gemma-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg"
+  },
+  {
+   "slug": "pp15",
+   "title": "Amara + Peony & Parasol",
+   "col": "#d52979",
+   "tile_file": "assets/tiles/album/amara.jpg",
+   "racks": [
+    "Peace Love Mahjong Pink",
+    "Bird & Bamboo Kelly Green",
+    "Mahjong Row & Co. Scalloped Tortoise"
+   ],
+   "file": "amara-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg"
+  }
+ ]
+}
