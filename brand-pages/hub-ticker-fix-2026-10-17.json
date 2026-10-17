@@ -1,0 +1,12 @@
+{
+  "page": "/mahjong-discount-codes",
+  "block": "big code block with the logo ticker (.mmtk)",
+  "problem": "The Mahjong Press ticker logo was added with class b30, which Mahjong Register already uses. The second .mmtk a.b30 CSS rule (Mahjong Press logo, webp starting UklGRqpJ) overrides the first, so Mahjong Register's ticker slot shows the Mahjong Press logo.",
+  "fix": [
+    {"find": "<a class=\"b30\" href=\"/the-mahjong-press-discount-code\"", "replace": "<a class=\"b32\" href=\"/the-mahjong-press-discount-code\""},
+    {"find": "<a class=\"b30 dup\" href=\"/the-mahjong-press-discount-code\"", "replace": "<a class=\"b32 dup\" href=\"/the-mahjong-press-discount-code\""},
+    {"find": ".mmtk a.b30{background-image:url(data:image/webp;base64,UklGRqpJ", "replace": ".mmtk a.b32{background-image:url(data:image/webp;base64,UklGRqpJ"}
+  ],
+  "verify": "curl the page: b32 appears 3 times (2 anchors + 1 CSS rule), b30 appears 3 times (Mahjong Register only)",
+  "status": "Applied in the Squarespace editor Oct 17 ~10:30am ET (onboarding run); Save was not clicked (live save needs approval). Next run: re-apply and Save."
+}
