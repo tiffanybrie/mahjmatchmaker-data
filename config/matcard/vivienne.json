@@ -1,1 +1,164 @@
-{"name": "Vivienne", "brand": "Oh My Mahjong", "tag": "Dusty coral, orchid pink, sage & sky blue lanterns", "color": "#d4483f", "mat_path": "config/matcard/vivienne_mat.jpg", "palette": [["Coral", "#dc5853"], ["Orchid Pink", "#dc98b9"], ["Peach Blush", "#e09b92"], ["Sage", "#a8b1a0"], ["Chartreuse", "#c9c962"], ["Sky Blue", "#75b2da"]], "racks": [["Pink Coral", "#F19089", false], ["Light Blue", "#85CDF9", false], ["Hot Pink Metallic", "#DD74B9", false], ["Jade", "#85A78A", false], ["Chartreuse", "#c5d93a", false, "Peace Love Mahjong Chartreuse"], ["Scalloped Beechwood", "#c19166", false, "Middle & Main Scalloped Beechwood"], ["Cornflower Scallop", "#8fb0e6", false, "Miss Mahjong Cornflower Blue Scalloped"]], "racks_omm": [["Pink Coral", "#F19089", false], ["Light Blue", "#85CDF9", false], ["Hot Pink Metallic", "#DD74B9", false], ["Jade", "#85A78A", false], ["Chartreuse", "#c5d93a", false, "Peace Love Mahjong Chartreuse"], ["Scalloped Beechwood", "#c19166", false, "Middle & Main Scalloped Beechwood"], ["Cornflower Scallop", "#8fb0e6", false, "Miss Mahjong Cornflower Blue Scalloped"]], "rackNote": "Painted wood: Bird &amp; Bamboo · Peace Love Mahjong<br>Beechwood: Middle &amp; Main · Acrylic: Miss Mahjong", "tiles": [], "tiles_omm": ["Pippa", "Solara", "Coquette", "Spring Love (retired)", "Jade", "Papaya Spritz"], "tiles_all": ["Pippa", "Solara", "Coquette", "Spring Love (retired)", "Jade", "Papaya Spritz", "Hummingbird"], "retired": ["Birdie", "Taylor", "Dandy", "Glitterville", "Lola", "Limoncello", "Sorbet", "Sunset"], "rack_rule": "Launch watch draft Oct 13: nearest Bird & Bamboo racks to the mat's coral, sky-blue border, lilac and sage. Tile matches stay empty until Tiffany's Vivienne swipe is done. Oct 13 later: Seafoam swapped for Miss Mahjong Jade & Brass, PLM Chartreuse added; tile matches in her ranking. Oct 15: non-B&B racks show their REAL photo (scripts/matcard/rackpanel.py patches the rack box of the reviewed cards). Oct 15 1pm (Tiffany): + B&B Hot Pink Metallic and B&B Jade; Jade & Brass and Petal Purple removed; + Middle & Main Scalloped Beechwood and Miss Mahjong Cornflower Blue Scalloped (real photos). Rack photos all the same length.", "source": "assets/launches/omm-vivienne-mat/01.jpg (flat overhead), cropped with palette.crop_mat", "tile_tags": {"Spring Love (retired)": "retired", "Papaya Spritz": "pair mat", "Hummingbird": "Sunday Mahjong"}, "panel_boxes": {"fb": [665, 666, 1004, 934], "pin": [604, 694, 943, 962]}, "cards_src": "assets/launches/omm-vivienne-mat/cards/ (the reviewed set, artifact TkyPYbCSWdnwY2LsF12zpd)"}
+{
+ "name": "Vivienne",
+ "brand": "Oh My Mahjong",
+ "tag": "Dusty coral, orchid pink, sage & sky blue lanterns",
+ "color": "#d4483f",
+ "mat_path": "config/matcard/vivienne_mat.jpg",
+ "palette": [
+  [
+   "Coral",
+   "#dc5853"
+  ],
+  [
+   "Orchid Pink",
+   "#dc98b9"
+  ],
+  [
+   "Peach Blush",
+   "#e09b92"
+  ],
+  [
+   "Sage",
+   "#a8b1a0"
+  ],
+  [
+   "Chartreuse",
+   "#c9c962"
+  ],
+  [
+   "Sky Blue",
+   "#75b2da"
+  ]
+ ],
+ "racks": [
+  [
+   "Pink Coral",
+   "#F19089",
+   false
+  ],
+  [
+   "Light Blue",
+   "#85CDF9",
+   false
+  ],
+  [
+   "Hot Pink Metallic",
+   "#DD74B9",
+   false
+  ],
+  [
+   "Jade",
+   "#85A78A",
+   false
+  ],
+  [
+   "Chartreuse",
+   "#c5d93a",
+   false,
+   "Peace Love Mahjong Chartreuse"
+  ],
+  [
+   "Scalloped Beechwood",
+   "#c19166",
+   false,
+   "Middle & Main Scalloped Beechwood"
+  ],
+  [
+   "Cornflower Scallop",
+   "#8fb0e6",
+   false,
+   "Miss Mahjong Cornflower Blue Scalloped"
+  ]
+ ],
+ "racks_omm": [
+  [
+   "Pink Coral",
+   "#F19089",
+   false
+  ],
+  [
+   "Light Blue",
+   "#85CDF9",
+   false
+  ],
+  [
+   "Hot Pink Metallic",
+   "#DD74B9",
+   false
+  ],
+  [
+   "Jade",
+   "#85A78A",
+   false
+  ],
+  [
+   "Chartreuse",
+   "#c5d93a",
+   false,
+   "Peace Love Mahjong Chartreuse"
+  ],
+  [
+   "Scalloped Beechwood",
+   "#c19166",
+   false,
+   "Middle & Main Scalloped Beechwood"
+  ],
+  [
+   "Cornflower Scallop",
+   "#8fb0e6",
+   false,
+   "Miss Mahjong Cornflower Blue Scalloped"
+  ]
+ ],
+ "rackNote": "Painted wood: Bird &amp; Bamboo \u00b7 Peace Love Mahjong<br>Beechwood: Middle &amp; Main \u00b7 Acrylic: Miss Mahjong",
+ "tiles": [],
+ "tiles_omm": [
+  "Pippa",
+  "Solara",
+  "Coquette",
+  "Spring Love (retired)",
+  "Jade",
+  "Papaya Spritz"
+ ],
+ "tiles_all": [
+  "Pippa",
+  "Solara",
+  "Coquette",
+  "Spring Love (retired)",
+  "Jade",
+  "Papaya Spritz"
+ ],
+ "retired": [
+  "Birdie",
+  "Taylor",
+  "Dandy",
+  "Glitterville",
+  "Lola",
+  "Limoncello",
+  "Sorbet",
+  "Sunset"
+ ],
+ "rack_rule": "Launch watch draft Oct 13: nearest Bird & Bamboo racks to the mat's coral, sky-blue border, lilac and sage. Tile matches stay empty until Tiffany's Vivienne swipe is done. Oct 13 later: Seafoam swapped for Miss Mahjong Jade & Brass, PLM Chartreuse added; tile matches in her ranking. Oct 15: non-B&B racks show their REAL photo (scripts/matcard/rackpanel.py patches the rack box of the reviewed cards). Oct 15 1pm (Tiffany): + B&B Hot Pink Metallic and B&B Jade; Jade & Brass and Petal Purple removed; + Middle & Main Scalloped Beechwood and Miss Mahjong Cornflower Blue Scalloped (real photos). Rack photos all the same length.",
+ "source": "assets/launches/omm-vivienne-mat/01.jpg (flat overhead), cropped with palette.crop_mat",
+ "tile_tags": {
+  "Spring Love (retired)": "retired",
+  "Papaya Spritz": "pair mat",
+  "Hummingbird": "Sunday Mahjong"
+ },
+ "panel_boxes": {
+  "fb": [
+   665,
+   666,
+   1004,
+   934
+  ],
+  "pin": [
+   604,
+   694,
+   943,
+   962
+  ]
+ },
+ "cards_src": "assets/launches/omm-vivienne-mat/cards/ (the reviewed set, artifact TkyPYbCSWdnwY2LsF12zpd)",
+ "_note_hummingbird": "Oct 17: Hummingbird removed. It was added by Claude's color pass for the all-brands version, not one of Tiffany's picks."
+}
