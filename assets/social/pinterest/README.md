@@ -3,7 +3,7 @@
 Kit page (artifact): https://claude.ai/artifact/2kAMiQEnb3fSWdjayGTi7H. Nothing has been posted.
 
 - pins/: 33 pins at 1000x1500. 20 album #1 match pins, 13 holiday pins (holiday pins are scheduled Nov 1 or later).
-- pins.csv: Pinterest bulk-upload columns. Media URLs are pinned to jsdelivr commit b5ec7f01.
+- pins.csv: Pinterest bulk-upload columns. Media URLs are pinned to jsdelivr commit b2233187 (Oct 18: wood-stain strips removed from Birdie, Glow Wild, Heritage 2.0, Jade, Malachite pins; see scripts/pinterest/woodfix/). jsDelivr sometimes returns a one-off 403 on a fresh commit; retry before scheduling.
 - pinterest-profile-photo.jpg: flame heart on cream, for the profile photo.
 - Built by scripts/pinterest/build_pins.py (takes the scratchpad pins dir).
 - Planoly: the Pinterest channel @mahjmatchmaker is connected, with auto-publish on.
