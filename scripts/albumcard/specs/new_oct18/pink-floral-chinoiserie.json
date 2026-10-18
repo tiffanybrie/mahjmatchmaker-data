@@ -1,0 +1,80 @@
+{
+ "_note": "Pink Floral Chinoiserie new matches Oct 18",
+ "mat_file": "assets/mats/mahj-squad/pink-floral-chinoiserie-flat-closeup-WATERMARKED-no-social.jpg",
+ "mat_crop": [
+  0,
+  0,
+  838,
+  838
+ ],
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "seabreeze-pink-floral-chinoiserie",
+   "title": "Seabreeze + Pink Floral Chinoiserie",
+   "col": "#02aaa1",
+   "tile_file": "assets/tiles/album/seabreeze.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Hot Pink",
+    "Miss Mahjong Scalloped Iridescent Opal"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Mermaid"
+   ],
+   "file": "seabreeze-mahjong-tiles-mahj-squad-pink-floral-chinoiserie-mat.jpg"
+  },
+  {
+   "slug": "dandy-pink-floral-chinoiserie",
+   "title": "Dandy + Pink Floral Chinoiserie",
+   "col": "#ce1467",
+   "tile_file": "assets/tiles/album/dandy.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Avocado",
+    "Miss Mahjong Scalloped Iridescent Opal"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Mermaid"
+   ],
+   "file": "dandy-mahjong-tiles-mahj-squad-pink-floral-chinoiserie-mat.jpg"
+  },
+  {
+   "slug": "la-fete-pink-floral-chinoiserie",
+   "title": "La F\u00eate + Pink Floral Chinoiserie",
+   "col": "#e97695",
+   "tile_file": "assets/tiles/album/la-fete.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Avocado"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Mermaid"
+   ],
+   "file": "la-fete-mahjong-tiles-mahj-squad-pink-floral-chinoiserie-mat.jpg"
+  },
+  {
+   "slug": "pippa-pink-floral-chinoiserie",
+   "title": "Pippa + Pink Floral Chinoiserie",
+   "col": "#e1ab13",
+   "tile_file": "assets/tiles/album/pippa.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Icy Mint"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Mermaid"
+   ],
+   "file": "pippa-mahjong-tiles-mahj-squad-pink-floral-chinoiserie-mat.jpg"
+  }
+ ]
+}

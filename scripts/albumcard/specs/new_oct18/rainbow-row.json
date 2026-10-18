@@ -1,0 +1,114 @@
+{
+ "_note": "Rainbow Row new matches Oct 18",
+ "mat_file": "assets/mats/rebecca-illustrated/rainbow-row.jpg",
+ "mat_crop": [
+  0,
+  0,
+  1156,
+  1156
+ ],
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "limoncello-rainbow-row",
+   "title": "Limoncello + Rainbow Row",
+   "col": "#97aa27",
+   "tile_file": "assets/tiles/album/limoncello.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Periwinkle Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Light Blue"
+   ],
+   "file": "limoncello-mahjong-tiles-rebecca-illustrated-rainbow-row-mat.jpg"
+  },
+  {
+   "slug": "sorbet-rainbow-row",
+   "title": "Sorbet + Rainbow Row",
+   "col": "#e9a926",
+   "tile_file": "assets/tiles/album/sorbet.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Icy Mint",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Middle & Main Scalloped Beechwood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Light Blue"
+   ],
+   "file": "sorbet-mahjong-tiles-rebecca-illustrated-rainbow-row-mat.jpg"
+  },
+  {
+   "slug": "la-fete-rainbow-row",
+   "title": "La F\u00eate + Rainbow Row",
+   "col": "#e97695",
+   "tile_file": "assets/tiles/album/la-fete.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Avocado"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Light Blue"
+   ],
+   "file": "la-fete-mahjong-tiles-rebecca-illustrated-rainbow-row-mat.jpg"
+  },
+  {
+   "slug": "amara-rainbow-row",
+   "title": "Amara + Rainbow Row",
+   "col": "#d52979",
+   "tile_file": "assets/tiles/album/amara.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Pink",
+    "Bird & Bamboo Kelly Green",
+    "Mahjong Row & Co. Scalloped Tortoise"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Light Blue"
+   ],
+   "file": "amara-mahjong-tiles-rebecca-illustrated-rainbow-row-mat.jpg"
+  },
+  {
+   "slug": "seabreeze-rainbow-row",
+   "title": "Seabreeze + Rainbow Row",
+   "col": "#02aaa1",
+   "tile_file": "assets/tiles/album/seabreeze.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Hot Pink",
+    "Miss Mahjong Scalloped Iridescent Opal"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Light Blue"
+   ],
+   "file": "seabreeze-mahjong-tiles-rebecca-illustrated-rainbow-row-mat.jpg"
+  },
+  {
+   "slug": "jasmine-rainbow-row",
+   "title": "Jasmine + Rainbow Row",
+   "col": "#36a272",
+   "tile_file": "assets/tiles/album/jasmine.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Periwinkle Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Light Blue"
+   ],
+   "file": "jasmine-mahjong-tiles-rebecca-illustrated-rainbow-row-mat.jpg"
+  }
+ ],
+ "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM"
+}
