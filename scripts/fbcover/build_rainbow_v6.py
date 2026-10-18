@@ -75,6 +75,11 @@ for gy in range(-40,H+40,uh-6):
 z=list(range(1,len(slots)+1));random.shuffle(z)
 NEW={'jade','tortoise','sunday','papaya-spritz','petalee','brownstone','lilac-soiree','preppy-soiree','shangri-la','spring-love'}
 z=[zz+(400 if assign[slots[k]] in NEW else 0)+(40 if assign[slots[k]] in ('papaya-spritz','petalee','jade') else 0)+(20 if assign[slots[k]]=='malachite' else 0)+(600 if assign[slots[k]]=='pearlescent' else 0)-(30 if assign[slots[k]]=='lilac-soiree' else 0) for k,zz in enumerate(z)]
+# Oct 18 (Tiffany): tuck Petalee's bottom-right corner behind Cypress -> nearest Cypress card to Petalee's lower right sits above it
+_pk=[k for k,s in enumerate(slots) if assign[s]=='petalee'][0]; _ps=slots[_pk]
+_ck=min([k for k,s in enumerate(slots) if assign[s]=='cypress-forest'],key=lambda k:(slots[k][2]-(_ps[2]+cw*0.6))**2+(slots[k][3]-(_ps[3]+ch*0.6))**2)
+z[_ck]=z[_pk]+1
+print('petalee',_ps,'z',z[_pk],'cypress',slots[_ck],'z',z[_ck])
 for k,s in enumerate(slots):
     b,r,x,y=s;name=assign[s]
     lean=1 if (b+r)%2 else -1
