@@ -73,7 +73,7 @@ def card_crop(path):
     """Keep the card's title + styled match; drop the bottom logo strip and footer
     (old cards carry the retired tagline / old footers)."""
     im = Image.open(path).convert('RGB')
-    return im.crop((0, 0, im.width, int(im.height * 0.835)))
+    return im.crop((0, 0, im.width, int(im.height * 0.815)))
 
 pins = []
 
@@ -155,7 +155,9 @@ HOL = [
 for f, name, mat, mbrand in HOL:
     cv = Image.new('RGB', (W, H), CREAM)
     top = header(cv, f'The best Christmas mat for {name} tiles', f'Tiffany\'s #1 holiday match: {mat} by {mbrand}', accent=(150, 24, 40))
-    place(cv, card_crop(os.path.join(REPO, 'assets/cards/holiday-v4', f)), top, H - 180)
+    src = os.path.join(REPO, 'assets/cards/polofix-v1', f)
+    if not os.path.exists(src): src = os.path.join(REPO, 'assets/cards/holiday-v4', f)
+    place(cv, card_crop(src), top, H - 180)
     footer(cv, bg=(150, 24, 40))
     fn = 'holiday-' + f.replace('.jpg', '-pin.jpg'); cv.save(os.path.join(OUT, fn), quality=88)
     pins.append(dict(file=fn, board='Christmas Mahjong Mats', title=f'Christmas Mahjong Mat for {name} Tiles: {mat}',
