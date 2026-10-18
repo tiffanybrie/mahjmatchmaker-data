@@ -57,7 +57,7 @@ def crop(im):
     return im.crop((0, Hh - ch, cw, Hh))
 def slug(s): return re.sub(r'[^a-z0-9]+', '-', s.lower().replace('&', 'and').replace("'", '')).strip('-')
 OVR = {'tt-mahjsquad-pink-floral-chinoiserie': R + 'assets/mats/mahj-squad/pink-floral-chinoiserie-flat-closeup-WATERMARKED-no-social.jpg',
-       'cc-parrotia': W + '/vir/parrotia-flat.jpg', 'cc-roseveil': W + '/vir/roseveil-flat.jpg'}
+       'cc-parrotia': R + 'assets/mats/virora-mahjong/parrotia.jpg', 'cc-roseveil': R + 'assets/mats/virora-mahjong/roseveil.jpg'}
 def find_img(k):
     if k in OVR: return Image.open(OVR[k]), OVR[k].replace(R, '')
     for kk, p in IMG.items():
