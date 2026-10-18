@@ -56,7 +56,7 @@ def header(cv, title, sub, accent=NAVY):
 def footer(cv, line1='Find your match at mahjmatchmaker.com', line2='Save with code MAHJMATCH at partner shops', bg=NAVY):
     d = ImageDraw.Draw(cv)
     d.rectangle([0, H - 150, W, H], fill=bg)
-    f1 = fit(d, line1, INTERB, 44, W - 80); f2 = fit(d, line2, INTERM, 32, W - 80)
+    f1 = fit(d, line1, INTERB, 46, W - 80, 30); f2 = fit(d, line2, INTERM, 32, W - 80, 22)
     d.text((W // 2, H - 122), line1, font=f1, fill=WHITE, anchor='ma')
     d.text((W // 2, H - 62), line2, font=f2, fill=(255, 205, 216), anchor='ma')
 
@@ -101,19 +101,22 @@ MATCH = [  # slug, set name, tile brand, board
  ('talulah','Talulah','Oh My Mahjong','Neutral Mahjong Tiles and Mat Matches'),
 ]
 picks = {p['slug']: p for p in json.load(open(os.path.join(SP, 'picks.json')))}
+# distinct mats matched per live album (counted from the live album pages, Oct 18)
+COUNTS = json.load(open(os.path.join(SP, 'counts.json')))
 start = datetime.datetime(2026, 10, 21, 11, 0)
 for i, (slug, name, tbrand, board) in enumerate(MATCH):
     p = picks[slug]; mat = p['title'].split(' + ', 1)[1]; mbrand = p['brand'].replace('Retired', '').strip()
     cv = Image.new('RGB', (W, H), CREAM)
-    top = header(cv, f'What mat goes with {name} tiles?', f"Tiffany's #1 match: the {mat} mat by {mbrand}")
+    n = COUNTS[slug]
+    top = header(cv, f'{n} mats that match {name} tiles', f"Shown: Tiffany's #1 pick, the {mat} mat by {mbrand}")
     place(cv, card_crop(os.path.join(SP, p['file'])), top, H - 180)
-    footer(cv)
+    footer(cv, f"See all {n} of {name}'s matches \u2192", 'mahjmatchmaker.com  \u00b7  Save with code MAHJMATCH')
     fn = f'{i+1:02d}-{slug}-mahjong-tiles-{mat.lower().replace(" ", "-").replace("&","and")}-mat-pin.jpg'
     cv.save(os.path.join(OUT, fn), quality=88)
     pins.append(dict(file=fn, board=board,
-        title=f'What Mat Goes With {name} Mahjong Tiles? {mat} Mat Match',
-        desc=(f"My #1 mat match for {tbrand} {name} mahjong tiles: the {mat} mahjong mat by {mbrand}, styled with racks that pull the tile colors. "
-              f"See every {name} tile, mat and rack match at mahjmatchmaker.com, and save with code MAHJMATCH at participating partner shops. "
+        title=f'{n} Mats That Match {name} Mahjong Tiles',
+        desc=(f"See all {n} mahjong mats that match {tbrand} {name} mahjong tiles, each styled with racks that pull the tile colors. "
+              f"Shown here: my #1 pick, the {mat} mat by {mbrand}. Find your favorite {name} tile, mat and rack match at mahjmatchmaker.com, and save with code MAHJMATCH at participating partner shops. "
               f"#mahjong #mahjongmat #mahjongtiles #mahjmatchmaker"),
         link=f'https://www.mahjmatchmaker.com/{slug}-mahjong-tile-matches?utm_source=pinterest&utm_medium=social&utm_campaign=launch',
         date=(start + datetime.timedelta(days=i)).strftime('%Y-%m-%dT%H:%M:%S'), holiday=False,
@@ -154,14 +157,14 @@ HOL = [
 ]
 for f, name, mat, mbrand in HOL:
     cv = Image.new('RGB', (W, H), CREAM)
-    top = header(cv, f'The best Christmas mat for {name} tiles', f'Tiffany\'s #1 holiday match: {mat} by {mbrand}', accent=(150, 24, 40))
+    top = header(cv, f'Christmas mats for {name} tiles', f'Shown: Tiffany\'s #1 holiday pick, {mat} by {mbrand}', accent=(150, 24, 40))
     src = os.path.join(REPO, 'assets/cards/polofix-v1', f)
     if not os.path.exists(src): src = os.path.join(REPO, 'assets/cards/holiday-v4', f)
     place(cv, card_crop(src), top, H - 180)
-    footer(cv, bg=(150, 24, 40))
+    footer(cv, f"See all of {name}'s holiday matches \u2192", 'mahjmatchmaker.com  \u00b7  Save with code MAHJMATCH', bg=(150, 24, 40))
     fn = 'holiday-' + f.replace('.jpg', '-pin.jpg'); cv.save(os.path.join(OUT, fn), quality=88)
-    pins.append(dict(file=fn, board='Christmas Mahjong Mats', title=f'Christmas Mahjong Mat for {name} Tiles: {mat}',
-        desc=(f"My top holiday mat match for {name} mahjong tiles is the {mat} mat by {mbrand}. See every holiday tile, mat and rack match at mahjmatchmaker.com. "
+    pins.append(dict(file=fn, board='Christmas Mahjong Mats', title=f'Christmas Mahjong Mats That Match {name} Tiles',
+        desc=(f"See all of my Christmas mat matches for {name} mahjong tiles, each with racks to match. Shown here: my #1 holiday pick, the {mat} mat by {mbrand}. Find every holiday tile, mat and rack match at mahjmatchmaker.com. "
               "Code MAHJMATCH saves at participating partner shops. #christmasmahjong #holidaymahjong #mahjongmat #mahjmatchmaker"),
         link='https://www.mahjmatchmaker.com/holiday-mahjong-matches?utm_source=pinterest&utm_medium=social&utm_campaign=holiday',
         date=hdate(), holiday=True, keywords=f'christmas mahjong mat, {name} mahjong tiles, holiday mahjong, {mat} mahjong mat'))
