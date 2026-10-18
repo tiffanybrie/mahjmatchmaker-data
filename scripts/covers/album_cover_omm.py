@@ -1,4 +1,5 @@
-"""OMM-style album cover (the live Sorbet/Willow look), 1080x1350: photo full-bleed, translucent panel in the
+"""Oct 18 (Tiffany): logo + title block is vertically CENTERED in the panel above the wordmark (it sat too high, with a big gap above mahjmatchmaker).
+OMM-style album cover (the live Sorbet/Willow look), 1080x1350: photo full-bleed, translucent panel in the
 set's colour, chinoiserie frame, brand logo straight on the panel (or on a cream tag with --tag), Caprasimo
 "X Tiles" title, white mahjmatchmaker wordmark + pink tagline bar.
 Usage: python3 album_cover_omm.py <bg> <logo png> <logo h px> "<Title<br>Tiles>" "<r,g,b>" <out.jpg> [bg pos] [--tag]"""
@@ -15,7 +16,7 @@ body{{margin:0;width:1080px;height:1350px;overflow:hidden;background:#000;positi
 .bg{{position:absolute;inset:0;background:url("{os.path.abspath(bg)}") {pos}/cover no-repeat}}
 .p{{position:absolute;left:87px;top:281px;width:906px;height:788px;background:rgba({rgb},.88)}}
 .f{{position:absolute;left:87px;top:281px;width:906px;height:788px;background:url({H}/frame2.png)}}
-.c{{position:absolute;left:87px;top:360px;width:906px;display:flex;flex-direction:column;align-items:center;gap:6px;color:#fbf6ee;text-align:center}}
+.c{{position:absolute;left:87px;top:300px;height:600px;width:906px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#fbf6ee;text-align:center}}
 .lg{{display:block;height:{lh}px}}
 .tag{{background:#fbf6ee;border-radius:14px;padding:12px 22px;box-shadow:0 4px 14px rgba(0,0,0,.25);display:flex}}
 .tag img{{display:block;height:{lh}px}}
