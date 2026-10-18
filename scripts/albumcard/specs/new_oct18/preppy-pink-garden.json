@@ -1,0 +1,80 @@
+{
+ "_note": "Preppy Pink Garden (Bespoke Mahjong) new matches Oct 18",
+ "mat_file": "assets/mats/bespoke-mahjong/preppy-pink-garden.jpg",
+ "mat_crop": [
+  0,
+  0,
+  1080,
+  1080
+ ],
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "solara-preppy-pink-garden",
+   "title": "Solara + Preppy Pink Garden",
+   "col": "#e26959",
+   "tile_file": "assets/tiles/album/solara.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Peach Sorbet Scalloped",
+    "Miss Mahjong Iridescent Opal Scalloped",
+    "Bird & Bamboo Jade"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Ballet Pink",
+    "Bird & Bamboo Light Blue"
+   ],
+   "file": "solara-mahjong-tiles-bespoke-mahjong-preppy-pink-garden-mat.jpg"
+  },
+  {
+   "slug": "sorbet-preppy-pink-garden",
+   "title": "Sorbet + Preppy Pink Garden",
+   "col": "#e9a926",
+   "tile_file": "assets/tiles/album/sorbet.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Icy Mint",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Middle & Main Scalloped Beechwood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Ballet Pink",
+    "Bird & Bamboo Light Blue"
+   ],
+   "file": "sorbet-mahjong-tiles-bespoke-mahjong-preppy-pink-garden-mat.jpg"
+  },
+  {
+   "slug": "dandy-preppy-pink-garden",
+   "title": "Dandy + Preppy Pink Garden",
+   "col": "#ce1467",
+   "tile_file": "assets/tiles/album/dandy.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Avocado",
+    "Miss Mahjong Scalloped Iridescent Opal"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Ballet Pink",
+    "Bird & Bamboo Light Blue"
+   ],
+   "file": "dandy-mahjong-tiles-bespoke-mahjong-preppy-pink-garden-mat.jpg"
+  },
+  {
+   "slug": "gemma-preppy-pink-garden",
+   "title": "Gemma + Preppy Pink Garden",
+   "col": "#40214b",
+   "tile_file": "assets/tiles/album/gemma.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Eggplant"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Ballet Pink",
+    "Bird & Bamboo Light Blue"
+   ],
+   "file": "gemma-mahjong-tiles-bespoke-mahjong-preppy-pink-garden-mat.jpg"
+  }
+ ]
+}

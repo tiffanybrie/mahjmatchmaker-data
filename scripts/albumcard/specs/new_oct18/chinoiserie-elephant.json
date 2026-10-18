@@ -1,0 +1,30 @@
+{
+ "_note": "Chinoiserie Elephant (Mahj & Vine) new matches Oct 18",
+ "mat_file": "assets/mats/mahj-vine/chinoiserie-elephant.jpg",
+ "mat_crop": [
+  230,
+  440,
+  3180,
+  3390
+ ],
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "solara-chinoiserie-elephant",
+   "title": "Solara + Chinoiserie Elephant",
+   "col": "#e26959",
+   "tile_file": "assets/tiles/album/solara.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Peach Sorbet Scalloped",
+    "Miss Mahjong Iridescent Opal Scalloped",
+    "Bird & Bamboo Jade"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Pink Coral",
+    "Bird & Bamboo French Blue"
+   ],
+   "file": "solara-mahjong-tiles-mahj-and-vine-chinoiserie-elephant-mat.jpg"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "_note": "Rally in Pink (Mahj Mood) new matches Oct 18",
+ "mat_file": "assets/mats/mahj-mood/rally-in-pink.jpg",
+ "mat_crop": [
+  4,
+  0,
+  1285,
+  1281
+ ],
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "amara-rally-in-pink",
+   "title": "Amara + Rally in Pink",
+   "col": "#d52979",
+   "tile_file": "assets/tiles/album/amara.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Pink",
+    "Bird & Bamboo Kelly Green",
+    "Mahjong Row & Co. Scalloped Tortoise"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Hot Pink"
+   ],
+   "file": "amara-mahjong-tiles-mahj-mood-rally-in-pink-mat.jpg"
+  },
+  {
+   "slug": "pearlescent-rally-in-pink",
+   "title": "Pearlescent + Rally in Pink",
+   "col": "#e67965",
+   "tile_file": "assets/tiles/album/pearlescent.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Miss Mahjong Peach Sorbet Scalloped",
+    "Bird & Bamboo Light Pink"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Hot Pink"
+   ],
+   "file": "pearlescent-mahjong-tiles-mahj-mood-rally-in-pink-mat.jpg"
+  }
+ ]
+}

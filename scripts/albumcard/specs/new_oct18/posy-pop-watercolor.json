@@ -1,0 +1,114 @@
+{
+ "_note": "Posy Pop Watercolor (Bam! Let's Mahjong) new matches Oct 18",
+ "mat_file": "assets/mats/bam-lets-mahjong/posy-pop-watercolor.jpg",
+ "mat_crop": [
+  0,
+  0,
+  1200,
+  1200
+ ],
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "dandy-posy-pop-watercolor",
+   "title": "Dandy + Posy Pop Watercolor",
+   "col": "#ce1467",
+   "tile_file": "assets/tiles/album/dandy.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Avocado",
+    "Miss Mahjong Scalloped Iridescent Opal"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "file": "dandy-mahjong-tiles-bam-lets-mahjong-posy-pop-watercolor-mat.jpg"
+  },
+  {
+   "slug": "la-fete-posy-pop-watercolor",
+   "title": "La F\u00eate + Posy Pop Watercolor",
+   "col": "#e97695",
+   "tile_file": "assets/tiles/album/la-fete.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Avocado"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "file": "la-fete-mahjong-tiles-bam-lets-mahjong-posy-pop-watercolor-mat.jpg"
+  },
+  {
+   "slug": "amara-posy-pop-watercolor",
+   "title": "Amara + Posy Pop Watercolor",
+   "col": "#d52979",
+   "tile_file": "assets/tiles/album/amara.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Pink",
+    "Bird & Bamboo Kelly Green",
+    "Mahjong Row & Co. Scalloped Tortoise"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Sunshine"
+   ],
+   "file": "amara-mahjong-tiles-bam-lets-mahjong-posy-pop-watercolor-mat.jpg"
+  },
+  {
+   "slug": "seabreeze-posy-pop-watercolor",
+   "title": "Seabreeze + Posy Pop Watercolor",
+   "col": "#02aaa1",
+   "tile_file": "assets/tiles/album/seabreeze.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Hot Pink",
+    "Miss Mahjong Scalloped Iridescent Opal"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Sunshine"
+   ],
+   "file": "seabreeze-mahjong-tiles-bam-lets-mahjong-posy-pop-watercolor-mat.jpg"
+  },
+  {
+   "slug": "pippa-posy-pop-watercolor",
+   "title": "Pippa + Posy Pop Watercolor",
+   "col": "#e1ab13",
+   "tile_file": "assets/tiles/album/pippa.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Icy Mint"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "file": "pippa-mahjong-tiles-bam-lets-mahjong-posy-pop-watercolor-mat.jpg"
+  },
+  {
+   "slug": "sorbet-posy-pop-watercolor",
+   "title": "Sorbet + Posy Pop Watercolor",
+   "col": "#e9a926",
+   "tile_file": "assets/tiles/album/sorbet.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Icy Mint",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Middle & Main Scalloped Beechwood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "file": "sorbet-mahjong-tiles-bam-lets-mahjong-posy-pop-watercolor-mat.jpg"
+  }
+ ]
+}
