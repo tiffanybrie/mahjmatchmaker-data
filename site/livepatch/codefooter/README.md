@@ -89,3 +89,5 @@ All 14 pages swapped as whole-block replacements, using the blocks at commit e59
   - Heritage 2.0, Dear Santa and December 1994 + Festive Plaid (codefooter-v1/holiday-v4, Tudor)
   - Nantucket + Hearts & Horseshoes (Almond)
 - Fetching block text from jsDelivr sometimes returns "Package size exceeded"; the block text now comes from raw.githubusercontent.com at the same commit. Card images are on jsDelivr and all returned 200 on retry.
+
+- Oct 18 (later): 5 more live cards had their banned wood racks patched at commit 7a470d6: Amara + Clara's Dream, Nantucket + Hearts & Horseshoes, Jade + Blue Christmas, Heritage 2.0 + Festive Plaid and Dear Santa + Festive Plaid. The .html blocks for amara, nantucket, jade, heritage-2-0 and holiday are re-pinned and their captions now match the cards. The holiday December 1994 + Festive Plaid caption was copied from the Dear Santa card; it now mirrors its own card (tiles: B&B Red, B&B Evergreen, PLM Oak; mat: B&B Pink Coral). Re-apply these 5 blocks as whole-block pastes; the .json swap lists don't include this change.
