@@ -17,7 +17,15 @@ TRACKS = json.load(open(R + 'config/tile-racks-picks.json'))['final_lists']['pap
 PARTNERS = {b[0] for b in json.load(open(R + 'work/pub/catalog.json'))['B']}
 PCT = {'Britt Mills': '15%', 'Amanda Toppe': '20%', 'Royal Mahjong Society': '15%'}
 NOPCT = {'Anders Ruff', 'Mahjong Register', 'The Mahjong Press'}
-SRC = {'Goldie (retired)': 'assets/mats/clean/goldie-omm.png', 'Spring Fling (retired)': 'assets/mats/omm-retired/spring-fling.png'}
+SRC = {'Goldie (retired)': 'assets/mats/clean/goldie-omm.png', 'Spring Fling (retired)': 'assets/mats/omm-retired/spring-fling.png',
+       # Oct 18 2:31pm (Tiffany): Mahj & Moon bamboo backgrounds cut out so the mat fills its area
+       'Grand Garden Estate': 'assets/mats/clean/mahj-and-moon-grand-garden-estate.png',
+       'Retro Waves': 'assets/mats/clean/mahj-and-moon-retro-waves.png',
+       'Leopard American': 'assets/mats/clean/mahj-and-moon-leopard-american.png'}
+# Oct 18 1:11pm: her saved Ready to Ship order (c5-papaya-order), 51-53 cancelled (l-pap-order3). Tiers by her cut lines: TOP 1-11, BEST 12-26, MORE 27+
+FINAL = json.load(open(R + 'scripts/albumcard/specs/papaya_spritz_final_order.json'))
+BYN = {c['name']: c for c in A['order']}
+A['order'] = [dict(BYN[n], tier=('TOP' if i < 11 else 'BEST' if i < 26 else 'MORE')) for i, n in enumerate(FINAL)]
 def footer(b, retired):
     if retired or b not in PARTNERS: return '10% OFF  USE CODE : MAHJMATCH'  # Oct 18 rule: no SHOP THE MATCH footers; every card carries MAHJMATCH (the code works on the Oh My Mahjong tiles)
     if b in NOPCT: return 'SAVE WITH CODE : MAHJMATCH'
