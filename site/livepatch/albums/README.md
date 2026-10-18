@@ -44,3 +44,18 @@ Staged separately in `../papaya/` (README there). Its page steps and color-secti
 ## Notes for Tiffany
 - **Spring Love:** she suspects missing matches, since there are only 14 non-holiday ones. Not addressed here; it needs a missed-mats swipe round.
 - **Spring Love tile photo:** only about 210px at the source, upscaled. It needs a bigger photo.
+
+## Sunday Tile Set (approved; staged Oct 18 afternoon)
+- **Code block:** `site/livepatch/albums/sunday-tile-set.html`. 35 cards in her saved Ready to Ship order (c5-sunday, 11:32am). Fall Flowers is removed (l-sunday-final, Yes 12:05pm).
+- **Cards:** `assets/cards/sunday-tile-set-v4/` at commit a908626. These are the v3 cards with the "SAVE WITH CODE : MAHJMATCH" footer; the logo placement is unchanged, per her.
+- **Captions:** brands with no code show a "No code for <brand>" chip. Those are Sunday Mahjong, Ozark Mahjongg, Mahjong by SI, Luxe Mahjong, Lucky Daughters and Mahj Tile Haus. The FAQ top picks were updated (Carson Vintage, Brownstone Bloom, Autumn Saffron).
+- **Warmed:** all 36 URLs, 0 failing. Rendered at 390 and 1280 with no sideways scroll.
+- **Page:** slug `/sunday-tile-set-mahjong-tile-matches`.
+  - Title: "Sunday Tile Set Mahjong Tile Matches | Sunday Mahjong"
+  - SEO title: "Sunday Mahjong Sunday Tile Set: 35 Mat & Rack Matches"
+  - SEO description: "35 mahjong mats and racks that match the Sunday Mahjong Sunday Tile Set, picked by Tiffany at Mahj Matchmaker."
+  - Duplicate the newest album page and swap its code block.
+- **Cover:** `assets/cards/sunday-tile-set/00-sunday-tile-set-mahjong-tiles-cover.jpg` at e34138f, or the w800 cover in assets/covers/albums if present.
+- **Yellow & Orange color section:** add an `mmalb-c` card. The second `<a>` below is the cover link and goes at the end of the Yellow & Orange grid in the color blocks:
+  `<a class="mmalb-c" href="/sunday-tile-set-mahjong-tile-matches"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e34138fda6c04c9c524983f81e828305eb54531a/assets/cards/sunday-tile-set/00-sunday-tile-set-mahjong-tiles-cover.jpg" alt="Sunday Mahjong Sunday Tile Set mahjong tile matches" loading="lazy"><span><small>Sunday Mahjong</small>Sunday Tile Set</span></a>`
+- **Open question:** she said she "took out another one" besides Fall Flowers. Her saved order still has all 36, so only Fall Flowers is removed. Ask her which other mat.
