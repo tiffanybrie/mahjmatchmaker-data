@@ -1,0 +1,85 @@
+{
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "osler-blue-floral-bird",
+   "title": "Osler + Blue Floral Bird",
+   "col": "#456fbe",
+   "tile_file": "assets/tiles/album/osler.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Tigre de Tart\u00e1n Oxblood Scallop",
+    "Bird & Bamboo Wine"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Powder Blue",
+    "Bird & Bamboo Shell Pink"
+   ],
+   "mat": "(data uri omitted; see build.py)",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "file": "osler-mahjong-tiles-mahj-and-moon-blue-floral-bird-mat.jpg"
+  },
+  {
+   "slug": "osler-blue-heritage-toile",
+   "title": "Osler + Blue Heritage Toile",
+   "col": "#456fbe",
+   "tile_file": "assets/tiles/album/osler.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Tigre de Tart\u00e1n Oxblood Scallop",
+    "Bird & Bamboo Wine"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Navy",
+    "Bird & Bamboo Powder Blue"
+   ],
+   "mat": "(data uri omitted; see build.py)",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "file": "osler-mahjong-tiles-mahj-and-moon-blue-heritage-toile-mat.jpg"
+  },
+  {
+   "slug": "osler-blue-koi-chinoiserie",
+   "title": "Osler + Blue Koi Chinoiserie",
+   "col": "#456fbe",
+   "tile_file": "assets/tiles/album/osler.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Tigre de Tart\u00e1n Oxblood Scallop",
+    "Bird & Bamboo Wine"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Cornflower Blue",
+    "Bird & Bamboo Persimmon"
+   ],
+   "mat": "(data uri omitted; see build.py)",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "file": "osler-mahjong-tiles-mahj-and-moon-blue-koi-chinoiserie-mat.jpg"
+  },
+  {
+   "slug": "osler-equestrian",
+   "title": "Osler + Equestrian",
+   "col": "#456fbe",
+   "tile_file": "assets/tiles/album/osler.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Tigre de Tart\u00e1n Oxblood Scallop",
+    "Bird & Bamboo Wine"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Powder Blue",
+    "Bird & Bamboo Cherry Red"
+   ],
+   "mat": "(data uri omitted; see build.py)",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "file": "osler-mahjong-tiles-mahj-and-moon-equestrian-mat.jpg"
+  }
+ ]
+}
