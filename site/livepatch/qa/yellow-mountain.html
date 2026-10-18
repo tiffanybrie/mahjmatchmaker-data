@@ -1,0 +1,89 @@
+<style>
+.mmbg{--ink:#1e3a5f;--rose:#c8456f;--blush:#fdf2f5;--sand:#faf7f2;--line:#ead9df;max-width:880px;margin:0 auto;background:#fff;padding:36px 40px;border-radius:18px;color:var(--ink);line-height:1.65;font-size:17px}
+.mmbg *{box-sizing:border-box}
+.mmbg h1,.mmbg h2,.mmbg h3,.mmbg p,.mmbg li{color:var(--ink)}
+.mmbg a{color:var(--rose)}
+.mmbg .hero{position:relative;border-radius:20px;overflow:hidden;background:var(--sand)}
+.mmbg .hero img{display:block;width:100%;height:360px;object-fit:cover}
+.mmbg .hero-txt{padding:28px 36px 30px;background:#fff;margin:-70px 24px 0;position:relative;border-radius:16px;box-shadow:0 8px 30px rgba(30,58,95,.10)}
+.mmbg .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.72em;font-weight:700;color:var(--rose);margin:0 0 6px}
+.mmbg h1{font-size:2.3em;line-height:1.15;margin:0 0 10px}
+.mmbg .dek{font-size:1.08em;margin:0;opacity:.9}
+.mmbg section{margin:46px 0}
+.mmbg h2{font-size:1.55em;margin:0 0 14px;line-height:1.25}
+.mmbg .note{background:var(--sand);border-left:4px solid var(--rose);border-radius:0 14px 14px 0;padding:22px 26px}
+.mmbg .note p{margin:0 0 12px}.mmbg .note p:last-child{margin:0}
+.mmbg .sig{font-style:italic;font-weight:600}
+.mmbg .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.mmbg .card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.mmbg .card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--sand)}
+.mmbg .card .in{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.mmbg .card h3{font-size:1.08em;margin:0}
+.mmbg .card p{margin:0;font-size:.95em}
+.mmbg .card .go{margin-top:auto;font-weight:700;text-decoration:none;font-size:.92em}
+.mmbg .tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.mmbg .tiles a{text-decoration:none;color:var(--ink)}
+.mmbg .tiles img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;display:block}
+.mmbg .tiles span{display:block;font-weight:600;font-size:.92em;margin-top:6px}
+.mmbg .feat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;padding:0;margin:0}
+.mmbg .feat li{margin:0}
+.mmbg .feat a{display:block;padding:14px 16px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);background:#fff}
+.mmbg .feat a b{display:block;color:var(--rose);font-size:.75em;text-transform:uppercase;letter-spacing:.1em}
+.mmbg .perk{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--blush);border-radius:16px;padding:20px 24px}
+.mmbg .perk p{margin:0}
+.mmbg .perk .code{font-weight:800;letter-spacing:.08em;color:var(--rose)}
+.mmbg .btn{display:inline-block;background:var(--rose);color:#fff!important;padding:11px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.95em}
+.mmbg details{border-bottom:1px solid var(--line);padding:12px 0}
+.mmbg summary{cursor:pointer;font-weight:700}
+.mmbg details p{margin:8px 0 0}
+.mmbg .more{display:flex;flex-wrap:wrap;gap:8px}
+.mmbg .more a{border:1px solid var(--line);border-radius:999px;padding:6px 14px;text-decoration:none;font-size:.88em;color:var(--ink);background:#fff}
+.mmbg .small{font-size:.82em;opacity:.75}
+@media(max-width:700px){.mmbg{font-size:16px;padding:22px 16px}.mmbg .hero img{height:230px}.mmbg .hero-txt{margin:-40px 12px 0;padding:20px}.mmbg h1{font-size:1.8em}.mmbg .grid,.mmbg .feat{grid-template-columns:1fr}.mmbg .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.mmbg .me{display:flex;gap:16px;align-items:center;margin:0 0 16px}.mmbg .me img{width:76px;height:76px;border-radius:50%;object-fit:cover;flex:0 0 76px;border:3px solid #fff;box-shadow:0 2px 10px rgba(30,58,95,.15)}.mmbg .me strong{display:block;font-size:1.05em}.mmbg .me span{display:block;font-size:.88em;opacity:.8}
+</style><style>
+.mmbg .tiles.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.mmbg .tiles small{display:block;font-size:.8em;margin-top:2px}
+.mmbg .tiles small a{color:var(--rose);font-weight:600}
+@media(max-width:700px){.mmbg .tiles.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+
+<div class="mmbg">
+<div class="hero"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@8b0fff5f7a4e99ac4bc7247149bccc0bfa3589de/assets/brands/yellow-mountain/fx-am016-a.jpg" alt="Yellow Mountain Imports Jade Horizon American mahjong set"><div class="hero-txt"><p class="eyebrow">Brand guide</p><h1>Yellow Mountain Imports</h1><p class="dek">Budget-friendly American mahjong sets in classic and colorful styles, many with racks and a case included. Plus, my Yellow Mountain Imports discount code for readers.</p></div></div><div class="perk perk-top" style="margin:22px 0 4px"><p><strong>A thank-you for Mahj Matchmaker readers:</strong> use code <span class="code">MAHJMATCH10-YMI-2025</span> for 10% off at Yellow Mountain Imports checkout.</p><p style="font-size:14px;opacity:.75;margin:6px 0 14px">&#10003; Code verified October 9, 2026</p><a class="btn" href="https://www.ymimports.com/?ref=ofpphcus" target="_blank" rel="sponsored noopener">Visit Yellow Mountain Imports</a></div>
+<section><h2>Why I recommend Yellow Mountain Imports</h2><div class="note"><div class="me"><img src="https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/fa40abe2-2b7e-426d-90d0-c88854212701/Tiffany+Headshot.png?format=300w" style="object-position:50% 22%" alt="Tiffany Emery, founder of Mahj Matchmaker" loading="lazy"><div><strong>Hi, I&rsquo;m Tiffany.</strong><span>Oh My Mahjong Mahji Mentor instructor and the matchmaker behind Mahj Matchmaker.</span></div></div><p>Yellow Mountain Imports is my go-to suggestion when someone wants a pretty set at a friendlier price. Many of their American sets come complete with racks, pushers and a case.</p><p>Their colors hold their own: Verdant Spring and Jade Horizon are on my <a href="/blog/my-favorite-green-mahjong-tiles">favorite green tiles</a> list as some of the most affordable green sets, and Harbor Tide, with cobalt blue backs, is on my <a href="/blog/my-favorite-blue-mahjong-tiles">favorite blue tiles</a> list.</p><p>If you&rsquo;re a traditionalist, <a href="https://www.ymimports.com/products/us-at007-a?ref=ofpphcus" target="_blank" rel="sponsored noopener">The Classic</a> is a great place to start: ivory tiles with engraved markings in the traditional colors. I talk about why in <a href="/blog/mahjong-tile-set-details-to-know">tile set details to know</a>.</p><p>Note: their code is different from my usual one. Use <strong>MAHJMATCH10-YMI-2025</strong> at checkout.</p><p class="sig">&mdash; Tiffany, Mahj Matchmaker</p></div></section>
+<section><h2>My picks</h2>
+<div class="grid">
+<div class="card"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@8b0fff5f7a4e99ac4bc7247149bccc0bfa3589de/assets/brands/yellow-mountain/fx-at024-a.jpg" alt="Yellow Mountain Imports Verdant Spring American mahjong tiles" loading="lazy"><div class="in"><h3>Verdant Spring Tiles</h3><p>One of the most affordable green sets I love. Also available as a <a href="https://www.ymimports.com/products/fx-am024-a?ref=ofpphcus" target="_blank" rel="sponsored noopener">complete set with case</a>.</p><a class="go" href="https://www.ymimports.com/products/fx-at024-a?ref=ofpphcus" target="_blank" rel="sponsored noopener">Shop Verdant Spring &rarr;</a></div></div>
+<div class="card"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@8b0fff5f7a4e99ac4bc7247149bccc0bfa3589de/assets/brands/yellow-mountain/fx-at016-a.jpg" alt="Yellow Mountain Imports Jade Horizon American mahjong tiles" loading="lazy"><div class="in"><h3>Jade Horizon Tiles</h3><p>Another budget-friendly green favorite.</p><a class="go" href="https://www.ymimports.com/products/fx-at016-a?ref=ofpphcus" target="_blank" rel="sponsored noopener">Shop Jade Horizon &rarr;</a></div></div>
+<div class="card"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@8b0fff5f7a4e99ac4bc7247149bccc0bfa3589de/assets/brands/yellow-mountain/fx-at009-a.jpg" alt="Yellow Mountain Imports Harbor Tide American mahjong tiles with cobalt blue backs" loading="lazy"><div class="in"><h3>Harbor Tide Tiles</h3><p>Cobalt blue backs at a friendly price.</p><a class="go" href="https://www.ymimports.com/products/fx-at009-a?ref=ofpphcus" target="_blank" rel="sponsored noopener">Shop Harbor Tide &rarr;</a></div></div>
+<div class="card"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@8b0fff5f7a4e99ac4bc7247149bccc0bfa3589de/assets/brands/yellow-mountain/us-at007-a.jpg" alt="Yellow Mountain Imports The Classic ivory American mahjong tiles" loading="lazy"><div class="in"><h3>The Classic Tiles</h3><p>Ivory tiles with engraved markings in the traditional colors.</p><a class="go" href="https://www.ymimports.com/products/us-at007-a?ref=ofpphcus" target="_blank" rel="sponsored noopener">Shop The Classic &rarr;</a></div></div>
+</div>
+</section>
+<section><h2>Complete sets</h2>
+<p>Sets with racks and a case, ready to play.</p>
+<div class="tiles four">
+<div><a href="https://www.ymimports.com/products/fx-am016-a?ref=ofpphcus" target="_blank" rel="sponsored noopener"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@8b0fff5f7a4e99ac4bc7247149bccc0bfa3589de/assets/brands/yellow-mountain/fx-am016-a.jpg" alt="Yellow Mountain Imports Jade Horizon complete American mahjong set" loading="lazy"><span>Jade Horizon Set</span></a></div>
+<div><a href="https://www.ymimports.com/products/fx-am009-a?ref=ofpphcus" target="_blank" rel="sponsored noopener"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@8b0fff5f7a4e99ac4bc7247149bccc0bfa3589de/assets/brands/yellow-mountain/fx-am009-a.jpg" alt="Yellow Mountain Imports Harbor Tide complete American mahjong set" loading="lazy"><span>Harbor Tide Set</span></a></div>
+<div><a href="https://www.ymimports.com/products/fx-am015-a?ref=ofpphcus" target="_blank" rel="sponsored noopener"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@8b0fff5f7a4e99ac4bc7247149bccc0bfa3589de/assets/brands/yellow-mountain/fx-am015-a.jpg" alt="Yellow Mountain Imports Rosehill pink American mahjong set" loading="lazy"><span>Rosehill Set</span></a></div>
+<div><a href="https://www.ymimports.com/products/us-af035-a?ref=ofpphcus" target="_blank" rel="sponsored noopener"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@8b0fff5f7a4e99ac4bc7247149bccc0bfa3589de/assets/brands/yellow-mountain/us-af035-a.jpg" alt="Yellow Mountain Imports Peony Blush American mahjong set" loading="lazy"><span>Peony Blush Set</span></a></div>
+<div><a href="https://www.ymimports.com/products/fx-am027-a?ref=ofpphcus" target="_blank" rel="sponsored noopener"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@8b0fff5f7a4e99ac4bc7247149bccc0bfa3589de/assets/brands/yellow-mountain/fx-am027-a.jpg" alt="Yellow Mountain Imports Indigo Bay American mahjong set" loading="lazy"><span>Indigo Bay Set</span></a></div>
+<div><a href="https://www.ymimports.com/products/tc-af010-a?ref=ofpphcus" target="_blank" rel="sponsored noopener"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@8b0fff5f7a4e99ac4bc7247149bccc0bfa3589de/assets/brands/yellow-mountain/tc-af010-a.jpg" alt="Yellow Mountain Imports Aloha plumeria American mahjong set" loading="lazy"><span>Aloha Set</span></a></div>
+<div><a href="https://www.ymimports.com/products/tc-af009-a?ref=ofpphcus" target="_blank" rel="sponsored noopener"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@8b0fff5f7a4e99ac4bc7247149bccc0bfa3589de/assets/brands/yellow-mountain/tc-af009-a.jpg" alt="Yellow Mountain Imports Atlantica American mahjong set" loading="lazy"><span>Atlantica Set</span></a></div>
+<div><a href="https://www.ymimports.com/products/us-af033-a?ref=ofpphcus" target="_blank" rel="sponsored noopener"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@8b0fff5f7a4e99ac4bc7247149bccc0bfa3589de/assets/brands/yellow-mountain/us-af033-a.jpg" alt="Yellow Mountain Imports Celestial Harmony American mahjong set" loading="lazy"><span>Celestial Harmony Set</span></a></div>
+</div>
+</section>
+<section><h2>Where Yellow Mountain Imports shows up on Mahj Matchmaker</h2><ul class="feat">
+<li><a href="/blog/my-favorite-green-mahjong-tiles"><b>Guide</b>My Favorite Green Mahjong Tiles</a></li>
+<li><a href="/blog/my-favorite-blue-mahjong-tiles"><b>Guide</b>My Favorite Blue Mahjong Tiles</a></li>
+<li><a href="/blog/mahjong-tile-set-details-to-know"><b>Guide</b>Mahjong Tile Set Details to Know</a></li>
+</ul></section>
+<section><h2>Yellow Mountain Imports Discount Code</h2><div class="perk"><p><strong>A thank-you for Mahj Matchmaker readers:</strong> use code <span class="code">MAHJMATCH10-YMI-2025</span> for 10% off at Yellow Mountain Imports checkout.</p><a class="btn" href="https://www.ymimports.com/?ref=ofpphcus" target="_blank" rel="sponsored noopener">Visit Yellow Mountain Imports</a></div></section>
+<section><h2>Questions about Yellow Mountain Imports</h2>
+<details><summary>Is there a Yellow Mountain Imports discount code?</summary><p>Yes. Code MAHJMATCH10-YMI-2025 saves 10% on eligible Yellow Mountain Imports products. Enter it at checkout on YMImports.com.</p></details>
+<details><summary>Is Yellow Mountain Imports good for a first mahjong set?</summary><p>Yes. Their sets are budget-friendly, and many include racks, pushers and a case, so you can start playing right away.</p></details>
+<details><summary>What is a good traditional mahjong set?</summary><p>Yellow Mountain Imports The Classic is an ivory set with engraved markings in the traditional colors, a great pick for players who prefer classic suits.</p></details>
+<details><summary>Can I combine the code with other offers?</summary><p>Most shops allow one discount code per order, so the code usually can&rsquo;t be combined with a sale or another code.</p></details>
+</section>
+<section><h2>More brands I love</h2><div class="more"><a href="/oh-my-mahjong-discount-code">Oh My Mahjong</a><a href="/miss-mahjong-discount-code">Miss Mahjong</a><a href="/my-fair-mahjong-discount-code">My Fair Mahjong</a><a href="/mahjong-row-and-co-discount-code">Mahjong Row &amp; Co.</a><a href="/peace-love-mahjong-discount-code">Peace Love Mahjong</a><a href="/bird-and-bamboo-discount-code">Bird &amp; Bamboo</a><a href="/mahj-mood-discount-code">Mahj Mood</a><a href="/bam-bird-boutique-discount-code">Bam Bird Boutique</a><a href="/mahjong-discount-codes">All brands &rarr;</a></div></section>
+<p class="small">Mahj Matchmaker may earn a commission when you shop through these links, at no extra cost to you. Thank you for supporting the tile match mock-ups and inspiration I share with the community.</p></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is there a Yellow Mountain Imports discount code?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Code MAHJMATCH10-YMI-2025 saves 10% on eligible Yellow Mountain Imports products. Enter it at checkout on YMImports.com."}}, {"@type": "Question", "name": "Is Yellow Mountain Imports good for a first mahjong set?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Their sets are budget-friendly, and many include racks, pushers and a case, so you can start playing right away."}}, {"@type": "Question", "name": "What is a good traditional mahjong set?", "acceptedAnswer": {"@type": "Answer", "text": "Yellow Mountain Imports The Classic is an ivory set with engraved markings in the traditional colors, a great pick for players who prefer classic suits."}}, {"@type": "Question", "name": "Can I combine the code with other offers?", "acceptedAnswer": {"@type": "Answer", "text": "Most shops allow one discount code per order, so the code usually can\u2019t be combined with a sale or another code."}}]}</script>
