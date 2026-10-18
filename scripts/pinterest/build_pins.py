@@ -127,24 +127,37 @@ hstart = datetime.datetime(2026, 11, 1, 19, 0); hi = 0
 def hdate():
     global hi
     d = (hstart + datetime.timedelta(days=hi)).strftime('%Y-%m-%dT%H:%M:%S'); hi += 1; return d
+# Search-first holiday table pins (Tiffany, Oct 18): keyword first, short titles,
+# framed as "build a holiday table with the tiles you own". The boards' own baked-in
+# "How I'm Styling" titles are cropped off (crop = rows to drop from the top).
 BOARDS = [
- ('assets/blog/holiday-tablescape/holiday-mahjong-table-polo-club-shop-the-look.jpg','polo-club',
-  'How to Style a Holiday Mahjong Table Without a Christmas Mat','The Polo Club mat with Heritage tiles, walnut racks, a candle wreath and a green ribbon lamp: a moody holiday mahjong table you can keep up all season, no Christmas mat needed.',
+ ('assets/blog/holiday-tablescape/holiday-mahjong-table-polo-club-shop-the-look.jpg','polo-club', 340,
+  'Holiday mahjong table with the tiles you own', 'No Christmas mat needed',
+  'Holiday Mahjong Table Ideas With Tiles You Own',
+  'Holiday mahjong table ideas using the tiles you already own: a plaid mat, Heritage tiles, walnut racks, a candle wreath and a ribboned lamp. No Christmas mat needed, and it stays up all season.',
   'https://www.mahjmatchmaker.com/blog/holiday-mahjong-table'),
- ('assets/blog/holiday-tablescape-rattan/holiday-mahjong-table-rattan-shop-the-look.jpg','retro-rattan',
-  'Retro Rattan Holiday Mahjong Table Idea','The Sunday Mahjong Rattan mat dressed for the holidays: red tartan cloth, a ceramic tree lamp, amber glass coasters, a holly dice dish and walnut racks. Shop the look and find more holiday matches.',
+ ('assets/blog/holiday-tablescape-rattan/holiday-mahjong-table-rattan-shop-the-look.jpg','retro-rattan', 385,
+  'Mahjong Christmas table decor', 'Build a holiday table with the tiles you own',
+  'Mahjong Christmas Table Decor Ideas',
+  'Mahjong Christmas table decor ideas: a red tartan cloth, a ceramic tree lamp, amber glass coasters, a holly dice dish and walnut racks on a rattan mat. Build a holiday mahjong table with the tiles you own.',
   'https://www.mahjmatchmaker.com/holiday-mahjong-matches'),
- ('assets/blog/holiday-tablescape-rudolph/holiday-mahjong-table-rackin-rudolph-shop-the-look.jpg','rackin-rudolph',
-  "Rackin' Rudolph Christmas Mahjong Table Idea","Hip Hip Mahjong's Rackin' Rudolph mat with Middle & Main scalloped milk glass racks, a cherry red cloth, a bow lamp and a reindeer dice box. A cheerful Christmas mahjong table to shop.",
+ ('assets/blog/holiday-tablescape-rudolph/holiday-mahjong-table-rackin-rudolph-shop-the-look.jpg','rackin-rudolph', 315,
+  'Christmas mahjong table ideas', 'A reindeer mat, red cloth and milk glass racks',
+  'Christmas Mahjong Table Ideas: Reindeer Theme',
+  'Christmas mahjong table ideas with a reindeer mat, a cherry red cloth, scalloped milk glass racks, a bow lamp and a reindeer dice box. Find more Christmas mahjong mats and matches.',
   'https://www.mahjmatchmaker.com/holiday-mahjong-matches'),
 ]
-for src, slug, title, desc, link in BOARDS:
+for src, slug, crop, head, sub, title, desc, link in BOARDS:
     fn = f'holiday-mahjong-table-{slug}-pin.jpg'
-    Image.open(os.path.join(REPO, src)).convert('RGB').resize((W, H)).save(os.path.join(OUT, fn), quality=88)
+    im = Image.open(os.path.join(REPO, src)).convert('RGB'); im = im.crop((0, crop, im.width, im.height))
+    cv = Image.new('RGB', (W, H), CREAM); top = header(cv, head, sub, accent=(150, 24, 40))
+    place(cv, im, top, H - 180)
+    footer(cv, 'More holiday mahjong matches \u2192', 'mahjmatchmaker.com  \u00b7  Save with code MAHJMATCH', bg=(150, 24, 40))
+    cv.save(os.path.join(OUT, fn), quality=88)
     pins.append(dict(file=fn, board='Holiday Mahjong Table Ideas', title=title,
         desc=desc + ' Code MAHJMATCH saves at participating partner shops. #holidaymahjong #christmasmahjong #mahjongtable #mahjmatchmaker',
         link=link + '?utm_source=pinterest&utm_medium=social&utm_campaign=holiday', date=hdate(), holiday=True,
-        keywords='holiday mahjong table, christmas mahjong table, mahjong tablescape, mahjong mat'))
+        keywords='holiday mahjong table, christmas mahjong table, mahjong christmas decor, holiday mahjong mats'))
 
 # ---------- 3. Holiday tile + mat cards ----------
 HOL = [
@@ -186,16 +199,22 @@ pins.append(dict(file=fn, board='Christmas Mahjong Mats', title='Christmas Mahjo
     date=hdate(), holiday=True, keywords='christmas mahjong mats, holiday mahjong mat, mahjong gift ideas'))
 
 # ---------- 5. Amazon boards -> storefront ----------
-AMZ = [('amazon-board-polo-club-holiday.jpg','Polo Club holiday'),('amazon-board-retro-rattan-holiday.jpg','Retro Rattan holiday'),('amazon-board-rackin-rudolph.jpg',"Rackin' Rudolph")]
-for f, nm in AMZ:
-    cv = Image.new('RGB', (W, H), CREAM); top = header(cv, f'Amazon finds for a {nm} mahjong table', 'Tablecloths, lamps, coasters and dice dishes')
-    place(cv, Image.open(os.path.join(REPO, 'assets/amazon-store/boards', f)), top, H - 180)
+AMZ = [('amazon-board-polo-club-holiday.jpg', 290, 'Holiday mahjong table decor', 'Plaid cloth, lamp and coasters, all on Amazon',
+        'Holiday Mahjong Table Decor From Amazon', 'a cozy plaid'),
+       ('amazon-board-retro-rattan-holiday.jpg', 290, 'Mahjong table decor finds', 'A plaid cloth, tree lamp and holly dice dish',
+        'Mahjong Table Decor: Amazon Holiday Finds', 'a retro plaid'),
+       ('amazon-board-rackin-rudolph.jpg', 290, 'Christmas mahjong decor', 'A red cloth, bow lamp and reindeer dice box',
+        'Christmas Mahjong Decor: Amazon Finds', 'a red reindeer')]
+for f, crop, head, sub, title, nm in AMZ:
+    im = Image.open(os.path.join(REPO, 'assets/amazon-store/boards', f)).convert('RGB'); im = im.crop((0, crop, im.width, im.height))
+    cv = Image.new('RGB', (W, H), CREAM); top = header(cv, head, sub)
+    place(cv, im, top, H - 180)
     footer(cv, 'Shop my Amazon mahjong finds', 'Linked in my Amazon storefront')
     fn = f.replace('.jpg', '-pin.jpg'); cv.save(os.path.join(OUT, fn), quality=88)
-    pins.append(dict(file=fn, board='Amazon Mahjong Finds', title=f'Amazon Holiday Mahjong Table Finds: {nm.title()} Look',
-        desc=f'Everything for a {nm} mahjong table from Amazon: a 60x60 tablecloth for a standard card table, a lamp, coasters and a dice dish. As an Amazon Associate I earn from qualifying purchases. #mahjong #amazonfinds #holidaymahjong',
+    pins.append(dict(file=fn, board='Amazon Mahjong Finds', title=title,
+        desc=f'{title}: everything for {nm} holiday mahjong table, including a 60x60 tablecloth for a standard card table, a lamp, coasters and a dice dish. Works with the tiles you already own. As an Amazon Associate I earn from qualifying purchases. #mahjong #amazonfinds #holidaymahjong',
         link='https://www.amazon.com/shop/heritagesig05', date=hdate(), holiday=True,
-        keywords='amazon mahjong finds, mahjong table decor, holiday mahjong table, mahjong gift ideas'))
+        keywords='holiday mahjong table decor, mahjong christmas decor, amazon mahjong finds, mahjong gift ideas'))
 
 json.dump(pins, open(os.path.join(SP, 'pins.json'), 'w'), indent=1)
 print(len(pins), 'pins')
