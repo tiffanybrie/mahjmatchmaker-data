@@ -12,13 +12,28 @@ CARDS = [
  'assets/cards/vivienne/solara-mahjong-tiles-oh-my-mahjong-vivienne-mat.jpg',
 ]
 LOGOS = json.load(open(R + 'builder/logos/map.json'))
-SHOW = ['Oh My Mahjong', 'Britt Mills', 'Bird & Bamboo', 'Anders Ruff', 'Mahj & Vine', 'Miss Mahjong', 'Peace Love Mahjong',
-        'Mahj Mood', 'Bespoke Mahjong', 'Middle & Main Mahjong', 'Splash of Color', 'Mahj Squad', 'Tigre de Tartan',
-        'My Fair Mahjong', 'Hip Hip Mahjong']
-urls = [J + c for c in CARDS] + [J + 'builder/logos/' + LOGOS[b] for b in SHOW]
+# ALL partner brands (one per /<brand>-discount-code page, Oct 18). To add a brand: add it here; if it has a logo in
+# builder/logos/map.json (or EXTRA_LOGOS below) it shows the logo, otherwise a clean wordmark. Then rebuild + warm.
+PARTNERS = ['Oh My Mahjong', 'Britt Mills', 'Bird & Bamboo', 'Anders Ruff', 'Mahj & Vine', 'Miss Mahjong', 'Peace Love Mahjong',
+    'Mahj Mood', 'Bespoke Mahjong', 'Middle & Main Mahjong', 'Splash of Color', 'Mahj Squad', 'Tigre de Tartan',
+    'My Fair Mahjong', 'Hip Hip Mahjong', 'Sunday Mahjong', 'Amahj', 'Bam Bird Boutique', "Bam! Let's Mahjong",
+    'Charleston Mahjong Club', "Let's Mahj On", 'Mac + Miller Mahjong', 'Mahjong Co.', 'Mahjong Row & Co.',
+    'Mahjong Studios', 'Mini Mahjer', 'Yellow Mountain Imports', 'Royal Mahjong Society', 'Soiree All Day',
+    'The Mahjong Press', 'Virora Mahjong', 'Wren Mats', 'Amanda Toppe', 'I Love Mahj', "Let's Be Besties", 'Mahjong Register']
+EXTRA_LOGOS = {'Sunday Mahjong': 'n_sundaymahjong.png', 'Royal Mahjong Society': 'n_royalmahjongsociety.png',
+    'Soiree All Day': 'n_soireeallday.png', 'The Mahjong Press': 'n_themahjongpress.png'}
+LOGOS.update(EXTRA_LOGOS)
+SHOW = [b for b in PARTNERS if b in LOGOS]
+SHOTS = [('fym-step1-tiles.png', 'Pick the tiles you own'), ('fym-step2-mats.png', "Swipe mats, with my picks marked Tiffany's match"),
+    ('fym-step3-racks.png', 'Add racks that go with both'), ('fym-step4-card.png', 'Save a match card to share')]
+urls = [J + c for c in CARDS] + [J + 'builder/logos/' + LOGOS[b] for b in SHOW] + [J + 'assets/workwith/' + f for f, _ in SHOTS]
 
 fan = ''.join(f'<img class="c c{i}" src="{J}{c}" alt="Mahj Matchmaker match card" loading="{"eager" if i==2 else "lazy"}">' for i, c in enumerate(CARDS))
-logos = ''.join(f'<img src="{J}builder/logos/{LOGOS[b]}" alt="{b}">' for b in SHOW)
+def _chip(b):
+    return f'<span class="lc"><img src="{J}builder/logos/{LOGOS[b]}" alt="{b}" loading="lazy"></span>' if b in LOGOS else f'<span class="lc wm">{b}</span>'
+_chips = ''.join(_chip(b) for b in PARTNERS)
+logos = f'<div class="mq"><div class="mqt">{_chips}<span class="dup" aria-hidden="true">{_chips}</span></div></div>'
+shots = ''.join(f'<figure class="sh"><img src="{J}assets/workwith/{f}" alt="Find Your Match preview: {c}" loading="lazy"><figcaption><b>{i+1}</b> {c}</figcaption></figure>' for i, (f, c) in enumerate(SHOTS))
 heart = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.9 4.5c2.1 0 3.6 1.2 5.1 3 1.5-1.8 3-3 5.1-3 3.9 0 6 3.9 4.5 7.3C19.5 16.4 12 21 12 21z"/></svg>'
 ic_tag = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9zm5-5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>'
 ic_star = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.2l7.1-.6z"/></svg>'
@@ -71,8 +86,22 @@ CSS = """
 .mmww .card p{font-size:.96em;margin:0}
 .mmww .logos{background:var(--ink);border-radius:24px;padding:26px 24px 22px;margin:44px 0;text-align:center}
 .mmww .logos .ey{background:var(--pink)}
-.mmww .lg{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
-.mmww .lg img{height:60px;width:116px;object-fit:contain;background:#fff;border-radius:12px;padding:8px 12px}
+.mmww .mq{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.mmww .mqt{display:flex;gap:10px;width:max-content;animation:mmwwmq 90s linear infinite}
+.mmww .mqt .dup{display:contents}
+.mmww .mq:hover .mqt{animation-play-state:paused}
+@keyframes mmwwmq{to{transform:translateX(-50%)}}
+.mmww .lc{flex:none;display:flex;align-items:center;justify-content:center;height:64px;width:128px;background:#fff;border-radius:12px;padding:8px 12px}
+.mmww .lc img{max-height:100%;max-width:100%;object-fit:contain;image-rendering:auto}
+.mmww .lc.wm{font-family:Caprasimo,Georgia,serif;color:var(--ink);font-size:.95rem;line-height:1.1;text-align:center}
+@media (prefers-reduced-motion:reduce){.mmww .mq{-webkit-mask-image:none;mask-image:none}.mmww .mqt{animation:none;flex-wrap:wrap;justify-content:center;width:auto}.mmww .mqt .dup{display:none}}
+.mmww .shots{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:22px 0 4px}
+.mmww .sh{margin:0;text-align:center;position:relative}
+.mmww .sh img{width:100%;height:auto;display:block;filter:drop-shadow(0 10px 18px rgba(120,40,80,.18))}
+.mmww .sh figcaption{font-size:.88em;line-height:1.3;margin-top:10px;color:var(--ink)}
+.mmww .sh figcaption b{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--pink);color:#fff;font-size:.8em;margin-right:4px}
+.mmww .soon{display:inline-block;background:var(--pink);color:#fff;font-weight:800;font-size:.72em;letter-spacing:.12em;text-transform:uppercase;border-radius:999px;padding:4px 12px;margin-bottom:6px}
+@media (max-width:760px){.mmww .shots{grid-template-columns:repeat(2,1fr);gap:14px}}
 .mmww .faq{margin:44px 0}
 .mmww .faq>h2{text-align:center;margin-bottom:18px}
 .mmww details{background:#fff;border:2px solid var(--line);border-radius:18px;margin:0 0 12px;overflow:hidden}
@@ -121,7 +150,7 @@ HTML = f"""<link rel="preconnect" href="https://fonts.googleapis.com"><link href
 <div class="ic">{heart}</div>
 <div>
 <h2>Your own partner brand page</h2>
-<p>Every partner brand gets its own page on mahjmatchmaker.com, highlighting my favorite products and picks from your line, plus every place players can find your products across the site: tile set albums, matches and blog articles. Your code (<span class="code">MAHJMATCH</span>) is front and center, and every product links straight to your shop, so it's easy for players to go from "oh, I love that" to checkout.</p>
+<p>Every partner brand gets its own page on mahjmatchmaker.com, highlighting my favorite products and picks from your line, plus every place players can find your products across the site: tile set albums, matches and blog articles. We focus on making your products highly visible with links and recommendations.</p>
 </div>
 </section>
 
@@ -130,22 +159,24 @@ HTML = f"""<link rel="preconnect" href="https://fonts.googleapis.com"><link href
 <div>
 <h2>Find Your Match, launching October 27</h2>
 <p>Find Your Match is our new swipe-to-match tool. Players start with the tiles they own or the mat they love, swipe through the mats and racks I'd pair with them, and save a match card to share with their mahj group.</p>
-<p>There's nothing you need to upload. If your shop runs on Shopify, I pull your catalog in automatically, and your products are set up for desktop, mobile and the shareable match cards. With a very large line, I curate my favorites so the matching stays focused and every product gets a fair shot.</p>
+<p>There's nothing you need to upload. If your shop runs on Shopify, I pull your catalog in automatically, and your products can be set up for desktop, mobile and the shareable match cards. With a very large line, I curate my favorites so the matching stays focused and every product gets a fair shot.</p>
+<span class="soon">Coming 10.27</span>
+<div class="shots">{shots}</div>
 </div>
 </section>
 
 <section class="ways" id="ways">
 <h2>Ways we work together</h2>
 <div class="grid">
-<div class="card"><div class="ic">{ic_tag}</div><h3>Affiliate partnership</h3><p>Your partner brand page, a spot on our Discount Codes page, and your products in Find Your Match and my match albums. Players save with code <span class="code">MAHJMATCH</span>.</p></div>
-<div class="card"><div class="ic">{ic_star}</div><h3>New releases</h3><p>Tell me what's coming! I can match new tile sets, mats and racks as they launch, so players see them with pairings on day one.</p></div>
+<div class="card"><div class="ic">{ic_tag}</div><h3>Affiliate partnership</h3><p>Your partner brand page, a spot on our Discount Codes page, and your products in Find Your Match and my match albums.</p></div>
+<div class="card"><div class="ic">{ic_star}</div><h3>New releases</h3><p>Let us know what's coming! We love hearing about new products, and we work them into matches and blog articles as they make sense.</p></div>
 <div class="card"><div class="ic">{ic_book}</div><h3>Match albums</h3><p>Partner brands get preference when I choose tile sets for new match albums. Have a set you'd love to see? Let me know.</p></div>
 </div>
 </section>
 
 <section class="logos" aria-label="Partner brands">
 <span class="ey">Partner brands</span>
-<div class="lg">{logos}</div>
+{logos}
 </section>
 
 <section class="faq">
