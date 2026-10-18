@@ -55,7 +55,6 @@ SRC = {
 }
 MISSING = {
  "Tigre de Tartán Oxblood Scallop": "not listed in Tigre's shop (checked Oct 18), so no product photo. Oxblood cards use B&B Wine + PLM Acrylic Burl for now. oxblood: swap to her own photo when she sends it.",
- "Sunday Mahjong Sunday Cola": "Sunday shop photos are angled lifestyle shots (translucent, racks run off the frame); no clean single-rack cut-out. Needs a straight-on photo (Tiffany's own rack). Mat side only (Sunday pays no commission).",
  "Sunday Mahjong Candy Blue / Tortoise / Blonde Tortoise / Clear": "same problem as Cola: no clean single-rack shot in Sunday's listings. Mat side only once photographed."
 }  # Oct 18: kept in sync with index.json "missing"
 
@@ -129,6 +128,8 @@ if __name__ == '__main__':
         idx['racks'][name] = {'file': 'assets/racks/card/' + f, 'source': path.replace(R, ''), 'kind': kind, 'rack_frac': round(frac, 3)}
     for name, (kind, path) in SRC.items():
         if kind == 'same' and path in idx['racks']: idx['racks'][name] = dict(idx['racks'][path], alias_of=path)
+    for name, v in old['racks'].items():  # Oct 18: keep approved renders (Sunday Mahjong Cola) that have no source photo
+        if v.get('kind') == 'render' and name not in idx['racks']: idx['racks'][name] = v
     if os.path.exists('/tmp/mb/bb_blank.png'): Image.open('/tmp/mb/bb_blank.png').save(OUT + 'bb-blank.png', optimize=True)
     json.dump(idx, open(OUT + 'index.json', 'w'), indent=1, ensure_ascii=False)
     print(len(idx['racks']), 'racks ->', OUT)

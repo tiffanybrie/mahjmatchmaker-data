@@ -685,5 +685,19 @@
   "pending_upgrade": "oxblood: swap to her own photo when she sends it (Tigre Oxblood replaces Wine).",
   "note": "Tiffany Oct 18 01:53: Red is wrong.",
   "approved": "2026-10-18"
+ },
+ "polo-club": {
+  "mat": "Luxe Mahjong The Polo Club",
+  "racks": [
+   "Bird & Bamboo Dark Navy",
+   "Bird & Bamboo Evergreen",
+   "Bird & Bamboo Wine",
+   "Sunday Mahjong Cola"
+  ],
+  "files": [
+   "assets/mats/holiday/hd/luxe-polo-club.jpg"
+  ],
+  "approved": "2026-10-18",
+  "note": "Tiffany Oct 18 03:05: Dark Navy, not Blackboard Black (the mat is navy); Wine, not Red (matches the deep brown); keep Evergreen; Sunday Cola (translucent brown acrylic, rendered) is a great fit, mat side only."
  }
 }

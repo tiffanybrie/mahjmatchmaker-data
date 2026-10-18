@@ -190,11 +190,31 @@
    "rack_frac": 1.0,
    "shop": "https://peacelovemahjong.com/products/acrylic-burlwood-mahjong-racks-pushers-set-of-4?ref=Mahjmatch",
    "added": "2026-10-18"
+  },
+  "Sunday Mahjong Cola": {
+   "file": "assets/racks/card/sunday-mahjong-cola-render.png",
+   "source": "render: PLM Acrylic Burl straight-on shape, recoloured deep cola brown, translucent (Tiffany OK to render, Oct 18 03:05)",
+   "kind": "render",
+   "rack_frac": 1.0,
+   "shop": "https://sundaymahjong.com/products/sunday-cola-mahjong-rack-set",
+   "side": "mat-only (Sunday pays no commission)",
+   "size": "20 in (large tiles)",
+   "added": "2026-10-18"
+  },
+  "Sunday Mahjong Sunday Cola": {
+   "file": "assets/racks/card/sunday-mahjong-cola-render.png",
+   "source": "render: PLM Acrylic Burl straight-on shape, recoloured deep cola brown, translucent (Tiffany OK to render, Oct 18 03:05)",
+   "kind": "render",
+   "rack_frac": 1.0,
+   "shop": "https://sundaymahjong.com/products/sunday-cola-mahjong-rack-set",
+   "side": "mat-only (Sunday pays no commission)",
+   "size": "20 in (large tiles)",
+   "added": "2026-10-18",
+   "alias_of": "Sunday Mahjong Cola"
   }
  },
  "missing": {
   "Tigre de Tartán Oxblood Scallop": "not listed in Tigre's shop (checked Oct 18), so no product photo. Oxblood cards use B&B Wine + PLM Acrylic Burl for now. oxblood: swap to her own photo when she sends it.",
-  "Sunday Mahjong Sunday Cola": "Sunday shop photos are angled lifestyle shots (translucent, racks run off the frame); no clean single-rack cut-out. Needs a straight-on photo (Tiffany's own rack). Mat side only (Sunday pays no commission).",
   "Sunday Mahjong Candy Blue / Tortoise / Blonde Tortoise / Clear": "same problem as Cola: no clean single-rack shot in Sunday's listings. Mat side only once photographed."
  },
  "notes": {

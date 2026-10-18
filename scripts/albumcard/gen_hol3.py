@@ -127,6 +127,7 @@ BBLOGO = uri(R + 'builder/logos/' + logos['Bird & Bamboo'], 'PNG')
 FLAME = uri(R + 'assets/brand/flame-heart-holiday.png', 'PNG')
 COLS = json.load(open(R + 'scripts/albumcard/holiday_title_colors.json')) if os.path.exists(R + 'scripts/albumcard/holiday_title_colors.json') else {}
 SKIP = {'omm-dapper-1', 'omm-dapper-2', 'britt-crimson-harvest', 'christmas-solo-play-mahjong-mat', 'snowflake-reindeer-lodge-double-sided-leatherette-mahjong-ma'}
+MATREG = json.load(open(R + 'config/mat-racks-picks.json'))
 jobs = []; manifest = []
 for g in D['G']:
     tile = tile_image(g); loose = g['t'] in LOOSE_T
@@ -138,6 +139,8 @@ for g in D['G']:
         if mi is None: print('NO MAT PHOTO', g['t'], r['m']); continue
         if max(mi.size) < 900: LOWRES.append([g['t'], r['m'], mi.size])
         mat = mat_crop(mi)
+        if r['m'] in MATREG and isinstance(MATREG[r['m']], dict):  # Oct 18: locked mat racks ("once we've matched the mats, the mats are matched")
+            r['mats'] = [('bb:' + x[len('Bird & Bamboo '):]) if x.startswith('Bird & Bamboo ') else x for x in MATREG[r['m']]['racks']]
         if 'tiles' in r and 'mats' not in r:  # mat side from the SHARP full mat photo; colours not already on the tile side
             ex = ['Bird & Bamboo ' + n for n in near_tile_colours(r['tiles'])]  # Oct 15 rule: mat side shows the mat colours NOT already on the tile side
             r['mats'] = ['bb:' + x[len('Bird & Bamboo '):] for x in MATPICK(trim(flat(mi)), exclude=ex, maxn=3)]
