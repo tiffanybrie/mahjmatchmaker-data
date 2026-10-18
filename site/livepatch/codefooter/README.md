@@ -37,3 +37,27 @@ Nothing here is live yet. Each swap needs Tiffany's in-chat approval.
 
 ## Found while checking (not fixed here)
 The "Rack matches" captions under the holiday cards don't match the racks printed on the cards. Example: Jade + The Polo Club. The caption says "B&B Light Pink · B&B Lavender · M&M Scalloped Beechwood". The card shows Peace Love Oak, Miss Mahjong Jade & Brass and Miss Mahjong Opal & Brass for the tiles, and B&B Dark Navy, Evergreen, Wine and Sunday Cola for the mat. Per doc 60, the captions need regenerating from the cards' rack lists.
+
+## Update: rack captions fixed (Oct 18)
+The holiday "Rack matches" captions in these 13 blocks are now rebuilt from each card's racks: "Match the tiles: … / Match the mat: …". That's 238 captions:
+- holiday 109
+- nantucket 24
+- jade 19
+- malachite 16
+- heritage-2-0 15
+- gatsby 12
+- amara 10
+- la-fete 9
+- cypress-forest 8
+- seabreeze 6
+- sorbet 4
+- limoncello 3
+- sierra 3
+
+Whole-block paste: the .html already has the fixed captions.
+
+Swap-list route: run `caption_swaps` after the URL `swaps`.
+
+Other pages are in ../rackcaptions/.
+
+Unrelated typo, not fixed: the Polo button reads "Shop the The Polo Club Mat".
