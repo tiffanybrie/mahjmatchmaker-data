@@ -15,6 +15,10 @@ def _lab(h): return rgb2lab(np.array([[[int(h[1:3], 16), int(h[3:5], 16), int(h[
 # B&B wood finishes are BANNED (Tiffany, Oct 15 11:57pm): not sold now, and our renders look painted, not wood. Doc 57.
 BB_WOODS = {'Weathered Oak', 'Provincial', 'Red Mahogany', 'Dark Walnut', 'Almond', 'Tudor'}  # Oct 18: Almond + Tudor added (wood-look; Tiffany 01:44)
 BBL = {k: _lab(v) for k, v in BB.items() if 'Metallic' not in k and k != 'Clear' and k not in BB_WOODS}
+# Real (non-B&B) racks in the candidate pool, full names. PLM Acrylic Burl = the real wood-look/tortoise-tone option that
+# replaces banned B&B woods (Tiffany Oct 18: "we need to start pulling that one in").
+EXTRA = {'Peace Love Mahjong Acrylic Burl': '#9b6a45'}
+BBL.update({k: _lab(v) for k, v in EXTRA.items()})
 
 def pick(im, exclude=(), k=6, maxn=2):
     im = im.convert('RGB').copy(); im.thumbnail((220, 220))
@@ -23,7 +27,7 @@ def pick(im, exclude=(), k=6, maxn=2):
     lab = rgb2lab(a[None])[0]
     np.random.seed(0); c, l = kmeans2(lab, k, minit='++', seed=0)
     cnt = np.bincount(l, minlength=k) / len(l)
-    ex = {e.replace('Bird & Bamboo ', '') for e in exclude}
+    ex = {e.replace('Bird & Bamboo ', '') for e in exclude} | set(exclude)
     cand = {n: v for n, v in BBL.items() if n not in ex}
     out = []
     ch = np.hypot(c[:, 1], c[:, 2])
@@ -37,4 +41,4 @@ def pick(im, exclude=(), k=6, maxn=2):
         if out and deltaE_ciede2000(cand[n], cand[out[0]]) < 15: continue
         out.append(n)
         if len(out) >= maxn: break
-    return ['Bird & Bamboo ' + n for n in out]
+    return [n if n in EXTRA else 'Bird & Bamboo ' + n for n in out]

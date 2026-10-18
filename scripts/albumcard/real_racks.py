@@ -36,6 +36,7 @@ SRC = {
  'Peace Love Mahjong Red': ('flat', '/tmp/mb/plm/r_Red.png'),
  'Peace Love Mahjong Navy': ('flat', '/tmp/mb/plm/r_Navy.png'),
  'Peace Love Mahjong White': ('flat', '/tmp/mb/plm/r_White.png'),
+ 'Peace Love Mahjong Acrylic Burl': ('flat', CUT + 'peace-love-mahjong-acrylic-burl.png'),  # Oct 18: PLM shop photo, white bg removed
  'Middle & Main Milk Glass Scalloped Acrylic': ('cut', CUT + 'middle-and-main-milk-glass-2.png'),
  'Bam Bird Boutique Walnut': ('flat', '/tmp/mb/rkalt/walnut.png'),
  'Middle & Main Hawksbill Heritage Tortoise': ('cut', CUT + 'middle-and-main-hawksbill-tortoise-1.png'),
@@ -52,7 +53,11 @@ SRC = {
  'Mahjong Row & Co. Chestnut Cream': ('cut', CUT + 'mahjong-row-and-co-chestnut-cream-2.png'),
  'Mahjong Row & Co. Scalloped Tortoise': ('front', R + 'assets/racks/mrc-scalloped-tortoise.png'),
 }
-MISSING = {'Tigre de Tartán Oxblood Scallop': 'no photo anywhere yet (doc 48: "New rack image needed")'}
+MISSING = {
+ "Tigre de Tartán Oxblood Scallop": "not listed in Tigre's shop (checked Oct 18), so no product photo. Oxblood cards use B&B Wine + PLM Acrylic Burl for now. oxblood: swap to her own photo when she sends it.",
+ "Sunday Mahjong Sunday Cola": "Sunday shop photos are angled lifestyle shots (translucent, racks run off the frame); no clean single-rack cut-out. Needs a straight-on photo (Tiffany's own rack). Mat side only (Sunday pays no commission).",
+ "Sunday Mahjong Candy Blue / Tortoise / Blonde Tortoise / Clear": "same problem as Cola: no clean single-rack shot in Sunday's listings. Mat side only once photographed."
+}  # Oct 18: kept in sync with index.json "missing"
 
 def slug(n): return ''.join(c if c.isalnum() else '-' for c in n.lower()).replace('--', '-').strip('-')
 

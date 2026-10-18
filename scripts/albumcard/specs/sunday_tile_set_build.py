@@ -55,6 +55,9 @@ tile = Image.open(R + 'assets/tiles/album/sunday-tile-set.png').convert('RGB').c
 tb = io.BytesIO(); tile.save(tb, 'JPEG', quality=92); TILE = 'data:image/jpeg;base64,' + base64.b64encode(tb.getvalue()).decode()
 SRCFIX = {'letsbebe-tartan-tweed-mahjong-mat': '/tmp/sun/alb_src/letsbebe-tartan-tweed-mahjong-mat_0.jpg',
           'luxemahj-untitled-sep2916-36-07': '/tmp/sun/alb_src/luxemahj-untitled-sep2916-36-07_0.jpg'}
+# Oct 18 (Tiffany 01:44-01:58): no B&B woods; no bright painted racks (Carrot, Radish, Red) on moody/brown/burgundy/leather mats.
+# Hand-checked per card; these override matpick. Sunday Cola / Tigre Oxblood: no clean product photo yet (see rack index notes).
+MATFIX = {'sunday-mahjong-tiles-anders-ruff-brownstone-bloom-mat.jpg': ['Peace Love Mahjong Acrylic Burl', 'Bird & Bamboo Matcha'], 'sunday-mahjong-tiles-sunday-mahjong-rattan-mat.jpg': ['Bird & Bamboo Matcha', 'Peace Love Mahjong Acrylic Burl'], 'sunday-mahjong-tiles-mahjong-by-si-vintage-oxblood-leather-mat.jpg': ['Bird & Bamboo Wine', 'Peace Love Mahjong Acrylic Burl'], 'sunday-mahjong-tiles-charleston-mahjong-club-brown-vegan-leather-mat.jpg': ['Peace Love Mahjong Acrylic Burl'], 'sunday-mahjong-tiles-mahjong-row-and-co-autumn-saffron-mat.jpg': ['Bird & Bamboo Matcha', 'Peace Love Mahjong Acrylic Burl', 'Bird & Bamboo Wine'], 'sunday-mahjong-tiles-let-s-be-besties-tartan-tweed-mat.jpg': ['Bird & Bamboo Wine', 'Peace Love Mahjong Acrylic Burl'], 'sunday-mahjong-tiles-ozark-mahjongg-winslow-1920-rouge-mat.jpg': ['Bird & Bamboo Wine', 'Bird & Bamboo Cream'], 'sunday-mahjong-tiles-britt-mills-legacy-mat.jpg': ['Bird & Bamboo Evergreen', 'Peace Love Mahjong Acrylic Burl'], 'sunday-mahjong-tiles-let-s-be-besties-fall-flowers-mat.jpg': ['Bird & Bamboo Mango', 'Peace Love Mahjong Acrylic Burl'], 'sunday-mahjong-tiles-mahjong-by-si-the-hunt-club-mat.jpg': ['Peace Love Mahjong Acrylic Burl', 'Bird & Bamboo Evergreen'], 'sunday-mahjong-tiles-mahjong-by-si-the-lodge-mat.jpg': ['Peace Love Mahjong Acrylic Burl', 'Bird & Bamboo Graphite'], 'sunday-mahjong-tiles-sunday-mahjong-coastal-grandma-mat.jpg': ['Bird & Bamboo Cream', 'Peace Love Mahjong Acrylic Burl']}
 cards = []; man = []
 for i, (mid, nm) in enumerate(pairs):
     mname, brand = [x.strip() for x in nm.split('·')]
@@ -72,7 +75,7 @@ for i, (mid, nm) in enumerate(pairs):
         src = Image.open('/tmp/sun/alb_cut/' + mp[mid]['file']); lowres = src.width < 700
     mat = crop(src)
     fn = f"sunday-mahjong-tiles-{slug(brand)}-{slug(mname)}-mat.jpg"
-    mp_ = pick(mat, exclude=RACKS)
+    mp_ = MATFIX.get(fn) or pick(mat, exclude=RACKS)
     cards.append({'slug': f'sun{i+1:02d}', 'title': f'Sunday + {mname}', 'col': '#9a6a1f', 'tile_file': TILE, 'racks': RACKS,
                   'file': fn, 'code': footer(brand), 'mat': uri(mat), 'mat_racks': mp_, 'tile_brand': 'Sunday Mahjong'})
     man.append({'order': i + 1, 'vote_id': mid, 'mat': mname, 'brand': brand, 'file': fn, 'code': footer(brand),

@@ -182,9 +182,24 @@
    "source": "assets/racks/cutouts/miss-mahjong-blonde-tortoise-and-brass-2.png",
    "kind": "cut",
    "rack_frac": 1.0
+  },
+  "Peace Love Mahjong Acrylic Burl": {
+   "file": "assets/racks/card/peace-love-mahjong-acrylic-burl.png",
+   "source": "assets/racks/cutouts/peace-love-mahjong-acrylic-burl.png",
+   "kind": "flat",
+   "rack_frac": 1.0,
+   "shop": "https://peacelovemahjong.com/products/acrylic-burlwood-mahjong-racks-pushers-set-of-4?ref=Mahjmatch",
+   "added": "2026-10-18"
   }
  },
  "missing": {
-  "Tigre de Tartán Oxblood Scallop": "no photo anywhere yet (doc 48: \"New rack image needed\")"
+  "Tigre de Tartán Oxblood Scallop": "not listed in Tigre's shop (checked Oct 18), so no product photo. Oxblood cards use B&B Wine + PLM Acrylic Burl for now. oxblood: swap to her own photo when she sends it.",
+  "Sunday Mahjong Sunday Cola": "Sunday shop photos are angled lifestyle shots (translucent, racks run off the frame); no clean single-rack cut-out. Needs a straight-on photo (Tiffany's own rack). Mat side only (Sunday pays no commission).",
+  "Sunday Mahjong Candy Blue / Tortoise / Blonde Tortoise / Clear": "same problem as Cola: no clean single-rack shot in Sunday's listings. Mat side only once photographed."
+ },
+ "notes": {
+  "tigre_length": "Tigre de Tartan racks are 20 inch (Tiffany, Oct 18): fine on Sunday and other large tile sets.",
+  "sunday_green": "Sunday Mahjong has green racks coming (likely holiday). Watch for them: they would suit many moody/green mats.",
+  "sunday_mat_side_only": "Sunday racks go on MATCH THE MAT only, never the tile side (no commission). Shop links plain sundaymahjong.com/products/<handle>."
  }
 }
