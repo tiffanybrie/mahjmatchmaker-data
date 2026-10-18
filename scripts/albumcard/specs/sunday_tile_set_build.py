@@ -36,7 +36,8 @@ def footer(b):
     if b in NOPCT: return 'SAVE WITH CODE : MAHJMATCH'
     if b in PCT: return f'{PCT[b]} OFF  USE CODE : MAHJMATCH'
     if b in TENPCT: return '10% OFF  USE CODE : MAHJMATCH'
-    return 'SHOP THE MATCH : MAHJMATCHMAKER.COM'  # Sunday, Luxe, Lucky Daughters, Ozark, Mahjong by SI, Let's Be Besties, Mahj Tile Haus: no code on the hub
+    if b == 'Maison Mahj': return 'SHOP THE MATCH : MAHJMATCHMAKER.COM'
+    return 'SAVE WITH CODE : MAHJMATCH'  # rule Oct 18: every card carries MAHJMATCH (only Coquette / Maison Mahj keep shop-the-match)
 def uri(im, maxs=1400):
     im = im.copy(); im.thumbnail((maxs, maxs)); b = io.BytesIO(); im.convert('RGB').save(b, 'JPEG', quality=90)
     return 'data:image/jpeg;base64,' + base64.b64encode(b.getvalue()).decode()

@@ -80,7 +80,8 @@ PCT = {'Britt Mills': '15%', 'Amanda Toppe': '20%', 'Royal Mahjong Society': '15
 NOPCT = {'Anders Ruff', 'Mahjong Register', 'The Mahjong Press'}
 NOCODE = {'Sunday Mahjong', 'Luxe Mahjong', 'Maison Mahj', 'Lucky Daughters', 'Mahjong Studios', 'I Love Mahj', 'Mahjong by SI', "Let's Be Besties", 'Mahj Tile Haus', 'Ozark Mahjongg', ''}  # no code on the hub
 def footer(brand, tileset):
-    if tileset == 'coquette' or brand in NOCODE: return 'SHOP THE MATCH : MAHJMATCHMAKER.COM'
+    if tileset == 'coquette' or brand == 'Maison Mahj': return 'SHOP THE MATCH : MAHJMATCHMAKER.COM'
+    if brand in NOCODE: return 'SAVE WITH CODE : MAHJMATCH'  # rule Oct 18: every card carries MAHJMATCH (only Coquette / Maison Mahj keep shop-the-match)
     if brand in NOPCT: return 'SAVE WITH CODE : MAHJMATCH'
     return f"{PCT.get(brand, '10%')} OFF  USE CODE : MAHJMATCH"
 

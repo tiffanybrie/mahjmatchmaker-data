@@ -56,7 +56,8 @@ NOPCT = {'Anders Ruff', 'Mahjong Register', 'The Mahjong Press'}
 NOCODE = {'Sunday Mahjong', 'Luxe Mahjong', 'Maison Mahj', 'Lucky Daughters', 'Mahjong Studios', 'I Love Mahj',
           'Mahjong by SI', "Let's Be Besties", 'Mahj Tile Haus', 'Ozark Mahjongg', ''}
 def footer(b):
-    if b in NOCODE: return 'SHOP THE MATCH : MAHJMATCHMAKER.COM'
+    if b == 'Maison Mahj': return 'SHOP THE MATCH : MAHJMATCHMAKER.COM'
+    if b in NOCODE: return 'SAVE WITH CODE : MAHJMATCH'  # rule Oct 18: every card carries MAHJMATCH (only Coquette / Maison Mahj keep shop-the-match)
     if b in NOPCT: return 'SAVE WITH CODE : MAHJMATCH'
     return f"{PCT.get(b, '10%')} OFF  USE CODE : MAHJMATCH"
 def uri(im, maxs=1400):
