@@ -1,0 +1,657 @@
+{
+ "_note": "Mat -> mat racks registry. Tiffany, Oct 18: \"once we've matched the mats, the mats are matched.\" gen2.py ALWAYS uses these racks when the card's mat is listed here, matched by spec 'mat_key' or by mat_file in 'files'. It never re-picks and never varies per card. To change a mat's racks, change it here, then re-render every card for that mat.",
+ "cottage-bloom": {
+  "mat": "Bam! Let's Mahjong Cottage Bloom",
+  "racks": [
+   "Bird & Bamboo Cornflower Blue",
+   "Bird & Bamboo Kelly Green"
+  ],
+  "files": [
+   "assets/mats/bam-lets-mahjong/cottage-bloom.jpg"
+  ],
+  "approved": "2026-10-18"
+ },
+ "rally-in-pink": {
+  "mat": "Mahj Mood Rally in Pink",
+  "racks": [
+   "Bird & Bamboo Peony",
+   "Bird & Bamboo Hot Pink",
+   "Miss Mahjong Scalloped Iridescent Opal"
+  ],
+  "files": [
+   "assets/mats/mahj-mood/rally-in-pink.jpg"
+  ],
+  "approved": "2026-10-18"
+ },
+ "palm-court": {
+  "mat": "Bam! Let's Mahjong Palm Court",
+  "racks": [
+   "Bird & Bamboo Kelly Green",
+   "Miss Mahjong Scalloped Iridescent Opal"
+  ],
+  "files": [
+   "assets/mats/bam-lets-mahjong/palm-court.jpg"
+  ],
+  "approved": "2026-10-18"
+ },
+ "chinoiserie-elephant": {
+  "mat": "Mahj & Vine Chinoiserie Elephant",
+  "racks": [
+   "Bird & Bamboo Pink Coral",
+   "Bird & Bamboo French Blue"
+  ],
+  "files": [
+   "assets/mats/mahj-vine/chinoiserie-elephant.jpg"
+  ],
+  "approved": "2026-10-18"
+ },
+ "posy-pop-watercolor": {
+  "mat": "Bam! Let's Mahjong Posy Pop Watercolor",
+  "racks": [
+   "Bird & Bamboo Hot Pink",
+   "Bird & Bamboo Matcha"
+  ],
+  "note": "Matcha = closest olive-ish match to the mat leaf green (Oct 18). Kelly was too bright.",
+  "files": [
+   "assets/mats/bam-lets-mahjong/posy-pop-watercolor.jpg"
+  ],
+  "approved": "2026-10-18"
+ },
+ "preppy-pink-garden": {
+  "mat": "Bespoke Mahjong Preppy Pink Garden",
+  "racks": [
+   "Bird & Bamboo Ballet Pink",
+   "Bird & Bamboo Light Blue"
+  ],
+  "files": [
+   "assets/mats/bespoke-mahjong/preppy-pink-garden.jpg"
+  ],
+  "approved": "2026-10-18"
+ },
+ "rainbow-row": {
+  "mat": "Rebecca Illustrated Rainbow Row",
+  "racks": [
+   "Bird & Bamboo Light Pink",
+   "Bird & Bamboo Light Blue"
+  ],
+  "files": [
+   "assets/mats/rebecca-illustrated/rainbow-row.jpg"
+  ],
+  "approved": "2026-10-18"
+ },
+ "pink-floral-chinoiserie": {
+  "mat": "Mahj Squad Pink Floral Chinoiserie",
+  "racks": [
+   "Bird & Bamboo Hot Pink",
+   "Bird & Bamboo Mermaid"
+  ],
+  "files": [
+   "assets/mats/mahj-squad/pink-floral-chinoiserie-flat-closeup-WATERMARKED-no-social.jpg"
+  ],
+  "approved": "2026-10-18"
+ },
+ "secret-garden": {
+  "mat": "Bam! Let's Mahjong Secret Garden",
+  "racks": [
+   "Bird & Bamboo Lavender",
+   "Bird & Bamboo Peony"
+  ],
+  "files": [
+   "assets/mats/bam-lets-mahjong/secret-garden.jpg"
+  ],
+  "approved": "2026-10-18"
+ },
+ "larkspur": {
+  "mat": "Oh My Mahjong Larkspur",
+  "racks": [
+   "Bird & Bamboo Lime Green",
+   "Miss Mahjong Cornflower Blue Scalloped"
+  ],
+  "files": [
+   "assets/launches/omm-larkspur-mat/01.jpg"
+  ],
+  "approved": "2026-10-13"
+ },
+ "tartan-toile-noel-mahjong-mat": {
+  "mat": "Anders Ruff Tartan Toile Noël Mat",
+  "racks": [
+   "Bird & Bamboo Red",
+   "Bird & Bamboo Cornflower Blue"
+  ],
+  "source": "holiday album cards (consistent on all cards)"
+ },
+ "virora-hiverelle": {
+  "mat": "Virora Mahjong Hiverelle Mat",
+  "racks": [
+   "Bird & Bamboo Ocean Slate",
+   "Bird & Bamboo Lilac"
+  ],
+  "source": "holiday album cards (consistent on all cards)"
+ },
+ "bespoke-chalet": {
+  "mat": "Bespoke Mahjong The Chalet Mat (double-sided)",
+  "racks": [
+   "Bird & Bamboo Purple",
+   "Bird & Bamboo Ocean Slate",
+   "Bird & Bamboo Cornflower Blue"
+  ],
+  "source": "holiday album cards (consistent on all cards)"
+ },
+ "maison-chalet": {
+  "mat": "Maison Mahj The Chalet Mat",
+  "racks": [
+   "Bird & Bamboo Ocean Slate",
+   "Bird & Bamboo Lavender"
+  ],
+  "source": "holiday album cards (consistent on all cards)"
+ },
+ "_varies_needs_pick": {
+  "clara-mat-in-tube": {
+   "most_common": [
+    "Bird & Bamboo Light Blue",
+    "Bird & Bamboo Mulberry",
+    "Bird & Bamboo Magenta"
+   ],
+   "count": 18,
+   "alt": [
+    "Bird & Bamboo Light Blue",
+    "Bird & Bamboo Radish",
+    "Bird & Bamboo Magenta"
+   ],
+   "alt_count": 1
+  },
+  "claras-dream": {
+   "most_common": [
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Pistachio",
+    "Bird & Bamboo Seafoam"
+   ],
+   "count": 10,
+   "alt": [
+    "Bird & Bamboo Mauve",
+    "Bird & Bamboo Almond",
+    "Bird & Bamboo Seafoam"
+   ],
+   "alt_count": 1
+  },
+  "merriment-mat-in-tube": {
+   "most_common": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Powder Blue",
+    "Bird & Bamboo Mermaid"
+   ],
+   "count": 4,
+   "alt": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Light Blue",
+    "Bird & Bamboo Mermaid"
+   ],
+   "alt_count": 4
+  },
+  "sugarplum-mat": {
+   "most_common": [
+    "Bird & Bamboo Light Blue",
+    "Bird & Bamboo Peony"
+   ],
+   "count": 19,
+   "alt": [
+    "Bird & Bamboo Light Blue",
+    "Bird & Bamboo Berry Purple"
+   ],
+   "alt_count": 2
+  },
+  "very-merry-mahj-mahjong-mat": {
+   "most_common": [
+    "Bird & Bamboo Pistachio",
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Light Pink"
+   ],
+   "count": 9,
+   "alt": [
+    "Bird & Bamboo Butter",
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Light Pink"
+   ],
+   "alt_count": 3
+  },
+  "pre-order-very-merry-wreath-double-sided-leatherette-mahjong": {
+   "most_common": [
+    "Bird & Bamboo Mauve",
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Jade"
+   ],
+   "count": 17,
+   "alt": [
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Jade"
+   ],
+   "alt_count": 1
+  },
+  "yuletide-mat-in-tube": {
+   "most_common": [
+    "Bird & Bamboo Forest Green",
+    "Bird & Bamboo Harbor Blue",
+    "Bird & Bamboo Red"
+   ],
+   "count": 10,
+   "alt": [
+    "Bird & Bamboo Basil",
+    "Bird & Bamboo Harbor Blue",
+    "Bird & Bamboo Red"
+   ],
+   "alt_count": 2
+  },
+  "candy-cane-pink-wonderland-mahjong-mat": {
+   "most_common": [
+    "Bird & Bamboo Mauve"
+   ],
+   "count": 11,
+   "alt": [
+    "Bird & Bamboo Pink Coral"
+   ],
+   "alt_count": 1
+  },
+  "mahjong-mats-holiday": {
+   "most_common": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Turks Blue"
+   ],
+   "count": 7,
+   "alt": [
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Turks Blue"
+   ],
+   "alt_count": 5
+  },
+  "watercolor-christmas-tree-mahjong-mat": {
+   "most_common": [
+    "Bird & Bamboo Lime Green",
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Moss"
+   ],
+   "count": 4,
+   "alt": [
+    "Bird & Bamboo Lime Green",
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Jade"
+   ],
+   "alt_count": 3
+  },
+  "holly-jolly-mat-in-tube": {
+   "most_common": [
+    "Bird & Bamboo Light Blue"
+   ],
+   "count": 12,
+   "alt": [
+    "Bird & Bamboo Turks Blue"
+   ],
+   "alt_count": 1
+  },
+  "winterberry-mat-in-tube": {
+   "most_common": [
+    "Bird & Bamboo Icy Mint",
+    "Bird & Bamboo Harbor Blue",
+    "Bird & Bamboo Moss"
+   ],
+   "count": 9,
+   "alt": [
+    "Bird & Bamboo Icy Mint",
+    "Bird & Bamboo Harbor Blue",
+    "Bird & Bamboo Jade"
+   ],
+   "alt_count": 4
+  },
+  "alpine-ski-lodge-mahjong-winter-play-mat": {
+   "most_common": [
+    "Bird & Bamboo Tiffany Dusk",
+    "Bird & Bamboo Cherry Red",
+    "Bird & Bamboo Dark Teal"
+   ],
+   "count": 4,
+   "alt": [
+    "Bird & Bamboo Tiffany Dusk",
+    "Bird & Bamboo Cherry Red",
+    "Bird & Bamboo Misty Spruce"
+   ],
+   "alt_count": 1
+  },
+  "mahjong-mats-hanukkah": {
+   "most_common": [
+    "Bird & Bamboo Dark Navy",
+    "Bird & Bamboo Light Blue",
+    "Bird & Bamboo Ocean Slate"
+   ],
+   "count": 2,
+   "alt": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Light Blue",
+    "Bird & Bamboo Ocean Slate"
+   ],
+   "alt_count": 2
+  },
+  "holidayloveblue": {
+   "most_common": [
+    "Bird & Bamboo French Blue",
+    "Bird & Bamboo Dark Navy",
+    "Bird & Bamboo Light Blue"
+   ],
+   "count": 2,
+   "alt": [
+    "Bird & Bamboo French Blue",
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Light Blue"
+   ],
+   "alt_count": 2
+  },
+  "liberty-mat-w-tube": {
+   "most_common": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Powder Blue",
+    "Bird & Bamboo French Blue"
+   ],
+   "count": 3,
+   "alt": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Light Blue",
+    "Bird & Bamboo French Blue"
+   ],
+   "alt_count": 2
+  },
+  "santas-mahjong-mail-mahjong-mat": {
+   "most_common": [
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Basil"
+   ],
+   "count": 6,
+   "alt": [
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Misty Spruce"
+   ],
+   "alt_count": 5
+  },
+  "cmc-ski-club-periwinkle": {
+   "most_common": [
+    "Bird & Bamboo Cornflower Blue",
+    "Bird & Bamboo Powder Blue",
+    "Bird & Bamboo Dark Blue"
+   ],
+   "count": 2,
+   "alt": [
+    "Bird & Bamboo Cornflower Blue",
+    "Bird & Bamboo Lilac",
+    "Bird & Bamboo Dark Blue"
+   ],
+   "alt_count": 2
+  },
+  "cmc-ski-club-red-sweater": {
+   "most_common": [
+    "Bird & Bamboo Icy Mint",
+    "Bird & Bamboo Magenta"
+   ],
+   "count": 3,
+   "alt": [
+    "Bird & Bamboo Seafoam",
+    "Bird & Bamboo Radish",
+    "Bird & Bamboo Ocean Slate"
+   ],
+   "alt_count": 1
+  },
+  "nutcracker-neoprene-mahjong-mat-arriving-late-october": {
+   "most_common": [
+    "Bird & Bamboo Lavender",
+    "Bird & Bamboo Mauve"
+   ],
+   "count": 3,
+   "alt": [
+    "Bird & Bamboo Lavender",
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo Mauve"
+   ],
+   "alt_count": 2
+  },
+  "holly-jolly-mahjong-mat": {
+   "most_common": [
+    "Bird & Bamboo Jade",
+    "Bird & Bamboo Cherry Red",
+    "Bird & Bamboo Light Pink"
+   ],
+   "count": 3,
+   "alt": [
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Persimmon",
+    "Bird & Bamboo Light Pink"
+   ],
+   "alt_count": 3
+  },
+  "merrywood-neoprene-mahjong-mat-arriving-late-october": {
+   "most_common": [
+    "Bird & Bamboo Basil",
+    "Bird & Bamboo Cadet"
+   ],
+   "count": 5,
+   "alt": [
+    "Bird & Bamboo Misty Spruce",
+    "Bird & Bamboo Cadet"
+   ],
+   "alt_count": 2
+  },
+  "sleigh-all-day-mat": {
+   "most_common": [
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Blackboard Black",
+    "Bird & Bamboo Yellow"
+   ],
+   "count": 3,
+   "alt": [
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Blackboard Black",
+    "Bird & Bamboo Cream"
+   ],
+   "alt_count": 2
+  },
+  "evergreen-tartan-mahjong-mat": {
+   "most_common": [
+    "Bird & Bamboo Dark Teal",
+    "Bird & Bamboo Wine"
+   ],
+   "count": 5,
+   "alt": [
+    "Bird & Bamboo Blackboard Black",
+    "Bird & Bamboo Wine",
+    "Bird & Bamboo Misty Spruce"
+   ],
+   "alt_count": 1
+  },
+  "festive-plaid": {
+   "most_common": [
+    "Bird & Bamboo Brick Red",
+    "Bird & Bamboo Persimmon",
+    "Bird & Bamboo Basil"
+   ],
+   "count": 5,
+   "alt": [
+    "Bird & Bamboo Persimmon",
+    "Bird & Bamboo Basil",
+    "Bird & Bamboo Tudor"
+   ],
+   "alt_count": 3
+  },
+  "tartan-tidings-mahjong-mat": {
+   "most_common": [
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Wine",
+    "Bird & Bamboo Cadet"
+   ],
+   "count": 8,
+   "alt": [
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Harbor Blue",
+    "Bird & Bamboo Graphite"
+   ],
+   "alt_count": 1
+  },
+  "polo-club": {
+   "most_common": [
+    "Bird & Bamboo Blackboard Black",
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Red"
+   ],
+   "count": 6,
+   "alt": [
+    "Bird & Bamboo Blackboard Black",
+    "Bird & Bamboo Basil",
+    "Bird & Bamboo Red"
+   ],
+   "alt_count": 4
+  },
+  "winter-berry-neoprene-mahjong-mat": {
+   "most_common": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Flamingo",
+    "Bird & Bamboo Moss"
+   ],
+   "count": 5,
+   "alt": [
+    "Bird & Bamboo Matcha",
+    "Bird & Bamboo Flamingo"
+   ],
+   "alt_count": 2
+  },
+  "rackin-rudolph-mahjong-mat": {
+   "most_common": [
+    "Bird & Bamboo Cherry Red",
+    "Bird & Bamboo Dark Navy",
+    "Bird & Bamboo Harbor Blue"
+   ],
+   "count": 2,
+   "alt": [
+    "Bird & Bamboo Cherry Red",
+    "Bird & Bamboo Dark Navy",
+    "Bird & Bamboo Dark Teal"
+   ],
+   "alt_count": 2
+  },
+  "holiday-neoprene-mahjong-mat": {
+   "most_common": [
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Blackboard Black"
+   ],
+   "count": 4,
+   "alt": [
+    "Bird & Bamboo Jade",
+    "Bird & Bamboo Evergreen"
+   ],
+   "alt_count": 1
+  },
+  "preorder-letters-to-santa-premium-mahjong-mat-33-estimated-s": {
+   "most_common": [
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Matcha",
+    "Bird & Bamboo Moss"
+   ],
+   "count": 3,
+   "alt": [
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Dark Teal",
+    "Bird & Bamboo Misty Spruce"
+   ],
+   "alt_count": 2
+  },
+  "blue-christmas-mahjong-mat": {
+   "most_common": [
+    "Bird & Bamboo Tudor",
+    "Bird & Bamboo Mermaid",
+    "Bird & Bamboo Almond"
+   ],
+   "count": 2,
+   "alt": [
+    "Bird & Bamboo Tudor",
+    "Bird & Bamboo Mermaid",
+    "Bird & Bamboo Coral"
+   ],
+   "alt_count": 2
+  },
+  "candy-cane-lane-mahjong-mat": {
+   "most_common": [
+    "Bird & Bamboo Brick Red",
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Flamingo"
+   ],
+   "count": 3,
+   "alt": [
+    "Bird & Bamboo Brick Red",
+    "Bird & Bamboo Dark Teal",
+    "Bird & Bamboo Flamingo"
+   ],
+   "alt_count": 2
+  },
+  "classic-very-merry-mahj-mahjong-mat": {
+   "most_common": [
+    "Bird & Bamboo Seafoam",
+    "Bird & Bamboo Dark Teal",
+    "Bird & Bamboo Red"
+   ],
+   "count": 3,
+   "alt": [
+    "Bird & Bamboo Seafoam",
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Red"
+   ],
+   "alt_count": 2
+  },
+  "holidayloveredgreen": {
+   "most_common": [
+    "Bird & Bamboo Seafoam",
+    "Bird & Bamboo Brick Red",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "count": 2,
+   "alt": [
+    "Bird & Bamboo Seafoam",
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "alt_count": 2
+  },
+  "holly-berry-mat": {
+   "most_common": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Brick Red",
+    "Bird & Bamboo Seafoam"
+   ],
+   "count": 3,
+   "alt": [
+    "Bird & Bamboo Dark Teal",
+    "Bird & Bamboo Brick Red",
+    "Bird & Bamboo Seafoam"
+   ],
+   "alt_count": 1
+  },
+  "hip-hip-hanukkah-mahjong-mat": {
+   "most_common": [
+    "Bird & Bamboo Dark Blue"
+   ],
+   "count": 3,
+   "alt": [
+    "Bird & Bamboo Dark Navy",
+    "Bird & Bamboo French Blue",
+    "Bird & Bamboo Cornflower Blue"
+   ],
+   "alt_count": 1
+  },
+  "pre-order-snowflake-lodge-premium-mahjong-mat-33-estimated-s": {
+   "most_common": [
+    "Bird & Bamboo Blackboard Black",
+    "Bird & Bamboo Cadet",
+    "Bird & Bamboo Ocean Slate"
+   ],
+   "count": 2,
+   "alt": [
+    "Bird & Bamboo Blackboard Black",
+    "Bird & Bamboo Ocean Slate"
+   ],
+   "alt_count": 1
+  }
+ }
+}

@@ -33,6 +33,14 @@ def brand_of(label):
     for k in sorted(list(logos) + list(BRANDS), key=len, reverse=True):
         if label.startswith(k + ' '): return BRANDS.get(k, k), label[len(k) + 1:]
     return None, label
+# Oct 18 (Tiffany): one set of mat racks per mat, on every card -> config/mat-racks-picks.json (spec 'mat_key')
+MATREG = json.load(open(R + 'config/mat-racks-picks.json'))
+_mk = spec.get('mat_key') if spec.get('mat_key') in MATREG else next((k for k, v in MATREG.items() if isinstance(v, dict) and spec.get('mat_file') in v.get('files', [])), None)
+if _mk:
+    _reg = MATREG[_mk]; spec['mat_key'] = _mk
+    for _c in spec['cards']:
+        _set = _c.get('set') or _c['slug'][:-(len(spec['mat_key']) + 1)]
+        _c['mat_racks'] = list(_reg['racks'])
 def chart_for(c):
     if 'mat_racks' not in spec and 'mat_racks' not in c: return None
     bars, other = [], []
