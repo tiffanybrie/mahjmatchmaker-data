@@ -1,0 +1,19 @@
+{
+  "_about": "QA Oct 18: outbound links that return 404 or are malformed on the live site. 'new' is the proposed replacement; null = needs Tiffany's call (product no longer sold). Apply inside the code blocks / text blocks on the listed pages. Not applied live.",
+  "fixes": [
+    {"old": "https://myfairmahjong.com/tiffany817", "new": "https://myfairmahjong.com/products/acrylic-mahjong-racks?sca_ref=10090290.TW8PinT201",
+     "pages": ["first-mahjong-racks-to-buy (3)", "blog/my-favorite-mahjong-racks", "mahjong-discount-codes", "amara-mahjong-tile-matches", "lagoon-mahjong-tile-matches", "seabreeze-mahjong-tile-matches"],
+     "why": "404. This is the 'Shop My Fair Mahjong' button for her #1 first-rack pick (clear acrylic). The replacement uses the same affiliate ref already used elsewhere on the site."},
+    {"old": "https://www.ohmymahjong.com/products/lagoon-ultimate-starter-kit", "new": "https://www.ohmymahjong.com/products/lagoon-ultimate-starter", "pages": ["lagoon-mahjong-tile-matches"], "why": "OMM changed the handle."},
+    {"old": "https://www.ohmymahjong.com/collections/mats", "new": "https://www.ohmymahjong.com/collections/all", "pages": ["blog/most-versatile-mahjong-mats"], "why": "404; verify OMM's current mats collection URL before applying."},
+    {"old": "https://www.ohmymahjong.com/products/liberty-mat-w-tube", "new": null, "pages": ["blog/christmas-mahjong-sets", "blog/holiday-mahjong-table", "holiday-mahjong-matches", "birdie, gatsby, heritage, heritage-2-0, lola, malachite, moonlight, nantucket, osler, smith albums"],
+     "why": "Liberty is no longer in OMM's catalog (products.json, 278 products). It is named in the new Christmas FAQ and the holiday table post as a no-Christmas-mat option. Options: mark it retired like Goldie (\"look for it secondhand\"), or swap the FAQ example."},
+    {"old": "https://www.ohmymahjong.com/products/holly-jolly-mat-in-tube", "new": null, "pages": ["holiday-mahjong-matches", "birdie, gatsby, heritage-2-0, jade, jasmine, lola, malachite, moonlight, nantucket, osler, smith, solara albums"], "why": "OMM Holly Jolly mat no longer in OMM's catalog. Mark retired or drop the Shop button."},
+    {"old": "https://www.ohmymahjong.com/products/nantucket-starter-kit", "new": "https://www.ohmymahjong.com/products/nantucket-tiles", "pages": ["nantucket-mahjong-tile-matches"], "why": "Starter kits gone; tiles page still live."},
+    {"old": "https://www.ohmymahjong.com/products/nantucket-ultimate-starter-kit", "new": "https://www.ohmymahjong.com/products/nantucket-tiles", "pages": ["nantucket-mahjong-tile-matches"], "why": "Same."},
+    {"old": "https://www.ohmymahjong.com/products/anthro-goldie-mat-w-tube", "new": null, "pages": ["oh-my-mahjong-discount-code"], "why": "Goldie is retired; remove the Shop link or label it retired. Also uses OMM's Shopify photo, not the canonical goldie-color-corrected.jpg."},
+    {"old": "https://shop.andersruff.com/products/champagne-mahj-tablecloth?sca_ref=12490265.xTtN8oMUj9qSk1", "new": null, "pages": ["anders-ruff-discount-code"], "why": "404 at Anders Ruff."},
+    {"old": "https://mahjongco.com/products/celestial-tile-set?sca_ref=10562574.vUD4JwHzITqzZp4", "new": null, "pages": ["blog/my-favorite-blue-mahjong-tiles"], "why": "404 at Mahjong Co."},
+    {"old": "https://vr:My Fair Mahjong:Solid Citrus Green /products/ Chartreuse", "new": "https://myfairmahjong.com/products/acrylic-mahjong-racks?sca_ref=10090290.TW8PinT201", "pages": ["holiday-mahjong-matches (3 rack lines)"], "why": "Malformed href from hol_payload.py rack_link() (a 'vr:' picker key fell through to the domain/handle branch). Fixed for free if the holiday rack lines are regenerated from holiday-rack-lines-v4.json."}
+  ]
+}

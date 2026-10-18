@@ -1,0 +1,21 @@
+/* QA Oct 18: on phones, several one-code-block pages (brand guides) keep a stale
+   Fluid Engine mobile row height, leaving up to ~37,000px of empty navy below the content.
+   Option A (preferred, no code): in the Squarespace editor, switch to the mobile view on each
+   affected page and drag the code block's bottom edge up to the content (or re-add the block).
+   Option B (sitewide CSS, Design > Custom CSS): let single-block sections size to their content
+   on phones. Scoped to sections whose only block is a code/website block, so multi-block
+   layouts (home page) are not touched. Test on one page first. */
+@media screen and (max-width: 767px) {
+  .page-section .fluid-engine:has(> .fe-block:only-child .sqs-block-website-component),
+  .page-section .fluid-engine:has(> .fe-block:only-child .sqs-block-code) {
+    display: block !important;
+  }
+  .page-section .fluid-engine:has(> .fe-block:only-child) > .fe-block {
+    height: auto !important;
+  }
+}
+
+/* QA Oct 18: footer email (an H4) breaks as "mahjmatchmaker@gmail.co / m" on phones and at 1280.
+   Preferred: in the footer editor, set that text to a paragraph size or make it a mailto link.
+   CSS fallback (footer block id from the live HTML): */
+#block-e8109705861a998b09f0 h4 { font-size: clamp(15px, 1.6vw, 22px); white-space: nowrap; }
