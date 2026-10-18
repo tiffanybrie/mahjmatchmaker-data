@@ -20,7 +20,7 @@ const lk=src=>new Promise(r=>{if(!src)return r(null);const i=new Image();i.onloa
 /* HD images: hd/index.json maps tile key / rack id / brand -> chunk file; chunks map key -> data URI. */
 const HDC={};let HDI=null;
 const hdIndex=()=>HDI||(HDI=fetch('hd/index.json').then(r=>r.ok?r.json():{}).catch(()=>({})));
-async function hd(kind,key){try{const ix=await hdIndex();const c=(ix[kind]||{})[key];if(!c)return '';if(!HDC[c])HDC[c]=fetch('hd/'+c).then(r=>r.json()).catch(()=>({}));return (await HDC[c])[key]||'';}catch(e){return '';}}
+async function hd(kind,key){try{const ix=await hdIndex();const c=(ix[kind]||{})[key];if(!c)return '';if(c.startsWith('file:'))return c.slice(5);if(!HDC[c])HDC[c]=fetch('hd/'+c).then(r=>r.json()).catch(()=>({}));return (await HDC[c])[key]||'';}catch(e){return '';}}
 const hdOr=async(kind,key,fb)=>(await hd(kind,key))||fb||'';
 /* Short rack label: colour name only (brand and product words dropped). "Middle & Main Hawksbill Heritage (tortoise)" -> "Tortoise". */
 const RL_JUNK=/\b(mahjong|mah jongg|racks?|pushers?|pusher set|set|sets|of|pieces?|acrylic|premium|signature|luxury|luxe|handmade|wooden|wood|classic|heritage|hawksbill|scalloped|scallop|with|built-in|attached|game|bag|the|magnetic|hinged|logo|collection|accessory|preorder|matte|finish|straight|double|two player|modern|new|shelf|angle|options?|color options|tile|only|included|no|patent|pending|american|solid|colors|multiple|inch|in|and|w)\b/gi;
@@ -41,7 +41,7 @@ async function drawCard(){const job=++cardJob;
  const s=set(),fb=S.fmt==='fb',W=fb?1080:1000,H=fb?1350:1500,SC=2;
  const PINK='#c8325f',NAVY='#054689',INK='#2a2036',MUTE='#7a6a85',CREAM='#f7ece3';
  const tb=T[s.tile].bn,mb=M[S.fav].bn,rp=S.rpick,rb=[...new Set(rp.map(r=>R[r].bn))];
- const [mat,tile,ours,icon,rks,tl,ml,rl]=await Promise.all([hd('m',S.fav).then(u=>u||matFull(S.fav)).then(lk),hdOr('t',s.tile,pile(s)).then(lk),hdOr('l','ours',LG('ours')).then(lk),hdOr('l','icon',LG('icon')).then(lk),
+ const [mat,tile,ours,icon,rks,tl,ml,rl]=await Promise.all([matFull(S.fav).then(lk),hdOr('t',s.tile,pile(s)).then(lk),hdOr('l','ours',LG('ours')).then(lk),hdOr('l','icon',LG('icon')).then(lk),
   Promise.all(rp.map(r=>hdOr('r',r,rackSrc(r)).then(lk))),hdOr('l',tb,LG(tb)).then(lk),hdOr('l',mb,LG(mb)).then(lk),Promise.all(rb.map(b=>hdOr('l',b,LG(b)).then(lk)))]);
  if(job!==cardJob)return;
  const cv=document.createElement('canvas');cv.width=W*SC;cv.height=H*SC;const g=cv.getContext('2d');g.scale(SC,SC);g.imageSmoothingEnabled=true;g.imageSmoothingQuality='high';
@@ -56,13 +56,13 @@ async function drawCard(){const job=++cardJob;
   g.font=`700 ${fsK}px Bitter, Georgia, serif`;ls(3);const wk=g.measureText(kicker).width;ls(0);g.font=`600 ${fsN}px Bitter, Georgia, serif`;const nm=clip(name,(o.maxW||600)-2*padX);const wn=g.measureText(nm).width;
   const w=Math.max(wk,wn)+2*padX,X=o.right?x-w:x,Y=o.up?y-h:y;g.save();shadow('rgba(40,20,30,.18)',10,3);g.fillStyle='rgba(255,255,255,.95)';g.beginPath();g.roundRect(X,Y,w,h,14);g.fill();g.restore();
   g.textAlign='left';g.fillStyle=MUTE;g.font=`700 ${fsK}px Bitter, Georgia, serif`;ls(3);g.fillText(kicker,X+padX,Y+9+fsK);ls(0);g.fillStyle=INK;g.font=`600 ${fsN}px Bitter, Georgia, serif`;g.fillText(nm,X+padX,Y+h-11);return {x:X,y:Y,w,h};};
- const logoChip=(im,brand,x,y,h,o={})=>{g.save();const padX=14,ih=h-16;let w;
+ const logoChip=(im,brand,x,y,h,o={})=>{g.save();const sq=im&&im.width/im.height<1.6,padX=sq?10:14,ih=sq?h-4:h-16;let w;
   if(im){w=Math.min(im.width*ih/im.height,o.maxW||200)+2*padX;}else{g.font=`700 ${Math.round(ih*.5)}px "Playfair Display", Georgia, serif`;w=Math.min(g.measureText(brand).width,(o.maxW||200))+2*padX;}
   const X=o.right?x-w:x;shadow('rgba(40,20,30,.15)',8,2);g.fillStyle='rgba(255,255,255,.95)';g.beginPath();g.roundRect(X,y,w,h,h/2);g.fill();noShadow();
   if(im)fit(im,X+padX,y+8,w-2*padX,ih);else{g.fillStyle=INK;g.textAlign='center';g.fillText(clip(brand,w-2*padX),X+w/2,y+h/2+ih*.18);}g.restore();return w;};
- const logoRow=(ims,brands,cy,h,maxTot)=>{const items=ims.map((im,i)=>{if(im)return {im,w:Math.min(im.width*h/im.height,210)};g.font=`700 ${Math.round(h*.42)}px "Playfair Display", Georgia, serif`;return {t:brands[i],w:g.measureText(brands[i]).width};});
+ const logoRow=(ims,brands,cy,h,maxTot)=>{const items=ims.map((im,i)=>{if(im){const hh=im.width/im.height<1.6?h*1.45:h;return {im,hh,w:Math.min(im.width*hh/im.height,210)};}g.font=`700 ${Math.round(h*.42)}px "Playfair Display", Georgia, serif`;return {t:brands[i],w:g.measureText(brands[i]).width};});
   const gap=36;const tot=items.reduce((a,b)=>a+b.w,0)+gap*(items.length-1);const k=Math.min(1,maxTot/tot);let x=(W-tot*k)/2;
-  items.forEach(it=>{if(it.im){const w=it.w*k,hh=Math.min(h,w*it.im.height/it.im.width);g.drawImage(it.im,x,cy-hh/2,w,hh);}else{g.fillStyle='#5b4e66';g.textAlign='left';g.font=`700 ${Math.round(h*.42*k)}px "Playfair Display", Georgia, serif`;g.fillText(it.t,x,cy+h*.15);}x+=(it.w+gap)*k;});};
+  items.forEach(it=>{if(it.im){const w=it.w*k,hh=Math.min(it.hh,w*it.im.height/it.im.width);g.drawImage(it.im,x,cy-hh/2,w,hh);}else{g.fillStyle='#5b4e66';g.textAlign='left';g.font=`700 ${Math.round(h*.42*k)}px "Playfair Display", Georgia, serif`;g.fillText(it.t,x,cy+h*.15);}x+=(it.w+gap)*k;});};
  /* racks with a short colour label under each one; labels get their own line so they never sit on a rack */
  const labels=rp.map(rackLabel);
  const racks=(x,y,w,h,o={})=>{const n=rks.length;if(!n)return;const fs=o.fs||21,lh=fs+12;g.save();

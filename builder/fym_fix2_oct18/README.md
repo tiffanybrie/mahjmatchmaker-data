@@ -13,3 +13,7 @@ Verified locally with the audit scripts (fymfix2/ascripts, pointed at the new bu
 
 ## Oct 18 afternoon: mat-edition patch
 After building, run `python3 builder/fym_mated_oct18/patch.py` (Vivienne/Larkspur/Peony door order + Vivienne pairings). Already applied once to build/index.html (backup: scratchpad/fymfix2/index_pre_mated.html).
+
+## Oct 18 afternoon: match card redesign (approved)
+`builder/card_build_oct18/`: new step-4 card (Love triangle / Mood board / Shop, 2x exports, HD tiles/racks/logos).
+Adds `hd/` (index.json + 21 chunks, ~25 MB) to the publish list. After any rebuild: `python3 builder/card_build_oct18/splice.py` then `python3 builder/fym_mated_oct18/patch.py`.
