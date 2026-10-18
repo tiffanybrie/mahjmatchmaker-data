@@ -61,3 +61,4 @@ Swap-list route: run `caption_swaps` after the URL `swaps`.
 Other pages are in ../rackcaptions/.
 
 Unrelated typo, not fixed: the Polo button reads "Shop the The Polo Club Mat".
+- The .html blocks fix the button text 'Shop the The Polo Club Mat' to 'Shop The Polo Club Mat'. The .json swap lists don't include that fix, so prefer the whole-block paste.
