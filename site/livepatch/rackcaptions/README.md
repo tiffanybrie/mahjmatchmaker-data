@@ -54,3 +54,18 @@ Before starting, every `old` segment on all 22 pages was re-checked against live
   - On drake the editor didn't open, so nothing was changed there.
   - The Squarespace tab then stopped responding after navigating to emerald. It's probably waiting on a browser dialog.
 - Block ids per page: scratchpad cflive/rc_blocks.json, or find the block that contains each `old` segment.
+
+## LIVE — completed Oct 18 ~14:20–14:50 ET (new tab after the Chrome restart)
+The other 18 pages are done: drake, emerald, gemma, glitterville, glow-wild, jasmine, lagoon, lola, luminaire, moonlight, osler, palm-royale, pearlescent, smith, solara, talulah, tortoise, willow.
+- **Method:** a CodeMirror 6 dispatch, applied only when each `old` segment was found exactly once in the editor source. That check doubles as the drift check, and every page passed.
+- **Verified by curl:** every new caption is present and no old ones remain on all 22 pages:
+  - 4 caption swaps (drake, gemma, solara, talulah, taylor, tortoise)
+  - 5 swaps (glow-wild, lagoon, luminaire, palm-royale)
+  - 7 swaps (dandy, glitterville, willow)
+  - 8 swaps (emerald, jasmine)
+  - 9 swaps (coquette, lola)
+  - 11 swaps (pearlescent)
+  - 13 swaps (osler, smith)
+  - 14 swaps (birdie)
+  - 15 swaps (moonlight)
+- Total: 166 captions.
