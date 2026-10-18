@@ -1,0 +1,30 @@
+{
+ "_note": "Preppy Pink Garden (Bespoke Mahjong) new matches Oct 18",
+ "mat_file": "assets/mats/bespoke-mahjong/preppy-pink-garden.jpg",
+ "mat_crop": [
+  0,
+  0,
+  1080,
+  1080
+ ],
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "papaya-spritz-preppy-pink-garden",
+   "title": "Papaya Spritz + Preppy Pink Garden",
+   "col": "#ec6f2d",
+   "tile_file": "assets/tiles/album/papaya-spritz.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Peace Love Mahjong Chartreuse",
+    "Bird & Bamboo Lavender"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Ballet Pink",
+    "Bird & Bamboo Light Blue"
+   ],
+   "file": "papaya-spritz-mahjong-tiles-bespoke-mahjong-preppy-pink-garden-mat.jpg"
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "_note": "Rainbow Row new matches Oct 18",
+ "mat_file": "assets/mats/rebecca-illustrated/rainbow-row.jpg",
+ "mat_crop": [
+  0,
+  0,
+  1156,
+  1156
+ ],
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "pearlescent-rainbow-row",
+   "title": "Pearlescent + Rainbow Row",
+   "col": "#e67965",
+   "tile_file": "assets/tiles/album/pearlescent.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Miss Mahjong Peach Sorbet Scalloped",
+    "Bird & Bamboo Light Pink"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Ballet Pink",
+    "Bird & Bamboo Light Blue"
+   ],
+   "file": "pearlescent-mahjong-tiles-rebecca-illustrated-rainbow-row-mat.jpg"
+  }
+ ],
+ "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM"
+}

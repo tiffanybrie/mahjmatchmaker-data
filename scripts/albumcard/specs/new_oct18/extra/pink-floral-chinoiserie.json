@@ -1,0 +1,30 @@
+{
+ "_note": "Pink Floral Chinoiserie new matches Oct 18",
+ "mat_file": "assets/mats/mahj-squad/pink-floral-chinoiserie-flat-closeup-WATERMARKED-no-social.jpg",
+ "mat_crop": [
+  0,
+  0,
+  838,
+  838
+ ],
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "pearlescent-pink-floral-chinoiserie",
+   "title": "Pearlescent + Pink Floral Chinoiserie",
+   "col": "#e67965",
+   "tile_file": "assets/tiles/album/pearlescent.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Miss Mahjong Peach Sorbet Scalloped",
+    "Bird & Bamboo Light Pink"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Mermaid"
+   ],
+   "file": "pearlescent-mahjong-tiles-mahj-squad-pink-floral-chinoiserie-mat.jpg"
+  }
+ ]
+}
