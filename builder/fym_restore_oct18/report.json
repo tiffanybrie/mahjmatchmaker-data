@@ -1,0 +1,357 @@
+{
+ "empty_existing": 115,
+ "rep": {
+  "mat_clean_photo": 10,
+  "mat_new": 2,
+  "rack_restored": 1,
+  "already_there": 46,
+  "pairing_restored": 38
+ },
+ "log": {
+  "mats_clean": [
+   "Jungle Hot Pink \u00b7 Bespoke Mahjong",
+   "Cranes and Clouds \u00b7 Bespoke Mahjong",
+   "Strawberry (retired) \u00b7 Tigre de Tartan",
+   "Coconut Peony (retired) \u00b7 Tigre de Tartan",
+   "Pop Art Roses (retired) \u00b7 Tigre de Tartan",
+   "Regal Bloom (retired) \u00b7 Oh My Mahjong",
+   "Imperial Lotus \u00b7 Mahj Tile Haus",
+   "Boho Wildflower \u00b7 Sweet Jojo Designs",
+   "Bamboo Dragon \u00b7 Isabel Harte",
+   "Blooming Tulips \u00b7 Mary Benson"
+  ],
+  "mats_new": [
+   "Holly Jolly (retired) \u00b7 Oh My Mahjong",
+   "Pink Tiger \u00b7 YOLO Mahjong"
+  ],
+  "racks": [
+   "Trust Fund Racks"
+  ],
+  "pairings": [
+   [
+    "heritage",
+    "Strawberry (retired)",
+    "Tigre de Tartan",
+    "album"
+   ],
+   [
+    "heritage",
+    "Pop Art Roses (retired)",
+    "Tigre de Tartan",
+    "album"
+   ],
+   [
+    "heritage",
+    "Coconut Peony (retired)",
+    "Tigre de Tartan",
+    "album"
+   ],
+   [
+    "heritage-2-0",
+    "Pop Art Roses (retired)",
+    "Tigre de Tartan",
+    "album"
+   ],
+   [
+    "heritage-2-0",
+    "Coconut Peony (retired)",
+    "Tigre de Tartan",
+    "album"
+   ],
+   [
+    "heritage-2-0",
+    "Strawberry (retired)",
+    "Tigre de Tartan",
+    "album"
+   ],
+   [
+    "drake",
+    "Strawberry (retired)",
+    "Tigre de Tartan",
+    "album"
+   ],
+   [
+    "drake",
+    "Coconut Peony (retired)",
+    "Tigre de Tartan",
+    "album"
+   ],
+   [
+    "lagoon",
+    "Cranes and Clouds",
+    "Bespoke Mahjong",
+    "album"
+   ],
+   [
+    "lagoon",
+    "Jungle Hot Pink",
+    "Bespoke Mahjong",
+    "album"
+   ],
+   [
+    "talulah",
+    "Imperial Lotus",
+    "Mahj Tile Haus",
+    "album"
+   ],
+   [
+    "solara",
+    "Blooming Tulips",
+    "Mary Benson",
+    "album"
+   ],
+   [
+    "solara",
+    "Pink Citrus",
+    "Mahj & Moon",
+    "album"
+   ],
+   [
+    "solara",
+    "Chinoiserie Songbird",
+    "Mahj & Vine",
+    "album"
+   ],
+   [
+    "coquette",
+    "The Pink Classic Neoprene Mahjong Mat",
+    "Bam Bird Boutique",
+    "album"
+   ],
+   [
+    "glow-wild",
+    "Bamboo Dragon",
+    "Isabel Harte",
+    "album"
+   ],
+   [
+    "glow-wild",
+    "Jungle Hot Pink",
+    "Bespoke Mahjong",
+    "album"
+   ],
+   [
+    "osler",
+    "Boho Wildflower",
+    "Sweet Jojo Designs",
+    "album"
+   ],
+   [
+    "pearlescent",
+    "Regal Bloom (retired)",
+    "Oh My Mahjong",
+    "album"
+   ],
+   [
+    "smith",
+    "Boho Wildflower",
+    "Sweet Jojo Designs",
+    "album"
+   ],
+   [
+    "tortoise",
+    "Pop Art Roses (retired)",
+    "Tigre de Tartan",
+    "album"
+   ],
+   [
+    "malachite",
+    "Strawberry (retired)",
+    "Tigre de Tartan",
+    "album"
+   ],
+   [
+    "birdie",
+    "Holly Jolly (retired)",
+    "Oh My Mahjong",
+    "holiday-album"
+   ],
+   [
+    "jasmine",
+    "Holly Jolly (retired)",
+    "Oh My Mahjong",
+    "holiday-album"
+   ],
+   [
+    "lola",
+    "Holly Jolly (retired)",
+    "Oh My Mahjong",
+    "holiday-album"
+   ],
+   [
+    "osler",
+    "Holly Jolly (retired)",
+    "Oh My Mahjong",
+    "holiday-album"
+   ],
+   [
+    "heritage-2-0",
+    "Holly Jolly (retired)",
+    "Oh My Mahjong",
+    "holiday-album"
+   ],
+   [
+    "jade",
+    "Holly Jolly (retired)",
+    "Oh My Mahjong",
+    "holiday-album"
+   ],
+   [
+    "moonlight",
+    "Holly Jolly (retired)",
+    "Oh My Mahjong",
+    "holiday-album"
+   ],
+   [
+    "gatsby",
+    "Holly Jolly (retired)",
+    "Oh My Mahjong",
+    "holiday-album"
+   ],
+   [
+    "solara",
+    "Holly Jolly (retired)",
+    "Oh My Mahjong",
+    "holiday-album"
+   ],
+   [
+    "malachite",
+    "Holly Jolly (retired)",
+    "Oh My Mahjong",
+    "holiday-album"
+   ],
+   [
+    "smith",
+    "Holly Jolly (retired)",
+    "Oh My Mahjong",
+    "holiday-album"
+   ],
+   [
+    "dear-santa",
+    "Holly Jolly (retired)",
+    "Oh My Mahjong",
+    "holiday-album"
+   ],
+   [
+    "nantucket",
+    "Holly Jolly (retired)",
+    "Oh My Mahjong",
+    "holiday-album"
+   ],
+   [
+    "sunday-mahjong-december-1994",
+    "Vegan Leather \u2013 Caramel",
+    "Bam Bird Boutique",
+    "holiday-album"
+   ],
+   [
+    "sunday-mahjong-december-1994",
+    "Holly Jolly (retired)",
+    "Oh My Mahjong",
+    "holiday-album"
+   ],
+   [
+    "malachite",
+    "Pink Tiger",
+    "YOLO Mahjong",
+    "malachite-new"
+   ]
+  ]
+ },
+ "still_hidden": [
+  [
+   "alb2:mahj-vine-chinoiserie-songbird-2",
+   "Chinoiserie Songbird 2",
+   "Mahj & Vine"
+  ],
+  [
+   "alb2:bam-bird-boutique-classic-neoprene-in-pink",
+   "Classic Neoprene in Pink",
+   "Bam Bird Boutique"
+  ],
+  [
+   "alb2:nawuno-nawuno",
+   "Nawuno",
+   "Nawuno"
+  ],
+  [
+   "alb2:birdsong-mahjong-grace",
+   "Grace",
+   "Birdsong Mahjong"
+  ],
+  [
+   "alb2:tigre-de-tartan-holy-mahj",
+   "Holy Mahj (retired)",
+   "Tigre de Tartan"
+  ],
+  [
+   "alb2:four-winds-social-petals-and-plum",
+   "Petals and Plum",
+   "Four Winds Social"
+  ],
+  [
+   "alb2:oh-my-mahjong-lorelei-2",
+   "Lorelei 2",
+   "Oh My Mahjong"
+  ],
+  [
+   "alb2:bespoke-mahjong-yotd-purple",
+   "YOTD Purple",
+   "Bespoke Mahjong"
+  ],
+  [
+   "alb2:oh-my-mahjong-serengeti-2",
+   "Serengeti 2 (retired)",
+   "Oh My Mahjong"
+  ],
+  [
+   "alb2:oh-my-mahjong-enchanted-2",
+   "Enchanted 2 (retired)",
+   "Oh My Mahjong"
+  ],
+  [
+   "alb2:mahj-and-moon-retro-daisy",
+   "Retro Daisy",
+   "Mahj and Moon"
+  ],
+  [
+   "alb2:mahj-moon-pink-citrus-chinoiserie",
+   "Pink Citrus Chinoiserie",
+   "Mahj & Moon"
+  ],
+  [
+   "alb2:four-winds-social-mozaic-mahj",
+   "Mozaic Mahj",
+   "Four Winds Social"
+  ],
+  [
+   "alb2:mahj-vine-chinoiserie",
+   "Chinoiserie",
+   "Mahj & Vine"
+  ],
+  [
+   "alb2:amazon-amazon",
+   "Amazon",
+   "Amazon"
+  ],
+  [
+   "alb2:amazon-amazon-2",
+   "Amazon 2",
+   "Amazon"
+  ],
+  [
+   "alb2:mary-benson-hydrangea",
+   "Hydrangea",
+   "Mary Benson"
+  ],
+  [
+   "alb2:tigre-de-tartan-queen-bee",
+   "Queen Bee (retired)",
+   "Tigre de Tartan"
+  ]
+ ],
+ "mc": [
+  84,
+  85
+ ]
+}
