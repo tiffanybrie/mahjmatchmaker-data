@@ -23,3 +23,4 @@ Approvals she needs to give:
 - The profile name, bio and photo are unchanged, and no pins were posted.
 - Oct 18: match pins reworked per Tiffany: headline '[N] mats that match [set] tiles', CTA 'See all [N] of [set]'s matches', #1 pick shown as an example. Counts from live albums (scripts/pinterest/album_counts_oct18.json). Media URLs pinned to db299d7.
 - Oct 18 14:15: Pinterest profile updated (approved in chat): name 'Mahj Matchmaker', bio from the kit, flame-heart photo. Website was already verified. Username unchanged.
+- Oct 18 14:30: holiday table + Amazon pins reworked search-first (Tiffany: no How I'm Styling / Retro Rattan titles; keyword first). Board pins crop off the baked-in board titles and use a new header. Images at 081804d.
