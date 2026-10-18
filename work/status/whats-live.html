@@ -1,0 +1,131 @@
+<title>What's Live</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap">
+<style>
+/* Layout: one column ledger — stage counts as filter chips, an album grid, then rows grouped by stage */
+:root{
+  --bg:#fbf8f9; --panel:#ffffff; --ink:#1e3a5f; --muted:#5f6f84; --line:#ead9df;
+  --rose:#c8456f; --rose-soft:#fbe9ef;
+  --you:#c2412d; --you-soft:#fbe7e3; --us:#a86b00; --us-soft:#fbf0d9;
+  --appr:#3d5fa8; --appr-soft:#e6ecf8; --live:#2f7d4f; --live-soft:#e3f3e9;
+  --display:"DM Serif Display",Georgia,"Times New Roman",serif;
+  --body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111a26; --panel:#182332; --ink:#e8eef6; --muted:#9fb0c5; --line:#2a3a4f; --rose:#f07aa0; --rose-soft:#3a2230;
+  --you:#f08a76; --you-soft:#3a2420; --us:#f0c060; --us-soft:#3a3020; --appr:#9db6f0; --appr-soft:#202c45; --live:#7fd3a0; --live-soft:#1f3a2b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111a26; --panel:#182332; --ink:#e8eef6; --muted:#9fb0c5; --line:#2a3a4f; --rose:#f07aa0; --rose-soft:#3a2230;
+  --you:#f08a76; --you-soft:#3a2420; --us:#f0c060; --us-soft:#3a3020; --appr:#9db6f0; --appr-soft:#202c45; --live:#7fd3a0; --live-soft:#1f3a2b; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body)}
+.wrap{max-width:920px;margin:0 auto;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:18px}
+h1{font:400 32px/1.1 var(--display);margin:0;text-wrap:balance}
+h1 span{color:var(--rose)}
+.lede{color:var(--muted);margin:6px 0 0;max-width:62ch}
+.lede a{color:var(--rose)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:500 14px var(--body);display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:7px 14px;cursor:pointer}
+.chip b{font-variant-numeric:tabular-nums}
+.chip[aria-pressed="true"]{border-color:var(--ink);box-shadow:0 0 0 1px var(--ink) inset}
+.chip:focus-visible,.row:focus-visible{outline:2px solid var(--rose);outline-offset:2px}
+.sw{width:10px;height:10px;border-radius:50%;flex:0 0 10px}
+.s-you{background:var(--you)} .s-us{background:var(--us)} .s-approved{background:var(--appr)} .s-today{background:var(--rose)} .s-live{background:var(--live)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;min-width:0}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--rose);margin:0 0 8px}
+.tbl{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:620px}
+th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
+tr:last-child td{border-bottom:0}
+td.nm{font-weight:700}
+.y{color:var(--live);font-weight:700} .n{color:var(--you);font-weight:700}
+h2{font:400 22px/1.2 var(--display);margin:0;display:flex;align-items:center;gap:10px}
+.group{display:grid;gap:10px}
+.gsub{color:var(--muted);font-size:13px;margin:-4px 0 2px}
+.list{display:grid;gap:8px;list-style:none;margin:0;padding:0}
+.row{display:grid;grid-template-columns:4px 1fr auto;gap:12px;align-items:start;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.row > div{min-width:0}
+.bar{align-self:stretch;border-radius:2px}
+.row h3{font-size:15px;margin:0 0 2px}
+.row p{margin:0;color:var(--muted);font-size:14px}
+.area{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.who{font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.who.Tiffany{background:var(--you-soft);color:var(--you)} .who.Claude{background:var(--us-soft);color:var(--us)} .who.Done{background:var(--live-soft);color:var(--live)}
+.empty{padding:18px;border:1px dashed var(--line);border-radius:12px;color:var(--muted)}
+.foot{color:var(--muted);font-size:13px}
+@media (max-width:520px){.row{grid-template-columns:4px 1fr}.row .who{grid-column:2;justify-self:start}h1{font-size:27px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>What's <span>Live</span></h1>
+    <p class="lede">Everything we're working on, and whether it's live yet. Red means it's waiting on you, gold means it's waiting on us. Things to approve are still on <a href="https://claude.ai/artifact/RTtaTzgkN2ssmiAP3FxvJF" target="_blank" rel="noopener">Ready to Ship</a>.</p>
+  </header>
+
+  <div class="chips" id="chips" role="group" aria-label="Filter by stage"></div>
+
+  <div class="card" id="albCard" hidden>
+    <p class="eyebrow">Albums and mat edits</p>
+    <div class="tbl"><table>
+      <thead><tr><th>Album</th><th>Cards</th><th>Order</th><th>Page</th><th>Find Your Match</th></tr></thead>
+      <tbody id="albRows"></tbody>
+    </table></div>
+  </div>
+
+  <div id="groups"><div class="empty" id="loading">Loading the list. Each item shows its stage, the next step, and whose move it is.</div></div>
+
+  <p class="foot" id="foot"></p>
+</div>
+
+<script>
+(function(){
+  const STAGES=[
+    {k:'you',label:'Waiting on you',sub:'Your look, your answer or your approval.'},
+    {k:'us',label:'Waiting on us',sub:'You gave feedback; we owe you the fix.'},
+    {k:'today',label:'Approved today',sub:'You approved these in chat today. Done, or going live now.'},
+    {k:'approved',label:'Approved, not live yet',sub:'You said yes; it isn’t on the site yet.'},
+    {k:'live',label:'Live',sub:'On the site or app now.'}
+  ];
+  const $=s=>document.querySelector(s);
+  const el=(t,c,x)=>{const e=document.createElement(t); if(c) e.className=c; if(x!=null) e.textContent=x; return e;};
+  let rows=[]; let filter='all';
+  try{ filter=localStorage.getItem('wlFilter')||'all'; }catch(e){}
+
+  function chips(){
+    const box=$('#chips'); box.textContent='';
+    const mk=(k,label,n)=>{ const b=el('button','chip'); b.type='button'; b.setAttribute('aria-pressed',filter===k?'true':'false');
+      if(k!=='all') b.append(el('span','sw s-'+k)); b.append(el('span',null,label)); b.append(el('b',null,String(n)));
+      b.addEventListener('click',()=>{ filter=(filter===k&&k!=='all')?'all':k; try{localStorage.setItem('wlFilter',filter)}catch(e){} render(); }); box.append(b); };
+    mk('all','Everything',rows.length);
+    STAGES.forEach(s=>mk(s.k,s.label,rows.filter(r=>r.stage===s.k).length));
+  }
+  function yn(v){ const td=el('td',null,v||'—'); if(/^(Live|Yes)\b/.test(v||'')) td.className='y'; else if(/^Not live|^Not in|^Need/.test(v||'')) td.className='n'; return td; }
+  function albums(){
+    const a=rows.filter(r=>r.album).sort((x,y)=>(x.order||99)-(y.order||99));
+    $('#albCard').hidden=!a.length; const tb=$('#albRows'); tb.textContent='';
+    a.forEach(r=>{ const tr=el('tr'); tr.append(el('td','nm',r.name), el('td',null,r.album.cards||'—'), el('td',null,r.album.order||'—'), yn(r.album.page), yn(r.album.fym)); tb.append(tr); });
+  }
+  function render(){
+    chips(); albums();
+    const g=$('#groups'); g.textContent='';
+    if(!rows.length){ g.append(el('div','empty','Nothing listed yet. Claude fills this in as work moves along.')); return; }
+    STAGES.filter(s=>filter==='all'||filter===s.k).forEach(s=>{
+      const items=rows.filter(r=>r.stage===s.k).sort((x,y)=>(x.order||99)-(y.order||99)); if(!items.length) return;
+      const sec=el('section','group'); const h=el('h2'); h.append(el('span','sw s-'+s.k), document.createTextNode(s.label+' · '+items.length)); sec.append(h, el('p','gsub',s.sub));
+      const ul=el('ul','list');
+      items.forEach(r=>{ const li=el('li','row'); const bar=el('span','bar s-'+s.k); const mid=el('div');
+        mid.append(el('span','area',r.area||''), el('h3',null,r.name), el('p',null,r.next||''));
+        li.append(bar, mid, el('span','who '+(r.who||'Done'), r.who==='Tiffany'?'Your move':r.who==='Claude'?'Our move':'Done')); ul.append(li); });
+      sec.append(ul); g.append(sec);
+    });
+    const t=rows.reduce((m,r)=>Math.max(m,r.updated||0),0);
+    $('#foot').textContent=t?('Last updated '+new Date(t).toLocaleString([], {month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})):'';
+  }
+  render();
+  (async()=>{ let db=null; try{ db=await claude.use('db'); }catch(e){}
+    if(!db){ $('#groups').textContent=''; $('#groups').append(el('div','empty','This list loads from saved data, which isn’t available in this view. Open it from claude.ai while signed in.')); return; }
+    try{ db.collection('status').onSnapshot(q=>{ rows=q.docs.map(d=>Object.assign({id:d.id},d.data())); render(); }); }catch(e){}
+  })();
+})();
+</script>
