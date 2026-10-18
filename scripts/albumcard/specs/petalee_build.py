@@ -40,7 +40,7 @@ NAME = {'Botanical Garden Mahjong Mat': 'Botanical Garden', 'Garden Party Mahjon
         'Posy Pop Watercolor Floral Mahjong Mat': 'Posy Pop Watercolor', 'Hummingbird Hydrangea Mahjong Mat': 'Hummingbird Hydrangea',
         'Roseveil Mahjong Mat': 'Roseveil', 'Hey Baby Mahjong Mat': 'Hey Baby', 'Martha & Mae Vintage Quilt': 'Martha & Mae'}
 def footer(b, retired):
-    if retired or (b not in PARTNERS and b not in PCT): return 'SHOP THE MATCH : MAHJMATCHMAKER.COM'
+    if retired or (b not in PARTNERS and b not in PCT): return '10% OFF  USE CODE : MAHJMATCH'  # Oct 18 rule: no SHOP THE MATCH footers; every card carries MAHJMATCH (the code works on the Virora Mahjong tiles)
     if b in NOPCT: return 'SAVE WITH CODE : MAHJMATCH'
     return f"{PCT.get(b, '10%')} OFF  USE CODE : MAHJMATCH"
 def flat(im):

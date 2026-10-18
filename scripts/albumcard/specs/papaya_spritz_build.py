@@ -19,7 +19,7 @@ PCT = {'Britt Mills': '15%', 'Amanda Toppe': '20%', 'Royal Mahjong Society': '15
 NOPCT = {'Anders Ruff', 'Mahjong Register', 'The Mahjong Press'}
 SRC = {'Goldie (retired)': 'assets/mats/omm-retired/goldie-color-corrected.jpg', 'Spring Fling (retired)': 'assets/mats/omm-retired/spring-fling.png'}
 def footer(b, retired):
-    if retired or b not in PARTNERS: return 'SHOP THE MATCH : MAHJMATCHMAKER.COM'
+    if retired or b not in PARTNERS: return '10% OFF  USE CODE : MAHJMATCH'  # Oct 18 rule: no SHOP THE MATCH footers; every card carries MAHJMATCH (the code works on the Oh My Mahjong tiles)
     if b in NOPCT: return 'SAVE WITH CODE : MAHJMATCH'
     return f"{PCT.get(b, '10%')} OFF  USE CODE : MAHJMATCH"
 def flat(im):
