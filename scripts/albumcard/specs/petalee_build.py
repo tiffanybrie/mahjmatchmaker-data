@@ -2,7 +2,9 @@
 db 'petalee', 39 yes of 110 votes as of Oct 18 ~7am; she may still be swiping). Deck order (no stars in this book).
 Title colour #FBB1D7 = the tile-back pastel pink (her rule). Tile photo assets/tiles/album/petalee-pile.jpg; Virora logo flag.
 Tile racks (Claude's pick, needs her OK; no final_lists entry): her layer-colour rule (lavender + pale green layers) plus a
-feminine neutral: Miss Mahjong Scalloped Iridescent Opal, Bird & Bamboo Lilac, Bird & Bamboo Pistachio.
+feminine neutral: Miss Mahjong Scalloped Iridescent Opal, Bird & Bamboo Lavender, Peace Love Mahjong Chartreuse (B&B Pistachio rendered khaki).
+Photo overrides: Pink Floral Chinoiserie = the registry's flat close-up, crop as the approved Oct 18 PFC cards; Parrotia and Roseveil = Virora's
+first listing photo (flat mat, rolled mat at right is cropped off by the lower-left crop); book photos had tiles and a size ruler.
 Mat racks: config/mat-racks-picks.json registry when listed, else matpick.py.
 Usage: python3 petalee_build.py <workdir>; then gen2.py <workdir>/spec.json <workdir>/cards"""
 import json, io, base64, re, os, sys, glob
@@ -27,7 +29,7 @@ for f in glob.glob(S + 'petaleedb/petalee/*.json'):
 deck = [x['id'] for x in SPEC['items']]
 deck_ids = [k.split('?')[0] for k in deck] + [k for k in IMG if k.split('?')[0] not in [d.split('?')[0] for d in deck]]
 yes = [k for k in dict.fromkeys(deck_ids) if votes.get(k) == 'y'] + [k for k, v in votes.items() if v == 'y' and k not in deck_ids]
-TRACKS = ['Miss Mahjong Scalloped Iridescent Opal', 'Bird & Bamboo Lilac', 'Bird & Bamboo Pistachio']
+TRACKS = ['Miss Mahjong Scalloped Iridescent Opal', 'Bird & Bamboo Lavender', 'Peace Love Mahjong Chartreuse']
 REG = {k: v for k, v in json.load(open(R + 'config/mat-racks-picks.json')).items() if isinstance(v, dict)}
 PARTNERS = {b[0] for b in json.load(open(R + 'work/pub/catalog.json'))['B']}
 PCT = {'Britt Mills': '15%', 'Amanda Toppe': '20%', 'Royal Mahjong Society': '15%'}
@@ -54,7 +56,10 @@ def crop(im):
     if ch > Hh: ch = Hh; cw = int(ch * .973)
     return im.crop((0, Hh - ch, cw, Hh))
 def slug(s): return re.sub(r'[^a-z0-9]+', '-', s.lower().replace('&', 'and').replace("'", '')).strip('-')
+OVR = {'tt-mahjsquad-pink-floral-chinoiserie': R + 'assets/mats/mahj-squad/pink-floral-chinoiserie-flat-closeup-WATERMARKED-no-social.jpg',
+       'cc-parrotia': W + '/vir/parrotia-flat.jpg', 'cc-roseveil': W + '/vir/roseveil-flat.jpg'}
 def find_img(k):
+    if k in OVR: return Image.open(OVR[k]), OVR[k].replace(R, '')
     for kk, p in IMG.items():
         if kk.split('?')[0] == k: return Image.open(S + 'petalee/book/' + p), 'book/' + p
     if k in POOL: return Image.open(io.BytesIO(base64.b64decode(POOL[k][1].split(',', 1)[1]))), 'pool'
@@ -73,7 +78,7 @@ for k in yes:
     nm = NAME.get(nm, re.sub(r'\s+Mahjong Mat$', '', nm)); brand = re.sub(r'\s*\(.*\)$', '', brand)
     retired = '(retired)' in nm or k.startswith('ret-'); clean = re.sub(r'\s*\(.*', '', nm).strip()
     if src is None: held.append({'vote_id': k, 'why': 'no photo found'}); continue
-    m = crop(src)
+    m = crop(src) if k != 'tt-mahjsquad-pink-floral-chinoiserie' else flat(src).crop((0, 0, 838, 861))
     rk = next((kk for kk, v in REG.items() if slug(clean) == kk), None)
     mr = REG[rk]['racks'] if rk else pick(m, exclude=TRACKS)
     fn = f"petalee-mahjong-tiles-{slug(brand)}-{slug(clean)}-mat.jpg"; code = footer(brand, retired); n = len(cards) + 1
