@@ -19,8 +19,8 @@ body{{margin:0;width:1080px;height:1350px;overflow:hidden;background:#000;positi
 .lg{{display:block;height:{lh}px}}
 .tag{{background:#fbf6ee;border-radius:14px;padding:12px 22px;box-shadow:0 4px 14px rgba(0,0,0,.25);display:flex}}
 .tag img{{display:block;height:{lh}px}}
-h1{{font:400 {fs}px/1.0 Caprasimo;margin:14px 0 0;text-shadow:0 2px 8px rgba(0,0,0,.18)}}
-.our{{position:absolute;left:50%;transform:translateX(-50%);top:915px;width:560px}}
+h1{{font:400 {fs}px/1.0 Caprasimo;margin:14px 0 0;text-shadow:{os.environ.get('TITLE_SHADOW','0 2px 8px rgba(0,0,0,.18)')}}}
+.our{{filter:{os.environ.get('WM_FILTER','none')};position:absolute;left:50%;transform:translateX(-50%);top:915px;width:560px}}
 .bar{{position:absolute;left:50%;transform:translateX(-50%);top:1010px;width:380px}}
 .p,.f,.c,.our,.bar{{z-index:1}}
 </style></head><body><div class="bg"></div><div class="p"></div><div class="f"></div>
