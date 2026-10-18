@@ -14,11 +14,11 @@ CARDS = [
 LOGOS = json.load(open(R + 'builder/logos/map.json'))
 SHOW = ['Oh My Mahjong', 'Britt Mills', 'Bird & Bamboo', 'Anders Ruff', 'Mahj & Vine', 'Miss Mahjong', 'Peace Love Mahjong',
         'Mahj Mood', 'Bespoke Mahjong', 'Middle & Main Mahjong', 'Splash of Color', 'Mahj Squad', 'Tigre de Tartan',
-        'My Fair Mahjong', 'Hip Hip Mahjong', 'Bam Bird Boutique', 'Charleston Mahjong Club', 'Amahj']
+        'My Fair Mahjong', 'Hip Hip Mahjong']
 urls = [J + c for c in CARDS] + [J + 'builder/logos/' + LOGOS[b] for b in SHOW]
 
 fan = ''.join(f'<img class="c c{i}" src="{J}{c}" alt="Mahj Matchmaker match card" loading="{"eager" if i==2 else "lazy"}">' for i, c in enumerate(CARDS))
-logos = ''.join(f'<img src="{J}builder/logos/{LOGOS[b]}" alt="{b}" loading="lazy">' for b in SHOW)
+logos = ''.join(f'<img src="{J}builder/logos/{LOGOS[b]}" alt="{b}">' for b in SHOW)
 heart = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.9 4.5c2.1 0 3.6 1.2 5.1 3 1.5-1.8 3-3 5.1-3 3.9 0 6 3.9 4.5 7.3C19.5 16.4 12 21 12 21z"/></svg>'
 ic_tag = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9zm5-5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>'
 ic_star = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.2l7.1-.6z"/></svg>'
@@ -31,12 +31,12 @@ CSS = """
 .mmww p{margin:0 0 12px;color:var(--ink)}
 .mmww a{color:var(--rose)}
 .mmww .ey{display:inline-block;text-transform:uppercase;letter-spacing:.18em;font-size:.72em;font-weight:700;color:#fff;background:var(--ink);border-radius:999px;padding:6px 14px 5px;margin:0 0 16px}
-.mmww .hero{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:28px;align-items:center;background:var(--blush);border-radius:28px;padding:48px 44px;overflow:hidden}
+.mmww .hero{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;background:var(--blush);border-radius:28px;padding:48px 44px;overflow:hidden}
 .mmww .hero:before,.mmww .hero:after{content:"";position:absolute;border-radius:50%;background:#fff;opacity:.55}
 .mmww .hero:before{width:260px;height:260px;right:-80px;top:-90px}
 .mmww .hero:after{width:160px;height:160px;left:-50px;bottom:-60px}
 .mmww .hero>*{position:relative;z-index:1}
-.mmww h1{font-size:clamp(2.2rem,4.6vw,3.4rem);line-height:1.05;margin:0 0 16px}
+.mmww h1{font-size:clamp(2.1rem,4vw,3rem);line-height:1.05;margin:0 0 16px}
 .mmww .dek{font-size:1.06em}
 .mmww .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
 .mmww .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:999px;padding:13px 26px;font-size:.95em;transition:transform .15s}
@@ -44,12 +44,12 @@ CSS = """
 .mmww .btn.p{background:var(--pink);color:#fff;box-shadow:0 6px 16px rgba(224,95,134,.35)}
 .mmww .btn.s{background:#fff;color:var(--ink);border:2px solid var(--ink)}
 .mmww .fan{position:relative;height:430px}
-.mmww .fan .c{position:absolute;width:52%;left:24%;top:30px;border-radius:12px;box-shadow:0 14px 30px rgba(31,47,92,.25);border:5px solid #fff;background:#fff}
-.mmww .fan .c0{transform:rotate(-16deg) translate(-62%,26px)}
-.mmww .fan .c1{transform:rotate(-8deg) translate(-31%,6px)}
+.mmww .fan .c{position:absolute;width:44%;left:28%;top:34px;border-radius:12px;box-shadow:0 14px 30px rgba(31,47,92,.25);border:5px solid #fff;background:#fff}
+.mmww .fan .c0{transform:rotate(-16deg) translate(-56%,24px)}
+.mmww .fan .c1{transform:rotate(-8deg) translate(-28%,6px)}
 .mmww .fan .c2{transform:rotate(0);z-index:3}
-.mmww .fan .c3{transform:rotate(8deg) translate(31%,6px)}
-.mmww .fan .c4{transform:rotate(16deg) translate(62%,26px)}
+.mmww .fan .c3{transform:rotate(8deg) translate(28%,6px)}
+.mmww .fan .c4{transform:rotate(16deg) translate(56%,24px)}
 .mmww .fan .c1,.mmww .fan .c3{z-index:2}
 .mmww .intro{text-align:center;max-width:720px;margin:44px auto 8px;font-size:1.08em}
 .mmww .intro .h{color:var(--pink);font-family:'Caprasimo',Georgia,serif;font-size:1.3em}
@@ -72,7 +72,7 @@ CSS = """
 .mmww .logos{background:var(--ink);border-radius:24px;padding:26px 24px 22px;margin:44px 0;text-align:center}
 .mmww .logos .ey{background:var(--pink)}
 .mmww .lg{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
-.mmww .lg img{height:54px;width:auto;max-width:150px;object-fit:contain;background:#fff;border-radius:12px;padding:8px 14px}
+.mmww .lg img{height:60px;width:116px;object-fit:contain;background:#fff;border-radius:12px;padding:8px 12px}
 .mmww .faq{margin:44px 0}
 .mmww .faq>h2{text-align:center;margin-bottom:18px}
 .mmww details{background:#fff;border:2px solid var(--line);border-radius:18px;margin:0 0 12px;overflow:hidden}
@@ -93,12 +93,12 @@ CSS = """
  .mmww{font-size:16px}
  .mmww .hero{grid-template-columns:1fr;padding:34px 22px 18px;text-align:center}
  .mmww .btns{justify-content:center}
- .mmww .fan{height:320px;max-width:400px;margin:0 auto;width:100%}
+ .mmww .fan{height:270px;max-width:400px;margin:0 auto;width:100%}
  .mmww .fan .c{width:50%;left:25%;top:20px}
  .mmww .sec{grid-template-columns:1fr;padding:26px 22px;gap:12px}
  .mmww .sec .ic{width:58px;height:58px}
  .mmww .grid{grid-template-columns:1fr}
- .mmww .lg img{height:44px;max-width:120px;padding:6px 10px}
+ .mmww .lg img{height:48px;width:96px;padding:6px 8px}
 }
 """
 
