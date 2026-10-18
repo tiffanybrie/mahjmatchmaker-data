@@ -55,10 +55,11 @@ def mat_crop(im):
     return im.crop((0, H - ch, cw, H))
 
 # --- tile images (album tile shots; holiday sets use their studio pile shots)
-TILE = {'cypress-forest': 'assets/tiles/album/cypress.jpg', 'tortoise': 'assets/tiles/album/classic-tortoise-zoom.jpg',
+TILE = {'cypress-forest': 'assets/tiles/album/cypress.jpg', 'tortoise': 'assets/tiles/album/classic-tortoise.png',
         'december-1994': 'assets/tiles/sunday_mahjong_december_1994_tilebox_CARD-ONLY-edited.jpg',
-        'sunday': 'assets/tiles/sunday-tile-set.png',
+        'sunday': 'assets/tiles/album/sunday-tile-set.png',
         'holly-jolly-red': 'assets/tiles/holiday/holly-jolly-red-pile.jpg', 'holly-jolly-pink': 'assets/tiles/holiday/holly-jolly-pink-pile.jpg'}  # Tiffany Oct 15: Bam!'s pile shots
+LOOSE_T = {'tortoise', 'hummingbird'}  # Oct 17: transparent tiles lie loose on the mat, no tile box
 def tile_image(g):
     t = g['t']
     if t in TILE and os.path.exists(R + TILE[t]): return R + TILE[t]
@@ -102,7 +103,8 @@ COLS = json.load(open(R + 'scripts/albumcard/holiday_title_colors.json')) if os.
 SKIP = {'omm-dapper-1', 'omm-dapper-2', 'britt-crimson-harvest', 'christmas-solo-play-mahjong-mat', 'snowflake-reindeer-lodge-double-sided-leatherette-mahjong-ma'}
 jobs = []; manifest = []
 for g in D['G']:
-    tile = tile_image(g); tileuri = uri(tile, maxs=800) if isinstance(tile, str) else uri(tile)
+    tile = tile_image(g); loose = g['t'] in LOOSE_T
+    tileuri = uri(tile, 'PNG' if loose else 'JPEG', maxs=900 if loose else 800) if isinstance(tile, str) else uri(tile, 'PNG' if loose else 'JPEG')
     for i, r in enumerate(g['rows']):
         if r['m'] in SKIP: continue
         if only and f"{g['t']}:{r['m']}" not in only: continue
@@ -147,7 +149,7 @@ for g in D['G']:
         slug = re.sub(r'[^a-z0-9]+', '-', f"{g['t']}-mahjong-tiles-{r['b']}-{mname}-mat".lower()).strip('-')
         fn = slug + '.jpg'
         tl = RKS.tile_logo(g.get('b')); tl = uri(tl, 'PNG', maxs=500) if tl else None  # tile set logo flag (Oct 15 evening)
-        h = html_tpl.replace('__DATA__', json.dumps({'tlogo': tl, 'title': title, 'col': col, 'mat': uri(mat, maxs=1400), 'tile': tileuri,
+        h = html_tpl.replace('__DATA__', json.dumps({'loose': loose, 'tlogo': tl, 'title': title, 'col': col, 'mat': uri(mat, maxs=1400), 'tile': tileuri,
             'racks': drawn, 'bb': chart[:3], 'mr': mr[:2], 'bblogo': BBLOGO, 'navy': NAVY, 'code': footer(r['b'], g['t']), 'hol': True, 'flame': FLAME}))
         hf = f"/tmp/holcards/html/{slug}.html"; open(hf, 'w').write(h)
         jobs.append((hf, os.path.join(out, fn)))

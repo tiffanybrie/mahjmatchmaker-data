@@ -37,8 +37,9 @@
   "pileAR": "582/700"
  },
  "Classic Tortoise": {
-  "file": "assets/tiles/album/classic-tortoise-zoom.jpg",
-  "note": "interim zoomed crop; replace with Tiffany pile photo"
+  "file": "assets/tiles/album/classic-tortoise.png",
+  "tile_mode": "loose",
+  "note": "Oct 17 Tiffany: transparent tiles lie loose on the mat, no tile box (her original Tortoise album cards)"
  },
  "Osler": {
   "file": "assets/tiles/album/osler.jpg"
@@ -140,7 +141,9 @@
   "file": "assets/tiles/album/hummingbird.png",
   "pileW": "62%",
   "pileBottom": "0px",
-  "pileAR": "865/863"
+  "pileAR": "865/863",
+  "tile_mode": "loose",
+  "note": "Oct 17 Tiffany: transparent, no box, lies on the mat like Classic Tortoise"
  },
  "Papaya Spritz": {
   "file": "assets/tiles/album/papaya-spritz.jpg"

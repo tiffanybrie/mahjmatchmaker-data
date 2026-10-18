@@ -32,6 +32,9 @@
 #flag img{max-width:100%;max-height:100%}
 #tile{position:absolute;left:658px;top:583px;width:422px;height:526px;border:9px solid #fff;border-right:0;border-bottom:0;border-top-left-radius:34px;overflow:hidden;background:#fff}
 #tile img{width:100%;height:100%;object-fit:cover}
+#tile.loose{left:390px;top:215px;width:690px;height:880px;border:0;border-radius:0;background:transparent;overflow:visible;z-index:1}
+#tile.loose img{object-fit:contain;filter:drop-shadow(6px 10px 8px rgba(0,0,0,.35))}
+#racks{position:absolute;left:0;top:0;width:1080px;height:1350px;z-index:2}#bb{z-index:2}#flag,#navy{z-index:3}#t,#f{position:absolute;z-index:3}
 #navy{position:absolute;left:658px;top:1106px;width:422px;height:136px;object-fit:cover}
 #f{position:absolute;top:1242px;left:0;width:1080px;height:108px;display:flex;align-items:center;justify-content:center;font:82px/1 Alfa;color:#2a4aa1;letter-spacing:-.03em;white-space:nowrap;
  text-shadow:3px 3px 0 #fff,-3px -3px 0 #fff,3px -3px 0 #fff,-3px 3px 0 #fff}
@@ -46,7 +49,7 @@ const f=document.getElementById('f');f.innerHTML='<span id="fs">'+D.code+'</span
 window.fit=()=>{const ts=document.getElementById('ts');let fs=parseFloat(getComputedStyle(t).fontSize);while(ts.offsetWidth>1040&&fs>30){fs-=2;t.style.fontSize=fs+'px'}  // Oct 16: min 30 so the longest holiday titles fit on one line
  const fsn=document.getElementById('fs');let ff=82;f.style.fontSize=ff+'px';while(fsn.offsetWidth>1050&&ff>30){ff-=2;f.style.fontSize=ff+'px'}};
 document.getElementById('mat').style.backgroundImage=`url(${D.mat})`;
-document.querySelector('#tile img').src=D.tile;document.getElementById('navy').src=D.navy;
+document.querySelector('#tile img').src=D.tile;if(D.loose)document.getElementById('tile').classList.add('loose');document.getElementById('navy').src=D.navy;
 const bb=document.getElementById('bb');if(D.bb.length||(D.mr||[]).length){const g=document.createElement('div');g.className='grp';g.textContent='MATCH THE MAT';bb.appendChild(g)}
 // Oct 15 evening: no rack-brand logos here; B&B picks = colour bars named in full, other brands = the real rack photo (no white box) + small name pill
 D.bb.forEach(x=>{const r=document.createElement('div');r.className='bar';r.style.backgroundColor=x.hex;r.textContent='Bird & Bamboo '+x.name;if(x.light)r.style.color='#2b2b2b',r.style.textShadow='none';bb.appendChild(r)});
