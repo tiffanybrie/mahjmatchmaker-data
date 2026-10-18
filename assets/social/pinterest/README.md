@@ -21,3 +21,4 @@ Approvals she needs to give:
 - I didn't create "Mahjong Gift Ideas" because she already has a board with that exact name. I left her existing boards untouched.
 - On the OMM board, I left out the "by a certified Oh My Mahjong instructor" clause because I couldn't verify it.
 - The profile name, bio and photo are unchanged, and no pins were posted.
+- Oct 18: match pins reworked per Tiffany: headline '[N] mats that match [set] tiles', CTA 'See all [N] of [set]'s matches', #1 pick shown as an example. Counts from live albums (scripts/pinterest/album_counts_oct18.json). Media URLs pinned to db299d7.
