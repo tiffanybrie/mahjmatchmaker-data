@@ -1,0 +1,592 @@
+{
+ "_note": "Papaya Spritz album (Oct 18, Tiffany). Order = Ready to Ship group c5-papaya-order (her saved db order wins). Zoom = crop closer on the mat for these cards. 'Enchanted' applied to both the retired and current Enchanted; confirm which she meant.",
+ "order": [
+  {
+   "id": "cc-pre-order-zesty-plume-copy",
+   "name": "Greenly",
+   "brand": "Mahj & Vine",
+   "tier": "TOP",
+   "pos": 1,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_29.jpg",
+   "blob": "/_blob/5f6e0627d13de92ac3617097ce3209d6"
+  },
+  {
+   "id": "ret-goldie",
+   "name": "Goldie (retired)",
+   "brand": "Oh My Mahjong",
+   "tier": "TOP",
+   "pos": 2,
+   "img": "assets/mats/omm-retired/goldie.jpg",
+   "blob": "/_blob/e5c3ae8b7e345c38d4dbdc0b2c7e8330"
+  },
+  {
+   "id": "PPG",
+   "name": "Preppy Pink Garden",
+   "brand": "Bespoke Mahjong",
+   "tier": "TOP",
+   "pos": 3,
+   "img": "assets/mats/bespoke-mahjong/preppy-pink-garden.jpg",
+   "blob": "/_blob/224e4afa3bdb0fd83af07d1d95cefdb4"
+  },
+  {
+   "id": "cc-heiress-scalloped-neoprene-mahjong-mat",
+   "name": "Heiress",
+   "brand": "Britt Mills",
+   "tier": "TOP",
+   "pos": 4,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/45.jpg",
+   "blob": "/_blob/74458fba0788961ed50df3dde7bda736",
+   "mat_crop": [
+    255,
+    257,
+    1340,
+    1342
+   ]
+  },
+  {
+   "id": "cc-press-for-mahjong-mat",
+   "name": "Press for Mahjong",
+   "brand": "Anders Ruff",
+   "tier": "TOP",
+   "pos": 5,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_94.jpg",
+   "blob": "/_blob/655f53707da349ff2e540058a41a51cf"
+  },
+  {
+   "id": "cc-vivienne-mat-in-tube",
+   "name": "Vivienne",
+   "brand": "Oh My Mahjong",
+   "tier": "TOP",
+   "pos": 6,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_0.jpg",
+   "blob": "/_blob/7cf182c6a935998c7d051cd9eef5f162"
+  },
+  {
+   "id": "cc-savannah-leatherette-mahjong-mat",
+   "name": "Savannah",
+   "brand": "Britt Mills",
+   "tier": "TOP",
+   "pos": 7,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/74.jpg",
+   "blob": "/_blob/fe62dc741599a76227c2ad19c93949e8",
+   "mat_crop": [
+    256,
+    256,
+    1343,
+    1343
+   ]
+  },
+  {
+   "id": "cc-larkspur-mat-in-tube",
+   "name": "Larkspur",
+   "brand": "Oh My Mahjong",
+   "tier": "TOP",
+   "pos": 8,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_1.jpg",
+   "blob": "/_blob/f2c935ba1ae99be5fee59e050b75a81c"
+  },
+  {
+   "id": "cc-coralia",
+   "name": "Coralia",
+   "brand": "Virora Mahjong",
+   "tier": "TOP",
+   "pos": 9,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_97.jpg",
+   "blob": "/_blob/cab2ebc74b5160dd9e5818209c149823",
+   "mat_crop": [
+    236,
+    276,
+    1237,
+    1277
+   ]
+  },
+  {
+   "id": "cc-flora-belle-mahjong-mat",
+   "name": "Flora Belle",
+   "brand": "Anders Ruff",
+   "tier": "TOP",
+   "pos": 10,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_72.jpg",
+   "blob": "/_blob/c07b3bf6bb22d73c4e4e9ac1b1172613",
+   "mat_crop": [
+    200,
+    200,
+    1050,
+    1050
+   ]
+  },
+  {
+   "id": "cc-haven-neoprene-mahjong-mat",
+   "name": "Haven",
+   "brand": "Britt Mills",
+   "tier": "TOP",
+   "pos": 11,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/68.jpg",
+   "blob": "/_blob/d1124ac0e1e76e5f3d07bfc96411cd02",
+   "mat_crop": [
+    256,
+    256,
+    1344,
+    1344
+   ]
+  },
+  {
+   "id": "cc-sedona-mat-in-tube",
+   "name": "Sedona",
+   "brand": "Oh My Mahjong",
+   "tier": "BEST",
+   "pos": 12,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_84.jpg",
+   "blob": "/_blob/c86ccd8c2983e8d824cb445d73fafc22",
+   "mat_crop": [
+    221,
+    233,
+    1162,
+    1174
+   ]
+  },
+  {
+   "id": "cc-leopard-animal-print-american-mahjong-mat",
+   "name": "Leopard American",
+   "brand": "Mahj & Moon",
+   "tier": "BEST",
+   "pos": 13,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/82.jpg",
+   "blob": "/_blob/22dce5d3a2481702ca272a5706b799d3"
+  },
+  {
+   "id": "cc-retro-waves-mahjong-mat",
+   "name": "Retro Waves",
+   "brand": "Mahj & Moon",
+   "tier": "BEST",
+   "pos": 14,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/142.jpg",
+   "blob": "/_blob/d094e7febfcaab2b4c28150ab4e4e64d"
+  },
+  {
+   "id": "cc-grand-garden-estate-mahjong-mat",
+   "name": "Grand Garden Estate",
+   "brand": "Mahj & Moon",
+   "tier": "BEST",
+   "pos": 15,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/159.jpg",
+   "blob": "/_blob/1548c71c06c8df8913d8d31a9130014c"
+  },
+  {
+   "id": "cc-neoprene-mat",
+   "name": "Classic in Lavender",
+   "brand": "Bam Bird Boutique",
+   "tier": "BEST",
+   "pos": 16,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/165.jpg",
+   "blob": "/_blob/285312878c4388c1d056c9fa3997569f"
+  },
+  {
+   "id": "cc-fruit-stand-citrus-mat",
+   "name": "Fruit Stand",
+   "brand": "Middle & Main Mahjong",
+   "tier": "BEST",
+   "pos": 17,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_28.jpg",
+   "blob": "/_blob/c3731f9bcc5b5c54f34c1825a1c2abf0"
+  },
+  {
+   "id": "cc-cheetah-couture",
+   "name": "Cheetah Couture",
+   "brand": "Bespoke Mahjong",
+   "tier": "BEST",
+   "pos": 18,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_32.jpg",
+   "blob": "/_blob/ace1c3b97df83a89826f60d49064bcb7"
+  },
+  {
+   "id": "cc-simply-scalloped-neoprene-mahjong-mat",
+   "name": "Simply Scalloped",
+   "brand": "Bam Bird Boutique",
+   "tier": "BEST",
+   "pos": 19,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_35.jpg",
+   "blob": "/_blob/dfd230b438e88ca35ca423ba40206049"
+  },
+  {
+   "id": "cc-the-paradise-mahjong-mat-blue-bliss-copy",
+   "name": "Paradise Lovely Lavender",
+   "brand": "Bird & Bamboo",
+   "tier": "BEST",
+   "pos": 20,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_39.jpg",
+   "blob": "/_blob/5c553ef848ec80f01ac347c83480d436"
+  },
+  {
+   "id": "cc-the-paradise-mahjong-mat-blue-bliss",
+   "name": "Paradise Blue Bliss",
+   "brand": "Bird & Bamboo",
+   "tier": "BEST",
+   "pos": 21,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_52.jpg",
+   "blob": "/_blob/4a708ff1d06dd2901c5ba7433a50276c"
+  },
+  {
+   "id": "cc-the-danay-mahjong-mat",
+   "name": "Danay",
+   "brand": "Bird & Bamboo",
+   "tier": "BEST",
+   "pos": 22,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_63.jpg",
+   "blob": "/_blob/f2fa5830d601d80037b0b9165bdd9a8f"
+  },
+  {
+   "id": "cc-pre-order-coral-orchard-copy",
+   "name": "Sapphire Soirée",
+   "brand": "Mahj & Vine",
+   "tier": "BEST",
+   "pos": 23,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_87.jpg",
+   "blob": "/_blob/0c14880688aaaf635a3e7b387f628813"
+  },
+  {
+   "id": "cc-bams-bubbly-mahjong-mat",
+   "name": "Bams & Bubbly",
+   "brand": "Anders Ruff",
+   "tier": "BEST",
+   "pos": 24,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_96.jpg",
+   "blob": "/_blob/d80233e27c447a9c6f09dd8e22a8d1d6"
+  },
+  {
+   "id": "cc-the-tangelo-delphine-mahjong-mat",
+   "name": "Tangelo Delphine",
+   "brand": "Bird & Bamboo",
+   "tier": "BEST",
+   "pos": 25,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_119.jpg",
+   "blob": "/_blob/7dd538d078922d320887a3ba245f2bfd"
+  },
+  {
+   "id": "cc-year-of-the-dragon-mat-plum",
+   "name": "YOTD Plum",
+   "brand": "Bespoke Mahjong",
+   "tier": "BEST",
+   "pos": 26,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_121.jpg",
+   "blob": "/_blob/ce522c757ba91fe085aadf511941d647"
+  },
+  {
+   "id": "cc-anastasia-mat-in-tube",
+   "name": "Anastasia",
+   "brand": "Oh My Mahjong",
+   "tier": "MORE",
+   "pos": 27,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/0.jpg",
+   "blob": "/_blob/d5c2874c425b35bf773d566894ccf090"
+  },
+  {
+   "id": "cc-chantilly-mat",
+   "name": "Chantilly",
+   "brand": "Oh My Mahjong",
+   "tier": "MORE",
+   "pos": 28,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/1.jpg",
+   "blob": "/_blob/710bb49f44a496944036ee6565a90925"
+  },
+  {
+   "id": "ret-enchanted",
+   "name": "Enchanted (retired)",
+   "brand": "Oh My Mahjong",
+   "tier": "MORE",
+   "pos": 29,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/9.jpg",
+   "blob": "/_blob/5b69743bb180e92e01732966f5674a9c",
+   "mat_crop": [
+    257,
+    256,
+    1342,
+    1341
+   ]
+  },
+  {
+   "id": "ret-spring-fling",
+   "name": "Spring Fling (retired)",
+   "brand": "Oh My Mahjong",
+   "tier": "MORE",
+   "pos": 30,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/21.jpg",
+   "blob": "/_blob/ee9431b902b84104f48d78e7d8fc945d"
+  },
+  {
+   "id": "ret-sweet-marie",
+   "name": "Sweet Marie (retired)",
+   "brand": "Oh My Mahjong",
+   "tier": "MORE",
+   "pos": 31,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/22.jpg",
+   "blob": "/_blob/d289380c06ae0af6a37e259613f0c5f3"
+  },
+  {
+   "id": "ret-zen-glow",
+   "name": "Zen Glow (retired)",
+   "brand": "Oh My Mahjong",
+   "tier": "MORE",
+   "pos": 32,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/23.jpg",
+   "blob": "/_blob/c5098d80f0e205197a52d416d941e3d5"
+  },
+  {
+   "id": "cc-revelry-leatherette-mahjong-mat",
+   "name": "Revelry",
+   "brand": "Britt Mills",
+   "tier": "MORE",
+   "pos": 33,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/37.jpg",
+   "blob": "/_blob/90dea56d136125f0c11a9f343f14cdc7"
+  },
+  {
+   "id": "cc-regency-scalloped-neoprene-mahjong-mat",
+   "name": "Regency Scalloped",
+   "brand": "Britt Mills",
+   "tier": "MORE",
+   "pos": 34,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/40.jpg",
+   "blob": "/_blob/98f2f78ec9d005a75a78e38d65a72696"
+  },
+  {
+   "id": "cc-regal-bloom-neoprene-mahjong-mat",
+   "name": "Regal Bloom",
+   "brand": "Britt Mills",
+   "tier": "MORE",
+   "pos": 35,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/50.jpg",
+   "blob": "/_blob/c2bbfdb7b5fcadb0da088aaeca9e8090"
+  },
+  {
+   "id": "cc-scarlett-neoprene-mahjong-mat",
+   "name": "Scarlett",
+   "brand": "Britt Mills",
+   "tier": "MORE",
+   "pos": 36,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/53.jpg",
+   "blob": "/_blob/2a1c574ea34fce3cbb5870a903777c79",
+   "mat_crop": [
+    256,
+    256,
+    1344,
+    1344
+   ]
+  },
+  {
+   "id": "cc-colorful-chinoiserie-britt-mills-mahjong-mat",
+   "name": "Colorful Chinoiserie",
+   "brand": "Britt Mills",
+   "tier": "MORE",
+   "pos": 37,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/57.jpg",
+   "blob": "/_blob/a7127a1081ddd76b519b24eeb27b3aa9"
+  },
+  {
+   "id": "cc-enchanted-leatherette-mahjong-mat",
+   "name": "Enchanted",
+   "brand": "Britt Mills",
+   "tier": "MORE",
+   "pos": 38,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/62.jpg",
+   "blob": "/_blob/0a8d66377e2b6f3255cc48a0bd20d191",
+   "mat_crop": [
+    258,
+    255,
+    1341,
+    1338
+   ]
+  },
+  {
+   "id": "cc-chinoiserie-song-bird",
+   "name": "Chinoiserie Songbird",
+   "brand": "Mahj & Vine",
+   "tier": "MORE",
+   "pos": 39,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_12.jpg",
+   "blob": "/_blob/1a0954a9aaf036380f714735f48491f8"
+  },
+  {
+   "id": "cc-delilah-mat-in-tube",
+   "name": "Delilah",
+   "brand": "Oh My Mahjong",
+   "tier": "MORE",
+   "pos": 40,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_16.jpg",
+   "blob": "/_blob/9b9d57520ed33fabe7a3f439da2bc402"
+  },
+  {
+   "id": "cc-georgia-mat",
+   "name": "Peaches 'n Cream",
+   "brand": "Middle & Main Mahjong",
+   "tier": "MORE",
+   "pos": 41,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_30.jpg",
+   "blob": "/_blob/2cb956ecb7b556ea285d5995d32e8165"
+  },
+  {
+   "id": "cc-year-of-the-dragon-mat-periwinkle",
+   "name": "YOTD Periwinkle",
+   "brand": "Bespoke Mahjong",
+   "tier": "MORE",
+   "pos": 42,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_31.jpg",
+   "blob": "/_blob/9ad4c57e6ba4af87edd7ca2252222b22"
+  },
+  {
+   "id": "cc-boots-bubbles-neoprene-mahjong-mat",
+   "name": "Boots & Bubbles in Periwinkle",
+   "brand": "Bam Bird Boutique",
+   "tier": "MORE",
+   "pos": 43,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_41.jpg",
+   "blob": "/_blob/0ac57745f6edda60feea0881599edc0d"
+  },
+  {
+   "id": "cc-mat-tropical-palm",
+   "name": "Tropical Palm",
+   "brand": "My Fair Mahjong",
+   "tier": "MORE",
+   "pos": 44,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_54.jpg",
+   "blob": "/_blob/4f25d10e1a726e7c5fa7176cca823501"
+  },
+  {
+   "id": "cc-mahjong-mat-brightside-33-x-33",
+   "name": "Brightside",
+   "brand": "My Fair Mahjong",
+   "tier": "MORE",
+   "pos": 45,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_60.jpg",
+   "blob": "/_blob/638fb1e667ecaf88b02f746590600f65"
+  },
+  {
+   "id": "cc-garden-hydrangea-mahjong-mat",
+   "name": "Garden Hydrangea",
+   "brand": "Anders Ruff",
+   "tier": "MORE",
+   "pos": 46,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_66.jpg",
+   "blob": "/_blob/4033a5ef9efb74fbfb26abc9db46d46a"
+  },
+  {
+   "id": "cc-color-splash-mat",
+   "name": "Color Splash",
+   "brand": "Mahj Mood",
+   "tier": "MORE",
+   "pos": 47,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_71.jpg",
+   "blob": "/_blob/b9806f355b2a1e9b0f19145270f91f09"
+  },
+  {
+   "id": "cc-pre-order-sunset-swirl-copy",
+   "name": "Coral Orchard",
+   "brand": "Mahj & Vine",
+   "tier": "MORE",
+   "pos": 48,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_77.jpg",
+   "blob": "/_blob/306b756b281f8d1a85f5239d3b20917f"
+  },
+  {
+   "id": "cc-the-paradise-mahjong-mat-tropical-teal",
+   "name": "Paradise Tropical Teal",
+   "brand": "Bird & Bamboo",
+   "tier": "MORE",
+   "pos": 49,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_78.jpg",
+   "blob": "/_blob/cc9e2d0dbb61ff038f7e838ca48c6380"
+  },
+  {
+   "id": "cc-hummingbird-hydrangea-mahjong-mat",
+   "name": "Hummingbird Hydrangea",
+   "brand": "Anders Ruff",
+   "tier": "MORE",
+   "pos": 50,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_81.jpg",
+   "blob": "/_blob/e5d6db2bacff917f3e218eb68f057d3e"
+  },
+  {
+   "id": "cc-miss-cowgirl-lasso-mahjong-mat",
+   "name": "Lasso",
+   "brand": "Miss Mahjong",
+   "tier": "MORE",
+   "pos": 51,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_82.jpg",
+   "blob": "/_blob/e6864e01819fc286345a5d027bd58ef0"
+  },
+  {
+   "id": "cc-citrus-grove-copy",
+   "name": "Porcelain Bloom",
+   "brand": "Mahj & Vine",
+   "tier": "MORE",
+   "pos": 52,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_85.jpg",
+   "blob": "/_blob/6be6f9cdebb9834960f13087a4ae1393"
+  },
+  {
+   "id": "cc-bright-abstract-neoprene-mahjong-mat",
+   "name": "Bright Abstract",
+   "brand": "Bam Bird Boutique",
+   "tier": "MORE",
+   "pos": 53,
+   "img": "/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/pap/img/m/r1_101.jpg",
+   "blob": "/_blob/8f03d2fee7a9b5e2398a4cf0b194c643"
+  }
+ ],
+ "zoom": {
+  "Heiress": [
+   255,
+   257,
+   1340,
+   1342
+  ],
+  "Savannah": [
+   256,
+   256,
+   1343,
+   1343
+  ],
+  "Coralia": [
+   236,
+   276,
+   1237,
+   1277
+  ],
+  "Flora Belle": [
+   200,
+   200,
+   1050,
+   1050
+  ],
+  "Haven": [
+   256,
+   256,
+   1344,
+   1344
+  ],
+  "Sedona": [
+   221,
+   233,
+   1162,
+   1174
+  ],
+  "Enchanted (retired)": [
+   257,
+   256,
+   1342,
+   1341
+  ],
+  "Scarlett": [
+   256,
+   256,
+   1344,
+   1344
+  ],
+  "Enchanted": [
+   258,
+   255,
+   1341,
+   1338
+  ]
+ }
+}
