@@ -1,0 +1,68 @@
+{
+ "390": {
+  "sw": [
+   390,
+   390
+  ],
+  "papaya_top": "Greenly",
+  "mc_bin_loaded": 47,
+  "mc_json_loaded": 0,
+  "views": [
+   "tri:Love triangle",
+   "stack:Mood board",
+   "shop:Shop"
+  ],
+  "card_tri": 366,
+  "card_stack": 366,
+  "card_shop": 366,
+  "broken": [],
+  "door_Vivienne_hits": 1,
+  "door_Vivienne_sets": 33,
+  "door_Vivienne_her": 15,
+  "door_Vivienne_broken": 0,
+  "door_Larkspur_hits": 1,
+  "door_Larkspur_sets": 44,
+  "door_Larkspur_her": 28,
+  "door_Larkspur_broken": 0,
+  "door_Goldie_hits": 1,
+  "door_Goldie_sets": 31,
+  "door_Goldie_her": 13,
+  "door_Goldie_broken": 0,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "fails": []
+ },
+ "1280": {
+  "sw": [
+   1280,
+   1280
+  ],
+  "papaya_top": "Greenly",
+  "mc_bin_loaded": 47,
+  "mc_json_loaded": 0,
+  "views": [
+   "tri:Love triangle",
+   "stack:Mood board",
+   "shop:Shop"
+  ],
+  "card_tri": 420,
+  "card_stack": 420,
+  "card_shop": 420,
+  "broken": [],
+  "door_Vivienne_hits": 1,
+  "door_Vivienne_sets": 33,
+  "door_Vivienne_her": 15,
+  "door_Vivienne_broken": 0,
+  "door_Larkspur_hits": 1,
+  "door_Larkspur_sets": 44,
+  "door_Larkspur_her": 28,
+  "door_Larkspur_broken": 0,
+  "door_Goldie_hits": 1,
+  "door_Goldie_sets": 31,
+  "door_Goldie_her": 13,
+  "door_Goldie_broken": 0,
+  "errs": [],
+  "fails": []
+ }
+}
