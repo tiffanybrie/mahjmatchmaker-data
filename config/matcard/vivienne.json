@@ -110,7 +110,7 @@
    "Miss Mahjong Cornflower Blue Scalloped"
   ]
  ],
- "rackNote": "Painted wood: Bird &amp; Bamboo \u00b7 Peace Love Mahjong<br>Beechwood: Middle &amp; Main \u00b7 Acrylic: Miss Mahjong",
+ "rackNote": "Painted wood: Bird &amp; Bamboo · Peace Love Mahjong<br>Beechwood: Middle &amp; Main · Acrylic: Miss Mahjong",
  "tiles": [],
  "tiles_omm": [
   "Pippa",
@@ -160,5 +160,23 @@
   ]
  },
  "cards_src": "assets/launches/omm-vivienne-mat/cards/ (the reviewed set, artifact TkyPYbCSWdnwY2LsF12zpd)",
- "_note_hummingbird": "Oct 17: Hummingbird removed. It was added by Claude's color pass for the all-brands version, not one of Tiffany's picks."
+ "_note_hummingbird": "Oct 18 correction: Hummingbird WAS Tiffany's yes in the Vivienne swipe book (Oct 13, with her note about the soft greens), not Claude-added. Not starred, not in her written top 6 -> BEST tier in the Vivienne album (scripts/albumcard/specs/vivienne_build.py).",
+ "tiles_ranked": [
+  "Pippa",
+  "Solara",
+  "Coquette",
+  "Spring Love (retired)",
+  "Jade",
+  "Papaya Spritz",
+  "Pearlescent",
+  "Amara",
+  "Sorbet",
+  "Willow",
+  "Luminaire",
+  "Taylor",
+  "Hummingbird",
+  "Palm Royale",
+  "Tortoise",
+  "Moonlight"
+ ]
 }

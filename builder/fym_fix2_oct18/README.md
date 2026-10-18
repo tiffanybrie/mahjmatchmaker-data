@@ -10,3 +10,6 @@ Verified locally with the audit scripts (fymfix2/ascripts, pointed at the new bu
 - rule2: 0 album cards not shown as hers; 4 "unsupported" on Dec 1994 are in her saved Dec 1994 album order
 - racks_eval: 0 B&B woods, 0 hidden racks, 0 OMM-on-non-OMM, 0 18" on large tiles
 - flows: undo clears mocked mat (390+1280); swipe-card full-screen opens (390+1280); no console errors; no sideways scroll
+
+## Oct 18 afternoon: mat-edition patch
+After building, run `python3 builder/fym_mated_oct18/patch.py` (Vivienne/Larkspur/Peony door order + Vivienne pairings). Already applied once to build/index.html (backup: scratchpad/fymfix2/index_pre_mated.html).
