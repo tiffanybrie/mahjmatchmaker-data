@@ -1,0 +1,175 @@
+"""Build the styled Work With page code block (Oct 18). Copy is Tiffany's approved v2, verbatim.
+Run: python3 site/livepatch/workwith/build.py <commit>  -> workwith.html + preview.html"""
+import sys, json, os
+R = '/home/claude/mahjmatchmaker-data/'
+C = sys.argv[1]
+J = f'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@{C}/'
+CARDS = [
+ 'assets/cards/vivienne/pippa-mahjong-tiles-oh-my-mahjong-vivienne-mat.jpg',
+ 'assets/cards/papaya-spritz/papaya-spritz-mahjong-tiles-anders-ruff-press-for-mahjong-mat.jpg',
+ 'assets/cards/papaya-spritz/papaya-spritz-mahjong-tiles-britt-mills-heiress-mat.jpg',
+ 'assets/cards/papaya-spritz/papaya-spritz-mahjong-tiles-mahj-and-vine-greenly-mat.jpg',
+ 'assets/cards/vivienne/solara-mahjong-tiles-oh-my-mahjong-vivienne-mat.jpg',
+]
+LOGOS = json.load(open(R + 'builder/logos/map.json'))
+SHOW = ['Oh My Mahjong', 'Britt Mills', 'Bird & Bamboo', 'Anders Ruff', 'Mahj & Vine', 'Miss Mahjong', 'Peace Love Mahjong',
+        'Mahj Mood', 'Bespoke Mahjong', 'Middle & Main Mahjong', 'Splash of Color', 'Mahj Squad', 'Tigre de Tartan',
+        'My Fair Mahjong', 'Hip Hip Mahjong', 'Bam Bird Boutique', 'Charleston Mahjong Club', 'Amahj']
+urls = [J + c for c in CARDS] + [J + 'builder/logos/' + LOGOS[b] for b in SHOW]
+
+fan = ''.join(f'<img class="c c{i}" src="{J}{c}" alt="Mahj Matchmaker match card" loading="{"eager" if i==2 else "lazy"}">' for i, c in enumerate(CARDS))
+logos = ''.join(f'<img src="{J}builder/logos/{LOGOS[b]}" alt="{b}" loading="lazy">' for b in SHOW)
+heart = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.9 4.5c2.1 0 3.6 1.2 5.1 3 1.5-1.8 3-3 5.1-3 3.9 0 6 3.9 4.5 7.3C19.5 16.4 12 21 12 21z"/></svg>'
+ic_tag = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9zm5-5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>'
+ic_star = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.2l7.1-.6z"/></svg>'
+ic_book = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4zm16 0h-4a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h5z"/></svg>'
+
+CSS = """
+.mmww{--ink:#1f2f5c;--pink:#e05f86;--rose:#c8456f;--blush:#fdeef3;--cream:#fbf6ee;--line:#f0d9e1;color:var(--ink);font-family:inherit;line-height:1.65;font-size:17px;max-width:1100px;margin:0 auto}
+.mmww *{box-sizing:border-box}
+.mmww h1,.mmww h2,.mmww h3{font-family:'Caprasimo',Georgia,serif;font-weight:400;color:var(--pink);letter-spacing:-.01em;margin:0}
+.mmww p{margin:0 0 12px;color:var(--ink)}
+.mmww a{color:var(--rose)}
+.mmww .ey{display:inline-block;text-transform:uppercase;letter-spacing:.18em;font-size:.72em;font-weight:700;color:#fff;background:var(--ink);border-radius:999px;padding:6px 14px 5px;margin:0 0 16px}
+.mmww .hero{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:28px;align-items:center;background:var(--blush);border-radius:28px;padding:48px 44px;overflow:hidden}
+.mmww .hero:before,.mmww .hero:after{content:"";position:absolute;border-radius:50%;background:#fff;opacity:.55}
+.mmww .hero:before{width:260px;height:260px;right:-80px;top:-90px}
+.mmww .hero:after{width:160px;height:160px;left:-50px;bottom:-60px}
+.mmww .hero>*{position:relative;z-index:1}
+.mmww h1{font-size:clamp(2.2rem,4.6vw,3.4rem);line-height:1.05;margin:0 0 16px}
+.mmww .dek{font-size:1.06em}
+.mmww .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.mmww .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:999px;padding:13px 26px;font-size:.95em;transition:transform .15s}
+.mmww .btn:hover{transform:translateY(-2px)}
+.mmww .btn.p{background:var(--pink);color:#fff;box-shadow:0 6px 16px rgba(224,95,134,.35)}
+.mmww .btn.s{background:#fff;color:var(--ink);border:2px solid var(--ink)}
+.mmww .fan{position:relative;height:430px}
+.mmww .fan .c{position:absolute;width:52%;left:24%;top:30px;border-radius:12px;box-shadow:0 14px 30px rgba(31,47,92,.25);border:5px solid #fff;background:#fff}
+.mmww .fan .c0{transform:rotate(-16deg) translate(-62%,26px)}
+.mmww .fan .c1{transform:rotate(-8deg) translate(-31%,6px)}
+.mmww .fan .c2{transform:rotate(0);z-index:3}
+.mmww .fan .c3{transform:rotate(8deg) translate(31%,6px)}
+.mmww .fan .c4{transform:rotate(16deg) translate(62%,26px)}
+.mmww .fan .c1,.mmww .fan .c3{z-index:2}
+.mmww .intro{text-align:center;max-width:720px;margin:44px auto 8px;font-size:1.08em}
+.mmww .intro .h{color:var(--pink);font-family:'Caprasimo',Georgia,serif;font-size:1.3em}
+.mmww .sec{display:grid;grid-template-columns:72px 1fr;gap:22px;align-items:start;background:#fff;border:2px solid var(--line);border-radius:24px;padding:32px 34px;margin:26px 0}
+.mmww .sec .ic{width:72px;height:72px;border-radius:50%;background:var(--blush);display:flex;align-items:center;justify-content:center}
+.mmww .sec .ic svg{width:34px;height:34px;fill:var(--pink)}
+.mmww h2{font-size:clamp(1.55rem,2.6vw,2rem);line-height:1.15;margin:0 0 12px}
+.mmww .badge{display:inline-block;background:var(--pink);color:#fff;font-weight:700;font-size:.62em;letter-spacing:.12em;text-transform:uppercase;border-radius:999px;padding:5px 12px 4px;vertical-align:middle;margin-left:8px;font-family:inherit}
+.mmww .code{display:inline-block;background:var(--ink);color:#fff;font-weight:800;letter-spacing:.08em;border-radius:6px;padding:0 8px}
+.mmww .ways{margin:44px 0}
+.mmww .ways>h2{text-align:center;margin-bottom:22px}
+.mmww .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.mmww .card{background:var(--cream);border-radius:22px;padding:26px 24px;position:relative;border-top:6px solid var(--pink)}
+.mmww .card:nth-child(2){border-top-color:var(--ink)}
+.mmww .card .ic{width:48px;height:48px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.mmww .card .ic svg{width:24px;height:24px;fill:var(--pink)}
+.mmww .card:nth-child(2) .ic svg{fill:var(--ink)}
+.mmww h3{font-size:1.3rem;line-height:1.2;margin:0 0 8px}
+.mmww .card p{font-size:.96em;margin:0}
+.mmww .logos{background:var(--ink);border-radius:24px;padding:26px 24px 22px;margin:44px 0;text-align:center}
+.mmww .logos .ey{background:var(--pink)}
+.mmww .lg{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.mmww .lg img{height:54px;width:auto;max-width:150px;object-fit:contain;background:#fff;border-radius:12px;padding:8px 14px}
+.mmww .faq{margin:44px 0}
+.mmww .faq>h2{text-align:center;margin-bottom:18px}
+.mmww details{background:#fff;border:2px solid var(--line);border-radius:18px;margin:0 0 12px;overflow:hidden}
+.mmww summary{list-style:none;cursor:pointer;font-weight:700;font-size:1.04em;padding:18px 58px 18px 22px;position:relative;color:var(--ink)}
+.mmww summary::-webkit-details-marker{display:none}
+.mmww summary:after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:var(--blush);color:var(--pink);font-size:22px;line-height:28px;text-align:center;font-weight:700}
+.mmww details[open] summary:after{content:"\\2013"}
+.mmww details[open]{border-color:var(--pink)}
+.mmww details p{padding:0 22px 18px;margin:0}
+.mmww .hello{background:var(--pink);border-radius:28px;padding:40px 30px;text-align:center;margin:44px 0 10px;position:relative;overflow:hidden}
+.mmww .hello h2{color:#fff;font-size:clamp(2rem,4vw,2.8rem);margin-bottom:10px}
+.mmww .hello p{color:#fff;font-size:1.08em;margin:0 0 18px}
+.mmww .hello .btn{background:#fff;color:var(--pink)}
+.mmww .hello svg{position:absolute;width:120px;height:120px;fill:rgba(255,255,255,.14)}
+.mmww .hello .h1{left:-20px;top:-20px;transform:rotate(-18deg)}
+.mmww .hello .h2{right:-16px;bottom:-24px;transform:rotate(16deg)}
+@media (max-width:820px){
+ .mmww{font-size:16px}
+ .mmww .hero{grid-template-columns:1fr;padding:34px 22px 18px;text-align:center}
+ .mmww .btns{justify-content:center}
+ .mmww .fan{height:320px;max-width:400px;margin:0 auto;width:100%}
+ .mmww .fan .c{width:50%;left:25%;top:20px}
+ .mmww .sec{grid-template-columns:1fr;padding:26px 22px;gap:12px}
+ .mmww .sec .ic{width:58px;height:58px}
+ .mmww .grid{grid-template-columns:1fr}
+ .mmww .lg img{height:44px;max-width:120px;padding:6px 10px}
+}
+"""
+
+HTML = f"""<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+<style>{CSS}</style>
+<div class="mmww">
+<section class="hero">
+<div>
+<span class="ey">For mahjong brands</span>
+<h1>Let's make some matches together!</h1>
+<p class="dek">Hi, I'm Tiffany! Thank you so much for your interest in Mahj Matchmaker. Matching tiles with the mats and racks that make them shine is my favorite thing, and I love helping players fall for brands like yours.</p>
+<div class="btns"><a class="btn p" href="#say-hello">Say hello!</a><a class="btn s" href="#ways">Ways we work together</a></div>
+</div>
+<div class="fan">{fan}</div>
+</section>
+
+<p class="intro"><span class="h">Here's what partnering with Mahj Matchmaker looks like.</span></p>
+
+<section class="sec">
+<div class="ic">{heart}</div>
+<div>
+<h2>Your own partner brand page</h2>
+<p>Every partner brand gets its own page on mahjmatchmaker.com, highlighting my favorite products and picks from your line, plus every place players can find your products across the site: tile set albums, matches and blog articles. Your code (<span class="code">MAHJMATCH</span>) is front and center, and every product links straight to your shop, so it's easy for players to go from "oh, I love that" to checkout.</p>
+</div>
+</section>
+
+<section class="sec">
+<div class="ic">{ic_star}</div>
+<div>
+<h2>Find Your Match, launching October 27</h2>
+<p>Find Your Match is our new swipe-to-match tool. Players start with the tiles they own or the mat they love, swipe through the mats and racks I'd pair with them, and save a match card to share with their mahj group.</p>
+<p>There's nothing you need to upload. If your shop runs on Shopify, I pull your catalog in automatically, and your products are set up for desktop, mobile and the shareable match cards. With a very large line, I curate my favorites so the matching stays focused and every product gets a fair shot.</p>
+</div>
+</section>
+
+<section class="ways" id="ways">
+<h2>Ways we work together</h2>
+<div class="grid">
+<div class="card"><div class="ic">{ic_tag}</div><h3>Affiliate partnership</h3><p>Your partner brand page, a spot on our Discount Codes page, and your products in Find Your Match and my match albums. Players save with code <span class="code">MAHJMATCH</span>.</p></div>
+<div class="card"><div class="ic">{ic_star}</div><h3>New releases</h3><p>Tell me what's coming! I can match new tile sets, mats and racks as they launch, so players see them with pairings on day one.</p></div>
+<div class="card"><div class="ic">{ic_book}</div><h3>Match albums</h3><p>Partner brands get preference when I choose tile sets for new match albums. Have a set you'd love to see? Let me know.</p></div>
+</div>
+</section>
+
+<section class="logos" aria-label="Partner brands">
+<span class="ey">Partner brands</span>
+<div class="lg">{logos}</div>
+</section>
+
+<section class="faq">
+<h2>FAQ</h2>
+<details><summary>Do you offer paid placements?</summary><p>No. I don't offer any paid placements on the site.</p></details>
+<details><summary>Do you accept product samples?</summary><p>Yes! Many brands send samples for color matching. Sample sets or swatches are very helpful for getting the best color match, but they aren't required for a partnership. If you have a new product launching soon, reach out with the details and we can talk about it.</p></details>
+<details><summary>Does every partner brand get a match album?</summary><p>Partner brands are given preference for a match album for at least one tile set in their line. An album isn't guaranteed and often won't be immediate. Which sets get albums is always at my discretion: I weigh market demand, uniqueness, artistic quality and seasonality, plus my own taste. Our readers send album requests all the time, and I keep track of the most-requested sets and weigh that heavily. If there's a set from your line you'd love to see in an album, tell me and I'll do my best to honor it. And yes, a brand can absolutely get more than one album!</p></details>
+<details><summary>Will you review my products on your blog?</summary><p>A first-hand review means I've held it, used it or played with it, so I only write those for products I have in hand. Products can still be recommended on the site for other reasons, like how well they match. Sending a sample doesn't guarantee a feature or a positive review: you'll always get my honest opinion.</p></details>
+<details><summary>How do players find my products?</summary><p>Through your partner brand page, the Discount Codes page, my tile set albums, Find Your Match, blog articles and our Facebook group, where we share matches and real-life tables.</p></details>
+</section>
+
+<section class="hello" id="say-hello">
+<svg class="h1" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.9 4.5c2.1 0 3.6 1.2 5.1 3 1.5-1.8 3-3 5.1-3 3.9 0 6 3.9 4.5 7.3C19.5 16.4 12 21 12 21z"/></svg>
+<svg class="h2" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.9 4.5c2.1 0 3.6 1.2 5.1 3 1.5-1.8 3-3 5.1-3 3.9 0 6 3.9 4.5 7.3C19.5 16.4 12 21 12 21z"/></svg>
+<h2>Say hello!</h2>
+<p>Use the form below and tell me a little about your brand. I can't wait to see what you make!</p>
+</section>
+</div>
+"""
+D = os.path.dirname(os.path.abspath(__file__))
+open(os.path.join(D, 'workwith.html'), 'w').write(HTML)
+open(os.path.join(D, 'urls.txt'), 'w').write('\n'.join(urls) + '\n')
+PV = """<title>Work With Preview</title><style>:root{color-scheme:light}body{margin:0;padding:24px 16px;background:#ffffff;font-family:Poppins,system-ui,sans-serif}.pv{max-width:1100px;margin:0 auto 14px;font-size:13px;color:#6f6670}.form{max-width:1100px;margin:18px auto 0;border:2px dashed #e7cbd6;border-radius:18px;padding:22px;text-align:center;color:#8a7f88;font-size:14px}</style>
+<p class="pv">Preview of the styled Work with Mahj Matchmaker page (v3, styled). Copy is your approved v2, word for word. The contact form sits under it on the real page.</p>
+""" + HTML + '<div class="form">Contact form goes here on the real page</div>'
+open(os.path.join(D, 'preview.html'), 'w').write(PV)
+print('ok', len(HTML))

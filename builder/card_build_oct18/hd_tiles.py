@@ -14,7 +14,7 @@ s=open(BUILD+'/index.html').read();i=s.index('const D=')+8;j=s.index('\n',i);D=j
 IMG={}
 for f in glob.glob(REPO+'builder/card_redesign_oct18/serve/b*.js'):
     t=open(f).read()
-    for m in re.finditer(r'"([0-9a-f]{10})":"(data:image/[^"]+)"',t):IMG[m.group(1)]=m.group(2)
+    for m in re.finditer(r'"([A-Za-z0-9_:.-]{6,60})"\s*:\s*"(data:image/[^"]+)"',t):IMG[m.group(1)]=m.group(2)
 def dec(u):return Image.open(io.BytesIO(base64.b64decode(u.split(',',1)[1]))).convert('RGB')
 def fullpath(rel):
     for base in [BUILD,SP+'/fym_independent_audit/site_pub',REPO+'builder/card_redesign_oct18/serve']:
@@ -69,7 +69,7 @@ def sim(a,b):
     a=np.asarray(a.resize((96,96))).astype(float);b=np.asarray(b.resize((96,96))).astype(float)
     a-=a.mean();b-=b.mean();return float((a*b).sum()/np.sqrt((a*a).sum()*(b*b).sum()+1e-9))
 flt=sys.argv[1].lower() if len(sys.argv)>1 else ''
-rep=json.load(open(OUT+'/report.json')) if os.path.exists(OUT+'/report.json') else {}
+rep={} if flt=='__none__' else (json.load(open(OUT+'/report.json')) if os.path.exists(OUT+'/report.json') else {})
 names={}
 for st in D['sets']:names.setdefault(st['tile'],st['name'])
 for key,t in D['tiles'].items():
@@ -101,4 +101,4 @@ for key,t in D['tiles'].items():
     fn=hashlib.md5(key.encode()).hexdigest()[:12]+'.webp';out.save(os.path.join(OUT,fn),'WEBP',quality=88)
     rep[key]={'n':nm,'pile':list(q.size),'hd':fn,'size':list(out.size),'src':src,'scale':round(sc,2),'inl':inl,'sim':round(s2,3)};print(nm,out.size,src[:70],round(s2,3))
     json.dump(rep,open(OUT+'/report.json','w'),indent=1)
-json.dump(rep,open(OUT+'/report.json','w'),indent=1)
+if flt!='__none__':json.dump(rep,open(OUT+'/report.json','w'),indent=1)
