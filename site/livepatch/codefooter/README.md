@@ -62,3 +62,30 @@ Other pages are in ../rackcaptions/.
 
 Unrelated typo, not fixed: the Polo button reads "Shop the The Polo Club Mat".
 - The .html blocks fix the button text 'Shop the The Polo Club Mat' to 'Shop The Polo Club Mat'. The .json swap lists don't include that fix, so prefer the whole-block paste.
+
+## LIVE — Oct 18, ~11:20–12:05 ET (Tiffany approved in chat: "Approve swapping in the MAHJMATCH cards on the 14 live pages.")
+All 14 pages swapped as whole-block replacements, using the blocks at commit e593f10. That's the c3ae3a3 card pins (current logo tab, banned B&B woods patched) plus 23 rack captions updated to match the wood-patched cards.
+- Before each swap, the live block matched the base: same cards and titles apart from the planned swaps.
+- After each swap, curl confirmed every figcaption and every card URL in the block is on the live page:
+  - amara 49/49
+  - cypress 39/39
+  - gatsby 67/67
+  - heritage-2-0 81/81
+  - holiday 109/109
+  - jade 59/59
+  - la-fete 30/30
+  - limoncello 16/16
+  - malachite 53/53
+  - nantucket 41/41
+  - red 5 imgs
+  - seabreeze 33/33
+  - sierra 34/34
+  - sorbet 18/18
+- Holiday, Amara and Red were checked in a browser at 390 and 1280: no broken images, no sideways scroll.
+- Red and Sorbet were first swapped with the older f94d4a1 pin, then re-applied with e593f10.
+- Some cards still print a banned wood, and their captions still name it to match, because those cards weren't wood-patched yet:
+  - Amara + Clara's Dream (Almond)
+  - Jade + Blue Christmas (Tudor)
+  - Heritage 2.0, Dear Santa and December 1994 + Festive Plaid (codefooter-v1/holiday-v4, Tudor)
+  - Nantucket + Hearts & Horseshoes (Almond)
+- Fetching block text from jsDelivr sometimes returns "Package size exceeded"; the block text now comes from raw.githubusercontent.com at the same commit. Card images are on jsDelivr and all returned 200 on retry.
