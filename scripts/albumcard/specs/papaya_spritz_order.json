@@ -8,30 +8,30 @@
  },
  {
   "n": 2,
-  "id": "cc-sedona-mat-in-tube",
-  "name": "Sedona",
-  "brand": "Oh My Mahjong",
-  "tier": "TOP"
- },
- {
-  "n": 3,
   "id": "ret-goldie",
   "name": "Goldie (retired)",
   "brand": "Oh My Mahjong",
   "tier": "TOP"
  },
  {
-  "n": 4,
+  "n": 3,
   "id": "cc-haven-neoprene-mahjong-mat",
   "name": "Haven",
   "brand": "Britt Mills",
   "tier": "TOP"
  },
  {
-  "n": 5,
+  "n": 4,
   "id": "cc-savannah-leatherette-mahjong-mat",
   "name": "Savannah",
   "brand": "Britt Mills",
+  "tier": "TOP"
+ },
+ {
+  "n": 5,
+  "id": "cc-vivienne-mat-in-tube",
+  "name": "Vivienne",
+  "brand": "Oh My Mahjong",
   "tier": "TOP"
  },
  {
@@ -39,216 +39,216 @@
   "id": "cc-heiress-scalloped-neoprene-mahjong-mat",
   "name": "Heiress",
   "brand": "Britt Mills",
-  "tier": "BEST"
+  "tier": "TOP"
  },
  {
   "n": 7,
+  "id": "cc-press-for-mahjong-mat",
+  "name": "Press for Mahjong",
+  "brand": "Anders Ruff",
+  "tier": "TOP"
+ },
+ {
+  "n": 8,
+  "id": "cc-larkspur-mat-in-tube",
+  "name": "Larkspur",
+  "brand": "Oh My Mahjong",
+  "tier": "TOP"
+ },
+ {
+  "n": 9,
+  "id": "cc-sedona-mat-in-tube",
+  "name": "Sedona",
+  "brand": "Oh My Mahjong",
+  "tier": "BEST"
+ },
+ {
+  "n": 10,
   "id": "cc-leopard-animal-print-american-mahjong-mat",
   "name": "Leopard American",
   "brand": "Mahj & Moon",
   "tier": "BEST"
  },
  {
-  "n": 8,
+  "n": 11,
   "id": "cc-retro-waves-mahjong-mat",
   "name": "Retro Waves",
   "brand": "Mahj & Moon",
   "tier": "BEST"
  },
  {
-  "n": 9,
+  "n": 12,
   "id": "cc-grand-garden-estate-mahjong-mat",
   "name": "Grand Garden Estate",
   "brand": "Mahj & Moon",
   "tier": "BEST"
  },
  {
-  "n": 10,
+  "n": 13,
   "id": "cc-neoprene-mat",
   "name": "Classic in Lavender",
   "brand": "Bam Bird Boutique",
   "tier": "BEST"
  },
  {
-  "n": 11,
+  "n": 14,
   "id": "cc-fruit-stand-citrus-mat",
   "name": "Fruit Stand",
   "brand": "Middle & Main Mahjong",
   "tier": "BEST"
  },
  {
-  "n": 12,
+  "n": 15,
   "id": "cc-cheetah-couture",
   "name": "Cheetah Couture",
   "brand": "Bespoke Mahjong",
   "tier": "BEST"
  },
  {
-  "n": 13,
+  "n": 16,
   "id": "cc-simply-scalloped-neoprene-mahjong-mat",
   "name": "Simply Scalloped",
   "brand": "Bam Bird Boutique",
   "tier": "BEST"
  },
  {
-  "n": 14,
+  "n": 17,
   "id": "cc-the-paradise-mahjong-mat-blue-bliss-copy",
   "name": "Paradise Lovely Lavender",
   "brand": "Bird & Bamboo",
   "tier": "BEST"
  },
  {
-  "n": 15,
+  "n": 18,
   "id": "cc-the-paradise-mahjong-mat-blue-bliss",
   "name": "Paradise Blue Bliss",
   "brand": "Bird & Bamboo",
   "tier": "BEST"
  },
  {
-  "n": 16,
+  "n": 19,
   "id": "cc-the-danay-mahjong-mat",
   "name": "Danay",
   "brand": "Bird & Bamboo",
   "tier": "BEST"
  },
  {
-  "n": 17,
+  "n": 20,
   "id": "cc-pre-order-coral-orchard-copy",
   "name": "Sapphire Soir\u00e9e",
   "brand": "Mahj & Vine",
   "tier": "BEST"
  },
  {
-  "n": 18,
-  "id": "cc-press-for-mahjong-mat",
-  "name": "Press for Mahjong",
-  "brand": "Anders Ruff",
-  "tier": "BEST"
- },
- {
-  "n": 19,
+  "n": 21,
   "id": "cc-bams-bubbly-mahjong-mat",
   "name": "Bams & Bubbly",
   "brand": "Anders Ruff",
   "tier": "BEST"
  },
  {
-  "n": 20,
+  "n": 22,
   "id": "cc-coralia",
   "name": "Coralia",
   "brand": "Virora Mahjong",
   "tier": "BEST"
  },
  {
-  "n": 21,
+  "n": 23,
   "id": "cc-the-tangelo-delphine-mahjong-mat",
   "name": "Tangelo Delphine",
   "brand": "Bird & Bamboo",
   "tier": "BEST"
  },
  {
-  "n": 22,
+  "n": 24,
   "id": "cc-year-of-the-dragon-mat-plum",
   "name": "YOTD Plum",
   "brand": "Bespoke Mahjong",
   "tier": "BEST"
  },
  {
-  "n": 23,
+  "n": 25,
   "id": "cc-anastasia-mat-in-tube",
   "name": "Anastasia",
   "brand": "Oh My Mahjong",
   "tier": "EVERYTHING"
  },
  {
-  "n": 24,
+  "n": 26,
   "id": "cc-chantilly-mat",
   "name": "Chantilly",
   "brand": "Oh My Mahjong",
   "tier": "EVERYTHING"
  },
  {
-  "n": 25,
+  "n": 27,
   "id": "ret-enchanted",
   "name": "Enchanted (retired)",
   "brand": "Oh My Mahjong",
   "tier": "EVERYTHING"
  },
  {
-  "n": 26,
+  "n": 28,
   "id": "ret-spring-fling",
   "name": "Spring Fling (retired)",
   "brand": "Oh My Mahjong",
   "tier": "EVERYTHING"
  },
  {
-  "n": 27,
+  "n": 29,
   "id": "ret-sweet-marie",
   "name": "Sweet Marie (retired)",
   "brand": "Oh My Mahjong",
   "tier": "EVERYTHING"
  },
  {
-  "n": 28,
+  "n": 30,
   "id": "ret-zen-glow",
   "name": "Zen Glow (retired)",
   "brand": "Oh My Mahjong",
   "tier": "EVERYTHING"
  },
  {
-  "n": 29,
+  "n": 31,
   "id": "cc-revelry-leatherette-mahjong-mat",
   "name": "Revelry",
   "brand": "Britt Mills",
   "tier": "EVERYTHING"
  },
  {
-  "n": 30,
+  "n": 32,
   "id": "cc-regency-scalloped-neoprene-mahjong-mat",
   "name": "Regency Scalloped",
   "brand": "Britt Mills",
   "tier": "EVERYTHING"
  },
  {
-  "n": 31,
+  "n": 33,
   "id": "cc-regal-bloom-neoprene-mahjong-mat",
   "name": "Regal Bloom",
   "brand": "Britt Mills",
   "tier": "EVERYTHING"
  },
  {
-  "n": 32,
+  "n": 34,
   "id": "cc-scarlett-neoprene-mahjong-mat",
   "name": "Scarlett",
   "brand": "Britt Mills",
   "tier": "EVERYTHING"
  },
  {
-  "n": 33,
+  "n": 35,
   "id": "cc-colorful-chinoiserie-britt-mills-mahjong-mat",
   "name": "Colorful Chinoiserie",
   "brand": "Britt Mills",
   "tier": "EVERYTHING"
  },
  {
-  "n": 34,
+  "n": 36,
   "id": "cc-enchanted-leatherette-mahjong-mat",
   "name": "Enchanted",
   "brand": "Britt Mills",
-  "tier": "EVERYTHING"
- },
- {
-  "n": 35,
-  "id": "cc-vivienne-mat-in-tube",
-  "name": "Vivienne",
-  "brand": "Oh My Mahjong",
-  "tier": "EVERYTHING"
- },
- {
-  "n": 36,
-  "id": "cc-larkspur-mat-in-tube",
-  "name": "Larkspur",
-  "brand": "Oh My Mahjong",
   "tier": "EVERYTHING"
  },
  {
