@@ -8,6 +8,7 @@ Nothing here is live yet. Each swap needs Tiffany's in-chat approval.
 - `<slug>.html`: the page's current live code block (taken from the live page on Oct 18, ~08:40 ET), with only the old-footer card URLs swapped. It's ready to paste as a whole-block replacement.
 - `<slug>.json`: the same change as a minimal list of old URL → new URL swaps, plus the block id. This is the safer way to apply it: run `__fix` with a regex per URL instead of replacing the whole block.
 - New cards are pinned to commit d4ee12ce47f77d88d4806425ca83553db3dd28ed under `assets/cards/codefooter-v1/cards/`.
+- jsDelivr sometimes returns a one-off 403 ("package size exceeded") on a file it hasn't cached yet; a retry gives 200. All 34 URLs returned 200 at 09:00 ET. Curl each one before swapping.
 - The Polo Club cards point to the **corrected-rack** versions (`codefooter-v1/cards/polofix-v1/`). Applying this swap replaces the separate `site/livepatch/polofix/` swap; don't apply both.
 
 ## Pages → cards swapped (14 pages, 34 card slots)
