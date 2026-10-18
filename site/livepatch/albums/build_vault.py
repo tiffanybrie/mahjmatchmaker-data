@@ -4,6 +4,7 @@ import re, sys, json, html
 SHA = sys.argv[1]
 S = '/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/sunday_live/'
 R = '/home/claude/mahjmatchmaker-data/'
+HOL = {'preppy-soiree': ['miracle'], 'shangri-la': ['merriment','yuletide','winterberry'], 'spring-love': ['clara','sugarplum','yuletide']}
 NAMES = {'bam-bird-boutique-navy-vegan-leather': ('Navy Vegan Leather', 'Bam Bird Boutique')}
 for s in ['lilac-soiree', 'preppy-soiree', 'shangri-la', 'spring-love']:
     src = open(S + f'{s}_codeblock.html').read()
@@ -39,6 +40,14 @@ for s in ['lilac-soiree', 'preppy-soiree', 'shangri-la', 'spring-love']:
     def nm(w): return NAMES.get(w, (w.replace('-', ' ').title().replace('Peri Twinkle', 'Peri-twinkle').replace('Soho', 'SoHo'), 'Oh My Mahjong'))
     t = [f'{nm(w)[0]} by {nm(w)[1]}' for w in want[:3]]
     blk = re.sub(r'(My top mat picks for [^"]+? are )[^"]+?(\.")', lambda m: m.group(1) + f'{t[0]}, {t[1]} and {t[2]}' + m.group(2), blk)
+    nonhol = [x for x in newfigs if 'mm3-hol' not in x and 'HOLIDAY' not in x.upper()[:400]]
+    def intro(m):
+        name = m.group(1)
+        brands = sorted({nm(w)[1] for w in want})
+        nh = sum(1 for w in want if w not in HOL.get(s, []))
+        frm = f'from {brands[0]}' if len(brands) == 1 else f'from {len(brands)} brands'
+        return f'My top mat picks for {name} are {t[0]}, {t[1]} and {t[2]}. Below are {nh} {name} mat matches {frm}, and counting,'
+    blk = re.sub(r'My top mat picks for ([^<"]+?) are [^<"]+?\. Below are \d+ [^<"]+? mat matches from \d+ brands, and counting,', intro, blk)
     old = [u for u in re.findall(r'from-the-vault/' + s + r'/[^"]+', blk)]
     open(R + f'site/livepatch/albums/{s}.html', 'w').write(blk)
     print(s, len(newfigs), 'leftover old paths:', len(old))
