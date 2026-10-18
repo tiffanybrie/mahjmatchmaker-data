@@ -1,0 +1,32 @@
+{
+ "_note": "Garden Party Deep Green",
+ "mat_file": "assets/mats/miss-mahjong/garden-party-deep-green-corner.jpg",
+ "mat_crop": [
+  0,
+  0,
+  820,
+  820
+ ],
+ "max_racks": 4,
+ "mat_racks": [
+  "Bird & Bamboo Evergreen",
+  "Bird & Bamboo Lilac"
+ ],
+ "tile_brand": "Miss Mahjong",
+ "code": "10% OFF  USE CODE : MAHJMATCH",
+ "cards": [
+  {
+   "slug": "malachite-garden-party-deep-green",
+   "title": "Malachite + Garden Party Deep Green",
+   "col": "#37503b",
+   "tile_file": "assets/tiles/album/malachite.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Miss Mahjong Jade & Brass",
+    "Miss Mahjong Brass & Tortoise"
+   ],
+   "file": "malachite-mahjong-tiles-miss-mahjong-garden-party-deep-green-mat.jpg"
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "_note": "Garden Party Lavender",
+ "mat_file": "assets/mats/miss-mahjong/garden-party-lavender-corner.jpg",
+ "mat_crop": [
+  0,
+  0,
+  800,
+  800
+ ],
+ "max_racks": 4,
+ "mat_racks": [
+  "Bird & Bamboo French Blue",
+  "Bird & Bamboo Lilac"
+ ],
+ "tile_brand": "Miss Mahjong",
+ "code": "10% OFF  USE CODE : MAHJMATCH",
+ "cards": [
+  {
+   "slug": "malachite-garden-party-lavender",
+   "title": "Malachite + Garden Party Lavender",
+   "col": "#37503b",
+   "tile_file": "assets/tiles/album/malachite.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Miss Mahjong Jade & Brass",
+    "Miss Mahjong Brass & Tortoise"
+   ],
+   "file": "malachite-mahjong-tiles-miss-mahjong-garden-party-lavender-mat.jpg"
+  }
+ ]
+}

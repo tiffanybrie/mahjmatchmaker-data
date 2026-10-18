@@ -1,0 +1,32 @@
+{
+ "_note": "Pink Tiger",
+ "mat_file": "assets/mats/yolo-mahjong/pink-tiger-flat-v2.jpg",
+ "mat_crop": [
+  8,
+  8,
+  732,
+  732
+ ],
+ "max_racks": 4,
+ "mat_racks": [
+  "Bird & Bamboo Carrot",
+  "Bird & Bamboo Dark Teal"
+ ],
+ "tile_brand": "Miss Mahjong",
+ "code": "10% OFF  USE CODE : MAHJMATCH",
+ "cards": [
+  {
+   "slug": "malachite-pink-tiger",
+   "title": "Malachite + Pink Tiger",
+   "col": "#37503b",
+   "tile_file": "assets/tiles/album/malachite.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Miss Mahjong Jade & Brass",
+    "Miss Mahjong Brass & Tortoise"
+   ],
+   "file": "malachite-mahjong-tiles-yolo-mahjong-pink-tiger-mat.jpg"
+  }
+ ]
+}
