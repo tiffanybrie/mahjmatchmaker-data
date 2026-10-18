@@ -935,13 +935,15 @@
    "Mahjong Row & Co. Scalloped Tortoise"
   ],
   "mat_picks": [
-   "bb:Blackboard Black",
-   "bb:Dark Teal",
-   "bb:Red"
+   "bb:Dark Navy",
+   "bb:Evergreen",
+   "bb:Wine",
+   "Sunday Mahjong Cola"
   ],
   "file": "cypress-forest-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
   "title": "Cypress + The Polo Club",
-  "order": 6
+  "order": 6,
+  "polofix": "assets/cards/polofix-v1/cypress-forest-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg"
  },
  {
   "tile": "cypress-forest",
@@ -1554,13 +1556,15 @@
    "Middle & Main Hawksbill Heritage Tortoise"
   ],
   "mat_picks": [
-   "bb:Blackboard Black",
-   "bb:Matcha",
-   "bb:Red"
+   "bb:Dark Navy",
+   "bb:Evergreen",
+   "bb:Wine",
+   "Sunday Mahjong Cola"
   ],
   "file": "gatsby-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
   "title": "Gatsby + The Polo Club",
-  "order": 8
+  "order": 8,
+  "polofix": "assets/cards/polofix-v1/gatsby-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg"
  },
  {
   "tile": "gatsby",
@@ -2196,13 +2200,15 @@
    "bb:Evergreen"
   ],
   "mat_picks": [
-   "bb:Blackboard Black",
-   "bb:Matcha",
-   "bb:Red"
+   "bb:Dark Navy",
+   "bb:Evergreen",
+   "bb:Wine",
+   "Sunday Mahjong Cola"
   ],
   "file": "heritage-2-0-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
   "title": "Heritage 2.0 + The Polo Club",
-  "order": 10
+  "order": 10,
+  "polofix": "assets/cards/polofix-v1/heritage-2-0-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg"
  },
  {
   "tile": "heritage-2-0",
@@ -2327,13 +2333,15 @@
    "Middle & Main Scalloped Beechwood"
   ],
   "mat_picks": [
-   "bb:Blackboard Black",
+   "bb:Dark Navy",
    "bb:Evergreen",
-   "bb:Red"
+   "bb:Wine",
+   "Sunday Mahjong Cola"
   ],
   "file": "hummingbird-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
   "title": "Hummingbird + The Polo Club",
-  "order": 1
+  "order": 1,
+  "polofix": "assets/cards/polofix-v1/hummingbird-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg"
  },
  {
   "tile": "jade",
@@ -2673,13 +2681,15 @@
    "Miss Mahjong Opal & Brass"
   ],
   "mat_picks": [
-   "bb:Blackboard Black",
-   "bb:Dark Teal",
-   "bb:Red"
+   "bb:Dark Navy",
+   "bb:Evergreen",
+   "bb:Wine",
+   "Sunday Mahjong Cola"
   ],
   "file": "jade-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
   "title": "Jade + The Polo Club",
-  "order": 15
+  "order": 15,
+  "polofix": "assets/cards/polofix-v1/jade-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg"
  },
  {
   "tile": "jade",
@@ -3866,13 +3876,15 @@
    "Miss Mahjong Brass & Tortoise"
   ],
   "mat_picks": [
-   "bb:Blackboard Black",
-   "bb:Dark Teal",
-   "bb:Red"
+   "bb:Dark Navy",
+   "bb:Evergreen",
+   "bb:Wine",
+   "Sunday Mahjong Cola"
   ],
   "file": "malachite-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
   "title": "Malachite + The Polo Club",
-  "order": 13
+  "order": 13,
+  "polofix": "assets/cards/polofix-v1/malachite-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg"
  },
  {
   "tile": "malachite",
@@ -4710,13 +4722,15 @@
    "bb:Kelly Green"
   ],
   "mat_picks": [
-   "bb:Blackboard Black",
+   "bb:Dark Navy",
    "bb:Evergreen",
-   "bb:Red"
+   "bb:Wine",
+   "Sunday Mahjong Cola"
   ],
   "file": "nantucket-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
   "title": "Nantucket + The Polo Club",
-  "order": 21
+  "order": 21,
+  "polofix": "assets/cards/polofix-v1/nantucket-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg"
  },
  {
   "tile": "nantucket",
@@ -4774,13 +4788,15 @@
    "Middle & Main Hawksbill Heritage Tortoise"
   ],
   "mat_picks": [
-   "bb:Blackboard Black",
+   "bb:Dark Navy",
    "bb:Evergreen",
-   "bb:Red"
+   "bb:Wine",
+   "Sunday Mahjong Cola"
   ],
   "file": "nature-walk-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
   "title": "Nature Walk + The Polo Club",
-  "order": 0
+  "order": 0,
+  "polofix": "assets/cards/polofix-v1/nature-walk-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg"
  },
  {
   "tile": "osler",
@@ -6078,10 +6094,16 @@
    "www.middleandmainmahjong.com/golden-grain-beechwood-mahjong-rack-and-pusher-set-of-4",
    "bb:Matcha"
   ],
-  "mat_picks": null,
+  "mat_picks": [
+   "bb:Dark Navy",
+   "bb:Evergreen",
+   "bb:Wine",
+   "Sunday Mahjong Cola"
+  ],
   "file": "sunday-blues-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
   "title": "Sunday Blues + The Polo Club",
-  "order": 0
+  "order": 0,
+  "polofix": "assets/cards/polofix-v1/sunday-blues-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg"
  },
  {
   "tile": "sunday",
@@ -6119,13 +6141,15 @@
    "Miss Mahjong Blonde Tortoise & Brass"
   ],
   "mat_picks": [
-   "bb:Blackboard Black",
+   "bb:Dark Navy",
    "bb:Evergreen",
-   "bb:Red"
+   "bb:Wine",
+   "Sunday Mahjong Cola"
   ],
   "file": "sunday-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
   "title": "Sunday Tile Set + The Polo Club",
-  "order": 1
+  "order": 1,
+  "polofix": "assets/cards/polofix-v1/sunday-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg"
  },
  {
   "tile": "talulah",
@@ -6659,13 +6683,15 @@
    "bb:Glacier Metallic"
   ],
   "mat_picks": [
-   "bb:Blackboard Black",
+   "bb:Dark Navy",
    "bb:Evergreen",
-   "bb:Red"
+   "bb:Wine",
+   "Sunday Mahjong Cola"
   ],
   "file": "cmc-apres-ski-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
   "title": "Apr\u00e8s Ski Club + The Polo Club",
-  "order": 8
+  "order": 8,
+  "polofix": "assets/cards/polofix-v1/cmc-apres-ski-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg"
  },
  {
   "tile": "dear-santa",
@@ -7004,13 +7030,15 @@
    "Middle & Main Milk Glass Scalloped Acrylic"
   ],
   "mat_picks": [
-   "bb:Blackboard Black",
-   "bb:Basil",
-   "bb:Red"
+   "bb:Dark Navy",
+   "bb:Evergreen",
+   "bb:Wine",
+   "Sunday Mahjong Cola"
   ],
   "file": "dear-santa-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
   "title": "Dear Santa + The Polo Club",
-  "order": 15
+  "order": 15,
+  "polofix": "assets/cards/polofix-v1/dear-santa-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg"
  },
  {
   "tile": "dear-santa",
@@ -7178,13 +7206,15 @@
    "Middle & Main Hawksbill Heritage Tortoise"
   ],
   "mat_picks": [
-   "bb:Blackboard Black",
-   "bb:Basil",
-   "bb:Red"
+   "bb:Dark Navy",
+   "bb:Evergreen",
+   "bb:Wine",
+   "Sunday Mahjong Cola"
   ],
   "file": "december-1994-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
   "title": "December 1994 + The Polo Club",
-  "order": 4
+  "order": 4,
+  "polofix": "assets/cards/polofix-v1/december-1994-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg"
  },
  {
   "tile": "holly-jolly-green",
@@ -8633,13 +8663,15 @@
    "Middle & Main Milk Glass Scalloped Acrylic"
   ],
   "mat_picks": [
-   "bb:Blackboard Black",
-   "bb:Basil",
-   "bb:Red"
+   "bb:Dark Navy",
+   "bb:Evergreen",
+   "bb:Wine",
+   "Sunday Mahjong Cola"
   ],
   "file": "rackin-rudolph-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
   "title": "Rackin' Rudolph + The Polo Club",
-  "order": 21
+  "order": 21,
+  "polofix": "assets/cards/polofix-v1/rackin-rudolph-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg"
  },
  {
   "tile": "tinselle-emerald",
@@ -8655,13 +8687,15 @@
    "Middle & Main Milk Glass Scalloped Acrylic"
   ],
   "mat_picks": [
-   "bb:Blackboard Black",
+   "bb:Dark Navy",
    "bb:Evergreen",
-   "bb:Red"
+   "bb:Wine",
+   "Sunday Mahjong Cola"
   ],
   "file": "tinselle-emerald-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
   "title": "Tinselle + The Polo Club",
-  "order": 0
+  "order": 0,
+  "polofix": "assets/cards/polofix-v1/tinselle-emerald-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg"
  },
  {
   "tile": "tinselle-ruby",
@@ -8699,12 +8733,14 @@
    "Middle & Main Milk Glass Scalloped Acrylic"
   ],
   "mat_picks": [
-   "bb:Blackboard Black",
-   "bb:Basil",
-   "bb:Red"
+   "bb:Dark Navy",
+   "bb:Evergreen",
+   "bb:Wine",
+   "Sunday Mahjong Cola"
   ],
   "file": "tinselle-ruby-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
   "title": "Tinselle + The Polo Club",
-  "order": 1
+  "order": 1,
+  "polofix": "assets/cards/polofix-v1/tinselle-ruby-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg"
  }
 ]
