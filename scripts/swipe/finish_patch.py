@@ -49,3 +49,6 @@ i=t.rfind('</body>')
 t=(t[:i]+js+t[i:]) if i>=0 else t+js
 open(sys.argv[2],'w').write(t);print('patched')
 _canon(sys.argv[2])
+# Oct 18 (Tiffany): yes-only swiping. Arrows/swipes = next, only the check records a yes; not-yes = no.
+import subprocess as _sp, os as _os
+_sp.run(['python3', _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), 'yes_only_patch.py'), sys.argv[2], sys.argv[2]], check=True)
