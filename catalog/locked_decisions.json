@@ -1,79 +1,139 @@
 {
  "www.mahjsquadshop.com/palm-springs-mahjong-mat-neoprene-mahjong-mat-in-palm-springs-mid-century-mahjong-mat-pink-mahjong-tropical-mahj-mahjongg-mat-1": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Palm Springs",
-  "brand": "Mahj Squad"
+  "brand": "Mahj Squad",
+  "photo_class": "watermarked (catalog + swipe + album, never social)",
+  "photo": "assets/mats/mahj-squad/palm-springs.jpg",
+  "catalog_key": "mahjsquadshop.com/palm-springs-mahjong-mat-neoprene-mahjong-mat-in-palm-springs-mid-century-mahjong-mat-pink-mahjong-tropical-mahj-mahjongg-mat-1",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "tigredetartan.com/third-shipment-mahjong-mat-jardin-de-los-jefes": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
-  "name": "Jard\u00edn de Los Jefes",
-  "brand": "Tigre de Tartan"
+  "name": "Jardín de Los Jefes",
+  "brand": "Tigre de Tartan",
+  "photo_class": "clean flat",
+  "photo": "assets/mats/tigre-de-tartan/jard-n-de-los-jefes.jpg",
+  "catalog_key": "tigredetartan.com/third-shipment-mahjong-mat-jardin-de-los-jefes",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "tigredetartan.com/mahjong-mat-cannage-blonde-rules-edition": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Cannage Blonde",
-  "brand": "Tigre de Tartan"
+  "brand": "Tigre de Tartan",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/tigre-de-tartan/cannage-blonde.jpg",
+  "catalog_key": "tigredetartan.com/mahjong-mat-cannage-blonde-rules-edition",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "tigredetartan.com/mahjong-mat-domino-faded-carolina": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Domino Faded Carolina",
-  "brand": "Tigre de Tartan"
+  "brand": "Tigre de Tartan",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/tigre-de-tartan/domino-faded-carolina.jpg",
+  "catalog_key": "tigredetartan.com/mahjong-mat-domino-faded-carolina",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "tigredetartan.com/mahjong-mat-domino-oxblood": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Domino Oxblood",
-  "brand": "Tigre de Tartan"
+  "brand": "Tigre de Tartan",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/tigre-de-tartan/domino-oxblood.jpg",
+  "catalog_key": "tigredetartan.com/mahjong-mat-domino-oxblood",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "tigredetartan.com/mahjong-mat-french-mural": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "French Mural",
-  "brand": "Tigre de Tartan"
+  "brand": "Tigre de Tartan",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/tigre-de-tartan/french-mural.jpg",
+  "catalog_key": "tigredetartan.com/mahjong-mat-french-mural",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "tigredetartan.com/tigre-de-tartan-x-miss-mahjong-el-ultimo-refresco-mahjong-mat": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
-  "name": "El \u00daltimo Refresco",
-  "brand": "Tigre de Tartan"
+  "name": "El Último Refresco",
+  "brand": "Tigre de Tartan",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/tigre-de-tartan/el-ltimo-refresco.jpg",
+  "catalog_key": "tigredetartan.com/tigre-de-tartan-x-miss-mahjong-el-ultimo-refresco-mahjong-mat",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "tigredetartan.com/mahjong-mat-caned-trompe-l-oeil-natural": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Caned Trompe L'oeil",
-  "brand": "Tigre de Tartan"
+  "brand": "Tigre de Tartan",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/tigre-de-tartan/caned-trompe-l-oeil.jpg",
+  "catalog_key": "tigredetartan.com/mahjong-mat-caned-trompe-l-oeil-natural",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "tigredetartan.com/mahjong-mat-el-tigre-new-edition": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "El Tigre",
-  "brand": "Tigre de Tartan"
+  "brand": "Tigre de Tartan",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/tigre-de-tartan/el-tigre.jpg",
+  "catalog_key": "tigredetartan.com/mahjong-mat-el-tigre-new-edition",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "tigredetartan.com/mahjong-mat-hearts-horseshoes-2": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Hearts & Horseshoes",
-  "brand": "Tigre de Tartan"
+  "brand": "Tigre de Tartan",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/tigre-de-tartan/hearts-horseshoes.jpg",
+  "catalog_key": "tigredetartan.com/mahjong-mat-hearts-horseshoes-2",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "tigredetartan.com/mahjong-mat-mantel-mates": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Mantel Mates",
-  "brand": "Tigre de Tartan"
+  "brand": "Tigre de Tartan",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/tigre-de-tartan/mantel-mates.jpg",
+  "catalog_key": "tigredetartan.com/mahjong-mat-mantel-mates",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "www.bambirdboutique.com/origami-leather-mat": {
   "status": "hidden",
   "reason": "duplicate/base or rejected photo"
  },
  "birdandbamboo.com/the-paradise-mahjong-mat-passion-pink": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Paradise Pink",
-  "brand": "Bird & Bamboo"
+  "brand": "Bird & Bamboo",
+  "photo_class": "clean flat",
+  "photo": "assets/mats/bird-bamboo/paradise-pink.jpg",
+  "catalog_key": "birdandbamboo.com/the-paradise-mahjong-mat-passion-pink",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "thatmahjongmoment.com/evergreen-mahjong-mat": {
   "status": "needs-photo",
@@ -86,22 +146,37 @@
   "reason": "duplicate/base or rejected photo"
  },
  "tigredetartan.com/paige-spearin-shell-yeah-mahjong-mat": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Shell Yeah",
-  "brand": "Tigre de Tartan"
+  "brand": "Tigre de Tartan",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/tigre-de-tartan/shell-yeah.jpg",
+  "catalog_key": "tigredetartan.com/paige-spearin-shell-yeah-mahjong-mat",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "missmahjong.com/powder-blue-garden-party-mahjong-playing-mat": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Powder Blue Garden Party",
-  "brand": "Miss Mahjong"
+  "brand": "Miss Mahjong",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/miss-mahjong/powder-blue-garden-party.jpg",
+  "catalog_key": "missmahjong.com/powder-blue-garden-party-mahjong-playing-mat",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "www.mahjsquadshop.com/bejeweled-dream-mahjong-mat": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Bejeweled Dream",
-  "brand": "Mahj Squad"
+  "brand": "Mahj Squad",
+  "photo_class": "watermarked (catalog + swipe + album, never social)",
+  "photo": "assets/mats/mahj-squad/bejeweled-dream.jpg",
+  "catalog_key": "mahjsquadshop.com/bejeweled-dream-mahjong-mat",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "www.bambirdboutique.com/bandana-neoprene-mahjong-mat": {
   "status": "hidden",
@@ -114,10 +189,15 @@
   "brand": "Mahj Squad"
  },
  "splashofcolorco.com/preppy-pastel-animal-print-scalloped-mahjong-mat": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Preppy Animal Print",
-  "brand": "Splash of Color"
+  "brand": "Splash of Color",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/splash-of-color/preppy-animal-print.jpg",
+  "catalog_key": "splashofcolorco.com/preppy-pastel-animal-print-scalloped-mahjong-mat",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "mahjmood.com/the-bow-and-bloom-collection-pre-order-estimated-delivery-january": {
   "status": "needs-photo",
@@ -132,10 +212,15 @@
   "brand": "Mahj & Moon"
  },
  "amahjline.com/round-top-mat": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Round Top Mahjong Game Mat",
-  "brand": "Amahj"
+  "brand": "Amahj",
+  "photo_class": "clean flat",
+  "photo": "assets/mats/amahj/round-top-mahjong-game-mat.jpg",
+  "catalog_key": "amahjline.com/round-top-mat",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "brittmillsdesign.com/rosalie-neoprene-mahjong-mat": {
   "status": "needs-photo",
@@ -148,16 +233,26 @@
   "reason": "duplicate/base or rejected photo"
  },
  "mahjsquadshop.com/regency-mahjong-mat": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Regency Mahjong Mat",
-  "brand": "Mahj Squad"
+  "brand": "Mahj Squad",
+  "photo_class": "watermarked (catalog + swipe + album, never social)",
+  "photo": "assets/mats/mahj-squad/regency-mahjong-mat.jpg",
+  "catalog_key": "mahjsquadshop.com/regency-mahjong-mat",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "mahjsquadshop.com/jade-green-chinoiserie-mahjong-mat": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Jade Green Chinoiserie Mahjong Mat",
-  "brand": "Mahj Squad"
+  "brand": "Mahj Squad",
+  "photo_class": "watermarked (catalog + swipe + album, never social)",
+  "photo": "assets/mats/mahj-squad/jade-green-chinoiserie-mahjong-mat.jpg",
+  "catalog_key": "mahjsquadshop.com/jade-green-chinoiserie-mahjong-mat",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "mahjsquadshop.com/bejeweled-dream-mahjong-mat": {
   "status": "needs-photo",
@@ -166,28 +261,48 @@
   "brand": "Mahj Squad"
  },
  "mahjsquadshop.com/blue-chinoiserie-mahjong-mat-copy": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Pastel Chinoiserie Mahjong Mat",
-  "brand": "Mahj Squad"
+  "brand": "Mahj Squad",
+  "photo_class": "watermarked (catalog + swipe + album, never social)",
+  "photo": "assets/mats/mahj-squad/pastel-chinoiserie-mahjong-mat.jpg",
+  "catalog_key": "mahjsquadshop.com/blue-chinoiserie-mahjong-mat-copy",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "mahjsquadshop.com/candy-cane-pink-wonderland-mahjong-mat": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Candy Cane Pink Wonderland Mahjong Mat",
-  "brand": "Mahj Squad"
+  "brand": "Mahj Squad",
+  "photo_class": "watermarked (catalog + swipe + album, never social)",
+  "photo": "assets/mats/mahj-squad/candy-cane-pink-wonderland-mahjong-mat.jpg",
+  "catalog_key": "mahjsquadshop.com/candy-cane-pink-wonderland-mahjong-mat",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "mahjsquadshop.com/blue-christmas-mahjong-mat": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Blue Christmas Mahjong Mat",
-  "brand": "Mahj Squad"
+  "brand": "Mahj Squad",
+  "photo_class": "watermarked (catalog + swipe + album, never social)",
+  "photo": "assets/mats/mahj-squad/blue-christmas-mahjong-mat.jpg",
+  "catalog_key": "mahjsquadshop.com/blue-christmas-mahjong-mat",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "mahjsquadshop.com/green-malachite-mahjong-mat-emerald-green-and-jewel-neoprene-mahjongg-mat-jewel-tone-mahj-mat-malachite-stone-mahj-ongg-mat-1": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Green Malachite Mahjong Mat",
-  "brand": "Mahj Squad"
+  "brand": "Mahj Squad",
+  "photo_class": "watermarked (catalog + swipe + album, never social)",
+  "photo": "assets/mats/mahj-squad/green-malachite-mahjong-mat.jpg",
+  "catalog_key": "mahjsquadshop.com/green-malachite-mahjong-mat-emerald-green-and-jewel-neoprene-mahjongg-mat-jewel-tone-mahj-mat-malachite-stone-mahj-ongg-mat-1",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "mahjsquadshop.com/pink-chinoiserie-mahjong-mat-pink-floral-neoprene-mahjongg-mat-pink-chintz-mahj-mat-colorful-floral-mahj-ongg-mat-spring-1": {
   "status": "needs-photo",
@@ -196,10 +311,15 @@
   "brand": "Mahj Squad"
  },
  "mahjsquadshop.com/vintage-rose-mahjong-mat-pink-mahj-mat-floral-neoprene-mahjongg-mat": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Vintage Rose Mahjong Mat",
-  "brand": "Mahj Squad"
+  "brand": "Mahj Squad",
+  "photo_class": "watermarked (catalog + swipe + album, never social)",
+  "photo": "assets/mats/mahj-squad/vintage-rose-mahjong-mat.jpg",
+  "catalog_key": "mahjsquadshop.com/vintage-rose-mahjong-mat-pink-mahj-mat-floral-neoprene-mahjongg-mat",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "mahjsquadshop.com/palm-springs-mahjong-mat-neoprene-mahjong-mat-in-palm-springs-mid-century-mahjong-mat-pink-mahjong-tropical-mahj-mahjongg-mat-1": {
   "status": "needs-photo",
@@ -212,10 +332,15 @@
   "reason": "duplicate/base or rejected photo"
  },
  "missmahjong.com/el-ultimo-refresco-mahjong-playing-mat": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
-  "name": "El \u00daltimo Refresco Mahjong Playing Mat",
-  "brand": "Miss Mahjong"
+  "name": "El Último Refresco Mahjong Playing Mat",
+  "brand": "Miss Mahjong",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/miss-mahjong/el-ltimo-refresco-mahjong-playing-mat.jpg",
+  "catalog_key": "missmahjong.com/el-ultimo-refresco-mahjong-playing-mat",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "missmahjong.com/bandit-mahjong-playing-mat": {
   "status": "hidden",
@@ -280,40 +405,70 @@
   "reason": "duplicate/base or rejected photo"
  },
  "splashofcolorco.com/lotus-palm-society-mahjong-mat-sleek-surface": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Lotus Palm Society Mahjong Mat Sleek Surface",
-  "brand": "Splash of Color"
+  "brand": "Splash of Color",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/splash-of-color/lotus-palm-society-mahjong-mat-sleek-surface.jpg",
+  "catalog_key": "splashofcolorco.com/lotus-palm-society-mahjong-mat-sleek-surface",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "splashofcolorco.com/modtastic-cat-s-meow-mahjong-mat-sleek-surface": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
-  "name": "Modtastic Cat\u2019s Meow Mahjong Mat Sleek Surface",
-  "brand": "Splash of Color"
+  "name": "Modtastic Cat’s Meow Mahjong Mat Sleek Surface",
+  "brand": "Splash of Color",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/splash-of-color/modtastic-cat-s-meow-mahjong-mat-sleek-surface.jpg",
+  "catalog_key": "splashofcolorco.com/modtastic-cat-s-meow-mahjong-mat-sleek-surface",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "splashofcolorco.com/magical-land-of-oz-mahjong-mat-sleek-surface": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Magical Land Of Oz Mahjong Mat Sleek Surface",
-  "brand": "Splash of Color"
+  "brand": "Splash of Color",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/splash-of-color/magical-land-of-oz-mahjong-mat-sleek-surface.jpg",
+  "catalog_key": "splashofcolorco.com/magical-land-of-oz-mahjong-mat-sleek-surface",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "splashofcolorco.com/nostalgic-modcentric-santa-christmas-mahjong-mat-sleek-surface": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
   "name": "Nostalgic Modcentric Santa Christmas Mahjong Mat Sleek Surface",
-  "brand": "Splash of Color"
+  "brand": "Splash of Color",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/splash-of-color/nostalgic-modcentric-santa-christmas-mahjong-mat-sleek-surfa.jpg",
+  "catalog_key": "splashofcolorco.com/nostalgic-modcentric-santa-christmas-mahjong-mat-sleek-surface",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "tigredetartan.com/paige-spearin-mahjong-mat-apres-mahj": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
-  "name": "Paige Spearin Mahjong Mat, Apr\u00e8s Mahj",
-  "brand": "Tigre de Tartan"
+  "name": "Paige Spearin Mahjong Mat, Après Mahj",
+  "brand": "Tigre de Tartan",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/tigre-de-tartan/paige-spearin-mahjong-mat-apr-s-mahj.jpg",
+  "catalog_key": "tigredetartan.com/paige-spearin-mahjong-mat-apres-mahj",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "tigredetartan.com/katherine-hartman-x-tigre-de-tartan": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo on product page",
-  "name": "Katherine Hartman X Tigre de Tart\u00e1n Mahjong Mat, BIRDSONG",
-  "brand": "Tigre de Tartan"
+  "name": "Katherine Hartman X Tigre de Tartán Mahjong Mat, BIRDSONG",
+  "brand": "Tigre de Tartan",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/tigre-de-tartan/katherine-hartman-x-tigre-de-tart-n-mahjong-mat-birdsong.jpg",
+  "catalog_key": "tigredetartan.com/katherine-hartman-x-tigre-de-tartan",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy": {
   "status": "hidden",
@@ -393,22 +548,37 @@
   "reason": "duplicate/base or rejected photo"
  },
  "www.middleandmainmahjong.com/grandmother-kathryn-vintage-quilt-mat-copy": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "Tiffany said YES Oct 15; every product photo is a patio-table lifestyle shot (tiles, umbrella pole, chairs, script name overlay); add when she sends a cutout",
   "name": "Grandmother \"Betty\" Vintage Quilt Mat",
-  "brand": "Middle & Main Mahjong"
+  "brand": "Middle & Main Mahjong",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/middle-main-mahjong/grandmother-betty-vintage-quilt-mat.jpg",
+  "catalog_key": "middleandmainmahjong.com/grandmother-kathryn-vintage-quilt-mat-copy",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "www.middleandmainmahjong.com/grandmother-martha-vintage-quilt-mat": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "Tiffany said YES Oct 15; every product photo is a patio-table lifestyle shot (tiles, umbrella pole, chairs, script name overlay); add when she sends a cutout",
   "name": "Grandmother \"Martha\" Vintage Quilt Mat",
-  "brand": "Middle & Main Mahjong"
+  "brand": "Middle & Main Mahjong",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/middle-main-mahjong/grandmother-martha-vintage-quilt-mat.jpg",
+  "catalog_key": "middleandmainmahjong.com/grandmother-martha-vintage-quilt-mat",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "www.middleandmainmahjong.com/grandmother-kathryn-vintage-quilt-mat": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "Tiffany said YES Oct 15; every product photo is a patio-table lifestyle shot (tiles, umbrella pole, chairs, script name overlay); add when she sends a cutout",
   "name": "Grandmother \"Kathryn\" Vintage Quilt Mat",
-  "brand": "Middle & Main Mahjong"
+  "brand": "Middle & Main Mahjong",
+  "photo_class": "usable (catalog + swipe only)",
+  "photo": "assets/mats/middle-main-mahjong/grandmother-kathryn-vintage-quilt-mat.jpg",
+  "catalog_key": "middleandmainmahjong.com/grandmother-kathryn-vintage-quilt-mat",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "www.ohmymahjong.com/holly-jolly-mat-in-tube": {
   "status": "hidden",
@@ -427,26 +597,41 @@
   "brand": "Oh My Mahjong"
  },
  "alb:amara:Club Mat": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "only a match card existed; needs real mat photo",
   "name": "Club Mat",
-  "brand": "Charleston Mahjong Club"
+  "brand": "Charleston Mahjong Club",
+  "photo_class": "clean flat",
+  "photo": "assets/mats/charleston-mahjong-club/the-club-mat-pink-white-stripe.jpg",
+  "catalog_key": "charlestonmahjongclub.com/neoprene-club-mat-w-matching-bag-2-color-options",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "alb:amara:Confetti Lemon Lime": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "only a match card existed; needs real mat photo",
   "name": "Confetti Lemon Lime",
-  "brand": "My Fair Mahjong"
+  "brand": "My Fair Mahjong",
+  "photo_class": "clean flat",
+  "photo": "assets/mats/my-fair-mahjong/confetti-lemon-lime.jpg",
+  "catalog_key": "myfairmahjong.com/mahjong-mat-confetti-33-x-33",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "alb:amara:Chinoiserie": {
   "status": "hidden",
   "reason": "match card, not a mat photo"
  },
  "alb:amara:Birdie": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "only a match card existed; needs real mat photo",
   "name": "Birdie (retired)",
-  "brand": "Oh My Mahjong"
+  "brand": "Oh My Mahjong",
+  "photo_class": "clean flat",
+  "photo": "assets/mats/oh-my-mahjong/birdie-retired.jpg",
+  "catalog_key": "ohmymahjong.com/birdie-retired-green",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "alb:heritage:Hydrangea Bliss": {
   "status": "hidden",
@@ -667,10 +852,15 @@
   "reason": "duplicate/base or rejected photo"
  },
  "alb:drake:Green Gingham": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "only a match card existed; needs real mat photo",
   "name": "Green Gingham",
-  "brand": "Wren Mats"
+  "brand": "Wren Mats",
+  "photo_class": "clean flat",
+  "photo": "assets/mats/wren-mats/green-gingham.jpg",
+  "catalog_key": "wrenmats.com/the-pink-mat-rye8z",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "alb:drake:Golden Gingham": {
   "status": "needs-photo",
@@ -679,10 +869,15 @@
   "brand": "Sunday Mahjong"
  },
  "alb:drake:Dancing Poppies": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "only a match card existed; needs real mat photo",
   "name": "Dancing Poppies",
-  "brand": "Wren Mats"
+  "brand": "Wren Mats",
+  "photo_class": "clean flat",
+  "photo": "assets/mats/wren-mats/dancing-poppies.jpg",
+  "catalog_key": "wrenmats.com/dancing-poppies-mat",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "alb:drake:Nawuno": {
   "status": "needs-photo",
@@ -781,10 +976,15 @@
   "reason": "match card, not a mat photo"
  },
  "alb:seabreeze:The Club Blue Green Stripe": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "only a match card existed; needs real mat photo",
   "name": "The Club Blue Green Stripe",
-  "brand": "Charleston Mahjong Club"
+  "brand": "Charleston Mahjong Club",
+  "photo_class": "clean flat",
+  "photo": "assets/mats/charleston-mahjong-club/the-club-mat-blue-green-stripe.jpg",
+  "catalog_key": "charlestonmahjongclub.com/the-club-mat-2-color-options-copy",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "alb:talulah:Goldie": {
   "status": "hidden",
@@ -887,10 +1087,15 @@
   "reason": "Tiffany OK Oct 14: interim photo with props until she takes an aerial photo"
  },
  "alb:solara:Palm Beach": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "only a match card existed; needs real mat photo",
   "name": "Palm Beach",
-  "brand": "Wren Mats"
+  "brand": "Wren Mats",
+  "photo_class": "clean flat",
+  "photo": "assets/mats/wren-mats/palm-beach.jpg",
+  "catalog_key": "wrenmats.com/0kam5qvgncmooixxnmb05lcuhaqp68",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "alb:solara:Songbird Bloom": {
   "status": "needs-photo",
@@ -1413,16 +1618,26 @@
   "reason": "duplicate/base or rejected photo"
  },
  "alb:jade:Watercolor Floral": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "only a match card existed; needs real mat photo",
   "name": "Watercolor Floral",
-  "brand": "Wren Mats"
+  "brand": "Wren Mats",
+  "photo_class": "clean flat",
+  "photo": "assets/mats/wren-mats/watercolor-floral.jpg",
+  "catalog_key": "wrenmats.com/watercolor-floral",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "alb:jade:Bright Orangey": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "only a match card existed; needs real mat photo",
   "name": "Bright Orangey",
-  "brand": "Wren Mats"
+  "brand": "Wren Mats",
+  "photo_class": "clean flat",
+  "photo": "assets/mats/wren-mats/bright-orangey-red-and-blue.jpg",
+  "catalog_key": "wrenmats.com/bright-orangey-red-and-blue-art",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "alb:jade:Chinoiserie": {
   "status": "hidden",
@@ -1481,10 +1696,15 @@
   "reason": "duplicate/base or rejected photo"
  },
  "alb:malachite:YOTD Purple": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "only a match card existed; needs real mat photo",
   "name": "YOTD Purple",
-  "brand": "Bespoke Mahjong"
+  "brand": "Bespoke Mahjong",
+  "photo_class": "clean flat",
+  "photo": "assets/mats/bespoke-mahjong/year-of-the-dragon-plum.jpg",
+  "catalog_key": "bespokemahjong.com/year-of-the-dragon-mat-plum",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "alb:malachite:Vintage Floral": {
   "status": "hidden",
@@ -2343,31 +2563,31 @@
  "myfairmahjong.com/mini-mahjong-mats?v=49809796202807": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "Mini Color Wave \u2013 Cobalt Center- Light Blue Scallop",
+  "name": "Mini Color Wave – Cobalt Center- Light Blue Scallop",
   "brand": "My Fair Mahjong"
  },
  "myfairmahjong.com/mini-mahjong-mats?v=48312757518647": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "Mini Color Wave \u2013 Green Center- Pink Scallop",
+  "name": "Mini Color Wave – Green Center- Pink Scallop",
   "brand": "My Fair Mahjong"
  },
  "myfairmahjong.com/mini-mahjong-mats?v=48312757616951": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "Mini Color Wave \u2013 Blue Center- Green Scallop",
+  "name": "Mini Color Wave – Blue Center- Green Scallop",
   "brand": "My Fair Mahjong"
  },
  "myfairmahjong.com/mini-mahjong-mats?v=48984013537591": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "Mini Color Wave \u2013 Pink Center- Blue Scallop",
+  "name": "Mini Color Wave – Pink Center- Blue Scallop",
   "brand": "My Fair Mahjong"
  },
  "myfairmahjong.com/mini-mahjong-mats?v=48984013570359": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "Mini Color Wave \u2013 Orange Center- Pink Scallop",
+  "name": "Mini Color Wave – Orange Center- Pink Scallop",
   "brand": "My Fair Mahjong"
  },
  "myfairmahjong.com/standard-mahjong-mats?v=49809801937207": {
@@ -2629,49 +2849,49 @@
  "peacelovemahjong.com/mile-high-mahj-club-travel-mats?v=50875812806948": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "Mile High Travel \u2013 Pink with Aqua/Chartreuse",
+  "name": "Mile High Travel – Pink with Aqua/Chartreuse",
   "brand": "Peace Love Mahjong"
  },
  "peacelovemahjong.com/mile-high-mahj-club-travel-mats?v=50875812839716": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "Mile High Travel \u2013 Dark Pink with Aqua/Light Pink/Purple",
+  "name": "Mile High Travel – Dark Pink with Aqua/Light Pink/Purple",
   "brand": "Peace Love Mahjong"
  },
  "peacelovemahjong.com/mile-high-mahj-club-travel-mats?v=50875812872484": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "Mile High Travel \u2013 Purple",
+  "name": "Mile High Travel – Purple",
   "brand": "Peace Love Mahjong"
  },
  "peacelovemahjong.com/mile-high-mahj-club-travel-mats?v=50875812905252": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "Mile High Travel \u2013 Chartreuse",
+  "name": "Mile High Travel – Chartreuse",
   "brand": "Peace Love Mahjong"
  },
  "peacelovemahjong.com/mile-high-mahj-club-travel-mats?v=50875812938020": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "Mile High Travel \u2013 Aqua",
+  "name": "Mile High Travel – Aqua",
   "brand": "Peace Love Mahjong"
  },
  "peacelovemahjong.com/mile-high-mahj-club-travel-mats?v=50875812970788": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "Mile High Travel \u2013 French Blue",
+  "name": "Mile High Travel – French Blue",
   "brand": "Peace Love Mahjong"
  },
  "peacelovemahjong.com/mile-high-mahj-club-travel-mats?v=50875813036324": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "Mile High Travel \u2013 Light Pink with Chartreuse",
+  "name": "Mile High Travel – Light Pink with Chartreuse",
   "brand": "Peace Love Mahjong"
  },
  "peacelovemahjong.com/mile-high-mahj-club-travel-mats?v=55365535105316": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "Mile High Travel \u2013 Dark Green",
+  "name": "Mile High Travel – Dark Green",
   "brand": "Peace Love Mahjong"
  },
  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy?v=53324522881333": {
@@ -2697,47 +2917,47 @@
  "www.bambirdboutique.com/neoprene-umbrella-mahjong-mat?v=51245106266421": {
   "status": "hidden",
   "reason": "duplicate design: noted on original",
-  "name": "Neoprene Umbrella \u2013 Sky blue",
+  "name": "Neoprene Umbrella – Sky blue",
   "brand": "Bam Bird Boutique",
   "noted_on": "www.bambirdboutique.com/east-meets-west-neoprene-mat?v=49857170669877"
  },
  "www.bambirdboutique.com/neoprene-umbrella-mahjong-mat?v=51360623591733": {
   "status": "hidden",
   "reason": "duplicate design: noted on original",
-  "name": "Neoprene Umbrella \u2013 Purple",
+  "name": "Neoprene Umbrella – Purple",
   "brand": "Bam Bird Boutique",
   "noted_on": "www.bambirdboutique.com/east-meets-west-neoprene-mat?v=49857170702645"
  },
  "www.bambirdboutique.com/neoprene-umbrella-mahjong-mat?v=67630679916853": {
   "status": "hidden",
   "reason": "duplicate design: noted on original",
-  "name": "Neoprene Umbrella \u2013 Olive Green/Dusty Lilac accents",
+  "name": "Neoprene Umbrella – Olive Green/Dusty Lilac accents",
   "brand": "Bam Bird Boutique",
   "noted_on": "www.bambirdboutique.com/bandana-neoprene-mahjong-mat?v=53345465172277"
  },
  "www.bambirdboutique.com/neoprene-umbrella-mahjong-mat?v=67630708490549": {
   "status": "hidden",
   "reason": "duplicate design: noted on original",
-  "name": "Neoprene Umbrella \u2013 Blue/Pink accents",
+  "name": "Neoprene Umbrella – Blue/Pink accents",
   "brand": "Bam Bird Boutique",
   "noted_on": "www.bambirdboutique.com/bandana-neoprene-mahjong-mat?v=53345465205045"
  },
  "www.bambirdboutique.com/travel-neoprene-mat?v=50912199147829": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "Travel \u2013 Purple",
+  "name": "Travel – Purple",
   "brand": "Bam Bird Boutique"
  },
  "www.bambirdboutique.com/travel-neoprene-mat?v=50912199180597": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "Travel \u2013 Sky blue",
+  "name": "Travel – Sky blue",
   "brand": "Bam Bird Boutique"
  },
  "www.bambirdboutique.com/travel-neoprene-mat?v=53279207653685": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "Travel \u2013 Midnight Gray",
+  "name": "Travel – Midnight Gray",
   "brand": "Bam Bird Boutique"
  },
  "www.bambirdboutique.com/east-meets-west-neoprene-mat?v=49857170669877": {
@@ -2795,31 +3015,31 @@
  "www.letsmahj-on.com/let-s-mahj-on-floating-pool-mahjong-mat?v=42905473777769": {
   "status": "hidden",
   "reason": "pool mat: Tiffany said no to pool mats (Oct 15)",
-  "name": "LMO! Floating Pool \u2013 Light Pink",
+  "name": "LMO! Floating Pool – Light Pink",
   "brand": "Let's Mahj On"
  },
  "www.letsmahj-on.com/let-s-mahj-on-floating-pool-mahjong-mat?v=42905473810537": {
   "status": "hidden",
   "reason": "pool mat: Tiffany said no to pool mats (Oct 15)",
-  "name": "LMO! Floating Pool \u2013 Bright Blue",
+  "name": "LMO! Floating Pool – Bright Blue",
   "brand": "Let's Mahj On"
  },
  "www.letsmahj-on.com/let-s-mahj-on-floating-pool-mahjong-mat?v=43206778847337": {
   "status": "hidden",
   "reason": "pool mat: Tiffany said no to pool mats (Oct 15)",
-  "name": "LMO! Floating Pool \u2013 Turquoise",
+  "name": "LMO! Floating Pool – Turquoise",
   "brand": "Let's Mahj On"
  },
  "www.letsmahj-on.com/let-s-mahj-on-floating-pool-mahjong-mat?v=43206786711657": {
   "status": "hidden",
   "reason": "pool mat: Tiffany said no to pool mats (Oct 15)",
-  "name": "LMO! Floating Pool \u2013 Bright Pink",
+  "name": "LMO! Floating Pool – Bright Pink",
   "brand": "Let's Mahj On"
  },
  "www.letsmahj-on.com/let-s-mahj-on-floating-pool-mahjong-mat?v=43206788644969": {
   "status": "hidden",
   "reason": "pool mat: Tiffany said no to pool mats (Oct 15)",
-  "name": "LMO! Floating Pool \u2013 Purple",
+  "name": "LMO! Floating Pool – Purple",
   "brand": "Let's Mahj On"
  },
  "www.letsmahj-on.com/lmo-floral-border-mat?v=42705467342953": {
@@ -3839,10 +4059,15 @@
   "brand": "Royal Mahjong Society"
  },
  "theroyalmahjongsociety.com/hydrangea-mahjong-mat": {
-  "status": "needs-photo",
+  "status": "photo-found",
   "reason": "no isolated mat photo (lifestyle, tiles/racks on mat, stacks or text overlay)",
   "name": "Hydrangea Mahjong Mat",
-  "brand": "Royal Mahjong Society"
+  "brand": "Royal Mahjong Society",
+  "photo_class": "clean flat",
+  "photo": "assets/mats/royal-mahjong-society/hydrangea-mahjong-mat.jpg",
+  "catalog_key": "theroyalmahjongsociety.com/hydrangea-mahjong-mat",
+  "was": "needs-photo",
+  "updated": "2026-10-18"
  },
  "mahjtilehaus.com/imperial-lotus-mat": {
   "status": "needs-photo",
@@ -3895,13 +4120,13 @@
  "mahjandmoon.com/vintage-garden-floral-mahjong-mat": {
   "status": "needs-photo",
   "reason": "no isolated mat photo (lifestyle, tiles/racks on mat, stacks or text overlay)",
-  "name": "Vintage Garden Floral Mahjong Mat \u2013 Pink & Green American Mah Jongg Mat",
+  "name": "Vintage Garden Floral Mahjong Mat – Pink & Green American Mah Jongg Mat",
   "brand": "Mahj & Moon"
  },
  "mahjandmoon.com/colorful-floral-mahjong-mat": {
   "status": "needs-photo",
   "reason": "no isolated mat photo (lifestyle, tiles/racks on mat, stacks or text overlay)",
-  "name": "Colorful Botanical Mahjong Mat \u2013 Pink, Orange & Green Floral Mah Jongg Mat",
+  "name": "Colorful Botanical Mahjong Mat – Pink, Orange & Green Floral Mah Jongg Mat",
   "brand": "Mahj & Moon"
  },
  "mahjandmoon.com/bird-pear-blossom-mahjong-mat": {
@@ -4194,7 +4419,7 @@
  "www.bambirdboutique.com/neoprene-umbrella-mahjong-mat?v=67630700593461": {
   "status": "hidden",
   "reason": "duplicate design: noted on original",
-  "name": "Neoprene Umbrella \u2013 Bright Abstract",
+  "name": "Neoprene Umbrella – Bright Abstract",
   "brand": "Bam Bird Boutique",
   "noted_on": "www.bambirdboutique.com/bright-abstract-neoprene-mahjong-mat"
  },
@@ -4296,7 +4521,7 @@
  "peacelovemahjong.com/mile-high-mahj-club-travel-racks-set-of-4": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "Travel and Kids Racks - Set of 4 \u2013 Pink",
+  "name": "Travel and Kids Racks - Set of 4 – Pink",
   "brand": "Peace Love Mahjong",
   "kind": "rack"
  },
@@ -4345,21 +4570,21 @@
  "myfairmahjong.com/mini-acrylic-racks?v=51694566736183": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "My Fair Mahjong Mini Travel \u2013 Clear",
+  "name": "My Fair Mahjong Mini Travel – Clear",
   "brand": "My Fair Mahjong",
   "kind": "rack"
  },
  "myfairmahjong.com/mini-acrylic-racks?v=51694566768951": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "My Fair Mahjong Mini Travel \u2013 Magenta",
+  "name": "My Fair Mahjong Mini Travel – Magenta",
   "brand": "My Fair Mahjong",
   "kind": "rack"
  },
  "myfairmahjong.com/mini-acrylic-racks?v=51694566801719": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "My Fair Mahjong Mini Travel \u2013 Teal",
+  "name": "My Fair Mahjong Mini Travel – Teal",
   "brand": "My Fair Mahjong",
   "kind": "rack"
  },
@@ -4446,13 +4671,13 @@
  "brittmillsdesign.com/soiree-blue-tablecloth": {
   "status": "hidden",
   "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
-  "name": "Soir\u00e9e Blue Tablecloth",
+  "name": "Soirée Blue Tablecloth",
   "brand": "Britt Mills"
  },
  "brittmillsdesign.com/soiree-pink-tablecloth": {
   "status": "hidden",
   "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
-  "name": "Soir\u00e9e Pink Tablecloth",
+  "name": "Soirée Pink Tablecloth",
   "brand": "Britt Mills"
  },
  "brittmillsdesign.com/revelry-tablecloth": {
@@ -4518,7 +4743,7 @@
  "brittmillsdesign.com/soiree-square-tablecloth": {
   "status": "hidden",
   "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
-  "name": "Soir\u00e9e Square Tablecloth",
+  "name": "Soirée Square Tablecloth",
   "brand": "Britt Mills"
  },
  "brittmillsdesign.com/bella-ii-tablecloth": {
@@ -4638,7 +4863,7 @@
  "brittmillsdesign.com/soiree-tablecloth": {
   "status": "hidden",
   "reason": "table covering: Tiffany said no to table coverings/table covers (Oct 15)",
-  "name": "Soir\u00e9e Tablecloth",
+  "name": "Soirée Tablecloth",
   "brand": "Britt Mills"
  },
  "brittmillsdesign.com/mabel-tablecloth": {
@@ -4734,13 +4959,13 @@
  "mahjmood.com/white-pearl-travel-tiles": {
   "status": "hidden",
   "reason": "travel item: main app is full size only (Tiffany Oct 15)",
-  "name": "White Pearl Travel Tiles \u2013 Radiant Mood Collection | Pre-Order, Ships Late September",
+  "name": "White Pearl Travel Tiles – Radiant Mood Collection | Pre-Order, Ships Late September",
   "brand": "Mahj Mood"
  },
  "mahjongstudios.com/mahjong-studios-american-floating-mahjong-pool-tile-set": {
   "status": "hidden",
   "reason": "pool item: Tiffany said no to pool mats (Oct 15)",
-  "name": "Mahjong Studios \u2013 American Floating Pool Mahjong Tiles",
+  "name": "Mahjong Studios – American Floating Pool Mahjong Tiles",
   "brand": "Mahjong Studios"
  },
  "mahjongstudios.com/single-one-yellow-mahjong-rack-and-pusher": {
