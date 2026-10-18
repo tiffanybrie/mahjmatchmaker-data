@@ -125,6 +125,12 @@ def main(spec_path, out):
     S = json.load(open(spec_path))
     M = json.load(open(S["fym_mats"]))
     R = load_refs(S["fym_ref"])
+    # photo fixes + pool additions shared by every book (photo_overrides.json, Oct 18)
+    OV = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "photo_overrides.json")))
+    REPO = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
+    OVF = {k: os.path.join(REPO, v["file"]) for k, v in {**OV.get("fix", {}), **OV.get("add", {})}.items()}
+    for k, v in OV.get("add", {}).items():
+        M.setdefault(k, dict(v["entry"]))
     os.makedirs(out + "/m", exist_ok=True)
     os.makedirs(out + "/t", exist_ok=True)
     rep, items = [], []
@@ -136,6 +142,12 @@ def main(spec_path, out):
             rep.append((it["id"], f"OK file {im.width}x{im.height}")); continue
         key = it["key"]
         m = M.get(key)
+        if key in OVF and m and not excluded(m, key):
+            im = trim(Image.open(OVF[key]).convert("RGB")); im.thumbnail((1600, 1600))
+            fn = f"m/{n}.jpg"; im.save(os.path.join(out, fn), "JPEG", quality=86)
+            items.append({"id": it["id"], "label": it.get("label") or f"{m['n']} · {m['bn']}", "img": fn,
+                          "url": m.get("u", ""), "w": im.width, "h": im.height})
+            rep.append((it["id"], f"OK override file {im.width}x{im.height}")); continue
         if not m or key.startswith("alb:"):
             rep.append((it["id"], "SKIP not in vetted catalog"));
             continue
@@ -166,8 +178,13 @@ def main(spec_path, out):
     pool = []
     for n, it in enumerate(S.get("pool", [])):
         m = M.get(it["key"])
-        if not m or it["id"] in have or excluded(m, it["key"]) or m.get("f") not in R: continue
-        im = b64img(R[m["f"]])
+        if not m or it["id"] in have or excluded(m, it["key"]): continue
+        if it["key"] in OVF:
+            im = Image.open(OVF[it["key"]]).convert("RGB"); im.thumbnail((520, 520))
+        elif m.get("f") in R:
+            im = b64img(R[m["f"]])
+        else:
+            continue
         if im.mode in ("RGBA", "LA", "P"):
             im = im.convert("RGBA"); bg = Image.new("RGB", im.size, "white"); bg.paste(im, mask=im.split()[3]); im = bg
         im = trim(im.convert("RGB")); fn = f"p/{n}.jpg"; im.save(os.path.join(out, fn), "JPEG", quality=82)

@@ -1,0 +1,53 @@
+{
+ "_about": "Swipe-book photo fixes (Tiffany, Oct 18). 'file' replaces the catalog photo for that key in every swipe book (deck and '+ Try another mat' pool). 'add' entries join the match pool even though the FYM catalog lacks them.",
+ "fix": {
+  "www.ohmymahjong.com/hampton-mat-in-tube": {
+   "file": "assets/mats/clean/hampton-omm.jpg",
+   "why": "catalog photo was a 2x2 collage of four monogrammed Hamptons; now the single flat listing photo"
+  }
+ },
+ "add": {
+  "mahjsquadshop.com/pink-floral-chinoiserie": {
+   "file": "assets/mats/mahj-squad/pink-floral-chinoiserie.jpg",
+   "entry": {
+    "n": "Pink Floral Chinoiserie",
+    "bn": "Mahj Squad",
+    "b": "mahjsquadshop.com",
+    "u": "https://mahjsquadshop.com/products/pink-chinoiserie-mahjong-mat-pink-floral-neoprene-mahjongg-mat-pink-chintz-mahj-mat-colorful-floral-mahj-ongg-mat-spring-1",
+    "dc": "https://mahjmatchmaker.com/mahj-squad-discount-code",
+    "pa": true,
+    "nc": false,
+    "rt": false,
+    "c": false,
+    "ml": false,
+    "mf": [
+     "pink"
+    ],
+    "ms": [
+     [
+      "#cf5693",
+      0.25
+     ],
+     [
+      "#cb799c",
+      0.24
+     ],
+     [
+      "#dca6bb",
+      0.22
+     ],
+     [
+      "#e0cbd1",
+      0.15
+     ],
+     [
+      "#abb1b6",
+      0.14
+     ]
+    ],
+    "hol": false
+   },
+   "why": "partner mat Tiffany loves; kept out of the pool since Oct 14 as 'needs-photo' (every listing photo is watermarked with racks/tiles on it). Best available: top-down full-mat shot, watermarked, album only."
+  }
+ }
+}
