@@ -91,3 +91,15 @@ All 14 pages swapped as whole-block replacements, using the blocks at commit e59
 - Fetching block text from jsDelivr sometimes returns "Package size exceeded"; the block text now comes from raw.githubusercontent.com at the same commit. Card images are on jsDelivr and all returned 200 on retry.
 
 - Oct 18 (later): 5 more live cards had their banned wood racks patched at commit 7a470d6: Amara + Clara's Dream, Nantucket + Hearts & Horseshoes, Jade + Blue Christmas, Heritage 2.0 + Festive Plaid and Dear Santa + Festive Plaid. The .html blocks for amara, nantucket, jade, heritage-2-0 and holiday are re-pinned and their captions now match the cards. The holiday December 1994 + Festive Plaid caption was copied from the Dear Santa card; it now mirrors its own card (tiles: B&B Red, B&B Evergreen, PLM Oak; mat: B&B Pink Coral). Re-apply these 5 blocks as whole-block pastes; the .json swap lists don't include this change.
+
+## Re-apply at 02d3765 — LIVE Oct 18 ~14:55 ET (amara, nantucket, jade, heritage-2-0, holiday)
+- The 5 wood-patched cards and the December 1994 caption fix are live.
+- **Drift check:** before each swap, the editor source was compared with the e593f10 block, ignoring leading and trailing whitespace. All 5 matched, so nothing had drifted.
+- **Verified by curl** (every figcaption and card image in the 02d3765 block is on the live page):
+  - amara: 49 captions, 16 images
+  - nantucket: 41 captions, 30 images
+  - jade: 59 captions, 21 images
+  - heritage-2-0: 81 captions, 27 images
+  - holiday: 109 captions, 154 images
+- No "Bird & Bamboo Almond" or "Tudor" text is left on these pages.
+- All 413 jsDelivr URLs in the codefooter blocks were warmed first: 412 returned 200 on the first try and 1 after a retry, so none were still failing.
