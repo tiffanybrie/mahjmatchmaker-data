@@ -97,7 +97,7 @@ def brand_logo(key, name):
 html_tpl = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'card2.html')).read()
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import racks as RKS
-OMM = uri(R + 'assets/brand/omm_certified.png', 'PNG'); NAVY = uri(R + 'assets/brand/card_navy_logo.png', 'PNG')
+OMM = uri(R + 'assets/brand/omm_certified.png', 'PNG'); NAVY = uri(R + 'assets/brand/card_navy_logo_v2.png', 'PNG')
 BBLOGO = uri(R + 'builder/logos/' + logos['Bird & Bamboo'], 'PNG')
 FLAME = uri(R + 'assets/brand/flame-heart-holiday.png', 'PNG')
 COLS = json.load(open(R + 'scripts/albumcard/holiday_title_colors.json')) if os.path.exists(R + 'scripts/albumcard/holiday_title_colors.json') else {}

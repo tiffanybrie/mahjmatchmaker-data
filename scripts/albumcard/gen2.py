@@ -26,7 +26,7 @@ def lum(h):
     h = h.lstrip('#'); r, g, b = [int(h[k:k+2], 16) for k in (0, 2, 4)]; return .299*r + .587*g + .114*b
 tpl = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'card2.html')).read()
 logos = json.load(open(R + 'builder/logos/map.json'))
-BBLOGO = uri(R + 'builder/logos/' + logos['Bird & Bamboo'], 'PNG'); NAVY = uri(R + 'assets/brand/card_navy_logo.png', 'PNG')
+BBLOGO = uri(R + 'builder/logos/' + logos['Bird & Bamboo'], 'PNG'); NAVY = uri(R + 'assets/brand/card_navy_logo_v2.png', 'PNG')
 MAT = uri(Image.open(R + spec['mat_file']).convert('RGB').crop(tuple(spec['mat_crop'])), maxs=1400) if spec.get('mat_file') else None
 BRANDS = {'Middle & Main': 'Middle & Main Mahjong'}  # rack-name prefix -> builder/logos/map.json key
 def brand_of(label):

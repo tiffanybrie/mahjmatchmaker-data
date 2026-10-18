@@ -23,7 +23,7 @@ fonts='/tmp/cc/f/'
 html_tpl=open(os.path.join(os.path.dirname(__file__),'card.html')).read()
 cards=[]
 BB={x['name']:x['hex'] for x in json.load(open(R+'work/bbracks.json'))}
-OMM=uri(R+'assets/brand/omm_certified.png','PNG');NAVY=uri(R+'assets/brand/card_navy_logo.png','PNG');BBLOGO=uri(R+'builder/logos/'+logos['Bird & Bamboo'],'PNG')
+OMM=uri(R+'assets/brand/omm_certified.png','PNG');NAVY=uri(R+'assets/brand/card_navy_logo_v2.png','PNG');BBLOGO=uri(R+'builder/logos/'+logos['Bird & Bamboo'],'PNG')
 def lum(h):h=h.lstrip('#');r,g,b=[int(h[k:k+2],16) for k in (0,2,4)];return .299*r+.587*g+.114*b
 for c in spec['cards']:
     bbl=[{'name':n[len('Bird & Bamboo '):],'hex':BB.get(n[len('Bird & Bamboo '):],'#999'),'light':lum(BB.get(n[len('Bird & Bamboo '):],'#999'))>185} for n in c.get('bb',[])]
