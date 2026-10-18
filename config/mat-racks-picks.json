@@ -699,5 +699,18 @@
   ],
   "approved": "2026-10-18",
   "note": "Tiffany Oct 18 03:05: Dark Navy, not Blackboard Black (the mat is navy); Wine, not Red (matches the deep brown); keep Evergreen; Sunday Cola (translucent brown acrylic, rendered) is a great fit, mat side only."
+ },
+ "sunday-rattan": {
+  "mat": "Sunday Mahjong Rattan",
+  "racks": [
+   "Bird & Bamboo Matcha",
+   "Bird & Bamboo Rust Metallic",
+   "Sunday Mahjong Cola"
+  ],
+  "files": [
+   "assets/mats/holiday/hd/sunday-rattan.jpg"
+  ],
+  "approved": "pending (Claude pick Oct 18, for the Rattan holiday table)",
+  "note": "Olive field = Matcha; burnt-orange cane weave = Rust Metallic (not bright Carrot/Persimmon: earthy mat); Sunday Cola picks up the chocolate frame. Sunday racks mat side only."
  }
 }
