@@ -18,8 +18,9 @@ def trim(im):
     a=np.asarray(im.convert('RGBA'));al=a[...,3];m=(al>20)&(a[...,:3].min(2)<245)
     ys,xs=np.where(m)
     return im.crop((xs.min(),ys.min(),xs.max()+1,ys.max()+1)) if len(xs) else im
-rep={}
+rep=json.load(open(OUT+'/report.json')) if os.path.exists(OUT+'/report.json') else {}
 for rid,r in D['racks'].items():
+    if rid in rep:continue
     src=None;out=None
     nn=norm(r['n']).replace('tortoise','tortoise')
     cands=[k for k in CARD if k==nn or k==norm(r['n'].replace('(','').replace(')',''))]
@@ -41,11 +42,12 @@ for rid,r in D['racks'].items():
             if best and best[0]>=1.3:
                 o=H.warp(best[4],best[1],q,best[0],cap=1400)
                 if H.sim(o,q)>0.85:src=best[3];out=o
-    if out is None:rep[rid]={'n':r['n'],'hd':None};continue
+    if out is None:rep[rid]={'n':r['n'],'hd':None};json.dump(rep,open(OUT+'/report.json','w'),indent=1);continue
     out=trim(out)
     if max(out.size)>1400:out.thumbnail((1400,1400),Image.LANCZOS)
     fn=hashlib.md5(rid.encode()).hexdigest()[:12]+'.webp';out.save(os.path.join(OUT,fn),'WEBP',quality=90)
     rep[rid]={'n':r['n'],'hd':fn,'size':list(out.size),'src':src}
+    json.dump(rep,open(OUT+'/report.json','w'),indent=1)
 json.dump(rep,open(OUT+'/report.json','w'),indent=1)
 c=sum(1 for v in rep.values() if v['hd']);print('racks',len(rep),'hd',c)
 import collections;print(collections.Counter((v.get('src') or 'none').split(':')[0] for v in rep.values()))

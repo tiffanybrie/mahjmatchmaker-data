@@ -8,6 +8,7 @@ SITE={'Bam Bird Boutique':'BamBirdBoutique.png','Amahj':'Amahj.png','Mahj & Vine
 'My Fair Mahjong':'MyFairMahjong.png','Tigre de Tartan':'TigredeTartan.png','Peace Love Mahjong':'PeaceLoveMahjong.png','Miss Mahjong':'MissMahjong.png',
 'Ozark Mah Jongg':'OzarkMahJongg.png','Ozark Mahjongg':'OzarkMahJongg.png','Mahj & Moon':'MahjMoon.png','Mahj and Moon':'MahjMoon.png','Mahjong Register':'MahjongRegister.png',
 'Rebecca Illustrated':'RebeccaIllustrated.png','Royal Mahjong Society':'RoyalMahjongSociety.png','Wren Mats':'WrenMats.png'}
+DEEPEN={'Britt Mills'}
 SKIP_REPO={'Mahjong Row & Co.'}  # repo file is washed out; the bundled one is better
 def trim(im):
     a=np.asarray(im.convert('RGBA'));m=(a[...,3]>16)&(a[...,:3].min(2)<246);ys,xs=np.where(m)
@@ -20,5 +21,9 @@ for b in sorted(set(hd)|set(SITE)):
     if not src:continue
     im=trim(Image.open(src).convert('RGBA'))
     if max(im.size)>900:im.thumbnail((900,900),Image.LANCZOS)
+    # very pale logos (e.g. Britt Mills' light script) disappear on the card's white chips: deepen them, keeping the hue
+    if b in DEEPEN:  # checked by eye: these pale scripts vanish on the white chips; deepen, keeping the hue
+        a=np.asarray(im).astype(float);ink=a[...,3]>10;lum=(0.299*a[...,0]+0.587*a[...,1]+0.114*a[...,2])/255;Lm=lum[ink].mean();k=0.40/Lm
+        a[ink,:3]=np.array([92,104,124]);im=Image.fromarray(a.astype('uint8'),'RGBA');print('deepened',b,round(Lm,2))
     fn=(re.sub(r'[^a-z0-9]','',b.lower()) or 'x')+'.png';im.save(O+'/'+fn,optimize=True);mp[b]={'f':fn,'size':list(im.size),'src':os.path.relpath(src,SP)}
 json.dump(mp,open(O+'/map.json','w'),indent=1);print(len(mp));print({k:v['size'] for k,v in mp.items()})

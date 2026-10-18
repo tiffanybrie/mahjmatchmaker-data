@@ -23,15 +23,25 @@ const hdIndex=()=>HDI||(HDI=fetch('hd/index.json').then(r=>r.ok?r.json():{}).cat
 async function hd(kind,key){try{const ix=await hdIndex();const c=(ix[kind]||{})[key];if(!c)return '';if(!HDC[c])HDC[c]=fetch('hd/'+c).then(r=>r.json()).catch(()=>({}));return (await HDC[c])[key]||'';}catch(e){return '';}}
 const hdOr=async(kind,key,fb)=>(await hd(kind,key))||fb||'';
 /* Short rack label: colour name only (brand and product words dropped). "Middle & Main Hawksbill Heritage (tortoise)" -> "Tortoise". */
-function rackLabel(id){const r=R[id];let t=shortR(id);const par=t.match(/\(([^)]+)\)/);if(par)return par[1].replace(/\b\w/g,c=>c.toUpperCase());
- t=t.replace(/\b(mahjong|mah jongg|racks?|pushers?|and pushers|set|of|\d+(\.\d+)?\s*(in|inch|")?|acrylic|premium|signature|luxury|wooden|wood|classic|heritage|hawksbill|scalloped|scallop|with|built-in|game|w\/|bag|the|metallic finish)\b/gi,' ').replace(/[“”"]/g,'').replace(/\s*-\s*/g,' ').replace(/\s+/g,' ').trim();
- const w=t.split(' ').filter(Boolean);if(!w.length)return shortR(id);if(w.length>3){const k=w.lastIndexOf('&');return (k>0&&k>=w.length-3?w.slice(k-1):w.slice(-2)).join(' ');}return w.join(' ');}
+const RL_JUNK=/\b(mahjong|mah jongg|racks?|pushers?|pusher set|set|sets|of|pieces?|acrylic|premium|signature|luxury|luxe|handmade|wooden|wood|classic|heritage|hawksbill|scalloped|scallop|with|built-in|attached|game|bag|the|magnetic|hinged|logo|collection|accessory|preorder|matte|finish|straight|double|two player|modern|new|shelf|angle|options?|color options|tile|only|included|no|patent|pending|american|solid|colors|multiple|inch|in|and|w)\b/gi;
+const RL_COL=/\b(white|black|clear|ivory|cream|pink|red|green|blue|navy|purple|lilac|yellow|orange|teal|aqua|mint|jade|tortoise|tortoiseshell|walnut|oak|burl|agate|marble|quartz|pearl|opal|brass|gold|silver|chartreuse|coral|peach|plum|lavender|mauve|magenta|cobalt|emerald|sapphire|turquoise|sand|sandstone|carrara|camphor|pine|mahogany|chestnut|cola|beechwood|lucite)\b/i;
+function rackLabel(id){const r=R[id];let t=shortR(id);const par=t.match(/\(([^)]+)\)/);if(par&&RL_COL.test(par[1]))return par[1].replace(/\b\w/g,c=>c.toUpperCase());
+ const core=(r.bn||'').replace(/\s*(Mahjong|Mahj Jongg|Imports|Boutique)\s*$/i,'').trim();if(core&&t.toLowerCase().startsWith(core.toLowerCase()))t=t.slice(core.length).trim();
+ t=t.replace(/\([^)]*\)/g,' ').replace(/\s+and\s+/gi,' & ');
+ const clean=x=>x.replace(/\d+(\.\d+)?\s*(-?inch|in|["”″])?/gi,' ').replace(RL_JUNK,' ').replace(/[“”"″,|+()!]/g,' ').replace(/\s&\s*$/,'').replace(/^\s*&\s/,'').replace(/\s+/g,' ').replace(/^(&|-)\s*|\s*(&|-)$/g,'').trim();
+ const segs=t.split(/\s+[–—|-]\s+|\s*\|\s*/).map(clean).filter(x=>x&&x.length>1);
+ let pick=segs.find(x=>RL_COL.test(x))||segs[segs.length-1]||'';
+ pick=pick.split(' ').map(w=>w===w.toUpperCase()&&w.length>2?w[0]+w.slice(1).toLowerCase():w).join(' ');
+ pick=clean(pick.replace(/\s-\s*$/,''));if(!/[A-Za-z]{3}/.test(pick)||/^(of|pusher|pushers|set|racks?|mahjong)\b/i.test(pick)){const cs=(r.n.match(new RegExp(RL_COL.source,'gi'))||[]).slice(0,2);pick=cs.length?cs.map(c=>c[0].toUpperCase()+c.slice(1).toLowerCase()).join(' '):'';}
+ if(!pick)pick=/luxe/i.test(r.n)?'Luxe':/acrylic|lucite/i.test(r.n)?'Acrylic':/wood/i.test(r.n)?'Wood':'Racks';
+ const w=pick.split(' ').filter(Boolean);if(!w.length)return shortR(id).split(' ').slice(-2).join(' ');
+ if(w.length>3){const k=w.indexOf('&');return (k>0?w.slice(Math.max(0,k-1),k+2):w.slice(-2)).join(' ');}return w.join(' ');}
 async function drawCard(){const job=++cardJob;
  try{await Promise.all(['400 100px Caprasimo','italic 500 40px "Playfair Display"','700 30px Bitter','600 26px Bitter'].map(f=>document.fonts.load(f)));}catch(e){}
  const s=set(),fb=S.fmt==='fb',W=fb?1080:1000,H=fb?1350:1500,SC=2;
  const PINK='#c8325f',NAVY='#054689',INK='#2a2036',MUTE='#7a6a85',CREAM='#f7ece3';
  const tb=T[s.tile].bn,mb=M[S.fav].bn,rp=S.rpick,rb=[...new Set(rp.map(r=>R[r].bn))];
- const [mat,tile,ours,icon,rks,tl,ml,rl]=await Promise.all([matFull(S.fav).then(lk),hdOr('t',s.tile,pile(s)).then(lk),hdOr('l','ours',LG('ours')).then(lk),hdOr('l','icon',LG('icon')).then(lk),
+ const [mat,tile,ours,icon,rks,tl,ml,rl]=await Promise.all([hd('m',S.fav).then(u=>u||matFull(S.fav)).then(lk),hdOr('t',s.tile,pile(s)).then(lk),hdOr('l','ours',LG('ours')).then(lk),hdOr('l','icon',LG('icon')).then(lk),
   Promise.all(rp.map(r=>hdOr('r',r,rackSrc(r)).then(lk))),hdOr('l',tb,LG(tb)).then(lk),hdOr('l',mb,LG(mb)).then(lk),Promise.all(rb.map(b=>hdOr('l',b,LG(b)).then(lk)))]);
  if(job!==cardJob)return;
  const cv=document.createElement('canvas');cv.width=W*SC;cv.height=H*SC;const g=cv.getContext('2d');g.scale(SC,SC);g.imageSmoothingEnabled=true;g.imageSmoothingQuality='high';
