@@ -39,7 +39,7 @@ TILES = [('sundaymahjong.com', 'sunday-blues-tile-set', 'Sunday Blues'),
          ('mahjongstudios.com', 'amber-jade-mahjong-tiles', 'Amber Jade')]
 # Yellow Mountain Imports: available American designs not in the app yet
 have_ymi = {re.sub(r'[^a-z]', '', v['n'].lower()) for k, v in D['tiles'].items() if 'ymimports' in k}
-have_ymi |= {'theclassic', 'koifish', 'koi'}
+have_ymi |= {'theclassic', 'koifish', 'koi', 'littlebirdie'}  # Little Birdie = the Little Bird design already in
 ymi = feed('ymimports.com'); cand = {}
 for h, p in ymi.items():
     ti = p['title']
@@ -74,7 +74,8 @@ def photo(p, pick_idx=None):
         if not flat_graphic(im): return im, src
     return None, None
 def lab(h): return rgb2lab(np.array([[[int(h[i:i+2], 16) / 255 for i in (1, 3, 5)]]]))[0, 0]
-PICK = json.load(open(OUT + '/pick.json')) if os.path.exists(OUT + '/pick.json') else {}
+PICK = json.load(open(OUT + '/pick.json')) if os.path.exists(OUT + '/pick.json') else {}  # key -> listing photo index, picked by eye
+LOCAL = {'sundaymahjong.com/sunday-blues-tile-set': '/home/claude/mahjmatchmaker-data/assets/tiles/album/sunday-blues.png'}  # listing photo is watermarked (doc 53)
 added = {'tiles': [], 'mats': []}; flagged = []
 nT = 0; rows = []
 for dom, h, name in TILES:
@@ -82,7 +83,8 @@ for dom, h, name in TILES:
     if not p or not br: flagged.append((dom, h, 'no feed/brand')); continue
     key = f"{br['host']}/{h}"
     if key in D['tiles']: continue
-    im, src = photo(p, PICK.get(key))
+    if key in LOCAL: im, src = Image.open(LOCAL[key]).convert('RGB'), LOCAL[key]
+    else: im, src = photo(p, PICK.get(key))
     if im is None: flagged.append((dom, h, 'no usable photo')); continue
     u = f"https://{br['host']}/products/{h}" + (('?' + br['q']) if br['q'] else '')
     full = im.copy(); full.thumbnail((900, 900)); fn = f't12/{nT}.jpg'; full.save(OUT + '/' + fn, quality=80); nT += 1
