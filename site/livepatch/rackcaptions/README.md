@@ -42,3 +42,15 @@ Each `<slug>.json` here has `caption_swaps`: `old` → `new`, each one a unique 
 Total here: 166
 
 Rebuild: `python3 scripts/albumcard/fix_rack_captions_oct18.py` (run on a clean checkout of site/livepatch/codefooter).
+
+## LIVE progress — Oct 18 ~12:15 ET (Tiffany approved in chat: "Approve fixing the rack captions on the other 22 album pages.")
+Before starting, every `old` segment on all 22 pages was re-checked against live HTML: each was found exactly once, and no page had drifted. The swaps were applied as caption-only edits inside the existing block, aborting if any segment wasn't exactly once.
+- **Done, and verified by curl that all new captions are present and no old ones remain:**
+  - taylor 4/4
+  - birdie 14/14
+  - coquette 9/9
+  - dandy 7/7
+- **Not done:** drake, emerald, gemma, glitterville, glow-wild, jasmine, lagoon, lola, luminaire, moonlight, osler, palm-royale, pearlescent, smith, solara, talulah, tortoise, willow.
+  - On drake the editor didn't open, so nothing was changed there.
+  - The Squarespace tab then stopped responding after navigating to emerald. It's probably waiting on a browser dialog.
+- Block ids per page: scratchpad cflive/rc_blocks.json, or find the block that contains each `old` segment.
