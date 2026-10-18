@@ -10,7 +10,7 @@ Tile photos: assets/tiles/album/<set>.jpg (Spring Love's source is only ~210px, 
 Racks: config/tile-racks-picks.json final_lists has none of the four sets. Lilac Soiree and Spring Love keep
 the rack their live Larkspur cards use (Peace Love Mahjong Oak, scripts/albumcard/specs/larkspur.json);
 Preppy Soiree and Shangri-la get no racks.
-Footer: current OMM mats 10% code; retired mats (not sold) SHOP THE MATCH.
+Footer: always the code (Oct 18 rule): 10% OFF USE CODE : MAHJMATCH, retired mats included (the code applies to the OMM tiles).
 v2 (Tiffany, Oct 15 6:50pm): card2 layout (racks off the left edge, OMM logo flag, condensed mat group) and
 - Lilac Soiree: tile racks PLM Oak + B&B Light Pink + B&B Dark Navy; order Birdie Pink, Chantilly, Jade, then the rest;
   mat matches picked by Claude (matpick.py, 1-2 B&B colours per mat).
@@ -86,7 +86,7 @@ for g, (tname, col, racks) in SETS.items():
         if mid in RET: src = Image.open(R + 'assets/mats/omm-retired/' + RETFILE.get(mid, mid + '.jpg')); srcn = 'assets/mats/omm-retired/' + RETFILE.get(mid, mid + '.jpg')
         else: src = Image.open(f'{W}/book/m/{k}.jpg'); srcn = f'vault book m/{k}.jpg'
         retired = mid in RET or mid == 'hol-miracle'
-        code = 'SHOP THE MATCH : MAHJMATCHMAKER.COM' if retired else '10% OFF  USE CODE : MAHJMATCH'
+        code = '10% OFF  USE CODE : MAHJMATCH'  # Oct 18 rule: every card carries MAHJMATCH (code works on the OMM tiles, retired mats included)
         fn = f"{g}-mahjong-tiles-oh-my-mahjong-{slug(nm)}-mat.jpg"
         c = {'slug': f'{g[:4]}{len(cards)+1:02d}', 'title': f'{tname} + {nm}', 'col': col, 'tile_file': f'assets/tiles/album/{g}.jpg',
              'racks': racks, 'file': fn, 'code': code, 'mat': uri(crop(src))}
