@@ -111,8 +111,8 @@ if OMM:
 <div style="position:absolute;top:120px;left:72px;right:72px">
  <div class="cap" style="font-size:84px;white-space:nowrap">Made for each other</div>
  <div class="pf" style="font-size:34px;margin-top:8px;color:#3c4f73">Her official {e(pr['brand'])} pair: <b style="font-weight:600;color:var(--navy)">{e(pr['mat'])}</b></div>
- <div class="ph" style="margin-top:30px;height:640px;border-radius:24px;background-image:url({TOG});background-size:150%;background-position:52% 42%;box-shadow:0 10px 26px rgba(6,40,90,.16);position:relative">
-  <div style="position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,.92);border-radius:99px;padding:8px 18px;font:600 20px Bit;color:var(--navy)">{e(P['name'])} on {e(pr['mat'])}, in {e(pr['brand'])}&rsquo;s own photo</div></div>
+ <div class="ph" style="margin-top:30px;height:640px;border-radius:24px;background-image:url({TOG});background-size:{'cover' if pr.get('together_fit')=='cover' else '150%'};background-position:{'center' if pr.get('together_fit')=='cover' else '52% 42%'};box-shadow:0 10px 26px rgba(6,40,90,.16);position:relative">
+  <div style="position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,.92);border-radius:99px;padding:8px 18px;font:600 20px Bit;color:var(--navy)">{e(pr.get('together_caption') or (P['name']+' on '+pr['mat']+', in '+pr['brand']+'’s own photo'))}</div></div>
  <div style="display:flex;align-items:center;gap:18px;margin-top:34px">
   <div class="ph" style="flex:0 0 170px;height:170px;border-radius:50%;background-image:url({TILE});box-shadow:0 0 0 6px #fff,0 8px 20px rgba(6,40,90,.16)"></div>
   <div style="flex:0 0 auto">{HT(54)}</div>

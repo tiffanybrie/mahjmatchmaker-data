@@ -122,8 +122,10 @@
    "mat": "Vivienne",
    "brand": "Oh My Mahjong",
    "img": "assets/launches/omm-vivienne-mat/01.jpg",
-   "together": "assets/launches/omm-vivienne-mat/02.jpg",
-   "why": "Pink and coral blooms for her pink faces and papaya backs, and a band of light lime in the border for her light lime layer."
+   "together": "assets/launches/omm-papaya-spritz-tiles/papaya-on-vivienne-composite.jpg",
+   "why": "Pink and coral blooms for her pink faces and papaya backs, and a band of light lime in the border for her light lime layer.",
+   "together_fit": "cover",
+   "together_caption": "Papaya Spritz tiles on the Vivienne mat"
   },
   "sisters": [
    {
@@ -154,5 +156,7 @@
    "Playing the field",
    "Her top matches, every brand"
   ]
- }
+ },
+ "wall_photo": "assets/launches/omm-papaya-spritz-tiles/02.jpg",
+ "wall_line": "Lion dancer dragons, a crane on the bams, floral-burst dots and wreath-framed craks, all on lavender and light lime layers."
 }
