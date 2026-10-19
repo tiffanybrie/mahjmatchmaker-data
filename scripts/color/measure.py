@@ -142,11 +142,11 @@ def run_mats():
         wood = area.get('brown', 0) + area.get('orange', 0) * 0.3
         unreliable = (not flat and wood > 25 and v['primary'] not in ('brown', 'orange', 'gold', 'neutral')) or keep.mean() < 0.25
         busy = dom_pct < 34 or len([f for f, x in fams if x >= 12]) >= 4
+        major = [f for f in flags if not f.startswith('secondary')]
         if not flags: grade = None
         elif unreliable: grade = 'measurement-unreliable'
-        elif busy or (flags == ['secondary-under-5pct:' + ','.join(weak_sec)] if weak_sec else False):
-            grade = 'ambiguous'
-        else: grade = 'likely-wrong-tag'
+        elif major: grade = 'likely-wrong-tag'
+        else: grade = 'ambiguous'
         score = 0
         if 'dominant-not-tagged' in flags: score += dom_pct
         if 'primary-under-5pct' in flags: score += 30
