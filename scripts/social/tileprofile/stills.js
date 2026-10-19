@@ -1,0 +1,3 @@
+// node stills.js page.html outprefix t1 t2 ...
+const {chromium}=require('playwright');(async()=>{const a=process.argv.slice(2);const b=await chromium.launch();const p=await b.newPage({viewport:{width:1080,height:1920}});await p.goto('file://'+a[0]);await p.evaluate(()=>document.fonts.ready);await p.waitForTimeout(800);
+for(const t of a.slice(2)){await p.evaluate(x=>render(x),+t);await p.screenshot({path:a[1]+t+'.jpg',type:'jpeg',quality:80})}await b.close()})();
