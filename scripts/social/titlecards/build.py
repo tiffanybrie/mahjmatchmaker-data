@@ -3,7 +3,7 @@ Big serif line on a full-bleed solid color, text in a brighter shade of the same
 small speaker label under it. Navy = the Matchmaker. The tile set talks in its own color. Photos cut in between.
 Usage: python3 scripts/social/titlecards/build.py   -> assets/social/titlecards/counseling-ep1-papaya/
 """
-import os, asyncio, subprocess
+import os, asyncio, subprocess, json
 from PIL import Image
 from playwright.async_api import async_playwright
 
@@ -128,6 +128,85 @@ CALL = HEAD + f"""<div class="wrap" style="background:#1d1b22;color:#fff;justify
 
 M = 'assets/colorcards/papaya-spritz/mats/'
 G2 = 'assets/mats/gallery/'
+
+# ---- Animated swipe segment (Oct 19): teases Find Your Match without naming it. STATIC=1 env -> old static prof() frames (story version).
+STATIC = os.environ.get('STATIC') == '1'
+FPS = 30
+BEIGE_SVG = ('<svg width="900" height="860" viewBox="0 0 900 860" style="display:block"><defs><filter id="felt2"><feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="2" seed="7"/>'
+             '<feColorMatrix values="0 0 0 0 .76  0 0 0 0 .68  0 0 0 0 .56  0 0 0 .6 0"/><feComposite in2="SourceGraphic" operator="in"/></filter></defs>'
+             '<rect width="900" height="860" fill="#cdbca3"/><rect width="900" height="860" fill="#cdbca3" filter="url(#felt2)"/>'
+             '<rect x="40" y="40" width="820" height="780" rx="22" fill="none" stroke="#a8957b" stroke-width="6" stroke-dasharray="18 12"/>'
+             '<rect x="86" y="86" width="728" height="688" rx="8" fill="none" stroke="#b9a68b" stroke-width="2"/></svg>')
+# (mat image or None for beige, name, brand line, verdict, hold, swipe seconds)
+SWIPES = [(None, 'Beige Felt', 'no brand', 'nope', 1.3, 0.55),
+          (M + 'heiress-britt-mills.jpg', 'Heiress', 'Britt Mills', 'match', 1.2, 0.5),
+          (G2 + 'anders-ruff--bams-bubbly.webp', 'Bams &amp; Bubbly', 'Anders Ruff', 'match', 1.0, 0.45),
+          (M + 'greenly-mahj-and-vine.jpg', 'Greenly', 'Mahj &amp; Vine', 'match', 0.7, 0.4),
+          (G2 + 'oh-my-mahjong--vivienne.webp', 'Vivienne', 'Oh My Mahjong', 'match', 0.7, 0.4),
+          (M + 'press-for-mahjong-anders-ruff.jpg', 'Press for Mahjong', 'Anders Ruff', 'match', 0.7, 0.4),
+          (G2 + 'oh-my-mahjong--goldie-retired.webp', 'Goldie', 'Oh My Mahjong', 'match', 0.7, 0.4)]
+LEAD, TAIL_HOLD = 0.4, 0.5
+HEART = '<svg width="{w}" height="{w}" viewBox="0 0 48 48"><path d="M24 40 C10 30 6 23 6 17 C6 11 11 7 16 7 C20 7 22 9 24 12 C26 9 28 7 32 7 C37 7 42 11 42 17 C42 23 38 30 24 40 Z" fill="{c}"/></svg>'
+def swipe_card(i, mat, name, brand, verdict):
+    racks = ''.join(f'<div style="display:flex;align-items:center;gap:16px;margin-top:10px"><img src="{u(r)}" style="width:330px;height:34px;object-fit:cover;border-radius:6px"><span style="font:600 24px Bit;color:#5a6b85">{n}</span></div>' for r, n in RACKS)
+    top = BEIGE_SVG if mat is None else f'<div style="width:900px;height:860px;background:url({u(mat)}) center/cover"></div>'
+    if verdict == 'nope':
+        stamp = ('<div class="stamp" style="position:absolute;top:60px;right:46px;transform:rotate(10deg);border:8px solid #e5484d;color:#e5484d;background:rgba(255,255,255,.88);'
+                 'font:700 92px Lo;letter-spacing:.08em;padding:0 26px;border-radius:16px;opacity:0">NOPE</div>')
+    else:
+        stamp = ('<div class="stamp" style="position:absolute;top:60px;left:46px;transform:rotate(-10deg);border:8px solid #c8325f;color:#c8325f;background:rgba(255,255,255,.88);'
+                 'font:700 92px Lo;letter-spacing:.08em;padding:0 26px;border-radius:16px;opacity:0">MATCH</div>')
+    return f"""<div class="sc" id="c{i}" style="position:absolute;left:0;top:0;width:900px;background:#fff;border-radius:40px;overflow:hidden;box-shadow:0 30px 70px rgba(6,42,85,.20);text-align:left;transform-origin:50% 120%">
+      {top}{stamp}
+      <div style="position:absolute;top:740px;left:36px;width:200px;height:200px;border-radius:50%;background:url({u(TILE)}) center/cover;box-shadow:0 0 0 10px #fff,0 10px 24px rgba(0,0,0,.2)"></div>
+      <div style="padding:100px 44px 40px">
+        <div style="font-family:Lo;font-weight:700;font-size:72px;color:#062a55;line-height:1">{name}</div>
+        <div style="font:600 26px Bit;letter-spacing:.2em;text-transform:uppercase;color:#c8325f;margin-top:10px">{brand} · mat</div>
+        <div style="font:600 24px Bit;letter-spacing:.16em;text-transform:uppercase;color:#062a55;margin-top:30px">Her racks</div>{racks}
+      </div></div>"""
+def swipe_html():
+    cards = ''.join(swipe_card(i, *c[:4]) for i, c in reversed(list(enumerate(SWIPES))))
+    tl = json.dumps([[c[3], c[4], c[5]] for c in SWIPES])
+    return HEAD + f"""<div class="wrap" style="background:#f6e9df;justify-content:flex-start;padding-top:120px">
+      {SEARCH}
+      <div id="ctr" style="font:600 30px Bit;color:#5a6b85;margin:22px 0 36px;letter-spacing:.08em;text-transform:uppercase">swiping&hellip;</div>
+      <div style="position:relative;width:900px;height:1290px">{cards}</div>
+      <div style="display:flex;gap:40px;margin-top:-8px">
+        <div id="bx" style="width:120px;height:120px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font:400 66px Bit;color:#062a55;box-shadow:0 8px 20px rgba(0,0,0,.12)">&times;</div>
+        <div id="bh" style="width:120px;height:120px;border-radius:50%;background:#f56c8c;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.12)">{HEART.format(w=60, c='#fff')}</div></div>
+    </div>
+    <script>
+    const TL={tl}, LEAD={LEAD};
+    const ease=x=>x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+    function render(t){{
+      let start=LEAD, matches=0, label='swiping&hellip;', bx=1, bh=1, xs='#fff', hs='#f56c8c';
+      for(let i=0;i<TL.length;i++){{
+        const [v,hold,sw]=TL[i]; const el=document.getElementById('c'+i); const st=el.querySelector('.stamp');
+        const a=start, b=a+hold, c=b+sw; const dir = v==='nope' ? -1 : 1;
+        if(t<a){{ const depth=Math.min(i-curIndex(t),3); el.style.transform=`translateY(${{depth*22}}px) scale(${{1-depth*.04}})`; st.style.opacity=0; el.style.opacity= depth>2?0:1; }}
+        else if(t<b){{ const k=Math.min((t-a)/0.25,1); el.style.transform='none'; el.style.opacity=1;
+          const sk=Math.max(0,(t-(b-0.35))/0.35); st.style.opacity=Math.min(sk,1);
+          if(t>b-0.35){{ if(dir<0) bx=1-.12*sk; else bh=1-.12*sk; }}
+          label = v==='nope' ? 'not her type' : `match ${{matches+1}} of 50`; }}
+        else if(t<c){{ const k=ease((t-b)/sw); el.style.transform=`translateX(${{dir*1400*k}}px) rotate(${{dir*10*k}}deg)`; st.style.opacity=1; el.style.opacity=1;
+          if(dir<0) bx=.88+.12*k; else bh=.88+.12*k;
+          label = v==='nope' ? 'not her type' : `match ${{matches+1}} of 50`; }}
+        else {{ el.style.opacity=0; if(v==='match') matches++; }}
+        start=c;
+      }}
+      document.getElementById('ctr').innerHTML=label;
+      document.getElementById('bx').style.transform=`scale(${{bx}})`; document.getElementById('bh').style.transform=`scale(${{bh}})`;
+    }}
+    function curIndex(t){{ let s=LEAD; for(let i=0;i<TL.length;i++){{ s+=TL[i][1]+TL[i][2]; if(t<s) return i; }} return TL.length; }}
+    window.render=render;
+    </script></body></html>"""
+SWIPE_LEN = LEAD + sum(c[4] + c[5] for c in SWIPES) + TAIL_HOLD
+STATIC_PROFS = [(prof(M + 'heiress-britt-mills.jpg', 'Heiress', 'Britt Mills', 'match 1 of 50'), 2.0),
+    (prof(G2 + 'anders-ruff--bams-bubbly.webp', 'Bams &amp; Bubbly', 'Anders Ruff', 'match 2 of 50'), 1.4),
+    (prof(M + 'greenly-mahj-and-vine.jpg', 'Greenly', 'Mahj &amp; Vine', 'match 3 of 50'), 1.4),
+    (prof(G2 + 'oh-my-mahjong--vivienne.webp', 'Vivienne', 'Oh My Mahjong', 'match 4 of 50'), 1.4),
+    (prof(M + 'press-for-mahjong-anders-ruff.jpg', 'Press for Mahjong', 'Anders Ruff', 'match 5 of 50'), 1.4),
+    (prof(G2 + 'oh-my-mahjong--goldie-retired.webp', 'Goldie', 'Oh My Mahjong', 'match 6 of 50'), 1.4)]
 PACE = 1.35  # Tiffany Oct 19: slow it down a little
 SHOTS = [
     (CALL, 2.4),
@@ -141,12 +220,7 @@ SHOTS = [
     (HEAD + f"""<div class="wrap" style="background:url({u('assets/colorcards/papaya-spritz/00-papaya-spritz-mahjong-tiles-profile-c-story.jpg')}) center/cover"></div></body></html>""", 3.0),
     (card(MM, 'You deserve someone who brings out your <i>best colors.</i>', 128, clip=True), 3.0),
     (SEARCHING, 2.0),
-    (prof(M + 'heiress-britt-mills.jpg', 'Heiress', 'Britt Mills', 'match 1 of 50'), 2.0),
-    (prof(G2 + 'anders-ruff--bams-bubbly.webp', 'Bams &amp; Bubbly', 'Anders Ruff', 'match 2 of 50'), 1.4),
-    (prof(M + 'greenly-mahj-and-vine.jpg', 'Greenly', 'Mahj &amp; Vine', 'match 3 of 50'), 1.4),
-    (prof(G2 + 'oh-my-mahjong--vivienne.webp', 'Vivienne', 'Oh My Mahjong', 'match 4 of 50'), 1.4),
-    (prof(M + 'press-for-mahjong-anders-ruff.jpg', 'Press for Mahjong', 'Anders Ruff', 'match 5 of 50'), 1.4),
-    (prof(G2 + 'oh-my-mahjong--goldie-retired.webp', 'Goldie', 'Oh My Mahjong', 'match 6 of 50'), 1.4),
+    'SWIPE',
     (card(PS, 'Hook me <i>up.</i>', 190), 2.2),
     (HEAD + f"""<div class="wrap" style="background:{END[0]};color:{END[1]}">
       <img src="{u('assets/brand/flame-heart.png')}" style="width:150px;margin-bottom:40px">
@@ -158,24 +232,45 @@ SHOTS = [
 ]
 
 async def main():
+    shots = []
+    for x in SHOTS:
+        if x == 'SWIPE': shots.extend(STATIC_PROFS if STATIC else ['SWIPE'])
+        else: shots.append(x)
+    entries, stills = [], []   # (png, seconds, paced?)
     async with async_playwright() as p:
         b = await p.chromium.launch(); pg = await b.new_page(viewport={'width': 1080, 'height': 1920})
-        for i, (h, _) in enumerate(SHOTS, 1):
+        for i, x in enumerate(shots, 1):
+            if x == 'SWIPE':
+                hp = f'{OUT}/frames/f{i:02d}-swipe.html'; open(hp, 'w').write(swipe_html())
+                await pg.goto('file://' + hp); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready')
+                os.makedirs(f'{OUT}/frames/swipe', exist_ok=True)
+                n = int(round(SWIPE_LEN * FPS))
+                for k in range(n):
+                    await pg.evaluate(f'render({k / FPS})')
+                    fp = f'{OUT}/frames/swipe/s{k:04d}.png'; await pg.screenshot(path=fp)
+                    entries.append((f'swipe/s{k:04d}.png', 1 / FPS, False))
+                for tt in (0.9, 3.0, 6.2):   # contact-sheet stills: NOPE, MATCH 1, later match
+                    k = min(int(tt * FPS), n - 1); stills.append(f'{OUT}/frames/swipe/s{k:04d}.png')
+                continue
+            h, d = x
             hp = f'{OUT}/frames/f{i:02d}.html'; open(hp, 'w').write(h)
             await pg.goto('file://' + hp); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready')
             await pg.screenshot(path=f'{OUT}/frames/f{i:02d}.png')
+            entries.append((f'f{i:02d}.png', d, True)); stills.append(f'{OUT}/frames/f{i:02d}.png')
         await b.close()
     lst = f'{OUT}/frames/list.txt'
     with open(lst, 'w') as f:
-        for i, (_, d) in enumerate(SHOTS, 1): f.write(f"file 'f{i:02d}.png'\nduration {round(max(d * PACE, 1.8), 2)}\n")
-        f.write(f"file 'f{len(SHOTS):02d}.png'\n")
+        for fn, d, paced in entries:
+            f.write(f"file '{fn}'\nduration {round(max(d * PACE, 1.8), 2) if paced else round(d, 5)}\n")
+        f.write(f"file '{entries[-1][0]}'\n")
+    name = 'counseling-session-1-papaya-spritz' + ('-static' if STATIC else '')
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', lst, '-vf', 'fps=30,format=yuv420p',
-                    '-c:v', 'libx264', '-crf', '18', f'{OUT}/counseling-session-1-papaya-spritz.mp4'], check=True)
-    ims = [Image.open(f'{OUT}/frames/f{i:02d}.png').convert('RGB').resize((270, 480)) for i in range(1, len(SHOTS) + 1)]
+                    '-c:v', 'libx264', '-crf', '18', f'{OUT}/{name}.mp4'], check=True)
+    ims = [Image.open(f).convert('RGB').resize((270, 480)) for f in stills]
     cols = 7; rows = (len(ims) + cols - 1) // cols
     sheet = Image.new('RGB', (cols * 280 + 10, rows * 490 + 10), (240, 236, 230))
     for k, im in enumerate(ims): sheet.paste(im, (10 + (k % cols) * 280, 10 + (k // cols) * 490))
-    sheet.save(f'{OUT}/contact-sheet.jpg', quality=90)
+    sheet.save(f'{OUT}/contact-sheet' + ('-static' if STATIC else '') + '.jpg', quality=90)
 
 if __name__ == '__main__':
     asyncio.run(main()); print(OUT)
