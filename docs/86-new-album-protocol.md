@@ -88,8 +88,8 @@ Placeholders get swapped for her real top matches after step 6.
 - Matches unchanged: periwinkle mats still work because the layer leans blue.
 
 ## Matching photo audit of existing albums (Oct 19)
-Checked all 50 album tile photos (assets/tiles/album). Most OMM sets have a proper tile pile. Weak ones to redo:
+Checked all 50 album tile photos (assets/tiles/album). Most OMM sets have a proper tile pile. Weak ones to redo (after the social launch work, per Tiffany):
 - **Classic Tortoise (Bamber Boutique):** a few tiles scattered on a busy pattern. **Tiffany owns these** → she shoots a tile pile.
 - **Petalee:** a faces grid plus a sparse pile on white; you can't see the backs or layers well → check the brand site, else build one.
 - **Sunday Mahjong sets (Hummingbird, Plum Panda, Nature Walk, Sunday Blues):** big "SUNDAY MAHJONG" watermarks and dark backgrounds → look for cleaner brand images.
-- **Malachite:** tiles laid flat in rows, no layer view → check for a side/pile shot.
+- **Malachite:** OK as is (Tiffany, Oct 19). The tiles sit at an angle so the layers show. Miss Mahjong seems to be moving to this photo style, so expect more of it.
