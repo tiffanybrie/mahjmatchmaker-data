@@ -26,5 +26,5 @@ async def go():
     async with async_playwright() as p:
         b=await p.chromium.launch(); pg=await b.new_page(viewport={'width':1080,'height':1350})
         await pg.goto('file://'+R+'/scripts/colorwheel/favorites.html'); await pg.wait_for_timeout(1500)
-        await pg.screenshot(path=R+'/assets/social/papaya-spritz-launch/papaya-favorite-tiles.jpg',type='jpeg',quality=93); await b.close()
+        await pg.screenshot(path=R+'/assets/social/papaya-spritz-launch/papaya-spritz-favorite-tiles.jpg',type='jpeg',quality=93); await b.close()
 asyncio.run(go())
