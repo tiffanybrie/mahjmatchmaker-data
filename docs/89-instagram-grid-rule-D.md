@@ -33,3 +33,10 @@ Row reads: album cover (reel) | It's a match | her profile.
 - Tiffany has Meta One Essential (free month from Oct 19; decide around day 25 before it renews). It gives Instagram "Post only to profile" (grid without followers' feeds) and "Share stories only to highlights."
 - Catch-up rows: Tiffany posts them in the IG app with **Post only to profile** ON (Planoly can't set this). Instagram also lets her **reorder the grid** (Tiffany saw it Oct 19), so catch-up rows can be dragged into place after posting. No pinning workaround needed; pins are optional.
 - Per-set highlights (Tiffany OK'd the idea, OMM-style): fixed highlights (Find Your Match, Codes, FB group, About) use style-A covers until the colorful pastel v2 is ready. Each tile set gets its own highlight with a cover in its colors, filled via "stories only to highlights." Claude builds a kit per set (cover + about 4 frames).
+
+## The big shift (Tiffany, Oct 19 evening): no more sprinting
+- Before, we rushed to make lots of content so the account wouldn't look empty. With "Post only to profile" + grid reordering, that pressure is gone.
+- **Grid fill:** start with each set's color card (or tile photo) + a short caption, posted quietly (Post only to profile), arranged in rainbow order. As each set's dating profile and other pieces get made, quietly add them and upgrade the row over time. The feed slowly becomes a gorgeous, consistent, scrollable archive.
+- **Followers' feeds only get real news:** launches (e.g. the Papaya intro), episode/skit reels, mood boards, timely posts. Everything else goes up quietly.
+- Episode/skit ideas stay a bank for future content, not a backlog to clear.
+- Pace: one set at a time, done well. Quality over volume.
