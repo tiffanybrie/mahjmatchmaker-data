@@ -80,7 +80,7 @@ async function drawCard(){const job=++cardJob;
  // header: our wordmark, set name in the set's colour, mat line
  let y=40;if(ours){const wm=48,w=Math.min(ours.width*wm/ours.height,W*.5);g.drawImage(ours,(W-w)/2,y,w,wm);}y+=48+22;
  {const nm=s.name.toUpperCase();let fs=W>1040?104:98;g.textAlign='center';g.font=`${fs}px Caprasimo, Georgia, serif`;while(g.measureText(nm).width>W-120&&fs>48){fs-=4;g.font=`${fs}px Caprasimo, Georgia, serif`;}
-  y+=fs*.82;g.fillStyle='rgba(255,255,255,.9)';g.fillText(nm,W/2+4,y+4);g.fillStyle=tc;g.fillText(nm,W/2,y);y+=44;g.fillStyle='#4a3d58';g.font='italic 500 32px "Playfair Display", Georgia, serif';g.fillText(clip(`tiles on the ${mName} mat`,W-120),W/2,y);}
+  y+=fs*.82;g.fillStyle='rgba(255,255,255,.9)';g.fillText(nm,W/2+4,y+4);g.fillStyle=tc;g.fillText(nm,W/2,y);y+=44;g.fillStyle='#4a3d58';g.font='italic 500 32px "Playfair Display", Georgia, serif';g.fillText(clip(`tiles on ${/^the /i.test(mName)?"":"the "}${mName} mat`,W-120),W/2,y);}
  // footer: slim navy bar, code for partner pieces, website
  const fh=62,fy=H-fh-30;{const x=40,w=W-80;g.fillStyle=NAVY;g.beginPath();g.roundRect(x,fy,w,fh,fh/2);g.fill();const t=allPartner()?'Use code MAHJMATCH to save 10%':'Swipe for your own match',t2='mahjmatchmaker.com';
   g.font='700 27px Bitter, Georgia, serif';const w1=g.measureText(t).width;g.font='600 22px Bitter, Georgia, serif';const w2=g.measureText(t2).width;const gap=34;let sx=W/2-(w1+gap+w2)/2;
