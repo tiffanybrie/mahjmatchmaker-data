@@ -24,3 +24,6 @@ Tiffany's notes, Oct 19. Ideas to build on, not rules yet.
 - A rough wheel of all 45 tile sets exists: assets/social/tile-sets-color-wheel-draft.jpg.
 - To polish: use the color card back colors instead of raw photos, de-crowd the warm cluster, and separate lightness.
 - Ideas: a "shop by color" wheel on the site, a Pinterest pin, spotting gaps (few true purples/yellows).
+
+## Wording rule: "layer," never "stripe" (Tiffany, Oct 19)
+- Layered tiles have **layers**. Never call them stripes in copy, graphics, docs or chat.
