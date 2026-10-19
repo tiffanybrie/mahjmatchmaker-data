@@ -40,3 +40,8 @@ Use the `d-fbpublic` NEW ERA post as the model:
 - scripts/social/fbgroup/papaya-launch-post.txt + papaya-launch-first-comment.txt
 - scripts/social/fbgroup/coming-soon-template.txt
 - scripts/social/fbgroup/rts_fbgroup_add.py (Ready to Ship builder for these items)
+
+## Disclosure rule (Tiffany, Oct 19, standing)
+- Never put "I may earn a commission" on a visual or card.
+- Disclosure goes in the caption only, as the least in-your-face option: #affiliate (or #ad) with the hashtags.
+- Visuals can show "Code MAHJMATCH" like everyone else does.

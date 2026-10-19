@@ -84,3 +84,8 @@ Re-cuts (after she approves the model on the Papaya example, not before): Pippa 
 - Profile: config/profiles/papaya-spritz.json (with `omm_launch`)
 - Carousel: assets/social/papaya-spritz-launch/papaya-spritz-introducing-carousel-1..7.jpg + caption-carousel.txt
 - Reel: assets/social/papaya-spritz-launch/papaya-spritz-new-girl-episode-v2.mp4 (48s) + caption-reel.txt
+
+## Disclosure rule (Tiffany, Oct 19, standing)
+- Never put "I may earn a commission" on a visual or card.
+- Disclosure goes in the caption only, as the least in-your-face option: #affiliate (or #ad) with the hashtags.
+- Visuals can show "Code MAHJMATCH" like everyone else does.
