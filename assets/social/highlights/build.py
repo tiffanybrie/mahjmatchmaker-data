@@ -59,10 +59,21 @@ LINEUP = [  # (key, label shown under the circle)
  ('fb-group', 'FB Group'), ('about-2-0', 'About 2.0'),
 ]
 B_BG = [PINK, NAVY, ROSE, PINK, NAVY, ROSE, PINK, NAVY]
+# Style C (Oct 19, Tiffany): cute pastel colour-theory covers, each its own colour (bg, deep ink of same hue, accent)
+C_PAL = [('#f9d3dc', '#b8466a', '#f2a65a'),   # find your match: blush
+         ('#fcdcc6', '#c0602a', '#f56c8c'),   # new tiles: peach
+         ('#fbefc2', '#a07f1e', '#f56c8c'),   # albums: butter
+         ('#d5ecd8', '#3d8656', '#f56c8c'),   # mats: mint
+         ('#d2e7f4', '#36709f', '#f56c8c'),   # tablescapes: sky
+         ('#dcdcf6', '#5359ad', '#f56c8c'),   # codes: periwinkle
+         ('#e9d9f3', '#7a50ad', '#f56c8c'),   # fb group: lavender
+         ('#f7d4e6', '#ad4680', '#f2a65a')]   # about 2.0: rose
 
 def colors(style, i):
     if style == 'A':
         return CREAM, NAVY, PINK
+    if style == 'C':
+        return C_PAL[i]
     bg = B_BG[i]
     return bg, CREAM, (PINK if bg == NAVY else NAVY)
 
@@ -86,7 +97,7 @@ def row_html(style, files):
     items = ''.join(f'''<div class="h"><div class="ring"><img src="file://{f}"></div><span>{lab}</span></div>'''
                     for (k, lab), f in zip(LINEUP, files))
     flame = os.path.join(REPO, 'assets/brand/flame-heart.png')
-    name = 'A · cream + navy line' if style == 'A' else 'B · brand colors + cream line'
+    name = {'A': 'A · cream + navy line', 'B': 'B · brand colors + cream line', 'C': 'C · pastel color theory'}[style]
     return f'''<!doctype html><html><head><style>
 body{{margin:0;background:#fff;font:14px -apple-system,"Helvetica Neue",Arial,sans-serif;color:#000;width:760px}}
 .top{{display:flex;align-items:center;gap:22px;padding:22px 20px 8px}}
@@ -107,7 +118,7 @@ def main():
     with sync_playwright() as p:
         br = p.chromium.launch()
         pg = br.new_page(viewport={'width': 1080, 'height': 1920})
-        for style in 'AB':
+        for style in os.environ.get('STYLES', 'ABC'):
             d = os.path.join(out, f'style-{style}'); os.makedirs(d, exist_ok=True)
             files = []
             for i, (key, lab) in enumerate(LINEUP):
