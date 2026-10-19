@@ -59,3 +59,27 @@ Caption: "At this point we should just set it up as a monthly bill." Works as a 
 - **Matchmaker Hotline, title-card skit:** "Mahj Matchmaker, how can I save your table?" A caller: "I said this was my last set…" → Matchmaker: "How many mats do you own?" → long pause → "Ma'am." → diagnosis card with the strikethrough → "You're in good company." → Find Your Match.
 - **Stories poll:** "How many mats do you own? 1–3 / 4–9 / I'd rather not say." Then reveal the diagnosis.
 - **Facebook group question:** "What's the set you swore was your LAST?" A natural comment-starter, since everyone has one.
+
+## Face-to-camera plan (Tiffany, Oct 19)
+Tiffany needs to be on the account before launch. Right now she isn't. Not "hey guys" vlogs.
+
+**Format she likes: the phone call.** She's on the phone with a tile set. Her clips are real video, and the tile set answers in its title card. No handling tiles on camera.
+
+**One 20-minute filming session (phone on a stand, window light, same top, same spot):**
+1. Answering: "Mahj Matchmaker. How can I save your table?"
+2. Listening, nodding: "Mm-hmm." / "Mm-hmm." (two takes)
+3. Eyebrows up, a slow "Wow."
+4. "Okay. First of all, we're not panicking."
+5. "How many mats do you own?" … pause … "Ma'am."
+6. "I have concerns."
+7. "Absolutely not."
+8. A whisper, phone close: "It's not you… it's your mat."
+9. "You deserve someone who brings out your best colors."
+10. "Let me tell you, some of these tiles have TERRIBLE taste in mats."
+11. A sigh, then hanging up. And a smile and a nod: "I think we have a match."
+12. 10 seconds of just listening (b-roll she can cut anywhere).
+Each line 2–4 seconds, 2 takes. Those 12 clips cover months of skits.
+
+**Pinned "who's the matchmaker" post:** a short real clip, not a talking-head intro. For example, her at the table setting down a mat, looking up, with title cards: "I'm Tiffany." / "I match mahjong tiles, mats and racks." / "Some of them need counseling." Then the phone-call skit picks up from there.
+
+**Headshot:** she feels the website headshot looks AI-made. Prefer a real phone photo (portrait mode, window light, at her table with tiles and a mat) over posting or reworking that one. Take a few during the same filming session.
