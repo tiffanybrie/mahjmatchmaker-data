@@ -1,20 +1,18 @@
 # Work With emails (drafts, Oct 19). Nothing sent.
 
 ## 1. Auto-reply to the Brands form (Squarespace Email Campaigns → Automations → Form response, on the Brands form)
+Short and mostly text, with ONE link (better deliverability). At most one small logo image.
+
 **Subject:** Thanks for reaching out to Mahj Matchmaker!
 
-Hi there,
+Hi [first name],
 
-Thank you so much for reaching out! I'm Tiffany, the matchmaker behind Mahj Matchmaker. I match tiles with the mats and racks that make them shine, and I love helping players fall for brands like yours.
+Thank you so much for reaching out! Everything you need to know about partnering with Mahj Matchmaker is here: https://www.mahjmatchmaker.com/work-with-us
 
-Here's everything about how I work with brands:
-https://www.mahjmatchmaker.com/work-with-us
-
-Ready to partner? Affiliate programs are set up on your end. Send your affiliate invite or sign-up link to mahjmatchmaker@gmail.com and I'll take it from there.
+Ready to partner? Affiliate programs are set up on your end, so just send your affiliate invite or sign-up link to mahjmatchmaker@gmail.com and I'll take it from there.
 
 Talk soon,
 Tiffany
-Mahj Matchmaker
 
 ## 2. Thank-you email to existing partner brands (saved as a Gmail draft on her yes; she sends it)
 **Subject:** Thank you for partnering with Mahj Matchmaker (and what's coming!)

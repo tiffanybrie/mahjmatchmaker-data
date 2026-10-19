@@ -24,7 +24,7 @@ EXTRA_LOGOS = {'Sunday Mahjong': 'n_sundaymahjong.png', 'Royal Mahjong Society':
     'Soiree All Day': 'n_soireeallday.png', 'The Mahjong Press': 'n_themahjongpress.png'}
 LOGOS.update(EXTRA_LOGOS)
 SHOW = [b for b in PARTNERS if b in LOGOS]
-SHOTS = [('fym-step1-tiles.png', 'Pick the tiles you own'), ('fym-step2-mats.png', "Swipe mats, with my picks marked Tiffany's match"),
+SHOTS = [('fym-step1-start.png', 'Start with the tiles or the mat you own'), ('fym-step2-mats.png', "Swipe mats (or tiles, if you start with a mat) with Tiffany's match picks"),
     ('fym-step3-racks.png', 'Add racks that go with both'), ('fym-step4-card.png', 'Save a match card to share')]
 urls = [J + c for c in CARDS] + [J + 'builder/logos/' + LOGOS[b] for b in SHOW] + [J + 'assets/workwith/' + f for f, _ in SHOTS]
 
@@ -192,7 +192,7 @@ HTML = f"""<link rel="preconnect" href="https://fonts.googleapis.com"><link href
 <svg class="h1" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.9 4.5c2.1 0 3.6 1.2 5.1 3 1.5-1.8 3-3 5.1-3 3.9 0 6 3.9 4.5 7.3C19.5 16.4 12 21 12 21z"/></svg>
 <svg class="h2" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.9 4.5c2.1 0 3.6 1.2 5.1 3 1.5-1.8 3-3 5.1-3 3.9 0 6 3.9 4.5 7.3C19.5 16.4 12 21 12 21z"/></svg>
 <h2>Ready to partner?</h2>
-<p>Affiliate programs are set up on your end. Send your affiliate invite or sign-up link to mahjmatchmaker@gmail.com and I'll take it from there.</p>
+<p>Affiliate programs are set up on your end. Send your affiliate invite or sign-up link to mahjmatchmaker@gmail.com and I'll take it from there. If your program doesn't let me create my own code, please pre-assign the code <b>MAHJMATCH</b> for my readers.</p>
 <a class="btn" href="mailto:mahjmatchmaker@gmail.com?subject=Affiliate%20invite%20for%20Mahj%20Matchmaker">Send your invite</a>
 </section>
 </div>
@@ -201,7 +201,7 @@ D = os.path.dirname(os.path.abspath(__file__))
 open(os.path.join(D, 'workwith.html'), 'w').write(HTML)
 open(os.path.join(D, 'urls.txt'), 'w').write('\n'.join(urls) + '\n')
 PV = """<title>Work With Preview</title><style>:root{color-scheme:light}body{margin:0;padding:24px 16px;background:#ffffff;font-family:Poppins,system-ui,sans-serif}.pv{max-width:1100px;margin:0 auto 14px;font-size:13px;color:#6f6670}.form{max-width:1100px;margin:18px auto 0;border:2px dashed #e7cbd6;border-radius:18px;padding:22px;text-align:center;color:#8a7f88;font-size:14px}</style>
-<p class="pv">Preview of the styled Work with Mahj Matchmaker page (v6). Copy is your approved v2, word for word. Sent as the reply to the Brands form, and linked from affiliate applications and the partner thank-you email.</p>
+<p class="pv">Preview of the Work with Mahj Matchmaker page (v10). It's a hidden page (not in the menu, hidden from Google). Brands get the link in the automatic reply after they fill out the Brands form in the footer. You can also paste the link into affiliate applications and the partner thank-you email.</p>
 """ + HTML
 open(os.path.join(D, 'preview.html'), 'w').write(PV)
 print('ok', len(HTML))

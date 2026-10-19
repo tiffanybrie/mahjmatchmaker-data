@@ -44,16 +44,42 @@ Tested at 390 and 1280 with no sideways scroll. Everything is scoped under `.mmw
 - Hero buttons are now "Ways we work together" and "See the matches."
 - New closing band: **"Ready to partner?** Affiliate programs are set up on your end. Send your affiliate invite or sign-up link to mahjmatchmaker@gmail.com and I'll take it from there." The button is "Send your invite" (mailto).
 
+## Oct 19 decisions (the current plan; supersedes the page and form notes above)
+**It is not a public page.** The only public part is a small **"Brands"** link in the site footer that goes to the form. The page content reaches brands through the automatic reply email.
+
+**Reply email** (decided for deliverability): a short, mostly-text email with ONE link to a hidden page. See `emails.md` #1. At most one small logo image.
+
+**Hidden page: /work-with-us**
+- Not in any navigation. In Squarespace Page Settings → SEO, turn on "Hide page from search results" (noindex).
+- No password, since that adds friction.
+- Linked nowhere on the site; only from the reply email. She can also paste the link into affiliate applications and the partner thank-you email.
+- Building it: duplicate a simple page, paste `workwith.html` into a code block, set the SEO title and description above, and turn on hide-from-search.
+
+**Page copy changes (v10, Oct 19):**
+- Find Your Match previews show matching works both ways:
+  1. Start screen with both doors (`fym-step1-start.png`): "Start with the tiles or the mat you own."
+  2. Swipe screen with a "Tiffany's match" badge: "Swipe mats (or tiles, if you start with a mat) with Tiffany's match picks."
+  3. "Add racks that go with both."
+  4. "Save a match card to share."
+  
+  The "Coming 10.27" tag is kept. Images are pinned at c38affc and warmed (39 URLs, 0 failing).
+- The closing ends: "...and I'll take it from there. If your program doesn't let me create my own code, please pre-assign the code **MAHJMATCH** for my readers."
+- FAQ: the review answer is in her wording ("honest, but never harsh", plus the badges and "badges aren't the final word" paragraphs). The samples question is second-to-last ("we'd be happy to discuss further").
+
 ## Brands form (staged, not live)
-- **Where:** a new hidden page, /brands, with a Form block. Title "For mahjong brands", one line: "Tell me how to reach you and I'll send over how I work with brands."
-- **Fields (keep it short):**
-  - Brand name (required)
-  - Your name (required)
-  - Email (REQUIRED, which the automation needs)
-  - Website (required)
-  - What would you like to work on? (text area, optional)
-- **Storage:** email to mahjmatchmaker@gmail.com, and submissions are kept in Squarespace (Profiles / form submissions). Don't add a mailing-list opt-in; this isn't a newsletter signup.
-- **Post-submit message:** "Thank you! Check your inbox. I just sent you how I work with brands."
-- **Footer link:** add a small link in the footer text block next to the email: `<a href="/brands">Brands</a>`. The label can be "Brands" or "Work with us".
-- **Auto-reply:** Squarespace Email Campaigns → Automations → **Form response** trigger, connected to the Brands form, using the email in `emails.md` #1. Squarespace says form-response automations can "connect to any form block on your site" and fire when "a visitor submits a form response that included their email address", but "will only send if the email field is required" (support.squarespace.com/hc/en-us/articles/360002077567-Sending-automated-campaigns). She has the Email Campaigns plan (doc 59).
-- **Fallback** if the automation won't connect: a saved Gmail reply (template) she sends herself.
+- **Where:** a hidden page, /brands, with a Form block, linked only from the footer "Brands" link. Footer snippet: `<a href="/brands">Brands</a>`.
+- **Title:** Work with Mahj Matchmaker
+- **Intro:** "Love what you see? Tell me a little about your brand and I'll send over everything you need to know about partnering with Mahj Matchmaker."
+- **Fields:**
+  - Brand name* (text)
+  - Your name* (name)
+  - Email* (email; REQUIRED, which the automation needs)
+  - Website or shop link* (website)
+  - What do you make? (checkboxes): Tiles, Mats, Racks, Accessories, Other
+  - Do you have an affiliate program? (radio): Yes / No / Not yet
+  - Anything else you'd like me to know? (text area, optional)
+- **Button:** Send
+- **Success message:** "Thank you! Check your inbox. I've just sent over how partnering with Mahj Matchmaker works."
+- **Storage:** email to mahjmatchmaker@gmail.com, and submissions are kept in Squarespace. No mailing-list opt-in; this isn't a newsletter signup.
+- **Auto-reply:** Squarespace Email Campaigns → Automations → **Form response** trigger, connected to the Brands form, using `emails.md` #1. Squarespace says form-response automations can "connect to any form block on your site" and fire when "a visitor submits a form response that included their email address", but "will only send if the email field is required" (support.squarespace.com/hc/en-us/articles/360002077567-Sending-automated-campaigns). She has the Email Campaigns plan (doc 59).
+- **Fallback** if the automation won't connect: a saved Gmail reply she sends herself.
