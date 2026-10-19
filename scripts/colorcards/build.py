@@ -18,7 +18,7 @@ R = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 RES = R + 'scripts/colorcards/res/'
 G = '/usr/share/fonts/truetype/google-fonts/'
 BG = (245, 232, 220); PANEL = (251, 245, 240); EDGE = (236, 222, 210); NAVY = (31, 45, 92); GREY = (80, 80, 90)
-BB_RGB = {'Lavender': (190, 175, 253)}  # Bird & Bamboo painted colours (from /home/claude/racks/rackpanel.py RGB table)
+BB_RGB = {'Lavender': (190, 175, 253), 'Dark Blue': (27, 73, 157), 'Ballet Pink': (241, 215, 251), 'Lime Green': (175, 231, 69)}  # Bird & Bamboo painted colours (from /home/claude/racks/rackpanel.py RGB table)
 
 def P(n, s): return ImageFont.truetype(G + n, int(s))
 def lora(s, w=400):
@@ -28,6 +28,7 @@ def lora(s, w=400):
     return f
 def alfa(s): return ImageFont.truetype(RES + 'AlfaSlab.ttf', int(s))
 def hx(h): h = h.lstrip('#'); return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
+def pale(h): r, g, b = hx(h); return .299 * r + .587 * g + .114 * b > 215  # near-cream swatch: give it a thin edge so it reads on the cream ground
 def spaced(d, x, y, t, f, fill, sp, center=False):
     tw = sum(d.textlength(ch, font=f) + sp for ch in t) - sp
     if center: x = x - tw / 2
@@ -52,7 +53,7 @@ def rack_strip(S, name, w, h):
     return im
 
 def rack_label(name):
-    for b in ('Peace Love Mahjong', 'Bird & Bamboo', 'Middle & Main', 'Miss Mahjong', 'Oh My Mahjong'):
+    for b in ('Peace Love Mahjong', 'Bird & Bamboo', 'Middle & Main', 'Miss Mahjong', 'Oh My Mahjong', 'Bam Bird Boutique', 'Mahjong Row & Co.', 'Tigre de Tartán'):
         if name.startswith(b + ' '): return b, name[len(b) + 1:]
     return '', name
 
@@ -103,7 +104,7 @@ def desktop(S, out):
     d.text((66, 365 - dy), S['sub'], font=lora(29), fill=GREY)
     spaced(d, 70, 445, 'THE BACKS', P('Poppins-Bold.ttf', 26), NAVY, 6)
     for i, (n, h, role) in enumerate(S['backs']):
-        x = 70 + i * 190; d.rounded_rectangle((x, 482, x + 170, 652), radius=16, fill=hx(h))
+        x = 70 + i * 190; d.rounded_rectangle((x, 482, x + 170, 652), radius=16, fill=hx(h), outline=EDGE if pale(h) else None, width=3)
         d.text((x + 85, 675), n, font=P('Poppins-Medium.ttf', 21), fill=NAVY, anchor='mm'); d.text((x + 85, 704), role, font=P('Poppins-Regular.ttf', 18), fill=(90, 90, 100), anchor='mm')
     spaced(d, 70, 757, 'THE FACES', P('Poppins-Bold.ttf', 26), NAVY, 6)
     F = S['faces']; per = 3 if len(F) > 4 else 2 if len(F) == 4 else 3
@@ -140,7 +141,7 @@ def mobile(S, out):
     d.rounded_rectangle((80, 1830, 1920, 2300), radius=48, fill=PANEL)
     spaced(d, 500, 1868, 'THE BACKS', P('Poppins-Bold.ttf', 27 * K), NAVY, 7 * K, True)
     for i, (n, h, role) in enumerate(S['backs']):
-        x = 140 + i * 256; d.rounded_rectangle((x, 1940, x + 222, 2162), radius=22, fill=hx(h))
+        x = 140 + i * 256; d.rounded_rectangle((x, 1940, x + 222, 2162), radius=22, fill=hx(h), outline=EDGE if pale(h) else None, width=4)
         d.text((x + 111, 2196), n, font=P('Poppins-Medium.ttf', 22 * K), fill=NAVY, anchor='mm'); d.text((x + 111, 2244), role, font=P('Poppins-Regular.ttf', 20 * K), fill=(90, 90, 100), anchor='mm')
     spaced(d, 1490, 1868, 'THE FACES', P('Poppins-Bold.ttf', 27 * K), NAVY, 7 * K, True)
     F = S['faces']; per = 3 if len(F) > 4 else 2

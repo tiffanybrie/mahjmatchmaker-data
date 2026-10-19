@@ -108,7 +108,7 @@ for i, m in enumerate(P['first_dates']):
 s5 = page(5, head('4 · first dates') + f"""
 <div style="position:absolute;top:120px;left:72px;right:72px">
  <div class="cap" style="font-size:96px">First dates</div>
- <div class="pf" style="font-size:32px;margin-top:8px;color:#3c4f73">My top three of her {P['matches']} matches.</div>
+ <div class="pf" style="font-size:32px;margin-top:8px;color:#3c4f73">My top three of her {P['matches']} matches (and counting).</div>
  {fd}
 </div>""")
 
@@ -120,8 +120,8 @@ s6 = page(6, f"""
   <div class="ph" style="width:300px;height:300px;border-radius:50%;background-image:url({TILE});box-shadow:0 0 0 8px #fff,0 10px 26px rgba(6,40,90,.18)"></div>
   <div style="font:400 84px Capra;color:var(--pink)">&hearts;</div>
   <div class="ph" style="width:300px;height:300px;border-radius:50%;background-image:url({url(MATS[P['first_dates'][0]])});box-shadow:0 0 0 8px #fff,0 10px 26px rgba(6,40,90,.18)"></div></div>
- <div class="cap" style="font-size:92px;margin-top:64px;line-height:1">See all {P['matches']} of<br><span style="color:var(--acc)">her matches</span></div>
- <div class="pill" style="margin-top:44px;background:var(--pink)">link in bio &rarr;</div>
+ <div class="cap" style="font-size:92px;margin-top:64px;line-height:1">See all of<br><span style="color:var(--acc)">her matches</span></div><div class="hand" style="font-size:46px;margin-top:14px">{P['matches']} and counting</div>
+ <div class="pill" style="margin-top:28px;background:var(--pink)">link in bio &rarr;</div>
  <div style="margin-top:40px;background:#fff;border-radius:22px;padding:22px 34px;box-shadow:0 6px 18px rgba(6,40,90,.1)"><div style="font:700 32px Bit">Code <span style="color:var(--pink)">MAHJMATCH</span> at {e(P['brand'])}</div>
   <div style="font:400 20px Bit;color:#5a6b85;margin-top:4px">(I may earn a commission)</div></div>
  <img src="{LOGO}" style="width:560px;margin-top:56px">

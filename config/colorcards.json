@@ -50,7 +50,18 @@
     "Jade",
     "Camellia",
     "Esme"
-   ]
+   ],
+   "mat_imgs": {
+    "Jade": "assets/colorcards/shangri-la/mats/jade-oh-my-mahjong.jpg",
+    "Camellia": "assets/colorcards/shangri-la/mats/camellia-oh-my-mahjong.jpg",
+    "Esme": "assets/colorcards/shangri-la/mats/esme-oh-my-mahjong.jpg"
+   },
+   "rack_imgs": {
+    "Peace Love Mahjong Oak": "assets/racks/card/peace-love-mahjong-oak.png",
+    "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png"
+   },
+   "shop": "Shop OMM · code MAHJMATCH",
+   "shop_m": "Code MAHJMATCH on tiles, racks & mats"
   },
   "lilac-soiree": {
    "name": "Lilac Soiree",
@@ -98,15 +109,25 @@
     ]
    ],
    "racks": [
+    "Peace Love Mahjong Oak",
     "Bird & Bamboo Dark Blue",
-    "Bird & Bamboo Ballet Pink",
-    "Peace Love Mahjong Oak"
+    "Bird & Bamboo Ballet Pink"
    ],
    "mats": [
     "Chantilly",
     "Jade",
     "Astor"
-   ]
+   ],
+   "mat_imgs": {
+    "Chantilly": "assets/colorcards/lilac-soiree/mats/chantilly-oh-my-mahjong.jpg",
+    "Jade": "assets/colorcards/lilac-soiree/mats/jade-oh-my-mahjong.jpg",
+    "Astor": "assets/colorcards/lilac-soiree/mats/astor-oh-my-mahjong.jpg"
+   },
+   "rack_imgs": {
+    "Peace Love Mahjong Oak": "assets/racks/card/peace-love-mahjong-oak.png"
+   },
+   "shop": "Shop OMM · code MAHJMATCH",
+   "shop_m": "Code MAHJMATCH on tiles, racks & mats"
   },
   "preppy-soiree": {
    "name": "Preppy Soiree",
@@ -162,7 +183,18 @@
     "Chantilly",
     "Jade",
     "Hawthorne"
-   ]
+   ],
+   "mat_imgs": {
+    "Chantilly": "assets/colorcards/preppy-soiree/mats/chantilly-oh-my-mahjong.jpg",
+    "Jade": "assets/colorcards/preppy-soiree/mats/jade-oh-my-mahjong.jpg",
+    "Hawthorne": "assets/colorcards/preppy-soiree/mats/hawthorne-oh-my-mahjong.jpg"
+   },
+   "rack_imgs": {
+    "Peace Love Mahjong Oak": "assets/racks/card/peace-love-mahjong-oak.png",
+    "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png"
+   },
+   "shop": "Shop OMM · code MAHJMATCH",
+   "shop_m": "Code MAHJMATCH on tiles, racks & mats"
   },
   "spring-love": {
    "name": "Spring Love",
@@ -206,15 +238,25 @@
     ]
    ],
    "racks": [
+    "Middle & Main Scalloped Beechwood",
     "Bird & Bamboo Lime Green",
-    "Bird & Bamboo Lavender",
-    "Middle & Main Scalloped Beechwood"
+    "Bird & Bamboo Lavender"
    ],
    "mats": [
     "Zen Glow",
     "Vivienne",
     "Goldie"
-   ]
+   ],
+   "mat_imgs": {
+    "Zen Glow": "assets/colorcards/spring-love/mats/zen-glow-oh-my-mahjong.jpg",
+    "Vivienne": "assets/colorcards/spring-love/mats/vivienne-oh-my-mahjong.jpg",
+    "Goldie": "assets/colorcards/spring-love/mats/goldie-oh-my-mahjong.jpg"
+   },
+   "rack_imgs": {
+    "Middle & Main Scalloped Beechwood": "assets/racks/card/middle--main-scalloped-beechwood.png"
+   },
+   "shop": "Shop OMM · code MAHJMATCH",
+   "shop_m": "Code MAHJMATCH on tiles, racks & mats"
   },
   "papaya-spritz": {
    "name": "Papaya Spritz",
@@ -303,10 +345,10 @@
    "_oct19": "Dating-profile line replaces the motif caption (Tiffany Oct 19, DRAFT until she picks A/B/C on Ready to Ship)."
   },
   "sunday-tile-set": {
-   "name": "Sunday",
+   "name": "Sunday Tile Set",
    "brand": "Sunday Mahjong",
    "col": "#9a6a1f",
-   "tile": "SCRATCH:sunday_hd.jpg",
+   "tile": "assets/tiles/album/sunday-tile-set-hd.jpg",
    "sub": "Butterscotch backs with ivory faces",
    "tag": [
     "The set I own, from",
@@ -321,7 +363,7 @@
     [
      "IVORY",
      "#f2e6cc",
-     "face"
+     "tile body"
     ]
    ],
    "faces": [
@@ -351,7 +393,21 @@
     "Carson Vintage",
     "Brownstone Bloom",
     "Autumn Saffron"
-   ]
+   ],
+   "shop": "Shop the Sunday Tile Set",
+   "shop_m": "Shop the Sunday Tile Set",
+   "racks_source": "the Sunday album cards (no Rack Picks final list yet)",
+   "mat_imgs": {
+    "Carson Vintage": "assets/colorcards/sunday-tile-set/mats/carson-vintage-ozark-mahjongg.jpg",
+    "Brownstone Bloom": "assets/colorcards/sunday-tile-set/mats/brownstone-bloom-anders-ruff.jpg",
+    "Autumn Saffron": "assets/colorcards/sunday-tile-set/mats/autumn-saffron-mahjong-row-co.jpg"
+   },
+   "rack_imgs": {
+    "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png",
+    "Bam Bird Boutique Walnut": "assets/racks/card/bam-bird-boutique-walnut.png",
+    "Peace Love Mahjong Oak": "assets/racks/card/peace-love-mahjong-oak.png"
+   }
   }
- }
+ },
+ "_note_oct19_catchup": "Oct 19 catch-up: shangri-la, lilac-soiree, preppy-soiree, spring-love, sunday-tile-set got mat_imgs/rack_imgs and were rendered with the existing style. They use 'tag' (factual). When Tiffany approves the Papaya profile_line style, add profile_line to each set and re-run build.py <key>; nothing else changes."
 }
