@@ -1,0 +1,138 @@
+<title>Launch Checklist</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Bitter:wght@400;600;700&display=swap">
+<style>
+/* Layout: one phone-width column; groups as stacked lists; status pill on the right of each row */
+:root{
+  --bg:#fbf6f3; --card:#ffffff; --ink:#1f2a44; --muted:#6b6a78; --line:#efdfe4;
+  --pink:#e0457b; --pink-soft:#fde4ec; --navy:#1f2a44;
+  --todo:#ece9ef; --todo-ink:#4b4a58; --prog:#fff1c9; --prog-ink:#7a5a00;
+  --wait:#fde4ec; --wait-ink:#b0285c; --done:#dff3e6; --done-ink:#1f6b3f;
+  --display:"Caprasimo", Georgia, serif; --body:"Bitter", Georgia, serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141a2b; --card:#1c2338; --ink:#f3eef2; --muted:#a9a6b8; --line:#2c3450;
+  --pink:#ff7aa6; --pink-soft:#3a2234; --todo:#2a3048; --todo-ink:#cfcbe0; --prog:#3d3416; --prog-ink:#ffd970;
+  --wait:#3f1f30; --wait-ink:#ff9cc0; --done:#183626; --done-ink:#8fe0ae; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141a2b; --card:#1c2338; --ink:#f3eef2; --muted:#a9a6b8; --line:#2c3450;
+  --pink:#ff7aa6; --pink-soft:#3a2234; --todo:#2a3048; --todo-ink:#cfcbe0; --prog:#3d3416; --prog-ink:#ffd970;
+  --wait:#3f1f30; --wait-ink:#ff9cc0; --done:#183626; --done-ink:#8fe0ae; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.45}
+.wrap{max-width:720px;margin:0 auto;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1{font-family:var(--display);font-weight:400;color:var(--pink);font-size:clamp(30px,8vw,44px);margin:0;line-height:1.05;text-wrap:balance}
+.count{margin:10px 0 4px;font-weight:700;font-variant-numeric:tabular-nums}
+.bar{height:8px;border-radius:99px;background:var(--line);overflow:hidden;margin:6px 0 4px}
+.bar i{display:block;height:100%;background:var(--pink);width:0;transition:width .3s}
+.sub{color:var(--muted);font-size:13px;margin:0 0 18px}
+h2{font-family:var(--display);font-weight:400;font-size:21px;margin:26px 0 8px;color:var(--ink)}
+ul{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+li{display:grid;grid-template-columns:28px 1fr auto;gap:10px;align-items:start;padding:12px 14px;border-top:1px solid var(--line)}
+li:first-child{border-top:0}
+.n{font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:2px}
+.t{min-width:0}
+.t b{font-weight:600}
+.t a{color:var(--pink);font-size:13px;font-weight:700;text-decoration:none;margin-left:2px;white-space:nowrap}
+.note{display:block;color:var(--muted);font-size:13px;margin-top:3px}
+.note[contenteditable]{outline:none;border-bottom:1px dashed transparent}
+.note[contenteditable]:focus{border-bottom-color:var(--pink);color:var(--ink)}
+.note:empty::before{content:"Add a note";opacity:.55}
+button.pill{font:700 12px/1 var(--body);border:0;border-radius:99px;padding:7px 11px;cursor:pointer;white-space:nowrap}
+button.pill:focus-visible{outline:2px solid var(--pink);outline-offset:2px}
+.s-todo{background:var(--todo);color:var(--todo-ink)} .s-prog{background:var(--prog);color:var(--prog-ink)}
+.s-wait{background:var(--wait);color:var(--wait-ink)} .s-done{background:var(--done);color:var(--done-ink)}
+li.isdone .t b{text-decoration:line-through;text-decoration-color:var(--muted)}
+.after li{grid-template-columns:28px 1fr}
+.foot{color:var(--muted);font-size:12px;margin-top:22px}
+.offline{background:var(--pink-soft);color:var(--wait-ink);border-radius:10px;padding:8px 12px;font-size:13px;margin-bottom:12px}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+</style>
+
+<div class="wrap">
+  <h1>Launch Checklist</h1>
+  <p class="count" id="count">0 of 17 done · launch Tue Oct 27</p>
+  <div class="bar"><i id="barfill"></i></div>
+  <p class="sub">Tap a status to change it. Tap a note to edit it. Everything saves for both of us.</p>
+  <div id="offline" class="offline" hidden>Statuses can't load in this view, so they won't save here.</div>
+  <div id="groups"></div>
+
+  <h2>After launch</h2>
+  <ul class="after" id="after"></ul>
+  <p class="foot">Parked on purpose so this week stays on the site, the app and social.</p>
+</div>
+
+<script>
+const RTS="https://claude.ai/artifact/RTtaTzgkN2ssmiAP3FxvJF", FYM="https://claude.ai/artifact/6epA9HuEdT32zUp79Qv3kd",
+      WW="https://claude.ai/artifact/Q8RhYaJwAxYHwXGLGavrEC", LIVE="https://claude.ai/artifact/9mwKRfRbQRAoBLknJCcpL9";
+const GROUPS=[
+ {name:"Site pages",items:[
+  [1,"Home page: your fixes",null],
+  [2,"Mahjong Matches page: your fixes",null],
+  [3,"About page (new, about you)",null],
+  [4,"Community page redo",null],
+  [5,"Events out of the menu",null],
+  [6,"Holiday gallery linked in the menu",null],
+  [7,"Retired labels on retired tile sets",["Ready to Ship",RTS]],
+  [8,"Color cards + favorite tiles for the 6 new albums",["Ready to Ship",RTS]],
+  [9,"Brands footer link, form, hidden page + reply email",["Preview",WW]],
+  [10,"Mat Gallery: every mat by color",null],
+  [11,"Amazon storefront: where it's linked on the site",null]]},
+ {name:"Testing",items:[
+  [12,"Click-through QA: every page, desktop + mobile, plus Find Your Match",["Find Your Match",FYM]]]},
+ {name:"Social + partners",items:[
+  [13,"Launch-week social: 2.0 trailer + episodes",["Ready to Ship",RTS]],
+  [14,"Pinterest pins rebuilt in the new card style",null],
+  [15,"ShopMy collections + Amazon storefront collages",null],
+  [16,"New Facebook group cover posted",["Ready to Ship",RTS]],
+  [17,"Partner thank-you email (Gmail draft)",["Ready to Ship",RTS]]]}
+];
+const AFTER=["Top-up swipes: get every album to 25","Virora Petalée album","Brownstone Bloom: more mats + sharper cards","Vivienne and Larkspur mat albums","Holiday table reels and stories","Facebook Page for Mahj Matchmaker"];
+const ST=[["todo","To do"],["prog","In progress"],["wait","Waiting on Tiffany"],["done","Done"]];
+const state={}; let db=null;
+
+function render(){
+  const g=document.getElementById("groups"); g.textContent="";
+  let done=0;
+  for(const grp of GROUPS){
+    const h=document.createElement("h2"); h.textContent=grp.name; g.appendChild(h);
+    const ul=document.createElement("ul");
+    for(const [n,label,link] of grp.items){
+      const s=state["i"+n]||{}; const st=s.status||"todo"; if(st==="done") done++;
+      const li=document.createElement("li"); if(st==="done") li.className="isdone";
+      const num=document.createElement("span"); num.className="n"; num.textContent=n;
+      const t=document.createElement("div"); t.className="t";
+      const b=document.createElement("b"); b.textContent=label; t.appendChild(b);
+      if(link){t.append(" "); const a=document.createElement("a"); a.href=link[1]; a.target="_blank"; a.rel="noopener"; a.textContent=link[0]+" ↗"; t.appendChild(a);}
+      const note=document.createElement("span"); note.className="note"; note.textContent=s.note||"";
+      if(db){note.contentEditable="true"; note.spellcheck=true;
+        note.addEventListener("blur",()=>{const v=note.textContent.trim(); if(v!==(s.note||"")) save(n,{note:v});});
+        note.addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();note.blur();}});}
+      t.appendChild(note);
+      const p=document.createElement("button"); p.className="pill s-"+st; p.id="pill-"+n;
+      p.textContent=(ST.find(x=>x[0]===st)||ST[0])[1]; p.setAttribute("aria-label","Status for item "+n+": "+p.textContent+". Tap to change.");
+      p.disabled=!db;
+      p.addEventListener("click",()=>{const i=ST.findIndex(x=>x[0]===st); save(n,{status:ST[(i+1)%ST.length][0]});});
+      li.append(num,t,p); ul.appendChild(li);
+    }
+    g.appendChild(ul);
+  }
+  document.getElementById("count").textContent=done+" of 17 done · launch Tue Oct 27";
+  document.getElementById("barfill").style.width=(done/17*100)+"%";
+}
+function renderAfter(){const ul=document.getElementById("after");
+  AFTER.forEach((a,i)=>{const li=document.createElement("li");const n=document.createElement("span");n.className="n";n.textContent="·";
+  const t=document.createElement("div");t.className="t";const b=document.createElement("b");b.textContent=a;t.appendChild(b);li.append(n,t);ul.appendChild(li);});}
+async function save(n,patch){
+  state["i"+n]={...(state["i"+n]||{}),...patch}; render();
+  try{await db.collection("items").doc("i"+n).set({...state["i"+n],n,updatedAt:Date.now()});}
+  catch(e){document.getElementById("offline").hidden=false;document.getElementById("offline").textContent="That change didn't save. Try again in a moment.";}
+}
+render(); renderAfter();
+(async()=>{
+  try{ db=await (window.claude&&window.claude.use?window.claude.use("db"):null);}catch(e){db=null;}
+  if(!db){document.getElementById("offline").hidden=false; return;}
+  db.collection("items").onSnapshot(snap=>{snap.docs.forEach(d=>{if(d.exists) state[d.id]=d.data();}); render();},
+    ()=>{document.getElementById("offline").hidden=false;});
+  render();
+})();
+</script>
