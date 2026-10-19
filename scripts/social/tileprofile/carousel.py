@@ -55,7 +55,7 @@ chips_f = ''.join(f"""<div class="chip" style="width:210px"><div class="sw" styl
 s2 = page(2, head('1 · her colors') + f"""
 <div style="position:absolute;top:120px;left:72px;right:72px">
  <div class="cap" style="font-size:96px">Her colors</div>
- <div class="pf" style="font-size:34px;margin-top:10px;color:#3c4f73;max-width:900px">Papaya backs, lavender and lime layers. Clean brights, no dusty undertone.</div>
+ <div class="pf" style="font-size:34px;margin-top:10px;color:#3c4f73;max-width:900px">Papaya backs, lavender and light lime layers. Clean brights, no dusty undertone.</div>
  <div class="caps" style="margin-top:44px;font-size:19px;color:#5a6b85">The backs</div>
  <div style="display:flex;gap:23px;margin-top:14px">{chips_b}</div>
  <div class="caps" style="margin-top:40px;font-size:19px;color:#5a6b85">The faces</div>
