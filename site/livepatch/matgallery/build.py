@@ -3,14 +3,22 @@ images = assets/mats/gallery/<name>.webp (commit pinned). Hidden (hid) and photo
 Usage: python3 build.py D.json manifest.json COMMIT > matgallery.html"""
 import json,sys,html,re
 D=json.load(open(sys.argv[1]));M=D['mats'];man=json.load(open(sys.argv[2]));C=sys.argv[3]
-COL=[('pink','Pink'),('red','Red'),('blue','Blue'),('green','Green'),('purple','Purple'),('yellow','Yellow & Orange'),('neutral','Neutral & Ivory'),('dark','Dark & Moody'),('holiday','Holiday')]
-def col(v):
-    if v.get('hol'):return 'holiday'
-    f=(v.get('mf') or ['neutral'])[0]
-    return 'yellow' if f in('orange','yellow') else f
+import os
+sys.path.insert(0,os.path.join(os.path.dirname(os.path.abspath(__file__)),'..','..','..','scripts','colors'))
+import matcolors as MC
+# Sections follow the mat color model (doc 42/76): Yellow, Orange and Brown are separate; gold/mustard sits with yellow.
+COL=[('pink','Pink'),('red','Red'),('orange','Orange & Peach'),('yellow','Yellow & Mustard'),('green','Green'),('teal','Teal & Aqua'),('blue','Blue'),('purple','Purple & Lilac'),('brown','Brown & Tan'),('neutral','Neutral & Ivory'),('bw','Black & White'),('dark','Dark & Moody'),('multi','Multicolor'),('holiday','Holiday')]
+SEC={'gold':'yellow'}
+def col(v,k):
+    r=MC.get(k)  # Tiffany's tagger taps win, then Claude's reviewed read (config/mat-color-guesses.json)
+    if r is None:
+        if v.get('hol'):return 'holiday'
+        return (v.get('mf') or ['neutral'])[0]
+    if r.get('holiday'):return 'holiday'
+    return SEC.get(r['primary'],r['primary'])
 rows=[];brands=set()
 for name,k in man.items():
-    v=M[k];c=col(v);brands.add(v['bn'])
+    v=M[k];c=col(v,k);brands.add(v['bn'])
     nm=re.sub(r'\s+(Mahjong|Mahj)?\s*Mats?$','',v['n'],flags=re.I).strip() or v['n']
     rows.append([name,nm,v['bn'],'' if v.get('rt') else v['u'],1 if v.get('rt') else 0,c,(v.get('dc') or '').replace('https://mahjmatchmaker.com','')])
 order={c:i for i,(c,_) in enumerate(COL)}

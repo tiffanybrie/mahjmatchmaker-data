@@ -10,20 +10,27 @@ D = json.load(open(sys.argv[1]))['mats']; man = json.load(open(sys.argv[2]))
 src = open(sys.argv[3]).read(); i = src.find('window.__EMB='); j = src.find('</script>', i)
 EMB = src[i:j].rstrip().rstrip(';')  # window.__EMB={...}
 G = json.load(open(sys.argv[5])) if len(sys.argv) > 5 else {}
+# Claude's reviewed read (Oct 19: looked at every photo; conf high|medium|low). Wins over the scratch guesses.
+_RG = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'config/mat-color-guesses.json')
+RV = {k: v for k, v in json.load(open(_RG))['mats'].items() if v.get('conf')} if os.path.exists(_RG) else {}
+CONF = {'low': 0, 'medium': 1, 'high': 2}
 R0 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')
 _PP = os.path.join(R0, 'config/mat-palettes.json')
 PAL = json.load(open(_PP))['mats'] if os.path.exists(_PP) else {}
 rows = []
 for name, k in man.items():
     v = D[k]
-    if name in G: g = G[name]; p, s, tone, amb = g['p'], g['s'], g['t'], g['a']
+    cf = 2; hol = 1 if v.get('hol') else 0
+    if k in RV:
+        g = RV[k]; p, s, tone, amb = g['primary'], g['secondary'], g['tone'], 0; cf = CONF[g['conf']]; hol = 1 if g.get('holiday') else 0
+    elif name in G: g = G[name]; p, s, tone, amb = g['p'], g['s'], g['t'], g['a']
     else: p, s, tone, amb = F.guess_img(os.path.join(R0, 'assets/mats/gallery', name + '.webp'))
     old = (v.get('mf') or ['neutral'])[0]
     score = (1.0 if old != p else 0) + amb * 0.8 + (0.5 if p == 'multi' else 0) + (0.3 if p in ('brown', 'orange', 'yellow', 'gold') else 0)
-    rows.append({'id': name, 'k': k, 'n': v['n'], 'b': v['bn'], 'p': p, 's': s, 't': tone, 'h': 1 if v.get('hol') else 0,
+    rows.append({'id': name, 'k': k, 'n': v['n'], 'b': v['bn'], 'p': p, 's': s, 't': tone, 'h': hol, 'c': cf,
                  'r': 1 if v.get('rt') else 0, 'sc': round(score, 3),
                  'pl': [h for h, w in (PAL.get(k) or {}).get('pal', [])]})
-rows.sort(key=lambda r: -r['sc'])
+rows.sort(key=lambda r: (r['c'], -r['sc']))
 for i2, r in enumerate(rows): r['o'] = i2
 data = json.dumps(rows, separators=(',', ':'), ensure_ascii=False).replace('</', '<\\/')
 # Tile tones tab (doc 76): one card per tile set, thumbnail embedded (artifact pages can't load outside images)
@@ -97,10 +104,11 @@ button:focus-visible,select:focus-visible{outline:3px solid var(--pink);outline-
 </style>
 <div class="wrap">
 <h1>Mat Color Tagger</h1>
+<p class="lede" id="lede0"><b>Check these first.</b> I looked at every mat photo and picked a main color, tone and accents. The ones I'm unsure about (low) and fairly sure about (medium) are listed first, grouped by main color. If a card is right, tap <b>Looks right</b> (or <b>All of these look right</b> for a whole group). If not, tap the right main color or tone; it saves right away. When the check list is done, the Mat Gallery can go live.</p>
 <p class="lede">Pick each mat's main color, the one you'd say at first glance, its tone (clean and bright, pastel, earthy, or blend: a real mix of clean and earthy colors, like olive with bright pink), then tap any accent colors (up to 3). The computer's guess is filled in, and the mats most likely wrong come first. Every tap saves right away and overrides the computer's colors everywhere: swipe books, Find Your Match and the gallery.</p>
 <div class="bar">
 <span class="count" id="count"></span>
-<div class="seg" role="group" aria-label="View"><button type="button" id="vWrong" aria-pressed="true">Most likely wrong</button><button type="button" id="vColor" aria-pressed="false">By main color</button><button type="button" id="vTile" aria-pressed="false">Tile tones</button><button type="button" id="vFind" aria-pressed="false">Color finder</button></div>
+<div class="seg" role="group" aria-label="View"><button type="button" id="vCheck" aria-pressed="true">Check these</button><button type="button" id="vWrong" aria-pressed="false">Most likely wrong</button><button type="button" id="vColor" aria-pressed="false">By main color</button><button type="button" id="vTile" aria-pressed="false">Tile tones</button><button type="button" id="vFind" aria-pressed="false">Color finder</button></div>
 <select id="brand" aria-label="Brand"><option value="">All brands</option></select>
 <button type="button" class="tg" id="unchk" aria-pressed="false">Unchecked only</button>
 </div>
@@ -118,7 +126,7 @@ var LBL={};CODES.forEach(function(c){LBL[c[0]]=c[1]});
 var R=JSON.parse(document.getElementById('rows').textContent),BY={};R.forEach(function(r){BY[r.id]=r});
 var S={}; // saved state by id
 var TT=JSON.parse(document.getElementById('trows').textContent),TBY={},TS={},TTONES=__TTONES__;TT.forEach(function(r){TBY[r.id]=r});
-var view='wrong',brand='',unchk=false,secF='',toneF='',shown=60,db=null,canWrite=true;
+var view='check',CL=['Low: please look','Medium: probably right','High: I\'m sure'],brand='',unchk=false,secF='',toneF='',shown=60,db=null,canWrite=true;
 var list=document.getElementById('list'),msg=document.getElementById('msg');
 var bs={};R.forEach(function(r){bs[r.b]=1});Object.keys(bs).sort(function(a,b){return a.toLowerCase()<b.toLowerCase()?-1:1}).forEach(function(b){var o=document.createElement('option');o.textContent=b;document.getElementById('brand').appendChild(o)});
 var secf=document.getElementById('secf');secf.innerHTML='<button type="button" class="chip sec" data-s="" aria-pressed="true">Any accent</button>'+CODES.map(function(c){return '<button type="button" class="chip sec" data-s="'+c[0]+'" aria-pressed="false"><i style="background:'+SW[c[0]]+'"></i>'+c[1]+'</button>'}).join('');
@@ -131,6 +139,8 @@ return '<div class="card'+(c.done?' done':'')+(c.k?' skip':'')+'" data-id="'+r.i
 '<div class="lab">Main color (what you\'d call it at first glance)</div><div class="chips">'+CODES.map(function(x){return '<button type="button" class="chip pri'+(x[0]==='multi'?' multi':'')+'" data-p="'+x[0]+'" aria-pressed="'+(c.p===x[0])+'"><i style="background:'+SW[x[0]]+'"></i>'+x[1]+'</button>'}).join('')+'</div>'+'<div class="lab">Tone</div><div class="chips">'+TONES.map(function(x){return '<button type="button" class="chip ton" data-t="'+x[0]+'" aria-pressed="'+(c.t===x[0])+'">'+x[1]+'</button>'}).join('')+'</div>'+
 '<div class="lab">Accents (up to 3)</div><div class="chips">'+CODES.filter(function(x){return x[0]!=='multi'}).map(function(x){return '<button type="button" class="chip sec" data-s="'+x[0]+'" aria-pressed="'+(c.s.indexOf(x[0])>=0)+'"'+(x[0]===c.p?' hidden':'')+'><i style="background:'+SW[x[0]]+'"></i>'+x[1]+'</button>'}).join('')+'</div>'+
 '<div class="row2"><button type="button" class="tg hol" aria-pressed="'+c.h+'">Holiday</button><button type="button" class="tg skp" aria-pressed="'+c.k+'">Skip (never match)</button>'+(c.done?'':'<button type="button" class="tg ok">Looks right</button>')+'</div></div></div>'}
+function grp(L,title,key){var u=L.filter(function(r){return !S[r.id]}).length;return '<section class="sec"><h2>'+title+' <small style="font:600 14px var(--body);color:var(--soft)">'+L.length+(u<L.length?' &middot; '+u+' to check':'')+'</small></h2>'+(u?'<button type="button" class="tg allok" data-g="'+key+'">All of these look right ('+u+')</button>':'')+'<div class="grid">'+L.slice(0,shown).map(card).join('')+'</div>'+(L.length>shown?'<p class="lede">'+(L.length-shown)+' more here. Tap "Show more" at the bottom.</p>':'')+'</section>'}
+var GRP={};
 function pass(r){if(brand&&r.b!==brand)return false;if(unchk&&S[r.id])return false;var c=cur(r);if(secF&&c.s.indexOf(secF)<0)return false;if(toneF&&c.t!==toneF)return false;return true}
 function tcur(r){var s=TS[r.id];return s?{t:s.tone||r.t,d:s.dominant||r.d,done:true}:{t:r.t,d:r.d,done:r.ts==='tiffany'}}
 function tcard(r){var c=tcur(r);return '<div class="card'+(c.done?' done':'')+'" data-tid="'+r.id+'">'+(r.i?'<img src="'+r.i+'" alt="'+esc(r.n)+' tiles" loading="lazy" width="120" height="120">':'<div style="grid-area:img;width:84px;height:84px;border-radius:10px;background:var(--line)"></div>')+'<div class="hd"><div class="brand">'+esc(r.b)+(r.ts==='tiffany'&&!TS[r.id]?' &middot; your call':'')+'</div><div class="name">'+esc(r.n)+(c.done?'<span class="chk">&#10003;</span>':'')+'</div></div><div class="body">'+
@@ -149,7 +159,11 @@ document.getElementById('pick').oninput=function(e){target=e.target.value;render
 list.querySelectorAll('.dot,.tsh').forEach(function(b){b.onclick=function(){target=b.dataset.h;window.scrollTo(0,0);renderFind()}})}
 
 function render(){if(view==='find'){renderFind();return}if(view==='tile'){var nT=Object.keys(TS).length;document.getElementById('count').innerHTML='<b>'+nT+'</b> of '+TT.length+' tile sets checked';list.innerHTML='<p class="lede">Clean = tints (brights and pastels). Earthy = shades with brown in them (olive, cognac, Bordeaux). Transitional = in between, like berries. Clean tiles get clean, pastel and blend mats; earthy tiles get earthy and blend mats.</p><div class="grid">'+TT.filter(function(r){return !brand||r.b===brand}).map(tcard).join('')+'</div>';return}
-var n=Object.keys(S).length;document.getElementById('count').innerHTML='<b>'+n+'</b> of '+R.length+' checked';
+var n=Object.keys(S).length;document.getElementById('count').innerHTML='<b>'+n+'</b> of '+R.length+' checked';document.getElementById('lede0').hidden=view!=='check';
+if(view==='check'){var need=R.filter(function(r){return r.c<2&&!S[r.id]}).length;document.getElementById('count').innerHTML='<b>'+need+'</b> left to check &middot; '+n+' of '+R.length+' checked';var hh='';GRP={};[0,1].forEach(function(cv){var any=0;CODES.forEach(function(c){var L=R.filter(function(r){return r.c===cv&&pass(r)&&cur(r).p===c[0]});if(!L.length)return;if(!any){hh+='<h2 style="font-family:var(--disp);font-weight:400;color:var(--pink);font-size:28px;margin:26px 0 0">'+CL[cv]+'</h2>';any=1}var key=cv+'_'+c[0];GRP[key]=L;hh+=grp(L,c[1],key)})});
+var HL=R.filter(function(r){return r.c===2&&pass(r)});hh+='<h2 style="font-family:var(--disp);font-weight:400;color:var(--pink);font-size:28px;margin:26px 0 0">'+CL[2]+' <small style="font:600 14px var(--body);color:var(--soft)">'+HL.length+'</small></h2>'+(showHigh?'':'<p class="lede">These look clear to me. Skim them in By main color, or open them here.</p><button type="button" class="tg" id="openHigh">Show the ones I\'m sure of</button>');
+if(showHigh)CODES.forEach(function(c){var L=HL.filter(function(r){return cur(r).p===c[0]});if(!L.length)return;var key='2_'+c[0];GRP[key]=L;hh+=grp(L,c[1],key)});
+list.innerHTML=hh+'<button type="button" class="more" id="more">Show more</button>';var mm=document.getElementById('more');if(mm)mm.onclick=function(){shown+=60;render()};var oh=document.getElementById('openHigh');if(oh)oh.onclick=function(){showHigh=true;render()};return}
 var h='';
 if(view==='wrong'){var L=R.filter(pass),sl=L.slice(0,shown);h='<div class="grid">'+sl.map(card).join('')+'</div>'+(L.length>shown?'<button type="button" class="more" id="more">Show more ('+(L.length-shown)+' left)</button>':'')}
 else{CODES.forEach(function(c){var L=R.filter(function(r){return pass(r)&&cur(r).p===c[0]});if(!L.length)return;h+='<section class="sec"><h2>'+c[1]+' <small style="font:600 14px var(--body);color:var(--soft)">'+L.length+'</small></h2><div class="grid">'+L.slice(0,shown).map(card).join('')+'</div>'+(L.length>shown?'<p class="lede">'+(L.length-shown)+' more in '+c[1]+'. Tap "Show more" below.</p>':'')+'</section>'});h+='<button type="button" class="more" id="more">Show more</button>'}
@@ -164,6 +178,7 @@ if(tb&&tc){var tid=tc.dataset.tid,tr=TBY[tid],cc=tcur(tr),ns={tone:cc.t,dominant
 if(tb.classList.contains('tt'))ns.tone=tb.dataset.t;else if(tb.classList.contains('td'))ns.dominant=tb.dataset.d;else if(!tb.classList.contains('tok'))return;
 TS[tid]=ns;var t2=document.createElement('div');t2.innerHTML=tcard(tr);tc.replaceWith(t2.firstChild);document.getElementById('count').innerHTML='<b>'+Object.keys(TS).length+'</b> of '+TT.length+' tile sets checked';
 if(db)db.doc('tiletones/'+tid).set({tone:ns.tone,dominant:ns.dominant,name:tr.n,by:'tiffany',at:new Date().toISOString()}).catch(function(){msg.hidden=false;msg.textContent='A tap didn\'t save. Check your connection and tap again.'});return}
+var ao=e.target.closest('.allok');if(ao){(GRP[ao.dataset.g]||[]).forEach(function(r){if(S[r.id])return;var c=cur(r);save(r.id,{primary:c.p,secondary:c.s.slice(),tone:c.t,holiday:c.h,skip:c.k})});render();return}
 var b=e.target.closest('button'),im=e.target.closest('.card img');
 if(im){var z=document.createElement('div');z.className='zoom';z.innerHTML='<img src="'+im.src+'" alt="">';z.onclick=function(){z.remove()};document.body.appendChild(z);return}
 if(!b)return;var el=b.closest('.card');if(!el)return;var id=el.dataset.id,r=BY[id],c=cur(r);
@@ -175,7 +190,8 @@ else if(b.classList.contains('hol'))st.holiday=!st.holiday;
 else if(b.classList.contains('skp'))st.skip=!st.skip;
 else if(!b.classList.contains('ok'))return;
 save(id,st)});
-function setView(v){view=v;shown=60;document.getElementById('vWrong').setAttribute('aria-pressed',v==='wrong');document.getElementById('vColor').setAttribute('aria-pressed',v==='color');document.getElementById('vTile').setAttribute('aria-pressed',v==='tile');document.getElementById('vFind').setAttribute('aria-pressed',v==='find');document.getElementById('unchk').hidden=(v==='tile'||v==='find');secf.hidden=v!=='color';tonef.hidden=v!=='color';render()}
+var showHigh=false;function setView(v){view=v;shown=60;document.getElementById('vCheck').setAttribute('aria-pressed',v==='check');document.getElementById('vWrong').setAttribute('aria-pressed',v==='wrong');document.getElementById('vColor').setAttribute('aria-pressed',v==='color');document.getElementById('vTile').setAttribute('aria-pressed',v==='tile');document.getElementById('vFind').setAttribute('aria-pressed',v==='find');document.getElementById('unchk').hidden=(v==='tile'||v==='find');secf.hidden=v!=='color';tonef.hidden=v!=='color';render()}
+document.getElementById('vCheck').onclick=function(){setView('check')};
 document.getElementById('vWrong').onclick=function(){setView('wrong')};document.getElementById('vTile').onclick=function(){setView('tile')};document.getElementById('vColor').onclick=function(){setView('color')};document.getElementById('vFind').onclick=function(){setView('find')};
 document.getElementById('brand').onchange=function(e){brand=e.target.value;shown=60;render()};
 document.getElementById('unchk').onclick=function(e){unchk=!unchk;e.currentTarget.setAttribute('aria-pressed',unchk);shown=60;render()};
