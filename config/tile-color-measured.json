@@ -1,0 +1,2496 @@
+{
+ "about": "Measured tile back/layer colors from assets/tiles/album (white faces masked). See docs/87.",
+ "tiles": {
+  "amara": {
+   "clusters": [
+    {
+     "hex": "#da508c",
+     "hue": 334,
+     "sat": 0.65,
+     "light": 0.58,
+     "pct": 31.6,
+     "family": "pink"
+    },
+    {
+     "hex": "#b4a3b1",
+     "hue": 311,
+     "sat": 0.1,
+     "light": 0.67,
+     "pct": 31.1,
+     "family": "pink"
+    },
+    {
+     "hex": "#412a2b",
+     "hue": 358,
+     "sat": 0.21,
+     "light": 0.21,
+     "pct": 14.6,
+     "family": "dark"
+    },
+    {
+     "hex": "#89224c",
+     "hue": 336,
+     "sat": 0.6,
+     "light": 0.33,
+     "pct": 13.3,
+     "family": "pink"
+    },
+    {
+     "hex": "#73aa82",
+     "hue": 137,
+     "sat": 0.24,
+     "light": 0.56,
+     "pct": 9.5,
+     "family": "green"
+    }
+   ],
+   "family_area": {
+    "pink": 76.0,
+    "dark": 14.6,
+    "green": 9.5
+   },
+   "site_back_family": [
+    "Pink"
+   ]
+  },
+  "birdie": {
+   "clusters": [
+    {
+     "hex": "#a5c0c1",
+     "hue": 181,
+     "sat": 0.18,
+     "light": 0.7,
+     "pct": 52.2,
+     "family": "teal"
+    },
+    {
+     "hex": "#557d7a",
+     "hue": 176,
+     "sat": 0.19,
+     "light": 0.41,
+     "pct": 22.6,
+     "family": "teal"
+    },
+    {
+     "hex": "#1d3432",
+     "hue": 176,
+     "sat": 0.29,
+     "light": 0.16,
+     "pct": 13.0,
+     "family": "dark"
+    },
+    {
+     "hex": "#11254f",
+     "hue": 220,
+     "sat": 0.65,
+     "light": 0.19,
+     "pct": 7.4,
+     "family": "dark"
+    },
+    {
+     "hex": "#ca72a3",
+     "hue": 327,
+     "sat": 0.45,
+     "light": 0.62,
+     "pct": 4.8,
+     "family": "pink"
+    }
+   ],
+   "family_area": {
+    "teal": 74.80000000000001,
+    "dark": 20.4,
+    "pink": 4.8
+   },
+   "site_back_family": [
+    "Blue"
+   ]
+  },
+  "classic-tortoise-zoom": {
+   "clusters": [
+    {
+     "hex": "#c2b693",
+     "hue": 44,
+     "sat": 0.28,
+     "light": 0.67,
+     "pct": 31.9,
+     "family": "gold"
+    },
+    {
+     "hex": "#ba9d98",
+     "hue": 9,
+     "sat": 0.2,
+     "light": 0.66,
+     "pct": 26.0,
+     "family": "pink"
+    },
+    {
+     "hex": "#74675c",
+     "hue": 28,
+     "sat": 0.12,
+     "light": 0.41,
+     "pct": 22.3,
+     "family": "neutral"
+    },
+    {
+     "hex": "#331711",
+     "hue": 11,
+     "sat": 0.51,
+     "light": 0.13,
+     "pct": 10.9,
+     "family": "dark"
+    },
+    {
+     "hex": "#95440e",
+     "hue": 24,
+     "sat": 0.83,
+     "light": 0.32,
+     "pct": 8.9,
+     "family": "red"
+    }
+   ],
+   "family_area": {
+    "gold": 31.9,
+    "pink": 26.0,
+    "neutral": 22.3,
+    "dark": 10.9,
+    "red": 8.9
+   },
+   "site_back_family": null
+  },
+  "coquette": {
+   "clusters": [
+    {
+     "hex": "#b1acc0",
+     "hue": 255,
+     "sat": 0.14,
+     "light": 0.71,
+     "pct": 29.9,
+     "family": "purple"
+    },
+    {
+     "hex": "#c694a8",
+     "hue": 336,
+     "sat": 0.3,
+     "light": 0.68,
+     "pct": 24.9,
+     "family": "pink"
+    },
+    {
+     "hex": "#80586f",
+     "hue": 326,
+     "sat": 0.18,
+     "light": 0.42,
+     "pct": 20.4,
+     "family": "pink"
+    },
+    {
+     "hex": "#391e2c",
+     "hue": 329,
+     "sat": 0.31,
+     "light": 0.17,
+     "pct": 19.5,
+     "family": "dark"
+    },
+    {
+     "hex": "#82a590",
+     "hue": 145,
+     "sat": 0.17,
+     "light": 0.58,
+     "pct": 5.2,
+     "family": "green"
+    }
+   ],
+   "family_area": {
+    "pink": 45.3,
+    "purple": 29.9,
+    "dark": 19.5,
+    "green": 5.2
+   },
+   "site_back_family": [
+    "Pink"
+   ]
+  },
+  "cypress": {
+   "clusters": [
+    {
+     "hex": "#504431",
+     "hue": 37,
+     "sat": 0.24,
+     "light": 0.25,
+     "pct": 24.8,
+     "family": "brown"
+    },
+    {
+     "hex": "#96673e",
+     "hue": 28,
+     "sat": 0.41,
+     "light": 0.42,
+     "pct": 22.0,
+     "family": "brown"
+    },
+    {
+     "hex": "#282215",
+     "hue": 40,
+     "sat": 0.31,
+     "light": 0.12,
+     "pct": 21.9,
+     "family": "dark"
+    },
+    {
+     "hex": "#b5b09a",
+     "hue": 50,
+     "sat": 0.15,
+     "light": 0.66,
+     "pct": 16.1,
+     "family": "gold"
+    },
+    {
+     "hex": "#77725e",
+     "hue": 46,
+     "sat": 0.12,
+     "light": 0.42,
+     "pct": 15.2,
+     "family": "brown"
+    }
+   ],
+   "family_area": {
+    "brown": 62.0,
+    "dark": 21.9,
+    "gold": 16.1
+   },
+   "site_back_family": [
+    "Brown",
+    "Natural Patterns"
+   ]
+  },
+  "dandy": {
+   "clusters": [
+    {
+     "hex": "#dc3479",
+     "hue": 335,
+     "sat": 0.7,
+     "light": 0.53,
+     "pct": 39.4,
+     "family": "pink"
+    },
+    {
+     "hex": "#592b33",
+     "hue": 349,
+     "sat": 0.35,
+     "light": 0.26,
+     "pct": 19.7,
+     "family": "dark"
+    },
+    {
+     "hex": "#c39ca3",
+     "hue": 349,
+     "sat": 0.24,
+     "light": 0.69,
+     "pct": 18.5,
+     "family": "pink"
+    },
+    {
+     "hex": "#78b0a8",
+     "hue": 172,
+     "sat": 0.26,
+     "light": 0.58,
+     "pct": 11.3,
+     "family": "teal"
+    },
+    {
+     "hex": "#9b9d53",
+     "hue": 62,
+     "sat": 0.31,
+     "light": 0.47,
+     "pct": 11.1,
+     "family": "yellow"
+    }
+   ],
+   "family_area": {
+    "pink": 57.9,
+    "dark": 19.7,
+    "teal": 11.3,
+    "yellow": 11.1
+   },
+   "site_back_family": [
+    "Pink"
+   ]
+  },
+  "drake": {
+   "clusters": [
+    {
+     "hex": "#aeaaa6",
+     "hue": 29,
+     "sat": 0.04,
+     "light": 0.67,
+     "pct": 25.6,
+     "family": "neutral"
+    },
+    {
+     "hex": "#535325",
+     "hue": 59,
+     "sat": 0.39,
+     "light": 0.24,
+     "pct": 23.6,
+     "family": "yellow"
+    },
+    {
+     "hex": "#2d281a",
+     "hue": 44,
+     "sat": 0.27,
+     "light": 0.14,
+     "pct": 23.2,
+     "family": "dark"
+    },
+    {
+     "hex": "#606f73",
+     "hue": 194,
+     "sat": 0.09,
+     "light": 0.41,
+     "pct": 14.0,
+     "family": "neutral"
+    },
+    {
+     "hex": "#8b5a53",
+     "hue": 7,
+     "sat": 0.25,
+     "light": 0.44,
+     "pct": 13.5,
+     "family": "red"
+    }
+   ],
+   "family_area": {
+    "neutral": 39.6,
+    "yellow": 23.6,
+    "dark": 23.2,
+    "red": 13.5
+   },
+   "site_back_family": [
+    "Green"
+   ]
+  },
+  "emerald": {
+   "clusters": [
+    {
+     "hex": "#2b332e",
+     "hue": 139,
+     "sat": 0.09,
+     "light": 0.18,
+     "pct": 33.6,
+     "family": "dark"
+    },
+    {
+     "hex": "#aaa8a1",
+     "hue": 46,
+     "sat": 0.05,
+     "light": 0.65,
+     "pct": 30.7,
+     "family": "neutral"
+    },
+    {
+     "hex": "#41b48f",
+     "hue": 161,
+     "sat": 0.47,
+     "light": 0.48,
+     "pct": 15.1,
+     "family": "teal"
+    },
+    {
+     "hex": "#216043",
+     "hue": 152,
+     "sat": 0.48,
+     "light": 0.25,
+     "pct": 13.0,
+     "family": "green"
+    },
+    {
+     "hex": "#ca83b3",
+     "hue": 319,
+     "sat": 0.4,
+     "light": 0.65,
+     "pct": 7.6,
+     "family": "pink"
+    }
+   ],
+   "family_area": {
+    "dark": 33.6,
+    "neutral": 30.7,
+    "teal": 15.1,
+    "green": 13.0,
+    "pink": 7.6
+   },
+   "site_back_family": [
+    "Green",
+    "Natural Patterns"
+   ]
+  },
+  "gatsby": {
+   "clusters": [
+    {
+     "hex": "#10475e",
+     "hue": 198,
+     "sat": 0.71,
+     "light": 0.22,
+     "pct": 38.4,
+     "family": "blue"
+    },
+    {
+     "hex": "#1a2725",
+     "hue": 167,
+     "sat": 0.2,
+     "light": 0.13,
+     "pct": 19.3,
+     "family": "dark"
+    },
+    {
+     "hex": "#a4a396",
+     "hue": 54,
+     "sat": 0.07,
+     "light": 0.62,
+     "pct": 18.7,
+     "family": "neutral"
+    },
+    {
+     "hex": "#64675b",
+     "hue": 75,
+     "sat": 0.06,
+     "light": 0.38,
+     "pct": 12.9,
+     "family": "neutral"
+    },
+    {
+     "hex": "#273c14",
+     "hue": 90,
+     "sat": 0.5,
+     "light": 0.16,
+     "pct": 10.7,
+     "family": "dark"
+    }
+   ],
+   "family_area": {
+    "blue": 38.4,
+    "neutral": 31.6,
+    "dark": 30.0
+   },
+   "site_back_family": [
+    "Blue"
+   ]
+  },
+  "gemma": {
+   "clusters": [
+    {
+     "hex": "#5b3564",
+     "hue": 288,
+     "sat": 0.31,
+     "light": 0.3,
+     "pct": 34.2,
+     "family": "purple"
+    },
+    {
+     "hex": "#281a33",
+     "hue": 274,
+     "sat": 0.32,
+     "light": 0.15,
+     "pct": 29.1,
+     "family": "dark"
+    },
+    {
+     "hex": "#a8a0af",
+     "hue": 271,
+     "sat": 0.08,
+     "light": 0.66,
+     "pct": 13.4,
+     "family": "neutral"
+    },
+    {
+     "hex": "#374c52",
+     "hue": 194,
+     "sat": 0.2,
+     "light": 0.27,
+     "pct": 12.8,
+     "family": "neutral"
+    },
+    {
+     "hex": "#53a994",
+     "hue": 166,
+     "sat": 0.34,
+     "light": 0.49,
+     "pct": 10.6,
+     "family": "teal"
+    }
+   ],
+   "family_area": {
+    "purple": 34.2,
+    "dark": 29.1,
+    "neutral": 26.200000000000003,
+    "teal": 10.6
+   },
+   "site_back_family": [
+    "Purple"
+   ]
+  },
+  "glitterville": {
+   "clusters": [
+    {
+     "hex": "#ab0a38",
+     "hue": 343,
+     "sat": 0.89,
+     "light": 0.36,
+     "pct": 28.1,
+     "family": "pink"
+    },
+    {
+     "hex": "#d59bac",
+     "hue": 342,
+     "sat": 0.41,
+     "light": 0.72,
+     "pct": 23.8,
+     "family": "pink"
+    },
+    {
+     "hex": "#5d1d25",
+     "hue": 353,
+     "sat": 0.52,
+     "light": 0.24,
+     "pct": 18.7,
+     "family": "brown"
+    },
+    {
+     "hex": "#d12c6d",
+     "hue": 336,
+     "sat": 0.66,
+     "light": 0.5,
+     "pct": 18.4,
+     "family": "pink"
+    },
+    {
+     "hex": "#9da19c",
+     "hue": 110,
+     "sat": 0.03,
+     "light": 0.62,
+     "pct": 11.0,
+     "family": "neutral"
+    }
+   ],
+   "family_area": {
+    "pink": 70.30000000000001,
+    "brown": 18.7,
+    "neutral": 11.0
+   },
+   "site_back_family": [
+    "Pink"
+   ]
+  },
+  "glow-wild": {
+   "clusters": [
+    {
+     "hex": "#352a2a",
+     "hue": 360,
+     "sat": 0.12,
+     "light": 0.18,
+     "pct": 45.4,
+     "family": "dark"
+    },
+    {
+     "hex": "#833b34",
+     "hue": 5,
+     "sat": 0.43,
+     "light": 0.36,
+     "pct": 19.2,
+     "family": "brown"
+    },
+    {
+     "hex": "#af969c",
+     "hue": 344,
+     "sat": 0.14,
+     "light": 0.64,
+     "pct": 17.0,
+     "family": "pink"
+    },
+    {
+     "hex": "#6fbc96",
+     "hue": 150,
+     "sat": 0.36,
+     "light": 0.59,
+     "pct": 10.7,
+     "family": "green"
+    },
+    {
+     "hex": "#d23f81",
+     "hue": 333,
+     "sat": 0.62,
+     "light": 0.54,
+     "pct": 7.6,
+     "family": "pink"
+    }
+   ],
+   "family_area": {
+    "dark": 45.4,
+    "pink": 24.6,
+    "brown": 19.2,
+    "green": 10.7
+   },
+   "site_back_family": [
+    "Pink"
+   ]
+  },
+  "heritage-2-0": {
+   "clusters": [
+    {
+     "hex": "#d8a98d",
+     "hue": 23,
+     "sat": 0.49,
+     "light": 0.7,
+     "pct": 26.8,
+     "family": "orange"
+    },
+    {
+     "hex": "#9e99a0",
+     "hue": 277,
+     "sat": 0.03,
+     "light": 0.61,
+     "pct": 24.6,
+     "family": "neutral"
+    },
+    {
+     "hex": "#9d5940",
+     "hue": 16,
+     "sat": 0.42,
+     "light": 0.43,
+     "pct": 21.1,
+     "family": "orange"
+    },
+    {
+     "hex": "#48352f",
+     "hue": 16,
+     "sat": 0.21,
+     "light": 0.23,
+     "pct": 14.5,
+     "family": "dark"
+    },
+    {
+     "hex": "#708860",
+     "hue": 96,
+     "sat": 0.17,
+     "light": 0.46,
+     "pct": 13.0,
+     "family": "green"
+    }
+   ],
+   "family_area": {
+    "orange": 47.900000000000006,
+    "neutral": 24.6,
+    "dark": 14.5,
+    "green": 13.0
+   },
+   "site_back_family": null
+  },
+  "heritage": {
+   "clusters": [
+    {
+     "hex": "#b87851",
+     "hue": 22,
+     "sat": 0.42,
+     "light": 0.52,
+     "pct": 26.6,
+     "family": "orange"
+    },
+    {
+     "hex": "#b2ab9e",
+     "hue": 39,
+     "sat": 0.11,
+     "light": 0.66,
+     "pct": 22.5,
+     "family": "neutral"
+    },
+    {
+     "hex": "#686c5c",
+     "hue": 75,
+     "sat": 0.08,
+     "light": 0.39,
+     "pct": 19.1,
+     "family": "green"
+    },
+    {
+     "hex": "#372820",
+     "hue": 21,
+     "sat": 0.27,
+     "light": 0.17,
+     "pct": 17.6,
+     "family": "dark"
+    },
+    {
+     "hex": "#804831",
+     "hue": 18,
+     "sat": 0.45,
+     "light": 0.35,
+     "pct": 14.2,
+     "family": "brown"
+    }
+   ],
+   "family_area": {
+    "orange": 26.6,
+    "neutral": 22.5,
+    "green": 19.1,
+    "dark": 17.6,
+    "brown": 14.2
+   },
+   "site_back_family": null
+  },
+  "jade": {
+   "clusters": [
+    {
+     "hex": "#619867",
+     "hue": 127,
+     "sat": 0.22,
+     "light": 0.49,
+     "pct": 39.9,
+     "family": "green"
+    },
+    {
+     "hex": "#abb1b3",
+     "hue": 194,
+     "sat": 0.05,
+     "light": 0.69,
+     "pct": 24.4,
+     "family": "neutral"
+    },
+    {
+     "hex": "#3e5c46",
+     "hue": 136,
+     "sat": 0.19,
+     "light": 0.3,
+     "pct": 15.6,
+     "family": "green"
+    },
+    {
+     "hex": "#727580",
+     "hue": 227,
+     "sat": 0.06,
+     "light": 0.47,
+     "pct": 11.9,
+     "family": "neutral"
+    },
+    {
+     "hex": "#d29091",
+     "hue": 359,
+     "sat": 0.43,
+     "light": 0.69,
+     "pct": 8.1,
+     "family": "pink"
+    }
+   ],
+   "family_area": {
+    "green": 55.5,
+    "neutral": 36.3,
+    "pink": 8.1
+   },
+   "site_back_family": null
+  },
+  "jasmine": {
+   "clusters": [
+    {
+     "hex": "#34a273",
+     "hue": 154,
+     "sat": 0.51,
+     "light": 0.42,
+     "pct": 33.6,
+     "family": "green"
+    },
+    {
+     "hex": "#97acaa",
+     "hue": 175,
+     "sat": 0.11,
+     "light": 0.63,
+     "pct": 28.6,
+     "family": "neutral"
+    },
+    {
+     "hex": "#0f4b2a",
+     "hue": 147,
+     "sat": 0.66,
+     "light": 0.18,
+     "pct": 15.0,
+     "family": "green"
+    },
+    {
+     "hex": "#2c4240",
+     "hue": 175,
+     "sat": 0.2,
+     "light": 0.22,
+     "pct": 14.6,
+     "family": "teal"
+    },
+    {
+     "hex": "#755a97",
+     "hue": 266,
+     "sat": 0.25,
+     "light": 0.47,
+     "pct": 8.2,
+     "family": "purple"
+    }
+   ],
+   "family_area": {
+    "green": 48.6,
+    "neutral": 28.6,
+    "teal": 14.6,
+    "purple": 8.2
+   },
+   "site_back_family": [
+    "Green"
+   ]
+  },
+  "la-fete": {
+   "clusters": [
+    {
+     "hex": "#d6b1b5",
+     "hue": 354,
+     "sat": 0.31,
+     "light": 0.77,
+     "pct": 41.5,
+     "family": "pink"
+    },
+    {
+     "hex": "#a96471",
+     "hue": 349,
+     "sat": 0.28,
+     "light": 0.53,
+     "pct": 18.6,
+     "family": "red"
+    },
+    {
+     "hex": "#463538",
+     "hue": 352,
+     "sat": 0.13,
+     "light": 0.24,
+     "pct": 17.3,
+     "family": "dark"
+    },
+    {
+     "hex": "#5ca19c",
+     "hue": 176,
+     "sat": 0.27,
+     "light": 0.5,
+     "pct": 14.8,
+     "family": "teal"
+    },
+    {
+     "hex": "#857227",
+     "hue": 48,
+     "sat": 0.54,
+     "light": 0.34,
+     "pct": 7.8,
+     "family": "gold"
+    }
+   ],
+   "family_area": {
+    "pink": 41.5,
+    "red": 18.6,
+    "dark": 17.3,
+    "teal": 14.8,
+    "gold": 7.8
+   },
+   "site_back_family": [
+    "Pink"
+   ]
+  },
+  "lagoon": {
+   "clusters": [
+    {
+     "hex": "#19768e",
+     "hue": 192,
+     "sat": 0.7,
+     "light": 0.33,
+     "pct": 32.2,
+     "family": "teal"
+    },
+    {
+     "hex": "#9fa1a4",
+     "hue": 218,
+     "sat": 0.03,
+     "light": 0.63,
+     "pct": 26.3,
+     "family": "neutral"
+    },
+    {
+     "hex": "#2a3438",
+     "hue": 195,
+     "sat": 0.14,
+     "light": 0.19,
+     "pct": 23.2,
+     "family": "dark"
+    },
+    {
+     "hex": "#72a170",
+     "hue": 118,
+     "sat": 0.2,
+     "light": 0.54,
+     "pct": 10.6,
+     "family": "green"
+    },
+    {
+     "hex": "#8b3b6d",
+     "hue": 322,
+     "sat": 0.4,
+     "light": 0.39,
+     "pct": 7.7,
+     "family": "pink"
+    }
+   ],
+   "family_area": {
+    "teal": 32.2,
+    "neutral": 26.3,
+    "dark": 23.2,
+    "green": 10.6,
+    "pink": 7.7
+   },
+   "site_back_family": [
+    "Blue"
+   ]
+  },
+  "lilac-soiree": {
+   "clusters": [
+    {
+     "hex": "#463da1",
+     "hue": 245,
+     "sat": 0.45,
+     "light": 0.43,
+     "pct": 28.6,
+     "family": "blue"
+    },
+    {
+     "hex": "#b0a3a1",
+     "hue": 6,
+     "sat": 0.08,
+     "light": 0.66,
+     "pct": 23.6,
+     "family": "neutral"
+    },
+    {
+     "hex": "#2e2043",
+     "hue": 263,
+     "sat": 0.36,
+     "light": 0.19,
+     "pct": 20.0,
+     "family": "dark"
+    },
+    {
+     "hex": "#8378b7",
+     "hue": 250,
+     "sat": 0.3,
+     "light": 0.6,
+     "pct": 19.6,
+     "family": "blue"
+    },
+    {
+     "hex": "#cc4d77",
+     "hue": 340,
+     "sat": 0.56,
+     "light": 0.55,
+     "pct": 8.2,
+     "family": "pink"
+    }
+   ],
+   "family_area": {
+    "blue": 48.2,
+    "neutral": 23.6,
+    "dark": 20.0,
+    "pink": 8.2
+   },
+   "site_back_family": null,
+   "colorcard_backs": [
+    {
+     "name": "LILAC",
+     "card_hex": "#6356a2",
+     "closest_measured": "#8378b7",
+     "deltaE": 15.9,
+     "card_family": "blue",
+     "measured_family": "blue"
+    },
+    {
+     "name": "NAVY",
+     "card_hex": "#1c2266",
+     "closest_measured": "#463da1",
+     "deltaE": 22.1,
+     "card_family": "blue",
+     "measured_family": "blue"
+    },
+    {
+     "name": "BLUSH",
+     "card_hex": "#f0d5cc",
+     "closest_measured": "#b0a3a1",
+     "deltaE": 20.2,
+     "card_family": "orange",
+     "measured_family": "neutral"
+    }
+   ]
+  },
+  "limoncello": {
+   "clusters": [
+    {
+     "hex": "#aab939",
+     "hue": 67,
+     "sat": 0.53,
+     "light": 0.47,
+     "pct": 50.7,
+     "family": "green"
+    },
+    {
+     "hex": "#b6cb98",
+     "hue": 85,
+     "sat": 0.33,
+     "light": 0.7,
+     "pct": 18.6,
+     "family": "green"
+    },
+    {
+     "hex": "#6f8229",
+     "hue": 73,
+     "sat": 0.52,
+     "light": 0.34,
+     "pct": 11.6,
+     "family": "green"
+    },
+    {
+     "hex": "#424d27",
+     "hue": 77,
+     "sat": 0.32,
+     "light": 0.23,
+     "pct": 10.0,
+     "family": "green"
+    },
+    {
+     "hex": "#aea1ae",
+     "hue": 301,
+     "sat": 0.08,
+     "light": 0.66,
+     "pct": 9.1,
+     "family": "pink"
+    }
+   ],
+   "family_area": {
+    "green": 90.9,
+    "pink": 9.1
+   },
+   "site_back_family": [
+    "Green"
+   ]
+  },
+  "lola": {
+   "clusters": [
+    {
+     "hex": "#a8c7e2",
+     "hue": 208,
+     "sat": 0.5,
+     "light": 0.77,
+     "pct": 35.2,
+     "family": "blue"
+    },
+    {
+     "hex": "#1660d2",
+     "hue": 216,
+     "sat": 0.81,
+     "light": 0.45,
+     "pct": 22.4,
+     "family": "blue"
+    },
+    {
+     "hex": "#6982ae",
+     "hue": 219,
+     "sat": 0.3,
+     "light": 0.55,
+     "pct": 19.7,
+     "family": "blue"
+    },
+    {
+     "hex": "#1c274c",
+     "hue": 226,
+     "sat": 0.46,
+     "light": 0.2,
+     "pct": 12.4,
+     "family": "dark"
+    },
+    {
+     "hex": "#1a1c6f",
+     "hue": 239,
+     "sat": 0.61,
+     "light": 0.27,
+     "pct": 10.4,
+     "family": "blue"
+    }
+   ],
+   "family_area": {
+    "blue": 87.7,
+    "dark": 12.4
+   },
+   "site_back_family": [
+    "Blue"
+   ]
+  },
+  "luminaire": {
+   "clusters": [
+    {
+     "hex": "#aea9c0",
+     "hue": 255,
+     "sat": 0.15,
+     "light": 0.71,
+     "pct": 29.2,
+     "family": "purple"
+    },
+    {
+     "hex": "#efb6b4",
+     "hue": 2,
+     "sat": 0.65,
+     "light": 0.82,
+     "pct": 28.8,
+     "family": "pink"
+    },
+    {
+     "hex": "#867087",
+     "hue": 297,
+     "sat": 0.1,
+     "light": 0.48,
+     "pct": 21.3,
+     "family": "pink"
+    },
+    {
+     "hex": "#81c9a4",
+     "hue": 149,
+     "sat": 0.4,
+     "light": 0.65,
+     "pct": 10.8,
+     "family": "green"
+    },
+    {
+     "hex": "#462a39",
+     "hue": 327,
+     "sat": 0.26,
+     "light": 0.22,
+     "pct": 9.9,
+     "family": "dark"
+    }
+   ],
+   "family_area": {
+    "pink": 50.1,
+    "purple": 29.2,
+    "green": 10.8,
+    "dark": 9.9
+   },
+   "site_back_family": [
+    "Purple"
+   ]
+  },
+  "malachite": {
+   "clusters": [
+    {
+     "hex": "#34362e",
+     "hue": 70,
+     "sat": 0.07,
+     "light": 0.2,
+     "pct": 31.0,
+     "family": "dark"
+    },
+    {
+     "hex": "#9ba5ae",
+     "hue": 208,
+     "sat": 0.1,
+     "light": 0.64,
+     "pct": 19.4,
+     "family": "neutral"
+    },
+    {
+     "hex": "#773f45",
+     "hue": 354,
+     "sat": 0.31,
+     "light": 0.36,
+     "pct": 18.9,
+     "family": "brown"
+    },
+    {
+     "hex": "#546356",
+     "hue": 128,
+     "sat": 0.08,
+     "light": 0.36,
+     "pct": 18.2,
+     "family": "green"
+    },
+    {
+     "hex": "#c9a199",
+     "hue": 10,
+     "sat": 0.31,
+     "light": 0.7,
+     "pct": 12.5,
+     "family": "pink"
+    }
+   ],
+   "family_area": {
+    "dark": 31.0,
+    "neutral": 19.4,
+    "brown": 18.9,
+    "green": 18.2,
+    "pink": 12.5
+   },
+   "site_back_family": null
+  },
+  "moonlight": {
+   "clusters": [
+    {
+     "hex": "#6897db",
+     "hue": 216,
+     "sat": 0.61,
+     "light": 0.63,
+     "pct": 24.8,
+     "family": "blue"
+    },
+    {
+     "hex": "#989aa4",
+     "hue": 228,
+     "sat": 0.06,
+     "light": 0.62,
+     "pct": 24.2,
+     "family": "neutral"
+    },
+    {
+     "hex": "#244890",
+     "hue": 220,
+     "sat": 0.6,
+     "light": 0.35,
+     "pct": 19.6,
+     "family": "blue"
+    },
+    {
+     "hex": "#2b3444",
+     "hue": 219,
+     "sat": 0.22,
+     "light": 0.22,
+     "pct": 17.1,
+     "family": "dark"
+    },
+    {
+     "hex": "#85a88b",
+     "hue": 130,
+     "sat": 0.17,
+     "light": 0.59,
+     "pct": 14.3,
+     "family": "green"
+    }
+   ],
+   "family_area": {
+    "blue": 44.400000000000006,
+    "neutral": 24.2,
+    "dark": 17.1,
+    "green": 14.3
+   },
+   "site_back_family": [
+    "Blue"
+   ]
+  },
+  "nantucket": {
+   "clusters": [
+    {
+     "hex": "#c71425",
+     "hue": 354,
+     "sat": 0.82,
+     "light": 0.43,
+     "pct": 38.3,
+     "family": "red"
+    },
+    {
+     "hex": "#a0b2b8",
+     "hue": 195,
+     "sat": 0.15,
+     "light": 0.67,
+     "pct": 22.6,
+     "family": "neutral"
+    },
+    {
+     "hex": "#32915f",
+     "hue": 148,
+     "sat": 0.49,
+     "light": 0.38,
+     "pct": 14.3,
+     "family": "green"
+    },
+    {
+     "hex": "#832229",
+     "hue": 356,
+     "sat": 0.59,
+     "light": 0.32,
+     "pct": 13.9,
+     "family": "brown"
+    },
+    {
+     "hex": "#3f3836",
+     "hue": 14,
+     "sat": 0.07,
+     "light": 0.23,
+     "pct": 10.8,
+     "family": "dark"
+    }
+   ],
+   "family_area": {
+    "red": 38.3,
+    "neutral": 22.6,
+    "green": 14.3,
+    "brown": 13.9,
+    "dark": 10.8
+   },
+   "site_back_family": [
+    "Red"
+   ]
+  },
+  "osler": {
+   "clusters": [
+    {
+     "hex": "#a8a2a7",
+     "hue": 311,
+     "sat": 0.03,
+     "light": 0.65,
+     "pct": 30.5,
+     "family": "neutral"
+    },
+    {
+     "hex": "#99bdeb",
+     "hue": 213,
+     "sat": 0.67,
+     "light": 0.76,
+     "pct": 22.7,
+     "family": "blue"
+    },
+    {
+     "hex": "#597298",
+     "hue": 216,
+     "sat": 0.26,
+     "light": 0.47,
+     "pct": 19.1,
+     "family": "blue"
+    },
+    {
+     "hex": "#272b3d",
+     "hue": 231,
+     "sat": 0.21,
+     "light": 0.2,
+     "pct": 15.7,
+     "family": "dark"
+    },
+    {
+     "hex": "#703940",
+     "hue": 352,
+     "sat": 0.33,
+     "light": 0.33,
+     "pct": 12.0,
+     "family": "brown"
+    }
+   ],
+   "family_area": {
+    "blue": 41.8,
+    "neutral": 30.5,
+    "dark": 15.7,
+    "brown": 12.0
+   },
+   "site_back_family": [
+    "Blue"
+   ]
+  },
+  "palm-royale": {
+   "clusters": [
+    {
+     "hex": "#a6b4a3",
+     "hue": 108,
+     "sat": 0.1,
+     "light": 0.67,
+     "pct": 26.7,
+     "family": "green"
+    },
+    {
+     "hex": "#bfc18a",
+     "hue": 62,
+     "sat": 0.31,
+     "light": 0.65,
+     "pct": 26.4,
+     "family": "yellow"
+    },
+    {
+     "hex": "#79814b",
+     "hue": 69,
+     "sat": 0.26,
+     "light": 0.4,
+     "pct": 25.7,
+     "family": "green"
+    },
+    {
+     "hex": "#424826",
+     "hue": 70,
+     "sat": 0.31,
+     "light": 0.21,
+     "pct": 16.2,
+     "family": "green"
+    },
+    {
+     "hex": "#b46286",
+     "hue": 334,
+     "sat": 0.35,
+     "light": 0.55,
+     "pct": 4.9,
+     "family": "pink"
+    }
+   ],
+   "family_area": {
+    "green": 68.6,
+    "yellow": 26.4,
+    "pink": 4.9
+   },
+   "site_back_family": [
+    "Green",
+    "Natural Patterns"
+   ]
+  },
+  "papaya-spritz": {
+   "clusters": [
+    {
+     "hex": "#c65a15",
+     "hue": 23,
+     "sat": 0.81,
+     "light": 0.43,
+     "pct": 32.6,
+     "family": "orange"
+    },
+    {
+     "hex": "#a3b877",
+     "hue": 80,
+     "sat": 0.32,
+     "light": 0.59,
+     "pct": 19.5,
+     "family": "green"
+    },
+    {
+     "hex": "#c7ab9a",
+     "hue": 23,
+     "sat": 0.28,
+     "light": 0.69,
+     "pct": 18.7,
+     "family": "orange"
+    },
+    {
+     "hex": "#5f3626",
+     "hue": 17,
+     "sat": 0.43,
+     "light": 0.26,
+     "pct": 15.9,
+     "family": "brown"
+    },
+    {
+     "hex": "#9689b4",
+     "hue": 259,
+     "sat": 0.22,
+     "light": 0.62,
+     "pct": 13.3,
+     "family": "purple"
+    }
+   ],
+   "family_area": {
+    "orange": 51.3,
+    "green": 19.5,
+    "brown": 15.9,
+    "purple": 13.3
+   },
+   "site_back_family": [
+    "Yellow & Orange"
+   ],
+   "colorcard_backs": [
+    {
+     "name": "PAPAYA",
+     "card_hex": "#df772f",
+     "closest_measured": "#c65a15",
+     "deltaE": 10.6,
+     "card_family": "orange",
+     "measured_family": "orange"
+    },
+    {
+     "name": "LAVENDER",
+     "card_hex": "#a99bd0",
+     "closest_measured": "#9689b4",
+     "deltaE": 8.8,
+     "card_family": "purple",
+     "measured_family": "purple"
+    },
+    {
+     "name": "LIGHT LIME",
+     "card_hex": "#c4dc8c",
+     "closest_measured": "#a3b877",
+     "deltaE": 14.2,
+     "card_family": "green",
+     "measured_family": "green"
+    }
+   ]
+  },
+  "pearlescent": {
+   "clusters": [
+    {
+     "hex": "#caad9e",
+     "hue": 21,
+     "sat": 0.3,
+     "light": 0.71,
+     "pct": 44.3,
+     "family": "orange"
+    },
+    {
+     "hex": "#a57061",
+     "hue": 13,
+     "sat": 0.27,
+     "light": 0.51,
+     "pct": 21.0,
+     "family": "orange"
+    },
+    {
+     "hex": "#522e27",
+     "hue": 9,
+     "sat": 0.36,
+     "light": 0.24,
+     "pct": 18.3,
+     "family": "dark"
+    },
+    {
+     "hex": "#e0a2b6",
+     "hue": 340,
+     "sat": 0.5,
+     "light": 0.76,
+     "pct": 11.7,
+     "family": "pink"
+    },
+    {
+     "hex": "#7dc38e",
+     "hue": 134,
+     "sat": 0.37,
+     "light": 0.63,
+     "pct": 4.8,
+     "family": "green"
+    }
+   ],
+   "family_area": {
+    "orange": 65.3,
+    "dark": 18.3,
+    "pink": 11.7,
+    "green": 4.8
+   },
+   "site_back_family": [
+    "Ivory",
+    "Natural Patterns"
+   ]
+  },
+  "petalee-pile": {
+   "clusters": [
+    {
+     "hex": "#eda5c4",
+     "hue": 334,
+     "sat": 0.67,
+     "light": 0.79,
+     "pct": 43.7,
+     "family": "pink"
+    },
+    {
+     "hex": "#a8c3a4",
+     "hue": 112,
+     "sat": 0.2,
+     "light": 0.7,
+     "pct": 17.0,
+     "family": "green"
+    },
+    {
+     "hex": "#a19fc6",
+     "hue": 243,
+     "sat": 0.26,
+     "light": 0.7,
+     "pct": 14.9,
+     "family": "blue"
+    },
+    {
+     "hex": "#67d0d7",
+     "hue": 184,
+     "sat": 0.59,
+     "light": 0.62,
+     "pct": 12.7,
+     "family": "teal"
+    },
+    {
+     "hex": "#519759",
+     "hue": 126,
+     "sat": 0.3,
+     "light": 0.45,
+     "pct": 11.7,
+     "family": "green"
+    }
+   ],
+   "family_area": {
+    "pink": 43.7,
+    "green": 28.7,
+    "blue": 14.9,
+    "teal": 12.7
+   },
+   "site_back_family": null
+  },
+  "petalee": {
+   "clusters": [
+    {
+     "hex": "#dea5c6",
+     "hue": 326,
+     "sat": 0.47,
+     "light": 0.76,
+     "pct": 30.6,
+     "family": "pink"
+    },
+    {
+     "hex": "#a7aeb4",
+     "hue": 207,
+     "sat": 0.08,
+     "light": 0.68,
+     "pct": 29.6,
+     "family": "neutral"
+    },
+    {
+     "hex": "#83b084",
+     "hue": 121,
+     "sat": 0.22,
+     "light": 0.6,
+     "pct": 20.4,
+     "family": "green"
+    },
+    {
+     "hex": "#77d8df",
+     "hue": 184,
+     "sat": 0.62,
+     "light": 0.67,
+     "pct": 12.4,
+     "family": "teal"
+    },
+    {
+     "hex": "#e46587",
+     "hue": 344,
+     "sat": 0.7,
+     "light": 0.65,
+     "pct": 7.1,
+     "family": "pink"
+    }
+   ],
+   "family_area": {
+    "pink": 37.7,
+    "neutral": 29.6,
+    "green": 20.4,
+    "teal": 12.4
+   },
+   "site_back_family": null
+  },
+  "pippa": {
+   "clusters": [
+    {
+     "hex": "#dfc12d",
+     "hue": 50,
+     "sat": 0.74,
+     "light": 0.53,
+     "pct": 35.6,
+     "family": "yellow"
+    },
+    {
+     "hex": "#a1afa0",
+     "hue": 116,
+     "sat": 0.08,
+     "light": 0.66,
+     "pct": 28.2,
+     "family": "green"
+    },
+    {
+     "hex": "#a7751c",
+     "hue": 38,
+     "sat": 0.71,
+     "light": 0.38,
+     "pct": 14.9,
+     "family": "orange"
+    },
+    {
+     "hex": "#58321e",
+     "hue": 21,
+     "sat": 0.49,
+     "light": 0.23,
+     "pct": 11.3,
+     "family": "dark"
+    },
+    {
+     "hex": "#c74c52",
+     "hue": 357,
+     "sat": 0.52,
+     "light": 0.54,
+     "pct": 10.0,
+     "family": "red"
+    }
+   ],
+   "family_area": {
+    "yellow": 35.6,
+    "green": 28.2,
+    "orange": 14.9,
+    "dark": 11.3,
+    "red": 10.0
+   },
+   "site_back_family": [
+    "Yellow & Orange"
+   ]
+  },
+  "preppy-soiree": {
+   "clusters": [
+    {
+     "hex": "#7394b3",
+     "hue": 209,
+     "sat": 0.3,
+     "light": 0.58,
+     "pct": 46.3,
+     "family": "blue"
+    },
+    {
+     "hex": "#41627e",
+     "hue": 208,
+     "sat": 0.32,
+     "light": 0.38,
+     "pct": 24.8,
+     "family": "blue"
+    },
+    {
+     "hex": "#1f293d",
+     "hue": 220,
+     "sat": 0.32,
+     "light": 0.18,
+     "pct": 22.0,
+     "family": "dark"
+    },
+    {
+     "hex": "#7f65ab",
+     "hue": 262,
+     "sat": 0.29,
+     "light": 0.53,
+     "pct": 6.1,
+     "family": "purple"
+    },
+    {
+     "hex": "#a0d280",
+     "hue": 96,
+     "sat": 0.48,
+     "light": 0.66,
+     "pct": 0.7,
+     "family": "green"
+    }
+   ],
+   "family_area": {
+    "blue": 71.1,
+    "dark": 22.0,
+    "purple": 6.1,
+    "green": 0.7
+   },
+   "site_back_family": null,
+   "colorcard_backs": [
+    {
+     "name": "SLATE BLUE",
+     "card_hex": "#628dad",
+     "closest_measured": "#7394b3",
+     "deltaE": 4.3,
+     "card_family": "blue",
+     "measured_family": "blue"
+    },
+    {
+     "name": "NAVY",
+     "card_hex": "#233c55",
+     "closest_measured": "#1f293d",
+     "deltaE": 9.4,
+     "card_family": "dark",
+     "measured_family": "dark"
+    },
+    {
+     "name": "PLUM",
+     "card_hex": "#6b3a55",
+     "closest_measured": "#1f293d",
+     "deltaE": 28.7,
+     "card_family": "pink",
+     "measured_family": "dark"
+    }
+   ]
+  },
+  "seabreeze": {
+   "clusters": [
+    {
+     "hex": "#3abdae",
+     "hue": 173,
+     "sat": 0.53,
+     "light": 0.48,
+     "pct": 42.2,
+     "family": "teal"
+    },
+    {
+     "hex": "#9da7bc",
+     "hue": 220,
+     "sat": 0.18,
+     "light": 0.68,
+     "pct": 18.6,
+     "family": "blue"
+    },
+    {
+     "hex": "#243e45",
+     "hue": 192,
+     "sat": 0.32,
+     "light": 0.21,
+     "pct": 16.9,
+     "family": "dark"
+    },
+    {
+     "hex": "#9d2f5e",
+     "hue": 334,
+     "sat": 0.54,
+     "light": 0.4,
+     "pct": 11.5,
+     "family": "pink"
+    },
+    {
+     "hex": "#36549b",
+     "hue": 222,
+     "sat": 0.48,
+     "light": 0.41,
+     "pct": 10.8,
+     "family": "blue"
+    }
+   ],
+   "family_area": {
+    "teal": 42.2,
+    "blue": 29.400000000000002,
+    "dark": 16.9,
+    "pink": 11.5
+   },
+   "site_back_family": [
+    "Blue"
+   ]
+  },
+  "shangri-la": {
+   "clusters": [
+    {
+     "hex": "#196656",
+     "hue": 168,
+     "sat": 0.61,
+     "light": 0.25,
+     "pct": 36.7,
+     "family": "teal"
+    },
+    {
+     "hex": "#96a7a4",
+     "hue": 169,
+     "sat": 0.09,
+     "light": 0.62,
+     "pct": 25.0,
+     "family": "neutral"
+    },
+    {
+     "hex": "#1a3033",
+     "hue": 186,
+     "sat": 0.32,
+     "light": 0.15,
+     "pct": 21.4,
+     "family": "dark"
+    },
+    {
+     "hex": "#df829d",
+     "hue": 343,
+     "sat": 0.59,
+     "light": 0.69,
+     "pct": 9.6,
+     "family": "pink"
+    },
+    {
+     "hex": "#23256f",
+     "hue": 239,
+     "sat": 0.52,
+     "light": 0.29,
+     "pct": 7.3,
+     "family": "blue"
+    }
+   ],
+   "family_area": {
+    "teal": 36.7,
+    "neutral": 25.0,
+    "dark": 21.4,
+    "pink": 9.6,
+    "blue": 7.3
+   },
+   "site_back_family": null,
+   "colorcard_backs": [
+    {
+     "name": "EMERALD",
+     "card_hex": "#0d6e5c",
+     "closest_measured": "#196656",
+     "deltaE": 4.4,
+     "card_family": "teal",
+     "measured_family": "teal"
+    },
+    {
+     "name": "NAVY",
+     "card_hex": "#323b54",
+     "closest_measured": "#1a3033",
+     "deltaE": 17.5,
+     "card_family": "dark",
+     "measured_family": "dark"
+    }
+   ]
+  },
+  "sierra": {
+   "clusters": [
+    {
+     "hex": "#c5542b",
+     "hue": 16,
+     "sat": 0.64,
+     "light": 0.47,
+     "pct": 35.2,
+     "family": "orange"
+    },
+    {
+     "hex": "#9b9e9a",
+     "hue": 104,
+     "sat": 0.02,
+     "light": 0.61,
+     "pct": 24.4,
+     "family": "neutral"
+    },
+    {
+     "hex": "#883723",
+     "hue": 12,
+     "sat": 0.59,
+     "light": 0.33,
+     "pct": 18.8,
+     "family": "brown"
+    },
+    {
+     "hex": "#503a31",
+     "hue": 18,
+     "sat": 0.24,
+     "light": 0.25,
+     "pct": 14.0,
+     "family": "brown"
+    },
+    {
+     "hex": "#867d35",
+     "hue": 53,
+     "sat": 0.44,
+     "light": 0.37,
+     "pct": 7.6,
+     "family": "gold"
+    }
+   ],
+   "family_area": {
+    "orange": 35.2,
+    "brown": 32.8,
+    "neutral": 24.4,
+    "gold": 7.6
+   },
+   "site_back_family": [
+    "Yellow & Orange"
+   ]
+  },
+  "smith": {
+   "clusters": [
+    {
+     "hex": "#9d4a2f",
+     "hue": 15,
+     "sat": 0.54,
+     "light": 0.4,
+     "pct": 27.6,
+     "family": "brown"
+    },
+    {
+     "hex": "#9baab4",
+     "hue": 204,
+     "sat": 0.15,
+     "light": 0.66,
+     "pct": 23.6,
+     "family": "neutral"
+    },
+    {
+     "hex": "#372120",
+     "hue": 0,
+     "sat": 0.26,
+     "light": 0.17,
+     "pct": 21.0,
+     "family": "dark"
+    },
+    {
+     "hex": "#6b6975",
+     "hue": 251,
+     "sat": 0.06,
+     "light": 0.44,
+     "pct": 18.4,
+     "family": "neutral"
+    },
+    {
+     "hex": "#202755",
+     "hue": 232,
+     "sat": 0.45,
+     "light": 0.23,
+     "pct": 9.4,
+     "family": "blue"
+    }
+   ],
+   "family_area": {
+    "neutral": 42.0,
+    "brown": 27.6,
+    "dark": 21.0,
+    "blue": 9.4
+   },
+   "site_back_family": [
+    "Brown",
+    "Natural Patterns"
+   ]
+  },
+  "solara": {
+   "clusters": [
+    {
+     "hex": "#dc7869",
+     "hue": 8,
+     "sat": 0.62,
+     "light": 0.64,
+     "pct": 34.7,
+     "family": "red"
+    },
+    {
+     "hex": "#b79d9b",
+     "hue": 4,
+     "sat": 0.16,
+     "light": 0.66,
+     "pct": 26.0,
+     "family": "pink"
+    },
+    {
+     "hex": "#4d322e",
+     "hue": 8,
+     "sat": 0.26,
+     "light": 0.24,
+     "pct": 17.5,
+     "family": "dark"
+    },
+    {
+     "hex": "#823228",
+     "hue": 7,
+     "sat": 0.53,
+     "light": 0.33,
+     "pct": 11.6,
+     "family": "brown"
+    },
+    {
+     "hex": "#98a989",
+     "hue": 92,
+     "sat": 0.16,
+     "light": 0.6,
+     "pct": 10.2,
+     "family": "green"
+    }
+   ],
+   "family_area": {
+    "red": 34.7,
+    "pink": 26.0,
+    "dark": 17.5,
+    "brown": 11.6,
+    "green": 10.2
+   },
+   "site_back_family": [
+    "Yellow & Orange"
+   ]
+  },
+  "sorbet": {
+   "clusters": [
+    {
+     "hex": "#e7c98e",
+     "hue": 40,
+     "sat": 0.65,
+     "light": 0.73,
+     "pct": 55.9,
+     "family": "yellow"
+    },
+    {
+     "hex": "#a3c6ad",
+     "hue": 137,
+     "sat": 0.24,
+     "light": 0.71,
+     "pct": 18.6,
+     "family": "green"
+    },
+    {
+     "hex": "#8c6b28",
+     "hue": 40,
+     "sat": 0.55,
+     "light": 0.35,
+     "pct": 11.6,
+     "family": "brown"
+    },
+    {
+     "hex": "#bd929c",
+     "hue": 347,
+     "sat": 0.25,
+     "light": 0.66,
+     "pct": 8.1,
+     "family": "pink"
+    },
+    {
+     "hex": "#45331e",
+     "hue": 32,
+     "sat": 0.39,
+     "light": 0.19,
+     "pct": 5.8,
+     "family": "dark"
+    }
+   ],
+   "family_area": {
+    "yellow": 55.9,
+    "green": 18.6,
+    "brown": 11.6,
+    "pink": 8.1,
+    "dark": 5.8
+   },
+   "site_back_family": [
+    "Yellow & Orange"
+   ]
+  },
+  "spring-love": {
+   "clusters": [
+    {
+     "hex": "#ef5c7a",
+     "hue": 348,
+     "sat": 0.82,
+     "light": 0.65,
+     "pct": 44.0,
+     "family": "red"
+    },
+    {
+     "hex": "#ad2842",
+     "hue": 348,
+     "sat": 0.63,
+     "light": 0.42,
+     "pct": 16.5,
+     "family": "red"
+    },
+    {
+     "hex": "#ab95b8",
+     "hue": 277,
+     "sat": 0.19,
+     "light": 0.65,
+     "pct": 16.3,
+     "family": "purple"
+    },
+    {
+     "hex": "#50262c",
+     "hue": 351,
+     "sat": 0.36,
+     "light": 0.23,
+     "pct": 14.6,
+     "family": "dark"
+    },
+    {
+     "hex": "#b7c690",
+     "hue": 76,
+     "sat": 0.32,
+     "light": 0.67,
+     "pct": 8.6,
+     "family": "green"
+    }
+   ],
+   "family_area": {
+    "red": 60.5,
+    "purple": 16.3,
+    "dark": 14.6,
+    "green": 8.6
+   },
+   "site_back_family": null,
+   "colorcard_backs": [
+    {
+     "name": "WATERMELON",
+     "card_hex": "#e23e62",
+     "closest_measured": "#ef5c7a",
+     "deltaE": 10.0,
+     "card_family": "red",
+     "measured_family": "red"
+    },
+    {
+     "name": "LIME",
+     "card_hex": "#b8d86a",
+     "closest_measured": "#b7c690",
+     "deltaE": 28.4,
+     "card_family": "green",
+     "measured_family": "green"
+    },
+    {
+     "name": "LAVENDER",
+     "card_hex": "#a99bd0",
+     "closest_measured": "#ab95b8",
+     "deltaE": 10.4,
+     "card_family": "purple",
+     "measured_family": "purple"
+    }
+   ]
+  },
+  "sunday-tile-set-hd": {
+   "clusters": [
+    {
+     "hex": "#b58b42",
+     "hue": 38,
+     "sat": 0.46,
+     "light": 0.48,
+     "pct": 38.0,
+     "family": "orange"
+    },
+    {
+     "hex": "#765d34",
+     "hue": 37,
+     "sat": 0.39,
+     "light": 0.33,
+     "pct": 19.9,
+     "family": "brown"
+    },
+    {
+     "hex": "#d8be9a",
+     "hue": 35,
+     "sat": 0.44,
+     "light": 0.73,
+     "pct": 16.5,
+     "family": "neutral"
+    },
+    {
+     "hex": "#8c938f",
+     "hue": 142,
+     "sat": 0.03,
+     "light": 0.56,
+     "pct": 15.1,
+     "family": "neutral"
+    },
+    {
+     "hex": "#35291d",
+     "hue": 29,
+     "sat": 0.29,
+     "light": 0.16,
+     "pct": 10.5,
+     "family": "dark"
+    }
+   ],
+   "family_area": {
+    "orange": 38.0,
+    "neutral": 31.6,
+    "brown": 19.9,
+    "dark": 10.5
+   },
+   "site_back_family": null
+  },
+  "sunset": {
+   "clusters": [
+    {
+     "hex": "#e88c4a",
+     "hue": 25,
+     "sat": 0.78,
+     "light": 0.6,
+     "pct": 40.5,
+     "family": "orange"
+    },
+    {
+     "hex": "#c3364a",
+     "hue": 352,
+     "sat": 0.56,
+     "light": 0.49,
+     "pct": 16.9,
+     "family": "red"
+    },
+    {
+     "hex": "#c2979d",
+     "hue": 351,
+     "sat": 0.26,
+     "light": 0.68,
+     "pct": 16.0,
+     "family": "pink"
+    },
+    {
+     "hex": "#6b241e",
+     "hue": 5,
+     "sat": 0.57,
+     "light": 0.27,
+     "pct": 14.5,
+     "family": "brown"
+    },
+    {
+     "hex": "#7cb9ac",
+     "hue": 167,
+     "sat": 0.3,
+     "light": 0.61,
+     "pct": 12.1,
+     "family": "teal"
+    }
+   ],
+   "family_area": {
+    "orange": 40.5,
+    "red": 16.9,
+    "pink": 16.0,
+    "brown": 14.5,
+    "teal": 12.1
+   },
+   "site_back_family": [
+    "Yellow & Orange"
+   ]
+  },
+  "talulah": {
+   "clusters": [
+    {
+     "hex": "#312221",
+     "hue": 2,
+     "sat": 0.19,
+     "light": 0.16,
+     "pct": 24.8,
+     "family": "dark"
+    },
+    {
+     "hex": "#8ebcbc",
+     "hue": 181,
+     "sat": 0.26,
+     "light": 0.65,
+     "pct": 24.6,
+     "family": "teal"
+    },
+    {
+     "hex": "#c09a93",
+     "hue": 9,
+     "sat": 0.26,
+     "light": 0.66,
+     "pct": 22.0,
+     "family": "pink"
+    },
+    {
+     "hex": "#7c4f43",
+     "hue": 13,
+     "sat": 0.3,
+     "light": 0.37,
+     "pct": 16.5,
+     "family": "brown"
+    },
+    {
+     "hex": "#516868",
+     "hue": 178,
+     "sat": 0.13,
+     "light": 0.36,
+     "pct": 12.0,
+     "family": "teal"
+    }
+   ],
+   "family_area": {
+    "teal": 36.6,
+    "dark": 24.8,
+    "pink": 22.0,
+    "brown": 16.5
+   },
+   "site_back_family": [
+    "Ivory",
+    "Natural Patterns"
+   ]
+  },
+  "taylor": {
+   "clusters": [
+    {
+     "hex": "#b79bba",
+     "hue": 294,
+     "sat": 0.18,
+     "light": 0.67,
+     "pct": 28.5,
+     "family": "pink"
+    },
+    {
+     "hex": "#b9a9a6",
+     "hue": 9,
+     "sat": 0.12,
+     "light": 0.69,
+     "pct": 22.0,
+     "family": "neutral"
+    },
+    {
+     "hex": "#76626b",
+     "hue": 331,
+     "sat": 0.09,
+     "light": 0.42,
+     "pct": 18.5,
+     "family": "pink"
+    },
+    {
+     "hex": "#bac693",
+     "hue": 74,
+     "sat": 0.31,
+     "light": 0.68,
+     "pct": 17.8,
+     "family": "green"
+    },
+    {
+     "hex": "#3a2a34",
+     "hue": 322,
+     "sat": 0.15,
+     "light": 0.2,
+     "pct": 13.2,
+     "family": "dark"
+    }
+   ],
+   "family_area": {
+    "pink": 47.0,
+    "neutral": 22.0,
+    "green": 17.8,
+    "dark": 13.2
+   },
+   "site_back_family": [
+    "Purple"
+   ]
+  },
+  "willow": {
+   "clusters": [
+    {
+     "hex": "#91a075",
+     "hue": 80,
+     "sat": 0.18,
+     "light": 0.54,
+     "pct": 35.8,
+     "family": "green"
+    },
+    {
+     "hex": "#a4abaf",
+     "hue": 202,
+     "sat": 0.06,
+     "light": 0.66,
+     "pct": 21.6,
+     "family": "neutral"
+    },
+    {
+     "hex": "#333727",
+     "hue": 73,
+     "sat": 0.17,
+     "light": 0.18,
+     "pct": 20.7,
+     "family": "dark"
+    },
+    {
+     "hex": "#375469",
+     "hue": 206,
+     "sat": 0.32,
+     "light": 0.31,
+     "pct": 12.6,
+     "family": "blue"
+    },
+    {
+     "hex": "#c09f60",
+     "hue": 39,
+     "sat": 0.43,
+     "light": 0.57,
+     "pct": 9.3,
+     "family": "gold"
+    }
+   ],
+   "family_area": {
+    "green": 35.8,
+    "neutral": 21.6,
+    "dark": 20.7,
+    "blue": 12.6,
+    "gold": 9.3
+   },
+   "site_back_family": [
+    "Green"
+   ]
+  }
+ }
+}
