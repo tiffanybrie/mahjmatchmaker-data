@@ -116,14 +116,34 @@ def prof(mat, name, brand, label, top=False):
         <div style="width:110px;height:110px;border-radius:50%;background:#f56c8c;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.12)"><svg width="56" height="56" viewBox="0 0 48 48"><path d="M24 40 C10 30 6 23 6 17 C6 11 11 7 16 7 C20 7 22 9 24 12 C26 9 28 7 32 7 C37 7 42 11 42 17 C42 23 38 30 24 40 Z" fill="#fff"/></svg></div></div>
     </div></body></html>""")
 
-CALL = HEAD + f"""<div class="wrap" style="background:#1d1b22;color:#fff;justify-content:flex-start;padding-top:260px">
-  <div style="font:600 36px Bit;opacity:.7;letter-spacing:.06em">incoming call&hellip;</div>
-  <div style="width:420px;height:420px;border-radius:50%;background:url({u(TILE)}) center/cover;margin-top:80px;box-shadow:0 0 0 14px rgba(255,255,255,.12),0 0 0 34px rgba(255,255,255,.06)"></div>
-  <div style="font-family:Lo;font-weight:700;font-size:110px;margin-top:80px">Papaya Spritz</div>
-  <div style="font:600 34px Bit;opacity:.6;margin-top:12px">mobile</div>
-  <div style="position:absolute;bottom:260px;left:0;right:0;display:flex;justify-content:center;gap:300px">
-    <div style="width:170px;height:170px;border-radius:50%;background:#e5484d;display:flex;align-items:center;justify-content:center"><svg width="80" height="80" viewBox="0 0 48 48"><path d="M14 14 L34 34 M34 14 L14 34" stroke="#fff" stroke-width="5" stroke-linecap="round"/></svg></div>
-    <div style="width:170px;height:170px;border-radius:50%;background:#3fae5a;display:flex;align-items:center;justify-content:center"><svg width="86" height="86" viewBox="0 0 48 48"><path d="M24 40 C10 30 6 23 6 17 C6 11 11 7 16 7 C20 7 22 9 24 12 C26 9 28 7 32 7 C37 7 42 11 42 17 C42 23 38 30 24 40 Z" fill="#fff"/></svg></div></div>
+# Incoming-call frame (Tiffany Oct 19): a real-looking phone receiving a call, generic (no brand marks).
+PHONE_STATUS = ('<div style="position:absolute;top:0;left:0;right:0;height:120px;display:flex;align-items:center;justify-content:space-between;padding:26px 70px 0;color:#fff;font:600 38px Bit;z-index:5">'
+    '<span>9:41</span><span style="display:flex;gap:14px;align-items:center">'
+    '<svg width="48" height="30" viewBox="0 0 48 30"><rect x="0" y="20" width="8" height="10" rx="2" fill="#fff"/><rect x="13" y="14" width="8" height="16" rx="2" fill="#fff"/><rect x="26" y="7" width="8" height="23" rx="2" fill="#fff"/><rect x="39" y="0" width="8" height="30" rx="2" fill="#fff"/></svg>'
+    '<svg width="42" height="32" viewBox="0 0 42 32"><path d="M21 30 L13 21 A12 12 0 0 1 29 21 Z" fill="#fff"/><path d="M6 14 A21 21 0 0 1 36 14" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M1 7 A28 28 0 0 1 41 7" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" opacity=".9"/></svg>'
+    '<svg width="66" height="32" viewBox="0 0 66 32"><rect x="1.5" y="1.5" width="56" height="29" rx="8" fill="none" stroke="#fff" stroke-width="3" opacity=".6"/><rect x="6" y="6" width="44" height="20" rx="4" fill="#fff"/><rect x="60" y="11" width="5" height="10" rx="2" fill="#fff" opacity=".6"/></svg>'
+    '</span></div>')
+CALL = HEAD + f"""<div class="wrap" style="background:#062a55;padding:0">
+  <div style="position:absolute;right:-220px;top:-160px;width:760px;height:760px;border-radius:50%;background:#0c3a70"></div>
+  <div style="position:absolute;left:-240px;bottom:-220px;width:700px;height:700px;border-radius:50%;background:#0c3a70"></div>
+  <div style="position:relative;width:780px;height:1600px;border-radius:120px;background:#0b0b0d;padding:22px;box-shadow:0 40px 90px rgba(0,0,0,.45),inset 0 0 0 4px #2a2a2e">
+   <div style="position:relative;width:100%;height:100%;border-radius:100px;overflow:hidden;background:url({u(TILE)}) center/cover">
+    <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,6,20,.62) 0%,rgba(10,6,20,.15) 38%,rgba(10,6,20,.25) 62%,rgba(10,6,20,.78) 100%)"></div>
+    <div style="position:absolute;top:26px;left:50%;transform:translateX(-50%);width:230px;height:66px;border-radius:40px;background:#000;z-index:6"></div>
+    {PHONE_STATUS}
+    <div style="position:absolute;top:190px;left:0;right:0;text-align:center;color:#fff">
+      <div style="font:400 34px Bit;opacity:.8">mobile</div>
+      <div style="font-family:Lo,'Noto Color Emoji';font-weight:700;font-size:92px;line-height:1.05;margin-top:10px;padding:0 40px">Papaya Spritz<br><span style="font-family:'Noto Color Emoji';font-size:70px">&#x1F34A;&#x1F49C;&#x1F379;&#x1F49A;</span></div>
+    </div>
+    <div style="position:absolute;bottom:330px;left:0;right:0;display:flex;justify-content:space-between;padding:0 120px;color:#fff;font:600 30px Bit;text-align:center">
+      <div><svg width="64" height="64" viewBox="0 0 48 48"><circle cx="24" cy="26" r="15" fill="none" stroke="#fff" stroke-width="3.5"/><path d="M24 18 V26 L30 30" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/><path d="M8 12 L14 6 M40 12 L34 6" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/></svg><div style="margin-top:8px">Remind Me</div></div>
+      <div><svg width="64" height="64" viewBox="0 0 48 48"><path d="M8 10 H40 A3 3 0 0 1 43 13 V31 A3 3 0 0 1 40 34 H20 L11 41 V34 H8 A3 3 0 0 1 5 31 V13 A3 3 0 0 1 8 10 Z" fill="none" stroke="#fff" stroke-width="3.5" stroke-linejoin="round"/></svg><div style="margin-top:8px">Message</div></div>
+    </div>
+    <div style="position:absolute;bottom:90px;left:0;right:0;display:flex;justify-content:space-between;padding:0 90px;color:#fff;font:600 32px Bit;text-align:center">
+      <div><div style="width:170px;height:170px;border-radius:50%;background:#e5484d;display:flex;align-items:center;justify-content:center"><svg width="86" height="86" viewBox="0 0 48 48" style="transform:rotate(135deg)"><path d="M14 8 L19 8 L22 16 L18 19 C20 24 24 28 29 30 L32 26 L40 29 L40 34 C40 37 37 40 34 40 C20 39 9 28 8 14 C8 11 11 8 14 8 Z" fill="#fff"/></svg></div><div style="margin-top:16px">Decline</div></div>
+      <div><div style="width:170px;height:170px;border-radius:50%;background:#34c759;display:flex;align-items:center;justify-content:center"><svg width="86" height="86" viewBox="0 0 48 48"><path d="M14 8 L19 8 L22 16 L18 19 C20 24 24 28 29 30 L32 26 L40 29 L40 34 C40 37 37 40 34 40 C20 39 9 28 8 14 C8 11 11 8 14 8 Z" fill="#fff"/></svg></div><div style="margin-top:16px">Accept</div></div>
+    </div>
+   </div></div>
 </div></body></html>"""
 
 M = 'assets/colorcards/papaya-spritz/mats/'
@@ -170,8 +190,8 @@ def swipe_html():
     return HEAD + f"""<div class="wrap" style="background:#f6e9df;justify-content:flex-start;padding-top:120px">
       {SEARCH}
       <div id="ctr" style="font:600 30px Bit;color:#5a6b85;margin:22px 0 36px;letter-spacing:.08em;text-transform:uppercase">swiping&hellip;</div>
-      <div style="position:relative;width:900px;height:1290px">{cards}</div>
-      <div style="display:flex;gap:40px;margin-top:-8px">
+      <div style="position:relative;width:900px;height:1360px">{cards}</div>
+      <div style="display:flex;gap:40px;margin-top:6px">
         <div id="bx" style="width:120px;height:120px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font:400 66px Bit;color:#062a55;box-shadow:0 8px 20px rgba(0,0,0,.12)">&times;</div>
         <div id="bh" style="width:120px;height:120px;border-radius:50%;background:#f56c8c;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.12)">{HEART.format(w=60, c='#fff')}</div></div>
     </div>
@@ -231,6 +251,24 @@ SHOTS = [
       <div style="font:600 32px Bit;color:#062a55;opacity:.7;margin-top:26px">mahjmatchmaker.com</div></div></body></html>""", 3.6),
 ]
 
+def make_ring(path, sr=44100):
+    """Synthesized phone ring (no licensing): UK-style double ring, 400+450 Hz, two ring-rings, fading as the call is answered."""
+    import wave, struct, math
+    dur = 3.2; n = int(sr * dur); out = []
+    for i in range(n):
+        t = i / sr; m = t % 1.6
+        on = (0 <= m < 0.4) or (0.6 <= m < 1.0)
+        if t >= 3.2: on = False
+        env = 1.0
+        if t > 2.6: env = max(0.0, 1 - (t - 2.6) / 0.6)            # fade out as she answers
+        # 20 ms attack/decay on each burst to avoid clicks
+        edge = min(m if m < 0.4 else m - 0.6, (0.4 - m) if m < 0.4 else (1.0 - m))
+        ramp = min(1.0, max(0.0, edge / 0.02))
+        v = (math.sin(2 * math.pi * 400 * t) + math.sin(2 * math.pi * 450 * t)) * 0.22 * env * ramp if on else 0.0
+        out.append(int(max(-1, min(1, v)) * 32767))
+    with wave.open(path, 'w') as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr); w.writeframes(struct.pack('<%dh' % len(out), *out))
+
 async def main():
     shots = []
     for x in SHOTS:
@@ -249,7 +287,7 @@ async def main():
                     await pg.evaluate(f'render({k / FPS})')
                     fp = f'{OUT}/frames/swipe/s{k:04d}.png'; await pg.screenshot(path=fp)
                     entries.append((f'swipe/s{k:04d}.png', 1 / FPS, False))
-                for tt in (0.9, 3.0, 6.2):   # contact-sheet stills: NOPE, MATCH 1, later match
+                for tt in (1.6, 3.25, 6.2):   # contact-sheet stills: NOPE, MATCH 1, later match
                     k = min(int(tt * FPS), n - 1); stills.append(f'{OUT}/frames/swipe/s{k:04d}.png')
                 continue
             h, d = x
@@ -265,7 +303,12 @@ async def main():
         f.write(f"file '{entries[-1][0]}'\n")
     name = 'counseling-session-1-papaya-spritz' + ('-static' if STATIC else '')
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', lst, '-vf', 'fps=30,format=yuv420p',
-                    '-c:v', 'libx264', '-crf', '18', f'{OUT}/{name}.mp4'], check=True)
+                    '-c:v', 'libx264', '-crf', '18', f'{OUT}/frames/{name}-silent.mp4'], check=True)
+    # ring over the first frame only; the rest stays silent so Tiffany can add Instagram music on top
+    make_ring(f'{OUT}/frames/ring.wav')
+    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', f'{OUT}/frames/{name}-silent.mp4', '-i', f'{OUT}/frames/ring.wav',
+                    '-filter_complex', '[1:a]apad[a]', '-map', '0:v', '-map', '[a]', '-shortest', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '160k',
+                    f'{OUT}/{name}.mp4'], check=True)
     ims = [Image.open(f).convert('RGB').resize((270, 480)) for f in stills]
     cols = 7; rows = (len(ims) + cols - 1) // cols
     sheet = Image.new('RGB', (cols * 280 + 10, rows * 490 + 10), (240, 236, 230))
