@@ -1,0 +1,62 @@
+<!doctype html><html><head><meta charset=utf8><style>
+@font-face{font-family:Capra;src:url('file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/Caprasimo.ttf')}
+@font-face{font-family:Hand;src:url('file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/Caveat-Bold.ttf')}
+@font-face{font-family:PF;font-style:italic;font-weight:400;src:url('file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/playfair-display-latin-400-italic.woff2')}
+@font-face{font-family:PF;font-style:italic;font-weight:600;src:url('file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/playfair-display-latin-600-italic.woff2')}
+@font-face{font-family:Bit;font-weight:400;src:url('file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/bitter-latin-400-normal.woff2')}
+@font-face{font-family:Bit;font-weight:600;src:url('file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/bitter-latin-600-normal.woff2')}
+@font-face{font-family:Bit;font-weight:700;src:url('file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/bitter-latin-700-normal.woff2')}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#054689;--flame:#f56c8c;--rose:#c8325f;--cream:#f6e9df;--paper:#fffaf5}
+html,body{width:1640px;height:856px;overflow:hidden;background:var(--cream);color:var(--navy);font-family:Bit,Georgia,serif}
+.abs{position:absolute}
+.cap{font-family:Capra;font-weight:400;line-height:.98}
+.pf{font-family:PF;font-style:italic}
+.hand{font-family:Hand}
+.caps{font:700 15px Bit;letter-spacing:.22em;text-transform:uppercase}
+.ph{background-size:cover;background-position:center}
+.pill{display:inline-flex;align-items:center;gap:12px;background:var(--navy);color:#fff;border-radius:999px;font:700 26px Bit;padding:15px 30px;letter-spacing:.02em;white-space:nowrap}
+.pill b{color:var(--flame);font-weight:700}
+.dot{width:26px;height:26px;border-radius:50%;box-shadow:0 0 0 3px #fff,0 2px 6px rgba(5,40,90,.18)}
+.card{background:#fff;border-radius:26px;box-shadow:0 22px 50px rgba(5,40,90,.20),0 3px 10px rgba(5,40,90,.10);overflow:hidden}
+</style></head><body><div style="position:relative;width:1640px;height:856px;overflow:hidden">
+<!-- soft backdrop shapes -->
+<div class="abs" style="right:-140px;top:-160px;width:760px;height:760px;border-radius:50%;background:#f9dccf"></div>
+<div class="abs" style="left:-120px;bottom:-260px;width:520px;height:520px;border-radius:50%;background:#efdccd"></div>
+
+<!-- left copy column: everything ends above y~556 so the mobile profile photo (bottom-left) never covers it -->
+<div class="abs" style="left:112px;top:138px;width:640px">
+  <img src="file:///home/claude/mahjmatchmaker-data/assets/brand/mahjmatchmaker-wordmark-notag.png" style="width:380px;display:block">
+  <div class="cap" style="font-size:70px;margin-top:22px;white-space:nowrap">Swipe right on<br>your <span style="color:var(--rose)">perfect mat.</span></div>
+  <div class="pf" style="font-size:29px;line-height:1.3;margin-top:12px;color:#2e4f7d">Tiles, mats &amp; racks, matched by color.</div>
+  <div style="display:flex;align-items:center;gap:22px;margin-top:22px"><span class="pill">Find your match <b>&middot;</b> 10.27</span><span class="caps" style="font-size:16px;color:var(--rose)">mahjmatchmaker.com</span></div>
+</div>
+<!-- card stack -->
+<div class="abs card" style="left:790px;top:176px;width:340px;height:520px;transform:rotate(-9deg);background:#e9dcf3"></div>
+<div class="abs card" style="left:800px;top:166px;width:340px;height:520px;transform:rotate(5deg);background:#d9ecc4"></div>
+<div class="abs card" style="left:796px;top:132px;width:350px;height:560px">
+  <div class="ph" style="height:318px;background-image:url(file:///home/claude/mahjmatchmaker-data/assets/tiles/album/papaya-spritz.jpg)"></div>
+  <div class="abs" style="left:16px;top:16px;background:rgba(255,255,255,.92);border-radius:999px;padding:7px 14px;font:700 13px Bit;letter-spacing:.16em;color:var(--rose)">NEW GIRL</div>
+  <div style="padding:18px 24px 0">
+    <div class="cap" style="font-size:44px;color:#e0702a;white-space:nowrap">Papaya Spritz</div>
+    <div class="caps" style="font-size:13px;color:#5a6b85;margin-top:6px">Oh My Mahjong</div>
+    <div class="pf" style="font-size:21px;line-height:1.3;margin-top:10px">Her type: pink with a papaya streak.</div>
+    <div style="display:flex;gap:10px;margin-top:14px"><span class="dot" style="background:#df772f;width:24px;height:24px"></span><span class="dot" style="background:#a99bd0;width:24px;height:24px"></span><span class="dot" style="background:#c4dc8c;width:24px;height:24px"></span><span class="dot" style="background:#ef7aa0;width:24px;height:24px"></span><span class="dot" style="background:#3fb8b0;width:24px;height:24px"></span></div>
+  </div>
+</div>
+<!-- swipe buttons -->
+<div class="abs" style="left:858px;top:654px;width:76px;height:76px;border-radius:50%;background:#fff;box-shadow:0 10px 24px rgba(5,40,90,.20);display:flex;align-items:center;justify-content:center;font:700 38px Bit;color:#9aa6b8">&#x2715;</div>
+<div class="abs" style="left:1010px;top:646px;width:92px;height:92px;border-radius:50%;background:var(--flame);box-shadow:0 12px 28px rgba(200,50,95,.35);display:flex;align-items:center;justify-content:center">
+  <svg width="46" height="42" viewBox="0 0 24 22"><path d="M12 21s-9-5.6-9-12.2C3 5.6 5.4 3 8.4 3c1.6 0 2.9.8 3.6 2 .7-1.2 2-2 3.6-2C18.6 3 21 5.6 21 8.8 21 15.4 12 21 12 21z" fill="#fff"/></svg></div>
+
+<!-- match -->
+<div class="abs hand" style="left:1210px;top:140px;font-size:58px;color:var(--rose);transform:rotate(-4deg);white-space:nowrap">It's a match!</div>
+<img class="abs" src="file:///home/claude/mahjmatchmaker-data/assets/brand/flame-heart.png" style="left:1150px;top:386px;width:64px;z-index:3;filter:drop-shadow(0 6px 10px rgba(200,50,95,.3))">
+<div class="abs card" style="left:1200px;top:228px;width:320px;padding:14px 14px 0;transform:rotate(4deg);border-radius:20px">
+  <div class="ph" style="width:292px;height:292px;border-radius:10px;background-image:url(file:///home/claude/mahjmatchmaker-data/assets/colorcards/papaya-spritz/mats/press-for-mahjong-anders-ruff.jpg)"></div>
+  <div style="padding:14px 4px 16px;text-align:center">
+    <div class="cap" style="font-size:28px">Press for Mahjong</div>
+    <div class="caps" style="font-size:12px;color:#5a6b85;margin-top:6px">mat &middot; Anders Ruff</div>
+  </div>
+</div>
+</div></body></html>
