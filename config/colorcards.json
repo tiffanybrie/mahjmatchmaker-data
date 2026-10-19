@@ -323,8 +323,8 @@
     "Greenly": "assets/colorcards/papaya-spritz/mats/greenly-mahj-and-vine.jpg"
    },
    "profile_line": [
-    "Her type: pink with a papaya streak.",
-    "Open to periwinkle. Opposites attract."
+    "Seeking: pink, peach or periwinkle.",
+    "Must be comfortable around bright color."
    ],
    "profile_line_options": {
     "A": [
@@ -342,7 +342,8 @@
    },
    "shop": "Shop OMM · code MAHJMATCH",
    "shop_m": "Code MAHJMATCH on tiles, racks & mats",
-   "_oct19": "Dating-profile line replaces the motif caption (Tiffany Oct 19, DRAFT until she picks A/B/C on Ready to Ship)."
+   "_oct19": "Profile line C picked by Tiffany Oct 19 12:21pm. Cards are now the set's PROFILE (variants a/b via build.py --profile=a|b, DRAFT until she picks).",
+   "matches": 50
   },
   "sunday-tile-set": {
    "name": "Sunday Tile Set",

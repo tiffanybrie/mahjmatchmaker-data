@@ -64,7 +64,7 @@ A = HEAD + f"""
   <div style="padding:18px 24px 0">
     <div class="cap" style="font-size:44px;color:#e0702a;white-space:nowrap">Papaya Spritz</div>
     <div class="caps" style="font-size:13px;color:#5a6b85;margin-top:6px">Oh My Mahjong</div>
-    <div class="pf" style="font-size:21px;line-height:1.3;margin-top:10px">Her type: pink with a papaya streak.</div>
+    <div class="pf" style="font-size:21px;line-height:1.3;margin-top:10px">Seeking: pink, peach or periwinkle.</div>
     <div style="display:flex;gap:10px;margin-top:14px">{dots(PAPAYA, 24)}</div>
   </div>
 </div>
@@ -170,5 +170,6 @@ async def main():
             await pv.screenshot(path=f'{OUT}/cover-v2-{key}-preview.jpg', full_page=True, type='jpeg', quality=88)
         await b.close()
 
-asyncio.run(main())
-print('done')
+if __name__ == '__main__':
+    asyncio.run(main())
+    print('done')

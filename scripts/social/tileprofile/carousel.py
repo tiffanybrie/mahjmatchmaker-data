@@ -1,4 +1,6 @@
-"""'Introducing <set>' Instagram carousel (1080x1350): color profile + dating profile, black-book style (doc 81 DRAFT).
+"""'Introducing <set>' Instagram carousel (1080x1350): the set's PROFILE, black-book style (doc 81 DRAFT).
+Oct 19 v2: 7 slides. Profile intro (hero / her colors / racks she's into) -> made for each other (official OMM pair) -> her OMM sisters
+-> strong match potential (true top 3, every brand) -> see all + code. Non-OMM launches: no omm_launch block = no pair / sisters slides.
 Usage: python3 carousel.py papaya-spritz <outdir>   -> writes slide HTML, then run shot.js to render JPGs."""
 import sys, os, html
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -13,10 +15,10 @@ MATS = S['mat_imgs']; RACK = {'Bird & Bamboo Lavender': 'assets/colorcards/papay
                               'Peace Love Mahjong Oak': 'assets/racks/card/peace-love-mahjong-oak.png'}
 LOGO = url('assets/brand/mahjmatchmaker-wordmark-notag.png'); TILE = url(S['tile'])
 e = html.escape
-N = len(['x' for _ in range(6)])
+OMM = P.get('omm_launch'); NS = 7 if OMM else 5
 
 def page(i, body, extra=''):
-    dots = ''.join(f'<i style="background:{ACC if j == i else "rgba(6,69,135,.2)"}"></i>' for j in range(1, 7))
+    dots = ''.join(f'<i style="background:{ACC if j == i else "rgba(6,69,135,.2)"}"></i>' for j in range(1, NS + 1))
     return f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 1350, ACC)}
 .dots{{position:absolute;bottom:34px;left:0;right:0;display:flex;gap:10px;justify-content:center}}.dots i{{width:12px;height:12px;border-radius:50%;display:block}}
 .hd{{position:absolute;top:58px;left:72px;right:72px;display:flex;justify-content:space-between;align-items:baseline}}
@@ -24,7 +26,12 @@ def page(i, body, extra=''):
 <div class="dots">{dots}</div></div></body></html>"""
 
 def head(t):
-    return f'<div class="hd"><span class="caps">{e(P["name"])} · the profile</span><span class="caps">{t}</span></div>'
+    return f'<div class="hd"><span class="caps">{e(P["name"])} · her profile</span><span class="caps">{t}</span></div>'
+
+def VER(n):  # verified-match heart badge (pink heart, white check)
+    return f'<svg width="{n}" height="{n}" viewBox="0 0 24 24" style="flex:0 0 auto"><path d="M12 21.5C5.5 16.6 2 13.2 2 8.9 2 5.9 4.4 3.5 7.3 3.5c1.9 0 3.6 1 4.7 2.5 1.1-1.5 2.8-2.5 4.7-2.5 2.9 0 5.3 2.4 5.3 5.4 0 4.3-3.5 7.7-10 12.6z" fill="#d6608c" stroke="#fff" stroke-width="1.2"/><path d="M7.6 11.3l3 3 5.8-5.8" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+def HT(n, c='var(--pink)'):
+    return f'<svg width="{n}" height="{n}" viewBox="0 0 24 24" style="flex:0 0 auto;vertical-align:-3px"><path d="M12 21.5C5.5 16.6 2 13.2 2 8.9 2 5.9 4.4 3.5 7.3 3.5c1.9 0 3.6 1 4.7 2.5 1.1-1.5 2.8-2.5 4.7-2.5 2.9 0 5.3 2.4 5.3 5.4 0 4.3-3.5 7.7-10 12.6z" fill="{c}"/></svg>'
 
 sw = [b[1] for b in P['her_colors']['backs']] + [f[1] for f in P['her_colors']['faces']]
 l1, l2 = P['profile_line']
@@ -33,7 +40,8 @@ l1, l2 = P['profile_line']
 s1 = page(1, f"""
 <div class="ph" style="position:absolute;inset:0 0 520px 0;background-image:url({url(L['hero'])})"></div>
 <div style="position:absolute;left:0;right:0;bottom:0;height:560px;background:var(--cream);border-radius:46px 46px 0 0;padding:58px 72px 0">
- <div class="caps" style="color:var(--pink);font-size:20px">The new girl on the block · {e(P['brand'])}</div>
+ <div style="display:flex;justify-content:space-between;align-items:center"><div class="caps" style="color:var(--pink);font-size:20px">The new girl on the block · {e(P['brand'])}</div>
+ <div style="display:flex;align-items:center;gap:8px;border:2px solid var(--pink);border-radius:99px;padding:6px 16px 6px 10px;background:#fff">{VER(30)}<span style="font:700 17px Bit;letter-spacing:.14em;color:var(--pink)">{P['matches']} MATCHES</span></div></div>
  <div class="hand" style="font-size:66px;margin-top:10px;line-height:1">Introducing</div>
  <div class="cap" style="font-size:128px;color:var(--acc);margin-top:2px;white-space:nowrap">{e(P['name'])}</div>
  <div class="pf" style="font-size:38px;line-height:1.3;margin-top:20px">{e(l1)}<br>{e(l2)}</div>
@@ -70,10 +78,11 @@ for t in P['her_type']:
   <div class="pf" style="font-size:36px;margin-top:10px;font-weight:600">{e(t['mat'])} <span style="font-weight:400;font-size:28px;color:#5a6b85">by {e(t['brand'])}</span></div>
   <div style="font:400 26px/1.35 Bit;margin-top:6px;color:#2c3e63">{e(t['why'])}</div>
  </div></div>"""
-s3 = page(3, head('2 · her type') + f"""
+SL = (OMM or {}).get('strong_label', 'Strong match potential')
+s3 = page(NS - 1, head(('5' if OMM else '3') + ' · top matches') + f"""
 <div style="position:absolute;top:120px;left:72px;right:72px">
- <div class="cap" style="font-size:96px">Her type</div>
- <div class="pf" style="font-size:32px;margin-top:8px;color:#3c4f73">And why it works, in one line each.</div>
+ <div class="cap" style="font-size:{76 if len(SL) > 18 else 96}px;white-space:nowrap">{e(SL)}</div>
+ <div class="pf" style="font-size:32px;margin-top:8px;color:#3c4f73">Her top 3 of {P['matches']} matches, every brand, and why.</div>
  {rows}
  <div style="margin-top:38px;border:2px dashed rgba(214,96,140,.55);border-radius:18px;padding:20px 24px;background:rgba(255,255,255,.55)">
   <span class="caps" style="color:var(--pink);font-size:19px">Dealbreaker</span>
@@ -87,12 +96,44 @@ for r in P['racks']:
     rk += f"""<div style="margin-top:56px"><div style="display:flex;align-items:baseline;gap:14px"><span class="caps" style="font-size:18px;color:#8a6a80">{e(b)}</span><span class="pf" style="font-size:44px;font-weight:600">{e(c)}</span></div>
 <img src="{url(RACK[r['name']])}" style="display:block;width:936px;height:96px;object-fit:fill;margin-top:10px;filter:drop-shadow(0 8px 10px rgba(6,40,90,.18))">
 <div style="font:400 27px Bit;margin-top:10px;color:#2c3e63">{e(r['why'])}</div></div>"""
-s4 = page(4, head('3 · racks') + f"""
+s4 = page(3, head("2 · racks she's into") + f"""
 <div style="position:absolute;top:120px;left:72px;right:72px">
  <div class="cap" style="font-size:96px">Racks she's into</div>
  <div class="pf" style="font-size:32px;margin-top:8px;color:#3c4f73">Pull a layer color, or let a light wood stay out of her way.</div>
  {rk}
  <div class="hand" style="font-size:44px;margin-top:40px;color:var(--navy)">all three picked for her, not just any rack &hearts;</div>
+ <div class="hand" style="font-size:40px;margin-top:6px;color:var(--pink)">now, who she&rsquo;s dating &rarr;</div>
+</div>""")
+
+if OMM:
+    pr = OMM['pair']; PM = url(pr['img']); TOG = url(pr['together'])
+    sp = page(4, head('3 · made for each other') + f"""
+<div style="position:absolute;top:120px;left:72px;right:72px">
+ <div class="cap" style="font-size:84px;white-space:nowrap">Made for each other</div>
+ <div class="pf" style="font-size:34px;margin-top:8px;color:#3c4f73">Her official {e(pr['brand'])} pair: <b style="font-weight:600;color:var(--navy)">{e(pr['mat'])}</b></div>
+ <div class="ph" style="margin-top:30px;height:640px;border-radius:24px;background-image:url({TOG});background-size:150%;background-position:52% 42%;box-shadow:0 10px 26px rgba(6,40,90,.16);position:relative">
+  <div style="position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,.92);border-radius:99px;padding:8px 18px;font:600 20px Bit;color:var(--navy)">{e(P['name'])} on {e(pr['mat'])}, in {e(pr['brand'])}&rsquo;s own photo</div></div>
+ <div style="display:flex;align-items:center;gap:18px;margin-top:34px">
+  <div class="ph" style="flex:0 0 170px;height:170px;border-radius:50%;background-image:url({TILE});box-shadow:0 0 0 6px #fff,0 8px 20px rgba(6,40,90,.16)"></div>
+  <div style="flex:0 0 auto">{HT(54)}</div>
+  <div class="ph" style="flex:0 0 210px;height:210px;border-radius:18px;background-image:url({PM});background-size:114%;box-shadow:0 8px 22px rgba(6,40,90,.16)"></div>
+  <div style="flex:1;padding-left:6px"><div style="display:flex;align-items:center;gap:8px">{VER(30)}<span class="caps" style="font-size:17px;color:var(--pink)">Official pair</span></div>
+   <div style="font:400 25px/1.35 Bit;margin-top:8px;color:#2c3e63">{e(pr['why'])}</div></div>
+ </div>
+</div>""")
+    rows2 = ''
+    for t in OMM['sisters']:
+        vt = '<span style="margin-left:12px;font:700 15px Bit;letter-spacing:.14em;background:var(--navy);color:#fff;border-radius:99px;padding:5px 12px;vertical-align:8px">FROM THE VAULT</span>' if t.get('vault') else ''
+        rows2 += f"""<div style="display:flex;gap:34px;align-items:center;margin-top:30px">
+ <div class="ph" style="flex:0 0 240px;height:240px;border-radius:18px;background-image:url({url(t['img'])});box-shadow:0 8px 22px rgba(6,40,90,.16)"></div>
+ <div style="flex:1"><div class="pf" style="font-size:42px;font-weight:600">{e(t['mat'])}{vt}</div>
+  <div style="font:400 26px/1.35 Bit;margin-top:6px;color:#2c3e63">{e(t['why'])}</div></div></div>"""
+    ss = page(5, head('4 · her OMM sisters') + f"""
+<div style="position:absolute;top:120px;left:72px;right:72px">
+ <div class="cap" style="font-size:96px">Her OMM sisters</div>
+ <div class="pf" style="font-size:32px;margin-top:8px;color:#3c4f73">More {e(P['brand'])} mats from her album, in my order.</div>
+ {rows2}
+ <div class="hand" style="font-size:40px;margin-top:34px;color:var(--navy)">already own a vault mat? she still works with it &hearts;</div>
 </div>""")
 
 # 5 first dates: isolated characters (tile pile circle + flat mat photo), no match cards (Oct 17 rule)
@@ -113,7 +154,7 @@ s5 = page(5, head('4 · first dates') + f"""
 </div>""")
 
 # 6 end card
-s6 = page(6, f"""
+s6 = page(NS, f"""
 <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;text-align:center;padding:120px 80px 0">
  <div class="caps" style="font-size:20px;color:#5a6b85">{e(P['bio'])}</div>
  <div style="display:flex;align-items:center;gap:26px;margin-top:56px">
@@ -128,6 +169,7 @@ s6 = page(6, f"""
  <div style="font:600 22px Bit;margin-top:14px;letter-spacing:.06em">COMING 10.27 · FIND YOUR MATCH</div>
 </div>""")
 
-for i, s in enumerate([s1, s2, s3, s4, s5, s6], 1):
+SLIDES = [s1, s2, s4] + ([sp, ss] if OMM else []) + [s3, s6]
+for i, s in enumerate(SLIDES, 1):
     open(f'{OUT}/s{i}.html', 'w').write(s)
-print('wrote 6 slides', OUT)
+print('wrote', len(SLIDES), 'slides', OUT)
