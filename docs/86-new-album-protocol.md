@@ -24,5 +24,5 @@ Measured from OMM's 7 product photos plus our tile photo:
 
 ## Color sampling rule (Tiffany, Oct 19)
 - Sample layer colors from **the brand's back + side tile photo on their website** (the one shoppers see), not our own tile photo. Our earlier lavender (#9c94c7) came from a darker photo and looked subdued next to ohmymahjong.com.
-- Take **3 spots per layer** (top, middle, bottom of the stripe), use the middle value (median). Save the photo to assets/tiles/backs/.
+- Take **3 spots per layer** (top, middle, bottom of each layer), use the middle value (median). Save the photo to assets/tiles/backs/.
 - Papaya Spritz from OMM's back photo: Papaya #DE7E30 (27°) · Lavender #A8A3E1 (245°) · Light lime #C8D7A5 (78°). Color wheel, color cards and dating profile all use these.

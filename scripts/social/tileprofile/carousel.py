@@ -63,7 +63,7 @@ s2 = page(2, head('1 · her colors') + f"""
 </div>
 <div style="position:absolute;left:72px;right:72px;bottom:90px;display:flex;align-items:center;gap:34px">
  <div class="ph" style="flex:0 0 230px;height:230px;border-radius:50%;background-color:#fff;background-size:150%;background-image:url({url(L['single'])});box-shadow:0 0 0 8px #fff,0 10px 26px rgba(6,40,90,.16)"></div>
- <div><div class="hand" style="font-size:50px;line-height:1.05">see the stripes?<br>lavender + lime, under a papaya back.</div>
+ <div><div class="hand" style="font-size:50px;line-height:1.05">see the layers?<br>lavender + light lime, under a papaya back.</div>
  <div style="font:400 24px/1.35 Bit;color:#2c3e63;margin-top:12px">Pull any of these into a mat or rack and she looks put-together.</div></div>
 </div>""")
 
