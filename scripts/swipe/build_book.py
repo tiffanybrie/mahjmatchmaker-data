@@ -3,6 +3,9 @@
 
 Rules (Tiffany, Oct 14-15; project doc 51):
   1. Mat pool = the vetted Find Your Match catalog ONLY (isolated flat mat photos).
+     Color pull (Oct 19): rank candidates with scripts/colors/matcolors.pull_score(key, set_colors, set_tone):
+     Tiffany's Mat Color Tagger tags (config/mat-color-overrides.json) win, primary weighted over accents,
+     tone must match (clean/bright never mixed with muted/earthy); skipped mats are never pulled.
      Never raw store feeds, never album-card crops (alb:*), never graphics.
   2. Auto-excluded: holiday mats, travel/mini mats, starter kits, bundles, caddies,
      desk mats, table covers, foldable tables, solo-play mats, pool mats, logo mats.

@@ -22,6 +22,8 @@ def card(c,W,H,out):
     rt=set(c.get('retired',[]))
     c=dict(c,racks=sorted(c['racks'],key=lambda r:1 if (len(r)>3 and r[3]) else 0))  # Bird & Bamboo bars stack together; other brands' rack photos go below (Tiffany, Oct 13)
     tiles=''.join(f"<figure><div class='tp' style=\"background-image:url({TILE[t]['img']})\"></div><figcaption>{t.replace(' (retired)','')}{'<small>retired</small>' if (t in rt or '(retired)' in t) else ''}</figcaption></figure>" for t in c['tiles'])
+    if c.get('mat_key'):  # Oct 19: lead with the main color Tiffany named in the Mat Color Tagger
+        import sys as _s,os as _o;_s.path.insert(0,_o.path.join(_o.path.dirname(_o.path.abspath(__file__)),'..','colors'));import matcolors as _MC;c['palette']=_MC.order_palette(c['mat_key'],c['palette'])
     pal=''.join(f"<div class='sw'><i style='background:{h}'></i><span>{n}</span></div>" for n,h in c['palette'])
     rk=''.join((f"<div class='rkp'><div class='rki' style=\"background-image:url({b64(ROOT+'/'+r[3],'JPEG',700)})\"></div><span>{r[0]}</span></div>" if len(r)>3 and r[3] else f"<div class='rk' style='background:{r[1]};color:{'#fff' if r[2] else '#2a2036'}'>{r[0]}</div>") for r in c['racks'])  # Bird & Bamboo = painted color bar (generated); any other brand's rack = its REAL product photo (Tiffany, Oct 13)
     pin=H/W>1.4

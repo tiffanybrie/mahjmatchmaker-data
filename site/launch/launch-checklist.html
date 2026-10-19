@@ -50,7 +50,7 @@ li.isdone .t b{text-decoration:line-through;text-decoration-color:var(--muted)}
 
 <div class="wrap">
   <h1>Launch Checklist</h1>
-  <p class="count" id="count">0 of 17 done · launch Tue Oct 27</p>
+  <p class="count" id="count">0 of 18 done · launch Tue Oct 27</p>
   <div class="bar"><i id="barfill"></i></div>
   <p class="sub">Tap a status to change it. Tap a note to edit it. Everything saves for both of us.</p>
   <div id="offline" class="offline" hidden>Statuses can't load in this view, so they won't save here.</div>
@@ -63,7 +63,7 @@ li.isdone .t b{text-decoration:line-through;text-decoration-color:var(--muted)}
 
 <script>
 const RTS="https://claude.ai/artifact/RTtaTzgkN2ssmiAP3FxvJF", FYM="https://claude.ai/artifact/6epA9HuEdT32zUp79Qv3kd",
-      WW="https://claude.ai/artifact/Q8RhYaJwAxYHwXGLGavrEC", LIVE="https://claude.ai/artifact/9mwKRfRbQRAoBLknJCcpL9";
+      WW="https://claude.ai/artifact/Q8RhYaJwAxYHwXGLGavrEC", TAG="https://claude.ai/artifact/RoHrY1LHAj8bgZx2aL4bLW", LIVE="https://claude.ai/artifact/9mwKRfRbQRAoBLknJCcpL9";
 const GROUPS=[
  {name:"Site pages",items:[
   [1,"Home page: your fixes",null],
@@ -75,8 +75,9 @@ const GROUPS=[
   [7,"Retired labels on retired tile sets",["Ready to Ship",RTS]],
   [8,"Color cards + favorite tiles for the 6 new albums",["Ready to Ship",RTS]],
   [9,"Brands footer link, form, hidden page + reply email",["Preview",WW]],
-  [10,"Mat Gallery: every mat by color",null],
-  [11,"Amazon storefront: where it's linked on the site",null]]},
+  [10,"Mat Color Tagger (Mat Gallery kept private)",["Tagger",TAG]],
+  [11,"Amazon storefront: where it's linked on the site",null],
+  [18,"Color order + split Yellow/Orange on the site",null]]},
  {name:"Testing",items:[
   [12,"Click-through QA: every page, desktop + mobile, plus Find Your Match",["Find Your Match",FYM]]]},
  {name:"Social + partners",items:[
@@ -116,8 +117,8 @@ function render(){
     }
     g.appendChild(ul);
   }
-  document.getElementById("count").textContent=done+" of 17 done · launch Tue Oct 27";
-  document.getElementById("barfill").style.width=(done/17*100)+"%";
+  document.getElementById("count").textContent=done+" of 18 done · launch Tue Oct 27";
+  document.getElementById("barfill").style.width=(done/18*100)+"%";
 }
 function renderAfter(){const ul=document.getElementById("after");
   AFTER.forEach((a,i)=>{const li=document.createElement("li");const n=document.createElement("span");n.className="n";n.textContent="·";

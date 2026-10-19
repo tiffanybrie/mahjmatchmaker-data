@@ -12,6 +12,7 @@ B={}  # key -> data uri (bundled)
 def bund(u,fmt,q,w):
     v=uri(im(u),fmt,q,w);h=hashlib.md5(v.encode()).hexdigest()[:10];B[h]=v;return h
 T=lambda v:v is True or v=='True'
+import sys as _sys,os as _os;_sys.path.insert(0,_os.path.join(_os.path.dirname(_os.path.abspath(__file__)),'..','scripts','colors'));import matcolors as _MC  # Oct 19: Tiffany's color tags win
 mats={};racks={};tiles={}
 nfile=0
 for i,m in enumerate(S['mats']):
@@ -21,7 +22,7 @@ for i,m in enumerate(S['mats']):
     out=img.convert('RGBA' if clean else 'RGB');out.thumbnail((640,640))
     out.save(SP+'/'+f,'WEBP',quality=82);nfile+=1
     th=bund(src,'WEBP' if clean else 'JPEG',70,150)
-    mats[m]=dict(n=p['n'],bn=p.get('bn') or p['b'],b=p['b'],u=p.get('url',''),dc=p.get('d',''),pa=T(p.get('p')),nc=T(p.get('nc')),rt=bool(p.get('retired')),c=clean,ml=T(p.get('mult')),f=f,th=th,w=out.width,h=out.height,mf=S['mf'][m],ms=S['ms'][m],hol=S['mt'][m]=='holiday')
+    mats[m]=dict(n=p['n'],bn=p.get('bn') or p['b'],b=p['b'],u=p.get('url',''),dc=p.get('d',''),pa=T(p.get('p')),nc=T(p.get('nc')),rt=bool(p.get('retired')),c=clean,ml=T(p.get('mult')),f=f,th=th,w=out.width,h=out.height,mf=_MC.fym_families(m,S['mf'][m]),mc=(_MC.get(m) or None),ms=S['ms'][m],hol=S['mt'][m]=='holiday')
 for r,p in P.items():
     if p['k']!='rack' or T(p.get('hide')):continue
     clean=T(p.get('clean'));src=p['cut'] if clean else p['photo']
