@@ -25,7 +25,7 @@ She's confident these mats work with these tile sets. They count toward the "eve
 - Girly (Royal Mahjong Society): Coquette, Taylor, Luminaire, Limoncello, Sorbet, Moonlight, Pearlescent
 
 ## Notes for the build
-- Four Winds Social is out for now (affiliate). Bow & Bloom is on the "photo coming soon" list. Check before building those three.
+- Four Winds Social mats are fine to match (Tiffany, Oct 19 2:26am: may affiliate with them again soon). Bow & Bloom still needs a clean photo (logo graphic now).
 - Nature Walk has no album yet.
 - Preppy Soirée is a vault set (OMM-only mat pool rule). These are her own picks, so confirm with her whether non-OMM mats go into vault albums.
 - "Maybe Solara" = only if it looks right on the card.
