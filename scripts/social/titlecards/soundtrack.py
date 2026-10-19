@@ -153,7 +153,7 @@ def main(cues_path, out):
     if style == 'sfx':
         pass  # post version: ring + swipe sounds only; Instagram music goes on top
     else:
-        for k, (a, b) in enumerate(hr): seg(buf, elevator, a, b, fin=0.4 if k == 0 else 1.5, fout=0.25 if k == 0 else 0.6)
+        for k, (a, b) in enumerate(hr): seg(buf, elevator, a, b, fin=0.4 if k == 0 else 1.5, fout=c.get('fout', 0.25 if k == 0 else 0.6))
     if c.get('sting') is not None: sting(buf, c['sting'])
     if c.get('turn'):
         t1 = c['turn']
@@ -161,7 +161,7 @@ def main(cues_path, out):
         gliss(buf, t1 - .5)
     for at, kind in c.get('swipes', []):
         whoosh(buf, at); (nope if kind == 'nope' else chime)(buf, at + .15)
-    end_button(buf, c['end'])
+    if c['end'] < c['total']: end_button(buf, c['end'])
     buf = buf[:int(c['total'] * SR)]
     buf = np.tanh(buf * 1.2) * .8
     import wave
