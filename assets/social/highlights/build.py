@@ -16,12 +16,13 @@ ICONS = {
   <path d="M120 222C70 222 38 188 38 146C38 118 50 98 64 82C66 98 73 108 84 113C82 78 102 44 152 20C142 50 152 70 168 90C186 112 202 128 202 152C202 192 168 222 120 222Z"/>
   <path class="a" d="M120 192C95 175 86 162 86 148C86 135 96 126 107 126C113 126 117 129 120 134C123 129 127 126 133 126C144 126 154 135 154 148C154 162 145 175 120 192Z"/>''',
  'new-tiles': '''
+  <g transform="translate(120 124) scale(.93) translate(-120 -124)" style="stroke-width:12.9">
   <rect x="22" y="72" width="54" height="132" rx="13"/><line x1="22" y1="176" x2="76" y2="176"/>
   <rect x="93" y="52" width="54" height="132" rx="13"/><line x1="93" y1="156" x2="147" y2="156"/>
   <rect x="164" y="72" width="54" height="132" rx="13"/><line x1="164" y1="176" x2="218" y2="176"/>
   <line x1="49" y1="104" x2="49" y2="146"/><line x1="191" y1="104" x2="191" y2="146"/>
   <circle class="a" cx="120" cy="104" r="16"/>
-  <path class="a" d="M210 10L216 28L234 34L216 40L210 58L204 40L186 34L204 28Z"/>''',
+  <path class="a" d="M196 24L201 35L212 40L201 45L196 56L191 45L180 40L191 35Z"/></g>''',
  'albums': '''
   <rect x="44" y="42" width="116" height="146" rx="14" transform="rotate(-10 102 115)"/>
   <rect class="bgfill" x="82" y="58" width="116" height="146" rx="14" transform="rotate(7 140 131)"/>
@@ -31,16 +32,18 @@ ICONS = {
   <rect x="64" y="64" width="112" height="112" rx="6"/>
   <path class="a" d="M120 92C128 92 132 100 132 108C140 108 148 112 148 120C148 128 140 132 132 132C132 140 128 148 120 148C112 148 108 140 108 132C100 132 92 128 92 120C92 112 100 108 108 108C108 100 112 92 120 92Z"/>''',
  'tablescapes': '''
-  <circle cx="120" cy="128" r="52"/>
-  <circle class="a" cx="120" cy="128" r="24"/>
-  <path d="M30 40V82Q30 100 42 100Q54 100 54 82V40M42 40V206"/>
-  <path d="M206 206V40C218 54 222 80 222 108Q222 118 206 120"/>''',
+  <g transform="translate(116 122) scale(.97) translate(-120 -122)" style="stroke-width:12.4">
+  <circle cx="120" cy="124" r="52"/>
+  <circle class="a" cx="120" cy="124" r="24"/>
+  <path d="M30 46V84Q30 102 42 102Q54 102 54 84V46M42 46V198"/>
+  <path d="M206 198V46C218 60 222 84 222 108Q222 118 206 120"/></g>''',
  'codes': '''
+  <g transform="translate(120 120) scale(.92) translate(-120 -120)" style="stroke-width:13">
   <path d="M130 30H196Q210 30 210 44V108Q210 116 204 122L124 202Q114 212 104 202L38 136Q28 126 38 116L118 36Q123 30 130 30Z"/>
   <circle cx="176" cy="64" r="11"/>
   <line class="as" x1="146" y1="98" x2="94" y2="150"/>
   <circle class="a" cx="100" cy="104" r="11"/>
-  <circle class="a" cx="140" cy="144" r="11"/>''',
+  <circle class="a" cx="140" cy="144" r="11"/></g>''',
  'fb-group': '''
   <path d="M168 104H196Q212 104 212 120V164Q212 180 196 180H190V204L166 180H140Q124 180 124 164V158"/>
   <path class="bgfill" d="M44 40H148Q166 40 166 58V122Q166 140 148 140H90L58 168V140H44Q28 140 28 122V58Q28 40 44 40Z"/>
@@ -68,13 +71,13 @@ def font_css():
     return f"@font-face{{font-family:Capra;src:url(data:font/ttf;base64,{b})}}"
 
 def cover_html(key, bg, ink, acc, guide=False):
-    g = ('<div style="position:absolute;left:240px;top:720px;width:600px;height:600px;border-radius:50%;'
+    g = ('<div style="position:absolute;left:240px;top:660px;width:600px;height:600px;border-radius:50%;'
          'border:4px dashed rgba(255,0,0,.8)"></div><div style="position:absolute;left:0;top:420px;width:1080px;'
          'height:1080px;border-radius:50%;border:4px solid rgba(0,160,0,.8)"></div>') if guide else ''
     return f'''<!doctype html><html><head><style>{font_css()}
 html,body{{margin:0;width:1080px;height:1920px;background:{bg};overflow:hidden}}
 svg{{position:absolute;left:250px;top:670px;width:580px;height:580px}}
-svg *{{fill:none;stroke:{ink};stroke-width:12;stroke-linecap:round;stroke-linejoin:round}}
+svg{{fill:none;stroke:{ink};stroke-width:12;stroke-linecap:round;stroke-linejoin:round}}
 svg .a{{fill:{acc};stroke:none}} svg .as{{stroke:{acc}}} svg .bgfill{{fill:{bg}}}
 svg .t{{font-family:Capra;font-size:112px;fill:{ink};stroke:none}}
 </style></head><body><svg viewBox="0 0 240 240">{ICONS[key]}</svg>{g}</body></html>'''
