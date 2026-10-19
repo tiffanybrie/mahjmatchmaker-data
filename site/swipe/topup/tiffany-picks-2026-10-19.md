@@ -27,5 +27,5 @@ She's confident these mats work with these tile sets. They count toward the "eve
 ## Notes for the build
 - Four Winds Social mats are fine to match (Tiffany, Oct 19 2:26am: may affiliate with them again soon). Bow & Bloom still needs a clean photo (logo graphic now).
 - Nature Walk has no album yet.
-- Preppy Soirée is a vault set (OMM-only mat pool rule). These are her own picks, so confirm with her whether non-OMM mats go into vault albums.
+- Vault and retired albums (Preppy Soirée, Dandy, Limoncello, etc.) take any brand's mats now (Tiffany, Oct 19 2:27am). No big swipe books for them; add mats when she spots a good one.
 - "Maybe Solara" = only if it looks right on the card.
