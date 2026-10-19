@@ -93,6 +93,19 @@ SEARCHING = HEAD + f"""<div class="wrap" style="background:#f6e9df;justify-conte
   <div style="display:grid;grid-template-columns:repeat(4,190px);gap:20px;margin-top:70px;opacity:.55">{GRID}</div>
 </div></body></html>"""
 
+LAPTOP_IMG = 'assets/colorcards/papaya-spritz/00-papaya-spritz-mahjong-tiles-profile-a-desktop.jpg'
+RESEARCH = HEAD + f"""<div class="wrap" style="background:{MM[0]};color:{MM[1]};justify-content:flex-start;padding-top:230px">
+  <div style="font-family:Lo;font-style:italic;font-size:60px;opacity:.85">(searches database)</div>
+  <div class="line" style="font-size:104px;margin-top:34px">&ldquo;You deserve someone who brings out your <i>best colors.</i>&rdquo;</div>
+  <div style="display:flex;align-items:center;gap:20px;margin-top:40px"><div style="width:96px;height:96px;border-radius:50%;{AV['The Matchmaker']};box-shadow:0 0 0 5px {MM[1]}"></div><div class="who" style="margin-top:0">The Matchmaker</div></div>
+  <div style="position:relative;margin-top:90px;width:960px">
+    <div style="width:880px;margin:0 auto;background:#f4a7bd;border-radius:34px 34px 0 0;padding:22px 22px 26px;box-shadow:0 20px 50px rgba(0,0,0,.3)">
+      <div style="position:relative;width:836px;height:470px;border-radius:14px;overflow:hidden;background:#fff url({u(LAPTOP_IMG)}) center/cover"></div></div>
+    <div style="width:960px;height:44px;background:#f9c6d4;border-radius:0 0 40px 40px;position:relative;box-shadow:0 18px 40px rgba(0,0,0,.25)"><div style="position:absolute;left:50%;top:0;transform:translateX(-50%);width:170px;height:16px;background:#ec93ad;border-radius:0 0 14px 14px"></div></div>
+  </div>
+  <div style="position:absolute;bottom:90px;left:0;right:0;text-align:center;font:600 26px Bit;letter-spacing:.2em;text-transform:uppercase;opacity:.55">mahj matchmaker</div>
+</div></body></html>"""
+
 RACKS = [('assets/racks/card/peace-love-mahjong-oak.png', 'Peace Love Mahjong Oak'),
          ('assets/racks/card/peace-love-mahjong-chartreuse.png', 'Peace Love Mahjong Chartreuse'),
          ('assets/colorcards/papaya-spritz/racks/bird-and-bamboo-lavender.png', 'Bird &amp; Bamboo Lavender')]
@@ -238,11 +251,10 @@ SHOTS = [
     (EVID, 2.8),
     (card(MM, '<i>Wow.</i>', 220, clip=True), 1.4),
     (card(MM, 'It&rsquo;s not you&hellip;', 110, pre='(whispering)', clip=True), 1.9),
-    (card(MM, '&hellip;it&rsquo;s your <i>mat.</i>', 200, pre='(whispering)', clip=True), 2.4),
+    (card(MM, '&hellip;it&rsquo;s your <i>mat.</i>', 110, pre='(whispering)', clip=True), 2.4),
     (card(PS, 'I feel like I have a lot <i>to offer.</i>', 130), 2.4),
     (HEAD + f"""<div class="wrap" style="background:url({u('assets/colorcards/papaya-spritz/00-papaya-spritz-mahjong-tiles-profile-c-story.jpg')}) center/cover"></div></body></html>""", 3.0),
-    (card(MM, 'You deserve someone who brings out your <i>best colors.</i>', 128, clip=True), 3.0),
-    (SEARCHING, 2.0),
+    (RESEARCH, 3.6),
     'SWIPE',
     (card(PS, 'Hook me <i>up.</i>', 190), 2.2),
     (HEAD + f"""<div class="wrap" style="background:{END[0]};color:{END[1]}">
