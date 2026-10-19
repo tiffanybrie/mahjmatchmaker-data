@@ -18,7 +18,8 @@ Tiffany, Oct 19: "We need to establish the protocol for a new album and make sur
 
 ### 3. Auto-generated starter content (Claude, right after the color analysis)
 Everything that only needs the colors gets drafted straight away:
-- Color card, color wheel, and the "her best features" favorite-tiles graphic.
+- Color card and color wheel.
+- **Favorite tiles graphic ("Her best features").** During the close-up photo review Claude crops the standout tiles (dragons, jokers, flowers, birds, any signature art) into assets/tiles/faces/<set>/ and proposes 4 favorites. Tiffany picks or swaps them (Papaya: dancing dragons, crane, Ginger Lola, parasol dots). Built with scripts/colorwheel/favorites.py. It goes in the introduction carousel and gets reused on Pinterest and stories.
 - Dating profile (story) + introducing carousel, with **3 placeholder matches** picked from the color analysis and clearly marked as placeholders.
 - Countdown story frame, if the launch date is known.
 Placeholders get swapped for her real top matches after step 6.
@@ -63,8 +64,8 @@ Placeholders get swapped for her real top matches after step 6.
 - When new mats come out later, check them against this set's color analysis and suggest additions.
 
 ## Who does what (short version)
-- **Claude:** images, color analysis, starter content, pre-sorted swipe book, rack matches, checks, website/FYM entries, and all social drafts.
-- **Tiffany:** approve the color read, swipe + order the album, approve racks, say yes in Ready to Ship, post the music reels and link-sticker stories, and say yes to scheduling.
+- **Claude:** images, color analysis, favorite-tile crops, starter content, pre-sorted swipe book, rack matches, checks, website/FYM entries, and all social drafts.
+- **Tiffany:** approve the color read and pick the favorite tiles, swipe + order the album, approve racks, say yes in Ready to Ship, post the music reels and link-sticker stories, and say yes to scheduling.
 
 ## Future idea (Tiffany)
 - Buy launch tiles early when cash allows (resell after) so colors can be checked in hand. OMM photos can run bright.
