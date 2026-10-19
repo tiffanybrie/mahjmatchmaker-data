@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Shrikhand;src:url(file:///home/claude/mahjmatchmaker-data/assets/fonts/shrikhand-latin-400-normal.woff2)}
+@font-face{font-family:Bitter;font-weight:700;src:url(file:///home/claude/mahjmatchmaker-data/assets/fonts/bitter-latin-700-normal.woff2)}
+@font-face{font-family:Playfair;font-style:italic;src:url(file:///home/claude/mahjmatchmaker-data/assets/fonts/playfair-display-latin-400-italic.woff2)}
+*{box-sizing:border-box;margin:0}
+html,body{width:1080px;height:1920px;overflow:hidden}
+body{background:linear-gradient(170deg,#fff7f4,#fde3ec);font-family:Bitter,Georgia,serif;color:#064587;position:relative}
+.bgdots{position:absolute;inset:0;background-image:radial-gradient(#f6c9d6 2.2px,transparent 2.6px);background-size:46px 46px;opacity:.55}
+#w{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;padding-top:300px}
+.top{font:700 46px Bitter;letter-spacing:.2em;color:#064587}
+.top b{color:#d6608c}
+.pill{margin-top:30px;background:#d6608c;color:#fff;font:700 58px Bitter;letter-spacing:.14em;padding:16px 56px;border-radius:99px}
+#tile{margin-top:60px;width:520px;height:520px;border-radius:50%;border:16px solid #fff;background-size:cover;background-position:center;box-shadow:0 24px 60px rgba(6,40,90,.3)}
+.nm{font:150px/1 Shrikhand;color:#064587;text-shadow:0 6px 0 #fff;margin-top:10px;text-align:center}
+.dl{font:italic 84px Playfair;color:#d6608c;margin-top:50px}
+.foot{position:absolute;bottom:250px;left:0;right:0;text-align:center;font:700 40px/1.4 Bitter;color:#064587}
+.foot span{color:#d6608c}
+</style></head><body><div class="bgdots"></div>
+<div id="w">
+ <div class="top" id="a">MAHJ MATCHMAKER <b>2.0</b></div>
+ <div class="pill" id="b">SEASON 2 · EP __EP__</div>
+ <div id="tile" style="background-image:url(__TILE__)"></div>
+ <div class="dl" id="d">The dating life of</div>
+ <div class="nm" id="c">__NAME__</div>
+</div>
+<div class="foot" id="f">40+ albums in the vault <span>♥</span> we&rsquo;re revisiting a few<br>of our favorite singles this week</div>
+<script>
+const cl=x=>x<0?0:x>1?1:x,ease=x=>1-Math.pow(1-cl(x),3),back=x=>{x=cl(x);const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const $=i=>document.getElementById(i);
+const fade=(e,t0,t)=>{const p=ease((t-t0)/.35);e.style.opacity=t<t0?0:p;e.style.transform=`translateY(${(1-p)*30}px)`};
+const pop=(e,t0,t)=>{e.style.opacity=t<t0?0:1;e.style.transform=`scale(${.5+.5*back((t-t0)/.4)})`};
+window.render=t=>{fade($('a'),0,t);pop($('b'),.25,t);pop($('tile'),.45,t);$('tile').style.transform+=` rotate(${Math.sin(t*3)*3}deg)`;fade($('d'),.75,t);pop($('c'),1.0,t);fade($('f'),1.3,t);
+ const o=t>2.8?1-ease((t-2.8)/.2):1;document.body.style.opacity=o};
+render(0);
+</script></body></html>
