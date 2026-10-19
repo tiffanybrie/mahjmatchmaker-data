@@ -1,0 +1,26 @@
+# 88 Color system notes: chips, Pantone vs hex, color wheel (Oct 19)
+Tiffany's notes, Oct 19. Ideas to build on, not rules yet.
+
+## Color chips need an upgrade
+- Today's chips are plain squares. They read "boring" next to the rest of the brand.
+- Direction: designer color chips. Paint-swatch or Pantone-chip style (color block on top, white label strip below with the name and hex), laid out like a designer's white desk. Her vibe: white office, color chips, chambray shirt.
+- Keep using our color names (doc 42), plus the brand's own color word when it differs.
+
+## Pantone vs hex
+- OMM designs sets from Pantones, but we don't know which ones, and matching a Pantone from a photo isn't reliable. So: **hex codes**, measured from photos, are the safe public detail. Never claim a Pantone number.
+- Optional later: a "nearest named color" line (e.g. "cool lavender"), never a Pantone code.
+
+## Measured color = the engine
+- Hue / saturation / lightness measured from photos (Claude can do this for any tile set or mat) backs up Tiffany's eye:
+  - "periwinkle-leaning lavender, 248°" instead of second-guessing.
+- Uses:
+  1. Color cards (doc 86, step 3).
+  2. Swipe-book suggestions.
+  3. The Find Your Match color filter (no stray blue mat in the red filter).
+  4. Mat gallery tags.
+- The real tiles in hand beat brand photos when we have them.
+
+## Color wheel
+- A rough wheel of all 45 tile sets exists: assets/social/tile-sets-color-wheel-draft.jpg.
+- To polish: use the color card back colors instead of raw photos, de-crowd the warm cluster, and separate lightness.
+- Ideas: a "shop by color" wheel on the site, a Pinterest pin, spotting gaps (few true purples/yellows).
