@@ -163,8 +163,7 @@ s6 = page(NS, f"""
   <div class="ph" style="width:300px;height:300px;border-radius:50%;background-image:url({url(MATS[P['first_dates'][0]])});box-shadow:0 0 0 8px #fff,0 10px 26px rgba(6,40,90,.18)"></div></div>
  <div class="cap" style="font-size:92px;margin-top:64px;line-height:1">See all of<br><span style="color:var(--acc)">her matches</span></div><div class="hand" style="font-size:46px;margin-top:14px">{P['matches']} and counting</div>
  <div class="pill" style="margin-top:28px;background:var(--pink)">link in bio &rarr;</div>
- <div style="margin-top:40px;background:#fff;border-radius:22px;padding:22px 34px;box-shadow:0 6px 18px rgba(6,40,90,.1)"><div style="font:700 32px Bit">Code <span style="color:var(--pink)">MAHJMATCH</span> at {e(P['brand'])}</div>
-  <div style="font:400 20px Bit;color:#5a6b85;margin-top:4px">(I may earn a commission)</div></div>
+ <div style="margin-top:40px;background:#fff;border-radius:22px;padding:22px 34px;box-shadow:0 6px 18px rgba(6,40,90,.1)"><div style="font:700 32px Bit">Code <span style="color:var(--pink)">MAHJMATCH</span> at {e(P['brand'])}</div></div>
  <img src="{LOGO}" style="width:560px;margin-top:56px">
  <div style="font:600 22px Bit;margin-top:14px;letter-spacing:.06em">COMING 10.27 · FIND YOUR MATCH</div>
 </div>""")
