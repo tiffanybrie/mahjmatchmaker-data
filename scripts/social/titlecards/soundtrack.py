@@ -101,13 +101,21 @@ def end_button(buf, at):
     for k, n in enumerate((72, 76, 79, 84)):
         put(buf, epiano(midi(n), 1.2, .14), at + k * .11)
 
+def seg(buf, fn, a, b, fin=0.0, fout=0.6):
+    tmp = np.zeros_like(buf); fn(tmp, a, b + 2)
+    i, j = int(a * SR), min(int(b * SR), len(buf))
+    e = np.zeros(len(buf)); e[i:j] = 1
+    if fin: k = int(fin * SR); e[i:i + k] = np.linspace(0, 1, k)
+    k = int(fout * SR); e[j - k:j] *= np.linspace(1, 0, k)
+    buf += tmp * e
+
 def main(cues_path, out):
     c = json.load(open(cues_path)); buf = np.zeros(int(c['total'] * SR) + SR)
     ring(buf, *c['ring'])
     hr = c['hold'] if isinstance(c['hold'][0], list) else [c['hold']]
-    for a, b in hr: hold(buf, a, b)
+    for k, (a, b) in enumerate(hr): seg(buf, hold, a, b, fin=0.0 if k == 0 else 1.2, fout=0.5)
     sting(buf, c['sting'])
-    swipe_music(buf, *c['swipe'])
+    seg(buf, swipe_music, c['swipe'][0], c['swipe'][1], fin=0.15, fout=0.4)
     for at, kind in c.get('swipes', []):
         whoosh(buf, at); (nope if kind == 'nope' else chime)(buf, at + .15)
     end_button(buf, c['end'])
