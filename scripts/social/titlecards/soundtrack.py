@@ -109,19 +109,33 @@ def vibe(f, d, v):
     t = t_(d); x = np.sin(2 * np.pi * f * t) * (1 + .25 * np.sin(2 * np.pi * 6 * t))
     return v * x * np.exp(-1.8 * t) * env(len(t), .005, .3)
 
-def elevator(buf, a, b):
+def elevator(buf, a, b, tr=0, bpm=80, beat_on=False, lv=1.0):
     """Quiet, slow elevator / hold music (Oct 19 v2: Tiffany found v1 busy and loud)."""
-    bpm = 80; beat = 60 / bpm; bar = 4 * beat
+    bpm = bpm; beat = 60 / bpm; bar = 4 * beat
     prog = [(41, [57, 60, 64, 67]), (40, [55, 59, 62, 67]), (38, [53, 57, 60, 64]), (43, [53, 57, 59, 64])]
     mel = [(0, 76), (1.5, 74), (2, 72), None, (0, 74), (2, 71), None, (0, 72), (1, 69), (2, 67), None, None]
     t0 = a; k = 0
     while t0 < b:
         root, ch = prog[k % 4]
-        for n in ch: put(buf, rhodes(midi(n), bar * 1.05, .028), t0)
-        put(buf, rhodes(midi(root), bar, .06), t0); put(buf, rhodes(midi(root + 7), beat * 2, .035), t0 + 2 * beat)
+        for n in ch: put(buf, rhodes(midi(n + tr), bar * 1.05, .028 * lv), t0)
+        put(buf, rhodes(midi(root + tr), bar, .06 * lv), t0); put(buf, rhodes(midi(root + 7 + tr), beat * 2, .035 * lv), t0 + 2 * beat)
         m = mel[k % len(mel)]
-        if m: put(buf, vibe(midi(m[1]), beat * 2.5, .05), t0 + m[0] * beat)
+        if m: put(buf, vibe(midi(m[1] + tr), beat * 2.5, .05 * lv), t0 + m[0] * beat)
+        if beat_on:
+            for q in range(4):
+                put(buf, kick(.16), t0 + q * beat)
+                put(buf, brush(beat / 2, .02), t0 + q * beat + beat / 2)
+            for q in (.5, 1.5, 2.5, 3.5):
+                for n in ch[1:]: put(buf, vibe(midi(n + tr + 12), beat * .4, .016), t0 + q * beat)
         t0 += bar; k += 1
+
+def bright(buf, a, b):
+    """The turn: things start looking up. Same elevator feel, up a 4th, faster, light beat + sparkle."""
+    elevator(buf, a, b, tr=5, bpm=100, beat_on=True, lv=1.15)
+
+def gliss(buf, at):
+    for k, n in enumerate(range(72, 97, 2)):
+        put(buf, vibe(midi(n), .9, .035), at + k * .045)
 
 def seg(buf, fn, a, b, fin=0.0, fout=0.6):
     tmp = np.zeros_like(buf); fn(tmp, a, b + 2)
@@ -141,6 +155,10 @@ def main(cues_path, out):
     else:
         for k, (a, b) in enumerate(hr): seg(buf, elevator, a, b, fin=0.4 if k == 0 else 1.5, fout=0.25 if k == 0 else 0.6)
     if c.get('sting') is not None: sting(buf, c['sting'])
+    if c.get('turn'):
+        t1 = c['turn']
+        if style != 'sfx': seg(buf, bright, t1, c['bright_end'], fin=0.3, fout=0.8)
+        gliss(buf, t1 - .5)
     for at, kind in c.get('swipes', []):
         whoosh(buf, at); (nope if kind == 'nope' else chime)(buf, at + .15)
     end_button(buf, c['end'])
