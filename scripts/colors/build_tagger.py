@@ -11,6 +11,8 @@ src = open(sys.argv[3]).read(); i = src.find('window.__EMB='); j = src.find('</s
 EMB = src[i:j].rstrip().rstrip(';')  # window.__EMB={...}
 G = json.load(open(sys.argv[5])) if len(sys.argv) > 5 else {}
 R0 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')
+_PP = os.path.join(R0, 'config/mat-palettes.json')
+PAL = json.load(open(_PP))['mats'] if os.path.exists(_PP) else {}
 rows = []
 for name, k in man.items():
     v = D[k]
@@ -19,7 +21,8 @@ for name, k in man.items():
     old = (v.get('mf') or ['neutral'])[0]
     score = (1.0 if old != p else 0) + amb * 0.8 + (0.5 if p == 'multi' else 0) + (0.3 if p in ('brown', 'orange', 'yellow', 'gold') else 0)
     rows.append({'id': name, 'k': k, 'n': v['n'], 'b': v['bn'], 'p': p, 's': s, 't': tone, 'h': 1 if v.get('hol') else 0,
-                 'r': 1 if v.get('rt') else 0, 'sc': round(score, 3)})
+                 'r': 1 if v.get('rt') else 0, 'sc': round(score, 3),
+                 'pl': [h for h, w in (PAL.get(k) or {}).get('pal', [])]})
 rows.sort(key=lambda r: -r['sc'])
 for i2, r in enumerate(rows): r['o'] = i2
 data = json.dumps(rows, separators=(',', ':'), ensure_ascii=False).replace('</', '<\\/')
@@ -35,7 +38,8 @@ for k, r in TT.items():
         if os.path.exists(pth):
             t = _I.open(pth).convert('RGB'); t.thumbnail((150, 150)); b = io.BytesIO(); t.save(b, 'WEBP', quality=72)
             uri = 'data:image/webp;base64,' + base64.b64encode(b.getvalue()).decode()
-    trows.append({'id': k, 'n': r['name'], 'b': r.get('brand') or '', 't': r.get('tone'), 'd': r.get('dominant'), 'ts': r.get('tone_src', 'guess'), 'i': uri})
+    trows.append({'id': k, 'n': r['name'], 'b': r.get('brand') or '', 't': r.get('tone'), 'd': r.get('dominant'), 'ts': r.get('tone_src', 'guess'), 'i': uri,
+                  'bh': r.get('back_hex') or '', 'lh': r.get('layer_hex') or []})
 trows.sort(key=lambda r: (r['ts'] != 'tiffany', r['b'] or 'zz', r['n'].lower()))
 tdata = json.dumps(trows, separators=(',', ':'), ensure_ascii=False).replace('</', '<\\/')
 ttones = json.dumps([[t, F.TILE_TONE_LABEL[t]] for t in F.TILE_TONES])
@@ -66,6 +70,8 @@ select,.tg{font:600 14px var(--body);color:var(--ink);background:var(--card);bor
 .filt[hidden]{display:none}
 .msg{background:var(--pinksoft);border-radius:12px;padding:10px 14px;margin:10px 0;font-weight:600}
 .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:14px}
+.dots{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.dot{width:26px;height:26px;border-radius:50%;border:2px solid var(--card);box-shadow:0 0 0 1px var(--line);cursor:pointer;padding:0}.dot:focus-visible{outline:2px solid var(--pink);outline-offset:2px}
+.find{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}.find input[type=color]{width:52px;height:40px;border:1px solid var(--line);border-radius:10px;background:var(--card);padding:2px}.tgt{font:700 15px var(--body)}.fgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:14px}.fc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px;min-width:0}.fc img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;max-width:100%}.fc .n{font:600 13px var(--body);margin-top:4px}.fc .b{font-size:12px;color:var(--soft)}.fc .de{font-size:12px;color:var(--pink);font-variant-numeric:tabular-nums}.tsw{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.tsw button{display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:4px 10px 4px 4px;font:600 12.5px var(--body);cursor:pointer}.tsw i{width:20px;height:20px;border-radius:50%;display:inline-block}
 @media (min-width:820px){.grid{grid-template-columns:1fr 1fr}}
 .sec h2{font-family:var(--disp);font-weight:400;font-size:24px;margin:22px 0 0;color:var(--ink)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;display:grid;grid-template-columns:120px 1fr;grid-template-areas:'img hd' 'img body';gap:6px 12px;min-width:0;align-items:start}.card img{grid-area:img}.hd{grid-area:hd;min-width:0}.body{grid-area:body;min-width:0}
@@ -94,7 +100,7 @@ button:focus-visible,select:focus-visible{outline:3px solid var(--pink);outline-
 <p class="lede">Pick each mat's main color, the one you'd say at first glance, its tone (clean and bright, pastel, earthy, or blend: a real mix of clean and earthy colors, like olive with bright pink), then tap any accent colors (up to 3). The computer's guess is filled in, and the mats most likely wrong come first. Every tap saves right away and overrides the computer's colors everywhere: swipe books, Find Your Match and the gallery.</p>
 <div class="bar">
 <span class="count" id="count"></span>
-<div class="seg" role="group" aria-label="View"><button type="button" id="vWrong" aria-pressed="true">Most likely wrong</button><button type="button" id="vColor" aria-pressed="false">By main color</button><button type="button" id="vTile" aria-pressed="false">Tile tones</button></div>
+<div class="seg" role="group" aria-label="View"><button type="button" id="vWrong" aria-pressed="true">Most likely wrong</button><button type="button" id="vColor" aria-pressed="false">By main color</button><button type="button" id="vTile" aria-pressed="false">Tile tones</button><button type="button" id="vFind" aria-pressed="false">Color finder</button></div>
 <select id="brand" aria-label="Brand"><option value="">All brands</option></select>
 <button type="button" class="tg" id="unchk" aria-pressed="false">Unchecked only</button>
 </div>
@@ -131,7 +137,18 @@ function tcard(r){var c=tcur(r);return '<div class="card'+(c.done?' done':'')+'"
 '<div class="lab">Tone</div><div class="chips">'+TTONES.map(function(x){return '<button type="button" class="chip ton tt" data-t="'+x[0]+'" aria-pressed="'+(c.t===x[0])+'">'+x[1]+'</button>'}).join('')+'</div>'+
 '<div class="lab">Dominant color</div><div class="chips">'+CODES.filter(function(x){return x[0]!=='multi'}).map(function(x){return '<button type="button" class="chip pri td" data-d="'+x[0]+'" aria-pressed="'+(c.d===x[0])+'"><i style="background:'+SW[x[0]]+'"></i>'+x[1]+'</button>'}).join('')+'</div>'+
 (c.done?'':'<div class="row2"><button type="button" class="tg tok">Looks right</button></div>')+'</div></div>'}
-function render(){if(view==='tile'){var nT=Object.keys(TS).length;document.getElementById('count').innerHTML='<b>'+nT+'</b> of '+TT.length+' tile sets checked';list.innerHTML='<p class="lede">Clean = tints (brights and pastels). Earthy = shades with brown in them (olive, cognac, Bordeaux). Transitional = in between, like berries. Clean tiles get clean, pastel and blend mats; earthy tiles get earthy and blend mats.</p><div class="grid">'+TT.filter(function(r){return !brand||r.b===brand}).map(tcard).join('')+'</div>';return}
+
+function h2lab(h){var r=parseInt(h.substr(1,2),16)/255,g=parseInt(h.substr(3,2),16)/255,b=parseInt(h.substr(5,2),16)/255;function f(c){return c>0.04045?Math.pow((c+0.055)/1.055,2.4):c/12.92}r=f(r);g=f(g);b=f(b);var x=(r*0.4124+g*0.3576+b*0.1805)/0.95047,y=r*0.2126+g*0.7152+b*0.0722,z=(r*0.0193+g*0.1192+b*0.9505)/1.08883;function q(t){return t>0.008856?Math.cbrt(t):7.787*t+16/116}x=q(x);y=q(y);z=q(z);return[116*y-16,500*(x-y),200*(y-z)]}
+function dE(a,b){var L1=a[0],a1=a[1],b1=a[2],L2=b[0],a2=b[1],b2=b[2],rad=Math.PI/180,C1=Math.hypot(a1,b1),C2=Math.hypot(a2,b2),Cb=(C1+C2)/2,G=0.5*(1-Math.sqrt(Math.pow(Cb,7)/(Math.pow(Cb,7)+Math.pow(25,7)))),a1p=(1+G)*a1,a2p=(1+G)*a2,C1p=Math.hypot(a1p,b1),C2p=Math.hypot(a2p,b2),h1p=(Math.atan2(b1,a1p)/rad+360)%360,h2p=(Math.atan2(b2,a2p)/rad+360)%360,dL=L2-L1,dC=C2p-C1p,dh=0;if(C1p*C2p){dh=h2p-h1p;if(dh>180)dh-=360;else if(dh<-180)dh+=360}var dH=2*Math.sqrt(C1p*C2p)*Math.sin(dh*rad/2),Lb=(L1+L2)/2,Cbp=(C1p+C2p)/2,hb=h1p+h2p;if(C1p*C2p){if(Math.abs(h1p-h2p)>180)hb+=(hb<360?360:-360);hb/=2}var T=1-0.17*Math.cos((hb-30)*rad)+0.24*Math.cos(2*hb*rad)+0.32*Math.cos((3*hb+6)*rad)-0.2*Math.cos((4*hb-63)*rad),SL=1+0.015*Math.pow(Lb-50,2)/Math.sqrt(20+Math.pow(Lb-50,2)),SC=1+0.045*Cbp,SH=1+0.015*Cbp*T,dt=30*Math.exp(-Math.pow((hb-275)/25,2)),RC=2*Math.sqrt(Math.pow(Cbp,7)/(Math.pow(Cbp,7)+Math.pow(25,7))),RT=-Math.sin(2*dt*rad)*RC;return Math.sqrt(Math.pow(dL/SL,2)+Math.pow(dC/SC,2)+Math.pow(dH/SH,2)+RT*(dC/SC)*(dH/SH))}
+var target='#7a7a2e',LABC={};function labOf(h){return LABC[h]||(LABC[h]=h2lab(h))}
+function renderFind(){var tl=labOf(target);var L=R.filter(function(r){return (!brand||r.b===brand)&&r.pl&&r.pl.length}).map(function(r){var m=99;r.pl.forEach(function(h){var d=dE(tl,labOf(h));if(d<m)m=d});return [m,r]}).sort(function(a,b){return a[0]-b[0]}).slice(0,shown);
+document.getElementById('count').innerHTML='Nearest to <b>'+target+'</b>';
+var ts=TT.filter(function(t){return t.bh}).slice(0,400).map(function(t){var s='<button type="button" class="tsh" data-h="'+t.bh+'"><i style="background:'+t.bh+'"></i>'+esc(t.n)+' back</button>';(t.lh||[]).forEach(function(h){s+='<button type="button" class="tsh" data-h="'+h+'"><i style="background:'+h+'"></i>'+esc(t.n)+' layer</button>'});return s}).join('');
+list.innerHTML='<p class="lede">Pick an exact shade and see the mats that really have it. A yellower olive and a deeper olive are different shades, so this matches the measured color, not the color name. Tap any dot on a mat to search that shade, or pick a tile set\'s back or layer below.</p><div class="find"><input type="color" id="pick" value="'+target+'" aria-label="Pick a shade"><span class="tgt">Showing mats with a color close to this shade</span></div><details><summary>Tile set shades</summary><div class="tsw">'+ts+'</div></details><div class="fgrid">'+L.map(function(x){var r=x[1],img=(window.__EMB&&window.__EMB[r.id])||'';return '<div class="fc"><img src="'+img+'" alt="'+esc(r.n)+'" loading="lazy"><div class="n">'+esc(r.n)+'</div><div class="b">'+esc(r.b)+'</div><div class="de">'+(x[0]<10?'Same shade':(x[0]<18?'Close':'Related'))+' &middot; '+x[0].toFixed(0)+'</div><div class="dots">'+r.pl.map(function(h){return '<button type="button" class="dot" data-h="'+h+'" style="background:'+h+'" aria-label="Search '+h+'"></button>'}).join('')+'</div></div>'}).join('')+'</div><button type="button" class="more" id="more">Show more</button>';
+document.getElementById('pick').oninput=function(e){target=e.target.value;renderFind()};var m=document.getElementById('more');if(m)m.onclick=function(){shown+=60;renderFind()};
+list.querySelectorAll('.dot,.tsh').forEach(function(b){b.onclick=function(){target=b.dataset.h;window.scrollTo(0,0);renderFind()}})}
+
+function render(){if(view==='find'){renderFind();return}if(view==='tile'){var nT=Object.keys(TS).length;document.getElementById('count').innerHTML='<b>'+nT+'</b> of '+TT.length+' tile sets checked';list.innerHTML='<p class="lede">Clean = tints (brights and pastels). Earthy = shades with brown in them (olive, cognac, Bordeaux). Transitional = in between, like berries. Clean tiles get clean, pastel and blend mats; earthy tiles get earthy and blend mats.</p><div class="grid">'+TT.filter(function(r){return !brand||r.b===brand}).map(tcard).join('')+'</div>';return}
 var n=Object.keys(S).length;document.getElementById('count').innerHTML='<b>'+n+'</b> of '+R.length+' checked';
 var h='';
 if(view==='wrong'){var L=R.filter(pass),sl=L.slice(0,shown);h='<div class="grid">'+sl.map(card).join('')+'</div>'+(L.length>shown?'<button type="button" class="more" id="more">Show more ('+(L.length-shown)+' left)</button>':'')}
@@ -158,8 +175,8 @@ else if(b.classList.contains('hol'))st.holiday=!st.holiday;
 else if(b.classList.contains('skp'))st.skip=!st.skip;
 else if(!b.classList.contains('ok'))return;
 save(id,st)});
-function setView(v){view=v;shown=60;document.getElementById('vWrong').setAttribute('aria-pressed',v==='wrong');document.getElementById('vColor').setAttribute('aria-pressed',v==='color');document.getElementById('vTile').setAttribute('aria-pressed',v==='tile');document.getElementById('unchk').hidden=v==='tile';secf.hidden=v!=='color';tonef.hidden=v!=='color';render()}
-document.getElementById('vWrong').onclick=function(){setView('wrong')};document.getElementById('vTile').onclick=function(){setView('tile')};document.getElementById('vColor').onclick=function(){setView('color')};
+function setView(v){view=v;shown=60;document.getElementById('vWrong').setAttribute('aria-pressed',v==='wrong');document.getElementById('vColor').setAttribute('aria-pressed',v==='color');document.getElementById('vTile').setAttribute('aria-pressed',v==='tile');document.getElementById('vFind').setAttribute('aria-pressed',v==='find');document.getElementById('unchk').hidden=(v==='tile'||v==='find');secf.hidden=v!=='color';tonef.hidden=v!=='color';render()}
+document.getElementById('vWrong').onclick=function(){setView('wrong')};document.getElementById('vTile').onclick=function(){setView('tile')};document.getElementById('vColor').onclick=function(){setView('color')};document.getElementById('vFind').onclick=function(){setView('find')};
 document.getElementById('brand').onchange=function(e){brand=e.target.value;shown=60;render()};
 document.getElementById('unchk').onclick=function(e){unchk=!unchk;e.currentTarget.setAttribute('aria-pressed',unchk);shown=60;render()};
 secf.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;secF=b.dataset.s;secf.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});shown=60;render()});
