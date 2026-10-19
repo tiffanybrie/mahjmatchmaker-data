@@ -27,9 +27,9 @@ Posted in this order (Instagram puts newest on the left):
 Row reads: album cover (reel) | It's a match | her profile.
 
 ## Highlight covers (Oct 19)
-- Tiffany picked style A (cream background). Good enough, not loved. Parked idea for a future v2: softer pastel color-theory palette.
+- Tiffany picked style A (cream background) for now. Good enough, not loved. She does NOT want neutral highlights: she wants them colorful and prettier than plain navy + pink, in a pastel color-theory palette. Highlights can't hold a set ROY G BIV order (Instagram reorders them by most recent update), but each cover can still be its own pretty color. v2 to build.
 
 ## Grid catch-up with Meta One (Oct 19 evening)
 - Tiffany has Meta One Essential (free month from Oct 19; decide around day 25 before it renews). It gives Instagram "Post only to profile" (grid without followers' feeds) and "Share stories only to highlights."
 - Catch-up rows: Tiffany posts them in the IG app with **Post only to profile** ON (Planoly can't set this). Instagram also lets her **reorder the grid** (Tiffany saw it Oct 19), so catch-up rows can be dragged into place after posting. No pinning workaround needed; pins are optional.
-- Per-set highlights (Tiffany OK'd the idea, OMM-style): fixed highlights (Find Your Match, Codes, FB group, About) use cream style-A covers. Each tile set gets its own highlight with a cover in its colors, filled via "stories only to highlights." Claude builds a kit per set (cover + about 4 frames).
+- Per-set highlights (Tiffany OK'd the idea, OMM-style): fixed highlights (Find Your Match, Codes, FB group, About) use style-A covers until the colorful pastel v2 is ready. Each tile set gets its own highlight with a cover in its colors, filled via "stories only to highlights." Claude builds a kit per set (cover + about 4 frames).
