@@ -48,11 +48,11 @@ def main(key, pins, title, sub):
         d.ellipse([x+14,cyc+14,x+54,cyc+54],fill=(255,255,255)); d.text((x+34,cyc+34),str(i+1),font=mono,fill=(6,42,85),anchor='mm')
         d.text((x+18,cyc+188),p['name'],font=chipname,fill=(6,42,85),anchor='ls')
         d.text((x+18,cyc+222),f"#{hexc.upper()} · {round(h*360)}°",font=chipsm,fill=(90,107,133),anchor='ls')
-    d.text((W/2,H-88),'Measured from the tile photos. Angle = hue · distance from center = how vivid.',font=mono,fill=(90,107,133),anchor='mm')
+    d.text((W/2,H-88),'Sampled from Oh My Mahjong’s tile back photo. Angle = hue · distance from center = how vivid.',font=mono,fill=(90,107,133),anchor='mm')
     logo=Image.open(R+'assets/brand/mahjmatchmaker-wordmark-notag.png').convert('RGBA'); logo.thumbnail((260,80)); bg.paste(logo,(W//2-logo.width//2,H-62),logo)
     out=R+f'assets/colorwheels/{key}-color-wheel.jpg'; bg.save(out,quality=93); print(out)
 if __name__=='__main__':
-    pins=[{'name':'Papaya backs','hex':'#df772f'},
-          {'name':'Lavender layer','hex':'#9c94c7'},
-          {'name':'Light lime layer','hex':'#b5ca82'}]
+    pins=[{'name':'Papaya backs','hex':'#de7e30'},
+          {'name':'Lavender layer','hex':'#a8a3e1'},
+          {'name':'Light lime layer','hex':'#c8d7a5'}]
     main('papaya-spritz',pins,'Papaya Spritz','where her colors sit on the color wheel')

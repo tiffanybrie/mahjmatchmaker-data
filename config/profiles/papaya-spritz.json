@@ -28,17 +28,17 @@
   "backs": [
    [
     "Papaya",
-    "#df772f",
+    "#de7e30",
     "solid back"
    ],
    [
     "Lavender",
-    "#a99bd0",
+    "#a8a3e1",
     "layer"
    ],
    [
     "Light lime",
-    "#c4dc8c",
+    "#c8d7a5",
     "layer"
    ]
   ],
@@ -60,7 +60,8 @@
     "#9f8fd6"
    ]
   ],
-  "tone": "Clean brights. A clean orange, no dusty undertone."
+  "tone": "Clean brights. A clean orange, no dusty undertone.",
+  "source": "OMM back + side product photo (assets/tiles/backs/papaya-spritz-back-and-side-omm.jpg), median of 3 sample spots per layer, Oct 19"
  },
  "her_type": [
   {
