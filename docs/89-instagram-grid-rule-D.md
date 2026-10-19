@@ -17,3 +17,11 @@ Tiffany picked option D (mockup: assets/social/feed-mockup-D-row-per-set.png).
 1. Best match: "It's a match!" Papaya + Heiress (graphic or mood board underneath). Planoly.
 2. Profile: the dating-app profile card (the 7-slide profile carousel underneath). Planoly.
 3. Album cover: the hotline reel, posted by Tiffany Wed Oct 21 at 10am CT launch, with the Papaya album cover as its cover.
+
+## Update Oct 19 evening: what each tile in the row IS (Tiffany)
+One "It's a match" graphic was too weak a first hello, so every set's row tells a 3-part story: **meet her → her matches → the skit**.
+Posted in this order (Instagram puts newest on the left):
+1. **Introduction carousel, "Meet <set>"** (posted first, lands on the right). Cover = her dating profile. Slides: profile / color wheel / her colors / her best features (favorite tiles) / racks she's into / made for each other (favorite match) / "Her album is ready · see all N of her matches · link in bio · code". Builder: scripts/social/tileprofile/intro.py.
+2. **"It's a match!" carousel** (middle). Cover = the set ♥ her best match. Underneath = a "swipe right" carousel: one top match per slide as a dating-app card (mat, brand, its rack, MATCH stamp), last slide "See all N →".
+3. **Album cover = the hotline/skit reel** (posted last, lands on the left), posted by Tiffany at launch with her song. The album cover is set as the reel's grid cover.
+Row reads: album cover (reel) | It's a match | her profile.
