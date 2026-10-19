@@ -10,6 +10,17 @@ Tiffany, Oct 19: "We need to establish the protocol for a new album and make sur
 - No album is built from teasers or Instagram stories alone. Wait for the brand's product page, which is our source of truth.
 - Save the brand's own color words from the product description (e.g. OMM on Papaya: "papaya orange, soft lavender, and fresh green"). Our public copy never contradicts them. Also save any "behind the tiles" layer graphic if the brand posts one.
 
+### 1b. The matching photo (Claude, before anything is matched)
+Tiffany has to be able to SEE the colors when she swipes. A photo of white faces alone tells you nothing, and the first Papaya color card proved it.
+- **The ideal is a tile pile shot** (OMM's style): a pile of tiles showing the backs, the layers and a variety of faces in one at-a-glance image. That's the image every swipe book, color card and album uses for this set.
+- **Order of attempts:**
+  1. Check the brand's website first and pull every candidate image (tile pile, back + side, flat lay, lifestyle).
+  2. Send Tiffany a quick **swipe list of the options** ("this one, this one or this one?") so she picks the matching photo. Do this before asking her for anything else.
+  3. If none of them show backs + layers + faces, **ask if she owns the tiles**. If she does, she shoots a tile pile shot (window light, backs, layers and faces all showing).
+  4. If neither works, **build one**: cut out the brand's tile images (backs, side/layer view, a few faces) and compose a tile pile style graphic. Don't settle for a faces-only photo.
+- The same matching photo goes into the swipe book, color card, color wheel sampling (if it's the brand's own photo), profile and album.
+- Zoom note: mats also need to be close enough to read their colors. Too zoomed out and you can't tell whether the pinks or greens match.
+
 ### 2. Color analysis (Claude, the first real step)
 - Measure the colors from the brand's photos: backs, every layer, and faces.
 - **Sampling rule:** use the brand's back + side tile photo from their website (the one shoppers see). Take 3 spots per layer (top, middle, bottom) and use the median. Save the photo to assets/tiles/backs/. Don't sample our own darker photos: Papaya's lavender came out subdued that way.
@@ -64,8 +75,8 @@ Placeholders get swapped for her real top matches after step 6.
 - When new mats come out later, check them against this set's color analysis and suggest additions.
 
 ## Who does what (short version)
-- **Claude:** images, color analysis, favorite-tile crops, starter content, pre-sorted swipe book, rack matches, checks, website/FYM entries, and all social drafts.
-- **Tiffany:** approve the color read and pick the favorite tiles, swipe + order the album, approve racks, say yes in Ready to Ship, post the music reels and link-sticker stories, and say yes to scheduling.
+- **Claude:** images, matching photo options (or a built tile pile), color analysis, favorite-tile crops, starter content, pre-sorted swipe book, rack matches, checks, website/FYM entries, and all social drafts.
+- **Tiffany:** pick the matching photo (or shoot a tile pile if she owns the set), approve the color read and pick the favorite tiles, swipe + order the album, approve racks, say yes in Ready to Ship, post the music reels and link-sticker stories, and say yes to scheduling.
 
 ## Future idea (Tiffany)
 - Buy launch tiles early when cash allows (resell after) so colors can be checked in hand. OMM photos can run bright.
@@ -75,3 +86,10 @@ Placeholders get swapped for her real top matches after step 6.
 - The purple layer is a soft, blue-leaning lavender. Lavender vs periwinkle is semantics; we publish "lavender" (OMM: "soft lavender").
 - The green layer was renamed "Light lime" (OMM: "fresh green").
 - Matches unchanged: periwinkle mats still work because the layer leans blue.
+
+## Matching photo audit of existing albums (Oct 19)
+Checked all 50 album tile photos (assets/tiles/album). Most OMM sets have a proper tile pile. Weak ones to redo:
+- **Classic Tortoise (Bamber Boutique):** a few tiles scattered on a busy pattern. **Tiffany owns these** → she shoots a tile pile.
+- **Petalee:** a faces grid plus a sparse pile on white; you can't see the backs or layers well → check the brand site, else build one.
+- **Sunday Mahjong sets (Hummingbird, Plum Panda, Nature Walk, Sunday Blues):** big "SUNDAY MAHJONG" watermarks and dark backgrounds → look for cleaner brand images.
+- **Malachite:** tiles laid flat in rows, no layer view → check for a side/pile shot.
