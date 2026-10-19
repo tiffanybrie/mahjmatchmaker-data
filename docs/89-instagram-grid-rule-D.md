@@ -31,5 +31,5 @@ Row reads: album cover (reel) | It's a match | her profile.
 
 ## Grid catch-up with Meta One (Oct 19 evening)
 - Tiffany has Meta One Essential (free month from Oct 19; decide around day 25 before it renews). It gives Instagram "Post only to profile" (grid without followers' feeds) and "Share stories only to highlights."
-- Catch-up rows: Tiffany posts them in the IG app with **Post only to profile** ON (Planoly can't set this). The grid sorts by post time, so **pin the current launch row** and let catch-up rows fill underneath.
+- Catch-up rows: Tiffany posts them in the IG app with **Post only to profile** ON (Planoly can't set this). Instagram also lets her **reorder the grid** (Tiffany saw it Oct 19), so catch-up rows can be dragged into place after posting. No pinning workaround needed; pins are optional.
 - Per-set highlights (Tiffany OK'd the idea, OMM-style): fixed highlights (Find Your Match, Codes, FB group, About) use cream style-A covers. Each tile set gets its own highlight with a cover in its colors, filled via "stories only to highlights." Claude builds a kit per set (cover + about 4 frames).
