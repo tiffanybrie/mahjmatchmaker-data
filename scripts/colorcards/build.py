@@ -39,12 +39,15 @@ def sq(im, n):
 def rmask(n, r):
     m = Image.new('L', (n, n), 0); ImageDraw.Draw(m).rounded_rectangle((0, 0, n - 1, n - 1), radius=r, fill=255); return m
 
-def rack_strip(S, name, w, h):
-    """Real rack photo (rack_imgs) or a Bird & Bamboo painted bar, returned RGBA w x h."""
+def rack_strip(S, name, w, h, maxh=None):
+    """Real rack photo (rack_imgs) or a Bird & Bamboo painted bar, returned RGBA w x h.
+    maxh (Oct 19): tall rack photos (scalloped, tortoise) are scaled down to fit the row so they never cover the next label."""
     p = (S.get('rack_imgs') or {}).get(name)
     if p:
         im = Image.open(R + p).convert('RGBA'); bb = im.getbbox(); im = im.crop(bb)
-        return im.resize((w, max(8, int(im.height * w / im.width))), Image.LANCZOS)
+        nh = max(8, int(im.height * w / im.width))
+        if maxh and nh > maxh: return im.resize((max(8, int(im.width * maxh / im.height)), maxh), Image.LANCZOS)
+        return im.resize((w, nh), Image.LANCZOS)
     col = BB_RGB.get(name.replace('Bird & Bamboo ', ''), (200, 200, 200))
     im = Image.new('RGBA', (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     d.rounded_rectangle((0, 0, w - 1, h - 1), radius=5, fill=col)
@@ -83,7 +86,7 @@ def rack_panel(c, S, x0, x1, y, rowh=150, fs=20):
         d.text((x0 + 2, y), (b.upper() + '  ·  ' if b else ''), font=P('Poppins-Bold.ttf', fs * .8), fill=(160, 120, 140))
         bw = d.textlength((b.upper() + '  ·  ' if b else ''), font=P('Poppins-Bold.ttf', fs * .8))
         d.text((x0 + 2 + bw, y - 3), col, font=P('Poppins-Medium.ttf', fs * 1.15), fill=NAVY)
-        st = rack_strip(S, n, w, int(rowh * .42)); c.paste(st, (x0, y + int(fs * 1.9)), st); d = ImageDraw.Draw(c)
+        st = rack_strip(S, n, w, int(rowh * .42), rowh - int(fs * 1.9) - int(fs * 1.4)); c.paste(st, (x0 + (w - st.width) // 2, y + int(fs * 1.9)), st); d = ImageDraw.Draw(c)
         y += rowh
     return y
 
