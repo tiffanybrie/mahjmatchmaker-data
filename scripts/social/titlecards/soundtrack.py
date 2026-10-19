@@ -91,15 +91,37 @@ def swipe_music(buf, a, b):
 
 def whoosh(buf, at):
     n = int(.35 * SR); x = np.random.randn(n); x = np.convolve(x, np.ones(30) / 30, 'same')
-    put(buf, .5 * x * np.hanning(n), at)
+    put(buf, .22 * x * np.hanning(n), at)
 def nope(buf, at):
-    t = t_(.35); put(buf, .12 * np.sign(np.sin(2 * np.pi * 110 * t)) * env(len(t), .005, .1), at)
+    t = t_(.3); put(buf, .05 * np.sin(2 * np.pi * 150 * t) * env(len(t), .005, .1), at)
 def chime(buf, at):
     for k, n in enumerate((79, 84)):
-        t = t_(.6); put(buf, .14 * np.sin(2 * np.pi * midi(n) * t) * np.exp(-t * 4), at + k * .09)
+        t = t_(.6); put(buf, .07 * np.sin(2 * np.pi * midi(n) * t) * np.exp(-t * 4), at + k * .09)
 def end_button(buf, at):
     for k, n in enumerate((72, 76, 79, 84)):
         put(buf, epiano(midi(n), 1.2, .14), at + k * .11)
+
+def rhodes(f, d, v):
+    t = t_(d); x = np.sin(2 * np.pi * f * t) + .18 * np.sin(2 * np.pi * 2 * f * t) + .05 * np.sin(2 * np.pi * 3 * f * t)
+    x *= 1 + .12 * np.sin(2 * np.pi * 4.5 * t)  # soft tremolo
+    return v * x * np.exp(-.9 * t) * env(len(t), .03, .4)
+def vibe(f, d, v):
+    t = t_(d); x = np.sin(2 * np.pi * f * t) * (1 + .25 * np.sin(2 * np.pi * 6 * t))
+    return v * x * np.exp(-1.8 * t) * env(len(t), .005, .3)
+
+def elevator(buf, a, b):
+    """Quiet, slow elevator / hold music (Oct 19 v2: Tiffany found v1 busy and loud)."""
+    bpm = 80; beat = 60 / bpm; bar = 4 * beat
+    prog = [(41, [57, 60, 64, 67]), (40, [55, 59, 62, 67]), (38, [53, 57, 60, 64]), (43, [53, 57, 59, 64])]
+    mel = [(0, 76), (1.5, 74), (2, 72), None, (0, 74), (2, 71), None, (0, 72), (1, 69), (2, 67), None, None]
+    t0 = a; k = 0
+    while t0 < b:
+        root, ch = prog[k % 4]
+        for n in ch: put(buf, rhodes(midi(n), bar * 1.05, .028), t0)
+        put(buf, rhodes(midi(root), bar, .06), t0); put(buf, rhodes(midi(root + 7), beat * 2, .035), t0 + 2 * beat)
+        m = mel[k % len(mel)]
+        if m: put(buf, vibe(midi(m[1]), beat * 2.5, .05), t0 + m[0] * beat)
+        t0 += bar; k += 1
 
 def seg(buf, fn, a, b, fin=0.0, fout=0.6):
     tmp = np.zeros_like(buf); fn(tmp, a, b + 2)
@@ -113,14 +135,17 @@ def main(cues_path, out):
     c = json.load(open(cues_path)); buf = np.zeros(int(c['total'] * SR) + SR)
     ring(buf, *c['ring'])
     hr = c['hold'] if isinstance(c['hold'][0], list) else [c['hold']]
-    for k, (a, b) in enumerate(hr): seg(buf, hold, a, b, fin=0.0 if k == 0 else 1.2, fout=0.5)
-    sting(buf, c['sting'])
-    seg(buf, swipe_music, c['swipe'][0], c['swipe'][1], fin=0.15, fout=0.4)
+    style = c.get('style', 'elevator')
+    if style == 'sfx':
+        pass  # post version: ring + swipe sounds only; Instagram music goes on top
+    else:
+        for k, (a, b) in enumerate(hr): seg(buf, elevator, a, b, fin=0.4 if k == 0 else 1.5, fout=0.25 if k == 0 else 0.6)
+    if c.get('sting') is not None: sting(buf, c['sting'])
     for at, kind in c.get('swipes', []):
         whoosh(buf, at); (nope if kind == 'nope' else chime)(buf, at + .15)
     end_button(buf, c['end'])
     buf = buf[:int(c['total'] * SR)]
-    buf = np.tanh(buf * 1.4) * .8
+    buf = np.tanh(buf * 1.2) * .8
     import wave
     with wave.open(out, 'w') as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((buf * 32767).astype(np.int16).tobytes())
