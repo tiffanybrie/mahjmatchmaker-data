@@ -60,6 +60,7 @@ Hi, I'm Tiffany, the matchmaker behind Mahj Matchmaker. I pair mahjong tiles wit
 | Wood rack | B0FX3JSSCN | American walnut racks + pushers, set of 4, 17" | $37.99 | 4.6★ (112) |
 | Wood rack | B0FLKLGTJY | MUTEX walnut racks + pushers, set of 4, 17.5" | $47.49 | 4.5★ (71) |
 | Rudolph tiles | B0GRHT41RN | 166-pc engraved set, red backs, classic faces | $62.99 | 4.4★ (36) |
+| Rudolph tiles (on the live collage + mood board) | B0HHHQKKFD | PRERUICHI 160-pc Christmas set, red backs, candy cane/reindeer/nutcracker faces | $98.99 | |
 | Rudolph tiles | B0H87BG45Z | Soulchen 166-pc Christmas watercolor set, red backs | $86.99 | 4.0★ (1) |
 | White scalloped rack | B0GX2LRX25 | white pine scalloped racks + pushers, 19.68", set of 4 | $51.99 | 4.8★ (19) |
 | White scalloped rack | B0HDKMMK7Y | white wood scalloped racks + pushers, 19.7", set of 4 | $59.99 | 5.0★ (18) |
