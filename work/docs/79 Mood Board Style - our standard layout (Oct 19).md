@@ -109,3 +109,7 @@ Checked Oct 19. Only things confirmed on Amazon's own pages are listed as rules.
 3. No Amazon logo.
 4. The wordmark stays (allowed per the license clause above).
 5. Don't call items "vintage" (doc 71). Use the product's own name.
+
+
+## Label angle rule (Tiffany, Oct 19 noon)
+- Labels may tilt slightly for a handwritten feel, but never more than about 12 degrees either way. No near-vertical or sideways text: nobody should have to turn their head to read a label. When there is no room beside an item, put the label below or above it, level.

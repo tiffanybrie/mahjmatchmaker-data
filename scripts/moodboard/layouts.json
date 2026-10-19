@@ -88,30 +88,30 @@
     },
     "lamp": {
      "x": 72,
-     "y": 1000,
+     "y": 970,
      "w": 130,
      "z": 15,
      "label": {
-      "x": -88,
-      "y": 1142,
-      "w": 260,
-      "size": 48,
-      "rot": -78,
+      "x": 12,
+      "y": 1292,
+      "w": 250,
+      "size": 38,
+      "rot": -4,
       "align": "center"
      }
     },
     "cloth": {
      "x": 205,
-     "y": 990,
-     "w": 340,
+     "y": 1000,
+     "w": 300,
      "rot": -2,
      "z": 15,
      "label": {
-      "x": 412,
-      "y": 1136,
-      "w": 330,
-      "size": 46,
-      "rot": -80,
+      "x": 195,
+      "y": 1294,
+      "w": 340,
+      "size": 38,
+      "rot": -3,
       "align": "center"
      }
     },
@@ -192,30 +192,30 @@
     },
     "lamp": {
      "x": 80,
-     "y": 980,
+     "y": 950,
      "w": 140,
      "z": 15,
      "label": {
-      "x": -80,
-      "y": 1130,
+      "x": 20,
+      "y": 1292,
       "w": 260,
-      "size": 48,
-      "rot": -78,
+      "size": 38,
+      "rot": -4,
       "align": "center"
      }
     },
     "cloth": {
      "x": 250,
-     "y": 975,
-     "w": 360,
+     "y": 1000,
+     "w": 300,
      "rot": -2,
      "z": 15,
      "label": {
-      "x": 470,
-      "y": 1130,
-      "w": 330,
-      "size": 46,
-      "rot": -80,
+      "x": 240,
+      "y": 1294,
+      "w": 340,
+      "size": 38,
+      "rot": -3,
       "align": "center"
      }
     }
@@ -319,30 +319,30 @@
     },
     "lamp": {
      "x": 72,
-     "y": 1010,
+     "y": 980,
      "w": 120,
      "z": 15,
      "label": {
-      "x": -88,
-      "y": 1142,
-      "w": 260,
-      "size": 46,
-      "rot": -78,
+      "x": 12,
+      "y": 1292,
+      "w": 240,
+      "size": 38,
+      "rot": -4,
       "align": "center"
      }
     },
     "cloth": {
      "x": 200,
      "y": 1000,
-     "w": 320,
+     "w": 300,
      "rot": -2,
      "z": 15,
      "label": {
-      "x": 392,
-      "y": 1136,
-      "w": 320,
-      "size": 44,
-      "rot": -80,
+      "x": 190,
+      "y": 1294,
+      "w": 340,
+      "size": 38,
+      "rot": -3,
       "align": "center"
      }
     },
@@ -528,5 +528,6 @@
  "1080x1920": {
   "_note": "derived from 1080x1350 (board centred, ~285px clear at top and bottom = story UI safe zones)",
   "header": {}
- }
+ },
+ "_label_rule": "Labels are never rotated more than 12 degrees either way (Tiffany Oct 19: no near-vertical text; you should never have to tilt your head to read)."
 }
