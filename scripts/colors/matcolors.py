@@ -3,11 +3,12 @@
 Order of truth for every mat (catalog key, e.g. "www.ohmymahjong.com/larkspur-mat-in-tube"):
   1. config/mat-color-overrides.json  -> Tiffany's taps in the Mat Color Tagger (always wins)
   2. config/mat-color-guesses.json    -> the computer's photo read (scripts/colors/families.py)
-Each record: {primary, secondary:[], tone, holiday, skip}.
+Each record: {primary, secondary:[], tone (bright|pastel|muted|blend), holiday, skip}.
 
 Readers:
-  - Swipe-book color pulls: pull_score() (primary weighted 2x over accents, tone must match: clean/bright and
-    muted/earthy are never mixed; pastel sits between them). Skipped mats are never pulled.
+  - Swipe-book color pulls: pull_score() (primary weighted 2x over accents; tile tone gates mat tone per doc 76:
+    clean tile -> clean/pastel/blend, earthy tile -> earthy/blend, transitional -> all with blend first; a solid clean
+    tile on a solid earthy mat or the reverse scores 0). Skipped mats are never pulled.
   - FYM catalog build (builder/fym_build.py): fym_families() -> the FYM filter families (primary first).
   - Gallery and color pages group by PRIMARY only.
   - Mat Edit cards (scripts/matcard): the mat's own palette stays the photo swatches; order_palette() puts the primary's
@@ -17,7 +18,6 @@ import json, os
 R = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')
 _O = _G = None
 FYM_MAP = {'teal': 'blue', 'gold': 'yellow', 'brown': 'orange', 'bw': 'neutral'}  # FYM filter chips predate the new codes
-TONE_NEAR = {('bright', 'pastel'): 0.5, ('pastel', 'bright'): 0.5, ('muted', 'pastel'): 0.4, ('pastel', 'muted'): 0.4}
 
 
 def _load():
@@ -49,16 +49,41 @@ def fym_families(key, fallback=None):
     return out[:3] or fallback
 
 
+# Tiffany's color theory (doc 76): which mat tones each tile tone may be pulled onto, and their weight.
+# Clean tile -> clean/bright, pastel, blend. Earthy tile -> earthy, blend. Transitional (berries etc.) -> everything, blend first.
+# A solid clean tile on a solid earthy mat (or the reverse) is a hard no (0), never just a lower score.
+TONE_FIT = {
+    'clean': {'bright': 1.0, 'pastel': 1.0, 'blend': 0.9, 'muted': 0.0},
+    'earthy': {'muted': 1.0, 'blend': 0.9, 'bright': 0.0, 'pastel': 0.0},
+    'transitional': {'blend': 1.2, 'bright': 1.0, 'pastel': 1.0, 'muted': 1.0},
+}
+OLD_TILE_TONE = {'bright': 'clean', 'pastel': 'clean', 'muted': 'earthy'}  # older callers passed mat-style tones
+
+
+def tile_tone(name_or_key):
+    """Tile set tone from config/tile-tones.json (her corrections win via the tagger export). -> (tone, dominant) or (None, None)."""
+    import re
+    p = os.path.join(R, 'config/tile-tones.json')
+    if not os.path.exists(p): return None, None
+    T = json.load(open(p)).get('sets', {})
+    k = re.sub(r'[^a-z0-9]', '', str(name_or_key).lower().replace('(retired)', '').replace('\u00e9', 'e').replace('é', 'e'))
+    r = T.get(k)
+    return (r.get('tone'), r.get('dominant')) if r else (None, None)
+
+
 def pull_score(key, set_colors, set_tone=None):
     """How well a mat fits a tile set for a swipe-book color pull.
     set_colors: the set's accent colors (back + layers, never the white face), new codes, most important first.
-    Returns 0..~3; 0 = leave it out (skipped, or a clash of tones)."""
+    set_tone: the TILE tone, clean | transitional | earthy (doc 76). Older 'bright'/'pastel'/'muted' still work.
+    Returns 0..~3.6; 0 = leave it out (skipped, or clean-vs-earthy clash)."""
     r = get(key)
     if not r or r.get('skip'): return 0
     t = 1.0
-    if set_tone and r.get('tone') and r['tone'] != set_tone:
-        t = TONE_NEAR.get((r['tone'], set_tone), 0.0)  # bright vs muted -> 0, never mixed
-        if t == 0: return 0
+    if set_tone:
+        tt = OLD_TILE_TONE.get(set_tone, set_tone)
+        if tt in TONE_FIT and r.get('tone'):
+            t = TONE_FIT[tt].get(r['tone'], 1.0)
+            if t == 0: return 0
     s = 0.0
     for i, c in enumerate(set_colors):
         w = 1.0 / (1 + i)

@@ -1,0 +1,2765 @@
+{
+ "about": "Tile set tones (doc 76, Tiffany's color theory, Oct 19). tone: clean | transitional | earthy; dominant: primary color code. src 'tiffany' = she stated it; 'guess' = computer read of the tile photo. Corrections from the tagger's Tile tones tab (db tiletones) win.",
+ "sets": {
+  "birdie": {
+   "name": "Birdie",
+   "brand": "Oh My Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "assets/tiles/album/birdie.jpg",
+   "tone_src": "guess"
+  },
+  "dandy": {
+   "name": "Dandy",
+   "brand": "Oh My Mahjong",
+   "group": "Pink",
+   "tone": "transitional",
+   "dominant": "pink",
+   "src": "tiffany",
+   "img": "assets/tiles/album/dandy.jpg",
+   "note": "Magenta/berry, a little dirt",
+   "tone_src": "tiffany"
+  },
+  "glitterville": {
+   "name": "Glitterville",
+   "brand": "Oh My Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "assets/tiles/album/glitterville.jpg",
+   "tone_src": "guess"
+  },
+  "heritage10": {
+   "name": "Heritage 1.0",
+   "brand": "Oh My Mahjong",
+   "group": "Brown",
+   "tone": null,
+   "dominant": "brown",
+   "src": "guess",
+   "img": "fym:t10/1.jpg",
+   "tone_src": "guess"
+  },
+  "lilacsoiree": {
+   "name": "Lilac Soirée",
+   "brand": "Oh My Mahjong",
+   "group": null,
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "assets/tiles/album/lilac-soiree.jpg",
+   "tone_src": "guess"
+  },
+  "limoncello": {
+   "name": "Limoncello",
+   "brand": "Oh My Mahjong",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "assets/tiles/album/limoncello.jpg",
+   "tone_src": "guess"
+  },
+  "lola": {
+   "name": "Lola",
+   "brand": "Oh My Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "assets/tiles/album/lola.jpg",
+   "tone_src": "guess"
+  },
+  "preppysoiree": {
+   "name": "Preppy Soirée",
+   "brand": "Oh My Mahjong",
+   "group": null,
+   "tone": "transitional",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "assets/tiles/album/preppy-soiree.jpg",
+   "tone_src": "guess"
+  },
+  "shangrila": {
+   "name": "Shangri La",
+   "brand": "Oh My Mahjong",
+   "group": null,
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "assets/tiles/album/shangri-la.jpg",
+   "tone_src": "guess"
+  },
+  "sorbet": {
+   "name": "Sorbet",
+   "brand": "Oh My Mahjong",
+   "group": "Yellow & Orange",
+   "tone": "clean",
+   "dominant": "yellow",
+   "src": "tiffany",
+   "img": "assets/tiles/album/sorbet.jpg",
+   "note": "Clean pastel",
+   "tone_src": "tiffany"
+  },
+  "springlove": {
+   "name": "Spring Love",
+   "brand": "Oh My Mahjong",
+   "group": null,
+   "tone": "clean",
+   "dominant": "red",
+   "src": "guess",
+   "img": "assets/tiles/album/spring-love.jpg",
+   "tone_src": "guess"
+  },
+  "sunset": {
+   "name": "Sunset",
+   "brand": "Oh My Mahjong",
+   "group": "Yellow & Orange",
+   "tone": "clean",
+   "dominant": "orange",
+   "src": "tiffany",
+   "img": "assets/tiles/album/sunset.jpg",
+   "note": "Clean orange",
+   "tone_src": "tiffany"
+  },
+  "taylor": {
+   "name": "Taylor",
+   "brand": "Oh My Mahjong",
+   "group": "Purple",
+   "tone": "clean",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "assets/tiles/album/taylor.jpg",
+   "tone_src": "guess"
+  },
+  "hummingbird": {
+   "name": "Hummingbird",
+   "brand": "Sunday Mahjong",
+   "group": "Ivory",
+   "tone": "transitional",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "assets/tiles/album/hummingbird.png",
+   "tone_src": "guess"
+  },
+  "simply": {
+   "name": "Simply",
+   "brand": "Wren Mats",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/170.jpg",
+   "tone_src": "guess"
+  },
+  "classictortoise": {
+   "name": "Classic Tortoise",
+   "brand": "Bam Bird Boutique",
+   "group": "Yellow & Orange",
+   "tone": "transitional",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "assets/tiles/album/classic-tortoise.png",
+   "tone_src": "guess"
+  },
+  "coquette": {
+   "name": "Coquette",
+   "brand": "LoveShackFancy",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "assets/tiles/album/coquette.jpg",
+   "tone_src": "guess"
+  },
+  "cypress": {
+   "name": "Cypress",
+   "brand": "Mahjong Row & Co.",
+   "group": "Brown",
+   "tone": "earthy",
+   "dominant": "brown",
+   "src": "guess",
+   "img": "assets/tiles/album/cypress.jpg",
+   "tone_src": "guess"
+  },
+  "missclassicjade": {
+   "name": "Miss Classic Jade",
+   "brand": "Miss Mahjong",
+   "group": "Green",
+   "tone": null,
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t10/27.jpg",
+   "tone_src": "guess"
+  },
+  "amara": {
+   "name": "Amara",
+   "brand": "Oh My Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "red",
+   "src": "tiffany",
+   "img": "assets/tiles/album/amara.jpg",
+   "note": "Clean bright (red + white)",
+   "tone_src": "tiffany"
+  },
+  "drake": {
+   "name": "Drake",
+   "brand": "Oh My Mahjong",
+   "group": "Green",
+   "tone": "earthy",
+   "dominant": "green",
+   "src": "tiffany",
+   "img": "assets/tiles/album/drake.jpg",
+   "note": "Olive green",
+   "tone_src": "tiffany"
+  },
+  "emerald": {
+   "name": "Emerald",
+   "brand": "Oh My Mahjong",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "assets/tiles/album/emerald.jpg",
+   "tone_src": "guess"
+  },
+  "gatsby": {
+   "name": "Gatsby",
+   "brand": "Oh My Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "assets/tiles/album/gatsby.jpg",
+   "tone_src": "guess"
+  },
+  "gemma": {
+   "name": "Gemma",
+   "brand": "Oh My Mahjong",
+   "group": "Purple",
+   "tone": "clean",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "assets/tiles/album/gemma.jpg",
+   "tone_src": "guess"
+  },
+  "glowwild": {
+   "name": "Glow Wild",
+   "brand": "Oh My Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "assets/tiles/album/glow-wild.jpg",
+   "tone_src": "guess"
+  },
+  "heritage20": {
+   "name": "Heritage 2.0",
+   "brand": "Oh My Mahjong",
+   "group": "Brown",
+   "tone": "transitional",
+   "dominant": "brown",
+   "src": "guess",
+   "img": "assets/tiles/album/heritage-2-0.jpg",
+   "tone_src": "guess"
+  },
+  "jasmine": {
+   "name": "Jasmine",
+   "brand": "Oh My Mahjong",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "tiffany",
+   "img": "assets/tiles/album/jasmine.jpg",
+   "note": "Clean green",
+   "tone_src": "tiffany"
+  },
+  "lafete": {
+   "name": "La Fete",
+   "brand": "Oh My Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "assets/tiles/album/la-fete.jpg",
+   "tone_src": "guess"
+  },
+  "lagoon": {
+   "name": "Lagoon",
+   "brand": "Oh My Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "tiffany",
+   "img": "assets/tiles/album/lagoon.jpg",
+   "note": "Blue-green, predominantly blue",
+   "tone_src": "guess"
+  },
+  "luminaire": {
+   "name": "Luminaire",
+   "brand": "Oh My Mahjong",
+   "group": "Purple",
+   "tone": "clean",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "assets/tiles/album/luminaire.jpg",
+   "tone_src": "guess"
+  },
+  "moonlight": {
+   "name": "Moonlight",
+   "brand": "Oh My Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "assets/tiles/album/moonlight.jpg",
+   "tone_src": "guess"
+  },
+  "nantucket": {
+   "name": "Nantucket",
+   "brand": "Oh My Mahjong",
+   "group": "Red",
+   "tone": "clean",
+   "dominant": "red",
+   "src": "guess",
+   "img": "assets/tiles/album/nantucket.jpg",
+   "tone_src": "guess"
+  },
+  "osler": {
+   "name": "Osler",
+   "brand": "Oh My Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "assets/tiles/album/osler.jpg",
+   "tone_src": "guess"
+  },
+  "palmroyale": {
+   "name": "Palm Royale",
+   "brand": "Oh My Mahjong",
+   "group": "Green",
+   "tone": "transitional",
+   "dominant": "green",
+   "src": "guess",
+   "img": "assets/tiles/album/palm-royale.jpg",
+   "tone_src": "guess"
+  },
+  "papayaspritz": {
+   "name": "Papaya Spritz",
+   "brand": "Oh My Mahjong",
+   "group": "Yellow & Orange",
+   "tone": "clean",
+   "dominant": "orange",
+   "src": "tiffany",
+   "img": "assets/tiles/album/papaya-spritz.jpg",
+   "note": "Clean orange",
+   "tone_src": "tiffany"
+  },
+  "pearlescent": {
+   "name": "Pearlescent",
+   "brand": "Oh My Mahjong",
+   "group": "Ivory",
+   "tone": "transitional",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "assets/tiles/album/pearlescent.jpg",
+   "tone_src": "guess"
+  },
+  "pippa": {
+   "name": "Pippa",
+   "brand": "Oh My Mahjong",
+   "group": "Yellow & Orange",
+   "tone": "transitional",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "assets/tiles/album/pippa.jpg",
+   "tone_src": "guess"
+  },
+  "seabreeze": {
+   "name": "Seabreeze",
+   "brand": "Oh My Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "assets/tiles/album/seabreeze.jpg",
+   "tone_src": "guess"
+  },
+  "sierra": {
+   "name": "Sierra",
+   "brand": "Oh My Mahjong",
+   "group": "Yellow & Orange",
+   "tone": "earthy",
+   "dominant": "orange",
+   "src": "tiffany",
+   "img": "assets/tiles/album/sierra.jpg",
+   "note": "Cognac orange",
+   "tone_src": "tiffany"
+  },
+  "smith": {
+   "name": "Smith",
+   "brand": "Oh My Mahjong",
+   "group": "Brown",
+   "tone": "transitional",
+   "dominant": "brown",
+   "src": "guess",
+   "img": "assets/tiles/album/smith.jpg",
+   "tone_src": "guess"
+  },
+  "solara": {
+   "name": "Solara",
+   "brand": "Oh My Mahjong",
+   "group": "Yellow & Orange",
+   "tone": "clean",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "assets/tiles/album/solara.jpg",
+   "tone_src": "guess"
+  },
+  "talulah": {
+   "name": "Talulah",
+   "brand": "Oh My Mahjong",
+   "group": "Ivory",
+   "tone": "transitional",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "assets/tiles/album/talulah.jpg",
+   "tone_src": "guess"
+  },
+  "willow": {
+   "name": "Willow",
+   "brand": "Oh My Mahjong",
+   "group": "Green",
+   "tone": "transitional",
+   "dominant": "green",
+   "src": "guess",
+   "img": "assets/tiles/album/willow.jpg",
+   "tone_src": "guess"
+  },
+  "sundaytileset": {
+   "name": "Sunday Tile Set",
+   "brand": "Sunday Mahjong",
+   "group": null,
+   "tone": "earthy",
+   "dominant": "brown",
+   "src": "guess",
+   "img": "assets/tiles/album/sunday-tile-set.png",
+   "tone_src": "guess"
+  },
+  "foundationbeginner": {
+   "name": "Foundation Beginner",
+   "brand": "Amahj",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/4.jpg",
+   "tone_src": "guess"
+  },
+  "gardenstamped": {
+   "name": "Garden Stamped",
+   "brand": "Amahj",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/0.jpg",
+   "tone_src": "guess"
+  },
+  "lightbluesignature": {
+   "name": "Light Blue Signature",
+   "brand": "Amahj",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/7.jpg",
+   "tone_src": "guess"
+  },
+  "lilacsignature": {
+   "name": "Lilac Signature",
+   "brand": "Amahj",
+   "group": "Purple",
+   "tone": "clean",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "fym:t15/8.jpg",
+   "tone_src": "guess"
+  },
+  "navysignature": {
+   "name": "Navy Signature",
+   "brand": "Amahj",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/9.jpg",
+   "tone_src": "guess"
+  },
+  "originalstamped": {
+   "name": "Original Stamped",
+   "brand": "Amahj",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/5.jpg",
+   "tone_src": "guess"
+  },
+  "pinkcoastalsignature": {
+   "name": "Pink Coastal Signature",
+   "brand": "Amahj",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/3.jpg",
+   "tone_src": "guess"
+  },
+  "roundtopstamped": {
+   "name": "Round Top Stamped",
+   "brand": "Amahj",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/2.jpg",
+   "tone_src": "guess"
+  },
+  "tealcoastalsignature": {
+   "name": "Teal Coastal Signature",
+   "brand": "Amahj",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/1.jpg",
+   "tone_src": "guess"
+  },
+  "whitesignature": {
+   "name": "White Signature",
+   "brand": "Amahj",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/6.jpg",
+   "tone_src": "guess"
+  },
+  "bamsbubbly": {
+   "name": "Bams & Bubbly",
+   "brand": "Anders Ruff",
+   "group": "Yellow & Orange",
+   "tone": "clean",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "fym:t15/82.jpg",
+   "tone_src": "guess"
+  },
+  "brownstonebloom": {
+   "name": "Brownstone Bloom",
+   "brand": "Anders Ruff",
+   "group": "Ivory",
+   "tone": "transitional",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/79.jpg",
+   "tone_src": "guess"
+  },
+  "dearsanta": {
+   "name": "Dear Santa",
+   "brand": "Anders Ruff",
+   "group": "Holiday",
+   "tone": null,
+   "dominant": null,
+   "src": "guess",
+   "img": "fym:t10/37.jpg",
+   "tone_src": "guess"
+  },
+  "eaudemahj": {
+   "name": "Eau De Mahj",
+   "brand": "Anders Ruff",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/80.jpg",
+   "tone_src": "guess"
+  },
+  "houseofhydrangea": {
+   "name": "House of Hydrangea",
+   "brand": "Anders Ruff",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/81.jpg",
+   "tone_src": "guess"
+  },
+  "mahjinbloom": {
+   "name": "Mahj in Bloom",
+   "brand": "Anders Ruff",
+   "group": "Green",
+   "tone": "transitional",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/78.jpg",
+   "tone_src": "guess"
+  },
+  "bootsbubbles": {
+   "name": "Boots & Bubbles",
+   "brand": "Bam Bird Boutique",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/102.jpg",
+   "tone_src": "guess"
+  },
+  "classicmahjongtileset": {
+   "name": "Classic Mahjong Tile Set",
+   "brand": "Bam Bird Boutique",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/191.jpg",
+   "tone_src": "guess"
+  },
+  "deco": {
+   "name": "Deco",
+   "brand": "Bam Bird Boutique",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/103.jpg",
+   "tone_src": "guess"
+  },
+  "eastmeetswesttortoiseshell": {
+   "name": "East Meets West Tortoise Shell",
+   "brand": "Bam Bird Boutique",
+   "group": "Yellow & Orange",
+   "tone": "clean",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "fym:t15/104.jpg",
+   "tone_src": "guess"
+  },
+  "giantmahjongtilefordecorsoldasindividual": {
+   "name": "Giant Mahjong Tile (for decor)- sold as individual",
+   "brand": "Bam Bird Boutique",
+   "group": null,
+   "tone": "transitional",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "fym:t15/99.jpg",
+   "tone_src": "guess"
+  },
+  "mcm": {
+   "name": "Mcm",
+   "brand": "Bam Bird Boutique",
+   "group": "Blue",
+   "tone": "earthy",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/101.jpg",
+   "tone_src": "guess"
+  },
+  "mischiefmahj": {
+   "name": "Mischief Mahj",
+   "brand": "Bam Bird Boutique",
+   "group": null,
+   "tone": "clean",
+   "dominant": "orange",
+   "src": "guess",
+   "img": "fym:t15/100.jpg",
+   "tone_src": "guess"
+  },
+  "origami": {
+   "name": "Origami",
+   "brand": "Bam Bird Boutique",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/105.jpg",
+   "tone_src": "guess"
+  },
+  "artdeco": {
+   "name": "Art Deco",
+   "brand": "Bam! Let's Mahjong",
+   "group": null,
+   "tone": "clean",
+   "dominant": "dark",
+   "src": "guess",
+   "img": "fym:t15/106.jpg",
+   "tone_src": "guess"
+  },
+  "gardenpartylavenderbloom": {
+   "name": "Garden Party Lavender Bloom",
+   "brand": "Bam! Let's Mahjong",
+   "group": "Purple",
+   "tone": "clean",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "fym:t15/119.jpg",
+   "tone_src": "guess"
+  },
+  "gardenpartypetalpink": {
+   "name": "Garden Party Petal Pink",
+   "brand": "Bam! Let's Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/117.jpg",
+   "tone_src": "guess"
+  },
+  "gardenpartyseaglassgreen": {
+   "name": "Garden Party Sea-Glass Green",
+   "brand": "Bam! Let's Mahjong",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/118.jpg",
+   "tone_src": "guess"
+  },
+  "gardenpartyskyblue": {
+   "name": "Garden Party Sky Blue",
+   "brand": "Bam! Let's Mahjong",
+   "group": "Blue",
+   "tone": null,
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t11/119.jpg",
+   "tone_src": "guess"
+  },
+  "grandmillennialblue": {
+   "name": "Grandmillennial Blue",
+   "brand": "Bam! Let's Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/116.jpg",
+   "tone_src": "guess"
+  },
+  "grandmillennialgreen": {
+   "name": "Grandmillennial Green",
+   "brand": "Bam! Let's Mahjong",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/115.jpg",
+   "tone_src": "guess"
+  },
+  "grandmillennialpink": {
+   "name": "Grandmillennial Pink",
+   "brand": "Bam! Let's Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/114.jpg",
+   "tone_src": "guess"
+  },
+  "hocuspocushalloween": {
+   "name": "Hocus Pocus Halloween",
+   "brand": "Bam! Let's Mahjong",
+   "group": null,
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/107.jpg",
+   "tone_src": "guess"
+  },
+  "hollyjollygrinchgreen": {
+   "name": "Holly Jolly (Grinch Green)",
+   "brand": "Bam! Let's Mahjong",
+   "group": "Holiday",
+   "tone": null,
+   "dominant": null,
+   "src": "guess",
+   "img": "fym:t10/40.jpg",
+   "tone_src": "guess"
+  },
+  "hollyjollyrudolphred": {
+   "name": "Holly Jolly (Rudolph Red)",
+   "brand": "Bam! Let's Mahjong",
+   "group": "Holiday",
+   "tone": null,
+   "dominant": null,
+   "src": "guess",
+   "img": "fym:t13/1.jpg",
+   "tone_src": "guess"
+  },
+  "hollyjollysugarplumpink": {
+   "name": "Holly Jolly (Sugarplum Pink)",
+   "brand": "Bam! Let's Mahjong",
+   "group": "Holiday",
+   "tone": null,
+   "dominant": null,
+   "src": "guess",
+   "img": "fym:t10/41.jpg",
+   "tone_src": "guess"
+  },
+  "mintandroses": {
+   "name": "Mint and Roses",
+   "brand": "Bam! Let's Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/110.jpg",
+   "tone_src": "guess"
+  },
+  "thenantucketcoastalblue": {
+   "name": "The Nantucket Coastal Blue",
+   "brand": "Bam! Let's Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/108.jpg",
+   "tone_src": "guess"
+  },
+  "thenantucketseasideblue": {
+   "name": "The Nantucket Seaside Blue",
+   "brand": "Bam! Let's Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/109.jpg",
+   "tone_src": "guess"
+  },
+  "thepalmroyalelemondrop": {
+   "name": "The Palm Royale Lemon Drop",
+   "brand": "Bam! Let's Mahjong",
+   "group": "Yellow & Orange",
+   "tone": "clean",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "fym:t15/111.jpg",
+   "tone_src": "guess"
+  },
+  "thepalmroyalestrawberrysangria": {
+   "name": "The Palm Royale Strawberry Sangria",
+   "brand": "Bam! Let's Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/113.jpg",
+   "tone_src": "guess"
+  },
+  "thepalmroyaletangerinetwist": {
+   "name": "The Palm Royale Tangerine Twist",
+   "brand": "Bam! Let's Mahjong",
+   "group": "Yellow & Orange",
+   "tone": "clean",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "fym:t15/112.jpg",
+   "tone_src": "guess"
+  },
+  "bespokexcoreypaigecolorcrushxlmega": {
+   "name": "Bespoke X Corey Paige Color Crush XL Mega",
+   "brand": "Bespoke Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/124.jpg",
+   "tone_src": "guess"
+  },
+  "bespokexgraymalinbeachclub": {
+   "name": "Bespoke X Gray Malin Beach Club",
+   "brand": "Bespoke Mahjong",
+   "group": "Purple",
+   "tone": "clean",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "fym:t15/120.jpg",
+   "tone_src": "guess"
+  },
+  "bespokexgraymalingetawaydogsxlmega": {
+   "name": "Bespoke X Gray Malin Getaway Dogs XL Mega",
+   "brand": "Bespoke Mahjong",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/121.jpg",
+   "tone_src": "guess"
+  },
+  "glitterglow": {
+   "name": "Glitter Glow",
+   "brand": "Bespoke Mahjong",
+   "group": null,
+   "tone": "transitional",
+   "dominant": "dark",
+   "src": "guess",
+   "img": "fym:t15/122.jpg",
+   "tone_src": "guess"
+  },
+  "gratefuldeadxbespokemahjongxlmega": {
+   "name": "Grateful Dead x Bespoke Mahjong XL Mega",
+   "brand": "Bespoke Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/123.jpg",
+   "tone_src": "guess"
+  },
+  "theallure": {
+   "name": "The Allure",
+   "brand": "Bird & Bamboo",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/13.jpg",
+   "tone_src": "guess"
+  },
+  "thebelle": {
+   "name": "The Belle",
+   "brand": "Bird & Bamboo",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/14.jpg",
+   "tone_src": "guess"
+  },
+  "thebohochic": {
+   "name": "The Boho Chic",
+   "brand": "Bird & Bamboo",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/15.jpg",
+   "tone_src": "guess"
+  },
+  "theempress": {
+   "name": "The Empress",
+   "brand": "Bird & Bamboo",
+   "group": null,
+   "tone": "clean",
+   "dominant": "dark",
+   "src": "guess",
+   "img": "fym:t15/12.jpg",
+   "tone_src": "guess"
+  },
+  "theiconic": {
+   "name": "The Iconic",
+   "brand": "Bird & Bamboo",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/10.jpg",
+   "tone_src": "guess"
+  },
+  "themadeira": {
+   "name": "The Madeira",
+   "brand": "Bird & Bamboo",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/11.jpg",
+   "tone_src": "guess"
+  },
+  "aprsskiclub": {
+   "name": "Après Ski Club",
+   "brand": "Charleston Mahjong Club",
+   "group": "Holiday",
+   "tone": null,
+   "dominant": null,
+   "src": "guess",
+   "img": "fym:t13/5.jpg",
+   "tone_src": "guess"
+  },
+  "thecountryclubedition": {
+   "name": "The Country Club Edition",
+   "brand": "Charleston Mahjong Club",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/217.jpg",
+   "tone_src": "guess"
+  },
+  "birthday": {
+   "name": "Birthday",
+   "brand": "Hip Hip Mahjong",
+   "group": "Yellow & Orange",
+   "tone": "clean",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "fym:t15/131.jpg",
+   "tone_src": "guess"
+  },
+  "celebration": {
+   "name": "Celebration",
+   "brand": "Hip Hip Mahjong",
+   "group": null,
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/132.jpg",
+   "tone_src": "guess"
+  },
+  "hoppyeasthare": {
+   "name": "Hoppy EAST-Hare",
+   "brand": "Hip Hip Mahjong",
+   "group": "Yellow & Orange",
+   "tone": "transitional",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "fym:t15/126.jpg",
+   "tone_src": "guess"
+  },
+  "imahj": {
+   "name": "I ❤️ Mahj",
+   "brand": "Hip Hip Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/192.jpg",
+   "tone_src": "guess"
+  },
+  "letfreedomring": {
+   "name": "Let Freedom Ring",
+   "brand": "Hip Hip Mahjong",
+   "group": "Red",
+   "tone": "clean",
+   "dominant": "red",
+   "src": "guess",
+   "img": "fym:t15/130.jpg",
+   "tone_src": "guess"
+  },
+  "mahjoween": {
+   "name": "Mahj-O-Ween",
+   "brand": "Hip Hip Mahjong",
+   "group": null,
+   "tone": "clean",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "fym:t15/128.jpg",
+   "tone_src": "guess"
+  },
+  "nativity": {
+   "name": "Nativity",
+   "brand": "Hip Hip Mahjong",
+   "group": "Holiday",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/127.jpg",
+   "tone_src": "guess"
+  },
+  "rackinrudolph": {
+   "name": "Rackin' Rudolph",
+   "brand": "Hip Hip Mahjong",
+   "group": "Holiday",
+   "tone": null,
+   "dominant": null,
+   "src": "guess",
+   "img": "fym:t13/0.jpg",
+   "tone_src": "guess"
+  },
+  "sobamgrateful": {
+   "name": "So Bam Grateful",
+   "brand": "Hip Hip Mahjong",
+   "group": "Red",
+   "tone": "clean",
+   "dominant": "red",
+   "src": "guess",
+   "img": "fym:t15/125.jpg",
+   "tone_src": "guess"
+  },
+  "thehouse": {
+   "name": "The House",
+   "brand": "Hip Hip Mahjong",
+   "group": "Yellow & Orange",
+   "tone": "transitional",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "fym:t15/129.jpg",
+   "tone_src": "guess"
+  },
+  "letsbeiconicbrilliantpink": {
+   "name": "Let's Be Iconic! Brilliant Pink",
+   "brand": "Let's Mahj On",
+   "group": "Pink",
+   "tone": "transitional",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/137.jpg",
+   "tone_src": "guess"
+  },
+  "letsbeiconicjeweledgreen": {
+   "name": "Let's Be Iconic! Jeweled Green",
+   "brand": "Let's Mahj On",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/139.jpg",
+   "tone_src": "guess"
+  },
+  "letsbeiconicjeweledpurple": {
+   "name": "Let's Be Iconic! Jeweled Purple",
+   "brand": "Let's Mahj On",
+   "group": "Purple",
+   "tone": "transitional",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "fym:t15/134.jpg",
+   "tone_src": "guess"
+  },
+  "letscocktailparty": {
+   "name": "Let's Cocktail Party!",
+   "brand": "Let's Mahj On",
+   "group": "Pink",
+   "tone": "transitional",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/141.jpg",
+   "tone_src": "guess"
+  },
+  "letsgamesetmahj": {
+   "name": "Let's Game. Set. Mahj!",
+   "brand": "Let's Mahj On",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/136.jpg",
+   "tone_src": "guess"
+  },
+  "letsgardenparty": {
+   "name": "Let's Garden Party!",
+   "brand": "Let's Mahj On",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/135.jpg",
+   "tone_src": "guess"
+  },
+  "letsgetnautical": {
+   "name": "Let's Get Nautical!",
+   "brand": "Let's Mahj On",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/140.jpg",
+   "tone_src": "guess"
+  },
+  "letsgettropical": {
+   "name": "Let's Get Tropical!",
+   "brand": "Let's Mahj On",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/138.jpg",
+   "tone_src": "guess"
+  },
+  "letswander": {
+   "name": "Let's Wander!",
+   "brand": "Let's Mahj On",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/133.jpg",
+   "tone_src": "guess"
+  },
+  "heirloomcollectionfirefortuneemberfire": {
+   "name": "Heirloom Collection: Fire + Fortune Ember Fire (",
+   "brand": "Mac + Miller Mahjong",
+   "group": "Red",
+   "tone": "clean",
+   "dominant": "red",
+   "src": "guess",
+   "img": "fym:t15/143.jpg",
+   "tone_src": "guess"
+  },
+  "heirloomcollectionfirefortuneverdantfortune": {
+   "name": "Heirloom Collection: Fire + Fortune Verdant Fortune",
+   "brand": "Mac + Miller Mahjong",
+   "group": "Green",
+   "tone": "transitional",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/144.jpg",
+   "tone_src": "guess"
+  },
+  "laissezlesbonstempsroulercollection": {
+   "name": "Laissez Les Bons Temps Rouler Collection",
+   "brand": "Mac + Miller Mahjong",
+   "group": "Yellow & Orange",
+   "tone": "transitional",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "fym:t15/145.jpg",
+   "tone_src": "guess"
+  },
+  "redwhitebluescollection": {
+   "name": "Red White & Blues Collection",
+   "brand": "Mac + Miller Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/142.jpg",
+   "tone_src": "guess"
+  },
+  "sweetdreamscollection": {
+   "name": "Sweet Dreams Collection",
+   "brand": "Mac + Miller Mahjong",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/146.jpg",
+   "tone_src": "guess"
+  },
+  "90spoolpartyblue": {
+   "name": "90s Pool Party (Blue)",
+   "brand": "Mahj Mood",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/218.jpg",
+   "tone_src": "guess"
+  },
+  "90staffypink": {
+   "name": "90s Taffy (Pink)",
+   "brand": "Mahj Mood",
+   "group": "Pink",
+   "tone": "transitional",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/17.jpg",
+   "tone_src": "guess"
+  },
+  "ballerinapink": {
+   "name": "Ballerina Pink",
+   "brand": "Mahj Mood",
+   "group": "Pink",
+   "tone": "earthy",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/20.jpg",
+   "tone_src": "guess"
+  },
+  "imperfectserenitymood": {
+   "name": "Imperfect Serenity Mood",
+   "brand": "Mahj Mood",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/19.jpg",
+   "tone_src": "guess"
+  },
+  "mauveblush": {
+   "name": "Mauve-Blush",
+   "brand": "Mahj Mood",
+   "group": "Pink",
+   "tone": "transitional",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/18.jpg",
+   "tone_src": "guess"
+  },
+  "radiantmoodcollectionwhitepearl": {
+   "name": "Radiant Mood Collection White Pearl",
+   "brand": "Mahj Mood",
+   "group": "Ivory",
+   "tone": "earthy",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/16.jpg",
+   "tone_src": "guess"
+  },
+  "bluechinoiserie": {
+   "name": "Blue Chinoiserie",
+   "brand": "Mahj Squad",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/56.jpg",
+   "tone_src": "guess"
+  },
+  "justpeachy": {
+   "name": "Just Peachy",
+   "brand": "Mahj Squad",
+   "group": "Yellow & Orange",
+   "tone": "clean",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "fym:t15/54.jpg",
+   "tone_src": "guess"
+  },
+  "nutcrackerballet": {
+   "name": "Nutcracker Ballet",
+   "brand": "Mahj Squad",
+   "group": "Holiday",
+   "tone": null,
+   "dominant": null,
+   "src": "guess",
+   "img": "fym:t10/45.jpg",
+   "tone_src": "guess"
+  },
+  "palmsprings": {
+   "name": "Palm Springs",
+   "brand": "Mahj Squad",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/57.jpg",
+   "tone_src": "guess"
+  },
+  "parisian": {
+   "name": "Parisian",
+   "brand": "Mahj Squad",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/55.jpg",
+   "tone_src": "guess"
+  },
+  "ashburl": {
+   "name": "Ash Burl",
+   "brand": "Mahjong Row & Co.",
+   "group": "Ivory",
+   "tone": "transitional",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/26.jpg",
+   "tone_src": "guess"
+  },
+  "honeyweave": {
+   "name": "Honey Weave",
+   "brand": "Mahjong Row & Co.",
+   "group": "Brown",
+   "tone": "clean",
+   "dominant": "brown",
+   "src": "guess",
+   "img": "fym:t15/25.jpg",
+   "tone_src": "guess"
+  },
+  "laken": {
+   "name": "Laken",
+   "brand": "Mahjong Row & Co.",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/24.jpg",
+   "tone_src": "guess"
+  },
+  "lyla": {
+   "name": "Lyla",
+   "brand": "Mahjong Row & Co.",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/22.jpg",
+   "tone_src": "guess"
+  },
+  "mabel": {
+   "name": "Mabel",
+   "brand": "Mahjong Row & Co.",
+   "group": "Brown",
+   "tone": "transitional",
+   "dominant": "brown",
+   "src": "guess",
+   "img": "fym:t15/23.jpg",
+   "tone_src": "guess"
+  },
+  "oakley": {
+   "name": "Oakley",
+   "brand": "Mahjong Row & Co.",
+   "group": null,
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/21.jpg",
+   "tone_src": "guess"
+  },
+  "terracottamarble": {
+   "name": "Terracotta Marble",
+   "brand": "Mahjong Row & Co.",
+   "group": "Brown",
+   "tone": "clean",
+   "dominant": "brown",
+   "src": "guess",
+   "img": "fym:t15/27.jpg",
+   "tone_src": "guess"
+  },
+  "2colorbluestudio": {
+   "name": "2-Color Blue Studio",
+   "brand": "Mahjong Studios",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/49.jpg",
+   "tone_src": "guess"
+  },
+  "amberjade": {
+   "name": "Amber Jade",
+   "brand": "Mahjong Studios",
+   "group": "Yellow & Orange",
+   "tone": "transitional",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "fym:t15/193.jpg",
+   "tone_src": "guess"
+  },
+  "american": {
+   "name": "American",
+   "brand": "Mahjong Studios",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/37.jpg",
+   "tone_src": "guess"
+  },
+  "bamboosky": {
+   "name": "Bamboo Sky",
+   "brand": "Mahjong Studios",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/51.jpg",
+   "tone_src": "guess"
+  },
+  "blueediton2colorblue": {
+   "name": "Blue Editon 2-Color Blue",
+   "brand": "Mahjong Studios",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/46.jpg",
+   "tone_src": "guess"
+  },
+  "blueelement": {
+   "name": "Blue Element",
+   "brand": "Mahjong Studios",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/48.jpg",
+   "tone_src": "guess"
+  },
+  "blushbamboo": {
+   "name": "Blush & Bamboo",
+   "brand": "Mahjong Studios",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/52.jpg",
+   "tone_src": "guess"
+  },
+  "bubblepop2colorblue": {
+   "name": "Bubble Pop 2-Color Blue",
+   "brand": "Mahjong Studios",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/44.jpg",
+   "tone_src": "guess"
+  },
+  "butterbloom": {
+   "name": "Butter Bloom",
+   "brand": "Mahjong Studios",
+   "group": "Yellow & Orange",
+   "tone": "clean",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "fym:t15/40.jpg",
+   "tone_src": "guess"
+  },
+  "christmaskiss": {
+   "name": "Christmas Kiss",
+   "brand": "Mahjong Studios",
+   "group": "Holiday",
+   "tone": "clean",
+   "dominant": "red",
+   "src": "guess",
+   "img": "fym:t15/28.jpg",
+   "tone_src": "guess"
+  },
+  "essential": {
+   "name": "Essential",
+   "brand": "Mahjong Studios",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/53.jpg",
+   "tone_src": "guess"
+  },
+  "forestsilk": {
+   "name": "Forest Silk",
+   "brand": "Mahjong Studios",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/35.jpg",
+   "tone_src": "guess"
+  },
+  "glittersparklepink": {
+   "name": "Glitter Sparkle Pink",
+   "brand": "Mahjong Studios",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/42.jpg",
+   "tone_src": "guess"
+  },
+  "lavendersparkle": {
+   "name": "Lavender Sparkle",
+   "brand": "Mahjong Studios",
+   "group": "Purple",
+   "tone": "clean",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "fym:t15/29.jpg",
+   "tone_src": "guess"
+  },
+  "lemontide": {
+   "name": "Lemon Tide",
+   "brand": "Mahjong Studios",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/32.jpg",
+   "tone_src": "guess"
+  },
+  "lilacbloom": {
+   "name": "Lilac Bloom",
+   "brand": "Mahjong Studios",
+   "group": "Purple",
+   "tone": "clean",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "fym:t15/38.jpg",
+   "tone_src": "guess"
+  },
+  "neonshadow": {
+   "name": "Neon Shadow",
+   "brand": "Mahjong Studios",
+   "group": null,
+   "tone": "transitional",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/45.jpg",
+   "tone_src": "guess"
+  },
+  "oceanbloom": {
+   "name": "Ocean Bloom",
+   "brand": "Mahjong Studios",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/39.jpg",
+   "tone_src": "guess"
+  },
+  "peonygarden": {
+   "name": "Peony Garden",
+   "brand": "Mahjong Studios",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/47.jpg",
+   "tone_src": "guess"
+  },
+  "rosedragon": {
+   "name": "Rose Dragon",
+   "brand": "Mahjong Studios",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/50.jpg",
+   "tone_src": "guess"
+  },
+  "royalsparkle": {
+   "name": "Royal Sparkle",
+   "brand": "Mahjong Studios",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/30.jpg",
+   "tone_src": "guess"
+  },
+  "rubysparkle": {
+   "name": "Ruby Sparkle",
+   "brand": "Mahjong Studios",
+   "group": "Red",
+   "tone": "clean",
+   "dominant": "red",
+   "src": "guess",
+   "img": "fym:t15/31.jpg",
+   "tone_src": "guess"
+  },
+  "sageluxe": {
+   "name": "Sage Luxe",
+   "brand": "Mahjong Studios",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/36.jpg",
+   "tone_src": "guess"
+  },
+  "teallunaflor": {
+   "name": "Teal Lunaflor",
+   "brand": "Mahjong Studios",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/34.jpg",
+   "tone_src": "guess"
+  },
+  "tilesonly": {
+   "name": "Tiles Only",
+   "brand": "Mahjong Studios",
+   "group": null,
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/33.jpg",
+   "tone_src": "guess"
+  },
+  "whiteedit": {
+   "name": "White Edit",
+   "brand": "Mahjong Studios",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/43.jpg",
+   "tone_src": "guess"
+  },
+  "yellowlilacoceanblue": {
+   "name": "Yellow Lilac Ocean Blue",
+   "brand": "Mahjong Studios",
+   "group": "Blue",
+   "tone": "earthy",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/41.jpg",
+   "tone_src": "guess"
+  },
+  "barrierisland": {
+   "name": "Barrier Island",
+   "brand": "Middle & Main Mahjong",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/148.jpg",
+   "tone_src": "guess"
+  },
+  "charleston": {
+   "name": "Charleston",
+   "brand": "Middle & Main Mahjong",
+   "group": "Purple",
+   "tone": "clean",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "fym:t15/151.jpg",
+   "tone_src": "guess"
+  },
+  "palmetto": {
+   "name": "Palmetto",
+   "brand": "Middle & Main Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/150.jpg",
+   "tone_src": "guess"
+  },
+  "peachpine": {
+   "name": "Peach & Pine",
+   "brand": "Middle & Main Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/147.jpg",
+   "tone_src": "guess"
+  },
+  "sunshine": {
+   "name": "Sunshine",
+   "brand": "Middle & Main Mahjong",
+   "group": "Purple",
+   "tone": "clean",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "fym:t15/149.jpg",
+   "tone_src": "guess"
+  },
+  "classicjadenumberedflower": {
+   "name": "Classic Jade Numbered Flower",
+   "brand": "Miss Mahjong",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/63.jpg",
+   "tone_src": "guess"
+  },
+  "classicmalachitenumberedflower": {
+   "name": "Classic Malachite Numbered Flower",
+   "brand": "Miss Mahjong",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/64.jpg",
+   "tone_src": "guess"
+  },
+  "cowgirlamericananumberedflower": {
+   "name": "Cowgirl Americana Numbered Flower",
+   "brand": "Miss Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/60.jpg",
+   "tone_src": "guess"
+  },
+  "darlingnumberedflower": {
+   "name": "Darling Numbered Flower",
+   "brand": "Miss Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/62.jpg",
+   "tone_src": "guess"
+  },
+  "misscatrina": {
+   "name": "Miss Catrina",
+   "brand": "Miss Mahjong",
+   "group": "Purple",
+   "tone": "clean",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "fym:t15/59.jpg",
+   "tone_src": "guess"
+  },
+  "missclassicmalachite": {
+   "name": "Miss Classic Malachite",
+   "brand": "Miss Mahjong",
+   "group": "Green",
+   "tone": null,
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t10/28.jpg",
+   "tone_src": "guess"
+  },
+  "misscowgirl": {
+   "name": "Miss Cowgirl",
+   "brand": "Miss Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/61.jpg",
+   "tone_src": "guess"
+  },
+  "missdarlingcameoblue": {
+   "name": "Miss Darling Cameo Blue",
+   "brand": "Miss Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/65.jpg",
+   "tone_src": "guess"
+  },
+  "missoutofoffice": {
+   "name": "Miss Out Of Office",
+   "brand": "Miss Mahjong",
+   "group": "Yellow & Orange",
+   "tone": "clean",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "fym:t15/58.jpg",
+   "tone_src": "guess"
+  },
+  "crystalconfetti": {
+   "name": "Crystal Confetti",
+   "brand": "My Fair Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/68.jpg",
+   "tone_src": "guess"
+  },
+  "crystalprism": {
+   "name": "Crystal Prism",
+   "brand": "My Fair Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/71.jpg",
+   "tone_src": "guess"
+  },
+  "mahjongtiletakerssetof4": {
+   "name": "Mahjong Tile Takers (Set of 4)",
+   "brand": "My Fair Mahjong",
+   "group": null,
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/77.jpg",
+   "tone_src": "guess"
+  },
+  "thecaliforniaseries": {
+   "name": "The California Series",
+   "brand": "My Fair Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/75.jpg",
+   "tone_src": "guess"
+  },
+  "thehawaiiseries": {
+   "name": "The Hawaii Series",
+   "brand": "My Fair Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/74.jpg",
+   "tone_src": "guess"
+  },
+  "thejubileeseries": {
+   "name": "The Jubilee Series",
+   "brand": "My Fair Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/66.jpg",
+   "tone_src": "guess"
+  },
+  "thelumeraseries": {
+   "name": "The Lumera Series",
+   "brand": "My Fair Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/67.jpg",
+   "tone_src": "guess"
+  },
+  "thenewenglandseries": {
+   "name": "The New England Series",
+   "brand": "My Fair Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/72.jpg",
+   "tone_src": "guess"
+  },
+  "theparkseries": {
+   "name": "The Park Series",
+   "brand": "My Fair Mahjong",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/219.jpg",
+   "tone_src": "guess"
+  },
+  "theplayseries": {
+   "name": "The Play Series",
+   "brand": "My Fair Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/69.jpg",
+   "tone_src": "guess"
+  },
+  "thescandinavianfolkartseries": {
+   "name": "The Scandinavian Folk Art Series",
+   "brand": "My Fair Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/73.jpg",
+   "tone_src": "guess"
+  },
+  "thesouthwestseries": {
+   "name": "The Southwest Series",
+   "brand": "My Fair Mahjong",
+   "group": "Yellow & Orange",
+   "tone": "clean",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "fym:t15/76.jpg",
+   "tone_src": "guess"
+  },
+  "thetexasseries": {
+   "name": "The Texas Series",
+   "brand": "My Fair Mahjong",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/70.jpg",
+   "tone_src": "guess"
+  },
+  "cadetdebutante": {
+   "name": "Cadet Debutante",
+   "brand": "Oh My Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/155.jpg",
+   "tone_src": "guess"
+  },
+  "jardindebutante": {
+   "name": "Jardin Debutante",
+   "brand": "Oh My Mahjong",
+   "group": "Purple",
+   "tone": "clean",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "fym:t15/156.jpg",
+   "tone_src": "guess"
+  },
+  "poppydebutante": {
+   "name": "Poppy Debutante",
+   "brand": "Oh My Mahjong",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/154.jpg",
+   "tone_src": "guess"
+  },
+  "sunburstdebutante": {
+   "name": "Sunburst Debutante",
+   "brand": "Oh My Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/153.jpg",
+   "tone_src": "guess"
+  },
+  "heirloomcollectioncottage": {
+   "name": "Heirloom Collection Cottage",
+   "brand": "Royal Mahjong Society",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/91.jpg",
+   "tone_src": "guess"
+  },
+  "heirloomcollectioncrownjewels": {
+   "name": "Heirloom Collection Crown Jewels",
+   "brand": "Royal Mahjong Society",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/88.jpg",
+   "tone_src": "guess"
+  },
+  "heirloomcollectiongirly": {
+   "name": "Heirloom Collection Girly",
+   "brand": "Royal Mahjong Society",
+   "group": "Purple",
+   "tone": "clean",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "fym:t15/92.jpg",
+   "tone_src": "guess"
+  },
+  "heirloomcollectionisland": {
+   "name": "Heirloom Collection Island",
+   "brand": "Royal Mahjong Society",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/93.jpg",
+   "tone_src": "guess"
+  },
+  "heirloomcollectionmahjroyale": {
+   "name": "Heirloom Collection Mahj Royale",
+   "brand": "Royal Mahjong Society",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/90.jpg",
+   "tone_src": "guess"
+  },
+  "heirloomcollectionnewport": {
+   "name": "Heirloom Collection Newport",
+   "brand": "Royal Mahjong Society",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/94.jpg",
+   "tone_src": "guess"
+  },
+  "heirloomcollectionshore": {
+   "name": "Heirloom Collection Shore",
+   "brand": "Royal Mahjong Society",
+   "group": "Brown",
+   "tone": "transitional",
+   "dominant": "brown",
+   "src": "guess",
+   "img": "fym:t15/89.jpg",
+   "tone_src": "guess"
+  },
+  "december1994": {
+   "name": "December 1994",
+   "brand": "Sunday Mahjong",
+   "group": null,
+   "tone": "clean",
+   "dominant": "dark",
+   "src": "guess",
+   "img": "fym:t15/83.jpg",
+   "tone_src": "guess"
+  },
+  "naturewalk": {
+   "name": "Nature Walk",
+   "brand": "Sunday Mahjong",
+   "group": "Red",
+   "tone": "earthy",
+   "dominant": "red",
+   "src": "tiffany",
+   "img": "assets/tiles/album/nature-walk.png",
+   "note": "Bordeaux wine",
+   "tone_src": "tiffany"
+  },
+  "plumpanda": {
+   "name": "Plum Panda",
+   "brand": "Sunday Mahjong",
+   "group": "Purple",
+   "tone": "transitional",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "assets/tiles/album/plum-panda.png",
+   "tone_src": "guess"
+  },
+  "sunday": {
+   "name": "Sunday",
+   "brand": "Sunday Mahjong",
+   "group": "Yellow & Orange",
+   "tone": "earthy",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "fym:t15/86.jpg",
+   "tone_src": "guess"
+  },
+  "sundayblues": {
+   "name": "Sunday Blues",
+   "brand": "Sunday Mahjong",
+   "group": "Blue",
+   "tone": "transitional",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "assets/tiles/album/sunday-blues.png",
+   "tone_src": "guess"
+  },
+  "classicbeechwood": {
+   "name": "Classic Beechwood",
+   "brand": "Tigre de Tartan",
+   "group": "Brown",
+   "tone": "earthy",
+   "dominant": "brown",
+   "src": "guess",
+   "img": "fym:t15/95.jpg",
+   "tone_src": "guess"
+  },
+  "houseclovers": {
+   "name": "House Clovers",
+   "brand": "Tigre de Tartan",
+   "group": "Green",
+   "tone": "earthy",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/98.jpg",
+   "tone_src": "guess"
+  },
+  "househeartswarmwhite": {
+   "name": "House Hearts Warm White",
+   "brand": "Tigre de Tartan",
+   "group": "Red",
+   "tone": "earthy",
+   "dominant": "red",
+   "src": "guess",
+   "img": "fym:t15/96.jpg",
+   "tone_src": "guess"
+  },
+  "housetigersoyster": {
+   "name": "House Tigers Oyster",
+   "brand": "Tigre de Tartan",
+   "group": "Ivory",
+   "tone": "earthy",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/97.jpg",
+   "tone_src": "guess"
+  },
+  "amethisse": {
+   "name": "Améthisse",
+   "brand": "Virora Mahjong",
+   "group": "Purple",
+   "tone": "clean",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "fym:t15/167.jpg",
+   "tone_src": "guess"
+  },
+  "aveline": {
+   "name": "Aveline",
+   "brand": "Virora Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/159.jpg",
+   "tone_src": "guess"
+  },
+  "florielle": {
+   "name": "Florielle",
+   "brand": "Virora Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/166.jpg",
+   "tone_src": "guess"
+  },
+  "florea": {
+   "name": "Floréa",
+   "brand": "Virora Mahjong",
+   "group": "Purple",
+   "tone": "clean",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "fym:t15/161.jpg",
+   "tone_src": "guess"
+  },
+  "iriselle": {
+   "name": "Iriselle",
+   "brand": "Virora Mahjong",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/168.jpg",
+   "tone_src": "guess"
+  },
+  "lilacee": {
+   "name": "Lilacée",
+   "brand": "Virora Mahjong",
+   "group": "Yellow & Orange",
+   "tone": "clean",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "fym:t15/160.jpg",
+   "tone_src": "guess"
+  },
+  "marivelle": {
+   "name": "Marivelle",
+   "brand": "Virora Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/165.jpg",
+   "tone_src": "guess"
+  },
+  "nivaleeglacierblue": {
+   "name": "Nivalee (Glacier Blue)",
+   "brand": "Virora Mahjong",
+   "group": "Holiday",
+   "tone": null,
+   "dominant": null,
+   "src": "guess",
+   "img": "fym:t13/2.jpg",
+   "tone_src": "guess"
+  },
+  "nivaleeemeraldgreen": {
+   "name": "Nivalee Emerald Green",
+   "brand": "Virora Mahjong",
+   "group": "Holiday",
+   "tone": "clean",
+   "dominant": "orange",
+   "src": "guess",
+   "img": "fym:t15/157.jpg",
+   "tone_src": "guess"
+  },
+  "petalee": {
+   "name": "Petalée",
+   "brand": "Virora Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "assets/tiles/album/petalee.jpg",
+   "tone_src": "guess"
+  },
+  "rosanelle": {
+   "name": "Rosanelle",
+   "brand": "Virora Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/164.jpg",
+   "tone_src": "guess"
+  },
+  "sylvaria": {
+   "name": "Sylvaria",
+   "brand": "Virora Mahjong",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/158.jpg",
+   "tone_src": "guess"
+  },
+  "tinselleemeraldgreen": {
+   "name": "Tinselle (Emerald Green)",
+   "brand": "Virora Mahjong",
+   "group": "Holiday",
+   "tone": null,
+   "dominant": null,
+   "src": "guess",
+   "img": "fym:t13/3.jpg",
+   "tone_src": "guess"
+  },
+  "tinsellerubyred": {
+   "name": "Tinselle (Ruby Red)",
+   "brand": "Virora Mahjong",
+   "group": "Holiday",
+   "tone": null,
+   "dominant": null,
+   "src": "guess",
+   "img": "fym:t13/4.jpg",
+   "tone_src": "guess"
+  },
+  "viozelle": {
+   "name": "Viozelle",
+   "brand": "Virora Mahjong",
+   "group": "Purple",
+   "tone": "clean",
+   "dominant": "purple",
+   "src": "guess",
+   "img": "fym:t15/162.jpg",
+   "tone_src": "guess"
+  },
+  "elanisse": {
+   "name": "Élanisse",
+   "brand": "Virora Mahjong",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/163.jpg",
+   "tone_src": "guess"
+  },
+  "aloha": {
+   "name": "Aloha",
+   "brand": "Yellow Mountain Imports",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/194.jpg",
+   "tone_src": "guess"
+  },
+  "atlantica": {
+   "name": "Atlantica",
+   "brand": "Yellow Mountain Imports",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/195.jpg",
+   "tone_src": "guess"
+  },
+  "canyonclay": {
+   "name": "Canyon Clay",
+   "brand": "Yellow Mountain Imports",
+   "group": "Brown",
+   "tone": "earthy",
+   "dominant": "brown",
+   "src": "guess",
+   "img": "fym:t15/196.jpg",
+   "tone_src": "guess"
+  },
+  "celestialharmony": {
+   "name": "Celestial Harmony",
+   "brand": "Yellow Mountain Imports",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/197.jpg",
+   "tone_src": "guess"
+  },
+  "chinoise": {
+   "name": "Chinoise",
+   "brand": "Yellow Mountain Imports",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/178.jpg",
+   "tone_src": "guess"
+  },
+  "chinoiseii": {
+   "name": "Chinoise II",
+   "brand": "Yellow Mountain Imports",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/198.jpg",
+   "tone_src": "guess"
+  },
+  "classicluxe": {
+   "name": "Classic Luxe",
+   "brand": "Yellow Mountain Imports",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/199.jpg",
+   "tone_src": "guess"
+  },
+  "classicroyaleii": {
+   "name": "Classic Royale II",
+   "brand": "Yellow Mountain Imports",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/200.jpg",
+   "tone_src": "guess"
+  },
+  "easyreader": {
+   "name": "Easy Reader",
+   "brand": "Yellow Mountain Imports",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/173.jpg",
+   "tone_src": "guess"
+  },
+  "godoffortune": {
+   "name": "God of Fortune",
+   "brand": "Yellow Mountain Imports",
+   "group": "Ivory",
+   "tone": "transitional",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/175.jpg",
+   "tone_src": "guess"
+  },
+  "goldenfortune": {
+   "name": "Golden Fortune",
+   "brand": "Yellow Mountain Imports",
+   "group": "Yellow & Orange",
+   "tone": "earthy",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "fym:t15/189.jpg",
+   "tone_src": "guess"
+  },
+  "harbormint": {
+   "name": "Harbor Mint",
+   "brand": "Yellow Mountain Imports",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/201.jpg",
+   "tone_src": "guess"
+  },
+  "harborsnow": {
+   "name": "Harbor Snow",
+   "brand": "Yellow Mountain Imports",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/202.jpg",
+   "tone_src": "guess"
+  },
+  "harbortide": {
+   "name": "Harbor Tide",
+   "brand": "Yellow Mountain Imports",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/203.jpg",
+   "tone_src": "guess"
+  },
+  "heather": {
+   "name": "Heather",
+   "brand": "Yellow Mountain Imports",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/204.jpg",
+   "tone_src": "guess"
+  },
+  "huntington": {
+   "name": "Huntington",
+   "brand": "Yellow Mountain Imports",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/179.jpg",
+   "tone_src": "guess"
+  },
+  "indigobay": {
+   "name": "Indigo Bay",
+   "brand": "Yellow Mountain Imports",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/205.jpg",
+   "tone_src": "guess"
+  },
+  "indigotides": {
+   "name": "Indigo Tides",
+   "brand": "Yellow Mountain Imports",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/206.jpg",
+   "tone_src": "guess"
+  },
+  "ivorypinstripe": {
+   "name": "Ivory Pinstripe",
+   "brand": "Yellow Mountain Imports",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/207.jpg",
+   "tone_src": "guess"
+  },
+  "ivoryridge": {
+   "name": "Ivory Ridge",
+   "brand": "Yellow Mountain Imports",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/208.jpg",
+   "tone_src": "guess"
+  },
+  "ivorystripes": {
+   "name": "Ivory Stripes",
+   "brand": "Yellow Mountain Imports",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/209.jpg",
+   "tone_src": "guess"
+  },
+  "jadehorizon": {
+   "name": "Jade Horizon",
+   "brand": "Yellow Mountain Imports",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/210.jpg",
+   "tone_src": "guess"
+  },
+  "jetset": {
+   "name": "Jet Set",
+   "brand": "Yellow Mountain Imports",
+   "group": null,
+   "tone": "clean",
+   "dominant": "dark",
+   "src": "guess",
+   "img": "fym:t15/176.jpg",
+   "tone_src": "guess"
+  },
+  "koi": {
+   "name": "Koi",
+   "brand": "Yellow Mountain Imports",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/185.jpg",
+   "tone_src": "guess"
+  },
+  "littlebird": {
+   "name": "Little Bird",
+   "brand": "Yellow Mountain Imports",
+   "group": "Ivory",
+   "tone": "transitional",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/187.jpg",
+   "tone_src": "guess"
+  },
+  "mojave": {
+   "name": "Mojave",
+   "brand": "Yellow Mountain Imports",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/211.jpg",
+   "tone_src": "guess"
+  },
+  "oceana": {
+   "name": "Oceana",
+   "brand": "Yellow Mountain Imports",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/171.jpg",
+   "tone_src": "guess"
+  },
+  "outlawsofthemarshmahjongtreasureset": {
+   "name": "Outlaws of the Marsh Mahjong Treasure Set",
+   "brand": "Yellow Mountain Imports",
+   "group": "Brown",
+   "tone": "earthy",
+   "dominant": "brown",
+   "src": "guess",
+   "img": "fym:t15/177.jpg",
+   "tone_src": "guess"
+  },
+  "panda": {
+   "name": "Panda",
+   "brand": "Yellow Mountain Imports",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/174.jpg",
+   "tone_src": "guess"
+  },
+  "papillon": {
+   "name": "Papillon",
+   "brand": "Yellow Mountain Imports",
+   "group": "Yellow & Orange",
+   "tone": "transitional",
+   "dominant": "yellow",
+   "src": "guess",
+   "img": "fym:t15/180.jpg",
+   "tone_src": "guess"
+  },
+  "pattaya": {
+   "name": "Pattaya",
+   "brand": "Yellow Mountain Imports",
+   "group": "Brown",
+   "tone": "clean",
+   "dominant": "brown",
+   "src": "guess",
+   "img": "fym:t15/183.jpg",
+   "tone_src": "guess"
+  },
+  "peony": {
+   "name": "Peony",
+   "brand": "Yellow Mountain Imports",
+   "group": "Brown",
+   "tone": "earthy",
+   "dominant": "brown",
+   "src": "guess",
+   "img": "fym:t15/184.jpg",
+   "tone_src": "guess"
+  },
+  "peonyblush": {
+   "name": "Peony Blush",
+   "brand": "Yellow Mountain Imports",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/212.jpg",
+   "tone_src": "guess"
+  },
+  "pepper": {
+   "name": "Pepper",
+   "brand": "Yellow Mountain Imports",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/182.jpg",
+   "tone_src": "guess"
+  },
+  "pinksparkles": {
+   "name": "Pink Sparkles",
+   "brand": "Yellow Mountain Imports",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/186.jpg",
+   "tone_src": "guess"
+  },
+  "rosehill": {
+   "name": "Rosehill",
+   "brand": "Yellow Mountain Imports",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/213.jpg",
+   "tone_src": "guess"
+  },
+  "sakura": {
+   "name": "Sakura",
+   "brand": "Yellow Mountain Imports",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/181.jpg",
+   "tone_src": "guess"
+  },
+  "sakurapink": {
+   "name": "Sakura Pink",
+   "brand": "Yellow Mountain Imports",
+   "group": "Pink",
+   "tone": "clean",
+   "dominant": "pink",
+   "src": "guess",
+   "img": "fym:t15/214.jpg",
+   "tone_src": "guess"
+  },
+  "theclassic": {
+   "name": "The Classic",
+   "brand": "Yellow Mountain Imports",
+   "group": "Ivory",
+   "tone": "clean",
+   "dominant": "neutral",
+   "src": "guess",
+   "img": "fym:t15/188.jpg",
+   "tone_src": "guess"
+  },
+  "toucan": {
+   "name": "Toucan",
+   "brand": "Yellow Mountain Imports",
+   "group": "Blue",
+   "tone": "clean",
+   "dominant": "blue",
+   "src": "guess",
+   "img": "fym:t15/172.jpg",
+   "tone_src": "guess"
+  },
+  "verdantspring": {
+   "name": "Verdant Spring",
+   "brand": "Yellow Mountain Imports",
+   "group": "Green",
+   "tone": "clean",
+   "dominant": "green",
+   "src": "guess",
+   "img": "fym:t15/216.jpg",
+   "tone_src": "guess"
+  },
+  "jade": {
+   "name": "Jade",
+   "brand": "",
+   "group": null,
+   "tone": "transitional",
+   "dominant": "green",
+   "src": "guess",
+   "img": "assets/tiles/album/jade.jpg",
+   "tone_src": "guess"
+  },
+  "malachite": {
+   "name": "Malachite",
+   "brand": "",
+   "group": null,
+   "tone": "clean",
+   "dominant": "red",
+   "src": "guess",
+   "img": "assets/tiles/album/malachite.jpg",
+   "tone_src": "guess"
+  },
+  "heritage": {
+   "name": "Heritage",
+   "brand": "",
+   "group": null,
+   "tone": "earthy",
+   "dominant": "brown",
+   "src": "guess",
+   "img": "assets/tiles/album/heritage.jpg",
+   "tone_src": "guess"
+  }
+ }
+}

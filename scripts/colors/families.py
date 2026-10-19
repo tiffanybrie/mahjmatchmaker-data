@@ -11,8 +11,13 @@ CODES = ['pink', 'red', 'orange', 'yellow', 'gold', 'green', 'teal', 'blue', 'pu
 LABEL = {'pink': 'Pink', 'red': 'Red', 'orange': 'Orange', 'yellow': 'Yellow', 'gold': 'Gold/Mustard', 'green': 'Green',
          'teal': 'Teal/Aqua', 'blue': 'Blue', 'purple': 'Purple', 'brown': 'Brown & Tan', 'neutral': 'Neutral & Ivory',
          'bw': 'Black & White', 'dark': 'Dark & Moody', 'multi': 'Multicolor'}
-TONES = ['bright', 'muted', 'pastel']
-TONE_LABEL = {'bright': 'Clean/Bright', 'muted': 'Muted/Earthy', 'pastel': 'Pastel'}
+TONES = ['bright', 'pastel', 'muted', 'blend']
+TONE_LABEL = {'bright': 'Clean/Bright', 'pastel': 'Pastel', 'muted': 'Earthy/Muted', 'blend': 'Blend'}
+# Tiffany's color theory (doc 76): clean = tints (color + white: brights and pastels); earthy = shades (color + black or its
+# complement -> toward brown). A solid clean tile on a solid earthy mat (or the reverse) fails. BLEND mats really mix clean and
+# earthy colors (Britt Mills olive + bright pink; Jade's many shades and tints), so either kind of tile can work on them.
+TILE_TONES = ['clean', 'transitional', 'earthy']
+TILE_TONE_LABEL = {'clean': 'Clean', 'transitional': 'Transitional', 'earthy': 'Earthy'}
 COLORFAM = set(CODES) - {'neutral', 'bw', 'dark', 'multi'}
 
 
@@ -77,6 +82,20 @@ def read_image(path, N=96):
         if L > 0.7 and S < 0.75: tone = 'pastel'
         elif S >= 0.5 and brownish < 0.25 and L >= 0.3: tone = 'bright'
         else: tone = 'muted'
+        # Blend: real amounts of BOTH clean (tints: saturated, light-to-mid, not brown/gold) and earthy (brown/gold, dulled or
+        # deep colored) pixels, or one family spread across many shades and tints (Jade).
+        # Blend (doc 76): real amounts of BOTH clean tints and earthy colors. Earthy = brown/gold, olive, dusty/dulled, or a
+        # deep saturated shade (deep teal, forest, wine). Clean = saturated, light-to-mid, not earthy.
+        cm2 = colm | ((f == 'dark') & (s >= 0.25))
+        fc = f[cm2]; sc = s[cm2]; lc = l[cm2]; hc = h[cm2]; w2 = w[cm2]
+        olive = (hc >= 45) & (hc < 85) & (lc < 0.5) & (sc < 0.6)
+        deep = (lc < 0.3) & (sc >= 0.25)
+        earthy = np.isin(fc, ['brown', 'gold']) | olive | ((sc < 0.3) & (lc >= 0.2) & (lc < 0.6)) | deep
+        clean = ~earthy & (sc >= 0.45) & (lc >= 0.4)
+        tw = w2.sum(); ce = float(w2[clean].sum() / tw); ea = float(w2[earthy].sum() / tw)
+        colfrac = float(w2.sum() / w.sum())
+        if colfrac >= 0.3 and ce >= 0.24 and ea >= 0.4:  # tuned on a 20-mat hand check (Oct 19): 15/16 clear cases
+            tone = 'blend'
     else:
         tone = 'muted'
     return fw, tone, panel
