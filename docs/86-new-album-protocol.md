@@ -93,3 +93,7 @@ Checked all 50 album tile photos (assets/tiles/album). Most OMM sets have a prop
 - **Petalee:** a faces grid plus a sparse pile on white; you can't see the backs or layers well → check the brand site, else build one.
 - **Sunday Mahjong sets (Hummingbird, Plum Panda, Nature Walk, Sunday Blues):** big "SUNDAY MAHJONG" watermarks and dark backgrounds → look for cleaner brand images.
 - **Malachite:** OK as is (Tiffany, Oct 19). The tiles sit at an angle so the layers show. Miss Mahjong seems to be moving to this photo style, so expect more of it.
+
+## Links page (live Oct 19, 6:15pm)
+- mahjmatchmaker.com/links is live (Squarespace page "Links", one code block; built from scripts/covers/holiday/links_build.py → links_squarespace_code_block.html; images from assets/links via jsDelivr). Instagram bio link 1 = /links ("Find your match + shop my picks 💕"), link 2 = FB group.
+- Launch week: edit NEWSET in links_build.py (the top feature card), rebuild, push, warm jsDelivr, replace the code block. On 10/27 flip FYM_LIVE=True so the Find Your Match card links.
