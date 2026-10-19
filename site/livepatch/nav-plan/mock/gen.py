@@ -35,6 +35,7 @@ a{color:inherit;text-decoration:none}
 .drop .lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#9aa5bb;padding:6px 22px 3px}
 .burger{width:36px;display:flex;flex-direction:column;gap:9px}.burger i{display:block;height:2px;background:var(--pink)}
 .mpill{display:none}
+.hd .burger{display:none}
 /* hero */
 .hero{position:relative;overflow:hidden;background:url(A/hero/loveshackfancy-coquette-fleur-mat-hero.jpg) center/cover}
 .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.80) 0%,rgba(255,255,255,.62) 46%,rgba(255,255,255,.18) 100%)}
@@ -60,7 +61,7 @@ a{color:inherit;text-decoration:none}
 .swipes{position:absolute;z-index:3;left:50%;bottom:-6px;transform:translateX(-50%);display:flex;gap:26px}
 .swipes span{width:66px;height:66px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:30px;box-shadow:0 8px 20px rgba(31,58,107,.22)}
 .swipes .no{color:#9aa5bb}.swipes .yes{color:var(--pink)}
-.itsamatch{position:absolute;z-index:4;left:50%;top:44%;transform:translate(-50%,-50%) rotate(-6deg);font-family:'Shrikhand',serif;font-size:40px;color:#fff;background:var(--pink);padding:6px 20px 10px;border-radius:12px;box-shadow:0 8px 20px rgba(214,83,122,.4);white-space:nowrap}
+.itsamatch{position:absolute;z-index:4;left:50%;top:6px;transform:translate(-50%,-50%) rotate(-5deg);font-family:'Shrikhand',serif;font-size:30px;color:#fff;background:var(--pink);padding:6px 20px 10px;border-radius:12px;box-shadow:0 8px 20px rgba(214,83,122,.4);white-space:nowrap}
 .signup{display:flex;gap:10px;max-width:470px;margin-top:4px}
 .signup input{flex:1;min-width:0;font:inherit;font-size:16px;border:2px solid #f2c6d3;background:#fff;border-radius:9px;padding:15px 16px;color:var(--navy)}
 .signup .btn{font-size:16.5px;padding:15px 24px;white-space:nowrap}
@@ -127,9 +128,11 @@ a{color:inherit;text-decoration:none}
 
 @media (max-width:760px){
  .hd{height:96px;padding:0 22px}
- .hd .logo img{height:50px}
+ .hd .logo img{height:40px}
  .nav{display:none}
- .mpill{display:inline-flex;font-size:13.5px;padding:9px 13px;border-radius:99px;margin-right:16px}
+ .hd .burger{display:flex}
+ .mpill{display:inline-flex;font-size:12.5px;padding:9px 12px;border-radius:99px;margin-right:14px;white-space:nowrap}
+ .burger{width:30px}
  .hd .rt{display:flex;align-items:center}
  .hero{background-position:60% center}
  .hero::before{background:linear-gradient(180deg,rgba(255,255,255,.82) 0%,rgba(255,255,255,.7) 55%,rgba(255,255,255,.35) 100%)}
@@ -145,7 +148,7 @@ a{color:inherit;text-decoration:none}
  .fan .c2{transform:translateX(-50%) translateX(78px) rotate(10deg) scale(.86);top:34px}
  .fan .stamp{width:96px;height:96px;right:2%;top:-4px}.fan .stamp b{font-size:26px}
  .swipes span{width:56px;height:56px;font-size:26px}
- .itsamatch{font-size:30px}
+ .itsamatch{font-size:24px}
  .signup{flex-direction:column;margin:0 auto}
  .signup .btn{width:100%}
  .albums{padding:46px 16px 50px}.albums h2{font-size:31px}.albums .sub{font-size:16px}
@@ -188,7 +191,7 @@ def header(open_=None, pill=True):
     return f'''<header class="hd"><a class="logo" href="/"><img src="img/logo.png" alt="Mahj Matchmaker"></a>
 <nav class="nav"><div class="it{' on' if m else ''}">Mahjong Matches <span class="car">&#9662;</span>{m}</div><div class="it">Discount Codes</div><div class="it">Blog</div><div class="it">Shop</div><div class="it{' on' if c else ''}">Community <span class="car">&#9662;</span>{c}</div>
 <a class="btn cta" href="{FYM}"><span class="h">&#9829;</span> Find your match</a></nav>
-<div class="rt">{'<a class="btn mpill" href="'+FYM+'">&#9829; Find your match</a>' if pill else ''}<div class="burger mob"><i></i><i></i></div></div></header>'''
+<div class="rt">{'<a class="btn mpill" href="'+FYM+'">Find your match</a>' if pill else ''}<div class="burger mob"><i></i><i></i></div></div></header>'''
 
 
 FOOT = f'''<footer class="ft"><div class="row">
