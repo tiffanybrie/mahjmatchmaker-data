@@ -1,41 +1,357 @@
 {
-  "_note": "Album color cards (The Tile Edit). Built by scripts/colorcards/build.py (Oct 18). Backs/faces read from each set's approved tile photo (doc 34: backs + layers, not faces). Racks = config/tile-racks-picks.json final_lists; sets with no approved list use her universal racks and say so in Ready to Ship. Taglines use only facts she has stated.",
-  "sets": {
-    "shangri-la": {"name": "Shangri La", "brand": "Oh My Mahjong", "col": "#1a7f63", "tile": "assets/tiles/album/shangri-la.jpg",
-      "sub": "Emerald green with navy layers", "tag": ["A retired set", "from the Oh My Mahjong vault"],
-      "backs": [["EMERALD", "#0d6e5c", "solid back"], ["NAVY", "#323b54", "layer"]],
-      "faces": [["PINK", "#e5609a"], ["JADE", "#3fae8c"], ["NAVY", "#2b3a8c"], ["RED", "#d23b3b"]],
-      "racks": ["Peace Love Mahjong Oak", "Middle & Main Hawksbill Heritage Tortoise"], "racks_pending": true,
-      "mats": ["Jade", "Camellia", "Esme"]},
-    "lilac-soiree": {"name": "Lilac Soiree", "brand": "Oh My Mahjong", "col": "#8a6fb5", "tile": "assets/tiles/album/lilac-soiree.jpg",
-      "sub": "Lilac backs with navy & blush layers", "tag": ["A retired set", "from the Oh My Mahjong vault"],
-      "backs": [["LILAC", "#6356a2", "solid back"], ["NAVY", "#1c2266", "layer"], ["BLUSH", "#f0d5cc", "layer"]],
-      "faces": [["ROYAL BLUE", "#2a3fc0"], ["PURPLE", "#7b4fb5"], ["PINK", "#e45b8f"], ["GREEN", "#2fa84f"]],
-      "racks": ["Bird & Bamboo Dark Blue", "Bird & Bamboo Ballet Pink", "Peace Love Mahjong Oak"],
-      "mats": ["Chantilly", "Jade", "Astor"]},
-    "preppy-soiree": {"name": "Preppy Soiree", "brand": "Oh My Mahjong", "col": "#5a7f9e", "tile": "assets/tiles/album/preppy-soiree.jpg",
-      "sub": "Slate blue with navy & plum layers", "tag": ["A retired set", "from the Oh My Mahjong vault"],
-      "backs": [["SLATE BLUE", "#628dad", "solid back"], ["NAVY", "#233c55", "layer"], ["PLUM", "#6b3a55", "layer"]],
-      "faces": [["PURPLE", "#7d55b8"], ["LILAC", "#b59ad6"], ["PINK", "#e86aa0"], ["GREEN", "#4fae5c"]],
-      "racks": ["Peace Love Mahjong Oak", "Middle & Main Hawksbill Heritage Tortoise"], "racks_pending": true,
-      "mats": ["Chantilly", "Jade", "Hawthorne"]},
-    "spring-love": {"name": "Spring Love", "brand": "Oh My Mahjong", "col": "#e0789c", "tile": "assets/tiles/album/spring-love.jpg",
-      "sub": "Watermelon pink with lime & lavender layers", "tag": ["A retired set", "from the Oh My Mahjong vault"],
-      "backs": [["WATERMELON", "#e23e62", "solid back"], ["LIME", "#b8d86a", "layer"], ["LAVENDER", "#a99bd0", "layer"]],
-      "faces": [["MAGENTA", "#c8257a"], ["GREEN", "#2f9d5a"], ["PURPLE", "#7a5bb0"]],
-      "racks": ["Bird & Bamboo Lime Green", "Bird & Bamboo Lavender", "Middle & Main Scalloped Beechwood"],
-      "mats": ["Zen Glow", "Vivienne", "Goldie"]},
-    "papaya-spritz": {"name": "Papaya Spritz", "brand": "Oh My Mahjong", "col": "#e0702a", "tile": "assets/tiles/album/papaya-spritz.jpg",
-      "sub": "Papaya orange with lavender & lime layers", "tag": ["50 mat matches,", "my top picks first"],
-      "backs": [["PAPAYA", "#df772f", "solid back"], ["LAVENDER", "#a99bd0", "layer"], ["LIME", "#c4dc8c", "layer"]],
-      "faces": [["PINK", "#ef7aa0"], ["TEAL", "#3fb8b0"], ["LIME", "#8fcf4f"], ["LAVENDER", "#9f8fd6"]],
-      "racks": ["Bird & Bamboo Lavender", "Peace Love Mahjong Oak", "Peace Love Mahjong Chartreuse"],
-      "mats": ["Heiress", "Press for Mahjong", "Greenly"]},
-    "sunday-tile-set": {"name": "Sunday", "brand": "Sunday Mahjong", "col": "#9a6a1f", "tile": "SCRATCH:sunday_hd.jpg",
-      "sub": "Butterscotch backs with ivory faces", "tag": ["The set I own, from", "my favorite tile brand"],
-      "backs": [["BUTTERSCOTCH", "#b58438", "solid back"], ["IVORY", "#f2e6cc", "face"]],
-      "faces": [["RED", "#c0392b"], ["TEAL", "#2a8c8c"], ["NAVY", "#24375e"], ["GREEN", "#4f7a3a"]],
-      "racks": ["Middle & Main Hawksbill Heritage Tortoise", "Bam Bird Boutique Walnut", "Peace Love Mahjong Oak"],
-      "mats": ["Carson Vintage", "Brownstone Bloom", "Autumn Saffron"]}
+ "_note": "Album color cards (The Tile Edit). Built by scripts/colorcards/build.py (Oct 18). Backs/faces read from each set's approved tile photo (doc 34: backs + layers, not faces). Racks = config/tile-racks-picks.json final_lists; sets with no approved list use her universal racks and say so in Ready to Ship. Taglines use only facts she has stated.",
+ "sets": {
+  "shangri-la": {
+   "name": "Shangri La",
+   "brand": "Oh My Mahjong",
+   "col": "#1a7f63",
+   "tile": "assets/tiles/album/shangri-la.jpg",
+   "sub": "Emerald green with navy layers",
+   "tag": [
+    "A retired set",
+    "from the Oh My Mahjong vault"
+   ],
+   "backs": [
+    [
+     "EMERALD",
+     "#0d6e5c",
+     "solid back"
+    ],
+    [
+     "NAVY",
+     "#323b54",
+     "layer"
+    ]
+   ],
+   "faces": [
+    [
+     "PINK",
+     "#e5609a"
+    ],
+    [
+     "JADE",
+     "#3fae8c"
+    ],
+    [
+     "NAVY",
+     "#2b3a8c"
+    ],
+    [
+     "RED",
+     "#d23b3b"
+    ]
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Middle & Main Hawksbill Heritage Tortoise"
+   ],
+   "racks_pending": true,
+   "mats": [
+    "Jade",
+    "Camellia",
+    "Esme"
+   ]
+  },
+  "lilac-soiree": {
+   "name": "Lilac Soiree",
+   "brand": "Oh My Mahjong",
+   "col": "#8a6fb5",
+   "tile": "assets/tiles/album/lilac-soiree.jpg",
+   "sub": "Lilac backs with navy & blush layers",
+   "tag": [
+    "A retired set",
+    "from the Oh My Mahjong vault"
+   ],
+   "backs": [
+    [
+     "LILAC",
+     "#6356a2",
+     "solid back"
+    ],
+    [
+     "NAVY",
+     "#1c2266",
+     "layer"
+    ],
+    [
+     "BLUSH",
+     "#f0d5cc",
+     "layer"
+    ]
+   ],
+   "faces": [
+    [
+     "ROYAL BLUE",
+     "#2a3fc0"
+    ],
+    [
+     "PURPLE",
+     "#7b4fb5"
+    ],
+    [
+     "PINK",
+     "#e45b8f"
+    ],
+    [
+     "GREEN",
+     "#2fa84f"
+    ]
+   ],
+   "racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Ballet Pink",
+    "Peace Love Mahjong Oak"
+   ],
+   "mats": [
+    "Chantilly",
+    "Jade",
+    "Astor"
+   ]
+  },
+  "preppy-soiree": {
+   "name": "Preppy Soiree",
+   "brand": "Oh My Mahjong",
+   "col": "#5a7f9e",
+   "tile": "assets/tiles/album/preppy-soiree.jpg",
+   "sub": "Slate blue with navy & plum layers",
+   "tag": [
+    "A retired set",
+    "from the Oh My Mahjong vault"
+   ],
+   "backs": [
+    [
+     "SLATE BLUE",
+     "#628dad",
+     "solid back"
+    ],
+    [
+     "NAVY",
+     "#233c55",
+     "layer"
+    ],
+    [
+     "PLUM",
+     "#6b3a55",
+     "layer"
+    ]
+   ],
+   "faces": [
+    [
+     "PURPLE",
+     "#7d55b8"
+    ],
+    [
+     "LILAC",
+     "#b59ad6"
+    ],
+    [
+     "PINK",
+     "#e86aa0"
+    ],
+    [
+     "GREEN",
+     "#4fae5c"
+    ]
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Middle & Main Hawksbill Heritage Tortoise"
+   ],
+   "racks_pending": true,
+   "mats": [
+    "Chantilly",
+    "Jade",
+    "Hawthorne"
+   ]
+  },
+  "spring-love": {
+   "name": "Spring Love",
+   "brand": "Oh My Mahjong",
+   "col": "#e0789c",
+   "tile": "assets/tiles/album/spring-love.jpg",
+   "sub": "Watermelon pink with lime & lavender layers",
+   "tag": [
+    "A retired set",
+    "from the Oh My Mahjong vault"
+   ],
+   "backs": [
+    [
+     "WATERMELON",
+     "#e23e62",
+     "solid back"
+    ],
+    [
+     "LIME",
+     "#b8d86a",
+     "layer"
+    ],
+    [
+     "LAVENDER",
+     "#a99bd0",
+     "layer"
+    ]
+   ],
+   "faces": [
+    [
+     "MAGENTA",
+     "#c8257a"
+    ],
+    [
+     "GREEN",
+     "#2f9d5a"
+    ],
+    [
+     "PURPLE",
+     "#7a5bb0"
+    ]
+   ],
+   "racks": [
+    "Bird & Bamboo Lime Green",
+    "Bird & Bamboo Lavender",
+    "Middle & Main Scalloped Beechwood"
+   ],
+   "mats": [
+    "Zen Glow",
+    "Vivienne",
+    "Goldie"
+   ]
+  },
+  "papaya-spritz": {
+   "name": "Papaya Spritz",
+   "brand": "Oh My Mahjong",
+   "col": "#e0702a",
+   "tile": "assets/tiles/album/papaya-spritz.jpg",
+   "sub": "Papaya orange with lavender & lime layers",
+   "tag": [
+    "50 mat matches,",
+    "my top picks first"
+   ],
+   "backs": [
+    [
+     "PAPAYA",
+     "#df772f",
+     "solid back"
+    ],
+    [
+     "LAVENDER",
+     "#a99bd0",
+     "layer"
+    ],
+    [
+     "LIME",
+     "#c4dc8c",
+     "layer"
+    ]
+   ],
+   "faces": [
+    [
+     "PINK",
+     "#ef7aa0"
+    ],
+    [
+     "TEAL",
+     "#3fb8b0"
+    ],
+    [
+     "LIME",
+     "#8fcf4f"
+    ],
+    [
+     "LAVENDER",
+     "#9f8fd6"
+    ]
+   ],
+   "racks": [
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Oak",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mats": [
+    "Heiress",
+    "Press for Mahjong",
+    "Greenly"
+   ],
+   "rack_imgs": {
+    "Peace Love Mahjong Oak": "assets/racks/card/peace-love-mahjong-oak.png",
+    "Peace Love Mahjong Chartreuse": "assets/racks/card/peace-love-mahjong-chartreuse.png"
+   },
+   "mat_imgs": {
+    "Heiress": "assets/colorcards/papaya-spritz/mats/heiress-britt-mills.jpg",
+    "Press for Mahjong": "assets/colorcards/papaya-spritz/mats/press-for-mahjong-anders-ruff.jpg",
+    "Greenly": "assets/colorcards/papaya-spritz/mats/greenly-mahj-and-vine.jpg"
+   },
+   "profile_line": [
+    "Her type: pink with a papaya streak.",
+    "Open to periwinkle. Opposites attract."
+   ],
+   "profile_line_options": {
+    "A": [
+     "Her type: pink with a papaya streak.",
+     "Open to periwinkle. Opposites attract."
+    ],
+    "B": [
+     "Looking for: someone who can handle",
+     "papaya, lavender and a little lime."
+    ],
+    "C": [
+     "Seeking: pink, peach or periwinkle.",
+     "Must be comfortable around bright color."
+    ]
+   },
+   "shop": "Shop OMM · code MAHJMATCH",
+   "shop_m": "Code MAHJMATCH on tiles, racks & mats",
+   "_oct19": "Dating-profile line replaces the motif caption (Tiffany Oct 19, DRAFT until she picks A/B/C on Ready to Ship)."
+  },
+  "sunday-tile-set": {
+   "name": "Sunday",
+   "brand": "Sunday Mahjong",
+   "col": "#9a6a1f",
+   "tile": "SCRATCH:sunday_hd.jpg",
+   "sub": "Butterscotch backs with ivory faces",
+   "tag": [
+    "The set I own, from",
+    "my favorite tile brand"
+   ],
+   "backs": [
+    [
+     "BUTTERSCOTCH",
+     "#b58438",
+     "solid back"
+    ],
+    [
+     "IVORY",
+     "#f2e6cc",
+     "face"
+    ]
+   ],
+   "faces": [
+    [
+     "RED",
+     "#c0392b"
+    ],
+    [
+     "TEAL",
+     "#2a8c8c"
+    ],
+    [
+     "NAVY",
+     "#24375e"
+    ],
+    [
+     "GREEN",
+     "#4f7a3a"
+    ]
+   ],
+   "racks": [
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Bam Bird Boutique Walnut",
+    "Peace Love Mahjong Oak"
+   ],
+   "mats": [
+    "Carson Vintage",
+    "Brownstone Bloom",
+    "Autumn Saffron"
+   ]
   }
+ }
 }

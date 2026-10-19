@@ -1,0 +1,72 @@
+{
+  "slug": "rackin-rudolph",
+  "title": "Rackin' Rudolph",
+  "tagline": "a reindeer holiday table",
+  "kicker": {
+    "amazon": "shop the look",
+    "social": "shop the look \u00b7 link in bio",
+    "pinterest": "shop the look \u00b7 mahjmatchmaker.com"
+  },
+  "brand_mark": {
+    "amazon": true,
+    "social": true,
+    "pinterest": true
+  },
+  "theme": {
+    "title": "#b3202a",
+    "tagline": "#1f5a3a",
+    "ink": "#2b2623",
+    "paper": "#faf3ea"
+  },
+  "_items_doc": "Order = reveal order for Story frames and Reel. role picks the zone. kind: cutout (transparent PNG), round (circle PNG), flat (photo crop, no frame), photo (white-framed card). partner:true items need an 'amazon' swap or they drop out of the Amazon version.",
+  "items": [
+    {
+      "role": "mat",
+      "kind": "cutout",
+      "src": "assets/moodboards/rackin-rudolph/cutouts/mat.png",
+      "label": "santa + reindeer mat",
+      "asin": "B0H752GBYX"
+    },
+    {
+      "role": "tiles_pile",
+      "kind": "round",
+      "src": "assets/moodboards/rackin-rudolph/cutouts/tiles-pile-round.png",
+      "label": "red-back\nchristmas tiles",
+      "asin": "B0HHHQKKFD"
+    },
+    {
+      "role": "tiles_faces",
+      "kind": "flat",
+      "src": "assets/moodboards/rackin-rudolph/cutouts/tiles-faces.jpg",
+      "asin": "B0HHHQKKFD"
+    },
+    {
+      "role": "accent1",
+      "kind": "cutout",
+      "src": "assets/moodboards/rackin-rudolph/cutouts/reindeer-box.png",
+      "label": "reindeer trinket box",
+      "asin": "B0DGLWD53S"
+    },
+    {
+      "role": "cloth",
+      "kind": "photo",
+      "src": "assets/moodboards/rackin-rudolph/cutouts/tablecloth-photo.jpg",
+      "label": "cherry red 60x60 cloth",
+      "asin": "B082M6KFC9"
+    },
+    {
+      "role": "accent2",
+      "kind": "round",
+      "src": "assets/moodboards/rackin-rudolph/cutouts/coaster-round.png",
+      "label": "white marble\ncoaster",
+      "asin": "B0F83HG8TP"
+    },
+    {
+      "role": "lamp",
+      "kind": "cutout",
+      "src": "assets/moodboards/rackin-rudolph/cutouts/lamp.png",
+      "label": "gold bow lamp",
+      "asin": "B0G4RFRMXQ"
+    }
+  ]
+}
