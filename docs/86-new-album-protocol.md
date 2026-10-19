@@ -67,7 +67,7 @@ Placeholders get swapped for her real top matches after step 6.
 - Stories: share each grid post to stories with a link sticker (Tiffany does this, since Planoly can't add link stickers), plus the countdown and "She's live!" frames.
 - Hotline/skit reel with her song (Tiffany adds the music).
 - Pinterest pins (auto, via Planoly), a Facebook Page post (links are clickable there), and a Facebook group post (from her account, her yes per post).
-- Captions end with "link in bio" + code + #affiliate. The bio link points to the new set during launch week.
+- Captions end with "link in bio" + code + #affiliate. The bio link never changes: it always goes to mahjmatchmaker.com/links. During launch week Claude swaps the top feature card on /links to the new set.
 - Everything goes into Planoly as drafts. Nothing is scheduled without her yes.
 
 ### 12. After launch (Claude)
