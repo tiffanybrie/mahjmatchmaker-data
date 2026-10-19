@@ -19,7 +19,7 @@ P = dict(name='Papaya Spritz', brand='Oh My Mahjong', photo='assets/tiles/album/
          active='Launching this week', looking='Long-term mat partner',
          pills=['Golden hour', 'Pink mats', 'Garden parties', 'Lavender racks'],
          prompt_q='My most irrational fear', prompt_a='A beige tablecloth.',
-         basics=[('#df772f', 'Papaya backs'), ('#a99bd0', 'Lavender layer'), ('#c4dc8c', 'Lime layer'), ('#ef7aa0', 'Pink faces')],
+         basics=[('#df772f', 'Papaya backs'), ('#a99bd0', 'Lavender layer'), ('#c4dc8c', 'Light lime layer'), ('#ef7aa0', 'Pink faces')],
          matches=50)
 
 def svg(path, color, size, stroke=6, fill='none'):
