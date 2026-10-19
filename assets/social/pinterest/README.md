@@ -24,3 +24,8 @@ Approvals she needs to give:
 - Oct 18: match pins reworked per Tiffany: headline '[N] mats that match [set] tiles', CTA 'See all [N] of [set]'s matches', #1 pick shown as an example. Counts from live albums (scripts/pinterest/album_counts_oct18.json). Media URLs pinned to db299d7.
 - Oct 18 14:15: Pinterest profile updated (approved in chat): name 'Mahj Matchmaker', bio from the kit, flame-heart photo. Website was already verified. Username unchanged.
 - Oct 18 14:30: holiday table + Amazon pins reworked search-first (Tiffany: no How I'm Styling / Retro Rattan titles; keyword first). Board pins crop off the baked-in board titles and use a new header. Images at 081804d.
+
+## Scheduled in Planoly (Oct 19, 2026, 3:50am ET), approved by Tiffany in chat: "Approve scheduling the 33 pins in Planoly."
+- 33 pins scheduled to @mahjmatchmaker, auto-publish. Match pins: daily Oct 21 to Nov 9, 11am ET. Holiday pins: daily Nov 1 to Nov 13, 7pm ET (8pm on Nov 1).
+- Images were uploaded directly (Planoly refuses jsDelivr and raw GitHub URLs), using the exact bytes from each pin's pinned commit.
+- Fixed in the copy: Tinselle pin "the The Polo Club" → "The Polo Club".
