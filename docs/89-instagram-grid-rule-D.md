@@ -25,3 +25,6 @@ Posted in this order (Instagram puts newest on the left):
 2. **"It's a match!" carousel** (middle). Cover = the set ♥ her best match. Underneath = a "swipe right" carousel: one top match per slide as a dating-app card (mat, brand, its rack, MATCH stamp), last slide "See all N →".
 3. **Album cover = the hotline/skit reel** (posted last, lands on the left), posted by Tiffany at launch with her song. The album cover is set as the reel's grid cover.
 Row reads: album cover (reel) | It's a match | her profile.
+
+## Highlight covers (Oct 19)
+- Tiffany picked style A (cream background). Good enough, not loved. Parked idea for a future v2: softer pastel color-theory palette.
