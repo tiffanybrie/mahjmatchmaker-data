@@ -51,7 +51,7 @@ ICONS = {
   <path class="a" d="M42 170L46 182L58 186L46 190L42 202L38 190L26 186L38 182Z"/>''',
 }
 LINEUP = [  # (key, label shown under the circle)
- ('find-your-match', 'Find Your Match'), ('new-tiles', 'New Tiles'), ('albums', 'Albums'),
+ ('find-your-match', 'Find Match'), ('new-tiles', 'New Tiles'), ('albums', 'Albums'),
  ('mats', 'Mats'), ('tablescapes', 'Tablescapes'), ('codes', 'Codes'),
  ('fb-group', 'FB Group'), ('about-2-0', 'About 2.0'),
 ]
@@ -73,8 +73,8 @@ def cover_html(key, bg, ink, acc, guide=False):
          'height:1080px;border-radius:50%;border:4px solid rgba(0,160,0,.8)"></div>') if guide else ''
     return f'''<!doctype html><html><head><style>{font_css()}
 html,body{{margin:0;width:1080px;height:1920px;background:{bg};overflow:hidden}}
-svg{{position:absolute;left:300px;top:720px;width:480px;height:480px}}
-svg *{{fill:none;stroke:{ink};stroke-width:11;stroke-linecap:round;stroke-linejoin:round}}
+svg{{position:absolute;left:250px;top:670px;width:580px;height:580px}}
+svg *{{fill:none;stroke:{ink};stroke-width:12;stroke-linecap:round;stroke-linejoin:round}}
 svg .a{{fill:{acc};stroke:none}} svg .as{{stroke:{acc}}} svg .bgfill{{fill:{bg}}}
 svg .t{{font-family:Capra;font-size:112px;fill:{ink};stroke:none}}
 </style></head><body><svg viewBox="0 0 240 240">{ICONS[key]}</svg>{g}</body></html>'''

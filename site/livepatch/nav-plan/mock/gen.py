@@ -98,13 +98,14 @@ a{color:inherit;text-decoration:none}
 .shop .top p{font-size:19px;line-height:1.55;color:var(--navy);margin:0 auto 26px;max-width:640px}
 .shop .top .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .shop .tiny{font-size:13.5px;color:#55688c;margin-top:14px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;max-width:1120px;margin:0 auto;padding:10px 4vw 60px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;max-width:1180px;margin:0 auto;padding:10px 4vw 60px}
 .card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 6px 22px rgba(31,58,107,.08);display:flex;flex-direction:column}
 .card img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
 .card .bd{padding:18px 20px 20px;display:flex;flex-direction:column;gap:6px;flex:1}
 .card h3{font-family:'Shrikhand',serif;font-weight:400;font-size:23px;color:var(--navy);margin:0}
 .card p{margin:0;font-size:15px;line-height:1.5;color:#3f5a8a}
 .card .go{margin-top:auto;padding-top:10px;color:var(--pink);font-weight:700;font-size:15px}
+.see{font-size:30px}
 .band{background:var(--blush);text-align:center;padding:46px 6vw 52px}
 .band h2{font-family:'Shrikhand',serif;font-weight:400;color:var(--navy);font-size:34px;margin:0 0 10px}
 .band p{font-size:17px;color:var(--navy);margin:0 auto 22px;max-width:600px;line-height:1.5}
@@ -159,6 +160,7 @@ a{color:inherit;text-decoration:none}
  .shop .top .btns .btn{width:100%}
  .grid{grid-template-columns:1fr 1fr;gap:14px;padding:6px 16px 44px}
  .card .bd{padding:12px 13px 14px}.card h3{font-size:18px}.card p{font-size:13.5px}.card .go{font-size:14px}
+ .see{font-size:22px}
  .band{padding:38px 22px 44px}.band h2{font-size:28px}
 }
 """.replace('url(A/', 'url(' + A + '/')
@@ -167,11 +169,11 @@ SOC = ('<svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"
        '<svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v7h4v-7h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg>'
        '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M11 8c3-1 6 1 5 4s-4 3-5 1M11 9l-2 10"/></svg>')
 
-MATCHES = [('All Tile Albums', '/mahjong-tile-matches', 'b'), ('Holiday Matches', '/holiday-mahjong-matches', 'b'), ('sep',), ('lab', 'Albums by color'),
-           ('Pink', '/pink-mahjong-tile-matches'), ('Red', '/red-mahjong-tile-matches'), ('Purple', '/purple-mahjong-tile-matches'),
-           ('Blue', '/blue-mahjong-tile-matches'), ('Green', '/green-mahjong-tile-matches'), ('Yellow & Orange', '/yellow-orange-mahjong-tile-matches'),
-           ('Brown', '/brown-mahjong-tile-matches'), ('Ivory', '/ivory-mahjong-tile-matches'), ('Neutral', '/neutral-mahjong-tile-matches'),
-           ('Masculine', '/masculine-mahjong-tile-matches'), ('sep',), ('Mat Gallery (later)', '#', 'soon')]
+MATCHES = [('All Tile Albums', '/mahjong-tile-matches'), ('Holiday Matches', '/holiday-mahjong-matches'),
+           ('Pink Tiles', '/pink-mahjong-tile-matches'), ('Red Tiles', '/red-mahjong-tile-matches'), ('Purple Tiles', '/purple-mahjong-tile-matches'),
+           ('Blue Tiles', '/blue-mahjong-tile-matches'), ('Green Tiles', '/green-mahjong-tile-matches'), ('Yellow & Orange Tiles', '/yellow-orange-mahjong-tile-matches'),
+           ('Brown Tiles', '/brown-mahjong-tile-matches'), ('Ivory Tiles', '/ivory-mahjong-tile-matches'), ('Neutral Tiles', '/neutral-mahjong-tile-matches'),
+           ('Masculine Sets', '/masculine-mahjong-tile-matches'), ('Mat Gallery (later)', '#', 'soon')]
 COMMUNITY = [('About Tiffany', '/about'), ('Community', '/mahj-matchmaker-community'), ('Facebook Group', 'https://www.facebook.com/groups/mahjmatchmaker'),
              ('Share Your Table', '/share-your-table'), ('Request an Album', '/request-an-album')]
 
@@ -238,8 +240,7 @@ CARDS = [('cover-holiday-mahjong-tables.jpg', 'Holiday Mahjong Tables', 'Three h
          ('cover-mahjong-table-lamps.jpg', 'Table Lamps', 'Cordless glow for game night.')]
 cards = ''.join(f'<a class="card" href="{STORE}"><img src="{A}/amazon-store/{f}" alt=""><div class="bd"><h3>{t}</h3><p>{d}</p><span class="go">Shop the list &rsaquo;</span></div></a>' for f, t, d in CARDS)
 cards += f'<a class="card" href="{STORE}"><img src="img/sweet-jojo.jpg" alt=""><div class="bd"><h3>Affordable Sets</h3><p>Sweet Jojo and other sets that won\'t break the bank.</p><span class="go">Shop the list &rsaquo;</span></div></a>'
-cards += f'<a class="card" href="{STORE}"><img src="{A}/amazon-store/cover-holiday-mahjong-tables.jpg" style="filter:saturate(.35) brightness(1.04)" alt=""><div class="bd"><h3>Tablecloths &amp; Coasters</h3><p>60x60 cloths and coasters that finish the table.</p><span class="go">Shop the list &rsaquo;</span></div></a>'
-cards += f'<a class="card" href="{STORE}" style="background:var(--navy);color:#fff;justify-content:center;text-align:center;padding:30px 22px"><div class="sx" style="font-size:30px;color:#fff;line-height:1.15">See everything</div><p style="color:#dfe6f3;margin:10px 0 18px;font-size:15px">Every idea list, all in one place.</p><span class="btn">My Amazon storefront</span></a>'
+cards += f'<a class="card" href="{STORE}" style="background:var(--navy);color:#fff;justify-content:center;text-align:center;padding:30px 22px"><div class="sx see" style="color:#fff;line-height:1.15">See everything</div><p style="color:#dfe6f3;margin:10px 0 18px;font-size:15px">Every idea list, all in one place.</p><span class="btn" style="padding:12px 16px">Amazon storefront</span></a>'
 
 shop = page('Shop My Finds (draft)', header() + f'''<main class="shop"><div class="top">
 <h1>Shop My Finds</h1>
@@ -266,7 +267,7 @@ def mmenu(panel):
 <div class="foot"><a class="btn" href="{FYM}">&#9829; Find your match</a></div></div>'''
 
 for name, html in [('home-launch', launch), ('home-prelaunch', pre), ('shop', shop),
-                   ('header-matches', page('Header - Mahjong Matches open', header('matches') + '<div style="height:560px;background:#faf5ef"></div>')),
+                   ('header-matches', page('Header - Mahjong Matches open', header('matches') + '<div style="height:400px;background:#faf5ef"></div>')),
                    ('header-community', page('Header - Community open', header('community') + '<div style="height:300px;background:#faf5ef"></div>')),
                    ('menu-top', page('Mobile menu', mmenu('top'))), ('menu-matches', page('Mobile menu - Matches', mmenu('matches'))),
                    ('menu-community', page('Mobile menu - Community', mmenu('community'))), ('footer', page('Footer', '<div style="height:60px;background:#f56a8b"></div>' + FOOT))]:
