@@ -8,6 +8,8 @@ Rules (Tiffany, Oct 14-15; project doc 51):
      set_tone = the TILE tone from config/tile-tones.json (matcolors.tile_tone(name)): clean tile -> clean/pastel/blend
      mats, earthy tile -> earthy/blend, transitional -> all with blend first; clean-on-earthy is a hard 0 (doc 76).
      Skipped mats are never pulled.
+     TIGHT (Oct 19 3:03am): use matcolors.pull(set_name, match_pool_keys): the mat's PRIMARY must be one of the set's own
+     colors (matcolors.tile_colors: dominant + analogous neighbor only for true in-betweens); accents only rank; capped at 60.
      Never raw store feeds, never album-card crops (alb:*), never graphics.
   2. Auto-excluded: holiday mats, travel/mini mats, starter kits, bundles, caddies,
      desk mats, table covers, foldable tables, solo-play mats, pool mats, logo mats.

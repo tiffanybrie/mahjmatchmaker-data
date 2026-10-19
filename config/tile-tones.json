@@ -1,5 +1,5 @@
 {
- "about": "Tile set tones (doc 76, Tiffany's color theory, Oct 19). tone: clean | transitional | earthy; dominant: primary color code. src 'tiffany' = she stated it; 'guess' = computer read of the tile photo. Corrections from the tagger's Tile tones tab (db tiletones) win.",
+ "about": "Tile set tones (doc 76, Tiffany's color theory, Oct 19). tone: clean | transitional | earthy; dominant: primary color code. src 'tiffany' = she stated it; 'guess' = computer read of the tile photo. Corrections from the tagger's Tile tones tab (db tiletones) win. | colors: the set's own colors for pulls = dominant (Tiffany wins) + up to 2 more families that are >=20% of the colored pixels in the album tile photo (backs/layers; white faces ignored). Read Oct 19.",
  "sets": {
   "birdie": {
    "name": "Birdie",
@@ -9,7 +9,11 @@
    "dominant": "blue",
    "src": "guess",
    "img": "assets/tiles/album/birdie.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue",
+    "green"
+   ]
   },
   "dandy": {
    "name": "Dandy",
@@ -20,7 +24,12 @@
    "src": "tiffany",
    "img": "assets/tiles/album/dandy.jpg",
    "note": "Magenta/berry, a little dirt",
-   "tone_src": "tiffany"
+   "tone_src": "tiffany",
+   "colors": [
+    "pink",
+    "purple"
+   ],
+   "colors_src": "tiffany (magenta = pink with purple added, doc 76)"
   },
   "glitterville": {
    "name": "Glitterville",
@@ -30,7 +39,11 @@
    "dominant": "pink",
    "src": "guess",
    "img": "assets/tiles/album/glitterville.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink",
+    "purple"
+   ]
   },
   "heritage10": {
    "name": "Heritage 1.0",
@@ -40,7 +53,10 @@
    "dominant": "brown",
    "src": "guess",
    "img": "fym:t10/1.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "brown"
+   ]
   },
   "lilacsoiree": {
    "name": "Lilac Soirée",
@@ -50,7 +66,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "assets/tiles/album/lilac-soiree.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "limoncello": {
    "name": "Limoncello",
@@ -60,7 +79,11 @@
    "dominant": "green",
    "src": "guess",
    "img": "assets/tiles/album/limoncello.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green",
+    "yellow"
+   ]
   },
   "lola": {
    "name": "Lola",
@@ -70,7 +93,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "assets/tiles/album/lola.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "preppysoiree": {
    "name": "Preppy Soirée",
@@ -80,7 +106,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "assets/tiles/album/preppy-soiree.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "shangrila": {
    "name": "Shangri La",
@@ -90,7 +119,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "assets/tiles/album/shangri-la.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "sorbet": {
    "name": "Sorbet",
@@ -101,7 +133,11 @@
    "src": "tiffany",
    "img": "assets/tiles/album/sorbet.jpg",
    "note": "Clean pastel",
-   "tone_src": "tiffany"
+   "tone_src": "tiffany",
+   "colors": [
+    "yellow",
+    "orange"
+   ]
   },
   "springlove": {
    "name": "Spring Love",
@@ -111,7 +147,11 @@
    "dominant": "red",
    "src": "guess",
    "img": "assets/tiles/album/spring-love.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "red",
+    "pink"
+   ]
   },
   "sunset": {
    "name": "Sunset",
@@ -122,7 +162,10 @@
    "src": "tiffany",
    "img": "assets/tiles/album/sunset.jpg",
    "note": "Clean orange",
-   "tone_src": "tiffany"
+   "tone_src": "tiffany",
+   "colors": [
+    "orange"
+   ]
   },
   "taylor": {
    "name": "Taylor",
@@ -132,7 +175,10 @@
    "dominant": "purple",
    "src": "guess",
    "img": "assets/tiles/album/taylor.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple"
+   ]
   },
   "hummingbird": {
    "name": "Hummingbird",
@@ -142,7 +188,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "assets/tiles/album/hummingbird.png",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "simply": {
    "name": "Simply",
@@ -152,7 +201,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/170.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "classictortoise": {
    "name": "Classic Tortoise",
@@ -162,7 +214,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "assets/tiles/album/classic-tortoise.png",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "coquette": {
    "name": "Coquette",
@@ -172,7 +227,11 @@
    "dominant": "pink",
    "src": "guess",
    "img": "assets/tiles/album/coquette.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink",
+    "purple"
+   ]
   },
   "cypress": {
    "name": "Cypress",
@@ -182,7 +241,10 @@
    "dominant": "brown",
    "src": "guess",
    "img": "assets/tiles/album/cypress.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "brown"
+   ]
   },
   "missclassicjade": {
    "name": "Miss Classic Jade",
@@ -192,7 +254,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t10/27.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "amara": {
    "name": "Amara",
@@ -203,7 +268,11 @@
    "src": "tiffany",
    "img": "assets/tiles/album/amara.jpg",
    "note": "Clean bright (red + white)",
-   "tone_src": "tiffany"
+   "tone_src": "tiffany",
+   "colors": [
+    "red",
+    "pink"
+   ]
   },
   "drake": {
    "name": "Drake",
@@ -214,7 +283,11 @@
    "src": "tiffany",
    "img": "assets/tiles/album/drake.jpg",
    "note": "Olive green",
-   "tone_src": "tiffany"
+   "tone_src": "tiffany",
+   "colors": [
+    "green",
+    "yellow"
+   ]
   },
   "emerald": {
    "name": "Emerald",
@@ -224,7 +297,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "assets/tiles/album/emerald.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "gatsby": {
    "name": "Gatsby",
@@ -234,7 +310,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "assets/tiles/album/gatsby.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "gemma": {
    "name": "Gemma",
@@ -244,7 +323,10 @@
    "dominant": "purple",
    "src": "guess",
    "img": "assets/tiles/album/gemma.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple"
+   ]
   },
   "glowwild": {
    "name": "Glow Wild",
@@ -254,7 +336,11 @@
    "dominant": "pink",
    "src": "guess",
    "img": "assets/tiles/album/glow-wild.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink",
+    "red"
+   ]
   },
   "heritage20": {
    "name": "Heritage 2.0",
@@ -264,7 +350,10 @@
    "dominant": "brown",
    "src": "guess",
    "img": "assets/tiles/album/heritage-2-0.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "brown"
+   ]
   },
   "jasmine": {
    "name": "Jasmine",
@@ -275,7 +364,10 @@
    "src": "tiffany",
    "img": "assets/tiles/album/jasmine.jpg",
    "note": "Clean green",
-   "tone_src": "tiffany"
+   "tone_src": "tiffany",
+   "colors": [
+    "green"
+   ]
   },
   "lafete": {
    "name": "La Fete",
@@ -285,7 +377,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "assets/tiles/album/la-fete.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "lagoon": {
    "name": "Lagoon",
@@ -296,7 +391,12 @@
    "src": "tiffany",
    "img": "assets/tiles/album/lagoon.jpg",
    "note": "Blue-green, predominantly blue",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue",
+    "teal",
+    "green"
+   ]
   },
   "luminaire": {
    "name": "Luminaire",
@@ -306,7 +406,12 @@
    "dominant": "purple",
    "src": "guess",
    "img": "assets/tiles/album/luminaire.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple",
+    "pink",
+    "blue"
+   ]
   },
   "moonlight": {
    "name": "Moonlight",
@@ -316,7 +421,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "assets/tiles/album/moonlight.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "nantucket": {
    "name": "Nantucket",
@@ -326,7 +434,10 @@
    "dominant": "red",
    "src": "guess",
    "img": "assets/tiles/album/nantucket.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "red"
+   ]
   },
   "osler": {
    "name": "Osler",
@@ -336,7 +447,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "assets/tiles/album/osler.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "palmroyale": {
    "name": "Palm Royale",
@@ -346,7 +460,11 @@
    "dominant": "green",
    "src": "guess",
    "img": "assets/tiles/album/palm-royale.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green",
+    "yellow"
+   ]
   },
   "papayaspritz": {
    "name": "Papaya Spritz",
@@ -357,7 +475,12 @@
    "src": "tiffany",
    "img": "assets/tiles/album/papaya-spritz.jpg",
    "note": "Clean orange",
-   "tone_src": "tiffany"
+   "tone_src": "tiffany",
+   "colors": [
+    "orange",
+    "yellow"
+   ],
+   "colors_src": "tiffany (orange and yellow, Oct 19 3:03am)"
   },
   "pearlescent": {
    "name": "Pearlescent",
@@ -367,7 +490,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "assets/tiles/album/pearlescent.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "pippa": {
    "name": "Pippa",
@@ -377,7 +503,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "assets/tiles/album/pippa.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "seabreeze": {
    "name": "Seabreeze",
@@ -387,7 +516,12 @@
    "dominant": "blue",
    "src": "guess",
    "img": "assets/tiles/album/seabreeze.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue",
+    "teal",
+    "green"
+   ]
   },
   "sierra": {
    "name": "Sierra",
@@ -398,7 +532,11 @@
    "src": "tiffany",
    "img": "assets/tiles/album/sierra.jpg",
    "note": "Cognac orange",
-   "tone_src": "tiffany"
+   "tone_src": "tiffany",
+   "colors": [
+    "orange",
+    "brown"
+   ]
   },
   "smith": {
    "name": "Smith",
@@ -408,7 +546,10 @@
    "dominant": "brown",
    "src": "guess",
    "img": "assets/tiles/album/smith.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "brown"
+   ]
   },
   "solara": {
    "name": "Solara",
@@ -418,7 +559,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "assets/tiles/album/solara.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "talulah": {
    "name": "Talulah",
@@ -428,7 +572,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "assets/tiles/album/talulah.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "willow": {
    "name": "Willow",
@@ -438,7 +585,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "assets/tiles/album/willow.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "sundaytileset": {
    "name": "Sunday Tile Set",
@@ -448,7 +598,10 @@
    "dominant": "brown",
    "src": "guess",
    "img": "assets/tiles/album/sunday-tile-set.png",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "brown"
+   ]
   },
   "foundationbeginner": {
    "name": "Foundation Beginner",
@@ -458,7 +611,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/4.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "gardenstamped": {
    "name": "Garden Stamped",
@@ -468,7 +624,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/0.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "lightbluesignature": {
    "name": "Light Blue Signature",
@@ -478,7 +637,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/7.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "lilacsignature": {
    "name": "Lilac Signature",
@@ -488,7 +650,10 @@
    "dominant": "purple",
    "src": "guess",
    "img": "fym:t15/8.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple"
+   ]
   },
   "navysignature": {
    "name": "Navy Signature",
@@ -498,7 +663,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/9.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "originalstamped": {
    "name": "Original Stamped",
@@ -508,7 +676,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/5.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "pinkcoastalsignature": {
    "name": "Pink Coastal Signature",
@@ -518,7 +689,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/3.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "roundtopstamped": {
    "name": "Round Top Stamped",
@@ -528,7 +702,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/2.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "tealcoastalsignature": {
    "name": "Teal Coastal Signature",
@@ -538,7 +715,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/1.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "whitesignature": {
    "name": "White Signature",
@@ -548,7 +728,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/6.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "bamsbubbly": {
    "name": "Bams & Bubbly",
@@ -558,7 +741,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "fym:t15/82.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "brownstonebloom": {
    "name": "Brownstone Bloom",
@@ -568,7 +754,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/79.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "dearsanta": {
    "name": "Dear Santa",
@@ -578,7 +767,8 @@
    "dominant": null,
    "src": "guess",
    "img": "fym:t10/37.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": []
   },
   "eaudemahj": {
    "name": "Eau De Mahj",
@@ -588,7 +778,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/80.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "houseofhydrangea": {
    "name": "House of Hydrangea",
@@ -598,7 +791,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/81.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "mahjinbloom": {
    "name": "Mahj in Bloom",
@@ -608,7 +804,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/78.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "bootsbubbles": {
    "name": "Boots & Bubbles",
@@ -618,7 +817,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/102.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "classicmahjongtileset": {
    "name": "Classic Mahjong Tile Set",
@@ -628,7 +830,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/191.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "deco": {
    "name": "Deco",
@@ -638,7 +843,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/103.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "eastmeetswesttortoiseshell": {
    "name": "East Meets West Tortoise Shell",
@@ -648,7 +856,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "fym:t15/104.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "giantmahjongtilefordecorsoldasindividual": {
    "name": "Giant Mahjong Tile (for decor)- sold as individual",
@@ -658,7 +869,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "fym:t15/99.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "mcm": {
    "name": "Mcm",
@@ -668,7 +882,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/101.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "mischiefmahj": {
    "name": "Mischief Mahj",
@@ -678,7 +895,10 @@
    "dominant": "orange",
    "src": "guess",
    "img": "fym:t15/100.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "orange"
+   ]
   },
   "origami": {
    "name": "Origami",
@@ -688,7 +908,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/105.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "artdeco": {
    "name": "Art Deco",
@@ -698,7 +921,10 @@
    "dominant": "dark",
    "src": "guess",
    "img": "fym:t15/106.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "dark"
+   ]
   },
   "gardenpartylavenderbloom": {
    "name": "Garden Party Lavender Bloom",
@@ -708,7 +934,10 @@
    "dominant": "purple",
    "src": "guess",
    "img": "fym:t15/119.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple"
+   ]
   },
   "gardenpartypetalpink": {
    "name": "Garden Party Petal Pink",
@@ -718,7 +947,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/117.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "gardenpartyseaglassgreen": {
    "name": "Garden Party Sea-Glass Green",
@@ -728,7 +960,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/118.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "gardenpartyskyblue": {
    "name": "Garden Party Sky Blue",
@@ -738,7 +973,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t11/119.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "grandmillennialblue": {
    "name": "Grandmillennial Blue",
@@ -748,7 +986,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/116.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "grandmillennialgreen": {
    "name": "Grandmillennial Green",
@@ -758,7 +999,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/115.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "grandmillennialpink": {
    "name": "Grandmillennial Pink",
@@ -768,7 +1012,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/114.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "hocuspocushalloween": {
    "name": "Hocus Pocus Halloween",
@@ -778,7 +1025,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/107.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "hollyjollygrinchgreen": {
    "name": "Holly Jolly (Grinch Green)",
@@ -788,7 +1038,8 @@
    "dominant": null,
    "src": "guess",
    "img": "fym:t10/40.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": []
   },
   "hollyjollyrudolphred": {
    "name": "Holly Jolly (Rudolph Red)",
@@ -798,7 +1049,8 @@
    "dominant": null,
    "src": "guess",
    "img": "fym:t13/1.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": []
   },
   "hollyjollysugarplumpink": {
    "name": "Holly Jolly (Sugarplum Pink)",
@@ -808,7 +1060,8 @@
    "dominant": null,
    "src": "guess",
    "img": "fym:t10/41.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": []
   },
   "mintandroses": {
    "name": "Mint and Roses",
@@ -818,7 +1071,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/110.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "thenantucketcoastalblue": {
    "name": "The Nantucket Coastal Blue",
@@ -828,7 +1084,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/108.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "thenantucketseasideblue": {
    "name": "The Nantucket Seaside Blue",
@@ -838,7 +1097,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/109.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "thepalmroyalelemondrop": {
    "name": "The Palm Royale Lemon Drop",
@@ -848,7 +1110,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "fym:t15/111.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "thepalmroyalestrawberrysangria": {
    "name": "The Palm Royale Strawberry Sangria",
@@ -858,7 +1123,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/113.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "thepalmroyaletangerinetwist": {
    "name": "The Palm Royale Tangerine Twist",
@@ -868,7 +1136,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "fym:t15/112.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "bespokexcoreypaigecolorcrushxlmega": {
    "name": "Bespoke X Corey Paige Color Crush XL Mega",
@@ -878,7 +1149,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/124.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "bespokexgraymalinbeachclub": {
    "name": "Bespoke X Gray Malin Beach Club",
@@ -888,7 +1162,10 @@
    "dominant": "purple",
    "src": "guess",
    "img": "fym:t15/120.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple"
+   ]
   },
   "bespokexgraymalingetawaydogsxlmega": {
    "name": "Bespoke X Gray Malin Getaway Dogs XL Mega",
@@ -898,7 +1175,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/121.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "glitterglow": {
    "name": "Glitter Glow",
@@ -908,7 +1188,10 @@
    "dominant": "dark",
    "src": "guess",
    "img": "fym:t15/122.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "dark"
+   ]
   },
   "gratefuldeadxbespokemahjongxlmega": {
    "name": "Grateful Dead x Bespoke Mahjong XL Mega",
@@ -918,7 +1201,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/123.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "theallure": {
    "name": "The Allure",
@@ -928,7 +1214,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/13.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "thebelle": {
    "name": "The Belle",
@@ -938,7 +1227,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/14.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "thebohochic": {
    "name": "The Boho Chic",
@@ -948,7 +1240,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/15.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "theempress": {
    "name": "The Empress",
@@ -958,7 +1253,10 @@
    "dominant": "dark",
    "src": "guess",
    "img": "fym:t15/12.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "dark"
+   ]
   },
   "theiconic": {
    "name": "The Iconic",
@@ -968,7 +1266,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/10.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "themadeira": {
    "name": "The Madeira",
@@ -978,7 +1279,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/11.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "aprsskiclub": {
    "name": "Après Ski Club",
@@ -988,7 +1292,8 @@
    "dominant": null,
    "src": "guess",
    "img": "fym:t13/5.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": []
   },
   "thecountryclubedition": {
    "name": "The Country Club Edition",
@@ -998,7 +1303,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/217.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "birthday": {
    "name": "Birthday",
@@ -1008,7 +1316,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "fym:t15/131.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "celebration": {
    "name": "Celebration",
@@ -1018,7 +1329,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/132.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "hoppyeasthare": {
    "name": "Hoppy EAST-Hare",
@@ -1028,7 +1342,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "fym:t15/126.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "imahj": {
    "name": "I ❤️ Mahj",
@@ -1038,7 +1355,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/192.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "letfreedomring": {
    "name": "Let Freedom Ring",
@@ -1048,7 +1368,10 @@
    "dominant": "red",
    "src": "guess",
    "img": "fym:t15/130.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "red"
+   ]
   },
   "mahjoween": {
    "name": "Mahj-O-Ween",
@@ -1058,7 +1381,10 @@
    "dominant": "purple",
    "src": "guess",
    "img": "fym:t15/128.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple"
+   ]
   },
   "nativity": {
    "name": "Nativity",
@@ -1068,7 +1394,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/127.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "rackinrudolph": {
    "name": "Rackin' Rudolph",
@@ -1078,7 +1407,8 @@
    "dominant": null,
    "src": "guess",
    "img": "fym:t13/0.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": []
   },
   "sobamgrateful": {
    "name": "So Bam Grateful",
@@ -1088,7 +1418,10 @@
    "dominant": "red",
    "src": "guess",
    "img": "fym:t15/125.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "red"
+   ]
   },
   "thehouse": {
    "name": "The House",
@@ -1098,7 +1431,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "fym:t15/129.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "letsbeiconicbrilliantpink": {
    "name": "Let's Be Iconic! Brilliant Pink",
@@ -1108,7 +1444,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/137.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "letsbeiconicjeweledgreen": {
    "name": "Let's Be Iconic! Jeweled Green",
@@ -1118,7 +1457,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/139.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "letsbeiconicjeweledpurple": {
    "name": "Let's Be Iconic! Jeweled Purple",
@@ -1128,7 +1470,10 @@
    "dominant": "purple",
    "src": "guess",
    "img": "fym:t15/134.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple"
+   ]
   },
   "letscocktailparty": {
    "name": "Let's Cocktail Party!",
@@ -1138,7 +1483,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/141.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "letsgamesetmahj": {
    "name": "Let's Game. Set. Mahj!",
@@ -1148,7 +1496,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/136.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "letsgardenparty": {
    "name": "Let's Garden Party!",
@@ -1158,7 +1509,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/135.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "letsgetnautical": {
    "name": "Let's Get Nautical!",
@@ -1168,7 +1522,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/140.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "letsgettropical": {
    "name": "Let's Get Tropical!",
@@ -1178,7 +1535,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/138.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "letswander": {
    "name": "Let's Wander!",
@@ -1188,7 +1548,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/133.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "heirloomcollectionfirefortuneemberfire": {
    "name": "Heirloom Collection: Fire + Fortune Ember Fire (",
@@ -1198,7 +1561,10 @@
    "dominant": "red",
    "src": "guess",
    "img": "fym:t15/143.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "red"
+   ]
   },
   "heirloomcollectionfirefortuneverdantfortune": {
    "name": "Heirloom Collection: Fire + Fortune Verdant Fortune",
@@ -1208,7 +1574,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/144.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "laissezlesbonstempsroulercollection": {
    "name": "Laissez Les Bons Temps Rouler Collection",
@@ -1218,7 +1587,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "fym:t15/145.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "redwhitebluescollection": {
    "name": "Red White & Blues Collection",
@@ -1228,7 +1600,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/142.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "sweetdreamscollection": {
    "name": "Sweet Dreams Collection",
@@ -1238,7 +1613,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/146.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "90spoolpartyblue": {
    "name": "90s Pool Party (Blue)",
@@ -1248,7 +1626,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/218.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "90staffypink": {
    "name": "90s Taffy (Pink)",
@@ -1258,7 +1639,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/17.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "ballerinapink": {
    "name": "Ballerina Pink",
@@ -1268,7 +1652,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/20.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "imperfectserenitymood": {
    "name": "Imperfect Serenity Mood",
@@ -1278,7 +1665,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/19.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "mauveblush": {
    "name": "Mauve-Blush",
@@ -1288,7 +1678,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/18.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "radiantmoodcollectionwhitepearl": {
    "name": "Radiant Mood Collection White Pearl",
@@ -1298,7 +1691,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/16.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "bluechinoiserie": {
    "name": "Blue Chinoiserie",
@@ -1308,7 +1704,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/56.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "justpeachy": {
    "name": "Just Peachy",
@@ -1318,7 +1717,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "fym:t15/54.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "nutcrackerballet": {
    "name": "Nutcracker Ballet",
@@ -1328,7 +1730,8 @@
    "dominant": null,
    "src": "guess",
    "img": "fym:t10/45.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": []
   },
   "palmsprings": {
    "name": "Palm Springs",
@@ -1338,7 +1741,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/57.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "parisian": {
    "name": "Parisian",
@@ -1348,7 +1754,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/55.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "ashburl": {
    "name": "Ash Burl",
@@ -1358,7 +1767,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/26.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "honeyweave": {
    "name": "Honey Weave",
@@ -1368,7 +1780,10 @@
    "dominant": "brown",
    "src": "guess",
    "img": "fym:t15/25.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "brown"
+   ]
   },
   "laken": {
    "name": "Laken",
@@ -1378,7 +1793,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/24.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "lyla": {
    "name": "Lyla",
@@ -1388,7 +1806,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/22.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "mabel": {
    "name": "Mabel",
@@ -1398,7 +1819,10 @@
    "dominant": "brown",
    "src": "guess",
    "img": "fym:t15/23.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "brown"
+   ]
   },
   "oakley": {
    "name": "Oakley",
@@ -1408,7 +1832,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/21.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "terracottamarble": {
    "name": "Terracotta Marble",
@@ -1418,7 +1845,10 @@
    "dominant": "brown",
    "src": "guess",
    "img": "fym:t15/27.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "brown"
+   ]
   },
   "2colorbluestudio": {
    "name": "2-Color Blue Studio",
@@ -1428,7 +1858,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/49.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "amberjade": {
    "name": "Amber Jade",
@@ -1438,7 +1871,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "fym:t15/193.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "american": {
    "name": "American",
@@ -1448,7 +1884,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/37.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "bamboosky": {
    "name": "Bamboo Sky",
@@ -1458,7 +1897,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/51.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "blueediton2colorblue": {
    "name": "Blue Editon 2-Color Blue",
@@ -1468,7 +1910,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/46.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "blueelement": {
    "name": "Blue Element",
@@ -1478,7 +1923,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/48.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "blushbamboo": {
    "name": "Blush & Bamboo",
@@ -1488,7 +1936,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/52.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "bubblepop2colorblue": {
    "name": "Bubble Pop 2-Color Blue",
@@ -1498,7 +1949,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/44.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "butterbloom": {
    "name": "Butter Bloom",
@@ -1508,7 +1962,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "fym:t15/40.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "christmaskiss": {
    "name": "Christmas Kiss",
@@ -1518,7 +1975,10 @@
    "dominant": "red",
    "src": "guess",
    "img": "fym:t15/28.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "red"
+   ]
   },
   "essential": {
    "name": "Essential",
@@ -1528,7 +1988,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/53.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "forestsilk": {
    "name": "Forest Silk",
@@ -1538,7 +2001,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/35.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "glittersparklepink": {
    "name": "Glitter Sparkle Pink",
@@ -1548,7 +2014,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/42.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "lavendersparkle": {
    "name": "Lavender Sparkle",
@@ -1558,7 +2027,10 @@
    "dominant": "purple",
    "src": "guess",
    "img": "fym:t15/29.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple"
+   ]
   },
   "lemontide": {
    "name": "Lemon Tide",
@@ -1568,7 +2040,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/32.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "lilacbloom": {
    "name": "Lilac Bloom",
@@ -1578,7 +2053,10 @@
    "dominant": "purple",
    "src": "guess",
    "img": "fym:t15/38.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple"
+   ]
   },
   "neonshadow": {
    "name": "Neon Shadow",
@@ -1588,7 +2066,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/45.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "oceanbloom": {
    "name": "Ocean Bloom",
@@ -1598,7 +2079,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/39.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "peonygarden": {
    "name": "Peony Garden",
@@ -1608,7 +2092,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/47.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "rosedragon": {
    "name": "Rose Dragon",
@@ -1618,7 +2105,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/50.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "royalsparkle": {
    "name": "Royal Sparkle",
@@ -1628,7 +2118,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/30.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "rubysparkle": {
    "name": "Ruby Sparkle",
@@ -1638,7 +2131,10 @@
    "dominant": "red",
    "src": "guess",
    "img": "fym:t15/31.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "red"
+   ]
   },
   "sageluxe": {
    "name": "Sage Luxe",
@@ -1648,7 +2144,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/36.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "teallunaflor": {
    "name": "Teal Lunaflor",
@@ -1658,7 +2157,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/34.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "tilesonly": {
    "name": "Tiles Only",
@@ -1668,7 +2170,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/33.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "whiteedit": {
    "name": "White Edit",
@@ -1678,7 +2183,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/43.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "yellowlilacoceanblue": {
    "name": "Yellow Lilac Ocean Blue",
@@ -1688,7 +2196,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/41.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "barrierisland": {
    "name": "Barrier Island",
@@ -1698,7 +2209,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/148.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "charleston": {
    "name": "Charleston",
@@ -1708,7 +2222,10 @@
    "dominant": "purple",
    "src": "guess",
    "img": "fym:t15/151.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple"
+   ]
   },
   "palmetto": {
    "name": "Palmetto",
@@ -1718,7 +2235,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/150.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "peachpine": {
    "name": "Peach & Pine",
@@ -1728,7 +2248,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/147.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "sunshine": {
    "name": "Sunshine",
@@ -1738,7 +2261,10 @@
    "dominant": "purple",
    "src": "guess",
    "img": "fym:t15/149.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple"
+   ]
   },
   "classicjadenumberedflower": {
    "name": "Classic Jade Numbered Flower",
@@ -1748,7 +2274,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/63.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "classicmalachitenumberedflower": {
    "name": "Classic Malachite Numbered Flower",
@@ -1758,7 +2287,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/64.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "cowgirlamericananumberedflower": {
    "name": "Cowgirl Americana Numbered Flower",
@@ -1768,7 +2300,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/60.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "darlingnumberedflower": {
    "name": "Darling Numbered Flower",
@@ -1778,7 +2313,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/62.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "misscatrina": {
    "name": "Miss Catrina",
@@ -1788,7 +2326,10 @@
    "dominant": "purple",
    "src": "guess",
    "img": "fym:t15/59.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple"
+   ]
   },
   "missclassicmalachite": {
    "name": "Miss Classic Malachite",
@@ -1798,7 +2339,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t10/28.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "misscowgirl": {
    "name": "Miss Cowgirl",
@@ -1808,7 +2352,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/61.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "missdarlingcameoblue": {
    "name": "Miss Darling Cameo Blue",
@@ -1818,7 +2365,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/65.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "missoutofoffice": {
    "name": "Miss Out Of Office",
@@ -1828,7 +2378,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "fym:t15/58.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "crystalconfetti": {
    "name": "Crystal Confetti",
@@ -1838,7 +2391,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/68.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "crystalprism": {
    "name": "Crystal Prism",
@@ -1848,7 +2404,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/71.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "mahjongtiletakerssetof4": {
    "name": "Mahjong Tile Takers (Set of 4)",
@@ -1858,7 +2417,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/77.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "thecaliforniaseries": {
    "name": "The California Series",
@@ -1868,7 +2430,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/75.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "thehawaiiseries": {
    "name": "The Hawaii Series",
@@ -1878,7 +2443,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/74.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "thejubileeseries": {
    "name": "The Jubilee Series",
@@ -1888,7 +2456,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/66.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "thelumeraseries": {
    "name": "The Lumera Series",
@@ -1898,7 +2469,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/67.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "thenewenglandseries": {
    "name": "The New England Series",
@@ -1908,7 +2482,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/72.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "theparkseries": {
    "name": "The Park Series",
@@ -1918,7 +2495,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/219.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "theplayseries": {
    "name": "The Play Series",
@@ -1928,7 +2508,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/69.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "thescandinavianfolkartseries": {
    "name": "The Scandinavian Folk Art Series",
@@ -1938,7 +2521,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/73.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "thesouthwestseries": {
    "name": "The Southwest Series",
@@ -1948,7 +2534,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "fym:t15/76.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "thetexasseries": {
    "name": "The Texas Series",
@@ -1958,7 +2547,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/70.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "cadetdebutante": {
    "name": "Cadet Debutante",
@@ -1968,7 +2560,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/155.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "jardindebutante": {
    "name": "Jardin Debutante",
@@ -1978,7 +2573,10 @@
    "dominant": "purple",
    "src": "guess",
    "img": "fym:t15/156.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple"
+   ]
   },
   "poppydebutante": {
    "name": "Poppy Debutante",
@@ -1988,7 +2586,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/154.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "sunburstdebutante": {
    "name": "Sunburst Debutante",
@@ -1998,7 +2599,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/153.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "heirloomcollectioncottage": {
    "name": "Heirloom Collection Cottage",
@@ -2008,7 +2612,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/91.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "heirloomcollectioncrownjewels": {
    "name": "Heirloom Collection Crown Jewels",
@@ -2018,7 +2625,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/88.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "heirloomcollectiongirly": {
    "name": "Heirloom Collection Girly",
@@ -2028,7 +2638,10 @@
    "dominant": "purple",
    "src": "guess",
    "img": "fym:t15/92.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple"
+   ]
   },
   "heirloomcollectionisland": {
    "name": "Heirloom Collection Island",
@@ -2038,7 +2651,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/93.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "heirloomcollectionmahjroyale": {
    "name": "Heirloom Collection Mahj Royale",
@@ -2048,7 +2664,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/90.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "heirloomcollectionnewport": {
    "name": "Heirloom Collection Newport",
@@ -2058,7 +2677,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/94.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "heirloomcollectionshore": {
    "name": "Heirloom Collection Shore",
@@ -2068,7 +2690,10 @@
    "dominant": "brown",
    "src": "guess",
    "img": "fym:t15/89.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "brown"
+   ]
   },
   "december1994": {
    "name": "December 1994",
@@ -2078,7 +2703,10 @@
    "dominant": "dark",
    "src": "guess",
    "img": "fym:t15/83.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "dark"
+   ]
   },
   "naturewalk": {
    "name": "Nature Walk",
@@ -2089,7 +2717,10 @@
    "src": "tiffany",
    "img": "assets/tiles/album/nature-walk.png",
    "note": "Bordeaux wine",
-   "tone_src": "tiffany"
+   "tone_src": "tiffany",
+   "colors": [
+    "red"
+   ]
   },
   "plumpanda": {
    "name": "Plum Panda",
@@ -2099,7 +2730,10 @@
    "dominant": "purple",
    "src": "guess",
    "img": "assets/tiles/album/plum-panda.png",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple"
+   ]
   },
   "sunday": {
    "name": "Sunday",
@@ -2109,7 +2743,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "fym:t15/86.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "sundayblues": {
    "name": "Sunday Blues",
@@ -2119,7 +2756,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "assets/tiles/album/sunday-blues.png",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "classicbeechwood": {
    "name": "Classic Beechwood",
@@ -2129,7 +2769,10 @@
    "dominant": "brown",
    "src": "guess",
    "img": "fym:t15/95.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "brown"
+   ]
   },
   "houseclovers": {
    "name": "House Clovers",
@@ -2139,7 +2782,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/98.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "househeartswarmwhite": {
    "name": "House Hearts Warm White",
@@ -2149,7 +2795,10 @@
    "dominant": "red",
    "src": "guess",
    "img": "fym:t15/96.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "red"
+   ]
   },
   "housetigersoyster": {
    "name": "House Tigers Oyster",
@@ -2159,7 +2808,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/97.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "amethisse": {
    "name": "Améthisse",
@@ -2169,7 +2821,10 @@
    "dominant": "purple",
    "src": "guess",
    "img": "fym:t15/167.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple"
+   ]
   },
   "aveline": {
    "name": "Aveline",
@@ -2179,7 +2834,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/159.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "florielle": {
    "name": "Florielle",
@@ -2189,7 +2847,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/166.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "florea": {
    "name": "Floréa",
@@ -2199,7 +2860,10 @@
    "dominant": "purple",
    "src": "guess",
    "img": "fym:t15/161.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple"
+   ]
   },
   "iriselle": {
    "name": "Iriselle",
@@ -2209,7 +2873,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/168.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "lilacee": {
    "name": "Lilacée",
@@ -2219,7 +2886,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "fym:t15/160.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "marivelle": {
    "name": "Marivelle",
@@ -2229,7 +2899,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/165.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "nivaleeglacierblue": {
    "name": "Nivalee (Glacier Blue)",
@@ -2239,7 +2912,8 @@
    "dominant": null,
    "src": "guess",
    "img": "fym:t13/2.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": []
   },
   "nivaleeemeraldgreen": {
    "name": "Nivalee Emerald Green",
@@ -2249,7 +2923,10 @@
    "dominant": "orange",
    "src": "guess",
    "img": "fym:t15/157.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "orange"
+   ]
   },
   "petalee": {
    "name": "Petalée",
@@ -2259,7 +2936,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "assets/tiles/album/petalee.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "rosanelle": {
    "name": "Rosanelle",
@@ -2269,7 +2949,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/164.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "sylvaria": {
    "name": "Sylvaria",
@@ -2279,7 +2962,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/158.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "tinselleemeraldgreen": {
    "name": "Tinselle (Emerald Green)",
@@ -2289,7 +2975,8 @@
    "dominant": null,
    "src": "guess",
    "img": "fym:t13/3.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": []
   },
   "tinsellerubyred": {
    "name": "Tinselle (Ruby Red)",
@@ -2299,7 +2986,8 @@
    "dominant": null,
    "src": "guess",
    "img": "fym:t13/4.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": []
   },
   "viozelle": {
    "name": "Viozelle",
@@ -2309,7 +2997,10 @@
    "dominant": "purple",
    "src": "guess",
    "img": "fym:t15/162.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "purple"
+   ]
   },
   "elanisse": {
    "name": "Élanisse",
@@ -2319,7 +3010,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/163.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "aloha": {
    "name": "Aloha",
@@ -2329,7 +3023,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/194.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "atlantica": {
    "name": "Atlantica",
@@ -2339,7 +3036,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/195.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "canyonclay": {
    "name": "Canyon Clay",
@@ -2349,7 +3049,10 @@
    "dominant": "brown",
    "src": "guess",
    "img": "fym:t15/196.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "brown"
+   ]
   },
   "celestialharmony": {
    "name": "Celestial Harmony",
@@ -2359,7 +3062,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/197.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "chinoise": {
    "name": "Chinoise",
@@ -2369,7 +3075,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/178.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "chinoiseii": {
    "name": "Chinoise II",
@@ -2379,7 +3088,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/198.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "classicluxe": {
    "name": "Classic Luxe",
@@ -2389,7 +3101,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/199.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "classicroyaleii": {
    "name": "Classic Royale II",
@@ -2399,7 +3114,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/200.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "easyreader": {
    "name": "Easy Reader",
@@ -2409,7 +3127,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/173.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "godoffortune": {
    "name": "God of Fortune",
@@ -2419,7 +3140,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/175.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "goldenfortune": {
    "name": "Golden Fortune",
@@ -2429,7 +3153,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "fym:t15/189.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "harbormint": {
    "name": "Harbor Mint",
@@ -2439,7 +3166,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/201.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "harborsnow": {
    "name": "Harbor Snow",
@@ -2449,7 +3179,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/202.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "harbortide": {
    "name": "Harbor Tide",
@@ -2459,7 +3192,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/203.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "heather": {
    "name": "Heather",
@@ -2469,7 +3205,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/204.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "huntington": {
    "name": "Huntington",
@@ -2479,7 +3218,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/179.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "indigobay": {
    "name": "Indigo Bay",
@@ -2489,7 +3231,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/205.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "indigotides": {
    "name": "Indigo Tides",
@@ -2499,7 +3244,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/206.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "ivorypinstripe": {
    "name": "Ivory Pinstripe",
@@ -2509,7 +3257,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/207.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "ivoryridge": {
    "name": "Ivory Ridge",
@@ -2519,7 +3270,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/208.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "ivorystripes": {
    "name": "Ivory Stripes",
@@ -2529,7 +3283,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/209.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "jadehorizon": {
    "name": "Jade Horizon",
@@ -2539,7 +3296,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/210.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "jetset": {
    "name": "Jet Set",
@@ -2549,7 +3309,10 @@
    "dominant": "dark",
    "src": "guess",
    "img": "fym:t15/176.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "dark"
+   ]
   },
   "koi": {
    "name": "Koi",
@@ -2559,7 +3322,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/185.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "littlebird": {
    "name": "Little Bird",
@@ -2569,7 +3335,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/187.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "mojave": {
    "name": "Mojave",
@@ -2579,7 +3348,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/211.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "oceana": {
    "name": "Oceana",
@@ -2589,7 +3361,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/171.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "outlawsofthemarshmahjongtreasureset": {
    "name": "Outlaws of the Marsh Mahjong Treasure Set",
@@ -2599,7 +3374,10 @@
    "dominant": "brown",
    "src": "guess",
    "img": "fym:t15/177.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "brown"
+   ]
   },
   "panda": {
    "name": "Panda",
@@ -2609,7 +3387,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/174.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "papillon": {
    "name": "Papillon",
@@ -2619,7 +3400,10 @@
    "dominant": "yellow",
    "src": "guess",
    "img": "fym:t15/180.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "yellow"
+   ]
   },
   "pattaya": {
    "name": "Pattaya",
@@ -2629,7 +3413,10 @@
    "dominant": "brown",
    "src": "guess",
    "img": "fym:t15/183.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "brown"
+   ]
   },
   "peony": {
    "name": "Peony",
@@ -2639,7 +3426,10 @@
    "dominant": "brown",
    "src": "guess",
    "img": "fym:t15/184.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "brown"
+   ]
   },
   "peonyblush": {
    "name": "Peony Blush",
@@ -2649,7 +3439,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/212.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "pepper": {
    "name": "Pepper",
@@ -2659,7 +3452,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/182.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "pinksparkles": {
    "name": "Pink Sparkles",
@@ -2669,7 +3465,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/186.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "rosehill": {
    "name": "Rosehill",
@@ -2679,7 +3478,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/213.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "sakura": {
    "name": "Sakura",
@@ -2689,7 +3491,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/181.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "sakurapink": {
    "name": "Sakura Pink",
@@ -2699,7 +3504,10 @@
    "dominant": "pink",
    "src": "guess",
    "img": "fym:t15/214.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "pink"
+   ]
   },
   "theclassic": {
    "name": "The Classic",
@@ -2709,7 +3517,10 @@
    "dominant": "neutral",
    "src": "guess",
    "img": "fym:t15/188.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "neutral"
+   ]
   },
   "toucan": {
    "name": "Toucan",
@@ -2719,7 +3530,10 @@
    "dominant": "blue",
    "src": "guess",
    "img": "fym:t15/172.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "blue"
+   ]
   },
   "verdantspring": {
    "name": "Verdant Spring",
@@ -2729,7 +3543,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "fym:t15/216.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "jade": {
    "name": "Jade",
@@ -2739,7 +3556,10 @@
    "dominant": "green",
    "src": "guess",
    "img": "assets/tiles/album/jade.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "green"
+   ]
   },
   "malachite": {
    "name": "Malachite",
@@ -2749,7 +3569,11 @@
    "dominant": "red",
    "src": "guess",
    "img": "assets/tiles/album/malachite.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "red",
+    "pink"
+   ]
   },
   "heritage": {
    "name": "Heritage",
@@ -2759,7 +3583,10 @@
    "dominant": "brown",
    "src": "guess",
    "img": "assets/tiles/album/heritage.jpg",
-   "tone_src": "guess"
+   "tone_src": "guess",
+   "colors": [
+    "brown"
+   ]
   }
  }
 }
