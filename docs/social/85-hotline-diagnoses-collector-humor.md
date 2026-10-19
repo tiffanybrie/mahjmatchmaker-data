@@ -35,15 +35,27 @@ Card: "My autopays"
 
 Caption: "At this point we should just set it up as a monthly bill." Works as a meme graphic or a title card in the Hotline skit.
 
-## Buy smart: the Collector's Corner (the useful side)
-The dating version of buying smart: **marry the versatile one, date the mats.**
-- **Versatile tiles = marriage material.** The more mats a set goes with, the better she is long-term. Our match counts already show this ("50 matches and counting").
-- **Sign the prenup:** check her matches in Find Your Match before you commit. It ties the joke straight to the tool.
-- **Racks that go with everyone:** a clear, white or natural-wood rack works with lots of sets. One "plays all year" rack, not a one-night rack.
-- **Date around with mats:** mats are the cheaper way to change the look of your table, so a versatile set plus a few mats goes further than more sets.
-- More tips to collect from Tiffany as they come up.
+## Social principle: we talk to COLLECTORS (Tiffany, Oct 19)
+- On social we play up the collector: of course you need the new tiles, and of course you need the new mats. We keep selling tiles AND mats.
+- **Never** imply a bold or specific set is a bad buy. Papaya is specific, and we still want her to sell. No "is it versatile?" test in social content.
+- "Marry the versatile one, date the mats" is Tiffany's personal buying principle. It lives on the **blog** (e.g. a "most versatile tiles" article), not as a social principle. It's fine as a rare one-liner at most.
+- Social = counseling the tiles, mats and racks, AND counseling the collectors ("you do have a problem, but you're in good company").
+- Dropped: "sign the prenup" (didn't land).
+
+## Gender rule for skits (Tiffany, Oct 19)
+- Tiles get a gender (she or he, her call per set). **Mats and racks stay gender-neutral** in dialogue, so pairings never read as same-sex or opposite-sex. Keep it neutral; she doesn't want that to become a topic.
+- Our slogan line: "Hook me up." Use it where a set reacts to her match (it replaced "…is she single?").
+
+## Skit formats (mix them up)
+- **Silent-movie title cards:** the counseling session. Navy = the Matchmaker, the set's own color = the tile set, dialogue in quotes, "(whispering)" style stage directions in italics.
+- **Text-message bubbles:** the hotline, a chat with a set, a group chat.
+- More to come: confessional cards, a personal ad, a story poll.
+- Same voice and jokes, different look, so not everything is silent-movie style.
+
+## More diagnosis material
+- **Shop Pay Carpal Tunnel:** from pre-saving checkout for launch day, because sets sell out in 3 seconds.
 
 ## How it could run
-- **Matchmaker Hotline, title-card skit:** "Mahj Matchmaker, how can I save your table?" A caller: "I said this was my last set…" → Matchmaker: "How many mats do you own?" → long pause → "Ma'am." → diagnosis card with the strikethrough → "You're in good company." → buy-smart tip → Find Your Match.
+- **Matchmaker Hotline, title-card skit:** "Mahj Matchmaker, how can I save your table?" A caller: "I said this was my last set…" → Matchmaker: "How many mats do you own?" → long pause → "Ma'am." → diagnosis card with the strikethrough → "You're in good company." → Find Your Match.
 - **Stories poll:** "How many mats do you own? 1–3 / 4–9 / I'd rather not say." Then reveal the diagnosis.
 - **Facebook group question:** "What's the set you swore was your LAST?" A natural comment-starter, since everyone has one.
