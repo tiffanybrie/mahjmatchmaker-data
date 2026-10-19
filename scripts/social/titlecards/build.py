@@ -33,7 +33,7 @@ html,body{{width:1080px;height:1920px;overflow:hidden}}
 .mark{{position:absolute;bottom:90px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:14px;font:600 26px Bit;letter-spacing:.2em;text-transform:uppercase;opacity:.55}}
 </style></head><body>"""
 
-def card(pal, html, size=150, who=None, mark=True, q=True, pre=''):
+def card(pal, html, size=150, who=None, mark=True, q=True, pre='', clip=False):
     bg, fg, name = pal
     w = who if who is not None else name
     if q: html = f'&ldquo;{html}&rdquo;'
@@ -44,7 +44,9 @@ def card(pal, html, size=150, who=None, mark=True, q=True, pre=''):
         whohtml = (f'<div style="display:flex;align-items:center;gap:22px;margin-top:64px"><div style="width:120px;height:120px;border-radius:50%;{av};box-shadow:0 0 0 6px {fg}"></div>'
                    f'<div class="who" style="margin-top:0;text-align:left">{w}</div></div>')
     elif w: whohtml = f'<div class="who">{w}</div>'
-    return (HEAD + f'<div class="wrap" style="background:{bg};color:{fg}">{pre}<div class="line" style="font-size:{size}px">{html}</div>'
+    ctag = ('<div style="position:absolute;top:110px;left:90px;right:90px;bottom:220px;border:5px dashed rgba(247,182,200,.55);border-radius:40px"></div>'
+            '<div style="position:absolute;top:140px;font:600 30px Bit;letter-spacing:.16em;text-transform:uppercase;background:#f7b6c8;color:#062a55;padding:10px 26px;border-radius:999px">&#9654; your phone clip</div>') if clip else ''
+    return (HEAD + f'<div class="wrap" style="background:{bg};color:{fg}">{ctag}{pre}<div class="line" style="font-size:{size}px">{html}</div>'
             + whohtml
             + (f'<div class="mark">mahj matchmaker</div>' if mark else '') + '</div></body></html>')
 
@@ -65,7 +67,7 @@ def match(file, label, sub):
             f'<div style="font:600 36px Bit;color:#c8325f;margin:22px 0 50px;letter-spacing:.04em">{sub}</div>'
             f'<img src="{u(CARDS + file)}" style="width:900px;border-radius:26px;box-shadow:0 26px 60px rgba(6,42,85,.22)"></div></body></html>')
 EVID = HEAD + f"""<div class="wrap" style="background:#efe4d6">
- <div style="font-family:Hand;font-size:110px;color:#062a55;margin-bottom:40px">Exhibit A</div>
+ <div style="background:#fff;color:#062a55;font:600 34px Bit;padding:18px 30px;border-radius:30px 30px 30px 6px;box-shadow:0 6px 18px rgba(0,0,0,.1);margin-bottom:46px;display:flex;align-items:center;gap:16px"><span style="width:56px;height:56px;border-radius:50%;background:url({u(TILE)}) center/cover;display:inline-block"></span>Papaya Spritz sent a photo</div><div style="font-family:Hand;font-size:110px;color:#062a55;margin-bottom:40px">Exhibit A</div>
  <div style="background:#fff;padding:30px 30px 120px;box-shadow:0 30px 60px rgba(0,0,0,.18);transform:rotate(-3deg)">
   <div style="width:720px;height:720px;background:#5d4a3a;display:flex;align-items:center;justify-content:center">
    <svg width="640" height="640" viewBox="0 0 640 640" style="position:absolute;filter:drop-shadow(0 14px 18px rgba(0,0,0,.35))">
@@ -80,33 +82,62 @@ EVID = HEAD + f"""<div class="wrap" style="background:#efe4d6">
  <div style="font:600 30px Bit;color:#062a55;opacity:.6;margin-top:70px;letter-spacing:.06em">(a made-up mat. no real mats were harmed.)</div>
 </div></body></html>"""
 
+RACKS = [('assets/racks/card/peace-love-mahjong-oak.png', 'Peace Love Mahjong Oak'),
+         ('assets/racks/card/peace-love-mahjong-chartreuse.png', 'Peace Love Mahjong Chartreuse'),
+         ('assets/colorcards/papaya-spritz/racks/bird-and-bamboo-lavender.png', 'Bird &amp; Bamboo Lavender')]
+def prof(mat, name, brand, label, top=False):
+    racks = ''.join(f'<div style="display:flex;align-items:center;gap:16px;margin-top:10px"><img src="{u(r)}" style="width:330px;height:34px;object-fit:cover;border-radius:6px"><span style="font:600 24px Bit;color:#5a6b85;text-align:left">{n}</span></div>' for r, n in RACKS)
+    pill = '<div style="position:absolute;top:26px;left:26px;background:#c8325f;color:#fff;font:600 26px Bit;letter-spacing:.14em;padding:10px 22px;border-radius:999px">TOP MATCH</div>' if top else ''
+    return (HEAD + f"""<div class="wrap" style="background:#f6e9df;justify-content:flex-start;padding-top:120px">
+      <div class="line" style="font-size:92px;color:#062a55">{label}</div>
+      <div style="font:600 30px Bit;color:#5a6b85;margin:16px 0 40px;letter-spacing:.08em;text-transform:uppercase">swiping her matches</div>
+      <div style="position:relative;width:900px;background:#fff;border-radius:40px;overflow:hidden;box-shadow:0 30px 70px rgba(6,42,85,.20);text-align:left">
+        <div style="width:900px;height:860px;background:url({u(mat)}) center/cover"></div>{pill}
+        <div style="position:absolute;top:740px;left:36px;width:200px;height:200px;border-radius:50%;background:url({u(TILE)}) center/cover;box-shadow:0 0 0 10px #fff,0 10px 24px rgba(0,0,0,.2)"></div>
+        <div style="position:absolute;top:800px;left:250px;width:84px;height:84px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(0,0,0,.15)"><svg width="46" height="46" viewBox="0 0 48 48"><path d="M24 40 C10 30 6 23 6 17 C6 11 11 7 16 7 C20 7 22 9 24 12 C26 9 28 7 32 7 C37 7 42 11 42 17 C42 23 38 30 24 40 Z" fill="#f56c8c"/></svg></div>
+        <div style="padding:100px 44px 40px">
+          <div style="font-family:Lo;font-weight:700;font-size:72px;color:#062a55;line-height:1">{name}</div>
+          <div style="font:600 26px Bit;letter-spacing:.2em;text-transform:uppercase;color:#c8325f;margin-top:10px">{brand} · mat</div>
+          <div style="font:600 24px Bit;letter-spacing:.16em;text-transform:uppercase;color:#062a55;margin-top:30px">Her racks</div>{racks}
+        </div></div>
+      <div style="display:flex;gap:40px;margin-top:44px"><div style="width:110px;height:110px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font:400 60px Bit;color:#062a55;box-shadow:0 8px 20px rgba(0,0,0,.12)">&times;</div>
+        <div style="width:110px;height:110px;border-radius:50%;background:#f56c8c;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.12)"><svg width="56" height="56" viewBox="0 0 48 48"><path d="M24 40 C10 30 6 23 6 17 C6 11 11 7 16 7 C20 7 22 9 24 12 C26 9 28 7 32 7 C37 7 42 11 42 17 C42 23 38 30 24 40 Z" fill="#fff"/></svg></div></div>
+    </div></body></html>""")
+
+CALL = HEAD + f"""<div class="wrap" style="background:#1d1b22;color:#fff;justify-content:flex-start;padding-top:260px">
+  <div style="font:600 36px Bit;opacity:.7;letter-spacing:.06em">incoming call&hellip;</div>
+  <div style="width:420px;height:420px;border-radius:50%;background:url({u(TILE)}) center/cover;margin-top:80px;box-shadow:0 0 0 14px rgba(255,255,255,.12),0 0 0 34px rgba(255,255,255,.06)"></div>
+  <div style="font-family:Lo;font-weight:700;font-size:110px;margin-top:80px">Papaya Spritz</div>
+  <div style="font:600 34px Bit;opacity:.6;margin-top:12px">mobile</div>
+  <div style="position:absolute;bottom:260px;left:0;right:0;display:flex;justify-content:center;gap:300px">
+    <div style="width:170px;height:170px;border-radius:50%;background:#e5484d;display:flex;align-items:center;justify-content:center"><svg width="80" height="80" viewBox="0 0 48 48"><path d="M14 14 L34 34 M34 14 L14 34" stroke="#fff" stroke-width="5" stroke-linecap="round"/></svg></div>
+    <div style="width:170px;height:170px;border-radius:50%;background:#3fae5a;display:flex;align-items:center;justify-content:center"><svg width="86" height="86" viewBox="0 0 48 48"><path d="M24 40 C10 30 6 23 6 17 C6 11 11 7 16 7 C20 7 22 9 24 12 C26 9 28 7 32 7 C37 7 42 11 42 17 C42 23 38 30 24 40 Z" fill="#fff"/></svg></div></div>
+</div></body></html>"""
+
+M = 'assets/colorcards/papaya-spritz/mats/'
+G2 = 'assets/mats/gallery/'
 SHOTS = [
-    (HEAD + f"""<div class="wrap" style="background:{MM[0]};color:{MM[1]}">
-      <div style="width:210px;height:210px;border-radius:50%;background:#f7b6c8;display:flex;align-items:center;justify-content:center;margin-bottom:60px"><img src="{u('assets/brand/flame-heart.png')}" style="width:120px"></div>
-      <div style="font:600 40px Bit;letter-spacing:.24em;text-transform:uppercase;opacity:.8">The Mahj Matchmaker</div>
-      <div class="line" style="font-size:170px;margin-top:30px">Counseling <i>Sessions</i></div>
-      <div class="who">Session 1 · Papaya Spritz</div></div></body></html>""", 2.6),
-    (photo(TILE, 'Papaya Spritz', 'your 3-sec clip: her tiles in a jar, alone on the couch'), 2.4),
-    (card(PS, 'I just don&rsquo;t know what <i>went wrong.</i>'), 2.6),
-    (card(MM, 'Tell me <i>what happened.</i>'), 2.0),
-    (EVID, 2.6),
-    (card(MM, 'Mm&#8209;hmm.', 140), 1.2),
-    (card(MM, '<i>Wow.</i>', 220), 1.2),
-    (card(MM, '<span style="font-size:96px;font-weight:500">&ldquo;It&rsquo;s not you&hellip;</span><br><span style="display:inline-block;margin-top:40px">it&rsquo;s your <i>mat.</i>&rdquo;</span>', 190, pre='(whispering)', q=False), 4.0),
-    (match('britt-mills-heiress-mat.jpg', 'Her <i>top</i> match', 'Heiress · Britt Mills'), 2.6),
-    (card(MM, 'You deserve someone who brings out your <i>best colors.</i>', 128), 3.0),
-    (match('anders-ruff-press-for-mahjong-mat.jpg', 'Strong match <i>potential</i>', 'Press for Mahjong · Anders Ruff'), 1.3),
-    (match('mahj-and-vine-greenly-mat.jpg', 'Strong match <i>potential</i>', 'Greenly · Mahj &amp; Vine'), 1.3),
-    (match('oh-my-mahjong-vivienne-mat.jpg', 'Strong match <i>potential</i>', 'Vivienne · Oh My Mahjong'), 1.3),
-    (match('oh-my-mahjong-goldie-mat.jpg', 'Strong match <i>potential</i>', 'Goldie · Oh My Mahjong'), 1.3),
-    (match('virora-mahjong-coralia-mat.jpg', 'Strong match <i>potential</i>', 'Coralia · Virora Mahjong'), 1.3),
+    (CALL, 2.4),
+    (card(MM, 'Mahj Matchmaker. How can I <i>save your table?</i>', 120, clip=True), 2.6),
+    (card(PS, 'Hey girl, it&rsquo;s me. I just don&rsquo;t know what <i>went wrong.</i>', 120), 3.0),
+    (card(MM, 'Tell me <i>what happened.</i>', clip=True), 2.0),
+    (EVID, 2.8),
+    (card(MM, '<i>Wow.</i>', 220, clip=True), 1.4),
+    (card(MM, '<span style="font-size:96px;font-weight:500">&ldquo;It&rsquo;s not you&hellip;</span><br><span style="display:inline-block;margin-top:40px">it&rsquo;s your <i>mat.</i>&rdquo;</span>', 190, pre='(whispering)', q=False, clip=True), 3.6),
+    (prof(M + 'heiress-britt-mills.jpg', 'Heiress', 'Britt Mills', 'Her <i>top</i> match', top=True), 2.8),
+    (card(MM, 'You deserve someone who brings out your <i>best colors.</i>', 128, clip=True), 3.0),
+    (prof(M + 'press-for-mahjong-anders-ruff.jpg', 'Press for Mahjong', 'Anders Ruff', 'Strong match <i>potential</i>'), 1.5),
+    (prof(G2 + 'oh-my-mahjong--vivienne.webp', 'Vivienne', 'Oh My Mahjong', 'Strong match <i>potential</i>'), 1.5),
+    (prof(M + 'greenly-mahj-and-vine.jpg', 'Greenly', 'Mahj &amp; Vine', 'Strong match <i>potential</i>'), 1.5),
+    (prof(G2 + 'oh-my-mahjong--goldie-retired.webp', 'Goldie', 'Oh My Mahjong', 'Strong match <i>potential</i>'), 1.5),
     (card(PS, 'Hook me <i>up.</i>', 190), 2.2),
     (HEAD + f"""<div class="wrap" style="background:{END[0]};color:{END[1]}">
-      <img src="{u('assets/brand/flame-heart.png')}" style="width:170px;margin-bottom:46px">
-      <img src="{u('assets/brand/mahjmatchmaker-wordmark-notag.png')}" style="width:760px">
-      <div class="line" style="font-size:96px;margin-top:40px">Hooking up <i>tiles, mats</i> &amp; <i>racks.</i></div>
-      <div style="margin-top:70px;background:#062a55;color:#fff;border-radius:999px;padding:26px 54px;font:600 46px Bit">Find Your Match · 10.27</div>
-      <div style="font:600 34px Bit;color:#062a55;opacity:.7;margin-top:26px">See all 50 of her matches · mahjmatchmaker.com</div></div></body></html>""", 3.4),
+      <img src="{u('assets/brand/flame-heart.png')}" style="width:150px;margin-bottom:40px">
+      <img src="{u('assets/brand/mahjmatchmaker-wordmark-notag.png')}" style="width:720px">
+      <div class="line" style="font-size:92px;margin-top:36px">Hooking up <i>tiles, mats</i> &amp; <i>racks.</i></div>
+      <div style="font-family:Lo;font-size:54px;color:#062a55;margin-top:60px;line-height:1.25">Swipe your own matches.<br>Every tile, mat &amp; rack, <i>swappable.</i></div>
+      <div style="margin-top:56px;background:#062a55;color:#fff;border-radius:999px;padding:26px 54px;font:600 48px Bit">Find Your Match &middot; 10.27</div>
+      <div style="font:600 32px Bit;color:#062a55;opacity:.7;margin-top:26px">mahjmatchmaker.com</div></div></body></html>""", 3.6),
 ]
 
 async def main():
