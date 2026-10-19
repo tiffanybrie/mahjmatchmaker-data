@@ -37,7 +37,7 @@ Future angle (not now): sets whose pair mat already has its own full profile (Vi
 | Racks | Her approved rack picks (config/tile-racks-picks.json final_lists) | Same racks, each with a one-line why |
 | Mats | Top 3 mats (album order) | Same 3 as "First dates," plus one-line why each ("Her type") |
 | Cheek | ONE short profile line, in the old motif/caption spot under the tile pile | Profile line, bio line, dealbreaker, skit |
-| Code | Navy pill, code MAHJMATCH | Code MAHJMATCH at <brand> (I may earn a commission) |
+| Code | Navy pill, code MAHJMATCH | Code MAHJMATCH at <brand> |
 
 ## Tone rules
 1. Every cheeky line must also be color-useful. "Her type: pink with a papaya streak" tells you which mats to shop. "She's a vibe" doesn't.

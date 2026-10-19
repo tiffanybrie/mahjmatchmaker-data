@@ -20,7 +20,7 @@ Use the `d-fbpublic` NEW ERA post as the model:
 - Ends with "Happy mat-ching! 🀄💕" and "Links are in the first comment 👇".
 - Links go in the **first comment**, one per line, each with an emoji and a label.
 - Code line: "my code MAHJMATCH will get you 10% or more off at our partner brands" (or the exact % for one brand, from the discount codes page).
-- Posts that push a purchase end with: "(I may earn a commission when you use my code, at no extra cost to you. Thank you for supporting the group!)"
+- Posts that push a purchase end with: "#affiliate"
 - Photo: the album or set's color card or profile card, a tile photo, or the albums collage (assets/brand/fb-page/mahj-matchmaker-albums-post-1640x856.jpg).
 - Facts only: say "from the vault" or "retired" only for sets marked retired in config/tile-retired.json. Use match counts from the album data, never rounded up.
 
