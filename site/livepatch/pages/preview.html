@@ -1,0 +1,93 @@
+<title>About and Community Preview</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+:root{--bg:#f4eef1;--fg:#1f3a6b;--card:#ffffff;--accent:#d6608c;--line:#ead5de}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#1b1d27;--fg:#e9ecf5;--card:#262938;--accent:#ef8fb2;--line:#3a3d50;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1b1d27;--fg:#e9ecf5;--card:#262938;--accent:#ef8fb2;--line:#3a3d50;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:Georgia,serif;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px}
+.wrap{max-width:960px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}.tabs button{font:700 15px Georgia,serif;padding:9px 16px;border-radius:999px;border:2px solid var(--accent);background:var(--card);color:var(--fg);cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--accent);color:#fff}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px}.plan h2{margin:0 0 8px}.plan li{margin:6px 0}
+.label{font:700 12px system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+</style>
+<div class="wrap"><div class="label">Preview, not live</div>
+<div class="tabs"><button id="tA" aria-pressed="true">About</button><button id="tC" aria-pressed="false">Community</button><button id="tM" aria-pressed="false">Menu plan</button></div>
+<div id="pA"><style>
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+.mmab{--ink:#064587;--rose:#d6608c;--blush:#fdf2f5;--sand:#faf7f2;--line:#f6d3e0;max-width:880px;margin:0 auto;background:#fff;padding:36px 40px;border-radius:18px;color:var(--ink);line-height:1.65;font-size:17px}
+.mmab *{box-sizing:border-box}
+.mmab h1,.mmab h2,.mmab h3,.mmab p,.mmab li{color:var(--ink)}
+.mmab h1,.mmab h2{font-family:'Caprasimo',Georgia,serif;font-weight:400;letter-spacing:0}
+.mmab a{color:var(--rose)}
+.mmab .hero{display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:center;background:var(--blush);border-radius:20px;padding:28px 30px}
+.mmab .hero img{width:200px;height:200px;border-radius:50%;object-fit:cover;object-position:50% 22%;border:5px solid #fff;box-shadow:0 6px 24px rgba(6,69,135,.15)}
+.mmab .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.72em;font-weight:700;color:var(--rose);margin:0 0 6px}
+.mmab h1{font-size:2.4em;line-height:1.1;margin:0 0 10px}
+.mmab .dek{font-size:1.08em;margin:0}
+.mmab section{margin:44px 0}
+.mmab h2{font-size:1.6em;margin:0 0 14px;line-height:1.2}
+.mmab .note{background:var(--sand);border-left:4px solid var(--rose);border-radius:0 14px 14px 0;padding:22px 26px}
+.mmab .note p{margin:0 0 12px}.mmab .note p:last-child{margin:0}
+.mmab .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;list-style:none;padding:0;margin:0}
+.mmab .steps li{background:#fff;border:2px solid var(--line);border-radius:16px;padding:18px}
+.mmab .steps b{display:block;font-family:'Caprasimo',Georgia,serif;font-weight:400;font-size:1.15em;margin:0 0 6px}
+.mmab .steps p{margin:0;font-size:.95em}
+.mmab .btns{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0}
+.mmab .btn{display:inline-block;background:var(--ink);color:#fff!important;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:999px;font-size:.95em}
+.mmab .btn.alt{background:#fff;color:var(--ink)!important;border:2px solid var(--ink)}
+.mmab .ph{background:#fff8e6;border:2px dashed #e0b84d;border-radius:12px;padding:14px 16px;font-size:.92em;margin:14px 0}
+.mmab .ph b{color:#8a6a10}
+.mmab .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.mmab .card{background:#fff;border:2px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:8px}
+.mmab .card h3{margin:0;font-size:1.15em}
+.mmab .card p{margin:0;font-size:.95em}
+.mmab .card .go{margin-top:auto;font-weight:700;text-decoration:none}
+.mmab .disc{font-size:.82em;opacity:.8;margin-top:36px}
+@media(max-width:700px){.mmab{padding:22px 16px}.mmab .hero{grid-template-columns:1fr;text-align:center;padding:24px 18px}.mmab .hero img{margin:0 auto;width:160px;height:160px}.mmab h1{font-size:1.9em}.mmab .steps,.mmab .cards{grid-template-columns:1fr}}
+.mmab .photo{width:200px;height:200px;border-radius:50%;background:#fff;border:3px dashed #e0b84d;display:flex;align-items:center;justify-content:center;text-align:center;font-size:.85em;color:#8a6a10;font-weight:700}
+.mmab .sig{font-family:'Caprasimo',Georgia,serif;font-size:1.4em;margin:6px 0 0}
+@media(max-width:700px){.mmab{padding:24px 18px}.mmab .hero{grid-template-columns:1fr;justify-items:center;text-align:center}.mmab .steps,.mmab .cards{grid-template-columns:1fr}}
+</style>
+<div class="mmab"><div class="hero"><div class="photo">your photo here</div><div><h1>Hi, I&rsquo;m Tiffany.</h1><p class="dek">Designer, creative entrepreneur, and the eye behind Mahj Matchmaker.</p></div></div><section><p>I&rsquo;ve always been drawn to beautiful things. I notice colors, patterns, textures, and the little details—and I love figuring out how they work together. That&rsquo;s been a common thread through years of designing products, building creative businesses, and making my home feel like me.</p><p>So when I started shopping for my first mahjong set, I did what any perfectly reasonable designer would do: I built myself a template to compare all the possibilities.</p><p>Mahjong is an investment, and I wanted to love my whole setup, right down to the tile bag, tote, and shufflers. There was so much beauty to explore, but looking at products on separate websites wasn&rsquo;t helping me decide. I needed to see everything together.</p></section><section><h2>Down the mahj rabbit hole</h2><p>I started swapping tiles, mats, and racks into digital mock-ups, exploring different combinations until I could figure out what felt the most me.</p><p>As it turns out, I&rsquo;m not a one-size-fits-all tile-and-mat girl. I keep my sets out in my home, and just as my home gets seasonal refreshes, so does my mahjong setup. Different colors and styles appeal to me at different times of year. Apparently, even my mahjong table likes a change of clothes.</p></section><section><h2>I&rsquo;ve learned to follow the creative rabbit holes.</h2><p>I&rsquo;ve followed a lot of ideas into places I couldn&rsquo;t have predicted. Over the years, those ideas have become products, brands, and businesses. I&rsquo;ve learned that when the creative juices start flowing, sometimes the best thing I can do is get out of their way and see where they take me.</p><p>Mahj Matchmaker is one chapter in a much longer creative story. If you&rsquo;re curious about the other things my husband, Jeff, and I have built together, you can read <a href="https://emeryandoak.com/" target="_blank" rel="noopener">our story at Emery &amp; Oak</a>.</p><p>My mahjong journey started with that same curiosity—and a shopping project that apparently had bigger plans.</p></section><section><h2>From a Facebook group to a growing match library</h2><p>While browsing mahjong Facebook groups, I noticed how many people were asking the same questions I&rsquo;d been asking myself: "What mat goes with these tiles?" "Which racks would you choose?"</p><p>By then, I&rsquo;d spent so much time exploring collections that I could often remember which mats had the colors someone was looking for. My designer brain had been quietly filing it all away.</p><p>I began sharing mock-ups and helping people compare options. Then I started my own Facebook group, Mahj Matchmaker, and uploaded my combinations into albums organized by tile set. It gave people a place to browse the possibilities without piecing them together from hundreds of comments.</p><p>That group became the first home of my match library. It still exists today, along with those original albums and a community where players share their tables, ask questions, and help each other find what they&rsquo;re looking for.</p><p>And, true to form, I kept creating.</p><p>Eventually, the library needed more room to grow. That brought Mahj Matchmaker here: a website with an expanding collection of curated matches, more ways to explore them, and a home for the ideas that keep coming.</p><p>I didn&rsquo;t set out to build all of this when I started shopping for my first set. But I&rsquo;ve been on enough creative journeys to recognize when an idea is worth following.</p></section><section><h2>Sometimes you need to see it to know.</h2><p>My curated match library is for those of us who crave a visual moodboard before making a decision. Whether you&rsquo;re choosing your first set, finding a mat for tiles you already own, or dreaming up a seasonal refresh, I&rsquo;m here to help you explore the possibilities and narrow things down.</p><p>The goal is to find a combination you love—one that feels like you.</p><p>Because when we see it, THEN we know.</p><p>Happy matching!</p><p class="sig">Tiffany</p><div class="btns"><a class="btn" href="/mahjong-tile-matches">Browse My Mahjong Matches</a><a class="btn alt" href="https://www.facebook.com/groups/mahjmatchmaker" target="_blank" rel="noopener">Join the Community</a></div></section></div></div><div id="pC" hidden><style>
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+.mmab{--ink:#064587;--rose:#d6608c;--blush:#fdf2f5;--sand:#faf7f2;--line:#f6d3e0;max-width:880px;margin:0 auto;background:#fff;padding:36px 40px;border-radius:18px;color:var(--ink);line-height:1.65;font-size:17px}
+.mmab *{box-sizing:border-box}
+.mmab h1,.mmab h2,.mmab h3,.mmab p,.mmab li{color:var(--ink)}
+.mmab h1,.mmab h2{font-family:'Caprasimo',Georgia,serif;font-weight:400;letter-spacing:0}
+.mmab a{color:var(--rose)}
+.mmab .hero{display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:center;background:var(--blush);border-radius:20px;padding:28px 30px}
+.mmab .hero img{width:200px;height:200px;border-radius:50%;object-fit:cover;object-position:50% 22%;border:5px solid #fff;box-shadow:0 6px 24px rgba(6,69,135,.15)}
+.mmab .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.72em;font-weight:700;color:var(--rose);margin:0 0 6px}
+.mmab h1{font-size:2.4em;line-height:1.1;margin:0 0 10px}
+.mmab .dek{font-size:1.08em;margin:0}
+.mmab section{margin:44px 0}
+.mmab h2{font-size:1.6em;margin:0 0 14px;line-height:1.2}
+.mmab .note{background:var(--sand);border-left:4px solid var(--rose);border-radius:0 14px 14px 0;padding:22px 26px}
+.mmab .note p{margin:0 0 12px}.mmab .note p:last-child{margin:0}
+.mmab .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;list-style:none;padding:0;margin:0}
+.mmab .steps li{background:#fff;border:2px solid var(--line);border-radius:16px;padding:18px}
+.mmab .steps b{display:block;font-family:'Caprasimo',Georgia,serif;font-weight:400;font-size:1.15em;margin:0 0 6px}
+.mmab .steps p{margin:0;font-size:.95em}
+.mmab .btns{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0}
+.mmab .btn{display:inline-block;background:var(--ink);color:#fff!important;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:999px;font-size:.95em}
+.mmab .btn.alt{background:#fff;color:var(--ink)!important;border:2px solid var(--ink)}
+.mmab .ph{background:#fff8e6;border:2px dashed #e0b84d;border-radius:12px;padding:14px 16px;font-size:.92em;margin:14px 0}
+.mmab .ph b{color:#8a6a10}
+.mmab .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.mmab .card{background:#fff;border:2px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:8px}
+.mmab .card h3{margin:0;font-size:1.15em}
+.mmab .card p{margin:0;font-size:.95em}
+.mmab .card .go{margin-top:auto;font-weight:700;text-decoration:none}
+.mmab .disc{font-size:.82em;opacity:.8;margin-top:36px}
+@media(max-width:700px){.mmab{padding:22px 16px}.mmab .hero{grid-template-columns:1fr;text-align:center;padding:24px 18px}.mmab .hero img{margin:0 auto;width:160px;height:160px}.mmab h1{font-size:1.9em}.mmab .steps,.mmab .cards{grid-template-columns:1fr}}
+.mmab .photo{width:200px;height:200px;border-radius:50%;background:#fff;border:3px dashed #e0b84d;display:flex;align-items:center;justify-content:center;text-align:center;font-size:.85em;color:#8a6a10;font-weight:700}
+.mmab .sig{font-family:'Caprasimo',Georgia,serif;font-size:1.4em;margin:6px 0 0}
+@media(max-width:700px){.mmab{padding:24px 18px}.mmab .hero{grid-template-columns:1fr;justify-items:center;text-align:center}.mmab .steps,.mmab .cards{grid-template-columns:1fr}}
+</style>
+<div class="mmab"><div class="hero" style="grid-template-columns:1fr"><div><h1>A little mahj inspiration. A lot of people who get it.</h1></div></div><section><p>If you&rsquo;ve ever asked, "What mat goes with these tiles?" or spent far too long debating rack colors, you&rsquo;re in good company.</p><p>The Mahj Matchmaker Facebook group is where we share our setups, compare options, discover beautiful things, and help each other put it all together. Whether you&rsquo;re shopping for your first set or giving your table a seasonal refresh, come join the conversation.</p><div class="btns"><a class="btn" href="https://www.facebook.com/groups/mahjmatchmaker" target="_blank" rel="noopener">Join the Facebook Group</a></div></section><section><h2>Share your table. Find your inspiration.</h2><p>We all have our own way of putting things together, and that&rsquo;s what makes this fun. Share your favorite combination, your holiday tablescape, or the new arrival you couldn&rsquo;t wait to unpack. See how other players style their sets and discover pairings you might never have considered.</p><p>You don&rsquo;t need a professionally styled table to join in. We want to see what you&rsquo;re enjoying.</p></section><section><h2>Ask the people who understand the dilemma.</h2><p>Torn between two mats? Looking for racks that pull out a particular color in your tiles? Bring your questions, photos, and "this or that" decisions. Sometimes another person&rsquo;s suggestion—or seeing a combination in a real home—is exactly what helps you decide.</p></section><section><h2>Buy, sell, trade, and track down your wish list.</h2><p>Looking for a retired tile set you can&rsquo;t buy in stores anymore? Hunting for a hard-to-find mat or a particular rack color? Post an ISO (in search of)—another member might have exactly what you&rsquo;ve been looking for.</p><p>You can also shop secondhand finds, sell pieces you&rsquo;re ready to pass along, arrange a trade, or share a discovery with the group. Whether you&rsquo;re making room for something new or finally tracking down the set you missed, this is a place to connect.</p><p>Please check the group rules before posting.</p></section><section><h2>Where it all started</h2><p>Mahj Matchmaker began with the digital mock-ups I created while shopping for my own first set. When I realized other players needed those visuals, too, I started the Facebook group and uploaded my matches into albums organized by tile set.</p><p>The original library is still available in the group&rsquo;s Albums or Media section. New and updated match albums now live here on the website, ready for you to explore.</p><div class="btns"><a class="btn alt" href="/mahjong-tile-matches">Explore Mahjong Matches</a></div></section><section><h2>Come show us what you&rsquo;re loving.</h2><p>You don&rsquo;t need a picture-perfect table or a collection of tile sets to belong here. Bring your curiosity, your questions, and your enthusiasm for a game that gives us plenty to talk about.</p><p>See you in the group!</p><p class="sig">Tiffany</p><div class="btns"><a class="btn" href="https://www.facebook.com/groups/mahjmatchmaker" target="_blank" rel="noopener">Join the Facebook Group</a></div></section></div></div><div id="pM" hidden><div class="plan"><h2>Menu plan</h2><ul>
+<li><b>Header:</b> Mahjong Matches · Holiday ▾ (Holiday Tile Matches, Christmas Mat Gallery) · Discount Codes · Blog · Community · About</li>
+<li><b>Christmas Mat Gallery</b> (/christmas-mahjong-mats) is live but linked from nowhere. The Holiday menu fixes that.</li>
+<li><b>Events</b> moves out of the header to the footer: Private Lessons | Rentals | Events.</li>
+<li><b>Amazon storefront:</b> left out for now. Your call where it goes.</li></ul></div></div></div>
+<script>const t={tA:'pA',tC:'pC',tM:'pM'};for(const k in t)document.getElementById(k).onclick=()=>{for(const j in t){document.getElementById(j).setAttribute('aria-pressed',j===k);document.getElementById(t[j]).hidden=j!==k;}};</script>
