@@ -1,0 +1,33 @@
+{
+ "_note": "Tile Set Profile = color profile + dating profile (doc 81, DRAFT until Tiffany approves this Papaya example on Ready to Ship). Facts only from config/colorcards.json, config/tile-tones.json (tone: clean, Tiffany), config/tile-racks-picks.json final_lists and the album order (assets/cards/papaya-spritz/manifest.json). Mat colour chips sampled from the mat photos.",
+ "key": "papaya-spritz",
+ "name": "Papaya Spritz",
+ "brand": "Oh My Mahjong",
+ "status": "The new girl on the block",
+ "matches": 50,
+ "album": "https://www.mahjmatchmaker.com/papaya-spritz-mahjong-tile-matches",
+ "profile_line": ["Her type: pink with a papaya streak.", "Open to periwinkle. Opposites attract."],
+ "profile_line_options": {
+  "A": ["Her type: pink with a papaya streak.", "Open to periwinkle. Opposites attract."],
+  "B": ["Looking for: someone who can handle", "papaya, lavender and a little lime."],
+  "C": ["Seeking: pink, peach or periwinkle.", "Must be comfortable around bright color."]
+ },
+ "her_colors": {
+  "backs": [["Papaya", "#df772f", "solid back"], ["Lavender", "#a99bd0", "layer"], ["Lime", "#c4dc8c", "layer"]],
+  "faces": [["Pink", "#ef7aa0"], ["Teal", "#3fb8b0"], ["Lime", "#8fcf4f"], ["Lavender", "#9f8fd6"]],
+  "tone": "Clean brights. A clean orange, no dusty undertone."
+ },
+ "her_type": [
+  {"label": "Pink + papaya", "mat": "Heiress", "brand": "Britt Mills", "chips": ["#eeaeba", "#ee904c"], "why": "A pink ground with an orange border that repeats her backs."},
+  {"label": "Pink with an orange center", "mat": "Press for Mahjong", "brand": "Anders Ruff", "chips": ["#f6ccdc", "#f68d20"], "why": "Her papaya sits right in the middle of a soft pink mat."},
+  {"label": "Opposites attract", "mat": "Greenly", "brand": "Mahj & Vine", "chips": ["#6ba4f6", "#bcc31b"], "why": "Periwinkle sits across the color wheel from orange, so she pops, and the chartreuse picks up her lime layer."}
+ ],
+ "dealbreaker": "Dusty, earthy neutrals (tan, taupe, muddy browns). Next to clean papaya and lime they read muddy. Keep the mat clean and saturated.",
+ "racks": [
+  {"name": "Bird & Bamboo Lavender", "why": "Matches her lavender layer."},
+  {"name": "Peace Love Mahjong Chartreuse", "why": "Her lime layer, turned up."},
+  {"name": "Peace Love Mahjong Oak", "why": "Light natural wood, so the papaya does the talking."}
+ ],
+ "first_dates": ["Heiress", "Press for Mahjong", "Greenly"],
+ "bio": "Golden hour, all year. Bright, a little extra, and already the life of the table."
+}

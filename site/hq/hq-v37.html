@@ -394,7 +394,7 @@ a{color:var(--rose)}
     else p.items.forEach((x,i)=>{ const c=el('div','pcard'+(i===0?' top':'')); c.append(el('div','rank',String(x.rank||i+1)));
       const m=el('div'); const h=el('h3',null,x.title); if(x.tag){ h.append(el('span','tag',x.tag)); } m.append(h); if(x.status) m.append(el('p','st',x.status));
       if(x.progress&&x.progress.total){ const r=el('div'); const t=el('div','time',x.progress.label+' · '+x.progress.done+' / '+x.progress.total); const b=el('div','bar'); const ii=el('i'); ii.style.width=Math.min(100,Math.round(100*x.progress.done/x.progress.total))+'%'; b.append(ii); r.append(t,b); m.append(r); }
-      if(x.next) m.append(el('p','nx','Next: '+x.next)); c.append(m); box.append(c); });
+      if(x.you) m.append(el('p','nx','Your part: '+x.you)); if(x.next) m.append(el('p','nx','Next: '+x.next)); if(x.link){ const a=el('a','btn primary',x.linkLabel||'Open'); a.href=x.link; a.target='_blank'; a.rel='noopener'; a.style.marginTop='8px'; m.append(a); } c.append(m); box.append(c); });
     const rc=$('#rulesCard'), rl=$('#rulesList'); rl.textContent=''; const rules=(p&&p.rules)||[]; rc.hidden=!rules.length; rules.forEach(r=>rl.append(el('li',null,r))); }
 
   const STG=[['needs-swipe','Needs your swipe',1],['review','Ready for your look',1],['swiped','Swiped, Claude building cards',0],['cards','Cards being made',0],['live','Live on the site',0]];
