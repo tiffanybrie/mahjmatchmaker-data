@@ -6,6 +6,13 @@ Red, Orange, Yellow, Green, Blue, Purple, Pink, Brown, Ivory, Holiday, Natural P
 - Black & White and Multicolor are MAT colors (the tagger); no tile-set albums use them, so no site chips for them.
 - Holiday moved from first (it was the red, seasonal-highlight chip) to after Ivory, per the order she gave. It keeps its red fill. If she wants it first for the holiday season, move it back.
 
+## Change (Oct 19, 3:49am, Tiffany): ONE continuous rainbow grid
+- The "All Albums by Color" block on /mahjong-tile-matches and the home page is now ONE grid of covers in rainbow order, with no color headings and no breaks inside it. Nantucket (the only red) leads instead of sitting alone in a row.
+- Order: Red, Orange, Yellow, Green, Blue, Purple, Pink, Brown, Ivory, Natural Patterns, Holiday (matches the chips). Albums cross-listed in Natural Patterns appear once, at their main color.
+- The chips above still jump to each color page (Orange and Yellow pages as staged).
+- The subtitle is now "Every tile set I've matched, in rainbow order by tile back color. Tap a color above to see just that color."
+- Tested on the live page HTML: all 43 albums kept, idempotent, no sideways scroll at 390 or 1280. Before/after: rainbow_flat_before_after_1280.jpg, _390.jpg.
+
 ## Filing (tile back color + tone, config/tile-tones.json)
 - Orange: Papaya Spritz, Solara, Sunset, Sierra (earthy cognac)
 - Yellow: Pippa, Sorbet, Sunday Tile Set

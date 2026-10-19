@@ -9,6 +9,8 @@ const YELLOW=['pippa','sorbet','sunday-tile-set'];
 const TO_BROWN=['tortoise'];                                  // Classic Tortoise
 function keyOf(href){ if(/\/holiday-mahjong-matches$/.test(href)) return 'holiday';
   const m=href.match(/^\/([a-z-]+)-mahjong-tile-matches$/); return m? m[1]:null; }
+const GORDER=['red','orange','yellow','green','blue','purple','pink','brown','ivory','neutral','holiday'];
+function grank(k){ const i=GORDER.indexOf(k); return i<0? 999:i; }
 function rank(k){ const i=ORDER.indexOf(k); return i<0? 999:i; }
 const esc=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 
@@ -76,9 +78,17 @@ function regroup(s){
       const add=moved.filter(c=>!gb.includes(c.match(/href="[^"]+"/)[0]));
       b.html=b.html.slice(0,b.html.lastIndexOf('</div>'))+add.join('')+'</div>'; }
   }
-  const ordered=Object.values(byK).sort((x,y)=>rank(x.k)-rank(y.k)).map(u=>u.html).join('\n');
+  // Oct 19 3:49am (Tiffany): ONE continuous rainbow grid, no color headings or breaks inside it.
+  // Chips above still jump to each color page. Cross-listed albums (e.g. Natural Patterns) appear once, at their first color.
+  const units2=Object.values(byK).sort((x,y)=>grank(x.k)-grank(y.k));
+  const seenC=new Set(), flat=[];
+  for(const u of units2){ if(u.html.indexOf('<div class="mmalb-g">')<0) continue;
+    for(const c of (grid(u).match(/<a class="mmalb-c"[\s\S]*?<\/a>/g)||[])){
+      const h=(c.match(/href="([^"]+)"/)||[])[1]; if(seenC.has(h)) continue; seenC.add(h); flat.push(c); } }
   const a=units[0].a, b=units[units.length-1].b;
-  return [s.slice(0,a)+ordered+s.slice(b), 1];
+  let out=s.slice(0,a)+'<div class="mmalb-g mmalb-rainbow">'+flat.join('')+'</div>'+s.slice(b);
+  out=out.replace("Every tile set I've matched, grouped by tile back color. Tap a color to see them all.","Every tile set I've matched, in rainbow order by tile back color. Tap a color above to see just that color.");
+  return [out, 1];
 }
 
 function home(s){ let n=0,r; [s,r]=reorderChips(s,'<div class="mmh-cols mmh-c5">','class="mmh-col"'); n+=r;
