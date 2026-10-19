@@ -82,15 +82,27 @@ EVID = HEAD + f"""<div class="wrap" style="background:#efe4d6">
  <div style="font:600 30px Bit;color:#062a55;opacity:.6;margin-top:70px;letter-spacing:.06em">(a made-up mat. no real mats were harmed.)</div>
 </div></body></html>"""
 
+SEARCH = ('<div style="width:900px;background:#fff;border-radius:999px;padding:26px 40px;display:flex;align-items:center;gap:24px;box-shadow:0 10px 26px rgba(6,42,85,.12);text-align:left">'
+          '<svg width="54" height="54" viewBox="0 0 48 48"><circle cx="21" cy="21" r="13" fill="none" stroke="#062a55" stroke-width="5"/><path d="M31 31 L42 42" stroke="#062a55" stroke-width="5" stroke-linecap="round"/></svg>'
+          '<span style="font:600 46px Bit;color:#062a55">Papaya Spritz</span><span style="margin-left:auto;font:600 28px Bit;color:#c8325f;letter-spacing:.1em">MATCHES</span></div>')
+GRID = ''.join(f'<div style="width:190px;height:190px;border-radius:18px;background:url({u("assets/mats/gallery/" + f)}) center/cover"></div>' for f in sorted(os.listdir(R + '/assets/mats/gallery'))[::37][:20])
+SEARCHING = HEAD + f"""<div class="wrap" style="background:#f6e9df;justify-content:flex-start;padding-top:200px">
+  {SEARCH}
+  <div style="font-family:Lo;font-weight:700;font-size:92px;color:#062a55;margin-top:70px">Searching <i>889 mats</i>&hellip;</div>
+  <div style="font:600 32px Bit;color:#5a6b85;margin-top:16px;letter-spacing:.06em">the Mahj Matchmaker database</div>
+  <div style="display:grid;grid-template-columns:repeat(4,190px);gap:20px;margin-top:70px;opacity:.55">{GRID}</div>
+</div></body></html>"""
+
 RACKS = [('assets/racks/card/peace-love-mahjong-oak.png', 'Peace Love Mahjong Oak'),
          ('assets/racks/card/peace-love-mahjong-chartreuse.png', 'Peace Love Mahjong Chartreuse'),
          ('assets/colorcards/papaya-spritz/racks/bird-and-bamboo-lavender.png', 'Bird &amp; Bamboo Lavender')]
 def prof(mat, name, brand, label, top=False):
     racks = ''.join(f'<div style="display:flex;align-items:center;gap:16px;margin-top:10px"><img src="{u(r)}" style="width:330px;height:34px;object-fit:cover;border-radius:6px"><span style="font:600 24px Bit;color:#5a6b85;text-align:left">{n}</span></div>' for r, n in RACKS)
-    pill = '<div style="position:absolute;top:26px;left:26px;background:#c8325f;color:#fff;font:600 26px Bit;letter-spacing:.14em;padding:10px 22px;border-radius:999px">TOP MATCH</div>' if top else ''
+    pill = ('<div style="position:absolute;top:44px;right:34px;transform:rotate(8deg);border:7px solid #c8325f;color:#c8325f;background:rgba(255,255,255,.9);'
+            'font:700 64px Lo;letter-spacing:.08em;padding:0 22px;border-radius:14px">MATCH</div>')
     return (HEAD + f"""<div class="wrap" style="background:#f6e9df;justify-content:flex-start;padding-top:120px">
-      <div class="line" style="font-size:92px;color:#062a55">{label}</div>
-      <div style="font:600 30px Bit;color:#5a6b85;margin:16px 0 40px;letter-spacing:.08em;text-transform:uppercase">swiping her matches</div>
+      {SEARCH}
+      <div style="font:600 30px Bit;color:#5a6b85;margin:22px 0 36px;letter-spacing:.08em;text-transform:uppercase">{label}</div>
       <div style="position:relative;width:900px;background:#fff;border-radius:40px;overflow:hidden;box-shadow:0 30px 70px rgba(6,42,85,.20);text-align:left">
         <div style="width:900px;height:860px;background:url({u(mat)}) center/cover"></div>{pill}
         <div style="position:absolute;top:740px;left:36px;width:200px;height:200px;border-radius:50%;background:url({u(TILE)}) center/cover;box-shadow:0 0 0 10px #fff,0 10px 24px rgba(0,0,0,.2)"></div>
@@ -116,6 +128,7 @@ CALL = HEAD + f"""<div class="wrap" style="background:#1d1b22;color:#fff;justify
 
 M = 'assets/colorcards/papaya-spritz/mats/'
 G2 = 'assets/mats/gallery/'
+PACE = 1.35  # Tiffany Oct 19: slow it down a little
 SHOTS = [
     (CALL, 2.4),
     (card(MM, 'Mahj Matchmaker. How can I <i>save your table?</i>', 120, clip=True), 2.6),
@@ -127,12 +140,13 @@ SHOTS = [
     (card(PS, 'I feel like I have a lot <i>to offer.</i>', 130), 2.4),
     (HEAD + f"""<div class="wrap" style="background:url({u('assets/colorcards/papaya-spritz/00-papaya-spritz-mahjong-tiles-profile-c-story.jpg')}) center/cover"></div></body></html>""", 3.0),
     (card(MM, 'You deserve someone who brings out your <i>best colors.</i>', 128, clip=True), 3.0),
-    (prof(M + 'heiress-britt-mills.jpg', 'Heiress', 'Britt Mills', 'Her <i>top</i> match', top=True), 2.0),
-    (prof(G2 + 'anders-ruff--bams-bubbly.webp', 'Bams &amp; Bubbly', 'Anders Ruff', 'Strong match <i>potential</i>'), 1.4),
-    (prof(M + 'greenly-mahj-and-vine.jpg', 'Greenly', 'Mahj &amp; Vine', 'Strong match <i>potential</i>'), 1.4),
-    (prof(G2 + 'oh-my-mahjong--vivienne.webp', 'Vivienne', 'Oh My Mahjong', 'Strong match <i>potential</i>'), 1.4),
-    (prof(M + 'press-for-mahjong-anders-ruff.jpg', 'Press for Mahjong', 'Anders Ruff', 'Strong match <i>potential</i>'), 1.4),
-    (prof(G2 + 'oh-my-mahjong--goldie-retired.webp', 'Goldie', 'Oh My Mahjong', 'Strong match <i>potential</i>'), 1.4),
+    (SEARCHING, 2.0),
+    (prof(M + 'heiress-britt-mills.jpg', 'Heiress', 'Britt Mills', 'match 1 of 50'), 2.0),
+    (prof(G2 + 'anders-ruff--bams-bubbly.webp', 'Bams &amp; Bubbly', 'Anders Ruff', 'match 2 of 50'), 1.4),
+    (prof(M + 'greenly-mahj-and-vine.jpg', 'Greenly', 'Mahj &amp; Vine', 'match 3 of 50'), 1.4),
+    (prof(G2 + 'oh-my-mahjong--vivienne.webp', 'Vivienne', 'Oh My Mahjong', 'match 4 of 50'), 1.4),
+    (prof(M + 'press-for-mahjong-anders-ruff.jpg', 'Press for Mahjong', 'Anders Ruff', 'match 5 of 50'), 1.4),
+    (prof(G2 + 'oh-my-mahjong--goldie-retired.webp', 'Goldie', 'Oh My Mahjong', 'match 6 of 50'), 1.4),
     (card(PS, 'Hook me <i>up.</i>', 190), 2.2),
     (HEAD + f"""<div class="wrap" style="background:{END[0]};color:{END[1]}">
       <img src="{u('assets/brand/flame-heart.png')}" style="width:150px;margin-bottom:40px">
@@ -153,7 +167,7 @@ async def main():
         await b.close()
     lst = f'{OUT}/frames/list.txt'
     with open(lst, 'w') as f:
-        for i, (_, d) in enumerate(SHOTS, 1): f.write(f"file 'f{i:02d}.png'\nduration {d}\n")
+        for i, (_, d) in enumerate(SHOTS, 1): f.write(f"file 'f{i:02d}.png'\nduration {round(max(d * PACE, 1.8), 2)}\n")
         f.write(f"file 'f{len(SHOTS):02d}.png'\n")
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', lst, '-vf', 'fps=30,format=yuv420p',
                     '-c:v', 'libx264', '-crf', '18', f'{OUT}/counseling-session-1-papaya-spritz.mp4'], check=True)
