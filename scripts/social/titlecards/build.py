@@ -38,8 +38,14 @@ def card(pal, html, size=150, who=None, mark=True, q=True, pre=''):
     w = who if who is not None else name
     if q: html = f'&ldquo;{html}&rdquo;'
     pre = f'<div style="font-family:Lo;font-style:italic;font-size:64px;opacity:.8;margin-bottom:34px">{pre}</div>' if pre else ''
+    av = AV.get(name)
+    whohtml = ''
+    if w and av:
+        whohtml = (f'<div style="display:flex;align-items:center;gap:22px;margin-top:64px"><div style="width:120px;height:120px;border-radius:50%;{av};box-shadow:0 0 0 6px {fg}"></div>'
+                   f'<div class="who" style="margin-top:0;text-align:left">{w}</div></div>')
+    elif w: whohtml = f'<div class="who">{w}</div>'
     return (HEAD + f'<div class="wrap" style="background:{bg};color:{fg}">{pre}<div class="line" style="font-size:{size}px">{html}</div>'
-            + (f'<div class="who">{w}</div>' if w else '')
+            + whohtml
             + (f'<div class="mark">mahj matchmaker</div>' if mark else '') + '</div></body></html>')
 
 def photo(img, label, note=None, pos='center'):
@@ -49,6 +55,15 @@ def photo(img, label, note=None, pos='center'):
             + '</div></body></html>')
 
 TILE = 'assets/tiles/album/papaya-spritz.jpg'
+# profile photos under each speaker. Matchmaker = logo placeholder until Tiffany's real headshot exists.
+AV = {'Papaya Spritz': f"background:url({u(TILE)}) center/cover",
+      'The Matchmaker': f"background:#f7b6c8 url({u('assets/brand/flame-heart.png')}) center/62% no-repeat"}
+CARDS = 'assets/cards/papaya-spritz/papaya-spritz-mahjong-tiles-'
+def match(file, label, sub):
+    return (HEAD + f'<div class="wrap" style="background:#f6e9df;justify-content:flex-start;padding-top:150px">'
+            f'<div class="line" style="font-size:96px;color:#062a55">{label}</div>'
+            f'<div style="font:600 36px Bit;color:#c8325f;margin:22px 0 50px;letter-spacing:.04em">{sub}</div>'
+            f'<img src="{u(CARDS + file)}" style="width:900px;border-radius:26px;box-shadow:0 26px 60px rgba(6,42,85,.22)"></div></body></html>')
 EVID = HEAD + f"""<div class="wrap" style="background:#efe4d6">
  <div style="font-family:Hand;font-size:110px;color:#062a55;margin-bottom:40px">Exhibit A</div>
  <div style="background:#fff;padding:30px 30px 120px;box-shadow:0 30px 60px rgba(0,0,0,.18);transform:rotate(-3deg)">
@@ -78,15 +93,20 @@ SHOTS = [
     (card(MM, 'Mm&#8209;hmm.', 140), 1.2),
     (card(MM, '<i>Wow.</i>', 220), 1.2),
     (card(MM, '<span style="font-size:96px;font-weight:500">&ldquo;It&rsquo;s not you&hellip;</span><br><span style="display:inline-block;margin-top:40px">it&rsquo;s your <i>mat.</i>&rdquo;</span>', 190, pre='(whispering)', q=False), 4.0),
-    (photo('assets/launches/omm-vivienne-mat/02.jpg', 'Papaya Spritz + Vivienne · Oh My Mahjong'), 2.6),
+    (match('britt-mills-heiress-mat.jpg', 'Her <i>top</i> match', 'Heiress · Britt Mills'), 2.6),
     (card(MM, 'You deserve someone who brings out your <i>best colors.</i>', 128), 3.0),
+    (match('anders-ruff-press-for-mahjong-mat.jpg', 'Strong match <i>potential</i>', 'Press for Mahjong · Anders Ruff'), 1.3),
+    (match('mahj-and-vine-greenly-mat.jpg', 'Strong match <i>potential</i>', 'Greenly · Mahj &amp; Vine'), 1.3),
+    (match('oh-my-mahjong-vivienne-mat.jpg', 'Strong match <i>potential</i>', 'Vivienne · Oh My Mahjong'), 1.3),
+    (match('oh-my-mahjong-goldie-mat.jpg', 'Strong match <i>potential</i>', 'Goldie · Oh My Mahjong'), 1.3),
+    (match('virora-mahjong-coralia-mat.jpg', 'Strong match <i>potential</i>', 'Coralia · Virora Mahjong'), 1.3),
     (card(PS, 'Hook me <i>up.</i>', 190), 2.2),
     (HEAD + f"""<div class="wrap" style="background:{END[0]};color:{END[1]}">
-      <img src="{u('assets/brand/flame-heart.png')}" style="width:170px;margin-bottom:50px">
-      <div class="line" style="font-size:200px">It&rsquo;s a <i>match!</i></div>
-      <div style="font:600 44px Bit;color:#062a55;margin-top:60px">Consider yourself hooked up.</div>
-      <div style="font:600 34px Bit;color:#062a55;opacity:.7;margin-top:16px">Find Your Match · 10.27 · mahjmatchmaker.com</div>
-      <img src="{u('assets/brand/mahjmatchmaker-wordmark-notag.png')}" style="position:absolute;bottom:110px;width:440px"></div></body></html>""", 3.2),
+      <img src="{u('assets/brand/flame-heart.png')}" style="width:170px;margin-bottom:46px">
+      <img src="{u('assets/brand/mahjmatchmaker-wordmark-notag.png')}" style="width:760px">
+      <div class="line" style="font-size:96px;margin-top:40px">Hooking up <i>tiles, mats</i> &amp; <i>racks.</i></div>
+      <div style="margin-top:70px;background:#062a55;color:#fff;border-radius:999px;padding:26px 54px;font:600 46px Bit">Find Your Match · 10.27</div>
+      <div style="font:600 34px Bit;color:#062a55;opacity:.7;margin-top:26px">See all 50 of her matches · mahjmatchmaker.com</div></div></body></html>""", 3.4),
 ]
 
 async def main():
