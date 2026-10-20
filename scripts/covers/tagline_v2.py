@@ -35,7 +35,7 @@ def tagline(txt, max_w=372):
 def apply(src, dst, txt='TILES · MATS · RACKS'):
     img = clean(Image.open(src).convert('RGB').resize((1080, 1350), Image.LANCZOS)).convert('RGBA')
     wm = Image.open(WM).convert('RGBA'); w = 540; wm = wm.resize((w, int(wm.height * w / wm.width)), Image.LANCZOS)
-    img.alpha_composite(wm, ((1080 - w) // 2, 900 - wm.height // 2 - 8))
+    img.alpha_composite(wm, ((1080 - w) // 2, 942 - wm.height // 2))
     t = tagline(txt); img.alpha_composite(t, ((1080 - t.width) // 2, 1012 - t.height // 2))
     img.convert('RGB').save(dst, quality=94)
 if __name__ == '__main__':
