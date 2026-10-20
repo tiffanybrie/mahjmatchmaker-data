@@ -12,7 +12,7 @@ PX0, PY0, PX1, PY1 = 87, 281, 993, 1069
 NAMES = {'sunday-tile-set': 'Sunday', 'glow-wild': 'Glow Wild', 'heritage-2-0': 'Heritage', 'la-fete': 'La Fête', 'lilac-soiree': 'Lilac Soirée', 'preppy-soiree': 'Preppy Soirée',
          'shangri-la': 'Shangri-La', 'palm-royale': 'Palm Royale', 'papaya-spritz': 'Papaya Spritz', 'spring-love': 'Spring Love', 'cypress-forest': 'Cypress'}
 LIFT = {'malachite', 'jade', 'tortoise', 'coquette'}
-TEX = {'emerald', 'glow-wild', 'talulah', 'heritage', 'heritage-2-0', 'cypress-forest'}   # photo-textured panels: template frame, no lifting
+TEX = {'coquette', 'emerald', 'glow-wild', 'talulah', 'heritage', 'heritage-2-0', 'cypress-forest'}   # photo-textured panels: template frame, no lifting
 PANEL = {'emerald': (18, 112, 78)}   # panel colour overrides (Emerald's old panel was a gem photo)
 def src(k):
     if k == 'sunday-tile-set': return R + 'assets/cards/sunday-tile-set/00-sunday-tile-set-mahjong-tiles-cover.jpg'
@@ -32,14 +32,14 @@ def panel_obs(a):  # median panel colour from the ring between the frame and the
     return np.median(px[keep], axis=0)
 VAULT = {'lilac-soiree', 'preppy-soiree', 'shangri-la', 'spring-love', 'sunday-tile-set'}
 def content_mask(k=''):
-    if k == 'coquette':   # keep all four bows + swoosh lines whole; only the text area is repainted
+    if False:   # (bows dropped Oct 20) + swoosh lines whole; only the text area is repainted
         m = np.zeros((1350, 1080), bool); m[380:1000, 262:818] = True; m[905:985, 252:845] = True; m[990:1060, 345:735] = True; return m
     m = np.zeros((1350, 1080), bool); m[330:1000, 185:895] = True; m[990:1060, 345:735] = True
     if k != 'coquette': m[540:800, 140:945] = True   # Coquette's ribbon tails run down the sides
     if k in VAULT: m[960:1062, 150:930] = True
     return m
-def lift_logo(a):
-    xa, xb = 230, 850; wh = white_alpha(a[300:900, xa:xb]) > .5
+def lift_logo(a, y0=300):
+    xa, xb = 230, 850; wh = white_alpha(a[y0:900, xa:xb]) > .5
     rows = wh.sum(axis=1) > 3; bl, s0 = [], None
     for i, r in enumerate(list(rows) + [False]):
         if r and s0 is None: s0 = i
@@ -48,7 +48,7 @@ def lift_logo(a):
             else: bl.append((s0, i))
             s0 = None
     bl = [b for b in bl if b[1] - b[0] >= 10]; logo = bl[:-2]
-    t, bt = logo[0][0] + 300 - 4, logo[-1][1] + 300 + 4
+    t, bt = logo[0][0] + y0 - 4, logo[-1][1] + y0 + 4
     al = white_alpha(a[t:bt, xa:xb]); cols = np.nonzero((al > .3).sum(axis=0))[0]; l, r = cols.min() - 4, cols.max() + 5
     al = al[:, max(l, 0):r]
     im = Image.new('RGBA', (al.shape[1], al.shape[0]), (251, 246, 238, 255)); im.putalpha(Image.fromarray((al * 255).astype(np.uint8))); return im
@@ -78,7 +78,7 @@ for k in sys.argv[2:]:
     REF['lum'] = float(panel_obs(a).min())
     if k == 'sunday-tile-set': logo = f'<img src="{C}holiday/sunday_white.png" style="display:block;height:150px">'
     elif k == 'cypress-forest': logo = f'<img src="{R}builder/logos/mahjongrowco_0.png" style="display:block;height:250px;margin:-30px 0 -20px">'
-    elif k in LIFT: lift_logo(a).save(tmp + '/logo.png'); logo = f'<img src="{tmp}/logo.png" style="display:block;max-width:600px">'
+    elif k in LIFT: lift_logo(a, 395 if k == 'coquette' else 300).save(tmp + '/logo.png'); logo = f'<img src="{tmp}/logo.png" style="display:block;max-width:600px">'
     else: logo = f'<img src="{C}holiday/omm_white.png" style="display:block;height:160px">'
     Image.fromarray(rebuild_panel(a, k)).save(tmp + '/bg.png')
     n, t2 = title(k)
