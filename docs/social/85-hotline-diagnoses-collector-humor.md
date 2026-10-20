@@ -95,3 +95,12 @@ Her "harebrained idea" that could go viral. Revisit with a brainstorm; she wants
 
 ## Breakup lines (Tiffany, Oct 19 night)
 - **"I think you should see other racks."** Landed funny with her. A breakup line for when a set's current rack isn't working; save it for a rack-swap skit or a "not this one" moment. (It didn't fit the Papaya intro, so that slide keeps "Racks she's into.")
+
+## Papaya Spritz = a prosecco drink (Tiffany, Oct 19 night)
+A papaya spritz is a fizzy papaya + prosecco cocktail. Papaya is a bright, fun party girl, same category as Pippa (bright, sunshiny party girl), so the drink name fits. Lines worth using for Papaya (captions, stories, skits):
+- "One prosecco, two prosecco, three prosecco, floor!" (Tiffany's favorite; skit or reel line)
+- "I'll be ready in a prosecco." (launch-day countdown story: "She'll be ready in a prosecco")
+- "I put the pro in prosecco."
+- "Prosecco now, adulting later." / "Save water, drink bubbles."
+- Profile card answers (Oct 19): Looking for "A mat that can keep up at happy hour" · Love language "Bubbles and scalloped edges" · Fear "Being called fall décor. I'm a spritz, not a pumpkin." · pills Prosecco / Golden hour / Pink mats / Patio season.
+- Rule: every set's profile answers are her own (from her name, colors, personality); the three prompt questions stay the same.

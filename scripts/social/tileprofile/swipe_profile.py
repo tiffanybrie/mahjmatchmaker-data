@@ -17,10 +17,10 @@ TMP = os.path.dirname(os.path.abspath(__file__)) + '/html'
 os.makedirs(TMP, exist_ok=True)
 
 P = dict(name='Papaya Spritz', brand='Oh My Mahjong', photo='assets/tiles/album/papaya-spritz.jpg',
-         active='Launching Wed 10/21', looking='Long-term mat partner',
-         pills=['Golden hour', 'Pink mats', 'Garden parties', "Spritz o'clock"],
-         love='Coordinating racks',
-         prompt_q='My most irrational fear', prompt_a='A beige tablecloth.',
+         active='Launching Wed 10/21', looking='A mat that can keep up at happy hour',
+         pills=['Prosecco', 'Golden hour', 'Pink mats', 'Patio season'],
+         love='Bubbles and scalloped edges',
+         prompt_q='My most irrational fear', prompt_a='Being called fall décor. I\'m a spritz, not a pumpkin.',
          basics=[('#de7e30', 'Papaya backs'), ('#a8a3e1', 'Lavender layer'), ('#c8d7a5', 'Light lime layer'), ('#ef7aa0', 'Pink faces')],
          matches=50)
 
@@ -53,7 +53,7 @@ html,body{{width:1080px;height:1920px;overflow:hidden;background:var(--cream);co
 .abs{{position:absolute}}
 .card{{position:absolute;left:60px;top:170px;width:960px;height:1500px;background:#fff;border-radius:44px;overflow:hidden;
   box-shadow:0 30px 70px rgba(5,40,90,.20),0 4px 12px rgba(5,40,90,.10)}}
-.photo{{position:absolute;left:0;top:0;width:960px;height:930px;background:url('{u(P['photo'])}') center/cover}}
+.photo{{position:absolute;left:0;top:0;width:960px;height:850px;background:url('{u(P['photo'])}') center/cover}}
 .bars{{position:absolute;left:24px;right:24px;top:22px;display:flex;gap:10px}}
 .bars i{{flex:1;height:8px;border-radius:4px;background:rgba(255,255,255,.5)}}
 .bars i:first-child{{background:#fff}}
@@ -68,11 +68,11 @@ html,body{{width:1080px;height:1920px;overflow:hidden;background:var(--cream);co
 .pill{{font:600 25px Bit;color:#fff;border:2.5px solid rgba(255,255,255,.85);border-radius:999px;padding:8px 20px;white-space:nowrap;background:rgba(255,255,255,.12)}}
 .stamp{{position:absolute;left:64px;top:110px;transform:rotate(-12deg);border:9px solid #3fae5a;color:#3fae5a;font:700 104px Bit;letter-spacing:.06em;
   padding:0 26px;border-radius:18px;background:rgba(255,255,255,.80)}}
-.body{{position:absolute;left:44px;right:44px;top:966px}}
+.body{{position:absolute;left:44px;right:44px;top:884px}}
 .box{{background:#fdf4ee;border-radius:26px;padding:22px 30px;margin-bottom:20px}}
 .q{{font:700 22px Bit;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:8px;display:flex;align-items:center;gap:12px}}
-.a{{font-family:Capra;font-size:54px;line-height:1.05;color:var(--navy)}}
-.pa{{font-family:PF;font-style:italic;font-size:56px;line-height:1.1;color:var(--navy)}}
+.a{{font-family:Capra;font-size:43px;line-height:1.05;color:var(--navy)}}
+.pa{{font-family:PF;font-style:italic;font-size:42px;line-height:1.1;color:var(--navy)}}
 .basics{{display:flex;flex-wrap:nowrap;gap:9px}}
 .basic{{display:inline-flex;align-items:center;gap:10px;font:600 23px Bit;color:var(--navy);background:#fff;border:2.5px solid #ecdcd0;border-radius:999px;padding:8px 16px 8px 10px}}
 .dot{{width:26px;height:26px;border-radius:50%;box-shadow:0 0 0 3px #fff,0 1px 4px rgba(5,40,90,.2)}}
