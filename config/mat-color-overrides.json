@@ -491,9 +491,10 @@
    "src": "claude-look",
    "by": "tiffany-chat-2026-10-20",
    "also": [
-    "blue"
+    "blue",
+    "purple"
    ],
-   "note": "Amanda Toppe Limelight"
+   "note": "Green primary, also Blue, also Purple (pastel lavender), mood Pastels."
   },
   "shop.andersruff.com/pineapple-palms-mahjong-mat": {
    "primary": "green",
@@ -1734,6 +1735,24 @@
     "purple"
    ],
    "note": "Pink primary, Blue secondary, Purple (plum) third. Mood tag kept (Claude's Pastels->Brights re-check had already moved it to Brights for the bold plum outlines)."
+  },
+  "www.viroramahjong.com/petalwing": {
+   "primary": "blue",
+   "secondary": [
+    "pink"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "virora-mahjong--petalwing",
+   "light": 0.569,
+   "chroma": 0.486,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "pink"
+   ],
+   "note": "relayed as 'Aurora Mahjong Petalwing' (the only Petalwing is Virora Mahjong's): Blue primary, also Pink (pastel pink), mood Pastels."
   }
  }
 }

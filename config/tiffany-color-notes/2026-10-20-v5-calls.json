@@ -108,6 +108,17 @@
     "purple"
    ],
    "note": "Green primary, also Blue, also Purple (pastel lavender), mood Pastels."
+  },
+  {
+   "brand": "Birdsong Mahjong",
+   "name": "Heaven Scent",
+   "img": "birdsong-mahjong--heaven-scent",
+   "primary": "green",
+   "also": [
+    "blue",
+    "red"
+   ],
+   "note": "Relayed as Bam! Let's Mahjong 'Birdsong - Green Floral American' = Green, also Blue (deep blue), also Red (red border). Photo check: Bam! Birdsong has a green gingham border and no red border; Birdsong Mahjong Heaven Scent has the deep blue middle + red frame line, so the call is applied to Heaven Scent (per the coordinator's instruction)."
   }
  ],
  "mood_calls": [
@@ -186,6 +197,11 @@
    "green",
    "blue",
    "purple"
+  ],
+  "birdsong-mahjong--heaven-scent": [
+   "green",
+   "blue",
+   "red"
   ]
  }
 }

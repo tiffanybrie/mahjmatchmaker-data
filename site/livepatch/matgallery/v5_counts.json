@@ -283,12 +283,14 @@
  "v5_final_calls": [
   "amahj--blue-citron-lilac-mahjong-game-mat",
   "mahj-moon--tropical-hibiscus",
+  "amanda-toppe--limelight",
   "mahj-moon--blue-tropical-palm",
   "mahj-moon--scalloped-tropical-palm",
   "sunday-mahjong--plum-panda-premium",
   "sunday-mahjong--sunday-premium",
   "oh-my-mahjong--sedona",
-  "oh-my-mahjong--year-of-the-horse"
+  "oh-my-mahjong--year-of-the-horse",
+  "virora-mahjong--petalwing"
  ],
  "v5_pastel_to_brights": [
   "anders-ruff--a-mahjong-soir-e-mahjong-mat",
@@ -487,7 +489,7 @@
  "section_tiers_active": {
   "pink": {
    "primary": 139,
-   "also": 30,
+   "also": 31,
    "accent": 113
   },
   "red": {
@@ -503,17 +505,17 @@
   "yellow": {
    "primary": 17,
    "also": 8,
-   "accent": 60
+   "accent": 21
   },
   "green": {
    "primary": 105,
    "also": 24,
-   "accent": 109
+   "accent": 144
   },
   "teal": {
    "primary": 46,
    "also": 7,
-   "accent": 85
+   "accent": 49
   },
   "blue": {
    "primary": 150,
@@ -522,7 +524,7 @@
   },
   "purple": {
    "primary": 44,
-   "also": 9,
+   "also": 10,
    "accent": 16
   },
   "neutral": {
@@ -533,7 +535,7 @@
   "earthy": {
    "primary": 36,
    "also": 49,
-   "accent": 59
+   "accent": 89
   },
   "dark": {
    "primary": 30,
@@ -552,12 +554,12 @@
   },
   "pastel": {
    "primary": 0,
-   "also": 147,
+   "also": 148,
    "accent": 0
   },
   "brights": {
    "primary": 11,
-   "also": 193,
+   "also": 192,
    "accent": 0
   },
   "florals": {
@@ -582,21 +584,21 @@
   }
  },
  "section_counts_active": {
-  "pink": 282,
+  "pink": 283,
   "red": 67,
   "orange": 88,
-  "yellow": 85,
-  "green": 238,
-  "teal": 138,
+  "yellow": 46,
+  "green": 273,
+  "teal": 102,
   "blue": 280,
-  "purple": 69,
+  "purple": 70,
   "neutral": 141,
-  "earthy": 144,
+  "earthy": 174,
   "dark": 101,
   "bw": 13,
   "simple": 172,
-  "pastel": 147,
-  "brights": 204,
+  "pastel": 148,
+  "brights": 203,
   "florals": 36,
   "animal": 37,
   "holiday": 64,
@@ -604,21 +606,21 @@
   "retired": 29
  },
  "section_counts_if_retired_shown": {
-  "pink": 297,
+  "pink": 298,
   "red": 70,
   "orange": 91,
-  "yellow": 91,
-  "green": 251,
-  "teal": 145,
+  "yellow": 49,
+  "green": 286,
+  "teal": 108,
   "blue": 291,
-  "purple": 72,
+  "purple": 73,
   "neutral": 146,
-  "earthy": 146,
+  "earthy": 178,
   "dark": 103,
   "bw": 13,
   "simple": 174,
-  "pastel": 156,
-  "brights": 217,
+  "pastel": 157,
+  "brights": 216,
   "florals": 39,
   "animal": 37,
   "holiday": 65,
@@ -1469,6 +1471,25 @@
    "Year of the Horse",
    "Year of the Horse",
    "pink",
+   [
+    "blue",
+    "purple"
+   ]
+  ],
+  [
+   "Virora Mahjong",
+   "Petalwing",
+   "Petalwing",
+   "blue",
+   [
+    "pink"
+   ]
+  ],
+  [
+   "Amanda Toppe",
+   "Limelight",
+   "Limelight",
+   "green",
    [
     "blue",
     "purple"
