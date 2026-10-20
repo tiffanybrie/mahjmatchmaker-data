@@ -1,0 +1,137 @@
+{
+ "set": "Malachite",
+ "cancelled": [
+  "Manor Garden"
+ ],
+ "cards": [
+  {
+   "order": 1,
+   "mat": "Serenity",
+   "brand": "Amanda Toppe",
+   "file": "malachite-mahjong-tiles-amanda-toppe-serenity-mat.jpg",
+   "src": "assets/mats/amanda-toppe/serenity.jpg",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Miss Mahjong Jade & Brass",
+    "Miss Mahjong Brass & Tortoise"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Petal Purple",
+    "Bird & Bamboo Moss"
+   ]
+  },
+  {
+   "order": 2,
+   "mat": "Midori Shadows",
+   "brand": "Golden Pond Mahjong",
+   "file": "malachite-mahjong-tiles-golden-pond-mahjong-midori-shadows-mat.jpg",
+   "src": "assets/mats/golden-pond-mahjong/midori-shadows.jpg",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Miss Mahjong Jade & Brass",
+    "Miss Mahjong Brass & Tortoise"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Peony"
+   ]
+  },
+  {
+   "order": 3,
+   "mat": "Garden Party Deep Green",
+   "brand": "Miss Mahjong",
+   "file": "malachite-mahjong-tiles-miss-mahjong-garden-party-deep-green-mat.jpg",
+   "src": "assets/mats/miss-mahjong/garden-party-deep-green-corner.jpg",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Miss Mahjong Jade & Brass",
+    "Miss Mahjong Brass & Tortoise"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Brick Red",
+    "Miss Mahjong Jade & Brass",
+    "Miss Mahjong Scalloped Iridescent Opal"
+   ]
+  },
+  {
+   "order": 4,
+   "mat": "White Lotus",
+   "brand": "Mahj Tile Haus",
+   "file": "malachite-mahjong-tiles-mahj-tile-haus-white-lotus-mat.jpg",
+   "src": "assets/mats/mahj-tile-haus/white-lotus-WATERMARKED-no-social.jpg",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Miss Mahjong Jade & Brass",
+    "Miss Mahjong Brass & Tortoise"
+   ],
+   "mat_racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Moss"
+   ]
+  },
+  {
+   "order": 5,
+   "mat": "Garden Party Powder Blue",
+   "brand": "Miss Mahjong",
+   "file": "malachite-mahjong-tiles-miss-mahjong-garden-party-powder-blue-mat.jpg",
+   "src": "assets/mats/miss-mahjong/garden-party-powder-blue-corner.jpg",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Miss Mahjong Jade & Brass",
+    "Miss Mahjong Brass & Tortoise"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Powder Blue",
+    "Bird & Bamboo Light Pink"
+   ]
+  },
+  {
+   "order": 6,
+   "mat": "Jardín de los Jefes",
+   "brand": "Tigre de Tartan",
+   "file": "malachite-mahjong-tiles-tigre-de-tartan-jardin-de-los-jefes-mat.jpg",
+   "src": "assets/mats/clean/jardin-de-los-jefes-canvas-bright.jpg",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Miss Mahjong Jade & Brass",
+    "Miss Mahjong Brass & Tortoise"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Radish",
+    "Bird & Bamboo Basil"
+   ]
+  },
+  {
+   "order": 7,
+   "mat": "Garden Party Lavender",
+   "brand": "Miss Mahjong",
+   "file": "malachite-mahjong-tiles-miss-mahjong-garden-party-lavender-mat.jpg",
+   "src": "assets/mats/miss-mahjong/garden-party-lavender-corner.jpg",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Miss Mahjong Jade & Brass",
+    "Miss Mahjong Brass & Tortoise"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo French Blue",
+    "Bird & Bamboo Lilac"
+   ]
+  },
+  {
+   "order": 8,
+   "mat": "Pink Tiger",
+   "brand": "YOLO Mahjong",
+   "file": "malachite-mahjong-tiles-yolo-mahjong-pink-tiger-mat.jpg",
+   "src": "assets/mats/yolo-mahjong/pink-tiger-flat-v2.jpg",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Miss Mahjong Jade & Brass",
+    "Miss Mahjong Brass & Tortoise"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Carrot",
+    "Bird & Bamboo Dark Teal"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1482 @@
+{
+ "set": "Petal\u00e9e",
+ "cards": [
+  {
+   "order": 1,
+   "vote_id": "tt-rainbow-row",
+   "star": true,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Rainbow Row",
+   "brand": "Rebecca Illustrated",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-rebecca-illustrated-rainbow-row-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/3.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Light Blue"
+   ],
+   "mat_reg": "rainbow-row"
+  },
+  {
+   "order": 2,
+   "vote_id": "ret-capri",
+   "star": true,
+   "top_pick_note": false,
+   "note": "Top pick",
+   "mat": "Capri",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-oh-my-mahjong-capri-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/6.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Pistachio",
+    "Bird & Bamboo Cream"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 3,
+   "vote_id": "tt-mahjsquad-pink-floral-chinoiserie",
+   "star": true,
+   "top_pick_note": false,
+   "note": "Need better pic if possible",
+   "mat": "Pink Floral Chinoiserie",
+   "brand": "Mahj Squad",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-mahj-squad-pink-floral-chinoiserie-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/mahj-squad/pink-floral-chinoiserie-flat-closeup-WATERMARKED-no-social.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Mermaid"
+   ],
+   "mat_reg": "pink-floral-chinoiserie"
+  },
+  {
+   "order": 4,
+   "vote_id": "cc-garden-party-mahjong-mat",
+   "star": true,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Garden Party",
+   "brand": "Bam! Let's Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-bam-lets-mahjong-garden-party-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/18.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Bird & Bamboo Mermaid"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 5,
+   "vote_id": "cc-seashell-american-mahjong-mat",
+   "star": true,
+   "top_pick_note": false,
+   "note": "Top pick",
+   "mat": "Seashell American",
+   "brand": "Mahj & Moon",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-mahj-and-moon-seashell-american-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/44.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Cream"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 6,
+   "vote_id": "cc-violet-vines-wisteria-mat",
+   "star": true,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Violet Vines Wisteria",
+   "brand": "Middle & Main Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-middle-and-main-mahjong-violet-vines-wisteria-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/54.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Berry Purple",
+    "Bird & Bamboo Lilac"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 7,
+   "vote_id": "cc-chantilly-mat",
+   "star": true,
+   "top_pick_note": false,
+   "note": "Top pick",
+   "mat": "Chantilly",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-oh-my-mahjong-chantilly-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/96.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Cornflower Blue",
+    "Bird & Bamboo Lilac"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 8,
+   "vote_id": "cc-pre-order-sapphire-soiree-copy",
+   "star": true,
+   "top_pick_note": false,
+   "note": "Top pick",
+   "mat": "Petal Parade",
+   "brand": "Mahj & Vine",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-mahj-and-vine-petal-parade-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/98.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Ballet Pink"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 9,
+   "vote_id": "cc-watercolor-bloom",
+   "star": true,
+   "top_pick_note": false,
+   "note": "Top pick",
+   "mat": "Watercolor Blooms",
+   "brand": "Mahj & Vine",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-mahj-and-vine-watercolor-blooms-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/108.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Turks Blue"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 10,
+   "vote_id": "cc-vivara-mat-w-tube",
+   "star": true,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Vivara",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-oh-my-mahjong-vivara-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/133.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Blue",
+    "Bird & Bamboo Petal Purple"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 11,
+   "vote_id": "ret-garden-party",
+   "star": true,
+   "top_pick_note": false,
+   "note": "Top pick",
+   "mat": "Garden Party",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-oh-my-mahjong-garden-party-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/204.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Pistachio",
+    "Bird & Bamboo Yellow"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 12,
+   "vote_id": "ret-camellia",
+   "star": true,
+   "top_pick_note": false,
+   "note": "Top pick",
+   "mat": "Camellia",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-oh-my-mahjong-camellia-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/210.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Petal Purple"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 13,
+   "vote_id": "ret-citrus-songbird",
+   "star": true,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Citrus Songbird",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-oh-my-mahjong-citrus-songbird-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/213.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Seafoam",
+    "Bird & Bamboo Yellow"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 14,
+   "vote_id": "ret-amethyst",
+   "star": true,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Amethyst",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-oh-my-mahjong-amethyst-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/214.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Icy Mint",
+    "Bird & Bamboo Petal Purple"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 15,
+   "vote_id": "x-bloomjong-lakeside-a",
+   "star": true,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Lakeside Double-Sided",
+   "brand": "Bloomjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-bloomjong-lakeside-double-sided-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/218.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo White",
+    "Bird & Bamboo True Black"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 16,
+   "vote_id": "cc-girly-mahjong-mat",
+   "star": false,
+   "top_pick_note": true,
+   "note": "Top pick. Top pick",
+   "mat": "Girly",
+   "brand": "Royal Mahjong Society",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-royal-mahjong-society-girly-mat.jpg",
+   "code": "15% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/82.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo White",
+    "Bird & Bamboo Mermaid"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 17,
+   "vote_id": "cc-chinoiserie-song-bird",
+   "star": false,
+   "top_pick_note": true,
+   "note": "Top pick",
+   "mat": "Chinoiserie Songbird",
+   "brand": "Mahj & Vine",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-mahj-and-vine-chinoiserie-songbird-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/94.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Pink",
+    "Peace Love Mahjong Chartreuse",
+    "Mahj Mood Scalloped Clear Acrylic"
+   ],
+   "mat_reg": "mahj-and-vine-chinoiserie-songbird"
+  },
+  {
+   "order": 18,
+   "vote_id": "ret-peri-twinkle",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Peri Twinkle",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-oh-my-mahjong-peri-twinkle-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/0.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Blue",
+    "Bird & Bamboo Lilac"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 19,
+   "vote_id": "at-sparrows-nest-mahjong-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Sparrow's Nest",
+   "brand": "Amanda Toppe",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-amanda-toppe-sparrows-nest-mat.jpg",
+   "code": "20% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/1.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Ballet Pink",
+    "Bird & Bamboo Seafoam"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 20,
+   "vote_id": "at-serenity-mahjong-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Serenity",
+   "brand": "Amanda Toppe",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-amanda-toppe-serenity-mat.jpg",
+   "code": "20% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/2.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Ballet Pink",
+    "Bird & Bamboo Moss"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 21,
+   "vote_id": "cc-esme-mat-w-tube",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Esme",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-oh-my-mahjong-esme-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/4.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Mauve"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 22,
+   "vote_id": "cc-deep-green-garden-party-mahjong-playing-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Deep Green Garden Party",
+   "brand": "Miss Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-miss-mahjong-deep-green-garden-party-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/5.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Brick Red",
+    "Miss Mahjong Jade & Brass",
+    "Miss Mahjong Scalloped Iridescent Opal"
+   ],
+   "mat_reg": "miss-mahjong-deep-green-garden-party"
+  },
+  {
+   "order": 23,
+   "vote_id": "cc-martha-mae-vintage-quilt-pattern-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Martha & Mae",
+   "brand": "Middle & Main Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-middle-and-main-mahjong-martha-and-mae-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/8.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Ocean Slate",
+    "Bird & Bamboo Lilac"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 24,
+   "vote_id": "cc-neoprene-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Classic Neoprene in Lavender",
+   "brand": "Bam Bird Boutique",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-bam-bird-boutique-classic-neoprene-in-lavender-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/9.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Lilac",
+    "Bird & Bamboo Mermaid"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 25,
+   "vote_id": "cc-parrotia",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Parrotia",
+   "brand": "Virora Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-virora-mahjong-parrotia-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/virora-mahjong/parrotia.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Peony"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 26,
+   "vote_id": "cc-the-danay-mahjong-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Danay",
+   "brand": "Bird & Bamboo",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-bird-and-bamboo-danay-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/13.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Petal Purple"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 27,
+   "vote_id": "cc-botanical-garden-mahjong-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Botanical Garden",
+   "brand": "Anders Ruff",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-anders-ruff-botanical-garden-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "book/m/16.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 28,
+   "vote_id": "cc-pink-lemonade-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Pink Lemonade",
+   "brand": "Mahj Mood",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-mahj-mood-pink-lemonade-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/29.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Bird & Bamboo Light Pink"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 29,
+   "vote_id": "cc-the-paradise-mahjong-mat-blue-bliss-copy",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Paradise Blue Bliss",
+   "brand": "Bird & Bamboo",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-bird-and-bamboo-paradise-blue-bliss-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/31.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Lilac"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 30,
+   "vote_id": "bb-boots-bubbles-soft-blue",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Boots & Bubbles",
+   "brand": "Bam Bird Boutique",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-bam-bird-boutique-boots-and-bubbles-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/33.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Lilac",
+    "Bird & Bamboo Ocean Slate"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 31,
+   "vote_id": "cc-seabee-avenue-monstera-plant-mat-copy",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Beautiful Beginnings",
+   "brand": "Middle & Main Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-middle-and-main-mahjong-beautiful-beginnings-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/39.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Turks Blue"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 32,
+   "vote_id": "cc-a-mahjong-soiree-mahjong-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "A Mahjong Soir\u00e9e",
+   "brand": "Anders Ruff",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-anders-ruff-a-mahjong-soir-e-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "book/m/46.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Mermaid"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 33,
+   "vote_id": "cc-blue-pastel-palm-beach-mahjong-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Blue Pastel Palm Beach",
+   "brand": "Mahj & Moon",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-mahj-and-moon-blue-pastel-palm-beach-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/50.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Acrylic Burl",
+    "Bird & Bamboo Seafoam"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 34,
+   "vote_id": "cc-hey-baby-mahjong-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Hey Baby",
+   "brand": "Hip Hip Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-hip-hip-mahjong-hey-baby-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/51.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Lilac",
+    "Bird & Bamboo Light Blue"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 35,
+   "vote_id": "cc-pastel-tie-dye-american-mahjong-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Pastel Tie Dye American",
+   "brand": "Mahj & Moon",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-mahj-and-moon-pastel-tie-dye-american-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/61.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Butter",
+    "Bird & Bamboo Icy Mint"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 36,
+   "vote_id": "cc-pastel-palm-beach-mahjong-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Pastel Palm Beach",
+   "brand": "Mahj & Moon",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-mahj-and-moon-pastel-palm-beach-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/67.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Cream"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 37,
+   "vote_id": "cc-roseveil",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Roseveil",
+   "brand": "Virora Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-virora-mahjong-roseveil-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/virora-mahjong/roseveil.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Ballet Pink",
+    "Bird & Bamboo Peony"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 38,
+   "vote_id": "cc-the-dahlia-mahjong-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "The Dahlia",
+   "brand": "Bird & Bamboo",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-bird-and-bamboo-the-dahlia-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/80.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Petal Purple",
+    "Bird & Bamboo Jade"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 39,
+   "vote_id": "cc-hummingbird-hydrangea-mahjong-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Hummingbird Hydrangea",
+   "brand": "Anders Ruff",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-anders-ruff-hummingbird-hydrangea-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "book/m/84.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Pistachio",
+    "Bird & Bamboo Lilac"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 40,
+   "vote_id": "cc-radiance-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Radiance",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-oh-my-mahjong-radiance-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/101.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Tiffany Dusk"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 41,
+   "vote_id": "cc-the-jubilee-bloom-mahjong-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "matches thru the layers",
+   "mat": "Jubilee Bloom",
+   "brand": "Bird & Bamboo",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-bird-and-bamboo-jubilee-bloom-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/109.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Berry Purple",
+    "Bird & Bamboo Pistachio"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 42,
+   "vote_id": "cc-festival-mahjong-playing-mat-jade",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Festival Jade",
+   "brand": "Miss Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-miss-mahjong-festival-jade-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/117.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Pistachio",
+    "Bird & Bamboo Periwinkle Blue"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 43,
+   "vote_id": "cc-rally-in-pink-mat-four-winds-social-collab-mat-benefitting-pink-fund",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Rally in Pink",
+   "brand": "Mahj Mood",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-mahj-mood-rally-in-pink-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/120.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Hot Pink",
+    "Miss Mahjong Scalloped Iridescent Opal"
+   ],
+   "mat_reg": "rally-in-pink"
+  },
+  {
+   "order": 44,
+   "vote_id": "cc-limoncea",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Limoncea",
+   "brand": "Virora Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-virora-mahjong-limoncea-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/126.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Pistachio",
+    "Bird & Bamboo Cornflower Blue"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 45,
+   "vote_id": "cc-posy-pop-watercolor-floral-mahjong-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Posy Pop Watercolor",
+   "brand": "Bam! Let's Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-bam-lets-mahjong-posy-pop-watercolor-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/128.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Matcha"
+   ],
+   "mat_reg": "posy-pop-watercolor"
+  },
+  {
+   "order": 46,
+   "vote_id": "cc-peach-spotted-cheetah-in-bloom-premium-mahjong-mat-33-copy",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Paisley Jubilee Premium",
+   "brand": "Mahjong Register",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-mahjong-register-paisley-jubilee-premium-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/139.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Glowstick"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 47,
+   "vote_id": "cc-beyond-the-ribbon-four-winds-social-collab-mat-benefitting-pink-fund-pre-order-ships-end-of-december",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Beyond the Ribbon",
+   "brand": "Mahj Mood",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-mahj-mood-beyond-the-ribbon-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/140.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Bird & Bamboo Peony"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 48,
+   "vote_id": "cc-colette-s-kaleidoscope-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Lovely Lavender Double-Sided Leatherette",
+   "brand": "Mahjong Register",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-mahjong-register-lovely-lavender-double-sided-leatherette-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/145.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Turks Blue"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 49,
+   "vote_id": "cc-petalwing",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Petalwing",
+   "brand": "Virora Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-virora-mahjong-petalwing-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/147.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo French Blue",
+    "Bird & Bamboo Light Blue"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 50,
+   "vote_id": "cc-year-of-the-horse-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Year of the Horse",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-oh-my-mahjong-year-of-the-horse-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/153.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Ocean Slate",
+    "Bird & Bamboo Wine"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 51,
+   "vote_id": "cc-the-eloise-collection-mat-collab-with-four-winds-social-pre-order-estimated-delivery",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "The Eloise Collection",
+   "brand": "Mahj Mood",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-mahj-mood-the-eloise-collection-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/159.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Jade",
+    "Bird & Bamboo Butter"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 52,
+   "vote_id": "cc-color-splash-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Color Splash",
+   "brand": "Mahj Mood",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-mahj-mood-color-splash-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/160.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Berry Purple",
+    "Bird & Bamboo Turks Blue"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 53,
+   "vote_id": "cc-lavender-garden-party-mahjong-playing-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Lavender Garden Party",
+   "brand": "Miss Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-miss-mahjong-lavender-garden-party-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/172.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 54,
+   "vote_id": "cc-coralia",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Coralia",
+   "brand": "Virora Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-virora-mahjong-coralia-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/180.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Pink Coral",
+    "Bird & Bamboo Ballet Pink"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 55,
+   "vote_id": "ret-birdie-pink",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Birdie Pink",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-oh-my-mahjong-birdie-pink-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/203.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 56,
+   "vote_id": "ret-la-fete",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "La Fete",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-oh-my-mahjong-la-fete-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/206.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Bird & Bamboo Light Blue"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 57,
+   "vote_id": "ret-zen-glow",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Zen Glow",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-oh-my-mahjong-zen-glow-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/207.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Turks Blue",
+    "Bird & Bamboo Pistachio"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 58,
+   "vote_id": "at-pink-orchids-mahjong-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Pink Orchids",
+   "brand": "Amanda Toppe",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-amanda-toppe-pink-orchids-mat.jpg",
+   "code": "20% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/209.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Petal Purple",
+    "Bird & Bamboo Coral"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 59,
+   "vote_id": "at-petalwood-mahjong-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Petalwood",
+   "brand": "Amanda Toppe",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-amanda-toppe-petalwood-mat.jpg",
+   "code": "20% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/211.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Lilac"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 60,
+   "vote_id": "at-pink-winds-mahjong-mat",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Pink Winds",
+   "brand": "Amanda Toppe",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-amanda-toppe-pink-winds-mat.jpg",
+   "code": "20% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/215.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Lilac",
+    "Bird & Bamboo Light Blue"
+   ],
+   "mat_reg": null
+  },
+  {
+   "order": 61,
+   "vote_id": "at-limelight",
+   "star": false,
+   "top_pick_note": false,
+   "note": "",
+   "mat": "Limelight",
+   "brand": "Amanda Toppe",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "petalee-mahjong-tiles-amanda-toppe-limelight-mat.jpg",
+   "code": "20% OFF  USE CODE : MAHJMATCH",
+   "src": "book/m/217.jpg",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Lavender",
+    "Peace Love Mahjong Chartreuse"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Butter",
+    "Bird & Bamboo Tiffany Dusk"
+   ],
+   "mat_reg": null
+  }
+ ],
+ "held": [
+  {
+   "vote_id": "cc-boots-bubbles-neoprene-mahjong-mat",
+   "why": "no photo found"
+  }
+ ],
+ "title_color": "#FBB1D7",
+ "tile": "assets/tiles/album/petalee-pile.jpg",
+ "racks_note": "tile racks = Claude pick pending her OK",
+ "starred_but_not_yes": [
+  "cc-citrus-grove-copy",
+  "at-blue-willow",
+  "ret-imperial",
+  "cc-lorelei-mat",
+  "cc-aria-britt-mills-mahjong-mat"
+ ]
+}
