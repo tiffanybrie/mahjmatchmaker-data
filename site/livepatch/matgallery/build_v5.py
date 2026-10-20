@@ -373,6 +373,7 @@ def v5(img, secs):
     if img in SIMPLE:
         first_mood = next((i for i, c in enumerate(secs) if c in MOODS), len(secs))
         rest = [c for c in secs if c not in MOODS]
+        rest = [c for c in rest if c != 'simple']; first_mood = min(first_mood, len(rest))
         secs = rest[:first_mood] + ['simple'] + rest[first_mood:]; v5log['simple'].append(img)
     return secs
 
