@@ -1,8 +1,6 @@
 {
  "commit": "775db9c72f77f8a41026e98a02157f18c22862d9",
- "skipped": {
-  "papaya-spritz": "held for the Papaya profile-line approval (another helper)"
- },
+ "skipped": {},
  "albums": {
   "shangri-la": {
    "page": "https://www.mahjmatchmaker.com/shangri-la-mahjong-tile-matches",
@@ -33,6 +31,15 @@
    "desktop": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@775db9c72f77f8a41026e98a02157f18c22862d9/assets/colorcards/sunday-tile-set/00-sunday-tile-set-mahjong-tiles-tile-edit-moodboard.jpg",
    "mobile": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@775db9c72f77f8a41026e98a02157f18c22862d9/assets/colorcards/sunday-tile-set/00-sunday-tile-set-mahjong-tiles-color-guide-mobile.jpg",
    "anchor_before": "<section><h2>My Sunday Tile Set matches</h2>"
+  },
+  "papaya-spritz": {
+   "page": "https://www.mahjmatchmaker.com/papaya-spritz-mahjong-tile-matches",
+   "desktop": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@5a04f77a09953ebe507ddef88f23f37e10187845/assets/colorcards/papaya-spritz/00-papaya-spritz-mahjong-tiles-tile-edit-moodboard.jpg",
+   "mobile": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@5a04f77a09953ebe507ddef88f23f37e10187845/assets/colorcards/papaya-spritz/00-papaya-spritz-mahjong-tiles-color-guide-mobile.jpg",
+   "favorites": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@5a04f77a09953ebe507ddef88f23f37e10187845/assets/social/papaya-spritz-launch/papaya-spritz-favorite-tiles.jpg",
+   "anchor_before": "<section><h2>My Papaya Spritz matches</h2>",
+   "commit": "5a04f77"
   }
- }
+ },
+ "status_oct20": "Live audit Oct 20 3:30pm: these 6 tile-set albums have NO color card on the live site (all other 41 tile-set albums do). Tiffany asked to fix (Oct 20). All CDN URLs warmed 200."
 }
