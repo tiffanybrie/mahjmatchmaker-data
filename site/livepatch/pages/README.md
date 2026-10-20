@@ -17,3 +17,9 @@ Both pages use Tiffany's own copy word for word (sent 3:32am), styled like the r
   - Blog stays before Community (her Oct 2026 note).
 - Remove Events from the header. Footer: Private Lessons | Rentals | Events.
 - Amazon storefront link: NOT included. Still her decision (header "Amazon Finds", footer, or blog only).
+
+## LIVE Oct 20, 1:15am (Tiffany approved: "Approve the new menu, About page and Community page" + Find Your Match teaser)
+- /about (collection 6ad6f5477f1352632324a21e): about_live.html, current headshot (assets/links/headshot.png) until her chambray headshot arrives. Page sits on the navy section bg from the duplicated page.
+- /find-your-match (6ad6f62ad05b752bba9d1e8d): find-your-match.html teaser "Coming 10.27". On 10/27 swap to the live tool.
+- /mahj-matchmaker-community (6ad6f6423a51003e07529cf2): new page with community.html. Old native-block page moved to /mahj-matchmaker-community-old (69b1d1c1c733e17ffa0855be), Not Linked.
+- Menu: Mahjong Matches · Holiday ▾ (Holiday Mahjong Matches, Christmas Mahjong Mats) · Find Your Match · Discount Codes · Blog · Community · About. Verified desktop hover + mobile menu.
