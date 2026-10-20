@@ -9,3 +9,10 @@ Every mat in the Find Your Match catalog (889 shown; hidden and photo-coming-soo
   - SEO description: "Browse every mahjong mat in my matching library by color and brand: pink, blue, green, neutral, holiday and more. Tap any mat to shop it."
   - Add it to the main menu (her approval covers this).
 - **Note:** the intro links to /mahjong-tile-matches and mentions Find Your Match "coming 10.27"; swap in a link to Find Your Match once it's live.
+
+## v2 (Oct 20): `matgallery-v2.html`, built by `build_v2.py`
+Rebuild: `python3 build_v2.py <mat-audit report.csv> <phash pairs.json> > matgallery-v2.html` (rewrites Tiffany's calls from config/tiffany-color-notes/2026-10-20-*.json into config/mat-color-overrides.json, then builds).
+- A mat shows in every section it belongs to: primary + Tiffany's `also` colors + Claude's photo cross-tags (config/mat-gallery-crosstags.json: extra Red and peachy-pink -> Orange & Peach). Multicolor = any mat tagged multi. Holiday mats appear in Holiday only.
+- Retired mats (incl. the "(retired)"-named album mats) live in a "Retired mats" section at the bottom; "Hide retired" (on by default) keeps them out of the color sections.
+- Duplicates collapsed (dedupe_oct20.csv); placeholders / wrong images / no-mat photos hidden (hidden_oct20.csv). Raw store titles cleaned; brand spellings fixed.
+- STANDING RULE: Mahjong Studios always sorts to the bottom of every section.
