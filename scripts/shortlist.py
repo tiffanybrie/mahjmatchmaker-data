@@ -28,7 +28,7 @@ _LD=json.load(open(ROOT+'/catalog/locked_decisions.json'))
 _HID={k for k,v in _LD.items() if isinstance(v,dict) and v.get('status')=='hidden'}
 def _key(x):
     m=_re.match(r'https?://(?:www\.)?([^/]+)/products/([^/?#]+)',x['u']); return m and m.group(1)+'/'+m.group(2)
-_BAD=_re.compile(r'solo|practice|travel|mini\b|desk mat|round',_re.I)
+_BAD=_re.compile(r'solo|practice|travel|mini\b|desk mat',_re.I)
 _LIVE=set(json.load(open(ROOT+'/catalog/fym_live_keys.json'))['keys']); _LIVE|={k.replace('www.','') for k in _LIVE}
 # Oct 20 (Tiffany: a far-away table shot of a Splash of Color mat showed up): only mats already in the live
 # Find Your Mat-ch build, whose photos were checked, can be suggested.
