@@ -15,3 +15,6 @@ Live app: claude.ai artifact 6epA9HuEdT32zUp79Qv3kd. Its published index.html (`
 ## Working rules
 - Never sit idle; finish one task, start the next. Project docs (claude.ai Project "Mahj Matchmaker") doc 00 = top rules.
 - Commit trailer: `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>` + session line; push with `git pull -q --rebase && git push -q`.
+
+## Non-partner brands are locked out (Tiffany, Oct 20)
+Only partner brands (and ShopMy-affiliated mats) come into the Mat Gallery and FYM. A non-partner mat comes in ONLY if Tiffany matched it or explicitly allowed it. Reason: brands need an incentive to affiliate once the app launches. Allowed non-partners so far: Sunday Mahjong (whole line, personal favorite), Mahj Tile Haus mats she matched (e.g. White Lotus), Mahjong Moxie Duck Camp + Heron Landing. Never pull a non-partner brand's whole line because one mat was matched. Removed list: config/mat-gallery-crosstags.json `remove_mats` + builder/fym_flags (locked hidden).
