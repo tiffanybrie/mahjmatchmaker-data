@@ -7,7 +7,7 @@ R = '/home/claude/mahjmatchmaker-data/'
 F = json.load(open(R + 'config/tile-racks-picks.json'))['final_lists']
 COL = json.load(open(R + 'scripts/albumcard/holiday_title_colors.json'))
 MR = json.load(open(R + 'config/mat-racks-picks.json'))
-MR['kerry'] = {'mat': 'BettyJuneJeannette The Kerry', 'racks': ['Bird & Bamboo Ballet Pink', 'Miss Mahjong Scalloped Iridescent Opal'],
+MR['kerry'] = {'mat': 'BettyJuneJeannette The Kerry', 'racks': ['Bird & Bamboo Ballet Pink', 'Miss Mahjong Scalloped Iridescent Opal', 'Mahj Mood Scalloped Clear Acrylic'],
                'files': ['assets/mats/etsy/bettyjunejeannette/kerry-2.jpg'], 'approved': '2026-10-20',
                '_note': 'Tiffany Oct 20 2am: MMSIO at least, probably a clear scallop (which brand? no photo yet), B&B Ballet Pink.'}
 json.dump(MR, open(R + 'config/mat-racks-picks.json', 'w'), indent=1, ensure_ascii=False)

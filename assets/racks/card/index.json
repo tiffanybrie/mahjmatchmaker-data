@@ -211,6 +211,14 @@
    "size": "20 in (large tiles)",
    "added": "2026-10-18",
    "alias_of": "Sunday Mahjong Cola"
+  },
+  "Mahj Mood Scalloped Clear Acrylic": {
+   "file": "assets/racks/card/mahj-mood-scalloped-clear-acrylic-drawn.png",
+   "source": "scripts/racks/draw_clear_scallop.py",
+   "kind": "drawn",
+   "rack_frac": 1.0,
+   "url": "https://mahjmood.com/products/copy-scalloped-clear-acrylic-rack-and-pusher-set-of-4",
+   "note": "Our own drawn illustration (Oct 20), not a brand photo"
   }
  },
  "missing": {
