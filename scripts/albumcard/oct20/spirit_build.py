@@ -4,7 +4,8 @@ this") and is NOT in any saved record this build could read, so only these chang
 - her order (files renumbered 01-10 in her order),
 - mats trimmed of the white product-photo background so the mat fills the card (the Oct 17 cards showed a white frame),
 - every card keeps its Oct 17 mat racks (her mat racks were not questioned in the saved notes),
-- no tile racks yet: Spirit of Christmas has no approved tile-rack list (open decision with her).
+- tile racks = her LOCKED Holiday Tile Racks picker picks (config/holiday-picker-picks.json, Oct 16): Middle & Main Milk Glass
+  Scalloped Acrylic + B&B Brick Red + PLM Dark Green (the Oct 17 cards had none).
 Usage: python3 spirit_build.py <workdir>; then gen2.py <workdir>/spec.json assets/cards/spirit-of-christmas-oct20"""
 import json, io, base64, os, sys
 from PIL import Image
@@ -29,13 +30,14 @@ def uri(im):
     return 'data:image/jpeg;base64,' + base64.b64encode(b.getvalue()).decode()
 FLAME = 'data:image/png;base64,' + base64.b64encode(open(R + 'assets/brand/flame-heart-holiday.png', 'rb').read()).decode()
 COL = json.load(open(R + 'scripts/albumcard/holiday_title_colors.json')).get('spirit-of-christmas', '#a3192e')
+TR = ['Middle & Main Milk Glass Scalloped Acrylic', 'Bird & Bamboo Brick Red', 'Peace Love Mahjong Dark Green']
 cards, man = [], []
 for i, (nm, f, sl, mr) in enumerate(CARDS, 1):
     im = trim(Image.open(SRC + f).convert('RGB'))
     fn = f'{i:02d}-spirit-of-christmas-mahjong-tiles-peace-love-mahjong-{sl}-mat.jpg'
     cards.append({'slug': f'soc{i:02d}', 'title': f'Spirit of Christmas + {nm}', 'col': COL, 'tile_file': 'assets/tiles/holiday/plm-spirit-of-christmas-faces-back.jpg',
-                  'racks': [], 'mat_racks': mr, 'file': fn, 'code': '10% OFF  USE CODE : MAHJMATCH', 'mat': uri(im), 'hol': True, 'flame': FLAME})
-    man.append({'order': i, 'mat': nm, 'brand': 'Peace Love Mahjong', 'file': fn, 'mat_px': list(im.size), 'mat_racks': mr, 'tile_racks': []})
+                  'racks': TR, 'mat_racks': mr, 'file': fn, 'code': '10% OFF  USE CODE : MAHJMATCH', 'mat': uri(im), 'hol': True, 'flame': FLAME})
+    man.append({'order': i, 'mat': nm, 'brand': 'Peace Love Mahjong', 'file': fn, 'mat_px': list(im.size), 'mat_racks': mr, 'tile_racks': TR})
 json.dump({'_note': 'Spirit of Christmas Oct 20', 'cards': cards, 'max_racks': 4, 'tile_brand': 'Peace Love Mahjong'}, open(W + '/spec.json', 'w'))
-json.dump({'set': 'Spirit of Christmas', 'cards': man, 'blocked': 'her chat feedback text not on file; tile racks not approved'}, open(W + '/manifest.json', 'w'), indent=1)
+json.dump({'set': 'Spirit of Christmas', 'cards': man, 'blocked': 'her chat feedback text not on file'}, open(W + '/manifest.json', 'w'), indent=1)
 print(len(cards))

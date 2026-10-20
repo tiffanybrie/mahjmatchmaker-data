@@ -1,9 +1,9 @@
 """December 1994 (Sunday Mahjong) holiday cards, Oct 20 rebuild from her Ready to Ship notes:
 - c5-dec1994 (Oct 16 12:04pm): her saved order of the 31 cards; "You have Bird & Bamboo wood racks matched to the mat, revise.
   There are low res images in some of these, including my #1 pick".
-- Tile racks on ALL 31 = B&B Red + B&B Evergreen + PLM Oak (her Oct 15 1pm decision, specs/december_1994_build.py). The
-  5 older cards (Festive Plaid, Tartan Tidings, Evergreen & Tartan, Tartan Toile Noel, Polo Club) still showed the old racks
-  (Radish/Almond or PLM Dark Green/Brick Red/Hawksbill); now consistent.
+- Tile racks on ALL 31 = her LOCKED Holiday Tile Racks picker picks (config/holiday-picker-picks.json, exported Oct 16 3:22pm,
+  after her Oct 15 1pm Red/Evergreen/Oak call): PLM Dark Green + B&B Brick Red + Middle & Main Hawksbill Heritage Tortoise.
+  The 5 live cards already use them; the 26 newer cards had Red/Evergreen/Oak and 2 cards had Radish/Almond. Now consistent.
 - Mat racks: config/mat-racks-picks.json registry when listed; else the earlier pick UNLESS it is a B&B wood
   (Red Mahogany, Provincial, Weathered Oak, Tudor, Almond, Dark Walnut; banned doc 57), which is re-picked by matpick.py
   (woods excluded). Vintage Oxblood Leather = B&B Wine + PLM Acrylic Burl (her standing rule). Festive Plaid keeps B&B Pink
@@ -25,7 +25,7 @@ ORDER = [os.path.basename(x) for x in json.load(open(S + 'rts/ship/c5-dec1994.js
 D = json.load(open('/tmp/claude-0/-home-claude-mahjmatchmaker-data/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/dec1994_v1/data_d94.json'))
 ROWS = next(g for g in D['G'] if g['t'] == 'december-1994')['rows']
 REG = {k: v for k, v in json.load(open(R + 'config/mat-racks-picks.json')).items() if isinstance(v, dict)}
-TRACKS = ['Bird & Bamboo Red', 'Bird & Bamboo Evergreen', 'Peace Love Mahjong Oak']
+TRACKS = ['Peace Love Mahjong Dark Green', 'Bird & Bamboo Brick Red', 'Middle & Main Hawksbill Heritage Tortoise']
 LOCALHD = {'tartan-tidings-mahjong-mat': 'tartan-tidings-mahjong-mat.jpg', 'tartan-toile-noel-mahjong-mat': 'tartan-toile-noel-mahjong-mat.jpg',
            'polo-club': 'luxe-polo-club.jpg', 'classic-very-merry-mahj-mahjong-mat': 'ar-classic-very-merry-mahj.jpg',
            'cmc-ski-club-red-sweater': 'cmc-ski-club-red-sweater.jpg', 'rackin-rudolph-mahjong-mat': 'rackin-rudolph-mahjong-mat.jpg',
@@ -80,7 +80,7 @@ for i, fn in enumerate(ORDER, 1):
     old = [nm_bb(k) for k in r.get('mats', [])]
     if m in FIXED: mr, why = FIXED[m], 'her standing rule'
     elif rk: mr, why = REG[rk]['racks'], f'registry {rk}'
-    elif any(o.replace('Bird & Bamboo ', '') in BB_WOODS for o in old): mr, why = pick(mat, exclude=TRACKS + ['Radish', 'Almond']), f'B&B wood {old} re-picked'  # as in specs/december_1994_build.py: never repeat the red/green tile racks
+    elif any(o.replace('Bird & Bamboo ', '') in BB_WOODS for o in old): mr, why = pick(mat, exclude=TRACKS + ['Radish', 'Almond', 'Red', 'Cherry Red']), f'B&B wood {old} re-picked'  # as in specs/december_1994_build.py: never repeat the red/green tile racks
     else: mr, why = old, 'earlier pick kept'
     cards.append({'slug': f'd94-{i:02d}', 'title': f'December 1994 + {nm}', 'col': COL, 'tile_file': TILE, 'racks': TRACKS, 'mat_racks': mr,
                   'file': fn, 'code': footer(r['b']), 'mat': uri(mat), 'hol': True})
