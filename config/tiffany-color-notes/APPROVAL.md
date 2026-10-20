@@ -1,0 +1,1 @@
+Tiffany, Oct 20 6:07pm (chat): "You have my yes to make all changes that I'm voicing to you regarding the Mat Gallery live on the website. The ones that I've voiced already and the ones that I am about to voice."
