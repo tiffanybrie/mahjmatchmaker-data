@@ -1,1 +1,273 @@
-{"about":"Tiffany's Mat Color Tagger taps (artifact RoHrY1LHAj8bgZx2aL4bLW, db matcolors). These win over every computer color.","updated":"2026-10-19","mats":{}}
+{
+ "about": "Tiffany's Mat Color Tagger taps (artifact RoHrY1LHAj8bgZx2aL4bLW, db matcolors). These win over every computer color.",
+ "updated": "2026-10-20",
+ "mats": {
+  "www.bamletsmahjong.com/birdsong-mahjong-mat": {
+   "primary": "green",
+   "secondary": [
+    "green"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "bam-let-s-mahjong--birdsong-mahjong-mat-green-floral-american-mahjong-mat",
+   "light": 0.7,
+   "chroma": 0.301,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "brittmillsdesign.com/haven-neoprene-mahjong-mat": {
+   "primary": "purple",
+   "secondary": [
+    "dark",
+    "blue",
+    "green"
+   ],
+   "tone": "blend",
+   "holiday": false,
+   "skip": false,
+   "image": "britt-mills--haven",
+   "light": 0.337,
+   "chroma": 0.437,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "brittmillsdesign.com/rosalie-neoprene-mahjong-mat": {
+   "primary": "purple",
+   "secondary": [
+    "green",
+    "orange"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "britt-mills--rosalie-neoprene",
+   "light": 0.527,
+   "chroma": 0.38,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "mahjandmoon.com/blush-butterfly-mahjong-mat": {
+   "primary": "orange",
+   "secondary": [
+    "orange",
+    "teal"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "mahj-moon--blush-butterfly",
+   "light": 0.667,
+   "chroma": 0.475,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "mahjandmoon.com/butterfly-garden-mahjong-mat": {
+   "primary": "orange",
+   "secondary": [
+    "orange"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "mahj-moon--butterfly-garden",
+   "light": 0.714,
+   "chroma": 0.471,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "mahjandmoon.com/grand-garden-estate-mahjong-mat": {
+   "primary": "orange",
+   "secondary": [
+    "blue",
+    "green"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "mahj-moon--grand-garden-estate",
+   "light": 0.678,
+   "chroma": 0.432,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "mahjandmoon.com/scalloped-chinoiserie-bird-floral-mahjong-mat": {
+   "primary": "green",
+   "secondary": [
+    "green",
+    "blue"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "mahj-moon--scalloped-chinoiserie-bird-floral",
+   "light": 0.594,
+   "chroma": 0.352,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "mahjandmoon.com/scalloped-palm-toile-mahjong-mat": {
+   "primary": "green",
+   "secondary": [
+    "green",
+    "teal"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "mahj-moon--scalloped-pastel-palm-beach-toile",
+   "light": 0.649,
+   "chroma": 0.286,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "mahjandmoon.com/tropical-leopard-mahjong-mat": {
+   "primary": "purple",
+   "secondary": [
+    "purple",
+    "teal"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "mahj-moon--tropical-leopard",
+   "light": 0.578,
+   "chroma": 0.355,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "mahjandvine.com/porcelain-bloom-copy": {
+   "primary": "orange",
+   "secondary": [
+    "blue",
+    "orange"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "mahj-vine--chinoiserie-elephant",
+   "light": 0.716,
+   "chroma": 0.434,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "mahjandvine.com/pre-order-sunset-swirl-copy": {
+   "primary": "pink",
+   "secondary": [
+    "orange"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "mahj-vine--coral-orchard",
+   "light": 0.757,
+   "chroma": 0.466,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "mahjandvine.com/watercolor-bloom": {
+   "primary": "multi",
+   "secondary": [
+    "teal",
+    "blue"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "mahj-vine--watercolor-blooms",
+   "light": 0.686,
+   "chroma": 0.347,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "mahjandvine.com/citrus-grove-copy": {
+   "primary": "multi",
+   "secondary": [
+    "blue",
+    "yellow"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "mahj-vine--porcelain-bloom",
+   "light": 0.655,
+   "chroma": 0.485,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "mahjmood.com/mahj-in-bloom-mat": {
+   "primary": "purple",
+   "secondary": [
+    "teal",
+    "purple"
+   ],
+   "tone": "blend",
+   "holiday": false,
+   "skip": false,
+   "image": "mahj-mood--mahj-in-bloom-mat",
+   "light": 0.276,
+   "chroma": 0.537,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "mahjsquadshop.com/oushak-mahjong-mat": {
+   "primary": "blue",
+   "secondary": [
+    "teal",
+    "green"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "mahj-squad--oushak-mahjong-mat",
+   "light": 0.594,
+   "chroma": 0.391,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "mahjongregister.com/sunday-sherbert-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy": {
+   "primary": "orange",
+   "secondary": [
+    "orange",
+    "red"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "mahjong-register--colette-s-kaleidoscope-double-sided-leatherette",
+   "light": 0.616,
+   "chroma": 0.462,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "mahjongregister.com/preorder-butterfly-belle-premium-mahjong-mat-33-estimated-ship-oct-30th-copy": {
+   "primary": "orange",
+   "secondary": [
+    "teal"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "mahjong-register--coral-aqua-double-sided-leatherette",
+   "light": 0.792,
+   "chroma": 0.359,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "mahjongregister.com/snowflake-reindeer-lodge-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy": {
+   "primary": "orange",
+   "secondary": [
+    "blue",
+    "teal"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "mahjong-register--sunday-sherbert-double-sided-leatherette",
+   "light": 0.775,
+   "chroma": 0.318,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  }
+ }
+}
