@@ -11,3 +11,5 @@ Checked each brand's homepage in ShopMy's link maker (rate shows under the brand
   Sunday, Luxe, Mod Mahj, Bloomjong, Four Winds Social, Let's Be Besties, Southern Sparrow, Wren, Mahj Tile Haus, The Mahjong Line.
   Homepage check can miss brands (Bam! Let's Mahjong), so treat "no rate" as unconfirmed.
 - Her tier: Ambassador 36/100 (profile 6/10, activity 5/15, traffic 0/25, orders 25/50, referrals 0/20). Lifetime $102.34.
+- Bam! Let's Mahjong 15% is through a RETAILER on ShopMy: Printfresh (printfresh.com/products/holly-jolly-christmas-mahjong-tiles).
+  So partner products sold by ShopMy retailers can pay even when the brand's own site doesn't. Check stockists next.
