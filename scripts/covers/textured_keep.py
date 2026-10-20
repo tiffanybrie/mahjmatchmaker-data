@@ -28,6 +28,7 @@ for k in sys.argv[2:]:
     bgr = cv2.cvtColor(a, cv2.COLOR_RGB2BGR); outb = np.zeros_like(bgr)
     cv2.xphoto.inpaint(bgr, (1 - m).astype(np.uint8), outb, cv2.xphoto.INPAINT_FSR_FAST)
     img = Image.fromarray(cv2.cvtColor(outb, cv2.COLOR_BGR2RGB)).convert('RGBA')
+    img.alpha_composite(Image.open(R + 'scripts/covers/holiday/frame2.png').convert('RGBA').resize((906, 788)), (87, 281))
     if logo_box:
         lg = Image.open(R + 'scripts/covers/holiday/omm_white.png').convert('RGBA'); x, y, w_, h_ = logo_box
         lg = lg.resize((w_, int(lg.height * w_ / lg.width)), Image.LANCZOS); img.alpha_composite(lg, (x, y + (h_ - lg.height) // 2))
