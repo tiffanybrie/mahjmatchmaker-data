@@ -77,7 +77,7 @@ def rebuild_panel(a, k):
     out[PY0:PY1, PX0:PX1] = out[PY0:PY1, PX0:PX1] * (1 - fr[..., None]) + pan * fr[..., None]
     out = out.clip(0, 255).astype(np.uint8)
     if True:   # template frame drawn fresh on every cover crossed the frame lines: draw the template frame instead
-        im = Image.fromarray(out).convert('RGBA'); im.alpha_composite(Image.open(C + 'holiday/frame2.png').convert('RGBA').resize((906, 788)), (87, 281)); out = np.asarray(im.convert('RGB'))
+        im = Image.fromarray(out).convert('RGBA'); im.alpha_composite(Image.open(C + 'holiday/frame3.png').convert('RGBA').resize((906, 788)), (87, 281)); out = np.asarray(im.convert('RGB'))
     return out
 NP = subprocess.run(['npm', 'root', '-g'], capture_output=True, text=True).stdout.strip()
 FONT = '<link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=block" rel="stylesheet">'
