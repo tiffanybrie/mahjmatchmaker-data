@@ -19,7 +19,6 @@ st = Image.open(R + f'assets/colorcards/{key}/00-{key}-mahjong-tiles-profile-d-s
 crop = st.crop((0, 140, 1080, 1760)); h = 1350; w = round(1080 * h / crop.height)
 cv = Image.new('RGB', (1080, 1350), st.getpixel((10, 1000))); cv.paste(crop.resize((w, h), Image.LANCZOS), ((1080 - w) // 2, 0))
 cv.save(f'{OUT}/1.jpg', quality=93)
-Image.open(R + f'assets/social/{key}-launch/{key}-favorite-tiles.jpg').convert('RGB').save(f'{OUT}/4.jpg', quality=93)
 
 e = __import__('html').escape
 # end slide (Tiffany, Oct 19 night): album cover with her real match cards peeking out behind (homepage holiday style)
@@ -99,7 +98,33 @@ facesl = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 135
  <div style="display:flex;justify-content:space-between;margin-top:12px">{sups}</div>
 </div>
 </div></body></html>"""
-pages = {2: colors, 3: facesl, 4: None, 5: nodots(open(f'{H}/s3.html').read()).replace('2 · racks', '3 · racks'), 6: nodots(open(f'{H}/s4.html').read()).replace('3 · made', '4 · made'), 7: end}
+# slide 4 "Her best features" (Tiffany, Oct 20): same look as every other profile slide (cream, header, Caprasimo title,
+# pink caps section labels, Playfair captions). Her own picks, clean cutouts, no frames, no shadows. Faces from the brand's
+# highest-res faces shot (assets/tiles/faces/<set>/clean/).
+FT = R + f'assets/tiles/faces/{key}/clean/'
+FAV = P.get('best_features', {'top': ['The dancing dragons', ['dragon-coral', 'dragon-green'], 'My favorite dragons, and they come as a pair'],
+       'singles': [['The crane', 'crane', 'Her gray-crowned<br>crane bird bam'], ['Ginger Lola', 'lola-ginger', 'The redheaded<br>matriarch'], ['The parasols', 'dot3', 'Little umbrellas']]})
+ftile = lambda k, w: f'<img src="file://{FT}{k}.png" style="width:{w}px;display:block">'
+flab = lambda t: f'<div class="caps" style="font-size:20px;color:var(--pink);text-align:center;white-space:nowrap">{t}</div>'
+fcap = lambda t: f'<div class="pf" style="font-size:28px;line-height:1.25;color:#3c4f73;text-align:center;white-space:nowrap">{t}</div>'
+_t = FAV['top']
+_sing = ''.join(f'<div style="display:flex;flex-direction:column;align-items:center;width:300px">{flab(n)}<div style="margin-top:16px">{ftile(k, 236)}</div><div style="margin-top:16px">{fcap(c)}</div></div>' for n, k, c in FAV['singles'])
+feat = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 1350, S['col'])}</style></head><body>
+<div style="position:relative;width:1080px;height:1350px">
+<div style="position:absolute;top:58px;left:72px;right:72px;display:flex;justify-content:space-between"><span class="caps" style="font-size:19px;color:#5a6b85">{e(P['name'])} · her profile</span></div>
+<div class="cap" style="position:absolute;top:118px;left:72px;font-size:96px">Her best features</div>
+<div style="position:absolute;top:262px;left:0;right:0">{flab(_t[0])}
+ <div style="display:flex;justify-content:center;gap:40px;margin-top:18px">{''.join(ftile(k, 236) for k in _t[1])}</div>
+ <div style="margin-top:16px">{fcap(_t[2])}</div></div>
+<div style="position:absolute;top:724px;left:30px;right:30px;display:flex;justify-content:space-between">{_sing}</div>
+</div></body></html>"""
+pages = {2: colors, 3: facesl, 4: feat, 5: nodots(open(f'{H}/s3.html').read()).replace('2 · racks', '3 · racks'), 6: nodots(open(f'{H}/s4.html').read()).replace('3 · made', '4 · made'), 7: end}
+NSL = 7
+def bars(h, n):
+    h = re.sub(r'<span class="caps"[^>]*>\d · [^<]*</span>', '', h)
+    b = ''.join(f'<i style="flex:1;height:7px;border-radius:4px;background:{"#054689" if j == n else "rgba(5,70,137,.16)"}"></i>' for j in range(1, NSL + 1))
+    return h.replace('</body>', f'<div style="position:fixed;top:24px;left:72px;right:72px;display:flex;gap:10px;z-index:9">{b}</div></body>', 1)
+pages = {n: (bars(h, n) if h else h) for n, h in pages.items()}
 args = ['node', R + 'scripts/social/tileprofile/shot.js', '1080', '1350']
 for n, s in pages.items():
     if s is None: continue

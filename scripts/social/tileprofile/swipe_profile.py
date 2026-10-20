@@ -85,7 +85,7 @@ html,body{{width:1080px;height:1920px;overflow:hidden;background:var(--cream);co
 <img class="abs" src="{u('assets/brand/mahjmatchmaker-wordmark-notag.png')}" style="left:50%;transform:translateX(-50%);top:58px;width:430px">
 <div class="card">
  <div class="photo">
- <div class="bars"><i></i><i></i><i></i><i></i></div>
+ <div class="bars">{"<i></i>" * 7}</div>
  <div class="shade"></div>
  <div class="name">{P['name']}<span class="check">{svg('M13 25 L21 33 L36 16', '#fff', 40, 6)}</span></div>
  <div class="meta"><span class="g"></span>{P['active']} <span class="b">· {P['brand']}</span></div>
