@@ -1501,7 +1501,7 @@
    ]
   },
   "mahjandmoon.com/tropical-palm-mahjong-mat": {
-   "primary": "teal",
+   "primary": "blue",
    "secondary": [
     "pink",
     "green"
@@ -1515,9 +1515,10 @@
    "src": "claude-look",
    "by": "tiffany-chat-2026-10-20",
    "also": [
-    "multi"
+    "green",
+    "florals"
    ],
-   "note": "measured hue 191 deg = aqua; stays Teal & Aqua"
+   "note": "\"definitely a multi floral; if anything it's a blue\": out of Teal & Aqua; Blue primary + Multicolor Florals, Green kept as also. Overrides the v4 jungle Green-first for this mat."
   },
   "mahjandmoon.com/butterfly-floral-mahjong-mat": {
    "primary": "teal",
@@ -1593,6 +1594,105 @@
     "florals"
    ],
    "note": "out of Black & White"
+  },
+  "amahjline.com/citron-lilac-amahj-game-mat": {
+   "primary": "blue",
+   "secondary": [
+    "yellow",
+    "teal"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "amahj--blue-citron-lilac-mahjong-game-mat",
+   "light": 0.575,
+   "chroma": 0.815,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "yellow",
+    "purple"
+   ],
+   "note": "\"doesn't read teal and aqua to me\": out of Teal & Aqua; Blue (pale blue middle), Yellow (citron border), Purple (lilac). Also Simple."
+  },
+  "sundaymahjong.com/plum-panda-premium-mahjong-mat": {
+   "primary": "green",
+   "secondary": [
+    "pink",
+    "orange",
+    "purple"
+   ],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "sunday-mahjong--plum-panda-premium",
+   "light": 0.335,
+   "chroma": 0.539,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "purple",
+    "orange"
+   ],
+   "note": "out of Teal & Aqua: background hue ~160-170 (green side of the 195 line); purple border, orange stripe. Mood tag unchanged."
+  },
+  "sundaymahjong.com/sunday-premium-mahjong-mat": {
+   "primary": "green",
+   "secondary": [
+    "gold",
+    "red"
+   ],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "sunday-mahjong--sunday-premium",
+   "light": 0.357,
+   "chroma": 0.538,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "yellow"
+   ],
+   "note": "out of Teal & Aqua: background hue ~160-170; yellow border. Mood tag unchanged."
+  },
+  "mahjandmoon.com/scalloped-tropical-palm-mahjong-mat": {
+   "primary": "blue",
+   "secondary": [
+    "pink",
+    "green"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "mahj-moon--scalloped-tropical-palm",
+   "light": 0.667,
+   "chroma": 0.388,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "green",
+    "florals"
+   ],
+   "note": "same as Blue Tropical Palm: out of Teal & Aqua; Blue primary + Multicolor Florals, Green also. Overrides jungle Green-first."
+  },
+  "mahjandmoon.com/tropical-hibiscus-mahjong-mat-pink-blue-palm-print-mahjong-mat": {
+   "primary": "pink",
+   "secondary": [
+    "teal",
+    "green"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "mahj-moon--tropical-hibiscus",
+   "light": 0.645,
+   "chroma": 0.425,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "green"
+   ],
+   "note": "lots of pink: Pink primary, Green also, no Teal. Overrides jungle Green-first."
   }
  }
 }

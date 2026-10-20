@@ -1,4 +1,10 @@
-"""Mat Gallery v4 (/mahjong-mats), Oct 20 late. v3 plus: Brown & Tan merged into Earthy; tonal re-check (Neutral/Earthy/Dark/B&W, crosstags "tonal_fix");
+"""Mat Gallery v5 (/mahjong-mats), Oct 20 night. v4 plus: 53 new mats from Tiffany's ShopMy shop + partner stores
+(new53_rows.json, tagged by Claude's photo review in config/tiffany-color-notes/2026-10-20-new53-claude-tags.json; hidden/duplicate
+rows left out), a Simple mood tag (crosstags "simple"; replaces Pastels/Brights), Claude's Pastels->Brights re-check (crosstags
+"mood_fix"), and Tiffany's v5 calls (tiffany-color-notes/2026-10-20-v5-calls.json: final_sections + mood_calls, applied last).
+Usage: python3 build_v5.py <audit report.csv> <pairs.json> <image commit> > matgallery-v5.html   (writes v5_counts.json)
+
+Mat Gallery v4 (/mahjong-mats), Oct 20 late. v3 plus: Brown & Tan merged into Earthy; tonal re-check (Neutral/Earthy/Dark/B&W, crosstags "tonal_fix");
 year-round mats moved out of Holiday (crosstags "holiday_off"); Cognac not retired (no shop button). v3: Same as v2 plus: an Earthy section (muted, low-saturation mats; Tiffany's calls +
 Claude's photo picks in config/mat-gallery-crosstags.json "also.earthy"), and within every section the mats whose PRIMARY is that
 color come first, "also"-tagged mats below them, Mahjong Studios last of all.
@@ -19,7 +25,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, '..', '..', '..')
 P = lambda *a: os.path.join(ROOT, *a)
 AUDIT, PAIRS = sys.argv[1], sys.argv[2]
-COMMIT = '3e8af50f24b40ffdcc7f8c76540feb0b36907f14'  # same jsDelivr image base as the live block
+COMMIT = sys.argv[3] if len(sys.argv) > 3 else '3e8af50f24b40ffdcc7f8c76540feb0b36907f14'  # jsDelivr image base (v5: the commit that adds the new53 webps)
 TODAY = '2026-10-20'
 
 t = open(os.path.join(HERE, 'matgallery.html')).read()
@@ -45,7 +51,10 @@ OV = json.load(open(OV_PATH))
 G = json.load(open(P('config/mat-color-guesses.json')))['mats']
 notes = []
 for fn in sorted(glob.glob(P('config/tiffany-color-notes/2026-10-20-*.json'))):
-    for c in json.load(open(fn))['corrections']:
+    j_ = json.load(open(fn))
+    if str(j_.get('by', '')).startswith('claude'):  # Claude's photo tags are not Tiffany calls
+        continue
+    for c in j_.get('corrections', []):
         notes.append(dict(c, _src=os.path.basename(fn)))
 
 
@@ -274,7 +283,7 @@ for g in groups:
 # ---------- 5. sections ----------
 COL = [('pink', 'Pink'), ('red', 'Red'), ('orange', 'Orange & Peach'), ('yellow', 'Yellow & Mustard'), ('green', 'Green'), ('teal', 'Teal & Aqua'),
        ('blue', 'Blue'), ('purple', 'Purple & Lilac'), ('neutral', 'Neutral & Ivory'), ('earthy', 'Earthy'), ('dark', 'Dark & Moody'),
-       ('bw', 'Black & White'), ('pastel', 'Pastels'), ('brights', 'Brights'), ('florals', 'Multicolor Florals'), ('animal', 'Animal Prints'),
+       ('bw', 'Black & White'), ('simple', 'Simple'), ('pastel', 'Pastels'), ('brights', 'Brights'), ('florals', 'Multicolor Florals'), ('animal', 'Animal Prints'),
        ('holiday', 'Holiday'), ('multi', 'Multicolor')]  # 'multi' is retired as a section in v4: never assigned (see sections())
 SEC = {'brown': 'earthy', 'gold': 'yellow', 'peach': 'orange', 'coral': 'orange', 'mustard': 'yellow'}
 VALID = {c for c, _ in COL}
@@ -331,6 +340,50 @@ def _sections(x):
 vis = [x for x in rows if x['img'] not in hidden]
 for x in vis:
     x['secs'] = sections(x)
+
+# ---------- v5 layer ----------
+V5 = json.load(open(P('config/tiffany-color-notes/2026-10-20-v5-calls.json')))
+FINAL = V5.get('final_sections', {})  # Tiffany's v5 color calls: win over every crosstag (jungle, primary_fix, ...)
+MOODB = {m['img'] for m in V5.get('mood_calls', []) if m['mood'] == 'brights'} | set(XT.get('mood_fix', {}).get('brights', []))
+SIMPLE = set(XT.get('simple', {}).get('tiffany', [])) | set(XT.get('simple', {}).get('claude', []))
+MOODS = ('pastel', 'brights')
+v5log = {'final': [], 'to_brights': [], 'simple': []}
+
+
+def v5(img, secs):
+    if secs == ['holiday']:
+        return secs
+    if img in FINAL:
+        keep = [c for c in secs if c in MOODS + ('animal',)]
+        secs = list(dict.fromkeys(FINAL[img] + keep)); v5log['final'].append(img)
+        if not any(c in TONAL or c in MOODS for c in secs):
+            secs.append('brights')
+    if img in MOODB and 'pastel' in secs:
+        secs = ['brights' if c == 'pastel' else c for c in secs]; secs = list(dict.fromkeys(secs)); v5log['to_brights'].append(img)
+    if img in SIMPLE:
+        first_mood = next((i for i, c in enumerate(secs) if c in MOODS), len(secs))
+        rest = [c for c in secs if c not in MOODS]
+        secs = rest[:first_mood] + ['simple'] + rest[first_mood:]; v5log['simple'].append(img)
+    return secs
+
+
+for x in vis:
+    x['secs'] = v5(x['img'], x['secs'])
+
+# ---------- v5: 53 new mats (Claude photo review; hidden = not a clean flat mat, or duplicate) ----------
+N53 = json.load(open(os.path.join(HERE, 'new53_rows.json')))
+TAG53 = json.load(open(P('config/tiffany-color-notes/2026-10-20-new53-claude-tags.json')))['mats']
+BRAND53 = {'Etsy shop (name TBD)': 'Etsy'}
+hidden53 = {}
+added53 = []
+for r in N53['rows']:
+    img, name, brand, url, ret, _c, code = r
+    t = TAG53[img]
+    if t.get('hidden'):
+        hidden53[img] = t['hidden']; continue
+    x = dict(img=img, key=N53['manifest'][img], name=name, raw=name, brand=BRAND53.get(brand, brand), url='' if ret else url, ret=ret, code=code, old=_c, new53=1)
+    x['secs'] = v5(img, list(t['sections']))
+    vis.append(x); added53.append(img)
 order = {c: i for i, (c, _) in enumerate(COL)}
 # STANDING RULE (Tiffany, Oct 20): Mahjong Studios always sorts to the bottom of every section
 vis.sort(key=lambda x: (x['brand'] == 'Mahjong Studios', x['brand'].lower(), x['name'].lower()))
@@ -354,11 +407,13 @@ with open(os.path.join(HERE, 'hidden_oct20.csv'), 'w', newline='') as f:
         for img, a in sorted(by_type.get(t_, {}).items()):
             if img in held and (t_ != 'lifestyle/table scene' or 'no mat visible' in a['detail']):
                 w.writerow([img, man[img], BRANDFIX.get(Fi[img][2], Fi[img][2]), Fi[img][1], f'already out (held low-confidence list); would also be hidden: {lab}: {a["detail"][:100]}'])
-json.dump({'section_counts_active': cnt, 'section_counts_if_retired_shown': cnt_with_ret, 'unique_active_mats': len(active),
+json.dump({'new53_added': added53, 'new53_hidden': hidden53, 'new53_sections': {x['img']: x['secs'] for x in vis if x.get('new53')},
+           'v5_final_calls': v5log['final'], 'v5_pastel_to_brights': v5log['to_brights'], 'v5_simple': v5log['simple'],
+           'section_counts_active': cnt, 'section_counts_if_retired_shown': cnt_with_ret, 'unique_active_mats': len(active),
            'retired': len(retired), 'hidden': len(hidden), 'dedupe_groups': len(dd_rows), 'held_low_out': len(held),
            'applied_color_calls': applied, 'unmatched_color_calls': unmatched,
            'renamed': {x['img']: [x['raw'], x['name']] for x in vis if x['raw'] != x['name']}},
-          open(os.path.join(HERE, 'v4_counts.json'), 'w'), indent=1, ensure_ascii=False)
+          open(os.path.join(HERE, 'v5_counts.json'), 'w'), indent=1, ensure_ascii=False)
 
 # ---------- HTML ----------
 CSS = open(os.path.join(HERE, 'style.css')).read() + '.mmg-chip.mmg-tog{border-style:dashed}\n.mmg-watch{margin-top:auto;align-self:flex-start;border:1.5px solid #9a8f86;color:#6f655d;font-size:.68em;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:10px}\n.mmg-chip.mmg-tog[aria-pressed="true"]{border-style:solid}\n'
