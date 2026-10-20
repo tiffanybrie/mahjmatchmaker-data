@@ -21,6 +21,12 @@ t = open(os.path.join(HERE, 'matgallery.html')).read()
 F = json.loads(re.search(r'<script type="application/json">(.*?)</script>', t, re.S).group(1).replace('<\\/', '</'))
 man = json.load(open(os.path.join(HERE, 'manifest.json')))
 held = set(json.load(open(os.path.join(HERE, 'held-low-98.json'))))
+XT = json.load(open(P('config/mat-gallery-crosstags.json')))
+held -= set(XT['unhold']['imgs'])
+XALSO = {}
+for col_, imgs_ in XT['also'].items():
+    for i_ in imgs_:
+        XALSO.setdefault(i_, []).append(col_)
 log = lambda *a: print(*a, file=sys.stderr)
 
 # ---------- 1. Tiffany's color calls -> config/mat-color-overrides.json ----------
@@ -34,6 +40,11 @@ for fn in sorted(glob.glob(P('config/tiffany-color-notes/2026-10-20-pink-section
 # Coordinator relay, Oct 20 evening: Britt Mills Novella Leatherette
 notes.append({'brand': 'Britt Mills', 'name': 'Novella Leatherette', 'primary': 'orange', 'also': ['red'],
               'note': 'peachy-pink center, rust border; not pink', '_src': 'tiffany-chat-oct20-evening'})
+notes.append({'brand': 'Britt Mills', 'name': 'Novella', 'primary': 'orange', 'also': ['red'],
+              'note': 'same artwork as Novella Leatherette (her call)', '_src': 'tiffany-chat-oct20-evening'})
+# Red-section calls (coordinator relay, Oct 20 evening)
+notes.append({'brand': 'Bird & Bamboo', 'name': 'Tangelo Delphine', 'primary': 'orange', 'note': 'tangerine', '_src': 'tiffany-chat-oct20-red'})
+notes.append({'brand': 'Mahj Mood', 'name': 'Slay All Day', 'primary': 'holiday', 'note': 'holiday mat', '_src': 'tiffany-chat-oct20-red'})
 
 
 def norm(s):
@@ -68,7 +79,8 @@ for c in notes:
     for r in hits:
         k = man[r[0]]
         rec = dict(OV['mats'].get(k) or {kk: vv for kk, vv in (G.get(k) or {}).items() if kk not in ('prev', 'conf')})
-        rec.update(primary=c['primary'], holiday=False, skip=False, image=r[0], by='tiffany-chat-' + TODAY)
+        hol = c['primary'] == 'holiday'
+        rec.update(primary=rec.get('primary', 'multi') if hol else c['primary'], holiday=hol, skip=False, image=r[0], by='tiffany-chat-' + TODAY)
         rec.setdefault('secondary', []); rec.setdefault('tone', 'blend'); rec.setdefault('src', 'claude-look')
         if c.get('also'):
             rec['also'] = c['also']
@@ -222,10 +234,9 @@ def sections(x):
     if r is None:
         return [x['old']]
     if r.get('holiday'):
-        out = ['holiday']
-    else:
-        out = [SEC.get(r['primary'], r['primary'])]
-    for a in r.get('also', []) or []:
+        return ['holiday']  # holiday mats never appear in color sections
+    out = [SEC.get(r['primary'], r['primary'])]
+    for a in (r.get('also', []) or []) + XALSO.get(x['img'], []):
         a = SEC.get(a, a)
         if a in VALID and a not in out:
             out.append(a)
@@ -236,7 +247,8 @@ vis = [x for x in rows if x['img'] not in hidden]
 for x in vis:
     x['secs'] = sections(x)
 order = {c: i for i, (c, _) in enumerate(COL)}
-vis.sort(key=lambda x: (order.get(x['secs'][0], 99), x['brand'].lower(), x['name'].lower()))
+# STANDING RULE (Tiffany, Oct 20): Mahjong Studios always sorts to the bottom of every section
+vis.sort(key=lambda x: (x['brand'] == 'Mahjong Studios', x['brand'].lower(), x['name'].lower()))
 
 active = [x for x in vis if not x['ret']]
 retired = [x for x in vis if x['ret']]

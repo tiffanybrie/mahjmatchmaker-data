@@ -180,8 +180,22 @@ for mid, c in CO.items():
     for x in [c.get('primary')] + list(c.get('secondary') or []):
         x = FAMMAP.get(x, x)
         if x in FAMS and x not in fam: fam.append(x)
+    for x in c.get('also') or []:                         # explicit cross-tags (e.g. peachy pink -> pink + orange)
+        x = FAMMAP.get(x, x)
+        if x in FAMS and x not in fam: fam.append(x)
     if fam and fam != MM[mid]['mf']:
         report['mats']['color'].append([mid, MM[mid]['n'], MM[mid]['mf'], fam]); MM[mid]['mf'] = fam
+# peachy pinks: a sizeable peach/salmon swatch puts a pink mat in orange too, and an orange mat in pink too (Tiffany, Oct 20)
+import colorsys
+report['mats']['peach'] = []
+for mid, o in MM.items():
+    if mid in CO and CO[mid].get('by') == 'tiffany-chat-2026-10-20' and not CO[mid].get('also'): continue
+    mf = o['mf']
+    if ('pink' in mf) == ('orange' in mf): continue
+    for hx, wt in o.get('ms') or []:
+        r_, g_, b_ = (int(hx[j:j + 2], 16) / 255 for j in (1, 3, 5)); hh, ll, ss = colorsys.rgb_to_hls(r_, g_, b_)
+        if wt >= .12 and 10 / 360 <= hh <= 28 / 360 and ss >= .55 and .6 <= ll <= .88:
+            add = 'orange' if 'pink' in mf else 'pink'; o['mf'] = mf + [add]; report['mats']['peach'].append([mid, o['n'], mf, o['mf'], hx]); break
 
 # 1f. mats named "(retired)" but not flagged: flag them so they only appear through her real albums
 report['retired_flagged'] = []
@@ -233,6 +247,14 @@ R("function setsForMat(id){const ix=D.order.indexOf(id);const rows=D.sets.map((s
 R("function matCounts(){if(DOOR.cnt)return DOOR.cnt;const c={};D.sets.forEach(s=>s.m.forEach(",
   "function matCounts(){if(DOOR.cnt)return DOOR.cnt;const c={};D.sets.filter(VIS).forEach(s=>s.m.forEach(")
 R("function matPool(){const h=set().m.map(x=>x[0]).filter(id=>M[id]);", "function matPool(){const h=set().m.map(x=>x[0]).filter(id=>M[id]&&!M[id].hid);")
+# Tiffany standing rule: Mahjong Studios mats always at the bottom (decks, colour filters, door grid, searches)
+R("const smallSet=()=>", "const MSL=ids=>{const a=[],z=[];ids.forEach(id=>(M[id]&&M[id].bn==='Mahjong Studios'?z:a).push(id));return a.concat(z);};\nconst smallSet=()=>")
+R("function matDeck(){const f=S.f.m;let ids=matPool();", "function matDeck(){const f=S.f.m;let ids=MSL(matPool());")
+R("return ids.sort((a,b)=>(c[b]||0)-(c[a]||0)||M[a].n.localeCompare(M[b].n));}", "return MSL(ids.sort((a,b)=>(c[b]||0)-(c[a]||0)||M[a].n.localeCompare(M[b].n)));}")
+R("return toks.every(k=>s.includes(k));}).slice(0,60);", "return toks.every(k=>s.includes(k));});const hits2=MSL(hits).slice(0,60);")
+R("g.innerHTML=hits.length?hits.map(matBtn).join('')", "g.innerHTML=hits2.length?hits2.map(matBtn).join('')")
+R(".sort((a,b)=>(M[a].n.toLowerCase().startsWith(toks[0])?0:1)-(M[b].n.toLowerCase().startsWith(toks[0])?0:1)||M[a].n.localeCompare(M[b].n)).slice(0,12);",
+  ".sort((a,b)=>(M[a].bn==='Mahjong Studios'?1:0)-(M[b].bn==='Mahjong Studios'?1:0)||(M[a].n.toLowerCase().startsWith(toks[0])?0:1)-(M[b].n.toLowerCase().startsWith(toks[0])?0:1)||M[a].n.localeCompare(M[b].n)).slice(0,12);")
 # fix 1: colour dots
 R("if(b=q('.dots [data-fam]')){", "if(b=q('.frow [data-fam]')){")
 # fix 2/3: zoom state kept across swipes + per-set focal point

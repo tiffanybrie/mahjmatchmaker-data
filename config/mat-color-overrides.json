@@ -60,7 +60,8 @@
    "light": 0.667,
    "chroma": 0.475,
    "src": "claude-look",
-   "by": "tiffany-chat-2026-10-20"
+   "by": "tiffany-chat-2026-10-20",
+   "note": "peach = orange family"
   },
   "mahjandmoon.com/butterfly-garden-mahjong-mat": {
    "primary": "orange",
@@ -74,7 +75,8 @@
    "light": 0.714,
    "chroma": 0.471,
    "src": "claude-look",
-   "by": "tiffany-chat-2026-10-20"
+   "by": "tiffany-chat-2026-10-20",
+   "note": "peach"
   },
   "mahjandmoon.com/grand-garden-estate-mahjong-mat": {
    "primary": "orange",
@@ -89,7 +91,8 @@
    "light": 0.678,
    "chroma": 0.432,
    "src": "claude-look",
-   "by": "tiffany-chat-2026-10-20"
+   "by": "tiffany-chat-2026-10-20",
+   "note": "peach"
   },
   "mahjandmoon.com/scalloped-chinoiserie-bird-floral-mahjong-mat": {
    "primary": "green",
@@ -149,7 +152,8 @@
    "light": 0.716,
    "chroma": 0.434,
    "src": "claude-look",
-   "by": "tiffany-chat-2026-10-20"
+   "by": "tiffany-chat-2026-10-20",
+   "note": "orange/peach"
   },
   "mahjandvine.com/pre-order-sunset-swirl-copy": {
    "primary": "pink",
@@ -163,7 +167,8 @@
    "light": 0.757,
    "chroma": 0.466,
    "src": "claude-look",
-   "by": "tiffany-chat-2026-10-20"
+   "by": "tiffany-chat-2026-10-20",
+   "note": "questionable, keep pink"
   },
   "mahjandvine.com/watercolor-bloom": {
    "primary": "multi",
@@ -252,7 +257,8 @@
    "light": 0.792,
    "chroma": 0.359,
    "src": "claude-look",
-   "by": "tiffany-chat-2026-10-20"
+   "by": "tiffany-chat-2026-10-20",
+   "note": "peach coral"
   },
   "mahjongregister.com/snowflake-reindeer-lodge-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy": {
    "primary": "orange",
@@ -267,7 +273,267 @@
    "light": 0.775,
    "chroma": 0.318,
    "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "peach"
+  },
+  "peacelovemahjong.com/mahjong-mats-plaid-striped?v=52798578950436": {
+   "primary": "purple",
+   "secondary": [
+    "purple"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "peace-love-mahjong--plaid-pink-cabana",
+   "light": 0.576,
+   "chroma": 0.405,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "reads plum/purple"
+  },
+  "soireeallday.co/petal-party-mahjong-mat": {
+   "primary": "purple",
+   "secondary": [
+    "purple",
+    "orange"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "soir-e-all-day--petal-party",
+   "light": 0.661,
+   "chroma": 0.432,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "plum/purple"
+  },
+  "theroyalmahjongsociety.com/mahj-royale-mahjong-mat": {
+   "primary": "red",
+   "secondary": [
+    "green",
+    "red"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "royal-mahjong-society--mahj-royale",
+   "light": 0.524,
+   "chroma": 0.645,
+   "src": "claude-look",
    "by": "tiffany-chat-2026-10-20"
+  },
+  "splashofcolorco.com/garden-party-chinoiserie-blue-pink-mahjong-mat": {
+   "primary": "multi",
+   "secondary": [
+    "blue",
+    "green"
+   ],
+   "tone": "blend",
+   "holiday": false,
+   "skip": false,
+   "image": "splash-of-color--garden-party-chinoiserie-blue-pink-mahjong-mat",
+   "light": 0.459,
+   "chroma": 0.439,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "splashofcolorco.com/peony-and-parasol": {
+   "primary": "multi",
+   "secondary": [
+    "green",
+    "teal",
+    "yellow"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "splash-of-color--peony-and-parasol",
+   "light": 0.624,
+   "chroma": 0.406,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "www.wrenmats.com/watercolor-floral": {
+   "primary": "multi",
+   "secondary": [
+    "yellow",
+    "green"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "wren-mats--watercolor-floral",
+   "light": 0.633,
+   "chroma": 0.37,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "works with pink tiles but many others"
+  },
+  "www.viroramahjong.com/coralia": {
+   "primary": "pink",
+   "secondary": [
+    "orange",
+    "teal"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "virora-mahjong--coralia",
+   "light": 0.665,
+   "chroma": 0.498,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "orange"
+   ],
+   "note": "strong pink AND coral, like Goldie"
+  },
+  "mahjsquadshop.com/pink-chinoiserie-mahjong-mat-pink-floral-neoprene-mahjongg-mat-pink-chintz-mahj-mat-colorful-floral-mahj-ongg-mat-spring-1": {
+   "primary": "pink",
+   "secondary": [
+    "green",
+    "purple"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "mahj-squad--pink-floral-chinoiserie",
+   "light": 0.733,
+   "chroma": 0.507,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "multi"
+   ]
+  },
+  "letsbebesties.com/pink-blooms-mahjong-mat-neoprene": {
+   "primary": "pink",
+   "secondary": [
+    "red",
+    "green"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "let-s-be-besties--pink-blooms",
+   "light": 0.663,
+   "chroma": 0.511,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "multi"
+   ]
+  },
+  "mahjandmoon.com/pastel-palm-beach-mahjong-mat": {
+   "primary": "green",
+   "secondary": [
+    "green"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "mahj-moon--pastel-palm-beach",
+   "light": 0.743,
+   "chroma": 0.353,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "alb2:wren-mats-palm-beach": {
+   "primary": "green",
+   "secondary": [
+    "pink"
+   ],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "wren-mats--palm-beach",
+   "light": 0.453,
+   "chroma": 0.45,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "mahjhouserules.com/mahjong-mat": {
+   "primary": "green",
+   "secondary": [
+    "pink"
+   ],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "mahj-house-rules--mahjong-mat",
+   "light": 0.235,
+   "chroma": 0.378,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20"
+  },
+  "brittmillsdesign.com/novella-leatherette-mahjong-mat": {
+   "primary": "orange",
+   "secondary": [
+    "green",
+    "red"
+   ],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "britt-mills--novella-leatherette",
+   "light": 0.416,
+   "chroma": 0.537,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "red"
+   ],
+   "note": "peachy-pink center, rust border; not pink"
+  },
+  "brittmillsdesign.com/novella-neoprene-mahjong-mat-arriving-late-november": {
+   "primary": "orange",
+   "secondary": [
+    "green",
+    "red"
+   ],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "britt-mills--novella",
+   "light": 0.422,
+   "chroma": 0.503,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "red"
+   ],
+   "note": "same artwork as Novella Leatherette (her call)"
+  },
+  "birdandbamboo.com/the-tangelo-delphine-mahjong-mat": {
+   "primary": "orange",
+   "secondary": [
+    "pink",
+    "orange"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "bird-bamboo--the-tangelo-delphine-mahjong-mat",
+   "light": 0.592,
+   "chroma": 0.638,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "tangerine"
+  },
+  "mahjmood.com/sleigh-all-day-mat": {
+   "primary": "red",
+   "secondary": [
+    "green"
+   ],
+   "tone": "muted",
+   "holiday": true,
+   "skip": false,
+   "image": "mahj-mood--sleigh-all-day-mat",
+   "light": 0.276,
+   "chroma": 0.65,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "holiday mat"
   }
  }
 }
