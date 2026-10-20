@@ -1,0 +1,2853 @@
+{
+ "generated": "2026-10-20",
+ "rule": "Non-partner brands locked out of Mat Gallery + FYM unless Tiffany matched or explicitly allowed the mat",
+ "sources": {
+  "partners": "live https://www.mahjmatchmaker.com/mahjong-discount-codes (All 35 at a glance)",
+  "gallery": "site/livepatch/matgallery/matgallery-v5.html + manifest.json",
+  "fym": "scratchpad fym-oct20d/index.html const D",
+  "albums": "43 live *-mahjong-tile-matches pages (sitemap, color hub pages excluded)"
+ },
+ "partners": [
+  "Oh My Mahjong",
+  "Mahjong Row & Co.",
+  "Miss Mahjong",
+  "My Fair Mahjong",
+  "Bam Bird Boutique",
+  "Bespoke Mahjong",
+  "Peace Love Mahjong",
+  "Charleston Mahjong Club",
+  "Tigre de Tartan",
+  "Britt Mills",
+  "Amanda Toppe",
+  "Amahj",
+  "Mac + Miller Mahjong",
+  "Middle & Main Mahjong",
+  "Mahj Mood",
+  "Mahj Squad",
+  "Bird & Bamboo",
+  "Let's Mahj On",
+  "Splash of Color",
+  "Bam! Let's Mahjong",
+  "Mini Mahjer",
+  "Wren Mats",
+  "Mahj & Vine",
+  "Hip Hip Mahjong",
+  "Virora Mahjong",
+  "Yellow Mountain Imports",
+  "Mahjong Co.",
+  "I Love Mahj",
+  "Anders Ruff",
+  "Mahjong Studios",
+  "The Mahjong Press",
+  "The Royal Mahjong Society",
+  "Soirée All Day",
+  "Mahjong Register",
+  "Let's Be Besties"
+ ],
+ "brands": [
+  {
+   "brand": "Amazon",
+   "gallery_count": 0,
+   "fym_visible": 0,
+   "fym_hidden": 2,
+   "matched_count": 0,
+   "unmatched_count": 0,
+   "shopmy_count": 0,
+   "suggestion": "none (already hidden everywhere)",
+   "matched": [],
+   "unmatched": []
+  },
+  {
+   "brand": "Amore Mahjong",
+   "gallery_count": 0,
+   "fym_visible": 0,
+   "fym_hidden": 1,
+   "matched_count": 0,
+   "unmatched_count": 0,
+   "shopmy_count": 0,
+   "suggestion": "none (already hidden everywhere)",
+   "matched": [],
+   "unmatched": []
+  },
+  {
+   "brand": "Betty June & Jeannette",
+   "gallery_count": 19,
+   "fym_visible": 0,
+   "fym_hidden": 0,
+   "matched_count": 0,
+   "unmatched_count": 19,
+   "shopmy_count": 18,
+   "suggestion": "keep-matched + ShopMy only",
+   "matched": [],
+   "unmatched": [
+    {
+     "name": "Allie (Purple)",
+     "key": "www.etsy.com/listing/4483578899/the-allie-purple-mahjong-mat-lavender",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-94800122"
+    },
+    {
+     "name": "Benjamin",
+     "key": "www.etsy.com/listing/4527676776/the-benjamin-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-94698452"
+    },
+    {
+     "name": "Benjamin Goes to Positano",
+     "key": "www.etsy.com/listing/4574478417/benjamin-goes-to-positano-the-benjamin",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96126037"
+    },
+    {
+     "name": "Betty (Floral Monogram Game Surface)",
+     "key": "www.etsy.com/listing/4478738693/betty-mahjong-mat-floral-monogram-game",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96126748"
+    },
+    {
+     "name": "Betty (Pastel Floral Neoprene)",
+     "key": "www.etsy.com/listing/4478738851/betty-mahjong-mat-pastel-floral-neoprene",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96114757"
+    },
+    {
+     "name": "Betty Floral (Monogrammed Neoprene)",
+     "key": "www.etsy.com/listing/4478745626/betty-floral-mahjong-mat-chic",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96125859"
+    },
+    {
+     "name": "Brinkley",
+     "key": "www.etsy.com/listing/4527676666/the-brinkley-mat",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96125711"
+    },
+    {
+     "name": "Brooke",
+     "key": "www.etsy.com/listing/4510347710/the-brooke-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96114891"
+    },
+    {
+     "name": "Caroline (Preppy)",
+     "key": "www.etsy.com/listing/4537282808/the-caroline-preppy-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96125208"
+    },
+    {
+     "name": "Charlotte",
+     "key": "www.etsy.com/listing/4495222417/the-charlotte-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96125544"
+    },
+    {
+     "name": "Elizabeth",
+     "key": "www.etsy.com/listing/4476008036/the-elizabeth-mahjong-mat-with-canvas",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96115115"
+    },
+    {
+     "name": "Hippie Holiday",
+     "key": "www.etsy.com/listing/4574264430/hippie-holiday-colorful-ornaments",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96124552"
+    },
+    {
+     "name": "Katelyn (Yellow)",
+     "key": "www.etsy.com/listing/4497433465/the-katelyn-yellow-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96125355"
+    },
+    {
+     "name": "Livy",
+     "key": "www.etsy.com/listing/4544550775/the-livy-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96126853"
+    },
+    {
+     "name": "Luna",
+     "key": "www.etsy.com/listing/4527669219/the-luna-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96125450"
+    },
+    {
+     "name": "Nichole",
+     "key": "www.etsy.com/listing/4537970849/the-nichole-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96125150"
+    },
+    {
+     "name": "Nora",
+     "key": "www.etsy.com/listing/4541827574/the-nora-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96125055"
+    },
+    {
+     "name": "The Kerry",
+     "key": "www.etsy.com/listing/4493549326/the-kerry-mahjong-mat-watercolor-pink",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://www.etsy.com/listing/4493549326/the-kerry-mahjong-mat-watercolor-pink"
+    },
+    {
+     "name": "The Most Wonderful Time of the Year",
+     "key": "www.etsy.com/listing/4578081294/the-most-wonderful-time-of-the-year",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96124691"
+    }
+   ],
+   "note": "Etsy shop she loves; ShopMy is her only way to earn. 18 of 19 gallery rows are ShopMy links; the 1 non-ShopMy row should get a ShopMy link or go."
+  },
+  {
+   "brand": "Birdsong Mahjong",
+   "gallery_count": 1,
+   "fym_visible": 1,
+   "fym_hidden": 1,
+   "matched_count": 1,
+   "unmatched_count": 0,
+   "shopmy_count": 0,
+   "suggestion": "keep-all (all matched or ShopMy)",
+   "matched": [
+    {
+     "name": "Heaven Scent",
+     "key": "alb2:birdsong-mahjong-heaven-scent",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Drake, Heritage 1.0, Heritage 2.0, Miss Classic Malachite, Willow",
+      "gallery album row (birdsong-mahjong-heaven-scent)",
+      "album page: drake, heritage, heritage-2-0, malachite, willow"
+     ]
+    }
+   ],
+   "unmatched": []
+  },
+  {
+   "brand": "Etsy",
+   "gallery_count": 1,
+   "fym_visible": 0,
+   "fym_hidden": 0,
+   "matched_count": 0,
+   "unmatched_count": 1,
+   "shopmy_count": 1,
+   "suggestion": "keep-all (all matched or ShopMy)",
+   "matched": [],
+   "unmatched": [
+    {
+     "name": "Chinese Landscape Shan Shui Crane Koi",
+     "key": "www.etsy.com/listing/4512194679/chinese-landscape-mahjong-mat-shan-shui",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96123092"
+    }
+   ],
+   "note": "Brand field is just 'Etsy' (shop name unknown): 'Chinese Landscape Shan Shui Crane Koi', ShopMy link. Needs a real shop name."
+  },
+  {
+   "brand": "Four Winds Social",
+   "gallery_count": 8,
+   "fym_visible": 13,
+   "fym_hidden": 3,
+   "matched_count": 0,
+   "unmatched_count": 14,
+   "shopmy_count": 0,
+   "suggestion": "remove-brand",
+   "matched": [],
+   "unmatched": [
+    {
+     "name": "Amethyst Cabana",
+     "key": "fourwindssocial.com/amethyst-cabana-mahjong-mat",
+     "in_gallery": false,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://fourwindssocial.com/products/amethyst-cabana-mahjong-mat"
+    },
+    {
+     "name": "Autumn Camo",
+     "key": "fourwindssocial.com/autumn-camo-mahjong-mat",
+     "in_gallery": false,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://fourwindssocial.com/products/autumn-camo-mahjong-mat"
+    },
+    {
+     "name": "Autumn Moss",
+     "key": "fourwindssocial.com/autumn-moss-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://fourwindssocial.com/products/autumn-moss-mahjong-mat"
+    },
+    {
+     "name": "FWS x 225Mahjong Collab: Fleur the Win",
+     "key": "fourwindssocial.com/fws-x-225mahjong-collab-fleur-the-win-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://fourwindssocial.com/products/fws-x-225mahjong-collab-fleur-the-win-mahjong-mat"
+    },
+    {
+     "name": "FWS x 225Mahjong Collab: Purple Reign",
+     "key": "fourwindssocial.com/fws-x-225mahjong-collab-purple-reign-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://fourwindssocial.com/products/fws-x-225mahjong-collab-purple-reign-mahjong-mat"
+    },
+    {
+     "name": "FWS x Mahj Mood Collab: Beyond the Ribbon",
+     "key": "mahjmood.com/beyond-the-ribbon-four-winds-social-collab-mat-benefitting-pink-fund-pre-order-ships-end-of-december",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://fourwindssocial.com/products/beyond-the-ribbon-four-winds-social-collab-mat-benefitting-pink-fund-pre-order-ships-end-of-december"
+    },
+    {
+     "name": "FWS x Mahj Mood Collab: Beyond the Ribbon",
+     "key": "fourwindssocial.com/beyond-the-ribbon-four-winds-social-collab-mat-benefitting-pink-fund-pre-order-ships-end-of-december",
+     "in_gallery": false,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://fourwindssocial.com/products/beyond-the-ribbon-four-winds-social-collab-mat-benefitting-pink-fund-pre-order-ships-end-of-december"
+    },
+    {
+     "name": "FWS x Mahj Mood Collab: Rally in Pink",
+     "key": "fourwindssocial.com/rally-in-pink-mat-four-winds-social-collab-mat-benefitting-pink-fund-pre-order-ships-end-of-december",
+     "in_gallery": false,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://fourwindssocial.com/products/rally-in-pink-mat-four-winds-social-collab-mat-benefitting-pink-fund-pre-order-ships-end-of-december"
+    },
+    {
+     "name": "FWS x Mahj Mood: Eloise",
+     "key": "fourwindssocial.com/the-eloise-collection-mat-collab-with-four-winds-social-pre-order-ships-end-of-september",
+     "in_gallery": false,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://fourwindssocial.com/products/the-eloise-collection-mat-collab-with-four-winds-social-pre-order-ships-end-of-september"
+    },
+    {
+     "name": "Four Winds Fawn",
+     "key": "fourwindssocial.com/four-winds-fawn-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://fourwindssocial.com/products/four-winds-fawn-mahjong-mat"
+    },
+    {
+     "name": "Fox & The Houndstooth Mahong",
+     "key": "fourwindssocial.com/fox-the-houndstooth-mahong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://fourwindssocial.com/products/fox-the-houndstooth-mahong-mat"
+    },
+    {
+     "name": "Mulled Mahj Holiday",
+     "key": "fourwindssocial.com/mulled-mahj-holiday-mahjong-mat",
+     "in_gallery": false,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://fourwindssocial.com/products/mulled-mahj-holiday-mahjong-mat"
+    },
+    {
+     "name": "Olive Spotted Double",
+     "key": "fourwindssocial.com/olive-spotted-double-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://fourwindssocial.com/products/olive-spotted-double-mahjong-mat"
+    },
+    {
+     "name": "Preppy Poinsettia",
+     "key": "fourwindssocial.com/preppy-poinsettia-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://fourwindssocial.com/products/preppy-poinsettia-mahjong-mat"
+    }
+   ],
+   "note": "Oct 19 she said FWS is 'totally fine, may affiliate again soon; mats fine to match'; Oct 20 lock rule supersedes unless she says otherwise. 0 matches found. The 'FWS x Mahj Mood' collab mats are sold by partner Mahj Mood (one gallery row already links mahjmood.com): could stay as Mahj Mood rows."
+  },
+  {
+   "brand": "Golden Pond Mahjong",
+   "gallery_count": 1,
+   "fym_visible": 1,
+   "fym_hidden": 0,
+   "matched_count": 1,
+   "unmatched_count": 0,
+   "shopmy_count": 0,
+   "suggestion": "keep-all (all matched or ShopMy)",
+   "matched": [
+    {
+     "name": "Midori Shadows",
+     "key": "goldenpond:midori-shadows",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Miss Classic Malachite"
+     ]
+    }
+   ],
+   "unmatched": []
+  },
+  {
+   "brand": "Hutch & Nook",
+   "gallery_count": 9,
+   "fym_visible": 9,
+   "fym_hidden": 0,
+   "matched_count": 2,
+   "unmatched_count": 7,
+   "shopmy_count": 0,
+   "suggestion": "keep-matched-only",
+   "matched": [
+    {
+     "name": "Blue Cowboy Boot",
+     "key": "hutchandnook.com/mahjong-mat-blue-cowboy-boot",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Seabreeze",
+      "album page: seabreeze"
+     ]
+    },
+    {
+     "name": "Songbird Bloom",
+     "key": "hutchandnook.com/mahjong-mat-moody-mat-songbird-bloom",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Solara, Willow",
+      "album page: solara, willow"
+     ]
+    }
+   ],
+   "unmatched": [
+    {
+     "name": "Blue White Bird",
+     "key": "hutchandnook.com/mahjong-mat-blue-white-bird",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://hutchandnook.com/products/mahjong-mat-blue-white-bird"
+    },
+    {
+     "name": "Lavender",
+     "key": "hutchandnook.com/mahjong-mat-lavender",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://hutchandnook.com/products/mahjong-mat-lavender"
+    },
+    {
+     "name": "Moody",
+     "key": "hutchandnook.com/mahjong-mat-moody-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://hutchandnook.com/products/mahjong-mat-moody-mat"
+    },
+    {
+     "name": "Peacock Garden",
+     "key": "hutchandnook.com/mahjong-mat-peacock-garden",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://hutchandnook.com/products/mahjong-mat-peacock-garden"
+    },
+    {
+     "name": "Pink Rose",
+     "key": "hutchandnook.com/mahjong-mat-pink-rose",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://hutchandnook.com/products/mahjong-mat-pink-rose"
+    },
+    {
+     "name": "Summer Blossom",
+     "key": "hutchandnook.com/mahjong-mat-summer-blossom",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://hutchandnook.com/products/mahjong-mat-summer-blossom"
+    },
+    {
+     "name": "Winged Wonders",
+     "key": "hutchandnook.com/mahjong-mat-winged-wonders",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://hutchandnook.com/products/mahjong-mat-winged-wonders"
+    }
+   ]
+  },
+  {
+   "brand": "Isabel Harte",
+   "gallery_count": 1,
+   "fym_visible": 1,
+   "fym_hidden": 0,
+   "matched_count": 1,
+   "unmatched_count": 0,
+   "shopmy_count": 0,
+   "suggestion": "keep-all (all matched or ShopMy)",
+   "matched": [
+    {
+     "name": "Bamboo Dragon",
+     "key": "alb2:isabel-harte-isabel-harte",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Glow Wild",
+      "gallery album row (isabel-harte-isabel-harte)"
+     ]
+    }
+   ],
+   "unmatched": []
+  },
+  {
+   "brand": "LoveShackFancy",
+   "gallery_count": 1,
+   "fym_visible": 1,
+   "fym_hidden": 0,
+   "matched_count": 1,
+   "unmatched_count": 0,
+   "shopmy_count": 0,
+   "suggestion": "keep-all (all matched or ShopMy)",
+   "matched": [
+    {
+     "name": "Fleur",
+     "key": "www.loveshackfancy.com/pink-floral-designer-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Coquette",
+      "album page: coquette"
+     ]
+    }
+   ],
+   "unmatched": []
+  },
+  {
+   "brand": "Lucky Daughters",
+   "gallery_count": 1,
+   "fym_visible": 1,
+   "fym_hidden": 0,
+   "matched_count": 1,
+   "unmatched_count": 0,
+   "shopmy_count": 0,
+   "suggestion": "keep-all (all matched or ShopMy)",
+   "matched": [
+    {
+     "name": "Astor Place",
+     "key": "luckydaughters.com/astor-place-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Hummingbird, Sunday",
+      "album page: sunday-tile-set"
+     ]
+    }
+   ],
+   "unmatched": []
+  },
+  {
+   "brand": "Luxe Mahjong",
+   "gallery_count": 7,
+   "fym_visible": 8,
+   "fym_hidden": 1,
+   "matched_count": 3,
+   "unmatched_count": 5,
+   "shopmy_count": 0,
+   "suggestion": "keep-matched-only",
+   "matched": [
+    {
+     "name": "Azure Bloom",
+     "key": "luxemahjong.com/azure-bloom-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Hummingbird, Sunday",
+      "album page: sunday-tile-set"
+     ]
+    },
+    {
+     "name": "Midnight Romance",
+     "key": "luxemahjong.com/untitled-sep29_16-36-07",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Hummingbird, Sunday",
+      "album page: sunday-tile-set"
+     ]
+    },
+    {
+     "name": "The Polo Club",
+     "key": "luxemahjong.com/coming-soon-the-polo-club-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Après Ski Club, Cypress, Dear Santa, December 1994, Gatsby, Heritage 2.0, Hummingbird, Miss Classic Jade, Miss Classic Malachite, Nantucket, Rackin' Rudolph, Sunday, Tinselle (Emerald Green), Tinselle (Ruby Red)",
+      "album page: cypress-forest, gatsby, heritage-2-0, jade, malachite, nantucket, sunday-tile-set"
+     ]
+    }
+   ],
+   "unmatched": [
+    {
+     "name": "Bougie Bee",
+     "key": "luxemahjong.com/bougie-bee-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://luxemahjong.com/products/bougie-bee-mahjong-mat"
+    },
+    {
+     "name": "Neon Lights",
+     "key": "luxemahjong.com/new-i-love-the-80s-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://luxemahjong.com/products/new-i-love-the-80s-mat"
+    },
+    {
+     "name": "Preppy in Pink",
+     "key": "luxemahjong.com/untitled-jun12_07-20-27",
+     "in_gallery": false,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://luxemahjong.com/products/untitled-jun12_07-20-27"
+    },
+    {
+     "name": "The Fairway",
+     "key": "luxemahjong.com/new-the-fairway-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://luxemahjong.com/products/new-the-fairway-mat"
+    },
+    {
+     "name": "Western",
+     "key": "luxemahjong.com/western-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://luxemahjong.com/products/western-mat"
+    }
+   ],
+   "note": "She is applying to Luxe's brand ambassador program and thinks Luxe should be a partner; if approved, all 8 can return."
+  },
+  {
+   "brand": "Mahj & Moon",
+   "gallery_count": 82,
+   "fym_visible": 92,
+   "fym_hidden": 2,
+   "matched_count": 14,
+   "unmatched_count": 78,
+   "shopmy_count": 0,
+   "suggestion": "keep-matched-only",
+   "matched": [
+    {
+     "name": "Amalfi Soleil",
+     "key": "mahjandmoon.com/amalfi-soleil-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Pippa",
+      "album page: pippa"
+     ]
+    },
+    {
+     "name": "Blue Floral Bird American",
+     "key": "mahjandmoon.com/blue-floral-bird-american-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Osler",
+      "album page: osler [name fuzzy:bluefloralbird]"
+     ]
+    },
+    {
+     "name": "Blue Heritage Toile",
+     "key": "mahjandmoon.com/blue-heritage-toile-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Osler",
+      "album page: osler"
+     ]
+    },
+    {
+     "name": "Blue Koi Chinoiserie",
+     "key": "mahjandmoon.com/blue-koi-chinoiserie-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Osler",
+      "album page: osler"
+     ]
+    },
+    {
+     "name": "Citrus Chinoiserie",
+     "key": "mahjandmoon.com/citrus-chinoiserie-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "album page: solara [name fuzzy:pinkcitruschinoiserie]"
+     ]
+    },
+    {
+     "name": "Equestrian",
+     "key": "mahjandmoon.com/equestrian-horse-mahjong-mat",
+     "in_gallery": false,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Osler",
+      "album page: osler"
+     ]
+    },
+    {
+     "name": "Equestrian Estate",
+     "key": "mahjandmoon.com/equestrian-estate-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "album page: osler [name fuzzy:equestrian]"
+     ]
+    },
+    {
+     "name": "Grand Garden Estate",
+     "key": "mahjandmoon.com/grand-garden-estate-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Papaya Spritz, Solara",
+      "album page: papaya-spritz"
+     ]
+    },
+    {
+     "name": "Leopard American",
+     "key": "mahjandmoon.com/leopard-animal-print-american-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Papaya Spritz",
+      "album page: papaya-spritz"
+     ]
+    },
+    {
+     "name": "Pink Citrus",
+     "key": "mahjandmoon.com/pink-lemon-blossom-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Pippa, Solara",
+      "album page: pippa"
+     ]
+    },
+    {
+     "name": "Retro Waves – Orange",
+     "key": "mahjandmoon.com/retro-waves-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Papaya Spritz",
+      "album page: papaya-spritz [name fuzzy:retrowaves]"
+     ]
+    },
+    {
+     "name": "Retro Waves – Pink & Aqua",
+     "key": "mahjandmoon.com/retro-waves-mahjong-mat-blue",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "album page: papaya-spritz [name fuzzy:retrowaves]"
+     ]
+    },
+    {
+     "name": "Retro Waves – Purple",
+     "key": "mahjandmoon.com/retro-waves-mahjong-mat-purple",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "album page: papaya-spritz [name fuzzy:retrowaves]"
+     ]
+    },
+    {
+     "name": "Vintage Floral Gingham",
+     "key": "mahjandmoon.com/vintage-floral-gingham-mahjong-mat",
+     "in_gallery": false,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Solara",
+      "album page: solara"
+     ]
+    }
+   ],
+   "unmatched": [
+    {
+     "name": "Amongst the Lemon Groves Pink",
+     "key": "mahjandmoon.com/pink-lemon-grove-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/pink-lemon-grove-mahjong-mat"
+    },
+    {
+     "name": "Autumn Leaves",
+     "key": "mahjandmoon.com/autumn-leaves-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/autumn-leaves-mahjong-mat"
+    },
+    {
+     "name": "Blossom Aviary",
+     "key": "mahjandmoon.com/blossom-aviary-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/blossom-aviary-mahjong-mat"
+    },
+    {
+     "name": "Blue Pastel Palm Beach",
+     "key": "mahjandmoon.com/blue-pastel-palm-beach-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/blue-pastel-palm-beach-mahjong-mat"
+    },
+    {
+     "name": "Blue Tropical Palm",
+     "key": "mahjandmoon.com/tropical-palm-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/tropical-palm-mahjong-mat"
+    },
+    {
+     "name": "Blue White Lemon",
+     "key": "mahjandmoon.com/blue-white-lemon-mahjong-mat",
+     "in_gallery": false,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/blue-white-lemon-mahjong-mat"
+    },
+    {
+     "name": "Blush Botanical",
+     "key": "mahjandmoon.com/blush-botanical-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/blush-botanical-mahjong-mat"
+    },
+    {
+     "name": "Blush Butterfly",
+     "key": "mahjandmoon.com/blush-butterfly-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/blush-butterfly-mahjong-mat"
+    },
+    {
+     "name": "Botanical Butterfly",
+     "key": "mahjandmoon.com/botanical-butterfly-mahjong-mat-floral-garden-design-in-pink-green",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/botanical-butterfly-mahjong-mat-floral-garden-design-in-pink-green"
+    },
+    {
+     "name": "Botanical Chevron",
+     "key": "mahjandmoon.com/botanical-chevron-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/botanical-chevron-mahjong-mat"
+    },
+    {
+     "name": "Butterfly Floral",
+     "key": "mahjandmoon.com/butterfly-floral-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/butterfly-floral-mahjong-mat"
+    },
+    {
+     "name": "Butterfly Garden",
+     "key": "mahjandmoon.com/butterfly-garden-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/butterfly-garden-mahjong-mat"
+    },
+    {
+     "name": "Candy Cane Christmas Village",
+     "key": "mahjandmoon.com/candy-cane-christmas-village-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/candy-cane-christmas-village-mahjong-mat"
+    },
+    {
+     "name": "Celestial Dragon Chinoiserie",
+     "key": "mahjandmoon.com/celestial-dragon-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/celestial-dragon-mahjong-mat"
+    },
+    {
+     "name": "Celestial Sun",
+     "key": "mahjandmoon.com/celestial-sun-mahjong-mat-boho-sunshine-mahjong-mat-in-peach-yellow",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/celestial-sun-mahjong-mat-boho-sunshine-mahjong-mat-in-peach-yellow"
+    },
+    {
+     "name": "Cherry Blossom",
+     "key": "mahjandmoon.com/cherry-blossom-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/cherry-blossom-mahjong-mat"
+    },
+    {
+     "name": "Christmas Toile",
+     "key": "mahjandmoon.com/christmas-toile-mahjong-mat-vintage-santa-holiday-design",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/christmas-toile-mahjong-mat-vintage-santa-holiday-design"
+    },
+    {
+     "name": "Christmas Village Gingham",
+     "key": "mahjandmoon.com/christmas-village-gingham-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/christmas-village-gingham-mahjong-mat"
+    },
+    {
+     "name": "Coastal American",
+     "key": "mahjandmoon.com/ocean-coastal-american-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/ocean-coastal-american-mahjong-mat"
+    },
+    {
+     "name": "Coastal Bloom",
+     "key": "mahjandmoon.com/coastal-bloom-mahjong-mat",
+     "in_gallery": false,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/coastal-bloom-mahjong-mat"
+    },
+    {
+     "name": "Cowgirl Rodeo",
+     "key": "mahjandmoon.com/cowgirl-rodeo-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/cowgirl-rodeo-mahjong-mat"
+    },
+    {
+     "name": "Desert",
+     "key": "mahjandmoon.com/desert-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/desert-mahjong-mat"
+    },
+    {
+     "name": "Desert Oasis",
+     "key": "mahjandmoon.com/cowdesert-oasis-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/cowdesert-oasis-mahjong-mat"
+    },
+    {
+     "name": "Elephant Paisley",
+     "key": "mahjandmoon.com/elephant-paisley-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/elephant-paisley-mahjong-mat"
+    },
+    {
+     "name": "Emerald Tiger Chinoiserie",
+     "key": "mahjandmoon.com/emerald-tiger-chinoiserie-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/emerald-tiger-chinoiserie-mahjong-mat"
+    },
+    {
+     "name": "Emerald Tiger Jungle",
+     "key": "mahjandmoon.com/emerald-tiger-jungle-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/emerald-tiger-jungle-mahjong-mat"
+    },
+    {
+     "name": "English Garden Gingham",
+     "key": "mahjandmoon.com/english-garden-gingham-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/english-garden-gingham-mahjong-mat"
+    },
+    {
+     "name": "Festive Citrus Chinoiserie",
+     "key": "mahjandmoon.com/festive-chinoiserie-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/festive-chinoiserie-mahjong-mat"
+    },
+    {
+     "name": "French Country Estate",
+     "key": "mahjandmoon.com/tropical-toucan-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/tropical-toucan-mahjong-mat"
+    },
+    {
+     "name": "Garden Toile Round",
+     "key": "mahjandmoon.com/garden-toile-round-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/garden-toile-round-mahjong-mat"
+    },
+    {
+     "name": "Green Menagerie Toile",
+     "key": "mahjandmoon.com/green-menagerie-toile-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/green-menagerie-toile-mahjong-mat"
+    },
+    {
+     "name": "Green Retro",
+     "key": "mahjandmoon.com/green-retro-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/green-retro-mahjong-mat"
+    },
+    {
+     "name": "Harvest Pumpkin Thanksgiving",
+     "key": "mahjandmoon.com/harvest-pumpkin-thanksgiving-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/harvest-pumpkin-thanksgiving-mahjong-mat"
+    },
+    {
+     "name": "Heirloom Blooms",
+     "key": "mahjandmoon.com/heirloom-blooms-mahjong-mat",
+     "in_gallery": false,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/heirloom-blooms-mahjong-mat"
+    },
+    {
+     "name": "Italian Riviera Foodie",
+     "key": "mahjandmoon.com/italian-riviera-foodie-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/italian-riviera-foodie-mahjong-mat"
+    },
+    {
+     "name": "Koi Pond",
+     "key": "mahjandmoon.com/koi-pond-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/koi-pond-mahjong-mat"
+    },
+    {
+     "name": "Lemon Stripe",
+     "key": "mahjandmoon.com/lemon-stripe-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/lemon-stripe-mahjong-mat"
+    },
+    {
+     "name": "Lion American",
+     "key": "mahjandmoon.com/lion-american-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/lion-american-mahjong-mat"
+    },
+    {
+     "name": "Monkey Garden",
+     "key": "mahjandmoon.com/monkey-garden-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/monkey-garden-mahjong-mat"
+    },
+    {
+     "name": "Orchard Songbird",
+     "key": "mahjandmoon.com/orchard-songbird-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/orchard-songbird-mahjong-mat"
+    },
+    {
+     "name": "Palm Beach American – Bermuda",
+     "key": "mahjandmoon.com/palm-beach-bermuda-american-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/palm-beach-bermuda-american-mahjong-mat"
+    },
+    {
+     "name": "Palm Beach American – Harbor",
+     "key": "mahjandmoon.com/palm-beach-american-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/palm-beach-american-mahjong-mat"
+    },
+    {
+     "name": "Palm Tree",
+     "key": "mahjandmoon.com/palm-tree-mahjong-mat-tropical-pink-american-mahjong-playing-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/palm-tree-mahjong-mat-tropical-pink-american-mahjong-playing-mat"
+    },
+    {
+     "name": "Paris in Bloom",
+     "key": "mahjandmoon.com/paris-in-bloom-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/paris-in-bloom-mahjong-mat"
+    },
+    {
+     "name": "Pastel Garden Landscape",
+     "key": "mahjandmoon.com/pastel-garden-landscape-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/pastel-garden-landscape-mahjong-mat"
+    },
+    {
+     "name": "Pastel Palm Beach",
+     "key": "mahjandmoon.com/pastel-palm-beach-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/pastel-palm-beach-mahjong-mat"
+    },
+    {
+     "name": "Pastel Tie Dye American",
+     "key": "mahjandmoon.com/pastel-tie-dye-american-mahjong-mat",
+     "in_gallery": false,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/pastel-tie-dye-american-mahjong-mat"
+    },
+    {
+     "name": "Pastel Turtle Coastal",
+     "key": "mahjandmoon.com/pastel-turtle-coastal-mahjong-mat",
+     "in_gallery": false,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/pastel-turtle-coastal-mahjong-mat"
+    },
+    {
+     "name": "Pastel Wildflower Gingham",
+     "key": "mahjandmoon.com/pastel-wildflower-gingham-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/pastel-wildflower-gingham-mahjong-mat"
+    },
+    {
+     "name": "Personalized Bow American",
+     "key": "mahjandmoon.com/personalized-bow-monogram-american-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/personalized-bow-monogram-american-mahjong-mat"
+    },
+    {
+     "name": "Personalized Vibrant Floral Chinoiserie Pink",
+     "key": "mahjandmoon.com/personalized-chinoiserie-monogram-american-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/personalized-chinoiserie-monogram-american-mahjong-mat"
+    },
+    {
+     "name": "Pickleball",
+     "key": "mahjandmoon.com/pickleball-mahjong-mat-preppy-bow-lavender-stripe-design",
+     "in_gallery": false,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/pickleball-mahjong-mat-preppy-bow-lavender-stripe-design"
+    },
+    {
+     "name": "Pink & Blue Paisley",
+     "key": "mahjandmoon.com/pink-blue-paisley-mahjong-mat",
+     "in_gallery": false,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/pink-blue-paisley-mahjong-mat"
+    },
+    {
+     "name": "Pink & Green Floral",
+     "key": "mahjandmoon.com/pink-green-floral-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/pink-green-floral-mahjong-mat"
+    },
+    {
+     "name": "Pink Bow Garden",
+     "key": "mahjandmoon.com/pink-bow-garden-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/pink-bow-garden-mahjong-mat"
+    },
+    {
+     "name": "Pink Damask American",
+     "key": "mahjandmoon.com/pink-damask-american-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/pink-damask-american-mahjong-mat"
+    },
+    {
+     "name": "Pink Floral Round",
+     "key": "mahjandmoon.com/pink-floral-round-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/pink-floral-round-mahjong-mat"
+    },
+    {
+     "name": "Pink Folk Floral",
+     "key": "mahjandmoon.com/pink-folk-floral-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/pink-folk-floral-mahjong-mat"
+    },
+    {
+     "name": "Pink Wildflower",
+     "key": "mahjandmoon.com/pink-wildflower-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/pink-wildflower-mahjong-mat"
+    },
+    {
+     "name": "Purple Floral Gingham Geometric",
+     "key": "mahjandmoon.com/blue-floral-gingham-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/blue-floral-gingham-mahjong-mat"
+    },
+    {
+     "name": "Riviera Beach Club",
+     "key": "mahjandmoon.com/riviera-beach-club-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/riviera-beach-club-mahjong-mat"
+    },
+    {
+     "name": "Round Leopard Print",
+     "key": "mahjandmoon.com/round-leopard-print-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/round-leopard-print-mahjong-mat"
+    },
+    {
+     "name": "Scalloped Blossom Aviary",
+     "key": "mahjandmoon.com/scalloped-blossom-aviary-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/scalloped-blossom-aviary-mahjong-mat"
+    },
+    {
+     "name": "Scalloped Chinoiserie Bird & Floral",
+     "key": "mahjandmoon.com/scalloped-chinoiserie-bird-floral-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/scalloped-chinoiserie-bird-floral-mahjong-mat"
+    },
+    {
+     "name": "Scalloped Pastel Palm Beach Toile",
+     "key": "mahjandmoon.com/scalloped-palm-toile-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/scalloped-palm-toile-mahjong-mat"
+    },
+    {
+     "name": "Scalloped Tropical Palm",
+     "key": "mahjandmoon.com/scalloped-tropical-palm-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/scalloped-tropical-palm-mahjong-mat"
+    },
+    {
+     "name": "Seashell American",
+     "key": "mahjandmoon.com/seashell-american-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/seashell-american-mahjong-mat"
+    },
+    {
+     "name": "Strawberry Garden American",
+     "key": "mahjandmoon.com/strawberry-garden-american-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/strawberry-garden-american-mahjong-mat"
+    },
+    {
+     "name": "Strawberry Thief–Inspired",
+     "key": "mahjandmoon.com/strawberry-thief-inspired-mahjong-mat-heritage-floral-bird-design",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/strawberry-thief-inspired-mahjong-mat-heritage-floral-bird-design"
+    },
+    {
+     "name": "The Sun Tarot",
+     "key": "mahjandmoon.com/the-sun-tarot-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/the-sun-tarot-mahjong-mat"
+    },
+    {
+     "name": "Tropical Hibiscus",
+     "key": "mahjandmoon.com/tropical-hibiscus-mahjong-mat-pink-blue-palm-print-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/tropical-hibiscus-mahjong-mat-pink-blue-palm-print-mahjong-mat"
+    },
+    {
+     "name": "Tropical Island Garden",
+     "key": "mahjandmoon.com/tropical-island-garden-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/tropical-island-garden-mahjong-mat"
+    },
+    {
+     "name": "Tropical Leopard",
+     "key": "mahjandmoon.com/tropical-leopard-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/tropical-leopard-mahjong-mat"
+    },
+    {
+     "name": "Valentine Hearts American",
+     "key": "mahjandmoon.com/valentine-hearts-american-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/valentine-hearts-american-mahjong-mat"
+    },
+    {
+     "name": "Vibrant Floral Chinoiserie Pink",
+     "key": "mahjandmoon.com/vibrant-floral-chinoiserie-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/vibrant-floral-chinoiserie-mahjong-mat"
+    },
+    {
+     "name": "Wildflower American",
+     "key": "mahjandmoon.com/wildflower-american-mahjong-mat",
+     "in_gallery": false,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/wildflower-american-mahjong-mat"
+    },
+    {
+     "name": "William Morris Inspired Round",
+     "key": "mahjandmoon.com/william-morris-inspired-round-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/william-morris-inspired-round-mahjong-mat"
+    },
+    {
+     "name": "Zebra Palm Chinoiserie",
+     "key": "mahjandmoon.com/zebra-palm-chinoiserie-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjandmoon.com/products/zebra-palm-chinoiserie-mahjong-mat"
+    }
+   ],
+   "note": "Several album matches are by fuzzy name (Retro Waves colorways, Equestrian vs Equestrian Estate, Citrus Chinoiserie vs Pink Citrus Chinoiserie): confirm which exact mats she picked."
+  },
+  {
+   "brand": "Mahj House Rules",
+   "gallery_count": 1,
+   "fym_visible": 1,
+   "fym_hidden": 0,
+   "matched_count": 0,
+   "unmatched_count": 1,
+   "shopmy_count": 0,
+   "suggestion": "remove-brand",
+   "matched": [],
+   "unmatched": [
+    {
+     "name": "Mahjong",
+     "key": "mahjhouserules.com/mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjhouserules.com/products/mahjong-mat"
+    }
+   ]
+  },
+  {
+   "brand": "Mahj Tile Haus",
+   "gallery_count": 5,
+   "fym_visible": 5,
+   "fym_hidden": 1,
+   "matched_count": 4,
+   "unmatched_count": 1,
+   "shopmy_count": 0,
+   "suggestion": "keep-matched-only",
+   "matched": [
+    {
+     "name": "Coral & Coast",
+     "key": "mahjtilehaus.com/coastal-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Seabreeze"
+     ]
+    },
+    {
+     "name": "Palm Royale",
+     "key": "mahjtilehaus.com/palm-royale-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Solara",
+      "album page: solara"
+     ]
+    },
+    {
+     "name": "Sunwashed Citrus",
+     "key": "mahjtilehaus.com/sunwashed-citrus-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Pippa",
+      "album page: pippa"
+     ]
+    },
+    {
+     "name": "White Lotus",
+     "key": "mahjtilehaus.com/white-lotus-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Hummingbird, Miss Classic Malachite, Solara, Sunday, Talulah, Willow",
+      "album page: solara, sunday-tile-set, talulah, willow"
+     ]
+    }
+   ],
+   "unmatched": [
+    {
+     "name": "Coral and Coast Holiday",
+     "key": "mahjtilehaus.com/coastal-holiday-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://mahjtilehaus.com/products/coastal-holiday-mat"
+    }
+   ],
+   "note": "Earns 0% on ShopMy. 'Coral and Coast Holiday' is the holiday colorway of matched 'Coral & Coast'; not itself matched."
+  },
+  {
+   "brand": "Mahjong by SI",
+   "gallery_count": 6,
+   "fym_visible": 6,
+   "fym_hidden": 0,
+   "matched_count": 6,
+   "unmatched_count": 0,
+   "shopmy_count": 0,
+   "suggestion": "keep-all (all matched or ShopMy)",
+   "matched": [
+    {
+     "name": "Gatsby",
+     "key": "mahjongco.com/gatsby-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Hummingbird, Sunday",
+      "album page: sunday-tile-set"
+     ]
+    },
+    {
+     "name": "Highland Heritage Plaid",
+     "key": "mahjongco.com/mahjong-by-si-highland-house-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: December 1994, Hummingbird, Sunday",
+      "album page: sunday-tile-set"
+     ]
+    },
+    {
+     "name": "The Hunt Club",
+     "key": "mahjongco.com/mahjong-by-si-the-hunt-club-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: December 1994, Hummingbird, Sunday",
+      "album page: sunday-tile-set"
+     ]
+    },
+    {
+     "name": "The Lodge",
+     "key": "mahjongco.com/the-lodge-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Hummingbird, Sunday",
+      "album page: sunday-tile-set"
+     ]
+    },
+    {
+     "name": "Tracing the Tides",
+     "key": "mahjongco.com/mahjong-by-si-tracing-the-tides-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Hummingbird, Sunday",
+      "album page: sunday-tile-set"
+     ]
+    },
+    {
+     "name": "Vintage Oxblood Leather",
+     "key": "mahjongco.com/mahjong-mat-vintage-oxblood-leather-sclp",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: December 1994, Hummingbird, Sunday",
+      "album page: sunday-tile-set"
+     ]
+    }
+   ],
+   "unmatched": [],
+   "note": "Listed in config/fym_held_brands.json, yet 6 mats are visible in FYM (all matched to Sunday/Hummingbird/December 1994)."
+  },
+  {
+   "brand": "Mahjong Moxie",
+   "gallery_count": 7,
+   "fym_visible": 2,
+   "fym_hidden": 6,
+   "matched_count": 2,
+   "unmatched_count": 5,
+   "shopmy_count": 0,
+   "suggestion": "keep-matched-only",
+   "matched": [
+    {
+     "name": "Duck Camp",
+     "key": "alb2:mahjong-moxie-duck-camp",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Cypress, Gatsby, Heritage 2.0, Smith",
+      "gallery album row (mahjong-moxie-duck-camp)",
+      "album page: cypress-forest, gatsby, heritage-2-0, smith"
+     ],
+     "allowed": "explicitly allowed"
+    },
+    {
+     "name": "Heron Landing",
+     "key": "www.mahjong-moxie.com/heron-landing-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [],
+     "allowed": "explicitly allowed"
+    }
+   ],
+   "unmatched": [
+    {
+     "name": "Bamboo Garden",
+     "key": "www.mahjong-moxie.com/bamboo-garden-mat",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://www.mahjong-moxie.com/products/bamboo-garden-mat"
+    },
+    {
+     "name": "In Bloom",
+     "key": "www.mahjong-moxie.com/in-bloom-mat",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://www.mahjong-moxie.com/products/in-bloom-mat"
+    },
+    {
+     "name": "Magnolia Muse",
+     "key": "www.mahjong-moxie.com/magnolia-muse-mat",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://www.mahjong-moxie.com/products/magnolia-muse-mat"
+    },
+    {
+     "name": "Oyster Confetti",
+     "key": "www.mahjong-moxie.com/oyster-confetti-mat",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://www.mahjong-moxie.com/products/oyster-confetti-mat"
+    },
+    {
+     "name": "Tulip Tango",
+     "key": "www.mahjong-moxie.com/tulip-tango-mat",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://www.mahjong-moxie.com/products/tulip-tango-mat"
+    }
+   ],
+   "note": "Not a partner (she wishes it were). FYM already hides the 6 removed mats, but gallery v5 still shows 5 unmatched Moxie mats (Bamboo Garden, In Bloom, Magnolia Muse, Oyster Confetti, Tulip Tango): drop them from the gallery build."
+  },
+  {
+   "brand": "Maison Mahj",
+   "gallery_count": 11,
+   "fym_visible": 12,
+   "fym_hidden": 0,
+   "matched_count": 1,
+   "unmatched_count": 11,
+   "shopmy_count": 0,
+   "suggestion": "keep-matched-only",
+   "matched": [
+    {
+     "name": "The Chalet",
+     "key": "maisonmahj.com/the-chalet-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Après Ski Club"
+     ]
+    }
+   ],
+   "unmatched": [
+    {
+     "name": "The Afternoon Tea",
+     "key": "maisonmahj.com/the-afternoon-tea-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://maisonmahj.com/products/the-afternoon-tea-mat"
+    },
+    {
+     "name": "The Checkmate House",
+     "key": "maisonmahj.com/the-house-mat-checkmate-edition",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://maisonmahj.com/products/the-house-mat-checkmate-edition"
+    },
+    {
+     "name": "The Espresso City",
+     "key": "maisonmahj.com/the-downtown-martini-mat-espresso",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://maisonmahj.com/products/the-downtown-martini-mat-espresso"
+    },
+    {
+     "name": "The Flower Market",
+     "key": "maisonmahj.com/the-flower-market-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://maisonmahj.com/products/the-flower-market-mat"
+    },
+    {
+     "name": "The London Icons",
+     "key": "maisonmahj.com/the-london-icons-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://maisonmahj.com/products/the-london-icons-mat"
+    },
+    {
+     "name": "The Mayfair Stripe",
+     "key": "maisonmahj.com/the-mayfair-stripe-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://maisonmahj.com/products/the-mayfair-stripe-mat"
+    },
+    {
+     "name": "The Olive City",
+     "key": "maisonmahj.com/the-emerald-martini-nyc-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://maisonmahj.com/products/the-emerald-martini-nyc-mat"
+    },
+    {
+     "name": "The Rue de Paris",
+     "key": "maisonmahj.com/the-paris-mat-rue-de-paris-edition",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://maisonmahj.com/products/the-paris-mat-rue-de-paris-edition"
+    },
+    {
+     "name": "The Signature House",
+     "key": "maisonmahj.com/the-paris-mat-la-vie-en-mahj-edition",
+     "in_gallery": false,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://maisonmahj.com/products/the-paris-mat-la-vie-en-mahj-edition"
+    },
+    {
+     "name": "The Stripe House",
+     "key": "maisonmahj.com/the-house-mat-stripe-edition",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://maisonmahj.com/products/the-house-mat-stripe-edition"
+    },
+    {
+     "name": "The Tile House",
+     "key": "maisonmahj.com/the-house-mat-tile-edition",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://maisonmahj.com/products/the-house-mat-tile-edition"
+    }
+   ],
+   "note": "Partner name trap: Maison Mahj (non-partner) vs her own idea 'Mahj Maison'. Only The Chalet is matched (Apres Ski Club FYM list; no album page)."
+  },
+  {
+   "brand": "Mary Benson",
+   "gallery_count": 0,
+   "fym_visible": 1,
+   "fym_hidden": 1,
+   "matched_count": 1,
+   "unmatched_count": 0,
+   "shopmy_count": 0,
+   "suggestion": "keep-all (all matched or ShopMy)",
+   "matched": [
+    {
+     "name": "Blooming Tulips",
+     "key": "alb2:mary-benson-mary-benson",
+     "in_gallery": false,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Solara",
+      "gallery album row (mary-benson-mary-benson)"
+     ]
+    }
+   ],
+   "unmatched": []
+  },
+  {
+   "brand": "Nawuno",
+   "gallery_count": 0,
+   "fym_visible": 0,
+   "fym_hidden": 1,
+   "matched_count": 0,
+   "unmatched_count": 0,
+   "shopmy_count": 0,
+   "suggestion": "none (already hidden everywhere)",
+   "matched": [],
+   "unmatched": []
+  },
+  {
+   "brand": "Ozark Mahjongg",
+   "gallery_count": 4,
+   "fym_visible": 4,
+   "fym_hidden": 1,
+   "matched_count": 4,
+   "unmatched_count": 0,
+   "shopmy_count": 0,
+   "suggestion": "keep-all (all matched or ShopMy)",
+   "matched": [
+    {
+     "name": "Carson Vintage",
+     "key": "alb2:ozark-mah-jongg-carson-vintage",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Gatsby, Heritage 1.0, Heritage 2.0, Hummingbird, Smith, Sunday",
+      "gallery album row (ozark-mah-jongg-carson-vintage)",
+      "album page: gatsby, heritage, heritage-2-0, smith, sunday-tile-set"
+     ]
+    },
+    {
+     "name": "Winslow 1920 Navy",
+     "key": "ozarkmahjong.com/winslow-1920-original-navy-blue-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Drake, Gatsby, Heritage 1.0, Heritage 2.0, Hummingbird, Miss Classic Malachite, Smith, Sunday",
+      "album page: sunday-tile-set"
+     ]
+    },
+    {
+     "name": "Winslow 1920 Noir",
+     "key": "ozarkmahjong.com/winslow-1920-noir-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Hummingbird, Sunday",
+      "album page: sunday-tile-set"
+     ]
+    },
+    {
+     "name": "Winslow 1920 Rouge",
+     "key": "ozarkmahjong.com/winslow-1920-rouge-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Hummingbird, Sunday",
+      "album page: sunday-tile-set"
+     ]
+    }
+   ],
+   "unmatched": []
+  },
+  {
+   "brand": "Rebecca Illustrated",
+   "gallery_count": 1,
+   "fym_visible": 1,
+   "fym_hidden": 0,
+   "matched_count": 1,
+   "unmatched_count": 0,
+   "shopmy_count": 0,
+   "suggestion": "keep-all (all matched or ShopMy)",
+   "matched": [
+    {
+     "name": "Rainbow Row",
+     "key": "rebecca:rainbow-row",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Amara, Jasmine, La Fete, Limoncello, Pearlescent, Seabreeze, Sorbet",
+      "album page: amara, la-fete, limoncello, pearlescent, seabreeze, sorbet"
+     ]
+    }
+   ],
+   "unmatched": [],
+   "note": "She said bring Rebecca's mats in where they match (no affiliate program)."
+  },
+  {
+   "brand": "Sophie Clima",
+   "gallery_count": 10,
+   "fym_visible": 0,
+   "fym_hidden": 0,
+   "matched_count": 0,
+   "unmatched_count": 10,
+   "shopmy_count": 10,
+   "suggestion": "keep-all (all matched or ShopMy)",
+   "matched": [],
+   "unmatched": [
+    {
+     "name": "Cheeky Cockatoo",
+     "key": "www.etsy.com/listing/4510367849/preppy-mahjong-mat-cheeky-cockatoo-in",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96122627"
+    },
+    {
+     "name": "Cheetah in Chinoiserie",
+     "key": "www.etsy.com/listing/4515510897/preppy-mahjong-mat-with-white-bag",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96131764"
+    },
+    {
+     "name": "Chinoiserie Elephant with Pagodas",
+     "key": "www.etsy.com/listing/4530894010/preppy-chinoiserie-elephant-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96131257"
+    },
+    {
+     "name": "Custom Monogrammed Preppy",
+     "key": "www.etsy.com/listing/4596818529/custom-monogrammed-mahjong-mat-preppy",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96131171"
+    },
+    {
+     "name": "Dogs Playing Mahjong",
+     "key": "www.etsy.com/listing/4543574177/preppy-mahjong-mat-dogs-playing-mahjong",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96131413"
+    },
+    {
+     "name": "Florida Pool Party",
+     "key": "www.etsy.com/listing/4511258795/preppy-mahjong-mat-with-white-bag",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96131490"
+    },
+    {
+     "name": "Pink Orchids",
+     "key": "www.etsy.com/listing/4506841316/preppy-mahjong-mat-with-white-bag-pink",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96130981"
+    },
+    {
+     "name": "Pink Peonies",
+     "key": "www.etsy.com/listing/4520479826/preppy-mahjong-mat-with-white-bag-pink",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96130877"
+    },
+    {
+     "name": "Preppy Monkeys",
+     "key": "www.etsy.com/listing/4497975591/preppy-mahjong-mat-with-white-bag",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96122750"
+    },
+    {
+     "name": "Whimsical Chinoiserie Meeting in the Pavilion",
+     "key": "www.etsy.com/listing/4504460459/preppy-mahjong-mat-whimsical-chinoiserie",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": true,
+     "url": "https://go.shopmy.us/p-96131839"
+    }
+   ],
+   "note": "All 10 are ShopMy links (Etsy artist). Gallery-only, not in FYM."
+  },
+  {
+   "brand": "Sunday Mahjong",
+   "gallery_count": 10,
+   "fym_visible": 12,
+   "fym_hidden": 0,
+   "matched_count": 12,
+   "unmatched_count": 0,
+   "shopmy_count": 0,
+   "suggestion": "keep-all (allowed)",
+   "matched": [
+    {
+     "name": "Blue Diamond Premium",
+     "key": "sundaymahjong.com/blue-diamond-premium-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [],
+     "allowed": "whole line allowed"
+    },
+    {
+     "name": "Bold Blooms Premium",
+     "key": "sundaymahjong.com/bold-blooms-premium-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Hummingbird, Sunday",
+      "album page: sunday-tile-set [name fuzzy:boldblooms]"
+     ],
+     "allowed": "whole line allowed"
+    },
+    {
+     "name": "Coastal Grandma Premium",
+     "key": "sundaymahjong.com/coastal-grandma-premium-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Hummingbird, Sunday",
+      "album page: sunday-tile-set [name fuzzy:coastalgrandma]"
+     ],
+     "allowed": "whole line allowed"
+    },
+    {
+     "name": "Festive Plaid Premium",
+     "key": "sundaymahjong.com/festive-plaid-premium-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Cypress, Dear Santa, December 1994, Heritage 2.0, Hummingbird, Miss Classic Jade, Miss Classic Malachite, Nantucket, Rackin' Rudolph, Sierra, Sunday, Tinselle (Ruby Red)",
+      "album page: cypress-forest, heritage-2-0, jade, malachite, nantucket, sierra [name fuzzy:festiveplaid]"
+     ],
+     "allowed": "whole line allowed"
+    },
+    {
+     "name": "Gaylord Premium",
+     "key": "sundaymahjong.com/gaylord-premium-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Hummingbird, Sunday, Willow",
+      "album page: sunday-tile-set, willow [name fuzzy:gaylord]"
+     ],
+     "allowed": "whole line allowed"
+    },
+    {
+     "name": "Golden Gingham Premium",
+     "key": "sundaymahjong.com/golden-gingham-premium-mahjong-mat",
+     "in_gallery": false,
+     "in_fym": true,
+     "via": [
+      "FYM match list: December 1994, Drake, Heritage 1.0, Heritage 2.0, Hummingbird, Sunday, Willow",
+      "album page: drake, heritage, heritage-2-0, sunday-tile-set, willow [name fuzzy:goldengingham]"
+     ],
+     "allowed": "whole line allowed"
+    },
+    {
+     "name": "Plum Panda Premium",
+     "key": "sundaymahjong.com/plum-panda-premium-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Hummingbird, Sunday",
+      "album page: sunday-tile-set [name fuzzy:plumpanda]"
+     ],
+     "allowed": "whole line allowed"
+    },
+    {
+     "name": "Rattan",
+     "key": "sundaymahjong.com/rattan-premium-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Brownstone Bloom, Cypress, December 1994, Drake, Gatsby, Heritage 1.0, Heritage 2.0, Hummingbird, Smith, Sunday, Willow",
+      "album page: cypress-forest, drake, gatsby, heritage, heritage-2-0, smith, sunday-tile-set, willow"
+     ],
+     "allowed": "whole line allowed"
+    },
+    {
+     "name": "Retro Plaid Premium",
+     "key": "sundaymahjong.com/retro-plaid",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Hummingbird, Sunday",
+      "album page: sunday-tile-set [name fuzzy:retroplaid]"
+     ],
+     "allowed": "whole line allowed"
+    },
+    {
+     "name": "Spring Blooms Premium",
+     "key": "sundaymahjong.com/spring-blooms-premium-mahjong-mat",
+     "in_gallery": false,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Hummingbird, Sunday",
+      "album page: sunday-tile-set [name fuzzy:springblooms]"
+     ],
+     "allowed": "whole line allowed"
+    },
+    {
+     "name": "Sunday Premium",
+     "key": "sundaymahjong.com/sunday-premium-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Hummingbird, Sunday",
+      "album page: sunday-tile-set [name fuzzy:sunday]"
+     ],
+     "allowed": "whole line allowed"
+    },
+    {
+     "name": "Vegan Leather Premium",
+     "key": "sundaymahjong.com/vegan-leather-premium-mahjong-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [],
+     "allowed": "whole line allowed"
+    }
+   ],
+   "unmatched": []
+  },
+  {
+   "brand": "Sweet Jojo Designs",
+   "gallery_count": 1,
+   "fym_visible": 1,
+   "fym_hidden": 0,
+   "matched_count": 1,
+   "unmatched_count": 0,
+   "shopmy_count": 0,
+   "suggestion": "keep-all (all matched or ShopMy)",
+   "matched": [
+    {
+     "name": "Boho Wildflower",
+     "key": "alb2:sweet-jojo-designs-boho-wildflower",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Osler, Smith",
+      "gallery album row (sweet-jojo-designs-boho-wildflower)",
+      "album page: osler, smith"
+     ]
+    }
+   ],
+   "unmatched": [],
+   "note": "Listed in config/fym_held_brands.json, yet visible in FYM (matched)."
+  },
+  {
+   "brand": "Tala Mahj",
+   "gallery_count": 11,
+   "fym_visible": 0,
+   "fym_hidden": 0,
+   "matched_count": 0,
+   "unmatched_count": 11,
+   "shopmy_count": 0,
+   "suggestion": "keep-all? (on ShopMy at 15% per her Oct 20 note, but gallery links go direct to talamahj.com: swap to ShopMy links or remove)",
+   "matched": [],
+   "unmatched": [
+    {
+     "name": "Cabana - Pink & Ivory with Citrus Fringe",
+     "key": "talamahj.com/cabana-mahjong-mat-pink-ivory-with-citrus-fringe",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://talamahj.com/products/cabana-mahjong-mat-pink-ivory-with-citrus-fringe"
+    },
+    {
+     "name": "Cabana - Sage & Ivory with Cantaloupe Fringe",
+     "key": "talamahj.com/cabana-mahjong-mat-eucalyptus-ivory-with-soft-coral-fringe",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://talamahj.com/products/cabana-mahjong-mat-eucalyptus-ivory-with-soft-coral-fringe"
+    },
+    {
+     "name": "Cabana - Seafoam Blue & Ivory with Citrus Fringe",
+     "key": "talamahj.com/cabana-mahjong-mat-lagoon-blue-ivory-with-citrus-fringe",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://talamahj.com/products/cabana-mahjong-mat-lagoon-blue-ivory-with-citrus-fringe"
+    },
+    {
+     "name": "Colony - Chartreuse & Petal Pink",
+     "key": "talamahj.com/the-promenade-mat",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://talamahj.com/products/the-promenade-mat"
+    },
+    {
+     "name": "Midnight Wildflowers with Camel Fringe",
+     "key": "talamahj.com/midnight-meadow-mahjong-mat-with-suede-fringe",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://talamahj.com/products/midnight-meadow-mahjong-mat-with-suede-fringe"
+    },
+    {
+     "name": "Sweater Weather - Holiday with Winter Blue Fringe",
+     "key": "talamahj.com/cabana-mahjong-mat-pink-ivory-with-citrus-fringe-copy",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://talamahj.com/products/cabana-mahjong-mat-pink-ivory-with-citrus-fringe-copy"
+    },
+    {
+     "name": "The Carlyle - Holiday Plaid with Red Fringe",
+     "key": "talamahj.com/carlyle-holiday-mahjong-mat-with-red-fringe",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://talamahj.com/products/carlyle-holiday-mahjong-mat-with-red-fringe"
+    },
+    {
+     "name": "The Montecito - Wildflowers",
+     "key": "talamahj.com/the-sonoma-mahjong-mat-wildflowers-with-suede-fringe-copy",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://talamahj.com/products/the-sonoma-mahjong-mat-wildflowers-with-suede-fringe-copy"
+    },
+    {
+     "name": "The Pavilion - Bamboo Neutral with Blue Fringe",
+     "key": "talamahj.com/the-pavilio-mahjong-mat-bamboo-neutral-with-blue-fringe",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://talamahj.com/products/the-pavilio-mahjong-mat-bamboo-neutral-with-blue-fringe"
+    },
+    {
+     "name": "The Sonoma - Wildflowers",
+     "key": "talamahj.com/the-california-ranch-mahjong-mat-wildflowers-with-suede-fringe",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://talamahj.com/products/the-california-ranch-mahjong-mat-wildflowers-with-suede-fringe"
+    },
+    {
+     "name": "The Veranda - Bamboo Neutral with Rattan Fringe",
+     "key": "talamahj.com/the-veranda-mahjong-mat-bamboo-neutral-with-rattan-fringe",
+     "in_gallery": true,
+     "in_fym": false,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://talamahj.com/products/the-veranda-mahjong-mat-bamboo-neutral-with-rattan-fringe"
+    }
+   ]
+  },
+  {
+   "brand": "That Mahjong Moment",
+   "gallery_count": 1,
+   "fym_visible": 1,
+   "fym_hidden": 0,
+   "matched_count": 1,
+   "unmatched_count": 0,
+   "shopmy_count": 0,
+   "suggestion": "keep-all (all matched or ShopMy)",
+   "matched": [
+    {
+     "name": "Evergreen",
+     "key": "alb2:that-mahjong-moment-evergreen",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Miss Classic Jade, Miss Classic Malachite, Willow",
+      "gallery album row (that-mahjong-moment-evergreen)",
+      "album page: jade, malachite, willow"
+     ]
+    }
+   ],
+   "unmatched": []
+  },
+  {
+   "brand": "The Mahjong Line",
+   "gallery_count": 3,
+   "fym_visible": 3,
+   "fym_hidden": 0,
+   "matched_count": 0,
+   "unmatched_count": 3,
+   "shopmy_count": 0,
+   "suggestion": "remove-brand",
+   "matched": [],
+   "unmatched": [
+    {
+     "name": "Botanical",
+     "key": "themahjongline.com/botanical-game-mats",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://themahjongline.com/products/botanical-game-mats"
+    },
+    {
+     "name": "Holiday",
+     "key": "themahjongline.com/holiday-game-mats",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://themahjongline.com/products/holiday-game-mats"
+    },
+    {
+     "name": "Round",
+     "key": "themahjongline.com/round-playing-mat",
+     "in_gallery": true,
+     "in_fym": true,
+     "retired": false,
+     "shopmy": false,
+     "url": "https://themahjongline.com/products/round-playing-mat"
+    }
+   ]
+  },
+  {
+   "brand": "YOLO Mahjong",
+   "gallery_count": 1,
+   "fym_visible": 1,
+   "fym_hidden": 0,
+   "matched_count": 1,
+   "unmatched_count": 0,
+   "shopmy_count": 0,
+   "suggestion": "keep-all (all matched or ShopMy)",
+   "matched": [
+    {
+     "name": "Pink Tiger",
+     "key": "yolo:pink-tiger",
+     "in_gallery": true,
+     "in_fym": true,
+     "via": [
+      "FYM match list: Miss Classic Malachite"
+     ]
+    }
+   ],
+   "unmatched": []
+  }
+ ],
+ "shopmy_affiliated": [
+  {
+   "brand": "Betty June & Jeannette",
+   "name": "Allie (Purple)",
+   "url": "https://go.shopmy.us/p-94800122",
+   "gallery_img": "betty-june-jeannette--allie-purple",
+   "matched": false
+  },
+  {
+   "brand": "Betty June & Jeannette",
+   "name": "Benjamin",
+   "url": "https://go.shopmy.us/p-94698452",
+   "gallery_img": "betty-june-jeannette--benjamin",
+   "matched": false
+  },
+  {
+   "brand": "Betty June & Jeannette",
+   "name": "Benjamin Goes to Positano",
+   "url": "https://go.shopmy.us/p-96126037",
+   "gallery_img": "betty-june-jeannette--benjamin-goes-to-positano",
+   "matched": false
+  },
+  {
+   "brand": "Betty June & Jeannette",
+   "name": "Betty (Floral Monogram Game Surface)",
+   "url": "https://go.shopmy.us/p-96126748",
+   "gallery_img": "betty-june-jeannette--betty-floral-monogram-game-surface",
+   "matched": false
+  },
+  {
+   "brand": "Betty June & Jeannette",
+   "name": "Betty (Pastel Floral Neoprene)",
+   "url": "https://go.shopmy.us/p-96114757",
+   "gallery_img": "betty-june-jeannette--betty-pastel-floral-neoprene",
+   "matched": false
+  },
+  {
+   "brand": "Betty June & Jeannette",
+   "name": "Betty Floral (Monogrammed Neoprene)",
+   "url": "https://go.shopmy.us/p-96125859",
+   "gallery_img": "betty-june-jeannette--betty-floral-monogrammed-neoprene",
+   "matched": false
+  },
+  {
+   "brand": "Betty June & Jeannette",
+   "name": "Brinkley",
+   "url": "https://go.shopmy.us/p-96125711",
+   "gallery_img": "betty-june-jeannette--brinkley",
+   "matched": false
+  },
+  {
+   "brand": "Betty June & Jeannette",
+   "name": "Brooke",
+   "url": "https://go.shopmy.us/p-96114891",
+   "gallery_img": "betty-june-jeannette--brooke",
+   "matched": false
+  },
+  {
+   "brand": "Betty June & Jeannette",
+   "name": "Caroline (Preppy)",
+   "url": "https://go.shopmy.us/p-96125208",
+   "gallery_img": "betty-june-jeannette--caroline-preppy",
+   "matched": false
+  },
+  {
+   "brand": "Betty June & Jeannette",
+   "name": "Charlotte",
+   "url": "https://go.shopmy.us/p-96125544",
+   "gallery_img": "betty-june-jeannette--charlotte",
+   "matched": false
+  },
+  {
+   "brand": "Betty June & Jeannette",
+   "name": "Elizabeth",
+   "url": "https://go.shopmy.us/p-96115115",
+   "gallery_img": "betty-june-jeannette--elizabeth",
+   "matched": false
+  },
+  {
+   "brand": "Betty June & Jeannette",
+   "name": "Hippie Holiday",
+   "url": "https://go.shopmy.us/p-96124552",
+   "gallery_img": "betty-june-jeannette--hippie-holiday",
+   "matched": false
+  },
+  {
+   "brand": "Betty June & Jeannette",
+   "name": "Katelyn (Yellow)",
+   "url": "https://go.shopmy.us/p-96125355",
+   "gallery_img": "betty-june-jeannette--katelyn-yellow",
+   "matched": false
+  },
+  {
+   "brand": "Betty June & Jeannette",
+   "name": "Livy",
+   "url": "https://go.shopmy.us/p-96126853",
+   "gallery_img": "betty-june-jeannette--livy",
+   "matched": false
+  },
+  {
+   "brand": "Betty June & Jeannette",
+   "name": "Luna",
+   "url": "https://go.shopmy.us/p-96125450",
+   "gallery_img": "betty-june-jeannette--luna",
+   "matched": false
+  },
+  {
+   "brand": "Betty June & Jeannette",
+   "name": "Nichole",
+   "url": "https://go.shopmy.us/p-96125150",
+   "gallery_img": "betty-june-jeannette--nichole",
+   "matched": false
+  },
+  {
+   "brand": "Betty June & Jeannette",
+   "name": "Nora",
+   "url": "https://go.shopmy.us/p-96125055",
+   "gallery_img": "betty-june-jeannette--nora",
+   "matched": false
+  },
+  {
+   "brand": "Betty June & Jeannette",
+   "name": "The Most Wonderful Time of the Year",
+   "url": "https://go.shopmy.us/p-96124691",
+   "gallery_img": "betty-june-jeannette--the-most-wonderful-time-of-the-year",
+   "matched": false
+  },
+  {
+   "brand": "Etsy",
+   "name": "Chinese Landscape Shan Shui Crane Koi",
+   "url": "https://go.shopmy.us/p-96123092",
+   "gallery_img": "etsy-shop--chinese-landscape-shan-shui-crane-koi",
+   "matched": false
+  },
+  {
+   "brand": "Sophie Clima",
+   "name": "Cheeky Cockatoo",
+   "url": "https://go.shopmy.us/p-96122627",
+   "gallery_img": "sophie-clima--cheeky-cockatoo",
+   "matched": false
+  },
+  {
+   "brand": "Sophie Clima",
+   "name": "Cheetah in Chinoiserie",
+   "url": "https://go.shopmy.us/p-96131764",
+   "gallery_img": "sophie-clima--cheetah-in-chinoiserie",
+   "matched": false
+  },
+  {
+   "brand": "Sophie Clima",
+   "name": "Chinoiserie Elephant with Pagodas",
+   "url": "https://go.shopmy.us/p-96131257",
+   "gallery_img": "sophie-clima--chinoiserie-elephant-with-pagodas",
+   "matched": false
+  },
+  {
+   "brand": "Sophie Clima",
+   "name": "Custom Monogrammed Preppy",
+   "url": "https://go.shopmy.us/p-96131171",
+   "gallery_img": "sophie-clima--custom-monogrammed-preppy",
+   "matched": false
+  },
+  {
+   "brand": "Sophie Clima",
+   "name": "Dogs Playing Mahjong",
+   "url": "https://go.shopmy.us/p-96131413",
+   "gallery_img": "sophie-clima--dogs-playing-mahjong",
+   "matched": false
+  },
+  {
+   "brand": "Sophie Clima",
+   "name": "Florida Pool Party",
+   "url": "https://go.shopmy.us/p-96131490",
+   "gallery_img": "sophie-clima--florida-pool-party",
+   "matched": false
+  },
+  {
+   "brand": "Sophie Clima",
+   "name": "Pink Orchids",
+   "url": "https://go.shopmy.us/p-96130981",
+   "gallery_img": "sophie-clima--pink-orchids",
+   "matched": false
+  },
+  {
+   "brand": "Sophie Clima",
+   "name": "Pink Peonies",
+   "url": "https://go.shopmy.us/p-96130877",
+   "gallery_img": "sophie-clima--pink-peonies",
+   "matched": false
+  },
+  {
+   "brand": "Sophie Clima",
+   "name": "Preppy Monkeys",
+   "url": "https://go.shopmy.us/p-96122750",
+   "gallery_img": "sophie-clima--preppy-monkeys",
+   "matched": false
+  },
+  {
+   "brand": "Sophie Clima",
+   "name": "Whimsical Chinoiserie Meeting in the Pavilion",
+   "url": "https://go.shopmy.us/p-96131839",
+   "gallery_img": "sophie-clima--whimsical-chinoiserie-meeting-in-the-pavilion",
+   "matched": false
+  }
+ ],
+ "flags": [
+  {
+   "type": "fuzzy album name (also in FYM list, so matched either way)",
+   "brand": "Mahj & Moon",
+   "mat": "Blue Floral Bird American",
+   "via": "album page: osler [name fuzzy:bluefloralbird]"
+  },
+  {
+   "type": "fuzzy album name match only",
+   "brand": "Mahj & Moon",
+   "mat": "Citrus Chinoiserie",
+   "via": "album page: solara [name fuzzy:pinkcitruschinoiserie]"
+  },
+  {
+   "type": "fuzzy album name match only",
+   "brand": "Mahj & Moon",
+   "mat": "Equestrian Estate",
+   "via": "album page: osler [name fuzzy:equestrian]"
+  },
+  {
+   "type": "fuzzy album name (also in FYM list, so matched either way)",
+   "brand": "Mahj & Moon",
+   "mat": "Retro Waves – Orange",
+   "via": "album page: papaya-spritz [name fuzzy:retrowaves]"
+  },
+  {
+   "type": "fuzzy album name match only",
+   "brand": "Mahj & Moon",
+   "mat": "Retro Waves – Pink & Aqua",
+   "via": "album page: papaya-spritz [name fuzzy:retrowaves]"
+  },
+  {
+   "type": "fuzzy album name match only",
+   "brand": "Mahj & Moon",
+   "mat": "Retro Waves – Purple",
+   "via": "album page: papaya-spritz [name fuzzy:retrowaves]"
+  },
+  {
+   "type": "fuzzy album name (also in FYM list, so matched either way)",
+   "brand": "Sunday Mahjong",
+   "mat": "Bold Blooms Premium",
+   "via": "album page: sunday-tile-set [name fuzzy:boldblooms]"
+  },
+  {
+   "type": "fuzzy album name (also in FYM list, so matched either way)",
+   "brand": "Sunday Mahjong",
+   "mat": "Coastal Grandma Premium",
+   "via": "album page: sunday-tile-set [name fuzzy:coastalgrandma]"
+  },
+  {
+   "type": "fuzzy album name (also in FYM list, so matched either way)",
+   "brand": "Sunday Mahjong",
+   "mat": "Festive Plaid Premium",
+   "via": "album page: cypress-forest, heritage-2-0, jade, malachite, nantucket, sierra [name fuzzy:festiveplaid]"
+  },
+  {
+   "type": "fuzzy album name (also in FYM list, so matched either way)",
+   "brand": "Sunday Mahjong",
+   "mat": "Gaylord Premium",
+   "via": "album page: sunday-tile-set, willow [name fuzzy:gaylord]"
+  },
+  {
+   "type": "fuzzy album name (also in FYM list, so matched either way)",
+   "brand": "Sunday Mahjong",
+   "mat": "Golden Gingham Premium",
+   "via": "album page: drake, heritage, heritage-2-0, sunday-tile-set, willow [name fuzzy:goldengingham]"
+  },
+  {
+   "type": "fuzzy album name (also in FYM list, so matched either way)",
+   "brand": "Sunday Mahjong",
+   "mat": "Plum Panda Premium",
+   "via": "album page: sunday-tile-set [name fuzzy:plumpanda]"
+  },
+  {
+   "type": "fuzzy album name (also in FYM list, so matched either way)",
+   "brand": "Sunday Mahjong",
+   "mat": "Retro Plaid Premium",
+   "via": "album page: sunday-tile-set [name fuzzy:retroplaid]"
+  },
+  {
+   "type": "fuzzy album name (also in FYM list, so matched either way)",
+   "brand": "Sunday Mahjong",
+   "mat": "Spring Blooms Premium",
+   "via": "album page: sunday-tile-set [name fuzzy:springblooms]"
+  },
+  {
+   "type": "fuzzy album name (also in FYM list, so matched either way)",
+   "brand": "Sunday Mahjong",
+   "mat": "Sunday Premium",
+   "via": "album page: sunday-tile-set [name fuzzy:sunday]"
+  },
+  {
+   "type": "brand name variants",
+   "detail": "Album pages spell 'Ozark Mah Jongg' and 'Ozark Mahjongg'; 'Mahj and Moon' vs 'Mahj & Moon'; 'Mac Miller' vs 'Mac + Miller Mahjong'; 'Virora' vs 'Virora Mahjong'; 'Mahjong Row & Co' vs 'Mahjong Row & Co.'; discount page says 'The Royal Mahjong Society', FYM/gallery 'Royal Mahjong Society'. Normalized for this audit."
+  },
+  {
+   "type": "collab",
+   "detail": "Four Winds Social collabs: 'FWS x Mahj Mood' (Beyond the Ribbon, Rally in Pink, Eloise; Mahj Mood is a partner and sells them) and 'FWS x 225Mahjong' (Fleur the Win, Purple Reign; 225Mahjong unknown status). Counted under Four Winds Social here."
+  },
+  {
+   "type": "etsy shops",
+   "detail": "Betty June & Jeannette, Sophie Clima and the brand 'Etsy' are Etsy shops linked via ShopMy (6% on Etsy). Kept as ShopMy-affiliated."
+  },
+  {
+   "type": "partner mats with pa=false",
+   "detail": "FYM marks some partner-brand mats pa=false (e.g. 26 Oh My Mahjong, 7 Tigre de Tartan, Mahj & Vine 2, Splash of Color 3). Brand is a partner on the live codes page, so they are out of scope here, but the pa flag is not a reliable brand-level partner signal."
+  },
+  {
+   "type": "partners without mats",
+   "detail": "Partners on the codes page with no mats in gallery/FYM: Mini Mahjer, Yellow Mountain Imports, Mahjong Co., I Love Mahj, The Mahjong Press (not mat brands or no mats loaded)."
+  },
+  {
+   "type": "gallery-only brands",
+   "detail": "Betty June & Jeannette, Sophie Clima, Tala Mahj and Etsy appear in the gallery but not in FYM."
+  }
+ ],
+ "totals": {
+  "gallery_count": 203,
+  "fym_visible": 177,
+  "matched_count": 58,
+  "unmatched_count": 166,
+  "nonpartner_brands": 29,
+  "unique_nonpartner_mats": 224,
+  "shopmy_affiliated": 29,
+  "would_remove_if_approved": {
+   "mats": 126,
+   "gallery_rows": 110,
+   "fym_visible": 119,
+   "excludes": "Tala Mahj (11, pending ShopMy decision), ShopMy rows, Sunday Mahjong, allowed Moxie mats"
+  }
+ }
+}
