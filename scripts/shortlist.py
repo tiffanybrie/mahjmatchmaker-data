@@ -29,6 +29,10 @@ _HID={k for k,v in _LD.items() if isinstance(v,dict) and v.get('status')=='hidde
 def _key(x):
     m=_re.match(r'https?://(?:www\.)?([^/]+)/products/([^/?#]+)',x['u']); return m and m.group(1)+'/'+m.group(2)
 _BAD=_re.compile(r'solo|practice|travel|mini\b|desk mat|round',_re.I)
+_LIVE=set(json.load(open(ROOT+'/catalog/fym_live_keys.json'))['keys']); _LIVE|={k.replace('www.','') for k in _LIVE}
+# Oct 20 (Tiffany: a far-away table shot of a Splash of Color mat showed up): only mats already in the live
+# Find Your Mat-ch build, whose photos were checked, can be suggested.
+mats=[x for x in mats if (_key(x) or '').replace('www.','') in _LIVE]
 mats=[x for x in mats if _key(x) not in _HID and ('www.'+(_key(x) or '')) not in _HID and not _BAD.search(x['t'])]
 def th(x):
     h=hashlib.md5(x['u'].encode()).hexdigest()[:12];p=f'{TH}/{h}.jpg'

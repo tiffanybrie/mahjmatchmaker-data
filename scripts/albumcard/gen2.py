@@ -82,7 +82,7 @@ for c in spec['cards']:
             if l in dl or n in [x['name'] for x in chart] or n not in RK.BBHEX: continue
             chart.append({'name': n, 'hex': RK.BBHEX[n], 'light': lum(RK.BBHEX[n]) > 185})
     data = {'title': c['title'], 'col': c['col'], 'mat': c.get('mat') or MAT, 'tile': (uri(R + c['tile_file'], 'PNG', maxs=900) if (c.get('tile_mode') == 'loose' or c['tile_file'] in LOOSE_FILES) else uri(R + c['tile_file'], maxs=900)) if not c['tile_file'].startswith('data:') else c['tile_file'], 'loose': c.get('tile_mode') == 'loose' or c['tile_file'] in LOOSE_FILES,
-            'racks': drawn, 'bb': chart[:3], 'mr': other[:2], 'bblogo': BBLOGO, 'navy': NAVY,
+            'racks': drawn, 'bb': chart[:3], 'mr': other[:3 if not chart else 2], 'bblogo': BBLOGO, 'navy': NAVY,
             'code': c.get('code', spec.get('code', '10% OFF  USE CODE : MAHJMATCH')), 'hol': c.get('hol', False), 'flame': c.get('flame'),
             'tlogo': tlogo(c.get('tile_brand', spec.get('tile_brand', 'Oh My Mahjong')))}
     hf = f"/tmp/cards2/{c['slug']}.html"; open(hf, 'w').write(tpl.replace('__DATA__', json.dumps(data)))
