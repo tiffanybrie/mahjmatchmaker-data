@@ -37,7 +37,8 @@ def btn(d, color, size, inner, fill='none', stroke=5, bg='#fff'):
     return (f'<div style="width:{size}px;height:{size}px;border-radius:50%;background:{bg};display:flex;align-items:center;justify-content:center;'
             f'box-shadow:0 10px 24px rgba(5,40,90,.16),0 2px 6px rgba(5,40,90,.10)">{svg(d, color, inner, stroke, fill)}</div>')
 
-pills = ''.join(f'<span class="pill">{t}</span>' for t in P['pills'])
+pills = ''.join(f'<span class="pill">{t}</span>' for t in P['pills'])  # Oct 20: Tinder labels these "Interests"
+PIN = 'M24 44 C24 44 10 29 10 19 C10 11 16 5 24 5 C32 5 38 11 38 19 C38 29 24 44 24 44 Z M24 24 A5 5 0 1 0 24 14 A5 5 0 1 0 24 24 Z'
 basics = ''.join(f'<span class="basic"><span class="dot" style="background:{c}"></span>{t}</span>' for c, t in P['basics'])
 
 HTML = f"""<!doctype html><html><head><meta charset=utf8><style>
@@ -57,15 +58,17 @@ html,body{{width:1080px;height:1920px;overflow:hidden;background:var(--cream);co
 .bars{{position:absolute;left:24px;right:24px;top:22px;display:flex;gap:10px}}
 .bars i{{flex:1;height:8px;border-radius:4px;background:rgba(255,255,255,.5)}}
 .bars i:first-child{{background:#fff}}
-.shade{{position:absolute;left:0;right:0;bottom:0;height:420px;background:linear-gradient(to bottom,rgba(40,14,4,0),rgba(40,14,4,.82))}}
-.name{{position:absolute;left:44px;bottom:150px;font-family:Capra;font-size:96px;color:#fff;line-height:1;display:flex;align-items:center;gap:20px}}
+.shade{{position:absolute;left:0;right:0;bottom:0;height:500px;background:linear-gradient(to bottom,rgba(40,14,4,0),rgba(40,14,4,.82))}}
+.name{{position:absolute;left:44px;bottom:226px;font-family:Capra;font-size:96px;color:#fff;line-height:1;display:flex;align-items:center;gap:20px}}
 .check{{width:62px;height:62px;border-radius:50%;background:#3d8fe0;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 5px #fff}}
-.meta{{position:absolute;left:46px;bottom:92px;font:600 34px Bit;color:#fff;display:flex;align-items:center;gap:14px}}
+.meta{{position:absolute;left:46px;bottom:178px;font:600 34px Bit;color:#fff;display:flex;align-items:center;gap:14px}}
 .meta .g{{width:20px;height:20px;border-radius:50%;background:#5fd36b;box-shadow:0 0 0 4px rgba(95,211,107,.35)}}
 .meta .b{{font-weight:400;opacity:.9}}
+.loc{{position:absolute;left:44px;bottom:130px;font:400 32px Bit;color:#fff;display:flex;align-items:center;gap:12px;opacity:.95}}
 .info{{position:absolute;right:40px;bottom:96px;width:66px;height:66px;border-radius:50%;border:4px solid #fff;display:flex;align-items:center;justify-content:center}}
-.pillrow{{position:absolute;left:44px;right:44px;bottom:26px;display:flex;gap:12px;flex-wrap:nowrap}}
-.pill{{font:600 25px Bit;color:#fff;border:2.5px solid rgba(255,255,255,.85);border-radius:999px;padding:8px 20px;white-space:nowrap;background:rgba(255,255,255,.12)}}
+.pillrow{{position:absolute;left:44px;right:44px;bottom:24px;display:flex;gap:10px;flex-wrap:nowrap;align-items:center}}
+.ilab{{position:absolute;left:44px;bottom:80px;font:600 32px Bit;color:#fff;display:flex;align-items:center;gap:12px}}
+.pill{{font:600 23px Bit;color:#fff;border:2.5px solid rgba(255,255,255,.85);border-radius:999px;padding:8px 20px;white-space:nowrap;background:rgba(255,255,255,.12)}}
 .stamp{{position:absolute;left:64px;top:110px;transform:rotate(-12deg);border:9px solid #3fae5a;color:#3fae5a;font:700 104px Bit;letter-spacing:.06em;
   padding:0 26px;border-radius:18px;background:rgba(255,255,255,.80)}}
 .body{{position:absolute;left:44px;right:44px;top:884px}}
@@ -88,8 +91,10 @@ html,body{{width:1080px;height:1920px;overflow:hidden;background:var(--cream);co
  <div class="bars">{"<i></i>" * 7}</div>
  <div class="shade"></div>
  <div class="name">{P['name']}<span class="check">{svg('M13 25 L21 33 L36 16', '#fff', 40, 6)}</span></div>
- <div class="meta"><span class="g"></span>{P['active']} <span class="b">· {P['brand']}</span></div>
+ <div class="meta"><span class="g"></span>{P['active']}</div>
+ <div class="loc">{svg(PIN, '#fff', 34, 0, '#fff')}Lives at {P['brand']}</div>
  <div class="info">{svg('M24 34 V14 M15 22 L24 13 L33 22', '#fff', 40, 5)}</div>
+ <div class="ilab">{'<svg width="34" height="34" viewBox="0 0 48 48"><rect x="4" y="4" width="17" height="17" rx="4" fill="#fff"/><circle cx="35.5" cy="12.5" r="8.5" fill="#fff"/><path d="M12.5 27 L21 43 H4 Z" fill="#fff"/><path d="M35.5 44 C27 37 26 33 26 30.5 C26 27.5 28.5 26 30.5 26 C32.5 26 34 27 35.5 29 C37 27 38.5 26 40.5 26 C42.5 26 45 27.5 45 30.5 C45 33 44 37 35.5 44 Z" fill="#fff"/></svg>'}Interests</div>
  <div class="pillrow">{pills}</div>
  </div>
  <div class="body">
@@ -115,7 +120,8 @@ async def main():
         hp = f'{TMP}/profile-d.html'; open(hp, 'w').write(HTML)
         await pg.goto('file://' + hp); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready')
         await pg.evaluate("document.querySelectorAll('.a').forEach(e=>{let s=43;while(e.scrollWidth>e.clientWidth&&s>30){s--;e.style.fontSize=s+'px'}})")
-        png = f'{TMP}/profile-d@2x.png'; await pg.screenshot(path=png); await b.close()
+        png = f'{TMP}/profile-d@2x.png'; await pg.screenshot(path=png)
+        await pg.locator('.card').screenshot(path=OUT.replace('-story.jpg', '-card@2x.png')); await b.close()
     im = Image.open(png).convert('RGB').resize((1080, 1920), Image.LANCZOS); im.save(OUT, quality=93, optimize=True)
     im.save(OUT.replace('profile-d-story', 'profile-c-story'), quality=93, optimize=True)  # same file under the old name other scripts use
 
