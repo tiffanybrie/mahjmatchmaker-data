@@ -1,0 +1,27 @@
+{
+ "_note": "Jasmine + Chinoiserie Songbird (Oct 20)",
+ "mat_file": "assets/mats/jasmine-oct20/chinoiserie-songbird.jpg",
+ "mat_crop": [
+  135,
+  245,
+  1930,
+  1945
+ ],
+ "mat_key": "mahj-and-vine-chinoiserie-songbird",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "jasmine-mahj-and-vine-chinoiserie-songbird",
+   "set": "jasmine",
+   "title": "Jasmine + Songbird",
+   "col": "#36a272",
+   "tile_file": "assets/tiles/album/jasmine.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Hot Pink"
+   ],
+   "file": "jasmine-mahjong-tiles-mahj-and-vine-chinoiserie-songbird-mat.jpg"
+  }
+ ]
+}

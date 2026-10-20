@@ -1,0 +1,27 @@
+{
+ "_note": "Jasmine + Palm Beach Pink Cabana Blue (Oct 20)",
+ "mat_file": "assets/mats/jasmine-oct20/palm-beach-pink-cabana-blue.jpg",
+ "mat_crop": [
+  0,
+  0,
+  1250,
+  1250
+ ],
+ "mat_key": "anders-ruff-palm-beach-pink-cabana-blue",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "jasmine-anders-ruff-palm-beach-pink-cabana-blue",
+   "set": "jasmine",
+   "title": "Jasmine + Palm Beach",
+   "col": "#36a272",
+   "tile_file": "assets/tiles/album/jasmine.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Hot Pink"
+   ],
+   "file": "jasmine-mahjong-tiles-anders-ruff-palm-beach-pink-cabana-blue-mat.jpg"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "_note": "Jasmine + Liliora (Oct 20)",
+ "mat_file": "assets/mats/jasmine-oct20/liliora.jpg",
+ "mat_crop": [
+  9,
+  79,
+  1279,
+  1567
+ ],
+ "mat_key": "virora-mahjong-liliora",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "jasmine-virora-mahjong-liliora",
+   "set": "jasmine",
+   "title": "Jasmine + Liliora",
+   "col": "#36a272",
+   "tile_file": "assets/tiles/album/jasmine.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Hot Pink"
+   ],
+   "file": "jasmine-mahjong-tiles-virora-mahjong-liliora-mat.jpg"
+  }
+ ]
+}
