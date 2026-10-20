@@ -1,5 +1,5 @@
 {
- "_note": "Kerry mat (BettyJuneJeannette, Etsy) match cards, Oct 20 2am. Tiffany's picks: Pearlescent, Jasmine, Moonlight,",
+ "_note": "Kerry mat (BettyJuneJeannette, Etsy) match cards, Oct 20 2am. Tiffany picks: Pearlescent (Jasmine dropped Oct 20: greens clash), Moonlight,",
  "mat_file": "assets/mats/etsy/bettyjunejeannette/kerry-2.jpg",
  "mat_crop": [
   181,
@@ -27,22 +27,9 @@
    "file": "pearlescent-mahjong-tiles-bettyjunejeannette-kerry-mat.jpg"
   },
   {
-   "slug": "jasmine-kerry",
-   "set": "jasmine",
-   "order": 2,
-   "title": "Jasmine + Kerry",
-   "col": "#36a272",
-   "tile_file": "assets/tiles/album/jasmine.jpg",
-   "tilefit": "cover",
-   "racks": [
-    "Bird & Bamboo Periwinkle Blue"
-   ],
-   "file": "jasmine-mahjong-tiles-bettyjunejeannette-kerry-mat.jpg"
-  },
-  {
    "slug": "moonlight-kerry",
    "set": "moonlight",
-   "order": 3,
+   "order": 2,
    "title": "Moonlight + Kerry",
    "col": "#5082d0",
    "tile_file": "assets/tiles/album/moonlight.jpg",
@@ -57,7 +44,7 @@
   {
    "slug": "la-fete-kerry",
    "set": "la-fete",
-   "order": 4,
+   "order": 3,
    "title": "La Fete + Kerry",
    "col": "#e97695",
    "tile_file": "assets/tiles/album/la-fete.jpg",
@@ -72,7 +59,7 @@
   {
    "slug": "willow-kerry",
    "set": "willow",
-   "order": 5,
+   "order": 4,
    "title": "Willow + Kerry",
    "col": "#6f8d5d",
    "tile_file": "assets/tiles/album/willow.jpg",
@@ -87,7 +74,7 @@
   {
    "slug": "talulah-kerry",
    "set": "talulah",
-   "order": 6,
+   "order": 5,
    "title": "Talulah + Kerry",
    "col": "#18968b",
    "tile_file": "assets/tiles/album/talulah.jpg",
@@ -102,7 +89,7 @@
   {
    "slug": "coquette-kerry",
    "set": "coquette",
-   "order": 7,
+   "order": 6,
    "title": "Coquette + Kerry",
    "col": "#d57198",
    "tile_file": "assets/tiles/album/coquette.jpg",

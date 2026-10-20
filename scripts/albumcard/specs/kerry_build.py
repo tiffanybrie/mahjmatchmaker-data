@@ -1,4 +1,4 @@
-"""Kerry mat (BettyJuneJeannette, Etsy) match cards, Oct 20 2am. Tiffany's picks: Pearlescent, Jasmine, Moonlight,
+"""Kerry mat (BettyJuneJeannette, Etsy) match cards, Oct 20 2am. Tiffany picks: Pearlescent (Jasmine dropped Oct 20: greens clash), Moonlight,
 La Fete, Willow, Talulah + Coquette. Mat racks (Tiffany): Miss Mahjong Scalloped Iridescent Opal, a clear scallop
 (brand TBD, no photo yet), B&B Ballet Pink. Kerry has no affiliate yet -> footer SHOP THE MATCH.
 Run: python3 scripts/albumcard/specs/kerry_build.py && python3 scripts/albumcard/gen2.py scripts/albumcard/specs/kerry.json assets/cards/kerry"""
@@ -11,7 +11,7 @@ MR['kerry'] = {'mat': 'BettyJuneJeannette The Kerry', 'racks': ['Bird & Bamboo B
                'files': ['assets/mats/etsy/bettyjunejeannette/kerry-2.jpg'], 'approved': '2026-10-20',
                '_note': 'Tiffany Oct 20 2am: MMSIO at least, probably a clear scallop (which brand? no photo yet), B&B Ballet Pink.'}
 json.dump(MR, open(R + 'config/mat-racks-picks.json', 'w'), indent=1, ensure_ascii=False)
-SETS = [('pearlescent', 'Pearlescent'), ('jasmine', 'Jasmine'), ('moonlight', 'Moonlight'), ('la-fete', 'La Fete'),
+SETS = [('pearlescent', 'Pearlescent'), ('moonlight', 'Moonlight'), ('la-fete', 'La Fete'),
         ('willow', 'Willow'), ('talulah', 'Talulah'), ('coquette', 'Coquette')]
 cards = []
 for i, (s, n) in enumerate(SETS, 1):
