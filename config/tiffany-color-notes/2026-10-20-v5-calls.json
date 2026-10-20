@@ -119,6 +119,27 @@
     "red"
    ],
    "note": "Relayed as Bam! Let's Mahjong 'Birdsong - Green Floral American' = Green, also Blue (deep blue), also Red (red border). Photo check: Bam! Birdsong has a green gingham border and no red border; Birdsong Mahjong Heaven Scent has the deep blue middle + red frame line, so the call is applied to Heaven Scent (per the coordinator's instruction)."
+  },
+  {
+   "brand": "Oh My Mahjong",
+   "name": "Astor",
+   "img": "oh-my-mahjong--astor",
+   "primary": "blue",
+   "also": [
+    "purple",
+    "dark"
+   ],
+   "note": "(she said 'Aster'; OMM blue floral on navy, not Lucky Daughters Astor Place) Blue primary, also Purple (indigo/purple blues), Dark & Moody kept; accents Yellow (golden) + Orange & Peach (peach + rust). Not added to Multicolor Florals: by eye it's a blue-dominant floral, not a multicolor one."
+  },
+  {
+   "brand": "Oh My Mahjong",
+   "name": "Chantilly",
+   "img": "oh-my-mahjong--chantilly",
+   "primary": "purple",
+   "also": [
+    "blue"
+   ],
+   "note": "Purple (lavender) primary, also Blue, accent Green (light green), mood Pastels."
   }
  ],
  "mood_calls": [
@@ -140,6 +161,13 @@
    "brand": "Amanda Toppe",
    "name": "Limelight",
    "img": "amanda-toppe--limelight",
+   "mood": "pastel",
+   "note": "her call: Pastels"
+  },
+  {
+   "brand": "Oh My Mahjong",
+   "name": "Chantilly",
+   "img": "oh-my-mahjong--chantilly",
    "mood": "pastel",
    "note": "her call: Pastels"
   }
@@ -202,6 +230,24 @@
    "green",
    "blue",
    "red"
+  ],
+  "oh-my-mahjong--astor": [
+   "blue",
+   "purple",
+   "dark"
+  ],
+  "oh-my-mahjong--chantilly": [
+   "purple",
+   "blue"
+  ]
+ },
+ "accent_calls": {
+  "oh-my-mahjong--astor": [
+   "yellow",
+   "orange"
+  ],
+  "oh-my-mahjong--chantilly": [
+   "green"
   ]
  }
 }

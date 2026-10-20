@@ -284,10 +284,13 @@
   "amahj--blue-citron-lilac-mahjong-game-mat",
   "mahj-moon--tropical-hibiscus",
   "amanda-toppe--limelight",
+  "birdsong-mahjong--heaven-scent",
   "mahj-moon--blue-tropical-palm",
   "mahj-moon--scalloped-tropical-palm",
   "sunday-mahjong--plum-panda-premium",
   "sunday-mahjong--sunday-premium",
+  "oh-my-mahjong--astor",
+  "oh-my-mahjong--chantilly",
   "oh-my-mahjong--sedona",
   "oh-my-mahjong--year-of-the-horse",
   "virora-mahjong--petalwing"
@@ -494,23 +497,23 @@
   },
   "red": {
    "primary": 21,
-   "also": 27,
+   "also": 28,
    "accent": 19
   },
   "orange": {
    "primary": 24,
    "also": 27,
-   "accent": 37
+   "accent": 38
   },
   "yellow": {
    "primary": 17,
    "also": 8,
-   "accent": 21
+   "accent": 22
   },
   "green": {
    "primary": 105,
    "also": 24,
-   "accent": 144
+   "accent": 145
   },
   "teal": {
    "primary": 46,
@@ -518,13 +521,13 @@
    "accent": 49
   },
   "blue": {
-   "primary": 150,
-   "also": 26,
+   "primary": 149,
+   "also": 27,
    "accent": 104
   },
   "purple": {
-   "primary": 44,
-   "also": 10,
+   "primary": 45,
+   "also": 11,
    "accent": 16
   },
   "neutral": {
@@ -585,13 +588,13 @@
  },
  "section_counts_active": {
   "pink": 283,
-  "red": 67,
-  "orange": 88,
-  "yellow": 46,
-  "green": 273,
+  "red": 68,
+  "orange": 89,
+  "yellow": 47,
+  "green": 274,
   "teal": 102,
   "blue": 280,
-  "purple": 70,
+  "purple": 72,
   "neutral": 141,
   "earthy": 174,
   "dark": 101,
@@ -607,13 +610,13 @@
  },
  "section_counts_if_retired_shown": {
   "pink": 298,
-  "red": 70,
-  "orange": 91,
-  "yellow": 49,
-  "green": 286,
+  "red": 71,
+  "orange": 92,
+  "yellow": 50,
+  "green": 287,
   "teal": 108,
   "blue": 291,
-  "purple": 73,
+  "purple": 75,
   "neutral": 146,
   "earthy": 178,
   "dark": 103,
@@ -1493,6 +1496,35 @@
    [
     "blue",
     "purple"
+   ]
+  ],
+  [
+   "Birdsong Mahjong",
+   "Heaven Scent",
+   "Heaven Scent",
+   "green",
+   [
+    "blue",
+    "red"
+   ]
+  ],
+  [
+   "Oh My Mahjong",
+   "Astor",
+   "Astor",
+   "blue",
+   [
+    "purple",
+    "dark"
+   ]
+  ],
+  [
+   "Oh My Mahjong",
+   "Chantilly",
+   "Chantilly",
+   "purple",
+   [
+    "blue"
    ]
   ]
  ],

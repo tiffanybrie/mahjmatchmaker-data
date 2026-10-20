@@ -567,8 +567,10 @@
    "src": "claude-look",
    "by": "tiffany-chat-2026-10-20",
    "also": [
-    "blue"
-   ]
+    "blue",
+    "red"
+   ],
+   "note": "Relayed as Bam! Let's Mahjong 'Birdsong - Green Floral American' = Green, also Blue (deep blue), also Red (red border). Photo check: Bam! Birdsong has a green gingham border and no red border; Birdsong Mahjong Heaven Scent has the deep blue middle + red frame line, so the call is applied to Heaven Scent (per the coordinator's instruction)."
   },
   "brittmillsdesign.com/crimson-harvest-neoprene-mahjong-mat": {
    "primary": "green",
@@ -1753,6 +1755,41 @@
     "pink"
    ],
    "note": "relayed as 'Aurora Mahjong Petalwing' (the only Petalwing is Virora Mahjong's): Blue primary, also Pink (pastel pink), mood Pastels."
+  },
+  "www.ohmymahjong.com/astor-mat-w-tube": {
+   "primary": "blue",
+   "secondary": [],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "oh-my-mahjong--astor",
+   "light": 0.351,
+   "chroma": 0.545,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "purple",
+    "dark"
+   ],
+   "note": "(she said 'Aster'; OMM blue floral on navy, not Lucky Daughters Astor Place) Blue primary, also Purple (indigo/purple blues), Dark & Moody kept; accents Yellow (golden) + Orange & Peach (peach + rust). Not added to Multicolor Florals: by eye it's a blue-dominant floral, not a multicolor one."
+  },
+  "www.ohmymahjong.com/chantilly-mat": {
+   "primary": "purple",
+   "secondary": [
+    "purple"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "oh-my-mahjong--chantilly",
+   "light": 0.669,
+   "chroma": 0.337,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "blue"
+   ],
+   "note": "Purple (lavender) primary, also Blue, accent Green (light green), mood Pastels."
   }
  }
 }

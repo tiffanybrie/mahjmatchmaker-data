@@ -414,6 +414,8 @@ for x in vis:
     if x['secs'] == ['holiday']:
         x['acc'] = []; continue  # holiday mats stay out of color sections
     x['acc'] = [a for a in ACC.get(x['img'], {}).get('accents', []) if a in ACOL and a not in x['secs'] and a not in REMOVED.get(x['img'], [])]
+    for a in V5.get('accent_calls', {}).get(x['img'], []):  # Tiffany's own accent calls
+        if a not in x['secs'] and a not in x['acc']: x['acc'].append(a)
 order = {c: i for i, (c, _) in enumerate(COL)}
 # STANDING RULE (Tiffany, Oct 20): Mahjong Studios always sorts to the bottom of every section
 vis.sort(key=lambda x: (x['brand'] == 'Mahjong Studios', x['brand'].lower(), x['name'].lower()))
@@ -467,7 +469,7 @@ secs += '<section class="mmg-sec" data-c="retired"><h2 class="mmg-h">Retired mat
 JS = r"""(function(){var r=document.currentScript.parentNode,R=JSON.parse(r.querySelector('script[type="application/json"]').textContent),B='https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@__C__/assets/mats/gallery/',f='all',br='',hr=true;
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function card(x,i){var shop=x[3]?'<a class="mmg-shop" href="'+esc(x[3])+'" target="_blank" rel="sponsored noopener">Shop the mat</a>':(x[4]?'<span class="mmg-ret">Retired</span>':(x[7]?'<span class="mmg-watch">One to watch</span>':''));var img='<img src="'+B+x[0]+'.webp" alt="'+esc(x[2]+' '+x[1])+' mahjong mat" loading="lazy" decoding="async" width="640" height="640">';return '<li class="mmg-card" data-b="'+esc(x[2])+'" data-i="'+i+'"'+(x[4]?' data-r="1"':'')+'>'+(x[3]?'<a class="mmg-img" href="'+esc(x[3])+'" target="_blank" rel="sponsored noopener">'+img+'</a>':'<span class="mmg-img">'+img+'</span>')+'<div class="mmg-body"><span class="mmg-brand">'+esc(x[2])+'</span><span class="mmg-name">'+esc(x[1])+'</span>'+(x[6]?'<a class="mmg-code" href="'+esc(x[6])+'">'+esc(x[2])+' guide</a>':'')+shop+'</div></li>'}
-function has(x,c){return x[5].indexOf(c)>-1||x[8].indexOf(c)>-1}function tier(x,C){if(C.indexOf(x[5][0])>-1&&C.every(function(c){return x[5].indexOf(c)>-1}))return 0;return C.every(function(c){return x[5].indexOf(c)>-1})?1:2}
+function has(x,c){return x[5].indexOf(c)>-1||x[8].indexOf(c)>-1}function tier(x,C){if(C.indexOf(x[5][0])>-1&&C.every(function(c){return x[5].indexOf(c)>-1}))return 0;if(C.every(function(c){return x[5].indexOf(c)>-1})){var p=0;C.forEach(function(c){p=Math.max(p,x[5].indexOf(c))});return 1+Math.min(p-1,3)/10}return 2}
 r.querySelectorAll('.mmg-sec').forEach(function(s){var c=s.dataset.c,h='';var L=[];R.forEach(function(x,i){if(c==='retired'?x[4]:has(x,c))L.push(i)});L.sort(function(a,b){function k(i){var x=R[i];return(x[2]==='Mahjong Studios'?0.5:0)+(c==='retired'?0:tier(x,[c]))}return k(a)-k(b)||a-b});L.forEach(function(i){h+=card(R[i],i)});s.querySelector('.mmg-grid').innerHTML=h});
 var chips=r.querySelectorAll('.mmg-chip[data-f]'),tog=r.querySelector('.mmg-tog'),sel=r.querySelector('.mmg-brand-sel'),tot=r.querySelector('.mmg-total'),cmb=r.querySelector('.mmg-combo'),S=[],LB={};
 chips.forEach(function(x){LB[x.dataset.f]=x.textContent});
