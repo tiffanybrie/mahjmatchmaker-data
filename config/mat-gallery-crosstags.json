@@ -832,9 +832,14 @@
  },
  "remove_mats": {
   "by": "tiffany-chat-2026-10-20",
-  "note": "Permanently excluded from the Mat Gallery (Tiffany, Oct 20): not a partner, not matched anywhere. build_v5.py drops these before anything else so rebuilds/scrapes can't bring them back.",
+  "note": "Permanently excluded from the Mat Gallery (Tiffany, Oct 20): not a partner, not matched anywhere. build_v5.py drops these before anything else so rebuilds/scrapes can't bring them back. Mahjong Moxie (Oct 20): keep only Duck Camp (her album pick) and Heron Landing (she wants to match it); rest removed. RULE: non-partner brands only get mats Tiffany has matched or explicitly allowed. Allowed non-partners: Sunday Mahjong (whole line, personal favorite), Mahj Tile Haus (her matched mats, e.g. White Lotus), Mahjong Moxie Duck Camp + Heron Landing.",
   "imgs": [
-   "amore-mahjong--manor-garden"
+   "amore-mahjong--manor-garden",
+   "mahjong-moxie--bamboo-garden",
+   "mahjong-moxie--in-bloom",
+   "mahjong-moxie--magnolia-muse",
+   "mahjong-moxie--oyster-confetti",
+   "mahjong-moxie--tulip-tango"
   ],
   "brands": []
  }
