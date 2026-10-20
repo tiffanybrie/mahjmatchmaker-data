@@ -14,7 +14,8 @@ The Facebook group (facebook.com/groups/mahjmatchmaker, about 2,400 warm members
 ## Her group-post style
 **Lessons from the Oct 19 NEW ERA post (Tiffany rewrote mine):**
 - **The headline uses Facebook's Heading (H1) style**, always. How: the headline must be its own paragraph (press Enter after it, not just a line break), then type "# " at its start and Facebook turns that line into a heading. Check that only the headline became H1.
-- Headline in normal title case, never ALL CAPS. Her emojis on both sides, e.g. "📣💕The New Era of Mahj Matchmaker is Here! 📣💕 MUST READ!!"
+- Headline in normal title case, never ALL CAPS.
+- **Tag @everyone** on every announcement post: start the first body line with "@everyone " and pick the @everyone option from the mention list (it must turn into a mention, not plain text). Facebook limits how often admins can use it, so save it for real announcements. Her emojis on both sides, e.g. "📣💕The New Era of Mahj Matchmaker is Here! 📣💕 MUST READ!!"
 - Lead with the biggest news (the larger announcement), not the newest launch. A launch is a section, not the headline, unless the post is only about that launch.
 - One topic per post when there's a lot: album requests, partner brands and Find Your Match each get their own later post.
 - Her voice: "SUPER busy... dreaming and building", "friends!", "I told you I've been busy!!", "save some really exciting things for later this week".
