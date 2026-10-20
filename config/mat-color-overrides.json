@@ -586,6 +586,77 @@
     "pink"
    ]
   },
+  "brittmillsdesign.com/knox-neoprene-mahjong-mat": {
+   "primary": "green",
+   "secondary": [
+    "neutral"
+   ],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "britt-mills--knox",
+   "light": 0.255,
+   "chroma": 0.351,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "yellow"
+   ],
+   "note": "mustard/butterscotch"
+  },
+  "brittmillsdesign.com/legacy-britt-mills-mahjong-mat": {
+   "primary": "green",
+   "secondary": [
+    "brown",
+    "pink"
+   ],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "britt-mills--legacy",
+   "light": 0.204,
+   "chroma": 0.397,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "red"
+   ],
+   "note": "red stripe"
+  },
+  "brittmillsdesign.com/soiree-leatherette-mahjong-mat": {
+   "primary": "pink",
+   "secondary": [
+    "pink",
+    "blue"
+   ],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "britt-mills--soir-e-leatherette",
+   "light": 0.455,
+   "chroma": 0.377,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "peachy pink center"
+  },
+  "brittmillsdesign.com/willow-neoprene-mahjong-mat": {
+   "primary": "multi",
+   "secondary": [
+    "blue",
+    "pink",
+    "orange"
+   ],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "britt-mills--willow",
+   "light": 0.518,
+   "chroma": 0.431,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "floral": true,
+   "note": "Multicolor Florals"
+  },
   "peacelovemahjong.com/mahjong-mats-plaid-striped?v=52798578950436": {
    "primary": "purple",
    "secondary": [

@@ -23,6 +23,7 @@ man = json.load(open(os.path.join(HERE, 'manifest.json')))
 held = set(json.load(open(os.path.join(HERE, 'held-low-98.json'))))
 XT = json.load(open(P('config/mat-gallery-crosstags.json')))
 held -= set(XT['unhold']['imgs'])
+FLORALS, FLORALS_ONLY = set(XT.get('florals', [])), set(XT.get('florals_only', []))
 XALSO = {}
 for col_, imgs_ in XT['also'].items():
     for i_ in imgs_:
@@ -84,6 +85,8 @@ for c in notes:
         rec.setdefault('secondary', []); rec.setdefault('tone', 'blend'); rec.setdefault('src', 'claude-look')
         if c.get('also'):
             rec['also'] = c['also']
+        if c.get('floral'):
+            rec['floral'] = True
         if c.get('note'):
             rec['note'] = c['note']
         OV['mats'][k] = rec
@@ -230,7 +233,7 @@ for g in groups:
 # ---------- 5. sections ----------
 COL = [('pink', 'Pink'), ('red', 'Red'), ('orange', 'Orange & Peach'), ('yellow', 'Yellow & Mustard'), ('green', 'Green'), ('teal', 'Teal & Aqua'),
        ('blue', 'Blue'), ('purple', 'Purple & Lilac'), ('brown', 'Brown & Tan'), ('neutral', 'Neutral & Ivory'), ('bw', 'Black & White'),
-       ('dark', 'Dark & Moody'), ('holiday', 'Holiday'), ('multi', 'Multicolor')]
+       ('dark', 'Dark & Moody'), ('holiday', 'Holiday'), ('multi', 'Multicolor'), ('florals', 'Multicolor Florals')]
 SEC = {'gold': 'yellow', 'peach': 'orange', 'coral': 'orange', 'mustard': 'yellow'}
 VALID = {c for c, _ in COL}
 
@@ -246,7 +249,13 @@ def sections(x):
         a = SEC.get(a, a)
         if a in VALID and a not in out:
             out.append(a)
-    return [c for c in out if c in VALID] or [x['old']]
+    out = [c for c in out if c in VALID] or [x['old']]
+    if x['img'] in FLORALS_ONLY:
+        return ['florals']
+    if x['img'] in FLORALS or r.get('floral'):  # floral multis go to Multicolor Florals instead of Multicolor
+        out = [c for c in out if c != 'multi']
+        if 'florals' not in out: out.append('florals')
+    return out
 
 
 vis = [x for x in rows if x['img'] not in hidden]

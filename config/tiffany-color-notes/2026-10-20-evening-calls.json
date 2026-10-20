@@ -143,11 +143,43 @@
     "red",
     "pink"
    ]
+  },
+  {
+   "brand": "Britt Mills",
+   "name": "Knox",
+   "primary": "green",
+   "also": [
+    "yellow"
+   ],
+   "note": "mustard/butterscotch"
+  },
+  {
+   "brand": "Britt Mills",
+   "name": "Legacy",
+   "primary": "green",
+   "also": [
+    "red"
+   ],
+   "note": "red stripe"
+  },
+  {
+   "brand": "Britt Mills",
+   "name": "Soirée Leatherette",
+   "primary": "pink",
+   "note": "peachy pink center"
+  },
+  {
+   "brand": "Britt Mills",
+   "name": "Willow",
+   "primary": "multi",
+   "floral": true,
+   "note": "Multicolor Florals"
   }
  ],
  "rules": [
   "Peachy-pinks appear in both Pink and Orange & Peach",
   "Holiday mats never appear in color sections",
-  "STANDING: Mahjong Studios always sorts to the bottom of every section, every gallery"
+  "STANDING: Mahjong Studios always sorts to the bottom of every section, every gallery",
+  "NEW SECTION Multicolor Florals: multi-color floral designs go there instead of Multicolor; Multicolor keeps non-floral multis (geometric, stripes, abstract). A floral keeps a color tag only if strongly one color."
  ]
 }
