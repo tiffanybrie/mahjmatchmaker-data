@@ -3,7 +3,7 @@ Fonts: Caprasimo (display), Playfair Display italic (voice), Bitter (labels/body
 import json, os
 R = '/home/claude/mahjmatchmaker-data/'
 F = R + 'scripts/social/tileprofile/fonts/'
-NAVY = '#064587'; PINK = '#d6608c'; CREAM = '#f7eee4'; PAPER = '#fbf6ef'
+NAVY = '#054689'; PINK = '#c8325f'; CREAM = '#f7eee4'; PAPER = '#fbf6ef'
 
 def css(w, h, accent):
     return f"""

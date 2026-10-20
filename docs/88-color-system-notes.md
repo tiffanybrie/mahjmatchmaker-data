@@ -34,3 +34,6 @@ Tiffany's notes, Oct 19. Ideas to build on, not rules yet.
 
 ## Wording rule: "bird bam," never "1 Bam" (Tiffany, Oct 19)
 - The 1 Bam tile is called the **bird bam** in all copy and graphics.
+
+## One navy, one pink (Tiffany caught color shift, Oct 19)
+- Every graphic uses brand navy **#054689** for headers and the deep pink **#c8325f** for small caps labels. No other navies (#064587, #062a55 were removed from the carousel, color wheel and favorites scripts).
