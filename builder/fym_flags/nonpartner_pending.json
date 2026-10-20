@@ -1,0 +1,17 @@
+{
+ "_about": "Non-partner brands / mats awaiting Tiffany's brand-by-brand decision (seeded Oct 20 from site/livepatch/matgallery/nonpartner_audit_oct20.json: brands with unmatched, non-ShopMy mats; Mahjong Moxie left out because she already decided it). builder/fym_gate.py [9] prints these as WARNINGS (does not fail). When she decides a brand, remove it here and either hide its unmatched mats (flags + locks) or add it to nonpartner_allow.json.",
+ "brands": {
+  "Four Winds Social": "14 unmatched non-ShopMy mats; audit suggestion: remove-brand",
+  "Hutch & Nook": "7 unmatched non-ShopMy mats; audit suggestion: keep-matched-only",
+  "Luxe Mahjong": "5 unmatched non-ShopMy mats; audit suggestion: keep-matched-only",
+  "Mahj & Moon": "78 unmatched non-ShopMy mats; audit suggestion: keep-matched-only",
+  "Mahj House Rules": "1 unmatched non-ShopMy mats; audit suggestion: remove-brand",
+  "Mahj Tile Haus": "1 unmatched non-ShopMy mats; audit suggestion: keep-matched-only",
+  "Maison Mahj": "11 unmatched non-ShopMy mats; audit suggestion: keep-matched-only",
+  "Tala Mahj": "11 unmatched non-ShopMy mats; audit suggestion: keep-all? (on ShopMy at 15% per her Oct 20 note, but gallery links go direct to talamahj.com: swap to ShopMy links or remove)",
+  "The Mahjong Line": "3 unmatched non-ShopMy mats; audit suggestion: remove-brand"
+ },
+ "mats": {
+  "www.etsy.com/listing/4493549326/the-kerry-mahjong-mat-watercolor-pink": "Betty June & Jeannette 'The Kerry' (a favorite of Tiffany's): links straight to Etsy, no ShopMy link found yet; swap to a ShopMy link or decide"
+ }
+}

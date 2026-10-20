@@ -8,6 +8,11 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
  5  colour-dot click selector bug (.dots [data-fam])
  6  locked values (builder/fym_flags/locks.json) unchanged
  7  misc: every T.full file exists, no relative shop URLs, no prototype email box, every <script src> exists
+ 8  colour chips (Oct 20 r3, multi-select approved): AND logic on mat-door chips + in-deck dots, tap again unselects, clear control,
+    zero results show a friendly message and never lock (chips stay rendered); mt tiers line up with mf; holiday mats out of single chips
+ 9  non-partner lockout (CLAUDE.md): a visible mat of a non-partner brand must be allowed (builder/fym_flags/nonpartner_allow.json: brand,
+    mat key, ShopMy link) or in an album / swipe-book set's match list; brands/mats in nonpartner_pending.json only WARN
+ 10 no discount-code claim for non-partner / ShopMy mats (pa false, dc empty)
 """
 import sys, os, json, re
 import numpy as np
@@ -100,6 +105,48 @@ if 'class="mailbox"' in UI or 'function mail(' in UI: F.append("[7] prototype em
 for src in re.findall(r'<script src="([^"]+)"', UI) + json.loads((re.search(r'window\.__LAZY=(\[[^\]]*\])', UI) or [None, '[]'])[1]):
     if not os.path.exists(os.path.join(B, src)): F.append(f"[7] script missing: {src}")
 
+# 8. colour chips: multi-select AND, never locks (Oct 20 round 3)
+def fn(name):
+    m = re.search(r'(?:function ' + name + r'\(|const ' + name + r'=).*?(?=\n(?:function |const |let |document\.|/\*)|\Z)', UI, re.S)
+    return m.group(0) if m else ''
+if 'C.every(c=>MTI(id,c)<9)' not in fn('HASC'): F.append("[8] HASC (AND over selected colours) missing")
+if 'HASC(id,C)' not in fn('matDeck'): F.append("[8] in-deck mat colour filter is not the multi-select AND filter")
+if 'f.fam.every(' not in fn('rackDeck'): F.append("[8] in-deck rack colour filter is not the multi-select AND filter")
+if 'HASC(id,C)' not in fn('doorMats') or 'CSORT(ids,C)' not in fn('doorMats'): F.append("[8] mat-door colour chips are not AND-filtered / tier-sorted")
+if 'CSORT(' not in fn('matDeck'): F.append("[8] in-deck colour filter does not sort primary > also > accent")
+if "f.fam=TOG(f.fam,b.dataset.fam)" not in UI or "S.dfams=TOG(S.dfams||[],b.dataset.dfam)" not in UI or 'C.includes(c)?C.filter(' not in fn('TOG'):
+    F.append("[8] colour chips do not toggle (tap again to unselect)")
+if 'data-dfam=""' not in UI or 'data-fam="" data-k=' not in UI or "[data-fclear]" not in UI: F.append("[8] clear / All colours control missing")
+if 'No mats with all of those yet' not in fn('NOAND') or 'data-fclear' not in fn('deck') or 'NOAND' not in fn('deck'):
+    F.append("[8] in-deck zero-result message (No mats with all of those yet) missing")
+if UI.count('class="dempty">${NOAND}') < 2: F.append("[8] mat-door zero-result message missing (grid + search reset)")
+if "filters('m')+" not in fn('renderMats'): F.append("[8] colour chips not rendered above the deck (filter could lock)")
+if "fam:''" in UI or 'S.dfam=' in UI: F.append("[8] single-colour filter state left over (fam:'' / S.dfam)")
+for k, o in M.items():
+    if len(o.get('mt') or []) != len(o.get('mf') or []): F.append(f"[8] mat {o['n']}: mt tiers {o.get('mt')} do not line up with mf {o.get('mf')}")
+    if o.get('hol') and o.get('mf') and not o.get('hid'): F.append(f"[8] holiday mat {o['n']} is in single-colour chips {o['mf']}")
+
+# 9. non-partner lockout (warn for pending brands, fail otherwise)
+NPA = json.load(open(REPO + 'builder/fym_flags/nonpartner_allow.json'))
+NPP = json.load(open(REPO + 'builder/fym_flags/nonpartner_pending.json'))
+nz = lambda s: re.sub(r'[^a-z0-9]', '', re.sub(r'^the\s+', '', (s or '').lower().replace('&', 'and')))
+PARTNERS = {nz(b) for b in NPA['partners']}
+matched = {x[0] for s in D['sets'] if (s.get('album') or s.get('sb')) and vis(s) for x in s['m']}
+W = {}
+for k, o in M.items():
+    if o.get('hid') or nz(o.get('bn')) in PARTNERS: continue
+    if o.get('bn') in NPA['brands'] or k in NPA['mats'] or o.get('u', '').startswith(NPA['shopmy_prefix']) or k in matched: continue
+    if o.get('bn') in NPP['brands'] or k in NPP['mats']: W.setdefault(o.get('bn'), []).append(o['n']); continue
+    F.append(f"[9] non-partner mat visible without Tiffany's OK: {o['n']} ({o.get('bn')}) {k}")
+# 10. no code claim on non-partner / ShopMy mats
+for k, o in M.items():
+    if o.get('hid'): continue
+    if (o.get('u', '').startswith(NPA['shopmy_prefix']) or nz(o.get('bn')) not in PARTNERS) and (o.get('pa') or o.get('dc')):
+        F.append(f"[10] non-partner / ShopMy mat {o['n']} ({o.get('bn')}) claims a partner code (pa={o.get('pa')}, dc={o.get('dc')!r})")
+
+if W:
+    print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
+    for b, v in sorted(W.items()): print(f"  {b} ({len(v)}): " + ', '.join(v[:8]) + (' ...' if len(v) > 8 else ''))
 if F:
     print(f"FYM GATE: FAIL ({len(F)} problems)")
     for f in F: print('  ' + f)
