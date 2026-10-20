@@ -12,6 +12,13 @@ The Facebook group (facebook.com/groups/mahjmatchmaker, about 2,400 warm members
 4. **The new Facebook Page** (https://www.facebook.com/profile.php?id=61595649176717, linked to Instagram) gets a follow-ask inside group posts. Don't invite her personal friends to it.
 
 ## Her group-post style
+**Lessons from the Oct 19 NEW ERA post (Tiffany rewrote mine):**
+- Headline in normal title case, never ALL CAPS. Her emojis on both sides, e.g. "📣💕The New Era of Mahj Matchmaker is Here! 📣💕 MUST READ!!"
+- Lead with the biggest news (the larger announcement), not the newest launch. A launch is a section, not the headline, unless the post is only about that launch.
+- One topic per post when there's a lot: album requests, partner brands and Find Your Match each get their own later post.
+- Her voice: "SUPER busy... dreaming and building", "friends!", "I told you I've been busy!!", "save some really exciting things for later this week".
+- Photos: group cover first, then every new album cover (eye-catching "whoa" carousel). Never let Facebook's link preview be the image.
+
 Use the `d-fbpublic` NEW ERA post as the model:
 - A headline with matching emojis on both sides (💕 ... 💕, 🧡💜💚 ... 💚💜🧡), in caps when it's news.
 - Opens with "Hey guys!" and a warm line. Says "y'all".
