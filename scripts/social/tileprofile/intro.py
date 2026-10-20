@@ -67,7 +67,8 @@ colors = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 135
 <img src="{WHEEL}" style="position:absolute;left:44px;top:800px;width:510px;height:510px">
 <div style="position:absolute;left:584px;top:880px;right:56px">
  <div class="caps" style="font-size:21px;color:var(--pink)">On the color wheel</div>
- <div style="font:400 30px/1.35 Bit;color:#2c3e63;margin-top:22px"><b style="font-weight:700;color:var(--navy)">1 &nbsp;Papaya</b><br>warm orange<div style="height:22px"></div><b style="font-weight:700;color:var(--navy)">2 &nbsp;Lavender</b><br>cool, blue-leaning<div style="height:22px"></div><b style="font-weight:700;color:var(--navy)">3 &nbsp;Light lime</b><br>soft yellow-green</div>
+ <div style="font:400 30px/1.35 Bit;color:#2c3e63;margin-top:22px"><b style="font-weight:700;color:var(--navy)">1 &nbsp;Papaya</b><br>bright, warm orange<div style="height:22px"></div><b style="font-weight:700;color:var(--navy)">2 &nbsp;Lavender</b><br>soft, cool, blue-leaning<div style="height:22px"></div><b style="font-weight:700;color:var(--navy)">3 &nbsp;Light lime</b><br>soft yellow-green</div>
+ <div style="margin-top:28px;font:italic 400 24px/1.35 PF;color:#5a6b85">Outer edge = bright.<br>Toward the center = soft and pastel.</div>
 </div>
 </div></body></html>"""
 # slide 3 "Her faces" (Tiffany, Oct 19 night): the brand's photo of the faces + ALL the color cards in one place
