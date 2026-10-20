@@ -18,11 +18,11 @@ CX, CY, CW, CH = 130, 22, 820, 1281          # card (960x1500 scaled .854)
 def page(n):
     bars = ''.join(f'<i style="background:{"#054689" if j == n else "#d6deea"}"></i>' for j in range(1, 8))
     if n == 1:
-        inner = f'<img src="{u(CARD)}" style="position:absolute;inset:0;width:100%;height:100%">'
+        inner = f'<img src="{u(CARD)}" style="position:absolute;inset:0;width:100%;height:100%"><div style="position:absolute;left:0;right:0;bottom:0;height:60px;background:#fff"></div>'
     else:
         src = Image.open(f'{SRC}/{n}.jpg'); cream = '#%02x%02x%02x' % src.convert('RGB').getpixel((8, 700))
         inner = (f'<div class="bars">{bars}</div>'
-                 f'<div class="panel" style="background:{cream}"><div class="crop" style="background-image:url({u(SRC + f"/{n}.jpg")})"></div></div>')
+                 f'<div class="panel" style="background:{cream}"><div class="crop" style="background-image:url({u(SRC + f"/{n}.jpg")})"></div><div style="position:absolute;left:0;right:0;top:0;height:48px;background:{cream}"></div></div>')
     return f"""<!doctype html><html><head><meta charset=utf8><style>
 @font-face{{font-family:Bit;font-weight:700;src:url('{F}/bitter-latin-700-normal.woff2')}}
 *{{box-sizing:border-box;margin:0;padding:0}}
@@ -36,14 +36,14 @@ html,body{{width:1080px;height:1350px;overflow:hidden;background:#f6e9df}}
 .sign{{position:absolute;left:0;right:0;bottom:70px;display:flex;flex-direction:column;align-items:center;gap:4px}}
 .sign img{{width:230px}}
 .sign span{{font:700 15px Bit;letter-spacing:.22em;text-transform:uppercase;color:#c8325f}}
-.btns{{position:absolute;left:0;right:0;top:{CY + CH - 52}px;display:flex;justify-content:center;align-items:center;gap:26px}}
+.btns{{position:absolute;left:0;right:0;top:{CY + CH - 52}px;display:flex;justify-content:center;align-items:center;gap:120px}}
 </style></head><body>
 <div style="position:absolute;right:-190px;top:-170px;width:650px;height:650px;border-radius:50%;background:#f9dccf"></div>
 <div style="position:absolute;left:-170px;bottom:-200px;width:530px;height:530px;border-radius:50%;background:#efdccd"></div>
 <div class="card">{inner}
  <div class="sign"><img src="{u(R + '/assets/brand/mahjmatchmaker-wordmark-notag.png')}"><span>Dating profiles for tile sets</span></div>
 </div>
-<div class="btns">{SP.btn(SP.BACK, '#e8a23a', 79, 38)}{SP.btn(SP.X, '#054689', 106, 48, stroke=6)}{SP.btn(SP.STAR, '#7d8fe0', 79, 40, fill='#7d8fe0', stroke=3)}{SP.btn(SP.HEART, '#fff', 106, 52, fill='#fff', stroke=2, bg='#f56c8c')}{SP.btn(SP.BOLT, '#a07ad8', 79, 40, fill='#a07ad8', stroke=3)}</div>
+<div class="btns">{SP.btn(SP.X, '#054689', 112, 50, stroke=6)}{SP.btn(SP.HEART, '#fff', 112, 54, fill='#fff', stroke=2, bg='#f56c8c')}</div>
 </body></html>"""
 async def main():
     async with async_playwright() as p:
