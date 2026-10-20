@@ -447,7 +447,9 @@
   "imgs": [
    "peace-love-mahjong--border-red",
    "peace-love-mahjong--cherry-bloom",
-   "sunday-mahjong--bold-blooms-premium"
+   "sunday-mahjong--bold-blooms-premium",
+   "oh-my-mahjong--peri-twinkle-retired",
+   "oh-my-mahjong--garden-party-retired"
   ]
  },
  "florals": [
@@ -828,5 +830,13 @@
  },
  "primary_fix_notes": {
   "amahj--blue-citron-lilac-mahjong-game-mat": "Tiffany Oct 20 (v5): not Teal & Aqua; Blue (pale blue middle), also Yellow + Purple"
+ },
+ "remove_mats": {
+  "by": "tiffany-chat-2026-10-20",
+  "note": "Permanently excluded from the Mat Gallery (Tiffany, Oct 20): not a partner, not matched anywhere. build_v5.py drops these before anything else so rebuilds/scrapes can't bring them back.",
+  "imgs": [
+   "amore-mahjong--manor-garden"
+  ],
+  "brands": []
  }
 }

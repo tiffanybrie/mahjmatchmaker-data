@@ -268,5 +268,11 @@
   "brand": "Middle & Main Mahjong",
   "flag": "no_flat_photo",
   "note": "quilt mat shot at an angle on a porch table with a lamp; store products.json (checked Oct 20) has no flat product photo"
+ },
+ "amore:manor-garden": {
+  "name": "Manor Garden",
+  "brand": "Amore Mahjong",
+  "flag": "duplicate",
+  "note": "REMOVED by Tiffany Oct 20: not matched anywhere, not a partner brand. Never re-add on refresh."
  }
 }

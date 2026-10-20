@@ -416,12 +416,12 @@ json.dump({'new53_added': added53, 'new53_hidden': hidden53, 'new53_sections': {
           open(os.path.join(HERE, 'v5_counts.json'), 'w'), indent=1, ensure_ascii=False)
 
 # ---------- HTML ----------
-CSS = open(os.path.join(HERE, 'style.css')).read() + '.mmg-chip.mmg-tog{border-style:dashed}\n.mmg-watch{margin-top:auto;align-self:flex-start;border:1.5px solid #9a8f86;color:#6f655d;font-size:.68em;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:10px}\n.mmg-chip.mmg-tog[aria-pressed="true"]{border-style:solid}\n'
+CSS = open(os.path.join(HERE, 'style.css')).read() + '.mmg-hint{font-size:.85em;color:#6f655d;margin:.2em 0 .6em}\n.mmg-combo .mmg-empty{display:none}\n.mmg-chip.mmg-tog{border-style:dashed}\n.mmg-watch{margin-top:auto;align-self:flex-start;border:1.5px solid #9a8f86;color:#6f655d;font-size:.68em;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:10px}\n.mmg-chip.mmg-tog[aria-pressed="true"]{border-style:solid}\n'
 # Image swaps (Tiffany Oct 20): use a clean flat photo when a store's photo has text/cropping
 IMG_ALIAS = {'four-winds-social--fws-x-mahj-mood-collab-beyond-the-ribbon': 'mahj-mood--beyond-the-ribbon-four-winds-social-collab-mat-benefitting-pink-fund-pre-order-ships-end-of-december'}
 data = json.dumps([[IMG_ALIAS.get(x['img'], x['img']), x['name'], x['brand'], x['url'], x['ret'], x['secs'], x['code']] + ([1] if x['img'] in WATCH else []) for x in vis],
                   separators=(',', ':'), ensure_ascii=False).replace('</', '<\\/')
-chips = ('<button type="button" class="mmg-chip" data-f="all" aria-pressed="true">All mats</button>'
+chips = ('<button type="button" class="mmg-chip" data-f="all" aria-pressed="true">All / Clear</button>'
          + ''.join(f'<button type="button" class="mmg-chip" data-f="{c}" aria-pressed="false">{html.escape(l)}</button>' for c, l in COL if cnt[c])
          + (f'<button type="button" class="mmg-chip" data-f="retired" aria-pressed="false">Retired</button>' if retired else '')
          + '<button type="button" class="mmg-chip mmg-tog" data-t="ret" aria-pressed="true">Hide retired</button>')
@@ -429,18 +429,25 @@ brands = sorted({x['brand'] for x in vis}, key=str.lower)
 opts = '<option value="">All brands</option>' + ''.join(f'<option>{html.escape(b)}</option>' for b in brands)
 secs = ''.join(f'<section class="mmg-sec" data-c="{c}"><h2 class="mmg-h">{html.escape(l)} mahjong mats</h2><ul class="mmg-grid"></ul><p class="mmg-empty">No mats here from that brand yet.</p></section>'
                for c, l in COL if cnt_with_ret[c])
+secs = '<section class="mmg-combo" hidden><h2 class="mmg-h"></h2><ul class="mmg-grid"></ul><p class="mmg-empty">No mats with all of those yet — try removing one.</p></section>' + secs
 secs += '<section class="mmg-sec" data-c="retired"><h2 class="mmg-h">Retired mats</h2><p class="mmg-intro">No longer sold, kept here so you can see what goes with the tiles you already own.</p><ul class="mmg-grid"></ul><p class="mmg-empty">No retired mats from that brand.</p></section>' if retired else ''
 JS = r"""(function(){var r=document.currentScript.parentNode,R=JSON.parse(r.querySelector('script[type="application/json"]').textContent),B='https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@__C__/assets/mats/gallery/',f='all',br='',hr=true;
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function card(x,i){var shop=x[3]?'<a class="mmg-shop" href="'+esc(x[3])+'" target="_blank" rel="sponsored noopener">Shop the mat</a>':(x[4]?'<span class="mmg-ret">Retired</span>':(x[7]?'<span class="mmg-watch">One to watch</span>':''));var img='<img src="'+B+x[0]+'.webp" alt="'+esc(x[2]+' '+x[1])+' mahjong mat" loading="lazy" decoding="async" width="640" height="640">';return '<li class="mmg-card" data-b="'+esc(x[2])+'" data-i="'+i+'"'+(x[4]?' data-r="1"':'')+'>'+(x[3]?'<a class="mmg-img" href="'+esc(x[3])+'" target="_blank" rel="sponsored noopener">'+img+'</a>':'<span class="mmg-img">'+img+'</span>')+'<div class="mmg-body"><span class="mmg-brand">'+esc(x[2])+'</span><span class="mmg-name">'+esc(x[1])+'</span>'+(x[6]?'<a class="mmg-code" href="'+esc(x[6])+'">'+esc(x[2])+' guide</a>':'')+shop+'</div></li>'}
 r.querySelectorAll('.mmg-sec').forEach(function(s){var c=s.dataset.c,h='';var L=[];R.forEach(function(x,i){if(c==='retired'?x[4]:x[5].indexOf(c)>-1)L.push(i)});L.sort(function(a,b){function k(i){var x=R[i];return(x[2]==='Mahjong Studios'?2:0)+(c==='retired'||x[5][0]===c?0:1)}return k(a)-k(b)||a-b});L.forEach(function(i){h+=card(R[i],i)});s.querySelector('.mmg-grid').innerHTML=h});
-var chips=r.querySelectorAll('.mmg-chip[data-f]'),tog=r.querySelector('.mmg-tog'),sel=r.querySelector('.mmg-brand-sel'),tot=r.querySelector('.mmg-total');
-function go(){var seen={},all=0;chips.forEach(function(x){x.setAttribute('aria-pressed',x.dataset.f===f?'true':'false')});tog.setAttribute('aria-pressed',hr?'true':'false');r.querySelectorAll('.mmg-sec').forEach(function(s){var c=s.dataset.c,on=f==='all'||c===f,n=0;s.hidden=!on;if(!on)return;s.querySelectorAll('.mmg-card').forEach(function(d){var ok=(!br||d.dataset.b===br)&&!(hr&&c!=='retired'&&d.dataset.r);d.hidden=!ok;if(ok){n++;if(!seen[d.dataset.i]){seen[d.dataset.i]=1;all++}}});s.querySelector('.mmg-empty').style.display=n?'none':'block';if(!n&&f==='all')s.hidden=true});tot.textContent=all+' mats'}
-chips.forEach(function(x){x.addEventListener('click',function(){f=x.dataset.f;go()})});tog.addEventListener('click',function(){hr=!hr;go()});sel.addEventListener('change',function(){br=sel.value;go()});go()})();""".replace('__C__', COMMIT)
+var chips=r.querySelectorAll('.mmg-chip[data-f]'),tog=r.querySelector('.mmg-tog'),sel=r.querySelector('.mmg-brand-sel'),tot=r.querySelector('.mmg-total'),cmb=r.querySelector('.mmg-combo'),S=[],LB={};
+chips.forEach(function(x){LB[x.dataset.f]=x.textContent});
+function combo(){var L=[],h='';R.forEach(function(x,i){if(S.every(function(c){return x[5].indexOf(c)>-1})&&(!br||x[2]===br)&&!(hr&&x[4]))L.push(i)});L.sort(function(a,b){function k(i){var x=R[i];return(x[2]==='Mahjong Studios'?2:0)+(S.indexOf(x[5][0])>-1?0:1)}return k(a)-k(b)||a-b});L.forEach(function(i){h+=card(R[i],i)});cmb.querySelector('.mmg-h').textContent='Mats with '+S.map(function(c){return LB[c]}).join(' + ');cmb.querySelector('.mmg-grid').innerHTML=h;cmb.querySelector('.mmg-empty').style.display=L.length?'none':'block';return L.length}
+function go(){var seen={},all=0,f=S.length===1?S[0]:(S.length?'':'all');chips.forEach(function(x){var on=x.dataset.f==='all'?!S.length:S.indexOf(x.dataset.f)>-1;x.setAttribute('aria-pressed',on?'true':'false')});tog.setAttribute('aria-pressed',hr?'true':'false');
+if(S.length>1){r.querySelectorAll('.mmg-sec').forEach(function(s){s.hidden=true});cmb.hidden=false;tot.textContent=combo()+' mats';return}
+cmb.hidden=true;cmb.querySelector('.mmg-grid').innerHTML='';
+r.querySelectorAll('.mmg-sec').forEach(function(s){var c=s.dataset.c,on=f==='all'||c===f,n=0;s.hidden=!on;if(!on)return;s.querySelectorAll('.mmg-card').forEach(function(d){var ok=(!br||d.dataset.b===br)&&!(hr&&c!=='retired'&&d.dataset.r);d.hidden=!ok;if(ok){n++;if(!seen[d.dataset.i]){seen[d.dataset.i]=1;all++}}});s.querySelector('.mmg-empty').style.display=n?'none':'block';if(!n&&f==='all')s.hidden=true});tot.textContent=all+' mats'}
+chips.forEach(function(x){x.addEventListener('click',function(){var c=x.dataset.f,i=S.indexOf(c);if(c==='all'){S=[]}else if(c==='retired'){S=i>-1?[]:['retired']}else{S=S.filter(function(v){return v!=='retired'});i=S.indexOf(c);if(i>-1)S.splice(i,1);else S.push(c)}go()})});tog.addEventListener('click',function(){hr=!hr;go()});sel.addEventListener('change',function(){br=sel.value;go()});go()})();""".replace('__C__', COMMIT)
 print(f"""<style>{CSS}</style>
 <div class="mmg"><span class="mmg-eyebrow">The Mat Library</span>
 <h1 class="mmg-title">Mahjong Mats by Color</h1>
 <p class="mmg-intro">Every mat in my matching library, all in one place. Browse by color or pick a brand, then tap any mat to shop it. Want to see which tiles go with a mat? <a href="/mahjong-tile-matches">See my tile matches</a>, and watch for Find Your Match, coming 10.27.</p>
+<p class="mmg-hint">Tap one color to see that section, or tap two or more to find mats that have all of them.</p>
 <div class="mmg-chips" role="group" aria-label="Filter mats by color">{chips}</div>
 <div class="mmg-tools"><label for="mmg-brand">Brand</label><select id="mmg-brand" class="mmg-brand-sel">{opts}</select><span class="mmg-total" aria-live="polite"></span></div>
 {secs}
