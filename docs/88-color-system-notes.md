@@ -27,3 +27,7 @@ Tiffany's notes, Oct 19. Ideas to build on, not rules yet.
 
 ## Wording rule: "layer," never "stripe" (Tiffany, Oct 19)
 - Layered tiles have **layers**. Never call them stripes in copy, graphics, docs or chat.
+
+## Color wheel seal (Tiffany, Oct 19 night)
+- Picked **C, the color wheel ring seal**: our navy flame + pink heart on cream, inside a pastel color wheel ring (`assets/brand/seal/seal-C-ring-pastel.png`). "I may change my mind later." Secondary mark only; navy + pink stay the main logo.
+- Planned uses: the "Matched" highlight cover, a corner badge on dating profiles, stickers, Find Your Match. Redraw it cleanly from the exact flame-heart before wide use.

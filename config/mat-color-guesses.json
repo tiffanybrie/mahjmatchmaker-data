@@ -2771,7 +2771,7 @@
 "src": "claude-look"
 },
 "amahjline.com/squiggle-amahj-game-mat": {
-"primary": "pink",
+"primary": "purple",
 "secondary": [
 "green",
 "teal"
@@ -2786,12 +2786,12 @@
 "primary": "pink",
 "secondary": [
 "green",
-"neutral"
+"teal"
 ],
 "tone": "pastel"
 },
-"conf": "medium",
-"src": "claude-look"
+"conf": "high",
+"src": "claude-look+measured (doc 87 fix, Tiffany OK Oct 19)"
 },
 "amahjline.com/squiggle-pink-blue-green-amahj-game-mat": {
 "primary": "green",
@@ -6589,8 +6589,9 @@
 "src": "claude-look"
 },
 "www.bamletsmahjong.com/pumpkin-patch-mahjong-mat": {
-"primary": "pink",
+"primary": "orange",
 "secondary": [
+"pink",
 "green",
 "dark"
 ],
@@ -6604,12 +6605,12 @@
 "primary": "pink",
 "secondary": [
 "green",
-"neutral"
+"dark"
 ],
 "tone": "pastel"
 },
-"conf": "medium",
-"src": "claude-look"
+"conf": "high",
+"src": "claude-look+measured (doc 87 fix, Tiffany OK Oct 19)"
 },
 "www.bamletsmahjong.com/art-deco-mahjong-mat": {
 "primary": "bw",
@@ -7862,10 +7863,10 @@
 "src": "claude-look"
 },
 "www.hiphipmahjong.com/freedom-isnt-free-mahjong-mat": {
-"primary": "green",
+"primary": "neutral",
 "secondary": [
 "blue",
-"brown"
+"green"
 ],
 "tone": "muted",
 "holiday": false,
@@ -7874,14 +7875,15 @@
 "light": 0.418,
 "chroma": 0.35,
 "prev": {
-"primary": "neutral",
+"primary": "green",
 "secondary": [
+"blue",
 "brown"
 ],
 "tone": "muted"
 },
-"conf": "low",
-"src": "claude-look"
+"conf": "high",
+"src": "claude-look+measured (doc 87 fix, Tiffany OK Oct 19)"
 },
 "www.hiphipmahjong.com/mahj-o-ween-mahjong-mat": {
 "primary": "purple",
@@ -7975,10 +7977,9 @@
 "src": "claude-look"
 },
 "www.hiphipmahjong.com/birthday-mahjong-mat": {
-"primary": "neutral",
+"primary": "pink",
 "secondary": [
-"pink",
-"teal"
+"blue"
 ],
 "tone": "pastel",
 "holiday": false,
@@ -7987,15 +7988,15 @@
 "light": 0.592,
 "chroma": 0.552,
 "prev": {
-"primary": "blue",
+"primary": "neutral",
 "secondary": [
 "pink",
-"green"
+"teal"
 ],
 "tone": "pastel"
 },
-"conf": "medium",
-"src": "claude-look"
+"conf": "high",
+"src": "claude-look+measured (doc 87 fix, Tiffany OK Oct 19)"
 },
 "www.hiphipmahjong.com/rackin-rudolph-mahjong-mat": {
 "primary": "brown",
@@ -8577,6 +8578,7 @@
 "alb:amara:Imperial": {
 "primary": "neutral",
 "secondary": [
+"blue",
 "yellow",
 "pink"
 ],
@@ -8587,16 +8589,15 @@
 "light": 0.755,
 "chroma": 0.321,
 "prev": {
-"primary": "blue",
+"primary": "neutral",
 "secondary": [
 "yellow",
-"pink",
-"green"
+"pink"
 ],
 "tone": "pastel"
 },
-"conf": "medium",
-"src": "claude-look"
+"conf": "high",
+"src": "claude-look+measured (doc 87 fix, Tiffany OK Oct 19)"
 },
 "alb:amara:Enchanted": {
 "primary": "green",
@@ -13958,9 +13959,9 @@
 "src": "claude-look"
 },
 "mahjandmoon.com/strawberry-thief-inspired-mahjong-mat-heritage-floral-bird-design": {
-"primary": "green",
+"primary": "blue",
 "secondary": [
-"neutral"
+"teal"
 ],
 "tone": "muted",
 "holiday": false,
@@ -13969,16 +13970,14 @@
 "light": 0.4,
 "chroma": 0.304,
 "prev": {
-"primary": "blue",
+"primary": "green",
 "secondary": [
-"yellow",
-"green",
 "neutral"
 ],
 "tone": "muted"
 },
-"conf": "medium",
-"src": "claude-look"
+"conf": "high",
+"src": "claude-look+measured (doc 87 fix, Tiffany OK Oct 19)"
 },
 "mahjandmoon.com/harvest-pumpkin-thanksgiving-mahjong-mat": {
 "primary": "orange",

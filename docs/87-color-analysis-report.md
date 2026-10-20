@@ -135,3 +135,12 @@ Recommended:
 3. Fix the 6 real tag errors after Tiffany's yes.
 4. Re-measure lifestyle-photo mats from the flat product render when available.
 5. Tune hue boundaries (olive→green, cognac→brown, blush→pink) before using it for more.
+
+## FIXED Oct 19 night (Tiffany: "fix the 6 tags")
+Updated in config/mat-color-guesses.json (old values kept under `prev`) and in Find Your Match (v59, mat filter families):
+- Birthday (Hip Hip): pink + blue (neutral dropped)
+- Strawberry Thief (Mahj & Moon): blue/teal (was green/neutral)
+- Pumpkin Patch (Bam Let's Mahjong): orange added as primary
+- Imperial (OMM, retired): blue added
+- Freedom Isn't Free (Hip Hip): neutral + blue + green (brown dropped)
+- Lilac Green Squiggle (Amahj): purple instead of pink
