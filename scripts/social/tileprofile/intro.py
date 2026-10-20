@@ -1,6 +1,7 @@
 """Post 1 of every tile set row: "Meet <set>", her INTRODUCTION carousel (Tiffany, Oct 19 evening).
-Slides (Oct 19 night): 1 dating profile (cover) / 2 her colors (layer diagram + small color wheel + faces) /
-3 her best features (favorite tiles) / 4 racks she's into / 5 made for each other (favorite match) / 6 her album is ready.
+Slides (Oct 19 night): 1 dating profile (cover) / 2 her colors (layer diagram + small color wheel) /
+3 her faces (brand photo of the faces + main & supporting color cards) / 4 her best features (favorite tiles) /
+5 racks she's into / 6 made for each other (favorite match) / 7 her album is ready.
 No baked-in dots (Instagram shows its own). Needs carousel.py html first (s2 colors, s3 racks, s4 pair).
 Usage: python3 intro.py papaya-spritz"""
 import sys, os, re, subprocess
@@ -18,7 +19,7 @@ st = Image.open(R + f'assets/colorcards/{key}/00-{key}-mahjong-tiles-profile-c-s
 crop = st.crop((0, 140, 1080, 1760)); h = 1350; w = round(1080 * h / crop.height)
 cv = Image.new('RGB', (1080, 1350), st.getpixel((10, 1000))); cv.paste(crop.resize((w, h), Image.LANCZOS), ((1080 - w) // 2, 0))
 cv.save(f'{OUT}/1.jpg', quality=93)
-Image.open(R + f'assets/social/{key}-launch/{key}-favorite-tiles.jpg').convert('RGB').save(f'{OUT}/3.jpg', quality=93)
+Image.open(R + f'assets/social/{key}-launch/{key}-favorite-tiles.jpg').convert('RGB').save(f'{OUT}/4.jpg', quality=93)
 
 e = __import__('html').escape
 end = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 1350, S['col'])}</style></head><body>
@@ -53,11 +54,37 @@ colors = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 135
 <div style="position:absolute;left:540px;top:850px;right:60px">
  <div class="caps" style="font-size:19px;color:var(--pink)">On the color wheel</div>
  <div style="font:400 26px/1.5 Bit;color:#2c3e63;margin-top:14px">1 &nbsp;Papaya · warm orange<br>2 &nbsp;Lavender · cool, blue-leaning<br>3 &nbsp;Light lime · soft yellow-green</div>
- <div class="caps" style="font-size:19px;color:var(--pink);margin-top:34px">Her faces</div>
- <div style="font:600 26px Bit;color:var(--navy);margin-top:16px;display:grid;grid-template-columns:auto auto;gap:18px 46px;justify-content:start">{faces}</div>
 </div>
 </div></body></html>"""
-pages = {2: colors, 3: None, 4: nodots(open(f'{H}/s3.html').read()), 5: nodots(open(f'{H}/s4.html').read()), 6: end}
+# slide 3 "Her faces" (Tiffany, Oct 19 night): the brand's photo of the faces + ALL the color cards in one place
+# (main colors = the back layers, supporting colors = measured from the faces). No color cards anywhere else.
+hc = P['her_colors']
+fx = hc['faces_crop']; fc = Image.open(R + hc['faces_photo']).convert('RGB').crop(tuple(fx))
+for box in hc.get('faces_blank', []):  # paint out stray bits (Papaya: corner of the loose back tile)
+    fc.paste(fc.getpixel((fc.width - 3, 3)), tuple(box))
+fc.save(f'{H}/faces-crop.jpg', quality=94)
+def chip(n, h, w, sw):
+    return (f'<div style="width:{w}px;background:#fff;border-radius:14px;box-shadow:0 2px 10px rgba(5,40,90,.13);overflow:hidden">'
+            f'<div style="height:{sw}px;background:{h}"></div><div style="padding:10px 6px 11px;text-align:center">'
+            f'<div style="font:700 {19 if w < 130 else 23}px/1.1 Bit;color:var(--navy)">{e(n)}</div>'
+            f'<div style="font:500 14px Bit;letter-spacing:.06em;color:#7a879c;margin-top:4px">{h.upper()}</div></div></div>')
+mains = ''.join(chip(n, h, 170, 88) for n, h in [('Papaya', cpap), ('Lavender', clav), ('Light lime', clime)])
+sups = ''.join(chip(n, h, 106, 70) for n, h in hc['supporting'])
+facesl = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 1350, S['col'])}</style></head><body>
+<div style="position:relative;width:1080px;height:1350px">
+<div style="position:absolute;top:58px;left:72px;right:72px;display:flex;justify-content:space-between"><span class="caps" style="font-size:19px;color:#5a6b85">{e(P['name'])} · her profile</span><span class="caps" style="font-size:19px;color:#5a6b85">2 · her faces</span></div>
+<div class="cap" style="position:absolute;top:118px;left:72px;font-size:96px">Her faces</div>
+<div style="position:absolute;left:72px;top:250px;width:936px;height:629px;border-radius:22px;background:#fff url({url(H + '/faces-crop.jpg')}) center/cover;box-shadow:0 0 0 10px #fff,0 14px 30px rgba(6,40,90,.16)"></div>
+<div style="position:absolute;left:72px;top:922px;right:72px">
+ <div style="display:flex;align-items:flex-end;gap:22px">
+  <div style="width:186px;padding-bottom:6px"><div class="caps" style="font-size:19px;color:var(--pink)">Main colors</div><div style="font:400 22px/1.3 Bit;color:#5a6b85;margin-top:6px">her back<br>+ layers</div></div>
+  <div style="display:flex;gap:16px">{mains}</div>
+ </div>
+ <div class="caps" style="font-size:19px;color:var(--pink);margin-top:26px">Supporting colors <span style="color:#5a6b85;letter-spacing:.1em">· from her faces</span></div>
+ <div style="display:flex;justify-content:space-between;margin-top:12px">{sups}</div>
+</div>
+</div></body></html>"""
+pages = {2: colors, 3: facesl, 4: None, 5: nodots(open(f'{H}/s3.html').read()).replace('2 · racks', '3 · racks'), 6: nodots(open(f'{H}/s4.html').read()).replace('3 · made', '4 · made'), 7: end}
 args = ['node', R + 'scripts/social/tileprofile/shot.js', '1080', '1350']
 for n, s in pages.items():
     if s is None: continue

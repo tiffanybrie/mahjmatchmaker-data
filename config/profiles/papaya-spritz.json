@@ -61,7 +61,57 @@
    ]
   ],
   "tone": "Clean brights. A clean orange, no dusty undertone.",
-  "source": "OMM back + side product photo (assets/tiles/backs/papaya-spritz-back-and-side-omm.jpg), median of 3 sample spots per layer, Oct 19"
+  "source": "OMM back + side product photo (assets/tiles/backs/papaya-spritz-back-and-side-omm.jpg), median of 3 sample spots per layer, Oct 19",
+  "supporting": [
+   [
+    "Coral",
+    "#e88073"
+   ],
+   [
+    "Peach",
+    "#f2b8a1"
+   ],
+   [
+    "Lime",
+    "#bade8c"
+   ],
+   [
+    "Green",
+    "#6b9d66"
+   ],
+   [
+    "Mint",
+    "#82d1a5"
+   ],
+   [
+    "Teal",
+    "#5bb3c3"
+   ],
+   [
+    "Purple",
+    "#a389be"
+   ],
+   [
+    "Orchid",
+    "#cd82a9"
+   ]
+  ],
+  "faces_photo": "assets/launches/omm-papaya-spritz-tiles/01.jpg",
+  "faces_crop": [
+   236,
+   604,
+   1466,
+   1430
+  ],
+  "supporting_source": "KMeans + spot samples on OMM flat lay 01.jpg faces (Oct 19 night)",
+  "faces_blank": [
+   [
+    1088,
+    740,
+    1230,
+    826
+   ]
+  ]
  },
  "her_type": [
   {

@@ -92,3 +92,6 @@ Her "harebrained idea" that could go viral. Revisit with a brainstorm; she wants
   - Heritage: "Oh yeah, he's a player. Super handsome, total player. Plays on everything."
   - The pre-order saga: sets stuck in customs for months, brand owners apologizing on Instagram. E.g. Mahj Tile Haus Rose Quartz: "I mean, she's gorgeous. She's stuck in customs. Her mom is freaking out. And everybody wants to play with her. All the mats want to play with her."
 - Next step: a brainstorm session with Tiffany to build a one-liner per set, then a shot list for one filming session (ties into the face-to-camera plan above).
+
+## Breakup lines (Tiffany, Oct 19 night)
+- **"I think you should see other racks."** Landed funny with her. A breakup line for when a set's current rack isn't working; save it for a rack-swap skit or a "not this one" moment. (It didn't fit the Papaya intro, so that slide keeps "Racks she's into.")
