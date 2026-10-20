@@ -12,7 +12,8 @@ ACC = S['col']; L = P['launch'] = {'hero': 'assets/launches/omm-papaya-spritz-ti
                                     'all': 'assets/launches/omm-papaya-spritz-tiles/01.jpg'}
 MATS = S['mat_imgs']; RACK = {'Bird & Bamboo Lavender': 'assets/colorcards/papaya-spritz/racks/bird-and-bamboo-lavender.png',
                               'Peace Love Mahjong Chartreuse': 'assets/racks/card/peace-love-mahjong-chartreuse.png',
-                              'Peace Love Mahjong Oak': 'assets/racks/card/peace-love-mahjong-oak.png'}
+                              'Peace Love Mahjong Oak': 'assets/racks/card/peace-love-mahjong-oak.png',
+                              'Middle & Main Scalloped Beechwood': 'assets/racks/card/middle--main-scalloped-beechwood.png'}
 LOGO = url('assets/brand/mahjmatchmaker-wordmark-notag.png'); TILE = url(S['tile'])
 e = html.escape
 OMM = P.get('omm_launch'); NS = 7 if OMM else 5
@@ -92,7 +93,7 @@ s3 = page(NS - 1, head(('5' if OMM else '3') + ' · top matches') + f"""
 # 4 racks she's into
 rk = ''
 for r in P['racks']:
-    b = 'Bird & Bamboo' if r['name'].startswith('Bird') else 'Peace Love Mahjong'; c = r['name'][len(b) + 1:]
+    b = next((x for x in ('Bird & Bamboo', 'Peace Love Mahjong', 'Middle & Main', 'Miss Mahjong', 'Mahjong Row & Co.', 'Bam Bird Boutique') if r['name'].startswith(x)), r['name'].split()[0]); c = r['name'][len(b) + 1:]
     rk += f"""<div style="margin-top:56px"><div style="display:flex;align-items:baseline;gap:14px"><span class="caps" style="font-size:18px;color:#8a6a80">{e(b)}</span><span class="pf" style="font-size:44px;font-weight:600">{e(c)}</span></div>
 <img src="{url(RACK[r['name']])}" style="display:block;width:936px;height:96px;object-fit:fill;margin-top:10px;filter:drop-shadow(0 8px 10px rgba(6,40,90,.18))">
 <div style="font:400 27px Bit;margin-top:10px;color:#2c3e63">{e(r['why'])}</div></div>"""
