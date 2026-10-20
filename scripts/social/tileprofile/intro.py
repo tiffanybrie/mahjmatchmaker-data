@@ -22,11 +22,23 @@ cv.save(f'{OUT}/1.jpg', quality=93)
 Image.open(R + f'assets/social/{key}-launch/{key}-favorite-tiles.jpg').convert('RGB').save(f'{OUT}/4.jpg', quality=93)
 
 e = __import__('html').escape
+# end slide (Tiffany, Oct 19 night): album cover with her real match cards peeking out behind (homepage holiday style)
+import glob as _g
+def _card(slug): 
+    f = _g.glob(R + f'assets/cards/{key}/{key}-mahjong-tiles-*{slug}-mat.jpg'); return url(f[0]) if f else None
+_peek = [c for c in (_card(x) for x in P.get('album_peek', [])) if c][:4]
+_pos = [(-268, 40, -11, 1), (268, 40, 11, 1), (-150, 0, -5, 2), (150, 0, 5, 2)]
+fan = ''
+for (dx, dy, rot, z), c in sorted(zip(_pos, _peek), key=lambda t: t[0][3]):
+    fan += (f'<div class="ph" style="position:absolute;left:{450 - 180 + dx}px;top:{dy + 50}px;width:360px;height:450px;border-radius:18px;'
+            f'background-image:url({c});box-shadow:0 0 0 8px #fff,0 12px 28px rgba(6,40,90,.18);transform:rotate({rot}deg);z-index:{z}"></div>')
+fan += (f'<div class="ph" style="position:absolute;left:{450 - 220}px;top:10px;width:440px;height:550px;border-radius:22px;z-index:5;'
+        f"background-image:url({url(f'assets/covers/albums/w800/00-{key}-mahjong-tiles-cover.jpg')});box-shadow:0 0 0 10px #fff,0 18px 40px rgba(6,40,90,.24)\"></div>")
 end = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 1350, S['col'])}</style></head><body>
 <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;text-align:center;padding:96px 80px 0">
  <div class="caps" style="font-size:20px;color:#5a6b85">{e(P['name'])} · {e(P['brand'])}</div>
  <div class="cap" style="font-size:108px;margin-top:22px;line-height:.95">Her album<br><span style="color:var(--acc)">is ready</span></div>
- <div class="ph" style="margin-top:40px;width:440px;height:550px;border-radius:22px;background-image:url({url(f'assets/covers/albums/w800/00-{key}-mahjong-tiles-cover.jpg')});box-shadow:0 0 0 10px #fff,0 16px 36px rgba(6,40,90,.20);transform:rotate(-2deg)"></div>
+ <div style="position:relative;margin-top:34px;width:900px;height:590px">{fan}</div>
  <div class="pf" style="font-size:46px;margin-top:46px">See all <b style="font-weight:600;color:var(--pink)">{P['matches']}</b> of her matches</div>
  <div class="pill" style="margin-top:22px;background:var(--pink)">link in bio &rarr;</div>
  <div style="margin-top:28px;font:700 30px Bit">Code <span style="color:var(--pink)">MAHJMATCH</span> at {e(P['brand'])}</div>
@@ -50,10 +62,10 @@ colors = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 135
 <div style="position:absolute;left:60px;top:268px;width:740px;height:478px;filter:drop-shadow(0 12px 16px rgba(80,40,20,.16))"><div style="position:absolute;inset:0;background:url({url(BACK_CUT)}) no-repeat;background-size:858px auto;background-position:-95px -114px"></div></div>
 {lab(390, 'Papaya', cpap, 601)}{lab(490, 'Lavender layer', clav, 650)}{lab(590, 'Light lime layer', clime, 703)}
 <div style="position:absolute;left:79px;width:294px;top:760px;text-align:center;font:700 21px Bit;letter-spacing:.2em;text-transform:uppercase;color:#5a6b85">the back</div><div style="position:absolute;left:560px;width:200px;top:760px;text-align:center;font:700 21px Bit;letter-spacing:.2em;text-transform:uppercase;color:#5a6b85">the side</div>
-<img src="{WHEEL}" style="position:absolute;left:60px;top:830px;width:440px;height:440px">
-<div style="position:absolute;left:540px;top:850px;right:60px">
- <div class="caps" style="font-size:19px;color:var(--pink)">On the color wheel</div>
- <div style="font:400 26px/1.5 Bit;color:#2c3e63;margin-top:14px">1 &nbsp;Papaya · warm orange<br>2 &nbsp;Lavender · cool, blue-leaning<br>3 &nbsp;Light lime · soft yellow-green</div>
+<img src="{WHEEL}" style="position:absolute;left:44px;top:800px;width:510px;height:510px">
+<div style="position:absolute;left:584px;top:880px;right:56px">
+ <div class="caps" style="font-size:21px;color:var(--pink)">On the color wheel</div>
+ <div style="font:400 30px/1.35 Bit;color:#2c3e63;margin-top:22px"><b style="font-weight:700;color:var(--navy)">1 &nbsp;Papaya</b><br>warm orange<div style="height:22px"></div><b style="font-weight:700;color:var(--navy)">2 &nbsp;Lavender</b><br>cool, blue-leaning<div style="height:22px"></div><b style="font-weight:700;color:var(--navy)">3 &nbsp;Light lime</b><br>soft yellow-green</div>
 </div>
 </div></body></html>"""
 # slide 3 "Her faces" (Tiffany, Oct 19 night): the brand's photo of the faces + ALL the color cards in one place
