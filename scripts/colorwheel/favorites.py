@@ -3,7 +3,7 @@ import asyncio
 R='/home/claude/mahjmatchmaker-data'; u=lambda p:f'file://{R}/{p}'
 F=f'file://{R}/scripts/social/tileprofile/fonts'; G='file:///usr/share/fonts/truetype/google-fonts'
 T='assets/tiles/faces/papaya-spritz/'
-favs=[('dragon-green','Dancing dragons','my favorite dragons'),('crane','Gray-crowned crane','her bird bam'),('lola-ginger','Ginger Lola','the redheaded matriarch'),('dot-3','Parasol dots','little umbrellas')]
+favs=[('dragon-red','Dancing dragons','my favorite dragons'),('crane','Gray-crowned crane','her bird bam'),('lola-ginger','Ginger Lola','the redheaded matriarch'),('dot-3','Parasol dots','little umbrellas')]
 cards=''.join(f'''<div style="display:flex;flex-direction:column;align-items:center;width:440px">
 <div style="background:#fff;border-radius:26px;padding:22px;box-shadow:0 16px 36px rgba(200,80,40,.18);transform:rotate({r}deg)"><img src="{u(T+k+'.png')}" style="width:230px;height:316px;object-fit:cover;border-radius:14px;image-rendering:auto"></div>
 <div style="font-family:Hand;font-size:58px;color:#054689;margin-top:22px;line-height:1">{n}</div>
