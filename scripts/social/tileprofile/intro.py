@@ -37,7 +37,7 @@ fan += (f'<div class="ph" style="position:absolute;left:{450 - 220}px;top:10px;w
 end = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 1350, S['col'])}</style></head><body>
 <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;text-align:center;padding:96px 80px 0">
  <div class="caps" style="font-size:20px;color:#5a6b85">{e(P['name'])} · {e(P['brand'])}</div>
- <div class="cap" style="font-size:108px;margin-top:22px;line-height:.95">She&rsquo;s been<br><span style="color:var(--acc)">matched</span></div>
+ <div class="cap" style="font-size:108px;margin-top:22px;line-height:.95">She&rsquo;s been<br><span style="color:var(--acc)">MAT-ched</span></div>
  <div style="position:relative;margin-top:34px;width:900px;height:590px">{fan}</div>
  <div class="pf" style="font-size:46px;margin-top:46px">See all <b style="font-weight:600;color:var(--pink)">{P['matches']}</b> of her match cards</div>
  <div class="pill" style="margin-top:22px;background:var(--pink)">link in bio &rarr;</div>
