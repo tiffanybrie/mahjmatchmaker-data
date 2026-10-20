@@ -37,3 +37,5 @@ Tiffany's notes, Oct 19. Ideas to build on, not rules yet.
 
 ## One navy, one pink (Tiffany caught color shift, Oct 19)
 - Every graphic uses brand navy **#054689** for headers and the deep pink **#c8325f** for small caps labels. No other navies (#064587, #062a55 were removed from the carousel, color wheel and favorites scripts).
+
+- **Update (Tiffany, Oct 19 night): seal C is the new Instagram profile picture**, not just a secondary mark. File: assets/brand/seal/instagram-profile-seal-C-1080.jpg.
