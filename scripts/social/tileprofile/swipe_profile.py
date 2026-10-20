@@ -71,7 +71,7 @@ html,body{{width:1080px;height:1920px;overflow:hidden;background:var(--cream);co
 .body{{position:absolute;left:44px;right:44px;top:884px}}
 .box{{background:#fdf4ee;border-radius:26px;padding:22px 30px;margin-bottom:20px}}
 .q{{font:700 22px Bit;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:8px;display:flex;align-items:center;gap:12px}}
-.a{{font-family:Capra;font-size:43px;line-height:1.05;color:var(--navy)}}
+.a{{font-family:Capra;font-size:43px;line-height:1.05;color:var(--navy);white-space:nowrap}}
 .pa{{font-family:PF;font-style:italic;font-size:42px;line-height:1.1;color:var(--navy)}}
 .basics{{display:flex;flex-wrap:nowrap;gap:9px}}
 .basic{{display:inline-flex;align-items:center;gap:10px;font:600 23px Bit;color:var(--navy);background:#fff;border:2.5px solid #ecdcd0;border-radius:999px;padding:8px 16px 8px 10px}}
@@ -114,6 +114,7 @@ async def main():
         pg = await b.new_page(viewport={'width': 1080, 'height': 1920}, device_scale_factor=2)
         hp = f'{TMP}/profile-d.html'; open(hp, 'w').write(HTML)
         await pg.goto('file://' + hp); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready')
+        await pg.evaluate("document.querySelectorAll('.a').forEach(e=>{let s=43;while(e.scrollWidth>e.clientWidth&&s>30){s--;e.style.fontSize=s+'px'}})")
         png = f'{TMP}/profile-d@2x.png'; await pg.screenshot(path=png); await b.close()
     im = Image.open(png).convert('RGB').resize((1080, 1920), Image.LANCZOS); im.save(OUT, quality=93, optimize=True)
     im.save(OUT.replace('profile-d-story', 'profile-c-story'), quality=93, optimize=True)  # same file under the old name other scripts use
