@@ -1,4 +1,5 @@
-"""Tile Set Profile, version C: dating-app profile (Oct 19).
+"""Tile Set Profile, version D = THE STANDARD (Tiffany approved Oct 19, 11:19pm): no LIKE stamp, launch day line, 3 prompts (looking for / love language / irrational fear), no color row.
+Based on version C: dating-app profile (Oct 19).
 Tiffany asked for a version built from the swipe-app trademarks: photo dashes, LIKE stamp, name + verified check,
 green active dot, interest pills, "Looking for", a prompt, basics row and the 5-button row.
 Usage: python3 scripts/social/tileprofile/swipe_profile.py   (writes assets/colorcards/papaya-spritz/00-papaya-spritz-mahjong-tiles-profile-c-story.jpg)
@@ -11,13 +12,14 @@ from playwright.async_api import async_playwright
 R = '/home/claude/mahjmatchmaker-data'
 F = f'file://{R}/scripts/social/tileprofile/fonts'
 u = lambda p: f'file://{R}/{p}'
-OUT = f'{R}/assets/colorcards/papaya-spritz/00-papaya-spritz-mahjong-tiles-profile-c-story.jpg'
+OUT = f'{R}/assets/colorcards/papaya-spritz/00-papaya-spritz-mahjong-tiles-profile-d-story.jpg'
 TMP = os.path.dirname(os.path.abspath(__file__)) + '/html'
 os.makedirs(TMP, exist_ok=True)
 
 P = dict(name='Papaya Spritz', brand='Oh My Mahjong', photo='assets/tiles/album/papaya-spritz.jpg',
-         active='Launching this week', looking='Long-term mat partner',
-         pills=['Golden hour', 'Pink mats', 'Garden parties', 'Lavender racks'],
+         active='Launching Wed 10/21', looking='Long-term mat partner',
+         pills=['Golden hour', 'Pink mats', 'Garden parties', "Spritz o'clock"],
+         love='Coordinating racks',
          prompt_q='My most irrational fear', prompt_a='A beige tablecloth.',
          basics=[('#de7e30', 'Papaya backs'), ('#a8a3e1', 'Lavender layer'), ('#c8d7a5', 'Light lime layer'), ('#ef7aa0', 'Pink faces')],
          matches=50)
@@ -67,7 +69,7 @@ html,body{{width:1080px;height:1920px;overflow:hidden;background:var(--cream);co
 .stamp{{position:absolute;left:64px;top:110px;transform:rotate(-12deg);border:9px solid #3fae5a;color:#3fae5a;font:700 104px Bit;letter-spacing:.06em;
   padding:0 26px;border-radius:18px;background:rgba(255,255,255,.80)}}
 .body{{position:absolute;left:44px;right:44px;top:966px}}
-.box{{background:#fdf4ee;border-radius:26px;padding:24px 30px;margin-bottom:22px}}
+.box{{background:#fdf4ee;border-radius:26px;padding:22px 30px;margin-bottom:20px}}
 .q{{font:700 22px Bit;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:8px;display:flex;align-items:center;gap:12px}}
 .a{{font-family:Capra;font-size:54px;line-height:1.05;color:var(--navy)}}
 .pa{{font-family:PF;font-style:italic;font-size:56px;line-height:1.1;color:var(--navy)}}
@@ -84,7 +86,6 @@ html,body{{width:1080px;height:1920px;overflow:hidden;background:var(--cream);co
 <div class="card">
  <div class="photo">
  <div class="bars"><i></i><i></i><i></i><i></i></div>
- <div class="stamp">LIKE</div>
  <div class="shade"></div>
  <div class="name">{P['name']}<span class="check">{svg('M13 25 L21 33 L36 16', '#fff', 40, 6)}</span></div>
  <div class="meta"><span class="g"></span>{P['active']} <span class="b">· {P['brand']}</span></div>
@@ -93,8 +94,8 @@ html,body{{width:1080px;height:1920px;overflow:hidden;background:var(--cream);co
  </div>
  <div class="body">
   <div class="box"><div class="q">{svg(HEART, '#c8325f', 30, 4, '#f56c8c')} Looking for</div><div class="a">{P['looking']}</div></div>
+  <div class="box"><div class="q">Love language</div><div class="a">{P['love']}</div></div>
   <div class="box"><div class="q">{P['prompt_q']}</div><div class="pa">{P['prompt_a']}</div></div>
-  <div class="basics">{basics}</div>
  </div>
 </div>
 <div class="btns">
@@ -111,10 +112,11 @@ async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch()
         pg = await b.new_page(viewport={'width': 1080, 'height': 1920}, device_scale_factor=2)
-        hp = f'{TMP}/profile-c.html'; open(hp, 'w').write(HTML)
+        hp = f'{TMP}/profile-d.html'; open(hp, 'w').write(HTML)
         await pg.goto('file://' + hp); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready')
-        png = f'{TMP}/profile-c@2x.png'; await pg.screenshot(path=png); await b.close()
-    Image.open(png).convert('RGB').resize((1080, 1920), Image.LANCZOS).save(OUT, quality=93, optimize=True)
+        png = f'{TMP}/profile-d@2x.png'; await pg.screenshot(path=png); await b.close()
+    im = Image.open(png).convert('RGB').resize((1080, 1920), Image.LANCZOS); im.save(OUT, quality=93, optimize=True)
+    im.save(OUT.replace('profile-d-story', 'profile-c-story'), quality=93, optimize=True)  # same file under the old name other scripts use
 
 if __name__ == '__main__':
     asyncio.run(main()); print(OUT)

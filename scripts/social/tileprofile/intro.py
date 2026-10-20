@@ -15,7 +15,7 @@ subprocess.run(['python3', R + 'scripts/social/tileprofile/carousel.py', key, H]
 nodots = lambda s: re.sub(r'<div class="dots">.*?</div>', '', s, flags=re.S)
 
 # slide 1: dating profile story cropped to 4:5 on cream
-st = Image.open(R + f'assets/colorcards/{key}/00-{key}-mahjong-tiles-profile-c-story.jpg').convert('RGB')
+st = Image.open(R + f'assets/colorcards/{key}/00-{key}-mahjong-tiles-profile-d-story.jpg').convert('RGB')
 crop = st.crop((0, 140, 1080, 1760)); h = 1350; w = round(1080 * h / crop.height)
 cv = Image.new('RGB', (1080, 1350), st.getpixel((10, 1000))); cv.paste(crop.resize((w, h), Image.LANCZOS), ((1080 - w) // 2, 0))
 cv.save(f'{OUT}/1.jpg', quality=93)
