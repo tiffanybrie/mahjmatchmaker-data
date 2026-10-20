@@ -31,3 +31,6 @@ Tiffany's notes, Oct 19. Ideas to build on, not rules yet.
 ## Color wheel seal (Tiffany, Oct 19 night)
 - Picked **C, the color wheel ring seal**: our navy flame + pink heart on cream, inside a pastel color wheel ring (`assets/brand/seal/seal-C-ring-pastel.png`). "I may change my mind later." Secondary mark only; navy + pink stay the main logo.
 - Planned uses: the "Matched" highlight cover, a corner badge on dating profiles, stickers, Find Your Match. Redraw it cleanly from the exact flame-heart before wide use.
+
+## Wording rule: "bird bam," never "1 Bam" (Tiffany, Oct 19)
+- The 1 Bam tile is called the **bird bam** in all copy and graphics.
