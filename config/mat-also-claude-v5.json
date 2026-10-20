@@ -1,0 +1,608 @@
+{
+ "by": "claude-photo-review",
+ "date": "2026-10-20",
+ "method": "measured palette (config/mat-accent-colors.json, thresholds eye-checked on contact sheets): a color covering >= 15% of the mat is promoted to an also-color. Never applied to mats Tiffany has called (her v5 final calls or any tiffany-chat override) or to the 53 new mats (tagged by eye in tiffany-color-notes/2026-10-20-new53-claude-tags.json).",
+ "count": 184,
+ "mats": {
+  "amahj--lilac-green-squiggle-mahjong-game-mat": [
+   "green"
+  ],
+  "anders-ruff--flora-belle-mahjong-mat": [
+   "green"
+  ],
+  "bam-let-s-mahjong--secret-garden-mahjong-mat-watercolor-floral-mahjong-mat": [
+   "blue"
+  ],
+  "bespoke-mahjong--lucky-charms-mat-part-deux": [
+   "blue"
+  ],
+  "bird-bamboo--the-dahlia": [
+   "green"
+  ],
+  "britt-mills--aria": [
+   "teal",
+   "blue"
+  ],
+  "britt-mills--flora": [
+   "green",
+   "pink"
+  ],
+  "britt-mills--regency-scalloped-neoprene-mahjong-mat": [
+   "blue"
+  ],
+  "britt-mills--tova": [
+   "blue"
+  ],
+  "charleston-mahjong-club--reversible-vegan-leather-blush-pink-cornflower-blue": [
+   "teal",
+   "blue"
+  ],
+  "let-s-be-besties--green-blooms": [
+   "green"
+  ],
+  "let-s-be-besties--green-bright-floral": [
+   "green"
+  ],
+  "let-s-be-besties--talulah-panda": [
+   "green"
+  ],
+  "let-s-be-besties--vibrant-purple-scarf": [
+   "blue",
+   "teal"
+  ],
+  "mahj-moon--amongst-the-lemon-groves-pink": [
+   "yellow",
+   "green"
+  ],
+  "mahj-moon--palm-tree": [
+   "green"
+  ],
+  "mahj-moon--paris-in-bloom": [
+   "green"
+  ],
+  "mahj-moon--pastel-garden-landscape": [
+   "teal",
+   "green"
+  ],
+  "mahj-moon--pastel-wildflower-gingham": [
+   "yellow"
+  ],
+  "mahj-moon--personalized-vibrant-floral-chinoiserie-pink": [
+   "blue"
+  ],
+  "mahj-moon--pink-bow-garden": [
+   "green"
+  ],
+  "mahj-moon--pink-citrus": [
+   "green"
+  ],
+  "mahj-moon--strawberry-garden-american": [
+   "green"
+  ],
+  "mahj-moon--vibrant-floral-chinoiserie-pink": [
+   "blue"
+  ],
+  "mahj-vine--chinoiserie-songbird": [
+   "green"
+  ],
+  "mahj-vine--zesty-plume": [
+   "green"
+  ],
+  "mahj-squad--palm-springs": [
+   "green"
+  ],
+  "mahjong-moxie--magnolia-muse": [
+   "green"
+  ],
+  "mahjong-moxie--tulip-tango": [
+   "green"
+  ],
+  "mahjong-register--peony-sociale-premium": [
+   "teal"
+  ],
+  "mahjong-studios--in-bloom": [
+   "teal"
+  ],
+  "mahjong-studios--looking-glass": [
+   "yellow"
+  ],
+  "mahjong-studios--pink-blush": [
+   "teal"
+  ],
+  "middle-main-mahjong--tobacco-leaf-ginger-jar-mat": [
+   "green",
+   "blue"
+  ],
+  "miss-mahjong--cherry-blossom-jade": [
+   "green"
+  ],
+  "my-fair-mahjong--color-wave-pink-center-blue-scallop": [
+   "blue"
+  ],
+  "my-fair-mahjong--mahjong-mat-tropical-palm-33-x-33": [
+   "yellow"
+  ],
+  "oh-my-mahjong--anastasia": [
+   "blue",
+   "teal"
+  ],
+  "oh-my-mahjong--larkspur": [
+   "green",
+   "blue"
+  ],
+  "oh-my-mahjong--merriment": [
+   "blue",
+   "green"
+  ],
+  "oh-my-mahjong--sweet-marie-retired": [
+   "teal"
+  ],
+  "peace-love-mahjong--citrus-sherbet": [
+   "green"
+  ],
+  "peace-love-mahjong--lemon-love": [
+   "green",
+   "yellow"
+  ],
+  "peace-love-mahjong--palm-beach-punch": [
+   "green"
+  ],
+  "peace-love-mahjong--whimsy-plaid-golden-hour": [
+   "yellow"
+  ],
+  "rebecca-illustrated--rainbow-row": [
+   "blue"
+  ],
+  "royal-mahjong-society--cottage": [
+   "blue"
+  ],
+  "soir-e-all-day--bird-bam-cheers": [
+   "yellow"
+  ],
+  "virora-mahjong--liliora-mahjong-mat": [
+   "green"
+  ],
+  "virora-mahjong--parrotia": [
+   "blue",
+   "teal"
+  ],
+  "wren-mats--mulberry-and-sage": [
+   "green"
+  ],
+  "amahj--on-the-water": [
+   "blue"
+  ],
+  "amahj--round-top": [
+   "blue"
+  ],
+  "oh-my-mahjong--ky-derby-retired": [
+   "green"
+  ],
+  "oh-my-mahjong--penelope": [
+   "teal"
+  ],
+  "wren-mats--cottage-core": [
+   "green"
+  ],
+  "mahjong-studios--amber-jade": [
+   "green"
+  ],
+  "mahjong-studios--amber-jade-bird-bam": [
+   "green"
+  ],
+  "mahjong-studios--citrus-orange": [
+   "green"
+  ],
+  "wren-mats--bright-orangey": [
+   "blue"
+  ],
+  "mahj-moon--amalfi-soleil": [
+   "blue"
+  ],
+  "mahj-moon--lemon-stripe": [
+   "pink",
+   "blue"
+  ],
+  "oh-my-mahjong--spring-fling-retired": [
+   "pink",
+   "blue"
+  ],
+  "amahj--pink-teal-squiggle-mahjong-game-mat": [
+   "pink"
+  ],
+  "amahj--pink-blue-green-mahjong-game-mat": [
+   "pink"
+  ],
+  "anders-ruff--hummingbird-hydrangea-mahjong-mat": [
+   "blue"
+  ],
+  "anders-ruff--secret-garden-mahjong-mat": [
+   "blue"
+  ],
+  "bam-bird-boutique--mcm-geo-bloom-pink": [
+   "pink"
+  ],
+  "bam-bird-boutique--mcm-mod-geo-blue-pink": [
+   "blue"
+  ],
+  "mahj-mood--the-eloise-collection-mat-collab-with-four-winds-social": [
+   "pink"
+  ],
+  "oh-my-mahjong--enchanted-retired": [
+   "pink",
+   "blue"
+  ],
+  "oh-my-mahjong--garden-party-retired": [
+   "purple"
+  ],
+  "mahj-vine--caroline-in-peacock": [
+   "pink"
+  ],
+  "mahjong-register--lovely-lavender-double-sided-leatherette": [
+   "pink"
+  ],
+  "mahjong-studios--lunaflor-mahjong-mat": [
+   "pink"
+  ],
+  "mahjong-studios--teal-garden": [
+   "pink"
+  ],
+  "my-fair-mahjong--color-wave-green-center-pink-scallop": [
+   "pink"
+  ],
+  "oh-my-mahjong--amethyst-retired": [
+   "purple"
+  ],
+  "oh-my-mahjong--delilah": [
+   "pink"
+  ],
+  "oh-my-mahjong--glitterville-dragon-retired": [
+   "yellow"
+  ],
+  "oh-my-mahjong--lorelei": [
+   "pink"
+  ],
+  "oh-my-mahjong--radiance": [
+   "pink"
+  ],
+  "oh-my-mahjong--serengeti-retired": [
+   "pink"
+  ],
+  "oh-my-mahjong--zen-glow-retired": [
+   "pink"
+  ],
+  "anders-ruff--bams-bees-mahjong-mat": [
+   "green"
+  ],
+  "anders-ruff--garden-hydrangea": [
+   "green"
+  ],
+  "anders-ruff--palm-estate-mahjong-mat": [
+   "green"
+  ],
+  "bam-let-s-mahjong--cottage-bloom-mahjong-mat-blue-floral-american-mahjong-mat": [
+   "green"
+  ],
+  "bespoke-mahjong--flirty-leopards-mat-cobalt-blue": [
+   "pink"
+  ],
+  "bespoke-mahjong--jungle-turquoise": [
+   "blue"
+  ],
+  "bespoke-mahjong--yotd-periwinkle": [
+   "green",
+   "pink"
+  ],
+  "bird-bamboo--the-blue-delphine-mahjong-mat": [
+   "yellow"
+  ],
+  "bird-bamboo--the-royal-deco-mahjong-mat": [
+   "yellow"
+  ],
+  "britt-mills--colorful-chinoiserie": [
+   "orange"
+  ],
+  "britt-mills--enchanted-leatherette": [
+   "green"
+  ],
+  "britt-mills--royal-blooms-neoprene-mahjong-mat": [
+   "green"
+  ],
+  "charleston-mahjong-club--reversible-vegan-leather-sea-foam-green-dusty-blue": [
+   "green"
+  ],
+  "hutch-nook--summer-blossom": [
+   "pink",
+   "green"
+  ],
+  "let-s-be-besties--hydrangea-haven": [
+   "green"
+  ],
+  "mahj-moon--blush-botanical": [
+   "pink"
+  ],
+  "mahj-moon--citrus-chinoiserie": [
+   "green"
+  ],
+  "mahj-moon--lion-american": [
+   "pink"
+  ],
+  "mahj-vine--shady-lady-umbrella-mat-cabana-stripe-ocean": [
+   "green"
+  ],
+  "mahj-tile-haus--sunwashed-citrus": [
+   "yellow"
+  ],
+  "mahjong-moxie--duck-camp": [
+   "green"
+  ],
+  "mahjong-moxie--oyster-confetti": [
+   "green"
+  ],
+  "mahjong-register--buttercup-cherie-premium": [
+   "yellow"
+  ],
+  "mahjong-studios--blue-birdsong": [
+   "pink"
+  ],
+  "mahjong-studios--blue-ribbon": [
+   "pink"
+  ],
+  "maison-mahj--the-mayfair-stripe": [
+   "pink"
+  ],
+  "miss-mahjong--hydrangea": [
+   "green"
+  ],
+  "my-fair-mahjong--color-wave-blue-center-green-scallop": [
+   "green"
+  ],
+  "oh-my-mahjong--la-fete-retired": [
+   "pink"
+  ],
+  "oh-my-mahjong--preppy-soiree": [
+   "green"
+  ],
+  "oh-my-mahjong--soho-retired": [
+   "green"
+  ],
+  "oh-my-mahjong--vanderbilt": [
+   "orange"
+  ],
+  "oh-my-mahjong--vivara": [
+   "pink"
+  ],
+  "peace-love-mahjong--stripes-blue-green": [
+   "green"
+  ],
+  "peace-love-mahjong--whimsy-plaid-seaside-spritz": [
+   "yellow"
+  ],
+  "amanda-toppe--sparrow-s-nest": [
+   "green"
+  ],
+  "anders-ruff--purple-aqua-marble-mahjong-mat": [
+   "teal"
+  ],
+  "let-s-be-besties--purple-and-pink-plaid": [
+   "green"
+  ],
+  "let-s-be-besties--purple-royal-peacock": [
+   "teal"
+  ],
+  "mahj-moon--retro-waves": [
+   "teal"
+  ],
+  "mahj-mood--90s-girl-mat": [
+   "green"
+  ],
+  "britt-mills--heiress": [
+   "pink"
+  ],
+  "wren-mats--checkers": [
+   "blue"
+  ],
+  "bam-let-s-mahjong--garden-party-sky-blue-mahjong-mat": [
+   "purple",
+   "teal"
+  ],
+  "bam-let-s-mahjong--grandmillennial-mahjong-mat": [
+   "green",
+   "blue"
+  ],
+  "bird-bamboo--the-periwinkle-prism-mahjong-mat": [
+   "blue"
+  ],
+  "britt-mills--walk-in-the-park": [
+   "green"
+  ],
+  "britt-mills--walk-in-the-park-leatherette": [
+   "green"
+  ],
+  "hip-hip-mahjong--birthday-mahjong-mat": [
+   "blue"
+  ],
+  "hip-hip-mahjong--hey-baby-mahjong-mat": [
+   "blue"
+  ],
+  "hip-hip-mahjong--hoppy-east-hare-mahjong-mat": [
+   "blue"
+  ],
+  "isabel-harte--bamboo-dragon": [
+   "blue"
+  ],
+  "mahj-moon--autumn-leaves": [
+   "green"
+  ],
+  "mahj-moon--botanical-chevron": [
+   "green"
+  ],
+  "mahj-moon--celestial-dragon-chinoiserie": [
+   "green"
+  ],
+  "mahj-moon--cowgirl-rodeo": [
+   "blue"
+  ],
+  "mahj-moon--equestrian-estate": [
+   "green"
+  ],
+  "mahj-moon--garden-toile-round": [
+   "green"
+  ],
+  "mahj-moon--italian-riviera-foodie": [
+   "blue"
+  ],
+  "middle-main-mahjong--june-bride": [
+   "green",
+   "blue"
+  ],
+  "miss-mahjong--lattice": [
+   "blue"
+  ],
+  "miss-mahjong--wild-west-mahjong-playing-mat-americana": [
+   "blue",
+   "teal"
+  ],
+  "miss-mahjong--wild-west-mahjong-playing-mat-dolly": [
+   "teal"
+  ],
+  "splash-of-color--garden-of-eden-mahjong-mat-26x26": [
+   "green"
+  ],
+  "the-mahjong-line--botanical": [
+   "teal"
+  ],
+  "tigre-de-tartan--mahjong-mat-printed-needlepoint-canvas-14-mesh-jard-n-de-los-jefes": [
+   "green"
+  ],
+  "bespoke-mahjong--argyle-girl": [
+   "pink"
+  ],
+  "luxe-mahjong--bougie-bee-2": [
+   "yellow"
+  ],
+  "mahjong-register--palm-beach-pink-leopard-33": [
+   "pink"
+  ],
+  "mahjong-register--teal-rivera-leopard-33": [
+   "teal"
+  ],
+  "bespoke-mahjong--cranes-and-clouds": [
+   "teal",
+   "red"
+  ],
+  "bespoke-mahjong--tartan-plaid-black-royal-blue-pink": [
+   "blue",
+   "purple"
+  ],
+  "bespoke-mahjong--yotd-black": [
+   "green"
+  ],
+  "britt-mills--viola": [
+   "pink"
+  ],
+  "let-s-be-besties--floral-kaleidoscope": [
+   "red",
+   "green"
+  ],
+  "luxe-mahjong--neon-lights": [
+   "green",
+   "pink"
+  ],
+  "mahj-house-rules--mahjong-mat": [
+   "pink"
+  ],
+  "mahj-mood--fall-fling-mat": [
+   "pink"
+  ],
+  "mahjong-row-co--mocha-bloom-lt": [
+   "red"
+  ],
+  "tigre-de-tartan--strawberry-retired": [
+   "green"
+  ],
+  "tigre-de-tartan--strawberries-mahjong-mat-printed-needlepoint-canvas": [
+   "green"
+  ],
+  "bam-bird-boutique--bright-abstract-neoprene-mahjong-mat": [
+   "blue",
+   "green"
+  ],
+  "bespoke-mahjong--double-sided-mat-double-the-fun-bespoke-x-corey-paige-electric-love-mat": [
+   "teal",
+   "pink",
+   "blue",
+   "yellow"
+  ],
+  "bespoke-mahjong--double-sided-mat-double-the-fun-bespoke-x-corey-paige-graffiti-street-style-mat": [
+   "pink",
+   "blue"
+  ],
+  "bespoke-mahjong--double-sided-mat-double-the-fun-girl-talk": [
+   "yellow",
+   "orange",
+   "green"
+  ],
+  "bespoke-mahjong--double-sided-mat-double-the-fun-love-graffiti-mat": [
+   "pink",
+   "green",
+   "red"
+  ],
+  "bespoke-mahjong--double-sided-mat-double-the-fun-table-talk": [
+   "blue",
+   "pink"
+  ],
+  "bespoke-mahjong--grateful-dead-x-bespoke-mahjong-double-sided-mat-tie-dye-dream": [
+   "green",
+   "yellow"
+  ],
+  "bespoke-mahjong--lucky-charms-watercolor": [
+   "teal",
+   "purple"
+  ],
+  "let-s-be-besties--bohemian-kaleidoscope": [
+   "blue",
+   "pink",
+   "green"
+  ],
+  "let-s-be-besties--stained-glass": [
+   "blue",
+   "purple"
+  ],
+  "mahj-mood--color-splash-mat": [
+   "pink",
+   "teal",
+   "yellow"
+  ],
+  "my-fair-mahjong--mahjong-mat-laugh-lines-33-x-33": [
+   "pink",
+   "teal"
+  ],
+  "peace-love-mahjong--bejeweled-blooms": [
+   "purple",
+   "pink",
+   "teal"
+  ],
+  "peace-love-mahjong--wildest-blooms": [
+   "blue",
+   "pink",
+   "green"
+  ],
+  "splash-of-color--asian-chinoiserie": [
+   "yellow",
+   "orange"
+  ],
+  "sunday-mahjong--bold-blooms-premium": [
+   "blue"
+  ],
+  "britt-mills--merrywood": [
+   "blue"
+  ],
+  "let-s-be-besties--merry-bright-holiday-prism": [
+   "green"
+  ],
+  "tigre-de-tartan--holy-mahj-retired": [
+   "orange"
+  ]
+ }
+}

@@ -1,0 +1,656 @@
+{
+ "by": "claude-measured",
+ "date": "2026-10-20",
+ "about": "v5 'check these' list for Tiffany (Oct 20): mats where Claude's measured dominant color disagrees with the current primary tag, Image: https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@<commit>/assets/mats/gallery/<img>.webp",
+ "total_candidates": 69,
+ "mats": [
+  {
+   "img": "middle-main-mahjong--seabee-avenue-monstera-plant-mat",
+   "name": "Seabee Avenue Monstera Plant",
+   "brand": "Middle & Main Mahjong",
+   "current_primary": "Teal & Aqua",
+   "current_tags": [
+    "teal",
+    "pastel"
+   ],
+   "measured_dominant": "Green",
+   "measured_pct": {
+    "green": 100
+   },
+   "reason": "measured Green 100% vs Teal & Aqua 0%: does the primary read right?"
+  },
+  {
+   "img": "miss-mahjong--papel-picado-mahjong-playing-mat",
+   "name": "Papel Picado",
+   "brand": "Miss Mahjong",
+   "current_primary": "Teal & Aqua",
+   "current_tags": [
+    "teal",
+    "brights"
+   ],
+   "measured_dominant": "Green",
+   "measured_pct": {
+    "green": 98
+   },
+   "reason": "measured Green 98% vs Teal & Aqua 0%: does the primary read right?"
+  },
+  {
+   "img": "bird-bamboo--the-paradise-passion-pink",
+   "name": "The Paradise - Passion Pink",
+   "brand": "Bird & Bamboo",
+   "current_primary": "Purple & Lilac",
+   "current_tags": [
+    "purple",
+    "brights"
+   ],
+   "measured_dominant": "Pink",
+   "measured_pct": {
+    "pink": 88
+   },
+   "reason": "measured Pink 88% vs Purple & Lilac 0%: does the primary read right?"
+  },
+  {
+   "img": "peace-love-mahjong--border-lavender",
+   "name": "Border – Lavender",
+   "brand": "Peace Love Mahjong",
+   "current_primary": "Purple & Lilac",
+   "current_tags": [
+    "purple",
+    "simple"
+   ],
+   "measured_dominant": "Pink",
+   "measured_pct": {
+    "pink": 88
+   },
+   "reason": "measured Pink 88% vs Purple & Lilac 0%: does the primary read right?"
+  },
+  {
+   "img": "peace-love-mahjong--border-aqua",
+   "name": "Border – Aqua",
+   "brand": "Peace Love Mahjong",
+   "current_primary": "Teal & Aqua",
+   "current_tags": [
+    "teal",
+    "simple"
+   ],
+   "measured_dominant": "Green",
+   "measured_pct": {
+    "green": 87
+   },
+   "reason": "measured Green 87% vs Teal & Aqua 0%: does the primary read right?"
+  },
+  {
+   "img": "bird-bamboo--the-paradise-mahjong-mat-lovely-lavender",
+   "name": "The Paradise - Lovely Lavender",
+   "brand": "Bird & Bamboo",
+   "current_primary": "Purple & Lilac",
+   "current_tags": [
+    "purple",
+    "pastel"
+   ],
+   "measured_dominant": "Blue",
+   "measured_pct": {
+    "blue": 87
+   },
+   "reason": "measured Blue 87% vs Purple & Lilac 2%: does the primary read right?"
+  },
+  {
+   "img": "tigre-de-tartan--nantucket-basket",
+   "name": "Nantucket Basket",
+   "brand": "Tigre de Tartan",
+   "current_primary": "Yellow & Mustard",
+   "current_tags": [
+    "yellow",
+    "earthy"
+   ],
+   "measured_dominant": "Orange & Peach",
+   "measured_pct": {
+    "orange": 85
+   },
+   "reason": "measured Orange & Peach 85% vs Yellow & Mustard 0%: does the primary read right?"
+  },
+  {
+   "img": "peace-love-mahjong--border-red",
+   "name": "Border – Red",
+   "brand": "Peace Love Mahjong",
+   "current_primary": "Orange & Peach",
+   "current_tags": [
+    "orange",
+    "red",
+    "simple"
+   ],
+   "measured_dominant": "Red",
+   "measured_pct": {
+    "red": 86
+   },
+   "reason": "measured Red 86% vs Orange & Peach 2%: does the primary read right?"
+  },
+  {
+   "img": "britt-mills--scarlett-neoprene-mahjong-mat",
+   "name": "Scarlett Neoprene",
+   "brand": "Britt Mills",
+   "current_primary": "Purple & Lilac",
+   "current_tags": [
+    "purple",
+    "dark"
+   ],
+   "measured_dominant": "Pink",
+   "measured_pct": {
+    "pink": 83
+   },
+   "reason": "measured Pink 83% vs Purple & Lilac 0%: does the primary read right?"
+  },
+  {
+   "img": "mahj-mood--emerald-cove-mat",
+   "name": "Emerald Cove",
+   "brand": "Mahj Mood",
+   "current_primary": "Teal & Aqua",
+   "current_tags": [
+    "teal",
+    "dark"
+   ],
+   "measured_dominant": "Green",
+   "measured_pct": {
+    "green": 82
+   },
+   "reason": "measured Green 82% vs Teal & Aqua 0%: does the primary read right?"
+  },
+  {
+   "img": "oh-my-mahjong--sugarplum",
+   "name": "Sugarplum",
+   "brand": "Oh My Mahjong",
+   "current_primary": "Teal & Aqua",
+   "current_tags": [
+    "teal",
+    "pastel"
+   ],
+   "measured_dominant": "Blue",
+   "measured_pct": {
+    "pink": 15,
+    "blue": 82
+   },
+   "reason": "measured Blue 82% vs Teal & Aqua 0%: does the primary read right?"
+  },
+  {
+   "img": "peace-love-mahjong--border-violet",
+   "name": "Border – Violet",
+   "brand": "Peace Love Mahjong",
+   "current_primary": "Purple & Lilac",
+   "current_tags": [
+    "purple",
+    "simple"
+   ],
+   "measured_dominant": "Blue",
+   "measured_pct": {
+    "blue": 81
+   },
+   "reason": "measured Blue 81% vs Purple & Lilac 5%: does the primary read right?"
+  },
+  {
+   "img": "anders-ruff--palm-springs-mahjong-mat",
+   "name": "Palm Springs",
+   "brand": "Anders Ruff",
+   "current_primary": "Teal & Aqua",
+   "current_tags": [
+    "teal",
+    "pastel"
+   ],
+   "measured_dominant": "Green",
+   "measured_pct": {
+    "green": 73
+   },
+   "reason": "measured Green 73% vs Teal & Aqua 0%: does the primary read right?"
+  },
+  {
+   "img": "my-fair-mahjong--color-wave-green-center-pink-scallop",
+   "name": "Color Wave – Green Center- Pink Scallop",
+   "brand": "My Fair Mahjong",
+   "current_primary": "Teal & Aqua",
+   "current_tags": [
+    "teal",
+    "pink",
+    "simple"
+   ],
+   "measured_dominant": "Green",
+   "measured_pct": {
+    "pink": 29,
+    "green": 70
+   },
+   "reason": "measured Green 70% vs Teal & Aqua 0%: does the primary read right?"
+  },
+  {
+   "img": "maison-mahj--the-rue-de-paris",
+   "name": "The Rue de Paris",
+   "brand": "Maison Mahj",
+   "current_primary": "Red",
+   "current_tags": [
+    "red",
+    "dark"
+   ],
+   "measured_dominant": "Pink",
+   "measured_pct": {
+    "pink": 70
+   },
+   "reason": "measured Pink 70% vs Red 0%: does the primary read right?"
+  },
+  {
+   "img": "tigre-de-tartan--mahjong-mat-nantucket-basket-rope",
+   "name": "Nantucket Basket, Rope",
+   "brand": "Tigre de Tartan",
+   "current_primary": "Yellow & Mustard",
+   "current_tags": [
+    "yellow",
+    "earthy"
+   ],
+   "measured_dominant": "Orange & Peach",
+   "measured_pct": {
+    "orange": 66
+   },
+   "reason": "measured Orange & Peach 66% vs Yellow & Mustard 0%: does the primary read right?"
+  },
+  {
+   "img": "bespoke-mahjong--jungle-hot-pink",
+   "name": "Jungle Hot Pink",
+   "brand": "Bespoke Mahjong",
+   "current_primary": "Green",
+   "current_tags": [
+    "green",
+    "pink",
+    "animal",
+    "brights"
+   ],
+   "measured_dominant": "Pink",
+   "measured_pct": {
+    "pink": 64
+   },
+   "reason": "measured Pink 64% vs Green 0%: does the primary read right?"
+  },
+  {
+   "img": "peace-love-mahjong--cherry-bloom",
+   "name": "Cherry Bloom",
+   "brand": "Peace Love Mahjong",
+   "current_primary": "Orange & Peach",
+   "current_tags": [
+    "orange",
+    "red",
+    "brights"
+   ],
+   "measured_dominant": "Red",
+   "measured_pct": {
+    "pink": 34,
+    "red": 59
+   },
+   "reason": "measured Red 59% vs Orange & Peach 0%: does the primary read right?"
+  },
+  {
+   "img": "let-s-mahj-on--signature-logo-mat-light-pink",
+   "name": "Signature Logo Mat – Light Pink",
+   "brand": "Let's Mahj On",
+   "current_primary": "Purple & Lilac",
+   "current_tags": [
+    "purple",
+    "simple"
+   ],
+   "measured_dominant": "Pink",
+   "measured_pct": {
+    "pink": 59
+   },
+   "reason": "measured Pink 59% vs Purple & Lilac 0%: does the primary read right?"
+  },
+  {
+   "img": "mahj-moon--retro-waves",
+   "name": "Retro Waves – Pink & Aqua",
+   "brand": "Mahj & Moon",
+   "current_primary": "Purple & Lilac",
+   "current_tags": [
+    "purple",
+    "teal",
+    "pastel"
+   ],
+   "measured_dominant": "Pink",
+   "measured_pct": {
+    "pink": 59,
+    "teal": 20,
+    "blue": 21
+   },
+   "reason": "measured Pink 59% vs Purple & Lilac 0%: does the primary read right?"
+  },
+  {
+   "img": "mahj-moon--seashell-american",
+   "name": "Seashell American",
+   "brand": "Mahj & Moon",
+   "current_primary": "Purple & Lilac",
+   "current_tags": [
+    "purple",
+    "simple"
+   ],
+   "measured_dominant": "Pink",
+   "measured_pct": {
+    "pink": 62,
+    "blue": 14
+   },
+   "reason": "measured Pink 62% vs Purple & Lilac 4%: does the primary read right?"
+  },
+  {
+   "img": "betty-june-jeannette--allie-purple",
+   "name": "Allie (Purple)",
+   "brand": "Betty June & Jeannette",
+   "current_primary": "Teal & Aqua",
+   "current_tags": [
+    "teal",
+    "purple",
+    "pastel"
+   ],
+   "measured_dominant": "Green",
+   "measured_pct": {
+    "green": 58,
+    "blue": 21
+   },
+   "reason": "measured Green 58% vs Teal & Aqua 0%: does the primary read right?"
+  },
+  {
+   "img": "britt-mills--mabel-neoprene-mahjong-mat",
+   "name": "Mabel Neoprene",
+   "brand": "Britt Mills",
+   "current_primary": "Purple & Lilac",
+   "current_tags": [
+    "purple",
+    "simple"
+   ],
+   "measured_dominant": "Pink",
+   "measured_pct": {
+    "pink": 55,
+    "red": 7
+   },
+   "reason": "measured Pink 55% vs Purple & Lilac 0%: does the primary read right?"
+  },
+  {
+   "img": "peace-love-mahjong--plaid-spring-breeze",
+   "name": "Plaid - Spring Breeze",
+   "brand": "Peace Love Mahjong",
+   "current_primary": "Teal & Aqua",
+   "current_tags": [
+    "teal",
+    "pastel"
+   ],
+   "measured_dominant": "Green",
+   "measured_pct": {
+    "pink": 7,
+    "green": 62,
+    "teal": 8
+   },
+   "reason": "measured Green 62% vs Teal & Aqua 8%: does the primary read right?"
+  },
+  {
+   "img": "let-s-be-besties--purple-royal-peacock",
+   "name": "Purple Royal Peacock",
+   "brand": "Let's Be Besties",
+   "current_primary": "Purple & Lilac",
+   "current_tags": [
+    "purple",
+    "teal",
+    "brights"
+   ],
+   "measured_dominant": "Blue",
+   "measured_pct": {
+    "pink": 31,
+    "teal": 16,
+    "blue": 53
+   },
+   "reason": "measured Blue 53% vs Purple & Lilac 0%: does the primary read right?"
+  },
+  {
+   "img": "oh-my-mahjong--hawthorne",
+   "name": "Hawthorne",
+   "brand": "Oh My Mahjong",
+   "current_primary": "Purple & Lilac",
+   "current_tags": [
+    "purple",
+    "dark"
+   ],
+   "measured_dominant": "Blue",
+   "measured_pct": {
+    "blue": 52
+   },
+   "reason": "measured Blue 52% vs Purple & Lilac 0%: does the primary read right?"
+  },
+  {
+   "img": "bird-bamboo--jubilee-bloom",
+   "name": "Jubilee Bloom",
+   "brand": "Bird & Bamboo",
+   "current_primary": "Purple & Lilac",
+   "current_tags": [
+    "purple",
+    "simple"
+   ],
+   "measured_dominant": "Pink",
+   "measured_pct": {
+    "pink": 51,
+    "green": 10,
+    "blue": 24
+   },
+   "reason": "measured Pink 51% vs Purple & Lilac 0%: does the primary read right?"
+  },
+  {
+   "img": "mahj-moon--pink-citrus",
+   "name": "Pink Citrus",
+   "brand": "Mahj & Moon",
+   "current_primary": "Pink",
+   "current_tags": [
+    "pink",
+    "green",
+    "simple"
+   ],
+   "measured_dominant": "Green",
+   "measured_pct": {
+    "pink": 6,
+    "yellow": 11,
+    "green": 57
+   },
+   "reason": "measured Green 57% vs Pink 6%: does the primary read right?"
+  },
+  {
+   "img": "peace-love-mahjong--hot-tips-bejeweled",
+   "name": "Hot Tips – Bejeweled",
+   "brand": "Peace Love Mahjong",
+   "current_primary": "Teal & Aqua",
+   "current_tags": [
+    "teal",
+    "brights"
+   ],
+   "measured_dominant": "Green",
+   "measured_pct": {
+    "green": 63,
+    "teal": 13,
+    "blue": 6
+   },
+   "reason": "measured Green 63% vs Teal & Aqua 13%: does the primary read right?"
+  },
+  {
+   "img": "let-s-be-besties--summer-wash",
+   "name": "Summer Wash",
+   "brand": "Let's Be Besties",
+   "current_primary": "Teal & Aqua",
+   "current_tags": [
+    "teal",
+    "brights"
+   ],
+   "measured_dominant": "Blue",
+   "measured_pct": {
+    "teal": 25,
+    "blue": 75
+   },
+   "reason": "measured Blue 75% vs Teal & Aqua 25%: does the primary read right?"
+  },
+  {
+   "img": "maison-mahj--the-stripe-house",
+   "name": "The Stripe House",
+   "brand": "Maison Mahj",
+   "current_primary": "Purple & Lilac",
+   "current_tags": [
+    "purple",
+    "brights"
+   ],
+   "measured_dominant": "Pink",
+   "measured_pct": {
+    "pink": 48
+   },
+   "reason": "measured Pink 48% vs Purple & Lilac 0%: does the primary read right?"
+  },
+  {
+   "img": "anders-ruff--palm-estate-mahjong-mat",
+   "name": "Palm Estate",
+   "brand": "Anders Ruff",
+   "current_primary": "Blue",
+   "current_tags": [
+    "blue",
+    "green",
+    "pastel"
+   ],
+   "measured_dominant": "Teal & Aqua",
+   "measured_pct": {
+    "green": 18,
+    "teal": 47
+   },
+   "reason": "measured Teal & Aqua 47% vs Blue 0%: does the primary read right?"
+  },
+  {
+   "img": "britt-mills--daphne-neoprene-mahjong-mat",
+   "name": "Daphne Neoprene",
+   "brand": "Britt Mills",
+   "current_primary": "Purple & Lilac",
+   "current_tags": [
+    "purple",
+    "pastel"
+   ],
+   "measured_dominant": "Pink",
+   "measured_pct": {
+    "pink": 46,
+    "green": 6
+   },
+   "reason": "measured Pink 46% vs Purple & Lilac 0%: does the primary read right?"
+  },
+  {
+   "img": "mahj-moon--pink-damask-american",
+   "name": "Pink Damask American",
+   "brand": "Mahj & Moon",
+   "current_primary": "Red",
+   "current_tags": [
+    "red",
+    "brights"
+   ],
+   "measured_dominant": "Pink",
+   "measured_pct": {
+    "pink": 66,
+    "red": 22
+   },
+   "reason": "measured Pink 66% vs Red 22%: does the primary read right?"
+  },
+  {
+   "img": "mahjong-register--pretty-in-plum-premium",
+   "name": "Pretty in Plum Premium",
+   "brand": "Mahjong Register",
+   "current_primary": "Purple & Lilac",
+   "current_tags": [
+    "purple",
+    "brights"
+   ],
+   "measured_dominant": "Pink",
+   "measured_pct": {
+    "pink": 44,
+    "red": 9
+   },
+   "reason": "measured Pink 44% vs Purple & Lilac 0%: does the primary read right?"
+  },
+  {
+   "img": "sunday-mahjong--festive-plaid-premium",
+   "name": "Festive Plaid Premium",
+   "brand": "Sunday Mahjong",
+   "current_primary": "Red",
+   "current_tags": [
+    "red",
+    "green",
+    "brights"
+   ],
+   "measured_dominant": "Green",
+   "measured_pct": {
+    "orange": 16,
+    "green": 43
+   },
+   "reason": "measured Green 43% vs Red 0%: does the primary read right?"
+  },
+  {
+   "img": "royal-mahjong-society--cottage",
+   "name": "Cottage",
+   "brand": "Royal Mahjong Society",
+   "current_primary": "Pink",
+   "current_tags": [
+    "pink",
+    "blue",
+    "pastel"
+   ],
+   "measured_dominant": "Blue",
+   "measured_pct": {
+    "pink": 18,
+    "green": 9,
+    "teal": 9,
+    "blue": 59
+   },
+   "reason": "measured Blue 59% vs Pink 18%: does the primary read right?"
+  },
+  {
+   "img": "splash-of-color--hydrangea-blooms",
+   "name": "Hydrangea Blooms",
+   "brand": "Splash of Color",
+   "current_primary": "Purple & Lilac",
+   "current_tags": [
+    "purple",
+    "simple"
+   ],
+   "measured_dominant": "Blue",
+   "measured_pct": {
+    "pink": 34,
+    "green": 11,
+    "blue": 40
+   },
+   "reason": "measured Blue 40% vs Purple & Lilac 0%: does the primary read right?"
+  },
+  {
+   "img": "bespoke-mahjong--jungle-turquoise",
+   "name": "Jungle Turquoise",
+   "brand": "Bespoke Mahjong",
+   "current_primary": "Green",
+   "current_tags": [
+    "green",
+    "teal",
+    "blue",
+    "animal",
+    "pastel"
+   ],
+   "measured_dominant": "Blue",
+   "measured_pct": {
+    "green": 12,
+    "blue": 52
+   },
+   "reason": "measured Blue 52% vs Green 12%: does the primary read right?"
+  },
+  {
+   "img": "oh-my-mahjong--radiance",
+   "name": "Radiance",
+   "brand": "Oh My Mahjong",
+   "current_primary": "Teal & Aqua",
+   "current_tags": [
+    "teal",
+    "pink",
+    "pastel"
+   ],
+   "measured_dominant": "Blue",
+   "measured_pct": {
+    "pink": 20,
+    "teal": 20,
+    "blue": 57
+   },
+   "reason": "measured Blue 57% vs Teal & Aqua 20%: does the primary read right?"
+  }
+ ]
+}

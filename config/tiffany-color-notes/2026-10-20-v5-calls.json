@@ -183,6 +183,60 @@
     "purple"
    ],
    "note": "Blue primary, also Green, also Purple (magenta/berry, third), accent Pink (subtle)."
+  },
+  {
+   "brand": "Miss Mahjong",
+   "name": "Powder Blue Garden Party",
+   "img": "miss-mahjong--powder-blue-garden-party",
+   "primary": "blue",
+   "also": [
+    "green",
+    "yellow",
+    "florals"
+   ],
+   "note": "Blue primary; also Green, Yellow; accents Red, Purple; multicolor floral -> Multicolor Florals. Photo: she can't see the whole mat; missmahjong.com (products/<handle>.js, 11 images) has only corner/close-up shots, no full flat photo, so the current photo stays (flagged)."
+  },
+  {
+   "brand": "Miss Mahjong",
+   "name": "Deep Green Garden Party",
+   "img": "miss-mahjong--deep-green-garden-party-mahjong-playing-mat",
+   "primary": "green",
+   "also": [
+    "purple",
+    "yellow",
+    "florals"
+   ],
+   "note": "GREEN primary (not Blue); also Purple, Yellow; accent Neutral (white); multicolor floral -> Multicolor Florals. Same photo issue: store has only corner/close-up shots, no full flat photo (flagged)."
+  },
+  {
+   "brand": "Maison Mahj",
+   "name": "Afternoon Tea",
+   "img": "maison-mahj--the-afternoon-tea",
+   "primary": "pink",
+   "also": [
+    "blue"
+   ],
+   "note": "Pink primary, also Blue."
+  },
+  {
+   "brand": "Amanda Toppe",
+   "name": "City Queen",
+   "img": "amanda-toppe--city-queen",
+   "primary": "blue",
+   "also": [
+    "purple"
+   ],
+   "note": "Blue, also Purple (lavender), accent Green."
+  },
+  {
+   "brand": "Amanda Toppe",
+   "name": "Hydrangea Bliss",
+   "img": "amanda-toppe--hydrangea-bliss",
+   "primary": "blue",
+   "also": [
+    "green"
+   ],
+   "note": "Blue, also Green."
   }
  ],
  "mood_calls": [
@@ -213,6 +267,13 @@
    "img": "oh-my-mahjong--chantilly",
    "mood": "pastel",
    "note": "her call: Pastels"
+  },
+  {
+   "brand": "Oh My Mahjong",
+   "name": "Darjeeling",
+   "img": "oh-my-mahjong--darjeeling",
+   "mood": "brights",
+   "note": "her call: Brights (bright blue + bright green), not Dark & Moody / Pastels"
   }
  ],
  "rules": [
@@ -301,6 +362,30 @@
    "blue",
    "green",
    "purple"
+  ],
+  "miss-mahjong--powder-blue-garden-party": [
+   "blue",
+   "green",
+   "yellow",
+   "florals"
+  ],
+  "miss-mahjong--deep-green-garden-party-mahjong-playing-mat": [
+   "green",
+   "purple",
+   "yellow",
+   "florals"
+  ],
+  "maison-mahj--the-afternoon-tea": [
+   "pink",
+   "blue"
+  ],
+  "amanda-toppe--city-queen": [
+   "blue",
+   "purple"
+  ],
+  "amanda-toppe--hydrangea-bliss": [
+   "blue",
+   "green"
   ]
  },
  "accent_calls": {
@@ -324,11 +409,31 @@
   ],
   "oh-my-mahjong--elysium": [
    "pink"
+  ],
+  "miss-mahjong--powder-blue-garden-party": [
+   "red",
+   "purple"
+  ],
+  "miss-mahjong--deep-green-garden-party-mahjong-playing-mat": [
+   "neutral"
+  ],
+  "amanda-toppe--city-queen": [
+   "green"
   ]
  },
  "coprimary": {
   "oh-my-mahjong--darjeeling": [
    "green"
   ]
- }
+ },
+ "photo_flags": [
+  {
+   "img": "miss-mahjong--powder-blue-garden-party",
+   "issue": "cropped/limited view; no full flat photo on missmahjong.com (checked products .js Oct 20)"
+  },
+  {
+   "img": "miss-mahjong--deep-green-garden-party-mahjong-playing-mat",
+   "issue": "cropped/limited view; no full flat photo on missmahjong.com (checked products .js Oct 20)"
+  }
+ ]
 }

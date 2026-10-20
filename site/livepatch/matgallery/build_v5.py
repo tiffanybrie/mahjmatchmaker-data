@@ -407,12 +407,36 @@ for a in RADD:
     else:
         vis.append(dict(img=a['gallery_id'], key=a.get('fym_key', ''), name=a['name'], raw=a['name'], brand=a['brand'], url='', ret=1, code='', old=c['primary'], secs=secs, radd=1))
 
+# ---------- v5: second colors by Claude (Tiffany: she only sends main-color fixes; Claude identifies SECOND colors) ----------
+# For every mat she hasn't called (no v5 final call, no tiffany-chat override, not one of the 53 Claude photo-tagged by eye): a color
+# measured at >= 15% of the mat (accents file 'major') becomes an also-color. Logged to config/mat-also-claude-v5.json.
+ACC = json.load(open(P('config/mat-accent-colors.json')))['mats']
+TCALLED = set(FINAL) | {x['img'] for x in vis if str((MC.get(x['key']) or {}).get('by', '')).startswith('tiffany')}
+COLS8 = ('pink', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple')
+NEIGH = {'purple': ('pink', 'blue'), 'pink': ('purple', 'red', 'orange'), 'blue': ('purple', 'teal'), 'teal': ('blue', 'green'), 'green': ('teal', 'yellow'),
+         'red': ('pink', 'orange'), 'orange': ('red', 'yellow', 'pink'), 'yellow': ('orange', 'green'),
+         'earthy': ('red', 'orange', 'yellow'), 'neutral': ('orange', 'yellow', 'pink'), 'dark': (), 'bw': ()}
+also_log = {}
+for x in vis:
+    if x['img'] in TCALLED or x.get('new53') or x['secs'] == ['holiday']:
+        continue
+    # spot check (30 promotions by eye): neighbouring hues of the primary are where the measurement misreads (violet->blue,
+    # lavender->pink, rust leather->red, peach cream->orange), so those stay accents (tier 3), never also-colors
+    nb = NEIGH.get(x['secs'][0], ())
+    add = [c for c in ACC.get(x['img'], {}).get('major', []) if c not in x['secs'] and c not in REMOVED.get(x['img'], []) and c not in nb]
+    if add:
+        i = next((k for k, c in enumerate(x['secs']) if k > 0 and c not in COLS8), len(x['secs']))  # never displaces the primary
+        x['secs'] = x['secs'][:i] + add + x['secs'][i:]
+        also_log[x['img']] = add
+json.dump({'by': 'claude-photo-review', 'date': '2026-10-20', 'method': 'measured palette (config/mat-accent-colors.json, thresholds eye-checked on contact sheets): a color covering >= 15% of the mat is promoted to an also-color. Never applied to mats Tiffany has called (her v5 final calls or any tiffany-chat override) or to the 53 new mats (tagged by eye in tiffany-color-notes/2026-10-20-new53-claude-tags.json).',
+           'count': len(also_log), 'mats': also_log}, open(P('config/mat-also-claude-v5.json'), 'w'), indent=1, ensure_ascii=False)
+
 # ---------- v5: accent colors (config/mat-accent-colors.json, claude-measured): tier 3 in color sections + AND filter ----------
 ACC = json.load(open(P('config/mat-accent-colors.json')))['mats']
 ACOL = {'pink', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple', 'neutral', 'earthy', 'dark'}
 for x in vis:
-    if x['secs'] == ['holiday']:
-        x['acc'] = []; continue  # holiday mats stay out of color sections
+    if x['secs'] == ['holiday']:  # holiday mats stay out of color sections; their measured colors only count in combos (Holiday + Red)
+        x['acc'] = []; x['hacc'] = [a for a in ACC.get(x['img'], {}).get('accents', []) if a in ACOL]; continue
     x['acc'] = [a for a in ACC.get(x['img'], {}).get('accents', []) if a in ACOL and a not in x['secs'] and a not in REMOVED.get(x['img'], [])]
     if x['img'] in V5.get('accent_calls', {}):  # Tiffany named this mat's accents: hers replace the measured ones
         x['acc'] = []
@@ -446,7 +470,7 @@ with open(os.path.join(HERE, 'hidden_oct20.csv'), 'w', newline='') as f:
                 w.writerow([img, man[img], BRANDFIX.get(Fi[img][2], Fi[img][2]), Fi[img][1], f'already out (held low-confidence list); would also be hidden: {lab}: {a["detail"][:100]}'])
 json.dump({'new53_added': added53, 'new53_hidden': hidden53, 'new53_sections': {x['img']: x['secs'] for x in vis if x.get('new53')},
            'v5_final_calls': v5log['final'], 'v5_pastel_to_brights': v5log['to_brights'], 'v5_simple': v5log['simple'],
-           'removed_mats': removed_mats, 'section_tiers_active': tiers,
+           'removed_mats': removed_mats, 'claude_also_added': len(also_log), 'section_tiers_active': tiers,
            'section_counts_active': cnt, 'section_counts_if_retired_shown': cnt_with_ret, 'unique_active_mats': len(active),
            'retired': len(retired), 'hidden': len(hidden), 'dedupe_groups': len(dd_rows), 'held_low_out': len(held),
            'applied_color_calls': applied, 'unmatched_color_calls': unmatched,
@@ -457,7 +481,7 @@ json.dump({'new53_added': added53, 'new53_hidden': hidden53, 'new53_sections': {
 CSS = open(os.path.join(HERE, 'style.css')).read() + '.mmg-hint{font-size:.85em;color:#6f655d;margin:.2em 0 .6em}\n.mmg-combo .mmg-empty{display:none}\n.mmg-chip.mmg-tog{border-style:dashed}\n.mmg-watch{margin-top:auto;align-self:flex-start;border:1.5px solid #9a8f86;color:#6f655d;font-size:.68em;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:10px}\n.mmg-chip.mmg-tog[aria-pressed="true"]{border-style:solid}\n'
 # Image swaps (Tiffany Oct 20): use a clean flat photo when a store's photo has text/cropping
 IMG_ALIAS = {'four-winds-social--fws-x-mahj-mood-collab-beyond-the-ribbon': 'mahj-mood--beyond-the-ribbon-four-winds-social-collab-mat-benefitting-pink-fund-pre-order-ships-end-of-december'}
-data = json.dumps([[IMG_ALIAS.get(x['img'], x['img']), x['name'], x['brand'], x['url'], x['ret'], x['secs'], x['code'], 1 if x['img'] in WATCH else 0, x['acc']] + ([V5['coprimary'][x['img']]] if x['img'] in V5.get('coprimary', {}) else []) for x in vis],
+data = json.dumps([[IMG_ALIAS.get(x['img'], x['img']), x['name'], x['brand'], x['url'], x['ret'], x['secs'], x['code'], 1 if x['img'] in WATCH else 0, x['acc'], V5.get('coprimary', {}).get(x['img'], [])] + ([x['hacc']] if x.get('hacc') else []) for x in vis],
                   separators=(',', ':'), ensure_ascii=False).replace('</', '<\\/')
 chips = ('<button type="button" class="mmg-chip" data-f="all" aria-pressed="true">All / Clear</button>'
          + ''.join(f'<button type="button" class="mmg-chip" data-f="{c}" aria-pressed="false">{html.escape(l)}</button>' for c, l in COL if cnt[c])
@@ -472,15 +496,15 @@ secs += '<section class="mmg-sec" data-c="retired"><h2 class="mmg-h">Retired mat
 JS = r"""(function(){var r=document.currentScript.parentNode,R=JSON.parse(r.querySelector('script[type="application/json"]').textContent),B='https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@__C__/assets/mats/gallery/',f='all',br='',hr=true;
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function card(x,i){var shop=x[3]?'<a class="mmg-shop" href="'+esc(x[3])+'" target="_blank" rel="sponsored noopener">Shop the mat</a>':(x[4]?'<span class="mmg-ret">Retired</span>':(x[7]?'<span class="mmg-watch">One to watch</span>':''));var img='<img src="'+B+x[0]+'.webp" alt="'+esc(x[2]+' '+x[1])+' mahjong mat" loading="lazy" decoding="async" width="640" height="640">';return '<li class="mmg-card" data-b="'+esc(x[2])+'" data-i="'+i+'"'+(x[4]?' data-r="1"':'')+'>'+(x[3]?'<a class="mmg-img" href="'+esc(x[3])+'" target="_blank" rel="sponsored noopener">'+img+'</a>':'<span class="mmg-img">'+img+'</span>')+'<div class="mmg-body"><span class="mmg-brand">'+esc(x[2])+'</span><span class="mmg-name">'+esc(x[1])+'</span>'+(x[6]?'<a class="mmg-code" href="'+esc(x[6])+'">'+esc(x[2])+' guide</a>':'')+shop+'</div></li>'}
-function has(x,c){return x[5].indexOf(c)>-1||x[8].indexOf(c)>-1}function tier(x,C){var pr=[x[5][0]].concat(x[9]||[]);if(C.some(function(c){return pr.indexOf(c)>-1})&&C.every(function(c){return x[5].indexOf(c)>-1}))return 0;if(C.every(function(c){return x[5].indexOf(c)>-1})){var p=0;C.forEach(function(c){p=Math.max(p,x[5].indexOf(c))});return 1+Math.min(p-1,3)/10}return 2}
+function has(x,c,m){return x[5].indexOf(c)>-1||x[8].indexOf(c)>-1||(m&&x[10]&&x[10].indexOf(c)>-1)}function tier(x,C){var pr=[x[5][0]].concat(x[9]);if(C.some(function(c){return pr.indexOf(c)>-1})&&C.every(function(c){return x[5].indexOf(c)>-1}))return 0;if(C.every(function(c){return x[5].indexOf(c)>-1})){var p=0;C.forEach(function(c){p=Math.max(p,x[5].indexOf(c))});return 1+Math.min(p-1,3)/10}return 2}
 r.querySelectorAll('.mmg-sec').forEach(function(s){var c=s.dataset.c,h='';var L=[];R.forEach(function(x,i){if(c==='retired'?x[4]:has(x,c))L.push(i)});L.sort(function(a,b){function k(i){var x=R[i];return(x[2]==='Mahjong Studios'?0.5:0)+(c==='retired'?0:tier(x,[c]))}return k(a)-k(b)||a-b});L.forEach(function(i){h+=card(R[i],i)});s.querySelector('.mmg-grid').innerHTML=h});
 var chips=r.querySelectorAll('.mmg-chip[data-f]'),tog=r.querySelector('.mmg-tog'),sel=r.querySelector('.mmg-brand-sel'),tot=r.querySelector('.mmg-total'),cmb=r.querySelector('.mmg-combo'),S=[],LB={};
 chips.forEach(function(x){LB[x.dataset.f]=x.textContent});
-function combo(){var L=[],h='';R.forEach(function(x,i){if(S.every(function(c){return has(x,c)})&&(!br||x[2]===br)&&!(hr&&x[4]))L.push(i)});L.sort(function(a,b){function k(i){var x=R[i];return(x[2]==='Mahjong Studios'?0.5:0)+tier(x,S)}return k(a)-k(b)||a-b});L.forEach(function(i){h+=card(R[i],i)});cmb.querySelector('.mmg-h').textContent='Mats with '+S.map(function(c){return LB[c]}).join(' + ');cmb.querySelector('.mmg-grid').innerHTML=h;cmb.querySelector('.mmg-empty').style.display=L.length?'none':'block';return L.length}
+function combo(){var L=[],h='';R.forEach(function(x,i){if(S.every(function(c){return has(x,c,1)})&&(!br||x[2]===br)&&!(hr&&x[4]))L.push(i)});L.sort(function(a,b){function k(i){var x=R[i];return(x[2]==='Mahjong Studios'?0.5:0)+tier(x,S)}return k(a)-k(b)||a-b});L.forEach(function(i){h+=card(R[i],i)});cmb.querySelector('.mmg-h').textContent='Mats with '+S.map(function(c){return LB[c]}).join(' + ');cmb.querySelector('.mmg-grid').innerHTML=h;cmb.querySelector('.mmg-empty').style.display=L.length?'none':'block';return L.length}
 function go(){var seen={},all=0,f=S.length===1?S[0]:(S.length?'':'all');chips.forEach(function(x){var on=x.dataset.f==='all'?!S.length:S.indexOf(x.dataset.f)>-1;x.setAttribute('aria-pressed',on?'true':'false')});tog.setAttribute('aria-pressed',hr?'true':'false');
-if(S.length>1){r.querySelectorAll('.mmg-sec').forEach(function(s){s.hidden=true});cmb.hidden=false;tot.textContent=combo()+' mats';return}
+if(S.length>1){r.querySelectorAll('.mmg-sec').forEach(function(s){s.hidden=true});cmb.hidden=false;var n=combo();tot.textContent=n+(n===1?' mat':' mats');return}
 cmb.hidden=true;cmb.querySelector('.mmg-grid').innerHTML='';
-r.querySelectorAll('.mmg-sec').forEach(function(s){var c=s.dataset.c,on=f==='all'||c===f,n=0;s.hidden=!on;if(!on)return;s.querySelectorAll('.mmg-card').forEach(function(d){var ok=(!br||d.dataset.b===br)&&!(hr&&c!=='retired'&&d.dataset.r);d.hidden=!ok;if(ok){n++;if(!seen[d.dataset.i]){seen[d.dataset.i]=1;all++}}});s.querySelector('.mmg-empty').style.display=n?'none':'block';if(!n&&f==='all')s.hidden=true});tot.textContent=all+' mats'}
+r.querySelectorAll('.mmg-sec').forEach(function(s){var c=s.dataset.c,on=f==='all'||c===f,n=0;s.hidden=!on;if(!on)return;s.querySelectorAll('.mmg-card').forEach(function(d){var ok=(!br||d.dataset.b===br)&&!(hr&&c!=='retired'&&d.dataset.r);d.hidden=!ok;if(ok){n++;if(!seen[d.dataset.i]){seen[d.dataset.i]=1;all++}}});s.querySelector('.mmg-empty').style.display=n?'none':'block';if(!n&&f==='all')s.hidden=true});tot.textContent=all+(all===1?' mat':' mats')}
 chips.forEach(function(x){x.addEventListener('click',function(){var c=x.dataset.f,i=S.indexOf(c);if(c==='all'){S=[]}else if(c==='retired'){S=i>-1?[]:['retired']}else{S=S.filter(function(v){return v!=='retired'});i=S.indexOf(c);if(i>-1)S.splice(i,1);else S.push(c)}go()})});tog.addEventListener('click',function(){hr=!hr;go()});sel.addEventListener('change',function(){br=sel.value;go()});go()})();""".replace('__C__', COMMIT)
 print(f"""<style>{CSS}</style>
 <div class="mmg"><span class="mmg-eyebrow">The Mat Library</span>

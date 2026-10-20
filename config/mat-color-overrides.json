@@ -1865,6 +1865,105 @@
     "purple"
    ],
    "note": "Blue primary, also Green, also Purple (magenta/berry, third), accent Pink (subtle)."
+  },
+  "missmahjong.com/powder-blue-garden-party-mahjong-playing-mat": {
+   "primary": "blue",
+   "secondary": [
+    "green",
+    "yellow"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "miss-mahjong--powder-blue-garden-party",
+   "light": 0.545,
+   "chroma": 0.42,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "green",
+    "yellow",
+    "florals"
+   ],
+   "note": "Blue primary; also Green, Yellow; accents Red, Purple; multicolor floral -> Multicolor Florals. Photo: she can't see the whole mat; missmahjong.com (products/<handle>.js, 11 images) has only corner/close-up shots, no full flat photo, so the current photo stays (flagged)."
+  },
+  "missmahjong.com/deep-green-garden-party-mahjong-playing-mat": {
+   "primary": "green",
+   "secondary": [
+    "green",
+    "purple"
+   ],
+   "tone": "blend",
+   "holiday": false,
+   "skip": false,
+   "image": "miss-mahjong--deep-green-garden-party-mahjong-playing-mat",
+   "light": 0.42,
+   "chroma": 0.36,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "purple",
+    "yellow",
+    "florals"
+   ],
+   "note": "GREEN primary (not Blue); also Purple, Yellow; accent Neutral (white); multicolor floral -> Multicolor Florals. Same photo issue: store has only corner/close-up shots, no full flat photo (flagged)."
+  },
+  "maisonmahj.com/the-afternoon-tea-mat": {
+   "primary": "pink",
+   "secondary": [
+    "pink",
+    "dark"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "maison-mahj--the-afternoon-tea",
+   "light": 0.608,
+   "chroma": 0.353,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "blue"
+   ],
+   "note": "Pink primary, also Blue."
+  },
+  "amandatoppeart.com/city-queen": {
+   "primary": "blue",
+   "secondary": [
+    "pink",
+    "purple"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "amanda-toppe--city-queen",
+   "light": 0.398,
+   "chroma": 0.656,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "purple"
+   ],
+   "note": "Blue, also Purple (lavender), accent Green."
+  },
+  "alb:coquette:Hydrangea Bliss": {
+   "primary": "blue",
+   "secondary": [
+    "green",
+    "neutral"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "amanda-toppe--hydrangea-bliss",
+   "light": 0.725,
+   "chroma": 0.27,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "green"
+   ],
+   "note": "Blue, also Green."
   }
  }
 }

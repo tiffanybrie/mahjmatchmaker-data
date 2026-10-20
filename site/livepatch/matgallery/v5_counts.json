@@ -289,6 +289,11 @@
   "mahj-moon--scalloped-tropical-palm",
   "sunday-mahjong--plum-panda-premium",
   "sunday-mahjong--sunday-premium",
+  "amanda-toppe--city-queen",
+  "amanda-toppe--hydrangea-bliss",
+  "maison-mahj--the-afternoon-tea",
+  "miss-mahjong--deep-green-garden-party-mahjong-playing-mat",
+  "miss-mahjong--powder-blue-garden-party",
   "oh-my-mahjong--astor",
   "oh-my-mahjong--chantilly",
   "oh-my-mahjong--darjeeling",
@@ -492,51 +497,52 @@
  "removed_mats": [
   "amore-mahjong--manor-garden"
  ],
+ "claude_also_added": 184,
  "section_tiers_active": {
   "pink": {
-   "primary": 139,
-   "also": 31,
-   "accent": 113
+   "primary": 140,
+   "also": 70,
+   "accent": 72
   },
   "red": {
    "primary": 21,
-   "also": 28,
-   "accent": 20
+   "also": 32,
+   "accent": 17
   },
   "orange": {
    "primary": 24,
-   "also": 27,
-   "accent": 39
+   "also": 31,
+   "accent": 35
   },
   "yellow": {
    "primary": 17,
-   "also": 9,
-   "accent": 23
+   "also": 29,
+   "accent": 5
   },
   "green": {
-   "primary": 106,
-   "also": 27,
-   "accent": 142
+   "primary": 107,
+   "also": 104,
+   "accent": 65
   },
   "teal": {
    "primary": 46,
-   "also": 7,
-   "accent": 47
+   "also": 31,
+   "accent": 23
   },
   "blue": {
-   "primary": 149,
-   "also": 27,
-   "accent": 104
+   "primary": 147,
+   "also": 76,
+   "accent": 56
   },
   "purple": {
    "primary": 45,
-   "also": 12,
-   "accent": 18
+   "also": 19,
+   "accent": 13
   },
   "neutral": {
    "primary": 53,
    "also": 2,
-   "accent": 87
+   "accent": 88
   },
   "earthy": {
    "primary": 36,
@@ -570,7 +576,7 @@
   },
   "florals": {
    "primary": 21,
-   "also": 15,
+   "also": 17,
    "accent": 0
   },
   "animal": {
@@ -590,44 +596,44 @@
   }
  },
  "section_counts_active": {
-  "pink": 283,
-  "red": 69,
+  "pink": 282,
+  "red": 70,
   "orange": 90,
-  "yellow": 49,
-  "green": 275,
+  "yellow": 51,
+  "green": 276,
   "teal": 100,
-  "blue": 280,
-  "purple": 75,
-  "neutral": 142,
+  "blue": 279,
+  "purple": 77,
+  "neutral": 143,
   "earthy": 175,
   "dark": 101,
   "bw": 13,
   "simple": 171,
   "pastel": 148,
   "brights": 204,
-  "florals": 36,
+  "florals": 38,
   "animal": 37,
   "holiday": 64,
   "multi": 0,
   "retired": 29
  },
  "section_counts_if_retired_shown": {
-  "pink": 298,
-  "red": 72,
+  "pink": 297,
+  "red": 73,
   "orange": 93,
-  "yellow": 52,
-  "green": 288,
+  "yellow": 54,
+  "green": 289,
   "teal": 106,
-  "blue": 291,
-  "purple": 78,
-  "neutral": 147,
+  "blue": 290,
+  "purple": 80,
+  "neutral": 148,
   "earthy": 179,
   "dark": 103,
   "bw": 13,
   "simple": 173,
   "pastel": 157,
   "brights": 217,
-  "florals": 39,
+  "florals": 41,
   "animal": 37,
   "holiday": 65,
   "multi": 0
@@ -1567,6 +1573,55 @@
    [
     "green",
     "purple"
+   ]
+  ],
+  [
+   "Miss Mahjong",
+   "Powder Blue Garden Party",
+   "Powder Blue Garden Party",
+   "blue",
+   [
+    "green",
+    "yellow",
+    "florals"
+   ]
+  ],
+  [
+   "Miss Mahjong",
+   "Deep Green Garden Party",
+   "Deep Green Garden Party Mahjong Playing",
+   "green",
+   [
+    "purple",
+    "yellow",
+    "florals"
+   ]
+  ],
+  [
+   "Maison Mahj",
+   "Afternoon Tea",
+   "The Afternoon Tea",
+   "pink",
+   [
+    "blue"
+   ]
+  ],
+  [
+   "Amanda Toppe",
+   "City Queen",
+   "City Queen",
+   "blue",
+   [
+    "purple"
+   ]
+  ],
+  [
+   "Amanda Toppe",
+   "Hydrangea Bliss",
+   "Hydrangea Bliss",
+   "blue",
+   [
+    "green"
    ]
   ]
  ],
