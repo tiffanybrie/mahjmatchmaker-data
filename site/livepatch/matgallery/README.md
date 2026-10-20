@@ -16,3 +16,9 @@ Rebuild: `python3 build_v2.py <mat-audit report.csv> <phash pairs.json> > matgal
 - Retired mats (incl. the "(retired)"-named album mats) live in a "Retired mats" section at the bottom; "Hide retired" (on by default) keeps them out of the color sections.
 - Duplicates collapsed (dedupe_oct20.csv); placeholders / wrong images / no-mat photos hidden (hidden_oct20.csv). Raw store titles cleaned; brand spellings fixed.
 - STANDING RULE: Mahjong Studios always sorts to the bottom of every section.
+
+## v3 (Oct 20 late): `matgallery-v3.html`, built by `build_v3.py` (same args as v2)
+- New sections: Earthy (muted, low-saturation), Multi-Pastel, Animal Prints (extra tags; color tags kept). Picks in config/mat-gallery-crosstags.json; her calls in config/tiffany-color-notes/2026-10-20-v3-calls.json.
+- Within every section: primary-color mats first, "also" mats below, Mahjong Studios last.
+- Blue vs Teal & Aqua kept separate; her "blue" calls routed by shade (borderline ones measured: hue ~195 deg is the line).
+- Dead links: 6 Mahjong by SI mats (Mahjong Co no longer sells mats; no other store found) show no shop button but are not retired; OMM Cognac retired; Confetti Lemon Lime folded into Confetti – Green.
