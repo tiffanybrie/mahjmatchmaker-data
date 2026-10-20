@@ -7,7 +7,7 @@ import sys, os, glob, json, subprocess, tempfile, numpy as np, cv2
 from PIL import Image
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import tagline_v2 as T
 R = '/home/claude/mahjmatchmaker-data/'; C = R + 'scripts/covers/'; OUT = sys.argv[1]; os.makedirs(OUT, exist_ok=True)
-TITLE_PX = int(os.environ.get('TITLE_PX', 104)); A = .88
+TITLE_PX = int(os.environ.get("TITLE_PX", 132)); A = .88   # measured: her originals "Tiles" line = 99px ink tall
 PX0, PY0, PX1, PY1 = 87, 281, 993, 1069
 NAMES = {'sunday-tile-set': 'Sunday', 'glow-wild': 'Glow Wild', 'heritage-2-0': 'Heritage', 'la-fete': 'La Fête', 'lilac-soiree': 'Lilac Soirée', 'preppy-soiree': 'Preppy Soirée',
          'shangri-la': 'Shangri-La', 'palm-royale': 'Palm Royale', 'papaya-spritz': 'Papaya Spritz', 'spring-love': 'Spring Love', 'cypress-forest': 'Cypress'}
@@ -32,7 +32,8 @@ def panel_obs(a):  # median panel colour from the ring between the frame and the
     return np.median(px[keep], axis=0)
 VAULT = {'lilac-soiree', 'preppy-soiree', 'shangri-la', 'spring-love', 'sunday-tile-set'}
 def content_mask(k=''):
-    m = np.zeros((1350, 1080), bool); m[330:1000, 185:895] = True; m[990:1060, 345:735] = True; m[540:800, 140:945] = True
+    m = np.zeros((1350, 1080), bool); m[330:1000, 185:895] = True; m[990:1060, 345:735] = True
+    if k != 'coquette': m[540:800, 140:945] = True   # Coquette's ribbon tails run down the sides
     if k in VAULT: m[960:1062, 150:930] = True
     return m
 def lift_logo(a):
@@ -78,11 +79,15 @@ for k in sys.argv[2:]:
     elif k in LIFT: lift_logo(a).save(tmp + '/logo.png'); logo = f'<img src="{tmp}/logo.png" style="display:block;max-width:600px">'
     else: logo = f'<img src="{C}holiday/omm_white.png" style="display:block;height:160px">'
     Image.fromarray(rebuild_panel(a, k)).save(tmp + '/bg.png')
-    n, t2 = title(k); light = REF['lum'] > 150
+    n, t2 = title(k)
+    from PIL import ImageFont
+    three = ImageFont.truetype(R + 'scripts/social/tileprofile/fonts/Caprasimo.ttf', TITLE_PX).getlength(n) > 800
+    if three: logo = logo.replace('height:160px', 'height:112px').replace('height:150px', 'height:110px')
+    light = False   # Tiffany Oct 20: never drop shadows on cover text
     sh = '0 2px 3px rgba(40,30,30,.30),0 3px 14px rgba(40,30,30,.28)' if light else '0 2px 8px rgba(0,0,0,.18)'
     html = f'''<html><head>{FONT}<style>body{{margin:0;width:1080px;height:1350px;overflow:hidden;position:relative;background:url("{tmp}/bg.png")}}
 .c{{position:absolute;left:87px;top:300px;height:600px;width:906px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#fbf6ee;text-align:center}}
-h1{{font:400 {TITLE_PX}px/1.0 Caprasimo;margin:14px 0 0;text-shadow:{sh};max-width:720px}} img{{filter:{'drop-shadow(0 2px 4px rgba(40,30,30,.30))' if light else 'none'}}}</style></head>
+h1{{font:400 {TITLE_PX}px/1.0 Caprasimo;margin:14px 0 0;text-shadow:none;max-width:800px}} img{{filter:{'drop-shadow(0 2px 4px rgba(40,30,30,.30))' if light else 'none'}}}</style></head>
 <body><div class="c">{logo}<h1>{n}<br>{t2}</h1></div></body></html>'''
     hf = tmp + '/c.html'; open(hf, 'w').write(html); o = f'{OUT}/{k}.jpg'
     subprocess.run(['node', R + 'scripts/albumcard/shot.js', hf, o], check=True, env={**os.environ, 'NODE_PATH': NP}, stdout=subprocess.DEVNULL)
