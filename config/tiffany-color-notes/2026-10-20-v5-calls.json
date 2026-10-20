@@ -33,6 +33,38 @@
     "yellow"
    ],
    "note": "out of Teal & Aqua: background hue ~160-170; yellow border. Mood tag unchanged."
+  },
+  {
+   "brand": "Mahj & Moon",
+   "name": "Blue Tropical Palm",
+   "img": "mahj-moon--blue-tropical-palm",
+   "primary": "blue",
+   "also": [
+    "green",
+    "florals"
+   ],
+   "note": "\"definitely a multi floral; if anything it's a blue\": out of Teal & Aqua; Blue primary + Multicolor Florals, Green kept as also. Overrides the v4 jungle Green-first for this mat."
+  },
+  {
+   "brand": "Mahj & Moon",
+   "name": "Scalloped Tropical Palm",
+   "img": "mahj-moon--scalloped-tropical-palm",
+   "primary": "blue",
+   "also": [
+    "green",
+    "florals"
+   ],
+   "note": "same as Blue Tropical Palm: out of Teal & Aqua; Blue primary + Multicolor Florals, Green also. Overrides jungle Green-first."
+  },
+  {
+   "brand": "Mahj & Moon",
+   "name": "Tropical Hibiscus",
+   "img": "mahj-moon--tropical-hibiscus",
+   "primary": "pink",
+   "also": [
+    "green"
+   ],
+   "note": "lots of pink: Pink primary, Green also, no Teal. Overrides jungle Green-first."
   }
  ],
  "mood_calls": [
@@ -48,5 +80,36 @@
   "Simple Mats (chip 'Simple'): solids, or a border/frame with a clean plain middle (small center logo fine). A mood tag that REPLACES Pastels/Brights; color sections kept. Amahj mats are Simple (her example).",
   "A soft/light background with bold, saturated graphic elements (hot pink/magenta, strong black outlines, neon) reads Brights, not Pastels. Judge the overall impression, not the background color.",
   "Chip order: colors, Neutral & Ivory, Earthy, Dark & Moody, Black & White, Simple, Pastels, Brights, Multicolor Florals, Animal Prints, Holiday, Retired."
- ]
+ ],
+ "final_sections_note": "build_v5.py applies these color sections last (after the jungle/holiday_off/primary_fix crosstags), keeping each mat's mood tag (Pastels/Brights/Simple) as computed.",
+ "final_sections": {
+  "amahj--blue-citron-lilac-mahjong-game-mat": [
+   "blue",
+   "yellow",
+   "purple"
+  ],
+  "sunday-mahjong--plum-panda-premium": [
+   "green",
+   "purple",
+   "orange"
+  ],
+  "sunday-mahjong--sunday-premium": [
+   "green",
+   "yellow"
+  ],
+  "mahj-moon--blue-tropical-palm": [
+   "blue",
+   "green",
+   "florals"
+  ],
+  "mahj-moon--scalloped-tropical-palm": [
+   "blue",
+   "green",
+   "florals"
+  ],
+  "mahj-moon--tropical-hibiscus": [
+   "pink",
+   "green"
+  ]
+ }
 }

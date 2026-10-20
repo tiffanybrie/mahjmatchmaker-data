@@ -1,0 +1,945 @@
+{
+ "by": "claude-photo-review",
+ "date": "2026-10-20",
+ "about": "Claude's photo-review color tags for the 53 new mats (ShopMy Etsy/Betty June & Jeannette, Tala Mahj, Mahj & Vine, Charleston Mahjong Club). NOT Tiffany's calls: any Tiffany call wins over these. 'sections' is what build_v5.py shows (primary first, then also colors, then tonal/mood tag, then extra tags). 'hidden' rows are left out of the gallery (photo not a clean flat mat, or duplicate).",
+ "mats": {
+  "sophie-clima--cheeky-cockatoo": {
+   "name": "Cheeky Cockatoo",
+   "brand": "Sophie Clima",
+   "primary": "pink",
+   "also": [
+    "orange"
+   ],
+   "mood": "brights",
+   "extra": [],
+   "sections": [
+    "pink",
+    "orange",
+    "brights"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "sophie-clima--whimsical-chinoiserie-meeting-in-the-pavilion": {
+   "name": "Whimsical Chinoiserie Meeting in the Pavilion",
+   "brand": "Sophie Clima",
+   "primary": "green",
+   "also": [
+    "pink",
+    "blue"
+   ],
+   "mood": "brights",
+   "extra": [],
+   "sections": [
+    "green",
+    "pink",
+    "blue",
+    "brights"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "sophie-clima--dogs-playing-mahjong": {
+   "name": "Dogs Playing Mahjong",
+   "brand": "Sophie Clima",
+   "primary": "pink",
+   "also": [
+    "green"
+   ],
+   "mood": "brights",
+   "extra": [],
+   "sections": [
+    "pink",
+    "green",
+    "brights"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "sophie-clima--preppy-monkeys": {
+   "name": "Preppy Monkeys",
+   "brand": "Sophie Clima",
+   "primary": "pink",
+   "also": [
+    "blue"
+   ],
+   "mood": "brights",
+   "extra": [],
+   "sections": [
+    "pink",
+    "blue",
+    "brights"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "sophie-clima--florida-pool-party": {
+   "name": "Florida Pool Party",
+   "brand": "Sophie Clima",
+   "primary": "pink",
+   "also": [
+    "orange",
+    "green"
+   ],
+   "mood": "pastel",
+   "extra": [],
+   "sections": [
+    "pink",
+    "orange",
+    "green",
+    "pastel"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "sophie-clima--pink-peonies": {
+   "name": "Pink Peonies",
+   "brand": "Sophie Clima",
+   "primary": "pink",
+   "also": [
+    "blue",
+    "green"
+   ],
+   "mood": "brights",
+   "extra": [],
+   "sections": [
+    "pink",
+    "blue",
+    "green",
+    "brights"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "sophie-clima--pink-orchids": {
+   "name": "Pink Orchids",
+   "brand": "Sophie Clima",
+   "primary": "pink",
+   "also": [
+    "green",
+    "blue"
+   ],
+   "mood": "brights",
+   "extra": [],
+   "sections": [
+    "pink",
+    "green",
+    "blue",
+    "brights"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "sophie-clima--custom-monogrammed-preppy": {
+   "name": "Custom Monogrammed Preppy",
+   "brand": "Sophie Clima",
+   "primary": "pink",
+   "also": [
+    "teal",
+    "green"
+   ],
+   "mood": "brights",
+   "extra": [],
+   "sections": [
+    "pink",
+    "teal",
+    "green",
+    "brights"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "sophie-clima--cheetah-in-chinoiserie": {
+   "name": "Cheetah in Chinoiserie",
+   "brand": "Sophie Clima",
+   "primary": "blue",
+   "also": [
+    "green",
+    "pink"
+   ],
+   "mood": "dark",
+   "extra": [],
+   "sections": [
+    "blue",
+    "green",
+    "pink",
+    "dark"
+   ],
+   "hidden": null,
+   "note": "deep navy night sky: Dark & Moody"
+  },
+  "sophie-clima--chinoiserie-elephant-with-pagodas": {
+   "name": "Chinoiserie Elephant with Pagodas",
+   "brand": "Sophie Clima",
+   "primary": "pink",
+   "also": [
+    "teal"
+   ],
+   "mood": "brights",
+   "extra": [],
+   "sections": [
+    "pink",
+    "teal",
+    "brights"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "mahjong-made-chic--savannah-soiree-neoprene": {
+   "name": "Savannah Soiree Neoprene",
+   "brand": "Mahjong Made Chic",
+   "primary": "green",
+   "also": [
+    "blue",
+    "pink"
+   ],
+   "mood": "brights",
+   "extra": [],
+   "sections": [
+    "green",
+    "blue",
+    "pink",
+    "brights"
+   ],
+   "hidden": "text overlay on photo (\"NEW ARRIVAL / FAST SHIPPING\" banner + \"Premium Bag Included\" badge)",
+   "note": null
+  },
+  "etsy-shop--palm-beach-chic-custom-monogram-neoprene": {
+   "name": "Palm Beach Chic Custom Monogram Neoprene",
+   "brand": "Etsy shop (name TBD)",
+   "primary": "green",
+   "also": [
+    "pink"
+   ],
+   "mood": "pastel",
+   "extra": [],
+   "sections": [
+    "green",
+    "pink",
+    "pastel"
+   ],
+   "hidden": "lifestyle photo (people playing at a table, mat at an angle)",
+   "note": null
+  },
+  "etsy-shop--lemon-lime-floral-custom-monogram-neoprene": {
+   "name": "Lemon Lime Floral Custom Monogram Neoprene",
+   "brand": "Etsy shop (name TBD)",
+   "primary": "teal",
+   "also": [
+    "pink",
+    "green"
+   ],
+   "mood": "pastel",
+   "extra": [
+    "florals"
+   ],
+   "sections": [
+    "teal",
+    "pink",
+    "green",
+    "pastel",
+    "florals"
+   ],
+   "hidden": "lifestyle flat-lay: racks, tiles, plate and drink sitting on the mat",
+   "note": null
+  },
+  "etsy-shop--chinese-landscape-shan-shui-crane-koi": {
+   "name": "Chinese Landscape Shan Shui Crane Koi",
+   "brand": "Etsy shop (name TBD)",
+   "primary": "green",
+   "also": [],
+   "mood": "earthy",
+   "extra": [],
+   "sections": [
+    "green",
+    "earthy"
+   ],
+   "hidden": null,
+   "note": "muted sage/olive landscape: Green + Earthy"
+  },
+  "betty-june-jeannette--elizabeth": {
+   "name": "Elizabeth",
+   "brand": "Betty June & Jeannette",
+   "primary": "pink",
+   "also": [
+    "orange",
+    "purple"
+   ],
+   "mood": "pastel",
+   "extra": [],
+   "sections": [
+    "pink",
+    "orange",
+    "purple",
+    "pastel"
+   ],
+   "hidden": null,
+   "note": "right edge slightly cropped (kept)"
+  },
+  "betty-june-jeannette--kristen-sweater-weather": {
+   "name": "Kristen (Sweater Weather)",
+   "brand": "Betty June & Jeannette",
+   "primary": "neutral",
+   "also": [
+    "pink"
+   ],
+   "mood": null,
+   "extra": [],
+   "sections": [
+    "neutral",
+    "pink"
+   ],
+   "hidden": "lifestyle photo (mat angled on a table with tiles and a vase)",
+   "note": null
+  },
+  "betty-june-jeannette--betty-pastel-floral-neoprene": {
+   "name": "Betty (Pastel Floral Neoprene)",
+   "brand": "Betty June & Jeannette",
+   "primary": "pink",
+   "also": [
+    "orange",
+    "purple"
+   ],
+   "mood": "brights",
+   "extra": [
+    "florals"
+   ],
+   "sections": [
+    "pink",
+    "orange",
+    "purple",
+    "brights",
+    "florals"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "betty-june-jeannette--brooke": {
+   "name": "Brooke",
+   "brand": "Betty June & Jeannette",
+   "primary": "orange",
+   "also": [
+    "pink",
+    "green"
+   ],
+   "mood": "brights",
+   "extra": [
+    "florals"
+   ],
+   "sections": [
+    "orange",
+    "pink",
+    "green",
+    "brights",
+    "florals"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "betty-june-jeannette--allie-purple": {
+   "name": "Allie (Purple)",
+   "brand": "Betty June & Jeannette",
+   "primary": "teal",
+   "also": [
+    "purple"
+   ],
+   "mood": "pastel",
+   "extra": [],
+   "sections": [
+    "teal",
+    "purple",
+    "pastel"
+   ],
+   "hidden": null,
+   "note": "named Purple but reads aqua (hue ~174) with purple orchids: Teal first, Purple also"
+  },
+  "betty-june-jeannette--julia-blush-palm-beach": {
+   "name": "Julia (Blush, Palm Beach)",
+   "brand": "Betty June & Jeannette",
+   "primary": "pink",
+   "also": [
+    "green"
+   ],
+   "mood": "pastel",
+   "extra": [],
+   "sections": [
+    "pink",
+    "green",
+    "pastel"
+   ],
+   "hidden": "lifestyle flat-lay: tiles and racks covering the mat",
+   "note": null
+  },
+  "betty-june-jeannette--benjamin": {
+   "name": "Benjamin",
+   "brand": "Betty June & Jeannette",
+   "primary": "teal",
+   "also": [
+    "blue"
+   ],
+   "mood": "pastel",
+   "extra": [],
+   "sections": [
+    "teal",
+    "blue",
+    "pastel"
+   ],
+   "hidden": null,
+   "note": "measured hue ~179: Teal"
+  },
+  "betty-june-jeannette--hippie-holiday": {
+   "name": "Hippie Holiday",
+   "brand": "Betty June & Jeannette",
+   "primary": "holiday",
+   "also": [],
+   "mood": null,
+   "extra": [],
+   "sections": [
+    "holiday"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "betty-june-jeannette--the-most-wonderful-time-of-the-year": {
+   "name": "The Most Wonderful Time of the Year",
+   "brand": "Betty June & Jeannette",
+   "primary": "holiday",
+   "also": [],
+   "mood": null,
+   "extra": [],
+   "sections": [
+    "holiday"
+   ],
+   "hidden": null,
+   "note": "styled flat-lay: racks around the mat but nothing on it (kept)"
+  },
+  "betty-june-jeannette--chinoiserie-cheer": {
+   "name": "Chinoiserie Cheer",
+   "brand": "Betty June & Jeannette",
+   "primary": "holiday",
+   "also": [],
+   "mood": null,
+   "extra": [],
+   "sections": [
+    "holiday"
+   ],
+   "hidden": "lifestyle photo (mat on a table in a decorated room)",
+   "note": null
+  },
+  "betty-june-jeannette--nora": {
+   "name": "Nora",
+   "brand": "Betty June & Jeannette",
+   "primary": "teal",
+   "also": [
+    "pink",
+    "orange"
+   ],
+   "mood": "pastel",
+   "extra": [],
+   "sections": [
+    "teal",
+    "pink",
+    "orange",
+    "pastel"
+   ],
+   "hidden": null,
+   "note": "right edge slightly cropped (kept)"
+  },
+  "betty-june-jeannette--nichole": {
+   "name": "Nichole",
+   "brand": "Betty June & Jeannette",
+   "primary": "pink",
+   "also": [
+    "blue",
+    "green"
+   ],
+   "mood": "brights",
+   "extra": [],
+   "sections": [
+    "pink",
+    "blue",
+    "green",
+    "brights"
+   ],
+   "hidden": null,
+   "note": "right edge slightly cropped (kept)"
+  },
+  "betty-june-jeannette--caroline-preppy": {
+   "name": "Caroline (Preppy)",
+   "brand": "Betty June & Jeannette",
+   "primary": "pink",
+   "also": [
+    "orange",
+    "blue"
+   ],
+   "mood": "pastel",
+   "extra": [],
+   "sections": [
+    "pink",
+    "orange",
+    "blue",
+    "pastel"
+   ],
+   "hidden": null,
+   "note": "right edge slightly cropped (kept)"
+  },
+  "betty-june-jeannette--katelyn-yellow": {
+   "name": "Katelyn (Yellow)",
+   "brand": "Betty June & Jeannette",
+   "primary": "yellow",
+   "also": [
+    "pink"
+   ],
+   "mood": "brights",
+   "extra": [],
+   "sections": [
+    "yellow",
+    "pink",
+    "brights"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "betty-june-jeannette--luna": {
+   "name": "Luna",
+   "brand": "Betty June & Jeannette",
+   "primary": "teal",
+   "also": [
+    "pink",
+    "green"
+   ],
+   "mood": "pastel",
+   "extra": [],
+   "sections": [
+    "teal",
+    "pink",
+    "green",
+    "pastel"
+   ],
+   "hidden": null,
+   "note": "pool hue ~188: Teal"
+  },
+  "betty-june-jeannette--charlotte": {
+   "name": "Charlotte",
+   "brand": "Betty June & Jeannette",
+   "primary": "orange",
+   "also": [
+    "pink",
+    "blue"
+   ],
+   "mood": "brights",
+   "extra": [],
+   "sections": [
+    "orange",
+    "pink",
+    "blue",
+    "brights"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "betty-june-jeannette--brinkley": {
+   "name": "Brinkley",
+   "brand": "Betty June & Jeannette",
+   "primary": "blue",
+   "also": [
+    "pink",
+    "green"
+   ],
+   "mood": "brights",
+   "extra": [],
+   "sections": [
+    "blue",
+    "pink",
+    "green",
+    "brights"
+   ],
+   "hidden": null,
+   "note": "pool hue ~199: Blue"
+  },
+  "betty-june-jeannette--betty-floral-monogrammed-neoprene": {
+   "name": "Betty Floral (Monogrammed Neoprene)",
+   "brand": "Betty June & Jeannette",
+   "primary": "pink",
+   "also": [
+    "orange"
+   ],
+   "mood": "brights",
+   "extra": [
+    "florals"
+   ],
+   "sections": [
+    "pink",
+    "orange",
+    "brights",
+    "florals"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "betty-june-jeannette--benjamin-goes-to-positano": {
+   "name": "Benjamin Goes to Positano",
+   "brand": "Betty June & Jeannette",
+   "primary": "teal",
+   "also": [
+    "blue"
+   ],
+   "mood": "pastel",
+   "extra": [],
+   "sections": [
+    "teal",
+    "blue",
+    "pastel"
+   ],
+   "hidden": null,
+   "note": "measured hue ~185: Teal"
+  },
+  "betty-june-jeannette--gigi-canvas-art-inspired": {
+   "name": "Gigi (Canvas Art Inspired)",
+   "brand": "Betty June & Jeannette",
+   "primary": "blue",
+   "also": [
+    "pink",
+    "purple"
+   ],
+   "mood": "pastel",
+   "extra": [],
+   "sections": [
+    "blue",
+    "pink",
+    "purple",
+    "pastel"
+   ],
+   "hidden": "lifestyle photo: racks lying on the mat, table scene",
+   "note": null
+  },
+  "betty-june-jeannette--grace-abstract": {
+   "name": "Grace (Abstract)",
+   "brand": "Betty June & Jeannette",
+   "primary": "pink",
+   "also": [
+    "blue"
+   ],
+   "mood": "brights",
+   "extra": [
+    "florals"
+   ],
+   "sections": [
+    "pink",
+    "blue",
+    "brights",
+    "florals"
+   ],
+   "hidden": "lifestyle photo: racks lying on the mat, table scene",
+   "note": null
+  },
+  "betty-june-jeannette--betty-floral-monogram-game-surface": {
+   "name": "Betty (Floral Monogram Game Surface)",
+   "brand": "Betty June & Jeannette",
+   "primary": "pink",
+   "also": [
+    "orange"
+   ],
+   "mood": "simple",
+   "extra": [],
+   "sections": [
+    "pink",
+    "orange",
+    "simple"
+   ],
+   "hidden": null,
+   "note": "floral frame + plain pink middle: Simple"
+  },
+  "betty-june-jeannette--livy": {
+   "name": "Livy",
+   "brand": "Betty June & Jeannette",
+   "primary": "purple",
+   "also": [
+    "pink"
+   ],
+   "mood": "pastel",
+   "extra": [],
+   "sections": [
+    "purple",
+    "pink",
+    "pastel"
+   ],
+   "hidden": null,
+   "note": "right edge of the mat slightly cropped in the store photo (kept)"
+  },
+  "betty-june-jeannette--grace-watercolor": {
+   "name": "Grace (Watercolor)",
+   "brand": "Betty June & Jeannette",
+   "primary": "blue",
+   "also": [
+    "pink"
+   ],
+   "mood": "pastel",
+   "extra": [],
+   "sections": [
+    "blue",
+    "pink",
+    "pastel"
+   ],
+   "hidden": "lifestyle photo (angled on a table with tiles on it)",
+   "note": null
+  },
+  "betty-june-jeannette--grace-peacock-collection": {
+   "name": "Grace (Peacock Collection)",
+   "brand": "Betty June & Jeannette",
+   "primary": "pink",
+   "also": [
+    "blue"
+   ],
+   "mood": "brights",
+   "extra": [],
+   "sections": [
+    "pink",
+    "blue",
+    "brights"
+   ],
+   "hidden": "text overlay (\"Designer Mahjong Mat\") + lifestyle poolside photo",
+   "note": null
+  },
+  "tala-mahj--cabana-seafoam-blue-ivory-with-citrus-fringe": {
+   "name": "Cabana - Seafoam Blue & Ivory with Citrus Fringe",
+   "brand": "Tala Mahj",
+   "primary": "blue",
+   "also": [
+    "yellow"
+   ],
+   "mood": "pastel",
+   "extra": [],
+   "sections": [
+    "blue",
+    "yellow",
+    "pastel"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "tala-mahj--cabana-sage-ivory-with-cantaloupe-fringe": {
+   "name": "Cabana - Sage & Ivory with Cantaloupe Fringe",
+   "brand": "Tala Mahj",
+   "primary": "green",
+   "also": [
+    "orange"
+   ],
+   "mood": "pastel",
+   "extra": [],
+   "sections": [
+    "green",
+    "orange",
+    "pastel"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "tala-mahj--cabana-pink-ivory-with-citrus-fringe": {
+   "name": "Cabana - Pink & Ivory with Citrus Fringe",
+   "brand": "Tala Mahj",
+   "primary": "pink",
+   "also": [
+    "yellow"
+   ],
+   "mood": "pastel",
+   "extra": [],
+   "sections": [
+    "pink",
+    "yellow",
+    "pastel"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "tala-mahj--the-carlyle-holiday-plaid-with-red-fringe": {
+   "name": "The Carlyle - Holiday Plaid with Red Fringe",
+   "brand": "Tala Mahj",
+   "primary": "green",
+   "also": [
+    "red"
+   ],
+   "mood": "earthy",
+   "extra": [],
+   "sections": [
+    "green",
+    "red",
+    "earthy"
+   ],
+   "hidden": null,
+   "note": "plaid only, no holiday motifs: year-round (rule), Green + Red, muted sage = Earthy"
+  },
+  "tala-mahj--sweater-weather-holiday-with-winter-blue-fringe": {
+   "name": "Sweater Weather - Holiday with Winter Blue Fringe",
+   "brand": "Tala Mahj",
+   "primary": "holiday",
+   "also": [],
+   "mood": null,
+   "extra": [],
+   "sections": [
+    "holiday"
+   ],
+   "hidden": null,
+   "note": "Christmas trees + snowflakes: Holiday"
+  },
+  "tala-mahj--the-sonoma-wildflowers": {
+   "name": "The Sonoma - Wildflowers",
+   "brand": "Tala Mahj",
+   "primary": "neutral",
+   "also": [
+    "earthy",
+    "blue"
+   ],
+   "mood": null,
+   "extra": [],
+   "sections": [
+    "neutral",
+    "earthy",
+    "blue"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "tala-mahj--the-montecito-wildflowers": {
+   "name": "The Montecito - Wildflowers",
+   "brand": "Tala Mahj",
+   "primary": "neutral",
+   "also": [
+    "blue"
+   ],
+   "mood": null,
+   "extra": [],
+   "sections": [
+    "neutral",
+    "blue"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "tala-mahj--the-veranda-bamboo-neutral-with-rattan-fringe": {
+   "name": "The Veranda - Bamboo Neutral with Rattan Fringe",
+   "brand": "Tala Mahj",
+   "primary": "neutral",
+   "also": [
+    "earthy"
+   ],
+   "mood": null,
+   "extra": [],
+   "sections": [
+    "neutral",
+    "earthy"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "tala-mahj--the-pavilion-bamboo-neutral-with-blue-fringe": {
+   "name": "The Pavilion - Bamboo Neutral with Blue Fringe",
+   "brand": "Tala Mahj",
+   "primary": "neutral",
+   "also": [
+    "blue"
+   ],
+   "mood": null,
+   "extra": [],
+   "sections": [
+    "neutral",
+    "blue"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "tala-mahj--midnight-wildflowers-with-camel-fringe": {
+   "name": "Midnight Wildflowers with Camel Fringe",
+   "brand": "Tala Mahj",
+   "primary": "dark",
+   "also": [
+    "earthy"
+   ],
+   "mood": null,
+   "extra": [],
+   "sections": [
+    "dark",
+    "earthy"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "tala-mahj--colony-chartreuse-petal-pink": {
+   "name": "Colony - Chartreuse & Petal Pink",
+   "brand": "Tala Mahj",
+   "primary": "yellow",
+   "also": [
+    "pink"
+   ],
+   "mood": "pastel",
+   "extra": [],
+   "sections": [
+    "yellow",
+    "pink",
+    "pastel"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "mahj-vine--chinoiserie-citrus-grove": {
+   "name": "Chinoiserie Citrus Grove",
+   "brand": "Mahj & Vine",
+   "primary": "blue",
+   "also": [
+    "pink",
+    "orange",
+    "green"
+   ],
+   "mood": "brights",
+   "extra": [],
+   "sections": [
+    "blue",
+    "pink",
+    "orange",
+    "green",
+    "brights"
+   ],
+   "hidden": null,
+   "note": null
+  },
+  "charleston-mahjong-club--cabana-club-neoprene-umbrella-mat": {
+   "name": "Cabana Club Neoprene Umbrella Mat",
+   "brand": "Charleston Mahjong Club",
+   "primary": "green",
+   "also": [
+    "blue"
+   ],
+   "mood": "pastel",
+   "extra": [],
+   "sections": [
+    "green",
+    "blue",
+    "pastel"
+   ],
+   "hidden": "DEDUPE: same Cabana Club design as charleston-mahjong-club--cabana-club (already in the gallery with a clean flat photo); this umbrella-hole listing has an angled photo and a scratch-and-dent URL. Kept the existing card.",
+   "note": null
+  },
+  "betty-june-jeannette--the-kerry": {
+   "name": "The Kerry",
+   "brand": "Betty June & Jeannette",
+   "primary": "green",
+   "also": [
+    "pink",
+    "blue"
+   ],
+   "mood": "pastel",
+   "extra": [
+    "florals"
+   ],
+   "sections": [
+    "green",
+    "pink",
+    "blue",
+    "pastel",
+    "florals"
+   ],
+   "hidden": null,
+   "note": "right edge slightly cropped (kept)"
+  }
+ }
+}

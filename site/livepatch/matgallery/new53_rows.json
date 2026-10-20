@@ -1,0 +1,1824 @@
+{
+ "about": "Batch 2 gallery rows for site/livepatch/matgallery (Oct 20). Row format [img, name, brand, shopUrl, retired, color, codePage]. Etsy/Betty June rows use her ShopMy links (go.shopmy.us/p-<pin>, verified to redirect to the Etsy listing). Partner rows use plain product URLs (codes added elsewhere). Images: assets/mats/gallery-new/<img>.jpg (640px); convert to webp in assets/mats/gallery/ at build. Color records -> config/mat-color-guesses.json when she approves.",
+ "manifest": {
+  "sophie-clima--cheeky-cockatoo": "www.etsy.com/listing/4510367849/preppy-mahjong-mat-cheeky-cockatoo-in",
+  "sophie-clima--whimsical-chinoiserie-meeting-in-the-pavilion": "www.etsy.com/listing/4504460459/preppy-mahjong-mat-whimsical-chinoiserie",
+  "sophie-clima--dogs-playing-mahjong": "www.etsy.com/listing/4543574177/preppy-mahjong-mat-dogs-playing-mahjong",
+  "sophie-clima--preppy-monkeys": "www.etsy.com/listing/4497975591/preppy-mahjong-mat-with-white-bag",
+  "sophie-clima--florida-pool-party": "www.etsy.com/listing/4511258795/preppy-mahjong-mat-with-white-bag",
+  "sophie-clima--pink-peonies": "www.etsy.com/listing/4520479826/preppy-mahjong-mat-with-white-bag-pink",
+  "sophie-clima--pink-orchids": "www.etsy.com/listing/4506841316/preppy-mahjong-mat-with-white-bag-pink",
+  "sophie-clima--custom-monogrammed-preppy": "www.etsy.com/listing/4596818529/custom-monogrammed-mahjong-mat-preppy",
+  "sophie-clima--cheetah-in-chinoiserie": "www.etsy.com/listing/4515510897/preppy-mahjong-mat-with-white-bag",
+  "sophie-clima--chinoiserie-elephant-with-pagodas": "www.etsy.com/listing/4530894010/preppy-chinoiserie-elephant-mahjong-mat",
+  "mahjong-made-chic--savannah-soiree-neoprene": "www.etsy.com/listing/4551553577/savannah-soiree-mahjong-mat-multi-color",
+  "etsy-shop--palm-beach-chic-custom-monogram-neoprene": "www.etsy.com/listing/4444245533/palm-beach-chic-custom-monogram-mahjong",
+  "etsy-shop--lemon-lime-floral-custom-monogram-neoprene": "www.etsy.com/listing/4466728401/mahjong-mat-lemon-lime-floral-custom",
+  "etsy-shop--chinese-landscape-shan-shui-crane-koi": "www.etsy.com/listing/4512194679/chinese-landscape-mahjong-mat-shan-shui",
+  "betty-june-jeannette--elizabeth": "www.etsy.com/listing/4476008036/the-elizabeth-mahjong-mat-with-canvas",
+  "betty-june-jeannette--kristen-sweater-weather": "www.etsy.com/listing/4415039691/the-kristen-sweater-weather-mahjong-mat",
+  "betty-june-jeannette--betty-pastel-floral-neoprene": "www.etsy.com/listing/4478738851/betty-mahjong-mat-pastel-floral-neoprene",
+  "betty-june-jeannette--brooke": "www.etsy.com/listing/4510347710/the-brooke-mahjong-mat",
+  "betty-june-jeannette--allie-purple": "www.etsy.com/listing/4483578899/the-allie-purple-mahjong-mat-lavender",
+  "betty-june-jeannette--julia-blush-palm-beach": "www.etsy.com/listing/4493549424/blush-mahjong-mat-the-julia-mahjong-mat",
+  "betty-june-jeannette--benjamin": "www.etsy.com/listing/4527676776/the-benjamin-mahjong-mat",
+  "betty-june-jeannette--hippie-holiday": "www.etsy.com/listing/4574264430/hippie-holiday-colorful-ornaments",
+  "betty-june-jeannette--the-most-wonderful-time-of-the-year": "www.etsy.com/listing/4578081294/the-most-wonderful-time-of-the-year",
+  "betty-june-jeannette--chinoiserie-cheer": "www.etsy.com/listing/4537268829/chinoiserie-cheer-mahjong-mat",
+  "betty-june-jeannette--nora": "www.etsy.com/listing/4541827574/the-nora-mahjong-mat",
+  "betty-june-jeannette--nichole": "www.etsy.com/listing/4537970849/the-nichole-mahjong-mat",
+  "betty-june-jeannette--caroline-preppy": "www.etsy.com/listing/4537282808/the-caroline-preppy-mahjong-mat",
+  "betty-june-jeannette--katelyn-yellow": "www.etsy.com/listing/4497433465/the-katelyn-yellow-mahjong-mat",
+  "betty-june-jeannette--luna": "www.etsy.com/listing/4527669219/the-luna-mahjong-mat",
+  "betty-june-jeannette--charlotte": "www.etsy.com/listing/4495222417/the-charlotte-mahjong-mat",
+  "betty-june-jeannette--brinkley": "www.etsy.com/listing/4527676666/the-brinkley-mat",
+  "betty-june-jeannette--betty-floral-monogrammed-neoprene": "www.etsy.com/listing/4478745626/betty-floral-mahjong-mat-chic",
+  "betty-june-jeannette--benjamin-goes-to-positano": "www.etsy.com/listing/4574478417/benjamin-goes-to-positano-the-benjamin",
+  "betty-june-jeannette--gigi-canvas-art-inspired": "www.etsy.com/listing/4571558388/the-gigi-katelyn-bruhn-and-bjj-collab",
+  "betty-june-jeannette--grace-abstract": "www.etsy.com/listing/4587515141/the-grace-abstract",
+  "betty-june-jeannette--betty-floral-monogram-game-surface": "www.etsy.com/listing/4478738693/betty-mahjong-mat-floral-monogram-game",
+  "betty-june-jeannette--livy": "www.etsy.com/listing/4544550775/the-livy-mahjong-mat",
+  "betty-june-jeannette--grace-watercolor": "www.etsy.com/listing/4588582719/grace-watercolor-version",
+  "betty-june-jeannette--grace-peacock-collection": "www.etsy.com/listing/4581901384/the-grace-the-peacock-collection",
+  "tala-mahj--cabana-seafoam-blue-ivory-with-citrus-fringe": "talamahj.com/cabana-mahjong-mat-lagoon-blue-ivory-with-citrus-fringe",
+  "tala-mahj--cabana-sage-ivory-with-cantaloupe-fringe": "talamahj.com/cabana-mahjong-mat-eucalyptus-ivory-with-soft-coral-fringe",
+  "tala-mahj--cabana-pink-ivory-with-citrus-fringe": "talamahj.com/cabana-mahjong-mat-pink-ivory-with-citrus-fringe",
+  "tala-mahj--the-carlyle-holiday-plaid-with-red-fringe": "talamahj.com/carlyle-holiday-mahjong-mat-with-red-fringe",
+  "tala-mahj--sweater-weather-holiday-with-winter-blue-fringe": "talamahj.com/cabana-mahjong-mat-pink-ivory-with-citrus-fringe-copy",
+  "tala-mahj--the-sonoma-wildflowers": "talamahj.com/the-california-ranch-mahjong-mat-wildflowers-with-suede-fringe",
+  "tala-mahj--the-montecito-wildflowers": "talamahj.com/the-sonoma-mahjong-mat-wildflowers-with-suede-fringe-copy",
+  "tala-mahj--the-veranda-bamboo-neutral-with-rattan-fringe": "talamahj.com/the-veranda-mahjong-mat-bamboo-neutral-with-rattan-fringe",
+  "tala-mahj--the-pavilion-bamboo-neutral-with-blue-fringe": "talamahj.com/the-pavilio-mahjong-mat-bamboo-neutral-with-blue-fringe",
+  "tala-mahj--midnight-wildflowers-with-camel-fringe": "talamahj.com/midnight-meadow-mahjong-mat-with-suede-fringe",
+  "tala-mahj--colony-chartreuse-petal-pink": "talamahj.com/the-promenade-mat",
+  "mahj-vine--chinoiserie-citrus-grove": "mahjandvine.com/citrus-grove",
+  "charleston-mahjong-club--cabana-club-neoprene-umbrella-mat": "www.charlestonmahjongclub.com/scratch-and-dent-cabana-club-neoprene-umbrella-mat-w-carrying-bag-copy",
+  "betty-june-jeannette--the-kerry": "www.etsy.com/listing/4493549326/the-kerry-mahjong-mat-watercolor-pink"
+ },
+ "rows": [
+  [
+   "sophie-clima--cheeky-cockatoo",
+   "Cheeky Cockatoo",
+   "Sophie Clima",
+   "https://go.shopmy.us/p-96122627",
+   0,
+   "pink",
+   ""
+  ],
+  [
+   "sophie-clima--whimsical-chinoiserie-meeting-in-the-pavilion",
+   "Whimsical Chinoiserie Meeting in the Pavilion",
+   "Sophie Clima",
+   "https://go.shopmy.us/p-96131839",
+   0,
+   "multi",
+   ""
+  ],
+  [
+   "sophie-clima--dogs-playing-mahjong",
+   "Dogs Playing Mahjong",
+   "Sophie Clima",
+   "https://go.shopmy.us/p-96131413",
+   0,
+   "pink",
+   ""
+  ],
+  [
+   "sophie-clima--preppy-monkeys",
+   "Preppy Monkeys",
+   "Sophie Clima",
+   "https://go.shopmy.us/p-96122750",
+   0,
+   "pink",
+   ""
+  ],
+  [
+   "sophie-clima--florida-pool-party",
+   "Florida Pool Party",
+   "Sophie Clima",
+   "https://go.shopmy.us/p-96131490",
+   0,
+   "multi",
+   ""
+  ],
+  [
+   "sophie-clima--pink-peonies",
+   "Pink Peonies",
+   "Sophie Clima",
+   "https://go.shopmy.us/p-96130877",
+   0,
+   "pink",
+   ""
+  ],
+  [
+   "sophie-clima--pink-orchids",
+   "Pink Orchids",
+   "Sophie Clima",
+   "https://go.shopmy.us/p-96130981",
+   0,
+   "pink",
+   ""
+  ],
+  [
+   "sophie-clima--custom-monogrammed-preppy",
+   "Custom Monogrammed Preppy",
+   "Sophie Clima",
+   "https://go.shopmy.us/p-96131171",
+   0,
+   "multi",
+   ""
+  ],
+  [
+   "sophie-clima--cheetah-in-chinoiserie",
+   "Cheetah in Chinoiserie",
+   "Sophie Clima",
+   "https://go.shopmy.us/p-96131764",
+   0,
+   "blue",
+   ""
+  ],
+  [
+   "sophie-clima--chinoiserie-elephant-with-pagodas",
+   "Chinoiserie Elephant with Pagodas",
+   "Sophie Clima",
+   "https://go.shopmy.us/p-96131257",
+   0,
+   "pink",
+   ""
+  ],
+  [
+   "mahjong-made-chic--savannah-soiree-neoprene",
+   "Savannah Soiree Neoprene",
+   "Mahjong Made Chic",
+   "https://go.shopmy.us/p-96122920",
+   0,
+   "multi",
+   ""
+  ],
+  [
+   "etsy-shop--palm-beach-chic-custom-monogram-neoprene",
+   "Palm Beach Chic Custom Monogram Neoprene",
+   "Etsy shop (name TBD)",
+   "https://go.shopmy.us/p-96136953",
+   0,
+   "green",
+   ""
+  ],
+  [
+   "etsy-shop--lemon-lime-floral-custom-monogram-neoprene",
+   "Lemon Lime Floral Custom Monogram Neoprene",
+   "Etsy shop (name TBD)",
+   "https://go.shopmy.us/p-96137022",
+   0,
+   "green",
+   ""
+  ],
+  [
+   "etsy-shop--chinese-landscape-shan-shui-crane-koi",
+   "Chinese Landscape Shan Shui Crane Koi",
+   "Etsy shop (name TBD)",
+   "https://go.shopmy.us/p-96123092",
+   0,
+   "green",
+   ""
+  ],
+  [
+   "betty-june-jeannette--elizabeth",
+   "Elizabeth",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96115115",
+   0,
+   "pink",
+   ""
+  ],
+  [
+   "betty-june-jeannette--kristen-sweater-weather",
+   "Kristen (Sweater Weather)",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96114198",
+   0,
+   "neutral",
+   ""
+  ],
+  [
+   "betty-june-jeannette--betty-pastel-floral-neoprene",
+   "Betty (Pastel Floral Neoprene)",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96114757",
+   0,
+   "pink",
+   ""
+  ],
+  [
+   "betty-june-jeannette--brooke",
+   "Brooke",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96114891",
+   0,
+   "orange",
+   ""
+  ],
+  [
+   "betty-june-jeannette--allie-purple",
+   "Allie (Purple)",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-94800122",
+   0,
+   "teal",
+   ""
+  ],
+  [
+   "betty-june-jeannette--julia-blush-palm-beach",
+   "Julia (Blush, Palm Beach)",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96123529",
+   0,
+   "pink",
+   ""
+  ],
+  [
+   "betty-june-jeannette--benjamin",
+   "Benjamin",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-94698452",
+   0,
+   "teal",
+   ""
+  ],
+  [
+   "betty-june-jeannette--hippie-holiday",
+   "Hippie Holiday",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96124552",
+   0,
+   "holiday",
+   ""
+  ],
+  [
+   "betty-june-jeannette--the-most-wonderful-time-of-the-year",
+   "The Most Wonderful Time of the Year",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96124691",
+   0,
+   "holiday",
+   ""
+  ],
+  [
+   "betty-june-jeannette--chinoiserie-cheer",
+   "Chinoiserie Cheer",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96124861",
+   0,
+   "holiday",
+   ""
+  ],
+  [
+   "betty-june-jeannette--nora",
+   "Nora",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96125055",
+   0,
+   "teal",
+   ""
+  ],
+  [
+   "betty-june-jeannette--nichole",
+   "Nichole",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96125150",
+   0,
+   "pink",
+   ""
+  ],
+  [
+   "betty-june-jeannette--caroline-preppy",
+   "Caroline (Preppy)",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96125208",
+   0,
+   "multi",
+   ""
+  ],
+  [
+   "betty-june-jeannette--katelyn-yellow",
+   "Katelyn (Yellow)",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96125355",
+   0,
+   "yellow",
+   ""
+  ],
+  [
+   "betty-june-jeannette--luna",
+   "Luna",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96125450",
+   0,
+   "blue",
+   ""
+  ],
+  [
+   "betty-june-jeannette--charlotte",
+   "Charlotte",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96125544",
+   0,
+   "orange",
+   ""
+  ],
+  [
+   "betty-june-jeannette--brinkley",
+   "Brinkley",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96125711",
+   0,
+   "multi",
+   ""
+  ],
+  [
+   "betty-june-jeannette--betty-floral-monogrammed-neoprene",
+   "Betty Floral (Monogrammed Neoprene)",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96125859",
+   0,
+   "pink",
+   ""
+  ],
+  [
+   "betty-june-jeannette--benjamin-goes-to-positano",
+   "Benjamin Goes to Positano",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96126037",
+   0,
+   "teal",
+   ""
+  ],
+  [
+   "betty-june-jeannette--gigi-canvas-art-inspired",
+   "Gigi (Canvas Art Inspired)",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96126343",
+   0,
+   "blue",
+   ""
+  ],
+  [
+   "betty-june-jeannette--grace-abstract",
+   "Grace (Abstract)",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96126603",
+   0,
+   "multi",
+   ""
+  ],
+  [
+   "betty-june-jeannette--betty-floral-monogram-game-surface",
+   "Betty (Floral Monogram Game Surface)",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96126748",
+   0,
+   "pink",
+   ""
+  ],
+  [
+   "betty-june-jeannette--livy",
+   "Livy",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96126853",
+   0,
+   "purple",
+   ""
+  ],
+  [
+   "betty-june-jeannette--grace-watercolor",
+   "Grace (Watercolor)",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96126993",
+   0,
+   "blue",
+   ""
+  ],
+  [
+   "betty-june-jeannette--grace-peacock-collection",
+   "Grace (Peacock Collection)",
+   "Betty June & Jeannette",
+   "https://go.shopmy.us/p-96128868",
+   0,
+   "pink",
+   ""
+  ],
+  [
+   "tala-mahj--cabana-seafoam-blue-ivory-with-citrus-fringe",
+   "Cabana - Seafoam Blue & Ivory with Citrus Fringe",
+   "Tala Mahj",
+   "https://talamahj.com/products/cabana-mahjong-mat-lagoon-blue-ivory-with-citrus-fringe",
+   0,
+   "blue",
+   ""
+  ],
+  [
+   "tala-mahj--cabana-sage-ivory-with-cantaloupe-fringe",
+   "Cabana - Sage & Ivory with Cantaloupe Fringe",
+   "Tala Mahj",
+   "https://talamahj.com/products/cabana-mahjong-mat-eucalyptus-ivory-with-soft-coral-fringe",
+   0,
+   "green",
+   ""
+  ],
+  [
+   "tala-mahj--cabana-pink-ivory-with-citrus-fringe",
+   "Cabana - Pink & Ivory with Citrus Fringe",
+   "Tala Mahj",
+   "https://talamahj.com/products/cabana-mahjong-mat-pink-ivory-with-citrus-fringe",
+   0,
+   "pink",
+   ""
+  ],
+  [
+   "tala-mahj--the-carlyle-holiday-plaid-with-red-fringe",
+   "The Carlyle - Holiday Plaid with Red Fringe",
+   "Tala Mahj",
+   "https://talamahj.com/products/carlyle-holiday-mahjong-mat-with-red-fringe",
+   0,
+   "holiday",
+   ""
+  ],
+  [
+   "tala-mahj--sweater-weather-holiday-with-winter-blue-fringe",
+   "Sweater Weather - Holiday with Winter Blue Fringe",
+   "Tala Mahj",
+   "https://talamahj.com/products/cabana-mahjong-mat-pink-ivory-with-citrus-fringe-copy",
+   0,
+   "holiday",
+   ""
+  ],
+  [
+   "tala-mahj--the-sonoma-wildflowers",
+   "The Sonoma - Wildflowers",
+   "Tala Mahj",
+   "https://talamahj.com/products/the-california-ranch-mahjong-mat-wildflowers-with-suede-fringe",
+   0,
+   "neutral",
+   ""
+  ],
+  [
+   "tala-mahj--the-montecito-wildflowers",
+   "The Montecito - Wildflowers",
+   "Tala Mahj",
+   "https://talamahj.com/products/the-sonoma-mahjong-mat-wildflowers-with-suede-fringe-copy",
+   0,
+   "blue",
+   ""
+  ],
+  [
+   "tala-mahj--the-veranda-bamboo-neutral-with-rattan-fringe",
+   "The Veranda - Bamboo Neutral with Rattan Fringe",
+   "Tala Mahj",
+   "https://talamahj.com/products/the-veranda-mahjong-mat-bamboo-neutral-with-rattan-fringe",
+   0,
+   "neutral",
+   ""
+  ],
+  [
+   "tala-mahj--the-pavilion-bamboo-neutral-with-blue-fringe",
+   "The Pavilion - Bamboo Neutral with Blue Fringe",
+   "Tala Mahj",
+   "https://talamahj.com/products/the-pavilio-mahjong-mat-bamboo-neutral-with-blue-fringe",
+   0,
+   "neutral",
+   ""
+  ],
+  [
+   "tala-mahj--midnight-wildflowers-with-camel-fringe",
+   "Midnight Wildflowers with Camel Fringe",
+   "Tala Mahj",
+   "https://talamahj.com/products/midnight-meadow-mahjong-mat-with-suede-fringe",
+   0,
+   "dark",
+   ""
+  ],
+  [
+   "tala-mahj--colony-chartreuse-petal-pink",
+   "Colony - Chartreuse & Petal Pink",
+   "Tala Mahj",
+   "https://talamahj.com/products/the-promenade-mat",
+   0,
+   "yellow",
+   ""
+  ],
+  [
+   "mahj-vine--chinoiserie-citrus-grove",
+   "Chinoiserie Citrus Grove",
+   "Mahj & Vine",
+   "https://mahjandvine.com/products/citrus-grove",
+   0,
+   "blue",
+   "/mahj-and-vine-discount-code"
+  ],
+  [
+   "charleston-mahjong-club--cabana-club-neoprene-umbrella-mat",
+   "Cabana Club Neoprene Umbrella Mat",
+   "Charleston Mahjong Club",
+   "https://www.charlestonmahjongclub.com/products/scratch-and-dent-cabana-club-neoprene-umbrella-mat-w-carrying-bag-copy",
+   0,
+   "yellow",
+   "/charleston-mahjong-club-discount-code"
+  ],
+  [
+   "betty-june-jeannette--the-kerry",
+   "The Kerry",
+   "Betty June & Jeannette",
+   "https://www.etsy.com/listing/4493549326/the-kerry-mahjong-mat-watercolor-pink",
+   0,
+   "multi",
+   ""
+  ]
+ ],
+ "color_records": {
+  "www.etsy.com/listing/4510367849/preppy-mahjong-mat-cheeky-cockatoo-in": {
+   "primary": "pink",
+   "secondary": [
+    "orange",
+    "purple"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "sophie-clima--cheeky-cockatoo",
+   "light": 0.693,
+   "chroma": 0.55,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "orange",
+     "red"
+    ],
+    "tone": "bright"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4504460459/preppy-mahjong-mat-whimsical-chinoiserie": {
+   "primary": "multi",
+   "secondary": [
+    "green",
+    "blue",
+    "pink"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "sophie-clima--whimsical-chinoiserie-meeting-in-the-pavilion",
+   "light": 0.767,
+   "chroma": 0.338,
+   "prev": {
+    "primary": "green",
+    "secondary": [
+     "blue",
+     "pink",
+     "neutral"
+    ],
+    "tone": "muted"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4543574177/preppy-mahjong-mat-dogs-playing-mahjong": {
+   "primary": "pink",
+   "secondary": [
+    "blue",
+    "green",
+    "multi"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "sophie-clima--dogs-playing-mahjong",
+   "light": 0.669,
+   "chroma": 0.552,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "blue",
+     "brown"
+    ],
+    "tone": "bright"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4497975591/preppy-mahjong-mat-with-white-bag": {
+   "primary": "pink",
+   "secondary": [
+    "blue",
+    "green",
+    "multi"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "sophie-clima--preppy-monkeys",
+   "light": 0.68,
+   "chroma": 0.547,
+   "prev": {
+    "primary": "blue",
+    "secondary": [
+     "pink",
+     "green"
+    ],
+    "tone": "bright"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4511258795/preppy-mahjong-mat-with-white-bag": {
+   "primary": "multi",
+   "secondary": [
+    "pink",
+    "green",
+    "orange"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "sophie-clima--florida-pool-party",
+   "light": 0.705,
+   "chroma": 0.31,
+   "prev": {
+    "primary": "orange",
+    "secondary": [
+     "pink",
+     "green",
+     "brown"
+    ],
+    "tone": "muted"
+   },
+   "conf": "medium",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4520479826/preppy-mahjong-mat-with-white-bag-pink": {
+   "primary": "pink",
+   "secondary": [
+    "green",
+    "blue"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "sophie-clima--pink-peonies",
+   "light": 0.73,
+   "chroma": 0.381,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "green",
+     "blue",
+     "yellow"
+    ],
+    "tone": "bright"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4506841316/preppy-mahjong-mat-with-white-bag-pink": {
+   "primary": "pink",
+   "secondary": [
+    "green",
+    "blue"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "sophie-clima--pink-orchids",
+   "light": 0.681,
+   "chroma": 0.406,
+   "prev": {
+    "primary": "green",
+    "secondary": [
+     "pink",
+     "blue",
+     "neutral"
+    ],
+    "tone": "muted"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4596818529/custom-monogrammed-mahjong-mat-preppy": {
+   "primary": "multi",
+   "secondary": [
+    "pink",
+    "teal",
+    "green"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "sophie-clima--custom-monogrammed-preppy",
+   "light": 0.779,
+   "chroma": 0.572,
+   "prev": {
+    "primary": "multi",
+    "secondary": [
+     "green",
+     "pink",
+     "teal"
+    ],
+    "tone": "bright"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4515510897/preppy-mahjong-mat-with-white-bag": {
+   "primary": "blue",
+   "secondary": [
+    "pink",
+    "green"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "sophie-clima--cheetah-in-chinoiserie",
+   "light": 0.587,
+   "chroma": 0.536,
+   "prev": {
+    "primary": "green",
+    "secondary": [
+     "blue",
+     "pink"
+    ],
+    "tone": "blend"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4530894010/preppy-chinoiserie-elephant-mahjong-mat": {
+   "primary": "pink",
+   "secondary": [
+    "teal",
+    "green",
+    "multi"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "sophie-clima--chinoiserie-elephant-with-pagodas",
+   "light": 0.709,
+   "chroma": 0.468,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "teal",
+     "green",
+     "blue"
+    ],
+    "tone": "bright"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4551553577/savannah-soiree-mahjong-mat-multi-color": {
+   "primary": "multi",
+   "secondary": [
+    "blue",
+    "green",
+    "pink"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "mahjong-made-chic--savannah-soiree-neoprene",
+   "light": 0.656,
+   "chroma": 0.598,
+   "prev": {
+    "primary": "green",
+    "secondary": [
+     "blue",
+     "pink"
+    ],
+    "tone": "bright"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4444245533/palm-beach-chic-custom-monogram-mahjong": {
+   "primary": "green",
+   "secondary": [
+    "pink",
+    "blue"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "etsy-shop--palm-beach-chic-custom-monogram-neoprene",
+   "light": 0.675,
+   "chroma": 0.232,
+   "prev": {
+    "primary": "brown",
+    "secondary": [
+     "yellow",
+     "green",
+     "neutral"
+    ],
+    "tone": "muted"
+   },
+   "conf": "low",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4466728401/mahjong-mat-lemon-lime-floral-custom": {
+   "primary": "green",
+   "secondary": [
+    "teal",
+    "pink",
+    "yellow"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "etsy-shop--lemon-lime-floral-custom-monogram-neoprene",
+   "light": 0.823,
+   "chroma": 0.343,
+   "prev": {
+    "primary": "green",
+    "secondary": [
+     "pink",
+     "neutral"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4512194679/chinese-landscape-mahjong-mat-shan-shui": {
+   "primary": "green",
+   "secondary": [
+    "brown",
+    "neutral"
+   ],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "etsy-shop--chinese-landscape-shan-shui-crane-koi",
+   "light": 0.713,
+   "chroma": 0.153,
+   "prev": {
+    "primary": "neutral",
+    "secondary": [
+     "yellow",
+     "brown"
+    ],
+    "tone": "muted"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4476008036/the-elizabeth-mahjong-mat-with-canvas": {
+   "primary": "pink",
+   "secondary": [
+    "purple",
+    "orange"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--elizabeth",
+   "light": 0.783,
+   "chroma": 0.292,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "orange",
+     "neutral"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4415039691/the-kristen-sweater-weather-mahjong-mat": {
+   "primary": "neutral",
+   "secondary": [
+    "pink",
+    "green",
+    "dark"
+   ],
+   "tone": "blend",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--kristen-sweater-weather",
+   "light": 0.714,
+   "chroma": 0.187,
+   "prev": {
+    "primary": "orange",
+    "secondary": [
+     "brown",
+     "pink",
+     "neutral"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "medium",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4478738851/betty-mahjong-mat-pastel-floral-neoprene": {
+   "primary": "pink",
+   "secondary": [
+    "orange",
+    "purple",
+    "multi"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--betty-pastel-floral-neoprene",
+   "light": 0.723,
+   "chroma": 0.508,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "orange",
+     "brown",
+     "red"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4510347710/the-brooke-mahjong-mat": {
+   "primary": "orange",
+   "secondary": [
+    "pink",
+    "teal",
+    "multi"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--brooke",
+   "light": 0.762,
+   "chroma": 0.329,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "orange",
+     "neutral"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4483578899/the-allie-purple-mahjong-mat-lavender": {
+   "primary": "teal",
+   "secondary": [
+    "purple",
+    "blue"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--allie-purple",
+   "light": 0.727,
+   "chroma": 0.266,
+   "prev": {
+    "primary": "green",
+    "secondary": [
+     "blue",
+     "neutral"
+    ],
+    "tone": "muted"
+   },
+   "conf": "medium",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4493549424/blush-mahjong-mat-the-julia-mahjong-mat": {
+   "primary": "pink",
+   "secondary": [
+    "green",
+    "orange"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--julia-blush-palm-beach",
+   "light": 0.736,
+   "chroma": 0.286,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "brown",
+     "orange",
+     "red"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "medium",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4527676776/the-benjamin-mahjong-mat": {
+   "primary": "teal",
+   "secondary": [
+    "blue"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--benjamin",
+   "light": 0.731,
+   "chroma": 0.206,
+   "prev": {
+    "primary": "blue",
+    "secondary": [
+     "green",
+     "neutral"
+    ],
+    "tone": "muted"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4574264430/hippie-holiday-colorful-ornaments": {
+   "primary": "pink",
+   "secondary": [
+    "red",
+    "green"
+   ],
+   "tone": "bright",
+   "holiday": true,
+   "skip": false,
+   "image": "betty-june-jeannette--hippie-holiday",
+   "light": 0.714,
+   "chroma": 0.458,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "green",
+     "red",
+     "orange"
+    ],
+    "tone": "bright"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4578081294/the-most-wonderful-time-of-the-year": {
+   "primary": "pink",
+   "secondary": [
+    "teal",
+    "green"
+   ],
+   "tone": "pastel",
+   "holiday": true,
+   "skip": false,
+   "image": "betty-june-jeannette--the-most-wonderful-time-of-the-year",
+   "light": 0.739,
+   "chroma": 0.296,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "orange",
+     "brown",
+     "green"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4537268829/chinoiserie-cheer-mahjong-mat": {
+   "primary": "blue",
+   "secondary": [
+    "pink",
+    "green"
+   ],
+   "tone": "pastel",
+   "holiday": true,
+   "skip": false,
+   "image": "betty-june-jeannette--chinoiserie-cheer",
+   "light": 0.744,
+   "chroma": 0.173,
+   "prev": {
+    "primary": "orange",
+    "secondary": [
+     "brown",
+     "pink",
+     "neutral"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4541827574/the-nora-mahjong-mat": {
+   "primary": "teal",
+   "secondary": [
+    "pink",
+    "multi"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--nora",
+   "light": 0.841,
+   "chroma": 0.285,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "blue",
+     "teal",
+     "yellow"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4537970849/the-nichole-mahjong-mat": {
+   "primary": "pink",
+   "secondary": [
+    "blue",
+    "green"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--nichole",
+   "light": 0.744,
+   "chroma": 0.299,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "blue",
+     "green",
+     "neutral"
+    ],
+    "tone": "muted"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4537282808/the-caroline-preppy-mahjong-mat": {
+   "primary": "multi",
+   "secondary": [
+    "blue",
+    "orange",
+    "pink"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--caroline-preppy",
+   "light": 0.873,
+   "chroma": 0.219,
+   "prev": {
+    "primary": "yellow",
+    "secondary": [
+     "blue",
+     "pink",
+     "orange"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4497433465/the-katelyn-yellow-mahjong-mat": {
+   "primary": "yellow",
+   "secondary": [
+    "pink",
+    "brown"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--katelyn-yellow",
+   "light": 0.795,
+   "chroma": 0.401,
+   "prev": {
+    "primary": "orange",
+    "secondary": [
+     "yellow",
+     "pink"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "medium",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4527669219/the-luna-mahjong-mat": {
+   "primary": "blue",
+   "secondary": [
+    "pink",
+    "green"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--luna",
+   "light": 0.831,
+   "chroma": 0.253,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "green",
+     "orange",
+     "neutral"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4495222417/the-charlotte-mahjong-mat": {
+   "primary": "orange",
+   "secondary": [
+    "pink",
+    "blue",
+    "multi"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--charlotte",
+   "light": 0.667,
+   "chroma": 0.447,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "brown",
+     "orange"
+    ],
+    "tone": "bright"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4527676666/the-brinkley-mat": {
+   "primary": "multi",
+   "secondary": [
+    "pink",
+    "blue",
+    "green"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--brinkley",
+   "light": 0.804,
+   "chroma": 0.258,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "blue",
+     "green",
+     "neutral"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4478745626/betty-floral-mahjong-mat-chic": {
+   "primary": "pink",
+   "secondary": [
+    "orange"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--betty-floral-monogrammed-neoprene",
+   "light": 0.745,
+   "chroma": 0.477,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "orange",
+     "red"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4574478417/benjamin-goes-to-positano-the-benjamin": {
+   "primary": "teal",
+   "secondary": [
+    "blue",
+    "neutral"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--benjamin-goes-to-positano",
+   "light": 0.704,
+   "chroma": 0.262,
+   "prev": {
+    "primary": "blue",
+    "secondary": [
+     "brown",
+     "yellow",
+     "orange"
+    ],
+    "tone": "muted"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4571558388/the-gigi-katelyn-bruhn-and-bjj-collab": {
+   "primary": "blue",
+   "secondary": [
+    "pink",
+    "purple"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--gigi-canvas-art-inspired",
+   "light": 0.666,
+   "chroma": 0.414,
+   "prev": {
+    "primary": "brown",
+    "secondary": [
+     "pink",
+     "blue",
+     "red"
+    ],
+    "tone": "muted"
+   },
+   "conf": "medium",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4587515141/the-grace-abstract": {
+   "primary": "multi",
+   "secondary": [
+    "pink",
+    "blue",
+    "orange"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--grace-abstract",
+   "light": 0.684,
+   "chroma": 0.552,
+   "prev": {
+    "primary": "multi",
+    "secondary": [
+     "pink",
+     "orange",
+     "brown"
+    ],
+    "tone": "bright"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4478738693/betty-mahjong-mat-floral-monogram-game": {
+   "primary": "pink",
+   "secondary": [
+    "orange"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--betty-floral-monogram-game-surface",
+   "light": 0.771,
+   "chroma": 0.456,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "orange",
+     "red"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4544550775/the-livy-mahjong-mat": {
+   "primary": "purple",
+   "secondary": [
+    "pink"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--livy",
+   "light": 0.749,
+   "chroma": 0.247,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "blue",
+     "neutral"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4588582719/grace-watercolor-version": {
+   "primary": "blue",
+   "secondary": [
+    "pink",
+    "green"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--grace-watercolor",
+   "light": 0.74,
+   "chroma": 0.208,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "blue",
+     "brown",
+     "neutral"
+    ],
+    "tone": "muted"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4581901384/the-grace-the-peacock-collection": {
+   "primary": "pink",
+   "secondary": [
+    "purple",
+    "blue"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--grace-peacock-collection",
+   "light": 0.596,
+   "chroma": 0.361,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "blue",
+     "dark"
+    ],
+    "tone": "bright"
+   },
+   "conf": "medium",
+   "src": "claude-look"
+  },
+  "talamahj.com/cabana-mahjong-mat-lagoon-blue-ivory-with-citrus-fringe": {
+   "primary": "blue",
+   "secondary": [
+    "yellow",
+    "green"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "tala-mahj--cabana-seafoam-blue-ivory-with-citrus-fringe",
+   "light": 0.921,
+   "chroma": 0.178,
+   "prev": {
+    "primary": "yellow",
+    "secondary": [
+     "blue",
+     "neutral"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "talamahj.com/cabana-mahjong-mat-eucalyptus-ivory-with-soft-coral-fringe": {
+   "primary": "green",
+   "secondary": [
+    "orange"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "tala-mahj--cabana-sage-ivory-with-cantaloupe-fringe",
+   "light": 0.886,
+   "chroma": 0.131,
+   "prev": {
+    "primary": "neutral",
+    "secondary": [
+     "orange"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "medium",
+   "src": "claude-look"
+  },
+  "talamahj.com/cabana-mahjong-mat-pink-ivory-with-citrus-fringe": {
+   "primary": "pink",
+   "secondary": [
+    "yellow",
+    "green"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "tala-mahj--cabana-pink-ivory-with-citrus-fringe",
+   "light": 0.935,
+   "chroma": 0.225,
+   "prev": {
+    "primary": "yellow",
+    "secondary": [
+     "pink",
+     "orange"
+    ],
+    "tone": "bright"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "talamahj.com/carlyle-holiday-mahjong-mat-with-red-fringe": {
+   "primary": "green",
+   "secondary": [
+    "pink",
+    "red"
+   ],
+   "tone": "muted",
+   "holiday": true,
+   "skip": false,
+   "image": "tala-mahj--the-carlyle-holiday-plaid-with-red-fringe",
+   "light": 0.784,
+   "chroma": 0.213,
+   "prev": {
+    "primary": "orange",
+    "secondary": [
+     "red",
+     "brown",
+     "neutral"
+    ],
+    "tone": "muted"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "talamahj.com/cabana-mahjong-mat-pink-ivory-with-citrus-fringe-copy": {
+   "primary": "blue",
+   "secondary": [
+    "green",
+    "red"
+   ],
+   "tone": "pastel",
+   "holiday": true,
+   "skip": false,
+   "image": "tala-mahj--sweater-weather-holiday-with-winter-blue-fringe",
+   "light": 0.744,
+   "chroma": 0.164,
+   "prev": {
+    "primary": "blue",
+    "secondary": [
+     "neutral"
+    ],
+    "tone": "muted"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "talamahj.com/the-california-ranch-mahjong-mat-wildflowers-with-suede-fringe": {
+   "primary": "neutral",
+   "secondary": [
+    "blue",
+    "orange",
+    "brown"
+   ],
+   "tone": "blend",
+   "holiday": false,
+   "skip": false,
+   "image": "tala-mahj--the-sonoma-wildflowers",
+   "light": 0.741,
+   "chroma": 0.228,
+   "prev": {
+    "primary": "brown",
+    "secondary": [
+     "orange",
+     "neutral"
+    ],
+    "tone": "muted"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "talamahj.com/the-sonoma-mahjong-mat-wildflowers-with-suede-fringe-copy": {
+   "primary": "blue",
+   "secondary": [
+    "orange",
+    "neutral"
+   ],
+   "tone": "blend",
+   "holiday": false,
+   "skip": false,
+   "image": "tala-mahj--the-montecito-wildflowers",
+   "light": 0.705,
+   "chroma": 0.189,
+   "prev": {
+    "primary": "blue",
+    "secondary": [
+     "brown",
+     "orange",
+     "neutral"
+    ],
+    "tone": "muted"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "talamahj.com/the-veranda-mahjong-mat-bamboo-neutral-with-rattan-fringe": {
+   "primary": "neutral",
+   "secondary": [
+    "brown"
+   ],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "tala-mahj--the-veranda-bamboo-neutral-with-rattan-fringe",
+   "light": 0.774,
+   "chroma": 0.215,
+   "prev": {
+    "primary": "brown",
+    "secondary": [
+     "orange",
+     "neutral"
+    ],
+    "tone": "muted"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "talamahj.com/the-pavilio-mahjong-mat-bamboo-neutral-with-blue-fringe": {
+   "primary": "neutral",
+   "secondary": [
+    "blue",
+    "brown"
+   ],
+   "tone": "blend",
+   "holiday": false,
+   "skip": false,
+   "image": "tala-mahj--the-pavilion-bamboo-neutral-with-blue-fringe",
+   "light": 0.75,
+   "chroma": 0.202,
+   "prev": {
+    "primary": "blue",
+    "secondary": [
+     "orange",
+     "brown",
+     "neutral"
+    ],
+    "tone": "muted"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "talamahj.com/midnight-meadow-mahjong-mat-with-suede-fringe": {
+   "primary": "dark",
+   "secondary": [
+    "brown",
+    "neutral"
+   ],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "tala-mahj--midnight-wildflowers-with-camel-fringe",
+   "light": 0.328,
+   "chroma": 0.186,
+   "prev": {
+    "primary": "dark",
+    "secondary": [
+     "brown"
+    ],
+    "tone": "muted"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "talamahj.com/the-promenade-mat": {
+   "primary": "yellow",
+   "secondary": [
+    "pink",
+    "green"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "tala-mahj--colony-chartreuse-petal-pink",
+   "light": 0.918,
+   "chroma": 0.269,
+   "prev": {
+    "primary": "pink",
+    "secondary": [
+     "yellow",
+     "orange"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "mahjandvine.com/citrus-grove": {
+   "primary": "blue",
+   "secondary": [
+    "orange",
+    "pink",
+    "green"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "mahj-vine--chinoiserie-citrus-grove",
+   "light": 0.77,
+   "chroma": 0.403,
+   "prev": {
+    "primary": "blue",
+    "secondary": [
+     "green",
+     "pink"
+    ],
+    "tone": "bright"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.charlestonmahjongclub.com/scratch-and-dent-cabana-club-neoprene-umbrella-mat-w-carrying-bag-copy": {
+   "primary": "yellow",
+   "secondary": [
+    "blue",
+    "green"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "charleston-mahjong-club--cabana-club-neoprene-umbrella-mat",
+   "light": 0.855,
+   "chroma": 0.293,
+   "prev": {
+    "primary": "yellow",
+    "secondary": [
+     "green",
+     "blue",
+     "neutral"
+    ],
+    "tone": "muted"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  },
+  "www.etsy.com/listing/4493549326/the-kerry-mahjong-mat-watercolor-pink": {
+   "primary": "multi",
+   "secondary": [
+    "pink",
+    "green",
+    "blue"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "betty-june-jeannette--the-kerry",
+   "light": 0.769,
+   "chroma": 0.329,
+   "prev": {
+    "primary": "yellow",
+    "secondary": [
+     "green",
+     "pink",
+     "blue"
+    ],
+    "tone": "pastel"
+   },
+   "conf": "high",
+   "src": "claude-look"
+  }
+ },
+ "notes": {
+  "sophie-clima--cheeky-cockatoo": "Etsy shop name not confirmed (artist signature reads Sophie Clima).",
+  "sophie-clima--whimsical-chinoiserie-meeting-in-the-pavilion": "Etsy shop name not confirmed (artist signature reads Sophie Clima).",
+  "sophie-clima--dogs-playing-mahjong": "Etsy shop name not confirmed (artist signature reads Sophie Clima).",
+  "sophie-clima--preppy-monkeys": "Etsy shop name not confirmed (artist signature reads Sophie Clima).",
+  "sophie-clima--florida-pool-party": "Etsy shop name not confirmed (artist signature reads Sophie Clima).",
+  "sophie-clima--pink-peonies": "Etsy shop name not confirmed (artist signature reads Sophie Clima).",
+  "sophie-clima--pink-orchids": "Etsy shop name not confirmed (artist signature reads Sophie Clima).",
+  "sophie-clima--custom-monogrammed-preppy": "Etsy shop name not confirmed (artist signature reads Sophie Clima).",
+  "sophie-clima--cheetah-in-chinoiserie": "Etsy shop name not confirmed (artist signature reads Sophie Clima).",
+  "sophie-clima--chinoiserie-elephant-with-pagodas": "Etsy shop name not confirmed (artist signature reads Sophie Clima).",
+  "etsy-shop--palm-beach-chic-custom-monogram-neoprene": "Lifestyle/angled photo (no flat product shot available): fine for review, swap for a flat shot before FYM.",
+  "etsy-shop--lemon-lime-floral-custom-monogram-neoprene": "Etsy shop name not confirmed.",
+  "etsy-shop--chinese-landscape-shan-shui-crane-koi": "Etsy shop name not confirmed.",
+  "betty-june-jeannette--kristen-sweater-weather": "Lifestyle/angled photo (no flat product shot available): fine for review, swap for a flat shot before FYM.",
+  "betty-june-jeannette--julia-blush-palm-beach": "Lifestyle/angled photo (no flat product shot available): fine for review, swap for a flat shot before FYM.",
+  "betty-june-jeannette--the-most-wonderful-time-of-the-year": "Lifestyle/angled photo (no flat product shot available): fine for review, swap for a flat shot before FYM.",
+  "betty-june-jeannette--chinoiserie-cheer": "Lifestyle/angled photo (no flat product shot available): fine for review, swap for a flat shot before FYM.",
+  "betty-june-jeannette--gigi-canvas-art-inspired": "Lifestyle/angled photo (no flat product shot available): fine for review, swap for a flat shot before FYM.",
+  "betty-june-jeannette--grace-abstract": "Lifestyle/angled photo (no flat product shot available): fine for review, swap for a flat shot before FYM.",
+  "betty-june-jeannette--grace-watercolor": "Lifestyle/angled photo (no flat product shot available): fine for review, swap for a flat shot before FYM.",
+  "betty-june-jeannette--grace-peacock-collection": "Lifestyle/angled photo (no flat product shot available): fine for review, swap for a flat shot before FYM.",
+  "tala-mahj--cabana-sage-ivory-with-cantaloupe-fringe": "Sold out on talamahj.com (Oct 20); not marked retired (doc 90).",
+  "tala-mahj--the-sonoma-wildflowers": "Sold out on talamahj.com (Oct 20); not marked retired (doc 90).",
+  "tala-mahj--the-veranda-bamboo-neutral-with-rattan-fringe": "Sold out on talamahj.com (Oct 20); not marked retired (doc 90).",
+  "tala-mahj--the-pavilion-bamboo-neutral-with-blue-fringe": "Sold out on talamahj.com (Oct 20); not marked retired (doc 90).",
+  "mahj-vine--chinoiserie-citrus-grove": "Sold out on mahjandvine.com (Oct 20); not marked retired (doc 90).",
+  "charleston-mahjong-club--cabana-club-neoprene-umbrella-mat": "Photo is slightly angled (best flat shot available).",
+  "betty-june-jeannette--the-kerry": "ShopMy link not found for The Kerry; shop URL is the plain Etsy listing."
+ }
+}
