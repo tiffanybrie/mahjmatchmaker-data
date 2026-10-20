@@ -1,9 +1,10 @@
 {
  "by": "claude-measured",
  "date": "2026-10-20",
- "thresh_pct": 8.0,
+ "thresh_pct": 12.0,
  "neutral_thresh_pct": 45.0,
- "dark_thresh_pct": 15.0,
+ "dark_thresh_pct": 20.0,
+ "teal_thresh_pct": 15.0,
  "about": "Accent colors for the Mat Gallery v5 multi-select (AND) filter. by: claude-measured (Oct 20). Keyed by gallery img id. accents = colors >= threshold; shares = measured % per family.",
  "mats": {
   "mahj-vine--chinoiserie-songbird": {
@@ -24,8 +25,7 @@
     "yellow",
     "orange",
     "blue",
-    "green",
-    "pink"
+    "green"
    ],
    "shares": {
     "neutral": 27.3,
@@ -40,11 +40,13 @@
   "oh-my-mahjong--lorelei": {
    "accents": [
     "teal",
-    "pink"
+    "pink",
+    "green"
    ],
    "shares": {
-    "teal": 51.5,
+    "teal": 31.5,
     "pink": 27.5,
+    "green": 20.0,
     "neutral": 16.3,
     "blue": 4.7
    },
@@ -53,21 +55,19 @@
   "oh-my-mahjong--elysium": {
    "accents": [
     "blue",
-    "green",
-    "teal"
+    "green"
    ],
    "shares": {
     "blue": 50.6,
-    "green": 30.0,
-    "teal": 19.4
+    "green": 37.7,
+    "teal": 11.7
    },
    "src": "mat-color-measured"
   },
   "mahj-vine--watercolor-blooms": {
    "accents": [
     "neutral",
-    "teal",
-    "pink"
+    "teal"
    ],
    "shares": {
     "neutral": 49.5,
@@ -91,8 +91,7 @@
   },
   "bespoke-mahjong--yotd-raspberry": {
    "accents": [
-    "pink",
-    "blue"
+    "pink"
    ],
    "shares": {
     "pink": 78.1,
@@ -105,8 +104,7 @@
   "miss-mahjong--cherry-blossom-jade": {
    "accents": [
     "green",
-    "pink",
-    "blue"
+    "pink"
    ],
    "shares": {
     "pink": 42.2,
@@ -117,9 +115,7 @@
   },
   "miss-mahjong--festival-jade": {
    "accents": [
-    "green",
-    "blue",
-    "pink"
+    "green"
    ],
    "shares": {
     "green": 57.9,
@@ -148,8 +144,7 @@
    "accents": [
     "pink",
     "blue",
-    "teal",
-    "orange"
+    "teal"
    ],
    "shares": {
     "pink": 49.0,
@@ -163,12 +158,10 @@
   "sunday-mahjong--rattan": {
    "accents": [
     "earthy",
-    "yellow",
     "green"
    ],
    "shares": {
-    "yellow": 41.9,
-    "earthy": 44.2,
+    "earthy": 86.1,
     "green": 13.9
    },
    "src": "mat-color-measured"
@@ -176,13 +169,12 @@
   "oh-my-mahjong--darjeeling": {
    "accents": [
     "blue",
-    "green",
-    "yellow"
+    "green"
    ],
    "shares": {
     "blue": 66.8,
     "green": 21.1,
-    "yellow": 9.5,
+    "earthy": 9.5,
     "pink": 2.6
    },
    "src": "mat-color-measured"
@@ -190,11 +182,13 @@
   "oh-my-mahjong--isla": {
    "accents": [
     "blue",
+    "green",
     "teal"
    ],
    "shares": {
     "blue": 59.2,
-    "teal": 40.8
+    "teal": 18.6,
+    "green": 22.2
    },
    "src": "mat-color-measured"
   },
@@ -264,14 +258,13 @@
   },
   "oh-my-mahjong--luna": {
    "accents": [
-    "blue",
-    "yellow"
+    "blue"
    ],
    "shares": {
     "blue": 65.4,
     "neutral": 17.6,
-    "yellow": 10.9,
-    "teal": 6.2
+    "earthy": 10.9,
+    "green": 6.2
    },
    "src": "mat-color-measured"
   },
@@ -291,9 +284,7 @@
    "accents": [
     "pink",
     "red",
-    "green",
-    "teal",
-    "yellow"
+    "green"
    ],
    "shares": {
     "pink": 23.9,
@@ -301,30 +292,27 @@
     "red": 16.0,
     "green": 16.0,
     "teal": 11.2,
-    "yellow": 10.8
+    "earthy": 10.8
    },
    "src": "mat-color-measured"
   },
   "charleston-mahjong-club--the-hunt-club": {
    "accents": [
-    "yellow",
-    "green",
-    "orange"
+    "earthy",
+    "green"
    ],
    "shares": {
-    "yellow": 27.0,
+    "earthy": 34.6,
     "neutral": 41.4,
     "green": 15.7,
-    "orange": 8.2,
-    "earthy": 7.6
+    "orange": 8.2
    },
    "src": "mat-color-measured"
   },
   "bespoke-mahjong--jungle-turquoise": {
    "accents": [
     "blue",
-    "earthy",
-    "green"
+    "earthy"
    ],
    "shares": {
     "blue": 51.5,
@@ -339,13 +327,11 @@
   "britt-mills--legacy": {
    "accents": [
     "dark",
-    "yellow",
     "earthy"
    ],
    "shares": {
     "dark": 56.9,
-    "yellow": 19.4,
-    "earthy": 16.1,
+    "earthy": 35.5,
     "pink": 7.7
    },
    "src": "mat-color-measured"
@@ -353,8 +339,7 @@
   "britt-mills--walk-in-the-park": {
    "accents": [
     "green",
-    "pink",
-    "orange"
+    "pink"
    ],
    "shares": {
     "neutral": 31.4,
@@ -380,7 +365,6 @@
   "oh-my-mahjong--hawthorne": {
    "accents": [
     "blue",
-    "dark",
     "earthy"
    ],
    "shares": {
@@ -460,13 +444,11 @@
   "tigre-de-tartan--plum-peony": {
    "accents": [
     "neutral",
-    "dark",
-    "yellow"
+    "dark"
    ],
    "shares": {
-    "neutral": 56.8,
-    "dark": 33.1,
-    "yellow": 10.0
+    "neutral": 66.8,
+    "dark": 33.1
    },
    "src": "mat-color-measured"
   },
@@ -487,8 +469,9 @@
     "blue"
    ],
    "shares": {
-    "teal": 74.3,
-    "blue": 25.7
+    "teal": 66.0,
+    "blue": 25.7,
+    "green": 8.3
    },
    "src": "mat-color-measured"
   },
@@ -521,11 +504,11 @@
   "mahjong-row-co--spring-awakening-warm-honey": {
    "accents": [
     "neutral",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "neutral": 72.1,
-    "yellow": 22.2,
+    "earthy": 22.2,
     "blue": 5.8
    },
    "src": "mat-color-measured"
@@ -536,9 +519,8 @@
     "earthy"
    ],
    "shares": {
-    "earthy": 40.0,
-    "neutral": 52.2,
-    "yellow": 7.8
+    "earthy": 47.8,
+    "neutral": 52.2
    },
    "src": "mat-color-measured"
   },
@@ -568,14 +550,12 @@
   "mahjong-row-co--autumn-saffron": {
    "accents": [
     "dark",
-    "yellow",
     "earthy"
    ],
    "shares": {
     "dark": 39.5,
     "neutral": 30.0,
-    "yellow": 17.3,
-    "earthy": 13.1
+    "earthy": 30.4
    },
    "src": "mat-color-measured"
   },
@@ -594,13 +574,13 @@
   "britt-mills--knox": {
    "accents": [
     "green",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "green": 63.4,
     "neutral": 13.0,
     "dark": 10.8,
-    "yellow": 12.8
+    "earthy": 12.8
    },
    "src": "mat-color-measured"
   },
@@ -647,12 +627,12 @@
   "britt-mills--bella": {
    "accents": [
     "neutral",
-    "yellow",
+    "earthy",
     "dark"
    ],
    "shares": {
     "dark": 20.8,
-    "yellow": 32.9,
+    "earthy": 32.9,
     "neutral": 46.3
    },
    "src": "mat-color-measured"
@@ -660,13 +640,11 @@
   "mahjong-row-co--spring-awakening-p": {
    "accents": [
     "neutral",
-    "earthy",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "neutral": 67.8,
-    "earthy": 18.8,
-    "yellow": 8.5,
+    "earthy": 27.3,
     "blue": 4.9
    },
    "src": "mat-color-measured"
@@ -674,14 +652,12 @@
   "mahjong-row-co--osmanthus-grove": {
    "accents": [
     "dark",
-    "green",
-    "yellow",
-    "orange"
+    "green"
    ],
    "shares": {
     "green": 32.9,
     "dark": 43.0,
-    "yellow": 10.7,
+    "earthy": 10.7,
     "orange": 10.2,
     "neutral": 3.2
    },
@@ -690,8 +666,7 @@
   "mahjong-row-co--mocha-bloom-lt": {
    "accents": [
     "dark",
-    "red",
-    "earthy"
+    "red"
    ],
    "shares": {
     "dark": 48.5,
@@ -705,8 +680,7 @@
    "accents": [
     "neutral",
     "green",
-    "pink",
-    "red"
+    "pink"
    ],
    "shares": {
     "neutral": 48.8,
@@ -721,9 +695,7 @@
    "accents": [
     "dark",
     "green",
-    "earthy",
-    "teal",
-    "pink"
+    "earthy"
    ],
    "shares": {
     "green": 22.9,
@@ -737,13 +709,13 @@
   "britt-mills--aria": {
    "accents": [
     "pink",
-    "yellow",
+    "earthy",
     "teal",
     "blue"
    ],
    "shares": {
     "neutral": 23.2,
-    "yellow": 19.3,
+    "earthy": 19.3,
     "teal": 18.8,
     "pink": 23.3,
     "blue": 15.4
@@ -753,11 +725,11 @@
   "bespoke-mahjong--gray-malin": {
    "accents": [
     "neutral",
-    "teal"
+    "green"
    ],
    "shares": {
     "neutral": 64.1,
-    "teal": 27.6,
+    "green": 27.6,
     "red": 4.8,
     "blue": 3.4
    },
@@ -766,10 +738,12 @@
   "oh-my-mahjong--esme": {
    "accents": [
     "teal",
+    "green",
     "blue"
    ],
    "shares": {
-    "teal": 67.6,
+    "teal": 40.5,
+    "green": 27.1,
     "blue": 20.6,
     "pink": 6.5,
     "neutral": 5.4
@@ -780,12 +754,11 @@
    "accents": [
     "pink",
     "blue",
-    "yellow",
-    "green"
+    "earthy"
    ],
    "shares": {
     "pink": 51.3,
-    "yellow": 14.6,
+    "earthy": 14.6,
     "blue": 23.6,
     "green": 10.5
    },
@@ -809,10 +782,11 @@
   "bespoke-mahjong--chartreuse-garden": {
    "accents": [
     "yellow",
-    "purple"
+    "earthy"
    ],
    "shares": {
-    "yellow": 68.8,
+    "yellow": 56.7,
+    "earthy": 12.1,
     "neutral": 10.2,
     "purple": 8.0,
     "green": 6.8,
@@ -823,9 +797,7 @@
   "splash-of-color--hydrangea-blooms": {
    "accents": [
     "blue",
-    "pink",
-    "dark",
-    "green"
+    "pink"
    ],
    "shares": {
     "blue": 39.9,
@@ -837,8 +809,7 @@
   },
   "bespoke-mahjong--yotd-plum": {
    "accents": [
-    "purple",
-    "green"
+    "purple"
    ],
    "shares": {
     "purple": 74.5,
@@ -852,8 +823,7 @@
    "accents": [
     "teal",
     "pink",
-    "red",
-    "blue"
+    "red"
    ],
    "shares": {
     "teal": 34.1,
@@ -865,14 +835,13 @@
   },
   "oh-my-mahjong--hampton": {
    "accents": [
-    "yellow",
-    "teal",
-    "green"
+    "green",
+    "yellow"
    ],
    "shares": {
-    "yellow": 54.5,
-    "teal": 22.9,
-    "green": 13.9,
+    "yellow": 28.1,
+    "neutral": 26.4,
+    "green": 36.8,
     "blue": 4.5,
     "pink": 4.1
    },
@@ -881,8 +850,7 @@
   "oh-my-mahjong--penelope": {
    "accents": [
     "red",
-    "teal",
-    "blue"
+    "teal"
    ],
    "shares": {
     "red": 57.1,
@@ -905,25 +873,21 @@
   },
   "bird-bamboo--the-dahlia": {
    "accents": [
-    "pink",
-    "teal",
     "green",
-    "yellow"
+    "pink"
    ],
    "shares": {
     "pink": 26.5,
     "neutral": 31.3,
-    "teal": 15.6,
-    "green": 15.0,
-    "yellow": 11.6
+    "green": 30.6,
+    "earthy": 11.6
    },
    "src": "mat-color-measured"
   },
   "britt-mills--colorful-chinoiserie": {
    "accents": [
     "blue",
-    "orange",
-    "pink"
+    "orange"
    ],
    "shares": {
     "blue": 43.7,
@@ -943,36 +907,33 @@
     "teal": 44.0,
     "pink": 19.2,
     "neutral": 32.3,
-    "yellow": 4.4
+    "earthy": 4.4
    },
    "src": "mat-color-measured"
   },
   "britt-mills--flora": {
    "accents": [
-    "teal",
-    "pink",
-    "green"
+    "green",
+    "pink"
    ],
    "shares": {
     "neutral": 30.2,
-    "teal": 32.7,
+    "green": 30.4,
     "pink": 28.6,
-    "green": 8.6
+    "teal": 10.9
    },
    "src": "mat-color-measured"
   },
   "britt-mills--willow": {
    "accents": [
-    "neutral",
-    "blue",
-    "green"
+    "neutral"
    ],
    "shares": {
     "neutral": 67.2,
     "blue": 9.5,
     "green": 8.2,
     "pink": 6.0,
-    "yellow": 4.9,
+    "earthy": 4.9,
     "orange": 4.2
    },
    "src": "mat-color-measured"
@@ -991,15 +952,14 @@
   "britt-mills--viola": {
    "accents": [
     "dark",
-    "yellow",
+    "earthy",
     "pink"
    ],
    "shares": {
     "dark": 41.3,
-    "yellow": 18.2,
+    "earthy": 25.2,
     "neutral": 18.0,
-    "pink": 15.5,
-    "earthy": 7.0
+    "pink": 15.5
    },
    "src": "mat-color-measured"
   },
@@ -1031,15 +991,12 @@
   },
   "britt-mills--ruby": {
    "accents": [
-    "teal",
-    "dark",
     "green",
-    "pink"
+    "dark"
    ],
    "shares": {
-    "teal": 37.3,
+    "green": 55.2,
     "dark": 30.4,
-    "green": 17.9,
     "pink": 8.3,
     "earthy": 6.1
    },
@@ -1048,12 +1005,11 @@
   "britt-mills--wren": {
    "accents": [
     "dark",
-    "teal",
-    "pink"
+    "green"
    ],
    "shares": {
     "dark": 38.6,
-    "teal": 34.5,
+    "green": 34.5,
     "neutral": 17.6,
     "pink": 9.3
    },
@@ -1061,15 +1017,13 @@
   },
   "mahj-tile-haus--white-lotus": {
    "accents": [
-    "yellow",
-    "green",
-    "earthy"
+    "earthy",
+    "green"
    ],
    "shares": {
     "neutral": 25.5,
     "green": 23.7,
-    "yellow": 41.9,
-    "earthy": 8.9
+    "earthy": 50.8
    },
    "src": "mat-color-measured"
   },
@@ -1086,10 +1040,7 @@
   "miss-mahjong--festival-malachite": {
    "accents": [
     "teal",
-    "green",
-    "blue",
-    "pink",
-    "earthy"
+    "green"
    ],
    "shares": {
     "teal": 33.7,
@@ -1104,12 +1055,12 @@
   "miss-mahjong--cherry-blossom-malachite": {
    "accents": [
     "teal",
-    "blue",
-    "green"
+    "green",
+    "blue"
    ],
    "shares": {
-    "teal": 73.5,
-    "green": 13.1,
+    "teal": 61.8,
+    "green": 24.8,
     "blue": 13.4
    },
    "src": "mat-color-measured"
@@ -1118,8 +1069,7 @@
    "accents": [
     "dark",
     "pink",
-    "green",
-    "earthy"
+    "green"
    ],
    "shares": {
     "dark": 25.9,
@@ -1145,13 +1095,11 @@
   "britt-mills--veranda": {
    "accents": [
     "neutral",
-    "yellow",
-    "pink",
-    "green"
+    "earthy"
    ],
    "shares": {
     "neutral": 60.1,
-    "yellow": 12.1,
+    "earthy": 12.1,
     "pink": 11.8,
     "green": 9.8,
     "red": 6.2
@@ -1161,8 +1109,7 @@
   "britt-mills--quinn": {
    "accents": [
     "neutral",
-    "blue",
-    "orange"
+    "blue"
    ],
    "shares": {
     "neutral": 65.9,
@@ -1189,15 +1136,13 @@
    "accents": [
     "blue",
     "yellow",
-    "orange",
     "green"
    ],
    "shares": {
     "blue": 41.0,
     "yellow": 33.5,
     "orange": 11.7,
-    "green": 10.9,
-    "teal": 2.9
+    "green": 13.8
    },
    "src": "mat-color-measured"
   },
@@ -1209,7 +1154,7 @@
    "shares": {
     "neutral": 71.6,
     "pink": 23.2,
-    "yellow": 5.1
+    "earthy": 5.1
    },
    "src": "mat-color-measured"
   },
@@ -1250,8 +1195,7 @@
   },
   "virora-mahjong--petalwing": {
    "accents": [
-    "blue",
-    "pink"
+    "blue"
    ],
    "shares": {
     "blue": 78.5,
@@ -1262,8 +1206,7 @@
   },
   "anders-ruff--house-of-hydrangea": {
    "accents": [
-    "neutral",
-    "blue"
+    "neutral"
    ],
    "shares": {
     "neutral": 88.2,
@@ -1304,15 +1247,14 @@
   "miss-mahjong--lattice": {
    "accents": [
     "blue",
-    "green",
-    "pink"
+    "green"
    ],
    "shares": {
     "blue": 33.0,
     "neutral": 38.5,
     "green": 14.2,
     "pink": 11.0,
-    "yellow": 3.4
+    "earthy": 3.4
    },
    "src": "mat-color-measured"
   },
@@ -1342,14 +1284,13 @@
    "accents": [
     "green",
     "blue",
-    "pink",
-    "yellow"
+    "pink"
    ],
    "shares": {
     "green": 37.4,
     "blue": 19.3,
     "neutral": 16.2,
-    "yellow": 11.0,
+    "earthy": 11.0,
     "pink": 16.1
    },
    "src": "mat-color-measured"
@@ -1406,7 +1347,6 @@
    "accents": [
     "neutral",
     "blue",
-    "teal",
     "purple"
    ],
    "shares": {
@@ -1419,8 +1359,7 @@
   },
   "mahj-mood--rally-in-pink": {
    "accents": [
-    "pink",
-    "red"
+    "pink"
    ],
    "shares": {
     "pink": 91.0,
@@ -1482,39 +1421,38 @@
    "accents": [
     "dark",
     "blue",
-    "yellow",
-    "green"
+    "earthy"
    ],
    "shares": {
     "dark": 32.2,
     "blue": 15.7,
     "neutral": 28.7,
-    "yellow": 13.5,
+    "earthy": 13.5,
     "green": 9.9
    },
    "src": "mat-color-measured"
   },
   "mahj-tile-haus--sunwashed-citrus": {
    "accents": [
-    "yellow",
     "blue",
-    "green"
+    "earthy",
+    "yellow"
    ],
    "shares": {
     "blue": 30.0,
     "neutral": 26.7,
-    "yellow": 34.3,
+    "yellow": 15.3,
+    "earthy": 19.0,
     "green": 8.9
    },
    "src": "mat-color-measured"
   },
   "mahj-moon--pink-citrus": {
    "accents": [
-    "teal",
-    "yellow"
+    "green"
    ],
    "shares": {
-    "teal": 56.8,
+    "green": 56.8,
     "neutral": 25.9,
     "yellow": 11.2,
     "pink": 6.2
@@ -1537,8 +1475,7 @@
    "accents": [
     "pink",
     "blue",
-    "red",
-    "green"
+    "red"
    ],
    "shares": {
     "pink": 44.9,
@@ -1551,8 +1488,7 @@
   "oh-my-mahjong--winterberry": {
    "accents": [
     "teal",
-    "green",
-    "blue"
+    "green"
    ],
    "shares": {
     "teal": 61.4,
@@ -1566,9 +1502,7 @@
   "mahj-vine--zesty-plume": {
    "accents": [
     "pink",
-    "green",
-    "yellow",
-    "teal"
+    "green"
    ],
    "shares": {
     "pink": 39.0,
@@ -1605,16 +1539,14 @@
   },
   "bespoke-mahjong--yotd-pink": {
    "accents": [
-    "pink",
-    "red",
-    "blue"
+    "pink"
    ],
    "shares": {
     "pink": 64.7,
     "neutral": 10.6,
     "red": 9.1,
     "blue": 8.1,
-    "yellow": 7.5
+    "earthy": 7.5
    },
    "src": "mat-color-measured"
   },
@@ -1625,8 +1557,7 @@
    ],
    "shares": {
     "blue": 82.1,
-    "green": 13.6,
-    "teal": 4.2
+    "green": 17.8
    },
    "src": "mat-color-measured"
   },
@@ -1647,11 +1578,11 @@
   },
   "amahj--pink-teal-squiggle-mahjong-game-mat": {
    "accents": [
-    "teal",
+    "green",
     "pink"
    ],
    "shares": {
-    "teal": 38.2,
+    "green": 38.2,
     "pink": 18.7
    },
    "src": "mat-color-measured"
@@ -1670,8 +1601,7 @@
   "amahj--green-pink-squiggle-mahjong-game-mat": {
    "accents": [
     "neutral",
-    "green",
-    "pink"
+    "green"
    ],
    "shares": {
     "neutral": 46.2,
@@ -1684,8 +1614,7 @@
   "amahj--pink-blue-green-mahjong-game-mat": {
    "accents": [
     "pink",
-    "green",
-    "blue"
+    "green"
    ],
    "shares": {
     "pink": 46.3,
@@ -1718,12 +1647,11 @@
   "bird-bamboo--the-neutre-blanc-mahjong-mat": {
    "accents": [
     "blue",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "blue": 85.6,
-    "yellow": 13.2,
-    "earthy": 1.1
+    "earthy": 14.3
    },
    "src": "mat-color-measured"
   },
@@ -1732,21 +1660,20 @@
     "red",
     "blue",
     "orange",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "blue": 22.4,
     "red": 43.1,
     "orange": 18.1,
-    "yellow": 16.3
+    "earthy": 16.3
    },
    "src": "mat-color-measured"
   },
   "bird-bamboo--the-royal-deco-mahjong-mat": {
    "accents": [
     "blue",
-    "yellow",
-    "green"
+    "yellow"
    ],
    "shares": {
     "blue": 64.1,
@@ -1769,14 +1696,13 @@
   "bird-bamboo--the-periwinkle-prism-mahjong-mat": {
    "accents": [
     "blue",
-    "pink",
-    "yellow"
+    "pink"
    ],
    "shares": {
     "blue": 34.8,
     "neutral": 41.4,
     "pink": 13.3,
-    "yellow": 10.6
+    "earthy": 10.6
    },
    "src": "mat-color-measured"
   },
@@ -1830,7 +1756,7 @@
    ],
    "shares": {
     "blue": 95.7,
-    "teal": 4.2
+    "green": 4.2
    },
    "src": "mat-color-measured"
   },
@@ -1846,12 +1772,12 @@
   },
   "bird-bamboo--the-paradise-mahjong-mat-island-green": {
    "accents": [
-    "teal",
-    "green"
+    "green",
+    "teal"
    ],
    "shares": {
-    "teal": 65.8,
-    "green": 34.3
+    "green": 63.7,
+    "teal": 36.4
    },
    "src": "mat-color-measured"
   },
@@ -1871,16 +1797,14 @@
   "britt-mills--mia-neoprene-mahjong-mat-arriving-october": {
    "accents": [
     "pink",
-    "blue",
-    "yellow",
-    "earthy"
+    "earthy",
+    "blue"
    ],
    "shares": {
     "pink": 48.0,
     "dark": 13.8,
     "blue": 13.1,
-    "yellow": 8.7,
-    "earthy": 8.6,
+    "earthy": 17.3,
     "neutral": 7.7
    },
    "src": "mat-color-measured"
@@ -1889,11 +1813,11 @@
    "accents": [
     "blue",
     "dark",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "dark": 27.7,
-    "yellow": 26.4,
+    "earthy": 26.4,
     "blue": 28.7,
     "neutral": 12.3,
     "green": 4.9
@@ -1903,29 +1827,26 @@
   "britt-mills--eden": {
    "accents": [
     "teal",
-    "green",
-    "yellow",
-    "red"
+    "green"
    ],
    "shares": {
     "teal": 45.7,
     "green": 18.4,
     "neutral": 17.7,
-    "yellow": 10.2,
+    "earthy": 10.2,
     "red": 8.0
    },
    "src": "mat-color-measured"
   },
   "britt-mills--tilly-neoprene-mahjong-mat": {
    "accents": [
-    "pink",
-    "dark"
+    "pink"
    ],
    "shares": {
     "pink": 51.6,
     "neutral": 23.6,
     "dark": 17.0,
-    "yellow": 7.8
+    "earthy": 7.8
    },
    "src": "mat-color-measured"
   },
@@ -1936,20 +1857,18 @@
    "shares": {
     "pink": 83.2,
     "neutral": 10.2,
-    "yellow": 6.6
+    "earthy": 6.6
    },
    "src": "mat-color-measured"
   },
   "britt-mills--mabel-neoprene-mahjong-mat": {
    "accents": [
     "pink",
-    "yellow",
     "earthy"
    ],
    "shares": {
     "pink": 54.7,
-    "yellow": 18.7,
-    "earthy": 13.3,
+    "earthy": 32.0,
     "red": 6.8,
     "dark": 6.6
    },
@@ -1971,12 +1890,12 @@
    "accents": [
     "orange",
     "pink",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "neutral": 33.9,
     "pink": 19.3,
-    "yellow": 17.8,
+    "earthy": 17.8,
     "orange": 29.1
    },
    "src": "mat-color-measured"
@@ -1985,28 +1904,25 @@
    "accents": [
     "pink",
     "blue",
-    "yellow",
     "earthy"
    ],
    "shares": {
     "pink": 33.7,
     "neutral": 17.5,
     "blue": 26.1,
-    "yellow": 13.5,
-    "earthy": 9.1
+    "earthy": 22.6
    },
    "src": "mat-color-measured"
   },
   "britt-mills--winter-berry": {
    "accents": [
     "neutral",
-    "green",
-    "yellow"
+    "green"
    ],
    "shares": {
     "neutral": 55.6,
     "green": 22.6,
-    "yellow": 11.5,
+    "earthy": 11.5,
     "red": 6.2,
     "blue": 4.2
    },
@@ -2040,14 +1956,12 @@
   },
   "mahj-vine--shady-lady-umbrella-mat-cabana-stripe-ocean": {
    "accents": [
-    "teal",
-    "blue",
-    "green"
+    "green",
+    "blue"
    ],
    "shares": {
-    "teal": 46.4,
-    "blue": 44.9,
-    "green": 8.7
+    "green": 55.1,
+    "blue": 44.9
    },
    "src": "mat-color-measured"
   },
@@ -2091,8 +2005,7 @@
   "mahj-vine--petal-parade": {
    "accents": [
     "neutral",
-    "pink",
-    "yellow"
+    "pink"
    ],
    "shares": {
     "neutral": 46.7,
@@ -2127,8 +2040,7 @@
   "mahj-vine--porcelain-bloom": {
    "accents": [
     "pink",
-    "blue",
-    "green"
+    "blue"
    ],
    "shares": {
     "pink": 61.5,
@@ -2151,25 +2063,22 @@
   },
   "mahj-mood--sleigh-all-day-mat": {
    "accents": [
-    "dark",
     "earthy",
-    "yellow"
+    "dark"
    ],
    "shares": {
     "dark": 43.7,
-    "earthy": 34.0,
-    "yellow": 12.5,
+    "earthy": 46.5,
     "neutral": 9.7
    },
    "src": "mat-color-measured"
   },
   "mahj-mood--emerald-cove-mat": {
    "accents": [
-    "teal",
-    "dark"
+    "green"
    ],
    "shares": {
-    "teal": 82.4,
+    "green": 82.4,
     "dark": 17.6
    },
    "src": "mat-color-measured"
@@ -2189,14 +2098,12 @@
   "mahj-mood--the-golden-girl-mat": {
    "accents": [
     "dark",
-    "yellow",
     "earthy"
    ],
    "shares": {
     "dark": 75.7,
-    "earthy": 8.1,
-    "neutral": 7.9,
-    "yellow": 8.2
+    "earthy": 16.3,
+    "neutral": 7.9
    },
    "src": "mat-color-measured"
   },
@@ -2213,13 +2120,12 @@
   "mahj-mood--the-eloise-collection-mat-collab-with-four-winds-social": {
    "accents": [
     "green",
-    "pink",
-    "yellow"
+    "pink"
    ],
    "shares": {
     "green": 69.4,
     "pink": 15.2,
-    "yellow": 9.1,
+    "earthy": 9.1,
     "neutral": 6.3
    },
    "src": "mat-color-measured"
@@ -2279,8 +2185,7 @@
   "mahj-mood--mahj-in-bloom-mat": {
    "accents": [
     "pink",
-    "blue",
-    "purple"
+    "blue"
    ],
    "shares": {
     "pink": 68.7,
@@ -2294,7 +2199,6 @@
    "accents": [
     "purple",
     "green",
-    "teal",
     "blue"
    ],
    "shares": {
@@ -2322,9 +2226,7 @@
   "mahjong-studios--citrus-orange-mahjong-mat-33in-waterproof-mahjong-table-mat-ships-rolled": {
    "accents": [
     "orange",
-    "green",
-    "yellow",
-    "pink"
+    "green"
    ],
    "shares": {
     "orange": 44.8,
@@ -2337,8 +2239,7 @@
   },
   "mahjong-studios--lemon-lime-mahjong-mat-33in-waterproof-mahjong-table-mat-ships-rolled": {
    "accents": [
-    "neutral",
-    "blue"
+    "neutral"
    ],
    "shares": {
     "neutral": 81.7,
@@ -2375,16 +2276,14 @@
   },
   "mahjong-studios--jade-peacock-mahjong-mat-ships-rolled": {
    "accents": [
-    "green",
-    "teal",
-    "blue"
+    "green"
    ],
    "shares": {
     "green": 57.3,
     "dark": 13.3,
     "teal": 11.7,
     "blue": 10.7,
-    "yellow": 7.1
+    "earthy": 7.1
    },
    "src": "mat-color-measured"
   },
@@ -2405,9 +2304,7 @@
   "mahjong-studios--pink-blush-mahjong-mat-ships-rolled": {
    "accents": [
     "teal",
-    "pink",
-    "blue",
-    "purple"
+    "pink"
    ],
    "shares": {
     "teal": 55.3,
@@ -2425,8 +2322,7 @@
    "shares": {
     "orange": 64.1,
     "blue": 22.1,
-    "yellow": 5.1,
-    "earthy": 4.7,
+    "earthy": 9.8,
     "neutral": 4.0
    },
    "src": "mat-color-measured"
@@ -2450,8 +2346,7 @@
   "mahjong-studios--in-bloom-mahjong-mat-ships-rolled": {
    "accents": [
     "pink",
-    "teal",
-    "purple"
+    "teal"
    ],
    "shares": {
     "pink": 63.0,
@@ -2464,27 +2359,27 @@
   "mahjong-studios--blue-songbird-mahjong-mat-ships-rolled": {
    "accents": [
     "blue",
-    "pink",
-    "yellow"
+    "pink"
    ],
    "shares": {
     "blue": 55.1,
     "pink": 20.5,
     "neutral": 13.2,
-    "yellow": 11.2
+    "earthy": 11.2
    },
    "src": "mat-color-measured"
   },
   "mahjong-studios--midnight-luxe-mahjong-mat-ships-rolled-33-x-33": {
    "accents": [
     "blue",
-    "teal"
+    "teal",
+    "green"
    ],
    "shares": {
     "blue": 58.7,
-    "teal": 29.1,
-    "green": 6.8,
-    "yellow": 3.8,
+    "teal": 22.6,
+    "green": 13.3,
+    "earthy": 3.8,
     "neutral": 1.7
    },
    "src": "mat-color-measured"
@@ -2503,8 +2398,7 @@
   "mahjong-studios--amber-jade-mahjong-mat-bird-bam-american-mahjong-accessories-ships-rolled": {
    "accents": [
     "orange",
-    "green",
-    "earthy"
+    "green"
    ],
    "shares": {
     "orange": 70.4,
@@ -2516,8 +2410,7 @@
   "mahjong-studios--amber-jade-mahjong-mat-ships-rolled": {
    "accents": [
     "orange",
-    "green",
-    "earthy"
+    "green"
    ],
    "shares": {
     "orange": 66.1,
@@ -2529,14 +2422,15 @@
   },
   "mahjong-studios--lunaflor-mahjong-mat": {
    "accents": [
-    "teal",
-    "pink"
+    "green",
+    "pink",
+    "teal"
    ],
    "shares": {
-    "teal": 60.7,
+    "green": 45.9,
     "pink": 27.6,
+    "teal": 18.3,
     "blue": 6.2,
-    "green": 3.5,
     "yellow": 1.9
    },
    "src": "mat-color-measured"
@@ -2615,13 +2509,11 @@
   "mahj-squad--bront-collection-thrushcross-grange-mahjong-mat": {
    "accents": [
     "dark",
-    "earthy",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "dark": 73.8,
-    "earthy": 15.9,
-    "yellow": 8.0,
+    "earthy": 23.9,
     "orange": 2.3
    },
    "src": "mat-color-measured"
@@ -2675,22 +2567,20 @@
   },
   "mahj-squad--monet-s-reflections-mahjong-mat": {
    "accents": [
-    "green",
-    "teal"
+    "green"
    ],
    "shares": {
-    "green": 66.7,
-    "neutral": 18.5,
-    "teal": 14.9
+    "green": 81.6,
+    "neutral": 18.5
    },
    "src": "mat-color-measured"
   },
   "miss-mahjong--papel-picado-mahjong-playing-mat": {
    "accents": [
-    "teal"
+    "green"
    ],
    "shares": {
-    "teal": 98.4,
+    "green": 98.4,
     "neutral": 1.6
    },
    "src": "mat-color-measured"
@@ -2727,21 +2617,20 @@
   "miss-mahjong--wild-west-mahjong-playing-mat-americana": {
    "accents": [
     "blue",
-    "teal",
-    "pink"
+    "teal"
    ],
    "shares": {
     "blue": 38.9,
     "neutral": 23.7,
-    "teal": 29.3,
+    "teal": 20.6,
+    "green": 8.7,
     "pink": 8.0
    },
    "src": "mat-color-measured"
   },
   "miss-mahjong--after-party-mahjong-playing-mat": {
    "accents": [
-    "pink",
-    "orange"
+    "pink"
    ],
    "shares": {
     "pink": 16.8,
@@ -2771,8 +2660,7 @@
    "accents": [
     "purple",
     "blue",
-    "green",
-    "orange"
+    "green"
    ],
    "shares": {
     "purple": 34.6,
@@ -2790,8 +2678,9 @@
     "teal"
    ],
    "shares": {
-    "teal": 40.0,
+    "teal": 33.4,
     "neutral": 52.2,
+    "green": 6.6,
     "pink": 7.7
    },
    "src": "mat-color-measured"
@@ -2811,13 +2700,12 @@
   "my-fair-mahjong--mahjong-mat-garden-party-meadow-31-x-31": {
    "accents": [
     "pink",
-    "green",
-    "yellow"
+    "green"
    ],
    "shares": {
     "pink": 45.7,
     "green": 40.0,
-    "yellow": 9.7,
+    "earthy": 9.7,
     "blue": 4.5
    },
    "src": "mat-color-measured"
@@ -2848,8 +2736,7 @@
   "my-fair-mahjong--coming-soon-mahjong-mat-parquet-petal-31-x-31": {
    "accents": [
     "pink",
-    "purple",
-    "teal"
+    "purple"
    ],
    "shares": {
     "pink": 74.5,
@@ -2875,7 +2762,8 @@
    ],
    "shares": {
     "blue": 78.5,
-    "teal": 21.6
+    "teal": 18.1,
+    "green": 3.5
    },
    "src": "mat-color-measured"
   },
@@ -2910,35 +2798,30 @@
     "green"
    ],
    "shares": {
-    "teal": 85.2,
-    "green": 14.8
+    "teal": 64.1,
+    "green": 35.9
    },
    "src": "mat-color-measured"
   },
   "anders-ruff--midnight-peacock-mahjong-mat": {
    "accents": [
-    "dark",
     "green",
-    "teal",
-    "yellow"
+    "dark"
    ],
    "shares": {
     "dark": 36.9,
-    "green": 35.3,
-    "teal": 16.4,
-    "yellow": 11.4
+    "green": 51.7,
+    "earthy": 11.4
    },
    "src": "mat-color-measured"
   },
   "anders-ruff--gatsby-s-feathered-affair-mahjong-mat": {
    "accents": [
-    "green",
-    "teal"
+    "green"
    ],
    "shares": {
     "neutral": 39.8,
-    "green": 44.5,
-    "teal": 15.7
+    "green": 60.2
    },
    "src": "mat-color-measured"
   },
@@ -2950,32 +2833,28 @@
    "shares": {
     "blue": 75.8,
     "green": 17.7,
-    "yellow": 4.3,
+    "earthy": 4.3,
     "red": 2.3
    },
    "src": "mat-color-measured"
   },
   "anders-ruff--brownstone-bloom-mahjong-mat": {
    "accents": [
-    "earthy",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "neutral": 43.4,
-    "earthy": 48.5,
-    "yellow": 8.2
+    "earthy": 56.7
    },
    "src": "mat-color-measured"
   },
   "anders-ruff--heirloom-harvest-plaid-mahjong-mat": {
    "accents": [
-    "earthy",
-    "yellow"
+    "earthy"
    ],
    "shares": {
-    "earthy": 68.9,
-    "neutral": 22.0,
-    "yellow": 9.1
+    "earthy": 78.0,
+    "neutral": 22.0
    },
    "src": "mat-color-measured"
   },
@@ -3015,12 +2894,11 @@
   "anders-ruff--butterflies-blooms-mahjong-mat": {
    "accents": [
     "green",
-    "yellow",
-    "pink"
+    "earthy"
    ],
    "shares": {
     "green": 57.0,
-    "yellow": 20.4,
+    "earthy": 20.4,
     "neutral": 11.4,
     "pink": 11.2
    },
@@ -3115,12 +2993,10 @@
   },
   "anders-ruff--palm-springs-mahjong-mat": {
    "accents": [
-    "teal",
     "green"
    ],
    "shares": {
-    "teal": 58.0,
-    "green": 15.4
+    "green": 73.4
    },
    "src": "mat-color-measured"
   },
@@ -3141,18 +3017,18 @@
    ],
    "shares": {
     "pink": 86.9,
-    "teal": 7.5,
-    "yellow": 5.7
+    "green": 7.5,
+    "neutral": 5.7
    },
    "src": "mat-color-measured"
   },
   "anders-ruff--moss-grove-mahjong-mat": {
    "accents": [
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "neutral": 36.1,
-    "yellow": 63.8
+    "earthy": 63.8
    },
    "src": "mat-color-measured"
   },
@@ -3172,12 +3048,10 @@
   "anders-ruff--classic-very-merry-mahj-mahjong-mat": {
    "accents": [
     "green",
-    "teal",
     "earthy"
    ],
    "shares": {
-    "green": 47.5,
-    "teal": 26.3,
+    "green": 73.8,
     "earthy": 15.2,
     "neutral": 6.0,
     "red": 4.9
@@ -3186,12 +3060,10 @@
   },
   "anders-ruff--very-merry-mahj-mahjong-mat": {
    "accents": [
-    "pink",
-    "yellow",
-    "green"
+    "pink"
    ],
    "shares": {
-    "yellow": 42.6,
+    "neutral": 42.6,
     "pink": 49.0,
     "green": 8.4
    },
@@ -3213,21 +3085,18 @@
   "anders-ruff--palm-beach-ocean-blue-green-mahjong-mat": {
    "accents": [
     "blue",
-    "green",
-    "teal"
+    "green"
    ],
    "shares": {
     "blue": 50.2,
-    "green": 31.8,
-    "teal": 18.0
+    "green": 49.8
    },
    "src": "mat-color-measured"
   },
   "anders-ruff--palm-beach-tropical-pink-lime-mahjong-mat": {
    "accents": [
     "pink",
-    "green",
-    "teal"
+    "green"
    ],
    "shares": {
     "pink": 43.0,
@@ -3250,8 +3119,7 @@
   "anders-ruff--bams-barrels-mahjong-mat": {
    "accents": [
     "neutral",
-    "earthy",
-    "orange"
+    "earthy"
    ],
    "shares": {
     "earthy": 36.5,
@@ -3290,8 +3158,7 @@
   "anders-ruff--tartan-toile-no-l-mahjong-mat": {
    "accents": [
     "blue",
-    "earthy",
-    "red"
+    "earthy"
    ],
    "shares": {
     "blue": 29.6,
@@ -3305,8 +3172,7 @@
   "anders-ruff--santa-s-mahjong-mail-mahjong-mat": {
    "accents": [
     "red",
-    "blue",
-    "green"
+    "blue"
    ],
    "shares": {
     "red": 44.5,
@@ -3357,8 +3223,7 @@
   "anders-ruff--watercolor-christmas-tree-mahjong-mat": {
    "accents": [
     "green",
-    "red",
-    "pink"
+    "red"
    ],
    "shares": {
     "green": 51.4,
@@ -3384,29 +3249,25 @@
   },
   "anders-ruff--coastal-aqua-marble-mahjong-mat": {
    "accents": [
-    "teal",
-    "blue",
-    "green"
+    "teal"
    ],
    "shares": {
     "teal": 74.0,
     "blue": 9.5,
     "green": 8.6,
-    "yellow": 7.8
+    "earthy": 7.8
    },
    "src": "mat-color-measured"
   },
   "anders-ruff--flora-belle-mahjong-mat": {
    "accents": [
     "pink",
-    "teal",
     "green"
    ],
    "shares": {
     "pink": 44.7,
-    "teal": 23.1,
+    "green": 36.5,
     "neutral": 14.1,
-    "green": 13.4,
     "earthy": 4.6
    },
    "src": "mat-color-measured"
@@ -3427,8 +3288,7 @@
   "anders-ruff--palm-beach-pink-cabana-blue-mahjong-mat": {
    "accents": [
     "pink",
-    "blue",
-    "teal"
+    "blue"
    ],
    "shares": {
     "pink": 53.1,
@@ -3453,25 +3313,25 @@
   },
   "anders-ruff--van-gogh-sunflowers-irises-reversible-mahjong-mat": {
    "accents": [
-    "yellow"
+    "yellow",
+    "earthy"
    ],
    "shares": {
     "neutral": 31.3,
-    "yellow": 64.6,
-    "earthy": 4.1
+    "yellow": 38.9,
+    "earthy": 29.8
    },
    "src": "mat-color-measured"
   },
   "anders-ruff--van-gogh-starry-night-wheat-field-with-cypresses-reversible-mahjong-mat": {
    "accents": [
     "blue",
-    "yellow",
-    "green"
+    "earthy"
    ],
    "shares": {
     "blue": 29.1,
     "neutral": 44.7,
-    "yellow": 14.6,
+    "earthy": 14.6,
     "green": 11.5
    },
    "src": "mat-color-measured"
@@ -3491,15 +3351,12 @@
   "anders-ruff--mahj-in-bloom-mahjong-mat": {
    "accents": [
     "green",
-    "teal",
-    "yellow",
-    "red"
+    "earthy"
    ],
    "shares": {
-    "green": 23.6,
+    "green": 46.1,
     "neutral": 23.5,
-    "teal": 22.5,
-    "yellow": 21.2,
+    "earthy": 21.2,
     "red": 9.2
    },
    "src": "mat-color-measured"
@@ -3530,39 +3387,34 @@
   },
   "anders-ruff--eau-de-mahj-mahjong-mat": {
    "accents": [
-    "dark",
-    "yellow"
+    "dark"
    ],
    "shares": {
     "dark": 38.2,
     "neutral": 44.8,
-    "yellow": 10.5,
+    "earthy": 10.5,
     "pink": 6.6
    },
    "src": "mat-color-measured"
   },
   "splash-of-color--modern-nordic-scandinavian-folk-art-mahjong-mat-sleek-surface": {
    "accents": [
-    "earthy",
-    "green",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "neutral": 28.8,
-    "earthy": 42.8,
+    "earthy": 54.1,
     "green": 11.7,
-    "yellow": 11.3,
     "red": 5.4
    },
    "src": "mat-color-measured"
   },
   "splash-of-color--art-deco-designed-mahjong-mat-green-blue-speakeasy-collection": {
    "accents": [
-    "yellow",
-    "dark"
+    "earthy"
    ],
    "shares": {
-    "yellow": 74.1,
+    "earthy": 74.1,
     "dark": 18.4,
     "green": 7.6
    },
@@ -3570,11 +3422,10 @@
   },
   "splash-of-color--art-deco-green-and-blue-mahjong-mat-26x26": {
    "accents": [
-    "yellow",
-    "green"
+    "earthy"
    ],
    "shares": {
-    "yellow": 73.4,
+    "earthy": 73.4,
     "dark": 13.0,
     "green": 8.0,
     "neutral": 5.7
@@ -3599,8 +3450,7 @@
    "accents": [
     "pink",
     "earthy",
-    "green",
-    "blue"
+    "green"
    ],
    "shares": {
     "neutral": 31.2,
@@ -3629,8 +3479,7 @@
   },
   "splash-of-color--year-of-the-fire-goat-mahjong-mat": {
    "accents": [
-    "orange",
-    "earthy"
+    "orange"
    ],
    "shares": {
     "neutral": 39.8,
@@ -3658,23 +3507,22 @@
   },
   "splash-of-color--william-morris-inspired-rose-wreath-mahjong-mat": {
    "accents": [
+    "earthy",
     "yellow",
-    "teal",
-    "earthy"
+    "green"
    ],
    "shares": {
-    "yellow": 63.8,
+    "earthy": 53.7,
+    "yellow": 19.8,
     "dark": 13.5,
-    "teal": 13.0,
-    "earthy": 9.7
+    "green": 13.0
    },
    "src": "mat-color-measured"
   },
   "tigre-de-tartan--mahjong-mat-printed-needlepoint-canvas-14-mesh-jard-n-de-los-jefes": {
    "accents": [
     "earthy",
-    "green",
-    "red"
+    "green"
    ],
    "shares": {
     "neutral": 43.6,
@@ -3692,7 +3540,7 @@
    "shares": {
     "neutral": 54.6,
     "blue": 35.2,
-    "yellow": 6.3,
+    "earthy": 6.3,
     "red": 3.8
    },
    "src": "mat-color-measured"
@@ -3709,8 +3557,7 @@
   },
   "tigre-de-tartan--mahjong-mat-nantucket-basket-round-w-rules": {
    "accents": [
-    "earthy",
-    "orange"
+    "earthy"
    ],
    "shares": {
     "earthy": 79.3,
@@ -3722,16 +3569,13 @@
   "tigre-de-tartan--strawberries-mahjong-mat-printed-needlepoint-canvas": {
    "accents": [
     "green",
-    "dark",
     "earthy",
-    "yellow",
-    "red"
+    "dark"
    ],
    "shares": {
     "dark": 24.3,
     "green": 38.7,
-    "earthy": 15.1,
-    "yellow": 12.8,
+    "earthy": 27.9,
     "red": 9.1
    },
    "src": "mat-color-measured"
@@ -3768,8 +3612,7 @@
    ],
    "shares": {
     "green": 93.7,
-    "yellow": 3.6,
-    "earthy": 2.7
+    "earthy": 6.3
    },
    "src": "mat-color-measured"
   },
@@ -3801,9 +3644,9 @@
     "teal"
    ],
    "shares": {
-    "teal": 92.9,
-    "green": 4.4,
-    "yellow": 2.7
+    "teal": 87.7,
+    "green": 9.6,
+    "earthy": 2.7
    },
    "src": "mat-color-measured"
   },
@@ -3820,15 +3663,12 @@
   },
   "bam-let-s-mahjong--posy-pop-watercolor-floral-mahjong-mat": {
    "accents": [
-    "green",
-    "yellow",
-    "teal"
+    "green"
    ],
    "shares": {
     "neutral": 27.1,
-    "green": 43.9,
+    "green": 54.4,
     "yellow": 11.4,
-    "teal": 10.5,
     "pink": 7.1
    },
    "src": "mat-color-measured"
@@ -3847,23 +3687,23 @@
   },
   "bam-let-s-mahjong--secret-garden-mahjong-mat-watercolor-floral-mahjong-mat": {
    "accents": [
-    "yellow",
+    "earthy",
     "blue",
     "pink"
    ],
    "shares": {
     "neutral": 43.5,
-    "yellow": 21.9,
+    "earthy": 17.6,
     "blue": 15.6,
     "pink": 15.0,
+    "yellow": 4.3,
     "red": 4.0
    },
    "src": "mat-color-measured"
   },
   "bam-let-s-mahjong--birdsong-mahjong-mat-green-floral-american-mahjong-mat": {
    "accents": [
-    "green",
-    "orange"
+    "green"
    ],
    "shares": {
     "green": 63.1,
@@ -3876,9 +3716,7 @@
   "bam-let-s-mahjong--pumpkin-patch-mahjong-mat-fall-halloween-mahjong-mat": {
    "accents": [
     "neutral",
-    "orange",
-    "green",
-    "pink"
+    "orange"
    ],
    "shares": {
     "neutral": 51.2,
@@ -3953,8 +3791,7 @@
   "bam-let-s-mahjong--nantucket-mahjong-mat": {
    "accents": [
     "blue",
-    "red",
-    "pink"
+    "red"
    ],
    "shares": {
     "blue": 76.6,
@@ -4000,8 +3837,7 @@
   },
   "bespoke-mahjong--bespoke-x-gray-malin-double-sided-mat-double-the-fun-gray-malin-getaway-dogs-mat": {
    "accents": [
-    "neutral",
-    "earthy"
+    "neutral"
    ],
    "shares": {
     "neutral": 83.9,
@@ -4012,8 +3848,7 @@
   },
   "bespoke-mahjong--garden-glow-mat-wild-orchid": {
    "accents": [
-    "purple",
-    "pink"
+    "purple"
    ],
    "shares": {
     "purple": 63.1,
@@ -4027,9 +3862,7 @@
   "bespoke-mahjong--double-sided-mat-double-the-fun-bespoke-x-corey-paige-color-crush": {
    "accents": [
     "pink",
-    "orange",
-    "yellow",
-    "teal"
+    "orange"
    ],
    "shares": {
     "pink": 64.4,
@@ -4065,9 +3898,7 @@
   },
   "bespoke-mahjong--grateful-dead-x-bespoke-mahjong-double-sided-mat-we-are-everywhere": {
    "accents": [
-    "blue",
-    "earthy",
-    "red"
+    "blue"
    ],
    "shares": {
     "blue": 69.0,
@@ -4081,9 +3912,7 @@
    "accents": [
     "green",
     "yellow",
-    "blue",
-    "orange",
-    "red"
+    "blue"
    ],
    "shares": {
     "yellow": 31.4,
@@ -4121,12 +3950,13 @@
   "bespoke-mahjong--vintage-floral-mat": {
    "accents": [
     "neutral",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "neutral": 52.2,
-    "yellow": 31.4,
+    "earthy": 19.5,
     "dark": 12.8,
+    "yellow": 11.9,
     "blue": 3.6
    },
    "src": "mat-color-measured"
@@ -4134,8 +3964,7 @@
   "bespoke-mahjong--lucky-charms-mat-part-deux": {
    "accents": [
     "blue",
-    "pink",
-    "dark"
+    "pink"
    ],
    "shares": {
     "blue": 50.0,
@@ -4150,13 +3979,12 @@
    "accents": [
     "neutral",
     "red",
-    "yellow",
-    "green"
+    "earthy"
    ],
    "shares": {
     "neutral": 48.8,
     "red": 19.4,
-    "yellow": 14.6,
+    "earthy": 14.6,
     "green": 10.9,
     "blue": 6.3
    },
@@ -4165,15 +3993,13 @@
   "bespoke-mahjong--year-of-the-dragon-mat-amped-up-pink": {
    "accents": [
     "pink",
-    "red",
     "earthy",
-    "yellow"
+    "red"
    ],
    "shares": {
     "pink": 45.8,
     "red": 19.2,
-    "earthy": 13.7,
-    "yellow": 11.7,
+    "earthy": 25.4,
     "neutral": 9.6
    },
    "src": "mat-color-measured"
@@ -4197,8 +4023,7 @@
   },
   "bespoke-mahjong--double-sided-mat-double-the-fun-floral-mat": {
    "accents": [
-    "earthy",
-    "green"
+    "earthy"
    ],
    "shares": {
     "earthy": 38.9,
@@ -4236,9 +4061,7 @@
   },
   "bespoke-mahjong--double-sided-mat-double-the-fun-year-of-the-horse-mat-bubblegum": {
    "accents": [
-    "pink",
-    "earthy",
-    "red"
+    "pink"
    ],
    "shares": {
     "pink": 69.9,
@@ -4252,20 +4075,20 @@
   },
   "bespoke-mahjong--garden-glow-mat-turquoise": {
    "accents": [
-    "teal"
+    "teal",
+    "green"
    ],
    "shares": {
-    "teal": 60.1,
+    "teal": 37.1,
+    "green": 30.7,
     "neutral": 24.8,
-    "green": 7.7,
     "pink": 7.5
    },
    "src": "mat-color-measured"
   },
   "bespoke-mahjong--garden-glow-mat-emerald-green": {
    "accents": [
-    "green",
-    "pink"
+    "green"
    ],
    "shares": {
     "green": 73.6,
@@ -4280,8 +4103,7 @@
    "accents": [
     "pink",
     "blue",
-    "orange",
-    "yellow"
+    "orange"
    ],
    "shares": {
     "pink": 53.6,
@@ -4297,8 +4119,7 @@
     "teal",
     "pink",
     "blue",
-    "yellow",
-    "green"
+    "yellow"
    ],
    "shares": {
     "teal": 30.2,
@@ -4325,8 +4146,7 @@
   "bespoke-mahjong--double-sided-mat-double-the-fun-year-of-the-horse-mat-harlequin": {
    "accents": [
     "pink",
-    "earthy",
-    "orange"
+    "earthy"
    ],
    "shares": {
     "pink": 56.5,
@@ -4340,8 +4160,7 @@
    "accents": [
     "neutral",
     "green",
-    "pink",
-    "red"
+    "pink"
    ],
    "shares": {
     "neutral": 48.8,
@@ -4381,8 +4200,7 @@
   "bespoke-mahjong--lucky-charms-mat": {
    "accents": [
     "pink",
-    "blue",
-    "red"
+    "blue"
    ],
    "shares": {
     "pink": 65.0,
@@ -4395,15 +4213,13 @@
   },
   "bespoke-mahjong--double-sided-mat-double-the-fun-darjeeling-peacock-mat": {
    "accents": [
-    "blue",
-    "pink",
-    "green"
+    "blue"
    ],
    "shares": {
     "blue": 73.8,
     "green": 9.0,
     "pink": 11.9,
-    "yellow": 5.2
+    "earthy": 5.2
    },
    "src": "mat-color-measured"
   },
@@ -4411,8 +4227,7 @@
    "accents": [
     "yellow",
     "orange",
-    "green",
-    "teal"
+    "green"
    ],
    "shares": {
     "yellow": 34.1,
@@ -4455,8 +4270,7 @@
   },
   "bespoke-mahjong--preppy-pink-garden-mat": {
    "accents": [
-    "pink",
-    "green"
+    "pink"
    ],
    "shares": {
     "pink": 58.5,
@@ -4483,13 +4297,13 @@
   "charleston-mahjong-club--the-club-mat-blue-green-stripe": {
    "accents": [
     "neutral",
-    "teal",
-    "green"
+    "green",
+    "teal"
    ],
    "shares": {
     "neutral": 45.2,
-    "green": 21.3,
-    "teal": 24.0,
+    "green": 26.3,
+    "teal": 19.0,
     "dark": 6.4,
     "blue": 3.2
    },
@@ -4507,8 +4321,7 @@
   },
   "charleston-mahjong-club--ski-club-mat-red-sweater-border": {
    "accents": [
-    "teal",
-    "red"
+    "teal"
    ],
    "shares": {
     "teal": 79.9,
@@ -4531,8 +4344,7 @@
   },
   "charleston-mahjong-club--the-club-mat-pink-white-striped": {
    "accents": [
-    "pink",
-    "green"
+    "pink"
    ],
    "shares": {
     "pink": 31.9,
@@ -4573,7 +4385,8 @@
     "blue": 48.6,
     "neutral": 44.4,
     "pink": 3.0,
-    "yellow": 4.0
+    "earthy": 2.1,
+    "yellow": 1.9
    },
    "src": "mat-color-measured"
   },
@@ -4596,8 +4409,7 @@
    "accents": [
     "neutral",
     "orange",
-    "blue",
-    "green"
+    "blue"
    ],
    "shares": {
     "neutral": 46.7,
@@ -4657,23 +4469,20 @@
   },
   "hip-hip-mahjong--shell-ebration-mahjong-mat": {
    "accents": [
-    "neutral",
-    "dark",
-    "blue"
+    "neutral"
    ],
    "shares": {
     "neutral": 71.2,
     "dark": 18.8,
     "blue": 9.2,
-    "yellow": 0.7
+    "earthy": 0.7
    },
    "src": "mat-color-measured"
   },
   "hip-hip-mahjong--the-house-mahjong-mat": {
    "accents": [
     "orange",
-    "green",
-    "pink"
+    "green"
    ],
    "shares": {
     "neutral": 39.5,
@@ -4688,8 +4497,7 @@
   "hip-hip-mahjong--let-freedom-ring-mahjong-mat": {
    "accents": [
     "neutral",
-    "blue",
-    "pink"
+    "blue"
    ],
    "shares": {
     "neutral": 72.4,
@@ -4717,8 +4525,7 @@
    "accents": [
     "orange",
     "dark",
-    "blue",
-    "pink"
+    "blue"
    ],
    "shares": {
     "orange": 28.9,
@@ -4742,12 +4549,11 @@
   },
   "let-s-mahj-on--lmo-floral-border-mat-petal": {
    "accents": [
-    "neutral",
-    "yellow"
+    "neutral"
    ],
    "shares": {
     "neutral": 85.0,
-    "yellow": 8.5,
+    "earthy": 8.5,
     "blue": 3.7,
     "pink": 2.8
    },
@@ -4755,14 +4561,11 @@
   },
   "let-s-mahj-on--let-s-mahj-on-floral-mat": {
    "accents": [
-    "neutral",
-    "yellow",
-    "green",
-    "blue"
+    "neutral"
    ],
    "shares": {
     "neutral": 66.3,
-    "yellow": 9.9,
+    "earthy": 9.9,
     "green": 9.5,
     "blue": 8.3,
     "pink": 6.1
@@ -4776,12 +4579,12 @@
   },
   "middle-main-mahjong--tobacco-leaf-ginger-jar-mat": {
    "accents": [
-    "teal",
+    "green",
     "pink",
     "blue"
    ],
    "shares": {
-    "teal": 35.0,
+    "green": 35.0,
     "pink": 28.2,
     "blue": 15.5,
     "neutral": 15.5,
@@ -4791,21 +4594,23 @@
   },
   "middle-main-mahjong--beautiful-beginnings-a-new-mahjong-player-s-mat": {
    "accents": [
-    "teal"
+    "teal",
+    "green"
    ],
    "shares": {
     "neutral": 28.9,
-    "teal": 65.4,
+    "teal": 43.8,
+    "green": 21.6,
     "pink": 5.7
    },
    "src": "mat-color-measured"
   },
   "middle-main-mahjong--seabee-avenue-monstera-plant-mat": {
    "accents": [
-    "teal"
+    "green"
    ],
    "shares": {
-    "teal": 100.0
+    "green": 100.0
    },
    "src": "mat-color-measured"
   },
@@ -4839,24 +4644,24 @@
    "accents": [
     "pink",
     "blue",
-    "teal"
+    "green"
    ],
    "shares": {
     "pink": 40.5,
     "blue": 28.3,
-    "teal": 16.2,
+    "green": 16.2,
     "neutral": 15.1
    },
    "src": "mat-color-measured"
   },
   "oh-my-mahjong--yuletide": {
    "accents": [
-    "teal",
+    "green",
     "blue",
     "red"
    ],
    "shares": {
-    "teal": 55.9,
+    "green": 55.9,
     "blue": 23.3,
     "red": 20.7
    },
@@ -4904,23 +4709,21 @@
     "green"
    ],
    "shares": {
-    "earthy": 35.6,
+    "earthy": 41.3,
     "green": 35.5,
     "neutral": 12.9,
     "red": 7.0,
-    "yellow": 5.7,
     "dark": 3.3
    },
    "src": "mat-color-measured"
   },
   "virora-mahjong--limoncea-mahjong-mat": {
    "accents": [
-    "yellow",
-    "pink",
-    "blue"
+    "earthy",
+    "pink"
    ],
    "shares": {
-    "yellow": 44.0,
+    "earthy": 44.0,
     "neutral": 19.4,
     "pink": 26.2,
     "blue": 10.4
@@ -5028,23 +4831,20 @@
   "oh-my-mahjong--camellia-retired": {
    "accents": [
     "neutral",
-    "pink",
-    "blue"
+    "pink"
    ],
    "shares": {
     "neutral": 48.8,
     "pink": 36.9,
     "blue": 9.5,
-    "yellow": 4.8
+    "earthy": 4.8
    },
    "src": "mat-color-measured"
   },
   "oh-my-mahjong--imperial-retired": {
    "accents": [
     "neutral",
-    "green",
-    "pink",
-    "blue"
+    "green"
    ],
    "shares": {
     "neutral": 62.7,
@@ -5073,14 +4873,14 @@
   "oh-my-mahjong--citrus-songbird-retired": {
    "accents": [
     "green",
-    "pink",
-    "yellow"
+    "pink"
    ],
    "shares": {
     "green": 28.0,
     "neutral": 42.3,
     "pink": 17.8,
-    "yellow": 11.9
+    "earthy": 8.5,
+    "yellow": 3.4
    },
    "src": "mat-color-measured"
   },
@@ -5103,7 +4903,8 @@
    "shares": {
     "pink": 84.8,
     "blue": 7.9,
-    "teal": 7.4
+    "teal": 4.3,
+    "green": 3.1
    },
    "src": "mat-color-measured"
   },
@@ -5111,8 +4912,7 @@
    "accents": [
     "teal",
     "green",
-    "pink",
-    "blue"
+    "pink"
    ],
    "shares": {
     "teal": 41.3,
@@ -5124,10 +4924,7 @@
   },
   "oh-my-mahjong--palm-paradise-retired": {
    "accents": [
-    "blue",
-    "teal",
-    "green",
-    "pink"
+    "blue"
    ],
    "shares": {
     "blue": 67.8,
@@ -5139,13 +4936,13 @@
   },
   "oh-my-mahjong--ky-derby-retired": {
    "accents": [
-    "yellow",
+    "earthy",
     "pink",
     "green",
     "red"
    ],
    "shares": {
-    "yellow": 24.6,
+    "earthy": 24.6,
     "green": 20.6,
     "neutral": 17.0,
     "red": 15.1,
@@ -5156,15 +4953,12 @@
   "oh-my-mahjong--soho-retired": {
    "accents": [
     "blue",
-    "green",
-    "teal",
-    "yellow"
+    "green"
    ],
    "shares": {
     "blue": 62.0,
-    "green": 17.7,
-    "teal": 10.5,
-    "yellow": 9.9
+    "green": 28.2,
+    "earthy": 9.9
    },
    "src": "mat-color-measured"
   },
@@ -5204,8 +4998,7 @@
   },
   "amanda-toppe--blue-willow": {
    "accents": [
-    "neutral",
-    "pink"
+    "neutral"
    ],
    "shares": {
     "neutral": 89.5,
@@ -5217,12 +5010,12 @@
    "accents": [
     "neutral",
     "teal",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "neutral": 49.8,
     "teal": 31.3,
-    "yellow": 13.7,
+    "earthy": 13.7,
     "green": 5.3
    },
    "src": "mat-color-measured"
@@ -5230,8 +5023,7 @@
   "amanda-toppe--pink-winds": {
    "accents": [
     "purple",
-    "blue",
-    "green"
+    "blue"
    ],
    "shares": {
     "purple": 47.0,
@@ -5244,8 +5036,7 @@
    "accents": [
     "neutral",
     "purple",
-    "pink",
-    "green"
+    "pink"
    ],
    "shares": {
     "neutral": 53.9,
@@ -5260,14 +5051,14 @@
     "pink",
     "purple",
     "green",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "pink": 33.4,
     "purple": 18.4,
     "neutral": 16.8,
     "green": 16.7,
-    "yellow": 14.7
+    "earthy": 14.7
    },
    "src": "mat-color-measured"
   },
@@ -5310,12 +5101,11 @@
   },
   "oh-my-mahjong--birdie-green-retired": {
    "accents": [
-    "teal",
     "green"
    ],
    "shares": {
-    "teal": 60.3,
-    "green": 29.5,
+    "green": 80.6,
+    "teal": 9.2,
     "blue": 7.6,
     "neutral": 2.7
    },
@@ -5344,15 +5134,14 @@
     "blue": 59.4,
     "pink": 36.5,
     "teal": 2.2,
-    "yellow": 1.8
+    "earthy": 1.8
    },
    "src": "mat-color-measured"
   },
   "oh-my-mahjong--sweet-marie-retired": {
    "accents": [
     "pink",
-    "teal",
-    "orange"
+    "teal"
    ],
    "shares": {
     "pink": 65.0,
@@ -5366,8 +5155,7 @@
    "accents": [
     "teal",
     "yellow",
-    "pink",
-    "green"
+    "pink"
    ],
    "shares": {
     "teal": 51.2,
@@ -5475,10 +5263,10 @@
   },
   "bam-bird-boutique--bandana-holiday-green-pink-accents": {
    "accents": [
-    "teal"
+    "green"
    ],
    "shares": {
-    "teal": 94.0,
+    "green": 94.0,
     "pink": 4.1,
     "dark": 1.9
    },
@@ -5524,8 +5312,7 @@
   "mahjong-studios--amber-jade": {
    "accents": [
     "orange",
-    "green",
-    "earthy"
+    "green"
    ],
    "shares": {
     "orange": 67.4,
@@ -5538,8 +5325,7 @@
   "mahjong-studios--amber-jade-bird-bam": {
    "accents": [
     "orange",
-    "green",
-    "earthy"
+    "green"
    ],
    "shares": {
     "orange": 72.3,
@@ -5551,13 +5337,14 @@
   "mahjong-studios--midnight-luxe": {
    "accents": [
     "blue",
-    "teal"
+    "teal",
+    "green"
    ],
    "shares": {
     "blue": 59.5,
-    "teal": 28.0,
-    "green": 6.9,
-    "yellow": 5.6
+    "teal": 22.1,
+    "green": 12.8,
+    "earthy": 5.6
    },
    "src": "mat-color-measured"
   },
@@ -5592,9 +5379,7 @@
   "mahjong-studios--citrus-orange": {
    "accents": [
     "orange",
-    "green",
-    "yellow",
-    "pink"
+    "green"
    ],
    "shares": {
     "orange": 44.2,
@@ -5639,8 +5424,7 @@
    "accents": [
     "teal",
     "pink",
-    "blue",
-    "purple"
+    "blue"
    ],
    "shares": {
     "teal": 52.8,
@@ -5680,14 +5464,13 @@
   "mahjong-studios--blue-birdsong": {
    "accents": [
     "blue",
-    "pink",
-    "yellow"
+    "pink"
    ],
    "shares": {
     "blue": 55.1,
     "pink": 20.5,
     "neutral": 13.2,
-    "yellow": 11.2
+    "earthy": 11.2
    },
    "src": "mat-color-measured"
   },
@@ -5720,12 +5503,10 @@
   },
   "my-fair-mahjong--confetti-green": {
    "accents": [
-    "green",
-    "teal"
+    "green"
    ],
    "shares": {
-    "teal": 47.1,
-    "green": 52.9
+    "green": 100.0
    },
    "src": "mat-color-measured"
   },
@@ -5760,11 +5541,11 @@
   },
   "my-fair-mahjong--color-wave-green-center-pink-scallop": {
    "accents": [
-    "teal",
+    "green",
     "pink"
    ],
    "shares": {
-    "teal": 70.3,
+    "green": 70.3,
     "pink": 28.7,
     "blue": 1.1
    },
@@ -5798,11 +5579,12 @@
   "my-fair-mahjong--color-wave-blue-center-green-scallop": {
    "accents": [
     "blue",
-    "teal"
+    "green"
    ],
    "shares": {
     "blue": 70.0,
-    "teal": 30.1
+    "green": 27.4,
+    "teal": 2.7
    },
    "src": "mat-color-measured"
   },
@@ -5875,11 +5657,11 @@
   },
   "peace-love-mahjong--nutcracker-noel-gold": {
    "accents": [
-    "yellow",
+    "earthy",
     "green"
    ],
    "shares": {
-    "yellow": 52.2,
+    "earthy": 52.2,
     "neutral": 29.4,
     "green": 15.1,
     "pink": 3.4
@@ -5893,9 +5675,8 @@
    ],
    "shares": {
     "blue": 53.9,
-    "green": 19.9,
+    "green": 24.9,
     "neutral": 15.5,
-    "teal": 5.0,
     "purple": 3.9,
     "pink": 1.8
    },
@@ -5904,15 +5685,12 @@
   "peace-love-mahjong--vintage-noel": {
    "accents": [
     "green",
-    "pink",
-    "teal",
-    "red"
+    "pink"
    ],
    "shares": {
     "neutral": 42.8,
-    "green": 17.8,
+    "green": 28.1,
     "pink": 14.3,
-    "teal": 10.3,
     "red": 8.2,
     "yellow": 6.6
    },
@@ -5927,7 +5705,7 @@
     "red": 44.5,
     "neutral": 32.1,
     "pink": 12.8,
-    "yellow": 6.0,
+    "earthy": 6.0,
     "green": 4.6
    },
    "src": "mat-color-measured"
@@ -5939,15 +5717,13 @@
    "shares": {
     "green": 78.2,
     "neutral": 15.0,
-    "earthy": 5.3,
-    "yellow": 1.5
+    "earthy": 6.8
    },
    "src": "mat-color-measured"
   },
   "peace-love-mahjong--merry-striped": {
    "accents": [
-    "red",
-    "green"
+    "red"
    ],
    "shares": {
     "red": 77.7,
@@ -5959,8 +5735,7 @@
   },
   "peace-love-mahjong--perfectly-wrapped": {
    "accents": [
-    "green",
-    "pink"
+    "green"
    ],
    "shares": {
     "green": 75.3,
@@ -5973,30 +5748,28 @@
   },
   "peace-love-mahjong--peace-love-mistletoe": {
    "accents": [
-    "teal",
+    "green",
     "red"
    ],
    "shares": {
-    "teal": 60.1,
+    "green": 60.1,
     "neutral": 15.6,
     "red": 13.4,
-    "earthy": 5.5,
-    "yellow": 5.3
+    "earthy": 10.8
    },
    "src": "mat-color-measured"
   },
   "peace-love-mahjong--sugarplum-plaid": {
    "accents": [
     "pink",
-    "teal"
+    "green"
    ],
    "shares": {
     "pink": 55.5,
     "neutral": 18.7,
-    "teal": 8.8,
+    "green": 13.1,
     "yellow": 6.9,
-    "red": 5.8,
-    "green": 4.3
+    "red": 5.8
    },
    "src": "mat-color-measured"
   },
@@ -6015,13 +5788,12 @@
   },
   "peace-love-mahjong--tied-with-a-bow": {
    "accents": [
-    "pink",
-    "red"
+    "pink"
    ],
    "shares": {
     "pink": 66.1,
     "neutral": 18.1,
-    "teal": 7.3,
+    "green": 7.3,
     "red": 8.5
    },
    "src": "mat-color-measured"
@@ -6034,8 +5806,9 @@
    ],
    "shares": {
     "neutral": 53.1,
-    "teal": 33.1,
-    "earthy": 13.8
+    "teal": 26.9,
+    "earthy": 13.8,
+    "green": 6.2
    },
    "src": "mat-color-measured"
   },
@@ -6043,8 +5816,7 @@
    "accents": [
     "pink",
     "green",
-    "yellow",
-    "teal"
+    "yellow"
    ],
    "shares": {
     "pink": 32.0,
@@ -6057,14 +5829,13 @@
   },
   "peace-love-mahjong--dark-teal-cocktail-hour": {
    "accents": [
-    "teal"
+    "green"
    ],
    "shares": {
-    "teal": 85.0,
+    "green": 86.0,
     "neutral": 7.2,
-    "green": 2.7,
-    "earthy": 2.7,
-    "yellow": 2.4
+    "earthy": 5.1,
+    "teal": 1.7
    },
    "src": "mat-color-measured"
   },
@@ -6113,7 +5884,7 @@
     "neutral": 7.2,
     "pink": 1.3,
     "blue": 0.9,
-    "teal": 0.7
+    "green": 0.7
    },
    "src": "mat-color-measured"
   },
@@ -6124,9 +5895,8 @@
    ],
    "shares": {
     "yellow": 76.1,
-    "green": 11.5,
+    "green": 15.4,
     "neutral": 7.2,
-    "teal": 3.9,
     "orange": 1.3
    },
    "src": "mat-color-measured"
@@ -6136,9 +5906,8 @@
     "green"
    ],
    "shares": {
-    "green": 80.9,
+    "green": 85.6,
     "neutral": 10.6,
-    "teal": 4.7,
     "blue": 3.8
    },
    "src": "mat-color-measured"
@@ -6179,13 +5948,12 @@
   },
   "peace-love-mahjong--border-aqua": {
    "accents": [
-    "teal"
+    "green"
    ],
    "shares": {
-    "teal": 83.1,
+    "green": 86.7,
     "neutral": 10.0,
-    "pink": 3.3,
-    "green": 3.6
+    "pink": 3.3
    },
    "src": "mat-color-measured"
   },
@@ -6207,7 +5975,7 @@
    "shares": {
     "orange": 87.3,
     "neutral": 9.4,
-    "yellow": 3.3
+    "earthy": 3.3
    },
    "src": "mat-color-measured"
   },
@@ -6240,9 +6008,8 @@
     "green"
    ],
    "shares": {
-    "green": 80.9,
+    "green": 85.6,
     "neutral": 10.6,
-    "teal": 4.7,
     "blue": 3.8
    },
    "src": "mat-color-measured"
@@ -6251,12 +6018,12 @@
    "accents": [
     "blue",
     "pink",
-    "teal"
+    "green"
    ],
    "shares": {
     "blue": 46.4,
     "pink": 34.6,
-    "teal": 17.4,
+    "green": 17.4,
     "yellow": 1.7
    },
    "src": "mat-color-measured"
@@ -6265,32 +6032,28 @@
    "accents": [
     "green",
     "pink",
-    "blue",
-    "red"
+    "blue"
    ],
    "shares": {
-    "green": 25.2,
+    "green": 31.9,
     "pink": 23.6,
     "blue": 21.6,
     "neutral": 13.9,
-    "red": 9.1,
-    "teal": 6.7
+    "red": 9.1
    },
    "src": "mat-color-measured"
   },
   "peace-love-mahjong--palm-beach-punch": {
    "accents": [
+    "green",
     "pink",
-    "teal",
-    "orange",
-    "green"
+    "orange"
    ],
    "shares": {
     "pink": 28.2,
-    "teal": 28.1,
+    "green": 38.0,
     "neutral": 14.0,
-    "orange": 19.8,
-    "green": 9.9
+    "orange": 19.8
    },
    "src": "mat-color-measured"
   },
@@ -6328,12 +6091,12 @@
   },
   "peace-love-mahjong--citrus-sherbet": {
    "accents": [
-    "teal",
+    "green",
     "pink",
     "orange"
    ],
    "shares": {
-    "teal": 31.1,
+    "green": 31.1,
     "pink": 26.5,
     "orange": 26.4,
     "neutral": 15.4,
@@ -6355,10 +6118,11 @@
   },
   "peace-love-mahjong--hot-tips-bejeweled": {
    "accents": [
-    "teal"
+    "green"
    ],
    "shares": {
-    "teal": 75.3,
+    "green": 62.7,
+    "teal": 12.6,
     "neutral": 10.1,
     "blue": 5.8,
     "purple": 4.8,
@@ -6368,23 +6132,20 @@
   },
   "peace-love-mahjong--hot-tips-cabana-crush": {
    "accents": [
-    "pink",
-    "blue",
-    "orange"
+    "pink"
    ],
    "shares": {
     "pink": 68.3,
     "neutral": 8.9,
     "blue": 8.1,
-    "teal": 6.7,
+    "green": 6.7,
     "orange": 8.1
    },
    "src": "mat-color-measured"
   },
   "peace-love-mahjong--hot-tips-vintage-blooms": {
    "accents": [
-    "green",
-    "earthy"
+    "green"
    ],
    "shares": {
     "green": 65.1,
@@ -6398,9 +6159,7 @@
   "peace-love-mahjong--whimsy-plaid-golden-hour": {
    "accents": [
     "pink",
-    "yellow",
-    "green",
-    "orange"
+    "yellow"
    ],
    "shares": {
     "pink": 43.1,
@@ -6414,28 +6173,27 @@
   "peace-love-mahjong--whimsy-plaid-seaside-spritz": {
    "accents": [
     "blue",
-    "yellow",
-    "green",
-    "teal"
+    "yellow"
    ],
    "shares": {
     "blue": 54.7,
-    "yellow": 21.6,
+    "yellow": 15.0,
     "green": 8.8,
     "teal": 8.5,
+    "earthy": 6.6,
     "neutral": 6.4
    },
    "src": "mat-color-measured"
   },
   "peace-love-mahjong--plaid-spring-breeze": {
    "accents": [
-    "teal"
+    "green"
    ],
    "shares": {
-    "teal": 63.5,
+    "green": 61.5,
     "neutral": 17.6,
+    "teal": 8.5,
     "pink": 7.4,
-    "green": 6.5,
     "earthy": 5.1
    },
    "src": "mat-color-measured"
@@ -6459,27 +6217,24 @@
    "shares": {
     "blue": 71.5,
     "neutral": 17.6,
-    "green": 6.7,
-    "teal": 4.2
+    "green": 10.9
    },
    "src": "mat-color-measured"
   },
   "peace-love-mahjong--gingham-pink-fling": {
    "accents": [
-    "pink",
-    "teal"
+    "pink"
    ],
    "shares": {
     "pink": 72.5,
     "neutral": 17.2,
-    "teal": 10.3
+    "green": 10.3
    },
    "src": "mat-color-measured"
   },
   "peace-love-mahjong--gingham-teal-bloom": {
    "accents": [
-    "teal",
-    "pink"
+    "teal"
    ],
    "shares": {
     "teal": 72.6,
@@ -6492,8 +6247,7 @@
    "accents": [
     "pink",
     "teal",
-    "purple",
-    "blue"
+    "purple"
    ],
    "shares": {
     "pink": 45.3,
@@ -6506,13 +6260,13 @@
   },
   "peace-love-mahjong--plaid-garden-party": {
    "accents": [
-    "teal"
+    "green"
    ],
    "shares": {
-    "teal": 63.5,
+    "green": 61.5,
     "neutral": 17.6,
+    "teal": 8.5,
     "pink": 7.4,
-    "green": 6.5,
     "earthy": 5.1
    },
    "src": "mat-color-measured"
@@ -6520,15 +6274,14 @@
   "peace-love-mahjong--stripes-berry-waves": {
    "accents": [
     "blue",
-    "yellow",
-    "green",
-    "teal"
+    "yellow"
    ],
    "shares": {
     "blue": 54.7,
-    "yellow": 21.6,
+    "yellow": 15.0,
     "green": 8.8,
     "teal": 8.5,
+    "earthy": 6.6,
     "neutral": 6.4
    },
    "src": "mat-color-measured"
@@ -6536,15 +6289,14 @@
   "peace-love-mahjong--stripes-lilac-splash": {
    "accents": [
     "blue",
-    "yellow",
-    "green",
-    "teal"
+    "yellow"
    ],
    "shares": {
     "blue": 54.7,
-    "yellow": 21.6,
+    "yellow": 15.0,
     "green": 8.8,
     "teal": 8.5,
+    "earthy": 6.6,
     "neutral": 6.4
    },
    "src": "mat-color-measured"
@@ -6568,17 +6320,15 @@
    ],
    "shares": {
     "blue": 48.4,
-    "green": 38.6,
-    "neutral": 8.2,
-    "teal": 4.6
+    "green": 43.2,
+    "neutral": 8.2
    },
    "src": "mat-color-measured"
   },
   "peace-love-mahjong--gingham-red": {
    "accents": [
     "red",
-    "pink",
-    "blue"
+    "pink"
    ],
    "shares": {
     "pink": 39.8,
@@ -6596,7 +6346,7 @@
     "pink": 52.6,
     "green": 31.4,
     "neutral": 9.7,
-    "yellow": 6.2
+    "earthy": 6.2
    },
    "src": "mat-color-measured"
   },
@@ -6607,7 +6357,7 @@
    "shares": {
     "green": 93.7,
     "neutral": 3.6,
-    "yellow": 2.7
+    "earthy": 2.7
    },
    "src": "mat-color-measured"
   },
@@ -6653,8 +6403,7 @@
    ],
    "shares": {
     "blue": 94.7,
-    "green": 3.8,
-    "teal": 1.5
+    "green": 5.3
    },
    "src": "mat-color-measured"
   },
@@ -6681,8 +6430,7 @@
   "charleston-mahjong-club--reversible-vegan-leather-bight-pink-purple": {
    "accents": [
     "pink",
-    "blue",
-    "purple"
+    "blue"
    ],
    "shares": {
     "pink": 62.6,
@@ -6707,24 +6455,22 @@
   },
   "charleston-mahjong-club--reversible-vegan-leather-mint-green-sea-foam-green": {
    "accents": [
-    "green",
-    "teal"
+    "green"
    ],
    "shares": {
-    "green": 64.3,
-    "neutral": 19.1,
-    "teal": 16.6
+    "green": 80.9,
+    "neutral": 19.1
    },
    "src": "mat-color-measured"
   },
   "charleston-mahjong-club--reversible-vegan-leather-sea-foam-green-dusty-blue": {
    "accents": [
     "blue",
-    "teal"
+    "green"
    ],
    "shares": {
     "blue": 67.4,
-    "teal": 23.5,
+    "green": 23.5,
     "neutral": 9.1
    },
    "src": "mat-color-measured"
@@ -6794,13 +6540,11 @@
   },
   "let-s-mahj-on--lmo-floral-border-pastel-sea": {
    "accents": [
-    "teal",
     "green"
    ],
    "shares": {
     "neutral": 42.3,
-    "green": 26.9,
-    "teal": 30.7
+    "green": 57.6
    },
    "src": "mat-color-measured"
   },
@@ -6890,8 +6634,7 @@
   },
   "let-s-mahj-on--signature-dragon-mat-hot-pink": {
    "accents": [
-    "pink",
-    "dark"
+    "pink"
    ],
    "shares": {
     "pink": 78.9,
@@ -6913,8 +6656,7 @@
   },
   "let-s-mahj-on--signature-dragon-mat-light-pink": {
    "accents": [
-    "pink",
-    "dark"
+    "pink"
    ],
    "shares": {
     "pink": 74.9,
@@ -6935,7 +6677,7 @@
     "pink": 15.4,
     "red": 12.5,
     "blue": 7.2,
-    "yellow": 7.0
+    "earthy": 7.0
    },
    "src": "mat-color-measured"
   },
@@ -6965,14 +6707,13 @@
   },
   "mahjong-register--hunter-green-navy-double-sided-leatherette": {
    "accents": [
-    "green",
-    "dark"
+    "green"
    ],
    "shares": {
     "green": 77.7,
     "dark": 18.6,
     "neutral": 1.9,
-    "yellow": 1.8
+    "earthy": 1.8
    },
    "src": "mat-color-measured"
   },
@@ -6983,20 +6724,17 @@
    ],
    "shares": {
     "blue": 86.1,
-    "green": 12.4,
-    "neutral": 1.0,
-    "teal": 0.5
+    "green": 12.9,
+    "neutral": 1.0
    },
    "src": "mat-color-measured"
   },
   "mahjong-register--emerald-teal-celedon-green-double-sided-leatherette": {
    "accents": [
-    "teal",
     "green"
    ],
    "shares": {
-    "teal": 78.7,
-    "green": 19.4,
+    "green": 98.1,
     "neutral": 1.9
    },
    "src": "mat-color-measured"
@@ -7014,11 +6752,11 @@
   "mahjong-register--coral-aqua-double-sided-leatherette": {
    "accents": [
     "pink",
-    "teal"
+    "green"
    ],
    "shares": {
     "pink": 79.5,
-    "teal": 17.9,
+    "green": 17.9,
     "neutral": 2.1,
     "earthy": 0.5
    },
@@ -7026,14 +6764,13 @@
   },
   "mahjong-register--butterfly-belle-premium": {
    "accents": [
-    "blue",
-    "pink"
+    "blue"
    ],
    "shares": {
     "blue": 50.1,
     "neutral": 33.7,
     "pink": 10.0,
-    "yellow": 3.0,
+    "earthy": 3.0,
     "dark": 1.8,
     "red": 1.4
    },
@@ -7042,15 +6779,13 @@
   "mahjong-register--pretty-in-plum-premium": {
    "accents": [
     "pink",
-    "dark",
-    "yellow",
-    "red"
+    "dark"
    ],
    "shares": {
     "dark": 23.5,
     "pink": 43.7,
     "neutral": 14.6,
-    "yellow": 9.4,
+    "earthy": 9.4,
     "red": 8.8
    },
    "src": "mat-color-measured"
@@ -7109,8 +6844,7 @@
    "accents": [
     "pink",
     "earthy",
-    "red",
-    "green"
+    "red"
    ],
    "shares": {
     "pink": 54.5,
@@ -7138,14 +6872,15 @@
   "mahjong-register--paisley-jubilee-premium": {
    "accents": [
     "pink",
-    "yellow",
-    "teal"
+    "teal",
+    "earthy"
    ],
    "shares": {
     "neutral": 25.7,
     "pink": 34.0,
     "teal": 17.2,
-    "yellow": 23.1
+    "earthy": 12.8,
+    "yellow": 10.3
    },
    "src": "mat-color-measured"
   },
@@ -7163,8 +6898,7 @@
    "accents": [
     "pink",
     "teal",
-    "blue",
-    "purple"
+    "blue"
    ],
    "shares": {
     "pink": 44.6,
@@ -7235,27 +6969,26 @@
   "mahjong-register--pink-zebra-in-bloom-premium-padded": {
    "accents": [
     "pink",
-    "yellow",
-    "dark"
+    "yellow"
    ],
    "shares": {
     "pink": 50.7,
     "dark": 15.4,
     "neutral": 13.9,
-    "yellow": 20.0
+    "yellow": 13.3,
+    "earthy": 6.7
    },
    "src": "mat-color-measured"
   },
   "mahjong-register--emerald-leopard-in-bloom-premium-padded": {
    "accents": [
-    "teal",
-    "yellow"
+    "green"
    ],
    "shares": {
-    "teal": 47.7,
+    "green": 47.7,
     "dark": 14.0,
     "neutral": 24.1,
-    "yellow": 11.0,
+    "earthy": 11.0,
     "pink": 3.1
    },
    "src": "mat-color-measured"
@@ -7263,28 +6996,24 @@
   "mahjong-register--the-peppi-peach-spotted-cheetah-in-bloom-premium": {
    "accents": [
     "pink",
-    "yellow",
     "earthy"
    ],
    "shares": {
     "pink": 43.3,
-    "yellow": 22.9,
-    "earthy": 17.2,
+    "earthy": 40.1,
     "neutral": 10.4,
-    "teal": 6.2
+    "green": 6.2
    },
    "src": "mat-color-measured"
   },
   "royal-mahjong-society--mahj-royale": {
    "accents": [
-    "pink",
     "green",
-    "teal"
+    "pink"
    ],
    "shares": {
-    "green": 33.8,
+    "green": 48.2,
     "pink": 40.7,
-    "teal": 14.4,
     "red": 6.2,
     "blue": 4.9
    },
@@ -7292,8 +7021,7 @@
   },
   "royal-mahjong-society--shore": {
    "accents": [
-    "neutral",
-    "blue"
+    "neutral"
    ],
    "shares": {
     "neutral": 65.0,
@@ -7305,13 +7033,13 @@
   "royal-mahjong-society--cottage": {
    "accents": [
     "blue",
-    "teal",
     "pink"
    ],
    "shares": {
     "blue": 58.9,
     "pink": 17.9,
-    "teal": 18.1,
+    "green": 9.4,
+    "teal": 8.7,
     "earthy": 5.0
    },
    "src": "mat-color-measured"
@@ -7371,23 +7099,20 @@
   },
   "mahj-tile-haus--coral-coast": {
    "accents": [
-    "green",
-    "teal"
+    "green"
    ],
    "shares": {
-    "teal": 38.0,
-    "green": 62.0
+    "green": 90.0,
+    "teal": 10.0
    },
    "src": "mat-color-measured"
   },
   "mahj-tile-haus--coral-and-coast-holiday": {
    "accents": [
-    "green",
-    "teal"
+    "green"
    ],
    "shares": {
-    "green": 76.6,
-    "teal": 23.5
+    "green": 100.1
    },
    "src": "mat-color-measured"
   },
@@ -7419,13 +7144,10 @@
   },
   "sunday-mahjong--sunday-premium": {
    "accents": [
-    "teal",
-    "green",
-    "yellow"
+    "green"
    ],
    "shares": {
-    "teal": 56.0,
-    "green": 23.0,
+    "green": 79.0,
     "yellow": 11.8,
     "dark": 6.4,
     "red": 2.8
@@ -7476,18 +7198,18 @@
     "teal"
    ],
    "shares": {
-    "teal": 48.1,
-    "green": 51.9
+    "teal": 34.3,
+    "green": 65.7
    },
    "src": "mat-color-measured"
   },
   "sunday-mahjong--plum-panda-premium": {
    "accents": [
-    "teal",
+    "green",
     "pink"
    ],
    "shares": {
-    "teal": 69.8,
+    "green": 69.8,
     "pink": 16.0,
     "neutral": 7.2,
     "orange": 6.9
@@ -7598,16 +7320,13 @@
   },
   "mahj-moon--blue-white-lemon": {
    "accents": [
-    "neutral",
-    "yellow",
-    "green",
-    "blue"
+    "neutral"
    ],
    "shares": {
-    "neutral": 58.5,
-    "yellow": 23.5,
+    "neutral": 75.2,
     "green": 9.1,
-    "blue": 8.9
+    "blue": 8.9,
+    "yellow": 6.8
    },
    "src": "mat-color-measured"
   },
@@ -7616,8 +7335,7 @@
     "green"
    ],
    "shares": {
-    "green": 93.8,
-    "teal": 6.2
+    "green": 100.0
    },
    "src": "mat-color-measured"
   },
@@ -7629,8 +7347,7 @@
    "shares": {
     "neutral": 44.2,
     "green": 17.3,
-    "earthy": 31.6,
-    "yellow": 6.9
+    "earthy": 38.5
    },
    "src": "mat-color-measured"
   },
@@ -7651,14 +7368,11 @@
    "src": "mat-color-measured"
   },
   "mahj-moon--desert": {
-   "accents": [
-    "orange"
-   ],
+   "accents": [],
    "shares": {
     "neutral": 10.8,
-    "yellow": 7.0,
-    "orange": 9.8,
-    "earthy": 0.5
+    "earthy": 7.5,
+    "orange": 9.8
    },
    "src": "mat-color-measured"
   },
@@ -7712,8 +7426,7 @@
   "mahj-moon--pickleball": {
    "accents": [
     "blue",
-    "purple",
-    "yellow"
+    "purple"
    ],
    "shares": {
     "blue": 33.9,
@@ -7727,8 +7440,7 @@
    "accents": [
     "neutral",
     "green",
-    "red",
-    "pink"
+    "red"
    ],
    "shares": {
     "neutral": 46.4,
@@ -7741,31 +7453,30 @@
   "mahj-moon--equestrian": {
    "accents": [
     "blue",
-    "pink",
-    "yellow"
+    "pink"
    ],
    "shares": {
     "neutral": 38.6,
     "blue": 21.8,
     "dark": 13.9,
     "pink": 12.5,
-    "yellow": 11.1,
+    "earthy": 11.1,
     "red": 2.1
    },
    "src": "mat-color-measured"
   },
   "mahj-moon--butterfly-floral": {
    "accents": [
-    "teal",
+    "green",
     "pink",
-    "blue"
+    "teal"
    ],
    "shares": {
     "neutral": 29.8,
     "pink": 20.9,
-    "teal": 34.4,
-    "blue": 8.9,
-    "green": 6.0
+    "teal": 19.4,
+    "green": 21.0,
+    "blue": 8.9
    },
    "src": "mat-color-measured"
   },
@@ -7809,14 +7520,11 @@
   },
   "mahj-moon--pastel-tie-dye-american": {
    "accents": [
-    "green",
-    "teal",
-    "pink"
+    "green"
    ],
    "shares": {
     "neutral": 42.5,
-    "teal": 16.6,
-    "green": 32.9,
+    "green": 49.5,
     "pink": 8.1
    },
    "src": "mat-color-measured"
@@ -7829,16 +7537,14 @@
    "shares": {
     "neutral": 51.6,
     "orange": 34.2,
-    "yellow": 7.8,
+    "earthy": 7.8,
     "blue": 6.4
    },
    "src": "mat-color-measured"
   },
   "mahj-moon--personalized-bow-american": {
    "accents": [
-    "pink",
-    "teal",
-    "green"
+    "pink"
    ],
    "shares": {
     "neutral": 32.3,
@@ -7852,14 +7558,12 @@
   "mahj-moon--personalized-vibrant-floral-chinoiserie-pink": {
    "accents": [
     "pink",
-    "yellow",
     "blue",
     "green"
    ],
    "shares": {
-    "neutral": 25.7,
+    "neutral": 42.5,
     "pink": 21.1,
-    "yellow": 16.8,
     "blue": 16.4,
     "green": 14.3,
     "orange": 5.7
@@ -7920,9 +7624,7 @@
   "mahj-moon--lion-american": {
    "accents": [
     "blue",
-    "pink",
-    "teal",
-    "yellow"
+    "pink"
    ],
    "shares": {
     "blue": 38.3,
@@ -7947,15 +7649,14 @@
   },
   "mahj-moon--palm-beach-american-2": {
    "accents": [
-    "teal",
-    "pink",
-    "green"
+    "green",
+    "pink"
    ],
    "shares": {
     "pink": 27.4,
-    "teal": 46.8,
+    "green": 50.3,
     "neutral": 15.0,
-    "green": 10.8
+    "teal": 7.3
    },
    "src": "mat-color-measured"
   },
@@ -7963,13 +7664,12 @@
    "accents": [
     "neutral",
     "orange",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "neutral": 61.6,
     "orange": 22.2,
-    "yellow": 10.4,
-    "earthy": 5.7
+    "earthy": 16.1
    },
    "src": "mat-color-measured"
   },
@@ -7988,8 +7688,7 @@
   "mahj-moon--botanical-chevron": {
    "accents": [
     "green",
-    "pink",
-    "yellow"
+    "pink"
    ],
    "shares": {
     "neutral": 31.7,
@@ -8018,8 +7717,7 @@
    "accents": [
     "blue",
     "dark",
-    "green",
-    "orange"
+    "green"
    ],
    "shares": {
     "dark": 23.0,
@@ -8061,8 +7759,7 @@
     "blue",
     "green",
     "pink",
-    "purple",
-    "teal"
+    "purple"
    ],
    "shares": {
     "blue": 27.1,
@@ -8085,16 +7782,14 @@
     "orange": 29.4,
     "red": 15.4,
     "neutral": 8.9,
-    "teal": 3.3
+    "green": 3.3
    },
    "src": "mat-color-measured"
   },
   "mahj-moon--coastal-bloom": {
    "accents": [
     "pink",
-    "yellow",
-    "blue",
-    "earthy"
+    "yellow"
    ],
    "shares": {
     "pink": 32.4,
@@ -8114,27 +7809,26 @@
     "pink": 38.2,
     "orange": 21.7,
     "neutral": 15.7,
-    "teal": 4.5
+    "green": 4.5
    },
    "src": "mat-color-measured"
   },
   "mahj-moon--equestrian-estate": {
    "accents": [
-    "green"
+    "green",
+    "earthy"
    ],
    "shares": {
     "green": 32.7,
     "neutral": 16.6,
-    "yellow": 7.3,
-    "earthy": 5.1
+    "earthy": 12.4
    },
    "src": "mat-color-measured"
   },
   "mahj-moon--paris-in-bloom": {
    "accents": [
     "green",
-    "pink",
-    "teal"
+    "pink"
    ],
    "shares": {
     "pink": 34.2,
@@ -8162,7 +7856,7 @@
    "shares": {
     "blue": 49.5,
     "neutral": 38.4,
-    "yellow": 7.9,
+    "earthy": 7.9,
     "red": 4.2
    },
    "src": "mat-color-measured"
@@ -8170,8 +7864,7 @@
   "mahj-moon--french-country-estate": {
    "accents": [
     "neutral",
-    "blue",
-    "green"
+    "blue"
    ],
    "shares": {
     "neutral": 66.0,
@@ -8211,16 +7904,13 @@
   },
   "mahj-moon--botanical-butterfly": {
    "accents": [
-    "green",
     "earthy",
-    "yellow",
-    "orange"
+    "green"
    ],
    "shares": {
     "green": 26.7,
-    "earthy": 25.3,
+    "earthy": 39.9,
     "neutral": 23.9,
-    "yellow": 14.6,
     "orange": 9.4
    },
    "src": "mat-color-measured"
@@ -8253,12 +7943,12 @@
   },
   "mahj-moon--harvest-pumpkin-thanksgiving": {
    "accents": [
-    "yellow",
+    "earthy",
     "orange"
    ],
    "shares": {
     "neutral": 33.8,
-    "yellow": 38.8,
+    "earthy": 38.8,
     "orange": 27.3
    },
    "src": "mat-color-measured"
@@ -8266,13 +7956,12 @@
   "mahj-moon--orchard-songbird": {
    "accents": [
     "orange",
-    "yellow",
-    "green"
+    "earthy"
    ],
    "shares": {
     "neutral": 35.1,
     "orange": 31.5,
-    "yellow": 21.7,
+    "earthy": 21.7,
     "green": 11.7
    },
    "src": "mat-color-measured"
@@ -8292,8 +7981,7 @@
   "mahj-moon--christmas-village-gingham": {
    "accents": [
     "green",
-    "pink",
-    "red"
+    "pink"
    ],
    "shares": {
     "pink": 26.5,
@@ -8349,11 +8037,11 @@
    "accents": [
     "neutral",
     "orange",
-    "teal"
+    "green"
    ],
    "shares": {
     "neutral": 62.4,
-    "teal": 13.0,
+    "green": 13.0,
     "orange": 24.6
    },
    "src": "mat-color-measured"
@@ -8375,8 +8063,7 @@
   "mahj-moon--pastel-garden-landscape": {
    "accents": [
     "teal",
-    "green",
-    "pink"
+    "green"
    ],
    "shares": {
     "neutral": 35.4,
@@ -8395,7 +8082,7 @@
    "shares": {
     "neutral": 63.9,
     "green": 27.3,
-    "yellow": 4.5,
+    "earthy": 4.5,
     "blue": 4.3
    },
    "src": "mat-color-measured"
@@ -8403,8 +8090,7 @@
   "mahj-moon--scalloped-blossom-aviary": {
    "accents": [
     "neutral",
-    "pink",
-    "blue"
+    "pink"
    ],
    "shares": {
     "neutral": 51.3,
@@ -8417,41 +8103,38 @@
    "accents": [
     "neutral",
     "green",
-    "pink",
-    "teal"
+    "pink"
    ],
    "shares": {
     "neutral": 52.5,
-    "green": 16.7,
-    "pink": 16.5,
-    "teal": 14.2
+    "green": 30.9,
+    "pink": 16.5
    },
    "src": "mat-color-measured"
   },
   "mahj-moon--scalloped-tropical-palm": {
    "accents": [
     "neutral",
-    "teal",
-    "pink",
-    "green"
+    "green",
+    "pink"
    ],
    "shares": {
     "neutral": 47.4,
     "pink": 15.3,
-    "teal": 28.7,
-    "green": 8.5
+    "teal": 14.9,
+    "green": 22.3
    },
    "src": "mat-color-measured"
   },
   "mahj-moon--zebra-palm-chinoiserie": {
    "accents": [
     "green",
-    "yellow",
+    "earthy",
     "pink"
    ],
    "shares": {
     "green": 22.9,
-    "yellow": 22.1,
+    "earthy": 22.1,
     "neutral": 30.2,
     "pink": 17.1,
     "dark": 7.7
@@ -8461,9 +8144,7 @@
   "mahj-moon--emerald-tiger-jungle": {
    "accents": [
     "green",
-    "earthy",
-    "orange",
-    "red"
+    "earthy"
    ],
    "shares": {
     "neutral": 28.0,
@@ -8490,8 +8171,7 @@
   },
   "mahj-moon--purple-floral-gingham-geometric": {
    "accents": [
-    "neutral",
-    "pink"
+    "neutral"
    ],
    "shares": {
     "neutral": 84.9,
@@ -8513,14 +8193,11 @@
   },
   "mahj-moon--tropical-island-garden": {
    "accents": [
-    "green",
-    "teal",
-    "pink"
+    "green"
    ],
    "shares": {
     "neutral": 39.3,
-    "teal": 22.1,
-    "green": 29.3,
+    "green": 51.4,
     "pink": 9.4
    },
    "src": "mat-color-measured"
@@ -8547,15 +8224,14 @@
     "neutral": 47.1,
     "pink": 39.9,
     "blue": 7.2,
-    "yellow": 5.8
+    "earthy": 5.8
    },
    "src": "mat-color-measured"
   },
   "mahj-moon--desert-oasis": {
    "accents": [
     "neutral",
-    "pink",
-    "teal"
+    "pink"
    ],
    "shares": {
     "neutral": 46.7,
@@ -8581,8 +8257,7 @@
   "mahj-moon--blue-tropical-palm": {
    "accents": [
     "teal",
-    "pink",
-    "green"
+    "pink"
    ],
    "shares": {
     "neutral": 30.7,
@@ -8595,12 +8270,12 @@
   "mahj-moon--pink-bow-garden": {
    "accents": [
     "pink",
-    "teal"
+    "green"
    ],
    "shares": {
     "pink": 68.0,
-    "teal": 21.0,
-    "green": 7.0,
+    "green": 20.6,
+    "teal": 7.4,
     "blue": 3.9
    },
    "src": "mat-color-measured"
@@ -8622,13 +8297,12 @@
   "mahj-moon--grand-garden-estate": {
    "accents": [
     "pink",
-    "yellow",
-    "blue"
+    "earthy"
    ],
    "shares": {
     "pink": 55.8,
     "neutral": 20.0,
-    "yellow": 13.2,
+    "earthy": 13.2,
     "blue": 11.1
    },
    "src": "mat-color-measured"
@@ -8636,9 +8310,7 @@
   "mahj-moon--festive-citrus-chinoiserie": {
    "accents": [
     "pink",
-    "blue",
-    "orange",
-    "green"
+    "blue"
    ],
    "shares": {
     "pink": 30.6,
@@ -8651,8 +8323,7 @@
   },
   "mahj-moon--blue-pastel-palm-beach": {
    "accents": [
-    "neutral",
-    "green"
+    "neutral"
    ],
    "shares": {
     "neutral": 82.6,
@@ -8674,8 +8345,7 @@
   "mahj-moon--riviera-beach-club": {
    "accents": [
     "neutral",
-    "blue",
-    "orange"
+    "blue"
    ],
    "shares": {
     "neutral": 47.1,
@@ -8706,8 +8376,7 @@
   },
   "mahj-moon--green-menagerie-toile": {
    "accents": [
-    "green",
-    "blue"
+    "green"
    ],
    "shares": {
     "neutral": 44.5,
@@ -8718,8 +8387,7 @@
   },
   "mahj-moon--pastel-palm-beach": {
    "accents": [
-    "pink",
-    "green"
+    "pink"
    ],
    "shares": {
     "pink": 41.4,
@@ -8731,9 +8399,7 @@
   "mahj-moon--vibrant-floral-chinoiserie-pink": {
    "accents": [
     "pink",
-    "blue",
-    "green",
-    "orange"
+    "blue"
    ],
    "shares": {
     "pink": 49.3,
@@ -8759,8 +8425,7 @@
   },
   "hutch-nook--winged-wonders": {
    "accents": [
-    "neutral",
-    "blue"
+    "neutral"
    ],
    "shares": {
     "neutral": 77.3,
@@ -8787,8 +8452,7 @@
   "hutch-nook--songbird-bloom": {
    "accents": [
     "neutral",
-    "green",
-    "pink"
+    "green"
    ],
    "shares": {
     "neutral": 70.6,
@@ -8800,8 +8464,7 @@
   },
   "hutch-nook--moody": {
    "accents": [
-    "blue",
-    "teal"
+    "blue"
    ],
    "shares": {
     "blue": 73.2,
@@ -8823,9 +8486,7 @@
   },
   "hutch-nook--pink-rose": {
    "accents": [
-    "pink",
-    "earthy",
-    "red"
+    "pink"
    ],
    "shares": {
     "pink": 59.3,
@@ -8842,7 +8503,7 @@
    ],
    "shares": {
     "blue": 95.3,
-    "teal": 4.7
+    "green": 4.7
    },
    "src": "mat-color-measured"
   },
@@ -8862,15 +8523,14 @@
    "accents": [
     "pink",
     "green",
-    "blue",
-    "yellow"
+    "blue"
    ],
    "shares": {
     "pink": 42.4,
     "green": 18.8,
     "neutral": 15.5,
     "blue": 13.2,
-    "yellow": 10.1
+    "earthy": 10.1
    },
    "src": "mat-color-measured"
   },
@@ -8878,8 +8538,7 @@
    "accents": [
     "blue",
     "pink",
-    "red",
-    "green"
+    "red"
    ],
    "shares": {
     "neutral": 36.5,
@@ -8893,10 +8552,7 @@
   },
   "mahjong-moxie--magnolia-muse": {
    "accents": [
-    "green",
-    "pink",
-    "blue",
-    "earthy"
+    "green"
    ],
    "shares": {
     "neutral": 41.1,
@@ -8955,9 +8611,7 @@
    "accents": [
     "earthy",
     "pink",
-    "green",
-    "blue",
-    "red"
+    "green"
    ],
    "shares": {
     "neutral": 28.5,
@@ -8971,12 +8625,11 @@
   },
   "maison-mahj--the-espresso-city": {
    "accents": [
-    "dark",
-    "yellow"
+    "dark"
    ],
    "shares": {
     "dark": 80.9,
-    "yellow": 8.6,
+    "earthy": 8.6,
     "neutral": 8.2,
     "orange": 2.2
    },
@@ -9023,14 +8676,13 @@
    "accents": [
     "green",
     "dark",
-    "pink",
-    "yellow"
+    "pink"
    ],
    "shares": {
     "dark": 32.3,
     "green": 36.8,
     "pink": 16.1,
-    "yellow": 9.1,
+    "earthy": 9.1,
     "blue": 5.7
    },
    "src": "mat-color-measured"
@@ -9038,13 +8690,12 @@
   "luxe-mahjong--midnight-romance": {
    "accents": [
     "neutral",
-    "orange",
-    "yellow"
+    "orange"
    ],
    "shares": {
     "neutral": 55.5,
     "dark": 14.9,
-    "yellow": 9.3,
+    "earthy": 9.3,
     "orange": 15.5,
     "blue": 4.8
    },
@@ -9120,13 +8771,11 @@
   "luxe-mahjong--western": {
    "accents": [
     "neutral",
-    "yellow",
     "earthy"
    ],
    "shares": {
-    "yellow": 36.2,
+    "earthy": 44.8,
     "neutral": 50.0,
-    "earthy": 8.6,
     "green": 3.8,
     "orange": 1.4
    },
@@ -9139,8 +8788,7 @@
    "shares": {
     "blue": 74.2,
     "neutral": 20.4,
-    "green": 3.2,
-    "teal": 2.2
+    "green": 5.4
    },
    "src": "mat-color-measured"
   },
@@ -9192,9 +8840,10 @@
     "pink"
    ],
    "shares": {
-    "teal": 47.1,
+    "teal": 35.5,
     "pink": 29.1,
     "neutral": 16.6,
+    "green": 11.6,
     "blue": 7.1
    },
    "src": "mat-color-measured"
@@ -9226,8 +8875,7 @@
   },
   "mahjong-register--snowflake-reindeer-lodge-double-sided-leatherette": {
    "accents": [
-    "blue",
-    "dark"
+    "blue"
    ],
    "shares": {
     "blue": 64.1,
@@ -9240,14 +8888,13 @@
    "accents": [
     "red",
     "dark",
-    "teal",
-    "earthy"
+    "green"
    ],
    "shares": {
     "red": 28.3,
     "dark": 25.2,
     "neutral": 18.7,
-    "teal": 13.6,
+    "green": 13.6,
     "earthy": 8.8,
     "pink": 5.3
    },
@@ -9269,8 +8916,7 @@
   },
   "mahjong-register--very-merry-wreath-double-sided-leatherette": {
    "accents": [
-    "pink",
-    "red"
+    "pink"
    ],
    "shares": {
     "pink": 64.2,
@@ -9282,8 +8928,7 @@
   "maison-mahj--the-london-icons": {
    "accents": [
     "neutral",
-    "blue",
-    "red"
+    "blue"
    ],
    "shares": {
     "neutral": 58.8,
@@ -9376,7 +9021,7 @@
    ],
    "shares": {
     "neutral": 84.3,
-    "yellow": 6.0,
+    "earthy": 6.0,
     "pink": 3.9,
     "orange": 3.2,
     "blue": 2.5
@@ -9386,23 +9031,20 @@
   "britt-mills--novella": {
    "accents": [
     "orange",
-    "earthy",
     "green",
-    "teal"
+    "earthy"
    ],
    "shares": {
     "orange": 40.5,
     "earthy": 19.9,
-    "green": 17.9,
-    "teal": 11.4,
+    "green": 29.3,
     "neutral": 10.3
    },
    "src": "mat-color-measured"
   },
   "britt-mills--enchanted": {
    "accents": [
-    "blue",
-    "earthy"
+    "blue"
    ],
    "shares": {
     "blue": 50.9,
@@ -9416,8 +9058,7 @@
   "britt-mills--regal-bloom-neoprene": {
    "accents": [
     "dark",
-    "pink",
-    "earthy"
+    "pink"
    ],
    "shares": {
     "dark": 25.0,
@@ -9431,15 +9072,13 @@
   "britt-mills--isla-neoprene": {
    "accents": [
     "pink",
-    "orange",
-    "red",
-    "yellow"
+    "orange"
    ],
    "shares": {
     "pink": 49.0,
     "orange": 21.9,
     "red": 9.0,
-    "yellow": 8.7,
+    "earthy": 8.7,
     "neutral": 7.1,
     "dark": 4.2
    },
@@ -9450,15 +9089,14 @@
     "pink",
     "green",
     "orange",
-    "yellow",
-    "blue"
+    "earthy"
    ],
    "shares": {
     "pink": 22.5,
     "green": 20.0,
     "neutral": 18.2,
     "orange": 15.2,
-    "yellow": 15.1,
+    "earthy": 15.1,
     "blue": 8.9
    },
    "src": "mat-color-measured"
@@ -9466,11 +9104,11 @@
   "four-winds-social--preppy-poinsettia": {
    "accents": [
     "pink",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "pink": 53.4,
-    "yellow": 22.7,
+    "earthy": 22.7,
     "neutral": 22.1,
     "teal": 1.8
    },
@@ -9514,9 +9152,7 @@
    "accents": [
     "red",
     "dark",
-    "earthy",
-    "teal",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "dark": 26.8,
@@ -9547,15 +9183,14 @@
    "shares": {
     "green": 67.7,
     "neutral": 25.3,
-    "yellow": 6.9
+    "earthy": 6.9
    },
    "src": "mat-color-measured"
   },
   "four-winds-social--amethyst-cabana": {
    "accents": [
     "pink",
-    "blue",
-    "earthy"
+    "blue"
    ],
    "shares": {
     "blue": 24.0,
@@ -9587,12 +9222,11 @@
   },
   "four-winds-social--fws-x-mahj-mood-eloise": {
    "accents": [
-    "green",
-    "yellow"
+    "green"
    ],
    "shares": {
     "green": 64.8,
-    "yellow": 8.3,
+    "earthy": 8.3,
     "neutral": 5.9,
     "pink": 3.7
    },
@@ -9601,9 +9235,7 @@
   "four-winds-social--fws-x-225mahjong-collab-purple-reign": {
    "accents": [
     "purple",
-    "pink",
-    "earthy",
-    "yellow"
+    "pink"
    ],
    "shares": {
     "purple": 41.7,
@@ -9629,26 +9261,23 @@
   },
   "bam-bird-boutique--boots-bubbles-green": {
    "accents": [
-    "teal",
     "green"
    ],
    "shares": {
-    "teal": 81.1,
+    "green": 86.7,
     "neutral": 6.4,
-    "green": 8.6,
-    "pink": 3.9
+    "pink": 3.9,
+    "teal": 3.0
    },
    "src": "mat-color-measured"
   },
   "charleston-mahjong-club--cabana-club": {
    "accents": [
-    "green",
-    "teal"
+    "green"
    ],
    "shares": {
     "neutral": 30.6,
-    "green": 46.8,
-    "teal": 21.8,
+    "green": 68.6,
     "pink": 0.8
    },
    "src": "mat-color-measured"
@@ -9663,8 +9292,7 @@
   },
   "soir-e-all-day--petal-party": {
    "accents": [
-    "pink",
-    "orange"
+    "pink"
    ],
    "shares": {
     "pink": 82.8,
@@ -9702,12 +9330,12 @@
   },
   "soir-e-all-day--midnight-garden-club": {
    "accents": [
-    "blue",
-    "teal"
+    "blue"
    ],
    "shares": {
     "blue": 79.5,
-    "teal": 20.5
+    "green": 11.0,
+    "teal": 9.5
    },
    "src": "mat-color-measured"
   },
@@ -9726,12 +9354,12 @@
   "wren-mats--winter-wreath": {
    "accents": [
     "green",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "green": 47.4,
     "neutral": 26.8,
-    "yellow": 14.5
+    "earthy": 14.5
    },
    "src": "mat-color-measured"
   },
@@ -9756,7 +9384,7 @@
    "shares": {
     "blue": 95.2,
     "neutral": 4.5,
-    "yellow": 0.2
+    "earthy": 0.2
    },
    "src": "mat-color-measured"
   },
@@ -9789,11 +9417,11 @@
   "wren-mats--dancing-poppies": {
    "accents": [
     "green",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "neutral": 26.9,
-    "yellow": 13.0,
+    "earthy": 13.0,
     "green": 17.6
    },
    "src": "mat-color-measured"
@@ -9818,28 +9446,26 @@
   },
   "wren-mats--winter-wreaths": {
    "accents": [
-    "neutral",
-    "yellow"
+    "neutral"
    ],
    "shares": {
     "neutral": 64.4,
-    "yellow": 10.7
+    "earthy": 10.7
    },
    "src": "mat-color-measured"
   },
   "wren-mats--butterfly": {
    "accents": [
     "neutral",
+    "green",
     "blue",
-    "orange",
-    "teal"
+    "orange"
    ],
    "shares": {
     "neutral": 45.6,
     "blue": 15.8,
     "orange": 14.4,
-    "teal": 9.1,
-    "green": 7.9,
+    "green": 17.0,
     "pink": 7.3
    },
    "src": "mat-color-measured"
@@ -9847,8 +9473,7 @@
   "wren-mats--sitting-sea-side": {
    "accents": [
     "neutral",
-    "yellow",
-    "orange"
+    "yellow"
    ],
    "shares": {
     "yellow": 27.4,
@@ -9892,25 +9517,24 @@
   },
   "wren-mats--year-of-the-snake": {
    "accents": [
-    "teal",
     "green",
-    "pink"
+    "teal"
    ],
    "shares": {
-    "teal": 52.6,
-    "green": 38.3,
+    "teal": 39.3,
+    "green": 51.6,
     "pink": 9.2
    },
    "src": "mat-color-measured"
   },
   "wren-mats--the-nutcracker": {
    "accents": [
-    "yellow",
+    "earthy",
     "pink"
    ],
    "shares": {
     "neutral": 44.6,
-    "yellow": 35.2,
+    "earthy": 35.2,
     "pink": 17.3,
     "red": 2.8
    },
@@ -9956,14 +9580,11 @@
   "britt-mills--novella-leatherette": {
    "accents": [
     "orange",
-    "green",
-    "teal",
-    "red"
+    "green"
    ],
    "shares": {
     "orange": 47.4,
-    "green": 23.5,
-    "teal": 14.7,
+    "green": 38.2,
     "red": 9.0,
     "neutral": 5.4
    },
@@ -9972,9 +9593,7 @@
   "britt-mills--enchanted-leatherette": {
    "accents": [
     "green",
-    "earthy",
-    "orange",
-    "pink"
+    "earthy"
    ],
    "shares": {
     "neutral": 43.8,
@@ -9987,12 +9606,11 @@
   },
   "britt-mills--revelry-leatherette": {
    "accents": [
-    "neutral",
-    "yellow"
+    "neutral"
    ],
    "shares": {
     "neutral": 86.1,
-    "yellow": 8.4,
+    "earthy": 8.4,
     "pink": 3.6,
     "red": 1.8
    },
@@ -10002,12 +9620,12 @@
    "accents": [
     "neutral",
     "green",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "neutral": 54.1,
     "green": 22.8,
-    "yellow": 12.6,
+    "earthy": 12.6,
     "red": 6.3,
     "blue": 4.3
    },
@@ -10016,21 +9634,17 @@
   "britt-mills--legacy-leatherette": {
    "accents": [
     "dark",
-    "earthy",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "dark": 51.9,
-    "earthy": 36.9,
-    "yellow": 11.2
+    "earthy": 48.1
    },
    "src": "mat-color-measured"
   },
   "britt-mills--walk-in-the-park-leatherette": {
    "accents": [
-    "green",
-    "pink",
-    "orange"
+    "green"
    ],
    "shares": {
     "neutral": 31.8,
@@ -10125,14 +9739,12 @@
   "mahj-squad--regency": {
    "accents": [
     "earthy",
-    "orange",
-    "yellow"
+    "orange"
    ],
    "shares": {
     "neutral": 38.2,
-    "earthy": 24.3,
+    "earthy": 33.0,
     "orange": 22.1,
-    "yellow": 8.7,
     "teal": 6.6
    },
    "src": "mat-color-measured"
@@ -10140,11 +9752,11 @@
   "mahj-squad--jade-green-chinoiserie": {
    "accents": [
     "neutral",
-    "teal"
+    "green"
    ],
    "shares": {
     "neutral": 71.8,
-    "teal": 25.1,
+    "green": 25.1,
     "pink": 2.6,
     "yellow": 0.5
    },
@@ -10168,23 +9780,20 @@
   "mahj-squad--pastel-chinoiserie": {
    "accents": [
     "purple",
-    "earthy",
-    "teal"
+    "earthy"
    ],
    "shares": {
     "neutral": 23.9,
     "purple": 42.1,
     "earthy": 17.6,
-    "teal": 8.9,
+    "green": 8.9,
     "pink": 7.6
    },
    "src": "mat-color-measured"
   },
   "mahj-squad--candy-cane-pink-wonderland": {
    "accents": [
-    "neutral",
-    "green",
-    "pink"
+    "neutral"
    ],
    "shares": {
     "neutral": 76.3,
@@ -10196,8 +9805,7 @@
   "mahj-squad--blue-christmas": {
    "accents": [
     "neutral",
-    "green",
-    "pink"
+    "green"
    ],
    "shares": {
     "neutral": 58.4,
@@ -10210,8 +9818,7 @@
    "accents": [
     "dark",
     "earthy",
-    "green",
-    "orange"
+    "green"
    ],
    "shares": {
     "dark": 49.8,
@@ -10227,40 +9834,36 @@
    ],
    "shares": {
     "pink": 88.3,
-    "neutral": 7.3,
-    "yellow": 4.4
+    "neutral": 11.7
    },
    "src": "mat-color-measured"
   },
   "mahj-squad--vintage-rose": {
    "accents": [
     "neutral",
-    "blue",
-    "yellow"
+    "earthy",
+    "blue"
    ],
    "shares": {
     "neutral": 64.5,
     "blue": 12.2,
-    "yellow": 9.9,
-    "pink": 7.0,
-    "earthy": 6.3
+    "earthy": 16.2,
+    "pink": 7.0
    },
    "src": "mat-color-measured"
   },
   "mahj-squad--palm-springs": {
    "accents": [
     "purple",
-    "teal",
-    "earthy",
-    "red"
+    "green",
+    "earthy"
    ],
    "shares": {
     "purple": 32.6,
     "neutral": 22.0,
-    "teal": 14.3,
+    "green": 21.8,
     "earthy": 13.6,
-    "red": 9.9,
-    "green": 7.5
+    "red": 9.9
    },
    "src": "mat-color-measured"
   },
@@ -10314,12 +9917,10 @@
   },
   "sunday-mahjong--vegan-leather-premium": {
    "accents": [
-    "earthy",
-    "yellow"
+    "earthy"
    ],
    "shares": {
-    "earthy": 54.5,
-    "yellow": 21.6,
+    "earthy": 76.1,
     "neutral": 14.2,
     "dark": 9.8
    },
@@ -10363,14 +9964,12 @@
   },
   "tigre-de-tartan--tigre-de-tart-n-x-miss-mahjong-el-ltimo-refresco": {
    "accents": [
-    "neutral",
-    "dark",
-    "yellow"
+    "neutral"
    ],
    "shares": {
     "neutral": 64.6,
     "dark": 18.2,
-    "yellow": 9.8,
+    "earthy": 9.8,
     "orange": 7.5
    },
    "src": "mat-color-measured"
@@ -10390,21 +9989,18 @@
   "tigre-de-tartan--katherine-hartman-x-tigre-de-tart-n-birdsong": {
    "accents": [
     "neutral",
-    "yellow",
     "earthy"
    ],
    "shares": {
     "neutral": 50.6,
-    "yellow": 28.9,
-    "earthy": 13.7,
+    "earthy": 42.6,
     "dark": 6.8
    },
    "src": "mat-color-measured"
   },
   "tigre-de-tartan--paige-spearin-shell-yeah": {
    "accents": [
-    "neutral",
-    "earthy"
+    "neutral"
    ],
    "shares": {
     "neutral": 91.0,
@@ -10415,14 +10011,12 @@
   "tigre-de-tartan--french-mural": {
    "accents": [
     "earthy",
-    "dark",
-    "yellow"
+    "dark"
    ],
    "shares": {
     "dark": 30.4,
-    "earthy": 48.1,
-    "neutral": 12.3,
-    "yellow": 9.1
+    "earthy": 57.2,
+    "neutral": 12.3
    },
    "src": "mat-color-measured"
   },
@@ -10457,8 +10051,7 @@
   "tigre-de-tartan--hearts-horseshoes": {
    "accents": [
     "earthy",
-    "blue",
-    "dark"
+    "blue"
    ],
    "shares": {
     "neutral": 39.9,
@@ -10482,8 +10075,7 @@
    "accents": [
     "dark",
     "blue",
-    "earthy",
-    "green"
+    "earthy"
    ],
    "shares": {
     "dark": 33.8,
@@ -10497,11 +10089,11 @@
   "middle-main-mahjong--grandmother-betty-vintage-quilt": {
    "accents": [
     "neutral",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "neutral": 85.2,
-    "yellow": 14.9
+    "earthy": 14.9
    },
    "src": "mat-color-measured"
   },
@@ -10511,7 +10103,7 @@
    ],
    "shares": {
     "neutral": 93.9,
-    "yellow": 6.1
+    "earthy": 6.1
    },
    "src": "mat-color-measured"
   },
@@ -10529,8 +10121,7 @@
   },
   "let-s-be-besties--sky-blue-florals": {
    "accents": [
-    "blue",
-    "pink"
+    "blue"
    ],
    "shares": {
     "blue": 67.1,
@@ -10543,8 +10134,7 @@
   "let-s-be-besties--coral-lake": {
    "accents": [
     "green",
-    "teal",
-    "earthy"
+    "teal"
    ],
    "shares": {
     "green": 57.5,
@@ -10557,8 +10147,7 @@
   "let-s-be-besties--green-bright-floral": {
    "accents": [
     "green",
-    "pink",
-    "red"
+    "pink"
    ],
    "shares": {
     "green": 47.1,
@@ -10570,12 +10159,12 @@
   },
   "let-s-be-besties--butterscotch-birdie-mahj-game": {
    "accents": [
-    "neutral",
-    "yellow"
+    "neutral"
    ],
    "shares": {
     "neutral": 87.6,
-    "yellow": 9.6,
+    "earthy": 6.2,
+    "yellow": 3.4,
     "red": 2.6
    },
    "src": "mat-color-measured"
@@ -10610,12 +10199,11 @@
   },
   "let-s-be-besties--emerald-lace": {
    "accents": [
-    "green",
-    "teal"
+    "green"
    ],
    "shares": {
-    "green": 67.0,
-    "teal": 26.1,
+    "green": 79.1,
+    "teal": 14.0,
     "blue": 7.0
    },
    "src": "mat-color-measured"
@@ -10645,8 +10233,7 @@
   },
   "let-s-be-besties--zebra-pattern": {
    "accents": [
-    "neutral",
-    "dark"
+    "neutral"
    ],
    "shares": {
     "neutral": 82.4,
@@ -10669,8 +10256,7 @@
   "let-s-be-besties--forest-haze": {
    "accents": [
     "neutral",
-    "earthy",
-    "teal"
+    "earthy"
    ],
    "shares": {
     "neutral": 63.2,
@@ -10712,12 +10298,10 @@
   "let-s-be-besties--garden-lilies": {
    "accents": [
     "green",
-    "teal",
     "pink"
    ],
    "shares": {
-    "teal": 33.2,
-    "green": 39.4,
+    "green": 72.6,
     "pink": 27.4
    },
    "src": "mat-color-measured"
@@ -10728,17 +10312,14 @@
    ],
    "shares": {
     "neutral": 89.8,
-    "yellow": 6.2,
-    "earthy": 2.7,
+    "earthy": 8.9,
     "pink": 1.4
    },
    "src": "mat-color-measured"
   },
   "let-s-be-besties--coral-reef": {
    "accents": [
-    "green",
-    "red",
-    "pink"
+    "green"
    ],
    "shares": {
     "green": 49.5,
@@ -10760,7 +10341,7 @@
     "neutral": 49.6,
     "pink": 20.4,
     "red": 25.6,
-    "teal": 4.3
+    "green": 4.3
    },
    "src": "mat-color-measured"
   },
@@ -10793,8 +10374,7 @@
   },
   "let-s-be-besties--the-country-house": {
    "accents": [
-    "earthy",
-    "dark"
+    "earthy"
    ],
    "shares": {
     "earthy": 81.5,
@@ -10811,16 +10391,15 @@
    "shares": {
     "dark": 45.5,
     "blue": 16.4,
-    "teal": 38.1
+    "teal": 29.6,
+    "green": 8.5
    },
    "src": "mat-color-measured"
   },
   "let-s-be-besties--green-blooms": {
    "accents": [
     "green",
-    "pink",
-    "orange",
-    "red"
+    "pink"
    ],
    "shares": {
     "neutral": 39.7,
@@ -10834,12 +10413,12 @@
   "let-s-be-besties--southern-stained-glass": {
    "accents": [
     "green",
-    "yellow",
+    "earthy",
     "orange"
    ],
    "shares": {
     "green": 45.2,
-    "yellow": 35.1,
+    "earthy": 35.1,
     "orange": 17.5,
     "red": 2.2
    },
@@ -10873,9 +10452,7 @@
   "let-s-be-besties--pink-blooms": {
    "accents": [
     "pink",
-    "green",
-    "orange",
-    "red"
+    "green"
    ],
    "shares": {
     "pink": 55.2,
@@ -10902,17 +10479,15 @@
   "let-s-be-besties--purple-and-pink-plaid": {
    "accents": [
     "purple",
+    "green",
     "pink",
-    "blue",
-    "teal",
-    "green"
+    "blue"
    ],
    "shares": {
     "purple": 40.2,
     "pink": 20.7,
     "blue": 12.3,
-    "teal": 10.5,
-    "green": 10.4,
+    "green": 20.9,
     "earthy": 5.9
    },
    "src": "mat-color-measured"
@@ -10920,14 +10495,13 @@
   "let-s-be-besties--talulah-panda": {
    "accents": [
     "pink",
-    "teal"
+    "green"
    ],
    "shares": {
     "pink": 53.0,
-    "teal": 18.5,
+    "green": 22.5,
     "neutral": 15.9,
     "dark": 6.6,
-    "green": 4.0,
     "blue": 2.0
    },
    "src": "mat-color-measured"
@@ -10970,10 +10544,7 @@
   "let-s-be-besties--floral-kaleidoscope": {
    "accents": [
     "red",
-    "green",
-    "dark",
-    "orange",
-    "blue"
+    "green"
    ],
    "shares": {
     "red": 33.1,
@@ -10988,9 +10559,7 @@
    "accents": [
     "dark",
     "earthy",
-    "green",
-    "blue",
-    "pink"
+    "green"
    ],
    "shares": {
     "dark": 28.1,
@@ -11027,8 +10596,7 @@
   "let-s-be-besties--hydrangea-haven": {
    "accents": [
     "blue",
-    "green",
-    "purple"
+    "green"
    ],
    "shares": {
     "blue": 70.9,
@@ -11052,8 +10620,7 @@
    "accents": [
     "blue",
     "purple",
-    "red",
-    "green"
+    "red"
    ],
    "shares": {
     "blue": 48.4,
@@ -11065,8 +10632,7 @@
   },
   "charleston-mahjong-club--club-mat": {
    "accents": [
-    "pink",
-    "green"
+    "pink"
    ],
    "shares": {
     "pink": 31.6,
@@ -11076,12 +10642,10 @@
   },
   "my-fair-mahjong--confetti-lemon-lime": {
    "accents": [
-    "green",
-    "teal"
+    "green"
    ],
    "shares": {
-    "teal": 47.4,
-    "green": 52.5
+    "green": 99.9
    },
    "src": "mat-color-measured"
   },
@@ -11143,15 +10707,14 @@
    "accents": [
     "green",
     "dark",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "green": 27.8,
     "dark": 25.3,
     "neutral": 20.7,
-    "yellow": 14.9,
-    "red": 6.9,
-    "earthy": 4.4
+    "earthy": 19.3,
+    "red": 6.9
    },
    "src": "mat-color-measured"
   },
@@ -11167,8 +10730,7 @@
   },
   "ozark-mah-jongg--carson-vintage": {
    "accents": [
-    "neutral",
-    "earthy"
+    "neutral"
    ],
    "shares": {
     "neutral": 83.6,
@@ -11217,8 +10779,7 @@
    "accents": [
     "neutral",
     "orange",
-    "blue",
-    "red"
+    "blue"
    ],
    "shares": {
     "neutral": 52.0,
@@ -11242,14 +10803,12 @@
   },
   "that-mahjong-moment--evergreen": {
    "accents": [
-    "teal",
-    "dark",
-    "green"
+    "green",
+    "dark"
    ],
    "shares": {
-    "teal": 49.7,
+    "green": 60.5,
     "dark": 34.0,
-    "green": 10.8,
     "blue": 5.4
    },
    "src": "mat-color-measured"
@@ -11257,7 +10816,6 @@
   "bespoke-mahjong--cranes-and-clouds": {
    "accents": [
     "teal",
-    "dark",
     "red",
     "green",
     "blue"
@@ -11287,8 +10845,7 @@
   "oh-my-mahjong--regal-bloom-retired": {
    "accents": [
     "dark",
-    "pink",
-    "earthy"
+    "pink"
    ],
    "shares": {
     "dark": 26.5,
@@ -11302,12 +10859,11 @@
   "wren-mats--palm-beach": {
    "accents": [
     "neutral",
-    "teal",
-    "pink"
+    "green"
    ],
    "shares": {
     "neutral": 53.7,
-    "teal": 35.5,
+    "green": 35.5,
     "pink": 10.8
    },
    "src": "mat-color-measured"
@@ -11315,11 +10871,11 @@
   "mary-benson--blooming-tulips": {
    "accents": [
     "red",
-    "yellow",
+    "earthy",
     "teal"
    ],
    "shares": {
-    "yellow": 21.9,
+    "earthy": 21.9,
     "red": 33.7,
     "teal": 18.0,
     "neutral": 26.5
@@ -11353,8 +10909,7 @@
    "accents": [
     "neutral",
     "blue",
-    "earthy",
-    "green"
+    "earthy"
    ],
    "shares": {
     "blue": 23.2,
@@ -11367,16 +10922,13 @@
   "mahjong-by-si--highland-heritage-plaid": {
    "accents": [
     "dark",
-    "yellow",
-    "green",
     "earthy"
    ],
    "shares": {
     "dark": 50.1,
     "neutral": 19.4,
-    "yellow": 11.3,
-    "green": 9.8,
-    "earthy": 9.4
+    "earthy": 20.7,
+    "green": 9.8
    },
    "src": "mat-color-measured"
   },
@@ -11394,15 +10946,13 @@
   "mahjong-by-si--tracing-the-tides": {
    "accents": [
     "neutral",
-    "yellow",
     "green",
-    "teal"
+    "earthy"
    ],
    "shares": {
     "neutral": 50.8,
-    "yellow": 21.1,
-    "green": 13.0,
-    "teal": 10.2,
+    "earthy": 21.1,
+    "green": 23.2,
     "red": 4.8
    },
    "src": "mat-color-measured"
@@ -11420,10 +10970,10 @@
   },
   "lucky-daughters--astor-place": {
    "accents": [
-    "yellow"
+    "earthy"
    ],
    "shares": {
-    "yellow": 100.1
+    "earthy": 100.1
    },
    "src": "mat-color-measured"
   },
@@ -11492,9 +11042,7 @@
   "splash-of-color--peony-and-parasol": {
    "accents": [
     "pink",
-    "teal",
-    "red",
-    "green"
+    "teal"
    ],
    "shares": {
     "neutral": 41.6,
@@ -11509,8 +11057,7 @@
   "amore-mahjong--manor-garden": {
    "accents": [
     "neutral",
-    "blue",
-    "teal"
+    "blue"
    ],
    "shares": {
     "neutral": 45.4,
@@ -11552,8 +11099,7 @@
    "accents": [
     "pink",
     "orange",
-    "red",
-    "earthy"
+    "red"
    ],
    "shares": {
     "pink": 45.1,
@@ -11590,14 +11136,12 @@
   },
   "wren-mats--watercolor-floral": {
    "accents": [
-    "yellow",
-    "earthy",
-    "red"
+    "earthy"
    ],
    "shares": {
-    "yellow": 31.2,
-    "earthy": 18.3,
+    "earthy": 41.6,
     "red": 9.3,
+    "yellow": 7.9,
     "green": 5.2
    },
    "src": "mat-color-measured"
@@ -11606,7 +11150,6 @@
    "accents": [
     "teal",
     "pink",
-    "dark",
     "blue"
    ],
    "shares": {
@@ -11621,21 +11164,20 @@
   "sophie-clima--cheeky-cockatoo": {
    "accents": [
     "pink",
-    "orange",
-    "red"
+    "orange"
    ],
    "shares": {
     "blue": 3.1,
     "earthy": 8.0,
     "dark": 1.1,
-    "yellow": 3.2,
     "green": 0.3,
-    "neutral": 8.1,
+    "neutral": 10.6,
     "orange": 25.2,
     "pink": 40.7,
     "purple": 0.3,
     "red": 9.0,
-    "teal": 1.0
+    "teal": 1.0,
+    "yellow": 0.7
    },
    "src": "pixel-families"
   },
@@ -11647,15 +11189,15 @@
    ],
    "shares": {
     "blue": 28.9,
-    "earthy": 4.8,
-    "yellow": 4.9,
-    "green": 27.3,
-    "neutral": 4.8,
+    "earthy": 7.7,
+    "green": 28.0,
+    "neutral": 5.8,
     "orange": 3.9,
     "pink": 16.7,
     "purple": 0.6,
     "red": 4.4,
-    "teal": 3.6
+    "teal": 2.9,
+    "yellow": 0.9
    },
    "src": "pixel-families"
   },
@@ -11667,15 +11209,15 @@
    ],
    "shares": {
     "blue": 15.0,
-    "earthy": 12.5,
+    "earthy": 13.9,
     "dark": 3.8,
-    "yellow": 4.0,
     "green": 7.9,
-    "neutral": 2.6,
+    "neutral": 2.9,
     "orange": 2.8,
     "pink": 45.6,
     "purple": 4.5,
-    "red": 1.3
+    "red": 1.3,
+    "yellow": 2.4
    },
    "src": "pixel-families"
   },
@@ -11687,39 +11229,39 @@
    ],
    "shares": {
     "blue": 41.6,
-    "earthy": 2.4,
+    "earthy": 2.8,
     "dark": 0.1,
-    "yellow": 5.1,
-    "green": 14.6,
-    "neutral": 1.5,
+    "green": 14.7,
+    "neutral": 1.8,
     "orange": 1.2,
     "pink": 31.2,
     "purple": 1.6,
     "red": 0.2,
-    "teal": 0.6
+    "teal": 0.5,
+    "yellow": 4.3
    },
    "src": "pixel-families"
   },
   "sophie-clima--florida-pool-party": {
    "accents": [
-    "orange",
     "earthy",
+    "orange",
     "green",
     "pink",
     "blue"
    ],
    "shares": {
     "blue": 12.6,
-    "earthy": 16.3,
+    "earthy": 17.6,
     "dark": 1.2,
-    "yellow": 3.3,
-    "green": 15.7,
-    "neutral": 14.1,
+    "green": 16.6,
+    "neutral": 15.6,
     "orange": 17.4,
     "pink": 14.7,
     "purple": 0.8,
     "red": 2.3,
-    "teal": 1.6
+    "teal": 0.7,
+    "yellow": 0.5
    },
    "src": "pixel-families"
   },
@@ -11727,21 +11269,20 @@
    "accents": [
     "pink",
     "green",
-    "blue",
-    "yellow"
+    "blue"
    ],
    "shares": {
     "blue": 16.6,
-    "earthy": 1.0,
+    "earthy": 4.0,
     "dark": 0.6,
-    "yellow": 9.0,
     "green": 25.4,
-    "neutral": 7.4,
+    "neutral": 8.7,
     "orange": 2.5,
     "pink": 36.3,
     "purple": 0.1,
     "red": 0.3,
-    "teal": 0.7
+    "teal": 0.7,
+    "yellow": 4.6
    },
    "src": "pixel-families"
   },
@@ -11749,43 +11290,39 @@
    "accents": [
     "green",
     "pink",
-    "blue",
-    "yellow"
+    "blue"
    ],
    "shares": {
     "blue": 20.2,
-    "earthy": 3.0,
+    "earthy": 8.8,
     "dark": 0.6,
-    "yellow": 11.0,
-    "green": 29.4,
-    "neutral": 4.2,
+    "green": 29.5,
+    "neutral": 4.9,
     "orange": 0.4,
     "pink": 25.1,
     "purple": 3.3,
     "red": 2.0,
-    "teal": 0.8
+    "teal": 0.7,
+    "yellow": 4.4
    },
    "src": "pixel-families"
   },
   "sophie-clima--custom-monogrammed-preppy": {
    "accents": [
-    "pink",
     "green",
-    "teal",
-    "yellow",
-    "blue"
+    "pink"
    ],
    "shares": {
     "blue": 11.7,
-    "earthy": 1.4,
-    "yellow": 12.8,
-    "green": 26.3,
-    "neutral": 1.0,
+    "earthy": 3.0,
+    "green": 29.8,
+    "neutral": 2.6,
     "orange": 1.1,
     "pink": 27.0,
     "purple": 1.9,
     "red": 0.1,
-    "teal": 16.5
+    "teal": 13.1,
+    "yellow": 9.5
    },
    "src": "pixel-families"
   },
@@ -11797,38 +11334,38 @@
    ],
    "shares": {
     "blue": 31.9,
-    "earthy": 3.4,
+    "earthy": 5.5,
     "dark": 1.1,
-    "yellow": 3.4,
-    "green": 33.3,
-    "neutral": 5.4,
+    "green": 35.2,
+    "neutral": 5.9,
     "orange": 1.2,
     "pink": 13.4,
     "purple": 0.3,
     "red": 0.7,
-    "teal": 5.8
+    "teal": 4.0,
+    "yellow": 0.9
    },
    "src": "pixel-families"
   },
   "sophie-clima--chinoiserie-elephant-with-pagodas": {
    "accents": [
     "pink",
-    "teal",
     "green",
+    "teal",
     "blue"
    ],
    "shares": {
     "blue": 15.9,
-    "earthy": 1.3,
+    "earthy": 2.3,
     "dark": 0.2,
-    "yellow": 6.6,
-    "green": 17.6,
-    "neutral": 1.7,
+    "green": 21.0,
+    "neutral": 2.0,
     "orange": 1.4,
     "pink": 29.1,
     "purple": 2.3,
     "red": 0.9,
-    "teal": 23.1
+    "teal": 19.7,
+    "yellow": 5.3
    },
    "src": "pixel-families"
   },
@@ -11840,94 +11377,89 @@
    ],
    "shares": {
     "blue": 27.3,
-    "earthy": 0.3,
+    "earthy": 0.4,
     "dark": 0.5,
-    "green": 35.2,
-    "neutral": 1.2,
+    "green": 37.3,
+    "neutral": 1.3,
     "orange": 0.5,
     "pink": 23.6,
     "purple": 2.7,
     "red": 0.1,
-    "teal": 6.7,
-    "yellow": 1.9
+    "teal": 4.6,
+    "yellow": 1.7
    },
    "src": "pixel-families"
   },
   "etsy-shop--palm-beach-chic-custom-monogram-neoprene": {
    "accents": [
     "earthy",
-    "green",
-    "yellow"
+    "green"
    ],
    "shares": {
     "blue": 5.4,
-    "earthy": 28.9,
+    "earthy": 36.6,
     "dark": 6.4,
-    "yellow": 13.9,
-    "green": 14.5,
-    "neutral": 23.4,
+    "green": 14.6,
+    "neutral": 25.3,
     "orange": 1.3,
     "pink": 3.4,
     "purple": 0.2,
     "red": 2.5,
-    "teal": 0.2
+    "teal": 0.2,
+    "yellow": 4.2
    },
    "src": "pixel-families"
   },
   "etsy-shop--lemon-lime-floral-custom-monogram-neoprene": {
    "accents": [
     "green",
-    "pink",
-    "yellow",
-    "earthy"
+    "pink"
    ],
    "shares": {
     "blue": 1.7,
-    "earthy": 8.3,
-    "yellow": 8.6,
-    "green": 55.1,
-    "neutral": 3.9,
+    "earthy": 9.5,
+    "green": 56.6,
+    "neutral": 5.8,
     "orange": 2.6,
     "pink": 17.4,
     "purple": 0.1,
     "red": 0.5,
-    "teal": 1.7
+    "teal": 0.2,
+    "yellow": 5.5
    },
    "src": "pixel-families"
   },
   "etsy-shop--chinese-landscape-shan-shui-crane-koi": {
    "accents": [
     "neutral",
-    "yellow",
     "earthy"
    ],
    "shares": {
-    "earthy": 12.3,
+    "earthy": 21.8,
     "dark": 1.5,
-    "yellow": 18.6,
     "green": 3.2,
-    "neutral": 61.6,
+    "neutral": 67.9,
     "orange": 2.7,
     "pink": 0.0,
-    "teal": 0.0
+    "teal": 0.0,
+    "yellow": 2.9
    },
    "src": "pixel-families"
   },
   "betty-june-jeannette--elizabeth": {
    "accents": [
-    "pink",
-    "red"
+    "pink"
    ],
    "shares": {
     "blue": 0.0,
     "earthy": 6.0,
     "green": 0.3,
-    "neutral": 4.5,
+    "neutral": 4.8,
     "orange": 7.7,
     "pink": 71.1,
     "red": 8.7,
     "teal": 0.4,
-    "yellow": 1.3
+    "yellow": 1.0
    },
    "src": "pixel-families"
   },
@@ -11938,15 +11470,15 @@
    ],
    "shares": {
     "blue": 0.4,
-    "earthy": 32.0,
+    "earthy": 33.1,
     "dark": 8.1,
-    "yellow": 2.5,
     "green": 2.0,
-    "neutral": 30.3,
+    "neutral": 31.5,
     "orange": 7.7,
     "pink": 15.9,
     "red": 1.1,
-    "teal": 0.0
+    "teal": 0.0,
+    "yellow": 0.2
    },
    "src": "pixel-families"
   },
@@ -11954,8 +11486,7 @@
    "accents": [
     "pink",
     "orange",
-    "earthy",
-    "red"
+    "earthy"
    ],
    "shares": {
     "blue": 0.1,
@@ -11978,16 +11509,16 @@
    ],
    "shares": {
     "blue": 3.9,
-    "earthy": 7.8,
+    "earthy": 9.7,
     "dark": 0.6,
-    "yellow": 2.1,
-    "green": 6.0,
+    "green": 7.0,
     "neutral": 4.7,
     "orange": 18.0,
     "pink": 45.6,
     "purple": 0.8,
     "red": 6.6,
-    "teal": 3.9
+    "teal": 3.0,
+    "yellow": 0.3
    },
    "src": "pixel-families"
   },
@@ -11998,75 +11529,71 @@
    ],
    "shares": {
     "blue": 20.6,
-    "earthy": 1.3,
+    "earthy": 7.6,
     "dark": 0.1,
-    "yellow": 6.6,
-    "green": 56.4,
-    "neutral": 6.9,
+    "green": 58.1,
+    "neutral": 7.2,
     "pink": 2.1,
     "purple": 3.9,
     "red": 0.1,
-    "teal": 2.0
+    "teal": 0.3,
+    "yellow": 0.0
    },
    "src": "pixel-families"
   },
   "betty-june-jeannette--julia-blush-palm-beach": {
    "accents": [
     "pink",
-    "earthy",
-    "red",
-    "orange"
+    "earthy"
    ],
    "shares": {
     "blue": 0.1,
-    "earthy": 29.2,
+    "earthy": 31.6,
     "dark": 0.0,
-    "yellow": 3.5,
     "green": 0.9,
-    "neutral": 15.9,
+    "neutral": 17.0,
     "orange": 8.2,
     "pink": 33.8,
-    "red": 8.3
+    "red": 8.3,
+    "yellow": 0.0
    },
    "src": "pixel-families"
   },
   "betty-june-jeannette--benjamin": {
    "accents": [
     "blue",
-    "green",
-    "teal"
+    "green"
    ],
    "shares": {
     "blue": 43.2,
     "earthy": 0.2,
     "dark": 0.0,
-    "green": 36.6,
-    "neutral": 5.9,
+    "green": 39.3,
+    "neutral": 8.0,
     "orange": 0.1,
     "pink": 0.0,
     "red": 0.0,
-    "teal": 11.0,
-    "yellow": 2.9
+    "teal": 8.3,
+    "yellow": 0.8
    },
    "src": "pixel-families"
   },
   "betty-june-jeannette--hippie-holiday": {
    "accents": [
     "pink",
-    "green",
-    "red"
+    "green"
    ],
    "shares": {
     "blue": 3.3,
-    "earthy": 7.4,
-    "yellow": 6.1,
-    "green": 23.3,
-    "neutral": 5.2,
+    "earthy": 10.6,
+    "green": 23.8,
+    "neutral": 7.0,
     "orange": 6.6,
     "pink": 36.5,
     "purple": 0.2,
     "red": 10.2,
-    "teal": 1.2
+    "teal": 0.7,
+    "yellow": 1.2
    },
    "src": "pixel-families"
   },
@@ -12079,16 +11606,16 @@
    ],
    "shares": {
     "blue": 2.1,
-    "earthy": 15.0,
+    "earthy": 16.0,
     "dark": 0.4,
-    "green": 13.3,
-    "neutral": 17.9,
+    "green": 13.8,
+    "neutral": 19.9,
     "orange": 15.0,
     "pink": 25.7,
     "purple": 0.0,
     "red": 6.5,
-    "teal": 1.1,
-    "yellow": 3.0
+    "teal": 0.7,
+    "yellow": 0.0
    },
    "src": "pixel-families"
   },
@@ -12099,11 +11626,10 @@
    ],
    "shares": {
     "blue": 6.4,
-    "earthy": 28.2,
+    "earthy": 30.8,
     "dark": 2.1,
-    "yellow": 4.0,
     "green": 0.6,
-    "neutral": 40.5,
+    "neutral": 41.9,
     "orange": 0.8,
     "pink": 16.9,
     "purple": 0.0,
@@ -12114,23 +11640,21 @@
   "betty-june-jeannette--nora": {
    "accents": [
     "pink",
-    "teal",
-    "yellow",
     "blue",
-    "green",
-    "orange"
+    "teal",
+    "green"
    ],
    "shares": {
     "blue": 16.3,
-    "earthy": 2.6,
-    "yellow": 17.0,
-    "green": 10.4,
-    "neutral": 3.4,
+    "earthy": 6.0,
+    "green": 13.1,
+    "neutral": 6.9,
     "orange": 9.3,
     "pink": 21.2,
     "purple": 0.5,
     "red": 1.1,
-    "teal": 18.3
+    "teal": 15.5,
+    "yellow": 10.2
    },
    "src": "pixel-families"
   },
@@ -12142,58 +11666,56 @@
    ],
    "shares": {
     "blue": 26.7,
-    "earthy": 4.6,
+    "earthy": 6.1,
     "dark": 0.3,
-    "yellow": 2.0,
-    "green": 21.8,
-    "neutral": 7.5,
+    "green": 23.1,
+    "neutral": 7.7,
     "orange": 0.7,
     "pink": 31.3,
     "purple": 1.0,
     "red": 1.7,
-    "teal": 2.3
+    "teal": 1.1,
+    "yellow": 0.3
    },
    "src": "pixel-families"
   },
   "betty-june-jeannette--caroline-preppy": {
    "accents": [
     "orange",
-    "yellow",
     "pink",
-    "blue",
-    "green"
+    "blue"
    ],
    "shares": {
     "blue": 14.2,
-    "earthy": 3.5,
-    "yellow": 20.0,
-    "green": 9.4,
-    "neutral": 3.2,
+    "earthy": 8.9,
+    "green": 9.5,
+    "neutral": 7.0,
     "orange": 29.4,
     "pink": 17.9,
     "purple": 1.4,
     "red": 0.3,
-    "teal": 0.6
+    "teal": 0.6,
+    "yellow": 10.8
    },
    "src": "pixel-families"
   },
   "betty-june-jeannette--katelyn-yellow": {
    "accents": [
-    "yellow",
     "pink",
-    "orange"
+    "orange",
+    "yellow"
    ],
    "shares": {
-    "earthy": 7.1,
+    "earthy": 9.9,
     "dark": 0.0,
-    "yellow": 28.7,
     "green": 1.3,
-    "neutral": 5.0,
+    "neutral": 7.2,
     "orange": 28.0,
     "pink": 28.1,
     "purple": 0.1,
     "red": 1.1,
-    "teal": 0.7
+    "teal": 0.7,
+    "yellow": 23.7
    },
    "src": "pixel-families"
   },
@@ -12201,41 +11723,40 @@
    "accents": [
     "pink",
     "teal",
-    "green",
-    "orange"
+    "green"
    ],
    "shares": {
     "blue": 7.3,
-    "earthy": 1.5,
-    "yellow": 7.2,
-    "green": 15.6,
-    "neutral": 9.4,
+    "earthy": 5.2,
+    "green": 15.8,
+    "neutral": 11.2,
     "orange": 9.8,
     "pink": 31.8,
     "purple": 0.1,
     "red": 0.7,
-    "teal": 16.6
+    "teal": 16.4,
+    "yellow": 1.8
    },
    "src": "pixel-families"
   },
   "betty-june-jeannette--charlotte": {
    "accents": [
-    "pink",
     "earthy",
+    "pink",
     "orange"
    ],
    "shares": {
     "blue": 6.2,
-    "earthy": 25.7,
+    "earthy": 29.7,
     "dark": 0.3,
-    "yellow": 4.1,
     "green": 4.5,
     "neutral": 5.2,
     "orange": 18.0,
     "pink": 29.5,
     "purple": 0.2,
     "red": 6.2,
-    "teal": 0.1
+    "teal": 0.0,
+    "yellow": 0.1
    },
    "src": "pixel-families"
   },
@@ -12244,28 +11765,26 @@
     "pink",
     "blue",
     "green",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "blue": 22.7,
-    "earthy": 5.8,
+    "earthy": 12.1,
     "dark": 0.3,
-    "yellow": 8.9,
-    "green": 19.7,
-    "neutral": 8.6,
+    "green": 20.4,
+    "neutral": 9.9,
     "orange": 2.4,
     "pink": 24.1,
     "purple": 0.3,
     "red": 1.6,
-    "teal": 5.6
+    "teal": 5.0,
+    "yellow": 1.4
    },
    "src": "pixel-families"
   },
   "betty-june-jeannette--betty-floral-monogrammed-neoprene": {
    "accents": [
-    "pink",
-    "orange",
-    "red"
+    "pink"
    ],
    "shares": {
     "blue": 0.0,
@@ -12282,22 +11801,21 @@
   },
   "betty-june-jeannette--benjamin-goes-to-positano": {
    "accents": [
-    "blue",
     "earthy",
-    "yellow",
+    "blue",
     "green"
    ],
    "shares": {
     "blue": 21.7,
-    "earthy": 21.4,
+    "earthy": 31.2,
     "dark": 0.1,
-    "yellow": 16.0,
-    "green": 11.9,
-    "neutral": 20.9,
+    "green": 12.7,
+    "neutral": 25.5,
     "orange": 3.6,
     "pink": 0.4,
     "red": 0.1,
-    "teal": 3.7
+    "teal": 3.0,
+    "yellow": 1.6
    },
    "src": "pixel-families"
   },
@@ -12305,19 +11823,18 @@
    "accents": [
     "pink",
     "earthy",
-    "blue",
-    "red"
+    "blue"
    ],
    "shares": {
     "blue": 20.6,
-    "earthy": 26.9,
+    "earthy": 27.3,
     "dark": 1.6,
-    "yellow": 0.7,
     "neutral": 3.6,
     "orange": 2.4,
     "pink": 28.2,
     "purple": 7.3,
-    "red": 8.6
+    "red": 8.6,
+    "yellow": 0.4
    },
    "src": "pixel-families"
   },
@@ -12325,21 +11842,21 @@
    "accents": [
     "pink",
     "orange",
-    "blue",
-    "earthy"
+    "earthy",
+    "blue"
    ],
    "shares": {
     "blue": 16.9,
-    "earthy": 16.0,
+    "earthy": 17.0,
     "dark": 0.6,
-    "yellow": 1.9,
-    "green": 4.1,
-    "neutral": 3.4,
+    "green": 4.5,
+    "neutral": 3.9,
     "orange": 19.8,
     "pink": 24.7,
     "purple": 4.2,
     "red": 6.5,
-    "teal": 1.8
+    "teal": 1.4,
+    "yellow": 0.4
    },
    "src": "pixel-families"
   },
@@ -12363,8 +11880,7 @@
   "betty-june-jeannette--livy": {
    "accents": [
     "pink",
-    "blue",
-    "purple"
+    "blue"
    ],
    "shares": {
     "blue": 21.1,
@@ -12387,16 +11903,15 @@
    ],
    "shares": {
     "blue": 25.4,
-    "earthy": 15.9,
+    "earthy": 16.4,
     "dark": 0.7,
-    "yellow": 0.7,
-    "green": 4.0,
-    "neutral": 20.6,
+    "green": 4.3,
+    "neutral": 20.9,
     "orange": 1.3,
     "pink": 28.5,
     "purple": 0.9,
     "red": 0.3,
-    "teal": 1.5
+    "teal": 1.2
    },
    "src": "pixel-families"
   },
@@ -12407,34 +11922,34 @@
    ],
    "shares": {
     "blue": 13.8,
-    "earthy": 4.0,
+    "earthy": 8.4,
     "dark": 8.8,
-    "yellow": 6.2,
     "green": 3.8,
-    "neutral": 19.8,
+    "neutral": 19.9,
     "orange": 3.1,
     "pink": 34.0,
     "purple": 4.6,
     "red": 1.3,
-    "teal": 0.7
+    "teal": 0.7,
+    "yellow": 1.7
    },
    "src": "pixel-families"
   },
   "tala-mahj--cabana-seafoam-blue-ivory-with-citrus-fringe": {
    "accents": [
     "yellow",
-    "blue",
-    "teal",
-    "green"
+    "blue"
    ],
    "shares": {
     "blue": 32.2,
+    "earthy": 1.9,
     "green": 9.9,
+    "neutral": 0.6,
     "orange": 0.4,
     "pink": 2.0,
     "purple": 0.9,
     "teal": 14.1,
-    "yellow": 40.5
+    "yellow": 38.0
    },
    "src": "pixel-families"
   },
@@ -12446,14 +11961,14 @@
    ],
    "shares": {
     "blue": 3.4,
-    "earthy": 3.3,
+    "earthy": 3.4,
     "green": 14.2,
-    "neutral": 4.8,
+    "neutral": 6.8,
     "orange": 50.4,
     "pink": 14.4,
     "purple": 0.1,
     "teal": 6.5,
-    "yellow": 2.9
+    "yellow": 0.7
    },
    "src": "pixel-families"
   },
@@ -12466,10 +11981,11 @@
    "shares": {
     "blue": 0.1,
     "green": 0.9,
+    "neutral": 0.1,
     "orange": 14.9,
     "pink": 40.5,
     "teal": 1.6,
-    "yellow": 42.0
+    "yellow": 41.9
    },
    "src": "pixel-families"
   },
@@ -12482,14 +11998,14 @@
    ],
    "shares": {
     "blue": 0.0,
-    "earthy": 15.8,
+    "earthy": 18.1,
     "green": 0.1,
-    "neutral": 47.1,
+    "neutral": 50.5,
     "orange": 12.6,
     "pink": 3.9,
     "red": 14.2,
     "teal": 0.3,
-    "yellow": 6.0
+    "yellow": 0.3
    },
    "src": "pixel-families"
   },
@@ -12512,37 +12028,38 @@
   },
   "tala-mahj--the-sonoma-wildflowers": {
    "accents": [
+    "neutral",
     "earthy"
    ],
    "shares": {
     "blue": 7.1,
-    "earthy": 42.5,
-    "yellow": 7.0,
+    "earthy": 43.7,
     "green": 0.2,
-    "neutral": 41.0,
+    "neutral": 46.5,
     "orange": 1.8,
     "pink": 0.1,
     "purple": 0.1,
-    "teal": 0.2
+    "teal": 0.2,
+    "yellow": 0.4
    },
    "src": "pixel-families"
   },
   "tala-mahj--the-montecito-wildflowers": {
    "accents": [
+    "neutral",
     "blue",
-    "earthy",
-    "yellow"
+    "earthy"
    ],
    "shares": {
     "blue": 28.9,
-    "earthy": 15.9,
+    "earthy": 17.1,
     "dark": 1.9,
     "green": 0.3,
-    "neutral": 43.3,
+    "neutral": 49.3,
     "orange": 1.1,
     "pink": 0.2,
     "teal": 0.3,
-    "yellow": 8.1
+    "yellow": 0.9
    },
    "src": "pixel-families"
   },
@@ -12554,11 +12071,11 @@
     "blue": 0.2,
     "earthy": 71.9,
     "green": 0.6,
-    "neutral": 13.7,
+    "neutral": 14.2,
     "orange": 3.7,
     "pink": 6.8,
     "teal": 0.4,
-    "yellow": 2.6
+    "yellow": 2.1
    },
    "src": "pixel-families"
   },
@@ -12571,12 +12088,12 @@
     "blue": 41.0,
     "earthy": 15.2,
     "green": 0.2,
-    "neutral": 40.6,
+    "neutral": 41.2,
     "orange": 0.6,
     "pink": 0.9,
     "purple": 0.1,
     "teal": 0.1,
-    "yellow": 1.2
+    "yellow": 0.6
    },
    "src": "pixel-families"
   },
@@ -12590,115 +12107,111 @@
     "earthy": 29.8,
     "dark": 65.8,
     "green": 0.4,
-    "neutral": 0.1,
+    "neutral": 0.2,
     "orange": 0.1,
     "pink": 0.3,
     "purple": 0.2,
     "red": 0.4,
     "teal": 1.7,
-    "yellow": 0.3
+    "yellow": 0.2
    },
    "src": "pixel-families"
   },
   "tala-mahj--colony-chartreuse-petal-pink": {
    "accents": [
     "pink",
-    "yellow",
-    "orange"
+    "yellow"
    ],
    "shares": {
     "blue": 0.0,
     "earthy": 0.2,
     "green": 1.4,
-    "neutral": 0.2,
+    "neutral": 0.5,
     "orange": 10.7,
     "pink": 47.4,
     "purple": 0.0,
     "teal": 0.2,
-    "yellow": 40.0
+    "yellow": 39.7
    },
    "src": "pixel-families"
   },
   "mahj-vine--chinoiserie-citrus-grove": {
    "accents": [
     "blue",
-    "green",
-    "pink"
+    "green"
    ],
    "shares": {
     "blue": 62.7,
-    "earthy": 0.6,
+    "earthy": 1.4,
     "dark": 0.2,
-    "yellow": 4.4,
-    "green": 13.9,
-    "neutral": 1.9,
+    "green": 15.1,
+    "neutral": 2.1,
     "orange": 2.8,
     "pink": 9.7,
     "purple": 0.5,
     "red": 0.1,
-    "teal": 3.3
+    "teal": 2.1,
+    "yellow": 3.4
    },
    "src": "pixel-families"
   },
   "charleston-mahjong-club--cabana-club-neoprene-umbrella-mat": {
    "accents": [
-    "yellow",
     "blue",
+    "earthy",
     "green"
    ],
    "shares": {
     "blue": 36.3,
-    "earthy": 0.5,
+    "earthy": 33.9,
     "green": 17.3,
-    "neutral": 0.2,
+    "neutral": 4.1,
     "orange": 0.1,
     "pink": 0.7,
     "purple": 0.0,
     "red": 0.3,
     "teal": 0.0,
-    "yellow": 44.6
+    "yellow": 7.2
    },
    "src": "pixel-families"
   },
   "betty-june-jeannette--the-kerry": {
    "accents": [
     "green",
-    "yellow",
-    "pink",
-    "blue"
+    "earthy",
+    "pink"
    ],
    "shares": {
     "blue": 10.1,
-    "earthy": 6.5,
+    "earthy": 18.3,
     "dark": 0.8,
-    "yellow": 23.8,
-    "green": 26.8,
-    "neutral": 4.3,
+    "green": 27.1,
+    "neutral": 12.7,
     "orange": 7.2,
     "pink": 18.2,
     "red": 0.6,
-    "teal": 1.8
+    "teal": 1.5,
+    "yellow": 3.6
    },
    "src": "pixel-families"
   },
   "tigre-de-tartan--holy-mahj-retired": {
    "accents": [
     "blue",
-    "yellow",
     "orange",
     "green"
    ],
    "shares": {
     "blue": 24.7,
-    "earthy": 0.5,
+    "earthy": 8.5,
     "dark": 4.1,
-    "yellow": 19.8,
     "green": 12.9,
-    "neutral": 16.4,
+    "neutral": 18.9,
     "orange": 16.2,
     "pink": 4.4,
     "purple": 0.0,
-    "teal": 1.2
+    "teal": 1.1,
+    "yellow": 9.2
    },
    "src": "pixel-families"
   },
@@ -12708,11 +12221,10 @@
    ],
    "shares": {
     "blue": 94.1,
-    "earthy": 0.0,
+    "earthy": 0.2,
     "dark": 0.0,
-    "yellow": 0.2,
     "green": 2.1,
-    "neutral": 3.3,
+    "neutral": 3.4,
     "orange": 0.0,
     "teal": 0.2
    },

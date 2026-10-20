@@ -65,6 +65,49 @@
     "green"
    ],
    "note": "lots of pink: Pink primary, Green also, no Teal. Overrides jungle Green-first."
+  },
+  {
+   "brand": "Oh My Mahjong",
+   "name": "Sedona",
+   "img": "oh-my-mahjong--sedona",
+   "primary": "orange",
+   "also": [
+    "blue",
+    "green"
+   ],
+   "note": "\"dominant orange\": Orange & Peach primary, Blue kept as also, Green added."
+  },
+  {
+   "brand": "Oh My Mahjong",
+   "name": "Year of the Horse",
+   "img": "oh-my-mahjong--year-of-the-horse",
+   "primary": "pink",
+   "also": [
+    "blue",
+    "purple"
+   ],
+   "note": "Pink primary, Blue secondary, Purple (plum) third. Mood tag kept (Claude's Pastels->Brights re-check had already moved it to Brights for the bold plum outlines)."
+  },
+  {
+   "brand": "Virora Mahjong",
+   "name": "Petalwing",
+   "img": "virora-mahjong--petalwing",
+   "primary": "blue",
+   "also": [
+    "pink"
+   ],
+   "note": "relayed as 'Aurora Mahjong Petalwing' (the only Petalwing is Virora Mahjong's): Blue primary, also Pink (pastel pink), mood Pastels."
+  },
+  {
+   "brand": "Amanda Toppe",
+   "name": "Limelight",
+   "img": "amanda-toppe--limelight",
+   "primary": "green",
+   "also": [
+    "blue",
+    "purple"
+   ],
+   "note": "Green primary, also Blue, also Purple (pastel lavender), mood Pastels."
   }
  ],
  "mood_calls": [
@@ -74,6 +117,20 @@
    "img": "bespoke-mahjong--lucky-charms-watercolor",
    "mood": "brights",
    "note": "NOT Pastels: bright magenta pink, doesn't read as light, \"a pretty bold graphic mat\"."
+  },
+  {
+   "brand": "Virora Mahjong",
+   "name": "Petalwing",
+   "img": "virora-mahjong--petalwing",
+   "mood": "pastel",
+   "note": "her call: Pastels"
+  },
+  {
+   "brand": "Amanda Toppe",
+   "name": "Limelight",
+   "img": "amanda-toppe--limelight",
+   "mood": "pastel",
+   "note": "her call: Pastels"
   }
  ],
  "rules": [
@@ -110,6 +167,25 @@
   "mahj-moon--tropical-hibiscus": [
    "pink",
    "green"
+  ],
+  "oh-my-mahjong--sedona": [
+   "orange",
+   "blue",
+   "green"
+  ],
+  "oh-my-mahjong--year-of-the-horse": [
+   "pink",
+   "blue",
+   "purple"
+  ],
+  "virora-mahjong--petalwing": [
+   "blue",
+   "pink"
+  ],
+  "amanda-toppe--limelight": [
+   "green",
+   "blue",
+   "purple"
   ]
  }
 }

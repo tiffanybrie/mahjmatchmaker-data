@@ -13,14 +13,20 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')
 P = lambda *a: os.path.join(ROOT, *a)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from families import fam_arr
-THRESH, NEUTRAL_THRESH, DARK_THRESH = 8.0, 45.0, 15.0
+THRESH, NEUTRAL_THRESH, DARK_THRESH, TEAL_THRESH = 12.0, 45.0, 20.0, 15.0  # v5 accents also show as tier 3 in single-color sections: real visible color only
 MAP = {'gold': 'yellow', 'brown': 'earthy'}
 OK = {'pink', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple', 'neutral', 'earthy', 'dark'}  # B&W is a graphic call, never an accent
 
 
-def refam(fam, sat, light):  # sample check (60 mats): tan/beige/peach-cream clusters read 'orange'; move them to earthy/neutral
-    if fam == 'orange' and sat < 0.45:
+def refam(fam, sat, light, hue=None):
+    # eye checks (60-mat sample + teal/yellow accent sheets): tan/beige/peach-cream read 'orange', cream/tan read 'yellow'/'gold',
+    # jade/emerald reads 'teal' (Tiffany: hue under ~180 is green). Move them before counting.
+    if fam in ('orange', 'yellow', 'gold') and sat < (0.45 if fam == 'orange' else 0.5):
         return 'neutral' if light >= 0.75 else 'earthy'
+    if fam == 'gold':
+        return 'earthy' if light < 0.45 else 'yellow'
+    if fam == 'teal' and hue is not None and hue < 180:
+        return 'green'
     return fam
 
 
@@ -29,26 +35,29 @@ def pick(shares):
     for fam, pct in shares:
         f = MAP.get(fam, fam)
         if f in OK: tot[f] = tot.get(f, 0) + pct
-    return sorted([f for f, v in tot.items() if v >= {'neutral': NEUTRAL_THRESH, 'dark': DARK_THRESH}.get(f, THRESH)], key=lambda f: -tot[f]), {f: round(v, 1) for f, v in tot.items()}
+    return sorted([f for f, v in tot.items() if v >= {'neutral': NEUTRAL_THRESH, 'dark': DARK_THRESH, 'teal': TEAL_THRESH}.get(f, THRESH)], key=lambda f: -tot[f]), {f: round(v, 1) for f, v in tot.items()}
 
 
 def measure(path, N=96):
     a = np.asarray(Image.open(path).convert('RGB').resize((N, N))).astype(float) / 255
     f, h, l, s = fam_arr(a)
-    f = np.where((f == 'orange') & (s < 0.45), np.where(l >= 0.75, 'neutral', 'earthy'), f)
+    low = ((f == 'orange') & (s < 0.45)) | (np.isin(f, ['yellow', 'gold']) & (s < 0.5))
+    f = np.where(low, np.where(l >= 0.75, 'neutral', 'earthy'), f)
+    f = np.where(f == 'gold', np.where(l < 0.45, 'earthy', 'yellow'), f)
+    f = np.where((f == 'teal') & (h < 180), 'green', f)
     f = f.ravel(); keep = ~np.isin(f, ['white', 'black'])
     vals, cnt = np.unique(f[keep], return_counts=True)
     t = cnt.sum() or 1
     return [(str(v), 100.0 * c / t) for v, c in zip(vals, cnt)]
 
 
-out = {'by': 'claude-measured', 'date': '2026-10-20', 'thresh_pct': THRESH, 'neutral_thresh_pct': NEUTRAL_THRESH, 'dark_thresh_pct': DARK_THRESH,
+out = {'by': 'claude-measured', 'date': '2026-10-20', 'thresh_pct': THRESH, 'neutral_thresh_pct': NEUTRAL_THRESH, 'dark_thresh_pct': DARK_THRESH, 'teal_thresh_pct': TEAL_THRESH,
        'about': __doc__.split('\n')[0] + ' Keyed by gallery img id. accents = colors >= threshold; shares = measured % per family.', 'mats': {}}
 M = json.load(open(P('config/mat-color-measured.json')))['mats']
 for k, v in M.items():
     img = v.get('image')
     if not img: continue
-    acc, sh = pick([(refam(c['family'], c.get('sat', 1), c.get('light', 0.5)), c['pct']) for c in v.get('all_clusters', [])])
+    acc, sh = pick([(refam(c['family'], c.get('sat', 1), c.get('light', 0.5), c.get('hue')), c['pct']) for c in v.get('all_clusters', [])])
     out['mats'][img] = {'accents': acc, 'shares': sh, 'src': 'mat-color-measured'}
 gal = P('assets/mats/gallery')
 extra = [r[0] for r in json.load(open(P('site/livepatch/matgallery/new53_rows.json')))['rows']] + ['tigre-de-tartan--holy-mahj-retired', 'tigre-de-tartan--queen-bee-retired']

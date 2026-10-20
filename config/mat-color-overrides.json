@@ -1693,6 +1693,47 @@
     "green"
    ],
    "note": "lots of pink: Pink primary, Green also, no Teal. Overrides jungle Green-first."
+  },
+  "www.ohmymahjong.com/sedona-mat-in-tube": {
+   "primary": "orange",
+   "secondary": [
+    "red",
+    "orange",
+    "green"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "oh-my-mahjong--sedona",
+   "light": 0.576,
+   "chroma": 0.464,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "blue",
+    "green"
+   ],
+   "note": "\"dominant orange\": Orange & Peach primary, Blue kept as also, Green added."
+  },
+  "www.ohmymahjong.com/year-of-the-horse-mat": {
+   "primary": "pink",
+   "secondary": [
+    "pink",
+    "gold"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "oh-my-mahjong--year-of-the-horse",
+   "light": 0.727,
+   "chroma": 0.407,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "blue",
+    "purple"
+   ],
+   "note": "Pink primary, Blue secondary, Purple (plum) third. Mood tag kept (Claude's Pastels->Brights re-check had already moved it to Brights for the bold plum outlines)."
   }
  }
 }

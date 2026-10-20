@@ -286,7 +286,9 @@
   "mahj-moon--blue-tropical-palm",
   "mahj-moon--scalloped-tropical-palm",
   "sunday-mahjong--plum-panda-premium",
-  "sunday-mahjong--sunday-premium"
+  "sunday-mahjong--sunday-premium",
+  "oh-my-mahjong--sedona",
+  "oh-my-mahjong--year-of-the-horse"
  ],
  "v5_pastel_to_brights": [
   "anders-ruff--a-mahjong-soir-e-mahjong-mat",
@@ -479,54 +481,154 @@
   "maison-mahj--the-chalet",
   "betty-june-jeannette--betty-floral-monogram-game-surface"
  ],
+ "removed_mats": [
+  "amore-mahjong--manor-garden"
+ ],
+ "section_tiers_active": {
+  "pink": {
+   "primary": 139,
+   "also": 30,
+   "accent": 113
+  },
+  "red": {
+   "primary": 21,
+   "also": 27,
+   "accent": 19
+  },
+  "orange": {
+   "primary": 24,
+   "also": 27,
+   "accent": 37
+  },
+  "yellow": {
+   "primary": 17,
+   "also": 8,
+   "accent": 60
+  },
+  "green": {
+   "primary": 105,
+   "also": 24,
+   "accent": 109
+  },
+  "teal": {
+   "primary": 46,
+   "also": 7,
+   "accent": 85
+  },
+  "blue": {
+   "primary": 150,
+   "also": 26,
+   "accent": 104
+  },
+  "purple": {
+   "primary": 44,
+   "also": 9,
+   "accent": 16
+  },
+  "neutral": {
+   "primary": 53,
+   "also": 2,
+   "accent": 86
+  },
+  "earthy": {
+   "primary": 36,
+   "also": 49,
+   "accent": 59
+  },
+  "dark": {
+   "primary": 30,
+   "also": 43,
+   "accent": 28
+  },
+  "bw": {
+   "primary": 13,
+   "also": 0,
+   "accent": 0
+  },
+  "simple": {
+   "primary": 2,
+   "also": 170,
+   "accent": 0
+  },
+  "pastel": {
+   "primary": 0,
+   "also": 147,
+   "accent": 0
+  },
+  "brights": {
+   "primary": 11,
+   "also": 193,
+   "accent": 0
+  },
+  "florals": {
+   "primary": 21,
+   "also": 15,
+   "accent": 0
+  },
+  "animal": {
+   "primary": 0,
+   "also": 37,
+   "accent": 0
+  },
+  "holiday": {
+   "primary": 64,
+   "also": 0,
+   "accent": 0
+  },
+  "multi": {
+   "primary": 0,
+   "also": 0,
+   "accent": 0
+  }
+ },
  "section_counts_active": {
-  "pink": 168,
-  "red": 49,
-  "orange": 50,
-  "yellow": 25,
-  "green": 128,
-  "teal": 53,
-  "blue": 177,
-  "purple": 52,
-  "neutral": 55,
-  "earthy": 85,
-  "dark": 73,
+  "pink": 282,
+  "red": 67,
+  "orange": 88,
+  "yellow": 85,
+  "green": 238,
+  "teal": 138,
+  "blue": 280,
+  "purple": 69,
+  "neutral": 141,
+  "earthy": 144,
+  "dark": 101,
   "bw": 13,
   "simple": 172,
   "pastel": 147,
-  "brights": 205,
+  "brights": 204,
   "florals": 36,
   "animal": 37,
   "holiday": 64,
   "multi": 0,
-  "retired": 25
+  "retired": 29
  },
  "section_counts_if_retired_shown": {
-  "pink": 173,
-  "red": 52,
-  "orange": 52,
-  "yellow": 26,
-  "green": 132,
-  "teal": 57,
-  "blue": 181,
-  "purple": 52,
-  "neutral": 56,
-  "earthy": 87,
-  "dark": 74,
+  "pink": 297,
+  "red": 70,
+  "orange": 91,
+  "yellow": 91,
+  "green": 251,
+  "teal": 145,
+  "blue": 291,
+  "purple": 72,
+  "neutral": 146,
+  "earthy": 146,
+  "dark": 103,
   "bw": 13,
   "simple": 174,
-  "pastel": 153,
-  "brights": 218,
-  "florals": 36,
+  "pastel": 156,
+  "brights": 217,
+  "florals": 39,
   "animal": 37,
   "holiday": 65,
   "multi": 0
  },
- "unique_active_mats": 777,
- "retired": 25,
+ "unique_active_mats": 776,
+ "retired": 29,
  "hidden": 34,
  "dedupe_groups": 26,
- "held_low_out": 95,
+ "held_low_out": 93,
  "applied_color_calls": [
   [
    "Britt Mills",
@@ -1351,6 +1453,26 @@
    [
     "green"
    ]
+  ],
+  [
+   "Oh My Mahjong",
+   "Sedona",
+   "Sedona",
+   "orange",
+   [
+    "blue",
+    "green"
+   ]
+  ],
+  [
+   "Oh My Mahjong",
+   "Year of the Horse",
+   "Year of the Horse",
+   "pink",
+   [
+    "blue",
+    "purple"
+   ]
   ]
  ],
  "unmatched_color_calls": [],
@@ -1703,6 +1825,10 @@
    "Enchanted (retired)",
    "Enchanted"
   ],
+  "oh-my-mahjong--garden-party-retired": [
+   "Garden Party (retired)",
+   "Garden Party"
+  ],
   "oh-my-mahjong--glitterville-dragon-retired": [
    "Glitterville Dragon (retired)",
    "Glitterville Dragon"
@@ -1730,6 +1856,10 @@
   "oh-my-mahjong--palm-paradise-retired": [
    "Palm Paradise (retired)",
    "Palm Paradise"
+  ],
+  "oh-my-mahjong--peri-twinkle-retired": [
+   "Peri-twinkle (retired)",
+   "Peri-twinkle"
   ],
   "oh-my-mahjong--serengeti-retired": [
    "Serengeti (retired)",
