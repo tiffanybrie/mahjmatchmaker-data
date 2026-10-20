@@ -330,6 +330,21 @@
    "by": "tiffany-chat-2026-10-20",
    "note": "tangerine"
   },
+  "mahjmood.com/sleigh-all-day-mat": {
+   "primary": "red",
+   "secondary": [
+    "green"
+   ],
+   "tone": "muted",
+   "holiday": true,
+   "skip": false,
+   "image": "mahj-mood--sleigh-all-day-mat",
+   "light": 0.276,
+   "chroma": 0.65,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "she said 'Slay All Day'; listing is 'Sleigh All Day'"
+  },
   "www.charlestonmahjongclub.com/cabana-club-neoprene-mat": {
    "primary": "green",
    "secondary": [
@@ -362,6 +377,25 @@
     "brown"
    ],
    "note": "Astor Place; moody/ochre, earthy"
+  },
+  "fourwindssocial.com/fws-x-225mahjong-collab-fleur-the-win-mahjong-mat": {
+   "primary": "yellow",
+   "secondary": [
+    "purple",
+    "pink"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "four-winds-social--fws-x-225mahjong-collab-fleur-the-win",
+   "light": 0.782,
+   "chroma": 0.417,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "purple"
+   ],
+   "note": "she said 'Flower the Wind'; yellow and purple equal"
   },
   "mahjongregister.com/pink-zebra-in-bloom-premium-padded-mahjong-mat-33": {
    "primary": "yellow",
@@ -437,6 +471,119 @@
    "also": [
     "green",
     "multi"
+   ]
+  },
+  "alb:coquette:Limelight": {
+   "primary": "green",
+   "secondary": [
+    "teal",
+    "blue",
+    "pink"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "amanda-toppe--limelight",
+   "light": 0.52,
+   "chroma": 0.357,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "blue"
+   ],
+   "note": "Amanda Toppe Limelight"
+  },
+  "shop.andersruff.com/pineapple-palms-mahjong-mat": {
+   "primary": "green",
+   "secondary": [
+    "orange",
+    "neutral"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "anders-ruff--pineapple-palms-mahjong-mat",
+   "light": 0.794,
+   "chroma": 0.348,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "orange"
+   ],
+   "note": "peach border"
+  },
+  "www.bespokemahjong.com/flirtyleopardsmintjulep": {
+   "primary": "green",
+   "secondary": [
+    "pink"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "bespoke-mahjong--flirty-leopards-mint-julep",
+   "light": 0.671,
+   "chroma": 0.299,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "pink"
+   ]
+  },
+  "www.bespokemahjong.com/garden-glow-mat-emerald-green": {
+   "primary": "green",
+   "secondary": [
+    "pink",
+    "yellow",
+    "purple"
+   ],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "bespoke-mahjong--garden-glow-mat-emerald-green",
+   "light": 0.186,
+   "chroma": 0.69,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "multi"
+   ],
+   "note": "floral"
+  },
+  "alb2:birdsong-mahjong-heaven-scent": {
+   "primary": "green",
+   "secondary": [
+    "neutral",
+    "blue"
+   ],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "birdsong-mahjong--heaven-scent",
+   "light": 0.325,
+   "chroma": 0.392,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "blue"
+   ]
+  },
+  "brittmillsdesign.com/crimson-harvest-neoprene-mahjong-mat": {
+   "primary": "green",
+   "secondary": [
+    "pink",
+    "red"
+   ],
+   "tone": "blend",
+   "holiday": false,
+   "skip": false,
+   "image": "britt-mills--crimson-harvest",
+   "light": 0.263,
+   "chroma": 0.479,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "red",
+    "pink"
    ]
   },
   "peacelovemahjong.com/mahjong-mats-plaid-striped?v=52798578950436": {

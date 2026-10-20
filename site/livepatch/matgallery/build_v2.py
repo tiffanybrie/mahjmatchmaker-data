@@ -65,8 +65,9 @@ for c in notes:
         elif cs in rs or (same_brand and rs in cs and len(rs) >= 8): sc = 0.95
         else: sc = max(difflib.SequenceMatcher(None, cs, rs).ratio(), difflib.SequenceMatcher(None, cs, rs[:len(cs)]).ratio() - 0.04)
         if not same_brand:  # other brands (or brand '*') only count on a near-exact name hit
-            if sc < 0.95: continue
-            sc -= 0.01
+            pre = difflib.SequenceMatcher(None, cs, rs[:len(cs) + 2]).ratio()
+            if sc < 0.95 and not (c['brand'] == '*' and pre >= 0.9): continue
+            sc = max(sc, pre) - 0.01
         best.append((sc, r))
     best.sort(key=lambda x: -x[0])
     if not best or best[0][0] < 0.8:
@@ -269,6 +270,11 @@ with open(os.path.join(HERE, 'hidden_oct20.csv'), 'w', newline='') as f:
     w = csv.writer(f); w.writerow(['img', 'catalog_key', 'brand', 'name_in_catalog', 'reason'])
     for img, why in sorted(hidden.items(), key=lambda kv: (kv[1].split(':')[0].split(' (')[0], kv[0])):
         w.writerow([img, R[img]['key'], R[img]['brand'], R[img]['raw'], why])
+    Fi = {r[0]: r for r in F}
+    for t_, lab in (('placeholder image', 'placeholder image'), ('wrong image (shows another mat)', 'wrong image'), ('lifestyle/table scene', 'image shows no mat')):
+        for img, a in sorted(by_type.get(t_, {}).items()):
+            if img in held and (t_ != 'lifestyle/table scene' or 'no mat visible' in a['detail']):
+                w.writerow([img, man[img], BRANDFIX.get(Fi[img][2], Fi[img][2]), Fi[img][1], f'already out (held low-confidence list); would also be hidden: {lab}: {a["detail"][:100]}'])
 json.dump({'section_counts_active': cnt, 'section_counts_if_retired_shown': cnt_with_ret, 'unique_active_mats': len(active),
            'retired': len(retired), 'hidden': len(hidden), 'dedupe_groups': len(dd_rows), 'held_low_out': len(held),
            'applied_color_calls': applied, 'unmatched_color_calls': unmatched,
