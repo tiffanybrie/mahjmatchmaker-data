@@ -51,6 +51,7 @@ bk = {b[0].lower(): b[1] for b in P['her_colors']['backs']}
 cpap, clav, clime = bk.get('papaya', '#de7e30'), bk.get('lavender', '#a8a3e1'), bk.get('light lime', '#c8d7a5')
 faces = ''.join(f'<span style="display:inline-flex;align-items:center;gap:10px"><i style="width:26px;height:26px;border-radius:50%;background:{h};box-shadow:0 0 0 3px #fff,0 1px 4px rgba(5,40,90,.2)"></i>{e(n.title())}</span>' for n, h in P['her_colors']['faces'])
 WHEEL = url(f'assets/colorwheels/{key}-color-wheel-mini.png')
+BACK_NUDGE = 74  # Tiffany Oct 19: center the back tile over the color wheel
 def lab(y, txt, col, x2):
     return (f'<div style="position:absolute;left:806px;top:{y-22}px;display:flex;align-items:center;gap:10px;font:700 27px Bit;color:var(--navy);white-space:nowrap">'
             f'<i style="width:26px;height:26px;border-radius:50%;background:{col};box-shadow:0 0 0 3px #fff,0 1px 4px rgba(5,40,90,.25)"></i>{txt}</div>'
@@ -59,9 +60,10 @@ colors = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 135
 <div style="position:relative;width:1080px;height:1350px">
 <div style="position:absolute;top:58px;left:72px;right:72px;display:flex;justify-content:space-between"><span class="caps" style="font-size:19px;color:#5a6b85">{e(P['name'])} · her profile</span><span class="caps" style="font-size:19px;color:#5a6b85">1 · her colors</span></div>
 <div class="cap" style="position:absolute;top:118px;left:72px;font-size:96px">Her colors</div>
-<div style="position:absolute;left:60px;top:268px;width:740px;height:478px;filter:drop-shadow(0 12px 16px rgba(80,40,20,.16))"><div style="position:absolute;inset:0;background:url({url(BACK_CUT)}) no-repeat;background-size:858px auto;background-position:-95px -114px"></div></div>
+<div style="position:absolute;left:{60 + BACK_NUDGE}px;top:268px;width:740px;height:478px;filter:drop-shadow(0 12px 16px rgba(80,40,20,.16))"><div style="position:absolute;inset:0;clip-path:inset(0 {740 - 360}px 0 0);background:url({url(BACK_CUT)}) no-repeat;background-size:858px auto;background-position:-95px -114px"></div></div>
+<div style="position:absolute;left:60px;top:268px;width:740px;height:478px;filter:drop-shadow(0 12px 16px rgba(80,40,20,.16))"><div style="position:absolute;inset:0;clip-path:inset(0 0 0 440px);background:url({url(BACK_CUT)}) no-repeat;background-size:858px auto;background-position:-95px -114px"></div></div>
 {lab(390, 'Papaya', cpap, 601)}{lab(490, 'Lavender layer', clav, 650)}{lab(590, 'Light lime layer', clime, 703)}
-<div style="position:absolute;left:79px;width:294px;top:760px;text-align:center;font:700 21px Bit;letter-spacing:.2em;text-transform:uppercase;color:#5a6b85">the back</div><div style="position:absolute;left:560px;width:200px;top:760px;text-align:center;font:700 21px Bit;letter-spacing:.2em;text-transform:uppercase;color:#5a6b85">the side</div>
+<div style="position:absolute;left:{79 + BACK_NUDGE}px;width:294px;top:760px;text-align:center;font:700 21px Bit;letter-spacing:.2em;text-transform:uppercase;color:#5a6b85">the back</div><div style="position:absolute;left:560px;width:200px;top:760px;text-align:center;font:700 21px Bit;letter-spacing:.2em;text-transform:uppercase;color:#5a6b85">the side</div>
 <img src="{WHEEL}" style="position:absolute;left:44px;top:800px;width:510px;height:510px">
 <div style="position:absolute;left:584px;top:880px;right:56px">
  <div class="caps" style="font-size:21px;color:var(--pink)">On the color wheel</div>
