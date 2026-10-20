@@ -83,3 +83,12 @@ Each line 2–4 seconds, 2 takes. Those 12 clips cover months of skits.
 **Pinned "who's the matchmaker" post:** a short real clip, not a talking-head intro. For example, her at the table setting down a mat, looking up, with title cards: "I'm Tiffany." / "I match mahjong tiles, mats and racks." / "Some of them need counseling." Then the phone-call skit picks up from there.
 
 **Headshot:** she feels the website headshot looks AI-made. Prefer a real phone photo (portrait mode, window light, at her table with tiles and a mat) over posting or reworking that one. Take a few during the same filming session.
+
+## Idea parked (Tiffany, Oct 19 night): "Life of a Matchmaker" mockumentary
+Her "harebrained idea" that could go viral. Revisit with a brainstorm; she wants to pull from the ChatGPT doc (83/83b) and her own tile-set knowledge.
+- Format: she's "prepping for her Netflix documentary." Interview chair, or at her desk/on the phone, quick frame-by-frame cuts of one-liners about each tile set, like you're picking the matchmaker's brain.
+- Seed lines (hers):
+  - "These tiles have the worst taste in mats."
+  - Heritage: "Oh yeah, he's a player. Super handsome, total player. Plays on everything."
+  - The pre-order saga: sets stuck in customs for months, brand owners apologizing on Instagram. E.g. Mahj Tile Haus Rose Quartz: "I mean, she's gorgeous. She's stuck in customs. Her mom is freaking out. And everybody wants to play with her. All the mats want to play with her."
+- Next step: a brainstorm session with Tiffany to build a one-liner per set, then a shot list for one filming session (ties into the face-to-camera plan above).
