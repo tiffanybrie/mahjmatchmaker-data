@@ -21,6 +21,15 @@ def lab(rgb):
 TL=[lab(np.array([[int(h[i:i+2],16) for i in (0,2,4)]],float))[0] for h in pal]
 it=json.load(open(ROOT+'/work/items-colored.json'))
 mats=[x for x in it if x['k']=='mat' and x.get('a') and x.get('i') and x['b'] not in exclude]
+# Oct 20 (Tiffany caught a solo-play mat in a Jasmine shortlist): drop anything Find Your Match hides
+# (catalog/locked_decisions.json status hidden: solo-play, travel, mini, etc.) + solo/travel/mini by name.
+import re as _re
+_LD=json.load(open(ROOT+'/catalog/locked_decisions.json'))
+_HID={k for k,v in _LD.items() if isinstance(v,dict) and v.get('status')=='hidden'}
+def _key(x):
+    m=_re.match(r'https?://(?:www\.)?([^/]+)/products/([^/?#]+)',x['u']); return m and m.group(1)+'/'+m.group(2)
+_BAD=_re.compile(r'solo|practice|travel|mini\b|desk mat|round',_re.I)
+mats=[x for x in mats if _key(x) not in _HID and ('www.'+(_key(x) or '')) not in _HID and not _BAD.search(x['t'])]
 def th(x):
     h=hashlib.md5(x['u'].encode()).hexdigest()[:12];p=f'{TH}/{h}.jpg'
     if not os.path.exists(p):
