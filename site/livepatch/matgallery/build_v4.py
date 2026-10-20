@@ -362,7 +362,9 @@ json.dump({'section_counts_active': cnt, 'section_counts_if_retired_shown': cnt_
 
 # ---------- HTML ----------
 CSS = open(os.path.join(HERE, 'style.css')).read() + '.mmg-chip.mmg-tog{border-style:dashed}\n.mmg-watch{margin-top:auto;align-self:flex-start;border:1.5px solid #9a8f86;color:#6f655d;font-size:.68em;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:10px}\n.mmg-chip.mmg-tog[aria-pressed="true"]{border-style:solid}\n'
-data = json.dumps([[x['img'], x['name'], x['brand'], x['url'], x['ret'], x['secs'], x['code']] + ([1] if x['img'] in WATCH else []) for x in vis],
+# Image swaps (Tiffany Oct 20): use a clean flat photo when a store's photo has text/cropping
+IMG_ALIAS = {'four-winds-social--fws-x-mahj-mood-collab-beyond-the-ribbon': 'mahj-mood--beyond-the-ribbon-four-winds-social-collab-mat-benefitting-pink-fund-pre-order-ships-end-of-december'}
+data = json.dumps([[IMG_ALIAS.get(x['img'], x['img']), x['name'], x['brand'], x['url'], x['ret'], x['secs'], x['code']] + ([1] if x['img'] in WATCH else []) for x in vis],
                   separators=(',', ':'), ensure_ascii=False).replace('</', '<\\/')
 chips = ('<button type="button" class="mmg-chip" data-f="all" aria-pressed="true">All mats</button>'
          + ''.join(f'<button type="button" class="mmg-chip" data-f="{c}" aria-pressed="false">{html.escape(l)}</button>' for c, l in COL if cnt[c])
