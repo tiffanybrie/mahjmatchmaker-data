@@ -113,7 +113,15 @@ for img, a in by_type.get('raw store title', {}).items():
 NAMEFIX = {  # different designs that share one store name (audit: ambiguous names); colorway added from the photo/URL
     'mahj-moon--retro-waves': 'Retro Waves \u2013 Pink & Aqua', 'mahj-moon--retro-waves-2': 'Retro Waves \u2013 Purple',
     'mahj-moon--retro-waves-3': 'Retro Waves \u2013 Orange', 'mahj-moon--palm-beach-american': 'Palm Beach American \u2013 Bermuda',
-    'mahj-moon--palm-beach-american-2': 'Palm Beach American \u2013 Harbor', 'virora-mahjong--limoncea-mahjong-mat': 'Limoncea with Flower'}
+    'mahj-moon--palm-beach-american-2': 'Palm Beach American \u2013 Harbor', 'virora-mahjong--limoncea-mahjong-mat': 'Limoncea with Flower',
+    'britt-mills--soir-e-leatherette': 'Soir\u00e9e Leatherette', 'hip-hip-mahjong--hoppy-east-hare-mahjong-mat': 'Hoppy East-Hare',
+    'mahj-mood--beyond-the-ribbon-four-winds-social-collab-mat-benefitting-pink-fund-pre-order-ships-end-of-december': 'Beyond the Ribbon (Pink Fund)',
+    'mahj-mood--the-eloise-collection-mat-collab-with-four-winds-social': 'The Eloise Collection',
+    'charleston-mahjong-club--reversible-vegan-leather-bight-pink-purple': 'Reversible Vegan Leather \u2013 Bright Pink & Purple',
+    'tigre-de-tartan--paige-spearin-mahjong-mat-mahj-and-martinis-special-edition-printing': 'Paige Spearin \u201cMahj and Martinis\u201d',
+    'tigre-de-tartan--mahjong-mat-printed-needlepoint-canvas-14-mesh-jard-n-de-los-jefes': 'Jard\u00edn de Los Jefes Needlepoint Canvas',
+    'splash-of-color--art-deco-designed-mahjong-mat-green-blue-speakeasy-collection': 'Art Deco Green Blue Speakeasy',
+    'my-fair-mahjong--color-wave-cobalt-center-light-blue-scallop': 'Color Wave \u2013 Cobalt Center, Light Blue Scallop'}
 BRANDFIX = {'Mahj and Moon': 'Mahj & Moon', 'Ozark Mah Jongg': 'Ozark Mahjongg'}
 
 
