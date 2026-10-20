@@ -1,0 +1,118 @@
+{
+ "_note": "Kerry mat (BettyJuneJeannette, Etsy) match cards, Oct 20 2am. Tiffany's picks: Pearlescent, Jasmine, Moonlight,",
+ "mat_file": "assets/mats/etsy/bettyjunejeannette/kerry-2.jpg",
+ "mat_crop": [
+  181,
+  558,
+  2049,
+  2429
+ ],
+ "mat_key": "kerry",
+ "max_racks": 4,
+ "code": "SHOP THE MATCH : MAHJMATCHMAKER.COM",
+ "cards": [
+  {
+   "slug": "pearlescent-kerry",
+   "set": "pearlescent",
+   "order": 1,
+   "title": "Pearlescent + Kerry",
+   "col": "#e67965",
+   "tile_file": "assets/tiles/album/pearlescent.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Miss Mahjong Peach Sorbet Scalloped",
+    "Bird & Bamboo Light Pink"
+   ],
+   "file": "pearlescent-mahjong-tiles-bettyjunejeannette-kerry-mat.jpg"
+  },
+  {
+   "slug": "jasmine-kerry",
+   "set": "jasmine",
+   "order": 2,
+   "title": "Jasmine + Kerry",
+   "col": "#36a272",
+   "tile_file": "assets/tiles/album/jasmine.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Periwinkle Blue"
+   ],
+   "file": "jasmine-mahjong-tiles-bettyjunejeannette-kerry-mat.jpg"
+  },
+  {
+   "slug": "moonlight-kerry",
+   "set": "moonlight",
+   "order": 3,
+   "title": "Moonlight + Kerry",
+   "col": "#5082d0",
+   "tile_file": "assets/tiles/album/moonlight.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Miss Mahjong Opal & Brass",
+    "Bird & Bamboo Dark Blue"
+   ],
+   "file": "moonlight-mahjong-tiles-bettyjunejeannette-kerry-mat.jpg"
+  },
+  {
+   "slug": "la-fete-kerry",
+   "set": "la-fete",
+   "order": 4,
+   "title": "La Fete + Kerry",
+   "col": "#e97695",
+   "tile_file": "assets/tiles/album/la-fete.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Avocado"
+   ],
+   "file": "la-fete-mahjong-tiles-bettyjunejeannette-kerry-mat.jpg"
+  },
+  {
+   "slug": "willow-kerry",
+   "set": "willow",
+   "order": 5,
+   "title": "Willow + Kerry",
+   "col": "#6f8d5d",
+   "tile_file": "assets/tiles/album/willow.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bam Bird Boutique Walnut"
+   ],
+   "file": "willow-mahjong-tiles-bettyjunejeannette-kerry-mat.jpg"
+  },
+  {
+   "slug": "talulah-kerry",
+   "set": "talulah",
+   "order": 6,
+   "title": "Talulah + Kerry",
+   "col": "#18968b",
+   "tile_file": "assets/tiles/album/talulah.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Light Pink",
+    "Miss Mahjong Scalloped Iridescent Opal"
+   ],
+   "file": "talulah-mahjong-tiles-bettyjunejeannette-kerry-mat.jpg"
+  },
+  {
+   "slug": "coquette-kerry",
+   "set": "coquette",
+   "order": 7,
+   "title": "Coquette + Kerry",
+   "col": "#d57198",
+   "tile_file": "assets/tiles/album/coquette.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Middle & Main White Lace Acrylic",
+    "Bird & Bamboo Lilac"
+   ],
+   "file": "coquette-mahjong-tiles-bettyjunejeannette-kerry-mat.jpg"
+  }
+ ]
+}
