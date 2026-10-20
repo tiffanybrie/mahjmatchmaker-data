@@ -150,6 +150,39 @@
     "green"
    ],
    "note": "\"a true multi\": Blue primary with Green as co-primary (sorts with the primaries in Green); accents Red, Orange, Purple, Yellow, Earthy (brown). Not added to Multicolor Florals: by eye it's a chinoiserie garden scene with peacock-feather border, not a floral."
+  },
+  {
+   "brand": "Oh My Mahjong",
+   "name": "Jade",
+   "img": "oh-my-mahjong--jade",
+   "primary": "blue",
+   "also": [
+    "green",
+    "dark"
+   ],
+   "note": "Blue primary, also Green, accents Neutral (light white) + Purple; Dark & Moody kept."
+  },
+  {
+   "brand": "Oh My Mahjong",
+   "name": "Isla",
+   "img": "oh-my-mahjong--isla",
+   "primary": "blue",
+   "also": [
+    "green",
+    "yellow"
+   ],
+   "note": "Blue primary, also Green, also Yellow & Mustard (mustard, third)."
+  },
+  {
+   "brand": "Oh My Mahjong",
+   "name": "Elysium",
+   "img": "oh-my-mahjong--elysium",
+   "primary": "blue",
+   "also": [
+    "green",
+    "purple"
+   ],
+   "note": "Blue primary, also Green, also Purple (magenta/berry, third), accent Pink (subtle)."
   }
  ],
  "mood_calls": [
@@ -187,7 +220,7 @@
   "A soft/light background with bold, saturated graphic elements (hot pink/magenta, strong black outlines, neon) reads Brights, not Pastels. Judge the overall impression, not the background color.",
   "Chip order: colors, Neutral & Ivory, Earthy, Dark & Moody, Black & White, Simple, Pastels, Brights, Multicolor Florals, Animal Prints, Holiday, Retired."
  ],
- "final_sections_note": "build_v5.py applies these color sections last (after the jungle/holiday_off/primary_fix crosstags), keeping each mat's mood tag (Pastels/Brights/Simple) as computed.",
+ "final_sections_note": "build_v5.py applies these color sections last (after the jungle/holiday_off/primary_fix crosstags), keeping each mat's mood tag (Pastels/Brights/Simple) and any Neutral/Earthy/Dark/B&W tonal tag it already had. accent_calls = her accent colors (tier 3); coprimary = sorts with the primaries in that section.",
  "final_sections": {
   "amahj--blue-citron-lilac-mahjong-game-mat": [
    "blue",
@@ -253,6 +286,21 @@
   "oh-my-mahjong--darjeeling": [
    "blue",
    "green"
+  ],
+  "oh-my-mahjong--jade": [
+   "blue",
+   "green",
+   "dark"
+  ],
+  "oh-my-mahjong--isla": [
+   "blue",
+   "green",
+   "yellow"
+  ],
+  "oh-my-mahjong--elysium": [
+   "blue",
+   "green",
+   "purple"
   ]
  },
  "accent_calls": {
@@ -269,6 +317,13 @@
    "purple",
    "yellow",
    "earthy"
+  ],
+  "oh-my-mahjong--jade": [
+   "neutral",
+   "purple"
+  ],
+  "oh-my-mahjong--elysium": [
+   "pink"
   ]
  },
  "coprimary": {

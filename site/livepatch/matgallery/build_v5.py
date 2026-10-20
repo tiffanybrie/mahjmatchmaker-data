@@ -361,8 +361,8 @@ def v5(img, secs):
     if secs == ['holiday']:
         return secs
     if img in FINAL:
-        REMOVED[img] = [c for c in secs if c not in FINAL[img] and c not in MOODS + ('animal', 'simple')] + ['teal']  # her removals never come back as accents
-        keep = [c for c in secs if c in MOODS + ('animal',)]
+        REMOVED[img] = [c for c in secs if c not in FINAL[img] and c not in MOODS + TONAL + ('animal', 'simple')] + ['teal']  # her removals never come back as accents
+        keep = [c for c in secs if c in MOODS + TONAL + ('animal',)]  # mood + tonal tags stay unless her call says otherwise
         secs = list(dict.fromkeys(FINAL[img] + keep)); v5log['final'].append(img)
         if not any(c in TONAL or c in MOODS for c in secs):
             secs.append('brights')
@@ -414,6 +414,8 @@ for x in vis:
     if x['secs'] == ['holiday']:
         x['acc'] = []; continue  # holiday mats stay out of color sections
     x['acc'] = [a for a in ACC.get(x['img'], {}).get('accents', []) if a in ACOL and a not in x['secs'] and a not in REMOVED.get(x['img'], [])]
+    if x['img'] in V5.get('accent_calls', {}):  # Tiffany named this mat's accents: hers replace the measured ones
+        x['acc'] = []
     for a in V5.get('accent_calls', {}).get(x['img'], []):  # Tiffany's own accent calls
         if a not in x['secs'] and a not in x['acc']: x['acc'].append(a)
 order = {c: i for i, (c, _) in enumerate(COL)}

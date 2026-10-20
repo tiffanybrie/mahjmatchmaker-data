@@ -1790,6 +1790,81 @@
     "blue"
    ],
    "note": "Purple (lavender) primary, also Blue, accent Green (light green), mood Pastels."
+  },
+  "www.ohmymahjong.com/darjeeling-mat-w-tube": {
+   "primary": "blue",
+   "secondary": [
+    "green"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "oh-my-mahjong--darjeeling",
+   "light": 0.514,
+   "chroma": 0.702,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "green"
+   ],
+   "note": "\"a true multi\": Blue primary with Green as co-primary (sorts with the primaries in Green); accents Red, Orange, Purple, Yellow, Earthy (brown). Not added to Multicolor Florals: by eye it's a chinoiserie garden scene with peacock-feather border, not a floral."
+  },
+  "www.ohmymahjong.com/jade-mat-in-tube": {
+   "primary": "blue",
+   "secondary": [
+    "teal"
+   ],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "oh-my-mahjong--jade",
+   "light": 0.296,
+   "chroma": 0.783,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "green",
+    "dark"
+   ],
+   "note": "Blue primary, also Green, accents Neutral (light white) + Purple; Dark & Moody kept."
+  },
+  "www.ohmymahjong.com/isla-mat-in-tube": {
+   "primary": "blue",
+   "secondary": [
+    "teal"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "oh-my-mahjong--isla",
+   "light": 0.659,
+   "chroma": 0.314,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "green",
+    "yellow"
+   ],
+   "note": "Blue primary, also Green, also Yellow & Mustard (mustard, third)."
+  },
+  "www.ohmymahjong.com/elysium-mat-in-tube": {
+   "primary": "blue",
+   "secondary": [
+    "green"
+   ],
+   "tone": "blend",
+   "holiday": false,
+   "skip": false,
+   "image": "oh-my-mahjong--elysium",
+   "light": 0.327,
+   "chroma": 0.701,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "green",
+    "purple"
+   ],
+   "note": "Blue primary, also Green, also Purple (magenta/berry, third), accent Pink (subtle)."
   }
  }
 }
