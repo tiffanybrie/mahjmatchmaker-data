@@ -1,7 +1,7 @@
 """Post 1 of every tile set row: "Meet <set>", her INTRODUCTION carousel (Tiffany, Oct 19 evening).
 Slides (Oct 19 night): 1 dating profile (cover) / 2 her colors (layer diagram + small color wheel) /
 3 her faces (brand photo of the faces + main & supporting color cards) / 4 her best features (favorite tiles) /
-5 racks she's into / 6 made for each other (favorite match) / 7 her album is ready.
+5 racks she's into / 6 made for each other (favorite match) / 7 she's been matched.
 No baked-in dots (Instagram shows its own). Needs carousel.py html first (s2 colors, s3 racks, s4 pair).
 Usage: python3 intro.py papaya-spritz"""
 import sys, os, re, subprocess
@@ -37,9 +37,9 @@ fan += (f'<div class="ph" style="position:absolute;left:{450 - 220}px;top:10px;w
 end = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 1350, S['col'])}</style></head><body>
 <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;text-align:center;padding:96px 80px 0">
  <div class="caps" style="font-size:20px;color:#5a6b85">{e(P['name'])} · {e(P['brand'])}</div>
- <div class="cap" style="font-size:108px;margin-top:22px;line-height:.95">Her album<br><span style="color:var(--acc)">is ready</span></div>
+ <div class="cap" style="font-size:108px;margin-top:22px;line-height:.95">She&rsquo;s been<br><span style="color:var(--acc)">matched</span></div>
  <div style="position:relative;margin-top:34px;width:900px;height:590px">{fan}</div>
- <div class="pf" style="font-size:46px;margin-top:46px">See all <b style="font-weight:600;color:var(--pink)">{P['matches']}</b> of her matches</div>
+ <div class="pf" style="font-size:46px;margin-top:46px">See all <b style="font-weight:600;color:var(--pink)">{P['matches']}</b> of her match cards</div>
  <div class="pill" style="margin-top:22px;background:var(--pink)">link in bio &rarr;</div>
  <div style="margin-top:28px;font:700 30px Bit">Code <span style="color:var(--pink)">MAHJMATCH</span> at {e(P['brand'])}</div>
  <img src="{url('assets/brand/mahjmatchmaker-wordmark-notag.png')}" style="width:420px;margin-top:34px">
