@@ -13,7 +13,8 @@ ACC = S['col']; L = P['launch'] = {'hero': 'assets/launches/omm-papaya-spritz-ti
 MATS = S['mat_imgs']; RACK = {'Bird & Bamboo Lavender': 'assets/colorcards/papaya-spritz/racks/bird-and-bamboo-lavender.png',
                               'Peace Love Mahjong Chartreuse': 'assets/racks/card/peace-love-mahjong-chartreuse.png',
                               'Peace Love Mahjong Oak': 'assets/racks/card/peace-love-mahjong-oak.png',
-                              'Middle & Main Scalloped Beechwood': 'assets/racks/card/middle--main-scalloped-beechwood.png'}
+                              'Middle & Main Scalloped Beechwood': 'assets/racks/card/middle--main-scalloped-beechwood.png',
+                              'Mahjong Row & Co. Scalloped Tortoise': 'assets/racks/card/mahjong-row--co-scalloped-tortoise.png'}
 LOGO = url('assets/brand/mahjmatchmaker-wordmark-notag.png'); TILE = url(S['tile'])
 e = html.escape
 OMM = P.get('omm_launch'); NS = 7 if OMM else 5
@@ -90,21 +91,32 @@ s3 = page(NS - 1, head(('5' if OMM else '3') + ' · top matches') + f"""
   <div style="font:400 25px/1.35 Bit;margin-top:6px">{e(P['dealbreaker'])}</div></div>
 </div>""")
 
-# 4 racks she's into
-rk = ''
-for r in P['racks']:
-    b = next((x for x in ('Bird & Bamboo', 'Peace Love Mahjong', 'Middle & Main', 'Miss Mahjong', 'Mahjong Row & Co.', 'Bam Bird Boutique') if r['name'].startswith(x)), r['name'].split()[0]); c = r['name'][len(b) + 1:]
-    rk += f"""<div style="margin-top:56px"><div style="display:flex;align-items:baseline;gap:14px"><span class="caps" style="font-size:18px;color:#8a6a80">{e(b)}</span><span class="pf" style="font-size:44px;font-weight:600">{e(c)}</span></div>
-<img src="{url(RACK[r['name']])}" style="display:block;width:936px;height:96px;object-fit:fill;margin-top:10px;filter:drop-shadow(0 8px 10px rgba(6,40,90,.18))">
-<div style="font:400 27px Bit;margin-top:10px;color:#2c3e63">{e(r['why'])}</div></div>"""
+# 4 racks she's into (Tiffany, Oct 19 11pm): 2 that match her layer colors, then her real recs, the super versatile ones
+BRANDS = ('Bird & Bamboo', 'Peace Love Mahjong', 'Middle & Main', 'Miss Mahjong', 'Mahjong Row & Co.', 'Bam Bird Boutique')
+def rrow(r, top):
+    b = next((x for x in BRANDS if r['name'].startswith(x)), r['name'].split()[0]); c = r['name'][len(b) + 1:]
+    return (f"""<div style="margin-top:{top}px"><div style="display:flex;align-items:baseline;gap:14px"><span class="caps" style="font-size:17px;color:#8a6a80">{e(b)}</span><span class="pf" style="font-size:40px;font-weight:600">{e(c)}</span></div>"""
+            f"""<img src="{url(RACK[r['name']])}" style="display:block;width:936px;height:88px;object-fit:fill;margin-top:8px;filter:drop-shadow(0 8px 10px rgba(6,40,90,.18))"></div>""")
+grp = lambda g: [r for r in P['racks'] if r.get('group', 'color') == g]
+col = ''.join(rrow(r, 26) for r in grp('color')); ver = ''.join(rrow(r, 26) for r in grp('versatile'))
+if ver:
+    racks_body = f"""
+ <div class="caps" style="font-size:19px;color:var(--pink);margin-top:40px">Match her layers</div>{col}
+ <div style="margin-top:42px;display:flex;align-items:center;gap:16px"><span class="hand" style="font-size:50px;color:var(--navy);line-height:1">super versatile</span>
+  <svg width="70" height="44" viewBox="0 0 70 44"><path d="M4 8 C 28 4, 46 14, 58 34" fill="none" stroke="#c8325f" stroke-width="4" stroke-linecap="round"/><path d="M46 30 L 59 37 L 62 22" fill="none" stroke="#c8325f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="pf" style="font-size:28px;color:#3c4f73">my go-tos with any set</span></div>{ver}
+ <div class="hand" style="font-size:40px;margin-top:34px;color:var(--pink)">now, who she&rsquo;s dating &rarr;</div>"""
+else:
+    racks_body = col + """
+ <div class="hand" style="font-size:44px;margin-top:40px;color:var(--navy)">all three picked for her, not just any rack &hearts;</div>
+ <div class="hand" style="font-size:40px;margin-top:6px;color:var(--pink)">now, who she&rsquo;s dating &rarr;</div>"""
 s4 = page(3, head("2 · racks she's into") + f"""
 <div style="position:absolute;top:120px;left:72px;right:72px">
  <div class="cap" style="font-size:96px">Racks she's into</div>
- <div class="pf" style="font-size:32px;margin-top:8px;color:#3c4f73">Pull a layer color, or let a light wood stay out of her way.</div>
- {rk}
- <div class="hand" style="font-size:44px;margin-top:40px;color:var(--navy)">all three picked for her, not just any rack &hearts;</div>
- <div class="hand" style="font-size:40px;margin-top:6px;color:var(--pink)">now, who she&rsquo;s dating &rarr;</div>
+ <div class="pf" style="font-size:32px;margin-top:8px;color:#3c4f73">A color from her layers, or a rack that goes with everything.</div>
+ {racks_body}
 </div>""")
+
 
 if OMM:
     pr = OMM['pair']; PM = url(pr['img']); TOG = url(pr['together'])

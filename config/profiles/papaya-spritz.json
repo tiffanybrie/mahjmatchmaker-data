@@ -149,15 +149,23 @@
  "racks": [
   {
    "name": "Bird & Bamboo Lavender",
-   "why": "Matches her lavender layer."
+   "why": "Matches her lavender layer.",
+   "group": "color"
   },
   {
    "name": "Peace Love Mahjong Chartreuse",
-   "why": "Her light lime layer, turned up."
+   "why": "Her light lime layer, turned up.",
+   "group": "color"
   },
   {
    "name": "Middle & Main Scalloped Beechwood",
-   "why": "Light natural wood with a scalloped edge, sweet enough for her."
+   "why": "Light wood with a scalloped edge.",
+   "group": "versatile"
+  },
+  {
+   "name": "Mahjong Row & Co. Scalloped Tortoise",
+   "why": "The orange in tortoise picks up her papaya backs.",
+   "group": "versatile"
   }
  ],
  "first_dates": [
@@ -215,5 +223,5 @@
   "anders-ruff-press-for-mahjong",
   "oh-my-mahjong-vivienne"
  ],
- "racks_note": "Tiffany Oct 19 11pm: PLM Oak -> Middle & Main Scalloped (girly setup). Redo every asset with racks (doc 60)."
+ "racks_note": "Tiffany Oct 19 11pm: slide shows 2 layer-color racks + 2 super-versatile picks (scalloped wood + tortoise). Clear acrylic is the obvious default, not called out. PLM Oak -> M&M Scalloped Beechwood. Album still 3 racks."
 }
