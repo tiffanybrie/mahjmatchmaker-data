@@ -1,0 +1,52 @@
+{
+ "source": "Tiffany, Oct 20, Mat Gallery v5 (relayed by the coordinator). Her calls win.",
+ "by": "tiffany-chat-2026-10-20",
+ "corrections": [
+  {
+   "brand": "Amahj",
+   "name": "Blue, Citron + Lilac",
+   "img": "amahj--blue-citron-lilac-mahjong-game-mat",
+   "primary": "blue",
+   "also": [
+    "yellow",
+    "purple"
+   ],
+   "note": "\"doesn't read teal and aqua to me\": out of Teal & Aqua; Blue (pale blue middle), Yellow (citron border), Purple (lilac). Also Simple."
+  },
+  {
+   "brand": "Sunday Mahjong",
+   "name": "Plum Panda Premium",
+   "img": "sunday-mahjong--plum-panda-premium",
+   "primary": "green",
+   "also": [
+    "purple",
+    "orange"
+   ],
+   "note": "out of Teal & Aqua: background hue ~160-170 (green side of the 195 line); purple border, orange stripe. Mood tag unchanged."
+  },
+  {
+   "brand": "Sunday Mahjong",
+   "name": "Sunday Premium",
+   "img": "sunday-mahjong--sunday-premium",
+   "primary": "green",
+   "also": [
+    "yellow"
+   ],
+   "note": "out of Teal & Aqua: background hue ~160-170; yellow border. Mood tag unchanged."
+  }
+ ],
+ "mood_calls": [
+  {
+   "brand": "Bespoke Mahjong",
+   "name": "Lucky Charms Watercolor",
+   "img": "bespoke-mahjong--lucky-charms-watercolor",
+   "mood": "brights",
+   "note": "NOT Pastels: bright magenta pink, doesn't read as light, \"a pretty bold graphic mat\"."
+  }
+ ],
+ "rules": [
+  "Simple Mats (chip 'Simple'): solids, or a border/frame with a clean plain middle (small center logo fine). A mood tag that REPLACES Pastels/Brights; color sections kept. Amahj mats are Simple (her example).",
+  "A soft/light background with bold, saturated graphic elements (hot pink/magenta, strong black outlines, neon) reads Brights, not Pastels. Judge the overall impression, not the background color.",
+  "Chip order: colors, Neutral & Ivory, Earthy, Dark & Moody, Black & White, Simple, Pastels, Brights, Multicolor Florals, Animal Prints, Holiday, Retired."
+ ]
+}
