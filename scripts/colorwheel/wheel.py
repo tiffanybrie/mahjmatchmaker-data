@@ -56,3 +56,20 @@ if __name__=='__main__':
           {'name':'Lavender layer','hex':'#a8a3e1'},
           {'name':'Light lime layer','hex':'#c8d7a5'}]
     main('papaya-spritz',pins,'Papaya Spritz','where her colors sit on the color wheel')
+
+def mini(key, pins, ws=900):
+    """Small transparent color wheel with numbered pins only (for the merged Her colors slide)."""
+    import math, colorsys
+    pad=60; S=ws+2*pad; im=Image.new('RGBA',(S,S),(0,0,0,0)); d=ImageDraw.Draw(im)
+    wl=wheel(ws, v=0.97); cream=Image.new('RGBA',(ws,ws),(246,233,223,255)); wl=Image.composite(Image.blend(wl,cream,0.18),wl.copy(),wl.split()[3])
+    sh=Image.new('RGBA',(S,S),(0,0,0,0)); ImageDraw.Draw(sh).ellipse([pad,pad+10,pad+ws,pad+ws+10],fill=(120,60,30,45))
+    from PIL import ImageFilter; im.alpha_composite(sh.filter(ImageFilter.GaussianBlur(8))); im.alpha_composite(wl,(pad,pad))
+    d.ellipse([pad,pad,pad+ws,pad+ws],outline=(255,255,255),width=12)
+    num=ImageFont.truetype(GF+'Lora-Variable.ttf',44); cx=cy=S/2
+    for i,p in enumerate(pins):
+        hexc=p['hex'].lstrip('#'); r,g,b=[int(hexc[k:k+2],16)/255 for k in (0,2,4)]; h,sat,v=colorsys.rgb_to_hsv(r,g,b)
+        aa=math.radians(h*360-90); rr=sat*(ws/2-8); px=cx+rr*math.cos(aa); py=cy+rr*math.sin(aa)
+        d.ellipse([px-50,py-50,px+50,py+50],fill=(int(r*255),int(g*255),int(b*255)),outline=(255,255,255),width=10)
+        d.ellipse([px-58,py-58,px+58,py+58],outline=(5,70,137),width=4)
+        d.text((px,py),str(i+1),font=num,fill=(255,255,255),anchor='mm')
+    out=R+f'assets/colorwheels/{key}-color-wheel-mini.png'; im.save(out); return out
