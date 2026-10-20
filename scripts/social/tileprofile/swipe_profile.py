@@ -20,7 +20,7 @@ P = dict(name='Papaya Spritz', brand='Oh My Mahjong', photo='assets/tiles/album/
          active='Launching Wed 10/21', looking='A mat that can keep up at happy hour',
          pills=['Prosecco', 'Golden hour', 'Pink mats', 'Patio season'],
          love='Bubbles and scalloped edges',
-         prompt_q='My most irrational fear', prompt_a='Being called fall décor. I\'m a spritz, not a pumpkin.',
+         prompt_q='My most irrational fear', prompt_a='Being the designated driver.',
          basics=[('#de7e30', 'Papaya backs'), ('#a8a3e1', 'Lavender layer'), ('#c8d7a5', 'Light lime layer'), ('#ef7aa0', 'Pink faces')],
          matches=50)
 
