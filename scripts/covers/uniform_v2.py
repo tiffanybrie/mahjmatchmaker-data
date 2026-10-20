@@ -32,6 +32,8 @@ def panel_obs(a):  # median panel colour from the ring between the frame and the
     return np.median(px[keep], axis=0)
 VAULT = {'lilac-soiree', 'preppy-soiree', 'shangri-la', 'spring-love', 'sunday-tile-set'}
 def content_mask(k=''):
+    if k == 'coquette':   # keep all four bows + swoosh lines whole; only the text area is repainted
+        m = np.zeros((1350, 1080), bool); m[380:1000, 262:818] = True; m[905:985, 252:845] = True; m[990:1060, 345:735] = True; return m
     m = np.zeros((1350, 1080), bool); m[330:1000, 185:895] = True; m[990:1060, 345:735] = True
     if k != 'coquette': m[540:800, 140:945] = True   # Coquette's ribbon tails run down the sides
     if k in VAULT: m[960:1062, 150:930] = True
