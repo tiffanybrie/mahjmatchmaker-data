@@ -140,6 +140,16 @@
     "blue"
    ],
    "note": "Purple (lavender) primary, also Blue, accent Green (light green), mood Pastels."
+  },
+  {
+   "brand": "Oh My Mahjong",
+   "name": "Darjeeling",
+   "img": "oh-my-mahjong--darjeeling",
+   "primary": "blue",
+   "also": [
+    "green"
+   ],
+   "note": "\"a true multi\": Blue primary with Green as co-primary (sorts with the primaries in Green); accents Red, Orange, Purple, Yellow, Earthy (brown). Not added to Multicolor Florals: by eye it's a chinoiserie garden scene with peacock-feather border, not a floral."
   }
  ],
  "mood_calls": [
@@ -239,6 +249,10 @@
   "oh-my-mahjong--chantilly": [
    "purple",
    "blue"
+  ],
+  "oh-my-mahjong--darjeeling": [
+   "blue",
+   "green"
   ]
  },
  "accent_calls": {
@@ -247,6 +261,18 @@
    "orange"
   ],
   "oh-my-mahjong--chantilly": [
+   "green"
+  ],
+  "oh-my-mahjong--darjeeling": [
+   "red",
+   "orange",
+   "purple",
+   "yellow",
+   "earthy"
+  ]
+ },
+ "coprimary": {
+  "oh-my-mahjong--darjeeling": [
    "green"
   ]
  }

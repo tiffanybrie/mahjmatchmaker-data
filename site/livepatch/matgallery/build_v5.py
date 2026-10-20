@@ -423,7 +423,8 @@ vis.sort(key=lambda x: (x['brand'] == 'Mahjong Studios', x['brand'].lower(), x['
 active = [x for x in vis if not x['ret']]
 retired = [x for x in vis if x['ret']]
 cnt = {c: sum(1 for x in active if c in x['secs'] or c in x['acc']) for c, _ in COL}
-tiers = {c: {'primary': sum(1 for x in active if x['secs'][0] == c), 'also': sum(1 for x in active if c in x['secs'][1:]),
+COP = V5.get('coprimary', {})
+tiers = {c: {'primary': sum(1 for x in active if x['secs'][0] == c or c in COP.get(x['img'], [])), 'also': sum(1 for x in active if c in x['secs'][1:] and c not in COP.get(x['img'], [])),
              'accent': sum(1 for x in active if c in x['acc'])} for c, _ in COL}
 cnt_with_ret = {c: sum(1 for x in vis if c in x['secs'] or c in x['acc']) for c, _ in COL}
 cnt['retired'] = len(retired)
@@ -454,7 +455,7 @@ json.dump({'new53_added': added53, 'new53_hidden': hidden53, 'new53_sections': {
 CSS = open(os.path.join(HERE, 'style.css')).read() + '.mmg-hint{font-size:.85em;color:#6f655d;margin:.2em 0 .6em}\n.mmg-combo .mmg-empty{display:none}\n.mmg-chip.mmg-tog{border-style:dashed}\n.mmg-watch{margin-top:auto;align-self:flex-start;border:1.5px solid #9a8f86;color:#6f655d;font-size:.68em;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:10px}\n.mmg-chip.mmg-tog[aria-pressed="true"]{border-style:solid}\n'
 # Image swaps (Tiffany Oct 20): use a clean flat photo when a store's photo has text/cropping
 IMG_ALIAS = {'four-winds-social--fws-x-mahj-mood-collab-beyond-the-ribbon': 'mahj-mood--beyond-the-ribbon-four-winds-social-collab-mat-benefitting-pink-fund-pre-order-ships-end-of-december'}
-data = json.dumps([[IMG_ALIAS.get(x['img'], x['img']), x['name'], x['brand'], x['url'], x['ret'], x['secs'], x['code'], 1 if x['img'] in WATCH else 0, x['acc']] for x in vis],
+data = json.dumps([[IMG_ALIAS.get(x['img'], x['img']), x['name'], x['brand'], x['url'], x['ret'], x['secs'], x['code'], 1 if x['img'] in WATCH else 0, x['acc']] + ([V5['coprimary'][x['img']]] if x['img'] in V5.get('coprimary', {}) else []) for x in vis],
                   separators=(',', ':'), ensure_ascii=False).replace('</', '<\\/')
 chips = ('<button type="button" class="mmg-chip" data-f="all" aria-pressed="true">All / Clear</button>'
          + ''.join(f'<button type="button" class="mmg-chip" data-f="{c}" aria-pressed="false">{html.escape(l)}</button>' for c, l in COL if cnt[c])
@@ -469,7 +470,7 @@ secs += '<section class="mmg-sec" data-c="retired"><h2 class="mmg-h">Retired mat
 JS = r"""(function(){var r=document.currentScript.parentNode,R=JSON.parse(r.querySelector('script[type="application/json"]').textContent),B='https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@__C__/assets/mats/gallery/',f='all',br='',hr=true;
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function card(x,i){var shop=x[3]?'<a class="mmg-shop" href="'+esc(x[3])+'" target="_blank" rel="sponsored noopener">Shop the mat</a>':(x[4]?'<span class="mmg-ret">Retired</span>':(x[7]?'<span class="mmg-watch">One to watch</span>':''));var img='<img src="'+B+x[0]+'.webp" alt="'+esc(x[2]+' '+x[1])+' mahjong mat" loading="lazy" decoding="async" width="640" height="640">';return '<li class="mmg-card" data-b="'+esc(x[2])+'" data-i="'+i+'"'+(x[4]?' data-r="1"':'')+'>'+(x[3]?'<a class="mmg-img" href="'+esc(x[3])+'" target="_blank" rel="sponsored noopener">'+img+'</a>':'<span class="mmg-img">'+img+'</span>')+'<div class="mmg-body"><span class="mmg-brand">'+esc(x[2])+'</span><span class="mmg-name">'+esc(x[1])+'</span>'+(x[6]?'<a class="mmg-code" href="'+esc(x[6])+'">'+esc(x[2])+' guide</a>':'')+shop+'</div></li>'}
-function has(x,c){return x[5].indexOf(c)>-1||x[8].indexOf(c)>-1}function tier(x,C){if(C.indexOf(x[5][0])>-1&&C.every(function(c){return x[5].indexOf(c)>-1}))return 0;if(C.every(function(c){return x[5].indexOf(c)>-1})){var p=0;C.forEach(function(c){p=Math.max(p,x[5].indexOf(c))});return 1+Math.min(p-1,3)/10}return 2}
+function has(x,c){return x[5].indexOf(c)>-1||x[8].indexOf(c)>-1}function tier(x,C){var pr=[x[5][0]].concat(x[9]||[]);if(C.some(function(c){return pr.indexOf(c)>-1})&&C.every(function(c){return x[5].indexOf(c)>-1}))return 0;if(C.every(function(c){return x[5].indexOf(c)>-1})){var p=0;C.forEach(function(c){p=Math.max(p,x[5].indexOf(c))});return 1+Math.min(p-1,3)/10}return 2}
 r.querySelectorAll('.mmg-sec').forEach(function(s){var c=s.dataset.c,h='';var L=[];R.forEach(function(x,i){if(c==='retired'?x[4]:has(x,c))L.push(i)});L.sort(function(a,b){function k(i){var x=R[i];return(x[2]==='Mahjong Studios'?0.5:0)+(c==='retired'?0:tier(x,[c]))}return k(a)-k(b)||a-b});L.forEach(function(i){h+=card(R[i],i)});s.querySelector('.mmg-grid').innerHTML=h});
 var chips=r.querySelectorAll('.mmg-chip[data-f]'),tog=r.querySelector('.mmg-tog'),sel=r.querySelector('.mmg-brand-sel'),tot=r.querySelector('.mmg-total'),cmb=r.querySelector('.mmg-combo'),S=[],LB={};
 chips.forEach(function(x){LB[x.dataset.f]=x.textContent});
