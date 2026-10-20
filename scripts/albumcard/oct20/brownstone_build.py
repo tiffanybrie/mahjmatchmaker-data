@@ -4,8 +4,8 @@
 - l-final-brownstone (Oct 18 12:20pm): cancel Jardin, Sedona, Fall Fling, Saddles & Silk, Handbook Plaid, Nantucket Basket,
   Nantucket Rope, Harvest Plaid, Midnight Garden  -> 31 cards.
 Resolution: higher-res brand photos where the brand's Shopify page has the same photo bigger (hd_fetch.py), else EDSR x4
-super-resolution (<S>EDSR_x4.pb) for the sources whose card crop was under ~830px (4 Anders Ruff mats at 745px, Chinoiserie Round,
-and the lower-left crops of Rattan, YOTD White, The Hunt Club).
+super-resolution (<S>EDSR_x4.pb) for the 745px Anders Ruff photos and Chinoiserie Round; photos too small for the 72% album
+close-up (under 1250px) now show the whole mat instead of an upscaled corner.
 Logo: tile_brand Anders Ruff (assets/brand/partner-logos/ar.png) instead of the default OMM flag.
 Racks (PROPOSAL, needs her OK; no final_lists entry): tile racks = PLM Oak + the face colours (B&B Lilac butterflies,
 B&B Moss olive leaves, B&B Wine protea); mat racks = config/mat-racks-picks.json registry when listed, else matpick.py.
@@ -43,13 +43,12 @@ def crop(im, closeup=False):
     if closeup:
         cw = min(Wd, int(H * 0.973)); ch = int(cw / 0.973); x0 = (Wd - cw) // 2; y0 = (H - ch) // 2
         return im.crop((x0, y0, x0 + cw, y0 + ch))
-    z = .72 if Wd >= 900 else 1.0
+    z = .72 if Wd * .72 >= 900 else 1.0  # Oct 20: never zoom a photo below ~900px of mat (her low-res note); smaller photos show the whole mat
     cw = int(Wd * z); ch = int(cw / 0.973)
     if ch > H: ch = H; cw = int(ch * 0.973)
     return im.crop((0, H - ch, cw, H))
 def source(k, orig_w):
     """-> (cropped PIL image, how)"""
-    if os.path.exists(HD + k + '-crop.jpg'): return Image.open(HD + k + '-crop.jpg').convert('RGB'), 'EDSR x4 of the album crop'
     if os.path.exists(HD + k + '.jpg'):
         im = Image.open(HD + k + '.jpg').convert('RGB')
         if k in CLOSEUP: return crop(im, True), f'hi-res {im.size[0]}px'
