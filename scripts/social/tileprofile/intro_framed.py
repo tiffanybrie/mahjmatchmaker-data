@@ -11,9 +11,10 @@ from PIL import Image
 import swipe_profile as SP
 from common import css, url, load, R
 key = sys.argv[1]; P, S = load(key); e = html.escape
-SRC = f'{R}assets/social/{key}-launch/intro'; OUT = f'{R}assets/social/{key}-launch/intro-framed'; H = f'{R}assets/social/{key}-launch/html'
+SRC = f'{R}assets/social/{key}-launch/intro'; OUT = f'{R}assets/social/{key}-launch/intro-framed' + ('-open' if os.environ.get('OPEN') == '1' else ''); H = f'{R}assets/social/{key}-launch/html'
 CARD = f'{R}assets/colorcards/{key}/00-{key}-mahjong-tiles-profile-d-card@2x.png'
 os.makedirs(OUT, exist_ok=True); TMP = os.path.dirname(os.path.abspath(__file__)) + '/html'
+OPEN = os.environ.get('OPEN') == '1'   # Option B (Tiffany Oct 20): same slides, not in the card from slide 2 on
 CX, CY, CW, CH = 130, 22, 820, 1281
 VER = lambda n: f'<svg width="{n}" height="{n}" viewBox="0 0 24 24"><path d="M12 21.5C5.5 16.6 2 13.2 2 8.9 2 5.9 4.4 3.5 7.3 3.5c1.9 0 3.6 1 4.7 2.5 1.1-1.5 2.8-2.5 4.7-2.5 2.9 0 5.3 2.4 5.3 5.4 0 4.3-3.5 7.7-10 12.6z" fill="#d6608c" stroke="#fff" stroke-width="1.2"/><path d="M7.6 11.3l3 3 5.8-5.8" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 HT = lambda n: f'<svg width="{n}" height="{n}" viewBox="0 0 24 24"><path d="M12 21.5C5.5 16.6 2 13.2 2 8.9 2 5.9 4.4 3.5 7.3 3.5c1.9 0 3.6 1 4.7 2.5 1.1-1.5 2.8-2.5 4.7-2.5 2.9 0 5.3 2.4 5.3 5.4 0 4.3-3.5 7.7-10 12.6z" fill="#c8325f"/></svg>'
@@ -110,9 +111,9 @@ def page(n):
     else:
         inner = f'<div style="position:absolute;inset:0;background:var(--cream)"></div>{NATIVE[n]}<div class="bars">{bars}</div>'
     return f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 1350, S['col'])}
-html,body{{background:#f6e9df}}
-.card{{position:absolute;left:{CX}px;top:{CY}px;width:{CW}px;height:{CH}px;background:#fff;border-radius:38px;overflow:hidden;
-  box-shadow:0 26px 60px rgba(5,40,90,.18),0 4px 12px rgba(5,40,90,.09)}}
+html,body{{background:{'var(--cream)' if OPEN else '#f6e9df'}}}
+.card{{position:absolute;left:{CX}px;top:{CY}px;width:{CW}px;height:{CH}px;background:{'var(--cream)' if OPEN else '#fff'};border-radius:{0 if OPEN else 38}px;overflow:{'visible' if OPEN else 'hidden'};
+  box-shadow:{'none' if OPEN else '0 26px 60px rgba(5,40,90,.18),0 4px 12px rgba(5,40,90,.09)'}}}
 .bars{{position:absolute;left:24px;right:24px;top:20px;display:flex;gap:9px;z-index:3}}
 .bars i{{flex:1;height:7px;border-radius:4px}}
 .sign{{position:absolute;left:0;right:0;bottom:78px;display:flex;justify-content:center;align-items:center;gap:12px}}
@@ -120,8 +121,8 @@ html,body{{background:#f6e9df}}
 .sign span{{font:700 16px Bit;letter-spacing:.22em;text-transform:uppercase;color:#c8325f;padding-top:4px}}
 .btns{{position:absolute;left:0;right:0;top:{CY + CH - 56}px;display:flex;justify-content:center;align-items:center;gap:120px}}
 </style></head><body>
-<div style="position:absolute;right:-190px;top:-170px;width:650px;height:650px;border-radius:50%;background:#f9dccf"></div>
-<div style="position:absolute;left:-170px;bottom:-200px;width:530px;height:530px;border-radius:50%;background:#efdccd"></div>
+{'' if OPEN else '''<div style="position:absolute;right:-190px;top:-170px;width:650px;height:650px;border-radius:50%;background:#f9dccf"></div>
+<div style="position:absolute;left:-170px;bottom:-200px;width:530px;height:530px;border-radius:50%;background:#efdccd"></div>'''}
 <div class="card">{inner}
  <div class="sign"><img src="{url('assets/brand/mahjmatchmaker-wordmark-notag.png')}"><span>Dating profile</span></div>
 </div>
@@ -131,11 +132,12 @@ html,body{{background:#f6e9df}}
 async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch(); pg = await b.new_page(viewport={'width': 1080, 'height': 1350}, device_scale_factor=2)
-        for n in range(1, 7):
+        for n in range(2 if OPEN else 1, 7):
             hp = f'{TMP}/framed-{n}.html'; open(hp, 'w').write(page(n))
             await pg.goto('file://' + hp); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready')
             png = f'{TMP}/framed-{n}@2x.png'; await pg.screenshot(path=png)
             Image.open(png).convert('RGB').resize((1080, 1350), Image.LANCZOS).save(f'{OUT}/{n}.jpg', quality=93)
         await b.close()
-    shutil.copy(f'{SRC}/7.jpg', f'{OUT}/7.jpg')   # slide 7 = plain graphic, not in the card
+    shutil.copy(f'{SRC}/7.jpg', f'{OUT}/7.jpg')
+    if OPEN: shutil.copy(OUT.replace('-open', '') + '/1.jpg', f'{OUT}/1.jpg')   # slide 1 = the same profile card   # slide 7 = plain graphic, not in the card
 asyncio.run(main()); print(OUT)
