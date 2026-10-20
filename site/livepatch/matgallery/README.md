@@ -22,3 +22,11 @@ Rebuild: `python3 build_v2.py <mat-audit report.csv> <phash pairs.json> > matgal
 - Within every section: primary-color mats first, "also" mats below, Mahjong Studios last.
 - Blue vs Teal & Aqua kept separate; her "blue" calls routed by shade (borderline ones measured: hue ~195 deg is the line).
 - Dead links: 6 Mahjong by SI mats (Mahjong Co no longer sells mats; no other store found) show no shop button but are not retired; OMM Cognac retired; Confetti Lemon Lime folded into Confetti – Green.
+
+## v4 (Oct 20 late): `matgallery-v4.html`, built by `build_v4.py` (same args)
+- Brown & Tan merged into Earthy. Tonal re-check of every Neutral/Earthy/Dark/B&W mat (crosstags `tonal_fix`, plus `also.dark` for jewel-tone darks).
+- Plain Multicolor retired; mood tags Pastels (soft/light, single or multi) and Brights (bold, saturated). Every mat without a Neutral/Earthy/Dark/B&W tag is in one of them. Multicolor Florals kept.
+- Holiday = real holiday motifs only; 14 year-round red/green/plaid mats moved to their colors (crosstags `holiday_off`). Jungle mats are Green first (crosstags `jungle`).
+- OMM Cognac: not retired; no shop button; "One to watch" badge. Rule: label Retired only when confirmed gone.
+- Chip order: colors, Neutral & Ivory, Earthy, Dark & Moody, Black & White, Pastels, Brights, Multicolor Florals, Animal Prints, Holiday, Retired.
+- FYM family mapping for the new sections is written up in config/tiffany-color-notes/2026-10-20-v4-calls.json (`fym_family_map`); FYM code not changed.

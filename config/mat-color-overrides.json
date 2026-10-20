@@ -361,22 +361,24 @@
    "by": "tiffany-chat-2026-10-20",
    "note": "light lime reads green"
   },
-  "www.ohmymahjong.com/astor-mat-w-tube": {
+  "luckydaughters.com/astor-place-mat": {
    "primary": "yellow",
-   "secondary": [],
+   "secondary": [
+    "brown"
+   ],
    "tone": "muted",
    "holiday": false,
    "skip": false,
-   "image": "oh-my-mahjong--astor",
-   "light": 0.351,
-   "chroma": 0.545,
+   "image": "lucky-daughters--astor-place",
+   "light": 0.624,
+   "chroma": 0.354,
    "src": "claude-look",
    "by": "tiffany-chat-2026-10-20",
    "also": [
     "green",
     "brown"
    ],
-   "note": "Astor Place; moody/ochre, earthy"
+   "note": "She said OMM 'Astor (Astor Place)'; the moody ochre/olive mat is Lucky Daughters Astor Place (OMM Astor is a blue floral), so the call is applied there (fixed in v4)"
   },
   "fourwindssocial.com/fws-x-225mahjong-collab-fleur-the-win-mahjong-mat": {
    "primary": "yellow",
@@ -1553,6 +1555,44 @@
     "pink"
    ],
    "note": "the teal Palm Beach American"
+  },
+  "maisonmahj.com/the-house-mat-checkmate-edition": {
+   "primary": "green",
+   "secondary": [
+    "red"
+   ],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "maison-mahj--the-checkmate-house",
+   "light": 0.159,
+   "chroma": 0.316,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "dark"
+   ],
+   "note": "deep hunter green; not Black & White"
+  },
+  "www.bespokemahjong.com/cheetah-couture-instructional-mat-copy": {
+   "primary": "green",
+   "secondary": [
+    "yellow",
+    "neutral"
+   ],
+   "tone": "blend",
+   "holiday": false,
+   "skip": false,
+   "image": "bespoke-mahjong--vintage-floral-mat",
+   "light": 0.692,
+   "chroma": 0.391,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "yellow",
+    "florals"
+   ],
+   "note": "out of Black & White"
   }
  }
 }

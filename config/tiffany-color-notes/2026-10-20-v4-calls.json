@@ -1,0 +1,43 @@
+{
+ "source": "Tiffany, Oct 20 late, Mat Gallery v4 (relayed by the coordinator). Her calls win.",
+ "corrections": [
+  {
+   "brand": "Maison Mahj",
+   "name": "The Checkmate House",
+   "primary": "green",
+   "also": [
+    "dark"
+   ],
+   "note": "deep hunter green; not Black & White"
+  },
+  {
+   "brand": "Bespoke Mahjong",
+   "name": "Vintage Floral",
+   "primary": "green",
+   "also": [
+    "yellow",
+    "florals"
+   ],
+   "note": "out of Black & White"
+  }
+ ],
+ "rules": [
+  "Brown & Tan merged into Earthy (no Brown & Tan section).",
+  "Neutral & Ivory = light & quiet (cream, ivory, soft gray, linen). Earthy = muted/low-saturation incl. browns, tan, olive, rust, tortoise, leather. Dark & Moody = deep rich saturated darks (navy, emerald, burgundy, black-ground florals; jewel box, not muted). Black & White = crisp graphic contrast (stripes, checks, toile in black/white).",
+  "Holiday = true Christmas/holiday motifs only (Santa, trees, ornaments, wreaths, candy canes, snowflakes, reindeer, gifts, 'merry/noel/sleigh' text, Hanukkah, fall/Valentine seasonal motifs). Red/green/plaid mats with no motifs are year-round and go in their color sections.",
+  "Only label a mat Retired when it is confirmed gone for good; a mat missing from a store's listing gets no shop button and no Retired label.",
+  "Jungle mats (dense tropical foliage / jungle scenes) are Green first, other colors as also-tags (crosstags 'jungle'). Her own calls still win (e.g. Mahj & Moon Tropical Leopard stays Purple).",
+  "Multi-Pastel replaced by a broader 'Pastels' section: any mat whose overall palette is pastel (soft, light, low-to-mid saturation), single-color or multi; extra tag only. Think Sorbet, Luminaire, Taylor, Coquette tile sets.",
+  "Mood tags: Pastels (soft/light, single or multi) and Brights (bold, saturated, clean). Every mat without a Neutral/Earthy/Dark/B&W tag lands in Pastels or Brights. The plain Multicolor section is retired (its mats moved by tone); Multicolor Florals stays.",
+  "Chip order: colors, Neutral & Ivory, Earthy, Dark & Moody, Black & White, Pastels, Brights, Multicolor Florals, Animal Prints, Holiday, Retired."
+ ],
+ "fym_family_map": {
+  "about": "Gallery section -> Find Your Match color filter family (scripts/colors/matcolors.py FYM_MAP). Not changed in code yet; apply on the next FYM build.",
+  "earthy": "brown family -> FYM 'orange' chip today (FYM_MAP brown->orange); proposal: add an FYM 'earthy' chip or map earthy->neutral for muted greens/olives",
+  "brown": "merged into earthy",
+  "dark": "dark",
+  "neutral": "neutral",
+  "bw": "neutral (FYM_MAP bw->neutral)",
+  "holiday_moves": "the 13 year-round mats moved out of Holiday (config/mat-gallery-crosstags.json 'holiday_off') should drop the holiday flag in FYM too"
+ }
+}

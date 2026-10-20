@@ -1,5 +1,5 @@
 {
- "about": "Mat Gallery v2 extra sections from Claude looking at the photos (Oct 20), after Tiffany said Red and Orange & Peach were too thin. Added on top of each mat's primary; Tiffany's calls in mat-color-overrides.json still set the primary. Holiday mats never get extra sections. 'florals' = multi-color floral designs: they show in Multicolor Florals in place of Multicolor (Aria, Calista, Tova keep their strong color too); 'florals_only' = floral mats with no single strong color, shown only in Multicolor Florals. v3 (Oct 20 late): 'also.earthy' = muted, low-saturation mats picked from the color data (tone muted) and checked by eye; 'also.animal' = leopard/cheetah/zebra/tiger/giraffe/cowhide/fawn prints, found by name + looking at every mat; 'also.pastel' = soft multi-color pastel mats (Multi-Pastel), checked by eye; 'primary_fix' = Claude's gallery-only primary corrections (Amahj Blue, Citron + Lilac was in Pink by mistake: pale blue-mint center, citron border, lilac field).",
+ "about": "Mat Gallery v2 extra sections from Claude looking at the photos (Oct 20), after Tiffany said Red and Orange & Peach were too thin. Added on top of each mat's primary; Tiffany's calls in mat-color-overrides.json still set the primary. Holiday mats never get extra sections. 'florals' = multi-color floral designs: they show in Multicolor Florals in place of Multicolor (Aria, Calista, Tova keep their strong color too); 'florals_only' = floral mats with no single strong color, shown only in Multicolor Florals. v3 (Oct 20 late): 'also.earthy' = muted, low-saturation mats picked from the color data (tone muted) and checked by eye; 'also.animal' = leopard/cheetah/zebra/tiger/giraffe/cowhide/fawn prints, found by name + looking at every mat; 'also.pastel' = soft multi-color pastel mats (Multi-Pastel), checked by eye; 'primary_fix' = Claude's gallery-only primary corrections (Amahj Blue, Citron + Lilac was in Pink by mistake: pale blue-mint center, citron border, lilac field). v4: Brown & Tan merged into Earthy; 'tonal_fix' = Claude's re-check of every Neutral/Earthy/Dark/B&W mat against Tiffany's test (replaces those four tags only); 'holiday_off' = holiday-tagged mats with no Christmas/holiday motifs, moved to their color sections (year-round). v4: 'also.pastel' is now the broad Pastels section (any mat whose overall palette is pastel, single-color or multi; picked from the tone/lightness data and checked by eye). v4 Brights/Pastels pass: 'also.dark' = deep jewel-tone mats (navy, emerald, burgundy, black-ground florals) found while sorting the Brights bucket, so they sit in Dark & Moody instead of Brights.",
  "updated": "2026-10-20",
  "also": {
   "red": [
@@ -105,7 +105,6 @@
    "mahjong-row-co--spring-awakening-p",
    "maison-mahj--the-espresso-city",
    "maison-mahj--the-olive-city",
-   "oh-my-mahjong--astor",
    "oh-my-mahjong--cognac",
    "oh-my-mahjong--dapper-1-retired",
    "oh-my-mahjong--palomino",
@@ -296,13 +295,151 @@
    "wren-mats--palm-beach",
    "wren-mats--sitting-sea-side",
    "mahjong-studios--looking-glass",
-   "mahjong-studios--pastel-luxe-mahjong-mat-33-x-33-ships-rolled"
+   "mahjong-studios--pastel-luxe-mahjong-mat-33-x-33-ships-rolled",
+   "amahj--pink-amahj-game-mat",
+   "amanda-toppe--blue-willow",
+   "amanda-toppe--petalwood",
+   "amanda-toppe--pink-orchids",
+   "anders-ruff--a-mahjong-soir-e-mahjong-mat",
+   "anders-ruff--bluebonnet-trails-boots-mahjong-mat",
+   "anders-ruff--botanical-garden-mahjong-mat",
+   "anders-ruff--coastal-charm-mahjong-mat",
+   "anders-ruff--floral-trellis-pink-mahjong-mat",
+   "anders-ruff--hamptons-hydrangea-mahjong-mat",
+   "anders-ruff--house-of-hydrangea",
+   "anders-ruff--nantucket-manor-mahjong-mat",
+   "anders-ruff--palm-springs-mahjong-mat",
+   "bam-bird-boutique--bandana-blue-pink-accents",
+   "bam-bird-boutique--boots-bubbles-in-periwinkle",
+   "bam-bird-boutique--classic-neoprene-teal",
+   "bam-bird-boutique--east-meets-west-purple",
+   "bam-bird-boutique--east-meets-west-sky-blue",
+   "bam-bird-boutique--the-pink-classic-neoprene-mahjong-mat",
+   "bam-bird-boutique--vintage-plum",
+   "bespoke-mahjong--flirty-leopards-mint-julep",
+   "bespoke-mahjong--tartan-plaid-in-preppy-pink",
+   "bespoke-mahjong--yotd-pink",
+   "bird-bamboo--danay",
+   "bird-bamboo--the-paradise-mahjong-mat-lovely-lavender",
+   "bird-bamboo--the-pastel-deco-mahjong-mat",
+   "britt-mills--daphne-neoprene-mahjong-mat",
+   "charleston-mahjong-club--cabana-club",
+   "charleston-mahjong-club--reversible-vegan-leather-blush-pink-cornflower-blue",
+   "charleston-mahjong-club--reversible-vegan-leather-bight-pink-purple",
+   "charleston-mahjong-club--reversible-vegan-leather-mint-green-sea-foam-green",
+   "charleston-mahjong-club--reversible-vegan-leather-sea-foam-green-dusty-blue",
+   "charleston-mahjong-club--the-club-mat-pink-white-striped",
+   "hutch-nook--pink-rose",
+   "let-s-be-besties--coral-lake",
+   "let-s-be-besties--ocean-palms",
+   "let-s-mahj-on--signature-dragon-mat-light-pink",
+   "let-s-mahj-on--signature-logo-mat-light-pink",
+   "loveshackfancy--fleur",
+   "luxe-mahjong--the-fairway",
+   "mahj-moon--botanical-butterfly",
+   "mahj-moon--celestial-sun",
+   "mahj-moon--cherry-blossom",
+   "mahj-moon--elephant-paisley",
+   "mahj-moon--english-garden-gingham",
+   "mahj-moon--green-menagerie-toile",
+   "mahj-moon--leopard-american",
+   "mahj-moon--palm-tree",
+   "mahj-moon--retro-waves",
+   "mahj-moon--retro-waves-2",
+   "mahj-moon--the-sun-tarot",
+   "mahj-mood--pink-lemonade",
+   "mahj-squad--blue-chinoiserie-mahjong-mat",
+   "mahj-squad--pink-floral-chinoiserie",
+   "mahjong-register--coral-aqua-double-sided-leatherette",
+   "maison-mahj--the-chalet",
+   "middle-main-mahjong--all-season-s-robin-s-egg-blue-mat",
+   "middle-main-mahjong--june-bride",
+   "middle-main-mahjong--martha-mae-vintage-quilt",
+   "middle-main-mahjong--seabee-avenue-monstera-plant-mat",
+   "middle-main-mahjong--violet-vines-wisteria",
+   "miss-mahjong--bandit-butter-yellow",
+   "miss-mahjong--gingham-mahjong-playing-mat-americana",
+   "miss-mahjong--hydrangea",
+   "miss-mahjong--wild-west-mahjong-playing-mat-americana",
+   "miss-mahjong--wild-west-mahjong-playing-mat-dolly",
+   "my-fair-mahjong--mahjong-mat-brightside-33-x-33",
+   "my-fair-mahjong--confetti-purple",
+   "my-fair-mahjong--prism-pink",
+   "oh-my-mahjong--amethyst-retired",
+   "oh-my-mahjong--chantilly",
+   "oh-my-mahjong--isla",
+   "oh-my-mahjong--luna",
+   "oh-my-mahjong--veranda",
+   "peace-love-mahjong--border-aqua",
+   "peace-love-mahjong--border-lavender",
+   "peace-love-mahjong--border-mango",
+   "peace-love-mahjong--gingham-blue-bird",
+   "peace-love-mahjong--gingham-pink-fling",
+   "peace-love-mahjong--hot-tips-cabana-crush",
+   "peace-love-mahjong--sugarplum-plaid",
+   "royal-mahjong-society--hydrangea",
+   "royal-mahjong-society--shore",
+   "soir-e-all-day--oyster-season",
+   "the-mahjong-line--botanical",
+   "tigre-de-tartan--paige-spearin-mahjong-mat-mahj-and-martinis-special-edition-printing",
+   "virora-mahjong--hiverelle-mahjong-mat",
+   "virora-mahjong--roseveil-mahjong-mat",
+   "wren-mats--blue-stripe",
+   "wren-mats--watercolor-floral",
+   "wren-mats--yellow-umbrella",
+   "mahjong-studios--lemon-lime-mahjong-mat-33in-waterproof-mahjong-table-mat-ships-rolled",
+   "mahjong-studios--pink-blush",
+   "amahj--pink-blue-green-mahjong-game-mat",
+   "hutch-nook--blue-cowboy-boot",
+   "hutch-nook--blue-white-bird",
+   "mahj-squad--palm-springs",
+   "middle-main-mahjong--rebekah-s-wedding-pattern-mat",
+   "tigre-de-tartan--domino-faded-carolina"
   ],
   "purple": [
    "amahj--blue-citron-lilac-mahjong-game-mat"
   ],
   "yellow": [
    "amahj--blue-citron-lilac-mahjong-game-mat"
+  ],
+  "dark": [
+   "anders-ruff--midnight-peacock-mahjong-mat",
+   "bam-bird-boutique--bandana-holiday-green-pink-accents",
+   "bam-bird-boutique--deco-neoprene-mahjong-mat",
+   "bespoke-mahjong--sapphire-blue-garden-mat",
+   "bespoke-mahjong--yotd-plum",
+   "britt-mills--calista-neoprene-mahjong-mat",
+   "britt-mills--eden-leatherette",
+   "britt-mills--enchanted",
+   "britt-mills--enchanted-leatherette",
+   "britt-mills--peacock-garden",
+   "britt-mills--reba",
+   "britt-mills--savannah",
+   "britt-mills--scarlett-neoprene-mahjong-mat",
+   "britt-mills--wren",
+   "golden-pond-mahjong--midori-shadows",
+   "hutch-nook--moody",
+   "let-s-be-besties--the-mariner",
+   "let-s-be-besties--the-speakeasy",
+   "let-s-mahj-on--signature-dragon-mat-navy",
+   "let-s-mahj-on--signature-logo-mat-navy",
+   "mahj-vine--caroline-in-peacock",
+   "mahj-mood--emerald-cove-mat",
+   "mahj-mood--midnight-bloom-mat",
+   "mahjong-by-si--highland-heritage-plaid",
+   "maison-mahj--the-rue-de-paris",
+   "miss-mahjong--deep-green-garden-party-mahjong-playing-mat",
+   "oh-my-mahjong--astor",
+   "oh-my-mahjong--elysium",
+   "oh-my-mahjong--hawthorne",
+   "oh-my-mahjong--jade",
+   "peace-love-mahjong--dark-teal-cocktail-hour",
+   "royal-mahjong-society--crown-jewels",
+   "soir-e-all-day--midnight-garden-club",
+   "that-mahjong-moment--evergreen",
+   "the-mahjong-line--round",
+   "mahjong-studios--jade-peacock-mahjong-mat-ships-rolled",
+   "mahjong-studios--red-year-of-the-horse"
   ]
  },
  "unhold": {
@@ -342,5 +479,152 @@
  ],
  "primary_fix": {
   "amahj--blue-citron-lilac-mahjong-game-mat": "teal"
+ },
+ "tonal_fix": {
+  "britt-mills--glory": [
+   "neutral"
+  ],
+  "britt-mills--ruby": [
+   "dark"
+  ],
+  "four-winds-social--fox-the-houndstooth-mahong": [
+   "dark"
+  ],
+  "let-s-be-besties--diamond-pattern-with-directions": [
+   "neutral"
+  ],
+  "let-s-be-besties--forest-haze": [
+   "neutral"
+  ],
+  "let-s-be-besties--white-pattern-no-10": [
+   "neutral"
+  ],
+  "mahj-moon--equestrian-estate": [
+   "neutral"
+  ],
+  "mahj-moon--garden-toile-round": [
+   "neutral"
+  ],
+  "mahj-moon--strawberry-thief-inspired": [
+   "dark"
+  ],
+  "mahj-moon--william-morris-inspired-round": [
+   "dark"
+  ],
+  "mahj-mood--secret-garden-mat": [
+   "neutral"
+  ],
+  "mahj-squad--bront-collection-thrushcross-grange-mahjong-mat": [
+   "dark",
+   "earthy"
+  ],
+  "mahj-squad--the-gamekeeper-mahjong-mat": [
+   "earthy"
+  ],
+  "mahjong-row-co--ivy-reverie": [
+   "neutral"
+  ],
+  "mahjong-row-co--spring-awakening-p": [
+   "neutral"
+  ],
+  "ozark-mahjongg--winslow-1920-noir": [
+   "bw"
+  ],
+  "sunday-mahjong--coastal-grandma-premium": [
+   "neutral"
+  ],
+  "sweet-jojo-designs--boho-wildflower": [
+   "dark"
+  ],
+  "mahjong-studios--ivory-coast-mahjong-mat-33-x-33-ships-rolled": [
+   "neutral"
+  ]
+ },
+ "holiday_off": {
+  "anders-ruff--tartan-tidings-mahjong-mat": [
+   "red",
+   "green"
+  ],
+  "bam-bird-boutique--bandana-holiday-green-pink-accents": [
+   "green"
+  ],
+  "bespoke-mahjong--double-sided-mat-double-the-fun-bespoke-x-corey-paige-holiday-love-mat-red-green": [
+   "red",
+   "green"
+  ],
+  "bird-bamboo--the-ornamental-mahjong-mat": [
+   "blue"
+  ],
+  "britt-mills--merrywood": [
+   "green",
+   "dark"
+  ],
+  "hip-hip-mahjong--the-house-mahjong-mat": [
+   "earthy",
+   "pink",
+   "green"
+  ],
+  "let-s-be-besties--merry-bright-holiday-prism": [
+   "red",
+   "multi"
+  ],
+  "mahj-tile-haus--coral-and-coast-holiday": [
+   "green",
+   "teal"
+  ],
+  "maison-mahj--the-chalet": [
+   "blue"
+  ],
+  "peace-love-mahjong--candy-cane-lane": [
+   "red",
+   "pink"
+  ],
+  "peace-love-mahjong--merry-striped": [
+   "red"
+  ],
+  "peace-love-mahjong--merry-mix": [
+   "red",
+   "green"
+  ],
+  "sunday-mahjong--festive-plaid-premium": [
+   "red",
+   "green"
+  ]
+ },
+ "jungle": {
+  "bespoke-mahjong--jungle-hot-pink": [
+   "green",
+   "pink"
+  ],
+  "bespoke-mahjong--jungle-turquoise": [
+   "green",
+   "teal"
+  ],
+  "mahj-moon--tropical-hibiscus": [
+   "green",
+   "pink",
+   "teal"
+  ],
+  "anders-ruff--palm-beach-tropical-pink-lime-mahjong-mat": [
+   "green",
+   "pink"
+  ],
+  "anders-ruff--palm-beach-ocean-blue-green-mahjong-mat": [
+   "green",
+   "blue"
+  ],
+  "mahj-moon--blue-tropical-palm": [
+   "green",
+   "teal",
+   "multi"
+  ],
+  "mahj-moon--scalloped-tropical-palm": [
+   "green",
+   "teal"
+  ],
+  "mahj-tile-haus--coral-coast": [
+   "green",
+   "teal"
+  ]
  }
 }
