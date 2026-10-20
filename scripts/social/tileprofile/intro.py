@@ -32,7 +32,7 @@ for (dx, dy, rot, z), c in sorted(zip(_pos, _peek), key=lambda t: t[0][3]):
     fan += (f'<div class="ph" style="position:absolute;left:{450 - 180 + dx}px;top:{dy + 50}px;width:360px;height:450px;border-radius:18px;'
             f'background-image:url({c});box-shadow:0 0 0 8px #fff,0 12px 28px rgba(6,40,90,.18);transform:rotate({rot}deg);z-index:{z}"></div>')
 fan += (f'<div class="ph" style="position:absolute;left:{450 - 220}px;top:10px;width:440px;height:550px;border-radius:22px;z-index:5;'
-        f"background-image:url({url(f'assets/covers/albums/w800/00-{key}-mahjong-tiles-cover.jpg')});box-shadow:0 0 0 10px #fff,0 18px 40px rgba(6,40,90,.24)\"></div>")
+        f"background-image:url({url(next((c for c in [f'assets/covers/albums/v2/00-{key}-mahjong-tiles-cover-uniform.jpg'] if os.path.exists(R + c)), f'assets/covers/albums/w800/00-{key}-mahjong-tiles-cover.jpg'))});box-shadow:0 0 0 10px #fff,0 18px 40px rgba(6,40,90,.24)\"></div>")
 end = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 1350, S['col'])}</style></head><body>
 <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;text-align:center;padding:96px 80px 0">
  <div class="caps" style="font-size:20px;color:#5a6b85">{e(P['name'])} · {e(P['brand'])}</div>
@@ -124,7 +124,7 @@ def bars(h, n):
     h = re.sub(r'<span class="caps"[^>]*>\d · [^<]*</span>', '', h)
     b = ''.join(f'<i style="flex:1;height:7px;border-radius:4px;background:{"#054689" if j == n else "rgba(5,70,137,.16)"}"></i>' for j in range(1, NSL + 1))
     return h.replace('</body>', f'<div style="position:fixed;top:24px;left:72px;right:72px;display:flex;gap:10px;z-index:9">{b}</div></body>', 1)
-pages = {n: (bars(h, n) if h else h) for n, h in pages.items()}
+pages = {n: (bars(h, n) if h and n != 7 else h) for n, h in pages.items()}   # slide 7 is a plain graphic (Oct 20)
 args = ['node', R + 'scripts/social/tileprofile/shot.js', '1080', '1350']
 for n, s in pages.items():
     if s is None: continue

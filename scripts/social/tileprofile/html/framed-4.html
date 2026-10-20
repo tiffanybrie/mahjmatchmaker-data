@@ -1,22 +1,42 @@
 <!doctype html><html><head><meta charset=utf8><style>
+@font-face{font-family:Capra;src:url('file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/Caprasimo.ttf')}
+@font-face{font-family:Hand;src:url('file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/Caveat-Bold.ttf')}
+@font-face{font-family:PF;font-style:italic;font-weight:400;src:url('file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/playfair-display-latin-400-italic.woff2')}
+@font-face{font-family:PF;font-style:italic;font-weight:600;src:url('file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/playfair-display-latin-600-italic.woff2')}
+@font-face{font-family:Bit;font-weight:400;src:url('file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/bitter-latin-400-normal.woff2')}
+@font-face{font-family:Bit;font-weight:600;src:url('file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/bitter-latin-600-normal.woff2')}
 @font-face{font-family:Bit;font-weight:700;src:url('file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/bitter-latin-700-normal.woff2')}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{width:1080px;height:1350px;overflow:hidden;background:#f6e9df}
+html,body{width:1080px;height:1350px;overflow:hidden;background:#f7eee4;color:#054689;font-family:Bit,Georgia,serif}
+:root{--acc:#e0702a;--navy:#054689;--pink:#c8325f;--cream:#f7eee4;--paper:#fbf6ef}
+.caps{font:700 22px Bit;letter-spacing:.22em;text-transform:uppercase}
+.cap{font-family:Capra;font-weight:400;line-height:.95}
+.pf{font-family:PF;font-style:italic}
+.hand{font-family:Hand;color:var(--pink)}
+.rule{height:2px;background:rgba(6,69,135,.18)}
+.chip{background:#fff;border-radius:14px;box-shadow:0 6px 18px rgba(6,40,90,.10);overflow:hidden}
+.chip .sw{width:100%}
+.chip .t{padding:12px 14px 14px}
+.chip .n{font:700 24px Bit;letter-spacing:.04em}
+.chip .r{font:400 18px Bit;color:#5a6b85}
+.chip .h{font:600 18px Bit;color:#8a94a6;letter-spacing:.06em;margin-top:2px}
+.pill{display:inline-block;background:var(--navy);color:#fff;border-radius:999px;font:700 30px Bit;padding:18px 34px}
+.ph{background-size:cover;background-position:center}
+
+html,body{background:#f6e9df}
 .card{position:absolute;left:130px;top:22px;width:820px;height:1281px;background:#fff;border-radius:38px;overflow:hidden;
   box-shadow:0 26px 60px rgba(5,40,90,.18),0 4px 12px rgba(5,40,90,.09)}
 .bars{position:absolute;left:24px;right:24px;top:20px;display:flex;gap:9px;z-index:3}
 .bars i{flex:1;height:7px;border-radius:4px}
-.panel{position:absolute;left:0;right:0;top:0;bottom:142px;overflow:hidden}
-.crop{position:absolute;inset:0;background-size:contain;background-repeat:no-repeat;background-position:center top 0}
-.sign{position:absolute;left:0;right:0;bottom:70px;display:flex;flex-direction:column;align-items:center;gap:4px}
-.sign img{width:230px}
-.sign span{font:700 15px Bit;letter-spacing:.22em;text-transform:uppercase;color:#c8325f}
-.btns{position:absolute;left:0;right:0;top:1251px;display:flex;justify-content:center;align-items:center;gap:120px}
+.sign{position:absolute;left:0;right:0;bottom:78px;display:flex;justify-content:center;align-items:center;gap:12px}
+.sign img{width:200px}
+.sign span{font:700 16px Bit;letter-spacing:.22em;text-transform:uppercase;color:#c8325f;padding-top:4px}
+.btns{position:absolute;left:0;right:0;top:1247px;display:flex;justify-content:center;align-items:center;gap:120px}
 </style></head><body>
 <div style="position:absolute;right:-190px;top:-170px;width:650px;height:650px;border-radius:50%;background:#f9dccf"></div>
 <div style="position:absolute;left:-170px;bottom:-200px;width:530px;height:530px;border-radius:50%;background:#efdccd"></div>
-<div class="card"><div class="bars"><i style="background:#d6deea"></i><i style="background:#d6deea"></i><i style="background:#d6deea"></i><i style="background:#054689"></i><i style="background:#d6deea"></i><i style="background:#d6deea"></i><i style="background:#d6deea"></i></div><div class="panel" style="background:#f7efe4"><div class="crop" style="background-image:url(file:///home/claude/mahjmatchmaker-data/assets/social/papaya-spritz-launch/intro/4.jpg)"></div><div style="position:absolute;left:0;right:0;top:0;height:48px;background:#f7efe4"></div></div>
- <div class="sign"><img src="file:///home/claude/mahjmatchmaker-data/assets/brand/mahjmatchmaker-wordmark-notag.png"><span>Dating profiles for tile sets</span></div>
+<div class="card"><div style="position:absolute;inset:0;background:var(--cream)"></div><div class="caps" style="position:absolute;left:36px;top:48px;font-size:17px;color:#5a6b85">Papaya Spritz · her profile</div><div class="cap" style="position:absolute;left:36px;top:82px;font-size:72px;white-space:nowrap">Her best features</div><div style="position:absolute;left:0px;top:196px;width:820px;"><div class="caps" style="font-size:21px;color:var(--pink);text-align:center;white-space:nowrap">The dancing dragons</div><div style="display:flex;justify-content:center;gap:44px;margin-top:16px"><img src="file:///home/claude/mahjmatchmaker-data/assets/tiles/faces/papaya-spritz/clean/dragon-coral.png" style="width:250px;display:block"><img src="file:///home/claude/mahjmatchmaker-data/assets/tiles/faces/papaya-spritz/clean/dragon-green.png" style="width:250px;display:block"></div><div style="margin-top:14px"><div class="pf" style="font-size:31px;line-height:1.22;color:#3c4f73;text-align:center">My favorite dragons, and they come as a pair</div></div></div><div style="position:absolute;left:36px;top:676px;width:748px;display:flex;justify-content:space-between"><div style="display:flex;flex-direction:column;align-items:center;width:249px"><div class="caps" style="font-size:21px;color:var(--pink);text-align:center;white-space:nowrap">The crane</div><div style="margin-top:14px"><img src="file:///home/claude/mahjmatchmaker-data/assets/tiles/faces/papaya-spritz/clean/crane.png" style="width:212px;display:block"></div><div style="margin-top:14px"><div class="pf" style="font-size:27px;line-height:1.22;color:#3c4f73;text-align:center">Her gray-crowned<br>crane bird bam</div></div></div><div style="display:flex;flex-direction:column;align-items:center;width:249px"><div class="caps" style="font-size:21px;color:var(--pink);text-align:center;white-space:nowrap">Ginger Lola</div><div style="margin-top:14px"><img src="file:///home/claude/mahjmatchmaker-data/assets/tiles/faces/papaya-spritz/clean/lola-ginger.png" style="width:212px;display:block"></div><div style="margin-top:14px"><div class="pf" style="font-size:27px;line-height:1.22;color:#3c4f73;text-align:center">The redheaded<br>matriarch</div></div></div><div style="display:flex;flex-direction:column;align-items:center;width:249px"><div class="caps" style="font-size:21px;color:var(--pink);text-align:center;white-space:nowrap">The parasols</div><div style="margin-top:14px"><img src="file:///home/claude/mahjmatchmaker-data/assets/tiles/faces/papaya-spritz/clean/dot3.png" style="width:212px;display:block"></div><div style="margin-top:14px"><div class="pf" style="font-size:27px;line-height:1.22;color:#3c4f73;text-align:center">Little umbrellas</div></div></div></div><div class="bars"><i style="background:rgba(5,70,137,.16)"></i><i style="background:rgba(5,70,137,.16)"></i><i style="background:rgba(5,70,137,.16)"></i><i style="background:#054689"></i><i style="background:rgba(5,70,137,.16)"></i><i style="background:rgba(5,70,137,.16)"></i><i style="background:rgba(5,70,137,.16)"></i></div>
+ <div class="sign"><img src="file:///home/claude/mahjmatchmaker-data/assets/brand/mahjmatchmaker-wordmark-notag.png"><span>Dating profile</span></div>
 </div>
 <div class="btns"><div style="width:112px;height:112px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(5,40,90,.16),0 2px 6px rgba(5,40,90,.10)"><svg width="50" height="50" viewBox="0 0 48 48"><path d="M14 14 L34 34 M34 14 L14 34" fill="none" stroke="#054689" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div style="width:112px;height:112px;border-radius:50%;background:#f56c8c;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(5,40,90,.16),0 2px 6px rgba(5,40,90,.10)"><svg width="54" height="54" viewBox="0 0 48 48"><path d="M24 40 C10 30 6 23 6 17 C6 11 11 7 16 7 C20 7 22 9 24 12 C26 9 28 7 32 7 C37 7 42 11 42 17 C42 23 38 30 24 40 Z" fill="#fff" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
 </body></html>
