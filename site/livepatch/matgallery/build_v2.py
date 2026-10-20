@@ -34,17 +34,9 @@ OV_PATH = P('config/mat-color-overrides.json')
 OV = json.load(open(OV_PATH))
 G = json.load(open(P('config/mat-color-guesses.json')))['mats']
 notes = []
-for fn in sorted(glob.glob(P('config/tiffany-color-notes/2026-10-20-pink-section*.json'))):
+for fn in sorted(glob.glob(P('config/tiffany-color-notes/2026-10-20-*.json'))):
     for c in json.load(open(fn))['corrections']:
         notes.append(dict(c, _src=os.path.basename(fn)))
-# Coordinator relay, Oct 20 evening: Britt Mills Novella Leatherette
-notes.append({'brand': 'Britt Mills', 'name': 'Novella Leatherette', 'primary': 'orange', 'also': ['red'],
-              'note': 'peachy-pink center, rust border; not pink', '_src': 'tiffany-chat-oct20-evening'})
-notes.append({'brand': 'Britt Mills', 'name': 'Novella', 'primary': 'orange', 'also': ['red'],
-              'note': 'same artwork as Novella Leatherette (her call)', '_src': 'tiffany-chat-oct20-evening'})
-# Red-section calls (coordinator relay, Oct 20 evening)
-notes.append({'brand': 'Bird & Bamboo', 'name': 'Tangelo Delphine', 'primary': 'orange', 'note': 'tangerine', '_src': 'tiffany-chat-oct20-red'})
-notes.append({'brand': 'Mahj Mood', 'name': 'Slay All Day', 'primary': 'holiday', 'note': 'holiday mat', '_src': 'tiffany-chat-oct20-red'})
 
 
 def norm(s):
@@ -63,14 +55,21 @@ applied = []
 for c in notes:
     cn = norm(c['name'])
     best = []
+    cs = cn.replace(' ', '')
     for r in F:
-        if c['brand'] != '*' and bnorm(r[2]) != bnorm(c['brand']):
+        same_brand = c['brand'] != '*' and (bnorm(r[2]) == bnorm(c['brand']) or bnorm(r[2]).startswith(bnorm(c['brand'])) or bnorm(c['brand']).startswith(bnorm(r[2])))
+        rn = norm(r[1]); rs = rn.replace(' ', '')
+        if len(rs) < 4:
             continue
-        rn = norm(r[1])
-        sc = 1.0 if rn == cn else (0.95 if cn and (cn in rn or rn in cn) else difflib.SequenceMatcher(None, cn, rn).ratio())
+        if cs == rs: sc = 1.0
+        elif cs in rs or (same_brand and rs in cs and len(rs) >= 8): sc = 0.95
+        else: sc = max(difflib.SequenceMatcher(None, cs, rs).ratio(), difflib.SequenceMatcher(None, cs, rs[:len(cs)]).ratio() - 0.04)
+        if not same_brand:  # other brands (or brand '*') only count on a near-exact name hit
+            if sc < 0.95: continue
+            sc -= 0.01
         best.append((sc, r))
     best.sort(key=lambda x: -x[0])
-    if not best or best[0][0] < 0.75:
+    if not best or best[0][0] < 0.8:
         unmatched.append(c); continue
     top = best[0][0]
     hits = [r for sc, r in best if sc >= top - 1e-9]
@@ -107,6 +106,10 @@ for img, a in by_type.get('raw store title', {}).items():
         rename[img] = m.group(1)
 
 # ---------- 2. names + brands ----------
+NAMEFIX = {  # different designs that share one store name (audit: ambiguous names); colorway added from the photo/URL
+    'mahj-moon--retro-waves': 'Retro Waves \u2013 Pink & Aqua', 'mahj-moon--retro-waves-2': 'Retro Waves \u2013 Purple',
+    'mahj-moon--retro-waves-3': 'Retro Waves \u2013 Orange', 'mahj-moon--palm-beach-american': 'Palm Beach American \u2013 Bermuda',
+    'mahj-moon--palm-beach-american-2': 'Palm Beach American \u2013 Harbor', 'virora-mahjong--limoncea-mahjong-mat': 'Limoncea with Flower'}
 BRANDFIX = {'Mahj and Moon': 'Mahj & Moon', 'Ozark Mah Jongg': 'Ozark Mahjongg'}
 
 
@@ -123,6 +126,8 @@ def clean(n):
     n = re.sub(r'(\s*[-–|:/]\s*)+$', '', n.strip())
     n = re.sub(r'^(\s*[-–|:/]\s*)+', '', n)
     n = re.sub(r'\s*-\s*(-\s*)+', ' - ', n)
+    n = re.sub(r'\s+([!?.,])', r'\1', n)
+    n = re.sub(r'\s+(Mahjong\s+Playing|Mahjong\s+Game|Mat)$', '', n.strip(), flags=re.I)
     n = re.sub(r'\s{2,}', ' ', n).strip(' -–|:/')
     if n.isupper() and len(n) > 4:
         n = re.sub(r"\b([A-Z])([A-Z']*)\b", lambda m: m.group(1) + m.group(2).lower(), n)
@@ -136,7 +141,7 @@ for r in F:
     img, name, brand, url, ret, _sec, code = r
     raw = name
     ret = 1 if (ret or re.search(r'\(\s*retired\s*\)', name, re.I) or img in by_type.get('"(retired)" in name but not flagged retired', {})) else 0
-    nm = clean(rename.get(img, name)) or clean(name) or name
+    nm = NAMEFIX.get(img) or clean(rename.get(img, name)) or clean(name) or name
     brand = BRANDFIX.get(brand, brand)
     rows.append(dict(img=img, key=man[img], name=nm, raw=raw, brand=brand, url='' if ret else url, ret=ret, code=code, old=_sec))
 
@@ -173,8 +178,8 @@ def score_keep(x):  # cleanest name and a working URL win
 
 
 def add_group(imgs, reason, keep=None):
-    imgs = [i for i in dict.fromkeys(imgs) if i in R]
-    live = [i for i in imgs if i not in hidden]
+    # a listing hidden for a wrong image never links groups (its photo is another mat's photo)
+    imgs = [i for i in dict.fromkeys(imgs) if i in R and not hidden.get(i, '').startswith('wrong')]
     if len(imgs) < 2:
         return
     for g in groups:  # merge overlapping groups
@@ -195,7 +200,7 @@ for x in rows:
     k = (bnorm(x['brand']), norm(clean(x['raw'])))
     nk.setdefault(k, []).append(x['img'])
 for k, imgs in nk.items():
-    if len(imgs) > 1 and k[1]:
+    if len(imgs) > 1 and k[1] and len({R[i]['raw'] for i in imgs}) == len(imgs) and not any(i in NAMEFIX for i in imgs):  # identical store names = different colorways
         add_group(imgs, 'same name after removing size/Ships Rolled/Mahjong Mat')
 # audit-listed duplicates (same mat listed twice / collab under both brands)
 for t_ in ('duplicate mat (same/near-identical name in brand)', 'duplicate mat (same image hash)'):

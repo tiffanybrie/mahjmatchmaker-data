@@ -1,43 +1,123 @@
 {
  "section_counts_active": {
-  "pink": 126,
-  "red": 38,
+  "pink": 127,
+  "red": 40,
   "orange": 32,
   "yellow": 16,
-  "green": 96,
-  "teal": 48,
-  "blue": 149,
-  "purple": 41,
-  "brown": 34,
-  "neutral": 49,
-  "bw": 14,
-  "dark": 28,
-  "holiday": 74,
-  "multi": 23,
-  "retired": 25
- },
- "section_counts_if_retired_shown": {
-  "pink": 130,
-  "red": 41,
-  "orange": 34,
-  "yellow": 17,
-  "green": 100,
-  "teal": 52,
-  "blue": 153,
-  "purple": 41,
-  "brown": 36,
+  "green": 97,
+  "teal": 49,
+  "blue": 148,
+  "purple": 43,
+  "brown": 35,
   "neutral": 50,
   "bw": 14,
   "dark": 29,
-  "holiday": 75,
-  "multi": 23
+  "holiday": 73,
+  "multi": 27,
+  "retired": 25
  },
- "unique_active_mats": 731,
+ "section_counts_if_retired_shown": {
+  "pink": 131,
+  "red": 43,
+  "orange": 34,
+  "yellow": 17,
+  "green": 101,
+  "teal": 53,
+  "blue": 152,
+  "purple": 43,
+  "brown": 37,
+  "neutral": 51,
+  "bw": 14,
+  "dark": 30,
+  "holiday": 74,
+  "multi": 27
+ },
+ "unique_active_mats": 736,
  "retired": 25,
- "hidden": 38,
- "dedupe_groups": 32,
+ "hidden": 33,
+ "dedupe_groups": 25,
  "held_low_out": 95,
  "applied_color_calls": [
+  [
+   "Britt Mills",
+   "Novella Leatherette",
+   "Novella Leatherette",
+   "orange",
+   [
+    "red"
+   ]
+  ],
+  [
+   "Britt Mills",
+   "Novella",
+   "Novella",
+   "orange",
+   [
+    "red"
+   ]
+  ],
+  [
+   "Bird & Bamboo",
+   "Tangelo Delphine",
+   "The Tangelo Delphine",
+   "orange",
+   []
+  ],
+  [
+   "Charleston Mahjong Club",
+   "Cabana Club",
+   "Cabana Club",
+   "green",
+   []
+  ],
+  [
+   "Oh My Mahjong",
+   "Astor",
+   "Astor",
+   "yellow",
+   [
+    "green",
+    "brown"
+   ]
+  ],
+  [
+   "Mahjong Register",
+   "Pink Zebra in Bloom Premium Padded",
+   "Pink Zebra in Bloom Premium Padded",
+   "yellow",
+   [
+    "multi",
+    "pink"
+   ]
+  ],
+  [
+   "Mahjong by SI",
+   "Tracing the Tides",
+   "Tracing the Tides",
+   "yellow",
+   [
+    "red"
+   ]
+  ],
+  [
+   "Oh My Mahjong",
+   "Spring Fling",
+   "Spring Fling",
+   "multi",
+   [
+    "yellow"
+   ]
+  ],
+  [
+   "Splash of Color",
+   "William Morris Inspired Rose Wreath",
+   "William Morris Inspired Rose Wreath",
+   "yellow",
+   [
+    "green",
+    "multi"
+   ]
+  ],
   [
    "Peace Love Mahjong",
    "Plaid Pink Cabana",
@@ -62,7 +142,7 @@
   [
    "Splash of Color",
    "Garden Party",
-   "Garden Party Chinoiserie Blue Pink",
+   "Garden Party",
    "multi",
    []
   ],
@@ -70,6 +150,13 @@
    "Splash of Color",
    "Chinoiserie Blue",
    "Garden Party Chinoiserie Blue Pink",
+   "multi",
+   []
+  ],
+  [
+   "Splash of Color",
+   "Grand Millennial Chic Leopard",
+   "Grandmillenial Chic Leopard Ladies Chinoiserie",
    "multi",
    []
   ],
@@ -115,6 +202,13 @@
    ]
   ],
   [
+   "Birdsong Mahjong",
+   "Green Floral American",
+   "Birdsong Mahjong Mat | Green Floral American",
+   "green",
+   []
+  ],
+  [
    "Britt Mills",
    "Haven",
    "Haven",
@@ -153,27 +247,6 @@
    "Mahj & Moon",
    "Scallop Chinoiserie Bird and Floral",
    "Scalloped Chinoiserie Bird & Floral",
-   "green",
-   []
-  ],
-  [
-   "*",
-   "Scallop Pastel Palm Beach",
-   "Pastel Palm Beach",
-   "green",
-   []
-  ],
-  [
-   "*",
-   "Scallop Pastel Palm Beach",
-   "Palm Beach",
-   "green",
-   []
-  ],
-  [
-   "*",
-   "Scallop Pastel Palm Beach",
-   "Mahjong",
    "green",
    []
   ],
@@ -246,50 +319,29 @@
    "Sunday Sherbert Double-Sided Leatherette",
    "orange",
    []
-  ],
-  [
-   "Britt Mills",
-   "Novella Leatherette",
-   "Novella Leatherette",
-   "orange",
-   [
-    "red"
-   ]
-  ],
-  [
-   "Britt Mills",
-   "Novella",
-   "Novella",
-   "orange",
-   [
-    "red"
-   ]
-  ],
-  [
-   "Bird & Bamboo",
-   "Tangelo Delphine",
-   "The Tangelo Delphine",
-   "orange",
-   []
-  ],
-  [
-   "Mahj Mood",
-   "Slay All Day",
-   "Sleigh All Day",
-   "holiday",
-   []
   ]
  ],
  "unmatched_color_calls": [
   {
-   "brand": "Splash of Color",
-   "name": "Grand Millennial Chic Leopard",
-   "primary": "multi",
-   "_src": "2026-10-20-pink-section-2.json"
+   "brand": "Mahj Mood",
+   "name": "Slay All Day",
+   "primary": "holiday",
+   "note": "listed as 'Sleigh All Day'",
+   "_src": "2026-10-20-evening-calls.json"
   },
   {
-   "brand": "Birdsong Mahjong",
-   "name": "Green Floral American",
+   "brand": "Four Winds Social",
+   "name": "FWS x 225 Mahjong Collab Flower the Wind",
+   "primary": "yellow",
+   "also": [
+    "purple"
+   ],
+   "note": "yellow and purple equal",
+   "_src": "2026-10-20-evening-calls.json"
+  },
+  {
+   "brand": "*",
+   "name": "Scallop Pastel Palm Beach",
    "primary": "green",
    "_src": "2026-10-20-pink-section.json"
   }
@@ -345,11 +397,11 @@
   ],
   "bespoke-mahjong--double-sided-mat-double-the-fun-bespoke-x-corey-paige-electric-love-mat": [
    "DOUBLE-SIDED MAT | Double the Fun/Bespoke x Corey Paige - ELECTRIC LOVE",
-   "Bespoke x Corey Paige - Electric Love Mat"
+   "Bespoke x Corey Paige - Electric Love"
   ],
   "bespoke-mahjong--double-sided-mat-double-the-fun-bespoke-x-corey-paige-graffiti-street-style-mat": [
    "DOUBLE-SIDED MAT | Double the Fun/Bespoke x Corey Paige - GRAFFITI STREET STYLE",
-   "Bespoke x Corey Paige - Graffiti Street Style Mat"
+   "Bespoke x Corey Paige - Graffiti Street Style"
   ],
   "bespoke-mahjong--double-sided-mat-double-the-fun-bespoke-x-corey-paige-holiday-love-mat-blue": [
    "DOUBLE-SIDED MAT | Double the Fun/Bespoke x Corey Paige - HOLIDAY LOVE MAT - BLUE",
@@ -361,7 +413,7 @@
   ],
   "bespoke-mahjong--double-sided-mat-double-the-fun-darjeeling-peacock-mat": [
    "DOUBLE-SIDED MAT | Double the Fun/Darjeeling Peacock",
-   "Darjeeling Peacock Mat"
+   "Darjeeling Peacock"
   ],
   "bespoke-mahjong--flirty-leopards-mat-cobalt-blue": [
    "FLIRTY LEOPARDS MAT - COBALT BLUE",
@@ -373,7 +425,7 @@
   ],
   "bespoke-mahjong--double-sided-mat-double-the-fun-floral-mat": [
    "DOUBLE-SIDED MAT | Double the Fun/Floral",
-   "Floral Mat"
+   "Floral"
   ],
   "bespoke-mahjong--garden-glow-mat-emerald-green": [
    "GARDEN GLOW MAT - EMERALD GREEN",
@@ -409,11 +461,11 @@
   ],
   "bespoke-mahjong--double-sided-mat-double-the-fun-love-graffiti-mat": [
    "DOUBLE-SIDED MAT | Double the Fun/Love Graffiti",
-   "Love Graffiti Mat"
+   "Love Graffiti"
   ],
   "bespoke-mahjong--lucky-charms-mat": [
    "LUCKY CHARMS",
-   "Lucky Charms Mat"
+   "Lucky Charms"
   ],
   "bespoke-mahjong--lucky-charms-mat-part-deux": [
    "LUCKY CHARMS MAT PART DEUX",
@@ -421,11 +473,11 @@
   ],
   "bespoke-mahjong--preppy-pink-garden-mat": [
    "PREPPY PINK GARDEN",
-   "Preppy Pink Garden Mat"
+   "Preppy Pink Garden"
   ],
   "bespoke-mahjong--sapphire-blue-garden-mat": [
    "SAPPHIRE BLUE GARDEN",
-   "Sapphire Blue Garden Mat"
+   "Sapphire Blue Garden"
   ],
   "bespoke-mahjong--double-sided-mat-double-the-fun-table-talk": [
    "DOUBLE-SIDED MAT | Double the Fun/Table Talk",
@@ -437,7 +489,7 @@
   ],
   "bespoke-mahjong--vintage-floral-mat": [
    "VINTAGE FLORAL",
-   "Vintage Floral Mat"
+   "Vintage Floral"
   ],
   "bespoke-mahjong--year-of-the-dragon-mat-amped-up-pink": [
    "YEAR OF THE DRAGON MAT - AMPED-UP PINK",
@@ -481,7 +533,27 @@
   ],
   "hip-hip-mahjong--rackin-rudolph-mahjong-mat": [
    "Rackin' Rudolph Mahjong Mat!",
-   "Rackin' Rudolph !"
+   "Rackin' Rudolph!"
+  ],
+  "mahj-moon--palm-beach-american": [
+   "Palm Beach American",
+   "Palm Beach American – Bermuda"
+  ],
+  "mahj-moon--palm-beach-american-2": [
+   "Palm Beach American",
+   "Palm Beach American – Harbor"
+  ],
+  "mahj-moon--retro-waves-3": [
+   "Retro Waves",
+   "Retro Waves – Orange"
+  ],
+  "mahj-moon--retro-waves": [
+   "Retro Waves",
+   "Retro Waves – Pink & Aqua"
+  ],
+  "mahj-moon--retro-waves-2": [
+   "Retro Waves",
+   "Retro Waves – Purple"
   ],
   "mahj-mood--beyond-the-ribbon-four-winds-social-collab-mat-benefitting-pink-fund-pre-order-ships-end-of-december": [
    "Beyond the Ribbon: Four Winds Social Collab Mat Benefitting PINK FUND      | Pre-Order, Ships End of December",
@@ -711,6 +783,10 @@
    "“Strawberries” Mahjong Mat Printed Needlepoint Canvas",
    "“Strawberries” Printed Needlepoint Canvas"
   ],
+  "mahjong-studios--ivory-coast-mahjong-mat-33-x-33-ships-rolled": [
+   "Ivory Coast Mahjong Mat - 33 x 33 - Ships Rolled",
+   "Ivory Coast"
+  ],
   "mahjong-studios--jade-peacock-mahjong-mat-ships-rolled": [
    "Jade Peacock Mahjong Mat - ships rolled",
    "Jade Peacock"
@@ -718,6 +794,10 @@
   "mahjong-studios--lemon-lime-mahjong-mat-33in-waterproof-mahjong-table-mat-ships-rolled": [
    "Lemon Lime Mahjong Mat (33in| Waterproof Mahjong Table Mat)- Ships Rolled",
    "Lemon Lime"
+  ],
+  "mahjong-studios--pastel-luxe-mahjong-mat-33-x-33-ships-rolled": [
+   "Pastel Luxe Mahjong Mat -  33 x 33 - Ships Rolled",
+   "Pastel Luxe"
   ]
  }
 }
