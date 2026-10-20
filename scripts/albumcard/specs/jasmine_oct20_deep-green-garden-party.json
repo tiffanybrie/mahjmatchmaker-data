@@ -1,0 +1,27 @@
+{
+ "_note": "Jasmine + Deep Green Garden Party (Oct 20)",
+ "mat_file": "assets/mats/jasmine-oct20/deep-green-garden-party.jpg",
+ "mat_crop": [
+  0,
+  0,
+  1500,
+  1071
+ ],
+ "mat_key": "miss-mahjong-deep-green-garden-party",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "jasmine-miss-mahjong-deep-green-garden-party",
+   "set": "jasmine",
+   "title": "Jasmine + Garden Party",
+   "col": "#36a272",
+   "tile_file": "assets/tiles/album/jasmine.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Hot Pink"
+   ],
+   "file": "jasmine-mahjong-tiles-miss-mahjong-deep-green-garden-party-mat.jpg"
+  }
+ ]
+}

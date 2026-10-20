@@ -12,9 +12,19 @@ F = json.load(open(R + 'config/tile-racks-picks.json'))['final_lists']
 MATS = [('chinoiserie-songbird', 'Mahj & Vine', 'Chinoiserie Songbird', 'Songbird', [135, 245, 1930, 1945]),
         ('porcelain-bloom', 'Mahj & Vine', 'Porcelain Bloom', 'Porcelain Bloom', [135, 245, 1930, 1945]),
         ('palm-beach-pink-cabana-blue', 'Anders Ruff', 'Palm Beach Pink Cabana Blue', 'Palm Beach', [0, 0, 1250, 1250]),
-        ('liliora', 'Virora Mahjong', 'Liliora', 'Liliora', [9, 79, 1279, 1567])]
+        ('liliora', 'Virora Mahjong', 'Liliora', 'Liliora', [9, 79, 1279, 1567]),
+        # Oct 20 9:23am round 3: her green picks from sheet 1 (#1, #2, #9, #11) + #3/#4 from round 2
+        ('secret-garden', 'Anders Ruff', 'Secret Garden', 'Secret Garden', [0, 0, 743, 743]),
+        ('jade-green-chinoiserie', 'Mahj Squad', 'Jade Green Chinoiserie', 'Jade Chinoiserie', [0, 0, 1000, 1000]),
+        ('deep-green-garden-party', 'Miss Mahjong', 'Deep Green Garden Party', 'Garden Party', [0, 0, 1500, 1071]),
+        ('flirty-leopards-mint-julep', 'Bespoke Mahjong', 'Flirty Leopards Mint Julep', 'Flirty Leopards', [0, 0, 798, 802]),
+        ('zesty-plume', 'Mahj & Vine', 'Zesty Plume', 'Zesty Plume', [135, 245, 1930, 1945]),
+        ('flora-belle', 'Anders Ruff', 'Flora Belle', 'Flora Belle', [0, 0, 1250, 1250])]
+import sys as _s
+ONLY = set(_s.argv[1:])
 MR = json.load(open(R + 'config/mat-racks-picks.json'))
 for slug, brand, name, short, crop in MATS:
+    if ONLY and slug not in ONLY: continue
     f = f'assets/mats/jasmine-oct20/{slug}.jpg'
     key = f'{brand.lower().replace(" & ", "-and-").replace(" ", "-")}-{slug}'
     if key not in MR:

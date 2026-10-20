@@ -1,0 +1,27 @@
+{
+ "_note": "Jasmine + Flora Belle (Oct 20)",
+ "mat_file": "assets/mats/jasmine-oct20/flora-belle.jpg",
+ "mat_crop": [
+  0,
+  0,
+  1250,
+  1250
+ ],
+ "mat_key": "anders-ruff-flora-belle",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "jasmine-anders-ruff-flora-belle",
+   "set": "jasmine",
+   "title": "Jasmine + Flora Belle",
+   "col": "#36a272",
+   "tile_file": "assets/tiles/album/jasmine.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Hot Pink"
+   ],
+   "file": "jasmine-mahjong-tiles-anders-ruff-flora-belle-mat.jpg"
+  }
+ ]
+}

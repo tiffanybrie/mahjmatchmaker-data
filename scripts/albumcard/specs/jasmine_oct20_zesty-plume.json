@@ -1,0 +1,27 @@
+{
+ "_note": "Jasmine + Zesty Plume (Oct 20)",
+ "mat_file": "assets/mats/jasmine-oct20/zesty-plume.jpg",
+ "mat_crop": [
+  135,
+  245,
+  1930,
+  1945
+ ],
+ "mat_key": "mahj-and-vine-zesty-plume",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "jasmine-mahj-and-vine-zesty-plume",
+   "set": "jasmine",
+   "title": "Jasmine + Zesty Plume",
+   "col": "#36a272",
+   "tile_file": "assets/tiles/album/jasmine.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Hot Pink"
+   ],
+   "file": "jasmine-mahjong-tiles-mahj-and-vine-zesty-plume-mat.jpg"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "_note": "Jasmine + Flirty Leopards Mint Julep (Oct 20)",
+ "mat_file": "assets/mats/jasmine-oct20/flirty-leopards-mint-julep.jpg",
+ "mat_crop": [
+  0,
+  0,
+  798,
+  802
+ ],
+ "mat_key": "bespoke-mahjong-flirty-leopards-mint-julep",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "jasmine-bespoke-mahjong-flirty-leopards-mint-julep",
+   "set": "jasmine",
+   "title": "Jasmine + Flirty Leopards",
+   "col": "#36a272",
+   "tile_file": "assets/tiles/album/jasmine.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Hot Pink"
+   ],
+   "file": "jasmine-mahjong-tiles-bespoke-mahjong-flirty-leopards-mint-julep-mat.jpg"
+  }
+ ]
+}

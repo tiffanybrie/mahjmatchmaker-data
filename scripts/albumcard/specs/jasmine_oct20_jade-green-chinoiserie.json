@@ -1,0 +1,27 @@
+{
+ "_note": "Jasmine + Jade Green Chinoiserie (Oct 20)",
+ "mat_file": "assets/mats/jasmine-oct20/jade-green-chinoiserie.jpg",
+ "mat_crop": [
+  0,
+  0,
+  1000,
+  1000
+ ],
+ "mat_key": "mahj-squad-jade-green-chinoiserie",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "jasmine-mahj-squad-jade-green-chinoiserie",
+   "set": "jasmine",
+   "title": "Jasmine + Jade Chinoiserie",
+   "col": "#36a272",
+   "tile_file": "assets/tiles/album/jasmine.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Hot Pink"
+   ],
+   "file": "jasmine-mahjong-tiles-mahj-squad-jade-green-chinoiserie-mat.jpg"
+  }
+ ]
+}
