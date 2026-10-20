@@ -114,7 +114,7 @@ if OMM:
  <div class="ph" style="margin-top:30px;height:640px;border-radius:24px;background-image:url({TOG});background-size:{'cover' if pr.get('together_fit')=='cover' else '150%'};background-position:{'center' if pr.get('together_fit')=='cover' else '52% 42%'};box-shadow:0 10px 26px rgba(6,40,90,.16);position:relative">
   <div style="position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,.92);border-radius:99px;padding:8px 18px;font:600 20px Bit;color:var(--navy)">{e(pr.get('together_caption') or (P['name']+' on '+pr['mat']+', in '+pr['brand']+'’s own photo'))}</div></div>
  <div style="display:flex;align-items:center;gap:18px;margin-top:34px">
-  <div class="ph" style="flex:0 0 170px;height:170px;border-radius:50%;background-image:url({TILE});box-shadow:0 0 0 6px #fff,0 8px 20px rgba(6,40,90,.16)"></div>
+  <div class="ph" style="flex:0 0 170px;height:170px;border-radius:50%;background:#fff url({url(pr['circle']) if pr.get('circle') else TILE}) center/{'112%' if pr.get('circle') else 'cover'} no-repeat;box-shadow:0 0 0 6px #fff,0 8px 20px rgba(6,40,90,.16)"></div>
   <div style="flex:0 0 auto">{HT(54)}</div>
   <div class="ph" style="flex:0 0 210px;height:210px;border-radius:18px;background-image:url({PM});background-size:114%;box-shadow:0 8px 22px rgba(6,40,90,.16)"></div>
   <div style="flex:1;padding-left:6px"><div style="display:flex;align-items:center;gap:8px">{VER(30)}<span class="caps" style="font-size:17px;color:var(--pink)">Official pair</span></div>
@@ -141,7 +141,7 @@ fd = ''
 for i, m in enumerate(P['first_dates']):
     t = next(x for x in P['her_type'] if x['mat'] == m)
     fd += f"""<div style="display:flex;align-items:center;gap:22px;margin-top:{26 if i else 34}px">
- <div class="ph" style="flex:0 0 170px;height:170px;border-radius:50%;background-image:url({TILE});box-shadow:0 0 0 6px #fff,0 8px 20px rgba(6,40,90,.16)"></div>
+ <div class="ph" style="flex:0 0 170px;height:170px;border-radius:50%;background:#fff url({url(pr['circle']) if pr.get('circle') else TILE}) center/{'112%' if pr.get('circle') else 'cover'} no-repeat;box-shadow:0 0 0 6px #fff,0 8px 20px rgba(6,40,90,.16)"></div>
  <div style="font:400 54px Capra;color:var(--pink)">&hearts;</div>
  <div class="ph" style="flex:0 0 260px;height:260px;border-radius:18px;background-image:url({url(MATS[m])});box-shadow:0 8px 22px rgba(6,40,90,.16)"></div>
  <div style="flex:1;padding-left:8px"><div class="caps" style="font-size:18px;color:var(--pink)">Match #{i + 1}</div>
