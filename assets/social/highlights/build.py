@@ -32,11 +32,11 @@ ICONS = {
   <rect x="64" y="64" width="112" height="112" rx="6"/>
   <path class="a" d="M120 92C128 92 132 100 132 108C140 108 148 112 148 120C148 128 140 132 132 132C132 140 128 148 120 148C112 148 108 140 108 132C100 132 92 128 92 120C92 112 100 108 108 108C108 100 112 92 120 92Z"/>''',
  'tablescapes': '''
-  <g transform="translate(116 122) scale(.97) translate(-120 -122)" style="stroke-width:12.4">
-  <circle cx="120" cy="124" r="52"/>
-  <circle class="a" cx="120" cy="124" r="24"/>
-  <path d="M30 46V84Q30 102 42 102Q54 102 54 84V46M42 46V198"/>
-  <path d="M206 198V46C218 60 222 84 222 108Q222 118 206 120"/></g>''',
+  <!-- Oct 20 (Tiffany): a MAHJONG table seen from above, not a fork + knife. Square table, a rack on each side, tiles in the middle -->
+  <rect x="28" y="28" width="184" height="184" rx="20"/>
+  <rect x="78" y="50" width="84" height="16" rx="6"/><rect x="78" y="174" width="84" height="16" rx="6"/>
+  <rect x="50" y="78" width="16" height="84" rx="6"/><rect x="174" y="78" width="16" height="84" rx="6"/>
+  <rect class="a" x="92" y="98" width="26" height="36" rx="5"/><rect class="a" x="122" y="106" width="26" height="36" rx="5"/>''',
  'codes': '''
   <g transform="translate(120 120) scale(.92) translate(-120 -120)" style="stroke-width:13">
   <path d="M130 30H196Q210 30 210 44V108Q210 116 204 122L124 202Q114 212 104 202L38 136Q28 126 38 116L118 36Q123 30 130 30Z"/>

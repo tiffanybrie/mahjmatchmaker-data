@@ -100,6 +100,80 @@
     "Bird & Bamboo Lilac"
    ],
    "file": "coquette-mahjong-tiles-bettyjunejeannette-kerry-mat.jpg"
+  },
+  {
+   "slug": "birdie-kerry",
+   "set": "birdie",
+   "order": 7,
+   "title": "Birdie + Kerry",
+   "col": "#469694",
+   "tile_file": "assets/tiles/album/birdie.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Harbor Blue",
+    "Peace Love Mahjong Oak"
+   ],
+   "file": "birdie-mahjong-tiles-bettyjunejeannette-kerry-mat.jpg"
+  },
+  {
+   "slug": "dandy-kerry",
+   "set": "dandy",
+   "order": 8,
+   "title": "Dandy + Kerry",
+   "col": "#ce1467",
+   "tile_file": "assets/tiles/album/dandy.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Avocado",
+    "Miss Mahjong Scalloped Iridescent Opal"
+   ],
+   "file": "dandy-mahjong-tiles-bettyjunejeannette-kerry-mat.jpg"
+  },
+  {
+   "slug": "luminaire-kerry",
+   "set": "luminaire",
+   "order": 9,
+   "title": "Luminaire + Kerry",
+   "col": "#8382bd",
+   "tile_file": "assets/tiles/album/luminaire.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Miss Mahjong Peach Sorbet Scalloped",
+    "Bird & Bamboo Ballet Pink"
+   ],
+   "file": "luminaire-mahjong-tiles-bettyjunejeannette-kerry-mat.jpg"
+  },
+  {
+   "slug": "taylor-kerry",
+   "set": "taylor",
+   "order": 10,
+   "title": "Taylor + Kerry",
+   "col": "#b68ccd",
+   "tile_file": "assets/tiles/album/taylor.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Light Pink",
+    "Middle & Main Scalloped Beechwood"
+   ],
+   "file": "taylor-mahjong-tiles-bettyjunejeannette-kerry-mat.jpg"
+  },
+  {
+   "slug": "sorbet-kerry",
+   "set": "sorbet",
+   "order": 11,
+   "title": "Sorbet + Kerry",
+   "col": "#e9a926",
+   "tile_file": "assets/tiles/album/sorbet.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Icy Mint",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Middle & Main Scalloped Beechwood"
+   ],
+   "file": "sorbet-mahjong-tiles-bettyjunejeannette-kerry-mat.jpg"
   }
  ]
 }

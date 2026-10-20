@@ -12,7 +12,8 @@ MR['kerry'] = {'mat': 'BettyJuneJeannette The Kerry', 'racks': ['Bird & Bamboo B
                '_note': 'Tiffany Oct 20 2am: MMSIO at least, probably a clear scallop (which brand? no photo yet), B&B Ballet Pink.'}
 json.dump(MR, open(R + 'config/mat-racks-picks.json', 'w'), indent=1, ensure_ascii=False)
 SETS = [('pearlescent', 'Pearlescent'), ('moonlight', 'Moonlight'), ('la-fete', 'La Fete'),
-        ('willow', 'Willow'), ('talulah', 'Talulah'), ('coquette', 'Coquette')]
+        ('willow', 'Willow'), ('talulah', 'Talulah'), ('coquette', 'Coquette'),
+        ('birdie', 'Birdie'), ('dandy', 'Dandy'), ('luminaire', 'Luminaire'), ('taylor', 'Taylor'), ('sorbet', 'Sorbet')]  # Oct 20 noon: Tiffany approved these 5 too
 cards = []
 for i, (s, n) in enumerate(SETS, 1):
     cards.append({'slug': f'{s}-kerry', 'set': s, 'order': i, 'title': f'{n} + Kerry', 'col': COL.get(s, '#7a9a6a'),
