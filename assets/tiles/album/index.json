@@ -37,9 +37,10 @@
   "pileAR": "582/700"
  },
  "Classic Tortoise": {
-  "file": "assets/tiles/album/classic-tortoise.png",
+  "file": "assets/tiles/album/classic-tortoise-zoom.jpg",
   "tile_mode": "loose",
-  "note": "Oct 17 Tiffany: transparent tiles lie loose on the mat, no tile box (her original Tortoise album cards)"
+  "note": "Oct 17 Tiffany: transparent tiles lie loose on the mat, no tile box (her original Tortoise album cards) | Oct 20: file = locked FYM album photo (locks.json)",
+  "prev_file": "assets/tiles/album/classic-tortoise.png"
  },
  "Osler": {
   "file": "assets/tiles/album/osler.jpg"
@@ -169,8 +170,9 @@
   "vault": true
  },
  "Petalée": {
-  "file": "assets/tiles/album/petalee.jpg",
+  "file": "assets/tiles/album/petalee-pile.jpg",
   "brand": "Virora Mahjong",
-  "note": "Virora official full grid photo with back tile (doc 52)"
+  "note": "Virora official full grid photo with back tile (doc 52) | Oct 20: file = locked FYM album photo (locks.json)",
+  "prev_file": "assets/tiles/album/petalee.jpg"
  }
 }

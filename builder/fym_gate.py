@@ -3,7 +3,7 @@
 Exits non-zero and prints every failure. Checks (add one for each bug type Tiffany reports):
  1  album / swipe-book sets show their canonical album tile photo (D.tiles[..].src == locked src, file exists, pixels match)
  2  no visible set without an album / swipe book carries a "Tiffany's match" list (m)
- 3  no visible set flagged no_tiles (builder/fym_flags/tile_photo_flags.json); no visible mat flagged no_mat (mat_photo_flags.json)
+ 3  no visible set flagged no_tiles (builder/fym_flags/tile_photo_flags.json); no visible mat flagged no_mat/partial_crop/no_flat_photo/duplicate (mat_photo_flags.json); 3b retired mats labelled in mat-door grid + mat search
  4  UI wording: no crush / nope / pass / "Pick your crush" / hard-coded "save 10%"
  5  colour-dot click selector bug (.dots [data-fam])
  6  locked values (builder/fym_flags/locks.json) unchanged
@@ -64,10 +64,18 @@ for s in D['sets']:
     f = tflags.get(s['slug'])
     if f and f.get('flag') == 'no_tiles' and vis(s):
         F.append(f"[3] {s['name']} ({s['maker']}): visible but tile photo flagged no_tiles ({f.get('note','')})")
+MAT_HIDE_FLAGS = ('no_mat', 'partial_crop', 'no_flat_photo', 'duplicate')   # Oct 20 round 2: crops / no flat photo / duplicates stay hidden too
 for mid, f in mflags.items():
     m = M.get(mid)
-    if m and f.get('flag') == 'no_mat' and not m.get('hid'):
-        F.append(f"[3] mat {m['n']} ({m.get('bn')}): visible but photo flagged no_mat")
+    if m and f.get('flag') in MAT_HIDE_FLAGS and not m.get('hid'):
+        F.append(f"[3] mat {m['n']} ({m.get('bn')}): visible but photo flagged {f.get('flag')}")
+# 3b. retired mats carry a Retired label in the mat-door grid / door search (matBtn) and the mat search list (#msr) (Oct 20 bug: Liberty)
+mb = re.search(r'function matBtn\(id\)\{.*?\n', UI)
+if not mb or "M[id].rt?" not in mb.group(0) or 'Retired' not in mb.group(0):
+    F.append("[3b] matBtn (mat-door grid + door search) has no Retired label for rt mats")
+ms = re.search(r"box\.innerHTML=hits\.length\?hits\.map\(id=>`<button type=\"button\" data-mock.*?\n", UI)
+if not ms or "M[id].rt?" not in ms.group(0) or 'Retired' not in ms.group(0):
+    F.append("[3b] mat search list (#msr) has no Retired label for rt mats")
 
 # 4. wording (UI text only; product names inside D, CSS and code comments are exempt)
 TXT = re.sub(r'<style>.*?</style>', ' ', UI, flags=re.S); TXT = re.sub(r'/\*.*?\*/', ' ', TXT, flags=re.S)

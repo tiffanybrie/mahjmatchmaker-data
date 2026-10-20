@@ -238,5 +238,35 @@
   "brand": "Tigre de Tartan",
   "flag": "no_mat",
   "note": "placeholder \"Photo coming soon\" image"
+ },
+ "luxemahjong.com/bougie-bee-mahjong-mat-imperfect-sale": {
+  "name": "Bougie Bee",
+  "brand": "Luxe Mahjong",
+  "flag": "duplicate",
+  "note": "imperfect-sale duplicate of luxemahjong.com/bougie-bee-mahjong-mat (Tiffany Oct 20)"
+ },
+ "mahjsquadshop.com/pink-chinoiserie-mahjong-mat-pink-floral-neoprene-mahjongg-mat-pink-chintz-mahj-mat-colorful-floral-mahj-ongg-mat-spring-1": {
+  "name": "Pink Floral Chinoiserie",
+  "brand": "Mahj Squad",
+  "flag": "partial_crop",
+  "note": "corner crop, full mat not shown; assets/mats/gallery has the same crop and the Shopify products.json (8 photos, checked Oct 20) has only corner crops and table scenes with racks/tiles, no clean flat full-mat photo"
+ },
+ "www.middleandmainmahjong.com/grandmother-kathryn-vintage-quilt-mat-copy": {
+  "name": "Grandmother \"Betty\" Vintage Quilt",
+  "brand": "Middle & Main Mahjong",
+  "flag": "no_flat_photo",
+  "note": "quilt mat shot at an angle on a porch table with a lamp; store products.json (checked Oct 20) has no flat product photo"
+ },
+ "www.middleandmainmahjong.com/grandmother-martha-vintage-quilt-mat": {
+  "name": "Grandmother \"Martha\" Vintage Quilt",
+  "brand": "Middle & Main Mahjong",
+  "flag": "no_flat_photo",
+  "note": "quilt mat shot at an angle on a porch table with a lamp; store products.json (checked Oct 20) has no flat product photo"
+ },
+ "www.middleandmainmahjong.com/grandmother-kathryn-vintage-quilt-mat": {
+  "name": "Grandmother \"Kathryn\" Vintage Quilt",
+  "brand": "Middle & Main Mahjong",
+  "flag": "no_flat_photo",
+  "note": "quilt mat shot at an angle on a porch table with a lamp; store products.json (checked Oct 20) has no flat product photo"
  }
 }
