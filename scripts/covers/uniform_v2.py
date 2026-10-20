@@ -38,6 +38,7 @@ def content_mask(k=''):
     if k != 'coquette': m[540:800, 140:945] = True   # Coquette's ribbon tails run down the sides
     if k in VAULT: m[960:1062, 150:930] = True
     return m
+BOLD = {}
 def lift_logo(a, y0=300):
     xa, xb = 230, 850; wh = white_alpha(a[y0:900, xa:xb]) > .5
     rows = wh.sum(axis=1) > 3; bl, s0 = [], None
@@ -55,7 +56,10 @@ def lift_logo(a, y0=300):
     for i in range(1, n):   # drop thin decorative rules beside the logo (they read as leftover lines)
         x, y, w, h, area = st[i]
         if h <= 9 and w >= 35: al[lab == i] = 0
-    im = Image.new('RGBA', (al.shape[1], al.shape[0]), (251, 246, 238, 255)); im.putalpha(Image.fromarray((al * 255).astype(np.uint8))); return im
+    if BOLD.get('on'):   # Coquette: LoveShackFancy line is hairline-thin, so thicken + solidify the lower (LSF) part
+        cut = int(al.shape[0] * .76); low = al[cut:].astype(np.float32)
+        low = cv2.dilate(np.clip(low * 2.2, 0, 1), np.ones((3, 3), np.uint8)); al = al.copy(); al[cut:] = low
+    im = Image.new('RGBA', (al.shape[1], al.shape[0]), (251, 246, 238, 255)); im.putalpha(Image.fromarray((np.clip(al, 0, 1) * 255).astype(np.uint8))); return im
 def rebuild_panel(a, k):
     obs = panel_obs(a); a = a.astype(float); pan = a[PY0:PY1, PX0:PX1]
     wa = white_alpha(pan)
@@ -87,7 +91,7 @@ for k in sys.argv[2:]:
     REF['lum'] = float(panel_obs(a).min())
     if k == 'sunday-tile-set': logo = f'<img src="{C}holiday/sunday_white.png" style="display:block;height:150px">'
     elif k == 'cypress-forest': logo = f'<img src="{R}builder/logos/mahjongrowco_0.png" style="display:block;height:250px;margin:-30px 0 -20px">'
-    elif k in LIFT: lift_logo(a, 395 if k == 'coquette' else 300).save(tmp + '/logo.png'); logo = f'<img src="{tmp}/logo.png" style="display:block;max-width:600px">'
+    elif k in LIFT: (BOLD.update(on=(k == 'coquette')) or lift_logo(a, 395 if k == 'coquette' else 300)).save(tmp + '/logo.png'); logo = f'<img src="{tmp}/logo.png" style="display:block;max-width:600px">'
     else: logo = f'<img src="{C}holiday/omm_white.png" style="display:block;height:160px">'
     Image.fromarray(rebuild_panel(a, k)).save(tmp + '/bg.png')
     n, t2 = title(k)
