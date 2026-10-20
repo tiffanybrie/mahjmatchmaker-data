@@ -64,7 +64,7 @@ def build(img,tgt):
 .mml .ft{{text-align:center;margin-top:22px;font-size:12px;opacity:.75}}.mml .ft img{{width:26px;vertical-align:middle}}
 </style>
 <div class="mml">
-<div class="hd"><img class="hs" src="{img('headshot.png')}" alt="Tiffany of Mahj Matchmaker"><img class="lg" src="{img('logo.png')}" alt="Mahj Matchmaker"><div class="tag">Hooking up tiles, mats &amp; racks 💕</div><img class="omm" src="{img('omm.png')}" alt="Oh My Mahjong certified instructor"></div>
+<div class="hd"><img class="hs" src="{img('headshot-chambray.png')}" alt="Tiffany of Mahj Matchmaker"><img class="lg" src="{img('logo.png')}" alt="Mahj Matchmaker"><div class="tag">Hooking up tiles, mats &amp; racks 💕</div><img class="omm" src="{img('omm.png')}" alt="Oh My Mahjong certified instructor"></div>
 <!-- FIND YOUR MATCH: first and biggest link (Tiffany, Oct 15 6:58pm).
      NOTE: /find-your-match is the PLANNED page. It goes live on launch day (Mahj Matchmaker 2.0, doc 54);
      until then this link would 404, so the page and this link launch together. -->
