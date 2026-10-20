@@ -1,0 +1,43 @@
+{
+ "note": "Retired audit Oct 20: items that are NOT gallery additions, but need a fix or a decision. Companion to retired_additions_oct20.json.",
+ "items": [
+  {
+   "name": "Serengeti 2",
+   "brand": "Oh My Mahjong",
+   "fym_key": "alb2:oh-my-mahjong-serengeti-2",
+   "finding": "Same mat as Serengeti (Pearlescent album card shows the regular Serengeti design). Duplicate entry, not a separate retired mat; Serengeti is already in the gallery Retired section. FYM hid=1 in locks.json (no flag note; consistent with duplicate). Action: none for gallery; optional rename on the Pearlescent album card from 'Serengeti 2' to 'Serengeti'."
+  },
+  {
+   "name": "Enchanted 2",
+   "brand": "Oh My Mahjong",
+   "fym_key": "alb2:oh-my-mahjong-enchanted-2",
+   "finding": "Same mat as OMM Enchanted (already in gallery Retired). Duplicate entry; FYM hid=1 in locks.json. Action: none for gallery; optional rename on Pearlescent album."
+  },
+  {
+   "name": "Regal Bloom",
+   "brand": "Oh My Mahjong (wrong) -> Britt Mills",
+   "fym_key": "alb2:oh-my-mahjong-regal-bloom",
+   "finding": "Pearlescent album card is the Britt Mills Regal Bloom Neoprene mat (tiger, scalloped), mislabeled Oh My Mahjong + Retired. brittmillsdesign.com/products/regal-bloom-neoprene-mahjong-mat is still listed (sold out, available=false), so NOT retired. FYM hides it: hidden_oct20.csv 'wrong image: shows the Britt Mills Regal Bloom Neoprene mat'. Britt Mills Regal Bloom (britt-mills--regal-bloom-neoprene, clean photo in assets/mats/gallery/) is in held-low-98.json, so it is also missing from the gallery. Action (needs Tiffany OK): relabel album card as Britt Mills, drop Retired, link the Britt Mills product; unhold britt-mills--regal-bloom-neoprene in the gallery as a normal (sold out) mat."
+  },
+  {
+   "name": "Vintage Floral",
+   "brand": "Bespoke Mahjong",
+   "finding": "Live site labels it Retired on 5 albums (Drake, Heritage, Heritage 2.0, Malachite, Tortoise) but bespokemahjong.com still sells it and it's in stock (handles cheetah-couture-instructional-mat-copy 'VINTAGE FLORAL MAT' and copy-of-leopard-floral 'VINTAGE FLORAL', available=true, Oct 20). Gallery v4 correctly shows it as live. Action: remove the Retired pill on those 5 album cards and restore the shop link (needs Tiffany OK)."
+  },
+  {
+   "name": "Darjeeling",
+   "brand": "Oh My Mahjong",
+   "finding": "Albums say 'retiring soon' (Cypress Forest, Smith). Still sold and in stock on ohmymahjong.com (darjeeling-mat-w-tube). Not retired; watch it."
+  },
+  {
+   "name": "Cognac",
+   "brand": "Oh My Mahjong",
+   "finding": "Cypress Forest album card shows 'This mat is retired' note; gallery v4 calls it One to watch (mat gone from OMM products.json, only the Cognac folio/bag remain). The site and gallery disagree; Tiffany to decide which label wins."
+  },
+  {
+   "name": "Holly Jolly / Liberty",
+   "brand": "Oh My Mahjong",
+   "finding": "Already in gallery Retired section; no action."
+  }
+ ]
+}

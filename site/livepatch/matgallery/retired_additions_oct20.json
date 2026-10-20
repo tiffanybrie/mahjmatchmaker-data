@@ -1,0 +1,88 @@
+[
+ {
+  "img": "assets/mats/gallery-retired-new/tigre-de-tartan--holy-mahj.jpg",
+  "gallery_id": "tigre-de-tartan--holy-mahj-retired",
+  "name": "Holy Mahj",
+  "full_name": "HOLY MAHJ Mahjong Gaming Mat, Bluest Blooms (Holy Mahj x Tigre de Tartan collab)",
+  "brand": "Tigre de Tartan",
+  "status": "retired",
+  "evidence": "Gone from tigredetartan.com: not in products.json (119 products, Oct 20); old product handles holy-mahj-mahjong-gaming-mat-bluest-blooms-copy and paige-spearin-gaming-mat-bunny-love-copy (titled 'HOLY MAHJ Mahjong Gaming Mat, Bluest Blooms' in search results) both 404. Site already labels it Retired on 4 albums (Drake, Heritage, Heritage 2.0, Malachite).",
+  "colors": {
+   "primary": "blue",
+   "also": [
+    "green",
+    "neutral"
+   ],
+   "tags": [
+    "florals"
+   ]
+  },
+  "photo_source": "Crop of Tiffany's Drake album card (images.squarespace-cdn.com .../12-drake-mahjong-tiles-tigre-de-tartan-holy-mahj-mat.jpg?format=2500w), mat-only region, no tiles/racks. STOPGAP: zoomed center of the mat, not a full flat product shot. No brand photo found (TdT pages 404, Wayback unreachable, stockists Jones & Daughters / Five Gold Monkeys don't list it). Ask Tiffany for her own flat photo of the mat if she has one.",
+  "fym_key": "alb2:tigre-de-tartan-holy-mahj",
+  "fym_hidden_reason": "mat_photo_flags.json flag no_mat: FYM photo m/1037.webp is a 'Photo coming soon' placeholder (also ph=true). Fix: swap in this photo, clear the flag, keep rt=true."
+ },
+ {
+  "img": "assets/mats/gallery-retired-new/tigre-de-tartan--queen-bee.jpg",
+  "gallery_id": "tigre-de-tartan--queen-bee-retired",
+  "name": "Queen Bee",
+  "brand": "Tigre de Tartan",
+  "status": "retired",
+  "evidence": "Gone from tigredetartan.com: not in products.json (Oct 20); guessed handles (mahjong-mat-queen-bee, queen-bee etc.) 404. Site labels it Retired on the Willow album.",
+  "colors": {
+   "primary": "blue",
+   "also": [
+    "green"
+   ],
+   "tags": [
+    "florals",
+    "pastel"
+   ]
+  },
+  "photo_source": "Crop of Willow album card (images.squarespace-cdn.com .../32-willow-mahjong-tiles-tigre-de-tartan-queen-bee-mat.jpg?format=2500w): one corner of the mat (sky blue field, lily-of-the-valley border, bee). STOPGAP, weakest photo of the set: shows a corner only. No brand photo found.",
+  "fym_key": "alb2:tigre-de-tartan-queen-bee",
+  "fym_hidden_reason": "mat_photo_flags.json flag no_mat: FYM photo m/1041.webp is a 'Photo coming soon' placeholder (ph=true)."
+ },
+ {
+  "img": "assets/mats/gallery-retired-new/oh-my-mahjong--peri-twinkle.jpg",
+  "gallery_id": "oh-my-mahjong--peri-twinkle-retired",
+  "name": "Peri-twinkle",
+  "brand": "Oh My Mahjong",
+  "status": "retired",
+  "evidence": "Not on ohmymahjong.com products.json (278 products, Oct 20; only a Periwinkle card folio). Site labels it Retired on Coquette, Luminaire, Pearlescent, Taylor albums. Already rt=true in FYM.",
+  "colors": {
+   "primary": "blue",
+   "also": [
+    "purple",
+    "pink"
+   ],
+   "tags": [
+    "pastel"
+   ]
+  },
+  "photo_source": "Repo assets/mats/omm-retired/peri-twinkle.jpg (clean flat product render), resized 640.",
+  "fym_key": "alb:coquette:Peri-twinkle",
+  "fym_hidden_reason": "Not hidden in FYM (visible, rt=true). Missing from gallery only because its id is in site/livepatch/matgallery/held-low-98.json (low-confidence hold) - fix by adding to crosstags unhold.imgs."
+ },
+ {
+  "img": "assets/mats/gallery-retired-new/oh-my-mahjong--garden-party.jpg",
+  "gallery_id": "oh-my-mahjong--garden-party-retired",
+  "name": "Garden Party",
+  "brand": "Oh My Mahjong",
+  "status": "retired",
+  "evidence": "Not on ohmymahjong.com products.json (Oct 20). Site labels it Retired on Coquette, Limoncello, Luminaire, Taylor albums. Already rt=true in FYM.",
+  "colors": {
+   "primary": "green",
+   "also": [
+    "pink",
+    "yellow"
+   ],
+   "tags": [
+    "pastel",
+    "florals"
+   ]
+  },
+  "photo_source": "Repo assets/mats/omm-retired/garden-party.jpg (clean flat product render), resized 640.",
+  "fym_key": "alb:limoncello:Garden Party",
+  "fym_hidden_reason": "Not hidden in FYM (visible, rt=true). Missing from gallery only because it is in held-low-98.json - add to unhold."
+ }
+]
