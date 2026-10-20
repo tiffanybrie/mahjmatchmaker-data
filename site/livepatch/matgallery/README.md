@@ -30,3 +30,17 @@ Rebuild: `python3 build_v2.py <mat-audit report.csv> <phash pairs.json> > matgal
 - OMM Cognac: not retired; no shop button; "One to watch" badge. Rule: label Retired only when confirmed gone.
 - Chip order: colors, Neutral & Ivory, Earthy, Dark & Moody, Black & White, Pastels, Brights, Multicolor Florals, Animal Prints, Holiday, Retired.
 - FYM family mapping for the new sections is written up in config/tiffany-color-notes/2026-10-20-v4-calls.json (`fym_family_map`); FYM code not changed.
+
+## v5 (Oct 20 night): `matgallery-v5.html`, built by `build_v5.py` (NOT live; the main session publishes)
+Rebuild: `python3 ../../../scripts/colors/build_accents.py` then `python3 build_v5.py ../../../builder/fym_fix_oct20/mat_audit_report.csv phash_pairs_oct20.json <image commit> > matgallery-v5.html` (writes v5_counts.json, config/mat-also-claude-v5.json); `python3 build_check_these.py` -> v5_check_these.json.
+- Images: jsDelivr base pinned at 5dcf9bd (adds the 53 new + 2 retired webps); all 805 card image URLs warmed, 0 failing.
+- **53 new mats** (Tiffany's ShopMy shop: Etsy / Betty June & Jeannette / Sophie Clima, plus Tala Mahj, Mahj & Vine Citrus Grove, CMC Cabana umbrella): rows in new53_rows.json, ShopMy links kept for Etsy rows. Colors from Claude looking at each photo: config/tiffany-color-notes/2026-10-20-new53-claude-tags.json (by claude-photo-review; never a Tiffany call). 42 shown; 10 hidden (text overlay / lifestyle / props on the mat) + 1 duplicate (CMC Cabana umbrella = existing Cabana Club). "Etsy shop (name TBD)" shows as brand "Etsy".
+- **Simple** (chip "Simple", between Black & White and Pastels): solids, or a border with a clean plain middle. Replaces Pastels/Brights; color sections kept. crosstags `simple` (Amahj = Tiffany, rest = Claude photo review of every v4 Pastels/Brights mat + the 53).
+- **Pastels -> Brights re-check** (soft background + bold saturated graphics reads Brights): crosstags `mood_fix`; her Lucky Charms Watercolor call in the v5 calls file.
+- **Tiffany's v5 calls**: config/tiffany-color-notes/2026-10-20-v5-calls.json. `final_sections` win over every crosstag (jungle, primary_fix...), keep mood + tonal tags; `mood_calls`, `accent_calls` (hers replace measured accents), `coprimary` (Darjeeling sorts with Green primaries), `photo_flags`.
+- **Three tiers per color section**: primary, then also, then accent-only (Mahjong Studios last within each tier; also-tier sorted by tag position). Accents: config/mat-accent-colors.json (claude-measured, built by scripts/colors/build_accents.py: >=12% of measured area, Teal >=15%, Dark >=20%, Neutral >=45%; tan/cream/jade remapped; B&W never an accent). A color Tiffany removed never comes back as an accent. Holiday mats: measured colors count only in combos.
+- **Claude second colors**: for mats she hasn't called, a color covering >=15% becomes an also-color unless it's a neighbouring hue of the primary (config/mat-also-claude-v5.json).
+- **Multi-select (AND)**: tap 2+ chips -> one list "Mats with A + B" (all three tiers, primary first), tap again to unselect, "All / Clear" resets, friendly empty message. Retired chip + Hide retired unchanged.
+- **Retired additions**: Holy Mahj + Queen Bee (stopgap crops) added; Peri-twinkle + Garden Party unheld. Other retired corrections not applied (wait on Tiffany).
+- **Excluded forever**: crosstags `remove_mats` (Amore Mahjong Manor Garden, Tiffany).
+- Tested at 390px in Playwright: no console errors, no sideways scroll, every new mat in its sections, combos/unselect/clear OK.
