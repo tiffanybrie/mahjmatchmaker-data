@@ -56,9 +56,14 @@ def rebuild_panel(a, k):
     obs = panel_obs(a); a = a.astype(float); pan = a[PY0:PY1, PX0:PX1]
     wa = white_alpha(pan)
     # soft underlay: the photo around the panel, blurred into the panel area
-    small = cv2.resize(a.astype(np.uint8), (135, 169), interpolation=cv2.INTER_AREA)
-    m = np.zeros(small.shape[:2], np.uint8); m[PY0 // 8:PY1 // 8 + 1, PX0 // 8:PX1 // 8 + 1] = 255
-    under = cv2.resize(cv2.inpaint(small, m, 6, cv2.INPAINT_TELEA), (1080, 1350), interpolation=cv2.INTER_CUBIC).astype(float)
+    top = a[0:PY0, PX0:PX1]; bot = a[PY1:1350, PX0:PX1]
+    stack = np.concatenate([top, top[::-1], top, top[::-1]], axis=0)[:PY1 - PY0]   # mirrored joins = no seams
+    st = stack.astype(np.float32); bl = cv2.GaussianBlur(st, (0, 0), 14)
+    wgt = np.zeros(st.shape[0], np.float32)
+    for j in range(PY0 - 0, st.shape[0] + 1, PY0):     # soften every mirror join
+        d = np.abs(np.arange(st.shape[0]) - j); wgt = np.maximum(wgt, np.clip(1 - d / 70, 0, 1))
+    st = st * (1 - wgt[:, None, None]) + bl * wgt[:, None, None]
+    under = a.copy(); under[PY0:PY1, PX0:PX1] = st
     um = np.median(under[PY0:PY1, PX0:PX1].reshape(-1, 3), axis=0)
     P = np.array(PANEL[k], float) if k in PANEL else np.clip((obs - (1 - A) * um) / A, 0, 255)
     out = a.copy(); out[PY0:PY1, PX0:PX1] = A * P + (1 - A) * under[PY0:PY1, PX0:PX1]
