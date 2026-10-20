@@ -51,6 +51,10 @@ def lift_logo(a, y0=300):
     t, bt = logo[0][0] + y0 - 4, logo[-1][1] + y0 + 4
     al = white_alpha(a[t:bt, xa:xb]); cols = np.nonzero((al > .3).sum(axis=0))[0]; l, r = cols.min() - 4, cols.max() + 5
     al = al[:, max(l, 0):r]
+    n, lab, st, _ = cv2.connectedComponentsWithStats((al > .2).astype(np.uint8))
+    for i in range(1, n):   # drop thin decorative rules beside the logo (they read as leftover lines)
+        x, y, w, h, area = st[i]
+        if h <= 9 and w >= 35: al[lab == i] = 0
     im = Image.new('RGBA', (al.shape[1], al.shape[0]), (251, 246, 238, 255)); im.putalpha(Image.fromarray((al * 255).astype(np.uint8))); return im
 def rebuild_panel(a, k):
     obs = panel_obs(a); a = a.astype(float); pan = a[PY0:PY1, PX0:PX1]
