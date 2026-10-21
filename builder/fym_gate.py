@@ -494,6 +494,14 @@ if os.path.exists(_tu):
         want_ = it_['status'] == 'coming_soon' and (_on_all or k_ in _on or any(x in _on for x in _bt[tk_]))
         if bool(T[tk_].get('soon')) != want_: F.append(f"[30] {it_['name']}: Photo coming soon is {'on' if T[tk_].get('soon') else 'off'} but the switch says {'on' if want_ else 'off'}")
 
+# 30b one picker photo per tile (Oct 21 QA: a truncated pile key made 4 Heirloom sets show the same photo)
+_pk = {}
+for tk_, t_ in T.items():
+    if t_.get('hid') or not any(s_['tile'] == tk_ and vis(s_) for s_ in D['sets']): continue
+    _pk.setdefault(t_.get('pile'), []).append(t_.get('n') or tk_)
+for k_, ns_ in _pk.items():
+    if k_ and len(ns_) > 1: F.append(f"[30b] tiles share one picker photo key {k_}: {ns_[:4]}")
+
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
     for b, v in sorted(W.items()): print(f"  {b} ({len(v)}): " + ', '.join(v[:8]) + (' ...' if len(v) > 8 else ''))

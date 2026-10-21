@@ -39,7 +39,7 @@ for key, it in U.items():
         im = Image.open(REPO + src).convert('RGB'); slug = ss[0]['slug']
         full = im.copy(); full.thumbnail((1000, 1000)); fn = f't71/{slug}.jpg'; full.save(os.path.join(B, fn), quality=88)
         w, hh = im.size; q = min(w, hh); pp = im.crop(((w - q) // 2, (hh - q) // 2, (w - q) // 2 + q, (hh - q) // 2 + q)).resize((360, 360), Image.LANCZOS)
-        b = io.BytesIO(); pp.save(b, 'JPEG', quality=84); pk = 'p71' + slug.replace('-', '')[:24]
+        b = io.BytesIO(); pp.save(b, 'JPEG', quality=84); import hashlib; pk = 'p71' + hashlib.md5(slug.encode()).hexdigest()[:10]  # unique (a truncated slug collided: 4 Heirloom sets showed one photo)
         IMGS[pk] = 'data:image/jpeg;base64,' + base64.b64encode(b.getvalue()).decode()
         T[tk].update(full=fn, pile=pk, src=src); T[tk].pop('cs', None); T[tk].pop('soon', None)
         if locked:
