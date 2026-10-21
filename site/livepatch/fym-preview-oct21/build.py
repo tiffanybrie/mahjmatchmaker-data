@@ -9,7 +9,7 @@ Sections: hero (lockup, Find *Your* Mat-ch(TM), one line, big Start button, Papa
 -> Good to know (FAQ) -> match albums strip -> quiet disclosure.
 
 App: static copy of the live artifact 6epA9HuEdT32zUp79Qv3kd, v69 = scratchpad build fym-oct21e (gate PASS).
-  index.html pinned on branch fym-site-preview @474dd62 (site-app/fym-oct21e/index.html); every other file is identical to
+  index.html pinned on branch fym-site-preview @0269672 (site-app/fym-oct21f/index.html = v70); every other file is identical to
   fym-oct21d, so <base> points at site-app/fym-oct21d/ on the same commit. jsDelivr serves .html as text/plain + nosniff,
   so the HTML is fetched and run in a same-origin srcdoc iframe.
   To ship a newer FYM build: push its index.html (and any changed files) to fym-site-preview, then update APP_INDEX/APP_BASE.
