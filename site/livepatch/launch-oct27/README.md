@@ -8,7 +8,7 @@ A one-time scheduled task ("Launch day: switch homepage hero + remove announceme
 **Launch time source:** `docs/content-strategy-oct-dec.md`, Tue Oct 27 row: launch row post 1 "Find *Your* Mat-ch™ is live" carousel, IG feed, Auto **9am** (that doc's times are Central, CDT until Nov 1). HQ `hq/launchPlan` gives the date (Tue Oct 27) but no time.
 
 ## Where the hero lives
-Homepage (`/`), first page section `69b1d01489d0f8016ee3d59f` (fluid engine, background image `loveshackfancy-coquette-mahjong-tiles-fleur-mat.jpg`, focal point 0.5,0.5). Two **native** Squarespace blocks, no code block.
+Homepage (`/`), first page section `69b1d01489d0f8016ee3d59f` (fluid engine, background image `papaya-spritz-mahjong-tiles-vivienne-mat-hero.jpg` since Oct 21 afternoon, focal point 0.62,0.5; was `loveshackfancy-coquette-mahjong-tiles-fleur-mat.jpg`, 0.5,0.5). Two **native** Squarespace blocks, no code block.
 
 ## The launch hero (updated Oct 21 afternoon)
 Tiffany, Oct 21 12:55pm: "The Find Your Match hero cannot just be over the Coquette LoveShackFancy graphic. The homepage has to be completely a new graphic there that showcases Find Your Match." So launch day swaps the **background image** too, not just the words.
@@ -21,7 +21,7 @@ The design is the one already shown to her in Ready to Ship (`site/livepatch/nav
 
 | Piece | Now | Launch |
 |---|---|---|
-| Section background image | LoveShackFancy Coquette Fleur photo | `find-your-match-mahjong-hero-desktop.jpg` (2400×1500, uploaded) |
+| Section background image | Papaya Spritz on Vivienne photo (OMM, since Oct 21; was Coquette Fleur) | `find-your-match-mahjong-hero-desktop.jpg` (2400×1500, uploaded) |
 | Text block `block-b79726a6f150a9dd219f` | H1 `Find the Perfect Mahjong Match` / H4 `Match mahjong tiles, mats, and racks across brands` | H1 `Find Your Mat-ch™ is here` ("Your" in italics = `<em>`) / H4 `Start with your tiles or your mat and swipe your perfect match.` (`after-text-block.html`) |
 | Button block `block-yui_3_17_2_1_1773260945246_2648` | `Find Your Match` → `/mahjong-tile-matches` | `Start swiping` → `/find-your-match` |
 | NEW text block in the hero | (none) | `or browse the albums` (link `/mahjong-tile-matches`) + `Use code MAHJMATCH to save at 30+ partner brands` (`hero-graphic/links-block.html`) |
@@ -70,12 +70,12 @@ Use your OWN Chrome tab (tabs_create_mcp) at `https://hexaflexagon-denim-nhf4.sq
    - `curl -s "https://www.mahjmatchmaker.com/?v=$RANDOM"` contains `Find Your Mat-ch™ is here` (or `Mat-ch&trade;`), `Start with your tiles or your mat and swipe your perfect match.`, `Start swiping` and `href="/find-your-match"`; and does NOT contain `Find the Perfect Mahjong Match`.
    - `grep -o 'announcementBarSettings.\{0,40\}'` shows `"style":1` (off) and no `arrives 10.27`. Check a second page too (`/oh-my-mahjong-discount-code`).
    - `/find-your-match` returns 200.
-   - The homepage HTML references the new background (`find-your-match-mahjong-hero-desktop` in the hero section) and no longer `loveshackfancy-coquette-mahjong-tiles-fleur-mat` in that section; it contains `<em>Your</em>`, `or browse the albums` and `30+ partner brands`.
+   - The homepage HTML references the new background (`find-your-match-mahjong-hero-desktop` in the hero section) and no longer `papaya-spritz-mahjong-tiles-vivienne-mat-hero` (nor the old `loveshackfancy-coquette-mahjong-tiles-fleur-mat`) in that section; it contains `<em>Your</em>`, `or browse the albums` and `30+ partner brands`.
    - The custom CSS file (the `static/custom-css/…/custom.css` link in the page head) contains `Launch hero: Find Your Mat-ch` and the pinned mobile jsDelivr URL.
-   - Render with local Playwright (`PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers`, temp in /dev/shm) at 390x844 and 1280x800 (full section height), save to `qa/live-launch-390.png` / `qa/live-launch-1280.png`, and LOOK at them next to `hero-graphic/previews/hero-launch-390.png` / `-1280.png`: same layout (1280: pill + headline + line + button + links on the left, card fan on the right; 390: text stacked, fan under it), no white panel, no Coquette photo, no bar, no sideways scroll at 390. (The header nav already overflows sideways at 1280 today; that is not from this change.)
+   - Render with local Playwright (`PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers`, temp in /dev/shm) at 390x844 and 1280x800 (full section height), save to `qa/live-launch-390.png` / `qa/live-launch-1280.png`, and LOOK at them next to `hero-graphic/previews/hero-launch-390.png` / `-1280.png`: same layout (1280: pill + headline + line + button + links on the left, card fan on the right; 390: text stacked, fan under it), no white panel, no Papaya/Vivienne (or Coquette) photo, no bar, no sideways scroll at 390. (The header nav already overflows sideways at 1280 today; that is not from this change.)
 
 ## Rollback
-- Hero: put back the H1 `Find the Perfect Mahjong Match` and H4 `Match mahjong tiles, mats, and racks across brands` (`before/text-block-b79726a6f150a9dd219f.html`); button text `Find Your Match`, link `/mahjong-tile-matches`; delete the small links block; background image back to the Coquette Fleur photo (`assets/hero/loveshackfancy-coquette-fleur-mat-hero.jpg`, same upload method). Save, Exit.
+- Hero: put back the H1 `Find the Perfect Mahjong Match` and H4 `Match mahjong tiles, mats, and racks across brands` (`before/text-block-b79726a6f150a9dd219f.html`); button text `Find Your Match`, link `/mahjong-tile-matches`; delete the small links block; background image back to the Papaya Spritz on Vivienne photo that was live from Oct 21 (`assets/hero/papaya-spritz-mahjong-tiles-vivienne-mat-hero.jpg`, pinned `https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@a0183ef7ce15d25aa44cefffb72a1d6abf483afb/assets/hero/papaya-spritz-mahjong-tiles-vivienne-mat-hero.jpg`, focal point 0.62,0.5, same upload method). Save, Exit. (The older Coquette Fleur photo, `assets/hero/loveshackfancy-coquette-fleur-mat-hero.jpg`, is retired; don't restore it.)
 - CSS: delete everything from `/* ===== Launch hero: Find Your Mat-ch` to `/* ===== end launch hero ===== */` in Custom CSS, Save. (Removing only the CSS while the new image stays leaves a cream hero with the fan behind centred text: fix the image too.)
 - Bar (if it should come back): Website Tools > Announcement Bar > on; message `Find Your Mat-ch™ arrives 10.27 · Get notified` with "Your" italic; link `/find-your-match`; Save. (After launch, a bar would need new copy; don't restore "arrives 10.27".)
 
