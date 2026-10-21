@@ -33,7 +33,18 @@ with sync_playwright() as p:
         pg.evaluate("document.querySelectorAll('#fymx img').forEach(i=>i.loading='eager')")
         pg.wait_for_timeout(9000)
         r = pg.evaluate(CHECK); r['swap'] = ok; r['errs'] = errs
-        pg.screenshot(path=os.path.join(OUT, f'fym-page-{w}.png'), full_page=True)
+        # stitched viewport shots (Chromium full_page drops some lazy images on this site)
+        from PIL import Image; import io
+        H = pg.evaluate("document.documentElement.scrollHeight"); shots = []; y = 0
+        while y < H:
+            pg.evaluate(f"window.scrollTo(0,{y})"); pg.wait_for_timeout(700)
+            sy = pg.evaluate("window.scrollY"); shots.append((sy, Image.open(io.BytesIO(pg.screenshot()))))
+            if sy + h >= H: break
+            y += h
+        sheet = Image.new('RGB', (w, H), 'white')
+        for sy, im in shots: sheet.paste(im, (0, sy))
+        sheet.save(os.path.join(OUT, f'fym-page-{w}.png'))
+        pg.evaluate("window.scrollTo(0,0)"); pg.wait_for_timeout(500)
         pg.query_selector('#fymx [data-fx-go]').click(); pg.wait_for_timeout(1500)
         pg.screenshot(path=os.path.join(OUT, f'fym-app-{w}.png'))
         r['afterStart'] = pg.evaluate("Math.round(document.getElementById('fx-stage').getBoundingClientRect().top)")

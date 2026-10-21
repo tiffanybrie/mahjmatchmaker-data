@@ -18,7 +18,7 @@ import os, html
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 CDN = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@'
-ASSET = CDN + '8952b136784680ba365a33d7ae13ba91a25ab561/assets/site/fym-page/'
+ASSET = CDN + '44563dd1c2c4d9a00aa3deec61b1d86ccfdbcaf8/assets/site/fym-page/'
 WORDMARK = CDN + '8952b136784680ba365a33d7ae13ba91a25ab561/assets/brand/mahjmatchmaker-wordmark-notag.png'
 APP_COMMIT = '474dd62e5bc5d8ee78de79422d11e1f82b07be16'
 APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-oct21e/index.html'
@@ -32,10 +32,10 @@ FAN = [
     ('papaya-spritz-mahj-and-vine-greenly-fan-3.webp', 'Papaya Spritz tiles on the Greenly mat by Mahj & Vine'),
 ]
 STEPS = [
-    ('fym-step1-pick-tiles-or-mat.webp', 860, 1215, 'Pick your tiles or your&nbsp;mat',
+    ('fym-step1-pick-tiles-or-mat.webp', 860, 1376, 'Pick your tiles or your&nbsp;mat',
      'Start with the tile set you own, or flip it and start with your mat. Shop by color or search by&nbsp;name.',
      'Find Your Mat-ch start screen: I have tiles or I have a mat, color chips and tile sets'),
-    ('fym-step2-swipe-papaya-heiress.webp', 600, 1145, 'Swipe <span class="x">&#10005;</span> or <span class="h">&#9829;</span>',
+    ('fym-step2-swipe-papaya-heiress.webp', 640, 1024, 'Swipe <span class="x">&#10005;</span> or <span class="h">&#9829;</span>',
      'Tap &#9829; on the mats you love and &#10005; on the ones that aren&rsquo;t the one. Tiffany&rsquo;s own picks come&nbsp;first.',
      'Swiping mats for Papaya Spritz tiles: the Heiress mat by Britt Mills, with the X and heart buttons'),
     ('fym-step3-match-card-papaya-heiress.webp', 800, 1000, 'Save your match&nbsp;card',
@@ -92,13 +92,13 @@ CSS = r'''
 .fx-under b{color:var(--navy);letter-spacing:.04em}
 .fx-under a{color:var(--navy);font-weight:700;text-decoration:underline;text-decoration-color:var(--blush);text-underline-offset:3px;text-decoration-thickness:2px}
 /* fan */
-.fx-fan{position:relative;width:min(100%,430px);margin:0 auto;aspect-ratio:430/470}
-.fx-fan figure{position:absolute;top:9%;left:50%;width:61%;margin:0;border-radius:16px;overflow:hidden;border:7px solid #fff;background:#fff;box-shadow:0 22px 50px rgba(6,42,85,.22),0 4px 12px rgba(6,42,85,.1)}
+.fx-fan{position:relative;width:min(100%,430px);margin:0 auto;aspect-ratio:430/500}
+.fx-fan figure{position:absolute;top:13%;left:50%;width:61%;margin:0;border-radius:16px;overflow:hidden;border:7px solid #fff;background:#fff;box-shadow:0 22px 50px rgba(6,42,85,.22),0 4px 12px rgba(6,42,85,.1)}
 .fx-fan figure img{width:100%;height:auto}
 .fx-fan .c1{transform:translateX(-50%) rotate(-1.5deg);z-index:3}
 .fx-fan .c2{transform:translateX(-96%) translateY(7%) rotate(-11deg) scale(.86);z-index:1}
 .fx-fan .c3{transform:translateX(-4%) translateY(7%) rotate(10deg) scale(.86);z-index:2}
-.fx-stamp{position:absolute;z-index:5;left:50%;top:3.5%;transform:translateX(-50%) rotate(-5deg);background:var(--heart);color:#fff;font:700 clamp(26px,7vw,36px)/1 'Caveat',cursive;padding:.16em .7em .22em;border-radius:14px;white-space:nowrap;box-shadow:0 10px 24px rgba(214,83,122,.38)}
+.fx-stamp{position:absolute;z-index:5;left:50%;top:1%;transform:translateX(-50%) rotate(-5deg);background:var(--heart);color:#fff;font:700 clamp(26px,7vw,36px)/1 'Caveat',cursive;padding:.16em .7em .22em;border-radius:14px;white-space:nowrap;box-shadow:0 10px 24px rgba(214,83,122,.38)}
 .fx-sw{position:absolute;z-index:5;left:50%;bottom:0;transform:translateX(-50%);display:flex;gap:22px}
 .fx-sw span{width:66px;height:66px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px rgba(6,42,85,.2);font-family:Arial,sans-serif}
 .fx-sw .no{color:#8d97ad;font-size:28px}.fx-sw .yes{color:var(--heart);font-size:32px}
@@ -117,8 +117,9 @@ CSS = r'''
 .fx-steps{display:grid;grid-template-columns:1fr;gap:26px;list-style:none;margin:0 auto!important;padding:0!important;max-width:1080px}
 .fx-step{background:var(--cream);border-radius:26px;padding:22px 22px 26px;display:flex;flex-direction:column;align-items:center;text-align:center;margin:0!important}
 .fx-step::before{display:none!important}
-.fx-shot{width:100%;max-width:300px;aspect-ratio:4/5;border-radius:22px;overflow:hidden;background:#fff;border:6px solid #fff;box-shadow:0 14px 32px rgba(6,42,85,.14);margin-bottom:20px}
+.fx-shot{width:100%;max-width:300px;aspect-ratio:5/8;border-radius:22px;overflow:hidden;background:#fff;border:6px solid #fff;box-shadow:0 14px 32px rgba(6,42,85,.14);margin-bottom:20px}
 .fx-shot img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.fx-shot.card{background:#f6ede4;display:flex;align-items:center}.fx-shot.card img{height:auto;object-fit:contain}
 .fx-num{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;font:400 22px/42px 'Caprasimo',Georgia,serif;margin:0 auto 10px}
 .fx-step h3{font-size:clamp(24px,5.4vw,28px);margin-bottom:8px}
 .fx-step h3 .x{color:#8d97ad;font-family:Arial,sans-serif;font-size:.85em}
@@ -128,7 +129,7 @@ CSS = r'''
 /* app */
 .fx-app{position:relative;padding:56px 0 64px;background:radial-gradient(circle at 12% 18%,var(--pc) 0,var(--pc) 13%,transparent 13.2%),radial-gradient(circle at 90% 82%,var(--pc) 0,var(--pc) 16%,transparent 16.2%),#fdf3f7;scroll-margin-top:var(--fx-off,0px)}
 .fx-app .fx-head{text-align:center;margin-bottom:20px}
-.fx-app .fx-head p{font-size:16px;color:#4b4560;margin-top:8px!important}
+.fx-app .fx-head p:not(.fx-kick){font-size:16px;color:#4b4560;margin-top:8px!important}
 .fx-bar{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:0 auto 14px;padding:0 16px}
 .fx-pill{display:inline-flex;align-items:center;gap:.45em;min-height:44px;padding:0 18px;border-radius:999px;border:2px solid var(--blush);background:#fff;color:var(--navy)!important;font:700 15px/1 'Bitter',Georgia,serif;text-decoration:none!important;cursor:pointer}
 .fx-pill:hover{border-color:var(--rose)}
@@ -183,11 +184,11 @@ html.fx-lock-scroll,html.fx-lock-scroll body{overflow:hidden!important}
 /* albums */
 .fx-albums{background:var(--cream);padding:60px 0 54px}
 .fx-albums .fx-head{text-align:center;margin-bottom:26px}
-.fx-albums .fx-head p{font:500 18px/1.5 'Lora',Georgia,serif;color:var(--navy2);margin-top:10px!important}
+.fx-albums .fx-head p:not(.fx-kick){font:500 18px/1.5 'Lora',Georgia,serif;color:var(--navy2);margin-top:10px!important}
 .fx-covers{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:1080px;margin:0 auto}
 .fx-covers a{display:block;text-decoration:none!important;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 10px 24px rgba(6,42,85,.1);transition:transform .15s ease}
 .fx-covers a:hover{transform:translateY(-3px)}
-.fx-covers img{width:100%;aspect-ratio:1;object-fit:cover}
+.fx-covers img{width:100%;height:auto!important;aspect-ratio:4/5;object-fit:cover}
 .fx-covers span{display:block;padding:10px 8px 12px;text-align:center;font:700 15px/1.2 'Bitter',Georgia,serif;color:var(--navy)}
 @media (min-width:700px){.fx-covers{grid-template-columns:repeat(3,1fr)}}
 @media (min-width:1000px){.fx-covers{grid-template-columns:repeat(6,1fr)}}
@@ -227,6 +228,7 @@ JS = r'''
     get(4).then(function(t){
       t=t.replace(/<head>/i,'<head><base href="'+BASE+'"><style>html{scrollbar-width:thin;scrollbar-color:#f3b9cb transparent}[data-door] *{text-wrap:balance}</style>');
       fr.addEventListener('load',function(){ld.style.display='none';});
+      var tries=0,poll=setInterval(function(){tries++;try{var d=fr.contentDocument;if(d&&d.querySelector('#app .top')){ld.style.display='none';clearInterval(poll);}}catch(e){}if(tries>200)clearInterval(poll);},300);
       fr.srcdoc=t;
     }).catch(function(){ld.className+=' err';ld.innerHTML='The app did not load. Please refresh the page.';});
   }
@@ -251,16 +253,16 @@ FS_ICON = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-wid
 def build():
     fan = ''.join(f'<figure class="c{i + 1}"><img src="{ASSET}{f}" alt="{html.escape(a)}" width="760" height="874"{" fetchpriority=\"high\"" if i == 0 else " loading=\"lazy\""} decoding="async"></figure>'
                   for i, (f, a) in enumerate(FAN))
-    steps = ''.join(f'<li class="fx-step"><div class="fx-shot"><img src="{ASSET}{f}" alt="{html.escape(alt)}" width="{w}" height="{h}" loading="lazy" decoding="async"></div>'
+    steps = ''.join(f'<li class="fx-step"><div class="fx-shot{" card" if n == 2 else ""}"><img src="{ASSET}{f}" alt="{html.escape(alt)}" width="{w}" height="{h}" loading="lazy" decoding="async"></div>'
                     f'<div class="fx-num">{n + 1}</div><h3>{t}</h3><p>{p}</p></li>'
                     for n, (f, w, h, t, p, alt) in enumerate(STEPS))
     faq = ''.join(f'<details{" open" if i == 0 else ""}><summary>{q}</summary><p>{a}</p></details>' for i, (q, a) in enumerate(FAQ))
-    covers = ''.join(f'<a href="/{slug}-mahjong-tile-matches"><img src="{img}" alt="{name} mahjong tile matches album" loading="lazy" decoding="async" width="800" height="800"><span>{name}</span></a>'
+    covers = ''.join(f'<a href="/{slug}-mahjong-tile-matches"><img src="{img}" alt="{name} mahjong tile matches album" loading="lazy" decoding="async" width="800" height="1000"><span>{name}</span></a>'
                      for slug, name, img in ALBUMS)
     body = f'''<div id="fymx">
 <section class="fx-hero"><div class="fx-wrap">
 <div class="fx-copy">
-<div class="fx-lock"><img src="{WORDMARK}" alt="Mahj Matchmaker" width="826" height="112"><b>MATCHING MAHJONG TILES, MATS &amp; RACKS</b></div>
+<p class="fx-kick">New from Mahj Matchmaker</p>
 <h1>Find <em>Your</em> <span class="nb">Mat-ch<sup>&trade;</sup></span></h1>
 <p class="fx-lede">Pick your tiles or your mat, then swipe through the mats that bring out their best&nbsp;colors.</p>
 <a class="fx-btn" href="#fymx-app" data-fx-go>Start swiping <span aria-hidden="true">&#9829;</span></a>
