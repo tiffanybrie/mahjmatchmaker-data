@@ -439,6 +439,12 @@ Never put drop shadows or other effects on text.
 - 2026-10-21 11:38 (Tiffany): **"Happy mat-ching!" is an approved exception**: a casual, punny sign-off for emails, FB group posts and other casual correspondence. Use where it fits, not every time. Other sign-offs: "💗 Tiffany".
 - 2026-10-21 11:38 (Tiffany): **Affiliate disclosure = the most subtle COMPLIANT option.** Default: "(affiliate)" right after the code line ("Code MAHJMATCH (affiliate) 💗") in IG, FB, Pinterest and group posts that push a code or shop link. This replaces the trailing #affiliate hashtag. Never on visuals. Not needed on posts with no code or shop link.
 - 2026-10-21 11:39 (Tiffany): **Two taglines, two jobs.** "Matching mahjong tiles, mats & racks" = the DESCRIPTOR: logo ribbon lockup, website, bios, Amazon/ShopMy, SEO, partner/brand-facing pieces. "Hooking up tiles, mats & racks" = the PLAYFUL line: social and character content (the dating/hotline pieces, "It's a mat-ch!" cards, reel end cards). Never both on one piece. When unsure: brand-facing or search = Matching; funny social = Hooking up.
+- 2026-10-21 11:44–11:50 (Tiffany): **Names first, gender only when it's clear.**
+  - Short pieces ("It's a mat-ch!" cards, pills, captions): use the set's NAME ("Papaya's matches"), never her/his, so first-time viewers aren't confused.
+  - Narrative pieces (reels, profile carousels) can use a gender ONLY when the set clearly reads that way. Female: Amara, Papaya Spritz, Pearlescent, Dandy, Taylor, Jade, Solara. Male: Heritage, Smith, Origami Timber, Osler, Malachite, Cypress, Gatsby, Drake (the woodsy/handsome-guy sets are established; keep them).
+  - Ambiguous sets (e.g. Sunday, Sierra): don't gender them. Use the name and describe their PERSONALITY/style instead. Sunday = vintage Bakelite throwback, butterscotch backs, retro and classic.
+  - Never equate a palette with a gender ("earthy = masculine"). Describe the style instead: earthy, mid-century mod, vintage, classic.
+  - Not every set needs a gender.
 
 ## VERIFY list
 
