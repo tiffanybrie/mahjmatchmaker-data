@@ -1,0 +1,29 @@
+{
+ "_note": "Sunset + Vivienne match card (Tiffany Oct 21 7:15pm: Vivienne matches Papaya Spritz so it matches Sunset too). Run: python3 scripts/albumcard/gen2.py scripts/albumcard/specs/sunset_vivienne.json assets/cards/sunset-vivienne",
+ "mat_file": "assets/launches/omm-vivienne-mat/01.jpg",
+ "mat_crop": [
+  0,
+  0,
+  2195,
+  2195
+ ],
+ "mat_key": "vivienne",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "sunset",
+   "set": "sunset",
+   "order": 1,
+   "title": "Sunset + Vivienne",
+   "col": "#e8743b",
+   "tile_file": "assets/tiles/album/sunset.jpg",
+   "tilefit": "cover",
+   "file": "sunset-mahjong-tiles-oh-my-mahjong-vivienne-mat.jpg",
+   "racks": [
+    "Oh My Mahjong White Acrylic",
+    "Oh My Mahjong Hot Pink"
+   ],
+   "code": "10% OFF  USE CODE : MAHJMATCH"
+  }
+ ]
+}
