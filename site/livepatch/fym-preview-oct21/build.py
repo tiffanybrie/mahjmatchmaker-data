@@ -142,7 +142,7 @@ CSS = r'''
 .fx-ld i{width:44px;height:44px;border-radius:50%;border:4px solid var(--pc);border-top-color:var(--rose);animation:fxspin 1s linear infinite}
 .fx-ld.err i{display:none}.fx-ld.err{color:var(--rose)}
 @keyframes fxspin{to{transform:rotate(360deg)}}
-.fx-x{display:none;position:absolute;z-index:3;top:calc(10px + env(safe-area-inset-top,0px));right:10px;min-height:40px;padding:0 14px;border-radius:999px;border:0;background:var(--navy);color:#fff;font:700 14px/1 'Bitter',Georgia,serif;cursor:pointer;box-shadow:0 6px 16px rgba(6,42,85,.3)}
+.fx-x{display:none;position:absolute;z-index:3;top:calc(12px + env(safe-area-inset-top,0px));left:8px;min-height:38px;padding:0 12px;border-radius:999px;border:0;background:var(--navy);color:#fff;font:700 13px/1 'Bitter',Georgia,serif;cursor:pointer;box-shadow:0 6px 16px rgba(6,42,85,.3)}
 .fx-stage.fs{position:fixed!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;border-radius:0!important;z-index:2147483000;margin:0!important;border:0!important}
 .fx-stage.fs .fx-x{display:block}
 html.fx-lock-scroll,html.fx-lock-scroll body{overflow:hidden!important}
@@ -216,7 +216,7 @@ JS = r'''
     root.style.marginLeft=(-pr.left)+'px';root.style.width=cw+'px';
     var off=hdr(),vh=window.innerHeight||de.clientHeight;root.style.setProperty('--fx-off',off+'px');
     if(stage.classList.contains('fs'))return;
-    var h=cw<760?vh-off-56:Math.min(vh-off-56,940);
+    var h=cw<760?vh-off-48:Math.min(vh-off-48,940);
     stage.style.height=Math.max(cw<760?520:600,Math.round(h))+'px';
   }
   size();addEventListener('resize',size);addEventListener('load',size);[300,1000,2500].forEach(function(t){setTimeout(size,t)});
@@ -235,7 +235,8 @@ JS = r'''
   if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){if(es.some(function(e){return e.isIntersecting})){start();io.disconnect();}},{rootMargin:'1400px 0px'});io.observe(stage);}
   setTimeout(start,2500);
   function go(e){if(e)e.preventDefault();start();size();var sec=document.getElementById('fymx-app');
-    var y=sec.getBoundingClientRect().top+(window.pageYOffset||de.scrollTop)-hdr()+ (de.clientWidth<760?sec.querySelector('.fx-head').offsetHeight+40:20);
+    var vh=window.innerHeight||de.clientHeight,off=hdr(),r=stage.getBoundingClientRect();
+    var y=r.top+(window.pageYOffset||de.scrollTop)-Math.max(off,Math.round((vh-off-r.height)/2)+off);
     window.scrollTo({top:y,behavior:'smooth'});}
   [].forEach.call(root.querySelectorAll('[data-fx-go]'),function(a){a.addEventListener('click',go)});
   function fs(on){start();stage.classList.toggle('fs',on);de.classList.toggle('fx-lock-scroll',on);if(!on)size();
