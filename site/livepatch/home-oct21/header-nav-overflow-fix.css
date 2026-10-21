@@ -1,0 +1,15 @@
+/* STAGED, NOT APPLIED (Oct 21). Fixes the sideways scroll on desktop (1024-1499px):
+   the 9-item header nav does not shrink (.header-nav has min-width:auto, list is nowrap),
+   so at 1280 the nav ends at x=1494 and the document is 1494px wide.
+   This lets the nav shrink and wrap onto a second right-aligned line when it doesn't fit.
+   Tested on the live page via Playwright: scrollWidth = viewport at 1024/1280/1440/1600/1920;
+   1024-1440 wrap to 2 rows (Blog / Community / About on row 2), 1600+ stays on 1 row.
+   To apply: paste into Design > Custom CSS. Screenshot: qa/round2_navfix_1280.png */
+@media screen and (min-width:768px){
+  .header-display-desktop .header-title-nav-wrapper,
+  .header-display-desktop .header-nav{min-width:0!important}
+  .header-display-desktop .header-nav-wrapper{max-width:100%!important}
+  .header-display-desktop .header-nav-list{flex-wrap:wrap!important;justify-content:flex-end!important;row-gap:4px}
+  .header-display-desktop .header-nav-item:not(:first-child){margin-left:clamp(10px,1.1vw,19px)!important}
+  .header-display-desktop .header-nav-item a{font-size:clamp(14px,1.15vw,16px)!important;white-space:nowrap}
+}

@@ -82,3 +82,12 @@ Rollback copies are in `source/oct21-1222/before_text_block-*.html`.
 - **Site footer email:** delete the text block `e8109705861a998b09f0` (`<h4>mahjmatchmaker@gmail.com</h4>`) from the site footer.
 - **Contact link:** in footer text block `bb7bd9c8aa5441149846`, the line becomes `Private Lessons | Rentals | Contact`, with Contact linking to /contact.
 - **/contact page:** none exists today (/contact and /contact-us both return 404). Create a page "Contact" at /contact, not in the main nav. Add a heading ("Say hi!" / "Contact Mahj Matchmaker") and one Form block with Name, Email and Message (all required). Set Storage to Email → mahjmatchmaker@gmail.com and the submit button to "Send". Post-submit message: "Thanks! I'll get back to you soon. 💗 Tiffany".
+
+## Round 2 LIVE (Oct 21, ~1:00pm)
+- Block 5194 replaced with `live-paste_...5194.html` (commit 0731398, includes the QA fix: Raven blurb now "Terracotta marble tiles (those backs!) on the Mahjong Row & Co. Mocha Bloom Dark mat, with translucent plum racks and black lace. ..."). curl of the live page: block content is byte-identical to the staged file.
+- Album list text block (22142): 8 inline names replaced by one centered link "Browse all tile match albums →" to /mahjong-tile-matches.
+- Site footer: email block e8109705861a998b09f0 deleted; footer line now "Private Lessons | Rentals | Contact" (Contact → /contact).
+- New page /contact (Not Linked): "Say hi!" + form (First/Last Name, Email, Message, all required), button "Send", post-submit "Thanks! I'll get back to you soon. 💗 Tiffany". Notifications go to the account default email (tiffanybrie@gmail.com), not mahjmatchmaker@gmail.com.
+- Hero section 69b1d01489d0f8016ee3d59f not touched.
+- Staged, not applied: `header-nav-overflow-fix.css` (desktop sideways scroll).
+- Screenshots: qa/round2_live_*.
