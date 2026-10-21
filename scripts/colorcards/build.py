@@ -85,6 +85,14 @@ def sq(im, n):
 def rmask(n, r):
     m = Image.new('L', (n, n), 0); ImageDraw.Draw(m).rounded_rectangle((0, 0, n - 1, n - 1), radius=r, fill=255); return m
 
+def _bb_hex(nm):
+    """Oct 21: any other B&B colour comes from builder/bbracks.json (the B&B paint table), never a grey placeholder bar."""
+    try:
+        for r in json.load(open(R + 'builder/bbracks.json')):
+            if r.get('name') == nm: return hx(r['hex'])
+    except Exception: pass
+    return None
+
 def rack_strip(S, name, w, h, maxh=None):
     """Real rack photo (rack_imgs) or a Bird & Bamboo painted bar, returned RGBA w x h.
     maxh (Oct 19): tall rack photos (scalloped, tortoise) are scaled down to fit the row so they never cover the next label."""
@@ -94,7 +102,7 @@ def rack_strip(S, name, w, h, maxh=None):
         nh = max(8, int(im.height * w / im.width))
         if maxh and nh > maxh: return im.resize((max(8, int(im.width * maxh / im.height)), maxh), Image.LANCZOS)
         return im.resize((w, nh), Image.LANCZOS)
-    col = BB_RGB.get(name.replace('Bird & Bamboo ', ''), (200, 200, 200))
+    col = BB_RGB.get(name.replace('Bird & Bamboo ', '')) or _bb_hex(name.replace('Bird & Bamboo ', '')) or (200, 200, 200)
     im = Image.new('RGBA', (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     d.rounded_rectangle((0, 0, w - 1, h - 1), radius=5, fill=col)
     dk = tuple(max(0, int(v * .82)) for v in col); lt = tuple(min(255, int(v * 1.12)) for v in col)
