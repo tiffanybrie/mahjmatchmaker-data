@@ -1,0 +1,3503 @@
+{
+ "_about": "Tile photo audit Oct 21 (Tiffany 6:37, 6:44, 6:55, 6:57pm). status: upgrade (use proposed + frame), ok (keep current; frame given when a crop is needed), coming_soon (show \"Photo coming soon\" card; listed in tile_photo_requests.json). Not applied to build.",
+ "standard": "tiles isolated on plain/white/neutral background (no mat), tile back/layers + faces, pile ideal. Tiffany exceptions: big pile covering the mat is OK; Grandmillennial Pink, Tigre House of Hearts, Bamboo Sky kept.",
+ "sets": {
+  "amahj-foundation-beginner": {
+   "name": "Foundation Beginner",
+   "brand": "Amahj",
+   "tile_key": "amahjline.com/amahj-beginner-stamped-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/4.jpg",
+   "reason": "pile",
+   "product_url": "https://amahjline.com/products/amahj-beginner-stamped-tile-set",
+   "proposed": "assets/tiles/catalog-better/amahj-foundation-beginner.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0675/3805/9486/files/2BC1E439-9AF5-480C-8D98-DD58F6022E1D.png?v=1776095418",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "amahj-original-stamped": {
+   "name": "Original Stamped",
+   "brand": "Amahj",
+   "tile_key": "amahjline.com/amahj-set-blue",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/5.jpg",
+   "reason": "pile",
+   "product_url": "https://amahjline.com/products/amahj-set-blue",
+   "proposed": "assets/tiles/catalog-better/amahj-original-stamped.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0675/3805/9486/files/8CA60ADB-182C-4B56-99A0-604F4F24D4F7.png?v=1784825120",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "amahj-teal-coastal-signature": {
+   "name": "Teal Coastal Signature",
+   "brand": "Amahj",
+   "tile_key": "amahjline.com/coastal-set-bundle-green",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/1.jpg",
+   "reason": "pile",
+   "product_url": "https://amahjline.com/products/coastal-set-bundle-green",
+   "proposed": "assets/tiles/catalog-better/amahj-teal-coastal-signature.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0675/3805/9486/files/IMG-1307.jpg?v=1772126557",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "amahj-light-blue-signature": {
+   "name": "Light Blue Signature",
+   "brand": "Amahj",
+   "tile_key": "amahjline.com/coastal-set-green",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/7.jpg",
+   "reason": "pile",
+   "product_url": "https://amahjline.com/products/coastal-set-green",
+   "proposed": "assets/tiles/catalog-better/amahj-light-blue-signature.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0675/3805/9486/files/3D79FD41-89F3-4BFB-BC7B-282F3EAE1F06.jpg?v=1742921151",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "amahj-garden-stamped": {
+   "name": "Garden Stamped",
+   "brand": "Amahj",
+   "tile_key": "amahjline.com/garden-stamped-acrylic-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/0.jpg",
+   "reason": "pile",
+   "product_url": "https://amahjline.com/products/garden-stamped-acrylic-tile-set",
+   "proposed": "assets/tiles/catalog-better/amahj-garden-stamped.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0675/3805/9486/files/IMG-4913.png?v=1757937750",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "amahj-round-top-stamped": {
+   "name": "Round Top Stamped",
+   "brand": "Amahj",
+   "tile_key": "amahjline.com/homestead-stamped-tile-line",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/2.jpg",
+   "reason": "faces only, no back, no pile on a clean background",
+   "product_url": "https://amahjline.com/products/homestead-stamped-tile-line",
+   "frame": null
+  },
+  "amahj-pink-coastal-signature": {
+   "name": "Pink Coastal Signature",
+   "brand": "Amahj",
+   "tile_key": "amahjline.com/preorder-pink-coastal-signature-engraved-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/3.jpg",
+   "reason": "pile",
+   "product_url": "https://amahjline.com/products/preorder-pink-coastal-signature-engraved-tile-set",
+   "proposed": "assets/tiles/catalog-better/amahj-pink-coastal-signature.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0675/3805/9486/files/FA3FF378-2B17-4474-BD13-4D4C19925E9B.png?v=1742921738",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "amahj-lilac-signature": {
+   "name": "Lilac Signature",
+   "brand": "Amahj",
+   "tile_key": "amahjline.com/signature-engraved-tile-set-lilac-preorder",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/8.jpg",
+   "reason": "pile",
+   "product_url": "https://amahjline.com/products/signature-engraved-tile-set-lilac-preorder",
+   "proposed": "assets/tiles/catalog-better/amahj-lilac-signature.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0675/3805/9486/files/AD15B798-DA19-4324-9EE7-CA5E513EB4E1.jpg?v=1764645215",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "amahj-navy-signature": {
+   "name": "Navy Signature",
+   "brand": "Amahj",
+   "tile_key": "amahjline.com/signature-engraved-tile-set-navy-preorder",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/9.jpg",
+   "reason": "pile",
+   "product_url": "https://amahjline.com/products/signature-engraved-tile-set-navy-preorder",
+   "proposed": "assets/tiles/catalog-better/amahj-navy-signature.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0675/3805/9486/files/C1288766-9886-4683-AA68-4CB77B4E6131.png?v=1741355111",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "amahj-white-signature": {
+   "name": "White Signature",
+   "brand": "Amahj",
+   "tile_key": "amahjline.com/signature-set-white",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/6.jpg",
+   "reason": "pile",
+   "product_url": "https://amahjline.com/products/signature-set-white",
+   "proposed": "assets/tiles/catalog-better/amahj-white-signature.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0675/3805/9486/files/E8859999-1B4B-4D5E-AC26-C4158F03D042.png?v=1784825075",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "dear-santa": {
+   "name": "Dear Santa",
+   "brand": "Anders Ruff",
+   "tile_key": "hol:dear-santa",
+   "status": "ok",
+   "locked": true,
+   "hidden_now": false,
+   "current": "t10/37.jpg",
+   "reason": "isolated on white, backs + faces",
+   "product_url": "https://shop.andersruff.com/products/dear-santa-mahjong-tile-set",
+   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)"
+  },
+  "anders-ruff-bams-bubbly": {
+   "name": "Bams & Bubbly",
+   "brand": "Anders Ruff",
+   "tile_key": "shop.andersruff.com/bams-bubbly-mahjong-tiles",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/82.jpg",
+   "reason": "pile",
+   "product_url": "https://shop.andersruff.com/products/bams-bubbly-mahjong-tiles?sca_ref=12490265.xTtN8oMUj9qSk1",
+   "proposed": "assets/tiles/catalog-better/anders-ruff-bams-bubbly.webp",
+   "source_url": "https://cdn.shopify.com/s/files/1/0593/2200/7719/files/Tiles-Bams-and-Bubbly-Mahjong-902.webp?v=1779577629",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "anders-ruff-brownstone-bloom": {
+   "name": "Brownstone Bloom",
+   "brand": "Anders Ruff",
+   "tile_key": "shop.andersruff.com/brownstone-bloom-mahjong-tile-set",
+   "status": "ok",
+   "locked": true,
+   "hidden_now": false,
+   "current": "t15/79.jpg",
+   "reason": "existing custom pile",
+   "product_url": "https://shop.andersruff.com/products/brownstone-bloom-mahjong-tile-set?sca_ref=12490265.xTtN8oMUj9qSk1",
+   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)"
+  },
+  "anders-ruff-eau-de-mahj": {
+   "name": "Eau De Mahj",
+   "brand": "Anders Ruff",
+   "tile_key": "shop.andersruff.com/eau-de-mahj-mahjong-tile-set",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/80.jpg",
+   "reason": "only lifestyle/mat shots",
+   "product_url": "https://shop.andersruff.com/products/eau-de-mahj-mahjong-tile-set?sca_ref=12490265.xTtN8oMUj9qSk1",
+   "frame": null
+  },
+  "anders-ruff-house-of-hydrangea": {
+   "name": "House of Hydrangea",
+   "brand": "Anders Ruff",
+   "tile_key": "shop.andersruff.com/house-of-hydrangea-mahjong-tile-set",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/81.jpg",
+   "reason": "only lifestyle/mat shots",
+   "product_url": "https://shop.andersruff.com/products/house-of-hydrangea-mahjong-tile-set?sca_ref=12490265.xTtN8oMUj9qSk1",
+   "frame": null
+  },
+  "anders-ruff-mahj-in-bloom": {
+   "name": "Mahj in Bloom",
+   "brand": "Anders Ruff",
+   "tile_key": "shop.andersruff.com/mahj-in-bloom-mahjong-tile-set",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/78.jpg",
+   "reason": "piles sit on patterned mat",
+   "product_url": "https://shop.andersruff.com/products/mahj-in-bloom-mahjong-tile-set?sca_ref=12490265.xTtN8oMUj9qSk1",
+   "frame": null
+  },
+  "bam-bird-boutique-boots-bubbles": {
+   "name": "Boots & Bubbles",
+   "brand": "Bam Bird Boutique",
+   "tile_key": "www.bambirdboutique.com/boots-bubbles-mahjong-tile-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/102.jpg",
+   "reason": "tray on white, backs + faces",
+   "product_url": "https://www.bambirdboutique.com/products/boots-bubbles-mahjong-tile-set?sca_ref=10069575.cf1ZUJEgbaOpCDgy"
+  },
+  "bam-bird-boutique-deco": {
+   "name": "Deco",
+   "brand": "Bam Bird Boutique",
+   "tile_key": "www.bambirdboutique.com/deco-tile-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/103.jpg",
+   "reason": "tray on white, backs + faces",
+   "product_url": "https://www.bambirdboutique.com/products/deco-tile-set?sca_ref=10069575.cf1ZUJEgbaOpCDgy"
+  },
+  "bam-bird-boutique-east-meets-west-tortoise-shell": {
+   "name": "East Meets West Tortoise Shell",
+   "brand": "Bam Bird Boutique",
+   "tile_key": "www.bambirdboutique.com/east-meets-west-tortoise-shell-tile-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/104.jpg",
+   "reason": "loose backs + tray on white",
+   "product_url": "https://www.bambirdboutique.com/products/east-meets-west-tortoise-shell-tile-set?sca_ref=10069575.cf1ZUJEgbaOpCDgy"
+  },
+  "giant-mahjong-tiles-set-of-3-for-decor": {
+   "name": "Giant Mahjong Tile (for decor)- sold as individual",
+   "brand": "Bam Bird Boutique",
+   "tile_key": "www.bambirdboutique.com/giant-mahjong-tiles-set-of-3-for-decor",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/99.jpg",
+   "reason": "giant decor tiles on lawn, not a set photo",
+   "product_url": "https://www.bambirdboutique.com/products/giant-mahjong-tiles-set-of-3-for-decor?sca_ref=10069575.cf1ZUJEgbaOpCDgy",
+   "frame": null
+  },
+  "bam-bird-boutique-mcm": {
+   "name": "Mcm",
+   "brand": "Bam Bird Boutique",
+   "tile_key": "www.bambirdboutique.com/mcm-mahjong-tile-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/101.jpg",
+   "reason": "tray on white, backs + faces",
+   "product_url": "https://www.bambirdboutique.com/products/mcm-mahjong-tile-set?sca_ref=10069575.cf1ZUJEgbaOpCDgy"
+  },
+  "mischief-mahj-tiles-tastings-event-wed-oct-21": {
+   "name": "Mischief Mahj",
+   "brand": "Bam Bird Boutique",
+   "tile_key": "www.bambirdboutique.com/mischief-mahj-tiles-tastings-event-wed-oct-21",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/100.jpg",
+   "reason": "event flyer",
+   "product_url": "https://www.bambirdboutique.com/products/mischief-mahj-tiles-tastings-event-wed-oct-21?sca_ref=10069575.cf1ZUJEgbaOpCDgy",
+   "frame": null
+  },
+  "bam-bird-boutique-origami": {
+   "name": "Origami",
+   "brand": "Bam Bird Boutique",
+   "tile_key": "www.bambirdboutique.com/origami-tile-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/105.jpg",
+   "reason": "tray on white, backs + faces",
+   "product_url": "https://www.bambirdboutique.com/products/origami-tile-set?sca_ref=10069575.cf1ZUJEgbaOpCDgy"
+  },
+  "bam-bird-boutique-classic-mahjong-tile-set": {
+   "name": "Classic Mahjong Tile Set",
+   "brand": "Bam Bird Boutique",
+   "tile_key": "www.bambirdboutique.com/tiles-box-die",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/191.jpg",
+   "reason": "tray on white",
+   "product_url": "https://www.bambirdboutique.com/products/tiles-box-die?sca_ref=10069575.cf1ZUJEgbaOpCDgy"
+  },
+  "holly-jolly-green": {
+   "name": "Holly Jolly (Grinch Green)",
+   "brand": "Bam! Let's Mahjong",
+   "tile_key": "hol:holly-jolly-green",
+   "status": "coming_soon",
+   "locked": true,
+   "hidden_now": false,
+   "current": "t16/holly-jolly-green.jpg",
+   "reason": "tiles on holiday mat/frame in every brand image; LOCKED",
+   "product_url": "https://www.bamletsmahjong.com/products/holly-jolly-christmas-mahjong-tiles",
+   "frame": null,
+   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)"
+  },
+  "holly-jolly-pink": {
+   "name": "Holly Jolly (Sugarplum Pink)",
+   "brand": "Bam! Let's Mahjong",
+   "tile_key": "hol:holly-jolly-pink",
+   "status": "coming_soon",
+   "locked": true,
+   "hidden_now": false,
+   "current": "t16/holly-jolly-pink.jpg",
+   "reason": "holiday mat visible around pile; LOCKED",
+   "product_url": "https://www.bamletsmahjong.com/products/holly-jolly-christmas-mahjong-tiles",
+   "frame": null,
+   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)"
+  },
+  "holly-jolly-red": {
+   "name": "Holly Jolly (Rudolph Red)",
+   "brand": "Bam! Let's Mahjong",
+   "tile_key": "hol:holly-jolly-red",
+   "status": "coming_soon",
+   "locked": true,
+   "hidden_now": false,
+   "current": "t13/1.jpg",
+   "reason": "holiday mat visible around pile; LOCKED",
+   "product_url": "https://www.bamletsmahjong.com/products/holly-jolly-christmas-mahjong-tiles",
+   "frame": null,
+   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)"
+  },
+  "bam-let-s-mahjong-art-deco": {
+   "name": "Art Deco",
+   "brand": "Bam! Let's Mahjong",
+   "tile_key": "www.bamletsmahjong.com/art-deco-mahjong-tile-set",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/106.jpg",
+   "reason": "faces only, rest lifestyle on pattern",
+   "product_url": "https://www.bamletsmahjong.com/products/art-deco-mahjong-tile-set",
+   "frame": null
+  },
+  "bam-let-s-mahjong-hocus-pocus-halloween": {
+   "name": "Hocus Pocus Halloween",
+   "brand": "Bam! Let's Mahjong",
+   "tile_key": "www.bamletsmahjong.com/hocus-pocus-halloween-mahjong-tile-set",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/107.jpg",
+   "reason": "faces only, no back/pile",
+   "product_url": "https://www.bamletsmahjong.com/products/hocus-pocus-halloween-mahjong-tile-set",
+   "frame": null
+  },
+  "bam-let-s-mahjong-garden-party-sky-blue": {
+   "name": "Garden Party Sky Blue",
+   "brand": "Bam! Let's Mahjong",
+   "tile_key": "www.bamletsmahjong.com/mahjong-tiles-garden-party?v=45074672025758",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t11/119.jpg",
+   "reason": "pile sits on patterned stripe mat",
+   "product_url": "https://www.bamletsmahjong.com/products/mahjong-tiles-garden-party?variant=45074672025758",
+   "frame": null
+  },
+  "bam-let-s-mahjong-garden-party-petal-pink": {
+   "name": "Garden Party Petal Pink",
+   "brand": "Bam! Let's Mahjong",
+   "tile_key": "www.bamletsmahjong.com/mahjong-tiles-garden-party?v=45074672058526",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/117.jpg",
+   "reason": "fill-frame pink pile, no mat",
+   "product_url": "https://www.bamletsmahjong.com/products/mahjong-tiles-garden-party?variant=45074672058526"
+  },
+  "bam-let-s-mahjong-garden-party-sea-glass-green": {
+   "name": "Garden Party Sea-Glass Green",
+   "brand": "Bam! Let's Mahjong",
+   "tile_key": "www.bamletsmahjong.com/mahjong-tiles-garden-party?v=45074672091294",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/118.jpg",
+   "reason": "pile sits on patterned stripe mat",
+   "product_url": "https://www.bamletsmahjong.com/products/mahjong-tiles-garden-party?variant=45074672091294",
+   "frame": null
+  },
+  "bam-let-s-mahjong-garden-party-lavender-bloom": {
+   "name": "Garden Party Lavender Bloom",
+   "brand": "Bam! Let's Mahjong",
+   "tile_key": "www.bamletsmahjong.com/mahjong-tiles-garden-party?v=46738979881118",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/119.jpg",
+   "reason": "tray on plain white, back visible",
+   "product_url": "https://www.bamletsmahjong.com/products/mahjong-tiles-garden-party?variant=46738979881118"
+  },
+  "bam-let-s-mahjong-grandmillennial-pink": {
+   "name": "Grandmillennial Pink",
+   "brand": "Bam! Let's Mahjong",
+   "tile_key": "www.bamletsmahjong.com/mahjong-tiles-grandmillennial?v=45074671894686",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/114.jpg",
+   "reason": "Tiffany Oct 21 6:55pm: accepted, busy mat tolerable",
+   "product_url": "https://www.bamletsmahjong.com/products/mahjong-tiles-grandmillennial?variant=45074671894686",
+   "tiffany_call": "keep"
+  },
+  "bam-let-s-mahjong-grandmillennial-green": {
+   "name": "Grandmillennial Green",
+   "brand": "Bam! Let's Mahjong",
+   "tile_key": "www.bamletsmahjong.com/mahjong-tiles-grandmillennial?v=45074671927454",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/115.jpg",
+   "reason": "striped mat/frame visible behind pile",
+   "product_url": "https://www.bamletsmahjong.com/products/mahjong-tiles-grandmillennial?variant=45074671927454",
+   "frame": null
+  },
+  "bam-let-s-mahjong-grandmillennial-blue": {
+   "name": "Grandmillennial Blue",
+   "brand": "Bam! Let's Mahjong",
+   "tile_key": "www.bamletsmahjong.com/mahjong-tiles-grandmillennial?v=45074671960222",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/116.jpg",
+   "reason": "striped mat/frame visible behind pile",
+   "product_url": "https://www.bamletsmahjong.com/products/mahjong-tiles-grandmillennial?variant=45074671960222",
+   "frame": null
+  },
+  "bam-let-s-mahjong-mint-and-roses": {
+   "name": "Mint and Roses",
+   "brand": "Bam! Let's Mahjong",
+   "tile_key": "www.bamletsmahjong.com/mint-and-roses-mahjong-tile-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/110.jpg",
+   "reason": "faces + blue back on white",
+   "product_url": "https://www.bamletsmahjong.com/products/mint-and-roses-mahjong-tile-set"
+  },
+  "bam-let-s-mahjong-the-nantucket-coastal-blue": {
+   "name": "The Nantucket Coastal Blue",
+   "brand": "Bam! Let's Mahjong",
+   "tile_key": "www.bamletsmahjong.com/the-nantucket-tile-collection?v=46467195928734",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/108.jpg",
+   "reason": "faces + blue backs on white",
+   "product_url": "https://www.bamletsmahjong.com/products/the-nantucket-tile-collection?variant=46467195928734"
+  },
+  "bam-let-s-mahjong-the-nantucket-seaside-blue": {
+   "name": "The Nantucket Seaside Blue",
+   "brand": "Bam! Let's Mahjong",
+   "tile_key": "www.bamletsmahjong.com/the-nantucket-tile-collection?v=46467206021278",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/109.jpg",
+   "reason": "pile on striped mat; only isolated shot is the Coastal Blue one",
+   "product_url": "https://www.bamletsmahjong.com/products/the-nantucket-tile-collection?variant=46467206021278",
+   "frame": null
+  },
+  "bam-let-s-mahjong-the-palm-royale-lemon-drop": {
+   "name": "The Palm Royale Lemon Drop",
+   "brand": "Bam! Let's Mahjong",
+   "tile_key": "www.bamletsmahjong.com/the-palm-royale-tile-collection?v=45502168072350",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/111.jpg",
+   "reason": "pile",
+   "product_url": "https://www.bamletsmahjong.com/products/the-palm-royale-tile-collection?variant=45502168072350",
+   "proposed": "assets/tiles/catalog-better/bam-let-s-mahjong-the-palm-royale-lemon-drop.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0689/4377/3854/files/the-palm-royale-mahjong-tile-collection-and-matching-mat-mahjong-tiles-bam-lets-mahjong-8491268.jpg?v=1765316230",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "bam-let-s-mahjong-the-palm-royale-tangerine-twist": {
+   "name": "The Palm Royale Tangerine Twist",
+   "brand": "Bam! Let's Mahjong",
+   "tile_key": "www.bamletsmahjong.com/the-palm-royale-tile-collection?v=45502168105118",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/112.jpg",
+   "reason": "faces + back on plain gray",
+   "product_url": "https://www.bamletsmahjong.com/products/the-palm-royale-tile-collection?variant=45502168105118"
+  },
+  "bam-let-s-mahjong-the-palm-royale-strawberry-sangria": {
+   "name": "The Palm Royale Strawberry Sangria",
+   "brand": "Bam! Let's Mahjong",
+   "tile_key": "www.bamletsmahjong.com/the-palm-royale-tile-collection?v=46268379103390",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/113.jpg",
+   "reason": "pile",
+   "product_url": "https://www.bamletsmahjong.com/products/the-palm-royale-tile-collection?variant=46268379103390",
+   "proposed": "assets/tiles/catalog-better/bam-let-s-mahjong-the-palm-royale-strawberry-sangria.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0689/4377/3854/files/the-palm-royale-mahjong-tile-collection-and-matching-mat-mahjong-tiles-bam-lets-mahjong-5188021.jpg?v=1765316230",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "bespoke-mahjong-bespoke-x-corey-paige-color-crush-xl-mega": {
+   "name": "Bespoke X Corey Paige Color Crush XL Mega",
+   "brand": "Bespoke Mahjong",
+   "tile_key": "www.bespokemahjong.com/bespoke-x-corey-paige-color-crush-xl-mega-tiles-hottie-pink-1",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/124.jpg",
+   "reason": "only lifestyle/graphic; clean shot is faces only, no back",
+   "product_url": "https://www.bespokemahjong.com/products/bespoke-x-corey-paige-color-crush-xl-mega-tiles-hottie-pink-1?sca_ref=10217561.eoZg0pKJHSf8IQSE",
+   "frame": null
+  },
+  "bespoke-mahjong-grateful-dead-x-bespoke-mahjong-xl-mega": {
+   "name": "Grateful Dead x Bespoke Mahjong XL Mega",
+   "brand": "Bespoke Mahjong",
+   "tile_key": "www.bespokemahjong.com/bespoke-x-grateful-dead-xl-mega-tiles-stealie-light-blue",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/123.jpg",
+   "reason": "only lifestyle/graphic; clean shot is faces only",
+   "product_url": "https://www.bespokemahjong.com/products/bespoke-x-grateful-dead-xl-mega-tiles-stealie-light-blue?sca_ref=10217561.eoZg0pKJHSf8IQSE",
+   "frame": null
+  },
+  "bespoke-mahjong-bespoke-x-gray-malin-getaway-dogs-xl-mega": {
+   "name": "Bespoke X Gray Malin Getaway Dogs XL Mega",
+   "brand": "Bespoke Mahjong",
+   "tile_key": "www.bespokemahjong.com/bespoke-x-gray-malin-getaway-dogs-xl-mega-tiles-bright-white",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/121.jpg",
+   "reason": "poolside lifestyle only",
+   "product_url": "https://www.bespokemahjong.com/products/bespoke-x-gray-malin-getaway-dogs-xl-mega-tiles-bright-white?sca_ref=10217561.eoZg0pKJHSf8IQSE",
+   "frame": null
+  },
+  "bespoke-mahjong-bespoke-x-gray-malin-beach-club": {
+   "name": "Bespoke X Gray Malin Beach Club",
+   "brand": "Bespoke Mahjong",
+   "tile_key": "www.bespokemahjong.com/gray-malin-beach-club-set-cabana-blue",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/120.jpg",
+   "reason": "lifestyle/mat only; clean shot faces only",
+   "product_url": "https://www.bespokemahjong.com/products/gray-malin-beach-club-set-cabana-blue?sca_ref=10217561.eoZg0pKJHSf8IQSE",
+   "frame": null
+  },
+  "holiday-mahjong-its-a-vibe-glitter-glow-tiles": {
+   "name": "Glitter Glow",
+   "brand": "Bespoke Mahjong",
+   "tile_key": "www.bespokemahjong.com/holiday-mahjong-its-a-vibe-glitter-glow-tiles",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/122.jpg",
+   "reason": "event flyer",
+   "product_url": "https://www.bespokemahjong.com/products/holiday-mahjong-its-a-vibe-glitter-glow-tiles?sca_ref=10217561.eoZg0pKJHSf8IQSE",
+   "frame": null
+  },
+  "bird-bamboo-the-allure": {
+   "name": "The Allure",
+   "brand": "Bird & Bamboo",
+   "tile_key": "birdandbamboo.com/the-allure-mahjong-tile-set",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/13.jpg",
+   "reason": "pink mat visible behind pile",
+   "product_url": "https://birdandbamboo.com/products/the-allure-mahjong-tile-set?sca_ref=10077785.SRjgzyw39OU7C",
+   "frame": null
+  },
+  "bird-bamboo-the-belle": {
+   "name": "The Belle",
+   "brand": "Bird & Bamboo",
+   "tile_key": "birdandbamboo.com/the-belle-mahjong-tile-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/14.jpg",
+   "reason": "fill-frame pile, no mat",
+   "product_url": "https://birdandbamboo.com/products/the-belle-mahjong-tile-set?sca_ref=10077785.SRjgzyw39OU7C"
+  },
+  "bird-bamboo-the-boho-chic": {
+   "name": "The Boho Chic",
+   "brand": "Bird & Bamboo",
+   "tile_key": "birdandbamboo.com/the-boho-chic-mahjong-tile-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/15.jpg",
+   "reason": "fill-frame pile, no mat",
+   "product_url": "https://birdandbamboo.com/products/the-boho-chic-mahjong-tile-set?sca_ref=10077785.SRjgzyw39OU7C"
+  },
+  "bird-bamboo-the-empress": {
+   "name": "The Empress",
+   "brand": "Bird & Bamboo",
+   "tile_key": "birdandbamboo.com/the-empress-mahjong-tile-set-coming-soon",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/12.jpg",
+   "reason": "pile on white",
+   "product_url": "https://birdandbamboo.com/products/the-empress-mahjong-tile-set-coming-soon?sca_ref=10077785.SRjgzyw39OU7C"
+  },
+  "bird-bamboo-the-iconic": {
+   "name": "The Iconic",
+   "brand": "Bird & Bamboo",
+   "tile_key": "birdandbamboo.com/the-iconic-mahjong-tile-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/10.jpg",
+   "reason": "pile on white",
+   "product_url": "https://birdandbamboo.com/products/the-iconic-mahjong-tile-set?sca_ref=10077785.SRjgzyw39OU7C"
+  },
+  "bird-bamboo-the-madeira": {
+   "name": "The Madeira",
+   "brand": "Bird & Bamboo",
+   "tile_key": "birdandbamboo.com/the-madeira-mahjong-tile-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/11.jpg",
+   "reason": "pile on white",
+   "product_url": "https://birdandbamboo.com/products/the-madeira-mahjong-tile-set?sca_ref=10077785.SRjgzyw39OU7C"
+  },
+  "charleston-mahjong-club-the-country-club-edition": {
+   "name": "The Country Club Edition",
+   "brand": "Charleston Mahjong Club",
+   "tile_key": "charlestonmahjongclub.com/the-country-club-edition",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t17/charleston-mahjong-club-the-country-club-edition.jpg",
+   "reason": "crop of brand image #13: faces rows + a full green tile back on plain aqua surface (was a corner peek). Tiffany 6:55pm",
+   "product_url": "https://charlestonmahjongclub.com/products/the-country-club-edition?sca_ref=10024640.r4MqWQJxOaKK",
+   "proposed": "assets/tiles/catalog-better/charleston-mahjong-club-the-country-club-edition.jpg",
+   "kind": "back visible",
+   "source_url": "https://charlestonmahjongclub.com/products/the-country-club-edition (image #13, cropped)",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1
+   }
+  },
+  "cmc-apres-ski": {
+   "name": "Après Ski Club",
+   "brand": "Charleston Mahjong Club",
+   "tile_key": "hol:cmc-apres-ski",
+   "status": "ok",
+   "locked": true,
+   "hidden_now": false,
+   "current": "t13/5.jpg",
+   "reason": "faces + back on plain surface; LOCKED",
+   "product_url": "https://www.charlestonmahjongclub.com/products/apres-ski-edition-tile-set",
+   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)"
+  },
+  "rackin-rudolph": {
+   "name": "Rackin' Rudolph",
+   "brand": "Hip Hip Mahjong",
+   "tile_key": "hol:rackin-rudolph",
+   "status": "coming_soon",
+   "locked": true,
+   "hidden_now": false,
+   "current": "t13/0.jpg",
+   "reason": "only image: tiles on busy holiday mat; LOCKED",
+   "product_url": "https://www.hiphipmahjong.com/products/rackin-rudolph-tiles",
+   "tiffany_call": "worst offender; brand has only this 1 image: coming_soon",
+   "frame": null,
+   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)"
+  },
+  "hip-hip-mahjong-birthday": {
+   "name": "Birthday",
+   "brand": "Hip Hip Mahjong",
+   "tile_key": "www.hiphipmahjong.com/birthday-mahjong-tiles",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/131.jpg",
+   "reason": "Tiffany: BIG pile showing backs + faces on a mat = OK",
+   "product_url": "https://www.hiphipmahjong.com/products/birthday-mahjong-tiles",
+   "tiffany_call": "keep"
+  },
+  "hip-hip-mahjong-celebration": {
+   "name": "Celebration",
+   "brand": "Hip Hip Mahjong",
+   "tile_key": "www.hiphipmahjong.com/celebration-tiles",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/132.jpg",
+   "reason": "only image: sparse tiles on busy mat",
+   "product_url": "https://www.hiphipmahjong.com/products/celebration-tiles",
+   "frame": null
+  },
+  "hip-hip-mahjong-hoppy-east-hare": {
+   "name": "Hoppy EAST-Hare",
+   "brand": "Hip Hip Mahjong",
+   "tile_key": "www.hiphipmahjong.com/hoppy-east-hare-mahjong-tiles",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/126.jpg",
+   "reason": "same rule as Birthday: big colourful pile covers the mat",
+   "product_url": "https://www.hiphipmahjong.com/products/hoppy-east-hare-mahjong-tiles",
+   "tiffany_call": "keep"
+  },
+  "hip-hip-mahjong-i-mahj": {
+   "name": "I ❤️ Mahj",
+   "brand": "Hip Hip Mahjong",
+   "tile_key": "www.hiphipmahjong.com/i-love-mahj-tiles",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/192.jpg",
+   "reason": "only image: tiles on patterned mat",
+   "product_url": "https://www.hiphipmahjong.com/products/i-love-mahj-tiles",
+   "tiffany_call": "just not going to work: coming_soon (single brand image)",
+   "frame": null
+  },
+  "hip-hip-mahjong-let-freedom-ring": {
+   "name": "Let Freedom Ring",
+   "brand": "Hip Hip Mahjong",
+   "tile_key": "www.hiphipmahjong.com/let-freedom-ring",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/130.jpg",
+   "reason": "only image: tiles on patterned mat",
+   "product_url": "https://www.hiphipmahjong.com/products/let-freedom-ring",
+   "tiffany_call": "just not going to work: coming_soon (single brand image)",
+   "frame": null
+  },
+  "hip-hip-mahjong-mahj-o-ween": {
+   "name": "Mahj-O-Ween",
+   "brand": "Hip Hip Mahjong",
+   "tile_key": "www.hiphipmahjong.com/mahj-o-ween-tiles",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/128.jpg",
+   "reason": "same rule as Birthday: big pile covers the mat",
+   "product_url": "https://www.hiphipmahjong.com/products/mahj-o-ween-tiles",
+   "tiffany_call": "keep"
+  },
+  "hip-hip-mahjong-nativity": {
+   "name": "Nativity",
+   "brand": "Hip Hip Mahjong",
+   "tile_key": "www.hiphipmahjong.com/nativity-mahjong-tiles",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/127.jpg",
+   "reason": "only image: tiles on mat, hand in shot",
+   "product_url": "https://www.hiphipmahjong.com/products/nativity-mahjong-tiles",
+   "frame": null
+  },
+  "hip-hip-mahjong-so-bam-grateful": {
+   "name": "So Bam Grateful",
+   "brand": "Hip Hip Mahjong",
+   "tile_key": "www.hiphipmahjong.com/so-bam-grateful-mahjong-tiles",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/125.jpg",
+   "reason": "only image: tiles on patterned mat",
+   "product_url": "https://www.hiphipmahjong.com/products/so-bam-grateful-mahjong-tiles",
+   "tiffany_call": "just not going to work: coming_soon (single brand image)",
+   "frame": null
+  },
+  "hip-hip-mahjong-the-house": {
+   "name": "The House",
+   "brand": "Hip Hip Mahjong",
+   "tile_key": "www.hiphipmahjong.com/the-house-tiles",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/129.jpg",
+   "reason": "same rule as Birthday: big pile covers the mat",
+   "product_url": "https://www.hiphipmahjong.com/products/the-house-tiles",
+   "tiffany_call": "keep"
+  },
+  "let-s-mahj-on-let-s-be-iconic-brilliant-pink": {
+   "name": "Let's Be Iconic! Brilliant Pink",
+   "brand": "Let's Mahj On",
+   "tile_key": "www.letsmahj-on.com/lets-be-iconic-brilliant-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/137.jpg",
+   "reason": "pile on seamless colour backdrop (backs + faces)",
+   "product_url": "https://www.letsmahj-on.com/products/lets-be-iconic-brilliant-tile-set",
+   "proposed": "assets/tiles/catalog-better/let-s-mahj-on-let-s-be-iconic-brilliant-pink.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0599/5475/7737/files/Iconic_Brilliant_Pile_square_RFC.jpg?v=1777942139",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "let-s-mahj-on-let-s-be-iconic-jeweled-purple": {
+   "name": "Let's Be Iconic! Jeweled Purple",
+   "brand": "Let's Mahj On",
+   "tile_key": "www.letsmahj-on.com/lets-be-iconic-purple-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/134.jpg",
+   "reason": "pile on seamless colour backdrop (backs + faces)",
+   "product_url": "https://www.letsmahj-on.com/products/lets-be-iconic-purple-tile-set",
+   "proposed": "assets/tiles/catalog-better/let-s-mahj-on-let-s-be-iconic-jeweled-purple.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0599/5475/7737/files/Iconic_Purple_Pile_square_RFC.jpg?v=1777941578",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "let-s-mahj-on-let-s-be-iconic-jeweled-green": {
+   "name": "Let's Be Iconic! Jeweled Green",
+   "brand": "Let's Mahj On",
+   "tile_key": "www.letsmahj-on.com/lets-be-iconic-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/139.jpg",
+   "reason": "pile on seamless colour backdrop (backs + faces)",
+   "product_url": "https://www.letsmahj-on.com/products/lets-be-iconic-tile-set",
+   "proposed": "assets/tiles/catalog-better/let-s-mahj-on-let-s-be-iconic-jeweled-green.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0599/5475/7737/files/Iconic_Jewel_Tabletop_square_RFC.jpg?v=1777942305",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "let-s-mahj-on-let-s-cocktail-party": {
+   "name": "Let's Cocktail Party!",
+   "brand": "Let's Mahj On",
+   "tile_key": "www.letsmahj-on.com/lets-cocktail-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/141.jpg",
+   "reason": "pile on seamless colour backdrop (backs + faces)",
+   "product_url": "https://www.letsmahj-on.com/products/lets-cocktail-tile-set",
+   "proposed": "assets/tiles/catalog-better/let-s-mahj-on-let-s-cocktail-party.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0599/5475/7737/files/Party_Pile_square_RFC.jpg?v=1777942468",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "let-s-mahj-on-let-s-game-set-mahj": {
+   "name": "Let's Game. Set. Mahj!",
+   "brand": "Let's Mahj On",
+   "tile_key": "www.letsmahj-on.com/lets-game-set-match-tennis-mahjong-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/136.jpg",
+   "reason": "pile on seamless colour backdrop (backs + faces)",
+   "product_url": "https://www.letsmahj-on.com/products/lets-game-set-match-tennis-mahjong-tile-set",
+   "proposed": "assets/tiles/catalog-better/let-s-mahj-on-let-s-game-set-mahj.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0599/5475/7737/files/Game_Set_Pile_square_RFC.jpg?v=1777941902",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "let-s-mahj-on-let-s-garden-party": {
+   "name": "Let's Garden Party!",
+   "brand": "Let's Mahj On",
+   "tile_key": "www.letsmahj-on.com/lets-garden-party-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/135.jpg",
+   "reason": "pile on seamless colour backdrop (backs + faces)",
+   "product_url": "https://www.letsmahj-on.com/products/lets-garden-party-tile-set",
+   "proposed": "assets/tiles/catalog-better/let-s-mahj-on-let-s-garden-party.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0599/5475/7737/files/Garden_Party_Pile_square_RFC.jpg?v=1777941829",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "let-s-mahj-on-let-s-get-nautical": {
+   "name": "Let's Get Nautical!",
+   "brand": "Let's Mahj On",
+   "tile_key": "www.letsmahj-on.com/lets-get-nautical-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/140.jpg",
+   "reason": "pile on seamless colour backdrop (backs + faces)",
+   "product_url": "https://www.letsmahj-on.com/products/lets-get-nautical-tile-set",
+   "proposed": "assets/tiles/catalog-better/let-s-mahj-on-let-s-get-nautical.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0599/5475/7737/files/Nautical_Pile_square_RFC.jpg?v=1777942418",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "let-s-mahj-on-let-s-get-tropical": {
+   "name": "Let's Get Tropical!",
+   "brand": "Let's Mahj On",
+   "tile_key": "www.letsmahj-on.com/lets-get-tropical-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/138.jpg",
+   "reason": "pile on seamless colour backdrop (backs + faces)",
+   "product_url": "https://www.letsmahj-on.com/products/lets-get-tropical-tile-set",
+   "proposed": "assets/tiles/catalog-better/let-s-mahj-on-let-s-get-tropical.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0599/5475/7737/files/Tropical_Pile_square_RFC.jpg?v=1777942255",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "let-s-mahj-on-let-s-wander": {
+   "name": "Let's Wander!",
+   "brand": "Let's Mahj On",
+   "tile_key": "www.letsmahj-on.com/lets-wander-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/133.jpg",
+   "reason": "pile on seamless colour backdrop (backs + faces)",
+   "product_url": "https://www.letsmahj-on.com/products/lets-wander-tile-set",
+   "proposed": "assets/tiles/catalog-better/let-s-mahj-on-let-s-wander.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0599/5475/7737/files/Wander_Pile_square_RFC.jpg?v=1777941714",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mac-miller-mahjong-red-white-blues-collection": {
+   "name": "Red White & Blues Collection",
+   "brand": "Mac + Miller Mahjong",
+   "tile_key": "www.macandmillermahjong.com/coming-soon-red-white-blues-collection",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/142.jpg",
+   "reason": "pile, no mat (watermarked by brand)",
+   "product_url": "https://www.macandmillermahjong.com/products/coming-soon-red-white-blues-collection",
+   "proposed": "assets/tiles/catalog-better/mac-miller-mahjong-red-white-blues-collection.webp",
+   "source_url": "https://cdn.shopify.com/s/files/1/0957/7991/4038/files/red-white-blues-collection-tile-set-shoreline-blue-tiles-156.webp?v=1789935564",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mac-miller-mahjong-heirloom-collection-fire-fortune-ember-fire": {
+   "name": "Heirloom Collection: Fire + Fortune Ember Fire (",
+   "brand": "Mac + Miller Mahjong",
+   "tile_key": "www.macandmillermahjong.com/heirloom-collection-fire-fortune-ember-fire-coming-soon",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/143.jpg",
+   "reason": "fill-frame pile, no mat (watermarked by brand)",
+   "product_url": "https://www.macandmillermahjong.com/products/heirloom-collection-fire-fortune-ember-fire-coming-soon"
+  },
+  "mac-miller-mahjong-heirloom-collection-fire-fortune-verdant-fortune": {
+   "name": "Heirloom Collection: Fire + Fortune Verdant Fortune",
+   "brand": "Mac + Miller Mahjong",
+   "tile_key": "www.macandmillermahjong.com/heirloom-collection-fire-fortune-verdant-fortune-coming-soon",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/144.jpg",
+   "reason": "fill-frame pile, no mat (watermarked by brand)",
+   "product_url": "https://www.macandmillermahjong.com/products/heirloom-collection-fire-fortune-verdant-fortune-coming-soon"
+  },
+  "mac-miller-mahjong-laissez-les-bons-temps-rouler-collection": {
+   "name": "Laissez Les Bons Temps Rouler Collection",
+   "brand": "Mac + Miller Mahjong",
+   "tile_key": "www.macandmillermahjong.com/laissez-les-bons-temps-rouler-tile-set-pre-order-ships-march-2026",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/145.jpg",
+   "reason": "tray on printed purple mat; no pile",
+   "product_url": "https://www.macandmillermahjong.com/products/laissez-les-bons-temps-rouler-tile-set-pre-order-ships-march-2026",
+   "frame": null
+  },
+  "mac-miller-mahjong-sweet-dreams-collection": {
+   "name": "Sweet Dreams Collection",
+   "brand": "Mac + Miller Mahjong",
+   "tile_key": "www.macandmillermahjong.com/sweet-dreams-collection-tile-set",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/146.jpg",
+   "reason": "faces only, no back/pile; rest lifestyle",
+   "product_url": "https://www.macandmillermahjong.com/products/sweet-dreams-collection-tile-set",
+   "frame": null
+  },
+  "mahj-mood-90s-taffy-pink": {
+   "name": "90s Taffy (Pink)",
+   "brand": "Mahj Mood",
+   "tile_key": "mahjmood.com/90s-tile-set?v=58077240328495",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/17.jpg",
+   "reason": "current is a colour-swatch graphic; no pink pile in brand images",
+   "product_url": "https://mahjmood.com/products/90s-tile-set?variant=58077240328495&ref=Mahjmatchmaker",
+   "frame": null
+  },
+  "mahj-mood-90s-pool-party-blue": {
+   "name": "90s Pool Party (Blue)",
+   "brand": "Mahj Mood",
+   "tile_key": "mahjmood.com/90s-tile-set?v=58077240361263",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t17/mahj-mood-90s-pool-party-blue.jpg",
+   "reason": "fill-frame pile, no mat",
+   "product_url": "https://mahjmood.com/products/90s-tile-set?variant=58077240361263&ref=Mahjmatchmaker"
+  },
+  "mahj-mood-ballerina-pink": {
+   "name": "Ballerina Pink",
+   "brand": "Mahj Mood",
+   "tile_key": "mahjmood.com/ballerina-pink-tiles",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/20.jpg",
+   "reason": "pile",
+   "product_url": "https://mahjmood.com/products/ballerina-pink-tiles?ref=Mahjmatchmaker",
+   "proposed": "assets/tiles/catalog-better/mahj-mood-ballerina-pink.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0944/7712/3887/files/0597B0F9-DDC0-4451-A68E-97124155D5B0.jpg?v=1770935664",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahj-mood-imperfect-serenity-mood": {
+   "name": "Imperfect Serenity Mood",
+   "brand": "Mahj Mood",
+   "tile_key": "mahjmood.com/imperfect-serenity-mood-tiles",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/19.jpg",
+   "reason": "pile on plain pink surface",
+   "product_url": "https://mahjmood.com/products/imperfect-serenity-mood-tiles?ref=Mahjmatchmaker",
+   "proposed": "assets/tiles/catalog-better/mahj-mood-imperfect-serenity-mood.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0944/7712/3887/files/39443283-34BB-4EEB-A4D3-518335AF1968.jpg?v=1766079175",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahj-mood-mauve-blush": {
+   "name": "Mauve-Blush",
+   "brand": "Mahj Mood",
+   "tile_key": "mahjmood.com/mauve-blush-tiles",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/18.jpg",
+   "reason": "pile on plain blue surface",
+   "product_url": "https://mahjmood.com/products/mauve-blush-tiles?ref=Mahjmatchmaker",
+   "proposed": "assets/tiles/catalog-better/mahj-mood-mauve-blush.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0944/7712/3887/files/garnet-tiles.jpg?v=1779331538",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahj-mood-radiant-mood-collection-white-pearl": {
+   "name": "Radiant Mood Collection White Pearl",
+   "brand": "Mahj Mood",
+   "tile_key": "mahjmood.com/radiant-mood-collection-full-size-white-pearl-tile-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/16.jpg",
+   "reason": "fill-frame pile, no mat",
+   "product_url": "https://mahjmood.com/products/radiant-mood-collection-full-size-white-pearl-tile-set?ref=Mahjmatchmaker"
+  },
+  "nutcracker-ballet": {
+   "name": "Nutcracker Ballet",
+   "brand": "Mahj Squad",
+   "tile_key": "hol:nutcracker-ballet",
+   "status": "coming_soon",
+   "locked": true,
+   "hidden_now": false,
+   "current": "t10/45.jpg",
+   "reason": "tiles on candy-cane surface; best clean shot is faces only; LOCKED",
+   "product_url": "https://mahjsquadshop.com/products/nutcracker-ballet-mahjong-tile-set",
+   "frame": null,
+   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)"
+  },
+  "mahj-squad-blue-chinoiserie": {
+   "name": "Blue Chinoiserie",
+   "brand": "Mahj Squad",
+   "tile_key": "mahjsquadshop.com/blue-chinoiserie-mahjong-tiles-cornflower-blue-and-white-mahjongg-set-blue-mahj-tiles-american-mahjong-tiles-1",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/56.jpg",
+   "reason": "tiles on printed mat in every image",
+   "product_url": "https://mahjsquadshop.com/products/blue-chinoiserie-mahjong-tiles-cornflower-blue-and-white-mahjongg-set-blue-mahj-tiles-american-mahjong-tiles-1",
+   "frame": null
+  },
+  "mahj-squad-just-peachy": {
+   "name": "Just Peachy",
+   "brand": "Mahj Squad",
+   "tile_key": "mahjsquadshop.com/just-peachy-tile-set-preorder",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/54.jpg",
+   "reason": "tiles on printed mat in every image",
+   "product_url": "https://mahjsquadshop.com/products/just-peachy-tile-set-preorder",
+   "frame": null
+  },
+  "mahj-squad-palm-springs": {
+   "name": "Palm Springs",
+   "brand": "Mahj Squad",
+   "tile_key": "mahjsquadshop.com/palm-springs-mahjong-tiles-pink-mahjong-tiles-beach-mahjong-tiles-palm-tree-tiles-retro-mahjongg-flamingo-bird-bam-mid-century-mahjong",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/57.jpg",
+   "reason": "rembg cut-out tried (u2net, isnet): not clean (ghost tiles/bag fragments); kept current photo per Tiffany",
+   "product_url": "https://mahjsquadshop.com/products/palm-springs-mahjong-tiles-pink-mahjong-tiles-beach-mahjong-tiles-palm-tree-tiles-retro-mahjongg-flamingo-bird-bam-mid-century-mahjong",
+   "flag": "mat_visible_keep_current"
+  },
+  "mahj-squad-parisian-without-acrylic-box": {
+   "name": "Parisian",
+   "brand": "Mahj Squad",
+   "tile_key": "mahjsquadshop.com/parisian-tile-set-preorder?v=42972602007761",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/55.jpg",
+   "reason": "rembg cut-out tried (u2net, isnet): not clean (ghost tiles/bag fragments); kept current photo per Tiffany",
+   "product_url": "https://mahjsquadshop.com/products/parisian-tile-set-preorder?variant=42972602007761",
+   "flag": "mat_visible_keep_current"
+  },
+  "mahjong-row-co-ash-burl": {
+   "name": "Ash Burl",
+   "brand": "Mahjong Row & Co.",
+   "tile_key": "mahjongrowandco.com/ash-burl-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/26.jpg",
+   "reason": "pile",
+   "product_url": "https://mahjongrowandco.com/products/ash-burl-tile-set?sca_ref=12475363.JLitn0fWe79Xnn",
+   "proposed": "assets/tiles/catalog-better/mahjong-row-co-ash-burl.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0729/6784/8124/files/Ash_Burl_Collage_557e2ef5-cbcb-4e24-9363-e7ff3d7d7e07.jpg?v=1768770216",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-row-co-honey-weave": {
+   "name": "Honey Weave",
+   "brand": "Mahjong Row & Co.",
+   "tile_key": "mahjongrowandco.com/honey-weave-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/25.jpg",
+   "reason": "pile",
+   "product_url": "https://mahjongrowandco.com/products/honey-weave-tile-set?sca_ref=12475363.JLitn0fWe79Xnn",
+   "proposed": "assets/tiles/catalog-better/mahjong-row-co-honey-weave.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0729/6784/8124/files/Honey_Weave_Collage.jpg?v=1768770175",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-row-co-laken": {
+   "name": "Laken",
+   "brand": "Mahjong Row & Co.",
+   "tile_key": "mahjongrowandco.com/laken-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/24.jpg",
+   "reason": "pile",
+   "product_url": "https://mahjongrowandco.com/products/laken-tile-set?sca_ref=12475363.JLitn0fWe79Xnn",
+   "proposed": "assets/tiles/catalog-better/mahjong-row-co-laken.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0729/6784/8124/files/Laken_Collage.jpg?v=1768770110",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-row-co-lyla": {
+   "name": "Lyla",
+   "brand": "Mahjong Row & Co.",
+   "tile_key": "mahjongrowandco.com/lyla-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/22.jpg",
+   "reason": "pile",
+   "product_url": "https://mahjongrowandco.com/products/lyla-tile-set?sca_ref=12475363.JLitn0fWe79Xnn",
+   "proposed": "assets/tiles/catalog-better/mahjong-row-co-lyla.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0729/6784/8124/files/Lylacollagefinal_5148_1.jpg?v=1772120245",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-row-co-mabel": {
+   "name": "Mabel",
+   "brand": "Mahjong Row & Co.",
+   "tile_key": "mahjongrowandco.com/mabel-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/23.jpg",
+   "reason": "pile",
+   "product_url": "https://mahjongrowandco.com/products/mabel-tile-set?sca_ref=12475363.JLitn0fWe79Xnn",
+   "proposed": "assets/tiles/catalog-better/mahjong-row-co-mabel.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0729/6784/8124/files/Mabel_Collage.jpg?v=1768769609",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-row-co-oakley": {
+   "name": "Oakley",
+   "brand": "Mahjong Row & Co.",
+   "tile_key": "mahjongrowandco.com/oakley-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/21.jpg",
+   "reason": "pile",
+   "product_url": "https://mahjongrowandco.com/products/oakley-tile-set?sca_ref=12475363.JLitn0fWe79Xnn",
+   "proposed": "assets/tiles/catalog-better/mahjong-row-co-oakley.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0729/6784/8124/files/Oakley_Collage_1.jpg?v=1769449212",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-row-co-terracotta-marble": {
+   "name": "Terracotta Marble",
+   "brand": "Mahjong Row & Co.",
+   "tile_key": "mahjongrowandco.com/terracotta-marble-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/27.jpg",
+   "reason": "pile",
+   "product_url": "https://mahjongrowandco.com/products/terracotta-marble-tile-set?sca_ref=12475363.JLitn0fWe79Xnn",
+   "proposed": "assets/tiles/catalog-better/mahjong-row-co-terracotta-marble.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0729/6784/8124/files/Terracotta_Collage.jpg?v=1768770632",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-studios-amber-jade": {
+   "name": "Amber Jade",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/amber-jade-mahjong-tiles",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/193.jpg",
+   "reason": "Tiffany 6:57pm: fill-frame tortoise pile (backs + faces), art mat barely visible",
+   "product_url": "https://mahjongstudios.com/products/amber-jade-mahjong-tiles",
+   "proposed": "assets/tiles/catalog-better/mahjong-studios-amber-jade.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/Photo_Feb_26_2026_5_33_09_PM.jpg?v=1772148918",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-studios-neon-shadow": {
+   "name": "Neon Shadow",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/black-mahjong-tiles-neon-shadow",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/45.jpg",
+   "reason": "black tiles angled on plain white, thickness visible",
+   "product_url": "https://mahjongstudios.com/products/black-mahjong-tiles-neon-shadow",
+   "proposed": "assets/tiles/catalog-better/mahjong-studios-neon-shadow.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/Photo_Feb_05_2026_4_34_18_PM.jpg?v=1772391363",
+   "kind": "back visible",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-studios-blush-bamboo": {
+   "name": "Blush & Bamboo",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/blush-bamboo-mahjong-tiles-american-mahjong-set-166-tiles",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/52.jpg",
+   "reason": "faces + tile back on white",
+   "product_url": "https://mahjongstudios.com/products/blush-bamboo-mahjong-tiles-american-mahjong-set-166-tiles",
+   "kind": "back visible (brand layout chart + back swatch)",
+   "frame": {
+    "fp": [
+     0.78,
+     0.82
+    ],
+    "fz": 1.9,
+    "note": "crop to bottom-right: shows faces + tile-back swatch (verified on contact sheet)"
+   }
+  },
+  "mahjong-studios-christmas-kiss": {
+   "name": "Christmas Kiss",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/christmas-kiss-american-mahjong-tile-set-160-tiles-red-bundle",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/28.jpg",
+   "reason": "faces + tile back on white",
+   "product_url": "https://mahjongstudios.com/products/christmas-kiss-american-mahjong-tile-set-160-tiles-red-bundle",
+   "kind": "back visible (brand layout chart + back swatch)",
+   "frame": {
+    "fp": [
+     0.78,
+     0.82
+    ],
+    "fz": 1.9,
+    "note": "crop to bottom-right: shows faces + tile-back swatch (verified on contact sheet)"
+   }
+  },
+  "mahjong-studios-essential": {
+   "name": "Essential",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/essential-mahjong-tiles",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/53.jpg",
+   "reason": "pile on white",
+   "product_url": "https://mahjongstudios.com/products/essential-mahjong-tiles",
+   "proposed": "assets/tiles/catalog-better/mahjong-studios-essential.png",
+   "source_url": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/Untitled_design_24.png?v=1765396426",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-studios-glitter-sparkle-pink": {
+   "name": "Glitter Sparkle Pink",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/glitter-sparkle-mahjong-tiles-american-mahjong-tile-set-166-tiles-pink",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/42.jpg",
+   "reason": "pile",
+   "product_url": "https://mahjongstudios.com/products/glitter-sparkle-mahjong-tiles-american-mahjong-tile-set-166-tiles-pink",
+   "proposed": "assets/tiles/catalog-better/mahjong-studios-glitter-sparkle-pink.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/FCFA6346-6BB5-446B-AE98-C5965D1F0B9E.jpg?v=1790861094",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-studios-lavender-sparkle": {
+   "name": "Lavender Sparkle",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/lavender-sparkle",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/29.jpg",
+   "reason": "pile on black",
+   "product_url": "https://mahjongstudios.com/products/lavender-sparkle",
+   "proposed": "assets/tiles/catalog-better/mahjong-studios-lavender-sparkle.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/9_53d3effa-f6b2-488d-a352-fff02462aae0.png?v=1790544121",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-studios-2-color-blue-studio": {
+   "name": "2-Color Blue Studio",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/mahjong-studios-american-mahjong-tile-set-166-tiles-2-color-blue-studio-tiles",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/49.jpg",
+   "reason": "faces + tile back on white",
+   "product_url": "https://mahjongstudios.com/products/mahjong-studios-american-mahjong-tile-set-166-tiles-2-color-blue-studio-tiles",
+   "kind": "back visible (brand layout chart + back swatch)",
+   "frame": {
+    "fp": [
+     0.78,
+     0.82
+    ],
+    "fz": 1.9,
+    "note": "crop to bottom-right: shows faces + tile-back swatch (verified on contact sheet)"
+   }
+  },
+  "mahjong-studios-butter-bloom": {
+   "name": "Butter Bloom",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/mahjong-studios-american-mahjong-tile-set-butter-bloom",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/40.jpg",
+   "reason": "faces + tile back on white",
+   "product_url": "https://mahjongstudios.com/products/mahjong-studios-american-mahjong-tile-set-butter-bloom",
+   "kind": "back visible (brand layout chart + back swatch)",
+   "frame": {
+    "fp": [
+     0.78,
+     0.82
+    ],
+    "fz": 1.9,
+    "note": "crop to bottom-right: shows faces + tile-back swatch (verified on contact sheet)"
+   }
+  },
+  "mahjong-studios-forest-silk": {
+   "name": "Forest Silk",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/mahjong-studios-american-mahjong-tile-set-green-tiles-forest-silk",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/35.jpg",
+   "reason": "pile on white",
+   "product_url": "https://mahjongstudios.com/products/mahjong-studios-american-mahjong-tile-set-green-tiles-forest-silk",
+   "proposed": "assets/tiles/catalog-better/mahjong-studios-forest-silk.png",
+   "source_url": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/10_7910c724-ab0c-4557-b1cd-4c3f0a23990c.png?v=1784953592",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-studios-sage-luxe": {
+   "name": "Sage Luxe",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/mahjong-studios-american-mahjong-tile-set-green-tiles-sage-luxe",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/36.jpg",
+   "reason": "pile on white",
+   "product_url": "https://mahjongstudios.com/products/mahjong-studios-american-mahjong-tile-set-green-tiles-sage-luxe",
+   "proposed": "assets/tiles/catalog-better/mahjong-studios-sage-luxe.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/21_f56a277d-803a-4cb1-9371-0a23eaff6d44.png?v=1784952717",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-studios-lilac-bloom": {
+   "name": "Lilac Bloom",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/mahjong-studios-american-mahjong-tile-set-lilac-bloom",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/38.jpg",
+   "reason": "faces + tile back on white",
+   "product_url": "https://mahjongstudios.com/products/mahjong-studios-american-mahjong-tile-set-lilac-bloom",
+   "kind": "back visible (brand layout chart + back swatch)",
+   "frame": {
+    "fp": [
+     0.78,
+     0.82
+    ],
+    "fz": 1.9,
+    "note": "crop to bottom-right: shows faces + tile-back swatch (verified on contact sheet)"
+   }
+  },
+  "mahjong-studios-ocean-bloom": {
+   "name": "Ocean Bloom",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/mahjong-studios-american-mahjong-tile-set-ocean-bloom",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/39.jpg",
+   "reason": "faces + tile back on white",
+   "product_url": "https://mahjongstudios.com/products/mahjong-studios-american-mahjong-tile-set-ocean-bloom",
+   "kind": "back visible (brand layout chart + back swatch)",
+   "frame": {
+    "fp": [
+     0.78,
+     0.82
+    ],
+    "fz": 1.9,
+    "note": "crop to bottom-right: shows faces + tile-back swatch (verified on contact sheet)"
+   }
+  },
+  "mahjong-studios-yellow-lilac-ocean-blue": {
+   "name": "Yellow Lilac Ocean Blue",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/mahjong-studios-american-mahjong-tile-set-yellow-lilac-ocean-blue",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/41.jpg",
+   "reason": "only bags/boxes/lifestyle; stays hidden",
+   "product_url": "https://mahjongstudios.com/products/mahjong-studios-american-mahjong-tile-set-yellow-lilac-ocean-blue",
+   "frame": null
+  },
+  "mahjong-studios-american": {
+   "name": "American",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/mahjong-studios-american-mahjong-tiles-lemon-lime-green-back",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/37.jpg",
+   "reason": "faces + tile back on white",
+   "product_url": "https://mahjongstudios.com/products/mahjong-studios-american-mahjong-tiles-lemon-lime-green-back",
+   "kind": "back visible (brand layout chart + back swatch)",
+   "frame": {
+    "fp": [
+     0.78,
+     0.82
+    ],
+    "fz": 1.9,
+    "note": "crop to bottom-right: shows faces + tile-back swatch (verified on contact sheet)"
+   }
+  },
+  "mahjong-studios-bamboo-sky": {
+   "name": "Bamboo Sky",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/mahjong-studios-bamboo-sky-tile-set-166-tiles-american-mahjong-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/51.jpg",
+   "reason": "Tiffany accepted: tile back in shot",
+   "product_url": "https://mahjongstudios.com/products/mahjong-studios-bamboo-sky-tile-set-166-tiles-american-mahjong-set",
+   "tiffany_call": "keep",
+   "kind": "back visible (brand layout chart + back swatch)",
+   "frame": {
+    "fp": [
+     0.78,
+     0.82
+    ],
+    "fz": 1.9,
+    "note": "crop to bottom-right: shows faces + tile-back swatch (verified on contact sheet)"
+   }
+  },
+  "mahjong-studios-blue-element": {
+   "name": "Blue Element",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/mahjong-studios-blue-element-american-mahjong-tile-set-166-tiles",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/48.jpg",
+   "reason": "faces + tile back on white",
+   "product_url": "https://mahjongstudios.com/products/mahjong-studios-blue-element-american-mahjong-tile-set-166-tiles",
+   "kind": "back visible (brand layout chart + back swatch)",
+   "frame": {
+    "fp": [
+     0.78,
+     0.82
+    ],
+    "fz": 1.9,
+    "note": "crop to bottom-right: shows faces + tile-back swatch (verified on contact sheet)"
+   }
+  },
+  "mahjong-studios-lemon-tide": {
+   "name": "Lemon Tide",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/mahjong-studios-lemon-tide-american-mahjong-tile-set-160-tiles",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/32.jpg",
+   "reason": "pile on pale surface",
+   "product_url": "https://mahjongstudios.com/products/mahjong-studios-lemon-tide-american-mahjong-tile-set-160-tiles",
+   "proposed": "assets/tiles/catalog-better/mahjong-studios-lemon-tide.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/6_662529d4-7ec3-4819-8f2c-0b6184653de9.png?v=1789094994",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-studios-peony-garden": {
+   "name": "Peony Garden",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/mahjong-studios-peony-garden-american-mahjong-tile-set-160-tiles",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/47.jpg",
+   "reason": "pile on black",
+   "product_url": "https://mahjongstudios.com/products/mahjong-studios-peony-garden-american-mahjong-tile-set-160-tiles",
+   "proposed": "assets/tiles/catalog-better/mahjong-studios-peony-garden.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/5_b550c575-46e8-4aec-893a-bd6a11e5478d.png?v=1790544592",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-studios-tile-sets": {
+   "name": "Tiles Only",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/mahjong-studios-tiles-only",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/33.jpg",
+   "reason": "fill-frame pile, no mat",
+   "product_url": "https://mahjongstudios.com/products/mahjong-studios-tiles-only"
+  },
+  "mahjong-studios-blue-editon-2-color-blue": {
+   "name": "Blue Editon 2-Color Blue",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/mahjong-tiles-blue-edition-american-mahjong-tile-set-166-tiles-2-color-blue",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/46.jpg",
+   "reason": "tiles close-up on white, back + faces",
+   "product_url": "https://mahjongstudios.com/products/mahjong-tiles-blue-edition-american-mahjong-tile-set-166-tiles-2-color-blue",
+   "proposed": "assets/tiles/catalog-better/mahjong-studios-blue-editon-2-color-blue.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/Photo_Feb_05_2026_5_54_32_PM.jpg?v=1772391439",
+   "kind": "back visible",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-studios-bubble-pop-2-color-blue": {
+   "name": "Bubble Pop 2-Color Blue",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/mahjong-tiles-bubble-pop-american-mahjong-tile-set-166-tiles",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/44.jpg",
+   "reason": "tray angled on white, thickness visible",
+   "product_url": "https://mahjongstudios.com/products/mahjong-tiles-bubble-pop-american-mahjong-tile-set-166-tiles",
+   "proposed": "assets/tiles/catalog-better/mahjong-studios-bubble-pop-2-color-blue.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/Photo_Feb_05_2026_5_36_37_PM.jpg?v=1772392344",
+   "kind": "back visible",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-studios-white-edit": {
+   "name": "White Edit",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/mahjong-tiles-white-edit-american-mahjong-tile-set-166-tiles",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/43.jpg",
+   "reason": "faces only, no back/pile; others on mat",
+   "product_url": "https://mahjongstudios.com/products/mahjong-tiles-white-edit-american-mahjong-tile-set-166-tiles",
+   "frame": null
+  },
+  "mahjong-studios-rose-dragon": {
+   "name": "Rose Dragon",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/rose-dragon",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/50.jpg",
+   "reason": "stacked tiles, layers + faces on white",
+   "product_url": "https://mahjongstudios.com/products/rose-dragon",
+   "proposed": "assets/tiles/catalog-better/mahjong-studios-rose-dragon.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/Photo_Nov_13_2025_10_28_30_AM.jpg?v=1772375115",
+   "kind": "back visible",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-studios-royal-sparkle": {
+   "name": "Royal Sparkle",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/royal-sparkle-mahjong-tiles-american-mahjong-tile-set-166-tiles-royal-blue-sparkle",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/30.jpg",
+   "reason": "pile on black",
+   "product_url": "https://mahjongstudios.com/products/royal-sparkle-mahjong-tiles-american-mahjong-tile-set-166-tiles-royal-blue-sparkle",
+   "proposed": "assets/tiles/catalog-better/mahjong-studios-royal-sparkle.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/11_4dda6be4-29c0-4a50-905d-b320bcc96421.png?v=1790544218",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-studios-ruby-sparkle": {
+   "name": "Ruby Sparkle",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/ruby-sparkle",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/31.jpg",
+   "reason": "pile on black",
+   "product_url": "https://mahjongstudios.com/products/ruby-sparkle",
+   "proposed": "assets/tiles/catalog-better/mahjong-studios-ruby-sparkle.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/10_06d8a5ae-30e9-422b-8b92-d05438fb4c29.png?v=1790544073",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "mahjong-studios-teal-lunaflor": {
+   "name": "Teal Lunaflor",
+   "brand": "Mahjong Studios",
+   "tile_key": "mahjongstudios.com/teal-lunaflor-mahjong-tiles-160-american-mahjong-tiles",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/34.jpg",
+   "reason": "pile",
+   "product_url": "https://mahjongstudios.com/products/teal-lunaflor-mahjong-tiles-160-american-mahjong-tiles",
+   "proposed": "assets/tiles/catalog-better/mahjong-studios-teal-lunaflor.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/2_6dc4a58d-349f-4863-9844-9e604159f958.png?v=1785466888",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "middle-main-mahjong-barrier-island": {
+   "name": "Barrier Island",
+   "brand": "Middle & Main Mahjong",
+   "tile_key": "www.middleandmainmahjong.com/barrier-island-tiles-a-southern-shoreline-inspired-mahjong-set",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/148.jpg",
+   "reason": "only lifestyle/graphics; stays hidden",
+   "product_url": "https://www.middleandmainmahjong.com/products/barrier-island-tiles-a-southern-shoreline-inspired-mahjong-set",
+   "frame": null
+  },
+  "middle-main-mahjong-charleston": {
+   "name": "Charleston",
+   "brand": "Middle & Main Mahjong",
+   "tile_key": "www.middleandmainmahjong.com/charleston-tiles-a-south-carolina-inspired-mahjong-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/151.jpg",
+   "reason": "cropped pile of white tiles on white (backs + faces)",
+   "product_url": "https://www.middleandmainmahjong.com/products/charleston-tiles-a-south-carolina-inspired-mahjong-set",
+   "proposed": "assets/tiles/catalog-better/middle-main-mahjong-charleston.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0662/4316/6361/files/6.png?v=1772372208",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "middle-main-mahjong-palmetto": {
+   "name": "Palmetto",
+   "brand": "Middle & Main Mahjong",
+   "tile_key": "www.middleandmainmahjong.com/palmetto-tiles-a-south-carolina-inspired-mahjong-set",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/150.jpg",
+   "reason": "only lifestyle; pile sits on woven mat",
+   "product_url": "https://www.middleandmainmahjong.com/products/palmetto-tiles-a-south-carolina-inspired-mahjong-set",
+   "frame": null
+  },
+  "middle-main-mahjong-peach-pine": {
+   "name": "Peach & Pine",
+   "brand": "Middle & Main Mahjong",
+   "tile_key": "www.middleandmainmahjong.com/peach-pine-tiles-a-georgia-inspired-mahjong-set",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/147.jpg",
+   "reason": "only lifestyle/wood surface",
+   "product_url": "https://www.middleandmainmahjong.com/products/peach-pine-tiles-a-georgia-inspired-mahjong-set",
+   "frame": null
+  },
+  "middle-main-mahjong-sunshine": {
+   "name": "Sunshine",
+   "brand": "Middle & Main Mahjong",
+   "tile_key": "www.middleandmainmahjong.com/sunshine-tiles-a-florida-inspired-mahjong-set",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/149.jpg",
+   "reason": "only lifestyle/cloth surface",
+   "product_url": "https://www.middleandmainmahjong.com/products/sunshine-tiles-a-florida-inspired-mahjong-set",
+   "frame": null
+  },
+  "miss-mahjong-classic-jade-numbered-flower": {
+   "name": "Classic Jade Numbered Flower",
+   "brand": "Miss Mahjong",
+   "tile_key": "missmahjong.com/classic-jade-numbered-flower-tiles",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/63.jpg",
+   "reason": "flower-tile accessory image: faces only, no back or pile on a clean background",
+   "product_url": "https://missmahjong.com/products/classic-jade-numbered-flower-tiles?ref=mahjmatch",
+   "frame": null
+  },
+  "miss-mahjong-classic-malachite-numbered-flower": {
+   "name": "Classic Malachite Numbered Flower",
+   "brand": "Miss Mahjong",
+   "tile_key": "missmahjong.com/classic-malachite-numbered-flower-tiles",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/64.jpg",
+   "reason": "flower-tile accessory image: faces only, no back or pile on a clean background",
+   "product_url": "https://missmahjong.com/products/classic-malachite-numbered-flower-tiles?ref=mahjmatch",
+   "frame": null
+  },
+  "miss-mahjong-cowgirl-americana-numbered-flower": {
+   "name": "Cowgirl Americana Numbered Flower",
+   "brand": "Miss Mahjong",
+   "tile_key": "missmahjong.com/cowgirl-americana-numbered-flower-tiles",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/60.jpg",
+   "reason": "flower-tile accessory image: faces only, no back or pile on a clean background",
+   "product_url": "https://missmahjong.com/products/cowgirl-americana-numbered-flower-tiles?ref=mahjmatch",
+   "frame": null
+  },
+  "miss-mahjong-darling-numbered-flower": {
+   "name": "Darling Numbered Flower",
+   "brand": "Miss Mahjong",
+   "tile_key": "missmahjong.com/darling-numbered-flower-tiles",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/62.jpg",
+   "reason": "flower-tile accessory image: faces only, no back or pile on a clean background",
+   "product_url": "https://missmahjong.com/products/darling-numbered-flower-tiles?ref=mahjmatch",
+   "frame": null
+  },
+  "miss-mahjong-miss-catrina": {
+   "name": "Miss Catrina",
+   "brand": "Miss Mahjong",
+   "tile_key": "missmahjong.com/miss-catrina-mahjong-tile-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/59.jpg",
+   "reason": "faces + dark backs on plain surface",
+   "product_url": "https://missmahjong.com/products/miss-catrina-mahjong-tile-set?ref=mahjmatch"
+  },
+  "miss-mahjong-miss-cowgirl": {
+   "name": "Miss Cowgirl",
+   "brand": "Miss Mahjong",
+   "tile_key": "missmahjong.com/miss-cowgirl-americana-mahjong-tile-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/61.jpg",
+   "reason": "faces + blue backs on plain surface",
+   "product_url": "https://missmahjong.com/products/miss-cowgirl-americana-mahjong-tile-set?ref=mahjmatch"
+  },
+  "miss-mahjong-miss-darling-cameo-blue": {
+   "name": "Miss Darling Cameo Blue",
+   "brand": "Miss Mahjong",
+   "tile_key": "missmahjong.com/miss-darling-mahjong-tile-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/65.jpg",
+   "reason": "faces + blue backs on white",
+   "product_url": "https://missmahjong.com/products/miss-darling-mahjong-tile-set?ref=mahjmatch"
+  },
+  "miss-mahjong-miss-out-of-office": {
+   "name": "Miss Out Of Office",
+   "brand": "Miss Mahjong",
+   "tile_key": "missmahjong.com/miss-out-of-office-mahjong-tile-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/58.jpg",
+   "reason": "faces + checker backs on plain white",
+   "product_url": "https://missmahjong.com/products/miss-out-of-office-mahjong-tile-set?ref=mahjmatch"
+  },
+  "my-fair-mahjong-the-california-series": {
+   "name": "The California Series",
+   "brand": "My Fair Mahjong",
+   "tile_key": "myfairmahjong.com/california",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/75.jpg",
+   "reason": "pile with backs + faces, brand box props",
+   "product_url": "https://myfairmahjong.com/products/california",
+   "proposed": "assets/tiles/catalog-better/my-fair-mahjong-the-california-series.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/CALIFORNIA_SERIES.png?v=1764621895",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "my-fair-mahjong-crystal-confetti": {
+   "name": "Crystal Confetti",
+   "brand": "My Fair Mahjong",
+   "tile_key": "myfairmahjong.com/confetti-calm-blue",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/68.jpg",
+   "reason": "pile on white with bag/box props",
+   "product_url": "https://myfairmahjong.com/products/confetti-calm-blue"
+  },
+  "my-fair-mahjong-crystal-prism": {
+   "name": "Crystal Prism",
+   "brand": "My Fair Mahjong",
+   "tile_key": "myfairmahjong.com/crystal-prism-blue",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/71.jpg",
+   "reason": "pile on white with bag/box props",
+   "product_url": "https://myfairmahjong.com/products/crystal-prism-blue"
+  },
+  "my-fair-mahjong-the-hawaii-series": {
+   "name": "The Hawaii Series",
+   "brand": "My Fair Mahjong",
+   "tile_key": "myfairmahjong.com/hawaii",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/74.jpg",
+   "reason": "teal pile on white, bag prop",
+   "product_url": "https://myfairmahjong.com/products/hawaii",
+   "proposed": "assets/tiles/catalog-better/my-fair-mahjong-the-hawaii-series.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/HAWAII_SERIES_MAHJONG.png?v=1782261623",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "my-fair-mahjong-the-jubilee-series": {
+   "name": "The Jubilee Series",
+   "brand": "My Fair Mahjong",
+   "tile_key": "myfairmahjong.com/jubilee-pearl-white",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/66.jpg",
+   "reason": "close pile, backs + faces",
+   "product_url": "https://myfairmahjong.com/products/jubilee-pearl-white",
+   "proposed": "assets/tiles/catalog-better/my-fair-mahjong-the-jubilee-series.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/Jubilee_Series-_Pearl_White_3.png?v=1786118313",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "my-fair-mahjong-the-lumera-series": {
+   "name": "The Lumera Series",
+   "brand": "My Fair Mahjong",
+   "tile_key": "myfairmahjong.com/lumera",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/67.jpg",
+   "reason": "close pile, backs + faces",
+   "product_url": "https://myfairmahjong.com/products/lumera",
+   "proposed": "assets/tiles/catalog-better/my-fair-mahjong-the-lumera-series.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/LumeraSeriesMahjongSet_2.png?v=1782929748",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "my-fair-mahjong-the-new-england-series": {
+   "name": "The New England Series",
+   "brand": "My Fair Mahjong",
+   "tile_key": "myfairmahjong.com/new-england",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/72.jpg",
+   "reason": "pile on white with props",
+   "product_url": "https://myfairmahjong.com/products/new-england",
+   "proposed": "assets/tiles/catalog-better/my-fair-mahjong-the-new-england-series.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/DSC_0211-3.jpg?v=1772562638",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "my-fair-mahjong-the-park-series": {
+   "name": "The Park Series",
+   "brand": "My Fair Mahjong",
+   "tile_key": "myfairmahjong.com/park-series",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/219.jpg",
+   "reason": "pile on white with bag",
+   "product_url": "https://myfairmahjong.com/products/park-series",
+   "proposed": "assets/tiles/catalog-better/my-fair-mahjong-the-park-series.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/ParkSeries2.0LightGreenMahjongTiles.png?v=1788305244",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "my-fair-mahjong-the-scandinavian-folk-art-series": {
+   "name": "The Scandinavian Folk Art Series",
+   "brand": "My Fair Mahjong",
+   "tile_key": "myfairmahjong.com/scandinavian",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/73.jpg",
+   "reason": "pile on white",
+   "product_url": "https://myfairmahjong.com/products/scandinavian",
+   "proposed": "assets/tiles/catalog-better/my-fair-mahjong-the-scandinavian-folk-art-series.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/Scandinavian_Series_Tile_Set_3.jpg?v=1764039597",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "my-fair-mahjong-the-southwest-series": {
+   "name": "The Southwest Series",
+   "brand": "My Fair Mahjong",
+   "tile_key": "myfairmahjong.com/southwest",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/76.jpg",
+   "reason": "pile on white with box",
+   "product_url": "https://myfairmahjong.com/products/southwest",
+   "proposed": "assets/tiles/catalog-better/my-fair-mahjong-the-southwest-series.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/SOUTHWESTSERIESMAHJONGSET.png?v=1788216211",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "my-fair-mahjong-the-texas-series": {
+   "name": "The Texas Series",
+   "brand": "My Fair Mahjong",
+   "tile_key": "myfairmahjong.com/texas-white-tile",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/70.jpg",
+   "reason": "pile on white with box",
+   "product_url": "https://myfairmahjong.com/products/texas-white-tile",
+   "proposed": "assets/tiles/catalog-better/my-fair-mahjong-the-texas-series.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/theTexasSeries-AmericanMahjongwithLoneStarFlair_2.png?v=1760032881",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "the-mahjong-tile-takers-novelty-gift": {
+   "name": "Mahjong Tile Takers (Set of 4)",
+   "brand": "My Fair Mahjong",
+   "tile_key": "myfairmahjong.com/the-mahjong-tile-takers-novelty-gift",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/77.jpg",
+   "reason": "accessory, pink mat in every shot",
+   "product_url": "https://myfairmahjong.com/products/the-mahjong-tile-takers-novelty-gift",
+   "frame": null
+  },
+  "my-fair-mahjong-the-play-series": {
+   "name": "The Play Series",
+   "brand": "My Fair Mahjong",
+   "tile_key": "myfairmahjong.com/the-play-series-grand-ocean-blue",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/69.jpg",
+   "reason": "close pile, backs + faces",
+   "product_url": "https://myfairmahjong.com/products/the-play-series-grand-ocean-blue",
+   "proposed": "assets/tiles/catalog-better/my-fair-mahjong-the-play-series.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/PlaySeries-OceanBlue_2_aa74aca2-03a4-4edc-ab7d-83cbbffba510.png?v=1780679091",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "oh-my-mahjong-cadet-debutante": {
+   "name": "Cadet Debutante",
+   "brand": "Oh My Mahjong",
+   "tile_key": "www.ohmymahjong.com/cadet-debutant-tiles",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/155.jpg",
+   "reason": "pile",
+   "product_url": "https://www.ohmymahjong.com/products/cadet-debutant-tiles",
+   "proposed": "assets/tiles/catalog-better/oh-my-mahjong-cadet-debutante.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/cadet-debutante-tile-set-8448166.jpg?v=1761911631",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "oh-my-mahjong-jardin-debutante": {
+   "name": "Jardin Debutante",
+   "brand": "Oh My Mahjong",
+   "tile_key": "www.ohmymahjong.com/jardin-debutant-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/156.jpg",
+   "reason": "pile",
+   "product_url": "https://www.ohmymahjong.com/products/jardin-debutant-tile-set",
+   "proposed": "assets/tiles/catalog-better/oh-my-mahjong-jardin-debutante.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/jardin-debutant-tile-set-6963786.jpg?v=1757462778",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "oh-my-mahjong-poppy-debutante": {
+   "name": "Poppy Debutante",
+   "brand": "Oh My Mahjong",
+   "tile_key": "www.ohmymahjong.com/poppy-debutant-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/154.jpg",
+   "reason": "pile",
+   "product_url": "https://www.ohmymahjong.com/products/poppy-debutant-tile-set",
+   "proposed": "assets/tiles/catalog-better/oh-my-mahjong-poppy-debutante.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/poppy-debutante-tile-set-5975271.jpg?v=1761911631",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "oh-my-mahjong-sunburst-debutante": {
+   "name": "Sunburst Debutante",
+   "brand": "Oh My Mahjong",
+   "tile_key": "www.ohmymahjong.com/sunburst-debutant-tiles",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/153.jpg",
+   "reason": "pile",
+   "product_url": "https://www.ohmymahjong.com/products/sunburst-debutant-tiles",
+   "proposed": "assets/tiles/catalog-better/oh-my-mahjong-sunburst-debutante.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/sunburst-debutante-tile-set-2477524.jpg?v=1767488235",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "royal-mahjong-society-heirloom-collection-cottage": {
+   "name": "Heirloom Collection Cottage",
+   "brand": "Royal Mahjong Society",
+   "tile_key": "theroyalmahjongsociety.com/cottage-mahjong-tile-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/91.jpg",
+   "reason": "fill-frame pile, no mat",
+   "product_url": "https://theroyalmahjongsociety.com/products/cottage-mahjong-tile-set"
+  },
+  "royal-mahjong-society-heirloom-collection-crown-jewels": {
+   "name": "Heirloom Collection Crown Jewels",
+   "brand": "Royal Mahjong Society",
+   "tile_key": "theroyalmahjongsociety.com/crown-jewels-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/88.jpg",
+   "reason": "red tile backs + faces on dark printed mat; sparse, flagged: mat visible (best the brand has)",
+   "product_url": "https://theroyalmahjongsociety.com/products/crown-jewels-tile-set",
+   "flag": "mat_visible",
+   "proposed": "assets/tiles/catalog-better/royal-mahjong-society-heirloom-collection-crown-jewels.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0925/0491/6333/files/crownjewels_cf8cef2b-295c-4712-b359-c8f6b75814cc.png?v=1790022817",
+   "kind": "back visible",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "royal-mahjong-society-heirloom-collection-girly": {
+   "name": "Heirloom Collection Girly",
+   "brand": "Royal Mahjong Society",
+   "tile_key": "theroyalmahjongsociety.com/girly-mahjong-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/92.jpg",
+   "reason": "stacked pile on neutral surface",
+   "product_url": "https://theroyalmahjongsociety.com/products/girly-mahjong-tile-set",
+   "proposed": "assets/tiles/catalog-better/royal-mahjong-society-heirloom-collection-girly.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0925/0491/6333/files/7_d7558f84-d02f-4434-b97a-7fe273fab330.png?v=1777409701",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "royal-mahjong-society-heirloom-collection-island": {
+   "name": "Heirloom Collection Island",
+   "brand": "Royal Mahjong Society",
+   "tile_key": "theroyalmahjongsociety.com/island-mahjong-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/93.jpg",
+   "reason": "pile on white",
+   "product_url": "https://theroyalmahjongsociety.com/products/island-mahjong-tile-set",
+   "proposed": "assets/tiles/catalog-better/royal-mahjong-society-heirloom-collection-island.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0925/0491/6333/files/TheRoyalMahjongSociety_IslandTiles_6.jpg?v=1770498584",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "royal-mahjong-society-heirloom-collection-mahj-royale": {
+   "name": "Heirloom Collection Mahj Royale",
+   "brand": "Royal Mahjong Society",
+   "tile_key": "theroyalmahjongsociety.com/mahj-royale-mahjong-tile-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/90.jpg",
+   "reason": "big pile of backs + faces covers the mat (Tiffany rule)",
+   "product_url": "https://theroyalmahjongsociety.com/products/mahj-royale-mahjong-tile-set",
+   "tiffany_call": "keep"
+  },
+  "royal-mahjong-society-heirloom-collection-newport": {
+   "name": "Heirloom Collection Newport",
+   "brand": "Royal Mahjong Society",
+   "tile_key": "theroyalmahjongsociety.com/newport-mahjong-tile-set",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/94.jpg",
+   "reason": "pile of blue backs + faces row; mat partly visible but covered by tiles (Heirloom pile rule)",
+   "product_url": "https://theroyalmahjongsociety.com/products/newport-mahjong-tile-set",
+   "proposed": "assets/tiles/catalog-better/royal-mahjong-society-heirloom-collection-newport.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0925/0491/6333/files/4.png?v=1770498152",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "royal-mahjong-society-heirloom-collection-shore": {
+   "name": "Heirloom Collection Shore",
+   "brand": "Royal Mahjong Society",
+   "tile_key": "theroyalmahjongsociety.com/shore-mahjong-tile-set",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/89.jpg",
+   "reason": "fill-frame pile, no mat",
+   "product_url": "https://theroyalmahjongsociety.com/products/shore-mahjong-tile-set"
+  },
+  "sunday-mahjong-december-1994": {
+   "name": "December 1994",
+   "brand": "Sunday Mahjong",
+   "tile_key": "sundaymahjong.com/december-1994-tile-set-preorder-est-nov-27",
+   "status": "ok",
+   "locked": true,
+   "hidden_now": false,
+   "current": "t16/sunday-mahjong-december-1994.jpg",
+   "reason": "fill-frame pile; custom brand image already used",
+   "product_url": "https://sundaymahjong.com/products/december-1994-tile-set-preorder-est-nov-27",
+   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)"
+  },
+  "tigre-de-tartan-classic-in-beechwood": {
+   "name": "Classic Beechwood",
+   "brand": "Tigre de Tartan",
+   "tile_key": "tigredetartan.com/classic-american-mahjong-tile-set-in-beechwood",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/95.jpg",
+   "reason": "only shots on textiles",
+   "product_url": "https://tigredetartan.com/products/classic-american-mahjong-tile-set-in-beechwood?sca_ref=11798386.tvil8GTGTp6s2",
+   "frame": null
+  },
+  "tigre-de-tartan-house-clovers-classic": {
+   "name": "House Clovers",
+   "brand": "Tigre de Tartan",
+   "tile_key": "tigredetartan.com/house-clovers-classic-american-mahjong-tile-set-with-signature-clover-logo",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/98.jpg",
+   "reason": "only shots on textiles/rugs",
+   "product_url": "https://tigredetartan.com/products/house-clovers-classic-american-mahjong-tile-set-with-signature-clover-logo?sca_ref=11798386.tvil8GTGTp6s2",
+   "frame": null
+  },
+  "tigre-de-tartan-house-hearts-warm-white-classic": {
+   "name": "House Hearts Warm White",
+   "brand": "Tigre de Tartan",
+   "tile_key": "tigredetartan.com/house-hearts-mahjong-tile-set-warm-white",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/96.jpg",
+   "reason": "Tiffany accepted",
+   "product_url": "https://tigredetartan.com/products/house-hearts-mahjong-tile-set-warm-white?sca_ref=11798386.tvil8GTGTp6s2",
+   "tiffany_call": "keep"
+  },
+  "tigre-de-tartan-house-tigers-oyster-classic": {
+   "name": "House Tigers Oyster",
+   "brand": "Tigre de Tartan",
+   "tile_key": "tigredetartan.com/house-tigers-mahjong-tile-set-oyster",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/97.jpg",
+   "reason": "only shots on textiles",
+   "product_url": "https://tigredetartan.com/products/house-tigers-mahjong-tile-set-oyster?sca_ref=11798386.tvil8GTGTp6s2",
+   "frame": null
+  },
+  "nivalee-blue": {
+   "name": "Nivalee (Glacier Blue)",
+   "brand": "Virora Mahjong",
+   "tile_key": "hol:nivalee-blue",
+   "status": "ok",
+   "locked": true,
+   "hidden_now": false,
+   "current": "t13/2.jpg",
+   "reason": "tile stack on white, backs + faces; LOCKED",
+   "product_url": "https://www.viroramahjong.com/products/nivalee-glacier-blue",
+   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)"
+  },
+  "tinselle-emerald": {
+   "name": "Tinselle (Emerald Green)",
+   "brand": "Virora Mahjong",
+   "tile_key": "hol:tinselle-emerald",
+   "status": "ok",
+   "locked": true,
+   "hidden_now": false,
+   "current": "t13/3.jpg",
+   "reason": "faces on white + tile back/layers visible; LOCKED",
+   "product_url": "https://www.viroramahjong.com/products/tinselle-emerald-green",
+   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)"
+  },
+  "tinselle-ruby": {
+   "name": "Tinselle (Ruby Red)",
+   "brand": "Virora Mahjong",
+   "tile_key": "hol:tinselle-ruby",
+   "status": "ok",
+   "locked": true,
+   "hidden_now": false,
+   "current": "t13/4.jpg",
+   "reason": "faces on white + tile back/layers visible; LOCKED",
+   "product_url": "https://www.viroramahjong.com/products/ruby-christmas",
+   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)"
+  },
+  "virora-mahjong-am-thisse": {
+   "name": "Améthisse",
+   "brand": "Virora Mahjong",
+   "tile_key": "www.viroramahjong.com/amethisse",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/167.jpg",
+   "reason": "pile",
+   "product_url": "https://www.viroramahjong.com/products/amethisse?ref=Mahjmatchmaker",
+   "proposed": "assets/tiles/catalog-better/virora-mahjong-am-thisse.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/image_8.jpg?v=1777349033",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "virora-mahjong-aveline": {
+   "name": "Aveline",
+   "brand": "Virora Mahjong",
+   "tile_key": "www.viroramahjong.com/aveline",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/159.jpg",
+   "reason": "faces on white + tile back/layers visible",
+   "product_url": "https://www.viroramahjong.com/products/aveline?ref=Mahjmatchmaker"
+  },
+  "virora-mahjong-christmas-collection-ii-nivalee-emerald-green": {
+   "name": "Nivalee Emerald Green",
+   "brand": "Virora Mahjong",
+   "tile_key": "www.viroramahjong.com/christmas-collection-ii-nivalee",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/157.jpg",
+   "reason": "faces on white + tile back/layers visible",
+   "product_url": "https://www.viroramahjong.com/products/christmas-collection-ii-nivalee?ref=Mahjmatchmaker"
+  },
+  "virora-mahjong-lanisse": {
+   "name": "Élanisse",
+   "brand": "Virora Mahjong",
+   "tile_key": "www.viroramahjong.com/elanisse",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/163.jpg",
+   "reason": "pile",
+   "product_url": "https://www.viroramahjong.com/products/elanisse?ref=Mahjmatchmaker",
+   "proposed": "assets/tiles/catalog-better/virora-mahjong-lanisse.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/8_f7d86518-6d8d-4f0a-ad37-081600b3f5f4.jpg?v=1773907782",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "virora-mahjong-flor-a": {
+   "name": "Floréa",
+   "brand": "Virora Mahjong",
+   "tile_key": "www.viroramahjong.com/florea",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/161.jpg",
+   "reason": "pile",
+   "product_url": "https://www.viroramahjong.com/products/florea?ref=Mahjmatchmaker",
+   "proposed": "assets/tiles/catalog-better/virora-mahjong-flor-a.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/8.png?v=1777342600",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "virora-mahjong-florielle": {
+   "name": "Florielle",
+   "brand": "Virora Mahjong",
+   "tile_key": "www.viroramahjong.com/florielle",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/166.jpg",
+   "reason": "faces on white + tile back/layers visible",
+   "product_url": "https://www.viroramahjong.com/products/florielle?ref=Mahjmatchmaker"
+  },
+  "virora-mahjong-iriselle": {
+   "name": "Iriselle",
+   "brand": "Virora Mahjong",
+   "tile_key": "www.viroramahjong.com/iriselle",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/168.jpg",
+   "reason": "faces on white + tile back/layers visible",
+   "product_url": "https://www.viroramahjong.com/products/iriselle?ref=Mahjmatchmaker"
+  },
+  "virora-mahjong-marivelle": {
+   "name": "Marivelle",
+   "brand": "Virora Mahjong",
+   "tile_key": "www.viroramahjong.com/marivelle",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/165.jpg",
+   "reason": "faces on white + tile back/layers visible",
+   "product_url": "https://www.viroramahjong.com/products/marivelle?ref=Mahjmatchmaker"
+  },
+  "virora-mahjong-rosanelle": {
+   "name": "Rosanelle",
+   "brand": "Virora Mahjong",
+   "tile_key": "www.viroramahjong.com/rosanelle",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/164.jpg",
+   "reason": "pile",
+   "product_url": "https://www.viroramahjong.com/products/rosanelle?ref=Mahjmatchmaker",
+   "proposed": "assets/tiles/catalog-better/virora-mahjong-rosanelle.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260701175800_1769_87.jpg?v=1782977061",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "virora-mahjong-sylvaria": {
+   "name": "Sylvaria",
+   "brand": "Virora Mahjong",
+   "tile_key": "www.viroramahjong.com/sylvaria",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/158.jpg",
+   "reason": "faces on white + tile back/layers visible",
+   "product_url": "https://www.viroramahjong.com/products/sylvaria?ref=Mahjmatchmaker"
+  },
+  "virora-mahjong-viozelle": {
+   "name": "Viozelle",
+   "brand": "Virora Mahjong",
+   "tile_key": "www.viroramahjong.com/viozelle",
+   "status": "upgrade",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/162.jpg",
+   "reason": "pile",
+   "product_url": "https://www.viroramahjong.com/products/viozelle?ref=Mahjmatchmaker",
+   "proposed": "assets/tiles/catalog-better/virora-mahjong-viozelle.jpg",
+   "source_url": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/e238c0612646f370230178439b8885e9_a01ff516-6d53-481e-a074-392437affde4.jpg?v=1782799920",
+   "kind": "pile",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1,
+    "note": "reset: old chart-photo fp no longer applies"
+   }
+  },
+  "virora-mahjong-lilac-e": {
+   "name": "Lilacée",
+   "brand": "Virora Mahjong",
+   "tile_key": "www.viroramahjong.com/yellow-lilacee",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/160.jpg",
+   "reason": "faces on white + tile back/layers visible",
+   "product_url": "https://www.viroramahjong.com/products/yellow-lilacee?ref=Mahjmatchmaker"
+  },
+  "wren-mats-simply": {
+   "name": "Simply",
+   "brand": "Wren Mats",
+   "tile_key": "www.wrenmats.com/opgv5o7mztp8eu7krduztz8x70u1ms",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/170.jpg",
+   "reason": "tiles on printed mat; wrenmats.com has no Shopify product JSON/other images retrievable",
+   "product_url": "https://www.wrenmats.com/products/opgv5o7mztp8eu7krduztz8x70u1ms",
+   "frame": null
+  },
+  "yellow-mountain-imports-harbor-tide": {
+   "name": "Harbor Tide",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/fx-am009-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/203.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/fx-am009-a"
+  },
+  "yellow-mountain-imports-harbor-mint": {
+   "name": "Harbor Mint",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/fx-am010-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/201.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/fx-am010-a"
+  },
+  "yellow-mountain-imports-seabreeze": {
+   "name": "Seabreeze",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/fx-am011-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/215.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/fx-am011-a"
+  },
+  "yellow-mountain-imports-indigo-tides": {
+   "name": "Indigo Tides",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/fx-am012-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/206.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/fx-am012-a"
+  },
+  "yellow-mountain-imports-ivory-stripes": {
+   "name": "Ivory Stripes",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/fx-am014-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/209.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/fx-am014-a"
+  },
+  "yellow-mountain-imports-rosehill": {
+   "name": "Rosehill",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/fx-am015-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/213.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/fx-am015-a"
+  },
+  "yellow-mountain-imports-jade-horizon": {
+   "name": "Jade Horizon",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/fx-am016-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/210.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/fx-am016-a"
+  },
+  "yellow-mountain-imports-harbor-snow": {
+   "name": "Harbor Snow",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/fx-am018-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/202.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/fx-am018-a"
+  },
+  "yellow-mountain-imports-ivory-ridge": {
+   "name": "Ivory Ridge",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/fx-am019-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/208.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/fx-am019-a"
+  },
+  "yellow-mountain-imports-sakura-pink": {
+   "name": "Sakura Pink",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/fx-am020-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/214.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/fx-am020-a"
+  },
+  "yellow-mountain-imports-canyon-clay": {
+   "name": "Canyon Clay",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/fx-am021-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/196.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/fx-am021-a"
+  },
+  "yellow-mountain-imports-ivory-pinstripe": {
+   "name": "Ivory Pinstripe",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/fx-am022-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/207.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/fx-am022-a"
+  },
+  "yellow-mountain-imports-verdant-spring": {
+   "name": "Verdant Spring",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/fx-am024-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/216.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/fx-am024-a"
+  },
+  "yellow-mountain-imports-indigo-bay": {
+   "name": "Indigo Bay",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/fx-am027-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/205.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/fx-am027-a"
+  },
+  "yellow-mountain-imports-pepper": {
+   "name": "Pepper",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/fx-at001-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/182.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/fx-at001-a"
+  },
+  "yellow-mountain-imports-huntington": {
+   "name": "Huntington",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/fx-at002-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/179.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/fx-at002-a"
+  },
+  "yellow-mountain-imports-pattaya": {
+   "name": "Pattaya",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/fx-at003-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/183.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/fx-at003-a"
+  },
+  "yellow-mountain-imports-outlaws-of-the-marsh-mahjong-treasure-set": {
+   "name": "Outlaws of the Marsh Mahjong Treasure Set",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/hb-at002-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/177.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/hb-at002-a"
+  },
+  "yellow-mountain-imports-atlantica": {
+   "name": "Atlantica",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/tc-af009-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/195.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/tc-af009-a"
+  },
+  "yellow-mountain-imports-aloha": {
+   "name": "Aloha",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/tc-af010-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/194.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/tc-af010-a"
+  },
+  "yellow-mountain-imports-oceana": {
+   "name": "Oceana",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/tc-at001-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/171.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/tc-at001-a"
+  },
+  "yellow-mountain-imports-toucan": {
+   "name": "Toucan",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/tc-at002-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/172.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/tc-at002-a"
+  },
+  "yellow-mountain-imports-peony": {
+   "name": "Peony",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/tc-at003-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/184.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/tc-at003-a"
+  },
+  "yellow-mountain-imports-koi": {
+   "name": "Koi",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/tc-at004-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/185.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/tc-at004-a"
+  },
+  "yellow-mountain-imports-papillon": {
+   "name": "Papillon",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/tc-at005-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/180.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/tc-at005-a"
+  },
+  "yellow-mountain-imports-sakura": {
+   "name": "Sakura",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/tc-at006-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/181.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/tc-at006-a"
+  },
+  "yellow-mountain-imports-panda": {
+   "name": "Panda",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/tc-at007-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/174.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/tc-at007-a"
+  },
+  "yellow-mountain-imports-chinoise-ii": {
+   "name": "Chinoise II",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/us-af032-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/198.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/us-af032-a"
+  },
+  "yellow-mountain-imports-celestial-harmony": {
+   "name": "Celestial Harmony",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/us-af033-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/197.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/us-af033-a"
+  },
+  "yellow-mountain-imports-peony-blush": {
+   "name": "Peony Blush",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/us-af035-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/212.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/us-af035-a"
+  },
+  "yellow-mountain-imports-classic-luxe": {
+   "name": "Classic Luxe",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/us-am001-h",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/199.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/us-am001-h"
+  },
+  "yellow-mountain-imports-classic-royale-ii": {
+   "name": "Classic Royale II",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/us-am008-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/200.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/us-am008-a"
+  },
+  "yellow-mountain-imports-mojave": {
+   "name": "Mojave",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/us-am009-a",
+   "status": "coming_soon",
+   "locked": false,
+   "hidden_now": true,
+   "current": "t15/211.jpg",
+   "reason": "only shot is a lone tile back with coin; no face+back image; stays hidden",
+   "product_url": "https://www.ymimports.com/products/us-am009-a",
+   "frame": null
+  },
+  "yellow-mountain-imports-heather": {
+   "name": "Heather",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/us-am011-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/204.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/us-am011-a"
+  },
+  "yellow-mountain-imports-the-classic": {
+   "name": "The Classic",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/us-at007-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/188.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/us-at007-a"
+  },
+  "yellow-mountain-imports-jet-set": {
+   "name": "Jet Set",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/us-at020-b",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/176.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/us-at020-b"
+  },
+  "yellow-mountain-imports-little-bird": {
+   "name": "Little Bird",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/us-at021-c",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/187.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/us-at021-c"
+  },
+  "yellow-mountain-imports-golden-fortune": {
+   "name": "Golden Fortune",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/us-at022-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/189.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/us-at022-a"
+  },
+  "yellow-mountain-imports-pink-sparkles": {
+   "name": "Pink Sparkles",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/us-at024-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/186.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/us-at024-a"
+  },
+  "yellow-mountain-imports-god-of-fortune": {
+   "name": "God of Fortune",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/us-at028-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/175.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/us-at028-a"
+  },
+  "yellow-mountain-imports-chinoise": {
+   "name": "Chinoise",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/us-at031-a",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/178.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/us-at031-a"
+  },
+  "yellow-mountain-imports-easy-reader": {
+   "name": "Easy Reader",
+   "brand": "Yellow Mountain Imports",
+   "tile_key": "www.ymimports.com/us-at402-b",
+   "status": "ok",
+   "locked": false,
+   "hidden_now": false,
+   "current": "t15/173.jpg",
+   "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
+   "product_url": "https://www.ymimports.com/products/us-at402-b"
+  },
+  "classic-tortoise": {
+   "name": "Classic Tortoise",
+   "brand": "Bam Bird Boutique",
+   "tile_key": "www.bambirdboutique.com/east-meets-west-tortoise-shell-tile-set-copy",
+   "status": "upgrade",
+   "locked": true,
+   "album_set": true,
+   "current": "assets/tiles/album/classic-tortoise-zoom.jpg",
+   "proposed": "assets/tiles/catalog-better/bam-bird-boutique-classic-tortoise.jpg",
+   "source_png": "assets/tiles/album/classic-tortoise.png",
+   "kind": "isolated tiles, backs + faces (Tiffany PNG on cream #faf7f0)",
+   "reason": "Tiffany 6:57pm: current album photo has a confetti mat behind the tiles; use her isolated PNG composited on cream; everywhere on the site. She will shoot a real pile later.",
+   "lock_note": "LOCKED album photo (locks.json tiles + canon map + album/index.json file). Needs locks.json edit + gate [1] album-photo check updated; reason \"Tiffany Oct 21 6:57pm: isolated Classic Tortoise everywhere\"",
+   "frame": {
+    "fp": [
+     0.5,
+     0.5
+    ],
+    "fz": 1
+   }
+  }
+ },
+ "site_replacements": [
+  {
+   "page": "FYM picker tile (Classic Tortoise)",
+   "current": "assets/tiles/album/classic-tortoise-zoom.jpg (locks.json tiles, t10/26.jpg)",
+   "proposed": "assets/tiles/catalog-better/bam-bird-boutique-classic-tortoise.jpg",
+   "when": "v71 build"
+  },
+  {
+   "page": "https://www.mahjmatchmaker.com/tortoise-mahjong-tile-matches (album hero / \"my favorite classic tortoise tiles\")",
+   "current": "https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/547dd2c4-7d13-4a1b-b9ca-9d911772ed1d/my-favorite-classic-tortoise-tiles.jpg",
+   "proposed": "isolated tortoise on cream (regenerate from assets/tiles/album/classic-tortoise.png at 1000w)",
+   "when": "follow-up publish; verify image shows the mat before swapping"
+  },
+  {
+   "page": "https://www.mahjmatchmaker.com/tortoise-mahjong-tile-matches (color guides)",
+   "current": ".../32da2ad1-e07d-4b47-9d32-1e43c58bf9f7/01-tortoise-mahjong-tiles-classic-vs-east-meets-west-color-guide.jpg and .../95c39bca-7356-4bfa-b02f-217beb5e7b51/00-tortoise-mahjong-tiles-color-guide-mobile-v4.jpg",
+   "proposed": "regenerate with isolated tortoise tile photo",
+   "when": "follow-up publish; needs visual check"
+  },
+  {
+   "page": "https://www.mahjmatchmaker.com/mahjong-tile-matches and homepage (title tile \"BBB Tortoise Title.png\")",
+   "current": ".../cdd5898e-f875-4af6-8ae0-5f65b3bac4b9/BBB+Tortoise+Title.png",
+   "proposed": "check; replace only if it shows the mat-backed photo",
+   "when": "needs visual check"
+  },
+  {
+   "page": "repo: scripts/albumcard/live_hd/gen_hol.py, scripts/social/its_a_match/pick.py, assets/social/its-a-match/reference-picks.json + README.md, builder/fym_fix_oct20/{patch_round2,tilemap}.py, builder/photo_identity_check.py, config/tile-color-measured.json, assets/tiles/album/index.json (file field)",
+   "current": "assets/tiles/album/classic-tortoise-zoom.jpg",
+   "proposed": "assets/tiles/catalog-better/bam-bird-boutique-classic-tortoise.jpg (or album/classic-tortoise.png, already used by vivienne/larkspur specs, gen_hol.py, gen_hol3.py, config/tile-tones.json)",
+   "when": "follow-up; color cards/covers/social cards generated from the zoom jpg"
+  }
+ ],
+ "album_sets_flagged_mat_behind": [
+  {
+   "set": "Classic Tortoise",
+   "note": "confetti mat behind tiles; replacement above"
+  },
+  {
+   "set": "Miss Classic Malachite",
+   "note": "sparse tiles on pale surface (not a mat, but no back/pile); for Tiffany"
+  }
+ ],
+ "holiday_tile_sets": {
+  "in_D_hol_prefix_10": [
+   "dear-santa",
+   "rackin-rudolph",
+   "holly-jolly-red",
+   "holly-jolly-green",
+   "holly-jolly-pink",
+   "nivalee-blue",
+   "tinselle-emerald",
+   "tinselle-ruby",
+   "nutcracker-ballet",
+   "cmc-apres-ski"
+  ],
+  "other_Christmas_catalog_candidates_not_hol": [
+   "mahjong-studios-christmas-kiss",
+   "sunday-mahjong-december-1994",
+   "virora-mahjong-christmas-collection-ii-nivalee-emerald-green",
+   "hip-hip-mahjong-nativity (hidden)",
+   "bespoke holiday-mahjong-its-a-vibe-glitter-glow"
+  ]
+ }
+}
