@@ -1,6 +1,6 @@
 <div class="fymp" id="fymp"><div class="fymp-ld" id="fymp-ld">Loading Find <i>Your</i> Mat-ch&trade;&hellip;</div><iframe id="fymp-f" class="fymp-f" title="Find Your Mat-ch" allow="web-share; clipboard-write; fullscreen" loading="eager"></iframe></div>
 <style>
-.fymp{position:relative;width:100vw;margin-left:calc(50% - 50vw);height:calc(100svh - 80px);min-height:560px;background:#fdf3f7;overflow:hidden}
+.fymp{position:relative;width:100%;height:calc(100svh - 80px);min-height:560px;background:#fdf3f7;overflow:hidden}
 .fymp-f{position:absolute;inset:0;width:100%;height:100%;border:0;display:block;background:transparent}
 .fymp-ld{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:700 18px 'Bitter',Georgia,serif;color:#054689}
 .fymp-ld.err{color:#c8325f;padding:0 24px;text-align:center}
@@ -18,6 +18,10 @@
     if(h){var cs=getComputedStyle(h);if(cs.position==='fixed'||cs.position==='sticky'){off=h.getBoundingClientRect().height;}}
     var vh=window.innerHeight||document.documentElement.clientHeight;
     box.style.height=Math.max(560,Math.round(vh-off))+'px';
+    /* full bleed: stretch to the page edges whatever column the code block sits in */
+    box.style.marginLeft='0px';box.style.width='100%';
+    var cw=document.documentElement.clientWidth,l=box.getBoundingClientRect().left;
+    box.style.marginLeft=(-l)+'px';box.style.width=cw+'px';
   }
   size();window.addEventListener('resize',size);window.addEventListener('orientationchange',function(){setTimeout(size,250)});
   function get(n){return fetch(BASE+'index.html',{cache:'force-cache'}).then(function(r){if(!r.ok)throw r.status;return r.text()}).catch(function(e){if(n>0)return new Promise(function(ok){setTimeout(ok,1500)}).then(function(){return get(n-1)});throw e;});}
