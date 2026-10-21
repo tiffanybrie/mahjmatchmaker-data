@@ -1,5 +1,7 @@
 # The Desk
 
+- [ ] **WAITING ON HER (at computer): reconnect Instagram via Facebook** in Planoly workspace 019fc27c (HQ needs/planoly-ig-facebook-reconnect). She's away from the computer Oct 21 evening and busy Oct 22, so REMIND her in the morning HQ cleanup and in the next chat. After she reconnects, the channel id may change: re-check list_channels, re-add @ohmymahjong Tag people on the Papaya x Vivienne carousel, and re-point any drafts to the new channel.
+
 ## Thu Oct 22: Tiffany mostly unavailable (her 5:11pm call)
 - Load her with NOTHING to post by hand. Only auto-posts (feed, carousels, plain stories with no stickers, pins). Any reminder post for Oct 22 becomes an undated draft and moves to a later day. Brand credit goes in Tag people + caption @mentions, not stickers.
 
