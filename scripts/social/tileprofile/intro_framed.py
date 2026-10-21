@@ -85,7 +85,7 @@ RACK = {'Bird & Bamboo Lavender': 'assets/colorcards/papaya-spritz/racks/bird-an
 BRANDS = ('Bird & Bamboo', 'Peace Love Mahjong', 'Middle & Main', 'Miss Mahjong', 'Mahjong Row & Co.', 'Bam Bird Boutique')
 def rrow(r):
     b = next((x for x in BRANDS if r['name'].startswith(x)), r['name'].split()[0]); c = r['name'][len(b) + 1:]
-    return (f'<div style="margin-top:24px"><div class="caps" style="font-size:17px;color:#8a6a80">{e(b)}</div><div class="pf" style="font-size:40px;font-weight:600;line-height:1.1;margin-top:2px">{e(c)}</div>'
+    return (f'<div style="margin-top:16px"><div class="caps" style="font-size:17px;color:#8a6a80">{e(b)}</div><div class="pf" style="font-size:40px;font-weight:600;line-height:1.1;margin-top:2px">{e(c)}</div>'
             f'<img src="{url(RACK[r["name"]])}" style="display:block;width:{W}px;height:84px;object-fit:fill;margin-top:8px;filter:drop-shadow(0 8px 10px rgba(6,40,90,.18))"></div>')
 grp = lambda g: ''.join(rrow(r) for r in P['racks'] if r.get('group', 'color') == g)
 s5 = (hdr(("Racks she's into", 80)) +
@@ -94,7 +94,7 @@ s5 = (hdr(("Racks she's into", 80)) +
       f'<div style="margin-top:34px;display:flex;align-items:center;gap:14px"><span class="hand" style="font-size:52px;color:var(--navy);line-height:1">super versatile</span>'
       f'<svg width="62" height="40" viewBox="0 0 70 44"><path d="M4 8 C 28 4, 46 14, 58 34" fill="none" stroke="#c8325f" stroke-width="4" stroke-linecap="round"/><path d="M46 30 L 59 37 L 62 22" fill="none" stroke="#c8325f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>'
       f'<span class="pf" style="font-size:27px;color:#3c4f73">my go-tos</span></div>{grp("versatile")}'
-      f'<div class="hand" style="font-size:46px;margin-top:30px;color:var(--pink)">now, who she&rsquo;s dating &rarr;</div></div>')
+      f'<div class="hand" style="font-size:46px;margin-top:22px;color:var(--pink)">now, who she&rsquo;s dating &rarr;</div></div>')
 
 # ---- slide 6: made for each other (text UNDER the photo row, Tiffany Oct 20)
 pr = P['omm_launch']['pair']

@@ -9,6 +9,8 @@ Papaya Spritz x Vivienne (Oct 21 launch). Three 1080x1350 slides, content inside
           "Swipe all 50 of Papaya's matches / mahjmatchmaker.com", wordmark + brand line.
           Match cards are cropped above their code band (never a hard-coded % on social).
 Usage: python3 scripts/social/omm_forward/render.py [out_dir]
+Story (Oct 21 1:47pm): DSF=2 python3 render.py /tmp/x, then
+  python3 scripts/social/its_a_match/story_frames.py slides <story-frames dir> /tmp/x/*-1-*.jpg /tmp/x/*-2-*.jpg /tmp/x/*-3-*.jpg --fit
 """
 import asyncio, os, sys, html as H
 
@@ -105,7 +107,7 @@ async def main():
              'papaya-vivienne-omm-forward-3-all-matches']
     async with async_playwright() as p:
         b = await p.chromium.launch()
-        pg = await b.new_page(viewport={'width': 1080, 'height': 1350})
+        pg = await b.new_page(viewport={'width': 1080, 'height': 1350}, device_scale_factor=int(os.environ.get('DSF', '1')))
         for n, html in zip(names, [slide1(), slide2(), slide3()]):
             f = f'{OUT}/.{n}.html'
             open(f, 'w').write(html)

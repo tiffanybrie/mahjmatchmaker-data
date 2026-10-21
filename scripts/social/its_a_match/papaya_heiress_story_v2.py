@@ -6,7 +6,8 @@
      album cards are untouched).
   3  PRE-LAUNCH teaser: "Find Your Mat-ch(TM) · Coming 10.27", one short line, mahjmatchmaker.com, the FYM screenshot in a
      real iPhone frame (71.5 x 147 mm body, 19.5:9 screen, real bezel, rounded corners, dynamic island). Link-sticker band.
-Stories 1080x1920, key content inside y 269-1536.
+Stories 1080x1920. Oct 21 1:47pm (Tiffany): content is centred in the safe band (top 250 / bottom 340 clear) and scaled
+as big as it fits (FIT below); no empty bands for stickers, stickers go over the cream margin.
 Usage: python3 scripts/social/its_a_match/papaya_heiress_story_v2.py"""
 import os, sys, asyncio
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -23,14 +24,14 @@ NAVY, PINK, PINK2, BLUSH, SITE, u, e, poss = RD.NAVY, RD.PINK, RD.PINK2, RD.BLUS
 
 def frame1():
     W, Ht, html = RD.slide1(c, 'story')
-    html = html.replace('top:269px;height:1267px', 'top:269px;height:1110px')   # leaves y 1379-1536 for the mentions
+    html = html.replace('top:269px;height:1267px', 'top:250px;height:1330px')
     html = html.replace('line-height:1.18">Hooking up tiles,<br>mats &amp; racks',
                         'line-height:1.18;white-space:nowrap">Hooking up tiles, mats &amp; racks')
     return html
 
 
 def frame2():
-    body = f"""<div id=blk style="position:absolute;left:0;right:0;top:300px;bottom:400px;display:flex;flex-direction:column;align-items:center">
+    body = f"""<div id=blk style="position:absolute;left:0;right:0;top:250px;bottom:340px;display:flex;flex-direction:column;align-items:center;justify-content:center">
 <div class=c style="font:700 34px Bit;letter-spacing:.2em;color:{NAVY};text-transform:uppercase">Top match card</div>
 <div class=c style="font-family:Hand;font-size:108px;color:{PINK};line-height:1;margin-top:6px;white-space:nowrap">From {poss(c['short'])} album</div>
 <div id=frame style="flex:1;min-height:0;margin-top:30px;background:#fff;border-radius:32px;padding:22px;box-shadow:0 18px 44px rgba(200,80,90,.16),0 0 0 1px #f3dfe3;display:flex">
@@ -42,8 +43,8 @@ def frame2():
 
 def frame3():
     # iPhone 14/15: body 71.5 x 147 mm, screen 1170 x 2532 px (19.5:9). Phone height 900px -> width 900*71.5/147.
-    ph = 900; pw = round(ph * 71.5 / 147); bez = 22; sw = pw - 2 * bez; sh = ph - 2 * bez
-    body = f"""<div id=blk style="position:absolute;left:0;right:0;top:300px;bottom:400px;display:flex;flex-direction:column;align-items:center">
+    ph = 940; pw = round(ph * 71.5 / 147); bez = 22; sw = pw - 2 * bez; sh = ph - 2 * bez
+    body = f"""<div id=blk style="position:absolute;left:0;right:0;top:250px;bottom:340px;display:flex;flex-direction:column;align-items:center;justify-content:center">
 <div class=c style="font:700 34px Bit;letter-spacing:.2em;color:{PINK};text-transform:uppercase">Coming 10.27</div>
 <div class=c style="font-family:Lo;font-weight:700;font-size:100px;color:{NAVY};line-height:1;white-space:nowrap;margin-top:12px">Find <i>Your</i> Mat-ch<span style="font-size:.34em;vertical-align:1.3em;margin-left:3px">&trade;</span></div>
 <div class=c style="font-family:Lo;font-style:italic;font-size:44px;color:{NAVY};margin-top:18px">Swipe the mats that match your tiles.</div>
@@ -61,6 +62,14 @@ def frame3():
     return RD.shell(1080, 1920, body)
 
 
+# Scale the block's content (union of its children) up to fill the safe band, centred at (540, 915).
+FIT = """()=>{const b=document.getElementById('blk');let t=1e9,l=1e9,r=-1e9,o=-1e9;
+for(const c of b.children){const q=c.getBoundingClientRect();t=Math.min(t,q.top);l=Math.min(l,q.left);r=Math.max(r,q.right);o=Math.max(o,q.bottom)}
+const s=Math.min(1010/(r-l),1310/(o-t));const cx=(l+r)/2,cy=(t+o)/2;const br=b.getBoundingClientRect();
+b.style.transformOrigin=(cx-br.left)+'px '+(cy-br.top)+'px';b.style.transform='translate('+(540-cx)+'px,'+(915-cy)+'px) scale('+s+')';
+const n=b.getBoundingClientRect();return [Math.round(s*1000)/1000]}"""
+
+
 async def go():
     from playwright.async_api import async_playwright
     os.makedirs(OUT, exist_ok=True)
@@ -72,6 +81,7 @@ async def go():
             await pg.goto('file://' + tmp, wait_until='load'); await pg.evaluate('document.fonts.ready'); await pg.wait_for_timeout(400)
             ov = await pg.evaluate("""()=>{const b=document.getElementById('blk');return b.scrollHeight-b.clientHeight}""")
             if ov > 1: print('OVERFLOW frame', i, ov)
+            print('frame', i, 'fit scale', await pg.evaluate(FIT))
             await pg.screenshot(path=f'{OUT}/story-{i}.jpg', type='jpeg', quality=92); await pg.close()
         await b.close()
     print('ok', OUT)
