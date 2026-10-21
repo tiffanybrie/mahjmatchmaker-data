@@ -27,7 +27,7 @@ APP_BASE = CDN + APP_COMMIT + '/site-app/fym-oct21d/'
 # Oct 21 3:13pm (Tiffany): the tool's promo SHOWS THE TOOL. Hero = real v69 app screens in a true-proportion iPhone
 # (swipe: Papaya Spritz on Heiress, her #1 pick; behind it the two doors). How it works = 6-step tutorial, each a real screen.
 # Rendered by scripts/fym_promo/render.py from scripts/fym_promo/capture.py (undo hidden, X + heart only, no %).
-PHONES = CDN + '4e1897f1e54cfbd97c92f1ccbfcc51676f881f58/assets/site/fym-page-v2/'
+PHONES = CDN + 'cd8cb41d47ef16e4c242a56a0add06f768bafb97/assets/site/fym-page-v2/'
 HERO_ALT = ('Find Your Mat-ch on a phone: Papaya Spritz tiles swiping on the Heiress mat by Britt Mills with the X and heart '
             'buttons, next to the start screen where you pick I have tiles or I have a mat')
 FEEDBACK = '/find-your-mat-ch-feedback'
