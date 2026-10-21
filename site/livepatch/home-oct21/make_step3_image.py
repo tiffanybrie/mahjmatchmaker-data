@@ -62,6 +62,8 @@ def render(spread):
 best = SPREAD
 fan = render(SPREAD)
 out = fan.resize((OUT_W, round(OUT_W * fan.height / fan.width)), Image.LANCZOS)
+PAD = 15                       # transparent breathing room so the soft shadow is never clipped (QA, Oct 21)
+padded = Image.new('RGBA', (out.width + 2 * PAD, out.height + 2 * PAD), (0, 0, 0, 0)); padded.alpha_composite(out, (PAD, PAD)); out = padded
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 out.save(OUT, optimize=True)
 print(OUT, out.size, 'spread', best, 'ar %.3f' % (out.width / out.height), os.path.getsize(OUT) // 1024, 'KB')

@@ -234,7 +234,7 @@ def render(it):
 # match cards (tiles + mat + racks, our own images) in her ranked order. `expand N` adds up to N NEW card
 # pins per album per run, plus any missing cover/guide pins. Re-run weekly to keep circulating.
 HOLD_SETS = {'jade', 'malachite'}  # Miss Mahjong restock: save for the buying window (Tiffany, Oct 21)
-BLOCK_BRANDS = ('paige spearin', 'mahjong studios', 'four winds', 'the mahjong line', 'mahj house rules', 'maison mahj')
+BLOCK_BRANDS = ('paige spearin', 'shell yeah', 'apres mahj', 'après mahj', 'mahj and martinis', 'bunny love', 'mahjong studios', 'four winds', 'the mahjong line', 'mahj house rules', 'maison mahj')
 SET_NAMES = {'tortoise': 'Classic Tortoise', 'cypress-forest': 'Cypress Forest', 'heritage-2-0': 'Heritage 2.0',
              'sunday-tile-set': 'Sunday', 'shangri-la': 'Shangri La', 'la-fete': 'La Fete', 'glow-wild': 'Glow Wild',
              'lilac-soiree': 'Lilac Soiree', 'preppy-soiree': 'Preppy Soiree', 'spring-love': 'Spring Love',
