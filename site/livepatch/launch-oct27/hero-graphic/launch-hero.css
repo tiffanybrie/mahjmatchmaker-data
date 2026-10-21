@@ -24,6 +24,8 @@
  [data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f h4,
  [data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block:has(a[href="/mahjong-tile-matches"]) p{text-align:left!important}
  [data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f h1::before{margin-left:0}
+ /* one left edge: the text block's 3% inner padding would push pill/H1/line ~17px right of the button and links */
+ [data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f .sqs-html-content{padding-left:0!important;padding-right:0!important}
 }
 /* ----- phones + tablets: text stacks on top, the fan sits under it (portrait graphic) ----- */
 @media (max-width:1199px){

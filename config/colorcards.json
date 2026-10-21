@@ -408,6 +408,70 @@
     "Bam Bird Boutique Walnut": "assets/racks/card/bam-bird-boutique-walnut.png",
     "Peace Love Mahjong Oak": "assets/racks/card/peace-love-mahjong-oak.png"
    }
+  },
+  "brownstone-bloom": {
+   "name": "Brownstone Bloom",
+   "brand": "Anders Ruff",
+   "col": "#7b2d3b",
+   "tile": "assets/tiles/album/brownstone-bloom.jpg",
+   "sub": "Ivory with lavender, wine & olive",
+   "tag": [
+    "31 mat matches",
+    "and counting"
+   ],
+   "backs": [
+    [
+     "IVORY",
+     "#eee3cf",
+     "solid tile"
+    ],
+    [
+     "LAVENDER",
+     "#ae9ca9",
+     "butterfly on the back"
+    ]
+   ],
+   "faces": [
+    [
+     "WINE",
+     "#5b3838"
+    ],
+    [
+     "OLIVE",
+     "#5c512a"
+    ],
+    [
+     "DUSTY ROSE",
+     "#bb7c71"
+    ],
+    [
+     "LAVENDER",
+     "#ae9ca9"
+    ]
+   ],
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Bird & Bamboo Lilac",
+    "Bird & Bamboo Moss",
+    "Bird & Bamboo Wine"
+   ],
+   "racks_source": "PROPOSAL pending her OK (README site/livepatch/brownstone-bloom-oct20, triage B21); same tile racks as the 31 staged cards",
+   "rack_imgs": {
+    "Peace Love Mahjong Oak": "assets/racks/card/peace-love-mahjong-oak.png"
+   },
+   "mats": [
+    "Brownstone Bloom",
+    "Autumn Saffron",
+    "Mocha Bloom Light"
+   ],
+   "mat_imgs": {
+    "Brownstone Bloom": "assets/colorcards/brownstone-bloom/mats/brownstone-bloom-anders-ruff.jpg",
+    "Autumn Saffron": "assets/colorcards/brownstone-bloom/mats/autumn-saffron-mahjong-row-co.jpg",
+    "Mocha Bloom Light": "assets/colorcards/brownstone-bloom/mats/mocha-bloom-light-mahjong-row-co.jpg"
+   },
+   "shop": "Code MAHJMATCH on mats",
+   "shop_m": "Code MAHJMATCH on partner mats & racks",
+   "_oct21": "Colours measured Oct 21 from the album pile (backs, protea, leaves, craks) + AR's NEWS close-up (doc 86: 3+ spots, saturated-ink median). AR says the tile set itself takes no promo codes (Indigo Pruitt special edition), so the pill never puts the code on the tiles. Top 3 = her album order. Classic Tile Edit labels (no profile wording: gender not set for this set)."
   }
  },
  "_note_oct19_catchup": "Oct 19 catch-up: shangri-la, lilac-soiree, preppy-soiree, spring-love, sunday-tile-set got mat_imgs/rack_imgs and were rendered with the existing style. They use 'tag' (factual). When Tiffany approves the Papaya profile_line style, add profile_line to each set and re-run build.py <key>; nothing else changes."

@@ -127,4 +127,6 @@ async def preview(widths=((1280, 800), (390, 844), (1440, 900), (1200, 800), (11
 if __name__ == '__main__':
     what = sys.argv[1] if len(sys.argv) > 1 else 'all'
     if what in ('bg', 'all'): asyncio.run(render_bg())
-    if what in ('preview', 'all'): asyncio.run(preview())
+    if what in ('preview', 'all'):
+        ws = [tuple(map(int, a.split('x'))) for a in sys.argv[2:]]
+        asyncio.run(preview(tuple(ws)) if ws else preview())

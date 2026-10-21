@@ -140,7 +140,7 @@ def rack_panel(c, S, x0, x1, y, rowh=150, fs=20):
         d.text((x0 + 2, y), (b.upper() + '  ·  ' if b else ''), font=P('Poppins-Bold.ttf', fs * .8), fill=(160, 120, 140))
         bw = d.textlength((b.upper() + '  ·  ' if b else ''), font=P('Poppins-Bold.ttf', fs * .8))
         d.text((x0 + 2 + bw, y - 3), col, font=P('Poppins-Medium.ttf', fs * 1.15), fill=NAVY)
-        st = rack_strip(S, n, w, int(rowh * .42), rowh - int(fs * 1.9) - int(fs * 1.4)); c.paste(st, (x0 + (w - st.width) // 2, y + int(fs * 1.9)), st); d = ImageDraw.Draw(c)
+        st = rack_strip(S, n, w, int(rowh * .42), max(int(rowh * .42), rowh - int(fs * 1.9) - int(fs * 1.4))); c.paste(st, (x0 + (w - st.width) // 2, y + int(fs * 1.9)), st); d = ImageDraw.Draw(c)
         y += rowh
     return y
 
@@ -179,7 +179,7 @@ def desktop(S, out):
         count_pill(c, 1030, 930, S.get('matches', 50), 19); swipe_btns(c, 1030, 1040, 380 + 64, 84); d = ImageDraw.Draw(c)
     d.rounded_rectangle((1382, 42, 1954, 1084), radius=36, fill=PANEL, outline=EDGE, width=3)
     label(c, d, 1668, 66, lab('racks'), P('Poppins-Bold.ttf', 30), NAVY, 8, True); d = ImageDraw.Draw(c)
-    rack_panel(c, S, 1418, 1918, 150, rowh=178, fs=20); d = ImageDraw.Draw(c)
+    rack_panel(c, S, 1418, 1918, 150, rowh=min(178, 534 // max(1, len(S['racks']))), fs=20)  # Oct 21: 4 racks (Brownstone) share the 3-rack height; d = ImageDraw.Draw(c)
     label(c, d, 1668, 690, lab('mats'), P('Poppins-Bold.ttf', 28), NAVY, 7, True); d = ImageDraw.Draw(c)
     mats_row(c, S, 1412, 742, 150, 20, 21); d = ImageDraw.Draw(c)
     d.rounded_rectangle((1420, 958, 1916, 1020), radius=31, fill=NAVY)
@@ -214,7 +214,7 @@ def mobile(S, out):
     # racks + mats panel
     d.rounded_rectangle((80, 2340, 1920, 2960), radius=48, fill=PANEL)
     label(c, d, 540 if V is None else 516, 2380, lab('racks'), P('Poppins-Bold.ttf', 27 * K), NAVY, 7 * K, True); d = ImageDraw.Draw(c)
-    rack_panel(c, S, 132, 900, 2452, rowh=158, fs=28); d = ImageDraw.Draw(c)
+    rack_panel(c, S, 132, 900, 2452, rowh=min(158, 474 // max(1, len(S['racks']))), fs=28); d = ImageDraw.Draw(c)
     label(c, d, 1450, 2380, lab('mats'), P('Poppins-Bold.ttf', 27 * K), NAVY, 7 * K, True); d = ImageDraw.Draw(c)
     mats_row(c, S, 1035, 2470, 250, 42, 30); d = ImageDraw.Draw(c)
     d.rounded_rectangle((1040, 2812, 1860, 2896), radius=42, fill=NAVY)
