@@ -15,6 +15,7 @@ header p{margin:0 0 6px;color:var(--muted);max-width:68ch}
 .bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding-block:10px;margin-block:16px 8px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;font-size:13px;color:var(--muted)}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
 .bar b{color:var(--ink);font-variant-numeric:tabular-nums}
+#nav{display:flex;flex-wrap:wrap;gap:6px;min-width:0}
 .bar a{color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:2px 10px;white-space:nowrap}
 .bar a.done{border-color:var(--pink);color:var(--pink)}
 #status{margin-left:auto}
@@ -47,7 +48,7 @@ section{padding-block:28px 8px;border-bottom:1px solid var(--line);scroll-margin
 <div class="wrap">
 <header>
 <h1>New mats for your thinnest albums</h1>
-<p>Mats added since Oct 17 (ShopMy, Etsy, Tala, Mahj &amp; Vine and new partner mats) that fit each set's colors. Partner or allowed brands only, clean photos only, best first. Tap ♥ for a match card, ✕ to pass.</p>
+<p>Mats added since Oct 17 (ShopMy, Etsy, Tala, Mahj &amp; Vine and new partner mats) that fit each set's colors. Partner or allowed brands only, clean photos only, best first. Tap ♥ for a match card, ✕ to skip.</p>
 </header>
 <div class="bar" id="bar"><span><b id="cnt">0</b> of <b id="tot">0</b> answered</span><span id="nav"></span><span id="status">Connecting…</span></div>
 <main id="albums"></main>
@@ -67,7 +68,7 @@ function render(){
     const g=sec.querySelector('.grid');
     for(const m of a.mats){
       const v=V[m.id]||'';const c=document.createElement('div');c.className='card'+(v?' '+v:'');
-      c.innerHTML=`<div class="ph"><img loading="lazy" src="${m.img}" alt="${esc(m.brand)} ${esc(m.name)} mat"></div><div class="meta"><div class="n">${esc(m.name)}</div><div class="b">${esc(m.brand)}</div><a href="${m.url}" target="_blank" rel="noopener">view mat</a></div><div class="btns"><button class="x" id="x-${m.id}" aria-pressed="${v==='no'}" aria-label="Pass on ${esc(m.name)} for ${esc(a.name)}">✕</button><button class="h" id="h-${m.id}" aria-pressed="${v==='yes'}" aria-label="Match ${esc(m.name)} with ${esc(a.name)}">♥</button></div>`;
+      c.innerHTML=`<div class="ph"><img loading="lazy" src="${m.img}" alt="${esc(m.brand)} ${esc(m.name)} mat"></div><div class="meta"><div class="n">${esc(m.name)}</div><div class="b">${esc(m.brand)}</div>${m.url?`<a href="${m.url}" target="_blank" rel="noopener">view mat</a>`:""}</div><div class="btns"><button class="x" id="x-${m.id}" aria-pressed="${v==='no'}" aria-label="Skip ${esc(m.name)} for ${esc(a.name)}">✕</button><button class="h" id="h-${m.id}" aria-pressed="${v==='yes'}" aria-label="Match ${esc(m.name)} with ${esc(a.name)}">♥</button></div>`;
       c.querySelector('.x').onclick=()=>vote(a,m,'no');c.querySelector('.h').onclick=()=>vote(a,m,'yes');
       g.appendChild(c);
     }

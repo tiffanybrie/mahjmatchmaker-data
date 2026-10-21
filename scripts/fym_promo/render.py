@@ -97,6 +97,10 @@ async def go():
             await pg.locator(sel).screenshot(path=out, omit_background=omit)
             await pg.close()
 
+        # 0. pre-launch homepage (Tiffany 3:58pm): ONE phone, the v70 START screen only (Find Your Mat-ch), nothing else teased
+        await shot(page(f'<div style="position:absolute;left:40px;top:30px">{phone("doors.jpg", 1040)}</div>', w=590, h=1140), f'{TMP}/start.png')
+        im = Image.open(f'{TMP}/start.png'); os.makedirs(f'{R}/assets/site/home-prelaunch', exist_ok=True)
+        im.resize((560, round(im.height * 560 / im.width)), Image.LANCZOS).save(f'{R}/assets/site/home-prelaunch/start-phone.webp', quality=84, method=6)
         # 1. hero: big swipe phone + smaller doors phone, overlapping (email = paper bg jpg, page = transparent)
         hero = f"""<div style="position:absolute;left:150px;top:150px;transform:rotate(-4deg)">{phone('doors.jpg', 760)}</div>
 <div style="position:absolute;left:560px;top:30px;z-index:2">{phone('swipe.jpg', 1000)}</div>"""

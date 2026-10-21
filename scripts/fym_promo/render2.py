@@ -23,14 +23,14 @@ STEPS = [
     dict(title='Pick your door', screen='doors', crop=(0, 360),
          caption='Start with the tiles you own, or start with the mat you already love.',
          alt='The Find Your Mat-ch start screen. Arrows point to the two doors: I have tiles, and I have a mat.',
-         labels=[('Start with your tiles', NAVY, 'bottom', 104, 318), ('Or start with your mat', ROSE, 'bottom', 286, 318)]),
+         labels=[('Start with your tiles', NAVY, 'bottom', 104, 346), ('Or start with your mat', ROSE, 'bottom', 286, 346)]),
     dict(title='Here&rsquo;s what these buttons do', screen='swipe', crop=(312, 1110),
          caption='Tap &hearts; to add a mat to your shortlist and &#10005; to skip it. My picks show first; tap the pink button to see every mat. Tap a color dot to shop by color, and tap it again to clear it.',
          alt='Swiping mats for Papaya Spritz tiles, with the Heiress mat on screen. Arrows point to the Tiffany’s picks button (turn my picks on or off), the color dots (shop by color), the X button (not for me) and the heart button (love it, add to my shortlist).',
          labels=[('Turn my picks on or off', ROSE, 'top', 123, 341), ('Shop by color', NAVY, 'top', 362, 341),
                  ('Not for me', NAVY, 'bottom', 156, 1071), ('Love it! Add to my shortlist', ROSE, 'bottom', 230, 1071)],
          email=[((312, 372), [('Turn my picks on or off', ROSE, 'top', 123, 341), ('Shop by color', NAVY, 'top', 362, 341)]),
-                ((1005, 1110), [('Not for me', NAVY, 'bottom', 156, 1071), ('Love it! Add to my shortlist', ROSE, 'bottom', 230, 1071)])]),
+                ((1034, 1110), [('Not for me', NAVY, 'bottom', 156, 1071), ('Love it! Add to my shortlist', ROSE, 'bottom', 230, 1071)])]),
     dict(title='Your shortlist', screen='shortlist', crop=(960, 1200),
          caption='Every mat you &hearts; collects at the bottom, so you can compare. When you&rsquo;re ready, tap Mock your&nbsp;match.',
          alt='The shortlist bar at the bottom of the swipe, holding two loved mats. Arrows point to the shortlist and to the Mock your match button.',
@@ -39,7 +39,7 @@ STEPS = [
          caption='See your tiles, mat and racks together. Swipe racks the same way, then tap Make it&nbsp;official.',
          alt='The mock-up step: Papaya Spritz tiles on the Heiress mat with Tiffany’s rack match, Middle & Main Scalloped Beechwood. Arrows point to the mat and to the rack.',
          labels=[('Your tiles + mat, together', NAVY, 'top', 110, 1400), ('Swipe racks: ✕ or ♥', ROSE, 'bottom', 195, 2085)],
-         email=[((1770, 2120), [('My rack pick', NAVY, 'top', 230, 1860), ('Swipe racks: ✕ or ♥', ROSE, 'bottom', 195, 2085)])]),
+         email=[((1792, 2120), [('My rack pick', NAVY, 'top', 230, 1860), ('Swipe racks: ✕ or ♥', ROSE, 'bottom', 195, 2085)])]),
     dict(title='Save and share', screen='card', crop=(2362, 3020),
          caption='Pick your view, then save your match card or send it to your mahj group. Every piece is linked, with code&nbsp;MAHJMATCH.',
          alt='The finished match card for Papaya Spritz on Heiress with Beechwood racks. Arrows point to the view buttons and to Save or share my match card.',
@@ -78,7 +78,7 @@ let h='<defs><marker id=a markerWidth=5 markerHeight=5 refX=3.2 refY=2.5 orient=
 for(const p of document.querySelectorAll('.pill')){{const r=p.getBoundingClientRect();const top=p.parentElement.classList.contains('top');
  const tx=sr.left-cr.left+(+p.dataset.tx)*sc, ty=sr.top-cr.top+(+p.dataset.ty)*sc;
  const sx=r.left-cr.left+r.width/2, sy=top?r.bottom-cr.top:r.top-cr.top;
- const ex=tx, ey=top?ty-14:ty+14; const mx=(sx+ex)/2, my=(sy+ey)/2;
+ const ex=tx, ey=top?ty-18:ty+24; const mx=(sx+ex)/2, my=(sy+ey)/2;
  const d='M'+sx+','+sy+' Q'+sx+','+my+' '+ex+','+ey;
  h+='<path d="'+d+'" stroke="#fff" stroke-width="16" fill="none" stroke-linecap="round"></path>';
  h+='<path d="'+d+'" stroke="{HEART}" stroke-width="8" fill="none" stroke-linecap="round" marker-end="url(#a)"></path>';
