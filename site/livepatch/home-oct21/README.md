@@ -91,3 +91,9 @@ Rollback copies are in `source/oct21-1222/before_text_block-*.html`.
 - Hero section 69b1d01489d0f8016ee3d59f not touched.
 - Staged, not applied: `header-nav-overflow-fix.css` (desktop sideways scroll).
 - Screenshots: qa/round2_live_*.
+
+## Holiday banner centered on desktop (Tiffany Oct 21 1:16pm). LIVE ~1:40pm
+- Cause: `#mmhome section{margin:0 0 64px}` (id specificity) overrode `.mhx{margin:0 auto 38px}`, so the 1020px card sat flush left in the 1180px column (50px left / 210px right at 1280). Inside it, the heading was centered by `#mmhome h2` but the eyebrow, count, blurb and button were left aligned.
+- Fix (build.py step 7): `@media(min-width:761px){#mmhome section.mhx{margin-left:auto;margin-right:auto}.mhx-txt{text-align:center}}`. Phone (<=760px) unchanged; bottom margin stays 64px, so no section changes height (page height 10666 / 8333 / 8502 at 390 / 1280 / 1440, same as before).
+- Published as a one-line insert into block 5194 in the editor; the editor content hash matched the rebuilt file, and curl of the live page contains the file byte for byte.
+- Screenshots: qa/holiday_center_{before,after,live}_{390,1280,1440}.jpg
