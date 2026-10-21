@@ -2,7 +2,7 @@
 <section class="fx-hero"><div class="fx-wrap">
 <div class="fx-copy">
 <p class="fx-kick">New from Mahj Matchmaker</p>
-<h1>Find <em>Your</em> <span class="nb">Mat-ch<sup>&trade;</sup></span></h1>
+<h1><span class="nb">Find <em>Your</em></span> <span class="nb">Mat-ch<sup>&trade;</sup></span></h1>
 <p class="fx-lede">Pick your tiles or your mat, then swipe through the mats that bring out their best&nbsp;colors.</p>
 <a class="fx-btn" href="#fymx-app" data-fx-go>Start swiping <span aria-hidden="true">&#9829;</span></a>
 <p class="fx-under">Free, nothing to sign up for. Or <a href="/mahjong-tile-matches">browse the match&nbsp;albums</a>.</p>
@@ -17,7 +17,7 @@
 <div class="fx-wrap fx-head"><p class="fx-kick">Your turn</p><h2>Start <em>swiping</em></h2><p>Tiles first or mat first. Tap &#9829; for love, &#10005; for not the&nbsp;one.</p></div>
 <div class="fx-bar"><button type="button" class="fx-pill" data-fx-fs><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2 6V2h4M14 6V2h-4M2 10v4h4M14 10v4h-4"/></svg>Open full screen</button></div>
 <div class="fx-grid">
-<ul class="fx-side fx-tips"><li><b><span class="h">&#9829;</span> Love it</b>It waits for you so you can&nbsp;compare.</li><li><b><span class="x">&#10005;</span> Not the one</b>On to the next mat, no hard&nbsp;feelings.</li><li><b>Zoom in</b>Pinch or tap + and your zoom stays put as you&nbsp;swipe.</li><li><b>Shop by color</b>Tap a color chip to narrow the mats, tap again to&nbsp;clear.</li></ul>
+<ul class="fx-side fx-tips"><li><b><span class="h">&#9829;</span> Love it</b>It waits for you so you can&nbsp;compare.</li><li><b><span class="x">&#10005;</span> Not the one</b>On to the next mat, no hard&nbsp;feelings.</li><li><b>Zoom in</b>Pinch or tap + and your zoom stays put as you&nbsp;swipe.</li><li><b>Shop by color</b>Tap a color dot while swiping to narrow, tap again to&nbsp;clear.</li></ul>
 <div class="fx-stage" id="fx-stage"><div class="fx-ld" id="fx-ld"><i></i>Loading your matchmaker&hellip;</div><button type="button" class="fx-x" id="fx-x">&#10005; Close</button><iframe id="fx-f" title="Find Your Mat-ch" allow="web-share; clipboard-write; fullscreen"></iframe></div>
 <div class="fx-side r"><div class="fx-card"><p>Use code</p><strong>MAHJMATCH</strong><p>to save at 30+ partner&nbsp;brands</p></div><button type="button" class="fx-pill" data-fx-fs><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2 6V2h4M14 6V2h-4M2 10v4h4M14 10v4h-4"/></svg>Open full screen</button><a class="fx-pill" href="/mahjong-tile-matches">Browse the albums</a></div>
 </div>
@@ -55,8 +55,8 @@
 .fx-lock{display:inline-flex;flex-direction:column;width:230px;margin:0 auto 22px}
 .fx-lock img{width:100%;height:auto}
 .fx-lock b{display:block;margin-top:.5em;background:var(--heart);color:#fff;font:700 8.3px/1 'Bitter',Georgia,serif;letter-spacing:.15em;text-align:center;white-space:nowrap;padding:.5em 0 .45em;border-radius:3px}
-#fymx h1{font-size:clamp(46px,11.5vw,84px);line-height:1}
-#fymx h1 sup{font-family:'Bitter',Georgia,serif;font-size:.24em;vertical-align:top;position:relative;top:.3em;margin-left:.06em;color:var(--navy)}
+#fymx h1{font-size:clamp(46px,11.5vw,84px);line-height:1;word-spacing:-.08em}
+#fymx h1 sup{font-family:'Bitter',Georgia,serif;font-size:.28em;vertical-align:top;line-height:1;position:relative;top:.35em;margin-left:.08em;color:var(--navy)}
 .fx-lede{font:500 clamp(18px,4.6vw,22px)/1.45 'Lora',Georgia,serif;color:var(--navy2);max-width:30em;margin:18px auto 0!important}
 .fx-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;margin-top:28px;min-height:62px;padding:0 40px;border-radius:999px;background:var(--rose);color:#fff!important;text-decoration:none!important;font:700 21px/1 'Bitter',Georgia,serif;box-shadow:0 14px 30px rgba(200,50,95,.32);transition:transform .15s ease,box-shadow .15s ease;cursor:pointer;border:0}
 .fx-btn:hover{transform:translateY(-2px);box-shadow:0 18px 36px rgba(200,50,95,.38)}
@@ -115,7 +115,7 @@
 .fx-ld i{width:44px;height:44px;border-radius:50%;border:4px solid var(--pc);border-top-color:var(--rose);animation:fxspin 1s linear infinite}
 .fx-ld.err i{display:none}.fx-ld.err{color:var(--rose)}
 @keyframes fxspin{to{transform:rotate(360deg)}}
-.fx-x{display:none;position:absolute;z-index:3;top:calc(12px + env(safe-area-inset-top,0px));left:8px;min-height:38px;padding:0 12px;border-radius:999px;border:0;background:var(--navy);color:#fff;font:700 13px/1 'Bitter',Georgia,serif;cursor:pointer;box-shadow:0 6px 16px rgba(6,42,85,.3)}
+.fx-x{display:none;position:absolute;z-index:3;top:calc(12px + env(safe-area-inset-top,0px));left:calc(12px + env(safe-area-inset-left,0px));min-height:38px;padding:0 12px;border-radius:999px;border:0;background:var(--navy);color:#fff;font:700 13px/1 'Bitter',Georgia,serif;cursor:pointer;box-shadow:0 6px 16px rgba(6,42,85,.3)}
 .fx-stage.fs{position:fixed!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;border-radius:0!important;z-index:2147483000;margin:0!important;border:0!important}
 .fx-stage.fs .fx-x{display:block}
 html.fx-lock-scroll,html.fx-lock-scroll body{overflow:hidden!important}
