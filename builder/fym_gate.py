@@ -43,6 +43,12 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
  20 phone orphan (Oct 21: "for" alone on its own line in the I have tiles door): door subtitles end in a non-breaking space + last
     word and .door button small has text-wrap:balance
  21 footer feedback link (Oct 21 launch): "Something look off or have an idea? Tell me here" -> find-your-mat-ch-feedback, new tab
+ 17 (Oct 21 6:30pm) title is plain "Find Your Mat-ch(TM)"; no italic in any headline. 18b labelled Back above the card, not in the X/heart row
+ 22 node run of the page's own code over Tiffany's Oct 21 paths (builder/fym_matdoor_check.js): mat-door pairing summary with working
+    Change mat + Change tiles, See other mats deck swipes, no swipe copy on a locked/1-card deck, picks toggle only when it changes
+    something, mock-up only from HER pick, racks tray max 2 with x/swap, Back x5 restores order, logo Start over with confirm
+ 23 racks tray / one card design in 3 sizes / "to save" code line / Save-Share without press-and-hold   24 zoom-out swipe not sticky
+ 25 m contains every swipe-book yes (builder/fym_flags/swipe_yeses_map.json)   26 Holiday chip   27 Start over   28 Photo coming soon card
  8b colour-chip order: sh (measured share) lines up with mf; CSORT (single chip) = lead > ONE list by score (share + 20 if primary),
     checked by running CSORT in node over every chip colour
 """
@@ -399,13 +405,19 @@ else:
             if got_ != ord_: F.append(f"[16] {sl_}: picks not in live album order (first: {[M[k]['n'] for k in got_[:3]]} vs {[M[k]['n'] for k in ord_[:3]]})")
 
 # 17. tool name: Find Your Mat-ch(TM), italic Your, TM once (Oct 21)
-if '<h1 class="ttl">Find <i>Your</i> Mat-ch\u2122</h1>' not in UI: F.append("[17] start-screen title is not 'Find <i>Your</i> Mat-ch\u2122'")
+if '<h1 class="ttl">Find Your Mat-ch\u2122</h1>' not in UI: F.append("[17] start-screen title is not plain 'Find Your Mat-ch\u2122' (Tiffany Oct 21 6:30pm: never italic in display type)")
+if re.search(r'<h[12][^>]*>[^<]*<i>', UI) or re.search(r'\.lock \.ttl i\{[^}]*font-style:italic', UI): F.append("[17] italic in a headline (display type is never italic; italics only in running body text)")
 if TXT.count('\u2122') != 1: F.append(f"[17] \u2122 appears {TXT.count(chr(8482))} times in the UI (must be exactly once, on the start-screen title)")
 if re.search(r'(?i)find\s+(<i>)?your(</i>)?\s+match\b', TXT): F.append("[17] old name 'Find Your Match' still in the UI")
 if re.search(r'\.lock \.ttl\{[^}]*text-transform:uppercase', UI): F.append("[17] .lock .ttl is ALL CAPS (brand guide: Title Case)")
 
 # 18. swipe row: X and heart only (Oct 21: undo button)
 if re.search(r'<button[^>]*data-undo=', TXT) or '\u21ba' in TXT or '↺' in TXT: F.append("[18] undo / rewind button in the swipe row (X and heart only)")
+# 18b (Oct 21 6:37pm, Tiffany: a card she wanted flew by): a labelled "<- Back" just above the card, never in the X/heart row
+_acts = fn('acts')
+if 'data-back' in _acts: F.append("[18b] Back button inside the X/heart row (it belongs above the card)")
+if 'data-back=\\"m\\"' not in UI and 'data-back="m"' not in UI: F.append("[18b] no labelled Back button above the mat card")
+if "if(b=q('[data-back]')){undo(b.dataset.back)" not in UI: F.append("[18b] Back button does not undo the last swipe")
 
 # 19. tiles-door colour chips can be cleared (Oct 21)
 if "S.tcol=S.tcol===v?'':v" not in UI: F.append("[19] tiles-door colour chip does not toggle off (radio-style lock)")
@@ -419,6 +431,45 @@ if not re.search(r'\.door button small\{[^}]*text-wrap:balance', UI): F.append("
 
 # 21. feedback link in the footer (Oct 21, launch): opens the feedback page in a new tab
 if not re.search(r'<footer class="fb"><a href="https://www\.mahjmatchmaker\.com/find-your-mat-ch-feedback" target="_blank" rel="noopener">', UI): F.append("[21] footer feedback link missing / wrong URL / not a new tab")
+
+# 22 (Oct 21 6:20-6:44pm, Tiffany's phone tests): run the page's own code in node over every mat-door / tiles-door path
+import subprocess as _sp
+_r = _sp.run(['node', os.path.join(REPO, 'builder', 'fym_matdoor_check.js'), B], capture_output=True, text=True, timeout=300)
+try:
+    for f_ in json.loads(_r.stdout.strip().splitlines()[-1])['fails']: F.append('[22] ' + f_)
+except Exception as e_: F.append(f"[22] mat-door check could not run: {e_} {_r.stderr[-300:]}")
+# 23 racks tray (2 slots, x to remove, swap via suitors), one card design in 3 sizes, code line, save/share (no press-and-hold)
+_tr = fn('tray')
+if 'class="slots"' not in _tr or 'data-rx=' not in _tr or '2 of 2' not in _tr or 'Rack suitors' not in _tr: F.append("[23] racks tray is not the 2-slot tray with x and Rack suitors")
+if "if(S.rpick.length>=2){toast(" not in UI or "S.rpick.shift()" in UI: F.append("[23] a 3rd rack can push one out of the tray without x (max 2, swap via x)")
+_rr = fn('renderRacks')
+if "head(3,'Pick 2 racks'" not in _rr or _rr.find("tray('r')") > _rr.find("deck('r')") or 'Browsing racks' not in fn('deck'): F.append("[23] racks step: 'Pick 2 racks' up front / tray above the browsing deck / Browsing label missing")
+if re.search(r'(?i)press and hold', TXT): F.append("[23] press-and-hold save copy still in the UI (does not work on iPhone)")
+if "claude.use('downloads')" not in UI or 'navigator.share' not in UI or 'Save / Share my match card' not in UI: F.append("[23] Save / Share button does not use downloads capability + navigator.share")
+if not re.search(r"CARD_SIZES=\{story:\{w:1080,h:1920.*post:\{w:1080,h:1350.*pin:\{w:1000,h:1500", UI) or re.search(r'Facebook post|Pinterest pin', TXT): F.append("[23] card sizes are not Story 9:16 / Post 4:5 / Pin 2:3 (or old FB/Pin variants remain)")
+if "' to save'" not in fn('codeLine') and 'to save' not in fn('codeLine'): F.append("[23] card code line does not say 'Use code ... to save'")
+# 24 zoom (Oct 21 6:30pm: swiping sticky right after zoom-out): pinch end snaps ~1x to 1x and re-seeds the drag
+_z = fn('zoomer')
+if 'if(pinch&&pts.size<2){pinch=null;if(z.s<1.15)' not in _z or 'st=rest?' not in _z: F.append("[24] zoom-out does not hand the remaining finger straight back to swiping")
+# 25 Tiffany's swipe-book yeses are in her match lists (Oct 21 6:44pm, Tinselle Ruby Red showed 2 of her ~25 yeses)
+_ym = os.path.join(REPO, 'builder', 'fym_flags', 'swipe_yeses_map.json')
+if os.path.exists(_ym):
+    _sb = {s_['slug']: s_ for s_ in D['sets']}
+    for sl_, ks_ in json.load(open(_ym)).items():
+        s_ = _sb.get(sl_)
+        if not s_: continue
+        miss_ = [M[k]['n'] for k in ks_ if k in M and not M[k].get('hid') and k not in {e[0] for e in s_['m']}]
+        if miss_: F.append(f"[25] {sl_}: {len(miss_)} swipe-book yeses missing from m (e.g. {miss_[:3]})")
+        if s_['m'] and vis(s_) and not (s_.get('album') or s_.get('sb')): F.append(f"[25] {sl_}: has yeses but no album/sb flag (runtime guard blanks m)")
+else: F.append("[25] builder/fym_flags/swipe_yeses_map.json missing (run builder/fym_fix_oct21/swipe_yeses.py)")
+# 26 Holiday chip in the mat colour filters (Oct 21 6:44pm: 'How do I get to just all the holiday mats?')
+if 'data-fam="holiday"' not in fn('filters') or 'data-dfam="holiday"' not in fn('doorChips') or 'M[id].hol||M[id].wfh' not in UI: F.append("[26] no Holiday chip (hol || wfh) in the deck / mat-door colour filters")
+# 27 Start over from the top logo (confirm with a shortlist) + a Start over link near the top past the doors (Oct 21 6:32pm)
+if "q('#logo')||q('[data-startover]')" not in UI or 'Start over?' not in UI or 'data-startover' not in UI: F.append("[27] top logo / Start over link missing or no confirm sheet")
+# 28 Photo coming soon tile card (Oct 21 6:44pm) stays selectable
+if 'function SOON(' not in UI or 'T[s.tile].soon?SOON(s)' not in UI: F.append("[28] 'Photo coming soon' tile card missing")
+for k_, t_ in T.items():
+    if t_.get('soon') and t_.get('hid'): F.append(f"[28] {t_.get('n')}: photo-coming-soon tile is hidden (must stay selectable)")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
