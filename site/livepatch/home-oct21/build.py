@@ -65,7 +65,7 @@ assert n == 9
 POSTS = [  # (slug, kicker, title, teaser, image)
     ('halloween-mahjong-table', 'Halloween &middot; Styled table',
      'Night of the Raven: A Moody Halloween Mahjong Table',
-     'Black-on-black tiles with pops of plum, styled on the Mahjong Row &amp; Co. Mocha Bloom Dark mat. Every piece is linked so you can shop the look.',
+     'Terracotta marble tiles (those backs!) on the Mahjong Row &amp; Co. Mocha Bloom Dark mat, with translucent plum racks and black lace. Every piece is linked so you can shop the look.',
      '1792245124698-WBMYUEUDAFT8OPYOS12P/night-of-the-raven-shop-the-look-v3.jpg'),
     ('holiday-mahjong-table', 'Holiday &middot; Styled table',
      'A Holiday Mahjong Table Without a Christmas Mat',
