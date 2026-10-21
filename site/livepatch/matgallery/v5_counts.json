@@ -257,9 +257,7 @@
    "holiday"
   ],
   "tala-mahj--the-carlyle-holiday-plaid-with-red-fringe": [
-   "green",
-   "red",
-   "earthy"
+   "holiday"
   ],
   "tala-mahj--the-montecito-wildflowers": [
    "neutral",
@@ -460,9 +458,6 @@
   "mahj-vine--porcelain-bloom",
   "mahj-vine--watercolor-blooms",
   "sunday-mahjong--bold-blooms-premium",
-  "anders-ruff--tartan-tidings-mahjong-mat",
-  "bird-bamboo--the-ornamental-mahjong-mat",
-  "maison-mahj--the-chalet",
   "betty-june-jeannette--betty-floral-monogram-game-surface"
  ],
  "removed_mats": [
@@ -593,41 +588,253 @@
   "mahj-house-rules--mahjong-mat",
   "mahj-tile-haus--coral-and-coast-holiday"
  ],
- "claude_also_added": 147,
+ "late_calls_applied": {
+  "britt-mills--willow": [
+   "neutral"
+  ],
+  "mahjong-register--pink-zebra-in-bloom-premium-padded": [
+   "yellow",
+   "pink",
+   "animal",
+   "brights"
+  ],
+  "anders-ruff--palm-beach-tropical-pink-lime-mahjong-mat": [
+   "pink",
+   "green",
+   "simple"
+  ],
+  "anders-ruff--palm-beach-ocean-blue-green-mahjong-mat": [
+   "blue",
+   "green",
+   "simple"
+  ],
+  "oh-my-mahjong--merriment": [
+   "holiday"
+  ],
+  "oh-my-mahjong--sweet-marie-retired": [
+   "holiday"
+  ],
+  "anders-ruff--tartan-tidings-mahjong-mat": [
+   "holiday"
+  ],
+  "bam-bird-boutique--bandana-holiday-green-pink-accents": [
+   "holiday"
+  ],
+  "bespoke-mahjong--double-sided-mat-double-the-fun-bespoke-x-corey-paige-holiday-love-mat-red-green": [
+   "holiday"
+  ],
+  "bird-bamboo--the-ornamental-mahjong-mat": [
+   "holiday"
+  ],
+  "britt-mills--merrywood": [
+   "holiday"
+  ],
+  "hip-hip-mahjong--the-house-mahjong-mat": [
+   "holiday"
+  ],
+  "let-s-be-besties--merry-bright-holiday-prism": [
+   "holiday"
+  ],
+  "mahj-tile-haus--coral-and-coast-holiday": "not in gallery",
+  "maison-mahj--the-chalet": [
+   "holiday"
+  ],
+  "peace-love-mahjong--candy-cane-lane": [
+   "holiday"
+  ],
+  "peace-love-mahjong--merry-striped": [
+   "holiday"
+  ],
+  "peace-love-mahjong--merry-mix": [
+   "holiday"
+  ],
+  "sunday-mahjong--festive-plaid-premium": [
+   "holiday"
+  ],
+  "tala-mahj--the-carlyle-holiday-plaid-with-red-fringe": [
+   "holiday"
+  ],
+  "oh-my-mahjong--imperial-retired": [
+   "neutral",
+   "yellow",
+   "pastel"
+  ],
+  "oh-my-mahjong--anastasia": [
+   "pink",
+   "blue",
+   "teal",
+   "yellow",
+   "brights"
+  ],
+  "oh-my-mahjong--citrus-songbird-retired": [
+   "green",
+   "pink",
+   "yellow",
+   "pastel"
+  ],
+  "rebecca-illustrated--rainbow-row": [
+   "pink",
+   "blue",
+   "yellow",
+   "pastel"
+  ],
+  "bespoke-mahjong--preppy-pink-garden-mat": [
+   "pink",
+   "yellow",
+   "simple"
+  ],
+  "ozark-mah-jongg--carson-vintage": [
+   "neutral",
+   "yellow"
+  ],
+  "mahjong-row-co--autumn-saffron": [
+   "earthy",
+   "yellow"
+  ],
+  "sunday-mahjong--sunday-premium": [
+   "green",
+   "yellow",
+   "brights"
+  ],
+  "mahjong-row-co--osmanthus-grove": [
+   "green",
+   "earthy",
+   "yellow"
+  ],
+  "luxe-mahjong--the-polo-club": [
+   "dark",
+   "yellow"
+  ],
+  "britt-mills--knox": [
+   "green",
+   "yellow",
+   "earthy"
+  ],
+  "lucky-daughters--astor-place": [
+   "yellow",
+   "green",
+   "earthy"
+  ],
+  "mahj-tile-haus--white-lotus": [
+   "green",
+   "earthy",
+   "dark",
+   "yellow"
+  ],
+  "sunday-mahjong--bold-blooms-premium": [
+   "florals",
+   "red",
+   "blue",
+   "yellow",
+   "simple"
+  ],
+  "luxe-mahjong--azure-bloom": [
+   "green",
+   "red",
+   "blue",
+   "earthy",
+   "yellow"
+  ],
+  "luxe-mahjong--midnight-romance": [
+   "neutral",
+   "yellow"
+  ],
+  "anders-ruff--midnight-peacock-mahjong-mat": [
+   "green",
+   "dark",
+   "yellow"
+  ],
+  "bam-let-s-mahjong--posy-pop-watercolor-floral-mahjong-mat": [
+   "yellow",
+   "brights"
+  ],
+  "sunday-mahjong--golden-gingham-premium": [
+   "yellow",
+   "red",
+   "brights"
+  ],
+  "sunday-mahjong--spring-blooms-premium": [
+   "green",
+   "yellow",
+   "brights"
+  ],
+  "mahjong-register--hunter-green-navy-double-sided-leatherette": [
+   "green",
+   "earthy"
+  ],
+  "let-s-be-besties--emerald-lace": [
+   "green",
+   "brights"
+  ],
+  "mahj-squad--bront-collection-thrushcross-grange-mahjong-mat": [
+   "green",
+   "dark",
+   "earthy"
+  ],
+  "mahj-squad--monet-s-reflections-mahjong-mat": [
+   "green",
+   "brights"
+  ],
+  "miss-mahjong--canopy-palm": [
+   "green",
+   "brights"
+  ],
+  "oh-my-mahjong--birdie-green-retired": [
+   "green",
+   "simple"
+  ],
+  "that-mahjong-moment--evergreen": [
+   "green",
+   "dark"
+  ],
+  "sunday-mahjong--gaylord-premium": [
+   "green",
+   "simple"
+  ],
+  "tigre-de-tartan--bunny-love": [
+   "green",
+   "pastel"
+  ],
+  "wren-mats--green-gingham": [
+   "green",
+   "earthy"
+  ]
+ },
+ "claude_also_added": 144,
  "section_tiers_active": {
   "pink": {
    "primary": 110,
-   "also": 52,
-   "accent": 56
+   "also": 49,
+   "accent": 54
   },
   "red": {
-   "primary": 17,
+   "primary": 10,
    "also": 31,
    "accent": 15
   },
   "orange": {
    "primary": 19,
    "also": 29,
-   "accent": 25
+   "accent": 23
   },
   "yellow": {
-   "primary": 13,
-   "also": 24,
+   "primary": 15,
+   "also": 37,
    "accent": 5
   },
   "green": {
-   "primary": 86,
-   "also": 83,
-   "accent": 51
+   "primary": 82,
+   "also": 78,
+   "accent": 52
   },
   "teal": {
    "primary": 42,
    "also": 25,
-   "accent": 19
+   "accent": 20
   },
   "blue": {
-   "primary": 126,
-   "also": 68,
+   "primary": 125,
+   "also": 65,
    "accent": 47
   },
   "purple": {
@@ -638,17 +845,17 @@
   "neutral": {
    "primary": 41,
    "also": 2,
-   "accent": 67
+   "accent": 66
   },
   "earthy": {
-   "primary": 32,
-   "also": 44,
+   "primary": 31,
+   "also": 43,
    "accent": 75
   },
   "dark": {
    "primary": 28,
-   "also": 34,
-   "accent": 24
+   "also": 32,
+   "accent": 23
   },
   "bw": {
    "primary": 12,
@@ -657,17 +864,17 @@
   },
   "simple": {
    "primary": 2,
-   "also": 148,
+   "also": 145,
    "accent": 0
   },
   "pastel": {
    "primary": 0,
-   "also": 116,
+   "also": 115,
    "accent": 0
   },
   "brights": {
    "primary": 11,
-   "also": 155,
+   "also": 152,
    "accent": 0
   },
   "florals": {
@@ -677,11 +884,11 @@
   },
   "animal": {
    "primary": 0,
-   "also": 30,
+   "also": 29,
    "accent": 0
   },
   "holiday": {
-   "primary": 56,
+   "primary": 70,
    "also": 0,
    "accent": 0
   },
@@ -692,53 +899,53 @@
   }
  },
  "section_counts_active": {
-  "pink": 218,
-  "red": 63,
-  "orange": 73,
-  "yellow": 42,
-  "green": 220,
-  "teal": 86,
-  "blue": 241,
+  "pink": 213,
+  "red": 56,
+  "orange": 71,
+  "yellow": 57,
+  "green": 212,
+  "teal": 87,
+  "blue": 237,
   "purple": 66,
-  "neutral": 110,
-  "earthy": 151,
-  "dark": 86,
+  "neutral": 109,
+  "earthy": 149,
+  "dark": 83,
   "bw": 12,
-  "simple": 150,
-  "pastel": 116,
-  "brights": 166,
+  "simple": 147,
+  "pastel": 115,
+  "brights": 163,
   "florals": 31,
-  "animal": 30,
-  "holiday": 56,
+  "animal": 29,
+  "holiday": 70,
   "multi": 0,
   "retired": 29
  },
  "section_counts_if_retired_shown": {
-  "pink": 233,
-  "red": 66,
-  "orange": 76,
-  "yellow": 45,
-  "green": 233,
+  "pink": 227,
+  "red": 59,
+  "orange": 74,
+  "yellow": 62,
+  "green": 225,
   "teal": 92,
-  "blue": 252,
+  "blue": 248,
   "purple": 69,
-  "neutral": 115,
-  "earthy": 155,
-  "dark": 88,
+  "neutral": 114,
+  "earthy": 153,
+  "dark": 85,
   "bw": 12,
-  "simple": 152,
-  "pastel": 125,
-  "brights": 179,
+  "simple": 149,
+  "pastel": 124,
+  "brights": 175,
   "florals": 34,
-  "animal": 30,
-  "holiday": 57,
+  "animal": 29,
+  "holiday": 72,
   "multi": 0
  },
- "unique_active_mats": 650,
+ "unique_active_mats": 653,
  "retired": 29,
  "hidden": 18,
  "dedupe_groups": 12,
- "held_low_out": 93,
+ "held_low_out": 90,
  "applied_color_calls": [
   [
    "Britt Mills",
@@ -939,6 +1146,129 @@
     "pink",
     "animal"
    ]
+  ],
+  [
+   "Anders Ruff",
+   "Palm Beach Tropical Pink Lime",
+   "Palm Beach Tropical Pink Lime",
+   "pink",
+   [
+    "green"
+   ]
+  ],
+  [
+   "Anders Ruff",
+   "Palm Beach Ocean Blue Green",
+   "Palm Beach Ocean Blue Green",
+   "blue",
+   [
+    "green"
+   ]
+  ],
+  [
+   "Oh My Mahjong",
+   "Merriment",
+   "Merriment",
+   "holiday",
+   []
+  ],
+  [
+   "Oh My Mahjong",
+   "Sweet Marie",
+   "Sweet Marie (retired)",
+   "holiday",
+   []
+  ],
+  [
+   "Anders Ruff",
+   "Tartan Tidings",
+   "Tartan Tidings",
+   "holiday",
+   []
+  ],
+  [
+   "Bam Bird Boutique",
+   "Bandana Holiday",
+   "Bandana – Holiday Green/Pink accents",
+   "holiday",
+   []
+  ],
+  [
+   "Bespoke Mahjong",
+   "Bespoke x Corey Paige Holiday Love",
+   "DOUBLE-SIDED MAT | Double the Fun/Bespoke x Corey Paige - HOLIDAY LOVE MAT - RED/GREEN",
+   "holiday",
+   []
+  ],
+  [
+   "Bird & Bamboo",
+   "The Ornamental",
+   "The Ornamental",
+   "holiday",
+   []
+  ],
+  [
+   "Britt Mills",
+   "Merrywood",
+   "Merrywood",
+   "holiday",
+   []
+  ],
+  [
+   "Hip Hip Mahjong",
+   "The House",
+   "The House",
+   "holiday",
+   []
+  ],
+  [
+   "Let's Be Besties",
+   "Merry & Bright Holiday Prism",
+   "Merry & Bright, Holiday Prism",
+   "holiday",
+   []
+  ],
+  [
+   "Mahj Tile Haus",
+   "Coral and Coast Holiday",
+   "Coral and Coast  Holiday",
+   "holiday",
+   []
+  ],
+  [
+   "Maison Mahj",
+   "The Chalet",
+   "The Chalet",
+   "holiday",
+   []
+  ],
+  [
+   "Peace Love Mahjong",
+   "Candy Cane Lane",
+   "Candy Cane Lane",
+   "holiday",
+   []
+  ],
+  [
+   "Peace Love Mahjong",
+   "Merry & Striped",
+   "Merry & Striped",
+   "holiday",
+   []
+  ],
+  [
+   "Peace Love Mahjong",
+   "Merry Mix",
+   "Merry Mix",
+   "holiday",
+   []
+  ],
+  [
+   "Sunday Mahjong",
+   "Festive Plaid Premium",
+   "Festive Plaid Premium",
+   "holiday",
+   []
   ],
   [
    "Peace Love Mahjong",
@@ -1738,7 +2068,16 @@
    ]
   ]
  ],
- "unmatched_color_calls": [],
+ "unmatched_color_calls": [
+  {
+   "brand": "Tala Mahj",
+   "name": "The Carlyle - Holiday Plaid with Red Fringe",
+   "img": "tala-mahj--the-carlyle-holiday-plaid-with-red-fringe",
+   "primary": "holiday",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany.",
+   "_src": "2026-10-20-late-calls.json"
+  }
+ ],
  "renamed": {
   "amahj--blue-citron-lilac-mahjong-game-mat": [
    "Blue, Citron + Lilac Mahjong Game",

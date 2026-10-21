@@ -2,7 +2,7 @@
  "by": "claude-photo-review",
  "date": "2026-10-20",
  "method": "measured palette (config/mat-accent-colors.json, thresholds eye-checked on contact sheets): a color covering >= 15% of the mat is promoted to an also-color. Never applied to mats Tiffany has called (her v5 final calls or any tiffany-chat override) or to the 53 new mats (tagged by eye in tiffany-color-notes/2026-10-20-new53-claude-tags.json).",
- "count": 147,
+ "count": 144,
  "mats": {
   "amahj--lilac-green-squiggle-mahjong-game-mat": [
    "green"
@@ -86,13 +86,6 @@
    "green",
    "blue"
   ],
-  "oh-my-mahjong--merriment": [
-   "blue",
-   "green"
-  ],
-  "oh-my-mahjong--sweet-marie-retired": [
-   "teal"
-  ],
   "peace-love-mahjong--citrus-sherbet": [
    "green"
   ],
@@ -149,6 +142,9 @@
   "oh-my-mahjong--spring-fling-retired": [
    "pink",
    "blue"
+  ],
+  "sunday-mahjong--golden-gingham-premium": [
+   "red"
   ],
   "amahj--pink-teal-squiggle-mahjong-game-mat": [
    "pink"
@@ -478,12 +474,6 @@
   ],
   "sunday-mahjong--bold-blooms-premium": [
    "blue"
-  ],
-  "britt-mills--merrywood": [
-   "blue"
-  ],
-  "let-s-be-besties--merry-bright-holiday-prism": [
-   "green"
   ],
   "tigre-de-tartan--holy-mahj-retired": [
    "orange"

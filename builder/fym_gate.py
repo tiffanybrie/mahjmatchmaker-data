@@ -13,6 +13,11 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
  9  non-partner lockout (CLAUDE.md): a visible mat of a non-partner brand must be allowed (builder/fym_flags/nonpartner_allow.json: brand,
     mat key, ShopMy link) or in an album / swipe-book set's match list; brands/mats in nonpartner_pending.json only WARN
  10 no discount-code claim for non-partner / ShopMy mats (pa false, dc empty)
+ 11 no set's Tiffany's-match list (m) references a hidden mat or a removed mat (config/mat-gallery-crosstags.json remove_mats imgs/brands),
+    except her verified real picks in builder/fym_flags/m_hidden_ok.json (Amore Manor Garden bug, Oct 20)
+ 12 no Mahjong Studios mat visible in FYM or in the staged Mat Gallery (Tiffany Oct 20 22:31: tiles/racks stay, mats go); no removed
+    gallery row back in site/livepatch/matgallery/matgallery-v5.html
+ 8b colour-chip order (Oct 20 22:31/22:45): sh (measured share) lines up with mf; CSORT sorts lead > primaries by share > also+accent by share
 """
 import sys, os, json, re
 import numpy as np
@@ -122,6 +127,13 @@ if 'No mats with all of those yet' not in fn('NOAND') or 'data-fclear' not in fn
 if UI.count('class="dempty">${NOAND}') < 2: F.append("[8] mat-door zero-result message missing (grid + search reset)")
 if "filters('m')+" not in fn('renderMats'): F.append("[8] colour chips not rendered above the deck (filter could lock)")
 if "fam:''" in UI or 'S.dfam=' in UI: F.append("[8] single-colour filter state left over (fam:'' / S.dfam)")
+if 'SHR(id,c)' not in fn('CSORT') or 'D.lead' not in fn('CSORT') or 't>0?1:0' not in fn('CSORT'):
+    F.append("[8b] colour chips not sorted lead > primaries by measured share > also+accent merged by share (CSORT/SHR)")
+for c_, ks_ in (D.get('lead') or {}).items():
+    for k_ in ks_:
+        if k_ not in M or M[k_].get('hid') or (M[k_].get('mf') or [None])[0] != c_: F.append(f"[8b] lead mat {k_} for {c_} missing, hidden or not {c_} primary")
+for k, o in M.items():
+    if len(o.get('sh') or []) != len(o.get('mf') or []): F.append(f"[8b] mat {o['n']}: sh shares {o.get('sh')} do not line up with mf {o.get('mf')}")
 for k, o in M.items():
     if len(o.get('mt') or []) != len(o.get('mf') or []): F.append(f"[8] mat {o['n']}: mt tiers {o.get('mt')} do not line up with mf {o.get('mf')}")
     if o.get('hol') and o.get('mf') and not o.get('hid'): F.append(f"[8] holiday mat {o['n']} is in single-colour chips {o['mf']}")
@@ -143,6 +155,26 @@ for k, o in M.items():
     if o.get('hid'): continue
     if (o.get('u', '').startswith(NPA['shopmy_prefix']) or nz(o.get('bn')) not in PARTNERS) and (o.get('pa') or o.get('dc')):
         F.append(f"[10] non-partner / ShopMy mat {o['n']} ({o.get('bn')}) claims a partner code (pa={o.get('pa')}, dc={o.get('dc')!r})")
+
+# 11. no hidden / removed mat in any m list (except verified real picks)
+XT = json.load(open(REPO + 'config/mat-gallery-crosstags.json'))
+MAN = json.load(open(REPO + 'site/livepatch/matgallery/manifest.json'))
+RMK = {MAN[i_] for i_ in XT['remove_mats'].get('imgs', []) if i_ in MAN}
+RMB = set(XT['remove_mats'].get('brands', []))
+MOK = {(a['set'], a['key']) for a in json.load(open(REPO + 'builder/fym_flags/m_hidden_ok.json'))['allowed']}
+for s in D['sets']:
+    for x in s['m']:
+        o = M.get(x[0])
+        if o is None: F.append(f"[11] {s['slug']}: m references unknown mat {x[0]}"); continue
+        if (o.get('hid') or x[0] in RMK or o.get('bn') in RMB) and (s['slug'], x[0]) not in MOK:
+            F.append(f"[11] {s['slug']}: Tiffany's-match list has hidden/removed mat {o['n']} ({o.get('bn')}) {x[0]}")
+# 12. no Mahjong Studios mats (FYM + staged gallery); removed gallery rows stay out
+for k, o in M.items():
+    if not o.get('hid') and (o.get('bn') in RMB or k in RMK): F.append(f"[12] removed mat visible in FYM: {o['n']} ({o.get('bn')}) {k}")
+_g = open(REPO + 'site/livepatch/matgallery/matgallery-v5.html').read()
+_G = json.loads(re.search(r'<script type="application/json">(.*?)</script>', _g, re.S).group(1).replace('<\\/', '</'))
+for r in _G:
+    if r[2] in RMB or r[0] in set(XT['remove_mats'].get('imgs', [])): F.append(f"[12] removed mat in staged Mat Gallery: {r[1]} ({r[2]}) {r[0]}")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
