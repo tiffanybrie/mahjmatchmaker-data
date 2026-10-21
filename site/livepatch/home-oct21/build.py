@@ -178,6 +178,8 @@ step3 = (
     # v2: transparent PNG cropped to the fan (aspect ~1.51). Full column width at every size, natural
     # height, never cropped (v1's object-fit:cover clipped the outer covers on phones).
     f'{S3} .mmstep3 img{{display:block;width:100%;height:auto;aspect-ratio:1200/795;object-fit:contain;background:none}}'
+    # no orphan words in the step 3 copy (390: "set." alone; 1280: "First" alone under the heading)
+    f'{S3} .sqs-html-content :is(h1,h2,h3,h4){{text-wrap:balance}}{S3} .sqs-html-content p{{text-wrap:pretty}}'
     f'@media(min-width:768px){{{S3} .fluid-engine .mmstep3{{grid-area:2/2/16/13}}}}'
     f'@media(max-width:767px){{{S3} .fluid-engine .mmstep3{{grid-column:2/10;grid-row:1/3;margin-bottom:28px}}'
     f'{H}.fe-block-7a4922a2f12fa35d4063.fe-block{{grid-row:3/5!important}}'
