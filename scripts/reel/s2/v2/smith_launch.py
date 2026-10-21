@@ -73,7 +73,7 @@ def patch_stamp(src, out):
                     '-start_number', str(SWIPE[0]), f'{fd}/%05d.png'], check=True)
     tx0, ty0, tx1, ty1 = 600, 760, 940, 1040
     tpl = ref[ty0:ty1, tx0:tx1].astype(np.uint8)
-    last = SWIPE[0]
+    last = SWIPE[0]; track = []
     for n in range(SWIPE[0], SWIPE[1]):
         fr = np.asarray(Image.open(f'{fd}/{n:05d}.png').convert('RGB'))
         best = (-1, 0, 0, 0)
@@ -83,8 +83,13 @@ def patch_stamp(src, out):
             r = cv2.matchTemplate(fr, t, cv2.TM_CCOEFF_NORMED); _, mv, _, ml = cv2.minMaxLoc(r)
             if mv > best[0]: best = (mv, ml[0] - 30 - tx0, ml[1] - 30 - ty0, ang)
         sc, dx, dy, ang = best
+        if sc < .55 and len(track) >= 3:                       # card art leaving the frame: extrapolate its motion
+            (x1, y1, a1), (x2, y2, a2), (x3, y3, a3) = track[-3:]
+            dx, dy, ang = 2 * x3 - x2 + (x3 - 2 * x2 + x1), 2 * y3 - y2 + (y3 - 2 * y2 + y1), 2 * a3 - a2
+            if CX + dx + D < 0: break
+        elif sc < .55: break
+        track.append((dx, dy, ang))
         print('swipe', n, round(sc, 2), dx, dy, ang)
-        if sc < .55: break
         im = Image.fromarray(fr).convert('RGBA'); st = xstamp(1, 1).rotate(-ang, resample=Image.BICUBIC, expand=True)
         cx = (tx0 + tx1) / 2 + dx; cy = (ty0 + ty1) / 2 + dy; a = np.deg2rad(ang)     # rotate the stamp centre about the patch centre
         ox, oy = CX - (tx0 + tx1) / 2, CY - (ty0 + ty1) / 2
