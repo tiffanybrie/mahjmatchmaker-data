@@ -415,8 +415,11 @@
    "by": "tiffany-chat-2026-10-20",
    "also": [
     "multi",
-    "pink"
-   ]
+    "pink",
+    "animal"
+   ],
+   "floral": false,
+   "note": "Tiffany Oct 20 22:34: out of Multicolor Florals, into Animal Prints; keeps its Pink section."
   },
   "mahjongco.com/mahjong-by-si-tracing-the-tides-mahjong-mat": {
    "primary": "yellow",
@@ -645,7 +648,7 @@
    "note": "peachy pink center"
   },
   "brittmillsdesign.com/willow-neoprene-mahjong-mat": {
-   "primary": "multi",
+   "primary": "neutral",
    "secondary": [
     "blue",
     "pink",
@@ -659,8 +662,9 @@
    "chroma": 0.431,
    "src": "claude-look",
    "by": "tiffany-chat-2026-10-20",
-   "floral": true,
-   "note": "Multicolor Florals"
+   "floral": false,
+   "note": "Tiffany Oct 20 22:33: Willow is NOT a floral. Out of Multicolor Florals. Primary Neutral from measured shares (neutral 67.2%); blue 9.5%, pink 6.0%, orange 4.2% are under the 12% accent threshold, so no also-colors.",
+   "also": []
   },
   "peacelovemahjong.com/mahjong-mats-plaid-striped?v=52798578950436": {
    "primary": "purple",
@@ -1964,6 +1968,274 @@
     "green"
    ],
    "note": "Blue, also Green."
+  },
+  "shop.andersruff.com/palm-beach-tropical-pink-lime-mahjong-mat": {
+   "primary": "pink",
+   "secondary": [
+    "green",
+    "blue"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "anders-ruff--palm-beach-tropical-pink-lime-mahjong-mat",
+   "light": 0.573,
+   "chroma": 0.608,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "green"
+   ],
+   "note": "Tiffany Oct 20 22:45: mostly pink with some green: primary Pink, Green also."
+  },
+  "shop.andersruff.com/palm-beach-ocean-blue-green-mahjong-mat": {
+   "primary": "blue",
+   "secondary": [
+    "green"
+   ],
+   "tone": "bright",
+   "holiday": false,
+   "skip": false,
+   "image": "anders-ruff--palm-beach-ocean-blue-green-mahjong-mat",
+   "light": 0.488,
+   "chroma": 0.547,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "green"
+   ],
+   "note": "Tiffany Oct 20 22:45: mostly blue: primary Blue, Green also."
+  },
+  "www.ohmymahjong.com/merriment-mat-in-tube": {
+   "primary": "pink",
+   "secondary": [
+    "blue",
+    "green",
+    "teal"
+   ],
+   "tone": "pastel",
+   "holiday": true,
+   "skip": false,
+   "image": "oh-my-mahjong--merriment",
+   "light": 0.776,
+   "chroma": 0.335,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "Tiffany Oct 20 22:37: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  "alb:glitterville:Sweet Marie": {
+   "primary": "pink",
+   "secondary": [
+    "teal",
+    "orange",
+    "purple"
+   ],
+   "tone": "bright",
+   "holiday": true,
+   "skip": false,
+   "image": "oh-my-mahjong--sweet-marie-retired",
+   "light": 0.584,
+   "chroma": 0.698,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "Tiffany Oct 20 22:37: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  "shop.andersruff.com/tartan-tidings-mahjong-mat": {
+   "primary": "red",
+   "secondary": [
+    "dark",
+    "green"
+   ],
+   "tone": "bright",
+   "holiday": true,
+   "skip": false,
+   "image": "anders-ruff--tartan-tidings-mahjong-mat",
+   "light": 0.386,
+   "chroma": 0.82,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  "www.bambirdboutique.com/bandana-neoprene-mahjong-mat?v=53345465237813": {
+   "primary": "green",
+   "secondary": [],
+   "tone": "muted",
+   "holiday": true,
+   "skip": false,
+   "image": "bam-bird-boutique--bandana-holiday-green-pink-accents",
+   "light": 0.196,
+   "chroma": 0.932,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  "www.bespokemahjong.com/holidayloveredgreen": {
+   "primary": "green",
+   "secondary": [
+    "red",
+    "pink"
+   ],
+   "tone": "bright",
+   "holiday": true,
+   "skip": false,
+   "image": "bespoke-mahjong--double-sided-mat-double-the-fun-bespoke-x-corey-paige-holiday-love-mat-red-green",
+   "light": 0.471,
+   "chroma": 0.699,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  "birdandbamboo.com/the-ornamental-mahjong-mat": {
+   "primary": "blue",
+   "secondary": [],
+   "tone": "bright",
+   "holiday": true,
+   "skip": false,
+   "image": "bird-bamboo--the-ornamental-mahjong-mat",
+   "light": 0.565,
+   "chroma": 0.802,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  "brittmillsdesign.com/merrywood-neoprene-mahjong-mat-arriving-late-october": {
+   "primary": "green",
+   "secondary": [
+    "blue",
+    "red"
+   ],
+   "tone": "muted",
+   "holiday": true,
+   "skip": false,
+   "image": "britt-mills--merrywood",
+   "light": 0.404,
+   "chroma": 0.303,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  "www.hiphipmahjong.com/the-house-mahjong-mat": {
+   "primary": "brown",
+   "secondary": [
+    "pink",
+    "green"
+   ],
+   "tone": "muted",
+   "holiday": true,
+   "skip": false,
+   "image": "hip-hip-mahjong--the-house-mahjong-mat",
+   "light": 0.48,
+   "chroma": 0.56,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  "letsbebesties.com/merry-bright-holiday-prism-artist-collab-neoprene-mahjong-mat": {
+   "primary": "green",
+   "secondary": [
+    "red",
+    "pink"
+   ],
+   "tone": "bright",
+   "holiday": true,
+   "skip": false,
+   "image": "let-s-be-besties--merry-bright-holiday-prism",
+   "light": 0.429,
+   "chroma": 0.786,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  "mahjtilehaus.com/coastal-holiday-mat": {
+   "primary": "teal",
+   "secondary": [
+    "green",
+    "yellow"
+   ],
+   "tone": "bright",
+   "holiday": true,
+   "skip": false,
+   "image": "mahj-tile-haus--coral-and-coast-holiday",
+   "light": 0.471,
+   "chroma": 0.615,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  "maisonmahj.com/the-chalet-mat": {
+   "primary": "blue",
+   "secondary": [],
+   "tone": "pastel",
+   "holiday": true,
+   "skip": false,
+   "image": "maison-mahj--the-chalet",
+   "light": 0.702,
+   "chroma": 0.313,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  "peacelovemahjong.com/mahjong-mats-holiday?v=67570557354276": {
+   "primary": "red",
+   "secondary": [
+    "pink"
+   ],
+   "tone": "bright",
+   "holiday": true,
+   "skip": false,
+   "image": "peace-love-mahjong--candy-cane-lane",
+   "light": 0.537,
+   "chroma": 0.569,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  "peacelovemahjong.com/mahjong-mats-holiday?v=67570521506084": {
+   "primary": "red",
+   "secondary": [
+    "green"
+   ],
+   "tone": "bright",
+   "holiday": true,
+   "skip": false,
+   "image": "peace-love-mahjong--merry-striped",
+   "light": 0.51,
+   "chroma": 0.805,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  "peacelovemahjong.com/mahjong-mats-holiday?v=67570521276708": {
+   "primary": "red",
+   "secondary": [
+    "pink",
+    "green"
+   ],
+   "tone": "bright",
+   "holiday": true,
+   "skip": false,
+   "image": "peace-love-mahjong--merry-mix",
+   "light": 0.463,
+   "chroma": 0.622,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  "sundaymahjong.com/festive-plaid-premium-mahjong-mat": {
+   "primary": "green",
+   "secondary": [
+    "red",
+    "orange"
+   ],
+   "tone": "muted",
+   "holiday": true,
+   "skip": false,
+   "image": "sunday-mahjong--festive-plaid-premium",
+   "light": 0.41,
+   "chroma": 0.474,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
   }
  }
 }

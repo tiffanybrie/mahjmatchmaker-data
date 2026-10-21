@@ -1,0 +1,215 @@
+{
+ "_about": "Hidden mats allowed to stay in a set's Tiffany's-match list (m) because they are her real picks: on the live album page (checked Oct 20 by fetching each page) or a swipe-book yes. They never render (matPool drops hid mats). builder/fym_gate.py [11] fails on any other hidden / removed mat in an m list. Add here only after confirming the pick is real.",
+ "allowed": [
+  {
+   "set": "heritage",
+   "key": "alb2:birdsong-mahjong-grace",
+   "mat": "Grace",
+   "brand": "Birdsong Mahjong",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "heritage",
+   "key": "alb2:tigre-de-tartan-holy-mahj",
+   "mat": "Holy Mahj (retired)",
+   "brand": "Tigre de Tartan",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "heritage-2-0",
+   "key": "alb2:birdsong-mahjong-grace",
+   "mat": "Grace",
+   "brand": "Birdsong Mahjong",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "heritage-2-0",
+   "key": "alb2:tigre-de-tartan-holy-mahj",
+   "mat": "Holy Mahj (retired)",
+   "brand": "Tigre de Tartan",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "drake",
+   "key": "alb2:nawuno-nawuno",
+   "mat": "Nawuno",
+   "brand": "Nawuno",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "drake",
+   "key": "www.bambirdboutique.com/origami-neoprene-mat",
+   "mat": "Origami Berry",
+   "brand": "Bam Bird Boutique",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "drake",
+   "key": "alb2:birdsong-mahjong-grace",
+   "mat": "Grace",
+   "brand": "Birdsong Mahjong",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "drake",
+   "key": "alb2:tigre-de-tartan-holy-mahj",
+   "mat": "Holy Mahj (retired)",
+   "brand": "Tigre de Tartan",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "seabreeze",
+   "key": "www.macandmillermahjong.com/sweet-dreams-collection-mahjong-mat",
+   "mat": "Sweet Dreams",
+   "brand": "Mac + Miller Mahjong",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "seabreeze",
+   "key": "mahjsquadshop.com/pink-chinoiserie-mahjong-mat-pink-floral-neoprene-mahjongg-mat-pink-chintz-mahj-mat-colorful-floral-mahj-ongg-mat-spring-1",
+   "mat": "Pink Floral Chinoiserie",
+   "brand": "Mahj Squad",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "talulah",
+   "key": "alb2:mahj-tile-haus-imperial-lotus",
+   "mat": "Imperial Lotus",
+   "brand": "Mahj Tile Haus",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "willow",
+   "key": "alb2:birdsong-mahjong-grace",
+   "mat": "Grace",
+   "brand": "Birdsong Mahjong",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "willow",
+   "key": "alb2:amazon-amazon",
+   "mat": "Amazon",
+   "brand": "Amazon",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "willow",
+   "key": "alb2:amazon-amazon-2",
+   "mat": "Amazon 2",
+   "brand": "Amazon",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "willow",
+   "key": "alb2:tigre-de-tartan-queen-bee",
+   "mat": "Queen Bee (retired)",
+   "brand": "Tigre de Tartan",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "solara",
+   "key": "alb2:oh-my-mahjong-regal-bloom",
+   "mat": "Regal Bloom (retired)",
+   "brand": "Oh My Mahjong",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "solara",
+   "key": "alb2:four-winds-social-mozaic-mahj",
+   "mat": "Mozaic Mahj",
+   "brand": "Four Winds Social",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "glow-wild",
+   "key": "alb2:four-winds-social-petals-and-plum",
+   "mat": "Petals and Plum",
+   "brand": "Four Winds Social",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "glow-wild",
+   "key": "mahjsquadshop.com/pink-chinoiserie-mahjong-mat-pink-floral-neoprene-mahjongg-mat-pink-chintz-mahj-mat-colorful-floral-mahj-ongg-mat-spring-1",
+   "mat": "Pink Floral Chinoiserie",
+   "brand": "Mahj Squad",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "glow-wild",
+   "key": "alb2:oh-my-mahjong-regal-bloom",
+   "mat": "Regal Bloom (retired)",
+   "brand": "Oh My Mahjong",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "la-fete",
+   "key": "mahjsquadshop.com/pink-chinoiserie-mahjong-mat-pink-floral-neoprene-mahjongg-mat-pink-chintz-mahj-mat-colorful-floral-mahj-ongg-mat-spring-1",
+   "mat": "Pink Floral Chinoiserie",
+   "brand": "Mahj Squad",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "osler",
+   "key": "mahjmood.com/the-bow-and-bloom-mat-collab-with-four-winds-social-pre-order-estimated",
+   "mat": "The Bow and Bloom Mat: Collab with Four Winds Social",
+   "brand": "Mahj Mood",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "osler",
+   "key": "www.middleandmainmahjong.com/painted-water-mat",
+   "mat": "Painted Water Florentine Mat",
+   "brand": "Middle & Main Mahjong",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "pearlescent",
+   "key": "alb2:oh-my-mahjong-regal-bloom",
+   "mat": "Regal Bloom (retired)",
+   "brand": "Oh My Mahjong",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "pearlescent",
+   "key": "mahjsquadshop.com/pink-chinoiserie-mahjong-mat-pink-floral-neoprene-mahjongg-mat-pink-chintz-mahj-mat-colorful-floral-mahj-ongg-mat-spring-1",
+   "mat": "Pink Floral Chinoiserie",
+   "brand": "Mahj Squad",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "pippa",
+   "key": "mahjongstudios.com/lunaflor-mahjong-mat",
+   "mat": "Lunaflor",
+   "brand": "Mahjong Studios",
+   "why": "on her live Pippa album page (checked Oct 20); hidden by the no-Mahjong-Studios-mats rule (Tiffany Oct 20 22:31)"
+  },
+  {
+   "set": "pippa",
+   "key": "alb2:mahj-and-moon-retro-daisy",
+   "mat": "Retro Daisy",
+   "brand": "Mahj & Moon",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "malachite",
+   "key": "alb2:tigre-de-tartan-holy-mahj",
+   "mat": "Holy Mahj (retired)",
+   "brand": "Tigre de Tartan",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "dandy",
+   "key": "mahjsquadshop.com/pink-chinoiserie-mahjong-mat-pink-floral-neoprene-mahjongg-mat-pink-chintz-mahj-mat-colorful-floral-mahj-ongg-mat-spring-1",
+   "mat": "Pink Floral Chinoiserie",
+   "brand": "Mahj Squad",
+   "why": "on her live album page (checked Oct 20); hidden"
+  },
+  {
+   "set": "anders-ruff-brownstone-bloom",
+   "key": "www.macandmillermahjong.com/heirloom-collection-white-chinoiserie-round-mahjong-mat",
+   "mat": "Heirloom Collection: Chinoiserie Round",
+   "brand": "Mac + Miller Mahjong",
+   "why": "swipe-book yes (her pick); hidden for photo"
+  }
+ ]
+}

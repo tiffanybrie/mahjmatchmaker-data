@@ -1,0 +1,364 @@
+{
+ "source": "Tiffany via the coordinator session, Oct 20 22:33-22:34",
+ "by": "tiffany-chat-2026-10-20",
+ "about": "Late Oct 20 calls. build_v5.py reads every 2026-10-20-*.json 'corrections' entry and ALSO re-applies this file's calls as the very last step (after v5 final calls, Claude also-colours and new53 tags), so no rebuild undoes them: primary 'holiday' = Holiday section only; primary X = X first; also = added; floral:false = never Multicolor Florals; lead = pinned to the top of that section.",
+ "corrections": [
+  {
+   "brand": "Britt Mills",
+   "name": "Willow",
+   "img": "britt-mills--willow",
+   "primary": "neutral",
+   "floral": false,
+   "note": "Tiffany Oct 20 22:33: Willow is NOT a floral. Out of Multicolor Florals. Primary Neutral from measured shares (neutral 67.2%); blue 9.5%, pink 6.0%, orange 4.2% are under the 12% accent threshold, so no also-colors."
+  },
+  {
+   "brand": "Mahjong Register",
+   "name": "Pink Zebra in Bloom Premium Padded",
+   "img": "mahjong-register--pink-zebra-in-bloom-premium-padded",
+   "also": [
+    "pink",
+    "animal"
+   ],
+   "floral": false,
+   "note": "Tiffany Oct 20 22:34: out of Multicolor Florals, into Animal Prints; keeps its Pink section."
+  },
+  {
+   "brand": "Anders Ruff",
+   "name": "Palm Beach Tropical Pink Lime",
+   "img": "anders-ruff--palm-beach-tropical-pink-lime-mahjong-mat",
+   "primary": "pink",
+   "also": [
+    "green"
+   ],
+   "note": "Tiffany Oct 20 22:45: mostly pink with some green: primary Pink, Green also."
+  },
+  {
+   "brand": "Anders Ruff",
+   "name": "Palm Beach Ocean Blue Green",
+   "img": "anders-ruff--palm-beach-ocean-blue-green-mahjong-mat",
+   "primary": "blue",
+   "also": [
+    "green"
+   ],
+   "note": "Tiffany Oct 20 22:45: mostly blue: primary Blue, Green also."
+  },
+  {
+   "brand": "Oh My Mahjong",
+   "name": "Merriment",
+   "img": "oh-my-mahjong--merriment",
+   "primary": "holiday",
+   "note": "Tiffany Oct 20 22:37: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  {
+   "brand": "Oh My Mahjong",
+   "name": "Sweet Marie",
+   "img": "oh-my-mahjong--sweet-marie-retired",
+   "primary": "holiday",
+   "note": "Tiffany Oct 20 22:37: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  {
+   "brand": "Anders Ruff",
+   "name": "Tartan Tidings",
+   "img": "anders-ruff--tartan-tidings-mahjong-mat",
+   "primary": "holiday",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  {
+   "brand": "Bam Bird Boutique",
+   "name": "Bandana Holiday",
+   "img": "bam-bird-boutique--bandana-holiday-green-pink-accents",
+   "primary": "holiday",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  {
+   "brand": "Bespoke Mahjong",
+   "name": "Bespoke x Corey Paige Holiday Love",
+   "img": "bespoke-mahjong--double-sided-mat-double-the-fun-bespoke-x-corey-paige-holiday-love-mat-red-green",
+   "primary": "holiday",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  {
+   "brand": "Bird & Bamboo",
+   "name": "The Ornamental",
+   "img": "bird-bamboo--the-ornamental-mahjong-mat",
+   "primary": "holiday",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  {
+   "brand": "Britt Mills",
+   "name": "Merrywood",
+   "img": "britt-mills--merrywood",
+   "primary": "holiday",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  {
+   "brand": "Hip Hip Mahjong",
+   "name": "The House",
+   "img": "hip-hip-mahjong--the-house-mahjong-mat",
+   "primary": "holiday",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  {
+   "brand": "Let's Be Besties",
+   "name": "Merry & Bright Holiday Prism",
+   "img": "let-s-be-besties--merry-bright-holiday-prism",
+   "primary": "holiday",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  {
+   "brand": "Mahj Tile Haus",
+   "name": "Coral and Coast Holiday",
+   "img": "mahj-tile-haus--coral-and-coast-holiday",
+   "primary": "holiday",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  {
+   "brand": "Maison Mahj",
+   "name": "The Chalet",
+   "img": "maison-mahj--the-chalet",
+   "primary": "holiday",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  {
+   "brand": "Peace Love Mahjong",
+   "name": "Candy Cane Lane",
+   "img": "peace-love-mahjong--candy-cane-lane",
+   "primary": "holiday",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  {
+   "brand": "Peace Love Mahjong",
+   "name": "Merry & Striped",
+   "img": "peace-love-mahjong--merry-striped",
+   "primary": "holiday",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  {
+   "brand": "Peace Love Mahjong",
+   "name": "Merry Mix",
+   "img": "peace-love-mahjong--merry-mix",
+   "primary": "holiday",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  {
+   "brand": "Sunday Mahjong",
+   "name": "Festive Plaid Premium",
+   "img": "sunday-mahjong--festive-plaid-premium",
+   "primary": "holiday",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  {
+   "brand": "Tala Mahj",
+   "name": "The Carlyle - Holiday Plaid with Red Fringe",
+   "img": "tala-mahj--the-carlyle-holiday-plaid-with-red-fringe",
+   "primary": "holiday",
+   "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany."
+  },
+  {
+   "brand": "*",
+   "name": "imperial-retired",
+   "img": "oh-my-mahjong--imperial-retired",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "anastasia",
+   "img": "oh-my-mahjong--anastasia",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "citrus-songbird-retired",
+   "img": "oh-my-mahjong--citrus-songbird-retired",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "rainbow-row",
+   "img": "rebecca-illustrated--rainbow-row",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "preppy-pink-garden-mat",
+   "img": "bespoke-mahjong--preppy-pink-garden-mat",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "carson-vintage",
+   "img": "ozark-mah-jongg--carson-vintage",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "autumn-saffron",
+   "img": "mahjong-row-co--autumn-saffron",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "sunday-premium",
+   "img": "sunday-mahjong--sunday-premium",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "osmanthus-grove",
+   "img": "mahjong-row-co--osmanthus-grove",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "the-polo-club",
+   "img": "luxe-mahjong--the-polo-club",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "knox",
+   "img": "britt-mills--knox",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "astor-place",
+   "img": "lucky-daughters--astor-place",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "white-lotus",
+   "img": "mahj-tile-haus--white-lotus",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "bold-blooms-premium",
+   "img": "sunday-mahjong--bold-blooms-premium",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "azure-bloom",
+   "img": "luxe-mahjong--azure-bloom",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "midnight-romance",
+   "img": "luxe-mahjong--midnight-romance",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "midnight-peacock-mahjong-mat",
+   "img": "anders-ruff--midnight-peacock-mahjong-mat",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "posy-pop-watercolor-floral-mahjong-mat",
+   "img": "bam-let-s-mahjong--posy-pop-watercolor-floral-mahjong-mat",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "golden-gingham-premium",
+   "img": "sunday-mahjong--golden-gingham-premium",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "*",
+   "name": "spring-blooms-premium",
+   "img": "sunday-mahjong--spring-blooms-premium",
+   "also": [
+    "yellow"
+   ],
+   "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  }
+ ],
+ "lead": {
+  "green": [
+   "mahjong-register--hunter-green-navy-double-sided-leatherette",
+   "let-s-be-besties--emerald-lace",
+   "mahj-squad--bront-collection-thrushcross-grange-mahjong-mat",
+   "mahj-squad--monet-s-reflections-mahjong-mat",
+   "mahj-tile-haus--white-lotus",
+   "mahjong-row-co--osmanthus-grove",
+   "miss-mahjong--canopy-palm",
+   "oh-my-mahjong--birdie-green-retired",
+   "that-mahjong-moment--evergreen",
+   "sunday-mahjong--gaylord-premium",
+   "tigre-de-tartan--bunny-love",
+   "wren-mats--green-gingham"
+  ]
+ },
+ "lead_note": "Tiffany Oct 20 22:45: pinned to the TOP of Green in this order (before the share-sorted primaries); each is Green primary. 'Mosaiq' Bronte Thrushcross Grange + Monet's Reflections are listed under Mahj Squad in our data.",
+ "unhold": {
+  "imgs": [
+   "bam-let-s-mahjong--posy-pop-watercolor-floral-mahjong-mat",
+   "sunday-mahjong--golden-gingham-premium",
+   "sunday-mahjong--spring-blooms-premium"
+  ],
+  "note": "Tiffany Oct 20 22:42: in FYM but missing from the gallery because they were on held-low-98.json (low-confidence photo hold). Back in (also added to crosstags unhold)."
+ },
+ "sort_rule": "Oct 20 22:31/22:45: inside every colour section (gallery) and colour chip (FYM): lead mats first (this file), then primaries sorted by measured share of that colour high to low, then every secondary (also + accent) by measured share high to low; no measurement = 0; Mahjong Studios last within each tier."
+}

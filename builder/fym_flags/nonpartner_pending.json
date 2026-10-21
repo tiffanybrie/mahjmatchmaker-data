@@ -1,17 +1,13 @@
 {
- "_about": "Non-partner brands / mats awaiting Tiffany's brand-by-brand decision (seeded Oct 20 from site/livepatch/matgallery/nonpartner_audit_oct20.json: brands with unmatched, non-ShopMy mats; Mahjong Moxie left out because she already decided it). builder/fym_gate.py [9] prints these as WARNINGS (does not fail). When she decides a brand, remove it here and either hide its unmatched mats (flags + locks) or add it to nonpartner_allow.json.",
+ "_about": "Non-partner brands / mats awaiting Tiffany's brand-by-brand decision (seeded Oct 20 from site/livepatch/matgallery/nonpartner_audit_oct20.json: brands with unmatched, non-ShopMy mats; Mahjong Moxie left out because she already decided it). builder/fym_gate.py [9] prints these as WARNINGS (does not fail). When she decides a brand, remove it here and either hide its unmatched mats (flags + locks) or add it to nonpartner_allow.json. Oct 20 late: Tiffany decided Mahj & Moon, Four Winds Social, Maison Mahj, Hutch & Nook, Luxe, Mahj Tile Haus (keep matched only), The Mahjong Line + Mahj House Rules (removed): no longer pending, so their mats now hard-fail [9] unless matched/allowed. Still pending: Tala Mahj (ShopMy link swap), The Kerry, 4 fuzzy Mahj & Moon mats.",
  "brands": {
-  "Four Winds Social": "14 unmatched non-ShopMy mats; audit suggestion: remove-brand",
-  "Hutch & Nook": "7 unmatched non-ShopMy mats; audit suggestion: keep-matched-only",
-  "Luxe Mahjong": "5 unmatched non-ShopMy mats; audit suggestion: keep-matched-only",
-  "Mahj & Moon": "78 unmatched non-ShopMy mats; audit suggestion: keep-matched-only",
-  "Mahj House Rules": "1 unmatched non-ShopMy mats; audit suggestion: remove-brand",
-  "Mahj Tile Haus": "1 unmatched non-ShopMy mats; audit suggestion: keep-matched-only",
-  "Maison Mahj": "11 unmatched non-ShopMy mats; audit suggestion: keep-matched-only",
-  "Tala Mahj": "11 unmatched non-ShopMy mats; audit suggestion: keep-all? (on ShopMy at 15% per her Oct 20 note, but gallery links go direct to talamahj.com: swap to ShopMy links or remove)",
-  "The Mahjong Line": "3 unmatched non-ShopMy mats; audit suggestion: remove-brand"
+  "Tala Mahj": "11 unmatched non-ShopMy mats; audit suggestion: keep-all? (on ShopMy at 15% per her Oct 20 note, but gallery links go direct to talamahj.com: swap to ShopMy links or remove)"
  },
  "mats": {
-  "www.etsy.com/listing/4493549326/the-kerry-mahjong-mat-watercolor-pink": "Betty June & Jeannette 'The Kerry' (a favorite of Tiffany's): links straight to Etsy, no ShopMy link found yet; swap to a ShopMy link or decide"
+  "www.etsy.com/listing/4493549326/the-kerry-mahjong-mat-watercolor-pink": "Betty June & Jeannette 'The Kerry' (a favorite of Tiffany's): links straight to Etsy, no ShopMy link found yet; swap to a ShopMy link or decide",
+  "mahjandmoon.com/citrus-chinoiserie-mahjong-mat": "Mahj & Moon 'Citrus Chinoiserie': kept for now (fuzzy album-name match only, not in any m list); Tiffany to confirm (Oct 20)",
+  "mahjandmoon.com/equestrian-estate-mahjong-mat": "Mahj & Moon 'Equestrian Estate': kept for now (fuzzy album-name match only, not in any m list); Tiffany to confirm (Oct 20)",
+  "mahjandmoon.com/retro-waves-mahjong-mat-blue": "Mahj & Moon 'Retro Waves – Pink & Aqua': kept for now (fuzzy album-name match only, not in any m list); Tiffany to confirm (Oct 20)",
+  "mahjandmoon.com/retro-waves-mahjong-mat-purple": "Mahj & Moon 'Retro Waves – Purple': kept for now (fuzzy album-name match only, not in any m list); Tiffany to confirm (Oct 20)"
  }
 }

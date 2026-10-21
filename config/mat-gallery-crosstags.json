@@ -449,7 +449,10 @@
    "peace-love-mahjong--cherry-bloom",
    "sunday-mahjong--bold-blooms-premium",
    "oh-my-mahjong--peri-twinkle-retired",
-   "oh-my-mahjong--garden-party-retired"
+   "oh-my-mahjong--garden-party-retired",
+   "bam-let-s-mahjong--posy-pop-watercolor-floral-mahjong-mat",
+   "sunday-mahjong--golden-gingham-premium",
+   "sunday-mahjong--spring-blooms-premium"
   ]
  },
  "florals": [
@@ -458,7 +461,6 @@
   "mahj-vine--porcelain-bloom",
   "mahj-vine--watercolor-blooms",
   "mahj-squad--pink-floral-chinoiserie",
-  "mahjong-register--pink-zebra-in-bloom-premium-padded",
   "peace-love-mahjong--bejeweled-blooms",
   "peace-love-mahjong--wildest-blooms",
   "splash-of-color--asian-chinoiserie",
@@ -543,55 +545,7 @@
   ]
  },
  "holiday_off": {
-  "anders-ruff--tartan-tidings-mahjong-mat": [
-   "red",
-   "green"
-  ],
-  "bam-bird-boutique--bandana-holiday-green-pink-accents": [
-   "green"
-  ],
-  "bespoke-mahjong--double-sided-mat-double-the-fun-bespoke-x-corey-paige-holiday-love-mat-red-green": [
-   "red",
-   "green"
-  ],
-  "bird-bamboo--the-ornamental-mahjong-mat": [
-   "blue"
-  ],
-  "britt-mills--merrywood": [
-   "green",
-   "dark"
-  ],
-  "hip-hip-mahjong--the-house-mahjong-mat": [
-   "earthy",
-   "pink",
-   "green"
-  ],
-  "let-s-be-besties--merry-bright-holiday-prism": [
-   "red",
-   "multi"
-  ],
-  "mahj-tile-haus--coral-and-coast-holiday": [
-   "green",
-   "teal"
-  ],
-  "maison-mahj--the-chalet": [
-   "blue"
-  ],
-  "peace-love-mahjong--candy-cane-lane": [
-   "red",
-   "pink"
-  ],
-  "peace-love-mahjong--merry-striped": [
-   "red"
-  ],
-  "peace-love-mahjong--merry-mix": [
-   "red",
-   "green"
-  ],
-  "sunday-mahjong--festive-plaid-premium": [
-   "red",
-   "green"
-  ]
+  "note": "emptied Oct 20 per Tiffany: holiday mats stay in Holiday only"
  },
  "jungle": {
   "bespoke-mahjong--jungle-hot-pink": [
@@ -832,15 +786,137 @@
  },
  "remove_mats": {
   "by": "tiffany-chat-2026-10-20",
-  "note": "Permanently excluded from the Mat Gallery (Tiffany, Oct 20): not a partner, not matched anywhere. build_v5.py drops these before anything else so rebuilds/scrapes can't bring them back. Mahjong Moxie (Oct 20): keep only Duck Camp (her album pick) and Heron Landing (she wants to match it); rest removed. RULE: non-partner brands only get mats Tiffany has matched or explicitly allowed. Allowed non-partners: Sunday Mahjong (whole line, personal favorite), Mahj Tile Haus (her matched mats, e.g. White Lotus), Mahjong Moxie Duck Camp + Heron Landing.",
+  "note": "Permanently excluded from the Mat Gallery (Tiffany, Oct 20): not a partner, not matched anywhere. build_v5.py drops these before anything else so rebuilds/scrapes can't bring them back. Mahjong Moxie (Oct 20): keep only Duck Camp (her album pick) and Heron Landing (she wants to match it); rest removed. RULE: non-partner brands only get mats Tiffany has matched or explicitly allowed. Allowed non-partners: Sunday Mahjong (whole line, personal favorite), Mahj Tile Haus (her matched mats, e.g. White Lotus), Mahjong Moxie Duck Camp + Heron Landing. Oct 20 brand decisions: Mahj & Moon, Four Winds Social, Maison Mahj, Hutch & Nook, Luxe, Mahj Tile Haus keep matched only; The Mahjong Line, Mahj House Rules removed. Four Winds Social x Mahj Mood collabs (Beyond the Ribbon, Rally in Pink, Eloise) stay as Mahj Mood rows (sold on mahjmood.com, checked Oct 20); every FWS-brand row removed. Mahj & Moon fuzzy album-name matches kept pending her confirmation: Citrus Chinoiserie, Equestrian Estate, Retro Waves Pink & Aqua, Retro Waves Purple. brands: Mahjong Studios (Tiffany Oct 20, 22:31): no Mahjong Studios mats anywhere (tile sets and racks stay).",
   "imgs": [
    "amore-mahjong--manor-garden",
    "mahjong-moxie--bamboo-garden",
    "mahjong-moxie--in-bloom",
    "mahjong-moxie--magnolia-muse",
    "mahjong-moxie--oyster-confetti",
-   "mahjong-moxie--tulip-tango"
+   "mahjong-moxie--tulip-tango",
+   "four-winds-social--amethyst-cabana",
+   "four-winds-social--fws-x-mahj-mood-collab-beyond-the-ribbon",
+   "four-winds-social--fws-x-mahj-mood-collab-rally-in-pink",
+   "four-winds-social--fox-the-houndstooth-mahong",
+   "four-winds-social--fws-x-225mahjong-collab-fleur-the-win",
+   "four-winds-social--autumn-camo",
+   "four-winds-social--autumn-moss",
+   "four-winds-social--fws-x-mahj-mood-eloise",
+   "four-winds-social--olive-spotted-double",
+   "four-winds-social--fws-x-225mahjong-collab-purple-reign",
+   "four-winds-social--four-winds-fawn",
+   "four-winds-social--mulled-mahj-holiday",
+   "four-winds-social--preppy-poinsettia",
+   "hutch-nook--pink-rose",
+   "hutch-nook--blue-white-bird",
+   "hutch-nook--moody",
+   "hutch-nook--summer-blossom",
+   "hutch-nook--lavender",
+   "hutch-nook--peacock-garden",
+   "hutch-nook--winged-wonders",
+   "mahj-moon--amongst-the-lemon-groves-pink",
+   "mahj-moon--blossom-aviary",
+   "mahj-moon--blue-pastel-palm-beach",
+   "mahj-moon--cherry-blossom",
+   "mahj-moon--desert-oasis",
+   "mahj-moon--heirloom-blooms",
+   "mahj-moon--orchard-songbird",
+   "mahj-moon--palm-tree",
+   "mahj-moon--paris-in-bloom",
+   "mahj-moon--pastel-garden-landscape",
+   "mahj-moon--pastel-palm-beach",
+   "mahj-moon--pastel-turtle-coastal",
+   "mahj-moon--pastel-wildflower-gingham",
+   "mahj-moon--personalized-bow-american",
+   "mahj-moon--personalized-vibrant-floral-chinoiserie-pink",
+   "mahj-moon--pink-green-floral",
+   "mahj-moon--pink-bow-garden",
+   "mahj-moon--pink-folk-floral",
+   "mahj-moon--pink-wildflower",
+   "mahj-moon--scalloped-blossom-aviary",
+   "mahj-moon--strawberry-garden-american",
+   "mahj-moon--tropical-hibiscus",
+   "mahj-moon--vibrant-floral-chinoiserie-pink",
+   "mahj-moon--pink-damask-american",
+   "mahj-moon--blush-butterfly",
+   "mahj-moon--butterfly-garden",
+   "mahj-moon--celestial-sun",
+   "mahj-moon--lemon-stripe",
+   "mahj-moon--pastel-tie-dye-american",
+   "mahj-moon--the-sun-tarot",
+   "mahj-moon--wildflower-american",
+   "mahj-moon--botanical-butterfly",
+   "mahj-moon--coastal-american",
+   "mahj-moon--emerald-tiger-chinoiserie",
+   "mahj-moon--emerald-tiger-jungle",
+   "mahj-moon--english-garden-gingham",
+   "mahj-moon--green-menagerie-toile",
+   "mahj-moon--green-retro",
+   "mahj-moon--monkey-garden",
+   "mahj-moon--palm-beach-american",
+   "mahj-moon--pink-floral-round",
+   "mahj-moon--scalloped-chinoiserie-bird-floral",
+   "mahj-moon--scalloped-pastel-palm-beach-toile",
+   "mahj-moon--strawberry-thief-inspired",
+   "mahj-moon--tropical-island-garden",
+   "mahj-moon--william-morris-inspired-round",
+   "mahj-moon--zebra-palm-chinoiserie",
+   "mahj-moon--blue-tropical-palm",
+   "mahj-moon--butterfly-floral",
+   "mahj-moon--palm-beach-american-2",
+   "mahj-moon--scalloped-tropical-palm",
+   "mahj-moon--blue-white-lemon",
+   "mahj-moon--blush-botanical",
+   "mahj-moon--elephant-paisley",
+   "mahj-moon--french-country-estate",
+   "mahj-moon--koi-pond",
+   "mahj-moon--lion-american",
+   "mahj-moon--pickleball",
+   "mahj-moon--purple-floral-gingham-geometric",
+   "mahj-moon--riviera-beach-club",
+   "mahj-moon--pink-blue-paisley",
+   "mahj-moon--seashell-american",
+   "mahj-moon--tropical-leopard",
+   "mahj-moon--round-leopard-print",
+   "mahj-moon--autumn-leaves",
+   "mahj-moon--botanical-chevron",
+   "mahj-moon--celestial-dragon-chinoiserie",
+   "mahj-moon--cowgirl-rodeo",
+   "mahj-moon--desert",
+   "mahj-moon--garden-toile-round",
+   "mahj-moon--italian-riviera-foodie",
+   "mahj-moon--coastal-bloom",
+   "mahj-moon--candy-cane-christmas-village",
+   "mahj-moon--christmas-toile",
+   "mahj-moon--christmas-village-gingham",
+   "mahj-moon--festive-citrus-chinoiserie",
+   "mahj-moon--harvest-pumpkin-thanksgiving",
+   "mahj-moon--valentine-hearts-american",
+   "maison-mahj--the-rue-de-paris",
+   "maison-mahj--the-signature-house",
+   "maison-mahj--the-olive-city",
+   "maison-mahj--the-afternoon-tea",
+   "maison-mahj--the-flower-market",
+   "maison-mahj--the-london-icons",
+   "maison-mahj--the-mayfair-stripe",
+   "maison-mahj--the-stripe-house",
+   "maison-mahj--the-tile-house",
+   "maison-mahj--the-espresso-city",
+   "maison-mahj--the-checkmate-house",
+   "luxe-mahjong--preppy-in-pink",
+   "luxe-mahjong--western",
+   "luxe-mahjong--the-fairway",
+   "luxe-mahjong--bougie-bee",
+   "luxe-mahjong--bougie-bee-2",
+   "luxe-mahjong--neon-lights",
+   "the-mahjong-line--round",
+   "the-mahjong-line--botanical",
+   "the-mahjong-line--holiday",
+   "mahj-house-rules--mahjong-mat",
+   "mahj-tile-haus--coral-and-coast-holiday"
   ],
-  "brands": []
+  "brands": [
+   "Mahjong Studios"
+  ]
  }
 }
