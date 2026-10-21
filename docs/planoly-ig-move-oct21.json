@@ -61,7 +61,8 @@
    "firstComment": null,
    "excludeFromGrid": false,
    "note": "reminderSentAt 2026-10-21T18:25Z; date already passed at inventory time (21:08Z)",
-   "newPostGroupId": null
+   "newPostGroupId": null,
+   "notMoved": "reminder date 2026-10-21T18:25Z already passed and reminder already sent; old copy unscheduled to draft"
   },
   {
    "postGroupId": "01a15f6f-0d96-76b9-be47-32aef00e3e86",
@@ -76,19 +77,22 @@
      "assetId": "01a15fac-4880-749d-b1d1-b46057d521ba",
      "type": "image",
      "file": "papaya-vivienne-story-1.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fac-4880-749d-b1d1-b46057d521ba/papaya-vivienne-story-1.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fac-4880-749d-b1d1-b46057d521ba/papaya-vivienne-story-1.jpg",
+     "newAssetId": "01a16050-0d93-773c-977b-89774dfafb3f"
     },
     {
      "assetId": "01a15fac-4a60-709e-80ae-4519eea7e46f",
      "type": "image",
      "file": "papaya-vivienne-story-2.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fac-4a60-709e-80ae-4519eea7e46f/papaya-vivienne-story-2.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fac-4a60-709e-80ae-4519eea7e46f/papaya-vivienne-story-2.jpg",
+     "newAssetId": "01a16050-0f3f-7423-82b3-8c4a13a0d038"
     },
     {
      "assetId": "01a15fac-4c23-7459-bbd6-aecd2dd22574",
      "type": "image",
      "file": "papaya-vivienne-story-3.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fac-4c23-7459-bbd6-aecd2dd22574/papaya-vivienne-story-3.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fac-4c23-7459-bbd6-aecd2dd22574/papaya-vivienne-story-3.jpg",
+     "newAssetId": "01a16050-10d5-77bb-8699-c3f0b0fa91f5"
     }
    ],
    "userTags": [],
@@ -96,7 +100,8 @@
    "firstComment": null,
    "excludeFromGrid": false,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": "01a16052-2828-70ef-89cc-6675fbce6d3f",
+   "oldUnscheduled": true
   },
   {
    "postGroupId": "01a15f6c-20ad-7713-8f6e-6cddf2cd59ac",
@@ -111,25 +116,29 @@
      "assetId": "01a15f69-5ca4-724c-a3b3-aa2c8f35a8d1",
      "type": "image",
      "file": "launch-1-live.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-5ca4-724c-a3b3-aa2c8f35a8d1/launch-1-live.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-5ca4-724c-a3b3-aa2c8f35a8d1/launch-1-live.jpg",
+     "newAssetId": "01a16050-12d6-7290-9235-185046698bf4"
     },
     {
      "assetId": "01a15f69-5eac-7658-b5a9-bfb74decd7fb",
      "type": "image",
      "file": "launch-2-phone.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-5eac-7658-b5a9-bfb74decd7fb/launch-2-phone.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-5eac-7658-b5a9-bfb74decd7fb/launch-2-phone.jpg",
+     "newAssetId": "01a16050-1432-772a-84df-8b5ebbc2d410"
     },
     {
      "assetId": "01a15f69-6081-7739-b0cc-b5c665b400d5",
      "type": "image",
      "file": "launch-3-two-doors.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-6081-7739-b0cc-b5c665b400d5/launch-3-two-doors.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-6081-7739-b0cc-b5c665b400d5/launch-3-two-doors.jpg",
+     "newAssetId": "01a16050-15f4-742f-b476-28b128ac2da1"
     },
     {
      "assetId": "01a15f69-6251-772e-ac33-4b8bf9158b6f",
      "type": "image",
      "file": "launch-4-code.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-6251-772e-ac33-4b8bf9158b6f/launch-4-code.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-6251-772e-ac33-4b8bf9158b6f/launch-4-code.jpg",
+     "newAssetId": "01a16050-17c4-7503-94f8-d093e27b82d9"
     }
    ],
    "userTags": [],
@@ -137,7 +146,8 @@
    "firstComment": null,
    "excludeFromGrid": false,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": "01a16052-2a36-776e-9bc2-85d6a2685bfd",
+   "oldUnscheduled": false
   },
   {
    "postGroupId": "01a15f6c-1ef8-733f-817d-7f9f9c09b6e6",
@@ -152,25 +162,29 @@
      "assetId": "01a15f79-4cf0-72a8-9dfa-8c531f54142e",
      "type": "image",
      "file": "mahj-mood-tease-1.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-4cf0-72a8-9dfa-8c531f54142e/mahj-mood-tease-1.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-4cf0-72a8-9dfa-8c531f54142e/mahj-mood-tease-1.jpg",
+     "newAssetId": "01a16050-1969-7563-a045-12a479d30569"
     },
     {
      "assetId": "01a15f79-5074-7448-a6f1-6b6892074059",
      "type": "image",
      "file": "mahj-mood-malachite-2.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5074-7448-a6f1-6b6892074059/mahj-mood-malachite-2.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5074-7448-a6f1-6b6892074059/mahj-mood-malachite-2.jpg",
+     "newAssetId": "01a16050-1af6-721f-ac89-04bd4f865903"
     },
     {
      "assetId": "01a15f79-5478-737b-af26-f8a4b2021034",
      "type": "image",
      "file": "mahj-mood-pushers-3.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5478-737b-af26-f8a4b2021034/mahj-mood-pushers-3.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5478-737b-af26-f8a4b2021034/mahj-mood-pushers-3.jpg",
+     "newAssetId": "01a16050-1c76-7327-b012-f151c32092c6"
     },
     {
      "assetId": "01a15f79-5748-7189-91df-05bb45134e18",
      "type": "image",
      "file": "mahj-mood-tease-4.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5748-7189-91df-05bb45134e18/mahj-mood-tease-4.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5748-7189-91df-05bb45134e18/mahj-mood-tease-4.jpg",
+     "newAssetId": "01a16050-1de5-75f6-aa56-c7b4c7001f73"
     }
    ],
    "userTags": [],
@@ -178,7 +192,8 @@
    "firstComment": null,
    "excludeFromGrid": false,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": "01a16052-2bfc-772b-a44a-3dd0f3784c5d",
+   "oldUnscheduled": false
   },
   {
    "postGroupId": "01a15f6b-e7bc-73f6-b2a8-e51979256c53",
@@ -193,7 +208,8 @@
      "assetId": "01a15f69-55b3-728d-a41e-24317135adca",
      "type": "image",
      "file": "petalee-album-story.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-55b3-728d-a41e-24317135adca/petalee-album-story.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-55b3-728d-a41e-24317135adca/petalee-album-story.jpg",
+     "newAssetId": "01a16050-1f8e-711a-a34e-473ff4432def"
     }
    ],
    "userTags": [],
@@ -201,7 +217,8 @@
    "firstComment": null,
    "excludeFromGrid": false,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": "01a16052-2e1e-71ed-bdc2-ebbc8a93e242",
+   "oldUnscheduled": false
   },
   {
    "postGroupId": "01a15f6b-e12f-7198-8b70-9c83c6455bc6",
@@ -216,25 +233,29 @@
      "assetId": "01a15f79-5995-7148-a5e5-8b816d653607",
      "type": "image",
      "file": "mahj-mood-drop-1.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5995-7148-a5e5-8b816d653607/mahj-mood-drop-1.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5995-7148-a5e5-8b816d653607/mahj-mood-drop-1.jpg",
+     "newAssetId": "01a16050-2138-73e8-b9a3-3771634a0fd3"
     },
     {
      "assetId": "01a15f79-5074-7448-a6f1-6b6892074059",
      "type": "image",
      "file": "mahj-mood-malachite-2.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5074-7448-a6f1-6b6892074059/mahj-mood-malachite-2.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5074-7448-a6f1-6b6892074059/mahj-mood-malachite-2.jpg",
+     "newAssetId": "01a16050-1af6-721f-ac89-04bd4f865903"
     },
     {
      "assetId": "01a15f79-5478-737b-af26-f8a4b2021034",
      "type": "image",
      "file": "mahj-mood-pushers-3.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5478-737b-af26-f8a4b2021034/mahj-mood-pushers-3.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5478-737b-af26-f8a4b2021034/mahj-mood-pushers-3.jpg",
+     "newAssetId": "01a16050-1c76-7327-b012-f151c32092c6"
     },
     {
      "assetId": "01a15f79-5c55-729d-95e3-9d55c4043c75",
      "type": "image",
      "file": "mahj-mood-drop-4.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5c55-729d-95e3-9d55c4043c75/mahj-mood-drop-4.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5c55-729d-95e3-9d55c4043c75/mahj-mood-drop-4.jpg",
+     "newAssetId": "01a16050-2317-7441-b4a4-9a51b07498b0"
     }
    ],
    "userTags": [],
@@ -242,7 +263,8 @@
    "firstComment": null,
    "excludeFromGrid": false,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": "01a16052-2fbb-74ab-9e68-51d4abe499db",
+   "oldUnscheduled": false
   },
   {
    "postGroupId": "01a15f67-a405-7400-92e7-0751a0ccf90d",
@@ -257,19 +279,22 @@
      "assetId": "01a15fac-437e-7417-ae8a-7348de0e53d7",
      "type": "image",
      "file": "papaya-vivienne-feed-1.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fac-437e-7417-ae8a-7348de0e53d7/papaya-vivienne-feed-1.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fac-437e-7417-ae8a-7348de0e53d7/papaya-vivienne-feed-1.jpg",
+     "newAssetId": "01a16050-24b6-7709-8117-8c6813458d82"
     },
     {
      "assetId": "01a15fac-4534-7785-bc60-461b03047f77",
      "type": "image",
      "file": "papaya-vivienne-feed-2.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fac-4534-7785-bc60-461b03047f77/papaya-vivienne-feed-2.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fac-4534-7785-bc60-461b03047f77/papaya-vivienne-feed-2.jpg",
+     "newAssetId": "01a16050-2630-772a-a418-28efd0cc750a"
     },
     {
      "assetId": "01a15fac-469d-72ef-b177-4e2e57ffc469",
      "type": "image",
      "file": "papaya-vivienne-feed-3.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fac-469d-72ef-b177-4e2e57ffc469/papaya-vivienne-feed-3.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fac-469d-72ef-b177-4e2e57ffc469/papaya-vivienne-feed-3.jpg",
+     "newAssetId": "01a16050-27ad-7149-982f-b2becfe37853"
     }
    ],
    "userTags": [
@@ -284,8 +309,9 @@
    "collaborators": [],
    "firstComment": null,
    "excludeFromGrid": false,
-   "note": null,
-   "newPostGroupId": null
+   "note": "MOVED WITHOUT the @ohmymahjong photo tag on slide 1: new IG connection is a personal (non-Facebook) connection and Planoly rejects user tags. Re-add tag after reconnecting as Business via Facebook.",
+   "newPostGroupId": "01a16052-7a01-766d-bc26-1052c6d8a084",
+   "oldUnscheduled": false
   },
   {
    "postGroupId": "01a15ef4-610b-72e8-ad05-6fa2eb06ce8b",
@@ -310,7 +336,8 @@
    "firstComment": null,
    "excludeFromGrid": true,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": null,
+   "notMoved": "reel: video bytes not downloadable from Planoly (url null) and repo file unverifiable; user tags/cover also need business-FB connection"
   },
   {
    "postGroupId": "01a1404f-6cc3-765e-9c1e-3eeef851b198",
@@ -335,7 +362,8 @@
    "firstComment": null,
    "excludeFromGrid": true,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": null,
+   "notMoved": "reel: video bytes not downloadable from Planoly (url null) and repo file unverifiable; user tags/cover also need business-FB connection"
   },
   {
    "postGroupId": "01a1404f-4efa-71ce-83f0-89f8798498c8",
@@ -360,7 +388,8 @@
    "firstComment": null,
    "excludeFromGrid": true,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": null,
+   "notMoved": "reel: video bytes not downloadable from Planoly (url null) and repo file unverifiable; user tags/cover also need business-FB connection"
   },
   {
    "postGroupId": "01a1404f-3478-728d-b932-2767424a8ca6",
@@ -385,7 +414,8 @@
    "firstComment": null,
    "excludeFromGrid": true,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": null,
+   "notMoved": "reel: video bytes not downloadable from Planoly (url null) and repo file unverifiable; user tags/cover also need business-FB connection"
   },
   {
    "postGroupId": "01a1404f-0fe4-745c-a055-b7603c15c01f",
@@ -410,7 +440,8 @@
    "firstComment": null,
    "excludeFromGrid": true,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": null,
+   "notMoved": "reel: video bytes not downloadable from Planoly (url null) and repo file unverifiable; user tags/cover also need business-FB connection"
   },
   {
    "postGroupId": "01a134b2-537e-722f-b89f-00cf334cf425",
@@ -435,7 +466,8 @@
    "firstComment": null,
    "excludeFromGrid": true,
    "note": "cover thumb is an 'imports' asset; video asset 01a134ad-... ",
-   "newPostGroupId": null
+   "newPostGroupId": null,
+   "notMoved": "reel: video bytes not downloadable from Planoly (url null) and repo file unverifiable; user tags/cover also need business-FB connection"
   },
   {
    "postGroupId": "01a1349c-4e40-7049-a340-31da9950bc27",
@@ -460,7 +492,8 @@
    "firstComment": null,
    "excludeFromGrid": true,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": null,
+   "notMoved": "reel: video bytes not downloadable from Planoly (url null) and repo file unverifiable; user tags/cover also need business-FB connection"
   },
   {
    "postGroupId": "01a1348e-e64d-773a-b33f-c671f7b674f0",
@@ -485,7 +518,8 @@
    "firstComment": null,
    "excludeFromGrid": true,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": null,
+   "notMoved": "reel: video bytes not downloadable from Planoly (url null) and repo file unverifiable; user tags/cover also need business-FB connection"
   },
   {
    "postGroupId": "01a11cba-d52f-722a-845c-86e412cd7856",
@@ -510,7 +544,8 @@
    "firstComment": null,
    "excludeFromGrid": true,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": null,
+   "notMoved": "reel: video bytes not downloadable from Planoly (url null) and repo file unverifiable; user tags/cover also need business-FB connection"
   },
   {
    "postGroupId": "01a15ef3-91a1-7042-83a0-4c4a0db495c6",
@@ -525,7 +560,8 @@
      "assetId": "01a15f2a-4de9-73ac-a43b-21ba747f3f48",
      "type": "image",
      "file": "countdown-6-find-your-mat-ch.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-4de9-73ac-a43b-21ba747f3f48/countdown-6-find-your-mat-ch.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-4de9-73ac-a43b-21ba747f3f48/countdown-6-find-your-mat-ch.jpg",
+     "newAssetId": "01a16050-2919-73c2-8e7e-50c8068cd97e"
     }
    ],
    "userTags": [],
@@ -533,7 +569,8 @@
    "firstComment": null,
    "excludeFromGrid": false,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": "01a1604d-6e67-759a-b775-8839e896e3dc",
+   "oldUnscheduled": true
   },
   {
    "postGroupId": "01a15ef3-c6b5-76ed-b06a-2f9056bd4760",
@@ -548,7 +585,8 @@
      "assetId": "01a15f2a-4f6b-720d-8db9-750db5e02238",
      "type": "image",
      "file": "countdown-5-find-your-mat-ch.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-4f6b-720d-8db9-750db5e02238/countdown-5-find-your-mat-ch.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-4f6b-720d-8db9-750db5e02238/countdown-5-find-your-mat-ch.jpg",
+     "newAssetId": "01a16050-2a9d-773d-850a-9d939e5da43e"
     }
    ],
    "userTags": [],
@@ -556,7 +594,8 @@
    "firstComment": null,
    "excludeFromGrid": false,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": "01a16052-33a6-730f-98cb-6d2acdd85095",
+   "oldUnscheduled": true
   },
   {
    "postGroupId": "01a15ef3-c879-7049-95bf-c86c08c19e9f",
@@ -571,7 +610,8 @@
      "assetId": "01a15f2a-50f8-7488-bf33-59be6d4c76df",
      "type": "image",
      "file": "countdown-4-find-your-mat-ch.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-50f8-7488-bf33-59be6d4c76df/countdown-4-find-your-mat-ch.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-50f8-7488-bf33-59be6d4c76df/countdown-4-find-your-mat-ch.jpg",
+     "newAssetId": "01a16050-2c2f-7352-8ee8-ab2f6a4dfd2f"
     }
    ],
    "userTags": [],
@@ -579,7 +619,8 @@
    "firstComment": null,
    "excludeFromGrid": false,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": "01a16052-354c-717f-8021-ba9737358c5c",
+   "oldUnscheduled": true
   },
   {
    "postGroupId": "01a15f6b-e5f3-74e8-a5b3-c3d49c778638",
@@ -594,7 +635,8 @@
      "assetId": "01a15f69-53f0-753d-9579-0193e204daee",
      "type": "image",
      "file": "papaya-still-in-stock-story.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-53f0-753d-9579-0193e204daee/papaya-still-in-stock-story.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-53f0-753d-9579-0193e204daee/papaya-still-in-stock-story.jpg",
+     "newAssetId": "01a16050-2dab-777a-a648-9e99ef2bcc64"
     }
    ],
    "userTags": [],
@@ -602,7 +644,8 @@
    "firstComment": null,
    "excludeFromGrid": false,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": "01a16052-36fd-770e-b808-bc55ff04ae08",
+   "oldUnscheduled": true
   },
   {
    "postGroupId": "01a15ef3-ca75-716a-80aa-6b3c4097957a",
@@ -617,7 +660,8 @@
      "assetId": "01a15f2a-52a9-7685-8199-717a6a0e188c",
      "type": "image",
      "file": "countdown-3-find-your-mat-ch.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-52a9-7685-8199-717a6a0e188c/countdown-3-find-your-mat-ch.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-52a9-7685-8199-717a6a0e188c/countdown-3-find-your-mat-ch.jpg",
+     "newAssetId": "01a16050-2f42-729a-99b5-ea743d86705e"
     }
    ],
    "userTags": [],
@@ -625,7 +669,8 @@
    "firstComment": null,
    "excludeFromGrid": false,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": "01a16052-386e-71de-96fa-1ea7608b61d5",
+   "oldUnscheduled": true
   },
   {
    "postGroupId": "01a15ef3-cc6a-769a-b668-9ac21e971bb6",
@@ -640,7 +685,8 @@
      "assetId": "01a15f2a-5430-74da-9df6-5f020151054e",
      "type": "image",
      "file": "countdown-2-find-your-mat-ch.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-5430-74da-9df6-5f020151054e/countdown-2-find-your-mat-ch.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-5430-74da-9df6-5f020151054e/countdown-2-find-your-mat-ch.jpg",
+     "newAssetId": "01a16050-38d1-70b0-b0d2-569172e713e6"
     }
    ],
    "userTags": [],
@@ -648,7 +694,8 @@
    "firstComment": null,
    "excludeFromGrid": false,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": "01a16052-3a48-764c-b7ac-7ff12b32fe88",
+   "oldUnscheduled": true
   },
   {
    "postGroupId": "01a15ef3-d78b-75c9-abb6-ccce8b255b83",
@@ -663,7 +710,8 @@
      "assetId": "01a15f2a-5606-731e-b5d6-59d14a06ebfc",
      "type": "image",
      "file": "countdown-1-find-your-mat-ch.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-5606-731e-b5d6-59d14a06ebfc/countdown-1-find-your-mat-ch.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-5606-731e-b5d6-59d14a06ebfc/countdown-1-find-your-mat-ch.jpg",
+     "newAssetId": "01a16050-3b22-721f-a39a-30aed9ce60fb"
     }
    ],
    "userTags": [],
@@ -671,7 +719,8 @@
    "firstComment": null,
    "excludeFromGrid": false,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": "01a16052-3bd3-758c-befb-e24d59161f25",
+   "oldUnscheduled": true
   },
   {
    "postGroupId": "01a15f6b-e9b5-74fd-ac66-4dc78449b730",
@@ -686,13 +735,15 @@
      "assetId": "01a15f69-58ed-758c-bb58-a6cb74ac13db",
      "type": "image",
      "file": "miss-classic-tease-malachite-story.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-58ed-758c-bb58-a6cb74ac13db/miss-classic-tease-malachite-story.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-58ed-758c-bb58-a6cb74ac13db/miss-classic-tease-malachite-story.jpg",
+     "newAssetId": "01a16050-3cae-718d-b38b-06c42c1b3500"
     },
     {
      "assetId": "01a15f69-5b04-75de-822a-2834a9d816cf",
      "type": "image",
      "file": "miss-classic-tease-jade-story.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-5b04-75de-822a-2834a9d816cf/miss-classic-tease-jade-story.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-5b04-75de-822a-2834a9d816cf/miss-classic-tease-jade-story.jpg",
+     "newAssetId": "01a16050-3e0c-70aa-98ce-2aaa36c1806a"
     }
    ],
    "userTags": [],
@@ -700,7 +751,8 @@
    "firstComment": null,
    "excludeFromGrid": false,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": "01a16052-3da0-763e-ada2-2818877cd26f",
+   "oldUnscheduled": true
   },
   {
    "postGroupId": "01a15ef3-d960-710b-a212-4b45c8a62a94",
@@ -715,7 +767,8 @@
      "assetId": "01a15f2a-57d0-702b-a697-e618d650a4a2",
      "type": "image",
      "file": "countdown-0-live-find-your-mat-ch.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-57d0-702b-a697-e618d650a4a2/countdown-0-live-find-your-mat-ch.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-57d0-702b-a697-e618d650a4a2/countdown-0-live-find-your-mat-ch.jpg",
+     "newAssetId": "01a16050-3f7b-7201-ad72-0fed974cd5e0"
     }
    ],
    "userTags": [],
@@ -723,7 +776,8 @@
    "firstComment": null,
    "excludeFromGrid": false,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": "01a16052-3f26-7084-aea0-b52ea4a077be",
+   "oldUnscheduled": true
   },
   {
    "postGroupId": "01a15f6b-ebce-72ab-b028-0c3f49f9ac56",
@@ -738,7 +792,8 @@
      "assetId": "01a15f69-63f3-721a-86ea-31c583b08411",
      "type": "image",
      "file": "launch-link-story.jpg",
-     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-63f3-721a-86ea-31c583b08411/launch-link-story.jpg"
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-63f3-721a-86ea-31c583b08411/launch-link-story.jpg",
+     "newAssetId": "01a16050-4105-753f-a851-0d7ce01c36a6"
     }
    ],
    "userTags": [],
@@ -746,7 +801,9 @@
    "firstComment": null,
    "excludeFromGrid": false,
    "note": null,
-   "newPostGroupId": null
+   "newPostGroupId": "01a16052-40c3-7322-b00b-21024a055d1b",
+   "oldUnscheduled": true
   }
- ]
+ ],
+ "newChannelId": "019fc280-a02a-74ef-bb8b-844d568307e6"
 }

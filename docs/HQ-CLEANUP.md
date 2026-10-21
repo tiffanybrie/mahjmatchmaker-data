@@ -22,7 +22,7 @@ Written Oct 21, 2026, after Tiffany said (1:00pm): "you should be cleaning this 
 ## 2. Where the evidence lives (check before keeping OR archiving)
 1. **Her answer is already in:** the need's `answer` field and the `answers` collection (HQ); the item's `ship` doc (`v`, `note`, `draft`) on RTS; the HQ `talk` collection; comments on either page (`ArtifactComments`).
 2. **Work done since:** `git log --since=<3 days ago> -i --grep=<topic>` in `/home/claude/mahjmatchmaker-data`; `site/livepatch/<topic>/README.md` (each says STAGED or LIVE); `CLAUDE.md`; `docs/BRAND-GUIDE.md`.
-3. **Social:** Planoly `list_post_groups` (workspace `019fc27b-964d-7279-8685-1f1bb7a7c3f5`). The plan is `docs/content-strategy-oct-dec.md`. Social items never live on HQ or RTS (see rule 4 below).
+3. **Social:** Planoly `list_post_groups` (Instagram workspace `019fc27c-0bef-7533-bc3f-030acc19a135` as of Oct 21; Pinterest stays in `019fc27b-964d-7279-8685-1f1bb7a7c3f5`). The plan is `docs/content-strategy-oct-dec.md`. Social items never live on HQ or RTS (see rule 4 below).
 4. **Releases:** `config/release-calendar.json` (`items` + `upcomingAlbums`) and HQ `hq/launches`.
 5. **Live site:** `curl -s https://www.mahjmatchmaker.com/<path>`, then grep. Never WebFetch it.
 6. **Project docs** (claude.ai Project "Mahj Matchmaker"): 00 (top rules), 00a (brand guide), 99 / 99b (content timing + social plan). Repo copies are under `docs/` where they exist.
