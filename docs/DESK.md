@@ -15,3 +15,4 @@ See CLAUDE.md. Rewritten nightly by the end-of-day desk cleanup.
 - [x] Kerry ShopMy link verified: https://go.shopmy.us/p-96114928 -> Etsy listing 4493549326 (The Kerry). Gallery row (matgallery-v5.html + new53_rows.json) swapped from etsy.com to it.
 - [x] FYM check: Kerry is NOT in any of the 11 sets' match lists (staged fym-oct21f) and its FYM url is still etsy.com. For the v70/v71 app fix, not published here.
 - [ ] Album snippets staged in site/livepatch/kerry-oct21/ ; QA requested from main; publish after QA.
+- (Oct 21) 10/27 launch checklist: Tiffany switches the FB group from Private to Public herself (Group settings → Privacy) right after the 'all-new Mahj Matchmaker' announcement. Put the exact taps in HQ Today that morning.

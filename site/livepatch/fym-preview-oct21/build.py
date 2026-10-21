@@ -20,8 +20,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CDN = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@'
 ASSET = CDN + '44563dd1c2c4d9a00aa3deec61b1d86ccfdbcaf8/assets/site/fym-page/'
 WORDMARK = CDN + '8952b136784680ba365a33d7ae13ba91a25ab561/assets/brand/mahjmatchmaker-wordmark-notag.png'
-APP_COMMIT = '474dd62e5bc5d8ee78de79422d11e1f82b07be16'
-APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-oct21e/index.html'
+APP_COMMIT = '0269672e6a2cf4a39b3cae76bd8eee5c0af784bc'
+APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-oct21f/index.html'  # v70 (Oct 21)
 APP_BASE = CDN + APP_COMMIT + '/site-app/fym-oct21d/'
 
 # Oct 21 3:13pm (Tiffany): the tool's promo SHOWS THE TOOL. Hero = real v69 app screens in a true-proportion iPhone
