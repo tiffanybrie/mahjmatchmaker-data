@@ -19,7 +19,7 @@ ASSET_COMMIT = '9b3b68fe8ca3ab3c045a8e0f5563c8ca9045069b'
 GH = f'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@{ASSET_COMMIT}/'
 RAVEN_CARD = GH + 'assets/blog/night-of-the-raven/night-of-the-raven-shop-the-look-v7-card-1200x900.jpg'
 # Oct 21 2:05pm (Tiffany): step 3 image v2 = transparent PNG fan, no pink background, as big as the column
-STEP3_COMMIT = '00537dd9f64c82977bc073169226f9f71ef3e8dc'
+STEP3_COMMIT = '3025661930949b3b61bf0d799cf362e7e0121fa7'
 STEP3_IMG = f'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@{STEP3_COMMIT}/assets/site/home/how-it-works-3-new-matches-first.png'
 STEP3_SEC = '69b2303d5670f85709f47c87'
 CDN = f'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@{LOGO_COMMIT}/assets/brands/ticker/'
@@ -177,7 +177,7 @@ step3 = (
     f'{S3} .mmstep3{{position:relative;z-index:1;align-self:center;min-width:0}}'
     # v2: transparent PNG cropped to the fan (aspect ~1.51). Full column width at every size, natural
     # height, never cropped (v1's object-fit:cover clipped the outer covers on phones).
-    f'{S3} .mmstep3 img{{display:block;width:100%;height:auto;aspect-ratio:1200/795;object-fit:contain;background:none}}'
+    f'{S3} .mmstep3 img{{display:block;width:100%;height:auto;aspect-ratio:1230/825;object-fit:contain;background:none}}'
     # no orphan words in the step 3 copy (390: "set." alone; 1280: "First" alone under the heading)
     f'{S3} .sqs-html-content :is(h1,h2,h3,h4){{text-wrap:balance}}{S3} .sqs-html-content p{{text-wrap:pretty}}'
     f'@media(min-width:768px){{{S3} .fluid-engine .mmstep3{{grid-area:2/2/16/13}}}}'
@@ -190,7 +190,7 @@ step3 = (
     '</style>'
     '<script>(function(){function f(){var g=document.querySelector(\'' + S3.replace('"', '\\"') + ' .fluid-engine\');'
     'if(!g||g.querySelector(".mmstep3"))return;var d=document.createElement("div");d.className="mmstep3";'
-    f'd.innerHTML=\'<img src="{STEP3_IMG}" alt="New mahjong tile match albums: Coquette, Seabreeze, Talulah, Osler and Smith" loading="lazy" width="1200" height="795">\';'
+    f'd.innerHTML=\'<img src="{STEP3_IMG}" alt="New mahjong tile match albums: Coquette, Seabreeze, Talulah, Osler and Smith" loading="lazy" width="1230" height="825">\';'
     'g.insertBefore(d,g.firstChild)}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",f);else f();})();</script>'
 )
 # 7. Holiday banner (section.mhx) sat flush LEFT on desktop (Tiffany Oct 21 1:16pm). Cause: the
