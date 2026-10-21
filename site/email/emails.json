@@ -1,0 +1,52 @@
+[
+ {
+  "id": "launch",
+  "name": "Launch: Find Your Mat-ch is here",
+  "kind": "campaign",
+  "when": "Tue Oct 27, 9:30am CT, one send",
+  "to": "the one site mailing list (notify-me form + Save my spot + homepage signup all feed it)",
+  "subject": "It's here!!! Find Your Mat-ch™ is live 💕",
+  "preview": "Pick your tiles, swipe your mats, meet your match.",
+  "text": "It’s here!!! 🎉\n\nYou asked me to tell you the minute it opened, so here it is: Find Your Mat-ch™ is officially live!\n\nStart with your tiles (or the mat you already love), then swipe through the mats and racks I’d pair with them. Tap ♥ on the ones you love and save your favorite as a match card to send to your mahj group.\n\n[BUTTON: Start swiping → https://www.mahjmatchmaker.com/find-your-match]\n\nWant my own picks? My tile set albums (https://www.mahjmatchmaker.com/mahjong-tile-matches) are packed with my favorite mat and rack matches, with new albums all the time.\n\nUse code MAHJMATCH to save 💕\n\nHappy mat-ching!\nxo, Tiffany"
+ },
+ {
+  "id": "welcome",
+  "name": "Automation: Welcome (new subscriber)",
+  "kind": "automation",
+  "when": "right after someone signs up (on from launch)",
+  "to": "each new subscriber",
+  "subject": "Welcome to Mahj Matchmaker! 💕",
+  "preview": "Three fun places to start, plus a few of my favorite reads.",
+  "text": "Hi, I’m Tiffany!\n\nI’m so glad you’re here! I match mahjong tiles with the mats and racks that make them shine, so your table comes together just the way you dreamed.\n\nThree fun places to start:\n\n• Find Your Mat-ch™: start with your tiles or your mat and swipe.\n\n• My tile set albums (https://www.mahjmatchmaker.com/mahjong-tile-matches): my favorite mat and rack matches for each set.\n\n• The discount codes page (https://www.mahjmatchmaker.com/mahjong-discount-codes): every partner brand that takes our code.\n\n[BUTTON: Start swiping → https://www.mahjmatchmaker.com/find-your-match]\n\nA few of my favorite reads:\n\n• The Mahjong Buying Guide: How to choose tiles, mats and racks (https://www.mahjmatchmaker.com/blog/mahjong-buying-guide)\n\n• The Most Versatile Mahjong Mats: The mats that go with almost everything (https://www.mahjmatchmaker.com/blog/most-versatile-mahjong-mats)\n\n• A Holiday Table Without a Christmas&nbsp;Mat: Festive tables with the mat you already own (https://www.mahjmatchmaker.com/blog/holiday-mahjong-table)\n\nHave an IRL photo of your table you’d love to share with the Mahj Matchmaker community? Submit it here (https://www.mahjmatchmaker.com/share-your-table), or join our Facebook group (https://www.facebook.com/groups/mahjmatchmaker) and share it there. We often pull photos from the group to feature in the tile albums!\n\nUse code MAHJMATCH to save 💕\n\nHappy mat-ching!\nxo, Tiffany"
+ },
+ {
+  "id": "album-request",
+  "name": "Automation: Album request thank-you",
+  "kind": "automation",
+  "when": "right after someone submits Request an Album",
+  "to": "the person who sent the request",
+  "subject": "Got it! Your album request is in 💕",
+  "preview": "The most-asked-for sets get matched first.",
+  "text": "Thank you for your request!\n\nI keep a running tally of every request, and the most-asked-for sets get matched first. When yours goes live, you’ll be the first to know.\n\nWhile you wait, try Find Your Mat-ch™ to see the mats and racks I’d pair with your set. Don’t see your set in the catalog yet? Shop by color and pick a similar colorway, and you’ll find plenty of matches to swoon over.\n\n[BUTTON: Start swiping → https://www.mahjmatchmaker.com/find-your-match]\n\nUse code MAHJMATCH to save 💕\n\nHappy mat-ching!\nxo, Tiffany"
+ },
+ {
+  "id": "album-exists",
+  "name": "Automation: It's already in our library",
+  "kind": "manual-reply",
+  "when": "sent by Claude when a requested set already has an album",
+  "to": "the person who sent the request",
+  "subject": "Good news, it's already in our library!",
+  "preview": "Your set already has an album, right this way.",
+  "text": "Great taste!\n\n[Tile set] already has an album, packed with the mats and racks I’d pair with it.\n\n[BUTTON: See the album → https://www.mahjmatchmaker.com/mahjong-tile-matches]\n\nUse code MAHJMATCH to save 💕\n\nHappy mat-ching!\nxo, Tiffany"
+ },
+ {
+  "id": "album-live",
+  "name": "Automation: Your album is live",
+  "kind": "manual-reply",
+  "when": "sent by Claude when a requested album goes live",
+  "to": "everyone who requested that set",
+  "subject": "Your [tile set] matches are here! 🎉",
+  "preview": "You asked, I matched!",
+  "text": "You asked, I matched!\n\nThe [Tile set] album is live, with all the mats and racks I’d pair with it.\n\n[BUTTON: See your matches → https://www.mahjmatchmaker.com/mahjong-tile-matches]\n\nUse code MAHJMATCH to save 💕\n\nHappy mat-ching!\nxo, Tiffany"
+ }
+]
