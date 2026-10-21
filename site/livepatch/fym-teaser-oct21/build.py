@@ -143,7 +143,7 @@ def build():
 """
     body = f"""<div id="mmtz"><div class="mmtz-w">
 <p class="mmtz-k">Coming 10.27</p>
-<h1 class="mmtz-t">Find <em>Your</em> <span class="mmtz-nw">Mat&#8209;ch<sup>&trade;</sup></span></h1>
+<h1 class="mmtz-t">Find Your <span class="mmtz-nw">Mat&#8209;ch<sup>&trade;</sup></span></h1>
 <p class="mmtz-d">Make your own matches. Pick your tiles, swipe through the mats that bring out their best colors, and shop it all with code MAHJMATCH.</p>
 <div class="mmtz-cd" role="timer" aria-label="Countdown to launch"><div><b data-u="d">6</b><span>Days</span></div><div><b data-u="h">00</b><span>Hours</span></div><div><b data-u="m">00</b><span>Min</span></div><div><b data-u="s">00</b><span>Sec</span></div></div>
 <p class="mmtz-when">Tuesday, October 27</p>

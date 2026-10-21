@@ -273,7 +273,7 @@ def build():
 <section class="fx-hero"><div class="fx-wrap">
 <div class="fx-copy">
 <p class="fx-kick">New from Mahj Matchmaker</p>
-<h1><span class="nb">Find <em>Your</em></span> <span class="nb">Mat-ch<sup>&trade;</sup></span></h1>
+<h1><span class="nb">Find Your</span> <span class="nb">Mat-ch<sup>&trade;</sup></span></h1>
 <p class="fx-lede">Start with your tiles or your mat. Swipe. Find your&nbsp;match.</p>
 <p class="fx-under"><a href="#fymx-how" data-fx-how>How it works&nbsp;&darr;</a> &nbsp;&middot;&nbsp; Free, nothing to sign up&nbsp;for</p>
 </div>
