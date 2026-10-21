@@ -33,6 +33,7 @@ CROP = {
     96127725: (.22, .17, .80, .66),
     96127601: (.19, .22, .75, .71),
     96130241: (.08, .28, .80, .82),
+    96239262: (0, .115, 1, 1),       # bouquet: Amazon alt image 51hpe7OnwSL (bats visible), drop its caption line
     96229865: (0, 0, 1, .66),        # cognac leather tile bag: the big bag only
 }
 # white paint-outs on the ORIGINAL image (fractions l, t, r, b), applied before CROP: boxes, bags, packaging
@@ -42,7 +43,7 @@ PAINT = {
     96213996: [(.818, 0, 1, 1)],                         # beige floral: black bag (right border rebuilt by MIRROR below)
 }
 # contrast boost so clear acrylic still reads at phone size
-ENH = {96217490: 2.4}
+ENH = {96217490: 3.2}
 # full-bleed mats / lifestyle shots that may be centre-filled (ImageOps.fit); everything else is padded so products never get cut
 NOFIT = {
     96114928, 96126037, 96126853, 96126603, 96125859,                    # Betty June Jeannette
