@@ -27,16 +27,16 @@ CARDS = 'assets/cards/papaya-spritz/papaya-spritz-mahjong-tiles-oh-my-mahjong-{}
 COUNT, SHORT = 50, 'Papaya'
 
 
-def shell(body):
+def shell(body, H=1350):
     return f"""<!doctype html><html><head><meta charset=utf8><style>
 @font-face{{font-family:Hand;src:url('{F}/Caveat-Bold.ttf')}}
 @font-face{{font-family:Lo;src:url('{G}/Lora-Variable.ttf')}}
 @font-face{{font-family:Lo;font-style:italic;src:url('{G}/Lora-Italic-Variable.ttf')}}
 @font-face{{font-family:Bit;font-weight:600;src:url('{F}/bitter-latin-600-normal.woff2')}}
 @font-face{{font-family:Bit;font-weight:700;src:url('{F}/bitter-latin-700-normal.woff2')}}
-*{{margin:0;padding:0;box-sizing:border-box}} body{{width:1080px;height:1350px;overflow:hidden}}
+*{{margin:0;padding:0;box-sizing:border-box}} body{{width:1080px;height:{H}px;overflow:hidden}}
 .k{{font-family:Bit;font-weight:700;letter-spacing:.2em;color:{WNAVY}}}
-</style></head><body><div id=pg style="position:relative;width:1080px;height:1350px;background:{PAPER};overflow:hidden">
+</style></head><body><div id=pg style="position:relative;width:1080px;height:{H}px;background:{PAPER};overflow:hidden">
 <div style="position:absolute;right:-210px;top:-230px;width:700px;height:700px;border-radius:50%;background:{BLUSHBG}"></div>
 <div style="position:absolute;left:-230px;bottom:-250px;width:660px;height:660px;border-radius:50%;background:{BLUSHBG};opacity:.75"></div>
 {body}</div></body></html>"""
@@ -100,7 +100,33 @@ def slide3():
 """)
 
 
+def slide3_story():
+    """Story version of slide 3 (Oct 21 1:47pm): taller layout, bigger cards and box, so the fitted story frame fills the
+    safe band instead of sitting in the middle with empty bands. Rendered on plain paper (story_frames --fit keys it)."""
+    cards = (card('goldie', 20, 120, 420, -8, 1) + card('larkspur', 640, 120, 420, 8, 1) +
+             card('vivienne', 250, 40, 580, 0, 3))
+    return shell(f"""{cards}
+<div style="position:absolute;left:30px;right:30px;top:780px;z-index:5;background:{PAPER};border-radius:40px;padding:40px 30px 40px;text-align:center;box-shadow:0 20px 50px rgba(6,42,85,.22)">
+  <div style="font-family:Hand;font-size:98px;line-height:1;white-space:nowrap;color:{PINK}">50 matches and counting</div>
+  <div style="display:inline-block;margin-top:30px;background:{NAVY};color:#fff;border-radius:54px;padding:20px 52px 22px;line-height:1.15">
+    <div style="font-family:Lo;font-weight:700;font-size:50px;white-space:nowrap">Swipe all {COUNT} of {SHORT}&rsquo;s matches</div>
+    <div style="font-family:Bit;font-weight:600;font-size:36px;letter-spacing:.06em;color:#f7b6c8;margin-top:6px">mahjmatchmaker.com</div>
+  </div>
+  <div><img src="{u('assets/brand/mahjmatchmaker-wordmark-notag.png')}" style="width:520px;margin-top:32px"></div>
+  <div style="font-family:Lo;font-style:italic;font-size:38px;color:{WNAVY};margin-top:6px;white-space:nowrap">Hooking up tiles, mats &amp; racks</div>
+</div>
+""", 1500)
+
+
 async def main():
+    if os.environ.get('STORY3') == '1':   # just the story version of slide 3 -> OUT/papaya-vivienne-omm-forward-3-story.jpg
+        from playwright.async_api import async_playwright
+        async with async_playwright() as p:
+            b = await p.chromium.launch(); pg = await b.new_page(viewport={'width': 1080, 'height': 1500}, device_scale_factor=2)
+            f = f'{OUT}/.s3story.html'; open(f, 'w').write(slide3_story())
+            await pg.goto('file://' + f); await pg.wait_for_timeout(600)
+            await pg.screenshot(path=f'{OUT}/papaya-vivienne-omm-forward-3-story.jpg', type='jpeg', quality=95); os.remove(f); await b.close()
+        print('wrote story 3'); return
     from playwright.async_api import async_playwright
     os.makedirs(OUT, exist_ok=True)
     names = ['papaya-vivienne-omm-forward-1-made-for-each-other', 'papaya-vivienne-omm-forward-2-favorite-faces',
