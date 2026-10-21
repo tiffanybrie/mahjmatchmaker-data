@@ -59,6 +59,11 @@ Before creating a need, list `needs` and search titles/ids for the same topic (b
 - `hq/priorities`: 3-5 current priorities; nothing whose date has passed.
 - `hq/launchPlan`: day-by-day from today to launch; past days get ✓ or are dropped. Old content moves into an `archived…` field inside the doc, never deleted.
 - `hq/albums`: each album's real stage and owner (`tiffany` only when it truly waits on her).
+  **Album status check (Tiffany, Oct 21 6:12pm: "it still says yours… there's 40 of them… Papaya Spritz is on the top").** Every morning, re-check every `hq/albums` item against reality before anything else. The page counts `owner==='tiffany' && stage!=='live'` as "Yours" (tab badge + chip), so that pair must be exact:
+  1. **Live = done.** `curl -s -o /dev/null -w '%{http_code}' https://www.mahjmatchmaker.com/<set>-mahjong-tile-matches` (index: /mahjong-tile-matches; never WebFetch). 200 with the album title means set `stage:"live"`, `owner:"claude"`, link to the live page, detail "LIVE on the site". This catches albums that went live while HQ still said yours (Papaya Spritz and four From the Vault sets did on Oct 21).
+  2. **"Yours" only with an open Ready to Ship item.** An album is `owner:"tiffany"` only if its id is in RTS `NOW=[...]` with no `ship` doc answer (or it has a swipe page she can open now, e.g. the thin-albums swipe). Everything else is `owner:"claude"`.
+  3. **Honest non-her status** (the page's stage groups are fixed, so the status goes in the first words of `detail`): `VERY FAR ALONG` (stage `cards`/`swiped`), `STARTED, STALLED` (partial swipes; stage `swiped`), `NOT STARTED` (new-release swipe books; stage `swiped`), `UPCOMING` (config/release-calendar.json `upcomingAlbums`; stage `swiped`), banked items likewise. Each says Claude's next step.
+  4. Never delete an item; re-status it. After writing, the count of `owner==='tiffany' && stage!=='live'` must equal the number of open album items on RTS NOW plus open swipe pages. Log the before/after in the HQ `log` line.
 - `hq/links`: no link that points social review anywhere but Planoly.
 
 ## 7. Upcoming albums list
@@ -71,6 +76,7 @@ Before creating a need, list `needs` and search titles/ids for the same topic (b
 - Commit any repo change (`git pull -q --rebase --autostash && git push -q`).
 
 ## Changelog
+- **Oct 21, 2026 (6:12pm):** Albums tab fixed. "Yours" 40 -> 4 (Petalée, Brownstone Bloom, Vivienne album order, thin-albums swipe); 6 albums found live and marked done (Papaya Spritz, Spring Love, Lilac Soiree, Preppy Soiree, Shangri-la, Sunday Tile Set); the rest re-owned to Claude with VERY FAR ALONG / STARTED, STALLED / NOT STARTED / UPCOMING. Daily album status check added in section 6.
 - **Oct 21, 2026:** First cleanup. HQ open needs 19 → 9 (4 Today, 5 This week) plus the permanent inbox box; a parallel session adds "Review this week's posts in Planoly" as the 5th Today item; RTS "Ready for you now" 19 → 6. HQ got the Today / This week / Planoly front door and an `archived` status; RTS got an `archived` flag, a pointer to HQ, and a trimmed `NOW` list. Gatsby moved to `upcomingAlbums`.
 
 ## Rule (Tiffany, Oct 21 3:16pm)
