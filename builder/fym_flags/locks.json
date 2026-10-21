@@ -16311,15 +16311,17 @@
   "alb2:mahj-tile-haus-imperial-lotus": {
    "n": "Imperial Lotus",
    "bn": "Mahj Tile Haus",
-   "f": "m/1954.webp",
-   "th": "mta3962ba0",
+   "f": "m/2016.webp",
+   "th": "mt66c5e6a5",
    "rt": false,
-   "hid": true,
+   "hid": false,
    "mf": [
-    "neutral"
+    "neutral",
+    "pink"
    ],
    "mt": [
-    0
+    0,
+    2
    ]
   },
   "alb2:mahj-vine-chinoiserie": {
@@ -16821,13 +16823,13 @@
    "hid": false,
    "mf": [
     "neutral",
-    "green",
-    "yellow"
+    "yellow",
+    "green"
    ],
    "mt": [
     0,
-    2,
-    1
+    1,
+    2
    ]
   },
   "alb:amara:KY Derby": {
@@ -16859,10 +16861,12 @@
    "hid": false,
    "mf": [
     "red",
+    "blue",
     "pink"
    ],
    "mt": [
     0,
+    1,
     2
    ]
   },
@@ -17075,10 +17079,12 @@
    "hid": false,
    "mf": [
     "blue",
+    "pink",
     "purple"
    ],
    "mt": [
     0,
+    1,
     2
    ]
   },
@@ -18404,16 +18410,16 @@
     "red",
     "blue",
     "dark",
-    "neutral",
-    "yellow"
+    "yellow",
+    "neutral"
    ],
    "mt": [
     0,
     1,
     1,
     1,
-    2,
-    1
+    1,
+    2
    ]
   },
   "luxemahjong.com/coming-soon-the-polo-club-mahjong-mat": {
@@ -18425,13 +18431,13 @@
    "hid": false,
    "mf": [
     "dark",
-    "green",
-    "yellow"
+    "yellow",
+    "green"
    ],
    "mt": [
     0,
-    2,
-    1
+    1,
+    2
    ]
   },
   "luxemahjong.com/untitled-sep29_16-36-07": {
@@ -18443,13 +18449,13 @@
    "hid": false,
    "mf": [
     "neutral",
-    "orange",
-    "yellow"
+    "yellow",
+    "orange"
    ],
    "mt": [
     0,
-    2,
-    1
+    1,
+    2
    ]
   },
   "mahjandmoon.com/amalfi-soleil-mahjong-mat": {
@@ -18844,10 +18850,12 @@
    "rt": false,
    "hid": false,
    "mf": [
+    "pink",
     "neutral",
     "blue"
    ],
    "mt": [
+    1,
     2,
     2
    ]
@@ -20676,14 +20684,14 @@
    "mf": [
     "pink",
     "blue",
-    "neutral",
-    "yellow"
+    "yellow",
+    "neutral"
    ],
    "mt": [
     0,
     1,
-    2,
-    1
+    1,
+    2
    ]
   },
   "shop.andersruff.com/a-mahjong-soiree-mahjong-mat": {
@@ -21677,14 +21685,14 @@
    "mf": [
     "red",
     "blue",
-    "dark",
-    "yellow"
+    "yellow",
+    "dark"
    ],
    "mt": [
     1,
     1,
-    2,
-    1
+    1,
+    2
    ]
   },
   "sundaymahjong.com/coastal-grandma-premium-mahjong-mat": {
@@ -21722,12 +21730,10 @@
    "rt": false,
    "hid": false,
    "mf": [
-    "green",
-    "blue"
+    "green"
    ],
    "mt": [
-    0,
-    2
+    0
    ]
   },
   "sundaymahjong.com/golden-gingham-premium-mahjong-mat": {
@@ -21738,10 +21744,16 @@
    "rt": false,
    "hid": false,
    "mf": [
-    "yellow"
+    "yellow",
+    "red",
+    "orange",
+    "dark"
    ],
    "mt": [
-    0
+    0,
+    1,
+    2,
+    2
    ]
   },
   "sundaymahjong.com/plum-panda-premium-mahjong-mat": {
@@ -21807,11 +21819,15 @@
    "hid": false,
    "mf": [
     "green",
-    "yellow"
+    "yellow",
+    "blue",
+    "dark"
    ],
    "mt": [
     0,
-    1
+    1,
+    2,
+    2
    ]
   },
   "sundaymahjong.com/sunday-premium-mahjong-mat": {
@@ -22534,10 +22550,12 @@
    "rt": false,
    "hid": false,
    "mf": [
-    "yellow"
+    "yellow",
+    "green"
    ],
    "mt": [
-    0
+    0,
+    2
    ]
   },
   "www.bamletsmahjong.com/pumpkin-patch-mahjong-mat": {
@@ -23039,7 +23057,7 @@
     "green"
    ],
    "mt": [
-    2,
+    1,
     2
    ]
   },
@@ -24015,10 +24033,12 @@
    "hid": false,
    "mf": [
     "blue",
+    "pink",
     "green"
    ],
    "mt": [
     0,
+    1,
     2
    ]
   },

@@ -363,6 +363,9 @@ MOODB = {m['img'] for m in V5.get('mood_calls', []) if m['mood'] == 'brights'} |
 MOODP = {m['img'] for m in V5.get('mood_calls', []) if m['mood'] == 'pastel'}
 SIMPLE = set(XT.get('simple', {}).get('tiffany', [])) | set(XT.get('simple', {}).get('claude', []))
 MOODS = ('pastel', 'brights')
+LATE = json.load(open(P('config/tiffany-color-notes/2026-10-20-late-calls.json')))
+LATE_RM = {c['img']: list(c['remove']) for c in LATE.get('corrections', []) if c.get('remove')}  # her explicit colour removals (Gaylord teal)
+TALA = json.load(open(P('config/tala-shopmy-links.json')))['links']  # Tiffany Oct 20: Tala Mahj links go to her ShopMy links
 v5log = {'final': [], 'to_brights': [], 'simple': []}
 REMOVED = {}
 
@@ -371,7 +374,7 @@ def v5(img, secs):
     if secs == ['holiday']:
         return secs
     if img in FINAL:
-        REMOVED[img] = [c for c in secs if c not in FINAL[img] and c not in MOODS + TONAL + ('animal', 'simple')] + ['teal']  # her removals never come back as accents
+        REMOVED[img] = [c for c in secs if c not in FINAL[img] and c not in MOODS + TONAL + ('animal', 'simple')] + LATE_RM.get(img, [])  # her removals never come back as accents (the old blanket teal strip is gone, Oct 20 late: teal is only removed where she said so, late-calls 'remove')
         keep = [c for c in secs if c in MOODS + TONAL + ('animal',)]  # mood + tonal tags stay unless her call says otherwise
         secs = list(dict.fromkeys(FINAL[img] + keep)); v5log['final'].append(img)
         if not any(c in TONAL or c in MOODS for c in secs):
@@ -408,6 +411,14 @@ for r in N53['rows']:
     x['secs'] = v5(img, list(t['sections']))
     vis.append(x); added53.append(img)
 
+# ---------- late Oct 20: mats Tiffany brought in by hand (config/mat-gallery-extra-rows.json, e.g. Mahj Tile Haus Imperial Lotus) ----------
+XROWS = json.load(open(P('config/mat-gallery-extra-rows.json')))['rows']
+IMGB = {}
+for a in XROWS:
+    if a['img'] in RMI or a['brand'] in RMB: continue
+    vis.append(dict(img=a['img'], key=a['key'], name=a['name'], raw=a['name'], brand=a['brand'], url=a['url'], ret=0, code=a.get('code', ''), old=a['secs'][0], secs=v5(a['img'], list(a['secs'])), xrow=1))
+    IMGB[a['img']] = a['img_commit']
+
 # ---------- v5: retired additions (another agent's audit, retired_additions_oct20.json): Holy Mahj + Queen Bee new rows (stopgap
 # crop photos), Peri-twinkle + Garden Party come back via crosstags unhold; all four use the audit's colors ----------
 RADD = json.load(open(os.path.join(HERE, 'retired_additions_oct20.json')))
@@ -426,6 +437,11 @@ for a in RADD:
 # For every mat she hasn't called (no v5 final call, no tiffany-chat override, not one of the 53 Claude photo-tagged by eye): a color
 # measured at >= 15% of the mat (accents file 'major') becomes an also-color. Logged to config/mat-also-claude-v5.json.
 ACC = json.load(open(P('config/mat-accent-colors.json')))['mats']
+for x in vis:
+    REMOVED.setdefault(x['img'], [])
+    REMOVED[x['img']] = list(dict.fromkeys(REMOVED[x['img']] + LATE_RM.get(x['img'], [])))
+    if x['img'] in TALA and x['url']:
+        x['url'] = TALA[x['img']]
 TCALLED = set(FINAL) | {x['img'] for x in vis if str((MC.get(x['key']) or {}).get('by', '')).startswith('tiffany')}
 COLS8 = ('pink', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple')
 NEIGH = {'purple': ('pink', 'blue'), 'pink': ('purple', 'red', 'orange'), 'blue': ('purple', 'teal'), 'teal': ('blue', 'green'), 'green': ('teal', 'yellow'),
@@ -458,8 +474,7 @@ for x in vis:
     for a in V5.get('accent_calls', {}).get(x['img'], []):  # Tiffany's own accent calls
         if a not in x['secs'] and a not in x['acc']: x['acc'].append(a)
 # ---------- late Oct 20: Tiffany's late calls (tiffany-color-notes/2026-10-20-late-calls.json) re-applied LAST so nothing above undoes them ----------
-LATE = json.load(open(P('config/tiffany-color-notes/2026-10-20-late-calls.json')))
-LEAD = LATE.get('lead', {})
+LEAD, TAIL, LEADP = LATE.get('lead', {}), LATE.get('tail', {}), set(LATE.get('lead_primary', []))
 late_log = {}
 VI = {x['img']: x for x in vis}
 for c in LATE.get('corrections', []):
@@ -470,7 +485,8 @@ for c in LATE.get('corrections', []):
     if cp == 'holiday':
         x['hacc'] = [a for a in ACC.get(x['img'], {}).get('accents', []) if a in ACOL]; x['secs'] = ['holiday']; x['acc'] = []
         late_log[x['img']] = x['secs']; continue
-    secs = [a for a in x['secs'] if a != 'holiday']
+    secs = [a for a in x['secs'] if a != 'holiday' and a not in c.get('remove', [])]
+    x['acc'] = [a for a in x['acc'] if a not in c.get('remove', [])]
     if c.get('floral') is False:
         secs = [a for a in secs if a != 'florals']
     if cp:
@@ -487,9 +503,28 @@ for sec, imgs in LEAD.items():  # lead mats: pinned to the top of that section, 
         x = VI.get(img)
         if x is None:
             late_log[img] = 'lead not in gallery'; continue
-        if x['secs'][0] != sec:
+        if sec in LEADP and x['secs'][0] != sec:  # green leads: that section is their primary (Tiffany 22:45)
             x['secs'] = [sec] + [a for a in x['secs'] if a != sec]; x['acc'] = [a for a in x['acc'] if a != sec]
+        elif sec not in x['secs']:  # other leads (teal): keep the primary, make sure the mat is in the section
+            i = next((k for k, v in enumerate(x['secs']) if k > 0 and v in MOODS + TONAL + ('simple', 'florals', 'animal')), len(x['secs'])); x['secs'].insert(i, sec)
+            x['acc'] = [a for a in x['acc'] if a != sec]
         late_log.setdefault(img, x['secs'])
+for sec, imgs in TAIL.items():
+    for img in imgs:
+        if img not in VI: late_log[img] = 'tail not in gallery'
+# ---------- late Oct 20 (item J): album colours as a COMBO-ONLY hint (row field 10, like holiday accents). A set colour is added only
+# where the photo measures >= combo_only.min_pct of it (blue + teal pooled), never where she removed it. Single sections never change.
+ALB = json.load(open(P('config/mat-album-combo-colors.json')))
+CMIN = LATE.get('combo_only', {}).get('min_pct', 5.0)
+combo_log = {}
+for x in vis:
+    sh = ACC.get(x['img'], {}).get('shares', {})
+    for st in ALB['album_sets'].get(x['img'], []):
+        for c in ALB['set_colors'][st]:
+            if c in x['secs'] or c in x['acc'] or c in (x.get('hacc') or []) or c in REMOVED.get(x['img'], []): continue
+            v = sum(sh.get(f, 0) for f in ('blue', 'teal') if f not in REMOVED.get(x['img'], [])) if c in ('blue', 'teal') else sh.get(c, 0)  # a colour she removed never counts toward the pool
+            if v >= CMIN:
+                x['hacc'] = (x.get('hacc') or []) + [c]; combo_log.setdefault(x['img'], {})[c] = [round(v, 1), st]
 order = {c: i for i, (c, _) in enumerate(COL)}
 # STANDING RULE (Tiffany, Oct 20): Mahjong Studios always sorts to the bottom of every section
 vis.sort(key=lambda x: (x['brand'] == 'Mahjong Studios', x['brand'].lower(), x['name'].lower()))
@@ -518,7 +553,7 @@ with open(os.path.join(HERE, 'hidden_oct20.csv'), 'w', newline='') as f:
                 w.writerow([img, man[img], BRANDFIX.get(Fi[img][2], Fi[img][2]), Fi[img][1], f'already out (held low-confidence list); would also be hidden: {lab}: {a["detail"][:100]}'])
 json.dump({'new53_added': added53, 'new53_hidden': hidden53, 'new53_sections': {x['img']: x['secs'] for x in vis if x.get('new53')},
            'v5_final_calls': v5log['final'], 'v5_pastel_to_brights': v5log['to_brights'], 'v5_simple': v5log['simple'],
-           'removed_mats': removed_mats, 'late_calls_applied': late_log, 'claude_also_added': len(also_log), 'section_tiers_active': tiers,
+           'removed_mats': removed_mats, 'late_calls_applied': late_log, 'combo_only_album': combo_log, 'claude_also_added': len(also_log), 'section_tiers_active': tiers,
            'section_counts_active': cnt, 'section_counts_if_retired_shown': cnt_with_ret, 'unique_active_mats': len(active),
            'retired': len(retired), 'hidden': len(hidden), 'dedupe_groups': len(dd_rows), 'held_low_out': len(held),
            'applied_color_calls': applied, 'unmatched_color_calls': unmatched,
@@ -527,6 +562,7 @@ json.dump({'new53_added': added53, 'new53_hidden': hidden53, 'new53_sections': {
 
 # ---------- HTML ----------
 CSS = open(os.path.join(HERE, 'style.css')).read() + '.mmg-hint{font-size:.85em;color:#6f655d;margin:.2em 0 .6em}\n.mmg-combo .mmg-empty{display:none}\n.mmg-chip.mmg-tog{border-style:dashed}\n.mmg-watch{margin-top:auto;align-self:flex-start;border:1.5px solid #9a8f86;color:#6f655d;font-size:.68em;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:10px}\n.mmg-chip.mmg-tog[aria-pressed="true"]{border-style:solid}\n'
+# Row fields: [img, name, brand, url, ret, secs, code, watch, acc, coprimary, combo-only colours (holiday accents + album hint), shares]
 # Image swaps (Tiffany Oct 20): use a clean flat photo when a store's photo has text/cropping
 IMG_ALIAS = {'four-winds-social--fws-x-mahj-mood-collab-beyond-the-ribbon': 'mahj-mood--beyond-the-ribbon-four-winds-social-collab-mat-benefitting-pink-fund-pre-order-ships-end-of-december'}
 data = json.dumps([[IMG_ALIAS.get(x['img'], x['img']), x['name'], x['brand'], x['url'], x['ret'], x['secs'], x['code'], 1 if x['img'] in WATCH else 0, x['acc'], V5.get('coprimary', {}).get(x['img'], []), x.get('hacc') or [],
@@ -542,10 +578,10 @@ secs = ''.join(f'<section class="mmg-sec" data-c="{c}"><h2 class="mmg-h">{html.e
                for c, l in COL if cnt_with_ret[c])
 secs = '<section class="mmg-combo" hidden><h2 class="mmg-h"></h2><ul class="mmg-grid"></ul><p class="mmg-empty">No mats with all of those yet — try removing one.</p></section>' + secs
 secs += '<section class="mmg-sec" data-c="retired"><h2 class="mmg-h">Retired mats</h2><p class="mmg-intro">No longer sold, kept here so you can see what goes with the tiles you already own.</p><ul class="mmg-grid"></ul><p class="mmg-empty">No retired mats from that brand.</p></section>' if retired else ''
-JS = r"""(function(){var r=document.currentScript.parentNode,R=JSON.parse(r.querySelector('script[type="application/json"]').textContent),B='https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@__C__/assets/mats/gallery/',f='all',br='',hr=true,LD=__LEAD__;
+JS = r"""(function(){var r=document.currentScript.parentNode,R=JSON.parse(r.querySelector('script[type="application/json"]').textContent),B='https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@__C__/assets/mats/gallery/',f='all',br='',hr=true,LD=__LEAD__,TL=__TAIL__,IB=__IB__;
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-function card(x,i){var shop=x[3]?'<a class="mmg-shop" href="'+esc(x[3])+'" target="_blank" rel="sponsored noopener">Shop the mat</a>':(x[4]?'<span class="mmg-ret">Retired</span>':(x[7]?'<span class="mmg-watch">One to watch</span>':''));var img='<img src="'+B+x[0]+'.webp" alt="'+esc(x[2]+' '+x[1])+' mahjong mat" loading="lazy" decoding="async" width="640" height="640">';return '<li class="mmg-card" data-b="'+esc(x[2])+'" data-i="'+i+'"'+(x[4]?' data-r="1"':'')+'>'+(x[3]?'<a class="mmg-img" href="'+esc(x[3])+'" target="_blank" rel="sponsored noopener">'+img+'</a>':'<span class="mmg-img">'+img+'</span>')+'<div class="mmg-body"><span class="mmg-brand">'+esc(x[2])+'</span><span class="mmg-name">'+esc(x[1])+'</span>'+(x[6]?'<a class="mmg-code" href="'+esc(x[6])+'">'+esc(x[2])+' guide</a>':'')+shop+'</div></li>'}
-function sk(x,c){var ld=(LD[c]||[]).indexOf(x[0]);if(ld>-1)return -10+ld/100;var ms=x[2]==='Mahjong Studios'?0.5:0,sh=(100-((x[11]&&x[11][c])||0))/250;if(([x[5][0]].concat(x[9]).indexOf(c)>-1)&&x[5].indexOf(c)>-1)return ms+sh;return 1+ms+sh}/* Oct 20 22:31 + 22:45 rule: Tiffany's lead mats first, then primaries by measured share of the colour (high to low), then every secondary (also + accent) by share; no measurement = 0; Mahjong Studios last within each tier */
+function card(x,i){var shop=x[3]?'<a class="mmg-shop" href="'+esc(x[3])+'" target="_blank" rel="sponsored noopener">Shop the mat</a>':(x[4]?'<span class="mmg-ret">Retired</span>':(x[7]?'<span class="mmg-watch">One to watch</span>':''));var img='<img src="'+(IB[x[0]]?B.replace(/@[0-9a-f]+\//,'@'+IB[x[0]]+'/'):B)+x[0]+'.webp" alt="'+esc(x[2]+' '+x[1])+' mahjong mat" loading="lazy" decoding="async" width="640" height="640">';return '<li class="mmg-card" data-b="'+esc(x[2])+'" data-i="'+i+'"'+(x[4]?' data-r="1"':'')+'>'+(x[3]?'<a class="mmg-img" href="'+esc(x[3])+'" target="_blank" rel="sponsored noopener">'+img+'</a>':'<span class="mmg-img">'+img+'</span>')+'<div class="mmg-body"><span class="mmg-brand">'+esc(x[2])+'</span><span class="mmg-name">'+esc(x[1])+'</span>'+(x[6]?'<a class="mmg-code" href="'+esc(x[6])+'">'+esc(x[2])+' guide</a>':'')+shop+'</div></li>'}
+function sk(x,c){var ld=(LD[c]||[]).indexOf(x[0]);if(ld>-1)return -10+ld/100;var tl=(TL[c]||[]).indexOf(x[0]);if(tl>-1)return 5+tl/100;var ms=x[2]==='Mahjong Studios'?0.5:0,sh=(100-((x[11]&&x[11][c])||0))/250;if(([x[5][0]].concat(x[9]).indexOf(c)>-1)&&x[5].indexOf(c)>-1)return ms+sh;return 1+ms+sh}/* Oct 20 22:31 + 22:45 rule: Tiffany's lead mats first, then primaries by measured share of the colour (high to low), then every secondary (also + accent) by share; no measurement = 0; Mahjong Studios last within each tier */
 function has(x,c,m){return x[5].indexOf(c)>-1||x[8].indexOf(c)>-1||(m&&x[10]&&x[10].indexOf(c)>-1)}function tier(x,C){var pr=[x[5][0]].concat(x[9]);if(C.some(function(c){return pr.indexOf(c)>-1})&&C.every(function(c){return x[5].indexOf(c)>-1}))return 0;if(C.every(function(c){return x[5].indexOf(c)>-1})){var p=0;C.forEach(function(c){p=Math.max(p,x[5].indexOf(c))});return 1+Math.min(p-1,3)/10}return 2}
 r.querySelectorAll('.mmg-sec').forEach(function(s){var c=s.dataset.c,h='';var L=[];R.forEach(function(x,i){if(c==='retired'?x[4]:has(x,c))L.push(i)});L.sort(function(a,b){function k(i){var x=R[i];return c==='retired'?(x[2]==='Mahjong Studios'?0.5:0):sk(x,c)}return k(a)-k(b)||a-b});L.forEach(function(i){h+=card(R[i],i)});s.querySelector('.mmg-grid').innerHTML=h});
 var chips=r.querySelectorAll('.mmg-chip[data-f]'),tog=r.querySelector('.mmg-tog'),sel=r.querySelector('.mmg-brand-sel'),tot=r.querySelector('.mmg-total'),cmb=r.querySelector('.mmg-combo'),S=[],LB={};
@@ -555,7 +591,7 @@ function go(){var seen={},all=0,f=S.length===1?S[0]:(S.length?'':'all');chips.fo
 if(S.length>1){r.querySelectorAll('.mmg-sec').forEach(function(s){s.hidden=true});cmb.hidden=false;var n=combo();tot.textContent=n+(n===1?' mat':' mats');return}
 cmb.hidden=true;cmb.querySelector('.mmg-grid').innerHTML='';
 r.querySelectorAll('.mmg-sec').forEach(function(s){var c=s.dataset.c,on=f==='all'||c===f,n=0;s.hidden=!on;if(!on)return;s.querySelectorAll('.mmg-card').forEach(function(d){var ok=(!br||d.dataset.b===br)&&!(hr&&c!=='retired'&&d.dataset.r);d.hidden=!ok;if(ok){n++;if(!seen[d.dataset.i]){seen[d.dataset.i]=1;all++}}});s.querySelector('.mmg-empty').style.display=n?'none':'block';if(!n&&f==='all')s.hidden=true});tot.textContent=all+(all===1?' mat':' mats')}
-chips.forEach(function(x){x.addEventListener('click',function(){var c=x.dataset.f,i=S.indexOf(c);if(c==='all'){S=[]}else if(c==='retired'){S=i>-1?[]:['retired']}else{S=S.filter(function(v){return v!=='retired'});i=S.indexOf(c);if(i>-1)S.splice(i,1);else S.push(c)}go()})});tog.addEventListener('click',function(){hr=!hr;go()});sel.addEventListener('change',function(){br=sel.value;go()});go()})();""".replace('__C__', COMMIT).replace('__LEAD__', json.dumps(LEAD))
+chips.forEach(function(x){x.addEventListener('click',function(){var c=x.dataset.f,i=S.indexOf(c);if(c==='all'){S=[]}else if(c==='retired'){S=i>-1?[]:['retired']}else{S=S.filter(function(v){return v!=='retired'});i=S.indexOf(c);if(i>-1)S.splice(i,1);else S.push(c)}go()})});tog.addEventListener('click',function(){hr=!hr;go()});sel.addEventListener('change',function(){br=sel.value;go()});go()})();""".replace('__C__', COMMIT).replace('__LEAD__', json.dumps(LEAD)).replace('__TAIL__', json.dumps(TAIL)).replace('__IB__', json.dumps(IMGB))
 print(f"""<style>{CSS}</style>
 <div class="mmg"><span class="mmg-eyebrow">The Mat Library</span>
 <h1 class="mmg-title">Mahjong Mats by Color</h1>

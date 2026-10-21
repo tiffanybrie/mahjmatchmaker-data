@@ -1,0 +1,1439 @@
+{
+ "by": "claude (album audit, Oct 20)",
+ "about": "Album membership for the combo-only album-colour hint (late-calls combo_only, item J). album_sets: gallery img -> live album pages (regular cards, holiday cards excluded) it appears on, scraped Oct 20 (site/livepatch/matgallery/album_combo_audit_oct20.*). set_colors: each set's colours from that audit (tile-tones.json Tiffany dominant + Tile Edit captions + measured tile palette). build_v5.py adds a set colour to a mat's combo-only list only if the photo measures >= combo_only.min_pct of it (blue+teal pooled).",
+ "set_colors": {
+  "amara": [
+   "red",
+   "pink"
+  ],
+  "birdie": [
+   "blue",
+   "green"
+  ],
+  "coquette": [
+   "pink",
+   "blue",
+   "purple"
+  ],
+  "cypress-forest": [
+   "earthy",
+   "green"
+  ],
+  "dandy": [
+   "pink",
+   "purple"
+  ],
+  "drake": [
+   "green",
+   "earthy"
+  ],
+  "emerald": [
+   "green",
+   "pink"
+  ],
+  "gatsby": [
+   "blue",
+   "dark"
+  ],
+  "gemma": [
+   "purple",
+   "green"
+  ],
+  "glitterville": [
+   "pink",
+   "purple",
+   "red"
+  ],
+  "glow-wild": [
+   "pink",
+   "green",
+   "red"
+  ],
+  "heritage-2-0": [
+   "earthy",
+   "green"
+  ],
+  "heritage": [
+   "earthy",
+   "neutral"
+  ],
+  "jade": [
+   "green",
+   "teal",
+   "purple"
+  ],
+  "jasmine": [
+   "green",
+   "dark"
+  ],
+  "la-fete": [
+   "pink",
+   "red",
+   "green"
+  ],
+  "lagoon": [
+   "teal",
+   "pink",
+   "blue"
+  ],
+  "limoncello": [
+   "yellow",
+   "green"
+  ],
+  "lola": [
+   "blue",
+   "green"
+  ],
+  "luminaire": [
+   "purple",
+   "pink",
+   "blue"
+  ],
+  "malachite": [
+   "green",
+   "red",
+   "pink"
+  ],
+  "moonlight": [
+   "blue",
+   "green"
+  ],
+  "nantucket": [
+   "red",
+   "blue",
+   "green"
+  ],
+  "osler": [
+   "blue",
+   "red"
+  ],
+  "palm-royale": [
+   "green",
+   "yellow"
+  ],
+  "pearlescent": [
+   "neutral",
+   "pink"
+  ],
+  "pippa": [
+   "yellow",
+   "pink",
+   "green"
+  ],
+  "seabreeze": [
+   "teal",
+   "pink",
+   "blue"
+  ],
+  "sierra": [
+   "orange",
+   "earthy"
+  ],
+  "smith": [
+   "earthy",
+   "blue"
+  ],
+  "solara": [
+   "yellow",
+   "pink",
+   "orange"
+  ],
+  "sorbet": [
+   "yellow",
+   "orange"
+  ],
+  "sunset": [
+   "orange",
+   "pink",
+   "red"
+  ],
+  "talulah": [
+   "neutral",
+   "teal",
+   "pink"
+  ],
+  "taylor": [
+   "purple",
+   "neutral"
+  ],
+  "tortoise": [
+   "earthy",
+   "neutral"
+  ],
+  "willow": [
+   "green",
+   "blue"
+  ]
+ },
+ "album_sets": {
+  "amanda-toppe--blue-willow": [
+   "coquette"
+  ],
+  "amanda-toppe--hydrangea-bliss": [
+   "coquette",
+   "drake",
+   "heritage-2-0",
+   "heritage",
+   "willow"
+  ],
+  "amanda-toppe--limelight": [
+   "coquette"
+  ],
+  "amanda-toppe--petalwood": [
+   "coquette",
+   "heritage-2-0",
+   "heritage",
+   "malachite",
+   "willow"
+  ],
+  "amanda-toppe--pink-orchids": [
+   "coquette"
+  ],
+  "amanda-toppe--pink-winds": [
+   "coquette",
+   "jade",
+   "lagoon"
+  ],
+  "amanda-toppe--serenity": [
+   "coquette",
+   "jade"
+  ],
+  "amanda-toppe--sparrow-s-nest": [
+   "coquette",
+   "jade",
+   "willow"
+  ],
+  "anders-ruff--bams-bubbly": [
+   "coquette"
+  ],
+  "anders-ruff--garden-hydrangea": [
+   "coquette"
+  ],
+  "anders-ruff--house-of-hydrangea": [
+   "coquette"
+  ],
+  "bam-bird-boutique--bandana-blue-pink-accents": [
+   "coquette"
+  ],
+  "bam-bird-boutique--boots-bubbles-in-periwinkle": [
+   "coquette"
+  ],
+  "bam-bird-boutique--vegan-leather-caramel": [
+   "drake",
+   "tortoise"
+  ],
+  "bam-bird-boutique--vintage-plum": [
+   "coquette"
+  ],
+  "bam-let-s-mahjong--cottage-bloom-mahjong-mat-blue-floral-american-mahjong-mat": [
+   "moonlight"
+  ],
+  "bam-let-s-mahjong--garden-party-mahjong-mat": [
+   "coquette"
+  ],
+  "bam-let-s-mahjong--palm-court-mahjong-mat": [
+   "amara"
+  ],
+  "bam-let-s-mahjong--posy-pop-watercolor-floral-mahjong-mat": [
+   "amara",
+   "dandy",
+   "la-fete",
+   "pippa",
+   "seabreeze",
+   "sorbet"
+  ],
+  "bam-let-s-mahjong--secret-garden-mahjong-mat-watercolor-floral-mahjong-mat": [
+   "jade",
+   "la-fete",
+   "limoncello",
+   "luminaire",
+   "pearlescent",
+   "pippa",
+   "taylor"
+  ],
+  "bespoke-mahjong--cheetah-couture": [
+   "sunset"
+  ],
+  "bespoke-mahjong--cranes-and-clouds": [
+   "lagoon"
+  ],
+  "bespoke-mahjong--flirty-leopards-mint-julep": [
+   "seabreeze",
+   "talulah"
+  ],
+  "bespoke-mahjong--jungle-hot-pink": [
+   "glow-wild",
+   "lagoon"
+  ],
+  "bespoke-mahjong--jungle-turquoise": [
+   "drake",
+   "glow-wild",
+   "heritage-2-0",
+   "heritage",
+   "malachite",
+   "tortoise",
+   "willow"
+  ],
+  "bespoke-mahjong--lucky-charms-watercolor": [
+   "glow-wild",
+   "lagoon"
+  ],
+  "bespoke-mahjong--preppy-pink-garden-mat": [
+   "dandy",
+   "gemma",
+   "sorbet"
+  ],
+  "bespoke-mahjong--tartan-plaid-in-preppy-pink": [
+   "coquette"
+  ],
+  "bespoke-mahjong--vintage-floral-mat": [
+   "drake",
+   "heritage-2-0",
+   "heritage",
+   "malachite",
+   "tortoise"
+  ],
+  "bespoke-mahjong--yotd-black": [
+   "drake",
+   "glow-wild",
+   "lagoon",
+   "malachite",
+   "tortoise"
+  ],
+  "bespoke-mahjong--yotd-periwinkle": [
+   "drake",
+   "lagoon",
+   "malachite",
+   "solara",
+   "willow"
+  ],
+  "bespoke-mahjong--yotd-pink": [
+   "malachite"
+  ],
+  "bespoke-mahjong--yotd-plum": [
+   "lagoon",
+   "malachite"
+  ],
+  "bird-bamboo--danay": [
+   "coquette"
+  ],
+  "bird-bamboo--jubilee-bloom": [
+   "lagoon"
+  ],
+  "bird-bamboo--the-dahlia": [
+   "jasmine",
+   "seabreeze"
+  ],
+  "bird-bamboo--the-paradise-passion-pink": [
+   "glow-wild",
+   "lagoon"
+  ],
+  "birdsong-mahjong--heaven-scent": [
+   "drake",
+   "heritage-2-0",
+   "heritage",
+   "malachite",
+   "willow"
+  ],
+  "britt-mills--aria": [
+   "glow-wild",
+   "lagoon",
+   "seabreeze"
+  ],
+  "britt-mills--bella": [
+   "cypress-forest",
+   "gatsby"
+  ],
+  "britt-mills--colorful-chinoiserie": [
+   "amara",
+   "jade",
+   "seabreeze",
+   "solara",
+   "tortoise"
+  ],
+  "britt-mills--crimson-harvest": [
+   "cypress-forest",
+   "gatsby"
+  ],
+  "britt-mills--dabney": [
+   "osler"
+  ],
+  "britt-mills--flora": [
+   "seabreeze"
+  ],
+  "britt-mills--glory": [
+   "osler"
+  ],
+  "britt-mills--haven": [
+   "willow"
+  ],
+  "britt-mills--heiress": [
+   "cypress-forest",
+   "gatsby",
+   "glow-wild",
+   "solara"
+  ],
+  "britt-mills--huntley": [
+   "osler"
+  ],
+  "britt-mills--knox": [
+   "cypress-forest",
+   "gatsby"
+  ],
+  "britt-mills--legacy": [
+   "cypress-forest",
+   "gatsby",
+   "heritage-2-0",
+   "heritage",
+   "malachite",
+   "tortoise",
+   "willow"
+  ],
+  "britt-mills--merrywood": [
+   "cypress-forest",
+   "gatsby"
+  ],
+  "britt-mills--peacock-garden": [
+   "osler"
+  ],
+  "britt-mills--reba": [
+   "seabreeze",
+   "talulah"
+  ],
+  "britt-mills--ruby": [
+   "talulah"
+  ],
+  "britt-mills--savannah": [
+   "cypress-forest",
+   "gatsby"
+  ],
+  "britt-mills--tova": [
+   "coquette"
+  ],
+  "britt-mills--veranda": [
+   "coquette",
+   "willow"
+  ],
+  "britt-mills--viola": [
+   "coquette",
+   "talulah"
+  ],
+  "britt-mills--walk-in-the-park": [
+   "drake",
+   "heritage-2-0",
+   "heritage",
+   "jade",
+   "solara"
+  ],
+  "britt-mills--willow": [
+   "seabreeze"
+  ],
+  "britt-mills--wren": [
+   "talulah"
+  ],
+  "charleston-mahjong-club--brown-vegan-leather": [
+   "cypress-forest",
+   "gatsby",
+   "smith"
+  ],
+  "charleston-mahjong-club--cabana-club": [
+   "amara"
+  ],
+  "charleston-mahjong-club--migration-in-pink-light-blue": [
+   "coquette"
+  ],
+  "charleston-mahjong-club--the-club-mat-blue-green-stripe": [
+   "seabreeze"
+  ],
+  "charleston-mahjong-club--the-hunt-club": [
+   "cypress-forest",
+   "drake",
+   "gatsby",
+   "heritage-2-0",
+   "heritage",
+   "malachite",
+   "smith",
+   "willow"
+  ],
+  "hutch-nook--blue-cowboy-boot": [
+   "seabreeze"
+  ],
+  "hutch-nook--songbird-bloom": [
+   "solara",
+   "willow"
+  ],
+  "isabel-harte--bamboo-dragon": [
+   "glow-wild"
+  ],
+  "loveshackfancy--fleur": [
+   "coquette"
+  ],
+  "mahj-mood--pink-lemonade": [
+   "coquette"
+  ],
+  "mahj-mood--rally-in-pink": [
+   "amara",
+   "coquette",
+   "pearlescent"
+  ],
+  "mahj-moon--amalfi-soleil": [
+   "pippa"
+  ],
+  "mahj-moon--blue-floral-bird-american": [
+   "osler"
+  ],
+  "mahj-moon--blue-heritage-toile": [
+   "osler"
+  ],
+  "mahj-moon--blue-koi-chinoiserie": [
+   "osler"
+  ],
+  "mahj-moon--citrus-chinoiserie": [
+   "solara"
+  ],
+  "mahj-moon--equestrian-estate": [
+   "osler"
+  ],
+  "mahj-moon--grand-garden-estate": [
+   "solara"
+  ],
+  "mahj-moon--pink-citrus": [
+   "pippa"
+  ],
+  "mahj-squad--palm-springs": [
+   "amara",
+   "glow-wild"
+  ],
+  "mahj-squad--pink-floral-chinoiserie": [
+   "dandy",
+   "glow-wild",
+   "la-fete",
+   "pearlescent",
+   "seabreeze"
+  ],
+  "mahj-tile-haus--coral-coast": [
+   "seabreeze"
+  ],
+  "mahj-tile-haus--palm-royale": [
+   "solara"
+  ],
+  "mahj-tile-haus--sunwashed-citrus": [
+   "pippa"
+  ],
+  "mahj-tile-haus--white-lotus": [
+   "solara",
+   "talulah",
+   "willow"
+  ],
+  "mahj-vine--caroline-in-peacock": [
+   "glow-wild"
+  ],
+  "mahj-vine--chinoiserie-blue-and-green": [
+   "jade",
+   "solara"
+  ],
+  "mahj-vine--chinoiserie-elephant": [
+   "solara"
+  ],
+  "mahj-vine--chinoiserie-songbird": [
+   "amara",
+   "dandy",
+   "glow-wild"
+  ],
+  "mahj-vine--watercolor-blooms": [
+   "amara",
+   "lagoon"
+  ],
+  "mahj-vine--zesty-plume": [
+   "jade"
+  ],
+  "mahjong-moxie--duck-camp": [
+   "cypress-forest",
+   "gatsby",
+   "heritage-2-0",
+   "smith"
+  ],
+  "mahjong-row-co--autumn-saffron": [
+   "cypress-forest",
+   "gatsby",
+   "heritage-2-0"
+  ],
+  "mahjong-row-co--ivy-reverie": [
+   "cypress-forest",
+   "gatsby",
+   "heritage-2-0",
+   "smith"
+  ],
+  "mahjong-row-co--marigold": [
+   "cypress-forest",
+   "gatsby"
+  ],
+  "mahjong-row-co--midnight-garden": [
+   "cypress-forest",
+   "gatsby",
+   "heritage-2-0"
+  ],
+  "mahjong-row-co--mocha-bloom": [
+   "cypress-forest",
+   "gatsby",
+   "heritage-2-0"
+  ],
+  "mahjong-row-co--mocha-bloom-lt": [
+   "heritage-2-0"
+  ],
+  "mahjong-row-co--osmanthus-grove": [
+   "heritage-2-0",
+   "willow"
+  ],
+  "mahjong-row-co--spring-awakening-p": [
+   "heritage-2-0",
+   "osler"
+  ],
+  "mahjong-row-co--spring-awakening-warm-honey": [
+   "cypress-forest",
+   "gatsby",
+   "smith"
+  ],
+  "middle-main-mahjong--fruit-stand": [
+   "pippa",
+   "solara"
+  ],
+  "middle-main-mahjong--june-bride": [
+   "willow"
+  ],
+  "middle-main-mahjong--martha-mae-vintage-quilt": [
+   "coquette"
+  ],
+  "middle-main-mahjong--violet-vines-wisteria": [
+   "coquette"
+  ],
+  "miss-mahjong--canopy-palm": [
+   "jade"
+  ],
+  "miss-mahjong--cherry-blossom-jade": [
+   "amara",
+   "jade",
+   "lagoon"
+  ],
+  "miss-mahjong--cherry-blossom-malachite": [
+   "malachite",
+   "willow"
+  ],
+  "miss-mahjong--festival-malachite": [
+   "malachite",
+   "willow"
+  ],
+  "miss-mahjong--hydrangea": [
+   "drake",
+   "heritage-2-0",
+   "heritage",
+   "willow"
+  ],
+  "miss-mahjong--lattice": [
+   "coquette"
+  ],
+  "miss-mahjong--oasis": [
+   "jade"
+  ],
+  "miss-mahjong--powder-blue-garden-party": [
+   "coquette"
+  ],
+  "my-fair-mahjong--mahjong-mat-laugh-lines-33-x-33": [
+   "seabreeze"
+  ],
+  "oh-my-mahjong--amethyst-retired": [
+   "emerald",
+   "gemma",
+   "glow-wild",
+   "lagoon",
+   "moonlight"
+  ],
+  "oh-my-mahjong--anastasia": [
+   "amara",
+   "coquette",
+   "dandy",
+   "glitterville",
+   "glow-wild",
+   "la-fete",
+   "pearlescent",
+   "seabreeze",
+   "solara",
+   "sorbet",
+   "talulah",
+   "taylor"
+  ],
+  "oh-my-mahjong--astor": [
+   "dandy",
+   "gatsby",
+   "gemma",
+   "heritage-2-0",
+   "heritage",
+   "lagoon",
+   "lola",
+   "luminaire",
+   "moonlight",
+   "pearlescent",
+   "sierra",
+   "solara",
+   "taylor",
+   "tortoise"
+  ],
+  "oh-my-mahjong--birdie-green-retired": [
+   "amara",
+   "birdie",
+   "coquette",
+   "dandy",
+   "glitterville",
+   "jade",
+   "la-fete",
+   "lagoon",
+   "lola",
+   "moonlight"
+  ],
+  "oh-my-mahjong--birdie-pink-retired": [
+   "amara",
+   "la-fete"
+  ],
+  "oh-my-mahjong--camellia-retired": [
+   "amara",
+   "coquette",
+   "dandy",
+   "emerald",
+   "glitterville",
+   "glow-wild",
+   "heritage-2-0",
+   "heritage",
+   "jade",
+   "luminaire",
+   "malachite",
+   "nantucket",
+   "palm-royale",
+   "taylor"
+  ],
+  "oh-my-mahjong--capri-retired": [
+   "coquette",
+   "heritage-2-0",
+   "heritage",
+   "jade",
+   "limoncello",
+   "luminaire",
+   "palm-royale",
+   "pearlescent",
+   "pippa",
+   "solara",
+   "sorbet",
+   "tortoise"
+  ],
+  "oh-my-mahjong--chantilly": [
+   "birdie",
+   "coquette",
+   "gemma",
+   "lola",
+   "luminaire",
+   "moonlight",
+   "seabreeze",
+   "smith",
+   "talulah",
+   "taylor",
+   "willow"
+  ],
+  "oh-my-mahjong--citrus-songbird-retired": [
+   "amara",
+   "birdie",
+   "coquette",
+   "emerald",
+   "glow-wild",
+   "heritage-2-0",
+   "heritage",
+   "jade",
+   "la-fete",
+   "lagoon",
+   "limoncello",
+   "palm-royale",
+   "pearlescent",
+   "pippa",
+   "sierra",
+   "solara",
+   "sorbet",
+   "tortoise",
+   "willow"
+  ],
+  "oh-my-mahjong--cognac": [
+   "cypress-forest",
+   "drake",
+   "gatsby",
+   "heritage-2-0",
+   "heritage",
+   "jade",
+   "malachite",
+   "sierra",
+   "smith"
+  ],
+  "oh-my-mahjong--dapper-1-retired": [
+   "cypress-forest",
+   "drake",
+   "gatsby",
+   "heritage-2-0",
+   "heritage",
+   "malachite",
+   "sierra",
+   "smith",
+   "tortoise"
+  ],
+  "oh-my-mahjong--darjeeling": [
+   "cypress-forest",
+   "dandy",
+   "drake",
+   "gatsby",
+   "glow-wild",
+   "heritage-2-0",
+   "heritage",
+   "lola",
+   "malachite",
+   "nantucket",
+   "sierra",
+   "smith",
+   "tortoise",
+   "willow"
+  ],
+  "oh-my-mahjong--delilah": [
+   "dandy",
+   "gemma",
+   "glitterville",
+   "lagoon",
+   "nantucket",
+   "pippa",
+   "solara",
+   "sunset",
+   "tortoise"
+  ],
+  "oh-my-mahjong--elysium": [
+   "amara",
+   "birdie",
+   "drake",
+   "emerald",
+   "gatsby",
+   "gemma",
+   "glow-wild",
+   "heritage-2-0",
+   "heritage",
+   "jade",
+   "jasmine",
+   "la-fete",
+   "lagoon",
+   "lola",
+   "malachite",
+   "moonlight",
+   "tortoise"
+  ],
+  "oh-my-mahjong--enchanted-retired": [
+   "amara",
+   "dandy",
+   "emerald",
+   "glitterville",
+   "glow-wild",
+   "jasmine",
+   "lola",
+   "moonlight",
+   "palm-royale",
+   "pearlescent",
+   "sunset",
+   "tortoise"
+  ],
+  "oh-my-mahjong--esme": [
+   "emerald",
+   "glow-wild",
+   "lagoon",
+   "seabreeze",
+   "talulah",
+   "tortoise"
+  ],
+  "oh-my-mahjong--garden-party-retired": [
+   "coquette",
+   "limoncello",
+   "luminaire",
+   "taylor"
+  ],
+  "oh-my-mahjong--glitterville-dragon-retired": [
+   "glitterville"
+  ],
+  "oh-my-mahjong--goldie-retired": [
+   "amara",
+   "coquette",
+   "glow-wild",
+   "luminaire",
+   "pearlescent",
+   "pippa",
+   "solara",
+   "sunset",
+   "talulah",
+   "taylor",
+   "tortoise"
+  ],
+  "oh-my-mahjong--hampton": [
+   "birdie",
+   "jade",
+   "jasmine",
+   "la-fete",
+   "lagoon",
+   "limoncello",
+   "palm-royale",
+   "pippa",
+   "sorbet"
+  ],
+  "oh-my-mahjong--hawthorne": [
+   "drake",
+   "gatsby",
+   "heritage-2-0",
+   "heritage",
+   "jade",
+   "lola",
+   "malachite",
+   "osler",
+   "sierra",
+   "smith",
+   "tortoise"
+  ],
+  "oh-my-mahjong--heron": [
+   "birdie",
+   "coquette",
+   "gatsby",
+   "jade",
+   "la-fete",
+   "luminaire",
+   "moonlight",
+   "pearlescent",
+   "solara",
+   "talulah",
+   "willow"
+  ],
+  "oh-my-mahjong--imperial-retired": [
+   "amara",
+   "heritage-2-0",
+   "heritage",
+   "jade",
+   "limoncello",
+   "palm-royale",
+   "pearlescent",
+   "pippa",
+   "solara",
+   "sorbet"
+  ],
+  "oh-my-mahjong--isla": [
+   "birdie",
+   "coquette",
+   "emerald",
+   "gatsby",
+   "glow-wild",
+   "heritage-2-0",
+   "heritage",
+   "jade",
+   "jasmine",
+   "lagoon",
+   "moonlight",
+   "palm-royale",
+   "seabreeze",
+   "sierra",
+   "smith",
+   "solara",
+   "talulah",
+   "tortoise",
+   "willow"
+  ],
+  "oh-my-mahjong--jade": [
+   "birdie",
+   "coquette",
+   "cypress-forest",
+   "dandy",
+   "emerald",
+   "gatsby",
+   "glitterville",
+   "glow-wild",
+   "heritage-2-0",
+   "heritage",
+   "jade",
+   "la-fete",
+   "lagoon",
+   "lola",
+   "luminaire",
+   "moonlight",
+   "palm-royale",
+   "pearlescent",
+   "solara",
+   "taylor",
+   "tortoise",
+   "willow"
+  ],
+  "oh-my-mahjong--ky-derby-retired": [
+   "amara",
+   "birdie",
+   "cypress-forest",
+   "gatsby",
+   "heritage-2-0",
+   "heritage",
+   "jade",
+   "jasmine",
+   "la-fete",
+   "lola",
+   "malachite",
+   "moonlight",
+   "smith",
+   "tortoise"
+  ],
+  "oh-my-mahjong--la-fete-retired": [
+   "la-fete"
+  ],
+  "oh-my-mahjong--liberty": [
+   "gatsby",
+   "heritage-2-0",
+   "heritage",
+   "malachite",
+   "nantucket",
+   "osler",
+   "smith"
+  ],
+  "oh-my-mahjong--lorelei": [
+   "amara",
+   "birdie",
+   "dandy",
+   "emerald",
+   "gatsby",
+   "glitterville",
+   "glow-wild",
+   "jade",
+   "lagoon",
+   "lola",
+   "moonlight",
+   "palm-royale",
+   "pearlescent",
+   "seabreeze",
+   "talulah",
+   "tortoise"
+  ],
+  "oh-my-mahjong--luna": [
+   "birdie",
+   "coquette",
+   "gatsby",
+   "heritage-2-0",
+   "heritage",
+   "lola",
+   "moonlight",
+   "osler",
+   "sierra",
+   "smith"
+  ],
+  "oh-my-mahjong--mirage-retired": [
+   "amara",
+   "dandy",
+   "emerald",
+   "gemma",
+   "glitterville",
+   "glow-wild",
+   "lagoon",
+   "malachite",
+   "nantucket",
+   "pearlescent",
+   "sierra",
+   "tortoise"
+  ],
+  "oh-my-mahjong--palm-paradise-retired": [
+   "amara",
+   "gatsby",
+   "jade",
+   "jasmine",
+   "lagoon",
+   "lola",
+   "moonlight",
+   "palm-royale",
+   "pearlescent"
+  ],
+  "oh-my-mahjong--palomino": [
+   "cypress-forest",
+   "drake",
+   "gatsby",
+   "heritage-2-0",
+   "heritage",
+   "malachite",
+   "osler",
+   "sierra",
+   "smith",
+   "tortoise"
+  ],
+  "oh-my-mahjong--penelope": [
+   "dandy",
+   "gemma",
+   "glitterville",
+   "la-fete",
+   "limoncello",
+   "lola",
+   "moonlight",
+   "nantucket",
+   "pippa",
+   "seabreeze",
+   "solara",
+   "sunset",
+   "taylor"
+  ],
+  "oh-my-mahjong--peri-twinkle-retired": [
+   "coquette",
+   "luminaire",
+   "pearlescent",
+   "taylor"
+  ],
+  "oh-my-mahjong--preppy-soiree": [
+   "birdie",
+   "lola"
+  ],
+  "oh-my-mahjong--radiance": [
+   "amara",
+   "birdie",
+   "dandy",
+   "drake",
+   "gatsby",
+   "glitterville",
+   "glow-wild",
+   "heritage-2-0",
+   "heritage",
+   "la-fete",
+   "lagoon",
+   "moonlight",
+   "palm-royale",
+   "pearlescent",
+   "seabreeze",
+   "talulah",
+   "tortoise"
+  ],
+  "oh-my-mahjong--scarlett": [
+   "drake",
+   "gatsby",
+   "heritage-2-0",
+   "heritage",
+   "jade",
+   "lola",
+   "malachite",
+   "nantucket",
+   "smith",
+   "sunset",
+   "tortoise"
+  ],
+  "oh-my-mahjong--sedona": [
+   "sierra"
+  ],
+  "oh-my-mahjong--serengeti-retired": [
+   "amara",
+   "emerald",
+   "gatsby",
+   "glow-wild",
+   "jasmine",
+   "limoncello",
+   "palm-royale",
+   "pearlescent",
+   "tortoise"
+  ],
+  "oh-my-mahjong--soho-retired": [
+   "drake",
+   "emerald",
+   "gatsby",
+   "heritage-2-0",
+   "heritage",
+   "jade",
+   "malachite",
+   "sierra",
+   "smith",
+   "tortoise",
+   "willow"
+  ],
+  "oh-my-mahjong--spring-fling-retired": [
+   "amara",
+   "birdie",
+   "dandy",
+   "emerald",
+   "glitterville",
+   "glow-wild",
+   "jade",
+   "jasmine",
+   "lagoon",
+   "moonlight",
+   "palm-royale",
+   "pearlescent",
+   "pippa",
+   "solara",
+   "sorbet",
+   "sunset",
+   "tortoise"
+  ],
+  "oh-my-mahjong--sweet-marie-retired": [
+   "glitterville"
+  ],
+  "oh-my-mahjong--vanderbilt": [
+   "drake",
+   "gatsby",
+   "gemma",
+   "heritage-2-0",
+   "heritage",
+   "osler",
+   "sierra",
+   "smith"
+  ],
+  "oh-my-mahjong--veranda": [
+   "birdie",
+   "gatsby",
+   "jade",
+   "jasmine",
+   "lagoon",
+   "limoncello",
+   "lola",
+   "moonlight",
+   "pippa",
+   "seabreeze",
+   "smith",
+   "sorbet",
+   "talulah",
+   "willow"
+  ],
+  "oh-my-mahjong--vivara": [
+   "amara",
+   "coquette",
+   "dandy",
+   "emerald",
+   "gatsby",
+   "gemma",
+   "glitterville",
+   "lagoon",
+   "luminaire",
+   "moonlight",
+   "palm-royale",
+   "pearlescent",
+   "seabreeze",
+   "solara",
+   "talulah",
+   "taylor"
+  ],
+  "oh-my-mahjong--winterberry": [
+   "smith"
+  ],
+  "oh-my-mahjong--year-of-the-horse": [
+   "glow-wild",
+   "osler"
+  ],
+  "oh-my-mahjong--zen-glow-retired": [
+   "amara",
+   "dandy",
+   "glitterville",
+   "glow-wild",
+   "lagoon",
+   "limoncello",
+   "sunset",
+   "tortoise"
+  ],
+  "ozark-mah-jongg--carson-vintage": [
+   "gatsby",
+   "heritage-2-0",
+   "heritage",
+   "smith"
+  ],
+  "ozark-mahjongg--winslow-1920-navy": [
+   "drake",
+   "gatsby",
+   "heritage-2-0",
+   "heritage",
+   "malachite",
+   "smith"
+  ],
+  "rebecca-illustrated--rainbow-row": [
+   "amara",
+   "la-fete",
+   "limoncello",
+   "pearlescent",
+   "seabreeze",
+   "sorbet"
+  ],
+  "splash-of-color--asian-chinoiserie": [
+   "amara"
+  ],
+  "splash-of-color--hydrangea-blooms": [
+   "jade",
+   "lagoon",
+   "malachite"
+  ],
+  "sunday-mahjong--gaylord-premium": [
+   "willow"
+  ],
+  "sunday-mahjong--golden-gingham-premium": [
+   "drake",
+   "heritage-2-0",
+   "heritage",
+   "willow"
+  ],
+  "sunday-mahjong--rattan": [
+   "cypress-forest",
+   "drake",
+   "gatsby",
+   "heritage-2-0",
+   "heritage",
+   "smith",
+   "willow"
+  ],
+  "sweet-jojo-designs--boho-wildflower": [
+   "osler",
+   "smith"
+  ],
+  "that-mahjong-moment--evergreen": [
+   "jade",
+   "malachite",
+   "willow"
+  ],
+  "tigre-de-tartan--bunny-love": [
+   "coquette",
+   "emerald",
+   "jade",
+   "jasmine",
+   "la-fete",
+   "palm-royale",
+   "talulah",
+   "willow"
+  ],
+  "tigre-de-tartan--caned-trompe-l-oeil-natural": [
+   "cypress-forest",
+   "drake",
+   "gatsby",
+   "heritage-2-0",
+   "heritage",
+   "nantucket",
+   "palm-royale",
+   "sierra",
+   "tortoise",
+   "willow"
+  ],
+  "tigre-de-tartan--chinoiserie-denim": [
+   "birdie",
+   "heritage-2-0",
+   "heritage",
+   "lola",
+   "moonlight",
+   "osler",
+   "tortoise"
+  ],
+  "tigre-de-tartan--coconut-peony-retired": [
+   "drake",
+   "heritage-2-0",
+   "heritage"
+  ],
+  "tigre-de-tartan--domino-faded-carolina": [
+   "birdie",
+   "heritage-2-0",
+   "heritage",
+   "luminaire",
+   "moonlight",
+   "tortoise"
+  ],
+  "tigre-de-tartan--el-tigre-new-edition": [
+   "cypress-forest",
+   "gatsby",
+   "glow-wild",
+   "heritage-2-0",
+   "heritage",
+   "palm-royale",
+   "sierra",
+   "talulah",
+   "tortoise"
+  ],
+  "tigre-de-tartan--handbook-plaid": [
+   "cypress-forest",
+   "drake",
+   "gatsby",
+   "heritage-2-0",
+   "heritage",
+   "nantucket",
+   "tortoise",
+   "willow"
+  ],
+  "tigre-de-tartan--holy-mahj-retired": [
+   "drake",
+   "heritage-2-0",
+   "heritage",
+   "malachite"
+  ],
+  "tigre-de-tartan--mahjong-mat-printed-needlepoint-canvas-14-mesh-jard-n-de-los-jefes": [
+   "amara",
+   "dandy",
+   "emerald",
+   "glitterville",
+   "jade",
+   "jasmine",
+   "solara",
+   "sunset"
+  ],
+  "tigre-de-tartan--mantel-mates-w-rules": [
+   "glow-wild",
+   "heritage-2-0",
+   "heritage",
+   "nantucket",
+   "tortoise"
+  ],
+  "tigre-de-tartan--nantucket-basket": [
+   "cypress-forest",
+   "gatsby",
+   "heritage-2-0",
+   "heritage",
+   "nantucket",
+   "palm-royale",
+   "sierra",
+   "tortoise",
+   "willow"
+  ],
+  "tigre-de-tartan--plum-peony": [
+   "gatsby",
+   "gemma",
+   "heritage",
+   "lola",
+   "moonlight",
+   "tortoise"
+  ],
+  "tigre-de-tartan--pop-art-roses-retired": [
+   "heritage-2-0",
+   "heritage",
+   "tortoise"
+  ],
+  "tigre-de-tartan--queen-bee-retired": [
+   "willow"
+  ],
+  "tigre-de-tartan--strawberry-retired": [
+   "drake",
+   "heritage-2-0",
+   "heritage",
+   "malachite"
+  ],
+  "virora-mahjong--coralia": [
+   "coquette"
+  ],
+  "virora-mahjong--limoncea": [
+   "coquette",
+   "pippa"
+  ],
+  "virora-mahjong--parrotia": [
+   "coquette",
+   "talulah"
+  ],
+  "virora-mahjong--petalwing": [
+   "coquette"
+  ],
+  "wren-mats--bright-orangey": [
+   "jade"
+  ],
+  "wren-mats--green-gingham": [
+   "drake",
+   "heritage-2-0",
+   "heritage",
+   "willow"
+  ],
+  "wren-mats--palm-beach": [
+   "solara"
+  ],
+  "wren-mats--watercolor-floral": [
+   "jade",
+   "solara",
+   "tortoise"
+  ]
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "by": "tiffany-chat-2026-10-20",
+ "about": "Mats Tiffany explicitly brought into the Mat Gallery that are not in the scraped catalog (matgallery.html) or new53_rows.json. build_v5.py appends them after the new53 rows; colours come from secs here + measured accents (config/mat-accent-colors.json). img_commit = the jsDelivr commit that holds assets/mats/gallery/<img>.webp (the page's main image base is pinned to an older commit).",
+ "rows": [
+  {
+   "img": "mahj-tile-haus--imperial-lotus",
+   "key": "alb2:mahj-tile-haus-imperial-lotus",
+   "name": "Imperial Lotus",
+   "brand": "Mahj Tile Haus",
+   "url": "https://mahjtilehaus.com/products/imperial-lotus-mat",
+   "secs": ["neutral"],
+   "img_commit": "1c60f81ee0cced1b7696cce5d3786d754f322e11",
+   "note": "Tiffany Oct 20 late: allow Imperial Lotus (on her Talulah album). Photo: store's clean flat render (curl from mahjtilehaus.com, brand watermark like their other mats). Measured neutral 68.7, pink 13.1."
+  }
+ ]
+}

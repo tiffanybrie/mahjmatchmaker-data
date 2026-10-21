@@ -15237,6 +15237,27 @@
     "teal": 0.2
    },
    "src": "pixel-families"
+  },
+  "mahj-tile-haus--imperial-lotus": {
+   "accents": [
+    "neutral",
+    "pink"
+   ],
+   "major": [],
+   "shares": {
+    "blue": 3.2,
+    "earthy": 4.1,
+    "dark": 3.6,
+    "green": 1.4,
+    "neutral": 68.7,
+    "orange": 0.1,
+    "pink": 13.1,
+    "purple": 1.4,
+    "red": 4.1,
+    "teal": 0.2,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
   }
  }
 }

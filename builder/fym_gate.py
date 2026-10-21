@@ -11,12 +11,14 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
  8  colour chips (Oct 20 r3, multi-select approved): AND logic on mat-door chips + in-deck dots, tap again unselects, clear control,
     zero results show a friendly message and never lock (chips stay rendered); mt tiers line up with mf; holiday mats out of single chips
  9  non-partner lockout (CLAUDE.md): a visible mat of a non-partner brand must be allowed (builder/fym_flags/nonpartner_allow.json: brand,
-    mat key, ShopMy link) or in an album / swipe-book set's match list; brands/mats in nonpartner_pending.json only WARN
+    mat key, ShopMy link) or in an album / swipe-book set's match list; HARD FAIL for anything else (Oct 20 late: pending no longer warns)
  10 no discount-code claim for non-partner / ShopMy mats (pa false, dc empty)
  11 no set's Tiffany's-match list (m) references a hidden mat or a removed mat (config/mat-gallery-crosstags.json remove_mats imgs/brands),
     except her verified real picks in builder/fym_flags/m_hidden_ok.json (Amore Manor Garden bug, Oct 20)
  12 no Mahjong Studios mat visible in FYM or in the staged Mat Gallery (Tiffany Oct 20 22:31: tiles/racks stay, mats go); no removed
     gallery row back in site/livepatch/matgallery/matgallery-v5.html
+ 13 staged Mat Gallery (Oct 20 late): non-partner lockout hard FAIL, late-call holiday mats Holiday-only (gallery + FYM), her also/remove/floral
+    calls present, holiday_off empty, lead/tail pins match late-calls, section sort = lead > primaries by share > also+accent by share > tail
  8b colour-chip order (Oct 20 22:31/22:45): sh (measured share) lines up with mf; CSORT sorts lead > primaries by share > also+accent by share
 """
 import sys, os, json, re
@@ -148,7 +150,6 @@ W = {}
 for k, o in M.items():
     if o.get('hid') or nz(o.get('bn')) in PARTNERS: continue
     if o.get('bn') in NPA['brands'] or k in NPA['mats'] or o.get('u', '').startswith(NPA['shopmy_prefix']) or k in matched: continue
-    if o.get('bn') in NPP['brands'] or k in NPP['mats']: W.setdefault(o.get('bn'), []).append(o['n']); continue
     F.append(f"[9] non-partner mat visible without Tiffany's OK: {o['n']} ({o.get('bn')}) {k}")
 # 10. no code claim on non-partner / ShopMy mats
 for k, o in M.items():
@@ -175,6 +176,43 @@ _g = open(REPO + 'site/livepatch/matgallery/matgallery-v5.html').read()
 _G = json.loads(re.search(r'<script type="application/json">(.*?)</script>', _g, re.S).group(1).replace('<\\/', '</'))
 for r in _G:
     if r[2] in RMB or r[0] in set(XT['remove_mats'].get('imgs', [])): F.append(f"[12] removed mat in staged Mat Gallery: {r[1]} ({r[2]}) {r[0]}")
+
+# 13. staged Mat Gallery: non-partner lockout (hard FAIL), late-call holiday mats Holiday-only, lead/tail pins + sort rule (Oct 20 late)
+LATE = json.load(open(REPO + 'config/tiffany-color-notes/2026-10-20-late-calls.json'))
+_N53 = json.load(open(REPO + 'site/livepatch/matgallery/new53_rows.json'))['manifest']
+_RA = {a['gallery_id']: a['fym_key'] for a in json.load(open(REPO + 'site/livepatch/matgallery/retired_additions_oct20.json'))}
+_RA.update({a['img']: a['key'] for a in json.load(open(REPO + 'config/mat-gallery-extra-rows.json'))['rows']})
+GKEY = lambda img: MAN.get(img) or _N53.get(img) or _RA.get(img)
+for r in _G:
+    k = GKEY(r[0])
+    if nz(r[2]) in PARTNERS or r[2] in NPA['brands'] or k in NPA['mats'] or (r[3] or '').startswith(NPA['shopmy_prefix']) or k in matched: continue
+    if r[4] and k in M and M[k].get('rt'): pass
+    F.append(f"[13] non-partner mat in staged Mat Gallery without Tiffany's OK: {r[1]} ({r[2]}) {r[0]}")
+GR = {r[0]: r for r in _G}
+for c in LATE['corrections']:
+    r = GR.get(c['img'])
+    if c.get('primary') == 'holiday':
+        if r is not None and r[5] != ['holiday']: F.append(f"[13] holiday mat {r[1]} is in colour sections {r[5]} (late-calls: Holiday only)")
+        k = GKEY(c['img'])
+        if k in M and not M[k].get('hid') and (M[k].get('mf') or not M[k].get('hol')): F.append(f"[13] holiday mat {M[k]['n']} in FYM single-colour chips {M[k].get('mf')} / hol={M[k].get('hol')}")
+    elif r is not None:
+        for a in c.get('also', []):
+            if a not in r[5]: F.append(f"[13] {r[1]}: Tiffany's also-colour {a} missing (sections {r[5]})")
+        for a in c.get('remove', []):
+            if a in r[5] or a in r[8] or a in (r[10] or []): F.append(f"[13] {r[1]}: colour {a} she removed is back")
+        if c.get('floral') is False and 'florals' in r[5]: F.append(f"[13] {r[1]}: in Multicolor Florals (late-calls floral:false)")
+if any(k_ != 'note' for k_ in XT.get('holiday_off', {})): F.append("[13] crosstags holiday_off is not empty (Tiffany Oct 20: holiday stays in Holiday)")
+_lt = re.search(r'LD=(\{.*?\}),TL=(\{.*?\}),IB=', _g)
+if not _lt or json.loads(_lt.group(1)) != LATE.get('lead', {}) or json.loads(_lt.group(2)) != LATE.get('tail', {}):
+    F.append("[13] gallery lead/tail pins differ from late-calls lead/tail")
+for sec_, imgs_ in list(LATE.get('lead', {}).items()) + list(LATE.get('tail', {}).items()):
+    for img_ in imgs_:
+        r = GR.get(img_)
+        if r is not None and sec_ not in r[5] and sec_ not in r[8]: F.append(f"[13] pinned mat {r[1]} is not in section {sec_}")
+SKJS = "function sk(x,c){var ld=(LD[c]||[]).indexOf(x[0]);if(ld>-1)return -10+ld/100;var tl=(TL[c]||[]).indexOf(x[0]);if(tl>-1)return 5+tl/100;"
+if SKJS not in _g or "sh=(100-((x[11]&&x[11][c])||0))/250" not in _g or "return 1+ms+sh}" not in _g:
+    F.append("[13] gallery section sort is not lead > primaries by measured share > also+accent by share > tail (sk)")
+if D.get('lead', {}).get('green') != [GKEY(i) for i in LATE['lead']['green']]: F.append("[13] FYM D.lead.green differs from late-calls lead.green")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")

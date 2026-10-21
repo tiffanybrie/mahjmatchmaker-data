@@ -333,6 +333,78 @@
     "yellow"
    ],
    "note": "Tiffany Oct 20 22:42: has yellow; Yellow & Mustard is an also-colour (her call overrides measurement). Sorted by measured yellow share."
+  },
+  {
+   "brand": "Sunday Mahjong",
+   "name": "Gaylord Premium",
+   "img": "sunday-mahjong--gaylord-premium",
+   "remove": [
+    "teal"
+   ],
+   "note": "Tiffany Oct 20 late: REMOVE teal from Gaylord (green lead mat). Her call beats the measured teal 34.3%; never comes back as an also, accent or combo colour."
+  },
+  {
+   "brand": "Charleston Mahjong Club",
+   "name": "Ski Club Mat- Red Sweater Border",
+   "img": "charleston-mahjong-club--ski-club-mat-red-sweater-border",
+   "also": [
+    "blue"
+   ],
+   "note": "Tiffany Oct 20 late: add Blue as an also-colour (measured blue 4.7%; her call wins). Not a holiday mat: do not move it to Holiday."
+  },
+  {
+   "brand": "Mahjong Register",
+   "name": "Teal Rivera Leopard 33\"",
+   "img": "mahjong-register--teal-rivera-leopard-33",
+   "also": [
+    "animal"
+   ],
+   "note": "Tiffany Oct 20 late: pushed to the bottom of Teal (late-calls tail.teal); also in Animal Prints."
+  },
+  {
+   "brand": "Oh My Mahjong",
+   "name": "Mirage (retired)",
+   "img": "oh-my-mahjong--mirage-retired",
+   "also": [
+    "teal"
+   ],
+   "note": "Tiffany Oct 20 late: +Teal also-colour (she confirms the teal palm trees; the measurement swallowed them, teal 0%)."
+  },
+  {
+   "brand": "Amanda Toppe",
+   "name": "Pink Winds",
+   "img": "amanda-toppe--pink-winds",
+   "also": [
+    "pink"
+   ],
+   "note": "Tiffany Oct 20 late: +Pink also-colour (lilac-pink centre read as purple by the measurement)."
+  },
+  {
+   "brand": "Mahj & Vine",
+   "name": "Watercolor Blooms",
+   "img": "mahj-vine--watercolor-blooms",
+   "also": [
+    "pink"
+   ],
+   "note": "Tiffany Oct 20 late: +Pink also-colour (pink 11.5%, just under the 12% accent threshold)."
+  },
+  {
+   "brand": "Oh My Mahjong",
+   "name": "Esme",
+   "img": "oh-my-mahjong--esme",
+   "also": [
+    "pink"
+   ],
+   "note": "Tiffany Oct 20 late: +Pink also-colour (she says it plainly reads teal and pink; measured pink 6.5%)."
+  },
+  {
+   "brand": "Oh My Mahjong",
+   "name": "Elysium",
+   "img": "oh-my-mahjong--elysium",
+   "also": [
+    "teal"
+   ],
+   "note": "Tiffany Oct 20 late: +Teal also-colour (teal frame; measured 11.7%, and the old blanket teal strip in build_v5.py dropped it)."
   }
  ],
  "lead": {
@@ -349,9 +421,19 @@
    "sunday-mahjong--gaylord-premium",
    "tigre-de-tartan--bunny-love",
    "wren-mats--green-gingham"
+  ],
+  "teal": [
+   "betty-june-jeannette--benjamin",
+   "betty-june-jeannette--benjamin-goes-to-positano",
+   "bam-bird-boutique--mcm-geo-bloom-blue",
+   "bam-bird-boutique--mcm-mod-geo-blue-orange",
+   "bespoke-mahjong--garden-glow-mat-turquoise",
+   "bam-let-s-mahjong--bluegrass-argyle-mahjong-mat",
+   "my-fair-mahjong--mahjong-mat-garden-party-bluebell-31-x-31",
+   "my-fair-mahjong--mahjong-mat-water-s-edge-33-x-33"
   ]
  },
- "lead_note": "Tiffany Oct 20 22:45: pinned to the TOP of Green in this order (before the share-sorted primaries); each is Green primary. 'Mosaiq' Bronte Thrushcross Grange + Monet's Reflections are listed under Mahj Squad in our data.",
+ "lead_note": "Tiffany Oct 20 22:45: pinned to the TOP of Green in this order (before the share-sorted primaries); each is Green primary. 'Mosaiq' Bronte Thrushcross Grange + Monet's Reflections are listed under Mahj Squad in our data. Teal (Tiffany Oct 20 late): pinned to the top of Teal & Aqua in this order; teal is added as an also-colour if a lead mat lacks it, but its primary is NOT changed (only sections in lead_primary force the primary). 'Bam Bird Boutique MCM Geo Blue' read as 'MCM – Geo Bloom- Blue' (teal 46.9 / blue 53.1); 'Bespoke Garden Glow (the teal/blue one)' = Garden Glow Mat - Turquoise.",
  "unhold": {
   "imgs": [
    "bam-let-s-mahjong--posy-pop-watercolor-floral-mahjong-mat",
@@ -360,5 +442,24 @@
   ],
   "note": "Tiffany Oct 20 22:42: in FYM but missing from the gallery because they were on held-low-98.json (low-confidence photo hold). Back in (also added to crosstags unhold)."
  },
- "sort_rule": "Oct 20 22:31/22:45: inside every colour section (gallery) and colour chip (FYM): lead mats first (this file), then primaries sorted by measured share of that colour high to low, then every secondary (also + accent) by measured share high to low; no measurement = 0; Mahjong Studios last within each tier."
+ "sort_rule": "Oct 20 22:31/22:45 + late: inside every colour section (gallery) and colour chip (FYM): lead mats first (this file 'lead'), then primaries sorted by measured share of that colour high to low, then every secondary (also + accent merged) by measured share high to low; no measurement = 0; her 'tail' mats last of all (Teal). Mahjong Studios mats are removed everywhere (Oct 20 22:31).",
+ "lead_primary": [
+  "green"
+ ],
+ "tail": {
+  "teal": [
+   "betty-june-jeannette--luna",
+   "betty-june-jeannette--nora",
+   "let-s-be-besties--garden-lilies",
+   "mahjong-register--peony-sociale-premium",
+   "mahjong-register--teal-rivera-leopard-33",
+   "sophie-clima--custom-monogrammed-preppy",
+   "mahj-moon--tropical-island-garden"
+  ]
+ },
+ "tail_note": "Tiffany Oct 20 late: pushed to the BOTTOM of Teal & Aqua in this order (after every share-sorted mat). Mahj & Moon Tropical Island Garden is also on the Oct 20 non-partner removal list (unmatched Mahj & Moon), so it is out of the gallery; kept here in case she un-removes it. Mahj & Moon Butterfly Floral: 'keep as is' but it is likewise removed (unmatched Mahj & Moon).",
+ "combo_only": {
+  "about": "Album-colour hint (Tiffany Oct 20 late, item J): an album's set colours are a HINT for missed colours, not a rule. Each album mat gets its set's colours as COMBO-ONLY colours (row field 10, FYM 'ha'; never a single-colour section) only where the mat photo measures >= 5% of that colour (blue + teal pooled for the blue/teal test). Never added when she removed that colour for the mat (corrections 'remove'). Derived by build_v5.py from site/livepatch/matgallery/album_combo_audit_oct20.json set colours + scratch album membership, list frozen in config/mat-album-combo-colors.json.",
+  "min_pct": 5.0
+ }
 }
