@@ -111,7 +111,7 @@ async def go():
             await shot(page(f'<div style="position:absolute;left:40px;top:30px">{phone(src, 900)}</div>', w=518, h=1010), f'{TMP}/s{i}.png')
             im = Image.open(f'{TMP}/s{i}.png')
             bg = Image.new('RGBA', im.size, PAPER); bg.alpha_composite(im)
-            bg.convert('RGB').resize((240, round(im.height * 240 / im.width)), Image.LANCZOS).save(f'{EM}/step{i}.jpg', quality=70, optimize=True, progressive=True)  # QA: ~15-20 KB each
+            bg.convert('RGB').resize((240, round(im.height * 240 / im.width)), Image.LANCZOS).save(f'{EM}/step{i}.jpg', quality=62, optimize=True, progressive=True)  # QA: ~15-20 KB each
             im.resize((480, round(im.height * 480 / im.width)), Image.LANCZOS).save(f'{PG}/step{i}.webp', quality=80, method=6)
             th = title.replace('✕', '<i class=x>✕</i>').replace('♥', '<i class=h>♥</i>')
             await shot(step_head(i, th), f'{EM}/hl-step{i}.png'); q8(f'{EM}/hl-step{i}.png')
