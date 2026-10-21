@@ -474,3 +474,4 @@ Each is asked once. Until she answers, follow the default given here.
 12. **Wordmark font.** The wordmark is an image, and its typeface isn't identified in the repo. Never retype it; always use the PNG.
 
 - 2026-10-21 12:36 (Tiffany): **Never undo SEO-established wording or placement when trimming for spam.** Her style notes decide what LOOKS spammy (sections, sizes, headlines). Wording and placement that research proved (the verified line, FAQ schema, the MJTI-is-dead FAQ, the credential near the top) stay. Find a less spammy place or style for them instead of removing them. Before changing a brand page, read Project docs 07 and 39.
+- 2026-10-21 12:41 (Tiffany) — SUPERSEDES the 11:38 "(affiliate)" entry: **Social code line = "Use code MAHJMATCH to save 💕"** in every post (spelled out, double-heart emoji). **Disclosure = the #affiliate hashtag only**, in the hashtags. Never write "(affiliate)" or the word affiliate anywhere else in the caption.
