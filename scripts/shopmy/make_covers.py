@@ -25,20 +25,43 @@ CROP = {
     96210535: (0, 0, 1, 1),
     96212924: (0, 0, .80, .98),    # Sweet Jojo: drop the black bag
     96213709: (0, 0, .845, .96),       # green tropical plants: drop the black bag
-    96213996: (0, 0, .815, .88),        # beige & white floral chinoiserie: drop the black bag
+    96213996: (0, 0, .87, .95),         # beige & white floral chinoiserie (bag painted out, keeps the Greek-key border)
     96216016: (0, 0, 1, .955),        # yellow floral: drop the black bag
     96237389: (0, 0, .80, .93),        # gothic raven mat: drop the black mat bag
-    96217176: (0, .31, .70, 1),      # tortoise racks: drop the box + paisley bag
-    96217490: (0, .31, .70, 1),      # clear scalloped racks: drop the box + paisley bag
+    96214131: (0, 0, 1, .94),        # jelly tote: drop the printed '*does not include...' line
+    96127861: (.18, .22, .80, .83),  # Mahjong House tile shots: tight to the tile rows
+    96127725: (.20, .13, .80, .66),
+    96127601: (.19, .22, .75, .71),
+    96130241: (.08, .28, .80, .82),
     96229865: (0, 0, 1, .66),        # cognac leather tile bag: the big bag only
-    96222455: (0, 0, 1, .78),        # bird lamp: lose the books
+}
+# white paint-outs on the ORIGINAL image (fractions l, t, r, b), applied before CROP: boxes, bags, packaging
+PAINT = {
+    96217176: [(0, 0, .785, .295), (.76, 0, 1, .765)],   # tortoise racks: pink box + paisley bag
+    96217490: [(0, 0, .785, .26), (.765, 0, 1, .75)],    # clear racks: pink box + paisley bag
+    96213996: [(.83, 0, 1, 1)],                          # beige floral: black bag
+}
+# contrast boost so clear acrylic still reads at phone size
+ENH = {96217490: 2.4}
+# full-bleed mats / lifestyle shots that may be centre-filled (ImageOps.fit); everything else is padded so products never get cut
+NOFIT = {
+    96114928, 96126037, 96126853, 96126603, 96125859,                    # Betty June Jeannette
+    95958590, 95959013, 95959041, 95958614, 95958946,                    # Charleston Mahjong Club
+    96227058, 96226860, 96233820, 96227272, 96227121,                    # OMM x LSF
+    96203680, 96196661, 96195144, 96207171, 96203770,                    # dice dishes
+    96067421, 96304138, 96067632, 96067718, 96067638,                    # Tala
+    95959018, 96195087, 95959071, 95959047, 96195067,                    # Mahj & Vine
+    96122627, 96131839, 96131764, 96131413, 96131171,                    # Etsy
+    96216286, 96213699, 96217133, 96213080, 96213309,                    # gifts
+    96210831, 96210535, 96212924, 96213709, 96213996, 96216016,          # Amazon mats (square mat shots)
+    96237389, 96233460, 96234587, 96237159,                              # holiday/halloween hero mats + table shots
 }
 # black flipped-back corners patched with the mirrored opposite corner: (corner, w frac, h frac)
 FIX = {
     96210535: [('tr', .36, .36)],    # pink bows
     96213996: [('tr', .42, .34)],    # beige floral (after crop)
     96237389: [('tr', .30, .24)],    # gothic raven
-    96233460: [('tr', .16, .16)],    # santa & reindeer
+    96233460: [('tr', .085, .085)],  # santa & reindeer: just the black flap
 }
 
 COVERS = [
@@ -46,14 +69,14 @@ COVERS = [
  (8393657, 'dice-dishes', 'Dice Dishes & Accessories', 'the little extras that finish a table', 'table shop', '#e0607e', 5,
   [96203680, 96196661, 96195144, 96207171, 96203770]),
  (8398138, 'mahjong-lamps', 'Mahjong Lamps', 'cordless lamps for a cozy game night', 'table shop', '#c4932b', 5,
-  [96222800, 96222662, 96193399, 96228999, 96222455]),
+  [96222800, 96222662, 96193399, 96228999, 96232922]),
  (8392222, 'etsy-mahjong-mats', 'Etsy Mahjong Mats', 'one-of-a-kind mats from small shops', 'mat shop', '#e0607e', 5,
   [96122627, 96131839, 96131764, 96131413, 96131171]),
  (8399101, 'racks', 'Mahjong Racks', 'racks and pushers for every set', 'rack shop', '#054689', 3,
   [96217240, 96217176, 96217490]),
  (8400954, 'mahjong-tablecloths', 'Mahjong Tablecloths', 'the layer under your mat', 'table shop', '#1f5a3a', 5,
   [96230340, 96231302, 96230869, 96230691, 96212892]),
- (8398332, 'amazon-mahjong-mats', 'Amazon Mahjong Mats', 'pretty mats that ship fast', 'mat shop', '#1f5a3a', 6,
+ (8398332, 'amazon-mahjong-mats', 'Amazon Mahjong Mats', 'pretty mats that ship fast', 'mat shop', '#1f5a3a', 32,
   [96210831, 96210535, 96212924, 96213709, 96213996, 96216016]),
  (8398036, 'mahj-and-vine', 'Mahj & Vine', 'chinoiserie mats in every color', 'mat shop', '#1f5a3a', 5,
   [95959018, 96195087, 95959071, 95959047, 96195067]),
@@ -108,6 +131,11 @@ def load(pid):
     if im.mode in ('RGBA', 'LA', 'P'):   # transparent PNG -> on WHITE (Mahj & Vine came in on black)
         im = im.convert('RGBA'); bg = Image.new('RGB', im.size, (255, 255, 255)); bg.paste(im, mask=im.getchannel('A')); im = bg
     im = im.convert('RGB')
+    for l, t, r, b in PAINT.get(pid, []):
+        ImageDraw.Draw(im).rectangle((int(l * im.width), int(t * im.height), int(r * im.width), int(b * im.height)), fill=(255, 255, 255))
+    if pid in ENH:
+        from PIL import ImageEnhance
+        im = ImageEnhance.Contrast(im).enhance(ENH[pid]); im = ImageEnhance.Brightness(im).enhance(.97)
     if pid in CROP:
         l, t, r, b = CROP[pid]; im = im.crop((int(l * im.width), int(t * im.height), int(r * im.width), int(b * im.height)))
     for corner, fw, fh in FIX.get(pid, []):
@@ -127,7 +155,7 @@ def card(pid, size, rot):
         mx = int(max(bb[2] - bb[0], bb[3] - bb[1]) * .05)
         im = im.crop((max(0, bb[0] - mx), max(0, bb[1] - mx), min(im.width, bb[2] + mx), min(im.height, bb[3] + mx)))
     ar = im.width / im.height
-    if 0.8 < ar < 1.25: im = ImageOps.fit(im, (size - 24, size - 24), Image.LANCZOS)
+    if pid in NOFIT and 0.8 < ar < 1.25: im = ImageOps.fit(im, (size - 24, size - 24), Image.LANCZOS)
     im = ImageOps.pad(im, (size - 24, size - 24), color=(255, 255, 255), method=Image.LANCZOS)
     c = Image.new('RGBA', (size, size), (255, 255, 255, 255)); c.paste(im, (12, 12))
     m = Image.new('L', (size, size), 0); ImageDraw.Draw(m).rounded_rectangle((0, 0, size - 1, size - 1), 22, fill=255)
@@ -167,9 +195,14 @@ def make(cid, slug, title, tag, kicker, accent, layout, picks):
     top = y + 22
     area_c = (top + H) / 2; avail = H - top - 20
     if layout == 3:
-        hero = min(int(avail * .80), 480); side = 330
-        pos = [(172, area_c + 14, side, -5), (908, area_c + 14, side, 5), (540, area_c, hero, -1)]
+        hero = min(int(avail * .80), 480); side = 290; area_c -= 60
+        pos = [(200, area_c + 14, side, -5), (880, area_c + 14, side, 5), (540, area_c, hero, -1)]
         order = [picks[1], picks[2], picks[0]]
+    elif layout == 32:   # 3 x 2 grid, hero top-centre (every card fully visible)
+        cs = int(min(avail * .47, 315)); hs = int(cs * 1.06)
+        r1, r2 = area_c - avail * .245, area_c + avail * .255
+        pos = [(190, r1, cs, -5), (890, r1, cs, 5), (190, r2, cs, 4), (540, r2, cs, -2), (890, r2, cs, -4), (540, r1, hs, -1.5)]
+        order = [picks[2], picks[3], picks[4], picks[1], picks[5], picks[0]]
     elif layout == 6:
         hero = min(int(avail * .66), 400); side = int(min(avail * .43, 265)); low = int(side * .86)
         pos = [(180, area_c - avail * .22, side, -6), (900, area_c - avail * .22, side, 5),
