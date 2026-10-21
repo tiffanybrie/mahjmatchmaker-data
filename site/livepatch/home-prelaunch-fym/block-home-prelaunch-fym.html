@@ -87,7 +87,7 @@ body.mmfym-on #page section[data-section-id="69b1d01489d0f8016ee3d59f"],.mmfym-o
  function place(){
   var secs=document.querySelectorAll('#page article > .page-section, #page .sections > .page-section, #page section.page-section');
   var first=secs[0];
-  if(first&&!first.contains(b)){first.parentNode.insertBefore(b,first);first.classList.add('mmfym-old');}
+  if(first&&first!==b){first.parentNode.insertBefore(b,first);first.classList.add('mmfym-old');}
   var hd=document.querySelector('header#header, #header');
   function pad(){if(!hd)return;var cs=getComputedStyle(hd);b.style.paddingTop=(cs.position==='fixed'||cs.position==='absolute')?Math.max(0,Math.round(hd.getBoundingClientRect().bottom))+'px':'';}
   pad();window.addEventListener('resize',pad);
