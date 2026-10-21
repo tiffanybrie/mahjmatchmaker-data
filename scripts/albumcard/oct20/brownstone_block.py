@@ -5,7 +5,14 @@ import json, sys, re
 import common as C, album_block as A
 SHA = sys.argv[1]
 m = json.load(open(C.R + 'assets/cards/brownstone-bloom-oct20/manifest.json'))
-ST = json.load(open('/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/owedwork/bbhd/staged_urls.json'))
+_STP = '/tmp/claude-0/-home-claude/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/owedwork/bbhd/staged_urls.json'
+import os
+ST = json.load(open(_STP)) if os.path.exists(_STP) else {}  # Oct 21: scratch file is gone; fall back to the links in the last staged block
+if not ST:
+    _old = open(C.R + 'site/livepatch/brownstone-bloom-oct20/brownstone-bloom-codeblock.html').read()
+    for _c in m['cards']:
+        _f = re.search(re.escape(_c['file']) + r'.{0,4000}?<a [^>]*href="([^"]+)"', _old, re.S)
+        if _f: ST[_c['mat']] = {'url': _f.group(1)}
 BR = {'Mahjong Row & Co': 'Mahjong Row & Co.', 'Mac + Miller Mahjong': 'Mac + Miller Mahjong'}
 cards = []
 for c in m['cards']:
