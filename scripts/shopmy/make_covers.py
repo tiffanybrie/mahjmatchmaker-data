@@ -226,7 +226,7 @@ def make(cid, slug, title, tag, kicker, accent, layout, picks):
         hero = min(int(avail * .66), 400); side = int(min(avail * .43, 265)); low = int(side * .86)
         pos = [(180, area_c - avail * .22, side, -6), (900, area_c - avail * .22, side, 5),
                (185, area_c + avail * .25, side, 4), (895, area_c + avail * .25, side, -4),
-               (540, area_c + avail * .30, low, 2), (540, area_c - avail * .12, hero, -1.5)]
+               (540, area_c + avail * .30 + 10, low, 2), (540, area_c - avail * .12, hero, -1.5)]
         order = [picks[2], picks[3], picks[4], picks[5], picks[1], picks[0]]
     else:   # 5-up: hero centre, two on each side
         hero = min(int(avail * .80), 440); side = int(min(avail * .43, 272))

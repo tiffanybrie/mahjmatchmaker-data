@@ -26,27 +26,44 @@ def nb(s):
 def set_for_album(D, slug):
     for s in D['sets']:
         if s.get('album', '').rstrip('/').endswith('/' + slug + '-mahjong-tile-matches'): return s
+    slug = {'sunday-tile-set': 'sunday-mahjong-sunday'}.get(slug, slug)
     c = [s for s in D['sets'] if s['slug'].endswith('-' + slug) or s['slug'] == slug]
     return c[0] if len(c) == 1 else None
 
-def match(card, cands, M):
-    bt = nb(card['brand']); nt = toks(card['mat'])
-    best = None
-    for mid in cands:
-        m = M.get(mid)
-        if not m: continue
-        mb = nb(m.get('bn', ''))
-        if not (mb == bt or (len(bt) > 3 and (bt in mb or mb in bt))): continue
-        mt = toks(m.get('n', '')) | (toks(mid.split('/')[-1].replace('-', ' ')) if '/' in mid else set())
-        mt_n = toks(m.get('n', ''))
-        if not nt: continue
-        ov = len(nt & mt)
-        if ov == 0: continue
-        exact = int(nt == mt_n)
-        ret = int(bool(m.get('rt')) == bool(card.get('retired')) or '(retired)' in card['mat'].lower() and bool(m.get('rt')))
-        sc = (exact, ov / len(nt | mt_n or nt), ret)
-        if best is None or sc > best[0]: best = (sc, mid)
-    return best[1] if best else None
+def _t(s):
+    s = re.sub(r'\byotd\b', 'year dragon', (s or '').lower())
+    return toks(s)
+
+def score(card, mid, M):
+    """None if brand differs or no name overlap; else a sortable score (higher = better)."""
+    m = M.get(mid)
+    if not m: return None
+    bt = nb(card['brand']); mb = nb(m.get('bn', ''))
+    if not (mb == bt or (len(bt) > 3 and (bt in mb or mb in bt))): return None
+    nt = _t(card['mat']); mt_n = _t(m.get('n', ''))
+    mt = mt_n | (_t(mid.split('/')[-1].replace('-', ' ')) if '/' in mid else set())
+    if not nt: return None
+    hit = lambda t, pool: t in pool or (len(t) == 1 and any(x.startswith(t) for x in pool))
+    ov = sum(1 for t in nt if hit(t, mt))
+    if ov == 0: return None
+    miss_m = sum(1 for t in mt_n if not hit(t, nt) and not (len(t) == 1 and any(x.startswith(t) for x in nt)))
+    exact = int(nt == mt_n)
+    ret = int(bool(m.get('rt')) == bool(card.get('retired')))
+    return (exact, ov - len(nt), -miss_m, ret)
+
+def assign(cards, cands, M):
+    """global greedy: best (card, mat) pairs first, so 'YOTD Purple' cannot take 'YOTD Plum' from the exact 'YOTD Plum' card."""
+    pairs = []
+    for ci, c in enumerate(cards):
+        for mid in cands:
+            sc = score(c, mid, M)
+            if sc is not None: pairs.append((sc, -ci, mid, ci))
+    pairs.sort(reverse=True)
+    got, used = {}, set()
+    for sc, _, mid, ci in pairs:
+        if ci in got or mid in used: continue
+        got[ci] = mid; used.add(mid)
+    return got
 
 def compute(D):
     A = json.load(open(LIVE)); M = D['mats']
@@ -54,10 +71,9 @@ def compute(D):
     for a in A:
         s = set_for_album(D, a['slug'])
         if not s or not s.get('m'): rep.append((a['slug'], 'no set / empty m')); continue
-        cands = [e[0] for e in s['m']]; used = set(); order = []
-        for c in a['cards']:
-            mid = match(c, [x for x in cands if x not in used], M)
-            if mid: used.add(mid); order.append(mid)
+        cands = [e[0] for e in s['m']]
+        got = assign(a['cards'], cands, M)
+        order = [got[i] for i in range(len(a['cards'])) if i in got]
         ao[s['slug']] = order
         rep.append((a['slug'], f'{len(order)}/{len(a["cards"])} cards matched, m={len(cands)}'))
     return ao, rep

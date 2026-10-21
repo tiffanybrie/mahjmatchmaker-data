@@ -32,6 +32,16 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
  15 replaced racks (Oct 21 pm, QA: Papaya Spritz still showed PLM Oak as "Tiffany's match" from D.lt after the Beechwood swap): for every
     rack replacement in builder/fym_flags/rack_replacements.json, the old rack is in neither the set's D.lt nor any of its m rack lists,
     the new rack is in D.lt, and the key is a final_lists set whose list names the new rack (D.uni is not checked)
+ 16 pick order (Oct 21, Tiffany: Papaya Spritz picks started Greenly, Goldie, Preppy Pink; her live album starts Heiress, Press for
+    Mahjong, Greenly): D.ao is recomputed from scripts/social/its_a_match/albums-live-oct21.json (builder/fym_fix_oct21/album_order.py)
+    and must equal the build's D.ao; the page's own load-time sort, run in node, must put every album set's picks in live album order
+ 17 tool name (Oct 21): the start-screen title is "Find <i>Your</i> Mat-ch(TM)", (TM) exactly once in the UI, no "Find Your Match" text,
+    and the .ttl headline is not text-transform:uppercase (brand guide: Title Case, never ALL CAPS)
+ 18 swipe row is X and heart only (Oct 21: an undo/rewind button sat in the row): no data-undo button / rewind glyph in the UI
+ 19 tiles-door colour chips clear (Oct 21: radio-style, Holiday could not be cleared): tapping the active chip sets S.tcol to '' and
+    '' renders the whole list; Holiday may stay the season default (HOLIDAY_SEASON, Oct 14)
+ 20 phone orphan (Oct 21: "for" alone on its own line in the I have tiles door): door subtitles end in a non-breaking space + last
+    word and .door button small has text-wrap:balance
  8b colour-chip order: sh (measured share) lines up with mf; CSORT (single chip) = lead > ONE list by score (share + 20 if primary),
     checked by running CSORT in node over every chip colour
 """
@@ -370,6 +380,41 @@ for k_, r_ in _rr.items():
     if _bad: F.append(f"[15] {k_}: replaced rack {r_.get('old_name', old_)} still in {len(_bad)} m rack lists (e.g. {_bad[0]})")
     _lmb = [m_ for s_ in _sets_by[sl_] for m_ in {e[0] for e in s_['m']} if old_ in (D.get('lm') or {}).get(m_, [])]
     if _lmb: F.append(f"[15] {k_}: replaced rack {r_.get('old_name', old_)} in D.lm for its match-list mats {_lmb[:3]}")
+
+# 16. Tiffany's picks follow her live album order (Oct 21, Papaya Spritz)
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fym_fix_oct21'))
+import album_order as _AO
+_ao, _ = _AO.compute(D)
+if (D.get('ao') or {}) != _ao: F.append("[16] D.ao missing or stale vs live album snapshot (run builder/fym_fix_oct21/album_order.py)")
+_sortjs = re.search(r"D\.sets\.forEach\(s=>\{const o=\(D\.ao\|\|\{\}\)\[s\.slug\];.*?\}\);", UI)
+if not _sortjs: F.append("[16] load-time album-order sort of s.m missing from the page")
+else:
+    _SS = [{'slug': s_['slug'], 'm': [[e[0], []] for e in s_['m']]} for s_ in D['sets'] if s_['slug'] in _ao]
+    _o16, _e16 = _node('const D=' + json.dumps({'sets': _SS, 'ao': _ao}) + ';' + _sortjs.group(0) + 'process.stdout.write(JSON.stringify(Object.fromEntries(D.sets.map(s=>[s.slug,s.m.map(x=>x[0])]))))')
+    if _o16 is None: F.append(f"[16] node failed running the page sort: {_e16}")
+    else:
+        for sl_, ord_ in _ao.items():
+            got_ = [k for k in _o16[sl_] if k in set(ord_)]
+            if got_ != ord_: F.append(f"[16] {sl_}: picks not in live album order (first: {[M[k]['n'] for k in got_[:3]]} vs {[M[k]['n'] for k in ord_[:3]]})")
+
+# 17. tool name: Find Your Mat-ch(TM), italic Your, TM once (Oct 21)
+if '<h1 class="ttl">Find <i>Your</i> Mat-ch\u2122</h1>' not in UI: F.append("[17] start-screen title is not 'Find <i>Your</i> Mat-ch\u2122'")
+if TXT.count('\u2122') != 1: F.append(f"[17] \u2122 appears {TXT.count(chr(8482))} times in the UI (must be exactly once, on the start-screen title)")
+if re.search(r'(?i)find\s+(<i>)?your(</i>)?\s+match\b', TXT): F.append("[17] old name 'Find Your Match' still in the UI")
+if re.search(r'\.lock \.ttl\{[^}]*text-transform:uppercase', UI): F.append("[17] .lock .ttl is ALL CAPS (brand guide: Title Case)")
+
+# 18. swipe row: X and heart only (Oct 21: undo button)
+if re.search(r'<button[^>]*data-undo=', TXT) or '\u21ba' in TXT or '↺' in TXT: F.append("[18] undo / rewind button in the swipe row (X and heart only)")
+
+# 19. tiles-door colour chips can be cleared (Oct 21)
+if "S.tcol=S.tcol===v?'':v" not in UI: F.append("[19] tiles-door colour chip does not toggle off (radio-style lock)")
+if "S.tcol==='az'||S.tcol===''" not in fn('tileGrid'): F.append("[19] cleared tiles-door chips ('') do not render the full list")
+if 'if(!S.tcol)S.tcol=' in UI: F.append("[19] falsy S.tcol re-selects the default chip (clearing impossible)")
+
+# 20. phone orphan in door subtitles (Oct 21: 'for' alone on a line)
+_ds = re.findall(r'data-door="[a-z]+"[^>]*>[^<]*<small>([^<]*)</small>', UI)
+if len(_ds) < 2 or any('\u00a0' not in x_ for x_ in _ds): F.append(f"[20] door subtitles missing a non-breaking space before the last word: {_ds}")
+if not re.search(r'\.door button small\{[^}]*text-wrap:balance', UI): F.append("[20] .door button small lacks text-wrap:balance")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
