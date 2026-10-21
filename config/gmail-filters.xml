@@ -119,4 +119,35 @@
     <apps:property name='shouldMarkAsRead' value="true"/>
     <apps:property name='shouldNeverSpam' value="true"/>
   </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Pinterest notifications (skip inbox; security/billing stay)</title>
+    <id>mahjmatchmaker:pinterest</id>
+    <updated>2026-10-21T21:00:00Z</updated>
+    <content></content>
+    <apps:property name='from' value='pinterest.com'/>
+    <apps:property name='hasTheWord' value='-subject:(security OR password OR verify OR claimed OR login OR "log in" OR suspended OR disable OR payment OR receipt OR statement OR invoice OR billing OR ads)'/>
+    <apps:property name='label' value='Pinterest'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Promos never opened (skip inbox, label Promos/Unread)</title>
+    <id>mahjmatchmaker:promos-unread</id>
+    <updated>2026-10-21T21:00:00Z</updated>
+    <content></content>
+    <apps:property name='from' value='loveshackfancy.com OR balticessentials.com OR wrappedinacloud.com'/>
+    <apps:property name='label' value='Promos/Unread'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>tiffanybrie@ only: promos never opened (skip inbox, label Promos/Unread)</title>
+    <id>tiffanybrie:promos-unread</id>
+    <updated>2026-10-21T21:00:00Z</updated>
+    <content></content>
+    <apps:property name='from' value='news.bizjournals.com OR fullfocus.co OR joinreframeapp.com OR wholesomeyum.com OR iphonephotographyschool.com OR onepeakcreative.com OR foundr.com OR thirdlove.com OR roysreport.com OR r.sofi.com OR email.sharperimage.com OR email.theblaze.com OR noreply@helium10.com OR thehustle.co OR stofferhome.com OR listings@redfin.com OR babyfoode.com OR shortform.com OR hellofunnels.co OR redditmail.com OR e.avis.com OR bonniechristine.com OR newsletter.printful.com OR engage.ticketmaster.com OR hautestock.co OR email3.homeagain.com OR dailypassport.com OR emilyley@substack.com OR every-tuesday.com OR muneezaahmed.com OR o.westelm.com'/>
+    <apps:property name='label' value='Promos/Unread'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
 </feed>

@@ -77,3 +77,29 @@ Mahj Mood affiliate follow-up, Amore Mahjong customer-message reply, Let's Be Be
 - Side effect fixed: during the cleanup, keystrokes landed as Gmail shortcuts and muted those 19 invite threads. They were unmuted, and the 5 that had been in the inbox were moved back. A stray star and an empty forward draft were removed.
 - tiffanybrie@ already had her own filter "category:promotions → Skip Inbox", so brand promos there were mostly archived before this.
 - mahjmatchmaker@ counts: inbox 1,040 → 765. Orders 48, Approved 30, Payouts 3, Needs a look 1, Programs 51, Newsletters 220, Partners 6, Share your table 1.
+
+## Inbox cleanup Oct 21 (Tiffany's yes, 4:05pm ET)
+Rule: archive only. Nothing deleted, trashed or marked spam. Filters skip the inbox and label `Promos/Unread` (Pinterest gets its own label `Pinterest`). Each filter was also applied to existing mail.
+
+**Orders / Approved check (both accounts):** the Affiliate/Orders, Affiliate/Approved and Affiliate/Payouts filters are "Skip Inbox" in mahjmatchmaker@ and tiffanybrie@ (read from Settings > Filters). A search for `in:inbox` with those labels returns 0 threads in both accounts. They live only under their own labels.
+
+### mahjmatchmaker@gmail.com (inbox 766 → 147 threads)
+- New filter, Pinterest (`from:pinterest.com` minus security/billing/ads/login subjects) → skip inbox, label Pinterest. 599 threads archived (discover/explore/inspire/ideas recommendations, pinbot, activity). The Pinterest account security alert and "Website claimed" stay in the inbox.
+- New filter, label Promos/Unread (31 threads archived): loveshackfancy.com, balticessentials.com, wrappedinacloud.com.
+- Unsubscribed via Gmail's own header button: Baltic Essentials.
+- Not unsubscribed (no one-click Unsubscribe in Gmail): LoveShackFancy (the link opened its website; closed, no data entered), Wrapped in a Cloud, all Pinterest.
+
+### tiffanybrie@gmail.com (about 2,063 inbox threads in 90 days; 685 archived, about 1,378 left)
+- New filter, Pinterest (same query as above) → skip inbox, label Pinterest. Ads payment, ads statement/receipt and account notices stay in the inbox on purpose.
+- New filter, label Promos/Unread, one filter for 31 senders (685 threads archived, 673 never opened): news.bizjournals.com (Louisville Business First), fullfocus.co, joinreframeapp.com, wholesomeyum.com, iphonephotographyschool.com, onepeakcreative.com, foundr.com, thirdlove.com, roysreport.com, r.sofi.com, email.sharperimage.com, email.theblaze.com, noreply@helium10.com, thehustle.co, stofferhome.com, listings@redfin.com, babyfoode.com, shortform.com, hellofunnels.co, redditmail.com, e.avis.com, bonniechristine.com, newsletter.printful.com, engage.ticketmaster.com (UofL Athletics "gocards"), hautestock.co, email3.homeagain.com, dailypassport.com, emilyley@substack.com, every-tuesday.com, muneezaahmed.com, o.westelm.com.
+- Unsubscribed via Gmail's header button (23): fullfocus, foundr, news.bizjournals, joinreframeapp, wholesomeyum, onepeakcreative, thirdlove, roysreport, r.sofi, email.sharperimage, email.theblaze, thehustle, stofferhome, babyfoode, shortform, hellofunnels, redditmail, e.avis, bonniechristine, newsletter.printful, engage.ticketmaster, hautestock, email3.homeagain, dailypassport, every-tuesday, muneezaahmed (26 counting all confirmed "You unsubscribed" screens).
+- Filtered but NOT unsubscribed (Gmail had no one-click button, or it needs a third-party web page): iphonephotographyschool.com, helium10.com, redfin.com, emilyley@substack.com, o.westelm.com.
+- Existing personal filters (category:promotions → Skip Inbox, etc.) were left alone.
+
+### Left alone on purpose (unsure, flag for Tiffany)
+- Stacie Bloomfield (classes@staciebloomfield.com, "[LEV] Module..." course emails, 32 unread): looks like a course she is in.
+- o.westelm.com and hautestock.co "[MEMBERS]": both sent a real appointment confirmation / member mail; they are archived, not deleted. Remove them from the tiffanybrie@ Promos/Unread filter if she wants those in the inbox.
+- Adobe, Experian, Amazon, PayPal, Venmo, SignUpGenius, school/Seesaw/SportsEngine, Oldham County, dance studio, bank alerts, Squarespace, Etsy: transactional or personal, untouched.
+
+### KEEP list (never filtered)
+Tucker Carlson Network, Mary Benson Art (studio@marybensonart.com), orders/receipts/shipping/delivery/purchase notices, real people (Casey etc.), partner brand people (Oh My Mahjong, Anders Ruff, Royal Mahjong Society, Mahj Mood, Four Winds Social, Let's Be Besties, Amore Mahjong, Peace Love Mahjong), Squarespace form submissions, Affiliate "Needs a look" + "Programs", security/account/password/bank/bill mail, school/family/calendar/evite mail.
