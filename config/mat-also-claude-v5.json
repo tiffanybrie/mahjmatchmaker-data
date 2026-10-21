@@ -2,7 +2,7 @@
  "by": "claude-photo-review",
  "date": "2026-10-20",
  "method": "measured palette (config/mat-accent-colors.json, thresholds eye-checked on contact sheets): a color covering >= 15% of the mat is promoted to an also-color. Never applied to mats Tiffany has called (her v5 final calls or any tiffany-chat override) or to the 53 new mats (tagged by eye in tiffany-color-notes/2026-10-20-new53-claude-tags.json).",
- "count": 184,
+ "count": 147,
  "mats": {
   "amahj--lilac-green-squiggle-mahjong-game-mat": [
    "green"
@@ -50,37 +50,8 @@
    "blue",
    "teal"
   ],
-  "mahj-moon--amongst-the-lemon-groves-pink": [
-   "yellow",
-   "green"
-  ],
-  "mahj-moon--palm-tree": [
-   "green"
-  ],
-  "mahj-moon--paris-in-bloom": [
-   "green"
-  ],
-  "mahj-moon--pastel-garden-landscape": [
-   "teal",
-   "green"
-  ],
-  "mahj-moon--pastel-wildflower-gingham": [
-   "yellow"
-  ],
-  "mahj-moon--personalized-vibrant-floral-chinoiserie-pink": [
-   "blue"
-  ],
-  "mahj-moon--pink-bow-garden": [
-   "green"
-  ],
   "mahj-moon--pink-citrus": [
    "green"
-  ],
-  "mahj-moon--strawberry-garden-american": [
-   "green"
-  ],
-  "mahj-moon--vibrant-floral-chinoiserie-pink": [
-   "blue"
   ],
   "mahj-vine--chinoiserie-songbird": [
    "green"
@@ -91,22 +62,7 @@
   "mahj-squad--palm-springs": [
    "green"
   ],
-  "mahjong-moxie--magnolia-muse": [
-   "green"
-  ],
-  "mahjong-moxie--tulip-tango": [
-   "green"
-  ],
   "mahjong-register--peony-sociale-premium": [
-   "teal"
-  ],
-  "mahjong-studios--in-bloom": [
-   "teal"
-  ],
-  "mahjong-studios--looking-glass": [
-   "yellow"
-  ],
-  "mahjong-studios--pink-blush": [
    "teal"
   ],
   "middle-main-mahjong--tobacco-leaf-ginger-jar-mat": [
@@ -184,23 +140,10 @@
   "wren-mats--cottage-core": [
    "green"
   ],
-  "mahjong-studios--amber-jade": [
-   "green"
-  ],
-  "mahjong-studios--amber-jade-bird-bam": [
-   "green"
-  ],
-  "mahjong-studios--citrus-orange": [
-   "green"
-  ],
   "wren-mats--bright-orangey": [
    "blue"
   ],
   "mahj-moon--amalfi-soleil": [
-   "blue"
-  ],
-  "mahj-moon--lemon-stripe": [
-   "pink",
    "blue"
   ],
   "oh-my-mahjong--spring-fling-retired": [
@@ -239,12 +182,6 @@
    "pink"
   ],
   "mahjong-register--lovely-lavender-double-sided-leatherette": [
-   "pink"
-  ],
-  "mahjong-studios--lunaflor-mahjong-mat": [
-   "pink"
-  ],
-  "mahjong-studios--teal-garden": [
    "pink"
   ],
   "my-fair-mahjong--color-wave-green-center-pink-scallop": [
@@ -311,21 +248,11 @@
   "charleston-mahjong-club--reversible-vegan-leather-sea-foam-green-dusty-blue": [
    "green"
   ],
-  "hutch-nook--summer-blossom": [
-   "pink",
-   "green"
-  ],
   "let-s-be-besties--hydrangea-haven": [
    "green"
   ],
-  "mahj-moon--blush-botanical": [
-   "pink"
-  ],
   "mahj-moon--citrus-chinoiserie": [
    "green"
-  ],
-  "mahj-moon--lion-american": [
-   "pink"
   ],
   "mahj-vine--shady-lady-umbrella-mat-cabana-stripe-ocean": [
    "green"
@@ -336,20 +263,8 @@
   "mahjong-moxie--duck-camp": [
    "green"
   ],
-  "mahjong-moxie--oyster-confetti": [
-   "green"
-  ],
   "mahjong-register--buttercup-cherie-premium": [
    "yellow"
-  ],
-  "mahjong-studios--blue-birdsong": [
-   "pink"
-  ],
-  "mahjong-studios--blue-ribbon": [
-   "pink"
-  ],
-  "maison-mahj--the-mayfair-stripe": [
-   "pink"
   ],
   "miss-mahjong--hydrangea": [
    "green"
@@ -431,26 +346,8 @@
   "isabel-harte--bamboo-dragon": [
    "blue"
   ],
-  "mahj-moon--autumn-leaves": [
-   "green"
-  ],
-  "mahj-moon--botanical-chevron": [
-   "green"
-  ],
-  "mahj-moon--celestial-dragon-chinoiserie": [
-   "green"
-  ],
-  "mahj-moon--cowgirl-rodeo": [
-   "blue"
-  ],
   "mahj-moon--equestrian-estate": [
    "green"
-  ],
-  "mahj-moon--garden-toile-round": [
-   "green"
-  ],
-  "mahj-moon--italian-riviera-foodie": [
-   "blue"
   ],
   "middle-main-mahjong--june-bride": [
    "green",
@@ -469,17 +366,11 @@
   "splash-of-color--garden-of-eden-mahjong-mat-26x26": [
    "green"
   ],
-  "the-mahjong-line--botanical": [
-   "teal"
-  ],
   "tigre-de-tartan--mahjong-mat-printed-needlepoint-canvas-14-mesh-jard-n-de-los-jefes": [
    "green"
   ],
   "bespoke-mahjong--argyle-girl": [
    "pink"
-  ],
-  "luxe-mahjong--bougie-bee-2": [
-   "yellow"
   ],
   "mahjong-register--palm-beach-pink-leopard-33": [
    "pink"
@@ -504,13 +395,6 @@
   "let-s-be-besties--floral-kaleidoscope": [
    "red",
    "green"
-  ],
-  "luxe-mahjong--neon-lights": [
-   "green",
-   "pink"
-  ],
-  "mahj-house-rules--mahjong-mat": [
-   "pink"
   ],
   "mahj-mood--fall-fling-mat": [
    "pink"
