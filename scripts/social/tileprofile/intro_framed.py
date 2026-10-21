@@ -172,7 +172,19 @@ async def main():
                 Image.open(png).convert('RGB').resize((1080, 1920), Image.LANCZOS).save(f'{OUT}/story-{n}.jpg', quality=93)
             # slide 7: intro.py's plain graphic, rendered at 2x and fitted into the safe band
             await pg.set_viewport_size({'width': 1080, 'height': 1350})
-            await pg.goto('file://' + H + '/intro-7.html'); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready')
+            # Oct 21 (story QA): the story's slide 7 swaps in (a) 10%-band versions of any peek card in <key>-launch/intro-story/src/
+            # (card-<slug>-10pct.jpg; card bands always say 10%) and (b) the album cover without the old "FIND YOUR MATCH" line
+            # (src/cover-no-tagline.jpg, scripts/covers/uniform_v2.py with TAGLINE=''). The feed html is left untouched.
+            import glob as _g, re as _re
+            S7 = f'{R}assets/social/{key}-launch/intro-story/src'; h7 = open(H + '/intro-7.html').read()
+            for f in _g.glob(S7 + '/card-*-10pct.jpg'):
+                slug = os.path.basename(f)[5:-10]
+                h7 = _re.sub(r'file://[^)]*/' + _re.escape(key) + r'-mahjong-tiles-' + _re.escape(slug) + r'-mat\.jpg', 'file://' + f, h7)
+            if os.path.exists(S7 + '/cover-no-tagline.jpg'):
+                h7 = _re.sub(r'file://[^)]*/00-' + _re.escape(key) + r'-mahjong-tiles-cover[^)]*\.jpg', 'file://' + S7 + '/cover-no-tagline.jpg', h7)
+            assert '10pct' in h7 or not _g.glob(S7 + '/card-*-10pct.jpg')
+            open(f'{TMP}/story-7-src.html', 'w').write(h7)
+            await pg.goto('file://' + TMP + '/story-7-src.html'); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready')
             png = f'{TMP}/story-7-src@2x.png'; await pg.screenshot(path=png); await b.close()
             sys.path.insert(0, R + 'scripts/social/its_a_match'); import story_frames as SF
             SF.fit(png, f'{OUT}/story-7.jpg', 'intro'); return
