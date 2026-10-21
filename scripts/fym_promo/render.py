@@ -102,8 +102,8 @@ async def go():
 <div style="position:absolute;left:560px;top:30px;z-index:2">{phone('swipe.jpg', 1000)}</div>"""
         await shot(page(hero, w=1120, h=1080), f'{TMP}/hero.png')
         im = Image.open(f'{TMP}/hero.png')
-        bg = Image.new('RGBA', im.size, PAPER); bg.alpha_composite(im)
-        bg.convert('RGB').resize((960, round(im.height * 960 / im.width)), Image.LANCZOS).save(f'{EM}/hero.jpg', quality=76, optimize=True, progressive=True)
+        # email hero dropped (QA Oct 21: email weight); page keeps the transparent hero
+        if 0: bg.convert('RGB').resize((960, round(im.height * 960 / im.width)), Image.LANCZOS).save(f'{EM}/hero.jpg', quality=76, optimize=True, progressive=True)
         im.resize((900, round(im.height * 900 / im.width)), Image.LANCZOS).save(f'{PG}/hero-phones.webp', quality=82, method=6)
 
         # 2. step phones
@@ -111,7 +111,7 @@ async def go():
             await shot(page(f'<div style="position:absolute;left:40px;top:30px">{phone(src, 900)}</div>', w=518, h=1010), f'{TMP}/s{i}.png')
             im = Image.open(f'{TMP}/s{i}.png')
             bg = Image.new('RGBA', im.size, PAPER); bg.alpha_composite(im)
-            bg.convert('RGB').resize((440, round(im.height * 440 / im.width)), Image.LANCZOS).save(f'{EM}/step{i}.jpg', quality=72, optimize=True, progressive=True)
+            bg.convert('RGB').resize((240, round(im.height * 240 / im.width)), Image.LANCZOS).save(f'{EM}/step{i}.jpg', quality=70, optimize=True, progressive=True)  # QA: ~15-20 KB each
             im.resize((480, round(im.height * 480 / im.width)), Image.LANCZOS).save(f'{PG}/step{i}.webp', quality=80, method=6)
             th = title.replace('✕', '<i class=x>✕</i>').replace('♥', '<i class=h>♥</i>')
             await shot(step_head(i, th), f'{EM}/hl-step{i}.png'); q8(f'{EM}/hl-step{i}.png')

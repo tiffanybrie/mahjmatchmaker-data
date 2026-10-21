@@ -36,7 +36,7 @@ STEPS = [
      'The start screen with two doors: I have tiles, or I have a mat, plus Shop by color'),
     ('Swipe <span class="x">&#10005;</span> or <span class="h">&#9829;</span>', 'Tap &#9829; on the mats you love and &#10005; on the ones that aren&rsquo;t the&nbsp;one.',
      'Swiping mats for Papaya Spritz tiles: the Heiress mat by Britt Mills, marked Tiffany’s match, with the X and heart buttons'),
-    ('Tiffany&rsquo;s picks, on or&nbsp;off', '&ldquo;Showing: Tiffany&rsquo;s picks only&rdquo; shows her own matches for your set. Tap it to see every mat, and tap again to bring her picks&nbsp;back.',
+    ('My picks, on or&nbsp;off', '&ldquo;Showing: Tiffany&rsquo;s picks only&rdquo; shows my own matches for your set. Tap it to see every mat, and tap again to bring my picks&nbsp;back.',
      'The Tiffany’s picks button switched to Showing: all mats, so every mat in the catalog is in the swipe'),
     ('Shop by&nbsp;color', 'Tap a color dot to narrow the mats to one color. Tap it again to clear&nbsp;it.',
      'The color dots above the swipe, with Pink selected'),

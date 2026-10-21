@@ -31,10 +31,9 @@ EMAILS = [
         "kind": "campaign",
         "when": "Tue Oct 27, 9:30am CT, one send",
         "to": "All subscribers (homepage signup, notify-me form and form subscribers all land there)",
-        "subject": "It's here! Find Your Mat-ch™ is live 💕",
+        "subject": "It's here! Find Your Mat-ch is live 💕",
         "preview": "Pick your tiles, swipe your mats, meet your match.",
         "h1img": "hl-launch-h1",
-        "hero": "hero",
         "paras": [
             f'This is a new tool I&rsquo;m rolling out just for you: <b>{FYM_HTML}</b>. This time I&rsquo;m stepping out of the matchmaker seat, and it&rsquo;s your turn to find your match.',
             'My picks are baked right in, so you&rsquo;re never swiping alone.',
