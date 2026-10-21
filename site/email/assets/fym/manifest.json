@@ -1,0 +1,132 @@
+{
+ "alt": {
+  "hl-step1": "Step 1: Pick your door",
+  "step1": "The Find Your Mat-ch start screen with two doors: I have tiles, or I have a mat, plus Shop by color",
+  "hl-step2": "Step 2: Swipe X or heart",
+  "step2": "Swiping mats for Papaya Spritz tiles: the Heiress mat by Britt Mills, marked Tiffany’s match, with the X and heart buttons",
+  "hl-step3": "Step 3: My picks, on or off",
+  "step3": "The Tiffany’s picks button switched to Showing: all mats, so every mat in the catalog is in the swipe",
+  "hl-step4": "Step 4: Shop by color",
+  "step4": "The color dots above the swipe, with Pink selected to narrow the mats to pink",
+  "hl-step5": "Step 5: Choose your racks",
+  "step5": "The racks step: Papaya Spritz tiles on the Heiress mat with Tiffany’s rack match, Middle & Main Scalloped Beechwood",
+  "hl-step6": "Step 6: Save your match card",
+  "step6": "The finished match card: Papaya Spritz tiles on the Heiress mat with Beechwood racks, ready to save or share",
+  "hl-launch-h1": "It’s here!",
+  "hl-launch-how": "Here’s how it works",
+  "hl-welcome-h1": "Hi, I’m Tiffany!",
+  "hl-welcome-start": "Three fun places to start",
+  "hl-welcome-reads": "A few of my favorite reads",
+  "hl-request-h1": "Thank you for your request!",
+  "hl-exists-h1": "Great taste!",
+  "hl-live-h1": "You asked, I matched!",
+  "hero": "Find Your Mat-ch on a phone: Papaya Spritz tiles swiping on the Heiress mat by Britt Mills with the X and heart buttons, next to the start screen where you pick I have tiles or I have a mat"
+ },
+ "sizes": {
+  "hero.jpg": [
+   960,
+   926,
+   122795
+  ],
+  "hl-exists-h1.png": [
+   483,
+   103,
+   2811
+  ],
+  "hl-launch-h1.png": [
+   365,
+   103,
+   2279
+  ],
+  "hl-launch-how.png": [
+   542,
+   74,
+   2518
+  ],
+  "hl-live-h1.png": [
+   893,
+   103,
+   4795
+  ],
+  "hl-request-h1.png": [
+   1068,
+   189,
+   6269
+  ],
+  "hl-step1.png": [
+   491,
+   84,
+   2753
+  ],
+  "hl-step2.png": [
+   435,
+   84,
+   2751
+  ],
+  "hl-step3.png": [
+   586,
+   84,
+   3461
+  ],
+  "hl-step4.png": [
+   459,
+   84,
+   2737
+  ],
+  "hl-step5.png": [
+   581,
+   84,
+   3270
+  ],
+  "hl-step6.png": [
+   664,
+   84,
+   3632
+  ],
+  "hl-welcome-h1.png": [
+   624,
+   103,
+   3398
+  ],
+  "hl-welcome-reads.png": [
+   704,
+   74,
+   3492
+  ],
+  "hl-welcome-start.png": [
+   656,
+   74,
+   3227
+  ],
+  "step1.jpg": [
+   440,
+   858,
+   46550
+  ],
+  "step2.jpg": [
+   440,
+   858,
+   61782
+  ],
+  "step3.jpg": [
+   440,
+   858,
+   60977
+  ],
+  "step4.jpg": [
+   440,
+   858,
+   61778
+  ],
+  "step5.jpg": [
+   440,
+   858,
+   56940
+  ],
+  "step6.jpg": [
+   440,
+   858,
+   53659
+  ]
+ }
+}
