@@ -78,9 +78,11 @@ def slide2():
 
 
 def card(mat, x, y, w, rot, z):
-    h = round(w * 1242 / 1080)  # crop above the code band (logo strip ends ~1240)
+    # Oct 21 QA: box-sizing is border-box, so the image area is w-20 wide; size the image to that and crop right at the
+    # code band (logo strip ends ~1242 of 1350). Before, the image was drawn w wide and the logo strip got cut mid-logo.
+    iw = w - 20; h = round(iw * 1242 / 1080) + 20
     return (f'<div style="position:absolute;left:{x}px;top:{y}px;width:{w}px;height:{h}px;transform:rotate({rot}deg);z-index:{z};'
-            f'background:url(\'{u(CARDS.format(mat))}\') top/{w}px auto no-repeat;border:10px solid #fff;border-radius:14px;'
+            f'background:url(\'{u(CARDS.format(mat))}\') top/{iw}px auto no-repeat;border:10px solid #fff;border-radius:14px;'
             f'box-shadow:0 18px 40px rgba(6,42,85,.22)"></div>')
 
 

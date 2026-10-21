@@ -12,6 +12,16 @@
 Update what exists instead of starting over. Example: the launch-day homepage hero was already designed in site/livepatch/nav-plan (match-card fan), then rebuilt from scratch by mistake.
 **HQ is her one front door.** A daily 6:47am ET scheduled task cleans HQ + Ready to Ship per docs/HQ-CLEANUP.md. Whenever she answers something in chat, close or update the matching HQ/Ready to Ship item the same turn. Never leave an item asking for something she already gave.
 
+**WHEN THERE'S NO TASK IN HAND, WORK THIS LIST (Tiffany, Oct 21 2:06pm, after the Pinterest boards sat empty: "when I catch you not doing anything… there's things like that that aren't done").** Check each channel's real state, then fix what's thin. Being "set up" doesn't count:
+- Pinterest: are the boards full, and are 2+ weeks queued? (docs/PINTEREST.md)
+- Planoly: are next week's drafts there?
+- Albums: what's staged but not live (Brownstone, Petalée, Vivienne), and what's upcoming (release-calendar.json `upcomingAlbums`)?
+- Site: are pages, links and images broken? Do the brand guide pages carry the verified line?
+- FYM: are new catalog products waiting in the pending queue?
+- ShopMy: are shelves and collages filled?
+- Amazon: are there storefront posts?
+- HQ: does it still reflect reality?
+
 ## Find Your Match (FYM) is the top project. These are hard rules.
 Live app: claude.ai artifact 6epA9HuEdT32zUp79Qv3kd. Its published index.html (`const D={...}`) is the build source of truth.
 
