@@ -8,7 +8,7 @@ Live app: claude.ai artifact 6epA9HuEdT32zUp79Qv3kd. Its published index.html (`
 3. **Album tile photos are canonical.** Every set with a match album uses its album photo `assets/tiles/album/<set>.*` (map: scripts/swipe/canon_tiles.py). Default framing shows a tile back/layers + faces.
 4. **"Tiffany's match" only from her real picks** (album or swipe-book yes). Catalog sets: `m=[]`. The mat-door "Tiffany matched this mat with N sets" counts only those.
 5. **Locks.** `builder/fym_flags/locks.json` holds approved photos/crops/names/match lists. Catalog scrapes and refreshes may only ADD to a pending queue; run `builder/fym_apply_locks.py`; "changed locked items" must be 0.
-6. **New products** become visible only after their photo passes the flags (`builder/fym_flags/*_photo_flags.json`): mats must show the mat (not lifestyle/packaging), tiles must show tiles.
+6. **New products** become visible only after their photo passes the flags (`builder/fym_flags/*_photo_flags.json`). **FYM photo bar is LOW (Tiffany, Oct 21):** the photo only has to show that it's a mat and let you colour-match it. Tiles, racks or props on the mat, or a room around it, are fine as long as the mat and its colours are clearly visible. Hide only when you can't see the mat or its colours (packaging, a close-up of a corner, a different product). The stricter bar (a clean shot that crops into a match card) applies only to pulling a mat into a match ALBUM. Tiles must show tiles.
 7. **UX:** X and heart only (never crush/nope/pass). Zoom persists. Color filter never locks. Code MAHJMATCH on every card with a partner piece (no hard-coded %).
 8. When she reports a bug, add a gate check for that bug type the same day.
 
