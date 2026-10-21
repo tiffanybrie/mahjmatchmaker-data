@@ -24,23 +24,26 @@ APP_COMMIT = '474dd62e5bc5d8ee78de79422d11e1f82b07be16'
 APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-oct21e/index.html'
 APP_BASE = CDN + APP_COMMIT + '/site-app/fym-oct21d/'
 
-# Her live Papaya Spritz album order (Oct 21): #1 Heiress (Britt Mills), #2 Press for Mahjong (Anders Ruff), #3 Greenly (Mahj & Vine).
-# Cards cropped above their code band (no % anywhere).
-FAN = [
-    ('papaya-spritz-britt-mills-heiress-fan-1.webp', 'Papaya Spritz tiles on the Heiress mat by Britt Mills, with racks'),
-    ('papaya-spritz-anders-ruff-press-for-mahjong-fan-2.webp', 'Papaya Spritz tiles on the Press for Mahjong mat by Anders Ruff'),
-    ('papaya-spritz-mahj-and-vine-greenly-fan-3.webp', 'Papaya Spritz tiles on the Greenly mat by Mahj & Vine'),
-]
+# Oct 21 3:13pm (Tiffany): the tool's promo SHOWS THE TOOL. Hero = real v69 app screens in a true-proportion iPhone
+# (swipe: Papaya Spritz on Heiress, her #1 pick; behind it the two doors). How it works = 6-step tutorial, each a real screen.
+# Rendered by scripts/fym_promo/render.py from scripts/fym_promo/capture.py (undo hidden, X + heart only, no %).
+PHONES = CDN + '4e1897f1e54cfbd97c92f1ccbfcc51676f881f58/assets/site/fym-page-v2/'
+HERO_ALT = ('Find Your Mat-ch on a phone: Papaya Spritz tiles swiping on the Heiress mat by Britt Mills with the X and heart '
+            'buttons, next to the start screen where you pick I have tiles or I have a mat')
+FEEDBACK = '/find-your-mat-ch-feedback'
 STEPS = [
-    ('fym-step1-pick-tiles-or-mat.webp', 860, 1376, 'Pick your tiles or your&nbsp;mat',
-     'Start with the tile set you own, or flip it and start with your mat. Shop by color or search by&nbsp;name.',
-     'Find Your Mat-ch start screen: I have tiles or I have a mat, color chips and tile sets'),
-    ('fym-step2-swipe-papaya-heiress.webp', 640, 1024, 'Swipe <span class="x">&#10005;</span> or <span class="h">&#9829;</span>',
-     'Tap &#9829; on the mats you love and &#10005; on the ones that aren&rsquo;t the one. Tiffany&rsquo;s own picks come&nbsp;first.',
-     'Swiping mats for Papaya Spritz tiles: the Heiress mat by Britt Mills, with the X and heart buttons'),
-    ('fym-step3-match-card-papaya-heiress.webp', 800, 1000, 'Save your match&nbsp;card',
-     'Add racks, then save or share a match card with every piece and code&nbsp;MAHJMATCH.',
-     'A saved match card: Papaya Spritz tiles on the Heiress mat with Beechwood racks'),
+    ('Pick your&nbsp;door', 'Start with the tile set you own, or flip it and start with the mat you already&nbsp;love.',
+     'The start screen with two doors: I have tiles, or I have a mat, plus Shop by color'),
+    ('Swipe <span class="x">&#10005;</span> or <span class="h">&#9829;</span>', 'Tap &#9829; on the mats you love and &#10005; on the ones that aren&rsquo;t the&nbsp;one.',
+     'Swiping mats for Papaya Spritz tiles: the Heiress mat by Britt Mills, marked Tiffany’s match, with the X and heart buttons'),
+    ('Tiffany&rsquo;s picks, on or&nbsp;off', '&ldquo;Showing: Tiffany&rsquo;s picks only&rdquo; shows her own matches for your set. Tap it to see every mat, and tap again to bring her picks&nbsp;back.',
+     'The Tiffany’s picks button switched to Showing: all mats, so every mat in the catalog is in the swipe'),
+    ('Shop by&nbsp;color', 'Tap a color dot to narrow the mats to one color. Tap it again to clear&nbsp;it.',
+     'The color dots above the swipe, with Pink selected'),
+    ('Choose your&nbsp;racks', 'Every couple needs a wingman. Swipe racks the same way, with Tiffany&rsquo;s rack picks&nbsp;first.',
+     'The racks step: Papaya Spritz tiles on the Heiress mat with Tiffany’s rack match, Middle & Main Scalloped Beechwood'),
+    ('Save your match&nbsp;card', 'Pick your view, then save it or send it to your mahj group. Every piece is linked, with code&nbsp;MAHJMATCH.',
+     'The finished match card: Papaya Spritz tiles on the Heiress mat with Beechwood racks, ready to save or share'),
 ]
 # First albums on the live albums page (Oct 21), with their live pinned covers.
 ALBUMS = [
@@ -53,7 +56,7 @@ ALBUMS = [
 ]
 FAQ = [
     ('Who picks the matches?',
-     'Every mat marked <b>Tiffany&rsquo;s match</b> is her own pick, straight from her match albums. Tap &ldquo;Tap to see everything&rdquo; to swipe the whole library and make your own&nbsp;matches.'),
+     'Tiffany&rsquo;s picks are built right in. While the button says <b>Showing: Tiffany&rsquo;s picks only</b>, every mat you see is her own match for your set. Tap it to swipe the whole library and make your own&nbsp;matches.'),
     ('I already have a mat. Can I start there?',
      'Yes. Tap <b>I have a mat</b> and swipe through tile sets that match it, then add&nbsp;racks.'),
     ('How do I save?',
@@ -91,24 +94,16 @@ CSS = r'''
 .fx-under{margin-top:16px!important;font-size:15px;line-height:1.5;color:#4b4560}
 .fx-under b{color:var(--navy);letter-spacing:.04em}
 .fx-under a{color:var(--navy);font-weight:700;text-decoration:underline;text-decoration-color:var(--blush);text-underline-offset:3px;text-decoration-thickness:2px}
-/* fan */
-.fx-fan{position:relative;width:min(100%,430px);margin:0 auto;aspect-ratio:430/500}
-.fx-fan figure{position:absolute;top:13%;left:50%;width:61%;margin:0;border-radius:16px;overflow:hidden;border:7px solid #fff;background:#fff;box-shadow:0 22px 50px rgba(6,42,85,.22),0 4px 12px rgba(6,42,85,.1)}
-.fx-fan figure img{width:100%;height:auto}
-.fx-fan .c1{transform:translateX(-50%) rotate(-1.5deg);z-index:3}
-.fx-fan .c2{transform:translateX(-96%) translateY(7%) rotate(-11deg) scale(.86);z-index:1}
-.fx-fan .c3{transform:translateX(-4%) translateY(7%) rotate(10deg) scale(.86);z-index:2}
-.fx-stamp{position:absolute;z-index:5;left:50%;top:1%;transform:translateX(-50%) rotate(-5deg);background:var(--heart);color:#fff;font:700 clamp(26px,7vw,36px)/1 'Caveat',cursive;padding:.16em .7em .22em;border-radius:14px;white-space:nowrap;box-shadow:0 10px 24px rgba(214,83,122,.38)}
-.fx-sw{position:absolute;z-index:5;left:50%;bottom:0;transform:translateX(-50%);display:flex;gap:22px}
-.fx-sw span{width:66px;height:66px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px rgba(6,42,85,.2);font-family:Arial,sans-serif}
-.fx-sw .no{color:#8d97ad;font-size:28px}.fx-sw .yes{color:var(--heart);font-size:32px}
+/* app phones (real v69 screens) */
+.fx-phones{position:relative;width:min(100%,460px);margin:0 auto}
+.fx-phones img{width:100%;height:auto}
 @media (min-width:980px){
   .fx-hero{padding:64px 0 72px}
   .fx-hero .fx-wrap{grid-template-columns:1.02fr 1fr;gap:28px}
   .fx-copy{text-align:left}
   .fx-lock{margin:0 0 26px}
   .fx-lede{margin:20px 0 0!important}
-  .fx-fan{width:100%;max-width:500px}
+  .fx-phones{width:100%;max-width:540px}
 }
 /* how it works */
 .fx-how{background:#fff;padding:64px 0 70px}
@@ -117,15 +112,17 @@ CSS = r'''
 .fx-steps{display:grid;grid-template-columns:1fr;gap:26px;list-style:none;margin:0 auto!important;padding:0!important;max-width:1080px}
 .fx-step{background:var(--cream);border-radius:26px;padding:22px 22px 26px;display:flex;flex-direction:column;align-items:center;text-align:center;margin:0!important}
 .fx-step::before{display:none!important}
-.fx-shot{width:100%;max-width:300px;aspect-ratio:5/8;border-radius:22px;overflow:hidden;background:#fff;border:6px solid #fff;box-shadow:0 14px 32px rgba(6,42,85,.14);margin-bottom:20px}
-.fx-shot img{width:100%;height:100%;object-fit:cover;object-position:top center}
-.fx-shot.card{background:#f6ede4;display:flex;align-items:center}.fx-shot.card img{height:auto;object-fit:contain}
+.fx-phone{width:100%;max-width:240px;margin:0 auto 14px}
+.fx-phone img{width:100%;height:auto}
 .fx-num{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;font:400 22px/42px 'Caprasimo',Georgia,serif;margin:0 auto 10px}
 .fx-step h3{font-size:clamp(24px,5.4vw,28px);margin-bottom:8px}
 .fx-step h3 .x{color:#8d97ad;font-family:Arial,sans-serif;font-size:.85em}
 .fx-step h3 .h{color:var(--heart);font-family:Arial,sans-serif}
 .fx-step p{font-size:16px;line-height:1.55;color:#4b4560;max-width:22em}
-@media (min-width:820px){.fx-steps{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:560px){.fx-steps{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:900px){.fx-steps{grid-template-columns:repeat(3,1fr)}}
+.fx-fb{text-align:center;margin-top:12px!important;font-size:15px;color:#4b4560;padding:0 16px}
+.fx-fb a{color:var(--navy)!important;font-weight:700;text-decoration:underline;text-decoration-color:var(--blush);text-underline-offset:3px;text-decoration-thickness:2px}
 /* app */
 .fx-app{position:relative;padding:56px 0 64px;background:radial-gradient(circle at 12% 18%,var(--pc) 0,var(--pc) 13%,transparent 13.2%),radial-gradient(circle at 90% 82%,var(--pc) 0,var(--pc) 16%,transparent 16.2%),#fdf3f7;scroll-margin-top:var(--fx-off,0px)}
 .fx-app .fx-head{text-align:center;margin-bottom:20px}
@@ -252,11 +249,9 @@ FS_ICON = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-wid
 
 
 def build():
-    fan = ''.join(f'<figure class="c{i + 1}"><img src="{ASSET}{f}" alt="{html.escape(a)}" width="760" height="874"{" fetchpriority=\"high\"" if i == 0 else " loading=\"lazy\""} decoding="async"></figure>'
-                  for i, (f, a) in enumerate(FAN))
-    steps = ''.join(f'<li class="fx-step"><div class="fx-shot{" card" if n == 2 else ""}"><img src="{ASSET}{f}" alt="{html.escape(alt)}" width="{w}" height="{h}" loading="lazy" decoding="async"></div>'
+    steps = ''.join(f'<li class="fx-step"><div class="fx-phone"><img src="{PHONES}step{n + 1}.webp" alt="{html.escape(alt)}" width="480" height="936" loading="lazy" decoding="async"></div>'
                     f'<div class="fx-num">{n + 1}</div><h3>{t}</h3><p>{p}</p></li>'
-                    for n, (f, w, h, t, p, alt) in enumerate(STEPS))
+                    for n, (t, p, alt) in enumerate(STEPS))
     faq = ''.join(f'<details{" open" if i == 0 else ""}><summary>{q}</summary><p>{a}</p></details>' for i, (q, a) in enumerate(FAQ))
     covers = ''.join(f'<a href="/{slug}-mahjong-tile-matches"><img src="{img}" alt="{name} mahjong tile matches album" loading="lazy" decoding="async" width="800" height="1000"><span>{name}</span></a>'
                      for slug, name, img in ALBUMS)
@@ -265,14 +260,14 @@ def build():
 <div class="fx-copy">
 <p class="fx-kick">New from Mahj Matchmaker</p>
 <h1><span class="nb">Find <em>Your</em></span> <span class="nb">Mat-ch<sup>&trade;</sup></span></h1>
-<p class="fx-lede">Pick your tiles or your mat, then swipe through the mats that bring out their best&nbsp;colors.</p>
+<p class="fx-lede">Your turn to find your match. Pick your tiles or your mat, then swipe the mats that bring out their best colors, with Tiffany&rsquo;s picks built right&nbsp;in.</p>
 <a class="fx-btn" href="#fymx-app" data-fx-go>Start swiping <span aria-hidden="true">&#9829;</span></a>
 <p class="fx-under">Free, nothing to sign up for. Or <a href="/mahjong-tile-matches">browse the match&nbsp;albums</a>.</p>
 </div>
-<div class="fx-fan" aria-label="Papaya Spritz match cards">{fan}<div class="fx-stamp" aria-hidden="true">It&rsquo;s a mat-ch!</div><div class="fx-sw" aria-hidden="true"><span class="no">&#10005;</span><span class="yes">&#9829;</span></div></div>
+<div class="fx-phones"><img src="{PHONES}hero-phones.webp" alt="{html.escape(HERO_ALT)}" width="900" height="868" fetchpriority="high" decoding="async"></div>
 </div></section>
 <section class="fx-how"><div class="fx-wrap">
-<div class="fx-head"><p class="fx-kick">How it works</p><h2>Three steps to your&nbsp;match</h2></div>
+<div class="fx-head"><p class="fx-kick">How it works</p><h2>Six steps to your&nbsp;match</h2></div>
 <ol class="fx-steps">{steps}</ol>
 </div></section>
 <section class="fx-app" id="fymx-app">
@@ -284,6 +279,7 @@ def build():
 <div class="fx-side r"><div class="fx-card"><p>Use code</p><strong>MAHJMATCH</strong><p>to save at 30+ partner&nbsp;brands</p></div><button type="button" class="fx-pill" data-fx-fs>{FS_ICON}Open full screen</button><a class="fx-pill" href="/mahjong-tile-matches">Browse the albums</a></div>
 </div>
 <p class="fx-code">Use code <b>MAHJMATCH</b> to save at 30+ partner&nbsp;brands</p>
+<p class="fx-fb">Something look off or have an idea? <a href="{FEEDBACK}">Tell me here&nbsp;&rarr;</a></p>
 </section>
 <section class="fx-faq"><div class="fx-wrap">
 <div class="fx-head"><p class="fx-kick">Good to know</p><h2>Questions, <em>answered</em></h2></div>
@@ -295,7 +291,7 @@ def build():
 <div class="fx-covers">{covers}</div>
 <p class="fx-more"><a class="fx-btn" href="/mahjong-tile-matches">See all match&nbsp;albums</a></p>
 </div></section>
-<p class="fx-disc">Affiliate links: I may earn a commission.</p>
+<p class="fx-disc">Something look off or have an idea? <a href="{FEEDBACK}">Tell me here&nbsp;&rarr;</a><br>Affiliate links: I may earn a commission.</p>
 </div>
 <style>{CSS}</style>
 <script>{JS.replace('__IDX__', APP_INDEX).replace('__BASE__', APP_BASE)}</script>

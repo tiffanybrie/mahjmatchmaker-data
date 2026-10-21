@@ -25,12 +25,12 @@ CROP = {
     96210535: (0, 0, 1, 1),
     96212924: (0, 0, .80, .98),    # Sweet Jojo: drop the black bag
     96213709: (0, 0, .845, .96),       # green tropical plants: drop the black bag
-    96213996: (0, 0, .87, .95),         # beige & white floral chinoiserie (bag painted out, keeps the Greek-key border)
+    96213996: (0, 0, .82, .906),        # beige & white floral chinoiserie: the mat only (x 2-1145, y 4-1146 of 1400x1268)
     96216016: (0, 0, 1, .955),        # yellow floral: drop the black bag
-    96237389: (0, 0, .80, .93),        # gothic raven mat: drop the black mat bag
+    96237389: (0, 0, .84, .89),        # gothic raven mat: whole mat (x 4-407, y 10-414 of 489x470), bag dropped
     96214131: (0, 0, 1, .94),        # jelly tote: drop the printed '*does not include...' line
     96127861: (.18, .22, .80, .83),  # Mahjong House tile shots: tight to the tile rows
-    96127725: (.20, .13, .80, .66),
+    96127725: (.22, .17, .80, .66),
     96127601: (.19, .22, .75, .71),
     96130241: (.08, .28, .80, .82),
     96229865: (0, 0, 1, .66),        # cognac leather tile bag: the big bag only
@@ -39,7 +39,7 @@ CROP = {
 PAINT = {
     96217176: [(0, 0, .785, .295), (.76, 0, 1, .765)],   # tortoise racks: pink box + paisley bag
     96217490: [(0, 0, .785, .26), (.765, 0, 1, .75)],    # clear racks: pink box + paisley bag
-    96213996: [(.83, 0, 1, 1)],                          # beige floral: black bag
+    96213996: [(.818, 0, 1, 1)],                         # beige floral: black bag (right border rebuilt by MIRROR below)
 }
 # contrast boost so clear acrylic still reads at phone size
 ENH = {96217490: 2.4}
@@ -57,12 +57,16 @@ NOFIT = {
     96237389, 96233460, 96234587, 96237159,                              # holiday/halloween hero mats + table shots
 }
 # black flipped-back corners patched with the mirrored opposite corner: (corner, w frac, h frac)
-FIX = {
-    96210535: [('tr', .36, .36)],    # pink bows
-    96213996: [('tr', .42, .34)],    # beige floral (after crop)
-    96237389: [('tr', .30, .24)],    # gothic raven
-    96233460: [('tr', .085, .085)],  # santa & reindeer: just the black flap
-}
+FIX = {}
+# flipped-back corner on a 4-fold symmetric mat: rebuild it from the top-left corner rotated 90 deg clockwise, so borders and
+# the inner panel line up exactly (a mirrored patch left a step + a doubled inner-panel corner). (mat x, mat y, mat size, patch px)
+ROTFIX = {96237389: (4, 10, 404, 112),   # gothic raven (source is 489px; no larger clean image exists)
+          96210535: (2, 2, 460, 176),    # pink bows
+          96213996: (2, 4, 1143, 525)}   # beige floral chinoiserie
+# the bag hides a mat's right border: rebuild it from the left border, mirrored (mat x, mat y, mat size, strip px)
+MIRROR = {96213996: (2, 4, 1143, 100)}   # keeps the Greek-key border on all four sides
+# black flap on a non-symmetric mat: paint just the dark flap pixels white inside this box (fractions), leaving a clean dog-ear
+FLAP = {96233460: (.86, 0, 1, .16)}     # santa & reindeer: patching broke the candy-cane border and doubled the holly
 
 COVERS = [
  # id, slug, title, tagline, kicker, accent, layout, picks (hero first; 3-up = [hero, left, right]; 6-up = [hero, under-hero, 4 corners])
@@ -136,6 +140,18 @@ def load(pid):
     if pid in ENH:
         from PIL import ImageEnhance
         im = ImageEnhance.Contrast(im).enhance(ENH[pid]); im = ImageEnhance.Brightness(im).enhance(.97)
+    if pid in MIRROR:
+        x0, y0, n, k = MIRROR[pid]
+        im.paste(im.crop((x0, y0, x0 + k, y0 + n)).transpose(Image.FLIP_LEFT_RIGHT), (x0 + n - k, y0))
+    if pid in ROTFIX:
+        x0, y0, n, k = ROTFIX[pid]
+        im.paste(im.crop((x0, y0, x0 + k, y0 + k)).transpose(Image.ROTATE_270), (x0 + n - k, y0))
+    if pid in FLAP:
+        l, t, r, b = FLAP[pid]; px = im.load()
+        for y in range(int(t * im.height), int(b * im.height)):
+            for x in range(int(l * im.width), int(r * im.width)):
+                R_, G_, B_ = px[x, y]
+                if max(R_, G_, B_) < 110 and max(R_, G_, B_) - min(R_, G_, B_) < 30: px[x, y] = (255, 255, 255)
     if pid in CROP:
         l, t, r, b = CROP[pid]; im = im.crop((int(l * im.width), int(t * im.height), int(r * im.width), int(b * im.height)))
     for corner, fw, fh in FIX.get(pid, []):
@@ -195,8 +211,8 @@ def make(cid, slug, title, tag, kicker, accent, layout, picks):
     top = y + 22
     area_c = (top + H) / 2; avail = H - top - 20
     if layout == 3:
-        hero = min(int(avail * .80), 480); side = 290; area_c -= 60
-        pos = [(200, area_c + 14, side, -5), (880, area_c + 14, side, 5), (540, area_c, hero, -1)]
+        hero = min(int(avail * .80), 440); side = 290; area_c -= 8   # sides sit beside the hero, not under it
+        pos = [(178, area_c + 10, side, -3), (902, area_c + 10, side, 3), (540, area_c, hero, -1)]
         order = [picks[1], picks[2], picks[0]]
     elif layout == 32:   # 3 x 2 grid, hero top-centre (every card fully visible)
         cs = int(min(avail * .47, 315)); hs = int(cs * 1.06)
@@ -210,9 +226,9 @@ def make(cid, slug, title, tag, kicker, accent, layout, picks):
                (540, area_c + avail * .30, low, 2), (540, area_c - avail * .12, hero, -1.5)]
         order = [picks[2], picks[3], picks[4], picks[5], picks[1], picks[0]]
     else:   # 5-up: hero centre, two on each side
-        hero = min(int(avail * .80), 480); side = int(min(avail * .43, 280))
-        pos = [(185, area_c - avail * .23, side, -6), (895, area_c - avail * .21, side, 5),
-               (190, area_c + avail * .25, side, 4), (890, area_c + avail * .25, side, -4), (540, area_c + 6, hero, -1.5)]
+        hero = min(int(avail * .80), 440); side = int(min(avail * .43, 272))
+        pos = [(176, area_c - avail * .23, side, -4), (904, area_c - avail * .21, side, 4),
+               (178, area_c + avail * .25, side, 3), (902, area_c + avail * .25, side, -3), (540, area_c + 6, hero, -1.5)]
         order = [picks[1], picks[2], picks[3], picks[4], picks[0]]
     for p, (cx, cy, s, r) in zip(order, pos): place(c, card(p, s, r), cx, cy)
     c.convert('RGB').save(OUT + slug + '.jpg', quality=90)

@@ -1,0 +1,100 @@
+<div id="mmfym" data-mmfym="prelaunch-v1">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Bitter:ital,wght@0,500;0,700;1,700&display=swap');
+/* hide the old homepage hero section; this block draws the new one in its place */
+body.mmfym-on #page section[data-section-id="69b1d01489d0f8016ee3d59f"],.mmfym-old{display:none!important}
+.fe-block:has(#mmfym){display:none!important}
+#mmfym{--navy:#062a55;--rose:#c8325f;--pink:#f56c8c;--cream:#fffaf5;--blush:#fdeef2;--ink:#2d3a52;color:var(--navy);font-family:'Bitter',Georgia,serif}
+#mmfym *{box-sizing:border-box}
+#mmfym .w{max-width:1180px;margin:0 auto;padding:0 20px}
+#mmfym p{margin:0}
+#mmfym h1,#mmfym h2,#mmfym h3{font-family:'Caprasimo',Georgia,serif;font-weight:400;color:var(--navy);margin:0;text-wrap:balance;letter-spacing:0}
+#mmfym p,#mmfym li{text-wrap:pretty}
+#mmfym .nb{white-space:nowrap}
+#mmfym .hero{position:relative;overflow:hidden;padding:36px 0 44px;background:radial-gradient(circle at 80% 48%,#fbd9e2 0,#fbd9e2 33%,transparent 33.2%),radial-gradient(circle at 2% 100%,var(--blush) 0,var(--blush) 15%,transparent 15.2%),var(--cream)}
+#mmfym .hg{display:grid;grid-template-columns:1fr;gap:26px;align-items:center;text-align:center}
+#mmfym .pill{display:inline-block;background:var(--navy);color:#fff;font:700 13px/1 'Bitter',Georgia,serif;letter-spacing:.16em;text-transform:uppercase;padding:9px 16px 8px;border-radius:99px}
+#mmfym h1{font-size:clamp(44px,11vw,78px);line-height:1.02;margin-top:16px;word-spacing:-.06em}
+#mmfym h1 em{font-style:italic}
+#mmfym h1 sup{font-family:'Bitter',Georgia,serif;font-weight:700;font-size:.28em;vertical-align:super;margin-left:.06em;letter-spacing:0}
+#mmfym .lede{font-size:clamp(18px,4.6vw,21px);line-height:1.45;color:var(--ink);margin:16px auto 0;max-width:30em}
+#mmfym .acts{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;justify-content:center;margin-top:24px}
+#mmfym .btn{display:inline-flex;align-items:center;gap:.5em;min-height:54px;padding:0 30px;border-radius:999px;background:var(--rose);color:#fff!important;text-decoration:none!important;font:700 18px/1 'Bitter',Georgia,serif;box-shadow:0 12px 26px rgba(200,50,95,.28);transition:transform .15s ease}
+#mmfym .btn:hover{transform:translateY(-2px)}
+#mmfym .tl{color:var(--navy)!important;font-weight:700;font-size:16px;text-decoration:underline!important;text-underline-offset:3px}
+#mmfym .small{font-size:14.5px;color:#5b6577;margin-top:14px}
+#mmfym .art{position:relative;max-width:560px;margin:0 auto;width:100%}
+#mmfym .art img{display:block;width:100%;height:auto}
+#mmfym .stamp{position:absolute;left:-2%;top:4%;width:104px;height:104px;border-radius:50%;background:var(--rose);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-10deg);box-shadow:0 10px 22px rgba(200,50,95,.3);text-align:center}
+#mmfym .stamp small{font:700 11px/1 'Bitter',Georgia,serif;letter-spacing:.14em;text-transform:uppercase}
+#mmfym .stamp b{font:400 30px/1 'Caprasimo',Georgia,serif;margin-top:4px}
+#mmfym .how{background:#fff;padding:48px 0 52px}
+#mmfym .hh{text-align:center;margin-bottom:26px}
+#mmfym .kick{font:700 13px/1 'Bitter',Georgia,serif;letter-spacing:.18em;text-transform:uppercase;color:var(--rose)}
+#mmfym h2{font-size:clamp(30px,7.4vw,46px);line-height:1.08;margin-top:10px}
+#mmfym .steps{list-style:none;margin:0 -20px;padding:4px 20px 10px;display:grid;grid-auto-flow:column;grid-auto-columns:72%;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+#mmfym .steps::-webkit-scrollbar{display:none}
+#mmfym .st{scroll-snap-align:center;text-align:center;background:var(--cream);border-radius:22px;padding:18px 14px 20px}
+#mmfym .st img{display:block;width:100%;max-width:230px;height:auto;margin:0 auto}
+#mmfym .n{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--navy);color:#fff;font:700 15px/1 'Bitter',Georgia,serif;margin-top:12px}
+#mmfym h3{font-size:22px;line-height:1.15;margin-top:10px}
+#mmfym .st p{font-size:15.5px;line-height:1.45;color:var(--ink);margin-top:8px}
+#mmfym .swipehint{text-align:center;font-size:13.5px;color:#7a8394;margin-top:10px}
+#mmfym .howcta{text-align:center;margin-top:26px}
+@media(min-width:800px){
+ #mmfym .hero{padding:56px 0 64px}
+ #mmfym .hg{grid-template-columns:1.02fr 1fr;gap:40px;text-align:left}
+ #mmfym .lede{margin-left:0}
+ #mmfym .acts{justify-content:flex-start}
+ #mmfym .art{max-width:600px}
+ #mmfym .stamp{width:124px;height:124px;left:0}
+ #mmfym .stamp b{font-size:36px}
+ #mmfym .how{padding:72px 0 76px}
+ #mmfym .steps{margin:0;padding:0;grid-auto-flow:row;grid-template-columns:repeat(3,1fr);grid-auto-columns:auto;gap:26px;overflow:visible}
+ #mmfym .st{padding:24px 22px 26px}
+ #mmfym .swipehint{display:none}
+}
+</style>
+<section class="hero" aria-labelledby="mmfym-h1"><div class="w hg">
+<div class="copy">
+<span class="pill">Coming 10.27</span>
+<h1 id="mmfym-h1"><span class="nb">Find <em>Your</em></span> <span class="nb">Mat-ch<sup>&trade;</sup></span></h1>
+<p class="lede">Pick your tiles, then swipe through the mats and racks that bring out their best colors. Opens Tuesday, October&nbsp;27.</p>
+<div class="acts"><a class="btn" href="#mmfym-signup" data-mmfym-signup>Save my spot <span aria-hidden="true">&#9829;</span></a><a class="tl" href="/mahjong-tile-matches">or browse the albums</a></div>
+<p class="small">I&rsquo;ll email you the minute it opens. Until then, my match albums are live right&nbsp;now.</p>
+</div>
+<div class="art"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@bc461bdc8cd96e698825bb2d1fa580b91e292f9e/assets/site/home-prelaunch/hero-phones.webp" width="900" height="868" fetchpriority="high" decoding="async" alt="Find Your Mat-ch on a phone: Papaya Spritz tiles on the Heiress mat by Britt Mills, Tiffany's match, with the X and heart buttons, next to the start screen where you pick I have tiles or I have a mat"><div class="stamp" aria-hidden="true"><small>Opens</small><b>10.27</b></div></div>
+</div></section>
+<section class="how" aria-labelledby="mmfym-how"><div class="w">
+<div class="hh"><p class="kick">How it works</p><h2 id="mmfym-how">Six steps to your&nbsp;match</h2></div>
+<ol class="steps">
+<li class="st"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@bc461bdc8cd96e698825bb2d1fa580b91e292f9e/assets/site/home-prelaunch/step1.webp" width="480" height="936" loading="lazy" decoding="async" alt="The start screen with two doors: I have tiles, or I have a mat, plus Shop by color"><span class="n">1</span><h3>Pick your&nbsp;door</h3><p>Start with the tiles you own, or start with the mat you&nbsp;love.</p></li>
+<li class="st"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@bc461bdc8cd96e698825bb2d1fa580b91e292f9e/assets/site/home-prelaunch/step2.webp" width="480" height="936" loading="lazy" decoding="async" alt="Swiping mats for Papaya Spritz tiles: the Heiress mat by Britt Mills, with the X and heart buttons"><span class="n">2</span><h3>Swipe &#10005; or&nbsp;&#9829;</h3><p>Heart the mats you&rsquo;d take home. &#10005; the rest. Pinch any photo to&nbsp;zoom.</p></li>
+<li class="st"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@bc461bdc8cd96e698825bb2d1fa580b91e292f9e/assets/site/home-prelaunch/step3.webp" width="480" height="936" loading="lazy" decoding="async" alt="The Tiffany's picks button switched to Showing: all mats"><span class="n">3</span><h3>My picks, on or&nbsp;off</h3><p>See my favorite matches first, or switch to every mat from our partner&nbsp;brands.</p></li>
+<li class="st"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@bc461bdc8cd96e698825bb2d1fa580b91e292f9e/assets/site/home-prelaunch/step4.webp" width="480" height="936" loading="lazy" decoding="async" alt="The color dots above the swipe, with Pink selected"><span class="n">4</span><h3>Shop by&nbsp;color</h3><p>Tap a color dot to see only the mats in that color. Tap again to&nbsp;clear.</p></li>
+<li class="st"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@bc461bdc8cd96e698825bb2d1fa580b91e292f9e/assets/site/home-prelaunch/step5.webp" width="480" height="936" loading="lazy" decoding="async" alt="The racks step: Papaya Spritz tiles on the Heiress mat with Middle and Main Scalloped Beechwood racks"><span class="n">5</span><h3>Choose your&nbsp;racks</h3><p>Every couple needs a wingman. Swipe racks to finish the&nbsp;table.</p></li>
+<li class="st"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@bc461bdc8cd96e698825bb2d1fa580b91e292f9e/assets/site/home-prelaunch/step6.webp" width="480" height="936" loading="lazy" decoding="async" alt="The finished match card: Papaya Spritz tiles on the Heiress mat with Beechwood racks"><span class="n">6</span><h3>Save your match&nbsp;card</h3><p>Save it, share it with your mahj group, and shop it with code&nbsp;MAHJMATCH.</p></li>
+</ol>
+<p class="swipehint">Swipe for all six steps &rarr;</p>
+<div class="howcta"><a class="btn" href="#mmfym-signup" data-mmfym-signup>Save my spot <span aria-hidden="true">&#9829;</span></a></div>
+</div></section>
+<script>
+(function(){
+ var b=document.getElementById('mmfym');if(!b||b.dataset.moved)return;b.dataset.moved=1;
+ document.body.classList.add('mmfym-on');
+ function place(){
+  var secs=document.querySelectorAll('#page article > .page-section, #page .sections > .page-section, #page section.page-section');
+  var first=secs[0];
+  if(first&&!first.contains(b)){first.parentNode.insertBefore(b,first);first.classList.add('mmfym-old');}
+  // signup target = the existing homepage Newsletter block ("Get New Matches First")
+  var nl=document.querySelector('.newsletter-block, .sqs-block-newsletter');
+  if(nl){nl.id='mmfym-signup';}
+  document.querySelectorAll('[data-mmfym-signup]').forEach(function(a){
+   if(!nl){a.href='/mahjong-tile-matches';return;}
+   a.addEventListener('click',function(e){e.preventDefault();nl.scrollIntoView({behavior:'smooth',block:'center'});var i=nl.querySelector('input[type=email],input');if(i)setTimeout(function(){i.focus({preventScroll:true})},600);});
+  });
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',place);else place();
+})();
+</script>
+</div>
