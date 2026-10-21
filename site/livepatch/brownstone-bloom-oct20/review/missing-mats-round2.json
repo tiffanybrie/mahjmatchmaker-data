@@ -4,7 +4,9 @@
   "Amanda Toppe": "Blue Willow, City Queen, Hydrangea Bliss, Limelight, Pink Winds, Pink Orchids: clean pastel / cool blue, no wine, olive or brown (clean-on-earthy).",
   "Ozark Winslow 1920 Rouge": "good colours but ozarkmahjong.com now redirects to a lander (dead shop link)",
   "LBB Fall Flowers": "good colours but our catalog row has no shop link",
-  "plaids (Retro Plaid, Country House, Tartan Tweed)": "she cancelled Handbook Plaid + Harvest Plaid"
+  "plaids (Retro Plaid, Country House, Tartan Tweed)": "she cancelled Handbook Plaid + Harvest Plaid",
+  "Mocha Kaleidoscope (Let's Be Besties)": "dropped Oct 21 after QA: the only product shot shows black, white and grey (the swatch read mocha); no wine/olive/ivory warmth",
+  "Glory (Britt Mills)": "dropped Oct 21 after QA: patriotic red/white/blue palette doesn't fit"
  },
  "candidates": [
   {
@@ -23,16 +25,8 @@
    "fym_key": "brittmillsdesign.com/novella-leatherette-mahjong-mat",
    "shop": "https://brittmillsdesign.com/products/novella-leatherette-mahjong-mat?sca_ref=11205153.24gc8ncLZw3",
    "img": "candidates/02-novella-leatherette-britt-mills.jpg",
-   "why": "Wine border, lavender butterfly at the center, olive and saffron florals."
-  },
-  {
-   "id": "bbr2-03",
-   "mat": "Mocha Kaleidoscope",
-   "brand": "Let's Be Besties",
-   "fym_key": "letsbebesties.com/mocha-kaleidoscope-artist-collab-leatherette-mahjong-mat",
-   "shop": "https://letsbebesties.com/products/mocha-kaleidoscope-artist-collab-leatherette-mahjong-mat?sca_ref=12515508.SUyXEjJsqV",
-   "img": "candidates/03-mocha-kaleidoscope-let-s-be-besties.jpg",
-   "why": "Mocha, black and cream kaleidoscope; reads like the chocolate in her own mat."
+   "why": "Blush center with a mauve butterfly, wine-red border, saffron and olive florals.",
+   "photo": "brittmillsdesign.com product image 8 (flat, no tiles)"
   },
   {
    "id": "bbr2-04",
@@ -41,7 +35,8 @@
    "fym_key": "splashofcolorco.com/william-morris-inspired-rose-wreath-mahjong-mat",
    "shop": "https://splashofcolorco.com/products/william-morris-inspired-rose-wreath-mahjong-mat",
    "img": "candidates/04-william-morris-inspired-rose-wreath-splash-of-color.jpg",
-   "why": "Saffron, olive and brown William Morris florals on navy; photo is a room shot."
+   "why": "Saffron, olive and rust William Morris florals on teal, cream acanthus border.",
+   "photo": "splashofcolorco.com product image 2, cropped to the mat (no bag)"
   },
   {
    "id": "bbr2-05",
@@ -71,22 +66,14 @@
    "why": "Amanda Toppe: greige cane center with sage florals and a periwinkle edge."
   },
   {
-   "id": "bbr2-08",
-   "mat": "Glory",
-   "brand": "Britt Mills",
-   "fym_key": "brittmillsdesign.com/glory-neoprene-mahjong-mat-copy",
-   "shop": "https://brittmillsdesign.com/products/glory-neoprene-mahjong-mat-copy?sca_ref=11205153.24gc8ncLZw3",
-   "img": "candidates/08-glory-britt-mills.jpg",
-   "why": "Moths and butterflies in wine and blush on cream, slate border."
-  },
-  {
    "id": "bbr2-09",
    "mat": "Knox",
    "brand": "Britt Mills",
    "fym_key": "brittmillsdesign.com/knox-neoprene-mahjong-mat",
    "shop": "https://brittmillsdesign.com/products/knox-neoprene-mahjong-mat?sca_ref=11205153.24gc8ncLZw3",
    "img": "candidates/09-knox-britt-mills.jpg",
-   "why": "Olive center, deer and saffron florals on a dark border."
+   "why": "Sage center, ivory trellis, fawns and saffron accents on a dark olive border.",
+   "photo": "brittmillsdesign.com product image 7 (flat corner)"
   },
   {
    "id": "bbr2-10",
@@ -122,7 +109,8 @@
    "fym_key": "brittmillsdesign.com/regal-bloom-neoprene-mahjong-mat",
    "shop": "https://brittmillsdesign.com/products/regal-bloom-neoprene-mahjong-mat",
    "img": "candidates/13-regal-bloom-britt-mills.jpg",
-   "why": "Lilac center with a tiger, dark wine and green florals."
+   "why": "Lilac center with a tiger, dark wine and green florals.",
+   "photo": "brittmillsdesign.com listing image, cropped to the mat render (no promo text)"
   },
   {
    "id": "bbr2-14",
@@ -131,7 +119,8 @@
    "fym_key": "brittmillsdesign.com/legacy-britt-mills-mahjong-mat",
    "shop": "https://brittmillsdesign.com/products/legacy-britt-mills-mahjong-mat?sca_ref=11205153.24gc8ncLZw3",
    "img": "candidates/14-legacy-britt-mills.jpg",
-   "why": "Leopard on dark green with blush roses; olive and wine."
+   "why": "Leopard on dark green with blush roses; olive and wine.",
+   "photo": "brittmillsdesign.com listing image, cropped to the mat render (no promo text)"
   },
   {
    "id": "bbr2-15",
@@ -142,5 +131,6 @@
    "img": "candidates/15-midnight-wildflowers-with-camel-fringe-tala-mahj.jpg",
    "why": "Tala (ShopMy favorite): gold and rust wildflowers on midnight, camel fringe."
   }
- ]
+ ],
+ "_qa_oct21": "Independent QA fixes: Britt Mills promo graphics (SHIPS FROM THE USA / BEWARE OF COUNTERFEITS) replaced with clean mat shots; Rose Wreath room shot replaced with a flat shot; Mocha + Glory dropped. 13 candidates."
 }

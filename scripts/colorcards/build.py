@@ -183,7 +183,9 @@ def desktop(S, out):
     label(c, d, 1668, 690, lab('mats'), P('Poppins-Bold.ttf', 28), NAVY, 7, True); d = ImageDraw.Draw(c)
     mats_row(c, S, 1412, 742, 150, 20, 21); d = ImageDraw.Draw(c)
     d.rounded_rectangle((1420, 958, 1916, 1020), radius=31, fill=NAVY)
-    d.text((1668, 989), S.get('shop', 'Shop OMM · code MAHJMATCH'), font=P('Poppins-Bold.ttf', 26), fill=(255, 255, 255), anchor='mm')
+    t = S.get('shop', 'Shop OMM · code MAHJMATCH'); fs = 26
+    while fs > 16 and d.textlength(t, font=P('Poppins-Bold.ttf', fs)) > 456: fs -= 1  # Oct 21: longer pill text shrinks to fit (desktop + mobile say the same thing)
+    d.text((1668, 989), t, font=P('Poppins-Bold.ttf', fs), fill=(255, 255, 255), anchor='mm')
     c.save(out, quality=92)
 
 def mobile(S, out):

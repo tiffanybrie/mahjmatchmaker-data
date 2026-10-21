@@ -81,11 +81,16 @@ body.mmfym-on #page section[data-section-id="69b1d01489d0f8016ee3d59f"],.mmfym-o
 <script>
 (function(){
  var b=document.getElementById('mmfym');if(!b||b.dataset.moved)return;b.dataset.moved=1;
+ // pre-launch only: at launch (Tue Oct 27, 9:00am CT = 14:00 UTC) this block removes itself and the original hero shows again
+ if(Date.now()>=Date.parse('2026-10-27T14:00:00Z')){b.remove();return;}
  document.body.classList.add('mmfym-on');
  function place(){
   var secs=document.querySelectorAll('#page article > .page-section, #page .sections > .page-section, #page section.page-section');
   var first=secs[0];
   if(first&&!first.contains(b)){first.parentNode.insertBefore(b,first);first.classList.add('mmfym-old');}
+  var hd=document.querySelector('header#header, #header');
+  function pad(){if(!hd)return;var cs=getComputedStyle(hd);b.style.paddingTop=(cs.position==='fixed'||cs.position==='absolute')?Math.max(0,Math.round(hd.getBoundingClientRect().bottom))+'px':'';}
+  pad();window.addEventListener('resize',pad);
   // signup target = the existing homepage Newsletter block ("Get New Matches First")
   var nl=document.querySelector('.newsletter-block, .sqs-block-newsletter');
   if(nl){nl.id='mmfym-signup';}
