@@ -281,3 +281,8 @@ Rules that apply every week:
 - New habit to build: when a brand offers a pre-order (OMM gave teachers early access to Papaya, a first), buy the set early and shoot her own styled table / ShopMy shots (IRL content in the Mahj Lately style) alongside the matches. IRL photos + matches + collabs = the edge.
 - Mats she has on hand now: Larkspur (for an upcoming giveaway).
 - Watch for future pre-orders and flag them to her the day they open.
+
+## Content bank (Tiffany, Oct 21 3:32pm)
+- Seasonal content first (fall now, then holiday). Year-round albums like Petalée are BANKED: built and ready, held for a slow week so we never run dry.
+- Brownstone Bloom (fall) goes before Petalée. Petalée's story and pin (drafted for Sat Oct 24) wait until we choose to release it.
+- Keep 2–3 finished, unreleased albums in the bank at all times.

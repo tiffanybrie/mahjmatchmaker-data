@@ -1,0 +1,22 @@
+<!-- mm-disclosure: footer affiliate disclosure (Tiffany Oct 21 3:22/3:25pm). Rollback = delete this block. -->
+<style>
+.mm-disc{position:relative;z-index:2;margin:0;padding:4px 4vw 16px;text-align:center;font-size:11.5px!important;line-height:1.5!important;letter-spacing:0!important;text-transform:none!important;opacity:.72}
+@media(min-width:1200px){.mm-disc{white-space:nowrap}}
+</style>
+<script>
+(function(){
+ function go(){
+  var f=document.querySelector('footer.sections')||document.querySelector('footer');
+  if(!f||f.querySelector('.mm-disc'))return;
+  var secs=f.querySelectorAll('section'),host=secs.length?secs[secs.length-1]:f;
+  var ref=f.querySelector('p')||f, p=document.createElement('p');
+  p.className='mm-disc';
+  p.style.color=getComputedStyle(ref).color;
+  p.style.fontFamily=getComputedStyle(ref).fontFamily;
+  p.textContent='Some links on this site are affiliate links, which means I may earn a commission at no extra cost to you. All opinions are my own. As an Amazon Associate I earn from qualifying purchases.';
+  host.appendChild(p);
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
+})();
+</script>
+<!-- /mm-disclosure -->
