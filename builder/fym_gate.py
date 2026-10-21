@@ -18,8 +18,11 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
  12 no Mahjong Studios mat visible in FYM or in the staged Mat Gallery (Tiffany Oct 20 22:31: tiles/racks stay, mats go); no removed
     gallery row back in site/livepatch/matgallery/matgallery-v5.html
  13 staged Mat Gallery (Oct 20 late): non-partner lockout hard FAIL, late-call holiday mats Holiday-only (gallery + FYM), her also/remove/floral
-    calls present, holiday_off empty, lead/tail pins match late-calls, section sort = lead > primaries by share > also+accent by share > tail
- 8b colour-chip order (Oct 20 22:31/22:45): sh (measured share) lines up with mf; CSORT sorts lead > primaries by share > also+accent by share
+    calls present, holiday_off empty, lead/tail pins match late-calls, section sort = lead > ONE list by score > tail, where
+    score = measured share of the colour + 20 if it is the mat's primary (ties: primary first, then name). Checked by RUNNING the page's
+    sk + sort in node over every section (Oct 20 late: near-0% primaries sat above Coralia 40% / Pink Tiger 20% in Orange)
+ 8b colour-chip order: sh (measured share) lines up with mf; CSORT (single chip) = lead > ONE list by score (share + 20 if primary),
+    checked by running CSORT in node over every chip colour
 """
 import sys, os, json, re
 import numpy as np
@@ -129,8 +132,32 @@ if 'No mats with all of those yet' not in fn('NOAND') or 'data-fclear' not in fn
 if UI.count('class="dempty">${NOAND}') < 2: F.append("[8] mat-door zero-result message missing (grid + search reset)")
 if "filters('m')+" not in fn('renderMats'): F.append("[8] colour chips not rendered above the deck (filter could lock)")
 if "fam:''" in UI or 'S.dfam=' in UI: F.append("[8] single-colour filter state left over (fam:'' / S.dfam)")
-if 'SHR(id,c)' not in fn('CSORT') or 'D.lead' not in fn('CSORT') or 't>0?1:0' not in fn('CSORT'):
-    F.append("[8b] colour chips not sorted lead > primaries by measured share > also+accent merged by share (CSORT/SHR)")
+if 'D.lead' not in fn('CSORT') or '-(SHR(id,C[0])+20*p)' not in fn('CSORT') or 'Mahjong Studios' in fn('CSORT'):
+    F.append("[8b] colour chips not sorted lead > ONE list by score (share + 20 if primary) (CSORT/SHR)")
+import subprocess
+def _node(js):
+    r = subprocess.run(['node', '-'], input=js, capture_output=True, text=True)
+    if r.returncode: return None, [l_ for l_ in r.stderr.splitlines() if 'Error' in l_][:1] or r.stderr[-200:]
+    return json.loads(r.stdout), ''
+def _score_order_bad(seq, score, prim):  # one list, high to low; equal score -> primary first
+    for a_, b_ in zip(seq, seq[1:]):
+        if score(a_) < score(b_) - 1e-9 or (abs(score(a_) - score(b_)) < 1e-9 and prim(a_) < prim(b_)): return (a_, b_)
+    return None
+_MS = {k: {f: o.get(f) for f in ('mf', 'mt', 'sh', 'ha', 'n')} for k, o in M.items() if not o.get('hid')}
+_chips = sorted({c for o in _MS.values() for c in (o['mf'] or [])})
+_js = ('const M=' + json.dumps(_MS) + ',D={lead:' + json.dumps(D.get('lead') or {}) + '};' + ';'.join(dict.fromkeys(x_ for x_ in (fn('SHR'), fn('MTI'), fn('CTIER'), fn('CSORT')) if not any(x_ != y_ and x_ in y_ for y_ in (fn('SHR'), fn('MTI'), fn('CTIER'), fn('CSORT'))))) +
+       ';const o={};' + json.dumps(_chips) + '.forEach(c=>{o[c]=CSORT(Object.keys(M).filter(k=>(M[k].mf||[]).includes(c)).sort(),[c])});console.log(JSON.stringify(o))')
+_out, _err = _node(_js)
+if _out is None: F.append(f"[8b] could not run FYM CSORT in node: {_err}")
+else:
+    for c_, seq in _out.items():
+        ld_ = [k for k in (D.get('lead') or {}).get(c_, []) if k in seq]
+        if seq[:len(ld_)] != ld_: F.append(f"[8b] chip {c_}: lead mats not first in her order"); continue
+        mid = seq[len(ld_):]; ix = lambda k: _MS[k]['mf'].index(c_)
+        prim = lambda k: 1 if (_MS[k].get('mt') or [0] + [1] * 9)[ix(k)] == 0 else 0
+        sc = lambda k: ((_MS[k].get('sh') or [])[ix(k)] if ix(k) < len(_MS[k].get('sh') or []) else 0) + 20 * prim(k)
+        bad = _score_order_bad(mid, sc, prim)
+        if bad: F.append(f"[8b] chip {c_}: {_MS[bad[0]]['n']} (score {sc(bad[0]):.1f}) sits above {_MS[bad[1]]['n']} (score {sc(bad[1]):.1f}); rule = share + 20 if primary, high to low")
 for c_, ks_ in (D.get('lead') or {}).items():
     for k_ in ks_:
         if k_ not in M or M[k_].get('hid') or (M[k_].get('mf') or [None])[0] != c_: F.append(f"[8b] lead mat {k_} for {c_} missing, hidden or not {c_} primary")
@@ -209,9 +236,29 @@ for sec_, imgs_ in list(LATE.get('lead', {}).items()) + list(LATE.get('tail', {}
     for img_ in imgs_:
         r = GR.get(img_)
         if r is not None and sec_ not in r[5] and sec_ not in r[8]: F.append(f"[13] pinned mat {r[1]} is not in section {sec_}")
-SKJS = "function sk(x,c){var ld=(LD[c]||[]).indexOf(x[0]);if(ld>-1)return -10+ld/100;var tl=(TL[c]||[]).indexOf(x[0]);if(tl>-1)return 5+tl/100;"
-if SKJS not in _g or "sh=(100-((x[11]&&x[11][c])||0))/250" not in _g or "return 1+ms+sh}" not in _g:
-    F.append("[13] gallery section sort is not lead > primaries by measured share > also+accent by share > tail (sk)")
+# sort rule (Oct 20 late, final): lead pins > ONE list by score (share + 20 if primary; ties primary first, then name) > tail pins.
+# Runs the page's own sk/has/sort in node over every section, then checks the order in Python.
+_sk = re.search(r'function sk\(x,c\)\{.*?\}(?=/\*)', _g); _has = re.search(r'function has\(x,c,m\)\{.*?\}(?=function tier)', _g)
+_srt = re.search(r'L\.sort\(function\(a,b\)\{function k\(i\).*?\}\);', _g)
+_secs = [c_ for c_ in re.findall(r'class="mmg-sec" data-c="([^"]+)"', _g) if c_ != 'retired']
+if not (_sk and _has and _srt and _lt) or 'Mahjong Studios' in _sk.group(0):
+    F.append("[13] gallery section sort (sk / sort) not found or still has a brand rule")
+else:
+    _js = ('const R=' + json.dumps(_G) + ',LD=' + _lt.group(1) + ',TL=' + _lt.group(2) + ';' + _sk.group(0) + _has.group(0) +
+           ';const o={};' + json.dumps(_secs) + '.forEach(c=>{var L=[];R.forEach(function(x,i){if(has(x,c))L.push(i)});' + _srt.group(0) +
+           'o[c]=L});console.log(JSON.stringify(o))')
+    _out, _err = _node(_js)
+    if _out is None: F.append(f"[13] could not run gallery sort in node: {_err}")
+    else:
+        for c_, seq in _out.items():
+            rows = [_G[i] for i in seq]; ids = [r[0] for r in rows]
+            ld_ = [i for i in LATE.get('lead', {}).get(c_, []) if i in ids]; tl_ = [i for i in LATE.get('tail', {}).get(c_, []) if i in ids]
+            if ids[:len(ld_)] != ld_ or (tl_ and ids[-len(tl_):] != tl_): F.append(f"[13] section {c_}: lead/tail pins not at top/bottom in her order"); continue
+            mid = rows[len(ld_):len(rows) - len(tl_)]
+            prim = lambda r: 1 if (c_ in [r[5][0]] + (r[9] or []) and c_ in r[5]) else 0
+            sc = lambda r: (r[11] or {}).get(c_, 0) + 20 * prim(r)
+            bad = _score_order_bad(mid, sc, prim)
+            if bad: F.append(f"[13] section {c_}: {bad[0][1]} (score {sc(bad[0]):.1f}) sits above {bad[1][1]} (score {sc(bad[1]):.1f}); rule = share + 20 if primary, high to low")
 if D.get('lead', {}).get('green') != [GKEY(i) for i in LATE['lead']['green']]: F.append("[13] FYM D.lead.green differs from late-calls lead.green")
 
 if W:
