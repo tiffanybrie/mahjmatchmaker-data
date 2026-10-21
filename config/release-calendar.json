@@ -638,6 +638,81 @@
    "affiliate": false,
    "priority": 1,
    "contentTiming": "HOLD Coquette content. LSF '12 Days of Fancy' holiday drops started Oct 21: watch daily for a Coquette restock in that series."
+  },
+  {
+   "id": "ar-green-light-gatsby",
+   "brand": "Anders Ruff",
+   "product": "Green Light Gatsby tile set",
+   "type": "launch",
+   "date": "2026-10-21",
+   "status": "public launch Wed Oct 21 (pre-order; first run ships January, next March 2027), $475",
+   "source": "Anders Ruff Insider email Oct 20 4:15pm ET",
+   "sourceUrl": "https://shop.andersruff.com/products/green-light-gatsby-mahjong-tile-set",
+   "album": "Upcoming album (swipe book built: https://claude.ai/artifact/PNi1a7ckEZKQwxDs88sVJ7)",
+   "affiliate": true,
+   "priority": 2,
+   "contentTiming": "NOT NOW (Tiffany, Oct 21). Album waits until after the FYM launch; see upcomingAlbums. Ships Jan/Mar, so the buying window is the pre-order and the ship dates.",
+   "notes": "Moved off HQ needs Oct 21 cleanup."
+  },
+  {
+   "id": "hhm-rackin-rudolph-restock",
+   "brand": "Hip Hip Mahjong",
+   "product": "Rackin' Rudolph tiles (restock) + mat, shufflers",
+   "type": "restock",
+   "date": "2026-10-20",
+   "status": "in stock Oct 20 ($375)",
+   "source": "products.json + product page, Oct 20 17:25 UTC",
+   "sourceUrl": "https://www.hiphipmahjong.com/products/rackin-rudolph-tiles",
+   "album": false,
+   "affiliate": true,
+   "priority": 2,
+   "contentTiming": "Holiday: a Rudolph mood board / story only through Planoly. Restock is the money window. No holiday feed posts before Nov 1 unless Tiffany says.",
+   "notes": "Moved off HQ needs Oct 21 cleanup (social lives in Planoly)."
+  },
+  {
+   "id": "omm-sparrow-shufflers-restock",
+   "brand": "Oh My Mahjong",
+   "product": "Southern Sparrow Shufflers (restock)",
+   "type": "restock",
+   "date": "2026-10-20",
+   "status": "back in stock (OMM email Oct 20 11:27am CT)",
+   "source": "OMM customer email",
+   "sourceUrl": "https://ohmymahjong.com/products/southern-sparrow-shufflers",
+   "album": false,
+   "affiliate": true,
+   "priority": 3,
+   "contentTiming": "Accessory: optional story mention with MAHJMATCH through Planoly.",
+   "notes": "Moved off HQ needs Oct 21 cleanup."
+  },
+  {
+   "id": "plm-vegan-leather-mats",
+   "brand": "Peace Love Mahjong",
+   "product": "Vegan Leather mats (Cognac, Metallic, Dusty Rose, Slate Blue) + Pusher Rack Bags + Navy Rack Bag",
+   "type": "launch",
+   "date": "2026-10-20",
+   "status": "live Oct 20",
+   "source": "PLM affiliate email Oct 20 9:26am ET",
+   "sourceUrl": "https://peacelovemahjong.com/products/leather-mat-with-mat-tube",
+   "album": false,
+   "affiliate": true,
+   "priority": 2,
+   "contentTiming": "Solid mats: good FYM/gallery adds; optional story through Planoly. Navy colorway: separate item plm-navy-vegan (do not post until live).",
+   "notes": "Moved off HQ needs Oct 21 cleanup."
+  },
+  {
+   "id": "soiree-holiday-mats",
+   "brand": "Soirée All Day",
+   "product": "Holiday mats (Toasty & Tipsy, Poinsettia Party, Home for the Holidays, Color Me Merry, Pretty in Pink) + Star of David Hanukkah mat + Mahjong Card Holders",
+   "type": "launch",
+   "date": "2026-10-20",
+   "status": "live Oct 20 ($105 each)",
+   "source": "Soirée affiliate email Oct 20 2:58pm ET",
+   "sourceUrl": "https://www.soireeallday.co/the-mahjong-collection",
+   "album": "swipe books exist (HQ Albums tab)",
+   "affiliate": true,
+   "priority": 2,
+   "contentTiming": "Holiday mats: Holiday section only. Holiday social starts Nov 1 (Planoly).",
+   "notes": "Moved off HQ needs Oct 21 cleanup."
   }
  ],
  "sources": {
@@ -725,5 +800,19 @@
    }
   ],
   "note": "Not signed up to anything. Tiffany approves first. tiffanybrie@ may already get some of these (connector can't see it)."
+ },
+ "upcomingAlbums": {
+  "about": "Albums we will build later, kept here so nothing gets forgotten. No action item on HQ. The daily HQ cleanup (docs/HQ-CLEANUP.md) moves any 'new release, not now' album here instead of leaving an HQ need.",
+  "items": [
+   {
+    "set": "Green Light Gatsby",
+    "brand": "Anders Ruff",
+    "added": "2026-10-21",
+    "why": "New release (public launch Wed Oct 21). Tiffany: not now.",
+    "state": "Swipe book built (113 mats), not swiped",
+    "swipeBook": "https://claude.ai/artifact/PNi1a7ckEZKQwxDs88sVJ7",
+    "when": "After the Oct 27 Find Your Mat-ch launch; ships Jan/Mar 2027"
+   }
+  ]
  }
 }

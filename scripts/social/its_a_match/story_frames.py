@@ -5,13 +5,29 @@ left above the bottom safe zone for a VISIBLE sticker (e.g. the @ohmymahjong men
 
 Usage:
   python3 scripts/social/its_a_match/story_frames.py its-a-match DIR          (Papaya x Heiress: story.jpg + slide2/3)
-  python3 scripts/social/its_a_match/story_frames.py slides OUT_DIR a.jpg b.jpg c.jpg [--room 200]"""
+  python3 scripts/social/its_a_match/story_frames.py slides OUT_DIR a.jpg b.jpg c.jpg [--room 200] [--last-room 160] [--blur]
+  --blur: for slides whose background can't be keyed (photos/gradients): whole slide as a rounded card on plain paper."""
 import sys, os
 import numpy as np
 from PIL import Image, ImageDraw
 
 BG = np.array([(250, 243, 233), (250, 227, 233), (251, 231, 233), (249, 242, 232), (251, 227, 234)], float)
 TOP, BOT = 262, 1920 - 352
+
+
+def frame_blur(src, out, room=0):
+    """Slides with a photo/gradient background that can't be keyed: the slide sits whole (rounded, soft shadow) in the
+    safe band on plain paper with the blush blobs."""
+    from PIL import ImageFilter
+    sl = Image.open(src).convert('RGB')
+    bg = Image.new('RGB', (1080, 1920), (250, 243, 233)); dr = ImageDraw.Draw(bg)
+    dr.ellipse((620, -260, 1400, 520), fill=(250, 227, 233)); dr.ellipse((-380, 1380, 420, 2180), fill=(251, 231, 233))
+    h = BOT - TOP - room; w = round(1080 * h / 1350); x = (1080 - w) // 2
+    sh = Image.new('L', (1080, 1920), 0); ImageDraw.Draw(sh).rounded_rectangle((x + 4, TOP + 14, x + w + 4, TOP + h + 14), 36, fill=90)
+    bg.paste((60, 40, 30), (0, 0), sh.filter(ImageFilter.GaussianBlur(18)))
+    m = Image.new('L', (w, h), 0); ImageDraw.Draw(m).rounded_rectangle((0, 0, w - 1, h - 1), 32, fill=255)
+    bg.paste(sl.resize((w, h), Image.LANCZOS), (x, TOP), m)
+    bg.save(out, quality=93)
 
 
 def frame(src, out, room=0):
@@ -27,9 +43,13 @@ def frame(src, out, room=0):
 
 if __name__ == '__main__':
     a = sys.argv[1:]
-    room = 0
+    room = 0; last_room = 0; fn = frame
     if '--room' in a:
         i = a.index('--room'); room = int(a[i + 1]); del a[i:i + 2]
+    if '--last-room' in a:
+        i = a.index('--last-room'); last_room = int(a[i + 1]); del a[i:i + 2]
+    if '--blur' in a:
+        a.remove('--blur'); fn = frame_blur
     if a[0] == 'its-a-match':
         d = a[1].rstrip('/') + '/'; o = d + 'story-frames/'; os.makedirs(o, exist_ok=True)
         Image.open(d + 'story.jpg').convert('RGB').save(o + 'story-1.jpg', quality=93)
@@ -37,6 +57,7 @@ if __name__ == '__main__':
             frame(d + n + '.jpg', o + f'story-{i}.jpg')
     else:
         o = a[1]; os.makedirs(o, exist_ok=True)
-        for i, src in enumerate(a[2:], 1):
-            frame(src, f'{o}/story-{i}.jpg', room if i == 1 else 0)
+        srcs = a[2:]
+        for i, src in enumerate(srcs, 1):
+            fn(src, f'{o}/story-{i}.jpg', room if i == 1 else (last_room if i == len(srcs) else 0))
     print('ok', o)
