@@ -69,6 +69,7 @@ Oct 21, launch morning: the Papaya "It's a match" post, the hotline reel and the
 6. **Instagram is connected as a BUSINESS account** (checked Oct 21). Auto-publish can carry user tags, cover, collaborators and first comment. Auto-posting anything public still needs her approval of that post.
 8. **EVERY feed post also goes to stories, with EVERY slide (Tiffany, Oct 21 1:08pm).** A 6-slide carousel becomes a 6-frame story, never a trimmed 3. Build the story with the feed post and put it in Planoly the same day. Every brand shown gets a visible @mention on its frame; the main brand goes on frame 1. Planoly's Tag people on the feed post must carry every brand's handle. Missed Oct 20–21: the Papaya intro carousel went up with no @ohmymahjong tag, and the work never reached stories. "We have worked on all this content… and then it's just not out in the world."
 9. **Collabs:** feed posts featuring a brand get that brand as an Instagram collaborator invite (Planoly supports it) once she approves the post.
+10. **Planoly workspaces (Oct 21):** Instagram posts live in workspace 019fc27c-0bef-7533-bc3f-030acc19a135 ("Mahj Matchmaker – Instagram", channel 019fc280-a02a-74ef-bb8b-844d568307e6) so her calendar shows only Instagram. Pinterest stays in 019fc27b-964d-7279-8685-1f1bb7a7c3f5. Map + leftovers (9 reel drafts still in the old workspace): docs/planoly-ig-move-oct21.json.
 7. **Before telling her what to post, check Planoly** (list_post_groups) so chat never replaces Planoly.
 
 ## Naming: Mat-ch vs match (Tiffany, Oct 21 11:26, FINAL)
