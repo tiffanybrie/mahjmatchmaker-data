@@ -1,6 +1,6 @@
 <!-- mm-disclosure: footer affiliate disclosure (Tiffany Oct 21 3:22/3:25pm). Rollback = delete this block. -->
 <style>
-.mm-disc{position:relative;z-index:2;margin:0;padding:6px 0 0;width:100%;text-align:center;font-size:11.5px!important;line-height:1.5!important;letter-spacing:0!important;text-transform:none!important;opacity:.72}
+.mm-disc{position:relative;z-index:2;margin:0;padding:2px 0 0;width:100%;text-align:center;font-size:11.5px!important;line-height:1.5!important;letter-spacing:0!important;text-transform:none!important;opacity:.72}
 @media(min-width:1200px){.mm-disc{white-space:nowrap}}
 </style>
 <script>
@@ -8,7 +8,7 @@
  function go(){
   var f=document.querySelector('footer.sections')||document.querySelector('footer');
   if(!f||f.querySelector('.mm-disc'))return;
-  var secs=f.querySelectorAll('section'),last=secs.length?secs[secs.length-1]:f,host=last.querySelector('.content-wrapper')||last;
+  var secs=f.querySelectorAll('section'),last=secs.length?secs[secs.length-1]:f,cw=last.querySelector('.content-wrapper'),host=(cw&&cw.firstElementChild)||last;
   var ref=f.querySelector('p')||f, p=document.createElement('p');
   p.className='mm-disc';
   p.style.color=getComputedStyle(ref).color;
