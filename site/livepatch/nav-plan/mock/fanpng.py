@@ -10,5 +10,5 @@ with sync_playwright() as p:
         pg.wait_for_timeout(300)
         el=pg.query_selector('.fan')
         bb=el.bounding_box()
-        pg.screenshot(path=os.path.join(D,'..','assets',out),omit_background=True,clip={'x':bb['x']-60,'y':max(0,bb['y']-40),'width':bb['width']+120,'height':bb['height']+70})
+        pg.screenshot(path=os.path.join(D,'..','assets',out),omit_background=True,clip={'x':bb['x']-60,'y':max(0,bb['y']-90),'width':bb['width']+120,'height':bb['height']+120})
     b.close()

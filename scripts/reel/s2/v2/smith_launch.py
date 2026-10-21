@@ -21,6 +21,7 @@ from kit import R, WORK
 IN = f'{R}/assets/reels/s2/ep08-smith-s2.mp4'
 OUT = f'{R}/assets/reels/s2/ep08-smith-s2-v2.mp4'
 CLEAN, FIRST, LAST, END0 = 344, 345, 374, 915
+SWIPE = (375, 386)                   # the X rides on the card while it swipes off (v12: the stamp stays on the card)
 BOX = (500, 700, 965, 1065)          # around the NOPE stamp (bbox 570-919 x 782-981)
 CX, CY, D = 799, 896, 176            # v12 placement: top-right of the mat (mat ~x 134-950, y 745-1500), inset like v12
 NAVY = (6, 42, 85)
@@ -66,8 +67,34 @@ def patch_stamp(src, out):
         p = ease((n - FIRST + .5) / 7.5); st = xstamp(1.6 - .6 * p, min(1, p * 1.4))
         im.alpha_composite(st, (CX + dx - st.width // 2, CY + dy - st.height // 2))
         im.convert('RGB').save(f'{fd}/{n:05d}.png')
+    # swipe-off frames: follow the card (template match on the clean card art around the stamp, translation + tilt)
+    import cv2
+    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', src, '-vf', f"select='between(n,{SWIPE[0]},{SWIPE[1] - 1})'", '-vsync', '0',
+                    '-start_number', str(SWIPE[0]), f'{fd}/%05d.png'], check=True)
+    tx0, ty0, tx1, ty1 = 600, 760, 940, 1040
+    tpl = ref[ty0:ty1, tx0:tx1].astype(np.uint8)
+    last = SWIPE[0]
+    for n in range(SWIPE[0], SWIPE[1]):
+        fr = np.asarray(Image.open(f'{fd}/{n:05d}.png').convert('RGB'))
+        best = (-1, 0, 0, 0)
+        for ang in range(0, -16, -1):
+            M = cv2.getRotationMatrix2D(((tx1 - tx0) / 2, (ty1 - ty0) / 2), -ang, 1.0)
+            t = cv2.warpAffine(tpl, M, (tx1 - tx0, ty1 - ty0), borderMode=cv2.BORDER_REFLECT)[30:-30, 30:-30]
+            r = cv2.matchTemplate(fr, t, cv2.TM_CCOEFF_NORMED); _, mv, _, ml = cv2.minMaxLoc(r)
+            if mv > best[0]: best = (mv, ml[0] - 30 - tx0, ml[1] - 30 - ty0, ang)
+        sc, dx, dy, ang = best
+        print('swipe', n, round(sc, 2), dx, dy, ang)
+        if sc < .55: break
+        im = Image.fromarray(fr).convert('RGBA'); st = xstamp(1, 1).rotate(-ang, resample=Image.BICUBIC, expand=True)
+        cx = (tx0 + tx1) / 2 + dx; cy = (ty0 + ty1) / 2 + dy; a = np.deg2rad(ang)     # rotate the stamp centre about the patch centre
+        ox, oy = CX - (tx0 + tx1) / 2, CY - (ty0 + ty1) / 2
+        px = cx + ox * np.cos(a) + oy * np.sin(a); py = cy - ox * np.sin(a) + oy * np.cos(a)
+        im.alpha_composite(st, (int(round(px - st.width / 2)), int(round(py - st.height / 2))))
+        im.convert('RGB').save(f'{fd}/{n:05d}.png'); last = n + 1
+    for n in range(last, SWIPE[1] + 2):                     # unused extracted frames must not join the image sequence
+        if os.path.exists(f'{fd}/{n:05d}.png'): os.remove(f'{fd}/{n:05d}.png')
     fc = (f"[0:v]split[s0][s1];[s0]trim=start_frame=0:end_frame={FIRST},setpts=PTS-STARTPTS[a];"
-          f"[1:v]fps=30,setpts=N/30/TB,format=yuv420p[b];[s1]trim=start_frame={LAST + 1}:end_frame={END0},setpts=PTS-STARTPTS[c];[a][b][c]concat=n=3:v=1:a=0[v]")
+          f"[1:v]fps=30,setpts=N/30/TB,format=yuv420p[b];[s1]trim=start_frame={last}:end_frame={END0},setpts=PTS-STARTPTS[c];[a][b][c]concat=n=3:v=1:a=0[v]")
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', src, '-framerate', '30', '-start_number', str(FIRST), '-i', f'{fd}/%05d.png',
                     '-filter_complex', fc, '-map', '[v]', '-c:v', 'libx264', '-preset', 'slow', '-crf', '14', '-pix_fmt', 'yuv420p', '-r', '30', out], check=True)
     return out
