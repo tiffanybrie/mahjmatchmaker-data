@@ -2277,6 +2277,76 @@
    "src": "claude-look",
    "by": "claude-photo-review (applying Tiffany's Oct 21 definition)",
    "note": "Oct 21: overtly ski/winter photo (skiers, ski gondolas, snowy pine trees and falling snow on blue/white ski-run stripes), so HOLIDAY under Tiffany's Oct 21 definition (she named the sister Ski Club Red Sweater Border mat holiday). Holiday section only (gallery), never in single-colour chips (FYM). Tiffany Oct 21 holiday definition: Holiday = Christmas and Hanukkah mats plus overtly winter/ski/snow-themed mats; a plain plaid with no holiday graphic is year-round; seasonal/locale mats (KY Derby, Let Freedom Ring) are not holiday."
+  },
+  "shop.andersruff.com/pumpkin-plaid-mahjong-mat": {
+   "primary": "orange",
+   "secondary": [
+    "brown",
+    "neutral"
+   ],
+   "tone": "muted",
+   "holiday": false,
+   "skip": false,
+   "image": "anders-ruff--pumpkin-plaid-mahjong-mat",
+   "light": 0.596,
+   "chroma": 0.409,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "earthy"
+   ],
+   "note": "Tiffany Oct 21: NOT holiday (pumpkins/fall); out of Holiday, into its colour sections. Colours by claude-photo-review: orange pumpkins on a tan plaid (measured earthy 55.4 / neutral 23.6 / orange 21.0): primary Orange, Earthy also; neutral stays a measured accent. Tiffany Oct 21 (final) holiday definition: the Holiday section = ONLY Christmas, Hanukkah, and winter snowy/ski scenes. Pumpkins/fall, Halloween, Thanksgiving, Valentine's, Easter, St Patrick's, patriotic/4th of July and Derby mats are NOT holiday; they live in their colour sections. Store/build 'holiday' tags are not trusted: check the photo."
+  },
+  "www.bamletsmahjong.com/pumpkin-patch-mahjong-mat": {
+   "primary": "orange",
+   "secondary": [
+    "pink",
+    "green",
+    "dark"
+   ],
+   "tone": "pastel",
+   "holiday": false,
+   "skip": false,
+   "image": "bam-let-s-mahjong--pumpkin-patch-mahjong-mat-fall-halloween-mahjong-mat",
+   "light": 0.773,
+   "chroma": 0.322,
+   "src": "claude-look+measured (doc 87 fix, Tiffany OK Oct 19)",
+   "by": "tiffany-chat-2026-10-20",
+   "also": [
+    "neutral"
+   ],
+   "note": "Tiffany Oct 21: NOT holiday (pumpkins, fall & Halloween); out of Holiday, into its colour sections. Colours by claude-photo-review: peach pumpkins on cream with a black gingham frame (measured neutral 51.2 / orange 16.0): primary Orange, Neutral also. Tiffany Oct 21 (final) holiday definition: the Holiday section = ONLY Christmas, Hanukkah, and winter snowy/ski scenes. Pumpkins/fall, Halloween, Thanksgiving, Valentine's, Easter, St Patrick's, patriotic/4th of July and Derby mats are NOT holiday; they live in their colour sections. Store/build 'holiday' tags are not trusted: check the photo."
+  },
+  "www.ohmymahjong.com/sugarplum-mat": {
+   "primary": "teal",
+   "secondary": [
+    "pink",
+    "blue"
+   ],
+   "tone": "pastel",
+   "holiday": true,
+   "skip": false,
+   "image": "oh-my-mahjong--sugarplum",
+   "light": 0.743,
+   "chroma": 0.39,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "Tiffany Oct 21: HOLIDAY (one of her most popular holiday mats, on her holiday albums; nutcrackers on the photo). Was never holiday-tagged: the Oct 19 claude-look photo read (config/mat-color-guesses.json) had holiday:false and no Tiffany call ever set it, so the gallery/FYM read it as a year-round teal mat. Fixed there too. Holiday section only (gallery), never in single-colour chips (FYM)."
+  },
+  "peacelovemahjong.com/mahjong-mats-hanukkah?v=67570489491748": {
+   "primary": "blue",
+   "secondary": [
+    "neutral"
+   ],
+   "tone": "bright",
+   "holiday": true,
+   "skip": false,
+   "image": "peace-love-mahjong--frosted-flowers",
+   "light": 0.59,
+   "chroma": 0.476,
+   "src": "claude-look",
+   "by": "tiffany-chat-2026-10-20",
+   "note": "Tiffany Oct 21: HOLIDAY (PLM Hanukkah collection: blue/white poinsettias + holly). Was never holiday-tagged: the Oct 19 claude-look photo read (config/mat-color-guesses.json) had holiday:false and no Tiffany call ever set it. Fixed there too. Holiday section only (gallery), never in single-colour chips (FYM)."
   }
  }
 }

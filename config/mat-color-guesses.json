@@ -5081,7 +5081,7 @@
 "neutral"
 ],
 "tone": "muted",
-"holiday": true,
+"holiday": false,
 "skip": false,
 "image": "anders-ruff--pumpkin-plaid-mahjong-mat",
 "light": 0.596,
@@ -6596,7 +6596,7 @@
 "dark"
 ],
 "tone": "pastel",
-"holiday": true,
+"holiday": false,
 "skip": false,
 "image": "bam-let-s-mahjong--pumpkin-patch-mahjong-mat-fall-halloween-mahjong-mat",
 "light": 0.773,
@@ -8300,7 +8300,7 @@
 "blue"
 ],
 "tone": "pastel",
-"holiday": false,
+"holiday": true,
 "skip": false,
 "image": "oh-my-mahjong--sugarplum",
 "light": 0.743,
@@ -9894,7 +9894,7 @@
 "neutral"
 ],
 "tone": "bright",
-"holiday": false,
+"holiday": true,
 "skip": false,
 "image": "peace-love-mahjong--frosted-flowers",
 "light": 0.59,

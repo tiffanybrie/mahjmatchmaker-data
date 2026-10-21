@@ -419,6 +419,40 @@
    "primary": "holiday",
    "by": "claude-photo-review (applying Tiffany's Oct 21 definition)",
    "note": "Oct 21: overtly ski/winter photo (skiers, ski gondolas, snowy pine trees and falling snow on blue/white ski-run stripes), so HOLIDAY under Tiffany's Oct 21 definition (she named the sister Ski Club Red Sweater Border mat holiday). Holiday section only (gallery), never in single-colour chips (FYM). Tiffany Oct 21 holiday definition: Holiday = Christmas and Hanukkah mats plus overtly winter/ski/snow-themed mats; a plain plaid with no holiday graphic is year-round; seasonal/locale mats (KY Derby, Let Freedom Ring) are not holiday."
+  },
+  {
+   "brand": "Anders Ruff",
+   "name": "Pumpkin Plaid",
+   "img": "anders-ruff--pumpkin-plaid-mahjong-mat",
+   "primary": "orange",
+   "also": [
+    "earthy"
+   ],
+   "note": "Tiffany Oct 21: NOT holiday (pumpkins/fall); out of Holiday, into its colour sections. Colours by claude-photo-review: orange pumpkins on a tan plaid (measured earthy 55.4 / neutral 23.6 / orange 21.0): primary Orange, Earthy also; neutral stays a measured accent. Tiffany Oct 21 (final) holiday definition: the Holiday section = ONLY Christmas, Hanukkah, and winter snowy/ski scenes. Pumpkins/fall, Halloween, Thanksgiving, Valentine's, Easter, St Patrick's, patriotic/4th of July and Derby mats are NOT holiday; they live in their colour sections. Store/build 'holiday' tags are not trusted: check the photo."
+  },
+  {
+   "brand": "Bam! Let's Mahjong",
+   "name": "Pumpkin Patch – Fall & Halloween",
+   "img": "bam-let-s-mahjong--pumpkin-patch-mahjong-mat-fall-halloween-mahjong-mat",
+   "primary": "orange",
+   "also": [
+    "neutral"
+   ],
+   "note": "Tiffany Oct 21: NOT holiday (pumpkins, fall & Halloween); out of Holiday, into its colour sections. Colours by claude-photo-review: peach pumpkins on cream with a black gingham frame (measured neutral 51.2 / orange 16.0): primary Orange, Neutral also. Tiffany Oct 21 (final) holiday definition: the Holiday section = ONLY Christmas, Hanukkah, and winter snowy/ski scenes. Pumpkins/fall, Halloween, Thanksgiving, Valentine's, Easter, St Patrick's, patriotic/4th of July and Derby mats are NOT holiday; they live in their colour sections. Store/build 'holiday' tags are not trusted: check the photo."
+  },
+  {
+   "brand": "Oh My Mahjong",
+   "name": "Sugarplum",
+   "img": "oh-my-mahjong--sugarplum",
+   "primary": "holiday",
+   "note": "Tiffany Oct 21: HOLIDAY (one of her most popular holiday mats, on her holiday albums; nutcrackers on the photo). Was never holiday-tagged: the Oct 19 claude-look photo read (config/mat-color-guesses.json) had holiday:false and no Tiffany call ever set it, so the gallery/FYM read it as a year-round teal mat. Fixed there too. Holiday section only (gallery), never in single-colour chips (FYM)."
+  },
+  {
+   "brand": "Peace Love Mahjong",
+   "name": "Frosted Flowers",
+   "img": "peace-love-mahjong--frosted-flowers",
+   "primary": "holiday",
+   "note": "Tiffany Oct 21: HOLIDAY (PLM Hanukkah collection: blue/white poinsettias + holly). Was never holiday-tagged: the Oct 19 claude-look photo read (config/mat-color-guesses.json) had holiday:false and no Tiffany call ever set it. Fixed there too. Holiday section only (gallery), never in single-colour chips (FYM)."
   }
  ],
  "lead": {
@@ -477,13 +511,102 @@
   "min_pct": 5.0
  },
  "holiday_definition": {
-  "by": "tiffany-chat-2026-10-21",
-  "text": "Tiffany Oct 21 holiday definition: Holiday = Christmas and Hanukkah mats plus overtly winter/ski/snow-themed mats; a plain plaid with no holiday graphic is year-round; seasonal/locale mats (KY Derby, Let Freedom Ring) are not holiday.",
+  "by": "tiffany-chat-2026-10-21 (final)",
+  "text": "Tiffany Oct 21 (final) holiday definition: the Holiday section = ONLY Christmas, Hanukkah, and winter snowy/ski scenes. Pumpkins/fall, Halloween, Thanksgiving, Valentine's, Easter, St Patrick's, patriotic/4th of July and Derby mats are NOT holiday; they live in their colour sections. Store/build 'holiday' tags are not trusted: check the photo.",
   "her_calls": {
    "Tartan Tweed": "year-round",
    "Ski Club Mat- Red Sweater Border": "holiday",
    "KY Derby": "year-round",
-   "Let Freedom Ring": "year-round"
+   "Let Freedom Ring": "year-round",
+   "Pumpkin Plaid (Anders Ruff)": "not holiday (fall)",
+   "Pumpkin Patch – Fall & Halloween (Bam! Let's Mahjong)": "not holiday (fall/Halloween)",
+   "Sugarplum (OMM)": "holiday",
+   "Frosted Flowers (PLM)": "holiday",
+   "Après Mahj (Paige Spearin x TdT)": "stays holiday, her call pending"
   }
+ },
+ "also_year_round": {
+  "by": "tiffany-chat-2026-10-21",
+  "about": "Holiday mats that ALSO match year-round (Tiffany Oct 21). They stay holiday mats (Holiday section; FYM hol=true) but ALSO show in their colour sections (gallery) and single-colour chips (FYM, flag ayr). 'sections' = the colour + mood sections, picked by claude-photo-review from the photo + measured shares (config/mat-accent-colors.json); measured accents are added by build_v5.py as usual. In the gallery row 'holiday' is the last section and a co-primary (so it sorts with the other holiday mats).",
+  "mats": {
+   "anders-ruff--tartan-tidings-mahjong-mat": {
+    "name": "Anders Ruff Tartan Tidings",
+    "sections": [
+     "red",
+     "dark"
+    ]
+   },
+   "sunday-mahjong--festive-plaid-premium": {
+    "name": "Sunday Festive Plaid Premium",
+    "sections": [
+     "green",
+     "orange",
+     "earthy"
+    ]
+   },
+   "tala-mahj--the-carlyle-holiday-plaid-with-red-fringe": {
+    "name": "Tala The Carlyle Holiday Plaid",
+    "sections": [
+     "neutral"
+    ]
+   },
+   "bam-bird-boutique--bandana-holiday-green-pink-accents": {
+    "name": "Bam Bird Boutique Bandana Holiday",
+    "sections": [
+     "green",
+     "brights"
+    ]
+   },
+   "peace-love-mahjong--merry-striped": {
+    "name": "PLM Merry & Striped",
+    "sections": [
+     "red",
+     "brights"
+    ]
+   },
+   "peace-love-mahjong--merry-mix": {
+    "name": "PLM Merry Mix",
+    "sections": [
+     "red",
+     "pink",
+     "green",
+     "brights"
+    ]
+   },
+   "peace-love-mahjong--candy-cane-lane": {
+    "name": "PLM Candy Cane Lane",
+    "sections": [
+     "red",
+     "pink",
+     "brights"
+    ]
+   },
+   "bird-bamboo--the-ornamental-mahjong-mat": {
+    "name": "Bird & Bamboo The Ornamental",
+    "sections": [
+     "blue",
+     "simple"
+    ]
+   }
+  }
+ },
+ "works_for_holiday": {
+  "by": "tiffany-chat-2026-10-21",
+  "about": "Year-round mats that ALSO work for the holidays (Tiffany Oct 21). They stay year-round (colour sections; FYM hol=false) and ALSO show at the BOTTOM of the gallery Holiday section under the subheading 'Year-round mats that work for the holidays' (row field 12 = 1), and count as holiday for FYM holiday tile sets (FYM flag wfh: setsForMat offers holiday tile sets for them). FYM-only mats (not in the gallery) are listed under fym_keys.",
+  "imgs": [
+   "oh-my-mahjong--dapper-1-retired",
+   "luxe-mahjong--the-polo-club",
+   "sunday-mahjong--rattan"
+  ],
+  "fym_keys": [
+   "www.ohmymahjong.com/dapper-mat-w-tube"
+  ],
+  "names": {
+   "oh-my-mahjong--dapper-1-retired": "OMM Dapper 1 (retired)",
+   "www.ohmymahjong.com/dapper-mat-w-tube": "OMM Dapper 2 (FYM only: held out of the gallery by held-low-98.json)",
+   "luxe-mahjong--the-polo-club": "Luxe The Polo Club",
+   "sunday-mahjong--rattan": "Sunday Rattan"
+  },
+  "note": "'OMM Dapper' matched to both OMM Dapper mats (Dapper 1 retired, in the gallery's Retired section; Dapper 2 current, FYM only)."
  }
 }

@@ -257,6 +257,7 @@
    "holiday"
   ],
   "tala-mahj--the-carlyle-holiday-plaid-with-red-fringe": [
+   "neutral",
    "holiday"
   ],
   "tala-mahj--the-montecito-wildflowers": [
@@ -800,6 +801,20 @@
   "virora-mahjong--hiverelle-mahjong-mat": [
    "holiday"
   ],
+  "anders-ruff--pumpkin-plaid-mahjong-mat": [
+   "orange",
+   "earthy"
+  ],
+  "bam-let-s-mahjong--pumpkin-patch-mahjong-mat-fall-halloween-mahjong-mat": [
+   "orange",
+   "neutral"
+  ],
+  "oh-my-mahjong--sugarplum": [
+   "holiday"
+  ],
+  "peace-love-mahjong--frosted-flowers": [
+   "holiday"
+  ],
   "mahjong-register--hunter-green-navy-double-sided-leatherette": [
    "green",
    "earthy"
@@ -878,6 +893,95 @@
    "simple"
   ],
   "mahj-moon--tropical-island-garden": "tail not in gallery"
+ },
+ "holiday_exceptions_oct21": {
+  "also_year_round": {
+   "anders-ruff--tartan-tidings-mahjong-mat": [
+    [
+     "red",
+     "dark",
+     "holiday"
+    ],
+    [
+     "earthy"
+    ]
+   ],
+   "sunday-mahjong--festive-plaid-premium": [
+    [
+     "green",
+     "orange",
+     "earthy",
+     "holiday"
+    ],
+    []
+   ],
+   "tala-mahj--the-carlyle-holiday-plaid-with-red-fringe": [
+    [
+     "neutral",
+     "holiday"
+    ],
+    [
+     "earthy",
+     "red",
+     "orange"
+    ]
+   ],
+   "bam-bird-boutique--bandana-holiday-green-pink-accents": [
+    [
+     "green",
+     "brights",
+     "holiday"
+    ],
+    []
+   ],
+   "peace-love-mahjong--merry-striped": [
+    [
+     "red",
+     "brights",
+     "holiday"
+    ],
+    []
+   ],
+   "peace-love-mahjong--merry-mix": [
+    [
+     "red",
+     "pink",
+     "green",
+     "brights",
+     "holiday"
+    ],
+    []
+   ],
+   "peace-love-mahjong--candy-cane-lane": [
+    [
+     "red",
+     "pink",
+     "brights",
+     "holiday"
+    ],
+    []
+   ],
+   "bird-bamboo--the-ornamental-mahjong-mat": [
+    [
+     "blue",
+     "simple",
+     "holiday"
+    ],
+    []
+   ]
+  },
+  "works_for_holiday": {
+   "sunday-mahjong--rattan": [
+    "earthy"
+   ],
+   "oh-my-mahjong--dapper-1-retired": [
+    "earthy"
+   ],
+   "luxe-mahjong--the-polo-club": [
+    "dark",
+    "yellow"
+   ]
+  }
  },
  "photo_fix_sections": {
   "tigre-de-tartan--mahjong-mat-nantucket-basket-rope": [
@@ -1687,18 +1791,18 @@
  "section_tiers_active": {
   "pink": {
    "primary": 110,
-   "also": 52,
-   "accent": 55
+   "also": 54,
+   "accent": 54
   },
   "red": {
-   "primary": 10,
+   "primary": 14,
    "also": 29,
-   "accent": 14
+   "accent": 15
   },
   "orange": {
-   "primary": 19,
-   "also": 28,
-   "accent": 9
+   "primary": 21,
+   "also": 29,
+   "accent": 10
   },
   "yellow": {
    "primary": 13,
@@ -1706,19 +1810,19 @@
    "accent": 5
   },
   "green": {
-   "primary": 82,
-   "also": 78,
+   "primary": 84,
+   "also": 79,
    "accent": 52
   },
   "teal": {
-   "primary": 41,
+   "primary": 40,
    "also": 32,
    "accent": 15
   },
   "blue": {
    "primary": 123,
    "also": 65,
-   "accent": 47
+   "accent": 46
   },
   "purple": {
    "primary": 39,
@@ -1726,18 +1830,18 @@
    "accent": 10
   },
   "neutral": {
-   "primary": 42,
-   "also": 2,
+   "primary": 43,
+   "also": 3,
    "accent": 66
   },
   "earthy": {
    "primary": 33,
-   "also": 41,
-   "accent": 75
+   "also": 43,
+   "accent": 77
   },
   "dark": {
    "primary": 28,
-   "also": 32,
+   "also": 33,
    "accent": 23
   },
   "bw": {
@@ -1747,17 +1851,17 @@
   },
   "simple": {
    "primary": 2,
-   "also": 143,
+   "also": 144,
    "accent": 0
   },
   "pastel": {
    "primary": 0,
-   "also": 114,
+   "also": 113,
    "accent": 0
   },
   "brights": {
    "primary": 11,
-   "also": 152,
+   "also": 155,
    "accent": 0
   },
   "florals": {
@@ -1771,8 +1875,8 @@
    "accent": 0
   },
   "holiday": {
-   "primary": 73,
-   "also": 0,
+   "primary": 65,
+   "also": 8,
    "accent": 0
   },
   "multi": {
@@ -1782,21 +1886,21 @@
   }
  },
  "section_counts_active": {
-  "pink": 217,
-  "red": 53,
-  "orange": 56,
+  "pink": 218,
+  "red": 58,
+  "orange": 60,
   "yellow": 53,
-  "green": 212,
-  "teal": 88,
-  "blue": 235,
+  "green": 215,
+  "teal": 87,
+  "blue": 234,
   "purple": 66,
-  "neutral": 110,
-  "earthy": 149,
-  "dark": 83,
+  "neutral": 112,
+  "earthy": 153,
+  "dark": 84,
   "bw": 12,
-  "simple": 145,
-  "pastel": 114,
-  "brights": 163,
+  "simple": 146,
+  "pastel": 113,
+  "brights": 166,
   "florals": 31,
   "animal": 29,
   "holiday": 73,
@@ -1804,21 +1908,21 @@
   "retired": 29
  },
  "section_counts_if_retired_shown": {
-  "pink": 231,
-  "red": 56,
-  "orange": 59,
+  "pink": 232,
+  "red": 61,
+  "orange": 63,
   "yellow": 58,
-  "green": 225,
-  "teal": 94,
-  "blue": 246,
+  "green": 228,
+  "teal": 93,
+  "blue": 245,
   "purple": 69,
-  "neutral": 115,
-  "earthy": 153,
-  "dark": 85,
+  "neutral": 117,
+  "earthy": 157,
+  "dark": 86,
   "bw": 12,
-  "simple": 147,
-  "pastel": 123,
-  "brights": 175,
+  "simple": 148,
+  "pastel": 122,
+  "brights": 178,
   "florals": 34,
   "animal": 29,
   "holiday": 75,
@@ -2171,6 +2275,38 @@
    "Virora Mahjong",
    "Hiverelle",
    "Hiverelle",
+   "holiday",
+   []
+  ],
+  [
+   "Anders Ruff",
+   "Pumpkin Plaid",
+   "Pumpkin Plaid",
+   "orange",
+   [
+    "earthy"
+   ]
+  ],
+  [
+   "Bam! Let's Mahjong",
+   "Pumpkin Patch – Fall & Halloween",
+   "Pumpkin Patch Mahjong Mat | Fall & Halloween",
+   "orange",
+   [
+    "neutral"
+   ]
+  ],
+  [
+   "Oh My Mahjong",
+   "Sugarplum",
+   "Sugarplum",
+   "holiday",
+   []
+  ],
+  [
+   "Peace Love Mahjong",
+   "Frosted Flowers",
+   "Frosted Flowers",
    "holiday",
    []
   ],

@@ -22,6 +22,11 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
     calls present, holiday_off empty, lead/tail pins match late-calls, section sort = lead > ONE list by score > tail, where
     score = measured share of the colour + 20 if it is the mat's primary (ties: primary first, then name). Checked by RUNNING the page's
     sk + sort in node over every section (Oct 20 late: near-0% primaries sat above Coralia 40% / Pink Tiger 20% in Orange)
+ 13h holiday exceptions (Tiffany Oct 21, final definition: Holiday = ONLY Christmas, Hanukkah, winter snowy/ski scenes). The ONLY mats
+    allowed in Holiday AND colour sections / single chips are late-calls also_year_round (gallery: colours + 'holiday' last + co-primary;
+    FYM: hol + ayr + mf); the ONLY year-round mats shown with Holiday are late-calls works_for_holiday (gallery row field 12, bottom of
+    Holiday under the subheading; FYM wfh, setsForMat ok = hol || wfh). Mats she moved OUT of Holiday (late-calls primary = a colour,
+    e.g. the pumpkin mats) never come back as holiday in the gallery or FYM.
  8b colour-chip order: sh (measured share) lines up with mf; CSORT (single chip) = lead > ONE list by score (share + 20 if primary),
     checked by running CSORT in node over every chip colour
 """
@@ -112,7 +117,7 @@ if os.path.exists(_qp):
         m = M.get(it['key'])
         if m and not m.get('hid'): F.append(f"[3d] {m['n']} ({m.get('bn')}): on the Questionable for FYM list but visible")
 for k, m in M.items():
-    if 'paige spearin' in m['n'].lower() and m.get('hol') and k != 'tigredetartan.com/paige-spearin-mahjong-mat-apres-mahj':
+    if 'paige spearin' in m['n'].lower() and (m.get('hol') or m.get('wfh') or m.get('ayr')) and k != 'tigredetartan.com/paige-spearin-mahjong-mat-apres-mahj':
         F.append(f"[3d] {m['n']}: Paige Spearin mat brought into Holiday (no commission, do not promote)")
 # 3b. retired mats carry a Retired label in the mat-door grid / door search (matBtn) and the mat search list (#msr) (Oct 20 bug: Liberty)
 mb = re.search(r'function matBtn\(id\)\{.*?\n', UI)
@@ -195,7 +200,7 @@ for k, o in M.items():
     if len(o.get('sh') or []) != len(o.get('mf') or []): F.append(f"[8b] mat {o['n']}: sh shares {o.get('sh')} do not line up with mf {o.get('mf')}")
 for k, o in M.items():
     if len(o.get('mt') or []) != len(o.get('mf') or []): F.append(f"[8] mat {o['n']}: mt tiers {o.get('mt')} do not line up with mf {o.get('mf')}")
-    if o.get('hol') and o.get('mf') and not o.get('hid'): F.append(f"[8] holiday mat {o['n']} is in single-colour chips {o['mf']}")
+    if o.get('hol') and o.get('mf') and not o.get('hid') and not o.get('ayr'): F.append(f"[8] holiday mat {o['n']} is in single-colour chips {o['mf']} (only late-calls also_year_round may be)")
 
 # 9. non-partner lockout (warn for pending brands, fail otherwise)
 NPA = json.load(open(REPO + 'builder/fym_flags/nonpartner_allow.json'))
@@ -246,12 +251,18 @@ for r in _G:
     if r[4] and k in M and M[k].get('rt'): pass
     F.append(f"[13] non-partner mat in staged Mat Gallery without Tiffany's OK: {r[1]} ({r[2]}) {r[0]}")
 GR = {r[0]: r for r in _G}
+_AYR = set(LATE.get('also_year_round', {}).get('mats', {})); _WFH = set(LATE.get('works_for_holiday', {}).get('imgs', []))
+_WFHK = {GKEY(i_) for i_ in _WFH} | set(LATE.get('works_for_holiday', {}).get('fym_keys', [])); _AYRK = {GKEY(i_) for i_ in _AYR}
 for c in LATE['corrections']:
     r = GR.get(c['img'])
     if c.get('primary') == 'holiday':
-        if r is not None and r[5] != ['holiday']: F.append(f"[13] holiday mat {r[1]} is in colour sections {r[5]} (late-calls: Holiday only)")
+        _ayr = c['img'] in _AYR
+        if r is not None and (r[5] != ['holiday'] if not _ayr else ('holiday' not in r[5] or r[5][-1] != 'holiday' or 'holiday' not in (r[9] or []))):
+            F.append(f"[13] holiday mat {r[1]} sections {r[5]} co-primary {r[9]} (late-calls: Holiday only, or colours + 'holiday' last for also_year_round)")
         k = GKEY(c['img'])
-        if k in M and not M[k].get('hid') and (M[k].get('mf') or not M[k].get('hol')): F.append(f"[13] holiday mat {M[k]['n']} in FYM single-colour chips {M[k].get('mf')} / hol={M[k].get('hol')}")
+        if k in M and not M[k].get('hid') and ((M[k].get('mf') and not (_ayr and M[k].get('ayr'))) or not M[k].get('hol')): F.append(f"[13] holiday mat {M[k]['n']} in FYM single-colour chips {M[k].get('mf')} / hol={M[k].get('hol')} ayr={M[k].get('ayr')}")
+    elif c.get('primary') and r is not None and ('holiday' in r[5] or (r[12] if len(r) > 12 else 0)):
+        F.append(f"[13h] {r[1]}: late-calls primary {c['primary']} (moved out of Holiday) but it is back in Holiday {r[5]}")
     elif r is not None:
         for a in c.get('also', []):
             if a not in r[5]: F.append(f"[13] {r[1]}: Tiffany's also-colour {a} missing (sections {r[5]})")
@@ -259,6 +270,24 @@ for c in LATE['corrections']:
             if a in r[5] or a in r[8] or a in (r[10] or []): F.append(f"[13] {r[1]}: colour {a} she removed is back")
         if c.get('floral') is False and 'florals' in r[5]: F.append(f"[13] {r[1]}: in Multicolor Florals (late-calls floral:false)")
 if any(k_ != 'note' for k_ in XT.get('holiday_off', {})): F.append("[13] crosstags holiday_off is not empty (Tiffany Oct 20: holiday stays in Holiday)")
+# 13h (Oct 21, Tiffany's final holiday definition): the two holiday exceptions are the ONLY mats in Holiday + colours / shown with Holiday
+for r in _G:
+    if 'holiday' in r[5] and r[5] != ['holiday'] and r[0] not in _AYR: F.append(f"[13h] {r[1]}: in Holiday AND colour sections {r[5]} but not on late-calls also_year_round")
+    if (r[12] if len(r) > 12 else 0) and (r[0] not in _WFH or 'holiday' in r[5]): F.append(f"[13h] {r[1]}: shown under 'work for the holidays' but not a year-round late-calls works_for_holiday mat")
+    if r[0] in _WFH and not (r[12] if len(r) > 12 else 0): F.append(f"[13h] {r[1]}: late-calls works_for_holiday but not flagged in the gallery row")
+    if 'paige spearin' in r[1].lower() and ('holiday' in r[5] or (r[12] if len(r) > 12 else 0)) and 'apr' not in r[1].lower(): F.append(f"[13h] {r[1]}: Paige Spearin mat in Holiday (no commission)")
+if 'Year-round mats that work for the holidays' not in _g or "c==='holiday'&&x[12]" not in _g: F.append("[13h] gallery Holiday section has no 'Year-round mats that work for the holidays' subheading / works_for_holiday handling")
+for k, o in M.items():
+    if o.get('ayr') and (k not in _AYRK or not o.get('hol')): F.append(f"[13h] FYM {o['n']}: ayr flag but not a holiday late-calls also_year_round mat")
+    if o.get('wfh') and (k not in _WFHK or o.get('hol')): F.append(f"[13h] FYM {o['n']}: wfh flag but not a year-round late-calls works_for_holiday mat")
+for k in _WFHK:
+    if k in M and not M[k].get('wfh'): F.append(f"[13h] FYM {M[k]['n']}: late-calls works_for_holiday but no wfh flag")
+for k in _AYRK:
+    if k in M and not M[k].get('hid') and not (M[k].get('ayr') and M[k].get('hol') and M[k].get('mf')): F.append(f"[13h] FYM {M[k]['n']}: also_year_round but not hol + ayr + single chips")
+for c in LATE['corrections']:
+    k = GKEY(c.get('img', ''))
+    if c.get('primary') and c['primary'] != 'holiday' and k in M and (M[k].get('hol') or M[k].get('wfh')): F.append(f"[13h] FYM {M[k]['n']}: moved out of Holiday (late-calls primary {c['primary']}) but hol/wfh in FYM")
+if 'M[id].hol||M[id].wfh||!HOL.has(r.s.name)' not in UI: F.append("[13h] FYM setsForMat does not offer holiday tile sets for works_for_holiday (wfh) mats")
 # 13c (Oct 21): measured colours Claude's photo check ruled out (brown/tan read as orange/red, gold as orange; config/mat-accent-photo-fixes.json)
 # never come back, in the gallery or the FYM chips, unless it is a Tiffany call (late-calls also / v5 final_sections).
 _PF = json.load(open(REPO + 'config/mat-accent-photo-fixes.json'))['mats']

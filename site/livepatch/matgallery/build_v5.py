@@ -547,6 +547,27 @@ for sec, imgs in LEAD.items():  # lead mats: pinned to the top of that section, 
 for sec, imgs in TAIL.items():
     for img in imgs:
         if img not in VI: late_log[img] = 'tail not in gallery'
+# ---------- Oct 21 (Tiffany): two holiday exceptions, late-calls 'also_year_round' + 'works_for_holiday' ----------
+# also_year_round: holiday mats that ALSO match year-round -> their colour sections + 'holiday' LAST, 'holiday' a co-primary (row field 9)
+# so it sorts with the other holiday mats; measured accents as for any year-round mat. works_for_holiday: year-round mats that also
+# show at the bottom of Holiday under a subheading (row field 12 = 1); their sections never change.
+AYR = LATE.get('also_year_round', {}).get('mats', {})
+WFH = set(LATE.get('works_for_holiday', {}).get('imgs', []))
+hx_log = {'also_year_round': {}, 'works_for_holiday': {}}
+for img, a in AYR.items():
+    x = VI.get(img)
+    if x is None:
+        hx_log['also_year_round'][img] = 'not in gallery'; continue
+    secs = [c for c in a['sections'] if c in VALID and c != 'holiday' and c not in REMOVED.get(img, [])]
+    x['secs'] = secs + ['holiday']; x['ayr'] = 1; x['hacc'] = []
+    x['acc'] = [c for c in ACC.get(img, {}).get('accents', []) if c in ACOL and c not in x['secs'] and c not in REMOVED.get(img, [])]
+    hx_log['also_year_round'][img] = [x['secs'], x['acc']]
+for img in WFH:
+    x = VI.get(img)
+    if x is None:
+        hx_log['works_for_holiday'][img] = 'not in gallery'; continue
+    assert 'holiday' not in x['secs'], img  # a works-for-holiday mat is year-round by definition
+    x['wfh'] = 1; hx_log['works_for_holiday'][img] = x['secs']
 # ---------- late Oct 20 (item J): album colours as a COMBO-ONLY hint (row field 10, like holiday accents). A set colour is added only
 # where the photo measures >= combo_only.min_pct of it (blue + teal pooled), never where she removed it. Single sections never change.
 ALB = json.load(open(P('config/mat-album-combo-colors.json')))
@@ -588,7 +609,7 @@ with open(os.path.join(HERE, 'hidden_oct20.csv'), 'w', newline='') as f:
                 w.writerow([img, man[img], BRANDFIX.get(Fi[img][2], Fi[img][2]), Fi[img][1], f'already out (held low-confidence list); would also be hidden: {lab}: {a["detail"][:100]}'])
 json.dump({'new53_added': added53, 'new53_hidden': hidden53, 'new53_sections': {x['img']: x['secs'] for x in vis if x.get('new53')},
            'v5_final_calls': v5log['final'], 'v5_pastel_to_brights': v5log['to_brights'], 'v5_simple': v5log['simple'],
-           'removed_mats': removed_mats, 'late_calls_applied': late_log, 'photo_fix_sections': pfix_log, 'combo_only_album': combo_log, 'claude_also_added': len(also_log), 'section_tiers_active': tiers,
+           'removed_mats': removed_mats, 'late_calls_applied': late_log, 'holiday_exceptions_oct21': hx_log, 'photo_fix_sections': pfix_log, 'combo_only_album': combo_log, 'claude_also_added': len(also_log), 'section_tiers_active': tiers,
            'section_counts_active': cnt, 'section_counts_if_retired_shown': cnt_with_ret, 'unique_active_mats': len(active),
            'retired': len(retired), 'hidden': len(hidden), 'dedupe_groups': len(dd_rows), 'held_low_out': len(held),
            'applied_color_calls': applied, 'unmatched_color_calls': unmatched,
@@ -596,12 +617,12 @@ json.dump({'new53_added': added53, 'new53_hidden': hidden53, 'new53_sections': {
           open(os.path.join(HERE, 'v5_counts.json'), 'w'), indent=1, ensure_ascii=False)
 
 # ---------- HTML ----------
-CSS = open(os.path.join(HERE, 'style.css')).read() + '.mmg-hint{font-size:.85em;color:#6f655d;margin:.2em 0 .6em}\n.mmg-combo .mmg-empty{display:none}\n.mmg-chip.mmg-tog{border-style:dashed}\n.mmg-watch{margin-top:auto;align-self:flex-start;border:1.5px solid #9a8f86;color:#6f655d;font-size:.68em;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:10px}\n.mmg-chip.mmg-tog[aria-pressed="true"]{border-style:solid}\n'
-# Row fields: [img, name, brand, url, ret, secs, code, watch, acc, coprimary, combo-only colours (holiday accents + album hint), shares]
+CSS = open(os.path.join(HERE, 'style.css')).read() + '.mmg-hint{font-size:.85em;color:#6f655d;margin:.2em 0 .6em}\n.mmg-combo .mmg-empty{display:none}\n.mmg-chip.mmg-tog{border-style:dashed}\n.mmg-watch{margin-top:auto;align-self:flex-start;border:1.5px solid #9a8f86;color:#6f655d;font-size:.68em;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:10px}\n.mmg-chip.mmg-tog[aria-pressed="true"]{border-style:solid}\n.mmg-sub{color:var(--n);font-size:1.08em;margin:1.6em 0 .6em;padding-top:.9em;border-top:1px solid var(--pl)}\n.mmg-sub[hidden]{display:none}\n'
+# Row fields: [img, name, brand, url, ret, secs, code, watch, acc, coprimary, combo-only colours (holiday accents + album hint), shares, works_for_holiday]
 # Image swaps (Tiffany Oct 20): use a clean flat photo when a store's photo has text/cropping
 IMG_ALIAS = {'four-winds-social--fws-x-mahj-mood-collab-beyond-the-ribbon': 'mahj-mood--beyond-the-ribbon-four-winds-social-collab-mat-benefitting-pink-fund-pre-order-ships-end-of-december'}
-data = json.dumps([[IMG_ALIAS.get(x['img'], x['img']), x['name'], x['brand'], x['url'], x['ret'], x['secs'], x['code'], 1 if x['img'] in WATCH else 0, x['acc'], V5.get('coprimary', {}).get(x['img'], []), x.get('hacc') or [],
-                   {c: s for c, s in ACC.get(x['img'], {}).get('shares', {}).items() if c in x['secs'] or c in x['acc']}] for x in vis],
+data = json.dumps([[IMG_ALIAS.get(x['img'], x['img']), x['name'], x['brand'], x['url'], x['ret'], x['secs'], x['code'], 1 if x['img'] in WATCH else 0, x['acc'], V5.get('coprimary', {}).get(x['img'], []) + (['holiday'] if x.get('ayr') else []), x.get('hacc') or [],
+                   {c: s for c, s in ACC.get(x['img'], {}).get('shares', {}).items() if c in x['secs'] or c in x['acc']}, 1 if x.get('wfh') else 0] for x in vis],
                   separators=(',', ':'), ensure_ascii=False).replace('</', '<\\/')
 chips = ('<button type="button" class="mmg-chip" data-f="all" aria-pressed="true">All / Clear</button>'
          + ''.join(f'<button type="button" class="mmg-chip" data-f="{c}" aria-pressed="false">{html.escape(l)}</button>' for c, l in COL if cnt[c])
@@ -609,23 +630,24 @@ chips = ('<button type="button" class="mmg-chip" data-f="all" aria-pressed="true
          + '<button type="button" class="mmg-chip mmg-tog" data-t="ret" aria-pressed="true">Hide retired</button>')
 brands = sorted({x['brand'] for x in vis}, key=str.lower)
 opts = '<option value="">All brands</option>' + ''.join(f'<option>{html.escape(b)}</option>' for b in brands)
-secs = ''.join(f'<section class="mmg-sec" data-c="{c}"><h2 class="mmg-h">{html.escape(l)} mahjong mats</h2><ul class="mmg-grid"></ul><p class="mmg-empty">No mats here from that brand yet.</p></section>'
+WFH_SUB = '<h3 class="mmg-sub" hidden>Year-round mats that work for the holidays</h3><ul class="mmg-grid mmg-wfh"></ul>'  # Oct 21: works_for_holiday mats, bottom of Holiday
+secs = ''.join(f'<section class="mmg-sec" data-c="{c}"><h2 class="mmg-h">{html.escape(l)} mahjong mats</h2><ul class="mmg-grid"></ul>{WFH_SUB if c == "holiday" else ""}<p class="mmg-empty">No mats here from that brand yet.</p></section>'
                for c, l in COL if cnt_with_ret[c])
 secs = '<section class="mmg-combo" hidden><h2 class="mmg-h"></h2><ul class="mmg-grid"></ul><p class="mmg-empty">No mats with all of those yet — try removing one.</p></section>' + secs
 secs += '<section class="mmg-sec" data-c="retired"><h2 class="mmg-h">Retired mats</h2><p class="mmg-intro">No longer sold, kept here so you can see what goes with the tiles you already own.</p><ul class="mmg-grid"></ul><p class="mmg-empty">No retired mats from that brand.</p></section>' if retired else ''
 JS = r"""(function(){var r=document.currentScript.parentNode,R=JSON.parse(r.querySelector('script[type="application/json"]').textContent),B='https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@__C__/assets/mats/gallery/',f='all',br='',hr=true,LD=__LEAD__,TL=__TAIL__,IB=__IB__;
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function card(x,i){var shop=x[3]?'<a class="mmg-shop" href="'+esc(x[3])+'" target="_blank" rel="sponsored noopener">Shop the mat</a>':(x[4]?'<span class="mmg-ret">Retired</span>':(x[7]?'<span class="mmg-watch">One to watch</span>':''));var img='<img src="'+(IB[x[0]]?B.replace(/@[0-9a-f]+\//,'@'+IB[x[0]]+'/'):B)+x[0]+'.webp" alt="'+esc(x[2]+' '+x[1])+' mahjong mat" loading="lazy" decoding="async" width="640" height="640">';return '<li class="mmg-card" data-b="'+esc(x[2])+'" data-i="'+i+'"'+(x[4]?' data-r="1"':'')+'>'+(x[3]?'<a class="mmg-img" href="'+esc(x[3])+'" target="_blank" rel="sponsored noopener">'+img+'</a>':'<span class="mmg-img">'+img+'</span>')+'<div class="mmg-body"><span class="mmg-brand">'+esc(x[2])+'</span><span class="mmg-name">'+esc(x[1])+'</span>'+(x[6]?'<a class="mmg-code" href="'+esc(x[6])+'">'+esc(x[2])+' guide</a>':'')+shop+'</div></li>'}
-function sk(x,c){var ld=(LD[c]||[]).indexOf(x[0]);if(ld>-1)return -10+ld/100;var tl=(TL[c]||[]).indexOf(x[0]);if(tl>-1)return 5+tl/100;var s=(x[11]&&x[11][c])||0,p=([x[5][0]].concat(x[9]).indexOf(c)>-1&&x[5].indexOf(c)>-1)?1:0;return 1-(s+20*p)/1000-p/1e6}/* Oct 20 late rule: Tiffany's lead mats first, then ONE list by score high to low (score = measured share of the colour + 20 if it is the mat's primary; no measurement = 0; ties: primary first, then name), then her tail mats */
-function has(x,c,m){return x[5].indexOf(c)>-1||x[8].indexOf(c)>-1||(m&&x[10]&&x[10].indexOf(c)>-1)}function tier(x,C){var pr=[x[5][0]].concat(x[9]);if(C.some(function(c){return pr.indexOf(c)>-1})&&C.every(function(c){return x[5].indexOf(c)>-1}))return 0;if(C.every(function(c){return x[5].indexOf(c)>-1})){var p=0;C.forEach(function(c){p=Math.max(p,x[5].indexOf(c))});return 1+Math.min(p-1,3)/10}return 2}
-r.querySelectorAll('.mmg-sec').forEach(function(s){var c=s.dataset.c,h='';var L=[];R.forEach(function(x,i){if(c==='retired'?x[4]:has(x,c))L.push(i)});L.sort(function(a,b){function k(i){var x=R[i];return c==='retired'?(x[2]==='Mahjong Studios'?0.5:0):sk(x,c)}return k(a)-k(b)||(c==='retired'?0:R[a][1].toLowerCase().localeCompare(R[b][1].toLowerCase()))||a-b});L.forEach(function(i){h+=card(R[i],i)});s.querySelector('.mmg-grid').innerHTML=h});
+function sk(x,c){if(c==='holiday'&&x[12])return 8;var ld=(LD[c]||[]).indexOf(x[0]);if(ld>-1)return -10+ld/100;var tl=(TL[c]||[]).indexOf(x[0]);if(tl>-1)return 5+tl/100;var s=(x[11]&&x[11][c])||0,p=([x[5][0]].concat(x[9]).indexOf(c)>-1&&x[5].indexOf(c)>-1)?1:0;return 1-(s+20*p)/1000-p/1e6}/* Oct 21: works_for_holiday mats (x[12]) sit at the bottom of Holiday, under their own subheading. Oct 20 late rule: Tiffany's lead mats first, then ONE list by score high to low (score = measured share of the colour + 20 if it is the mat's primary; no measurement = 0; ties: primary first, then name), then her tail mats */
+function has(x,c,m){return x[5].indexOf(c)>-1||x[8].indexOf(c)>-1||(m&&x[10]&&x[10].indexOf(c)>-1)||(c==='holiday'&&x[12]===1)}function tier(x,C){var pr=[x[5][0]].concat(x[9]);if(C.some(function(c){return pr.indexOf(c)>-1})&&C.every(function(c){return x[5].indexOf(c)>-1}))return 0;if(C.every(function(c){return x[5].indexOf(c)>-1})){var p=0;C.forEach(function(c){p=Math.max(p,x[5].indexOf(c))});return 1+Math.min(p-1,3)/10}return 2}
+r.querySelectorAll('.mmg-sec').forEach(function(s){var c=s.dataset.c,h='';var L=[];R.forEach(function(x,i){if(c==='retired'?x[4]:has(x,c))L.push(i)});L.sort(function(a,b){function k(i){var x=R[i];return c==='retired'?(x[2]==='Mahjong Studios'?0.5:0):sk(x,c)}return k(a)-k(b)||(c==='retired'?0:R[a][1].toLowerCase().localeCompare(R[b][1].toLowerCase()))||a-b});var h2='';L.forEach(function(i){if(c==='holiday'&&R[i][12])h2+=card(R[i],i);else h+=card(R[i],i)});s.querySelector('.mmg-grid').innerHTML=h;var w=s.querySelector('.mmg-wfh');if(w)w.innerHTML=h2});
 var chips=r.querySelectorAll('.mmg-chip[data-f]'),tog=r.querySelector('.mmg-tog'),sel=r.querySelector('.mmg-brand-sel'),tot=r.querySelector('.mmg-total'),cmb=r.querySelector('.mmg-combo'),S=[],LB={};
 chips.forEach(function(x){LB[x.dataset.f]=x.textContent});
 function combo(){var L=[],h='';R.forEach(function(x,i){if(S.every(function(c){return has(x,c,1)})&&(!br||x[2]===br)&&!(hr&&x[4]))L.push(i)});L.sort(function(a,b){function k(i){var x=R[i];return(x[2]==='Mahjong Studios'?0.5:0)+tier(x,S)}return k(a)-k(b)||a-b});L.forEach(function(i){h+=card(R[i],i)});cmb.querySelector('.mmg-h').textContent='Mats with '+S.map(function(c){return LB[c]}).join(' + ');cmb.querySelector('.mmg-grid').innerHTML=h;cmb.querySelector('.mmg-empty').style.display=L.length?'none':'block';return L.length}
 function go(){var seen={},all=0,f=S.length===1?S[0]:(S.length?'':'all');chips.forEach(function(x){var on=x.dataset.f==='all'?!S.length:S.indexOf(x.dataset.f)>-1;x.setAttribute('aria-pressed',on?'true':'false')});tog.setAttribute('aria-pressed',hr?'true':'false');
 if(S.length>1){r.querySelectorAll('.mmg-sec').forEach(function(s){s.hidden=true});cmb.hidden=false;var n=combo();tot.textContent=n+(n===1?' mat':' mats');return}
 cmb.hidden=true;cmb.querySelector('.mmg-grid').innerHTML='';
-r.querySelectorAll('.mmg-sec').forEach(function(s){var c=s.dataset.c,on=f==='all'||c===f,n=0;s.hidden=!on;if(!on)return;s.querySelectorAll('.mmg-card').forEach(function(d){var ok=(!br||d.dataset.b===br)&&!(hr&&c!=='retired'&&d.dataset.r);d.hidden=!ok;if(ok){n++;if(!seen[d.dataset.i]){seen[d.dataset.i]=1;all++}}});s.querySelector('.mmg-empty').style.display=n?'none':'block';if(!n&&f==='all')s.hidden=true});tot.textContent=all+(all===1?' mat':' mats')}
+r.querySelectorAll('.mmg-sec').forEach(function(s){var c=s.dataset.c,on=f==='all'||c===f,n=0;s.hidden=!on;if(!on)return;s.querySelectorAll('.mmg-card').forEach(function(d){var ok=(!br||d.dataset.b===br)&&!(hr&&c!=='retired'&&d.dataset.r);d.hidden=!ok;if(ok){n++;if(!seen[d.dataset.i]){seen[d.dataset.i]=1;all++}}});var w=s.querySelector('.mmg-wfh');if(w)s.querySelector('.mmg-sub').hidden=![].some.call(w.querySelectorAll('.mmg-card'),function(d){return !d.hidden});s.querySelector('.mmg-empty').style.display=n?'none':'block';if(!n&&f==='all')s.hidden=true});tot.textContent=all+(all===1?' mat':' mats')}
 chips.forEach(function(x){x.addEventListener('click',function(){var c=x.dataset.f,i=S.indexOf(c);if(c==='all'){S=[]}else if(c==='retired'){S=i>-1?[]:['retired']}else{S=S.filter(function(v){return v!=='retired'});i=S.indexOf(c);if(i>-1)S.splice(i,1);else S.push(c)}go()})});tog.addEventListener('click',function(){hr=!hr;go()});sel.addEventListener('change',function(){br=sel.value;go()});go()})();""".replace('__C__', COMMIT).replace('__LEAD__', json.dumps(LEAD)).replace('__TAIL__', json.dumps(TAIL)).replace('__IB__', json.dumps(IMGB))
 print(f"""<style>{CSS}</style>
 <div class="mmg"><span class="mmg-eyebrow">The Mat Library</span>

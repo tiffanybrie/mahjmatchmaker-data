@@ -17411,8 +17411,12 @@
    "th": "mt9ba1e70b",
    "rt": false,
    "hid": false,
-   "mf": [],
-   "mt": [],
+   "mf": [
+    "blue"
+   ],
+   "mt": [
+    0
+   ],
    "hol": true
   },
   "birdandbamboo.com/the-paradise-mahjong-mat-blue-bliss": {
@@ -20517,12 +20521,8 @@
    "th": "mt6b3c5064",
    "rt": false,
    "hid": false,
-   "mf": [
-    "blue"
-   ],
-   "mt": [
-    0
-   ]
+   "mf": [],
+   "mt": []
   },
   "peacelovemahjong.com/mahjong-mats-holiday-1": {
    "n": "Mahjong Mats - Holiday - Wholesale",
@@ -21291,8 +21291,14 @@
    "th": "mt16511303",
    "rt": false,
    "hid": false,
-   "mf": [],
-   "mt": []
+   "mf": [
+    "orange",
+    "dark"
+   ],
+   "mt": [
+    0,
+    1
+   ]
   },
   "shop.andersruff.com/purple-aqua-marble-mahjong-mat": {
    "n": "Purple & Aqua Marble",
@@ -21357,8 +21363,14 @@
    "th": "mt45c402f5",
    "rt": false,
    "hid": false,
-   "mf": [],
-   "mt": [],
+   "mf": [
+    "red",
+    "dark"
+   ],
+   "mt": [
+    0,
+    1
+   ],
    "hol": true
   },
   "shop.andersruff.com/tartan-toile-noel-mahjong-mat": {
@@ -21708,8 +21720,16 @@
    "th": "mt5306a31c",
    "rt": false,
    "hid": false,
-   "mf": [],
-   "mt": [],
+   "mf": [
+    "green",
+    "orange",
+    "dark"
+   ],
+   "mt": [
+    0,
+    1,
+    1
+   ],
    "hol": true
   },
   "sundaymahjong.com/gaylord-premium-mahjong-mat": {
@@ -22541,8 +22561,14 @@
    "th": "mtb8dd8802",
    "rt": false,
    "hid": false,
-   "mf": [],
-   "mt": []
+   "mf": [
+    "orange",
+    "neutral"
+   ],
+   "mt": [
+    0,
+    1
+   ]
   },
   "www.bamletsmahjong.com/secret-garden-mahjong-mat-watercolor-floral-mahjong-mat": {
    "n": "Secret Garden – Watercolor Floral",
@@ -24280,14 +24306,8 @@
    "th": "mte50ef3f3",
    "rt": false,
    "hid": false,
-   "mf": [
-    "blue",
-    "pink"
-   ],
-   "mt": [
-    0,
-    2
-   ]
+   "mf": [],
+   "mt": []
   },
   "www.ohmymahjong.com/vanderbilt-mat-w-tube": {
    "n": "Vanderbilt",
@@ -24660,8 +24680,12 @@
   "www.bambirdboutique.com/bandana-neoprene-mahjong-mat?v=53345465237813": {
    "n": "Bandana – Holiday Green/Pink accents",
    "bn": "Bam Bird Boutique",
-   "mf": [],
-   "mt": [],
+   "mf": [
+    "green"
+   ],
+   "mt": [
+    0
+   ],
    "hol": true
   },
   "mahjongstudios.com/mahjong-mat?v=50645970583789": {
@@ -24737,22 +24761,40 @@
   "peacelovemahjong.com/mahjong-mats-holiday?v=67570521276708": {
    "n": "Merry Mix",
    "bn": "Peace Love Mahjong",
-   "mf": [],
-   "mt": [],
+   "mf": [
+    "red",
+    "pink",
+    "green"
+   ],
+   "mt": [
+    0,
+    1,
+    1
+   ],
    "hol": true
   },
   "peacelovemahjong.com/mahjong-mats-holiday?v=67570521506084": {
    "n": "Merry & Striped",
    "bn": "Peace Love Mahjong",
-   "mf": [],
-   "mt": [],
+   "mf": [
+    "red"
+   ],
+   "mt": [
+    0
+   ],
    "hol": true
   },
   "peacelovemahjong.com/mahjong-mats-holiday?v=67570557354276": {
    "n": "Candy Cane Lane",
    "bn": "Peace Love Mahjong",
-   "mf": [],
-   "mt": [],
+   "mf": [
+    "red",
+    "pink"
+   ],
+   "mt": [
+    0,
+    1
+   ],
    "hol": true
   },
   "mahjandmoon.com/pink-green-floral-mahjong-mat": {
@@ -25330,8 +25372,18 @@
   "talamahj.com/carlyle-holiday-mahjong-mat-with-red-fringe": {
    "n": "The Carlyle - Holiday Plaid with Red Fringe",
    "bn": "Tala Mahj",
-   "mf": [],
-   "mt": [],
+   "mf": [
+    "neutral",
+    "dark",
+    "red",
+    "orange"
+   ],
+   "mt": [
+    0,
+    2,
+    2,
+    2
+   ],
    "hol": true
   },
   "mahjsquadshop.com/blue-chinoiserie-mahjong-mat-copy": {

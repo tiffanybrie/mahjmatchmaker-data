@@ -48,7 +48,7 @@ def derive(r):
         mf, mt, ha, hol = [], [], to_fym(hacc), True
     else:
         prim = to_fym([secs[0]] + list(cop)); also = to_fym(secs[1:], prim); ac = to_fym(acc, prim + also)
-        mf, mt, ha, hol = prim + also + ac, [0] * len(prim) + [1] * len(also) + [2] * len(ac), to_fym(hacc, prim + also + ac), False
+        mf, mt, ha, hol = prim + also + ac, [0] * len(prim) + [1] * len(also) + [2] * len(ac), to_fym(hacc, prim + also + ac), 'holiday' in secs  # Oct 21: also_year_round rows keep hol
     return mf, mt, ha, hol, [round(sum(shr.get(g, 0) for g in FROM[f]), 1) for f in mf]
 
 
