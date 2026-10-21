@@ -21,3 +21,14 @@ Hand-made assets kept here:
 - `logos/` brand logos (map.json), our logo and the flame heart icon (from her Canva logo).
 
 Docs: project docs 16-22 (design direction, card rules, UX feedback, playful copy).
+
+## Tile-photo identity check (Oct 21; gate [14])
+`builder/photo_identity_check.py` fails when a set's asset shows ANOTHER set's tile photo (the Oct 21 bug: Heritage 1 pictured on the
+Heritage 2.0 "Tile Edit" colour card). Canonical photos = `assets/tiles/album/*` + `assets/tiles/holiday/*`. Each asset is matched with
+SIFT + RANSAC, then confirmed as the SAME PHOTO (colour high-pass correlation >= 0.85, mean colour difference <= 14, matched area >= 15%
+of the canonical), so sister sets with identical face art (Heritage 1 vs 2.0, Virora, Holly Jolly colourways) never cross-match.
+- FYM: runs inside `fym_gate.py` as [14] (tile `full` + `pile`; expected set = the canonical named in `src`, else the tile name).
+- Colour cards / covers / pins / social: `python3 builder/photo_identity_check.py --dirs assets/colorcards assets/covers assets/social`
+- Live site (every sitemap page): `python3 builder/photo_identity_check.py --live-pages`
+- One-offs: `--files new-card.jpg=heritage-2-0`. Exit 1 on any FAIL; WARN = no canonical match (non-album photo), look by eye.
+Run it on any new colour card, cover or pin before it goes live.
