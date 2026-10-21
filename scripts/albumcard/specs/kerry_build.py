@@ -1,6 +1,8 @@
 """Kerry mat (BettyJuneJeannette, Etsy) match cards, Oct 20 2am. Tiffany picks: Pearlescent (Jasmine dropped Oct 20: greens clash), Moonlight,
 La Fete, Willow, Talulah + Coquette. Mat racks (Tiffany): Miss Mahjong Scalloped Iridescent Opal, a clear scallop
-(brand TBD, no photo yet), B&B Ballet Pink. Kerry has no affiliate yet -> footer SHOP THE MATCH.
+(brand TBD, no photo yet), B&B Ballet Pink. Oct 21 (Tiffany 3:39pm, into the live albums): code band 10% on the OMM sets (code MAHJMATCH works on the tiles; Oct 18 rule: no SHOP THE MATCH footers).
+Coquette (LoveShackFancy x OMM, no code on the tiles or the Kerry) keeps SHOP THE MATCH, the documented Coquette exception (brownstone_bloom_build.py).
+Kerry shop link = her ShopMy link https://go.shopmy.us/p-96114928 (6% on Etsy via ShopMy).
 Run: python3 scripts/albumcard/specs/kerry_build.py && python3 scripts/albumcard/gen2.py scripts/albumcard/specs/kerry.json assets/cards/kerry"""
 import json
 R = '/home/claude/mahjmatchmaker-data/'
@@ -18,9 +20,10 @@ cards = []
 for i, (s, n) in enumerate(SETS, 1):
     cards.append({'slug': f'{s}-kerry', 'set': s, 'order': i, 'title': f'{n} + Kerry', 'col': COL.get(s, '#7a9a6a'),
                   'tile_file': f'assets/tiles/album/{s}.jpg', 'tilefit': 'cover', 'racks': F[s],
-                  'file': f'{s}-mahjong-tiles-bettyjunejeannette-kerry-mat.jpg'})
+                  'file': f'{s}-mahjong-tiles-bettyjunejeannette-kerry-mat.jpg',
+                  'code': 'SHOP THE MATCH : MAHJMATCHMAKER.COM' if s == 'coquette' else '10% OFF  USE CODE : MAHJMATCH'})
 spec = {'_note': __doc__.split('\n')[0], 'mat_file': 'assets/mats/etsy/bettyjunejeannette/kerry-2.jpg',
         'mat_crop': [181, 558, 2049, 2429], 'mat_key': 'kerry', 'max_racks': 4,
-        'code': 'SHOP THE MATCH : MAHJMATCHMAKER.COM', 'cards': cards}
+        'cards': cards}
 json.dump(spec, open(R + 'scripts/albumcard/specs/kerry.json', 'w'), indent=1, ensure_ascii=False)
 for c in cards: print(c['title'], c['racks'])

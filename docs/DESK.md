@@ -1,9 +1,8 @@
-# The Desk
+# Desk: progress log (agent sessions write here as they go)
 
-See CLAUDE.md. Rewritten nightly by the end-of-day desk cleanup.
-
-## In progress / don't drop
-- (Oct 21 4pm) /find-your-mat-ch-feedback page is LIVE but unlinked and still shows the album-request form. Fix the form (fields: what were you doing / what happened or your idea / optional email; name "FYM Feedback"; notify mahjmatchmaker@gmail.com) or disable the page. The Gmail filter #11 import is pending too. Owner: the email/FYM visuals job, after v70.
-- (Oct 21 4pm) The email + FYM page visuals wait on FYM v70 (banner name fix). Then re-capture, one QA pass, publish the hidden page, update launch step 0a and the trigger, update the Squarespace draft, reopen d-email-templates.
-- (Oct 21) Waiting on Tiffany: mailing address for the email footer; yes for sender hello@mahjmatchmaker.com + DKIM + DMARC; standing yes for auto-posting feed pieces; keep or swap the no-commission bow lamp (ShopMy).
-- (Oct 21) Rule: only ONE agent drives Chrome at a time (stray keystrokes hit other tabs today).
+## Oct 21 afternoon: Kerry cards into the live albums + thin-album shortlists
+- [x] Checked the 11 Kerry cards (Coquette, Willow, Dandy, Pearlescent, La Fete, Sorbet, Moonlight, Luminaire, Birdie, Taylor, Talulah). Racks = current final_lists; tile photos = canonical album photos (no changes since render); no "Mahjong Social Club".
+- [x] FAIL found: every card had the old "SHOP THE MATCH" footer (Oct 18 rule: every card carries MAHJMATCH). Re-rendered: 10 OMM cards say "10% OFF USE CODE : MAHJMATCH"; Coquette (LoveShackFancy x OMM, no code on tiles or mat) keeps SHOP THE MATCH, the documented Coquette exception.
+- [x] Kerry ShopMy link verified: https://go.shopmy.us/p-96114928 -> Etsy listing 4493549326 (The Kerry). Gallery row (matgallery-v5.html + new53_rows.json) swapped from etsy.com to it.
+- [x] FYM check: Kerry is NOT in any of the 11 sets' match lists (staged fym-oct21f) and its FYM url is still etsy.com. For the v70/v71 app fix, not published here.
+- [ ] Album snippets staged in site/livepatch/kerry-oct21/ ; QA requested from main; publish after QA.
