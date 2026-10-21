@@ -36,3 +36,13 @@
    - **SEO description:** Anders Ruff Brownstone Bloom tiles matched to 31 mats, with rack picks and shop links. Top picks first. Save with code MAHJMATCH.
 2. Replace the duplicated code block with `brownstone-bloom-codeblock.html`, fetched from jsDelivr at this README's commit.
 3. Verify with curl: 31 `mm3-c` figures, the h1, and the cover loading. Then add the album cover to /mahjong-tile-matches, the home page and its color page, using the same pattern as Papaya (`site/livepatch/papaya/README.md`).
+
+## Oct 21 update: everything owed is built (still NOT live)
+Tiffany, Oct 21 1:00pm: "we haven't even released Brownstone Bloom from Anders Ruff... we got to get ahead of this."
+- **Color card** (doc 86): `assets/colorcards/brownstone-bloom/` (desktop Tile Edit + phone guide), spec `config/colorcards.json` → `brownstone-bloom`. Classic Tile Edit labels (no gender set for this set). Colours measured from the album pile + AR's NEWS close-up: Ivory #eee3cf, Lavender butterfly back #ae9ca9, Wine #5b3838, Olive #5c512a, Dusty Rose #bb7c71. Gate [14] photo identity: OK on both.
+- **Canonical album photo:** `assets/tiles/album/brownstone-bloom.jpg` (= the colour-corrected pile; index.json entry). The CARD-ONLY E-tile edit stays inside card tile boxes only.
+- **Missing mats round 2:** `review/missing-mats-round2.json` (15 candidates + what was checked and left out). Pool = visible FYM partner/allowed mats not in the Oct 18 swipe book (123 mats) + Amanda Toppe's 9 full-size mats (none were in the book).
+- **Racks:** AR lists the tile at 0.98" W, so 19 tiles = 18.6" > Mahjong Row's 18.5" racks. The 4 Mahjong Row mats keep their B&B/PLM picks. Option offered: Mahjong Row Scalloped Tortoise (20") as a 5th tile rack.
+- **Codes:** AR's page says the tile set takes no promo codes (Indigo Pruitt special edition). Code MAHJMATCH goes on mats/racks only.
+- **Review:** Ready to Ship item `l-brownstone-v2` (contact sheet `review/brownstone-31-cards-contact-sheet.jpg`, colour cards, 15 ♥/✕ taps saved to ship doc `picks`, choice `now` | `wait` saved as `choice` with v=ok). HQ need `brownstone-shortlist` reopened as the Today item, held (`status: parked`, `qaHold: true`) until independent QA passes; then set it open and add `l-brownstone-v2` to RTS `NOW`.
+- Her ♥ mats need cards built with `scripts/albumcard/oct20/brownstone_build.py` (append after #31 unless she reorders) + `brownstone_block.py <sha>`, then warm jsDelivr.
