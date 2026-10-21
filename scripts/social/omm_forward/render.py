@@ -41,7 +41,7 @@ def shell(body, H=1350):
 .k{{font-family:Bit;font-weight:700;letter-spacing:.2em;color:{WNAVY}}}
 .hd{{font-family:Capra;font-weight:400;line-height:1;color:{WNAVY};text-align:center;white-space:nowrap}}
 .lk{{display:inline-flex;flex-direction:column;align-items:stretch}} .lk img{{display:block;width:100%}}
-.lk b{{display:block;margin-top:.5em;background:#f56c8c;color:#fff;font-family:Bit;font-weight:700;letter-spacing:.16em;text-align:center;white-space:nowrap;padding:.42em 0 .38em;border-radius:3px}}
+.lk b{{display:block;margin-top:.5em;background:#f56c8c;color:#fff;font-family:Bit;font-weight:700;letter-spacing:.14em;text-align:center;white-space:nowrap;padding:.5em 0 .44em;border-radius:3px}}
 </style></head><body><div id=pg style="position:relative;width:1080px;height:{H}px;background:{PAPER};overflow:hidden">
 <div style="position:absolute;right:-210px;top:-230px;width:700px;height:700px;border-radius:50%;background:{BLUSHBG}"></div>
 <div style="position:absolute;left:-230px;bottom:-250px;width:660px;height:660px;border-radius:50%;background:{BLUSHBG};opacity:.75"></div>
@@ -52,7 +52,7 @@ def lockup(w):
     """Wordmark WITH the tagline ribbon (Tiffany Oct 21 2:12pm; = assets/brand/mahjmatchmaker-wordmark.png, rebuilt in HTML
     so it stays sharp at any size: that PNG is only 420px wide). Never pair it with "Hooking up..." (one tagline per piece)."""
     return (f'<div class=lk style="width:{w}px"><img src="{u('assets/brand/mahjmatchmaker-wordmark-notag.png')}">'
-            f'<b style="font-size:{round(w*0.04)}px">MATCHING MAHJONG TILES, MATS &amp; RACKS</b></div>')
+            f'<b style="font-size:{round(w*0.0315)}px">MATCHING MAHJONG TILES, MATS &amp; RACKS</b></div>')
 
 
 def slide1():
@@ -104,7 +104,7 @@ def slide3():
              card('vivienne', 315, 196, 450, 0, 3))
     return shell(f"""{cards}
 <div style="position:absolute;left:60px;right:60px;top:744px;z-index:5;background:{PAPER};border-radius:34px;padding:34px 30px 34px;text-align:center;box-shadow:0 20px 50px rgba(6,42,85,.22)">
-  <div class=hd style="font-size:72px">50 matches and counting</div>
+  <div class=hd style="font-size:66px">50 matches and counting</div>
   <div style="display:inline-block;margin-top:26px;background:{NAVY};color:#fff;border-radius:44px;padding:16px 44px 18px;line-height:1.15">
     <div style="font-family:Lo;font-weight:700;font-size:40px">Swipe all {COUNT} of {SHORT}&rsquo;s matches</div>
     <div style="font-family:Bit;font-weight:600;font-size:28px;letter-spacing:.06em;color:#f7b6c8;margin-top:4px">mahjmatchmaker.com</div>
@@ -121,7 +121,7 @@ def slide3_story():
              card('vivienne', 250, 40, 580, 0, 3))
     return shell(f"""{cards}
 <div style="position:absolute;left:30px;right:30px;top:780px;z-index:5;background:{PAPER};border-radius:40px;padding:40px 30px 40px;text-align:center;box-shadow:0 20px 50px rgba(6,42,85,.22)">
-  <div class=hd style="font-size:76px">50 matches and counting</div>
+  <div class=hd style="font-size:74px">50 matches and counting</div>
   <div style="display:inline-block;margin-top:30px;background:{NAVY};color:#fff;border-radius:54px;padding:20px 52px 22px;line-height:1.15">
     <div style="font-family:Lo;font-weight:700;font-size:50px;white-space:nowrap">Swipe all {COUNT} of {SHORT}&rsquo;s matches</div>
     <div style="font-family:Bit;font-weight:600;font-size:36px;letter-spacing:.06em;color:#f7b6c8;margin-top:6px">mahjmatchmaker.com</div>
