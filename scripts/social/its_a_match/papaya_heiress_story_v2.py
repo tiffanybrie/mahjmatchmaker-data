@@ -53,7 +53,12 @@ def frame3():
   <div style="position:absolute;left:-4px;top:{round(ph*.29)}px;width:4px;height:{round(ph*.07)}px;border-radius:2px;background:#22252c"></div>
   <div style="position:absolute;right:-4px;top:{round(ph*.25)}px;width:4px;height:{round(ph*.11)}px;border-radius:2px;background:#22252c"></div>
   <div style="width:{sw}px;height:{sh}px;border-radius:{round(pw*0.17)-bez+4}px;overflow:hidden;background:#fff;position:relative">
-    <img src="{u(c['fym_img'])}" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block">
+    <!-- Oct 21 QA: the dynamic island covered FYM's step bar, so the page sits below an iOS status bar (47pt of 390 = real safe area);
+         plus the 34pt home-indicator area at the bottom; the 390x844 shot is contained (not cropped) so the X + heart row stays whole; the shot's edges are white like the screen -->
+    <div style="height:{round(sw*47/390)}px;display:flex;align-items:center;justify-content:space-between;padding:0 {round(sw*.09)}px 0 {round(sw*.1)}px;font:600 {round(sw*.042)}px -apple-system,Helvetica,Arial,sans-serif;color:#000">
+      <span>9:41</span><span style="display:flex;gap:{round(sw*.012)}px;align-items:center"><svg width="{round(sw*.045)}" height="{round(sw*.03)}" viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx=".7"/><rect x="5" y="5.5" width="3" height="6.5" rx=".7"/><rect x="10" y="3" width="3" height="9" rx=".7"/><rect x="15" y="0" width="3" height="12" rx=".7"/></svg><svg width="{round(sw*.065)}" height="{round(sw*.03)}" viewBox="0 0 27 12"><rect x=".5" y=".5" width="22" height="11" rx="3" fill="none" stroke="#000" opacity=".4"/><rect x="2" y="2" width="19" height="8" rx="1.8"/><rect x="24" y="4" width="2" height="4" rx="1" opacity=".4"/></svg></span></div>
+    <img src="{u(c['fym_img'])}" style="width:100%;height:{sh - round(sw*81/390)}px;object-fit:contain;object-position:top center;display:block">
+    <div style="position:absolute;left:50%;bottom:{round(sw*8/390)}px;width:{round(sw*.35)}px;height:{max(4, round(sw*5/390))}px;margin-left:-{round(sw*.175)}px;border-radius:99px;background:#000"></div>
     <div style="position:absolute;left:50%;top:11px;width:{round(sw*.31)}px;height:{round(sw*.09)}px;margin-left:-{round(sw*.155)}px;border-radius:99px;background:#000"></div>
   </div>
 </div>
