@@ -68,7 +68,8 @@ def build():
 #mmtz .mmtz-w{max-width:980px;margin:0 auto;padding:0 20px}
 #mmtz .mmtz-k{display:inline-block;background:var(--pk);color:#fff;font:700 13px/1 'Bitter',Georgia,serif;letter-spacing:.16em;text-transform:uppercase;padding:9px 16px;border-radius:999px;margin:0 0 16px}
 #mmtz h1.mmtz-t{font-family:'Caprasimo',Georgia,serif;font-weight:400;font-size:clamp(40px,7vw,72px);line-height:1.02;color:var(--nv);margin:0 0 12px;letter-spacing:0}
-#mmtz h1.mmtz-t em{font-style:italic}
+#mmtz h1.mmtz-t em{font-style:italic;padding-right:.06em}
+#mmtz .mmtz-nw{white-space:nowrap}
 #mmtz h1.mmtz-t sup{font-size:.32em;vertical-align:super;font-family:'Bitter',Georgia,serif}
 #mmtz .mmtz-d{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:clamp(19px,2.3vw,24px);line-height:1.4;color:var(--dn);margin:0 auto 26px;max-width:640px}
 #mmtz .mmtz-cd{display:flex;justify-content:center;gap:12px;margin:0 auto 10px}
@@ -82,7 +83,7 @@ def build():
 #mmtz.is-live .mmtz-live{display:block}
 #mmtz .mmtz-st{position:relative;width:min(300px,76vw);aspect-ratio:1/1.16;margin:0 auto 22px}
 #mmtz .mmtz-c{position:absolute;inset:0;margin:0;background:#fff;border-radius:20px;box-shadow:0 14px 34px rgba(6,42,85,.16);padding:10px 10px 0;opacity:0;transform:translateY(14px) scale(.96);transition:transform .7s cubic-bezier(.2,.8,.2,1),opacity .5s}
-#mmtz .mmtz-c img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;background:var(--pc)}
+#mmtz .mmtz-c img{display:block;width:100%!important;height:auto!important;max-width:none;aspect-ratio:1/1;object-fit:cover;border-radius:14px;background:var(--pc)}
 #mmtz .mmtz-c figcaption{padding:10px 6px 0;font:600 13px/1.25 'Bitter',Georgia,serif;color:var(--dn);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #mmtz .mmtz-c figcaption b{display:block;font-family:'Lora',Georgia,serif;font-weight:700;font-size:16px;color:var(--nv);overflow:hidden;text-overflow:ellipsis}
 #mmtz .mmtz-c.on{opacity:1;transform:none;z-index:2}
@@ -141,7 +142,7 @@ def build():
 """
     body = f"""<div id="mmtz"><div class="mmtz-w">
 <p class="mmtz-k">Coming 10.27</p>
-<h1 class="mmtz-t">Find <em>Your</em> Mat-ch<sup>&trade;</sup></h1>
+<h1 class="mmtz-t">Find <em>Your</em> <span class="mmtz-nw">Mat&#8209;ch<sup>&trade;</sup></span></h1>
 <p class="mmtz-d">Make your own matches. Pick your tiles, swipe through the mats that bring out their best colors, and shop it all with code MAHJMATCH.</p>
 <div class="mmtz-cd" role="timer" aria-label="Countdown to launch"><div><b data-u="d">6</b><span>Days</span></div><div><b data-u="h">00</b><span>Hours</span></div><div><b data-u="m">00</b><span>Min</span></div><div><b data-u="s">00</b><span>Sec</span></div></div>
 <p class="mmtz-when">Tuesday, October 27</p>
