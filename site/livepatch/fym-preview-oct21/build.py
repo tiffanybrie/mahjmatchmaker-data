@@ -14,7 +14,7 @@ App: static copy of the live artifact 6epA9HuEdT32zUp79Qv3kd, v69 = scratchpad b
   so the HTML is fetched and run in a same-origin srcdoc iframe.
   To ship a newer FYM build: push its index.html (and any changed files) to fym-site-preview, then update APP_INDEX/APP_BASE.
 """
-import os, html
+import os, html, json
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 CDN = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@'
@@ -28,6 +28,8 @@ APP_BASE = CDN + APP_COMMIT + '/site-app/fym-oct21d/'
 # (swipe: Papaya Spritz on Heiress, her #1 pick; behind it the two doors). How it works = 6-step tutorial, each a real screen.
 # Rendered by scripts/fym_promo/render.py from scripts/fym_promo/capture.py (undo hidden, X + heart only, no %).
 PHONES = CDN + 'cd8cb41d47ef16e4c242a56a0add06f768bafb97/assets/site/fym-page-v2/'
+# Tiffany 3:56/3:58pm: annotated tutorial (render2.py), one step per block, at the BOTTOM of the page; app at the top.
+TUT = CDN + '570b99d18977107da6b3be40487d010a95b65171/assets/site/fym-tutorial/'
 HERO_ALT = ('Find Your Mat-ch on a phone: Papaya Spritz tiles swiping on the Heiress mat by Britt Mills with the X and heart '
             'buttons, next to the start screen where you pick I have tiles or I have a mat')
 FEEDBACK = '/find-your-mat-ch-feedback'
@@ -79,7 +81,7 @@ CSS = r'''
 .fx-wrap{max-width:1180px;margin:0 auto;padding:0 20px}
 .fx-kick{font:700 13px/1 'Bitter',Georgia,serif;letter-spacing:.18em;text-transform:uppercase;color:var(--rose);margin-bottom:12px!important}
 /* hero */
-.fx-hero{position:relative;padding:44px 0 56px;overflow:hidden;background:radial-gradient(circle at 78% 46%,var(--pc) 0,var(--pc) 34%,transparent 34.2%),radial-gradient(circle at 4% 100%,#fdeef2 0,#fdeef2 16%,transparent 16.2%),var(--cream)}
+.fx-hero{position:relative;padding:30px 0 26px;overflow:hidden;background:radial-gradient(circle at 78% 46%,var(--pc) 0,var(--pc) 34%,transparent 34.2%),radial-gradient(circle at 4% 100%,#fdeef2 0,#fdeef2 16%,transparent 16.2%),var(--cream)}
 .fx-hero .fx-wrap{display:grid;grid-template-columns:1fr;gap:34px;align-items:center}
 .fx-copy{text-align:center;position:relative;z-index:2}
 .fx-lock{display:inline-flex;flex-direction:column;width:230px;margin:0 auto 22px}
@@ -98,14 +100,22 @@ CSS = r'''
 .fx-phones{position:relative;width:min(100%,460px);margin:0 auto}
 .fx-phones img{width:100%;height:auto}
 @media (min-width:980px){
-  .fx-hero{padding:64px 0 72px}
-  .fx-hero .fx-wrap{grid-template-columns:1.02fr 1fr;gap:28px}
-  .fx-copy{text-align:left}
+  .fx-hero{padding:40px 0 30px}
   .fx-lock{margin:0 0 26px}
   .fx-lede{margin:20px 0 0!important}
   .fx-phones{width:100%;max-width:540px}
 }
 /* how it works */
+.fx-tut{background:#fff;padding:60px 0 66px;scroll-margin-top:var(--fx-off,0px)}
+.fx-tut .fx-head{text-align:center;margin-bottom:30px}.fx-tut .fx-head p:not(.fx-kick){font-size:16px;color:#4b4560;margin-top:8px!important}
+.fx-tsteps{list-style:none;margin:0 auto!important;padding:0!important;max-width:620px;display:grid;gap:44px}
+.fx-tstep{margin:0!important;text-align:center}.fx-tstep::before{display:none!important}
+.fx-tnum{width:46px;height:46px;border-radius:50%;background:var(--rose);color:#fff;font:400 24px/46px 'Caprasimo',Georgia,serif;margin:0 auto 10px}
+.fx-tstep h3{font-size:clamp(28px,6.4vw,36px);margin-bottom:8px}
+.fx-tstep p{font-size:17px;line-height:1.55;color:#4b4560;max-width:34em;margin:0 auto 16px!important}
+.fx-tstep img{width:100%;height:auto;border-radius:22px;box-shadow:0 14px 34px rgba(6,42,85,.12)}
+.fx-tut .fx-more{text-align:center;margin-top:40px!important}
+@media (max-width:560px){.fx-tut .fx-wrap{padding:0 10px}.fx-tstep img{border-radius:14px}}
 .fx-how{background:#fff;padding:64px 0 70px}
 .fx-how .fx-head{text-align:center;margin-bottom:38px}
 .fx-how h2,.fx-app h2,.fx-faq h2,.fx-albums h2{font-size:clamp(34px,7.4vw,50px)}
@@ -124,7 +134,7 @@ CSS = r'''
 .fx-fb{text-align:center;margin-top:12px!important;font-size:15px;color:#4b4560;padding:0 16px}
 .fx-fb a{color:var(--navy)!important;font-weight:700;text-decoration:underline;text-decoration-color:var(--blush);text-underline-offset:3px;text-decoration-thickness:2px}
 /* app */
-.fx-app{position:relative;padding:56px 0 64px;background:radial-gradient(circle at 12% 18%,var(--pc) 0,var(--pc) 13%,transparent 13.2%),radial-gradient(circle at 90% 82%,var(--pc) 0,var(--pc) 16%,transparent 16.2%),#fdf3f7;scroll-margin-top:var(--fx-off,0px)}
+.fx-app{position:relative;padding:18px 0 56px;background:radial-gradient(circle at 12% 18%,var(--pc) 0,var(--pc) 13%,transparent 13.2%),radial-gradient(circle at 90% 82%,var(--pc) 0,var(--pc) 16%,transparent 16.2%),#fdf3f7;scroll-margin-top:var(--fx-off,0px)}
 .fx-app .fx-head{text-align:center;margin-bottom:20px}
 .fx-app .fx-head p:not(.fx-kick){font-size:16px;color:#4b4560;margin-top:8px!important}
 .fx-bar{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:0 auto 14px;padding:0 16px}
@@ -236,6 +246,8 @@ JS = r'''
     var y=r.top+(window.pageYOffset||de.scrollTop)-Math.max(off,Math.round((vh-off-r.height)/2)+off);
     window.scrollTo({top:y,behavior:'smooth'});}
   [].forEach.call(root.querySelectorAll('[data-fx-go]'),function(a){a.addEventListener('click',go)});
+  [].forEach.call(root.querySelectorAll('[data-fx-how]'),function(a){a.addEventListener('click',function(e){e.preventDefault();var t=document.getElementById('fymx-how');
+    window.scrollTo({top:t.getBoundingClientRect().top+(window.pageYOffset||de.scrollTop)-hdr()-8,behavior:'smooth'});})});
   function fs(on){start();stage.classList.toggle('fs',on);de.classList.toggle('fx-lock-scroll',on);if(!on)size();
     if(on)setTimeout(function(){try{fr.focus()}catch(e){}},50);}
   [].forEach.call(root.querySelectorAll('[data-fx-fs]'),function(b){b.addEventListener('click',function(e){e.preventDefault();fs(true)})});
@@ -249,9 +261,10 @@ FS_ICON = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-wid
 
 
 def build():
-    steps = ''.join(f'<li class="fx-step"><div class="fx-phone"><img src="{PHONES}step{n + 1}.webp" alt="{html.escape(alt)}" width="480" height="936" loading="lazy" decoding="async"></div>'
-                    f'<div class="fx-num">{n + 1}</div><h3>{t}</h3><p>{p}</p></li>'
-                    for n, (t, p, alt) in enumerate(STEPS))
+    T = json.load(open(os.path.join(HERE, '..', '..', '..', 'scripts', 'fym_promo', 'tutorial.json')))
+    tut = ''.join(f'<li class="fx-tstep"><div class="fx-tnum">{t["n"]}</div><h3>{t["title"]}</h3><p>{t["caption"]}</p>'
+                  f'<img src="{TUT}tut{t["n"]}.webp" alt="{html.escape(t["alt"])}" width="{t["page"][0]}" height="{t["page"][1]}" loading="lazy" decoding="async"></li>'
+                  for t in T)
     faq = ''.join(f'<details{" open" if i == 0 else ""}><summary>{q}</summary><p>{a}</p></details>' for i, (q, a) in enumerate(FAQ))
     covers = ''.join(f'<a href="/{slug}-mahjong-tile-matches"><img src="{img}" alt="{name} mahjong tile matches album" loading="lazy" decoding="async" width="800" height="1000"><span>{name}</span></a>'
                      for slug, name, img in ALBUMS)
@@ -260,18 +273,12 @@ def build():
 <div class="fx-copy">
 <p class="fx-kick">New from Mahj Matchmaker</p>
 <h1><span class="nb">Find <em>Your</em></span> <span class="nb">Mat-ch<sup>&trade;</sup></span></h1>
-<p class="fx-lede">Your turn to find your match. Pick your tiles or your mat, then swipe the mats that bring out their best colors, with Tiffany&rsquo;s picks built right&nbsp;in.</p>
-<a class="fx-btn" href="#fymx-app" data-fx-go>Start swiping <span aria-hidden="true">&#9829;</span></a>
-<p class="fx-under">Free, nothing to sign up for. Or <a href="/mahjong-tile-matches">browse the match&nbsp;albums</a>.</p>
+<p class="fx-lede">Start with your tiles or your mat. Swipe. Find your&nbsp;match.</p>
+<p class="fx-under"><a href="#fymx-how" data-fx-how>How it works&nbsp;&darr;</a> &nbsp;&middot;&nbsp; Free, nothing to sign up&nbsp;for</p>
 </div>
-<div class="fx-phones"><img src="{PHONES}hero-phones.webp" alt="{html.escape(HERO_ALT)}" width="900" height="868" fetchpriority="high" decoding="async"></div>
-</div></section>
-<section class="fx-how"><div class="fx-wrap">
-<div class="fx-head"><p class="fx-kick">How it works</p><h2>Six steps to your&nbsp;match</h2></div>
-<ol class="fx-steps">{steps}</ol>
 </div></section>
 <section class="fx-app" id="fymx-app">
-<div class="fx-wrap fx-head"><p class="fx-kick">Your turn</p><h2>Start <em>swiping</em></h2><p>Tiles first or mat first. Tap &#9829; for love, &#10005; for not the&nbsp;one.</p></div>
+<div class="fx-wrap fx-head"><p>Tap &#9829; to add a mat to your shortlist, &#10005; for not the&nbsp;one.</p></div>
 <div class="fx-bar"><button type="button" class="fx-pill" data-fx-fs>{FS_ICON}Open full screen</button></div>
 <div class="fx-grid">
 <ul class="fx-side fx-tips"><li><b><span class="h">&#9829;</span> Love it</b>It waits for you so you can&nbsp;compare.</li><li><b><span class="x">&#10005;</span> Not the one</b>On to the next mat, no hard&nbsp;feelings.</li><li><b>Zoom in</b>Pinch or tap + and your zoom stays put as you&nbsp;swipe.</li><li><b>Shop by color</b>Tap a color dot while swiping to narrow, tap again to&nbsp;clear.</li></ul>
@@ -290,6 +297,11 @@ def build():
 <div class="fx-head"><p class="fx-kick">Prefer to browse?</p><h2>The match <em>albums</em></h2><p>Tiffany&rsquo;s matches for each tile set, with racks and a link to&nbsp;shop.</p></div>
 <div class="fx-covers">{covers}</div>
 <p class="fx-more"><a class="fx-btn" href="/mahjong-tile-matches">See all match&nbsp;albums</a></p>
+</div></section>
+<section class="fx-tut" id="fymx-how"><div class="fx-wrap">
+<div class="fx-head"><p class="fx-kick">How it works</p><h2>Find your match, step by&nbsp;step</h2><p>Scroll down. Each screen shows exactly what to&nbsp;tap.</p></div>
+<ol class="fx-tsteps">{tut}</ol>
+<p class="fx-more"><a class="fx-btn" href="#fymx-app" data-fx-go>Start swiping <span aria-hidden="true">&#9829;</span></a></p>
 </div></section>
 <p class="fx-disc">Something look off or have an idea? <a href="{FEEDBACK}">Tell me here&nbsp;&rarr;</a><br>Affiliate links: I may earn a commission.</p>
 </div>

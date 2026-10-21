@@ -22,7 +22,7 @@ FYM = 'Find <em>Your</em> Mat-ch'
 CODE = 'Use code <b>MAHJMATCH</b> to save 💕'
 SIGN = 'Happy mat-ching!<br>xo, Tiffany'
 FEEDBACK = f'{SITE}/find-your-mat-ch-feedback'  # hidden page, form notifications -> mahjmatchmaker@gmail.com, Gmail label Site/FYM feedback (Claude handles)
-CDN_IMG = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@cd8cb41d47ef16e4c242a56a0add06f768bafb97/site/email/assets/fym/' if 'cdn' in sys.argv else ''  # 'cdn' arg = pinned jsDelivr srcs for Squarespace; set to the pinned jsDelivr folder for Squarespace; empty = local relative paths for previews
+CDN_IMG = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@570b99d18977107da6b3be40487d010a95b65171/site/email/assets/fym/' if 'cdn' in sys.argv else ''  # 'cdn' arg = pinned jsDelivr srcs for Squarespace; set to the pinned jsDelivr folder for Squarespace; empty = local relative paths for previews
 
 EMAILS = [
     {
