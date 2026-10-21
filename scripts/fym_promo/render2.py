@@ -36,9 +36,10 @@ STEPS = [
          alt='The shortlist bar at the bottom of the swipe, holding two loved mats. Arrows point to the shortlist and to the Mock your match button.',
          labels=[('Your shortlist: every mat you ♥', ROSE, 'bottom', 135, 1148), ('Mock up your match', NAVY, 'bottom', 322, 1148)]),
     dict(title='Mock up your match', screen='racks', crop=(1320, 2120),
-         caption='See your tiles, mat and racks together. Swipe racks the same way, then tap Make it&nbsp;official.',
+         caption='Swipe racks the same way, with my rack picks first. When you love one, tap Make it&nbsp;official.',
          alt='The mock-up step: Papaya Spritz tiles on the Heiress mat with Tiffany’s rack match, Middle & Main Scalloped Beechwood. Arrows point to the rack and to the X and heart buttons for swiping racks.',
          labels=[('Your tiles + mat, together', NAVY, 'top', 110, 1400), ('Swipe racks: ✕ or ♥', ROSE, 'bottom', 195, 2085)],
+         email_alt='The racks step: Tiffany\u2019s rack match, Middle & Main Scalloped Beechwood, with arrows to the rack and to the X and heart buttons for swiping racks.',
          email=[((1792, 2120), [('My rack pick', NAVY, 'top', 230, 1860), ('Swipe racks: ✕ or ♥', ROSE, 'bottom', 195, 2085)])]),
     dict(title='Save and share', screen='card', crop=(2362, 3020),
          caption='Pick your view, then save your match card or send it to your mahj group. Every piece is linked, with code&nbsp;MAHJMATCH.',
@@ -129,7 +130,7 @@ async def go():
             await pg.goto('file://' + f, wait_until='load'); await pg.evaluate('document.fonts.ready'); await pg.wait_for_timeout(200)
             await pg.locator('#c').screenshot(path=f'{EM}/hl-tut{i}.png', omit_background=True); await pg.close()
             h = Image.open(f'{EM}/hl-tut{i}.png').convert('RGBA'); h.quantize(colors=64, method=Image.FASTOCTREE).save(f'{EM}/hl-tut{i}.png', optimize=True)
-            out.append({'n': i, 'title': s['title'], 'caption': s['caption'], 'alt': s['alt'],
+            out.append({'n': i, 'title': s['title'], 'caption': s['caption'], 'alt': s['alt'], **({'email_alt': s['email_alt']} if s.get('email_alt') else {}),
                         'page': [im.width, im.height, os.path.getsize(f'{PG}/tut{i}.webp')],
                         'email': [e.width, e.height, os.path.getsize(f'{EM}/tut{i}.jpg')],
                         'hl': [*Image.open(f'{EM}/hl-tut{i}.png').size, os.path.getsize(f'{EM}/hl-tut{i}.png')]})

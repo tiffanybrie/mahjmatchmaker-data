@@ -167,7 +167,7 @@ ASSETS = ROOT / "assets" / "fym"
 MANI = json.loads((ASSETS / "manifest.json").read_text())  # alt text + pixel sizes, written by scripts/fym_promo/render.py
 TUT = json.loads((ROOT.parent.parent / "scripts" / "fym_promo" / "tutorial.json").read_text())  # render2.py
 for _t in TUT:
-    MANI["sizes"][f"tut{_t['n']}.jpg"] = _t["email"]; MANI["alt"][f"tut{_t['n']}"] = _t["alt"]
+    MANI["sizes"][f"tut{_t['n']}.jpg"] = _t["email"]; MANI["alt"][f"tut{_t['n']}"] = _t.get("email_alt", _t["alt"])
     MANI["sizes"][f"hl-tut{_t['n']}.png"] = _t["hl"]; MANI["alt"][f"hl-tut{_t['n']}"] = f"Step {_t['n']}: " + html.unescape(_t["title"])
 
 
@@ -230,7 +230,7 @@ def plain(e):
     if e.get("tutorial"):
         out.append(f'[IMAGE heading: {MANI["alt"][e["steps_head"]]}]')
         for x in TUT:
-            out.append(f'[IMAGE heading: {MANI["alt"]["hl-tut" + str(x["n"])]}]\n{t(x["caption"])}\n[IMAGE: {x["alt"]}]')
+            out.append(f'[IMAGE heading: {MANI["alt"]["hl-tut" + str(x["n"])]}]\n{t(x["caption"])}\n[IMAGE: {x.get("email_alt", x["alt"])}]')
     if e.get("list"):
         out.append(f'[IMAGE heading: {MANI["alt"][e["list_head"]]}]')
         out += ["• " + t(x) for x in e["list"]]
