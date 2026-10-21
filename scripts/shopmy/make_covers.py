@@ -15,7 +15,7 @@ COVERS = [
  # id, slug, title, tagline, kicker, accent, picks (hero first)
  (8401508, 'halloween-mahjong-table', 'Halloween Mahjong Table', 'a gothic raven table for spooky season', 'shop the look', '#6b1d2e', [0, 1, 4, 12]),
  (8399927, 'merry-mahjong', 'Merry Mahjong', 'christmas finds for your mahj table', 'holiday shop', '#b3202a', [5, 0, 9, 1]),
- (8391624, 'betty-june-jeanette', 'Betty June Jeanette', 'dreamy watercolor mahjong mats', 'mat shop', '#e0607e', [8, 1, 11, 9]),
+ (8391624, 'betty-june-jeannette', 'Betty June Jeannette', 'dreamy watercolor mahjong mats', 'mat shop', '#e0607e', [8, 1, 11, 9]),
  (8399777, 'mahjong-gifts', 'Mahjong Gifts', 'for every mahj friend on your list', 'gift guide', '#b3202a', [1, 0, 2]),
  (8400718, 'omm-love-shack-fancy', 'Oh My Mahjong x LoveShackFancy', 'the coquette collab, all in one place', 'shop the collab', '#e0607e', [2, 0, 1, 4]),
  (8398332, 'amazon-mahjong-mats', 'Amazon Mahjong Mats', 'pretty mats that ship fast', 'mat shop', '#1f5a3a', [6, 0, 4, 12]),
