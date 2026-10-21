@@ -1,4 +1,4 @@
-# Kerry match cards into 11 live albums (Oct 21). STAGED, NOT LIVE (waiting on independent QA)
+# Kerry match cards into 11 live albums (Oct 21). LIVE (Oct 21 evening, after independent QA)
 
 Tiffany (Oct 21 3:39pm) loved the Kerry cards and wants them in the albums. Sets: Pearlescent, Moonlight, La Fete, Willow, Talulah, Coquette, Birdie, Dandy, Luminaire, Taylor, Sorbet (Jasmine dropped on her call).
 
@@ -23,3 +23,10 @@ Row `betty-june-jeannette--the-kerry` url: etsy.com -> https://go.shopmy.us/p-96
 
 ## FYM (not published here)
 Staged fym-oct21f: Kerry is NOT in the match list (m) of any of the 11 sets, and its mat `u` is still etsy.com. For v70/v71: add Kerry to these 11 sets' m (her real picks: the album cards) with the card racks, and set u = https://go.shopmy.us/p-96114928.
+
+## Published (Oct 21 evening)
+- All 11 album blocks patched in /config with kerryFix (diff-checked in the page: only the grid insert, renumbering, 2 count strings). Coquette hero also fixed: "52 mat matches from 16 brands" -> "53 mat matches from 18 brands".
+- Retired sets (Sorbet, Birdie, Dandy, Taylor): caption changed to "code MAHJMATCH works on Oh My Mahjong's current tiles and mats." (the code can't apply to retired tiles). build.py `RETIRED` matches.
+- /mahjong-mats: Kerry row url -> https://go.shopmy.us/p-96114928.
+- curl verified: each page has 1 Kerry card at #04, the ShopMy link, 0 etsy.com/listing/4493549326; gallery has the ShopMy link and no Etsy link. Playwright (390 + 1280, scrolled into view): the lazy Kerry image loads (1080x1350) and renders.
+- Squarespace gotcha: after the block pencil, wait ~4s before dispatching into CodeMirror. A dispatch made earlier was silently lost (Birdie, Talulah first try); check that Save turns black before you click it.
