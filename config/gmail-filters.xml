@@ -51,7 +51,7 @@
     <id>mahjmatchmaker:programs</id>
     <updated>2026-10-21T19:00:00Z</updated>
     <content></content>
-    <apps:property name='hasTheWord' value='subject:("affiliate account" OR "affiliate program" OR "affiliate partner" OR "assigned a coupon code" OR "assigned you a coupon" OR "UpPromote Marketplace" OR "Payment Info Update" OR "invited you to join") -subject:(declined OR rejected OR reversed OR refunded OR refund OR cancelled OR canceled OR voided OR denied OR failed OR "not approved" OR "on hold")'/>
+    <apps:property name='hasTheWord' value='subject:("affiliate account" OR "affiliate program" OR "affiliate partner" OR "assigned a coupon code" OR "assigned you a coupon" OR "UpPromote Marketplace" OR "Payment Info Update" OR "invited you to join") -subject:("referral order") -subject:(declined OR rejected OR reversed OR refunded OR refund OR cancelled OR canceled OR voided OR denied OR failed OR "not approved" OR "on hold")'/>
     <apps:property name='label' value="Affiliate/Programs"/>
     <apps:property name='shouldNeverSpam' value="true"/>
   </entry>
