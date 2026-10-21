@@ -1,0 +1,29 @@
+{
+ "by": "claude-photo-review",
+ "date": "2026-10-21",
+ "about": "Photo check of every mat that sat in Orange or Yellow only through a MEASURED colour (accent, or a Claude measured also-colour / crosstag), not a primary and not a Tiffany call. The measurement reads brown/tan/rattan/caramel/cognac as orange (sometimes red) and gold/mustard as orange. build_v5.py applies these to config/mat-accent-colors.json in memory before anything uses it: move = {from: to} moves that measured share to another family (brown -> earthy, gold/mustard -> yellow); drop = the share is removed (not that colour, nothing clear to move it to); accents + major are then recomputed with the file's thresholds. primary + drop_secs = section fix, applied only when Tiffany has not called the mat. Never overrides a Tiffany call (her section calls are applied after this and win).",
+ "mats": {
+  "charleston-mahjong-club--brown-vegan-leather": {"move": {"orange": "earthy"}, "why": "plain brown vegan leather; no orange"},
+  "tigre-de-tartan--nantucket-basket": {"move": {"orange": "earthy"}, "primary": "earthy", "drop_secs": ["yellow"], "why": "natural rattan weave; computer read it gold/yellow (0% yellow measured), not a Tiffany call"},
+  "tigre-de-tartan--mahjong-mat-nantucket-basket-rope": {"move": {"orange": "earthy"}, "primary": "earthy", "drop_secs": ["yellow"], "why": "natural rattan weave with rope border; same as Nantucket Basket"},
+  "mahjong-register--gold-leatherette": {"move": {"orange": "earthy"}, "why": "champagne/tan leatherette; not orange, not a yellow"},
+  "sunday-mahjong--golden-gingham-premium": {"move": {"orange": "yellow", "red": "earthy"}, "why": "mustard/gold gingham (yellow, not orange); the brown border read as red"},
+  "betty-june-jeannette--katelyn-yellow": {"move": {"orange": "yellow"}, "why": "mustard border read as orange"},
+  "luxe-mahjong--midnight-romance": {"move": {"orange": "yellow"}, "why": "mustard/gold flowers read as orange (Tiffany called yellow on this mat)"},
+  "britt-mills--soir-e-leatherette": {"move": {"orange": "earthy"}, "why": "ochre/gold linework on pink + olive frame; no real orange"},
+  "oh-my-mahjong--palomino": {"move": {"orange": "earthy"}, "why": "brown/cognac houndstooth"},
+  "tigre-de-tartan--el-tigre-new-edition": {"move": {"orange": "earthy"}, "why": "tan/caramel tiger stripes"},
+  "let-s-be-besties--giraffe-pattern": {"move": {"orange": "earthy"}, "why": "brown giraffe print"},
+  "hip-hip-mahjong--hoppy-east-hare-mahjong-mat": {"drop": ["orange"], "why": "tan wood slice + bamboo; no orange"},
+  "amanda-toppe--pink-orchids": {"drop": ["orange"], "why": "pale peach-tan band behind pink orchids; reads pink, not orange"},
+  "tala-mahj--cabana-pink-ivory-with-citrus-fringe": {"drop": ["orange"], "why": "peachy-pink stripes (pink) + citrus yellow fringe; no orange"},
+  "oh-my-mahjong--vanderbilt": {"drop": ["orange"], "why": "caramel/gold frame on navy plaid; not orange"},
+  "bird-bamboo--the-blue-delphine-mahjong-mat": {"drop": ["yellow"], "why": "the yellow is the wood table around the mat in the photo; mat is blue + white"},
+  "bird-bamboo--the-royal-deco-mahjong-mat": {"drop": ["yellow"], "why": "the yellow is the racks sitting on the mat in the photo; mat is navy/blue"},
+  "oh-my-mahjong--cognac": {"move": {"red": "earthy"}, "why": "cognac/brown leather read as red (same bug, Red section)"}
+ },
+ "checked_kept": {
+  "orange": ["Anders Ruff Bams & Bubbly (bright orange centre)", "Anders Ruff Press for", "Bespoke x Corey Paige Color Crush + Graffiti", "Bespoke Girl Talk", "Bespoke Table Talk", "Britt Mills Colorful Chinoiserie (coral border)", "Britt Mills Isla Neoprene (peach/coral strokes)", "Hip Hip So Bam Grateful (orange leaves/pumpkin)", "Let's Be Besties Pink & Orange Tie Dye", "Mahj & Vine Botanic Blush / Coral Orchard / Shady Lady Cabana Stripe Sunset (coral)", "Mahjong Moxie Duck Camp (peach diamond)", "My Fair Mahjong Tropical Palm", "Peace Love Citrus Sherbet + Palm Beach Punch", "Splash of Color Asian Chinoiserie", "Splash of Color Year of the Fire Goat (red-orange flames)", "YOLO Pink Tiger", "OMM Goldie (coral; retired; Tiffany: 'strong pink AND coral, like Goldie')"],
+  "yellow": ["Bespoke Electric Love, Girl Talk, Table Talk, Tie Dye Dream", "Mahj Mood Color Splash", "Mahj Tile Haus Sunwashed Citrus", "Mahjong Register Buttercup Cherie", "OMM Hampton (chartreuse)", "Peace Love Lemon Love, Whimsy Plaid Golden Hour + Seaside Spritz", "Soiree All Day Bird Bam Cheers (chartreuse)", "Splash of Color Asian Chinoiserie", "My Fair Mahjong Tropical Palm", "Wren Sitting Sea Side (butter yellow frame)"]
+ }
+}

@@ -229,6 +229,21 @@ for c in LATE['corrections']:
             if a in r[5] or a in r[8] or a in (r[10] or []): F.append(f"[13] {r[1]}: colour {a} she removed is back")
         if c.get('floral') is False and 'florals' in r[5]: F.append(f"[13] {r[1]}: in Multicolor Florals (late-calls floral:false)")
 if any(k_ != 'note' for k_ in XT.get('holiday_off', {})): F.append("[13] crosstags holiday_off is not empty (Tiffany Oct 20: holiday stays in Holiday)")
+# 13c (Oct 21): measured colours Claude's photo check ruled out (brown/tan read as orange/red, gold as orange; config/mat-accent-photo-fixes.json)
+# never come back, in the gallery or the FYM chips, unless it is a Tiffany call (late-calls also / v5 final_sections).
+_PF = json.load(open(REPO + 'config/mat-accent-photo-fixes.json'))['mats']
+_V5F = json.load(open(REPO + 'config/tiffany-color-notes/2026-10-20-v5-calls.json')).get('final_sections', {})
+_LA = {c['img']: c.get('also', []) + ([c['primary']] if c.get('primary') else []) for c in LATE['corrections'] if c.get('img')}
+for img_, fx_ in _PF.items():
+    gone = (set(fx_.get('move', {})) | set(fx_.get('drop', [])) | set(fx_.get('drop_secs', []))) - set(_LA.get(img_, [])) - set(_V5F.get(img_, []))
+    r = GR.get(img_)
+    if r is None: continue
+    for a in gone:
+        if a in r[5] or a in r[8] or a in (r[11] or {}): F.append(f"[13c] {r[1]}: photo-checked colour {a} is back in the gallery (sections {r[5]}, accents {r[8]})")
+    k = GKEY(img_)
+    if k in M and not M[k].get('hid'):
+        for a in gone:
+            if a in (M[k].get('mf') or []): F.append(f"[13c] {M[k]['n']}: photo-checked colour {a} is back in FYM chips {M[k]['mf']}")
 _lt = re.search(r'LD=(\{.*?\}),TL=(\{.*?\}),IB=', _g)
 if not _lt or json.loads(_lt.group(1)) != LATE.get('lead', {}) or json.loads(_lt.group(2)) != LATE.get('tail', {}):
     F.append("[13] gallery lead/tail pins differ from late-calls lead/tail")

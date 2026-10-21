@@ -750,7 +750,6 @@
   ],
   "sunday-mahjong--golden-gingham-premium": [
    "yellow",
-   "red",
    "brights"
   ],
   "sunday-mahjong--spring-blooms-premium": [
@@ -878,6 +877,26 @@
    "simple"
   ],
   "mahj-moon--tropical-island-garden": "tail not in gallery"
+ },
+ "photo_fix_sections": {
+  "tigre-de-tartan--mahjong-mat-nantucket-basket-rope": [
+   [
+    "yellow",
+    "earthy"
+   ],
+   [
+    "earthy"
+   ]
+  ],
+  "tigre-de-tartan--nantucket-basket": [
+   [
+    "yellow",
+    "earthy"
+   ],
+   [
+    "earthy"
+   ]
+  ]
  },
  "combo_only_album": {
   "bam-let-s-mahjong--secret-garden-mahjong-mat-watercolor-floral-mahjong-mat": {
@@ -1663,7 +1682,7 @@
    ]
   }
  },
- "claude_also_added": 144,
+ "claude_also_added": 140,
  "section_tiers_active": {
   "pink": {
    "primary": 110,
@@ -1672,17 +1691,17 @@
   },
   "red": {
    "primary": 10,
-   "also": 31,
-   "accent": 15
+   "also": 30,
+   "accent": 14
   },
   "orange": {
    "primary": 19,
-   "also": 29,
-   "accent": 23
+   "also": 28,
+   "accent": 9
   },
   "yellow": {
-   "primary": 15,
-   "also": 37,
+   "primary": 13,
+   "also": 35,
    "accent": 5
   },
   "green": {
@@ -1711,8 +1730,8 @@
    "accent": 66
   },
   "earthy": {
-   "primary": 31,
-   "also": 43,
+   "primary": 33,
+   "also": 41,
    "accent": 75
   },
   "dark": {
@@ -1763,9 +1782,9 @@
  },
  "section_counts_active": {
   "pink": 217,
-  "red": 56,
-  "orange": 71,
-  "yellow": 57,
+  "red": 54,
+  "orange": 56,
+  "yellow": 53,
   "green": 212,
   "teal": 89,
   "blue": 238,
@@ -1785,9 +1804,9 @@
  },
  "section_counts_if_retired_shown": {
   "pink": 231,
-  "red": 59,
-  "orange": 74,
-  "yellow": 62,
+  "red": 57,
+  "orange": 59,
+  "yellow": 58,
   "green": 225,
   "teal": 95,
   "blue": 249,

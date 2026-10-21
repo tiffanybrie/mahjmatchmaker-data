@@ -2,7 +2,7 @@
  "by": "claude-photo-review",
  "date": "2026-10-20",
  "method": "measured palette (config/mat-accent-colors.json, thresholds eye-checked on contact sheets): a color covering >= 15% of the mat is promoted to an also-color. Never applied to mats Tiffany has called (her v5 final calls or any tiffany-chat override) or to the 53 new mats (tagged by eye in tiffany-color-notes/2026-10-20-new53-claude-tags.json).",
- "count": 144,
+ "count": 140,
  "mats": {
   "amahj--lilac-green-squiggle-mahjong-game-mat": [
    "green"
@@ -143,9 +143,6 @@
    "pink",
    "blue"
   ],
-  "sunday-mahjong--golden-gingham-premium": [
-   "red"
-  ],
   "amahj--pink-teal-squiggle-mahjong-game-mat": [
    "pink"
   ],
@@ -226,12 +223,6 @@
    "green",
    "pink"
   ],
-  "bird-bamboo--the-blue-delphine-mahjong-mat": [
-   "yellow"
-  ],
-  "bird-bamboo--the-royal-deco-mahjong-mat": [
-   "yellow"
-  ],
   "britt-mills--colorful-chinoiserie": [
    "orange"
   ],
@@ -276,9 +267,6 @@
   ],
   "oh-my-mahjong--soho-retired": [
    "green"
-  ],
-  "oh-my-mahjong--vanderbilt": [
-   "orange"
   ],
   "oh-my-mahjong--vivara": [
    "pink"

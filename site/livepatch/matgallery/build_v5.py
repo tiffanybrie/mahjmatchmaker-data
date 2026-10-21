@@ -437,14 +437,49 @@ for a in RADD:
 # ---------- v5: second colors by Claude (Tiffany: she only sends main-color fixes; Claude identifies SECOND colors) ----------
 # For every mat she hasn't called (no v5 final call, no tiffany-chat override, not one of the 53 Claude photo-tagged by eye): a color
 # measured at >= 15% of the mat (accents file 'major') becomes an also-color. Logged to config/mat-also-claude-v5.json.
-ACC = json.load(open(P('config/mat-accent-colors.json')))['mats']
+PFIX = json.load(open(P('config/mat-accent-photo-fixes.json')))['mats']  # Oct 21: claude-photo-review fixes (brown/tan read as orange, gold as orange)
+
+
+def load_acc():
+    """Measured accents with Claude's photo fixes applied (move a misread share to the right family / drop it), accents + major recomputed."""
+    raw = json.load(open(P('config/mat-accent-colors.json')))
+    A = raw['mats']
+    th = {'neutral': raw['neutral_thresh_pct'], 'dark': raw['dark_thresh_pct'], 'teal': raw['teal_thresh_pct']}
+    for img, fx in PFIX.items():
+        if img not in A: continue
+        sh = dict(A[img]['shares'])
+        for a, b in fx.get('move', {}).items():
+            v = sh.pop(a, 0); sh[b] = round(sh.get(b, 0) + v, 1)
+        for a in fx.get('drop', []):
+            sh.pop(a, None)
+        A[img] = dict(A[img], shares=sh, src=A[img].get('src', '') + '+claude-photo-fix',
+                      accents=sorted([f for f, v in sh.items() if f in ACOL and v >= th.get(f, raw['thresh_pct'])], key=lambda f: -sh[f]),
+                      major=[f for f in sorted(sh, key=lambda f: -sh[f]) if f in COLS8 and sh[f] >= raw['major_pct']])
+    return A
+
+
+ACOL = {'pink', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple', 'neutral', 'earthy', 'dark'}
+COLS8 = ('pink', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple')
+ACC = load_acc()
 for x in vis:
     REMOVED.setdefault(x['img'], [])
     REMOVED[x['img']] = list(dict.fromkeys(REMOVED[x['img']] + LATE_RM.get(x['img'], [])))
     if x['img'] in TALA and x['url']:
         x['url'] = TALA[x['img']]
 TCALLED = set(FINAL) | {x['img'] for x in vis if str((MC.get(x['key']) or {}).get('by', '')).startswith('tiffany')}
-COLS8 = ('pink', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple')
+TANY = set(TCALLED) | {c['img'] for c in LATE.get('corrections', []) if c.get('img')}  # any Tiffany call (incl. late also-only calls and pins)
+for v_ in list(LATE.get('lead', {}).values()) + list(LATE.get('tail', {}).values()):
+    TANY |= set(v_)
+pfix_log = {}
+for x in vis:  # photo-fix section changes (Nantucket Basket rattan: earthy primary, not yellow), only where Tiffany has not called the mat
+    fx = PFIX.get(x['img'], {})
+    if x['img'] in TANY or x['secs'] == ['holiday'] or not (fx.get('primary') or fx.get('drop_secs')):
+        continue
+    old = list(x['secs'])
+    secs = [c for c in x['secs'] if c not in fx.get('drop_secs', [])]
+    if fx.get('primary'):
+        secs = [fx['primary']] + [c for c in secs if c != fx['primary']]
+    x['secs'] = secs; pfix_log[x['img']] = [old, secs]
 NEIGH = {'purple': ('pink', 'blue'), 'pink': ('purple', 'red', 'orange'), 'blue': ('purple', 'teal'), 'teal': ('blue', 'green'), 'green': ('teal', 'yellow'),
          'red': ('pink', 'orange'), 'orange': ('red', 'yellow', 'pink'), 'yellow': ('orange', 'green'),
          'earthy': ('red', 'orange', 'yellow'), 'neutral': ('orange', 'yellow', 'pink'), 'dark': (), 'bw': ()}
@@ -464,8 +499,7 @@ json.dump({'by': 'claude-photo-review', 'date': '2026-10-20', 'method': 'measure
            'count': len(also_log), 'mats': also_log}, open(P('config/mat-also-claude-v5.json'), 'w'), indent=1, ensure_ascii=False)
 
 # ---------- v5: accent colors (config/mat-accent-colors.json, claude-measured): tier 3 in color sections + AND filter ----------
-ACC = json.load(open(P('config/mat-accent-colors.json')))['mats']
-ACOL = {'pink', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple', 'neutral', 'earthy', 'dark'}
+ACC = load_acc()
 for x in vis:
     if x['secs'] == ['holiday']:  # holiday mats stay out of color sections; their measured colors only count in combos (Holiday + Red)
         x['acc'] = []; x['hacc'] = [a for a in ACC.get(x['img'], {}).get('accents', []) if a in ACOL]; continue
@@ -554,7 +588,7 @@ with open(os.path.join(HERE, 'hidden_oct20.csv'), 'w', newline='') as f:
                 w.writerow([img, man[img], BRANDFIX.get(Fi[img][2], Fi[img][2]), Fi[img][1], f'already out (held low-confidence list); would also be hidden: {lab}: {a["detail"][:100]}'])
 json.dump({'new53_added': added53, 'new53_hidden': hidden53, 'new53_sections': {x['img']: x['secs'] for x in vis if x.get('new53')},
            'v5_final_calls': v5log['final'], 'v5_pastel_to_brights': v5log['to_brights'], 'v5_simple': v5log['simple'],
-           'removed_mats': removed_mats, 'late_calls_applied': late_log, 'combo_only_album': combo_log, 'claude_also_added': len(also_log), 'section_tiers_active': tiers,
+           'removed_mats': removed_mats, 'late_calls_applied': late_log, 'photo_fix_sections': pfix_log, 'combo_only_album': combo_log, 'claude_also_added': len(also_log), 'section_tiers_active': tiers,
            'section_counts_active': cnt, 'section_counts_if_retired_shown': cnt_with_ret, 'unique_active_mats': len(active),
            'retired': len(retired), 'hidden': len(hidden), 'dedupe_groups': len(dd_rows), 'held_low_out': len(held),
            'applied_color_calls': applied, 'unmatched_color_calls': unmatched,
