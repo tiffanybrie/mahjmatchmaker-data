@@ -4,7 +4,7 @@ Goal: get mahjmatchmaker.com/oh-my-mahjong-discount-code cited in Google's AI Ov
 
 Staged page: `brand-pages/oh-my-mahjong-discount-code.html` (Squarespace code block). Live snapshot before the change: `brand-pages/before/oh-my-mahjong-discount-code-codeblock-2026-10-21.html`.
 
-**Hard rule: Never reference TEACHMAHJ on the site; it's handled only through Google feedback.** (Tiffany, Oct 21 9:08. Not in copy, FAQ, schema, alt text or comments.)
+**Hard rule: Never reference the OMM teacher-only code on the site (details in the private Project doc 98); it's handled only through Google feedback.** (Tiffany, Oct 21 9:08. Not in copy, FAQ, schema, alt text or comments.)
 
 ## What actually moves AI Overviews (be honest)
 AI Overviews quote pages that give a short, clear, current answer that Google already trusts. We cannot buy or force a citation. What helps: (1) one plain sentence with the brand, the code and a date that can be lifted as-is; (2) a page Google has recrawled recently (freshness); (3) visible, checkable expertise (a named author with a real credential); (4) internal links and a few real outside mentions telling Google this page is the site's OMM answer. Coupon sites win today on freshness and plain answer lines; Charlotte Mahjong wins with one sentence: "Discount code for Ohmymahjong is CHARLOTTEMAHJONG for 10% off". Expect days to weeks after a recrawl, and no guarantee.
