@@ -52,3 +52,9 @@ See CLAUDE.md. Rewritten nightly by the end-of-day desk cleanup.
 - (Oct 21) Planoly: Instagram moved to workspace 019fc27c-0bef-7533-bc3f-030acc19a135 on Oct 21; old IG copies unscheduled, awaiting her yes to delete. Pinterest stays in 019fc27b-964d-7279-8685-1f1bb7a7c3f5. Map: docs/planoly-ig-move-oct21.json. OPEN: 8 reel drafts not moved (video bytes not downloadable); Papaya x Vivienne feed post is missing its @ohmymahjong photo tag because the new IG connection is personal, not Business via Facebook (reconnect, then re-add tag).
 
 - (Oct 21, 5:36pm ET) /find-your-match teaser v2 is LIVE (code block #block-2da981e143ed2cc4bb76 swapped + Newsletter block "FYM Teaser Signup" added, list Mahj Matchmaker Newsletter). Verified by curl + Playwright 390/1280. Launch-day step (Oct 27, launch-oct27 README step 0a) must swap the code block AND delete this Newsletter block. Rollback: site/livepatch/fym-teaser-oct21/README.md step 5.
+
+## Oct 21 7:15pm: Sunset + Vivienne card (Tiffany: "if Vivienne matches Papaya Spritz it should match Sunset too")
+- [x] Card built + pushed (a0b6a2f): assets/cards/sunset-vivienne/sunset-mahjong-tiles-oh-my-mahjong-vivienne-mat.jpg; figure + patched preview in site/livepatch/sunset-vivienne-oct21/ (card #4, grid 10, "all 10 Sunset mat matches from 4 brands"; brands unchanged, Vivienne is OMM).
+- [ ] NEXT: independent QA (separate agent, none could be spawned from the build agent) then publish to /sunset-mahjong-tile-matches via Chrome (vivFix in sunset_fix.js; wait ~4s after the block pencil).
+- [ ] **FYM v71:** add Vivienne (OMM) to Sunset's `m` (her real pick, album card) and lock it (m_hidden_ok if Vivienne is hidden anywhere).
+- [x] Thin-albums swipe page (site/review/thin-albums-oct21/picks.py): Sunset's 10 shortlisted mats do NOT include Vivienne, so it is not offered again. No republish needed.
