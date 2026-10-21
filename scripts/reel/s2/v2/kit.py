@@ -115,14 +115,20 @@ def encode(d, out, crf=16):
     return out
 
 
+def publish(tmp, out):
+    """Atomic move into the repo (other agents auto-commit WIP; never let them catch a half-written mp4)."""
+    os.replace(tmp, out); return out
+
+
 def concat(parts, out):
     """Frame-exact concat by re-encoding (all parts 1080x1920 30fps, no audio): reels stay silent, her song goes on in Edits."""
     ins = sum([['-i', p] for p in parts], [])
     fc = ''.join(f'[{i}:v]fps={FPS},setpts=PTS-STARTPTS,format=yuv420p[v{i}];' for i in range(len(parts))) + \
          ''.join(f'[v{i}]' for i in range(len(parts))) + f'concat=n={len(parts)}:v=1:a=0[v]'
+    tmp = f'{WORK}/_concat_{os.path.basename(out)}'
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', *ins, '-filter_complex', fc, '-map', '[v]', '-c:v', 'libx264', '-preset', 'slow',
-                    '-crf', '16', '-pix_fmt', 'yuv420p', '-r', str(FPS), '-movflags', '+faststart', out], check=True)
-    return out
+                    '-crf', '16', '-pix_fmt', 'yuv420p', '-r', str(FPS), '-movflags', '+faststart', tmp], check=True)
+    return publish(tmp, out)
 
 
 def xfade(a, b, out, offset, dur):

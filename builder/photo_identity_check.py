@@ -163,6 +163,10 @@ def judge(scores, expected):
 SET_RX = re.compile(r'(?:^|/)(?:\d+-)?([a-z0-9]+(?:-[a-z0-9]+)*?)-mahjong-tiles')
 def set_from_name(path):
     b = path.lower()
+    fn = b.split('/')[-1]
+    if fn.startswith('my-favorite-'):  # blog "my favorite <colour> tiles" collages show several sets: only a named set counts
+        k = re.sub(r'-(mahjong-)?tiles.*$', '', fn[len('my-favorite-'):])
+        return norm_set(k) if norm_set(k) in KNOWN_SETS else None
     m = re.search(r'colorcards/([a-z0-9-]+)/', b) or re.search(r'tiles/album/([a-z0-9-]+)\.', b)
     if m: return norm_set(CANON_ALIAS.get(m.group(1), m.group(1)))
     m = SET_RX.search(b.split('/')[-1])
