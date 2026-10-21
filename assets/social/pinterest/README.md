@@ -29,3 +29,9 @@ Approvals she needs to give:
 - 33 pins scheduled to @mahjmatchmaker, auto-publish. Match pins: daily Oct 21 to Nov 9, 11am ET. Holiday pins: daily Nov 1 to Nov 13, 7pm ET (8pm on Nov 1).
 - Images were uploaded directly (Planoly refuses jsDelivr and raw GitHub URLs), using the exact bytes from each pin's pinned commit.
 - Fixed in the copy: Tinselle pin "the The Polo Club" → "The Polo Club".
+
+## Oct 21 audit + always-on pipeline (Tiffany: "I don't want to have to monitor Pinterest")
+- State found: only 3 live pins (Amara, Dec 30 2025). The Oct 19 batch of 33 had never fired because its first slot was Oct 21 11am ET; 0 failed. No holiday mood board or Amazon pin had gone live, so there is nothing to delete.
+- The 6 holiday mood board pins were unscheduled, rebuilt from assets/blog/holiday-boards-oct21/ (commit 07e3806): Amazon-board versions use generic names only ("A Classic Plaid / Retro / Reindeer Holiday Table") and link to shopmy.us/mahjmatchmaker; blog versions keep the brand mats and link to our pages. Same Planoly drafts, rescheduled Nov 1-3 and Nov 11-13, 7pm ET.
+- New: scripts/pinterest/autopin.py + config/pinterest/queue.json. Every album cover, own mood board/graphic and colour hub gets a 1000x1500 pin (assets/social/pinterest/pins/auto/). 14 new pins scheduled Oct 21-28 (2/day, 13:00Z + 20:00Z); 26 more pending in the queue.
+- Daily scheduled task "Pinterest autopin (daily)" checks what published/failed, adds new pages from the sitemap, and keeps ~7 days of pins scheduled. Logs to HQ (area "Pinterest").
