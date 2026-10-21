@@ -3,7 +3,7 @@
 Exits non-zero and prints every failure. Checks (add one for each bug type Tiffany reports):
  1  album / swipe-book sets show their canonical album tile photo (D.tiles[..].src == locked src, file exists, pixels match)
  2  no visible set without an album / swipe book carries a "Tiffany's match" list (m)
- 3  no visible set flagged no_tiles (builder/fym_flags/tile_photo_flags.json); no visible mat flagged no_mat/partial_crop/no_flat_photo/duplicate (mat_photo_flags.json); 3b retired mats labelled in mat-door grid + mat search
+ 3  no visible set flagged no_tiles (builder/fym_flags/tile_photo_flags.json); no visible mat flagged no_mat/partial_crop/no_flat_photo/duplicate (mat_photo_flags.json); 3b retired mats labelled in mat-door grid + mat search; 3d Questionable list hidden, no Paige Spearin newly in Holiday
  3c cleaned photos pinned in the flags (photo) stay in the build; props/lifestyle photos are OK (ok_fym_props, low bar Oct 21 pm); only locked mats on an unusable photo warn
  4  UI wording: no crush / nope / pass / "Pick your crush" / hard-coded "save 10%"
  5  colour-dot click selector bug (.dots [data-fam])
@@ -80,7 +80,8 @@ for s in D['sets']:
     f = tflags.get(s['slug'])
     if f and f.get('flag') == 'no_tiles' and vis(s):
         F.append(f"[3] {s['name']} ({s['maker']}): visible but tile photo flagged no_tiles ({f.get('note','')})")
-MAT_HIDE_FLAGS = ('no_mat', 'partial_crop', 'no_flat_photo', 'duplicate')   # Oct 20 round 2: crops / no flat photo / duplicates stay hidden too
+MAT_HIDE_FLAGS = ('no_mat', 'partial_crop', 'no_flat_photo', 'duplicate', 'too_far', 'covered', 'questionable')   # Oct 20 round 2: crops / no flat photo / duplicates stay hidden too
+# Oct 21 8:03am (Tiffany, rule 6): too_far (shot from too far away), covered (tiles/racks hide the pattern), questionable (her review list) stay hidden
 for mid, f in mflags.items():
     m = M.get(mid)
     if m and f.get('flag') in MAT_HIDE_FLAGS and not m.get('hid'):
@@ -103,6 +104,16 @@ if _lna:
     print(f"FYM GATE WARNING [3c]: {len(_lna)} locked mats show a photo flagged unusable (corner close-up / wrong product / packaging), waiting on Tiffany: " + ', '.join(_lna))
 for k, f in mflags.items():
     if f.get('flag') == 'ok_fym_props' and k not in M: F.append(f"[3c] ok_fym_props flag for a mat not in the build: {k}")
+# 3d. Oct 21 (Tiffany, rule 6 'when in doubt, pull it'): every mat on her Questionable for FYM list stays hidden until she says keep;
+#     Paige Spearin x TdT collabs earn no commission: none may be newly brought into Holiday (Apres Mahj was holiday-tagged before Oct 21)
+_qp = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fym_flags', 'fym_questionable.json')
+if os.path.exists(_qp):
+    for it in json.load(open(_qp)).get('items', []):
+        m = M.get(it['key'])
+        if m and not m.get('hid'): F.append(f"[3d] {m['n']} ({m.get('bn')}): on the Questionable for FYM list but visible")
+for k, m in M.items():
+    if 'paige spearin' in m['n'].lower() and m.get('hol') and k != 'tigredetartan.com/paige-spearin-mahjong-mat-apres-mahj':
+        F.append(f"[3d] {m['n']}: Paige Spearin mat brought into Holiday (no commission, do not promote)")
 # 3b. retired mats carry a Retired label in the mat-door grid / door search (matBtn) and the mat search list (#msr) (Oct 20 bug: Liberty)
 mb = re.search(r'function matBtn\(id\)\{.*?\n', UI)
 if not mb or "M[id].rt?" not in mb.group(0) or 'Retired' not in mb.group(0):

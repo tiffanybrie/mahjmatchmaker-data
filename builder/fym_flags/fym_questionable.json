@@ -1,0 +1,33 @@
+{
+ "_about": "Tiffany's 'Questionable for FYM' review list (CLAUDE.md rule 6: when in doubt, PULL IT). Every item here stays hidden in FYM (gate [3d]) until Tiffany says keep (then drop it from this list and un-hide; update locks.json in the same commit). Fields: key (FYM mat id), img (FYM photo), name, brand, reason, photo (repo path or FYM path to look at), candidate (alternate photo, if any).",
+ "items": [
+  {
+   "key": "www.hiphipmahjong.com/celebration-mahjong-mat",
+   "img": "m/1860.webp",
+   "name": "Celebration",
+   "brand": "Hip Hip Mahjong",
+   "reason": "Too little mat showing (her call Oct 21: judgment call). Only 1 brand image exists.",
+   "photo": "FYM m/1860.webp",
+   "added": "2026-10-21"
+  },
+  {
+   "key": "mahjsquadshop.com/blue-chinoiserie-mahjong-mat-copy",
+   "img": "m/1836.webp",
+   "name": "Pastel Chinoiserie",
+   "brand": "Mahj Squad",
+   "reason": "You said hide (tiles and racks cover the pattern). The only clear brand image (2/8) is a corner close-up: say yes to use it.",
+   "photo": "FYM m/1836.webp",
+   "added": "2026-10-21",
+   "candidate": "assets/mats/clean/review_oct21/pastel-chinoiserie-alt-corner.webp"
+  },
+  {
+   "key": "missmahjong.com/el-ultimo-refresco-mahjong-playing-mat",
+   "img": "m/1851.webp",
+   "name": "El Último Refresco",
+   "brand": "Miss Mahjong",
+   "reason": "Duplicate: same mat as Tigre de Tartan x Miss Mahjong \"El Ultimo Refresco\" (kept, locked). Which store link do you want on the card? Miss Mahjong has your ref link; the TdT listing says \"Not eligible for promotions\".",
+   "photo": "FYM m/1851.webp",
+   "added": "2026-10-21"
+  }
+ ]
+}

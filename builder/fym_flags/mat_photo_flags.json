@@ -1397,58 +1397,76 @@
  "mahjsquadshop.com/green-malachite-mahjong-mat-emerald-green-and-jewel-neoprene-mahjongg-mat-jewel-tone-mahj-mat-malachite-stone-mahj-ongg-mat-1": {
   "name": "Green Malachite",
   "brand": "Mahj Squad",
-  "flag": "ok_fym_props",
-  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: all 7 brand images are AI room renders at a steep angle; the only whole-mat view flattens to a distorted, low-res image. Stays hidden until a flat photo exists.)",
-  "was": "no_flat_photo"
+  "flag": "ok",
+  "photo": "m/2040.webp",
+  "source": {
+   "url": "https://cdn.shopify.com/s/files/1/0659/3200/1489/files/green-malachite-mahjong-mat-mats-981.webp?v=1781242514",
+   "product_json": "https://mahjsquadshop.com/products/green-malachite-mahjong-mat-emerald-green-and-jewel-neoprene-mahjongg-mat-jewel-tone-mahj-mat-malachite-stone-mahj-ongg-mat-1.json",
+   "title": "Green Malachite Mahjong Mat",
+   "image_index": 2,
+   "fetched": "2026-10-21"
+  },
+  "original": "assets/mats/clean/green-malachite-mahj-squad-2.jpg",
+  "was": "ok_fym_props",
+  "note": "Oct 21 8:03am: Tiffany said HIDE (old photo shot from too far away) unless a closer brand photo exists. Brand image 2/7 shows the whole mat up close, no racks, colours clear -> swapped in instead of hiding. Not locked until she OKs it."
  },
  "mahjsquadshop.com/regency-mahjong-mat": {
   "name": "Regency",
   "brand": "Mahj Squad",
   "flag": "ok_fym_props",
-  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: all 10 brand images are close-ups with tiles/dice/a tray. Stays hidden until a flat photo exists.)",
+  "note": "KEPT by Tiffany Oct 21 8:03am (props photo OK for FYM). FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: all 10 brand images are close-ups with tiles/dice/a tray. Stays hidden until a flat photo exists.)",
   "was": "no_flat_photo"
  },
  "mahjsquadshop.com/jade-green-chinoiserie-mahjong-mat": {
   "name": "Jade Green Chinoiserie",
   "brand": "Mahj Squad",
   "flag": "ok_fym_props",
-  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: 17 brand images: tiles on the mat or partial close-ups, no whole-mat view. Stays hidden until a flat photo exists.)",
+  "note": "KEPT by Tiffany Oct 21 8:03am (props photo OK for FYM). FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: 17 brand images: tiles on the mat or partial close-ups, no whole-mat view. Stays hidden until a flat photo exists.)",
   "was": "no_flat_photo"
  },
  "mahjsquadshop.com/blue-chinoiserie-mahjong-mat-copy": {
   "name": "Pastel Chinoiserie",
   "brand": "Mahj Squad",
-  "flag": "ok_fym_props",
-  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: 8 brand images: racks/tiles on the mat or a partial pattern close-up. Stays hidden until a flat photo exists.)",
-  "was": "no_flat_photo"
+  "flag": "covered",
+  "was": "ok_fym_props",
+  "note": "Oct 21 8:03am Tiffany: HIDE, pattern hard to see, tiles and racks cover it. Re-checked all 8 Mahj Squad images: 7 have racks/tiles on the mat; 2/8 has nothing on it but is a corner close-up (rule 6: out). Staged as an alternate on the Questionable list: assets/mats/clean/review_oct21/pastel-chinoiserie-alt-corner.webp",
+  "candidate": "assets/mats/clean/review_oct21/pastel-chinoiserie-alt-corner.webp"
  },
  "missmahjong.com/el-ultimo-refresco-mahjong-playing-mat": {
   "name": "El Último Refresco",
   "brand": "Miss Mahjong",
-  "flag": "ok_fym_props",
-  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: all 4 brand images are tilted close-ups with tiles. Stays hidden until a flat photo exists.)",
-  "was": "no_flat_photo"
+  "flag": "duplicate",
+  "photo": "m/1851.webp",
+  "source": {
+   "url": "https://cdn.shopify.com/s/files/1/0567/2566/7876/files/24A4FC3E-E505-42CF-A031-C05793ED766B.jpg?v=1789072744",
+   "product_json": "https://tigredetartan.com/products/tigre-de-tartan-x-miss-mahjong-el-ultimo-refresco-mahjong-mat.json",
+   "title": "Tigre de Tartán x Miss Mahjong: “El Último Refresco” Mahjong Mat",
+   "image_index": 1,
+   "fetched": "2026-10-21"
+  },
+  "was": "ok_fym_props",
+  "note": "Oct 21: same mat as the locked TdT x Miss Mahjong \"El Ultimo Refresco\" entry (tigredetartan.com/tigre-de-tartan-x-miss-mahjong-el-ultimo-refresco-mahjong-mat). Both stores list it ($175, in stock). All 4 Miss Mahjong images are tilted close-ups with tiles; TdT image 1/12 (whole mat, top-down, colours clear) is clearly better and now on both entries. This entry is hidden as the duplicate; Tiffany picks which store link to keep (fym_questionable.json). Note: the TdT listing says \"Not eligible for promotions\"."
  },
  "sundaymahjong.com/vegan-leather-premium-mahjong-mat": {
   "name": "Vegan Leather Premium",
   "brand": "Sunday Mahjong",
   "flag": "ok_fym_props",
-  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: all 4 brand images are patio shots with racks/tiles on the mat. Stays hidden until a flat photo exists.)",
+  "note": "KEPT by Tiffany Oct 21 8:03am. Solid / vegan leather mat: lower bar (uniform colour shows even in an angled shot). FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: all 4 brand images are patio shots with racks/tiles on the mat. Stays hidden until a flat photo exists.)",
   "was": "no_flat_photo"
  },
  "tigredetartan.com/paige-spearin-mahjong-mat-apres-mahj": {
   "name": "Paige Spearin Après Mahj",
   "brand": "Tigre de Tartan",
   "flag": "ok_fym_props",
-  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: only 1 brand image, tiles scattered on the mat. Stays hidden until a flat photo exists.)",
+  "note": "KEPT by Tiffany Oct 21 8:03am. Paige Spearin x TdT collab: NO commission (TdT excluded them); stays in the library, do not promote. Already holiday-tagged before Oct 21 (ski scene); not moved. FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: only 1 brand image, tiles scattered on the mat. Stays hidden until a flat photo exists.)",
   "was": "no_flat_photo"
  },
  "www.hiphipmahjong.com/celebration-mahjong-mat": {
   "name": "Celebration",
   "brand": "Hip Hip Mahjong",
-  "flag": "ok_fym_props",
-  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: only 1 brand image, tiles/racks/props on the mat. Stays hidden until a flat photo exists.)",
-  "was": "no_flat_photo"
+  "flag": "questionable",
+  "was": "ok_fym_props",
+  "note": "Oct 21 8:03am Tiffany: too little mat showing (racks, tiles, gold tray and props cover most of it). Judgment call: pulled and listed on the Questionable list. Only 1 brand image exists."
  },
  "splashofcolorco.com/modern-nordic-scandinavian-folk-art-mahjong-mat-sleek-surface": {
   "name": "Modern Nordic Scandinavian Folk Art Sleek Surface",
@@ -1499,7 +1517,7 @@
   "name": "Tigre de Tartán x Miss Mahjong: “El Último Refresco”",
   "brand": "Tigre de Tartan",
   "flag": "ok_fym_props",
-  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was locked_needs_approval: Oct 21 QA: all 12 brand images have racks/tiles on the mat; locked, recommend hiding once Tiffany OKs (review_locked.json))",
+  "note": "El Ultimo Refresco KEPT by Tiffany Oct 21 8:03am; this locked TdT entry (photo = TdT image 1/12, whole mat) is the one card for the mat. FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was locked_needs_approval: Oct 21 QA: all 12 brand images have racks/tiles on the mat; locked, recommend hiding once Tiffany OKs (review_locked.json))",
   "was": "locked_needs_approval"
  },
  "tigredetartan.com/mahjong-mat-mantel-mates": {
