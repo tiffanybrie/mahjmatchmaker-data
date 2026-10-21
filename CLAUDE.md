@@ -2,6 +2,16 @@
 
 **BRAND GUIDE (Oct 21): read docs/BRAND-GUIDE.md (= Project doc "00a BRAND GUIDE") before writing or designing ANYTHING for the brand: social, blog, Amazon, ShopMy, site copy, FB group, email, graphics. Rules there are settled; don't re-ask. New decisions get added to its changelog the same day.**
 
+**CHECK FOR EXISTING WORK BEFORE BUILDING ANYTHING (Tiffany, Oct 21 1:00pm: "you don't even remember what you've done… we're doing double work").** Before designing or drafting anything, search for what we already made and showed her:
+- `git log --all -i --grep=<topic>`
+- `ls site/livepatch assets` for the topic
+- Ready to Ship / HQ page HTML (grep the saved artifact read)
+- Planoly drafts
+- project docs
+
+Update what exists instead of starting over. Example: the launch-day homepage hero was already designed in site/livepatch/nav-plan (match-card fan), then rebuilt from scratch by mistake.
+**HQ is her one front door.** A daily 6:47am ET scheduled task cleans HQ + Ready to Ship per docs/HQ-CLEANUP.md. Whenever she answers something in chat, close or update the matching HQ/Ready to Ship item the same turn. Never leave an item asking for something she already gave.
+
 ## Find Your Match (FYM) is the top project. These are hard rules.
 Live app: claude.ai artifact 6epA9HuEdT32zUp79Qv3kd. Its published index.html (`const D={...}`) is the build source of truth.
 
