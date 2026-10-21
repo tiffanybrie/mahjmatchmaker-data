@@ -18,7 +18,9 @@ LOGO_COMMIT = '604c093c0a854a0954b9b26e8bca90e5967c9a05'
 ASSET_COMMIT = '9b3b68fe8ca3ab3c045a8e0f5563c8ca9045069b'
 GH = f'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@{ASSET_COMMIT}/'
 RAVEN_CARD = GH + 'assets/blog/night-of-the-raven/night-of-the-raven-shop-the-look-v7-card-1200x900.jpg'
-STEP3_IMG = GH + 'assets/site/home/how-it-works-3-new-matches-first.jpg'
+# Oct 21 2:05pm (Tiffany): step 3 image v2 = transparent PNG fan, no pink background, as big as the column
+STEP3_COMMIT = '00537dd9f64c82977bc073169226f9f71ef3e8dc'
+STEP3_IMG = f'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@{STEP3_COMMIT}/assets/site/home/how-it-works-3-new-matches-first.png'
 STEP3_SEC = '69b2303d5670f85709f47c87'
 CDN = f'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@{LOGO_COMMIT}/assets/brands/ticker/'
 SQ = 'https://images.squarespace-cdn.com/content/v1/69b1d01289d0f8016ee3d508/'
@@ -173,10 +175,11 @@ H = f'html body {S3} .fluid-engine '
 step3 = (
     '<style>'
     f'{S3} .mmstep3{{position:relative;z-index:1;align-self:center;min-width:0}}'
-    f'{S3} .mmstep3 img{{display:block;width:100%;height:auto;aspect-ratio:522/382;object-fit:cover}}'
+    # v2: transparent PNG cropped to the fan (aspect ~1.51). Full column width at every size, natural
+    # height, never cropped (v1's object-fit:cover clipped the outer covers on phones).
+    f'{S3} .mmstep3 img{{display:block;width:100%;height:auto;aspect-ratio:1200/795;object-fit:contain;background:none}}'
     f'@media(min-width:768px){{{S3} .fluid-engine .mmstep3{{grid-area:2/2/16/13}}}}'
     f'@media(max-width:767px){{{S3} .fluid-engine .mmstep3{{grid-column:2/10;grid-row:1/3;margin-bottom:28px}}'
-    f'{S3} .mmstep3 img{{aspect-ratio:343/409}}'
     f'{H}.fe-block-7a4922a2f12fa35d4063.fe-block{{grid-row:3/5!important}}'
     f'{H}.fe-block-30d6f603ced4992fce62.fe-block{{grid-row:5/11!important}}'
     f'{H}.fe-block-yui_3_17_2_1_1791134152790_4757.fe-block{{grid-row-start:11!important;grid-row-end:15!important}}'
@@ -185,7 +188,7 @@ step3 = (
     '</style>'
     '<script>(function(){function f(){var g=document.querySelector(\'' + S3.replace('"', '\\"') + ' .fluid-engine\');'
     'if(!g||g.querySelector(".mmstep3"))return;var d=document.createElement("div");d.className="mmstep3";'
-    f'd.innerHTML=\'<img src="{STEP3_IMG}" alt="New mahjong tile match albums: Coquette, Seabreeze, Talulah, Osler and Smith" loading="lazy" width="1200" height="880">\';'
+    f'd.innerHTML=\'<img src="{STEP3_IMG}" alt="New mahjong tile match albums: Coquette, Seabreeze, Talulah, Osler and Smith" loading="lazy" width="1200" height="795">\';'
     'g.insertBefore(d,g.firstChild)}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",f);else f();})();</script>'
 )
 # 7. Holiday banner (section.mhx) sat flush LEFT on desktop (Tiffany Oct 21 1:16pm). Cause: the

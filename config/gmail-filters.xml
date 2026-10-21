@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+  <title>Mail Filters</title>
+  <id>mahjmatchmaker:gmail-filters</id>
+  <updated>2026-10-21T19:00:00Z</updated>
+  <entry>
+    <category term='filter'></category>
+    <title>Affiliate declines / rejections / reversals / failures</title>
+    <id>mahjmatchmaker:needs-a-look</id>
+    <updated>2026-10-21T19:00:00Z</updated>
+    <content></content>
+    <apps:property name='hasTheWord' value='subject:(declined OR rejected OR reversed OR refunded OR cancelled OR canceled OR voided OR denied OR "not approved" OR failed OR "on hold") (referral OR commission OR affiliate OR affiliates OR payout OR uppromote OR goaffpro OR secomapp OR refersion OR shopmy OR rakuten OR awin OR collabs)'/>
+    <apps:property name='label' value="Affiliate/Needs a look"/>
+    <apps:property name='shouldAlwaysMarkAsImportant' value="true"/>
+    <apps:property name='shouldNeverSpam' value="true"/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Referral order approved</title>
+    <id>mahjmatchmaker:approved</id>
+    <updated>2026-10-21T19:00:00Z</updated>
+    <content></content>
+    <apps:property name='hasTheWord' value='subject:("referral order has been approved") -subject:(declined OR rejected OR reversed OR refunded OR refund OR cancelled OR canceled OR voided OR denied OR failed OR "not approved" OR "on hold")'/>
+    <apps:property name='label' value="Affiliate/Approved"/>
+    <apps:property name='shouldArchive' value="true"/>
+    <apps:property name='shouldMarkAsRead' value="true"/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>New referral orders (UpPromote, GoAffPro, Peachs, ShopMy weekly)</title>
+    <id>mahjmatchmaker:orders</id>
+    <updated>2026-10-21T19:00:00Z</updated>
+    <content></content>
+    <apps:property name='hasTheWord' value='(subject:("referral order has been tracked" OR "new referral order" OR "referred a new affiliate order") OR (from:shopmy.us subject:("you earned" OR "first commission"))) -subject:(declined OR rejected OR reversed OR refunded OR refund OR cancelled OR canceled OR voided OR denied OR failed OR "not approved" OR "on hold")'/>
+    <apps:property name='label' value="Affiliate/Orders"/>
+    <apps:property name='shouldArchive' value="true"/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Affiliate payouts</title>
+    <id>mahjmatchmaker:payouts</id>
+    <updated>2026-10-21T19:00:00Z</updated>
+    <content></content>
+    <apps:property name='hasTheWord' value='(subject:("new earnings" OR "affiliate payout" OR "affiliate payouts" OR "commissions have been paid" OR "commission has been paid" OR "payout sent") OR (from:paypal.com (uppromote OR goaffpro OR affiliate OR commission))) -subject:(declined OR rejected OR reversed OR refunded OR refund OR cancelled OR canceled OR voided OR denied OR failed OR "not approved" OR "on hold")'/>
+    <apps:property name='label' value="Affiliate/Payouts"/>
+    <apps:property name='shouldArchive' value="true"/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Affiliate program/account notices (applications, account approved, verify, coupon assigned) - stays in inbox</title>
+    <id>mahjmatchmaker:programs</id>
+    <updated>2026-10-21T19:00:00Z</updated>
+    <content></content>
+    <apps:property name='hasTheWord' value='subject:("affiliate account" OR "affiliate program" OR "affiliate partner" OR "assigned a coupon code" OR "assigned you a coupon" OR "UpPromote Marketplace" OR "Payment Info Update" OR "invited you to join") -subject:(declined OR rejected OR reversed OR refunded OR refund OR cancelled OR canceled OR voided OR denied OR failed OR "not approved" OR "on hold")'/>
+    <apps:property name='label' value="Affiliate/Programs"/>
+    <apps:property name='shouldNeverSpam' value="true"/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mahjong brand newsletters</title>
+    <id>mahjmatchmaker:newsletters</id>
+    <updated>2026-10-21T19:00:00Z</updated>
+    <content></content>
+    <apps:property name='hasTheWord' value='(mahjong OR mahj OR mahjongg) unsubscribe -"affiliate program" -from:(pinterest.com OR facebookmail.com OR squarespace.info OR squarespace.com OR secomapp.com OR goaffpro.com OR uppromote.com OR shopmy.us OR paypal.com OR rakutenadvertising.com OR refersion.com OR awin.com OR evite.com OR signupgenius.com OR paperlesspost.com OR planoly.com) -subject:(referral OR commission OR commissions OR affiliate OR affiliates OR payout OR earnings OR approved OR declined OR rejected OR invoice OR receipt OR order OR shipped OR shipping OR delivered OR "your account" OR verify OR verification OR password)'/>
+    <apps:property name='label' value="Brands/Newsletters"/>
+    <apps:property name='shouldArchive' value="true"/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Site form: Album Requests</title>
+    <id>mahjmatchmaker:album-requests</id>
+    <updated>2026-10-21T19:00:00Z</updated>
+    <content></content>
+    <apps:property name='hasTheWord' value='from:form-submission@squarespace.info subject:("Album Requests" OR "Album Request")'/>
+    <apps:property name='label' value="Site/Album requests"/>
+    <apps:property name='shouldNeverSpam' value="true"/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Site form: Share Your Table</title>
+    <id>mahjmatchmaker:share-your-table</id>
+    <updated>2026-10-21T19:00:00Z</updated>
+    <content></content>
+    <apps:property name='hasTheWord' value='from:form-submission@squarespace.info subject:("Share Your Table")'/>
+    <apps:property name='label' value="Site/Share your table"/>
+    <apps:property name='shouldNeverSpam' value="true"/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Site form: Contact (any form that is not Album Requests or Share Your Table)</title>
+    <id>mahjmatchmaker:contact-form</id>
+    <updated>2026-10-21T19:00:00Z</updated>
+    <content></content>
+    <apps:property name='hasTheWord' value='from:form-submission@squarespace.info -subject:("Album Requests" OR "Album Request" OR "Share Your Table")'/>
+    <apps:property name='label' value="Site/Contact form"/>
+    <apps:property name='shouldStar' value="true"/>
+    <apps:property name='shouldAlwaysMarkAsImportant' value="true"/>
+    <apps:property name='shouldNeverSpam' value="true"/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Squarespace email subscriber reports / new subscribers</title>
+    <id>mahjmatchmaker:signups</id>
+    <updated>2026-10-21T19:00:00Z</updated>
+    <content></content>
+    <apps:property name='hasTheWord' value='from:squarespace subject:("Email Subscriber Report" OR "new subscriber" OR "new subscribers")'/>
+    <apps:property name='label' value="Site/Signups"/>
+    <apps:property name='shouldArchive' value="true"/>
+  </entry>
+</feed>
