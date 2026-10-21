@@ -20,9 +20,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CDN = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@'
 ASSET = CDN + '44563dd1c2c4d9a00aa3deec61b1d86ccfdbcaf8/assets/site/fym-page/'
 WORDMARK = CDN + '8952b136784680ba365a33d7ae13ba91a25ab561/assets/brand/mahjmatchmaker-wordmark-notag.png'
-APP_COMMIT = '0269672e6a2cf4a39b3cae76bd8eee5c0af784bc'
-APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-oct21f/index.html'  # v70 (Oct 21)
-APP_BASE = CDN + APP_COMMIT + '/site-app/fym-oct21d/'
+APP_COMMIT = '45ed0cb7277c7e630c9c5d2ab7fb92c87e6b23c3'
+APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v71/index.html'  # v71 (Oct 21 evening, artifact version 71)
+APP_BASE = CDN + APP_COMMIT + '/site-app/fym-v71/'  # v71 ships a full app folder (new t71/, b19-b21, mc chunk)
 
 # Oct 21 3:13pm (Tiffany): the tool's promo SHOWS THE TOOL. Hero = real v69 app screens in a true-proportion iPhone
 # (swipe: Papaya Spritz on Heiress, her #1 pick; behind it the two doors). How it works = 6-step tutorial, each a real screen.
