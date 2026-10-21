@@ -471,6 +471,15 @@ if 'function SOON(' not in UI or 'T[s.tile].soon?SOON(s)' not in UI: F.append("[
 for k_, t_ in T.items():
     if t_.get('soon') and t_.get('hid'): F.append(f"[28] {t_.get('n')}: photo-coming-soon tile is hidden (must stay selectable)")
 
+# 29 only full-size tile sets (Tiffany Oct 21 6:55pm: numbered flower packs in the picker): no visible partial / add-on tile product
+_PART = re.compile(r'(?i)numbered[- ]flower|flower[- ](pack|tiles? pack|add)|add[- ]?on\b|\bsample\b|\bmini\b|\btravel\b|joker[- ](pack|set)|blank[- ]tiles?')
+for s_ in D['sets']:
+    if not vis(s_): continue
+    t_ = T[s_['tile']]
+    if _PART.search(s_['name'] + ' ' + t_.get('n', '') + ' ' + (t_.get('u0') or t_.get('u', ''))) or (isinstance(t_.get('pc'), int) and t_['pc'] < 152):
+        F.append(f"[29] {s_['name']} ({s_['maker']}): looks like a partial / add-on tile product (only full-size sets are matched)")
+if any(vis(s_) for s_ in D['sets'] if s_['slug'] == 'wren-mats-simply'): F.append("[29] Simply (Wren Mats) visible (Tiffany Oct 21: bad photo, out of stock)")
+
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
     for b, v in sorted(W.items()): print(f"  {b} ({len(v)}): " + ', '.join(v[:8]) + (' ...' if len(v) > 8 else ''))

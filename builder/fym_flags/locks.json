@@ -15219,7 +15219,8 @@
   },
   "miss-mahjong-cowgirl-americana-numbered-flower": {
    "m": [],
-   "name": "Cowgirl Americana Numbered Flower"
+   "name": "Cowgirl Americana Numbered Flower",
+   "hid": true
   },
   "miss-mahjong-miss-cowgirl": {
    "m": [],
@@ -15227,15 +15228,18 @@
   },
   "miss-mahjong-darling-numbered-flower": {
    "m": [],
-   "name": "Darling Numbered Flower"
+   "name": "Darling Numbered Flower",
+   "hid": true
   },
   "miss-mahjong-classic-jade-numbered-flower": {
    "m": [],
-   "name": "Classic Jade Numbered Flower"
+   "name": "Classic Jade Numbered Flower",
+   "hid": true
   },
   "miss-mahjong-classic-malachite-numbered-flower": {
    "m": [],
-   "name": "Classic Malachite Numbered Flower"
+   "name": "Classic Malachite Numbered Flower",
+   "hid": true
   },
   "miss-mahjong-miss-darling-cameo-blue": {
    "m": [],
@@ -17556,7 +17560,8 @@
   },
   "wren-mats-simply": {
    "m": [],
-   "name": "Simply"
+   "name": "Simply",
+   "hid": true
   },
   "yellow-mountain-imports-oceana": {
    "m": [],
@@ -27125,6 +27130,13 @@
    "field": "m",
    "change": "added 183 swipe-book YES picks (config/swipe-yeses)",
    "approval": "Tiffany Oct 21 6:44pm: her swipe-book yeses are her matches (Tinselle Ruby Red showed only 2). Rule 4 real picks."
+  },
+  {
+   "date": "2026-10-21",
+   "set": "miss-mahjong-cowgirl-americana-numbered-flower,miss-mahjong-darling-numbered-flower,miss-mahjong-classic-jade-numbered-flower,miss-mahjong-classic-malachite-numbered-flower,wren-mats-simply",
+   "field": "hid",
+   "change": "hidden + locked hidden",
+   "approval": "Tiffany Oct 21 6:55pm: bad photo and out of stock; Tiffany Oct 21 6:55pm: partial / add-on tile product, \"we're only matching full size sets\""
   }
  ]
 }
