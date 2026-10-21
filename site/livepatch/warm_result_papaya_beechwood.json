@@ -1,0 +1,6 @@
+{
+ "total": 54,
+ "ok_200_and_bytes_match_repo": 54,
+ "note": "first pass: 38/54 200, 16 transient 503 from jsDelivr; second pass with retry: 54/54 200, every body byte-identical to the repo file",
+ "checked": "2026-10-21"
+}
