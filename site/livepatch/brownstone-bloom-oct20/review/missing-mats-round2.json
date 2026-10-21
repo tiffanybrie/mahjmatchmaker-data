@@ -1,0 +1,146 @@
+{
+ "_about": "Brownstone Bloom 'one more round of missing mats' (her l-final-brownstone note), built Oct 21. Pool = every visible FYM mat from a partner or allowed brand that was NOT in the Oct 18 swipe book (scripts/albumcard/specs/brownstone_bloom_inputs/items.json, 123 mats) and not already in the 31 or her 9 cancels, plus Amanda Toppe's 9 full-size mats from amandatoppeart.com/mahjong (none were in the swipe book; only City Queen was in FYM). Screened by eye against the Brownstone palette (ivory, lavender, wine, olive, chocolate, saffron), transitional/earthy tone (doc 76). No holiday, no Mahjong Studios, no Paige Spearin, no non-partners outside nonpartner_allow.json.",
+ "checked_not_picked": {
+  "Amanda Toppe": "Blue Willow, City Queen, Hydrangea Bliss, Limelight, Pink Winds, Pink Orchids: clean pastel / cool blue, no wine, olive or brown (clean-on-earthy).",
+  "Ozark Winslow 1920 Rouge": "good colours but ozarkmahjong.com now redirects to a lander (dead shop link)",
+  "LBB Fall Flowers": "good colours but our catalog row has no shop link",
+  "plaids (Retro Plaid, Country House, Tartan Tweed)": "she cancelled Handbook Plaid + Harvest Plaid"
+ },
+ "candidates": [
+  {
+   "id": "bbr2-01",
+   "mat": "YOTD Plum",
+   "brand": "Bespoke Mahjong",
+   "fym_key": "www.bespokemahjong.com/year-of-the-dragon-mat-plum",
+   "shop": "https://www.bespokemahjong.com/products/year-of-the-dragon-mat-plum?sca_ref=10217561.eoZg0pKJHSf8IQSE",
+   "img": "candidates/01-yotd-plum-bespoke-mahjong.jpg",
+   "why": "She kept YOTD Black, White and Periwinkle; plum picks up the wine protea and lavender dots."
+  },
+  {
+   "id": "bbr2-02",
+   "mat": "Novella Leatherette",
+   "brand": "Britt Mills",
+   "fym_key": "brittmillsdesign.com/novella-leatherette-mahjong-mat",
+   "shop": "https://brittmillsdesign.com/products/novella-leatherette-mahjong-mat?sca_ref=11205153.24gc8ncLZw3",
+   "img": "candidates/02-novella-leatherette-britt-mills.jpg",
+   "why": "Wine border, lavender butterfly at the center, olive and saffron florals."
+  },
+  {
+   "id": "bbr2-03",
+   "mat": "Mocha Kaleidoscope",
+   "brand": "Let's Be Besties",
+   "fym_key": "letsbebesties.com/mocha-kaleidoscope-artist-collab-leatherette-mahjong-mat",
+   "shop": "https://letsbebesties.com/products/mocha-kaleidoscope-artist-collab-leatherette-mahjong-mat?sca_ref=12515508.SUyXEjJsqV",
+   "img": "candidates/03-mocha-kaleidoscope-let-s-be-besties.jpg",
+   "why": "Mocha, black and cream kaleidoscope; reads like the chocolate in her own mat."
+  },
+  {
+   "id": "bbr2-04",
+   "mat": "William Morris Inspired Rose Wreath",
+   "brand": "Splash of Color",
+   "fym_key": "splashofcolorco.com/william-morris-inspired-rose-wreath-mahjong-mat",
+   "shop": "https://splashofcolorco.com/products/william-morris-inspired-rose-wreath-mahjong-mat",
+   "img": "candidates/04-william-morris-inspired-rose-wreath-splash-of-color.jpg",
+   "why": "Saffron, olive and brown William Morris florals on navy; photo is a room shot."
+  },
+  {
+   "id": "bbr2-05",
+   "mat": "Sparrow's Nest",
+   "brand": "Amanda Toppe",
+   "fym_key": "alb:coquette:Sparrow's Nest",
+   "shop": "https://www.amandatoppeart.com/mahjong/p/sparrows-nest-mahjong-mat?ref=mahjmatchmaker",
+   "img": "candidates/05-sparrow-s-nest-amanda-toppe.jpg",
+   "why": "Amanda Toppe: lavender florals with an olive border (lavender butterflies + olive bamboo)."
+  },
+  {
+   "id": "bbr2-06",
+   "mat": "Serenity",
+   "brand": "Amanda Toppe",
+   "fym_key": "alb:coquette:Serenity",
+   "shop": "https://www.amandatoppeart.com/mahjong/p/serenity-mahjong-mat?ref=mahjmatchmaker",
+   "img": "candidates/06-serenity-amanda-toppe.jpg",
+   "why": "Amanda Toppe: lavender and sage watercolor, soft enough for ivory tiles."
+  },
+  {
+   "id": "bbr2-07",
+   "mat": "Petalwood",
+   "brand": "Amanda Toppe",
+   "fym_key": "alb:coquette:Petalwood",
+   "shop": "https://www.amandatoppeart.com/mahjong/p/petalwood-mahjong-mat?ref=mahjmatchmaker",
+   "img": "candidates/07-petalwood-amanda-toppe.jpg",
+   "why": "Amanda Toppe: greige cane center with sage florals and a periwinkle edge."
+  },
+  {
+   "id": "bbr2-08",
+   "mat": "Glory",
+   "brand": "Britt Mills",
+   "fym_key": "brittmillsdesign.com/glory-neoprene-mahjong-mat-copy",
+   "shop": "https://brittmillsdesign.com/products/glory-neoprene-mahjong-mat-copy?sca_ref=11205153.24gc8ncLZw3",
+   "img": "candidates/08-glory-britt-mills.jpg",
+   "why": "Moths and butterflies in wine and blush on cream, slate border."
+  },
+  {
+   "id": "bbr2-09",
+   "mat": "Knox",
+   "brand": "Britt Mills",
+   "fym_key": "brittmillsdesign.com/knox-neoprene-mahjong-mat",
+   "shop": "https://brittmillsdesign.com/products/knox-neoprene-mahjong-mat?sca_ref=11205153.24gc8ncLZw3",
+   "img": "candidates/09-knox-britt-mills.jpg",
+   "why": "Olive center, deer and saffron florals on a dark border."
+  },
+  {
+   "id": "bbr2-10",
+   "mat": "Pretty in Plum Premium",
+   "brand": "Mahjong Register",
+   "fym_key": "mahjongregister.com/preorder-buttercup-cherie-premium-mahjong-mat-33-estimated-ship-oct-30th-copy",
+   "shop": "https://mahjongregister.com/products/preorder-buttercup-cherie-premium-mahjong-mat-33-estimated-ship-oct-30th-copy",
+   "img": "candidates/10-pretty-in-plum-premium-mahjong-register.jpg",
+   "why": "Plum and lilac florals with a cream ring."
+  },
+  {
+   "id": "bbr2-11",
+   "mat": "Osmanthus Grove",
+   "brand": "Mahjong Row & Co.",
+   "fym_key": "mahjongrowandco.com/osmanthus-grove-mat",
+   "shop": "https://mahjongrowandco.com/products/osmanthus-grove-mat?sca_ref=12475363.JLitn0fWe79Xnn",
+   "img": "candidates/11-osmanthus-grove-mahjong-row-co.jpg",
+   "why": "Mahjong Row & Co (4 of her top 11 are MR&Co): olive center, saffron blossoms, tortoise trim."
+  },
+  {
+   "id": "bbr2-12",
+   "mat": "Vegan Leather – Caramel",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/origami-leather-mat?v=51114566746421",
+   "shop": "https://www.bambirdboutique.com/products/origami-leather-mat?variant=51114566746421",
+   "img": "candidates/12-vegan-leather-caramel-bam-bird-boutique.jpg",
+   "why": "Solid caramel leather, the same family as Cognac and Palomino she kept."
+  },
+  {
+   "id": "bbr2-13",
+   "mat": "Regal Bloom",
+   "brand": "Britt Mills",
+   "fym_key": "brittmillsdesign.com/regal-bloom-neoprene-mahjong-mat",
+   "shop": "https://brittmillsdesign.com/products/regal-bloom-neoprene-mahjong-mat",
+   "img": "candidates/13-regal-bloom-britt-mills.jpg",
+   "why": "Lilac center with a tiger, dark wine and green florals."
+  },
+  {
+   "id": "bbr2-14",
+   "mat": "Legacy",
+   "brand": "Britt Mills",
+   "fym_key": "brittmillsdesign.com/legacy-britt-mills-mahjong-mat",
+   "shop": "https://brittmillsdesign.com/products/legacy-britt-mills-mahjong-mat?sca_ref=11205153.24gc8ncLZw3",
+   "img": "candidates/14-legacy-britt-mills.jpg",
+   "why": "Leopard on dark green with blush roses; olive and wine."
+  },
+  {
+   "id": "bbr2-15",
+   "mat": "Midnight Wildflowers with Camel Fringe",
+   "brand": "Tala Mahj",
+   "fym_key": "talamahj.com/midnight-meadow-mahjong-mat-with-suede-fringe",
+   "shop": "https://go.shopmy.us/p-96067421",
+   "img": "candidates/15-midnight-wildflowers-with-camel-fringe-tala-mahj.jpg",
+   "why": "Tala (ShopMy favorite): gold and rust wildflowers on midnight, camel fringe."
+  }
+ ]
+}
