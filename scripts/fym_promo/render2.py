@@ -122,9 +122,9 @@ async def go():
                     em.paste(x, (0, y)); y += x.height
             else:
                 em = im
-            ew = 480
+            ew = 560
             e = em.resize((ew, round(em.height * ew / em.width)), Image.LANCZOS)
-            e.save(f'{EM}/tut{i}.jpg', quality=56, optimize=True, progressive=True)
+            e.save(f'{EM}/tut{i}.jpg', quality=52, optimize=True, progressive=True)
             pg = await b.new_page(viewport={'width': 1200, 'height': 400})
             f = f'{TMP}/h{i}.html'; open(f, 'w').write(step_head(i, s['title']))
             await pg.goto('file://' + f, wait_until='load'); await pg.evaluate('document.fonts.ready'); await pg.wait_for_timeout(200)
@@ -135,6 +135,24 @@ async def go():
                         'email': [e.width, e.height, os.path.getsize(f'{EM}/tut{i}.jpg')],
                         'hl': [*Image.open(f'{EM}/hl-tut{i}.png').size, os.path.getsize(f'{EM}/hl-tut{i}.png')]})
         await b.close()
+    # Squarespace email editor = one image section per step: title baked in above the screen (Oct 21)
+    PAPER = (255, 253, 250)
+    for o in out:
+        i = o['n']; W2 = 560
+        parts = []
+        if i == 1:
+            hw = Image.open(f'{EM}/hl-launch-how.png').convert('RGBA'); k = min(0.85, (W2 - 40) / hw.width); parts.append(hw.resize((round(hw.width * k), round(hw.height * k)), Image.LANCZOS))
+        h = Image.open(f'{EM}/hl-tut{i}.png').convert('RGBA')
+        sc = min(0.8, (W2 - 40) / h.width)
+        parts.append(h.resize((round(h.width * sc), round(h.height * sc)), Image.LANCZOS))
+        sh = Image.open(f'{EM}/tut{i}.jpg').convert('RGBA')
+        H = sum(p.height for p in parts) + 18 * len(parts) + 10 + sh.height
+        c = Image.new('RGBA', (W2, H), PAPER + (255,)); y = 12
+        for p in parts:
+            c.alpha_composite(p, ((W2 - p.width) // 2, y)); y += p.height + 14
+        c.alpha_composite(sh, ((W2 - sh.width) // 2, y))
+        c.convert('RGB').save(f'{EM}/step-sq{i}.jpg', quality=56, optimize=True, progressive=True)
+        o['sq'] = [c.width, c.height, os.path.getsize(f'{EM}/step-sq{i}.jpg')]
     json.dump(out, open(f'{R}/scripts/fym_promo/tutorial.json', 'w'), indent=1, ensure_ascii=False)
     for o in out:
         print(o['n'], o['page'], o['email'], o['hl'])

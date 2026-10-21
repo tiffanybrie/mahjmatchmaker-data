@@ -140,7 +140,7 @@ p{{margin:0 0 14px}}
 a{{color:{PINK}}}
 .h1{{margin:18px 0 14px}} .h2{{margin:26px 0 6px}} .h3{{margin:0 0 10px}}
 .hero{{margin:4px 0 14px}}
-.step{{text-align:center;margin:22px 0 8px;padding:18px 14px 6px;background:{PCREAM};border:2px solid #f4e3d6;border-radius:16px}} .step p{{margin:10px auto 8px;max-width:420px}}
+.step{{text-align:center;margin:22px 0 8px;padding:0 0 6px;overflow:hidden;background:{PCREAM};border:2px solid #f4e3d6;border-radius:16px}} .step p{{margin:10px auto 8px;max-width:420px}}
 .legal{{opacity:.8}}
 .btnw{{text-align:center;margin:22px 0 22px}}
 .btn{{display:inline-block;background:{HPINK};color:#fff!important;text-decoration:none;font:700 21px/1 Helvetica,Arial,sans-serif;padding:20px 46px;border-radius:14px}}
@@ -169,6 +169,8 @@ TUT = json.loads((ROOT.parent.parent / "scripts" / "fym_promo" / "tutorial.json"
 for _t in TUT:
     MANI["sizes"][f"tut{_t['n']}.jpg"] = _t["email"]; MANI["alt"][f"tut{_t['n']}"] = _t.get("email_alt", _t["alt"])
     MANI["sizes"][f"hl-tut{_t['n']}.png"] = _t["hl"]; MANI["alt"][f"hl-tut{_t['n']}"] = f"Step {_t['n']}: " + html.unescape(_t["title"])
+    MANI["sizes"][f"step-sq{_t['n']}.jpg"] = _t["sq"]
+    MANI["alt"][f"step-sq{_t['n']}"] = (("Here's how it works. " if _t['n'] == 1 else "") + f"Step {_t['n']}: " + html.unescape(_t["title"]) + ". " + _t.get("email_alt", _t["alt"]))
 
 
 def img(stem, cls="", display_w=None):
@@ -197,10 +199,10 @@ def render(e, with_meta=True):
     for p in e["paras"]:
         h.append(f"<p>{nw(p)}</p>")
     if e.get("tutorial"):
-        h.append(f'<div class="h2">{img(e["steps_head"])}</div>')
+        # one image per step (title + "how it works" on step 1 baked in), caption as live text: mirrors the Squarespace draft's sections
         for t in TUT:
             n = t["n"]
-            h.append(f'<div class="step"><div class="h3">{img(f"hl-tut{n}")}</div><p>{nw(t["caption"])}</p>{img(f"tut{n}", "shot", 480)}</div>')
+            h.append(f'<div class="step">{img(f"step-sq{n}", "shot", 560)}<p>{nw(t["caption"])}</p></div>')
     if e.get("list"):
         h.append(f'<div class="h2">{img(e["list_head"])}</div>')
         h.append("<ul>" + "".join(f"<li>{x}</li>" for x in e["list"]) + "</ul>")
@@ -228,9 +230,8 @@ def plain(e):
         out.append(f'[IMAGE: {MANI["alt"]["hero"]}]')
     out += [t(p) for p in e["paras"]]
     if e.get("tutorial"):
-        out.append(f'[IMAGE heading: {MANI["alt"][e["steps_head"]]}]')
         for x in TUT:
-            out.append(f'[IMAGE heading: {MANI["alt"]["hl-tut" + str(x["n"])]}]\n{t(x["caption"])}\n[IMAGE: {x.get("email_alt", x["alt"])}]')
+            out.append(f'[IMAGE: {MANI["alt"]["step-sq" + str(x["n"])]}]\n{t(x["caption"])}')
     if e.get("list"):
         out.append(f'[IMAGE heading: {MANI["alt"][e["list_head"]]}]')
         out += ["• " + t(x) for x in e["list"]]
