@@ -150,6 +150,13 @@ ul{{padding-left:20px;margin:0 0 14px}} li{{margin:0 0 8px}}
 """
 
 
+def nw(p):
+    """No widows: glue the last two words of a paragraph (brand guide: no orphan words)."""
+    import re
+    m = re.search(r" (?=[^ <>]+(?:<[^>]+>)*[^ <>]*$)", p)
+    return p[:m.start()] + "&nbsp;" + p[m.end():] if m else p
+
+
 def render(e, with_meta=True):
     h = []
     if with_meta:
@@ -161,7 +168,7 @@ def render(e, with_meta=True):
     if e.get("hero"):
         h.append(f'<img class="hero" src="../{e["hero"]}" alt="Match cards fanned out with a heart and an X, swipe-style">')
     for p in e["paras"]:
-        h.append(f"<p>{p}</p>")
+        h.append(f"<p>{nw(p)}</p>")
     if e.get("list"):
         h.append("<ul>" + "".join(f"<li>{x}</li>" for x in e["list"]) + "</ul>")
     t, u = e["button"]
@@ -171,7 +178,7 @@ def render(e, with_meta=True):
             f'<a class="post" href="{u}"><b>{a}</b><span>{b} &rarr;</span></a>' for a, b, u in e["blog"]) + "</div>")
     for p in e.get("after", []):
         cls = ' class="code"' if p == CODE else ""
-        h.append(f"<p{cls}>{p}</p>")
+        h.append(f"<p{cls}>{nw(p)}</p>")
     h.append(f'<p class="sign">{SIGN}</p></div>')
     h.append('<div class="foot">Mahj Matchmaker · <a href="https://www.mahjmatchmaker.com">mahjmatchmaker.com</a><br>Hooking up tiles, mats &amp; racks</div></div>')
     return f'<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(e["name"])}</title><style>{CSS}</style></head><body><div class="outer">{"".join(h)}</div></body></html>'
