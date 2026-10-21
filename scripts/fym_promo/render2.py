@@ -28,7 +28,9 @@ STEPS = [
          caption='Tap &hearts; to add a mat to your shortlist and &#10005; to skip it. My picks show first; tap the pink button to see every mat. Tap a color dot to shop by color, and tap it again to clear it.',
          alt='Swiping mats for Papaya Spritz tiles, with the Heiress mat on screen. Arrows point to the Tiffany’s picks button (turn my picks on or off), the color dots (shop by color), the X button (not for me) and the heart button (love it, add to my shortlist).',
          labels=[('Turn my picks on or off', ROSE, 'top', 123, 341), ('Shop by color', NAVY, 'top', 362, 341),
-                 ('Not for me', NAVY, 'bottom', 156, 1071), ('Love it! Add to my shortlist', ROSE, 'bottom', 230, 1071)]),
+                 ('Not for me', NAVY, 'bottom', 156, 1071), ('Love it! Add to my shortlist', ROSE, 'bottom', 230, 1071)],
+         email=[((312, 372), [('Turn my picks on or off', ROSE, 'top', 123, 341), ('Shop by color', NAVY, 'top', 362, 341)]),
+                ((1005, 1110), [('Not for me', NAVY, 'bottom', 156, 1071), ('Love it! Add to my shortlist', ROSE, 'bottom', 230, 1071)])]),
     dict(title='Your shortlist', screen='shortlist', crop=(960, 1200),
          caption='Every mat you &hearts; collects at the bottom, so you can compare. When you&rsquo;re ready, tap Mock your&nbsp;match.',
          alt='The shortlist bar at the bottom of the swipe, holding two loved mats. Arrows point to the shortlist and to the Mock your match button.',
@@ -36,21 +38,23 @@ STEPS = [
     dict(title='Mock up your match', screen='racks', crop=(1320, 2120),
          caption='See your tiles, mat and racks together. Swipe racks the same way, then tap Make it&nbsp;official.',
          alt='The mock-up step: Papaya Spritz tiles on the Heiress mat with Tiffany’s rack match, Middle & Main Scalloped Beechwood. Arrows point to the mat and to the rack.',
-         labels=[('Your tiles + mat, together', NAVY, 'top', 300, 1560), ('Swipe racks: ✕ or ♥', ROSE, 'bottom', 200, 1865)]),
-    dict(title='Save and share', screen='card', crop=(2200, 3020),
+         labels=[('Your tiles + mat, together', NAVY, 'top', 110, 1400), ('Swipe racks: ✕ or ♥', ROSE, 'bottom', 195, 2085)],
+         email=[((1770, 2120), [('My rack pick', NAVY, 'top', 230, 1860), ('Swipe racks: ✕ or ♥', ROSE, 'bottom', 195, 2085)])]),
+    dict(title='Save and share', screen='card', crop=(2362, 3020),
          caption='Pick your view, then save your match card or send it to your mahj group. Every piece is linked, with code&nbsp;MAHJMATCH.',
          alt='The finished match card for Papaya Spritz on Heiress with Beechwood racks. Arrows point to the view buttons and to Save or share my match card.',
-         labels=[('Pick your view', NAVY, 'top', 195, 2388), ('Save it or share it', ROSE, 'bottom', 195, 2986)]),
+         labels=[('Pick your view', NAVY, 'top', 195, 2388), ('Save it or share it', ROSE, 'bottom', 195, 2986)],
+         email=[((2362, 2800), [('Pick your view', NAVY, 'top', 195, 2388)]), ((2940, 3012), [('Save it or share it', ROSE, 'bottom', 195, 2986)])]),
 ]
 
 W = 1000
 
 
-def html(i, s):
-    y0, y1 = s['crop']
+def html(tag, crop, labels):
+    y0, y1 = crop
     k = W / 390
-    top = [l for l in s['labels'] if l[2] == 'top']
-    bot = [l for l in s['labels'] if l[2] == 'bottom']
+    top = [l for l in labels if l[2] == 'top']
+    bot = [l for l in labels if l[2] == 'bottom']
 
     def band(ls, cls):
         if not ls:
@@ -65,7 +69,7 @@ html,body{{margin:0;background:{CREAM}}}#c{{position:relative;width:{W}px;backgr
 #scr{{position:relative;margin:0 22px;border-radius:30px;overflow:hidden;box-shadow:0 14px 34px rgba(6,42,85,.16);border:5px solid #fff}}
 #scr img{{display:block;width:100%}}
 svg{{position:absolute;inset:0;z-index:2;pointer-events:none}}</style>
-<div id=c>{band(top, 'top')}<div id=scr><img src="file://{TMP}/crop{i}.png"></div>{band(bot, 'bot')}<svg id=sv></svg></div>
+<div id=c>{band(top, 'top')}<div id=scr><img src="file://{TMP}/crop{tag}.png"></div>{band(bot, 'bot')}<svg id=sv></svg></div>
 <script>
 const c=document.getElementById('c'),scr=document.getElementById('scr'),sv=document.getElementById('sv');
 function go(){{const cr=c.getBoundingClientRect(),sr=scr.getBoundingClientRect(),sc=(sr.width)/{W};
@@ -76,9 +80,9 @@ for(const p of document.querySelectorAll('.pill')){{const r=p.getBoundingClientR
  const sx=r.left-cr.left+r.width/2, sy=top?r.bottom-cr.top:r.top-cr.top;
  const ex=tx, ey=top?ty-14:ty+14; const mx=(sx+ex)/2, my=(sy+ey)/2;
  const d='M'+sx+','+sy+' Q'+sx+','+my+' '+ex+','+ey;
- h+='<path d="'+d+'" stroke="#fff" stroke-width=16 fill=none stroke-linecap=round/>';
- h+='<path d="'+d+'" stroke="{HEART}" stroke-width=8 fill=none stroke-linecap=round marker-end="url(#a)"/>';
- h+='<circle cx="'+tx+'" cy="'+ty+'" r=10 fill="{HEART}" stroke="#fff" stroke-width=4 opacity=.0 />';}}
+ h+='<path d="'+d+'" stroke="#fff" stroke-width="16" fill="none" stroke-linecap="round"></path>';
+ h+='<path d="'+d+'" stroke="{HEART}" stroke-width="8" fill="none" stroke-linecap="round" marker-end="url(#a)"></path>';
+ h+='<circle cx="'+tx+'" cy="'+ty+'" r=10 fill="{HEART}" stroke="#fff" stroke-width="4" opacity="0"></circle>';}}
 sv.innerHTML=h;}}
 window.go=go;document.fonts.ready.then(go);</script>"""
 
@@ -93,30 +97,38 @@ async def go():
     from playwright.async_api import async_playwright
     for d in (TMP, PG, EM):
         os.makedirs(d, exist_ok=True)
-    for i, s in enumerate(STEPS, 1):
-        y0, y1 = s['crop']
-        Image.open(f"{SRC}/{s['screen']}.png").crop((0, y0 * 3, 1170, y1 * 3)).save(f'{TMP}/crop{i}.png')
     out = []
     async with async_playwright() as p:
         b = await p.chromium.launch()
-        for i, s in enumerate(STEPS, 1):
+
+        async def part(tag, screen, crop, labels):
+            y0, y1 = crop
+            Image.open(f"{SRC}/{screen}.png").crop((0, y0 * 3, 1170, y1 * 3)).save(f'{TMP}/crop{tag}.png')
             pg = await b.new_page(viewport={'width': W, 'height': 1200}, device_scale_factor=1)
-            f = f'{TMP}/t{i}.html'; open(f, 'w').write(html(i, s))
-            await pg.goto('file://' + f, wait_until='load'); await pg.evaluate('document.fonts.ready'); await pg.wait_for_timeout(500)
-            await pg.evaluate('go()'); await pg.wait_for_timeout(200)
-            print('paths', await pg.evaluate("document.querySelectorAll('#sv path').length"), await pg.evaluate("[...document.querySelectorAll('#sv path')].map(p=>p.getAttribute('d')).slice(0,2)"))
-            await pg.locator('#c').screenshot(path=f'{TMP}/tut{i}.png')
-            await pg.close()
+            f = f'{TMP}/t{tag}.html'; open(f, 'w').write(html(tag, crop, labels))
+            await pg.goto('file://' + f, wait_until='load'); await pg.evaluate('document.fonts.ready'); await pg.wait_for_timeout(400)
+            await pg.evaluate('go()'); await pg.wait_for_timeout(150)
+            await pg.locator('#c').screenshot(path=f'{TMP}/tut{tag}.png'); await pg.close()
+            return Image.open(f'{TMP}/tut{tag}.png').convert('RGB')
+
+        for i, s in enumerate(STEPS, 1):
+            im = await part(str(i), s['screen'], s['crop'], s['labels'])
+            im.save(f'{PG}/tut{i}.webp', quality=80, method=6)
+            if s.get('email'):
+                ps = [await part(f'{i}e{j}', s['screen'], c, l) for j, (c, l) in enumerate(s['email'])]
+                em = Image.new('RGB', (W, sum(x.height for x in ps)), CREAM); y = 0
+                for x in ps:
+                    em.paste(x, (0, y)); y += x.height
+            else:
+                em = im
+            ew = 480
+            e = em.resize((ew, round(em.height * ew / em.width)), Image.LANCZOS)
+            e.save(f'{EM}/tut{i}.jpg', quality=56, optimize=True, progressive=True)
             pg = await b.new_page(viewport={'width': 1200, 'height': 400})
             f = f'{TMP}/h{i}.html'; open(f, 'w').write(step_head(i, s['title']))
             await pg.goto('file://' + f, wait_until='load'); await pg.evaluate('document.fonts.ready'); await pg.wait_for_timeout(200)
-            await pg.locator('#c').screenshot(path=f'{EM}/hl-tut{i}.png', omit_background=True)
-            await pg.close()
-            im = Image.open(f'{EM}/hl-tut{i}.png').convert('RGBA'); im.quantize(colors=64, method=Image.FASTOCTREE).save(f'{EM}/hl-tut{i}.png', optimize=True)
-            im = Image.open(f'{TMP}/tut{i}.png').convert('RGB')
-            im.save(f'{PG}/tut{i}.webp', quality=80, method=6)
-            e = im.resize((560, round(im.height * 560 / im.width)), Image.LANCZOS)
-            e.save(f'{EM}/tut{i}.jpg', quality=58, optimize=True, progressive=True)
+            await pg.locator('#c').screenshot(path=f'{EM}/hl-tut{i}.png', omit_background=True); await pg.close()
+            h = Image.open(f'{EM}/hl-tut{i}.png').convert('RGBA'); h.quantize(colors=64, method=Image.FASTOCTREE).save(f'{EM}/hl-tut{i}.png', optimize=True)
             out.append({'n': i, 'title': s['title'], 'caption': s['caption'], 'alt': s['alt'],
                         'page': [im.width, im.height, os.path.getsize(f'{PG}/tut{i}.webp')],
                         'email': [e.width, e.height, os.path.getsize(f'{EM}/tut{i}.jpg')],
