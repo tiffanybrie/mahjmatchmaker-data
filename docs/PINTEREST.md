@@ -3,13 +3,13 @@
 Pace rules live in `config/pinterest/queue.json` `rules` (2 new pins/day at 13:00Z and 20:00Z on top of the 15:00/16:00Z batch; never more than 4 pins on one day; holiday pins not before Nov 1). Planoly workspace 019fc27b-964d-7279-8685-1f1bb7a7c3f5, channel 01a1184e-8a5d-7389-a935-6a156540cc08. Builder for the test pins: `scripts/pinterest/shopmy_product_pins.py` (images in `assets/social/pinterest/shopmy-test/`).
 
 ## ShopMy product pin test (Oct 21)
-Tiffany approved Oct 21 5:39pm (exception to the queue.json "own work only" rule). 10 single-product pins, 1000x1500, Caprasimo/navy/pink label + small wordmark, linking to go.shopmy.us product links (each curled: Tala/OMM land 200 on the live product page; Etsy listings redirect correctly but Etsy returns 403 to bots, so stock there is unverified). Sold-out Tala mats (Veranda, Pavilion) skipped. 1 pin/day at 18:00Z (2pm ET), because every day already carries 3 pins and the cap is 4. All #affiliate. MAHJMATCH is mentioned only on the OMM pin (Tala and Betty June & Jeannette are non-partners, no code).
+Tiffany approved Oct 21 5:39pm (exception to the queue.json "own work only" rule). 10 single-product pins, 1000x1500, Caprasimo/navy/pink label + small wordmark, linking to go.shopmy.us product links (except the OMM pin) (each curled: Tala/OMM land 200 on the live product page; Etsy listings redirect correctly but Etsy returns 403 to bots, so stock there is unverified). Sold-out Tala mats (Veranda, Pavilion) skipped. 1 pin/day at 18:00Z (2pm ET), because every day already carries 3 pins and the cap is 4. All #affiliate. MAHJMATCH is mentioned only on the OMM pin (Tala and Betty June & Jeannette are non-partners, no code).
 
 | Date (18:00Z) | Pin | Board | ShopMy link | postGroupId / postId |
 |---|---|---|---|---|
 | Oct 22 | Pink Watercolor Floral Mahjong Mat, Betty June & Jeannette (The Kerry) | Mahjong Mats & Racks | https://go.shopmy.us/p-96114928 | 01a1606f-90b7-76aa-a6ec-87ceedab93bc / 01a1606f-90bf-721d-a8f1-bcf406975649 |
 | Oct 23 | Midnight Wildflower Mahjong Mat, Tala Mahj | Mahjong Mats & Racks | https://go.shopmy.us/p-96067421 | 01a1606f-92a8-76a2-a946-863bb2fe79fb / 01a1606f-92ae-77aa-ada7-cec9b5ea3587 |
-| Oct 24 | Heritage Mahjong Tile Set, Oh My Mahjong (code MAHJMATCH) | Oh My Mahjong Tile and Mat Matches | https://go.shopmy.us/p-95383853 | 01a1606f-94c6-74ef-9ba4-679c619732e5 / 01a1606f-94cb-772f-905c-4360c0e20c84 |
+| Oct 24 | Heritage Mahjong Tile Set, Oh My Mahjong (code MAHJMATCH) | Oh My Mahjong Tile and Mat Matches | https://www.mahjmatchmaker.com/heritage-mahjong-tile-matches (Heritage match album; no OMM referral link in repo; ShopMy 8% link not used per ShopMy rule) | 01a1606f-94c6-74ef-9ba4-679c619732e5 / 01a1606f-94cb-772f-905c-4360c0e20c84 |
 | Oct 25 | Orchid Hummingbird Mahjong Mat, Betty June & Jeannette (Allie) | Mahjong Mats & Racks | https://go.shopmy.us/p-94800122 | 01a1606f-970c-71db-aa27-5d30bde04298 / 01a1606f-9716-7649-9b96-0033163747dc |
 | Oct 26 | Pink Striped Mahjong Mat, Tala Mahj (Cabana Pink & Ivory) | Mahjong Mats & Racks | https://go.shopmy.us/p-96304571 | 01a1606f-9a0c-76b0-bf1f-bb407ed3525a / 01a1606f-9a14-747d-815c-0e749af6812b |
 | Oct 27 | Pink Poolside Mahjong Mat, Betty June & Jeannette (Brinkley) | Mahjong Mats & Racks | https://go.shopmy.us/p-96125711 | 01a1606f-9c2a-7486-aaf9-d64cf350d258 / 01a1606f-9c34-7208-8ec8-133739d716e8 |
@@ -20,4 +20,4 @@ Tiffany approved Oct 21 5:39pm (exception to the queue.json "own work only" rule
 
 **CHECK DATE: Oct 24.** list_post_groups (workspace above, platform pinterest): confirm the Oct 22 and Oct 23 pins are `published` (not failed), open them on Pinterest to confirm they are live and not flagged/removed, and that the go.shopmy.us link still resolves. If any are flagged or the links are blocked, pause the rest (delete_post_group) and tell Tiffany. If clean, scale the test while staying under the pace above.
 
-Not yet verified for stock: Etsy (Betty June & Jeannette) listings. Heritage tile set pays ShopMy 8% vs OMM's own 20% code program; swap to the direct OMM link if Tiffany prefers.
+Not yet verified for stock: Etsy (Betty June & Jeannette) listings. Heritage pin links to the Heritage match album (OMM is a partner paying 20% via its own code program, so no ShopMy link); swap in her OMM affiliate link if she has one.
