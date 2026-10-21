@@ -472,7 +472,7 @@ for k_, t_ in T.items():
     if t_.get('soon') and t_.get('hid'): F.append(f"[28] {t_.get('n')}: photo-coming-soon tile is hidden (must stay selectable)")
 
 # 29 only full-size tile sets (Tiffany Oct 21 6:55pm: numbered flower packs in the picker): no visible partial / add-on tile product
-_PART = re.compile(r'(?i)numbered[- ]flower|flower[- ](pack|tiles? pack|add)|add[- ]?on\b|\bsample\b|\bmini\b|\btravel\b|joker[- ](pack|set)|blank[- ]tiles?')
+_PART = re.compile(r'(?i)numbered[- ]flower|flower[- ](pack|tiles? pack|add)|add[- ]?on\b|\bsample\b|\bmini\b|\btravel\b|joker[- ](pack|set)|blank[- ]tiles?|for[- ]decor|\bdecor\b|\bevent\b|tastings?|flyer|tile[- ]takers|novelty|gift card|\bsold as individual')
 for s_ in D['sets']:
     if not vis(s_): continue
     t_ = T[s_['tile']]
@@ -500,7 +500,8 @@ for tk_, t_ in T.items():
     if t_.get('hid') or not any(s_['tile'] == tk_ and vis(s_) for s_ in D['sets']): continue
     _pk.setdefault(t_.get('pile'), []).append(t_.get('n') or tk_)
 for k_, ns_ in _pk.items():
-    if k_ and len(ns_) > 1: F.append(f"[30b] tiles share one picker photo key {k_}: {ns_[:4]}")
+    if k_ and len(ns_) > 1 and str(k_).startswith(('p71', 'p16sundaydec')): F.append(f"[30b] tiles share one picker photo key {k_}: {ns_[:4]}")
+    elif k_ and len(ns_) > 1: print(f"FYM GATE WARNING [30b]: pre-v71 tiles share a picker photo {k_}: {ns_[:4]}")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")

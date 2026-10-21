@@ -6,13 +6,13 @@ Gate [29] fails if a visible tile entry looks like a partial set."""
 import sys, os, json, re
 HERE = os.path.dirname(os.path.abspath(__file__)); REPO = os.path.abspath(os.path.join(HERE, '..', '..')) + '/'
 B = sys.argv[1]; P = os.path.join(B, 'index.html'); h = open(P).read(); i = h.index('const D=') + 8; D, end = json.JSONDecoder().raw_decode(h[i:]); end += i
-PARTIAL = re.compile(r'(?i)numbered[- ]flower|flower[- ](pack|tiles? pack|add)|add[- ]?on\b|\bsample\b|\bmini\b|\btravel\b|joker[- ](pack|set)|blank[- ]tiles?')
-EXTRA = {'wren-mats-simply': 'Tiffany Oct 21 6:55pm: bad photo and out of stock'}
+PARTIAL = re.compile(r'(?i)numbered[- ]flower|flower[- ](pack|tiles? pack|add)|add[- ]?on\b|\bsample\b|\bmini\b|\btravel\b|joker[- ](pack|set)|blank[- ]tiles?|for[- ]decor|\bdecor\b|\bevent\b|tastings?|flyer|tile[- ]takers|novelty|gift card|\bsold as individual')
+EXTRA = {'wren-mats-simply': 'Tiffany Oct 21 6:55pm: bad photo and out of stock', 'mahjong-studios-yellow-lilac-ocean-blue': 'Oct 21 tile audit: product is bags/boxes, not a full tile set (only full-size sets)'}
 L = json.load(open(REPO + 'builder/fym_flags/locks.json')); hid = []
 for s in D['sets']:
     t = D['tiles'][s['tile']]
     why = EXTRA.get(s['slug']) or ('Tiffany Oct 21 6:55pm: partial / add-on tile product, "we\'re only matching full size sets"' if PARTIAL.search(s['name'] + ' ' + t.get('n', '') + ' ' + (t.get('u0') or t.get('u', ''))) else None)
-    if not why or s.get('hid'): continue
+    if not why or (s.get('hid') and L['sets'].get(s['slug'], {}).get('hid')): continue
     s['hid'] = True; s['m'] = []; hid.append((s['slug'], why))
     L['sets'].setdefault(s['slug'], {'name': s['name']}); L['sets'][s['slug']].update(hid=True, m=[])
 if hid:
