@@ -3,8 +3,8 @@
 
 v2 (Tiffany, Oct 21 2:05pm): "bigger, no pink background" -> TRANSPARENT PNG, cropped tight to
 the fan of the newest album covers (only a small margin for the soft shadows), so the fan "just
-hangs there" on the section's own background (#FDF0E6 at 390/1280/1440). The fan's bounding box
-is tuned to ~522x382 (step 1's image column on desktop) so object-fit:contain fills the column;
+hangs there" on the section's own background (#FDF0E6 at 390/1280/1440). The fan fills the full width
+of step 1's image column on desktop (522 wide at 1280, 588 at 1440), centred in its 522x382 box;
 on phones it shows at full width with its natural height, so no cover is clipped.
 v1 (Oct 21 12:22) was a 1200x880 JPG on blush with a lot of empty pink.
 """
@@ -14,11 +14,12 @@ from PIL import Image, ImageDraw, ImageFilter
 R = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
 C = os.path.join(R, 'assets/covers/albums/w800/')
 OUT = os.path.join(R, 'assets/site/home/how-it-works-3-new-matches-first.png')
-TARGET_AR = 522 / 382          # step 1's image column at 1280
 OUT_W = 1200                   # 2.3x the 522px desktop column, sharp on retina
 W, H = 2600, 2000              # work canvas, cropped afterwards
 covers = ['00-osler', '00-talulah', '00-coquette', '00-seabreeze', '00-smith']  # centre = newest (Coquette)
-rots = [15, 7.5, 0, -7.5, -15]
+rots = [18, 9, 0, -9, -18]
+SPREAD = 170                   # px between card centres on the work canvas
+DROP = 3.5                     # outer cards sit lower: dy = |dx| / DROP (fan arc)
 cw = 640                       # cover width on the work canvas
 SH_BLUR, SH_DX, SH_DY, SH_A = 22, 8, 22, 0.30
 SH_RGB = (96, 52, 40)          # warm brown shadow, reads soft on the peach section background
@@ -48,7 +49,7 @@ def render(spread):
         shp = Image.new('RGBA', (c.width + 2 * p, c.height + 2 * p), SH_RGB + (0,))
         shp.alpha_composite(sh, (p, p))
         shp = shp.filter(ImageFilter.GaussianBlur(SH_BLUR))
-        cx = W // 2 + xs[i]; cy = H // 2 + abs(xs[i]) // 5
+        cx = W // 2 + xs[i]; cy = H // 2 + int(abs(xs[i]) / DROP)
         canvas.alpha_composite(shp, (cx - c.width // 2 - p + SH_DX, cy - c.height // 2 - p + SH_DY))
         canvas.alpha_composite(c, (cx - c.width // 2, cy - c.height // 2))
     # tight crop: alpha > ~2% keeps the visible shadow, drops the invisible tail
@@ -56,10 +57,10 @@ def render(spread):
     return canvas.crop(bbox)
 
 
-# pick the card spread whose fan box is closest to the desktop column's shape
-fans = {s: render(s) for s in range(200, 420, 10)}
-best = min(fans, key=lambda s: abs(fans[s].width / fans[s].height - TARGET_AR))
-fan = fans[best]
+# 5 portrait covers can't reach 522:382 without hiding the side covers; SPREAD 170 gives ~1.51,
+# so on desktop the fan fills the column's full width (~522x346 at 1280), centred vertically.
+best = SPREAD
+fan = render(SPREAD)
 out = fan.resize((OUT_W, round(OUT_W * fan.height / fan.width)), Image.LANCZOS)
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 out.save(OUT, optimize=True)
