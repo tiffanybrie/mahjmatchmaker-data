@@ -1,7 +1,9 @@
 """OMM-forward launch carousel (Tiffany, Oct 21 12:55pm): one post per OMM launch built on OMM's own photography,
 so OMM has something to reshare, and it still points to the album / Find Your Mat-ch.
 
-Papaya Spritz x Vivienne (Oct 21 launch). Three 1080x1350 slides, content inside y 120-1230 (grid crop):
+Papaya Spritz x Vivienne (Oct 21 launch). Three 1080x1350 slides, content inside y 190-1230 (Oct 21 2:12pm, Tiffany: clear of the
+Planoly/IG profile header at the top; grid crop at the bottom). Headlines in Caprasimo navy (the dating-profile headline
+font, never the script); logo = wordmark + 'Matching mahjong tiles, mats & racks' ribbon:
   slide1  OMM's styled pair shot (Vivienne with Papaya Spritz tiles + racks), "Made for each other",
           "Papaya Spritz tiles · Vivienne mat", OH MY MAHJONG.
   slide2  "My favorite faces": OMM photo crops of her favourite Papaya faces with short warm labels.
@@ -30,24 +32,35 @@ COUNT, SHORT = 50, 'Papaya'
 def shell(body, H=1350):
     return f"""<!doctype html><html><head><meta charset=utf8><style>
 @font-face{{font-family:Hand;src:url('{F}/Caveat-Bold.ttf')}}
+@font-face{{font-family:Capra;src:url('{F}/Caprasimo.ttf')}}
 @font-face{{font-family:Lo;src:url('{G}/Lora-Variable.ttf')}}
 @font-face{{font-family:Lo;font-style:italic;src:url('{G}/Lora-Italic-Variable.ttf')}}
 @font-face{{font-family:Bit;font-weight:600;src:url('{F}/bitter-latin-600-normal.woff2')}}
 @font-face{{font-family:Bit;font-weight:700;src:url('{F}/bitter-latin-700-normal.woff2')}}
 *{{margin:0;padding:0;box-sizing:border-box}} body{{width:1080px;height:{H}px;overflow:hidden}}
 .k{{font-family:Bit;font-weight:700;letter-spacing:.2em;color:{WNAVY}}}
+.hd{{font-family:Capra;font-weight:400;line-height:1;color:{WNAVY};text-align:center;white-space:nowrap}}
+.lk{{display:inline-flex;flex-direction:column;align-items:stretch}} .lk img{{display:block;width:100%}}
+.lk b{{display:block;margin-top:.5em;background:#f56c8c;color:#fff;font-family:Bit;font-weight:700;letter-spacing:.16em;text-align:center;white-space:nowrap;padding:.42em 0 .38em;border-radius:3px}}
 </style></head><body><div id=pg style="position:relative;width:1080px;height:{H}px;background:{PAPER};overflow:hidden">
 <div style="position:absolute;right:-210px;top:-230px;width:700px;height:700px;border-radius:50%;background:{BLUSHBG}"></div>
 <div style="position:absolute;left:-230px;bottom:-250px;width:660px;height:660px;border-radius:50%;background:{BLUSHBG};opacity:.75"></div>
 {body}</div></body></html>"""
 
 
+def lockup(w):
+    """Wordmark WITH the tagline ribbon (Tiffany Oct 21 2:12pm; = assets/brand/mahjmatchmaker-wordmark.png, rebuilt in HTML
+    so it stays sharp at any size: that PNG is only 420px wide). Never pair it with "Hooking up..." (one tagline per piece)."""
+    return (f'<div class=lk style="width:{w}px"><img src="{u('assets/brand/mahjmatchmaker-wordmark-notag.png')}">'
+            f'<b style="font-size:{round(w*0.04)}px">MATCHING MAHJONG TILES, MATS &amp; RACKS</b></div>')
+
+
 def slide1():
     return shell(f"""
-<div style="position:absolute;left:0;right:0;top:112px;text-align:center;font-family:Hand;font-size:118px;line-height:1;color:{PINK}">Made for each other</div>
-<div style="position:absolute;left:115px;top:250px;width:850px;height:850px;border-radius:26px;background:#fff url('{u(PAIR)}') center/104% no-repeat;box-shadow:0 22px 50px rgba(200,80,90,.18)"></div>
-<div style="position:absolute;left:0;right:0;top:1124px;text-align:center;font-family:Lo;font-weight:700;font-size:46px;color:{NAVY};line-height:1">Papaya Spritz tiles <span style="color:{PINK2}">&middot;</span> <i style="font-weight:600">Vivienne mat</i></div>
-<div class=k style="position:absolute;left:0;right:0;top:1186px;text-align:center;font-size:27px">OH MY MAHJONG</div>
+<div class=hd style="position:absolute;left:0;right:0;top:190px;font-size:88px">Made for each other</div>
+<div style="position:absolute;left:150px;top:316px;width:780px;height:780px;border-radius:26px;background:#fff url('{u(PAIR)}') center/104% no-repeat;box-shadow:0 22px 50px rgba(200,80,90,.18)"></div>
+<div style="position:absolute;left:0;right:0;top:1122px;text-align:center;font-family:Lo;font-weight:700;font-size:46px;color:{NAVY};line-height:1">Papaya Spritz tiles <span style="color:{PINK2}">&middot;</span> <i style="font-weight:600">Vivienne mat</i></div>
+<div class=k style="position:absolute;left:0;right:0;top:1182px;text-align:center;font-size:27px">OH MY MAHJONG</div>
 """)
 
 
@@ -56,7 +69,7 @@ def face(img, w):
             f'box-shadow:0 0 0 3px #fff,0 14px 30px rgba(6,42,85,.16)"></div>')
 
 
-def group(imgs, name, sub, w=250, gap=22):
+def group(imgs, name, sub, w=220, gap=20):
     tiles = ''.join(face(i, w) for i in imgs)
     return (f'<div style="display:flex;flex-direction:column;align-items:center">'
             f'<div style="display:flex;gap:{gap}px">{tiles}</div>'
@@ -70,10 +83,10 @@ def slide2():
     row2 = group(['crane.png'], 'The crowned crane', 'the prettiest bird bam') + \
         group(['dot3.png', 'dot7.png'], 'The parasol dots', 'spritz weather, always')
     return shell(f"""
-<div style="position:absolute;left:0;right:0;top:112px;text-align:center;font-family:Hand;font-size:118px;line-height:1;color:{PINK}">My favorite faces</div>
-<div class=k style="position:absolute;left:0;right:0;top:236px;text-align:center;font-size:27px">PAPAYA SPRITZ &middot; OH MY MAHJONG</div>
-<div style="position:absolute;left:0;right:0;top:300px;display:flex;justify-content:center;gap:56px">{row1}</div>
-<div style="position:absolute;left:0;right:0;top:770px;display:flex;justify-content:center;gap:56px">{row2}</div>
+<div class=hd style="position:absolute;left:0;right:0;top:190px;font-size:96px">My favorite faces</div>
+<div class=k style="position:absolute;left:0;right:0;top:304px;text-align:center;font-size:27px">PAPAYA SPRITZ &middot; OH MY MAHJONG</div>
+<div style="position:absolute;left:0;right:0;top:372px;display:flex;justify-content:center;gap:64px">{row1}</div>
+<div style="position:absolute;left:0;right:0;top:800px;display:flex;justify-content:center;gap:64px">{row2}</div>
 """)
 
 
@@ -87,17 +100,16 @@ def card(mat, x, y, w, rot, z):
 
 
 def slide3():
-    cards = (card('goldie', 40, 230, 380, -8, 1) + card('larkspur', 660, 230, 380, 8, 1) +
-             card('vivienne', 315, 160, 450, 0, 3))
+    cards = (card('goldie', 40, 270, 380, -8, 1) + card('larkspur', 660, 270, 380, 8, 1) +
+             card('vivienne', 315, 196, 450, 0, 3))
     return shell(f"""{cards}
-<div style="position:absolute;left:60px;right:60px;top:720px;z-index:5;background:{PAPER};border-radius:34px;padding:34px 30px 32px;text-align:center;box-shadow:0 20px 50px rgba(6,42,85,.22)">
-  <div style="font-family:Hand;font-size:88px;line-height:1;white-space:nowrap;color:{PINK}">50 matches and counting</div>
+<div style="position:absolute;left:60px;right:60px;top:744px;z-index:5;background:{PAPER};border-radius:34px;padding:34px 30px 34px;text-align:center;box-shadow:0 20px 50px rgba(6,42,85,.22)">
+  <div class=hd style="font-size:72px">50 matches and counting</div>
   <div style="display:inline-block;margin-top:26px;background:{NAVY};color:#fff;border-radius:44px;padding:16px 44px 18px;line-height:1.15">
     <div style="font-family:Lo;font-weight:700;font-size:40px">Swipe all {COUNT} of {SHORT}&rsquo;s matches</div>
     <div style="font-family:Bit;font-weight:600;font-size:28px;letter-spacing:.06em;color:#f7b6c8;margin-top:4px">mahjmatchmaker.com</div>
   </div>
-  <div><img src="{u('assets/brand/mahjmatchmaker-wordmark-notag.png')}" style="width:400px;margin-top:26px"></div>
-  <div style="font-family:Lo;font-style:italic;font-size:28px;color:{WNAVY};margin-top:4px">Hooking up tiles, mats &amp; racks</div>
+  <div style="margin-top:28px">{lockup(420)}</div>
 </div>
 """)
 
@@ -109,13 +121,12 @@ def slide3_story():
              card('vivienne', 250, 40, 580, 0, 3))
     return shell(f"""{cards}
 <div style="position:absolute;left:30px;right:30px;top:780px;z-index:5;background:{PAPER};border-radius:40px;padding:40px 30px 40px;text-align:center;box-shadow:0 20px 50px rgba(6,42,85,.22)">
-  <div style="font-family:Hand;font-size:98px;line-height:1;white-space:nowrap;color:{PINK}">50 matches and counting</div>
+  <div class=hd style="font-size:76px">50 matches and counting</div>
   <div style="display:inline-block;margin-top:30px;background:{NAVY};color:#fff;border-radius:54px;padding:20px 52px 22px;line-height:1.15">
     <div style="font-family:Lo;font-weight:700;font-size:50px;white-space:nowrap">Swipe all {COUNT} of {SHORT}&rsquo;s matches</div>
     <div style="font-family:Bit;font-weight:600;font-size:36px;letter-spacing:.06em;color:#f7b6c8;margin-top:6px">mahjmatchmaker.com</div>
   </div>
-  <div><img src="{u('assets/brand/mahjmatchmaker-wordmark-notag.png')}" style="width:520px;margin-top:32px"></div>
-  <div style="font-family:Lo;font-style:italic;font-size:38px;color:{WNAVY};margin-top:6px;white-space:nowrap">Hooking up tiles, mats &amp; racks</div>
+  <div style="margin-top:34px">{lockup(540)}</div>
 </div>
 """, 1500)
 

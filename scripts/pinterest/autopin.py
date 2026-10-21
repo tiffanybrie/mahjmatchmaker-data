@@ -130,7 +130,7 @@ def album_copy(it):
     if len(title) < 60 and b not in title: title = f'{n} Mahjong Tiles by {b}: Mat & Rack Matches'
     desc = (f'Which mahjong mat goes with {b} {n} mahjong tiles? See every mat and rack match I styled for {n}, '
             f'from {color}mahjong mats to racks that pull the tile colors. Ideas for mahjong table decor, '
-            f'gifts and your next mahjong set. Save with code MAHJMATCH at participating partner shops. '
+            f'gifts and your next mahjong set. Save with code MAHJMATCH (affiliate) at participating partner shops. '
             f'#mahjong #mahjongtiles #mahjongmat #mahjongtable #mahjmatchmaker')
     col = next((c for c in it.get('colors', []) if c in COLOR_BOARD), None)
     board = COLOR_BOARD[col] if col else ('Oh My Mahjong Tile and Mat Matches' if b == 'Oh My Mahjong' else 'Mahjong Tile Matches')
@@ -172,6 +172,7 @@ def header(cv, title, sub, accent=NAVY):
 
 
 def footer(cv, l1, l2='mahjmatchmaker.com  ·  Save with code MAHJMATCH', bg=NAVY):
+    l2 = l2 or 'mahjmatchmaker.com'
     d = ImageDraw.Draw(cv); d.rectangle([0, H - 150, W, H], fill=bg)
     d.text((W // 2, H - 122), l1, font=fit(d, l1, BOLD, 46, W - 80, 30), fill=WHITE, anchor='ma')
     d.text((W // 2, H - 62), l2, font=fit(d, l2, SEMI, 32, W - 80), fill=(255, 205, 216), anchor='ma')
@@ -216,6 +217,8 @@ def render(it):
     else:
         top = header(cv, it['head'], it['sub'], accent=accent)
         if it.get('grid'): im = grid(it['grid'], cols=it.get('cols', 2))
+        elif it.get('src_url') and it.get('kind') in ('card', 'guide'):
+            im = fetch_img(it['src_url'] + ('?format=1500w' if 'squarespace-cdn' in it['src_url'] else ''))
         elif it.get('src_url'): im = fetch_img(it['src_url'])
         else: im = Image.open(os.path.join(REPO, it['image']))
         if it.get('crop_top') or it.get('crop_bottom'):
@@ -226,10 +229,133 @@ def render(it):
     it['pin'] = os.path.relpath(fn, REPO); return fn
 
 
+# ---------------------------------------------------------------- expand (Oct 21, Tiffany: "spam it and get it filled up")
+# Every live album yields many unique pins: its cover (on each of its boards), its colour guide, and its
+# match cards (tiles + mat + racks, our own images) in her ranked order. `expand N` adds up to N NEW card
+# pins per album per run, plus any missing cover/guide pins. Re-run weekly to keep circulating.
+HOLD_SETS = {'jade', 'malachite'}  # Miss Mahjong restock: save for the buying window (Tiffany, Oct 21)
+BLOCK_BRANDS = ('paige spearin', 'mahjong studios', 'four winds', 'the mahjong line', 'mahj house rules', 'maison mahj')
+SET_NAMES = {'tortoise': 'Classic Tortoise', 'cypress-forest': 'Cypress Forest', 'heritage-2-0': 'Heritage 2.0',
+             'sunday-tile-set': 'Sunday', 'shangri-la': 'Shangri La', 'la-fete': 'La Fete', 'glow-wild': 'Glow Wild',
+             'lilac-soiree': 'Lilac Soiree', 'preppy-soiree': 'Preppy Soiree', 'spring-love': 'Spring Love',
+             'palm-royale': 'Palm Royale', 'papaya-spritz': 'Papaya Spritz'}
+SET_BRAND = {'jade': 'Miss Mahjong', 'malachite': 'Miss Mahjong', 'tortoise': 'Bam Bird Boutique',
+             'sunday-tile-set': 'Sunday Mahjong', 'cypress-forest': 'Mahjong Row & Co.', 'coquette': 'LoveShackFancy x Oh My Mahjong'}
+HUB_BOARD = {'pink': 'Pink Mahjong Tiles and Mat Matches', 'blue': 'Blue Mahjong Tiles and Mat Matches',
+             'green': 'Green Mahjong Tiles and Mat Matches', 'neutral': 'Neutral Mahjong Tiles and Mat Matches',
+             'ivory': 'Neutral Mahjong Tiles and Mat Matches', 'brown': 'Neutral Mahjong Tiles and Mat Matches'}
+TAGS = ['#mahjong #mahjongtiles #mahjongmat #mahjmatchmaker', '#mahjongmat #mahjongtable #mahjongdecor #mahjmatchmaker',
+        '#americanmahjong #mahjongtiles #mahjongset #mahjmatchmaker', '#mahjongracks #mahjongmat #mahjongtiles #mahjmatchmaker']
+CODE = 'Save with code MAHJMATCH (affiliate) at participating partner shops.'
+
+
+def scrape_album(slug):
+    import html as H
+    p = get(f'{SITE}/{slug}-mahjong-tile-matches'); cards = []; seen = set()
+    for m in re.finditer(r'<img src="(https://(?:images\.squarespace-cdn\.com|cdn\.jsdelivr\.net)/[^"?]+)[^"]*"[^>]*alt="([^"]*mahjong tiles with[^"]*)"', p):
+        url, alt = m.group(1), H.unescape(m.group(2))
+        if url in seen: continue
+        seen.add(url)
+        txt = re.sub(r'\s+', ' ', H.unescape(re.sub('<[^>]+>', ' ', p[m.end():m.end() + 5000])))
+        mm = re.search(r'^\s*(?:\S+\s+){0,6}?(\d{1,2}) (.+?) \+ (.+?) (?:Mat )?by ', txt)
+        after = re.sub(r' (holiday )?mahjong mat$', '', alt.split(' mahjong tiles with ', 1)[1]).strip()
+        base = re.sub(r' Mat$', '', (mm.group(3) if mm else '').strip()).strip()
+        brand = after[:after.lower().rfind(base.lower())].strip() if base and base.lower() in after.lower() else ''
+        nx = re.search(r' Save \d{1,2} ', txt[5:]); seg = txt[:nx.start() + 5] if nx else txt[:1500]
+        rk = re.search(r'Rack (?:matches|shown): (.+?)(?: Save|$)', seg)
+        cards.append(dict(img=url, n=int(mm.group(1)) if mm else 99, mat=base or after, brand=brand,
+                          retired='Retired' in seg[:300] or 'is retired' in seg,
+                          holiday='holiday' in (url + alt).lower(),
+                          racks=[r.strip() for r in rk.group(1).split('·') if r.strip()][:3] if rk else []))
+    cards.sort(key=lambda c: c['n'])
+    g = re.findall(r'https://(?:images\.squarespace-cdn\.com|cdn\.jsdelivr\.net)/[^"?]+(?:color-guide|tile-edit-moodboard)[^"?]*\.jpg', p)
+    return cards, (g[0] if g else None)
+
+
+def boards_for(slug, hubs, brand):
+    b = []
+    for h in hubs:
+        if h in HUB_BOARD and HUB_BOARD[h] not in b: b.append(HUB_BOARD[h])
+    if 'Oh My Mahjong' in (brand or ''): b.append('Oh My Mahjong Tile and Mat Matches')
+    if 'masculine' in hubs: b.append('Mahjong Gift Ideas')
+    if not b: b.append('Mahjong Tile Matches')
+    return b
+
+
+def expand(per_album=3):
+    q = load(); items = q['items']; have = {i['id'] for i in items}
+    used_img = {i.get('src_url') for i in items}
+    hub = {}
+    for h in HUBS:
+        for s in set(re.findall(r'href="/([a-z0-9-]+)-mahjong-tile-matches"', get(f'{SITE}/{h}-mahjong-tile-matches'))):
+            if s not in HUBS: hub.setdefault(s, []).append(h)
+    locs = re.findall(r'<loc>(.*?)</loc>', get(SITE + '/sitemap.xml'))
+    slugs = [m.group(1) for u in locs for m in [re.match(r'https?://www\.mahjmatchmaker\.com/([a-z0-9-]+)-mahjong-tile-matches$', u)] if m and m.group(1) not in HUBS]
+    added = 0
+    for slug in slugs:
+        if slug in HOLD_SETS: continue
+        name = SET_NAMES.get(slug, slug.replace('-', ' ').title())
+        brand = SET_BRAND.get(slug, 'Oh My Mahjong')
+        hubs = hub.get(slug, []); bl = boards_for(slug, hubs, brand)
+        url = f'{SITE}/{slug}-mahjong-tile-matches'; link = url + UTM
+        cards, guide = scrape_album(slug); N = len(cards)
+        cw = ' and '.join(COLOR_WORDS[c] for c in hubs if c not in ('masculine', 'ivory', 'brown'))[:30]
+        # cover on every board it belongs to
+        cov = os.path.join(COVERS, slug + '.jpg')
+        on = {i.get('board') for i in items if i.get('url') == url and i['kind'] in ('album', 'cover2', 'oct19')}
+        for k, b in enumerate(bl):
+            iid = f'cover2-{slug}-{BOARDS[b][-3:]}'
+            if b in on or iid in have or not os.path.exists(cov): continue
+            heads = [f'What mat goes with {name} tiles?', f'{name} mahjong tiles', f'Mats that match {name}']
+            items.append(dict(id=iid, kind='cover2', url=url, link=link, status='pending', prio=25, image=os.path.relpath(cov, REPO),
+                              board=b, head=heads[k % 3], sub=f'{N} mat & rack matches, styled' if N else 'Every mat & rack I matched',
+                              cta=f"See all of {name}'s matches →", cta2='mahjmatchmaker.com',
+                              title=(f'What Mahjong Mat Goes With {name} Tiles? {N} Mat and Rack Matches' if N else f'What Mahjong Mat Goes With {name} Tiles?')[:100],
+                              desc=f'Wondering what mahjong mat goes with {brand} {name} tiles? I styled {name} with {N or "every"} mahjong mats and racks, {("from " + cw + " mats ") if cw else ""}to classic neutrals, so you can see the whole table before you buy. {CODE} {TAGS[k % 4]}'))
+            have.add(iid); added += 1
+        if guide and f'guide-{slug}' not in have and guide not in used_img:
+            items.append(dict(id=f'guide-{slug}', kind='guide', url=url, link=link, status='pending', prio=30, src_url=guide, board=bl[0],
+                              head=f'{name} tiles color guide', sub='The colors, racks & mats that pull them out', cta=f"See all of {name}'s matches →", cta2='mahjmatchmaker.com',
+                              title=f'{name} Mahjong Tiles Color Guide: Matching Mahjong Mats and Racks'[:100],
+                              desc=f'The {brand} {name} mahjong tiles color guide: every color in the set, the mahjong racks that match, and mats that bring those colors out. Pin it before you shop for a mahjong mat. {CODE} {TAGS[2]}'))
+            have.add(f'guide-{slug}'); added += 1
+        k = 0
+        for c in cards:
+            if k >= per_album: break
+            iid = f'card-{slug}-{c["n"]:02d}'
+            if iid in have or c['img'] in used_img or c['retired'] or c['holiday'] or c['n'] == 99: continue
+            if any(x in (c['brand'] + ' ' + c['mat']).lower() for x in BLOCK_BRANDS): continue
+            if slug in ('amara', 'birdie', 'cypress-forest', 'emerald', 'gatsby', 'glow-wild', 'heritage-2-0', 'heritage', 'la-fete', 'lagoon',
+                        'moonlight', 'nantucket', 'osler', 'palm-royale', 'pearlescent', 'pippa', 'seabreeze', 'talulah') and c['n'] == 1: continue  # #1 pinned Oct 19
+            mat, mb = c['mat'], c['brand'] or 'a partner brand'
+            cnt = sum(1 for i in items if i['kind'] == 'card'); j = cnt % 4
+            rot = [bl[0], 'Mahjong Mats & Racks', 'Mahjong Racks and Rack Colors' if c['racks'] else 'Mahjong Tile Matches',
+                   bl[0], 'Mahjong Table Inspiration', bl[-1] if len(bl) > 1 else 'Mahjong Tile Matches', 'Mahjong Tile Matches']
+            rb = rot[(cnt + k) % len(rot)]
+            r1 = c['racks'][0] if c['racks'] else ''
+            titles = [f'{name} Mahjong Tiles With the {mat} Mahjong Mat by {mb}',
+                      f'What Mat Goes With {name} Mahjong Tiles? Try {mb} {mat}',
+                      f'Mahjong Racks for {name} Tiles: {r1} With the {mat} Mat' if r1 else f'{name} Mahjong Table: {mat} Mat and Matching Racks',
+                      f'{mat} Mahjong Mat by {mb}: A Pretty Match for {name} Tiles']
+            racks = ', '.join(c['racks'][:2])
+            descs = [f'{brand} {name} mahjong tiles on the {mat} mahjong mat by {mb}{", with " + racks + " racks" if racks else ""}. It is one of {N} mat and rack matches in the {name} album, so see them all before you pick your mat. {CODE} {TAGS[0]}',
+                     f'What mahjong mat goes with {name} tiles? The {mb} {mat} mat is one of my {N} {name} matches{" (racks: " + racks + ")" if racks else ""}. Browse the whole album for more mahjong mat and rack ideas. {CODE} {TAGS[1]}',
+                     f'Racks that pull the colors out of {name} mahjong tiles: {racks or "see the album"}, styled on the {mat} mahjong mat by {mb}. Mahjong table decor ideas from all {N} {name} matches. {CODE} {TAGS[3]}',
+                     f'The {mat} mahjong mat by {mb} with {brand} {name} tiles{" and " + racks + " racks" if racks else ""}. Love it? There are {N} more mat and rack matches for {name} on mahjmatchmaker.com. {CODE} {TAGS[2]}']
+            items.append(dict(id=iid, kind='card', url=url, link=link, status='pending', prio=35 + c['n'], src_url=c['img'], board=rb,
+                              head=f'{name} tiles + the {mat} mat', sub=f'{mat} mat by {mb}', cta=f"See all {N} of {name}'s matches →",
+                              title=titles[j][:100], desc=descs[j][:500]))
+            have.add(iid); used_img.add(c['img']); k += 1; added += 1
+    save(q); print(f'expand: {added} new items')
+
+
 # ---------------------------------------------------------------- cli
 def main():
     a = sys.argv[1:] or ['help']; q = load(); byid = {i['id']: i for i in q['items']}
     if a[0] == 'refresh': refresh()
+    elif a[0] == 'expand':  # Oct 21: card / guide / 2nd-cover pins from live album pages
+        n = int(a[1]) if len(a) > 1 else 3
+        expand(n)
     elif a[0] == 'render':
         ids = [i['id'] for i in q['items'] if i['status'] == 'pending'] if a[1:] == ['pending'] else a[1:]
         for i in ids:
