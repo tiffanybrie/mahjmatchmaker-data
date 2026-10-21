@@ -27,6 +27,8 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
     FYM: hol + ayr + mf); the ONLY year-round mats shown with Holiday are late-calls works_for_holiday (gallery row field 12, bottom of
     Holiday under the subheading; FYM wfh, setsForMat ok = hol || wfh). Mats she moved OUT of Holiday (late-calls primary = a colour,
     e.g. the pumpkin mats) never come back as holiday in the gallery or FYM.
+ 14 tile-photo identity (Oct 21 12:10, Heritage 1 photo on the Heritage 2.0 colour card): no FYM tile photo (full or pile) is another
+    set's canonical album photo (builder/photo_identity_check.py, SIFT + RANSAC against assets/tiles/album/*)
  15 replaced racks (Oct 21 pm, QA: Papaya Spritz still showed PLM Oak as "Tiffany's match" from D.lt after the Beechwood swap): for every
     rack replacement in builder/fym_flags/rack_replacements.json, the old rack is in neither the set's D.lt nor any of its m rack lists,
     the new rack is in D.lt, and the key is a final_lists set whose list names the new rack (D.uni is not checked)
@@ -337,6 +339,14 @@ else:
             bad = _score_order_bad(mid, sc, prim)
             if bad: F.append(f"[13] section {c_}: {bad[0][1]} (score {sc(bad[0]):.1f}) sits above {bad[1][1]} (score {sc(bad[1]):.1f}); rule = share + 20 if primary, high to low")
 if D.get('lead', {}).get('green') != [GKEY(i) for i in LATE['lead']['green']]: F.append("[13] FYM D.lead.green differs from late-calls lead.green")
+
+# 14. tile-photo identity (Tiffany Oct 21 12:10: Heritage 1 pictured on the Heritage 2.0 colour card). Every tile photo (full + pile)
+# must not be ANOTHER set's canonical album photo (SIFT + RANSAC vs assets/tiles/album/*; builder/photo_identity_check.py).
+try:
+    from photo_identity_check import check_fym as _pic
+    for f_ in _pic(B): F.append('[14] ' + f_)
+except Exception as e_:
+    F.append(f"[14] photo identity check could not run: {e_}")
 
 # 15. replaced racks (Tiffany Oct 21 pm, rule 8: QA found PLM Oak still in D.lt['oh-my-mahjong-papaya-spritz'] after her Beechwood swap,
 # so Oak kept a "Tiffany's match" badge in the her-picks rack deck). A rack she REPLACED in final_lists may not remain in that set's
