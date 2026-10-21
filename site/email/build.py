@@ -148,7 +148,7 @@ p{{margin:0 0 14px}}
 a{{color:{PINK}}}
 .h1{{margin:18px 0 14px}} .h2{{margin:26px 0 6px}} .h3{{margin:0 0 10px}}
 .hero{{margin:4px 0 14px}}
-.step{{text-align:center;margin:22px 0 8px;padding:18px 14px 6px;background:{CREAM};border-radius:16px}} .step p{{margin:10px auto 8px;max-width:420px}}
+.step{{text-align:center;margin:22px 0 8px;padding:18px 14px 6px;background:{PCREAM};border:2px solid #f4e3d6;border-radius:16px}} .step p{{margin:10px auto 8px;max-width:420px}}
 .legal{{opacity:.8}}
 .btnw{{text-align:center;margin:22px 0 22px}}
 .btn{{display:inline-block;background:{HPINK};color:#fff!important;text-decoration:none;font:700 21px/1 Helvetica,Arial,sans-serif;padding:20px 46px;border-radius:14px}}
@@ -203,7 +203,7 @@ def render(e, with_meta=True):
     if e.get("steps"):
         h.append(f'<div class="h2">{img(e["steps_head"])}</div>')
         for i, t in enumerate(e["steps"], 1):
-            h.append(f'<div class="step"><div class="h3">{img(f"hl-step{i}")}</div>{img(f"step{i}", "shot", 220)}<p>{nw(t)}</p></div>')
+            h.append(f'<div class="step"><div class="h3">{img(f"hl-step{i}")}</div>{img(f"step{i}", "shot", 240)}<p>{nw(t)}</p></div>')
     if e.get("list"):
         h.append(f'<div class="h2">{img(e["list_head"])}</div>')
         h.append("<ul>" + "".join(f"<li>{x}</li>" for x in e["list"]) + "</ul>")

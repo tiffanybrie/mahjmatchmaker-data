@@ -433,6 +433,7 @@ Never put drop shadows or other effects on text.
 | Oct 21 | Amazon mood boards use generic names; Title Case titles, never all lowercase. |
 | Oct 21 | Beige felt mat is one recurring asset. Set genders listed in §3. |
 | Oct 21 | This brand guide created. |
+| Oct 21 | FYM promos show the tool (real app screens, tutorial), never the match-card fan; her picks live in the tool; feedback goes to Claude; email headlines are Caprasimo images. |
 
 ---
 
@@ -461,6 +462,12 @@ Never put drop shadows or other effects on text.
 - 2026-10-21 14:12 (Tiffany): **Headline font on graphics = the dating-profile headline font** (the bold navy display serif from the Papaya profile carousel: "Her colors" / "Her faces"). The handwritten script is fine only in tiny doses, like the "It's a mat-ch!" stamp, and never for main headlines. **Logo on graphics = the wordmark WITH the tagline ribbon** ("Matching mahjong tiles, mats & racks"), not the bare wordmark. Feed posts: keep the top of every slide clear of the IG/Planoly profile header overlay.
 - 2026-10-21 14:36 (Tiffany): IG stories DO have an optional "Add a caption" box now. Story reminders open with the steps (Select, then frames in order, then Separate, then stickers per frame), then one short optional caption line at the bottom. Planoly's "copy and open" doesn't always copy, so the line must be easy to long-press and copy.
 - 2026-10-21 14:38 (Tiffany): **Planoly's reminder screen shows only the first ~3 lines of the caption, and "Copy & open" copies ALL of it.** Story reminders: the caption field holds ONLY ≤3 short lines of sticker steps (frame → sticker), with no box and no caption to paste. Feed/reel reminders: the caption field should be EXACTLY what she pastes, with the must-know step in the first line. Long 🛑 boxes don't work on her phone.
+
+- 2026-10-21 15:13 (Tiffany): **Anything that unveils or promotes Find *Your* Mat-ch™ SHOWS THE TOOL.** Use real app screens: the swipe view (a tile photo plus a mat card, ✕ and ♥ only, undo hidden, no %), the two doors, the "Tiffany's picks" button, the colour dots, racks, and the match card the app makes at the end, in a true-proportion iPhone frame (`scripts/fym_promo/`). The album match-card fan is a separate product and is never the visual for the tool. Her words: "You can't preview the Find Your Match tool with match cards. Those are two very distinct things."
+- 2026-10-21 15:14 (Tiffany): **FYM promos are a TUTORIAL.** Walk through it step by step, each step with a real screenshot: (1) pick your door, (2) swipe ✕ / ♥, (3) Tiffany's picks on or off, (4) colour filter, (5) racks, (6) save and share the match card. Voice: "a new tool I'm rolling out just for you… I'm stepping out of the matchmaker seat", plus "Hope you love it!"
+- 2026-10-21 15:14 (Tiffany): **Her picks are INSIDE the tool**, via the "Showing: Tiffany's picks only" toggle. Never send people to the albums for "my own picks" when promoting the tool.
+- 2026-10-21 15:14 (Tiffany): **Feedback goes to Claude, never to Tiffany.** Every FYM promo carries "Something look off or have an idea? Tell me here →", linking the hidden form page /find-your-mat-ch-feedback. Its notifications go to mahjmatchmaker@gmail.com, where a filter labels them "Site/FYM feedback" and skips the inbox. Claude reads that label daily, fixes what it can, and brings Tiffany only the decisions only she can make.
+- 2026-10-21 15:20 (Tiffany): **Email headlines are images in the brand headline font** (Caprasimo, brand colours, 2x, light PNGs, descriptive alt text): the H1, the "Hi, I'm Tiffany!" greeting, step titles and section heads. Body text stays live text in the closest clean font the Squarespace editor offers. Deliverability: real text carries the message (never an all-image email), light total image weight, at most one "!" in a subject and no ALL CAPS, footer with unsubscribe + mailing address.
 
 ## VERIFY list
 
