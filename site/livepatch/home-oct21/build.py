@@ -188,6 +188,15 @@ step3 = (
     f'd.innerHTML=\'<img src="{STEP3_IMG}" alt="New mahjong tile match albums: Coquette, Seabreeze, Talulah, Osler and Smith" loading="lazy" width="1200" height="880">\';'
     'g.insertBefore(d,g.firstChild)}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",f);else f();})();</script>'
 )
+# 7. Holiday banner (section.mhx) sat flush LEFT on desktop (Tiffany Oct 21 1:16pm). Cause: the
+#    block-wide rule `#mmhome section{margin:0 0 64px}` (id specificity) beats `.mhx{margin:0 auto 38px}`,
+#    so the 1020px card never got its auto side margins inside the 1180px column. Its text column was
+#    also a mix (heading centered by `#mmhome h2`, eyebrow/count/blurb/button left). Desktop only
+#    (the phone layout, <=760px, is unchanged): center the card and its text. Bottom margin stays 64px.
+old = '</style><a class="mhx-in" href="/holiday-mahjong-matches">'
+assert code.count(old) == 1
+code = code.replace(old, '@media(min-width:761px){#mmhome section.mhx{margin-left:auto;margin-right:auto}.mhx-txt{text-align:center}}\n' + old)
+
 code = code + step3
 
 open(os.path.join(HERE, f'{BID}.html'), 'w').write(code)

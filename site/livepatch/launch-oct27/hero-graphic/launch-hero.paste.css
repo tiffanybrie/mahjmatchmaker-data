@@ -1,0 +1,38 @@
+/* ===== Launch hero: Find Your Mat-ch (Oct 27). Homepage section 69b1d01489d0f8016ee3d59f only. Rollback = delete this whole block. ===== */
+[data-section-id="69b1d01489d0f8016ee3d59f"] .section-background{background:#faf3ea}
+/* the old white 68% frosted panel behind the H1 goes away; the cream graphic carries the text */
+[data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f,
+[data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f *{--tweak-text-block-background-color:transparent!important;background-color:transparent!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+[data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block-b79726a6f150a9dd219f{--blur-value:none!important}
+/* pill above the headline (CSS only, no editor work) */
+[data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f h1::before{content:"NEW \00B7  FIND YOUR MAT-CH";display:table;margin:0 auto 18px;font-family:Bitter,Georgia,serif;font-size:13px;font-weight:700;letter-spacing:.16em;line-height:1.2;color:#fff;background:#054689;border-radius:99px;padding:8px 16px;white-space:nowrap}
+[data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f h1 em{font-style:normal;color:#054689}
+/* the line under the headline: Bitter navy, like the draft */
+[data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f h4{font-family:Bitter,Georgia,serif!important;font-weight:400!important;font-style:normal!important;color:#062a55!important;font-size:21px!important;line-height:1.5!important;letter-spacing:0!important;margin-top:16px!important}
+/* "or browse the albums" + code line (the extra text block, found by its link) */
+[data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block:has(a[href="/mahjong-tile-matches"]) p{font-family:Bitter,Georgia,serif;font-size:16px;line-height:1.5;color:#062a55;margin:0 0 10px}
+[data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block:has(a[href="/mahjong-tile-matches"]) a{color:#062a55;font-weight:600;text-decoration:none;border-bottom:2px solid #f56b8b;padding-bottom:2px}
+[data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block:has(a[href="/mahjong-tile-matches"]) strong{letter-spacing:.04em}
+
+/* ----- wide screens: text on the left, the card fan in the graphic on the right ----- */
+@media (min-width:1200px){
+ [data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block-b79726a6f150a9dd219f{grid-area:2/2/8/14!important;align-self:end}
+ [data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block-yui_3_17_2_1_1773260945246_2648{grid-area:8/2/10/8!important}
+ [data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block:has(a[href="/mahjong-tile-matches"]){grid-area:10/2/12/13!important}
+ [data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f h1{font-size:clamp(40px,3.9vw,68px)!important;line-height:1.08!important}
+ [data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f h1,
+ [data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f h4,
+ [data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block:has(a[href="/mahjong-tile-matches"]) p{text-align:left!important}
+ [data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f h1::before{margin-left:0}
+}
+/* ----- phones + tablets: text stacks on top, the fan sits under it (portrait graphic) ----- */
+@media (max-width:1199px){
+ [data-section-id="69b1d01489d0f8016ee3d59f"] .section-background img{opacity:0!important}
+ [data-section-id="69b1d01489d0f8016ee3d59f"] .section-background{background:#faf3ea url(https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@237f0fff5e35d8f1cbf36beee833c2c0269b0971/site/livepatch/launch-oct27/hero-graphic/find-your-match-mahjong-hero-mobile.jpg) center bottom/cover no-repeat}
+ [data-section-id="69b1d01489d0f8016ee3d59f"] .content-wrapper{padding-bottom:calc(100vw * 1.1)!important}
+ [data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block:has(a[href="/mahjong-tile-matches"]){grid-area:9/2/10/10!important}
+}
+@media (min-width:768px) and (max-width:1199px){
+ [data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block:has(a[href="/mahjong-tile-matches"]){grid-area:11/2/12/26!important}
+}
+/* ===== end launch hero ===== */
