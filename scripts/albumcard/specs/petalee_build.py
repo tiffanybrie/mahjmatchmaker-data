@@ -32,7 +32,7 @@ yes = [k for k in dict.fromkeys(deck_ids) if votes.get(k) == 'y'] + [k for k, v 
 TRACKS = ['Miss Mahjong Scalloped Iridescent Opal', 'Bird & Bamboo Lavender', 'Peace Love Mahjong Chartreuse']
 REG = {k: v for k, v in json.load(open(R + 'config/mat-racks-picks.json')).items() if isinstance(v, dict)}
 PARTNERS = {b[0] for b in json.load(open(R + 'work/pub/catalog.json'))['B']}
-PCT = {'Britt Mills': '15%', 'Amanda Toppe': '20%', 'Royal Mahjong Society': '15%'}
+PCT = {}  # Oct 21 (Tiffany): card code bands ALWAYS say 10% (the safe floor: 'it might be more, but it's never less'). Real brand % lives on brand pages. Gate: scripts/albumcard/codeband_lint.py
 NOPCT = {'Anders Ruff', 'Mahjong Register', 'The Mahjong Press'}
 ALIAS = {'Amanda Toppe': 'Amanda Toppe', 'Bird and Bamboo': 'Bird & Bamboo'}
 NAME = {'Botanical Garden Mahjong Mat': 'Botanical Garden', 'Garden Party Mahjong Mat': 'Garden Party', 'The Paradise Mahjong Mat': 'Paradise Blue Bliss',

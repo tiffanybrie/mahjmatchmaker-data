@@ -8,7 +8,7 @@ e = lambda s: html.escape(s, quote=True)
 D = json.load(open(R + 'data.json'))
 CAT = json.load(open(R + 'work/pub/catalog.json'))
 PARTNERS = {b[0] for b in CAT['B']}
-PCT = {'Britt Mills': '15%', 'Amanda Toppe': '20%', 'Royal Mahjong Society': '15%'}
+PCT = {}  # Oct 21 (Tiffany): card code bands ALWAYS say 10% (the safe floor: 'it might be more, but it's never less'). Real brand % lives on brand pages. Gate: scripts/albumcard/codeband_lint.py
 NOPCT = {'Anders Ruff', 'Mahjong Register', 'The Mahjong Press'}
 def norm(s):
     s = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode().lower()

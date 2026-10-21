@@ -51,7 +51,7 @@ NAME = {'163d9309bc': 'Domino Oxblood', '1cfc31f15e': 'Neutre Blanc', '2f3817238
         'c37c64e7dc': 'Pineapple Palms', 'e007d7fb4f': 'Flourish', '56b9042394': 'Walk in the Park', 'bc66c3bd51': 'Radiance'}
 NOTE = {'51f9a839dc': 'Also available in neoprene', '56b9042394': 'Also available in leatherette'}
 BRAND = {'Mahjong Row & Co.': 'Mahjong Row & Co', 'Tigre de Tartan': 'Tigre de Tartan'}
-PCT = {'Britt Mills': '15%', 'Amanda Toppe': '20%', 'Royal Mahjong Society': '15%'}
+PCT = {}  # Oct 21 (Tiffany): card code bands ALWAYS say 10% (the safe floor: 'it might be more, but it's never less'). Real brand % lives on brand pages. Gate: scripts/albumcard/codeband_lint.py
 NOPCT = {'Anders Ruff', 'Mahjong Register', 'The Mahjong Press'}
 NOCODE = {'Sunday Mahjong', 'Luxe Mahjong', 'Maison Mahj', 'Lucky Daughters', 'Mahjong Studios', 'I Love Mahj',
           'Mahjong by SI', "Let's Be Besties", 'Mahj Tile Haus', 'Ozark Mahjongg', ''}

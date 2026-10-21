@@ -32,7 +32,7 @@ MATS = [
 ]
 # Counted Oct 21 from the live FYM build (fym-oct21d, v68): 757 visible mats, 50 mat brands
 # (51 brand labels minus the generic "Etsy" label), 264 tile sets. See README.
-SCALE = 'Hundreds of mats. 50 brands. 260+ tile sets.'
+SCALE = '<span>Hundreds of mats.</span> <span>50 brands.</span> <span>260+ tile sets.</span>'
 
 def ticker():
     s = open(CALLOUT).read()
@@ -68,7 +68,7 @@ def build():
 #mmtz .mmtz-w{max-width:980px;margin:0 auto;padding:0 20px}
 #mmtz .mmtz-k{display:inline-block;background:var(--pk);color:#fff;font:700 13px/1 'Bitter',Georgia,serif;letter-spacing:.16em;text-transform:uppercase;padding:9px 16px;border-radius:999px;margin:0 0 16px}
 #mmtz h1.mmtz-t{font-family:'Caprasimo',Georgia,serif;font-weight:400;font-size:clamp(40px,7vw,72px);line-height:1.02;color:var(--nv);margin:0 0 12px;letter-spacing:0}
-#mmtz h1.mmtz-t em{font-style:italic;padding-right:.06em}
+#mmtz h1.mmtz-t em{font-style:italic;margin-left:-.12em}
 #mmtz .mmtz-nw{white-space:nowrap}
 #mmtz h1.mmtz-t sup{font-size:.32em;vertical-align:super;font-family:'Bitter',Georgia,serif}
 #mmtz .mmtz-d{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:clamp(19px,2.3vw,24px);line-height:1.4;color:var(--dn);margin:0 auto 26px;max-width:640px}
@@ -94,6 +94,7 @@ def build():
 #mmtz .mmtz-x{background:#fff;color:var(--nv);border:3px solid var(--nv);font-family:Arial,sans-serif;font-weight:700;font-size:38px}
 #mmtz .mmtz-h{background:var(--ht);color:#fff;box-shadow:0 8px 22px rgba(214,51,108,.35)}
 #mmtz .mmtz-c.say-x .mmtz-x,#mmtz .mmtz-c.say-h .mmtz-h{opacity:1;transform:scale(1)}
+#mmtz .mmtz-sc span{white-space:nowrap}
 #mmtz .mmtz-sc{font-family:'Lora',Georgia,serif;font-weight:700;font-size:clamp(19px,2.4vw,24px);line-height:1.35;color:var(--nv);margin:0 0 30px}
 #mmtz .mmtz-n{background:#fff;border:2px solid var(--pc);border-radius:20px;max-width:640px;margin:0 auto 30px;padding:24px 22px}
 #mmtz .mmtz-n h2{font-family:'Caprasimo',Georgia,serif;font-weight:400;font-size:clamp(26px,3.4vw,32px);line-height:1.15;color:var(--nv);margin:0 0 8px}
@@ -106,7 +107,7 @@ def build():
 #mmtz .mmtz-fb a{color:var(--pk);font-weight:700}
 #mmtz .mmtz-tkh{font:700 13px/1 'Bitter',Georgia,serif;letter-spacing:.16em;text-transform:uppercase;color:var(--pk);margin:6px 0 0}
 #mmtz .mmtz-tk{margin:0 0 6px}
-#mmtz .mmtz-cw{margin:26px 0 0}
+#mmtz .mmtz-cw{margin:26px auto 0}
 #mmtz .mmtz-cw p{font-family:'Caprasimo',Georgia,serif;font-size:24px;color:var(--nv);margin:0 0 12px}
 #mmtz .mmtz-btn{display:inline-block;background:var(--pk);color:#fff!important;text-decoration:none!important;font:700 17px/1 'Bitter',Georgia,serif;padding:16px 28px;border-radius:999px}
 #mmtz .mmtz-btn:hover{background:var(--hp)}

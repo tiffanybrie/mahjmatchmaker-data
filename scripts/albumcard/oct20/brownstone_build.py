@@ -29,7 +29,7 @@ CANCEL = {'Jardin de Los Jefes', 'Sedona', 'Fall Fling', 'Saddles & Silk', 'Hand
 TRACKS = ['Peace Love Mahjong Oak', 'Bird & Bamboo Lilac', 'Bird & Bamboo Moss', 'Bird & Bamboo Wine']
 REG = {k: v for k, v in json.load(open(R + 'config/mat-racks-picks.json')).items() if isinstance(v, dict)}
 CLOSEUP = {'a38d0c3d6c', '9c5f1f84f2', '9df40a7c15', 'f371dd8b2e'}
-PCT = {'Britt Mills': '15%', 'Amanda Toppe': '20%', 'Royal Mahjong Society': '15%'}
+PCT = {}  # Oct 21 (Tiffany): card code bands ALWAYS say 10% (the safe floor: 'it might be more, but it's never less'). Real brand % lives on brand pages. Gate: scripts/albumcard/codeband_lint.py
 NOPCT = {'Anders Ruff', 'Mahjong Register', 'The Mahjong Press'}
 NOCODE = {'Sunday Mahjong', 'Luxe Mahjong', 'Lucky Daughters', 'Mahjong Studios', 'I Love Mahj', 'Mahjong by SI', "Let's Be Besties", 'Mahj Tile Haus', 'Ozark Mahjongg', ''}
 def footer(b):

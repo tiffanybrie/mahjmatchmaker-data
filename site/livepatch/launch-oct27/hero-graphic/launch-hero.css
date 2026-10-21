@@ -9,6 +9,10 @@
 [data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f h1 em{font-style:normal;color:#054689}
 /* the line under the headline: Bitter navy, like the draft */
 [data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f h4{font-family:Bitter,Georgia,serif!important;font-weight:400!important;font-style:normal!important;color:#062a55!important;font-size:21px!important;line-height:1.5!important;letter-spacing:0!important;margin-top:16px!important}
+/* no orphans: balanced lines on the headline, the line under it and the code line (Tiffany, Oct 21 1:42pm) */
+[data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f h1,
+[data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f h4,
+[data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block:has(a[href="/mahjong-tile-matches"]) p{text-wrap:balance}
 /* "or browse the albums" + code line (the extra text block, found by its link) */
 [data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block:has(a[href="/mahjong-tile-matches"]) p{font-family:Bitter,Georgia,serif;font-size:16px;line-height:1.5;color:#062a55;margin:0 0 10px}
 [data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block:has(a[href="/mahjong-tile-matches"]) a{color:#062a55;font-weight:600;text-decoration:none;border-bottom:2px solid #f56b8b;padding-bottom:2px}

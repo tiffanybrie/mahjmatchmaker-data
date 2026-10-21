@@ -31,7 +31,7 @@ LOCALHD = {'tartan-tidings-mahjong-mat': 'tartan-tidings-mahjong-mat.jpg', 'tart
            'cmc-ski-club-red-sweater': 'cmc-ski-club-red-sweater.jpg', 'rackin-rudolph-mahjong-mat': 'rackin-rudolph-mahjong-mat.jpg',
            'c-rattan-premium-mahjong-mat': 'sunday-rattan.jpg'}
 FIXED = {'s-vintage-oxblood-leather-mahjong-by-si': ['Bird & Bamboo Wine', 'Peace Love Mahjong Acrylic Burl']}
-PCT = {'Britt Mills': '15%', 'Amanda Toppe': '20%', 'Royal Mahjong Society': '15%'}
+PCT = {}  # Oct 21 (Tiffany): card code bands ALWAYS say 10% (the safe floor: 'it might be more, but it's never less'). Real brand % lives on brand pages. Gate: scripts/albumcard/codeband_lint.py
 NOPCT = {'Anders Ruff', 'Mahjong Register', 'The Mahjong Press'}
 NOCODE = {'Sunday Mahjong', 'Luxe Mahjong', 'Lucky Daughters', 'Mahjong Studios', 'I Love Mahj', 'Mahjong by SI', "Let's Be Besties", 'Mahj Tile Haus', 'Ozark Mahjongg', ''}
 def footer(b):

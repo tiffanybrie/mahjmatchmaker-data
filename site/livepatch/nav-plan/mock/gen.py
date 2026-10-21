@@ -40,7 +40,7 @@ a{color:inherit;text-decoration:none}
 .hero{position:relative;overflow:hidden;background:url(A/hero/loveshackfancy-coquette-fleur-mat-hero.jpg) center/cover}
 .hero.launch{background:radial-gradient(circle at 74% 56%,#fbe3ea 0 36%,transparent 36.2%),radial-gradient(circle at -4% 104%,#fbe3ea 0 20%,transparent 20.2%),#faf3ea}
 .hero.launch::before{display:none}
-.hero.launch h1 em{font-style:normal;color:#054689}
+.hero.launch h1 em{font-style:normal;color:#054689}.hero.launch h1,.hero.launch .lede,.hero.launch .coupon{text-wrap:balance}
 .hero.launch .eyebrow{background:#054689}
 .hero.launch .fan{height:560px}.hero.launch h1{font-size:70px}.hero.launch .fan .c{width:330px}
 .hero.launch .itsamatch{top:-22px}
@@ -223,14 +223,14 @@ def page(title, body):
     return f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title><style>{CSS}</style></head><body>{body}</body></html>'
 
 
-FAN = '''<div class="fan">{stamp}<div class="c c1"><img src="img/card-coquette.jpg" alt=""></div><div class="c c2"><img src="img/card-heritage2.jpg" alt=""></div><div class="c c3"><img src="img/card-papaya.jpg" alt="Papaya Spritz tiles on the Press for Mahjong mat"></div>{extra}<div class="swipes"><span class="no">&#10005;</span><span class="yes">&#9829;</span></div></div>'''
+FAN = '''<div class="fan">{stamp}<div class="c c1"><img src="img/card-coquette.jpg" alt=""></div><div class="c c2"><img src="img/card-heritage2.jpg" alt=""></div><div class="c c3"><img src="img/card-papaya.jpg" alt="Papaya Spritz tiles on the Heiress mat"></div>{extra}<div class="swipes"><span class="no">&#10005;</span><span class="yes">&#9829;</span></div></div>'''
 
 launch = page('Home - launch day (draft)', header() + f'''<section class="hero launch"><div class="in"><div>
 <span class="eyebrow"><span class="dot"></span>New &middot; Find Your Mat-ch</span>
-<h1>Find <em>Your</em> Mat-ch&trade; is here</h1>
-<p class="lede">Start with your tiles or your mat and swipe your perfect match.</p>
+<h1>Find <em>Your</em> Mat-ch&trade; is&nbsp;here</h1>
+<p class="lede">Start with your tiles or your mat and swipe your perfect&nbsp;match.</p>
 <div class="ctas"><a class="btn" href="{FYM}">Start swiping</a><a class="tl" href="/mahjong-tile-matches">or browse the albums</a></div>
-<div class="coupon">Use code <b>MAHJMATCH</b> to save at 30+ partner brands</div>
+<div class="coupon">Use code <b>MAHJMATCH</b> to save at 30+ partner&nbsp;brands</div>
 </div>{FAN.format(stamp='', extra='<div class="itsamatch">It&rsquo;s a mat-ch!</div>')}</div></section>''' + ALBUMS + REST + FOOT)
 
 pre = page('Home - pre-launch (draft)', header() + f'''<section class="hero"><div class="in"><div>

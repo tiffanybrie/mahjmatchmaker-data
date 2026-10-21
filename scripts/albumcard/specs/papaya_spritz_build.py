@@ -19,7 +19,7 @@ A = json.load(open(R + 'scripts/albumcard/specs/papaya_spritz_album.json'))
 REG = {k: v for k, v in json.load(open(R + 'config/mat-racks-picks.json')).items() if isinstance(v, dict)}
 TRACKS = json.load(open(R + 'config/tile-racks-picks.json'))['final_lists']['papaya-spritz']
 PARTNERS = {b[0] for b in json.load(open(R + 'work/pub/catalog.json'))['B']}
-PCT = {'Britt Mills': '15%', 'Amanda Toppe': '20%', 'Royal Mahjong Society': '15%'}
+PCT = {}  # Oct 21 (Tiffany): card code bands ALWAYS say 10% (the safe floor: 'it might be more, but it's never less'). Real brand % lives on brand pages. Gate: scripts/albumcard/codeband_lint.py
 NOPCT = {'Anders Ruff', 'Mahjong Register', 'The Mahjong Press'}
 SRC = {'Goldie (retired)': 'assets/mats/clean/goldie-omm.png', 'Spring Fling (retired)': 'assets/mats/omm-retired/spring-fling.png',
        # Oct 18 2:31pm (Tiffany): Mahj & Moon bamboo backgrounds cut out so the mat fills its area

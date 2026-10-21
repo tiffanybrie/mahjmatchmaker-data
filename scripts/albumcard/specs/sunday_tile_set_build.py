@@ -29,7 +29,7 @@ NOTE = {'brittmil-legacy-britt-mills-mahjong-mat': 'Also available in leatherett
 pairs = [(m, n) for m, n in zip(order, names) if m not in DROP]
 pp = next(x for x in pairs if x[0] == 'sundayma-plum-panda-premium-mahjong-mat'); pairs.remove(pp)
 pairs.insert(next(i for i, x in enumerate(pairs) if x[0] == 'sundayma-gaylord-premium-mahjong-mat'), pp)  # Plum Panda before Gaylord
-PCT = {'Britt Mills': '15%'}
+PCT = {}  # Oct 21 (Tiffany): card code bands ALWAYS say 10% (the safe floor: 'it might be more, but it's never less'). Real brand % lives on brand pages. Gate: scripts/albumcard/codeband_lint.py
 TENPCT = {'Mahjong Row & Co', 'Charleston Mahjong Club', 'Mahj Squad'}
 NOPCT = {'Anders Ruff'}
 def footer(b):
