@@ -35,3 +35,5 @@ See CLAUDE.md. Rewritten nightly by the end-of-day desk cleanup.
 - (Oct 21) 10/27 launch checklist: Tiffany switches the FB group from Private to Public herself (Group settings → Privacy) right after the 'all-new Mahj Matchmaker' announcement. Put the exact taps in HQ Today that morning.
 
 - (Oct 21) Planoly: Instagram moved to workspace 019fc27c-0bef-7533-bc3f-030acc19a135 on Oct 21; old IG copies unscheduled, awaiting her yes to delete. Pinterest stays in 019fc27b-964d-7279-8685-1f1bb7a7c3f5. Map: docs/planoly-ig-move-oct21.json. OPEN: 8 reel drafts not moved (video bytes not downloadable); Papaya x Vivienne feed post is missing its @ohmymahjong photo tag because the new IG connection is personal, not Business via Facebook (reconnect, then re-add tag).
+
+- (Oct 21, 5:36pm ET) /find-your-match teaser v2 is LIVE (code block #block-2da981e143ed2cc4bb76 swapped + Newsletter block "FYM Teaser Signup" added, list Mahj Matchmaker Newsletter). Verified by curl + Playwright 390/1280. Launch-day step (Oct 27, launch-oct27 README step 0a) must swap the code block AND delete this Newsletter block. Rollback: site/livepatch/fym-teaser-oct21/README.md step 5.

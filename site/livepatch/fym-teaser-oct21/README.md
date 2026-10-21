@@ -1,4 +1,4 @@
-# /find-your-match pre-launch teaser v2 (Tiffany 5:19pm Oct 21). STAGED on hidden /fym-teaser-preview, NOT live yet
+# /find-your-match pre-launch teaser v2: LIVE since Oct 21 5:36pm ET (Tiffany approved 5:19/5:21pm; QA passed). Rollback = step 5 below
 
 Tiffany: the approved placeholder is meant to REPLACE the current wordy /find-your-match teaser (not go on the homepage): phone visible, "Coming 10.27", a place to sign up, no How it works.
 
