@@ -80,7 +80,7 @@ def load_gray(src, max_side=1100):
 
 def norm_set(s):
     s = (s or '').lower()
-    s = re.sub(r'^irl-', '', s)
+    s = re.sub(r'^(irl|holiday|hol)-', '', s)
     return SET_ALIAS.get(s, s)
 
 class Canon:
