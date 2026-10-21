@@ -1,0 +1,94 @@
+<title>Thin Album Picks</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600&display=swap">
+<style>
+/* Layout: one column of album sections; each = tile photo + name, then a grid of mat cards with ✕ / ♥ */
+:root{--bg:#fdf6f8;--panel:#ffffff;--ink:#062a55;--muted:#5d6b85;--line:#ecd3db;--blush:#f7b6c8;--pink:#d94f7f;--yes:#d94f7f;--no:#5d6b85;
+ --display:"Lora",Georgia,serif;--body:"Poppins",system-ui,-apple-system,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1628;--panel:#13223a;--ink:#f3e6ec;--muted:#a9b3c7;--line:#2a3b58;--blush:#f7b6c8;--pink:#f08aab;--yes:#f08aab;--no:#a9b3c7;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1628;--panel:#13223a;--ink:#f3e6ec;--muted:#a9b3c7;--line:#2a3b58;--blush:#f7b6c8;--pink:#f08aab;--yes:#f08aab;--no:#a9b3c7;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px}
+header h1{font-family:var(--display);font-size:clamp(26px,5vw,38px);line-height:1.15;margin:0 0 8px;text-wrap:balance}
+header p{margin:0 0 6px;color:var(--muted);max-width:68ch}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding-block:10px;margin-block:16px 8px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;font-size:13px;color:var(--muted)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.bar b{color:var(--ink);font-variant-numeric:tabular-nums}
+.bar a{color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:2px 10px;white-space:nowrap}
+.bar a.done{border-color:var(--pink);color:var(--pink)}
+#status{margin-left:auto}
+section{padding-block:28px 8px;border-bottom:1px solid var(--line);scroll-margin-top:64px}
+.sh{display:flex;gap:16px;align-items:center;margin-bottom:16px}
+.sh img{width:84px;height:84px;object-fit:cover;border-radius:50%;border:3px solid var(--panel);box-shadow:0 0 0 2px var(--c)}
+.sh h2{font-family:var(--display);font-size:26px;margin:0;color:var(--ink)}
+.sh h2 span{color:var(--c)}
+.sh p{margin:2px 0 0;font-size:13px;color:var(--muted)}
+.sh p a{color:inherit}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+@media (max-width:480px){.grid{grid-template-columns:1fr 1fr;gap:10px}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.card.yes{border-color:var(--yes);box-shadow:0 0 0 2px var(--yes)}
+.card.no{opacity:.45}
+.ph{aspect-ratio:1/1;background:#fff;display:flex;align-items:center;justify-content:center}
+.ph img{width:100%;height:100%;object-fit:contain}
+.meta{padding:10px 12px 4px;flex:1;min-width:0}
+.meta .n{font-weight:600;font-size:14px;line-height:1.3}
+.meta .b{font-size:12px;color:var(--muted)}
+.meta a{font-size:12px;color:var(--muted)}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px 12px 12px}
+.btns button{font:600 20px/1 var(--body);padding:10px 0;border-radius:999px;border:1.5px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.btns button:focus-visible{outline:3px solid var(--blush);outline-offset:2px}
+.btns .x[aria-pressed="true"]{background:var(--no);border-color:var(--no);color:var(--panel)}
+.btns .h{color:var(--pink)}
+.btns .h[aria-pressed="true"]{background:var(--yes);border-color:var(--yes);color:#fff}
+.note{font-size:12px;color:var(--muted);margin-top:24px}
+</style>
+<div class="wrap">
+<header>
+<h1>New mats for your thinnest albums</h1>
+<p>Mats added since Oct 17 (ShopMy, Etsy, Tala, Mahj &amp; Vine and new partner mats) that fit each set's colors. Partner or allowed brands only, clean photos only, best first. Tap ♥ for a match card, ✕ to pass.</p>
+</header>
+<div class="bar" id="bar"><span><b id="cnt">0</b> of <b id="tot">0</b> answered</span><span id="nav"></span><span id="status">Connecting…</span></div>
+<main id="albums"></main>
+<p class="note">Each ♥ becomes a match card in that album (tiles + mat + racks). Your answers save as you tap; you can change them any time.</p>
+</div>
+<script>
+const D=__DATA__;
+const V={};let db=null;
+function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML}
+function render(){
+  const root=document.getElementById('albums');root.innerHTML='';
+  let tot=0,ans=0;const nav=document.getElementById('nav');nav.innerHTML='';
+  for(const a of D){
+    const sec=document.createElement('section');sec.id=a.set;sec.style.setProperty('--c',a.col);
+    const done=a.mats.filter(m=>V[m.id]).length;tot+=a.mats.length;ans+=done;
+    sec.innerHTML=`<div class="sh"><img src="${a.tile}" alt="${esc(a.name)} tiles"><div><h2><span>${esc(a.name)}</span></h2><p>${a.now} matches in the album now · ${a.mats.length} to look at · <a href="${a.album}" target="_blank" rel="noopener">open album</a></p></div></div><div class="grid"></div>`;
+    const g=sec.querySelector('.grid');
+    for(const m of a.mats){
+      const v=V[m.id]||'';const c=document.createElement('div');c.className='card'+(v?' '+v:'');
+      c.innerHTML=`<div class="ph"><img loading="lazy" src="${m.img}" alt="${esc(m.brand)} ${esc(m.name)} mat"></div><div class="meta"><div class="n">${esc(m.name)}</div><div class="b">${esc(m.brand)}</div><a href="${m.url}" target="_blank" rel="noopener">view mat</a></div><div class="btns"><button class="x" id="x-${m.id}" aria-pressed="${v==='no'}" aria-label="Pass on ${esc(m.name)} for ${esc(a.name)}">✕</button><button class="h" id="h-${m.id}" aria-pressed="${v==='yes'}" aria-label="Match ${esc(m.name)} with ${esc(a.name)}">♥</button></div>`;
+      c.querySelector('.x').onclick=()=>vote(a,m,'no');c.querySelector('.h').onclick=()=>vote(a,m,'yes');
+      g.appendChild(c);
+    }
+    root.appendChild(sec);
+    const l=document.createElement('a');l.href='#'+a.set;l.textContent=`${a.name} ${done}/${a.mats.length}`;if(done===a.mats.length)l.className='done';nav.appendChild(l);
+  }
+  document.getElementById('cnt').textContent=ans;document.getElementById('tot').textContent=tot;
+}
+async function vote(a,m,v){
+  const prev=V[m.id];V[m.id]=(prev===v)?'':v;render();
+  if(!db){setStatus('Not saved: open this page signed in to claude.ai');return}
+  try{ if(V[m.id]) await db.doc('votes/'+m.id).set({v:V[m.id],set:a.set,key:m.key,name:m.name,brand:m.brand,at:new Date().toISOString()});
+       else await db.doc('votes/'+m.id).delete();
+       setStatus('Saved');}
+  catch(e){V[m.id]=prev||'';render();setStatus('Could not save that tap. Try again.')}
+}
+function setStatus(t){document.getElementById('status').textContent=t}
+render();
+(async()=>{try{db=await window.claude?.use?.('db');}catch(e){db=null}
+  if(!db){setStatus('Read-only here: open in claude.ai to save');return}
+  setStatus('Saving on');
+  db.collection('votes').onSnapshot(snap=>{for(const k in V)delete V[k];(snap.docs||snap).forEach(d=>{const x=d.data?d.data():d;const id=d.id||x.id;if(x&&x.v)V[id]=x.v});render()},()=>setStatus('Could not load saved answers'));
+})();
+</script>
