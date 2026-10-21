@@ -1,5 +1,5 @@
 {
-  "_note": "Verified from each brand's own website footer link (Oct 13, 2026; 10 more added Oct 15). Add new brands the same way; never guess a handle. No footer handle found (Oct 15): Hip Hip Mahjong, Splash of Color, Luxe Mahjong, Mahjong Register. Oct 21 (2nd pass, curl of brand sites): added 12 more + Mahjong Moxie. No footer handle: Splash of Color, Hip Hip Mahjong, Yellow Mountain Imports, Mahjong Register, Mahj & Moon; Soiree All Day site returns 522.",
+  "_note": "Verified from each brand's own website footer link (Oct 13, 2026; 10 more added Oct 15). Add new brands the same way; never guess a handle. No footer handle found (Oct 15): Hip Hip Mahjong, Splash of Color, Luxe Mahjong, Mahjong Register. Oct 21 (2nd pass, curl of brand sites): added 12 more + Mahjong Moxie. No footer handle: Splash of Color, Hip Hip Mahjong, Yellow Mountain Imports, Mahjong Register, Mahj & Moon; Soiree All Day site returned 522 earlier; Oct 21 5:50pm resolved: domain is soireeallday.co (.co, not .com), footer link https://www.instagram.com/soireeallday.co/ -> handle soireeallday.co.",
   "Oh My Mahjong": "ohmymahjong",
   "LoveShackFancy": "loveshackfancy",
   "Middle & Main Mahjong": "middleandmainmahjong",
@@ -35,5 +35,6 @@
   "The Royal Mahjong Society": "theroyalmahjongsociety",
   "Let's Be Besties": "letsbebestiesmahjong",
   "Ozark Mahjongg": "ozarkmahjongg",
-  "Mahjong Moxie": "mahjongmoxie"
+  "Mahjong Moxie": "mahjongmoxie",
+  "Soirée All Day": "soireeallday.co"
 }

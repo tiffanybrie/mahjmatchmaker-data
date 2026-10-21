@@ -815,6 +815,24 @@
   "peace-love-mahjong--frosted-flowers": [
    "holiday"
   ],
+  "soir-e-all-day--toasty-and-tipsy": [
+   "holiday"
+  ],
+  "soir-e-all-day--poinsettia-party": [
+   "holiday"
+  ],
+  "soir-e-all-day--color-me-merry": [
+   "holiday"
+  ],
+  "soir-e-all-day--pretty-in-pink": [
+   "holiday"
+  ],
+  "soir-e-all-day--home-for-the-holidays": [
+   "holiday"
+  ],
+  "soir-e-all-day--star-of-david-hanukkah": [
+   "holiday"
+  ],
   "mahjong-register--hunter-green-navy-double-sided-leatherette": [
    "green",
    "earthy"
@@ -971,15 +989,15 @@
    ]
   },
   "works_for_holiday": {
-   "sunday-mahjong--rattan": [
-    "earthy"
+   "luxe-mahjong--the-polo-club": [
+    "dark",
+    "yellow"
    ],
    "oh-my-mahjong--dapper-1-retired": [
     "earthy"
    ],
-   "luxe-mahjong--the-polo-club": [
-    "dark",
-    "yellow"
+   "sunday-mahjong--rattan": [
+    "earthy"
    ]
   }
  },
@@ -1875,7 +1893,7 @@
    "accent": 0
   },
   "holiday": {
-   "primary": 65,
+   "primary": 71,
    "also": 8,
    "accent": 0
   },
@@ -1903,7 +1921,7 @@
   "brights": 166,
   "florals": 31,
   "animal": 29,
-  "holiday": 73,
+  "holiday": 79,
   "multi": 0,
   "retired": 29
  },
@@ -1925,10 +1943,10 @@
   "brights": 178,
   "florals": 34,
   "animal": 29,
-  "holiday": 75,
+  "holiday": 81,
   "multi": 0
  },
- "unique_active_mats": 654,
+ "unique_active_mats": 660,
  "retired": 29,
  "hidden": 18,
  "dedupe_groups": 12,
@@ -3115,6 +3133,54 @@
    "img": "tala-mahj--the-carlyle-holiday-plaid-with-red-fringe",
    "primary": "holiday",
    "note": "Tiffany Oct 20 22:38: holiday mat. Holiday section only (gallery), never in single-colour chips (FYM). Never move it out without Tiffany.",
+   "_src": "2026-10-20-late-calls.json"
+  },
+  {
+   "brand": "Soirée All Day",
+   "name": "Toasty & Tipsy",
+   "img": "soir-e-all-day--toasty-and-tipsy",
+   "primary": "holiday",
+   "note": "Oct 21 evening (Claude, photo-verified Christmas/Hanukkah): new Soirée All Day holiday mat. Holiday section only (gallery), never in single-colour chips (FYM).",
+   "_src": "2026-10-20-late-calls.json"
+  },
+  {
+   "brand": "Soirée All Day",
+   "name": "Poinsettia Party",
+   "img": "soir-e-all-day--poinsettia-party",
+   "primary": "holiday",
+   "note": "Oct 21 evening (Claude, photo-verified Christmas/Hanukkah): new Soirée All Day holiday mat. Holiday section only (gallery), never in single-colour chips (FYM).",
+   "_src": "2026-10-20-late-calls.json"
+  },
+  {
+   "brand": "Soirée All Day",
+   "name": "Color Me Merry",
+   "img": "soir-e-all-day--color-me-merry",
+   "primary": "holiday",
+   "note": "Oct 21 evening (Claude, photo-verified Christmas/Hanukkah): new Soirée All Day holiday mat. Holiday section only (gallery), never in single-colour chips (FYM).",
+   "_src": "2026-10-20-late-calls.json"
+  },
+  {
+   "brand": "Soirée All Day",
+   "name": "Pretty in Pink",
+   "img": "soir-e-all-day--pretty-in-pink",
+   "primary": "holiday",
+   "note": "Oct 21 evening (Claude, photo-verified Christmas/Hanukkah): new Soirée All Day holiday mat. Holiday section only (gallery), never in single-colour chips (FYM).",
+   "_src": "2026-10-20-late-calls.json"
+  },
+  {
+   "brand": "Soirée All Day",
+   "name": "Home for the Holidays",
+   "img": "soir-e-all-day--home-for-the-holidays",
+   "primary": "holiday",
+   "note": "Oct 21 evening (Claude, photo-verified Christmas/Hanukkah): new Soirée All Day holiday mat. Holiday section only (gallery), never in single-colour chips (FYM).",
+   "_src": "2026-10-20-late-calls.json"
+  },
+  {
+   "brand": "Soirée All Day",
+   "name": "Star of David Hanukkah",
+   "img": "soir-e-all-day--star-of-david-hanukkah",
+   "primary": "holiday",
+   "note": "Oct 21 evening (Claude, photo-verified Christmas/Hanukkah): new Soirée All Day holiday mat. Holiday section only (gallery), never in single-colour chips (FYM).",
    "_src": "2026-10-20-late-calls.json"
   }
  ],

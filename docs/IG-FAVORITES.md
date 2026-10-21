@@ -8,12 +8,14 @@ First pass (19): ohmymahjong, mahjongrowandco, missmahjongofficial, bambirdbouti
 The 16 not confirmed last time (all but ohmymahjong, mahjongrowandco, sunday_mahjong) were reload-confirmed this pass.
 Second pass (13 new, each favorited then reload-confirmed): myfairmahjong, amahjline, macmillermahjong, letsmahjon, minimahjer, wrenmats, mahjong_co, i_love_mahj, themahjongpress, theroyalmahjongsociety, letsbebestiesmahjong, ozarkmahjongg, mahjongmoxie
 
+## Handle verified, follow + favorite pending (Chrome)
+- Soirée All Day: @soireeallday.co, from the footer of https://www.soireeallday.co (Oct 21 5:50pm; domain is .co, not .com). Added to ig-handles.json. Follow + favorite from @mahjmatchmaker still to do (partner; favorites are 32 of 50).
+
 ## Newly followed
 First pass: viroramahjongofficial. Second pass: macmillermahjong, theroyalmahjongsociety, letsbebestiesmahjong (not following before; followed, then favorited). All other new ones were already followed.
 
 ## Still missing (no verified handle; not favorited)
 - Splash of Color, Hip Hip Mahjong, Yellow Mountain Imports, Mahjong Register: brand site HTML has no instagram.com link (rechecked Oct 21).
-- Soiree All Day: site (soireeallday.com) returned HTTP 522 from curl; retry later.
 - Mahj & Moon: site only shows a text credit "Insta: thebestdressedtable" (not the brand's own link), so not accepted.
 - Mahjong Studios: partner, mats removed, no verified handle.
 - In ig-handles.json but not partners: LoveShackFancy, Maison Mahj, Mahj Tile Haus (not favorited).
