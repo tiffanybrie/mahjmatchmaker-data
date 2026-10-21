@@ -488,5 +488,35 @@
   "flag": "watermark",
   "note": "brand watermark; every product photo on macandmillermahjong.com carries it (checked Oct 20), kept",
   "photo": "t15/146.jpg"
+ },
+ "mahj-mood-90s-pool-party-blue": {
+  "name": "90s Pool Party (Blue)",
+  "maker": "Mahj Mood",
+  "flag": "ok",
+  "photo": "t17/mahj-mood-90s-pool-party-blue.jpg",
+  "source": {
+   "url": "https://cdn.shopify.com/s/files/1/0944/7712/3887/files/E359E7C6-B261-4CFE-A76C-BFB45D332B03.jpg?v=1786302230",
+   "product_json": "https://mahjmood.com/products/90s-tile-set.json",
+   "title": "90s Tile Set | Pre-Order, Ships Late November",
+   "image_index": 0,
+   "fetched": "2026-10-21"
+  },
+  "original": "assets/tiles/clean/90s-pool-party-blue-mahj-mood.jpg",
+  "note": "Oct 21 photo fix: brand image 1/4: pile of tiles, blue backs + faces (old photo was colour blocks)"
+ },
+ "charleston-mahjong-club-the-country-club-edition": {
+  "name": "The Country Club Edition",
+  "maker": "Charleston Mahjong Club",
+  "flag": "ok",
+  "photo": "t17/charleston-mahjong-club-the-country-club-edition.jpg",
+  "source": {
+   "url": "https://cdn.shopify.com/s/files/1/0880/7160/2481/files/IMG_2243_2.jpg?v=1784908342",
+   "product_json": "https://charlestonmahjongclub.com/products/the-country-club-edition.json",
+   "title": "The Country Club Edition",
+   "image_index": 4,
+   "fetched": "2026-10-21"
+  },
+  "original": "assets/tiles/clean/country-club-edition-charleston-mahjong-club.jpg",
+  "note": "Oct 21 photo fix: brand image 5/14: tile faces + the green back (old photo was the logo card)"
  }
 }

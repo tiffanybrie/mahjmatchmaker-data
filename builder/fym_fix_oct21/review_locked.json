@@ -1,0 +1,211 @@
+{
+ "_about": "Locked FYM mats whose live photo breaks rule 6 (Oct 21 QA). Not changed: each needs Tiffany's OK. candidate = prepared flat photo (apply = new m/<n>.webp + thumb, then update locks.json f/th in the same commit); no candidate = recommend hid=true (locks.json hid) until the brand posts a flat photo.",
+ "items": {
+  "splashofcolorco.com/modern-nordic-scandinavian-folk-art-mahjong-mat-sleek-surface": {
+   "name": "Modern Nordic Scandinavian Folk Art Sleek Surface",
+   "brand": "Splash of Color",
+   "live_photo": "m/1368.webp",
+   "candidate": "assets/mats/clean/review_oct21/modern-nordic-scandinavian-folk-art-sleek-surface.webp",
+   "original": "assets/mats/clean/modern-nordic-splash-of-color.jpg",
+   "source": {
+    "url": "https://cdn.shopify.com/s/files/1/0766/9478/2170/files/ccc9f60101eb871be55763fd5dbf3fda.jpg?v=1791498307",
+    "product_json": "https://splashofcolorco.com/products/modern-nordic-scandinavian-folk-art-mahjong-mat-sleek-surface.json",
+    "title": "Modern Nordic Scandinavian Folk Art Mahjong Mat Sleek Surface",
+    "image_index": 1,
+    "fetched": "2026-10-21"
+   },
+   "warp_corners": [
+    [
+     4,
+     510
+    ],
+    [
+     606,
+     251
+    ],
+    [
+     1116,
+     607
+    ],
+    [
+     396,
+     1025
+    ]
+   ],
+   "note": "brand product render 2/7 (mat laid flat at an angle beside its bag, bag does not touch the mat); flattened, whole mat, no props. Strong candidate.",
+   "recommend": "swap to candidate"
+  },
+  "mahjsquadshop.com/palm-springs-mahjong-mat-neoprene-mahjong-mat-in-palm-springs-mid-century-mahjong-mat-pink-mahjong-tropical-mahj-mahjongg-mat-1": {
+   "name": "Palm Springs",
+   "brand": "Mahj Squad",
+   "live_photo": "m/1842.webp",
+   "candidate": "assets/mats/clean/review_oct21/palm-springs.webp",
+   "original": "assets/mats/clean/palm-springs-mahj-squad.webp",
+   "source": {
+    "url": "https://cdn.shopify.com/s/files/1/0659/3200/1489/files/palm-springs-mahjong-mat-mats-577.webp?v=1781242632",
+    "product_json": "https://mahjsquadshop.com/products/palm-springs-mahjong-mat-neoprene-mahjong-mat-in-palm-springs-mid-century-mahjong-mat-pink-mahjong-tropical-mahj-mahjongg-mat-1.json",
+    "title": "Palm Springs Mahjong Mat",
+    "image_index": 0,
+    "fetched": "2026-10-21"
+   },
+   "warp_corners": [
+    [
+     233,
+     99
+    ],
+    [
+     795,
+     89
+    ],
+    [
+     955,
+     567
+    ],
+    [
+     67,
+     557
+    ]
+   ],
+   "note": "brand photo 1/13: whole mat on a table, no tiles/racks; perspective-corrected crop to the mat. Strong candidate.",
+   "recommend": "swap to candidate"
+  },
+  "tigredetartan.com/katherine-hartman-x-tigre-de-tartan": {
+   "name": "Katherine Hartman X Tigre de Tartán Birdsong",
+   "brand": "Tigre de Tartan",
+   "live_photo": "m/1853.webp",
+   "candidate": "assets/mats/clean/review_oct21/katherine-hartman-x-tigre-de-tart-n-birdsong.webp",
+   "original": "assets/mats/clean/birdsong-katherine-hartman-tigre-de-tartan.jpg",
+   "source": {
+    "url": "https://cdn.shopify.com/s/files/1/0567/2566/7876/files/D618CE3D-21CC-42E8-AA2B-0E20EBC00BCF.jpg?v=1792004847",
+    "product_json": "https://tigredetartan.com/products/katherine-hartman-x-tigre-de-tartan.json",
+    "title": "Katherine Hartman X Tigre de Tartán Mahjong Mat, BIRDSONG",
+    "image_index": 2,
+    "fetched": "2026-10-21"
+   },
+   "warp_corners": [
+    [
+     1137,
+     1297
+    ],
+    [
+     3378,
+     1557
+    ],
+    [
+     3425,
+     3802
+    ],
+    [
+     -9,
+     3028
+    ]
+   ],
+   "note": "brand photo 3/12: mat on a card table in a room, nothing on it; perspective-corrected crop. The left edge is a little cut off in the source.",
+   "recommend": "swap to candidate"
+  },
+  "mahjsquadshop.com/bejeweled-dream-mahjong-mat": {
+   "name": "Bejeweled Dream",
+   "brand": "Mahj Squad",
+   "live_photo": "m/1835.webp",
+   "candidate": null,
+   "note": "all 18 brand images have tiles/racks on the mat or are partial close-ups",
+   "recommend": "hide (no flat photo)"
+  },
+  "mahjsquadshop.com/candy-cane-pink-wonderland-mahjong-mat": {
+   "name": "Candy Cane Pink Wonderland",
+   "brand": "Mahj Squad",
+   "live_photo": "m/1837.webp",
+   "candidate": null,
+   "note": "all 5 brand images are room shots or close-ups with racks",
+   "recommend": "hide (no flat photo)"
+  },
+  "tigredetartan.com/mahjong-mat-el-tigre-new-edition": {
+   "name": "El Tigre",
+   "brand": "Tigre de Tartan",
+   "live_photo": "m/1850.webp",
+   "candidate": null,
+   "note": "10 brand images: tiles/racks/people; the cleanest (current) shows the mat inside a wooden tray frame",
+   "recommend": "hide (no flat photo)"
+  },
+  "tigredetartan.com/tigre-de-tartan-x-miss-mahjong-el-ultimo-refresco-mahjong-mat": {
+   "name": "Tigre de Tartán x Miss Mahjong: “El Último Refresco”",
+   "brand": "Tigre de Tartan",
+   "live_photo": "m/1851.webp",
+   "candidate": null,
+   "note": "all 12 brand images have racks/tiles on the mat",
+   "recommend": "hide (no flat photo)"
+  },
+  "tigredetartan.com/mahjong-mat-mantel-mates": {
+   "name": "Mantel Mates",
+   "brand": "Tigre de Tartan",
+   "live_photo": "m/1852.webp",
+   "candidate": null,
+   "note": "all 7 brand images have racks/tiles/a figurine on the mat",
+   "recommend": "hide (no flat photo)"
+  },
+  "tigredetartan.com/paige-spearin-shell-yeah-mahjong-mat": {
+   "name": "Paige Spearin “Shell Yeah”",
+   "brand": "Tigre de Tartan",
+   "live_photo": "m/1854.webp",
+   "candidate": null,
+   "note": "all 5 brand images are close-ups with tiles/racks",
+   "recommend": "hide (no flat photo)"
+  },
+  "tigredetartan.com/mahjong-mat-french-mural": {
+   "name": "French Mural",
+   "brand": "Tigre de Tartan",
+   "live_photo": "m/1855.webp",
+   "candidate": null,
+   "note": "all 6 brand images have racks/tiles/cards or a person",
+   "recommend": "hide (no flat photo)"
+  },
+  "tigredetartan.com/third-shipment-mahjong-mat-jardin-de-los-jefes": {
+   "name": "Jardín de Los Jefes",
+   "brand": "Tigre de Tartan",
+   "live_photo": "m/1856.webp",
+   "candidate": null,
+   "note": "all 8 brand images have tiles/racks/a bag or are close-ups",
+   "recommend": "hide (no flat photo)"
+  },
+  "tigredetartan.com/mahjong-mat-caned-trompe-l-oeil-natural": {
+   "name": "Caned Trompe L'oeil Natural",
+   "brand": "Tigre de Tartan",
+   "live_photo": "m/1857.webp",
+   "candidate": null,
+   "note": "all 5 brand images have racks/cards/tiles",
+   "recommend": "hide (no flat photo)"
+  },
+  "tigredetartan.com/mahjong-mat-hearts-horseshoes-2": {
+   "name": "Hearts & Horseshoes",
+   "brand": "Tigre de Tartan",
+   "live_photo": "m/1858.webp",
+   "candidate": null,
+   "note": "all 6 brand images have racks/cards/a pouch",
+   "recommend": "hide (no flat photo)"
+  },
+  "tigredetartan.com/mahjong-mat-cannage-blonde-rules-edition": {
+   "name": "Cannage Blonde",
+   "brand": "Tigre de Tartan",
+   "live_photo": "m/1859.webp",
+   "candidate": null,
+   "note": "all 7 brand images have racks/tiles/dice or are a room shot",
+   "recommend": "hide (no flat photo)"
+  },
+  "alb:cypress-forest:Dapper 1": {
+   "name": "Dapper 1 (retired)",
+   "brand": "Oh My Mahjong",
+   "live_photo": "m/1096.webp",
+   "candidate": null,
+   "note": "retired Oh My Mahjong mat, no product page left; album photo has racks/tiles/a bag on the mat",
+   "recommend": "hide (no flat photo)"
+  },
+  "www.bespokemahjong.com/graymalingamemat": {
+   "name": "Gray Malin",
+   "brand": "Bespoke Mahjong",
+   "live_photo": "m/1177.webp",
+   "candidate": null,
+   "note": "10 brand images: corner crops, tiles/racks, or a gift box sitting on the mat; no whole-mat photo",
+   "recommend": "hide (no flat photo)"
+  }
+ }
+}
