@@ -36,10 +36,10 @@ CROP = {
     96239262: (0, .115, 1, 1),       # bouquet: Amazon alt image 51hpe7OnwSL (bats visible), drop its caption line
     96229865: (0, 0, 1, .66),        # cognac leather tile bag: the big bag only
 }
-# white paint-outs on the ORIGINAL image (fractions l, t, r, b), applied before CROP: boxes, bags, packaging
+# white paint-outs on the ORIGINAL image (fractions l, t, r, b, or a polygon of (x, y) fractions), applied before CROP: boxes, bags, packaging
 PAINT = {
-    96217176: [(0, 0, .785, .295), (.76, 0, 1, .765)],   # tortoise racks: pink box + paisley bag
-    96217490: [(0, 0, .785, .26), (.765, 0, 1, .75)],    # clear racks: pink box + paisley bag
+    96217176: [[(0, 0), (.785, 0), (.785, .25), (.06, .318), (0, .318)], (.76, 0, 1, .765)],   # tortoise racks: slanted pink box + paisley bag
+    96217490: [[(0, 0), (.765, 0), (.765, .243), (.06, .31), (0, .31)], (.765, 0, 1, .75)],  # clear racks: slanted pink box + paisley bag
     96213996: [(.818, 0, 1, 1)],                         # beige floral: black bag (right border rebuilt by MIRROR below)
 }
 # contrast boost so clear acrylic still reads at phone size
@@ -136,11 +136,13 @@ def load(pid):
     if im.mode in ('RGBA', 'LA', 'P'):   # transparent PNG -> on WHITE (Mahj & Vine came in on black)
         im = im.convert('RGBA'); bg = Image.new('RGB', im.size, (255, 255, 255)); bg.paste(im, mask=im.getchannel('A')); im = bg
     im = im.convert('RGB')
-    for l, t, r, b in PAINT.get(pid, []):
+    for box in PAINT.get(pid, []):
+        if isinstance(box, list): ImageDraw.Draw(im).polygon([(x * im.width, y * im.height) for x, y in box], fill=(255, 255, 255)); continue
+        l, t, r, b = box
         ImageDraw.Draw(im).rectangle((int(l * im.width), int(t * im.height), int(r * im.width), int(b * im.height)), fill=(255, 255, 255))
     if pid in ENH:
         from PIL import ImageEnhance
-        im = ImageEnhance.Contrast(im).enhance(ENH[pid]); im = ImageEnhance.Brightness(im).enhance(.97)
+        im = ImageEnhance.Contrast(im).enhance(ENH[pid]).point(lambda v: 255 if v > 205 else v)   # keep the backdrop white
     if pid in MIRROR:
         x0, y0, n, k = MIRROR[pid]
         im.paste(im.crop((x0, y0, x0 + k, y0 + n)).transpose(Image.FLIP_LEFT_RIGHT), (x0 + n - k, y0))
