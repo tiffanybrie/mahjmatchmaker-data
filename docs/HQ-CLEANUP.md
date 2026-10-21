@@ -75,3 +75,7 @@ Before creating a need, list `needs` and search titles/ids for the same topic (b
 
 ## Rule (Tiffany, Oct 21 3:16pm)
 When a draft changes or she rejects it, the matching HQ / Ready to Ship item is updated in the same turn: HIDE it (parked/archived, out of NOW; no "being rebuilt" notices: "Don't put it in front of me unless I can actually answer the question"), then reopen it in place when the new version is ready. Never leave an old draft up for review. The daily cleanup also checks for items whose draft has a newer commit and fixes them.
+
+## FYM feedback (Tiffany, Oct 21 3:14pm)
+Every day: read Gmail label **Site/FYM feedback** (mahjmatchmaker@gmail.com; filter in docs/GMAIL-FILTERS.md #11). Handle each one yourself: photo/colour/match/bug fixes go through the FYM gate + independent QA; reply to the sender only if they left an email and asked something. Log what you did. Surface to Tiffany only decisions only she can make (one HQ need, plain words). Never forward feedback to her inbox.
+

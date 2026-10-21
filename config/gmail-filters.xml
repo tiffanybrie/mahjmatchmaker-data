@@ -91,7 +91,7 @@
     <id>mahjmatchmaker:contact-form</id>
     <updated>2026-10-21T19:00:00Z</updated>
     <content></content>
-    <apps:property name='hasTheWord' value='from:form-submission@squarespace.info -subject:("Album Requests" OR "Album Request" OR "Share Your Table")'/>
+    <apps:property name='hasTheWord' value='from:form-submission@squarespace.info -subject:("Album Requests" OR "Album Request" OR "Share Your Table" OR "FYM Feedback" OR "Find Your Mat-ch Feedback")'/>
     <apps:property name='label' value="Site/Contact form"/>
     <apps:property name='shouldStar' value="true"/>
     <apps:property name='shouldAlwaysMarkAsImportant' value="true"/>
@@ -106,5 +106,17 @@
     <apps:property name='hasTheWord' value='from:squarespace subject:("Email Subscriber Report" OR "new subscriber" OR "new subscribers")'/>
     <apps:property name='label' value="Site/Signups"/>
     <apps:property name='shouldArchive' value="true"/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Site form: Find Your Mat-ch feedback (Claude handles; never Tiffany's inbox)</title>
+    <id>mahjmatchmaker:fym-feedback</id>
+    <updated>2026-10-21T20:00:00Z</updated>
+    <content></content>
+    <apps:property name='hasTheWord' value='from:form-submission@squarespace.info subject:("FYM Feedback" OR "Find Your Mat-ch Feedback")'/>
+    <apps:property name='label' value="Site/FYM feedback"/>
+    <apps:property name='shouldArchive' value="true"/>
+    <apps:property name='shouldMarkAsRead' value="true"/>
+    <apps:property name='shouldNeverSpam' value="true"/>
   </entry>
 </feed>

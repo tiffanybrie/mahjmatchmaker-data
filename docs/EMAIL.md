@@ -25,7 +25,7 @@ Source of truth: `site/email/build.py`. It holds the copy and builds `site/email
 
 | id | Email | Kind | When | Subject |
 |---|---|---|---|---|
-| `launch` | "It's here!" launch | Campaign, one send | Tue Oct 27, 9:30am CT | It's here!!! Find Your Mat-ch™ is live 💕 |
+| `launch` | "It's here!" launch tutorial | Campaign, one send | Tue Oct 27, 9:30am CT | It's here! Find Your Mat-ch is live 💕 |
 | `welcome` | Welcome + 3 places to start + 3 blog reads (her Oct 18 note: add the blog) + IRL photo ask | Automation "Welcome new subscribers" | On subscribe, from launch | Welcome to Mahj Matchmaker! 💕 |
 | `album-request` | Album request thank-you | Automation "Reply to form submission", trigger = Request an Album form only | On submit, from launch | Got it! Your album request is in 💕 |
 | `album-exists` | "It's already in our library" | Sent by Claude (one-off campaign or a Gmail reply from mahjmatchmaker@) | When a request is for a set that already has an album | Good news, it's already in our library! |
@@ -39,7 +39,9 @@ Every email:
 
 Look: blush email background `#fbe3ea`, warm white content `#fffdfa`, cream header `#faf3ea` with the site logo (wordmark with the tagline ribbon), deep navy body text `#062a55`, pink headings/links `#d6336c`, heart-pink rounded button `#f56c8c`, Book Serif font pack.
 
-Launch hero image: `site/email/assets/fym-launch-fan.jpg` (cropped from the launch hero preview: Papaya Spritz + Press for Mahjong card, "Save with code", no %). Pinned URL: `https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@b3f04a66606469a67b9951ca603a0eddae7359bd/site/email/assets/fym-launch-fan.jpg`.
+Launch email = a Find *Your* Mat-ch™ TUTORIAL (Tiffany, Oct 21 3:13/3:14pm: "You can't preview the Find Your Match tool with match cards"). No match-card fan and no hero image (QA: weight). 6 steps, each a Caprasimo step-title image + a real app screen in an iPhone frame (240x468 JPEG, ~16-20 KB) + one live sentence: pick your door, swipe ✕/♥, my picks on/off, colour dots, racks, save your match card. Then "Hope you love it!" and "Something look off or have an idea? Tell me here →" (/find-your-mat-ch-feedback). Images: `site/email/assets/fym/` (from `scripts/fym_promo/capture.py` + `render.py`; alt text in manifest.json). `python3 site/email/build.py shots cdn` writes pinned jsDelivr srcs for Squarespace.
+
+Headlines are IMAGES (Caprasimo, brand colours, 2x, light PNGs, alt text) in all five emails: H1s, "Hi, I'm Tiffany!", section heads, step titles. Body stays live text. Squarespace font packs are web-safe stacks only: use **Narrow Serif** (Palatino, Baskerville, Garamond stack), the closest to Lora. Build lint: one "!" max and no ALL CAPS in subjects, every image has alt text, ≤600 KB images, live words ≥ 10 per image.
 
 ## 3. Approval
 
@@ -81,5 +83,11 @@ Never send any email to her list without her one-time template yes. Never send t
 - Colour pickers: triple-click the hex field, type the hex, then press Return. Section colours apply to the selected section only. When nothing is selected, the side panel shows the GLOBAL email styles.
 - Never click "Send to recipients" except in the launch-day task after approval.
 
+## 7. Feedback (Tiffany, Oct 21 3:14pm: feedback must NOT hit her)
+- Every FYM promo (launch email, FYM page, app page footer) links "Something look off or have an idea? Tell me here →" to the hidden page /find-your-mat-ch-feedback (Not Linked). Its form ("FYM Feedback": what were you doing / what happened or your idea / optional email) notifies mahjmatchmaker@gmail.com.
+- Gmail filter (docs/GMAIL-FILTERS.md #11) labels it **Site/FYM feedback**, skips the inbox, marks it read.
+- **Claude reads that label every day** (HQ cleanup task), fixes what it can (photo, match, bug: with the FYM gate + QA), and surfaces to Tiffany ONLY decisions only she can make, as one HQ need.
+
 ## Changelog
+- 2026-10-21 15:40: Launch email rebuilt as a FYM tutorial with real app screens (no match-card fan, no hero), Caprasimo headline images in all five, subject with one "!" and no ™, feedback link + routing. RTS d-email-templates hidden until the new version passes QA.
 - 2026-10-21: First version. Lists checked, 5 templates built, launch draft made in Squarespace, RTS approve-once item, HQ need and launch-day scheduled task.

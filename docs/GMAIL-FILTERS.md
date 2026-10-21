@@ -25,6 +25,7 @@ Rules: no filter deletes or forwards anything. "Skip Inbox" (archive) is the str
 - Site/Contact form (any other Squarespace form submission, which means the new /contact form; stays in inbox, starred + important)
 - Site/Share your table ("Form Submission - Share Your Table"; stays in inbox)
 - Site/Signups (Squarespace "Email Subscriber Report"; archived)
+- Site/FYM feedback (Squarespace "Form Submission - FYM Feedback" from /find-your-mat-ch-feedback; archived + marked read. CLAUDE reads this label daily and handles it; Tiffany never sees it unless a decision only she can make comes out of it. Tiffany, Oct 21 3:14pm.)
 
 ## Subject wording found in the survey (60 to 90 days)
 | Platform / sender | Order | Approved | Paid | Account |
@@ -55,7 +56,8 @@ NEG = `-subject:(declined OR rejected OR reversed OR refunded OR refund OR cance
    - Needs both a mahjong word AND "unsubscribe", so a person writing in (no unsubscribe footer) is never caught. Order, shipping and receipt emails from brands stay in the inbox. Mahj Mood sends its updates from a plain Gmail address with no unsubscribe link, so those stay in the inbox.
 7. **Album requests**: `from:form-submission@squarespace.info subject:("Album Requests" OR "Album Request")` → label Site/Album requests, never spam. Stays in inbox.
 8. **Share your table**: `from:form-submission@squarespace.info subject:("Share Your Table")` → label Site/Share your table, never spam. Stays in inbox.
-9. **Contact form**: `from:form-submission@squarespace.info -subject:("Album Requests" OR "Album Request" OR "Share Your Table")` → star, mark important, label Site/Contact form, never spam. Stays in inbox. It catches ANY other Squarespace form, so a new form lands here (prominent) rather than being hidden.
+9. **Contact form**: `from:form-submission@squarespace.info -subject:("Album Requests" OR "Album Request" OR "Share Your Table" OR "FYM Feedback" OR "Find Your Mat-ch Feedback")` → star, mark important, label Site/Contact form, never spam. Stays in inbox. It catches ANY other Squarespace form, so a new form lands here (prominent) rather than being hidden.
+11. **FYM feedback** (added Oct 21, 3:40pm; NOT YET IMPORTED, see below): `from:form-submission@squarespace.info subject:("FYM Feedback" OR "Find Your Mat-ch Feedback")` → skip inbox, mark read, label Site/FYM feedback, never spam. Account: mahjmatchmaker@gmail.com (the form's notification address). Requires the Squarespace form on /find-your-mat-ch-feedback to be named **FYM Feedback** (its notification subject is "Form Submission - FYM Feedback") and to email mahjmatchmaker@gmail.com. To install: Gmail (mahjmatchmaker@) > Settings > Filters > Import filters > config/gmail-filters.xml, tick only the FYM feedback entry (and re-import Contact form, whose query now excludes FYM Feedback).
 10. **Signups**: `from:squarespace subject:("Email Subscriber Report" OR "new subscriber" OR "new subscribers")` → skip inbox, label Site/Signups.
 
 ## Brands/Partners (hand-labelled, mahjmatchmaker@)
