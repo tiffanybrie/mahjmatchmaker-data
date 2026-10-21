@@ -1,6 +1,10 @@
 """Papaya Spritz (Oh My Mahjong) album: 53 cards in her approved order (scripts/albumcard/specs/papaya_spritz_album.json,
 = Ready to Ship group c5-papaya-order; no saved db reorder exists, so the built default order stands).
-Tile racks: final_lists 'papaya-spritz' (PLM Oak, PLM Chartreuse, B&B Lavender; her Oct 18 swap Lime Green -> Chartreuse).
+Tile racks: final_lists 'papaya-spritz' (Oct 21, Tiffany: PLM Oak -> Middle & Main Scalloped Beechwood; now B&B Lavender,
+PLM Chartreuse, M&M Scalloped Beechwood. Oct 18 swap Lime Green -> Chartreuse).
+Oct 21 rebuild note: the mat source photos (scratchpad pap/img/m) no longer exist, so v2 was rendered from the saved v1
+spec (scratchpad papfinal/spec.json, verified pixel-identical to the committed v1 cards) with only 'racks' replaced by
+final_lists, then gen2.py. Codes and mat racks were carried over unchanged.
 Mat racks: config/mat-racks-picks.json registry when the mat is listed (Preppy Pink Garden, Larkspur), else matpick.py.
 Zoom: her closer-crop list (album json 'zoom'). Goldie uses goldie-color-corrected.jpg (her approved photo);
 Spring Fling uses spring-fling.png (her photo). Title colour #ec6f2d (same as the live Papaya + Preppy Pink Garden card).
