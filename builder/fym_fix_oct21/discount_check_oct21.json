@@ -1,0 +1,668 @@
+[
+ {
+  "domain": "amahjline.com",
+  "n": 18,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://amahjline.com/products/pink-teal-squiggle-amahj-game-mat",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 780,
+  "price": 7020,
+  "ok": true,
+  "host": "amahjline.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "birdandbamboo.com",
+  "n": 109,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://birdandbamboo.com/products/the-jubilee-bloom-mahjong-mat?sca_ref=10077785.SRjgzyw39OU7C",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 750,
+  "price": 6750,
+  "ok": true,
+  "host": "birdandbamboo.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "brittmillsdesign.com",
+  "host": "brittmillsdesign.com",
+  "n": 54,
+  "tried": [
+   [
+    "legacy-britt-mills-mahjong-mat",
+    false,
+    0
+   ],
+   [
+    "viola-neoprene-mahjong-mat-arr",
+    false,
+    0
+   ],
+   [
+    "lucy-neoprene-mahjong-mat",
+    false,
+    1
+   ],
+   [
+    "enchanted-neoprene-mahjong-mat",
+    false,
+    null
+   ]
+  ],
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "",
+  "cookie": false,
+  "discount_codes": [],
+  "total_discount": null,
+  "price": null,
+  "ok": false,
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "charlestonmahjongclub.com",
+  "host": "www.charlestonmahjongclub.com",
+  "n": 3,
+  "tried": [
+   [
+    "the-hunt-club-neoprene-mat-toi",
+    true,
+    1
+   ],
+   [
+    "new-brown-vegan-leather-mahjon",
+    true,
+    1
+   ],
+   [
+    "the-country-club-edition",
+    true,
+    1
+   ]
+  ],
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://www.charlestonmahjongclub.com/products/the-country-club-edition?sca_ref=10024640.r4MqWQJxOaKK",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 4000,
+  "price": 36000,
+  "ok": true,
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "letsbebesties.com",
+  "n": 40,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://letsbebesties.com/products/sky-blue-florals-mahjong-mat?sca_ref=12515508.SUyXEjJsqV",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 800,
+  "price": 7200,
+  "ok": true,
+  "host": "letsbebesties.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "mahjandvine.com",
+  "n": 16,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://mahjandvine.com/products/chinoiserie-song-bird?sca_ref=10366165.hDgHZlY4LYtU0W",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 700,
+  "price": 6300,
+  "ok": true,
+  "host": "mahjandvine.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "mahjmood.com",
+  "n": 35,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://mahjmood.com/products/pink-lemonade-mat?ref=Mahjmatchmaker",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 650,
+  "price": 5850,
+  "ok": true,
+  "host": "mahjmood.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "mahjongregister.com",
+  "host": "mahjongregister.com",
+  "n": 40,
+  "tried": [
+   [
+    "pre-order-gold-leatherette-mah",
+    false,
+    1
+   ],
+   [
+    "pre-order-snowflake-lodge-prem",
+    false,
+    1
+   ],
+   [
+    "savannah-stripe-safari-club-co",
+    false,
+    1
+   ],
+   [
+    "pre-order-very-merry-wreath-do",
+    false,
+    1
+   ]
+  ],
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://mahjongregister.com/products/pre-order-very-merry-wreath-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy-1",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": false
+   }
+  ],
+  "total_discount": 0,
+  "price": 11500,
+  "ok": false,
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "mahjongrowandco.com",
+  "n": 24,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://mahjongrowandco.com/products/spring-awakening-warm-honey-mat?sca_ref=12475363.JLitn0fWe79Xnn",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 800,
+  "price": 7200,
+  "ok": true,
+  "host": "mahjongrowandco.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "mahjsquadshop.com",
+  "n": 25,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://mahjsquadshop.com/products/the-study-mat",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 900,
+  "price": 8100,
+  "ok": true,
+  "host": "mahjsquadshop.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "missmahjong.com",
+  "n": 40,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://missmahjong.com/products/cherry-blossom-mahjong-playing-mat-jade?ref=mahjmatch",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 700,
+  "price": 6300,
+  "ok": true,
+  "host": "missmahjong.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "myfairmahjong.com",
+  "n": 54,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://myfairmahjong.com/products/mat-garden-party-meadow",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 650,
+  "price": 5850,
+  "ok": true,
+  "host": "myfairmahjong.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "peacelovemahjong.com",
+  "n": 81,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://peacelovemahjong.com/products/mahjong-mats-hanukkah?variant=67570489458980",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 700,
+  "price": 6300,
+  "ok": true,
+  "host": "peacelovemahjong.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "shop.andersruff.com",
+  "n": 66,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://shop.andersruff.com/products/house-of-hydrangea-mahjong-mat?sca_ref=12490265.xTtN8oMUj9qSk1",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 960,
+  "price": 8640,
+  "ok": true,
+  "host": "shop.andersruff.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "splashofcolorco.com",
+  "n": 11,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://splashofcolorco.com/products/asian-chinoiserie-citrus-orange-blue-mahjong-mat?sca_ref=10059443.c9rDRhYNIB31oxJN",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 1125,
+  "price": 6375,
+  "ok": true,
+  "host": "splashofcolorco.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "theroyalmahjongsociety.com",
+  "host": "theroyalmahjongsociety.com",
+  "n": 17,
+  "tried": [
+   [
+    "mahj-royale-mahjong-mat",
+    false,
+    null
+   ]
+  ],
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "",
+  "cookie": false,
+  "discount_codes": [],
+  "total_discount": null,
+  "price": null,
+  "ok": false,
+  "fail": [
+   "girly-mahjong-mat: no product.js",
+   "crown-jewels-tile-set: no product.js",
+   "girly-mahjong-tile-set: no product.js"
+  ],
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "tigredetartan.com",
+  "n": 31,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://tigredetartan.com/products/mahjong-mat-chinoiserie-denim?sca_ref=11798386.tvil8GTGTp6s2",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 1750,
+  "price": 15750,
+  "ok": true,
+  "host": "tigredetartan.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "www.bambirdboutique.com",
+  "n": 56,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://www.bambirdboutique.com/products/vintage-plum-neoprene-mahjong-mat?sca_ref=10069575.cf1ZUJEgbaOpCDgy",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 700,
+  "price": 6300,
+  "ok": true,
+  "host": "www.bambirdboutique.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "www.bamletsmahjong.com",
+  "n": 39,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://www.bamletsmahjong.com/products/posy-pop-watercolor-floral-mahjong-mat",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 1200,
+  "price": 10800,
+  "ok": true,
+  "host": "www.bamletsmahjong.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "www.bespokemahjong.com",
+  "host": "bespokemahjong.com",
+  "n": 57,
+  "tried": [
+   [
+    "year-of-the-dragon-mat-white-c",
+    true,
+    1
+   ],
+   [
+    "colorcrushmat",
+    true,
+    1
+   ],
+   [
+    "tartan-plaid-preppy-pink-copy",
+    false,
+    1
+   ],
+   [
+    "double-the-love-graffiti-mat",
+    false,
+    0
+   ]
+  ],
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://bespokemahjong.com/products/double-the-love-graffiti-mat",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": false
+   }
+  ],
+  "total_discount": 0,
+  "price": 0,
+  "ok": true,
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "www.charlestonmahjongclub.com",
+  "n": 17,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://www.charlestonmahjongclub.com/products/the-migration-mat-in-pink-with-matching-mat-bag?sca_ref=10024640.r4MqWQJxOaKK",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 750,
+  "price": 6750,
+  "ok": true,
+  "host": "www.charlestonmahjongclub.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "www.hiphipmahjong.com",
+  "host": "www.hiphipmahjong.com",
+  "n": 28,
+  "tried": [
+   [
+    "so-bam-grateful-mahjong-mat",
+    false,
+    null
+   ]
+  ],
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "",
+  "cookie": false,
+  "discount_codes": [],
+  "total_discount": null,
+  "price": null,
+  "ok": false,
+  "fail": [
+   "mahj-o-ween-mahjong-mat: no product.js",
+   "rackin-rudolph-tiles: no product.js",
+   "birthday-mahjong-tiles: no product.js"
+  ],
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "www.letsmahj-on.com",
+  "n": 30,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://www.letsmahj-on.com/products/lmo-floral-border-mats-copy",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 600,
+  "price": 5400,
+  "ok": true,
+  "host": "www.letsmahj-on.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "www.macandmillermahjong.com",
+  "n": 5,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://www.macandmillermahjong.com/products/coming-soon-red-white-blues-collection",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 4250,
+  "price": 38250,
+  "ok": true,
+  "host": "www.macandmillermahjong.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "www.middleandmainmahjong.com",
+  "n": 22,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://www.middleandmainmahjong.com/products/georgia-mat",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 680,
+  "price": 6120,
+  "ok": true,
+  "host": "www.middleandmainmahjong.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "www.ohmymahjong.com",
+  "host": "ohmymahjong.com",
+  "n": 76,
+  "tried": [
+   [
+    "lorelei-mat",
+    true,
+    1
+   ],
+   [
+    "esme-mat-w-tube",
+    true,
+    1
+   ],
+   [
+    "heritage-tiles",
+    true,
+    1
+   ],
+   [
+    "sierra-tile-set",
+    true,
+    1
+   ]
+  ],
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://ohmymahjong.com/products/sierra-tile-set",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 4000,
+  "price": 36000,
+  "ok": true,
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "www.viroramahjong.com",
+  "n": 37,
+  "code": "MAHJMATCH",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "location: https://www.viroramahjong.com/products/parrotia?ref=Mahjmatchmaker",
+  "cookie": true,
+  "discount_codes": [
+   {
+    "code": "MAHJMATCH",
+    "applicable": true
+   }
+  ],
+  "total_discount": 450,
+  "price": 4050,
+  "ok": true,
+  "host": "www.viroramahjong.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "www.wrenmats.com",
+  "n": 1,
+  "fail": [
+   "opgv5o7mztp8eu7krduztz8x70u1ms: no product.js"
+  ],
+  "host": "www.wrenmats.com",
+  "checked": "2026-10-21"
+ },
+ {
+  "domain": "www.ymimports.com",
+  "host": "www.ymimports.com",
+  "n": 42,
+  "tried": [
+   [
+    "tc-at001-a",
+    false,
+    0
+   ],
+   [
+    "tc-at006-a",
+    false,
+    null
+   ]
+  ],
+  "code": "MAHJMATCH10-YMI-2025",
+  "status": "HTTP/1.1 200 Connection Established",
+  "loc": "",
+  "cookie": false,
+  "discount_codes": [],
+  "total_discount": null,
+  "price": null,
+  "ok": false,
+  "fail": [
+   "tc-af009-a: no product.js",
+   "fx-am027-a: no product.js"
+  ],
+  "checked": "2026-10-21"
+ }
+]
