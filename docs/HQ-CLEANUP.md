@@ -76,7 +76,7 @@ Before creating a need, list `needs` and search titles/ids for the same topic (b
 - Commit any repo change (`git pull -q --rebase --autostash && git push -q`).
 
 ## Changelog
-- **Oct 21, 2026 (6:12pm):** Albums tab fixed. "Yours" 40 -> 4 (Petalée, Brownstone Bloom, Vivienne album order, thin-albums swipe); 6 albums found live and marked done (Papaya Spritz, Spring Love, Lilac Soiree, Preppy Soiree, Shangri-la, Sunday Tile Set); the rest re-owned to Claude with VERY FAR ALONG / STARTED, STALLED / NOT STARTED / UPCOMING. Daily album status check added in section 6.
+- **Oct 21, 2026 (6:12pm):** Albums tab fixed. "Yours" 40 -> 3 (Brownstone Bloom, Vivienne album order, thin-albums swipe; Petalée banked and taken out of Ready to Ship NOW); 6 albums found live and marked done (Papaya Spritz, Spring Love, Lilac Soiree, Preppy Soiree, Shangri-la, Sunday Tile Set); the rest re-owned to Claude with VERY FAR ALONG / STARTED, STALLED / NOT STARTED / UPCOMING. Daily album status check added in section 6.
 - **Oct 21, 2026:** First cleanup. HQ open needs 19 → 9 (4 Today, 5 This week) plus the permanent inbox box; a parallel session adds "Review this week's posts in Planoly" as the 5th Today item; RTS "Ready for you now" 19 → 6. HQ got the Today / This week / Planoly front door and an `archived` status; RTS got an `archived` flag, a pointer to HQ, and a trimmed `NOW` list. Gatsby moved to `upcomingAlbums`.
 
 ## Rule (Tiffany, Oct 21 3:16pm)
