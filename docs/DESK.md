@@ -55,6 +55,6 @@ See CLAUDE.md. Rewritten nightly by the end-of-day desk cleanup.
 
 ## Oct 21 7:15pm: Sunset + Vivienne card (Tiffany: "if Vivienne matches Papaya Spritz it should match Sunset too")
 - [x] Card built + pushed (a0b6a2f): assets/cards/sunset-vivienne/sunset-mahjong-tiles-oh-my-mahjong-vivienne-mat.jpg; figure + patched preview in site/livepatch/sunset-vivienne-oct21/ (card #4, grid 10, "all 10 Sunset mat matches from 4 brands"; brands unchanged, Vivienne is OMM).
-- [ ] NEXT: independent QA (separate agent, none could be spawned from the build agent) then publish to /sunset-mahjong-tile-matches via Chrome (vivFix in sunset_fix.js; wait ~4s after the block pencil).
+- [x] **LIVE (Oct 21, independent QA passed).** Published to /sunset-mahjong-tile-matches; card re-rendered with Sunset's Tile Edit title orange #f08231 (2dd3a04; was fallback #e8743b). Verified: 1 Vivienne image, #04, grid 01-10, 'all 10' x2, card URL 200, 390px checked. Rollback file: site/livepatch/sunset-vivienne-oct21/live-before-sunset.html.
 - [ ] **FYM v71:** add Vivienne (OMM) to Sunset's `m` (her real pick, album card) and lock it (m_hidden_ok if Vivienne is hidden anywhere).
 - [x] Thin-albums swipe page (site/review/thin-albums-oct21/picks.py): Sunset's 10 shortlisted mats do NOT include Vivienne, so it is not offered again. No republish needed.
