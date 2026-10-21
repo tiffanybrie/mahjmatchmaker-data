@@ -1,0 +1,111 @@
+<div id="mmtz" data-mmtz="teaser-v2">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Bitter:ital,wght@0,500;0,700;1,700&display=swap');
+/* /find-your-match pre-launch teaser v2 (Tiffany 5:19pm Oct 21). Lives in code block #block-2da981e143ed2cc4bb76;
+   the launch-day task swaps this block's content for the app and deletes the page's Newsletter block. */
+body.mmtz-on .mmtz-old{display:none!important}
+#mmtz{--navy:#062a55;--rose:#c8325f;--pink:#f56c8c;--cream:#fffaf5;--blush:#fdeef2;--ink:#2d3a52;--line:#f1d3dc;color:var(--navy);font-family:'Bitter',Georgia,serif;background:var(--cream)}
+#mmtz *{box-sizing:border-box}
+#mmtz .w{max-width:1080px;margin:0 auto;padding:0 20px}
+#mmtz p{margin:0}
+#mmtz h1,#mmtz h2{font-family:'Caprasimo',Georgia,serif;font-weight:400;color:var(--navy);margin:0;letter-spacing:0;text-wrap:balance}
+#mmtz p{text-wrap:pretty}
+#mmtz .nb{white-space:nowrap}
+#mmtz a{color:var(--rose)}
+/* hero */
+#mmtz .hero{position:relative;overflow:hidden;padding:22px 0 30px;background:radial-gradient(circle at 0 100%,var(--blush) 0,var(--blush) 14%,transparent 14.2%),var(--cream)}
+#mmtz .hg{display:grid;grid-template-columns:minmax(0,1fr) 36%;grid-template-areas:"pill art" "h1 art" "lede art" "sign sign";column-gap:16px;align-items:start;text-align:left}
+#mmtz .pill{grid-area:pill;justify-self:start;display:inline-block;background:var(--navy);color:#fff;font:700 12px/1 'Bitter',Georgia,serif;letter-spacing:.14em;text-transform:uppercase;padding:8px 13px 7px;border-radius:99px;margin-top:6px}
+#mmtz h1{grid-area:h1;font-size:clamp(31px,8.6vw,74px);line-height:1.04;margin-top:12px;word-spacing:-.06em}
+#mmtz h1 em{font-style:italic}
+#mmtz h1 sup{font-family:'Bitter',Georgia,serif;font-weight:700;font-size:.28em;vertical-align:super;margin-left:.06em}
+#mmtz .lede{grid-area:lede;font-size:clamp(16.5px,4.3vw,21px);line-height:1.42;color:var(--ink);margin-top:12px;max-width:26em}
+#mmtz .art{grid-area:art;position:relative;width:100%;max-width:290px;justify-self:center;margin-top:4px}
+#mmtz .art img{position:relative;z-index:1;display:block;width:100%;height:auto;transform:rotate(3deg);filter:drop-shadow(0 16px 26px rgba(6,42,85,.2))}
+#mmtz .art::before{content:'';position:absolute;z-index:0;left:50%;top:50%;width:122%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,#fff 0,#fff 38%,#fbd9e2 38.4%,#fbd9e2 100%)}
+#mmtz .hz{position:absolute;z-index:2;color:var(--pink);font-family:Arial,sans-serif;line-height:1;pointer-events:none}
+#mmtz .hz.a{left:-10%;top:10%;font-size:24px;transform:rotate(-14deg)}
+#mmtz .hz.b{right:-6%;top:2%;font-size:16px;transform:rotate(12deg);color:var(--rose)}
+#mmtz .hz.c{right:-10%;bottom:16%;font-size:28px;transform:rotate(10deg)}
+#mmtz .ribbon{display:none}
+/* signup: the page's Squarespace Newsletter block is moved into .slot */
+#mmtz .sign{grid-area:sign;margin-top:22px;max-width:520px}
+#mmtz .slot .sqs-block{padding:0!important}
+#mmtz .slot .newsletter-form-wrapper{padding:0!important;margin:0!important;background:none!important;text-align:left!important;max-width:none!important}
+#mmtz .slot .newsletter-form-header{display:none!important}
+#mmtz .slot .newsletter-form-field-label{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+#mmtz .slot .newsletter-form-body{display:flex!important;flex-wrap:wrap;gap:10px;margin:0!important;width:100%}
+#mmtz .slot .newsletter-form-fields-wrapper{display:block!important;flex:1 1 220px;margin:0!important;padding:0!important;width:auto!important}
+#mmtz .slot .newsletter-form-field-wrapper{display:block!important;margin:0!important;padding:0!important;width:100%!important}
+#mmtz .slot input.newsletter-form-field-element{width:100%!important;height:54px!important;margin:0!important;border:2px solid #e8c3cf!important;border-radius:999px!important;padding:0 20px!important;background:#fff!important;color:var(--navy)!important;font:500 17px/1 'Bitter',Georgia,serif!important;box-shadow:none!important}
+#mmtz .slot input.newsletter-form-field-element:focus{outline:3px solid rgba(200,50,95,.3)!important;outline-offset:1px;border-color:var(--rose)!important}
+#mmtz .slot .newsletter-form-button-wrapper{display:block!important;flex:0 0 auto;margin:0!important;padding:0!important}
+#mmtz .slot button.newsletter-form-button{height:54px!important;margin:0!important;padding:0 26px!important;border:0!important;border-radius:999px!important;background:var(--rose)!important;color:#fff!important;font:700 17px/1 'Bitter',Georgia,serif!important;letter-spacing:0!important;text-transform:none!important;box-shadow:0 10px 22px rgba(200,50,95,.26)!important;cursor:pointer}
+#mmtz .slot .newsletter-form-footnote{margin:10px 0 0!important;padding-left:4px}
+#mmtz .slot .newsletter-form-footnote p,#mmtz .note{font:500 14px/1.4 'Bitter',Georgia,serif!important;color:#5b6577!important;margin:0!important;text-align:left!important}
+#mmtz .slot .form-submission-text p{font:700 18px/1.4 'Bitter',Georgia,serif!important;color:var(--navy)!important;text-align:left!important;margin:0!important}
+#mmtz .slot .captcha-container{margin:0!important}
+#mmtz .fb-btn{display:inline-flex;align-items:center;min-height:54px;padding:0 26px;border-radius:999px;background:var(--rose);color:#fff!important;text-decoration:none!important;font:700 17px/1 'Bitter',Georgia,serif}
+/* below the hero */
+#mmtz .more{background:#fff;padding:34px 0 46px;border-top:1px solid var(--line)}
+#mmtz .cards{display:grid;grid-template-columns:1fr;gap:14px;max-width:880px;margin:0 auto}
+#mmtz .card{background:var(--cream);border:2px solid var(--line);border-radius:18px;padding:20px 20px 22px}
+#mmtz .card h2{font-size:24px;line-height:1.15}
+#mmtz .card p{font-size:16px;line-height:1.45;color:var(--ink);margin-top:6px}
+#mmtz .card a.go{display:inline-block;margin-top:14px;font:700 16px/1 'Bitter',Georgia,serif;color:var(--navy);text-decoration:underline;text-underline-offset:3px}
+@media(min-width:800px){
+ #mmtz .hero{padding:46px 0 56px}
+ #mmtz .hg{grid-template-columns:1.2fr .8fr;grid-template-areas:"pill art" "h1 art" "lede art" "sign art";column-gap:48px;align-items:center}
+ #mmtz .pill{font-size:13px;padding:9px 16px 8px;align-self:end}
+ #mmtz h1{margin-top:16px}
+ #mmtz .lede{margin-top:16px}
+ #mmtz .sign{margin-top:26px;align-self:start}
+ #mmtz .art{max-width:280px}
+ #mmtz .hz.a{left:-6%;top:12%;font-size:34px}
+ #mmtz .hz.b{right:-4%;top:4%;font-size:22px}
+ #mmtz .hz.c{right:-8%;bottom:20%;font-size:40px}
+ #mmtz .ribbon{display:block;position:absolute;z-index:3;left:-10%;bottom:9%;background:var(--navy);color:#fff;font:400 24px/1 'Caprasimo',Georgia,serif;padding:12px 18px 13px;border-radius:14px;transform:rotate(-6deg);box-shadow:0 10px 22px rgba(6,42,85,.28)}
+ #mmtz .ribbon i{font-style:normal;color:#ffc9d8}
+ #mmtz .cards{grid-template-columns:1fr 1fr;gap:18px}
+}
+</style>
+<section class="hero" aria-labelledby="mmtz-h1"><div class="w hg">
+<span class="pill">Coming 10.27</span>
+<h1 id="mmtz-h1"><span class="nb">Find <em>Your</em></span> <span class="nb">Mat-ch<sup>&trade;</sup></span></h1>
+<p class="lede">Start with your tiles or your mat. Swipe. Find your&nbsp;match.</p>
+<div class="art"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@570b99d18977107da6b3be40487d010a95b65171/assets/site/home-prelaunch/start-phone.webp" width="560" height="1082" fetchpriority="high" decoding="async" alt="The Find Your Mat-ch start screen on a phone: pick I have tiles or I have a mat"><span class="hz a" aria-hidden="true">&#9829;</span><span class="hz b" aria-hidden="true">&#9829;</span><span class="hz c" aria-hidden="true">&#9829;</span><span class="ribbon" aria-hidden="true">Opens <i>10.27</i></span></div>
+<div class="sign" id="mmtz-signup"><div class="slot"><a class="fb-btn" href="https://www.facebook.com/groups/mahjmatchmaker">Get notified in the Facebook group</a></div></div>
+</div></section>
+<section class="more"><div class="w cards">
+<div class="card"><h2>Can&rsquo;t wait?</h2><p>My tile match albums are live right now, with hundreds of&nbsp;matches.</p><a class="go" href="/mahjong-tile-matches">Browse the albums</a></div>
+<div class="card"><h2>Join the group</h2><p>Share your table and be the first to know when it&rsquo;s&nbsp;live.</p><a class="go" href="https://www.facebook.com/groups/mahjmatchmaker">Join the Facebook group</a></div>
+</div></section>
+<script>
+(function(){
+ var b=document.getElementById('mmtz');if(!b||b.dataset.moved)return;b.dataset.moved=1;
+ // In the Squarespace editor (site frame) leave every block where it is, so the launch task can still click and edit them.
+ try{if(window.self!==window.top)return;}catch(e){return;}
+ function place(){
+  var sec=b.closest('section.page-section');
+  if(sec){sec.parentNode.insertBefore(b,sec);sec.classList.add('mmtz-old');document.body.classList.add('mmtz-on');}
+  // signup: move the page's Newsletter block into the hero (it keeps its own form + storage)
+  var nl=document.querySelector('.newsletter-block');
+  var slot=b.querySelector('.slot');
+  if(nl&&slot){
+   slot.innerHTML='';slot.appendChild(nl);
+   var i=nl.querySelector('input[type=email]');if(i)i.setAttribute('placeholder','Your email');
+   var l=nl.querySelector('.newsletter-form-button-label');if(l&&/sign me up|subscribe/i.test(l.textContent))l.textContent='Save my spot ♥';
+   var f=nl.querySelector('.newsletter-form-footnote');
+   if(!f){f=document.createElement('p');f.className='note';f.style.marginTop='10px';f.textContent='One email the day it opens. Unsubscribe anytime.';slot.appendChild(f);}
+  }
+  var hd=document.querySelector('header#header, #header');
+  function pad(){if(!hd)return;var cs=getComputedStyle(hd);b.style.paddingTop=(cs.position==='fixed'||cs.position==='absolute')?Math.max(0,Math.round(hd.getBoundingClientRect().bottom))+'px':'';}
+  // the announcement bar renders late and grows the header; re-pad on every size change so the title is never covered at scroll 0
+  pad();window.addEventListener('resize',pad);window.addEventListener('load',pad);window.addEventListener('scroll',function(){if(scrollY<5)pad()},{passive:true});
+  if(window.ResizeObserver&&hd){try{new ResizeObserver(pad).observe(hd)}catch(e){}}
+  [400,1200,2500,5000].forEach(function(t){setTimeout(pad,t)});
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',place);else place();
+})();
+</script>
+</div>
