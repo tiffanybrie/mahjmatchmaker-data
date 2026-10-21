@@ -2,15 +2,28 @@
 """Build assets/search/search-index.json for the site-wide search (curl-based).
 
 Reads the LIVE site only (curl -s): sitemap.xml, the album hub, the live Mat Gallery
-(/mahjong-mats code block JSON), every album page, brand/code pages, blog posts and
-main pages. Writes a compact index plus small webp thumbnails (assets/search/thumbs/),
-regenerating a thumb only when its source URL changed (assets/search/thumbs.json).
+(/mahjong-mats code block JSON, same rows as site/livepatch/matgallery/matgallery-v5.html),
+every album page, the holiday matches page, brand/code pages, blog posts and main pages.
+Writes a compact index plus small webp thumbnails (assets/search/thumbs/), regenerating a
+thumb only when its source URL changed (assets/search/thumbs.json).
 
-Usage:  python3 scripts/search/build_index.py            (from the repo root)
+Usage:  python3 scripts/search/build_index.py            (from anywhere)
         python3 scripts/search/build_index.py --no-thumbs
-Then commit, push, and re-pin site/livepatch/search/header-injection.html to the new commit.
+        python3 scripts/search/build_index.py --debug     (lists album captions not found in the gallery)
+Then commit + push, and re-pin site/livepatch/search/header-injection.html to the new commit
+(python3 site/livepatch/search/pin.py <commit>), warm, and replace the Code Injection snippet.
+
+Index layout (all arrays, to keep it small):
+  m  gallery mats   [img key, name, brand, shop url, retired 0/1, colour sections, brand guide path,
+                     album idxs, one-to-watch 0/1, silent keywords]
+  x  album-only mats (in an album caption but not in the gallery)
+                    [name, brand, album idxs, shop url, retired 0/1, card thumb ('@rel' under thumbs/ or url), keywords,
+                     full card image url]
+  a  albums         [path, set name, brand, cover url, hub colours, kind 0 album/1 colour hub/2 holiday,
+                     n mats, description, mats in caption order (m idx, or -(x idx + 1) for album-only mats)]
+  p  pages          [path, title, kind brand|blog|page, description, image, code, pct, brand]
 """
-import html, io, json, os, re, subprocess, sys, tempfile, time, unicodedata
+import html, io, json, os, re, subprocess, sys, time, unicodedata
 from concurrent.futures import ThreadPoolExecutor
 
 SITE = 'https://www.mahjmatchmaker.com'
@@ -23,8 +36,52 @@ MAIN_PAGES = ['', 'mahjong-tile-matches', 'mahjong-mats', 'christmas-mahjong-mat
               'private-mahjong-lessons', 'events', 'rentals', 'links']
 SKIP = {'home', 'mahj-matchmaker-community-old'}
 GENERIC_OG = 'share-wide-1200x630'
-COLOR_HUBS = {'pink', 'blue', 'green', 'yellow-orange', 'purple', 'neutral', 'masculine', 'coquette', 'red',
-              'brown', 'ivory'}
+# colour hub album pages (/<x>-mahjong-tile-matches). Coquette is a real album (LoveShackFancy x OMM), not a hub.
+COLOR_HUBS = {'pink', 'blue', 'green', 'yellow-orange', 'orange', 'purple', 'neutral', 'masculine', 'red',
+              'brown', 'ivory', 'teal'}
+
+# ---------------------------------------------------------------- silent theme keywords
+# (regex on the normalised mat name, keywords added). Name words only, word-bounded, so brand
+# names (Peace LOVE Mahjong, Tigre de TARTAN, Bird & BAMBOO) never trigger a theme.
+THEMES = [
+    (r'\b(halloween|spooky|spook\w*|witch\w*|ghost\w*|haunt\w*|raven|bats?|boo|hocus|pocus|skull\w*|creep\w*|cauldron)\b',
+     'halloween spooky october fall'),
+    (r'\bpumpkins?\b', 'pumpkin halloween fall autumn harvest'),
+    (r'\b(fall|autumn|harvest|thanksgiving|maple|acorn\w*)\b', 'fall autumn harvest'),
+    (r'\b(valentines?|cupid|hearts?|sweetheart|xoxo|amour)\b|❤', 'valentine valentines hearts love'),
+    (r'\b(freedom|patriot\w*|americana|usa|july|fourth|stars and stripes|uncle sam)\b',
+     'patriotic 4th of july fourth of july stars and stripes americana usa'),
+    (r'\b(st patrick\w*|clovers?|shamrocks?|irish|leprechaun)\b', 'st patricks day clover shamrock lucky irish'),
+    (r'\b(easter|bunny|bunnies|eggs? hunt|chicks?)\b', 'easter bunny spring'),
+    (r'\b(derby|kentucky|equestrian|jockey)\b|(?<!year of the )\bhorses?\b', 'kentucky derby horse equestrian'),
+    (r'\b(leopards?|cheetahs?|tigers?|zebras?|giraffe|safari|jaguar|animal print|snake ?skin|python)\b',
+     'animal print leopard cheetah'),
+    (r'\b(gingham|plaid|tartan|check|checks|checkered|checkerboard|checkers|buffalo check|houndstooth)\b',
+     'plaid gingham tartan check checkered'),
+    (r'\b(stripes?|striped|cabana|ticking|seersucker)\b', 'stripe stripes striped'),
+    (r'\b(chinoiserie|toile|pagoda|ginger jar)\b', 'chinoiserie toile grandmillennial'),
+    (r'\b(floral|flowers?|blooms?|bloom\w*|rose|roses|peony|peonies|garden|botanical|blossoms?|poppies|poppy|lily|lilies|tulips?|daisy|daisies|hydrangea\w*|lotus|magnolia)\b',
+     'floral flowers'),
+    (r'\b(palm|palms|tropical|beach|coastal|seaside|shell|shells|ocean|nautical|sea|island|cabana|lagoon|coral)\b',
+     'coastal beach tropical summer'),
+    (r'\b(lemons?|citrus|limoncello|oranges?|cherr(y|ies)|strawberr(y|ies)|fruit\w*|peach\w*)\b', 'fruit summer'),
+    (r'\b(year of the (dragon|horse|snake|rabbit|tiger)|yotd|lunar)\b', 'lunar new year year of the'),
+    (r'\b(ski|skis|apres|alpine|snow|snowy|snowflakes?|snowman|winter|wintry|chalet|ski sweater|icicles?|glacier|lodge)\b', 'winter ski snow'),
+    (r'\b(christmas|xmas|noel|santa|merry|jolly|yule\w*|mistletoe|poinsettia|nutcracker|sugarplum|candy cane|ornament\w*|wreath|evergreen|reindeer|rudolph|tinsel\w*|sleigh|elf|elves|holly)\b',
+     'christmas holiday'),
+    (r'\b(hanukkah|chanukah|menorah|dreidel|hanukah)\b', 'hanukkah holiday'),
+    (r'\b(velvet|vegan leather|leatherette|neoprene|solid)\b', 'solid'),
+]
+# themes read off the mat PHOTO by Claude (Oct 21 contact-sheet pass) where the name does not say it.
+# img key -> extra keywords. Only obvious ones.
+PHOTO_THEMES_FILE = os.path.join(ROOT, 'config', 'search-photo-themes.json')
+COLOR_WORDS = {
+    'pink': 'pink blush rose', 'red': 'red', 'orange': 'orange peach coral', 'yellow': 'yellow mustard gold',
+    'green': 'green sage emerald', 'teal': 'teal aqua turquoise', 'blue': 'blue navy cobalt periwinkle',
+    'purple': 'purple lilac lavender violet', 'neutral': 'neutral ivory cream beige', 'earthy': 'earthy brown tan',
+    'dark': 'dark moody', 'bw': 'black white black and white', 'pastel': 'pastel pastels', 'brights': 'bright brights',
+    'florals': 'floral flowers', 'animal': 'animal print leopard cheetah', 'simple': 'simple solid',
+}
 
 
 def curl(url, binary=False):
@@ -34,6 +91,10 @@ def curl(url, binary=False):
             return r.stdout if binary else r.stdout.decode('utf-8', 'replace')
         time.sleep(1 + i)
     return b'' if binary else ''
+
+
+def strip(s):
+    return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', s or ''))).strip()
 
 
 def text_lines(h):
@@ -50,8 +111,7 @@ def meta(h, prop):
 
 
 def clean_title(t):
-    t = re.sub(r'\s*[—–-]\s*Mahj Matchmaker\s*$', '', t)
-    return t.strip()
+    return re.sub(r'\s*[—–-]\s*Mahj Matchmaker\s*$', '', t).strip()
 
 
 def first_img(h):
@@ -83,7 +143,13 @@ def norm(s):
     return re.sub(r'[^a-z0-9]+', ' ', s).strip()
 
 
-STOP = {'the', 'a', 'and', 'of', 'mat', 'mats', 'x'}
+def kw_norm(s):
+    s = unicodedata.normalize('NFKD', s or '')
+    s = ''.join(c for c in s if not unicodedata.combining(c)).lower().replace('❤️', ' ❤ ')
+    return re.sub(r'[^a-z0-9❤]+', ' ', s).strip()
+
+
+STOP = {'the', 'a', 'and', 'of', 'mat', 'mats', 'x', 'in'}
 
 
 def toks(s):
@@ -91,16 +157,75 @@ def toks(s):
     t = [w for w in s.split() if w not in STOP]
     if t and t[-1].isdigit():
         t = t[:-1]
-    return set(t)
+    return t
+
+
+def brand_key(b):
+    b = norm(b).replace('mahjongg', 'mahjong')
+    return ' '.join(w for w in b.split() if w not in ('co', 'company', 'the', 'mahjong'))
 
 
 def fuzzy_mat(R, name, brand):
-    """Album caption -> gallery row: same brand, every caption word in the gallery name; unique hit only."""
-    a, b = toks(name), norm(brand)
+    """Album caption -> gallery row: same brand, every caption word equal to (or a prefix of) a word in
+    the gallery name; unique hit only."""
+    a, b = toks(name), brand_key(brand)
     if not a:
         return None
-    hits = [i for i, x in enumerate(R) if norm(x[2]) == b and a <= toks(x[1])]
-    return hits[0] if len(hits) == 1 else None
+
+    def ok(x):
+        g = toks(x[1])
+        return all(any(w == v or (len(w) >= 1 and v.startswith(w) and (len(w) == 1 or len(w) >= 4)) for v in g) for w in a)
+    hits = [i for i, x in enumerate(R) if brand_key(x[2]) == b and ok(x)]
+    return hits if 1 <= len(hits) <= 3 else None  # 2-3 hits = variants of one design (Premium / Double-Sided)
+
+
+def themes(name, secs=(), holiday=False):
+    n = kw_norm(name)
+    out = []
+    for rx, words in THEMES:
+        if re.search(rx, n):
+            out += words.split()
+    if holiday:
+        out.append('holiday')
+        if not re.search(r'hanukkah|chanukah|menorah|dreidel|pumpkin|halloween|fall|autumn|harvest', n) and \
+                not re.search(r'\b(ski|apres|alpine|snow|snowflakes?|winter|chalet|glacier)\b', n):
+            out += ['christmas']
+        if re.search(r'\b(ski|apres|alpine|snow|snowy|snowflakes?|winter|chalet|glacier)\b', n):
+            out += ['winter', 'ski', 'snow']
+    for s in secs:
+        out += COLOR_WORDS.get(s, '').split()
+    seen, res = set(), []
+    for w in out:
+        if w not in seen and w not in n.split():
+            seen.add(w)
+            res.append(w)
+    return ' '.join(res)
+
+
+FIG = re.compile(r'<figure class="mm3-c[^"]*">(.*?)</figure>', re.S)
+
+
+def album_cards(h):
+    """Every match card on an album page: (mat name, brand, card img, shop url, retired, pick)."""
+    out = []
+    for f in FIG.findall(h):
+        t = re.search(r'<h3>(.*?)</h3>', f, re.S)
+        if not t:
+            continue
+        cap = strip(t.group(1))
+        mm = re.match(r'^(.{1,60}?) \+ (.{2,90})$', cap)
+        if not mm:
+            continue
+        by = re.search(r'class="mm3-by">(.*?)</span>', f, re.S)
+        brand = re.sub(r'^Mat by\s*', '', strip(by.group(1))) if by else ''
+        tag = re.search(r'\s+(Retired|Holiday|New)$', brand)
+        brand = brand[:tag.start()] if tag else brand
+        img = re.search(r'<img[^>]+src="([^"]+)"', f)
+        shop = re.search(r'<a class="mm3-btn" href="([^"]+)"', f)
+        out.append((mm.group(2).strip(), brand, html.unescape(img.group(1)) if img else '',
+                    html.unescape(shop.group(1)) if shop else '', 1 if (re.search(r'>\s*Retired\s*<', f) or (tag and tag.group(1) == 'Retired')) else 0,
+                    1 if 'mm3-hstar' in f else 0))
+    return out
 
 
 def main():
@@ -126,7 +251,7 @@ def main():
     ib = json.loads(ibm.group(1)) if ibm else {}
     sec_lab = dict(re.findall(r'data-f="([a-z]+)"[^>]*>([^<]+)<', g))
     sec_lab.pop('all', None)
-    sec_lab = {k: html.unescape(v) for k, v in sec_lab.items()}
+    sec_lab = {k: html.unescape(v).strip() for k, v in sec_lab.items()}
 
     # ---- Album hub: slug -> cover, brand, set, colour ----
     hub = H['mahjong-tile-matches']
@@ -144,9 +269,8 @@ def main():
                 colors[s].append(cur)
 
     # ---- Albums ----
-    albums = []
-    album_mats = {}  # album index -> [(name, brand)]
-    for s in [u for u in slugs if u.endswith('tile-matches')] + ['holiday-mahjong-matches']:
+    albums, album_mats = [], {}
+    for s in [u for u in slugs if u.endswith('tile-matches')]:
         h = H.get(s, '')
         if not h:
             continue
@@ -156,60 +280,90 @@ def main():
         if not setname:
             setname = re.split(r' Mahjong| Tile Matches| Matches', title)[0].strip()
         if not brand:
-            mm = re.search(r'\|\s*([^|]+?)\s*$', title)
-            brand = mm.group(1) if mm and 'Pairing' not in mm.group(1) else ''
+            parts = [p.strip() for p in title.split('|')]
+            brand = parts[-1] if len(parts) > 2 and 'Pairing' not in parts[-1] else ''
         if not cov:
             cov = first_img(h)
-        L = text_lines(h)
-        mats = []
-        pre = re.escape(setname) if setname else r'[^+]+'
-        for i, l in enumerate(L[:-3]):
-            mm = re.match(r'^(.{2,60}?) \+ (.{2,80})$', l)
-            if mm and L[i + 1] == 'Mat by':
-                mats.append((mm.group(2).strip(), L[i + 2].strip()))
-        seen = set()
-        mats = [x for x in mats if not (x in seen or seen.add(x))]
-        idx = len(albums)
-        album_mats[idx] = mats
-        hb = 1 if hubish else (2 if s == 'holiday-mahjong-matches' else 0)
+        cards = album_cards(h)
         if s == 'mahjong-tile-matches':
             setname, brand = 'All tile match albums', ''
         elif hubish:
             setname, brand = re.sub(r' Mahjong.*$', '', title) + ' tile matches', ''
-        elif s == 'holiday-mahjong-matches':
-            setname = 'Holiday tile matches'
-        albums.append([s, setname, brand, small_img(cov),
-                       colors.get(s, []), hb, len(mats), meta(h, 'description')[:160]])
+            cards = []
+        album_mats[len(albums)] = cards
+        albums.append(['/' + s, setname, brand, small_img(cov), colors.get(s, []), 1 if hubish else 0,
+                       len({(c[0], c[1]) for c in cards}), meta(h, 'description')[:160]])
+    # holiday page: the page itself + one entry per holiday tile set section (anchors)
+    hh = H.get('holiday-mahjong-matches', '')
+    if hh:
+        albums.append(['/holiday-mahjong-matches', 'Holiday tile matches', 'Christmas, Hanukkah & Winter',
+                       small_img(meta(hh, 'og:image')), [], 2, 0, meta(hh, 'description')[:160]])
+        album_mats[len(albums) - 1] = []
+        secs = list(re.finditer(r'<section class="mm3-hol" id="([a-z0-9-]+)"[^>]*><h2>(.*?)</h2>', hh))
+        for k, m in enumerate(secs):
+            chunk = hh[m.start(): secs[k + 1].start() if k + 1 < len(secs) else len(hh)]
+            name = strip(m.group(2))
+            cv = re.search(r'<img class="mmhol-cv" src="([^"]+)"', chunk)
+            cards = album_cards(chunk)
+            setn = re.sub(r'\s*holiday matches$', '', name)
+            album_mats[len(albums)] = cards
+            albums.append(['/holiday-mahjong-matches#' + m.group(1), setn + ' (holiday)', 'Holiday matches',
+                           cv.group(1) if cv else small_img(cards[0][2] if cards else ''), [], 2, len({(c[0], c[1]) for c in cards}),
+                           strip(re.search(r'<p class="mm3-sub">(.*?)</p>', chunk).group(1)) if 'mm3-sub' in chunk else ''])
 
     # ---- Mats ----
     key = {}
     for i, x in enumerate(R):
-        key.setdefault((norm(x[1]), norm(x[2])), i)
-        key.setdefault((norm(x[1]), ''), i)
-    mat_albums = {}
-    extra = {}  # album mats not in the gallery: (name, brand) -> [album idxs]
-    unmatched = 0
-    for ai, ms in album_mats.items():
-        for name, brand in ms:
-            i = key.get((norm(name), norm(brand)), key.get((norm(name), '')))
-            if i is None:
-                i = fuzzy_mat(R, name, brand)
-            if i is None:
+        key.setdefault((norm(x[1]), brand_key(x[2])), i)
+    mat_albums, extra, unmatched = {}, {}, 0
+    order = {}  # album idx -> mats in her caption order (her top picks first)
+    for ai, cards in album_mats.items():
+        od = order.setdefault(ai, [])
+        for name, brand, img, shop, ret, pick in cards:
+            i = key.get((norm(name), brand_key(brand)))
+            hits = [i] if i is not None else fuzzy_mat(R, name, brand)
+            if not hits:
                 unmatched += 1
-                e = extra.setdefault((name, brand), [])
-                if ai not in e:
-                    e.append(ai)
+                e = extra.setdefault((name, brand), {'a': [], 'shop': '', 'ret': ret, 'img': ''})
+                if ai not in e['a']:
+                    e['a'].append(ai)
+                e['shop'] = e['shop'] or shop
+                e['img'] = e['img'] or img
+                e['ret'] = min(e['ret'], ret) if e['shop'] else ret
                 if '--debug' in sys.argv:
                     print('  unmatched:', albums[ai][0], '|', name, '|', brand, file=sys.stderr)
+                if ('x', name, brand) not in od:
+                    od.append(('x', name, brand))
                 continue
-            mat_albums.setdefault(i, [])
-            if ai not in mat_albums[i]:
-                mat_albums[i].append(ai)
+            for i in hits:
+                if i not in od:
+                    od.append(i)
+                mat_albums.setdefault(i, [])
+                if ai not in mat_albums[i]:
+                    mat_albums[i].append(ai)
+    photo_kw = {}
+    if os.path.exists(PHOTO_THEMES_FILE):
+        photo_kw = {k: v for k, v in json.load(open(PHOTO_THEMES_FILE)).get('mats', {}).items()}
     mats = []
     for i, x in enumerate(R):
         secs = [c for c in x[5] if c in sec_lab]
+        also = [c for c in (x[8] or []) if c in sec_lab and c not in secs]
+        kw = themes(x[1], secs + also, 'holiday' in x[5])
+        if len(x) > 12 and x[12]:  # year-round mat that also works for the holidays (row field 12)
+            kw = (kw + ' holiday christmas').strip()
+        if x[0] in photo_kw:
+            kw = (kw + ' ' + photo_kw[x[0]]).strip()
+        # also-colours are searchable (silent) but chips show the sections
         mats.append([x[0], x[1], x[2], x[3] or '', 1 if x[4] else 0, secs, x[6] or '', mat_albums.get(i, []),
-                     1 if x[7] else 0])
+                     1 if x[7] else 0, kw])
+    xs = []
+    for (n, b), e in sorted(extra.items()):
+        hol = any(albums[a][5] == 2 for a in e['a'])
+        xs.append([n, b, e['a'], e['shop'], e['ret'] if not e['shop'] else 0, e['img'], themes(n, (), hol),
+                   re.sub(r'\?format=\d+w$', '?format=750w', e['img'])])
+    xpos = {(x[0], x[1]): k for k, x in enumerate(xs)}
+    for ai, a in enumerate(albums):
+        a.append([v if isinstance(v, int) else -(xpos[(v[1], v[2])] + 1) for v in order.get(ai, [])])
 
     # ---- Pages: brands/codes, blog, main ----
     hubcodes = {}
@@ -235,7 +389,7 @@ def main():
             kind = 'brand'
             brand = re.split(r' Discount Code| Code\b', title)[0].strip()
             t = ' '.join(text_lines(h)[:80])
-            mm = re.search(r'\b[Cc]ode\s*:?\s*([A-Z][A-Z0-9]{4,19})\b', t)
+            mm = re.search(r'\b[Cc]ode\s*:?\s*([A-Z][A-Z0-9-]{4,24})\b', t)
             if mm:
                 code = mm.group(1)
                 pm = re.search(r'(\d{1,2})% off|[Ss]ave (\d{1,2})%', t)
@@ -258,7 +412,11 @@ def main():
         jobs.append(('m/' + x[0] + '.webp', src, 200))
     for a in albums:
         if a[3] and 'jsdelivr' in a[3]:
-            jobs.append(('a/' + a[0] + '.webp', a[3], 240))
+            jobs.append(('a/' + a[0].strip('/').replace('#', '--') + '.webp', a[3], 240))
+    for k, x in enumerate(xs):
+        if x[5] and 'jsdelivr' in x[5]:
+            rel = 'x/' + re.sub(r'[^a-z0-9]+', '-', norm(x[1] + ' ' + x[0])).strip('-') + '.webp'
+            jobs.append((rel, x[5], 200))
     if do_thumbs:
         from PIL import Image
 
@@ -270,7 +428,8 @@ def main():
             b = curl(src, binary=True)
             try:
                 im = Image.open(io.BytesIO(b)).convert('RGB')
-            except Exception:
+            except Exception as e:
+                print('  thumb error', rel, len(b), str(e)[:80], file=sys.stderr)
                 return rel, src, 'FAIL'
             im.thumbnail((w, w * 2))
             os.makedirs(os.path.dirname(dst), exist_ok=True)
@@ -282,38 +441,54 @@ def main():
         for rel, src, st in res:
             if st != 'FAIL':
                 man[rel] = src
+        # drop thumbs that are no longer used
+        used = {j[0] for j in jobs}
+        for rel in list(man):
+            if rel not in used:
+                try:
+                    os.remove(os.path.join(THUMBS, rel))
+                except OSError:
+                    pass
+                man.pop(rel)
         json.dump(man, open(man_path, 'w'), separators=(',', ':'), sort_keys=True)
         print('thumbs: %d new, %d cached, %d failed' % (sum(r[2] == 'new' for r in res),
                                                          sum(r[2] == 'cached' for r in res), len(fails)))
         for f in fails:
             print('  thumb FAIL', f[1], file=sys.stderr)
     have = set(k for k in man if os.path.exists(os.path.join(THUMBS, k)))
+    # point album covers / album-only card images at their local thumb when we have one
+    for a in albums:
+        rel = 'a/' + a[0].strip('/').replace('#', '--') + '.webp'
+        if rel in have:
+            a[3] = '@' + rel
+    for x in xs:
+        rel = 'x/' + re.sub(r'[^a-z0-9]+', '-', norm(x[1] + ' ' + x[0])).strip('-') + '.webp'
+        if rel in have:
+            x[5] = '@' + rel
+        elif x[5]:
+            x[5] = small_img(x[5])
 
     idx = {
-        'v': 1,
+        'v': 2,
         'built': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
         'mb': mb, 'ib': ib,
         'sec': sec_lab,
-        'th': {'m': sum(1 for x in R if 'm/' + x[0] + '.webp' in have),
-               'a': [a[0] for a in albums if 'a/' + a[0] + '.webp' in have]},
-        # mats: [img, name, brand, shop url, retired, colour sections, brand guide page, album idxs, one-to-watch]
-        'm': mats,
-        # album-only mats (in an album caption, not in the gallery): [name, brand, album idxs]
-        'x': [[n, b, a] for (n, b), a in sorted(extra.items())],
-        # albums: [slug, set name, brand, cover, hub colour sections, kind 0 album/1 colour hub/2 holiday, n mats, desc]
-        'a': albums,
-        # pages: [path, title, kind brand|blog|page, desc, img, code, pct, brand]
-        'p': pages_out,
+        # mats WITHOUT a local thumb (fall back to the gallery image); '@rel' = local thumb under thumbs/
+        'nt': [x[0] for x in R if 'm/' + x[0] + '.webp' not in have],
+        'm': mats, 'x': xs, 'a': albums, 'p': pages_out,
     }
     with open(os.path.join(OUT, 'search-index.json'), 'w') as f:
         json.dump(idx, f, ensure_ascii=False, separators=(',', ':'))
-    n_al = sum(1 for a in albums if a[5] == 0)
-    print('index: %d mats, %d albums (+%d colour hubs, %d holiday), %d brand pages, %d blog posts, %d main pages; '
-          'album mats linked to gallery: %d mats, %d album captions unmatched; %d bytes' % (
-              len(mats), n_al, sum(1 for a in albums if a[5] == 1), sum(1 for a in albums if a[5] == 2),
-              sum(1 for p in pages_out if p[2] == 'brand'), sum(1 for p in pages_out if p[2] == 'blog'),
-              sum(1 for p in pages_out if p[2] == 'page'), len(mat_albums), unmatched,
-              os.path.getsize(os.path.join(OUT, 'search-index.json'))))
+    stats = {
+        'mats': len(mats), 'albums': sum(1 for a in albums if a[5] == 0), 'colour_hubs': sum(1 for a in albums if a[5] == 1),
+        'holiday_entries': sum(1 for a in albums if a[5] == 2),
+        'brand_pages': sum(1 for p in pages_out if p[2] == 'brand'), 'blog_posts': sum(1 for p in pages_out if p[2] == 'blog'),
+        'main_pages': sum(1 for p in pages_out if p[2] == 'page'), 'gallery_mats_in_albums': len(mat_albums),
+        'album_only_mats': len(xs), 'mats_with_theme_kw': sum(1 for m in mats if any(
+            w in m[9].split() for w in ('halloween', 'valentine', 'patriotic', 'shamrock', 'easter', 'derby', 'christmas', 'hanukkah', 'winter', 'fall'))),
+        'bytes': os.path.getsize(os.path.join(OUT, 'search-index.json')),
+    }
+    print('index:', json.dumps(stats))
 
 
 if __name__ == '__main__':
