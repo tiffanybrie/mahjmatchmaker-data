@@ -9,7 +9,7 @@
     <id>mahjmatchmaker:needs-a-look</id>
     <updated>2026-10-21T19:00:00Z</updated>
     <content></content>
-    <apps:property name='hasTheWord' value='subject:(declined OR rejected OR reversed OR refunded OR cancelled OR canceled OR voided OR denied OR "not approved" OR failed OR "on hold") (referral OR commission OR affiliate OR affiliates OR payout OR uppromote OR goaffpro OR secomapp OR refersion OR shopmy OR rakuten OR awin OR collabs)'/>
+    <apps:property name='hasTheWord' value='subject:(declined OR rejected OR reversed OR refunded OR cancelled OR canceled OR voided OR denied OR "not approved" OR failed OR "on hold") (subject:(referral OR commission OR commissions OR affiliate OR affiliates OR payout OR payouts) OR from:(secomapp.com OR goaffpro.com OR uppromote.com OR refersion.com OR shopmy.us OR rakutenadvertising.com OR awin.com OR impact.com OR shareasale.com))'/>
     <apps:property name='label' value="Affiliate/Needs a look"/>
     <apps:property name='shouldAlwaysMarkAsImportant' value="true"/>
     <apps:property name='shouldNeverSpam' value="true"/>
