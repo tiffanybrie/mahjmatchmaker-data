@@ -37,6 +37,7 @@ CANON_DIR = os.path.join(REPO, 'assets/tiles/album')
 CANON_DIRS = [CANON_DIR, os.path.join(REPO, 'assets/tiles/holiday')]  # holiday sets have no album photo: their pile shots count too
 STRONG = 40          # RANSAC inliers that mean "this is that photo"
 SIM_MIN = 0.85      # same-photo colour high-pass correlation after warping (true crops 0.87-1.0; Virora grid look-alikes <= 0.77)
+COLOR_MAX = 14.0    # mean |RGB| difference in the matched area: true crops 0.3-8.5; Holly Jolly red vs green grid, Virora 13-50
 HULL_MIN = 0.15     # matched area must cover >= 15% of the canonical photo (one shared tile artwork covers far less)
 MARGIN = 2.0         # other-set score must beat own-set score by this factor to FAIL
 
@@ -129,7 +130,8 @@ class Canon:
     def same_photo(self, rgb, H, pts, ci):
         """Same-photo score in [0,1]: colour high-pass NCC between the canonical photo and the asset warped onto it,
         inside the hull of the RANSAC inliers. 0 when that hull covers < HULL_MIN of the canonical photo: sets that
-        share face artwork (Virora Floréa vs Petalee, Heritage 1 vs 2.0) can match ONE identical tile, never a large area."""
+        share face artwork (Virora Floréa vs Petalee, Heritage 1 vs 2.0) can match ONE identical tile, never a large area;
+        and 0 when the colours differ (> COLOR_MAX): colourways shot in one identical grid (Holly Jolly red vs green)."""
         try:
             c = self.grays[ci]; h, w = c.shape[:2]
             hull = cv2.convexHull(pts.astype(np.int32))
@@ -140,6 +142,7 @@ class Canon:
             m = cv2.erode(m, np.ones((5, 5), np.uint8)) > 0
             if m.sum() < 400: return 0.0
             hp = lambda z: z - cv2.GaussianBlur(z, (0, 0), 6)
+            if float(np.abs(c[m].astype(float) - wa[m].astype(float)).mean()) > COLOR_MAX: return 0.0  # same layout, other colourway
             a = hp(c.astype(np.float32))[m].astype(float); b = hp(wa.astype(np.float32))[m].astype(float)
             a -= a.mean(); b -= b.mean(); den = np.sqrt((a * a).sum() * (b * b).sum())
             return float((a * b).sum() / den) if den else 0.0
@@ -213,7 +216,7 @@ def fym_items(build_dir, guard=False):
     items, F = [], []
     for key, t in (D.get('tiles') or {}).items():
         src_set = None
-        m = re.search(r'tiles/album/([a-z0-9-]+)\.', t.get('src') or '')
+        m = re.search(r'tiles/(?:album|holiday)/([a-z0-9-]+)\.', t.get('src') or '')
         if m: src_set = norm_set(CANON_ALIAS.get(m.group(1), m.group(1)))
         nm = norm_set(_name_slug(t.get('n') or key))
         if src_set and nm in KNOWN_SETS and nm != src_set:
