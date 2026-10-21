@@ -1,0 +1,6 @@
+/* Announcement bar: Find Your Mat-ch launch countdown (Oct 21, Claude). Navy brand bar, white text, one line on phone. */
+.sqs-announcement-bar{background-color:#062a55 !important;}
+.sqs-announcement-bar,.sqs-announcement-bar a,.sqs-announcement-bar-text-inner,.sqs-announcement-bar-text-inner p,.sqs-announcement-bar-text-inner em{color:#ffffff !important;}
+.sqs-announcement-bar-close::before,.sqs-announcement-bar-close::after{background-color:#ffffff !important;}
+.sqs-announcement-bar-text-inner p{letter-spacing:.02em;}
+@media (max-width:420px){.sqs-announcement-bar-text-inner p{font-size:12.5px !important;white-space:nowrap !important;}}
