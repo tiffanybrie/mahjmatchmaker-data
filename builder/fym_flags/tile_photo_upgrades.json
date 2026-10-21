@@ -1,5 +1,5 @@
 {
- "_about": "Tile photo audit Oct 21 (Tiffany 6:37, 6:44, 6:55, 6:57pm). status: upgrade (use proposed + frame), ok (keep current; frame given when a crop is needed), coming_soon (show \"Photo coming soon\" card; listed in tile_photo_requests.json). Not applied to build.",
+ "_about": "Tile photo audit Oct 21 (Tiffany 6:37, 6:44, 6:55, 6:57pm). status: upgrade (use proposed + frame), ok (keep current; frame given when a crop is needed), coming_soon (show \"Photo coming soon\" card; listed in tile_photo_requests.json). Not applied to build. Re-reviewed 7:12pm: only mostly-mat/sparse-tiles/no-backs photos stay coming_soon.",
  "standard": "tiles isolated on plain/white/neutral background (no mat), tile back/layers + faces, pile ideal. Tiffany exceptions: big pile covering the mat is OK; Grandmillennial Pink, Tigre House of Hearts, Bamboo Sky kept.",
  "sets": {
   "amahj-foundation-beginner": {
@@ -388,40 +388,40 @@
    "name": "Holly Jolly (Grinch Green)",
    "brand": "Bam! Let's Mahjong",
    "tile_key": "hol:holly-jolly-green",
-   "status": "coming_soon",
+   "status": "ok",
    "locked": true,
    "hidden_now": false,
    "current": "t16/holly-jolly-green.jpg",
-   "reason": "tiles on holiday mat/frame in every brand image; LOCKED",
+   "reason": "tray full of faces, tiles dominate (Tiffany: Holly Jolly fine) [Tiffany 7:12pm threshold: mostly tiles, backs visible]",
    "product_url": "https://www.bamletsmahjong.com/products/holly-jolly-christmas-mahjong-tiles",
-   "frame": null,
-   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)"
+   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)",
+   "tiffany_call": "7:12pm: mat underneath fine when photo is mostly tiles"
   },
   "holly-jolly-pink": {
    "name": "Holly Jolly (Sugarplum Pink)",
    "brand": "Bam! Let's Mahjong",
    "tile_key": "hol:holly-jolly-pink",
-   "status": "coming_soon",
+   "status": "ok",
    "locked": true,
    "hidden_now": false,
    "current": "t16/holly-jolly-pink.jpg",
-   "reason": "holiday mat visible around pile; LOCKED",
+   "reason": "big pile, tiles dominate, backs visible [Tiffany 7:12pm threshold: mostly tiles, backs visible]",
    "product_url": "https://www.bamletsmahjong.com/products/holly-jolly-christmas-mahjong-tiles",
-   "frame": null,
-   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)"
+   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)",
+   "tiffany_call": "7:12pm: mat underneath fine when photo is mostly tiles"
   },
   "holly-jolly-red": {
    "name": "Holly Jolly (Rudolph Red)",
    "brand": "Bam! Let's Mahjong",
    "tile_key": "hol:holly-jolly-red",
-   "status": "coming_soon",
+   "status": "ok",
    "locked": true,
    "hidden_now": false,
    "current": "t13/1.jpg",
-   "reason": "holiday mat visible around pile; LOCKED",
+   "reason": "tiles dominate, backs visible (Tiffany: Holly Jolly fine) [Tiffany 7:12pm threshold: mostly tiles, backs visible]",
    "product_url": "https://www.bamletsmahjong.com/products/holly-jolly-christmas-mahjong-tiles",
-   "frame": null,
-   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)"
+   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)",
+   "tiffany_call": "7:12pm: mat underneath fine when photo is mostly tiles"
   },
   "bam-let-s-mahjong-art-deco": {
    "name": "Art Deco",
@@ -474,13 +474,13 @@
    "name": "Garden Party Sea-Glass Green",
    "brand": "Bam! Let's Mahjong",
    "tile_key": "www.bamletsmahjong.com/mahjong-tiles-garden-party?v=45074672091294",
-   "status": "coming_soon",
+   "status": "ok",
    "locked": false,
    "hidden_now": false,
    "current": "t15/118.jpg",
-   "reason": "pile sits on patterned stripe mat",
+   "reason": "big pile, tiles dominate, backs visible [Tiffany 7:12pm threshold: mostly tiles, backs visible]",
    "product_url": "https://www.bamletsmahjong.com/products/mahjong-tiles-garden-party?variant=45074672091294",
-   "frame": null
+   "tiffany_call": "7:12pm: mat underneath fine when photo is mostly tiles"
   },
   "bam-let-s-mahjong-garden-party-lavender-bloom": {
    "name": "Garden Party Lavender Bloom",
@@ -509,25 +509,25 @@
    "name": "Grandmillennial Green",
    "brand": "Bam! Let's Mahjong",
    "tile_key": "www.bamletsmahjong.com/mahjong-tiles-grandmillennial?v=45074671927454",
-   "status": "coming_soon",
+   "status": "ok",
    "locked": false,
    "hidden_now": false,
    "current": "t15/115.jpg",
-   "reason": "striped mat/frame visible behind pile",
+   "reason": "big pile, tiles dominate, backs visible [Tiffany 7:12pm threshold: mostly tiles, backs visible]",
    "product_url": "https://www.bamletsmahjong.com/products/mahjong-tiles-grandmillennial?variant=45074671927454",
-   "frame": null
+   "tiffany_call": "7:12pm: mat underneath fine when photo is mostly tiles"
   },
   "bam-let-s-mahjong-grandmillennial-blue": {
    "name": "Grandmillennial Blue",
    "brand": "Bam! Let's Mahjong",
    "tile_key": "www.bamletsmahjong.com/mahjong-tiles-grandmillennial?v=45074671960222",
-   "status": "coming_soon",
+   "status": "ok",
    "locked": false,
    "hidden_now": false,
    "current": "t15/116.jpg",
-   "reason": "striped mat/frame visible behind pile",
+   "reason": "big pile, tiles dominate, backs visible [Tiffany 7:12pm threshold: mostly tiles, backs visible]",
    "product_url": "https://www.bamletsmahjong.com/products/mahjong-tiles-grandmillennial?variant=45074671960222",
-   "frame": null
+   "tiffany_call": "7:12pm: mat underneath fine when photo is mostly tiles"
   },
   "bam-let-s-mahjong-mint-and-roses": {
    "name": "Mint and Roses",
@@ -555,13 +555,13 @@
    "name": "The Nantucket Seaside Blue",
    "brand": "Bam! Let's Mahjong",
    "tile_key": "www.bamletsmahjong.com/the-nantucket-tile-collection?v=46467206021278",
-   "status": "coming_soon",
+   "status": "ok",
    "locked": false,
    "hidden_now": false,
    "current": "t15/109.jpg",
-   "reason": "pile on striped mat; only isolated shot is the Coastal Blue one",
+   "reason": "big pile of blue backs + faces, tiles dominate [Tiffany 7:12pm threshold: mostly tiles, backs visible]",
    "product_url": "https://www.bamletsmahjong.com/products/the-nantucket-tile-collection?variant=46467206021278",
-   "frame": null
+   "tiffany_call": "7:12pm: mat underneath fine when photo is mostly tiles"
   },
   "bam-let-s-mahjong-the-palm-royale-lemon-drop": {
    "name": "The Palm Royale Lemon Drop",
@@ -682,13 +682,13 @@
    "name": "The Allure",
    "brand": "Bird & Bamboo",
    "tile_key": "birdandbamboo.com/the-allure-mahjong-tile-set",
-   "status": "coming_soon",
+   "status": "ok",
    "locked": false,
    "hidden_now": false,
    "current": "t15/13.jpg",
-   "reason": "pink mat visible behind pile",
+   "reason": "tiles fill frame, backs visible [Tiffany 7:12pm threshold: mostly tiles, backs visible]",
    "product_url": "https://birdandbamboo.com/products/the-allure-mahjong-tile-set?sca_ref=10077785.SRjgzyw39OU7C",
-   "frame": null
+   "tiffany_call": "7:12pm: mat underneath fine when photo is mostly tiles"
   },
   "bird-bamboo-the-belle": {
    "name": "The Belle",
@@ -808,13 +808,13 @@
    "name": "Celebration",
    "brand": "Hip Hip Mahjong",
    "tile_key": "www.hiphipmahjong.com/celebration-tiles",
-   "status": "coming_soon",
+   "status": "ok",
    "locked": false,
    "hidden_now": false,
    "current": "t15/132.jpg",
-   "reason": "only image: sparse tiles on busy mat",
+   "reason": "large pile of black backs + faces covers most of the mat [Tiffany 7:12pm threshold: mostly tiles, backs visible]",
    "product_url": "https://www.hiphipmahjong.com/products/celebration-tiles",
-   "frame": null
+   "tiffany_call": "7:12pm: mat underneath fine when photo is mostly tiles"
   },
   "hip-hip-mahjong-hoppy-east-hare": {
    "name": "Hoppy EAST-Hare",
@@ -1273,38 +1273,38 @@
    "name": "Nutcracker Ballet",
    "brand": "Mahj Squad",
    "tile_key": "hol:nutcracker-ballet",
-   "status": "coming_soon",
+   "status": "ok",
    "locked": true,
    "hidden_now": false,
    "current": "t10/45.jpg",
-   "reason": "tiles on candy-cane surface; best clean shot is faces only; LOCKED",
+   "reason": "tiles dominate the frame (Tiffany: if tiles dominate = ok) [Tiffany 7:12pm threshold: mostly tiles, backs visible]",
    "product_url": "https://mahjsquadshop.com/products/nutcracker-ballet-mahjong-tile-set",
-   "frame": null,
-   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)"
+   "lock_note": "LOCKED in locks.json. Change recorded as: \"Tiffany asked Oct 21 6:37pm: tile piles for catalog sets\" (+6:44pm isolated/no mat)",
+   "tiffany_call": "7:12pm: mat underneath fine when photo is mostly tiles"
   },
   "mahj-squad-blue-chinoiserie": {
    "name": "Blue Chinoiserie",
    "brand": "Mahj Squad",
    "tile_key": "mahjsquadshop.com/blue-chinoiserie-mahjong-tiles-cornflower-blue-and-white-mahjongg-set-blue-mahj-tiles-american-mahjong-tiles-1",
-   "status": "coming_soon",
+   "status": "ok",
    "locked": false,
    "hidden_now": false,
    "current": "t15/56.jpg",
-   "reason": "tiles on printed mat in every image",
+   "reason": "tiles ~half the frame on plain blue, backs visible [Tiffany 7:12pm threshold: mostly tiles, backs visible]",
    "product_url": "https://mahjsquadshop.com/products/blue-chinoiserie-mahjong-tiles-cornflower-blue-and-white-mahjongg-set-blue-mahj-tiles-american-mahjong-tiles-1",
-   "frame": null
+   "tiffany_call": "7:12pm: mat underneath fine when photo is mostly tiles"
   },
   "mahj-squad-just-peachy": {
    "name": "Just Peachy",
    "brand": "Mahj Squad",
    "tile_key": "mahjsquadshop.com/just-peachy-tile-set-preorder",
-   "status": "coming_soon",
+   "status": "ok",
    "locked": false,
    "hidden_now": false,
    "current": "t15/54.jpg",
-   "reason": "tiles on printed mat in every image",
+   "reason": "large tiles dominate, backs visible [Tiffany 7:12pm threshold: mostly tiles, backs visible]",
    "product_url": "https://mahjsquadshop.com/products/just-peachy-tile-set-preorder",
-   "frame": null
+   "tiffany_call": "7:12pm: mat underneath fine when photo is mostly tiles"
   },
   "mahj-squad-palm-springs": {
    "name": "Palm Springs",
