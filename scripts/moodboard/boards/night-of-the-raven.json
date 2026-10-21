@@ -1,0 +1,252 @@
+{
+  "slug": "night-of-the-raven",
+  "title": "Night of the Raven",
+  "tagline": "a moody halloween mahj table",
+  "_note": "Rebuilt Oct 21 (Tiffany 12:22): mood board rules (doc 79/78): mat is the star, ONE rack, tiles offset to corners, lamp + raven dice dish given room and apart, lace and deep plum cloths shown separately. Web card version: canvas 1200x900 (homepage From the Blog featured card).",
+  "kicker": {
+    "amazon": "shop the look",
+    "social": "shop the look \u00b7 code MAHJMATCH \u00b7 link in bio",
+    "pinterest": "shop the look \u00b7 code MAHJMATCH \u00b7 mahjmatchmaker.com",
+    "web": "shop the look \u00b7 code MAHJMATCH \u00b7 mahjmatchmaker.com"
+  },
+  "brand_mark": {
+    "amazon": true,
+    "social": true,
+    "pinterest": true,
+    "web": true
+  },
+  "theme": {
+    "title": "#5e2750",
+    "tagline": "#2b2623",
+    "ink": "#2b2623",
+    "paper": "#faf3ea"
+  },
+  "items": [
+    {
+      "role": "mat",
+      "kind": "cutout",
+      "src": "assets/moodboards/night-of-the-raven/cutouts/mat.png",
+      "label": "mocha bloom dark mat",
+      "partner": true
+    },
+    {
+      "role": "tiles_pile",
+      "kind": "round",
+      "src": "assets/moodboards/night-of-the-raven/cutouts/tiles-pile-round.png",
+      "label": "terracotta marble\ntiles (those backs!)",
+      "partner": true
+    },
+    {
+      "role": "tiles_faces",
+      "kind": "cutout",
+      "src": "assets/moodboards/night-of-the-raven/cutouts/tiles-faces.png",
+      "partner": true
+    },
+    {
+      "role": "rack",
+      "kind": "cutout",
+      "src": "assets/moodboards/night-of-the-raven/cutouts/rack.png",
+      "label": "translucent plum racks",
+      "partner": true
+    },
+    {
+      "role": "accent1",
+      "kind": "cutout",
+      "src": "assets/moodboards/night-of-the-raven/cutouts/raven-dice-dish.png",
+      "label": "raven dice dish",
+      "asin": "B0FKGPWHHD"
+    },
+    {
+      "role": "cloth",
+      "kind": "photo",
+      "src": "assets/moodboards/night-of-the-raven/cutouts/lace-tablecloth-photo.jpg",
+      "label": "black lace tablecloth",
+      "asin": "B0FVPGKG9M"
+    },
+    {
+      "role": "accent2",
+      "kind": "photo",
+      "src": "assets/moodboards/night-of-the-raven/cutouts/plum-tablecloth-photo.jpg",
+      "label": "deep plum\ncloth"
+    },
+    {
+      "role": "lamp",
+      "kind": "cutout",
+      "src": "assets/moodboards/night-of-the-raven/cutouts/lamp.png",
+      "label": "cordless\nlamp",
+      "asin": "B0D56VV13D"
+    }
+  ],
+  "layout_overrides": {
+    "1080x1350": {
+      "header": {
+        "wm_y": 30,
+        "wm_w": 380,
+        "title_y": 92,
+        "title_size": 64,
+        "tag_y": 168,
+        "tag_size": 28,
+        "kicker_y": 210,
+        "kicker_size": 14
+      },
+      "zones": {
+        "mat": {
+          "x": 405,
+          "y": 268,
+          "w": 630,
+          "z": 10,
+          "label": {
+            "x": 760,
+            "y": 228,
+            "w": 300,
+            "size": 44,
+            "rot": -3,
+            "align": "left",
+            "arrow": [
+              1040,
+              262,
+              1050,
+              286,
+              1020,
+              300
+            ]
+          }
+        },
+        "tiles_pile": {
+          "x": 290,
+          "y": 246,
+          "w": 236,
+          "z": 20,
+          "label": {
+            "x": 14,
+            "y": 262,
+            "w": 270,
+            "size": 42,
+            "rot": -4,
+            "align": "center",
+            "arrow": [
+              168,
+              352,
+              200,
+              392,
+              286,
+              382
+            ]
+          }
+        },
+        "tiles_faces": {
+          "x": 736,
+          "y": 778,
+          "w": 330,
+          "rot": -6,
+          "z": 30
+        },
+        "rack": {
+          "x": 26,
+          "y": 692,
+          "w": 450,
+          "rot": 0,
+          "z": 25,
+          "label": {
+            "x": 488,
+            "y": 908,
+            "w": 300,
+            "size": 42,
+            "rot": -2,
+            "align": "left",
+            "arrow": [
+              500,
+              930,
+              470,
+              930,
+              452,
+              900
+            ]
+          }
+        },
+        "accent1": {
+          "x": 22,
+          "y": 400,
+          "w": 290,
+          "z": 15,
+          "label": {
+            "x": 22,
+            "y": 640,
+            "w": 280,
+            "size": 42,
+            "rot": -3,
+            "align": "left",
+            "arrow": [
+              240,
+              650,
+              268,
+              640,
+              270,
+              612
+            ]
+          }
+        },
+        "lamp": {
+          "x": 36,
+          "y": 948,
+          "w": 178,
+          "z": 15,
+          "label": {
+            "x": 206,
+            "y": 1180,
+            "w": 130,
+            "size": 40,
+            "rot": -4,
+            "align": "left",
+            "arrow": [
+              214,
+              1196,
+              198,
+              1206,
+              190,
+              1180
+            ]
+          }
+        },
+        "cloth": {
+          "x": 348,
+          "y": 980,
+          "w": 286,
+          "rot": -2,
+          "z": 15,
+          "label": {
+            "x": 350,
+            "y": 1290,
+            "w": 300,
+            "size": 40,
+            "rot": -2,
+            "align": "center"
+          }
+        },
+        "accent2": {
+          "x": 690,
+          "y": 1060,
+          "w": 190,
+          "rot": 4,
+          "z": 14,
+          "label": {
+            "x": 892,
+            "y": 1140,
+            "w": 170,
+            "size": 42,
+            "rot": -4,
+            "align": "left",
+            "arrow": [
+              896,
+              1160,
+              880,
+              1176,
+              872,
+              1160
+            ]
+          }
+        }
+      }
+    }
+  }
+}

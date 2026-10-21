@@ -529,5 +529,169 @@
   "_note": "derived from 1080x1350 (board centred, ~285px clear at top and bottom = story UI safe zones)",
   "header": {}
  },
- "_label_rule": "Labels are never rotated more than 12 degrees either way (Tiffany Oct 19: no near-vertical text; you should never have to tilt your head to read)."
+ "_label_rule": "Labels are never rotated more than 12 degrees either way (Tiffany Oct 19: no near-vertical text; you should never have to tilt your head to read).",
+ "1200x900": {
+  "_doc": "Landscape web card (homepage From the Blog featured card, Oct 21). 4:3, shows uncropped at 390 and 1280.",
+  "header": {
+   "wm_y": 22,
+   "wm_w": 300,
+   "title_y": 62,
+   "title_size": 54,
+   "tag_y": 122,
+   "tag_size": 24,
+   "kicker_y": 156,
+   "kicker_size": 12
+  },
+  "zones": {
+   "9": {
+    "mat": {
+     "x": 345,
+     "y": 195,
+     "w": 505,
+     "z": 10,
+     "label": {
+      "x": 872,
+      "y": 186,
+      "w": 300,
+      "size": 38,
+      "rot": -3,
+      "align": "left",
+      "arrow": [
+       890,
+       236,
+       868,
+       250,
+       852,
+       262
+      ]
+     }
+    },
+    "tiles_pile": {
+     "x": 262,
+     "y": 180,
+     "w": 178,
+     "z": 20,
+     "label": {
+      "x": 10,
+      "y": 186,
+      "w": 240,
+      "size": 34,
+      "rot": -4,
+      "align": "center",
+      "arrow": [
+       150,
+       256,
+       190,
+       282,
+       258,
+       272
+      ]
+     }
+    },
+    "tiles_faces": {
+     "x": 672,
+     "y": 600,
+     "w": 270,
+     "rot": -6,
+     "z": 30
+    },
+    "rack": {
+     "x": 300,
+     "y": 672,
+     "w": 360,
+     "z": 25,
+     "label": {
+      "x": 640,
+      "y": 812,
+      "w": 300,
+      "size": 36,
+      "rot": -2,
+      "align": "left",
+      "arrow": [
+       646,
+       830,
+       626,
+       826,
+       618,
+       804
+      ]
+     }
+    },
+    "accent1": {
+     "x": 30,
+     "y": 300,
+     "w": 220,
+     "z": 15,
+     "label": {
+      "x": 40,
+      "y": 498,
+      "w": 220,
+      "size": 36,
+      "rot": -3,
+      "align": "left",
+      "arrow": [
+       210,
+       510,
+       236,
+       500,
+       232,
+       478
+      ]
+     }
+    },
+    "lamp": {
+     "x": 46,
+     "y": 560,
+     "w": 150,
+     "z": 15,
+     "label": {
+      "x": 200,
+      "y": 572,
+      "w": 120,
+      "size": 34,
+      "rot": -4,
+      "align": "left",
+      "arrow": [
+       206,
+       640,
+       200,
+       656,
+       186,
+       650
+      ]
+     }
+    },
+    "cloth": {
+     "x": 892,
+     "y": 282,
+     "w": 176,
+     "rot": -2,
+     "z": 15,
+     "label": {
+      "x": 880,
+      "y": 470,
+      "w": 220,
+      "size": 34,
+      "rot": -3,
+      "align": "center"
+     }
+    },
+    "accent2": {
+     "x": 1012,
+     "y": 540,
+     "w": 132,
+     "rot": 4,
+     "z": 14,
+     "label": {
+      "x": 994,
+      "y": 716,
+      "w": 200,
+      "size": 34,
+      "rot": -3,
+      "align": "center"
+     }
+    }
+   }
+  }
+ }
 }
