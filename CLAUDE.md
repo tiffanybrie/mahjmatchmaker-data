@@ -43,3 +43,9 @@ Oct 21, launch morning: the Papaya "It's a match" post, the hotline reel and the
 5. **Brand tags:** every brand shown or named gets its verified @handle (config/social/ig-handles.json) in the caption and in Tag people.
 6. **Instagram is connected as a BUSINESS account** (checked Oct 21). Auto-publish can carry user tags, cover, collaborators and first comment. Auto-posting anything public still needs her approval of that post.
 7. **Before telling her what to post, check Planoly** (list_post_groups) so chat never replaces Planoly.
+
+## Naming: Mat-ch vs match (Tiffany, Oct 21 11:26, FINAL)
+- **Find *Your* Mat-ch™** = the proprietary tool. Italic on "Your" (it's THEIR matchmaking tool). ™ appears ONLY with this full name, on its most prominent use per piece.
+- **"It's a mat-ch!"** = the middle post of each launch row (tile set + one mat). Mat-ch only where a mat is the match. No ™ here.
+- **Match cards** = the album library (tiles + mat + racks). Always plain "match card", never Mat-ch: they are NOT part of the Find Your Mat-ch tool.
+- Plain "match" in normal sentences and captions.
