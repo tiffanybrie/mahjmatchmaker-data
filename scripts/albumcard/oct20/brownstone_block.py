@@ -11,7 +11,7 @@ ST = json.load(open(_STP)) if os.path.exists(_STP) else {}  # Oct 21: scratch fi
 if not ST:
     _old = open(C.R + 'site/livepatch/brownstone-bloom-oct20/brownstone-bloom-codeblock.html').read()
     for _c in m['cards']:
-        _f = re.search(re.escape(_c['file']) + r'.{0,4000}?<a [^>]*href="([^"]+)"', _old, re.S)
+        _f = re.search(re.escape(_c['file']) + r'.{0,6000}?<a class="mm3-btn" href="(http[^"]+)"', _old, re.S)
         if _f: ST[_c['mat']] = {'url': _f.group(1)}
 BR = {'Mahjong Row & Co': 'Mahjong Row & Co.', 'Mac + Miller Mahjong': 'Mac + Miller Mahjong'}
 cards = []
