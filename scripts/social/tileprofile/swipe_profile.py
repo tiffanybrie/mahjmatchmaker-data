@@ -2,6 +2,9 @@
 Based on version C: dating-app profile (Oct 19).
 Tiffany asked for a version built from the swipe-app trademarks: photo dashes, LIKE stamp, name + verified check,
 green active dot, interest pills, "Looking for", a prompt, basics row and the 5-button row.
+Oct 21 (Tiffany, carousel work): the profile UI uses ONLY an X and a heart, like Find Your Match and the posted intro
+carousel (intro_framed.py). No rewind, star or lightning bolt, and no crush/nope/pass wording. BUTTONS below is the one
+place the row is defined; intro_framed.py and every story/feed/reel use of this card read it.
 Usage: python3 scripts/social/tileprofile/swipe_profile.py   (writes assets/colorcards/papaya-spritz/00-papaya-spritz-mahjong-tiles-profile-c-story.jpg)
 Labels stay level (doc 79 label rule, max 12 deg). The LIKE stamp is the one tilted element at -12.
 """
@@ -29,13 +32,14 @@ def svg(path, color, size, stroke=6, fill='none'):
 
 HEART = 'M24 40 C10 30 6 23 6 17 C6 11 11 7 16 7 C20 7 22 9 24 12 C26 9 28 7 32 7 C37 7 42 11 42 17 C42 23 38 30 24 40 Z'
 X = 'M14 14 L34 34 M34 14 L14 34'
-STAR = 'M24 6 L29 18 L42 19 L32 28 L35 41 L24 34 L13 41 L16 28 L6 19 L19 18 Z'
-BACK = 'M18 12 L8 20 L18 28 M8 20 H30 C36 20 40 25 40 30 C40 36 36 40 30 40 H22'
-BOLT = 'M27 5 L11 27 H23 L21 43 L37 20 H25 Z'
 
 def btn(d, color, size, inner, fill='none', stroke=5, bg='#fff'):
     return (f'<div style="width:{size}px;height:{size}px;border-radius:50%;background:{bg};display:flex;align-items:center;justify-content:center;'
             f'box-shadow:0 10px 24px rgba(5,40,90,.16),0 2px 6px rgba(5,40,90,.10)">{svg(d, color, inner, stroke, fill)}</div>')
+
+def buttons(size, inner_x, inner_h):
+    """The ONLY profile button row: X (navy on white) + heart (white on flame), same size. Oct 21 rule."""
+    return btn(X, '#054689', size, inner_x, stroke=6) + btn(HEART, '#fff', size, inner_h, fill='#fff', stroke=2, bg='#f56c8c')
 
 pills = ''.join(f'<span class="pill">{t}</span>' for t in P['pills'])  # Oct 20: Tinder labels these "Interests"
 PIN = 'M24 44 C24 44 10 29 10 19 C10 11 16 5 24 5 C32 5 38 11 38 19 C38 29 24 44 24 44 Z M24 24 A5 5 0 1 0 24 14 A5 5 0 1 0 24 24 Z'
@@ -79,7 +83,7 @@ html,body{{width:1080px;height:1920px;overflow:hidden;background:var(--cream);co
 .basics{{display:flex;flex-wrap:nowrap;gap:9px}}
 .basic{{display:inline-flex;align-items:center;gap:10px;font:600 23px Bit;color:var(--navy);background:#fff;border:2.5px solid #ecdcd0;border-radius:999px;padding:8px 16px 8px 10px}}
 .dot{{width:26px;height:26px;border-radius:50%;box-shadow:0 0 0 3px #fff,0 1px 4px rgba(5,40,90,.2)}}
-.btns{{position:absolute;left:0;right:0;top:1618px;display:flex;justify-content:center;align-items:center;gap:30px}}
+.btns{{position:absolute;left:0;right:0;top:1615px;display:flex;justify-content:center;align-items:center;gap:140px}}
 .foot{{position:absolute;left:0;right:0;top:1810px;text-align:center;font:700 26px Bit;letter-spacing:.12em;text-transform:uppercase;color:var(--navy)}}
 .foot b{{color:var(--rose)}}
 </style></head><body><div style="position:relative;width:1080px;height:1920px;overflow:hidden">
@@ -103,13 +107,7 @@ html,body{{width:1080px;height:1920px;overflow:hidden;background:var(--cream);co
   <div class="box"><div class="q">{P['prompt_q']}</div><div class="pa">{P['prompt_a']}</div></div>
  </div>
 </div>
-<div class="btns">
- {btn(BACK, '#e8a23a', 92, 44)}
- {btn(X, '#054689', 124, 56, stroke=6)}
- {btn(STAR, '#7d8fe0', 92, 46, fill='#7d8fe0', stroke=3)}
- {btn(HEART, '#fff', 124, 60, fill='#fff', stroke=2, bg='#f56c8c')}
- {btn(BOLT, '#a07ad8', 92, 46, fill='#a07ad8', stroke=3)}
-</div>
+<div class="btns">{buttons(130, 58, 62)}</div>
 <div class="foot">See all <b>{P['matches']}</b> of her matches · mahjmatchmaker.com</div>
 </div></body></html>"""
 

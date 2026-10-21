@@ -19,7 +19,7 @@ body{background:linear-gradient(170deg,#fff7f4,#fde3ec);font-family:Bitter,Georg
 .wm{position:absolute;bottom:230px;left:50%;width:600px;transform:translateX(-50%)}
 .big .num{font-size:250px;top:400px}
 </style></head><body><div class="bgdots"></div>
-<div class="top"><span class="pill" id="pill">FIND YOUR MATCH · 10.27</span></div>
+<div class="top"><span class="pill" id="pill">FIND <i>YOUR</i> MAT-CH<sup style="font-size:.5em;vertical-align:super;letter-spacing:0">&trade;</sup> · 10.27</span></div>
 <div class="num" id="num">7</div><div class="days" id="days">days</div>
 <div class="pair"><div class="c c1" id="t"></div><div class="c c2" id="m">?</div>
 <svg viewBox="0 0 230 210"><path d="M115 200S12 140 12 72C12 36 38 12 70 12c22 0 37 12 45 28 8-16 23-28 45-28 32 0 58 24 58 60 0 68-103 128-103 128z" fill="#d6608c" stroke="#fff" stroke-width="12"/></svg></div>
@@ -28,6 +28,6 @@ body{background:linear-gradient(170deg,#fff7f4,#fde3ec);font-family:Bitter,Georg
 <script>
 window.setCard=function(o){document.getElementById('num').textContent=o.n;document.getElementById('days').textContent=o.d;
 document.getElementById('line').innerHTML=o.l;document.getElementById('t').style.backgroundImage=`url(file:///home/claude/mahjmatchmaker-data/assets/tiles/album/${o.t})`;
-document.body.classList.toggle('big',!!o.big);if(o.pill)document.getElementById('pill').textContent=o.pill;
+document.body.classList.toggle('big',!!o.big);if(o.pill)document.getElementById('pill').textContent=o.pill;  // Oct 21: default pill = Find Your Mat-ch(TM), italic YOUR
 const m=document.getElementById('m');if(o.mat){m.textContent='';m.style.background=`url(${o.mat}) center/cover`}else{m.textContent='?';m.style.background='#064587'}}
 </script></body></html>

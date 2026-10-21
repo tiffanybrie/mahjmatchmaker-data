@@ -7,7 +7,7 @@ const C=[
 ['3','days','solara.jpg','Racks are invited.<br><b>Obviously.</b>'],
 ['2','days','talulah.jpg','Hundreds of mats are fixing<br>their hair <b>right now.</b>'],
 ['1','day','jade.jpg','Tomorrow, your tiles<br>meet <b>their match.</b>'],
-['LIVE','today','coquette.jpg','Find Your Match is <b>here.</b><br>Link in bio.',1,'file:///home/claude/mahjmatchmaker-data/assets/mats/gallery/middle-main-mahjong--martha-mae-vintage-quilt.webp','MAHJ MATCHMAKER 2.0']];
+['LIVE','today','coquette.jpg','<span style="font-style:normal">Find</span> Your <span style="font-style:normal">Mat-ch<sup style="font-size:.45em">&trade;</sup></span> is <b>here.</b><br>Link in bio.',1,'file:///home/claude/mahjmatchmaker-data/assets/mats/gallery/middle-main-mahjong--martha-mae-vintage-quilt.webp','MAHJ MATCHMAKER 2.0']];
 (async()=>{const b=await chromium.launch();const p=await b.newPage({viewport:{width:1080,height:1920}});
 await p.goto('file://'+process.cwd()+'/cd.html');await p.evaluate(()=>document.fonts.ready);await p.waitForTimeout(600);
 for(const [n,d,t,l,big,mat,pill] of C){await p.evaluate(o=>setCard(o),{n,d,t,l,big,mat,pill});await p.waitForTimeout(300);

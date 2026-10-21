@@ -15,7 +15,8 @@ OUT = f'{R}/assets/social/titlecards/counseling-ep1-papaya'
 # REEL=1 (Oct 21, v11): render the full hotline reel body into frames/v11/ so tracked frames stay untouched;
 # reel.py then adds the animated ending (ending.py) and the v9-style soundtrack.
 REEL = os.environ.get('REEL') == '1'
-FR = OUT + ('/frames/v11' if REEL else '/frames')
+VER = os.environ.get('REEL_VER', 'v11')               # v12 (Oct 21): same build, X + heart profile card
+FR = OUT + (f'/frames/{VER}' if REEL else '/frames')
 os.makedirs(FR, exist_ok=True)
 
 MM = ('#062a55', '#f7b6c8', 'The Matchmaker')            # navy, blush text
@@ -70,17 +71,13 @@ def match(file, label, sub):
             f'<div class="line" style="font-size:96px;color:#062a55">{label}</div>'
             f'<div style="font:600 36px Bit;color:#c8325f;margin:22px 0 50px;letter-spacing:.04em">{sub}</div>'
             f'<img src="{u(CARDS + file)}" style="width:900px;border-radius:26px;box-shadow:0 26px 60px rgba(6,42,85,.22)"></div></body></html>')
+# Oct 21 (Tiffany): the Beige Felt mat is ONE recurring character asset, the same in Exhibit A and the swipe deck.
+BEIGE_FELT = 'assets/social/characters/beige-felt-mat.png'   # scripts/social/characters/beige_felt.py
 EVID = HEAD + f"""<div class="wrap" style="background:#efe4d6">
  <div style="background:#fff;color:#062a55;font:600 34px Bit;padding:18px 30px;border-radius:30px 30px 30px 6px;box-shadow:0 6px 18px rgba(0,0,0,.1);margin-bottom:46px;display:flex;align-items:center;gap:16px"><span style="width:56px;height:56px;border-radius:50%;background:url({u(TILE)}) center/cover;display:inline-block"></span>Papaya Spritz sent a photo</div><div style="font-family:Hand;font-size:110px;color:#062a55;margin-bottom:40px">Exhibit A</div>
  <div style="background:#fff;padding:30px 30px 120px;box-shadow:0 30px 60px rgba(0,0,0,.18);transform:rotate(-3deg)">
   <div style="width:720px;height:720px;background:#5d4a3a;display:flex;align-items:center;justify-content:center">
-   <svg width="640" height="640" viewBox="0 0 640 640" style="position:absolute;filter:drop-shadow(0 14px 18px rgba(0,0,0,.35))">
-    <defs><filter id="felt"><feTurbulence type="fractalNoise" baseFrequency="1.6" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .78  0 0 0 0 .70  0 0 0 0 .58  0 0 0 .55 0"/><feComposite in2="SourceGraphic" operator="in"/></filter></defs>
-    <rect x="0" y="0" width="640" height="640" rx="34" fill="#cdbca3"/>
-    <rect x="0" y="0" width="640" height="640" rx="34" fill="#cdbca3" filter="url(#felt)"/>
-    <rect x="26" y="26" width="588" height="588" rx="20" fill="none" stroke="#a8957b" stroke-width="5" stroke-dasharray="16 11"/>
-    <rect x="58" y="58" width="524" height="524" rx="8" fill="none" stroke="#b9a68b" stroke-width="2"/>
-   </svg>
+   <img src="{u(BEIGE_FELT)}" style="position:absolute;width:640px;height:640px;filter:drop-shadow(0 14px 18px rgba(0,0,0,.35))">
    <div style="position:relative;width:420px;height:420px;border-radius:50%;background:url({u(TILE)}) center/cover;-webkit-mask-image:radial-gradient(circle,#000 58%,transparent 72%)"></div></div>
   <div style="font-family:Hand;font-size:62px;color:#333;margin-top:22px">her + the beige felt mat</div></div>
  <div style="font:600 30px Bit;color:#062a55;opacity:.6;margin-top:70px;letter-spacing:.06em">(a made-up mat. no real mats were harmed.)</div>
@@ -110,9 +107,11 @@ RESEARCH = HEAD + f"""<div class="wrap" style="background:{MM[0]};color:{MM[1]};
   <div style="position:absolute;bottom:90px;left:0;right:0;text-align:center;font:600 26px Bit;letter-spacing:.2em;text-transform:uppercase;opacity:.55">mahj matchmaker</div>
 </div></body></html>"""
 
-RACKS = [('assets/racks/card/peace-love-mahjong-oak.png', 'Peace Love Mahjong Oak'),
+# Oct 21 (Tiffany): Papaya's racks = B&B Lavender, PLM Chartreuse, Middle & Main Scalloped Beechwood (replaces PLM Oak),
+# same order as the posted intro carousel (config/tile-racks-picks.json final_lists).
+RACKS = [('assets/colorcards/papaya-spritz/racks/bird-and-bamboo-lavender.png', 'Bird &amp; Bamboo Lavender'),
          ('assets/racks/card/peace-love-mahjong-chartreuse.png', 'Peace Love Mahjong Chartreuse'),
-         ('assets/colorcards/papaya-spritz/racks/bird-and-bamboo-lavender.png', 'Bird &amp; Bamboo Lavender')]
+         ('assets/racks/card/middle--main-scalloped-beechwood.png', 'Middle &amp; Main Scalloped Beechwood')]
 def prof(mat, name, brand, label, top=False):
     racks = ''.join(f'<div style="display:flex;align-items:center;gap:16px;margin-top:10px"><img src="{u(r)}" style="width:330px;height:34px;object-fit:cover;border-radius:6px"><span style="font:600 24px Bit;color:#5a6b85;text-align:left">{n}</span></div>' for r, n in RACKS)
     pill = ('<div style="position:absolute;top:44px;right:34px;transform:rotate(8deg);border:7px solid #c8325f;color:#c8325f;background:rgba(255,255,255,.9);'
@@ -171,11 +170,7 @@ G2 = 'assets/mats/gallery/'
 # ---- Animated swipe segment (Oct 19): teases Find Your Match without naming it. STATIC=1 env -> old static prof() frames (story version).
 STATIC = os.environ.get('STATIC') == '1'
 FPS = 30
-BEIGE_SVG = ('<svg width="900" height="860" viewBox="0 0 900 860" style="display:block"><defs><filter id="felt2"><feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="2" seed="7"/>'
-             '<feColorMatrix values="0 0 0 0 .76  0 0 0 0 .68  0 0 0 0 .56  0 0 0 .6 0"/><feComposite in2="SourceGraphic" operator="in"/></filter></defs>'
-             '<rect width="900" height="860" fill="#cdbca3"/><rect width="900" height="860" fill="#cdbca3" filter="url(#felt2)"/>'
-             '<rect x="40" y="40" width="820" height="780" rx="22" fill="none" stroke="#a8957b" stroke-width="6" stroke-dasharray="18 12"/>'
-             '<rect x="86" y="86" width="728" height="688" rx="8" fill="none" stroke="#b9a68b" stroke-width="2"/></svg>')
+BEIGE_CARD = f'<div style="width:900px;height:860px;background:#f3ece3 url({u(BEIGE_FELT)}) center/88% no-repeat"></div>'   # same asset as Exhibit A
 # (mat image or None for beige, name, brand line, verdict, hold, swipe seconds)
 SWIPES = [(None, 'Beige Felt', 'no brand', 'nope', 1.3, 0.55),
           (M + 'heiress-britt-mills.jpg', 'Heiress', 'Britt Mills', 'match', 1.2, 0.5),
@@ -190,10 +185,12 @@ LEAD, TAIL_HOLD = 0.4, 0.0
 HEART = '<svg width="{w}" height="{w}" viewBox="0 0 48 48"><path d="M24 40 C10 30 6 23 6 17 C6 11 11 7 16 7 C20 7 22 9 24 12 C26 9 28 7 32 7 C37 7 42 11 42 17 C42 23 38 30 24 40 Z" fill="{c}"/></svg>'
 def swipe_card(i, mat, name, brand, verdict):
     racks = ''.join(f'<div style="display:flex;align-items:center;gap:16px;margin-top:10px"><img src="{u(r)}" style="width:330px;height:34px;object-fit:cover;border-radius:6px"><span style="font:600 24px Bit;color:#5a6b85">{n}</span></div>' for r, n in RACKS)
-    top = BEIGE_SVG if mat is None else f'<div style="width:900px;height:860px;background:url({u(mat)}) center/cover"></div>'
+    top = BEIGE_CARD if mat is None else f'<div style="width:900px;height:860px;background:url({u(mat)}) center/cover"></div>'
     if verdict == 'nope':
-        stamp = ('<div class="stamp" style="position:absolute;top:60px;right:46px;transform:rotate(10deg);border:8px solid #e5484d;color:#e5484d;background:rgba(255,255,255,.88);'
-                 'font:700 92px Lo;letter-spacing:.08em;padding:0 26px;border-radius:16px;opacity:0">NOPE</div>')
+        # Oct 21: no NOPE/pass wording anywhere (profile UI = X + heart only). The 'not for her' card gets an X stamp.
+        stamp = ('<div class="stamp" style="position:absolute;top:56px;right:56px;transform:rotate(10deg);width:190px;height:190px;border-radius:50%;border:8px solid #062a55;'
+                 'background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;opacity:0">'
+                 '<svg width="96" height="96" viewBox="0 0 48 48"><path d="M13 13 L35 35 M35 13 L13 35" stroke="#062a55" stroke-width="7" stroke-linecap="round"/></svg></div>')
     else:
         stamp = ('<div class="stamp" style="position:absolute;top:60px;left:46px;transform:rotate(-10deg);border:8px solid #c8325f;color:#c8325f;background:rgba(255,255,255,.88);'
                  'font:700 92px Lo;letter-spacing:.08em;padding:0 26px;border-radius:16px;opacity:0">MATCH</div>')
@@ -276,9 +273,9 @@ OLD_ENDING = [
     (HEAD + f"""<div class="wrap" style="background:{END[0]};color:{END[1]}">
       <img src="{u('assets/brand/flame-heart.png')}" style="width:150px;margin-bottom:40px">
       <img src="{u('assets/brand/mahjmatchmaker-wordmark-notag.png')}" style="width:720px">
-      <div class="line" style="font-size:92px;margin-top:36px">Hooking up <i>tiles, mats</i> &amp; <i>racks.</i></div>
+      <div class="line" style="font-size:92px;margin-top:36px">Hooking up <i>tiles,</i><br><i>mats</i> &amp; <i>racks.</i></div>
       <div style="font-family:Lo;font-size:54px;color:#062a55;margin-top:60px;line-height:1.25">Swipe your own matches.<br>Every tile, mat &amp; rack, <i>swappable.</i></div>
-      <div style="margin-top:56px;background:#062a55;color:#fff;border-radius:999px;padding:26px 54px;font:600 48px Bit">Find Your Match &middot; 10.27</div>
+      <div style="margin-top:56px;background:#062a55;color:#fff;border-radius:999px;padding:26px 54px;font:600 48px Bit">Find <i>Your</i> Mat-ch<sup style="font-size:.35em;vertical-align:super">&trade;</sup> &middot; 10.27</div>
       <div style="font:600 32px Bit;color:#062a55;opacity:.7;margin-top:26px">mahjmatchmaker.com</div></div></body></html>""", 3.6),
 ]
 
@@ -332,7 +329,7 @@ async def main():
         for fn, d, paced in entries:
             f.write(f"file '{fn}'\nduration {round(max(d * PACE, 1.8), 2) if paced else round(d, 5)}\n")
         f.write(f"file '{entries[-1][0]}'\n")
-    name = 'v11-body' if REEL else 'counseling-session-1-papaya-spritz' + ('-static' if STATIC else '')
+    name = f'{VER}-body' if REEL else 'counseling-session-1-papaya-spritz' + ('-static' if STATIC else '')
     if REEL:
         # Oct 21 (v11): frame-exact body. Every still gets an exact frame count (cut points on the 1/30 s grid, cumulative
         # rounding) and the swipe frames are encoded 1:1, so no swipe frame is ever dropped or doubled (the concat-demuxer

@@ -126,7 +126,7 @@ html,body{{background:{'var(--cream)' if OPEN else '#f6e9df'}}}
 <div class="card">{inner}
  <div class="sign"><img src="{url('assets/brand/mahjmatchmaker-wordmark-notag.png')}"><span>Dating profile</span></div>
 </div>
-<div class="btns">{SP.btn(SP.X, '#054689', 112, 50, stroke=6)}{SP.btn(SP.HEART, '#fff', 112, 54, fill='#fff', stroke=2, bg='#f56c8c')}</div>
+<div class="btns">{SP.buttons(112, 50, 54)}</div>
 </body></html>"""
 
 async def main():
