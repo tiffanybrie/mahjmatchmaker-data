@@ -66,10 +66,12 @@ Mahj Mood affiliate follow-up, Amore Mahjong customer-message reply, Let's Be Be
 - UpPromote "Confirm Your Payment Info Update" OTPs stay in the inbox (time-sensitive). They get the Programs label.
 - Pinterest, Facebook and other non-mahjong promos: untouched (Gmail's Promotions tab already holds them).
 
-## Status (Oct 21, ~3pm ET)
-- mahjmatchmaker@: all 10 filters are live and were applied to existing mail. The inbox went from 1,040 threads to 765. Label counts: Orders 48, Approved 30 (all marked read), Payouts 3, Needs a look 1 (the Rakuten/Etsy decline), Programs 51, Newsletters 220, Partners 6 (hand-labelled), Share your table 1. Contact form, Album requests and Signups are 0 so far, because those form notifications go to tiffanybrie@.
-- tiffanybrie@: all 10 filters are live and were applied to existing mail (Orders 89, Approved 100, Payouts 100, Album requests 5, Newsletters 100+). This import already includes the Programs `-subject:"referral order"` fix.
-- STILL TO DO, waiting on Chrome (it was restarted mid-task):
-  1. Both accounts: edit the "Affiliate/Needs a look" filter to the v2 query above. mahjmatchmaker@ still runs v1, which only ever matched the Rakuten decline. tiffanybrie@ v1 over-matched.
-  2. tiffanybrie@: remove the "Affiliate/Needs a look" label from the ~71 wrong threads. These are Amazon item-cancelled / payment-declined / Subscribe & Save, Zappos payment declined, Etsy transaction-cancelled (2016-17), Airbnb cancellations, People news, KidStuff, ComEd, Isagenix and Stacie Bloomfield. Keep it only on Bam Bird Boutique "affiliate account has been denied". Nothing was archived by this filter. It did add "important" to those threads, and that can't be undone exactly, because some were already important.
-  3. tiffanybrie@: spot-check the Brands/Newsletters and Affiliate/Programs labels for anything personal.
+## Status (Oct 21, evening): DONE
+- Both accounts run the current queries for all 10 filters. Needs a look is v2. Programs now matches `from:awin.com` instead of "invited you to join", which was catching Facebook, Slack and Redfin invites. Newsletters also excludes amazon.com, venmo.com, shop.app, redditmail.com, judge.me, etsy.com and lettuce.com. config/gmail-filters.xml matches.
+- tiffanybrie@ cleanup:
+  - Removed "Needs a look" from 71 wrong threads. Only the Bam Bird Boutique denial keeps it. The "important" marks were left alone because they can't be told apart.
+  - Removed "Programs" from 19 personal invite threads.
+  - Removed "Newsletters" from about 195 Amazon/Venmo/Reddit/Shop/judge.me threads, and moved the 25 from the last 30 days back to the inbox.
+- Side effect fixed: during the cleanup, keystrokes landed as Gmail shortcuts and muted those 19 invite threads. They were unmuted, and the 5 that had been in the inbox were moved back. A stray star and an empty forward draft were removed.
+- tiffanybrie@ already had her own filter "category:promotions → Skip Inbox", so brand promos there were mostly archived before this.
+- mahjmatchmaker@ counts: inbox 1,040 → 765. Orders 48, Approved 30, Payouts 3, Needs a look 1, Programs 51, Newsletters 220, Partners 6, Share your table 1.
