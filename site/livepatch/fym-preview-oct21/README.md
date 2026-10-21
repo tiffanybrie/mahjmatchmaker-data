@@ -2,7 +2,7 @@
 
 Tiffany, Oct 21 2:19pm: "you have approval to change whatever needs to happen over on the Find Your Match preview page. I'd like that looking a lot better."
 
-- **Now (LIVE Oct 21, block @aa2495c):** hidden page `/find-your-mat-ch-preview` (Not Linked). Its only section holds ONE code block; paste `page-block.html` into it.
+- **Now (LIVE Oct 21 ~5:15pm, block @3e523cd: app first, annotated tutorial at the bottom, QA passed):** hidden page `/find-your-mat-ch-preview` (Not Linked). Its only section holds ONE code block; paste `page-block.html` into it.
 - **10/27 launch:** the same `page-block.html` replaces the teaser code block on `/find-your-match` (page id `6ad6f62ad05b752bba9d1e8d`, section `6ad6f62ad05b752bba9d1e91`, code block `#block-2da981e143ed2cc4bb76`). This is step 0a in `site/livepatch/launch-oct27/README.md`. It runs before the homepage hero switch, whose step 0 checks that `/find-your-match` no longer says "Coming 10.27".
 
 ## What's on the page

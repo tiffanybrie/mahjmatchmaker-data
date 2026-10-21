@@ -41,7 +41,7 @@ Look: blush email background `#fbe3ea`, warm white content `#fffdfa`, cream head
 
 Launch email = a Find *Your* Mat-ch™ TUTORIAL (Tiffany, Oct 21 3:13/3:14pm: "You can't preview the Find Your Match tool with match cards"). No match-card fan and no hero image (QA: weight). 6 steps, each a Caprasimo step-title image + a real app screen in an iPhone frame (240x468 JPEG, ~16-20 KB) + one live sentence: pick your door, swipe ✕/♥, my picks on/off, colour dots, racks, save your match card. Then "Hope you love it!" and "Something look off or have an idea? Tell me here →" (/find-your-mat-ch-feedback). Images: `site/email/assets/fym/` (from `scripts/fym_promo/capture.py` + `render.py`; alt text in manifest.json). `python3 site/email/build.py shots cdn` writes pinned jsDelivr srcs for Squarespace.
 
-Headlines are IMAGES (Caprasimo, brand colours, 2x, light PNGs, alt text) in all five emails: H1s, "Hi, I'm Tiffany!", section heads, step titles. Body stays live text. Squarespace font packs are web-safe stacks only: use **Narrow Serif** (Palatino, Baskerville, Garamond stack), the closest to Lora. Build lint: one "!" max and no ALL CAPS in subjects, every image has alt text, ≤600 KB images, live words ≥ 10 per image.
+Headlines are IMAGES (Caprasimo, brand colours, 2x, light PNGs, alt text) in all five emails: H1s, "Hi, I'm Tiffany!", section heads, step titles. Body stays live text. Squarespace font packs are web-safe stacks only: use **Book Serif** (= the Palatino, Baskerville, Garamond stack; checked in the editor Oct 21, Narrow Serif is the Times stack), the closest to Lora. Build lint: one "!" max and no ALL CAPS in subjects, every image has alt text, ≤600 KB images, live words ≥ 10 per image.
 
 ## 3. Approval
 
@@ -87,6 +87,10 @@ Never send any email to her list without her one-time template yes. Never send t
 - Every FYM promo (launch email, FYM page, app page footer) links "Something look off or have an idea? Tell me here →" to the hidden page /find-your-mat-ch-feedback (Not Linked). Its form ("FYM Feedback": what were you doing / what happened or your idea / optional email) notifies mahjmatchmaker@gmail.com.
 - Gmail filter (docs/GMAIL-FILTERS.md #11) labels it **Site/FYM feedback**, skips the inbox, marks it read.
 - **Claude reads that label every day** (HQ cleanup task), fixes what it can (photo, match, bug: with the FYM gate + QA), and surfaces to Tiffany ONLY decisions only she can make, as one HQ need.
+
+## Draft status (Oct 21, ~5:30pm)
+- Squarespace draft 6ad90449db1bc22351dc7e9d rebuilt to match `templates/launch.html`: subject "It's here! Find Your Mat-ch is live 💕"; sections = logo, "It's here!" image, intro text, 5 × (step image with the title baked in + caption text), Start swiping button, tail text (Hope you love it! / Tell me here → /find-your-mat-ch-feedback / code / sign-off), footer. Every image has alt text. Font pack Book Serif. Not scheduled, not sent; Sender Details and Legal Address still empty (waiting on Tiffany).
+- Image upload method that works in the email editor: select the image section with a real click, hover it, click REPLACE, click UPLOAD FILE, then set the section's own input[type=file] with a DataTransfer and dispatch change. (The UPLOAD FILE click may also open the OS file picker on her Mac; cancel it.) Text sections: focus the ProseMirror editor, execCommand selectAll + delete, then dispatch a paste ClipboardEvent with text/html.
 
 ## Changelog
 - 2026-10-21 15:40: Launch email rebuilt as a FYM tutorial with real app screens (no match-card fan, no hero), Caprasimo headline images in all five, subject with one "!" and no ™, feedback link + routing. RTS d-email-templates hidden until the new version passes QA.
