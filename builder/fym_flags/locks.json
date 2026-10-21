@@ -12650,6 +12650,20 @@
      ]
     ],
     [
+     "www.ohmymahjong.com/vivienne-mat-in-tube",
+     [
+      "www.ohmymahjong.com/white-rack-pusher",
+      "www.ohmymahjong.com/hot-pink-rack-pusher",
+      "bb:Pink Coral",
+      "bb:Hot Pink Metallic",
+      "bb:Jade",
+      "bb:Light Blue",
+      "missmahjong.com/cornflower-blue-scalloped-acrylic-racks",
+      "www.middleandmainmahjong.com/golden-grain-beechwood-mahjong-rack-and-pusher-set-of-4",
+      "plm:Chartreuse"
+     ]
+    ],
+    [
      "www.ohmymahjong.com/penelope-mat-in-tube",
      [
       "bb:Orange",
@@ -27180,6 +27194,13 @@
    "field": "src/full/pile",
    "change": "assets/tiles/album/classic-tortoise-cream.jpg (tile photo audit upgrade)",
    "approval": "Tiffany 6:57pm: current album photo has a confetti mat behind the tiles; use her isolated PNG composited on cream; everywhere on the site. She will shoot a real pile later."
+  },
+  {
+   "date": "2026-10-21",
+   "set": "sunset",
+   "field": "m",
+   "change": "added Vivienne (www.ohmymahjong.com/vivienne-mat-in-tube) at #4, racks Sunset tile racks + Vivienne mat racks",
+   "approval": "Tiffany Oct 21 7:15pm: if Vivienne matches Papaya Spritz it should match Sunset too (album card #4). Her real pick."
   }
  ]
 }
