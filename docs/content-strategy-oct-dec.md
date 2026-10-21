@@ -275,3 +275,9 @@ Rules that apply every week:
   5. The pinned and highlight FYM graphics say "Launching Tuesday, Oct 27"; make "live" versions.
   6. A Rattan holiday pin is scheduled Nov 3 while the Sunday Rattan mat isn't buyable. It links to the holiday matches page, so it's left as is; reschedule if Tiffany prefers.
 - **Pinterest:** keep 2 to 3 new pins a day about 7 days ahead (`config/pinterest/queue.json`). Holiday-heavy Nov 1 to Dec 12, evergreen after.
+
+## Own photography + brand collabs (Tiffany, Oct 21 3:10pm)
+- No OMM collab invite for Papaya. A collab should be "my favorite OMM mats with <set>", shot by her, not match cards and not OMM's own product photos. Revisit collabs after Find Your Mat-ch launches and the account has more posts.
+- New habit to build: when a brand offers a pre-order (OMM gave teachers early access to Papaya, a first), buy the set early and shoot her own styled table / ShopMy shots (IRL content in the Mahj Lately style) alongside the matches. IRL photos + matches + collabs = the edge.
+- Mats she has on hand now: Larkspur (for an upcoming giveaway).
+- Watch for future pre-orders and flag them to her the day they open.
