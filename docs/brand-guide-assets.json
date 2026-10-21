@@ -1,0 +1,44 @@
+{
+  "_note": "Best current example image for each recurring asset, colour and font in docs/BRAND-GUIDE.md (Oct 21, 2026). Paths are repo-relative. 'verify' marks an example known to be stale.",
+  "assets": {
+    "profile_card": {"example": "assets/colorcards/papaya-spritz/00-papaya-spritz-mahjong-tiles-profile-d-story.jpg", "builder": "scripts/social/tileprofile/swipe_profile.py", "data": "config/profiles/papaya-spritz.json"},
+    "profile_carousel": {"example": "assets/social/papaya-spritz-launch/intro-framed/1.jpg", "builder": "scripts/social/tileprofile/intro_framed.py"},
+    "its_a_match_card": {"example": "assets/social/its-a-match/samples/papaya-A-feed.jpg", "story": "assets/social/its-a-match/samples/papaya-A-story.jpg", "builder": "scripts/social/its_a_match/render.py", "verify": "samples still show the @mahjmatchmaker line removed Oct 21; re-render with --variant A"},
+    "match_card": {"example": "assets/cards/papaya-spritz/papaya-spritz-mahjong-tiles-anders-ruff-bams-and-bubbly-mat.jpg", "folder": "assets/cards/papaya-spritz/"},
+    "mood_board": {"example": "assets/moodboards/rackin-rudolph/rackin-rudolph-social-1080x1920.jpg", "pinterest": "assets/moodboards/rackin-rudolph/rackin-rudolph-pinterest-1000x1500.jpg", "amazon": "assets/moodboards/rackin-rudolph/rackin-rudolph-amazon-1080x1350.jpg", "builder": "scripts/moodboard/render.py"},
+    "end_card": {"example": "assets/social/titlecards/counseling-ep1-papaya/frames/v12/end_card.mp4", "hook": "assets/social/titlecards/counseling-ep1-papaya/frames/v12/end_hook.mp4", "builder": "scripts/social/titlecards/ending.py"},
+    "pink_laptop": {"example": "assets/social/titlecards/counseling-ep1-papaya/frames/f11.png", "builder": "scripts/social/titlecards/build.py (RESEARCH)", "verify": "screen shows PLM Oak (replaced Oct 21) and a too-small ribbon logo"},
+    "beige_felt_mat": {"example": "assets/social/characters/beige-felt-mat.png", "builder": "scripts/social/characters/beige_felt.py"},
+    "album_cover": {"example": "assets/covers/albums/v2/00-papaya-spritz-mahjong-tiles-cover-uniform.jpg"},
+    "grid_rule_d": {"example": "assets/social/feed-mockup-D-row-per-set.png"},
+    "highlight_covers": {"example": "assets/social/highlights/style-A/01-find-your-match.png"},
+    "wordmark_notag": {"example": "assets/brand/mahjmatchmaker-wordmark-notag.png"},
+    "wordmark_ribbon": {"example": "assets/brand/mahjmatchmaker-wordmark.png", "verify": "ribbon reads 'Matching mahjong tiles, mats & racks', not the brand line"},
+    "seal_c": {"example": "assets/brand/seal/instagram-profile-seal-C-1080.jpg"},
+    "flame_heart": {"example": "assets/brand/flame-heart.png", "holiday": "assets/brand/flame-heart-holiday.png"}
+  },
+  "colors": {
+    "wordmark_navy": {"hex": "#054689", "example": "assets/brand/mahjmatchmaker-wordmark-notag.png"},
+    "deep_navy": {"hex": "#062a55", "example": "assets/social/titlecards/counseling-ep1-papaya/frames/f11.png"},
+    "rose_pink": {"hex": "#c8325f", "example": "assets/colorcards/papaya-spritz/00-papaya-spritz-mahjong-tiles-profile-d-story.jpg"},
+    "headline_pink": {"hex": "#d6336c", "example": "assets/social/its-a-match/samples/papaya-A-feed.jpg"},
+    "heart_pink": {"hex": "#f56c8c", "example": "assets/social/its-a-match/samples/papaya-A-feed.jpg"},
+    "blush": {"hex": "#f7b6c8", "example": "assets/social/titlecards/counseling-ep1-papaya/frames/f11.png"},
+    "pink_cream": {"hex": "#fbe3ea", "example": "assets/social/titlecards/counseling-ep1-papaya/frames/v12/end_card.mp4"},
+    "paper_cream": {"hex": "#faf3ea", "example": "assets/moodboards/rackin-rudolph/rackin-rudolph-amazon-1080x1350.jpg"},
+    "warm_cream": {"hex": "#f6e9df", "example": "assets/social/titlecards/counseling-ep1-papaya/contact-sheet.jpg"},
+    "pink_laptop": {"hex": ["#f4a7bd", "#f9c6d4", "#ec93ad"], "example": "assets/social/titlecards/counseling-ep1-papaya/frames/f11.png"},
+    "holiday_red": {"hex": "#b3202a", "example": "assets/moodboards/rackin-rudolph/rackin-rudolph-social-1080x1920.jpg", "scope": "holiday only"},
+    "holiday_pine": {"hex": "#1f5a3a", "example": "assets/moodboards/rackin-rudolph/rackin-rudolph-social-1080x1920.jpg", "scope": "holiday only"},
+    "arrow_ink": {"hex": "#2b2623", "example": "assets/moodboards/rackin-rudolph/rackin-rudolph-social-1080x1920.jpg", "scope": "mood board arrows only"}
+  },
+  "fonts": {
+    "Caprasimo": {"file": "scripts/social/tileprofile/fonts/Caprasimo.ttf", "use": "display titles", "example": "assets/moodboards/rackin-rudolph/rackin-rudolph-social-1080x1920.jpg"},
+    "Caveat Bold": {"file": "scripts/social/tileprofile/fonts/Caveat-Bold.ttf", "use": "It's a mat-ch! headline", "example": "assets/social/its-a-match/samples/papaya-A-feed.jpg"},
+    "Playfair Display italic": {"file": "scripts/social/tileprofile/fonts/playfair-display-latin-400-italic.woff2", "use": "taglines", "example": "assets/moodboards/rackin-rudolph/rackin-rudolph-social-1080x1920.jpg"},
+    "Lora": {"file": "/usr/share/fonts/truetype/google-fonts/Lora-Variable.ttf", "use": "Set ♥ Mat names, brand line on It's a mat-ch!, title-card lines", "example": "assets/social/titlecards/counseling-ep1-papaya/frames/f11.png"},
+    "Bitter": {"file": "scripts/social/tileprofile/fonts/bitter-latin-600-normal.woff2", "use": "spaced caps kickers, pills", "example": "assets/social/its-a-match/samples/papaya-A-feed.jpg"},
+    "Poppins": {"file": "/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf", "use": "profile section caps (VERIFY)", "example": "assets/social/titlecards/counseling-ep1-papaya/frames/f11.png"},
+    "Adventures Unlimited / Allison": {"file": "Canva font (Adventures Unlimited); Allison via Google Fonts in scripts/moodboard/render.py", "use": "handwritten product labels with arrows only", "example": "assets/moodboards/rackin-rudolph/rackin-rudolph-amazon-1080x1350.jpg"}
+  }
+}
