@@ -10,7 +10,7 @@
 - project docs
 
 Update what exists instead of starting over. Example: the launch-day homepage hero was already designed in site/livepatch/nav-plan (match-card fan), then rebuilt from scratch by mistake.
-**When a draft changes, update HQ / Ready to Ship IN THE SAME TURN (Tiffany, Oct 21 3:16pm).** If she rejects a draft or asks for a rebuild, immediately mark the HQ / Ready to Ship item "being rebuilt, nothing to review yet", or hide the old version, so she never reviews an outdated draft. When the new version is ready, replace the item in place; never add a second copy. Every agent that changes a draft does this itself.
+**When a draft changes, update HQ / Ready to Ship IN THE SAME TURN (Tiffany, Oct 21 3:16pm).** If she rejects a draft or asks for a rebuild, immediately HIDE the HQ / Ready to Ship item. Use parked/archived status, take it out of the NOW list, and show no "being rebuilt" notices. Her words, 3:17pm: "Don't put it in front of me unless I can actually answer the question." She must never see an outdated draft. When the new version is ready, replace the item in place; never add a second copy. Every agent that changes a draft does this itself.
 **HQ is her one front door.** A daily 6:47am ET scheduled task cleans HQ + Ready to Ship per docs/HQ-CLEANUP.md. Whenever she answers something in chat, close or update the matching HQ/Ready to Ship item the same turn. Never leave an item asking for something she already gave.
 
 **WHEN THERE'S NO TASK IN HAND, WORK THIS LIST (Tiffany, Oct 21 2:06pm, after the Pinterest boards sat empty: "when I catch you not doing anything… there's things like that that aren't done").** Check each channel's real state, then fix what's thin. Being "set up" doesn't count:
