@@ -37,7 +37,7 @@ STEPS = [
          labels=[('Your shortlist: every mat you ♥', ROSE, 'bottom', 135, 1148), ('Mock up your match', NAVY, 'bottom', 322, 1148)]),
     dict(title='Mock up your match', screen='racks', crop=(1320, 2120),
          caption='See your tiles, mat and racks together. Swipe racks the same way, then tap Make it&nbsp;official.',
-         alt='The mock-up step: Papaya Spritz tiles on the Heiress mat with Tiffany’s rack match, Middle & Main Scalloped Beechwood. Arrows point to the mat and to the rack.',
+         alt='The mock-up step: Papaya Spritz tiles on the Heiress mat with Tiffany’s rack match, Middle & Main Scalloped Beechwood. Arrows point to the rack and to the X and heart buttons for swiping racks.',
          labels=[('Your tiles + mat, together', NAVY, 'top', 110, 1400), ('Swipe racks: ✕ or ♥', ROSE, 'bottom', 195, 2085)],
          email=[((1792, 2120), [('My rack pick', NAVY, 'top', 230, 1860), ('Swipe racks: ✕ or ♥', ROSE, 'bottom', 195, 2085)])]),
     dict(title='Save and share', screen='card', crop=(2362, 3020),

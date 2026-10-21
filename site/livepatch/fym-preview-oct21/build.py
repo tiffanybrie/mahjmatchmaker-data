@@ -87,7 +87,8 @@ CSS = r'''
 .fx-lock{display:inline-flex;flex-direction:column;width:230px;margin:0 auto 22px}
 .fx-lock img{width:100%;height:auto}
 .fx-lock b{display:block;margin-top:.5em;background:var(--heart);color:#fff;font:700 8.3px/1 'Bitter',Georgia,serif;letter-spacing:.15em;text-align:center;white-space:nowrap;padding:.5em 0 .45em;border-radius:3px}
-#fymx h1{font-size:clamp(46px,11.5vw,84px);line-height:1;word-spacing:-.08em}
+#fymx h1{font-size:clamp(46px,11.5vw,84px);line-height:1;word-spacing:0}
+#fymx h1 em{padding-right:.08em}
 #fymx h1 sup{font-family:'Bitter',Georgia,serif;font-size:.28em;vertical-align:top;line-height:1;position:relative;top:.35em;margin-left:.08em;color:var(--navy)}
 .fx-lede{font:500 clamp(18px,4.6vw,22px)/1.45 'Lora',Georgia,serif;color:var(--navy2);max-width:30em;margin:18px auto 0!important}
 .fx-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;margin-top:28px;min-height:62px;padding:0 40px;border-radius:999px;background:var(--rose);color:#fff!important;text-decoration:none!important;font:700 21px/1 'Bitter',Georgia,serif;box-shadow:0 14px 30px rgba(200,50,95,.32);transition:transform .15s ease,box-shadow .15s ease;cursor:pointer;border:0}
@@ -102,7 +103,7 @@ CSS = r'''
 @media (min-width:980px){
   .fx-hero{padding:40px 0 30px}
   .fx-lock{margin:0 0 26px}
-  .fx-lede{margin:20px 0 0!important}
+  .fx-lede{margin:20px auto 0!important}
   .fx-phones{width:100%;max-width:540px}
 }
 /* how it works */
