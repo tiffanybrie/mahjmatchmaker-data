@@ -453,6 +453,7 @@ Never put drop shadows or other effects on text.
   - Slide 2 = the real album match card (tiles + mat + racks) in a soft white frame, header "From <Set>'s album", with short labels: mat · brand, then the racks named exactly as on the card. No colour theory.
   - Slide 3 = Find *Your* Mat-ch™ preview: a phone showing the real swipe view (tiles + the top mat, ✕ and ♥ only) with "Swipe your own matches · mahjmatchmaker.com". **No dates in the template**: these carousels run after the Oct 27 launch, when the tool is live.
   - Plus a 1080×1920 story version of slide 1 for brand reshares, key content inside the safe band.
+- 2026-10-21 11:55 (Tiffany): **Sunday = a guy in narrative pieces (him).** He's the retro-cool James Dean type: a vintage Bakelite throwback with butterscotch backs. He plays hard to get (he's always in demand and sells out), loves thrifting, and is classic because he reaches back in time. "Loves to play hard to get" belongs in his album and profile. Short pieces still use "Sunday" by name. His lines should also read fine with no pronoun.
 
 ## VERIFY list
 
