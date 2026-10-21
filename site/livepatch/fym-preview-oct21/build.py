@@ -1,0 +1,306 @@
+#!/usr/bin/env python3
+"""Find Your Mat-ch page code block (hidden /find-your-mat-ch-preview now; same block goes on /find-your-match on 10/27).
+
+python3 build.py  ->  page-block.html   (paste into the page's single code block)
+
+Tiffany Oct 21 2:19pm: "change whatever needs to happen over on the Find Your Match preview page. I'd like that looking a lot better."
+Sections: hero (lockup, Find *Your* Mat-ch(TM), one line, big Start button, Papaya top-3 match-card fan with X + heart)
+-> 3-step how it works (real app screenshots from live v69 + the app's own match card) -> the app, big, with Open full screen
+-> Good to know (FAQ) -> match albums strip -> quiet disclosure.
+
+App: static copy of the live artifact 6epA9HuEdT32zUp79Qv3kd, v69 = scratchpad build fym-oct21e (gate PASS).
+  index.html pinned on branch fym-site-preview @474dd62 (site-app/fym-oct21e/index.html); every other file is identical to
+  fym-oct21d, so <base> points at site-app/fym-oct21d/ on the same commit. jsDelivr serves .html as text/plain + nosniff,
+  so the HTML is fetched and run in a same-origin srcdoc iframe.
+  To ship a newer FYM build: push its index.html (and any changed files) to fym-site-preview, then update APP_INDEX/APP_BASE.
+"""
+import os, html
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+CDN = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@'
+ASSET = CDN + '8952b136784680ba365a33d7ae13ba91a25ab561/assets/site/fym-page/'
+WORDMARK = CDN + '8952b136784680ba365a33d7ae13ba91a25ab561/assets/brand/mahjmatchmaker-wordmark-notag.png'
+APP_COMMIT = '474dd62e5bc5d8ee78de79422d11e1f82b07be16'
+APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-oct21e/index.html'
+APP_BASE = CDN + APP_COMMIT + '/site-app/fym-oct21d/'
+
+# Her live Papaya Spritz album order (Oct 21): #1 Heiress (Britt Mills), #2 Press for Mahjong (Anders Ruff), #3 Greenly (Mahj & Vine).
+# Cards cropped above their code band (no % anywhere).
+FAN = [
+    ('papaya-spritz-britt-mills-heiress-fan-1.webp', 'Papaya Spritz tiles on the Heiress mat by Britt Mills, with racks'),
+    ('papaya-spritz-anders-ruff-press-for-mahjong-fan-2.webp', 'Papaya Spritz tiles on the Press for Mahjong mat by Anders Ruff'),
+    ('papaya-spritz-mahj-and-vine-greenly-fan-3.webp', 'Papaya Spritz tiles on the Greenly mat by Mahj & Vine'),
+]
+STEPS = [
+    ('fym-step1-pick-tiles-or-mat.webp', 860, 1215, 'Pick your tiles or your&nbsp;mat',
+     'Start with the tile set you own, or flip it and start with your mat. Shop by color or search by&nbsp;name.',
+     'Find Your Mat-ch start screen: I have tiles or I have a mat, color chips and tile sets'),
+    ('fym-step2-swipe-papaya-heiress.webp', 600, 1145, 'Swipe <span class="x">&#10005;</span> or <span class="h">&#9829;</span>',
+     'Tap &#9829; on the mats you love and &#10005; on the ones that aren&rsquo;t the one. Tiffany&rsquo;s own picks come&nbsp;first.',
+     'Swiping mats for Papaya Spritz tiles: the Heiress mat by Britt Mills, with the X and heart buttons'),
+    ('fym-step3-match-card-papaya-heiress.webp', 800, 1000, 'Save your match&nbsp;card',
+     'Add racks, then save or share a match card with every piece and code&nbsp;MAHJMATCH.',
+     'A saved match card: Papaya Spritz tiles on the Heiress mat with Beechwood racks'),
+]
+# First albums on the live albums page (Oct 21), with their live pinned covers.
+ALBUMS = [
+    ('papaya-spritz', 'Papaya Spritz', CDN + '3091240/assets/covers/albums/w800/00-papaya-spritz-mahjong-tiles-cover.jpg'),
+    ('sunday-tile-set', 'Sunday', CDN + 'e34138fda6c04c9c524983f81e828305eb54531a/assets/cards/sunday-tile-set/00-sunday-tile-set-mahjong-tiles-cover.jpg'),
+    ('coquette', 'Coquette', CDN + '27a6eb2b447221b2e11c4307064dc2f67d9a818d/assets/covers/albums/w800/00-coquette-mahjong-tiles-cover.jpg'),
+    ('seabreeze', 'Seabreeze', CDN + '27a6eb2b447221b2e11c4307064dc2f67d9a818d/assets/covers/albums/w800/00-seabreeze-mahjong-tiles-cover.jpg'),
+    ('talulah', 'Talulah', CDN + '27a6eb2b447221b2e11c4307064dc2f67d9a818d/assets/covers/albums/w800/00-talulah-mahjong-tiles-cover.jpg'),
+    ('osler', 'Osler', CDN + '27a6eb2b447221b2e11c4307064dc2f67d9a818d/assets/covers/albums/w800/00-osler-mahjong-tiles-cover.jpg'),
+]
+FAQ = [
+    ('Who picks the matches?',
+     'Every mat marked <b>Tiffany&rsquo;s match</b> is her own pick, straight from her match albums. Tap &ldquo;Tap to see everything&rdquo; to swipe the whole library and make your own&nbsp;matches.'),
+    ('I already have a mat. Can I start there?',
+     'Yes. Tap <b>I have a mat</b> and swipe through tile sets that match it, then add&nbsp;racks.'),
+    ('How do I save?',
+     'Use code <b>MAHJMATCH</b> to save at 30+ partner brands. Your match card links every piece, and each brand&rsquo;s code page has the&nbsp;details.'),
+    ('Does it cost anything?',
+     'No. Find <em>Your</em> Mat-ch is free, with nothing to sign up for. Swipe as much as you&nbsp;like.'),
+]
+
+CSS = r'''
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Bitter:wght@500;600;700&family=Lora:ital,wght@0,500;0,700;1,500&family=Caveat:wght@700&display=swap');
+#fymx{--navy:#054689;--navy2:#062a55;--rose:#c8325f;--pink:#d6336c;--heart:#f56c8c;--blush:#f7b6c8;--pc:#fbe3ea;--cream:#faf3ea;--ink:#2a2440;
+  position:relative;box-sizing:border-box;color:var(--ink);font-family:'Bitter',Georgia,serif;overflow-x:clip;background:var(--cream)}
+#fymx *,#fymx *::before,#fymx *::after{box-sizing:border-box}
+#fymx img{max-width:100%;display:block}
+#fymx h1,#fymx h2,#fymx h3{font-family:'Caprasimo',Georgia,serif;font-weight:400;color:var(--navy);margin:0;letter-spacing:0;text-wrap:balance;line-height:1.05;text-transform:none}
+#fymx h1 em,#fymx h2 em{font-style:italic;color:var(--rose)}
+#fymx p{margin:0;text-wrap:pretty}
+#fymx a{color:inherit}
+#fymx .nb{white-space:nowrap}
+.fx-wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.fx-kick{font:700 13px/1 'Bitter',Georgia,serif;letter-spacing:.18em;text-transform:uppercase;color:var(--rose);margin-bottom:12px!important}
+/* hero */
+.fx-hero{position:relative;padding:44px 0 56px;overflow:hidden;background:radial-gradient(circle at 78% 46%,var(--pc) 0,var(--pc) 34%,transparent 34.2%),radial-gradient(circle at 4% 100%,#fdeef2 0,#fdeef2 16%,transparent 16.2%),var(--cream)}
+.fx-hero .fx-wrap{display:grid;grid-template-columns:1fr;gap:34px;align-items:center}
+.fx-copy{text-align:center;position:relative;z-index:2}
+.fx-lock{display:inline-flex;flex-direction:column;width:230px;margin:0 auto 22px}
+.fx-lock img{width:100%;height:auto}
+.fx-lock b{display:block;margin-top:.5em;background:var(--heart);color:#fff;font:700 8.3px/1 'Bitter',Georgia,serif;letter-spacing:.15em;text-align:center;white-space:nowrap;padding:.5em 0 .45em;border-radius:3px}
+#fymx h1{font-size:clamp(46px,11.5vw,84px);line-height:1}
+#fymx h1 sup{font-family:'Bitter',Georgia,serif;font-size:.24em;vertical-align:top;position:relative;top:.3em;margin-left:.06em;color:var(--navy)}
+.fx-lede{font:500 clamp(18px,4.6vw,22px)/1.45 'Lora',Georgia,serif;color:var(--navy2);max-width:30em;margin:18px auto 0!important}
+.fx-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;margin-top:28px;min-height:62px;padding:0 40px;border-radius:999px;background:var(--rose);color:#fff!important;text-decoration:none!important;font:700 21px/1 'Bitter',Georgia,serif;box-shadow:0 14px 30px rgba(200,50,95,.32);transition:transform .15s ease,box-shadow .15s ease;cursor:pointer;border:0}
+.fx-btn:hover{transform:translateY(-2px);box-shadow:0 18px 36px rgba(200,50,95,.38)}
+.fx-btn span{font-size:.95em}
+.fx-under{margin-top:16px!important;font-size:15px;line-height:1.5;color:#4b4560}
+.fx-under b{color:var(--navy);letter-spacing:.04em}
+.fx-under a{color:var(--navy);font-weight:700;text-decoration:underline;text-decoration-color:var(--blush);text-underline-offset:3px;text-decoration-thickness:2px}
+/* fan */
+.fx-fan{position:relative;width:min(100%,430px);margin:0 auto;aspect-ratio:430/470}
+.fx-fan figure{position:absolute;top:9%;left:50%;width:61%;margin:0;border-radius:16px;overflow:hidden;border:7px solid #fff;background:#fff;box-shadow:0 22px 50px rgba(6,42,85,.22),0 4px 12px rgba(6,42,85,.1)}
+.fx-fan figure img{width:100%;height:auto}
+.fx-fan .c1{transform:translateX(-50%) rotate(-1.5deg);z-index:3}
+.fx-fan .c2{transform:translateX(-96%) translateY(7%) rotate(-11deg) scale(.86);z-index:1}
+.fx-fan .c3{transform:translateX(-4%) translateY(7%) rotate(10deg) scale(.86);z-index:2}
+.fx-stamp{position:absolute;z-index:5;left:50%;top:3.5%;transform:translateX(-50%) rotate(-5deg);background:var(--heart);color:#fff;font:700 clamp(26px,7vw,36px)/1 'Caveat',cursive;padding:.16em .7em .22em;border-radius:14px;white-space:nowrap;box-shadow:0 10px 24px rgba(214,83,122,.38)}
+.fx-sw{position:absolute;z-index:5;left:50%;bottom:0;transform:translateX(-50%);display:flex;gap:22px}
+.fx-sw span{width:66px;height:66px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px rgba(6,42,85,.2);font-family:Arial,sans-serif}
+.fx-sw .no{color:#8d97ad;font-size:28px}.fx-sw .yes{color:var(--heart);font-size:32px}
+@media (min-width:980px){
+  .fx-hero{padding:64px 0 72px}
+  .fx-hero .fx-wrap{grid-template-columns:1.02fr 1fr;gap:28px}
+  .fx-copy{text-align:left}
+  .fx-lock{margin:0 0 26px}
+  .fx-lede{margin:20px 0 0!important}
+  .fx-fan{width:100%;max-width:500px}
+}
+/* how it works */
+.fx-how{background:#fff;padding:64px 0 70px}
+.fx-how .fx-head{text-align:center;margin-bottom:38px}
+.fx-how h2,.fx-app h2,.fx-faq h2,.fx-albums h2{font-size:clamp(34px,7.4vw,50px)}
+.fx-steps{display:grid;grid-template-columns:1fr;gap:26px;list-style:none;margin:0 auto!important;padding:0!important;max-width:1080px}
+.fx-step{background:var(--cream);border-radius:26px;padding:22px 22px 26px;display:flex;flex-direction:column;align-items:center;text-align:center;margin:0!important}
+.fx-step::before{display:none!important}
+.fx-shot{width:100%;max-width:300px;aspect-ratio:4/5;border-radius:22px;overflow:hidden;background:#fff;border:6px solid #fff;box-shadow:0 14px 32px rgba(6,42,85,.14);margin-bottom:20px}
+.fx-shot img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.fx-num{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;font:400 22px/42px 'Caprasimo',Georgia,serif;margin:0 auto 10px}
+.fx-step h3{font-size:clamp(24px,5.4vw,28px);margin-bottom:8px}
+.fx-step h3 .x{color:#8d97ad;font-family:Arial,sans-serif;font-size:.85em}
+.fx-step h3 .h{color:var(--heart);font-family:Arial,sans-serif}
+.fx-step p{font-size:16px;line-height:1.55;color:#4b4560;max-width:22em}
+@media (min-width:820px){.fx-steps{grid-template-columns:repeat(3,1fr)}}
+/* app */
+.fx-app{position:relative;padding:56px 0 64px;background:radial-gradient(circle at 12% 18%,var(--pc) 0,var(--pc) 13%,transparent 13.2%),radial-gradient(circle at 90% 82%,var(--pc) 0,var(--pc) 16%,transparent 16.2%),#fdf3f7;scroll-margin-top:var(--fx-off,0px)}
+.fx-app .fx-head{text-align:center;margin-bottom:20px}
+.fx-app .fx-head p{font-size:16px;color:#4b4560;margin-top:8px!important}
+.fx-bar{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:0 auto 14px;padding:0 16px}
+.fx-pill{display:inline-flex;align-items:center;gap:.45em;min-height:44px;padding:0 18px;border-radius:999px;border:2px solid var(--blush);background:#fff;color:var(--navy)!important;font:700 15px/1 'Bitter',Georgia,serif;text-decoration:none!important;cursor:pointer}
+.fx-pill:hover{border-color:var(--rose)}
+.fx-pill svg{width:16px;height:16px}
+.fx-grid{display:grid;grid-template-columns:1fr;justify-items:center;gap:20px}
+.fx-side{display:none}
+.fx-stage{position:relative;width:100%;height:640px;background:#fff;overflow:hidden}
+.fx-stage iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block;background:#fff}
+.fx-ld{position:absolute;inset:0;display:flex;flex-direction:column;gap:14px;align-items:center;justify-content:center;font:700 17px 'Bitter',Georgia,serif;color:var(--navy);text-align:center;padding:0 24px;background:#fff;z-index:1}
+.fx-ld i{width:44px;height:44px;border-radius:50%;border:4px solid var(--pc);border-top-color:var(--rose);animation:fxspin 1s linear infinite}
+.fx-ld.err i{display:none}.fx-ld.err{color:var(--rose)}
+@keyframes fxspin{to{transform:rotate(360deg)}}
+.fx-x{display:none;position:absolute;z-index:3;top:calc(10px + env(safe-area-inset-top,0px));right:10px;min-height:40px;padding:0 14px;border-radius:999px;border:0;background:var(--navy);color:#fff;font:700 14px/1 'Bitter',Georgia,serif;cursor:pointer;box-shadow:0 6px 16px rgba(6,42,85,.3)}
+.fx-stage.fs{position:fixed!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;border-radius:0!important;z-index:2147483000;margin:0!important;border:0!important}
+.fx-stage.fs .fx-x{display:block}
+html.fx-lock-scroll,html.fx-lock-scroll body{overflow:hidden!important}
+.fx-code{text-align:center;margin-top:18px!important;font-size:16px;color:#4b4560;padding:0 16px}
+.fx-code b{color:var(--navy);letter-spacing:.04em}
+@media (min-width:760px){
+  .fx-stage{max-width:580px;border-radius:28px;border:8px solid #fff;box-shadow:0 26px 60px rgba(6,42,85,.18),0 4px 14px rgba(6,42,85,.08)}
+}
+@media (min-width:1120px){
+  .fx-grid{grid-template-columns:1fr 580px 1fr;align-items:center;gap:36px;max-width:1240px;margin:0 auto;padding:0 24px}
+  .fx-side{display:block;align-self:center}
+  .fx-bar{display:none}
+  .fx-tips{list-style:none;margin:0!important;padding:0!important;display:grid;gap:14px;justify-self:end;max-width:250px}
+  .fx-tips li{margin:0!important;background:#fff;border-radius:18px;padding:14px 16px;font-size:15px;line-height:1.45;color:#4b4560;box-shadow:0 8px 20px rgba(6,42,85,.07)}
+  .fx-tips li::before{display:none!important}
+  .fx-tips b{display:block;color:var(--navy);font-size:16px;margin-bottom:2px}
+  .fx-tips .x{color:#8d97ad;font-family:Arial,sans-serif}.fx-tips .h{color:var(--heart);font-family:Arial,sans-serif}
+  .fx-side.r{justify-self:start;max-width:250px;display:grid;gap:14px}
+  .fx-card{background:var(--navy);color:#fff;border-radius:22px;padding:20px 18px;text-align:center}
+  .fx-card p{font-size:15px;line-height:1.5;color:#dfe7f4}
+  .fx-card strong{display:block;font:400 26px/1.1 'Caprasimo',Georgia,serif;color:#fff;margin:6px 0 8px;letter-spacing:.02em}
+  .fx-side.r .fx-pill{justify-content:center}
+  .fx-code{display:none}
+}
+/* faq */
+.fx-faq{background:#fff;padding:62px 0 56px}
+.fx-faq .fx-head{text-align:center;margin-bottom:26px}
+.fx-qs{max-width:760px;margin:0 auto;display:grid;gap:12px}
+.fx-qs details{background:var(--cream);border-radius:18px;padding:0 20px}
+.fx-qs summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:60px;font:700 18px/1.35 'Bitter',Georgia,serif;color:var(--navy)}
+.fx-qs summary::-webkit-details-marker{display:none}
+.fx-qs summary::after{content:'+';font:400 28px/1 'Caprasimo',Georgia,serif;color:var(--rose);flex:none;transition:transform .2s}
+.fx-qs details[open] summary::after{transform:rotate(45deg)}
+.fx-qs details p{padding:0 0 18px;font-size:16px;line-height:1.6;color:#4b4560}
+.fx-qs b{color:var(--navy)}
+.fx-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 22px;margin:30px auto 0!important;font:700 14px/1.3 'Bitter',Georgia,serif;color:var(--navy);letter-spacing:.02em;max-width:760px;text-align:center}
+.fx-trust span{display:inline-flex;align-items:center;gap:.45em}
+.fx-trust span::before{content:'\2665';color:var(--heart);font-family:Arial,sans-serif}
+/* albums */
+.fx-albums{background:var(--cream);padding:60px 0 54px}
+.fx-albums .fx-head{text-align:center;margin-bottom:26px}
+.fx-albums .fx-head p{font:500 18px/1.5 'Lora',Georgia,serif;color:var(--navy2);margin-top:10px!important}
+.fx-covers{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:1080px;margin:0 auto}
+.fx-covers a{display:block;text-decoration:none!important;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 10px 24px rgba(6,42,85,.1);transition:transform .15s ease}
+.fx-covers a:hover{transform:translateY(-3px)}
+.fx-covers img{width:100%;aspect-ratio:1;object-fit:cover}
+.fx-covers span{display:block;padding:10px 8px 12px;text-align:center;font:700 15px/1.2 'Bitter',Georgia,serif;color:var(--navy)}
+@media (min-width:700px){.fx-covers{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:1000px){.fx-covers{grid-template-columns:repeat(6,1fr)}}
+.fx-albums .fx-more{text-align:center;margin-top:26px!important}
+.fx-albums .fx-btn{margin-top:0;background:var(--navy);box-shadow:0 12px 26px rgba(6,42,85,.24);font-size:18px;min-height:54px;padding:0 30px}
+.fx-disc{text-align:center;font-size:13px;color:#6f6880;padding:22px 16px 26px;background:var(--cream);margin:0!important}
+@media (prefers-reduced-motion:reduce){#fymx *{transition:none!important;animation:none!important}}
+/* Squarespace section around this block */
+section:has(#fymx) .section-background{background:var(--cream,#faf3ea)!important}
+section:has(#fymx) .content-wrapper{padding-top:0!important;padding-bottom:0!important}
+section:has(#fymx) .fe-block:has(#fymx) .sqs-block{padding:0!important}
+'''
+
+JS = r'''
+(function(){
+  var root=document.getElementById('fymx');if(!root||root.getAttribute('data-on'))return;root.setAttribute('data-on','1');
+  var IDX='__IDX__',BASE='__BASE__';
+  var stage=document.getElementById('fx-stage'),fr=document.getElementById('fx-f'),ld=document.getElementById('fx-ld'),de=document.documentElement;
+  function hdr(){var h=document.querySelector('header#header,.header'),off=0;
+    if(h){var cs=getComputedStyle(h),r=h.getBoundingClientRect();if((cs.position==='fixed'||cs.position==='sticky')&&r.bottom>0)off=r.height;}return off;}
+  function size(){
+    /* full bleed: stretch to the page edges whatever column the code block sits in */
+    root.style.marginLeft='0px';root.style.width='';
+    var pr=root.parentElement.getBoundingClientRect(),cw=de.clientWidth;
+    root.style.marginLeft=(-pr.left)+'px';root.style.width=cw+'px';
+    var off=hdr(),vh=window.innerHeight||de.clientHeight;root.style.setProperty('--fx-off',off+'px');
+    if(stage.classList.contains('fs'))return;
+    var h=cw<760?vh-off-56:Math.min(vh-off-56,940);
+    stage.style.height=Math.max(cw<760?520:600,Math.round(h))+'px';
+  }
+  size();addEventListener('resize',size);addEventListener('load',size);[300,1000,2500].forEach(function(t){setTimeout(size,t)});
+  addEventListener('orientationchange',function(){setTimeout(size,250)});
+  if(window.ResizeObserver){try{new ResizeObserver(size).observe(root.parentElement)}catch(e){}}
+  var started=false;
+  function get(n){return fetch(IDX,{cache:'force-cache'}).then(function(r){if(!r.ok)throw r.status;return r.text()}).catch(function(e){if(n>0)return new Promise(function(ok){setTimeout(ok,1500)}).then(function(){return get(n-1)});throw e;});}
+  function start(){if(started)return;started=true;
+    get(4).then(function(t){
+      t=t.replace(/<head>/i,'<head><base href="'+BASE+'"><style>html{scrollbar-width:thin;scrollbar-color:#f3b9cb transparent}[data-door] *{text-wrap:balance}</style>');
+      fr.addEventListener('load',function(){ld.style.display='none';});
+      fr.srcdoc=t;
+    }).catch(function(){ld.className+=' err';ld.innerHTML='The app did not load. Please refresh the page.';});
+  }
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){if(es.some(function(e){return e.isIntersecting})){start();io.disconnect();}},{rootMargin:'1400px 0px'});io.observe(stage);}
+  setTimeout(start,2500);
+  function go(e){if(e)e.preventDefault();start();size();var sec=document.getElementById('fymx-app');
+    var y=sec.getBoundingClientRect().top+(window.pageYOffset||de.scrollTop)-hdr()+ (de.clientWidth<760?sec.querySelector('.fx-head').offsetHeight+40:20);
+    window.scrollTo({top:y,behavior:'smooth'});}
+  [].forEach.call(root.querySelectorAll('[data-fx-go]'),function(a){a.addEventListener('click',go)});
+  function fs(on){start();stage.classList.toggle('fs',on);de.classList.toggle('fx-lock-scroll',on);if(!on)size();
+    if(on)setTimeout(function(){try{fr.focus()}catch(e){}},50);}
+  [].forEach.call(root.querySelectorAll('[data-fx-fs]'),function(b){b.addEventListener('click',function(e){e.preventDefault();fs(true)})});
+  document.getElementById('fx-x').addEventListener('click',function(){fs(false)});
+  addEventListener('keydown',function(e){if(e.key==='Escape'&&stage.classList.contains('fs'))fs(false)});
+  fr.addEventListener('load',function(){try{fr.contentWindow.addEventListener('keydown',function(e){if(e.key==='Escape'&&stage.classList.contains('fs'))fs(false)})}catch(e){}});
+})();
+'''
+
+FS_ICON = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2 6V2h4M14 6V2h-4M2 10v4h4M14 10v4h-4"/></svg>'
+
+
+def build():
+    fan = ''.join(f'<figure class="c{i + 1}"><img src="{ASSET}{f}" alt="{html.escape(a)}" width="760" height="874"{" fetchpriority=\"high\"" if i == 0 else " loading=\"lazy\""} decoding="async"></figure>'
+                  for i, (f, a) in enumerate(FAN))
+    steps = ''.join(f'<li class="fx-step"><div class="fx-shot"><img src="{ASSET}{f}" alt="{html.escape(alt)}" width="{w}" height="{h}" loading="lazy" decoding="async"></div>'
+                    f'<div class="fx-num">{n + 1}</div><h3>{t}</h3><p>{p}</p></li>'
+                    for n, (f, w, h, t, p, alt) in enumerate(STEPS))
+    faq = ''.join(f'<details{" open" if i == 0 else ""}><summary>{q}</summary><p>{a}</p></details>' for i, (q, a) in enumerate(FAQ))
+    covers = ''.join(f'<a href="/{slug}-mahjong-tile-matches"><img src="{img}" alt="{name} mahjong tile matches album" loading="lazy" decoding="async" width="800" height="800"><span>{name}</span></a>'
+                     for slug, name, img in ALBUMS)
+    body = f'''<div id="fymx">
+<section class="fx-hero"><div class="fx-wrap">
+<div class="fx-copy">
+<div class="fx-lock"><img src="{WORDMARK}" alt="Mahj Matchmaker" width="826" height="112"><b>MATCHING MAHJONG TILES, MATS &amp; RACKS</b></div>
+<h1>Find <em>Your</em> <span class="nb">Mat-ch<sup>&trade;</sup></span></h1>
+<p class="fx-lede">Pick your tiles or your mat, then swipe through the mats that bring out their best&nbsp;colors.</p>
+<a class="fx-btn" href="#fymx-app" data-fx-go>Start swiping <span aria-hidden="true">&#9829;</span></a>
+<p class="fx-under">Free, nothing to sign up for. Or <a href="/mahjong-tile-matches">browse the match&nbsp;albums</a>.</p>
+</div>
+<div class="fx-fan" aria-label="Papaya Spritz match cards">{fan}<div class="fx-stamp" aria-hidden="true">It&rsquo;s a mat-ch!</div><div class="fx-sw" aria-hidden="true"><span class="no">&#10005;</span><span class="yes">&#9829;</span></div></div>
+</div></section>
+<section class="fx-how"><div class="fx-wrap">
+<div class="fx-head"><p class="fx-kick">How it works</p><h2>Three steps to your&nbsp;match</h2></div>
+<ol class="fx-steps">{steps}</ol>
+</div></section>
+<section class="fx-app" id="fymx-app">
+<div class="fx-wrap fx-head"><p class="fx-kick">Your turn</p><h2>Start <em>swiping</em></h2><p>Tiles first or mat first. Tap &#9829; for love, &#10005; for not the&nbsp;one.</p></div>
+<div class="fx-bar"><button type="button" class="fx-pill" data-fx-fs>{FS_ICON}Open full screen</button></div>
+<div class="fx-grid">
+<ul class="fx-side fx-tips"><li><b><span class="h">&#9829;</span> Love it</b>It waits for you so you can&nbsp;compare.</li><li><b><span class="x">&#10005;</span> Not the one</b>On to the next mat, no hard&nbsp;feelings.</li><li><b>Zoom in</b>Pinch or tap + and your zoom stays put as you&nbsp;swipe.</li><li><b>Shop by color</b>Tap a color chip to narrow the mats, tap again to&nbsp;clear.</li></ul>
+<div class="fx-stage" id="fx-stage"><div class="fx-ld" id="fx-ld"><i></i>Loading your matchmaker&hellip;</div><button type="button" class="fx-x" id="fx-x">&#10005; Close</button><iframe id="fx-f" title="Find Your Mat-ch" allow="web-share; clipboard-write; fullscreen"></iframe></div>
+<div class="fx-side r"><div class="fx-card"><p>Use code</p><strong>MAHJMATCH</strong><p>to save at 30+ partner&nbsp;brands</p></div><button type="button" class="fx-pill" data-fx-fs>{FS_ICON}Open full screen</button><a class="fx-pill" href="/mahjong-tile-matches">Browse the albums</a></div>
+</div>
+<p class="fx-code">Use code <b>MAHJMATCH</b> to save at 30+ partner&nbsp;brands</p>
+</section>
+<section class="fx-faq"><div class="fx-wrap">
+<div class="fx-head"><p class="fx-kick">Good to know</p><h2>Questions, <em>answered</em></h2></div>
+<div class="fx-qs">{faq}</div>
+<p class="fx-trust"><span>Every &ldquo;Tiffany&rsquo;s match&rdquo; is her own pick</span><span>Code MAHJMATCH at 30+ partner brands</span><span>Free to use</span></p>
+</div></section>
+<section class="fx-albums"><div class="fx-wrap">
+<div class="fx-head"><p class="fx-kick">Prefer to browse?</p><h2>The match <em>albums</em></h2><p>Tiffany&rsquo;s matches for each tile set, with racks and a link to&nbsp;shop.</p></div>
+<div class="fx-covers">{covers}</div>
+<p class="fx-more"><a class="fx-btn" href="/mahjong-tile-matches">See all match&nbsp;albums</a></p>
+</div></section>
+<p class="fx-disc">Affiliate links: I may earn a commission.</p>
+</div>
+<style>{CSS}</style>
+<script>{JS.replace('__IDX__', APP_INDEX).replace('__BASE__', APP_BASE)}</script>
+'''
+    out = os.path.join(HERE, 'page-block.html')
+    open(out, 'w').write(body)
+    print(out, len(body))
+
+
+if __name__ == '__main__':
+    build()
