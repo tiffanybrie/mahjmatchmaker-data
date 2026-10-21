@@ -39,14 +39,7 @@ EMAILS = [
             'My picks are baked right in, so you&rsquo;re never swiping alone.',
         ],
         "steps_head": "hl-launch-how",
-        "steps": [
-            'Start with the tiles you own, or flip it and start with the mat you already love.',
-            'Tap &hearts; on the mats you love and &#10005; on the ones that aren&rsquo;t the one.',
-            '&ldquo;Showing: Tiffany&rsquo;s picks only&rdquo; means you&rsquo;re seeing my own matches for your set. Tap it to see every mat, and tap again to bring my picks back.',
-            'Tap a color dot to narrow the mats to one color. Tap it again to clear it.',
-            'Every couple needs a wingman. Swipe racks the same way, with my rack picks first.',
-            'Pick your view, then save it or send it to your mahj group. Every piece is linked.',
-        ],
+        "tutorial": True,  # 5 annotated steps from scripts/fym_promo/tutorial.json (render2.py)
         "button": ("Start swiping", f"{SITE}/find-your-match"),
         "after": [
             'Hope you love it!',
@@ -172,6 +165,10 @@ def nw(p):
 
 ASSETS = ROOT / "assets" / "fym"
 MANI = json.loads((ASSETS / "manifest.json").read_text())  # alt text + pixel sizes, written by scripts/fym_promo/render.py
+TUT = json.loads((ROOT.parent.parent / "scripts" / "fym_promo" / "tutorial.json").read_text())  # render2.py
+for _t in TUT:
+    MANI["sizes"][f"tut{_t['n']}.jpg"] = _t["email"]; MANI["alt"][f"tut{_t['n']}"] = _t["alt"]
+    MANI["sizes"][f"hl-tut{_t['n']}.png"] = _t["hl"]; MANI["alt"][f"hl-tut{_t['n']}"] = f"Step {_t['n']}: " + html.unescape(_t["title"])
 
 
 def img(stem, cls="", display_w=None):
@@ -199,10 +196,11 @@ def render(e, with_meta=True):
         h.append(f'<div class="hero">{img(e["hero"], display_w=480)}</div>')
     for p in e["paras"]:
         h.append(f"<p>{nw(p)}</p>")
-    if e.get("steps"):
+    if e.get("tutorial"):
         h.append(f'<div class="h2">{img(e["steps_head"])}</div>')
-        for i, t in enumerate(e["steps"], 1):
-            h.append(f'<div class="step"><div class="h3">{img(f"hl-step{i}")}</div>{img(f"step{i}", "shot", 240)}<p>{nw(t)}</p></div>')
+        for t in TUT:
+            n = t["n"]
+            h.append(f'<div class="step"><div class="h3">{img(f"hl-tut{n}")}</div><p>{nw(t["caption"])}</p>{img(f"tut{n}", "shot", 480)}</div>')
     if e.get("list"):
         h.append(f'<div class="h2">{img(e["list_head"])}</div>')
         h.append("<ul>" + "".join(f"<li>{x}</li>" for x in e["list"]) + "</ul>")
@@ -229,10 +227,10 @@ def plain(e):
     if e.get("hero"):
         out.append(f'[IMAGE: {MANI["alt"]["hero"]}]')
     out += [t(p) for p in e["paras"]]
-    if e.get("steps"):
+    if e.get("tutorial"):
         out.append(f'[IMAGE heading: {MANI["alt"][e["steps_head"]]}]')
-        for i, x in enumerate(e["steps"], 1):
-            out.append(f'[IMAGE heading: {MANI["alt"][f"hl-step{i}"]}] [IMAGE: {MANI["alt"][f"step{i}"]}]\n{t(x)}')
+        for x in TUT:
+            out.append(f'[IMAGE heading: {MANI["alt"]["hl-tut" + str(x["n"])]}]\n{t(x["caption"])}\n[IMAGE: {x["alt"]}]')
     if e.get("list"):
         out.append(f'[IMAGE heading: {MANI["alt"][e["list_head"]]}]')
         out += ["• " + t(x) for x in e["list"]]
