@@ -1,5 +1,7 @@
 # Mahj Matchmaker repo: rules for any Claude session (read first)
 
+**BRAND GUIDE (Oct 21): read docs/BRAND-GUIDE.md (= Project doc "00a BRAND GUIDE") before writing or designing ANYTHING for the brand: social, blog, Amazon, ShopMy, site copy, FB group, email, graphics. Rules there are settled; don't re-ask. New decisions get added to its changelog the same day.**
+
 ## Find Your Match (FYM) is the top project. These are hard rules.
 Live app: claude.ai artifact 6epA9HuEdT32zUp79Qv3kd. Its published index.html (`const D={...}`) is the build source of truth.
 
