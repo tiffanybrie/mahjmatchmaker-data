@@ -3,7 +3,7 @@
 One card = one of her real album picks: tile set (canonical album photo) + a partner mat (mat-only card image).
 Sizes: feed 1080x1350 (content inside y 120-1230 so the 3:4 grid crop keeps it) and story 1080x1920
 (key content inside the safe zone: top 14% = 269px and bottom 20% = 384px stay clear).
-Branding: wordmark (2x the Oct 21 Papaya card), tagline "Hooking up tiles, / mats & racks", @mahjmatchmaker in navy.
+Branding: wordmark (2x the Oct 21 Papaya card), tagline "Hooking up tiles, / mats & racks". No @handle line (Instagram already shows @mahjmatchmaker under a reshare; Tiffany Oct 21).
 Headline variants: A = "It's a mat-ch!", B = "It's a match!".
 
 Usage:
@@ -67,7 +67,6 @@ def page(c, kind):
 <div class=c style="margin-top:{gap(30,46)}px;background:{NAVY};color:#fff;border-radius:999px;padding:{gap(16,20)}px 42px;font:600 {gap(34,38)}px Bit">{pill}</div>
 <img src="{u('assets/brand/mahjmatchmaker-wordmark-notag.png')}" style="position:relative;width:{gap(560,620)}px;margin-top:{gap(36,48)}px">
 <div class=c style="font-family:Lo;font-style:italic;font-weight:500;font-size:{gap(36,40)}px;color:{NAVY};margin-top:{gap(8,12)}px;line-height:1.2">Hooking up tiles, mats &amp; racks</div>
-<div class=c style="font:700 {gap(28,32)}px Bit;color:{NAVY};letter-spacing:.04em;margin-top:{gap(10,14)}px">@mahjmatchmaker</div>
 </div></div></body></html>"""
 
 
