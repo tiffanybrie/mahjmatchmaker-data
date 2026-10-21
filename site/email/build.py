@@ -11,7 +11,7 @@ no %, no other code, no Amazon links, plain "match" elsewhere). Rules for sendin
 Run: python3 site/email/build.py            (html + json)
      python3 site/email/build.py shots      (also screenshots, needs playwright)
 """
-import json, pathlib, sys, html
+import json, pathlib, sys, html, re
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = "https://www.mahjmatchmaker.com"
@@ -146,7 +146,10 @@ h1{{font:400 38px/1.15 Georgia,serif;color:{PINK};margin:12px 0 10px}}
 h1 em,p em,li em{{font-style:italic}}
 p{{margin:0 0 14px}}
 a{{color:{PINK}}}
-.hero{{display:block;width:100%;height:auto;margin:6px 0 4px}}
+.h1{{margin:18px 0 14px}} .h2{{margin:26px 0 6px}} .h3{{margin:0 0 10px}}
+.hero{{margin:4px 0 14px}}
+.step{{text-align:center;margin:22px 0 8px;padding:18px 14px 6px;background:{CREAM};border-radius:16px}} .step p{{margin:10px auto 8px;max-width:420px}}
+.legal{{opacity:.8}}
 .btnw{{text-align:center;margin:22px 0 22px}}
 .btn{{display:inline-block;background:{HPINK};color:#fff!important;text-decoration:none;font:700 21px/1 Helvetica,Arial,sans-serif;padding:20px 46px;border-radius:14px}}
 ul{{padding-left:20px;margin:0 0 14px}} li{{margin:0 0 8px}}
@@ -168,49 +171,89 @@ def nw(p):
     return p[:m.start()] + "&nbsp;" + p[m.end():] if m else p
 
 
+ASSETS = ROOT / "assets" / "fym"
+MANI = json.loads((ASSETS / "manifest.json").read_text())  # alt text + pixel sizes, written by scripts/fym_promo/render.py
+
+
+def img(stem, cls="", display_w=None):
+    """Brand headline / app image. 2x files, shown at half width (or display_w). Every image carries descriptive alt text."""
+    f = next(k for k in MANI["sizes"] if k.rsplit(".", 1)[0] == stem)
+    w, hgt, _ = MANI["sizes"][f]
+    dw = display_w or w // 2
+    dh = round(hgt * dw / w)
+    src = (CDN_IMG + f) if CDN_IMG else f"../assets/fym/{f}"
+    return (f'<img class="{cls}" src="{src}" width="{dw}" height="{dh}" '
+            f'alt="{html.escape(MANI["alt"][stem])}" style="display:block;margin:0 auto;max-width:100%;height:auto">')
+
+
+def heading_text(e):
+    return MANI["alt"][e["h1img"]] if e.get("h1img") else re.sub(r"<[^>]+>", "", e.get("h1", ""))
+
+
 def render(e, with_meta=True):
     h = []
     if with_meta:
         h.append(f'<div class="meta"><b>Subject:</b> {html.escape(e["subject"])}<br><b>Preview:</b> {html.escape(e["preview"])}<br><b>When:</b> {html.escape(e["when"])}</div>')
     h.append('<div class="card"><div class="top"><img src="../../../assets/brand/mahjmatchmaker-wordmark.png" alt="Mahj Matchmaker: matching mahjong tiles, mats &amp; racks"></div><div class="body">')
-    if e.get("pill"):
-        h.append(f'<div style="text-align:center"><span class="pill">{e["pill"]}</span></div>')
-    h.append(f'<h1 style="text-align:center">{e["h1"]}</h1>')
+    h.append(f'<div class="h1">{img(e["h1img"])}</div>')
     if e.get("hero"):
-        h.append(f'<img class="hero" src="../{e["hero"]}" alt="Match cards fanned out with a heart and an X, swipe-style">')
+        h.append(f'<div class="hero">{img(e["hero"], display_w=480)}</div>')
     for p in e["paras"]:
         h.append(f"<p>{nw(p)}</p>")
+    if e.get("steps"):
+        h.append(f'<div class="h2">{img(e["steps_head"])}</div>')
+        for i, t in enumerate(e["steps"], 1):
+            h.append(f'<div class="step"><div class="h3">{img(f"hl-step{i}")}</div>{img(f"step{i}", "shot", 220)}<p>{nw(t)}</p></div>')
     if e.get("list"):
+        h.append(f'<div class="h2">{img(e["list_head"])}</div>')
         h.append("<ul>" + "".join(f"<li>{x}</li>" for x in e["list"]) + "</ul>")
     t, u = e["button"]
     h.append(f'<div class="btnw"><a class="btn" href="{u}">{t}</a></div>')
     if e.get("blog"):
-        h.append('<div class="blog"><h2>A FEW OF MY FAVORITE READS</h2>' + "".join(
+        h.append(f'<div class="blog"><div class="h2">{img("hl-welcome-reads")}</div>' + "".join(
             f'<a class="post" href="{u}"><b>{a}</b><span>{b} &rarr;</span></a>' for a, b, u in e["blog"]) + "</div>")
     for p in e.get("after", []):
         cls = ' class="code"' if p == CODE else ""
         h.append(f"<p{cls}>{nw(p)}</p>")
     h.append(f'<p class="sign">{SIGN}</p></div>')
-    h.append('<div class="foot">Mahj Matchmaker · <a href="https://www.mahjmatchmaker.com">mahjmatchmaker.com</a><br>Hooking up tiles, mats &amp; racks</div></div>')
+    h.append('<div class="foot">Mahj Matchmaker · <a href="https://www.mahjmatchmaker.com">mahjmatchmaker.com</a><br>Hooking up tiles, mats &amp; racks'
+             '<br><span class="legal">[Mailing address: pending from Tiffany] · <a href="#">Unsubscribe</a> (Squarespace adds both to every send)</span></div></div>')
     return f'<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(e["name"])}</title><style>{CSS}</style></head><body><div class="outer">{"".join(h)}</div></body></html>'
 
 
 def plain(e):
-    import re
     def t(s):
         s = re.sub(r'<a href="([^"]+)">([^<]+)</a>', r'\2 (\1)', s)
         s = re.sub(r"<[^>]+>", "", s)
         return html.unescape(s)
-    out = [t(e["h1"])] + [t(p) for p in e["paras"]]
-    out += ["• " + t(x) for x in e.get("list", [])]
+    out = [f'[IMAGE heading: {heading_text(e)}]']
+    if e.get("hero"):
+        out.append(f'[IMAGE: {MANI["alt"]["hero"]}]')
+    out += [t(p) for p in e["paras"]]
+    if e.get("steps"):
+        out.append(f'[IMAGE heading: {MANI["alt"][e["steps_head"]]}]')
+        for i, x in enumerate(e["steps"], 1):
+            out.append(f'[IMAGE heading: {MANI["alt"][f"hl-step{i}"]}] [IMAGE: {MANI["alt"][f"step{i}"]}]\n{t(x)}')
+    if e.get("list"):
+        out.append(f'[IMAGE heading: {MANI["alt"][e["list_head"]]}]')
+        out += ["• " + t(x) for x in e["list"]]
     out.append(f'[BUTTON: {e["button"][0]} → {e["button"][1]}]')
     if e.get("blog"):
-        out.append("A few of my favorite reads:")
+        out.append(f'[IMAGE heading: {MANI["alt"]["hl-welcome-reads"]}]')
         out += [f"• {a}: {b} ({u})" for a, b, u in e["blog"]]
     out += [t(p) for p in e.get("after", [])]
     out.append("Happy mat-ching!\nxo, Tiffany")
     out = [o.replace("\u2011", "-").replace("\xa0", " ") for o in out]
     return "\n\n".join(out)
+
+
+def stats(e):
+    """Deliverability numbers: live words vs images, image weight."""
+    body = render(e, with_meta=False)
+    stems = set(re.findall(r'assets/fym/([\w-]+\.\w+)', body))
+    kb = sum(MANI["sizes"][f][2] for f in stems) / 1024 + 35  # + wordmark logo
+    words = len(re.sub(r"<[^>]+>", " ", re.sub(r"<style.*?</style>|<title>.*?</title>|<div class=\"foot\">.*", "", body, flags=re.S)).split())
+    return {"images": len(stems) + 1, "image_kb": round(kb), "live_words": words}
 
 
 def lint():
@@ -225,6 +268,18 @@ def lint():
         body = render(e, with_meta=False)
         if body.count("&trade;") + body.count("™") > 1:  # one body use at most (subject may carry its own)
             bad.append((e["id"], "TM used more than once in body"))
+        if e["subject"].count("!") > 1:
+            bad.append((e["id"], "subject: one ! at most"))
+        if re.search(r"\b[A-Z]{4,}\b", e["subject"].replace("MAHJMATCH", "")):
+            bad.append((e["id"], "subject: no ALL CAPS"))
+        for m in re.finditer(r"<img [^>]*>", body):
+            if 'alt="' not in m.group(0) or 'alt=""' in m.group(0):
+                bad.append((e["id"], "image without alt text"))
+        st = stats(e)
+        if st["image_kb"] > 600:
+            bad.append((e["id"], f"images too heavy: {st['image_kb']} KB"))
+        if st["live_words"] < 25 or st["live_words"] < 10 * st["images"]:
+            bad.append((e["id"], f"too little live text for {st['images']} images: {st['live_words']} words"))
     if bad:
         raise SystemExit(f"lint failed: {bad}")
 
@@ -235,7 +290,7 @@ def main():
     data = []
     for e in EMAILS:
         (ROOT / "templates" / f'{e["id"]}.html').write_text(render(e))
-        data.append({k: e[k] for k in ("id", "name", "kind", "when", "to", "subject", "preview")} | {"text": plain(e)})
+        data.append({k: e[k] for k in ("id", "name", "kind", "when", "to", "subject", "preview")} | {"text": plain(e), "deliverability": stats(e)})
     (ROOT / "emails.json").write_text(json.dumps(data, indent=1, ensure_ascii=False))
     if "shots" in sys.argv:
         from playwright.sync_api import sync_playwright
