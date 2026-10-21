@@ -107,11 +107,13 @@ h1{{font:400 {TITLE_PX}px/1.0 Caprasimo;margin:14px 0 0;text-shadow:none;max-wid
     hf = tmp + '/c.html'; open(hf, 'w').write(html); o = f'{OUT}/{k}.jpg'
     subprocess.run(['node', R + 'scripts/albumcard/shot.js', hf, o], check=True, env={**os.environ, 'NODE_PATH': NP}, stdout=subprocess.DEVNULL)
     img = Image.open(o).convert('RGBA'); wm = Image.open(WM).convert('RGBA'); w = 540; wm = wm.resize((w, int(wm.height * w / wm.width)), Image.LANCZOS)
-    t = T.tagline('FIND YOUR MATCH'); pos_w = ((1080 - w) // 2, 942 - wm.height // 2); pos_t = ((1080 - t.width) // 2, 1012 - t.height // 2)
+    TAG = os.environ.get('TAGLINE', 'FIND YOUR MATCH')   # Oct 21: TAGLINE='' drops the line (story cover; old tool name). Live covers unchanged.
+    t = T.tagline(TAG) if TAG else Image.new('RGBA', (1, 1), (0, 0, 0, 0)); pos_w = ((1080 - w) // 2, 942 - wm.height // 2); pos_t = ((1080 - t.width) // 2, 1012 - t.height // 2)
     if light:   # soft dark shadow under the white wordmark + tagline
         from PIL import ImageFilter
         for lay, pos in ((wm, pos_w), (t, pos_t)):
             shd = Image.new('RGBA', lay.size, (40, 30, 30, 0)); shd.putalpha(lay.getchannel('A').point(lambda v: int(v * .45)))
             big = Image.new('RGBA', img.size, (0, 0, 0, 0)); big.alpha_composite(shd, (pos[0], pos[1] + 2)); img.alpha_composite(big.filter(ImageFilter.GaussianBlur(4)))
     img.alpha_composite(wm, pos_w); img.alpha_composite(t, pos_t)
+    # no tagline: the bottom border keeps its gap, mirroring the open gap in the top border
     img.convert('RGB').save(o, quality=94); print(k)
