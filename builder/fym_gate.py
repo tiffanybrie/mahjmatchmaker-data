@@ -4,7 +4,7 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
  1  album / swipe-book sets show their canonical album tile photo (D.tiles[..].src == locked src, file exists, pixels match)
  2  no visible set without an album / swipe book carries a "Tiffany's match" list (m)
  3  no visible set flagged no_tiles (builder/fym_flags/tile_photo_flags.json); no visible mat flagged no_mat/partial_crop/no_flat_photo/duplicate (mat_photo_flags.json); 3b retired mats labelled in mat-door grid + mat search
- 3c cleaned photos pinned in the flags (photo) stay in the build; locked mats on a flagged photo warn (Oct 21)
+ 3c cleaned photos pinned in the flags (photo) stay in the build; props/lifestyle photos are OK (ok_fym_props, low bar Oct 21 pm); only locked mats on an unusable photo warn
  4  UI wording: no crush / nope / pass / "Pick your crush" / hard-coded "save 10%"
  5  colour-dot click selector bug (.dots [data-fam])
  6  locked values (builder/fym_flags/locks.json) unchanged
@@ -95,9 +95,14 @@ for s in D['sets']:
     f = tflags.get(s['slug']); t = T.get(s['tile'], {})
     if f and f.get('photo') and f.get('flag') == 'ok' and vis(s) and t.get('full') != f['photo']:
         F.append(f"[3c] {s['name']} ({s['maker']}): tile photo {t.get('full')} but its cleaned photo is {f['photo']} (tile_photo_flags.json)")
+# Oct 21 pm (Tiffany, CLAUDE.md rule 6): the FYM photo bar is LOW. Props / tiles / racks / a room around the mat are fine
+# (flag ok_fym_props, no warning). Only a locked mat whose photo is flagged unusable (wrong product, packaging, corner close-up:
+# locked_needs_approval) is still listed while visible; unlocked unusable photos (no_mat / partial_crop / duplicate) FAIL in [3].
 _lna = [M[k]['n'] for k, f in mflags.items() if f.get('flag') == 'locked_needs_approval' and k in M and not M[k].get('hid')]
 if _lna:
-    print(f"FYM GATE WARNING [3c]: {len(_lna)} locked mats still show a lifestyle/props photo, waiting on Tiffany (builder/fym_fix_oct21/review_locked.json): " + ', '.join(_lna))
+    print(f"FYM GATE WARNING [3c]: {len(_lna)} locked mats show a photo flagged unusable (corner close-up / wrong product / packaging), waiting on Tiffany: " + ', '.join(_lna))
+for k, f in mflags.items():
+    if f.get('flag') == 'ok_fym_props' and k not in M: F.append(f"[3c] ok_fym_props flag for a mat not in the build: {k}")
 # 3b. retired mats carry a Retired label in the mat-door grid / door search (matBtn) and the mat search list (#msr) (Oct 20 bug: Liberty)
 mb = re.search(r'function matBtn\(id\)\{.*?\n', UI)
 if not mb or "M[id].rt?" not in mb.group(0) or 'Retired' not in mb.group(0):

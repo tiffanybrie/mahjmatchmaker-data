@@ -347,10 +347,8 @@
    "brand": "Charleston Mahjong Club",
    "name": "Ski Club Mat- Red Sweater Border",
    "img": "charleston-mahjong-club--ski-club-mat-red-sweater-border",
-   "also": [
-    "blue"
-   ],
-   "note": "Tiffany Oct 20 late: add Blue as an also-colour (measured blue 4.7%; her call wins). Not a holiday mat: do not move it to Holiday."
+   "note": "Tiffany Oct 21: HOLIDAY (winter/ski: skis, chalets, cocoa mugs + a fair-isle sweater border). Holiday section only (gallery), never in single-colour chips (FYM); its measured colours count only in combos. Replaces her Oct 20 late 'not holiday, add Blue' call. Tiffany Oct 21 holiday definition: Holiday = Christmas and Hanukkah mats plus overtly winter/ski/snow-themed mats; a plain plaid with no holiday graphic is year-round; seasonal/locale mats (KY Derby, Let Freedom Ring) are not holiday.",
+   "primary": "holiday"
   },
   {
    "brand": "Mahjong Register",
@@ -405,6 +403,22 @@
     "teal"
    ],
    "note": "Tiffany Oct 20 late: +Teal also-colour (teal frame; measured 11.7%, and the old blanket teal strip in build_v5.py dropped it)."
+  },
+  {
+   "brand": "Charleston Mahjong Club",
+   "name": "Ski Club Mat - Periwinkle Center",
+   "img": "charleston-mahjong-club--ski-club-mat-periwinkle-center",
+   "primary": "holiday",
+   "by": "claude-photo-review (applying Tiffany's Oct 21 definition)",
+   "note": "Oct 21: overtly ski/winter photo (skiers and snowboarders printed all over the border + a fair-isle sweater-knit frame), so HOLIDAY under Tiffany's Oct 21 definition (she named the sister Ski Club Red Sweater Border mat holiday). Holiday section only (gallery), never in single-colour chips (FYM). Tiffany Oct 21 holiday definition: Holiday = Christmas and Hanukkah mats plus overtly winter/ski/snow-themed mats; a plain plaid with no holiday graphic is year-round; seasonal/locale mats (KY Derby, Let Freedom Ring) are not holiday."
+  },
+  {
+   "brand": "Virora Mahjong",
+   "name": "Hiverelle",
+   "img": "virora-mahjong--hiverelle-mahjong-mat",
+   "primary": "holiday",
+   "by": "claude-photo-review (applying Tiffany's Oct 21 definition)",
+   "note": "Oct 21: overtly ski/winter photo (skiers, ski gondolas, snowy pine trees and falling snow on blue/white ski-run stripes), so HOLIDAY under Tiffany's Oct 21 definition (she named the sister Ski Club Red Sweater Border mat holiday). Holiday section only (gallery), never in single-colour chips (FYM). Tiffany Oct 21 holiday definition: Holiday = Christmas and Hanukkah mats plus overtly winter/ski/snow-themed mats; a plain plaid with no holiday graphic is year-round; seasonal/locale mats (KY Derby, Let Freedom Ring) are not holiday."
   }
  ],
  "lead": {
@@ -461,5 +475,15 @@
  "combo_only": {
   "about": "Album-colour hint (Tiffany Oct 20 late, item J): an album's set colours are a HINT for missed colours, not a rule. Each album mat gets its set's colours as COMBO-ONLY colours (row field 10, FYM 'ha'; never a single-colour section) only where the mat photo measures >= 5% of that colour (blue + teal pooled for the blue/teal test). Never added when she removed that colour for the mat (corrections 'remove'). Derived by build_v5.py from site/livepatch/matgallery/album_combo_audit_oct20.json set colours + scratch album membership, list frozen in config/mat-album-combo-colors.json.",
   "min_pct": 5.0
+ },
+ "holiday_definition": {
+  "by": "tiffany-chat-2026-10-21",
+  "text": "Tiffany Oct 21 holiday definition: Holiday = Christmas and Hanukkah mats plus overtly winter/ski/snow-themed mats; a plain plaid with no holiday graphic is year-round; seasonal/locale mats (KY Derby, Let Freedom Ring) are not holiday.",
+  "her_calls": {
+   "Tartan Tweed": "year-round",
+   "Ski Club Mat- Red Sweater Border": "holiday",
+   "KY Derby": "year-round",
+   "Let Freedom Ring": "year-round"
+  }
  }
 }

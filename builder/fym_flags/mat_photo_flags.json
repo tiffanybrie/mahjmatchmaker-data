@@ -1397,161 +1397,172 @@
  "mahjsquadshop.com/green-malachite-mahjong-mat-emerald-green-and-jewel-neoprene-mahjongg-mat-jewel-tone-mahj-mat-malachite-stone-mahj-ongg-mat-1": {
   "name": "Green Malachite",
   "brand": "Mahj Squad",
-  "flag": "no_flat_photo",
-  "note": "Oct 21 QA: all 7 brand images are AI room renders at a steep angle; the only whole-mat view flattens to a distorted, low-res image. Stays hidden until a flat photo exists."
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: all 7 brand images are AI room renders at a steep angle; the only whole-mat view flattens to a distorted, low-res image. Stays hidden until a flat photo exists.)",
+  "was": "no_flat_photo"
  },
  "mahjsquadshop.com/regency-mahjong-mat": {
   "name": "Regency",
   "brand": "Mahj Squad",
-  "flag": "no_flat_photo",
-  "note": "Oct 21 QA: all 10 brand images are close-ups with tiles/dice/a tray. Stays hidden until a flat photo exists."
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: all 10 brand images are close-ups with tiles/dice/a tray. Stays hidden until a flat photo exists.)",
+  "was": "no_flat_photo"
  },
  "mahjsquadshop.com/jade-green-chinoiserie-mahjong-mat": {
   "name": "Jade Green Chinoiserie",
   "brand": "Mahj Squad",
-  "flag": "no_flat_photo",
-  "note": "Oct 21 QA: 17 brand images: tiles on the mat or partial close-ups, no whole-mat view. Stays hidden until a flat photo exists."
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: 17 brand images: tiles on the mat or partial close-ups, no whole-mat view. Stays hidden until a flat photo exists.)",
+  "was": "no_flat_photo"
  },
  "mahjsquadshop.com/blue-chinoiserie-mahjong-mat-copy": {
   "name": "Pastel Chinoiserie",
   "brand": "Mahj Squad",
-  "flag": "no_flat_photo",
-  "note": "Oct 21 QA: 8 brand images: racks/tiles on the mat or a partial pattern close-up. Stays hidden until a flat photo exists."
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: 8 brand images: racks/tiles on the mat or a partial pattern close-up. Stays hidden until a flat photo exists.)",
+  "was": "no_flat_photo"
  },
  "missmahjong.com/el-ultimo-refresco-mahjong-playing-mat": {
   "name": "El Último Refresco",
   "brand": "Miss Mahjong",
-  "flag": "no_flat_photo",
-  "note": "Oct 21 QA: all 4 brand images are tilted close-ups with tiles. Stays hidden until a flat photo exists."
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: all 4 brand images are tilted close-ups with tiles. Stays hidden until a flat photo exists.)",
+  "was": "no_flat_photo"
  },
  "sundaymahjong.com/vegan-leather-premium-mahjong-mat": {
   "name": "Vegan Leather Premium",
   "brand": "Sunday Mahjong",
-  "flag": "no_flat_photo",
-  "note": "Oct 21 QA: all 4 brand images are patio shots with racks/tiles on the mat. Stays hidden until a flat photo exists."
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: all 4 brand images are patio shots with racks/tiles on the mat. Stays hidden until a flat photo exists.)",
+  "was": "no_flat_photo"
  },
  "tigredetartan.com/paige-spearin-mahjong-mat-apres-mahj": {
   "name": "Paige Spearin Après Mahj",
   "brand": "Tigre de Tartan",
-  "flag": "no_flat_photo",
-  "note": "Oct 21 QA: only 1 brand image, tiles scattered on the mat. Stays hidden until a flat photo exists."
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: only 1 brand image, tiles scattered on the mat. Stays hidden until a flat photo exists.)",
+  "was": "no_flat_photo"
  },
  "www.hiphipmahjong.com/celebration-mahjong-mat": {
   "name": "Celebration",
   "brand": "Hip Hip Mahjong",
-  "flag": "no_flat_photo",
-  "note": "Oct 21 QA: only 1 brand image, tiles/racks/props on the mat. Stays hidden until a flat photo exists."
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was no_flat_photo: Oct 21 QA: only 1 brand image, tiles/racks/props on the mat. Stays hidden until a flat photo exists.)",
+  "was": "no_flat_photo"
  },
  "splashofcolorco.com/modern-nordic-scandinavian-folk-art-mahjong-mat-sleek-surface": {
   "name": "Modern Nordic Scandinavian Folk Art Sleek Surface",
   "brand": "Splash of Color",
-  "flag": "locked_needs_approval",
+  "flag": "ok_fym_props",
   "candidate": "assets/mats/clean/review_oct21/modern-nordic-scandinavian-folk-art-sleek-surface.webp",
-  "note": "Oct 21 QA: live photo is a lifestyle/props shot; locked, flat candidate staged for Tiffany (review_locked.json)"
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was locked_needs_approval: Oct 21 QA: live photo is a lifestyle/props shot; locked, flat candidate staged for Tiffany (review_locked.json))",
+  "was": "locked_needs_approval"
  },
  "mahjsquadshop.com/palm-springs-mahjong-mat-neoprene-mahjong-mat-in-palm-springs-mid-century-mahjong-mat-pink-mahjong-tropical-mahj-mahjongg-mat-1": {
   "name": "Palm Springs",
   "brand": "Mahj Squad",
-  "flag": "locked_needs_approval",
+  "flag": "ok_fym_props",
   "candidate": "assets/mats/clean/review_oct21/palm-springs.webp",
-  "note": "Oct 21 QA: live photo is a lifestyle/props shot; locked, flat candidate staged for Tiffany (review_locked.json)"
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was locked_needs_approval: Oct 21 QA: live photo is a lifestyle/props shot; locked, flat candidate staged for Tiffany (review_locked.json))",
+  "was": "locked_needs_approval"
  },
  "tigredetartan.com/katherine-hartman-x-tigre-de-tartan": {
   "name": "Katherine Hartman X Tigre de Tartán Birdsong",
   "brand": "Tigre de Tartan",
-  "flag": "locked_needs_approval",
+  "flag": "ok_fym_props",
   "candidate": "assets/mats/clean/review_oct21/katherine-hartman-x-tigre-de-tart-n-birdsong.webp",
-  "note": "Oct 21 QA: live photo is a lifestyle/props shot; locked, flat candidate staged for Tiffany (review_locked.json)"
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was locked_needs_approval: Oct 21 QA: live photo is a lifestyle/props shot; locked, flat candidate staged for Tiffany (review_locked.json))",
+  "was": "locked_needs_approval"
  },
  "mahjsquadshop.com/bejeweled-dream-mahjong-mat": {
   "name": "Bejeweled Dream",
   "brand": "Mahj Squad",
-  "flag": "locked_needs_approval",
-  "candidate": null,
-  "note": "Oct 21 QA: all 18 brand images have tiles/racks on the mat or are partial close-ups; locked, recommend hiding once Tiffany OKs (review_locked.json)"
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was locked_needs_approval: Oct 21 QA: all 18 brand images have tiles/racks on the mat or are partial close-ups; locked, recommend hiding once Tiffany OKs (review_locked.json))",
+  "was": "locked_needs_approval"
  },
  "mahjsquadshop.com/candy-cane-pink-wonderland-mahjong-mat": {
   "name": "Candy Cane Pink Wonderland",
   "brand": "Mahj Squad",
-  "flag": "locked_needs_approval",
-  "candidate": null,
-  "note": "Oct 21 QA: all 5 brand images are room shots or close-ups with racks; locked, recommend hiding once Tiffany OKs (review_locked.json)"
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was locked_needs_approval: Oct 21 QA: all 5 brand images are room shots or close-ups with racks; locked, recommend hiding once Tiffany OKs (review_locked.json))",
+  "was": "locked_needs_approval"
  },
  "tigredetartan.com/mahjong-mat-el-tigre-new-edition": {
   "name": "El Tigre",
   "brand": "Tigre de Tartan",
-  "flag": "locked_needs_approval",
-  "candidate": null,
-  "note": "Oct 21 QA: 10 brand images: tiles/racks/people; the cleanest (current) shows the mat inside a wooden tray frame; locked, recommend hiding once Tiffany OKs (review_locked.json)"
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was locked_needs_approval: Oct 21 QA: 10 brand images: tiles/racks/people; the cleanest (current) shows the mat inside a wooden tray frame; locked, recommend hiding once Tiffany OKs (review_locked.json))",
+  "was": "locked_needs_approval"
  },
  "tigredetartan.com/tigre-de-tartan-x-miss-mahjong-el-ultimo-refresco-mahjong-mat": {
   "name": "Tigre de Tartán x Miss Mahjong: “El Último Refresco”",
   "brand": "Tigre de Tartan",
-  "flag": "locked_needs_approval",
-  "candidate": null,
-  "note": "Oct 21 QA: all 12 brand images have racks/tiles on the mat; locked, recommend hiding once Tiffany OKs (review_locked.json)"
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was locked_needs_approval: Oct 21 QA: all 12 brand images have racks/tiles on the mat; locked, recommend hiding once Tiffany OKs (review_locked.json))",
+  "was": "locked_needs_approval"
  },
  "tigredetartan.com/mahjong-mat-mantel-mates": {
   "name": "Mantel Mates",
   "brand": "Tigre de Tartan",
-  "flag": "locked_needs_approval",
-  "candidate": null,
-  "note": "Oct 21 QA: all 7 brand images have racks/tiles/a figurine on the mat; locked, recommend hiding once Tiffany OKs (review_locked.json)"
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was locked_needs_approval: Oct 21 QA: all 7 brand images have racks/tiles/a figurine on the mat; locked, recommend hiding once Tiffany OKs (review_locked.json))",
+  "was": "locked_needs_approval"
  },
  "tigredetartan.com/paige-spearin-shell-yeah-mahjong-mat": {
   "name": "Paige Spearin “Shell Yeah”",
   "brand": "Tigre de Tartan",
-  "flag": "locked_needs_approval",
-  "candidate": null,
-  "note": "Oct 21 QA: all 5 brand images are close-ups with tiles/racks; locked, recommend hiding once Tiffany OKs (review_locked.json)"
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was locked_needs_approval: Oct 21 QA: all 5 brand images are close-ups with tiles/racks; locked, recommend hiding once Tiffany OKs (review_locked.json))",
+  "was": "locked_needs_approval"
  },
  "tigredetartan.com/mahjong-mat-french-mural": {
   "name": "French Mural",
   "brand": "Tigre de Tartan",
-  "flag": "locked_needs_approval",
-  "candidate": null,
-  "note": "Oct 21 QA: all 6 brand images have racks/tiles/cards or a person; locked, recommend hiding once Tiffany OKs (review_locked.json)"
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was locked_needs_approval: Oct 21 QA: all 6 brand images have racks/tiles/cards or a person; locked, recommend hiding once Tiffany OKs (review_locked.json))",
+  "was": "locked_needs_approval"
  },
  "tigredetartan.com/third-shipment-mahjong-mat-jardin-de-los-jefes": {
   "name": "Jardín de Los Jefes",
   "brand": "Tigre de Tartan",
-  "flag": "locked_needs_approval",
-  "candidate": null,
-  "note": "Oct 21 QA: all 8 brand images have tiles/racks/a bag or are close-ups; locked, recommend hiding once Tiffany OKs (review_locked.json)"
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was locked_needs_approval: Oct 21 QA: all 8 brand images have tiles/racks/a bag or are close-ups; locked, recommend hiding once Tiffany OKs (review_locked.json))",
+  "was": "locked_needs_approval"
  },
  "tigredetartan.com/mahjong-mat-caned-trompe-l-oeil-natural": {
   "name": "Caned Trompe L'oeil Natural",
   "brand": "Tigre de Tartan",
-  "flag": "locked_needs_approval",
-  "candidate": null,
-  "note": "Oct 21 QA: all 5 brand images have racks/cards/tiles; locked, recommend hiding once Tiffany OKs (review_locked.json)"
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was locked_needs_approval: Oct 21 QA: all 5 brand images have racks/cards/tiles; locked, recommend hiding once Tiffany OKs (review_locked.json))",
+  "was": "locked_needs_approval"
  },
  "tigredetartan.com/mahjong-mat-hearts-horseshoes-2": {
   "name": "Hearts & Horseshoes",
   "brand": "Tigre de Tartan",
-  "flag": "locked_needs_approval",
-  "candidate": null,
-  "note": "Oct 21 QA: all 6 brand images have racks/cards/a pouch; locked, recommend hiding once Tiffany OKs (review_locked.json)"
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was locked_needs_approval: Oct 21 QA: all 6 brand images have racks/cards/a pouch; locked, recommend hiding once Tiffany OKs (review_locked.json))",
+  "was": "locked_needs_approval"
  },
  "tigredetartan.com/mahjong-mat-cannage-blonde-rules-edition": {
   "name": "Cannage Blonde",
   "brand": "Tigre de Tartan",
-  "flag": "locked_needs_approval",
-  "candidate": null,
-  "note": "Oct 21 QA: all 7 brand images have racks/tiles/dice or are a room shot; locked, recommend hiding once Tiffany OKs (review_locked.json)"
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was locked_needs_approval: Oct 21 QA: all 7 brand images have racks/tiles/dice or are a room shot; locked, recommend hiding once Tiffany OKs (review_locked.json))",
+  "was": "locked_needs_approval"
  },
  "alb:cypress-forest:Dapper 1": {
   "name": "Dapper 1 (retired)",
   "brand": "Oh My Mahjong",
-  "flag": "locked_needs_approval",
-  "candidate": null,
-  "note": "Oct 21 QA: retired Oh My Mahjong mat, no product page left; album photo has racks/tiles/a bag on the mat; locked, recommend hiding once Tiffany OKs (review_locked.json)"
+  "flag": "ok_fym_props",
+  "note": "FYM OK per Tiffany Oct 21 low bar; not clean enough for album cards (was locked_needs_approval: Oct 21 QA: retired Oh My Mahjong mat, no product page left; album photo has racks/tiles/a bag on the mat; locked, recommend hiding once Tiffany OKs (review_locked.json))",
+  "was": "locked_needs_approval"
  },
  "www.bespokemahjong.com/graymalingamemat": {
   "name": "Gray Malin",
   "brand": "Bespoke Mahjong",
   "flag": "locked_needs_approval",
   "candidate": null,
-  "note": "Oct 21 QA: 10 brand images: corner crops, tiles/racks, or a gift box sitting on the mat; no whole-mat photo; locked, recommend hiding once Tiffany OKs (review_locked.json)"
+  "note": "Oct 21 QA: 10 brand images: corner crops, tiles/racks, or a gift box sitting on the mat; no whole-mat photo; locked, recommend hiding once Tiffany OKs (review_locked.json) | Oct 21 low bar: kept, corner close-up of the mat (no whole-mat view); rule 6 still hides corner close-ups, waiting on Tiffany"
  }
 }

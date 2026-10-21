@@ -121,7 +121,7 @@ for c in notes:
             newp = rec.get('primary', 'multi')
         else:
             rec.pop('gallery_primary', None); newp = cp
-        rec.update(primary=newp, holiday=hol or (rec.get('holiday', False) if cp is None else False), skip=False, image=r[0], by='tiffany-chat-' + TODAY)
+        rec.update(primary=newp, holiday=hol or (rec.get('holiday', False) if cp is None else False), skip=False, image=r[0], by=c.get('by') or 'tiffany-chat-' + TODAY)
         rec.setdefault('secondary', []); rec.setdefault('tone', 'blend'); rec.setdefault('src', 'claude-look')
         if c.get('also'):
             rec['also'] = c['also'] if cp else list(dict.fromkeys((rec.get('also') or []) + c['also']))

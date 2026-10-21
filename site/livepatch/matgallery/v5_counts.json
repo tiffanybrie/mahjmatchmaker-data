@@ -382,7 +382,6 @@
   "wren-mats--palm-beach",
   "bam-bird-boutique--classic-neoprene-teal",
   "charleston-mahjong-club--migration-in-pink-light-blue",
-  "charleston-mahjong-club--ski-club-mat-red-sweater-border",
   "let-s-mahj-on--signature-logo-mat-pastel-sea",
   "my-fair-mahjong--color-wave-green-center-pink-scallop",
   "peace-love-mahjong--border-aqua",
@@ -404,7 +403,6 @@
   "bam-let-s-mahjong--nantucket-mahjong-mat",
   "bird-bamboo--the-royal-deco-mahjong-mat",
   "charleston-mahjong-club--reversible-vegan-leather-sea-foam-green-dusty-blue",
-  "charleston-mahjong-club--ski-club-mat-periwinkle-center",
   "charleston-mahjong-club--the-migration-mat-teal-periwinkle-blue",
   "hutch-nook--blue-cowboy-boot",
   "let-s-mahj-on--let-s-be-refined-refined-blue",
@@ -762,10 +760,7 @@
    "simple"
   ],
   "charleston-mahjong-club--ski-club-mat-red-sweater-border": [
-   "teal",
-   "red",
-   "blue",
-   "simple"
+   "holiday"
   ],
   "mahjong-register--teal-rivera-leopard-33": [
    "bw",
@@ -798,6 +793,12 @@
    "purple",
    "dark",
    "teal"
+  ],
+  "charleston-mahjong-club--ski-club-mat-periwinkle-center": [
+   "holiday"
+  ],
+  "virora-mahjong--hiverelle-mahjong-mat": [
+   "holiday"
   ],
   "mahjong-register--hunter-green-navy-double-sided-leatherette": [
    "green",
@@ -1691,7 +1692,7 @@
   },
   "red": {
    "primary": 10,
-   "also": 30,
+   "also": 29,
    "accent": 14
   },
   "orange": {
@@ -1710,13 +1711,13 @@
    "accent": 52
   },
   "teal": {
-   "primary": 42,
+   "primary": 41,
    "also": 32,
    "accent": 15
   },
   "blue": {
-   "primary": 125,
-   "also": 66,
+   "primary": 123,
+   "also": 65,
    "accent": 47
   },
   "purple": {
@@ -1746,12 +1747,12 @@
   },
   "simple": {
    "primary": 2,
-   "also": 145,
+   "also": 143,
    "accent": 0
   },
   "pastel": {
    "primary": 0,
-   "also": 115,
+   "also": 114,
    "accent": 0
   },
   "brights": {
@@ -1770,7 +1771,7 @@
    "accent": 0
   },
   "holiday": {
-   "primary": 70,
+   "primary": 73,
    "also": 0,
    "accent": 0
   },
@@ -1782,45 +1783,45 @@
  },
  "section_counts_active": {
   "pink": 217,
-  "red": 54,
+  "red": 53,
   "orange": 56,
   "yellow": 53,
   "green": 212,
-  "teal": 89,
-  "blue": 238,
+  "teal": 88,
+  "blue": 235,
   "purple": 66,
   "neutral": 110,
   "earthy": 149,
   "dark": 83,
   "bw": 12,
-  "simple": 147,
-  "pastel": 115,
+  "simple": 145,
+  "pastel": 114,
   "brights": 163,
   "florals": 31,
   "animal": 29,
-  "holiday": 70,
+  "holiday": 73,
   "multi": 0,
   "retired": 29
  },
  "section_counts_if_retired_shown": {
   "pink": 231,
-  "red": 57,
+  "red": 56,
   "orange": 59,
   "yellow": 58,
   "green": 225,
-  "teal": 95,
-  "blue": 249,
+  "teal": 94,
+  "blue": 246,
   "purple": 69,
   "neutral": 115,
   "earthy": 153,
   "dark": 85,
   "bw": 12,
-  "simple": 149,
-  "pastel": 124,
+  "simple": 147,
+  "pastel": 123,
   "brights": 175,
   "florals": 34,
   "animal": 29,
-  "holiday": 72,
+  "holiday": 75,
   "multi": 0
  },
  "unique_active_mats": 654,
@@ -2149,6 +2150,27 @@
    "Sunday Mahjong",
    "Festive Plaid Premium",
    "Festive Plaid Premium",
+   "holiday",
+   []
+  ],
+  [
+   "Charleston Mahjong Club",
+   "Ski Club Mat- Red Sweater Border",
+   "Ski Club Mat- Red Sweater Border",
+   "holiday",
+   []
+  ],
+  [
+   "Charleston Mahjong Club",
+   "Ski Club Mat - Periwinkle Center",
+   "Ski Club Mat - Periwinkle Center",
+   "holiday",
+   []
+  ],
+  [
+   "Virora Mahjong",
+   "Hiverelle",
+   "Hiverelle",
    "holiday",
    []
   ],
