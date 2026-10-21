@@ -199,7 +199,7 @@ callout = (
     '</style>'
     '<div id="mmcode"><div class="mmcb-in">'
     '<a class="mmcb-bar" href="/mahjong-discount-codes">'
-    '<p class="mmcb-t">Use code <span class="mmcb-code">MAHJMATCH</span> to save 10% or more at our partner brands</p>'
+    '<p class="mmcb-t">Use code <span class="mmcb-code">MAHJMATCH</span> to save at 30+ partner brands: 10% off at most, up to 20% at a few</p>'
     '<span class="mmcb-btn">See every code &rarr;</span></a>'
     '</div>'
     '<div class="mmcb-tk" role="region" aria-label="Mahj Matchmaker partner brands"><div class="mmcb-tt">'
