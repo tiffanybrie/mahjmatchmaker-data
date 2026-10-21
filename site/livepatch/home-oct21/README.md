@@ -97,3 +97,9 @@ Rollback copies are in `source/oct21-1222/before_text_block-*.html`.
 - Fix (build.py step 7): `@media(min-width:761px){#mmhome section.mhx{margin-left:auto;margin-right:auto}.mhx-txt{text-align:center}}`. Phone (<=760px) unchanged; bottom margin stays 64px, so no section changes height (page height 10666 / 8333 / 8502 at 390 / 1280 / 1440, same as before).
 - Published as a one-line insert into block 5194 in the editor; the editor content hash matched the rebuilt file, and curl of the live page contains the file byte for byte.
 - Screenshots: qa/holiday_center_{before,after,live}_{390,1280,1440}.jpg
+
+## Step 3 image v2 LIVE (Tiffany Oct 21 2:05pm: bigger, no pink)
+- `make_step3_image.py` now writes a transparent PNG (1230x825, 15px transparent pad), fan fills step 1's column width (522 at 1280, 588 at 1440, 343 at 390), never cropped on phone. jsDelivr @3025661 (warmed, 200).
+- Step 3 copy: headings `text-wrap:balance`, paragraphs `text-wrap:pretty` (no orphans at 390/1280/1440).
+- Independent QA pass. Published as a one-range edit in block 5194's editor; editor hash matched the paste file; curl of the live page contains it byte for byte. Hero untouched.
+- Screenshots: qa/step3_png_{before,after}_{390,1280,1440}.jpg
