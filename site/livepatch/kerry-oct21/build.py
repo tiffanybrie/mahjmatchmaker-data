@@ -9,6 +9,7 @@ RM['Mahj Mood Scalloped Clear Acrylic'] = 'https://mahjmood.com/products/copy-sc
 SPEC = json.load(open(R + 'scripts/albumcard/specs/kerry.json'))
 MATR = json.load(open(R + 'config/mat-racks-picks.json'))['kerry']['racks']
 SHOP = 'https://go.shopmy.us/p-96114928'
+RETIRED = {'sorbet', 'birdie', 'dandy', 'taylor'}  # retired OMM sets: the code no longer applies to the tiles themselves
 out = {}
 for c in SPEC['cards']:
     s = c['set']; h = open(f'{LIVE}/{s}.html').read()
@@ -20,7 +21,7 @@ for c in SPEC['cards']:
     for r in c['racks'] + MATR:
         if r not in seen: seen.add(r); racks.append(f'<a href="{RM[r]}" target="_blank" rel="sponsored noopener">{html.escape(r)}</a>')
     code = ''  # no code on the Kerry; the code line sits in the note (it works on the OMM tiles, not the mat)
-    note = ("The Kerry is a watercolor chinoiserie mat in pinks, greens and soft blues. We do not have a code for Betty June &amp; Jeannette; code MAHJMATCH works on " + name + " tiles."
+    note = ("The Kerry is a watercolor chinoiserie mat in pinks, greens and soft blues. We do not have a code for Betty June &amp; Jeannette; code MAHJMATCH works on " + (name + " tiles." if s not in RETIRED else "Oh My Mahjong's current tiles and mats.") + ""
             if s != 'coquette' else "The Kerry is a watercolor chinoiserie mat in pinks, greens and soft blues. Note that we do not have a code for this brand.")
     fig = (f'<figure class="mm3-c"><div class="mm3-im"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@{SHA}/assets/cards/kerry/{c["file"]}" data-lb="" '
            f'alt="{tb} {name} mahjong tiles with Betty June &amp; Jeannette The Kerry mahjong mat" loading="lazy" width="750" height="938">'
