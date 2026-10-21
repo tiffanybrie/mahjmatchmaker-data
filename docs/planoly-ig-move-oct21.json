@@ -1,0 +1,752 @@
+{
+ "movedOn": "2026-10-21",
+ "oldWorkspace": "019fc27b-964d-7279-8685-1f1bb7a7c3f5",
+ "newWorkspace": "019fc27c-0bef-7533-bc3f-030acc19a135",
+ "note": "list_post_groups does not expose collaborators, firstComment, or audio; none observed. Status 'draft' with a scheduleDate = dated draft (not queued to publish).",
+ "postGroups": [
+  {
+   "postGroupId": "01a15f72-422c-73ee-837d-cbc64aff0059",
+   "postId": "01a15f72-4236-7709-bec0-4abe8e74abe7",
+   "postType": "story",
+   "isAutoPublish": false,
+   "status": "scheduled",
+   "scheduleDate": "2026-10-21T18:25:00.000Z",
+   "caption": "🛑 TIFFANY: DELETE THIS BOX BEFORE YOU POST 🛑\n1) Order: post all 7 frames as one story, 1 → 7, same order as the carousel (profile → Her colors → Her faces → Her best features → Racks she's into → Made for each other → She's been MAT-ched!).\n2) Frame 1, Sticker > MENTION: @ohmymahjong, VISIBLE and full size, over the cream margin below the X and heart buttons. This is the one OMM reshares.\n3) Frames 2, 3, 4 and 6 (Papaya tiles, Vivienne mat): Sticker > MENTION @ohmymahjong, shrink it and tuck it in a corner of the cream margin.\n4) Frame 5 (racks): small tucked mentions @ohmymahjong, @bird_and_bamboo, @peacelovemahjong, @middleandmainmahjong, @mahjongrowandco, in the cream margin.\n5) Frame 7, Sticker > LINK: https://www.mahjmatchmaker.com/papaya-spritz-mahjong-tile-matches , link text \"See Papaya's matches\". Put it over the cream margin under the mahjmatchmaker logo. Add a small @ohmymahjong mention too.\n6) No music. Post it now (2:30pm ET). Delete this box, then share.\n————————————\nMeet Papaya Spritz 🧡💜💚 by @ohmymahjong",
+   "media": [
+    {
+     "assetId": "01a15f9c-6f69-7718-8d4e-cab109fc46ae",
+     "type": "image",
+     "file": "papaya-intro-story-v3-1.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f9c-6f69-7718-8d4e-cab109fc46ae/papaya-intro-story-v3-1.jpg"
+    },
+    {
+     "assetId": "01a15f9c-70fe-76c5-a871-26afbc519453",
+     "type": "image",
+     "file": "papaya-intro-story-v3-2.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f9c-70fe-76c5-a871-26afbc519453/papaya-intro-story-v3-2.jpg"
+    },
+    {
+     "assetId": "01a15f9c-7289-750e-af59-b94a549ba158",
+     "type": "image",
+     "file": "papaya-intro-story-v3-3.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f9c-7289-750e-af59-b94a549ba158/papaya-intro-story-v3-3.jpg"
+    },
+    {
+     "assetId": "01a15f9c-7414-765e-9384-8b86da73999c",
+     "type": "image",
+     "file": "papaya-intro-story-v3-4.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f9c-7414-765e-9384-8b86da73999c/papaya-intro-story-v3-4.jpg"
+    },
+    {
+     "assetId": "01a15f9c-75a1-7765-b926-dfb8796258a6",
+     "type": "image",
+     "file": "papaya-intro-story-v3-5.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f9c-75a1-7765-b926-dfb8796258a6/papaya-intro-story-v3-5.jpg"
+    },
+    {
+     "assetId": "01a15f9c-777e-75cf-af2d-256b6e0056d8",
+     "type": "image",
+     "file": "papaya-intro-story-v3-6.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f9c-777e-75cf-af2d-256b6e0056d8/papaya-intro-story-v3-6.jpg"
+    },
+    {
+     "assetId": "01a15fa5-5a3f-741c-9287-2b2fe668bbe4",
+     "type": "image",
+     "file": "papaya-intro-story-7.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fa5-5a3f-741c-9287-2b2fe668bbe4/papaya-intro-story-7.jpg"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": false,
+   "note": "reminderSentAt 2026-10-21T18:25Z; date already passed at inventory time (21:08Z)",
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a15f6f-0d96-76b9-be47-32aef00e3e86",
+   "postId": "01a15f6f-0d9d-762b-bfcd-15b7f10caa0d",
+   "postType": "story",
+   "isAutoPublish": false,
+   "status": "scheduled",
+   "scheduleDate": "2026-10-21T23:00:00.000Z",
+   "caption": "Frame 1: @ohmymahjong sticker (big)\nFrame 3: link sticker → mahjmatchmaker.com/papaya-spritz-mahjong-tile-matches\nNo caption needed. Select all 3 in order → Separate.",
+   "media": [
+    {
+     "assetId": "01a15fac-4880-749d-b1d1-b46057d521ba",
+     "type": "image",
+     "file": "papaya-vivienne-story-1.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fac-4880-749d-b1d1-b46057d521ba/papaya-vivienne-story-1.jpg"
+    },
+    {
+     "assetId": "01a15fac-4a60-709e-80ae-4519eea7e46f",
+     "type": "image",
+     "file": "papaya-vivienne-story-2.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fac-4a60-709e-80ae-4519eea7e46f/papaya-vivienne-story-2.jpg"
+    },
+    {
+     "assetId": "01a15fac-4c23-7459-bbd6-aecd2dd22574",
+     "type": "image",
+     "file": "papaya-vivienne-story-3.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fac-4c23-7459-bbd6-aecd2dd22574/papaya-vivienne-story-3.jpg"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": false,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a15f6c-20ad-7713-8f6e-6cddf2cd59ac",
+   "postId": "01a15f6c-20b0-73e9-b5d9-5aedc77736f2",
+   "postType": "grid-post",
+   "isAutoPublish": false,
+   "status": "draft",
+   "scheduleDate": null,
+   "caption": "👀 REVIEW: Launch-day carousel, 4 slides, for Tue 10/27 9am CT — reply yes/changes to Claude\nFind Your Mat-ch™ is live! 💘 Your tiles have been waiting for this.\nPick your tiles (or your mat), swipe, heart the ones you love. Starring Papaya Spritz by @ohmymahjong + Heiress by @brittmillsdesign, link in bio\nUse code MAHJMATCH to save 💕\n#mahjong #mahjongtiles #mahjongmat #mahjmatch #affiliate",
+   "media": [
+    {
+     "assetId": "01a15f69-5ca4-724c-a3b3-aa2c8f35a8d1",
+     "type": "image",
+     "file": "launch-1-live.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-5ca4-724c-a3b3-aa2c8f35a8d1/launch-1-live.jpg"
+    },
+    {
+     "assetId": "01a15f69-5eac-7658-b5a9-bfb74decd7fb",
+     "type": "image",
+     "file": "launch-2-phone.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-5eac-7658-b5a9-bfb74decd7fb/launch-2-phone.jpg"
+    },
+    {
+     "assetId": "01a15f69-6081-7739-b0cc-b5c665b400d5",
+     "type": "image",
+     "file": "launch-3-two-doors.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-6081-7739-b0cc-b5c665b400d5/launch-3-two-doors.jpg"
+    },
+    {
+     "assetId": "01a15f69-6251-772e-ac33-4b8bf9158b6f",
+     "type": "image",
+     "file": "launch-4-code.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-6251-772e-ac33-4b8bf9158b6f/launch-4-code.jpg"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": false,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a15f6c-1ef8-733f-817d-7f9f9c09b6e6",
+   "postId": "01a15f6c-1efd-7619-9ffb-b26a7e58a586",
+   "postType": "story",
+   "isAutoPublish": false,
+   "status": "draft",
+   "scheduleDate": null,
+   "caption": "👀 REVIEW: Mahj Mood \"Nice racks are back tomorrow\", 4 frames with real product photos (racks, Malachite pusher, the other new pushers, code), for Thu 10/22 12pm CT — reply yes/changes to Claude\n🛑 TIFFANY: DELETE THIS BOX BEFORE YOU POST 🛑\n1) Order: post the 4 frames as one story, 1 → 4.\n2) Frame 1, Sticker > MENTION: @mahj_mood, VISIBLE, in the empty band under the photo caption.\n3) Frames 2 and 3: small tucked @mahj_mood mention.\n4) Frame 4, Sticker > LINK: https://mahjmood.com/products/copy-scalloped-clear-acrylic-rack-and-pusher-set-of-4 , link text \"Shop Mahj Mood\". Put it in the empty space under the code button. Optional: add a COUNTDOWN sticker to Fri 10/23 10am CT.\n5) No music. Time: Thu 10/22 around 12pm CT (date gets set after your yes). Delete this box, then share.\n————————————\nNice racks are back tomorrow 👀 @mahj_mood clear racks + new pushers, Fri 10/23 at 10am CT. Use code MAHJMATCH to save 💕",
+   "media": [
+    {
+     "assetId": "01a15f79-4cf0-72a8-9dfa-8c531f54142e",
+     "type": "image",
+     "file": "mahj-mood-tease-1.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-4cf0-72a8-9dfa-8c531f54142e/mahj-mood-tease-1.jpg"
+    },
+    {
+     "assetId": "01a15f79-5074-7448-a6f1-6b6892074059",
+     "type": "image",
+     "file": "mahj-mood-malachite-2.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5074-7448-a6f1-6b6892074059/mahj-mood-malachite-2.jpg"
+    },
+    {
+     "assetId": "01a15f79-5478-737b-af26-f8a4b2021034",
+     "type": "image",
+     "file": "mahj-mood-pushers-3.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5478-737b-af26-f8a4b2021034/mahj-mood-pushers-3.jpg"
+    },
+    {
+     "assetId": "01a15f79-5748-7189-91df-05bb45134e18",
+     "type": "image",
+     "file": "mahj-mood-tease-4.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5748-7189-91df-05bb45134e18/mahj-mood-tease-4.jpg"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": false,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a15f6b-e7bc-73f6-b2a8-e51979256c53",
+   "postId": "01a15f6b-e7c1-72c1-9e31-510de2d08378",
+   "postType": "story",
+   "isAutoPublish": true,
+   "status": "draft",
+   "scheduleDate": null,
+   "caption": "👀 REVIEW: \"Petalée's album is ready\" story (Virora, in stock now), auto Sat 10/24 12pm CT — reply yes/changes to Claude\nPlain story frame, auto-posts. Note: Petalée's album page is staged, not live yet. It has to go live before this posts.",
+   "media": [
+    {
+     "assetId": "01a15f69-55b3-728d-a41e-24317135adca",
+     "type": "image",
+     "file": "petalee-album-story.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-55b3-728d-a41e-24317135adca/petalee-album-story.jpg"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": false,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a15f6b-e12f-7198-8b70-9c83c6455bc6",
+   "postId": "01a15f6b-e132-77f4-9245-1cef6b101dec",
+   "postType": "story",
+   "isAutoPublish": false,
+   "status": "draft",
+   "scheduleDate": null,
+   "caption": "👀 REVIEW: Mahj Mood \"Nice racks are back\" restock-day story, 4 frames with real product photos (racks, Malachite pusher, the other new pushers, code), for Fri 10/23 10am CT — reply yes/changes to Claude\n🛑 TIFFANY: DELETE THIS BOX BEFORE YOU POST 🛑\n1) Order: post the 4 frames as one story, 1 → 4.\n2) Frame 1, Sticker > MENTION: @mahj_mood, VISIBLE, in the empty band under the photo caption.\n3) Frames 2 and 3: small tucked @mahj_mood mention.\n4) Frame 4, Sticker > LINK: https://mahjmood.com/products/copy-scalloped-clear-acrylic-rack-and-pusher-set-of-4 , link text \"Shop Mahj Mood\". Put it in the empty space under the code button.\n5) No music. Time: Fri 10/23 at 10am CT, drop time (date gets set after your yes). Delete this box, then share.\n————————————\nNice racks are back 👀 @mahj_mood clear racks + new pushers are live. Use code MAHJMATCH to save 💕",
+   "media": [
+    {
+     "assetId": "01a15f79-5995-7148-a5e5-8b816d653607",
+     "type": "image",
+     "file": "mahj-mood-drop-1.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5995-7148-a5e5-8b816d653607/mahj-mood-drop-1.jpg"
+    },
+    {
+     "assetId": "01a15f79-5074-7448-a6f1-6b6892074059",
+     "type": "image",
+     "file": "mahj-mood-malachite-2.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5074-7448-a6f1-6b6892074059/mahj-mood-malachite-2.jpg"
+    },
+    {
+     "assetId": "01a15f79-5478-737b-af26-f8a4b2021034",
+     "type": "image",
+     "file": "mahj-mood-pushers-3.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5478-737b-af26-f8a4b2021034/mahj-mood-pushers-3.jpg"
+    },
+    {
+     "assetId": "01a15f79-5c55-729d-95e3-9d55c4043c75",
+     "type": "image",
+     "file": "mahj-mood-drop-4.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f79-5c55-729d-95e3-9d55c4043c75/mahj-mood-drop-4.jpg"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": false,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a15f67-a405-7400-92e7-0751a0ccf90d",
+   "postId": "01a15f67-a40d-73bf-a173-72113ab508a8",
+   "postType": "grid-post",
+   "isAutoPublish": true,
+   "status": "draft",
+   "scheduleDate": null,
+   "caption": "👀 REVIEW: OMM-forward Papaya × Vivienne carousel — reply yes/changes to Claude\n(Slot: today Wed 10/21 at 5:30pm CT; fallback Thu 10/22 at 10am CT. Claude deletes these two lines on your yes.)\n\nPapaya Spritz finally met her match 🍹💕 The Vivienne mat by @ohmymahjong was made for her, and those dancing dragons agree. See all 50 of Papaya's matches, link in bio\nUse code MAHJMATCH to save 💕\n#mahjong #ohmymahjong #mahjongtiles #mahjmatch #affiliate",
+   "media": [
+    {
+     "assetId": "01a15fac-437e-7417-ae8a-7348de0e53d7",
+     "type": "image",
+     "file": "papaya-vivienne-feed-1.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fac-437e-7417-ae8a-7348de0e53d7/papaya-vivienne-feed-1.jpg"
+    },
+    {
+     "assetId": "01a15fac-4534-7785-bc60-461b03047f77",
+     "type": "image",
+     "file": "papaya-vivienne-feed-2.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fac-4534-7785-bc60-461b03047f77/papaya-vivienne-feed-2.jpg"
+    },
+    {
+     "assetId": "01a15fac-469d-72ef-b177-4e2e57ffc469",
+     "type": "image",
+     "file": "papaya-vivienne-feed-3.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15fac-469d-72ef-b177-4e2e57ffc469/papaya-vivienne-feed-3.jpg"
+    }
+   ],
+   "userTags": [
+    {
+     "mediaIndex": 0,
+     "type": "username",
+     "value": "ohmymahjong",
+     "x": 0.5,
+     "y": 0.5
+    }
+   ],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": false,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a15ef4-610b-72e8-ad05-6fa2eb06ce8b",
+   "postId": "01a15ef4-6114-72e4-ac8f-850bbbf4a11a",
+   "postType": "grid-post",
+   "isAutoPublish": false,
+   "status": "draft",
+   "scheduleDate": null,
+   "caption": "🛑 TIFFANY: DELETE THIS BOX BEFORE YOU POST 🛑\n1) Song, in Edits: the video is silent. Save it from Planoly, open it in Edits, tap Audio and add \"Call Me Maybe\" by Carly Rae Jepsen at 0:00, starting from \"Hey, I just met you\". Let it run to the end. Export. (My pick; swap in any love song you like.)\n2) In Instagram, post the exported video as a Reel. Cover: the \"Season 2 · EP 8\" title frame.\n3) Tag people: ohmymahjong, bambirdboutique (Mahjong Moxie has no verified handle, so skip them)\n4) Keep it off the grid: on the share screen, turn off the profile grid option. It still shows in your Reels tab.\n5) Paste everything below the line as the caption, then share.\n6) Right after: share the reel to your story (no stickers needed).\n————————————\nSmith swiped left on gorgeous. Then Hawthorne walked in wearing navy. 🤎\nSmith + Hawthorne by @ohmymahjong, all 26 of his matches at the link in bio\nCode MAHJMATCH 💗\n#mahjong #mahjongtiles #mahjongmat #ohmymahjong #affiliate",
+   "media": [
+    {
+     "assetId": "01a15ef2-5b72-749a-853b-62565b3f072d",
+     "type": "video",
+     "coverAssetId": "01a15ef4-383b-7417-8ae8-7d12329e7e01",
+     "coverThumb": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15ef2-5b72-749a-853b-62565b3f072d/cover.jpg",
+     "file": null,
+     "note": "video bytes not exposed via CDN (url null); source from repo"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": true,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a1404f-6cc3-765e-9c1e-3eeef851b198",
+   "postId": "01a1404f-6cc9-701e-a17d-9aa23646e308",
+   "postType": "grid-post",
+   "isAutoPublish": false,
+   "status": "draft",
+   "scheduleDate": null,
+   "caption": "🛑 TIFFANY: DELETE THIS BOX BEFORE YOU POST 🛑\n1) Song, in Edits: the video is silent. Save it from Planoly, open it in Edits, tap Audio and add \"All I Want for Christmas Is You\" by Mariah Carey at 0:00, starting from the big \"All I want for Christmas is you, baby\". Export.\n2) In Instagram, post the exported video as a Reel. Cover: the first frame.\n3) Tag people: ohmymahjong, andersruffdesignco, mahj_squad, brittmillsdesign, peacelovemahjong, bespoke_mahjong, charlestonmahjongclub, sunday_mahjong, mahj_mood, bamletsmahjong, bambirdboutique, viroramahjongofficial, maisonmahj, bird_and_bamboo, mahjongrowandco\n4) Keep it off the grid: on the share screen, turn off the profile grid option.\n5) Paste everything below the line as the caption, then share.\nWhen: not scheduled yet (post-launch holiday content); I'll set the day with you.\n————————————\nSanta called. He wants to know what mat your tiles are wearing. 🎄\n404 holiday matches from @ohmymahjong and 16 more brands, all at the link in bio\nCode MAHJMATCH 💗\n#mahjong #christmasmahjong #holidaymahjong #mahjmatchmaker #affiliate",
+   "media": [
+    {
+     "assetId": "01a1404d-dc7c-7486-9deb-a4266a267bb5",
+     "type": "video",
+     "coverAssetId": "01a1404e-eab4-7797-b2b7-7ec16985f0e3",
+     "coverThumb": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a1404d-dc7c-7486-9deb-a4266a267bb5/cover.jpg",
+     "file": null,
+     "note": "video bytes not exposed via CDN (url null); source from repo"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": true,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a1404f-4efa-71ce-83f0-89f8798498c8",
+   "postId": "01a1404f-4efe-70cf-b784-1e2757476a23",
+   "postType": "grid-post",
+   "isAutoPublish": false,
+   "status": "draft",
+   "scheduleDate": null,
+   "caption": "🛑 TIFFANY: DELETE THIS BOX BEFORE YOU POST 🛑\n1) Song, in Edits: the video is silent. Save it from Planoly, open it in Edits, tap Audio and add \"Call Me Maybe\" by Carly Rae Jepsen at 0:00, starting from \"Hey, I just met you\". Export.\n2) In Instagram, post the exported video as a Reel. Cover: the first frame.\n3) Tag people: ohmymahjong\n4) Keep it off the grid: on the share screen, turn off the profile grid option.\n5) Paste everything below the line as the caption, then share.\nWhen: not scheduled yet (post-launch series); I'll set the day with you.\n————————————\nFive mats. Three seconds each. Zero chill. 🐴\nOsler by @ohmymahjong goes speed dating, all 19 of her matches at the link in bio\nCode MAHJMATCH 💗\n#mahjong #mahjongtiles #mahjongmat #ohmymahjong #affiliate",
+   "media": [
+    {
+     "assetId": "01a1404d-f756-7331-a6c0-5878a8274182",
+     "type": "video",
+     "coverAssetId": "01a1404e-f4b0-753c-88f5-bca359b645ea",
+     "coverThumb": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a1404d-f756-7331-a6c0-5878a8274182/cover.jpg",
+     "file": null,
+     "note": "video bytes not exposed via CDN (url null); source from repo"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": true,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a1404f-3478-728d-b932-2767424a8ca6",
+   "postId": "01a1404f-3481-710a-bfad-6c7f6c88b4aa",
+   "postType": "grid-post",
+   "isAutoPublish": false,
+   "status": "draft",
+   "scheduleDate": null,
+   "caption": "🛑 TIFFANY: DELETE THIS BOX BEFORE YOU POST 🛑\n1) Song, in Edits: the video is silent. Save it from Planoly, open it in Edits, tap Audio and add \"Can't Help Falling in Love\" by Elvis Presley at 0:00, starting from \"Wise men say\". Export.\n2) In Instagram, post the exported video as a Reel. Cover: the first frame.\n3) Tag people: mahjongrowandco, brittmillsdesign, sunday_mahjong\n4) Keep it off the grid: on the share screen, turn off the profile grid option.\n5) Paste everything below the line as the caption, then share.\nWhen: not scheduled yet (post-launch series); I'll set the day with you.\n————————————\nFive mats. One final rose. 🌲\nCypress Forest by @mahjongrowandco hands out roses, all 29 matches at the link in bio\nCode MAHJMATCH 💗\n#mahjong #mahjongtiles #mahjongmat #mahjongrowandco #affiliate",
+   "media": [
+    {
+     "assetId": "01a1404d-f1ec-75d9-b3ab-80e4822dbb67",
+     "type": "video",
+     "coverAssetId": "01a1404e-ebd6-73ba-89a3-0842a1911eac",
+     "coverThumb": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a1404d-f1ec-75d9-b3ab-80e4822dbb67/cover.jpg",
+     "file": null,
+     "note": "video bytes not exposed via CDN (url null); source from repo"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": true,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a1404f-0fe4-745c-a055-b7603c15c01f",
+   "postId": "01a1404f-0fea-7139-9e70-02e85eb34ea3",
+   "postType": "grid-post",
+   "isAutoPublish": false,
+   "status": "draft",
+   "scheduleDate": null,
+   "caption": "🛑 TIFFANY: DELETE THIS BOX BEFORE YOU POST 🛑\n1) Song, in Edits: the video is silent. Save it from Planoly, open it in Edits, tap Audio and add \"Kokomo\" by The Beach Boys at 0:00, starting from \"Aruba, Jamaica, ooh I wanna take ya\". Export.\n2) In Instagram, post the exported video as a Reel. Cover: the first frame.\n3) Tag people: ohmymahjong, brittmillsdesign\n4) Keep it off the grid: on the share screen, turn off the profile grid option.\n5) Paste everything below the line as the caption, then share.\nWhen: not scheduled yet (post-launch series); I'll set the day with you.\n————————————\nShe counted down her top five mats. It turned into a beach party. 🌊\nSeabreeze by @ohmymahjong, all 21 of her matches at the link in bio\nCode MAHJMATCH 💗\n#mahjong #mahjongtiles #mahjongmat #ohmymahjong #affiliate",
+   "media": [
+    {
+     "assetId": "01a1404d-eb5e-722a-8786-eeda3f8f1e0e",
+     "type": "video",
+     "coverAssetId": "01a1404f-0c67-77b4-9e28-fb70f65cabc7",
+     "coverThumb": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a1404d-eb5e-722a-8786-eeda3f8f1e0e/cover.jpg",
+     "file": null,
+     "note": "video bytes not exposed via CDN (url null); source from repo"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": true,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a134b2-537e-722f-b89f-00cf334cf425",
+   "postId": "01a134b2-538b-726a-bf3e-3243517de888",
+   "postType": "grid-post",
+   "isAutoPublish": false,
+   "status": "draft",
+   "scheduleDate": null,
+   "caption": "🛑 TIFFANY: DELETE THIS BOX BEFORE YOU POST 🛑\n1) Song, in Edits: the video is silent. Save it from Planoly, open it in Edits, tap Audio and add \"Lavender Haze\" by Taylor Swift at 0:00, starting from \"Meet me at midnight\". Export.\n2) In Instagram, post the exported video as a Reel. Cover: the first frame.\n3) Tag people: ohmymahjong, brittmillsdesign, viroramahjongofficial\n4) Keep it off the grid: on the share screen, turn off the profile grid option.\n5) Paste everything below the line as the caption, then share.\n6) Right after: post her 3 story frames (their own reminders, with poll stickers).\nWhen: not scheduled yet (post-launch series); I'll set the day with you.\n————————————\nHer first month on the market, in pictures. She's been busy. 📸\nTalulah by @ohmymahjong, every match at the link in bio\nCode MAHJMATCH 💗\n#mahjong #mahjongtiles #mahjongmat #ohmymahjong #affiliate",
+   "media": [
+    {
+     "assetId": "01a134ad-2359-7298-bf85-ffa0c7b1c122",
+     "type": "video",
+     "coverAssetId": "01a134b2-0761-71c8-9be6-cca242c00de2",
+     "coverThumb": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/imports/01a134b2-0761-71c8-9be6-cca242c00de2",
+     "file": null,
+     "note": "video bytes not exposed via CDN (url null); source from repo"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": true,
+   "note": "cover thumb is an 'imports' asset; video asset 01a134ad-... ",
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a1349c-4e40-7049-a340-31da9950bc27",
+   "postId": "01a1349c-4e45-761f-a77d-776bf2725d28",
+   "postType": "grid-post",
+   "isAutoPublish": false,
+   "status": "draft",
+   "scheduleDate": null,
+   "caption": "🛑 TIFFANY: DELETE THIS BOX BEFORE YOU POST 🛑\n1) Song, in Edits: the video is silent. Save it from Planoly, open it in Edits, tap Audio and add \"Island in the Sun\" by Weezer at 0:00, starting from \"Hip hip\". Export.\n2) In Instagram, post the exported video as a Reel. Cover: the first frame.\n3) Tag people: ohmymahjong, brittmillsdesign\n4) Keep it off the grid: on the share screen, turn off the profile grid option.\n5) Paste everything below the line as the caption, then share.\n6) Right after: post her 3 story frames (their own reminders, with poll stickers).\nWhen: not scheduled yet (post-launch series); I'll set the day with you.\n————————————\nThree rounds. You pick. No take-backs. 🌊\nSeabreeze by @ohmymahjong, every match at the link in bio\nCode MAHJMATCH 💗\n#mahjong #mahjongtiles #mahjongmat #ohmymahjong #affiliate",
+   "media": [
+    {
+     "assetId": "01a1349b-e566-741c-862a-9273ae4bf073",
+     "type": "video",
+     "coverAssetId": "01a1349c-2513-7772-a506-c7cd9b7d20d0",
+     "coverThumb": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a1349b-e566-741c-862a-9273ae4bf073/cover.jpg",
+     "file": null,
+     "note": "video bytes not exposed via CDN (url null); source from repo"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": true,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a1348e-e64d-773a-b33f-c671f7b674f0",
+   "postId": "01a1348e-e653-738e-8f50-7f8facd4a64a",
+   "postType": "grid-post",
+   "isAutoPublish": false,
+   "status": "draft",
+   "scheduleDate": null,
+   "caption": "🛑 TIFFANY: DELETE THIS BOX BEFORE YOU POST 🛑\n1) Song, in Edits: the video is silent. Save it from Planoly, open it in Edits, tap Audio and add \"Dreams\" by Fleetwood Mac at 0:00, starting from \"Thunder only happens when it's raining\". Export.\n2) In Instagram, post the exported video as a Reel. Cover: the first frame.\n3) Tag people: ohmymahjong\n4) Keep it off the grid: on the share screen, turn off the profile grid option.\n5) Paste everything below the line as the caption, then share.\n6) Right after: post her 3 story frames (their own reminders, with poll stickers).\nWhen: not scheduled yet (post-launch series); I'll set the day with you.\n————————————\nSix mats slid into her DMs. Which one gets a reply? 🐴\nOsler by @ohmymahjong, every match at the link in bio\nCode MAHJMATCH 💗\n#mahjong #mahjongtiles #mahjongmat #ohmymahjong #affiliate",
+   "media": [
+    {
+     "assetId": "01a1348d-c637-754f-8d4a-fb2793bff864",
+     "type": "video",
+     "coverAssetId": "01a1348e-5d6c-711c-bba6-d5436c2d0b0f",
+     "coverThumb": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a1348d-c637-754f-8d4a-fb2793bff864/cover.jpg",
+     "file": null,
+     "note": "video bytes not exposed via CDN (url null); source from repo"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": true,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a11cba-d52f-722a-845c-86e412cd7856",
+   "postId": "01a11cba-d53b-749b-93b1-dab8ac52ef26",
+   "postType": "grid-post",
+   "isAutoPublish": false,
+   "status": "draft",
+   "scheduleDate": null,
+   "caption": "🛑 TIFFANY: DELETE THIS BOX BEFORE YOU POST 🛑\n1) Song, in Edits: the video is silent. Save it from Planoly, open it in Edits, tap Audio and add \"Harvest Moon\" by Neil Young at 0:00, starting from \"Come a little bit closer\". Export.\n2) In Instagram, post the exported video as a Reel. Cover: the first frame.\n3) Tag people: ohmymahjong, mahjongrowandco\n4) Keep it off the grid: on the share screen, turn off the profile grid option.\n5) Paste everything below the line as the caption, then share.\nWhen: not scheduled yet; I'll set the day with you.\n————————————\nCozy season called. It wants burl wood. 🍂\nMy fall table starts with Heritage by @ohmymahjong, all 55 matches at the link in bio\nCode MAHJMATCH 💗\n#mahjong #fallmahjong #mahjongmat #ohmymahjong #affiliate",
+   "media": [
+    {
+     "assetId": "01a11cba-8076-74fd-843a-b14249458005",
+     "type": "video",
+     "coverAssetId": "01a11cbb-0179-70ac-808e-b444e7a9509b",
+     "coverThumb": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a11cba-8076-74fd-843a-b14249458005/cover.jpg",
+     "file": null,
+     "note": "video bytes not exposed via CDN (url null); source from repo"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": true,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a15ef3-91a1-7042-83a0-4c4a0db495c6",
+   "postId": "01a15ef3-91a5-766f-9f96-54608bcbe7a9",
+   "postType": "story",
+   "isAutoPublish": true,
+   "status": "draft",
+   "scheduleDate": "2026-10-21T23:30:00.000Z",
+   "caption": "👀 REVIEW: Countdown story \"6 days\" (Find Your Mat-ch™ · 10.27), auto tonight Wed 10/21 6:30pm CT — reply yes/changes to Claude\nFind Your Mat-ch countdown: 6 days (plain story frame, auto-post)",
+   "media": [
+    {
+     "assetId": "01a15f2a-4de9-73ac-a43b-21ba747f3f48",
+     "type": "image",
+     "file": "countdown-6-find-your-mat-ch.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-4de9-73ac-a43b-21ba747f3f48/countdown-6-find-your-mat-ch.jpg"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": false,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a15ef3-c6b5-76ed-b06a-2f9056bd4760",
+   "postId": "01a15ef3-c6bd-7768-9b15-c47a80be3741",
+   "postType": "story",
+   "isAutoPublish": true,
+   "status": "draft",
+   "scheduleDate": "2026-10-22T12:30:00.000Z",
+   "caption": "👀 REVIEW: Countdown story \"5 days\", auto Thu 10/22 7:30am CT — reply yes/changes to Claude\nFind Your Mat-ch countdown: 5 days (plain story frame, auto-post)",
+   "media": [
+    {
+     "assetId": "01a15f2a-4f6b-720d-8db9-750db5e02238",
+     "type": "image",
+     "file": "countdown-5-find-your-mat-ch.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-4f6b-720d-8db9-750db5e02238/countdown-5-find-your-mat-ch.jpg"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": false,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a15ef3-c879-7049-95bf-c86c08c19e9f",
+   "postId": "01a15ef3-c87e-72e0-b676-aafd58cf87fe",
+   "postType": "story",
+   "isAutoPublish": true,
+   "status": "draft",
+   "scheduleDate": "2026-10-23T12:30:00.000Z",
+   "caption": "👀 REVIEW: Countdown story \"4 days\", auto Fri 10/23 7:30am CT — reply yes/changes to Claude\nFind Your Mat-ch countdown: 4 days (plain story frame, auto-post)",
+   "media": [
+    {
+     "assetId": "01a15f2a-50f8-7488-bf33-59be6d4c76df",
+     "type": "image",
+     "file": "countdown-4-find-your-mat-ch.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-50f8-7488-bf33-59be6d4c76df/countdown-4-find-your-mat-ch.jpg"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": false,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a15f6b-e5f3-74e8-a5b3-c3d49c778638",
+   "postId": "01a15f6b-e5f8-74a9-9f87-9777952ad5a6",
+   "postType": "story",
+   "isAutoPublish": true,
+   "status": "draft",
+   "scheduleDate": "2026-10-23T17:00:00.000Z",
+   "caption": "👀 REVIEW: Papaya Spritz \"Still available.\" in-stock story, auto Fri 10/23 12pm CT — reply yes/changes to Claude\nPlain story frame, auto-posts. Claude rechecks that Papaya is still in stock at OMM that morning; if it sold out, this one is pulled.",
+   "media": [
+    {
+     "assetId": "01a15f69-53f0-753d-9579-0193e204daee",
+     "type": "image",
+     "file": "papaya-still-in-stock-story.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-53f0-753d-9579-0193e204daee/papaya-still-in-stock-story.jpg"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": false,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a15ef3-ca75-716a-80aa-6b3c4097957a",
+   "postId": "01a15ef3-ca78-7313-af35-b0414e5cab18",
+   "postType": "story",
+   "isAutoPublish": true,
+   "status": "draft",
+   "scheduleDate": "2026-10-24T12:30:00.000Z",
+   "caption": "👀 REVIEW: Countdown story \"3 days\", auto Sat 10/24 7:30am CT — reply yes/changes to Claude\nFind Your Mat-ch countdown: 3 days (plain story frame, auto-post)",
+   "media": [
+    {
+     "assetId": "01a15f2a-52a9-7685-8199-717a6a0e188c",
+     "type": "image",
+     "file": "countdown-3-find-your-mat-ch.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-52a9-7685-8199-717a6a0e188c/countdown-3-find-your-mat-ch.jpg"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": false,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a15ef3-cc6a-769a-b668-9ac21e971bb6",
+   "postId": "01a15ef3-cc73-7498-88f9-1f54ba04a977",
+   "postType": "story",
+   "isAutoPublish": true,
+   "status": "draft",
+   "scheduleDate": "2026-10-25T12:30:00.000Z",
+   "caption": "👀 REVIEW: Countdown story \"2 days\", auto Sun 10/25 7:30am CT — reply yes/changes to Claude\nFind Your Mat-ch countdown: 2 days (plain story frame, auto-post)",
+   "media": [
+    {
+     "assetId": "01a15f2a-5430-74da-9df6-5f020151054e",
+     "type": "image",
+     "file": "countdown-2-find-your-mat-ch.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-5430-74da-9df6-5f020151054e/countdown-2-find-your-mat-ch.jpg"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": false,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a15ef3-d78b-75c9-abb6-ccce8b255b83",
+   "postId": "01a15ef3-d790-7797-afc0-3733ba80a0ae",
+   "postType": "story",
+   "isAutoPublish": true,
+   "status": "draft",
+   "scheduleDate": "2026-10-26T12:30:00.000Z",
+   "caption": "👀 REVIEW: Countdown story \"1 day\", auto Mon 10/26 7:30am CT — reply yes/changes to Claude\nFind Your Mat-ch countdown: 1 day (plain story frame, auto-post)",
+   "media": [
+    {
+     "assetId": "01a15f2a-5606-731e-b5d6-59d14a06ebfc",
+     "type": "image",
+     "file": "countdown-1-find-your-mat-ch.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-5606-731e-b5d6-59d14a06ebfc/countdown-1-find-your-mat-ch.jpg"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": false,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a15f6b-e9b5-74fd-ac66-4dc78449b730",
+   "postId": "01a15f6b-e9b9-727e-a7c8-21bc43f32ed0",
+   "postType": "story",
+   "isAutoPublish": true,
+   "status": "draft",
+   "scheduleDate": "2026-10-26T17:00:00.000Z",
+   "caption": "👀 REVIEW: Miss Classic tease, 2 frames (Malachite, then Jade: \"coming back the week of Nov 3, pick your mat now\"), auto Mon 10/26 12pm CT — reply yes/changes to Claude\nPlain story frames, auto-post. No episode reels: those stay saved for drop day.",
+   "media": [
+    {
+     "assetId": "01a15f69-58ed-758c-bb58-a6cb74ac13db",
+     "type": "image",
+     "file": "miss-classic-tease-malachite-story.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-58ed-758c-bb58-a6cb74ac13db/miss-classic-tease-malachite-story.jpg"
+    },
+    {
+     "assetId": "01a15f69-5b04-75de-822a-2834a9d816cf",
+     "type": "image",
+     "file": "miss-classic-tease-jade-story.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-5b04-75de-822a-2834a9d816cf/miss-classic-tease-jade-story.jpg"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": false,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a15ef3-d960-710b-a212-4b45c8a62a94",
+   "postId": "01a15ef3-d968-777e-b4f8-97cc8a3320ec",
+   "postType": "story",
+   "isAutoPublish": true,
+   "status": "draft",
+   "scheduleDate": "2026-10-27T14:15:00.000Z",
+   "caption": "👀 REVIEW: Countdown story \"LIVE today\", auto Tue 10/27 9:15am CT — reply yes/changes to Claude\nFind Your Mat-ch countdown: LIVE today (plain story frame, auto-post)",
+   "media": [
+    {
+     "assetId": "01a15f2a-57d0-702b-a697-e618d650a4a2",
+     "type": "image",
+     "file": "countdown-0-live-find-your-mat-ch.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f2a-57d0-702b-a697-e618d650a4a2/countdown-0-live-find-your-mat-ch.jpg"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": false,
+   "note": null,
+   "newPostGroupId": null
+  },
+  {
+   "postGroupId": "01a15f6b-ebce-72ab-b028-0c3f49f9ac56",
+   "postId": "01a15f6b-ebd1-711b-899e-95e02d1fd411",
+   "postType": "story",
+   "isAutoPublish": false,
+   "status": "draft",
+   "scheduleDate": "2026-10-27T14:30:00.000Z",
+   "caption": "👀 REVIEW: Launch-day link story to Find Your Mat-ch (you post it), Tue 10/27 9:30am CT — reply yes/changes to Claude\n🛑 TIFFANY: DELETE THIS BOX BEFORE YOU POST 🛑\n1) Sticker > LINK: https://www.mahjmatchmaker.com/find-your-match , link text \"Find Your Mat-ch\". Put it on the empty band under \"TAP THE LINK\".\n2) Hidden mentions: type @ohmymahjong and @brittmillsdesign, shrink them and tuck them behind the mat photo (Papaya Spritz + Heiress are on the card).\n3) No music. One frame.\n4) Time: Tue 10/27 around 9:30am CT, after the launch carousel is up. Delete this box, then share.\n————————————\nFind Your Mat-ch™ is live 💘 Papaya Spritz by @ohmymahjong + Heiress by @brittmillsdesign",
+   "media": [
+    {
+     "assetId": "01a15f69-63f3-721a-86ea-31c583b08411",
+     "type": "image",
+     "file": "launch-link-story.jpg",
+     "cdnUrl": "https://pg-cloudinary.planoly.com/019fc27b-964d-7279-8685-1f1bb7a7c3f5/images/01a15f69-63f3-721a-86ea-31c583b08411/launch-link-story.jpg"
+    }
+   ],
+   "userTags": [],
+   "collaborators": [],
+   "firstComment": null,
+   "excludeFromGrid": false,
+   "note": null,
+   "newPostGroupId": null
+  }
+ ]
+}
