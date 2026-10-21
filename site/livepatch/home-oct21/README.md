@@ -44,3 +44,41 @@ Page: https://www.mahjmatchmaker.com/ (Squarespace home page).
 - All 58 image URLs and all 58 internal links in the two files return 200.
 - Shop by Brand card photos (Shopify CDN) show blank in headless screenshots before and after. Their markup is unchanged and curl gets 200 for each.
 - Fix to make on /mahjong-discount-codes (not done here): its ticker titles show "Let&amp;rsquo;s" (double-escaped). The home copy uses &rsquo;.
+
+---
+
+# Round 2: Tiffany's review of the live homepage (Oct 21, 12:22). STAGED, not live yet
+
+**What to paste:** `live-paste_block-yui_3_17_2_1_1791134152790_5194.html`. It replaces ALL of block 5194's code, which is the callout pasted on top of the big block. `build.py` now writes this file too.
+**Rollback:** `source/oct21-1222/before_live_block-yui_3_17_2_1_1791134152790_5194.html`. This is the exact code live at 12:25, taken from the rendered page, and it matches the 9:42 callout + "\n" + block byte for byte.
+
+| # | Change | Where |
+|---|---|---|
+| 1 | Callout now reads exactly "Use code MAHJMATCH to save at 30+ partner brands", with no %. Button: "Meet our partner brands →", still linking to /mahjong-discount-codes. | build.py callout |
+| 2 | Shop by Brand: "...saves you 10% or more." "10% or more" never splits across lines (nowrap), and `text-wrap:balance` keeps it from orphaning. At both 390 and 1280 the wrap is "...each with a guide and the / MAHJMATCH code that saves you 10% or more." | build.py step 5 |
+| 3 | "Spring & summer table" chip removed. The other 9 chips stay. | MORE list |
+| 4 | Featured Halloween card uses the new board v7 web card (1200x900), shown whole (4:3, contain) at every width. | `assets/blog/night-of-the-raven/night-of-the-raven-shop-the-look-v7-card-1200x900.jpg` (jsDelivr @9b3b68f) |
+| 5 | How It Works step 3 gets an image. It's injected into the step 3 fluid grid at the same size and position as step 1's image block (desktop cols 2-13, 522x382 at 1280). On phones it sits on top like steps 1 and 2 (343 wide). It shows a fan of the newest album covers on blush. | `assets/site/home/how-it-works-3-new-matches-first.jpg`, made by `make_step3_image.py` |
+
+Board v7: `scripts/moodboard/boards/night-of-the-raven.json` plus the new `1200x900` canvas in `scripts/moodboard/layouts.json`. Cutouts are in `assets/moodboards/night-of-the-raven/cutouts/` (MRow product images, Amazon listing images, and the plum cloth crop from v6). The render follows doc 79/78:
+- The mat is the star.
+- One rack.
+- Tile pile upper-left, faces lower-right.
+- The lamp and raven dice dish are full-size and far apart.
+- The lace and deep plum cloths are shown separately (her Oct 17 pin note).
+- Handwritten labels, Title Case title.
+
+Render commands:
+- `python3 scripts/moodboard/render.py scripts/moodboard/boards/night-of-the-raven.json --version web --canvas 1080x1350`
+- the same command with `--canvas 1200x900`
+
+**Blog post image (staged, NOT published):** /blog/halloween-mahjong-table shows v6 from jsDelivr @e4d8ced. To swap it, replace that `src` with
+`https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@9b3b68fe8ca3ab3c045a8e0f5563c8ca9045069b/assets/blog/night-of-the-raven/night-of-the-raven-shop-the-look-v7.jpg` (1080x1350, warmed, 200).
+Its og:image, the Pinterest pin (`config/pinterest/queue.json`) and the ShopMy cover still use v3.
+
+## Footer / bottom section (Squarespace text blocks, edit in the UI)
+Rollback copies are in `source/oct21-1222/before_text_block-*.html`.
+- **Album link list:** text block `yui_3_17_2_1_1773273860714_22142` (homepage only, section `69b21b055acd7b7710c89838`, "Looking for the perfect mat and rack..."). Replace its third paragraph (the 8 inline "X Mahjong Tile Matches" names, only Jade linked) with one centered link: "Browse all tile match albums →" pointing to /mahjong-tile-matches.
+- **Site footer email:** delete the text block `e8109705861a998b09f0` (`<h4>mahjmatchmaker@gmail.com</h4>`) from the site footer.
+- **Contact link:** in footer text block `bb7bd9c8aa5441149846`, the line becomes `Private Lessons | Rentals | Contact`, with Contact linking to /contact.
+- **/contact page:** none exists today (/contact and /contact-us both return 404). Create a page "Contact" at /contact, not in the main nav. Add a heading ("Say hi!" / "Contact Mahj Matchmaker") and one Form block with Name, Email and Message (all required). Set Storage to Email → mahjmatchmaker@gmail.com and the submit button to "Send". Post-submit message: "Thanks! I'll get back to you soon. 💗 Tiffany".
