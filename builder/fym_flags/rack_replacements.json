@@ -1,0 +1,12 @@
+{
+ "_about": "Racks Tiffany REPLACED in a set's final list (config/tile-racks-picks.json final_lists). Gate [15] fails if the old rack is still in that set's D.lt (her tile-rack list) or in any of its m (Tiffany's-match) rack lists, or if the new rack is missing from D.lt. D.uni (universal racks for every set) is not checked: the old rack may stay universal. Add an entry whenever she swaps a rack in final_lists.",
+ "papaya-spritz": {
+  "set": "oh-my-mahjong-papaya-spritz",
+  "old": "peacelovemahjong.com/mahjong-racks-racks-pushers-set-of-4",
+  "old_name": "Peace Love Mahjong Oak",
+  "new": "www.middleandmainmahjong.com/golden-grain-beechwood-mahjong-rack-and-pusher-set-of-4",
+  "new_name": "Middle & Main Scalloped Beechwood",
+  "date": "2026-10-21",
+  "why": "Tiffany's Papaya Spritz rack swap (final_lists papaya-spritz, commit 306d7f5); QA found Oak still in D.lt with a Tiffany's-match badge."
+ }
+}

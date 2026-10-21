@@ -27,6 +27,9 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
     FYM: hol + ayr + mf); the ONLY year-round mats shown with Holiday are late-calls works_for_holiday (gallery row field 12, bottom of
     Holiday under the subheading; FYM wfh, setsForMat ok = hol || wfh). Mats she moved OUT of Holiday (late-calls primary = a colour,
     e.g. the pumpkin mats) never come back as holiday in the gallery or FYM.
+ 15 replaced racks (Oct 21 pm, QA: Papaya Spritz still showed PLM Oak as "Tiffany's match" from D.lt after the Beechwood swap): for every
+    rack replacement in builder/fym_flags/rack_replacements.json, the old rack is in neither the set's D.lt nor any of its m rack lists,
+    the new rack is in D.lt, and the key is a final_lists set whose list names the new rack (D.uni is not checked)
  8b colour-chip order: sh (measured share) lines up with mf; CSORT (single chip) = lead > ONE list by score (share + 20 if primary),
     checked by running CSORT in node over every chip colour
 """
@@ -334,6 +337,29 @@ else:
             bad = _score_order_bad(mid, sc, prim)
             if bad: F.append(f"[13] section {c_}: {bad[0][1]} (score {sc(bad[0]):.1f}) sits above {bad[1][1]} (score {sc(bad[1]):.1f}); rule = share + 20 if primary, high to low")
 if D.get('lead', {}).get('green') != [GKEY(i) for i in LATE['lead']['green']]: F.append("[13] FYM D.lead.green differs from late-calls lead.green")
+
+# 15. replaced racks (Tiffany Oct 21 pm, rule 8: QA found PLM Oak still in D.lt['oh-my-mahjong-papaya-spritz'] after her Beechwood swap,
+# so Oak kept a "Tiffany's match" badge in the her-picks rack deck). A rack she REPLACED in final_lists may not remain in that set's
+# lt or m; the new rack must be in lt. D.uni (universal racks) is deliberately not checked.
+_rr = json.load(open(REPO + 'builder/fym_flags/rack_replacements.json'))
+_fl = json.load(open(REPO + 'config/tile-racks-picks.json'))['final_lists']
+_sets_by = {}
+for s_ in D['sets']: _sets_by.setdefault(s_['slug'], []).append(s_)
+for k_, r_ in _rr.items():
+    if k_.startswith('_'): continue
+    sl_, old_, new_ = r_['set'], r_['old'], r_['new']
+    if k_ not in _fl: F.append(f"[15] {k_}: rack replacement for a set with no final_lists entry"); continue
+    if new_ not in D['racks']: F.append(f"[15] {k_}: new rack {new_} not in D.racks"); continue
+    if D['racks'][new_]['n'] not in _fl[k_]: F.append(f"[15] {k_}: final_lists does not name the new rack {D['racks'][new_]['n']}")
+    if old_ in D['racks'] and D['racks'][old_]['n'] in _fl[k_]: F.append(f"[15] {k_}: final_lists still names the replaced rack {D['racks'][old_]['n']}")
+    if sl_ not in _sets_by: F.append(f"[15] {k_}: set {sl_} not in the build"); continue
+    lt_ = (D.get('lt') or {}).get(sl_, [])
+    if old_ in lt_: F.append(f"[15] {k_}: replaced rack {r_.get('old_name', old_)} still in D.lt['{sl_}'] (shows as Tiffany's match)")
+    if new_ not in lt_: F.append(f"[15] {k_}: new rack {r_.get('new_name', new_)} missing from D.lt['{sl_}']")
+    _bad = [e[0] for s_ in _sets_by[sl_] for e in s_['m'] if old_ in e[1]]
+    if _bad: F.append(f"[15] {k_}: replaced rack {r_.get('old_name', old_)} still in {len(_bad)} m rack lists (e.g. {_bad[0]})")
+    _lmb = [m_ for s_ in _sets_by[sl_] for m_ in {e[0] for e in s_['m']} if old_ in (D.get('lm') or {}).get(m_, [])]
+    if _lmb: F.append(f"[15] {k_}: replaced rack {r_.get('old_name', old_)} in D.lm for its match-list mats {_lmb[:3]}")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
