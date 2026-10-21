@@ -135,6 +135,8 @@ a{color:inherit;text-decoration:none}
 .note{position:absolute;z-index:50;background:#fff8e1;border:1.5px solid #ffd36b;color:#5a4300;font-size:12.5px;line-height:1.35;border-radius:8px;padding:6px 9px;max-width:230px;font-family:'Bitter',serif;box-shadow:0 4px 12px rgba(0,0,0,.08)}
 
 @media (max-width:760px){
+ .hero.launch{background:radial-gradient(circle at 50% 88%,#fbe3ea 0 44%,transparent 44.3%),#faf3ea}
+ .hero.launch .fan{height:440px}.hero.launch .fan .c{width:225px}
  .hd{height:96px;padding:0 22px}
  .hd .logo img{height:40px}
  .nav{display:none}
