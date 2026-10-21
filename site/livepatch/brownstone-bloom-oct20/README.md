@@ -46,3 +46,9 @@ Tiffany, Oct 21 1:00pm: "we haven't even released Brownstone Bloom from Anders R
 - **Codes:** AR's page says the tile set takes no promo codes (Indigo Pruitt special edition). Code MAHJMATCH goes on mats/racks only.
 - **Review:** Ready to Ship item `l-brownstone-v2` (contact sheet `review/brownstone-31-cards-contact-sheet.jpg`, colour cards, 15 ♥/✕ taps saved to ship doc `picks`, choice `now` | `wait` saved as `choice` with v=ok). HQ need `brownstone-shortlist` reopened as the Today item, held (`status: parked`, `qaHold: true`) until independent QA passes; then set it open and add `l-brownstone-v2` to RTS `NOW`.
 - Her ♥ mats need cards built with `scripts/albumcard/oct20/brownstone_build.py` (append after #31 unless she reorders) + `brownstone_block.py <sha>`, then warm jsDelivr.
+
+## Oct 21 3:30pm: independent QA fixes (released to her)
+- **Code band:** the 6 Britt Mills cards (4 Scarlett, 6 Walk in the Park, 12 Flourish, 18 Tova, 21 Regency Scalloped, 26 Eden) said "15% OFF"; re-rendered as "10% OFF USE CODE : MAHJMATCH" (10% floor rule). Only the band changed (pixel diff). Contact sheet updated in place.
+- **Code block:** rebuilt with `brownstone_block.py 0f8738b3fd161c23cfa8a705e06e87e4fd25efe6` (identical to the previous block except the pinned SHA); 31/31 card URLs warmed (200). The script now falls back to the previous block's shop links when the scratch `staged_urls.json` is gone.
+- **Round-2 candidates (13 now):** Britt Mills promo graphics replaced with clean mat shots from brittmillsdesign.com (Novella image 8, Knox image 7, Regal Bloom + Legacy listing renders cropped to the mat, no text). Rose Wreath room shot replaced with Splash of Color's flat shot (product image 2, bag cropped out). Dropped: Glory (patriotic palette), Mocha Kaleidoscope (real product shot is black/white/grey, not mocha).
+- **Color card pill:** desktop now matches mobile, "Code MAHJMATCH on partner mats & racks" (build.py shrinks long pill text to fit).
