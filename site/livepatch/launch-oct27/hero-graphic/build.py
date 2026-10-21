@@ -6,8 +6,8 @@ star); live Papaya card (Press for Mahjong, Beechwood racks, fbf7ec9) in front; 
 check OK, "10% OFF" line cut off) and live Coquette + Fleur card behind; stamp "It's a mat-ch!"; no % anywhere.
 
 The headline, line, button and code line stay LIVE Squarespace text; only the fan + background are an image.
-  bg-desktop.jpg  2400x1500, used >=1200px wide (fan on the right, text column on the left kept clear)
-  bg-mobile.jpg   1170x3900, used <1200px (fan at the bottom, text stacks above it)
+  find-your-match-mahjong-hero-desktop.jpg  2400x1500, used >=1200px wide (fan on the right, text column on the left kept clear)
+  find-your-match-mahjong-hero-mobile.jpg   1170x3900, used <1200px (fan at the bottom, text stacks above it)
 
 Usage: PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers TMPDIR=/dev/shm python3 build.py [bg|preview|all]
 """
@@ -74,7 +74,7 @@ async def render_bg():
             f = pathlib.Path('/dev/shm') / f'hero-bg-{kind}.html'; f.write_text(html)
             pg = await b.new_page(viewport={'width': W, 'height': H})
             await pg.goto(f.as_uri(), wait_until='load'); await pg.evaluate('document.fonts.ready'); await pg.wait_for_timeout(500)
-            out = HERE / f'bg-{kind}.jpg'
+            out = HERE / f'find-your-match-mahjong-hero-{kind}.jpg'
             await pg.screenshot(path=str(out), type='jpeg', quality=88)
             print('bg', out, os.path.getsize(out) // 1024, 'KB')
             await pg.close()
@@ -107,7 +107,7 @@ JS = '''([text, links, css, desk, mob]) => {
 async def preview(widths=((1280, 800), (390, 844), (1440, 900), (1200, 800), (1100, 800), (1920, 1080), (768, 1024), (360, 780))):
     from playwright.async_api import async_playwright
     out = HERE / 'previews'; out.mkdir(exist_ok=True)
-    desk_url, mob_url = 'https://hero.local/bg-desktop.jpg', 'https://hero.local/bg-mobile.jpg'
+    desk_url, mob_url = 'https://hero.local/find-your-match-mahjong-hero-desktop.jpg', 'https://hero.local/find-your-match-mahjong-hero-mobile.jpg'
     async with async_playwright() as p:
         b = await p.chromium.launch()
         for w, h in widths:
