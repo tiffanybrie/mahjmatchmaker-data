@@ -65,3 +65,11 @@ Mahj Mood affiliate follow-up, Amore Mahjong customer-message reply, Let's Be Be
 - Real people (for example casey.magyarics@gmail.com) and partner replies: no filter touches them.
 - UpPromote "Confirm Your Payment Info Update" OTPs stay in the inbox (time-sensitive). They get the Programs label.
 - Pinterest, Facebook and other non-mahjong promos: untouched (Gmail's Promotions tab already holds them).
+
+## Status (Oct 21, ~3pm ET)
+- mahjmatchmaker@: all 10 filters are live and were applied to existing mail. The inbox went from 1,040 threads to 765. Label counts: Orders 48, Approved 30 (all marked read), Payouts 3, Needs a look 1 (the Rakuten/Etsy decline), Programs 51, Newsletters 220, Partners 6 (hand-labelled), Share your table 1. Contact form, Album requests and Signups are 0 so far, because those form notifications go to tiffanybrie@.
+- tiffanybrie@: all 10 filters are live and were applied to existing mail (Orders 89, Approved 100, Payouts 100, Album requests 5, Newsletters 100+). This import already includes the Programs `-subject:"referral order"` fix.
+- STILL TO DO, waiting on Chrome (it was restarted mid-task):
+  1. Both accounts: edit the "Affiliate/Needs a look" filter to the v2 query above. mahjmatchmaker@ still runs v1, which only ever matched the Rakuten decline. tiffanybrie@ v1 over-matched.
+  2. tiffanybrie@: remove the "Affiliate/Needs a look" label from the ~71 wrong threads. These are Amazon item-cancelled / payment-declined / Subscribe & Save, Zappos payment declined, Etsy transaction-cancelled (2016-17), Airbnb cancellations, People news, KidStuff, ComEd, Isagenix and Stacie Bloomfield. Keep it only on Bam Bird Boutique "affiliate account has been denied". Nothing was archived by this filter. It did add "important" to those threads, and that can't be undone exactly, because some were already important.
+  3. tiffanybrie@: spot-check the Brands/Newsletters and Affiliate/Programs labels for anything personal.
