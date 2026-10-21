@@ -1,0 +1,5 @@
+{
+ "_note": "coming_soon switch (Oct 21): sets listed in 'on' (or all: true) show the Photo coming soon card. Empty = held, current photos stay.",
+ "all": false,
+ "on": []
+}

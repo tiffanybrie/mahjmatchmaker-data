@@ -159,9 +159,9 @@
   },
   "www.bambirdboutique.com/east-meets-west-tortoise-shell-tile-set-copy": {
    "set": "Classic Tortoise",
-   "src": "assets/tiles/album/classic-tortoise-zoom.jpg",
-   "full": "t10/26.jpg",
-   "pile": "1694fee8dc"
+   "src": "assets/tiles/album/classic-tortoise-cream.jpg",
+   "full": "t71/tortoise.jpg",
+   "pile": "p71tortoise"
   },
   "missmahjong.com/miss-classic-mahjong-tile-set": {
    "set": "Miss Classic Jade",
@@ -14932,97 +14932,109 @@
    "m": [],
    "fp": [
     0.5,
-    0.7
+    0.5
    ],
-   "name": "Oakley"
+   "name": "Oakley",
+   "fz": 1
   },
   "mahjong-row-co-lyla": {
    "m": [],
    "fp": [
     0.5,
-    0.7
+    0.5
    ],
-   "name": "Lyla"
+   "name": "Lyla",
+   "fz": 1
   },
   "mahjong-row-co-mabel": {
    "m": [],
    "fp": [
     0.5,
-    0.7
+    0.5
    ],
-   "name": "Mabel"
+   "name": "Mabel",
+   "fz": 1
   },
   "mahjong-row-co-laken": {
    "m": [],
    "fp": [
     0.5,
-    0.7
+    0.5
    ],
-   "name": "Laken"
+   "name": "Laken",
+   "fz": 1
   },
   "mahjong-row-co-honey-weave": {
    "m": [],
    "fp": [
     0.5,
-    0.7
+    0.5
    ],
-   "name": "Honey Weave"
+   "name": "Honey Weave",
+   "fz": 1
   },
   "mahjong-row-co-ash-burl": {
    "m": [],
    "fp": [
     0.5,
-    0.7
+    0.5
    ],
-   "name": "Ash Burl"
+   "name": "Ash Burl",
+   "fz": 1
   },
   "mahjong-row-co-terracotta-marble": {
    "m": [],
    "fp": [
     0.5,
-    0.7
+    0.5
    ],
-   "name": "Terracotta Marble"
+   "name": "Terracotta Marble",
+   "fz": 1
   },
   "mahjong-studios-christmas-kiss": {
    "m": [],
    "fp": [
-    0.5,
-    0.72
+    0.78,
+    0.82
    ],
-   "name": "Christmas Kiss"
+   "name": "Christmas Kiss",
+   "fz": 1.9
   },
   "mahjong-studios-lavender-sparkle": {
    "m": [],
    "fp": [
     0.5,
-    0.72
+    0.5
    ],
-   "name": "Lavender Sparkle"
+   "name": "Lavender Sparkle",
+   "fz": 1
   },
   "mahjong-studios-royal-sparkle": {
    "m": [],
    "fp": [
     0.5,
-    0.72
+    0.5
    ],
-   "name": "Royal Sparkle"
+   "name": "Royal Sparkle",
+   "fz": 1
   },
   "mahjong-studios-ruby-sparkle": {
    "m": [],
    "fp": [
     0.5,
-    0.72
+    0.5
    ],
-   "name": "Ruby Sparkle"
+   "name": "Ruby Sparkle",
+   "fz": 1
   },
   "mahjong-studios-lemon-tide": {
    "m": [],
    "fp": [
     0.5,
-    0.72
+    0.5
    ],
-   "name": "Lemon Tide"
+   "name": "Lemon Tide",
+   "fz": 1
   },
   "mahjong-studios-tile-sets": {
    "m": [],
@@ -15036,57 +15048,64 @@
    "m": [],
    "fp": [
     0.5,
-    0.72
+    0.5
    ],
-   "name": "Teal Lunaflor"
+   "name": "Teal Lunaflor",
+   "fz": 1
   },
   "mahjong-studios-forest-silk": {
    "m": [],
    "fp": [
     0.5,
-    0.72
+    0.5
    ],
-   "name": "Forest Silk"
+   "name": "Forest Silk",
+   "fz": 1
   },
   "mahjong-studios-sage-luxe": {
    "m": [],
    "fp": [
     0.5,
-    0.72
+    0.5
    ],
-   "name": "Sage Luxe"
+   "name": "Sage Luxe",
+   "fz": 1
   },
   "mahjong-studios-american": {
    "m": [],
    "fp": [
-    0.5,
-    0.72
+    0.78,
+    0.82
    ],
-   "name": "American"
+   "name": "American",
+   "fz": 1.9
   },
   "mahjong-studios-lilac-bloom": {
    "m": [],
    "fp": [
-    0.5,
-    0.72
+    0.78,
+    0.82
    ],
-   "name": "Lilac Bloom"
+   "name": "Lilac Bloom",
+   "fz": 1.9
   },
   "mahjong-studios-ocean-bloom": {
    "m": [],
    "fp": [
-    0.5,
-    0.72
+    0.78,
+    0.82
    ],
-   "name": "Ocean Bloom"
+   "name": "Ocean Bloom",
+   "fz": 1.9
   },
   "mahjong-studios-butter-bloom": {
    "m": [],
    "fp": [
-    0.5,
-    0.72
+    0.78,
+    0.82
    ],
-   "name": "Butter Bloom"
+   "name": "Butter Bloom",
+   "fz": 1.9
   },
   "mahjong-studios-yellow-lilac-ocean-blue": {
    "m": [],
@@ -15101,9 +15120,10 @@
    "m": [],
    "fp": [
     0.5,
-    0.72
+    0.5
    ],
-   "name": "Glitter Sparkle Pink"
+   "name": "Glitter Sparkle Pink",
+   "fz": 1
   },
   "mahjong-studios-white-edit": {
    "m": [],
@@ -15117,81 +15137,91 @@
    "m": [],
    "fp": [
     0.5,
-    0.72
+    0.5
    ],
-   "name": "Bubble Pop 2-Color Blue"
+   "name": "Bubble Pop 2-Color Blue",
+   "fz": 1
   },
   "mahjong-studios-neon-shadow": {
    "m": [],
    "fp": [
     0.5,
-    0.72
+    0.5
    ],
-   "name": "Neon Shadow"
+   "name": "Neon Shadow",
+   "fz": 1
   },
   "mahjong-studios-blue-editon-2-color-blue": {
    "m": [],
    "fp": [
     0.5,
-    0.72
+    0.5
    ],
-   "name": "Blue Editon 2-Color Blue"
+   "name": "Blue Editon 2-Color Blue",
+   "fz": 1
   },
   "mahjong-studios-peony-garden": {
    "m": [],
    "fp": [
     0.5,
-    0.72
+    0.5
    ],
-   "name": "Peony Garden"
+   "name": "Peony Garden",
+   "fz": 1
   },
   "mahjong-studios-blue-element": {
    "m": [],
    "fp": [
-    0.5,
-    0.72
+    0.78,
+    0.82
    ],
-   "name": "Blue Element"
+   "name": "Blue Element",
+   "fz": 1.9
   },
   "mahjong-studios-2-color-blue-studio": {
    "m": [],
    "fp": [
-    0.5,
-    0.72
+    0.78,
+    0.82
    ],
-   "name": "2-Color Blue Studio"
+   "name": "2-Color Blue Studio",
+   "fz": 1.9
   },
   "mahjong-studios-rose-dragon": {
    "m": [],
    "fp": [
     0.5,
-    0.72
+    0.5
    ],
-   "name": "Rose Dragon"
+   "name": "Rose Dragon",
+   "fz": 1
   },
   "mahjong-studios-bamboo-sky": {
    "m": [],
    "fp": [
-    0.5,
-    0.72
+    0.78,
+    0.82
    ],
-   "name": "Bamboo Sky"
+   "name": "Bamboo Sky",
+   "fz": 1.9
   },
   "mahjong-studios-blush-bamboo": {
    "m": [],
    "fp": [
-    0.5,
-    0.72
+    0.78,
+    0.82
    ],
-   "name": "Blush & Bamboo"
+   "name": "Blush & Bamboo",
+   "fz": 1.9
   },
   "mahjong-studios-essential": {
    "m": [],
    "fp": [
     0.5,
-    0.72
+    0.5
    ],
-   "name": "Essential"
+   "name": "Essential",
+   "fz": 1
   },
   "mahj-squad-just-peachy": {
    "m": [],
@@ -17489,33 +17519,37 @@
    "m": [],
    "fp": [
     0.5,
-    0.68
+    0.5
    ],
-   "name": "Floréa"
+   "name": "Floréa",
+   "fz": 1
   },
   "virora-mahjong-viozelle": {
    "m": [],
    "fp": [
     0.5,
-    0.68
+    0.5
    ],
-   "name": "Viozelle"
+   "name": "Viozelle",
+   "fz": 1
   },
   "virora-mahjong-lanisse": {
    "m": [],
    "fp": [
     0.5,
-    0.68
+    0.5
    ],
-   "name": "Élanisse"
+   "name": "Élanisse",
+   "fz": 1
   },
   "virora-mahjong-rosanelle": {
    "m": [],
    "fp": [
     0.5,
-    0.68
+    0.5
    ],
-   "name": "Rosanelle"
+   "name": "Rosanelle",
+   "fz": 1
   },
   "virora-mahjong-marivelle": {
    "m": [],
@@ -17538,9 +17572,10 @@
    "m": [],
    "fp": [
     0.5,
-    0.68
+    0.5
    ],
-   "name": "Améthisse"
+   "name": "Améthisse",
+   "fz": 1
   },
   "virora-mahjong-iriselle": {
    "m": [],
@@ -17656,9 +17691,10 @@
    "m": [],
    "fp": [
     0.5,
-    0.72
+    0.5
    ],
-   "name": "Amber Jade"
+   "name": "Amber Jade",
+   "fz": 1
   },
   "yellow-mountain-imports-aloha": {
    "m": [],
@@ -27137,6 +27173,13 @@
    "field": "hid",
    "change": "hidden + locked hidden",
    "approval": "Tiffany Oct 21 6:55pm: bad photo and out of stock; Tiffany Oct 21 6:55pm: partial / add-on tile product, \"we're only matching full size sets\""
+  },
+  {
+   "date": "2026-10-21",
+   "tile": "www.bambirdboutique.com/east-meets-west-tortoise-shell-tile-set-copy",
+   "field": "src/full/pile",
+   "change": "assets/tiles/album/classic-tortoise-cream.jpg (tile photo audit upgrade)",
+   "approval": "Tiffany 6:57pm: current album photo has a confetti mat behind the tiles; use her isolated PNG composited on cream; everywhere on the site. She will shoot a real pile later."
   }
  ]
 }

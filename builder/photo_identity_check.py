@@ -44,7 +44,7 @@ MARGIN = 2.0         # other-set score must beat own-set score by this factor to
 # filename stem in assets/tiles/album -> set slug (only where they differ)
 CANON_ALIAS = {
     'heritage-2-0-full': 'heritage-2-0', 'petalee-pile': 'petalee', 'sunday-tile-set-hd': 'sunday-tile-set',
-    'classic-tortoise-zoom': 'classic-tortoise', 'cypress': 'cypress-forest',
+    'classic-tortoise-zoom': 'classic-tortoise', 'classic-tortoise-cream': 'classic-tortoise', 'cypress': 'cypress-forest',
     'holly-jolly-pink-pile': 'holly-jolly-pink', 'holly-jolly-red-pile': 'holly-jolly-red', 'tinselle-emerald-3x3': 'tinselle-emerald',
     'tinselle-ruby-3x3': 'tinselle-ruby', 'plm-spirit-of-christmas-faces-back': 'spirit-of-christmas',
 }

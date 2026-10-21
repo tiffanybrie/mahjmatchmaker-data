@@ -480,6 +480,20 @@ for s_ in D['sets']:
         F.append(f"[29] {s_['name']} ({s_['maker']}): looks like a partial / add-on tile product (only full-size sets are matched)")
 if any(vis(s_) for s_ in D['sets'] if s_['slug'] == 'wren-mats-simply'): F.append("[29] Simply (Wren Mats) visible (Tiffany Oct 21: bad photo, out of stock)")
 
+# 30 tile photo audit (Oct 21, builder/fym_flags/tile_photo_upgrades.json): every upgrade applied; coming_soon only where switched on
+_tu = os.path.join(REPO, 'builder', 'fym_flags', 'tile_photo_upgrades.json')
+if os.path.exists(_tu):
+    _sw = json.load(open(os.path.join(REPO, 'builder', 'fym_flags', 'tile_coming_soon_on.json'))) if os.path.exists(os.path.join(REPO, 'builder', 'fym_flags', 'tile_coming_soon_on.json')) else {}
+    _on_all, _on = bool(_sw.get('all')), set(_sw.get('on') or [])
+    _bt = {}
+    for s_ in D['sets']: _bt.setdefault(s_['tile'], []).append(s_['slug'])
+    for k_, it_ in json.load(open(_tu))['sets'].items():
+        tk_ = it_.get('tile_key')
+        if tk_ not in T or tk_ not in _bt: continue
+        if it_['status'] == 'upgrade' and not str(T[tk_].get('full', '')).startswith('t71/'): F.append(f"[30] {it_['name']}: audit upgrade not applied (full {T[tk_].get('full')})")
+        want_ = it_['status'] == 'coming_soon' and (_on_all or k_ in _on or any(x in _on for x in _bt[tk_]))
+        if bool(T[tk_].get('soon')) != want_: F.append(f"[30] {it_['name']}: Photo coming soon is {'on' if T[tk_].get('soon') else 'off'} but the switch says {'on' if want_ else 'off'}")
+
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
     for b, v in sorted(W.items()): print(f"  {b} ({len(v)}): " + ', '.join(v[:8]) + (' ...' if len(v) > 8 else ''))
