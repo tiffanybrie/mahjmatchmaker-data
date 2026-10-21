@@ -72,6 +72,11 @@ Oct 21, launch morning: the Papaya "It's a match" post, the hotline reel and the
 10. **Planoly workspaces (Oct 21):** Instagram posts live in workspace 019fc27c-0bef-7533-bc3f-030acc19a135 ("Mahj Matchmaker – Instagram", channel 019fc280-a02a-74ef-bb8b-844d568307e6) so her calendar shows only Instagram. Pinterest stays in 019fc27b-964d-7279-8685-1f1bb7a7c3f5. Map + leftovers (9 reel drafts still in the old workspace): docs/planoly-ig-move-oct21.json.
 7. **Before telling her what to post, check Planoly** (list_post_groups) so chat never replaces Planoly.
 
+## INSTAGRAM BRAND WATCH (Tiffany, Oct 21 5:25pm)
+- **Partner onboarding includes Instagram.** When a new partner brand (affiliate/code) or ShopMy brand is added anywhere, in the same turn: verify its handle from its own site footer → config/social/ig-handles.json; follow it from @mahjmatchmaker; add it to Favorites (partners first; Instagram caps Favorites at 50); log it in docs/IG-FAVORITES.md. One driver in Chrome.
+- **ShopMy brands count too.** Any brand behind a ShopMy product we link (e.g. Casetify-style phone case brands with a popular mahjong set) gets followed. Partners get favorites first; ShopMy-only brands get favorites while slots remain, otherwise follow only.
+- **Weekly brand watch (Mondays, part of the desk cleanup):** scan new ShopMy products/brands and partner launches → follow/favorite any new ones, and list the brands' new posts worth a reshare in HQ (link + one line). Reshares are done by her in the app (Instagram has no API for reposting others' posts); Claude preps the list.
+
 ## Naming: Mat-ch vs match (Tiffany, Oct 21 11:26, FINAL)
 - **Find *Your* Mat-ch™** = the proprietary tool. Italic on "Your" (it's THEIR matchmaking tool). ™ appears ONLY with this full name, on its most prominent use per piece.
 - **"It's a mat-ch!"** = the middle post of each launch row (tile set + one mat). Mat-ch only where a mat is the match. No ™ here.
