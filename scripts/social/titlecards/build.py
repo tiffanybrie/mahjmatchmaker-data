@@ -12,7 +12,11 @@ F = f'file://{R}/scripts/social/tileprofile/fonts'
 G = 'file:///usr/share/fonts/truetype/google-fonts'
 u = lambda p: f'file://{R}/{p}'
 OUT = f'{R}/assets/social/titlecards/counseling-ep1-papaya'
-os.makedirs(OUT + '/frames', exist_ok=True)
+# REEL=1 (Oct 21, v11): render the full hotline reel body into frames/v11/ so tracked frames stay untouched;
+# reel.py then adds the animated ending (ending.py) and the v9-style soundtrack.
+REEL = os.environ.get('REEL') == '1'
+FR = OUT + ('/frames/v11' if REEL else '/frames')
+os.makedirs(FR, exist_ok=True)
 
 MM = ('#062a55', '#f7b6c8', 'The Matchmaker')            # navy, blush text
 PS = ('#ec7a32', '#fff3e6', 'Papaya Spritz')              # papaya, cream text (Tiffany: papaya, not brown)
@@ -179,8 +183,10 @@ SWIPES = [(None, 'Beige Felt', 'no brand', 'nope', 1.3, 0.55),
           (M + 'greenly-mahj-and-vine.jpg', 'Greenly', 'Mahj &amp; Vine', 'match', 0.7, 0.4),
           (G2 + 'oh-my-mahjong--vivienne.webp', 'Vivienne', 'Oh My Mahjong', 'match', 0.7, 0.4),
           (M + 'press-for-mahjong-anders-ruff.jpg', 'Press for Mahjong', 'Anders Ruff', 'match', 0.7, 0.4),
-          (G2 + 'oh-my-mahjong--goldie-retired.webp', 'Goldie', 'Oh My Mahjong', 'match', 0.7, 0.4)]
-LEAD, TAIL_HOLD = 0.4, 0.5
+          (G2 + 'oh-my-mahjong--goldie-retired.webp', 'Goldie', 'Oh My Mahjong', 'match', 1.6, 0)]
+# Oct 21 (v11): the last card never swipes off. It holds with its MATCH stamp and the reel cuts straight to 'Hook me up!'
+# (v9/v10 swiped Goldie away and showed ~0.6s of an EMPTY deck: header + buttons, no card). Same total length as before.
+LEAD, TAIL_HOLD = 0.4, 0.0
 HEART = '<svg width="{w}" height="{w}" viewBox="0 0 48 48"><path d="M24 40 C10 30 6 23 6 17 C6 11 11 7 16 7 C20 7 22 9 24 12 C26 9 28 7 32 7 C37 7 42 11 42 17 C42 23 38 30 24 40 Z" fill="{c}"/></svg>'
 def swipe_card(i, mat, name, brand, verdict):
     racks = ''.join(f'<div style="display:flex;align-items:center;gap:16px;margin-top:10px"><img src="{u(r)}" style="width:330px;height:34px;object-fit:cover;border-radius:6px"><span style="font:600 24px Bit;color:#5a6b85">{n}</span></div>' for r, n in RACKS)
@@ -217,11 +223,13 @@ def swipe_html():
       let start=LEAD, matches=0, label='swiping&hellip;', bx=1, bh=1, xs='#fff', hs='#f56c8c';
       for(let i=0;i<TL.length;i++){{
         const [v,hold,sw]=TL[i]; const el=document.getElementById('c'+i); const st=el.querySelector('.stamp');
-        const a=start, b=a+hold, c=b+sw; const dir = v==='nope' ? -1 : 1;
-        if(t<a){{ const depth=Math.min(i-curIndex(t),3); el.style.transform=`translateY(${{depth*22}}px) scale(${{1-depth*.04}})`; st.style.opacity=0; el.style.opacity= depth>2?0:1; }}
-        else if(t<b){{ const k=Math.min((t-a)/0.25,1); el.style.transform='none'; el.style.opacity=1;
-          const sk=Math.max(0,(t-(b-0.35))/0.35); st.style.opacity=Math.min(sk,1);
-          if(t>b-0.35){{ if(dir<0) bx=1-.12*sk; else bh=1-.12*sk; }}
+        const a=start, b=BC[i][0], c=BC[i][1]; const dir = v==='nope' ? -1 : 1;
+        if(t<a){{ const depth=Math.max(0,Math.min(i-curIndex(t)-curProg(t),3)); el.style.transform=`translateY(${{depth*22}}px) scale(${{1-depth*.04}})`; st.style.opacity=0; el.style.opacity=Math.max(0,Math.min(1,3-depth)); }}
+        else if(t<b){{ el.style.transform='none'; el.style.opacity=1;
+          const s0 = sw===0 ? a+0.6 : b-0.35;   // last card (no swipe-off): stamp lands early and stays
+          const sk=Math.max(0,(t-s0)/0.35); st.style.opacity=Math.min(sk,1);
+          if(t>s0){{ const pr = sw===0 ? (sk<1 ? .12*sk : Math.max(0,.12-.12*(sk-1))) : .12*Math.min(sk,1);
+            if(dir<0) bx=1-pr; else bh=1-pr; }}
           label = v==='nope' ? 'not her type' : `match ${{matches+1}} of 50`; }}
         else if(t<c){{ const k=ease((t-b)/sw); el.style.transform=`translateX(${{dir*1400*k}}px) rotate(${{dir*10*k}}deg)`; st.style.opacity=1; el.style.opacity=1;
           if(dir<0) bx=.88+.12*k; else bh=.88+.12*k;
@@ -232,7 +240,11 @@ def swipe_html():
       document.getElementById('ctr').innerHTML=label;
       document.getElementById('bx').style.transform=`scale(${{bx}})`; document.getElementById('bh').style.transform=`scale(${{bh}})`;
     }}
-    function curIndex(t){{ let s=LEAD; for(let i=0;i<TL.length;i++){{ s+=TL[i][1]+TL[i][2]; if(t<s) return i; }} return TL.length; }}
+    // Oct 21 (v11): one shared timeline (same float sums as render) so the deck never disagrees with itself at a boundary
+    // (v9 had a one-frame jump there); cards under the top card slide up smoothly while it swipes off.
+    const BC=[]; {{ let s=LEAD; for(let i=0;i<TL.length;i++){{ const b=s+TL[i][1], c=b+TL[i][2]; BC.push([b,c]); s=c; }} }}
+    function curIndex(t){{ for(let i=0;i<TL.length;i++){{ if(t<BC[i][1]) return i; }} return TL.length; }}
+    function curProg(t){{ const i=curIndex(t); if(i>=TL.length) return 0; const [b,c]=BC[i]; return t<b?0:ease((t-b)/TL[i][2]); }}
     window.render=render;
     </script></body></html>"""
 SWIPE_LEN = LEAD + sum(c[4] + c[5] for c in SWIPES) + TAIL_HOLD
@@ -256,6 +268,10 @@ SHOTS = [
     (HEAD + f"""<div class="wrap" style="background:url({u('assets/colorcards/papaya-spritz/00-papaya-spritz-mahjong-tiles-profile-c-story.jpg')}) center/cover"></div></body></html>""", 3.0),
     (RESEARCH, 3.6),
     'SWIPE',
+]
+# Old static ending ('Hook me up.' + static end card). Only the STATIC story version uses it; the reel uses the animated
+# ending from ending.py (one 'Hook me up!' card, one end card), so the reel never shows two versions of a card.
+OLD_ENDING = [
     (card(PS, 'Hook me <i>up.</i>', 190), 2.2),
     (HEAD + f"""<div class="wrap" style="background:{END[0]};color:{END[1]}">
       <img src="{u('assets/brand/flame-heart.png')}" style="width:150px;margin-bottom:40px">
@@ -286,7 +302,7 @@ def make_ring(path, sr=44100):
 
 async def main():
     shots = []
-    for x in SHOTS:
+    for x in SHOTS + ([] if REEL else OLD_ENDING):
         if x == 'SWIPE': shots.extend(STATIC_PROFS if STATIC else ['SWIPE'])
         else: shots.append(x)
     entries, stills = [], []   # (png, seconds, paced?)
@@ -294,34 +310,57 @@ async def main():
         b = await p.chromium.launch(); pg = await b.new_page(viewport={'width': 1080, 'height': 1920})
         for i, x in enumerate(shots, 1):
             if x == 'SWIPE':
-                hp = f'{OUT}/frames/f{i:02d}-swipe.html'; open(hp, 'w').write(swipe_html())
+                hp = f'{FR}/f{i:02d}-swipe.html'; open(hp, 'w').write(swipe_html())
                 await pg.goto('file://' + hp); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready')
-                os.makedirs(f'{OUT}/frames/swipe', exist_ok=True)
+                os.makedirs(f'{FR}/swipe', exist_ok=True)
                 n = int(round(SWIPE_LEN * FPS))
                 for k in range(n):
                     await pg.evaluate(f'render({k / FPS})')
-                    fp = f'{OUT}/frames/swipe/s{k:04d}.png'; await pg.screenshot(path=fp)
+                    fp = f'{FR}/swipe/s{k:04d}.png'; await pg.screenshot(path=fp)
                     entries.append((f'swipe/s{k:04d}.png', 1 / FPS, False))
                 for tt in (1.6, 3.25, 6.2):   # contact-sheet stills: NOPE, MATCH 1, later match
-                    k = min(int(tt * FPS), n - 1); stills.append(f'{OUT}/frames/swipe/s{k:04d}.png')
+                    k = min(int(tt * FPS), n - 1); stills.append(f'{FR}/swipe/s{k:04d}.png')
                 continue
             h, d = x
-            hp = f'{OUT}/frames/f{i:02d}.html'; open(hp, 'w').write(h)
+            hp = f'{FR}/f{i:02d}.html'; open(hp, 'w').write(h)
             await pg.goto('file://' + hp); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready')
-            await pg.screenshot(path=f'{OUT}/frames/f{i:02d}.png')
-            entries.append((f'f{i:02d}.png', d, True)); stills.append(f'{OUT}/frames/f{i:02d}.png')
+            await pg.screenshot(path=f'{FR}/f{i:02d}.png')
+            entries.append((f'f{i:02d}.png', d, True)); stills.append(f'{FR}/f{i:02d}.png')
         await b.close()
-    lst = f'{OUT}/frames/list.txt'
+    lst = f'{FR}/list.txt'
     with open(lst, 'w') as f:
         for fn, d, paced in entries:
             f.write(f"file '{fn}'\nduration {round(max(d * PACE, 1.8), 2) if paced else round(d, 5)}\n")
         f.write(f"file '{entries[-1][0]}'\n")
-    name = 'counseling-session-1-papaya-spritz' + ('-static' if STATIC else '')
+    name = 'v11-body' if REEL else 'counseling-session-1-papaya-spritz' + ('-static' if STATIC else '')
+    if REEL:
+        # Oct 21 (v11): frame-exact body. Every still gets an exact frame count (cut points on the 1/30 s grid, cumulative
+        # rounding) and the swipe frames are encoded 1:1, so no swipe frame is ever dropped or doubled (the concat-demuxer
+        # path with 0.03333 s durations dropped/duplicated frames in v9).
+        segs, cum, done, k = [], 0.0, 0, 0
+        while k < len(entries):
+            fn, d, paced = entries[k]
+            if paced:
+                cum += round(max(d * PACE, 1.8), 2); nf = round(cum * FPS) - done; done += nf
+                seg = f'{FR}/seg{k:03d}.mp4'
+                subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-loop', '1', '-framerate', str(FPS), '-i', f'{FR}/{fn}', '-frames:v', str(nf),
+                                '-vf', 'format=yuv420p', '-c:v', 'libx264', '-crf', '16', '-r', str(FPS), seg], check=True)
+                segs.append(seg); k += 1
+            else:
+                j = k
+                while j < len(entries) and not entries[j][2]: j += 1
+                seg = f'{FR}/seg{k:03d}-swipe.mp4'
+                subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-framerate', str(FPS), '-start_number', '0', '-i', f'{FR}/swipe/s%04d.png',
+                                '-frames:v', str(j - k), '-vf', 'format=yuv420p', '-c:v', 'libx264', '-crf', '16', '-r', str(FPS), seg], check=True)
+                segs.append(seg); cum += (j - k) / FPS; done += j - k; k = j
+        with open(f'{FR}/segs.txt', 'w') as f: f.write(''.join(f"file '{x}'\n" for x in segs))
+        subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', f'{FR}/segs.txt', '-c', 'copy', f'{FR}/{name}-silent.mp4'], check=True)
+        return
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', lst, '-vf', 'fps=30,format=yuv420p',
-                    '-c:v', 'libx264', '-crf', '18', f'{OUT}/frames/{name}-silent.mp4'], check=True)
+                    '-c:v', 'libx264', '-crf', '18', f'{FR}/{name}-silent.mp4'], check=True)
     # ring over the first frame only; the rest stays silent so Tiffany can add Instagram music on top
-    make_ring(f'{OUT}/frames/ring.wav')
-    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', f'{OUT}/frames/{name}-silent.mp4', '-i', f'{OUT}/frames/ring.wav',
+    make_ring(f'{FR}/ring.wav')
+    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', f'{FR}/{name}-silent.mp4', '-i', f'{FR}/ring.wav',
                     '-filter_complex', '[1:a]apad[a]', '-map', '0:v', '-map', '[a]', '-shortest', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '160k',
                     f'{OUT}/{name}.mp4'], check=True)
     ims = [Image.open(f).convert('RGB').resize((270, 480)) for f in stills]
