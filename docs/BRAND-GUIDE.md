@@ -223,7 +223,7 @@ Use the same format. The hook names the scene.
   - "new album added"
   - per-set "new match card added" updates
   - album-request confirmations ("we got your request" / "Good news, it's already in our library")
-- She approves each template once; after that the sends run automatically.
+- She approves each template once; after that the sends run automatically. Runbook: `docs/EMAIL.md`. **Tiffany approves templates once; Claude runs all sends** (Oct 21). Customer emails are signed "Happy mat-ching! xo, Tiffany" and carry "Use code MAHJMATCH to save 💕".
 - Brand outreach emails:
   - Focus on Mahj Matchmaker's value ("I'd love to help customers find and match up your beautiful products").
   - Never spotlight the code, the codes hub, member counts or her OMM-instructor status.
@@ -481,3 +481,4 @@ Each is asked once. Until she answers, follow the default given here.
 
 - 2026-10-21 12:36 (Tiffany): **Never undo SEO-established wording or placement when trimming for spam.** Her style notes decide what LOOKS spammy (sections, sizes, headlines). Wording and placement that research proved (the verified line, FAQ schema, the MJTI-is-dead FAQ, the credential near the top) stay. Find a less spammy place or style for them instead of removing them. Before changing a brand page, read Project docs 07 and 39.
 - 2026-10-21 12:41 (Tiffany) — SUPERSEDES the 11:38 "(affiliate)" entry: **Social code line = "Use code MAHJMATCH to save 💕"** in every post (spelled out, double-heart emoji). **Disclosure = the #affiliate hashtag only**, in the hashtags. Never write "(affiliate)" or the word affiliate anywhere else in the caption.
+- 2026-10-21 14:13 (Tiffany): **Email: she approves templates once; Claude runs every send.** Never ask her to send, schedule or turn on an email. Customer emails use "Use code MAHJMATCH to save 💕" and sign off "Happy mat-ching! xo, Tiffany". Runbook in `docs/EMAIL.md`.
