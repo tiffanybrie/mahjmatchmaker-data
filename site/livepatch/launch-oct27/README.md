@@ -1,5 +1,7 @@
 # Launch-day homepage switch. Tue Oct 27, 2026, 9:00am CT (14:00 UTC). STAGED, not live
 
+**Oct 21 afternoon update:** the switch now also swaps the hero GRAPHIC (Tiffany 12:55pm). Previews: `hero-graphic/previews/hero-launch-1280.png` and `hero-launch-390.png`.
+
 Tiffany approved Oct 21, 12:42pm: "yes to both the announcement bar and also to the 10/27 launch day switch".
 A one-time scheduled task ("Launch day: switch homepage hero + remove announcement bar") runs these steps at 9:00am CT.
 
@@ -29,6 +31,7 @@ The design is the one already shown to her in Ready to Ship (`site/livepatch/nav
 
 **Pinned images (jsDelivr, warmed Oct 21, both 200 and byte-identical to the repo):**
 - Desktop (upload into the section): `https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@237f0fff5e35d8f1cbf36beee833c2c0269b0971/site/livepatch/launch-oct27/hero-graphic/find-your-match-mahjong-hero-desktop.jpg`
+- Custom CSS to append: `https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@18a5b9212390389070c8211ed4a4622f703c9aa0/site/livepatch/launch-oct27/hero-graphic/launch-hero.paste.css`
 - Mobile/tablet (used by the CSS): `https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@237f0fff5e35d8f1cbf36beee833c2c0269b0971/site/livepatch/launch-oct27/hero-graphic/find-your-match-mahjong-hero-mobile.jpg`
 
 **Tool URL:** `/find-your-match`. It already exists (teaser "Coming 10.27", page id `6ad6f62ad05b752bba9d1e8d`) and the header nav "Find Your Mat-ch™" already points there. Per `site/livepatch/nav-plan/README.md` and `site/livepatch/pages/README.md`, its content is swapped for the live tool on 10/27; the embed method is in the launch plan (Project doc 54). That swap is a separate job. If the final tool URL changes, update the button link only.
@@ -61,7 +64,7 @@ Use your OWN Chrome tab (tabs_create_mcp) at `https://hexaflexagon-denim-nhf4.sq
    ```
    Wait for the upload to finish and the new image to show in the editor. Focal point: leave it in the centre (0.5, 0.5). Image overlay: none / 0%. Close the panel.
 5. **Save, then Exit** the editor (top left). Confirm the page reads "Published".
-6. **Custom CSS.** Design (or Website > Website Tools) > **Custom CSS**. It is CodeMirror 6: `const v = document.querySelector('.cm-editor .cm-content').cmTile.view;` then append the WHOLE content of `hero-graphic/launch-hero.paste.css` at the end: `v.dispatch({changes: {from: v.state.doc.length, insert: '\n\n' + css}})` (read `css` from the repo file; don't retype it). Do not touch any existing CSS. Escape, **Save**.
+6. **Custom CSS.** Design (or Website > Website Tools) > **Custom CSS**. It is CodeMirror 6: `const v = document.querySelector('.cm-editor .cm-content').cmTile.view;` then append the WHOLE content of `hero-graphic/launch-hero.paste.css` at the end: `v.dispatch({changes: {from: v.state.doc.length, insert: '\n\n' + css}})` (get `css` with `await (await fetch('https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@18a5b9212390389070c8211ed4a4622f703c9aa0/site/livepatch/launch-oct27/hero-graphic/launch-hero.paste.css')).text()` in the page; pinned + warmed Oct 21, byte-identical to the repo file; don't retype it). Do not touch any existing CSS. Escape, **Save**.
 7. **Announcement bar OFF.** Pages > Website Tools > Announcement Bar (`/config/pages/announcement-bar`) > toggle **Enable Announcement Bar** off > **Save**. Leave its Custom CSS block alone.
 8. **Verify** (logged out, with a cache-buster):
    - `curl -s "https://www.mahjmatchmaker.com/?v=$RANDOM"` contains `Find Your Mat-ch™ is here` (or `Mat-ch&trade;`), `Start with your tiles or your mat and swipe your perfect match.`, `Start swiping` and `href="/find-your-match"`; and does NOT contain `Find the Perfect Mahjong Match`.
