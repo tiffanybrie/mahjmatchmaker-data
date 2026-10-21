@@ -34,6 +34,7 @@ import cv2
 
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 CANON_DIR = os.path.join(REPO, 'assets/tiles/album')
+CANON_DIRS = [CANON_DIR, os.path.join(REPO, 'assets/tiles/holiday')]  # holiday sets have no album photo: their pile shots count too
 STRONG = 40          # RANSAC inliers that mean "this is that photo"
 SIM_MIN = 0.85      # same-photo colour high-pass correlation after warping (true crops 0.87-1.0; Virora grid look-alikes <= 0.77)
 HULL_MIN = 0.15     # matched area must cover >= 15% of the canonical photo (one shared tile artwork covers far less)
@@ -43,6 +44,8 @@ MARGIN = 2.0         # other-set score must beat own-set score by this factor to
 CANON_ALIAS = {
     'heritage-2-0-full': 'heritage-2-0', 'petalee-pile': 'petalee', 'sunday-tile-set-hd': 'sunday-tile-set',
     'classic-tortoise-zoom': 'classic-tortoise', 'cypress': 'cypress-forest',
+    'holly-jolly-pink-pile': 'holly-jolly-pink', 'holly-jolly-red-pile': 'holly-jolly-red', 'tinselle-emerald-3x3': 'tinselle-emerald',
+    'tinselle-ruby-3x3': 'tinselle-ruby', 'plm-spirit-of-christmas-faces-back': 'spirit-of-christmas',
 }
 # asset-side slug -> canonical set slug
 SET_ALIAS = {
@@ -82,7 +85,7 @@ def norm_set(s):
 class Canon:
     def __init__(self):
         self.labels, self.kps, self.descs, self.grays = [], [], [], []
-        for p in sorted(glob.glob(CANON_DIR + '/*')):
+        for p in sorted(f for d_ in CANON_DIRS for f in glob.glob(d_ + '/*')):
             if not re.search(r'\.(jpe?g|png|webp)$', p, re.I): continue
             stem = os.path.splitext(os.path.basename(p))[0]
             c = load_rgb(p, 1100); g = cv2.cvtColor(c, cv2.COLOR_RGB2GRAY)
@@ -171,7 +174,7 @@ def set_from_name(path):
     return None
 
 KNOWN_SETS = sorted({norm_set(CANON_ALIAS.get(os.path.splitext(f)[0], os.path.splitext(f)[0]))
-                     for f in os.listdir(CANON_DIR) if re.search(r'\.(jpe?g|png|webp)$', f, re.I)})
+                     for d_ in CANON_DIRS for f in os.listdir(d_) if re.search(r'\.(jpe?g|png|webp)$', f, re.I)})
 
 def run(items, C=None, quiet=False):
     """items: list of (label/url, local path or bytes, expected set) -> results list"""
