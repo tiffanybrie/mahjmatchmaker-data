@@ -1,5 +1,8 @@
 # The Desk
 
+## Thu Oct 22: Tiffany mostly unavailable (her 5:11pm call)
+- Load her with NOTHING to post by hand. Only auto-posts (feed, carousels, plain stories with no stickers, pins). Any reminder post for Oct 22 becomes an undated draft and moves to a later day. Brand credit goes in Tag people + caption @mentions, not stickers.
+
 See CLAUDE.md. Rewritten nightly by the end-of-day desk cleanup.
 
 ## In progress / don't drop
