@@ -22,7 +22,7 @@ NAVY, NAVY2, PINK, HEART, BLUSH, PCREAM, CREAM = '#054689', '#062a55', '#f56b8b'
 def bg_html(kind):
     if kind == 'desktop':
         W, H = 2400, 1500
-        fan_cx, fan_top, cw, dx, side_scale = 1650, 400, 600, 280, .86
+        fan_cx, fan_top, cw, dx, side_scale = 1700, 410, 580, 268, .86
         blobs = f'''<i style="left:1000px;top:90px;width:1500px;height:1500px;background:{PCREAM}"></i>
 <i style="left:-260px;top:1080px;width:700px;height:700px;background:{PCREAM};opacity:.75"></i>
 <i style="left:900px;top:-330px;width:420px;height:420px;background:#fdeef2"></i>'''
@@ -104,7 +104,7 @@ JS = '''([text, links, css, desk, mob]) => {
 }'''.replace('SEC', SEC)
 
 
-async def preview(widths=((1280, 800), (390, 844), (1440, 900), (1024, 768), (1920, 1080), (768, 1024))):
+async def preview(widths=((1280, 800), (390, 844), (1440, 900), (1100, 800), (1024, 768), (1920, 1080), (768, 1024), (360, 780))):
     from playwright.async_api import async_playwright
     out = HERE / 'previews'; out.mkdir(exist_ok=True)
     desk_url, mob_url = 'https://hero.local/bg-desktop.jpg', 'https://hero.local/bg-mobile.jpg'

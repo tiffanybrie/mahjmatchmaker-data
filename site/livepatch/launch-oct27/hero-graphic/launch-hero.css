@@ -16,10 +16,10 @@
 
 /* ----- wide screens: text on the left, the card fan in the graphic on the right ----- */
 @media (min-width:1100px){
- [data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block-b79726a6f150a9dd219f{grid-area:2/2/8/13!important;align-self:end}
+ [data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block-b79726a6f150a9dd219f{grid-area:2/2/8/14!important;align-self:end}
  [data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block-yui_3_17_2_1_1773260945246_2648{grid-area:8/2/10/8!important}
  [data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block:has(a[href="/mahjong-tile-matches"]){grid-area:10/2/12/13!important}
- [data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f h1{font-size:clamp(44px,4.1vw,70px)!important;line-height:1.08!important}
+ [data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f h1{font-size:clamp(40px,3.9vw,68px)!important;line-height:1.08!important}
  [data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f h1,
  [data-section-id="69b1d01489d0f8016ee3d59f"] #block-b79726a6f150a9dd219f h4,
  [data-section-id="69b1d01489d0f8016ee3d59f"] .fe-block:has(a[href="/mahjong-tile-matches"]) p{text-align:left!important}

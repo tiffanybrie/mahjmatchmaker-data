@@ -38,6 +38,13 @@ a{color:inherit;text-decoration:none}
 .hd .burger{display:none}
 /* hero */
 .hero{position:relative;overflow:hidden;background:url(A/hero/loveshackfancy-coquette-fleur-mat-hero.jpg) center/cover}
+.hero.launch{background:radial-gradient(circle at 74% 56%,#fbe3ea 0 36%,transparent 36.2%),radial-gradient(circle at -4% 104%,#fbe3ea 0 20%,transparent 20.2%),#faf3ea}
+.hero.launch::before{display:none}
+.hero.launch h1 em{font-style:normal;color:#054689}
+.hero.launch .eyebrow{background:#054689}
+.hero.launch .fan{height:600px}.hero.launch .fan .c{width:330px}
+.hero.launch .itsamatch{top:-22px}
+.hero.launch .swipes{bottom:-30px}
 .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.80) 0%,rgba(255,255,255,.62) 46%,rgba(255,255,255,.18) 100%)}
 .hero .in{position:relative;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:30px;max-width:1180px;margin:0 auto;padding:64px 56px 70px;min-height:640px}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:#fff;font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;border-radius:99px;padding:8px 15px}
@@ -214,15 +221,15 @@ def page(title, body):
     return f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title><style>{CSS}</style></head><body>{body}</body></html>'
 
 
-FAN = '''<div class="fan">{stamp}<div class="c c1"><img src="img/card-coquette.jpg" alt=""></div><div class="c c2"><img src="img/card-heritage2.jpg" alt=""></div><div class="c c3"><img src="img/card-papaya.jpg" alt="Papaya Spritz tiles on the Regency Scalloped mat"></div>{extra}<div class="swipes"><span class="no">&#10005;</span><span class="yes">&#9829;</span></div></div>'''
+FAN = '''<div class="fan">{stamp}<div class="c c1"><img src="img/card-coquette.jpg" alt=""></div><div class="c c2"><img src="img/card-heritage2.jpg" alt=""></div><div class="c c3"><img src="img/card-papaya.jpg" alt="Papaya Spritz tiles on the Press for Mahjong mat"></div>{extra}<div class="swipes"><span class="no">&#10005;</span><span class="yes">&#9829;</span></div></div>'''
 
-launch = page('Home - launch day (draft)', header() + f'''<section class="hero"><div class="in"><div>
-<span class="eyebrow"><span class="dot"></span>New &middot; Find Your Match</span>
-<h1>Find your match.</h1>
-<p class="lede">Pick your tiles, then swipe through mats and racks that match them. Save your favorite as a match card.</p>
-<div class="ctas"><a class="btn" href="{FYM}">Find your match</a><a class="tl" href="/mahjong-tile-matches">or browse the albums</a></div>
-<div class="coupon">First date's on us. Use code <b>MAHJMATCH</b> to save 10%.</div>
-</div>{FAN.format(stamp='', extra='<div class="itsamatch">It&rsquo;s a match!</div>')}</div></section>''' + ALBUMS + REST + FOOT)
+launch = page('Home - launch day (draft)', header() + f'''<section class="hero launch"><div class="in"><div>
+<span class="eyebrow"><span class="dot"></span>New &middot; Find Your Mat-ch</span>
+<h1>Find <em>Your</em> Mat-ch&trade; is here</h1>
+<p class="lede">Start with your tiles or your mat and swipe your perfect match.</p>
+<div class="ctas"><a class="btn" href="{FYM}">Start swiping</a><a class="tl" href="/mahjong-tile-matches">or browse the albums</a></div>
+<div class="coupon">Use code <b>MAHJMATCH</b> to save at 30+ partner brands</div>
+</div>{FAN.format(stamp='', extra='<div class="itsamatch">It&rsquo;s a mat-ch!</div>')}</div></section>''' + ALBUMS + REST + FOOT)
 
 pre = page('Home - pre-launch (draft)', header() + f'''<section class="hero"><div class="in"><div>
 <span class="eyebrow"><span class="dot"></span>Coming 10.27</span>
