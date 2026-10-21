@@ -41,7 +41,7 @@ def shell(body, H=1350):
 .k{{font-family:Bit;font-weight:700;letter-spacing:.2em;color:{WNAVY}}}
 .hd{{font-family:Capra;font-weight:400;line-height:1;color:{WNAVY};text-align:center;white-space:nowrap}}
 .lk{{display:inline-flex;flex-direction:column;align-items:stretch}} .lk img{{display:block;width:100%}}
-.lk b{{display:block;margin-top:.5em;background:#f56c8c;color:#fff;font-family:Bit;font-weight:700;letter-spacing:.14em;text-align:center;white-space:nowrap;padding:.5em 0 .44em;border-radius:3px}}
+.lk b{{display:block;margin-top:.5em;background:#f56c8c;color:#fff;font-family:Bit;font-weight:700;letter-spacing:.15em;text-align:center;white-space:nowrap;padding:.42em 0 .38em;border-radius:3px}}
 </style></head><body><div id=pg style="position:relative;width:1080px;height:{H}px;background:{PAPER};overflow:hidden">
 <div style="position:absolute;right:-210px;top:-230px;width:700px;height:700px;border-radius:50%;background:{BLUSHBG}"></div>
 <div style="position:absolute;left:-230px;bottom:-250px;width:660px;height:660px;border-radius:50%;background:{BLUSHBG};opacity:.75"></div>
@@ -52,7 +52,7 @@ def lockup(w):
     """Wordmark WITH the tagline ribbon (Tiffany Oct 21 2:12pm; = assets/brand/mahjmatchmaker-wordmark.png, rebuilt in HTML
     so it stays sharp at any size: that PNG is only 420px wide). Never pair it with "Hooking up..." (one tagline per piece)."""
     return (f'<div class=lk style="width:{w}px"><img src="{u('assets/brand/mahjmatchmaker-wordmark-notag.png')}">'
-            f'<b style="font-size:{round(w*0.0315)}px">MATCHING MAHJONG TILES, MATS &amp; RACKS</b></div>')
+            f'<b style="font-size:{round(w*0.036)}px">MATCHING MAHJONG TILES, MATS &amp; RACKS</b></div>')
 
 
 def slide1():
