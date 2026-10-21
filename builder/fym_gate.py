@@ -42,6 +42,7 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
     '' renders the whole list; Holiday may stay the season default (HOLIDAY_SEASON, Oct 14)
  20 phone orphan (Oct 21: "for" alone on its own line in the I have tiles door): door subtitles end in a non-breaking space + last
     word and .door button small has text-wrap:balance
+ 21 footer feedback link (Oct 21 launch): "Something look off or have an idea? Tell me here" -> find-your-mat-ch-feedback, new tab
  8b colour-chip order: sh (measured share) lines up with mf; CSORT (single chip) = lead > ONE list by score (share + 20 if primary),
     checked by running CSORT in node over every chip colour
 """
@@ -415,6 +416,9 @@ if 'if(!S.tcol)S.tcol=' in UI: F.append("[19] falsy S.tcol re-selects the defaul
 _ds = re.findall(r'data-door="[a-z]+"[^>]*>[^<]*<small>([^<]*)</small>', UI)
 if len(_ds) < 2 or any('\u00a0' not in x_ for x_ in _ds): F.append(f"[20] door subtitles missing a non-breaking space before the last word: {_ds}")
 if not re.search(r'\.door button small\{[^}]*text-wrap:balance', UI): F.append("[20] .door button small lacks text-wrap:balance")
+
+# 21. feedback link in the footer (Oct 21, launch): opens the feedback page in a new tab
+if not re.search(r'<footer class="fb"><a href="https://www\.mahjmatchmaker\.com/find-your-mat-ch-feedback" target="_blank" rel="noopener">', UI): F.append("[21] footer feedback link missing / wrong URL / not a new tab")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
