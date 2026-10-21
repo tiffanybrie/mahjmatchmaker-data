@@ -11,7 +11,7 @@ body.mmfym-on #page section[data-section-id="69b1d01489d0f8016ee3d59f"],.mmfym-o
 #mmfym h1,#mmfym h2,#mmfym h3{font-family:'Caprasimo',Georgia,serif;font-weight:400;color:var(--navy);margin:0;text-wrap:balance;letter-spacing:0}
 #mmfym p,#mmfym li{text-wrap:pretty}
 #mmfym .nb{white-space:nowrap}
-#mmfym .hero{position:relative;overflow:hidden;padding:36px 0 44px;background:radial-gradient(circle at 80% 48%,#fbd9e2 0,#fbd9e2 33%,transparent 33.2%),radial-gradient(circle at 2% 100%,var(--blush) 0,var(--blush) 15%,transparent 15.2%),var(--cream)}
+#mmfym .hero{position:relative;overflow:hidden;padding:30px 0 40px;background:radial-gradient(circle at 2% 100%,var(--blush) 0,var(--blush) 15%,transparent 15.2%),var(--cream)}
 #mmfym .hg{display:grid;grid-template-columns:1fr;gap:26px;align-items:center;text-align:center}
 #mmfym .pill{display:inline-block;background:var(--navy);color:#fff;font:700 13px/1 'Bitter',Georgia,serif;letter-spacing:.16em;text-transform:uppercase;padding:9px 16px 8px;border-radius:99px}
 #mmfym h1{font-size:clamp(44px,11vw,78px);line-height:1.02;margin-top:16px;word-spacing:-.06em}
@@ -23,7 +23,7 @@ body.mmfym-on #page section[data-section-id="69b1d01489d0f8016ee3d59f"],.mmfym-o
 #mmfym .btn:hover{transform:translateY(-2px)}
 #mmfym .tl{color:var(--navy)!important;font-weight:700;font-size:16px;text-decoration:underline!important;text-underline-offset:3px}
 #mmfym .small{font-size:14.5px;color:#5b6577;margin-top:14px}
-#mmfym .art{position:relative;max-width:340px;margin:6px auto 0;width:78%}
+#mmfym .art{position:relative;max-width:300px;margin:14px auto 0;width:72%}
 #mmfym .art img{position:relative;z-index:1;display:block;width:100%;height:auto;transform:rotate(3deg);filter:drop-shadow(0 22px 34px rgba(6,42,85,.18))}
 #mmfym .art::before{content:'';position:absolute;z-index:0;left:50%;top:50%;width:118%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,#fff 0,#fff 38%,#fbd9e2 38.4%,#fbd9e2 100%)}
 #mmfym .hz{position:absolute;z-index:2;color:var(--pink);font-family:Arial,sans-serif;line-height:1;pointer-events:none}
@@ -32,16 +32,12 @@ body.mmfym-on #page section[data-section-id="69b1d01489d0f8016ee3d59f"],.mmfym-o
 #mmfym .hz.c{right:-8%;bottom:20%;font-size:40px;transform:rotate(10deg)}
 #mmfym .ribbon{position:absolute;z-index:3;left:-8%;bottom:9%;background:var(--navy);color:#fff;font:400 22px/1 'Caprasimo',Georgia,serif;padding:12px 18px 13px;border-radius:14px;transform:rotate(-6deg);box-shadow:0 10px 22px rgba(6,42,85,.28)}
 #mmfym .ribbon i{font-style:normal;color:#ffc9d8}
-#mmfym .steps3{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 10px;margin:18px 0 0;padding:0;list-style:none}
-#mmfym .steps3 li{margin:0;background:#fff;border:2px solid #f7c6d4;border-radius:99px;padding:8px 14px 9px;font:700 15.5px/1 'Bitter',Georgia,serif;color:var(--navy)}
-#mmfym .steps3 li::before{display:none}
-#mmfym .steps3 b{color:var(--rose);margin-right:.35em}
 @media(min-width:800px){
- #mmfym .hero{padding:64px 0 72px}
- #mmfym .hg{grid-template-columns:1.1fr .9fr;gap:40px;text-align:left}
+ #mmfym .hero{padding:44px 0 52px}
+ #mmfym .hg{grid-template-columns:1.25fr .75fr;gap:40px;text-align:left;max-width:1040px}
  #mmfym .lede{margin-left:0}
- #mmfym .acts,#mmfym .steps3{justify-content:flex-start}
- #mmfym .art{max-width:380px;width:100%}
+ #mmfym .acts{justify-content:flex-start}
+ #mmfym .art{max-width:290px;width:100%;margin:0 auto}
  #mmfym .ribbon{font-size:26px}
 }
 </style>
@@ -50,7 +46,6 @@ body.mmfym-on #page section[data-section-id="69b1d01489d0f8016ee3d59f"],.mmfym-o
 <span class="pill">Coming 10.27</span>
 <h1 id="mmfym-h1"><span class="nb">Find <em>Your</em></span> <span class="nb">Mat-ch<sup>&trade;</sup></span></h1>
 <p class="lede">Start with your tiles or your mat. Swipe. Find your&nbsp;match.</p>
-<ol class="steps3" aria-label="How it works"><li><b>1</b>Your tiles or your mat</li><li><b>2</b>Swipe &#10005; or &#9829;</li><li><b>3</b>Find your match</li></ol>
 <div class="acts"><a class="btn" href="#mmfym-signup" data-mmfym-signup>Save my spot <span aria-hidden="true">&#9829;</span></a><a class="tl" href="/mahjong-tile-matches">or browse the albums</a></div>
 </div>
 <div class="art"><img src="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@570b99d18977107da6b3be40487d010a95b65171/assets/site/home-prelaunch/start-phone.webp" width="560" height="1082" fetchpriority="high" decoding="async" alt="The Find Your Mat-ch start screen on a phone: pick I have tiles or I have a mat"><span class="hz a" aria-hidden="true">&#9829;</span><span class="hz b" aria-hidden="true">&#9829;</span><span class="hz c" aria-hidden="true">&#9829;</span><span class="ribbon" aria-hidden="true">Opens <i>10.27</i></span></div>
