@@ -5,6 +5,7 @@ green active dot, interest pills, "Looking for", a prompt, basics row and the 5-
 Oct 21 (Tiffany, carousel work): the profile UI uses ONLY an X and a heart, like Find Your Match and the posted intro
 carousel (intro_framed.py). No rewind, star or lightning bolt, and no crush/nope/pass wording. BUTTONS below is the one
 place the row is defined; intro_framed.py and every story/feed/reel use of this card read it.
+Oct 21 1:47pm: the round up-arrow 'info' button on the photo is gone too, so no circle button but X + heart appears.
 Usage: python3 scripts/social/tileprofile/swipe_profile.py   (writes assets/colorcards/papaya-spritz/00-papaya-spritz-mahjong-tiles-profile-c-story.jpg)
 Labels stay level (doc 79 label rule, max 12 deg). The LIKE stamp is the one tilted element at -12.
 """
@@ -97,7 +98,7 @@ html,body{{width:1080px;height:1920px;overflow:hidden;background:var(--cream);co
  <div class="name">{P['name']}<span class="check">{svg('M13 25 L21 33 L36 16', '#fff', 40, 6)}</span></div>
  <div class="meta"><span class="g"></span>{P['active']}</div>
  <div class="loc">{svg(PIN, '#fff', 34, 0, '#fff')}Lives at {P['brand']}</div>
- <div class="info">{svg('M24 34 V14 M15 22 L24 13 L33 22', '#fff', 40, 5)}</div>
+ <!-- Oct 21 1:47pm (Tiffany): no info/up-arrow circle on the photo; the only buttons are X + heart -->
  <div class="ilab">{'<svg width="34" height="34" viewBox="0 0 48 48"><rect x="4" y="4" width="17" height="17" rx="4" fill="#fff"/><circle cx="35.5" cy="12.5" r="8.5" fill="#fff"/><path d="M12.5 27 L21 43 H4 Z" fill="#fff"/><path d="M35.5 44 C27 37 26 33 26 30.5 C26 27.5 28.5 26 30.5 26 C32.5 26 34 27 35.5 29 C37 27 38.5 26 40.5 26 C42.5 26 45 27.5 45 30.5 C45 33 44 37 35.5 44 Z" fill="#fff"/></svg>'}Interests</div>
  <div class="pillrow">{pills}</div>
  </div>

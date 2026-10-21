@@ -3,7 +3,11 @@ Slides 1-6 sit inside the SAME profile card (phone-shaped, ~1:1.56 like a Tinder
 natively for the card (big, legible text, no shrunken 1080 slides). Slide 7 is NOT in the card: you've reached the
 back of her profile, so it's the plain "She's been MAT-ched" graphic (intro.py's 7.jpg as-is).
 Footer on every card: Mahj Matchmaker wordmark + "Dating profile". Buttons: X + heart only (Tinder's look).
-Usage: python3 intro_framed.py papaya-spritz   (run intro.py + swipe_profile.py first)"""
+Usage: python3 intro_framed.py papaya-spritz   (run intro.py + swipe_profile.py first)
+STORY=1 (Tiffany, Oct 21 1:47pm): the same 7 slides as 1080x1920 story frames -> <key>-launch/intro-story/frames/story-N.jpg.
+  The card + X/heart row is rendered natively (never a cropped feed slide, so the buttons are always whole), scaled as big as
+  the story safe band allows (top 250 / bottom 340 clear) and centered in it. No empty sticker band: stickers go over the
+  cream margin. Slide 7 (plain graphic) is rendered at 2x and fitted by story_frames.fit()."""
 import sys, os, asyncio, shutil, html
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from playwright.async_api import async_playwright
@@ -14,6 +18,8 @@ key = sys.argv[1]; P, S = load(key); e = html.escape
 SRC = f'{R}assets/social/{key}-launch/intro'; OUT = f'{R}assets/social/{key}-launch/intro-framed' + ('-open' if os.environ.get('OPEN') == '1' else ''); H = f'{R}assets/social/{key}-launch/html'
 CARD = f'{R}assets/colorcards/{key}/00-{key}-mahjong-tiles-profile-d-card@2x.png'
 os.makedirs(OUT, exist_ok=True); TMP = os.path.dirname(os.path.abspath(__file__)) + '/html'
+STORY = os.environ.get('STORY') == '1'
+if STORY: OUT = f'{R}assets/social/{key}-launch/intro-story/frames'; os.makedirs(OUT, exist_ok=True)
 OPEN = os.environ.get('OPEN') == '1'   # Option B (Tiffany Oct 20): same slides, not in the card from slide 2 on
 CX, CY, CW, CH = 130, 22, 820, 1281
 VER = lambda n: f'<svg width="{n}" height="{n}" viewBox="0 0 24 24"><path d="M12 21.5C5.5 16.6 2 13.2 2 8.9 2 5.9 4.4 3.5 7.3 3.5c1.9 0 3.6 1 4.7 2.5 1.1-1.5 2.8-2.5 4.7-2.5 2.9 0 5.3 2.4 5.3 5.4 0 4.3-3.5 7.7-10 12.6z" fill="#d6608c" stroke="#fff" stroke-width="1.2"/><path d="M7.6 11.3l3 3 5.8-5.8" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
@@ -101,7 +107,7 @@ s6 = (hdr(('Made for each other', 70)) +
       f'<div style="width:190px;height:190px;border-radius:50%;background:#fff url({url(pr["circle"])}) center/112% no-repeat;box-shadow:0 0 0 6px #fff,0 8px 20px rgba(6,40,90,.16)"></div>{HT(60)}'
       f'<div style="width:212px;height:212px;border-radius:18px;background:url({url(pr["img"])}) center/114%;box-shadow:0 8px 22px rgba(6,40,90,.16)"></div></div>'
       f'{ab(L, 984, "", W)}<div style="display:flex;align-items:center;gap:10px">{VER(34)}<span class="caps" style="font-size:20px;color:var(--pink)">Official pair</span></div>'
-      f'<div style="font:400 29px/1.35 Bit;margin-top:10px;color:#2c3e63">{e(pr["why"])}</div></div>')
+      f'<div style="font:400 29px/1.35 Bit;margin-top:10px;color:#2c3e63;text-wrap:balance">{e(pr["why"]).replace("light lime", "light&nbsp;lime")}</div></div>')
 NATIVE = {2: s2, 3: s3, 4: s4, 5: s5, 6: s6}
 
 def page(n):
@@ -110,6 +116,7 @@ def page(n):
         inner = f'<img src="file://{CARD}" style="position:absolute;inset:0;width:100%;height:100%"><div style="position:absolute;left:0;right:0;bottom:0;height:60px;background:#fff"></div>'
     else:
         inner = f'<div style="position:absolute;inset:0;background:var(--cream)"></div>{NATIVE[n]}<div class="bars">{bars}</div>'
+    if STORY: return story_page(n, inner)
     return f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 1350, S['col'])}
 html,body{{background:{'var(--cream)' if OPEN else '#f6e9df'}}}
 .card{{position:absolute;left:{CX}px;top:{CY}px;width:{CW}px;height:{CH}px;background:{'var(--cream)' if OPEN else '#fff'};border-radius:{0 if OPEN else 38}px;overflow:{'visible' if OPEN else 'hidden'};
@@ -129,9 +136,46 @@ html,body{{background:{'var(--cream)' if OPEN else '#f6e9df'}}}
 <div class="btns">{SP.buttons(112, 50, 54)}</div>
 </body></html>"""
 
+# STORY: group = card (y 22..1303) + X/heart row (centre on the card's bottom edge, 112px) = y 22..1359 in slide px.
+SK = 0.975; GH = (CY + CH + 56) - CY; GTOP = round(915 - GH * SK / 2)   # centre of the safe band 250..1580 is y 915
+def story_page(n, inner):
+    tx = 540 - 540 * SK; ty = GTOP - CY * SK
+    return f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 1920, S['col'])}
+html,body{{background:#f6e9df}}
+.card{{position:absolute;left:{CX}px;top:{CY}px;width:{CW}px;height:{CH}px;background:#fff;border-radius:38px;overflow:hidden;
+  box-shadow:0 26px 60px rgba(5,40,90,.18),0 4px 12px rgba(5,40,90,.09)}}
+.bars{{position:absolute;left:24px;right:24px;top:20px;display:flex;gap:9px;z-index:3}}
+.bars i{{flex:1;height:7px;border-radius:4px}}
+.sign{{position:absolute;left:0;right:0;bottom:78px;display:flex;justify-content:center;align-items:center;gap:12px}}
+.sign img{{width:200px}}
+.sign span{{font:700 16px Bit;letter-spacing:.22em;text-transform:uppercase;color:#c8325f;padding-top:4px}}
+.btns{{position:absolute;left:0;right:0;top:{CY + CH - 56}px;display:flex;justify-content:center;align-items:center;gap:120px}}
+</style></head><body>
+<div style="position:absolute;right:-230px;top:-250px;width:720px;height:720px;border-radius:50%;background:#f9dccf"></div>
+<div style="position:absolute;left:-220px;bottom:-260px;width:640px;height:640px;border-radius:50%;background:#efdccd"></div>
+<div id=grp style="position:absolute;left:0;top:0;width:1080px;height:1350px;transform:translate({tx}px,{ty}px) scale({SK});transform-origin:0 0">
+<div class="card">{inner}
+ <div class="sign"><img src="{url('assets/brand/mahjmatchmaker-wordmark-notag.png')}"><span>Dating profile</span></div>
+</div>
+<div class="btns">{SP.buttons(112, 50, 54)}</div>
+</div>
+</body></html>"""
+
 async def main():
     async with async_playwright() as p:
-        b = await p.chromium.launch(); pg = await b.new_page(viewport={'width': 1080, 'height': 1350}, device_scale_factor=2)
+        b = await p.chromium.launch(); pg = await b.new_page(viewport={'width': 1080, 'height': 1920 if STORY else 1350}, device_scale_factor=2)
+        if STORY:
+            for n in range(1, 7):
+                hp = f'{TMP}/story-{n}.html'; open(hp, 'w').write(page(n))
+                await pg.goto('file://' + hp); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready')
+                png = f'{TMP}/story-{n}@2x.png'; await pg.screenshot(path=png)
+                Image.open(png).convert('RGB').resize((1080, 1920), Image.LANCZOS).save(f'{OUT}/story-{n}.jpg', quality=93)
+            # slide 7: intro.py's plain graphic, rendered at 2x and fitted into the safe band
+            await pg.set_viewport_size({'width': 1080, 'height': 1350})
+            await pg.goto('file://' + H + '/intro-7.html'); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready')
+            png = f'{TMP}/story-7-src@2x.png'; await pg.screenshot(path=png); await b.close()
+            sys.path.insert(0, R + 'scripts/social/its_a_match'); import story_frames as SF
+            SF.fit(png, f'{OUT}/story-7.jpg', 'intro'); return
         for n in range(2 if OPEN else 1, 7):
             hp = f'{TMP}/framed-{n}.html'; open(hp, 'w').write(page(n))
             await pg.goto('file://' + hp); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready')
