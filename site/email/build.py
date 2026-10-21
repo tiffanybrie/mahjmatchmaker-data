@@ -21,6 +21,8 @@ FYM_HTML = 'Find&nbsp;<em>Your</em> Mat&#8209;ch&trade;'  # non-breaking hyphen:
 FYM = 'Find <em>Your</em> Mat-ch'
 CODE = 'Use code <b>MAHJMATCH</b> to save 💕'
 SIGN = 'Happy mat-ching!<br>xo, Tiffany'
+FEEDBACK = f'{SITE}/find-your-mat-ch-feedback'  # hidden page, form notifications -> mahjmatchmaker@gmail.com, Gmail label Site/FYM feedback (Claude handles)
+CDN_IMG = ''  # set to the pinned jsDelivr folder for Squarespace; empty = local relative paths for previews
 
 EMAILS = [
     {
@@ -28,19 +30,28 @@ EMAILS = [
         "name": "Launch: Find Your Mat-ch is here",
         "kind": "campaign",
         "when": "Tue Oct 27, 9:30am CT, one send",
-        "to": "the one site mailing list (notify-me form + Save my spot + homepage signup all feed it)",
-        "subject": "It's here!!! Find Your Mat-ch™ is live 💕",
+        "to": "All subscribers (homepage signup, notify-me form and form subscribers all land there)",
+        "subject": "It's here! Find Your Mat-ch™ is live 💕",
         "preview": "Pick your tiles, swipe your mats, meet your match.",
-        "pill": "NEW · FIND YOUR MAT-CH",
-        "h1": 'It&rsquo;s here!!! 🎉',
-        "hero": "assets/fym-launch-fan.jpg",
+        "h1img": "hl-launch-h1",
+        "hero": "hero",
         "paras": [
-            f'You asked me to tell you the minute it opened, so here it is: <b>{FYM_HTML}</b> is officially live!',
-            'Start with your tiles (or the mat you already love), then swipe through the mats and racks I&rsquo;d pair with them. Tap &hearts; on the ones you love and save your favorite as a match card to send to your mahj group.',
+            f'This is a new tool I&rsquo;m rolling out just for you: <b>{FYM_HTML}</b>. This time I&rsquo;m stepping out of the matchmaker seat, and it&rsquo;s your turn to find your match.',
+            'My picks are baked right in, so you&rsquo;re never swiping alone.',
+        ],
+        "steps_head": "hl-launch-how",
+        "steps": [
+            'Start with the tiles you own, or flip it and start with the mat you already love.',
+            'Tap &hearts; on the mats you love and &#10005; on the ones that aren&rsquo;t the one.',
+            '&ldquo;Showing: Tiffany&rsquo;s picks only&rdquo; means you&rsquo;re seeing my own matches for your set. Tap it to see every mat, and tap again to bring my picks back.',
+            'Tap a color dot to narrow the mats to one color. Tap it again to clear it.',
+            'Every couple needs a wingman. Swipe racks the same way, with my rack picks first.',
+            'Pick your view, then save it or send it to your mahj group. Every piece is linked.',
         ],
         "button": ("Start swiping", f"{SITE}/find-your-match"),
         "after": [
-            f'Want my own picks? My <a href="{SITE}/mahjong-tile-matches">tile set albums</a> are packed with my favorite mat and rack matches, with new albums all the time.',
+            'Hope you love it!',
+            f'Something look off or have an idea? <a href="{FEEDBACK}">Tell me here &rarr;</a>',
             CODE,
         ],
     },
@@ -52,14 +63,14 @@ EMAILS = [
         "to": "each new subscriber",
         "subject": "Welcome to Mahj Matchmaker! 💕",
         "preview": "Three fun places to start, plus a few of my favorite reads.",
-        "h1": "Hi, I&rsquo;m Tiffany!",
+        "h1img": "hl-welcome-h1",
         "paras": [
             'I&rsquo;m so glad you&rsquo;re here! I match mahjong tiles with the mats and racks that make them shine, so your table comes together just the way you dreamed.',
-            '<b>Three fun places to start:</b>',
         ],
+        "list_head": "hl-welcome-start",
         "list": [
-            f'<a href="{SITE}/find-your-match">{FYM_HTML}</a>: start with your tiles or your mat and swipe.',
-            f'<a href="{SITE}/mahjong-tile-matches">My tile set albums</a>: my favorite mat and rack matches for each set.',
+            f'<a href="{SITE}/find-your-match">{FYM_HTML}</a>: start with your tiles or your mat and swipe, with my picks built right in.',
+            f'<a href="{SITE}/mahjong-tile-matches">My tile set albums</a>: a match card for every mat and rack I&rsquo;ve paired with each set.',
             f'<a href="{SITE}/mahjong-discount-codes">The discount codes page</a>: every partner brand that takes our code.',
         ],
         "button": ("Start swiping", f"{SITE}/find-your-match"),
@@ -81,7 +92,7 @@ EMAILS = [
         "to": "the person who sent the request",
         "subject": "Got it! Your album request is in 💕",
         "preview": "The most-asked-for sets get matched first.",
-        "h1": "Thank you for your request!",
+        "h1img": "hl-request-h1",
         "paras": [
             'I keep a running tally of every request, and the most-asked-for sets get matched first. When yours goes live, you&rsquo;ll be the first to know.',
             f'While you wait, try <b>{FYM_HTML}</b> to see the mats and racks I&rsquo;d pair with your set. Don&rsquo;t see your set in the catalog yet? Shop by color and pick a similar colorway, and you&rsquo;ll find plenty of matches to swoon over.',
@@ -97,7 +108,7 @@ EMAILS = [
         "to": "the person who sent the request",
         "subject": "Good news, it's already in our library!",
         "preview": "Your set already has an album, right this way.",
-        "h1": "Great taste!",
+        "h1img": "hl-exists-h1",
         "paras": [
             '<b>[Tile set]</b> already has an album, packed with the mats and racks I&rsquo;d pair with it.',
         ],
@@ -112,7 +123,7 @@ EMAILS = [
         "to": "everyone who requested that set",
         "subject": "Your [tile set] matches are here! 🎉",
         "preview": "You asked, I matched!",
-        "h1": "You asked, I matched!",
+        "h1img": "hl-live-h1",
         "paras": [
             'The <b>[Tile set]</b> album is live, with all the mats and racks I&rsquo;d pair with it.',
         ],
