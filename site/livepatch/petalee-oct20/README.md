@@ -18,3 +18,9 @@
 
 ## Live step
 None yet. The album page is built after she orders the cards and OKs the racks (doc 86 steps 6–7). Then follow the Papaya page steps (`site/livepatch/papaya/README.md`) with `scripts/albumcard/oct20/album_block.py`. A Virora Petalée tile-set shop URL is also needed for the hero button, since none is in our data.
+
+## Oct 21: waiting on her one tap (still NOT live)
+- Checked: no approval anywhere. RTS `ship` has only `l-petalee-swipe` ("I already finished", the swipe), HQ need `petalee-swipe` was closed with "album build paused until after launch", and no `l-final-petalee` existed. The live URL 404s.
+- RTS: the stale "Finish swiping Petalée" item was replaced in place by **`l-final-petalee`** "Petalée album: approve your 61 cards" (card group `c5-petalee`, cover + 61 cards as RTS assets, contact sheet `qa/contact-sheet.jpg` as the item image). It is #2 in `NOW`. Looks good = approve the draft order, tile racks (MMSIO, B&B Lavender, PLM Chartreuse) and per-mat racks; the 5 starred-skips and Boots & Bubbles Periwinkle stay out unless she names them.
+- HQ: need `petalee-swipe` reopened as "Approve the Petalée album (61 cards)", This week, due Fri Oct 23. `hq/albums` has a Petalée row (owner tiffany).
+- Before publishing after her yes (our job): re-render only if the 10% band sweep hasn't reached these cards (Amanda Toppe cards say 20%, Girly/RMS says 15%); look for cleaner Petalwing/Coralia photos (ruler mark) and a better Pink Floral Chinoiserie; independent QA on the contact sheet; then the Papaya page steps with `scripts/albumcard/oct20/album_block.py`. Still need a Virora Petalée shop URL for the hero button.
