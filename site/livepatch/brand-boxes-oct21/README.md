@@ -1,6 +1,6 @@
 # Brand-page boxes (Oct 21, Tiffany 10:20pm + correction 10:31pm)
 
-Not live yet: Chrome was not reachable. Publish steps are in docs/DESK.md.
+**LIVE Oct 21, ~11:20pm ET** (one Chrome driver, CodeMirror edits, each page curl-verified): chambray headshot + no-italic headline CSS on all 32 brand pages (incl. unlinked /bird-and-bamboo-discount-code-2); B&B discount pages have no Weathered Oak / Clear Stain and carry "Every color comes standard or scalloped."; /bird-and-bamboo-rack-colors has no wood swatches, the Wood looks note and the standard-or-scalloped line; the Oh My Mahjong page's schema.org Person image is the chambray photo. Her original intro wording stayed. Still open: the rack-colors Squarespace page SEO title ("All 94 Paint Colors & Stains") and the "94 colors and stains" hero/intro lines on the B&B discount pages (her call); no redirect added for -2 (told not to).
 
 ## What she asked for (and only this)
 1. Right profile photo (chambray) on every brand page box.
