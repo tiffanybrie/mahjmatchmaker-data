@@ -58,8 +58,8 @@ ALBUMS = [
 ]
 FAQ = [
     ('Who picks the matches?',
-     'Tiffany&rsquo;s picks are built right in. While the button says <b>Showing: Tiffany&rsquo;s picks only</b>, every mat you see is her own match for your set. Tap it to swipe the whole library and make your own&nbsp;matches.'),
-    ('I already have a mat. Can I start there?',
+     'Tiffany&rsquo;s picks are built right in. While the button says <b>Tiffany&rsquo;s picks: on</b>, every mat you see is her own match for your set. Tap it to swipe the whole library and make your own&nbsp;matches.'),
+    ('I already have a mat. Can I start&nbsp;there?',
      'Yes. Tap <b>I have a mat</b> and swipe through tile sets that match it, then add&nbsp;racks.'),
     ('How do I save?',
      'Use code <b>MAHJMATCH</b> to save at 30+ partner brands. Your match card links every piece, and each brand&rsquo;s code page has the&nbsp;details.'),
