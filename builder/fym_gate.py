@@ -51,6 +51,7 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
  25 m contains every swipe-book yes (builder/fym_flags/swipe_yeses_map.json)   26 Holiday chip   27 Start over   28 Photo coming soon card
  8b colour-chip order: sh (measured share) lines up with mf; CSORT (single chip) = lead > ONE list by score (share + 20 if primary),
     checked by running CSORT in node over every chip colour
+ 37 (Oct 22) rack screen like the mat screen: picker under the mat, suitors at the bottom, one picks toggle, Back on racks
  36 (Oct 22) rack picks per (set, mat): every pairing = the mat's own picks (config/mat-racks-picks.json) first, then the tile set's
     racks, plus every rack on a structured album card for that pairing; every registry mat/rack resolves; D.lm matches the registry
 """
@@ -442,7 +443,7 @@ try:
 except Exception as e_: F.append(f"[22] mat-door check could not run: {e_} {_r.stderr[-300:]}")
 # 23 racks tray (2 slots, x to remove, swap via suitors), one card design in 3 sizes, code line, save/share (no press-and-hold)
 _tr = fn('tray')
-if 'class="slots"' not in _tr or 'data-rx=' not in _tr or '2 of 2' not in _tr or 'Rack suitors' not in _tr: F.append("[23] racks tray is not the 2-slot tray with x and Rack suitors")
+if 'class="slots"' not in _tr or 'data-rx=' not in _tr or '2 of 2' not in _tr or 'Rack suitors' not in fn('rSuitors') or 'data-rp=' not in fn('rSuitors'): F.append("[23] racks tray is not the 2-slot tray with x + Rack suitors tray (bottom, Oct 22)")
 if "if(S.rpick.length>=2){toast(" not in UI or "S.rpick.shift()" in UI: F.append("[23] a 3rd rack can push one out of the tray without x (max 2, swap via x)")
 _rr = fn('renderRacks')
 if "head(3,'Pick 2 racks'" not in _rr or _rr.find("tray('r')") > _rr.find("deck('r')") or 'Browsing racks' not in fn('deck'): F.append("[23] racks step: 'Pick 2 racks' up front / tray above the browsing deck / Browsing label missing")
@@ -543,6 +544,16 @@ for s in D['sets']:
         if cur != _rp_want[(s['slug'], e[0])]: _rp_bad.append(f"{s['slug']} + {M.get(e[0], {}).get('n', e[0])}")
 if _rp_bad: F.append(f"[36] {len(_rp_bad)} pairings' racks are not mat picks first + tile racks (run builder/fym_fix_oct22/rack_picks.py): " + '; '.join(_rp_bad[:8]))
 if any((D.get('lm') or {}).get(k) != v for k, v in _rp_lm.items()): F.append("[36] D.lm is missing or differs from config/mat-racks-picks.json")
+
+# 37 rack screen like the mat screen (Tiffany Oct 22 desktop notes 1-3): picker under the mat, rack suitors at the bottom,
+# ONE Tiffany's picks toggle (the filter row's), Back above the rack deck
+_rr = UI[UI.find('function renderRacks('):UI.find('function renderAll(')]
+for need_, why_ in (("tray('r')+filters('r')+`<div class=\"backrow\">${rBackBtn()}</div><div class=\"cmp\">${deck('r')}</div>`+acts('r')+rSuitors()", "rack screen order: mat, picker, filters, Back, deck, X/heart, suitors at the bottom"),
+                    ('data-back="r"', "Back button on the rack deck")):
+    if need_ not in (_rr if 'tray(' in need_ else UI): F.append(f"[37] {why_} missing")
+if "herBar('r')" in _rr: F.append("[37] second Tiffany's picks toggle (herBar) still on the rack screen")
+if "return kk==='m'&&herUseful(kk)?`<button type=\"button\" class=\"hb\"" not in UI: F.append("[37] the pill over the rack photo is still a picks toggle (keep one toggle on racks)")
+if 'class="rsug"' in UI[UI.find('function tray('):UI.find('function tileView(')]: F.append("[37] rack suitors still inside the top picker")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")

@@ -158,6 +158,10 @@ run('Tiles door', () => {
   const sug = buttons(rt).find(b => 'data-rp' in b.a);
   if (!sug) fail('Osler: third hearted rack not in Rack suitors');
   else { click(sug.a); if (S.rpick.includes(sug.a['data-rp'])) fail('Osler: tapping a suitor with 2 of 2 replaced a rack without x'); click({ 'data-rx': S.rpick[0] }); click(sug.a); if (!S.rpick.includes(sug.a['data-rp']) || S.rpick.length !== 2) fail('Osler: x then tap did not swap the rack in'); }
+  // Oct 22: Back on racks (Tiffany: "a missed rack is gone for good")
+  const rh0 = S.rhist.length, rb = H('s-racks');
+  if (!/data-back="r"/.test(rb) || /data-back="r" disabled/.test(rb)) fail('Osler: no enabled Back button above the rack deck after swiping');
+  else { click({ 'data-back': 'r' }); if (S.rhist.length !== rh0 - 1) fail('Osler: rack Back did not bring the last rack back'); }
   if (X.codeLine) { const c = X.codeLine(); if (c && !/ to save$/.test(c)) fail(`card code line "${c}" does not end "to save"`); }
   // start over from the top logo (confirm sheet because there is a shortlist)
   const n0 = appended.length; click({ id: 'logo' });
