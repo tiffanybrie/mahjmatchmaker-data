@@ -1,51 +1,58 @@
 """Find Your Mat-ch TUTORIAL images v2 (Tiffany Oct 21 3:56pm: "not idiot-proof enough"): one step per block, big real
-v70 screens, callout pills (Caprasimo, brand colours) with pink arrows pointing at the real UI. Captions stay live text.
+v72 screens, callout pills (Caprasimo, brand colours) with pink arrows pointing at the real UI. Captions stay live text.
 
   PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers python3 scripts/fym_promo/render2.py [/dev/shm/fymh/v2]
 Input: capture2.py full-page @3x shots. Output:
-  assets/site/fym-tutorial/tut1..5.webp   page (1000 wide)
-  site/email/assets/fym/tut1..5.jpg       email (560 wide, light)
-  site/email/assets/fym/hl-tut1..5.png    email step-title images
+  assets/site/fym-tutorial/tut1..6.webp   page (1000 wide)
+  site/email/assets/fym/tut1..6.jpg       email (560 wide, light)
+  site/email/assets/fym/hl-tut1..6.png    email step-title images
   scripts/fym_promo/tutorial.json         titles, captions, alt text (one source for page + email)"""
 import asyncio, os, sys, json
 from PIL import Image
 
 R = '/home/claude/mahjmatchmaker-data'
-SRC = sys.argv[1] if len(sys.argv) > 1 else '/dev/shm/fymh/v2'
+SRC = sys.argv[1] if len(sys.argv) > 1 else '/dev/shm/fymh/v3'
 TMP = '/dev/shm/fymh/r2'
 PG = f'{R}/assets/site/fym-tutorial'
 EM = f'{R}/site/email/assets/fym'
 NAVY, ROSE, HEART, CREAM = '#054689', '#c8325f', '#f56c8c', '#faf3ea'
 FONT = f"@font-face{{font-family:Cap;src:url('file://{R}/assets/fonts/Caprasimo.ttf')}}"
 
-# (screen, crop y0..y1 in page CSS px, labels: (text, colour, band, target x, target y))
+# v72 (Oct 21 night): 6 steps from capture2.py (live v72 flow). Each step = one or more PARTS stacked into one image:
+# (crop y0..y1 in page CSS px, labels: (text, colour, band, target x, target y)). Top-band arrows land on the control's top edge,
+# bottom-band arrows on its bottom edge (targets read from /dev/shm/fymh/v3/rects.json; check each image by eye).
 STEPS = [
-    dict(title='Pick your door', screen='doors', crop=(0, 360),
-         caption='Start with the tiles you own, or start with the mat you already love.',
+    dict(title='Pick your door', screen='doors',
+         caption='Start with the tiles you own, or start with the mat you already&nbsp;love.',
          alt='The Find Your Mat-ch start screen. Arrows point to the two doors: I have tiles, and I have a mat.',
-         labels=[('Start with your tiles', NAVY, 'bottom', 104, 346), ('Or start with your mat', ROSE, 'bottom', 286, 346)]),
-    dict(title='Here&rsquo;s what these buttons do', screen='swipe', crop=(312, 1110),
-         caption='Tap &hearts; to add a mat to your shortlist and &#10005; to skip it. My picks show first; tap the pink button to see every mat. Tap a color dot to shop by color, and tap it again to clear it.',
-         alt='Swiping mats for Papaya Spritz tiles, with the Heiress mat on screen. Arrows point to the Tiffany’s picks button (turn my picks on or off), the color dots (shop by color), the X button (not for me) and the heart button (love it, add to my shortlist).',
-         labels=[('Turn my picks on or off', ROSE, 'top', 123, 341), ('Shop by color', NAVY, 'top', 362, 341),
-                 ('Not for me', NAVY, 'bottom', 156, 1071), ('Love it! Add to my shortlist', ROSE, 'bottom', 230, 1071)],
-         email=[((312, 372), [('Turn my picks on or off', ROSE, 'top', 123, 341), ('Shop by color', NAVY, 'top', 362, 341)]),
-                ((1034, 1110), [('Not for me', NAVY, 'bottom', 156, 1071), ('Love it! Add to my shortlist', ROSE, 'bottom', 230, 1071)])]),
-    dict(title='Your shortlist', screen='shortlist', crop=(960, 1200),
-         caption='Every mat you &hearts; collects at the bottom, so you can compare. When you&rsquo;re ready, tap Mock your&nbsp;match.',
-         alt='The shortlist bar at the bottom of the swipe, holding two loved mats. Arrows point to the shortlist and to the Mock your match button.',
-         labels=[('Your shortlist: every mat you ♥', ROSE, 'bottom', 135, 1148), ('Mock up your match', NAVY, 'bottom', 322, 1148)]),
-    dict(title='Mock up your match', screen='racks', crop=(1320, 2120),
-         caption='Swipe racks the same way, with my rack picks first. When you love one, tap Make it&nbsp;official.',
-         alt='The mock-up step: Papaya Spritz tiles on the Heiress mat with Tiffany’s rack match, Middle & Main Scalloped Beechwood. Arrows point to the rack and to the X and heart buttons for swiping racks.',
-         labels=[('Your tiles + mat, together', NAVY, 'top', 110, 1400), ('Swipe racks: ✕ or ♥', ROSE, 'bottom', 195, 2085)],
-         email_alt='The racks step: Tiffany\u2019s rack match, Middle & Main Scalloped Beechwood, with arrows to the rack and to the X and heart buttons for swiping racks.',
-         email=[((1792, 2120), [('My rack pick', NAVY, 'top', 230, 1860), ('Swipe racks: ✕ or ♥', ROSE, 'bottom', 195, 2085)])]),
-    dict(title='Save and share', screen='card', crop=(2362, 3020),
-         caption='Pick your view, then save your match card or send it to your mahj group. Every piece is linked, with code&nbsp;MAHJMATCH.',
-         alt='The finished match card for Papaya Spritz on Heiress with Beechwood racks. Arrows point to the view buttons and to Save or share my match card.',
-         labels=[('Pick your view', NAVY, 'top', 195, 2388), ('Save it or share it', ROSE, 'bottom', 195, 2986)],
-         email=[((2362, 2800), [('Pick your view', NAVY, 'top', 195, 2388)]), ((2940, 3012), [('Save it or share it', ROSE, 'bottom', 195, 2986)])]),
+         parts=[((0, 360), [('Start with your tiles', NAVY, 'bottom', 104, 345), ('Or start with your mat', ROSE, 'bottom', 286, 345)])]),
+    dict(title='Here&rsquo;s what these buttons do', screen='swipe',
+         caption='Tap &hearts; to love a mat and &#10005; when it&rsquo;s not the one. Swiped too fast? &larr;&nbsp;Back brings it back. My picks show first; tap Tiffany&rsquo;s picks to see every mat. Tap a color or Holiday to narrow the mats, and tap it again to clear&nbsp;it.',
+         alt='Swiping mats for Papaya Spritz tiles, with the Haven mat by Britt Mills on screen. Arrows point to the Tiffany’s picks button (my picks on or off), the Holiday and color buttons, the Back button (brings the last mat back), the X button (not the one) and the heart button (love it).',
+         parts=[((365, 425), [('My picks on or off', ROSE, 'top', 90, 380), ('Holiday + colors', NAVY, 'top', 332, 381)]),
+                ((515, 1174), [('&larr; Back brings one back', NAVY, 'top', 335, 591),
+                               ('&#10005; Not the one', NAVY, 'bottom', 156, 1150), ('&hearts; Love it', ROSE, 'bottom', 230, 1152)])],
+         email=[((365, 425), [('My picks on or off', ROSE, 'top', 90, 380), ('Holiday + colors', NAVY, 'top', 332, 381)]),
+                ((562, 618), [('&larr; Back brings one back', NAVY, 'top', 335, 591)]),
+                ((1095, 1174), [('&#10005; Not the one', NAVY, 'bottom', 156, 1150), ('&hearts; Love it', ROSE, 'bottom', 230, 1152)])]),
+    dict(title='Your shortlist', screen='swipe',
+         caption='Every mat you &hearts; waits at the bottom, so you can compare. When you&rsquo;re ready, tap Next: add&nbsp;racks.',
+         alt='The shortlist bar under the swipe buttons, holding two loved mats. Arrows point to the shortlist and to the Next: add racks button.',
+         parts=[((1095, 1258), [('Your shortlist', ROSE, 'bottom', 109, 1235), ('Next: add racks', NAVY, 'bottom', 322, 1236)])]),
+    dict(title='Pick 2 racks', screen='racks',
+         caption='Tap the suitor you love most, then swipe racks the same way, with my rack picks first. Your first two &hearts; fill your rack slots; tap &times; to swap one. Then tap Make it&nbsp;official.',
+         alt='The racks step for Papaya Spritz on Heiress. Arrows point to the heart button for swiping racks, to Your racks holding Beechwood and Coral (tap × to swap), and to the Make it official button.',
+         parts=[((2350, 2448), [('Swipe racks the same way', ROSE, 'bottom', 230, 2420)]),
+                ((1830, 2050), [('Your 2 racks: tap &times; to swap', NAVY, 'top', 115, 1893), ('Make it official &hearts;', ROSE, 'bottom', 195, 2035)])]),
+    dict(title='Make it official', screen='card',
+         caption='Pick your view and your size: Story, Post or Pin. Then save your match card or share it with your mahj&nbsp;group.',
+         alt='The finished match card: Papaya Spritz tiles on the Heiress mat with Beechwood and Coral racks. Arrows point to the view buttons (Love triangle or Mood board), the size buttons (Story, Post or Pin) and Save / Share my match card.',
+         parts=[((2570, 2680), [('Pick your view', NAVY, 'top', 104, 2600), ('Story, Post or Pin size', ROSE, 'bottom', 195, 2671)]),
+                ((2684, 3205), [('Save or share it', ROSE, 'bottom', 195, 3186)])]),
+    dict(title='Use code MAHJMATCH to save', screen='card',
+         caption='Every piece on your card is linked. Use code MAHJMATCH to save with our partner brands; each brand&rsquo;s code page has the&nbsp;details.',
+         alt='The bottom of the match card, with the line Use code MAHJMATCH to save, and the Take them home list. Arrows point to the code line and to a Shop button.',
+         parts=[((3070, 3318), [('Use code MAHJMATCH to save', NAVY, 'top', 195, 3121), ('Shop every piece', ROSE, 'bottom', 345, 3282)])]),
 ]
 
 W = 1000
@@ -112,16 +119,17 @@ async def go():
             await pg.locator('#c').screenshot(path=f'{TMP}/tut{tag}.png'); await pg.close()
             return Image.open(f'{TMP}/tut{tag}.png').convert('RGB')
 
+        async def stack(i, s, parts, sfx):
+            ps = [await part(f'{i}{sfx}{j}', s['screen'], c, l) for j, (c, l) in enumerate(parts)]
+            im = Image.new('RGB', (W, sum(x.height for x in ps)), CREAM); y = 0
+            for x in ps:
+                im.paste(x, (0, y)); y += x.height
+            return im
+
         for i, s in enumerate(STEPS, 1):
-            im = await part(str(i), s['screen'], s['crop'], s['labels'])
+            im = await stack(i, s, s['parts'], 'p')
             im.save(f'{PG}/tut{i}.webp', quality=80, method=6)
-            if s.get('email'):
-                ps = [await part(f'{i}e{j}', s['screen'], c, l) for j, (c, l) in enumerate(s['email'])]
-                em = Image.new('RGB', (W, sum(x.height for x in ps)), CREAM); y = 0
-                for x in ps:
-                    em.paste(x, (0, y)); y += x.height
-            else:
-                em = im
+            em = await stack(i, s, s['email'], 'e') if s.get('email') else im
             ew = 560
             e = em.resize((ew, round(em.height * ew / em.width)), Image.LANCZOS)
             e.save(f'{EM}/tut{i}.jpg', quality=52, optimize=True, progressive=True)
