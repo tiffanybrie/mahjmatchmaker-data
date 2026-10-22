@@ -82,6 +82,7 @@ On HQ in this order. Today = items 1-4.
 
 ## Later / ideas
 - **Color suggestions → album candidates (Tiffany, Oct 22 4:22am, "we'll talk about that"):** after launch, pull the strongest measured color matches from Find Your Mat-ch (sets she has NOT matched yet) into a short swipe list so she can add the good ones to albums. Not before launch (usage).
+- **FYM share prompt + #mahjmatch (Tiffany, Oct 22 4:27am, build SUNDAY with her tutorial feedback, one gate + QA + publish):** (1) one Share button (phone share sheet, already wired); drop the separate FB/Pinterest buttons; (2) tapping Share auto-copies the caption text with #mahjmatch, toast "Caption copied: paste it into your post"; (3) #mahjmatch + mahjmatchmaker.com printed small on the card image itself; (4) prompt line "Share your match on social or with your group. Tag #mahjmatch, we love seeing what you match!"; (5) after launch: reshare "Great match by @..." posts from the hashtag, asking permission first; watch the hashtag in the Monday brand watch.
 - Pinterest single-product ShopMy pins at scale + gift-guide pins ("mahjong gifts under $50"). Tiffany, Oct 21 5:34pm ("flood the zones"). Scale only after the Oct 24 test.
 - Weekly IG brand watch (Mondays, first run Mon Oct 26): follow + favorite new partner/ShopMy brands; handles still needed for Splash of Color, Hip Hip Mahjong, Yellow Mountain Imports, Mahjong Register. CLAUDE.md, Oct 21 5:25pm.
 - Brand alert sign-ups (Bam Bird, Mahjong Row & Co, Charleston Mahjong Club, Middle & Main, Britt Mills, Virora, TdT): need her yes. Q4 plan, Oct 21.
