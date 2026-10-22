@@ -1,5 +1,6 @@
 # Mahj Matchmaker repo: rules for any Claude session (read first)
 
+**THREE CHATS (Oct 22): read docs/CHATS.md first to see which chat you are and what you own.**
 **BRAND GUIDE (Oct 21): read docs/BRAND-GUIDE.md (= Project doc "00a BRAND GUIDE") before writing or designing ANYTHING for the brand: social, blog, Amazon, ShopMy, site copy, FB group, email, graphics. Rules there are settled; don't re-ask. New decisions get added to its changelog the same day.**
 
 **CHECK FOR EXISTING WORK BEFORE BUILDING ANYTHING (Tiffany, Oct 21 1:00pm: "you don't even remember what you've done… we're doing double work").** Before designing or drafting anything, search for what we already made and showed her:
