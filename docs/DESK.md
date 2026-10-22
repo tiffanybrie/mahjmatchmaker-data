@@ -8,6 +8,8 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 
 - [ ] Brand boxes publish (needs Chrome): also swap the OMM page's schema.org Person JSON-LD image to the chambray headshot (she wants one photo site-wide), and 301-redirect /bird-and-bamboo-discount-code-2 → /bird-and-bamboo-discount-code (unlinked duplicate). After publish: visual 390px orphan check on all 32 boxes; update the BRAND-GUIDE 22:20 line to LIVE.
 
+- [ ] **B&B 'standard or scalloped in every color' (Tiffany 10:32pm)**: add the line to (1) FYM rack cards/tray next build, (2) B&B brand page + /bird-and-bamboo-rack-colors (with the brand-box publish), (3) album 'Racks shown' lines on every album that shows a B&B rack (Chrome sweep, batch with the card refresh), (4) future match-card captions + social captions. Links stay 20-inch; never mention 19/21.
+
 ## Tomorrow's top priorities (Thu Oct 22), in order
 Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27, (2) fall content before it expires (Brownstone Bloom), then holiday.
 
