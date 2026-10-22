@@ -22,7 +22,7 @@ FYM = 'Find <em>Your</em> Mat-ch'
 CODE = 'Use code <b>MAHJMATCH</b> to save 💕'
 SIGN = 'Happy mat-ching!<br>xo, Tiffany'
 FEEDBACK = f'{SITE}/find-your-mat-ch-feedback'  # hidden page, form notifications -> mahjmatchmaker@gmail.com, Gmail label Site/FYM feedback (Claude handles)
-CDN_IMG = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@570b99d18977107da6b3be40487d010a95b65171/site/email/assets/fym/' if 'cdn' in sys.argv else ''  # 'cdn' arg = pinned jsDelivr srcs for Squarespace; set to the pinned jsDelivr folder for Squarespace; empty = local relative paths for previews
+CDN_IMG = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@b02e87ae80aa4c7169a3370ef7d1fff54ac4a8d8/site/email/assets/fym/' if 'cdn' in sys.argv else ''  # 'cdn' arg = pinned jsDelivr srcs for Squarespace; set to the pinned jsDelivr folder for Squarespace; empty = local relative paths for previews
 
 EMAILS = [
     {
@@ -39,7 +39,7 @@ EMAILS = [
             'My picks are baked right in, so you&rsquo;re never swiping alone.',
         ],
         "steps_head": "hl-launch-how",
-        "tutorial": True,  # 5 annotated steps from scripts/fym_promo/tutorial.json (render2.py)
+        "tutorial": True,  # 6 annotated steps (v72) from scripts/fym_promo/tutorial.json (render2.py)
         "button": ("Start swiping", f"{SITE}/find-your-match"),
         "after": [
             'Hope you love it!',
