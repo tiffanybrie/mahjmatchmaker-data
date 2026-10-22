@@ -6,6 +6,8 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 
 **Thu Oct 22: Tiffany is mostly unavailable (her 5:11pm call).** Give her nothing to post by hand. Only auto-posts (feed, carousels, plain stories with no stickers, pins). Any reminder post dated Oct 22 becomes an undated draft and moves to a later day. Brand credit goes in Tag people and caption @mentions, not stickers.
 
+- [ ] Brand boxes publish (needs Chrome): also swap the OMM page's schema.org Person JSON-LD image to the chambray headshot (she wants one photo site-wide), and 301-redirect /bird-and-bamboo-discount-code-2 → /bird-and-bamboo-discount-code (unlinked duplicate). After publish: visual 390px orphan check on all 32 boxes; update the BRAND-GUIDE 22:20 line to LIVE.
+
 ## Tomorrow's top priorities (Thu Oct 22), in order
 Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27, (2) fall content before it expires (Brownstone Bloom), then holiday.
 
