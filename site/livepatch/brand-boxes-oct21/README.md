@@ -18,11 +18,13 @@ Her original intro line ("Oh My Mahjong Mahji Mentor instructor...") and all oth
 - Intro: "...from Harbor Blue and Jade to Hot Pink."
 - Most-used: "French Blue, Hot Pink, Dark Navy and Kelly Green are some of my most-used shades."
 - FAQ (visible + JSON-LD): "Neutrals like White, Cream and True Black go with the most sets. French Blue and Hot Pink are my favorite pops of color. Want a wood look? I pair real-wood racks like Peace Love Mahjong Oak or Bam Bird Boutique Walnut."
+- Added: "Every color comes standard or scalloped." (own line before the samples tip). No 19"/21" sizes mentioned; links stay on the 20-inch rack.
 - Kept: rack color library link, Willow / Heritage 2.0 / Solara links, samples tip, verified code line.
 
 ## 3. /bird-and-bamboo-rack-colors (`bb/bird-and-bamboo-rack-colors.before/after.html` = the `.mmrc` region of the code block)
 - 11 tiles removed (102 -> 91): Weathered Oak x2, Almond x2, Tudor, Provincial, Red Mahogany, Dark Walnut, Clear x2, plus the stain "White" (a paint White already sits in Neutrals, so it is dropped, not moved).
 - Wood Stains section replaced by the "Wood looks" note (PLM Oak, Bam Bird Walnut, M&M Scalloped Beechwood); "Wood Stains" chip removed.
+- Intro line adds "Every color comes standard or scalloped."
 - H1 "Every Paint Color"; "94 paint colors and wood stains" -> "dozens of paint colors" (intro + FAQ); pick-a-color FAQ says neutral White/Cream/True Black.
 - Squarespace page SEO fields (title, og/twitter title) still say "All 94 Paint Colors & Stains": change to "Bird & Bamboo Rack Colors: Every Paint Color" in page settings.
 

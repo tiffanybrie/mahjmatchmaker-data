@@ -17,12 +17,14 @@ for slug in ['bird-and-bamboo-discount-code','bird-and-bamboo-discount-code-2']:
     for o,n in P: s=s.replace(o,n)
     t=re.sub(r'<[^>]+>','',s)
     errs=[k for k in ['Weathered','Clear Stain'] if k in s]
-    for k in ['/bird-and-bamboo-rack-colors','/willow-mahjong-tile-matches','/heritage-2-0-mahjong-tile-matches','/solara-mahjong-tile-matches','painted wood samples','MAHJMATCH','Code verified']:
+    for k in ['/bird-and-bamboo-rack-colors','/willow-mahjong-tile-matches','/heritage-2-0-mahjong-tile-matches','/solara-mahjong-tile-matches','painted wood samples','MAHJMATCH']:
         if k not in s: errs.append('missing '+k)
+    if t.count('standard or scalloped')<1 or '19' in re.sub(r'\d{4,}','',t.split('Brand guide')[-1][:0]): errs.append('scalloped')
     if 'Hot Pink.' not in t or 'Dark Navy and Kelly Green' not in t: errs.append('copy')
     print(slug,errs or 'ok'); bad+=bool(errs)
 r=open('bb/bird-and-bamboo-rack-colors.after.html').read()
 e=[w for w in ['Weathered','Almond','Tudor','Provincial','Mahogany','Dark Walnut','Wood Stains','Clear<','94 paint'] if w in r]
 if 'Wood looks:' not in r or 'Peace Love Mahjong Oak' not in r: e.append('note')
+if 'Every color comes standard or scalloped' not in r: e.append('scalloped')
 print('rack-colors',e or 'ok'); bad+=bool(e)
 print('FAIL' if bad else 'ALL OK')

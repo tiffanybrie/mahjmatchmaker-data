@@ -9,7 +9,7 @@ def rep(s,pairs):
         s=s.replace(o,n)
     return s
 # ---- discount pages
-D=[("from Harbor Blue and Jade to Weathered Oak.","from Harbor Blue and Jade to Hot Pink."),
+D=[("<p>Tip: they sell painted wood samples","<p>Every color comes standard or scalloped.</p><p>Tip: they sell painted wood samples"),("from Harbor Blue and Jade to Weathered Oak.","from Harbor Blue and Jade to Hot Pink."),
 ("Weathered Oak, Clear Stain, French Blue and Hot Pink are my most-used shades.","French Blue, Hot Pink, Dark Navy and Kelly Green are some of my most-used shades."),
 ("Weathered Oak and Clear Stain are the most versatile. French Blue and Hot Pink are my favorite pops of color.","Neutrals like White, Cream and True Black go with the most sets. French Blue and Hot Pink are my favorite pops of color. Want a wood look? I pair real-wood racks like Peace Love Mahjong Oak or Bam Bird Boutique Walnut.")]
 for slug in ['bird-and-bamboo-discount-code','bird-and-bamboo-discount-code-2']:
@@ -32,6 +32,7 @@ note='<section><p class="note"><strong>Wood looks:</strong> Bird &amp; Bamboo\'s
 other=[
 ("All 94 Paint Colors and Stains</h1>","Every Paint Color</h1>"),
 ("come in 94 paint colors and wood stains, so you can","come in dozens of paint colors, so you can"),
+("out of your tiles. Use code <strong>MAHJMATCH</strong>","out of your tiles. Every color comes standard or scalloped. Use code <strong>MAHJMATCH</strong>"),
 ('<a href="#stains">Wood Stains</a>',''),
 ("comes in 94 paint colors and wood stains, including metallics.","comes in dozens of paint colors, including metallics."),
 ("A wood stain like Weathered Oak or Clear is the safest choice","A neutral like White, Cream or True Black is the safest choice"),
