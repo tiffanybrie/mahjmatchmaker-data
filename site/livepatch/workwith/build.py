@@ -33,7 +33,7 @@ def _chip(b):
     return f'<span class="lc"><img src="{J}builder/logos/{LOGOS[b]}" alt="{b}" loading="lazy"></span>' if b in LOGOS else f'<span class="lc wm">{b}</span>'
 _chips = ''.join(_chip(b) for b in PARTNERS)
 logos = f'<div class="mq"><div class="mqt">{_chips}<span class="dup" aria-hidden="true">{_chips}</span></div></div>'
-shots = ''.join(f'<figure class="sh"><img src="{J}assets/workwith/{f}" alt="Find Your Match preview: {c}" loading="lazy"><figcaption><b>{i+1}</b> {c}</figcaption></figure>' for i, (f, c) in enumerate(SHOTS))
+shots = ''.join(f'<figure class="sh"><img src="{J}assets/workwith/{f}" alt="Find Your Mat-ch preview: {c}" loading="lazy"><figcaption><b>{i+1}</b> {c}</figcaption></figure>' for i, (f, c) in enumerate(SHOTS))
 heart = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.9 4.5c2.1 0 3.6 1.2 5.1 3 1.5-1.8 3-3 5.1-3 3.9 0 6 3.9 4.5 7.3C19.5 16.4 12 21 12 21z"/></svg>'
 ic_tag = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9zm5-5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>'
 ic_star = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.2l7.1-.6z"/></svg>'
@@ -157,8 +157,8 @@ HTML = f"""<link rel="preconnect" href="https://fonts.googleapis.com"><link href
 <section class="sec">
 <div class="ic">{ic_star}</div>
 <div>
-<h2>Find Your Match, launching October 27</h2>
-<p>Find Your Match is our new swipe-to-match tool. Players start with the tiles they own or the mat they love, swipe through the mats and racks I'd pair with them, and save a match card to share with their mahj group.</p>
+<h2>Find Your Mat-ch™, launching October 27</h2>
+<p>Find <em>Your</em> Mat-ch is our new swipe-to-match tool. Players start with the tiles they own or the mat they love, swipe through the mats and racks I'd pair with them, and save a match card to share with their mahj group.</p>
 <p>There's nothing you need to upload. If your shop runs on Shopify, I pull your catalog in automatically, and your products can be set up for desktop, mobile and the shareable match cards. With a very large line, I curate my favorites so the matching stays focused and every product gets a fair shot.</p>
 <span class="soon">Coming 10.27</span>
 <div class="shots">{shots}</div>
@@ -168,7 +168,7 @@ HTML = f"""<link rel="preconnect" href="https://fonts.googleapis.com"><link href
 <section class="ways" id="ways">
 <h2>Ways we work together</h2>
 <div class="grid">
-<div class="card"><div class="ic">{ic_tag}</div><h3>Affiliate partnership</h3><p>Your partner brand page, a spot on our Discount Codes page, and your products in Find Your Match and my match albums.</p></div>
+<div class="card"><div class="ic">{ic_tag}</div><h3>Affiliate partnership</h3><p>Your partner brand page, a spot on our Discount Codes page, and your products in Find <em>Your</em> Mat-ch and my match albums.</p></div>
 <div class="card"><div class="ic">{ic_star}</div><h3>New releases</h3><p>Let us know what's coming! We love hearing about new products, and we work them into matches and blog articles as they make sense.</p></div>
 <div class="card"><div class="ic">{ic_book}</div><h3>Match albums</h3><p>Partner brands get preference when I choose tile sets for new match albums. Have a set you'd love to see? Let me know.</p></div>
 </div>
@@ -183,9 +183,9 @@ HTML = f"""<link rel="preconnect" href="https://fonts.googleapis.com"><link href
 <h2>FAQ</h2>
 <details><summary>Do you offer paid placements?</summary><p>No. I don't offer any paid placements on the site.</p></details>
 <details><summary>Does every partner brand get a match album?</summary><p>Partner brands are given preference for a match album for at least one tile set in their line. An album isn't guaranteed and often won't be immediate. Which sets get albums is always at my discretion: I weigh market demand, uniqueness, artistic quality and seasonality, plus my own taste. Our readers send album requests all the time, and I keep track of the most-requested sets and weigh that heavily. If there's a set from your line you'd love to see in an album, tell me and I'll do my best to honor it. And yes, a brand can absolutely get more than one album!</p></details>
-<details><summary>Will you review my products on your blog?</summary><p>A first-hand review means I've held it, used it or played with it, so I only write those for products I have in hand. Products can still be recommended on the site for other reasons, like how well they match. My reviews are always honest, but never harsh. I share what I love about a product, plus the helpful details shoppers need to know (like what size tiles a rack fits), so they can choose what's right for them.</p><p>When I really love something, I give it a badge on the site, like "Tiffany's Favorite," Best Value, Most Unique or Rare Edition. Just as "Tiffany's Matches" gives shoppers a confidence boost in Find Your Match, badges are a friendly guidepost through the many products on the market. They're reserved for things I've personally used and truly love.</p><p>But badges aren't the final word. The north star of Mahj Matchmaker is helping shoppers find <em>their</em> perfect set and accessories, not copy mine. So I leave plenty of room around my favorites to share what I genuinely like about other products too. Something that isn't on my own table might be exactly right for someone else's.</p></details>
+<details><summary>Will you review my products on your blog?</summary><p>A first-hand review means I've held it, used it or played with it, so I only write those for products I have in hand. Products can still be recommended on the site for other reasons, like how well they match. My reviews are always honest, but never harsh. I share what I love about a product, plus the helpful details shoppers need to know (like what size tiles a rack fits), so they can choose what's right for them.</p><p>When I really love something, I give it a badge on the site, like "Tiffany's Favorite," Best Value, Most Unique or Rare Edition. Just as "Tiffany's Matches" gives shoppers a confidence boost in Find <em>Your</em> Mat-ch, badges are a friendly guidepost through the many products on the market. They're reserved for things I've personally used and truly love.</p><p>But badges aren't the final word. The north star of Mahj Matchmaker is helping shoppers find <em>their</em> perfect set and accessories, not copy mine. So I leave plenty of room around my favorites to share what I genuinely like about other products too. Something that isn't on my own table might be exactly right for someone else's.</p></details>
 <details><summary>Do you accept product samples?</summary><p>Yes! Many brands send samples for color matching. Sample sets or swatches are very helpful for getting the best color match, but they aren't required for a partnership. If you have a new product launching soon, reach out with the details and we'd be happy to discuss further.</p></details>
-<details><summary>How do players find my products?</summary><p>Through your partner brand page, the Discount Codes page, my tile set albums, Find Your Match, blog articles and our Facebook group, where we share matches and real-life tables.</p></details>
+<details><summary>How do players find my products?</summary><p>Through your partner brand page, the Discount Codes page, my tile set albums, Find <em>Your</em> Mat-ch, blog articles and our Facebook group, where we share matches and real-life tables.</p></details>
 </section>
 
 <section class="hello" id="partner">

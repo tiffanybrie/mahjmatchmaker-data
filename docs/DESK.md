@@ -98,6 +98,7 @@ On HQ in this order. Today = items 1-4.
 ## Log of this rewrite (Oct 21 night)
 - HQ open needs: 16 → 12 (Today 4, This week 6, plus the inbox box and one red LIVE YES moved to Claude). Closed: Mahjong Row/Mini Mahjer amounts (both logged). Parked: launch-week copy (outdated naming), holiday-or-not, ShopMy 5 calls, Amazon old boards. Rewritten: Planoly yes, verified-date OK, email footer address.
 - RTS NOW: hid d-email-templates (5-step tutorial, superseded by the v72 6-step capture), d-fbdesc2, l-partner-email, l-workwith6 (old "Find Your Match" naming) via ship `archived`.
+- RTS NOW (Oct 22): re-worded d-fbdesc2, l-partner-email, l-workwith6 to Find Your Mat-ch™ (™ once; italic Your only in Work With body text) in place, source files in site/livepatch/workwith updated, Work With preview artifact republished, `archived` removed (none had an answer from her). Still open: reopen HQ `launch-copy-oct21`.
 - HQ Albums tab: six groups (Needs your yes / Started, stalled / Claude building / Not started / Banked / Live collapsed) from a new `group` field on each hq/albums item.
 
 See CLAUDE.md.

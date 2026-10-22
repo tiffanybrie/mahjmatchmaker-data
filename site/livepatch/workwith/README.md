@@ -22,7 +22,7 @@ Tested at 390 and 1280 with no sideways scroll. Everything is scoped under `.mmw
   2. Paste the block into a code block.
   3. No form on this page (see the Brands form below).
 - **SEO title:** Work With Mahj Matchmaker | Partner Program for Mahjong Brands
-- **SEO description:** Partner with Mahj Matchmaker: get your own partner brand page, a spot on our Discount Codes page, and your tiles, mats and racks in Find Your Match. Players save with code MAHJMATCH.
+- **SEO description:** Partner with Mahj Matchmaker: get your own partner brand page, a spot on our Discount Codes page, and your tiles, mats and racks in Find Your Mat-ch™. Players save with code MAHJMATCH.
 - **Status:** not live. The live site was not edited.
 - `preview_embedded.html`: the artifact copy, with images embedded as data URIs because the artifact viewer blocks outside images.
 
