@@ -38,6 +38,7 @@ Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27, (2) fall content befo
 5. **Pre-launch homepage block live (Claude, Squarespace).** She said yes on Ready to Ship at 3:22pm (l-navplan-fym). /home-preview has it, but the live homepage doesn't (curl at 9:30pm: no prelaunch block). Next: a Chrome session pastes block v2 (site/livepatch/home-prelaunch-fym/README.md go-live steps), then verifies by curl and Playwright at 390/1280.
 
 ## In progress
+- **OPS, do now (no OK needed, standing authority Oct 22): verified-date refresh on every live brand page** — re-check each code works first, then update the verified line/date; start with Anders Ruff, Britt Mills, Amanda Toppe (Google report). Then make it WEEKLY: a staleness check in the morning cleanup flags any brand page whose verified date is older than 14 days as "overdue, Claude's job".
 
 | Item | Owner | Next step | Target |
 |---|---|---|---|

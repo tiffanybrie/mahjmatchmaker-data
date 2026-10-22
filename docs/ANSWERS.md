@@ -10,3 +10,4 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 - 2026-10-22 13:00 · original · /links page · update Papaya to now available + FYM phones card; weekly refresh from Sunday · done live 1:20pm
 - 2026-10-22 13:32 · original · API credits · use the $200/mo credits, plan for next week · none
 - 2026-10-22 13:39 · original · FYM fixes · start now, she tests over the weekend (not Sunday) · none
+- 2026-10-22 14:51 · original · verified dates + all core recurring jobs · standing authority: never ask her permission for core recurring work (verified refresh, code/link checks, Google report fixes, /links refresh); just do it and log it (CLAUDE.md STANDING AUTHORITY) · HQ codes-2026-10-21 → Claude job
