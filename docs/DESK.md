@@ -81,6 +81,7 @@ On HQ in this order. Today = items 1-4.
 - **Holiday mood boards / Color Me Merry mood board (Nov 5) / Soirée roundup (Nov 4)**: in the Q4 plan (docs/q4-content-plan.md).
 
 ## Later / ideas
+- **NEW SHOPMY BRAND: Rebecca Illustrated, 15% commission (Tiffany, Oct 22 5:01am, "we gotta add her in"). Do after the Sunday reset:** today only Rainbow Row is in (gallery + FYM). (1) Pull her whole mat line into the gallery + FYM pending queue (photo flags, colours measured, her sort rules); (2) every link = a ShopMy link (go.shopmy.us), incl. Rainbow Row; (3) add to the allowed ShopMy brands; (4) Instagram onboarding: verify handle from her site footer, follow + favorite, log in IG-FAVORITES; (5) ShopMy shelf: add her mats; (6) gate + QA before publish.
 - **REMIND TIFFANY: start matching Aurora's racks (her ask, Oct 22 4:48am).** Cute scalloped wood racks, 19" only, $69 (great price for wood). RULE: Claude never uses them in mat-level rack picks (a mat can go with any tiles; 19" won't fit every set). She picks them herself per tile set when she knows the set fits a 19" rack. Bring it up at her next album/match session. Check partner status + IG handle when adding.
 - **FYM Sunday build: Tiffany's desktop test notes (Oct 22 4:44am), one build + gate + QA with the share prompt above:**
   1. **Rack screen layout:** match the mat screen. Picker ("♥ a rack") goes up top under the chosen mat; rack suitors go on the BOTTOM. Today they're swapped and it feels disjointed.
