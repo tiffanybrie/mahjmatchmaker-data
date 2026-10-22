@@ -81,6 +81,15 @@ On HQ in this order. Today = items 1-4.
 - **Holiday mood boards / Color Me Merry mood board (Nov 5) / Soirée roundup (Nov 4)**: in the Q4 plan (docs/q4-content-plan.md).
 
 ## Later / ideas
+- **FYM Sunday build: Tiffany's desktop test notes (Oct 22 4:44am), one build + gate + QA with the share prompt above:**
+  1. **Rack screen layout:** match the mat screen. Picker ("♥ a rack") goes up top under the chosen mat; rack suitors go on the BOTTOM. Today they're swapped and it feels disjointed.
+  2. **One "Tiffany's picks" toggle on the rack screen.** Today there are 3 (top, bottom, over the rack photo); keep one.
+  3. **Back button on racks** (today a missed rack is gone for good).
+  4. **Tutorial runs all the way through:** mats, then Next, then the rack swipe, then Make it official, then the card. The last step is too condensed now.
+  5. **Share card:** our logo + slogan much bigger and readable, partner brand logos bigger ("a brand moment for us and the partner brands").
+  6. **Rename the card formats:** "Love triangle" becomes "Mood board"; "Mood board" becomes "Close up".
+  7. **RACK PICKS DATA BUG (root cause found 4:50am):** every pairing in a set gets the SET's 3 racks (locks sets.<slug>.m), not the racks on that album card. E.g. Amara + Chinoiserie Songbird shows PLM Pink / B&B Kelly Green / MRC tortoise; her Songbird picks (config/mat-racks-picks.json) are PLM Pink, PLM Chartreuse, Mahj Mood Clear, so PLM Chartreuse is missing. Only 26 mats have mat-level picks (D.lm). Fix: rebuild racks per (set, mat) from each album card's real racks, plus mat-racks-picks. Add a gate check that diffs every album card's racks against FYM, so she never has to test pairings. Miss Mahjong Iridescent Opal on Songbird: not in her saved picks; ask her before adding.
+  8. Phone pass still to come from her: hold layout changes 1-2 until her phone notes arrive, if they come before Sunday.
 - **Color suggestions → album candidates (Tiffany, Oct 22 4:22am, "we'll talk about that"):** after launch, pull the strongest measured color matches from Find Your Mat-ch (sets she has NOT matched yet) into a short swipe list so she can add the good ones to albums. Not before launch (usage).
 - **FYM share prompt + #mahjmatch (Tiffany, Oct 22 4:27am, build SUNDAY with her tutorial feedback, one gate + QA + publish):** (1) one Share button (phone share sheet, already wired); drop the separate FB/Pinterest buttons; (2) tapping Share auto-copies the caption text with #mahjmatch, toast "Caption copied: paste it into your post"; (3) #mahjmatch + mahjmatchmaker.com printed small on the card image itself; (4) prompt line, HER FINAL WORDING (4:29am): "Share your match on social or with your group! Tag #mahjmatch, we love to see your matches!"; (5) after launch: reshare "Great match by @..." posts from the hashtag, asking permission first; watch the hashtag in the Monday brand watch.
 - Pinterest single-product ShopMy pins at scale + gift-guide pins ("mahjong gifts under $50"). Tiffany, Oct 21 5:34pm ("flood the zones"). Scale only after the Oct 24 test.
