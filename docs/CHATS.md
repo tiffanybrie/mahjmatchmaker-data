@@ -1,5 +1,7 @@
 # The three chats (Tiffany, Oct 22 1:38pm)
 
+**FIRST STEP FOR EVERY NEW CHAT: the working branch is `partner-catalogs-sqsp`, NOT main.** After cloning tiffanybrie/mahjmatchmaker-data run `git checkout partner-catalogs-sqsp` (CLAUDE.md, docs/, builder/ and everything else live there; main is nearly empty). Commit and push to that branch.
+
 Every chat lives in the claude.ai Project "Mahj Matchmaker" and starts by reading: CLAUDE.md (repo rules), docs/BRAND-GUIDE.md, docs/DESK.md, and this file. Shared memory = the repo (github tiffanybrie/mahjmatchmaker-data), the Project docs, HQ (artifact Cor6pKtesou4mFRQ41P6Ye) and Ready to Ship (RTtaTzgkN2ssmiAP3FxvJF). Anything unfinished goes on DESK.md with its next step.
 
 Usage: weekly limit ~90%+ used until Sun Oct 25 11am ET. Until then: light work only (chat, text edits, Planoly text changes). Heavy work (new images, builds, QA agents, long Chrome jobs) waits for the reset unless Tiffany says go.
