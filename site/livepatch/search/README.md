@@ -1,4 +1,6 @@
-# Site-wide search (Tiffany, Oct 21 2026). STAGED, not live
+# Site-wide search (Tiffany, Oct 21 2026). STAGED, QA passed Oct 22, install pending (Chrome busy)
+
+Oct 22: index refreshed @c6e395f (Kerry, Vivienne, Soiree holiday mats; Mahjong Studios / Four Winds album-only mats excluded), snippet pinned + warmed. QA run by the builder session (a separate agent could not be spawned): Chromium + WebKit at 390/1280 on home, /mahjong-mats, an album, a brand page, /find-your-match: icon visible, burger not displaced, no search-caused sideways scroll (desktop 1494px overflow is the pre-existing nav), all 8 test searches OK, photos load, Esc/Close/Back close, deep link scrolls + pulses, no search console errors, no italic headings.
 
 A search button in the site header (desktop and phone). Type a mat name, a brand ("Sunday Mahjong"), a tile set ("Papaya Spritz"), a colour ("pink"), a theme ("halloween", "leopard") or a code ("MAHJMATCH") and results show instantly with photos.
 
