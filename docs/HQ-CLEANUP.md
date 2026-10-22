@@ -20,6 +20,7 @@ Written Oct 21, 2026, after Tiffany said (1:00pm): "you should be cleaning this 
 `title` (one plain line), `line` (one plain line on what's needed), `link` + `linkLabel` (where she does it; omit when she answers in the HQ box), `when` (`today` | `week` | `box` for the permanent "Anything else" inbox), `order` (number, low first), `light` (`red` today / `yellow` this week / `green`), `due` (optional text like "By Sat Oct 24"), `status`, `showFrom` (ISO date, for parked items that come back), `archivedReason`, `archivedAt`. A need with no `when` falls back to its light: red → Today, yellow → This week.
 
 ## 2. Where the evidence lives (check before keeping OR archiving)
+0. **docs/ANSWERS.md FIRST** (every chat logs her chat answers there, Oct 22). Any HQ/RTS item whose topic has an answer line → close or update it.
 1. **Her answer is already in:** the need's `answer` field and the `answers` collection (HQ); the item's `ship` doc (`v`, `note`, `draft`) on RTS; the HQ `talk` collection; comments on either page (`ArtifactComments`).
 2. **Work done since:** `git log --since=<3 days ago> -i --grep=<topic>` in `/home/claude/mahjmatchmaker-data`; `site/livepatch/<topic>/README.md` (each says STAGED or LIVE); `CLAUDE.md`; `docs/BRAND-GUIDE.md`.
 3. **Social:** Planoly `list_post_groups` (Instagram workspace `019fc27c-0bef-7533-bc3f-030acc19a135` as of Oct 21; Pinterest stays in `019fc27b-964d-7279-8685-1f1bb7a7c3f5`). The plan is `docs/content-strategy-oct-dec.md`. Social items never live on HQ or RTS (see rule 4 below).

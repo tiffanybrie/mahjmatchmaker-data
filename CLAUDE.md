@@ -1,6 +1,7 @@
 # Mahj Matchmaker repo: rules for any Claude session (read first)
 
 **THREE CHATS (Oct 22): read docs/CHATS.md first to see which chat you are and what you own.**
+**ANSWERS LOG (Oct 22, HARD RULE): whenever Tiffany answers, decides or approves anything in chat, append a line to docs/ANSWERS.md and close/update the matching HQ or Ready to Ship item BEFORE you reply to her. Chats can't see each other; this file is how they (and the morning cleanup) know. Before asking her anything, check docs/ANSWERS.md first so you never re-ask.**
 **BRAND GUIDE (Oct 21): read docs/BRAND-GUIDE.md (= Project doc "00a BRAND GUIDE") before writing or designing ANYTHING for the brand: social, blog, Amazon, ShopMy, site copy, FB group, email, graphics. Rules there are settled; don't re-ask. New decisions get added to its changelog the same day.**
 
 **CHECK FOR EXISTING WORK BEFORE BUILDING ANYTHING (Tiffany, Oct 21 1:00pm: "you don't even remember what you've done… we're doing double work").** Before designing or drafting anything, search for what we already made and showed her:
