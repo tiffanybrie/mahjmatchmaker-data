@@ -15,6 +15,16 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 - PAUSED by Claude (enabled:false): HQ Talk inbox (trig_015cSez…), New affiliate onboarding (trig_01C7xPr…), Pinterest autopin (trig_01UsWfw…; queue full through Nov 30), Mahji Mentor 3x (trig_01LC2kw…), Today's sales check 3x (trig_01ErLFa…), Match Builder refresh (trig_01UwvubnW…), Missed computer task watchdog (trig_011puGf…), Daily Google AI answer check (trig_016VJmC…), Daily affiliate income report (trig_01SwPc3…), Weekday morning brief (trig_019JjET…).
 - COULD NOT PAUSE (blocked by the permission check; Tiffany to pause in Scheduled): Hourly brand launch watch (trig_01S2Vsj…), Brand email watch 3x (trig_01Ljz8p…), Google code report daily (trig_01GQHwe…), End-of-day desk cleanup (trig_01WeCbw…), Daily HQ cleanup (trig_01RgaYK…).
 - SUNDAY after reset: re-enable at a lighter pace (daily instead of hourly; routine checks lighter), with her OK.
+- **NEW STANDING CADENCE after Sunday's reset (Tiffany, Oct 22 3:45am: "these were amped up too high… some could go to dailies or twice dailies"):**
+  - Sales: 3x daily (she likes watching sales during the day), ONE task (merge the two sales tasks + morning income report).
+  - Brand watch (websites + brand emails merged): twice daily, morning + evening. Not hourly.
+  - HQ inbox sweep: once daily.
+  - End-of-day desk cleanup: keep nightly (important). Morning HQ cleanup: daily.
+  - Mahji Mentor group: once daily. New-affiliate onboarding: once daily.
+  - Pinterest autopin: low priority, every 3 days (queue is full through Nov 30).
+  - Google code report: a few times a week, not daily (merge the AI answer check into it).
+  - Match Builder refresh: weekly. Watchdog + morning brief: stay off unless she asks.
+  - Rule going forward: when she flags something we missed, fix the CHECK (what it looks at), don't just raise the frequency.
 
 ## Tomorrow's top priorities (Thu Oct 22), in order
 Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27, (2) fall content before it expires (Brownstone Bloom), then holiday.
