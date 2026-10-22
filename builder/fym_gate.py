@@ -407,7 +407,7 @@ else:
 # 17. tool name: Find Your Mat-ch(TM), italic Your, TM once (Oct 21)
 if '<h1 class="ttl">Find Your Mat-ch\u2122</h1>' not in UI: F.append("[17] start-screen title is not plain 'Find Your Mat-ch\u2122' (Tiffany Oct 21 6:30pm: never italic in display type)")
 if re.search(r'<h[12][^>]*>[^<]*<i>', UI) or re.search(r'\.lock \.ttl i\{[^}]*font-style:italic', UI): F.append("[17] italic in a headline (display type is never italic; italics only in running body text)")
-if TXT.count('\u2122') != 1: F.append(f"[17] \u2122 appears {TXT.count(chr(8482))} times in the UI (must be exactly once, on the start-screen title)")
+if TXT.count('\u2122') != TXT.count('Find Your Mat-ch\u2122</h1>') or TXT.count('Find Your Mat-ch\u2122</h1>') < 2: F.append(f"[17] \u2122 must sit only on each door's title (both doors), found {TXT.count(chr(8482))}")
 if re.search(r'(?i)find\s+(<i>)?your(</i>)?\s+match\b', TXT): F.append("[17] old name 'Find Your Match' still in the UI")
 if re.search(r'\.lock \.ttl\{[^}]*text-transform:uppercase', UI): F.append("[17] .lock .ttl is ALL CAPS (brand guide: Title Case)")
 
@@ -500,8 +500,22 @@ for tk_, t_ in T.items():
     if t_.get('hid') or not any(s_['tile'] == tk_ and vis(s_) for s_ in D['sets']): continue
     _pk.setdefault(t_.get('pile'), []).append(t_.get('n') or tk_)
 for k_, ns_ in _pk.items():
-    if k_ and len(ns_) > 1 and str(k_).startswith(('p71', 'p16sundaydec')): F.append(f"[30b] tiles share one picker photo key {k_}: {ns_[:4]}")
-    elif k_ and len(ns_) > 1: print(f"FYM GATE WARNING [30b]: pre-v71 tiles share a picker photo {k_}: {ns_[:4]}")
+    if k_ and len(ns_) > 1: F.append(f"[30b] tiles share one picker photo key {k_}: {ns_[:4]}")
+
+# 31 v72 optional tour + one-time hints (Tiffany Oct 21 6:37/6:38pm): offered once, stored, skippable; dock bounce with a reduced-motion glow
+for need_, why_ in (("function tourOffer(", "first-run tour offer"), ("Want a quick tour?", "tour prompt copy"), ("data-tq-no", "Skip on the prompt"),
+                    ("LS.set('fym_tour'", "tour done/skipped flag"), ("data-tour>Take the tour", "Take the tour link near the top"), ("@keyframes dock", "dock bounce"),
+                    ("prefers-reduced-motion:reduce){.bnc", "reduced-motion glow"), ("hint('back'", "Back hint"), ("hint('picks'", "picks hint"), ("hint('colors'", "colours hint"), ("hint('mock'", "mock-up hint"),
+                    ("try{return localStorage.getItem(k);}catch(e){return null;}", "guarded storage")):
+    if need_ not in UI: F.append(f"[31] tour/hints: {why_} missing")
+# 32 fast swipes are queued (QA v71: swipes < 300ms apart were dropped); a swipe is never half of a double-tap zoom
+if 'decide(k,yes);requestAnimationFrame(' not in fn('fly') or 'setTimeout(()=>decide' in fn('fly'): F.append("[32] the next card waits for the fly animation (fast swipes get dropped)")
+if 'else last=n;' in fn('zoomer') or 'last=(st&&lock===null&&!pinch)?Date.now():0;' not in fn('zoomer'): F.append("[32] a swipe can start a double-tap zoom (double tap must be two taps)")
+# 33 deck tab never covers the card pills (QA v71 at 390: 'BROWSING RACKS' over 'Goes with everything')
+if '.deck:has(.peekbar) .scard .hb' not in UI: F.append("[33] deck tab can overlap the card pill")
+# 34 names / photos from v71 QA
+if re.search(r'Editon', h): F.append("[34] typo 'Editon' (Blue Edition)")
+if 'class="${T[id]?\'tcv\':\'\'}"' not in UI: F.append("[34] tile photo in Take them home can letterbox (Heritage 1.0)")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
