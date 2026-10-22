@@ -1,23 +1,33 @@
-# Brand-page "Why I love" boxes (Oct 21, 10:20pm, Tiffany yes)
+# Brand-page boxes (Oct 21, Tiffany 10:20pm + correction 10:31pm)
 
-Not live yet: Chrome was not reachable, so nothing is published (see docs/DESK.md).
+Not live yet: Chrome was not reachable. Publish steps are in docs/DESK.md.
 
-## Audit (live, cache-busted curl of all 38 *-discount-code pages)
-- 32 pages carry the Tiffany box (class `me`). ALL 32 use the OLD `Tiffany+Headshot.png` (squarespace-cdn). None used the chambray headshot.
-- All 31 non-OMM boxes carry the intro "Oh My Mahjong Mahji Mentor instructor and the matchmaker behind Mahj Matchmaker."
-- Headline italics come from the Squarespace theme's h2 style, not the box HTML. Fix = `.mmbg h1,.mmbg h2,.mmbg h3{font-style:normal}` appended after the `.mmbg .me span{...}` rule in each page's code block.
-- Pages without a box (no change): i-love-mahj, mahjong-co, wren-mats, mahjong-register, lets-be-besties, mahjong-discount-codes.
-- Duplicate page /bird-and-bamboo-discount-code-2 (same title and content; all links point to the non-2 page). Fixed identically; Tiffany may want it deleted/redirected.
+## What she asked for (and only this)
+1. Right profile photo (chambray) on every brand page box.
+2. Bird & Bamboo pages stop promoting wood/stained racks (rule doc 57, Oct 15; Clear Stain dropped too).
+Her original intro line ("Oh My Mahjong Mahji Mentor instructor...") and all other copy are UNCHANGED.
 
-## Changes (per page, in `pages/<slug>.before.html` / `.after.html`)
-1. Headshot -> `https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@efde3ef88b70a8797d97bdcdb8409faafe6bd62c/assets/brand/headshot/tiffany-chambray-headshot-square.jpg` (same pin as About), `object-position:50% 50%` (square is pre-cropped).
-2. Intro -> "Mahjong instructor and the matchmaker behind Mahj Matchmaker." (all but Oh My Mahjong's own page, where the credential is the brand's own and the body text uses it).
-3. Headline italic: CSS line above (page-level, once per code block).
-4. Bird & Bamboo copy tightened (both B&B pages); verified code line, links, "94 paint colors", samples tip untouched.
+## Audit (live curl of 38 *-discount-code pages)
+32 pages carry the box, all with the old `Tiffany+Headshot.png`. Six pages have no box: i-love-mahj, mahjong-co, wren-mats, mahjong-register, lets-be-besties, mahjong-discount-codes. /bird-and-bamboo-discount-code-2 is an unlinked duplicate of the B&B page (fixed identically).
 
-## Apply
-Per page: in the page's code block apply the same three string replacements (img src+style, intro span, CSS line; B&B also the two paragraphs), diff vs live, save, exit, cache-busted curl: new headshot URL, no `<em>` in h2, new copy. `build.py <src dir>` regenerates before/after from live HTML; `qa.py` checks headshot, intro, links unchanged, code line, B&B copy.
+## 1. All 32 pages (`pages/<slug>.before.html` / `.after.html`, regenerate with `build.py <live dir>`)
+- Headshot -> `https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@efde3ef88b70a8797d97bdcdb8409faafe6bd62c/assets/brand/headshot/tiffany-chambray-headshot-square.jpg`, `object-position:50% 50%` (same pin as About).
+- Headline never italic: append `.mmbg h1,.mmbg h2,.mmbg h3{font-style:normal}` after `.mmbg .me span{display:block;font-size:.88em;opacity:.8}` in the page's code block (the italic comes from the theme h2 style). The rack-colors page uses `.mmrc`, so add the same line with `.mmrc`.
 
-## Not rewritten (listed only)
-No copy rewrites beyond B&B. Other boxes were scanned for repeated phrases: nothing obvious automatically, but a human read of Anders Ruff (177 words), Middle & Main (202), Mahj Mood (197), Lets Mahj On (186), Tigre de Tartan (186) would be worthwhile for wordiness.
-Schema.org Person JSON-LD on the Oh My Mahjong page still points at the old Tiffany+Headshot.png (SEO image; left alone).
+## 2. B&B discount pages (`bb/<slug>.replacements.json`, exact old->new pairs; applies to the code block and its FAQ JSON-LD)
+- Intro: "...from Harbor Blue and Jade to Hot Pink."
+- Most-used: "French Blue, Hot Pink, Dark Navy and Kelly Green are some of my most-used shades."
+- FAQ (visible + JSON-LD): "Neutrals like White, Cream and True Black go with the most sets. French Blue and Hot Pink are my favorite pops of color. Want a wood look? I pair real-wood racks like Peace Love Mahjong Oak or Bam Bird Boutique Walnut."
+- Kept: rack color library link, Willow / Heritage 2.0 / Solara links, samples tip, verified code line.
+
+## 3. /bird-and-bamboo-rack-colors (`bb/bird-and-bamboo-rack-colors.before/after.html` = the `.mmrc` region of the code block)
+- 11 tiles removed (102 -> 91): Weathered Oak x2, Almond x2, Tudor, Provincial, Red Mahogany, Dark Walnut, Clear x2, plus the stain "White" (a paint White already sits in Neutrals, so it is dropped, not moved).
+- Wood Stains section replaced by the "Wood looks" note (PLM Oak, Bam Bird Walnut, M&M Scalloped Beechwood); "Wood Stains" chip removed.
+- H1 "Every Paint Color"; "94 paint colors and wood stains" -> "dozens of paint colors" (intro + FAQ); pick-a-color FAQ says neutral White/Cream/True Black.
+- Squarespace page SEO fields (title, og/twitter title) still say "All 94 Paint Colors & Stains": change to "Bird & Bamboo Rack Colors: Every Paint Color" in page settings.
+
+## Left as is, flag to Tiffany
+- Hero/card text on the B&B discount pages still says "94 colors and stains" (hero dek, "20-inch Painted Wooden Racks" card, intro "94 paint colors and stains"). The Oct 18 draft did not cover it; she asked to keep the 94 paint colors wording. Her call.
+- Oh My Mahjong page JSON-LD Person image is still the old headshot.
+
+QA: `python3 qa.py` (passes): headshot swapped, nothing else in the box changed, B&B has no Weathered/Clear Stain and keeps its links, rack-colors has no wood names or "94 paint".

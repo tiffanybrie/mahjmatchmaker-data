@@ -23,9 +23,6 @@ for f in sorted(glob.glob(SRC+'/*-discount-code*.html')):
     # headshot img tag
     after=re.sub(r'<img src="'+re.escape(OLDHS)+r'" style="object-position:50% 22%"','<img src="'+HS+'" style="object-position:50% 50%"',after)
     isOMM=slug=='oh-my-mahjong-discount-code'
-    if not isOMM: after=after.replace(OLDI,NEWI)
-    if slug.startswith('bird-and-bamboo-discount-code'):
-        assert BB_OLD in after; after=after.replace(BB_OLD,BB_NEW)
     assert after.count(HS)==1,slug
     assert CSS_OLD in s,slug
     full=s  # not written; page patch is applied in-browser by the same replacements
