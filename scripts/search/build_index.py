@@ -322,6 +322,8 @@ def main():
         for name, brand, img, shop, ret, pick in cards:
             i = key.get((norm(name), brand_key(brand)))
             hits = [i] if i is not None else fuzzy_mat(R, name, brand)
+            if not hits and re.search(r'mahjong studios|four winds', brand or '', re.I):
+                continue  # removed brands (Tiffany Oct 20): no mat cards/shop links in search either
             if not hits:
                 unmatched += 1
                 e = extra.setdefault((name, brand), {'a': [], 'shop': '', 'ret': ret, 'img': ''})
