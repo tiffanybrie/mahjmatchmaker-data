@@ -81,6 +81,7 @@ On HQ in this order. Today = items 1-4.
 - **Holiday mood boards / Color Me Merry mood board (Nov 5) / Soirée roundup (Nov 4)**: in the Q4 plan (docs/q4-content-plan.md).
 
 ## Later / ideas
+- **Color suggestions → album candidates (Tiffany, Oct 22 4:22am, "we'll talk about that"):** after launch, pull the strongest measured color matches from Find Your Mat-ch (sets she has NOT matched yet) into a short swipe list so she can add the good ones to albums. Not before launch (usage).
 - Pinterest single-product ShopMy pins at scale + gift-guide pins ("mahjong gifts under $50"). Tiffany, Oct 21 5:34pm ("flood the zones"). Scale only after the Oct 24 test.
 - Weekly IG brand watch (Mondays, first run Mon Oct 26): follow + favorite new partner/ShopMy brands; handles still needed for Splash of Color, Hip Hip Mahjong, Yellow Mountain Imports, Mahjong Register. CLAUDE.md, Oct 21 5:25pm.
 - Brand alert sign-ups (Bam Bird, Mahjong Row & Co, Charleston Mahjong Club, Middle & Main, Britt Mills, Virora, TdT): need her yes. Q4 plan, Oct 21.
