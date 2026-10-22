@@ -81,6 +81,7 @@ On HQ in this order. Today = items 1-4.
 - **Holiday mood boards / Color Me Merry mood board (Nov 5) / Soirée roundup (Nov 4)**: in the Q4 plan (docs/q4-content-plan.md).
 
 ## Later / ideas
+- **REMIND TIFFANY: start matching Aurora's racks (her ask, Oct 22 4:48am).** Cute scalloped wood racks, 19" only, $69 (great price for wood). RULE: Claude never uses them in mat-level rack picks (a mat can go with any tiles; 19" won't fit every set). She picks them herself per tile set when she knows the set fits a 19" rack. Bring it up at her next album/match session. Check partner status + IG handle when adding.
 - **FYM Sunday build: Tiffany's desktop test notes (Oct 22 4:44am), one build + gate + QA with the share prompt above:**
   1. **Rack screen layout:** match the mat screen. Picker ("♥ a rack") goes up top under the chosen mat; rack suitors go on the BOTTOM. Today they're swapped and it feels disjointed.
   2. **One "Tiffany's picks" toggle on the rack screen.** Today there are 3 (top, bottom, over the rack photo); keep one.
