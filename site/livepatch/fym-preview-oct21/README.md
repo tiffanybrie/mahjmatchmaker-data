@@ -2,7 +2,7 @@
 
 Tiffany, Oct 21 2:19pm: "you have approval to change whatever needs to happen over on the Find Your Match preview page. I'd like that looking a lot better."
 
-- **Now (block @d68a319 = app v71, Oct 21 evening; before that @4b7f8c9 (H1 "Your" plain Oct 21 6:45pm); LIVE since Oct 21 ~5:15pm: app first, annotated tutorial at the bottom, QA passed):** hidden page `/find-your-mat-ch-preview` (Not Linked). Its only section holds ONE code block; paste `page-block.html` into it.
+- **Now (block @8dd3d49 = app v72, Oct 21 night; before that @d68a319 = app v71; @4b7f8c9 (H1 "Your" plain Oct 21 6:45pm); LIVE since Oct 21 ~5:15pm: app first, annotated tutorial at the bottom, QA passed):** hidden page `/find-your-mat-ch-preview` (Not Linked). Its only section holds ONE code block; paste `page-block.html` into it.
 - **10/27 launch:** the same `page-block.html` replaces the teaser code block on `/find-your-match` (page id `6ad6f62ad05b752bba9d1e8d`, section `6ad6f62ad05b752bba9d1e91`, code block `#block-2da981e143ed2cc4bb76`). This is step 0a in `site/livepatch/launch-oct27/README.md`. It runs before the homepage hero switch, whose step 0 checks that `/find-your-match` no longer says "Coming 10.27".
 
 ## What's on the page
@@ -25,4 +25,4 @@ A static copy of the live artifact `6epA9HuEdT32zUp79Qv3kd` (v69 = build fym-oct
 - `code-block.html`: the previous agent's app-only block (rollback).
 
 ## Publish (Claude in Chrome)
-Your own tab → `https://hexaflexagon-denim-nhf4.squarespace.com/config` → Pages → the page → Edit → double-click the code block → CodeMirror 6: `const v=document.querySelector('.cm-editor .cm-content').cmTile.view; v.dispatch({changes:{from:0,to:v.state.doc.length,insert:html}})`. Get `html` with `await (await fetch('<pinned jsDelivr page-block.html>')).text()`; never retype it. Then Escape, Save, Exit. Verify with curl that the page contains `id="fymx"` and `site-app/fym-v71/index.html` (v71 = full app folder on fym-site-preview @45ed0cb; BASE = the same folder).
+Your own tab → `https://hexaflexagon-denim-nhf4.squarespace.com/config` → Pages → the page → Edit → double-click the code block → CodeMirror 6: `const v=document.querySelector('.cm-editor .cm-content').cmTile.view; v.dispatch({changes:{from:0,to:v.state.doc.length,insert:html}})`. Get `html` with `await (await fetch('<pinned jsDelivr page-block.html>')).text()`; never retype it. Then Escape, Save, Exit. Verify with curl that the page contains `id="fymx"` and `site-app/fym-v72/index.html` (v72 = full app folder on fym-site-preview @ad0675e; BASE = the same folder). Editor tip: after Pages > page > Edit, wait ~8s until the section shows EDIT SECTION on hover, then double-click the block.
