@@ -8,8 +8,11 @@ for f in sorted(glob.glob('albums/*.html')):
     i=h.find('class="mm3"');
     if i<0: print('NO mm3',slug); continue
     body=h[i:]
-    kicker=txt(re.search(r'class="mm3-kicker">(.*?)</p>',body).group(1)) if 'mm3-kicker' in body else ''
-    h1=txt(re.search(r'<h1>(.*?)</h1>',body).group(1))
+    _k=re.search(r'class="mm3-kicker"[^>]*>(.*?)</(?:p|div|span)>',body,re.S)
+    kicker=txt(_k.group(1)) if _k else ''
+    _h=re.search(r'<h1[^>]*>(.*?)</h1>',body,re.S) or re.search(r'<h1[^>]*>(.*?)</h1>',h,re.S)
+    if not _h: print('NO h1',slug); continue
+    h1=txt(_h.group(1))
     tile=re.sub(r'\s*Mahjong Tile Matches$','',h1)
     cover=re.search(r'mm3-hero-img"><img src="([^"]+)"',body)
     cta=re.search(r'class="mm3-cta"><a class="mm3-btn[^"]*" href="([^"]+)"[^>]*>(.*?)</a>',body)

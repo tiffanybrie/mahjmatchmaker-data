@@ -51,6 +51,8 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
  25 m contains every swipe-book yes (builder/fym_flags/swipe_yeses_map.json)   26 Holiday chip   27 Start over   28 Photo coming soon card
  8b colour-chip order: sh (measured share) lines up with mf; CSORT (single chip) = lead > ONE list by score (share + 20 if primary),
     checked by running CSORT in node over every chip colour
+ 36 (Oct 22) rack picks per (set, mat): every pairing = the mat's own picks (config/mat-racks-picks.json) first, then the tile set's
+    racks, plus every rack on a structured album card for that pairing; every registry mat/rack resolves; D.lm matches the registry
 """
 import sys, os, json, re
 import numpy as np
@@ -525,6 +527,22 @@ if os.environ.get('FYM_GATE_SKIP_TOUR') != '1':
     import subprocess as _sp
     _r = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fym_tour_place_check.py'), B], capture_output=True, text=True, timeout=900)
     if _r.returncode != 0: F.append("[35] tour bubble covers its target / target off-screen at 390x664, 390x844 or 1280x800: " + ' '.join(l for l in _r.stdout.splitlines() if 'FAIL' in l)[:600])
+
+# 36 rack picks per (set, mat) (Tiffany Oct 22: Amara + Chinoiserie Songbird showed the SET's racks, missing PLM Chartreuse).
+# Every pairing = the mat's own picks (config/mat-racks-picks.json) first, then the tile set's racks; every rack on a structured
+# album card (manifests/specs) for that pairing is present; every registry mat resolves to an app mat.
+sys.path.insert(0, REPO + 'builder/fym_fix_oct22')
+from rack_picks import expected as _rp_expected
+_rp_lm, _rp_want, _rp_rep = _rp_expected(json.loads(json.dumps(D)))
+for _k in ('unresolved_mats', 'unresolved_racks'):
+    if _rp_rep[_k]: F.append(f"[36] config/mat-racks-picks.json {_k.replace('_', ' ')}: {json.dumps(_rp_rep[_k])[:300]}")
+_rp_bad = []
+for s in D['sets']:
+    for e in s.get('m', []):
+        cur = e[1] if len(e) > 1 else []
+        if cur != _rp_want[(s['slug'], e[0])]: _rp_bad.append(f"{s['slug']} + {M.get(e[0], {}).get('n', e[0])}")
+if _rp_bad: F.append(f"[36] {len(_rp_bad)} pairings' racks are not mat picks first + tile racks (run builder/fym_fix_oct22/rack_picks.py): " + '; '.join(_rp_bad[:8]))
+if any((D.get('lm') or {}).get(k) != v for k, v in _rp_lm.items()): F.append("[36] D.lm is missing or differs from config/mat-racks-picks.json")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
