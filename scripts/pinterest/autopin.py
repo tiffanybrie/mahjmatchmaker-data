@@ -11,9 +11,11 @@ Pins render to assets/social/pinterest/pins/auto/<id>.jpg (1000x1500).
   python3 scripts/pinterest/autopin.py render <id>..  # render pin images (or 'pending' for all pending)
   python3 scripts/pinterest/autopin.py next [N]       # print the next N pending items (respects notBefore)
   python3 scripts/pinterest/autopin.py mark <id> <status> [postGroupId] [scheduledFor ISO]
+  python3 scripts/pinterest/autopin.py cap            # pins per day (UTC + Eastern) from the Planoly snapshot; exit 1 if any day > 4
+  python3 scripts/pinterest/autopin.py snapshot <list_post_groups.json>..   # refresh the snapshot BEFORE scheduling anything in bulk
   python3 scripts/pinterest/autopin.py check          # curl-verify every pending/scheduled link (must be 200)
 
-Rules baked in: our own work only (album covers, our mood boards/graphics, grids of our covers);
+Rules baked in: NEVER more than 4 pins on any day (UTC or Eastern); `mark <id> scheduled <group> <iso>` refuses a date over the cap, and any\nagent bulk-scheduling in Planoly must run `cap` first and pick only days with room; our own work only (album covers, our mood boards/graphics, grids of our covers);
 real mahjmatchmaker.com links (curl 200); no "coupon"/"promo" wording; holiday mood boards are
 'hold' until the rebuilt files exist (assets/blog/holiday-boards-oct21/); Paige Spearin x TdT
 never promoted; holiday items never before notBefore.
@@ -70,6 +72,60 @@ def save(q):
     os.makedirs(os.path.dirname(QUEUE), exist_ok=True)
     q['updated'] = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
     json.dump(q, open(QUEUE, 'w'), indent=1, ensure_ascii=False)
+
+
+# ---------------------------------------------------------------- pace cap (added Oct 22 after the 104-pin evergreen burst)
+MAX_PER_DAY = 4
+SNAPSHOT = os.path.join(REPO, 'config/pinterest/planoly_scheduled.json')
+
+
+def _utc(s):
+    return datetime.datetime.fromisoformat(s.replace('Z', '+00:00'))
+
+
+def _et_day(t):
+    off = -4 if t < datetime.datetime(2026, 11, 1, 6, tzinfo=datetime.timezone.utc) else -5  # US Eastern, DST ends Nov 1 2026
+    return (t + datetime.timedelta(hours=off)).date().isoformat()
+
+
+def scheduled_pins(q=None):
+    """All known scheduled pins (Planoly snapshot + queue.json scheduled items), de-duplicated by postGroupId."""
+    out = {}
+    if os.path.exists(SNAPSHOT):
+        for p in json.load(open(SNAPSHOT)).get('pins', []):
+            out[p['postGroupId']] = p['scheduledFor']
+    for i in (q or load())['items']:
+        if i.get('status') == 'scheduled' and i.get('scheduledFor'):
+            out.setdefault(i.get('postGroupId') or i['id'], i['scheduledFor'])
+    return out
+
+
+def day_counts(q=None, extra=()):
+    ts = [_utc(v) for v in scheduled_pins(q).values()] + [_utc(v) for v in extra]
+    utc, et = {}, {}
+    for t in ts:
+        utc[t.date().isoformat()] = utc.get(t.date().isoformat(), 0) + 1
+        et[_et_day(t)] = et.get(_et_day(t), 0) + 1
+    return utc, et
+
+
+def cap_ok(iso, q=None, exclude_group=None):
+    """True if adding one pin at iso keeps its UTC day AND its Eastern day at <= MAX_PER_DAY."""
+    sp = {k: v for k, v in scheduled_pins(q).items() if k != exclude_group}
+    t = _utc(iso)
+    n_utc = sum(1 for v in sp.values() if _utc(v).date() == t.date())
+    n_et = sum(1 for v in sp.values() if _et_day(_utc(v)) == _et_day(t))
+    return n_utc < MAX_PER_DAY and n_et < MAX_PER_DAY
+
+
+def cap_report(q=None):
+    utc, et = day_counts(q); bad = 0
+    for d in sorted(utc):
+        flag = '' if utc[d] <= MAX_PER_DAY and et.get(d, 0) <= MAX_PER_DAY else '  <-- OVER CAP'
+        bad += bool(flag); print(d, 'utc', utc[d], 'et', et.get(d, 0), flag)
+    for d in sorted(et):
+        if d not in utc and et[d] > MAX_PER_DAY: bad += 1; print(d, 'et', et[d], '  <-- OVER CAP')
+    print('cap check done, days over', MAX_PER_DAY, '=', bad); return bad
 
 
 def get(url):
@@ -371,10 +427,26 @@ def main():
         out.sort(key=lambda i: i.get('prio', 50))
         print(json.dumps(out[:n], indent=1, ensure_ascii=False))
     elif a[0] == 'mark':
-        it = byid[a[1]]; it['status'] = a[2]
+        it = byid[a[1]]
+        if a[2] == 'scheduled' and len(a) > 4 and not cap_ok(a[4], q, exclude_group=a[3]):
+            sys.exit(f'REFUSED: {a[4]} would put more than {MAX_PER_DAY} pins on one day (UTC or Eastern). Pick another day; see `autopin.py cap`.')
+        it['status'] = a[2]
         if len(a) > 3: it['postGroupId'] = a[3]
         if len(a) > 4: it['scheduledFor'] = a[4]
         save(q); print(it['id'], it['status'])
+    elif a[0] == 'cap':  # per-day pin counts; exit 1 if any day is over MAX_PER_DAY
+        sys.exit(1 if cap_report(q) else 0)
+    elif a[0] == 'snapshot':  # snapshot <list_post_groups json file>..  (rewrite the Planoly snapshot used by the cap)
+        pins = []
+        for f in a[1:]:
+            for g in json.load(open(f))['postGroups']:
+                for p in g['posts']:
+                    if p.get('status') != 'scheduled': continue
+                    ps = p.get('providerSettings', {})
+                    pins.append(dict(postGroupId=g['postGroupId'], scheduledFor=p['scheduleDate'].replace('.000Z', 'Z'), board=ps.get('boardName'), title=ps.get('title'), link=ps.get('link', '')))
+        pins.sort(key=lambda x: x['scheduledFor'])
+        json.dump(dict(updated=datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), pins=pins), open(SNAPSHOT, 'w'), indent=1)
+        print(len(pins), 'pins snapshotted'); sys.exit(1 if cap_report(q) else 0)
     elif a[0] == 'check':
         bad = 0
         for it in q['items']:

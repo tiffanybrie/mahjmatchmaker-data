@@ -18,6 +18,31 @@ Tiffany approved Oct 21 5:39pm (exception to the queue.json "own work only" rule
 | Oct 30 | Lavender Pink Floral Mahjong Mat, Betty June & Jeannette (Livy) | Mahjong Mats & Racks | https://go.shopmy.us/p-96126853 | 01a1606f-a303-7443-b658-53e326c7f4e6 / 01a1606f-a31a-74b3-b0cb-32d12f2ecab1 |
 | Nov 1 | Holiday Plaid Mahjong Mat, Tala Mahj (The Carlyle; holiday, not before Nov 1) | Christmas Mahjong Mats | https://go.shopmy.us/p-96067720 | 01a1606f-a50f-767c-946f-072c94b00780 / 01a1606f-a517-7772-ac53-93cf5aa0350f |
 
+## Queue after the Oct 22 re-spacing (Planoly workspace 019fc27b, 159 scheduled pins)
+
+**What happened.** On Oct 21 at 18:20-18:38Z (2:20-2:38pm ET, read from the Planoly postGroupId timestamps) 104 evergreen pins (`utm_campaign=evergreen`, the card / guide / hub pins that `autopin.py expand` and `render` produce) were bulk-created in Planoly at hourly :30 slots, 05:30Z Oct 22 through 22:30Z Oct 26, about 25 a day. They were scheduled straight in Planoly by an agent session and never recorded in queue.json, so `autopin.py` (which only prints `next` and records `mark`) never saw them, and nothing in the repo checked the 4/day rule: the rule lived only as text in queue.json `rules`. The 13 evergreen pins at 13:00Z / 20:00Z (groups 01a15eb4-*) are the normal autopin pace and were left alone. Git history has no script that does the Planoly scheduling, so the exact session is unrecorded.
+
+**Fix (Oct 22, 05:30Z, before any burst pin published).** All 104 burst pins were moved with set_post_group_schedule (none deleted, none published, none moved earlier than their old time). They now fill the free room under 4 pins/day, oldest first, starting Oct 28 and ending Nov 30, at varied non-round minutes between 13:00Z and 23:00Z. Untouched: the 10 ShopMy test pins (18:00Z Oct 22-30 and Nov 1), the launch pins (15:00/16:00Z), the holiday pins (00:00Z Nov 2-14, none earlier than Nov 1), and the 13 autopin 13:00/20:00Z pins. No day exceeds 4 pins in UTC or in Eastern time (verified by relisting). Queue ends Mon Nov 30, 2026 (21:57Z).
+
+**Guard.** `scripts/pinterest/autopin.py` now has `cap` (pins per day in UTC and Eastern from config/pinterest/planoly_scheduled.json plus queue.json; exit 1 if any day is over 4), `snapshot <list_post_groups json>` (refresh the snapshot), and `mark <id> scheduled <group> <iso>` refuses a date over the cap. Any agent bulk-scheduling Pinterest in Planoly must run `snapshot` then `cap`, and pick only days with room. There is no 4/day room left through Nov 30 (every day is full or has one slot), so new pins (ShopMy scale-up after Oct 24, holiday boards) mean pushing evergreen pins later, not adding on top.
+
+Pins per day (all scheduled, UTC day; Oct 22 before = 21, Oct 23 = 26, Oct 24 = 26, Oct 25 = 26, Oct 26 = 25, Oct 27 = 4, then 3, 2, 2, 1, 2, 2 ... 1):
+
+| Date | Before | After | | Date | Before | After |
+|---|---|---|---|---|---|---|
+| Oct 22 | 21 | 4 | | Nov 5 | 2 | 4 |
+| Oct 23 | 26 | 4 | | Nov 6 | 2 | 4 |
+| Oct 24 | 26 | 4 | | Nov 7 | 2 | 4 |
+| Oct 25 | 26 | 4 | | Nov 8 | 2 | 4 |
+| Oct 26 | 25 | 4 | | Nov 9 | 2 | 4 |
+| Oct 27 | 4 | 4 | | Nov 10 | 1 | 4 |
+| Oct 28 | 3 | 4 | | Nov 11 | 1 | 4 |
+| Oct 29 | 2 | 4 | | Nov 12 | 1 | 4 |
+| Oct 30 | 2 | 4 | | Nov 13 | 1 | 4 |
+| Oct 31 | 1 | 4 | | Nov 14 | 1 | 4 |
+| Nov 1 | 2 | 3 (4 in Eastern time) | | Nov 15-30 | 0 | 4 each |
+| Nov 2-4 | 2 | 4 | | | | |
+
 **CHECK DATE: Oct 24.** list_post_groups (workspace above, platform pinterest): confirm the Oct 22 and Oct 23 pins are `published` (not failed), open them on Pinterest to confirm they are live and not flagged/removed, and that the go.shopmy.us link still resolves. If any are flagged or the links are blocked, pause the rest (delete_post_group) and tell Tiffany. If clean, scale the test while staying under the pace above.
 
 Not yet verified for stock: Etsy (Betty June & Jeannette) listings. Heritage pin links to the Heritage match album (OMM is a partner paying 20% via its own code program, so no ShopMy link); swap in her OMM affiliate link if she has one.

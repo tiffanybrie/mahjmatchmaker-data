@@ -5858,6 +5858,7 @@
   "copy": "Keyword-first titles <=100 chars (mahjong tiles / mahjong mat / <set> / colour words / mahjong table decor); no coupon/promo wording; Amazon-board pins never name brand mats (no Rackin' Rudolph, Polo Club, Rattan).",
   "holiday": "Holiday/Christmas pins not before Nov 1 (notBefore). Paige Spearin x TdT never promoted. No Mahjong Studios mats.",
   "workspace": "019fc27b-964d-7279-8685-1f1bb7a7c3f5",
-  "channel": "Pinterest @mahjmatchmaker"
+  "channel": "Pinterest @mahjmatchmaker",
+  "cap": "HARD CAP 4 pins/day (UTC and Eastern day). Every Planoly pin, including ones made outside autopin.py, counts: config/pinterest/planoly_scheduled.json is the snapshot; run `autopin.py cap` before scheduling and `autopin.py snapshot` after. Oct 22: a bulk run had put ~25/day on Oct 22-26; respaced, see docs/PINTEREST.md."
  }
 }
