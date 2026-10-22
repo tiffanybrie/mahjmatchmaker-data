@@ -10,6 +10,12 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 
 - [ ] **B&B 'standard or scalloped in every color' (Tiffany 10:32pm)**: add the line to (1) FYM rack cards/tray next build, (2) B&B brand page + /bird-and-bamboo-rack-colors (with the brand-box publish), (3) album 'Racks shown' lines on every album that shows a B&B rack (Chrome sweep, batch with the card refresh), (4) future match-card captions + social captions. Links stay 20-inch; never mention 19/21.
 
+## USAGE PAUSE until Sun Oct 25 11am ET weekly reset (Tiffany, Oct 22 3:41am; 90% of weekly limit used)
+- KEPT: ONE sales check/day, trig_019FjiaFBVX512N67EYxrGUw now 10:04pm ET daily (was 4x). Launch-day one-shots (Oct 27) untouched. Weekly Monday tasks (fire Oct 26, after reset) untouched.
+- PAUSED by Claude (enabled:false): HQ Talk inbox (trig_015cSez…), New affiliate onboarding (trig_01C7xPr…), Pinterest autopin (trig_01UsWfw…; queue full through Nov 30), Mahji Mentor 3x (trig_01LC2kw…), Today's sales check 3x (trig_01ErLFa…), Match Builder refresh (trig_01UwvubnW…), Missed computer task watchdog (trig_011puGf…), Daily Google AI answer check (trig_016VJmC…), Daily affiliate income report (trig_01SwPc3…), Weekday morning brief (trig_019JjET…).
+- COULD NOT PAUSE (blocked by the permission check; Tiffany to pause in Scheduled): Hourly brand launch watch (trig_01S2Vsj…), Brand email watch 3x (trig_01Ljz8p…), Google code report daily (trig_01GQHwe…), End-of-day desk cleanup (trig_01WeCbw…), Daily HQ cleanup (trig_01RgaYK…).
+- SUNDAY after reset: re-enable at a lighter pace (daily instead of hourly; routine checks lighter), with her OK.
+
 ## Tomorrow's top priorities (Thu Oct 22), in order
 Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27, (2) fall content before it expires (Brownstone Bloom), then holiday.
 
