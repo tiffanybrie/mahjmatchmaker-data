@@ -19,6 +19,7 @@ Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27, (2) fall content befo
 
 | Item | Owner | Next step | Target |
 |---|---|---|---|
+| Brand-page boxes: chambray headshot + brand-neutral intro + no italic headline (32 pages) + Bird & Bamboo copy | Claude | Drafts done in site/livepatch/brand-boxes-oct21/ (README). Chrome was unreachable at 10:20pm: publish page by page via Squarespace code blocks (one driver, diff before save), cache-busted curl each. Not live yet. | Oct 22 am |
 | Planoly launch-week posts (14 IG drafts) | Tiffany yes → Claude | Countdown 5/4/3/2/1/LIVE, Papaya "still available", Miss Classic tease are auto-post plain frames: schedule on her yes. Mahj Mood "back tomorrow" (Thu) and restock (Fri) stories are reminders. Oct 22 rule: move the Thu one to an undated draft. Papaya x Vivienne carousel slot (Wed 5:30pm) passed; re-slot on her yes. "6 days" countdown is dead: leave it unscheduled. | Thu Oct 22 7am CT |
 | Petalée IG story (draft, auto Sat 10/24) | Claude | Petalée is BANKED and its album isn't live, so the story must not run Sat. Leave it unscheduled and move it to the Petalée go-live day. | Before Sat Oct 24 |
 | Pinterest pace (see priority 3) | Claude | Re-space the evergreen pins, find their source, update docs/PINTEREST.md | Thu Oct 22 am |
