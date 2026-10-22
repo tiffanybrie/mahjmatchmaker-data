@@ -51,6 +51,7 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
  25 m contains every swipe-book yes (builder/fym_flags/swipe_yeses_map.json)   26 Holiday chip   27 Start over   28 Photo coming soon card
  8b colour-chip order: sh (measured share) lines up with mf; CSORT (single chip) = lead > ONE list by score (share + 20 if primary),
     checked by running CSORT in node over every chip colour
+ 38 (Oct 22) card formats read Mood board / Close up
  37 (Oct 22) rack screen like the mat screen: picker under the mat, suitors at the bottom, one picks toggle, Back on racks
  36 (Oct 22) rack picks per (set, mat): every pairing = the mat's own picks (config/mat-racks-picks.json) first, then the tile set's
     racks, plus every rack on a structured album card for that pairing; every registry mat/rack resolves; D.lm matches the registry
@@ -554,6 +555,9 @@ for need_, why_ in (("tray('r')+filters('r')+`<div class=\"backrow\">${rBackBtn(
 if "herBar('r')" in _rr: F.append("[37] second Tiffany's picks toggle (herBar) still on the rack screen")
 if "return kk==='m'&&herUseful(kk)?`<button type=\"button\" class=\"hb\"" not in UI: F.append("[37] the pill over the rack photo is still a picks toggle (keep one toggle on racks)")
 if 'class="rsug"' in UI[UI.find('function tray('):UI.find('function tileView(')]: F.append("[37] rack suitors still inside the top picker")
+
+# 38 card format names (Tiffany Oct 22 desktop note 6): the spread is "Mood board", the stacked close-ups are "Close up"
+if "const VIEWS=[['tri','Mood board'],['stack','Close up']];" not in UI: F.append("[38] card formats must read Mood board / Close up (was Love triangle / Mood board)")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
