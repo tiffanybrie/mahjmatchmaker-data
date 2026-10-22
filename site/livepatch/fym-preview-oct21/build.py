@@ -29,7 +29,7 @@ APP_BASE = CDN + APP_COMMIT + '/site-app/fym-v72/'  # v72 = full app folder (v71
 # Rendered by scripts/fym_promo/render.py from scripts/fym_promo/capture.py (undo hidden, X + heart only, no %).
 PHONES = CDN + 'cd8cb41d47ef16e4c242a56a0add06f768bafb97/assets/site/fym-page-v2/'
 # Tiffany 3:56/3:58pm: annotated tutorial (render2.py), one step per block, at the BOTTOM of the page; app at the top.
-TUT = CDN + 'b02e87ae80aa4c7169a3370ef7d1fff54ac4a8d8/assets/site/fym-tutorial/'  # v72 re-capture (Oct 21 night): 6 steps
+TUT = CDN + 'fcf9fd12d382b6fa2aad7be5e83a0114033003da/assets/site/fym-tutorial/'  # v72 re-capture (Oct 21 night): 6 steps
 HERO_ALT = ('Find Your Mat-ch on a phone: Papaya Spritz tiles swiping on the Heiress mat by Britt Mills with the X and heart '
             'buttons, next to the start screen where you pick I have tiles or I have a mat')
 FEEDBACK = '/find-your-mat-ch-feedback'

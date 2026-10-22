@@ -11,7 +11,7 @@ no %, no other code, no Amazon links, plain "match" elsewhere). Rules for sendin
 Run: python3 site/email/build.py            (html + json)
      python3 site/email/build.py shots      (also screenshots, needs playwright)
 """
-import json, pathlib, sys, html, re
+import json, pathlib, sys, html, re, os
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = "https://www.mahjmatchmaker.com"
@@ -22,7 +22,9 @@ FYM = 'Find <em>Your</em> Mat-ch'
 CODE = 'Use code <b>MAHJMATCH</b> to save 💕'
 SIGN = 'Happy mat-ching!<br>xo, Tiffany'
 FEEDBACK = f'{SITE}/find-your-mat-ch-feedback'  # hidden page, form notifications -> mahjmatchmaker@gmail.com, Gmail label Site/FYM feedback (Claude handles)
-CDN_IMG = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@b02e87ae80aa4c7169a3370ef7d1fff54ac4a8d8/site/email/assets/fym/' if 'cdn' in sys.argv else ''  # 'cdn' arg = pinned jsDelivr srcs for Squarespace; set to the pinned jsDelivr folder for Squarespace; empty = local relative paths for previews
+CDN_IMG = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@fcf9fd12d382b6fa2aad7be5e83a0114033003da/site/email/assets/fym/' if 'cdn' in sys.argv else ''
+CDN_ROOT = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@fcf9fd12d382b6fa2aad7be5e83a0114033003da/'  # cdn mode: every other relative src -> this pinned repo root
+WORDMARK_CDN = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@dbce3d9a4d4555bfa68a8133e25ba3817dad2831/assets/brand/mahjmatchmaker-wordmark.png'  # QA Oct 21: the wordmark was a relative path in cdn mode  # 'cdn' arg = pinned jsDelivr srcs for Squarespace; set to the pinned jsDelivr folder for Squarespace; empty = local relative paths for previews
 
 EMAILS = [
     {
@@ -192,7 +194,8 @@ def render(e, with_meta=True):
     h = []
     if with_meta:
         h.append(f'<div class="meta"><b>Subject:</b> {html.escape(e["subject"])}<br><b>Preview:</b> {html.escape(e["preview"])}<br><b>When:</b> {html.escape(e["when"])}</div>')
-    h.append('<div class="card"><div class="top"><img src="../../../assets/brand/mahjmatchmaker-wordmark.png" alt="Mahj Matchmaker: matching mahjong tiles, mats &amp; racks"></div><div class="body">')
+    wm = WORDMARK_CDN if CDN_IMG else "../../../assets/brand/mahjmatchmaker-wordmark.png"
+    h.append(f'<div class="card"><div class="top"><img src="{wm}" alt="Mahj Matchmaker: matching mahjong tiles, mats &amp; racks"></div><div class="body">')
     h.append(f'<div class="h1">{img(e["h1img"])}</div>')
     if e.get("hero"):
         h.append(f'<div class="hero">{img(e["hero"], display_w=480)}</div>')
@@ -217,7 +220,13 @@ def render(e, with_meta=True):
     h.append(f'<p class="sign">{SIGN}</p></div>')
     h.append('<div class="foot">Mahj Matchmaker · <a href="https://www.mahjmatchmaker.com">mahjmatchmaker.com</a><br>Hooking up tiles, mats &amp; racks'
              '<br><span class="legal">[Mailing address: pending from Tiffany] · <a href="#">Unsubscribe</a> (Squarespace adds both to every send)</span></div></div>')
-    return f'<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(e["name"])}</title><style>{CSS}</style></head><body><div class="outer">{"".join(h)}</div></body></html>'
+    out = f'<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(e["name"])}</title><style>{CSS}</style></head><body><div class="outer">{"".join(h)}</div></body></html>'
+    if CDN_IMG:  # cdn mode: no relative src may survive (templates live in site/email/templates/)
+        def _abs(m):
+            rel = os.path.normpath(os.path.join('site/email/templates', m.group(1)))
+            return f'src="{CDN_ROOT}{rel}"'
+        out = re.sub(r'src="(?!https?:|data:|cid:)([^"]+)"', _abs, out)
+    return out
 
 
 def plain(e):
@@ -270,6 +279,8 @@ def lint():
             bad.append((e["id"], "subject: one ! at most"))
         if re.search(r"\b[A-Z]{4,}\b", e["subject"].replace("MAHJMATCH", "")):
             bad.append((e["id"], "subject: no ALL CAPS"))
+        if CDN_IMG and re.search(r'src="(?!https://)', body):
+            bad.append((e["id"], "cdn mode: relative image src: " + ", ".join(re.findall(r'src="(?!https://)([^"]+)"', body))[:200]))
         for m in re.finditer(r"<img [^>]*>", body):
             if 'alt="' not in m.group(0) or 'alt=""' in m.group(0):
                 bad.append((e["id"], "image without alt text"))
