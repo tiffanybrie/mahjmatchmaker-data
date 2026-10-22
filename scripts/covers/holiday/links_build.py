@@ -75,6 +75,8 @@ def build(img,tgt):
 <b>Find Your Mat-ch™</b><p>Start with your tiles or your mat, then swipe through the mats and racks that match.</p>{('<span class="go">Start matching ›</span></a>' if FYM_LIVE else '<span class="go" style="opacity:.75">Coming October 27</span></div>')}
 <div class="code"><div><small>Partner brand discount</small><b>MAHJMATCH</b></div><button type="button" onclick="(navigator.clipboard?navigator.clipboard.writeText('MAHJMATCH'):Promise.reject()).then(()=>{{this.textContent='Copied ✓'}}).catch(()=>{{this.textContent='MAHJMATCH'}})">Copy code</button></div>
 <a class="where" href="{S}/mahjong-discount-codes"{tgt(S)}>See all our partner brands ›</a>
+<a class="where" href="{S}/mahjong-mats"{tgt(S)}>Browse every mat by color in the Mat Gallery ›</a>
+<a class="where" href="https://shopmy.us/shop/mahjmatchmaker" target="_blank" rel="noopener sponsored">Shop my favorite finds on ShopMy ›</a>
 <a class="feat" href="{S}/holiday-mahjong-matches"{tgt(S)}><div class="hol">{hol}</div><div><b>Holiday Matches 🎄<small>Christmas tiles, mats &amp; racks, matched</small></b><span style="font-size:26px">›</span></div></a>
 <h2>Tile album matches</h2>
 <!-- newest live albums first (see pop.json / build script comment) -->
