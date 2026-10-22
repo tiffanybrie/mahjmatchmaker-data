@@ -517,6 +517,15 @@ if '.deck:has(.peekbar) .scard .hb' not in UI: F.append("[33] deck tab can overl
 if re.search(r'Editon', h): F.append("[34] typo 'Editon' (Blue Edition)")
 if 'class="${T[id]?\'tcv\':\'\'}"' not in UI: F.append("[34] tile photo in Take them home can letterbox (Heritage 1.0)")
 
+# 35 tour bubble never covers its target (QA v72: step 1/2 coach over the heart/X; colour dot off-screen in the chip row; desktop bubble far from target)
+for need_, why_ in (("function coachPlace(", "bubble placed next to its target"), ("pointer-events:none;background:var(--navy)", "bubble lets touches through"),
+                    ("p.scrollLeft+=", "chip row scrolled so the target dot is visible")):
+    if need_ not in UI: F.append(f"[35] tour: {why_} missing")
+if os.environ.get('FYM_GATE_SKIP_TOUR') != '1':
+    import subprocess as _sp
+    _r = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fym_tour_place_check.py'), B], capture_output=True, text=True, timeout=900)
+    if _r.returncode != 0: F.append("[35] tour bubble covers its target / target off-screen at 390x664, 390x844 or 1280x800: " + ' '.join(l for l in _r.stdout.splitlines() if 'FAIL' in l)[:600])
+
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
     for b, v in sorted(W.items()): print(f"  {b} ({len(v)}): " + ', '.join(v[:8]) + (' ...' if len(v) > 8 else ''))

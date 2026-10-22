@@ -49,10 +49,10 @@ H = rep(H, ".nw{white-space:nowrap}\n</style>", """.nw{white-space:nowrap}
 .bnc1{animation:dock 1.15s ease-in-out 1}
 @media (prefers-reduced-motion:reduce){.bnc{animation:glow 1.6s ease-in-out infinite}.bnc1{animation:glow 1.6s ease-in-out 1}}
 .tourq .box{text-align:center}.tourq .box p{margin:0 0 14px}
-.coach{position:fixed;left:12px;right:12px;max-width:420px;margin:0 auto;z-index:70;background:var(--navy);color:#fff;border-radius:16px;padding:12px 14px;box-shadow:0 12px 30px rgba(5,70,137,.35);font:600 14.5px/1.35 var(--body)}
+.coach{position:fixed;left:12px;right:12px;max-width:420px;margin:0 auto;z-index:70;pointer-events:none;background:var(--navy);color:#fff;border-radius:16px;padding:12px 14px;box-shadow:0 12px 30px rgba(5,70,137,.35);font:600 14.5px/1.35 var(--body)}
 .coach b{font:400 18px 'Alfa Slab One',Georgia,serif;display:block;margin-bottom:2px}
 .coach .cr{display:flex;justify-content:space-between;align-items:center;margin-top:8px;font-size:12px;opacity:.9}
-.coach button{border:0;border-radius:999px;background:#fff;color:var(--navy);font:700 12.5px var(--body);padding:6px 12px;cursor:pointer}
+.coach button{pointer-events:auto;border:0;border-radius:999px;background:#fff;color:var(--navy);font:700 12.5px var(--body);padding:6px 12px;cursor:pointer}
 .coach button.sk{background:transparent;color:#fbe3ec;text-decoration:underline;padding:6px 0}
 </style>""")
 # (TM) on the mat-door headline too
@@ -93,10 +93,26 @@ function tourEnd(skipped){TOUR.on=false;LS.set('fym_tour',skipped?'skipped':'don
 function tourNext(){TOUR.step++;while(TOUR.step<TSTEPS.length&&TSTEPS[TOUR.step].skip&&TSTEPS[TOUR.step].skip())TOUR.step++;if(TOUR.step>=TSTEPS.length){tourEnd(false);toast('That’s it. Happy matching ♥');return;}tourPaint();}
 function tourEv(ev){if(!TOUR.on)return;const s=TSTEPS[TOUR.step];if(s&&s.ev===ev)setTimeout(tourNext,260);}
 function tourPaint(){document.querySelectorAll('.bnc').forEach(e=>e.classList.remove('bnc'));let c=$('coach');if(!TOUR.on){if(c)c.remove();return;}const s=TSTEPS[TOUR.step];if(s.skip&&s.skip()){tourNext();return;}
- const b=s.b.split(',').map(x=>document.querySelector(x)).find(Boolean),a=document.querySelector(s.a)||b;if(b)b.classList.add('bnc');if(a&&a.getBoundingClientRect){const r0=a.getBoundingClientRect();if(r0.top<60||r0.bottom>(innerHeight||800))a.scrollIntoView({block:'center'});}
+ const b=s.b.split(',').map(x=>document.querySelector(x)).find(Boolean);if(b)b.classList.add('bnc');
  if(!c){c=document.createElement('div');c.id='coach';c.className='coach';c.setAttribute('role','dialog');c.setAttribute('aria-live','polite');document.body.appendChild(c);}
  c.innerHTML=`<b>${s.t}</b>${s.p}<div class="cr"><span>${TOUR.step+1} of ${TSTEPS.length}</span><span><button type="button" class="sk" data-tour-skip>Skip tour</button> ${s.ev==='next'?'<button type="button" data-tour-next>Done ♥</button>':''}</span></div>`;
- if(a&&a.getBoundingClientRect){const r=a.getBoundingClientRect(),vh=innerHeight||800;const below=r.bottom+12,above=r.top-12;if(r.top>vh*0.55||below+140>vh){c.style.top='';c.style.bottom=Math.max(10,vh-above)+'px';}else{c.style.bottom='';c.style.top=Math.max(64,below)+'px';}}}
+ coachPlace(c,b);}
+/* v72b: the bubble never covers its target. Scroll a chip row so the target is fully visible, bring the target on screen
+   leaving room for the bubble, then put the bubble right above it (or below if there is no room) and next to it horizontally. */
+function coachRect(){const c=$('coach'),b=TOUR.on&&TSTEPS[TOUR.step]&&TSTEPS[TOUR.step].b.split(',').map(x=>document.querySelector(x)).find(Boolean);if(!c||!b)return null;const r=c.getBoundingClientRect(),q=b.getBoundingClientRect();return {c:[r.left,r.top,r.right,r.bottom],b:[q.left,q.top,q.right,q.bottom]};}
+function coachPlace(c,b){const vw=document.documentElement.clientWidth||innerWidth||390,vh=innerHeight||800,G=10,TOPS=64;
+ const w=Math.min(420,vw-24);c.style.width=w+'px';c.style.right='auto';c.style.margin='0';c.style.top='0px';c.style.bottom='';
+ if(!b){c.style.left=Math.round((vw-w)/2)+'px';c.style.top=TOPS+'px';return;}
+ let p=b.parentElement;while(p&&p!==document.body&&!(p.scrollWidth>p.clientWidth+1&&/(auto|scroll)/.test(getComputedStyle(p).overflowX)))p=p.parentElement;
+ if(p&&p!==document.body){const pr=p.getBoundingClientRect(),br=b.getBoundingClientRect();if(br.left<pr.left+4||br.right>pr.right-4)p.scrollLeft+=(br.left+br.width/2)-(pr.left+pr.width/2);}
+ const h=c.offsetHeight;let r=b.getBoundingClientRect();
+ const fitsAbove=r.top-G-h>=TOPS,fitsBelow=r.bottom+G+h<=vh-G;
+ if(!fitsAbove&&!fitsBelow){/* scroll so the target sits low enough to have the bubble above it */const want=TOPS+h+G+8;window.scrollBy({top:r.top-want,left:0,behavior:'instant'});r=b.getBoundingClientRect();}
+ else if(r.top<TOPS||r.bottom>vh){b.scrollIntoView({block:'center',behavior:'instant'});r=b.getBoundingClientRect();}
+ let top=(r.top-G-h>=TOPS)?r.top-G-h:(r.bottom+G+h<=vh-G?r.bottom+G:Math.max(TOPS,r.top-G-h));
+ const cx=r.left+r.width/2;let left=Math.max(12,Math.min(vw-w-12,cx-w/2));
+ c.style.top=Math.round(top)+'px';c.style.left=Math.round(left)+'px';}
+addEventListener('resize',()=>{if(TOUR.on)tourPaint();});
 const HS=(()=>{try{return JSON.parse(LS.get('fym_hints')||'{}')||{};}catch(e){return {};}})();
 function hint(id,sel){if(TOUR.on||TOUR.prompt||HS[id])return;requestAnimationFrame(()=>{const e=document.querySelector(sel);if(!e)return;HS[id]=1;LS.set('fym_hints',JSON.stringify(HS));e.classList.add('bnc1');setTimeout(()=>e.classList.remove('bnc1'),1700);});}
 {const _rm=renderMats;renderMats=function(){_rm();if(TOUR.on)setTimeout(tourPaint,30);else if(S.set!=null&&!matLocked()&&queue('m').length)hint('picks','.frow [data-her="m"]');};
