@@ -1,0 +1,33 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Cap;src:url(file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/Caprasimo.ttf)}
+@font-face{font-family:Bit;src:url(file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/bitter-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:PF;src:url(file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/playfair-display-latin-400-italic.woff2);font-style:italic}
+*{margin:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#faf3ea;overflow:hidden;position:relative;font-family:Bit}
+.sc{position:absolute;inset:0;display:none}
+.c{position:absolute;left:0;right:0;text-align:center}
+.cap{font-family:Cap;color:#062a55}
+.pill{display:inline-block;background:#062a55;color:#fff;font:700 40px Bit;letter-spacing:6px;padding:18px 40px;border-radius:60px}
+.it{font:italic 54px PF;color:#c8325f}
+#cov{position:absolute;left:110px;top:420px;width:860px;border-radius:24px;box-shadow:0 20px 50px rgba(6,42,85,.25)}
+.h{position:absolute;color:#f56c8c}
+</style></head><body>
+<div id="s1" class="sc"><img src="file:///home/claude/mahjmatchmaker-data/assets/brand/flame-heart.png" style="width:170px;left:455px;top:500px;position:absolute"><div class="c cap" style="top:740px;font-size:110px;line-height:1.05">We've been<br>busy matching.</div></div>
+<div id="s2" class="sc"><div class="c" style="top:270px"><span class="pill" id="cnt">1 TILE SET ALBUM</span></div><img id="cov"><div class="c it" style="top:1540px;display:none;font-size:64px" id="andc">and counting…</div></div>
+<div id="s3" class="sc"><div class="c cap" style="top:560px;font-size:150px;line-height:1.1" id="t3"></div></div>
+<div id="s4" class="sc"><div class="c it" style="top:600px;font-size:76px">Now it's</div><div class="c cap" style="top:700px;font-size:170px;line-height:1">your turn.</div></div>
+<div id="s5" class="sc" style="background:#062a55"><div class="c" style="top:560px;font:700 44px Bit;letter-spacing:8px;color:#f7b6c8">TUESDAY 10.27</div><div class="c cap" style="top:660px;font-size:128px;line-height:1.05;color:#fff">You become<br>the <span style="color:#f56c8c">matchmaker.</span></div></div>
+<div id="s6" class="sc"><div class="c" style="top:240px"><span class="pill">LAUNCHING TUESDAY 10.27</span></div><div class="c cap" style="top:350px;font-size:118px;line-height:1">Find Your<br>Mat-ch<sup style="font-size:44px;vertical-align:top;position:relative;top:16px">™</sup></div><div class="c it" style="top:610px;font-size:46px">Start with your tiles or your mat.</div><img src="file:///home/claude/mahjmatchmaker-data/assets/links/v2/fym-phones.webp" style="position:absolute;left:90px;top:700px;width:860px"></div>
+<div id="s7" class="sc"><img src="file:///home/claude/mahjmatchmaker-data/assets/brand/mahjmatchmaker-wordmark-notag.png" style="position:absolute;left:165px;top:540px;width:750px"><div class="c it" style="top:740px;font-size:56px">A whole new way to match.</div><div class="c cap" style="top:850px;font-size:110px">10.27</div><div class="c" style="top:1060px"><span class="pill" style="background:#d6336c">LINK IN BIO</span></div>
+<div class="h" style="left:170px;top:1250px;font-size:70px">♥</div><div class="h" style="left:480px;top:1290px;font-size:50px;color:#c8325f">♥</div><div class="h" style="left:740px;top:1240px;font-size:80px">♥</div></div>
+<script>
+const COV=__COV__;
+const S=[['s1',0,1.8],['s2',1.8,7.4],['s3',7.4,9.5],['s4',9.5,11.2],['s5',11.2,13.4],['s6',13.4,16.6],['s7',16.6,18.8]];
+const e=x=>1-Math.pow(1-Math.min(Math.max(x,0),1),3);
+window.render=function(t){
+ for(const [id,a,b] of S){const el=document.getElementById(id);const on=t>=a&&t<b;el.style.display=on?'block':'none';if(on){const k=e((t-a)/0.35);el.style.opacity=k;el.style.transform='scale('+(0.96+0.04*k)+')';}}
+ if(t>=1.8&&t<7.4){const per=4.6/COV.length;const i=Math.min(COV.length-1,Math.floor((t-1.8)/per));const c=document.getElementById('cov');if(c.dataset.i!=i){c.src=COV[i];c.dataset.i=i;}
+   document.getElementById('cnt').textContent=(i+1)+(i?' TILE SET ALBUMS':' TILE SET ALBUM');document.getElementById('andc').style.display=t>6.4?'block':'none';}
+ const t3=document.getElementById('t3'); if(t>=7.4&&t<9.5){t3.innerHTML=t<8.1?'Tiles.':t<8.8?'Tiles.<br>Mats.':'Tiles.<br>Mats.<br>Racks.';}
+};
+</script></body></html>
