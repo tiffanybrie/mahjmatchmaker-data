@@ -66,6 +66,25 @@ with sync_playwright() as p:
             pg.locator('[data-tour]').first.click(); time.sleep(.8)
             if not pg.evaluate("TOUR.on&&TSTEPS[TOUR.step].k==='tiles'"): F(tag, '"Take the tour" did not replay from step 1')
             br.close()
+    # off-script (QA v75): picks toggle on the swipe steps, Back to the deck on step 4, Change mat on the racks step
+    for (w, h) in ((390, 844), (390, 664)):
+        tag = f'offscript-{w}x{h}'; br = p.chromium.launch(); pg = br.new_page(viewport={'width': w, 'height': h})
+        pg.goto(URL); pg.wait_for_function('window.__imgsReady===true', timeout=90000); pg.wait_for_function('TOUR.on===true', timeout=6000); time.sleep(.8)
+        def chk(label):
+            time.sleep(.7); st = pg.evaluate(STATE)
+            if st['inter'] or st['vis'] < .6: F(tag, f'{label}: tip box covers the target or target not in view (visible {st["vis"]})')
+            return st
+        pg.locator('#s-tiles .tgrid button').first.click(); time.sleep(.9)
+        if pg.locator('.frow [data-her="m"]').count(): pg.locator('.frow [data-her="m"]').first.click(); chk('picks toggle on step 2')
+        pg.locator('[data-yes="m"]').click(); time.sleep(.8); pg.locator('.tray .th button').first.click(); time.sleep(.8)
+        pg.locator('[data-unpeek]').click(); st = chk('Back to the deck on step 4')
+        if 'Tap Add racks once' in st['ctext']: F(tag, 'step 4 still says "Tap Add racks once" with no suitor picked')
+        pg.locator('.tray .th button').first.click(); time.sleep(.7); pg.locator('.tray .go[data-mock]').click(); time.sleep(1)
+        if pg.locator('.frow [data-her="r"]').count(): pg.locator('.frow [data-her="r"]').first.click(); chk('picks toggle on step 5')
+        pg.locator('[data-back-mats]').click(); time.sleep(1)
+        if pg.evaluate("document.getElementById('s-mats').getBoundingClientRect().bottom<0||document.getElementById('s-mats').getBoundingClientRect().top>innerHeight"): F(tag, 'Change mat during the tour did not scroll to the mats')
+        if pg.evaluate("TOUR.log.length!==new Set(TOUR.log).size"): F(tag, f'tour step repeated: {pg.evaluate("TOUR.log")}')
+        print(tag, 'log', pg.evaluate('TOUR.log')); br.close()
     br = p.chromium.launch(); pg = br.new_page(viewport={'width': 390, 'height': 844})
     pg.goto(URL + '#notour'); pg.wait_for_function('window.__imgsReady===true', timeout=90000); time.sleep(2.5)
     if pg.evaluate('TOUR.on'): F('notour', '#notour did not keep the tour off')

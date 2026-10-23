@@ -54,6 +54,11 @@ rep("""return `<div class="acts"><button type="button" class="pill" data-unpeek>
     """return `<div class="acts"><button type="button" class="pill" data-unpeek>‹ Back to the deck</button></div>`;""")
 rep("""el.innerHTML=head(3,'Love triangle','All couples need a wingman.')+`<div class="r3p">""", """el.innerHTML=head(3,'Pick your mat','All couples need a wingman.')+`<div class="r3p">""")
 rep("""(S.liked.length?`<p>Which suitor is the one? Tap your favorite.</p>""", """(S.liked.length?`<p>Which suitor is the one? Pick which mat you\\u2019d like to mock up with racks.</p>""")
+# Change mat during the tour: the tour must not pull her back to the racks (QA v75)
+rep("""if(q('[data-back-mats]')){S.peek=S.fav;""", """if(q('[data-back-mats]')){TOUR.hold=Date.now();S.peek=S.fav;""")
+# the racks section never offers a second Add racks (QA v75): it points back to the tray
+rep("""${sel?`<img src="${matTh(sel)}" alt=""><p>Ready to add racks to <b>${esc(M[sel].n)}</b>?</p><button type="button" class="big" style="width:auto;padding:10px 18px" data-mock="${esc(sel)}">Add racks with ${esc(M[sel].n)} ›</button>`""",
+    """${sel?`<img src="${matTh(sel)}" alt=""><p>You picked <b>${esc(M[sel].n)}</b>. Tap <b>Add racks</b> in your suitors above.</p>`""")
 # the racks section never offers Add racks for a suitor she has not picked (Oct 23 bug b)
 rep("""function selSuitor(){return (S.peek&&S.liked.includes(S.peek)?S.peek:null)||(S.fav&&S.liked.includes(S.fav)?S.fav:null)||(S.liked.length===1?S.liked[0]:null);}""",
     """function selSuitor(){return (S.peek&&S.liked.includes(S.peek)?S.peek:null)||(S.fav&&S.liked.includes(S.fav)?S.fav:null);}""")
@@ -67,7 +72,7 @@ h = h[:_a] + r"""const TSTEPS=[
  {k:'tiles',t:'Step 1 · Your tiles',p:'Pick your tile set to start. Have a mat instead? Tap \u201cI have a mat\u201d.',b:'#s-tiles .tgrid button,#s-tiles .dsets button,#s-tiles .door',done:()=>S.set!=null},
  {k:'mats',t:'Step 2 · Swipe the mats',p:'\u2665 or swipe right if you love it, \u2715 or swipe left if it\u2019s not the one. Hearted mats fall below as your suitors.',b:'#top-m',hand:'m',done:()=>S.liked.length>0||!!S.fav,skip:()=>matLocked()},
  {k:'pick',t:'Step 3 · Pick your mat',p:'Pick which mat you\u2019d like to mock up with racks: tap it in your suitors.',b:'.tray .th button',done:()=>!!S.peek||!!S.fav,skip:()=>matLocked()},
- {k:'add',t:'Step 4 · Add racks',p:'Tap Add racks once. It takes you straight to the racks.',b:'.tray .go[data-mock],.dacts [data-mock]',done:()=>!!S.fav},
+ {k:'add',t:'Step 4 · Add racks',p:()=>S.peek||matLocked()?'Tap Add racks once. It takes you straight to the racks.':'Tap the suitor you\u2019d like to mock up, then tap Add racks once.',b:'.tray .go[data-mock],.dacts [data-mock],.tray .th button',done:()=>!!S.fav},
  {k:'racks',t:'Step 5 · Swipe the racks',p:'Same as the mats: \u2665 or swipe right, \u2715 or swipe left. Pick up to two rack suitors for each mat; they fall below.',b:'#top-r',hand:'r',done:()=>S.rpick.length>0},
  {k:'make',t:'Step 6 · Make it official',p:'Happy with your racks? Tap Make it official to build your match card.',b:'#rtray [data-make]',done:()=>!!S.made},
  {k:'share',t:'Step 7 · Save or share',p:'Save it or share it. Share your match! Tag #mahjmatch, we love to see your matches!',b:'[data-share]',next:'Next'},
@@ -87,7 +92,7 @@ function tourPaint(){document.querySelectorAll('.bnc').forEach(e=>e.classList.re
  const b=tourTarget(s);if(b&&!s.hand)b.classList.add('bnc');
  if(b&&s.hand){const dk=b.parentElement;if(dk){const w=document.createElement('div');w.className='swh';w.setAttribute('aria-hidden','true');w.innerHTML='<span class="swx">\u2715</span><i></i><span class="swy">\u2665</span>';dk.appendChild(w);}}
  if(!c){c=document.createElement('div');c.id='coach';c.className='coach';c.setAttribute('role','dialog');c.setAttribute('aria-live','polite');document.body.appendChild(c);}
- c.dataset.step=s.k;c.innerHTML=`<b>${s.t}</b>${s.p}<div class="cr"><span>${TOUR.step+1} of ${TSTEPS.length}</span><span><button type="button" class="sk" data-tour-skip>Skip tour</button> ${s.next?`<button type="button" data-tour-next>${s.next}</button>`:''}</span></div>`;
+ c.dataset.step=s.k;c.innerHTML=`<b>${s.t}</b>${typeof s.p==='function'?s.p():s.p}<div class="cr"><span>${TOUR.step+1} of ${TSTEPS.length}</span><span><button type="button" class="sk" data-tour-skip>Skip tour</button> ${s.next?`<button type="button" data-tour-next>${s.next}</button>`:''}</span></div>`;
  if(fresh&&b){/* every new step brings its own area into view */const r=b.getBoundingClientRect();if(r.top<70||r.bottom>innerHeight-20)b.scrollIntoView({block:r.height>innerHeight*.6?'start':'center',behavior:'instant'});}
  {const app=$('app'),apr=app&&app.getBoundingClientRect(),vw=document.documentElement.clientWidth||innerWidth;
   if(b&&apr&&vw-apr.right>=292){/* desktop: the tip sits beside the app, level with its target, never on top of the app */const W2=Math.min(420,vw-apr.right-32);
@@ -97,9 +102,10 @@ function tourPaint(){document.querySelectorAll('.bnc').forEach(e=>e.classList.re
  if(b&&s.hand){/* swipe steps: the tip sits under the \u2715/\u2665 row so the tiles or mat on top, the card and the buttons all stay visible */
   const ac=b.closest('.sec')&&b.closest('.sec').querySelector('.acts');const vw=document.documentElement.clientWidth||innerWidth,w=Math.min(420,vw-24),G=10;
   c.style.width=w+'px';c.style.right='auto';c.style.margin='0';c.style.bottom='';c.style.left=Math.round((vw-w)/2)+'px';
-  if(ac){if(fresh){const ar=ac.getBoundingClientRect(),over=ar.bottom+G+c.offsetHeight-(innerHeight-G),room=b.getBoundingClientRect().top-64;const d=Math.min(over,room);if(d>0)window.scrollBy({top:d,left:0,behavior:'instant'});}
+  if(ac){const br=b.getBoundingClientRect(),seen=br.bottom>64&&br.top<innerHeight;if(!fresh&&!seen){c.style.visibility='hidden';return;}c.style.visibility='';
+   {const ar=ac.getBoundingClientRect(),over=ar.bottom+G+c.offsetHeight-(innerHeight-G),room=br.top-64;const d=Math.min(over,room);if((fresh||Date.now()-(TOUR.hold||0)>1500)&&(d>0||(fresh&&br.top<64)))window.scrollBy({top:d>0?d:br.top-64,left:0,behavior:'instant'});}
    c.style.top=Math.round(Math.min(ac.getBoundingClientRect().bottom+G,innerHeight-G-c.offsetHeight))+'px';return;}}
- coachPlace(c,b);}
+ coachPlace(c,b);const st=TOUR.step;clearTimeout(TOUR.rp);TOUR.rp=setTimeout(()=>{/* the card preview draws late and moves the page: re-place once */if(TOUR.on&&TOUR.step===st&&!s.hand){const b2=tourTarget(s);if(b2)coachPlace(c,b2);}},700);}
 """ + h[_b:]
 # coachRect reads the new target helper
 rep("""b=TOUR.on&&TSTEPS[TOUR.step]&&TSTEPS[TOUR.step].b.split(',').map(x=>document.querySelector(x)).find(Boolean);""", """b=TOUR.on&&TSTEPS[TOUR.step]&&tourTarget(TSTEPS[TOUR.step]);""")
@@ -111,7 +117,11 @@ rep("""{const _rm=renderMats;renderMats=function(){_rm();if(TOUR.on)setTimeout(t
  const _rm=renderMats;renderMats=function(){_rm();sync();if(!TOUR.on&&S.set!=null&&!matLocked()&&queue('m').length)hint('picks','.frow [data-her="m"]');};
  const _dc=decide;decide=function(k,yes){_dc(k,yes);sync();if(k!=='m')return;if(!yes)hint('back','[data-back="m"]');if(yes&&S.liked.length===1)hint('mock','.tray .th button');if(S.hist.length>=5)hint('colors','.frow .dot[data-fam]:not([data-fam=""])');};}""")
 # while the tour runs, it does the scrolling (jump()'s smooth scroll fought the tour's)
-rep("""function jump(id){requestAnimationFrame(""", """function jump(id){if(TOUR.on)return;requestAnimationFrame(""")
+rep("""renderAll();jump('s-mats');return;}""", """renderAll();if(!TOUR.on)jump('s-mats');return;}""", 2)
+rep("""S.peek=null;renderAll();jump('s-racks');""", """S.peek=null;renderAll();if(!TOUR.on)jump('s-racks');""")
+# a scroll she makes re-places (never re-scrolls) the swipe-step tip
+rep("""addEventListener('resize',()=>{if(TOUR.on)tourPaint();});""", """addEventListener('resize',()=>{if(TOUR.on)tourPaint();});
+let tsc=0;addEventListener('scroll',()=>{if(!TOUR.on||!TSTEPS[TOUR.step].hand)return;cancelAnimationFrame(tsc);tsc=requestAnimationFrame(()=>{const c=$('coach'),b=tourTarget(TSTEPS[TOUR.step]);if(!c||!b)return;const br=b.getBoundingClientRect(),ac=b.closest('.sec')&&b.closest('.sec').querySelector('.acts');const seen=br.bottom>64&&br.top<innerHeight;c.style.visibility=seen?'':'hidden';if(seen&&ac&&!(innerWidth>=1100))c.style.top=Math.round(Math.min(ac.getBoundingClientRect().bottom+10,innerHeight-10-c.offsetHeight))+'px';});},{passive:true});""")
 # first open: the tour starts by itself (no question sheet); testers can switch it off
 rep("""setTimeout(()=>{if(S.set==null)tourOffer();},1200);""", """setTimeout(()=>{if(S.set==null&&!NOTOUR&&!LS.get('fym_tour')&&!TOUR.on)tourStart();},1200);""")
 rep("""Take the 30-seco""", """Take the 30-seco""")
@@ -119,13 +129,12 @@ rep("""Take the 30-seco""", """Take the 30-seco""")
 _c = """.tray.rsb{align-items:center}.tray.rsb .rsw{flex:1;min-width:0}.tray.rsb .rsw small{display:block;font:600 12px var(--body);color:var(--mute);margin:0 0 4px}
 .tray.rsb .th button{width:84px;height:54px}"""
 rep(_c, """/* v75: rack screen mirrors the mat screen; tour swipe hand */
-.tilev.mband{aspect-ratio:auto;height:min(52vw,240px)}.tilev.mband img{position:absolute;left:0;top:0;width:auto;height:100%;max-width:none}
-@media (min-width:561px){.tilev.mband{height:300px}}
+.tilev.mband img{position:absolute;left:0;top:0;width:auto;height:100%;max-width:none}
 .tilev.mband .xz{bottom:8px;right:8px}
 .tcap .tcr{display:flex;gap:6px;align-items:center;opacity:1}
 .tcap span.tcr{opacity:1}
-.deck.r,.cmp .deck.r{height:min(calc(100vw - 24px),420px)}
-@media (max-width:560px){.deck.r{height:min(calc(100vw - 24px),calc(100dvh - 400px),420px);min-height:200px}}
+.deck.r,.cmp .deck.r{height:min(calc(100vw - 24px + 54px),550px)}
+@media (max-width:560px){.deck.r,.cmp .deck.r{height:min(calc(100vw - 24px + 54px),calc(100dvh - 372px),550px);min-height:200px}}
 .tray.rtr .th button{width:84px;height:54px}
 .tray.rtr .go{max-width:110px}
 .rnote{margin:-2px 2px 0;font:600 12px var(--body);color:var(--mute)}
