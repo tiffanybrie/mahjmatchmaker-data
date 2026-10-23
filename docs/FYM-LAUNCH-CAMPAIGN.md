@@ -32,3 +32,4 @@
 - App rule for tile sets: partner brands + sets she has matched in an album (her call). Sunday Hummingbird has no album yet (album = to-do, Matches & Catalog chat).
 - Next feature: Bam Bird Boutique Classic Tortoise × a match she picks from its album.
 - Two-phone stories: small phone = the start screen with the two doors; big phone = the featured set's tiles + cross-brand mat. Every screen shown must relate to the featured match (Tiffany, Oct 23 3:11pm).
+- Rotate MAT brands too: never the same mat brand in back-to-back pieces (used so far: Britt Mills Heiress with Papaya). Partner mats only.
