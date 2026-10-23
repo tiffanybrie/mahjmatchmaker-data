@@ -72,6 +72,7 @@ Never send any email to her list without her one-time template yes. Never send t
   - header logo on cream, the fan image linked to /find-your-match, text, the "Start swiping" button to /find-your-match, and the albums/code/sign-off section
   - not scheduled and not sent
   - Sender Details and Legal Address are empty (waiting on her address)
+- Oct 23 2:27am: Tiffany APPROVED welcome, album-request, album-exists and album-live. Welcome + album-request automations go live NOW with pre-launch wording (DESK OPS item); only the launch tutorial email awaits its revision.
 - Automations: not built yet. The Oct 15 "Reply to form submission" draft is the untouched Squarespace sample ("Thank you for getting in touch", trigger Any form). The launch-day task turns it into the album-request thank-you (trigger: Request an Album form only). It also builds "Welcome new subscribers" from `welcome.html`. The Oct 8 "Tag Contacts who fill out a form" draft is not ours.
 - Notify-me form: not live (see §1). Until it is, the announcement bar's "Get notified" link (to /find-your-match) lands on a page with no signup.
 
