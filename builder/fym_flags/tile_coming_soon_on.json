@@ -1,1 +1,5 @@
-{"_note": "coming_soon switch: sets listed in on (or all: true) show the Photo coming soon card. Oct 21 7:12pm: Tiffany threshold applied, final list (commit dfbbe1a) -> all on; non-sets removed instead (tile_removals.py).", "all": true, "on": []}
+{
+ "_note": "coming_soon switch: sets listed in on (or all: true) show the Photo coming soon card. Oct 21 7:12pm: Tiffany threshold applied, final list (commit dfbbe1a) -> all on; non-sets removed instead (tile_removals.py).",
+ "all": true,
+ "on": []
+}

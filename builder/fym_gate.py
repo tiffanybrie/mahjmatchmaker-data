@@ -149,7 +149,7 @@ for k, m in M.items():
 mb = re.search(r'function matBtn\(id\)\{.*?\n', UI)
 if not mb or "M[id].rt?" not in mb.group(0) or 'Retired' not in mb.group(0):
     F.append("[3b] matBtn (mat-door grid + door search) has no Retired label for rt mats")
-ms = re.search(r"box\.innerHTML=hits\.length\?hits\.map\(id=>`<button type=\"button\" data-mock.*?\n", UI)
+ms = re.search(r"box\.innerHTML=hits\.length\?hits\.map\(id=>`<button type=\"button\" data-(?:mock|mfront).*?\n", UI)
 if not ms or "M[id].rt?" not in ms.group(0) or 'Retired' not in ms.group(0):
     F.append("[3b] mat search list (#msr) has no Retired label for rt mats")
 
@@ -562,6 +562,12 @@ if 'data-back="r"' not in UI: F.append("[37] Back button on the rack deck missin
 if 'class="slots"' in UI or 'function rSuitors(' in UI: F.append("[37] old empty rack slots / separate suitors tray still in the app")
 # 38 card format names (Tiffany Oct 22 desktop note 6): the spread is "Mood board", the stacked close-ups are "Close up"
 if "const VIEWS=[['tri','Mood board'],['stack','Close up']];" not in UI: F.append("[38] card formats must read Mood board / Close up (was Love triangle / Mood board)")
+
+# 40 mat search on the mat screen (Tiffany Oct 23 3:21pm): a searched mat goes to the top of the MAT swiper, never straight to racks
+_ms = UI[UI.find("if(e.target.id!=='msq')"):]
+_ms = _ms[:_ms.find('\n')+600]
+if 'data-mock' in _ms[:_ms.find("No mat by that name")]: F.append("[40] mat-search results jump to the racks (data-mock); they must put the mat on top of the mat swiper")
+if 'S.mfront' not in fn('matDeck') or "q('[data-mfront]')" not in UI: F.append("[40] searched mat is not put on top of the mat deck")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")

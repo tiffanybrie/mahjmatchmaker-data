@@ -17178,27 +17178,22 @@
   },
   "middle-main-mahjong-peach-pine": {
    "m": [],
-   "hid": true,
    "name": "Peach & Pine"
   },
   "middle-main-mahjong-barrier-island": {
    "m": [],
-   "hid": true,
    "name": "Barrier Island"
   },
   "middle-main-mahjong-sunshine": {
    "m": [],
-   "hid": true,
    "name": "Sunshine"
   },
   "middle-main-mahjong-palmetto": {
    "m": [],
-   "hid": true,
    "name": "Palmetto"
   },
   "middle-main-mahjong-charleston": {
    "m": [],
-   "hid": true,
    "name": "Charleston"
   },
   "oh-my-mahjong-papaya-spritz": {
@@ -27486,6 +27481,13 @@
    "field": "hid",
    "change": "unhidden: no_tiles flag was wrong (tiles in acrylic trays ARE tiles); new per-colorway photos show faces + backs (builder/fym_fix_oct23/bambird_tiles.py)",
    "approval": "Tiffany Oct 23 2:58pm: every Bam Bird tile set, each colorway, in the app"
+  },
+  {
+   "date": "2026-10-23",
+   "set": "middle-main-mahjong-barrier-island,middle-main-mahjong-charleston,middle-main-mahjong-palmetto,middle-main-mahjong-peach-pine,middle-main-mahjong-sunshine",
+   "field": "hid",
+   "change": "unhidden with real tile layout photos (builder/fym_fix_oct23/v78_answers.py)",
+   "approval": "Tiffany Oct 23 3:27pm: Middle & Main's 5 state sets should not be hidden"
   }
  ]
 }

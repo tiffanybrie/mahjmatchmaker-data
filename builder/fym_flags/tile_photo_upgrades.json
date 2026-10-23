@@ -2034,19 +2034,20 @@
    "name": "Barrier Island",
    "brand": "Middle & Main Mahjong",
    "tile_key": "www.middleandmainmahjong.com/barrier-island-tiles-a-southern-shoreline-inspired-mahjong-set",
-   "status": "coming_soon",
+   "status": "keep",
    "locked": false,
    "hidden_now": true,
    "current": "t15/148.jpg",
    "reason": "only lifestyle/graphics; stays hidden",
    "product_url": "https://www.middleandmainmahjong.com/products/barrier-island-tiles-a-southern-shoreline-inspired-mahjong-set",
-   "frame": null
+   "frame": null,
+   "note": "Oct 23: brand layout photo (Tiffany 3:27pm: state sets shown)"
   },
   "middle-main-mahjong-charleston": {
    "name": "Charleston",
    "brand": "Middle & Main Mahjong",
    "tile_key": "www.middleandmainmahjong.com/charleston-tiles-a-south-carolina-inspired-mahjong-set",
-   "status": "upgrade",
+   "status": "keep",
    "locked": false,
    "hidden_now": true,
    "current": "t15/151.jpg",
@@ -2062,43 +2063,47 @@
     ],
     "fz": 1,
     "note": "reset: old chart-photo fp no longer applies"
-   }
+   },
+   "note": " | Oct 23: replaced by brand layout photo t78 (Tiffany 3:27pm)"
   },
   "middle-main-mahjong-palmetto": {
    "name": "Palmetto",
    "brand": "Middle & Main Mahjong",
    "tile_key": "www.middleandmainmahjong.com/palmetto-tiles-a-south-carolina-inspired-mahjong-set",
-   "status": "coming_soon",
+   "status": "keep",
    "locked": false,
    "hidden_now": true,
    "current": "t15/150.jpg",
    "reason": "only lifestyle; pile sits on woven mat",
    "product_url": "https://www.middleandmainmahjong.com/products/palmetto-tiles-a-south-carolina-inspired-mahjong-set",
-   "frame": null
+   "frame": null,
+   "note": "Oct 23: brand layout photo (Tiffany 3:27pm: state sets shown)"
   },
   "middle-main-mahjong-peach-pine": {
    "name": "Peach & Pine",
    "brand": "Middle & Main Mahjong",
    "tile_key": "www.middleandmainmahjong.com/peach-pine-tiles-a-georgia-inspired-mahjong-set",
-   "status": "coming_soon",
+   "status": "keep",
    "locked": false,
    "hidden_now": true,
    "current": "t15/147.jpg",
    "reason": "only lifestyle/wood surface",
    "product_url": "https://www.middleandmainmahjong.com/products/peach-pine-tiles-a-georgia-inspired-mahjong-set",
-   "frame": null
+   "frame": null,
+   "note": "Oct 23: brand layout photo (Tiffany 3:27pm: state sets shown)"
   },
   "middle-main-mahjong-sunshine": {
    "name": "Sunshine",
    "brand": "Middle & Main Mahjong",
    "tile_key": "www.middleandmainmahjong.com/sunshine-tiles-a-florida-inspired-mahjong-set",
-   "status": "coming_soon",
+   "status": "keep",
    "locked": false,
    "hidden_now": true,
    "current": "t15/149.jpg",
    "reason": "only lifestyle/cloth surface",
    "product_url": "https://www.middleandmainmahjong.com/products/sunshine-tiles-a-florida-inspired-mahjong-set",
-   "frame": null
+   "frame": null,
+   "note": "Oct 23: brand layout photo (Tiffany 3:27pm: state sets shown)"
   },
   "miss-mahjong-classic-jade-numbered-flower": {
    "name": "Classic Jade Numbered Flower",
