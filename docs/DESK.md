@@ -101,7 +101,7 @@ Also running all weekend: Tiffany tests Find Your Mat-ch v74 (Thu-Sun); Matches 
 On HQ in this order. Today = 1-5.
 1. **Planoly: one yes for the countdown stories + Papaya "Still available" + Mahj Mood restock story** (phone is fine; before 7:30am CT Fri so "4 days" goes out).
 2. **Brownstone Bloom: one tap** (RTS `l-brownstone-v2`).
-3. **Vivienne mat album: approve the card order** (RTS `l-viv-order2`).
+3. ~~Vivienne mat album~~ PARKED (Tiffany Oct 23 6:50pm: no mat albums; Mat Edit idea likely dropped). Hide RTS `l-viv-order2`.
 4. **Launch email: one yes + footer mailing address** (RTS `d-email-templates`; P.O. box works; needed before Mon Oct 26). The two tutorial screens get refreshed in place after her yes (priority 3); the yes covers wording and the send.
 5. **Reconnect Instagram via Facebook in Planoly** (computer, 2 min).
 6. This week: launch-week copy (3 drafts on RTS); thin-album swipe (78 mats, 0 votes); 3 FYM questionable photos (keep/hide); Fait à Main affiliate link + code; Oct 21 amounts for Mahjong Row, Middle & Main, My Fair Mahjong.
