@@ -31,3 +31,4 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 - 2026-10-23 09:01 · original · FYM testing links · needs TWO shareable no-login links today: one with NO tutorial (layout test for her husband) and one with the FULL tour; the full tour is needed now, not before launch · none
 - 2026-10-23 09:13 · original · FYM rack screen · v74 is wrong: must mirror the mat screen exactly (mat top, rack swiper under it, suitors at bottom; no empty slots) · none
 - 2026-10-23 09:19 · original · extra usage · NOT pre-enabling; go full speed on launch work, she adds extra usage only when the limit is actually hit; chats must tell her the moment they hit it · none
+- 2026-10-23 09:33 · original · FYM focus · pause How It Works page work; only app layout (rack mirror) + the 30-second tour; tour bugs: loops back to mat (Add racks tapped 2-3x), shows suitors after the Add racks prompt (wrong order) · none

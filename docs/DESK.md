@@ -25,6 +25,10 @@ Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27, (2) fall content befo
 Also running all weekend: Tiffany tests Find Your Mat-ch v74 (Thu-Sun); Matches & Catalog fixes what she reports the same day (gate + independent QA).
 
 ## In progress
+- **FOCUS (Tiffany Oct 23 9:33am): ONLY the app + its in-app 30-second tour until both are right.** PAUSE every How It Works page / page-block / tutorial-screenshot edit (no page copy changes; the page only gets the new app build so testers see it). Order:
+  1. Rack screen = mirror of the mat screen (spec above: mat on top, rack swiper under it, rack suitors fall to the bottom; no empty slots).
+  2. Rebuild the 30-second tour on the NEW layout. Bugs she hit in the current tour: (a) it loops: she had to tap "Add racks" 2-3 times because a step sends her back to the mat and talks about the mat again; (b) step order is wrong: it shows the suitors AFTER prompting her to tap Add racks. Correct order: tiles → swipe mats (♥ sends a mat to suitors below) → your mat suitors → pick your mat → Add racks (once, moves forward, never back to mats) → swipe racks (♥ sends to rack suitors below) → Make it official → your card → Share. Add a node test that clicks through the whole tour and fails if any step repeats or returns to an earlier screen.
+  3. Gate + independent QA (phone 390px + desktop) clicking through the full tour, then artifact AND website app copy together, then tell her.
 - **FYM RACK SCREEN IS WRONG IN v74, REDO FIRST (Tiffany Oct 23 9:13am, "I also already gave this feedback"). Exact spec, a MIRROR of the mat screen:**
   1. Top: the chosen MAT (where the tile set sits on the mat screen).
   2. Directly under the mat: the RACK SWIPER (the rack card they swipe ✕/♥), same size, same buttons, same gestures as the mat swiper.
