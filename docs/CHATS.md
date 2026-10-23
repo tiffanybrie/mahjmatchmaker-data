@@ -4,7 +4,7 @@
 
 Every chat lives in the claude.ai Project "Mahj Matchmaker" and starts by reading: CLAUDE.md (repo rules), docs/BRAND-GUIDE.md, docs/DESK.md, and this file. Shared memory = the repo (github tiffanybrie/mahjmatchmaker-data), the Project docs, HQ (artifact Cor6pKtesou4mFRQ41P6Ye) and Ready to Ship (RTtaTzgkN2ssmiAP3FxvJF). Anything unfinished goes on DESK.md with its next step.
 
-Usage: weekly limit ~90%+ used until Sun Oct 25 11am ET. Until then: light work only (chat, text edits, Planoly text changes). Heavy work (new images, builds, QA agents, long Chrome jobs) waits for the reset unless Tiffany says go.
+Usage (Tiffany Oct 23 9:19am): LAUNCH WORK (app + social) RUNS AT FULL SPEED NOW, no holding back for the Sunday reset. She will NOT pre-enable extra usage; she turns it on herself only when the limit is actually hit. So: work in order of launch priority, and the moment you hit the limit, tell her plainly in chat ("limit reached, here is exactly where I stopped and what's next") and write the stopping point on DESK, so she can turn on extra usage and nothing is lost. Non-launch work (Pinterest, catalog extras, cleanup) stays light until Sunday.
 
 ## 1. MAIN chat (Opus) — her front door
 Owns: social + Planoly (IG workspace 019fc27c-0bef-7533-bc3f-030acc19a135), site pages + blog + /links, email, partner relationships, money totals, HQ + DESK, decisions.
