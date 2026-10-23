@@ -6,6 +6,16 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 
 **Owners (three chats, Oct 22):** Main (Opus) = social/Planoly, site pages, email, HQ/DESK, decisions. Matches & Catalog (Opus) = Find Your Mat-ch, albums, gallery, catalog, search index. Ops (Sonnet) = the ONLY Chrome driver: Squarespace pastes, uploads, IG follows, verified-date refreshes.
 
+## ⭐ VIP SUNDAY (Oct 25, 11am) FYM LIST, mirrored on HQ item vip-sunday-fym-oct25 (order 0). Same list both places; tick both.
+- [ ] Missing tile sets from docs/audits/tile-audit-2026-10-23.md, one row per colorway: My Fair Mahjong, Bespoke (standard only, NO mega/XL), Mahjong Studios, Let's Be Besties, Amahj On the Water, Anders Ruff Green Light Gatsby, TdT House Clovers Warm White
+- [ ] Verify the audit's holiday name-matches
+- [ ] Hidden/removed-from-FYM review list for Tiffany (photos + reason), one place
+- [ ] Recheck the wrong 'acrylic trays = no tiles' flags (TdT etc.)
+- [ ] Bam Bird Classic Tortoise: her Canva photo 1400x1400
+- [ ] Ops: paste the v78 page block (site-app needs t78/ + b23v1.js reachable + warmed)
+- [ ] Share card bigger logos + auto-copied caption; PWA; sticky box bug; WebKit tour check
+- Kept out (her call): Splash of Color, Bespoke mega, OMM Debutantes
+
 ## Tomorrow's top priorities (Fri Oct 23), in order
 Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27, (2) fall content before it expires (Brownstone Bloom), then holiday (from Nov 1). The order below follows it; no ordering question needed.
 
