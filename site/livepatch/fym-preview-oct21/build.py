@@ -20,8 +20,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CDN = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@'
 ASSET = CDN + '44563dd1c2c4d9a00aa3deec61b1d86ccfdbcaf8/assets/site/fym-page/'
 WORDMARK = CDN + '8952b136784680ba365a33d7ae13ba91a25ab561/assets/brand/mahjmatchmaker-wordmark-notag.png'
-APP_COMMIT = 'af46072d034c04a5e11654ca3d85ea9a5658741e'
-APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v75/index.html'  # v75 (Oct 23: rack screen mirror + 8-step tour; artifact version 75, 1792765036-5315)
+APP_COMMIT = 'e758279cb51ddcfae765be3840b43b28cfab7a8a'
+APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v76/index.html'  # v76 (Oct 23: v75 + version label; artifact Version 76, 1792778959-301a)
 APP_BASE = CDN + 'ad0675e42242c3abad40cac9f539a265220e26eb' + '/site-app/fym-v72/'  # every file but index.html is unchanged since v72; base stays on the v72 commit (warmed; jsDelivr 403'd t15/132.jpg at the new commit)
 
 # Oct 21 3:13pm (Tiffany): the tool's promo SHOWS THE TOOL. Hero = real v69 app screens in a true-proportion iPhone
