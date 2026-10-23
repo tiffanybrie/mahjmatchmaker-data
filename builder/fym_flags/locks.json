@@ -16985,17 +16985,14 @@
   },
   "bam-bird-boutique-mcm": {
    "m": [],
-   "hid": true,
    "name": "Mcm"
   },
   "bam-bird-boutique-boots-bubbles": {
    "m": [],
-   "hid": true,
    "name": "Boots & Bubbles"
   },
   "bam-bird-boutique-deco": {
    "m": [],
-   "hid": true,
    "name": "Deco"
   },
   "bam-bird-boutique-east-meets-west-tortoise-shell": {
@@ -17969,7 +17966,6 @@
   },
   "bam-bird-boutique-classic-mahjong-tile-set": {
    "m": [],
-   "hid": true,
    "name": "Classic Mahjong Tile Set"
   },
   "hip-hip-mahjong-i-mahj": {
@@ -27483,6 +27479,13 @@
    "field": "m",
    "change": "rack lists per (set, mat): mat's own picks (config/mat-racks-picks.json) first, then the tile set's racks; 175 pairings",
    "approval": "Tiffany Oct 22 (DESK FYM item 7 + chat ~1:58pm: 'Mat's picks, then tile racks')"
+  },
+  {
+   "date": "2026-10-23",
+   "set": "bam-bird-boutique-classic-mahjong-tile-set,bam-bird-boutique-mcm,bam-bird-boutique-boots-bubbles,bam-bird-boutique-deco",
+   "field": "hid",
+   "change": "unhidden: no_tiles flag was wrong (tiles in acrylic trays ARE tiles); new per-colorway photos show faces + backs (builder/fym_fix_oct23/bambird_tiles.py)",
+   "approval": "Tiffany Oct 23 2:58pm: every Bam Bird tile set, each colorway, in the app"
   }
  ]
 }
