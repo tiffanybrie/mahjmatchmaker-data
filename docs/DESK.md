@@ -44,6 +44,7 @@ Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27, (2) fall content befo
 Also running all weekend: Tiffany tests Find Your Mat-ch v74 (Thu-Sun); Matches & Catalog fixes what she reports the same day (gate + independent QA).
 
 ## In progress
+- **PAUSED Oct 23 4:20pm (original chat, at 98% of the weekly limit) until the Sunday reset: Google code report (daily, ~1 hr of browser on Opus), daily Google indexing, daily release radar.** Re-enable Sunday on Sonnet with the new cadence. Still running daily: sales check (10:04pm), HQ cleanup (6:47am), desk cleanup (9:23pm). Hourly brand launch watch + brand email watch were already paused. Monday 7-9am weeklies (release calendar, Google & OMM report, SEO review, T&T scan, FYM new-mat scan) fall after the reset.
 - **30-SECOND TOUR SCRIPT, HER WORDS (Tiffany Oct 23 9:37am). Build exactly this, on the mirrored rack layout:**
   1. Tiles: pick your tiles (or start with a mat).
   2. Mats: the mat swiper. A finger-swipe hint LINGERS over the card (animated hand): "♥ or swipe right if you love it, ✕ or swipe left if it's not the one." Hearted mats fall below as your suitors.
