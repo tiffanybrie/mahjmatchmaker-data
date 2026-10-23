@@ -11,3 +11,4 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 - 2026-10-22 13:32 · original · API credits · use the $200/mo credits, plan for next week · none
 - 2026-10-22 13:39 · original · FYM fixes · start now, she tests over the weekend (not Sunday) · none
 - 2026-10-22 14:51 · original · verified dates + all core recurring jobs · standing authority: never ask her permission for core recurring work (verified refresh, code/link checks, Google report fixes, /links refresh); just do it and log it (CLAUDE.md STANDING AUTHORITY) · HQ codes-2026-10-21 → Claude job
+- 2026-10-22 23:17 · original · verified refresh · do NOT re-test codes in the browser; codes work (commissions prove it, customers would report). Just refresh the dates; only change a code if a partner email says so · none
