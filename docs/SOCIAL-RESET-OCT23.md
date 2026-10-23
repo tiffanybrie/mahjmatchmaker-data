@@ -24,3 +24,9 @@ Written in the original chat after Tiffany found Planoly full of stale versions.
 3. Every reel gets an intro card that sets up the premise ("Tile sets are single. Mahj Matchmaker sets them up."), then the joke.
 4. Replace the 6-5-4-3-2-1 countdown with branded launch content that shows the tool (phones, swipes, real matches), not tile one-liners.
 5. Ask her for the lost Pippa notes in one short question.
+
+## Done overnight (Oct 23, 3:10am, original chat)
+- Planoly calendar cleaned: the 12 old S2 episode reels, the old Pippa v2 and all 7 countdown stories (6,5,4,3,2,1, LIVE) had their dates removed. They are undated drafts now (off the calendar, nothing deleted). DO NOT re-date or re-add assets/reels/s2/*.mp4 or assets/social/countdown/*: they are the versions she rejected.
+- Still on the calendar (all drafts, nothing posts without her yes): Papaya "still available" story (Fri), "It's a mat-ch" Papaya × Heiress (Sun), Miss Classic tease (Mon), launch carousel + link story (Tue), Night of the Raven (Wed) + Halloween story (Sat 10/31), Polo Club + Rudolph holiday tables (Nov 4/6).
+- RECOVERED Smith swipe reel v6 (Oct 13, the one she loved, with clicks) from an old scratchpad: assets/reels/smith-swipe/smith-swipe-v6.mp4 (+ v5, clicks_v6.wav, full source in scripts/social/smith-swipe-src/). In Planoly as a draft on Sat 10/24 for her "is this the one?". Oct 13 note on it: she wanted her Tinder-style flame icon big next to "Smith" (v4 did that).
+- Old HQ snapshots with her Oct 11-15 answers: /tmp/...-home-claude-mahjmatchmaker-data.../scratchpad/hq8/needs/*.json (recovered list in this chat's scratchpad recovered_feedback.txt). The Oct 17-19 chat round ("reels all look identical", the Pippa teardown) is NOT recoverable: ask her for 2-3 lines.
