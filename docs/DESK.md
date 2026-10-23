@@ -14,6 +14,11 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 - [ ] Bam Bird Classic Tortoise: her Canva photo 1400x1400
 - [ ] Ops: paste the v78 page block (site-app needs t78/ + b23v1.js reachable + warmed)
 - [ ] Share card bigger logos + auto-copied caption; PWA; sticky box bug; WebKit tour check
+- [ ] (Oct 23 3:55pm feedback, see ANSWERS) Rack suitors: none preselected, tap = shows on mat image, 2nd = split frame, max 2, '2 of 2 picked' + 'Pick 1 or 2 racks', swipe-arrow hint; mat suitor 'Uncheck to keep swiping'
+- [ ] Tour: step 1 text (shop by color or search a specific set), step 6 (pick 1-2 racks, not auto first two), point to rack search
+- [ ] Tiffany's picks OFF = colour-theory ranked mats (visibly different from ON)
+- [ ] Rack cutout audit (Bespoke Highlighter Pink fringe): bad cut -> brand white-bg photo
+- [ ] Match card: mood board racks bigger (vertical stack?), bigger logo + legible tagline, OMM logo inside its pill
 - Kept out (her call): Splash of Color, Bespoke mega, OMM Debutantes
 
 ## Tomorrow's top priorities (Fri Oct 23), in order

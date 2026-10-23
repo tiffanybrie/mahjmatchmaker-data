@@ -55,3 +55,13 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 - 2026-10-23 15:27 · original · Bespoke Mega / XL tiles · take ALL Bespoke mega/XL sizes out of FYM (rack suggestions are mostly 20-inch; a mega set could lead to buying racks that don't fit); standard-size tiles only · hidden v78
 - 2026-10-23 15:27 · original · OMM Debutantes = travel sets → stay hidden. Middle & Main's 5 state sets (Peach & Pine, Barrier Island, Sunshine, Palmetto, Charleston) must NOT be hidden · v78
 - 2026-10-23 15:24 · original · wants one place to review everything NOT in FYM and why (hidden tile sets + reasons, photo checks, removed mats) · review page being built
+
+- Oct 23 3:55pm (Tiffany, FYM v77 tour walk-through; build Sunday, VIP list):
+  - Tour step 1 text: "...then pick yours just below: shop by color or search a specific set."
+  - Swipe-step tip placement (down by the X/heart) is CORRECT; keep it. Tour ending is good.
+  - RACK SUITORS: nothing preselected. Tapping a rack suitor shows it on the mat image above; a 2nd pick SPLITS the frame (mat + 2 racks). Max 2: "2 of 2 picked. Tap a check to unpick it." Prompt "Pick 1 or 2 racks for your mock-up". No hidden checks off-screen; add a swipe arrow hint on the suitor row. Never auto-take the first two at Make it official (tour step 6 text was wrong).
+  - Mat screen same idea: when a suitor is picked, prompt "Uncheck your suitor to keep swiping."
+  - Tour must point out the rack search (own racks? search here).
+  - Tiffany's picks OFF must change the mats: show the colour-theory ranked mats (hers may mix in), so newer mats she never matched show up. On vs off must look different.
+  - Bespoke Ultimate Rack Highlighter Pink cutout is ugly (fuzzy black fringe). Audit every rack cutout; if it can't be cut cleanly keep the brand's white background photo.
+  - Match card: mood board racks bigger (vertical stack OK, Claude's call); Mahj Matchmaker logo + tagline bigger/legible on both views; OMM logo overflows its pill in close-up.
