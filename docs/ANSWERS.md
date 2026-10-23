@@ -34,3 +34,4 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 - 2026-10-23 09:33 · original · FYM focus · pause How It Works page work; only app layout (rack mirror) + the 30-second tour; tour bugs: loops back to mat (Add racks tapped 2-3x), shows suitors after the Add racks prompt (wrong order) · none
 - 2026-10-23 09:37 · original · FYM 30-second tour script (8 steps, in DESK) + remove sticky top box on the preview page + tour and How It Works page are separate jobs · none
 - 2026-10-23 09:37 · original · home-screen app (PWA) · condition: must always load the live version and count as a site visit every open; no offline caching · none
+- 2026-10-23 09:38 · original · FYM tour bugs · blue tip box still said mats on the rack step; screen did not scroll down to racks; confirm order: pick a suitor, then Add racks (one tap) · none
