@@ -1,35 +1,75 @@
-"""FYM tour check (QA v72, Oct 21): at 390x664, 390x844 and 1280x800 (Chromium; phone sizes also WebKit) walk all 6 tour steps and
-FAIL if a coach bubble intersects its bounce target, the target is not fully on screen, or elementFromPoint at the target is not the target.
-Usage: python3 builder/fym_tour_place_check.py <build_dir> [shots_dir]   (serves the build itself on a free port). Exit 1 on any fail."""
-import sys,time,json,os,socket,subprocess
+"""FYM tour walk (Tiffany Oct 23 9:33-9:38am; replaces the v72 6-step placement check). Gate [35] runs it.
+At 390x664, 390x844 (Chromium + WebKit) and 1280x800 (Chromium), from a fresh first open:
+ - the tour starts by itself and walks her 8-step script by DOING each step (pick tiles, heart a mat, pick the suitor,
+   Add racks ONCE, heart a rack, Make it official, Next, Done);
+ - the steps arrive exactly in order (tiles, mats, pick, add, racks, make, share, shop); a step never repeats or goes back;
+ - Add racks moves to the racks with ONE tap;
+ - each tip box names its own step (coach data-step == current step, text starts with that step's title);
+ - each step's target is on screen when the step starts (auto-scroll) and the tip box does not cover it;
+ - no page errors; #notour keeps the tour off; "Take the tour" replays it from step 1.
+Usage: python3 builder/fym_tour_place_check.py <build_dir> [shots_dir]. Exit 1 on any fail."""
+import sys, time, os, socket, subprocess
 from playwright.sync_api import sync_playwright
-B=os.path.abspath(sys.argv[1]); OUT=sys.argv[2] if len(sys.argv)>2 else None
-so=socket.socket(); so.bind(('127.0.0.1',0)); port=so.getsockname()[1]; so.close()
-srv=subprocess.Popen([sys.executable,'-m','http.server',str(port),'--bind','127.0.0.1','--directory',B],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL); time.sleep(1)
-VPS=[(390,664),(390,844),(1280,800)]; fails=[]
-CHK="""()=>{const r=coachRect();if(!r)return {none:true};const [a,b]=[r.c,r.b];const inter=!(a[2]<=b[0]||b[2]<=a[0]||a[3]<=b[1]||b[3]<=a[1]);
-const s=TSTEPS[TOUR.step];const t=s.b.split(',').map(x=>document.querySelector(x)).find(Boolean);const cx=(b[0]+b[2])/2,cy=(b[1]+b[3])/2;const e=document.elementFromPoint(cx,cy);
-return {step:TOUR.step,inter,hit:!!(e&&(t===e||t.contains(e))),hitId:e&&(e.id||e.className),vis:b[0]>=0&&b[2]<=document.documentElement.clientWidth&&b[1]>=0&&b[3]<=innerHeight,c:a.map(Math.round),b:b.map(Math.round),gap:Math.round(Math.min(Math.abs(a[3]-b[1]),Math.abs(b[3]-a[1])))}}"""
+B = os.path.abspath(sys.argv[1]); OUT = sys.argv[2] if len(sys.argv) > 2 else None
+so = socket.socket(); so.bind(('127.0.0.1', 0)); port = so.getsockname()[1]; so.close()
+srv = subprocess.Popen([sys.executable, '-m', 'http.server', str(port), '--bind', '127.0.0.1', '--directory', B], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL); time.sleep(1)
+URL = f'http://localhost:{port}/index.html'
+ORDER = ['tiles', 'mats', 'pick', 'add', 'racks', 'make', 'share', 'shop']
+ACT = {'tiles': '#s-tiles .tgrid button', 'mats': '[data-yes="m"]', 'pick': '.tray .th button', 'add': 'TARGET',
+       'racks': '[data-yes="r"]', 'make': 'TARGET', 'share': '[data-tour-next]', 'shop': '[data-tour-next]'}
+STATE = """()=>{if(!TOUR.on)return {on:false};const s=TSTEPS[TOUR.step],c=document.getElementById('coach'),t=tourTarget(s);
+ const cr=c&&c.getBoundingClientRect(),tr=t&&t.getBoundingClientRect(),vh=innerHeight,vw=document.documentElement.clientWidth;
+ const inter=!!(cr&&tr)&&!(cr.right<=tr.left||tr.right<=cr.left||cr.bottom<=tr.top||tr.bottom<=cr.top);
+ const vis=tr?Math.max(0,Math.min(tr.bottom,vh)-Math.max(tr.top,56))/Math.max(1,Math.min(tr.height,vh-56)):0;
+ return {on:true,k:s.k,title:s.t,cstep:c&&c.dataset.step,ctext:c?c.textContent:'',target:!!t,vis:Math.round(vis*100)/100,inter,
+   offX:tr?(tr.left<-1||tr.right>vw+1):false,log:TOUR.log.slice()};}"""
+fails = []
+def F(tag, msg): print(tag, 'FAIL', msg); fails.append(f'{tag}: {msg}')
 with sync_playwright() as p:
-  for bt in ('chromium','webkit'):
-    for (w,h) in VPS:
-      if bt=='webkit' and w>400: continue
-      b=getattr(p,bt).launch(); pg=b.new_page(viewport={'width':w,'height':h}); errs=[]; pg.on('pageerror',lambda e: errs.append(str(e)))
-      pg.goto(f'http://localhost:{port}/index.html'); pg.wait_for_function('window.__imgsReady===true',timeout=60000); time.sleep(1.5)
-      pg.click('[data-tq-yes]'); time.sleep(1.2)
-      for k in range(6):
-        time.sleep(.5); r=pg.evaluate(CHK); tag=f'{bt}-{w}x{h}-step{k+1}'
-        OUT and pg.screenshot(path=f'{OUT}/{tag}.png')
-        bad=r.get('none') or r['inter'] or not r['hit'] or not r['vis']
-        print(tag,'OK' if not bad else 'FAIL',r)
-        if bad: fails.append(tag)
-        s=pg.evaluate("TSTEPS[TOUR.step].b"); sel=[x for x in s.split(',') if pg.query_selector(x)][0]
-        if pg.evaluate("TSTEPS[TOUR.step].ev")=='next': pg.click('[data-tour-next]')
-        else: pg.click(sel)
-        time.sleep(.6)
-        if not pg.evaluate("TOUR.on"): print(tag,'tour ended after step',k+1); break
-      print(bt,w,h,'errors',errs)
-      if errs: fails.append(f'{bt}-{w}x{h} page errors'); b.close()
+    for bt in ('chromium', 'webkit'):
+        for (w, h) in ((390, 664), (390, 844), (1280, 800)):
+            if bt == 'webkit' and w > 400: continue
+            tag = f'{bt}-{w}x{h}'
+            try: br = getattr(p, bt).launch()
+            except Exception as e_: print(tag, 'SKIP: browser not installed here'); continue
+            pg = br.new_page(viewport={'width': w, 'height': h}); errs = []
+            pg.on('pageerror', lambda e: errs.append(str(e)))
+            pg.goto(URL); pg.wait_for_function('window.__imgsReady===true', timeout=90000)
+            try: pg.wait_for_function('TOUR.on===true', timeout=6000)
+            except Exception: F(tag, 'tour did not start by itself on first open'); br.close(); continue
+            seen = []
+            for n in range(12):
+                time.sleep(.9)
+                st = pg.evaluate(STATE)
+                if not st['on']: break
+                k = st['k']
+                if seen and seen[-1] == k: F(tag, f'step {k} did not move forward after its action'); break
+                if k in seen: F(tag, f'step {k} came back (loop)'); break
+                seen.append(k)
+                if OUT: pg.screenshot(path=f'{OUT}/{tag}-{len(seen)}-{k}.png')
+                if st['cstep'] != k or not st['ctext'].startswith(st['title']): F(tag, f'tip box does not match step {k}: {st["ctext"][:60]!r}')
+                if not st['target']: F(tag, f'step {k}: target missing'); break
+                if st['vis'] < .6 or st['offX']: F(tag, f'step {k}: target not in view when the step starts (visible {st["vis"]})')
+                if st['inter']: F(tag, f'step {k}: tip box covers its target')
+                sel = ACT[k]
+                if sel == 'TARGET':
+                    sel = pg.evaluate("(()=>{const s=TSTEPS[TOUR.step];return s.b.split(',').find(x=>document.querySelector(x));})()")
+                pg.locator(sel).first.click()
+                if k == 'add':
+                    time.sleep(.5)
+                    if not pg.evaluate('!!S.fav'): F(tag, 'Add racks needed more than one tap')
+            print(tag, 'steps', seen)
+            if seen != ORDER: F(tag, f'step order {seen} != {ORDER}')
+            if pg.evaluate('TOUR.on'): F(tag, 'tour still on after Done')
+            if errs: F(tag, f'page errors {errs[:2]}')
+            # replay from the start
+            pg.locator('[data-tour]').first.click(); time.sleep(.8)
+            if not pg.evaluate("TOUR.on&&TSTEPS[TOUR.step].k==='tiles'"): F(tag, '"Take the tour" did not replay from step 1')
+            br.close()
+    br = p.chromium.launch(); pg = br.new_page(viewport={'width': 390, 'height': 844})
+    pg.goto(URL + '#notour'); pg.wait_for_function('window.__imgsReady===true', timeout=90000); time.sleep(2.5)
+    if pg.evaluate('TOUR.on'): F('notour', '#notour did not keep the tour off')
+    br.close()
 srv.terminate()
-print('FAILS',fails)
+print('FAILS', fails)
 sys.exit(1 if fails else 0)

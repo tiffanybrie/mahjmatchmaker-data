@@ -444,10 +444,10 @@ try:
 except Exception as e_: F.append(f"[22] mat-door check could not run: {e_} {_r.stderr[-300:]}")
 # 23 racks tray (2 slots, x to remove, swap via suitors), one card design in 3 sizes, code line, save/share (no press-and-hold)
 _tr = fn('tray')
-if 'class="slots"' not in _tr or 'data-rx=' not in _tr or '2 of 2' not in _tr or 'Rack suitors' not in fn('rSuitors') or 'data-rp=' not in fn('rSuitors'): F.append("[23] racks tray is not the 2-slot tray with x + Rack suitors tray (bottom, Oct 22)")
+if 'class="tray rtr"' not in _tr or 'data-rx' not in _tr or 'data-rp' not in _tr or '2 of 2' not in _tr or 'data-make' not in _tr or 'class="slots"' in _tr: F.append("[23] rack suitors tray (bottom, Oct 23): hearted racks with ✓ picks (max 2, unpick + pick to swap) + Make it official; no empty slots")
 if "if(S.rpick.length>=2){toast(" not in UI or "S.rpick.shift()" in UI: F.append("[23] a 3rd rack can push one out of the tray without x (max 2, swap via x)")
 _rr = fn('renderRacks')
-if "head(3,'Pick 2 racks'" not in _rr or _rr.find("tray('r')") > _rr.find("deck('r')") or 'Browsing racks' not in fn('deck'): F.append("[23] racks step: 'Pick 2 racks' up front / tray above the browsing deck / Browsing label missing")
+if not (0 <= _rr.find("deck('r')") < _rr.find("tray('r')")) or 'Browsing racks' in UI: F.append("[23] racks step: suitors tray must sit after the rack deck, and no 'Browsing racks' tab (Oct 23 mirror)")
 if re.search(r'(?i)press and hold', TXT): F.append("[23] press-and-hold save copy still in the UI (does not work on iPhone)")
 if "claude.use('downloads')" not in UI or 'navigator.share' not in UI or 'Save / Share my match card' not in UI: F.append("[23] Save / Share button does not use downloads capability + navigator.share")
 if not re.search(r"CARD_SIZES=\{story:\{w:1080,h:1920.*post:\{w:1080,h:1350.*pin:\{w:1000,h:1500", UI) or re.search(r'Facebook post|Pinterest pin', TXT): F.append("[23] card sizes are not Story 9:16 / Post 4:5 / Pin 2:3 (or old FB/Pin variants remain)")
@@ -546,16 +546,20 @@ for s in D['sets']:
 if _rp_bad: F.append(f"[36] {len(_rp_bad)} pairings' racks are not mat picks first + tile racks (run builder/fym_fix_oct22/rack_picks.py): " + '; '.join(_rp_bad[:8]))
 if any((D.get('lm') or {}).get(k) != v for k, v in _rp_lm.items()): F.append("[36] D.lm is missing or differs from config/mat-racks-picks.json")
 
-# 37 rack screen like the mat screen (Tiffany Oct 22 desktop notes 1-3): picker under the mat, rack suitors at the bottom,
-# ONE Tiffany's picks toggle (the filter row's), Back above the rack deck
-_rr = UI[UI.find('function renderRacks('):UI.find('function renderAll(')]
-for need_, why_ in (("tray('r')+filters('r')+`<div class=\"backrow\">${rBackBtn()}</div><div class=\"cmp\">${deck('r')}</div>`+acts('r')+rSuitors()", "rack screen order: mat, picker, filters, Back, deck, X/heart, suitors at the bottom"),
-                    ('data-back="r"', "Back button on the rack deck")):
-    if need_ not in (_rr if 'tray(' in need_ else UI): F.append(f"[37] {why_} missing")
+# 37 rack screen = MIRROR of the mat screen (Tiffany Oct 23 9:13am): chosen mat on top, rack swiper directly under it (same deck(),
+# same ✕/♥ acts), rack suitors tray at the bottom; nothing (no slots/picker) between the mat and the swiper; one picks toggle; Back on racks
+_rr = fn('renderRacks'); _rm = fn('renderMats'); _rm = _rm[_rm.find("head(2,'Mat-ching'"):]
+def _order(src, parts):
+    pos = [src.find(x) for x in parts]
+    return all(p_ >= 0 for p_ in pos) and pos == sorted(pos)
+if not _order(_rm, ["filters('m')", "tileView('m')", 'class="tcap"', "deck('m')", "acts('m')", "tray('m')"]): F.append("[37] mat screen order changed (filters, tiles, caption, deck, ✕/♥, suitors)")
+if not _order(_rr, ["filters('r')", "matBand()", 'class="tcap"', "deck('r')", "acts('r')", "tray('r')"]): F.append("[37] rack screen is not the mirror of the mat screen (filters, mat, caption, rack deck, ✕/♥, rack suitors)")
+_between = _rr[_rr.find("matBand()"):_rr.find("deck('r')")]
+if re.search(r"tray\(|slots|rSuitors|herBar", _between): F.append("[37] something sits between the mat and the rack swiper (no slots/picker there)")
 if "herBar('r')" in _rr: F.append("[37] second Tiffany's picks toggle (herBar) still on the rack screen")
 if "return kk==='m'&&herUseful(kk)?`<button type=\"button\" class=\"hb\"" not in UI: F.append("[37] the pill over the rack photo is still a picks toggle (keep one toggle on racks)")
-if 'class="rsug"' in UI[UI.find('function tray('):UI.find('function tileView(')]: F.append("[37] rack suitors still inside the top picker")
-
+if 'data-back="r"' not in UI: F.append("[37] Back button on the rack deck missing")
+if 'class="slots"' in UI or 'function rSuitors(' in UI: F.append("[37] old empty rack slots / separate suitors tray still in the app")
 # 38 card format names (Tiffany Oct 22 desktop note 6): the spread is "Mood board", the stacked close-ups are "Close up"
 if "const VIEWS=[['tri','Mood board'],['stack','Close up']];" not in UI: F.append("[38] card formats must read Mood board / Close up (was Love triangle / Mood board)")
 

@@ -145,8 +145,8 @@ run('Tiles door', () => {
   const r = H('s-racks');
   if (S.fav) fail('Osler: a mat was chosen for the mock-up without her tapping one');
   if (!/Which suitor is the one/.test(r)) fail('Osler: with several suitors the racks step does not ask her to pick one');
-  const nb = buttons(H('s-mats')).find(b => /Next: add racks/.test(b.text));
-  if (!nb || 'data-mock' in nb.a) fail('Osler: tray "Next: add racks" auto-picks a suitor when she has several');
+  const nb = buttons(H('s-mats')).filter(b => /Add racks|Next/.test(b.text));
+  if (nb.some(b => 'data-mock' in b.a)) fail('Osler: Add racks offered before she picked a mat suitor (Oct 23: pick first, then Add racks)');
   const mine = S.liked[0]; click({ 'data-mock': mine });
   if (S.fav !== mine) fail('Osler: picking her suitor did not set the mock-up mat');
   if (!S.liked.includes(S.fav)) fail('Osler: mock-up mat is not one of HER hearts');
