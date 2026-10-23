@@ -1,0 +1,46 @@
+{
+ "assets": {
+  "SMITH": "file:///home/claude/mahjmatchmaker-data/assets/tiles/album/smith.jpg",
+  "MAT1": "file:///tmp/claude-0/-home-claude-mahjmatchmaker-data/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/swr/cut-hawthorne.jpg",
+  "FLAME": "file:///home/claude/mahjmatchmaker-data/assets/brand/flame-heart.png",
+  "WORDMARK": "file:///home/claude/mahjmatchmaker-data/assets/brand/mahjmatchmaker-wordmark.png"
+ },
+ "cards": [
+  {
+   "n": "Hampton",
+   "b": "Oh My Mahjong",
+   "bio": "Lime, sky blue and cranes. Pure summer.",
+   "img": "file:///tmp/claude-0/-home-claude-mahjmatchmaker-data/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/swr/cut-hampton.jpg",
+   "yes": false,
+   "l1": "First up... Hampton?",
+   "l2": "Gorgeous, just not her type. Next!"
+  },
+  {
+   "n": "Hawthorne",
+   "b": "Oh My Mahjong",
+   "bio": "Navy + plum florals. Smith's official pair.",
+   "img": "file:///tmp/claude-0/-home-claude-mahjmatchmaker-data/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/swr/cut-hawthorne.jpg",
+   "yes": true,
+   "l1": "Navy and plum? Smith is blushing.",
+   "l2": "It's a match!"
+  },
+  {
+   "n": "Navy Vegan Leather",
+   "b": "Bam Bird Boutique",
+   "bio": "Tailored, simple, lets the woodgrain shine.",
+   "img": "file:///tmp/claude-0/-home-claude-mahjmatchmaker-data/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/swr/cut-navy26.jpg",
+   "yes": true,
+   "l1": "Tall, dark and tailored.",
+   "l2": "Swiped right!"
+  },
+  {
+   "n": "Duck Camp",
+   "b": "Mahjong Moxie",
+   "bio": "Woodgrain meets the duck blind.",
+   "img": "file:///tmp/claude-0/-home-claude-mahjmatchmaker-data/801d31e6-4a74-59be-8637-eb67bfa0e99e/scratchpad/swr/duck_sq.jpg",
+   "yes": true,
+   "l1": "A duck-blind date? Yes please.",
+   "l2": "Three for three!"
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+const {chromium}=require('playwright');(async()=>{const b=await chromium.launch();const p=await b.newPage({viewport:{width:1080,height:1920}});await p.goto('file:///tmp/sw_smith-mahjong-tile-matches/r.html');await p.evaluate(()=>document.fonts.ready);await p.waitForTimeout(800);
+for(const t of [2.6,5.2,20]){await p.evaluate(t=>render(t),t);await p.screenshot({path:process.argv[2]+'/f'+t+'.jpg',type:'jpeg',quality:70})}await b.close()})();
