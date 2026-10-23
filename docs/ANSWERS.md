@@ -28,3 +28,4 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 - 2026-10-23 08:53 · original · FYM on her phone shows OLD rack layout · cause: website preview still on v72; v74 only on the artifact. Routed to Matches & Catalog to push v74 to the site today · none
 - 2026-10-23 08:57 · original · FYM share prompt wording · drop "or with your group" (not everyone has a group): FINAL "Share your match! Tag #mahjmatch, we love to see your matches!" · none
 - 2026-10-23 08:57 · original · FYM tour · the full tour must pop up and carry users all the way through to mocking up their match (v74 lacks it) · none
+- 2026-10-23 09:01 · original · FYM testing links · needs TWO shareable no-login links today: one with NO tutorial (layout test for her husband) and one with the FULL tour; the full tour is needed now, not before launch · none
