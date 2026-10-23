@@ -18,7 +18,7 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 - [ ] Tour: step 1 text (shop by color or search a specific set), step 6 (pick 1-2 racks, not auto first two), point to rack search
 - [ ] Tiffany's picks OFF = colour-theory ranked mats (visibly different from ON)
 - [ ] Rack cutout audit (Bespoke Highlighter Pink fringe): bad cut -> brand white-bg photo
-- [ ] Match card: mood board racks bigger (vertical stack?), bigger logo + legible tagline, OMM logo inside its pill
+- [ ] Match card (3:59pm, show her versions): top logo A) big vertical, no tagline / B) square logo right of title; bottom band flaming heart + 'Matched with Find Your Mat-ch' + mahjmatchmaker.com + 'Use code MAHJMATCH to save'; mood board: no white rack box, transparent racks stacked vertically, tile-circle height, white pill labels; OMM logo inside its pill
 - Kept out (her call): Splash of Color, Bespoke mega, OMM Debutantes
 
 ## Tomorrow's top priorities (Fri Oct 23), in order

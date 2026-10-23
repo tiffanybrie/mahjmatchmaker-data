@@ -65,3 +65,8 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
   - Tiffany's picks OFF must change the mats: show the colour-theory ranked mats (hers may mix in), so newer mats she never matched show up. On vs off must look different.
   - Bespoke Ultimate Rack Highlighter Pink cutout is ugly (fuzzy black fringe). Audit every rack cutout; if it can't be cut cleanly keep the brand's white background photo.
   - Match card: mood board racks bigger (vertical stack OK, Claude's call); Mahj Matchmaker logo + tagline bigger/legible on both views; OMM logo overflows its pill in close-up.
+
+- Oct 23 3:59pm (Tiffany, match card branding + mood board; build Sunday, show her versions):
+  - Top: horizontal Mahj Matchmaker logo too small. Try 2 versions: (A) vertical logo larger, no tagline, across the top; (B) no top logo, SQUARE logo on the same line as the "<tiles> on the <mat>" title, right corner.
+  - Bottom band: flaming heart + "Matched with Find Your Mat-ch" + mahjmatchmaker.com, and under it "Use code MAHJMATCH to save".
+  - Mood board: drop the white rack box. Racks as transparent PNGs, stacked VERTICALLY over the mat, as big as the tile circle's height allows; labels in white rounded rectangles only. Story, post, pin. She wants to see this version.
