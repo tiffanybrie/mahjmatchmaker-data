@@ -25,6 +25,7 @@ Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27, (2) fall content befo
 Also running all weekend: Tiffany tests Find Your Mat-ch v74 (Thu-Sun); Matches & Catalog fixes what she reports the same day (gate + independent QA).
 
 ## In progress
+- **LAUNCH-CRITICAL (found Oct 23 8:55am, Tiffany saw the OLD rack layout on her phone): the website copy of Find Your Mat-ch is still v72.** mahjmatchmaker.com/find-your-mat-ch-preview loads site-app/fym-v72 (fym-site-preview branch); v73/v74 were published ONLY to the claude.ai artifact. OWNER Matches & Catalog, TODAY: copy the v74 build to site-app/fym-v74 on fym-site-preview, re-pin the page block (README 0a), Ops pastes it on Squarespace, curl-check. NEW RULE: every FYM publish = artifact AND site-app folder AND page-block pin in the same step; the Oct 27 launch trigger reads the README pin, so a stale pin would launch an old app.
 | Item | Owner | Next step | Target |
 |---|---|---|---|
 | Find Your Mat-ch testing build (v74 live 2:35pm Oct 22, QA PASS) | Matches & Catalog | Next small publishes, each gated + QA'd: (a) tutorial runs all the way through (mats → Next → rack swipe → Make it official → card); (b) bigger logo + slogan + partner logos on the share card; (c) one Share button, auto-copied caption with #mahjmatch, #mahjmatch + site on the card, her prompt line "Share your match on social or with your group! Tag #mahjmatch, we love to see your matches!". Minor: "Saved to your rack suitors" toast covers the rack name. Her phone notes may change layout. | Sun Oct 25 |

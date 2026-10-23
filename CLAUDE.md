@@ -33,6 +33,7 @@ Update what exists instead of starting over. Example: the launch-day homepage he
 ## Find Your Match (FYM) is the top project. These are hard rules.
 Live app: claude.ai artifact 6epA9HuEdT32zUp79Qv3kd. Its published index.html (`const D={...}`) is the build source of truth.
 
+0. **Every publish goes to BOTH places (Oct 23):** the claude.ai artifact AND the website copy (site-app/fym-vNN on the fym-site-preview branch + the page-block pin in site/livepatch/fym-preview-oct21/README step 0a, pasted on Squarespace). Tiffany tests from the website link on her phone; the Oct 27 launch uses the README pin.
 1. **Gate before every publish.** Run `python3 builder/fym_gate.py <build_dir>`. If it fails, do not publish. No exceptions.
 2. **Independent QA before Tiffany sees it.** A separate agent that did not build the change tests phone (390px) and desktop: both doors (tiles first, mat first), color filter (switch + clear), zoom persists across swipes, card + share, and VIEWS tile and mat photos via contact sheets. Tiffany is never the QA team.
 3. **Album tile photos are canonical.** Every set with a match album uses its album photo `assets/tiles/album/<set>.*` (map: scripts/swipe/canon_tiles.py). Default framing shows a tile back/layers + faces.
