@@ -6,6 +6,11 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 
 **Owners (three chats, Oct 22):** Main (Opus) = social/Planoly, site pages, email, HQ/DESK, decisions. Matches & Catalog (Opus) = Find Your Mat-ch, albums, gallery, catalog, search index. Ops (Sonnet) = the ONLY Chrome driver: Squarespace pastes, uploads, IG follows, verified-date refreshes.
 
+## IDEAS / 3.0 (Tiffany Oct 23 7:25pm)
+- Private studio view of FYM for Tiffany: Claude pre-filters by colour, measured colours on each mat, rank favorites/top 3, picks feed album builds; maybe richer colour menu there.
+- 3.0 table view: tablecloth, lamp, dice dish (ShopMy items).
+- 3.0 product links: first TEST whether each partner's affiliate link auto-applies the code (skip OMM: code only). Only then build per-product links via the portals.
+
 ## ALBUM PIPELINE (Tiffany Oct 23 7:05pm, see ANSWERS)
 - Nov = holiday matches push (+ gifting/ShopMy). Weekly Monday albums start Dec (don't announce until a few ship clean).
 - [ ] Gatsby swipe on HQ (gatsby-swipe-oct23) - hers
