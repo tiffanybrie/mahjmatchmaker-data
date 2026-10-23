@@ -26,3 +26,9 @@
 ## Formats
 - Stories: flat JPG, header just below the top danger zone, big phones, bottom-left/bottom third open for countdown + link stickers; no "save your spot" text.
 - Post all weekend, big push Monday, launch Tuesday.
+
+## Partner brands only in launch promo (Tiffany, Oct 23 2:37pm)
+- Launch content features ONLY partner brands (tiles and mats). No Sunday Mahjong or other non-partners in promo, even if they're in the app (it invites "why is X in and not me?").
+- App rule for tile sets: partner brands + sets she has matched in an album (her call). Sunday Hummingbird has no album yet (album = to-do, Matches & Catalog chat).
+- Next feature: Bam Bird Boutique Classic Tortoise × a match she picks from its album.
+
