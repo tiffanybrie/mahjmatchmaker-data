@@ -11,7 +11,7 @@ Owns: social + Planoly (IG workspace 019fc27c-0bef-7533-bc3f-030acc19a135), site
 Does NOT build: Find Your Mat-ch, albums, gallery, catalog data → put the ask on DESK under "Matches & Catalog" and tell her it's routed.
 Open now:
 - Planoly: 23 built posts loaded Oct 22 as dated drafts (Oct 23–Nov 10) + countdown/launch drafts; waiting on her review. Still to build after reset: 44 It's a mat-ch rows (captions in assets/social/its-a-match/captions.json), swipe-of-the-day stories, mat-door + holiday-door carousels, Color Me Merry board (Nov 5), gift guides, ShopMy share-video holiday series.
-- Ask her: were the Papaya hotline reel / new-girl episode / counseling reel already posted Oct 21?
+- ANSWERED Oct 23: Oct 21 she posted the static post, the reel with the tile cover, the Papaya profile carousel (+ reels to stories, a Britt Mills story). Countdown/teasers rejected as boring: see DESK SOCIAL RESET.
 - Pinned welcome post caption rewrite: she has the long version (brand guide exception logged Oct 22).
 - IG bio: change "Find Your Match" → "Find Your Mat-ch" on launch day.
 - /links weekly refresh = new standing task (Sunday cadence).
