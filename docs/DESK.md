@@ -26,6 +26,7 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 - [ ] Recheck the wrong 'acrylic trays = no tiles' flags (TdT etc.)
 - [ ] Bam Bird Classic Tortoise: her Canva photo 1400x1400
 - [ ] Ops: paste the v78 page block (site-app needs t78/ + b23v1.js reachable + warmed)
+- [ ] BUG (Tiffany 7:53pm): swipe gesture stops after ~16 mat suitors (OMM Sierra); buttons still work. Fix + gate check: swipe works after 20+ hearts, phone + desktop
 - [ ] Share card bigger logos + auto-copied caption; PWA; sticky box bug; WebKit tour check
 - [ ] (Oct 23 3:55pm feedback, see ANSWERS) Rack suitors: none preselected, tap = shows on mat image, 2nd = split frame, max 2, '2 of 2 picked' + 'Pick 1 or 2 racks', swipe-arrow hint; mat suitor 'Uncheck to keep swiping'
 - [ ] Tour: step 1 text (shop by color or search a specific set), step 6 (pick 1-2 racks, not auto first two), point to rack search
