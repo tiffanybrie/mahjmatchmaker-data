@@ -6,6 +6,14 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 
 **Owners (three chats, Oct 22):** Main (Opus) = social/Planoly, site pages, email, HQ/DESK, decisions. Matches & Catalog (Opus) = Find Your Mat-ch, albums, gallery, catalog, search index. Ops (Sonnet) = the ONLY Chrome driver: Squarespace pastes, uploads, IG follows, verified-date refreshes.
 
+## ALBUM PIPELINE (Tiffany Oct 23 7:05pm, see ANSWERS)
+- Nov = holiday matches push (+ gifting/ShopMy). Weekly Monday albums start Dec (don't announce until a few ship clean).
+- [ ] Gatsby swipe on HQ (gatsby-swipe-oct23) - hers
+- [ ] Bam Bird MCM + Deco swipe books (start small Coquette-size pile, best colour matches, partner/allowed brands, clean photos) - Claude, after Sunday FYM VIP
+- [ ] Mahjong Row & Co 2nd album; then partner brands with zero albums (make a brands-vs-albums coverage table first)
+- [ ] INPUTS: mat library completeness audit (like the tile audit) incl. non-Shopify brands (Britt Mills, Amanda Toppe), ShopMy, Etsy, Amazon; colour-index every new mat; launch watch + affiliate-email items verified present
+- [ ] Shortlist feedback loop: show colour shares per suggested mat so she can say why a pick was wrong
+
 ## ⭐ VIP SUNDAY (Oct 25, 11am) FYM LIST, mirrored on HQ item vip-sunday-fym-oct25 (order 0). Same list both places; tick both.
 - [ ] Missing tile sets from docs/audits/tile-audit-2026-10-23.md, one row per colorway: My Fair Mahjong, Bespoke (standard only, NO mega/XL), Mahjong Studios, Let's Be Besties, Amahj On the Water, Anders Ruff Green Light Gatsby, TdT House Clovers Warm White
 - [ ] Verify the audit's holiday name-matches
