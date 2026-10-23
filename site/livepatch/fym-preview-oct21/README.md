@@ -2,7 +2,8 @@
 
 Tiffany, Oct 21 2:19pm: "you have approval to change whatever needs to happen over on the Find Your Match preview page. I'd like that looking a lot better."
 
-- **Now (block @ba96342 = app v72 + v72 6-step tutorial, Oct 21 night, QA passed; before that @8dd3d49 = app v72 with the v69 tutorial; @d68a319 = app v71; @4b7f8c9 (H1 "Your" plain Oct 21 6:45pm); LIVE since Oct 21 ~5:15pm: app first, annotated tutorial at the bottom, QA passed):** hidden page `/find-your-mat-ch-preview` (Not Linked). Its only section holds ONE code block; paste `page-block.html` into it.
+- **Oct 23: block rebuilt for app v75** (site-app/fym-v75/index.html @af46072d on fym-site-preview, base = site-app/fym-v72 @ad0675e; rack screen mirror + 8-step tour, gate + independent QA PASS). Page copy unchanged (How It Works work is PAUSED per Tiffany 9:33am). Pin: see launch-oct27 README 0a. Verify string: `site-app/fym-v75/index.html`. Testers: add `?tour=off` to the page URL to skip the tour.
+- **Before (block @ba96342 = app v72 + v72 6-step tutorial, Oct 21 night, QA passed; before that @8dd3d49 = app v72 with the v69 tutorial; @d68a319 = app v71; @4b7f8c9 (H1 "Your" plain Oct 21 6:45pm); LIVE since Oct 21 ~5:15pm: app first, annotated tutorial at the bottom, QA passed):** hidden page `/find-your-mat-ch-preview` (Not Linked). Its only section holds ONE code block; paste `page-block.html` into it.
 - **10/27 launch:** the same `page-block.html` replaces the teaser code block on `/find-your-match` (page id `6ad6f62ad05b752bba9d1e8d`, section `6ad6f62ad05b752bba9d1e91`, code block `#block-2da981e143ed2cc4bb76`). This is step 0a in `site/livepatch/launch-oct27/README.md`. It runs before the homepage hero switch, whose step 0 checks that `/find-your-match` no longer says "Coming 10.27".
 
 ## What's on the page
