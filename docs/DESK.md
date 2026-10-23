@@ -25,6 +25,17 @@ Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27, (2) fall content befo
 Also running all weekend: Tiffany tests Find Your Mat-ch v74 (Thu-Sun); Matches & Catalog fixes what she reports the same day (gate + independent QA).
 
 ## In progress
+- **30-SECOND TOUR SCRIPT, HER WORDS (Tiffany Oct 23 9:37am). Build exactly this, on the mirrored rack layout:**
+  1. Tiles: pick your tiles (or start with a mat).
+  2. Mats: the mat swiper. A finger-swipe hint LINGERS over the card (animated hand): "♥ or swipe right if you love it, ✕ or swipe left if it's not the one." Hearted mats fall below as your suitors.
+  3. Pick your mat: "Pick which mat you'd like to mock up with racks." They MUST pick a suitor first; never prompt Add racks before a mat is picked.
+  4. Add racks: tap ONCE, moves forward, never back to the mat steps (current bug: it bounces and talks about the mat again).
+  5. Racks: the rack card shows right under the mat, same format. Same lingering finger hint: "Same as the mats: ♥ or swipe right, ✕ or swipe left." "Pick up to two rack suitors for each mat; they fall below."
+  6. Make it official: build the card.
+  7. Save or share: "Save it or share it" (NEVER "share it with your mahj group": not everyone has one). Share prompt: "Share your match! Tag #mahjmatch, we love to see your matches!"
+  8. Shop: how the shop links work + code MAHJMATCH.
+  In-app tour and the How It Works page are DIFFERENT jobs: the tour lives in the app; How It Works (screenshots) is for talking about the tool outside it. Don't put both on the tool; don't muddy it.
+- **PAGE BUG blocking the tool (her note 9:37am):** on /find-your-mat-ch-preview the top box sometimes sticks and scrolls with you, covering half the app. Remove the sticky behavior entirely; nothing may overlap the app. Keep the full-page (Open full screen) option; Sunday it also gets the add-to-home-screen option (no offline caching, see her PWA questions).
 - **FOCUS (Tiffany Oct 23 9:33am): ONLY the app + its in-app 30-second tour until both are right.** PAUSE every How It Works page / page-block / tutorial-screenshot edit (no page copy changes; the page only gets the new app build so testers see it). Order:
   1. Rack screen = mirror of the mat screen (spec above: mat on top, rack swiper under it, rack suitors fall to the bottom; no empty slots).
   2. Rebuild the 30-second tour on the NEW layout. Bugs she hit in the current tour: (a) it loops: she had to tap "Add racks" 2-3 times because a step sends her back to the mat and talks about the mat again; (b) step order is wrong: it shows the suitors AFTER prompting her to tap Add racks. Correct order: tiles → swipe mats (♥ sends a mat to suitors below) → your mat suitors → pick your mat → Add racks (once, moves forward, never back to mats) → swipe racks (♥ sends to rack suitors below) → Make it official → your card → Share. Add a node test that clicks through the whole tour and fails if any step repeats or returns to an earlier screen.
