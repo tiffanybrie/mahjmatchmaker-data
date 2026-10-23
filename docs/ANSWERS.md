@@ -26,3 +26,5 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 - 2026-10-23 02:56 · original · social reset · Planoly had stale/rejected versions; clean out the early cuts; reels need intros that set up the joke; Smith = the swipe version with clicks; countdown 6-5-4-3-2-1 is lame (off the calendar) · none
 - 2026-10-23 08:44 · original · Smith reel · YES, the swipe v6 with clicks is the one; make only her later fixes (navy ✕, Find Your Mat-ch™, current racks, new end card, Season 2 intro) · Planoly draft 01a16793-3e02 Sat 10/24
 - 2026-10-23 08:53 · original · FYM on her phone shows OLD rack layout · cause: website preview still on v72; v74 only on the artifact. Routed to Matches & Catalog to push v74 to the site today · none
+- 2026-10-23 08:57 · original · FYM share prompt wording · drop "or with your group" (not everyone has a group): FINAL "Share your match! Tag #mahjmatch, we love to see your matches!" · none
+- 2026-10-23 08:57 · original · FYM tour · the full tour must pop up and carry users all the way through to mocking up their match (v74 lacks it) · none
