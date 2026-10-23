@@ -7,3 +7,4 @@ old = 'Tell me here\xa0→</a></footer>'
 assert h.count(old) == 1
 h = h.replace(old, f'Tell me here\xa0→</a><small class="ver" style="display:block;margin-top:6px;font:600 11px var(--body);color:var(--mute)">Version {N}</small></footer>')
 open(P, 'w').write(h); print('labelled', N, 'titles', n1)
+# v77+: when the build already carries a label, bump it: python3 -c "..." replaces (Version N) and >Version N< (see v77 build notes)

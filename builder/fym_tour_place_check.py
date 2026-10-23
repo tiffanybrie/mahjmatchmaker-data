@@ -35,8 +35,17 @@ with sync_playwright() as p:
             pg = br.new_page(viewport={'width': w, 'height': h}); errs = []
             pg.on('pageerror', lambda e: errs.append(str(e)))
             pg.goto(URL); pg.wait_for_function('window.__imgsReady===true', timeout=90000)
-            try: pg.wait_for_function('TOUR.on===true', timeout=6000)
-            except Exception: F(tag, 'tour did not start by itself on first open'); br.close(); continue
+            # v77 (Tiffany Oct 23 2:54pm): opening never moves the screen; the offer pops up under the doors at the tour link
+            try: pg.wait_for_function("TOUR.offer===true", timeout=6000)
+            except Exception: F(tag, 'tour offer did not pop up on first open'); br.close(); continue
+            time.sleep(1.2)
+            if pg.evaluate('window.scrollY') > 2: F(tag, f'opening the app moved the screen (scrollY {pg.evaluate("window.scrollY")})')
+            o = pg.evaluate("(()=>{const c=document.getElementById('coach'),l=document.querySelector('#s-tiles [data-tour]'),d=document.querySelector('#s-tiles .door');const cr=c.getBoundingClientRect(),lr=l.getBoundingClientRect(),dr=d.getBoundingClientRect();return {top:cr.top,link:lr.bottom,door:dr.bottom,vis:cr.bottom<=innerHeight}})()")
+            if not (o['top'] >= o['door'] and abs(o['top'] - o['link']) < 40 and o['vis']): F(tag, f'offer bubble is not at the tour link under the doors {o}')
+            if OUT: pg.screenshot(path=f'{OUT}/{tag}-0-offer.png')
+            pg.locator('[data-tour-go]').click(); time.sleep(.8)
+            if pg.evaluate('window.scrollY') > 2: F(tag, 'step 1 moved the screen')
+            if pg.evaluate("TSTEPS[TOUR.step].b") != '#s-tiles .door': F(tag, 'step 1 is not the two doors')
             seen = []
             for n in range(12):
                 time.sleep(.9)
@@ -69,7 +78,7 @@ with sync_playwright() as p:
     # off-script (QA v75): picks toggle on the swipe steps, Back to the deck on step 4, Change mat on the racks step
     for (w, h) in ((390, 844), (390, 664)):
         tag = f'offscript-{w}x{h}'; br = p.chromium.launch(); pg = br.new_page(viewport={'width': w, 'height': h})
-        pg.goto(URL); pg.wait_for_function('window.__imgsReady===true', timeout=90000); pg.wait_for_function('TOUR.on===true', timeout=6000); time.sleep(.8)
+        pg.goto(URL); pg.wait_for_function('window.__imgsReady===true', timeout=90000); pg.wait_for_function('TOUR.offer===true', timeout=6000); pg.locator('[data-tour-go]').click(); time.sleep(.8)
         def chk(label):
             time.sleep(.7); st = pg.evaluate(STATE)
             if st['inter'] or st['vis'] < .6: F(tag, f'{label}: tip box covers the target or target not in view (visible {st["vis"]})')
@@ -87,7 +96,12 @@ with sync_playwright() as p:
         print(tag, 'log', pg.evaluate('TOUR.log')); br.close()
     br = p.chromium.launch(); pg = br.new_page(viewport={'width': 390, 'height': 844})
     pg.goto(URL + '#notour'); pg.wait_for_function('window.__imgsReady===true', timeout=90000); time.sleep(2.5)
-    if pg.evaluate('TOUR.on'): F('notour', '#notour did not keep the tour off')
+    if pg.evaluate('TOUR.on||TOUR.offer'): F('notour', '#notour did not keep the tour off')
+    pg.goto(URL); pg.wait_for_function('window.__imgsReady===true', timeout=90000)
+    pg.evaluate("localStorage.clear()"); pg.reload(); pg.wait_for_function('TOUR.offer===true', timeout=8000); pg.locator('[data-tour-skip]').click(); time.sleep(.5)
+    if pg.evaluate("TOUR.on||TOUR.offer||!!document.getElementById('coach')"): F('offer', 'No thanks did not close the offer')
+    pg.reload(); pg.wait_for_function('window.__imgsReady===true', timeout=90000); time.sleep(2.5)
+    if pg.evaluate("TOUR.offer"): F('offer', 'offer came back after No thanks')
     br.close()
 srv.terminate()
 print('FAILS', fails)
