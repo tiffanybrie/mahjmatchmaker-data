@@ -52,11 +52,11 @@ between('/* racks with a short colour label', 'const tc=(()=>', r'''/* v80: rack
   const draw=(im,i,bx,by,bw,bh)=>{if(!im)return {x:bx,y:by,w:bw,h:bh};const cut=R[rp[i]]&&R[rp[i]].c;
    if(!cut&&o.back){const k=Math.min((bw-16)/im.width,(bh-16)/im.height),dw=im.width*k,dh=im.height*k,dx=bx+(bw-dw)/2,dy=by+(bh-dh)/2;g.save();shadow('rgba(50,25,35,.18)',10,4);g.fillStyle='#fff';g.beginPath();g.roundRect(dx-8,dy-8,dw+16,dh+16,14);g.fill();g.restore();g.drawImage(im,dx,dy,dw,dh);return {x:dx-8,y:dy-8,w:dw+16,h:dh+16};}
    g.save();shadow('rgba(50,25,35,.2)',8,4);const b=fit(im,bx,by,bw,bh)||{x:bx,y:by,w:bw,h:bh};g.restore();return b;};
-  const lab=(t,lx,ty,mw)=>pill(lx,ty,'RACKS',t,{maxW:mw,fsN:fs,fsK:fk});
+  const lab=(t,lx,ty,mw,i)=>{const p=pill(lx,ty,'RACKS',t,{maxW:mw*.62,fsN:fs,fsK:fk});const bn=R[rp[i]]&&R[rp[i]].bn,k=rb.indexOf(bn);if(k>-1)logoChip(rl[k],bn,p.x+p.w+8,p.y,p.h,{maxW:Math.min(210,mw*.36)});return p;};
   const rows=o.rows||n===1||rkt.every(r=>r&&r.width/r.height>=2.4);
   if(rows){const rg=12,rowH=Math.min(o.maxRow||110,(h-n*lh-rg*(n-1))/n),tot=n*(rowH+lh)+rg*(n-1);let yy=y+(h-tot)/2;
-   rkt.forEach((im,i)=>{const b=draw(im,i,x,yy,w,rowH);lab(labels[i],x,b.y+b.h-Math.round(ph*.45),w);yy+=rowH+lh+rg;});}
-  else{const cg=22,cw=(w-cg*(n-1))/n,ih=h-lh;rkt.forEach((im,i)=>{draw(im,i,x+i*(cw+cg),y,cw,ih);lab(labels[i],x+i*(cw+cg),y+ih-Math.round(ph*.45),cw);});}
+   rkt.forEach((im,i)=>{const b=draw(im,i,x,yy,w,rowH);lab(labels[i],x,b.y+b.h-Math.round(ph*.45),w,i);yy+=rowH+lh+rg;});}
+  else{const cg=22,cw=(w-cg*(n-1))/n,ih=h-lh;rkt.forEach((im,i)=>{draw(im,i,x+i*(cw+cg),y,cw,ih);lab(labels[i],x+i*(cw+cg),y+ih-Math.round(ph*.45),cw,i);});}
   g.restore();};
  ''')
 
@@ -82,7 +82,8 @@ between('// footer: slim navy bar', 'const pin=!fb;', r'''// footer (v80): brand
 rep('bot=fy-22', 'bot=fby-10', 2)
 
 # close up: bigger logos + bigger racks
-rep('racks(x+28,ry+16,w-56,hR-32-lch-6,{fs:20,maxRow:96});','racks(x+28,ry+16,w-56,hR-32,{fs:20,maxRow:230});{let lx2=x+w-16;rl.forEach((im,i)=>{lx2-=logoChip(im,rb[i],lx2,ry+hR-14-lch,lch,{right:true,maxW:210})+10;});}')
+rep('racks(x+28,ry+16,w-56,hR-32-lch-6,{fs:20,maxRow:96});','racks(x+28,ry+16,w-56,hR-32,{fs:20,maxRow:230});')
+rep('rl.forEach((im,i)=>{const ww=logoChip(','[].forEach((im,i)=>{const ww=logoChip(')
 rep("logoChip(tl,tb,x+w-16,top+16,52,{right:true});", "logoChip(tl,tb,x+w-16,top+16,66,{right:true,maxW:240});")
 rep("logoChip(ml,mb,x+w-16,my+16,52,{right:true});", "logoChip(ml,mb,x+w-16,my+16,66,{right:true,maxW:240});")
 rep('const lch=46;', 'const lch=60;', 2)
@@ -95,7 +96,6 @@ i = h.index('// racks card: each rack a row'); j = h.index(' }\n ', i)
 h = h[:i] + r'''// v80: racks on the mat at left, stacked, no white box; brand logos on each piece
   const lch=56,n=Math.max(1,rkt.length),rw=Math.max(W*.34,Math.min(W*.5,mbx.x+mbx.w*.6-30)),rh=Math.min(bot-top-lch-30,Math.max(2*r+40,n*170)),rx=30,ry=Math.max(top+70,Math.min(cy-rh/2,bot-rh-lch-10));
   racks(rx,ry,rw,rh,{fs:19,maxRow:rh,rows:true,back:true});
-  {let lx=rx;rl.forEach((im,i)=>{lx+=logoChip(im,rb[i],lx,ry+rh+8,lch,{maxW:210})+10;});}
   pill(mbx.x+14,mbx.y+14,'MAT',mName,{maxW:mbx.w*.6,fsN:20,fsK:12});logoChip(ml,mb,mbx.x+mbx.w-14,mbx.y+14,60,{right:true,maxW:230});
   pill(cx+r*.15,cy-r-6,'TILES',s.name,{up:true,right:true,maxW:r*2,fsN:20,fsK:12});logoChip(tl,tb,cx-r*.8,Math.min(cy+r-30,fby-66),58,{maxW:220});
 ''' + h[j:]
