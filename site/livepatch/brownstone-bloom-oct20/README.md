@@ -52,3 +52,10 @@ Tiffany, Oct 21 1:00pm: "we haven't even released Brownstone Bloom from Anders R
 - **Code block:** rebuilt with `brownstone_block.py 0f8738b3fd161c23cfa8a705e06e87e4fd25efe6` (identical to the previous block except the pinned SHA); 31/31 card URLs warmed (200). The script now falls back to the previous block's shop links when the scratch `staged_urls.json` is gone.
 - **Round-2 candidates (13 now):** Britt Mills promo graphics replaced with clean mat shots from brittmillsdesign.com (Novella image 8, Knox image 7, Regal Bloom + Legacy listing renders cropped to the mat, no text). Rose Wreath room shot replaced with Splash of Color's flat shot (product image 2, bag cropped out). Dropped: Glory (patriotic palette), Mocha Kaleidoscope (real product shot is black/white/grey, not mocha).
 - **Color card pill:** desktop now matches mobile, "Code MAHJMATCH on partner mats & racks" (build.py shrinks long pill text to fit).
+
+## Oct 24 revision (her RTS note Oct 23 ~10:46pm + chat 2:56am)
+- Tile racks: Anders Ruff Tortoise + Bam Bird Boutique Olive + Bird & Bamboo Wine (config/tile-racks-picks.json final_lists brownstone-bloom). Brownstone Bloom mat racks: AR Tortoise + PLM Acrylic Burl (config/mat-racks-picks.json).
+- Order: Scarlett #2, Autumn Saffron #4; her 9 round-2 hearts appended (#32-40).
+- Cards: assets/cards/brownstone-bloom-oct24/ (40 + manifest), commit bdd6934, built by scripts/albumcard/oct20/brownstone_oct24.py + gen2.py. Oct 20 sources were gone, so mats were re-sourced (brand Shopify image matched to the FYM photo, else the FYM photo) and photos under 900px EDSR x4 (opencv dnn_superres). Chinoiserie Round: every brand image carries a "(c) 2026 Mac and Miller" watermark, so the card uses a watermark-free top-left crop.
+- Her ordering page: artifact WNjXTGjxfdqoa1tzUiYgQ4 (db doc review/order {order, left_out, savedAt}). HQ need brownstone-shortlist points there.
+- NEXT on her Save: rename files in her order, brownstone_block.py at the new commit, warm jsDelivr, then the live step above.
