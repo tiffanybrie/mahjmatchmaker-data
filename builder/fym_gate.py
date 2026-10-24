@@ -579,6 +579,10 @@ if "k==='r'&&S.rpick.length)return rpickView()" not in fn('deck') or 'rpv n${' n
 if 'R[r].pa?0:1e5' not in fn('rackPool') or '!S.f.r.her' not in fn('rackPool'): F.append("[41] rack picks OFF does not re-rank by colour with partners first")
 if 'data-unlike' not in fn('acts') or "q('[data-unlike]')" not in UI or 'keep swiping' not in fn('acts'): F.append("[41] a tapped mat suitor has no way back to swiping / no Remove from suitors")
 if "'Make it a love triangle'" not in UI or 'wingman' in UI: F.append("[41] rack heading is not 'Make it a love triangle'")
+# [42] v81 (Tiffany Oct 23 8:24 + 8:54pm): the mat door starts like the tiles door and swipes TILE SETS after the mat
+_md = fn('renderMatDoor')
+if 'tswipe(el,lock,m,g)' not in _md or 'Swipe on tiles' not in _md or 'data-tour' not in _md: F.append("[42] mat door: no tour link / 'Swipe on tiles' intro / tile-set swiper after picking the mat")
+if "pairUp(i);jump('s-racks')" not in UI or 'data-dgrid="1"' not in UI or 'data-dgrid="0"' not in UI: F.append("[42] mat door: Add racks does not go straight to the racks, or no See all / Swipe instead toggle")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
