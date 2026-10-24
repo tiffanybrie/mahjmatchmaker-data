@@ -87,3 +87,4 @@ When a draft changes or she rejects it, the matching HQ / Ready to Ship item is 
 ## FYM feedback (Tiffany, Oct 21 3:14pm)
 Every day: read Gmail label **Site/FYM feedback** (mahjmatchmaker@gmail.com; filter in docs/GMAIL-FILTERS.md #11). Handle each one yourself: photo/colour/match/bug fixes go through the FYM gate + independent QA; reply to the sender only if they left an email and asked something. Log what you did. Surface to Tiffany only decisions only she can make (one HQ need, plain words). Never forward feedback to her inbox.
 
+- **New products are not albums (Tiffany Oct 24):** never add new mats/tile sets to hq/albums. They go to hq/newproducts (data for the weekly new-products roundup); mats get added to the mat gallery + FYM colour-tagged. hq/albums holds only tile-set album work (yes/building/banked/live).
