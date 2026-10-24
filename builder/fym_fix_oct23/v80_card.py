@@ -34,7 +34,7 @@ rep("const cv=document.createElement('canvas');",
     "const [wmn,seal]=await Promise.all([lk(IMG.wmn),lk(IMG.seal)]);if(job!==cardJob)return;\n const cv=document.createElement('canvas');")
 
 # logo chip: centred inside its pill, never spilling out
-rep("const sq=im&&im.width/im.height<1.6,padX=sq?10:14,ih=sq?h-4:h-16;", "const sq=im&&im.width/im.height<1.6,padX=sq?12:16,ih=sq?h-12:h-18;")
+rep("const sq=im&&im.width/im.height<1.6,padX=sq?10:14,ih=sq?h-4:h-16;", "const sq=im&&im.width/im.height<1.6,padX=sq?16:18,ih=sq?h-18:h-22;")
 rep("if(im)fit(im,X+padX,y+8,w-2*padX,ih);", "if(im)fit(im,X+padX,y+(h-ih)/2,w-2*padX,ih);")
 
 # racks: trimmed images, left pills
@@ -95,7 +95,7 @@ rep("  const logoH=44,ly=fy-22-logoH/2,top=y+28,bot=ly-logoH/2-22,availH=bot-top
 i = h.index('// racks card: each rack a row'); j = h.index(' }\n ', i)
 h = h[:i] + r'''// v80: racks on the mat at left, stacked, no white box; brand logos on each piece
   const lch=56,n=Math.max(1,rkt.length),rw=Math.max(W*.34,Math.min(W*.5,mbx.x+mbx.w*.6-30)),rh=Math.min(bot-top-lch-30,Math.max(2*r+40,n*170)),rx=30,ry=Math.max(top+70,Math.min(cy-rh/2,bot-rh-lch-10));
-  racks(rx,ry,rw,rh,{fs:19,maxRow:rh,rows:true,back:true});
+  racks(rx,ry,rw,rh,{fs:STORY?23:19,maxRow:rh,rows:true,back:true});
   pill(mbx.x+14,mbx.y+14,'MAT',mName,{maxW:mbx.w*.6,fsN:20,fsK:12});logoChip(ml,mb,mbx.x+mbx.w-14,mbx.y+14,60,{right:true,maxW:230});
   pill(cx+r*.15,cy-r-6,'TILES',s.name,{up:true,right:true,maxW:r*2,fsN:20,fsK:12});logoChip(tl,tb,cx-r*.8,Math.min(cy+r-30,fby-66),58,{maxW:220});
 ''' + h[j:]
