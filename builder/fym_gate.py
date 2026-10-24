@@ -411,7 +411,9 @@ else:
 # 17. tool name: Find Your Mat-ch(TM), italic Your, TM once (Oct 21)
 if '<h1 class="ttl">Find Your Mat-ch\u2122</h1>' not in UI: F.append("[17] start-screen title is not plain 'Find Your Mat-ch\u2122' (Tiffany Oct 21 6:30pm: never italic in display type)")
 if re.search(r'<h[12][^>]*>[^<]*<i>', UI) or re.search(r'\.lock \.ttl i\{[^}]*font-style:italic', UI): F.append("[17] italic in a headline (display type is never italic; italics only in running body text)")
-if TXT.count('\u2122') != TXT.count('Find Your Mat-ch\u2122</h1>') or TXT.count('Find Your Mat-ch\u2122</h1>') < 2: F.append(f"[17] \u2122 must sit only on each door's title (both doors), found {TXT.count(chr(8482))}")
+_cardtm = TXT.count('Matched with Find Your Mat-ch\u2122')  # v80: the match card image is its own piece; its one full-name use carries the TM (brand guide)
+if _cardtm > 1: F.append('[17] the match card carries the TM more than once')
+if TXT.count('\u2122') - _cardtm != TXT.count('Find Your Mat-ch\u2122</h1>') or TXT.count('Find Your Mat-ch\u2122</h1>') < 2: F.append(f"[17] \u2122 must sit only on each door's title (both doors), found {TXT.count(chr(8482))}")
 if re.search(r'(?i)find\s+(<i>)?your(</i>)?\s+match\b', TXT): F.append("[17] old name 'Find Your Match' still in the UI")
 if re.search(r'\.lock \.ttl\{[^}]*text-transform:uppercase', UI): F.append("[17] .lock .ttl is ALL CAPS (brand guide: Title Case)")
 
