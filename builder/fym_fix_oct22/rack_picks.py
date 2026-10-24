@@ -24,6 +24,8 @@ RACK_ALIAS = {  # approved-name spellings in config files -> app rack ids
     'Peace Love Mahjong Acrylic Burl': 'peacelovemahjong.com/acrylic-burlwood-mahjong-racks-pushers-set-of-4',
     'Sunday Mahjong Cola': 'sundaymahjong.com/sunday-cola-mahjong-rack-set',
     'Mahjong Row & Co. Scalloped Tortoise': 'mahjongrowandco.com/scalloped-deluxe-tortoise-rack',
+    'Anders Ruff Tortoise': 'shop.andersruff.com/tortoise-acrylic-rack-set-straight-pushers',
+    'Bam Bird Boutique Olive': 'www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=53195340972341',
 }
 
 MAT_ALIAS = {  # registry 'mat' names the app spells differently -> app mat ids
