@@ -1,5 +1,7 @@
 # Find Your Mat-ch page (one code block)
 
+- **Oct 24: block now app v82** (= artifact Version 82: racks mirror mats, new match card, mat door swipes tiles, picks-off colour ranking). index: fym-site-preview @65b2344 site-app/fym-v82/index.html; files new since v72 pinned absolute @3cac1c6 (warmed 20/20), b24 inlined. Pin: page-block.html @9d98705. Verify string: `site-app/fym-v82/index.html`.
+
 Tiffany, Oct 21 2:19pm: "you have approval to change whatever needs to happen over on the Find Your Match preview page. I'd like that looking a lot better."
 
 - **Oct 23 2:15pm: block now app v76** (= v75 + "Version 76" label; site-app/fym-v76 @e758279cb51ddcfae765be3840b43b28cfab7a8a). Verify string: `site-app/fym-v76/index.html`. Pin: page-block.html @f04edba.
