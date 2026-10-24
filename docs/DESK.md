@@ -214,3 +214,4 @@ Usage pause in effect (see above): only the 10:04pm ET sales check runs until Su
 - Priority order follows the standing order; no "Set tomorrow's order" need added.
 
 See CLAUDE.md.
+- Oct 23 ~9:30pm: FYM Version 80 published (artifact v80 = label v80): v79 racks + v80 match card. Website copy NOT updated yet (still needs Ops paste + t78/b23v1/b24v1 reachable). Header A is the app default; B shown to Tiffany as images (sheet-c1-A/B) for her pick.
