@@ -144,3 +144,9 @@ On HQ in this order.
 - Priority order follows the standing order; no "Set tomorrow's order" need added.
 
 See CLAUDE.md.
+
+## Oct 24 (Matches & Catalog)
+- Green Light Gatsby swipe book REBUILT (artifact PNi1a7ckEZKQwxDs88sVJ7 v2): color card first (assets/colorcards/green-light-gatsby/), 45 mats = colour pull (weighted palette emerald 55 / mint 15 / copper 15 / sage 10 / ivory 5) from FYM-visible mats + her Drake/Emerald picks, cut by eye from 154. The old 113-mat book had Four Winds Social + Mahjong Studios mats (banned) and wasn't a colour pull.
+- [ ] Ops (Chrome): scan Tiles & Tablescapes FB group for "Gatsby" mat suggestions -> add as "TNT rec" to the book; note brands we don't carry for outreach.
+- [ ] Bam Bird Deco album: colour card first (Mulberry/Lagoon/Indigo) + 3 Deco Dragon mats + Deco racks, same process.
+- Brownstone order page: cards now bundled in the artifact (external jsDelivr images are blocked inside artifacts).
