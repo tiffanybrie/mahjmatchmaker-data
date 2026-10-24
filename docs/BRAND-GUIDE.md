@@ -165,6 +165,7 @@ Use the same format. The hook names the scene.
 - End with "Happy mat-ching! 🀄💕" (her own sign-off; see **VERIFY 3**) and "Links are in the first comment 👇".
 - **Links go in the first comment**, one per line, each with an emoji and a label. Never let Facebook's link preview be the image.
 - Code line: "my code MAHJMATCH will get you 10% or more off at our partner brands" (or the exact % for one brand).
+- Never "saves you money" (Tiffany, Oct 23 8:47am: "always sounds a little obvious"). FB group wording: "Use our group code MAHJMATCH to save 10% or more at our partner brands".
 - Never greet the group as "Mahj Matchmakers". Add one A-or-B vote question when it fits.
 - Planoly can't post to groups. Claude posts from her account, only on her explicit yes for that exact post.
 
@@ -505,3 +506,4 @@ Each is asked once. Until she answers, follow the default given here.
 - 2026-10-23 14:34 (Tiffany): **Feature cross-brand, never the obvious pair.** Any social/launch piece that features a match uses a unique cross-brand pick from her real matches (two brands to tag), never the same-brand/official pair (e.g. not Cypress × Mahjong Row Midnight Garden; yes Papaya × Britt Mills Heiress). **FYM positioning:** "Match tiles, mats & racks across brands", Tiffany's picks + measured color theory. Full launch brief: docs/FYM-LAUNCH-CAMPAIGN.md.
 
 - 2026-10-23 19:25 (Tiffany): **Our community = "Matchmakers"** (no hyphen). "Hey, Matchmakers." She is the Mahj Matchmaker; they are the Matchmakers (after Find Your Mat-ch they do the matching). Her picks in the app stay "Tiffany's picks".
+- 2026-10-23 08:47 (Tiffany, RTS note on the FB group description): never write "saves you money"; use "Use our group code MAHJMATCH to save 10% or more at our partner brands".
