@@ -22,6 +22,13 @@ Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27, (2) fall content befo
 4. **Sunday after the 11am reset: the VIP FYM list + launch email revision (Matches & Catalog + Main).** VIP list below (also HQ `vip-sunday-fym-oct25`). Launch email must be revised and back on RTS `d-email-templates` before Mon Oct 26 (Montserrat-style "Here's how it works"; step screens rebuilt from the live app, mirroring the in-app tour; fewer arrows/text). Then update launch task trig_01ErZy so it only sends + flips automation wording (it still builds automations).
 5. **Brownstone Bloom (fall, next week's release).** Her one tap on RTS `l-brownstone-v2` (31 cards + ♥/✕ on 13 missing mats) is HQ Today. On her yes: publish per site/livepatch/brownstone-bloom-oct20/README.md (code block pinned @0f8738b, 31/31 URLs warmed) in the week of Oct 26 so it lands before Halloween; re-date the Ep 11 Brownstone reel only after it's redone with an intro (social reset rules).
 
+## Morning HQ cleanup adds (Sat Oct 24, 7:05am ET): overnight answers that are now Claude's jobs
+- **EMAILS: DO NOT SEND (Tiffany, Oct 24 12:49am).** Build welcome, album-request and launch emails as Squarespace automation drafts for her final read; footer address is in ANSWERS. Main must re-check launch task trig_01ErZy so it does NOT send without her read (owner Main, today).
+- **Work With page + new "brands" page with form (Main).** Her l-workwith6 notes (ANSWERS Oct 24); form answers land in the social calendar and get monitored in the daily email scrape. Fix the empty partner-ticker boxes.
+- **Thin albums (Matches & Catalog).** Build cards for her 78-mat hearts; make the next quick-spot pages for the rest of the thin albums (bigger tile photo).
+- **Malachite + Kingfisher (Matches & Catalog).** Add the match (non-partner, her pick → nonpartner_allow.json) with racks Miss Mahjong Jade, PLM Oak, Bam Bird Indigo; Scream Queens = no.
+- **Tile images (Matches & Catalog).** Hummingbird tile image under the logo bar, smaller, off the racks (Hummingbird album too); Bam Bird tile image per Bam Bird's mock-up (her screenshot in chat). Vivienne: drop Hummingbird; stays parked.
+
 ## ⭐ VIP SUNDAY (Oct 25, 11am) FYM LIST, mirrored on HQ item vip-sunday-fym-oct25 (order 0). Same list both places; tick both.
 Built in v79/v80 tonight (artifact only; website copy = priority 1):
 - [x] Rack suitors: none preselected, tap shows on the mat image, 2nd splits the frame, max 2 (v79)
