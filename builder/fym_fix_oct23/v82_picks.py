@@ -18,4 +18,6 @@ rep("ids=[...ids.filter(herMat),...CSORT(ids.filter(id=>!herMat(id)),C)];}}",
 rep("function renderRacks(){const el=$('s-racks');if(S.set==null){el.innerHTML='';return;}",
     "function renderRacks(){const el=$('s-racks');if(S.set==null){el.innerHTML='';return;}if(S.fav&&S._rdef!==S.fav+'|'+S.set){S._rdef=S.fav+'|'+S.set;S.f.r.her=herRacks().length>0;}")
 rep("rpick:[]});S.f.r={fam:[],brand:'',her:false};}S.made=false;}", "rpick:[]});S.f.r={fam:[],brand:'',her:false};S._rdef=null;}S.made=false;}")
+rep("That’s all the ${k==='m'?'mats':'racks'} that fit your current filters with <b>Tiffany’s picks on</b>. To see all the possibilities, turn Tiffany’s picks off.",
+    "<span>That’s all the ${k==='m'?'mats':'racks'} that fit your current filters with <b>Tiffany’s picks on</b>. To see all the possibilities, turn Tiffany’s picks off.</span>")
 open(P, 'w').write(h); print('v82 picks applied')
