@@ -15483,6 +15483,8 @@
     [
      "shop.andersruff.com/brownstone-bloom-mahjong-mat",
      [
+      "shop.andersruff.com/tortoise-acrylic-rack-set-straight-pushers",
+      "peacelovemahjong.com/acrylic-burlwood-mahjong-racks-pushers-set-of-4",
       "peacelovemahjong.com/mahjong-racks-racks-pushers-set-of-4",
       "bb:Lilac",
       "bb:Moss",
@@ -16087,10 +16089,11 @@
     [
      "shop.andersruff.com/brownstone-bloom-mahjong-mat",
      [
+      "shop.andersruff.com/tortoise-acrylic-rack-set-straight-pushers",
+      "peacelovemahjong.com/acrylic-burlwood-mahjong-racks-pushers-set-of-4",
       "mm:Hawksbill",
       "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set",
       "peacelovemahjong.com/mahjong-racks-racks-pushers-set-of-4",
-      "peacelovemahjong.com/acrylic-burlwood-mahjong-racks-pushers-set-of-4",
       "bb:Matcha"
      ]
     ],
@@ -16500,10 +16503,11 @@
     [
      "shop.andersruff.com/brownstone-bloom-mahjong-mat",
      [
+      "shop.andersruff.com/tortoise-acrylic-rack-set-straight-pushers",
+      "peacelovemahjong.com/acrylic-burlwood-mahjong-racks-pushers-set-of-4",
       "mm:Hawksbill",
       "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set",
       "peacelovemahjong.com/mahjong-racks-racks-pushers-set-of-4",
-      "peacelovemahjong.com/acrylic-burlwood-mahjong-racks-pushers-set-of-4",
       "bb:Matcha",
       "missmahjong.com/blonde-tortoise-and-brass-acrylic-racks"
      ]
@@ -27488,6 +27492,13 @@
    "field": "hid",
    "change": "unhidden with real tile layout photos (builder/fym_fix_oct23/v78_answers.py)",
    "approval": "Tiffany Oct 23 3:27pm: Middle & Main's 5 state sets should not be hidden"
+  },
+  {
+   "date": "2026-10-24",
+   "by": "builder/fym_fix_oct22/rack_picks.py",
+   "field": "m",
+   "change": "rack lists per (set, mat): mat's own picks (config/mat-racks-picks.json) first, then the tile set's racks; 3 pairings",
+   "approval": "Tiffany Oct 22 (DESK FYM item 7 + chat ~1:58pm: 'Mat's picks, then tile racks')"
   }
  ]
 }
