@@ -152,6 +152,13 @@ run('Tiles door', () => {
   if (!S.liked.includes(S.fav)) fail('Osler: mock-up mat is not one of HER hearts');
   if (!/data-make disabled/.test(H('s-racks'))) fail('Osler: Make it official enabled before any racks');
   X.decide('r', true); X.decide('r', true); X.decide('r', true);
+  // v79 (Tiffany Oct 23 8:35pm): hearting never picks a rack; she taps suitors to see them on her mat (max 2)
+  if (S.rpick.length !== 0) fail(`Osler: hearting racks preselected ${S.rpick.length} (nothing is picked until she taps)`);
+  if (!/Pick 1 or 2 racks/.test(H('s-racks'))) fail('Osler: no "Pick 1 or 2 racks" note before a pick');
+  { const s0 = buttons(H('s-racks')).filter(b => 'data-rp' in b.a); click(s0[0].a);
+    if (!/id="rpv"/.test(H('s-racks')) || /id="top-r"/.test(H('s-racks'))) fail('Osler: tapping a rack suitor did not show it on the deck (or the deck still swipes)');
+    click(buttons(H('s-racks')).filter(b => 'data-rp' in b.a)[0].a);
+    if (!/rpv n2/.test(H('s-racks'))) fail('Osler: two picked racks are not both shown on the deck'); }
   const rt = H('s-racks');
   if (S.rpick.length !== 2) fail(`Osler: racks tray holds ${S.rpick.length} (max 2)`);
   if (!/2 of 2/.test(rt) || (rt.match(/data-rx=/g) || []).length !== 2) fail('Osler: full racks tray lacks "2 of 2" / two x buttons');

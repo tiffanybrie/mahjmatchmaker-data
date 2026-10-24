@@ -1,7 +1,7 @@
 """FYM tour walk (Tiffany Oct 23 9:33-9:38am; replaces the v72 6-step placement check). Gate [35] runs it.
 At 390x664, 390x844 (Chromium + WebKit) and 1280x800 (Chromium), from a fresh first open:
- - the tour starts by itself and walks her 8-step script by DOING each step (pick tiles, heart a mat, pick the suitor,
-   Add racks ONCE, heart a rack, Make it official, Next, Done);
+ - the tour starts by itself and walks her 9-step script (v79: racks = swipe, then pick 1 or 2) by DOING each step (pick tiles, heart a mat, pick the suitor,
+   Add racks ONCE, heart a rack, tap the rack suitor, Make it official, Next, Done);
  - the steps arrive exactly in order (tiles, mats, pick, add, racks, make, share, shop); a step never repeats or goes back;
  - Add racks moves to the racks with ONE tap;
  - each tip box names its own step (coach data-step == current step, text starts with that step's title);
@@ -14,9 +14,9 @@ B = os.path.abspath(sys.argv[1]); OUT = sys.argv[2] if len(sys.argv) > 2 else No
 so = socket.socket(); so.bind(('127.0.0.1', 0)); port = so.getsockname()[1]; so.close()
 srv = subprocess.Popen([sys.executable, '-m', 'http.server', str(port), '--bind', '127.0.0.1', '--directory', B], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL); time.sleep(1)
 URL = f'http://localhost:{port}/index.html'
-ORDER = ['tiles', 'mats', 'pick', 'add', 'racks', 'make', 'share', 'shop']
+ORDER = ['tiles', 'mats', 'pick', 'add', 'racks', 'rpick', 'make', 'share', 'shop']
 ACT = {'tiles': '#s-tiles .tgrid button', 'mats': '[data-yes="m"]', 'pick': '.tray .th button', 'add': 'TARGET',
-       'racks': '[data-yes="r"]', 'make': 'TARGET', 'share': '[data-tour-next]', 'shop': '[data-tour-next]'}
+       'racks': '[data-yes="r"]', 'rpick': '#rtray .th button', 'make': 'TARGET', 'share': '[data-tour-next]', 'shop': '[data-tour-next]'}
 STATE = """()=>{if(!TOUR.on)return {on:false};const s=TSTEPS[TOUR.step],c=document.getElementById('coach'),t=tourTarget(s);
  const cr=c&&c.getBoundingClientRect(),tr=t&&t.getBoundingClientRect(),vh=innerHeight,vw=document.documentElement.clientWidth;
  const inter=!!(cr&&tr)&&!(cr.right<=tr.left||tr.right<=cr.left||cr.bottom<=tr.top||tr.bottom<=cr.top);

@@ -568,6 +568,15 @@ _ms = UI[UI.find("if(e.target.id!=='msq')"):]
 _ms = _ms[:_ms.find('\n')+600]
 if 'data-mock' in _ms[:_ms.find("No mat by that name")]: F.append("[40] mat-search results jump to the racks (data-mock); they must put the mat on top of the mat swiper")
 if 'S.mfront' not in fn('matDeck') or "q('[data-mfront]')" not in UI: F.append("[40] searched mat is not put on top of the mat deck")
+# [41] v79 (Tiffany Oct 23 8:35-8:37pm): racks mirror the mats. Hearting never picks a rack; picked racks show on the deck
+# (split for 2) and lock swiping; picks OFF = colour ranking with partners ahead of non-partners; a tapped mat suitor
+# can go back to the deck or be removed (she got stuck on a suitor preview).
+_dc = fn('decide')
+if 'S.rpick.push' in _dc: F.append("[41] hearting a rack preselects it (nothing is picked until she taps a rack suitor)")
+if "k==='r'&&S.rpick.length)return rpickView()" not in fn('deck') or 'rpv n${' not in UI: F.append("[41] picked racks are not shown on the deck under the mat")
+if '.pa?0:1e3' not in fn('rackPool') or '!S.f.r.her' not in fn('rackPool'): F.append("[41] rack picks OFF does not re-rank by colour with partners first")
+if 'data-unlike' not in fn('acts') or "q('[data-unlike]')" not in UI or 'keep swiping' not in fn('acts'): F.append("[41] a tapped mat suitor has no way back to swiping / no Remove from suitors")
+if "'Make it a love triangle'" not in UI or 'wingman' in UI: F.append("[41] rack heading is not 'Make it a love triangle'")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
