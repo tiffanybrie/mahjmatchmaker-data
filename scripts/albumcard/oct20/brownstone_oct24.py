@@ -6,7 +6,7 @@
 - Mat racks: config/mat-racks-picks.json when listed (Brownstone Bloom mat = AR Tortoise + PLM Acrylic Burl, Oct 24),
   else the Oct 20 card's mat racks (unchanged), else matpick for the new mats.
 - Photos: the Oct 20 sources lived in another session's scratch and are gone, so each mat is re-sourced: the brand's own
-  Shopify image that matches the Find Your Mat-ch photo (largest copy), else the Find Your Mat-ch photo. Same crop rule
+  Shopify image that matches the Find Your Mat-ch photo (largest copy), else the Find Your Mat-ch photo; photos under 900px are EDSR x4 super-resolved (opencv dnn_superres, Saafke/EDSR_Tensorflow EDSR_x4.pb), as on Oct 20. Same crop rule
   as Oct 20 (72% lower-left close-up when >= 900px of mat survive, else the whole mat).
 Usage: python3 brownstone_oct24.py <workdir> <srcdir with src.json>; then gen2.py <workdir>/spec.json assets/cards/brownstone-bloom-oct24"""
 import json, io, base64, re, os, sys
@@ -51,7 +51,8 @@ for nm in names:
     mr = REG[rk]['racks'] if rk else c['mat_racks']
     add(nm, c['brand'], Image.open(SD + '/' + SRC[nm]), mr, c['code'], {'vote_id': c.get('vote_id'), 'mat_reg': rk, 'photo': SRC[nm]})
 for c in NEW:
-    im = Image.open(R + 'site/livepatch/brownstone-bloom-oct20/review/' + c['img'])
+    SRN = json.load(open(SD + '/sr_new.json')) if os.path.exists(SD + '/sr_new.json') else {}
+    im = Image.open(SD + '/' + SRN[c['id']]) if c['id'] in SRN else Image.open(R + 'site/livepatch/brownstone-bloom-oct20/review/' + c['img'])
     mr = pick(im, exclude=TRACKS + ['Wine'])
     add(c['mat'], c['brand'], im, mr, footer(c['brand']), {'round2': c['id'], 'new': True, 'fym_key': c['fym_key'], 'shop': c.get('shop')})
 json.dump({'_note': 'Brownstone Bloom album Oct 24', 'cards': cards, 'max_racks': 4, 'tile_brand': 'Anders Ruff'}, open(W + '/spec.json', 'w'))
