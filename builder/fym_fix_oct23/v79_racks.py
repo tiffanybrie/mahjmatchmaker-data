@@ -44,7 +44,7 @@ rep("head(3,'Rack-ing','All couples need a wingman. Tap \\u2665 if you love it, 
 
 # 5. picks off = colour ranking, partners ahead of non-partners
 rep(" const U=uni();const rest=Object.keys(R).filter(r=>!hr.includes(r)&&!U.includes(r)&&rackOK(r)).map(r=>[sc(r)+(R[r].lo?1e4:0),r]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);\n return [...new Set([...hr,...U,...rest])];}",
-    " const U=uni();const pen=r=>(R[r].lo?1e4:0)+(R[r].pa?0:1e3);\n"
+    " const U=uni();const pen=r=>(R[r].pa?0:1e5)+(R[r].lo?1e4:0);\n"
     " if(!S.f.r.her)return [...new Set([...hr,...U,...Object.keys(R).filter(rackOK)])].filter(r=>R[r]).map(r=>[sc(r)+pen(r),r]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);\n"
     " const rest=Object.keys(R).filter(r=>!hr.includes(r)&&!U.includes(r)&&rackOK(r)).map(r=>[sc(r)+pen(r),r]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);\n return [...new Set([...hr,...U,...rest])];}")
 

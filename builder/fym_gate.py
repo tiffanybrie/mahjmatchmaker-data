@@ -574,7 +574,7 @@ if 'S.mfront' not in fn('matDeck') or "q('[data-mfront]')" not in UI: F.append("
 _dc = fn('decide')
 if 'S.rpick.push' in _dc: F.append("[41] hearting a rack preselects it (nothing is picked until she taps a rack suitor)")
 if "k==='r'&&S.rpick.length)return rpickView()" not in fn('deck') or 'rpv n${' not in UI: F.append("[41] picked racks are not shown on the deck under the mat")
-if '.pa?0:1e3' not in fn('rackPool') or '!S.f.r.her' not in fn('rackPool'): F.append("[41] rack picks OFF does not re-rank by colour with partners first")
+if 'R[r].pa?0:1e5' not in fn('rackPool') or '!S.f.r.her' not in fn('rackPool'): F.append("[41] rack picks OFF does not re-rank by colour with partners first")
 if 'data-unlike' not in fn('acts') or "q('[data-unlike]')" not in UI or 'keep swiping' not in fn('acts'): F.append("[41] a tapped mat suitor has no way back to swiping / no Remove from suitors")
 if "'Make it a love triangle'" not in UI or 'wingman' in UI: F.append("[41] rack heading is not 'Make it a love triangle'")
 

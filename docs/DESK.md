@@ -32,6 +32,7 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 - [ ] (explore, not now) style/theme menu: Holiday, Earthy, Pastel, Floral; shade-level colour (earthy vs bright orange); contrast-aware ranking using secondary tile colours
 - [ ] Mat door = same intro as tiles door: tour link stays + "1 Swipe on tiles, 2 Pick your favorites, 3 Add racks"; tour works mat-first (Tiffany 8:24pm)
 - [ ] Filters beat picks: with Holiday (or a colour) on, first cards fit the filter; picks OFF re-ranks by colour (Heritage + Holiday showed her non-holiday picks first). Gate check (Tiffany 8:27pm)
+- [ ] Mat door = swipe TILE SETS right after picking the mat (no frozen "Your mat" + See other mats step); "See all" grid toggle on both doors (Tiffany 8:54pm)
 - [ ] Share card bigger logos + auto-copied caption; PWA; sticky box bug; WebKit tour check
 - [ ] (Oct 23 3:55pm feedback, see ANSWERS) Rack suitors: none preselected, tap = shows on mat image, 2nd = split frame, max 2, '2 of 2 picked' + 'Pick 1 or 2 racks', swipe-arrow hint; mat suitor 'Uncheck to keep swiping'
 - [ ] Tour: step 1 text (shop by color or search a specific set), step 6 (pick 1-2 racks, not auto first two), point to rack search
