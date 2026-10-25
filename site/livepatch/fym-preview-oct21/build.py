@@ -247,6 +247,8 @@ JS = r'''
     var y=r.top+(window.pageYOffset||de.scrollTop)-Math.max(off,Math.round((vh-off-r.height)/2)+off);
     window.scrollTo({top:y,behavior:'smooth'});}
   [].forEach.call(root.querySelectorAll('[data-fx-go]'),function(a){a.addEventListener('click',go)});
+  [].forEach.call(root.querySelectorAll('[data-fx-tour]'),function(a){a.addEventListener('click',function(e){go(e);var n=0;(function tryT(){var b=null;try{b=fr.contentDocument&&fr.contentDocument.querySelector('[data-tour]')}catch(x){}
+    if(b){setTimeout(function(){b.click()},450);}else if(n++<40){setTimeout(tryT,250);}})();})});
   [].forEach.call(root.querySelectorAll('[data-fx-how]'),function(a){a.addEventListener('click',function(e){e.preventDefault();var t=document.getElementById('fymx-how');
     window.scrollTo({top:t.getBoundingClientRect().top+(window.pageYOffset||de.scrollTop)-hdr()-8,behavior:'smooth'});})});
   function fs(on){start();stage.classList.toggle('fs',on);de.classList.toggle('fx-lock-scroll',on);if(!on)size();
@@ -261,6 +263,9 @@ JS = r'''
 FS_ICON = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2 6V2h4M14 6V2h-4M2 10v4h4M14 10v4h-4"/></svg>'
 
 
+SHOW_WALKTHROUGH = False
+
+
 def build():
     T = json.load(open(os.path.join(HERE, '..', '..', '..', 'scripts', 'fym_promo', 'tutorial.json')))
     tut = ''.join(f'<li class="fx-tstep"><div class="fx-tnum">{t["n"]}</div><h3>{t["title"]}</h3><p>{t["caption"]}</p>'
@@ -269,20 +274,28 @@ def build():
     faq = ''.join(f'<details{" open" if i == 0 else ""}><summary>{q}</summary><p>{a}</p></details>' for i, (q, a) in enumerate(FAQ))
     covers = ''.join(f'<a href="/{slug}-mahjong-tile-matches"><img src="{img}" alt="{name} mahjong tile matches album" loading="lazy" decoding="async" width="800" height="1000"><span>{name}</span></a>'
                      for slug, name, img in ALBUMS)
+    # Oct 25 (Tiffany): the 30-second tour replaces the step-by-step walkthrough and the desktop tip boxes
+    # (they read like buttons). PARKED, not deleted: set SHOW_WALKTHROUGH=True to bring them back.
+    TIPS = f'''<ul class="fx-side fx-tips"><li><b><span class="h">&#9829;</span> Love it</b>It waits for you so you can&nbsp;compare.</li><li><b><span class="x">&#10005;</span> Not the one</b>On to the next mat, no hard&nbsp;feelings.</li><li><b>Zoom in</b>Pinch or tap + and your zoom stays put as you&nbsp;swipe.</li><li><b>Shop by color</b>Tap a color dot while swiping to narrow, tap again to&nbsp;clear.</li></ul>''' if SHOW_WALKTHROUGH else '<div class="fx-side" aria-hidden="true"></div>'
+    TUTSEC = f'''<section class="fx-tut" id="fymx-how"><div class="fx-wrap">
+<div class="fx-head"><p class="fx-kick">How it works</p><h2>Find your match, step by&nbsp;step</h2><p>Scroll down. Each screen shows exactly what to&nbsp;tap.</p></div>
+<ol class="fx-tsteps">{tut}</ol>
+<p class="fx-more"><a class="fx-btn" href="#fymx-app" data-fx-go>Start swiping <span aria-hidden="true">&#9829;</span></a></p>
+</div></section>''' if SHOW_WALKTHROUGH else ''
     body = f'''<div id="fymx">
 <section class="fx-hero"><div class="fx-wrap">
 <div class="fx-copy">
 <p class="fx-kick">New from Mahj Matchmaker</p>
 <h1><span class="nb">Find Your</span> <span class="nb">Mat-ch<sup>&trade;</sup></span></h1>
 <p class="fx-lede">Start with your tiles or your mat. Swipe. Find your&nbsp;match.</p>
-<p class="fx-under"><a href="#fymx-how" data-fx-how>How it works&nbsp;&darr;</a> &nbsp;&middot;&nbsp; Free, nothing to sign up&nbsp;for</p>
+<p class="fx-under"><a href="#fymx-app" data-fx-tour>Take the 30-second tour&nbsp;&darr;</a> &nbsp;&middot;&nbsp; Free, nothing to sign up&nbsp;for</p>
 </div>
 </div></section>
 <section class="fx-app" id="fymx-app">
 <div class="fx-wrap fx-head"><p>Tap &#9829; to add a mat to your shortlist, &#10005; for not the&nbsp;one.</p></div>
 <div class="fx-bar"><button type="button" class="fx-pill" data-fx-fs>{FS_ICON}Open full screen</button></div>
 <div class="fx-grid">
-<ul class="fx-side fx-tips"><li><b><span class="h">&#9829;</span> Love it</b>It waits for you so you can&nbsp;compare.</li><li><b><span class="x">&#10005;</span> Not the one</b>On to the next mat, no hard&nbsp;feelings.</li><li><b>Zoom in</b>Pinch or tap + and your zoom stays put as you&nbsp;swipe.</li><li><b>Shop by color</b>Tap a color dot while swiping to narrow, tap again to&nbsp;clear.</li></ul>
+{TIPS}
 <div class="fx-stage" id="fx-stage"><div class="fx-ld" id="fx-ld"><i></i>Loading your matchmaker&hellip;</div><button type="button" class="fx-x" id="fx-x">&#10005; Close</button><iframe id="fx-f" title="Find Your Mat-ch" allow="web-share; clipboard-write; fullscreen"></iframe></div>
 <div class="fx-side r"><div class="fx-card"><p>Use code</p><strong>MAHJMATCH</strong><p>to save at 30+ partner&nbsp;brands</p></div><button type="button" class="fx-pill" data-fx-fs>{FS_ICON}Open full screen</button><a class="fx-pill" href="/mahjong-tile-matches">Browse the albums</a></div>
 </div>
@@ -299,11 +312,7 @@ def build():
 <div class="fx-covers">{covers}</div>
 <p class="fx-more"><a class="fx-btn" href="/mahjong-tile-matches">See all match&nbsp;albums</a></p>
 </div></section>
-<section class="fx-tut" id="fymx-how"><div class="fx-wrap">
-<div class="fx-head"><p class="fx-kick">How it works</p><h2>Find your match, step by&nbsp;step</h2><p>Scroll down. Each screen shows exactly what to&nbsp;tap.</p></div>
-<ol class="fx-tsteps">{tut}</ol>
-<p class="fx-more"><a class="fx-btn" href="#fymx-app" data-fx-go>Start swiping <span aria-hidden="true">&#9829;</span></a></p>
-</div></section>
+{TUTSEC}
 <p class="fx-disc">Something look off or have an idea? <a href="{FEEDBACK}">Tell me here&nbsp;&rarr;</a><br>Affiliate links: I may earn a commission.</p>
 </div>
 <style>{CSS}</style>
