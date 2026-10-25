@@ -8,7 +8,11 @@
    1.0,
    0.86
   ],
-  "why": "tall photo: pouch on top, dice; band showed only top rows of white faces"
+  "why": "tall photo: pouch on top, dice; band showed only top rows of white faces",
+  "band": [
+   0.5,
+   0.7
+  ]
  },
  "t78/bam-bird-boutique-boots-and-bubbles-pink-swirl.jpg": {
   "name": "Boots & Bubbles (Pink Swirl)",
@@ -30,7 +34,11 @@
    0.92,
    1.0
   ],
-  "why": "face tray and lavender back tray offset; lots of empty white"
+  "why": "face tray and lavender back tray offset; lots of empty white",
+  "band": [
+   0.5,
+   0.2
+  ]
  },
  "t78/bam-bird-boutique-classic-rose.jpg": {
   "name": "Classic (Rose)",
@@ -74,7 +82,11 @@
    0.9,
    0.92
   ],
-  "why": "pouch fills top; band showed pouch fabric"
+  "why": "pouch fills top; band showed pouch fabric",
+  "band": [
+   0.5,
+   0.7
+  ]
  },
  "t78/bam-bird-boutique-east-meets-west-emerald.jpg": {
   "name": "East Meets West (Emerald)",
@@ -96,7 +108,11 @@
    0.97,
    0.85
   ],
-  "why": "small trays in big white field; band showed mostly white"
+  "why": "small trays in big white field; band showed mostly white",
+  "band": [
+   0.5,
+   0.2
+  ]
  },
  "t78/bam-bird-boutique-mcm-navy-olive.jpg": {
   "name": "MCM (Navy/Olive)",
@@ -107,7 +123,11 @@
    0.97,
    0.82
   ],
-  "why": "white space top/bottom; band missed navy backs"
+  "why": "white space top/bottom; band missed navy backs",
+  "band": [
+   0.5,
+   0.2
+  ]
  },
  "t78/bam-bird-boutique-mcm-olive-pink.jpg": {
   "name": "MCM (Olive/Pink)",
@@ -118,7 +138,11 @@
    0.97,
    0.83
   ],
-  "why": "white space top/bottom; band missed olive backs"
+  "why": "white space top/bottom; band missed olive backs",
+  "band": [
+   0.5,
+   0.2
+  ]
  },
  "t78/bam-bird-boutique-origami-azure.jpg": {
   "name": "Origami (Azure)",

@@ -603,7 +603,7 @@ _b45 = []
 for s in D['sets']:
     t = T.get(s['tile']) or {}
     if s.get('hid') or t.get('hid') or t.get('soon') or not t.get('full') or not os.path.exists(os.path.join(B, t['full'])): continue
-    v = _band_tiles(os.path.join(B, t['full']), [.5, .45])
+    v = _band_tiles(os.path.join(B, t['full']), t.get('bf') or [.5, .45])
     if v < BAND_MIN: _b45.append(f"{s['name']} ({s['maker']}) {v:.2f}")
 if _b45: F.append(f"[45] {len(_b45)} tile photos show mostly white in the match-card band (reframe in config/fym-tile-focus-oct25.json): " + '; '.join(_b45[:12]))
 # [47] Oct 25 (Tiffany 16:51: Mac + Miller 'Heirloom Collection: Fire + Fortune Verdant Fortune' ran off the card). The card title

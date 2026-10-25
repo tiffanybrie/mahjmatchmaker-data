@@ -28,7 +28,8 @@ for k, t in T.items():
         q = min(c.size); sq = c.crop(((c.width - q) // 2, (c.height - q) // 2, (c.width - q) // 2 + q, (c.height - q) // 2 + q)).resize((360, 360), Image.LANCZOS)
         b = io.BytesIO(); sq.save(b, 'JPEG', quality=84); pk = 'p89' + hashlib.md5(nf.encode()).hexdigest()[:10]
         IMG[pk] = 'data:image/jpeg;base64,' + base64.b64encode(b.getvalue()).decode(); t['pile'] = pk
-    t['fo'] = f; t['full'] = nf; nc += 1   # fo = original photo (gate [1]/[3c]/[30] + locks compare against it)
+    t['fo'] = f; t['full'] = nf; nc += 1
+    if fo.get('band'): t['bf'] = fo['band']   # Close up band anchor picked by eye (QA v90: two-tray photos)   # fo = original photo (gate [1]/[3c]/[30] + locks compare against it)
 def score(a):  # share of the crop that is tiles: not near-white background, saturated colour counts extra
     bg = (a.min(2) > 225) & ((a.max(2) - a.min(2)) < 18); sat = (a.max(2) - a.min(2)) > 60
     return float((~bg).mean() + .5 * sat.mean())
@@ -56,6 +57,7 @@ def rep(a, b):
     global h
     assert h.count(a) == 1, a; h = h.replace(a, b)
 
+rep("cover(tile,x,top,w,hT,22,1.05,.5,.45);", "cover(tile,x,top,w,hT,22,1.05,...(T[s.tile].bf||[.5,.45]));")
 if IMG:
     inl = '<script>window.IMG=Object.assign(window.IMG||{},' + json.dumps(IMG, separators=(',', ':')) + ');</script>'
     a = '<script src="b24v1.js"></script>'; assert h.count(a) == 1; h = h.replace(a, a + inl, 1)

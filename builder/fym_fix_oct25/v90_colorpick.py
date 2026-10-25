@@ -27,8 +27,8 @@ new = ("`<button type=\"button\" class=\"dot\" data-fam=\"${x}\" data-k=\"${k}\"
        "return `<p class=\"fcombo\">${f.fam.includes('holiday')?'Holiday mats':'Mats'} with ${cols.map(c=>FAMN[c].toLowerCase()).join(' <b>and</b> ')} \\u00b7 ${n} mat${n===1?'':'s'} \\u00b7 <button type=\"button\" class=\"lnk\" data-fclear=\"m\">Clear</button></p>`;})()}`;}")
 rep(old, new)
 # the chip sits right after the rainbow 'All colors' dot so it's on screen (QA v90: it was off the end of the scrolling row)
-rep("<i style=\"background:${RAINBOW}\"></i></button>", "<i style=\"background:${RAINBOW}\"></i></button>${k==='m'?`<button type=\"button\" class=\"chip addc\" data-fmulti=\"m\" aria-pressed=\"${!!f.multi}\">${f.multi?'\\u2713 Adding colours':'+ Add a colour'}</button>`:''}")
+rep("<i style=\"background:${RAINBOW}\"></i></button>", "<i style=\"background:${RAINBOW}\"></i></button>${k==='m'?`<button type=\"button\" class=\"chip addc\" data-fmulti=\"m\" aria-pressed=\"${!!f.multi}\">${f.multi?'\\u2713 Adding colours':'+ Add colour'}</button>`:''}")
 css = ".chip.finc{border:2px solid #8a5a3b;color:#6b4226;background:#fff;flex:none}"
-rep(css, css + ".chip.addc{flex:none;border:2px dashed var(--line);background:#fff;color:var(--navy);font-weight:700;white-space:nowrap}.chip.addc[aria-pressed=\"true\"]{border-style:solid;border-color:var(--navy);background:var(--navy);color:#fff}"
+rep(css, css + ".chip.addc{flex:none;padding:6px 10px;font-size:13px;border:2px dashed var(--line);background:#fff;color:var(--navy);font-weight:700;white-space:nowrap}.chip.addc[aria-pressed=\"true\"]{border-style:solid;border-color:var(--navy);background:var(--navy);color:#fff}"
     ".fcombo{margin:6px 2px 0;font:600 13px/1.35 var(--body);color:var(--navy)}.fcombo b{color:var(--pink)}.fcombo .lnk{white-space:nowrap;border:0;background:none;color:var(--pink);font:700 13px var(--body);text-decoration:underline;cursor:pointer;padding:0}")
 open(P, 'w').write(h); print('ok')
