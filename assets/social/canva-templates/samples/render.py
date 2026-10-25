@@ -5,7 +5,7 @@ from playwright.sync_api import sync_playwright
 from PIL import Image
 D = os.path.dirname(os.path.abspath(__file__))
 CARD = f'file://{D}/fym-card-cypress-eltigre-story.png'
-PH = 'file:///home/claude/fymapp/caps/swipe-Cypress-El_Tigre.png'
+PH = 'file:///home/claude/fymlive/caps/swipe-Cypress-El_Tigre.png'
 TPL = open(D + '/tpl.html').read()
 
 A = f'''<div class="blob" style="width:980px;height:980px;left:50px;top:520px"></div>
@@ -18,8 +18,8 @@ A = f'''<div class="blob" style="width:980px;height:980px;left:50px;top:520px"><
 B = f'''<div style="position:absolute;inset:0;background:#062a55"></div>
 <div class="c" style="top:270px"><span class="pill" style="background:#d6336c">MATCH OF THE WEEK</span></div>
 <div class="c cap" style="top:355px;font-size:96px;line-height:1;color:#fff">Cypress<br><span style="color:#f56c8c">×</span> El Tigre</div>
-<div style="position:absolute;left:150px;top:600px;width:780px;height:1040px;border-radius:30px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.4)">
- <img src="{CARD}" style="position:absolute;width:780px;left:0;top:-300px"></div>
+<div style="position:absolute;left:150px;top:620px;width:780px;height:975px;border-radius:30px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.4)">
+ <img src="{CARD}" style="position:absolute;width:780px;left:0;top:-405px"></div>
 <div class="c it" style="top:1700px;color:#f7b6c8;font-size:44px">tiles · mat · racks, across brands</div>'''
 
 B_GUIDE = B + '''<div style="position:absolute;left:0;right:0;top:240px;height:1440px;border-top:6px dashed #ffd23f;border-bottom:6px dashed #ffd23f"></div>
@@ -40,7 +40,7 @@ STICKER = '''<style>body{background:transparent!important}</style>
 D_PREVIEW = f'''<div style="position:absolute;inset:0;background:linear-gradient(#e9d7c6,#c9a98c)"></div>
 <div style="position:absolute;left:140px;top:430px;width:800px;height:1000px;background:#fff;border-radius:24px;box-shadow:0 20px 50px rgba(0,0,0,.25);overflow:hidden">
  <div style="height:90px;display:flex;align-items:center;padding:0 26px;font:700 30px Bit;color:#222">◯ &nbsp;a_follower</div>
- <div style="position:absolute;top:90px;left:0;right:0;bottom:0;overflow:hidden"><img src="{CARD}" style="width:800px;position:relative;top:-330px"></div></div>
+ <div style="position:absolute;top:90px;left:0;right:0;bottom:0;overflow:hidden"><img src="{CARD}" style="width:800px;position:relative;top:-425px"></div></div>
 <img src="file://{D}/sticker-great-match.png" style="position:absolute;left:300px;top:260px;width:560px">'''
 
 
