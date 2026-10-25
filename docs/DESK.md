@@ -125,4 +125,6 @@ On HQ in this order.
 
 See CLAUDE.md.
 
-- **CANVA TEMPLATE LIBRARY (Main, Oct 25 4:42pm ask):** one sample each sent for her direction check (assets/social/canva-templates/samples/: rate-this-match story, match-of-the-week Reel cover + grid guide, iPhone screenshot story, "Great match! #mahjmatch" reshare sticker PNG). NEXT: on her yes, build the approved ones as editable Canva templates (no browser), then a short how-to. Don't build more until she picks.
+- **CANVA TEMPLATE LIBRARY (Main, Oct 25 4:42pm ask):** first samples REJECTED as unjudgeable (built on an old card). Redo all four from the CURRENT live FYM card (artifact 6epA9HuEdT32zUp79Qv3kd, local copy /home/claude/fymlive), then resend. Original samples (assets/social/canva-templates/samples/: rate-this-match story, match-of-the-week Reel cover + grid guide, iPhone screenshot story, "Great match! #mahjmatch" reshare sticker PNG). NEXT: on her yes, build the approved ones as editable Canva templates (no browser), then a short how-to. Don't build more until she picks.
+
+- **OUTREACH PAGE (Main build, Ops paste; Tiffany Oct 25 5:56pm):** she needs a page to send when SHE contacts a brand. Use the Work With page (site/livepatch/workwith) with her Oct 24 l-workwith6 notes applied, no "tell me about your brand" ask, live HIDDEN at /work-with-us (noindex). HQ snippets (hq/snippets) now hold her outreach emails pointing at that URL; when it's live, drop the 'delete that line' note from both snippets. Fix the partner ticker's empty boxes.
