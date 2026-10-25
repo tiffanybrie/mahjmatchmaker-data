@@ -583,6 +583,10 @@ if "'Make it a love triangle'" not in UI or 'wingman' in UI: F.append("[41] rack
 _md = fn('renderMatDoor')
 if 'tswipe(el,lock,m,g)' not in _md or 'Swipe on tiles' not in _md or 'data-tour' not in _md: F.append("[42] mat door: no tour link / 'Swipe on tiles' intro / tile-set swiper after picking the mat")
 if "pairUp(i);jump('s-racks')" not in UI or 'data-dgrid="1"' not in UI or 'data-dgrid="0"' not in UI: F.append("[42] mat door: Add racks does not go straight to the racks, or no See all / Swipe instead toggle")
+# [43] Oct 25 (Tiffany 14:39, website: "Couldn't draw the card here"): card images from another origin (jsDelivr on the website copy)
+# must load with crossOrigin, or one photo taints the canvas and the card cannot be drawn/saved.
+if "const lk=src=>" in UI and "i.crossOrigin='anonymous'" not in UI[UI.index('const lk=src=>'):UI.index('const lk=src=>') + 400]:
+    F.append("[43] card image loader lk() does not set crossOrigin='anonymous' for http(s) images (website card breaks: tainted canvas)")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
