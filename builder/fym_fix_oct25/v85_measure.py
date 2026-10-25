@@ -74,17 +74,22 @@ def tile_tone_from_photo(im):
     clean = ~earthy & (ss >= .45) & (ll >= .35)
     e, c = earthy.mean(), clean.mean()
     return 'earthy' if e >= .55 and c < .2 else ('clean' if c >= .35 and e < .4 else 'transitional')
+BACKW = 0.5  # Tiffany's process (doc 86b): the tile BACK is the main colour; faces/suits/layers come from the photo itself
+if '--sets-only' in sys.argv:
+    res['mats'] = json.load(open(REPO + '/config/fym-colour-oct25.json'))['mats']
 for s in D['sets']:
     tt = TT.get(s['slug']) or TBN.get(nm(s['name']) + '|' + nm(s['maker']))
     if not tt and len(TBN1.get(nm(s['name']), [])) == 1: tt = TBN1[nm(s['name'])][0]
     t = D['tiles'].get(s['tile']) or {}; f = t.get('full'); im = None
     if f and os.path.exists(B + '/' + f): im = Image.open(B + '/' + f).convert('RGB')
-    if tt and tt.get('palette'): sw = [[hx, w] for hx, w in tt['palette'] if w >= .04]; src = 'tile-tones'
-    elif im is not None:
-        a = px(im); a = a[~((a.min(1) > .82) & (a.max(1) - a.min(1) < .12))]; sw = kmeans_sw(a, 6, .05); src = 'photo'
-    else: sw, src = [], 'none'
+    sw = []
+    if im is not None:
+        a = px(im); a = a[~((a.min(1) > .82) & (a.max(1) - a.min(1) < .12))]  # ivory/white faces out
+        sw = [[hx, round(w * (1 - BACKW if (tt or {}).get('back_hex') else 1), 3)] for hx, w in kmeans_sw(a, 6, .05)]
+    if (tt or {}).get('back_hex'): sw = [[tt['back_hex'], BACKW]] + sw
+    src = ('back+' if (tt or {}).get('back_hex') else '') + ('photo' if im is not None else '')
     tone = (tt or {}).get('tone') or (tile_tone_from_photo(im) if im is not None else None)
-    res['sets'][s['slug']] = {'sw': sw, 'tone': tone, 'src': src, 'tone_src': 'tile-tones' if (tt or {}).get('tone') else 'photo'}
+    res['sets'][s['slug']] = {'sw': sw, 'tone': tone, 'src': src or 'none', 'back': (tt or {}).get('back_hex')}
 json.dump(res, open(REPO + '/config/fym-colour-oct25.json', 'w'), indent=0, ensure_ascii=False)
 from collections import Counter
 print('set tones', Counter(v['tone'] for v in res['sets'].values()), 'src', Counter(v['src'] for v in res['sets'].values()))
