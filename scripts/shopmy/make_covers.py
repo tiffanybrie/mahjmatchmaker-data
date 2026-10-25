@@ -97,7 +97,7 @@ COVERS = [
   [96127861, 96127725, 96127601, 96130241, 96129673]),
  (8399799, 'mahjong-storage', 'Mahjong Storage', 'bags and totes for your set', 'storage', '#054689', 3,
   [96214131, 95958946, 96229865]),
- (8399927, 'merry-mahjong', 'Merry Mahjong', 'christmas finds for your mahj table', 'holiday shop', '#b3202a', 5,
+ (8399927, 'merry-mahjong', 'Merry Mahjong', 'christmas finds for your table + holiday gifts', 'holiday shop', '#b3202a', 5,
   [96216077, 96226001, 96232169, 96232833, 96216391]),
  (8399777, 'mahjong-gifts', 'Mahjong Gifts', 'for every mahj friend on your list', 'gift guide', '#b3202a', 5,
   [96216286, 96213699, 96217133, 96213080, 96213309]),
