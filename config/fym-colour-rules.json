@@ -1,0 +1,30 @@
+{
+ "about": "Colour-ranking rules (v86, from the Oct 25 audit of 221 unmatched sets). themes: regex on mat/set NAME; a themed mat ranks high only for a set with the same theme. novelty: loud novelty mats pushed down. back_only_sets: tile photo is a chart/packaging/graphic, so only the recorded back colour is used.",
+ "themes": {
+  "halloween": "hallowe|ween\\b|witch|spook|hocus|\\bboo\\b|pumpkin|ghoul|catrina|skull",
+  "patriotic": "freedom|americana|patriot|\\busa\\b|liberty|stars (and|&) stripes|4th of july",
+  "derby": "derby",
+  "hanukkah": "hanukkah|menorah|dreidel",
+  "valentine": "valentine|cupid|i ❤|i love mahj",
+  "easter": "easter|bunny|hare\\b|hoppy",
+  "stpatricks": "shamrock|st\\.? patrick|clover"
+ },
+ "novelty": [
+  "love graffiti",
+  "girl talk",
+  "mod squad",
+  "corey paige",
+  "birthday",
+  "90s girl",
+  "grateful dead"
+ ],
+ "back_only_sets": [
+  "90s Taffy (Pink)",
+  "Christmas Kiss",
+  "Yellow Lilac Ocean Blue",
+  "Mauve-Blush",
+  "Lilacée",
+  "Mojave",
+  "Ivory Pinstripe"
+ ]
+}

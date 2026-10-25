@@ -29,18 +29,33 @@ HOLSETS = set(json.loads(_m.group(1)).get('Holiday', [])) if _m else set()
 # mats whose only photo is a room / lifestyle shot: their measured colours are mostly the room, so they stay out of the
 # colour-only ranking (they still show for Tiffany's picks, filters, brand and search). Listed by eye from the audit sheets.
 ROOM = set(json.load(open(REPO + '/config/fym-colour-room-photos.json'))['mats']) if os.path.exists(REPO + '/config/fym-colour-room-photos.json') else set()
+X = json.load(open(REPO + '/config/fym-colour-rules.json'))
+GROUP = {g: set(v) for g, v in json.loads(_m.group(1)).items()} if _m else {}
+G2F = {'Pink': ['pink'], 'Red': ['red'], 'Blue': ['blue'], 'Green': ['green'], 'Purple': ['purple'], 'Yellow & Orange': ['yellow', 'orange'],
+       'Brown': ['dark'], 'Ivory': ['neutral'], 'Natural Patterns': ['dark', 'neutral']}
+def theme_of(name):
+    for th, pat in X['themes'].items():
+        if _re.search(pat, name, _re.I): return th
+    return None
 M = D['mats']; order = D['order']; OI = {m: j for j, m in enumerate(order)}
 keys = [m for m in order if not M[m].get('hid') and m in C['mats'] and C['mats'][m]['sw'] and m not in ROOM]
+MTH = {m: theme_of(M[m]['n']) for m in keys}
+NOV = {m for m in keys if any(_re.search(p, M[m]['n'], _re.I) for p in X['novelty'])}
+PS = {m for m in keys if _re.search(r'paige spearin', M[m]['n'] + ' ' + M[m].get('bn', ''), _re.I)}
 MP = {m: prep(C['mats'][m]['sw']) for m in keys}
 ALL = np.concatenate([MP[m][0] for m in keys]); seg = np.cumsum([0] + [len(MP[m][1]) for m in keys])
 VIV_TOL, VIV_K = 0.08, 140.0
 done = brand_front = 0; report = {}
 for s in D['sets']:
     cs = C['sets'].get(s['slug']) or {}
-    tp = prep(cs.get('sw'))
+    sw = cs.get('sw')
+    if s['name'] in X['back_only_sets'] and cs.get('back'): sw = [[cs['back'], 1.0]]  # photo is a chart / packaging / graphic
+    tp = prep(sw)
     if not tp: continue
     la, wa, vt = tp
     hol_set = s['name'] in HOLSETS
+    sth = theme_of(s['name'])
+    gf = set(f for g, names in GROUP.items() if s['name'] in names for f in G2F.get(g, []))
     Dm = deltaE_ciede2000(np.repeat(la, len(ALL), 0), np.tile(ALL, (len(la), 1))).reshape(len(la), len(ALL))
     sc = {}
     for j, m in enumerate(keys):
@@ -48,12 +63,23 @@ for s in D['sets']:
         v = 0.6 * float((d.min(1) * wa).sum()) + 0.4 * float((d.min(0) * wb).sum())
         v += VIV_K * max(0.0, abs(vm - vt) - VIV_TOL)
         if M[m].get('hol'): v += (-25 if hol_set else 25)  # holiday tile sets: holiday mats first; year-round sets: after
+        # her own shop-by-colour group for the set (BACKG): mats carrying that colour come first
+        if gf:
+            mf, mt = M[m].get('mf') or [], M[m].get('mt') or []
+            tiers = [mt[j] if j < len(mt) else 1 for j, c in enumerate(mf) if c in gf] + [2 for c in (M[m].get('ha') or []) if c in gf]
+            v += -15 if (tiers and min(tiers) == 0) else (-8 if tiers else 25)
+        th = MTH[m]
+        if th: v += -20 if th == sth else 40          # themed mats (Halloween, patriotic, Derby, Hanukkah...) only for matching sets
+        if m in NOV: v += 20                           # loud novelty mats
+        if M[m].get('rt'): v += 20                     # retired mats after available ones
+        if m in PS: v += 60                            # Paige Spearin x TdT: no commission, never promoted (CLAUDE.md)
         sc[m] = v
     ranked = sorted(sc, key=lambda m: sc[m])
     front = []
     if not s['m']:
         best60 = set(ranked[:60]); tb = (D['tiles'].get(s['tile']) or {}).get('bn') or s['maker']
-        front = [m for m in ranked if m in best60 and M[m].get('bn') == tb and (bool(M[m].get('hol')) == hol_set or M[m].get('wfh'))]
+        def ingroup(m): return not gf or any(c in gf for c in (M[m].get('mf') or []) + (M[m].get('ha') or []))
+        front = [m for m in ranked if m in best60 and M[m].get('bn') == tb and (bool(M[m].get('hol')) == hol_set or M[m].get('wfh')) and ingroup(m)]
         if front: brand_front += 1
     out = front + [m for m in ranked if m not in front]
     s['cr'] = [OI[m] for m in out[:300]]; done += 1
