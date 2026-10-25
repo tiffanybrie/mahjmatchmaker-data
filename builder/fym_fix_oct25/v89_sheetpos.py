@@ -13,7 +13,7 @@ rep(css, css + ".sheet.at{position:absolute;inset:auto;left:0;right:0;top:0;disp
 JS = ("/* v89: pop-ups open where you tapped when the app is inside a frame (artifact / website), not at the bottom of the page */"
       "let lastTap=null;document.addEventListener('pointerdown',e=>{lastTap=e.target;},true);"
       "function openSheet(d){document.body.appendChild(d);let inFrame=true;try{inFrame=window.top!==window;}catch(e){}if(!inFrame)return;"
-      "const H=Math.max(document.documentElement.scrollHeight,document.body.scrollHeight);d.classList.add('at');d.style.height=H+'px';const b=d.querySelector('.box');"
+      "const de=document.documentElement||{},H=Math.max(de.scrollHeight||0,(document.body||{}).scrollHeight||0);if(!H)return;d.classList.add('at');d.style.height=H+'px';const b=d.querySelector('.box');"
       "const t=lastTap&&lastTap.isConnected?lastTap.getBoundingClientRect().top+window.scrollY:window.scrollY+80;"
       "b.style.top=Math.max(12,Math.min(H-b.offsetHeight-12,t-b.offsetHeight/2))+'px';const f=b.querySelector('button');if(f)try{f.focus({preventScroll:true});}catch(e){}}")
 rep("function startOver(){", JS + "function startOver(){")

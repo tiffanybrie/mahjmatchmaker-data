@@ -619,8 +619,17 @@ for s in D['sets']:
 if "/* v89: bar spans the brand line (flame to .com) */" not in UI:
     F.append("[48] Mood board code bar is full width (should span the brand line)")
 # [49] Oct 25 (Tiffany 16:55): Start over prompt opened at the bottom of the page on desktop. Every sheet opens via openSheet (at the tap when framed)
-if UI.count("className='sheet'") != UI.count('openSheet(d)') + UI.count('openSheet(el)') or 'function openSheet(' not in UI:
+if UI.count("className='sheet'") != UI.count('openSheet(d);}') + UI.count('openSheet(el)') or 'function openSheet(' not in UI:
     F.append("[49] a pop-up sheet is appended without openSheet() (it would open at the bottom of the page inside the artifact / website)")
+# [50] Oct 25 (Tiffany 16:58: Splash of Color Preppy Animal Print was a far-away living-room render). Mats whose photo shows the mat too
+#      small (config/fym-mat-focus-oct25.json, action crop) must show the cropped photo (M.f0 = original); too_far ones stay hidden.
+_mfp = os.path.join(REPO, 'config', 'fym-mat-focus-oct25.json')
+if os.path.exists(_mfp):
+    for k_, fo_ in json.load(open(_mfp)).items():
+        m_ = M.get(k_)
+        if not m_ or m_.get('hid'): continue
+        if fo_.get('action') == 'crop' and not m_.get('f0'): F.append(f"[50] {m_['n']} ({m_.get('bn')}): far-away / room photo not cropped to the mat")
+        if fo_.get('action') == 'too_far': F.append(f"[50] {m_['n']} ({m_.get('bn')}): photo too far away but visible (hide it + Questionable list)")
 # [46] Oct 25 (Tiffany 16:37): Mood board rack labels sit BELOW the racks (whole rack visible)
 if 'racks(x+28,ry+14,w-56,hR-28,{fs:20,maxRow:230,below:true})' not in UI:
     F.append("[46] Mood board rack labels are not below the racks (below:true)")

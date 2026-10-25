@@ -1,0 +1,54 @@
+{
+ "alb2:splash-of-color-preppy-animal-print": {
+  "name": "Preppy Animal Print",
+  "brand": "Splash of Color",
+  "f": "m/1915.webp",
+  "action": "crop",
+  "box": [
+   0.27,
+   0.32,
+   0.75,
+   0.71
+  ],
+  "why": "AI living-room render: square table, 4 cream armchairs, bookshelves, plant; mat (pink leopard centre, teal/blue tropical scalloped border) is ~20% of frame. Mat ~390px across, crop keeps colours readable. Better: ask brand for flat product render."
+ },
+ "splashofcolorco.com/modern-nordic-scandinavian-folk-art-mahjong-mat-sleek-surface": {
+  "name": "Modern Nordic Scandinavian Folk Art Sleek Surface",
+  "brand": "Splash of Color",
+  "f": "m/1368.webp",
+  "action": "crop",
+  "box": [
+   0.03,
+   0.22,
+   0.99,
+   0.77
+  ],
+  "why": "AI dining-room render: mat on table with chairs/lamp/flowers; mat ~40% of frame, ~1100px across, crops cleanly."
+ },
+ "mahjsquadshop.com/candy-cane-pink-wonderland-mahjong-mat": {
+  "name": "Candy Cane Pink Wonderland",
+  "brand": "Mahj Squad",
+  "f": "m/1837.webp",
+  "action": "crop",
+  "box": [
+   0.0,
+   0.38,
+   1.0,
+   0.87
+  ],
+  "why": "Room scene (pink flocked tree, sofas, tablecloth); mat with racks ~40% of frame, full-width ~786px; crop removes tree/sofa."
+ },
+ "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098282293": {
+  "name": "Deco Dragon (Indigo)",
+  "brand": "Bam Bird Boutique",
+  "f": "m/2088.webp",
+  "action": "crop",
+  "box": [
+   0.08,
+   0.19,
+   0.96,
+   0.81
+  ],
+  "why": "Flat product shot with wide white margin; mat ~45% of frame (~355px); crop fills card."
+ }
+}
