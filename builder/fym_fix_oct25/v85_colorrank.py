@@ -7,6 +7,7 @@ Changes vs v82_colorrank (Tiffany Oct 25: Ash Burl showed Let's Be Besties Green
     A mat much more vivid than the tiles (bright floral on natural burl) or much duller than them (muddy mat on bright tiles)
     is pushed down: +140 per unit of the gap beyond a small tolerance.
  4. Holiday tile sets (BACKG Holiday) get holiday mats first; room-photo mats (config/fym-colour-room-photos.json) stay out of colour-only ranking.
+ 5. M[mat].ms (used for rack order and elsewhere) replaced by the unblended swatches too.
  3. Brand's own mats first (Tiffany Oct 25) for sets she hasn't matched (m == []): the tile brand's own visible mats that pass the
     colour check (score within the set's best 60) go to the front, in score order. Holiday mats stay after year-round ones.
 Usage: python3 v85_colorrank.py <build_dir>  (in place)"""
@@ -58,6 +59,12 @@ for s in D['sets']:
     s['cr'] = [OI[m] for m in out[:300]]; done += 1
     report[s['slug']] = {'name': s['name'], 'maker': s['maker'], 'vivid': round(vt, 2), 'brand_front': len(front),
                          'top': [[M[m]['n'], M[m]['bn'], round(sc[m], 1), round(MP[m][2], 2)] for m in out[:8]]}
+# 5. Rack order (Tiffany Oct 25 14:46): racks are ranked against M[mat].ms, the same blended swatches. Swap in the unblended ones.
+nms = 0
+for m, o in M.items():
+    sw = (C['mats'].get(m) or {}).get('sw')
+    if sw: o['ms'] = [[hx, w] for hx, w in sw]; nms += 1
+print('mat swatches (ms) replaced with unblended colours:', nms)
 h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]
 open(P, 'w').write(h)
 json.dump(report, open(B + '/v85_colorrank_report.json', 'w'), indent=1, ensure_ascii=False)
