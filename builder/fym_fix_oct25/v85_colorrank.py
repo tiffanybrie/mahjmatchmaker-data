@@ -6,6 +6,7 @@ Changes vs v82_colorrank (Tiffany Oct 25: Ash Burl showed Let's Be Besties Green
  2. Vividness rule (her clean-vs-earthy colour theory, doc 76): vivid share = weight of colours with Lab chroma >= 38.
     A mat much more vivid than the tiles (bright floral on natural burl) or much duller than them (muddy mat on bright tiles)
     is pushed down: +140 per unit of the gap beyond a small tolerance.
+ 4. Holiday tile sets (BACKG Holiday) get holiday mats first; room-photo mats (config/fym-colour-room-photos.json) stay out of colour-only ranking.
  3. Brand's own mats first (Tiffany Oct 25) for sets she hasn't matched (m == []): the tile brand's own visible mats that pass the
     colour check (score within the set's best 60) go to the front, in score order. Holiday mats stay after year-round ones.
 Usage: python3 v85_colorrank.py <build_dir>  (in place)"""
@@ -21,8 +22,14 @@ def prep(sw):
     if not sw: return None
     L = np.array([lab(hx) for hx, _ in sw]); w = np.array([x for _, x in sw], float); w = w / w.sum()
     chroma = np.hypot(L[:, 1], L[:, 2]); return L, w, float(w[chroma >= 38].sum())
+import re as _re
+_m = _re.search(r'BACKG=(\{.*?\});', h)
+HOLSETS = set(json.loads(_m.group(1)).get('Holiday', [])) if _m else set()
+# mats whose only photo is a room / lifestyle shot: their measured colours are mostly the room, so they stay out of the
+# colour-only ranking (they still show for Tiffany's picks, filters, brand and search). Listed by eye from the audit sheets.
+ROOM = set(json.load(open(REPO + '/config/fym-colour-room-photos.json'))['mats']) if os.path.exists(REPO + '/config/fym-colour-room-photos.json') else set()
 M = D['mats']; order = D['order']; OI = {m: j for j, m in enumerate(order)}
-keys = [m for m in order if not M[m].get('hid') and m in C['mats'] and C['mats'][m]['sw']]
+keys = [m for m in order if not M[m].get('hid') and m in C['mats'] and C['mats'][m]['sw'] and m not in ROOM]
 MP = {m: prep(C['mats'][m]['sw']) for m in keys}
 ALL = np.concatenate([MP[m][0] for m in keys]); seg = np.cumsum([0] + [len(MP[m][1]) for m in keys])
 VIV_TOL, VIV_K = 0.08, 140.0
@@ -32,19 +39,20 @@ for s in D['sets']:
     tp = prep(cs.get('sw'))
     if not tp: continue
     la, wa, vt = tp
+    hol_set = s['name'] in HOLSETS
     Dm = deltaE_ciede2000(np.repeat(la, len(ALL), 0), np.tile(ALL, (len(la), 1))).reshape(len(la), len(ALL))
     sc = {}
     for j, m in enumerate(keys):
         d = Dm[:, seg[j]:seg[j + 1]]; _, wb, vm = MP[m]
         v = 0.6 * float((d.min(1) * wa).sum()) + 0.4 * float((d.min(0) * wb).sum())
         v += VIV_K * max(0.0, abs(vm - vt) - VIV_TOL)
-        if M[m].get('hol'): v += 25
+        if M[m].get('hol'): v += (-25 if hol_set else 25)  # holiday tile sets: holiday mats first; year-round sets: after
         sc[m] = v
     ranked = sorted(sc, key=lambda m: sc[m])
     front = []
     if not s['m']:
         best60 = set(ranked[:60]); tb = (D['tiles'].get(s['tile']) or {}).get('bn') or s['maker']
-        front = [m for m in ranked if m in best60 and M[m].get('bn') == tb and not M[m].get('hol')]
+        front = [m for m in ranked if m in best60 and M[m].get('bn') == tb and (bool(M[m].get('hol')) == hol_set or M[m].get('wfh'))]
         if front: brand_front += 1
     out = front + [m for m in ranked if m not in front]
     s['cr'] = [OI[m] for m in out[:300]]; done += 1
