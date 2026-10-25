@@ -17059,8 +17059,8 @@
   },
   "bespoke-mahjong-bespoke-x-gray-malin-beach-club": {
    "m": [],
-   "hid": true,
-   "name": "Bespoke X Gray Malin Beach Club"
+   "hid": false,
+   "name": "Gray Malin Beach Club (Cabana Blue)"
   },
   "bespoke-mahjong-bespoke-x-gray-malin-getaway-dogs-xl-mega": {
    "m": [],
@@ -27490,6 +27490,7 @@
    "change": "rack lists per (set, mat): mat's own picks (config/mat-racks-picks.json) first, then the tile set's racks; 3 pairings",
    "approval": "Tiffany Oct 22 (DESK FYM item 7 + chat ~1:58pm: 'Mat's picks, then tile racks')"
   },
-  "2026-10-25: sierra m: removed Tartan Toile Noël (Tiffany: mis-swipe, not a match)"
+  "2026-10-25: sierra m: removed Tartan Toile Noël (Tiffany: mis-swipe, not a match)",
+  "2026-10-25: Bespoke Gray Malin Beach Club unhidden (regular size, in stock; Tiffany 15:19 wants Bespoke regular sets in; it was hidden with the Megas)"
  ]
 }
