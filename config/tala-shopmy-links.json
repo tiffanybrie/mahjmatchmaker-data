@@ -1,5 +1,5 @@
 {
- "about": "Tala Mahj ShopMy links (Tiffany approved swapping direct talamahj.com links to her ShopMy links, Oct 20). From her ShopMy collection 'Tala Mahj Favorites' (8387635), pin ids -> go.shopmy.us/p-<id>. Keyed by gallery img id. Oct 21: Tiffany added Seafoam + Sonoma, Claude added Pink & Ivory + Sage (her OK) -> all 11 linked.",
+ "about": "Tala Mahj ShopMy links (Tiffany approved swapping direct talamahj.com links to her ShopMy links, Oct 20). From her ShopMy collection 'Tala Mahj Favorites' (8387635), pin ids -> go.shopmy.us/p-<id>. Keyed by gallery img id. Oct 21: Tiffany added Seafoam + Sonoma, Claude added Pink & Ivory + Sage (her OK) -> all 11 linked. Oct 25: tiles + racks pins read from the collection via the ShopMy API (keys = talamahj.com product handles). Pin 96067287 'Tradewind Mahjong Tiles' is a generic listing, not used.",
  "links": {
   "tala-mahj--midnight-wildflowers-with-camel-fringe": "https://go.shopmy.us/p-96067421",
   "tala-mahj--the-montecito-wildflowers": "https://go.shopmy.us/p-96067632",
@@ -13,5 +13,20 @@
   "tala-mahj--cabana-pink-ivory-with-citrus-fringe": "https://go.shopmy.us/p-96304571",
   "tala-mahj--cabana-sage-ivory-with-cantaloupe-fringe": "https://go.shopmy.us/p-96304688"
  },
- "no_shopmy_link_yet": []
+ "no_shopmy_link_yet": [
+  "tradewind-tiles-mint-marble (Tradewind Mint & Sea tiles)",
+  "horizon-mahjong-rack-pusher-20-inches-set-of-4-ships-oct-1-chocolate-woven-rattan-copy (Horizon chocolate woven rattan rack)",
+  "shoreline-mahjong-rack-wavy-pusher-20-inches-set-of-4 (Shoreline, sold out)"
+ ],
+ "tiles": {
+  "tradewind-mahjong-tiles-aqua-copy": "https://go.shopmy.us/p-97206524",
+  "tradewind-mahjong-tiles-emerald-jade": "https://go.shopmy.us/p-97206640",
+  "tradewind-tiles-tortoise": "https://go.shopmy.us/p-97206725",
+  "tradewind-mahjong-tiles-aqua": "https://go.shopmy.us/p-97206748",
+  "tradewind-tiles-pink": "https://go.shopmy.us/p-97206696"
+ },
+ "racks": {
+  "horizon-rack": "https://go.shopmy.us/p-97204367",
+  "shoreline-mahjong-rack-wavy-pusher-20-inches-set-of-4-ships-oct-1-chocolate-woven-rattan": "https://go.shopmy.us/p-97206902"
+ }
 }
