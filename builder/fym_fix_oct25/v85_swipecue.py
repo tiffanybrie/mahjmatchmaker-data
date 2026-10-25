@@ -21,7 +21,7 @@ JS = ("/* v85: swipe cue on the first card for people who skip the tour (Tiffany
       "if(!c||!c.parentElement||c.parentElement.querySelector('.swh'))return;const w=document.createElement('div');w.className='swh cue';"
       "w.setAttribute('aria-hidden','true');w.innerHTML='<b class=\"swl\">Swipe right \\u2665 if you love it<br>Swipe left \\u2715 if it\\u2019s not the one</b>"
       "<span class=\"swx\">\\u2715</span><i></i><span class=\"swy\">\\u2665</span>';c.parentElement.appendChild(w);});}"
-      "{let swq=0;new MutationObserver(()=>{if(swq)return;swq=requestAnimationFrame(()=>{swq=0;swCue();});}).observe(document.getElementById('app'),{childList:true,subtree:true});}")
+      "if(typeof MutationObserver!=='undefined'){let swq=0;new MutationObserver(()=>{if(swq)return;swq=requestAnimationFrame(()=>{swq=0;swCue();});}).observe(document.getElementById('app'),{childList:true,subtree:true});}")
 rep("function tourNext(){", JS + "function tourNext(){")
 # 3. CSS: label pill on the card, a bit above the finger row
 css = ".swh .swx{color:#7a6a85}.swh .swy{color:var(--pink)}"

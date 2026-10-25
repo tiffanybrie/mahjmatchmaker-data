@@ -555,7 +555,8 @@ def _order(src, parts):
     pos = [src.find(x) for x in parts]
     return all(p_ >= 0 for p_ in pos) and pos == sorted(pos)
 if not _order(_rm, ["filters('m')", "tileView('m')", 'class="tcap"', "deck('m')", "acts('m')", "tray('m')"]): F.append("[37] mat screen order changed (filters, tiles, caption, deck, ✕/♥, suitors)")
-if not _order(_rr, ["filters('r')", "matBand()", 'class="tcap"', "deck('r')", "acts('r')", "tray('r')"]): F.append("[37] rack screen is not the mirror of the mat screen (filters, mat, caption, rack deck, ✕/♥, rack suitors)")
+# Oct 25 (Tiffany 14:36): on racks the Brand/colour row sits BETWEEN the mat picture and the rack cards (her husband never found it above the mat)
+if not _order(_rr, ["matBand()", 'class="tcap"', 'class="rfil"', "filters('r')", "deck('r')", "acts('r')", "tray('r')"]): F.append("[37] rack screen order changed (mat, caption, brand/colour row, rack deck, ✕/♥, rack suitors)")
 _between = _rr[_rr.find("matBand()"):_rr.find("deck('r')")]
 if re.search(r"tray\(|slots|rSuitors|herBar", _between): F.append("[37] something sits between the mat and the rack swiper (no slots/picker there)")
 if "herBar('r')" in _rr: F.append("[37] second Tiffany's picks toggle (herBar) still on the rack screen")
