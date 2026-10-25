@@ -587,6 +587,9 @@ if "pairUp(i);jump('s-racks')" not in UI or 'data-dgrid="1"' not in UI or 'data-
 # must load with crossOrigin, or one photo taints the canvas and the card cannot be drawn/saved.
 if "const lk=src=>" in UI and "i.crossOrigin='anonymous'" not in UI[UI.index('const lk=src=>'):UI.index('const lk=src=>') + 400]:
     F.append("[43] card image loader lk() does not set crossOrigin='anonymous' for http(s) images (website card breaks: tainted canvas)")
+# [44] Oct 25 (Tiffany 14:43): the card's tile picture must be the SAME photo the shopper matched to on the swipe screen (tileFull), never a separate HD/listing photo.
+if "hdOr('t',s.tile" in UI or 'Promise.resolve(tileFull(s)||pile(s)).then(lk)' not in UI:
+    F.append("[44] match card tile photo is not the swipe-screen photo tileFull(s) (it must never pick a separate HD/listing photo)")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
