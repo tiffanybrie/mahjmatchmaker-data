@@ -9,13 +9,16 @@ P = {r['name']: r for r in json.load(open(D + '/picks_data.json'))}
 # chosen product photo per mat (index into the brand's product images); Cognac = her live match card (mat no longer sold)
 PHOTO = {'Brown Vegan Leather': 3, 'Vegan Leather – Caramel': 0, 'Chinoiserie Songbird': 0, 'Larkspur': 0, 'Darjeeling': 0,
          'Lorelei': 0, 'Jardín de Los Jefes': 1, 'Rattan': 0, 'The Hunt Club': 0, 'Autumn Saffron': 0, 'Ivy Reverie': 0,
-         'Osmanthus Grove': 0, 'Jade': 0, 'Nantucket Basket': 1}
+         'Osmanthus Grove': 0, 'Jade': 0, 'Nantucket Basket': 1, 'Astor': 0}
+RETIRED = [('Spring Fling', 'https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/5c3dcc6e-e358-4e1a-bda5-59e382756abb/11-amara-mahjong-tiles-oh-my-mahjong-spring-fling-mat.jpg?format=1000w'),
+           ('Citrus Songbird', 'https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/1de1f0cb-7601-4e74-a305-29a53edf2e37/03-amara-mahjong-tiles-oh-my-mahjong-citrus-songbird-mat.jpg?format=1000w'),
+           ('Enchanted', 'https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/794d1eae-627d-4f4c-aa4e-15da84ce7e7b/04-amara-mahjong-tiles-oh-my-mahjong-enchanted-mat.jpg?format=1000w')]
 COGNAC_CARD = 'https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/fcacc536-e38f-4a29-8508-9c6057dbcafd/10-heritage-2-0-mahjong-tiles-oh-my-mahjong-cognac-mat.jpg?format=1000w'
 
 
 def img(url):
     b = urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'}), timeout=40).read()
-    im = Image.open(io.BytesIO(b)).convert('RGB'); im.thumbnail((900, 900))
+    im = Image.open(io.BytesIO(b)).convert('RGBA'); bg = Image.new('RGBA', im.size, (255, 255, 255, 255)); im = Image.alpha_composite(bg, im).convert('RGB'); im.thumbnail((900, 900))  # transparent PNGs get a white background, never black
     o = io.BytesIO(); im.save(o, 'JPEG', quality=82)
     return 'data:image/jpeg;base64,' + base64.b64encode(o.getvalue()).decode()
 
@@ -45,7 +48,7 @@ MATS = {
   ('Chinoiserie Songbird', 'Mahj & Vine', 'Chinoiserie Songbird by Mahj & Vine',
    "Tropical leaves and blooms in hot pink, greens and blues, with little songbirds tucked in. Bright and pastel tile sets all find something to grab onto."),
   ('Larkspur', 'Oh My Mahjong', 'Larkspur by Oh My Mahjong',
-   "A coral center, a lime border and blue florals. It's the mat I've matched with more tile sets than any other, from soft pastels to tortoise."),
+   "A coral center, a lime border and blue florals. Three strong colors means lots of tile backs find something to pick up, from soft pastels to tortoise."),
   ('Jardín de Los Jefes', 'Tigre de Tartan', 'Jardín de Los Jefes by Tigre de Tartan',
    "Bold garden florals in nearly every color on a crisp white ground, framed in rattan. Bright tile sets look right at home here."),
   ('Lorelei', 'Oh My Mahjong', 'Lorelei by Oh My Mahjong',
@@ -66,8 +69,12 @@ MATS = {
    "Green toile framed in terracotta around a cream gingham center. Preppy, earthy and easy to match."),
   ('Nantucket Basket', 'Tigre de Tartan', 'Nantucket Basket by Tigre de Tartan',
    "A woven basketweave with a white rope border. Basketweave reads as a neutral, so it pairs with natural-texture tiles and colorful sets alike."),
+],
+ 'dark': [
+  ('Astor', 'Oh My Mahjong', 'Astor by Oh My Mahjong',
+   "Midnight blue florals framed in plaid, with pops of green and pink. There's so much dark, layered color here that bright tiles really pop."),
   ('Jade', 'Oh My Mahjong', 'Jade by Oh My Mahjong',
-   "Deep teal and ocean blues with soft green waves. It reads almost like a neutral, so bright tile backs pop without fighting it."),
+   "Teal, ocean blue and soft green waves. All those blues and greens blend into one rich backdrop, and almost any tile back stands out against it."),
  ],
 }
 SECT = {
@@ -75,6 +82,8 @@ SECT = {
    "If you only buy one mat, I'd start here. A solid leather-look mat acts like a neutral, and warm browns flatter wood-look, tortoise and jewel-tone tiles alike."),
  'color': ('Mats with lots of colors',
    "My other secret: a mat with three or more colors in it. Different tile backs can each pull a different color, so one mat ends up matching a surprising number of sets."),
+ 'dark': ('Dark, layered blues and greens',
+   "Another kind of mat that matches almost everything: one that's mostly dark, built from lots of neighboring shades. Think navy, cobalt, slate, jade and celery green all together. Because it isn't one flat color, there's always a shade for your tiles to pick up, and brighter tiles really pop against it."),
  'earthy': ('Earthy neutrals and greens',
    "Green is always on the table in mahjong. Every set has a whole suit of green bams, plus the green dragons. That's why mats with earthy neutrals and soft greens are so easy to love: they pick up colors your tiles already have."),
 }
@@ -86,7 +95,7 @@ def card(name, brand, title, text):
 
 
 body = []
-for k in ('leather', 'color', 'earthy'):
+for k in ('leather', 'color', 'earthy', 'dark'):
     h, intro = SECT[k]
     body.append(f'<h2>{h}</h2><p>{intro}</p>' + ''.join(card(*m) for m in MATS[k]))
 
@@ -103,20 +112,21 @@ h2{font:400 30px/1.15 Caprasimo,serif;color:var(--navy);margin:44px 0 8px;text-w
 .lede{font:italic 20px/1.5 "Playfair Display",serif;color:var(--pink)}
 .mat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin:18px 0}
 figure{margin:0 0 10px}img{width:100%;border-radius:10px;display:block}figcaption{font-size:13px;color:var(--mute);margin-top:6px}
-.see{font-size:15px;color:var(--mute)}.note{background:var(--note);border-radius:12px;padding:12px 14px;font-size:14px;margin:0 0 20px}
+.see{font-size:15px;color:var(--mute)}.ret{display:inline-block;background:var(--navy);color:#fff;font-size:11px;letter-spacing:2px;padding:3px 9px;border-radius:99px;vertical-align:middle;margin-left:6px}.note{background:var(--note);border-radius:12px;padding:12px 14px;font-size:14px;margin:0 0 20px}
 </style></head><body><div class="wrap">
-<div class="note"><b>Draft v2 for Tiffany, not live.</b> Order: leather → lots of colors → earthy neutrals and greens. Real mat photos, except Cognac (not sold right now, so it keeps your match card). Every "See it with" list comes from your real album picks. Want any mats swapped, added or cut?</div>
+<div class="note"><b>Draft v2 for Tiffany, not live.</b> Order: leather → lots of colors → earthy neutrals and greens → dark, layered blues and greens. Real mat photos, except Cognac (not sold right now, so it keeps your match card). Every "See it with" list comes from your real album picks. Want any mats swapped, added or cut?</div>
 <h1>The Most Versatile Mahjong Mats</h1>
 <p class="lede">The mats I reach for again and again, because they work with so many tile sets.</p>
 <p>If you're only buying one or two mats, marry the versatile one, then date the rest. You want a mat that plays nicely with the tiles you have now and the tiles you'll fall for next year. These are the ones that keep showing up in my match albums, from lots of different brands.</p>
 ''' + ''.join(body) + '''
 <h2>Retired favorites worth hunting for</h2>
 <p>Spring Fling, Citrus Songbird and Enchanted by Oh My Mahjong were some of the most versatile mats I've ever matched. They're retired, so if you see one in a mahjong buy/sell group, grab it.</p>
+''' + ''.join(f'<section class="mat"><h3>{n} by Oh My Mahjong <span class="ret">RETIRED</span></h3><figure><img alt="Amara tiles on the {n} mat" src="{img(u)}"><figcaption>Amara tiles on the {n} mat</figcaption></figure></section>' for n, u in RETIRED) + '''
 <h2>How to pick a mat that works with everything</h2>
 <p><b>Start with leather or a leather look.</b> Solid, warm neutrals go with almost every tile set.</p>
 <p><b>Look for three or more colors.</b> Different tile backs can each pull a different one.</p>
 <p><b>Don't fear green.</b> Your bams are green, so earthy greens and natural textures like rattan and basketweave are always in play.</p>
-<p><b>Start with your tiles.</b> Pull up your set in Find <i>Your</i> Mat-ch™ or its match album and see which of these mats show up.</p>
+<p><b>Use Find <i>Your</i> Mat-ch™!</b> Start with your tiles, pull up your set and match away.</p>
 </div></body></html>'''
 open(D + '/preview.html', 'w').write(HTML)
 print('ok', len(HTML))
