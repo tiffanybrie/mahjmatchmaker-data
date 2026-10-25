@@ -20,7 +20,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CDN = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@'
 ASSET = CDN + '44563dd1c2c4d9a00aa3deec61b1d86ccfdbcaf8/assets/site/fym-page/'
 WORDMARK = CDN + '8952b136784680ba365a33d7ae13ba91a25ab561/assets/brand/mahjmatchmaker-wordmark-notag.png'
-APP_COMMIT = 'bce0141b2749f60da0be537ed6b709b81f9878d8'
+APP_COMMIT = 'f6fc7c3f2eec51977083f9ac5650deefcd29218c'
 APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v90/index.html'  # v90 (Oct 25: = artifact Version 90: rack colours by eye + single-select, per-mat album racks, Mood board labels/code bar, tile reframes; t89/mc175/hd index @e54df6a)
 APP_BASE = CDN + 'ad0675e42242c3abad40cac9f539a265220e26eb' + '/site-app/fym-v72/'  # every file but index.html is unchanged since v72; base stays on the v72 commit (warmed; jsDelivr 403'd t15/132.jpg at the new commit)
 
