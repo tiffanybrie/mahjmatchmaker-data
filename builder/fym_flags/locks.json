@@ -25623,7 +25623,7 @@
    "f": "m/1461.webp",
    "th": "730d2c5d60",
    "rt": false,
-   "hid": true,
+   "hid": false,
    "mf": [
     "blue",
     "green"
@@ -25671,7 +25671,7 @@
    "f": "m/1464.webp",
    "th": "mt158fe56c",
    "rt": false,
-   "hid": true,
+   "hid": false,
    "mf": [
     "red",
     "orange"
@@ -25687,7 +25687,7 @@
    "f": "m/1465.webp",
    "th": "mt78be97bd",
    "rt": false,
-   "hid": true,
+   "hid": false,
    "mf": [
     "dark",
     "purple",
@@ -25700,12 +25700,12 @@
    ]
   },
   "www.macandmillermahjong.com/let-the-good-times-toile-mat": {
-   "n": "Let the Good Times Toile Mahjong Mat (Coming Soon)",
+   "n": "Let the Good Times Toile Mahjong Mat",
    "bn": "Mac + Miller Mahjong",
    "f": "m/1460.webp",
    "th": "mt82764f98",
    "rt": false,
-   "hid": true,
+   "hid": false,
    "mf": [
     "neutral"
    ],
@@ -25714,12 +25714,12 @@
    ]
   },
   "www.macandmillermahjong.com/mg-flower-mat-name-tbd": {
-   "n": "Carnival in Bloom Mahjong Mat (Coming Soon)",
+   "n": "Carnival in Bloom Mahjong Mat",
    "bn": "Mac + Miller Mahjong",
    "f": "m/1459.webp",
    "th": "mt1f02efbf",
    "rt": false,
-   "hid": true,
+   "hid": false,
    "mf": [
     "dark",
     "blue",
@@ -27491,6 +27491,7 @@
    "approval": "Tiffany Oct 22 (DESK FYM item 7 + chat ~1:58pm: 'Mat's picks, then tile racks')"
   },
   "2026-10-25: sierra m: removed Tartan Toile Noël (Tiffany: mis-swipe, not a match)",
-  "2026-10-25: Bespoke Gray Malin Beach Club unhidden (regular size, in stock; Tiffany 15:19 wants Bespoke regular sets in; it was hidden with the Megas)"
+  "2026-10-25: Bespoke Gray Malin Beach Club unhidden (regular size, in stock; Tiffany 15:19 wants Bespoke regular sets in; it was hidden with the Megas)",
+  "2026-10-25: 5 Mac + Miller mats unhidden (were locked hidden while Coming Soon; now in stock, partner catalog audit)"
  ]
 }

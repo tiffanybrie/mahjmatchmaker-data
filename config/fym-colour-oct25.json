@@ -33167,6 +33167,579 @@
 ]
 ],
 "tone": "bright"
+},
+"shop.andersruff.com/bellamy-bloom-mahjong-mat": {
+"sw": [
+[
+"#fa7673",
+0.254
+],
+[
+"#bcccde",
+0.192
+],
+[
+"#9eb5ac",
+0.145
+],
+[
+"#8091b5",
+0.131
+],
+[
+"#ed8d8d",
+0.098
+],
+[
+"#7e9c7b",
+0.083
+],
+[
+"#d7abb2",
+0.05
+],
+[
+"#8daa63",
+0.048
+]
+],
+"tone": "muted"
+},
+"shop.andersruff.com/all-american-mahjong-mat": {
+"sw": [
+[
+"#a03538",
+0.296
+],
+[
+"#5d7ea3",
+0.19
+],
+[
+"#7c97b2",
+0.145
+],
+[
+"#c3d6e2",
+0.11
+],
+[
+"#e2eaee",
+0.102
+],
+[
+"#9e4a4d",
+0.067
+],
+[
+"#826c7f",
+0.056
+],
+[
+"#bf959a",
+0.033
+]
+],
+"tone": "muted"
+},
+"shop.andersruff.com/boston-mahj-party-mahjong-mat": {
+"sw": [
+[
+"#b8c9e5",
+0.43
+],
+[
+"#d5dce6",
+0.2
+],
+[
+"#cecfc3",
+0.102
+],
+[
+"#8d97ad",
+0.072
+],
+[
+"#a1ab90",
+0.066
+],
+[
+"#be897b",
+0.047
+],
+[
+"#7b7167",
+0.044
+],
+[
+"#566381",
+0.037
+]
+],
+"tone": "pastel"
+},
+"shop.andersruff.com/heritage-tartan-mahjong-mat": {
+"sw": [
+[
+"#38483d",
+0.235
+],
+[
+"#52594f",
+0.17
+],
+[
+"#8b7f6c",
+0.129
+],
+[
+"#423b2e",
+0.128
+],
+[
+"#5a5141",
+0.123
+],
+[
+"#736755",
+0.104
+],
+[
+"#677067",
+0.06
+],
+[
+"#aa9882",
+0.051
+]
+],
+"tone": "muted"
+},
+"shop.andersruff.com/something-blue-mahjong-mat": {
+"sw": [
+[
+"#ebefe2",
+0.217
+],
+[
+"#b7c9dc",
+0.176
+],
+[
+"#a1b9d2",
+0.158
+],
+[
+"#cad7e4",
+0.131
+],
+[
+"#e4e9ed",
+0.111
+],
+[
+"#d8e0c2",
+0.087
+],
+[
+"#8aa6c4",
+0.084
+],
+[
+"#c3d0a0",
+0.038
+]
+],
+"tone": "pastel"
+},
+"www.wrenmats.com/hz3q4rry2k1ulk8hmjnx8sv0sj2ews": {
+"sw": [
+[
+"#f2efea",
+0.418
+],
+[
+"#e0e6db",
+0.217
+],
+[
+"#edece5",
+0.142
+],
+[
+"#e6e9df",
+0.057
+],
+[
+"#d2cdbf",
+0.055
+],
+[
+"#989175",
+0.055
+],
+[
+"#b5ae99",
+0.041
+]
+],
+"tone": "muted"
+},
+"www.wrenmats.com/the-blues": {
+"sw": [
+[
+"#4d5562",
+0.444
+],
+[
+"#8b94a3",
+0.414
+],
+[
+"#a2a6ac",
+0.041
+],
+[
+"#4b5360",
+0.038
+]
+],
+"tone": "muted"
+},
+"www.wrenmats.com/i18cdm49yz6l87cyxjoqfcwilfjn8o": {
+"sw": [
+[
+"#cee0f9",
+0.365
+],
+[
+"#f59797",
+0.141
+],
+[
+"#e0d5e3",
+0.115
+],
+[
+"#f4a2a3",
+0.089
+],
+[
+"#e7c5ce",
+0.086
+],
+[
+"#f2adb0",
+0.079
+],
+[
+"#ff8983",
+0.079
+],
+[
+"#ebb7bd",
+0.045
+]
+],
+"tone": "pastel"
+},
+"www.wrenmats.com/yellow-and-blue-mat": {
+"sw": [
+[
+"#f9e193",
+0.358
+],
+[
+"#d6d2a5",
+0.239
+],
+[
+"#2973d6",
+0.141
+],
+[
+"#eeebe2",
+0.105
+],
+[
+"#afc4ba",
+0.092
+],
+[
+"#5e99cb",
+0.044
+]
+],
+"tone": "pastel"
+},
+"myfairmahjong.com/mahjong-mat-plaid-tidings": {
+"sw": [
+[
+"#257159",
+0.5
+],
+[
+"#c03e2f",
+0.132
+],
+[
+"#cacebc",
+0.08
+],
+[
+"#284e3f",
+0.065
+],
+[
+"#453f30",
+0.062
+],
+[
+"#809583",
+0.061
+],
+[
+"#652a21",
+0.055
+],
+[
+"#c1877a",
+0.045
+]
+],
+"tone": "blend"
+},
+"myfairmahjong.com/mahjong-mat-peppermint-wishes": {
+"sw": [
+[
+"#f85e9e",
+0.519
+],
+[
+"#d90a0e",
+0.128
+],
+[
+"#df2a36",
+0.078
+],
+[
+"#f0c2ca",
+0.077
+],
+[
+"#f7e3e6",
+0.066
+],
+[
+"#e54e61",
+0.055
+],
+[
+"#f695bb",
+0.041
+],
+[
+"#ed949c",
+0.036
+]
+],
+"tone": "bright"
+},
+"www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098315061": {
+"sw": [
+[
+"#024454",
+0.372
+],
+[
+"#034e5e",
+0.301
+],
+[
+"#055a6a",
+0.164
+],
+[
+"#036777",
+0.098
+]
+],
+"tone": "muted"
+},
+"www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098282293": {
+"sw": [
+[
+"#072a50",
+0.272
+],
+[
+"#14395f",
+0.243
+],
+[
+"#20466b",
+0.182
+],
+[
+"#2f587b",
+0.095
+],
+[
+"#406b8d",
+0.084
+],
+[
+"#c7d1da",
+0.048
+],
+[
+"#537fa0",
+0.046
+],
+[
+"#dbe3ea",
+0.03
+]
+],
+"tone": "bright"
+},
+"www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098347829": {
+"sw": [
+[
+"#58042b",
+0.387
+],
+[
+"#6c153c",
+0.223
+],
+[
+"#6c2436",
+0.097
+],
+[
+"#812b4f",
+0.094
+],
+[
+"#964765",
+0.088
+],
+[
+"#853b53",
+0.075
+]
+],
+"tone": "bright"
+},
+"brittmillsdesign.com/in-the-jungle-leatherette-mahjong-mat": {
+"sw": [
+[
+"#192e1b",
+0.269
+],
+[
+"#4a5d25",
+0.26
+],
+[
+"#7e9624",
+0.113
+],
+[
+"#9ba56c",
+0.112
+],
+[
+"#756c6a",
+0.09
+],
+[
+"#d9b4b1",
+0.069
+],
+[
+"#438b73",
+0.064
+]
+],
+"tone": "muted"
+},
+"www.bespokemahjong.com/mahjholidaymat": {
+"sw": [
+[
+"#9b3e2f",
+0.142
+],
+[
+"#7196c5",
+0.133
+],
+[
+"#b6a699",
+0.127
+],
+[
+"#2f4971",
+0.127
+],
+[
+"#337050",
+0.124
+],
+[
+"#d25b72",
+0.12
+],
+[
+"#473d30",
+0.117
+],
+[
+"#99b966",
+0.109
+]
+],
+"tone": "blend"
+},
+"www.bespokemahjong.com/a-very-merry-getaway-double-sided-mat": {
+"sw": [
+[
+"#f8d7df",
+0.545
+],
+[
+"#808947",
+0.139
+],
+[
+"#a29e64",
+0.078
+],
+[
+"#c69b8f",
+0.075
+],
+[
+"#716e52",
+0.049
+],
+[
+"#d76462",
+0.043
+],
+[
+"#e42d42",
+0.038
+],
+[
+"#4c3f3b",
+0.033
+]
+],
+"tone": "pastel"
 }
 },
 "sets": {
@@ -42620,6 +43193,750 @@
 [
 "#e18d99",
 0.076
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"my-fair-mahjong-style-of-your-life-series-pearl-green": {
+"sw": [
+[
+"#bdbace",
+0.445
+],
+[
+"#b8beb1",
+0.252
+],
+[
+"#c7798a",
+0.135
+],
+[
+"#7273ab",
+0.073
+],
+[
+"#285634",
+0.063
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"my-fair-mahjong-legacy-wave-series-lavender-haze": {
+"sw": [
+[
+"#acc9ce",
+0.313
+],
+[
+"#cab6c6",
+0.304
+],
+[
+"#beceb3",
+0.175
+],
+[
+"#af7d9d",
+0.088
+],
+[
+"#6c8ea6",
+0.078
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"my-fair-mahjong-florida-series": {
+"sw": [
+[
+"#e0c7bf",
+0.337
+],
+[
+"#a6c6d3",
+0.19
+],
+[
+"#7bc69c",
+0.132
+],
+[
+"#e57394",
+0.132
+],
+[
+"#bad560",
+0.12
+],
+[
+"#efa748",
+0.088
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"my-fair-mahjong-motor-city-series": {
+"sw": [
+[
+"#0d2eba",
+0.4
+],
+[
+"#3a52b5",
+0.194
+],
+[
+"#5981bf",
+0.18
+],
+[
+"#71aebf",
+0.133
+],
+[
+"#b46863",
+0.062
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"my-fair-mahjong-southeast-series": {
+"sw": [
+[
+"#a8e1da",
+0.586
+],
+[
+"#a0b2c2",
+0.159
+],
+[
+"#63b4a9",
+0.095
+],
+[
+"#d8b988",
+0.079
+],
+[
+"#d76c8d",
+0.054
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"my-fair-mahjong-anywhere-series": {
+"sw": [
+[
+"#96d4f4",
+0.605
+],
+[
+"#4a8ad6",
+0.116
+],
+[
+"#a599b9",
+0.087
+],
+[
+"#42b3c0",
+0.085
+],
+[
+"#af507f",
+0.084
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"my-fair-mahjong-nyc-series": {
+"sw": [
+[
+"#c5cbd3",
+0.607
+],
+[
+"#64cdca",
+0.117
+],
+[
+"#d67577",
+0.102
+],
+[
+"#5589c7",
+0.073
+],
+[
+"#e3bf70",
+0.062
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"peace-love-mahjong-merry-nutcracker": {
+"sw": [
+[
+"#cad0d5",
+0.446
+],
+[
+"#c9b6c6",
+0.202
+],
+[
+"#aac5c7",
+0.163
+],
+[
+"#86aea7",
+0.08
+],
+[
+"#c3b89e",
+0.075
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"peace-love-mahjong-og-desert-dreams": {
+"sw": [
+[
+"#c9d3de",
+0.531
+],
+[
+"#b4c0cc",
+0.263
+],
+[
+"#c1b2b8",
+0.083
+],
+[
+"#7c9197",
+0.056
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"peace-love-mahjong-mod-french-blue": {
+"sw": [
+[
+"#a4cfee",
+0.651
+],
+[
+"#afced5",
+0.16
+],
+[
+"#c0adba",
+0.082
+],
+[
+"#cfca9d",
+0.052
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"peace-love-mahjong-mod-chartreuse": {
+"sw": [
+[
+"#eae939",
+0.68
+],
+[
+"#cdd65b",
+0.131
+],
+[
+"#e5be37",
+0.091
+],
+[
+"#e0d397",
+0.053
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"peace-love-mahjong-og-pretty-in-pink": {
+"sw": [
+[
+"#f6c7e9",
+0.399
+],
+[
+"#f7b0df",
+0.381
+],
+[
+"#f181c4",
+0.086
+],
+[
+"#a0c4d6",
+0.068
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"peace-love-mahjong-og-vibrant-vibes": {
+"sw": [
+[
+"#c0d5d6",
+0.312
+],
+[
+"#e7cccc",
+0.276
+],
+[
+"#85c2bc",
+0.146
+],
+[
+"#a2cd92",
+0.108
+],
+[
+"#d8e1bb",
+0.098
+],
+[
+"#efb486",
+0.059
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"peace-love-mahjong-taylor-s-tiles": {
+"sw": [
+[
+"#dac4e8",
+0.591
+],
+[
+"#d1a2cc",
+0.164
+],
+[
+"#a1b3dd",
+0.11
+],
+[
+"#c47fbf",
+0.069
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"peace-love-mahjong-og-totally-teal": {
+"sw": [
+[
+"#0f8899",
+0.715
+],
+[
+"#469f93",
+0.12
+],
+[
+"#867fa6",
+0.052
+],
+[
+"#9ed8d9",
+0.05
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"charleston-mahjong-club-hunt-club-edition": {
+"sw": [
+[
+"#b3ccc3",
+0.36
+],
+[
+"#b5686a",
+0.302
+],
+[
+"#ba5543",
+0.155
+],
+[
+"#97978e",
+0.105
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"charleston-mahjong-club-cocktail-club-2-0-edition": {
+"sw": [
+[
+"#ce0860",
+0.289
+],
+[
+"#e4bfdd",
+0.284
+],
+[
+"#e81385",
+0.281
+],
+[
+"#9d232e",
+0.076
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"charleston-mahjong-club-yacht-club-edition": {
+"sw": [
+[
+"#c6dae5",
+0.672
+],
+[
+"#b4aeb7",
+0.175
+],
+[
+"#6ba57d",
+0.054
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"royal-mahjong-society-studio-series-crown-jewels": {
+"sw": [
+[
+"#c6c8c5",
+0.267
+],
+[
+"#f6496b",
+0.229
+],
+[
+"#ddbeca",
+0.177
+],
+[
+"#a799aa",
+0.128
+],
+[
+"#d386a1",
+0.112
+],
+[
+"#9d4669",
+0.088
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"royal-mahjong-society-studio-series-cottage": {
+"sw": [
+[
+"#c6d7df",
+0.271
+],
+[
+"#f9899b",
+0.265
+],
+[
+"#ddc1c7",
+0.179
+],
+[
+"#99b9cc",
+0.119
+],
+[
+"#b98f96",
+0.111
+],
+[
+"#96535c",
+0.055
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"royal-mahjong-society-studio-series-newport": {
+"sw": [
+[
+"#c3c8cf",
+0.385
+],
+[
+"#919aaf",
+0.182
+],
+[
+"#13288b",
+0.16
+],
+[
+"#b0ceb4",
+0.111
+],
+[
+"#596692",
+0.11
+],
+[
+"#d88f8f",
+0.053
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"royal-mahjong-society-studio-series-island": {
+"sw": [
+[
+"#bed6d8",
+0.382
+],
+[
+"#41ddeb",
+0.237
+],
+[
+"#76c4b1",
+0.17
+],
+[
+"#eebbcb",
+0.131
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"royal-mahjong-society-studio-series-girly": {
+"sw": [
+[
+"#f6b3b5",
+0.387
+],
+[
+"#d1c1c6",
+0.217
+],
+[
+"#cf848b",
+0.192
+],
+[
+"#9e4853",
+0.073
+],
+[
+"#e4a1c2",
+0.068
+],
+[
+"#c6dbbf",
+0.063
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"mahj-mood-the-eloise-collection": {
+"sw": [
+[
+"#cec6b9",
+0.295
+],
+[
+"#21171a",
+0.189
+],
+[
+"#4f383c",
+0.17
+],
+[
+"#a29392",
+0.166
+],
+[
+"#7a6466",
+0.146
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"mahj-mood-the-bow-and-bloom-collection": {
+"sw": [
+[
+"#a2b8af",
+0.307
+],
+[
+"#d2b6c2",
+0.253
+],
+[
+"#7e8080",
+0.144
+],
+[
+"#a57480",
+0.126
+],
+[
+"#4d373d",
+0.096
+],
+[
+"#dc8fb6",
+0.074
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"amahj-on-the-water-signature": {
+"sw": [
+[
+"#c1d6e9",
+0.509
+],
+[
+"#cab7b8",
+0.176
+],
+[
+"#669de6",
+0.107
+],
+[
+"#5d7387",
+0.091
+],
+[
+"#dc6b74",
+0.087
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"anders-ruff-green-light-gatsby": {
+"sw": [
+[
+"#586052",
+0.399
+],
+[
+"#333c2f",
+0.19
+],
+[
+"#747766",
+0.139
+],
+[
+"#0e1915",
+0.118
+],
+[
+"#264747",
+0.085
+],
+[
+"#754a29",
+0.068
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"mahjong-studios-lunaflor-mint": {
+"sw": [
+[
+"#b9ccc8",
+0.291
+],
+[
+"#6dc7ae",
+0.234
+],
+[
+"#859791",
+0.208
+],
+[
+"#4a7e63",
+0.179
+],
+[
+"#ad7165",
+0.055
 ]
 ],
 "tone": null,
