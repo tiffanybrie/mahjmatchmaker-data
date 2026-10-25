@@ -25,7 +25,7 @@ rep('drawCard();}\nconst lk=src=>',
     "document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('.shop .si a.go');if(!a)return;const r=a.closest('.si');const d=shopDone();"
     "if(!d.includes(r.dataset.sid)){d.push(r.dataset.sid);try{sessionStorage.setItem(shopKey(),JSON.stringify(d));}catch(x){}}setTimeout(shopSync,50);});"
     "function shopText(){const s=set();const L=pieces().map(id=>{const o=M[id]||R[id]||T[id];if(!o||!o.u)return '';const nm=T[id]?s.name+' tiles':R[id]?o.n:o.n+' mat';"
-    "return `${nm} (${o.bn}): ${o.u}`;}).filter(Boolean);const code=codeLine();"
+    "return `${nm} (${o.bn}): ${o.u}`;}).filter(Boolean);const pb=[...new Set(pieces().map(id=>M[id]||R[id]||T[id]).filter(o=>o&&o.pa&&!o.nc).map(o=>o.bn))];const code=pb.length?'Use code MAHJMATCH at '+pb.join(', ')+' to save':'';"
     "return `My mahjong match: ${s.name} + ${M[S.fav].n}\\n\\n${L.join('\\n')}${code?'\\n\\n'+code:''}\\n\\nMatched with Find Your Mat-ch \\u00b7 mahjmatchmaker.com`;}"
     "document.addEventListener('click',async e=>{if(!(e.target.closest&&e.target.closest('[data-shoplist]')))return;const t=shopText();trk('shoplist',{mat:S.fav});"
     "if(navigator.share){try{await navigator.share({title:'My mahjong match',text:t});return;}catch(x){if(x&&x.name==='AbortError')return;}}"
