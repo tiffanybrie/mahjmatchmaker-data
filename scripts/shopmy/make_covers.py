@@ -7,7 +7,7 @@
 # Usage: python3 scripts/shopmy/make_covers.py <img_dir> [slug ...]   (images named <pinId>.jpg|.png)
 import sys, os, glob
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageOps, ImageChops
-R = '/home/claude/mahjmatchmaker-data/'
+R = '/home/claude/tiffanybrie/mahjmatchmaker-data/'
 IMG = sys.argv[1] if len(sys.argv) > 1 else '.'
 OUT = R + 'assets/shopmy/covers/'
 CAP = R + 'scripts/moodboard/fonts/Caprasimo.woff2'
@@ -35,6 +35,8 @@ CROP = {
     96130241: (.08, .28, .80, .82),
     96239262: (0, .115, 1, 1),       # bouquet: Amazon alt image 51hpe7OnwSL (bats visible), drop its caption line
     96229865: (0, 0, 1, .66),        # cognac leather tile bag: the big bag only
+    96620630: (.20, .13, .78, .71),  # Rebecca Rainbow Row: the mat she is holding, not her
+    96620673: (0, 0, 1, 1),
 }
 # white paint-outs on the ORIGINAL image (fractions l, t, r, b, or a polygon of (x, y) fractions), applied before CROP: boxes, bags, packaging
 PAINT = {
@@ -111,6 +113,16 @@ COVERS = [
   [96237159, 96236976, 96236021, 96236809, 96235867]),
  (8401290, 'a-retro-holiday-table', 'A Retro Holiday Table', 'red plaid and a glowing ceramic tree', 'shop the look', '#4f6b3a', 5,
   [96234587, 96234736, 96235121, 96235268, 96235452]),
+
+ # Oct 25 (Tiffany): tables & chairs, Rebecca Illustrated, holiday mats
+ (8493330, 'mahjong-tables-chairs', 'Mahjong Tables & Chairs', 'a pretty seat at the mahj table', 'table shop', '#054689', 'tc',
+  [97370814, 97353270, 97370454, 96239965, 96240561, 96240870]),
+ (8431929, 'rebecca-illustrated-mats', 'Rebecca Illustrated Mats', 'hand-painted mats from a favorite artist', 'mat shop', '#e0607e', 5,
+  [96620630, 96620673, 96620624, 96620594, 96620667]),
+ (8507446, 'etsy-amazon-holiday-mats', 'Etsy & Amazon Holiday Mats', 'christmas mats for the merriest game night', 'holiday shop', '#b3202a', 33,
+  [97343512, 97558178, 97557928, 97343386, 97559259, 97558867]),
+ (8507324, 'mahjong-trinkets', 'Mahjong Trinkets', 'tiny prizes for the winner of the night', 'table shop', '#e0607e', 5,
+  [97351524, 97567088, 97567045, 97351391, 97352135]),
 ]
 
 
@@ -222,6 +234,14 @@ def make(cid, slug, title, tag, kicker, accent, layout, picks):
         r1, r2 = area_c - avail * .245, area_c + avail * .255
         pos = [(190, r1, cs, -5), (890, r1, cs, 5), (190, r2, cs, 4), (540, r2, cs, -2), (890, r2, cs, -4), (540, r1, hs, -1.5)]
         order = [picks[2], picks[3], picks[4], picks[1], picks[5], picks[0]]
+    elif layout == 33:   # 3 over 3, all the same size
+        cs = int(min(avail * .47, 318)); r1, r2 = area_c - avail * .245, area_c + avail * .255
+        pos = [(190, r1, cs, -4), (540, r1, cs, 2), (890, r1, cs, 4), (190, r2, cs, 3), (540, r2, cs, -2), (890, r2, cs, -3)]
+        order = list(picks)
+    elif layout == 'tc':   # fancy tables left/right of a hero chair, then card table / folding chairs / drink table
+        cs = int(min(avail * .43, 290)); hs = int(cs * 1.08); r1, r2 = area_c - avail * .235, area_c + avail * .255
+        pos = [(185, r1, cs, -4), (895, r1, cs, 4), (190, r2, cs, 3), (540, r2, cs, -2), (890, r2, cs, -3), (540, r1 - 6, hs, -1)]
+        order = [picks[1], picks[2], picks[3], picks[4], picks[5], picks[0]]
     elif layout == 6:
         hero = min(int(avail * .66), 400); side = int(min(avail * .43, 265)); low = int(side * .86)
         pos = [(180, area_c - avail * .22, side, -6), (900, area_c - avail * .22, side, 5),
