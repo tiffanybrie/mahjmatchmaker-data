@@ -20,6 +20,7 @@ Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27, (2) fall content befo
 5. **Brownstone Bloom live the week of Oct 26 (Matches & Catalog).** Cards rebuilt today (40 + manifest, assets/cards/brownstone-bloom-oct24, her racks AR Tortoise + Bam Bird Olive + B&B Wine, Scarlett #2, Autumn Saffron #4, 9 hearts appended). Her Save on the order page (artifact WNjXTGjxfdqoa1tzUiYgQ4, db review/order) has NOT come in yet: HQ Today. On Save: rename in her order, brownstone_block.py, warm jsDelivr, publish, then redo the Ep 11 Brownstone reel with an intro before dating it. Target: live by Thu Oct 29 (before Halloween).
 
 ## In progress
+- OPS, today (Oct 25, Matches chat; Tiffany OK'd the change 11:07am). Next step: re-paste the FYM page block on the HIDDEN /find-your-mat-ch-preview page. The 30-second tour replaces the step-by-step walkthrough and the desktop tip boxes; independent QA passed. Block: https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@07f6870c182f03758996d57e83b1dcf162af95e4/site/livepatch/fym-preview-oct21/page-block.html (same CodeMirror paste). Verify that curl contains data-fx-tour and site-app/fym-v82/index.html and does NOT contain fymx-how. The launch 0a pin is already updated to this block. Close your tab.
 | Item | Owner | Next step | Target |
 |---|---|---|---|
 | FYM QA v81/v82 + VIP list | Matches & Catalog | Priority 1. | Sun Oct 25 |
