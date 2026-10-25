@@ -23,6 +23,7 @@ def diffs(D, locks):
             for f, v in lv.items():
                 if f in ('set',): continue
                 cur = o.get(f, False if f in ('hid', 'rt', 'sb') else None)
+                if kind == 'tiles' and f == 'full' and o.get('fo'): cur = o['fo']   # v89: reframed copy of the locked photo (t.fo = original)
                 if cur != v: out.append((kind, k, f, cur, v))
     for slug, lv in locks.get('sets', {}).items():
         s = sets.get(slug)
@@ -38,7 +39,7 @@ def apply(D, locks):
     for s in D['sets']: sets.setdefault(s['slug'], s)
     for kind, objs in (('tiles', D['tiles']), ('mats', D['mats'])):
         for k, lv in locks.get(kind, {}).items():
-            if k in objs: objs[k].update({f: v for f, v in lv.items() if f != 'set'})
+            if k in objs: objs[k].update({f: v for f, v in lv.items() if f != 'set' and not (kind == 'tiles' and f == 'full' and objs[k].get('fo') == v)})
     for slug, lv in locks.get('sets', {}).items():
         if slug in sets: sets[slug].update({f: v for f, v in lv.items() if f != 'name'})
 

@@ -91,7 +91,7 @@ for s in D['sets']:
     t = T[s['tile']]; lk = locks['tiles'].get(s['tile'])
     if not lk: F.append(f"[1] {s['name']}: album set has no locked album photo in locks.json"); continue
     if t.get('src') != lk['src']: F.append(f"[1] {s['name']}: tile src {t.get('src')!r} != album photo {lk['src']!r}"); continue
-    sp = REPO + lk['src']; fp = os.path.join(B, t['full'])
+    sp = REPO + lk['src']; fp = os.path.join(B, t.get('fo') or t['full'])  # v89: reframed photos are checked against their original (t.fo)
     if not os.path.exists(sp): F.append(f"[1] {s['name']}: album photo missing {lk['src']}"); continue
     if not os.path.exists(fp): F.append(f"[1] {s['name']}: FYM photo file missing {t['full']}"); continue
     a, o = flat(sp), flat(fp)
@@ -125,7 +125,7 @@ for mid, f in mflags.items():
         F.append(f"[3c] mat {m['n']} ({m.get('bn')}): shows {m.get('f')} but its cleaned photo is {f['photo']} (mat_photo_flags.json)")
 for s in D['sets']:
     f = tflags.get(s['slug']); t = T.get(s['tile'], {})
-    if f and f.get('photo') and f.get('flag') == 'ok' and vis(s) and t.get('full') != f['photo']:
+    if f and f.get('photo') and f.get('flag') == 'ok' and vis(s) and (t.get('fo') or t.get('full')) != f['photo']:
         F.append(f"[3c] {s['name']} ({s['maker']}): tile photo {t.get('full')} but its cleaned photo is {f['photo']} (tile_photo_flags.json)")
 # Oct 21 pm (Tiffany, CLAUDE.md rule 6): the FYM photo bar is LOW. Props / tiles / racks / a room around the mat are fine
 # (flag ok_fym_props, no warning). Only a locked mat whose photo is flagged unusable (wrong product, packaging, corner close-up:
@@ -140,7 +140,7 @@ for k, f in mflags.items():
 _qp = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fym_flags', 'fym_questionable.json')
 if os.path.exists(_qp):
     for it in json.load(open(_qp)).get('items', []):
-        m = M.get(it['key'])
+        m = (D['racks'] if it.get('kind') == 'rack' else M).get(it['key'])   # Oct 25: racks with a bad photo go on the list too
         if m and not m.get('hid'): F.append(f"[3d] {m['n']} ({m.get('bn')}): on the Questionable for FYM list but visible")
 for k, m in M.items():
     if 'paige spearin' in m['n'].lower() and (m.get('hol') or m.get('wfh') or m.get('ayr')) and k != 'tigredetartan.com/paige-spearin-mahjong-mat-apres-mahj':
@@ -496,7 +496,7 @@ if os.path.exists(_tu):
     for k_, it_ in json.load(open(_tu))['sets'].items():
         tk_ = it_.get('tile_key')
         if tk_ not in T or tk_ not in _bt: continue
-        if it_['status'] == 'upgrade' and not str(T[tk_].get('full', '')).startswith('t71/'): F.append(f"[30] {it_['name']}: audit upgrade not applied (full {T[tk_].get('full')})")
+        if it_['status'] == 'upgrade' and not str(T[tk_].get('fo') or T[tk_].get('full', '')).startswith('t71/'): F.append(f"[30] {it_['name']}: audit upgrade not applied (full {T[tk_].get('full')})")
         want_ = it_['status'] == 'coming_soon' and (_on_all or k_ in _on or any(x in _on for x in _bt[tk_]))
         if bool(T[tk_].get('soon')) != want_: F.append(f"[30] {it_['name']}: Photo coming soon is {'on' if T[tk_].get('soon') else 'off'} but the switch says {'on' if want_ else 'off'}")
 
@@ -591,6 +591,36 @@ if "const lk=src=>" in UI and "i.crossOrigin='anonymous'" not in UI[UI.index('co
 # [44] Oct 25 (Tiffany 14:43): the card's tile picture must be the SAME photo the shopper matched to on the swipe screen (tileFull), never a separate HD/listing photo.
 if "hdOr('t',s.tile" in UI or 'Promise.resolve(tileFull(s)||pile(s)).then(lk)' not in UI:
     F.append("[44] match card tile photo is not the swipe-screen photo tileFull(s) (it must never pick a separate HD/listing photo)")
+# [45] Oct 25 (Tiffany form Oct 24 9:45pm + 16:36: Boots & Bubbles blue tiles out of frame on the card). The Mood board band (3.87:1,
+#      zoom 1.05, anchor t.bf or [.5,.45]) of every visible set's tile photo must be mostly tiles, not white background / a pouch gap.
+if 'cover(tile,x,top,w,hT,22,1.05,...(T[s.tile].bf||[.5,.45]))' not in UI:
+    F.append("[45] Mood board tile band does not use the per-photo anchor T[s.tile].bf")
+def _band_tiles(path, bf):
+    im = Image.open(path).convert('RGB'); Wd, Hd = im.size; k = max(3.87 / Wd, 1 / Hd) * 1.05; cw, ch = 3.87 / k, 1 / k
+    x0 = (Wd - cw) * bf[0]; y0 = (Hd - ch) * bf[1]; a = np.asarray(im.crop((int(x0), int(y0), int(x0 + cw), int(y0 + ch))).resize((160, 42))).astype(int)
+    return float(1 - ((a.min(2) > 225) & ((a.max(2) - a.min(2)) < 18)).mean())
+BAND_MIN = 0.12  # white-faced close-ups read low; this catches bands that are basically empty
+_b45 = []
+for s in D['sets']:
+    t = T.get(s['tile']) or {}
+    if s.get('hid') or t.get('hid') or t.get('soon') or not t.get('full') or not os.path.exists(os.path.join(B, t['full'])): continue
+    v = _band_tiles(os.path.join(B, t['full']), t.get('bf') or [.5, .45])
+    if v < BAND_MIN: _b45.append(f"{s['name']} ({s['maker']}) {v:.2f}")
+if _b45: F.append(f"[45] {len(_b45)} tile photos show mostly white in the match-card band (reframe in config/fym-tile-focus-oct25.json): " + '; '.join(_b45[:12]))
+# [47] Oct 25 (Tiffany 16:51: Mac + Miller 'Heirloom Collection: Fire + Fortune Verdant Fortune' ran off the card). The card title
+#      must wrap to two lines instead of overflowing, and no visible set name may be a broken scrape (unbalanced brackets, > 48 chars).
+if '/* v89: too long for one line -> two balanced lines */' not in UI:
+    F.append("[47] match card title has no two-line fallback (long names run off the card)")
+for s in D['sets']:
+    if s.get('hid'): continue
+    n_ = s['name']
+    if n_.count('(') != n_.count(')') or len(n_) > 48: F.append(f"[47] set name looks broken or too long for the card: {n_!r} ({s['maker']})")
+# [48] Oct 25 (Tiffany 16:52): Mood board code bar spans only the 'Matched with ... mahjmatchmaker.com' line, not the full width
+if "/* v89: bar spans the brand line (flame to .com) */" not in UI:
+    F.append("[48] Mood board code bar is full width (should span the brand line)")
+# [46] Oct 25 (Tiffany 16:37): Mood board rack labels sit BELOW the racks (whole rack visible)
+if 'racks(x+28,ry+14,w-56,hR-28,{fs:20,maxRow:230,below:true})' not in UI:
+    F.append("[46] Mood board rack labels are not below the racks (below:true)")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")

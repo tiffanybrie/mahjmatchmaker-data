@@ -1,0 +1,992 @@
+{
+ "t78/bam-bird-boutique-boots-and-bubbles-blue-swirl.jpg": {
+  "name": "Boots & Bubbles (Blue Swirl)",
+  "maker": "Bam Bird Boutique",
+  "box": [
+   0.0,
+   0.36,
+   1.0,
+   0.86
+  ],
+  "why": "tall photo: pouch on top, dice; band showed only top rows of white faces"
+ },
+ "t78/bam-bird-boutique-boots-and-bubbles-pink-swirl.jpg": {
+  "name": "Boots & Bubbles (Pink Swirl)",
+  "maker": "Bam Bird Boutique",
+  "box": [
+   0.14,
+   0.05,
+   0.88,
+   0.75
+  ],
+  "why": "tray in middle of scattered pink backs; square was mostly white/tray edge"
+ },
+ "t78/bam-bird-boutique-classic-lavender.jpg": {
+  "name": "Classic (Lavender)",
+  "maker": "Bam Bird Boutique",
+  "box": [
+   0.22,
+   0.0,
+   0.92,
+   1.0
+  ],
+  "why": "face tray and lavender back tray offset; lots of empty white"
+ },
+ "t78/bam-bird-boutique-classic-rose.jpg": {
+  "name": "Classic (Rose)",
+  "maker": "Bam Bird Boutique",
+  "box": [
+   0.05,
+   0.2,
+   1.0,
+   0.85
+  ],
+  "why": "diagonal trays in tall photo; band missed the join of rose backs + faces"
+ },
+ "t78/bam-bird-boutique-classic-teal.jpg": {
+  "name": "Classic (Teal)",
+  "maker": "Bam Bird Boutique",
+  "box": [
+   0.0,
+   0.1,
+   1.0,
+   0.88
+  ],
+  "why": "tall photo, teal back tray below faces; band showed white"
+ },
+ "t78/bam-bird-boutique-deco-indigo.jpg": {
+  "name": "Deco (Indigo)",
+  "maker": "Bam Bird Boutique",
+  "box": [
+   0.0,
+   0.3,
+   0.95,
+   0.9
+  ],
+  "why": "velvet pouch dominates top; band showed pouch + white"
+ },
+ "t78/bam-bird-boutique-deco-mulberry.jpg": {
+  "name": "Deco (Mulberry)",
+  "maker": "Bam Bird Boutique",
+  "box": [
+   0.0,
+   0.2,
+   0.9,
+   0.92
+  ],
+  "why": "pouch fills top; band showed pouch fabric"
+ },
+ "t78/bam-bird-boutique-east-meets-west-emerald.jpg": {
+  "name": "East Meets West (Emerald)",
+  "maker": "Bam Bird Boutique",
+  "box": [
+   0.0,
+   0.15,
+   1.0,
+   0.85
+  ],
+  "why": "tall photo with white margins; band showed tray edge/white"
+ },
+ "t78/bam-bird-boutique-east-meets-west-periwinkle.jpg": {
+  "name": "East Meets West (Periwinkle)",
+  "maker": "Bam Bird Boutique",
+  "box": [
+   0.05,
+   0.22,
+   0.97,
+   0.85
+  ],
+  "why": "small trays in big white field; band showed mostly white"
+ },
+ "t78/bam-bird-boutique-mcm-navy-olive.jpg": {
+  "name": "MCM (Navy/Olive)",
+  "maker": "Bam Bird Boutique",
+  "box": [
+   0.03,
+   0.22,
+   0.97,
+   0.82
+  ],
+  "why": "white space top/bottom; band missed navy backs"
+ },
+ "t78/bam-bird-boutique-mcm-olive-pink.jpg": {
+  "name": "MCM (Olive/Pink)",
+  "maker": "Bam Bird Boutique",
+  "box": [
+   0.03,
+   0.25,
+   0.97,
+   0.83
+  ],
+  "why": "white space top/bottom; band missed olive backs"
+ },
+ "t78/bam-bird-boutique-origami-azure.jpg": {
+  "name": "Origami (Azure)",
+  "maker": "Bam Bird Boutique",
+  "box": [
+   0.0,
+   0.07,
+   1.0,
+   0.87
+  ],
+  "why": "band showed white + tray corner"
+ },
+ "t78/bam-bird-boutique-origami-timber.jpg": {
+  "name": "Origami (Timber)",
+  "maker": "Bam Bird Boutique",
+  "box": [
+   0.05,
+   0.05,
+   1.0,
+   0.9
+  ],
+  "why": "band showed white + tray corner"
+ },
+ "t15/112.jpg": {
+  "name": "The Palm Royale Tangerine Twist",
+  "maker": "Bam! Let's Mahjong",
+  "box": [
+   0.05,
+   0.15,
+   0.9,
+   0.75
+  ],
+  "why": "tile layout small in grey field; square mostly grey"
+ },
+ "t71/charleston-mahjong-club-the-country-club-edition.jpg": {
+  "name": "The Country Club Edition",
+  "maker": "Charleston Mahjong Club",
+  "box": [
+   0.0,
+   0.0,
+   0.82,
+   0.92
+  ],
+  "why": "band showed mostly green mat background"
+ },
+ "t88/charleston-mahjong-club-yacht-club-edition.jpg": {
+  "name": "Yacht Club Edition",
+  "maker": "Charleston Mahjong Club",
+  "box": [
+   0.08,
+   0.18,
+   0.92,
+   0.84
+  ],
+  "why": "layout small in beige field"
+ },
+ "t15/49.jpg": {
+  "name": "2-Color Blue Studio",
+  "maker": "Mahjong Studios",
+  "box": [
+   0.0,
+   0.14,
+   1.0,
+   1.0
+  ],
+  "why": "'Studio Tiles' title text in the square crop"
+ },
+ "t15/37.jpg": {
+  "name": "American",
+  "maker": "Mahjong Studios",
+  "box": [
+   0.0,
+   0.17,
+   1.0,
+   1.0
+  ],
+  "why": "'Lemon Lime' title text in the square crop"
+ },
+ "t15/51.jpg": {
+  "name": "Bamboo Sky",
+  "maker": "Mahjong Studios",
+  "box": [
+   0.0,
+   0.2,
+   0.92,
+   1.0
+  ],
+  "why": "'Bamboo Sky' title text in the square crop"
+ },
+ "t15/48.jpg": {
+  "name": "Blue Element",
+  "maker": "Mahjong Studios",
+  "box": [
+   0.0,
+   0.13,
+   1.0,
+   1.0
+  ],
+  "why": "title text in the square crop"
+ },
+ "t15/52.jpg": {
+  "name": "Blush & Bamboo",
+  "maker": "Mahjong Studios",
+  "box": [
+   0.0,
+   0.15,
+   1.0,
+   1.0
+  ],
+  "why": "title text in the square crop"
+ },
+ "t15/40.jpg": {
+  "name": "Butter Bloom",
+  "maker": "Mahjong Studios",
+  "box": [
+   0.0,
+   0.17,
+   1.0,
+   1.0
+  ],
+  "why": "title text in the square crop"
+ },
+ "t15/28.jpg": {
+  "name": "Christmas Kiss",
+  "maker": "Mahjong Studios",
+  "box": [
+   0.0,
+   0.17,
+   1.0,
+   1.0
+  ],
+  "why": "title text in the square crop"
+ },
+ "t71/mahjong-studios-essential.jpg": {
+  "name": "Essential",
+  "maker": "Mahjong Studios",
+  "box": [
+   0.02,
+   0.08,
+   0.98,
+   0.85
+  ],
+  "why": "pile on white; square had white margins"
+ },
+ "t71/mahjong-studios-forest-silk.jpg": {
+  "name": "Forest Silk",
+  "maker": "Mahjong Studios",
+  "box": [
+   0.17,
+   0.18,
+   0.9,
+   0.7
+  ],
+  "why": "small pile in big white field; both crops mostly white"
+ },
+ "t15/38.jpg": {
+  "name": "Lilac Bloom",
+  "maker": "Mahjong Studios",
+  "box": [
+   0.0,
+   0.17,
+   1.0,
+   1.0
+  ],
+  "why": "title text in the square crop"
+ },
+ "t88/mahjong-studios-lunaflor-mint.jpg": {
+  "name": "Lunaflor (Mint)",
+  "maker": "Mahjong Studios",
+  "box": [
+   0.04,
+   0.05,
+   0.97,
+   0.95
+  ],
+  "why": "pile on white; trims white margins"
+ },
+ "t15/39.jpg": {
+  "name": "Ocean Bloom",
+  "maker": "Mahjong Studios",
+  "box": [
+   0.0,
+   0.17,
+   1.0,
+   1.0
+  ],
+  "why": "title text in the square crop"
+ },
+ "t15/43.jpg": {
+  "name": "White Edit",
+  "maker": "Mahjong Studios",
+  "box": [
+   0.0,
+   0.17,
+   1.0,
+   1.0
+  ],
+  "why": "title text in the square crop"
+ },
+ "t88/my-fair-mahjong-anywhere-series.jpg": {
+  "name": "Anywhere Series",
+  "maker": "My Fair Mahjong",
+  "box": [
+   0.0,
+   0.2,
+   1.0,
+   0.88
+  ],
+  "why": "layout in white field; square tiny"
+ },
+ "t88/my-fair-mahjong-florida-series.jpg": {
+  "name": "Florida Series",
+  "maker": "My Fair Mahjong",
+  "box": [
+   0.1,
+   0.23,
+   0.92,
+   0.82
+  ],
+  "why": "layout small in white field; both crops tiny"
+ },
+ "t88/my-fair-mahjong-legacy-wave-series-lavender-haze.jpg": {
+  "name": "Legacy Wave Series (Lavender Haze)",
+  "maker": "My Fair Mahjong",
+  "box": [
+   0.15,
+   0.22,
+   0.97,
+   0.88
+  ],
+  "why": "layout small in white field"
+ },
+ "t88/my-fair-mahjong-motor-city-series.jpg": {
+  "name": "Motor City Series",
+  "maker": "My Fair Mahjong",
+  "box": [
+   0.05,
+   0.22,
+   0.95,
+   0.88
+  ],
+  "why": "layout in white field; square tiny"
+ },
+ "t88/my-fair-mahjong-style-of-your-life-series-pearl-green.jpg": {
+  "name": "Style of Your Life Series (Pearl Green)",
+  "maker": "My Fair Mahjong",
+  "box": [
+   0.08,
+   0.22,
+   0.92,
+   0.88
+  ],
+  "why": "layout small in white field"
+ },
+ "t71/my-fair-mahjong-the-california-series.jpg": {
+  "name": "The California Series",
+  "maker": "My Fair Mahjong",
+  "box": [
+   0.0,
+   0.33,
+   1.0,
+   1.0
+  ],
+  "why": "band showed blurry background/pouch; jokers are lower"
+ },
+ "t71/my-fair-mahjong-the-hawaii-series.jpg": {
+  "name": "The Hawaii Series",
+  "maker": "My Fair Mahjong",
+  "box": [
+   0.1,
+   0.55,
+   0.95,
+   1.0
+  ],
+  "why": "band and square showed pouch + box, tiles at bottom"
+ },
+ "t71/my-fair-mahjong-the-new-england-series.jpg": {
+  "name": "The New England Series",
+  "maker": "My Fair Mahjong",
+  "box": [
+   0.1,
+   0.55,
+   0.9,
+   0.97
+  ],
+  "why": "band and square showed pouch + booklet, tiles at bottom"
+ },
+ "t71/my-fair-mahjong-the-park-series.jpg": {
+  "name": "The Park Series",
+  "maker": "My Fair Mahjong",
+  "box": [
+   0.03,
+   0.5,
+   0.93,
+   0.98
+  ],
+  "why": "band and square showed pouch + box"
+ },
+ "t71/my-fair-mahjong-the-scandinavian-folk-art-series.jpg": {
+  "name": "The Scandinavian Folk Art Series",
+  "maker": "My Fair Mahjong",
+  "box": [
+   0.0,
+   0.45,
+   1.0,
+   1.0
+  ],
+  "why": "band showed blurry pouch + info booklet"
+ },
+ "t71/my-fair-mahjong-the-southwest-series.jpg": {
+  "name": "The Southwest Series",
+  "maker": "My Fair Mahjong",
+  "box": [
+   0.02,
+   0.6,
+   0.85,
+   0.98
+  ],
+  "why": "band and square showed pouch + box"
+ },
+ "t71/my-fair-mahjong-the-texas-series.jpg": {
+  "name": "The Texas Series",
+  "maker": "My Fair Mahjong",
+  "box": [
+   0.08,
+   0.56,
+   0.92,
+   0.94
+  ],
+  "why": "band and square showed pouch + booklet"
+ },
+ "t88/peace-love-mahjong-merry-nutcracker.jpg": {
+  "name": "Merry Nutcracker",
+  "maker": "Peace Love Mahjong",
+  "box": [
+   0.1,
+   0.2,
+   0.92,
+   0.84
+  ],
+  "why": "layout small in white field"
+ },
+ "t88/peace-love-mahjong-mod-chartreuse.jpg": {
+  "name": "Mod Chartreuse",
+  "maker": "Peace Love Mahjong",
+  "box": [
+   0.1,
+   0.05,
+   0.9,
+   0.93
+  ],
+  "why": "layout in white field; square tiny"
+ },
+ "t88/peace-love-mahjong-mod-french-blue.jpg": {
+  "name": "Mod French Blue",
+  "maker": "Peace Love Mahjong",
+  "box": [
+   0.08,
+   0.15,
+   0.86,
+   0.87
+  ],
+  "why": "layout small in white field"
+ },
+ "t88/peace-love-mahjong-og-totally-teal.jpg": {
+  "name": "OG Totally Teal",
+  "maker": "Peace Love Mahjong",
+  "box": [
+   0.1,
+   0.0,
+   0.9,
+   1.0
+  ],
+  "why": "white margins left/right"
+ },
+ "t88/peace-love-mahjong-og-vibrant-vibes.jpg": {
+  "name": "OG Vibrant Vibes",
+  "maker": "Peace Love Mahjong",
+  "box": [
+   0.05,
+   0.22,
+   0.95,
+   0.78
+  ],
+  "why": "layout small in tall white field"
+ },
+ "t88/peace-love-mahjong-taylor-s-tiles.jpg": {
+  "name": "Taylor's Tiles",
+  "maker": "Peace Love Mahjong",
+  "box": [
+   0.12,
+   0.03,
+   0.88,
+   0.97
+  ],
+  "why": "white margins"
+ },
+ "t16/sunday-mahjong-december-1994-v71.jpg": {
+  "name": "December 1994",
+  "maker": "Sunday Mahjong",
+  "box": [
+   0.05,
+   0.4,
+   0.95,
+   1.0
+  ],
+  "why": "band showed the December 1994 box, tiles below"
+ },
+ "t16/sunday-mahjong-hummingbird.jpg": {
+  "name": "Hummingbird",
+  "maker": "Sunday Mahjong",
+  "box": [
+   0.08,
+   0.02,
+   1.0,
+   0.98
+  ],
+  "why": "white corner in square"
+ },
+ "t16/virora-mahjong-petal-e.jpg": {
+  "name": "Petalée",
+  "maker": "Virora Mahjong",
+  "box": [
+   0.12,
+   0.1,
+   0.86,
+   0.9
+  ],
+  "why": "scattered tiles on white; trims white"
+ },
+ "t13/3.jpg": {
+  "name": "Tinselle (Emerald Green)",
+  "maker": "Virora Mahjong",
+  "box": [
+   0.17,
+   0.13,
+   0.86,
+   0.84
+  ],
+  "why": "3x3 grid in white field; square showed lots of white"
+ },
+ "t13/4.jpg": {
+  "name": "Tinselle (Ruby Red)",
+  "maker": "Virora Mahjong",
+  "box": [
+   0.17,
+   0.13,
+   0.84,
+   0.84
+  ],
+  "why": "3x3 grid in white field; square showed lots of white"
+ },
+ "t15/194.jpg": {
+  "name": "Aloha",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/195.jpg": {
+  "name": "Atlantica",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/196.jpg": {
+  "name": "Canyon Clay",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/197.jpg": {
+  "name": "Celestial Harmony",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0,
+   0,
+   0.5,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Plain back, so frame the face"
+ },
+ "t15/178.jpg": {
+  "name": "Chinoise",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/198.jpg": {
+  "name": "Chinoise II",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/199.jpg": {
+  "name": "Classic Luxe",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0,
+   0,
+   0.45,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Plain back, so frame the face"
+ },
+ "t15/200.jpg": {
+  "name": "Classic Royale II",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0,
+   0,
+   0.45,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Plain back, so frame the face"
+ },
+ "t15/173.jpg": {
+  "name": "Easy Reader",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0,
+   0,
+   0.45,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Plain back, so frame the face"
+ },
+ "t15/175.jpg": {
+  "name": "God of Fortune",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/189.jpg": {
+  "name": "Golden Fortune",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/201.jpg": {
+  "name": "Harbor Mint",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/202.jpg": {
+  "name": "Harbor Snow",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0,
+   0,
+   0.45,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Plain back, so frame the face"
+ },
+ "t15/203.jpg": {
+  "name": "Harbor Tide",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/204.jpg": {
+  "name": "Heather",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0,
+   0,
+   0.45,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Plain back, so frame the face"
+ },
+ "t15/179.jpg": {
+  "name": "Huntington",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/205.jpg": {
+  "name": "Indigo Bay",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/206.jpg": {
+  "name": "Indigo Tides",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/210.jpg": {
+  "name": "Jade Horizon",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/176.jpg": {
+  "name": "Jet Set",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/185.jpg": {
+  "name": "Koi",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/187.jpg": {
+  "name": "Little Bird",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/171.jpg": {
+  "name": "Oceana",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/177.jpg": {
+  "name": "Outlaws of the Marsh Mahjong Treasure Set",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/174.jpg": {
+  "name": "Panda",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/180.jpg": {
+  "name": "Papillon",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/183.jpg": {
+  "name": "Pattaya",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/184.jpg": {
+  "name": "Peony",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/212.jpg": {
+  "name": "Peony Blush",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/182.jpg": {
+  "name": "Pepper",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/186.jpg": {
+  "name": "Pink Sparkles",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/213.jpg": {
+  "name": "Rosehill",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/181.jpg": {
+  "name": "Sakura",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/214.jpg": {
+  "name": "Sakura Pink",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/215.jpg": {
+  "name": "Seabreeze",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/188.jpg": {
+  "name": "The Classic",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0,
+   0,
+   0.45,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Plain back, so frame the face"
+ },
+ "t15/172.jpg": {
+  "name": "Toucan",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ },
+ "t15/216.jpg": {
+  "name": "Verdant Spring",
+  "maker": "Yellow Mountain Imports",
+  "box": [
+   0.5,
+   0,
+   1,
+   1
+  ],
+  "why": "face|side|back product shot; square showed the blank side. Frame side stripe + coloured/printed back"
+ }
+}
