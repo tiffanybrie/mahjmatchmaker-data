@@ -39,7 +39,7 @@ for k, fo in FOC.items():
     hdr[f] = [len(body), len(raw)]; body += raw
     t = c.copy(); t.thumbnail((300, 300)); tb = io.BytesIO(); t.save(tb, 'WEBP', quality=80); th = 'mt90' + hashlib.md5(f.encode()).hexdigest()[:8]
     IMG[th] = 'data:image/webp;base64,' + base64.b64encode(tb.getvalue()).decode()
-    m['f0'] = m['f']; m['f'] = f; m['th'] = th; m['w'], m['h'] = c.size
+    m['f0'] = m['f']; m['th0'] = m.get('th'); m['f'] = f; m['th'] = th; m['w'], m['h'] = c.size
     sw = kmeans_sw(c); C['mats'][k] = {'sw': sw, 'tone': C['mats'].get(k, {}).get('tone')}; m['ms'] = sw
     print('cropped', m['bn'], '|', m['n'], '->', f, c.size)
 hj = json.dumps(hdr, separators=(',', ':')).encode(); open(f'{B}/mc/{chunk}.webp', 'wb').write(body + hj + struct.pack('<I', len(hj)))

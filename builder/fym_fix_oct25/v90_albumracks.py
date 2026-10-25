@@ -30,6 +30,8 @@ for s in D['sets']:
         new = list(dict.fromkeys(e['mat'])) if e and e.get('mat') else [r for r in x[1] if r not in tiles]
         if e and e.get('shown'): new = [r for r in new if r not in tiles] or new   # 'Racks shown' lists the tile racks first: keep her mat picks first
         if e and not e.get('mat') and e.get('tiles'): new = []          # holiday card with only tile racks
+        lmp = [r for r in (D.get('lm') or {}).get(x[0], []) if r in D['racks']]   # her stated picks for this mat (config/mat-racks-picks.json) lead (Oct 22 rule)
+        new = list(dict.fromkeys(lmp + new))
         if new != x[1]: x[1] = new; nch += 1
     lk = L['sets'].get(s['slug'])
     if lk and 'm' in lk:
