@@ -1,0 +1,461 @@
+{
+ "amara": {
+  "name": "Amara",
+  "cards": 44,
+  "mapped": 41,
+  "app_mats": 49,
+  "missing": [
+   "mat? Peace Love Holiday"
+  ]
+ },
+ "heritage": {
+  "name": "Heritage 1.0",
+  "cards": 55,
+  "mapped": 55,
+  "app_mats": 63,
+  "missing": []
+ },
+ "gatsby": {
+  "name": "Gatsby",
+  "cards": 60,
+  "mapped": 58,
+  "app_mats": 60,
+  "missing": [
+   "mat? Ski Club Red Sweater"
+  ]
+ },
+ "heritage-2-0": {
+  "name": "Heritage 2.0",
+  "cards": 77,
+  "mapped": 76,
+  "app_mats": 85,
+  "missing": [
+   "mat? Bam Bird Holiday"
+  ]
+ },
+ "drake": {
+  "name": "Drake",
+  "cards": 41,
+  "mapped": 41,
+  "app_mats": 42,
+  "missing": []
+ },
+ "lagoon": {
+  "name": "Lagoon",
+  "cards": 42,
+  "mapped": 40,
+  "app_mats": 43,
+  "missing": [
+   "mat? Paradise Pink"
+  ]
+ },
+ "seabreeze": {
+  "name": "Seabreeze",
+  "cards": 30,
+  "mapped": 28,
+  "app_mats": 32,
+  "missing": [
+   "mat? The Club Blue Green Stripe",
+   "mat? Peace Love Holiday"
+  ]
+ },
+ "talulah": {
+  "name": "Talulah",
+  "cards": 28,
+  "mapped": 28,
+  "app_mats": 34,
+  "missing": []
+ },
+ "willow": {
+  "name": "Willow",
+  "cards": 51,
+  "mapped": 47,
+  "app_mats": 51,
+  "missing": [
+   "mat? Sparrows Nest",
+   "mat? Bam Bird Holiday"
+  ]
+ },
+ "cypress-forest": {
+  "name": "Cypress",
+  "cards": 37,
+  "mapped": 35,
+  "app_mats": 37,
+  "missing": []
+ },
+ "solara": {
+  "name": "Solara",
+  "cards": 40,
+  "mapped": 36,
+  "app_mats": 44,
+  "missing": [
+   "mat? Mary Benson",
+   "mat? Peaches and Cream"
+  ]
+ },
+ "coquette": {
+  "name": "Coquette",
+  "cards": 62,
+  "mapped": 59,
+  "app_mats": 69,
+  "missing": [
+   "mat? Classic Neoprene in Pink",
+   "mat? Peace Love Holiday"
+  ]
+ },
+ "emerald": {
+  "name": "Emerald",
+  "cards": 24,
+  "mapped": 23,
+  "app_mats": 26,
+  "missing": [
+   "mat? Peace Love Holiday"
+  ]
+ },
+ "gemma": {
+  "name": "Gemma",
+  "cards": 16,
+  "mapped": 15,
+  "app_mats": 17,
+  "missing": [
+   "mat? Ski Club Periwinkle"
+  ]
+ },
+ "glow-wild": {
+  "name": "Glow Wild",
+  "cards": 41,
+  "mapped": 38,
+  "app_mats": 46,
+  "missing": [
+   "mat? Isabel Harte",
+   "mat? Paradise Pink",
+   "mat? Peace Love Holiday"
+  ]
+ },
+ "jasmine": {
+  "name": "Jasmine",
+  "cards": 20,
+  "mapped": 20,
+  "app_mats": 27,
+  "missing": []
+ },
+ "la-fete": {
+  "name": "La Fete",
+  "cards": 28,
+  "mapped": 27,
+  "app_mats": 36,
+  "missing": [
+   "mat? Peace Love Holiday"
+  ]
+ },
+ "luminaire": {
+  "name": "Luminaire",
+  "cards": 20,
+  "mapped": 20,
+  "app_mats": 22,
+  "missing": []
+ },
+ "moonlight": {
+  "name": "Moonlight",
+  "cards": 40,
+  "mapped": 37,
+  "app_mats": 44,
+  "missing": [
+   "mat? Holiday Love Blue",
+   "mat? Ski Club Periwinkle"
+  ]
+ },
+ "nantucket": {
+  "name": "Nantucket",
+  "cards": 36,
+  "mapped": 31,
+  "app_mats": 45,
+  "missing": [
+   "mat? Holiday Love Red & Green",
+   "mat? Bam Bird Holiday",
+   "mat? Peace Love Holiday",
+   "mat? Ski Club Red Sweater"
+  ]
+ },
+ "osler": {
+  "name": "Osler",
+  "cards": 32,
+  "mapped": 28,
+  "app_mats": 32,
+  "missing": [
+   "mat? Holiday Love Blue",
+   "mat? Ski Club Periwinkle"
+  ]
+ },
+ "palm-royale": {
+  "name": "Palm Royale",
+  "cards": 24,
+  "mapped": 23,
+  "app_mats": 28,
+  "missing": [
+   "mat? Holiday Love Red & Green"
+  ]
+ },
+ "pearlescent": {
+  "name": "Pearlescent",
+  "cards": 36,
+  "mapped": 32,
+  "app_mats": 39,
+  "missing": [
+   "mat? Serengeti 2",
+   "mat? Enchanted 2",
+   "mat? Secret Garden",
+   "mat? Peace Love Holiday"
+  ]
+ },
+ "pippa": {
+  "name": "Pippa",
+  "cards": 19,
+  "mapped": 19,
+  "app_mats": 23,
+  "missing": []
+ },
+ "sierra": {
+  "name": "Sierra",
+  "cards": 17,
+  "mapped": 17,
+  "app_mats": 19,
+  "missing": []
+ },
+ "smith": {
+  "name": "Smith",
+  "cards": 39,
+  "mapped": 34,
+  "app_mats": 40,
+  "missing": [
+   "mat? Navy Vegan Leather",
+   "mat? Holiday Love Blue"
+  ]
+ },
+ "tortoise": {
+  "name": "Classic Tortoise",
+  "cards": 50,
+  "mapped": 50,
+  "app_mats": 57,
+  "missing": []
+ },
+ "jade": {
+  "name": "Miss Classic Jade",
+  "cards": 55,
+  "mapped": 50,
+  "app_mats": 68,
+  "missing": [
+   "mat? Sparrows Nest",
+   "mat? Year of the Dragon Raspberry",
+   "mat? Chinoiserie Blue & Green",
+   "mat? Bam Bird Holiday",
+   "mat? Holiday Love Red & Green"
+  ]
+ },
+ "malachite": {
+  "name": "Miss Classic Malachite",
+  "cards": 50,
+  "mapped": 49,
+  "app_mats": 58,
+  "missing": [
+   "mat? YOTD Purple"
+  ]
+ },
+ "birdie": {
+  "name": "Birdie",
+  "cards": 33,
+  "mapped": 29,
+  "app_mats": 37,
+  "missing": [
+   "mat? Hanukkah",
+   "mat? Holiday Love Blue",
+   "mat? Ski Club Periwinkle",
+   "mat? Ski Club Red Sweater"
+  ]
+ },
+ "dandy": {
+  "name": "Dandy",
+  "cards": 28,
+  "mapped": 27,
+  "app_mats": 31,
+  "missing": [
+   "mat? Peace Love Holiday"
+  ]
+ },
+ "glitterville": {
+  "name": "Glitterville",
+  "cards": 23,
+  "mapped": 22,
+  "app_mats": 25,
+  "missing": [
+   "mat? Peace Love Holiday"
+  ]
+ },
+ "limoncello": {
+  "name": "Limoncello",
+  "cards": 15,
+  "mapped": 15,
+  "app_mats": 16,
+  "missing": []
+ },
+ "lola": {
+  "name": "Lola",
+  "cards": 28,
+  "mapped": 26,
+  "app_mats": 30,
+  "missing": [
+   "mat? Ski Club Periwinkle"
+  ]
+ },
+ "sorbet": {
+  "name": "Sorbet",
+  "cards": 16,
+  "mapped": 15,
+  "app_mats": 19,
+  "missing": [
+   "mat? Peace Love Holiday"
+  ]
+ },
+ "sunset": {
+  "name": "Sunset",
+  "cards": 10,
+  "mapped": 10,
+  "app_mats": 12,
+  "missing": []
+ },
+ "taylor": {
+  "name": "Taylor",
+  "cards": 17,
+  "mapped": 17,
+  "app_mats": 20,
+  "missing": []
+ },
+ "dear-santa": {
+  "name": "Dear Santa",
+  "cards": 19,
+  "mapped": 17,
+  "app_mats": 27,
+  "missing": [
+   "mat? Bam Bird Holiday",
+   "mat? Holiday Love Red & Green"
+  ]
+ },
+ "rackin-rudolph": {
+  "name": "Rackin' Rudolph",
+  "cards": 22,
+  "mapped": 19,
+  "app_mats": 33,
+  "missing": [
+   "mat? Holiday Love Red & Green",
+   "mat? Peace Love Holiday",
+   "mat? Bam Bird Holiday"
+  ]
+ },
+ "holly-jolly-red": {
+  "name": "Holly Jolly (Rudolph Red)",
+  "cards": 26,
+  "mapped": 11,
+  "app_mats": 21,
+  "missing": [
+   "mat? Holiday Love Red & Green",
+   "mat? Bam Bird Holiday",
+   "mat? Peace Love Holiday",
+   "mat? Holiday Love Red & Green",
+   "mat? Peace Love Holiday",
+   "mat? Candy Cane Pink Wonderland",
+   "mat? Clara",
+   "mat? Clara's Dream Christmas",
+   "mat? Merriment",
+   "mat? Nutcracker"
+  ]
+ },
+ "holly-jolly-green": {
+  "name": "Holly Jolly (Grinch Green)",
+  "cards": 26,
+  "mapped": 3,
+  "app_mats": 4,
+  "missing": [
+   "mat? Holiday Love Red & Green",
+   "mat? Bam Bird Holiday",
+   "mat? Watercolor Christmas Tree",
+   "mat? Yuletide",
+   "mat? Classic Very Merry Mahj",
+   "mat? Peace Love Holiday",
+   "mat? Letters to Santa",
+   "mat? Liberty",
+   "mat? Santa's Mahjong Mail",
+   "mat? Winterberry",
+   "mat? Holiday Love Red & Green",
+   "mat? Peace Love Holiday",
+   "mat? Very Merry Mahj",
+   "mat? Candy Cane Pink Wonderland",
+   "mat? Clara",
+   "mat? Clara's Dream Christmas",
+   "mat? Merriment",
+   "mat? Nutcracker",
+   "mat? Sugarplum"
+  ]
+ },
+ "holly-jolly-pink": {
+  "name": "Holly Jolly (Sugarplum Pink)",
+  "cards": 26,
+  "mapped": 10,
+  "app_mats": 19,
+  "missing": [
+   "mat? Holiday Love Red & Green",
+   "mat? Bam Bird Holiday",
+   "mat? Watercolor Christmas Tree",
+   "mat? Yuletide",
+   "mat? Peace Love Holiday",
+   "mat? Letters to Santa",
+   "mat? Liberty",
+   "mat? Santa's Mahjong Mail",
+   "mat? Winterberry",
+   "mat? Holiday Love Red & Green",
+   "mat? Peace Love Holiday"
+  ]
+ },
+ "nivalee-blue": {
+  "name": "Nivalee (Glacier Blue)",
+  "cards": 7,
+  "mapped": 5,
+  "app_mats": 8,
+  "missing": [
+   "mat? Ski Club Red Sweater",
+   "mat? Ski Club Periwinkle"
+  ]
+ },
+ "tinselle-emerald": {
+  "name": "Tinselle (Emerald Green)",
+  "cards": 3,
+  "mapped": 2,
+  "app_mats": 23,
+  "missing": []
+ },
+ "tinselle-ruby": {
+  "name": "Tinselle (Ruby Red)",
+  "cards": 3,
+  "mapped": 2,
+  "app_mats": 26,
+  "missing": []
+ },
+ "nutcracker-ballet": {
+  "name": "Nutcracker Ballet",
+  "cards": 12,
+  "mapped": 11,
+  "app_mats": 18,
+  "missing": [
+   "mat? Peace Love Holiday"
+  ]
+ },
+ "cmc-apres-ski": {
+  "name": "Après Ski Club",
+  "cards": 9,
+  "mapped": 6,
+  "app_mats": 9,
+  "missing": [
+   "mat? Ski Club Red Sweater",
+   "mat? Ski Club Periwinkle"
+  ]
+ }
+}
