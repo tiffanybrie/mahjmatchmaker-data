@@ -16,3 +16,5 @@ Missed on Papaya and again on Brownstone and Gatsby: the color card was made aft
 5. Keep the book a sensible size (Coquette-size beats 113): best candidates first.
 
 **New products are not albums (Oct 24):** a new mat goes straight into the mat gallery + Find Your Mat-ch (color tagged) so every swipe book can pull it. New products are tracked for social: a weekly "new this week" roundup, and better, "coming next week" so content lands at launch, on the social calendar. An album is built only when it earns it (e.g. Bam Bird Deco relaunch + 3 matching Deco mats).
+
+**Pull sources (added Oct 24–25):** every colour pull ALWAYS includes Amazon and Etsy mats (Tiffany Oct 24) and the House of Hearts Studio mats (Tiffany Oct 25: non-partner, "No code available at this time"; they are in FYM; existing albums are NOT backfilled, but they are candidates for every NEW album).
