@@ -38646,37 +38646,29 @@
 "bespoke-mahjong-bespoke-x-gray-malin-beach-club": {
 "sw": [
 [
-"#a393b0",
-0.5
+"#5e79ba",
+0.341
 ],
 [
-"#d677a2",
-0.196
+"#7f97ce",
+0.316
 ],
 [
-"#7a87bf",
-0.076
+"#a3b7c9",
+0.174
 ],
 [
-"#a495af",
-0.072
-],
-[
-"#b39587",
+"#80ae77",
 0.068
 ],
 [
-"#142e41",
-0.053
-],
-[
-"#703a60",
-0.034
+"#9f7498",
+0.065
 ]
 ],
-"tone": "clean",
-"src": "back+photo",
-"back": "#a393b0"
+"tone": null,
+"src": "photo",
+"back": null
 },
 "bespoke-mahjong-bespoke-x-gray-malin-getaway-dogs-xl-mega": {
 "sw": [
@@ -41970,6 +41962,667 @@
 ]
 ],
 "tone": "clean",
+"src": "photo",
+"back": null
+},
+"bespoke-mahjong-lucky-charms-marshmallow-pink": {
+"sw": [
+[
+"#e1bfd0",
+0.52
+],
+[
+"#b54c70",
+0.165
+],
+[
+"#a4a792",
+0.108
+],
+[
+"#477d4a",
+0.076
+],
+[
+"#6882ca",
+0.072
+],
+[
+"#534a63",
+0.058
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"bespoke-mahjong-pop-diva-cotton-candy-pearl": {
+"sw": [
+[
+"#f1bdd8",
+0.364
+],
+[
+"#e384b0",
+0.201
+],
+[
+"#72b4f8",
+0.16
+],
+[
+"#cfbfec",
+0.15
+],
+[
+"#5286e6",
+0.073
+],
+[
+"#7f5a9f",
+0.052
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"bespoke-mahjong-pop-diva-bright-white": {
+"sw": [
+[
+"#c6bbb8",
+0.311
+],
+[
+"#c38291",
+0.175
+],
+[
+"#96a65c",
+0.171
+],
+[
+"#b93749",
+0.138
+],
+[
+"#496526",
+0.111
+],
+[
+"#352f34",
+0.095
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"bespoke-mahjong-springtime-safari-petal-pink": {
+"sw": [
+[
+"#e1798a",
+0.525
+],
+[
+"#b54148",
+0.132
+],
+[
+"#e2a0aa",
+0.128
+],
+[
+"#9c6669",
+0.103
+],
+[
+"#393d22",
+0.058
+],
+[
+"#7a878c",
+0.054
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"bespoke-mahjong-springtime-safari-sky-blue": {
+"sw": [
+[
+"#7fc6ba",
+0.591
+],
+[
+"#a5bebb",
+0.167
+],
+[
+"#58a066",
+0.067
+],
+[
+"#9e9297",
+0.066
+],
+[
+"#4e758c",
+0.06
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"bespoke-mahjong-the-chalet-frosty-lilac": {
+"sw": [
+[
+"#c8c1bf",
+0.444
+],
+[
+"#8c88a0",
+0.222
+],
+[
+"#c6807f",
+0.12
+],
+[
+"#434779",
+0.104
+],
+[
+"#85ab75",
+0.065
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"bespoke-mahjong-the-chalet-frosty-pearl-white": {
+"sw": [
+[
+"#b2d4dd",
+0.28
+],
+[
+"#dcacb4",
+0.205
+],
+[
+"#c65a70",
+0.185
+],
+[
+"#afdcb2",
+0.179
+],
+[
+"#7b8eae",
+0.103
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"bespoke-mahjong-year-of-the-horse-pearl-cream": {
+"sw": [
+[
+"#d3c5b6",
+0.37
+],
+[
+"#030303",
+0.352
+],
+[
+"#d0928c",
+0.11
+],
+[
+"#737a73",
+0.082
+],
+[
+"#c24654",
+0.058
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"bespoke-mahjong-year-of-the-horse-saddle-pink": {
+"sw": [
+[
+"#f297c8",
+0.537
+],
+[
+"#ce5883",
+0.174
+],
+[
+"#c59aa9",
+0.115
+],
+[
+"#744d74",
+0.066
+],
+[
+"#7a7c5d",
+0.054
+],
+[
+"#c44947",
+0.053
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"bespoke-mahjong-garden-glow-matcha-pearl": {
+"sw": [
+[
+"#cbdcb7",
+0.402
+],
+[
+"#c1c4c1",
+0.226
+],
+[
+"#7393aa",
+0.122
+],
+[
+"#c77986",
+0.119
+],
+[
+"#76a96d",
+0.104
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"bespoke-mahjong-gray-malin-getaway-dogs-beverly-hills-pink": {
+"sw": [
+[
+"#f4becd",
+0.517
+],
+[
+"#b1b0b9",
+0.176
+],
+[
+"#e285ab",
+0.123
+],
+[
+"#f15680",
+0.064
+],
+[
+"#87b892",
+0.064
+],
+[
+"#cb9571",
+0.057
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"bespoke-mahjong-gray-malin-getaway-dogs-icy-blue": {
+"sw": [
+[
+"#b5dbdb",
+0.558
+],
+[
+"#b5a6a3",
+0.162
+],
+[
+"#76bf97",
+0.081
+],
+[
+"#9192bc",
+0.076
+],
+[
+"#d86b6a",
+0.072
+],
+[
+"#c6a16d",
+0.052
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"bespoke-mahjong-gray-malin-getaway-dogs-bright-white": {
+"sw": [
+[
+"#a3dbed",
+0.475
+],
+[
+"#d4b8b6",
+0.228
+],
+[
+"#523e3a",
+0.099
+],
+[
+"#e4717f",
+0.095
+],
+[
+"#63a57a",
+0.06
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"bespoke-mahjong-corey-paige-color-crush-pearl-crush": {
+"sw": [
+[
+"#c4beba",
+0.514
+],
+[
+"#677f71",
+0.173
+],
+[
+"#956379",
+0.105
+],
+[
+"#576886",
+0.093
+],
+[
+"#a85c3c",
+0.065
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"bespoke-mahjong-corey-paige-color-crush-bright-white": {
+"sw": [
+[
+"#020202",
+0.456
+],
+[
+"#c3c7c5",
+0.204
+],
+[
+"#969b9e",
+0.151
+],
+[
+"#6b676c",
+0.084
+],
+[
+"#9cac7c",
+0.06
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"bespoke-mahjong-grateful-dead-rose-pink-tie-dye-pearl": {
+"sw": [
+[
+"#d2c7cd",
+0.408
+],
+[
+"#9e9aa0",
+0.222
+],
+[
+"#976381",
+0.172
+],
+[
+"#4b5a55",
+0.106
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"bespoke-mahjong-grateful-dead-sunshine-daydream-tie-dye-pearl": {
+"sw": [
+[
+"#f0cad0",
+0.239
+],
+[
+"#ebe2c2",
+0.215
+],
+[
+"#b2d0d9",
+0.192
+],
+[
+"#7fab76",
+0.144
+],
+[
+"#ced361",
+0.133
+],
+[
+"#9e7876",
+0.077
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"bespoke-mahjong-grateful-dead-stealie-blue-tie-dye-pearl": {
+"sw": [
+[
+"#c7c8c5",
+0.363
+],
+[
+"#a5a5a2",
+0.256
+],
+[
+"#7c797b",
+0.168
+],
+[
+"#4b484f",
+0.105
+],
+[
+"#774a4c",
+0.075
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"tala-mahj-tradewind-sage-jade": {
+"sw": [
+[
+"#569989",
+0.384
+],
+[
+"#bcbdbd",
+0.178
+],
+[
+"#81b1a6",
+0.174
+],
+[
+"#b4cfca",
+0.14
+],
+[
+"#a1ab77",
+0.075
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"tala-mahj-tradewind-emerald-jade": {
+"sw": [
+[
+"#154139",
+0.378
+],
+[
+"#bcc4c4",
+0.183
+],
+[
+"#496c67",
+0.165
+],
+[
+"#819594",
+0.153
+],
+[
+"#485d3a",
+0.07
+],
+[
+"#7a7c3d",
+0.052
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"tala-mahj-tradewind-tortoise": {
+"sw": [
+[
+"#1a0e0d",
+0.279
+],
+[
+"#87736b",
+0.195
+],
+[
+"#53423e",
+0.192
+],
+[
+"#b5b0b0",
+0.145
+],
+[
+"#381612",
+0.131
+],
+[
+"#732110",
+0.057
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"tala-mahj-tradewind-aqua": {
+"sw": [
+[
+"#9fd4cf",
+0.395
+],
+[
+"#bee0de",
+0.209
+],
+[
+"#7eb1ac",
+0.126
+],
+[
+"#618782",
+0.119
+],
+[
+"#b4b9b8",
+0.085
+],
+[
+"#b1c7ad",
+0.067
+]
+],
+"tone": null,
+"src": "photo",
+"back": null
+},
+"tala-mahj-tradewind-petal": {
+"sw": [
+[
+"#edcad6",
+0.49
+],
+[
+"#e0b1c2",
+0.211
+],
+[
+"#c9bbbe",
+0.118
+],
+[
+"#b3939c",
+0.089
+],
+[
+"#e18d99",
+0.076
+]
+],
+"tone": null,
 "src": "photo",
 "back": null
 }
