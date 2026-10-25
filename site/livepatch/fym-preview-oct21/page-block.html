@@ -4,7 +4,7 @@
 <p class="fx-kick">New from Mahj Matchmaker</p>
 <h1><span class="nb">Find Your</span> <span class="nb">Mat-ch<sup>&trade;</sup></span></h1>
 <p class="fx-lede">Start with your tiles or your mat. Swipe. Find your&nbsp;match.</p>
-<p class="fx-under"><a href="#fymx-app" data-fx-tour>Take the 30-second tour&nbsp;&darr;</a> &nbsp;&middot;&nbsp; Free, nothing to sign up&nbsp;for</p>
+<p class="fx-under"><a href="#fymx-app" data-fx-tour>Take the 30-second tour&nbsp;&darr;</a> &nbsp;&middot;&nbsp; <span class="nb">Free, nothing to sign up&nbsp;for</span></p>
 </div>
 </div></section>
 <section class="fx-app" id="fymx-app">
@@ -211,7 +211,7 @@ section:has(#fymx) .fe-block:has(#fymx) .sqs-block{padding:0!important}
     window.scrollTo({top:y,behavior:'smooth'});}
   [].forEach.call(root.querySelectorAll('[data-fx-go]'),function(a){a.addEventListener('click',go)});
   [].forEach.call(root.querySelectorAll('[data-fx-tour]'),function(a){a.addEventListener('click',function(e){go(e);var n=0;(function tryT(){var b=null;try{b=fr.contentDocument&&fr.contentDocument.querySelector('[data-tour]')}catch(x){}
-    if(b){setTimeout(function(){b.click()},450);}else if(n++<40){setTimeout(tryT,250);}})();})});
+    if(b){setTimeout(function(){b.click()},450);}else if(n++<120){setTimeout(tryT,250);}})();})});
   [].forEach.call(root.querySelectorAll('[data-fx-how]'),function(a){a.addEventListener('click',function(e){e.preventDefault();var t=document.getElementById('fymx-how');
     window.scrollTo({top:t.getBoundingClientRect().top+(window.pageYOffset||de.scrollTop)-hdr()-8,behavior:'smooth'});})});
   function fs(on){start();stage.classList.toggle('fs',on);de.classList.toggle('fx-lock-scroll',on);if(!on)size();
