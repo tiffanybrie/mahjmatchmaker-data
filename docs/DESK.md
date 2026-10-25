@@ -124,3 +124,5 @@ On HQ in this order.
 - Priority order follows the standing order; no "Set tomorrow's order" need added.
 
 See CLAUDE.md.
+
+- **CANVA TEMPLATE LIBRARY (Main, Oct 25 4:42pm ask):** one sample each sent for her direction check (assets/social/canva-templates/samples/: rate-this-match story, match-of-the-week Reel cover + grid guide, iPhone screenshot story, "Great match! #mahjmatch" reshare sticker PNG). NEXT: on her yes, build the approved ones as editable Canva templates (no browser), then a short how-to. Don't build more until she picks.
