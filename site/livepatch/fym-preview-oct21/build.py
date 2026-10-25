@@ -31,11 +31,11 @@ PHONES = CDN + 'cd8cb41d47ef16e4c242a56a0add06f768bafb97/assets/site/fym-page-v2
 # Tiffany 3:56/3:58pm: annotated tutorial (render2.py), one step per block, at the BOTTOM of the page; app at the top.
 TUT = CDN + 'fcf9fd12d382b6fa2aad7be5e83a0114033003da/assets/site/fym-tutorial/'  # v72 re-capture (Oct 21 night): 6 steps
 HERO_ALT = ('Find Your Mat-ch on a phone: Papaya Spritz tiles swiping on the Heiress mat by Britt Mills with the X and heart '
-            'buttons, next to the start screen where you pick I have tiles or I have a mat')
+            'buttons, next to the start screen where you pick Start with tiles or Start with a mat')
 FEEDBACK = '/find-your-mat-ch-feedback'
 STEPS = [
     ('Pick your&nbsp;door', 'Start with the tile set you own, or flip it and start with the mat you already&nbsp;love.',
-     'The start screen with two doors: I have tiles, or I have a mat, plus Shop by color'),
+     'The start screen with two doors: Start with tiles, or Start with a mat, plus Shop by color'),
     ('Swipe <span class="x">&#10005;</span> or <span class="h">&#9829;</span>', 'Tap &#9829; on the mats you love and &#10005; on the ones that aren&rsquo;t the&nbsp;one.',
      'Swiping mats for Papaya Spritz tiles: the Heiress mat by Britt Mills, marked Tiffany’s match, with the X and heart buttons'),
     ('My picks, on or&nbsp;off', '&ldquo;Showing: Tiffany&rsquo;s picks only&rdquo; shows my own matches for your set. Tap it to see every mat, and tap again to bring my picks&nbsp;back.',
@@ -60,7 +60,7 @@ FAQ = [
     ('Who picks the matches?',
      'Tiffany&rsquo;s picks are built right in. While the button says <b>Tiffany&rsquo;s picks: on</b>, every mat you see is her own match for your set. Tap it to swipe the whole library and make your own&nbsp;matches.'),
     ('I already have a mat. Can I start&nbsp;there?',
-     'Yes. Tap <b>I have a mat</b> and swipe through tile sets that match it, then add&nbsp;racks.'),
+     'Yes. Tap <b>Start with a mat</b> and swipe through tile sets that match it, then add&nbsp;racks.'),
     ('How do I save?',
      'Use code <b>MAHJMATCH</b> to save at 30+ partner brands. Your match card links every piece, and each brand&rsquo;s code page has the&nbsp;details.'),
     ('Does it cost anything?',
@@ -287,7 +287,7 @@ def build():
 <div class="fx-copy">
 <p class="fx-kick">New from Mahj Matchmaker</p>
 <h1><span class="nb">Find Your</span> <span class="nb">Mat-ch<sup>&trade;</sup></span></h1>
-<p class="fx-lede">Start with your tiles or your mat. Swipe. Find your&nbsp;match.</p>
+<p class="fx-lede">Start with tiles or a mat. Swipe. Find your&nbsp;match.</p>
 <p class="fx-under"><a href="#fymx-app" data-fx-tour>Take the 30-second tour&nbsp;&darr;</a> &nbsp;&middot;&nbsp; <span class="nb">Free, nothing to sign up&nbsp;for</span></p>
 </div>
 </div></section>
