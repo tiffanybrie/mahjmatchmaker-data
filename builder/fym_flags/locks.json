@@ -9378,16 +9378,6 @@
      ]
     ],
     [
-     "shop.andersruff.com/tartan-toile-noel-mahjong-mat",
-     [
-      "bb:Red",
-      "bb:Cornflower Blue",
-      "mm:Hawksbill",
-      "peacelovemahjong.com/mahjong-racks-racks-pushers-set-of-4",
-      "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set"
-     ]
-    ],
-    [
      "peacelovemahjong.com/mahjong-mats-holiday?v=67570521473316",
      [
       "mm:Hawksbill",
@@ -27499,6 +27489,7 @@
    "field": "m",
    "change": "rack lists per (set, mat): mat's own picks (config/mat-racks-picks.json) first, then the tile set's racks; 3 pairings",
    "approval": "Tiffany Oct 22 (DESK FYM item 7 + chat ~1:58pm: 'Mat's picks, then tile racks')"
-  }
+  },
+  "2026-10-25: sierra m: removed Tartan Toile Noël (Tiffany: mis-swipe, not a match)"
  ]
 }
