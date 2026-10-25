@@ -593,9 +593,7 @@ if "const lk=src=>" in UI and "i.crossOrigin='anonymous'" not in UI[UI.index('co
 if "hdOr('t',s.tile" in UI or 'Promise.resolve(tileFull(s)||pile(s)).then(lk)' not in UI:
     F.append("[44] match card tile photo is not the swipe-screen photo tileFull(s) (it must never pick a separate HD/listing photo)")
 # [45] Oct 25 (Tiffany form Oct 24 9:45pm + 16:36: Boots & Bubbles blue tiles out of frame on the card). The Mood board band (3.87:1,
-#      zoom 1.05, anchor t.bf or [.5,.45]) of every visible set's tile photo must be mostly tiles, not white background / a pouch gap.
-if 'cover(tile,x,top,w,hT,22,1.05,...(T[s.tile].bf||[.5,.45]))' not in UI:
-    F.append("[45] Mood board tile band does not use the per-photo anchor T[s.tile].bf")
+#      zoom 1.05, anchor [.5,.45]) of every visible set's tile photo must be mostly tiles, not white background / a pouch gap.
 def _band_tiles(path, bf):
     im = Image.open(path).convert('RGB'); Wd, Hd = im.size; k = max(3.87 / Wd, 1 / Hd) * 1.05; cw, ch = 3.87 / k, 1 / k
     x0 = (Wd - cw) * bf[0]; y0 = (Hd - ch) * bf[1]; a = np.asarray(im.crop((int(x0), int(y0), int(x0 + cw), int(y0 + ch))).resize((160, 42))).astype(int)
@@ -605,7 +603,7 @@ _b45 = []
 for s in D['sets']:
     t = T.get(s['tile']) or {}
     if s.get('hid') or t.get('hid') or t.get('soon') or not t.get('full') or not os.path.exists(os.path.join(B, t['full'])): continue
-    v = _band_tiles(os.path.join(B, t['full']), t.get('bf') or [.5, .45])
+    v = _band_tiles(os.path.join(B, t['full']), [.5, .45])
     if v < BAND_MIN: _b45.append(f"{s['name']} ({s['maker']}) {v:.2f}")
 if _b45: F.append(f"[45] {len(_b45)} tile photos show mostly white in the match-card band (reframe in config/fym-tile-focus-oct25.json): " + '; '.join(_b45[:12]))
 # [47] Oct 25 (Tiffany 16:51: Mac + Miller 'Heirloom Collection: Fire + Fortune Verdant Fortune' ran off the card). The card title
@@ -617,7 +615,7 @@ for s in D['sets']:
     n_ = s['name']
     if n_.count('(') != n_.count(')') or len(n_) > 48: F.append(f"[47] set name looks broken or too long for the card: {n_!r} ({s['maker']})")
 # [48] Oct 25 (Tiffany 16:52): Mood board code bar spans only the 'Matched with ... mahjmatchmaker.com' line, not the full width
-if "/* v89: bar spans the brand line (flame to .com) */" not in UI:
+if "/* v89: Mood board (tri) bar spans the brand line (flame to .com) */" not in UI:
     F.append("[48] Mood board code bar is full width (should span the brand line)")
 # [49] Oct 25 (Tiffany 16:55): Start over prompt opened at the bottom of the page on desktop. Every sheet opens via openSheet (at the tap when framed)
 if UI.count("className='sheet'") != UI.count('openSheet(d);}') + UI.count('openSheet(el)') or 'function openSheet(' not in UI:
@@ -656,8 +654,8 @@ for c_ in ('pink', 'red', 'orange', 'yellow', 'green', 'blue', 'purple', 'neutra
 for k, r in _RR.items():
     if re.search(r'santa baby|trust fund', r['n'], re.I) and set(r.get('rf') or []) - {'metallic', 'clear'}: F.append(f"[52] {r['n']} sits in a colour chip {r.get('rf')} (metallic / seasonal only)")
 # [46] Oct 25 (Tiffany 16:37): Mood board rack labels sit BELOW the racks (whole rack visible)
-if 'racks(x+28,ry+14,w-56,hR-28,{fs:20,maxRow:230,below:true})' not in UI:
-    F.append("[46] Mood board rack labels are not below the racks (below:true)")
+if 'racks(rx,ry,rw,rh,{fs:STORY?23:19,maxRow:rh,rows:true,back:true,below:true})' not in UI:
+    F.append("[46] Mood board (tri view) rack labels are not below the racks (below:true)")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")

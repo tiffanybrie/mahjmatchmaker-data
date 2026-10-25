@@ -1,6 +1,6 @@
 """FYM v89 (Tiffany Oct 25 16:37): on the Mood board match card the racks sat too high and their white RACKS label pills
-overlapped the bottom of the rack photo. Mood board only: labels sit just BELOW each rack (whole rack visible), and the
-rack + label group is centred in the rack band (racks come down). Love triangle (close-up) keeps the overlap she's fine with.
+overlapped the bottom of the rack photo. Mood board (the app's 'tri' view; 'stack' is labelled Close up) only: labels sit just BELOW each rack (whole rack visible) and the racks
+come down. Close up keeps the overlap she's fine with.
 Usage: python3 v89_racklabels.py <build_dir>  (in place)"""
 import sys
 P = sys.argv[1] + '/index.html'; h = open(P).read()
@@ -21,5 +21,7 @@ rep("else{const cg=22,cw=(w-cg*(n-1))/n,ih=h-lh;rkt.forEach((im,i)=>{draw(im,i,x
     "rkt.forEach((im,i)=>{draw(im,i,x+i*(cw+cg),y0,cw,DH);lab(labels[i],x+i*(cw+cg),y0+DH+10,cw,i);});}"
     "else rkt.forEach((im,i)=>{draw(im,i,x+i*(cw+cg),y,cw,ih);lab(labels[i],x+i*(cw+cg),y+ih-Math.round(ph*.45),cw,i);});}")
 # mood board call
-rep("racks(x+28,ry+16,w-56,hR-32,{fs:20,maxRow:230});", "racks(x+28,ry+14,w-56,hR-28,{fs:20,maxRow:230,below:true});")
+# Mood board = the 'tri' view (VIEWS: tri='Mood board', stack='Close up'): labels below + racks lower. Close up keeps its overlap.
+rep("rx=30,ry=Math.max(top+70,Math.min(cy-rh/2,bot-rh-lch-10));\n  racks(rx,ry,rw,rh,{fs:STORY?23:19,maxRow:rh,rows:true,back:true});",
+    "rx=30,ry=Math.max(top+110,Math.min(cy-rh/2+48,bot-rh-lch-10));\n  racks(rx,ry,rw,rh,{fs:STORY?23:19,maxRow:rh,rows:true,back:true,below:true});")
 open(P, 'w').write(h); print('ok')

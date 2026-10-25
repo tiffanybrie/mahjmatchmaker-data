@@ -42,7 +42,8 @@ def best(im, ar, zoom):
     base = sc(.5, .45); top = max(cands, key=lambda p: sc(*p) - (0.02 if p != (.5, .45) else 0))
     return (list(top) if sc(*top) > base + .06 else None), base, sc(*top)
 nb = npf = 0
-for s in D['sets']:
+AUTO_ANCHORS = False   # QA v89: automatic band/portrait anchors made ~30 sets worse (corner anchors on background); off
+for s in (D['sets'] if AUTO_ANCHORS else []):
     t = T.get(s['tile']) or {}; f = t.get('full')
     if not f or not os.path.exists(B + '/' + f): continue
     im = Image.open(B + '/' + f).convert('RGB')
@@ -54,8 +55,7 @@ h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]
 def rep(a, b):
     global h
     assert h.count(a) == 1, a; h = h.replace(a, b)
-rep("cover(tile,x,top,w,hT,22,1.05,.5,.45);", "cover(tile,x,top,w,hT,22,1.05,...(T[s.tile].bf||[.5,.45]));")
-rep("cover(tile,rx,top,rw,sq,24,1.12,.5,.45);", "cover(tile,rx,top,rw,sq,24,1.12,...(T[s.tile].pf||[.5,.45]));")
+
 if IMG:
     inl = '<script>window.IMG=Object.assign(window.IMG||{},' + json.dumps(IMG, separators=(',', ':')) + ');</script>'
     a = '<script src="b24v1.js"></script>'; assert h.count(a) == 1; h = h.replace(a, a + inl, 1)
