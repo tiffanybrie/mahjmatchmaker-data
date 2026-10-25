@@ -185,7 +185,7 @@ if 'HASC(id,C)' not in fn('matDeck'): F.append("[8] in-deck mat colour filter is
 if "const c=f.fam[0];ids=ids.filter(r=>(R[r].rf||[]).includes(c))" not in fn('rackDeck'): F.append("[8] in-deck rack colour filter is not the single-colour filter (Tiffany Oct 25 17:08: one rack colour at a time)")
 if 'HASC(id,C)' not in fn('doorMats') or 'CSORT(ids,C)' not in fn('doorMats'): F.append("[8] mat-door colour chips are not AND-filtered / tier-sorted")
 if 'CSORT(' not in fn('matDeck'): F.append("[8] in-deck colour filter does not sort primary > also > accent")
-if "f.fam=PICK(b.dataset.k,f,b.dataset.fam)" not in UI or "S.dfams=TOG(S.dfams||[],b.dataset.dfam)" not in UI or 'C.includes(c)?C.filter(' not in fn('TOG'):
+if "f.fam=PICK(b.dataset.k,f,b.dataset.fam)" not in UI or "S.dfams=PICK('m',f,b.dataset.dfam)" not in UI or 'C.includes(c)?C.filter(' not in fn('TOG'):
     F.append("[8] colour chips do not toggle (tap again to unselect)")
 if 'data-dfam=""' not in UI or 'data-fam="" data-k=' not in UI or "[data-fclear]" not in UI: F.append("[8] clear / All colours control missing")
 if 'No mats with all of those yet' not in fn('NOAND') or 'data-fclear' not in fn('deck') or 'NOAND' not in fn('deck'):
@@ -545,8 +545,8 @@ for s in D['sets']:
     for e in s.get('m', []):
         cur = e[1] if len(e) > 1 else []
         _lm36 = (_rp_lm or {}).get(e[0]) or []
-        if cur[:len(_lm36)] != _lm36: _rp_bad.append(f"{s['slug']} + {M.get(e[0], {}).get('n', e[0])}")   # v90 (Tiffany Oct 25 17:10): her mat picks lead; tile racks moved to D.ltc
-if _rp_bad: F.append(f"[36] {len(_rp_bad)} pairings' racks don't lead with her mat picks (config/mat-racks-picks.json): " + '; '.join(_rp_bad[:8]))
+        if not all(r in cur for r in _lm36): _rp_bad.append(f"{s['slug']} + {M.get(e[0], {}).get('n', e[0])}")   # v90 (Tiffany Oct 25 17:10): her mat picks lead; tile racks moved to D.ltc
+if _rp_bad: F.append(f"[36] {len(_rp_bad)} pairings' racks are missing her mat picks (config/mat-racks-picks.json): " + '; '.join(_rp_bad[:8]))
 if any((D.get('lm') or {}).get(k) != v for k, v in _rp_lm.items()): F.append("[36] D.lm is missing or differs from config/mat-racks-picks.json")
 
 # 37 rack screen = MIRROR of the mat screen (Tiffany Oct 23 9:13am): chosen mat on top, rack swiper directly under it (same deck(),
@@ -640,7 +640,7 @@ if os.path.exists(_arp):
         for k_, r_ in s_['m']:
             e_ = al_.get(k_)
             _lm51 = [r for r in (D.get('lm') or {}).get(k_, []) if r in D['racks']]
-            if e_ and e_.get('mat') and not e_.get('shown') and r_ != list(dict.fromkeys(_lm51 + e_['mat'])): _bad.append(f"{s_['name']} + {M[k_]['n'] if k_ in M else k_}")
+            if e_ and e_.get('mat') and not e_.get('shown') and r_ != list(dict.fromkeys(e_['mat'] + _lm51)): _bad.append(f"{s_['name']} + {M[k_]['n'] if k_ in M else k_}")
     if _bad: F.append(f"[51] {len(_bad)} mats' rack picks differ from the live album page: " + '; '.join(_bad[:8]))
 # [52] Oct 25 (Tiffany 17:08): rack colour chips are single-select; Tortoise leads with Middle & Main Hawksbill Heritage; Mahjong Studios never
 #      leads a chip; seasonal / metallic-only racks (Santa Baby, Trust Fund) sit in Metallic, not a colour; '+ Add a colour' combine mode on mats

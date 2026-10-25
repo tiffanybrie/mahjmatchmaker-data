@@ -31,7 +31,7 @@ for s in D['sets']:
         if e and e.get('shown'): new = [r for r in new if r not in tiles] or new   # 'Racks shown' lists the tile racks first: keep her mat picks first
         if e and not e.get('mat') and e.get('tiles'): new = []          # holiday card with only tile racks
         lmp = [r for r in (D.get('lm') or {}).get(x[0], []) if r in D['racks']]   # her stated picks for this mat (config/mat-racks-picks.json) lead (Oct 22 rule)
-        new = list(dict.fromkeys(lmp + new))
+        new = list(dict.fromkeys((new + lmp) if (e and e.get('mat')) else (lmp + new)))   # QA v90: this album's own picks first; other albums' picks for the mat (D.lm) after
         if new != x[1]: x[1] = new; nch += 1
     lk = L['sets'].get(s['slug'])
     if lk and 'm' in lk:
@@ -44,7 +44,9 @@ old = "const herRacks=()=>{const x=set().m.find(x=>x[0]===S.fav);const a=[...(x?
 new = ("/* v90: her racks for this mat first; the set's tile racks only when the mat carries that colour (or the rack is neutral/wood/tortoise/clear/metallic) */"
        "const rackFits=r=>{const o=R[r];if(!o)return false;const rf=o.rf||[];if(rf.some(c=>['neutral','wood','tortoise','clear','metallic'].includes(c)))return true;"
        "const mc=new Set([...(M[S.fav].mf||[]),...(M[S.fav].ha||[])]);if(mc.has('dark')){mc.add('brown');mc.add('black');}return rf.some(c=>mc.has(c));};"
-       "const herRacks=()=>{const x=set().m.find(x=>x[0]===S.fav);const a=[...(x?x[1]:[]),...((D.ltc||{})[set().slug]||[]).filter(rackFits),...((D.lt||{})[set().slug]||[]).filter(rackFits),...((D.lm||{})[S.fav]||[])];")
+       "const herRacks=()=>{const x=set().m.find(x=>x[0]===S.fav);const own=(x?x[1]:[]).filter(r=>R[r]&&!R[r].hid&&!R[r].rt);/* her album picks win over the OMM-racks-only-with-OMM-tiles rule */const a=[...own,...((D.ltc||{})[set().slug]||[]).filter(rackFits),...((D.lt||{})[set().slug]||[]).filter(rackFits),...((D.lm||{})[S.fav]||[])];")
 assert h.count(old) == 1; h = h.replace(old, new)
+old2 = "return [...new Set(a)].filter(r=>typeof rackOK==='function'?rackOK(r):!!R[r]);};"
+assert h.count(old2) == 1; h = h.replace(old2, "return [...new Set(a)].filter(r=>own.includes(r)||(typeof rackOK==='function'?rackOK(r):!!R[r]));};")
 open(P, 'w').write(h); json.dump(L, open(LP, 'w'), indent=1, ensure_ascii=False)
 print('mat rack lists changed', nch, '| sets with tile racks', len(ltc))

@@ -41,18 +41,26 @@ for k, r in R.items():
         f = FAM.get(main, main)
         if main == 'brown' and ('wood' in fin or 'tortoise' in fin): pass        # natural wood / tortoise live in their finish chip
         else: rs[f] = 1 + st
-        for a in also:
-            fa = FAM.get(a, a)
-            if fa not in rs and fa != 'brown': rs[fa] = .4 * st
+        # QA v90: 'also' colours put Hot Pink under Purple and Hawksbill under Orange -> chips use the MAIN colour only
     for x in fin:
-        if x in ('wood', 'tortoise', 'metallic', 'clear'): rs[x] = max(rs.get(x, 0), 1 + st)
+        if x in ('wood', 'tortoise'): rs[x] = max(rs.get(x, 0), 1 + st)
+    if 'metallic' in fin: rs['metallic'] = 2.6 if metal_only else (.5 if main == 'clear' else 1 + .5 * st)   # true metallics lead; brass-footed clear last
     if main == 'clear': rs['clear'] = 1 + max(st, .6)
+    elif 'clear' in fin: rs['clear'] = .4
     if k == 'mm:Hawksbill': rs['tortoise'] = 9                                   # her Best Value tortoise award
     if 'Mahjong Studios' in (r.get('bn') or ''): rs = {x: v - .9 for x, v in rs.items()}   # never leads a chip
     r['rf'] = sorted(rs, key=lambda x: -rs[x]); r['rs'] = {x: round(v, 2) for x, v in rs.items()}; n += 1
     want = 'neutral' if main == 'clear' else FAM.get(main, main)
     if main != 'multi' and r.get('hx') and hue_fam(r['hx']) != want and not (want == 'brown' and hue_fam(r['hx']) in ('orange', 'yellow')):
         r['hx'] = HEX.get(want, r['hx']); changed_hx += 1
+QP = REPO + 'builder/fym_flags/fym_questionable.json'; Q = json.load(open(QP))
+for k, r in R.items():
+    if r.get('bn') == 'Virora Mahjong' and 'hinged' in r['n'].lower() and 'hot pink' in r['n'].lower() and not r.get('hid'):
+        r['hid'] = 1
+        if not any(it.get('key') == k for it in Q['items']):
+            Q['items'].append({'key': k, 'kind': 'rack', 'name': r['n'], 'brand': 'Virora Mahjong', 'reason': 'Needs a better photo: the Hot Pink variant shows a WHITE rack (QA Oct 25); ask Virora for the hot pink photo.', 'photo': 'FYM rack image ' + str(r.get('im')), 'added': '2026-10-25'})
+        print('hid (wrong photo):', r['n'])
+json.dump(Q, open(QP, 'w'), indent=1, ensure_ascii=False)
 h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]
 def rep(a, b):
     global h
@@ -65,5 +73,5 @@ rep("FAMC={", "RFAMS=['pink','red','orange','yellow','green','blue','purple','ne
 rep("FAMN={", "FAMN={brown:'Brown (painted)',black:'Black',")
 # rack chip: keep the rack's score order inside the chip
 rep("if(f.fam.length)ids=ids.filter(r=>f.fam.every(c=>(R[r].rf||[]).includes(c)));if(f.brand)ids=ids.filter(r=>R[r].bn===f.brand);return ids;}",
-    "if(f.fam.length){const c=f.fam[0];ids=ids.filter(r=>(R[r].rf||[]).includes(c));const hr2=f.her?[]:[];const rk=r=>-((R[r].rs||{})[c]||0);ids=ids.map((r,j)=>[r,j]).sort((a,b)=>(rk(a[0])-rk(b[0]))||(a[1]-b[1])).map(x=>x[0]);if(f.her)ids=[...ids.filter(r=>hr.includes(r)),...ids.filter(r=>!hr.includes(r))];}if(f.brand)ids=ids.filter(r=>R[r].bn===f.brand);return ids;}")
+    "if(f.fam.length){const c=f.fam[0];ids=ids.filter(r=>(R[r].rf||[]).includes(c));const hr2=f.her?[]:[];const rk=r=>-((R[r].rs||{})[c]||0);ids=ids.map((r,j)=>[r,j]).sort((a,b)=>(rk(a[0])-rk(b[0]))||(a[1]-b[1])).map(x=>x[0]);if(f.her)ids=[...ids.filter(r=>hr.includes(r)&&((R[r].rs||{})[c]||0)>=1),...ids.filter(r=>!(hr.includes(r)&&((R[r].rs||{})[c]||0)>=1))];}if(f.brand)ids=ids.filter(r=>R[r].bn===f.brand);return ids;}")
 open(P, 'w').write(h); print('racks re-tagged', n, '| hx replaced', changed_hx)

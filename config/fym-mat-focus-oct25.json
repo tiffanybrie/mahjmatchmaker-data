@@ -5,10 +5,10 @@
   "f": "m/1915.webp",
   "action": "crop",
   "box": [
-   0.27,
-   0.32,
-   0.75,
-   0.71
+   0.28,
+   0.37,
+   0.72,
+   0.66
   ],
   "why": "AI living-room render: square table, 4 cream armchairs, bookshelves, plant; mat (pink leopard centre, teal/blue tropical scalloped border) is ~20% of frame. Mat ~390px across, crop keeps colours readable. Better: ask brand for flat product render."
  },
@@ -18,10 +18,10 @@
   "f": "m/1368.webp",
   "action": "crop",
   "box": [
-   0.03,
-   0.22,
-   0.99,
-   0.77
+   0.1,
+   0.29,
+   0.87,
+   0.74
   ],
   "why": "AI dining-room render: mat on table with chairs/lamp/flowers; mat ~40% of frame, ~1100px across, crops cleanly."
  },
