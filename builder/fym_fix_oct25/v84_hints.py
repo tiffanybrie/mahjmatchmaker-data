@@ -1,6 +1,6 @@
 """FYM v84 (Tiffany Oct 25 14:13-14:14, approved; buttons moved up = picks row under them): (1) intro line above the two door buttons on both start screens:
 "Pick your tiles and we'll find the mat. Pick a mat and we'll find the tiles. Then add racks."  (2) swipe hints for people who skip the tour
-(her husband): a line "Swipe right ♥ to keep · swipe left ✕ to pass" over the ✕/♥ buttons, and 'Pass' / 'Keep' labels under them.
+(her husband): a line "Swipe right ♥ if you love it · swipe left ✕ if it’s not the one" over the ✕/♥ buttons, and 'Not the one' / 'Love it' labels under them (CLAUDE.md UX rule: never 'pass'; wording from her approved tips 'Love it' / 'Not the one').
 Usage: python3 v84_hints.py <build_dir>  (in place, after v84_doors.py)"""
 import sys
 P = sys.argv[1] + '/index.html'; h = open(P).read()
@@ -12,9 +12,9 @@ assert h.count(b) == 1; h = h.replace(b, b.replace("lock+doorBtns()", "lock+'" +
 c = ("return `<div class=\"acts\"><button type=\"button\" class=\"no\" data-no=\"${k}\" aria-label=\"No thanks\" ${q.length?'':'disabled'}>✕</button>"
      "<button type=\"button\" class=\"yes\" data-yes=\"${k}\" aria-label=\"Love\" ${q.length?'':'disabled'}>♥</button></div>`;")
 assert h.count(c) == 1, h.count(c)
-h = h.replace(c, "return `${q.length?'<p class=\"swhint\">Swipe right ♥ to keep · swipe left ✕ to pass</p>':''}<div class=\"acts\">"
-              "<span class=\"ab\"><button type=\"button\" class=\"no\" data-no=\"${k}\" aria-label=\"No thanks\" ${q.length?'':'disabled'}>✕</button><small>Pass</small></span>"
-              "<span class=\"ab\"><button type=\"button\" class=\"yes\" data-yes=\"${k}\" aria-label=\"Love\" ${q.length?'':'disabled'}>♥</button><small>Keep</small></span></div>`;")
+h = h.replace(c, "return `${q.length?'<p class=\"swhint\">Swipe right ♥ if you love it · swipe left ✕ if it’s not the one</p>':''}<div class=\"acts\">"
+              "<span class=\"ab\"><button type=\"button\" class=\"no\" data-no=\"${k}\" aria-label=\"No thanks\" ${q.length?'':'disabled'}>✕</button><small>Not the one</small></span>"
+              "<span class=\"ab\"><button type=\"button\" class=\"yes\" data-yes=\"${k}\" aria-label=\"Love\" ${q.length?'':'disabled'}>♥</button><small>Love it</small></span></div>`;")
 css = '.acts .no{width:54px;'
 assert h.count(css) == 1
 h = h.replace(css, '.intro{margin:2px 6px 8px;text-align:center;font:600 14px/1.4 var(--body);color:var(--navy)} '
