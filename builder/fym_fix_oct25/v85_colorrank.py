@@ -78,8 +78,11 @@ for s in D['sets']:
     front = []
     if not s['m']:
         best60 = set(ranked[:60]); tb = (D['tiles'].get(s['tile']) or {}).get('bn') or s['maker']
-        def ingroup(m): return not gf or any(c in gf for c in (M[m].get('mf') or []) + (M[m].get('ha') or []))
-        front = [m for m in ranked if m in best60 and M[m].get('bn') == tb and (bool(M[m].get('hol')) == hol_set or M[m].get('wfh')) and ingroup(m)]
+        def ingroup(m):  # brand's own mat goes first only if its MAIN colour fits the set's colour group (v88 QA: red mats led Mod Chartreuse)
+            mf, mt = M[m].get('mf') or [], M[m].get('mt') or []
+            return not gf or any(c in gf and (j >= len(mt) or mt[j] == 0) for j, c in enumerate(mf)) or (M[m].get('hol') and any(c in gf for c in (M[m].get('ha') or [])))
+        best = sc[ranked[0]]  # brand mats first only when they're also close to the best colour match (v88 QA: a mis-tagged red mat led Mod Chartreuse)
+        front = [m for m in ranked if m in best60 and sc[m] <= best + 20 and M[m].get('bn') == tb and (bool(M[m].get('hol')) == hol_set or M[m].get('wfh')) and ingroup(m)]
         if front: brand_front += 1
     out = front + [m for m in ranked if m not in front]
     s['cr'] = [OI[m] for m in out[:300]]; done += 1

@@ -43591,25 +43591,21 @@
 "charleston-mahjong-club-hunt-club-edition": {
 "sw": [
 [
-"#b3ccc3",
-0.36
+"#cfdcc6",
+0.45
 ],
 [
-"#b5686a",
-0.302
+"#9a7350",
+0.35
 ],
 [
-"#ba5543",
-0.155
-],
-[
-"#97978e",
-0.105
+"#5f7a5a",
+0.2
 ]
 ],
-"tone": null,
-"src": "photo",
-"back": null
+"tone": "transitional",
+"src": "manual (photo backdrop is rust; tiles are pale sage with wood-grain backs)",
+"back": "#9a7350"
 },
 "charleston-mahjong-club-cocktail-club-2-0-edition": {
 "sw": [
