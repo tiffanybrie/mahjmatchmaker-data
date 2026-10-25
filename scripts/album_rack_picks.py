@@ -62,6 +62,7 @@ for s in D['sets']:
                 if k: keys.append(k)
                 else: miss.append(f'rack? {name} (on {mname})')
             e[kind] = keys
+        if re.sub(r'<[^>]+>', '', body).strip().startswith('Racks shown'): e['shown'] = True   # racks in her photo (tile racks listed first)
         res[mk] = e
     out[s['slug']] = res; report[s['slug']] = {'name': s['name'], 'cards': cards, 'mapped': len(res), 'app_mats': len(s['m']), 'missing': miss}
 json.dump(out, open(REPO + 'config/album-rack-picks.json', 'w'), indent=1, ensure_ascii=False)

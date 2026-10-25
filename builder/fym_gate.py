@@ -630,6 +630,29 @@ if os.path.exists(_mfp):
         if not m_ or m_.get('hid'): continue
         if fo_.get('action') == 'crop' and not m_.get('f0'): F.append(f"[50] {m_['n']} ({m_.get('bn')}): far-away / room photo not cropped to the mat")
         if fo_.get('action') == 'too_far': F.append(f"[50] {m_['n']} ({m_.get('bn')}): photo too far away but visible (hide it + Questionable list)")
+# [51] Oct 25 (Tiffany 17:10: Birdie + Luna led with the tile rack Hot Pink; her Luna album pick is PLM Oak + OMM White Acrylic).
+#      Every mat's rack list in FYM = her album 'Rack matches' for that mat, in order; tile racks live in D.ltc and only show when they fit the mat.
+_arp = os.path.join(REPO, 'config', 'album-rack-picks.json')
+if 'const rackFits=' not in UI or 'D.ltc' not in UI: F.append("[51] herRacks() does not put her per-mat racks first / filter tile racks by the mat's colours")
+if os.path.exists(_arp):
+    _AR = json.load(open(_arp)); _bad = []
+    for s_ in D['sets']:
+        al_ = _AR.get(s_['slug']) or {}
+        for k_, r_ in s_['m']:
+            e_ = al_.get(k_)
+            if e_ and e_.get('mat') and not e_.get('shown') and r_ != list(dict.fromkeys(e_['mat'])): _bad.append(f"{s_['name']} + {M[k_]['n'] if k_ in M else k_}")
+    if _bad: F.append(f"[51] {len(_bad)} mats' rack picks differ from the live album page: " + '; '.join(_bad[:8]))
+# [52] Oct 25 (Tiffany 17:08): rack colour chips are single-select; Tortoise leads with Middle & Main Hawksbill Heritage; Mahjong Studios never
+#      leads a chip; seasonal / metallic-only racks (Santa Baby, Trust Fund) sit in Metallic, not a colour; '+ Add a colour' combine mode on mats
+if "const PICK=(k,f,c)=>" not in UI or "if(k==='r')return f.fam[0]===c?[]:[c];" not in UI or 'data-fmulti' not in UI:
+    F.append("[52] colour chips: racks not single-select / mats missing single-select + '+ Add a colour'")
+_RR = {k: r for k, r in D['racks'].items() if not r.get('hid')}
+for c_ in ('pink', 'red', 'orange', 'yellow', 'green', 'blue', 'purple', 'neutral', 'brown', 'black', 'wood', 'tortoise', 'metallic', 'clear'):
+    _l = sorted([k for k, r in _RR.items() if c_ in (r.get('rf') or [])], key=lambda k: -(_RR[k].get('rs') or {}).get(c_, 0))
+    if _l and 'Mahjong Studios' in (_RR[_l[0]].get('bn') or ''): F.append(f"[52] Mahjong Studios leads the {c_} rack chip ({_RR[_l[0]]['n']})")
+    if c_ == 'tortoise' and _l and _l[0] != 'mm:Hawksbill': F.append(f"[52] Tortoise rack chip does not lead with Middle & Main Hawksbill Heritage ({_RR[_l[0]]['n']})")
+for k, r in _RR.items():
+    if re.search(r'santa baby|trust fund', r['n'], re.I) and set(r.get('rf') or []) - {'metallic', 'clear'}: F.append(f"[52] {r['n']} sits in a colour chip {r.get('rf')} (metallic / seasonal only)")
 # [46] Oct 25 (Tiffany 16:37): Mood board rack labels sit BELOW the racks (whole rack visible)
 if 'racks(x+28,ry+14,w-56,hR-28,{fs:20,maxRow:230,below:true})' not in UI:
     F.append("[46] Mood board rack labels are not below the racks (below:true)")
