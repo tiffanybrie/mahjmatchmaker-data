@@ -23,6 +23,7 @@ Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27, (2) fall content befo
 | Item | Owner | Next step | Target |
 |---|---|---|---|
 | FYM QA v81/v82 + VIP list | Matches & Catalog | Priority 1. | Sun Oct 25 |
+| Boots and Bubbles tile photo on the match card (crop wrong, tiles hard to see) | Matches & Catalog | Her FYM feedback form Sat Oct 24 9:45pm ET (Gmail Site/FYM feedback). Fix the canon tile photo/crop, add a gate check for card tile crops, ship with the next v83 publish (gate + QA + both places). Added to HQ VIP list by the Sun morning cleanup. | Sun Oct 25 |
 | Preview page stray v72 reference | Matches & Catalog → Ops | Priority 1b. | Sun Oct 25 |
 | Smith swipe reel fixes | Main | Priority 2; Planoly draft 01a16793 (reminder, her song). | Sun Oct 25 |
 | Reel 1 hype revision + pinned-row Reel 2 (app teaser) | Main | Priority 2. Covers = the two existing pinned halves. | Sun-Mon |
