@@ -20,7 +20,7 @@ BSP = 'www.bespokemahjong.com'; REF = '10217561.eoZg0pKJHSf8IQSE'
 BESPOKE = [
  ('lucky-charms-marshmallow', 'Lucky Charms (Marshmallow Pink)', 1, 'Pink', '#e58fb0'),
  ('popdivacottoncandy', 'Pop Diva (Cotton Candy Pearl)', 4, 'Pink', '#e58fb0'),
- ('pop-diva', 'Pop Diva (Bright White)', 2, 'Ivory', '#d6568a'),
+ ('pop-diva', 'Pop Diva (Bright White)', 1, 'Ivory', '#d6568a'),
  ('springtimesafaripetalpink', 'Springtime Safari (Petal Pink)', 1, 'Pink', '#d6568a'),
  ('springtimesafariskyblue', 'Springtime Safari (Sky Blue)', 1, 'Blue', '#2f9fa0'),
  ('chalettiles', 'The Chalet (Frosty Lilac)', 2, 'Purple', '#8a6fc0'),
