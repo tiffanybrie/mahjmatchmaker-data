@@ -46,12 +46,12 @@
  },
  "mahjongstudios.com/limoncello-yellow-white-mahjong-racks-pushers-set-of-4-18-5": {
   "path": "assets/racks/v92/defringe/9523954e93.webp",
-  "mode": "defringe-white",
+  "mode": "defringe-white+holes",
   "name": "Limoncello Yellow & White Mahjong Racks & Pushers – Set of 4 | 18.5\""
  },
  "mahjongstudios.com/blue-marble-mahjong-racks-pushers-set-of-4-18-5": {
   "path": "assets/racks/v92/defringe/43b97359f5.webp",
-  "mode": "defringe-white",
+  "mode": "defringe-white+holes",
   "name": "Blue Marble Mahjong Racks & Pushers – Set of 4 | 18.5\""
  },
  "mahjongstudios.com/sea-glass-green-translucent-mahjong-racks-pushers-set-of-4-18-5": {
@@ -159,11 +159,6 @@
   "mode": "defringe",
   "name": "Emerald Green Mahjong Rack and Pusher Set"
  },
- "mahjongstudios.com/clear-translucent-mahjong-rack-and-pusher-set": {
-  "path": "assets/racks/v92/defringe/72397a347b.webp",
-  "mode": "flat-white",
-  "name": "Clear Translucent Mahjong Rack and Pusher Set"
- },
  "mahjongstudios.com/blue-rack-and-pusher-set": {
   "path": "assets/racks/v92/defringe/2d49f25148.webp",
   "mode": "defringe",
@@ -174,25 +169,10 @@
   "mode": "defringe",
   "name": "Two Player Wood Mahjong Racks"
  },
- "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers": {
-  "path": "assets/racks/v92/defringe/ff7933da96.webp",
-  "mode": "flat-white",
-  "name": "Lucite Mahjong Rack & Pusher Set – Emerald"
- },
  "www.middleandmainmahjong.com/la-vie-en-rose-mahjong-rack-and-pusher-set-of-4": {
   "path": "assets/racks/v92/defringe/51994266a4.webp",
   "mode": "defringe",
   "name": "La Vie En Rose Mahjong Rack and Pusher, Set of 4"
- },
- "www.middleandmainmahjong.com/clear-acrylic-mahjong-rack-and-pusher-set-of-4": {
-  "path": "assets/racks/v92/defringe/e65ceddd5f.webp",
-  "mode": "flat-white",
-  "name": "Clear Acrylic Mahjong Rack and Pusher, Set of 4"
- },
- "www.viroramahjong.com/wooden-rack-pusher-set": {
-  "path": "assets/racks/v92/defringe/751b1a0563.webp",
-  "mode": "flat-white",
-  "name": "Magnetic Wooden Rack & Pusher Set – Spring Jade"
  },
  "www.ymimports.com/us-rl017-a": {
   "path": "assets/racks/v92/defringe/bcacd137b9.webp",
@@ -203,5 +183,40 @@
   "path": "assets/racks/v92/defringe/44f2ceb7d4.webp",
   "mode": "defringe",
   "name": "Bam Bird Boutique Indigo Wood"
+ },
+ "mahjongstudios.com/bright-blue-mahjong-rack-and-pusher-set": {
+  "path": "assets/racks/v92/defringe/a6ea044d30.webp",
+  "mode": "defringe",
+  "name": "Bright Blue Mahjong Rack and Pusher Set"
+ },
+ "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-pink": {
+  "path": "assets/racks/v92/defringe/cdc880cd4e.webp",
+  "mode": "defringe",
+  "name": "Wavy Mahjong Rack Pusher Set - Pink"
+ },
+ "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-french-blue": {
+  "path": "assets/racks/v92/defringe/47444f8f1b.webp",
+  "mode": "defringe",
+  "name": "Wavy Mahjong Rack Pusher Set - French Blue"
+ },
+ "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-cobalt-blue": {
+  "path": "assets/racks/v92/defringe/fcf17d590c.webp",
+  "mode": "defringe",
+  "name": "Wavy Mahjong Rack Pusher Set - Cobalt Blue"
+ },
+ "shop.andersruff.com/tortoise-acrylic-rack-set-straight-pushers": {
+  "path": "assets/racks/v92/defringe/64faed06b5.webp",
+  "mode": "defringe",
+  "name": "Tortoise Acrylic Rack Set — Straight Pushers"
+ },
+ "www.bespokemahjong.com/the-ultimate-rack-clear": {
+  "path": "assets/racks/v92/defringe/38697a742b.webp",
+  "mode": "defringe-white",
+  "name": "The Ultimate Rack - CRYSTAL CLEAR"
+ },
+ "shop.andersruff.com/pistachio-acrylic-rack-set-scalloped-pushers": {
+  "path": "assets/racks/v92/defringe/cbafc72c60.webp",
+  "mode": "defringe",
+  "name": "Anders Ruff Pistachio Green Scalloped"
  }
 }
