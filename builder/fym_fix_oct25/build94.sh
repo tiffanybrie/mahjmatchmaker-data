@@ -17,4 +17,5 @@ python3 $H/v94_tilezoom.py "$D" | tail -2
 python3 $H/v95_gatsby_hummingbird.py "$D" | tail -2
 python3 $H/v94_msrackcolours.py "$D"
 python3 $H6/v94_rackquality.py "$D" | tail -2
+python3 $H/v94_zoomsnap.py "$D"
 grep -c "Version 94" "$D/index.html"

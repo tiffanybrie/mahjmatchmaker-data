@@ -714,6 +714,8 @@ for _k in sorted(_zk):
         _yy, _xx = np.mgrid[:200, :200]; _r = np.hypot(_xx - 99.5, _yy - 99.5); _w = (_a.min(2) > 248)[(_r < 100) & (_r > 80)].mean()
         if _w >= .03: F.append(f"[66] {_t.get('n')}: tile photo doesn't fill the match-card circle ({_w:.0%} white at the edge)")
     except Exception as _e: F.append(f"[66] {_k}: could not check ({_e})")
+# [68] Oct 26 (QA): zoom snaps to 1 so drag-swipe never dies after zoom in/out (builder/fym_fix_oct25/v94_zoomsnap.py)
+if "if(Math.abs(ns-1)<0.02)ns=1;" not in UI: F.append("[68] zoom does not snap back to 1 (drag-swipe can stay dead after zooming in and out)")
 # [67] Oct 26 (Tiffany 9:23/9:24am): Mahjong Studios + Splash of Color pulled from FYM; only Splash mats on her own matches stay
 _k67 = {x[0] for s_ in D['sets'] for x in s_.get('m', [])}
 for s_ in D['sets']:
