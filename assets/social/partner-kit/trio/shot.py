@@ -5,6 +5,10 @@ RB=sys.argv[5] if len(sys.argv)>5 else BRAND
 with sync_playwright() as p:
     b=p.chromium.launch(); pg=b.new_page(viewport={'width':390,'height':797},device_scale_factor=3)
     pg.goto('http://localhost:8766/index.html?tour=off'); pg.wait_for_timeout(4000)
+    import os,base64
+    if os.environ.get('MATOV'):  # MATOV0
+        mu0='data:image/jpeg;base64,'+base64.b64encode(open(os.environ['MATOV'],'rb').read()).decode()
+        print('matov0',pg.evaluate("([m,br,u])=>{const id=Object.keys(M).find(k=>M[k].n===m&&M[k].bn===br);MC[M[id].f]=u;return id}",[MAT,BRAND,mu0]))
     pg.locator('input[placeholder*=Search]').first.click(); pg.keyboard.type(TILE); pg.wait_for_timeout(1200)
     pg.evaluate("(t)=>[...document.querySelectorAll('button')].find(b=>b.offsetParent&&b.innerText.trim().startsWith(t)).click()",TILE); pg.wait_for_timeout(1200)
     pg.evaluate("([m,br])=>{const id=Object.keys(M).find(k=>M[k].n===m&&M[k].bn===br);S.f.m.her=false;S.f.m.brand=br;S.mfront=id;renderAll();}",[MAT,BRAND]); pg.wait_for_timeout(3000)
@@ -25,6 +29,10 @@ with sync_playwright() as p:
     if os.environ.get('SRCPATCH'):
         for pr in os.environ['SRCPATCH'].split(';;'):
             o_,n_=pr.split('|||'); print('patch',pg.evaluate("""([o,n])=>{const src=drawCard.toString();if(!src.includes(o))return false;window.drawCard=(0,eval)('('+src.split(o).join(n)+')');try{drawCard=window.drawCard}catch(e){};return true}""",[o_,n_]))
+    if os.environ.get('MATOV'):
+        import base64
+        mu='data:image/jpeg;base64,'+base64.b64encode(open(os.environ['MATOV'],'rb').read()).decode()
+        print('matov',pg.evaluate("(u)=>{MC[M[S.fav].f]=u;return !!S.fav}",mu))
     Z=float(os.environ.get('TZOOM','0') or 0)
     if Z>1: pg.evaluate("""async(z)=>{const s=set();const t=T[s.tile];const u=(t.cf&&!t.soon?t.cf:null)||(await tileFull(s))||pile(s);const im=await lk(u);const c=document.createElement('canvas');const w=im.width/z,h=im.height/z;c.width=w;c.height=h;c.getContext('2d').drawImage(im,(im.width-w)/2,(im.height-h)/2,w,h,0,0,w,h);t.cf=c.toDataURL('image/jpeg',.92);}""",Z); pg.wait_for_timeout(800)
     pg.evaluate("()=>{window.codeLine=()=>'';try{codeLine=()=>''}catch(e){}}")
