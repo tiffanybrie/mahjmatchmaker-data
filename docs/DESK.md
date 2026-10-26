@@ -49,6 +49,8 @@ Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27 9am CT, (2) fall conte
 | New Splash of Color / Mahjong Studios / Mahjong Register releases (launch watch 6:02pm) | Matches & Catalog | 10 logged on HQ (7 Splash, 3 racks). Racks + mats → hq/newproducts → gallery + FYM when photos pass; never Splash tile mock-ups; never albums. | This week |
 | Papaya Beechwood README | Matches & Catalog | Live since Oct 22; README still says STAGED: mark LIVE next touch. | Next touch |
 
+- **Matches & Catalog: CLASSIC TORTOISE TILE CROP (Tiffany Oct 25 9:56pm).** Bam Bird Boutique Classic Tortoise tile photo on FYM match cards is too zoomed out, tiles tiny/sparse. Next FYM build: crop in (config/fym-tile-focus-oct25.json / gate [45]) so tiles read bigger and denser; she also asked to try it in a split frame like the album framing. Gate + independent QA as usual.
+
 ## Waiting on Tiffany (only things she can answer now)
 **On HQ Today, in this order:**
 1. **Partner sneak-peek email: OK the copy** (https://claude.ai/artifact/HmkAekNUvjUfnhuToPbR9T) so Ops builds it as a Squarespace draft Monday morning; she sends it after one final read.
