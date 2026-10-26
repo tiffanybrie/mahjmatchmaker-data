@@ -232,10 +232,10 @@
    "img": "assets/mats/v95-etsy/savannah-soir-e.jpg",
    "src": "https://i.etsystatic.com/60873376/r/il/137530/8399150857/il_1080xN.8399150857_croh.jpg",
    "crop": [
-    0.24,
-    0.13,
-    0.98,
-    0.62
+    0.44,
+    0.03,
+    0.955,
+    0.545
    ],
    "hol": false,
    "hid": false,
@@ -243,7 +243,8 @@
    "shopmy_id": 96122920,
    "sheet": "etsy-yr#1",
    "note": "Mahjong Made Chic (Etsy). \"NEW ARRIVAL\" banner + \"Premium Bag\" badge on the photo: crop the corners off or check the listing for a clean image. Hidden Oct 20 for the overlay.",
-   "gallery_img": "etsy--savannah-soir-e"
+   "gallery_img": "etsy--savannah-soir-e",
+   "crop_note": "Oct 26 QA: whole photo has a NEW ARRIVAL sash + Premium Bag badge over the mat; square crop of the clean top-right quarter (border + medallion colours)"
   },
   {
    "key": "www.etsy.com/listing/4444245533/palm-beach-chic-custom-monogram-mahjong",
