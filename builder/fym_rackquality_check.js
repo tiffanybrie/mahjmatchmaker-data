@@ -1,5 +1,6 @@
 // FYM gate [60] (Tiffany Oct 26 8:29am + 8:50am): best-photographed rack leads among equals; Mahjong Studios racks never in the top 6
-// unless the tiles or mat are Mahjong Studios; white leads with a white wood rack (pearl tiles: white pearl rack). Runs the page code in node (stub DOM copied from fym_matdoor_check.js).
+// unless the tiles or mat are Mahjong Studios; rule 4 (8:58am): the set's / mat's own brand has a colour-matching rack in the
+// first 3 non-pick racks when it has one (rackFits + within 30 dE); white leads with a white wood rack (pearl tiles: white pearl rack). Runs the page code in node (stub DOM copied from fym_matdoor_check.js).
 // Usage: node builder/fym_rackquality_check.js <build_dir>   -> prints JSON {fails:[...], notes:[...]} ; exit 0 always (gate reads fails)
 const fs = require('fs'), vm = require('vm'), path = require('path');
 const B = process.argv[2];
@@ -22,11 +23,11 @@ const ctx = { document, console, URL, Blob, TextDecoder, Math, JSON, Promise, Da
   scrollTo() {}, scrollBy() {}, fetch: () => Promise.reject(new Error('no fetch')), Image: function () { return {}; }, navigator: {}, addEventListener() {} };
 ctx.window = ctx; ctx.window.IMG = {};
 vm.createContext(ctx);
-try { vm.runInContext(scripts.join('\n;\n') + '\n;globalThis.__T={S,M,D,set,rackDeck,herRacks,R,uni,rkMS:typeof rkMS==="function"?rkMS:null,rkW:typeof rkW==="function"?rkW:null};for(const n of ["matLocked","herUseful","codeLine","doStartOver"]){try{globalThis.__T[n]=eval(n);}catch(e){globalThis.__T[n]=null;}}', ctx, { timeout: 20000 }); }
+try { vm.runInContext(scripts.join('\n;\n') + '\n;globalThis.__T={S,M,D,set,rackDeck,herRacks,R,uni,rkMS:typeof rkMS==="function"?rkMS:null,rkW:typeof rkW==="function"?rkW:null,ownB:typeof ownB==="function"?ownB:null,rackFits};for(const n of ["matLocked","herUseful","codeLine","doStartOver"]){try{globalThis.__T[n]=eval(n);}catch(e){globalThis.__T[n]=null;}}', ctx, { timeout: 20000 }); }
 catch (e) { console.log(JSON.stringify({ fails: ['page script failed to run in node: ' + e.message], notes: [] })); process.exit(0); }
 const X = ctx.__T, S = X.S, D = X.D, R = X.R;
 const vis = r => R[r] && !R[r].hid;
-if (!X.rkMS || !X.rkW) fail('rkMS()/rkW() missing: Mahjong Studios / white wood + pearl rules not in the build (v94_rackquality.py round 2)');
+if (!X.rkMS || !X.rkW || !X.ownB) fail('rkMS()/rkW() missing: Mahjong Studios / white wood + pearl rules not in the build (v94_rackquality.py round 2)');
 const rkMS = X.rkMS || (() => false), rkW = X.rkW || (() => 0);
 const RF = ['pink','red','orange','yellow','green','blue','purple','neutral','brown','black','wood','tortoise','metallic','clear'];
 for (const r of Object.keys(R)) if (vis(r) && !(R[r].pq >= 1 && R[r].pq <= 5)) fail(`rack ${R[r].n} has no photo score (config/rack-photo-quality.json)`);
@@ -44,7 +45,14 @@ for (const [si, mk] of pairs) {
   // default suggestions, picks off: first non-pick rack vs racks whose colour distance is within 2 dE of it (same penalty tier)
   S.f.r.fam = [];
   const sw = (X.M[mk].ms || []).filter(s => s[1] >= .06);
-  let deck = X.rackDeck(); const first = deck[0];
+  let deck = X.rackDeck();
+  const B4 = X.ownB ? X.ownB() : [], labq = h => { const c = [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16) / 255).map(v => v > .04045 ? ((v + .055) / 1.055) ** 2.4 : v / 12.92);
+      let [x, y, z] = [c[0] * .4124 + c[1] * .3576 + c[2] * .1805, c[0] * .2126 + c[1] * .7152 + c[2] * .0722, c[0] * .0193 + c[1] * .1192 + c[2] * .9505];
+      [x, y, z] = [x / .95047, y, z / 1.08883].map(v => v > .008856 ? Math.cbrt(v) : 7.787 * v + 16 / 116); return [116 * y - 16, 500 * (x - y), 200 * (y - z)]; };
+  const SWq = sw.map(s => labq(s[0])), scq = r => { const h = R[r].hx; if (!h || !SWq.length) return 99; const L = labq(h); return Math.min(...SWq.map(s => Math.hypot(L[0] - s[0], L[1] - s[1], L[2] - s[2]))); };
+  const ownOk = r => B4.includes(R[r].bn) && X.rackFits(r) && scq(r) <= 30;
+  // rule 4 outranks rules 2/3: own-brand matching racks are checked like picks for the photo / white-wood leads
+  const first = deck.filter(r => !ownOk(r) || mine(r))[0];
   if (first && !mine(first)) {
     const lab = h => { const c = [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16) / 255).map(v => v > .04045 ? ((v + .055) / 1.055) ** 2.4 : v / 12.92);
       let [x, y, z] = [c[0] * .4124 + c[1] * .3576 + c[2] * .1805, c[0] * .2126 + c[1] * .7152 + c[2] * .0722, c[0] * .0193 + c[1] * .1192 + c[2] * .9505];
@@ -52,12 +60,16 @@ for (const [si, mk] of pairs) {
     const SW = sw.map(s => lab(s[0]));
     const sc = r => { const h = R[r].hx; if (!h || !SW.length) return 99; const L = lab(h); return Math.min(...SW.map(s => Math.hypot(L[0] - s[0], L[1] - s[1], L[2] - s[2]))); };
     const pen = r => (R[r].pa ? 0 : 1e5) + (R[r].lo ? 1e4 : 0);
-    const ok = deck.filter(r => !mine(r) && !rkMS(r));
+    const ok = deck.filter(r => !mine(r) && !rkMS(r) && !ownOk(r));
     const best = Math.min(...ok.map(r => sc(r) + pen(r)));
     const band = ok.filter(r => sc(r) + pen(r) <= best + 2);
     const pref = ok.filter(r => rkW(r) > 0 && sc(r) + pen(r) <= best + 6), top = Math.max(0, ...pref.map(rkW));
     if (rkW(first) < top && (R[first].rf || []).includes('neutral')) fail(`default racks for ${nm}: a white rack leads (${R[first].n}) instead of ${top === 2 ? 'a white pearl rack (pearl tiles)' : 'a white wood rack'} (${R[pref.find(r => rkW(r) === top)].n})`);
     if (!rkW(first) && R[first].pq < 4 && band.some(r => R[r].pq >= 4)) fail(`default racks for ${nm}: leads with ${R[first].n} (photo ${R[first].pq}) although ${R[band.find(r => R[r].pq >= 4)].n} (photo ${R[band.find(r => R[r].pq >= 4)].pq}) is as close in colour`);
+  }
+  if (X.ownB && deck.length) {
+    const nonPick = deck.filter(r => !mine(r));
+    if (nonPick.some(ownOk) && !nonPick.slice(0, 3).some(ownOk)) fail(`default racks for ${nm}: no ${B4.filter(b => nonPick.some(r => R[r].bn === b && ownOk(r))).join('/')} rack in the first 3 although one matches (${R[nonPick.find(ownOk)].n})`);
   }
   if (deck.slice(0, 6).some(r => !mine(r) && rkMS(r))) fail(`default racks for ${nm}: a Mahjong Studios rack is in the top 6 (${R[deck.slice(0, 6).find(r => !mine(r) && rkMS(r))].n})`);
   n++;
@@ -71,12 +83,13 @@ for (const [si, mk] of pairs.filter((_, i) => i % 5 === 0 || /pearl/i.test(D.set
     const m6 = d.slice(0, 6).find(r => !hr.includes(r) && rkMS(r));
     if (m6) fail(`${c} chip (${D.sets[si].name} + ${X.M[mk].n}): Mahjong Studios rack ${R[m6].n} in the top 6`);
     if (!['neutral', 'clear', 'wood'].includes(c) || hr.includes(d[0])) continue;
-    const ok = d.filter(r => !hr.includes(r) && !rkMS(r)); if (!ok.length) continue;
+    const own = r => X.ownB && X.ownB().includes(R[r].bn), d0 = d.find(r => hr.includes(r) || !own(r)); if (!d0 || hr.includes(d0)) continue;
+    const ok = d.filter(r => !hr.includes(r) && !rkMS(r) && !own(r)); if (!ok.length) continue;
     const rs = r => (R[r].rs || {})[c] || 0, top = Math.max(...ok.map(rs));
     const band = ok.filter(r => rs(r) >= top - .05);
     if (c === 'neutral') { const pt = Math.max(0, ...ok.filter(r => rs(r) >= top - .3).map(rkW));
-      if (rkW(d[0]) < pt) fail(`White chip (${D.sets[si].name} + ${X.M[mk].n}): leads with ${R[d[0]].n} instead of ${pt === 2 ? 'a white pearl rack (pearl tiles)' : 'a white wood rack'}`); }
-    if (!(c === 'neutral' && rkW(d[0])) && R[d[0]].pq < 4 && band.some(r => R[r].pq >= 4)) fail(`${c} chip (${D.sets[si].name} + ${X.M[mk].n}): leads with ${R[d[0]].n} (photo ${R[d[0]].pq}) although a photo-4+ rack has the same ${c} share`);
+      if (rkW(d0) < pt) fail(`White chip (${D.sets[si].name} + ${X.M[mk].n}): leads with ${R[d0].n} instead of ${pt === 2 ? 'a white pearl rack (pearl tiles)' : 'a white wood rack'}`); }
+    if (!(c === 'neutral' && rkW(d0)) && R[d0].pq < 4 && band.some(r => R[r].pq >= 4)) fail(`${c} chip (${D.sets[si].name} + ${X.M[mk].n}): leads with ${R[d[0]].n} (photo ${R[d[0]].pq}) although a photo-4+ rack has the same ${c} share`);
   }
 }
 N.push(`pairings checked: ${n}`);
