@@ -1,0 +1,251 @@
+{
+ "_about": "FYM v98 (Version 1.2): the 38 'angled' mat photos with white corners that gate [89] listed (v97 warning). Each was LOOKED AT (contact sheets). replace = flattened photo (perspective warp when all 4 mat corners show; when the mat runs off the frame, the largest rectangle fully inside the mat at the photo's aspect). Colours re-measured from the new photo. not_angled = flat shots where white corners are the design / rounded corners / page curl / fringe (no fix needed; gate [89] skips them). skipped = could not be done cleanly. Applied by builder/fym_fix_oct25/v98_matflat.py; gate [89] fails if a fixed mat loses its flattened photo.",
+ "mats": {
+  "amahjline.com/pink-teal-squiggle-amahj-game-mat": {
+   "name": "Pink + Teal Squiggle",
+   "brand": "Amahj",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/amahj-pink-teal-squiggle.jpg",
+   "how": "perspective warp from the 4 detected mat corners to a square (OpenCV getPerspectiveTransform), 3% inset"
+  },
+  "amahjline.com/squiggle-amahj-game-mat": {
+   "name": "Lilac + Green Squiggle",
+   "brand": "Amahj",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/amahj-lilac-green-squiggle.jpg",
+   "how": "perspective warp from the 4 detected mat corners to a square (OpenCV getPerspectiveTransform), 3% inset"
+  },
+  "amahjline.com/squiggle-pink-blue-green-amahj-game-mat": {
+   "name": "Green + Pink Squiggle",
+   "brand": "Amahj",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/amahj-green-pink-squiggle.jpg",
+   "how": "perspective warp from the 4 detected mat corners to a square (OpenCV getPerspectiveTransform), 3% inset"
+  },
+  "amahjline.com/pink-green-amahj-game-mat": {
+   "name": "Pink, Blue + Green",
+   "brand": "Amahj",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/amahj-pink-blue-green.jpg",
+   "how": "perspective warp from the 4 detected mat corners to a square (OpenCV getPerspectiveTransform), 3% inset"
+  },
+  "amahjline.com/pink-amahj-game-mat-copy": {
+   "name": "Pink Amahj",
+   "brand": "Amahj",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/amahj-pink-amahj.jpg",
+   "how": "perspective warp from the 4 detected mat corners to a square (OpenCV getPerspectiveTransform), 3% inset"
+  },
+  "www.letsmahj-on.com/signature-dragon-mat?v=42014242930793": {
+   "name": "Signature Dragon Mat – Navy",
+   "brand": "Let's Mahj On",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/let-s-mahj-on-signature-dragon-mat-navy.jpg",
+   "how": "perspective warp from the 4 detected mat corners to a square (OpenCV getPerspectiveTransform), 3% inset"
+  },
+  "amahjline.com/on-the-water-mahjong-game-mat": {
+   "name": "On The Water",
+   "brand": "Amahj",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/amahj-on-the-water.jpg",
+   "how": "perspective warp from the 4 detected mat corners to a square (OpenCV getPerspectiveTransform), 3% inset"
+  },
+  "soireeallday.co/home-for-the-holidays-mahjong-mat": {
+   "name": "Home for the Holidays",
+   "brand": "Soirée All Day",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/soir-e-all-day-home-for-the-holidays.jpg",
+   "how": "perspective warp from the 4 detected mat corners to a square (OpenCV getPerspectiveTransform), 3% inset"
+  },
+  "myfairmahjong.com/mahjong-mat-peppermint-wishes": {
+   "name": "Peppermint Wishes",
+   "brand": "My Fair Mahjong",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/my-fair-mahjong-peppermint-wishes.jpg",
+   "how": "perspective warp from the 4 detected mat corners to a square (OpenCV getPerspectiveTransform), 3% inset"
+  },
+  "missmahjong.com/canopy-mahjong-playing-mat": {
+   "name": "Canopy Palm",
+   "brand": "Miss Mahjong",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/miss-mahjong-canopy-palm.jpg",
+   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+  },
+  "missmahjong.com/oasis-mahjong-playing-mat": {
+   "name": "Oasis",
+   "brand": "Miss Mahjong",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/miss-mahjong-oasis.jpg",
+   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+  },
+  "missmahjong.com/papel-picado-mahjong-playing-mat": {
+   "name": "Papel Picado",
+   "brand": "Miss Mahjong",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/miss-mahjong-papel-picado.jpg",
+   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+  },
+  "missmahjong.com/toile-de-los-muertos": {
+   "name": "Toile de los Muertos",
+   "brand": "Miss Mahjong",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/miss-mahjong-toile-de-los-muertos.jpg",
+   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+  },
+  "missmahjong.com/gingham-americana-mahjong-playing-mat": {
+   "name": "Gingham - Americana",
+   "brand": "Miss Mahjong",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/miss-mahjong-gingham-americana.jpg",
+   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+  },
+  "missmahjong.com/after-party-mahjong-playing-mat": {
+   "name": "After Party",
+   "brand": "Miss Mahjong",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/miss-mahjong-after-party.jpg",
+   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+  },
+  "missmahjong.com/wild-west-mahjong-playing-mat": {
+   "name": "Wild West - Dolly",
+   "brand": "Miss Mahjong",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/miss-mahjong-wild-west-dolly.jpg",
+   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+  },
+  "missmahjong.com/cowgirl-gingham-mahjong-playing-mat": {
+   "name": "Gingham Cornflower",
+   "brand": "Miss Mahjong",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/miss-mahjong-gingham-cornflower.jpg",
+   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+  },
+  "www.letsmahj-on.com/signature-logo-mat?v=42014260985961": {
+   "name": "Signature Logo Mat – Bright Pink",
+   "brand": "Let's Mahj On",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/let-s-mahj-on-signature-logo-mat-bright-pink.jpg",
+   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+  },
+  "missmahjong.com/bandit-mahjong-playing-mat-poppy-red": {
+   "name": "Bandit - Poppy Red",
+   "brand": "Miss Mahjong",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/miss-mahjong-bandit-poppy-red.jpg",
+   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+  },
+  "missmahjong.com/bandit-mahjong-playing-mat": {
+   "name": "Bandit - Butter Yellow",
+   "brand": "Miss Mahjong",
+   "action": "replace",
+   "img": "assets/mats/v98-flat/miss-mahjong-bandit-butter-yellow.jpg",
+   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+  },
+  "www.etsy.com/listing/4527676776/the-benjamin-mahjong-mat": {
+   "name": "Benjamin",
+   "brand": "Etsy",
+   "action": "edge",
+   "px": [
+    0,
+    1,
+    0,
+    7
+   ],
+   "how": "v97 QA: thin bluish line along the bottom of the swipe card (last 6 rows of the v97 trim) cut off"
+  }
+ },
+ "not_angled": {
+  "www.bespokemahjong.com/year-of-the-dragon-mat-white": {
+   "name": "YOTD White",
+   "brand": "Bespoke Mahjong",
+   "why": "flat full-frame shot; white is the design (YOTD White)"
+  },
+  "www.middleandmainmahjong.com/june-bride-bouquet-mat": {
+   "name": "June Bride",
+   "brand": "Middle & Main Mahjong",
+   "why": "flat full-frame shot; pale design corners"
+  },
+  "www.bamletsmahjong.com/art-deco-mahjong-mat": {
+   "name": "Art Deco",
+   "brand": "Bam! Let's Mahjong",
+   "why": "flat full-frame shot; white is the design"
+  },
+  "www.bamletsmahjong.com/garden-party-mahjong-mat": {
+   "name": "Garden Party",
+   "brand": "Bam! Let's Mahjong",
+   "why": "flat full-frame shot; white outer stripe is the design"
+  },
+  "www.middleandmainmahjong.com/all-season-s-robin-s-egg-blue-mat": {
+   "name": "All Season’s Robin’s Egg Blue Mat",
+   "brand": "Middle & Main Mahjong",
+   "why": "flat full-frame shot; pale design corners"
+  },
+  "alb:coquette:Blue Willow": {
+   "name": "Blue Willow",
+   "brand": "Amanda Toppe",
+   "why": "flat full-frame shot; white is the design"
+  },
+  "www.etsy.com/listing/4527669219/the-luna-mahjong-mat": {
+   "name": "Luna",
+   "brand": "Betty June & Jeannette",
+   "why": "flat shot, only rounded corners show white"
+  },
+  "www.etsy.com/listing/4530894010/preppy-chinoiserie-elephant-mahjong-mat": {
+   "name": "Chinoiserie Elephant with Pagodas",
+   "brand": "Sophie Clima",
+   "why": "flat shot with a page-curl corner (black backing) by design"
+  },
+  "www.etsy.com/listing/4511258795/preppy-mahjong-mat-with-white-bag": {
+   "name": "Florida Pool Party",
+   "brand": "Sophie Clima",
+   "why": "flat shot with a page-curl corner (black backing) by design"
+  },
+  "www.etsy.com/listing/4506841316/preppy-mahjong-mat-with-white-bag-pink": {
+   "name": "Pink Orchids",
+   "brand": "Sophie Clima",
+   "why": "flat shot with a page-curl corner (black backing) by design"
+  },
+  "talamahj.com/cabana-mahjong-mat-pink-ivory-with-citrus-fringe-copy": {
+   "name": "Sweater Weather - Holiday with Winter Blue Fringe",
+   "brand": "Tala Mahj",
+   "why": "flat shot; the fringe (part of the name) sits on white, flattening cuts the fringe off"
+  },
+  "talamahj.com/carlyle-holiday-mahjong-mat-with-red-fringe": {
+   "name": "The Carlyle - Holiday Plaid with Red Fringe",
+   "brand": "Tala Mahj",
+   "why": "flat shot; the red fringe (part of the name) sits on white, flattening cuts it off"
+  },
+  "talamahj.com/the-sonoma-mahjong-mat-wildflowers-with-suede-fringe-copy": {
+   "name": "The Montecito - Wildflowers",
+   "brand": "Tala Mahj",
+   "why": "flat shot; the fringe sits on white, flattening cuts it off"
+  },
+  "soireeallday.co/color-me-merry-mahjong-mat": {
+   "name": "Color Me Merry",
+   "brand": "Soirée All Day",
+   "why": "flat shot; white-ground mat, no white wedges"
+  },
+  "soireeallday.co/pretty-in-pink-mahjong-mat": {
+   "name": "Pretty in Pink",
+   "brand": "Soirée All Day",
+   "why": "flat shot; pale-pink ground, no white wedges"
+  },
+  "www.etsy.com/listing/4570946394/nutcracker-merry-and-bright-mahjong-mat": {
+   "name": "Nutcracker Merry and Bright",
+   "brand": "Etsy",
+   "why": "flat shot; the lattice design runs to white corners (a 3% warp still reads as white corners), no fix needed"
+  }
+ },
+ "skipped": {
+  "mahjsquadshop.com/blue-chinoiserie-mahjong-mat": {
+   "name": "Blue Chinoiserie",
+   "brand": "Mahj Squad",
+   "why": "Mahj Squad watermark border is semi-transparent: no clean 4-corner outline, warp came out uneven (top border cut)"
+  },
+  "missmahjong.com/wild-west-americana-mahjong-playing-mat": {
+   "name": "Wild West - Americana",
+   "brand": "Miss Mahjong",
+   "why": "white mat on a white page: the mat edge cannot be separated from the background"
+  }
+ }
+}

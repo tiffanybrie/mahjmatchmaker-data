@@ -1,0 +1,115 @@
+{
+ "_about": "FYM v98 (Version 1.2): Mahjong Register racks showed a whole STACK of racks (Signature Collection group shot) or a multi-rack infographic (gold-hardware line) in one image (Tiffany Oct 26 6:04pm). Single racks cut from Mahjong Register's own photos (assets/racks/v98/mr/, looked at on white + navy). The Signature Collection parent entry is split into its colour variants (product variants on mahjongregister.com) and hidden. Mahj Mood White Wooden Scalloped gets Main's angled single rack (Oct 26 6:01pm). Applied by builder/fym_fix_oct25/v98_racks.py; gate [92].",
+ "hide": [
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders"
+ ],
+ "add": {
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53017141248312": {
+   "from": "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders",
+   "n": "Mahjong Register Patent Black Scalloped",
+   "variant": 53017141248312,
+   "img": "assets/racks/v98/mr/mr-patent-black.webp",
+   "rf": [
+    "black"
+   ],
+   "c": true
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53017129550136": {
+   "from": "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders",
+   "n": "Mahjong Register Carrera Marble",
+   "variant": 53017129550136,
+   "img": "assets/racks/v98/mr/mr-carrera-marble.webp",
+   "rf": [
+    "neutral"
+   ],
+   "c": true
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53017129451832": {
+   "from": "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders",
+   "n": "Mahjong Register Crystal Clear Scalloped",
+   "variant": 53017129451832,
+   "img": "assets/racks/v98/mr/mr-crystal-clear.webp",
+   "rf": [
+    "clear"
+   ],
+   "c": false
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=52971299897656": {
+   "from": "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders",
+   "n": "Mahjong Register Emerald Tortoise Scalloped",
+   "variant": 52971299897656,
+   "img": "assets/racks/v98/mr/mr-emerald-tortoise.webp",
+   "rf": [
+    "tortoise",
+    "green"
+   ],
+   "c": true
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53017129517368": {
+   "from": "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders",
+   "n": "Mahjong Register Tortoise Club Scalloped",
+   "variant": 53017129517368,
+   "img": "assets/racks/v98/mr/mr-tortoise-club.webp",
+   "rf": [
+    "tortoise"
+   ],
+   "c": true
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53017141281080": {
+   "from": "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders",
+   "n": "Mahjong Register Blonde Tortoise Scalloped",
+   "variant": 53017141281080,
+   "img": "assets/racks/v98/mr/mr-blonde-tortoise.webp",
+   "rf": [
+    "tortoise"
+   ],
+   "c": true
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53563340915000": {
+   "from": "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders",
+   "n": "Mahjong Register Pink Lucite Scalloped",
+   "variant": 53563340915000,
+   "img": "assets/racks/v98/mr/mr-pink-lucite.webp",
+   "rf": [
+    "pink"
+   ],
+   "c": true
+  }
+ },
+ "replace": {
+  "mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53555876069688": {
+   "img": "assets/racks/v98/mr/mr-jet-set-black.webp",
+   "c": true
+  },
+  "mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53555876102456": {
+   "img": "assets/racks/v98/mr/mr-admiral-navy.webp",
+   "c": true
+  },
+  "mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53555876135224": {
+   "img": "assets/racks/v98/mr/mr-peacock-teal.webp",
+   "c": true
+  },
+  "mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53555876167992": {
+   "img": "assets/racks/v98/mr/mr-kelly-green.webp",
+   "c": true
+  },
+  "mahjmood.com/white-wooden-racks-with-scalloped-pushers": {
+   "img": "assets/social/partner-kit/mahjmood-white-scalloped-angle.png",
+   "c": true
+  },
+  "myfairmahjong.com/wooden-racks?v=53371892990263": {
+   "img": "assets/racks/v98/mfm-natural-wood-single-holes.webp",
+   "c": true,
+   "why": "v97 QA: the two screw holes showed as white dots on dark mats; holes cut through (the mat shows through, like the real rack)"
+  }
+ },
+ "single_ok": {
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959156536": "Navy Pearl Scalloped",
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959189304": "Capri Blue Pearl Scalloped",
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959222072": "Emerald Pearl Scalloped",
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959254840": "Sea Glass Pearl Scalloped",
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959287608": "Peony Blush Pearl Scalloped",
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959320376": "Ivory Oyster Pearl Scalloped"
+ },
+ "_about_single_ok": "Mahjong Register racks whose current photo already shows ONE rack (looked at Oct 26, v98): gate [92] lets these keep their image; any other visible Mahjong Register rack must show a v98 single-rack cut."
+}

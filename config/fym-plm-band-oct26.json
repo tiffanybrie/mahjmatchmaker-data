@@ -1,8 +1,32 @@
 {
  "_about": "Match-card band anchor (t.bf = [x, y]) for Peace Love Mahjong tile photos (Main checked all 8 PLM sets Oct 26 5:40pm; DESK + MATCH-INBOX). Desert Dreams at centre landed on the winds + BLANK row; 0.79 = jokers + flowers row. Applied by builder/fym_fix_oct25/v97_plmfocus.py, gate [86].",
  "tiles": {
-  "peacelovemahjong.com/og-mahj-tiles-desert-dreams-tiles": [0.5, 0.79],
-  "peacelovemahjong.com/nutcracker-mahjong-tiles": [0.5, 0.21],
-  "peacelovemahjong.com/og-mahj-tiles-tile-bag-totally-teal": [0.5, 0.41]
- }
+  "peacelovemahjong.com/og-mahj-tiles-desert-dreams-tiles": [
+   0.5,
+   0.79
+  ],
+  "peacelovemahjong.com/nutcracker-mahjong-tiles": [
+   0.5,
+   0.21
+  ],
+  "peacelovemahjong.com/og-mahj-tiles-tile-bag-totally-teal": [
+   0.5,
+   0.41
+  ]
+ },
+ "_about_strip": "v98 (Version 1.2): the 'Up close' tile strip above the mat deck (set fp/fz, 16:7 band) still showed the winds + BLANK row for OG Desert Dreams (v97 fixed only the match card). strip = set name -> [fx, fy, fz]: centre on the jokers + flowers rows, zoom 1.4 so the 16:7 window (y .68-1.0 of the brand photo) holds only the jokers + flowers rows, no blank tiles. Applied by builder/fym_fix_oct25/v98_plmstrip.py, gate [93].",
+ "strip": {
+  "OG Desert Dreams": [
+   0.5,
+   0.84,
+   1.4
+  ]
+ },
+ "card_bf_v98": {
+  "myfairmahjong.com/jubilee-midnight-blue": [
+   0.5,
+   0.19
+  ]
+ },
+ "_about_card_bf_v98": "v98 (v97 QA): match card Close up tile band anchor (t.bf) for other sets: My Fair Mahjong Jubilee Midnight Blue at centre cut the standing wind tiles in half; 0.19 = the four standing winds (names + lanterns). Applied by v98_plmstrip.py."
 }

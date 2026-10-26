@@ -59,6 +59,9 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
     NRM over every accented name), 84 mat-door Add racks, 85 no set hidden by a stale no_tiles flag + Jubilee Midnight Blue, 86 PLM band
     framing, 87 MFM Natural Wood featured + no 404 wood-rack link, 88 PLM painted racks re-cut, 89 mat photos without white bands (warn:
     angled shots), 90 gallery sync (warn)
+ 91-93 (Oct 26 night, v98 = Version 1.2): 91 match card racks low + tight (Main's partner-graphics block), 92 Mahjong Register single
+    racks (no stacks) + Mahj Mood angled scalloped rack, 93 Desert Dreams Up close strip framing; [89] now FAILS if a v98-flattened
+    mat loses its flat photo
 """
 import struct
 import sys, os, json, re
@@ -773,6 +776,7 @@ _v96pq79 = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)
 _c79 = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-rack-recut-oct26.json')))['racks']
 _q79 = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-rack-pq-oct26.json')))['racks']
 for _k in _c79:
+    if _k in json.load(open(REPO + 'config/fym-rack-split-oct26.json'))['replace'] and str(D['racks'].get(_k, {}).get('im', '')).startswith('rk98'): continue  # v98 newer single-rack photo (gate [92])
     if _k in D['racks'] and not D['racks'][_k].get('hid') and not str(D['racks'][_k].get('im', '')).endswith('q95'): F.append(f"[79] {D['racks'][_k]['n']}: still shows its old rack photo (recut not applied)")
 for _k, _v in _q79.items():
     if _k in _v96pq79 and '/*v96 poor photo never leads*/' in open(os.path.join(B, 'index.html')).read(): continue  # v96 re-scored (config/fym-rack-clean-oct26.json, gate [81])
@@ -1026,6 +1030,9 @@ if not _pre97:
                 _raw = open(os.path.join(B, 'mc', _fn), 'rb').read(); _n = struct.unpack('<I', _raw[-4:])[0]
                 for _f, (_a, _l) in json.loads(_raw[-4 - _n:-4]).items(): _imgs89[_f] = (_raw, _a, _l)
         _flat89, _ang89 = [], []
+        _FL89 = json.load(open(REPO + 'config/fym-mat-flat-oct26.json'))  # v98: flattened angled shots stay fixed; flat-by-design shots skipped
+        for _k, _fo in _FL89['mats'].items():
+            if _k in M and not M[_k].get('hid') and M[_k].get('w98') != _fo['action']: F.append(f"[89] {_fo['brand']} | {_fo['name']}: v98 photo fix ({_fo['action']}) not applied")
         import io as _io89
         for _k, _m in M.items():
             if _m.get('hid') or _m.get('f') not in _imgs89: continue
@@ -1042,7 +1049,9 @@ if not _pre97:
             _mg = max(_run(_cw) / _wh.shape[1], _run(_cw[::-1]) / _wh.shape[1], _run(_rw) / _wh.shape[0], _run(_rw[::-1]) / _wh.shape[0])
             if _mg >= .06: _flat89.append(f"{_m.get('bn')} | {_m['n']} ({_mg:.0%})")
             _hh, _ww = _wh.shape; _c = max(2, min(_hh, _ww) // 6)
-            if np.mean([_wh[:_c, :_c].mean(), _wh[:_c, -_c:].mean(), _wh[-_c:, :_c].mean(), _wh[-_c:, -_c:].mean()]) >= .45: _ang89.append(f"{_m.get('bn')} | {_m['n']}")
+            if np.mean([_wh[:_c, :_c].mean(), _wh[:_c, -_c:].mean(), _wh[-_c:, :_c].mean(), _wh[-_c:, -_c:].mean()]) >= .45:
+                if _k in _FL89['mats']: F.append(f"[89] {_m.get('bn')} | {_m['n']}: was flattened in v98 but shows an angled photo with white corners again")
+                elif _k not in _FL89['not_angled']: _ang89.append(f"{_m.get('bn')} | {_m['n']}")
         if _flat89: F.append(f"[89] {len(_flat89)} mat photos with white bands (trim in config/fym-mat-white-oct26.json): " + '; '.join(_flat89[:8]))
         if _ang89: W97.append(f"[89] {len(_ang89)} angled mat photos with white corners (need a perspective flatten): " + '; '.join(_ang89))
     except Exception as _e: F.append(f"[89] white-band check did not run: {_e}")
@@ -1072,6 +1081,34 @@ try:
     if _miss90: W97.append(f"[90] {len(_miss90)} visible FYM mats have no Mat Gallery row: " + '; '.join(_miss90))
     if _stale90: W97.append(f"[90] {len(_stale90)} visible FYM mats are in config/mat-gallery-extra-rows.json but not in the staged gallery page (rebuild + paste): " + '; '.join(_stale90))
 except Exception as _e: F.append(f"[90] gallery sync check did not run: {_e}")
+# ---- v98 (Version 1.2) checks, Oct 26 night (docs/MATCH-INBOX.md) ----
+_pre98 = _v97 is not None and int(_v97.group(1)) < 98 and '/*v98 racks low*/' not in UI
+if not _pre98:
+    # [91] Tiffany 6:19pm: match card racks sat too high on the mat (covered the Heirloom Fire + Fortune horse) with a big gap
+    # between two racks. Mood board card rack block = Main's partner-graphics fix (rh=min(bot-top-lch-30,n*150), ry=bot-rh-lch+20).
+    if "rh=Math.min(bot-top-lch-30,n*150),rx=30,ry=bot-rh-lch+20/*v98 racks low*/;" not in UI: F.append("[91] match card racks are not in the low/tight rack block (v98_card.py)")
+    if "Math.max(2*r+40,n*170)" in UI: F.append("[91] old high rack block (n*170, centred on the tile circle) still in drawCard")
+    # [92] Tiffany 6:04pm + Main 6:01pm: no Mahjong Register rack image shows a stack / infographic of several racks; Mahj Mood
+    # White Wooden Scalloped shows the angled single rack (config/fym-rack-split-oct26.json, v98_racks.py)
+    _C92 = json.load(open(REPO + 'config/fym-rack-split-oct26.json')); _hd92 = json.load(open(os.path.join(B, 'hd', 'index.json'))).get('r', {})
+    for _k in _C92['hide']:
+        if _k in D['racks'] and not D['racks'][_k].get('hid'): F.append(f"[92] {D['racks'][_k]['n']}: stacked-racks entry should be hidden (split into single variants)")
+    for _k, _v in list(_C92['add'].items()) + list(_C92['replace'].items()):
+        _r = D['racks'].get(_k)
+        if not _r or _r.get('hid'): F.append(f"[92] {_v.get('n', _k)}: single-rack entry missing or hidden"); continue
+        if not str(_r.get('im', '')).startswith('rk98') or not str(_hd92.get(_k, '')).startswith('file:r98/') or not os.path.exists(os.path.join(B, _hd92.get(_k, 'x')[5:])): F.append(f"[92] {_r['n']}: does not show its v98 single-rack photo")
+        if bool(_r.get('c')) != bool(_v['c']): F.append(f"[92] {_r['n']}: cutout flag c should be {_v['c']}")
+    for _k, _r in D['racks'].items():
+        if _r.get('bn') == 'Mahjong Register' and not _r.get('hid') and not str(_r.get('im', '')).startswith('rk98') and _k not in _C92['single_ok']:
+            F.append(f"[92] Mahjong Register rack {_r['n']}: photo not checked as ONE rack (add a single-rack cut or list it in single_ok after looking)")
+    # [93] Main 5:40pm + v97 QA: OG Desert Dreams 'Up close' tile strip (set fp/fz) must sit on the jokers + flowers rows, not the
+    # winds + BLANK row (config/fym-plm-band-oct26.json 'strip', v98_plmstrip.py)
+    for _n, (_fx, _fy, _fz) in json.load(open(REPO + 'config/fym-plm-band-oct26.json'))['strip'].items():
+        _s93 = [s_ for s_ in D['sets'] if s_['name'] == _n]
+        if not _s93: F.append(f"[93] set {_n} missing"); continue
+        if _s93[0].get('fp') != [_fx, _fy] or _s93[0].get('fz') != _fz: F.append(f"[93] {_n}: Up close tile strip framing {_s93[0].get('fp')}/{_s93[0].get('fz')} != {[_fx, _fy]}/{_fz} (shows blank tiles)")
+        # the 16:7 strip window must stay below the blank row (ends at y ~.68 in the brand photo)
+        if _fy - (7 / 16) / _fz / 2 < .675: F.append(f"[93] {_n}: strip window reaches up into the blank-tile row")
 if W97:
     print("FYM GATE WARNINGS (v97):")
     for _w in W97: print('  ' + _w)
