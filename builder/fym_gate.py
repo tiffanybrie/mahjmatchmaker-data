@@ -678,6 +678,8 @@ for _s in D['sets']:
 # [58] Oct 25 (Tiffany 21:43): Bam Bird tile sets use the uniform faces|backs split photo (config/fym-bambird-splits-oct25.json)
 for _k in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-bambird-splits-oct25.json')))['splits']:
     if _k in D['tiles'] and not str(D['tiles'][_k].get('full', '')).startswith('t92/'): F.append(f"[58] Bam Bird tile {_k} is not using its split photo")
+# [59] Oct 26 (Tiffany 8:24am): Start with tiles has no default colour chip; every set shows A-Z
+if "S.tcol=tileOrder()[0]" in UI: F.append("[59] tile door pre-selects a colour chip (should open on all sets A-Z, nothing selected)")
 # [46] Oct 25 (Tiffany 16:37): Mood board rack labels sit BELOW the racks (whole rack visible)
 if 'racks(rx,ry,rw,rh,{fs:STORY?23:19,maxRow:rh,rows:true,back:true,below:true})' not in UI:
     F.append("[46] Mood board (tri view) rack labels are not below the racks (below:true)")
