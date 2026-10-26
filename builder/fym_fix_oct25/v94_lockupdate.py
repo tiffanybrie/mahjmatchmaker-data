@@ -7,7 +7,7 @@ LP = R + 'builder/fym_flags/locks.json'; L = json.load(open(LP)); n = 0
 keys = list(json.load(open(R + 'config/fym-cmc-splits-oct26.json'))['splits']) + list(json.load(open(R + 'config/fym-virora-backs-oct26.json'))['splits'])
 for k in keys:
     if k in L['tiles'] and k in D['tiles']:
-        for f in ('full', 'pile'):
+        for f in ('pile',):
             if f in L['tiles'][k] and L['tiles'][k][f] != D['tiles'][k].get(f): L['tiles'][k][f] = D['tiles'][k][f]; n += 1
 if n: L['_changes'].append('2026-10-26: tile photos for CMC (Tiffany 8:43am yes) + Virora grid3 (9:00am yes) -> new full/pile')
 json.dump(L, open(LP, 'w'), indent=1, ensure_ascii=False); print('locks updated', n)

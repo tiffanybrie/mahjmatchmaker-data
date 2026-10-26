@@ -256,19 +256,19 @@
   "hol:nivalee-blue": {
    "set": "Nivalee (Glacier Blue)",
    "src": "assets/tiles/holiday/nivalee-blue.jpg",
-   "full": "t94/virora-nivalee-glacier-blue-grid3.jpg",
+   "full": "t13/2.jpg",
    "pile": "p94g2af69afc4f"
   },
   "hol:tinselle-emerald": {
    "set": "Tinselle (Emerald Green)",
    "src": "assets/tiles/holiday/tinselle-emerald-3x3.jpg",
-   "full": "t94/virora-tinselle-emerald-green-grid3.jpg",
+   "full": "t13/3.jpg",
    "pile": "p94g940d9e8a8d"
   },
   "hol:tinselle-ruby": {
    "set": "Tinselle (Ruby Red)",
    "src": "assets/tiles/holiday/tinselle-ruby-3x3.jpg",
-   "full": "t94/virora-ruby-christmas-grid3.jpg",
+   "full": "t13/4.jpg",
    "pile": "p94gad1eb5b6f3"
   },
   "hol:nutcracker-ballet": {
@@ -280,7 +280,7 @@
   "hol:cmc-apres-ski": {
    "set": "Après Ski Club",
    "src": "assets/tiles/holiday/cmc-apres-ski.jpg",
-   "full": "t94/cmc-apres-ski-edition-tile-set.jpg",
+   "full": "t13/5.jpg",
    "pile": "pc94fffdb92ef0"
   },
   "shop.andersruff.com/brownstone-bloom-mahjong-tile-set": {
@@ -305,7 +305,7 @@
    "set": "Hummingbird",
    "src": "assets/tiles/album/hummingbird.png",
    "full": "t16/sunday-mahjong-hummingbird.jpg",
-   "pile": "944e592445"
+   "pile": "p953c390fb35e"
   },
   "sundaymahjong.com/sunday-tile-set-1": {
    "set": "Sunday",
@@ -328,7 +328,7 @@
   "www.viroramahjong.com/petalee": {
    "set": "Petalée",
    "src": "assets/tiles/album/petalee-pile.jpg",
-   "full": "t94/virora-petalee-grid3.jpg",
+   "full": "t16/virora-mahjong-petal-e.jpg",
    "pile": "p94g4dfca99656"
   },
   "sundaymahjong.com/sunday-blues-tile-set": {
@@ -25654,6 +25654,7 @@
   "2026-10-25: sets m rack lists = her per-mat album racks (tile-level racks moved to D.ltc), Tiffany 17:10 Birdie + Luna",
   "2026-10-25: sets m rack lists = her per-mat album racks (tile-level racks moved to D.ltc), Tiffany 17:10 Birdie + Luna",
   "2026-10-25: sets m rack lists = her per-mat album racks (tile-level racks moved to D.ltc), Tiffany 17:10 Birdie + Luna",
-  "2026-10-26: tile photos for CMC (Tiffany 8:43am yes) + Virora grid3 (9:00am yes) -> new full/pile"
+  "2026-10-26: tile photos for CMC (Tiffany 8:43am yes) + Virora grid3 (9:00am yes) -> new full/pile",
+  "2026-10-26: locks keep the ORIGINAL photo in full (gate reads t.fo); piles updated for approved CMC/Virora/Hummingbird (Tiffany 8:43, 9:00, 9:12)"
  ]
 }
