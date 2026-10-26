@@ -10,6 +10,7 @@ python3 $H/v94_mstudios.py "$D" | tail -1
 python3 $H/v94_pullbrands.py "$D"
 python3 $H/v94_ymi.py "$D" | tail -2
 python3 $H/v94_bespoketiles.py "$D" | tail -2
+python3 $H/v94_bambirdtortoise.py "$D" | tail -2
 python3 $H/v94_partneradds.py "$D" | tail -2
 python3 $H/v94_virora_grid3.py "$D" | tail -2
 python3 $H/v94_tilezoom.py "$D" | tail -2
