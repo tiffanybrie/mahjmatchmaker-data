@@ -509,3 +509,4 @@ Each is asked once. Until she answers, follow the default given here.
 - 2026-10-23 08:47 (Tiffany, RTS note on the FB group description): never write "saves you money"; use "Use our group code MAHJMATCH to save 10% or more at our partner brands".
 
 - 2026-10-25 21:55 (Tiffany): **Full brand names only.** Always write a partner brand's full name exactly as the brand writes it (Bam Bird Boutique, Mahjong Row & Co., My Fair Mahjong). Never shorten or nickname a brand anywhere (graphics, captions, emails, pages): we have no permission to use partial names.
+- 2026-10-26 13:29 (Tiffany): **Social: italic "Your" in Find *Your* Mat-ch™, headlines included** ("It's their turn. It's time to find YOUR match"). Partly supersedes the Oct 21 18:30 no-italic rule for SOCIAL graphics and reels: in a Caprasimo headline, set "Your" in Playfair Display italic (a real italic face, not slanted Caprasimo). Site/app H1s unchanged until she says otherwise.

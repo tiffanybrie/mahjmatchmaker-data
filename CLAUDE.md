@@ -87,7 +87,7 @@ Oct 21, launch morning: the Papaya "It's a match" post, the hotline reel and the
 - **Weekly brand watch (Mondays, part of the desk cleanup):** scan new ShopMy products/brands and partner launches → follow/favorite any new ones, and list the brands' new posts worth a reshare in HQ (link + one line). Reshares are done by her in the app (Instagram has no API for reposting others' posts); Claude preps the list.
 
 ## Naming: Mat-ch vs match (Tiffany, Oct 21 11:26, FINAL)
-- **Find *Your* Mat-ch™** = the proprietary tool. Italic on "Your" (it's THEIR matchmaking tool) ONLY in running body text. **NEVER italic in headlines/display type (Caprasimo etc.): plain "Find Your Mat-ch™" (Tiffany, Oct 21 6:30pm: the italic looks off in the header font).** ™ appears ONLY with this full name, on its most prominent use per piece.
+- **Find *Your* Mat-ch™** = the proprietary tool. Italic on "Your" (it's THEIR matchmaking tool) ONLY in running body text. **SOCIAL (Tiffany Oct 26 1:29pm): "Your" IS italic in social graphics/reels, headlines included ("It's their turn"). In a Caprasimo headline, set "Your" in Playfair Display italic (never fake-slanted Caprasimo, which is what looked off Oct 21).** ™ appears ONLY with this full name, on its most prominent use per piece.
 - **"It's a mat-ch!"** = the middle post of each launch row (tile set + one mat). Mat-ch only where a mat is the match. No ™ here.
 - **Match cards** = the album library (tiles + mat + racks). Always plain "match card", never Mat-ch: they are NOT part of the Find Your Mat-ch tool.
 - Plain "match" in normal sentences and captions.
