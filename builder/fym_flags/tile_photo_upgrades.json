@@ -1639,7 +1639,7 @@
    "name": "2-Color Blue Studio",
    "brand": "Mahjong Studios",
    "tile_key": "mahjongstudios.com/mahjong-studios-american-mahjong-tile-set-166-tiles-2-color-blue-studio-tiles",
-   "status": "coming_soon",
+   "status": "replaced",
    "locked": false,
    "hidden_now": false,
    "current": "t15/49.jpg",
@@ -1654,7 +1654,8 @@
     "fz": 1.9,
     "note": "crop to bottom-right: shows faces + tile-back swatch (verified on contact sheet)"
    },
-   "note": "Oct 26 8:25 Tiffany: bad photo -> Photo coming soon, renamed Blue Studio."
+   "note": "Oct 26 8:25 Tiffany: bad photo -> Photo coming soon, renamed Blue Studio.",
+   "note_oct26_848": "Tiffany Oct 26 8:48: switch to a sharp tile-pile photo if Mahjong Studios has one, else coming soon -> Tile Sets listing image 9 (Studio Tiles), config/fym-mstudios-oct26.json"
   },
   "mahjong-studios-butter-bloom": {
    "name": "Butter Bloom",

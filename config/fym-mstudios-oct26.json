@@ -1,0 +1,137 @@
+{
+ "_about": "Mahjong Studios tile photos, Tiffany Oct 26 8:48am (docs/ANSWERS.md; replaces the 8:42 'all Photo coming soon'). Applied by builder/fym_fix_oct25/v94_mstudios.py, checked by gate [62]. keep = current photo stays; white_bg = same photo, black background cut to white (builder/fym_whitebg.py); pile_photo = switch to Mahjong Studios' own tile-pile photo (faces + back colour) from their 'Tile Sets' (tiles only) listing, black cut to white; soon = Photo coming soon; hide = not shown. Brand sorts last in Shop by brand only if ALL its visible sets are soon.",
+ "sets": {
+  "mahjongstudios.com/christmas-kiss-american-mahjong-tile-set-160-tiles-red-bundle": {
+   "do": "keep",
+   "why": "her keep list"
+  },
+  "mahjongstudios.com/mahjong-studios-american-mahjong-tile-set-green-tiles-forest-silk": {
+   "do": "keep",
+   "why": "her keep list"
+  },
+  "mahjongstudios.com/essential-mahjong-tiles": {
+   "do": "keep",
+   "why": "her keep list"
+  },
+  "mahjongstudios.com/mahjong-studios-lemon-tide-american-mahjong-tile-set-160-tiles": {
+   "do": "keep",
+   "why": "her keep list"
+  },
+  "mahjongstudios.com/glitter-sparkle-mahjong-tiles-american-mahjong-tile-set-166-tiles-pink": {
+   "do": "keep",
+   "why": "her keep list"
+  },
+  "mahjongstudios.com/lunaflor-mahjong-tiles": {
+   "do": "keep",
+   "why": "her keep list (Lunaflor Mint, correct, white bg)"
+  },
+  "mahjongstudios.com/mahjong-studios-american-mahjong-tile-set-green-tiles-sage-luxe": {
+   "do": "keep",
+   "why": "her keep list"
+  },
+  "mahjongstudios.com/teal-lunaflor-mahjong-tiles-160-american-mahjong-tiles": {
+   "do": "keep",
+   "why": "her keep list"
+  },
+  "mahjongstudios.com/mahjong-studios-american-mahjong-tile-set-butter-bloom": {
+   "do": "keep",
+   "why": "she said it looks okay (yellow back tile in frame)"
+  },
+  "mahjongstudios.com/mahjong-tiles-bubble-pop-american-mahjong-tile-set-166-tiles": {
+   "do": "keep",
+   "why": "angled shot, blue back tile shows in the circle"
+  },
+  "mahjongstudios.com/mahjong-tiles-blue-edition-american-mahjong-tile-set-166-tiles-2-color-blue": {
+   "do": "keep",
+   "why": "blue back tile shows in the circle"
+  },
+  "mahjongstudios.com/rose-dragon": {
+   "do": "keep",
+   "why": "pink backs/sides show in the circle"
+  },
+  "mahjongstudios.com/amber-jade-mahjong-tiles": {
+   "do": "keep",
+   "why": "tortoise backs show in the circle"
+  },
+  "mahjongstudios.com/black-mahjong-tiles-neon-shadow": {
+   "do": "keep",
+   "why": "all-black tiles, back = same black; their pile shot is black-on-black (worse). Eyeball."
+  },
+  "mahjongstudios.com/lavender-sparkle": {
+   "do": "white_bg",
+   "img": "assets/tiles/v94/mstudios/lavender-sparkle.jpg",
+   "why": "her call: keep, needs white background"
+  },
+  "mahjongstudios.com/mahjong-studios-peony-garden-american-mahjong-tile-set-160-tiles": {
+   "do": "white_bg",
+   "img": "assets/tiles/v94/mstudios/peony-garden.jpg",
+   "why": "her call: keep, needs white background"
+  },
+  "mahjongstudios.com/royal-sparkle-mahjong-tiles-american-mahjong-tile-set-166-tiles-royal-blue-sparkle": {
+   "do": "white_bg",
+   "img": "assets/tiles/v94/mstudios/royal-sparkle.jpg",
+   "why": "her call: keep, needs white background"
+  },
+  "mahjongstudios.com/ruby-sparkle": {
+   "do": "white_bg",
+   "img": "assets/tiles/v94/mstudios/ruby-sparkle.jpg",
+   "why": "her call: keep, needs white background"
+  },
+  "mahjongstudios.com/mahjong-studios-american-mahjong-tiles-lemon-lime-green-back": {
+   "do": "pile_photo",
+   "img": "assets/tiles/v94/mstudios/american-lemon-lime.jpg",
+   "src": "mahjongstudios.com/products/mahjong-studios-tiles-only image 28 (Lemon Lime)",
+   "why": "faces-only chart, back only in a corner"
+  },
+  "mahjongstudios.com/mahjong-studios-american-mahjong-tile-set-lilac-bloom": {
+   "do": "pile_photo",
+   "img": "assets/tiles/v94/mstudios/lilac-bloom.jpg",
+   "src": "mahjongstudios.com/products/mahjong-studios-tiles-only image 20 (Lilac Bloom)",
+   "why": "faces-only chart, back only in a corner"
+  },
+  "mahjongstudios.com/mahjong-studios-american-mahjong-tile-set-ocean-bloom": {
+   "do": "pile_photo",
+   "img": "assets/tiles/v94/mstudios/ocean-bloom.jpg",
+   "src": "mahjongstudios.com/products/mahjong-studios-tiles-only image 19 (Ocean Bloom)",
+   "why": "faces-only chart, back only in a corner"
+  },
+  "mahjongstudios.com/mahjong-studios-blue-element-american-mahjong-tile-set-166-tiles": {
+   "do": "pile_photo",
+   "img": "assets/tiles/v94/mstudios/blue-element.jpg",
+   "src": "mahjongstudios.com/products/mahjong-studios-tiles-only image 12 (Blue Element)",
+   "why": "faces-only chart, back sits behind"
+  },
+  "mahjongstudios.com/mahjong-studios-american-mahjong-tile-set-166-tiles-2-color-blue-studio-tiles": {
+   "do": "pile_photo",
+   "img": "assets/tiles/v94/mstudios/blue-studio.jpg",
+   "src": "mahjongstudios.com/products/mahjong-studios-tiles-only image 9 (Studio Tiles), used as shot (fills the frame, sharp)",
+   "why": "old chart blurry, back behind; sharp pile replaces Photo coming soon"
+  },
+  "mahjongstudios.com/mahjong-studios-bamboo-sky-tile-set-166-tiles-american-mahjong-set": {
+   "do": "pile_photo",
+   "img": "assets/tiles/v94/mstudios/bamboo-sky.jpg",
+   "src": "mahjongstudios.com/products/mahjong-studios-tiles-only image 29 (Bamboo Sky)",
+   "why": "faces-only chart, back only in a corner"
+  },
+  "mahjongstudios.com/blush-bamboo-mahjong-tiles-american-mahjong-set-166-tiles": {
+   "do": "pile_photo",
+   "img": "assets/tiles/v94/mstudios/blush-bamboo.jpg",
+   "src": "mahjongstudios.com/products/mahjong-studios-tiles-only image 27 (Blush & Bamboo)",
+   "why": "faces-only chart, back only in a corner"
+  },
+  "mahjongstudios.com/mahjong-tiles-white-edit-american-mahjong-tile-set-166-tiles": {
+   "do": "pile_photo",
+   "img": "assets/tiles/v94/mstudios/white-edit.jpg",
+   "src": "mahjongstudios.com/products/mahjong-studios-tiles-only image 13 (White Edit)",
+   "why": "was Photo coming soon (faces-only chart); pile shows the white backs. Eyeball: white on white."
+  },
+  "mahjongstudios.com/mahjong-studios-american-mahjong-tile-set-yellow-lilac-ocean-blue": {
+   "do": "soon",
+   "why": "already hidden (bundle of 3 Bloom sets); stays Photo coming soon"
+  },
+  "mahjongstudios.com/mahjong-studios-tiles-only": {
+   "do": "hide",
+   "why": "'Tiles Only' is Mahjong Studios' no-case listing of all 28 of their sets (variants), not a set of its own; every set is already in FYM. Its hero photo (pink backs) matches no single variant. Hidden as a duplicate; un-hide on her say."
+  }
+ }
+}
