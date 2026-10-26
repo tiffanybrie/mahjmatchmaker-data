@@ -404,3 +404,4 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 - 2026-10-26 5:49pm · Main · Tiffany Amahj partner pick: Garden Stamped × Blue, Citron + Lilac, Bird & Bamboo Glowstick + Mahjong Register Peony Blush Pearl; title pink (never pea/olive green); no white around the mat (flattened photo). Rendered to the review page.
 - 2026-10-26 5:50pm · Main · Tiffany: PLM painted racks need a full cut-out overhaul; mats must fill the card frame (no white). Routed to MATCH-INBOX. 5:52pm she told Matches & Catalog to work the inbox; Main double-checks it gets done.
 - 2026-10-26 5:53pm · Main · Tiffany: search must ignore accents (soiree finds Soirée). Routed to MATCH-INBOX.
+- 2026-10-26 5:54pm · Main · Tiffany: keep the Peace Love Mahjong partner graphic OPEN for her to match later (after the Desert Dreams fix). On DESK 'Waiting on Tiffany'.

@@ -60,6 +60,7 @@ Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27 9am CT, (2) fall conte
 - **Main → Tiffany at 4am (Oct 26):** (1) launch explainer reel draft in Planoly (undated, her yes + song); (2) [DONE 12:23pm: Planoly IG relinked through Facebook]; (3) partner email subject uses "sneak peek" (brief 00d says never) → propose "Partner brands: a first look at Find Your Mat-ch™"; (4) /links paste waits on Chrome (OPS item above); (5) docs/MAHJ-CLOSET-LAUNCH-STUDY.md gap list (founder-story post needs her).
 
 ## Waiting on Tiffany (only things she can answer now)
+- **OPEN for Tiffany (Oct 26 5:54pm): Peace Love Mahjong partner graphic — she picks the tiles/mat/racks herself AFTER Desert Dreams' tile view is fixed (MATCH-INBOX). Main: once the fix is live, tell her it's ready to match; then render to the partner review page.** Also still to pick: Bam Bird Boutique, My Fair Mahjong (Jubilee previews A–D on the review page), Tigre de Tartán, smaller brands.
 **On HQ Today, in this order:**
 1. **Partner sneak-peek email: OK the copy** (https://claude.ai/artifact/HmkAekNUvjUfnhuToPbR9T) so Ops builds it as a Squarespace draft Monday morning; she sends it after one final read.
 2. **Brownstone Bloom: put the 40 cards in order and Save** (order page). The note box also asks: Bam Bird Walnut racks too, or only Anders Ruff Tortoise?
