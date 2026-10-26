@@ -10,6 +10,9 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 
 **Repo note:** this checkout (/home/claude/mahjmatchmaker-data) is now on `partner-catalogs-sqsp` (shallow fetch, depth 60; the full fetch of this 3.2 GB repo times out at 2 min, so use `git fetch --depth=60`). The old untracked files from the Oct 24 note were not touched.
 
+
+- **WAITING ON TIFFANY (Matches & Catalog, Oct 26 ~7pm): late partner holiday mats → which holiday albums.** Shortlist + sheet: docs/holiday-late-mats-shortlist-oct26.md, assets/qa/holiday-late-oct26/ (combined sheet sent in chat). Her yeses → set m + NEW-ALBUM-CHECKLIST holiday steps.
+
 ## Tomorrow's top priorities (Mon Oct 26), in order
 Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27 9am CT, (2) fall content before it expires (Brownstone Bloom this week, before Halloween), then holiday (November, through Find Your Mat-ch). The order is clear; no "Set tomorrow's order" question.
 
