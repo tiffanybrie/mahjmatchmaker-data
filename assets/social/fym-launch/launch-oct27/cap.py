@@ -30,4 +30,8 @@ with sync_playwright() as p:
     pg.evaluate("()=>{const b=[...document.querySelectorAll('button')].find(b=>b.offsetParent&&b.innerText.trim()=='Mood board');window.scrollTo(0,b.getBoundingClientRect().top+scrollY-75)}"); pg.wait_for_timeout(2500)
     print('card',ok,pg.evaluate("S.rpick"))
     pg.screenshot(path=OUT+'_card.png')
+    du=pg.evaluate("()=>{const c=[...document.querySelectorAll('canvas')].filter(c=>c.width>600).sort((a,b)=>b.width*b.height-a.width*a.height)[0];if(c)return c.toDataURL('image/png');const im=[...document.querySelectorAll('img')].filter(i=>i.naturalWidth>800&&i.offsetParent).sort((a,b)=>b.naturalWidth-a.naturalWidth)[0];return im?im.src:''}")
+    import base64
+    if du.startswith('data:'): open(OUT+'_cardonly.png','wb').write(base64.b64decode(du.split(',',1)[1])); print('cardonly ok')
+    else: print('cardonly MISSING',du[:80])
     b.close()

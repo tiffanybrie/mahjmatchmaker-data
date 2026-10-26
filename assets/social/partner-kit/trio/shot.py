@@ -27,7 +27,7 @@ with sync_playwright() as p:
         pg.evaluate("""async(ov)=>{const ix=await hdIndex();ix.r=ix.r||{};for(const k in ov){ix.r[k]='file:'+ov[k];IMG[R[k].im]=ov[k];R[k].c=true;}}""",ov)
     if RK: pg.evaluate("(r)=>{S.rpick=r;S.rliked=r.slice();renderRacks();}",RK); pg.wait_for_timeout(1500)
     import os
-    if not os.environ.get('TCFIX') and not os.environ.get('TCAUTO'): os.environ['TCFIX']=pg.evaluate("()=>set().tc||'#d6247f'")  # Tiffany Oct 26: use the set's assigned colour-card colour, never the contrast-darkened one
+    if not os.environ.get('TCFIX') and not os.environ.get('TCAUTO'): os.environ['TCFIX']=pg.evaluate("()=>{const h=set().tc||'#d6247f';let r=parseInt(h.slice(1,3),16)/255,g=parseInt(h.slice(3,5),16)/255,b=parseInt(h.slice(5,7),16)/255;const mx=Math.max(r,g,b),mn=Math.min(r,g,b);let H=0,S=0,L=(mx+mn)/2;if(mx!==mn){const d=mx-mn;S=L>.5?d/(2-mx-mn):d/(mx+mn);H=(mx===r?(g-b)/d+(g<b?6:0):mx===g?(b-r)/d+2:(r-g)/d+4)/6;}if(L<=.62)return h;/* same hue + saturation, only darker so a pale colour-card colour stays readable */return `hsl(${Math.round(H*360)},${Math.round(Math.max(S,.35)*100)}%,50%)`;}")  # Tiffany Oct 26: use the set's assigned colour-card colour, never the contrast-darkened one
     if os.environ.get('TCFIX'): print('tcfix',pg.evaluate("""(c)=>{const src=drawCard.toString();const i=src.indexOf('const tc=(()=>');const j=src.indexOf('})();',i)+5;const ns=src.slice(0,i)+"const tc='"+c+"';"+src.slice(j);window.drawCard=(0,eval)('('+ns+')');try{drawCard=window.drawCard}catch(e){};return i>0}""",os.environ['TCFIX']))
     if os.environ.get('SRCPATCH'):
         for pr in os.environ['SRCPATCH'].split(';;'):
