@@ -22,6 +22,9 @@ with sync_playwright() as p:
     if RK: pg.evaluate("(r)=>{S.rpick=r;S.rliked=r.slice();renderRacks();}",RK); pg.wait_for_timeout(1500)
     import os
     if os.environ.get('TCFIX'): print('tcfix',pg.evaluate("""(c)=>{const src=drawCard.toString();const i=src.indexOf('const tc=(()=>');const j=src.indexOf('})();',i)+5;const ns=src.slice(0,i)+"const tc='"+c+"';"+src.slice(j);window.drawCard=(0,eval)('('+ns+')');try{drawCard=window.drawCard}catch(e){};return i>0}""",os.environ['TCFIX']))
+    if os.environ.get('SRCPATCH'):
+        for pr in os.environ['SRCPATCH'].split(';;'):
+            o_,n_=pr.split('|||'); print('patch',pg.evaluate("""([o,n])=>{const src=drawCard.toString();if(!src.includes(o))return false;window.drawCard=(0,eval)('('+src.split(o).join(n)+')');try{drawCard=window.drawCard}catch(e){};return true}""",[o_,n_]))
     Z=float(os.environ.get('TZOOM','0') or 0)
     if Z>1: pg.evaluate("""async(z)=>{const s=set();const t=T[s.tile];const u=(t.cf&&!t.soon?t.cf:null)||(await tileFull(s))||pile(s);const im=await lk(u);const c=document.createElement('canvas');const w=im.width/z,h=im.height/z;c.width=w;c.height=h;c.getContext('2d').drawImage(im,(im.width-w)/2,(im.height-h)/2,w,h,0,0,w,h);t.cf=c.toDataURL('image/jpeg',.92);}""",Z); pg.wait_for_timeout(800)
     pg.evaluate("()=>{window.codeLine=()=>'';try{codeLine=()=>''}catch(e){}}")
