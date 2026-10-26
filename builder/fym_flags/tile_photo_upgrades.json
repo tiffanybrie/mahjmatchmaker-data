@@ -1639,7 +1639,7 @@
    "name": "2-Color Blue Studio",
    "brand": "Mahjong Studios",
    "tile_key": "mahjongstudios.com/mahjong-studios-american-mahjong-tile-set-166-tiles-2-color-blue-studio-tiles",
-   "status": "ok",
+   "status": "coming_soon",
    "locked": false,
    "hidden_now": false,
    "current": "t15/49.jpg",
@@ -1653,7 +1653,8 @@
     ],
     "fz": 1.9,
     "note": "crop to bottom-right: shows faces + tile-back swatch (verified on contact sheet)"
-   }
+   },
+   "note": "Oct 26 8:25 Tiffany: bad photo -> Photo coming soon, renamed Blue Studio."
   },
   "mahjong-studios-butter-bloom": {
    "name": "Butter Bloom",
@@ -1935,13 +1936,14 @@
    "name": "White Edit",
    "brand": "Mahjong Studios",
    "tile_key": "mahjongstudios.com/mahjong-tiles-white-edit-american-mahjong-tile-set-166-tiles",
-   "status": "coming_soon",
+   "status": "replaced",
    "locked": false,
    "hidden_now": false,
    "current": "t15/43.jpg",
    "reason": "faces only, no back/pile; others on mat",
    "product_url": "https://mahjongstudios.com/products/mahjong-tiles-white-edit-american-mahjong-tile-set-166-tiles",
-   "frame": null
+   "frame": null,
+   "note_oct26": "Tiffany Oct 26 8:48: pile photo from Mahjong Studios' Tile Sets listing (config/fym-mstudios-oct26.json) replaces Photo coming soon"
   },
   "mahjong-studios-rose-dragon": {
    "name": "Rose Dragon",
