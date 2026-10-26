@@ -738,6 +738,22 @@ try:
         _ys, _xs = _np70.where(_m)
         if len(_xs) and (_ys.max() - _ys.min() + 1) >= 1.3 * (_xs.max() - _xs.min() + 1): F.append(f"[70] rack photo is portrait (racks standing up): {_n}")
 except Exception as _e: F.append(f"[70] portrait rack check did not run: {_e}")
+# [72] Oct 26 card sweep (docs/FYM-CARD-SWEEP-oct26.md): title contrast >= 3.5:1 on cream, subtitle fits the mat column (no '…'),
+# Photo coming soon text fits the circle, rack label never the generic 'Racks', long mat names have a display name
+for _need, _msg in (("/* v95 contrast */", "title colour is not darkened for contrast"), ("/* v95 subtitle fits the mat column */", "subtitle can overrun the mat / be cut with '…'"),
+                    ("/* v95 fit circle */", "Photo coming soon text can be clipped by the circle"), ("/* v95 no generic Racks */", "rack label can fall back to just 'Racks'")):
+    if _need not in UI: F.append("[72] " + _msg)
+for _k, _v in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-mat-display-names-oct26.json')))['dn'].items():
+    if _k in D['mats'] and D['mats'][_k].get('dn') != _v: F.append(f"[72] mat {_k} is missing its short display name")
+for _k, _m in D['mats'].items():
+    if not _m.get('hid') and (_m['n'].endswith(' P') or _m['n'].endswith(' LT')): F.append(f"[72] mat name looks cut short: {_m['n']}")
+# [73] Oct 26 (card sweep): racks whose photo was a stack drew TINY on cards -> one real rack each (config/fym-rack-size-oct26.json,
+# builder/fym_fix_oct25/v95_racksize.py); 'hide' entries stay hidden
+_c73 = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-rack-size-oct26.json')))
+for _k in _c73['racks']:
+    if _k in D['racks'] and not D['racks'][_k].get('hid') and not str(D['racks'][_k].get('im', '')).endswith('s95'): F.append(f"[73] {D['racks'][_k]['n']}: still shows its stacked-racks photo (draws tiny on cards)")
+for _k in _c73.get('hide', {}):
+    if _k in D['racks'] and not D['racks'][_k].get('hid'): F.append(f"[73] {D['racks'][_k]['n']}: should be hidden (no usable single-rack photo)")
 # [67] Oct 26 (Tiffany 9:23/9:24am): Mahjong Studios + Splash of Color pulled from FYM; only Splash mats on her own matches stay
 _k67 = {x[0] for s_ in D['sets'] for x in s_.get('m', [])}
 for s_ in D['sets']:
