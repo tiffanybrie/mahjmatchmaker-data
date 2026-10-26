@@ -704,7 +704,7 @@ for _k in sorted(_vt65):
 # [66] Oct 26 (Tiffany 9:03-9:05am): PLM + My Fair Mahjong tile photos fill the match-card circle (no white background
 # showing): outer ring of the centred square crop of t.full has <3% pure-white pixels (config/fym-tilezoom-oct26.json)
 _zc = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-tilezoom-oct26.json')))['tiles']
-_zk = set(_zc) | {s['tile'] for s in D['sets'] if vis(s) and s['tile'].startswith('peacelovemahjong.com/')}
+_zk = set(_zc) | {s['tile'] for s in D['sets'] if vis(s) and s['tile'].startswith(('peacelovemahjong.com/', 'myfairmahjong.com/'))}
 for _k in sorted(_zk):
     _t = T.get(_k)
     if not _t or _t.get('soon') or not _t.get('full'): continue

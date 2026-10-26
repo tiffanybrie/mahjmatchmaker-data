@@ -15,9 +15,12 @@ for k, v in cfg.items():
     fn = 't94/' + os.path.basename(v['img'])
     if t.get('full') == fn: continue
     im = Image.open(REPO + v['img']).convert('RGB'); im.save(B + '/' + fn, quality=88)
-    sq = im.resize((360, 360), Image.LANCZOS); b = io.BytesIO(); sq.save(b, 'JPEG', quality=84)
+    sp = v.get('kind') == 'split'  # 1600x700 faces | flat back | faces (MFM sets whose back is another colour, Tiffany 9:08am)
+    sq = (im.crop((450, 0, 1150, 700)) if sp else im).resize((360, 360), Image.LANCZOS); b = io.BytesIO(); sq.save(b, 'JPEG', quality=84)
     pk = 'pz94' + hashlib.md5(fn.encode()).hexdigest()[:10]; IMG[pk] = 'data:image/jpeg;base64,' + base64.b64encode(b.getvalue()).decode()
-    t.setdefault('fo', t.get('full')); t['full'] = fn; t['pile'] = pk; t['bf'] = [.5, .5]; t.pop('split', None)
+    t.setdefault('fo', t.get('full')); t['full'] = fn; t['pile'] = pk; t['bf'] = [.5, .5]
+    if sp: t['split'] = 1
+    else: t.pop('split', None)
     print('zoom', t['n'], '->', fn)
 h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]
 if IMG:
