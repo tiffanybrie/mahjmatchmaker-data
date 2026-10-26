@@ -1,0 +1,9 @@
+{"_note": "Card sweep Oct 26 (docs/FYM-CARD-SWEEP-oct26.md): these racks drew TINY on match cards because their photos were stacks/angled sets. Each now shows ONE real rack cropped from the brand's own listing photo (crop/rotate/background only). Runs after v95_rackrotate.py. Mac + Miller Heirloom Ivory: every listing photo shows 4 racks on a busy mat with a watermark, no clean single rack -> hidden + on Tiffany's Questionable list until Mac + Miller sends a photo.",
+ "racks": {
+  "www.bespokemahjong.com/the-ultimate-rack-bright-white": {"img": "assets/racks/v95/size/bespoke-ultimate-bright-white-single.webp", "src": "bespokemahjong.com the-ultimate-rack-bright-white img 0 (on black): front rack of the stack, rotated -15.5deg, black keyed out"},
+  "www.bespokemahjong.com/the-ultimate-rack-clear": {"img": "assets/racks/v95/size/bespoke-ultimate-crystal-clear-single.webp", "src": "bespokemahjong.com the-ultimate-rack-clear img 0: bottom (front) rack of the stack cropped on its white background (clear acrylic can't be cut out cleanly; CLAUDE.md 6b)"},
+  "mahjongrowandco.com/white-rack-pusher-set": {"img": "assets/racks/v95/size/mahjong-row-white-single.webp", "src": "mahjongrowandco.com white-rack-pusher-set img 0 (5773px): top rack of the 4, rotated -25deg, cropped on its white background"}
+ },
+ "hide": {
+  "www.macandmillermahjong.com/heirloom-ivory-classic-straight-mahjong-racks-velvet-rack-bag-copy": "every listing photo is 4 racks on a busy Mardi Gras mat with a watermark; no clean single rack"
+ }}
