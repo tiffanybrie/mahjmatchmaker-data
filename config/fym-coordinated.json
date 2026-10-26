@@ -1,6 +1,430 @@
 {
- "_why": "Tiffany Oct 25 20:24: a brand's own coordinated mats come FIRST for its tile set (own colourway first). Applied to s.cr and s.rank by builder/fym_fix_oct25/v92_coordinated.py; gate [57].",
- "bam-bird-boutique-deco": ["www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098315061", "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098347829", "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098282293"],
- "bam-bird-boutique-deco-mulberry": ["www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098347829", "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098315061", "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098282293"],
- "bam-bird-boutique-deco-indigo": ["www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098282293", "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098315061", "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098347829"]
+ "_why": "Tiffany Oct 25 20:24: a brand's own coordinated mats come FIRST for its tile set (own colourway first). Applied to s.cr and s.rank by builder/fym_fix_oct25/v92_coordinated.py; gate [57]. Oct 26 (Tiffany 11:31am, CMC Country Club): extended to every brand's true pairs (brand site says the mat is designed for / pairs with that tile set, or tiles+mat are one same-named collection); _src = reason per set.",
+ "_src": {
+  "charleston-mahjong-club-the-country-club-edition": "CMC: The Club Mat is made 'for our Club-themed Mahjong sets'; pink/white stripe + green trim = Country Club pink & green tiles, then the blue/green stripe",
+  "charleston-mahjong-club-yacht-club-edition": "CMC: The Club Mat (for 'our Club-themed sets'), navy/green colourway for the deep-blue Yacht Club",
+  "charleston-mahjong-club-hunt-club-edition": "CMC site: Hunt Club mat 'designed to pair perfectly with our Hunt Club Tile Set'",
+  "charleston-mahjong-club-cocktail-club-2-0-edition": "CMC site: Cocktail Club mat 'designed to pair with our Cocktail Club Tile Set' (light purple border = 2.0 purple)",
+  "cmc-apres-ski": "CMC: Ski Club mats made for the Apres Ski Club tiles (center colour 'complimentary to the tiles')",
+  "amahj-on-the-water-signature": "Amahj site: 'designed to complement our Signature On The Water tiles'",
+  "amahj-round-top-stamped": "Amahj site: 'designed to complement our Stamped Round Top tiles'",
+  "amahj-teal-coastal-signature": "Amahj site: 'We love this paired with our Coastal Sets'",
+  "amahj-pink-coastal-signature": "Amahj site: 'We love this paired with our Coastal Sets'",
+  "anders-ruff-mahj-in-bloom": "Anders Ruff: Mahj in Bloom Collection mats",
+  "anders-ruff-brownstone-bloom": "Anders Ruff: Brownstone Bloom collection mat",
+  "anders-ruff-eau-de-mahj": "Anders Ruff: Eau De Mahj Collection mats",
+  "anders-ruff-house-of-hydrangea": "Anders Ruff: House of Hydrangea Collection mats",
+  "anders-ruff-bams-bubbly": "Anders Ruff: Bams & Bubbly Collection mats ('a nod to the tile set it was designed to complement')",
+  "anders-ruff-green-light-gatsby": "Anders Ruff: Green Light Gatsby Collection mats + Heritage Tartan ('Pair it with our Green Light Gatsby Collection')",
+  "bam-bird-boutique-mcm": "Bam Bird: MCM mats 'designed to perfectly complement our MCM Tile Set'; navy-centre/olive-border first for Navy/Olive",
+  "bam-bird-boutique-mcm-olive-pink": "Bam Bird: MCM mats for the MCM set; pink-centre/olive-border first for Olive/Pink",
+  "bam-bird-boutique-boots-bubbles": "Bam Bird: Boots & Bubbles limited Mother's Day mat made with the Boots & Bubbles tiles; blue first for Blue Swirl",
+  "bam-bird-boutique-boots-and-bubbles-pink-swirl": "Bam Bird: Boots & Bubbles mat; green with pink boots first for Pink Swirl",
+  "bam-bird-boutique-classic-mahjong-tile-set": "Bam Bird: Classic mat in the Classic tiles' own colourway (Rose = Pink)",
+  "bam-bird-boutique-classic-lavender": "Bam Bird: Classic mat, own colourway",
+  "bam-bird-boutique-classic-teal": "Bam Bird: Classic mat, own colourway",
+  "holly-jolly-red": "Bam!: Holly Jolly Christmas mat, same holiday collection",
+  "holly-jolly-green": "Bam!: Holly Jolly Christmas mat, same holiday collection",
+  "holly-jolly-pink": "Bam!: Holly Jolly Christmas mat, same holiday collection",
+  "bam-let-s-mahjong-art-deco": "Bam! site: 'designed to pair perfectly with our Art Deco Tile Collection'",
+  "bam-let-s-mahjong-hocus-pocus-halloween": "Bam! site: Gingham 'designed to pair with our Hocus Pocus Tile Collection'; Pumpkin Patch 'pair it with our Hocus Pocus tiles'",
+  "bam-let-s-mahjong-the-nantucket-coastal-blue": "Bam! site: Nantucket mat for the Nantucket collection; Cottage Bloom 'pairs beautifully with our Nantucket'",
+  "bam-let-s-mahjong-the-nantucket-seaside-blue": "Bam! site: Nantucket mat for the Nantucket collection; Cottage Bloom 'pairs beautifully with our Nantucket'",
+  "bam-let-s-mahjong-mint-and-roses": "Bam! site: 'designed to coordinate with our Mint & Roses Tile Collection'",
+  "bam-let-s-mahjong-the-palm-royale-lemon-drop": "Bam! site: Palm Court 'designed to pair with our Palm Royale Tile Collection'; Posy Pop 'especially our Palm Royale tiles'",
+  "bam-let-s-mahjong-the-palm-royale-tangerine-twist": "Bam! site: Palm Court 'designed to pair with our Palm Royale Tile Collection'; Posy Pop 'especially our Palm Royale tiles'",
+  "bam-let-s-mahjong-the-palm-royale-strawberry-sangria": "Bam! site: Palm Court 'designed to pair with our Palm Royale Tile Collection'; Posy Pop 'especially our Palm Royale tiles'",
+  "bam-let-s-mahjong-grandmillennial-pink": "Bam! site: Grandmillennial mat for the Grandmillennial collection",
+  "bam-let-s-mahjong-grandmillennial-green": "Bam! site: Grandmillennial mat; Birdsong 'pairs with our Grandmillennial ... in Green'",
+  "bam-let-s-mahjong-grandmillennial-blue": "Bam! site: Grandmillennial mat; Cottage Bloom 'our Grandmillennial ... in Blue'",
+  "bam-let-s-mahjong-garden-party-sky-blue": "Bam! site: Garden Party Sky Blue mat for 'Garden Party Baby Blue'; Garden Party mat for the collection",
+  "bam-let-s-mahjong-garden-party-lavender-bloom": "Bam! site: Sky Blue mat 'and our Garden Party ... in Lavender'; Secret Garden 'Garden Party Lilac Mist'",
+  "bam-let-s-mahjong-garden-party-petal-pink": "Bam! site: Garden Party mat 'designed to pair perfectly with our Garden Party Tile Collection'",
+  "bam-let-s-mahjong-garden-party-sea-glass-green": "Bam! site: Garden Party mat 'designed to pair perfectly with our Garden Party Tile Collection'",
+  "bespoke-mahjong-bespoke-x-gray-malin-beach-club": "Bespoke x Gray Malin Beach Club double-sided mat (same Beach Club collab)",
+  "bespoke-mahjong-lucky-charms-marshmallow-pink": "Bespoke site: Lucky Charms mats 'designed to coordinate with the Lucky Charms mahjong tiles'",
+  "bespoke-mahjong-garden-glow-matcha-pearl": "Bespoke site: Garden Glow mats 'Coordinate with The Garden Glow - Matcha Pearl tiles'",
+  "bespoke-mahjong-year-of-the-horse-saddle-pink": "Bespoke site: Year of the Horse mats 'especially the Bespoke Year of the Horse tiles'; pink first for Saddle Pink",
+  "bespoke-mahjong-year-of-the-horse-pearl-cream": "Bespoke site: Year of the Horse mats for the Year of the Horse tiles",
+  "bespoke-mahjong-springtime-safari-petal-pink": "Bespoke site: Springtime Safari Collection mats; pink first for Petal Pink",
+  "bespoke-mahjong-springtime-safari-sky-blue": "Bespoke site: Springtime Safari Collection mats; sky blue first for Sky Blue",
+  "bespoke-mahjong-corey-paige-color-crush-pearl-crush": "Bespoke site: Color Crush mat 'packed with icons from the Color Crush tile set'",
+  "bespoke-mahjong-corey-paige-color-crush-bright-white": "Bespoke site: Color Crush mat 'packed with icons from the Color Crush tile set'",
+  "bespoke-mahjong-grateful-dead-rose-pink-tie-dye-pearl": "Bespoke x Grateful Dead collab: tiles + mats are one collection",
+  "bespoke-mahjong-grateful-dead-sunshine-daydream-tie-dye-pearl": "Bespoke x Grateful Dead collab: tiles + mats are one collection",
+  "bespoke-mahjong-grateful-dead-stealie-blue-tie-dye-pearl": "Bespoke x Grateful Dead collab: tiles + mats are one collection",
+  "rackin-rudolph": "Hip Hip: same-named tile set + mat, one design",
+  "hip-hip-mahjong-so-bam-grateful": "Hip Hip: same-named tile set + mat, one design",
+  "hip-hip-mahjong-hoppy-east-hare": "Hip Hip: same-named tile set + mat, one design",
+  "hip-hip-mahjong-mahj-o-ween": "Hip Hip: same-named tile set + mat, one design",
+  "hip-hip-mahjong-birthday": "Hip Hip: same-named tile set + mat, one design",
+  "hip-hip-mahjong-i-mahj": "Hip Hip: same-named tile set + mat, one design",
+  "hip-hip-mahjong-let-freedom-ring": "Hip Hip: Let Freedom Ring collection; Freedom Isn't Free 'pairing with our Let Freedom Ring tiles'",
+  "mac-miller-mahjong-heirloom-collection-fire-fortune-ember-fire": "Mac + Miller: Fire + Fortune mat; Chinoiserie Classic 'perfect for Verdant Fortune and Ember Fire tile sets'",
+  "mac-miller-mahjong-heirloom-collection-fire-fortune-verdant-fortune": "Mac + Miller: Fire + Fortune mat; Chinoiserie Classic 'perfect for Verdant Fortune and Ember Fire tile sets'",
+  "mac-miller-mahjong-laissez-les-bons-temps-rouler-collection": "Mac + Miller: Laissez collection mat + 'Pair it with our Laissez Les Bons Temps Rouler Tile Set'",
+  "mahj-mood-the-eloise-collection": "Mahj Mood site: 'to coordinate beautifully with our Eloise tiles'",
+  "mahj-squad-blue-chinoiserie": "Mahj Squad: Chinoiserie collection, same-named set + mat",
+  "mahj-squad-palm-springs": "Mahj Squad: Palm Springs collection, same-named set + mat",
+  "miss-mahjong-miss-darling-cameo-blue": "Miss Mahjong site: Lattice 'designed to complement the Miss Darling Mahjong Tile Set'",
+  "miss-mahjong-miss-cowgirl": "Miss Mahjong site: Lasso 'designed to perfectly pair with our Pink Miss Cowgirl tiles'",
+  "my-fair-mahjong-style-of-your-life-series-pearl-green": "My Fair Mahjong site: Parquet Petal 'specifically designed to coordinate with' Style of Your Life",
+  "my-fair-mahjong-motor-city-series": "My Fair Mahjong site: 'designed to pair perfectly with our Motor City Tile Set'",
+  "my-fair-mahjong-florida-series": "My Fair Mahjong site: Tropical Palm 'especially at home alongside our Florida Series'",
+  "sunday-mahjong-plum-panda": "Sunday site: 'designed to pair seamlessly with our Plum Panda tile set'",
+  "sunday-mahjong-sunday": "Sunday site: Sunday mat 'palette is matched to the tiles' (Sunday set's crane/bam art)",
+  "royal-mahjong-society-heirloom-collection-crown-jewels": "RMS site: Crown Jewels mat designed to coordinate with the Crown Jewels tiles (Heirloom + Studio)",
+  "royal-mahjong-society-studio-series-crown-jewels": "RMS site: Crown Jewels mat designed to coordinate with the Crown Jewels tiles (Heirloom + Studio)",
+  "royal-mahjong-society-heirloom-collection-shore": "RMS site: Shore mat designed to coordinate with the Shore tiles (Heirloom + Studio)",
+  "royal-mahjong-society-heirloom-collection-mahj-royale": "RMS site: Mahj Royale mat designed to coordinate with the Mahj Royale tiles (Heirloom + Studio)",
+  "royal-mahjong-society-heirloom-collection-cottage": "RMS site: Cottage mat designed to coordinate with the Cottage tiles (Heirloom + Studio)",
+  "royal-mahjong-society-studio-series-cottage": "RMS site: Cottage mat designed to coordinate with the Cottage tiles (Heirloom + Studio)",
+  "royal-mahjong-society-heirloom-collection-girly": "RMS site: Girly mat designed to coordinate with the Girly tiles (Heirloom + Studio)",
+  "royal-mahjong-society-studio-series-girly": "RMS site: Girly mat designed to coordinate with the Girly tiles (Heirloom + Studio)",
+  "royal-mahjong-society-heirloom-collection-island": "RMS site: Island mat designed to coordinate with the Island tiles (Heirloom + Studio)",
+  "royal-mahjong-society-studio-series-island": "RMS site: Island mat designed to coordinate with the Island tiles (Heirloom + Studio)",
+  "royal-mahjong-society-heirloom-collection-newport": "RMS site: Newport mat designed to coordinate with the Newport tiles (Heirloom + Studio)",
+  "royal-mahjong-society-studio-series-newport": "RMS site: Newport mat designed to coordinate with the Newport tiles (Heirloom + Studio)",
+  "bam-bird-boutique-deco": "Bam Bird: Deco Dragon mats made for the Deco tiles (Tiffany Oct 25 20:24)",
+  "bam-bird-boutique-deco-mulberry": "Bam Bird: Deco Dragon mats made for the Deco tiles (Tiffany Oct 25 20:24)",
+  "bam-bird-boutique-deco-indigo": "Bam Bird: Deco Dragon mats made for the Deco tiles (Tiffany Oct 25 20:24)"
+ },
+ "_skipped": {
+  "bespoke-mahjong-the-chalet-*": "Bespoke says The Chalet Mat coordinates with the Chalet tiles, but the mat is tagged Holiday and the Chalet tiles are not: holiday rule wins until Tiffany says (could go on works_for_holiday/also_year_round)",
+  "hip-hip-mahjong-the-house": "The House mat is tagged holiday in the build (looks year-round: leopard + palms + pink bows); left out until that tag is checked",
+  "_not_pairs": "OMM (mats are generic 'pairs with a wide range'; same-named ones are retired), Mahj Mood (all mats say 'pairs with our Mahj Mood tiles' generically, except Eloise), PLM, Mahjong Row & Co., Tala, Bam Bird East Meets West/Origami (solid generic mats), Anders Ruff Dear Santa, Bespoke Pop Diva (its mats are hidden) and Gray Malin Getaway Dogs (only its holiday mat is visible)"
+ },
+ "bam-bird-boutique-deco": [
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098315061",
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098347829",
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098282293"
+ ],
+ "bam-bird-boutique-deco-mulberry": [
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098347829",
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098315061",
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098282293"
+ ],
+ "bam-bird-boutique-deco-indigo": [
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098282293",
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098315061",
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098347829"
+ ],
+ "charleston-mahjong-club-the-country-club-edition": [
+  "www.charlestonmahjongclub.com/neoprene-club-mat-w-matching-bag-2-color-options",
+  "www.charlestonmahjongclub.com/the-club-mat-2-color-options-copy"
+ ],
+ "charleston-mahjong-club-yacht-club-edition": [
+  "www.charlestonmahjongclub.com/the-club-mat-2-color-options-copy"
+ ],
+ "charleston-mahjong-club-hunt-club-edition": [
+  "charlestonmahjongclub.com/the-hunt-club-neoprene-mat-toile-w-carrying-bag"
+ ],
+ "charleston-mahjong-club-cocktail-club-2-0-edition": [
+  "www.charlestonmahjongclub.com/cocktail-club-neoprene-mat-w-carrying-bag"
+ ],
+ "cmc-apres-ski": [
+  "www.charlestonmahjongclub.com/the-ski-club-mat-in-toile-w-matching-bag",
+  "www.charlestonmahjongclub.com/new-ski-mat-with-red-sweater-border-and-toilet-pattern"
+ ],
+ "amahj-on-the-water-signature": [
+  "amahjline.com/on-the-water-mahjong-game-mat"
+ ],
+ "amahj-round-top-stamped": [
+  "amahjline.com/round-top-mat"
+ ],
+ "amahj-teal-coastal-signature": [
+  "amahjline.com/pink-teal-squiggle-amahj-game-mat"
+ ],
+ "amahj-pink-coastal-signature": [
+  "amahjline.com/pink-teal-squiggle-amahj-game-mat"
+ ],
+ "anders-ruff-mahj-in-bloom": [
+  "shop.andersruff.com/mahj-in-bloom-mahjong-mat",
+  "shop.andersruff.com/butterflies-blooms-mahjong-mat",
+  "shop.andersruff.com/botanical-garden-mahjong-mat"
+ ],
+ "anders-ruff-brownstone-bloom": [
+  "shop.andersruff.com/brownstone-bloom-mahjong-mat"
+ ],
+ "anders-ruff-eau-de-mahj": [
+  "shop.andersruff.com/eau-de-mahj-mahjong-mat",
+  "shop.andersruff.com/blushing-blooms-mahjong-mat",
+  "shop.andersruff.com/charming-blooms-mahjong-mat"
+ ],
+ "anders-ruff-house-of-hydrangea": [
+  "shop.andersruff.com/house-of-hydrangea-mahjong-mat",
+  "shop.andersruff.com/garden-hydrangea-mahjong-mat",
+  "shop.andersruff.com/hummingbird-hydrangea-mahjong-mat",
+  "shop.andersruff.com/hamptons-hydrangea-mahjong-mat",
+  "shop.andersruff.com/nantucket-manor-mahjong-mat"
+ ],
+ "anders-ruff-bams-bubbly": [
+  "shop.andersruff.com/bams-bubbly-mahjong-mat",
+  "shop.andersruff.com/press-for-mahjong-mat"
+ ],
+ "anders-ruff-green-light-gatsby": [
+  "shop.andersruff.com/gatsbys-feathered-affair-mahjong-mat",
+  "shop.andersruff.com/midnight-peacock-mahjong-mat",
+  "shop.andersruff.com/heritage-tartan-mahjong-mat"
+ ],
+ "bam-bird-boutique-mcm": [
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy?v=53324523012405",
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy?v=53324522914101",
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy?v=53324522946869",
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy?v=53324522979637",
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy?v=53324522881333"
+ ],
+ "bam-bird-boutique-mcm-olive-pink": [
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy?v=53324522881333",
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy?v=53324522914101",
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy?v=53324523012405",
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy?v=53324522946869",
+  "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy?v=53324522979637"
+ ],
+ "bam-bird-boutique-boots-bubbles": [
+  "www.bambirdboutique.com/boots-bubbles-neoprene-mahjong-mat",
+  "www.bambirdboutique.com/boots-bubbles-neoprene-mahjong-mat?v=52766508056885",
+  "www.bambirdboutique.com/boots-bubbles-neoprene-mahjong-mat?v=67615057051957"
+ ],
+ "bam-bird-boutique-boots-and-bubbles-pink-swirl": [
+  "www.bambirdboutique.com/boots-bubbles-neoprene-mahjong-mat?v=67615057051957",
+  "www.bambirdboutique.com/boots-bubbles-neoprene-mahjong-mat",
+  "www.bambirdboutique.com/boots-bubbles-neoprene-mahjong-mat?v=52766508056885"
+ ],
+ "bam-bird-boutique-classic-mahjong-tile-set": [
+  "www.bambirdboutique.com/classic-neoprene-mahjong-mat-copy"
+ ],
+ "bam-bird-boutique-classic-lavender": [
+  "www.bambirdboutique.com/neoprene-mat"
+ ],
+ "bam-bird-boutique-classic-teal": [
+  "www.bambirdboutique.com/neoprene-mat?v=47539954024757"
+ ],
+ "holly-jolly-red": [
+  "www.bamletsmahjong.com/holly-jolly-mahjong-mat"
+ ],
+ "holly-jolly-green": [
+  "www.bamletsmahjong.com/holly-jolly-mahjong-mat"
+ ],
+ "holly-jolly-pink": [
+  "www.bamletsmahjong.com/holly-jolly-mahjong-mat"
+ ],
+ "bam-let-s-mahjong-art-deco": [
+  "www.bamletsmahjong.com/art-deco-mahjong-mat"
+ ],
+ "bam-let-s-mahjong-hocus-pocus-halloween": [
+  "www.bamletsmahjong.com/black-white-gingham-mahjong-mat-32-5-x-32-5-thick-neoprene-playing-mat",
+  "www.bamletsmahjong.com/pumpkin-patch-mahjong-mat"
+ ],
+ "bam-let-s-mahjong-the-nantucket-coastal-blue": [
+  "www.bamletsmahjong.com/nantucket-mahjong-mat",
+  "www.bamletsmahjong.com/cottage-bloom-mahjong-mat-blue-floral-american-mahjong-mat"
+ ],
+ "bam-let-s-mahjong-the-nantucket-seaside-blue": [
+  "www.bamletsmahjong.com/nantucket-mahjong-mat",
+  "www.bamletsmahjong.com/cottage-bloom-mahjong-mat-blue-floral-american-mahjong-mat"
+ ],
+ "bam-let-s-mahjong-mint-and-roses": [
+  "www.bamletsmahjong.com/bluegrass-argyle-mahjong-mat"
+ ],
+ "bam-let-s-mahjong-the-palm-royale-lemon-drop": [
+  "www.bamletsmahjong.com/palm-court-mahjong-mat",
+  "www.bamletsmahjong.com/posy-pop-watercolor-floral-mahjong-mat"
+ ],
+ "bam-let-s-mahjong-the-palm-royale-tangerine-twist": [
+  "www.bamletsmahjong.com/palm-court-mahjong-mat",
+  "www.bamletsmahjong.com/posy-pop-watercolor-floral-mahjong-mat"
+ ],
+ "bam-let-s-mahjong-the-palm-royale-strawberry-sangria": [
+  "www.bamletsmahjong.com/palm-court-mahjong-mat",
+  "www.bamletsmahjong.com/posy-pop-watercolor-floral-mahjong-mat"
+ ],
+ "bam-let-s-mahjong-grandmillennial-pink": [
+  "www.bamletsmahjong.com/grandmillennial-mahjong-mat"
+ ],
+ "bam-let-s-mahjong-grandmillennial-green": [
+  "www.bamletsmahjong.com/grandmillennial-mahjong-mat",
+  "www.bamletsmahjong.com/birdsong-mahjong-mat"
+ ],
+ "bam-let-s-mahjong-grandmillennial-blue": [
+  "www.bamletsmahjong.com/grandmillennial-mahjong-mat",
+  "www.bamletsmahjong.com/cottage-bloom-mahjong-mat-blue-floral-american-mahjong-mat"
+ ],
+ "bam-let-s-mahjong-garden-party-sky-blue": [
+  "www.bamletsmahjong.com/garden-party-sky-blue-mahjong-mat",
+  "www.bamletsmahjong.com/garden-party-mahjong-mat"
+ ],
+ "bam-let-s-mahjong-garden-party-lavender-bloom": [
+  "www.bamletsmahjong.com/garden-party-sky-blue-mahjong-mat",
+  "www.bamletsmahjong.com/secret-garden-mahjong-mat-watercolor-floral-mahjong-mat",
+  "www.bamletsmahjong.com/garden-party-mahjong-mat"
+ ],
+ "bam-let-s-mahjong-garden-party-petal-pink": [
+  "www.bamletsmahjong.com/garden-party-mahjong-mat"
+ ],
+ "bam-let-s-mahjong-garden-party-sea-glass-green": [
+  "www.bamletsmahjong.com/garden-party-mahjong-mat"
+ ],
+ "bespoke-mahjong-bespoke-x-gray-malin-beach-club": [
+  "www.bespokemahjong.com/graymalingamemat"
+ ],
+ "bespoke-mahjong-lucky-charms-marshmallow-pink": [
+  "www.bespokemahjong.com/lucky-charms-mat",
+  "www.bespokemahjong.com/lucky-charms-watercolor-whimsy-mat",
+  "www.bespokemahjong.com/preppy-pink-garden-copy"
+ ],
+ "bespoke-mahjong-garden-glow-matcha-pearl": [
+  "www.bespokemahjong.com/garden-glow-mat-emerald-green",
+  "www.bespokemahjong.com/preorder-garden-glow-mat-turquoise",
+  "www.bespokemahjong.com/garden-glow-mat-wild-orchid"
+ ],
+ "bespoke-mahjong-year-of-the-horse-saddle-pink": [
+  "www.bespokemahjong.com/preorder-double-sided-mat-double-the-fun-year-of-the-horse-mat-harlequin-copy",
+  "www.bespokemahjong.com/preorder-year-of-the-horse-mat-pleated",
+  "www.bespokemahjong.com/year-of-the-dragon-mat-plum-copy"
+ ],
+ "bespoke-mahjong-year-of-the-horse-pearl-cream": [
+  "www.bespokemahjong.com/preorder-year-of-the-horse-mat-pleated",
+  "www.bespokemahjong.com/year-of-the-dragon-mat-plum-copy",
+  "www.bespokemahjong.com/preorder-double-sided-mat-double-the-fun-year-of-the-horse-mat-harlequin-copy"
+ ],
+ "bespoke-mahjong-springtime-safari-petal-pink": [
+  "www.bespokemahjong.com/copy-of-moss-green-spring-garden-game-mat",
+  "www.bespokemahjong.com/vivid-blue-leopard-game-mat",
+  "www.bespokemahjong.com/flirtyleopardsmintjulep",
+  "www.bespokemahjong.com/sapphireblue-garden-mat-copy",
+  "www.bespokemahjong.com/cobalt-blue-leopard-game-mat"
+ ],
+ "bespoke-mahjong-springtime-safari-sky-blue": [
+  "www.bespokemahjong.com/vivid-blue-leopard-game-mat",
+  "www.bespokemahjong.com/sapphireblue-garden-mat-copy",
+  "www.bespokemahjong.com/cobalt-blue-leopard-game-mat",
+  "www.bespokemahjong.com/flirtyleopardsmintjulep",
+  "www.bespokemahjong.com/copy-of-moss-green-spring-garden-game-mat"
+ ],
+ "bespoke-mahjong-corey-paige-color-crush-pearl-crush": [
+  "www.bespokemahjong.com/colorcrushmat"
+ ],
+ "bespoke-mahjong-corey-paige-color-crush-bright-white": [
+  "www.bespokemahjong.com/colorcrushmat"
+ ],
+ "bespoke-mahjong-grateful-dead-rose-pink-tie-dye-pearl": [
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-sunshine-galaxy-copy",
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-corey-paige-electric-love-mat-copy",
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-dancing-bears-copy",
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-skull"
+ ],
+ "bespoke-mahjong-grateful-dead-sunshine-daydream-tie-dye-pearl": [
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-sunshine-galaxy-copy",
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-corey-paige-electric-love-mat-copy",
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-dancing-bears-copy",
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-skull"
+ ],
+ "bespoke-mahjong-grateful-dead-stealie-blue-tie-dye-pearl": [
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-sunshine-galaxy-copy",
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-corey-paige-electric-love-mat-copy",
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-dancing-bears-copy",
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-skull"
+ ],
+ "rackin-rudolph": [
+  "www.hiphipmahjong.com/rackin-rudolph-mahjong-mat"
+ ],
+ "hip-hip-mahjong-so-bam-grateful": [
+  "www.hiphipmahjong.com/so-bam-grateful-mahjong-mat"
+ ],
+ "hip-hip-mahjong-hoppy-east-hare": [
+  "www.hiphipmahjong.com/hoppy-east-hare-mahjong-mat"
+ ],
+ "hip-hip-mahjong-mahj-o-ween": [
+  "www.hiphipmahjong.com/mahj-o-ween-mahjong-mat"
+ ],
+ "hip-hip-mahjong-birthday": [
+  "www.hiphipmahjong.com/birthday-mahjong-mat"
+ ],
+ "hip-hip-mahjong-i-mahj": [
+  "www.hiphipmahjong.com/i-love-mahj-mat"
+ ],
+ "hip-hip-mahjong-let-freedom-ring": [
+  "www.hiphipmahjong.com/let-freedom-ring-mahjong-mat",
+  "www.hiphipmahjong.com/freedom-isnt-free-mahjong-mat"
+ ],
+ "mac-miller-mahjong-heirloom-collection-fire-fortune-ember-fire": [
+  "www.macandmillermahjong.com/heirloom-fire-fortune-mahjong-mat",
+  "www.macandmillermahjong.com/heirloom-collection-navy-chinoiserie-mahjong-mat"
+ ],
+ "mac-miller-mahjong-heirloom-collection-fire-fortune-verdant-fortune": [
+  "www.macandmillermahjong.com/heirloom-fire-fortune-mahjong-mat",
+  "www.macandmillermahjong.com/heirloom-collection-navy-chinoiserie-mahjong-mat"
+ ],
+ "mac-miller-mahjong-laissez-les-bons-temps-rouler-collection": [
+  "www.macandmillermahjong.com/laissez-les-bons-temps-rouler-mahjong-mat-pre-order-ships-march-2026",
+  "www.macandmillermahjong.com/let-the-good-times-toile-mat",
+  "www.macandmillermahjong.com/mg-flower-mat-name-tbd"
+ ],
+ "mahj-mood-the-eloise-collection": [
+  "mahjmood.com/the-eloise-collection-mat-collab-with-four-winds-social-pre-order-estimated-delivery"
+ ],
+ "mahj-squad-blue-chinoiserie": [
+  "mahjsquadshop.com/blue-chinoiserie-mahjong-mat"
+ ],
+ "mahj-squad-palm-springs": [
+  "mahjsquadshop.com/palm-springs-mahjong-mat-neoprene-mahjong-mat-in-palm-springs-mid-century-mahjong-mat-pink-mahjong-tropical-mahj-mahjongg-mat-1"
+ ],
+ "miss-mahjong-miss-darling-cameo-blue": [
+  "missmahjong.com/lattice-mahjong-playing-mat-pre-order"
+ ],
+ "miss-mahjong-miss-cowgirl": [
+  "missmahjong.com/miss-cowgirl-lasso-mahjong-mat"
+ ],
+ "my-fair-mahjong-style-of-your-life-series-pearl-green": [
+  "myfairmahjong.com/mahjong-mat-parquet-petal-31-x-31"
+ ],
+ "my-fair-mahjong-motor-city-series": [
+  "myfairmahjong.com/mat-mechanical"
+ ],
+ "my-fair-mahjong-florida-series": [
+  "myfairmahjong.com/mat-tropical-palm"
+ ],
+ "sunday-mahjong-plum-panda": [
+  "sundaymahjong.com/plum-panda-premium-mahjong-mat"
+ ],
+ "sunday-mahjong-sunday": [
+  "sundaymahjong.com/sunday-premium-mahjong-mat"
+ ],
+ "royal-mahjong-society-heirloom-collection-crown-jewels": [
+  "theroyalmahjongsociety.com/crown-jewels-mahjong-mat"
+ ],
+ "royal-mahjong-society-studio-series-crown-jewels": [
+  "theroyalmahjongsociety.com/crown-jewels-mahjong-mat"
+ ],
+ "royal-mahjong-society-heirloom-collection-shore": [
+  "theroyalmahjongsociety.com/shore-mahjong-mat"
+ ],
+ "royal-mahjong-society-heirloom-collection-mahj-royale": [
+  "theroyalmahjongsociety.com/mahj-royale-mahjong-mat"
+ ],
+ "royal-mahjong-society-heirloom-collection-cottage": [
+  "theroyalmahjongsociety.com/cottage-mahjong-mat"
+ ],
+ "royal-mahjong-society-studio-series-cottage": [
+  "theroyalmahjongsociety.com/cottage-mahjong-mat"
+ ],
+ "royal-mahjong-society-heirloom-collection-girly": [
+  "theroyalmahjongsociety.com/girly-mahjong-mat"
+ ],
+ "royal-mahjong-society-studio-series-girly": [
+  "theroyalmahjongsociety.com/girly-mahjong-mat"
+ ],
+ "royal-mahjong-society-heirloom-collection-island": [
+  "theroyalmahjongsociety.com/island-mahjong-mat"
+ ],
+ "royal-mahjong-society-studio-series-island": [
+  "theroyalmahjongsociety.com/island-mahjong-mat"
+ ],
+ "royal-mahjong-society-heirloom-collection-newport": [
+  "theroyalmahjongsociety.com/newport-mahjong-mat"
+ ],
+ "royal-mahjong-society-studio-series-newport": [
+  "theroyalmahjongsociety.com/newport-mahjong-mat"
+ ]
 }
