@@ -1,0 +1,38 @@
+{
+ "_about": "v96 rack cleanup (QA v95 item 2c, Oct 26). recut: rack key -> clean cutout (assets/racks/v96c, built by make.py / rb2.py from the brand's own photos; checked on white, cream and navy). pq: photo score override (1-2 = never leads a list unless it is the tile brand's own rack or her pick; builder/fym_fix_oct25/v96_rackclean.py, gate [81]). fix: data corrections.",
+ "recut": {
+  "www.ohmymahjong.com/clear-acrylic-rack-and-pusher-set": "assets/racks/v96c/omm-clear-acrylic.webp",
+  "vr:My Fair Mahjong:Transparent Clear": "assets/racks/v96c/mfm-clear.webp",
+  "myfairmahjong.com/wooden-painted-mahjong-racks-20-set-of-4-blue-and-pink-sets-magnetic-attached-pusher?v=49600844038455": "assets/racks/v96c/mfm-bright-white.webp",
+  "myfairmahjong.com/acrylic-mahjong-racks?v=52896919519543": "assets/racks/v96c/mfm-pearl-white.webp",
+  "www.viroramahjong.com/wooden-rack-pusher-set?v=49226735976631": "assets/racks/v96c/virora-white-magnetic.webp",
+  "mahjongrowandco.com/white-rack-pusher-set": "assets/racks/v96c/mahjongrow-white.webp",
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959320376": "assets/racks/v96c/register-ivory-oyster.webp",
+  "www.bespokemahjong.com/the-ultimate-rack-clear": "assets/racks/v96c/bespoke-crystal-clear.webp"
+ },
+ "pq": {
+  "www.ohmymahjong.com/clear-acrylic-rack-and-pusher-set": 4,
+  "vr:My Fair Mahjong:Transparent Clear": 3,
+  "myfairmahjong.com/wooden-painted-mahjong-racks-20-set-of-4-blue-and-pink-sets-magnetic-attached-pusher?v=49600844038455": 5,
+  "myfairmahjong.com/acrylic-mahjong-racks?v=52896919519543": 3,
+  "www.viroramahjong.com/wooden-rack-pusher-set?v=49226735976631": 5,
+  "mahjongrowandco.com/white-rack-pusher-set": 4,
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959320376": 5,
+  "www.bespokemahjong.com/the-ultimate-rack-clear": 4,
+  "mahjmood.com/copy-scalloped-clear-acrylic-rack-and-pusher-set-of-4": 1,
+  "sundaymahjong.com/clear-mahjong-rack-set": 1,
+  "theroyalmahjongsociety.com/mahjong-rack-clear": 1,
+  "theroyalmahjongsociety.com/mahjong-rack-white": 1,
+  "tigredetartan.com/dove-white-beech-wood-straight-mahjong-racks-with-pushers-custom-storage-bag": 1,
+  "www.hiphipmahjong.com/trust-fund-racks": 1,
+  "missmahjong.com/scalloped-acrylic-racks": 2,
+  "www.bamletsmahjong.com/mahjong-clear-acrylic-racks-and-scallop-pusher": 2,
+  "www.bamletsmahjong.com/mahjong-white-acrylic-rack-and-pusher": 2,
+  "shop.andersruff.com/clear-acrylic-mahjong-rack-set-scalloped-pushers": 2,
+  "shop.andersruff.com/clear-acrylic-mahjong-rack-set-straight-pushers": 2
+ },
+ "_pq_why": "no clean single-rack brand photo found (scenes on slate/felt/tablecloth/bag, or only angled/end-on shots): Mahj Mood Scalloped Clear, Sunday Clear, RMS Clear + White, TdT Dove White, Hip Hip Trust Fund, Miss Mahjong Clear, Bam! Clear + White Acrylic, Anders Ruff Clear x2",
+ "fix": {
+  "bb:Clear": {"n": "Bird & Bamboo Clear Wood Stain", "rf": ["wood"], "rs": {"wood": 1.7}, "_why": "Bird & Bamboo variant 'Clear Wood Stain' (variant 47441111580824) is natural stained wood, not clear acrylic; the tan photo is correct, the Clear tag was wrong"}
+ }
+}
