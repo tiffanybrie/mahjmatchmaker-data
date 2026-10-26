@@ -662,6 +662,22 @@ if "${L.join('\\n\\n')}" not in UI or "${kind} \\u00b7 ${nm} by ${o.bn}\\n${o.u"
 # [55] Oct 25 (Tiffany 20:02/20:08): the rack deck never locks after picking; a 3rd pick swaps out the older one
 if 'class="rlock"' in UI or "function deck(k){if(k==='r'&&S.rpick.length)return rpickView();" in UI or "const old=S.rpick.shift();" not in UI:
     F.append("[55] rack deck locks after a pick / no swap on a third pick")
+# [56] Oct 25 (Tiffany 21:42, 2nd report of jagged Bespoke rack cutouts): every rack photo shown must be reviewed 'ok'
+#      in builder/fym_flags/rack_image_review.json (contact sheet on white AND navy: builder/fym_rack_images.py --sheet)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from fym_rack_images import problems as _rack_img_problems
+_rp = _rack_img_problems(B)
+if _rp: F.append(f"[56] {len(_rp)} rack photos not reviewed / rejected cutout: " + '; '.join(_rp[:6]))
+# [57] Oct 25 (Tiffany 20:24): a brand's coordinated mats come first for its tile set (config/fym-coordinated.json)
+_co = {k: v for k, v in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-coordinated.json'))).items() if not k.startswith('_')}
+for _s in D['sets']:
+    if _s['slug'] in _co:
+        _want = [m for m in _co[_s['slug']] if m in D['mats'] and not D['mats'][m].get('hid')]
+        for _f in ('cr', 'rank'):
+            if [D['order'][x] for x in _s.get(_f, [])[:len(_want)]] != _want: F.append(f"[57] {_s['name']}: coordinated mats are not first in {_f}")
+# [58] Oct 25 (Tiffany 21:43): Bam Bird tile sets use the uniform faces|backs split photo (config/fym-bambird-splits-oct25.json)
+for _k in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-bambird-splits-oct25.json')))['splits']:
+    if _k in D['tiles'] and not str(D['tiles'][_k].get('full', '')).startswith('t92/'): F.append(f"[58] Bam Bird tile {_k} is not using its split photo")
 # [46] Oct 25 (Tiffany 16:37): Mood board rack labels sit BELOW the racks (whole rack visible)
 if 'racks(rx,ry,rw,rh,{fs:STORY?23:19,maxRow:rh,rows:true,back:true,below:true})' not in UI:
     F.append("[46] Mood board (tri view) rack labels are not below the racks (below:true)")
