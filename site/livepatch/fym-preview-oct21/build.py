@@ -20,7 +20,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CDN = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@'
 ASSET = CDN + '44563dd1c2c4d9a00aa3deec61b1d86ccfdbcaf8/assets/site/fym-page/'
 WORDMARK = CDN + '8952b136784680ba365a33d7ae13ba91a25ab561/assets/brand/mahjmatchmaker-wordmark-notag.png'
-APP_COMMIT = 'c900aa99efe7bcdb237d60b2eff979d3d00accf9'
+APP_COMMIT = '9cf0d20b77ce1e32d28757ee8511b98e6d628691'
 APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v92/index.html'  # v92 (Oct 25 night: Bam Bird split tile photos, Deco Dragon first, Bespoke re-cuts + 41 rack cutouts cleaned, 28 Splash mats; files @a00edfa)
 APP_BASE = CDN + 'ad0675e42242c3abad40cac9f539a265220e26eb' + '/site-app/fym-v72/'  # every file but index.html is unchanged since v72; base stays on the v72 commit (warmed; jsDelivr 403'd t15/132.jpg at the new commit)
 
