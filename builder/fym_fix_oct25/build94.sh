@@ -13,5 +13,6 @@ if [ -n "$PARTNERS" ]; then python3 $H/v94_partneradds.py "$D" | tail -2; fi
 if [ -n "$VIRORA" ]; then python3 $H/v94_virora_grid3.py "$D" | tail -2; fi
 if [ -n "$ZOOM" ]; then python3 $H/v94_tilezoom.py "$D" | tail -2; fi
 python3 $H/v95_gatsby_hummingbird.py "$D" | tail -2
+python3 $H/v94_msrackcolours.py "$D"
 python3 $H6/v94_rackquality.py "$D" | tail -2
 grep -c "Version 94" "$D/index.html"
