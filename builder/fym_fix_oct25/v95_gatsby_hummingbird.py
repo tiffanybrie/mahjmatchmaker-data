@@ -27,6 +27,12 @@ for k, (src, pile) in FIX.items():
     t.setdefault('fo', t.get('full')); t['full'] = fn; t['pile'] = pk
     if pile == 'centre': t['bf'] = [.5, .5]
     print('new photo', t['n'], '->', fn)
+# Hummingbird shop link 404s (old handle); Sunday moved it to the pre-order listing (checked 200, Oct 26)
+_hb = D['tiles'].get('sundaymahjong.com/hummingbird-tile-set-1')
+if _hb:
+    for _f in ('u', 'u0'):
+        if _hb.get(_f): _hb[_f] = _hb[_f].replace('/products/hummingbird-tile-set-1', '/products/hummingbird-tile-set-preorder-est-jan-feb-27')
+    print('hummingbird link ->', _hb.get('u'))
 h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]
 if IMG:
     inl = '<script>window.IMG=Object.assign(window.IMG||{},' + json.dumps(IMG, separators=(',', ':')) + ');</script>'
