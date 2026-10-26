@@ -13,6 +13,9 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 
 - **WAITING ON TIFFANY (Matches & Catalog, Oct 26 ~7pm): late partner holiday mats → which holiday albums.** Review page (full-size photos, Pick + Copy): https://claude.ai/artifact/YXt3CzLisaRSEeqKHaoTez (sheet was too low-res, Tiffany 6:37pm); shortlist doc docs/holiday-late-mats-shortlist-oct26.md. Her yeses → set m + NEW-ALBUM-CHECKLIST holiday steps.
 
+
+- **Matches & Catalog, Oct 27 after launch:** Mat Gallery intro (/mahjong-mats) still says "watch for Find Your Match, coming 10.27" → change to a link to /find-your-match once it's live (site/livepatch/matgallery build note). Also trace the one 414 jsDelivr request on /find-your-mat-ch-preview (URL with Bam Art Deco mat JSON appended).
+
 ## Tomorrow's top priorities (Mon Oct 26), in order
 Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27 9am CT, (2) fall content before it expires (Brownstone Bloom this week, before Halloween), then holiday (November, through Find Your Mat-ch). The order is clear; no "Set tomorrow's order" question.
 
