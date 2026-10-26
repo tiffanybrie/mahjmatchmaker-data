@@ -716,6 +716,13 @@ for _k in sorted(_zk):
     except Exception as _e: F.append(f"[66] {_k}: could not check ({_e})")
 # [68] Oct 26 (QA): zoom snaps to 1 so drag-swipe never dies after zoom in/out (builder/fym_fix_oct25/v94_zoomsnap.py)
 if "if(Math.abs(ns-1)<0.02)ns=1;" not in UI: F.append("[68] zoom does not snap back to 1 (drag-swipe can stay dead after zooming in and out)")
+# [69] Oct 26 (Tiffany 10:25am): 'Add racks' right under the chosen mat + tapping the chosen mat = Add racks; no rack named
+# just "Mahjong Rack & Pusher Set"/"Racks" (builder/fym_fix_oct25/v95_addracks.py)
+if 'class="go pkgo" data-mock=' not in UI or 'v95: tap the chosen mat' not in UI: F.append("[69] no 'Add racks' button / tap-to-continue under the chosen mat")
+for _k69, _r69 in D['racks'].items():
+    if not _r69.get('hid') and _r69.get('n', '').strip() in ('Racks', 'Mahjong Rack & Pusher Set', 'Rack & Pusher Set'): F.append(f"[69] rack with no real name: {_k69}")
+# [71] Oct 26 (Tiffany 10:48am): match-card title stays within the mat/button column (builder/fym_fix_oct25/v95_titlewidth.py)
+if "TW=Math.min(W-120-2*SW,W*.74)" not in UI: F.append("[71] match-card title can run wider than the mat column (long set names overhang)")
 # [67] Oct 26 (Tiffany 9:23/9:24am): Mahjong Studios + Splash of Color pulled from FYM; only Splash mats on her own matches stay
 _k67 = {x[0] for s_ in D['sets'] for x in s_.get('m', [])}
 for s_ in D['sets']:
