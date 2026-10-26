@@ -13811,22 +13811,22 @@
   },
   "my-fair-mahjong-the-jubilee-series": {
    "m": [],
-   "hid": true,
+   "hid": false,
    "name": "The Jubilee Series"
   },
   "my-fair-mahjong-the-lumera-series": {
    "m": [],
-   "hid": true,
+   "hid": false,
    "name": "The Lumera Series"
   },
   "my-fair-mahjong-crystal-confetti": {
    "m": [],
-   "hid": true,
+   "hid": false,
    "name": "Crystal Confetti"
   },
   "my-fair-mahjong-the-play-series": {
    "m": [],
-   "hid": true,
+   "hid": false,
    "name": "The Play Series"
   },
   "my-fair-mahjong-the-texas-series": {
@@ -13835,7 +13835,7 @@
   },
   "my-fair-mahjong-crystal-prism": {
    "m": [],
-   "hid": true,
+   "hid": false,
    "name": "Crystal Prism"
   },
   "my-fair-mahjong-the-new-england-series": {
@@ -16204,7 +16204,7 @@
   },
   "yellow-mountain-imports-mojave": {
    "m": [],
-   "hid": true,
+   "hid": false,
    "name": "Mojave"
   },
   "yellow-mountain-imports-peony-blush": {
@@ -25960,6 +25960,7 @@
   "2026-10-26: Splash of Color mats hidden (Tiffany 9:23am pulled Splash + Mahjong Studios from FYM; her matched Splash mats stay)",
   "2026-10-26: Mahjong Row & Co. mat names un-truncated (Spring Awakening – Porcelain Blue, Mocha Bloom – Light) from the brand site; card sweep",
   "2026-10-26: Bam Bird Classic Tortoise pile -> scatter composite (Tiffany 10:45am yes)",
-  "2026-10-26: Bespoke double-sided mats listed twice (Side A / Side B names + side-B entries; Tiffany 11:41am)"
+  "2026-10-26: Bespoke double-sided mats listed twice (Side A / Side B names + side-B entries; Tiffany 11:41am)",
+  "2026-10-26: 5 My Fair Mahjong sets + YMI Mojave unhidden (stale no_tiles flag from the old photo; Tiffany 5:45pm), Crystal Confetti + Prism on close brand photos (v97_mfm.py)"
  ]
 }

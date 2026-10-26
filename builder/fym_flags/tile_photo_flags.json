@@ -16,37 +16,42 @@
  "my-fair-mahjong-the-jubilee-series": {
   "name": "The Jubilee Series",
   "maker": "My Fair Mahjong",
-  "flag": "no_tiles",
-  "note": "product/bag/box scene, tiles not the subject | Oct 21 tile photo audit upgrade: close pile, backs + faces | Oct 21 tile photo audit upgrade: close pile, backs + faces | Oct 21 tile photo audit upgrade: close pile, backs + faces",
-  "photo": "t71/my-fair-mahjong-the-jubilee-series.jpg"
+  "flag": "ok",
+  "photo": "t71/my-fair-mahjong-the-jubilee-series.jpg",
+  "shown": "t71/my-fair-mahjong-the-jubilee-series.jpg",
+  "note": "2026-10-26 v97: current photo shows faces + backs (looked at); the no_tiles flag was for the old photo t71/my-fair-mahjong-the-jubilee-series.jpg"
  },
  "my-fair-mahjong-the-lumera-series": {
   "name": "The Lumera Series",
   "maker": "My Fair Mahjong",
-  "flag": "no_tiles",
-  "note": "product/bag/box scene, tiles not the subject | Oct 21 tile photo audit upgrade: close pile, backs + faces | Oct 21 tile photo audit upgrade: close pile, backs + faces | Oct 21 tile photo audit upgrade: close pile, backs + faces",
-  "photo": "t71/my-fair-mahjong-the-lumera-series.jpg"
+  "flag": "ok",
+  "photo": "t71/my-fair-mahjong-the-lumera-series.jpg",
+  "shown": "t71/my-fair-mahjong-the-lumera-series.jpg",
+  "note": "2026-10-26 v97: current photo shows faces + backs (looked at); the no_tiles flag was for the old photo t71/my-fair-mahjong-the-lumera-series.jpg"
  },
  "my-fair-mahjong-crystal-confetti": {
   "name": "Crystal Confetti",
   "maker": "My Fair Mahjong",
-  "flag": "no_tiles",
-  "note": "product/bag/box scene, tiles not the subject",
-  "photo": "t15/68.jpg"
+  "flag": "ok",
+  "photo": "t97/my-fair-mahjong-crystal-confetti.jpg",
+  "shown": "t97/my-fair-mahjong-crystal-confetti.jpg",
+  "note": "2026-10-26 v97: current photo shows faces + backs (looked at); the no_tiles flag was for the old photo t97/my-fair-mahjong-crystal-confetti.jpg"
  },
  "my-fair-mahjong-the-play-series": {
   "name": "The Play Series",
   "maker": "My Fair Mahjong",
-  "flag": "no_tiles",
-  "note": "product/bag/box scene, tiles not the subject | Oct 21 tile photo audit upgrade: close pile, backs + faces | Oct 21 tile photo audit upgrade: close pile, backs + faces | Oct 21 tile photo audit upgrade: close pile, backs + faces",
-  "photo": "t71/my-fair-mahjong-the-play-series.jpg"
+  "flag": "ok",
+  "photo": "t71/my-fair-mahjong-the-play-series.jpg",
+  "shown": "t71/my-fair-mahjong-the-play-series.jpg",
+  "note": "2026-10-26 v97: current photo shows faces + backs (looked at); the no_tiles flag was for the old photo t71/my-fair-mahjong-the-play-series.jpg"
  },
  "my-fair-mahjong-crystal-prism": {
   "name": "Crystal Prism",
   "maker": "My Fair Mahjong",
-  "flag": "no_tiles",
-  "note": "product/bag/box scene, tiles not the subject",
-  "photo": "t15/71.jpg"
+  "flag": "ok",
+  "photo": "t97/my-fair-mahjong-crystal-prism.jpg",
+  "shown": "t97/my-fair-mahjong-crystal-prism.jpg",
+  "note": "2026-10-26 v97: current photo shows faces + backs (looked at); the no_tiles flag was for the old photo t97/my-fair-mahjong-crystal-prism.jpg"
  },
  "oh-my-mahjong-sunburst-debutante": {
   "name": "Sunburst Debutante",
@@ -79,9 +84,10 @@
  "yellow-mountain-imports-mojave": {
   "name": "Mojave",
   "maker": "Yellow Mountain Imports",
-  "flag": "no_tiles",
-  "note": "single blank tile next to a quarter",
-  "photo": "t15/211.jpg"
+  "flag": "ok",
+  "photo": "t15/211.jpg",
+  "shown": "t94/ymi-mojave-split.jpg",
+  "note": "2026-10-26 v97: current photo shows faces + backs (looked at); the no_tiles flag was for the old photo t94/ymi-mojave-split.jpg"
  },
  "hip-hip-mahjong-nativity": {
   "name": "Nativity",

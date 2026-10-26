@@ -55,6 +55,10 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
  37 (Oct 22) rack screen like the mat screen: picker under the mat, suitors at the bottom, one picks toggle, Back on racks
  36 (Oct 22) rack picks per (set, mat): every pairing = the mat's own picks (config/mat-racks-picks.json) first, then the tile set's
     racks, plus every rack on a structured album card for that pairing; every registry mat/rack resolves; D.lm matches the registry
+ 82-90 (Oct 26 evening, v97 = Version 1.1): 82 searched mat cleared on reset/new set (node-run resetFrom), 83 accent-blind search (node-run
+    NRM over every accented name), 84 mat-door Add racks, 85 no set hidden by a stale no_tiles flag + Jubilee Midnight Blue, 86 PLM band
+    framing, 87 MFM Natural Wood featured + no 404 wood-rack link, 88 PLM painted racks re-cut, 89 mat photos without white bands (warn:
+    angled shots), 90 gallery sync (warn)
 """
 import struct
 import sys, os, json, re
@@ -497,7 +501,7 @@ if os.path.exists(_tu):
     for k_, it_ in json.load(open(_tu))['sets'].items():
         tk_ = it_.get('tile_key')
         if tk_ not in T or tk_ not in _bt: continue
-        if it_['status'] == 'upgrade' and not str(T[tk_].get('fo') or T[tk_].get('full', '')).startswith('t71/'): F.append(f"[30] {it_['name']}: audit upgrade not applied (full {T[tk_].get('full')})")
+        if it_['status'] == 'upgrade' and not str(T[tk_].get('fo') or T[tk_].get('full', '')).startswith('t71/') and not (it_.get('applied') and T[tk_].get('src') == it_.get('proposed')): F.append(f"[30] {it_['name']}: audit upgrade not applied (full {T[tk_].get('full')})")
         want_ = it_['status'] == 'coming_soon' and (_on_all or k_ in _on or any(x in _on for x in _bt[tk_]))
         if bool(T[tk_].get('soon')) != want_: F.append(f"[30] {it_['name']}: Photo coming soon is {'on' if T[tk_].get('soon') else 'off'} but the switch says {'on' if want_ else 'off'}")
 
@@ -929,6 +933,143 @@ try:
     if 'bb:Clear' in D['racks'] and 'clear' in (D['racks']['bb:Clear'].get('rf') or []): F.append("[81] Bird & Bamboo Clear Wood Stain is tagged clear")
 except StopIteration: pass
 except Exception as _e: F.append(f"[81] check did not run: {_e}")
+
+# ---- v97 (Version 1.1) checks, Oct 26 evening (docs/MATCH-INBOX.md) ----
+W97 = []   # warnings printed at the end (do not fail the gate)
+_v97 = re.search(r'Version (\d+)', h); _pre97 = '/*v97 accent-blind search*/' not in UI and _v97 is not None and int(_v97.group(1)) < 97
+# [82] Oct 26 5:37pm (Tiffany testing): a searched mat stuck to the front of EVERY later deck (S.mfront never cleared).
+# resetFrom(1) is RUN in node on a stub S: mfront/mfset must come back null; tReset clears it; matDeck fronts it only for the set
+# it was searched on (S.mfset===S.set); the search sets S.mfset. builder/fym_fix_oct25/v97_ui.py
+if not _pre97:
+    try:
+        _rf = re.search(r'function resetFrom\(level\)\{.*?S\.made=false;\}', UI, re.S).group(0)
+        _js82 = _rf + ";const S={mfront:'x',mfset:3,seen:{a:1},f:{m:{},r:{}}};resetFrom(1);console.log(JSON.stringify([S.mfront,S.mfset]));"
+        _o82 = subprocess.run(['node', '-e', _js82], capture_output=True, text=True, timeout=60)
+        if _o82.stdout.strip() != '[null,null]': F.append(f"[82] resetFrom(1) leaves the searched mat in front (S.mfront/mfset = {_o82.stdout.strip() or _o82.stderr[:120]})")
+        if 'const tReset=()=>{S.mfront=null;S.mfset=null;' not in UI: F.append("[82] tReset (mat door / start over) does not clear the searched mat")
+        if 'S.mfront&&S.mfset===S.set&&M[S.mfront]' not in UI: F.append("[82] matDeck fronts a searched mat on every set (no S.mfset===S.set guard)")
+        if 'S.mfront=id;S.mfset=S.set;' not in UI: F.append("[82] mat search does not remember which set it was searched on")
+    except Exception as _e: F.append(f"[82] sticky-search check did not run: {_e}")
+# [83] Oct 26 5:53pm: "soiree" found nothing, "soir" found SOIRÉE. Every search box folds accents on BOTH sides (NRM); every
+# visible mat / tile set / rack name with an accent is found by its accent-free spelling (run in node with the page's own NRM).
+if not _pre97:
+    try:
+        import unicodedata as _ud
+        _nrm = re.search(r"const NRM=(x=>.*?\.toLowerCase\(\));", UI).group(1)
+        if UI.count('const v=NRM(e.target.value.trim()),') < 4: F.append("[83] a search box still compares the typed text without folding accents")
+        for _need in ("const s=NRM(M[id].n+' '+(M[id].bn||''));", "const h=NRM(s.name+' '+s.maker);", "const s=NRM(R[id].n+' '+(R[id].bn||''));"):
+            if _need not in UI: F.append(f"[83] search haystack not accent-folded: {_need[:40]}")
+        _fold = lambda x: ''.join(c for c in _ud.normalize('NFD', x) if not _ud.combining(c)).lower()
+        _cases = []
+        for _o in list(M.values()) + list(D['racks'].values()):
+            if _o.get('hid'): continue
+            _txt = _o['n'] + ' ' + (_o.get('bn') or '')
+            if _fold(_txt) != _txt.lower(): _cases.append([_txt, _fold(_o['n'])])
+        for _s in D['sets']:
+            if vis(_s) and _fold(_s['name'] + ' ' + _s['maker']) != (_s['name'] + ' ' + _s['maker']).lower(): _cases.append([_s['name'] + ' ' + _s['maker'], _fold(_s['name'])])
+        _js83 = f"const NRM={_nrm};const C={json.dumps(_cases, ensure_ascii=False)};const bad=C.filter(([h,q])=>!q.split(/\\s+/).filter(Boolean).every(t=>NRM(h).includes(NRM(t))));console.log(JSON.stringify(bad.map(x=>x[0])));"
+        _o83 = subprocess.run(['node', '-e', _js83], capture_output=True, text=True, timeout=60)
+        _bad83 = json.loads(_o83.stdout or 'null')
+        if _bad83 is None: F.append(f"[83] accent search check did not run: {_o83.stderr[:150]}")
+        elif _bad83: F.append(f"[83] {len(_bad83)} accented names not found by their accent-free spelling: " + '; '.join(_bad83[:6]))
+        elif not _cases: F.append("[83] no accented product names found to test (check the parser)")
+    except Exception as _e: F.append(f"[83] accent search check did not run: {_e}")
+# [84] Oct 26: mat door parity: 'Add racks ›' right under the chosen suitor tile set + tapping the chosen tile set = Add racks
+if not _pre97:
+    if 'class="go pkgo" data-tadd="${pk.i}">Add racks ›</button>' not in UI: F.append("[84] mat door: no 'Add racks' button under the chosen tile set")
+    if '/*v97 tap chosen tiles = Add racks*/' not in UI: F.append("[84] mat door: tapping the chosen tile set does not go to racks")
+# [85] Oct 26 5:45pm: 5 My Fair Mahjong sets stayed hidden by the no_tiles flag of their OLD photo after the Oct 21 audit gave them a
+# good photo. A set whose photo upgrade is ok/upgrade may not stay hidden behind a no_tiles flag, unless the flag note records a
+# keep-hidden decision (e.g. OMM Debutantes = travel sets). Jubilee Midnight Blue is in (v97_mfm.py).
+try:
+    _U85 = json.load(open(REPO + 'builder/fym_flags/tile_photo_upgrades.json'))['sets']
+    _S85 = {s_['slug']: s_ for s_ in D['sets']}
+    for _sl, _u in _U85.items():
+        _s = _S85.get(_sl); _fl = tflags.get(_sl) or {}
+        if _s and _s.get('hid') and _u.get('status') in ('ok', 'upgrade') and _fl.get('flag') == 'no_tiles' and not re.search(r'(?i)stay hidden|stays hidden|keep hidden', _fl.get('note', '')):
+            F.append(f"[85] {_s['name']} ({_s['maker']}): hidden by a stale no_tiles flag although its photo upgrade is '{_u['status']}'")
+    if _pre97: raise StopIteration
+    _mb = _S85.get('my-fair-mahjong-the-jubilee-series-midnight-blue')
+    if not _mb or not vis(_mb): F.append("[85] My Fair Mahjong The Jubilee Series (Midnight Blue) missing or hidden")
+    elif _mb['m']: F.append("[85] Jubilee Midnight Blue carries a Tiffany's-match list (catalog set: m must be [] until her album / swipe book)")
+except StopIteration: pass
+except Exception as _e: F.append(f"[85] stale tile flag check did not run: {_e}")
+# [86] Oct 26 5:40pm: Peace Love Mahjong match-card band framing (config/fym-plm-band-oct26.json): Desert Dreams showed blanks
+try:
+    for _k, _bf in json.load(open(REPO + 'config/fym-plm-band-oct26.json'))['tiles'].items():
+        if _pre97: break
+        if T.get(_k, {}).get('bf') != _bf: F.append(f"[86] {T.get(_k, {}).get('n', _k)}: band anchor {T.get(_k, {}).get('bf')} != {_bf}")
+except Exception as _e: F.append(f"[86] PLM band check did not run: {_e}")
+# [87] Oct 26 5:40pm: My Fair Mahjong Natural Wood rack featured (good single-rack photo, ft lift when it fits the mat colour) and no
+# visible rack links the old 404 MFM wooden-painted-mahjong-racks product
+try:
+    _NW = D['racks'].get('myfairmahjong.com/wooden-racks?v=53371892990263')
+    if not _pre97:
+        if not _NW or _NW.get('hid') or not _NW.get('ft') or (_NW.get('pq') or 0) < 4: F.append("[87] MFM Natural Wood rack is not featured (visible, ft, photo score >= 4)")
+        if '/*v97 featured wood*/' not in UI: F.append("[87] rack pool has no featured-rack lift")
+    for _k, _r in D['racks'].items():
+        if not _r.get('hid') and any('wooden-painted-mahjong-racks' in str(_r.get(x, '')) for x in ('u', 'u0')): F.append(f"[87] {_r['n']} links the old 404 MFM wood rack product")
+except Exception as _e: F.append(f"[87] wood rack check did not run: {_e}")
+# [88] Oct 26 5:50pm: Peace Love Mahjong painted racks re-cut whole from the brand's group photo (no chopped crops)
+if not _pre97:
+    for _c in ['Chartreuse', 'Dark Green', 'Aqua', 'French Blue', 'Navy', 'Purple', 'Pink', 'Light Pink', 'Lilac', 'Red', 'Cobalt']:
+        _r = D['racks'].get('plm:' + _c)
+        if _r and not _r.get('hid') and not str(_r.get('im', '')).startswith('rk97plm'): F.append(f"[88] Peace Love Mahjong {_c}: still the chopped rack photo")
+# [89] Oct 26 5:49pm: mat photos fill the frame (white bands on the card + swipe). FAIL: a visible mat photo with a flat white margin
+# >= 6% on any side (trim it: config/fym-mat-white-oct26.json + v97_matwhite.py). WARN: angled shots whose corners are white
+# (need a perspective flatten like Amahj Blue, Citron + Lilac).
+if not _pre97:
+    try:
+        _imgs89 = {}
+        for _fn in os.listdir(os.path.join(B, 'mc')):
+            if _fn.endswith('.webp'):
+                _raw = open(os.path.join(B, 'mc', _fn), 'rb').read(); _n = struct.unpack('<I', _raw[-4:])[0]
+                for _f, (_a, _l) in json.loads(_raw[-4 - _n:-4]).items(): _imgs89[_f] = (_raw, _a, _l)
+        _flat89, _ang89 = [], []
+        import io as _io89
+        for _k, _m in M.items():
+            if _m.get('hid') or _m.get('f') not in _imgs89: continue
+            _raw, _a, _l = _imgs89[_m['f']]
+            _im = Image.open(_io89.BytesIO(_raw[_a:_a + _l])).convert('RGB'); _ar = np.asarray(_im.resize((200, max(1, round(200 * _im.height / _im.width))))).astype(int)
+            _wh = (_ar.min(2) > 235) & ((_ar.max(2) - _ar.min(2)) < 16)
+            def _run(v):
+                n_ = 0
+                for x_ in v:
+                    if x_ > .97: n_ += 1
+                    else: break
+                return n_
+            _cw, _rw = _wh.mean(0), _wh.mean(1)
+            _mg = max(_run(_cw) / _wh.shape[1], _run(_cw[::-1]) / _wh.shape[1], _run(_rw) / _wh.shape[0], _run(_rw[::-1]) / _wh.shape[0])
+            if _mg >= .06: _flat89.append(f"{_m.get('bn')} | {_m['n']} ({_mg:.0%})")
+            _hh, _ww = _wh.shape; _c = max(2, min(_hh, _ww) // 6)
+            if np.mean([_wh[:_c, :_c].mean(), _wh[:_c, -_c:].mean(), _wh[-_c:, :_c].mean(), _wh[-_c:, -_c:].mean()]) >= .45: _ang89.append(f"{_m.get('bn')} | {_m['n']}")
+        if _flat89: F.append(f"[89] {len(_flat89)} mat photos with white bands (trim in config/fym-mat-white-oct26.json): " + '; '.join(_flat89[:8]))
+        if _ang89: W97.append(f"[89] {len(_ang89)} angled mat photos with white corners (need a perspective flatten): " + '; '.join(_ang89))
+    except Exception as _e: F.append(f"[89] white-band check did not run: {_e}")
+# [90] Oct 26: gallery sync. Every visible FYM mat (not hidden, not a '#side-b' second listing) should have a Mat Gallery row
+# (staged site/livepatch/matgallery/matgallery-v5.html rows or config/mat-gallery-extra-rows.json), matched by key, product URL or
+# name + brand. WARN for now (lists them); extra rows not yet in the staged page are listed too (that page needs a rebuild + paste).
+try:
+    import unicodedata as _ud90
+    _nz = lambda x: re.sub(r'[^a-z0-9]', '', ''.join(c for c in _ud90.normalize('NFD', str(x or '')) if not _ud90.combining(c)).lower())
+    _nu = lambda u: re.sub(r'^https?://(www\.)?', '', str(u or '').split('?')[0].split('#')[0]).rstrip('/').replace('/products/', '/')
+    _XR = json.load(open(REPO + 'config/mat-gallery-extra-rows.json'))['rows']
+    _GK = {GKEY(r[0]) for r in _G}; _GU = {_nu(r[3]) for r in _G}; _GN = {_nz(r[1]) + '|' + _nz(r[2]) for r in _G}
+    _XK = {a['key'] for a in _XR}; _XU = {_nu(a.get('u')) for a in _XR if a.get('u')}
+    _miss90, _stale90 = [], []
+    for _k, _m in M.items():
+        if _m.get('hid') or '#side-b' in _k: continue
+        _u = {_nu(_m.get('u0')), _nu(_m.get('u')), _nu(_k)}
+        _in_staged = _k in _GK or bool(_u & _GU) or (_nz(_m['n']) + '|' + _nz(_m.get('bn'))) in _GN
+        if _in_staged: continue
+        if _k in _XK or _u & _XU: _stale90.append(f"{_m.get('bn')} | {_m['n']}"); continue
+        _miss90.append(f"{_m.get('bn')} | {_m['n']}")
+    if _miss90: W97.append(f"[90] {len(_miss90)} visible FYM mats have no Mat Gallery row: " + '; '.join(_miss90))
+    if _stale90: W97.append(f"[90] {len(_stale90)} visible FYM mats are in config/mat-gallery-extra-rows.json but not in the staged gallery page (rebuild + paste): " + '; '.join(_stale90))
+except Exception as _e: F.append(f"[90] gallery sync check did not run: {_e}")
+if W97:
+    print("FYM GATE WARNINGS (v97):")
+    for _w in W97: print('  ' + _w)
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
