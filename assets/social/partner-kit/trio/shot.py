@@ -6,6 +6,8 @@ with sync_playwright() as p:
     b=p.chromium.launch(); pg=b.new_page(viewport={'width':390,'height':797},device_scale_factor=3)
     pg.goto('http://localhost:8766/index.html?tour=off'); pg.wait_for_timeout(4000)
     import os,base64
+    if os.environ.get('MATFIX'):
+        k_,n_=os.environ['MATFIX'].split('|||'); print('matfix',pg.evaluate("([k,n])=>{if(!M[k])return false;M[k].n=n;M[k].dn=n;return true}",[k_,n_]))
     if os.environ.get('MATOV'):  # MATOV0
         mu0='data:image/jpeg;base64,'+base64.b64encode(open(os.environ['MATOV'],'rb').read()).decode()
         print('matov0',pg.evaluate("([m,br,u])=>{const id=Object.keys(M).find(k=>M[k].n===m&&M[k].bn===br);MC[M[id].f]=u;return id}",[MAT,BRAND,mu0]))
@@ -25,6 +27,7 @@ with sync_playwright() as p:
         pg.evaluate("""async(ov)=>{const ix=await hdIndex();ix.r=ix.r||{};for(const k in ov){ix.r[k]='file:'+ov[k];IMG[R[k].im]=ov[k];R[k].c=true;}}""",ov)
     if RK: pg.evaluate("(r)=>{S.rpick=r;S.rliked=r.slice();renderRacks();}",RK); pg.wait_for_timeout(1500)
     import os
+    if not os.environ.get('TCFIX') and not os.environ.get('TCAUTO'): os.environ['TCFIX']=pg.evaluate("()=>set().tc||'#d6247f'")  # Tiffany Oct 26: use the set's assigned colour-card colour, never the contrast-darkened one
     if os.environ.get('TCFIX'): print('tcfix',pg.evaluate("""(c)=>{const src=drawCard.toString();const i=src.indexOf('const tc=(()=>');const j=src.indexOf('})();',i)+5;const ns=src.slice(0,i)+"const tc='"+c+"';"+src.slice(j);window.drawCard=(0,eval)('('+ns+')');try{drawCard=window.drawCard}catch(e){};return i>0}""",os.environ['TCFIX']))
     if os.environ.get('SRCPATCH'):
         for pr in os.environ['SRCPATCH'].split(';;'):
