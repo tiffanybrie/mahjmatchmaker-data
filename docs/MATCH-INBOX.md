@@ -12,5 +12,6 @@ Format: `- [date time] [who spotted] ITEM · why · fix wanted`
 - Oct 26 5:39pm · Main · Same check for the other partner holiday mats added late (Oct 25 audit): Bespoke Mahjong "It's a Vibe Holiday", Bespoke x Gray Malin "A Very Merry Getaway" (published Oct 22), House of Hearts Studio Peace on Earth, Soirée All Day holiday line (added Oct 21). Are they in holiday albums? If not, match + tag.
 - Standing ask: the weekly/launch watch should flag every NEW partner holiday mat into this inbox the day it's found, so holiday albums never miss a partner mat again.
 - Oct 26 5:40pm · Main · Peace Love Mahjong tile focus (details in DESK): OG Desert Dreams bf y 0.5→0.79 (MUST, shows blanks now); Merry Nutcracker →0.21 and OG Totally Teal →0.41 (better faces); other 5 fine.
+- Oct 26 5:40pm · Main (Tiffany) · **My Fair Mahjong NATURAL WOOD rack: she wants it featured, we're short on wood racks.** New colour on their wooden-racks listing (variant id is from the same Oct 19 batch as Peppermint Wishes); our Oct 25 audit added it to FYM. Fix: rank it into rack decks for warm/earthy/wood-friendly sets, consider it in album matches. Also check the Oct 25 audit note: the 5 older MFM wood-rack entries linked a 404 product; make sure they point to /products/wooden-racks.
 
 ## DONE
