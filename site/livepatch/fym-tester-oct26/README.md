@@ -28,8 +28,8 @@ Paste method (attended chat, own tab, one Chrome driver): CodeMirror 6 `v.dispat
   3. **What did you love?** Textarea, optional.
   4. **Anything confusing or broken?** Textarea, optional. Description: `Tell me what you were doing and what happened.`
   5. **A photo that looks off, or a partner brand product you couldn't find?** Textarea, optional. Description: `Brand + set or mat name helps a lot.`
-  6. **Your name** Name field, optional.
-  7. **Your email** Email field, optional. Description: `Only if you'd like me to follow up.`
+  6. **Your name** Name field, REQUIRED (Tiffany 15:13: so she can match feedback to group members/friends by name).
+  7. **Your email** Email field, REQUIRED.
   8. **Version** Hidden field, field name `VERSION`. Filled from the URL `?SQF_VERSION=1.0`.
 - Version tag: `top-block.html` adds `?SQF_VERSION=1.0` to the page URL on load (skips inside the editor), so every submission carries `Version: 1.0`. When a new public version goes live, change `FYMT_VERSION` in top-block.html and the pill text, re-paste. **Untested:** confirm with ONE test submission that the email shows `Version: 1.0`. Fallback if Squarespace ignores it: the email's received time maps to the public version via docs/FYM-VERSIONS.md (Claude tags it when logging).
 
