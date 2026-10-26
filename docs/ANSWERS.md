@@ -233,3 +233,4 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 - 2026-10-26 08:39 (Matches & Catalog): Partner email gets an intriguing Find Your Mat-ch image (above/near the first-look button) so partners who don't click still see what it is.
 - 2026-10-26 08:41 (Matches & Catalog): Virora tile sets: not bad, but the tile back isn't visible in the match card circle. Improve them so the back shows in the circle.
 - 2026-10-26 08:42 (Matches & Catalog): Mahjong Studios tile sets: no tile-back views, so ALL Mahjong Studios tiles go to Photo coming soon, and the brand moves to the bottom of the brand list, until they send better photos.
+- 2026-10-26 08:43 (Matches & Catalog): CMC option C revised (3 smaller angled back tiles, Après Ski test) APPROVED: do all Charleston Mahjong Club sets that way. Re-confirmed: Start with tiles opens with no colour chip selected, all sets A-Z (already in v94, gate [59]).
