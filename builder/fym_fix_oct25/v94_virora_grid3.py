@@ -1,4 +1,4 @@
-"""FYM v94 (pending Tiffany's yes): Virora tile photo with a REAL, face-on back in the match card circle.
+"""FYM v94 (APPROVED by Tiffany Oct 26 9:00am): Virora tile photo with a REAL, face-on back in the match card circle.
 Tiffany Oct 26 8:41 (back not visible in the circle) + 8:52 (rejected side-lying cutouts; backs must be a flat top view).
 Each image = three of Virora's own 3x3 studio grid photos: faces | grid with a back tile in the centre | faces.
 config/fym-virora-backs-oct26.json (9 sets; 7 sets with no face-on back photo keep their current photo).
