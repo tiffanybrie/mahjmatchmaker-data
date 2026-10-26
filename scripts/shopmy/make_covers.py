@@ -79,7 +79,7 @@ COVERS = [
   [96203680, 96196661, 96195144, 96207171, 96203770]),
  (8398138, 'mahjong-lamps', 'Mahjong Lamps', 'cordless lamps for a cozy game night', 'table shop', '#c4932b', 5,
   [96222800, 96222662, 96193399, 96228999, 96232922]),
- (8392222, 'etsy-mahjong-mats', 'Etsy Mahjong Mats', 'one-of-a-kind mats from small shops', 'mat shop', '#e0607e', 5,
+ (8392222, 'etsy-mahjong-mats', 'Etsy Mahjong Mats', 'shop small: my favorite etsy mahjong mats', 'mat shop', '#e0607e', 5,
   [96122627, 96131839, 96131764, 96131413, 96131171]),
  (8399101, 'racks', 'Mahjong Racks', 'racks and pushers for every set', 'rack shop', '#054689', 3,
   [96217240, 96217176, 96217490]),
