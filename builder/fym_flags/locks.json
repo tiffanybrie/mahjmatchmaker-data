@@ -161,7 +161,7 @@
    "set": "Classic Tortoise",
    "src": "assets/tiles/album/classic-tortoise-cream.jpg",
    "full": "t71/tortoise.jpg",
-   "pile": "p71c60346dca5"
+   "pile": "p9202c3779cbe"
   },
   "missmahjong.com/miss-classic-mahjong-tile-set": {
    "set": "Miss Classic Jade",
@@ -21626,7 +21626,7 @@
    "f": "m/1943.webp",
    "th": "mt4bf6b6e6",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [],
    "mt": []
   },
@@ -21636,7 +21636,7 @@
    "f": "m/1369.webp",
    "th": "bc540dd490",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "green",
     "dark"
@@ -21652,7 +21652,7 @@
    "f": "m/1370.webp",
    "th": "6d33d5100e",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "green"
    ],
@@ -21666,7 +21666,7 @@
    "f": "m/1131.webp",
    "th": "mtca8b8c62",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "yellow",
     "orange",
@@ -21686,7 +21686,7 @@
    "f": "m/1371.webp",
    "th": "f54e653cf2",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "neutral",
     "green",
@@ -21706,7 +21706,7 @@
    "f": "m/1375.webp",
    "th": "2010c5dc69",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "green",
     "blue",
@@ -21724,7 +21724,7 @@
    "f": "m/1372.webp",
    "th": "9d58003345",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "pink",
     "dark",
@@ -21742,7 +21742,7 @@
    "f": "m/1368.webp",
    "th": "mtb7c65957",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "green"
    ],
@@ -21756,7 +21756,7 @@
    "f": "m/1938.webp",
    "th": "mt0d81d249",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "pink",
     "blue"
@@ -21772,7 +21772,7 @@
    "f": "m/1182.webp",
    "th": "6e243a4a9f",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "purple",
     "blue",
@@ -21790,7 +21790,7 @@
    "f": "m/1373.webp",
    "th": "649eb23368",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [],
    "mt": []
   },
@@ -21800,7 +21800,7 @@
    "f": "m/1376.webp",
    "th": "9de26700af",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "yellow",
     "green",
@@ -21818,7 +21818,7 @@
    "f": "m/1374.webp",
    "th": "b685a36a69",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "neutral",
     "red",
@@ -25655,6 +25655,8 @@
   "2026-10-25: sets m rack lists = her per-mat album racks (tile-level racks moved to D.ltc), Tiffany 17:10 Birdie + Luna",
   "2026-10-25: sets m rack lists = her per-mat album racks (tile-level racks moved to D.ltc), Tiffany 17:10 Birdie + Luna",
   "2026-10-26: tile photos for CMC (Tiffany 8:43am yes) + Virora grid3 (9:00am yes) -> new full/pile",
-  "2026-10-26: locks keep the ORIGINAL photo in full (gate reads t.fo); piles updated for approved CMC/Virora/Hummingbird (Tiffany 8:43, 9:00, 9:12)"
+  "2026-10-26: locks keep the ORIGINAL photo in full (gate reads t.fo); piles updated for approved CMC/Virora/Hummingbird (Tiffany 8:43, 9:00, 9:12)",
+  "2026-10-26: Bam Bird Classic Tortoise pile -> uniform faces|backs split (Tiffany 9:24am asked for the Bam Bird uniform format)",
+  "2026-10-26: Splash of Color mats hidden (Tiffany 9:23am pulled Splash + Mahjong Studios from FYM; her matched Splash mats stay)"
  ]
 }
