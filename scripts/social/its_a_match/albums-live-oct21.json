@@ -1882,7 +1882,7 @@
 "slug": "gemma",
 "tile": "Gemma",
 "maker": "Oh My Mahjong",
-"n": 15,
+"n": 12,
 "cards": [
 {
 "n": "01",
@@ -1966,27 +1966,6 @@
 "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@5a2c009644e93a45f1e3d8765889c6f48c95d8b1/assets/cards/new-oct18/gemma-mahjong-tiles-bespoke-mahjong-preppy-pink-garden-mat.jpg",
 "mat": "Preppy Pink Garden",
 "brand": "Bespoke Mahjong",
-"retired": false
-},
-{
-"n": "13",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/gemma-mahjong-tiles-betty-june-jeannette-livy-mat.jpg",
-"mat": "Livy",
-"brand": "Betty June & Jeannette",
-"retired": false
-},
-{
-"n": "14",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/gemma-mahjong-tiles-betty-june-jeannette-allie-purple-mat.jpg",
-"mat": "Allie (Purple)",
-"brand": "Betty June & Jeannette",
-"retired": false
-},
-{
-"n": "15",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/gemma-mahjong-tiles-sophie-clima-pink-orchids-mat.jpg",
-"mat": "Pink Orchids",
-"brand": "Sophie Clima",
 "retired": false
 }
 ],
@@ -3496,7 +3475,7 @@
 "slug": "jasmine",
 "tile": "Jasmine",
 "maker": "Oh My Mahjong",
-"n": 16,
+"n": 12,
 "cards": [
 {
 "n": "01",
@@ -3581,34 +3560,6 @@
 "mat": "KY Derby",
 "brand": "Oh My Mahjong",
 "retired": true
-},
-{
-"n": "13",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/jasmine-mahjong-tiles-sophie-clima-cheetah-in-chinoiserie-mat.jpg",
-"mat": "Cheetah in Chinoiserie",
-"brand": "Sophie Clima",
-"retired": false
-},
-{
-"n": "14",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/jasmine-mahjong-tiles-sophie-clima-whimsical-chinoiserie-meeting-in-the-pavilion-mat.jpg",
-"mat": "Whimsical Chinoiserie Meeting in the Pavilion",
-"brand": "Sophie Clima",
-"retired": false
-},
-{
-"n": "15",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/jasmine-mahjong-tiles-mahj-vine-chinoiserie-citrus-grove-mat.jpg",
-"mat": "Chinoiserie Citrus Grove",
-"brand": "Mahj & Vine",
-"retired": false
-},
-{
-"n": "16",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/jasmine-mahjong-tiles-betty-june-jeannette-nichole-mat.jpg",
-"mat": "Nichole",
-"brand": "Betty June & Jeannette",
-"retired": false
 }
 ],
 "he": 0,
@@ -4103,7 +4054,7 @@
 "slug": "limoncello",
 "tile": "Limoncello",
 "maker": "Oh My Mahjong Retired tile set",
-"n": 17,
+"n": 12,
 "cards": [
 {
 "n": "01",
@@ -4187,41 +4138,6 @@
 "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@c3ae3a324e57f45f24172fcebec938e1c0ebd70a/assets/cards/new-oct18/limoncello-mahjong-tiles-bam-lets-mahjong-secret-garden-mat.jpg",
 "mat": "Secret Garden",
 "brand": "Bam! Let's Mahjong",
-"retired": false
-},
-{
-"n": "13",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/limoncello-mahjong-tiles-tala-mahj-cabana-seafoam-blue-ivory-with-citrus-fringe-mat.jpg",
-"mat": "Cabana - Seafoam Blue & Ivory with Citrus Fringe",
-"brand": "Tala Mahj",
-"retired": false
-},
-{
-"n": "14",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/limoncello-mahjong-tiles-tala-mahj-cabana-pink-ivory-with-citrus-fringe-mat.jpg",
-"mat": "Cabana - Pink & Ivory with Citrus Fringe",
-"brand": "Tala Mahj",
-"retired": false
-},
-{
-"n": "15",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/limoncello-mahjong-tiles-betty-june-jeannette-the-kerry-mat.jpg",
-"mat": "The Kerry",
-"brand": "Betty June & Jeannette",
-"retired": false
-},
-{
-"n": "16",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/limoncello-mahjong-tiles-betty-june-jeannette-brinkley-mat.jpg",
-"mat": "Brinkley",
-"brand": "Betty June & Jeannette",
-"retired": false
-},
-{
-"n": "17",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/limoncello-mahjong-tiles-sophie-clima-chinoiserie-elephant-with-pagodas-mat.jpg",
-"mat": "Chinoiserie Elephant with Pagodas",
-"brand": "Sophie Clima",
 "retired": false
 }
 ],
@@ -4923,7 +4839,7 @@
 "slug": "nantucket",
 "tile": "Nantucket",
 "maker": "Oh My Mahjong",
-"n": 13,
+"n": 12,
 "cards": [
 {
 "n": "01",
@@ -5008,13 +4924,6 @@
 "mat": "Camellia",
 "brand": "Oh My Mahjong",
 "retired": true
-},
-{
-"n": "13",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/nantucket-mahjong-tiles-golden-pond-mahjong-midori-shadows-mat.jpg",
-"mat": "Midori Shadows",
-"brand": "Golden Pond Mahjong",
-"retired": false
 }
 ],
 "he": 0,
@@ -5024,7 +4933,7 @@
 "slug": "osler",
 "tile": "Osler",
 "maker": "Oh My Mahjong",
-"n": 23,
+"n": 19,
 "cards": [
 {
 "n": "01",
@@ -5157,34 +5066,6 @@
 "img": "https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/18515370-45ef-4c32-a4f2-7bdb62c97c6d/osler-mahjong-tiles-sweet-jojo-designs-boho-wildflower-mat-rack-match.jpg",
 "mat": "Boho Wildflower",
 "brand": "Sweet Jojo Designs",
-"retired": false
-},
-{
-"n": "20",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/osler-mahjong-tiles-ozark-mahjongg-winslow-1920-navy-mat.jpg",
-"mat": "Winslow 1920 Navy",
-"brand": "Ozark Mahjongg",
-"retired": false
-},
-{
-"n": "21",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/osler-mahjong-tiles-ozark-mahjongg-winslow-1920-rouge-mat.jpg",
-"mat": "Winslow 1920 Rouge",
-"brand": "Ozark Mahjongg",
-"retired": false
-},
-{
-"n": "22",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/osler-mahjong-tiles-mahjong-by-si-gatsby-mat.jpg",
-"mat": "Gatsby",
-"brand": "Mahjong by SI",
-"retired": false
-},
-{
-"n": "23",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/osler-mahjong-tiles-tala-mahj-the-pavilion-bamboo-neutral-with-blue-fringe-mat.jpg",
-"mat": "The Pavilion - Bamboo Neutral with Blue Fringe",
-"brand": "Tala Mahj",
 "retired": false
 }
 ],
@@ -5890,7 +5771,7 @@
 "slug": "pippa",
 "tile": "Pippa",
 "maker": "Oh My Mahjong",
-"n": 26,
+"n": 19,
 "cards": [
 {
 "n": "01",
@@ -6023,55 +5904,6 @@
 "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@5a2c009644e93a45f1e3d8765889c6f48c95d8b1/assets/cards/new-oct18/pippa-mahjong-tiles-bam-lets-mahjong-secret-garden-mat.jpg",
 "mat": "Secret Garden",
 "brand": "Bam! Let's Mahjong",
-"retired": false
-},
-{
-"n": "20",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/pippa-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg",
-"mat": "Peony and Parasol",
-"brand": "Splash of Color",
-"retired": false
-},
-{
-"n": "21",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/pippa-mahjong-tiles-tala-mahj-colony-chartreuse-petal-pink-mat.jpg",
-"mat": "Colony - Chartreuse & Petal Pink",
-"brand": "Tala Mahj",
-"retired": false
-},
-{
-"n": "22",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/pippa-mahjong-tiles-tala-mahj-cabana-pink-ivory-with-citrus-fringe-mat.jpg",
-"mat": "Cabana - Pink & Ivory with Citrus Fringe",
-"brand": "Tala Mahj",
-"retired": false
-},
-{
-"n": "23",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/pippa-mahjong-tiles-betty-june-jeannette-nora-mat.jpg",
-"mat": "Nora",
-"brand": "Betty June & Jeannette",
-"retired": false
-},
-{
-"n": "24",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/pippa-mahjong-tiles-betty-june-jeannette-caroline-preppy-mat.jpg",
-"mat": "Caroline (Preppy)",
-"brand": "Betty June & Jeannette",
-"retired": false
-},
-{
-"n": "25",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/pippa-mahjong-tiles-wren-mats-watercolor-floral-mat.jpg",
-"mat": "Watercolor Floral",
-"brand": "Wren Mats",
-"retired": false
-},
-{
-"n": "26",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/pippa-mahjong-tiles-mahj-vine-chinoiserie-citrus-grove-mat.jpg",
-"mat": "Chinoiserie Citrus Grove",
-"brand": "Mahj & Vine",
 "retired": false
 }
 ],
@@ -7031,7 +6863,7 @@
 "slug": "sorbet",
 "tile": "Sorbet",
 "maker": "Oh My Mahjong Retired tile set",
-"n": 20,
+"n": 12,
 "cards": [
 {
 "n": "01",
@@ -7115,62 +6947,6 @@
 "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@c3ae3a324e57f45f24172fcebec938e1c0ebd70a/assets/cards/codefooter-v1/cards/new-oct18/sorbet-mahjong-tiles-rebecca-illustrated-rainbow-row-mat.jpg",
 "mat": "Rainbow Row",
 "brand": "Rebecca Illustrated",
-"retired": false
-},
-{
-"n": "13",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sorbet-mahjong-tiles-tala-mahj-colony-chartreuse-petal-pink-mat.jpg",
-"mat": "Colony - Chartreuse & Petal Pink",
-"brand": "Tala Mahj",
-"retired": false
-},
-{
-"n": "14",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sorbet-mahjong-tiles-tala-mahj-cabana-pink-ivory-with-citrus-fringe-mat.jpg",
-"mat": "Cabana - Pink & Ivory with Citrus Fringe",
-"brand": "Tala Mahj",
-"retired": false
-},
-{
-"n": "15",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sorbet-mahjong-tiles-betty-june-jeannette-katelyn-yellow-mat.jpg",
-"mat": "Katelyn (Yellow)",
-"brand": "Betty June & Jeannette",
-"retired": false
-},
-{
-"n": "16",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sorbet-mahjong-tiles-tala-mahj-cabana-seafoam-blue-ivory-with-citrus-fringe-mat.jpg",
-"mat": "Cabana - Seafoam Blue & Ivory with Citrus Fringe",
-"brand": "Tala Mahj",
-"retired": false
-},
-{
-"n": "17",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sorbet-mahjong-tiles-betty-june-jeannette-caroline-preppy-mat.jpg",
-"mat": "Caroline (Preppy)",
-"brand": "Betty June & Jeannette",
-"retired": false
-},
-{
-"n": "18",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sorbet-mahjong-tiles-betty-june-jeannette-nora-mat.jpg",
-"mat": "Nora",
-"brand": "Betty June & Jeannette",
-"retired": false
-},
-{
-"n": "19",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sorbet-mahjong-tiles-mahj-vine-chinoiserie-citrus-grove-mat.jpg",
-"mat": "Chinoiserie Citrus Grove",
-"brand": "Mahj & Vine",
-"retired": false
-},
-{
-"n": "20",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sorbet-mahjong-tiles-betty-june-jeannette-brinkley-mat.jpg",
-"mat": "Brinkley",
-"brand": "Betty June & Jeannette",
 "retired": false
 }
 ],
@@ -7544,7 +7320,7 @@
 "slug": "sunset",
 "tile": "Sunset",
 "maker": "Oh My Mahjong Retired tile set",
-"n": 15,
+"n": 10,
 "cards": [
 {
 "n": "01",
@@ -7615,41 +7391,6 @@
 "mat": "Zen Glow",
 "brand": "Oh My Mahjong",
 "retired": true
-},
-{
-"n": "11",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sunset-mahjong-tiles-yolo-mahjong-pink-tiger-mat.jpg",
-"mat": "Pink Tiger",
-"brand": "YOLO Mahjong",
-"retired": false
-},
-{
-"n": "12",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sunset-mahjong-tiles-betty-june-jeannette-brooke-mat.jpg",
-"mat": "Brooke",
-"brand": "Betty June & Jeannette",
-"retired": false
-},
-{
-"n": "13",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sunset-mahjong-tiles-betty-june-jeannette-betty-floral-monogrammed-neoprene-mat.jpg",
-"mat": "Betty Floral (Monogrammed Neoprene)",
-"brand": "Betty June & Jeannette",
-"retired": false
-},
-{
-"n": "14",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sunset-mahjong-tiles-betty-june-jeannette-elizabeth-mat.jpg",
-"mat": "Elizabeth",
-"brand": "Betty June & Jeannette",
-"retired": false
-},
-{
-"n": "15",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sunset-mahjong-tiles-sophie-clima-cheeky-cockatoo-mat.jpg",
-"mat": "Cheeky Cockatoo",
-"brand": "Sophie Clima",
-"retired": false
 }
 ],
 "he": 0,
@@ -7830,7 +7571,7 @@
 "slug": "taylor",
 "tile": "Taylor",
 "maker": "Oh My Mahjong Retired tile set",
-"n": 17,
+"n": 13,
 "cards": [
 {
 "n": "01",
@@ -7922,34 +7663,6 @@
 "mat": "Peri-Twinkle",
 "brand": "Oh My Mahjong",
 "retired": true
-},
-{
-"n": "14",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/taylor-mahjong-tiles-betty-june-jeannette-livy-mat.jpg",
-"mat": "Livy",
-"brand": "Betty June & Jeannette",
-"retired": false
-},
-{
-"n": "15",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/taylor-mahjong-tiles-betty-june-jeannette-nora-mat.jpg",
-"mat": "Nora",
-"brand": "Betty June & Jeannette",
-"retired": false
-},
-{
-"n": "16",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/taylor-mahjong-tiles-betty-june-jeannette-caroline-preppy-mat.jpg",
-"mat": "Caroline (Preppy)",
-"brand": "Betty June & Jeannette",
-"retired": false
-},
-{
-"n": "17",
-"img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/taylor-mahjong-tiles-betty-june-jeannette-elizabeth-mat.jpg",
-"mat": "Elizabeth",
-"brand": "Betty June & Jeannette",
-"retired": false
 }
 ],
 "he": 0,
