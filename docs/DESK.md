@@ -138,7 +138,7 @@ See CLAUDE.md.
 
 - **MAT SWIPE-BOOK CARDS INTO TILE ALBUMS (Matches & Catalog → Ops; Tiffany Oct 25 8:17pm, top of their list after launch blockers):** Larkspur hearts (28 sets in FYM; cards in assets/cards/larkspur-v6) appear on 0 of 27 live album pages (audit: /tmp list re-runnable = for each FYM set whose m has www.ohmymahjong.com/larkspur-mat-in-tube, curl the album and grep 'larkspur'). Add each card to its tile set album in her usual order position (her call on placement if unclear: end of the album, before holiday), warm jsDelivr, push. Then the same audit + adds for every other mat swipe book: Revelry, Isla, Peony & Parasol, Art Deco Dayz, Spring Fling, Santa Baby's, Vivienne, Mat of the Moment/Brownstone. Report the counts to her.
 
-- **OPS: VERSATILE MATS POST SWAP (approved Oct 25 8:19pm; standing Ops job, no OK needed):** follow site/livepatch/blog-versatile-mats-v2/README.md (block pinned @555f0bd188b34b2440e9647ceb0fae13ca39ac49, warmed). Rollback text first, verify, request indexing, close tab.
+- **DONE (Ops, Oct 25 ~9:05pm ET): VERSATILE MATS POST SWAP.** /blog/most-versatile-mahjong-mats now carries the approved v2 block (@555f0bd). Verified by curl (Leather and leatherette / Dark, layered blues and greens / Test it in present, old OMM-only heading gone); 390px iframe check: 20 images load, no sideways scroll. Rollback: site/livepatch/blog-versatile-mats-v2/rollback-2026-10-25.html. Search Console indexing requested. Tab closed.
 
 ## DONE (Oct 25 9:10pm ET): holiday mats -> ShopMy "Etsy & Amazon Holiday Mats" (8507446)
 All 51 items from Amazon list 2DG7AI4T6U8KJ added (shelf = 65 products, no broken images). Two plaid tablecloths (B0HJ2LCBNZ, B0H9KZY2L4) also added to Mahjong Tablecloths 8400954 (14 items).
