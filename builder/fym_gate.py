@@ -701,6 +701,19 @@ for _k in sorted(_vt65):
         _bd = np.concatenate([_a[:6].ravel(), _a[-6:].ravel(), _a[:, :6].ravel(), _a[:, -6:].ravel()]).mean()
         if _bd < 60: F.append(f"[65] Bespoke tile {D['tiles'][_k].get('n')} photo has a dark background (border {_bd:.0f})")
     except Exception as _e: F.append(f"[65] Bespoke tile {_k} photo not readable: {_e}")
+# [66] Oct 26 (Tiffany 9:03-9:05am): PLM + My Fair Mahjong tile photos fill the match-card circle (no white background
+# showing): outer ring of the centred square crop of t.full has <3% pure-white pixels (config/fym-tilezoom-oct26.json)
+_zc = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-tilezoom-oct26.json')))['tiles']
+_zk = set(_zc) | {s['tile'] for s in D['sets'] if vis(s) and s['tile'].startswith('peacelovemahjong.com/')}
+for _k in sorted(_zk):
+    _t = T.get(_k)
+    if not _t or _t.get('soon') or not _t.get('full'): continue
+    try:
+        _im = Image.open(os.path.join(B, _t['full'])).convert('RGB'); _s = min(_im.size); _x = (_im.width - _s) // 2; _y = (_im.height - _s) // 2
+        _a = np.asarray(_im.crop((_x, _y, _x + _s, _y + _s)).resize((200, 200))).astype(int)
+        _yy, _xx = np.mgrid[:200, :200]; _r = np.hypot(_xx - 99.5, _yy - 99.5); _w = (_a.min(2) > 248)[(_r < 100) & (_r > 80)].mean()
+        if _w >= .03: F.append(f"[66] {_t.get('n')}: tile photo doesn't fill the match-card circle ({_w:.0%} white at the edge)")
+    except Exception as _e: F.append(f"[66] {_k}: could not check ({_e})")
 # [62] Oct 26 (Tiffany 8:48am, replaces 8:42): Mahjong Studios tile photos follow config/fym-mstudios-oct26.json
 # (keep / white_bg / pile_photo / soon / hide; builder/fym_fix_oct25/v94_mstudios.py); brands whose sets are all
 # 'Photo coming soon' sort last in Shop by brand
