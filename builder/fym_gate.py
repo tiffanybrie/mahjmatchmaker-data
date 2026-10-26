@@ -723,6 +723,21 @@ for _k69, _r69 in D['racks'].items():
     if not _r69.get('hid') and _r69.get('n', '').strip() in ('Racks', 'Mahjong Rack & Pusher Set', 'Rack & Pusher Set'): F.append(f"[69] rack with no real name: {_k69}")
 # [71] Oct 26 (Tiffany 10:48am): match-card title stays within the mat/button column (builder/fym_fix_oct25/v95_titlewidth.py)
 if "TW=Math.min(W-120-2*SW,W*.74)" not in UI: F.append("[71] match-card title can run wider than the mat column (long set names overhang)")
+# [70] Oct 26 (Tiffany 10:46am): no visible rack's card photo is portrait (racks standing up mock up tiny on the match
+# card); content box (alpha / non-white) h/w must be < 1.3. Let's Mahj On Luxe Pink is a 3D standing shot, allowed.
+try:
+    import io as _io70, numpy as _np70
+    from PIL import Image as _Im70
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from fym_rack_images import shown as _shown70
+    _ok70 = {'www.letsmahj-on.com/luxe-acrylic-scalloped-mahjong-rack-pink'}
+    for _k, _n, _t, _h, _b in _shown70(B):
+        if _t != 'sm' or not _b or _k in _ok70: continue
+        _a = _np70.asarray(_Im70.open(_io70.BytesIO(_b)).convert('RGBA')).astype(int)
+        _m = _a[..., 3] > 40 if _a[..., 3].min() < 250 else _a[..., :3].min(2) < 235
+        _ys, _xs = _np70.where(_m)
+        if len(_xs) and (_ys.max() - _ys.min() + 1) >= 1.3 * (_xs.max() - _xs.min() + 1): F.append(f"[70] rack photo is portrait (racks standing up): {_n}")
+except Exception as _e: F.append(f"[70] portrait rack check did not run: {_e}")
 # [67] Oct 26 (Tiffany 9:23/9:24am): Mahjong Studios + Splash of Color pulled from FYM; only Splash mats on her own matches stay
 _k67 = {x[0] for s_ in D['sets'] for x in s_.get('m', [])}
 for s_ in D['sets']:

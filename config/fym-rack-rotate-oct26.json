@@ -1,0 +1,125 @@
+{
+ "_note": "Tiffany Oct 26 10:46am: vertical/portrait rack photos mock up tiny and in the wrong proportions on the match card. Every visible rack whose card photo was portrait (content h/w >= 1.3) is rotated 90 deg so the racks lie horizontally (real photo, rotate + trim only); 3 dingy Bam! Let's Mahjong white/clear photos got a neutral brightness lift; Bam Bird white acrylic set: its own listing image 0 with the lavender mat lifted to white (racks untouched), rotated. HD copies dropped (rotated image is the card image). Built in scratchpad fym/rr; Let's Mahj On Luxe Pink (a 3D standing shot, ratio 1.31) left as is.",
+ "racks": {
+  "myfairmahjong.com/wooden-racks?v=53371892990263": {
+   "img": "assets/racks/v95/rot-wooden-racks-v-53371892990263.webp",
+   "name": "My Fair Mahjong Natural Wood",
+   "how": "rotate 90",
+   "src": "card image"
+  },
+  "www.bambirdboutique.com/white-acrylic-rack-and-pusher-set-set-of-4": {
+   "img": "assets/racks/v95/rot-white-acrylic-rack-and-pusher-set-set-of-4.webp",
+   "name": "Mahjong Rack & Pusher Set",
+   "how": "bg lifted to white + rotate 90",
+   "src": "hd copy"
+  },
+  "www.bamletsmahjong.com/mahjong-black-acrylic-racks-and-scallop-pushers": {
+   "img": "assets/racks/v95/rot-mahjong-black-acrylic-racks-and-scallop-pushers.webp",
+   "name": "Mahjong Black Acrylic Racks and Scallop Pushers",
+   "how": "rotate 90",
+   "src": "hd copy"
+  },
+  "www.bambirdboutique.com/wooden-two-player-mahjong-racks-set-of-2": {
+   "img": "assets/racks/v95/rot-wooden-two-player-mahjong-racks-set-of-2.webp",
+   "name": "Two Player Wood Mahjong Racks",
+   "how": "rotate 90",
+   "src": "hd copy"
+  },
+  "mahjmood.com/white-wooden-racks-with-scalloped-pushers": {
+   "img": "assets/racks/v95/rot-white-wooden-racks-with-scalloped-pushers.webp",
+   "name": "White Wooden Racks with Scalloped Pushers",
+   "how": "rotate 90",
+   "src": "hd copy"
+  },
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611466549": {
+   "img": "assets/racks/v95/rot-lucite-rack-and-pusher-set-set-include-4-racks-and.webp",
+   "name": "Bam Bird Boutique Lucite – Tortoise",
+   "how": "rotate 90",
+   "src": "hd copy"
+  },
+  "mahjmood.com/baby-blue-wooden-racks-with-scalloped-pushers": {
+   "img": "assets/racks/v95/rot-baby-blue-wooden-racks-with-scalloped-pushers.webp",
+   "name": "Baby Blue Wooden Racks with Scalloped Pushers",
+   "how": "rotate 90",
+   "src": "hd copy"
+  },
+  "mahjmood.com/double-wooden-mahjong-racks": {
+   "img": "assets/racks/v95/rot-double-wooden-mahjong-racks.webp",
+   "name": "Double Wooden Mahjong Racks (Set of Racks and 4 Pushers)",
+   "how": "rotate 90",
+   "src": "hd copy"
+  },
+  "www.bamletsmahjong.com/mahjong-white-acrylic-rack-and-pusher": {
+   "img": "assets/racks/v95/rot-mahjong-white-acrylic-rack-and-pusher.webp",
+   "name": "Mahjong White Acrylic Rack and Pusher",
+   "how": "rotate 90 + brightness x1.13 (neutral, no colour shift)",
+   "src": "card image"
+  },
+  "www.bamletsmahjong.com/mahjong-clear-acrylic-racks-and-scallop-pusher": {
+   "img": "assets/racks/v95/rot-mahjong-clear-acrylic-racks-and-scallop-pusher.webp",
+   "name": "Mahjong Clear Acrylic Racks and Scallop Pusher",
+   "how": "rotate 90 + brightness x1.13 (neutral, no colour shift)",
+   "src": "hd copy"
+  },
+  "www.bamletsmahjong.com/wooden-mahjong-racks-pushers-black-4-set": {
+   "img": "assets/racks/v95/rot-wooden-mahjong-racks-pushers-black-4-set.webp",
+   "name": "Wooden Mahjong Racks & Pushers - Black - 4 Set",
+   "how": "rotate 90",
+   "src": "hd copy"
+  },
+  "www.bamletsmahjong.com/white-acrylic-double-mahjong-racks-with-magnetic-pushers-set-of-2": {
+   "img": "assets/racks/v95/rot-white-acrylic-double-mahjong-racks-with-magnetic-p.webp",
+   "name": "White Acrylic Double Mahjong Racks with Magnetic Pushers (Set of 2)",
+   "how": "rotate 90",
+   "src": "hd copy"
+  },
+  "www.bamletsmahjong.com/white-acrylic-racks-set-4": {
+   "img": "assets/racks/v95/rot-white-acrylic-racks-set-4.webp",
+   "name": "White Acrylic Mahjong Racks - Set of 4",
+   "how": "rotate 90",
+   "src": "hd copy"
+  },
+  "www.bamletsmahjong.com/white-wooden-racks-set-4": {
+   "img": "assets/racks/v95/rot-white-wooden-racks-set-4.webp",
+   "name": "Wooden Mahjong Racks & Pushers - White - 4 Set",
+   "how": "rotate 90 + brightness x1.17 (neutral, no colour shift)",
+   "src": "card image"
+  },
+  "mahjmood.com/chocolate-brown-wooden-racks-with-scalloped-pushers": {
+   "img": "assets/racks/v95/rot-chocolate-brown-wooden-racks-with-scalloped-pusher.webp",
+   "name": "Mahj Mood Chocolate Brown Wooden",
+   "how": "rotate 90",
+   "src": "hd copy"
+  },
+  "mahjmood.com/luxe-racks-amethyst": {
+   "img": "assets/racks/v95/rot-luxe-racks-amethyst.webp",
+   "name": "Mahj Mood Luxe",
+   "how": "rotate 90",
+   "src": "hd copy"
+  },
+  "mahjmood.com/luxe-racks-grey-marble-acrylic-4": {
+   "img": "assets/racks/v95/rot-luxe-racks-grey-marble-acrylic-4.webp",
+   "name": "Mahj Mood Luxe",
+   "how": "rotate 90",
+   "src": "hd copy"
+  },
+  "mahjmood.com/scalloped-pink-wooden-rack-and-pusher-set-of-4": {
+   "img": "assets/racks/v95/rot-scalloped-pink-wooden-rack-and-pusher-set-of-4.webp",
+   "name": "Mahj Mood Pink Wooden",
+   "how": "rotate 90",
+   "src": "hd copy"
+  },
+  "tigredetartan.com/february-preorder-tortoise-scalloped-acrylic-mahjong-racks-with-magnetic-pushers-set-of-4-with-dust-bag": {
+   "img": "assets/racks/v95/rot-february-preorder-tortoise-scalloped-acrylic-mahjo.webp",
+   "name": "Tigre de Tartan Tortoise Acrylic Scalloped",
+   "how": "rotate -90",
+   "src": "hd copy"
+  },
+  "mahjmood.com/white-acrylic-racks-set-of-4-no-pushers-included": {
+   "img": "assets/racks/v95/rot-white-acrylic-racks-set-of-4-no-pushers-included.webp",
+   "name": "White Acrylic Racks- Set of 4 (NO PUSHERS INCLUDED)",
+   "how": "rotate 90",
+   "src": "hd copy"
+  }
+ }
+}
