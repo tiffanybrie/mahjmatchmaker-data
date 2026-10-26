@@ -1,0 +1,86 @@
+{
+ "_note": "Virora straight-up-back photo (Tiffany Oct 26 8:41 wanted the tile back in the match card circle; 8:52 rejected side-lying cutouts: backs must be a flat, face-on top view). 1600x700 = three of Virora's OWN 3x3 studio grid photos side by side: faces grid | the grid whose centre tile is a real back, face-on (x544-1056, centred in the Mood board circle) | faces grid; white lines 536-543 and 1056-1063. No cutouts, no added shadows. Builder assets/tiles/v94/virora-src/build3.py. Patch builder/fym_fix_oct25/v94_virora_grid3.py. NOT in the v94 chain until Tiffany says yes. Not covered (Virora has no face-on back photo): florea, viozelle, elanisse, rosanelle, florielle, amethisse, iriselle; they keep their current photo.",
+ "splits": {
+  "hol:nivalee-blue": {
+   "img": "assets/tiles/v94/virora-nivalee-glacier-blue-grid3.jpg",
+   "src_imgs": {
+    "faces_left": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20261014091749_10736_242.jpg?v=1791940712",
+    "back": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260930154206_12687_87.jpg?v=1790757090",
+    "faces_right": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260908173541_9580_242_65262cdd-629f-411d-80ab-54a2d7e9e4c4.jpg?v=1791940562"
+   }
+  },
+  "hol:tinselle-emerald": {
+   "img": "assets/tiles/v94/virora-tinselle-emerald-green-grid3.jpg",
+   "src_imgs": {
+    "faces_left": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260929150540_10535_242.jpg?v=1790668269",
+    "back": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260929151838_10544_242.jpg?v=1790668269",
+    "faces_right": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260929150540_10532_242.jpg?v=1790668269"
+   }
+  },
+  "hol:tinselle-ruby": {
+   "img": "assets/tiles/v94/virora-ruby-christmas-grid3.jpg",
+   "src_imgs": {
+    "faces_left": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/2_38f55cb6-532c-4cd7-b7e4-acf103a211a2.jpg?v=1787642686",
+    "back": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/2_32cda672-9278-49f9-b195-3f51d189f3e2.jpg?v=1787642686",
+    "faces_right": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260825170303_7653_242.jpg?v=1787650100"
+   }
+  },
+  "www.viroramahjong.com/christmas-collection-ii-nivalee": {
+   "img": "assets/tiles/v94/virora-christmas-collection-ii-nivalee-grid3.jpg",
+   "src_imgs": {
+    "faces_left": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260908173541_9580_242.jpg?v=1788861576",
+    "back": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260908173541_9581_242.jpg?v=1788861576",
+    "faces_right": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260908173542_9582_242.jpg?v=1788861575"
+   }
+  },
+  "www.viroramahjong.com/sylvaria": {
+   "img": "assets/tiles/v94/virora-sylvaria-grid3.jpg",
+   "src_imgs": {
+    "faces_left": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/2_5_88e4137c-c6b8-4f61-b743-87f930d1484e.jpg?v=1789634658",
+    "back": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/2_2_14accd57-5001-4d33-9617-93c88d20c81f.jpg?v=1789634658",
+    "faces_right": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/2_4_b59b9e59-f7b9-406c-989f-77ce864ce70b.jpg?v=1789634658"
+   }
+  },
+  "www.viroramahjong.com/aveline": {
+   "img": "assets/tiles/v94/virora-aveline-grid3.jpg",
+   "src_imgs": {
+    "faces_left": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/2_10.jpg?v=1788163066",
+    "back": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20261009144145_10636_242.jpg?v=1791528270",
+    "faces_right": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/2_6_d930b279-1bef-4a64-957d-1106c89ce865.jpg?v=1788163065"
+   }
+  },
+  "www.viroramahjong.com/yellow-lilacee": {
+   "img": "assets/tiles/v94/virora-yellow-lilacee-grid3.jpg",
+   "src_imgs": {
+    "faces_left": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/2_5.jpg?v=1788162632",
+    "back": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/2_2.jpg?v=1788162632",
+    "faces_right": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/2_4_34c6c30a-bfbc-4ebe-bc86-a57eece32c92.jpg?v=1788162631"
+   }
+  },
+  "www.viroramahjong.com/marivelle": {
+   "img": "assets/tiles/v94/virora-marivelle-grid3.jpg",
+   "src_imgs": {
+    "faces_left": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/2_3_33967ab2-c1f8-40ed-bfdc-2346861c9216.jpg?v=1788341590",
+    "back": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/2_5_1d94a00f-a60d-4649-adad-82628e777350.jpg?v=1788341590",
+    "faces_right": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/2_4_6e3f4ab0-5891-45a2-86d8-18baeb29f7b2.jpg?v=1788341589"
+   }
+  },
+  "www.viroramahjong.com/petalee": {
+   "img": "assets/tiles/v94/virora-petalee-grid3.jpg",
+   "src_imgs": {
+    "faces_left": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/2_10_6392a403-f771-4590-92bb-5e275737db93.jpg?v=1791626139",
+    "back": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/2_6_2ac13a81-68f7-47b5-a74f-5e0c51b46df2.jpg?v=1791626139",
+    "faces_right": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/2_8_b5680db6-b253-4365-9549-a6fb8df67194.jpg?v=1791626138"
+   }
+  }
+ },
+ "no_flat_back": [
+  "www.viroramahjong.com/florea",
+  "www.viroramahjong.com/viozelle",
+  "www.viroramahjong.com/elanisse",
+  "www.viroramahjong.com/rosanelle",
+  "www.viroramahjong.com/florielle",
+  "www.viroramahjong.com/amethisse",
+  "www.viroramahjong.com/iriselle"
+ ]
+}
