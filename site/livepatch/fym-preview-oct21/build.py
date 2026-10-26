@@ -20,8 +20,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CDN = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@'
 ASSET = CDN + '44563dd1c2c4d9a00aa3deec61b1d86ccfdbcaf8/assets/site/fym-page/'
 WORDMARK = CDN + '8952b136784680ba365a33d7ae13ba91a25ab561/assets/brand/mahjmatchmaker-wordmark-notag.png'
-APP_COMMIT = 'a8e9e2a8df5f8a0dec5d716cc1aefe85e9f650f0'
-APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v96/index.html'  # public 'Version 1.0' = internal v96 (Oct 26: clean white/clear rack cutouts, poor rack photos never lead; files @b80d857)
+APP_COMMIT = '2490bec5a1f8f87d54ab49550649af908f7dbeaa'
+APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v97/index.html'  # public 'Version 1.1' = internal v97 (Oct 26 evening: sticky-search + accent search fixes, MFM sets unhidden, Jubilee Midnight Blue, natural wood rack, PLM racks recut, white-band mats trimmed, mat-door Add racks; files @2260733)
 APP_BASE = CDN + 'ad0675e42242c3abad40cac9f539a265220e26eb' + '/site-app/fym-v72/'  # every file but index.html is unchanged since v72; base stays on the v72 commit (warmed; jsDelivr 403'd t15/132.jpg at the new commit)
 
 # Oct 21 3:13pm (Tiffany): the tool's promo SHOWS THE TOOL. Hero = real v69 app screens in a true-proportion iPhone
