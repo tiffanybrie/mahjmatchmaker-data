@@ -1,0 +1,98 @@
+{
+ "sorbet": {
+  "name": "Sorbet",
+  "album": "https://www.mahjmatchmaker.com/sorbet-mahjong-tile-matches",
+  "n": 8,
+  "brands": [
+   "Betty June & Jeannette",
+   "Mahj & Vine",
+   "Tala Mahj"
+  ],
+  "file": "sorbet-cards.html"
+ },
+ "sunset": {
+  "name": "Sunset",
+  "album": "https://www.mahjmatchmaker.com/sunset-mahjong-tile-matches",
+  "n": 5,
+  "brands": [
+   "Betty June & Jeannette",
+   "Sophie Clima",
+   "YOLO Mahjong"
+  ],
+  "file": "sunset-cards.html"
+ },
+ "limoncello": {
+  "name": "Limoncello",
+  "album": "https://www.mahjmatchmaker.com/limoncello-mahjong-tile-matches",
+  "n": 5,
+  "brands": [
+   "Betty June & Jeannette",
+   "Sophie Clima",
+   "Tala Mahj"
+  ],
+  "file": "limoncello-cards.html"
+ },
+ "gemma": {
+  "name": "Gemma",
+  "album": "https://www.mahjmatchmaker.com/gemma-mahjong-tile-matches",
+  "n": 3,
+  "brands": [
+   "Betty June & Jeannette",
+   "Sophie Clima"
+  ],
+  "file": "gemma-cards.html"
+ },
+ "taylor": {
+  "name": "Taylor",
+  "album": "https://www.mahjmatchmaker.com/taylor-mahjong-tile-matches",
+  "n": 4,
+  "brands": [
+   "Betty June & Jeannette"
+  ],
+  "file": "taylor-cards.html"
+ },
+ "jasmine": {
+  "name": "Jasmine",
+  "album": "https://www.mahjmatchmaker.com/jasmine-mahjong-tile-matches",
+  "n": 4,
+  "brands": [
+   "Betty June & Jeannette",
+   "Mahj & Vine",
+   "Sophie Clima"
+  ],
+  "file": "jasmine-cards.html"
+ },
+ "nantucket": {
+  "name": "Nantucket",
+  "album": "https://www.mahjmatchmaker.com/nantucket-mahjong-tile-matches",
+  "n": 1,
+  "brands": [
+   "Golden Pond Mahjong"
+  ],
+  "file": "nantucket-cards.html"
+ },
+ "pippa": {
+  "name": "Pippa",
+  "album": "https://www.mahjmatchmaker.com/pippa-mahjong-tile-matches",
+  "n": 7,
+  "brands": [
+   "Betty June & Jeannette",
+   "Mahj & Vine",
+   "Splash of Color",
+   "Tala Mahj",
+   "Wren Mats"
+  ],
+  "file": "pippa-cards.html"
+ },
+ "osler": {
+  "name": "Osler",
+  "album": "https://www.mahjmatchmaker.com/osler-mahjong-tile-matches",
+  "n": 4,
+  "brands": [
+   "Mahjong by SI",
+   "Ozark Mahjongg",
+   "Tala Mahj"
+  ],
+  "file": "osler-cards.html"
+ }
+}

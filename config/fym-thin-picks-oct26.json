@@ -1,0 +1,641 @@
+{
+ "_about": "Tiffany's 41 hearts, thin-album review Oct 23-24 (artifact UQy4YpGD2RR5Z1WqswJWYM). Her real picks: FYM s.m via builder/fym_fix_oct26/v94_thinpicks.py, AFTER the album cards are live (site/livepatch/thin-albums-oct26/README.md).",
+ "picks": [
+  {
+   "set": "sorbet",
+   "key": "talamahj.com/the-promenade-mat",
+   "name": "Colony - Chartreuse & Petal Pink",
+   "brand": "Tala Mahj",
+   "racks": [
+    "Bird & Bamboo Icy Mint",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Middle & Main Scalloped Beechwood",
+    "Bird & Bamboo Butter"
+   ],
+   "file": "sorbet-mahjong-tiles-tala-mahj-colony-chartreuse-petal-pink-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sorbet-mahjong-tiles-tala-mahj-colony-chartreuse-petal-pink-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96067690"
+  },
+  {
+   "set": "sorbet",
+   "key": "talamahj.com/cabana-mahjong-mat-pink-ivory-with-citrus-fringe",
+   "name": "Cabana - Pink & Ivory with Citrus Fringe",
+   "brand": "Tala Mahj",
+   "racks": [
+    "Bird & Bamboo Icy Mint",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Middle & Main Scalloped Beechwood",
+    "Bird & Bamboo Glowstick"
+   ],
+   "file": "sorbet-mahjong-tiles-tala-mahj-cabana-pink-ivory-with-citrus-fringe-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sorbet-mahjong-tiles-tala-mahj-cabana-pink-ivory-with-citrus-fringe-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96304571"
+  },
+  {
+   "set": "sorbet",
+   "key": "www.etsy.com/listing/4497433465/the-katelyn-yellow-mahjong-mat",
+   "name": "Katelyn (Yellow)",
+   "brand": "Betty June & Jeannette",
+   "racks": [
+    "Bird & Bamboo Icy Mint",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Middle & Main Scalloped Beechwood",
+    "Bird & Bamboo Yellow",
+    "Bird & Bamboo Dijon"
+   ],
+   "file": "sorbet-mahjong-tiles-betty-june-jeannette-katelyn-yellow-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sorbet-mahjong-tiles-betty-june-jeannette-katelyn-yellow-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96125355"
+  },
+  {
+   "set": "sorbet",
+   "key": "talamahj.com/cabana-mahjong-mat-lagoon-blue-ivory-with-citrus-fringe",
+   "name": "Cabana - Seafoam Blue & Ivory with Citrus Fringe",
+   "brand": "Tala Mahj",
+   "racks": [
+    "Bird & Bamboo Icy Mint",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Middle & Main Scalloped Beechwood",
+    "Bird & Bamboo Dijon"
+   ],
+   "file": "sorbet-mahjong-tiles-tala-mahj-cabana-seafoam-blue-ivory-with-citrus-fringe-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sorbet-mahjong-tiles-tala-mahj-cabana-seafoam-blue-ivory-with-citrus-fringe-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96304006"
+  },
+  {
+   "set": "sorbet",
+   "key": "www.etsy.com/listing/4537282808/the-caroline-preppy-mahjong-mat",
+   "name": "Caroline (Preppy)",
+   "brand": "Betty June & Jeannette",
+   "racks": [
+    "Bird & Bamboo Icy Mint",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Middle & Main Scalloped Beechwood",
+    "Bird & Bamboo Pistachio",
+    "Bird & Bamboo Peachy"
+   ],
+   "file": "sorbet-mahjong-tiles-betty-june-jeannette-caroline-preppy-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sorbet-mahjong-tiles-betty-june-jeannette-caroline-preppy-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96125208"
+  },
+  {
+   "set": "sorbet",
+   "key": "www.etsy.com/listing/4541827574/the-nora-mahjong-mat",
+   "name": "Nora",
+   "brand": "Betty June & Jeannette",
+   "racks": [
+    "Bird & Bamboo Icy Mint",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Middle & Main Scalloped Beechwood",
+    "Bird & Bamboo Pistachio",
+    "Bird & Bamboo Turks Blue"
+   ],
+   "file": "sorbet-mahjong-tiles-betty-june-jeannette-nora-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sorbet-mahjong-tiles-betty-june-jeannette-nora-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96125055"
+  },
+  {
+   "set": "sorbet",
+   "key": "mahjandvine.com/citrus-grove",
+   "name": "Chinoiserie Citrus Grove",
+   "brand": "Mahj & Vine",
+   "racks": [
+    "Bird & Bamboo Icy Mint",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Middle & Main Scalloped Beechwood",
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Periwinkle Blue"
+   ],
+   "file": "sorbet-mahjong-tiles-mahj-vine-chinoiserie-citrus-grove-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sorbet-mahjong-tiles-mahj-vine-chinoiserie-citrus-grove-mat.jpg",
+   "shop": "https://mahjandvine.com/products/citrus-grove?sca_ref=10366165.hDgHZlY4LYtU0W"
+  },
+  {
+   "set": "sorbet",
+   "key": "www.etsy.com/listing/4527676666/the-brinkley-mat",
+   "name": "Brinkley",
+   "brand": "Betty June & Jeannette",
+   "racks": [
+    "Bird & Bamboo Icy Mint",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Middle & Main Scalloped Beechwood",
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Avocado"
+   ],
+   "file": "sorbet-mahjong-tiles-betty-june-jeannette-brinkley-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sorbet-mahjong-tiles-betty-june-jeannette-brinkley-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96125711"
+  },
+  {
+   "set": "sunset",
+   "key": "yolo:pink-tiger",
+   "name": "Pink Tiger",
+   "brand": "YOLO Mahjong",
+   "racks": [
+    "Oh My Mahjong White Acrylic",
+    "Oh My Mahjong Hot Pink",
+    "Bird & Bamboo Coral",
+    "Bird & Bamboo Brick Red"
+   ],
+   "file": "sunset-mahjong-tiles-yolo-mahjong-pink-tiger-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sunset-mahjong-tiles-yolo-mahjong-pink-tiger-mat.jpg",
+   "shop": "https://www.yolomahjong.com/products/pink-tiger-mahjong-mat-floral-chinese-mahjong-table-mat-for-mahjong-set-31-5-x-31-5-inch"
+  },
+  {
+   "set": "sunset",
+   "key": "www.etsy.com/listing/4510347710/the-brooke-mahjong-mat",
+   "name": "Brooke",
+   "brand": "Betty June & Jeannette",
+   "racks": [
+    "Oh My Mahjong White Acrylic",
+    "Oh My Mahjong Hot Pink",
+    "Bird & Bamboo Orange",
+    "Bird & Bamboo Mango"
+   ],
+   "file": "sunset-mahjong-tiles-betty-june-jeannette-brooke-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sunset-mahjong-tiles-betty-june-jeannette-brooke-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96114891"
+  },
+  {
+   "set": "sunset",
+   "key": "www.etsy.com/listing/4478745626/betty-floral-mahjong-mat-chic",
+   "name": "Betty Floral (Monogrammed Neoprene)",
+   "brand": "Betty June & Jeannette",
+   "racks": [
+    "Oh My Mahjong White Acrylic",
+    "Oh My Mahjong Hot Pink",
+    "Bird & Bamboo Coral",
+    "Bird & Bamboo Brick Red"
+   ],
+   "file": "sunset-mahjong-tiles-betty-june-jeannette-betty-floral-monogrammed-neoprene-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sunset-mahjong-tiles-betty-june-jeannette-betty-floral-monogrammed-neoprene-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96125859"
+  },
+  {
+   "set": "sunset",
+   "key": "www.etsy.com/listing/4476008036/the-elizabeth-mahjong-mat-with-canvas",
+   "name": "Elizabeth",
+   "brand": "Betty June & Jeannette",
+   "racks": [
+    "Oh My Mahjong White Acrylic",
+    "Oh My Mahjong Hot Pink",
+    "Bird & Bamboo Pink Coral",
+    "Bird & Bamboo Peachy"
+   ],
+   "file": "sunset-mahjong-tiles-betty-june-jeannette-elizabeth-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sunset-mahjong-tiles-betty-june-jeannette-elizabeth-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96115115"
+  },
+  {
+   "set": "sunset",
+   "key": "www.etsy.com/listing/4510367849/preppy-mahjong-mat-cheeky-cockatoo-in",
+   "name": "Cheeky Cockatoo",
+   "brand": "Sophie Clima",
+   "racks": [
+    "Oh My Mahjong White Acrylic",
+    "Oh My Mahjong Hot Pink",
+    "Bird & Bamboo Pink Coral",
+    "Bird & Bamboo Persimmon"
+   ],
+   "file": "sunset-mahjong-tiles-sophie-clima-cheeky-cockatoo-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/sunset-mahjong-tiles-sophie-clima-cheeky-cockatoo-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96122627"
+  },
+  {
+   "set": "limoncello",
+   "key": "talamahj.com/cabana-mahjong-mat-lagoon-blue-ivory-with-citrus-fringe",
+   "name": "Cabana - Seafoam Blue & Ivory with Citrus Fringe",
+   "brand": "Tala Mahj",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Dijon"
+   ],
+   "file": "limoncello-mahjong-tiles-tala-mahj-cabana-seafoam-blue-ivory-with-citrus-fringe-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/limoncello-mahjong-tiles-tala-mahj-cabana-seafoam-blue-ivory-with-citrus-fringe-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96304006"
+  },
+  {
+   "set": "limoncello",
+   "key": "talamahj.com/cabana-mahjong-mat-pink-ivory-with-citrus-fringe",
+   "name": "Cabana - Pink & Ivory with Citrus Fringe",
+   "brand": "Tala Mahj",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Glowstick"
+   ],
+   "file": "limoncello-mahjong-tiles-tala-mahj-cabana-pink-ivory-with-citrus-fringe-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/limoncello-mahjong-tiles-tala-mahj-cabana-pink-ivory-with-citrus-fringe-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96304571"
+  },
+  {
+   "set": "limoncello",
+   "key": "www.etsy.com/listing/4493549326/the-kerry-mahjong-mat-watercolor-pink",
+   "name": "The Kerry",
+   "brand": "Betty June & Jeannette",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Ballet Pink",
+    "Mahj Mood Scalloped Clear Acrylic"
+   ],
+   "file": "limoncello-mahjong-tiles-betty-june-jeannette-the-kerry-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/limoncello-mahjong-tiles-betty-june-jeannette-the-kerry-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96114928"
+  },
+  {
+   "set": "limoncello",
+   "key": "www.etsy.com/listing/4527676666/the-brinkley-mat",
+   "name": "Brinkley",
+   "brand": "Betty June & Jeannette",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Avocado"
+   ],
+   "file": "limoncello-mahjong-tiles-betty-june-jeannette-brinkley-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/limoncello-mahjong-tiles-betty-june-jeannette-brinkley-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96125711"
+  },
+  {
+   "set": "limoncello",
+   "key": "www.etsy.com/listing/4530894010/preppy-chinoiserie-elephant-mahjong-mat",
+   "name": "Chinoiserie Elephant with Pagodas",
+   "brand": "Sophie Clima",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Turquoise Blue"
+   ],
+   "file": "limoncello-mahjong-tiles-sophie-clima-chinoiserie-elephant-with-pagodas-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/limoncello-mahjong-tiles-sophie-clima-chinoiserie-elephant-with-pagodas-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96131257"
+  },
+  {
+   "set": "gemma",
+   "key": "www.etsy.com/listing/4544550775/the-livy-mahjong-mat",
+   "name": "Livy",
+   "brand": "Betty June & Jeannette",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Eggplant",
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Peony"
+   ],
+   "file": "gemma-mahjong-tiles-betty-june-jeannette-livy-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/gemma-mahjong-tiles-betty-june-jeannette-livy-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96126853"
+  },
+  {
+   "set": "gemma",
+   "key": "www.etsy.com/listing/4483578899/the-allie-purple-mahjong-mat-lavender",
+   "name": "Allie (Purple)",
+   "brand": "Betty June & Jeannette",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Eggplant",
+    "Bird & Bamboo Mermaid"
+   ],
+   "file": "gemma-mahjong-tiles-betty-june-jeannette-allie-purple-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/gemma-mahjong-tiles-betty-june-jeannette-allie-purple-mat.jpg",
+   "shop": "https://go.shopmy.us/p-94800122"
+  },
+  {
+   "set": "gemma",
+   "key": "www.etsy.com/listing/4506841316/preppy-mahjong-mat-with-white-bag-pink",
+   "name": "Pink Orchids",
+   "brand": "Sophie Clima",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Eggplant",
+    "Bird & Bamboo Mulberry",
+    "Bird & Bamboo Avocado"
+   ],
+   "file": "gemma-mahjong-tiles-sophie-clima-pink-orchids-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/gemma-mahjong-tiles-sophie-clima-pink-orchids-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96130981"
+  },
+  {
+   "set": "taylor",
+   "key": "www.etsy.com/listing/4544550775/the-livy-mahjong-mat",
+   "name": "Livy",
+   "brand": "Betty June & Jeannette",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Light Pink",
+    "Middle & Main Scalloped Beechwood",
+    "Bird & Bamboo Peony"
+   ],
+   "file": "taylor-mahjong-tiles-betty-june-jeannette-livy-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/taylor-mahjong-tiles-betty-june-jeannette-livy-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96126853"
+  },
+  {
+   "set": "taylor",
+   "key": "www.etsy.com/listing/4541827574/the-nora-mahjong-mat",
+   "name": "Nora",
+   "brand": "Betty June & Jeannette",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Light Pink",
+    "Middle & Main Scalloped Beechwood",
+    "Bird & Bamboo Pistachio",
+    "Bird & Bamboo Turks Blue"
+   ],
+   "file": "taylor-mahjong-tiles-betty-june-jeannette-nora-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/taylor-mahjong-tiles-betty-june-jeannette-nora-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96125055"
+  },
+  {
+   "set": "taylor",
+   "key": "www.etsy.com/listing/4537282808/the-caroline-preppy-mahjong-mat",
+   "name": "Caroline (Preppy)",
+   "brand": "Betty June & Jeannette",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Light Pink",
+    "Middle & Main Scalloped Beechwood",
+    "Bird & Bamboo Pistachio",
+    "Bird & Bamboo Peachy"
+   ],
+   "file": "taylor-mahjong-tiles-betty-june-jeannette-caroline-preppy-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/taylor-mahjong-tiles-betty-june-jeannette-caroline-preppy-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96125208"
+  },
+  {
+   "set": "taylor",
+   "key": "www.etsy.com/listing/4476008036/the-elizabeth-mahjong-mat-with-canvas",
+   "name": "Elizabeth",
+   "brand": "Betty June & Jeannette",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Light Pink",
+    "Middle & Main Scalloped Beechwood",
+    "Bird & Bamboo Pink Coral",
+    "Bird & Bamboo Peachy"
+   ],
+   "file": "taylor-mahjong-tiles-betty-june-jeannette-elizabeth-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/taylor-mahjong-tiles-betty-june-jeannette-elizabeth-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96115115"
+  },
+  {
+   "set": "jasmine",
+   "key": "www.etsy.com/listing/4515510897/preppy-mahjong-mat-with-white-bag",
+   "name": "Cheetah in Chinoiserie",
+   "brand": "Sophie Clima",
+   "racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Avocado"
+   ],
+   "file": "jasmine-mahjong-tiles-sophie-clima-cheetah-in-chinoiserie-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/jasmine-mahjong-tiles-sophie-clima-cheetah-in-chinoiserie-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96131764"
+  },
+  {
+   "set": "jasmine",
+   "key": "www.etsy.com/listing/4504460459/preppy-mahjong-mat-whimsical-chinoiserie",
+   "name": "Whimsical Chinoiserie Meeting in the Pavilion",
+   "brand": "Sophie Clima",
+   "racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Moss",
+    "Bird & Bamboo Flamingo"
+   ],
+   "file": "jasmine-mahjong-tiles-sophie-clima-whimsical-chinoiserie-meeting-in-the-pavilion-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/jasmine-mahjong-tiles-sophie-clima-whimsical-chinoiserie-meeting-in-the-pavilion-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96131839"
+  },
+  {
+   "set": "jasmine",
+   "key": "mahjandvine.com/citrus-grove",
+   "name": "Chinoiserie Citrus Grove",
+   "brand": "Mahj & Vine",
+   "racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "file": "jasmine-mahjong-tiles-mahj-vine-chinoiserie-citrus-grove-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/jasmine-mahjong-tiles-mahj-vine-chinoiserie-citrus-grove-mat.jpg",
+   "shop": "https://mahjandvine.com/products/citrus-grove?sca_ref=10366165.hDgHZlY4LYtU0W"
+  },
+  {
+   "set": "jasmine",
+   "key": "www.etsy.com/listing/4537970849/the-nichole-mahjong-mat",
+   "name": "Nichole",
+   "brand": "Betty June & Jeannette",
+   "racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Cornflower Blue"
+   ],
+   "file": "jasmine-mahjong-tiles-betty-june-jeannette-nichole-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/jasmine-mahjong-tiles-betty-june-jeannette-nichole-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96125150"
+  },
+  {
+   "set": "nantucket",
+   "key": "goldenpond:midori-shadows",
+   "name": "Midori Shadows",
+   "brand": "Golden Pond Mahjong",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Moss",
+    "Bird & Bamboo Cream"
+   ],
+   "file": "nantucket-mahjong-tiles-golden-pond-mahjong-midori-shadows-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/nantucket-mahjong-tiles-golden-pond-mahjong-midori-shadows-mat.jpg",
+   "shop": ""
+  },
+  {
+   "set": "pippa",
+   "key": "splashofcolorco.com/peony-and-parasol",
+   "name": "Peony and Parasol",
+   "brand": "Splash of Color",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Icy Mint",
+    "Bird & Bamboo Flamingo",
+    "Bird & Bamboo Turks Blue"
+   ],
+   "file": "pippa-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/pippa-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg",
+   "shop": "https://splashofcolorco.com/products/peony-parasol-mahjong-mat-sleek-surface?sca_ref=10059443.c9rDRhYNIB31oxJN"
+  },
+  {
+   "set": "pippa",
+   "key": "talamahj.com/the-promenade-mat",
+   "name": "Colony - Chartreuse & Petal Pink",
+   "brand": "Tala Mahj",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Icy Mint",
+    "Bird & Bamboo Butter"
+   ],
+   "file": "pippa-mahjong-tiles-tala-mahj-colony-chartreuse-petal-pink-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/pippa-mahjong-tiles-tala-mahj-colony-chartreuse-petal-pink-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96067690"
+  },
+  {
+   "set": "pippa",
+   "key": "talamahj.com/cabana-mahjong-mat-pink-ivory-with-citrus-fringe",
+   "name": "Cabana - Pink & Ivory with Citrus Fringe",
+   "brand": "Tala Mahj",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Icy Mint",
+    "Bird & Bamboo Glowstick"
+   ],
+   "file": "pippa-mahjong-tiles-tala-mahj-cabana-pink-ivory-with-citrus-fringe-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/pippa-mahjong-tiles-tala-mahj-cabana-pink-ivory-with-citrus-fringe-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96304571"
+  },
+  {
+   "set": "pippa",
+   "key": "www.etsy.com/listing/4541827574/the-nora-mahjong-mat",
+   "name": "Nora",
+   "brand": "Betty June & Jeannette",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Icy Mint",
+    "Bird & Bamboo Pistachio",
+    "Bird & Bamboo Turks Blue"
+   ],
+   "file": "pippa-mahjong-tiles-betty-june-jeannette-nora-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/pippa-mahjong-tiles-betty-june-jeannette-nora-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96125055"
+  },
+  {
+   "set": "pippa",
+   "key": "www.etsy.com/listing/4537282808/the-caroline-preppy-mahjong-mat",
+   "name": "Caroline (Preppy)",
+   "brand": "Betty June & Jeannette",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Icy Mint",
+    "Bird & Bamboo Pistachio",
+    "Bird & Bamboo Peachy"
+   ],
+   "file": "pippa-mahjong-tiles-betty-june-jeannette-caroline-preppy-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/pippa-mahjong-tiles-betty-june-jeannette-caroline-preppy-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96125208"
+  },
+  {
+   "set": "pippa",
+   "key": "www.wrenmats.com/watercolor-floral",
+   "name": "Watercolor Floral",
+   "brand": "Wren Mats",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Icy Mint",
+    "Bird & Bamboo Flamingo",
+    "Bird & Bamboo Pistachio"
+   ],
+   "file": "pippa-mahjong-tiles-wren-mats-watercolor-floral-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/pippa-mahjong-tiles-wren-mats-watercolor-floral-mat.jpg",
+   "shop": "https://www.wrenmats.com/mats/p/watercolor-floral"
+  },
+  {
+   "set": "pippa",
+   "key": "mahjandvine.com/citrus-grove",
+   "name": "Chinoiserie Citrus Grove",
+   "brand": "Mahj & Vine",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Icy Mint",
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Periwinkle Blue"
+   ],
+   "file": "pippa-mahjong-tiles-mahj-vine-chinoiserie-citrus-grove-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/pippa-mahjong-tiles-mahj-vine-chinoiserie-citrus-grove-mat.jpg",
+   "shop": "https://mahjandvine.com/products/citrus-grove?sca_ref=10366165.hDgHZlY4LYtU0W"
+  },
+  {
+   "set": "osler",
+   "key": "ozarkmahjong.com/winslow-1920-original-navy-blue-mat",
+   "name": "Winslow 1920 Navy",
+   "brand": "Ozark Mahjongg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Bird & Bamboo Wine",
+    "Bird & Bamboo Blackboard Black",
+    "Bird & Bamboo White"
+   ],
+   "file": "osler-mahjong-tiles-ozark-mahjongg-winslow-1920-navy-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/osler-mahjong-tiles-ozark-mahjongg-winslow-1920-navy-mat.jpg",
+   "shop": "https://ozarkmahjong.com/products/winslow-1920-original-navy-blue-mat"
+  },
+  {
+   "set": "osler",
+   "key": "ozarkmahjong.com/winslow-1920-rouge-mat",
+   "name": "Winslow 1920 Rouge",
+   "brand": "Ozark Mahjongg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Bird & Bamboo Wine",
+    "Bird & Bamboo Red",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "file": "osler-mahjong-tiles-ozark-mahjongg-winslow-1920-rouge-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/osler-mahjong-tiles-ozark-mahjongg-winslow-1920-rouge-mat.jpg",
+   "shop": "https://ozarkmahjong.com/products/winslow-1920-rouge-mat"
+  },
+  {
+   "set": "osler",
+   "key": "mahjongco.com/gatsby-mahjong-mat",
+   "name": "Gatsby",
+   "brand": "Mahjong by SI",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Bird & Bamboo Wine",
+    "Bird & Bamboo Harbor Blue",
+    "Bird & Bamboo Cream"
+   ],
+   "file": "osler-mahjong-tiles-mahjong-by-si-gatsby-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/osler-mahjong-tiles-mahjong-by-si-gatsby-mat.jpg",
+   "shop": "https://www.mahjongbysi.com/products/gatsby-mahjong-mat"
+  },
+  {
+   "set": "osler",
+   "key": "talamahj.com/the-pavilio-mahjong-mat-bamboo-neutral-with-blue-fringe",
+   "name": "The Pavilion - Bamboo Neutral with Blue Fringe",
+   "brand": "Tala Mahj",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Bird & Bamboo Wine",
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Cream"
+   ],
+   "file": "osler-mahjong-tiles-tala-mahj-the-pavilion-bamboo-neutral-with-blue-fringe-mat.jpg",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/osler-mahjong-tiles-tala-mahj-the-pavilion-bamboo-neutral-with-blue-fringe-mat.jpg",
+   "shop": "https://go.shopmy.us/p-96067643"
+  }
+ ]
+}
