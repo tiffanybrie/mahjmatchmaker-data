@@ -683,6 +683,15 @@ if "S.tcol=tileOrder()[0]" in UI: F.append("[59] tile door pre-selects a colour 
 # [61] Oct 26 (Tiffany 8:25am): 'Photo coming soon' tile sets sort to the bottom of every tile list
 if "sort((a,b)=>a[0].name.localeCompare(b[0].name))" in UI or ".sort((a,b)=>!!T[a[0].tile].soon-!!T[b[0].tile].soon).map(" not in UI:
     F.append("[61] 'Photo coming soon' tile sets are not sorted to the bottom of the tile lists")
+# [60] Oct 26 (Tiffany 8:29am): among equally matching racks the best-photographed one leads (config/rack-photo-quality.json,
+# builder/fym_fix_oct26/v94_rackquality.py). Default suggestions (picks off, every album pairing) and the white/clear/wood chips:
+# the first non-pick rack has photo score >= 4 whenever a 4+ rack is in the same colour band. Every visible rack has a score.
+_r60 = subprocess.run(['node', os.path.join(REPO, 'builder', 'fym_rackquality_check.js'), B], capture_output=True, text=True, timeout=600)
+try:
+    _j60 = json.loads(_r60.stdout)
+    for _m in _j60['fails'][:6]: F.append('[60] ' + _m)
+    if _j60['nfail'] > 6: F.append(f"[60] ... {_j60['nfail'] - 6} more rack photo-order problems")
+except Exception as _e: F.append(f"[60] rack photo-quality check did not run: {_e} {_r60.stderr[:200]}")
 # [46] Oct 25 (Tiffany 16:37): Mood board rack labels sit BELOW the racks (whole rack visible)
 if 'racks(rx,ry,rw,rh,{fs:STORY?23:19,maxRow:rh,rows:true,back:true,below:true})' not in UI:
     F.append("[46] Mood board (tri view) rack labels are not below the racks (below:true)")
