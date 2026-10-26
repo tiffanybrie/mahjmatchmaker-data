@@ -3006,12 +3006,13 @@
    "name": "Ivory Stripes",
    "brand": "Yellow Mountain Imports",
    "tile_key": "www.ymimports.com/fx-am014-a",
-   "status": "ok",
+   "status": "coming_soon",
    "locked": false,
    "hidden_now": false,
    "current": "t15/209.jpg",
    "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
-   "product_url": "https://www.ymimports.com/products/fx-am014-a"
+   "product_url": "https://www.ymimports.com/products/fx-am014-a",
+   "note_oct26": "Tiffany 8:56am: can't tell the 3 Ivory sets apart, photos on racks -> Photo coming soon"
   },
   "yellow-mountain-imports-rosehill": {
    "name": "Rosehill",
@@ -3050,12 +3051,13 @@
    "name": "Ivory Ridge",
    "brand": "Yellow Mountain Imports",
    "tile_key": "www.ymimports.com/fx-am019-a",
-   "status": "ok",
+   "status": "coming_soon",
    "locked": false,
    "hidden_now": false,
    "current": "t15/208.jpg",
    "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
-   "product_url": "https://www.ymimports.com/products/fx-am019-a"
+   "product_url": "https://www.ymimports.com/products/fx-am019-a",
+   "note_oct26": "Tiffany 8:56am: can't tell the 3 Ivory sets apart, photos on racks -> Photo coming soon"
   },
   "yellow-mountain-imports-sakura-pink": {
    "name": "Sakura Pink",
@@ -3083,12 +3085,13 @@
    "name": "Ivory Pinstripe",
    "brand": "Yellow Mountain Imports",
    "tile_key": "www.ymimports.com/fx-am022-a",
-   "status": "ok",
+   "status": "coming_soon",
    "locked": false,
    "hidden_now": false,
    "current": "t15/207.jpg",
    "reason": "joker face + side + tile back on white (brand single-tile shot); no pile exists",
-   "product_url": "https://www.ymimports.com/products/fx-am022-a"
+   "product_url": "https://www.ymimports.com/products/fx-am022-a",
+   "note_oct26": "Tiffany 8:56am: can't tell the 3 Ivory sets apart, photos on racks -> Photo coming soon"
   },
   "yellow-mountain-imports-verdant-spring": {
    "name": "Verdant Spring",
@@ -3314,13 +3317,14 @@
    "name": "Mojave",
    "brand": "Yellow Mountain Imports",
    "tile_key": "www.ymimports.com/us-am009-a",
-   "status": "coming_soon",
+   "status": "ok",
    "locked": false,
    "hidden_now": true,
    "current": "t15/211.jpg",
    "reason": "only shot is a lone tile back with coin; no face+back image; stays hidden",
    "product_url": "https://www.ymimports.com/products/us-am009-a",
-   "frame": null
+   "frame": null,
+   "note_oct26": "v94 faces|backs split from YMI trays (config/fym-ymi-splits-oct26.json)"
   },
   "yellow-mountain-imports-heather": {
    "name": "Heather",
