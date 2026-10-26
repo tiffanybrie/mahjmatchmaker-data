@@ -5,7 +5,8 @@
 set -e; S=$1; D=$2; H=$(dirname "$0"); H6=$H/../fym_fix_oct26
 rm -rf "$D"; cp -r "$S" "$D"
 python3 $H/v94_tiledefault.py "$D"; python3 $H/v94_soonlast.py "$D"
-python3 $H/v94_cmc.py "$D" >/dev/null; python3 $H/v94_mstudios.py "$D" | tail -2
+python3 $H/v94_cmc.py "$D" >/dev/null
+if [ -n "$MS" ]; then python3 $H/v94_mstudios.py "$D" | tail -2; fi
 if [ -n "$YMI" ]; then python3 $H/v94_ymi.py "$D" | tail -2; fi
 if [ -n "$BESPOKE" ]; then python3 $H/v94_bespoketiles.py "$D" | tail -2; fi
 if [ -n "$PARTNERS" ]; then python3 $H/v94_partneradds.py "$D" | tail -2; fi
