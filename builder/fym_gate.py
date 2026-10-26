@@ -683,6 +683,14 @@ if "S.tcol=tileOrder()[0]" in UI: F.append("[59] tile door pre-selects a colour 
 # [61] Oct 26 (Tiffany 8:25am): 'Photo coming soon' tile sets sort to the bottom of every tile list
 if "sort((a,b)=>a[0].name.localeCompare(b[0].name))" in UI or ".sort((a,b)=>!!T[a[0].tile].soon-!!T[b[0].tile].soon).map(" not in UI:
     F.append("[61] 'Photo coming soon' tile sets are not sorted to the bottom of the tile lists")
+# [64] Oct 26 (Tiffany 8:43am): Charleston Mahjong Club tile sets use the approved faces | angled-backs photo (config/fym-cmc-splits-oct26.json)
+for _k in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-cmc-splits-oct26.json')))['splits']:
+    if _k in D['tiles'] and not str(D['tiles'][_k].get('full', '')).startswith('t94/cmc-'): F.append(f"[64] CMC tile {_k} is not using its approved photo")
+# [62] Oct 26 (Tiffany 8:42am): Mahjong Studios tiles have no tile-back view -> all 'Photo coming soon', and brands
+# whose sets are all 'Photo coming soon' sort last in Shop by brand (builder/fym_fix_oct25/v94_mstudios.py)
+_ms = [t.get('n') for k, t in D['tiles'].items() if k.startswith('mahjongstudios.com/') and not t.get('soon')]
+if _ms: F.append(f"[62] {len(_ms)} Mahjong Studios tile sets show a photo (should be Photo coming soon): {_ms[:4]}")
+if "so[s.maker]=(so[s.maker]??true)&&!!t.soon" not in UI: F.append("[62] Shop by brand does not sort all-'Photo coming soon' brands last")
 # [60] Oct 26 (Tiffany 8:29am): among equally matching racks the best-photographed one leads (config/rack-photo-quality.json,
 # builder/fym_fix_oct26/v94_rackquality.py). Default suggestions (picks off, every album pairing) and the white/clear/wood chips:
 # the first non-pick rack has photo score >= 4 whenever a 4+ rack is in the same colour band. Every visible rack has a score.
