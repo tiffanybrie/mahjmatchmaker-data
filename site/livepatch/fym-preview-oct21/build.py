@@ -154,6 +154,8 @@ CSS = r'''
 .fx-stage.fs{position:fixed!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;border-radius:0!important;z-index:2147483000;margin:0!important;border:0!important}
 .fx-stage.fs .fx-x{display:block}
 html.fx-lock-scroll,html.fx-lock-scroll body{overflow:hidden!important}
+/* Oct 25 night (live check): Squarespace main.container is z-index 9 under the header (10), which trapped the full-screen tool under the header; lift the tool's ancestors while full screen */
+html.fx-lock-scroll main{z-index:2147483000!important}
 .fx-code{text-align:center;margin-top:18px!important;font-size:16px;color:#4b4560;padding:0 16px}
 .fx-code b{color:var(--navy);letter-spacing:.04em}
 @media (min-width:760px){
