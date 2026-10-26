@@ -14,6 +14,11 @@ with sync_playwright() as p:
     pg.evaluate("(m)=>[...document.querySelectorAll('button')].filter(e=>e.offsetParent&&e.innerText.trim()==m).pop().click()",MAT); pg.wait_for_timeout(1500)
     pg.evaluate("(br)=>{S.f.r.her=false;S.f.r.brand=br;renderRacks();}",RB); pg.wait_for_timeout(2500)
     RK=sys.argv[6].split(',') if len(sys.argv)>6 else []
+    OV=sys.argv[7].split(',') if len(sys.argv)>7 and sys.argv[7] else []
+    if OV:
+        import base64
+        ov={r:'data:image/png;base64,'+base64.b64encode(open(f,'rb').read()).decode() for r,f in zip(RK,OV) if f}
+        pg.evaluate("""async(ov)=>{const ix=await hdIndex();ix.r=ix.r||{};for(const k in ov){ix.r[k]='file:'+ov[k];IMG[R[k].im]=ov[k];}}""",ov)
     if RK: pg.evaluate("(r)=>{S.rpick=r;S.rliked=r.slice();renderRacks();}",RK); pg.wait_for_timeout(1500)
     pg.evaluate("()=>{window.codeLine=()=>'';try{codeLine=()=>''}catch(e){}}")
     pg.evaluate("()=>[...document.querySelectorAll('button.go')].filter(b=>b.offsetParent&&b.innerText.includes('official')).pop().click()"); pg.wait_for_timeout(4500)

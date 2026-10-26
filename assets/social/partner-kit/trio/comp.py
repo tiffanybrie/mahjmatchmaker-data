@@ -5,6 +5,7 @@ exec(src)
 from playwright.sync_api import sync_playwright
 WHITE=('#f7f7f5','#d6d6d3','#e2e2df'); SH='0 28px 60px rgba(6,42,85,.16), 0 4px 12px rgba(6,42,85,.08)'
 OUT,BRAND=sys.argv[1],sys.argv[2]
+LINE=sys.argv[3] if len(sys.argv)>3 else 'Build your perfect '+BRAND+' set'
 def page(W,H,top,pw,cw):
     y=top; ph=phone('s_home.png',pw,*WHITE,(W-2*pw-cw)//2+0,y+70,0,1,SH)+phone(OUT+'_card.png',pw,*WHITE,W-(W-2*pw-cw)//2-pw,y+70,0,1,SH)+phone(OUT+'_swipe.png',cw,*WHITE,(W-cw)//2,y,0,3,SH)
     # overlap: side phones tucked 60px under centre
@@ -18,7 +19,7 @@ def html(W,H,top,pw,cw,hy,by):
 <div style="font:italic 46px PF;color:#c8325f;margin-top:26px">now featuring</div>
 <div style="font:400 64px/1.1 Cap;color:#062a55;margin-top:6px">{BRAND}</div></div>
 {ph}
-<div style="position:absolute;left:0;right:0;top:{by}px;text-align:center;font:700 34px Bit;color:#062a55;letter-spacing:1px">Match tiles, mats &amp; racks across brands</div>
+<div style="position:absolute;left:0;right:0;top:{by}px;text-align:center;font:700 34px Bit;color:#062a55;letter-spacing:1px">{LINE}</div>
 <div style="position:absolute;left:0;right:0;top:{by+56}px;text-align:center;font:700 40px Bit;color:#c8325f">mahjmatchmaker.com</div>
 </body></html>'''
 with sync_playwright() as p:
