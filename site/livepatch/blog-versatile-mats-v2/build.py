@@ -32,7 +32,8 @@ def photo(name):
 
 def sets(name, n=8):
     s = P[name]['sets']
-    return ', '.join(s[:n - 1]) + (' and ' + s[n - 1] if len(s) >= n else '') if len(s) > 1 else s[0]
+    s = s[:n]
+    return s[0] if len(s) == 1 else ', '.join(s[:-1]) + ' and ' + s[-1]
 
 
 MATS = {
@@ -126,7 +127,7 @@ figure{margin:0 0 10px}img{width:100%;border-radius:10px;display:block}figcaptio
 <p><b>Start with leather or a leather look.</b> Solid, warm neutrals go with almost every tile set.</p>
 <p><b>Look for three or more colors.</b> Different tile backs can each pull a different one.</p>
 <p><b>Don't fear green.</b> Your bams are green, so earthy greens and natural textures like rattan and basketweave are always in play.</p>
-<p><b>Use Find <i>Your</i> Mat-ch™!</b> Start with your tiles, pull up your set and match away.</p>
+<p><b>Test it in Find <i>Your</i> Mat-ch™!</b> Start with the mat you're eyeing and swipe through the tile sets you own. If it works with all of them, you've found your versatile mat.</p>
 </div></body></html>'''
 open(D + '/preview.html', 'w').write(HTML)
 print('ok', len(HTML))
