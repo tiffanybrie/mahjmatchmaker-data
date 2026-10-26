@@ -435,3 +435,4 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 - 2026-10-26 7:23pm · Main · Hip Hip Mahjong APPROVED; title = eyedropped Bird & Bamboo Cherry Red #EB1614 (brighter), racks in a little from the edge.
 - 2026-10-26 7:24pm · Main · Let's Mahj On APPROVED (Baby Blue rack good); only the rack margin (fixed in the 7:23 re-render).
 - 2026-10-26 7:24pm · Main · Mahj & Vine APPROVED (Chartreuse back); rack margin fixed in re-render.
+- 2026-10-26 19:29 (Matches & Catalog) Tiffany asked if this chat is picking up the social chat's finds (e.g. MFM Jubilee missing). Answer: yes via docs/MATCH-INBOX.md; Jubilee etc. fixed + live in Version 1.1 (~7:05pm); new 6:25–7:20pm items (PLM Chartreuse regression URGENT, card title colour, Bespoke/equal-length rack layout, Peppi name, Wren logo) added to the v98 build in progress.
