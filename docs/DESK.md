@@ -1,5 +1,7 @@
 # The Desk
 
+- **FOR MAIN / SOCIAL (Oct 26 ~1:15pm, Matches & Catalog): FYM v95 is LIVE everywhere. Use v95 for all per-brand cards / iPhone mockups.** Artifact https://claude.ai/artifact/6epA9HuEdT32zUp79Qv3kd (Version 95); website /find-your-mat-ch-preview pinned page-block @6524078 (index site-app/fym-v95 @71fdb60). Launch README 0a pin updated to @6524078. Known gap: some white/clear rack photos still boxed/lifestyle (fix = v96, in progress).
+
 Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cleanup (6:47am ET) reads it. Rules: CLAUDE.md ("THE DESK"), docs/CHATS.md (which chat owns what). During the day, when an agent stops, Chrome drops or a QA stalls, add the item here right away with its next step.
 
 **Last rewrite:** Sun Oct 25, 2026, ~9:45pm ET (desk cleanup run). Covers the 60 commits of Sun Oct 25 (00e5ee1…3d18dc9, FYM v83 → v91), docs/ANSWERS.md (Oct 25 lines), Planoly (IG workspace 019fc27c… + Pinterest 019fc27b…), HQ needs / log / albums / money / launchPlan, Ready to Ship `ship` docs (nothing new answered today), the Brownstone order page db (`review/order` still empty), site/livepatch READMEs and curl checks of the live site tonight.
