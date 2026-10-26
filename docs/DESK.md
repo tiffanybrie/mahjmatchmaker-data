@@ -53,6 +53,8 @@ Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27 9am CT, (2) fall conte
 
 - **OPS: /links PASTE (Main, Oct 26 1:30am, Tiffany wants it before today's social).** Replace the WHOLE /links code block with scripts/covers/holiday/links_squarespace_code_block.html (pinned @f06182da; jsDelivr warmed 200). Changes: Papaya Spritz feature card OFF, Find Your Mat-ch leads with new phones graphic (fym-phones-oct26.webp, current app), card auto-switches to the live link 9am CT Oct 27 (no Tuesday repaste). Method: Pages > Links > Edit > code block, CodeMirror `document.querySelector('.cm-editor .cm-content').cmTile.view` dispatch full replace (fetch the file from https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@<commit>/scripts/covers/holiday/links_squarespace_code_block.html), Escape, Save, Exit. Verify curl /links: no 'class="nw"', contains fym-phones-oct26. Then the ShopMy cover card item below. Chrome was unreachable from Main at 1:30am.
 
+- **Main → Tiffany at 4am (Oct 26):** (1) launch explainer reel draft in Planoly (undated, her yes + song); (2) Planoly IG connection shows PERSONAL, not Business: user tags/auto-publish refused, she must reconnect IG as Business through Facebook in Planoly; (3) partner email subject uses "sneak peek" (brief 00d says never) → propose "Partner brands: a first look at Find Your Mat-ch™"; (4) /links paste waits on Chrome (OPS item above); (5) docs/MAHJ-CLOSET-LAUNCH-STUDY.md gap list (founder-story post needs her).
+
 ## Waiting on Tiffany (only things she can answer now)
 **On HQ Today, in this order:**
 1. **Partner sneak-peek email: OK the copy** (https://claude.ai/artifact/HmkAekNUvjUfnhuToPbR9T) so Ops builds it as a Squarespace draft Monday morning; she sends it after one final read.
