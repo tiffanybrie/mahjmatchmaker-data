@@ -1,0 +1,92 @@
+{
+ "_about": "Tiffany Oct 26 11:04am (docs/ANSWERS.md): ShopMy collection 'Mahj & Moon' holding her matched Mahj & Moon mats from the Etsy shop https://www.etsy.com/shop/MahjandMoonCo; FYM uses these go.shopmy.us links with no code (builder/fym_fix_oct25/v95_mahjmoon.py). Ops makes the collection cover. Keys = FYM mat keys (the 14 visible Mahj & Moon mats in b95). etsy_url / shopmy_url stay null until the Etsy listing is matched by design name + photo and pinned in ShopMy; a mat not on Etsy gets not_on_etsy: true and keeps its mahjandmoon.com link. STATUS Oct 26 ~11:30am: Chrome unreachable from Matches & Catalog, so the collection and links are NOT made yet (see docs/DESK.md). Format: {fym_key: {etsy_url, shopmy_url, name, site_url}}; '_' keys are metadata.",
+ "_collection": {
+  "name": "Mahj & Moon",
+  "id": null,
+  "created": false
+ },
+ "mahjandmoon.com/pink-lemon-blossom-mahjong-mat": {
+  "etsy_url": null,
+  "shopmy_url": null,
+  "name": "Pink Citrus",
+  "site_url": "https://mahjandmoon.com/products/pink-lemon-blossom-mahjong-mat"
+ },
+ "mahjandmoon.com/amalfi-soleil-mahjong-mat": {
+  "etsy_url": null,
+  "shopmy_url": null,
+  "name": "Amalfi Soleil",
+  "site_url": "https://mahjandmoon.com/products/amalfi-soleil-mahjong-mat"
+ },
+ "mahjandmoon.com/retro-waves-mahjong-mat-blue": {
+  "etsy_url": null,
+  "shopmy_url": null,
+  "name": "Retro Waves - Pink & Aqua",
+  "site_url": "https://mahjandmoon.com/products/retro-waves-mahjong-mat-blue"
+ },
+ "mahjandmoon.com/retro-waves-mahjong-mat-purple": {
+  "etsy_url": null,
+  "shopmy_url": null,
+  "name": "Retro Waves - Purple",
+  "site_url": "https://mahjandmoon.com/products/retro-waves-mahjong-mat-purple"
+ },
+ "mahjandmoon.com/equestrian-horse-mahjong-mat": {
+  "etsy_url": null,
+  "shopmy_url": null,
+  "name": "Equestrian",
+  "site_url": "https://mahjandmoon.com/products/equestrian-horse-mahjong-mat"
+ },
+ "mahjandmoon.com/leopard-animal-print-american-mahjong-mat": {
+  "etsy_url": null,
+  "shopmy_url": null,
+  "name": "Leopard American",
+  "site_url": "https://mahjandmoon.com/products/leopard-animal-print-american-mahjong-mat"
+ },
+ "mahjandmoon.com/blue-floral-bird-american-mahjong-mat": {
+  "etsy_url": null,
+  "shopmy_url": null,
+  "name": "Blue Floral Bird American",
+  "site_url": "https://mahjandmoon.com/products/blue-floral-bird-american-mahjong-mat"
+ },
+ "mahjandmoon.com/citrus-chinoiserie-mahjong-mat": {
+  "etsy_url": null,
+  "shopmy_url": null,
+  "name": "Citrus Chinoiserie",
+  "site_url": "https://mahjandmoon.com/products/citrus-chinoiserie-mahjong-mat"
+ },
+ "mahjandmoon.com/retro-waves-mahjong-mat": {
+  "etsy_url": null,
+  "shopmy_url": null,
+  "name": "Retro Waves",
+  "site_url": "https://mahjandmoon.com/products/retro-waves-mahjong-mat"
+ },
+ "mahjandmoon.com/equestrian-estate-mahjong-mat": {
+  "etsy_url": null,
+  "shopmy_url": null,
+  "name": "Equestrian Estate",
+  "site_url": "https://mahjandmoon.com/products/equestrian-estate-mahjong-mat"
+ },
+ "mahjandmoon.com/vintage-floral-gingham-mahjong-mat": {
+  "etsy_url": null,
+  "shopmy_url": null,
+  "name": "Vintage Floral Gingham",
+  "site_url": "https://mahjandmoon.com/products/vintage-floral-gingham-mahjong-mat"
+ },
+ "mahjandmoon.com/grand-garden-estate-mahjong-mat": {
+  "etsy_url": null,
+  "shopmy_url": null,
+  "name": "Grand Garden Estate",
+  "site_url": "https://mahjandmoon.com/products/grand-garden-estate-mahjong-mat"
+ },
+ "mahjandmoon.com/blue-koi-chinoiserie-mahjong-mat": {
+  "etsy_url": null,
+  "shopmy_url": null,
+  "name": "Blue Koi Chinoiserie",
+  "site_url": "https://mahjandmoon.com/products/blue-koi-chinoiserie-mahjong-mat"
+ },
+ "mahjandmoon.com/blue-heritage-toile-mahjong-mat": {
+  "etsy_url": null,
+  "shopmy_url": null,
+  "name": "Blue Heritage Toile",
+  "site_url": "https://mahjandmoon.com/products/blue-heritage-toile-mahjong-mat"
+ }
+}
