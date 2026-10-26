@@ -69,7 +69,7 @@ Oct 21, launch morning: the Papaya "It's a match" post, the hotline reel and the
    - feed images and carousels (e.g. "It's a match", profile carousels)
    - plain image story frames with no brand tag or sticker
    - pins
-3. **Reminder posts for her** carry the full 🛑 instruction box: song plus start point, cover, Tag people handles, stickers, order and time. They are:
+3. **Reminder posts for her** (Tiffany Oct 26 12:38pm: Planoly reminder notifications show only ONE line, so the box is invisible there: put the one key action in the FIRST line, and send the file + full steps to her in chat when it is time to post) carry the full 🛑 instruction box: song plus start point, cover, Tag people handles, stickers, order and time. They are:
    - reels with a popular song (e.g. the hotline reel with "This Will Be", album cover as the reel cover)
    - story frames that need a link, countdown or poll sticker, or a brand mention
 4. **Music:** never put Planoly's or Instagram's library/royalty-free music on her reels. She finds it boring. Her love-song picks go on by hand (reminder). A reel goes silent only if it's built to work without sound and she agreed.
