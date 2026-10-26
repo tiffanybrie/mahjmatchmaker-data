@@ -208,16 +208,35 @@ html.fx-lock-scroll,html.fx-lock-scroll body{overflow:hidden!important}
 section:has(#fymx) .section-background{background:var(--cream,#faf3ea)!important}
 section:has(#fymx) .content-wrapper{padding-top:0!important;padding-bottom:0!important}
 section:has(#fymx) .fe-block:has(#fymx) .sqs-block{padding:0!important}
+/* Oct 25: the Squarespace grid kept the block ~720px taller than the page (empty cream gap under the albums on desktop).
+   This section holds only this block, so drop the fixed grid rows and let it be exactly as tall as the content. */
+section:has(#fymx) .fluid-engine{display:block!important;min-height:0!important;height:auto!important;grid-template-rows:none!important}
+section:has(#fymx) .fe-block:has(#fymx){height:auto!important;min-height:0!important;grid-area:auto!important}
+section:has(#fymx) .content-wrapper,section:has(#fymx) .section-border{min-height:0!important}
+/* Oct 25: swipes inside the tool stay in the tool (no hand-off that flings the page to the footer) */
+.fx-stage,.fx-stage iframe{overscroll-behavior:contain}
+/* phone full-screen mode (PHONE_FULLSCREEN): the tool lives off-screen at full size until Start opens it */
+.fx-pstart{display:none}
+#fymx.pfs .fx-pstart{display:block;text-align:center}
+#fymx.pfs .fx-app .fx-head,#fymx.pfs .fx-bar{display:none}
+#fymx.pfs .fx-app{padding:6px 0 34px}
+#fymx.pfs .fx-pstart .fx-btn{margin-top:0}
+#fymx.pfs .fx-pstart small{display:block;margin-top:12px;font-size:14px;color:#4b4560}
+#fymx.pfs .fx-hero .fx-pstart .fx-btn{margin-top:24px}
+#fymx.pfs .fx-stage:not(.fs){position:fixed!important;left:-300vw!important;top:0!important;width:100vw!important;height:100vh!important;visibility:hidden;pointer-events:none}
+#fymx.pfs .fx-stage.fs{height:100dvh!important}
 '''
 
 JS = r'''
 (function(){
   var root=document.getElementById('fymx');if(!root||root.getAttribute('data-on'))return;root.setAttribute('data-on','1');
-  var IDX='__IDX__',BASE='__BASE__';
+  var IDX='__IDX__',BASE='__BASE__',PFS=__PFS__;
   var stage=document.getElementById('fx-stage'),fr=document.getElementById('fx-f'),ld=document.getElementById('fx-ld'),de=document.documentElement;
   function hdr(){var h=document.querySelector('header#header,.header'),off=0;
     if(h){var cs=getComputedStyle(h),r=h.getBoundingClientRect();if((cs.position==='fixed'||cs.position==='sticky')&&r.bottom>0)off=r.height;}return off;}
+  function phone(){return PFS&&de.clientWidth<760;}
   function size(){
+    root.classList.toggle('pfs',phone());
     /* full bleed: stretch to the page edges whatever column the code block sits in */
     root.style.marginLeft='0px';root.style.width='';
     var pr=root.parentElement.getBoundingClientRect(),cw=de.clientWidth;
@@ -234,7 +253,7 @@ JS = r'''
   function get(n){return fetch(IDX,{cache:'force-cache'}).then(function(r){if(!r.ok)throw r.status;return r.text()}).catch(function(e){if(n>0)return new Promise(function(ok){setTimeout(ok,1500)}).then(function(){return get(n-1)});throw e;});}
   function start(){if(started)return;started=true;
     get(4).then(function(t){
-      t=t.replace(/<head>/i,'<head><base href="'+BASE+'"><style>html{scrollbar-width:thin;scrollbar-color:#f3b9cb transparent}[data-door] *{text-wrap:balance}</style>');
+      t=t.replace(/<head>/i,'<head><base href="'+BASE+'"><style>html{scrollbar-width:thin;scrollbar-color:#f3b9cb transparent}[data-door] *{text-wrap:balance}html,body{overscroll-behavior:contain}#stage,#stage.scroll,.rail,.msr,.sheet .box{overscroll-behavior:contain}.dots,.frow,.tray .th,.rsug .th{overscroll-behavior-x:contain}</style>');
       fr.addEventListener('load',function(){ld.style.display='none';});
       var tries=0,poll=setInterval(function(){tries++;try{var d=fr.contentDocument;if(d&&d.querySelector('#app .top')){ld.style.display='none';clearInterval(poll);}}catch(e){}if(tries>200)clearInterval(poll);},300);
       fr.srcdoc=t;
@@ -242,7 +261,7 @@ JS = r'''
   }
   if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){if(es.some(function(e){return e.isIntersecting})){start();io.disconnect();}},{rootMargin:'1400px 0px'});io.observe(stage);}
   setTimeout(start,2500);
-  function go(e){if(e)e.preventDefault();start();size();var sec=document.getElementById('fymx-app');
+  function go(e){if(e)e.preventDefault();if(phone()){fs(true);return;}start();size();var sec=document.getElementById('fymx-app');
     var vh=window.innerHeight||de.clientHeight,off=hdr(),r=stage.getBoundingClientRect();
     var y=r.top+(window.pageYOffset||de.scrollTop)-Math.max(off,Math.round((vh-off-r.height)/2)+off);
     window.scrollTo({top:y,behavior:'smooth'});}
@@ -252,7 +271,8 @@ JS = r'''
   [].forEach.call(root.querySelectorAll('[data-fx-how]'),function(a){a.addEventListener('click',function(e){e.preventDefault();var t=document.getElementById('fymx-how');
     window.scrollTo({top:t.getBoundingClientRect().top+(window.pageYOffset||de.scrollTop)-hdr()-8,behavior:'smooth'});})});
   function fs(on){start();stage.classList.toggle('fs',on);de.classList.toggle('fx-lock-scroll',on);if(!on)size();
-    if(on)setTimeout(function(){try{fr.focus()}catch(e){}},50);}
+    if(on)setTimeout(function(){try{fr.focus();fr.contentWindow.dispatchEvent(new Event('resize'))}catch(e){}},50);}
+  [].forEach.call(root.querySelectorAll('[data-fx-start]'),function(b){b.addEventListener('click',function(e){e.preventDefault();fs(true)})});
   [].forEach.call(root.querySelectorAll('[data-fx-fs]'),function(b){b.addEventListener('click',function(e){e.preventDefault();fs(true)})});
   document.getElementById('fx-x').addEventListener('click',function(){fs(false)});
   addEventListener('keydown',function(e){if(e.key==='Escape'&&stage.classList.contains('fs'))fs(false)});
@@ -264,6 +284,11 @@ FS_ICON = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-wid
 
 
 SHOW_WALKTHROUGH = False
+
+# Oct 25 9:11pm (Tiffany: the page "fights" the tool on her phone). PHONE_FULLSCREEN=True: under 760px wide the tool is NOT
+# embedded in the page; the hero shows a big Start button and the app opens in the full-screen overlay (X to come back).
+# Desktop is unchanged. Set False to go back to the in-page tool on phones.
+PHONE_FULLSCREEN = True
 
 
 def build():
@@ -288,6 +313,7 @@ def build():
 <p class="fx-kick">New from Mahj Matchmaker</p>
 <h1><span class="nb">Find Your</span> <span class="nb">Mat-ch<sup>&trade;</sup></span></h1>
 <p class="fx-lede">Start with tiles or a mat. Swipe. Find your&nbsp;match.</p>
+<div class="fx-pstart"><button type="button" class="fx-btn" data-fx-start>Start swiping <span aria-hidden="true">&#9829;</span></button><small>Opens full screen. Tap &#10005; Close to come back.</small></div>
 <p class="fx-under"><a href="#fymx-app" data-fx-tour>Take the 30-second tour&nbsp;&darr;</a> &nbsp;&middot;&nbsp; <span class="nb">Free, nothing to sign up&nbsp;for</span></p>
 </div>
 </div></section>
@@ -316,7 +342,7 @@ def build():
 <p class="fx-disc">Something look off or have an idea? <a href="{FEEDBACK}">Tell me here&nbsp;&rarr;</a><br>Affiliate links: I may earn a commission.</p>
 </div>
 <style>{CSS}</style>
-<script>{JS.replace('__IDX__', APP_INDEX).replace('__BASE__', APP_BASE)}</script>
+<script>{JS.replace('__IDX__', APP_INDEX).replace('__BASE__', APP_BASE).replace('__PFS__', 'true' if PHONE_FULLSCREEN else 'false')}</script>
 '''
     out = os.path.join(HERE, 'page-block.html')
     open(out, 'w').write(body)
