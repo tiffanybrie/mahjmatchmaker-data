@@ -55,7 +55,8 @@ for (const [si, mk] of pairs) {
   const SWq = sw.map(s => labq(s[0])), scq = r => { const h = R[r].hx; if (!h || !SWq.length) return 99; const L = labq(h); return Math.min(...SWq.map(s => Math.hypot(L[0] - s[0], L[1] - s[1], L[2] - s[2]))); };
   const ownOk = r => B4.includes(R[r].bn) && ownGood(r) && (R[r].wh || R[r].cl || X.rackFits(r) && scq(r) <= 30);   // rule 5: own white racks count whatever their measured colour
   // rule 4 outranks rules 2/3: own-brand matching racks are checked like picks for the photo / white-wood leads
-  const first = deck.filter(r => !ownOk(r) || mine(r))[0];
+  const ownAnyD = r => B4.includes(R[r].bn) && (R[r].wh || R[r].cl || X.rackFits(r) && scq(r) <= 30);
+  const first = deck.filter(r => !ownAnyD(r) || mine(r))[0];
   if (first && !mine(first)) {
     const lab = h => { const c = [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16) / 255).map(v => v > .04045 ? ((v + .055) / 1.055) ** 2.4 : v / 12.92);
       let [x, y, z] = [c[0] * .4124 + c[1] * .3576 + c[2] * .1805, c[0] * .2126 + c[1] * .7152 + c[2] * .0722, c[0] * .0193 + c[1] * .1192 + c[2] * .9505];
@@ -63,7 +64,7 @@ for (const [si, mk] of pairs) {
     const SW = sw.map(s => lab(s[0]));
     const sc = r => { const h = R[r].hx; if (!h || !SW.length) return 99; const L = lab(h); return Math.min(...SW.map(s => Math.hypot(L[0] - s[0], L[1] - s[1], L[2] - s[2]))); };
     const pen = r => (R[r].pa ? 0 : 1e5) + (R[r].lo ? 1e4 : 0);
-    const ok = deck.filter(r => !mine(r) && !rkMS(r) && !ownOk(r));
+    const ok = deck.filter(r => !mine(r) && !rkMS(r) && !ownAnyD(r));
     const best = Math.min(...ok.map(r => sc(r) + pen(r)));
     const band = ok.filter(r => sc(r) + pen(r) <= best + 2);
     const pref = ok.filter(r => rkW(r) > 0 && sc(r) + pen(r) <= best + 6), top = Math.max(0, ...pref.map(rkW));
@@ -86,11 +87,11 @@ for (const [si, mk] of pairs.filter((_, i) => i % 5 === 0 || /pearl/i.test(D.set
     const m6 = d.slice(0, 6).find(r => !hr.includes(r) && rkMS(r));
     if (m6) fail(`${c} chip (${D.sets[si].name} + ${X.M[mk].n}): Mahjong Studios rack ${R[m6].n} in the top 6`);
     if (!['neutral', 'clear', 'wood'].includes(c) || hr.includes(d[0])) continue;
-    const own = r => X.ownB && X.ownB().includes(R[r].bn) && ownGood(r), d0 = d.find(r => hr.includes(r) || !own(r));
+    const ownAny = r => X.ownB && X.ownB().includes(R[r].bn), own = r => ownAny(r) && ownGood(r), d0 = d.find(r => hr.includes(r) || !ownAny(r));
     if (c === 'neutral' || c === 'clear') { const wc = r => c === 'neutral' ? R[r].wh : R[r].cl, fp = d.find(r => !hr.includes(r)), ow = d.filter(r => !hr.includes(r) && own(r) && wc(r));
       if (ow.length && fp && !(own(fp) && wc(fp))) fail(`${c === 'neutral' ? 'White' : 'Clear'} chip (${D.sets[si].name} + ${X.M[mk].n}): leads with ${R[fp].n}, not the brand's own ${c === 'neutral' ? 'white' : 'clear'} rack ${R[ow[0]].n}`); }
     if (!d0 || hr.includes(d0)) continue;
-    const ok = d.filter(r => !hr.includes(r) && !rkMS(r) && !own(r)); if (!ok.length) continue;
+    const ok = d.filter(r => !hr.includes(r) && !rkMS(r) && !ownAny(r)); if (!ok.length) continue;
     const rs = r => (R[r].rs || {})[c] || 0, top = Math.max(...ok.map(rs));
     const band = ok.filter(r => rs(r) >= top - .05);
     if (c === 'neutral') { const pt = Math.max(0, ...ok.filter(r => rs(r) >= top - .3).map(rkW));
