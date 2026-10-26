@@ -69,6 +69,8 @@ Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27 9am CT, (2) fall conte
 - Matches & Catalog: which of the 16 "Photo coming soon" tile sets to show, and the Splash of Color / LBB batch size (contact sheet sent 8:13pm); phones open the tool full-screen from a Start button, yes or no (scroll fight); Lagoon + Mulberry splits once rebuilt; match card header A or B (A is the default); Bam Bird Classic Tortoise match pick.
 - Main: partner graphic samples (one yes); Canva template samples; ShopMy 2:3 cover samples; her lost Pippa teardown (2-3 lines).
 
+- **OPS: ShopMy cover for the new "Mahj & Moon" collection** (Tiffany 11:04am Oct 26; Matches & Catalog creates the collection + links today). Same style as the other ShopMy covers (scripts/shopmy/make_covers_portrait.py).
+
 **Parked until after launch (Oct 28):** holiday-or-not on 11 mats, ShopMy 5 quick calls, Amazon old-board delete, Shop page vs ShopMy talk, sender hello@ + DKIM/DMARC, bow lamp keep/swap, nav overflow pick.
 
 ## Banked (finished, held on purpose)
