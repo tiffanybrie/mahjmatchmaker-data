@@ -20,6 +20,9 @@ with sync_playwright() as p:
         ov={r:'data:image/png;base64,'+base64.b64encode(open(f,'rb').read()).decode() for r,f in zip(RK,OV) if f}
         pg.evaluate("""async(ov)=>{const ix=await hdIndex();ix.r=ix.r||{};for(const k in ov){ix.r[k]='file:'+ov[k];IMG[R[k].im]=ov[k];R[k].c=true;}}""",ov)
     if RK: pg.evaluate("(r)=>{S.rpick=r;S.rliked=r.slice();renderRacks();}",RK); pg.wait_for_timeout(1500)
+    import os
+    Z=float(os.environ.get('TZOOM','0') or 0)
+    if Z>1: pg.evaluate("""async(z)=>{const s=set();const t=T[s.tile];const u=(t.cf&&!t.soon?t.cf:null)||(await tileFull(s))||pile(s);const im=await lk(u);const c=document.createElement('canvas');const w=im.width/z,h=im.height/z;c.width=w;c.height=h;c.getContext('2d').drawImage(im,(im.width-w)/2,(im.height-h)/2,w,h,0,0,w,h);t.cf=c.toDataURL('image/jpeg',.92);}""",Z); pg.wait_for_timeout(800)
     pg.evaluate("()=>{window.codeLine=()=>'';try{codeLine=()=>''}catch(e){}}")
     pg.evaluate("()=>[...document.querySelectorAll('button.go')].filter(b=>b.offsetParent&&b.innerText.includes('official')).pop().click()"); pg.wait_for_timeout(4500)
     ok=pg.evaluate("()=>{const b=[...document.querySelectorAll('button')].find(b=>b.offsetParent&&b.innerText.trim()=='Mood board');if(!b)return 0;b.click();return 1}")
