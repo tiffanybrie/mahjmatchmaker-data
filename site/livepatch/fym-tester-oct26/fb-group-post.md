@@ -19,7 +19,7 @@ This has truly been a labor of love, and it's brand new, so it's not perfect yet
 
 Did you start with tiles or start with a mat? Tell me in the comments! 👇
 
-💸 Use our group code MAHJMATCH to save 10% or more at our partner brands.
+💸 Use our group code MAHJMATCH to save at our partner brands.
 
 Thank you all for being here from the very beginning.
 
