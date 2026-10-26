@@ -433,3 +433,4 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 - 2026-10-26 7:20pm · Main · Middle & Main Mahjong partner graphic APPROVED (Peach & Pine × SOIRÉE, Milk Glass on top + Beechwood).
 - 2026-10-26 7:22-7:23pm · Main · Mahj Mood APPROVED (picks) but racks should be bigger; Bam! Holly Jolly APPROVED. Correction: racks were pushed to the far left edge (Claude over-applied 'off the mat'); she wants breathing room like the Holly Jolly card → rack x = max(48, mat left - 8.5% W), Mahj Mood racks back to full size. All cards re-rendered.
 - 2026-10-26 7:23pm · Main · Hip Hip Mahjong APPROVED; title = eyedropped Bird & Bamboo Cherry Red #EB1614 (brighter), racks in a little from the edge.
+- 2026-10-26 7:24pm · Main · Let's Mahj On APPROVED (Baby Blue rack good); only the rack margin (fixed in the 7:23 re-render).
