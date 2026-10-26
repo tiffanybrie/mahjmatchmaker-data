@@ -9,7 +9,7 @@ Headline: Facebook "Heading" style on its own paragraph. In the body, set "Your"
 
 Hey guys!
 
-I've been DYING to show y'all this one. Tonight you get a sneak peek at Find Your Mat-ch, our brand new matching tool, aka Mahj Matchmaker 2.0! 🎉 It goes public tomorrow, but this group gets it FIRST.
+I've been DYING to show y'all this one. Tonight you get a sneak peek at Find Your Mat-ch, our brand new matching tool, aka Mahj Matchmaker 2.0! 🎉 It goes public tomorrow, and I wanted you guys to be among the first to see it.
 
 💗 How it works
 Start with tiles or start with a mat, then swipe ✕ or ♥ through mats and racks from our partner brands. Turn my picks on or off, filter by color, add racks, and save your match card to share.
@@ -30,7 +30,7 @@ Links are in the first comment 👇
 
 ✨💕 Sneak Peek: Find Your Mat-ch™ 💕✨
 
-Hey guys! Y'all get the FIRST look at Find Your Mat-ch, Mahj Matchmaker 2.0, before it goes public tomorrow! Start with tiles or start with a mat and swipe your perfect match. It's a labor of love and a work in progress, so I'd LOVE your feedback on the tester page. 💗
+Hey guys! I wanted you guys to be among the first to see Find Your Mat-ch, Mahj Matchmaker 2.0, before it goes public tomorrow! Start with tiles or start with a mat and swipe your perfect match. It's a labor of love and a work in progress, so I'd LOVE your feedback on the tester page. 💗
 
 Happy mat-ching! 🀄💕
 Links are in the first comment 👇
