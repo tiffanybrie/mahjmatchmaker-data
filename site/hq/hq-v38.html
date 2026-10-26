@@ -1,0 +1,650 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Mahj Matchmaker HQ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap">
+<style>
+/* Layout: a phone-first control panel — status strip, tab row, one focused panel at a time */
+:root{
+  --bg:#fbf8f9; --panel:#ffffff; --ink:#1e3a5f; --muted:#5f6f84; --line:#ead9df;
+  --rose:#c8456f; --rose-soft:#fbe9ef; --red:#c2412d; --red-soft:#fbe7e3; --amber:#a86b00; --amber-soft:#fbf0d9;
+  --green:#2f7d4f; --green-soft:#e3f3e9;
+  --display:"DM Serif Display",Georgia,"Times New Roman",serif; --body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111a26; --panel:#182332; --ink:#e8eef6; --muted:#9fb0c5; --line:#2a3a4f;
+  --rose:#f07aa0; --rose-soft:#3a2230; --red:#f08a76; --red-soft:#3a2420; --amber:#f0c060; --amber-soft:#3a3020;
+  --green:#7fd3a0; --green-soft:#1f3a2b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111a26; --panel:#182332; --ink:#e8eef6; --muted:#9fb0c5; --line:#2a3a4f;
+  --rose:#f07aa0; --rose-soft:#3a2230; --red:#f08a76; --red-soft:#3a2420; --amber:#f0c060; --amber-soft:#3a3020;
+  --green:#7fd3a0; --green-soft:#1f3a2b; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body)}
+.wrap{max-width:900px;margin:0 auto;padding:18px 16px 40px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px 16px;margin-bottom:14px}
+h1{font:400 30px/1.1 var(--display);margin:0;letter-spacing:.2px}
+h1 span{color:var(--rose)}
+.pulse{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--muted);flex:0 0 10px}
+.dot.on{background:var(--green);box-shadow:0 0 0 4px var(--green-soft)}
+.dot.late{background:var(--red);box-shadow:0 0 0 4px var(--red-soft)}
+nav{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;margin-bottom:16px;scrollbar-width:none}
+nav button{font:500 14px var(--body);color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:7px 14px;white-space:nowrap;cursor:pointer}
+nav button[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+nav .ct{display:inline-block;min-width:18px;margin-left:6px;padding:0 6px;border-radius:9px;background:var(--red);color:#fff;font-size:12px;line-height:18px;text-align:center}
+nav button:focus-visible,.btn:focus-visible{outline:2px solid var(--rose);outline-offset:2px}
+section[role=tabpanel]{display:grid;gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;min-width:0}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--rose);margin:0 0 6px}
+h2{font:400 22px/1.2 var(--display);margin:0 0 6px;text-wrap:balance}
+h3{font-size:15px;margin:0}
+p{margin:0}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.list{display:grid;gap:10px;list-style:none;margin:0;padding:0}
+.row{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:start}
+.row > div{min-width:0}
+.pill{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:999px}
+.pill.red{background:var(--red-soft);color:var(--red)} .pill.yellow{background:var(--amber-soft);color:var(--amber)} .pill.green{background:var(--green-soft);color:var(--green)}
+.stripe{width:4px;align-self:stretch;border-radius:2px;background:var(--line)}
+.stripe.red{background:var(--red)} .stripe.yellow{background:var(--amber)} .stripe.green{background:var(--green)}
+.btn{font:700 13px var(--body);border-radius:999px;padding:7px 14px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;text-decoration:none;white-space:nowrap;display:inline-block}
+.btn.primary{background:var(--rose);border-color:var(--rose);color:#fff}
+.actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.up{display:grid;grid-template-columns:repeat(24,1fr);gap:3px;margin:6px 0 4px}
+.up span{height:22px;border-radius:4px;background:var(--line)}
+.up span.ok{background:var(--green)}.up span.bad{background:var(--red)}
+.uplab{display:grid;grid-template-columns:repeat(4,1fr);font-size:11px;color:var(--muted);margin-bottom:6px}
+.linkrow{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.oppcard{border-left:4px solid var(--green)}
+.opp{padding:10px 0;border-bottom:1px solid var(--line)}.opp:last-child{border-bottom:0}
+.opp h3{font-size:15px;margin:0 0 2px}
+.ladder{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
+.ladder span{font-size:12px;padding:3px 9px;border-radius:999px;border:1px solid var(--line)}
+.ladder span.cur{background:var(--green-soft);border-color:var(--green);color:var(--green);font-weight:700}
+.affform{display:flex;gap:8px;flex-wrap:wrap}
+.affform input{flex:1 1 180px;min-width:0;font:15px var(--body);padding:9px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.aff{display:grid;gap:6px;padding:12px 0;border-bottom:1px solid var(--line)}
+.aff:last-child{border-bottom:0}
+.aff .top{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.aff h3{font-size:15px;margin:0}
+.ans{margin-top:10px}.ansbox{width:100%;box-sizing:border-box;border:1px solid var(--line,#e6dfe3);border-radius:10px;padding:9px 11px;font:inherit;font-size:15px;resize:vertical;background:transparent;color:inherit}.ansrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:6px}.thumbs{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}.thumbs:empty{display:none}.thumb{position:relative;display:inline-block}.thumb img{width:72px;height:72px;object-fit:cover;border-radius:8px;border:1px solid var(--line,#e6dfe3);display:block}.thumbx{position:absolute;top:-6px;right:-6px;width:22px;height:22px;border-radius:50%;border:0;background:#333;color:#fff;font-size:14px;line-height:22px;padding:0;cursor:pointer}
+.steps{display:flex;flex-wrap:wrap;gap:6px}
+.steps .chk{font-size:12px;padding:3px 9px}
+.pill.blue{background:var(--rose-soft);color:var(--rose)} .pill.gray{background:var(--line);color:var(--muted)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.kpi .v{font:400 30px/1.1 var(--display);font-variant-numeric:tabular-nums}
+.kpi .l{font-size:12px;color:var(--muted)}
+.tbl{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:14px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
+td.n,th.n{text-align:right}
+.bar{height:10px;border-radius:5px;background:var(--rose-soft);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--rose)}
+.empty{padding:18px;border:1px dashed var(--line);border-radius:12px;color:var(--muted);font-size:14px}
+.time{font-size:12px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+a{color:var(--rose)}
+.next li{padding-left:2px}
+.chart svg{display:block;width:100%;height:auto}
+.prio{display:grid;gap:10px}
+.pcard{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.pcard.top{border-color:var(--rose);box-shadow:0 0 0 1px var(--rose) inset}
+.rank{font:400 34px/1 var(--display);color:var(--rose);min-width:28px;text-align:center}
+.pcard h3{font-size:16px;margin:0 0 2px}
+.pcard .st{font-size:13px;color:var(--muted)}
+.pcard .nx{font-size:13px;margin-top:6px}
+.pcard .bar{margin-top:8px}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;background:var(--rose-soft);color:var(--rose);margin-left:6px;vertical-align:2px}
+.checks{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chk{display:flex;align-items:center;gap:6px;font-size:13px;padding:5px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.chk.ok{border-color:var(--green);color:var(--green);background:var(--green-soft)}
+.tbrow{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding-bottom:6px;font-variant-numeric:tabular-nums}
+.goal{border-left:4px solid var(--rose)}
+.starthere{border-left:4px solid var(--rose)}
+.gq li{display:grid;grid-template-columns:30px 1fr;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}.gq li:last-child{border-bottom:0}
+.gq .n0{font:400 22px/1 var(--display);color:var(--rose);text-align:center}.gq li.done .n0{color:var(--green)}
+.ok{color:var(--green);font-weight:700}.no{color:var(--red);font-weight:700}.unk{color:var(--amber);font-weight:700}
+.steps button.chk{background:transparent;cursor:pointer;font:inherit}@media (max-width:520px){#repCard th:nth-child(5),#repCard td:nth-child(5),#repCard th:nth-child(6),#repCard td:nth-child(6){display:none}}.repd{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}.sortb{all:unset;cursor:pointer;font:inherit;letter-spacing:inherit;text-transform:inherit}.sortb[aria-pressed="true"]{color:var(--ink);text-decoration:underline}.steps button.chk[aria-pressed="true"]{border-color:var(--ink);color:var(--ink);font-weight:700}
+@media (max-width:520px){.row{grid-template-columns:auto 1fr}.row .actions{grid-column:2;justify-content:flex-start}h1{font-size:26px}}
+.pfb .meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:4px} .pfb .msg{white-space:pre-wrap;margin-top:6px} .pfb .q{font-size:13px;color:var(--muted);margin-top:6px} .pfb.test{opacity:.7}
+.talk{border-left:4px solid var(--rose)} .talk .ansbox{font-size:17px;min-height:96px} #talkMic.on{background:var(--red);border-color:var(--red)} .talkitem{border-top:1px solid var(--line);padding-top:8px} .talkitem .rep{margin-top:4px;padding:6px 10px;border-radius:10px;background:var(--green-soft)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Mahj Matchmaker <span>HQ</span></h1>
+    <div class="pulse" id="pulse"><span class="dot" id="pdot"></span><span id="ptext">Waiting for Claude’s first check-in…</span></div>
+  </header>
+  <nav role="tablist" aria-label="Sections">
+    <button role="tab" id="t-now" aria-selected="true" data-p="now">Now</button>
+    <button role="tab" id="t-notes" aria-selected="false" data-p="notes">My notes</button>
+    <button role="tab" id="t-launch" aria-selected="false" data-p="launch">Launch</button>
+    <button role="tab" id="t-needs" aria-selected="false" data-p="needs">Needs you<span class="ct" id="needct" hidden>0</span></button>
+    <button role="tab" id="t-albums" aria-selected="false" data-p="albums">Albums<span class="ct" id="albct" hidden>0</span></button>
+    <button role="tab" id="t-social" aria-selected="false" data-p="social">Social<span class="ct" id="socct" hidden>0</span></button>
+    <button role="tab" id="t-done" aria-selected="false" data-p="done">Done · 24h</button>
+    <button role="tab" id="t-later" aria-selected="false" data-p="later">Parking lot</button>
+    <button role="tab" id="t-money" aria-selected="false" data-p="money">Money</button>
+    <button role="tab" id="t-aff" aria-selected="false" data-p="aff">Affiliates<span class="ct" id="affct" hidden>0</span></button>
+    <button role="tab" id="t-google" aria-selected="false" data-p="google">Google</button>
+    <button role="tab" id="t-seo" aria-selected="false" data-p="seo">SEO</button>
+    <button role="tab" id="t-builder" aria-selected="false" data-p="builder">Find Your Match</button>
+    <button role="tab" id="t-pfb" aria-selected="false" data-p="pfb">Partner brand feedback<span class="ct" id="pfbct" hidden>0</span></button>
+  </nav>
+
+  <section role="tabpanel" id="p-now">
+    <div class="card starthere" id="doorCard"><p class="eyebrow">Start here</p><h2>Today</h2><ul class="list doorlist" id="doorToday"><li class="muted small">Loading…</li></ul><h2 style="margin-top:18px">This week</h2><ul class="list doorlist" id="doorWeek"><li class="muted small">Loading…</li></ul>
+      <div class="actions" style="justify-content:flex-start;margin-top:16px"><a class="btn primary" href="https://app.planoly.com/" target="_blank" rel="noopener">Social → review in Planoly</a><a class="btn" href="https://claude.ai/artifact/RTtaTzgkN2ssmiAP3FxvJF" target="_blank" rel="noopener">Ready to Ship: tap yes on albums &amp; cards</a></div>
+      <p class="muted small" id="doorNote" style="margin-top:10px">This is the whole list. Every social post lives in Planoly; you review it there, not here.</p></div>
+    <div class="card talk" id="talkCard"><p class="eyebrow">Talk to Claude</p><h2>Say it or type it</h2>
+      <p class="muted small" id="talkHint">Tap <b>🎤 Talk</b> and just speak, or tap in the box and use the mic on your keyboard. Then tap <b>Send to Claude</b>.</p>
+      <textarea id="talkText" class="ansbox" rows="4" placeholder="What do you want me to do?" style="margin-top:10px"></textarea>
+      <div class="ansrow"><button class="btn primary" type="button" id="talkMic" hidden>🎤 Talk</button><button class="btn" type="button" id="talkSend" style="background:var(--ink);color:var(--bg);border-color:var(--ink)">Send to Claude</button><span class="time" id="talkMsg"></span></div>
+      <ul class="list small" id="talkList" style="margin-top:12px"></ul></div>
+    <div class="card starthere" id="startCard" hidden><p class="eyebrow">Start here</p><h2 id="startHead">What's waiting on you</h2><p class="muted small" id="startNote">Everything you need to approve is on Ready to Ship. The launch to-do list is on the Launch Checklist.</p><div class="actions" style="justify-content:flex-start;margin-top:10px"><a class="btn primary" href="https://claude.ai/artifact/RTtaTzgkN2ssmiAP3FxvJF" target="_blank" rel="noopener">Open Ready to Ship</a><a class="btn" href="https://claude.ai/artifact/6XKh5kvjMdAZXoeve21aSh" target="_blank" rel="noopener">Open Launch Checklist</a></div></div>
+    <div class="prio" id="prioList"><div class="empty">Our top priorities show here.</div></div>
+    <details class="card" id="launchCard" hidden><summary class="small"><b>Brand launches we're tracking</b> <span class="muted" id="launchCt"></span></summary><div class="tbl" style="margin-top:10px"><table><thead><tr><th>Launch</th><th>Dates</th><th>Album</th></tr></thead><tbody id="launchRows"></tbody></table></div></details>
+    <details class="card" id="rulesCard" hidden><summary class="small"><b>When something new comes in</b></summary><ol class="list small" id="rulesList" style="margin-top:10px;padding-left:18px"></ol></details>
+    <div class="card">
+      <p class="eyebrow">Claude is working on</p>
+      <h2 id="nowTask">—</h2>
+      <p class="muted" id="nowDetail"></p>
+    </div>
+    <div class="card">
+      <p class="eyebrow">Up next</p>
+      <ol class="list next" id="nowNext"><li class="muted">Nothing queued yet.</li></ol>
+    </div>
+    <div class="card">
+      <p class="eyebrow">Your computer today</p>
+      <div class="up" id="upStrip" aria-label="Hourly computer and browser availability"></div>
+      <p class="muted small" id="upNote">Green: I could reach your computer and browser that hour. Red: I couldn’t (usually asleep, offline, or the Claude app was closed).</p>
+    </div>
+    <div class="kpis" id="nowKpis"></div>
+  </section>
+
+  <section role="tabpanel" id="p-notes" hidden>
+    <div class="card"><p class="small"><b>Your brain dump.</b> This is just for you. Claude doesn't read these notes or act on them. If you want help with one later, tap <b>Hand to Claude</b> on it, and only that note comes to me.</p>
+      <textarea id="noteText" rows="5" placeholder="Type an idea, a thought, a someday..." style="width:100%;box-sizing:border-box;margin-top:10px;border:1px solid var(--line);border-radius:10px;padding:10px;font:inherit;background:var(--bg);color:var(--ink)"></textarea>
+      <div style="display:flex;gap:8px;align-items:center;margin-top:8px"><button class="btn" type="button" id="noteSave" style="background:var(--ink);color:var(--bg);border-color:var(--ink)">Save note</button><span class="muted small" id="noteMsg"></span></div></div>
+    <ul class="list" id="noteList"><li class="empty">No notes yet.</li></ul>
+  </section>
+  <section role="tabpanel" id="p-launch" hidden>
+    <div class="card goal"><p class="eyebrow">Mahj Matchmaker 2.0 launch</p><h2 id="lDate">—</h2><p class="muted small" id="lNote"></p><div class="bar" style="margin-top:10px"><i id="lBar" style="width:0%"></i></div><p class="time" id="lCount" style="margin-top:6px"></p></div>
+    <div id="lPhases"></div>
+    <div class="card"><p class="eyebrow">Decided</p><ul class="list small" id="lOpen"></ul></div>
+  </section>
+
+  <section role="tabpanel" id="p-needs" hidden>
+    <div class="card starthere"><p class="small">Everything waiting on you is here, in the order to do it. <a href="https://claude.ai/artifact/RTtaTzgkN2ssmiAP3FxvJF" target="_blank" rel="noopener"><b>Ready to Ship</b></a> is only where you tap yes on albums and cards; social is reviewed in <a href="https://app.planoly.com/" target="_blank" rel="noopener"><b>Planoly</b></a>.</p></div>
+    <div class="card"><p class="muted small">Red = holding up high-priority work. Yellow = this week. Green = whenever. Tap <b>Done</b> when you’ve handled one and I’ll see it. Tapped Done by mistake? Open <b>Handled recently</b> at the bottom and tap <b>Undo</b>.</p></div>
+    <ul class="list" id="needsList"><li class="empty">Nothing waiting on you right now.</li></ul>
+    <details class="card" id="doneNeedsWrap" hidden><summary class="small"><b>Handled recently</b></summary><ul class="list" id="doneNeeds" style="margin-top:10px"></ul></details>
+  </section>
+
+  <section role="tabpanel" id="p-albums" hidden>
+    <div class="card"><p class="muted small">Every album and where it stands. <b>Yours</b> means it needs a swipe or a look from you. Use <b>↑ ↓</b> or <b>Top</b> to put the sets you want next first. I work in your order.</p><div class="steps" id="albChips" style="margin-top:10px"></div></div>
+    <div class="card" id="reqCard" hidden><p class="eyebrow">Reader album requests</p><ul class="list small" id="reqList"></ul></div>
+    <div id="albGroups"></div>
+  </section>
+
+  <section role="tabpanel" id="p-social" hidden>
+    <div class="card"><p class="muted small">Every post lives in <a href="https://app.planoly.com/" target="_blank" rel="noopener"><b>Planoly</b></a>, at its posting time. Review and approve posts there. Reminder posts carry the steps in their 🛑 box.</p></div>
+    <div id="socGroups"></div>
+  </section>
+
+  <section role="tabpanel" id="p-done" hidden>
+    <ul class="list" id="logList"><li class="empty">No finished work logged in the last 24 hours yet.</li></ul>
+  </section>
+
+  <section role="tabpanel" id="p-money" hidden>
+    <div class="card" id="todayCard">
+      <p class="eyebrow">Today so far</p>
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px"><span class="kpi"><span class="v" id="todayTotal">—</span></span><span class="muted" id="todaySub">First check of the day runs about 9:50am.</span></div>
+      <div class="checks" id="todayChecks"></div>
+      <ul class="list small" id="todayBrands" style="margin-top:10px"></ul>
+    </div>
+    <div class="card" id="repCard"><p class="eyebrow">Affiliate report</p>
+      <div class="steps" id="repChips" role="group" aria-label="Period" style="margin:4px 0 8px"></div>
+      <div class="small muted" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px">From <input type="date" id="repFrom" class="repd"> to <input type="date" id="repTo" class="repd"></div>
+      <div class="kpis" id="repKpis"></div>
+      <div class="tbl" style="margin-top:12px"><table><thead><tr><th>Brand</th><th class="n"><button class="sortb" data-k="orders" type="button">Orders</button></th><th class="n"><button class="sortb" data-k="comm" type="button">Commission</button></th><th class="n">Per order</th><th class="n">Days</th><th style="width:22%">Share</th></tr></thead><tbody id="repRows"></tbody></table></div>
+      <p class="muted small" id="repNote" style="margin-top:8px"></p>
+    </div>
+    <div class="kpis" id="moneyKpis"></div>
+    <div class="card chart" id="moneyChartCard" hidden><p class="eyebrow">Commission by day</p><div id="moneyChart"></div></div>
+    <div class="card"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px"><p class="eyebrow" id="moneyDay" style="margin:0">Yesterday by brand</p><label class="small muted">Day <select id="moneyPick" style="font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink)"></select></label></div><div class="tbl"><table><thead><tr><th>Brand</th><th class="n">Orders</th><th class="n">Commission</th><th>Notes</th></tr></thead><tbody id="moneyRows"><tr><td colspan="4" class="muted">The next daily report fills this in.</td></tr></tbody></table></div></div>
+    <div class="card" id="missingCard" hidden><p class="eyebrow">Amounts I still need (no estimates)</p><ul class="list small" id="missingList"></ul></div>
+  </section>
+
+  <section role="tabpanel" id="p-aff" hidden>
+    <div class="kpis" id="affKpis"></div>
+    <div class="card">
+      <p class="eyebrow">Applied somewhere new?</p>
+      <div id="affForm" class="affform">
+        <input id="affName" placeholder="Brand name" required maxlength="80">
+        <input id="affNote" placeholder="Network or note (optional)" maxlength="140">
+        <button class="btn primary" type="button" id="affAdd">Add</button>
+      </div>
+      <p class="muted small" id="affMsg">Add it here and I'll watch the mahjmatchmaker@ inbox for their approval, then do the brand page, listing, logos and builder the same day.</p>
+    </div>
+    <div class="card" id="snipCard"><p class="eyebrow">Copy-paste snippets</p><p class="muted small" style="margin-top:-2px">Outreach text for brands. Tap Copy and paste it into their contact form or email.</p><div id="snipList" style="display:grid;gap:14px;margin-top:10px"><p class="muted small">Loading…</p></div></div>
+    <div class="card oppcard" id="oppCard" hidden><p class="eyebrow">Earnings opportunities</p><p class="muted small" style="margin-top:-2px">Tiers, bonuses and rate bumps from each program's terms. These get raised in every SEO strategy review.</p><div id="oppList"></div></div>
+    <div class="card"><p class="eyebrow">Every brand, start to finish</p><p class="muted small" style="margin-top:-2px">Approved → brand page → listed on Discount Codes → logos → in Google → in Find Your Match → album shortlist.</p><ul class="list" id="affList"><li class="empty">Loading brands…</li></ul></div>
+  </section>
+
+
+  <section role="tabpanel" id="p-google" hidden>
+    <div class="card goal"><p class="eyebrow">The #1 goal</p><h2>Get MAHJMATCH found on Google</h2><p class="muted small">In Google’s results <b>and</b> in Google’s AI answers for “[brand] discount code”. Most of our affiliate sales come from Google’s AI naming our code, not from clicks to the site, so every brand page has to be indexed, current and verified.</p></div>
+    <div class="kpis" id="gKpis"></div>
+    <div class="card"><p class="eyebrow">Every brand page</p><p class="muted small" id="gBrandNote" style="margin-top:-2px">✓ = submitted to Google for indexing. New brands from the Affiliates tab appear here automatically.</p><div class="tbl"><table><thead><tr><th>Brand page</th><th>Submitted</th><th>In Google</th></tr></thead><tbody id="gBrands"></tbody></table></div></div>
+    <div class="card"><p class="eyebrow">Indexing queue · in order</p><p class="muted small" id="gQuota" style="margin-top:-2px"></p><ol class="list gq" id="gQueue"></ol></div>
+    <div class="card" id="gRecrawlCard" hidden><p class="eyebrow">Re-crawls (max 2 a day)</p><ul class="list small" id="gRecrawl"></ul></div>
+    <div class="card" id="gFixCard" hidden><p class="eyebrow">Fix, don’t submit</p><ul class="list small" id="gFix"></ul></div>
+    <details class="card"><summary class="small"><b>Every other page</b> <span class="muted" id="gOtherCt"></span></summary><div class="tbl" style="margin-top:10px"><table><thead><tr><th>Page</th><th>Type</th><th>In Google</th></tr></thead><tbody id="gOther"></tbody></table></div></details>
+    <div class="card"><p class="eyebrow">What people search · monthly volume</p><p class="muted small" id="kwSrc" style="margin-top:-2px"></p>
+      <div class="steps" id="kwChips" style="margin:10px 0"></div>
+      <div class="tbl"><table><thead><tr><th>Search</th><th class="n">Per month</th><th>Our page</th><th class="n">Our spot</th></tr></thead><tbody id="kwRows"></tbody></table></div>
+      <p class="muted small" style="margin-top:8px">“Our spot” is our average Google position from Search Console (last 28 days); blank means we haven’t shown up for it yet.</p></div>
+    <details class="card" id="gRulesCard"><summary class="small"><b>How the queue is ordered</b></summary><ol class="list small" id="gRules" style="margin-top:10px;padding-left:18px"></ol></details>
+  </section>
+
+  <section role="tabpanel" id="p-seo" hidden>
+    <div class="kpis" id="seoKpis"></div>
+    <div class="card">
+      <p class="eyebrow">Strategy ideas</p>
+      <div id="stratForm" class="affform"><input id="stratText" placeholder="Drop an SEO or growth idea…" maxlength="400"><button class="btn primary" type="button" id="stratAdd">Save</button></div>
+      <p class="muted small" id="stratMsg">Ideas from you and from our chats land here. The weekly SEO strategy review works through them.</p>
+      <ul class="list" id="stratList"></ul>
+    </div>
+    <div class="card"><p class="eyebrow">Brand checks · live Google</p><div class="tbl"><table><thead><tr><th>Brand</th><th>Where we rank</th><th>Who else shows up</th></tr></thead><tbody id="seoRows"><tr><td colspan="3" class="muted">The next SEO check fills this in.</td></tr></tbody></table></div></div>
+    <div class="card"><p class="eyebrow">What I’m doing about it</p><ol class="list" id="seoNext"></ol></div>
+  </section>
+
+  <section role="tabpanel" id="p-later" hidden>
+    <div class="card"><p class="muted small">Ideas and requests that matter but don't jump ahead of the top priorities. I pull from here when a priority is blocked or done.</p></div>
+    <ul class="list" id="ideaList"><li class="empty">Nothing parked yet.</li></ul>
+  </section>
+
+  <section role="tabpanel" id="p-builder" hidden>
+    <div class="card" id="catCard" hidden><p class="eyebrow">Catalog: is every partner product in?</p><h2 id="catHead">—</h2><p class="muted small" id="catSub"></p><div class="tbl" style="margin-top:10px"><table><thead><tr><th>Brand</th><th class="n">Mats in app</th><th class="n">Mats in shop</th><th class="n">Missing mats</th><th class="n">Missing racks</th></tr></thead><tbody id="catRows"></tbody></table></div><p class="muted small" id="catNote" style="margin-top:8px"></p></div>
+    <div class="card"><p class="eyebrow">Status</p><h2 id="bStatus">—</h2><p class="muted" id="bEta"></p></div>
+    <div class="card"><div class="list" id="bBars"></div></div>
+    <div class="card" id="bLinkCard" hidden><a class="btn primary" id="bLink" target="_blank" rel="noopener">Open the latest prototype</a></div>
+  </section>
+
+  <section role="tabpanel" id="p-pfb" hidden>
+    <div class="card starthere"><p class="small"><b>Every note and photo partner brands send, in one place, newest first.</b> Nothing here lands in your inbox. Notes come from the <b>Tell us what to fix</b> form; photos come from the Dropbox upload link. Claude handles each one and marks it here. This tab is just so you can read along.</p></div>
+    <ul class="list" id="pfbList"><li class="empty">No partner feedback yet.</li></ul>
+  </section>
+</div>
+
+<script>
+(function(){
+  const $=s=>document.querySelector(s);
+  const el=(t,c,txt)=>{const e=document.createElement(t); if(c) e.className=c; if(txt!=null) e.textContent=txt; return e;};
+  const ago=iso=>{ if(!iso) return ''; const m=Math.round((Date.now()-new Date(iso))/60000); if(m<1) return 'just now'; if(m<60) return m+' min ago'; const h=Math.round(m/60); if(h<24) return h+' hr ago'; return Math.round(h/24)+' days ago'; };
+  const money=v=>v==null||v===''?'—':'$'+Number(v).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+  const etDate=()=>{ try{return new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York'}).format(new Date());}catch(e){return new Date().toISOString().slice(0,10);} };
+  const split=()=>{ const t=etDate(); const today=state.money.find(d=>d.date===t)||null; const past=state.money.filter(d=>d.date<t); return {today, y:past[0]||null, past}; };
+  // tabs
+  const tabs=[...document.querySelectorAll('nav [role=tab]')];
+  function show(p){ tabs.forEach(t=>t.setAttribute('aria-selected',t.dataset.p===p?'true':'false')); document.querySelectorAll('[role=tabpanel]').forEach(s=>s.hidden=s.id!=='p-'+p); try{localStorage.setItem('hqTab',p)}catch(e){} }
+  tabs.forEach(t=>t.addEventListener('click',()=>show(t.dataset.p)));
+  let start='now'; const h=(location.hash||'').slice(1); if(['now','launch','needs','albums','social','done','later','money','aff','google','seo','builder','pfb'].includes(h)) start=h; else { try{const s=localStorage.getItem('hqTab'); if(s) start=s;}catch(e){} } show(start);
+
+  const state={prio:null,ideas:[],now:null,builder:null,needs:[],log:[],money:[],seo:[]};
+  function kpi(box,items){ box.textContent=''; items.forEach(([v,l])=>{const d=el('div','card kpi'); d.append(el('div','v',v), el('div','l',l)); box.append(d);}); }
+
+  function renderPulse(){ const n=state.now; const dot=$('#pdot'), t=$('#ptext'); if(!n||!n.updatedAt){dot.className='dot'; t.textContent='Waiting for Claude’s first check-in…'; return;}
+    const mins=(Date.now()-new Date(n.updatedAt))/60000; dot.className='dot '+(mins<=75?'on':'late');
+    t.textContent=(mins<=75?'Claude checked in ':'No check-in for a while · last ')+ago(n.updatedAt); }
+  function renderNow(){ const n=state.now||{}; $('#nowTask').textContent=n.task||'—'; $('#nowDetail').textContent=n.detail||'';
+    const ol=$('#nowNext'); ol.textContent=''; (n.next&&n.next.length?n.next:['Nothing queued yet.']).forEach(x=>ol.append(el('li',null,x))); { let lc=document.getElementById('liveYesCard'); const pn=document.getElementById('p-now'); if(!lc&&pn){ lc=el('div','card'); lc.id='liveYesCard'; lc.style.borderLeft='4px solid var(--rose)'; const sc=document.getElementById('startCard'); if(sc) sc.after(lc); else pn.prepend(lc); } if(lc){ lc.textContent=''; const L=state.needs.filter(x=>x.status!=='done'&&x.status!=='archived'&&x.status!=='parked'&&/^LIVE YES/.test(x.title||'')).sort((a,b)=>(a.order||99)-(b.order||99)); lc.hidden=!L.length; lc.append(el('p','eyebrow','Built and waiting on your live yes')); if(!L.length){ lc.append(el('p','muted small','Nothing waiting. Everything built is live.')); } else { const ul=el('ul','list small'); L.forEach(x=>{ const li=el('li'); const a=document.createElement('a'); a.href='#'; a.textContent=(x.title||'').replace(/^LIVE YES:\s*/,''); a.addEventListener('click',e=>{e.preventDefault(); const b=document.querySelector('[data-p="needs"]')||document.getElementById('t-needs'); if(b) b.click(); setTimeout(()=>{const r=document.querySelector('[data-nid="'+x.id+'"]'); if(r) r.scrollIntoView({behavior:'smooth',block:'center'});},300);}); li.append(a); ul.append(li); }); lc.append(ul); lc.append(el('p','muted small','Type yes in the item (or tell me in chat) and it goes live the same day.')); } } }
+    const open=state.needs.filter(x=>x.status!=='done'&&x.status!=='parked'&&x.status!=='archived'); const red=open.filter(x=>x.light==='red').length;
+    const {today,y}=split(); const mtd=(today&&today.mtd!=null)?today.mtd:(y?y.mtd:null); kpi($('#nowKpis'),[[String(open.length),'things waiting on you'+(red?` · ${red} red`:'')],[today?money(today.total):'—','today so far'],[y?money(y.total):'—',y?'commission '+y.dateLabel:'yesterday’s commission'],[mtd!=null?money(mtd):'—','October to date']]); renderPulse(); }
+
+  const drafts={}; const pics={};
+  function linkify(node,text){ const re=/(https?:\/\/[^\s)]+)/g; let last=0,m; const s=String(text); while((m=re.exec(s))){ if(m.index>last) node.append(document.createTextNode(s.slice(last,m.index))); let u=m[1].replace(/[.,;:]+$/,''); const a=document.createElement('a'); a.href=u; a.target='_blank'; a.rel='noopener'; a.textContent=u.replace(/^https?:\/\/(www\.)?/,'').replace(/^claude\.ai\/artifact\/.*/,'Open page').slice(0,60); node.append(a); last=m.index+u.length; } if(last<s.length) node.append(document.createTextNode(s.slice(last))); return node; }
+  async function markDone(id){ try{ const db=await claude.use('db'); if(!db) return; await db.collection('needs').doc(id).update({status:'done',doneAt:new Date().toISOString()}); }catch(e){ const b=document.getElementById('nd-'+id); if(b) b.textContent='Couldn’t save — try again'; } }
+  function needRow(x,done){ const li=el('li','card row'); if(x.id) li.dataset.nid=x.id; li.addEventListener('click',()=>{try{sessionStorage.setItem('hqLast',x.id);localStorage.setItem('hqLast',x.id)}catch(e){}},true); li.append(el('span','stripe '+(x.light||'')));
+    const mid=el('div'); const top=el('div'); top.style.cssText='display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:4px';
+    top.append(el('span','pill '+(x.light||'green'),/^LIVE YES/.test(x.title||'')?'Live yes':({red:'Red',yellow:'Yellow',green:'Green'}[x.light]||'Green'))); if(x.minutes) top.append(el('span','time',x.minutes+' min'));
+    mid.append(top, el('h3',null,x.title)); if(x.why) mid.append(linkify(el('p','muted small'),x.why)); if(x.img){ const im=document.createElement('img'); im.src=x.img; im.alt=''; im.loading='lazy'; im.style.cssText='display:block;width:100%;max-width:520px;border-radius:10px;margin:8px 0;cursor:zoom-in'; im.addEventListener('click',()=>{const big=im.style.maxWidth==='none'; im.style.maxWidth=big?'520px':'none'; im.style.cursor=big?'zoom-in':'zoom-out';}); mid.append(im); }
+    if(x.steps&&x.steps.length){ const ol=el('ol','small'); ol.style.cssText='margin:6px 0 0;padding-left:18px'; x.steps.forEach(s=>ol.append(linkify(el('li'),s))); mid.append(ol); }
+    if(!done){ const ab=el('div','ans'); const ta=document.createElement('textarea'); ta.className='ansbox'; ta.dataset.id=x.id; ta.rows=2; ta.placeholder='Type your answer, a link or a note here'; ta.value=drafts[x.id]!==undefined?drafts[x.id]:''; ta.addEventListener('input',()=>{drafts[x.id]=ta.value;});
+      const sb=el('button','btn','Send to Claude'); sb.type='button'; const msg=el('span','time');
+      if(x.answer&&(x.answer.text||x.answer.images)){ const t=x.answer.text||''; const n=(x.answer.images||[]).length; msg.textContent='Sent '+ago(x.answer.at)+': “'+t.slice(0,80)+(t.length>80?'…':'')+'”'+(n?' + '+n+' screenshot'+(n>1?'s':''):''); }
+      if(!pics[x.id]) pics[x.id]=[];
+      const thumbs=el('div','thumbs'); const drawThumbs=()=>{ thumbs.innerHTML=''; pics[x.id].forEach((p,i)=>{ const w=el('span','thumb'); const im=document.createElement('img'); im.src=p.url; im.alt='Screenshot'; const rm=el('button','thumbx','×'); rm.type='button'; rm.title='Remove'; rm.addEventListener('click',()=>{ pics[x.id].splice(i,1); drawThumbs(); }); w.append(im,rm); thumbs.append(w); }); };
+      drawThumbs();
+      const pb=el('button','btn','📷 Add screenshot'); pb.type='button'; pb.hidden=true; const fi=document.createElement('input'); fi.type='file'; fi.accept='image/*'; fi.multiple=true; fi.hidden=true;
+      claude.use('assets').then(a=>{ if(a) pb.hidden=false; });
+      pb.addEventListener('click',()=>fi.click());
+      fi.addEventListener('change',async()=>{ const files=[...fi.files]; fi.value=''; if(!files.length) return; const a=await claude.use('assets'); if(!a){ msg.textContent='Screenshots aren’t available here.'; return; } pb.disabled=true; for(const f of files){ msg.textContent='Uploading '+f.name+'…'; try{ const r=await a.upload(f); pics[x.id].push({id:r.id,url:r.url}); drawThumbs(); msg.textContent='Added. Tap Send to Claude.'; }catch(e){ msg.textContent='Couldn’t upload '+f.name+'. Try again.'; } } pb.disabled=false; });
+      sb.addEventListener('click',async()=>{ const v=ta.value.trim(); const ims=pics[x.id].map(p=>p.id); if(!v&&!ims.length) return; sb.disabled=true; sb.textContent='Saving…'; try{ const db=await claude.use('db'); if(!db) throw 0; const ans={text:v,at:new Date().toISOString()}; if(ims.length) ans.images=ims; await db.collection('needs').doc(x.id).update({answer:ans,answerSeen:false}); try{ await db.collection('answers').doc(x.id+'__'+Date.now()).set(Object.assign({need:x.id,title:x.title||''},ans)); }catch(e){} delete drafts[x.id]; pics[x.id]=[]; drawThumbs(); ta.value=''; sb.textContent='Sent'; msg.textContent='Saved. I pick this up within the hour.'; }catch(e){ sb.disabled=false; sb.textContent='Send to Claude'; msg.textContent='Couldn’t save. Try again.'; } });
+      ab.append(ta, thumbs, el('div','ansrow')); ab.lastChild.append(sb,pb,fi,msg); mid.append(ab); }
+    li.append(mid); const act=el('div','actions');
+    if(x.link){ const a=el('a','btn',x.linkLabel||'Open'); a.href=x.link; a.target='_blank'; a.rel='noopener'; act.append(a); }
+    if(!done){ const b=el('button','btn primary','Done'); b.id='nd-'+x.id; b.type='button'; b.addEventListener('click',()=>{b.disabled=true;b.textContent='Saving…';markDone(x.id);}); act.append(b); }
+    else { act.append(el('span','time','done '+ago(x.doneAt))); const u=el('button','btn','Undo'); u.type='button'; u.addEventListener('click',async()=>{u.disabled=true;u.textContent='Saving…'; try{ const db=await claude.use('db'); if(db) await db.collection('needs').doc(x.id).update({status:'open'}); }catch(e){ u.disabled=false; u.textContent='Undo'; } }); act.append(u); }
+    li.append(act); return li; }
+  function renderNeeds(){ const ae=document.activeElement; if(ae&&ae.classList&&ae.classList.contains('ansbox')){ clearTimeout(renderNeeds._t); renderNeeds._t=setTimeout(renderNeeds,1500); return; } const ord={red:0,yellow:1,green:2}; const open=state.needs.filter(x=>x.status!=='done'&&x.status!=='parked'&&x.status!=='archived').sort((a,b)=>(ord[a.light]??3)-(ord[b.light]??3)||(a.order||99)-(b.order||99));
+    const ul=$('#needsList'); ul.textContent=''; if(!open.length) ul.append(el('li','empty','Nothing waiting on you right now.')); open.forEach(x=>ul.append(needRow(x,false))); try{const last=sessionStorage.getItem('hqLast')||localStorage.getItem('hqLast'); let li=last&&ul.querySelector('li[data-nid="'+last+'"]'); if(!li&&last){ const all=state.needs.filter(x=>x.status!=='done'&&x.status!=='parked'&&x.status!=='archived').sort((a,b)=>(ord[a.light]??3)-(ord[b.light]??3)||(a.order||99)-(b.order||99)); } if(li&&!renderNeeds._restored){ renderNeeds._restored=1; li.classList.add('hqlast'); setTimeout(()=>li.scrollIntoView({block:'center'}),60); } }catch(e){}
+    const ct=$('#needct'); ct.hidden=!open.length; ct.textContent=open.length;
+    const done=state.needs.filter(x=>x.status==='done'&&x.doneAt&&(Date.now()-new Date(x.doneAt))<7*864e5).sort((a,b)=>b.doneAt.localeCompare(a.doneAt));
+    $('#doneNeedsWrap').hidden=!done.length; const d=$('#doneNeeds'); d.textContent=''; done.forEach(x=>d.append(needRow(x,true))); }
+  function renderLog(){ const ul=$('#logList'); ul.textContent=''; const items=state.log.filter(x=>x.at&&(Date.now()-new Date(x.at))<864e5).sort((a,b)=>b.at.localeCompare(a.at));
+    if(!items.length){ ul.append(el('li','empty','No finished work logged in the last 24 hours yet.')); return; }
+    items.forEach(x=>{ const li=el('li','card row'); li.append(el('span','time',new Date(x.at).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})));
+      const mid=el('div'); if(x.area) mid.append(el('p','eyebrow',x.area)); mid.append(el('h3',null,x.title)); if(x.detail) mid.append(el('p','muted small',x.detail)); li.append(mid);
+      const act=el('div','actions'); if(x.link){const a=el('a','btn','Open'); a.href=x.link; a.target='_blank'; a.rel='noopener'; act.append(a);} li.append(act); ul.append(li); }); }
+  function renderToday(t){ $('#todayTotal').textContent=t?money(t.total):'—';
+    $('#todaySub').textContent=t?((t.sales!=null?t.sales+' sales':'')+(t.lastCheck?' · checked '+ago(t.lastCheck):'')):'First check of the day runs about 9:50am.';
+    const slots=[['morning','Morning · 9:50'],['afternoon','Afternoon · 1:50'],['evening','Evening · 6:50']]; const done=(t&&t.checks)||{};
+    const box=$('#todayChecks'); box.textContent=''; slots.forEach(([k,l])=>{ const c=el('span','chk'+(done[k]?' ok':''),(done[k]?'✓ ':'')+l); box.append(c); });
+    const ul=$('#todayBrands'); ul.textContent=''; ((t&&t.brands)||[]).forEach(b=>{ const li=el('li','tbrow'); li.append(el('span',null,b.brand+(b.orders!=null?' · '+b.orders:'')), el('span',null,b.commission!=null?money(b.commission):'amount not shown')); ul.append(li); });
+    if(t&&t.missing&&t.missing.length){ const li=el('li','muted'); li.textContent='Still need: '+t.missing.join('; '); ul.append(li); } }
+  function renderMoney(){ try{renderReport();}catch(e){} const {today,y,past}=split(); const days=past; renderToday(today); const pick=$('#moneyPick'); const all=state.money.slice(); if(pick){ const cur=pick.value; pick.textContent=''; all.forEach(d=>{ const o=document.createElement('option'); o.value=d.date; o.textContent=(d.dateLabel||d.date)+(d===today?' (today)':''); pick.append(o); }); const want=cur||moneySel||(y?y.date:(today?today.date:'')); if(all.some(d=>d.date===want)) pick.value=want; } const m=all.find(d=>pick&&d.date===pick.value)||y; const mtd=(today&&today.mtd!=null)?today.mtd:(y?y.mtd:null);
+    kpi($('#moneyKpis'),[[m?money(m.total):'—',m?'commission '+m.dateLabel:'yesterday'],[m&&m.sales!=null?String(m.sales):'—',m?'sales '+m.dateLabel:'sales'],[mtd!=null?money(mtd):'—','October to date']]);
+    $('#moneyDay').textContent=m?'By brand · '+m.dateLabel:'Yesterday by brand';
+    const tb=$('#moneyRows'); tb.textContent='';
+    if(!m||!m.brands||!m.brands.length){ const tr=el('tr'); const td=el('td','muted','The next daily report fills this in.'); td.colSpan=4; tr.append(td); tb.append(tr); }
+    else m.brands.forEach(b=>{ const tr=el('tr'); tr.append(el('td',null,b.brand), el('td','n',b.orders!=null?String(b.orders):'—'), el('td','n',money(b.commission)), el('td','muted small',b.note||'')); tb.append(tr); });
+    
+    const mc=$('#missingCard'), ml=$('#missingList'); ml.textContent=''; const miss=(m&&m.missing)||[]; mc.hidden=!miss.length; miss.forEach(x=>ml.append(el('li',null,x)));
+    drawChart(days.slice(0,14).reverse()); }
+  
+  const BALIAS=[[/^mahjong row/i,'Mahjong Row & Co.'],[/^britt mills/i,'Britt Mills'],[/^bmd$/i,'Britt Mills'],[/^miss mahjong/i,'Miss Mahjong'],[/^oh my mahjong|^omm$/i,'Oh My Mahjong'],[/^tigre/i,'Tigre de Tartán'],[/^peace love/i,'Peace Love Mahjong'],[/^bam bird/i,'Bam Bird Boutique'],[/^bird ?& ?bamboo/i,'Bird & Bamboo'],[/^the mahjong co/i,'The Mahjong Co.'],[/^middle ?& ?main/i,'Middle & Main']];
+  const bname=n=>{ n=String(n||'').trim(); for(const [re,v] of BALIAS) if(re.test(n)) return v; return n; };
+  const addD=(iso,k)=>{ const d=new Date(iso+'T12:00:00Z'); d.setUTCDate(d.getUTCDate()+k); return d.toISOString().slice(0,10); };
+  const REP=[['today','Today'],['yesterday','Yesterday'],['week','This week'],['7','Last 7 days'],['month','This month'],['30','Last 30 days']];
+  let repSel='7', repSort='orders';
+  function repRange(){ const t=etDate(); const dow=(new Date(t+'T12:00:00Z').getUTCDay()+6)%7;
+    if(repSel==='custom') return [$('#repFrom').value||t,$('#repTo').value||t];
+    return {today:[t,t],yesterday:[addD(t,-1),addD(t,-1)],week:[addD(t,-dow),t],'7':[addD(t,-6),t],month:[t.slice(0,8)+'01',t],'30':[addD(t,-29),t]}[repSel]; }
+  function renderReport(){ const chips=$('#repChips'); if(!chips) return; chips.textContent='';
+    REP.forEach(([k,l])=>{ const b=el('button','chk',l); b.type='button'; b.setAttribute('aria-pressed',repSel===k?'true':'false'); b.addEventListener('click',()=>{repSel=k; renderReport();}); chips.append(b); });
+    const [from,to]=repRange(); if(repSel!=='custom'){ $('#repFrom').value=from; $('#repTo').value=to; }
+    const days=state.money.filter(d=>d.date>=from&&d.date<=to); const B={}; let orders=0,comm=0,unk=0;
+    days.forEach(d=>(d.brands||[]).forEach(b=>{ const o=Number(b.orders)||0; const n=bname(b.brand); const r=B[n]||(B[n]={orders:0,comm:0,unk:0,days:new Set()}); r.orders+=o; if(b.commission!=null) r.comm+=Number(b.commission)||0; else if(o) r.unk+=o; if(o) r.days.add(d.date); orders+=o; if(b.commission!=null) comm+=Number(b.commission)||0; else unk+=o; }));
+    const fmtR=s=>new Date(s+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});
+    kpi($('#repKpis'),[[money(comm),'commission'+(unk?' (+'+unk+' not shown)':'')],[String(orders),'orders'],[orders?money(comm/Math.max(1,orders-unk)):'—','per order'],[String(Object.keys(B).filter(k=>B[k].orders).length),'brands selling']]);
+    const rows=Object.entries(B).filter(([,r])=>r.orders||r.comm).sort((a,b)=>repSort==='orders'?(b[1].orders-a[1].orders||b[1].comm-a[1].comm):(b[1].comm-a[1].comm||b[1].orders-a[1].orders));
+    document.querySelectorAll('.sortb').forEach(x=>x.setAttribute('aria-pressed',x.dataset.k===repSort?'true':'false'));
+    const mx=Math.max(1,...rows.map(([,r])=>repSort==='orders'?r.orders:r.comm)); const tb=$('#repRows'); tb.textContent='';
+    if(!rows.length){ const tr=el('tr'); const td=el('td','muted','No sales logged for these dates.'); td.colSpan=6; tr.append(td); tb.append(tr); }
+    rows.forEach(([n,r])=>{ const tr=el('tr'); const known=r.orders-r.unk; const bar=el('div','bar'); const i=el('i'); i.style.width=Math.round(100*(repSort==='orders'?r.orders:r.comm)/mx)+'%'; bar.append(i); const tdb=el('td'); tdb.append(bar);
+      tr.append(el('td',null,n), el('td','n',String(r.orders)), el('td','n',money(r.comm)+(r.unk?' +'+r.unk+'?':'')), el('td','n',known>0?money(r.comm/known):'—'), el('td','n',String(r.days.size)), tdb); tb.append(tr); });
+    const have=days.length; $('#repNote').textContent=fmtR(from)+(from!==to?' – '+fmtR(to):'')+' · '+have+' day'+(have===1?'':'s')+' logged'+(unk?' · “+N?” = orders whose amount the brand hasn’t shown yet (never estimated)':''); }
+  document.addEventListener('change',e=>{ if(e.target&&(e.target.id==='repFrom'||e.target.id==='repTo')){ repSel='custom'; renderReport(); } });
+  document.addEventListener('click',e=>{ const b=e.target.closest&&e.target.closest('.sortb'); if(b){ repSort=b.dataset.k; renderReport(); } });
+  let moneySel=''; document.addEventListener('change',e=>{ if(e.target&&e.target.id==='moneyPick'){ moneySel=e.target.value; renderMoney(); } });
+  function drawChart(days){ const card=$('#moneyChartCard'); const box=$('#moneyChart'); if(days.length<2){card.hidden=true;return;} card.hidden=false;
+    const W=Math.max(300,box.clientWidth||600),H=170,pl=44,pb=26,pt=10,pr=8; const max=Math.max(...days.map(d=>Number(d.total)||0))||1; const nice=Math.ceil(max/50)*50; const bw=(W-pl-pr)/days.length;
+    const ns='http://www.w3.org/2000/svg'; const svg=document.createElementNS(ns,'svg'); svg.setAttribute('viewBox',`0 0 ${W} ${H}`); svg.setAttribute('role','img'); svg.setAttribute('aria-label','Commission by day');
+    const css=getComputedStyle(document.documentElement); const c=n=>css.getPropertyValue(n).trim();
+    [0,.5,1].forEach(f=>{ const y=pt+(H-pt-pb)*(1-f); const ln=document.createElementNS(ns,'line'); ln.setAttribute('x1',pl); ln.setAttribute('x2',W-pr); ln.setAttribute('y1',y); ln.setAttribute('y2',y); ln.setAttribute('stroke',c('--line')); svg.append(ln);
+      const t=document.createElementNS(ns,'text'); t.setAttribute('x',pl-6); t.setAttribute('y',y+4); t.setAttribute('text-anchor','end'); t.setAttribute('font-size','11'); t.setAttribute('fill',c('--muted')); t.textContent='$'+Math.round(nice*f); svg.append(t); });
+    days.forEach((d,i)=>{ const v=Number(d.total)||0; const h=(H-pt-pb)*(v/nice); const x=pl+i*bw+bw*.18, w=bw*.64; const r=document.createElementNS(ns,'rect'); r.setAttribute('x',x); r.setAttribute('y',H-pb-h); r.setAttribute('width',w); r.setAttribute('height',h); r.setAttribute('rx',3); r.setAttribute('fill',i===days.length-1?c('--rose'):c('--rose-soft')); const tt=document.createElementNS(ns,'title'); tt.textContent=d.dateLabel+': '+money(v); r.append(tt); svg.append(r);
+      if(days.length<=10||i%2===0){ const t=document.createElementNS(ns,'text'); t.setAttribute('x',x+w/2); t.setAttribute('y',H-8); t.setAttribute('text-anchor','middle'); t.setAttribute('font-size','11'); t.setAttribute('fill',c('--muted')); t.textContent=(d.date||'').slice(5).replace('-','/'); svg.append(t);} });
+    box.textContent=''; box.append(svg); }
+  function renderSeo(){ const s=state.seo[0];
+    kpi($('#seoKpis'),[[s&&s.clicks!=null?String(s.clicks):'—','Google clicks'+(s&&s.period?' · '+s.period:'')],[s&&s.impressions!=null?Number(s.impressions).toLocaleString():'—','times shown in Google'],[s&&s.position!=null?String(s.position):'—','average position']]);
+    const tb=$('#seoRows'); tb.textContent='';
+    if(!s||!s.brands||!s.brands.length){ const tr=el('tr'); const td=el('td','muted','The next SEO check fills this in.'); td.colSpan=3; tr.append(td); tb.append(tr); }
+    else s.brands.forEach(b=>{ const tr=el('tr'); tr.append(el('td',null,b.brand), el('td',null,b.rank||'—'), el('td','muted small',b.competitors||'')); tb.append(tr); });
+    const ol=$('#seoNext'); ol.textContent=''; ((s&&s.next)||[]).forEach(x=>ol.append(el('li',null,x))); if(!ol.children.length) ol.append(el('li','muted','Coming with the next SEO check.')); }
+  function renderBuilder(){ const b=state.builder||{}; $('#bStatus').textContent=b.status||'—'; $('#bEta').textContent=b.eta||'';
+    const box=$('#bBars'); box.textContent=''; (b.bars||[]).forEach(x=>{ const r=el('div'); const top=el('div'); top.style.cssText='display:flex;justify-content:space-between;gap:10px;margin-bottom:6px'; top.append(el('span',null,x.label), el('span','time',x.done+' / '+x.total)); const bar=el('div','bar'); const i=el('i'); i.style.width=Math.min(100,Math.round(100*x.done/(x.total||1)))+'%'; bar.append(i); r.append(top,bar); box.append(r); });
+    if(!box.children.length) box.append(el('p','muted','Progress shows here after my next builder session.'));
+    $('#bLinkCard').hidden=!b.link; if(b.link) $('#bLink').href=b.link; }
+  function renderPrio(){ const p=state.prio; const box=$('#prioList'); box.textContent='';
+    if(!p||!p.items||!p.items.length){ box.append(el('div','empty','Our top priorities show here.')); }
+    else p.items.forEach((x,i)=>{ const c=el('div','pcard'+(i===0?' top':'')); c.append(el('div','rank',String(x.rank||i+1)));
+      const m=el('div'); const h=el('h3',null,x.title); if(x.tag){ h.append(el('span','tag',x.tag)); } m.append(h); if(x.status) m.append(el('p','st',x.status));
+      if(x.progress&&x.progress.total){ const r=el('div'); const t=el('div','time',x.progress.label+' · '+x.progress.done+' / '+x.progress.total); const b=el('div','bar'); const ii=el('i'); ii.style.width=Math.min(100,Math.round(100*x.progress.done/x.progress.total))+'%'; b.append(ii); r.append(t,b); m.append(r); }
+      if(x.you) m.append(el('p','nx','Your part: '+x.you)); if(x.next) m.append(el('p','nx','Next: '+x.next)); if(x.link){ const a=el('a','btn primary',x.linkLabel||'Open'); a.href=x.link; a.target='_blank'; a.rel='noopener'; a.style.marginTop='8px'; m.append(a); } c.append(m); box.append(c); });
+    const rc=$('#rulesCard'), rl=$('#rulesList'); rl.textContent=''; const rules=(p&&p.rules)||[]; rc.hidden=!rules.length; rules.forEach(r=>rl.append(el('li',null,r))); }
+
+  /* Album groups (desk cleanup, Oct 21): each item's `group` field decides its section; old items without one fall back by stage/owner/detail. */
+  const STG=[['yes','Needs your yes',1],['stalled','Started, stalled',1],['building','Claude building',1],['notstarted','Not started',1],['banked','Banked',1],['live','Live',0]];
+  const albGroup=x=>{ if(x.group) return x.group; if(x.stage==='live') return 'live'; if(x.owner==='tiffany') return 'yes'; const d=String(x.detail||''); if(/^BANKED/i.test(d)) return 'banked'; if(/^STARTED, STALLED/i.test(d)) return 'stalled'; if(/^(NOT STARTED|UPCOMING)/i.test(d)) return 'notstarted'; return 'building'; };
+  let albFilter='all';
+  function renderAlbums(){ const A=(state.albums&&state.albums.items)||[]; const box=$('#albGroups'); if(!box) return; box.textContent='';
+    const yours=A.filter(x=>x.owner==='tiffany'&&x.stage!=='live').length; const ct=$('#albct'); ct.hidden=!yours; ct.textContent=yours;
+    const ch=$('#albChips'); ch.textContent=''; [['all','All'],['yours','Yours ('+yours+')']].forEach(([k,l])=>{ const b=el('button','chk',l); b.type='button'; b.setAttribute('aria-pressed',albFilter===k?'true':'false'); b.addEventListener('click',()=>{albFilter=k;renderAlbums();}); ch.append(b); });
+    if(state.albums&&state.albums.updatedAt) ch.append(el('span','time','updated '+ago(state.albums.updatedAt)));
+    STG.forEach(([k,label,open])=>{ let items=A.filter(x=>albGroup(x)===k); if(albFilter==='yours') items=items.filter(x=>x.owner==='tiffany'); if(!items.length) return;
+      const d=document.createElement('details'); d.className='albg'; if(open||albFilter==='yours') d.open=true; const sm=el('summary'); sm.append(el('span',null,label), el('span','cnt',String(items.length))); d.append(sm); const ul=el('ul');
+      const ON=(state.albOrder&&state.albOrder.names)||[]; const rk=n=>{const i=ON.indexOf(n);return i<0?9999:i}; items.sort((a,b)=>rk(a.name)-rk(b.name)||String(a.name).localeCompare(String(b.name))).forEach((x,ix)=>{ const li=el('li'); const h=el('h3',null,(ix+1)+'. '+x.name); li.append(h); li.append(el('span','who'+(x.owner==='tiffany'?' you':''),x.owner==='tiffany'?'Yours':'Claude')); if(x.detail) li.append(el('p',null,x.detail)); const row=el('div','albact'); if(x.link){ const a=el('a','btn','Open'); a.href=x.link; a.target='_blank'; a.rel='noopener'; row.append(a);} [['↑','Move up',-1],['↓','Move down',1],['Top','Do this next',-999]].forEach(([t,lab,dv])=>{ const b=el('button','btn mv',t); b.type='button'; b.title=lab; b.setAttribute('aria-label',lab+': '+x.name); b.addEventListener('click',()=>moveAlb(items.map(i=>i.name),x.name,dv)); row.append(b); }); li.append(row); ul.append(li); });
+      d.append(ul); box.append(d); });
+    if(!box.children.length) box.append(el('div','empty','No albums listed yet.')); }
+
+  async function moveAlb(group,name,dv){ let ON=((state.albOrder&&state.albOrder.names)||[]).slice(); const ordered=group.slice(); const i=ordered.indexOf(name); ordered.splice(i,1); const j=dv===-999?0:Math.max(0,Math.min(ordered.length,i+dv)); ordered.splice(j,0,name);
+    ON=ON.filter(n=>!ordered.includes(n)); ON=ordered.concat(ON); state.albOrder={names:ON}; renderAlbums();
+    try{ const db=await claude.use('db'); if(db) await db.collection('hq').doc('albumOrder').set({names:ON,at:new Date().toISOString(),by:'tiffany'}); }catch(e){} }
+
+  const SSTG=[['needs-you-in-planoly','Needs you in Planoly',1],['needs-your-ok','Needs your OK',1],['making','Claude is making',0],['approved','Approved',0],['in-planoly','In Planoly, ready',0],['scheduled','Scheduled',0],['posted','Posted',0]];
+  function renderSocial(){ const A=(state.social&&state.social.items)||[]; const box=$('#socGroups'); if(!box) return; box.textContent='';
+    const yours=A.filter(x=>x.stage==='needs-you-in-planoly'||x.stage==='needs-your-ok').length; const ct=$('#socct'); ct.hidden=!yours; ct.textContent=yours;
+    SSTG.forEach(([k,label,open])=>{ const items=A.filter(x=>x.stage===k); if(!items.length) return; const d=document.createElement('details'); d.className='albg'; if(open) d.open=true; const sm=el('summary'); sm.append(el('span',null,label), el('span','cnt',String(items.length))); d.append(sm); const ul=el('ul');
+      items.forEach(x=>{ const li=el('li'); li.append(el('h3',null,x.name)); li.append(el('span','who'+(open?' you':''),x.kind||'')); if(x.detail) li.append(el('p',null,x.detail)); if(x.planolyNote&&open){ const pn=el('p',null,x.planolyNote); pn.style.whiteSpace='pre-line'; li.append(pn);} if(x.link){ const r=el('div','albact'); const a=el('a','btn','Open'); a.href=x.link; a.target='_blank'; a.rel='noopener'; r.append(a); li.append(r);} ul.append(li); }); d.append(ul); box.append(d); });
+    if(!box.children.length) box.append(el('div','empty','Nothing in the social pipeline yet.')); }
+
+  function renderReq(){ const r=state.albReq; const c=$('#reqCard'); if(!c) return; const L=((r&&r.items)||[]).slice().sort((a,b)=>(b.count||0)-(a.count||0)); c.hidden=!L.length; const ul=$('#reqList'); ul.textContent=''; L.forEach(x=>{ const li=el('li','tbrow'); li.append(el('span',null,x.set+(x.brand?' · '+x.brand:'')), el('span',null,(x.count||0)+' request'+((x.count||0)===1?'':'s'))); ul.append(li); }); }
+
+  function renderLaunch(){ const P=state.launch; if(!P||!$('#lPhases')) return; const C=(state.lchecks&&state.lchecks.done)||{}; $('#lDate').textContent='Launch: '+(P.launchDate||'—'); $('#lNote').textContent=P.dateNote||'';
+    let dl=$('#lDaily'); if(!dl){ dl=el('div','card'); dl.id='lDaily'; $('#lPhases').before(dl); } dl.textContent=''; dl.hidden=!(P.daily&&P.daily.length); if(P.daily&&P.daily.length){ dl.append(el('p','eyebrow','Day by day')); const t=etDate(); const ul=el('ul','list small'); P.daily.forEach(([d,txt])=>{ const li=el('li'); li.style.cssText='display:grid;grid-template-columns:96px 1fr;gap:10px;padding:6px 0;border-bottom:1px solid var(--line)'; const b=el('b',null,d); const sp=el('span',null,''); String(txt).split(/(YOU:[^·]*)/).forEach(seg=>{ if(/^YOU:/.test(seg)){ const y=el('b',null,seg); y.style.color='var(--rose)'; sp.append(y);} else sp.append(document.createTextNode(seg)); }); li.append(b,sp); ul.append(li); }); dl.append(ul); }
+    let rd=$('#lReady'); if(!rd){ rd=el('div'); rd.id='lReady'; rd.style.cssText='display:grid;gap:14px'; (dl||$('#lPhases')).before(rd); } rd.textContent=''; (P.ready||[]).forEach(r=>{ const c=el('div','card'); c.style.borderLeft='4px solid var(--rose)'; c.append(el('p','eyebrow',r.status||'Ready for launch')); c.append(el('h2',null,r.title||'')); if(r.note) c.append(linkify(el('p','muted small'),r.note)); if(r.table&&r.table.length){ const tw=el('div','tbl'); const tb=document.createElement('table'); const th=el('tr'); (r.tableHead||[]).forEach(h=>th.append(el('th',null,h))); tb.append(th); r.table.forEach(row=>{ const tr=el('tr'); row.forEach((v,i)=>tr.append(el('td',i?'n':null,String(v)))); tb.append(tr); }); tw.append(tb); tw.style.marginTop='10px'; c.append(tw); } if(r.text){ const pre=el('div'); pre.style.cssText='white-space:pre-wrap;margin-top:12px;padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);font-size:14px'; pre.textContent=r.text; c.append(pre); const row=el('div','ansrow'); const b=el('button','btn primary','Copy post'); b.type='button'; b.addEventListener('click',async()=>{ try{ await navigator.clipboard.writeText(r.text); b.textContent='Copied'; }catch(e){ b.textContent='Select the text to copy'; } }); row.append(b); c.append(row); } if(r.comment){ c.append(el('p','eyebrow','First comment')); const pc=el('div'); pc.style.cssText='white-space:pre-wrap;padding:10px 14px;border:1px dashed var(--line);border-radius:12px;font-size:14px'; linkify(pc,r.comment); c.append(pc); } if(r.link){ const a=el('a','btn',r.linkLabel||'Open'); a.href=r.link; a.target='_blank'; a.rel='noopener'; a.style.marginTop='10px'; c.append(a); } rd.append(c); });
+    const box=$('#lPhases'); box.textContent=''; let tot=0,dn=0;
+    (P.phases||[]).forEach((ph,pi)=>{ const c=el('div','card'); const hd=el('div'); hd.style.cssText='display:flex;justify-content:space-between;gap:8px;align-items:baseline'; hd.append(el('h2',null,ph.name), el('span','time','by '+(ph.by||''))); c.append(hd);
+      (ph.items||[]).forEach(([t,who],ii)=>{ const k=pi+'-'+ii; tot++; const on=!!C[k]; if(on) dn++; const row=el('label','lchk'+(on?' done':'')); const cb=document.createElement('input'); cb.type='checkbox'; cb.checked=on; cb.addEventListener('change',async()=>{ const D=Object.assign({},C); if(cb.checked) D[k]=new Date().toISOString(); else delete D[k]; state.lchecks={done:D}; renderLaunch(); try{ const db=await claude.use('db'); if(db) await db.collection('hq').doc('launchChecks').set({done:D,at:new Date().toISOString()}); }catch(e){} }); row.append(cb, el('span','t',t), el('span','who'+(who==='tiffany'?' you':''),who==='tiffany'?'Yours':'Claude')); c.append(row); });
+      box.append(c); });
+    $('#lBar').style.width=(tot?Math.round(100*dn/tot):0)+'%'; $('#lCount').textContent=dn+' of '+tot+' done';
+    const ol=$('#lOpen'); ol.textContent=''; (P.open||[]).forEach(x=>ol.append(el('li',null,x))); }
+  function renderCatalog(){ const c=state.catalog; const card=$('#catCard'); if(!card) return; card.hidden=!c; if(!c) return; $('#catHead').textContent=c.headline||''; $('#catSub').textContent=c.sub||''; $('#catNote').textContent=c.note||'';
+    const tb=$('#catRows'); tb.textContent=''; (c.rows||[]).forEach(r=>{ const tr=el('tr'); const nm=el('td',null,r.brand); if(r.done) nm.append(el('span','tag','complete')); tr.append(nm, el('td','n',String(r.app_mats??'—')), el('td','n',r.shop_mats==null?'?':String(r.shop_mats)), el('td','n',String(r.missing_mats||0)), el('td','n',String(r.missing_racks||0))); if(r.top&&r.top.length){ const t=el('div','muted small','Missing: '+r.top.slice(0,6).join(', ')+((r.missing_mats+r.missing_racks)>6?' …':'')); t.style.fontWeight='400'; nm.append(t); } tb.append(tr); }); }
+  function renderIdeas(){ const ul=$('#ideaList'); ul.textContent=''; const items=state.ideas.filter(x=>x.status!=='done').sort((a,b)=>(a.order||99)-(b.order||99)||String(a.added||'').localeCompare(String(b.added||'')));
+    const pk=state.needs.filter(x=>x.status==='parked'); pk.forEach(x=>items.push({title:x.title,detail:x.why,area:x.topic||'Parked from your list',order:200})); if(!items.length){ ul.append(el('li','empty','Nothing parked yet.')); return; }
+    items.forEach(x=>{ const li=el('li','card'); const top=el('div'); top.style.cssText='display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:4px'; if(x.area) top.append(el('span','eyebrow',x.area)); if(x.status==='in progress') top.append(el('span','pill green','In progress')); li.append(top, el('h3',null,x.title)); if(x.detail) li.append(el('p','muted small',x.detail)); ul.append(li); }); }
+  function etParts(d){ const f=new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hourCycle:'h23'}).formatToParts(d); const g=t=>f.find(x=>x.type===t).value; return {date:g('year')+'-'+g('month')+'-'+g('day'),hour:parseInt(g('hour'),10)}; }
+  function renderUp(){ const box=$('#upStrip'); if(!box) return; box.textContent=''; const now=etParts(new Date()); const doc=(state.up||[]).find(x=>x.id===now.date); const h=(doc&&doc.hours)||{}; let ok=0,bad=0;
+    for(let i=0;i<24;i++){ const s=el('span'); const v=h[String(i)]; let lab=(i%12||12)+(i<12?'am':'pm')+': ';
+      if(doc&&doc.since!=null&&i<doc.since&&!v){lab+='before tracking started';} else if(v==='up'){s.className='ok';ok++;lab+='reachable';} else if(v==='down'||(i<now.hour&&!v&&doc)){s.className='bad';bad++;lab+=(v==='down'?'not reachable':'no check-in (likely asleep)');} else lab+=(i>now.hour?'later today':'not checked yet');
+      s.title=lab; box.append(s); }
+    if(!box.nextElementSibling||!box.nextElementSibling.classList.contains('uplab')){ const l=el('div','uplab'); ['12am','6am','12pm','6pm'].forEach(t=>l.append(el('span',null,t))); box.after(l); }
+    const n=$('#upNote'); if(doc&&(ok||bad)) n.textContent=ok+' hour'+(ok===1?'':'s')+' reachable, '+bad+' not, so far today. Red usually means asleep, offline, or the Claude app was closed.'; }
+  function renderLinks(){ const items=(state.links&&state.links.items)||[]; document.querySelectorAll('[role=tabpanel]').forEach(panel=>{ const tab=panel.id.slice(2); let c=panel.querySelector(':scope > .linkscard'); const mine=items.filter(x=>(x.tab||'now')===tab); if(!mine.length){ if(c) c.remove(); return; } if(!c){ c=el('div','card linkscard'); panel.prepend(c); } c.textContent=''; c.append(el('p','eyebrow','Docs & links')); const ul=el('ul','linkrow'); mine.forEach(x=>{ const li=el('li'); const a=el('a',null,x.label); a.href=x.url; a.target='_blank'; a.rel='noopener'; li.append(a); if(x.note) li.append(el('span','muted small',' · '+x.note)); ul.append(li); }); c.append(ul); }); }
+  const STEPS=[['page','Brand page'],['hub','Listed'],['logos','Logos'],['indexed','In Google'],['builder','Find Your Match'],['shortlist','Album shortlist']];
+  const SORDER={approved:0,applied:1,live:2,declined:3};
+  function renderStrat(){ const ul=$('#stratList'); if(!ul) return; const items=(state.strat||[]).slice().sort((a,b)=>({open:0,'in progress':0,done:2}[a.status]??1)-({open:0,'in progress':0,done:2}[b.status]??1)||String(b.added||'').localeCompare(String(a.added||''))); ul.textContent='';
+    if(!items.length){ ul.append(el('li','empty','No ideas yet.')); return; }
+    items.forEach(x=>{ const li=el('li','opp'); const top=el('div','top'); top.style.cssText='display:flex;gap:8px;align-items:center;flex-wrap:wrap'; const st={open:['Open','yellow'],'in progress':['Doing','green'],done:['Done','gray']}[x.status||'open']||['Open','yellow']; top.append(el('span','pill '+st[1],st[0])); if(x.area) top.append(el('span','eyebrow',x.area)); li.append(top); li.append(el('p',null,x.text)); const m=[]; if(x.by) m.push(x.by==='tiffany'?'From you':'From Claude'); if(x.added) m.push(String(x.added).slice(0,10)); if(x.outcome) m.push(x.outcome); li.append(el('p','muted small',m.join(' · '))); ul.append(li); }); }
+  async function addStrat(e){ e.preventDefault(); const t=$('#stratText').value.trim(); if(!t) return; const msg=$('#stratMsg'); try{ const db=await claude.use('db'); if(!db){ msg.textContent='Sign in to claude.ai to save ideas.'; return; } await db.collection('strategy').doc('s'+Date.now()).set({text:t,by:'tiffany',status:'open',added:new Date().toISOString()}); $('#stratText').value=''; msg.textContent='Saved. It goes into the next strategy review.'; }catch(err){ msg.textContent='Couldn\'t save that. Try again.'; } }
+  document.getElementById('stratAdd').addEventListener('click',addStrat); document.getElementById('stratText').addEventListener('keydown',e=>{if(e.key==='Enter')addStrat(e)});
+  function renderOpp(){ const box=$('#oppList'), c=$('#oppCard'); if(!box) return; const b=(state.brands||[]).filter(x=>x.opp); c.hidden=!b.length; box.textContent='';
+    b.sort((x,y)=>(x.opp.order||9)-(y.opp.order||9)).forEach(x=>{ const o=x.opp, d=el('div','opp'); d.append(el('h3',null,x.name)); if(o.summary) d.append(el('p','small',o.summary));
+      if(o.tiers&&o.tiers.length){ const l=el('div','ladder'); o.tiers.forEach(t=>{ const sp=el('span',(t.rate===o.current?'cur':''),t.label||((t.at?t.at+'+ referrals: ':'Start: ')+t.rate)); l.append(sp); }); d.append(l); }
+      if(o.referrals!=null&&o.next){ const pct=Math.min(100,Math.round(o.referrals/o.next*100)); const bar=el('div','bar'); const i=el('i'); i.style.width=pct+'%'; bar.append(i); d.append(bar); d.append(el('p','muted small',o.referrals+' of '+o.next+' referrals to the next tier'+(o.asOf?' · as of '+o.asOf:''))); }
+      if(o.ideas) d.append(el('p','small','Ideas: '+o.ideas)); box.append(d); }); }
+  function renderSnips(){ const box=$('#snipList'); if(!box) return; box.textContent=''; const L=(state.snips&&state.snips.items)||[]; if(!L.length){ box.append(el('p','muted small','No snippets yet.')); return; } L.forEach(s=>{ const c=el('div'); c.style.cssText='border:1px solid var(--line);border-radius:12px;padding:12px 14px'; c.append(el('h3',null,s.title||'')); if(s.when) c.append(el('p','muted small',s.when)); const pre=el('div'); pre.style.cssText='white-space:pre-wrap;margin-top:8px;font-size:14px'; pre.textContent=s.text||''; c.append(pre); const row=el('div','ansrow'); const b=el('button','btn primary','Copy'); b.type='button'; b.addEventListener('click',async()=>{ try{ await navigator.clipboard.writeText(s.text||''); b.textContent='Copied'; setTimeout(()=>b.textContent='Copy',2000); }catch(e){ b.textContent='Select the text to copy'; } }); row.append(b); c.append(row); box.append(c); }); }
+function renderAff(){ const ul=$('#affList'); if(!ul) return; const b=state.brands||[]; ul.textContent='';
+    const ap=b.filter(x=>x.status==='approved'), pend=b.filter(x=>x.status==='applied'), live=b.filter(x=>x.status==='live');
+    const k=$('#affKpis'); k.textContent=''; [['Approved, setting up',ap.length],['Applied, waiting',pend.length],['Live partners',live.length]].forEach(([l,v])=>{const c=el('div','card kpi'); c.append(el('div','v',String(v)),el('div','l',l)); k.append(c);});
+    const ct=$('#affct'); ct.hidden=!ap.length; ct.textContent=ap.length;
+    if(!b.length){ ul.append(el('li','empty','No brands yet.')); return; }
+    b.slice().sort((x,y)=>(SORDER[x.status]??9)-(SORDER[y.status]??9)||String(x.name).localeCompare(String(y.name))).forEach(x=>{
+      const li=el('li','aff'); const top=el('div','top'); top.append(el('h3',null,x.name));
+      const lab={approved:['Approved · setting up','red'],applied:['Applied · waiting','yellow'],live:['Live','green'],declined:['Declined','gray']}[x.status]||[x.status||'—','gray'];
+      top.append(el('span','pill '+lab[1],lab[0])); if(x.network) top.append(el('span','muted small',x.network)); li.append(top);
+      if(x.status!=='applied'&&x.status!=='declined'){ const st=el('div','steps'); const s=x.steps||{}; STEPS.forEach(([key,name])=>{ const v=s[key]; const c=el('span','chk'+(v===true?' ok':''),(v===true?'✓ ':v==='na'?'– ':'')+name); if(v==='na') c.title='Not needed for this brand'; st.append(c); }); li.append(st); }
+      const meta=[]; if(x.appliedAt) meta.push('Applied '+String(x.appliedAt).slice(0,10)); if(x.approvedAt) meta.push('Approved '+String(x.approvedAt).slice(0,10)); if(x.note) meta.push(x.note);
+      if(meta.length) li.append(el('p','muted small',meta.join(' · ')));
+      if(x.next) li.append(el('p','small','Next: '+x.next));
+      const lk=[]; if(x.draftUrl) lk.push(['Draft page',x.draftUrl]); if(x.pageUrl) lk.push(['Live page',x.pageUrl]); if(x.loginUrl&&x.status==='approved') lk.push(['Affiliate login',x.loginUrl]);
+      if(lk.length){ const p=el('p','small'); lk.forEach(([t,u],i)=>{ if(i) p.append(' · '); const a=el('a',null,t); a.href=u; a.target='_blank'; a.rel='noopener'; p.append(a); }); li.append(p); }
+      ul.append(li); }); }
+  async function addBrand(e){ e.preventDefault(); const n=$('#affName').value.trim(), note=$('#affNote').value.trim(); if(!n) return; const msg=$('#affMsg');
+    try{ const db=await claude.use('db'); if(!db){ msg.textContent='Sign in to claude.ai to add brands.'; return; }
+      const id=n.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,60)||('b'+Date.now());
+      if((state.brands||[]).some(x=>x.id===id)){ msg.textContent=n+' is already on the list.'; return; }
+      await db.collection('brands').doc(id).set({name:n,status:'applied',appliedAt:new Date().toISOString(),note:note||'',addedBy:'tiffany'});
+      $('#affName').value=''; $('#affNote').value=''; msg.textContent='Added '+n+'. I\'ll watch for their approval email.'; }catch(err){ msg.textContent='Couldn\'t save that. Try again.'; } }
+  document.getElementById('affAdd').addEventListener('click',addBrand); ['affName','affNote'].forEach(i=>document.getElementById(i).addEventListener('keydown',e=>{if(e.key==='Enter')addBrand(e)}));
+
+  const GL={indexed:['In Google','ok'],'not indexed':['Not yet','no'],unknown:['Check','unk'],skip:['—','muted']};
+  const fmtD=s=>s?new Date(s+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric'}):'';
+  const plink=(p,t)=>{const a=el('a',null,t||p); a.href='https://www.mahjmatchmaker.com'+(p==='/'?'':p); a.target='_blank'; a.rel='noopener'; return a;};
+  let kwGroup='all';
+  function renderGoogle(){ const g=state.gidx; const pages=(g&&g.pages)||[]; const byPath={}; pages.forEach(x=>byPath[x.path]=x);
+    const brands=pages.filter(x=>x.type==='brand').map(x=>Object.assign({},x));
+    (state.brands||[]).forEach(b=>{ if(!b.pageUrl||b.status==='declined'||b.status==='applied') return; let p; try{p=new URL(b.pageUrl.startsWith('http')?b.pageUrl:'https://'+b.pageUrl).pathname.replace(/\/$/,'');}catch(e){return;} if(!p||byPath[p]) return; brands.push({path:p,title:b.name,type:'brand',google:'unknown',note:'New brand page: goes to the top of the queue',auto:true}); });
+    brands.sort((a,b)=>(a.requested?1:0)-(b.requested?1:0)||String(a.title).localeCompare(String(b.title)));
+    const sub=brands.filter(x=>x.requested).length, ind=brands.filter(x=>x.google==='indexed').length;
+    const queue=pages.filter(x=>x.rank&&!x.requested).sort((a,b)=>a.rank-b.rank); const auto=brands.filter(x=>x.auto);
+    kpi($('#gKpis'),[[sub+' / '+brands.length,'brand pages submitted'],[ind+' / '+brands.length,'brand pages in Google'],[String(queue.length+auto.length),'pages waiting to submit'],[g&&g.gscAsOf?fmtD(g.gscAsOf):'—','Search Console data as of']]);
+    const tb=$('#gBrands'); tb.textContent='';
+    if(!brands.length){ const tr=el('tr'); const td=el('td','muted','Loading…'); td.colSpan=3; tr.append(td); tb.append(tr); }
+    brands.forEach(x=>{ const tr=el('tr'); const t1=el('td'); t1.append(plink(x.path,(x.title||x.path).replace(/ discount code$/i,''))); if(x.note&&x.google!=='indexed') t1.append(el('div','muted small',x.note));
+      const t2=el('td',x.requested?'ok':'no',x.requested?'✓ '+fmtD(x.requested):'✗ Not yet'); const gl=GL[x.google]||['—','muted']; tr.append(t1,t2,el('td',gl[1],gl[0])); tb.append(tr); });
+    $('#gQuota').textContent=(g&&g.quota)||'';
+    const ol=$('#gQueue'); ol.textContent=''; let n=0;
+    auto.forEach(x=>{ n++; const li=el('li'); li.append(el('span','n0',String(n))); const d=el('div'); d.append(plink(x.path,x.title)); d.append(el('div','muted small','New brand page, never submitted.')); li.append(d); ol.append(li); });
+    queue.forEach(x=>{ n++; const li=el('li'); li.append(el('span','n0',String(n))); const d=el('div'); const h3=el('div'); h3.append(plink(x.path,x.title)); if(x.google==='not indexed') h3.append(el('span','tag','not in Google')); d.append(h3); if(x.why) d.append(el('div','muted small',x.why)); li.append(d); ol.append(li); });
+    if(!n) ol.append(el('li','empty','Queue is empty.'));
+    const rc=(g&&g.recrawl)||[]; $('#gRecrawlCard').hidden=!rc.length; const ru=$('#gRecrawl'); ru.textContent=''; rc.forEach(x=>{const li=el('li'); li.append(plink(x.path), document.createTextNode(' · '+(x.why||''))); ru.append(li);});
+    const fx=pages.filter(x=>x.google==='skip'&&x.type==='dup'); $('#gFixCard').hidden=!fx.length; const fu=$('#gFix'); fu.textContent=''; fx.forEach(x=>{const li=el('li'); li.append(plink(x.path), document.createTextNode(' · '+(x.note||''))); fu.append(li);});
+    const oth=pages.filter(x=>x.type!=='brand'&&x.type!=='dup').sort((a,b)=>(a.rank||999)-(b.rank||999)); $('#gOtherCt').textContent='('+oth.length+')'; const ot=$('#gOther'); ot.textContent='';
+    oth.forEach(x=>{ const tr=el('tr'); const t1=el('td'); t1.append(plink(x.path,x.title)); if(x.requested) t1.append(el('div','muted small','Submitted '+fmtD(x.requested))); const gl=GL[x.google]||['—','muted']; tr.append(t1, el('td','muted small',{album:'Album',color:'Color page',blog:'Blog',hub:'Hub',page:'Page'}[x.type]||x.type), el('td',gl[1],gl[0])); ot.append(tr); });
+    const rl=$('#gRules'); rl.textContent=''; ((g&&g.rules)||[]).forEach(r=>rl.append(el('li',null,r))); $('#gRulesCard').hidden=!rl.children.length;
+    renderKw(); }
+  function renderKw(){ const k=state.kw; const rows=(k&&k.rows)||[]; $('#kwSrc').textContent=k?('Source: '+k.source+'.'):'';
+    const groups=[['all','All'],['code','Discount codes'],['brand','Brand names'],['match','Matching & colors'],['holiday','Holiday & gifts'],['broad','Big general searches']];
+    const ch=$('#kwChips'); ch.textContent=''; groups.forEach(([id,l])=>{ const b=el('button','chk',l); b.type='button'; b.setAttribute('aria-pressed',kwGroup===id?'true':'false'); b.addEventListener('click',()=>{kwGroup=id; renderKw();}); ch.append(b); });
+    const tb=$('#kwRows'); tb.textContent=''; rows.filter(r=>kwGroup==='all'||r.group===kwGroup).sort((a,b)=>(b.v||0)-(a.v||0)||(b.impr||0)-(a.impr||0)).forEach(r=>{ const tr=el('tr'); const t1=el('td',null,r.kw); if(r.note) t1.append(el('div','muted small',r.note)); const t3=el('td','small'); if(r.page) t3.append(plink(r.page,r.page.replace(/^\//,'').replace(/-mahjong-tile-matches$/,' album').replace(/-discount-code$/,'').replace(/^blog\//,'blog: ')));
+      tr.append(t1, el('td','n',r.vol||'—'), t3, el('td','n',r.pos!=null?String(r.pos):'')); tb.append(tr); }); }
+
+  function renderDoor(){ const tdy=$('#doorToday'), wk=$('#doorWeek'); if(!tdy||!wk) return;
+    const open=state.needs.filter(x=>x.status!=='done'&&x.status!=='parked'&&x.status!=='archived');
+    const by=(a,b)=>(a.order||99)-(b.order||99); const W=x=>x.when||({red:'today',yellow:'week'}[x.light]||'');
+    const draw=(ul,items,empty)=>{ ul.textContent=''; if(!items.length){ ul.append(el('li','muted small',empty)); return; }
+      items.forEach((x,i)=>{ const li=el('li','row'); li.style.cssText='grid-template-columns:24px 1fr auto;padding:8px 0;border-bottom:1px solid var(--line)';
+        li.append(el('span','rank',String(i+1))); li.lastChild.style.fontSize='22px';
+        const mid=el('div'); mid.append(el('h3',null,x.title)); if(x.line) mid.append(linkify(el('p','muted small'),x.line)); if(x.due) mid.append(el('p','time',x.due)); li.append(mid);
+        const act=el('div','actions'); if(x.link){ const a=el('a','btn primary',x.linkLabel||'Open'); a.href=x.link; a.target='_blank'; a.rel='noopener'; act.append(a); }
+        const b=el('button','btn',x.link?'Answer / Done':'Answer here'); b.type='button'; b.addEventListener('click',()=>{ const t=document.getElementById('t-needs'); if(t) t.click(); setTimeout(()=>{ const r=document.querySelector('[data-nid="'+x.id+'"]'); if(r) r.scrollIntoView({behavior:'smooth',block:'center'}); },300); }); act.append(b);
+        li.append(act); ul.append(li); }); };
+    const ex=(a,b)=>(a.when?0:1)-(b.when?0:1)||by(a,b); const T=open.filter(x=>W(x)==='today').sort(ex); draw(tdy,T.slice(0,5),'Nothing for today. You’re clear.');
+    draw(wk,T.slice(5).concat(open.filter(x=>W(x)==='week').sort(ex)),'Nothing else this week.');
+    const rest=open.filter(x=>W(x)!=='today'&&W(x)!=='week'&&x.when!=='box').length; const n=$('#doorNote');
+    if(n) n.textContent='This is the whole list'+(rest?' (plus '+rest+' more in Needs you)':'')+'. Every social post lives in Planoly; you review it there, not here.'; }
+  function renderStart(){ const t=state.top; if(!t) return; if(t.head) $('#startHead').textContent=t.head; if(t.note) $('#startNote').textContent=t.note; }
+  function renderLaunches(){ const L=((state.launches&&state.launches.items)||[]).filter(x=>!x.live&&!x.done); $('#launchCard').hidden=!L.length; $('#launchCt').textContent='('+L.length+')'; const tb=$('#launchRows'); tb.textContent='';
+    L.forEach(x=>{ const tr=el('tr'); const t1=el('td'); const a=el('a',null,x.name); if(x.url){a.href=x.url;a.target='_blank';a.rel='noopener';} t1.append(a, el('div','muted small',[x.brand,x.price?('$'+x.price):''].filter(Boolean).join(' · ')));
+      const t2=el('td','small'); [['Announced',x.announced],['Mentor presale',x.mentorPresale],['On their site',x.productPublished],['Public launch',x.publicLaunch]].forEach(([l,v])=>{ if(v) t2.append(el('div',null,l+': '+v)); });
+      const t3=el('td','small'); if(x.albumUrl){const b=el('a',null,x.album||'Open'); b.href=x.albumUrl; b.target='_blank'; b.rel='noopener'; t3.append(b);} else t3.textContent=x.album||''; tr.append(t1,t2,t3); tb.append(tr); }); }
+  function renderPfb(){ const ul=$('#pfbList'); if(!ul) return; const L=(state.pfb||[]).slice().sort((a,b)=>String(b.at||'').localeCompare(String(a.at||''))); ul.textContent='';
+    const open=L.filter(x=>!x.test&&x.status!=='done').length; const ct=$('#pfbct'); ct.hidden=!open; ct.textContent=open;
+    if(!L.length){ ul.append(el('li','empty','No partner feedback yet. When a brand sends a note or a photo, it shows up here.')); return; }
+    const ST={new:['New','red'],handling:['Claude is on it','yellow'],done:['Handled','green'],you:['Needs you','red']};
+    L.forEach(x=>{ const li=el('li','card pfb'+(x.test?' test':'')); const m=el('div','meta'); m.append(el('span','pill '+((ST[x.status]||ST.new)[1]),x.test?'Test':(ST[x.status]||ST.new)[0])); m.append(el('span','eyebrow',x.source==='photo'?'Photo':'Note')); if(x.at) m.append(el('span','time',new Date(x.at).toLocaleString([], {month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}))); li.append(m);
+      li.append(el('h3',null,(x.brand||'Unknown brand')+(x.from?' · '+x.from:'')));
+      if(x.doing) li.append(el('p','q','What they were doing: '+x.doing));
+      if(x.message) li.append(el('p','msg',x.message));
+      if(x.file) li.append(el('p','muted small','File: '+x.file));
+      if(x.handled) li.append(linkify(el('p','small','What we did: '),x.handled));
+      if(x.link){ const r=el('div','actions'); r.style.justifyContent='flex-start'; r.style.marginTop='8px'; const a=el('a','btn',x.linkLabel||(x.source==='photo'?'Open photo':'Open')); a.href=x.link; a.target='_blank'; a.rel='noopener'; r.append(a); li.append(r); }
+      ul.append(li); }); }
+  function all(){ renderLaunches(); renderGoogle(); renderOpp(); renderStrat(); renderAff(); renderLinks(); renderUp(); renderPrio(); renderIdeas(); renderNow(); renderNeeds(); renderDoor(); renderLog(); renderMoney(); renderSeo(); renderBuilder(); }
+  all(); setInterval(()=>{renderPulse();renderUp();},60000);
+  let rt; window.addEventListener('resize',()=>{clearTimeout(rt); rt=setTimeout(()=>drawChart(split().past.slice(0,14).reverse()),150);});
+
+  (async()=>{ const db=await claude.use('db'); if(!db){ $('#ptext').textContent='Sign in to claude.ai to see live updates.'; return; }
+    const docs=s=>s.docs.map(d=>({id:d.id,...d.data()}));
+    db.doc('hq/snippets').onSnapshot(d=>{state.snips=d.exists?d.data():null; renderSnips();},()=>{});
+    db.collection('brands').onSnapshot(s=>{state.brands=docs(s); renderAff(); renderOpp(); renderGoogle();},()=>{});
+    db.doc('hq/top').onSnapshot(d=>{state.top=d.exists?d.data():null; renderStart();},()=>{});
+    db.doc('hq/launches').onSnapshot(d=>{state.launches=d.exists?d.data():null; renderLaunches();},()=>{});
+    db.doc('hq/indexing').onSnapshot(d=>{state.gidx=d.exists?d.data():null; renderGoogle();},()=>{});
+    db.doc('hq/keywords').onSnapshot(d=>{state.kw=d.exists?d.data():null; renderKw();},()=>{});
+    db.collection('strategy').onSnapshot(s=>{state.strat=docs(s); renderStrat();},()=>{});
+    db.doc('hq/links').onSnapshot(d=>{state.links=d.exists?d.data():null; renderLinks();},()=>{});
+    db.doc('hq/albums').onSnapshot(d=>{state.albums=d.exists?d.data():null; renderAlbums();},()=>{});
+    db.doc('hq/launchPlan').onSnapshot(d=>{state.launch=d.exists?d.data():null; renderLaunch();},()=>{});
+    db.doc('hq/launchChecks').onSnapshot(d=>{state.lchecks=d.exists?d.data():null; renderLaunch();},()=>{});
+    db.doc('hq/albumRequests').onSnapshot(d=>{state.albReq=d.exists?d.data():null; renderReq();},()=>{});
+    db.doc('hq/social').onSnapshot(d=>{state.social=d.exists?d.data():null; renderSocial();},()=>{});
+    db.doc('hq/albumOrder').onSnapshot(d=>{state.albOrder=d.exists?d.data():null; renderAlbums();},()=>{});
+    db.doc('hq/catalog').onSnapshot(d=>{state.catalog=d.exists?d.data():null; renderCatalog();},()=>{});
+    db.collection('uptime').orderBy('date','desc').limit(7).onSnapshot(s=>{state.up=docs(s); renderUp();},()=>{});
+    db.doc('hq/now').onSnapshot(d=>{state.now=d.exists?d.data():null; renderNow();},()=>{});
+    db.doc('hq/priorities').onSnapshot(d=>{state.prio=d.exists?d.data():null; renderPrio();},()=>{});
+    db.collection('ideas').onSnapshot(s=>{state.ideas=docs(s); renderIdeas();},()=>{});
+    db.doc('hq/builder').onSnapshot(d=>{state.builder=d.exists?d.data():null; renderBuilder();},()=>{});
+    db.collection('needs').onSnapshot(s=>{state.needs=docs(s); renderNeeds(); renderNow(); renderDoor(); try{renderIdeas()}catch(e){}},()=>{});
+    db.collection('log').orderBy('at','desc').limit(200).onSnapshot(s=>{state.log=docs(s); renderLog();},()=>{});
+    db.collection('money').orderBy('date','desc').limit(400).onSnapshot(s=>{state.money=docs(s); renderMoney(); renderNow();},()=>{});
+    db.collection('partnerfb').onSnapshot(s=>{state.pfb=docs(s); renderPfb();},()=>{});
+    db.collection('seo').orderBy('date','desc').limit(30).onSnapshot(s=>{state.seo=docs(s); renderSeo();},()=>{});
+  })();
+  /* My notes: Tiffany's private brain dump. Claude never reads collection 'mynotes' unless a note has handed:true. */
+  (function(){ const ta=document.getElementById('noteText'), msg=document.getElementById('noteMsg'), list=document.getElementById('noteList'); let notes=[];
+    try{ const d=localStorage.getItem('hq-note-draft'); if(d) ta.value=d; }catch(e){}
+    ta.addEventListener('input',()=>{ try{ localStorage.setItem('hq-note-draft',ta.value); }catch(e){} });
+    const fmt=iso=>{ try{ return new Date(iso).toLocaleString([], {month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}); }catch(e){ return ''; } };
+    function draw(){ list.textContent=''; if(!notes.length){ list.append(el('li','empty','No notes yet.')); return; }
+      notes.forEach(n=>{ const li=el('li','card'); li.style.marginBottom='8px';
+        const body=el('div',null,n.text); body.style.whiteSpace='pre-wrap';
+        const meta=el('p','muted small',fmt(n.at)+(n.handed?' · handed to Claude':'')); meta.style.marginTop='6px';
+        const act=el('div'); act.style.cssText='display:flex;gap:6px;flex-wrap:wrap;margin-top:8px';
+        const ed=el('button','btn','Edit'); ed.type='button';
+        ed.addEventListener('click',()=>{ const t=document.createElement('textarea'); t.value=n.text; t.rows=4; t.style.cssText=ta.getAttribute('style'); body.replaceWith(t); ed.textContent='Save'; ed.onclick=async()=>{ const v=t.value.trim(); if(!v) return; await put(n.id,{text:v,edited:new Date().toISOString()}); }; });
+        const hd=el('button','btn',n.handed?'Take back':'Hand to Claude'); hd.type='button';
+        hd.addEventListener('click',()=>put(n.id,{handed:!n.handed,handedAt:new Date().toISOString()}));
+        const dl=el('button','btn','Delete'); dl.type='button';
+        dl.addEventListener('click',async()=>{ if(dl.dataset.sure){ try{ const db=await claude.use('db'); if(db) await db.collection('mynotes').doc(n.id).delete(); }catch(e){} } else { dl.dataset.sure='1'; dl.textContent='Tap again to delete'; } });
+        act.append(ed,hd,dl); li.append(body,meta,act); list.append(li); }); }
+    async function put(id,patch){ try{ const db=await claude.use('db'); if(db) await db.collection('mynotes').doc(id).update(patch); }catch(e){ msg.textContent='Couldn\u2019t save. Try again.'; } }
+    document.getElementById('noteSave').addEventListener('click',async()=>{ const v=ta.value.trim(); if(!v) return; try{ const db=await claude.use('db'); if(!db){ msg.textContent='Sign in to claude.ai to save notes.'; return; } await db.collection('mynotes').doc('n'+Date.now()).set({text:v,at:new Date().toISOString(),handed:false}); ta.value=''; try{ localStorage.removeItem('hq-note-draft'); }catch(e){} msg.textContent='Saved.'; setTimeout(()=>msg.textContent='',2500); }catch(e){ msg.textContent='Couldn\u2019t save. Try again.'; } });
+    (async()=>{ try{ const db=await claude.use('db'); if(!db) return; db.collection('mynotes').onSnapshot(q=>{ notes=q.docs.map(d=>Object.assign({id:d.id},d.data())).sort((a,b)=>(b.at||'').localeCompare(a.at||'')); draw(); },()=>{}); }catch(e){} })();
+  })();
+
+  /* Talk to Claude: voice or typed notes -> db collection 'talk'. Claude reads these and replies on each one. */
+  (function(){ const ta=document.getElementById('talkText'), mic=document.getElementById('talkMic'), send=document.getElementById('talkSend'), msg=document.getElementById('talkMsg'), list=document.getElementById('talkList'); if(!ta) return;
+    try{ const d=localStorage.getItem('hq-talk-draft'); if(d) ta.value=d; }catch(e){}
+    const keep=()=>{ try{ localStorage.setItem('hq-talk-draft',ta.value); }catch(e){} }; ta.addEventListener('input',keep);
+    const SR=window.SpeechRecognition||window.webkitSpeechRecognition; let rec=null, on=false, base='';
+    if(SR){ mic.hidden=false; }
+    function stop(){ on=false; mic.classList.remove('on'); mic.textContent='🎤 Talk'; try{ rec&&rec.stop(); }catch(e){} }
+    mic.addEventListener('click',()=>{ if(on){ stop(); return; } try{ rec=new SR(); }catch(e){ mic.hidden=true; msg.textContent='Use the mic on your keyboard instead.'; return; }
+      rec.lang='en-US'; rec.continuous=true; rec.interimResults=true; base=ta.value?ta.value.replace(/\s*$/,' '):'';
+      rec.onresult=ev=>{ let fin='',tmp=''; for(let i=0;i<ev.results.length;i++){ const r=ev.results[i]; if(r.isFinal) fin+=r[0].transcript; else tmp+=r[0].transcript; } ta.value=base+fin+tmp; keep(); };
+      rec.onerror=ev=>{ stop(); if(ev.error==='not-allowed'||ev.error==='service-not-allowed'||ev.error==='audio-capture'){ mic.hidden=true; msg.textContent='Voice is blocked in this view. Tap in the box and use the 🎤 on your keyboard.'; } else if(ev.error!=='no-speech'&&ev.error!=='aborted'){ msg.textContent='Voice stopped ('+ev.error+'). Tap 🎤 Talk again.'; } };
+      rec.onend=()=>{ if(on){ base=ta.value.replace(/\s*$/,' '); try{ rec.start(); }catch(e){ stop(); } } };
+      try{ rec.start(); on=true; mic.classList.add('on'); mic.textContent='■ Stop'; msg.textContent='Listening… tap Stop when you’re done.'; }catch(e){ stop(); msg.textContent='Use the mic on your keyboard instead.'; } });
+    send.addEventListener('click',async()=>{ if(on) stop(); const v=ta.value.trim(); if(!v) return; send.disabled=true; send.textContent='Saving…';
+      try{ const db=await claude.use('db'); if(!db) throw 0; await db.collection('talk').doc('t'+Date.now()).set({text:v,at:new Date().toISOString(),status:'new'}); ta.value=''; keep(); send.textContent='Sent'; msg.textContent='Got it. I’ll reply right here.'; setTimeout(()=>{send.textContent='Send to Claude';},2500); }
+      catch(e){ msg.textContent='Couldn’t save. Your words are still in the box; try again.'; send.textContent='Send to Claude'; } send.disabled=false; });
+    const fmt=iso=>{ try{ return new Date(iso).toLocaleString([], {month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}); }catch(e){ return ''; } };
+    function draw(items){ list.textContent=''; items.slice(0,6).forEach(t=>{ const li=el('li','talkitem'); const p=el('p',null,t.text); p.style.whiteSpace='pre-wrap'; li.append(el('p','time',fmt(t.at)+' · '+(t.reply?'answered':(t.status==='working'?'Claude is on it':'sent'))),p); if(t.reply){ const r=linkify(el('p','rep small'),t.reply); li.append(r); } list.append(li); }); }
+    (async()=>{ try{ const db=await claude.use('db'); if(!db) return; db.collection('talk').orderBy('at','desc').limit(10).onSnapshot(q=>{ draw(q.docs.map(d=>Object.assign({id:d.id},d.data()))); },()=>{}); }catch(e){} })();
+  })();
+  /* Diagnostics: page errors and whether keystrokes reach text boxes, saved to db 'diag' so Claude can see what broke. */
+  (function(){ const sid='s'+Date.now(); const st={at:new Date().toISOString(),ua:navigator.userAgent.slice(0,180),focus:0,keydown:0,input:0,errors:[]}; let dirty=false, sent=false;
+    const push=async()=>{ if(!dirty) return; dirty=false; try{ const db=await claude.use('db'); if(db) await db.collection('diag').doc(sid).set(Object.assign({},st,{last:new Date().toISOString()})); }catch(e){} };
+    const isBox=t=>t&&(t.tagName==='TEXTAREA'||(t.tagName==='INPUT'&&!/^(button|submit|checkbox|radio|file)$/i.test(t.type||'')));
+    document.addEventListener('focusin',e=>{ if(isBox(e.target)){ st.focus++; dirty=true; } },true);
+    document.addEventListener('keydown',e=>{ if(isBox(e.target)){ st.keydown++; dirty=true; } },true);
+    document.addEventListener('input',e=>{ if(isBox(e.target)){ st.input++; dirty=true; } },true);
+    window.addEventListener('error',e=>{ st.errors.push(String(e.message||e).slice(0,200)); st.errors=st.errors.slice(-10); dirty=true; push(); });
+    window.addEventListener('unhandledrejection',e=>{ st.errors.push('promise: '+String(e.reason&&e.reason.message||e.reason).slice(0,200)); st.errors=st.errors.slice(-10); dirty=true; push(); });
+    setInterval(push,20000); document.addEventListener('visibilitychange',()=>{ if(document.hidden) push(); });
+    setTimeout(()=>{ dirty=true; push(); },4000);
+  })();
+
+})();
+</script>
+
+
+</body></html>
