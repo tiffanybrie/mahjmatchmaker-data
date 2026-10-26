@@ -8,6 +8,9 @@ with sync_playwright() as p:
     import os,base64
     if os.environ.get('MATFIX'):
         k_,n_=os.environ['MATFIX'].split('|||'); print('matfix',pg.evaluate("([k,n])=>{if(!M[k])return false;M[k].n=n;M[k].dn=n;return true}",[k_,n_]))
+    if os.environ.get('RNAME'):
+        for pr in os.environ['RNAME'].split(';;'):
+            k_,n_=pr.split('|||'); print('rname',pg.evaluate("([k,n])=>{if(!R[k])return false;R[k].n=n;R[k].sn=n;window.__RL=window.__RL||{};window.__RL[k]=n;if(!window.__rlw){window.__rlw=1;const _rl=rackLabel;rackLabel=function(id){return (window.__RL&&window.__RL[id])||_rl(id)};}return true}",[k_,n_]))
     if os.environ.get('MATOV'):  # MATOV0
         mu0='data:image/jpeg;base64,'+base64.b64encode(open(os.environ['MATOV'],'rb').read()).decode()
         print('matov0',pg.evaluate("([m,br,u])=>{const id=Object.keys(M).find(k=>M[k].n===m&&M[k].bn===br);MC[M[id].f]=u;return id}",[MAT,BRAND,mu0]))
@@ -24,7 +27,7 @@ with sync_playwright() as p:
     if OV:
         import base64
         ov={r:'data:image/png;base64,'+base64.b64encode(open(f,'rb').read()).decode() for r,f in zip(RK,OV) if f}
-        pg.evaluate("""async(ov)=>{const ix=await hdIndex();ix.r=ix.r||{};for(const k in ov){ix.r[k]='file:'+ov[k];IMG[R[k].im]=ov[k];R[k].c=true;}}""",ov)
+        pg.evaluate("""async(ov)=>{const ix=await hdIndex();ix.r=ix.r||{};for(const k in ov){ix.r[k]='file:'+ov[k];IMG[R[k].im]=ov[k];R[k].c=true;}window.__OVR=Object.assign(window.__OVR||{},ov);if(!window.__hdw){window.__hdw=1;const _hd=hd;hd=async(kind,key)=>(kind==='r'&&window.__OVR[key])||_hd(kind,key);}}""",ov)
     if RK: pg.evaluate("(r)=>{S.rpick=r;S.rliked=r.slice();renderRacks();}",RK); pg.wait_for_timeout(1500)
     import os
     if not os.environ.get('TCFIX') and not os.environ.get('TCAUTO'): os.environ['TCFIX']=pg.evaluate("()=>{const h=set().tc||'#d6247f';let r=parseInt(h.slice(1,3),16)/255,g=parseInt(h.slice(3,5),16)/255,b=parseInt(h.slice(5,7),16)/255;const mx=Math.max(r,g,b),mn=Math.min(r,g,b);let H=0,S=0,L=(mx+mn)/2;if(mx!==mn){const d=mx-mn;S=L>.5?d/(2-mx-mn):d/(mx+mn);H=(mx===r?(g-b)/d+(g<b?6:0):mx===g?(b-r)/d+2:(r-g)/d+4)/6;}if(L<=.62)return h;/* same hue + saturation, only darker so a pale colour-card colour stays readable */return `hsl(${Math.round(H*360)},${Math.round(Math.max(S,.35)*100)}%,50%)`;}")  # Tiffany Oct 26: use the set's assigned colour-card colour, never the contrast-darkened one

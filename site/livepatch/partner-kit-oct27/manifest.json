@@ -60,7 +60,7 @@
   "brand": "Charleston Mahjong Club",
   "story": "charleston-mahjong-club-story.jpg",
   "post": "charleston-mahjong-club-post.jpg",
-  "src": "cmc"
+  "src": "cmc3"
  },
  {
   "slug": "mahj-mood",
@@ -95,7 +95,7 @@
   "brand": "Mac + Miller Mahjong",
   "story": "mac-and-miller-story.jpg",
   "post": "mac-and-miller-post.jpg",
-  "src": "mac1"
+  "src": "mac2"
  },
  {
   "slug": "lets-be-besties",
@@ -201,5 +201,12 @@
   "story": "fait-a-main-story.jpg",
   "post": "fait-a-main-post.jpg",
   "src": "dfam"
+ },
+ {
+  "slug": "the-mahjong-co",
+  "brand": "The Mahjong Co.",
+  "story": "the-mahjong-co-story.jpg",
+  "post": "the-mahjong-co-post.jpg",
+  "src": "kal"
  }
 ]
