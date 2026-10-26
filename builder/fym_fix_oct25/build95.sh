@@ -12,4 +12,6 @@ if [ -f $H/v95_racksize.py ]; then python3 $H/v95_racksize.py "$D" | tail -1; fi
 python3 $H/v95_titlewidth.py "$D" | tail -1
 if [ -f $H/v95_cardpolish.py ]; then python3 $H/v95_cardpolish.py "$D" | tail -1; fi
 if [ -f $H/v95_mahjmoon.py ] && [ -n "$MOON" ]; then python3 $H/v95_mahjmoon.py "$D" | tail -1; fi
+python3 $H/v95_rackbrand.py "$D" | tail -1
+for x in v95_matrank v95_rackphotos v95_qafix; do if [ -f $H/$x.py ]; then python3 $H/$x.py "$D" | tail -1; fi; done
 sed -i 's/Version 94/Version 95/g' "$D/index.html"; grep -c "Version 95" "$D/index.html"

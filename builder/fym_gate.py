@@ -811,6 +811,12 @@ try:
             if not str(_m.get('u', '')).startswith('https://go.shopmy.us/') or _m.get('dc') or _m.get('pa'): F.append(f"[74] Amazon mat {_m['n']}: needs her go.shopmy.us link and no code claim")
 except Exception as _e: F.append(f"[74] Amazon partner-order check did not run: {_e}")
 
+# [75] Oct 26 (Tiffany 11:35): racks follow the TILE brand first, then the mat brand (Mahj Mood 90s + Anders Ruff mat led with
+# Anders Ruff clear racks). builder/fym_fix_oct25/v95_rackbrand.py
+_h75 = open(os.path.join(B, 'index.html')).read()
+if '/*v95 tile brand first*/' not in _h75 or 'ownW(b)-ownW(a)' not in _h75 or "ownW(r)===2?5:2" not in _h75:
+    F.append("[75] rack order does not put the TILE brand's racks ahead of the mat brand's (run v95_rackbrand.py)")
+
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
     for b, v in sorted(W.items()): print(f"  {b} ({len(v)}): " + ', '.join(v[:8]) + (' ...' if len(v) > 8 else ''))
