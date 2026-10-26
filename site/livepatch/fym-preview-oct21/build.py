@@ -20,8 +20,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CDN = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@'
 ASSET = CDN + '44563dd1c2c4d9a00aa3deec61b1d86ccfdbcaf8/assets/site/fym-page/'
 WORDMARK = CDN + '8952b136784680ba365a33d7ae13ba91a25ab561/assets/brand/mahjmatchmaker-wordmark-notag.png'
-APP_COMMIT = 'a8cf7cefe8b54cba931ae0c5b89c97ea17db0067'
-APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v94/index.html'  # v94 (Oct 26: CMC/Virora/YMI/PLM/MFM/Bespoke photos, Mahjong Studios + Splash pulled, rack lead rules, tile door A-Z; files @fc121b3 + v92 @a00edfa)
+APP_COMMIT = '71fdb607a7079c32ddefe8fc7fc8cd039be04e77'
+APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v95/index.html'  # v95 (Oct 26: back-colour mat ranking, racks follow tile brand, brand pairs first, Bespoke sides A/B, Etsy mats, Rudolph photo; files @b80d857)
 APP_BASE = CDN + 'ad0675e42242c3abad40cac9f539a265220e26eb' + '/site-app/fym-v72/'  # every file but index.html is unchanged since v72; base stays on the v72 commit (warmed; jsDelivr 403'd t15/132.jpg at the new commit)
 
 # Oct 21 3:13pm (Tiffany): the tool's promo SHOWS THE TOOL. Hero = real v69 app screens in a true-proportion iPhone
