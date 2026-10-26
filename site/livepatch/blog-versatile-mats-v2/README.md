@@ -22,7 +22,7 @@ Other details:
 3. Save the current content first, as rollback text, to `site/livepatch/blog-versatile-mats-v2/rollback-<date>.html`.
 4. Replace all of it with `live-block.html`. Fetch it in the page:
    ```
-   const html = await (await fetch('https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@<COMMIT>/site/livepatch/blog-versatile-mats-v2/live-block.html')).text();
+   const html = await (await fetch('https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@555f0bd188b34b2440e9647ceb0fae13ca39ac49/site/livepatch/blog-versatile-mats-v2/live-block.html')).text();
    const v=document.querySelector('.cm-editor .cm-content').cmTile.view; v.dispatch({changes:{from:0,to:v.state.doc.length,insert:html}})
    ```
    Then Escape, Save, Exit. Keep the post's title, date, author and SEO fields as they are.
