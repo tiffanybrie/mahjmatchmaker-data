@@ -20,8 +20,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CDN = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@'
 ASSET = CDN + '44563dd1c2c4d9a00aa3deec61b1d86ccfdbcaf8/assets/site/fym-page/'
 WORDMARK = CDN + '8952b136784680ba365a33d7ae13ba91a25ab561/assets/brand/mahjmatchmaker-wordmark-notag.png'
-APP_COMMIT = '9cf0d20b77ce1e32d28757ee8511b98e6d628691'
-APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v92/index.html'  # v92 (Oct 25 night: Bam Bird split tile photos, Deco Dragon first, Bespoke re-cuts + 41 rack cutouts cleaned, 28 Splash mats; files @a00edfa)
+APP_COMMIT = 'a261e10ed1c4f8d039c3e249a99cb26cd9081aea'
+APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v93/index.html'  # v93 (Oct 26: Mahjong by SI links -> mahjongbysi.com; v92 files @a00edfa)
 APP_BASE = CDN + 'ad0675e42242c3abad40cac9f539a265220e26eb' + '/site-app/fym-v72/'  # every file but index.html is unchanged since v72; base stays on the v72 commit (warmed; jsDelivr 403'd t15/132.jpg at the new commit)
 
 # Oct 21 3:13pm (Tiffany): the tool's promo SHOWS THE TOOL. Hero = real v69 app screens in a true-proportion iPhone
@@ -292,6 +292,60 @@ SHOW_WALKTHROUGH = False
 # Desktop is unchanged. Set False to go back to the in-page tool on phones.
 PHONE_FULLSCREEN = False
 
+# Oct 26 12:40am (Tiffany): the page OPENS TO THE TOOL. An app inside a scrolling page makes two scrolls fight (people scroll
+# past it, or get stuck inside it). APP_FIRST=True: the page never scrolls. Desktop: the tool fills the window height under
+# the site header, the intro sits in the left space and the code + albums in the right. Phone: the tool fills the screen.
+# FAQ / albums strip / tutorial are not shown (albums stay one tap away). Set False to go back to the scrolling page.
+APP_FIRST = True
+AF_CSS = r"""
+html.af,html.af body{overflow:hidden!important;overscroll-behavior:none}
+#fymx.af{position:fixed!important;left:0!important;right:0!important;bottom:0!important;top:var(--af-top,0px)!important;margin:0!important;width:auto!important;background:var(--cream,#faf3ea);z-index:2147483000;overflow:hidden}
+#fymx.af>section:not(.fx-app),#fymx.af>.fx-disc,#fymx.af .fx-app .fx-head,#fymx.af .fx-app .fx-bar,#fymx.af .fx-app .fx-code,#fymx.af .fx-side.r [data-fx-fs],#fymx.af .fx-pstart{display:none!important}
+#fymx.af .fx-app{height:100%;padding:0!important;margin:0!important;background:transparent}
+#fymx.af .fx-grid{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(380px,560px) minmax(0,1fr);gap:clamp(20px,3vw,48px);height:100%;max-width:none!important;padding:16px clamp(16px,3vw,48px)!important;box-sizing:border-box;align-items:center;margin:0!important}
+#fymx.af .fx-stage{height:100%!important;max-height:none!important;width:100%!important;margin:0!important}
+#fymx.af .fx-side{display:flex!important;flex-direction:column;justify-content:center;gap:14px;min-width:0}
+#fymx.af .fx-side.l{align-items:flex-end;text-align:right}
+#fymx.af .fx-side.l .fx-hero{background:none!important;padding:0!important;margin:0!important;min-height:0!important}
+#fymx.af .fx-side.l .fx-wrap,#fymx.af .fx-side.l .fx-copy{padding:0!important;margin:0!important;max-width:380px;text-align:right}
+#fymx.af .fx-side.l h1{font-size:clamp(40px,3.6vw,62px)!important;line-height:1.02!important;margin:6px 0 14px!important}
+#fymx.af .fx-side.l .fx-lede{font-size:clamp(17px,1.35vw,21px)!important;margin:0 0 14px!important}
+#fymx.af .fx-side.l .fx-under{font-size:15px!important;margin:0!important;line-height:1.9}
+#fymx.af .fx-side.l .fx-under .nb{display:block}
+#fymx.af .fx-side.l .fx-under{font-size:0!important}#fymx.af .fx-side.l .fx-under>*{font-size:15px}
+#fymx.af .fx-side.l .fx-afnote{font-size:13px;color:#6f6880;margin:22px 0 0;max-width:300px}
+#fymx.af .fx-side.r{align-items:flex-start}
+#fymx.af .af-code{display:none;font-size:16px;color:var(--navy,#06428a);margin:0 0 18px}#fymx.af .af-code b{font-size:20px;letter-spacing:.04em}
+#fymx.af .fx-fb{position:absolute;left:0;right:0;bottom:6px;text-align:center;font-size:12px!important;margin:0!important;display:none}
+@media (max-width:759px){
+  html.af main{z-index:2147483000!important}
+  #fymx.af{top:0!important}
+  #fymx.af .fx-grid{display:block!important;padding:0!important}
+  #fymx.af .fx-side{display:none!important}
+  #fymx.af .fx-stage{border-radius:0!important;border:0!important;box-shadow:none!important;height:100dvh!important;height:100vh}
+  #fymx.af .fx-stage .fx-x{display:none!important}
+}
+@media (min-width:760px) and (max-width:1099px){
+  #fymx.af .fx-grid{grid-template-columns:minmax(0,1fr) minmax(360px,520px) minmax(0,.35fr)}
+  #fymx.af .fx-side.r{visibility:hidden}
+  #fymx.af .fx-side.l .af-code{display:block}
+}
+"""
+AF_JS = r"""
+(function(){
+  var root=document.getElementById('fymx');if(!root||root.getAttribute('data-af'))return;root.setAttribute('data-af','1');
+  var de=document.documentElement;de.classList.add('af');root.classList.add('af');
+  var hero=root.querySelector('.fx-hero'),left=root.querySelector('.fx-side:not(.r)');
+  if(hero&&left){left.classList.add('l');left.removeAttribute('aria-hidden');left.appendChild(hero);
+    var n=document.createElement('p');n.className='fx-afnote';n.innerHTML='<span class="af-code">Use code <b>MAHJMATCH</b><br>at 30+ partner brands</span>Something look off or have an idea? <a href="/find-your-mat-ch-feedback">Tell me here&nbsp;&rarr;</a><br>Affiliate links: I may earn a commission.';left.appendChild(n);}
+  function top(){var t=0;if(window.innerWidth>=760){var h=document.querySelector('header#header,.header');if(h){var r=h.getBoundingClientRect();t=Math.max(0,Math.round(r.bottom));}}
+    root.style.setProperty('--af-top',t+'px');window.scrollTo(0,0);}
+  top();addEventListener('resize',top);addEventListener('load',top);[200,800,2000].forEach(function(ms){setTimeout(top,ms)});
+  if(window.ResizeObserver){var h=document.querySelector('header#header,.header');if(h)try{new ResizeObserver(top).observe(h)}catch(e){}}
+  setTimeout(function(){try{var f=document.getElementById('fx-f');f&&f.focus()}catch(e){}},1200);
+})();
+"""
+
 
 def build():
     T = json.load(open(os.path.join(HERE, '..', '..', '..', 'scripts', 'fym_promo', 'tutorial.json')))
@@ -343,8 +397,8 @@ def build():
 {TUTSEC}
 <p class="fx-disc">Something look off or have an idea? <a href="{FEEDBACK}">Tell me here&nbsp;&rarr;</a><br>Affiliate links: I may earn a commission.</p>
 </div>
-<style>{CSS}</style>
-<script>{JS.replace('__IDX__', APP_INDEX).replace('__BASE__', APP_BASE).replace('__PFS__', 'true' if PHONE_FULLSCREEN else 'false')}</script>
+<style>{CSS}{AF_CSS if APP_FIRST else ''}</style>
+<script>{JS.replace('__IDX__', APP_INDEX).replace('__BASE__', APP_BASE).replace('__PFS__', 'true' if PHONE_FULLSCREEN else 'false')}{AF_JS if APP_FIRST else ''}</script>
 '''
     out = os.path.join(HERE, 'page-block.html')
     open(out, 'w').write(body)
