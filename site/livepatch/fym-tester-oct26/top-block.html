@@ -16,18 +16,3 @@
   <p>You're one of the very first to try it, and I'd love to hear what you think. What did you love? What was confusing? Anything look off?</p>
   <p>Fill this out as many times as you like this week. It comes straight to me. &#128149;</p>
 </div>
-<script>
-/* Version tag: fills the form's hidden "Version" field (Squarespace reads ?SQF_VERSION=...).
-   Bump FYMT_VERSION when a new public version goes live (1.1, 1.2 ... per docs/FYM-VERSIONS.md). Public labels only. */
-(function(){
-  var FYMT_VERSION='1.0';
-  try{
-    if(window.top!==window.self) return;                 /* never in the Squarespace editor frame */
-    if(/squarespace\.com$/.test(location.hostname)) return;
-    var q=new URLSearchParams(location.search);
-    if(q.get('SQF_VERSION')===FYMT_VERSION) return;
-    q.set('SQF_VERSION',FYMT_VERSION);
-    location.replace(location.pathname+'?'+q.toString()+location.hash);
-  }catch(e){}
-})();
-</script>
