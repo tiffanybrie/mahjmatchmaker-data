@@ -1,0 +1,69 @@
+{
+ "_note": "Virora uniform tile photo (Tiffany Oct 26 8:41am: tile back not visible in the match card circle). 1600x700: faces from Virora's own listing image 00 (flat lay, left-aligned) | that set's own back tile cut from the SAME photo (bottom-right corner), 3 whole in the circle (centre 800,350 r350) + 3 filling the strip, white line 796-803. Real brand photo only. Builder: assets/tiles/v94/virora-src/comp.py. Patch: builder/fym_fix_oct25/v94_virora.py.",
+ "splits": {
+  "hol:nivalee-blue": {
+   "img": "assets/tiles/v94/virora-nivalee-glacier-blue-split.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260930162311_12709_87.jpg?v=1790757089"
+  },
+  "hol:tinselle-emerald": {
+   "img": "assets/tiles/v94/virora-tinselle-emerald-green-split.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260929150507_10530_242.jpg?v=1790668270"
+  },
+  "hol:tinselle-ruby": {
+   "img": "assets/tiles/v94/virora-ruby-christmas-split.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260824173647_7518_242.jpg?v=1787565251"
+  },
+  "www.viroramahjong.com/christmas-collection-ii-nivalee": {
+   "img": "assets/tiles/v94/virora-christmas-collection-ii-nivalee-split.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260901174757_10356_87.jpg?v=1788256687"
+  },
+  "www.viroramahjong.com/sylvaria": {
+   "img": "assets/tiles/v94/virora-sylvaria-split.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260914120744_11153_87.jpg?v=1789358988"
+  },
+  "www.viroramahjong.com/aveline": {
+   "img": "assets/tiles/v94/virora-aveline-split.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20261009101035_12756_87.jpg?v=1791511921"
+  },
+  "www.viroramahjong.com/yellow-lilacee": {
+   "img": "assets/tiles/v94/virora-yellow-lilacee-split.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260722161042_6228_87.jpg?v=1784707873"
+  },
+  "www.viroramahjong.com/florea": {
+   "img": "assets/tiles/v94/virora-florea-split.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/7.10_47ed69e7-d0b3-4238-8243-93429da4cad4.jpg?v=1783675323"
+  },
+  "www.viroramahjong.com/viozelle": {
+   "img": "assets/tiles/v94/virora-viozelle-split.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260717135639_1088_242.jpg?v=1784267906"
+  },
+  "www.viroramahjong.com/elanisse": {
+   "img": "assets/tiles/v94/virora-elanisse-split.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/1_2ca09c42-b3d5-4da2-a3e4-ad6e47fa1ff8.jpg?v=1773907782"
+  },
+  "www.viroramahjong.com/rosanelle": {
+   "img": "assets/tiles/v94/virora-rosanelle-split.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260701103853_92_37.jpg?v=1782873867"
+  },
+  "www.viroramahjong.com/marivelle": {
+   "img": "assets/tiles/v94/virora-marivelle-split.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260828173025_10238_251.jpg?v=1787911974"
+  },
+  "www.viroramahjong.com/florielle": {
+   "img": "assets/tiles/v94/virora-florielle-split.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/11_5be08784-bfcc-48b6-b0fb-64b3b7882733.jpg?v=1773910837"
+  },
+  "www.viroramahjong.com/amethisse": {
+   "img": "assets/tiles/v94/virora-amethisse-split.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/image_1.jpg?v=1777349034"
+  },
+  "www.viroramahjong.com/iriselle": {
+   "img": "assets/tiles/v94/virora-iriselle-split.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/666.jpg?v=1792658089"
+  },
+  "www.viroramahjong.com/petalee": {
+   "img": "assets/tiles/v94/virora-petalee-split.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/1_2edac3c1-f800-4d7b-98d9-586233b3255d.jpg?v=1791626139"
+  }
+ }
+}
