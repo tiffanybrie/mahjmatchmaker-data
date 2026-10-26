@@ -1,0 +1,27 @@
+{
+ "_note": "thin albums Oct 26: Betty June & Jeannette Betty Floral (Monogrammed Neoprene)",
+ "mat_file": "assets/mats/thin-oct26/betty-june-jeannette-betty-floral-monogrammed-neoprene.jpg",
+ "mat_crop": [
+  0,
+  0,
+  640,
+  640
+ ],
+ "mat_key": "betty-june-jeannette-betty-floral-monogrammed-neoprene",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "sunset-betty-june-jeannette-betty-floral-monogrammed-neoprene",
+   "set": "sunset",
+   "title": "Sunset + Betty Floral",
+   "col": "#e8613d",
+   "tile_file": "assets/tiles/album/sunset.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Oh My Mahjong White Acrylic",
+    "Oh My Mahjong Hot Pink"
+   ],
+   "file": "sunset-mahjong-tiles-betty-june-jeannette-betty-floral-monogrammed-neoprene-mat.jpg"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "_note": "thin albums Oct 26: Golden Pond Mahjong Midori Shadows",
+ "mat_file": "assets/mats/golden-pond-mahjong/midori-shadows.jpg",
+ "mat_crop": [
+  0,
+  0,
+  906,
+  904
+ ],
+ "mat_key": "golden-pond-mahjong-midori-shadows",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "nantucket-golden-pond-mahjong-midori-shadows",
+   "set": "nantucket",
+   "title": "Nantucket + Midori Shadows",
+   "col": "#dc282c",
+   "tile_file": "assets/tiles/album/nantucket.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Peace Love Mahjong Oak",
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "file": "nantucket-mahjong-tiles-golden-pond-mahjong-midori-shadows-mat.jpg"
+  }
+ ]
+}

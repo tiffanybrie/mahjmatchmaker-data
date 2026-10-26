@@ -1,0 +1,27 @@
+{
+ "_note": "thin albums Oct 26: Sophie Clima Cheeky Cockatoo",
+ "mat_file": "assets/mats/thin-oct26/sophie-clima-cheeky-cockatoo.jpg",
+ "mat_crop": [
+  0,
+  0,
+  640,
+  640
+ ],
+ "mat_key": "sophie-clima-cheeky-cockatoo",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "sunset-sophie-clima-cheeky-cockatoo",
+   "set": "sunset",
+   "title": "Sunset + Cheeky Cockatoo",
+   "col": "#e8613d",
+   "tile_file": "assets/tiles/album/sunset.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Oh My Mahjong White Acrylic",
+    "Oh My Mahjong Hot Pink"
+   ],
+   "file": "sunset-mahjong-tiles-sophie-clima-cheeky-cockatoo-mat.jpg"
+  }
+ ]
+}

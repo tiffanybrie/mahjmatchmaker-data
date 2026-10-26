@@ -1,0 +1,41 @@
+{
+ "_note": "thin albums Oct 26: Betty June & Jeannette Elizabeth",
+ "mat_file": "assets/mats/thin-oct26/betty-june-jeannette-elizabeth.jpg",
+ "mat_crop": [
+  0,
+  0,
+  640,
+  640
+ ],
+ "mat_key": "betty-june-jeannette-elizabeth",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "sunset-betty-june-jeannette-elizabeth",
+   "set": "sunset",
+   "title": "Sunset + Elizabeth",
+   "col": "#e8613d",
+   "tile_file": "assets/tiles/album/sunset.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Oh My Mahjong White Acrylic",
+    "Oh My Mahjong Hot Pink"
+   ],
+   "file": "sunset-mahjong-tiles-betty-june-jeannette-elizabeth-mat.jpg"
+  },
+  {
+   "slug": "taylor-betty-june-jeannette-elizabeth",
+   "set": "taylor",
+   "title": "Taylor + Elizabeth",
+   "col": "#b68ccd",
+   "tile_file": "assets/tiles/album/taylor.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Light Pink",
+    "Middle & Main Scalloped Beechwood"
+   ],
+   "file": "taylor-mahjong-tiles-betty-june-jeannette-elizabeth-mat.jpg"
+  }
+ ]
+}

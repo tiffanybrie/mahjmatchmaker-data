@@ -1,0 +1,28 @@
+{
+ "_note": "thin albums Oct 26: Tala Mahj The Pavilion - Bamboo Neutral with Blue Fringe",
+ "mat_file": "assets/mats/thin-oct26/tala-mahj-the-pavilion-bamboo-neutral-with-blue-fringe.jpg",
+ "mat_crop": [
+  0,
+  0,
+  640,
+  640
+ ],
+ "mat_key": "tala-mahj-the-pavilion-bamboo-neutral-with-blue-fringe",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "osler-tala-mahj-the-pavilion-bamboo-neutral-with-blue-fringe",
+   "set": "osler",
+   "title": "Osler + Pavilion",
+   "col": "#456fbe",
+   "tile_file": "assets/tiles/album/osler.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Bird & Bamboo Wine"
+   ],
+   "file": "osler-mahjong-tiles-tala-mahj-the-pavilion-bamboo-neutral-with-blue-fringe-mat.jpg"
+  }
+ ]
+}

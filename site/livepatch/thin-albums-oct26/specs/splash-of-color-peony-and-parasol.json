@@ -1,0 +1,28 @@
+{
+ "_note": "thin albums Oct 26: Splash of Color Peony and Parasol",
+ "mat_file": "assets/mats/splash-of-color/peony-parasol-straight.jpg",
+ "mat_crop": [
+  0,
+  0,
+  1180,
+  1180
+ ],
+ "mat_key": "splash-of-color-peony-and-parasol",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "pippa-splash-of-color-peony-and-parasol",
+   "set": "pippa",
+   "title": "Pippa + Peony & Parasol",
+   "col": "#e0478a",
+   "tile_file": "assets/tiles/album/pippa.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Icy Mint"
+   ],
+   "file": "pippa-mahjong-tiles-splash-of-color-peony-and-parasol-mat.jpg"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "_note": "thin albums Oct 26: Sophie Clima Whimsical Chinoiserie Meeting in the Pavilion",
+ "mat_file": "assets/mats/thin-oct26/sophie-clima-whimsical-chinoiserie-meeting-in-the-pavilion.jpg",
+ "mat_crop": [
+  0,
+  0,
+  640,
+  640
+ ],
+ "mat_key": "sophie-clima-whimsical-chinoiserie-meeting-in-the-pavilion",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "jasmine-sophie-clima-whimsical-chinoiserie-meeting-in-the-pavilion",
+   "set": "jasmine",
+   "title": "Jasmine + Whimsical Chinoiserie",
+   "col": "#36a272",
+   "tile_file": "assets/tiles/album/jasmine.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Hot Pink"
+   ],
+   "file": "jasmine-mahjong-tiles-sophie-clima-whimsical-chinoiserie-meeting-in-the-pavilion-mat.jpg"
+  }
+ ]
+}

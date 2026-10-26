@@ -1,0 +1,56 @@
+{
+ "_note": "thin albums Oct 26: Betty June & Jeannette Caroline (Preppy)",
+ "mat_file": "assets/mats/thin-oct26/betty-june-jeannette-caroline-preppy.jpg",
+ "mat_crop": [
+  0,
+  0,
+  640,
+  640
+ ],
+ "mat_key": "betty-june-jeannette-caroline-preppy",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "sorbet-betty-june-jeannette-caroline-preppy",
+   "set": "sorbet",
+   "title": "Sorbet + Caroline",
+   "col": "#e9a926",
+   "tile_file": "assets/tiles/album/sorbet.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Icy Mint",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Middle & Main Scalloped Beechwood"
+   ],
+   "file": "sorbet-mahjong-tiles-betty-june-jeannette-caroline-preppy-mat.jpg"
+  },
+  {
+   "slug": "taylor-betty-june-jeannette-caroline-preppy",
+   "set": "taylor",
+   "title": "Taylor + Caroline",
+   "col": "#b68ccd",
+   "tile_file": "assets/tiles/album/taylor.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Light Pink",
+    "Middle & Main Scalloped Beechwood"
+   ],
+   "file": "taylor-mahjong-tiles-betty-june-jeannette-caroline-preppy-mat.jpg"
+  },
+  {
+   "slug": "pippa-betty-june-jeannette-caroline-preppy",
+   "set": "pippa",
+   "title": "Pippa + Caroline",
+   "col": "#e0478a",
+   "tile_file": "assets/tiles/album/pippa.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Icy Mint"
+   ],
+   "file": "pippa-mahjong-tiles-betty-june-jeannette-caroline-preppy-mat.jpg"
+  }
+ ]
+}

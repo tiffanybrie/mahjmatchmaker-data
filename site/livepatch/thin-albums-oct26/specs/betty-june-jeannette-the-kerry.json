@@ -1,0 +1,28 @@
+{
+ "_note": "thin albums Oct 26: Betty June & Jeannette The Kerry",
+ "mat_file": "assets/mats/etsy/bettyjunejeannette/kerry-2.jpg",
+ "mat_crop": [
+  181,
+  558,
+  2049,
+  2429
+ ],
+ "mat_key": "kerry",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "limoncello-betty-june-jeannette-the-kerry",
+   "set": "limoncello",
+   "title": "Limoncello + Kerry",
+   "col": "#97aa27",
+   "tile_file": "assets/tiles/album/limoncello.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Periwinkle Blue"
+   ],
+   "file": "limoncello-mahjong-tiles-betty-june-jeannette-the-kerry-mat.jpg"
+  }
+ ]
+}

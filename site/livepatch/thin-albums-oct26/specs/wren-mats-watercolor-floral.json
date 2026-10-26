@@ -1,0 +1,28 @@
+{
+ "_note": "thin albums Oct 26: Wren Mats Watercolor Floral",
+ "mat_file": "assets/mats/wren-mats/watercolor-floral.jpg",
+ "mat_crop": [
+  0,
+  0,
+  1400,
+  1400
+ ],
+ "mat_key": "wren-mats-watercolor-floral",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "pippa-wren-mats-watercolor-floral",
+   "set": "pippa",
+   "title": "Pippa + Watercolor Floral",
+   "col": "#e0478a",
+   "tile_file": "assets/tiles/album/pippa.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Icy Mint"
+   ],
+   "file": "pippa-mahjong-tiles-wren-mats-watercolor-floral-mat.jpg"
+  }
+ ]
+}

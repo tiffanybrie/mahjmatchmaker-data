@@ -1,0 +1,27 @@
+{
+ "_note": "thin albums Oct 26: Betty June & Jeannette Nichole",
+ "mat_file": "assets/mats/thin-oct26/betty-june-jeannette-nichole.jpg",
+ "mat_crop": [
+  0,
+  0,
+  640,
+  640
+ ],
+ "mat_key": "betty-june-jeannette-nichole",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "jasmine-betty-june-jeannette-nichole",
+   "set": "jasmine",
+   "title": "Jasmine + Nichole",
+   "col": "#36a272",
+   "tile_file": "assets/tiles/album/jasmine.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Hot Pink"
+   ],
+   "file": "jasmine-mahjong-tiles-betty-june-jeannette-nichole-mat.jpg"
+  }
+ ]
+}

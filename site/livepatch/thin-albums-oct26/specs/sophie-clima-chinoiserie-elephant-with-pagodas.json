@@ -1,0 +1,28 @@
+{
+ "_note": "thin albums Oct 26: Sophie Clima Chinoiserie Elephant with Pagodas",
+ "mat_file": "assets/mats/thin-oct26/sophie-clima-chinoiserie-elephant-with-pagodas-r90.jpg",
+ "mat_crop": [
+  0,
+  0,
+  640,
+  640
+ ],
+ "mat_key": "sophie-clima-chinoiserie-elephant-with-pagodas",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "limoncello-sophie-clima-chinoiserie-elephant-with-pagodas",
+   "set": "limoncello",
+   "title": "Limoncello + Chinoiserie Elephant",
+   "col": "#97aa27",
+   "tile_file": "assets/tiles/album/limoncello.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Periwinkle Blue"
+   ],
+   "file": "limoncello-mahjong-tiles-sophie-clima-chinoiserie-elephant-with-pagodas-mat.jpg"
+  }
+ ]
+}

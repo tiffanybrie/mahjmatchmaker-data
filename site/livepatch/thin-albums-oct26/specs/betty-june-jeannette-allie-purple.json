@@ -1,0 +1,28 @@
+{
+ "_note": "thin albums Oct 26: Betty June & Jeannette Allie (Purple)",
+ "mat_file": "assets/mats/thin-oct26/betty-june-jeannette-allie-purple.jpg",
+ "mat_crop": [
+  0,
+  0,
+  640,
+  640
+ ],
+ "mat_key": "betty-june-jeannette-allie-purple",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "gemma-betty-june-jeannette-allie-purple",
+   "set": "gemma",
+   "title": "Gemma + Allie",
+   "col": "#40214b",
+   "tile_file": "assets/tiles/album/gemma.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Eggplant"
+   ],
+   "file": "gemma-mahjong-tiles-betty-june-jeannette-allie-purple-mat.jpg"
+  }
+ ]
+}

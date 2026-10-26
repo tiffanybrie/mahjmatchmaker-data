@@ -1,0 +1,28 @@
+{
+ "_note": "thin albums Oct 26: Sophie Clima Pink Orchids",
+ "mat_file": "assets/mats/thin-oct26/sophie-clima-pink-orchids-r90.jpg",
+ "mat_crop": [
+  0,
+  0,
+  640,
+  640
+ ],
+ "mat_key": "sophie-clima-pink-orchids",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "gemma-sophie-clima-pink-orchids",
+   "set": "gemma",
+   "title": "Gemma + Pink Orchids",
+   "col": "#40214b",
+   "tile_file": "assets/tiles/album/gemma.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Eggplant"
+   ],
+   "file": "gemma-mahjong-tiles-sophie-clima-pink-orchids-mat.jpg"
+  }
+ ]
+}

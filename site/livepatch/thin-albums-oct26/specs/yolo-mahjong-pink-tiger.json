@@ -1,0 +1,27 @@
+{
+ "_note": "thin albums Oct 26: YOLO Mahjong Pink Tiger",
+ "mat_file": "assets/mats/yolo-mahjong/pink-tiger-flat-v2.jpg",
+ "mat_crop": [
+  8,
+  8,
+  732,
+  732
+ ],
+ "mat_key": "yolo-mahjong-pink-tiger",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "sunset-yolo-mahjong-pink-tiger",
+   "set": "sunset",
+   "title": "Sunset + Pink Tiger",
+   "col": "#e8613d",
+   "tile_file": "assets/tiles/album/sunset.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Oh My Mahjong White Acrylic",
+    "Oh My Mahjong Hot Pink"
+   ],
+   "file": "sunset-mahjong-tiles-yolo-mahjong-pink-tiger-mat.jpg"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "_note": "thin albums Oct 26: Sophie Clima Cheetah in Chinoiserie",
+ "mat_file": "assets/mats/thin-oct26/sophie-clima-cheetah-in-chinoiserie.jpg",
+ "mat_crop": [
+  0,
+  0,
+  640,
+  640
+ ],
+ "mat_key": "sophie-clima-cheetah-in-chinoiserie",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "jasmine-sophie-clima-cheetah-in-chinoiserie",
+   "set": "jasmine",
+   "title": "Jasmine + Chinoiserie Cheetah",
+   "col": "#36a272",
+   "tile_file": "assets/tiles/album/jasmine.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Hot Pink"
+   ],
+   "file": "jasmine-mahjong-tiles-sophie-clima-cheetah-in-chinoiserie-mat.jpg"
+  }
+ ]
+}

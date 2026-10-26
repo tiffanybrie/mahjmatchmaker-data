@@ -1,0 +1,28 @@
+{
+ "_note": "thin albums Oct 26: Mahjong by SI Gatsby",
+ "mat_file": "assets/mats/mahjong-by-si/mahjongb-gatsby-mahjong-mat.jpg",
+ "mat_crop": [
+  0,
+  0,
+  1076,
+  1074
+ ],
+ "mat_key": "mahjong-by-si-gatsby",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "osler-mahjong-by-si-gatsby",
+   "set": "osler",
+   "title": "Osler + Gatsby",
+   "col": "#456fbe",
+   "tile_file": "assets/tiles/album/osler.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Bird & Bamboo Wine"
+   ],
+   "file": "osler-mahjong-tiles-mahjong-by-si-gatsby-mat.jpg"
+  }
+ ]
+}

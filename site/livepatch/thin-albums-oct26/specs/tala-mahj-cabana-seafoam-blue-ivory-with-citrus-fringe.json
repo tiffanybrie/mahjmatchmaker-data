@@ -1,0 +1,42 @@
+{
+ "_note": "thin albums Oct 26: Tala Mahj Cabana - Seafoam Blue & Ivory with Citrus Fringe",
+ "mat_file": "assets/mats/thin-oct26/tala-mahj-cabana-seafoam-blue-ivory-with-citrus-fringe.jpg",
+ "mat_crop": [
+  0,
+  0,
+  640,
+  640
+ ],
+ "mat_key": "tala-mahj-cabana-seafoam-blue-ivory-with-citrus-fringe",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "sorbet-tala-mahj-cabana-seafoam-blue-ivory-with-citrus-fringe",
+   "set": "sorbet",
+   "title": "Sorbet + Seafoam Cabana",
+   "col": "#e9a926",
+   "tile_file": "assets/tiles/album/sorbet.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Icy Mint",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Middle & Main Scalloped Beechwood"
+   ],
+   "file": "sorbet-mahjong-tiles-tala-mahj-cabana-seafoam-blue-ivory-with-citrus-fringe-mat.jpg"
+  },
+  {
+   "slug": "limoncello-tala-mahj-cabana-seafoam-blue-ivory-with-citrus-fringe",
+   "set": "limoncello",
+   "title": "Limoncello + Seafoam Cabana",
+   "col": "#97aa27",
+   "tile_file": "assets/tiles/album/limoncello.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Periwinkle Blue"
+   ],
+   "file": "limoncello-mahjong-tiles-tala-mahj-cabana-seafoam-blue-ivory-with-citrus-fringe-mat.jpg"
+  }
+ ]
+}

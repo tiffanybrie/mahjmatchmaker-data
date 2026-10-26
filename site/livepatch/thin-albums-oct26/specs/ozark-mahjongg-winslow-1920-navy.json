@@ -1,0 +1,28 @@
+{
+ "_note": "thin albums Oct 26: Ozark Mahjongg Winslow 1920 Navy",
+ "mat_file": "assets/mats/ozark-mahjongg/winslow-1920-original-navy-blue-mat.jpg",
+ "mat_crop": [
+  0,
+  0,
+  1732,
+  1800
+ ],
+ "mat_key": "ozark-mahjongg-winslow-1920-navy",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "osler-ozark-mahjongg-winslow-1920-navy",
+   "set": "osler",
+   "title": "Osler + Winslow Navy",
+   "col": "#456fbe",
+   "tile_file": "assets/tiles/album/osler.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Bird & Bamboo Wine"
+   ],
+   "file": "osler-mahjong-tiles-ozark-mahjongg-winslow-1920-navy-mat.jpg"
+  }
+ ]
+}

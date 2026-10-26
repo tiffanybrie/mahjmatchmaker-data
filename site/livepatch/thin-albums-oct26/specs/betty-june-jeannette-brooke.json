@@ -1,0 +1,27 @@
+{
+ "_note": "thin albums Oct 26: Betty June & Jeannette Brooke",
+ "mat_file": "assets/mats/thin-oct26/betty-june-jeannette-brooke-r90.jpg",
+ "mat_crop": [
+  0,
+  0,
+  640,
+  640
+ ],
+ "mat_key": "betty-june-jeannette-brooke",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "sunset-betty-june-jeannette-brooke",
+   "set": "sunset",
+   "title": "Sunset + Brooke",
+   "col": "#e8613d",
+   "tile_file": "assets/tiles/album/sunset.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Oh My Mahjong White Acrylic",
+    "Oh My Mahjong Hot Pink"
+   ],
+   "file": "sunset-mahjong-tiles-betty-june-jeannette-brooke-mat.jpg"
+  }
+ ]
+}

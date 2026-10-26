@@ -1,0 +1,42 @@
+{
+ "_note": "thin albums Oct 26: Betty June & Jeannette Livy",
+ "mat_file": "assets/mats/thin-oct26/betty-june-jeannette-livy.jpg",
+ "mat_crop": [
+  0,
+  0,
+  640,
+  640
+ ],
+ "mat_key": "betty-june-jeannette-livy",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "gemma-betty-june-jeannette-livy",
+   "set": "gemma",
+   "title": "Gemma + Livy",
+   "col": "#40214b",
+   "tile_file": "assets/tiles/album/gemma.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Oh My Mahjong Tortoise Shell",
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Eggplant"
+   ],
+   "file": "gemma-mahjong-tiles-betty-june-jeannette-livy-mat.jpg"
+  },
+  {
+   "slug": "taylor-betty-june-jeannette-livy",
+   "set": "taylor",
+   "title": "Taylor + Livy",
+   "col": "#b68ccd",
+   "tile_file": "assets/tiles/album/taylor.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Light Pink",
+    "Middle & Main Scalloped Beechwood"
+   ],
+   "file": "taylor-mahjong-tiles-betty-june-jeannette-livy-mat.jpg"
+  }
+ ]
+}

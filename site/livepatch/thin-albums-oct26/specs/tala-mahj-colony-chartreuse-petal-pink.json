@@ -1,0 +1,42 @@
+{
+ "_note": "thin albums Oct 26: Tala Mahj Colony - Chartreuse & Petal Pink",
+ "mat_file": "assets/mats/thin-oct26/tala-mahj-colony-chartreuse-petal-pink.jpg",
+ "mat_crop": [
+  0,
+  0,
+  640,
+  640
+ ],
+ "mat_key": "tala-mahj-colony-chartreuse-petal-pink",
+ "max_racks": 4,
+ "cards": [
+  {
+   "slug": "sorbet-tala-mahj-colony-chartreuse-petal-pink",
+   "set": "sorbet",
+   "title": "Sorbet + Colony",
+   "col": "#e9a926",
+   "tile_file": "assets/tiles/album/sorbet.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Bird & Bamboo Icy Mint",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Middle & Main Scalloped Beechwood"
+   ],
+   "file": "sorbet-mahjong-tiles-tala-mahj-colony-chartreuse-petal-pink-mat.jpg"
+  },
+  {
+   "slug": "pippa-tala-mahj-colony-chartreuse-petal-pink",
+   "set": "pippa",
+   "title": "Pippa + Colony",
+   "col": "#e0478a",
+   "tile_file": "assets/tiles/album/pippa.jpg",
+   "tilefit": "cover",
+   "racks": [
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Icy Mint"
+   ],
+   "file": "pippa-mahjong-tiles-tala-mahj-colony-chartreuse-petal-pink-mat.jpg"
+  }
+ ]
+}
