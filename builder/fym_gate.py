@@ -191,7 +191,7 @@ if 'data-dfam=""' not in UI or 'data-fam="" data-k=' not in UI or "[data-fclear]
 if 'No mats with all of those yet' not in fn('NOAND') or 'data-fclear' not in fn('deck') or 'NOAND' not in fn('deck'):
     F.append("[8] in-deck zero-result message (No mats with all of those yet) missing")
 if UI.count('class="dempty">${NOAND}') < 2: F.append("[8] mat-door zero-result message missing (grid + search reset)")
-if "filters('m')+" not in fn('renderMats'): F.append("[8] colour chips not rendered above the deck (filter could lock)")
+if "${filters('m')}</div>${deck('m')}" not in fn('renderMats'): F.append("[8] colour chips not rendered right above the mat deck (filter could lock)")
 if "fam:''" in UI or 'S.dfam=' in UI: F.append("[8] single-colour filter state left over (fam:'' / S.dfam)")
 if 'D.lead' not in fn('CSORT') or '-(SHR(id,C[0])+20*p)' not in fn('CSORT') or 'Mahjong Studios' in fn('CSORT'):
     F.append("[8b] colour chips not sorted lead > ONE list by score (share + 20 if primary) (CSORT/SHR)")
