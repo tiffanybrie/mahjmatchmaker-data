@@ -26,6 +26,9 @@ vm.createContext(ctx);
 try { vm.runInContext(scripts.join('\n;\n') + '\n;globalThis.__T={S,M,D,set,rackDeck,herRacks,R,uni,rkMS:typeof rkMS==="function"?rkMS:null,rkW:typeof rkW==="function"?rkW:null,ownB:typeof ownB==="function"?ownB:null,rackFits};for(const n of ["matLocked","herUseful","codeLine","doStartOver"]){try{globalThis.__T[n]=eval(n);}catch(e){globalThis.__T[n]=null;}}', ctx, { timeout: 20000 }); }
 catch (e) { console.log(JSON.stringify({ fails: ['page script failed to run in node: ' + e.message], notes: [] })); process.exit(0); }
 const X = ctx.__T, S = X.S, D = X.D, R = X.R;
+// v96 (Tiffany Oct 26 11:35 + QA v95 2c): the TILE brand's racks always count as 'own'; a rack of only the MAT's brand counts as
+// 'own' only when its photo is good (pq>=3), so a scene/boxed mat-brand rack never has to lead.
+const tileB = () => [D.sets[S.set].maker, (D.tiles[D.sets[S.set].tile] || {}).bn], ownGood = r => tileB().includes(R[r].bn) || (R[r].pq || 3) >= 3;
 const vis = r => R[r] && !R[r].hid;
 if (!X.rkMS || !X.rkW || !X.ownB) fail('rkMS()/rkW() missing: Mahjong Studios / white wood + pearl rules not in the build (v94_rackquality.py round 2)');
 const rkMS = X.rkMS || (() => false), rkW = X.rkW || (() => 0);
@@ -50,7 +53,7 @@ for (const [si, mk] of pairs) {
       let [x, y, z] = [c[0] * .4124 + c[1] * .3576 + c[2] * .1805, c[0] * .2126 + c[1] * .7152 + c[2] * .0722, c[0] * .0193 + c[1] * .1192 + c[2] * .9505];
       [x, y, z] = [x / .95047, y, z / 1.08883].map(v => v > .008856 ? Math.cbrt(v) : 7.787 * v + 16 / 116); return [116 * y - 16, 500 * (x - y), 200 * (y - z)]; };
   const SWq = sw.map(s => labq(s[0])), scq = r => { const h = R[r].hx; if (!h || !SWq.length) return 99; const L = labq(h); return Math.min(...SWq.map(s => Math.hypot(L[0] - s[0], L[1] - s[1], L[2] - s[2]))); };
-  const ownOk = r => B4.includes(R[r].bn) && (R[r].wh || R[r].cl || X.rackFits(r) && scq(r) <= 30);   // rule 5: own white racks count whatever their measured colour
+  const ownOk = r => B4.includes(R[r].bn) && ownGood(r) && (R[r].wh || R[r].cl || X.rackFits(r) && scq(r) <= 30);   // rule 5: own white racks count whatever their measured colour
   // rule 4 outranks rules 2/3: own-brand matching racks are checked like picks for the photo / white-wood leads
   const first = deck.filter(r => !ownOk(r) || mine(r))[0];
   if (first && !mine(first)) {
@@ -83,7 +86,7 @@ for (const [si, mk] of pairs.filter((_, i) => i % 5 === 0 || /pearl/i.test(D.set
     const m6 = d.slice(0, 6).find(r => !hr.includes(r) && rkMS(r));
     if (m6) fail(`${c} chip (${D.sets[si].name} + ${X.M[mk].n}): Mahjong Studios rack ${R[m6].n} in the top 6`);
     if (!['neutral', 'clear', 'wood'].includes(c) || hr.includes(d[0])) continue;
-    const own = r => X.ownB && X.ownB().includes(R[r].bn), d0 = d.find(r => hr.includes(r) || !own(r));
+    const own = r => X.ownB && X.ownB().includes(R[r].bn) && ownGood(r), d0 = d.find(r => hr.includes(r) || !own(r));
     if (c === 'neutral' || c === 'clear') { const wc = r => c === 'neutral' ? R[r].wh : R[r].cl, fp = d.find(r => !hr.includes(r)), ow = d.filter(r => !hr.includes(r) && own(r) && wc(r));
       if (ow.length && fp && !(own(fp) && wc(fp))) fail(`${c === 'neutral' ? 'White' : 'Clear'} chip (${D.sets[si].name} + ${X.M[mk].n}): leads with ${R[fp].n}, not the brand's own ${c === 'neutral' ? 'white' : 'clear'} rack ${R[ow[0]].n}`); }
     if (!d0 || hr.includes(d0)) continue;
