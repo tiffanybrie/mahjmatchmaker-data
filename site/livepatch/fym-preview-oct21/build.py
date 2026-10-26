@@ -290,7 +290,7 @@ SHOW_WALKTHROUGH = False
 # Oct 25 9:11pm (Tiffany: the page "fights" the tool on her phone). PHONE_FULLSCREEN=True: under 760px wide the tool is NOT
 # embedded in the page; the hero shows a big Start button and the app opens in the full-screen overlay (X to come back).
 # Desktop is unchanged. Set False to go back to the in-page tool on phones.
-PHONE_FULLSCREEN = True
+PHONE_FULLSCREEN = False
 
 
 def build():
