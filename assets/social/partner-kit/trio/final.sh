@@ -1,0 +1,8 @@
+set -e
+TCFIX= python3 shot.py Cypress "Marigold" "Mahjong Row & Co." mrc "Mahjong Row & Co." "mahjongrowandco.com/autumn-brown-rack-pusher-set,mahjongrowandco.com/scalloped-deluxe-tortoise-rack" "mrc_ab.png,mrc_st.png" && python3 comp.py mrc "Mahjong Row &amp; Co."
+python3 shot.py "Hunt Club Edition" "The Hunt Club" "Charleston Mahjong Club" cmc "Charleston Mahjong Club" "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set" "" && python3 comp.py cmc "Charleston Mahjong Club"
+python3 shot.py "Lucky Charms (Marshmallow Pink)" "Lucky Charms Mat" "Bespoke Mahjong" bsp "Bespoke Mahjong" "www.bespokemahjong.com/the-ultimate-rack-red,www.bespokemahjong.com/the-ultimate-rack-hottie-pink" "bsp_red_cut.png,bsp_pink_cut.png" && python3 comp.py bsp "Bespoke Mahjong"
+TZOOM=1.7 python3 shot.py "The Allure" "The Paradise - Island Green" "Bird & Bamboo" bb "Bird & Bamboo" "bb:Tiffany Dusk,bb:Peony" "" && python3 comp.py bb "Bird &amp; Bamboo"
+TCFIX='#DE8A6C' python3 shot.py "Peach & Pine" "SOIRÉE Leatherette" "Britt Mills" mm "Middle & Main Mahjong" "www.middleandmainmahjong.com/golden-grain-beechwood-mahjong-rack-and-pusher-set-of-4,www.middleandmainmahjong.com/milk-glass-collection-mahjong-rack-and-pusher-set-of-4" ",mm_milk_cut.png" && python3 comp.py mm "Middle &amp; Main Mahjong"
+python3 shot.py "Papaya Spritz" "Vivienne" "Oh My Mahjong" omm "Oh My Mahjong" "www.ohmymahjong.com/pink-quartz-rack-and-pusher-set,www.ohmymahjong.com/tortoise-shell-rack-pusher" "" && python3 comp.py omm "Oh My Mahjong"
+python3 shot.py "Miss Classic Jade" "Festival Jade" "Miss Mahjong" mmj "Miss Mahjong" "missmahjong.com/iridescent-opal-scalloped-acrylic-racks,missmahjong.com/jade-and-brass-acrylic-racks" "" && python3 comp.py mmj "Miss Mahjong"

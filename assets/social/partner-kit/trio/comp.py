@@ -24,6 +24,6 @@ def html(W,H,top,pw,cw,hy,by):
 </body></html>'''
 with sync_playwright() as p:
     b=p.chromium.launch(); pg=b.new_page(viewport={'width':1080,'height':1920},device_scale_factor=1)
-    for nm,(W,H,top,pw,cw,hy,by) in {'story':(1080,1920,640,360,430,250,1650),'post':(1080,1350,350,280,330,50,1170)}.items():
+    for nm,(W,H,top,pw,cw,hy,by) in {'story':(1080,1920,600,400,480,230,1690),'post':(1080,1350,350,280,330,50,1170)}.items():
         open('c.html','w').write(html(W,H,top,pw,cw,hy,by)); pg.set_viewport_size({'width':W,'height':H}); pg.goto('file://'+os.path.abspath('c.html')); pg.wait_for_timeout(900); pg.screenshot(path=f'{OUT}-{nm}.png')
     b.close()
