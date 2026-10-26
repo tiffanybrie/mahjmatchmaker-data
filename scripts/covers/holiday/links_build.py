@@ -12,7 +12,7 @@ S='https://www.mahjmatchmaker.com'
 FYM=S+'/find-your-match'  # planned page: goes live on launch day (Nov 3 proposed, doc 54)
 FAN=['talulah','gatsby','emerald']
 FYM_LIVE=False  # flip to True on 10/27 when /find-your-match goes live (then the card links)
-NEWSET=None  # Oct 26 (Tiffany 12:53am): Papaya Spritz feature card OFF; Find Your Mat-ch leads. Set a tuple again for the next album launch.
+NEWSET=('papaya-spritz','Papaya Spritz','Oh My Mahjong','Our latest album, now available · code MAHJMATCH')  # Oct 26 12:46pm (Tiffany): Find Your Mat-ch FIRST, latest album card SECOND. Swap this tuple on every new album (docs/NEW-ALBUM-CHECKLIST.md).
 # was: ('papaya-spritz','Papaya Spritz','Oh My Mahjong','Our latest album, now available · code MAHJMATCH')  # launch-week feature card (doc 86 step 11)  # album covers fanned on the Find Your Match card (left, right, center)
 def build(img,tgt):
     nw=(f'<a class="nw" href="{S}/{NEWSET[0]}-mahjong-tile-matches"{tgt(S)}><img src="{img("v2/feature-"+NEWSET[0]+".jpg")}" alt="{NEWSET[1]} mahjong tiles" width="448" height="246"><div><span class="new">New</span><b>{NEWSET[1]}<small>{NEWSET[2]} · {NEWSET[3]}</small></b><span style="font-size:26px">›</span></div></a>') if NEWSET else ''
@@ -46,6 +46,8 @@ def build(img,tgt):
 .mml .tx{{flex:1;line-height:1.25}}.mml .tx b{{display:block;font-size:16px}}.mml .tx small{{font-size:13px;opacity:.8}}.mml .ar{{font-size:24px;opacity:.5}}
 .mml .nw{{display:block;border-radius:22px;overflow:hidden;background:#df772f;color:#fff;box-shadow:0 10px 24px rgba(223,119,47,.32);margin:16px 0 4px}}.mml .nw img{{width:100%;height:auto;display:block}}
 .mml .nw div{{padding:12px 16px 14px;display:flex;align-items:center;gap:10px}}.mml .nw .new{{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:#fff;color:#df772f;border-radius:999px;padding:4px 10px;flex:none}}
+/* ShopMy card (Oct 26): same shape as the album card, navy band */
+.mml .nw.sm{{background:#1f3a6b;box-shadow:0 10px 24px rgba(31,58,107,.3);margin-top:12px}}
 .mml .nw b{{font-family:Caprasimo,Georgia,serif;font-weight:400;font-size:26px;flex:1;line-height:1.05}}.mml .nw small{{display:block;font-family:Montserrat,system-ui,sans-serif;font-size:13px;opacity:.95;margin-top:4px}}
 /* Find Your Match: top, biggest card */
 .mml .fym .ph{{width:100%;max-width:340px;height:auto;display:block;margin:10px auto 4px}}
@@ -71,7 +73,6 @@ def build(img,tgt):
 <!-- FIND YOUR MATCH: first and biggest link (Tiffany, Oct 15 6:58pm).
      NOTE: /find-your-match is the PLANNED page. It goes live on launch day (Mahj Matchmaker 2.0, doc 54);
      until then this link would 404, so the page and this link launch together. -->
-{nw}
 <!-- FYM card switches itself to the live link at 9:00am CT Tue Oct 27 (no repaste needed) -->
 <div class="fym" id="mmlFymSoon"><span class="new">Coming 10.27</span>
 <img class="ph" src="{img('v2/fym-phones-oct26.webp')}" width="448" height="432" alt="Find Your Mat-ch on a phone: pick your tiles or your mat, then swipe through matches">
@@ -80,10 +81,11 @@ def build(img,tgt):
 <img class="ph" src="{img('v2/fym-phones-oct26.webp')}" width="448" height="432" alt="Find Your Mat-ch on a phone: pick your tiles or your mat, then swipe through matches">
 <b>Find Your<br>Mat-ch™</b><p>Start with your tiles or your mat, then swipe through the mats and racks that match.</p><span class="go">Start matching ›</span></a>
 <script>(function(){{if(Date.now()>=Date.UTC(2026,9,27,14,0,0)){{var a=document.getElementById('mmlFymSoon'),b=document.getElementById('mmlFymLive');if(a)a.style.display='none';if(b)b.style.display='block';}}}})();</script>
+{nw}
 <div class="code"><div><small>Partner brand discount</small><b>MAHJMATCH</b></div><button type="button" onclick="(navigator.clipboard?navigator.clipboard.writeText('MAHJMATCH'):Promise.reject()).then(()=>{{this.textContent='Copied ✓'}}).catch(()=>{{this.textContent='MAHJMATCH'}})">Copy code</button></div>
 <a class="where" href="{S}/mahjong-discount-codes"{tgt(S)}>See all our partner brands ›</a>
 <a class="where" href="{S}/mahjong-mats"{tgt(S)}>Browse every mat by color in the Mat Gallery ›</a>
-<a class="where" href="https://shopmy.us/shop/mahjmatchmaker" target="_blank" rel="noopener sponsored">Shop my favorite finds on ShopMy ›</a>
+<a class="nw sm" href="https://shopmy.us/shop/mahjmatchmaker" target="_blank" rel="noopener sponsored"><img src="{img('v2/shopmy-finds.jpg')}" alt="Mahjong tables, tablecloths and lamps I love on ShopMy" width="448" height="246"><div><b>Shop My Finds<small>Tables, tablecloths, lamps &amp; more I love · on ShopMy</small></b><span style="font-size:26px">›</span></div></a>
 <a class="feat" href="{S}/holiday-mahjong-matches"{tgt(S)}><div class="hol">{hol}</div><div><b>Holiday Matches 🎄<small>Christmas tiles, mats &amp; racks, matched</small></b><span style="font-size:26px">›</span></div></a>
 <h2>Tile album matches</h2>
 <!-- newest live albums first (see pop.json / build script comment) -->
