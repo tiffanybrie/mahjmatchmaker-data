@@ -56,6 +56,7 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
  36 (Oct 22) rack picks per (set, mat): every pairing = the mat's own picks (config/mat-racks-picks.json) first, then the tile set's
     racks, plus every rack on a structured album card for that pairing; every registry mat/rack resolves; D.lm matches the registry
 """
+import struct
 import sys, os, json, re
 import numpy as np
 from PIL import Image, ImageOps
@@ -888,6 +889,27 @@ try:
             _r = _s.get('rank') or []
             if _ja in _r and (_jb not in _r or _r.index(_jb) != _r.index(_ja) + 1): F.append(f"[78] {_x['nameA']}: side B not right after side A in {_s['name']}"); break
 except Exception as _e: F.append(f"[78] double-sided check did not run: {_e}")
+
+# [80] Oct 26: every visible mat photo m/<n> must sit in a packed chunk the page loads (chunk n//12 listed in MCB and present
+# in <n//12>.webp header). v95_etsy wrote 21 mats into chunk 180 only, so m/2172-2180 fell back to 150px thumbs on cards.
+try:
+    _h80 = open(os.path.join(B, 'index.html')).read()
+    _mcb80 = re.search(r'MCB=new Set\(\[([0-9, ]+)\]\);', _h80)
+    if _mcb80:
+        _set80 = {int(v) for v in _mcb80.group(1).split(',')}; _hdr80 = {}
+        for _k, _m in D['mats'].items():
+            _f = str(_m.get('f', ''))
+            _mm = re.match(r'm/(\d+)\.', _f)
+            if _m.get('hid') or not _mm: continue
+            _c = int(_mm.group(1)) // 12
+            if _c not in _set80: continue
+            if _c not in _hdr80:
+                try:
+                    _raw = open(os.path.join(B, 'mc', f'{_c}.webp'), 'rb').read(); _n = struct.unpack('<I', _raw[-4:])[0]
+                    _hdr80[_c] = json.loads(_raw[-4 - _n:-4])
+                except Exception: _hdr80[_c] = None
+            if _hdr80[_c] is not None and _f not in _hdr80[_c]: F.append(f"[80] {_m.get('n')}: {_f} is not inside packed chunk mc/{_c}.webp (card shows a thumbnail)")
+except Exception as _e: F.append(f"[80] chunk check did not run: {_e}")
 
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
