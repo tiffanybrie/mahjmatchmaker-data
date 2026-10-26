@@ -22,33 +22,37 @@ def wrap(d, text, fnt, maxw):
 
 def makeP(cid, slug, title, tag, kicker, accent, layout, picks):
     c = Image.new('RGBA', (W, H), BG + (255,)); d = ImageDraw.Draw(c)
-    lw = 560; logo = lockup(lw); c.alpha_composite(logo, ((W - lw) // 2, 46))
-    ky = 46 + logo.height + 44
-    d.text((W / 2, ky), ' '.join(kicker.upper()).replace('   ', '      '), font=font(BIT, 28), fill=NAVY, anchor='mm')
-    # title: biggest size whose balanced wrap fits 860px in <= 3 lines
-    for ts in range(132, 70, -4):
-        f = font(CAP, ts); ls = wrap(d, title, f, 860)
-        if len(ls) <= (2 if len(title) < 22 else 3): break
-    y = ky + 40 + ts // 2
+    lw = 500; logo = lockup(lw); c.alpha_composite(logo, ((W - lw) // 2, 40))
+    ky = 40 + logo.height + 34
+    d.text((W / 2, ky), ' '.join(kicker.upper()), font=font(BIT, 24), fill=NAVY, anchor='mm')
+    for ts in range(104, 60, -4):
+        f = font(CAP, ts); ls = wrap(d, title, f, 840)
+        if len(ls) <= 2 or (len(ls) == 3 and ts <= 92): break
+    y = ky + 30 + ts // 2
     for l in ls:
-        d.text((W / 2, y), l, font=f, fill=hexc(accent), anchor='mm'); y += int(ts * 1.0)
-    tf = font(PFI, 40); tl = wrap(d, tag, tf, 800); y += 4
+        d.text((W / 2, y), l, font=f, fill=hexc(accent), anchor='mm'); y += int(ts * .98)
+    tf = font(PFI, 36); tl = wrap(d, tag, tf, 820); y += 2
     for l in tl:
-        d.text((W / 2, y), l, font=tf, fill=INK, anchor='mm'); y += 50
-    top = y + 14; avail = SAFE_BOTTOM - top
-    n = len(picks)
-    if n == 5:
-        hero = min(int(avail * .60), 470); s = min(int(avail * .37), 300)
-        cy = top + avail / 2
-        pos = [(205, top + s * .55, s, -4), (795, top + s * .6, s, 4), (205, SAFE_BOTTOM - s * .55, s, 3), (795, SAFE_BOTTOM - s * .55, s, -3), (500, cy, hero, -1.5)]
-        order = [picks[1], picks[2], picks[3], picks[4], picks[0]]
-    else:   # 6: hero (picks[0]) bigger top-centre-left, 2 columns x 3 rows
-        s = min(int((avail - 20) / 3 * 1.12), 330)
-        rows = [top + s * .52, top + avail / 2, SAFE_BOTTOM - s * .52]
-        pos = [(250, rows[0], s, -4), (750, rows[0], s, 4), (250, rows[1], s, 3), (750, rows[1], s, -3), (250, rows[2], s, -3), (750, rows[2], s, 3)]
-        order = list(picks)
-        if layout == 'tc': order = [picks[1], picks[2], picks[3], picks[4], picks[5], picks[0]]   # hero chair last = on top, but keep grid
-    for p, (cx, cy, sz, r) in zip(order, pos): place(c, card(p, int(sz), r), cx, cy)
+        d.text((W / 2, y), l, font=tf, fill=INK, anchor='mm'); y += 44
+    top = y + 30; bot = SAFE_BOTTOM; zh = bot - top; n = len(picks)
+    # cards fill the whole zone: rows x cols grid, cards overlap slightly, slight tilts
+    if n >= 6: rows, cols = [3, 3], 2; grid = [3, 3]
+    if n >= 6:
+        grid = [3, 3]
+    elif n == 5: grid = [2, 3]
+    else: grid = [n]
+    nr = len(grid); maxc = max(grid)
+    s = min(int(zh / nr * 1.04), int(900 / maxc * 1.02), 360)
+    rowh = (zh - s) / max(nr - 1, 1) if nr > 1 else 0
+    tilts = [-3, 2.5, -2, 3, -2.5, 2, -3, 2]; k = 0
+    for ri, cnt in enumerate(grid):
+        sz = s if cnt == maxc else int(s * 1.18)
+        cy = top + sz / 2 + ri * rowh if nr > 1 else top + zh / 2
+        if cnt != maxc: cy = top + s / 2 + ri * rowh - (sz - s) / 2 * (1 if ri == 0 else -1) * 0
+        span = 900; step = (span - sz) / max(cnt - 1, 1) if cnt > 1 else 0
+        for ci in range(cnt):
+            cx = 500 + (0 if cnt == 1 else -span / 2 + sz / 2 + ci * step)
+            place(c, card(picks[k % n], int(sz), tilts[k % len(tilts)]), cx, cy); k += 1
     os.makedirs(OUTP, exist_ok=True)
     out = OUTP + slug + '.jpg'; c.convert('RGB').save(out, quality=92); return out
 
