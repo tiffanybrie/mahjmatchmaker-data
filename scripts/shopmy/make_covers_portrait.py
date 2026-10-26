@@ -43,7 +43,8 @@ def makeP(cid, slug, title, tag, kicker, accent, layout, picks):
     else: grid = [n]
     nr = len(grid); maxc = max(grid)
     s = min(int(zh / nr * 1.04), int(900 / maxc * 1.02), 360)
-    rowh = (zh - s) / max(nr - 1, 1) if nr > 1 else 0
+    rowh = min((zh - s) / max(nr - 1, 1), s * 1.04) if nr > 1 else 0
+    top += max(0, (zh - (s + rowh * max(nr - 1, 0)))) / 2
     tilts = [-3, 2.5, -2, 3, -2.5, 2, -3, 2]; k = 0
     for ri, cnt in enumerate(grid):
         sz = s if cnt == maxc else int(s * 1.18)

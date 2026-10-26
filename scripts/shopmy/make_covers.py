@@ -101,7 +101,7 @@ COVERS = [
   [96216077, 96226001, 96232169, 96232833, 96216391]),
  (8399777, 'mahjong-gifts', 'Mahjong Gifts', 'for every mahj friend on your list', 'gift guide', '#b3202a', 5,
   [96216286, 96213699, 96217133, 96213080, 96213309]),
- (8398045, 'bam-lets-mahjong', "BAM! Let's Mahjong", 'holly jolly tiles, mat and shufflers', 'holiday shop', '#b3202a', 3,
+ (8398045, 'bam-lets-mahjong', "BAM! Let's Mahjong", 'mats and the tile sets that match', 'brand shop', '#b3202a', 3,
   [96194546, 95959321, 96194521]),
  (8391624, 'betty-june-jeannette', 'Betty June Jeannette', 'dreamy watercolor mahjong mats', 'mat shop', '#e0607e', 5,
   [96114928, 96126037, 96126853, 96126603, 96125859]),
