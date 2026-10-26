@@ -791,6 +791,26 @@ except Exception as _e: F.append(f"[60] rack photo-quality check did not run: {_
 if 'racks(rx,ry,rw,rh,{fs:STORY?23:19,maxRow:rh,rows:true,back:true,below:true})' not in UI:
     F.append("[46] Mood board (tri view) rack labels are not below the racks (below:true)")
 
+# [74] Oct 26 (Tiffany 11:16am, builder/fym_fix_oct25/v96_amazon_holiday.py): partner brands keep preferential order over ShopMy
+# Amazon mats. On every visible Holiday tile set (BACKG Holiday), the first 6 non-pick mats of the colour ranking (s.cr) hold no
+# Amazon mat while a partner holiday mat matches (sits in that set's top 30). Amazon mats carry a go.shopmy.us link, no code claim.
+try:
+    _bg74 = re.search(r'BACKG=(\{.*?\});', UI) or re.search(r'BACKG=(\{.*?\});', open(os.path.join(B, 'index.html')).read())
+    _hol74 = set(json.loads(_bg74.group(1)).get('Holiday', [])) if _bg74 else set()
+    _O74 = D['order']
+    for _s in D['sets']:
+        if _s.get('hid') or _s['name'] not in _hol74 or 'cr' not in _s: continue
+        _pk = {e[0] if isinstance(e, list) else e for e in (_s.get('m') or [])}
+        _cr = [_O74[j] for j in _s['cr'] if not D['mats'][_O74[j]].get('hid')]
+        if not any(D['mats'][k].get('pa') and D['mats'][k].get('hol') for k in _cr[:30]): continue
+        _top = [k for k in _cr if k not in _pk][:6]
+        _am = [D['mats'][k]['n'] for k in _top if D['mats'][k].get('b') == 'Amazon']
+        if _am: F.append(f"[74] {_s['name']}: Amazon mat in the first 6 non-pick places ahead of partner holiday mats: {', '.join(_am)}")
+    for _k, _m in D['mats'].items():
+        if _m.get('b') == 'Amazon' and _m.get('add') == 'oct26-amazon' and not _m.get('hid'):
+            if not str(_m.get('u', '')).startswith('https://go.shopmy.us/') or _m.get('dc') or _m.get('pa'): F.append(f"[74] Amazon mat {_m['n']}: needs her go.shopmy.us link and no code claim")
+except Exception as _e: F.append(f"[74] Amazon partner-order check did not run: {_e}")
+
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
     for b, v in sorted(W.items()): print(f"  {b} ({len(v)}): " + ', '.join(v[:8]) + (' ...' if len(v) > 8 else ''))
