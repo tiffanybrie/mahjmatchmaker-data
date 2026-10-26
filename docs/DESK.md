@@ -53,6 +53,8 @@ Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27, (2) fall content befo
 | Missing swipe-book products (OMM Miracle / Twilight Waltz / Merry Mahjong / Santa Baby; PLM Spirit + Nutcracker; OMM Vault) | Ops → Matches & Catalog | Photos in Chrome → pending queue. | After launch |
 | Papaya Beechwood README | Matches & Catalog | Live since Oct 22; README still says STAGED: mark LIVE next touch. | Next touch |
 
+- **PARTNER FEEDBACK WATCH (Main, Oct 25 9:25pm):** both partner paths tested PASS (docs/PARTNER-FEEDBACK.md). Waiting on Tiffany's OK to create a 3x-daily launch-week watch (10:13/2:13/6:13 ET, Oct 26-31); until then the 6:47am HQ cleanup reads Site/FYM feedback AND must also list Dropbox /Mahj Matchmaker/Partner Photo Swaps and log new rows in docs/PARTNER-FEEDBACK.md.
+
 ## Waiting on Tiffany (only things she can answer now)
 On HQ in this order.
 - **Today:** (0) VIP list (read-only mirror of priority 1); (1) Brownstone Bloom: put the 40 cards in order and Save (order page); (2) reconnect Instagram via Facebook in Planoly (computer, 2 min; Tag people + collabs stay off until then); (3) Planoly Content Marketplace add-on: keep or cancel ($13/mo, trial ends ~Oct 27; reopened tonight from parked).
