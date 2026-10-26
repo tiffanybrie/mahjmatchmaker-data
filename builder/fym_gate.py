@@ -653,6 +653,9 @@ for c_ in ('pink', 'red', 'orange', 'yellow', 'green', 'blue', 'purple', 'neutra
     if c_ == 'tortoise' and _l and _l[0] != 'mm:Hawksbill': F.append(f"[52] Tortoise rack chip does not lead with Middle & Main Hawksbill Heritage ({_RR[_l[0]]['n']})")
 for k, r in _RR.items():
     if re.search(r'santa baby|trust fund', r['n'], re.I) and set(r.get('rf') or []) - {'metallic', 'clear'}: F.append(f"[52] {r['n']} sits in a colour chip {r.get('rf')} (metallic / seasonal only)")
+# [53] Oct 25 (Tiffany 20:03): the mat filter row sits between the tile photo and the mat deck (it filters the mats), like the racks row
+if "<div class=\"rfil mfil\">${filters('m')}</div>${deck('m')}" not in UI or "role=\"listbox\"></div></div>`+filters('m')" in UI:
+    F.append("[53] mat filter row is not between the tile photo and the mat deck")
 # [46] Oct 25 (Tiffany 16:37): Mood board rack labels sit BELOW the racks (whole rack visible)
 if 'racks(rx,ry,rw,rh,{fs:STORY?23:19,maxRow:rh,rows:true,back:true,below:true})' not in UI:
     F.append("[46] Mood board (tri view) rack labels are not below the racks (below:true)")
