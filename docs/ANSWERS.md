@@ -338,3 +338,4 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 - 2026-10-26 14:07 (Matches & Catalog) Tiffany: share image: no fade/gradient, no partial image; crop to just the two (phone + one card), clean.
 - 2026-10-26 14:07 (Matches & Catalog) Tiffany: she times the partner send to Version 1.0 (v96) being LIVE; target ~2:30-2:45. Top priority.
 - 2026-10-26 14:08 (Matches & Catalog) Tiffany: the Mrs Saint Delafield signature image looks awful; sent options A-E (Caveat, Allison, Dancing Script, Great Vibes, Homemade Apple) or her real signature photo.
+- 2026-10-26 14:11 (Matches & Catalog) Tiffany: partner email must say 'sneak peek' (they're the first to see it). Edited: "I'm excited for you to be the first to get a sneak peek at Find Your Mat-ch™, our new matching tool on mahjmatchmaker.com, launching tomorrow, Tuesday, October 27." Bullets now pink ♥ (14:09 ask).
