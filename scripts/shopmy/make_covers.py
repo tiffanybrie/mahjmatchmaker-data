@@ -21,6 +21,8 @@ def hexc(h): h = h.lstrip('#'); return tuple(int(h[i:i+2], 16) for i in (0, 2, 4
 
 # per-pin crop box (fractions l, t, r, b) to cut black bags / packaging
 CROP = {
+    96620708: (0, 0, 1, .80),      # green dice candle: drop the Good Morning America badge
+    97349857: (0, .09, 1, .90),      # Life is Better with Mahjong Friends sweatshirt: drop the 'seafoam' label + shop logo
     96210831: (0, 0, .845, .875),        # pink tiger moon: drop the rolled bag
     96210535: (0, 0, 1, 1),
     96212924: (0, 0, .80, .98),    # Sweet Jojo: drop the black bag

@@ -14,7 +14,7 @@ PICKS = {
  'the-mahjong-house': '27861 27725 27601 30241 29673 28852',
  'mahjong-storage': '14131 29865 30044 04470 04465 04455',
  'merry-mahjong': '16077 26001 32169 32833 16391 20906',
- 'mahjong-gifts': '16286 13699 17133 02354 20713 20708',
+ 'mahjong-gifts': '13699 49857 17133 21234 20708 20563'   # Oct 25 10:07pm: one pillow (Housework Never), sweatshirt, pink tote, Hotel Lobby matchbox duo, BAMS CLUB candle, Origami Owl tile necklace,
  'bam-lets-mahjong': '94546 94603 94625 59321 94505 94516',   # mats on top, matching tile sets below (59321/94505/94516 = BAM's own site photos)
  'betty-june-jeannette': '26037 26853 26603 25859 15115 14757',
  'halloween-mahjong-table': '37389 38653 37516 37993 39262 37822',
