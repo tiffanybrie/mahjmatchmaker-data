@@ -1,0 +1,5 @@
+{"_note": "Tiffany Oct 26 8:50am: Bespoke tile photos on a black background go to white. Same real Bespoke flat-lay photo, black swapped for white (assets/tiles/v94/bespoke-src/towhite.py; only the 2-3px edge band is un-premultiplied off black, tile pixels untouched), fitted to the 1600x700 strip. Bespoke tiles are one-piece, so the body colour (= back colour) shows on every tile, incl. the blank and star tiles. No compositing, no angled tiles (Tiffany 8:52am).",
+ "tiles": {
+  "www.bespokemahjong.com/pearlcream": {"img": "assets/tiles/v94/bespoke-year-of-the-horse-pearl-cream.jpg", "src": "bespokemahjong.com/products/pearlcream image 1 (Untitled_1500x1500px_11b8b61a...png)"},
+  "www.bespokemahjong.com/bespoke-x-corey-paige-color-crush-set-white": {"img": "assets/tiles/v94/bespoke-corey-paige-color-crush-bright-white.jpg", "src": "bespokemahjong.com/products/bespoke-x-corey-paige-color-crush-set-white image 1 (2025LEARNTHECARD...14.png)"}
+ }}
