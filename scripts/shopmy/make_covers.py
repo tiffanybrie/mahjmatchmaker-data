@@ -21,6 +21,10 @@ def hexc(h): h = h.lstrip('#'); return tuple(int(h[i:i+2], 16) for i in (0, 2, 4
 
 # per-pin crop box (fractions l, t, r, b) to cut black bags / packaging
 CROP = {
+    96126037: (.03, .12, .82, .91),      # Positano: blow the mat up (bag + tan margin out)
+    96126853: (0, .02, .82, .98),        # Livy: mat only, bag out
+    96125859: (.13, .10, .72, .92),      # Betty Floral monogram: mat only, bag out
+    96114928: (0, 0, 1, 1),
     96620708: (0, 0, 1, .80),      # green dice candle: drop the Good Morning America badge
     97349857: (0, .09, 1, .90),      # Life is Better with Mahjong Friends sweatshirt: drop the 'seafoam' label + shop logo
     96210831: (0, 0, .845, .875),        # pink tiger moon: drop the rolled bag
@@ -89,9 +93,9 @@ COVERS = [
   [96210831, 96210535, 96212924, 96213709, 96213996, 96216016]),
  (8398036, 'mahj-and-vine', 'Mahj & Vine', 'chinoiserie mats in every color', 'mat shop', '#1f5a3a', 5,
   [95959018, 96195087, 95959071, 95959047, 96195067]),
- (8387635, 'tala-mahj', 'Tala Mahj Favorites', 'my favorite fringe mats', 'mat shop', '#c46a2b', 5,
+ (8387635, 'tala-mahj', 'Tala Mahj Favorites', 'my favorite mats and tile sets', 'mat shop', '#c46a2b', 5,
   [96067421, 96304138, 96067632, 96067718, 96067638]),
- (8398013, 'charleston-mahjong-club', 'Charleston Mahjong Club', 'club mats, bags and totes', 'brand shop', '#054689', 5,
+ (8398013, 'charleston-mahjong-club', 'Charleston Mahjong Club', 'tiles, mats, bags and totes', 'brand shop', '#054689', 5,
   [95958590, 95959013, 95959041, 95958614, 95958946]),
  (8400718, 'omm-love-shack-fancy', 'Oh My Mahjong x LoveShackFancy', 'the coquette collab, all in one place', 'shop the collab', '#e0607e', 5,
   [96227058, 96226860, 96233820, 96227272, 96227121]),
