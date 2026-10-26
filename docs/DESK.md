@@ -128,3 +128,4 @@ Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27 9am CT, (2) fall conte
 - **HQ:** VIP Sunday list archived (Sunday list done through v91; what's left lives on this desk, priority 3); Saturday amounts need archived (Oct 24 closed at $341.65); two needs added (partner email copy, partner watch). Albums: Larkspur/mat swipe-book cards added as Claude building; Deco detail updated.
 
 See CLAUDE.md.
+- OPS (Oct 25 10pm): /links ShopMy card. Replace plain line "Shop my favorite finds on ShopMy ›" with an image card (match the Papaya Spritz card style), probably under Find Your Mat-ch. Mock up first, show Tiffany, then edit via site/livepatch/links-oct20. Also still open: ShopMy shelf reorder, pink lamp B0GD1585QW, Sweet JoJo shelf, Kate & Laurel Celia + Santa/Reindeer mat (JUDFNCDE) to Tables, holiday tag audit, delete old Amazon lists after she sees titles, docs 97/97b, HQ note for the versatile swap.
