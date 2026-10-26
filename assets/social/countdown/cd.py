@@ -10,7 +10,6 @@ H=f'''<html><head><meta charset=utf-8><style>@font-face{{font-family:Cap;src:url
 <div class="c" style="top:322px;font:italic 64px PF;color:#062a55">Tomorrow,</div>
 <div class="c" style="top:405px;font:400 96px/1 Cap;color:#062a55;white-space:nowrap">you become</div><div class="c" style="top:500px;font:400 104px/1 Cap;color:#e0547f;white-space:nowrap">the matchmaker.</div>
 <img src="{PH}" style="position:absolute;left:150px;top:630px;width:720px;left:180px">
-<div class="c" style="top:1330px;font:400 58px Cav;color:#062a55">get a reminder when it&rsquo;s live &darr;</div>
 <div class="c" style="top:1745px;font:700 34px Bit;color:#062a55">mahjmatchmaker.com</div>
 </body></html>'''
 open('cd.html','w').write(H)
