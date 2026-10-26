@@ -35,6 +35,8 @@ for ka, x in SPEC.items():
     nA = f"{x['nameA']} (Side A: {x['sideA']})"
     if A['n'] != nA: A['n'] = nA; renamed += 1
     A['side'] = 'A'; A['twin'] = ka + '#side-b'
+    if not A.get('dn'):  # short card-subtitle name without the side label ("tiles on the <dn> mat"); MAT label keeps n
+        A['dn'] = re.sub(r'\s*\((Double-Sided)\)|^Bespoke x Corey Paige - |\s+Mat$', '', x['nameA']).replace('Grateful Dead x Bespoke Mahjong', 'Grateful Dead').strip()
     kb = ka + '#side-b'
     if kb in M: continue
     im = Image.open(REPO + x['imgB']).convert('RGB'); im.thumbnail((640, 640)); b = io.BytesIO(); im.save(b, 'WEBP', quality=86, method=6)
@@ -54,6 +56,8 @@ for ka, x in SPEC.items():
     if A.get('hid'): o['hid'] = True
     M[kb] = o; D['order'].append(kb); added.append((x['nameA'], x['sideB'], 'holiday' if x['holB'] else 'year-round', fams))
     _, tone, _ = read_image(path); colour_mats[kb] = {'sw': o['ms'], 'tone': tone}; os.remove(path)
+for ka in SPEC:  # side B shares side A's short card name (re-synced every run)
+    if ka in M and ka + '#side-b' in M and M[ka].get('dn'): M[ka + '#side-b']['dn'] = M[ka]['dn']
 # rank: side B right after side A (both lists), else at the end
 ix = {m: j for j, m in enumerate(D['order'])}
 pairs = [(ix[ka], ix[ka + '#side-b']) for ka in SPEC if ka in ix and ka + '#side-b' in ix]
