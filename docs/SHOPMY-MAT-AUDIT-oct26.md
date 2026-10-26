@@ -18,7 +18,7 @@ Asked by Tiffany Oct 26 10:22am ("bring in my Etsy shop mats... at minimum Etsy.
 | (b) Amazon holiday | 48 | grades {'A': 18, 'B': 19, 'C': 11} |
 | Other ShopMy-only mats (not Etsy/Amazon) | 14 | {'photo OK': 6, 'Questionable': 4, 'crop needed': 4} |
 
-Already in (not outstanding): all 11 Sophie Clima Etsy mats + Chinese Landscape (Etsy), 18 BJ&J mats incl. Allie, Benjamin and Hippie Holiday (her Etsy & Amazon Holiday shelf has a second pin of Hippie Holiday), Tala 11, Sweet Jojo Boho Wildflower (Amazon link), Rebecca Rainbow Row. The Etsy Mahjong Mats shelf also holds 10 Sophie Clima **art prints** (not mats, skipped). Two Amazon **tablecloths** on the holiday shelf (Irenare, Hunnmingre) are skipped.
+Already in (not outstanding): all 10 Sophie Clima Etsy mats + Chinese Landscape (Etsy), 18 BJ&J mats incl. Allie, Benjamin and Hippie Holiday (her Etsy & Amazon Holiday shelf has a second pin of Hippie Holiday), Tala 11, Sweet Jojo Boho Wildflower (Amazon link), Rebecca Rainbow Row. The Etsy Mahjong Mats shelf also holds 10 Sophie Clima **art prints** (not mats, skipped). Two Amazon **tablecloths** on the holiday shelf (Irenare, Hunnmingre) are skipped.
 
 Things to know before adding:
 - Most Amazon photos have the carry bag or rolled mat beside the mat: crop-to-mat (config/fym-mat-focus) is needed on almost all of them, not a reason to drop them.
