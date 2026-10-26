@@ -714,6 +714,15 @@ for _k in sorted(_zk):
         _yy, _xx = np.mgrid[:200, :200]; _r = np.hypot(_xx - 99.5, _yy - 99.5); _w = (_a.min(2) > 248)[(_r < 100) & (_r > 80)].mean()
         if _w >= .03: F.append(f"[66] {_t.get('n')}: tile photo doesn't fill the match-card circle ({_w:.0%} white at the edge)")
     except Exception as _e: F.append(f"[66] {_k}: could not check ({_e})")
+# [67] Oct 26 (Tiffany 9:23/9:24am): Mahjong Studios + Splash of Color pulled from FYM; only Splash mats on her own matches stay
+_k67 = {x[0] for s_ in D['sets'] for x in s_.get('m', [])}
+for s_ in D['sets']:
+    if s_.get('maker') in ('Mahjong Studios', 'Splash of Color') and not s_.get('hid'): F.append(f"[67] {s_['maker']} set visible: {s_['name']}")
+for k_, m_ in D['mats'].items():
+    if m_.get('bn') in ('Mahjong Studios', 'Splash of Color') and not m_.get('hid') and k_ not in _k67: F.append(f"[67] {m_['bn']} mat visible (not one of her matches): {m_['n']}")
+for k_, r_ in D['racks'].items():
+    if r_.get('bn') in ('Mahjong Studios', 'Splash of Color') and not r_.get('hid'): F.append(f"[67] {r_['bn']} rack visible: {r_['n']}")
+_ms_pulled = all(s_.get('hid') for s_ in D['sets'] if s_.get('maker') == 'Mahjong Studios')
 # [62] Oct 26 (Tiffany 8:48am, replaces 8:42): Mahjong Studios tile photos follow config/fym-mstudios-oct26.json
 # (keep / white_bg / pile_photo / soon / hide; builder/fym_fix_oct25/v94_mstudios.py); brands whose sets are all
 # 'Photo coming soon' sort last in Shop by brand
@@ -721,6 +730,7 @@ _c62 = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '
 _s62 = {s['tile']: s for s in D['sets']}
 for _k, _v in _c62.items():
     _t = D['tiles'].get(_k); _do = _v['do']
+    if _ms_pulled: break
     if not _t: F.append(f"[62] Mahjong Studios tile missing from the build: {_k}"); continue
     if _do in ('keep', 'white_bg', 'pile_photo') and _t.get('soon'): F.append(f"[62] {_t['n']}: shows Photo coming soon, decided '{_do}'")
     if _do in ('white_bg', 'pile_photo') and _t.get('full') != 't94/ms-' + os.path.basename(_v['img']): F.append(f"[62] {_t['n']}: not using its {_do} photo")
