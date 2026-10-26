@@ -659,6 +659,9 @@ if "<div class=\"rfil mfil\">${filters('m')}</div>${deck('m')}" not in UI or "ro
 # [54] Oct 25 (Tiffany 20:07): the texted / emailed shop list has one block per piece with a blank line between
 if "${L.join('\\n\\n')}" not in UI or "${kind} \\u00b7 ${nm} by ${o.bn}\\n${o.u}" not in UI:
     F.append("[54] 'Text or email me this list' is not one block per piece with blank lines between")
+# [55] Oct 25 (Tiffany 20:02/20:08): the rack deck never locks after picking; a 3rd pick swaps out the older one
+if 'class="rlock"' in UI or "function deck(k){if(k==='r'&&S.rpick.length)return rpickView();" in UI or "const old=S.rpick.shift();" not in UI:
+    F.append("[55] rack deck locks after a pick / no swap on a third pick")
 # [46] Oct 25 (Tiffany 16:37): Mood board rack labels sit BELOW the racks (whole rack visible)
 if 'racks(rx,ry,rw,rh,{fs:STORY?23:19,maxRow:rh,rows:true,back:true,below:true})' not in UI:
     F.append("[46] Mood board (tri view) rack labels are not below the racks (below:true)")
