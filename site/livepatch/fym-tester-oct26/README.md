@@ -27,7 +27,7 @@ Paste method (attended chat, own tab, one Chrome driver): CodeMirror 6 `v.dispat
   2. **How did you start?** Radio, required: `I started with tiles` / `I started with a mat` / `I tried both`
   3. **What did you love?** Textarea, optional.
   4. **Anything confusing or broken?** Textarea, optional. Description: `Tell me what you were doing and what happened.`
-  5. **Any product missing, or a photo that looks off?** Textarea, optional. Description: `Brand + set or mat name helps a lot.`
+  5. **A photo that looks off, or a partner brand product you couldn't find?** Textarea, optional. Description: `Brand + set or mat name helps a lot.`
   6. **Your name** Name field, optional.
   7. **Your email** Email field, optional. Description: `Only if you'd like me to follow up.`
   8. **Version** Hidden field, field name `VERSION`. Filled from the URL `?SQF_VERSION=1.0`.

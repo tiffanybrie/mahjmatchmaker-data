@@ -15,7 +15,7 @@ I've been DYING to show y'all this one. Tonight you get a sneak peek at Find You
 Start with tiles or start with a mat, then swipe ✕ or ♥ through mats and racks from our partner brands. Turn my picks on or off, filter by color, add racks, and save your match card to share.
 
 🛠️ It's a work in progress
-This has truly been a labor of love, and it's brand new, so it's not perfect yet. I would LOVE your feedback! What did you love? What was confusing? A photo that looks off, or a set you couldn't find? There's a quick form on the tester page, and you can send as many notes as you want all week.
+This has truly been a labor of love, and it's brand new, so it's not perfect yet. I would LOVE your feedback! What did you love? What was confusing? A photo that looks off, or a set from one of our partner brands you couldn't find? There's a quick form on the tester page, and you can send as many notes as you want all week.
 
 Did you start with tiles or start with a mat? Tell me in the comments! 👇
 
