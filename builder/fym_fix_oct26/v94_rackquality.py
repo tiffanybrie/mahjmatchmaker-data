@@ -15,6 +15,9 @@ led with a Mahjong Studios white rack):
   - Rule 4 (8:58am, Mahjong Row & Co. Lyla + an MRC mat got Mahjong Studios racks): when the tile set or mat is brand X, X's
     colour-matching racks (rackFits and within 30 dE of the mat) come early: the best 2 sit right after any leading picks (and after a leading white pearl rack on pearl tiles)
     (default suggestions), and get +.3 share in colour chips.
+  - Rule 5 (9:18am): white racks ignore their measured colour (shadows/photography). When the tiles or mat are brand X and X has
+    a white rack (R.wh), X's white rack is #1 in the White chip and is one of the own-brand racks lifted in default suggestions
+    (white first); then white wood / pearl / photo order. Same for CLEAR (9:19am): X's own clear rack #1 in the Clear chip and lifted.
   - Otherwise the photo-quality tie-breaker above. Her picks and universal racks are exempt from all of it.
 Gate [60] (builder/fym_rackquality_check.js). Usage: python3 v94_rackquality.py <build_dir>"""
 import sys, os, json
@@ -38,7 +41,9 @@ n = 0
 for k, r in D['racks'].items():
     r['pq'] = Q[k]['score'] if k in Q else 3; n += k in Q
     t = (r['n'] + ' ' + r.get('u0', '')).lower()
-    r.pop('ww', None); r.pop('wp', None)
+    r.pop('ww', None); r.pop('wp', None); r.pop('wh', None); r.pop('cl', None)
+    if _white(r): r['wh'] = 1
+    if set(r.get('rf') or []) <= {'clear', 'neutral'} and 'clear' in (r.get('rf') or []) and any(w in r['n'].lower() for w in ('clear', 'crystal', 'transparent')) and 'wood' not in t: r['cl'] = 1  # Bird & Bamboo 'Clear' = clear-coat wood  # truly clear (not tinted translucent)
     if _white(r) and any(w in t for w in ('wood', 'beech')): r['ww'] = 1
     if _white(r) and 'pearl' in r['n'].lower(): r['wp'] = 1
 h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]
@@ -47,13 +52,13 @@ if 'const pqk=' not in h:
     h = h.replace(a, a + f"/* v94 photo quality tie-breaker + Mahjong Studios last + white wood / pearl lead (Tiffany Oct 26 8:29, 8:50am) */const pqk=r=>hr.includes(r)||U.includes(r)?0:(5-(R[r].pq||3))*{K_LAB}+(rkMS(r)?1e6:0)-(rkW(r)===2?18:6*rkW(r));", 1)
     a = "function rackPool(){"; assert h.count(a) == 1
     h = h.replace(a, "const ownB=()=>[set().maker,(D.tiles[set().tile]||{}).bn,(M[S.fav]||{}).bn];const rkMS=r=>R[r].bn==='Mahjong Studios'&&!ownB().includes('Mahjong Studios');const rkW=r=>R[r].wp&&R[r].pq>=3&&/pearl/i.test(set().name)?2:R[r].ww&&R[r].pq>=4?1:0;"
-                  "/* rule 4: own-brand matching racks early */const ownLift=(L,hr,U,sc)=>{const B=ownB(),mine=r=>hr.includes(r)||U.includes(r);const own=L.filter(r=>!mine(r)&&B.includes(R[r].bn)&&rackFits(r)&&sc(r)<=30).slice(0,2);if(!own.length)return L;const rest=L.filter(r=>!own.includes(r));let p=0;while(p<rest.length&&mine(rest[p]))p++;if(p<rest.length&&rkW(rest[p])===2)p++;return [...rest.slice(0,p),...own,...rest.slice(p)];};" + a, 1)
+                  "/* rule 4: own-brand matching racks early */const ownLift=(L,hr,U,sc)=>{const B=ownB(),mine=r=>hr.includes(r)||U.includes(r);const wc=r=>R[r].wh||R[r].cl;const ow=L.filter(r=>!mine(r)&&B.includes(R[r].bn)&&(wc(r)||rackFits(r)&&sc(r)<=30));const own=[...ow.filter(wc),...ow.filter(r=>!wc(r))].slice(0,2);if(!own.length)return L;const rest=L.filter(r=>!own.includes(r));let p=0;while(p<rest.length&&mine(rest[p]))p++;if(p<rest.length&&rkW(rest[p])===2)p++;return [...rest.slice(0,p),...own,...rest.slice(p)];};" + a, 1)
     a = "return [...new Set([...hr,...U,...Object.keys(R).filter(rackOK)])].filter(r=>R[r]).map(r=>[sc(r)+pen(r),r]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);"; assert h.count(a) == 1
     h = h.replace(a, "return ownLift(" + a[7:-1] + ",hr,U,sc);", 1)
     a = "return [...new Set([...hr,...U,...rest])];"; assert h.count(a) == 1
     h = h.replace(a, "return ownLift([...new Set([...hr,...U,...rest])],hr,U,sc);", 1)
     a = ".map(r=>[sc(r)+pen(r),r])"; assert h.count(a) == 2; h = h.replace(a, ".map(r=>[sc(r)+pen(r)+pqk(r),r])")
     a = "const rk=r=>-((R[r].rs||{})[c]||0);"; assert h.count(a) == 1
-    h = h.replace(a, f"const rk=r=>-(((R[r].rs||{{}})[c]||0)+(hr.includes(r)?0:{K_RS}*((R[r].pq||3)-3)-(rkMS(r)?100:0)+(c==='neutral'?[0,.25,.8][rkW(r)]:0)+(ownB().includes(R[r].bn)?.3:0)));", 1)
+    h = h.replace(a, f"const rk=r=>-(((R[r].rs||{{}})[c]||0)+(hr.includes(r)?0:{K_RS}*((R[r].pq||3)-3)-(rkMS(r)?100:0)+(c==='neutral'?[0,.25,.8][rkW(r)]:0)+(ownB().includes(R[r].bn)?((c==='neutral'&&R[r].wh)||(c==='clear'&&R[r].cl)?5:.3):0)));", 1)
 open(P, 'w').write(h)
-print(f"rack photo quality: {n} racks scored from config, {len(D['racks'])-n} default 3; white wood: " + ', '.join(r['n'] for r in D['racks'].values() if r.get('ww')) + '; white pearl: ' + ', '.join(r['n'] for r in D['racks'].values() if r.get('wp')))
+print('clear: ' + ', '.join(r['n'] for r in D['racks'].values() if r.get('cl') and not r.get('hid'))); print(f"rack photo quality: {n} racks scored from config, {len(D['racks'])-n} default 3; white wood: " + ', '.join(r['n'] for r in D['racks'].values() if r.get('ww')) + '; white pearl: ' + ', '.join(r['n'] for r in D['racks'].values() if r.get('wp')))
