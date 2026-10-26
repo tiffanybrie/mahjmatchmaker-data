@@ -417,7 +417,7 @@ XROWS = json.load(open(P('config/mat-gallery-extra-rows.json')))['rows']
 IMGB = {}
 for a in XROWS:
     if a['img'] in RMI or a['brand'] in RMB: continue
-    vis.append(dict(img=a['img'], key=a['key'], name=a['name'], raw=a['name'], brand=a['brand'], url=a['url'], ret=0, code=a.get('code', ''), old=a['secs'][0], secs=v5(a['img'], list(a['secs'])), xrow=1))
+    vis.append(dict(img=a['img'], key=a['key'], name=a['name'], raw=a['name'], brand=a['brand'], url=a['url'], ret=0, code=a.get('code', ''), old=a['secs'][0], secs=v5(a['img'], list(a['secs'])), xrow=1, eye=a.get('eye', 0)))
     IMGB[a['img']] = a['img_commit']
 
 # ---------- v5: retired additions (another agent's audit, retired_additions_oct20.json): Holy Mahj + Queen Bee new rows (stopgap
@@ -485,7 +485,7 @@ NEIGH = {'purple': ('pink', 'blue'), 'pink': ('purple', 'red', 'orange'), 'blue'
          'earthy': ('red', 'orange', 'yellow'), 'neutral': ('orange', 'yellow', 'pink'), 'dark': (), 'bw': ()}
 also_log = {}
 for x in vis:
-    if x['img'] in TCALLED or x.get('new53') or x['secs'] == ['holiday']:
+    if x['img'] in TCALLED or x.get('new53') or x.get('eye') or x['secs'] == ['holiday']:  # eye: Oct 26 sync rows tagged by Claude's photo review (like new53)
         continue
     # spot check (30 promotions by eye): neighbouring hues of the primary are where the measurement misreads (violet->blue,
     # lavender->pink, rust leather->red, peach cream->orange), so those stay accents (tier 3), never also-colors

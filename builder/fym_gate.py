@@ -1052,10 +1052,15 @@ if not _pre97:
 try:
     import unicodedata as _ud90
     _nz = lambda x: re.sub(r'[^a-z0-9]', '', ''.join(c for c in _ud90.normalize('NFD', str(x or '')) if not _ud90.combining(c)).lower())
-    _nu = lambda u: re.sub(r'^https?://(www\.)?', '', str(u or '').split('?')[0].split('#')[0]).rstrip('/').replace('/products/', '/')
+    import urllib.parse as _up90
+    def _nu(u):  # Oct 26 fix: a /discount/CODE?redirect=/products/x link is keyed by its redirect product (it used to collapse to the brand's discount URL and match any row of that brand)
+        u = str(u or '')
+        if '/discount/' in u and 'redirect=' in u:
+            u = re.sub(r'^(https?://[^/]+).*$', r'\1', u) + _up90.unquote(u.split('redirect=', 1)[1].split('&')[0])
+        return re.sub(r'^https?://(www\.)?', '', u.split('?')[0].split('#')[0]).rstrip('/').replace('/products/', '/')
     _XR = json.load(open(REPO + 'config/mat-gallery-extra-rows.json'))['rows']
     _GK = {GKEY(r[0]) for r in _G}; _GU = {_nu(r[3]) for r in _G}; _GN = {_nz(r[1]) + '|' + _nz(r[2]) for r in _G}
-    _XK = {a['key'] for a in _XR}; _XU = {_nu(a.get('u')) for a in _XR if a.get('u')}
+    _XK = {a['key'] for a in _XR}; _XU = {_nu(a.get('url') or a.get('u')) for a in _XR if a.get('url') or a.get('u')}
     _miss90, _stale90 = [], []
     for _k, _m in M.items():
         if _m.get('hid') or '#side-b' in _k: continue
