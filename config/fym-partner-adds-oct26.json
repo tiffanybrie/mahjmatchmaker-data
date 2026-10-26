@@ -1,0 +1,15 @@
+{"_note": "Oct 26 partner-email check (docs/PARTNER-EMAIL-CHECK-oct26.md, Tiffany 8:38am: every partner must be in the app). Real brand photos only. Fait à Main = partner (UpPromote approved Oct 20) with no affiliate link/code yet: plain product links, no code claim (pa false) until HQ 'Fait à Main link + code' is answered. Skipped: Fait à Main Round Top Mon Amour (only photos are corner close-ups with racks/tiles), L'Été Indien Voyage (19.5in travel mat), both Fait à Main racks (only shot on mats), Mini Mahjer (whole line is mini/travel size), Splash of Color tiles (Tiffany Oct 23: do not add) and racks (lifestyle composite photos with props/text).",
+ "tiles": [
+  {"key": "mahjongco.com/kaleidoscope-mahjong-tiles", "name": "Kaleidoscope", "brand": "Mahjong Co.", "handle": "kaleidoscope-mahjong-tiles",
+   "u": "https://mahjongco.com/products/kaleidoscope-mahjong-tiles?sca_ref=10562574.vUD4JwHzITqzZp4", "u0": "https://mahjongco.com/products/kaleidoscope-mahjong-tiles",
+   "dc": "https://mahjmatchmaker.com/mahjong-co-discount-code", "pa": true, "img": "assets/tiles/v94/mahjong-co-kaleidoscope.jpg", "tc": "#e0479e", "group": "Pink"}
+ ],
+ "mats": [
+  {"handle": "saint-remy-mat", "name": "Saint-Rémy", "img": "assets/mats/v94-fam/saint-remy.jpg", "colors": ["dark", "blue"]},
+  {"handle": "le-madeline", "name": "Le Madeline", "img": "assets/mats/v94-fam/le-madeline.jpg", "colors": ["yellow", "pink"]},
+  {"handle": "automne-provencal", "name": "Automne Provençal", "img": "assets/mats/v94-fam/automne-provencal.jpg", "colors": ["orange", "blue", "neutral"]},
+  {"handle": "le-drip-mat-summer-colors", "name": "Le Drip Summer Colors", "img": "assets/mats/v94-fam/le-drip-summer-colors.jpg", "colors": ["pink", "orange", "yellow", "neutral"]},
+  {"handle": "le-ete-indien-studio-print-no-1", "name": "L'Été Indien Studio Print No. 1", "img": "assets/mats/v94-fam/studio-print-no-1.jpg", "colors": ["dark", "pink"]},
+  {"handle": "texas-mon-amour-mat-peach", "name": "Texas Mon Amour Peach", "img": "assets/mats/v94-fam/texas-mon-amour-peach.jpg", "colors": ["orange", "purple"]},
+  {"handle": "texas-mon-amour-mat", "name": "Texas Mon Amour Cream", "img": "assets/mats/v94-fam/texas-mon-amour-cream.jpg", "colors": ["neutral", "red", "blue"]}
+ ]}

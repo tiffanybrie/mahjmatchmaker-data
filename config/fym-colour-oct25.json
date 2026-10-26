@@ -34740,6 +34740,225 @@
 ]
 ],
 "tone": "muted"
+},
+"faitamainstudio.com/saint-remy-mat": {
+"sw": [
+[
+"#4c3336",
+0.352
+],
+[
+"#8cb7d8",
+0.174
+],
+[
+"#9c8d8a",
+0.148
+],
+[
+"#6f5b5a",
+0.093
+],
+[
+"#8199b2",
+0.091
+],
+[
+"#676c7d",
+0.07
+],
+[
+"#89a4a3",
+0.054
+]
+],
+"tone": "muted"
+},
+"faitamainstudio.com/le-madeline": {
+"sw": [
+[
+"#e4bf7c",
+0.392
+],
+[
+"#dcbd80",
+0.333
+],
+[
+"#b9af7b",
+0.095
+],
+[
+"#f2f0d3",
+0.072
+],
+[
+"#dba975",
+0.04
+]
+],
+"tone": "muted"
+},
+"faitamainstudio.com/automne-provencal": {
+"sw": [
+[
+"#87b1d3",
+0.277
+],
+[
+"#f1f3d9",
+0.193
+],
+[
+"#f4775d",
+0.172
+],
+[
+"#dd7d6f",
+0.114
+],
+[
+"#cd8b86",
+0.107
+],
+[
+"#ae9eaa",
+0.06
+],
+[
+"#a8b18e",
+0.053
+]
+],
+"tone": "pastel"
+},
+"faitamainstudio.com/le-drip-mat-summer-colors": {
+"sw": [
+[
+"#dad8d1",
+0.325
+],
+[
+"#b26d46",
+0.236
+],
+[
+"#d38da4",
+0.123
+],
+[
+"#d96776",
+0.102
+],
+[
+"#e1be6c",
+0.077
+],
+[
+"#eb883c",
+0.051
+],
+[
+"#db4441",
+0.043
+],
+[
+"#7b9b5b",
+0.042
+]
+],
+"tone": "muted"
+},
+"faitamainstudio.com/le-ete-indien-studio-print-no-1": {
+"sw": [
+[
+"#c3898a",
+0.198
+],
+[
+"#7e4727",
+0.185
+],
+[
+"#8f5840",
+0.161
+],
+[
+"#a26a5a",
+0.131
+],
+[
+"#b37a73",
+0.116
+],
+[
+"#a77b67",
+0.075
+],
+[
+"#b8897f",
+0.073
+],
+[
+"#976a4f",
+0.059
+]
+],
+"tone": "muted"
+},
+"faitamainstudio.com/texas-mon-amour-mat-peach": {
+"sw": [
+[
+"#e58763",
+0.432
+],
+[
+"#e28c6d",
+0.199
+],
+[
+"#dd907b",
+0.115
+],
+[
+"#d8978c",
+0.097
+],
+[
+"#d3a1a2",
+0.072
+],
+[
+"#c5797a",
+0.04
+]
+],
+"tone": "bright"
+},
+"faitamainstudio.com/texas-mon-amour-mat": {
+"sw": [
+[
+"#fcefd0",
+0.521
+],
+[
+"#e7e8d3",
+0.168
+],
+[
+"#d2e1d7",
+0.138
+],
+[
+"#b5d8dd",
+0.087
+],
+[
+"#e9c9ab",
+0.035
+]
+],
+"tone": "pastel"
 }
 },
 "sets": {
@@ -44938,6 +45157,37 @@
 "tone": null,
 "src": "photo",
 "back": null
+},
+"mahjong-co-kaleidoscope": {
+"sw": [
+[
+"#dd52a4",
+0.306
+],
+[
+"#cad6e1",
+0.303
+],
+[
+"#c7b9d6",
+0.153
+],
+[
+"#9d8dbb",
+0.107
+],
+[
+"#d3acb0",
+0.068
+],
+[
+"#8dcab2",
+0.062
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#e0479e"
 }
 }
 }
