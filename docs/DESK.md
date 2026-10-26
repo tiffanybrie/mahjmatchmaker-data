@@ -37,7 +37,7 @@ Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27 9am CT, (2) fall conte
 | Tile images (Hummingbird, Bam Bird mock-up) | Matches & Catalog | Hummingbird under the logo bar, smaller, off the racks; Bam Bird per its mock-up (her screenshot). | This week |
 | Malachite + Kingfisher | Matches & Catalog | Kingfisher (Needlepoint Clubhouse) via nonpartner_allow.json; racks Miss Mahjong Jade, PLM Oak, Bam Bird Indigo; Scream Queens = no. Ships with the Miss Classic restock (week of Nov 3). | This week |
 | Green Light Gatsby round 2 | Tiffany → Matches & Catalog | Round 2 (26 mats) open in the book (HQ This week); her hearts + round 1's 32 yes → cards. Tiles & Tablescapes recs get added from the Ops scan. | After launch |
-| Thin albums quick-spot pages | Matches & Catalog | Cards from her 78-mat hearts, same style for the rest (bigger tile photo). | After launch |
+| Thin albums: her 41 hearts -> match cards | Matches & Catalog | OVERDUE (her Oct 26 8:01am: picked a week ago, never added). 41 yes votes in artifact UQy4YpGD2RR5Z1WqswJWYM db 'votes' (9 albums). Build cards (tiles + mat + her album racks), append to each album page (Ops pastes), then the quick-spot style for the remaining thin albums. | Mon Oct 26 |
 | Standing tile set audit | Matches & Catalog | `python3 builder/fym_tile_audit.py`; v87/v88 added Bespoke 19, Tala, ~28 tiles, 17 mats, 13 racks (docs/catalog-audit-oct25.md). Re-run after v92. | Wed |
 | Bam Bird spike check fix | Main | Flag on ORDER COUNT (5+ or 2x 14-day avg) + release calendar in the 3x sales task. | This week |
 | YOLO Mahjong affiliate approval | Main | Confirm the approval email, then onboarding (page, hub, logo, FYM, indexing, IG follow/favorite). Check ANSWERS before asking anything. | This week |
