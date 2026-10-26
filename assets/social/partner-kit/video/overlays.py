@@ -1,7 +1,7 @@
 import sys,json,os
 from playwright.sync_api import sync_playwright
 F='file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/'
-brand=sys.argv[1]; labels=json.loads(sys.argv[2])
+brand=sys.argv[1]; labels=json.loads(sys.argv[2]); OT=sys.argv[3] if len(sys.argv)>3 else 'Swipe your own match'; SUB=sys.argv[4] if len(sys.argv)>4 else 'with '+brand
 CSS=f'''@font-face{{font-family:Cap;src:url({F}Caprasimo.ttf)}}@font-face{{font-family:Bit;src:url({F}bitter-latin-700-normal.woff2);font-weight:700}}
 @font-face{{font-family:PF;src:url({F}playfair-display-latin-400-italic.woff2);font-style:italic}}*{{margin:0;box-sizing:border-box}}html,body{{background:transparent}}'''
 def shot(pg,html,out,w=1080,h=1920,transparent=True):
@@ -15,7 +15,7 @@ with sync_playwright() as p:
     shot(pg,f'''<div style="position:absolute;inset:0;background:#faf3ea"></div>
 <div style="position:absolute;left:0;right:0;top:700px;text-align:center"><span style="display:inline-block;background:#062a55;color:#fff;font:700 32px Bit;letter-spacing:7px;padding:13px 34px;border-radius:50px">HOW IT WORKS</span></div>
 <div style="position:absolute;left:0;right:0;top:790px;text-align:center;font:400 104px/1.05 Cap;color:#062a55">Find Your<br>Mat-ch&trade;</div>
-<div style="position:absolute;left:0;right:0;top:1030px;text-align:center;font:italic 50px/1.3 PF;color:#c8325f">with {brand}</div>''','intro.png',transparent=False)
-    shot(pg,'''<div style="position:absolute;left:0;right:0;top:1700px;text-align:center"><div style="font:400 56px Cap;color:#062a55">Swipe your own match</div><div style="font:700 36px Bit;color:#c8325f;margin-top:14px">mahjmatchmaker.com/find-your-match</div></div>''','outro.png')
+<div style="position:absolute;left:0;right:0;top:1030px;text-align:center;font:italic 50px/1.3 PF;color:#c8325f">{SUB}</div>''','intro.png',transparent=False)
+    shot(pg,'''<div style="position:absolute;left:0;right:0;top:1700px;text-align:center"><div style="font:400 56px Cap;color:#062a55">'''+OT+'''</div><div style="font:700 36px Bit;color:#c8325f;margin-top:14px">mahjmatchmaker.com/find-your-match</div></div>''','outro.png')
     b.close()
 os.remove('_o.html')
