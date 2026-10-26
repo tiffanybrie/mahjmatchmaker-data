@@ -763,6 +763,7 @@ for _k in _c73['racks']:
     if _k in D['racks'] and not D['racks'][_k].get('hid') and 's95' not in str(D['racks'][_k].get('im', '')): F.append(f"[73] {D['racks'][_k]['n']}: still shows its stacked-racks photo (draws tiny on cards)")
 for _k in _c73.get('hide', {}):
     if _k in D['racks'] and not D['racks'][_k].get('hid'): F.append(f"[73] {D['racks'][_k]['n']}: should be hidden (no usable single-rack photo)")
+_v96pq79 = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-rack-clean-oct26.json')))['pq']
 # [79] Oct 26 (Tiffany 11:35 + 11:39; QA v95): single-rack recuts show (Iridescent Opal = one rack, no white box) and the
 # by-eye photo-quality scores are applied (config/fym-rack-recut-oct26.json, config/fym-rack-pq-oct26.json, v95_rackphotos.py)
 _c79 = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-rack-recut-oct26.json')))['racks']
@@ -770,6 +771,7 @@ _q79 = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '
 for _k in _c79:
     if _k in D['racks'] and not D['racks'][_k].get('hid') and not str(D['racks'][_k].get('im', '')).endswith('q95'): F.append(f"[79] {D['racks'][_k]['n']}: still shows its old rack photo (recut not applied)")
 for _k, _v in _q79.items():
+    if _k in _v96pq79 and '/*v96 poor photo never leads*/' in open(os.path.join(B, 'index.html')).read(): continue  # v96 re-scored (config/fym-rack-clean-oct26.json, gate [81])
     if _k in D['racks'] and D['racks'][_k].get('pq') != _v['pq']: F.append(f"[79] {D['racks'][_k]['n']}: photo score {D['racks'][_k].get('pq')} != by-eye {_v['pq']}")
 # [67] Oct 26 (Tiffany 9:23/9:24am): Mahjong Studios + Splash of Color pulled from FYM; only Splash mats on her own matches stay
 _k67 = {x[0] for s_ in D['sets'] for x in s_.get('m', [])}
