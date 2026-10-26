@@ -1,0 +1,247 @@
+{
+ "note": "Tiffany Oct 26 8:48am: every YMI tile set gets the faces|backs split like Aloha. Backs = real flat face-on YMI photos (8:52 rule). Built by scratchpad ymi/split.py + special.py (copied to assets/tiles/v94/ymi-build/); gate [63].",
+ "unsoon": [
+  "www.ymimports.com/us-am009-a"
+ ],
+ "splits": {
+  "www.ymimports.com/tc-at001-a": {
+   "name": "Oceana",
+   "img": "assets/tiles/v94/ymi-oceana-split.jpg",
+   "src": "YMI img 3 faces tray | img 4 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/tc-at001-a"
+  },
+  "www.ymimports.com/tc-at002-a": {
+   "name": "Toucan",
+   "img": "assets/tiles/v94/ymi-toucan-split.jpg",
+   "src": "YMI img 3 faces tray | img 4 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/tc-at002-a"
+  },
+  "www.ymimports.com/us-at402-b": {
+   "name": "Easy Reader",
+   "img": "assets/tiles/v94/ymi-easy-reader-split.jpg",
+   "src": "YMI img 3 faces tray | img 4 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/us-at402-b"
+  },
+  "www.ymimports.com/tc-at007-a": {
+   "name": "Panda",
+   "img": "assets/tiles/v94/ymi-panda-split.jpg",
+   "src": "YMI img 3 faces tray | img 4 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/tc-at007-a"
+  },
+  "www.ymimports.com/us-at028-a": {
+   "name": "God of Fortune",
+   "img": "assets/tiles/v94/ymi-god-of-fortune-split.jpg",
+   "src": "YMI img 3 faces tray | img 4 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/us-at028-a"
+  },
+  "www.ymimports.com/us-at020-b": {
+   "name": "Jet Set",
+   "img": "assets/tiles/v94/ymi-jet-set-split.jpg",
+   "src": "YMI img 4 faces tray | img 5 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/us-at020-b"
+  },
+  "www.ymimports.com/hb-at002-a": {
+   "name": "Outlaws of the Marsh Mahjong Treasure Set",
+   "img": "assets/tiles/v94/ymi-outlaws-of-the-marsh-mahjong-treasure-se-split.jpg",
+   "src": "YMI only has 500px photos: face tile | back tile from img 0 (low-res, flag)",
+   "product": "https://www.ymimports.com/products/hb-at002-a"
+  },
+  "www.ymimports.com/us-at031-a": {
+   "name": "Chinoise",
+   "img": "assets/tiles/v94/ymi-chinoise-split.jpg",
+   "src": "YMI img 4 faces tray | img 5 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/us-at031-a"
+  },
+  "www.ymimports.com/fx-at002-a": {
+   "name": "Huntington",
+   "img": "assets/tiles/v94/ymi-huntington-split.jpg",
+   "src": "YMI img 4 faces tray | img 5 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/fx-at002-a"
+  },
+  "www.ymimports.com/tc-at005-a": {
+   "name": "Papillon",
+   "img": "assets/tiles/v94/ymi-papillon-split.jpg",
+   "src": "YMI img 3 faces tray | img 4 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/tc-at005-a"
+  },
+  "www.ymimports.com/tc-at006-a": {
+   "name": "Sakura",
+   "img": "assets/tiles/v94/ymi-sakura-split.jpg",
+   "src": "YMI img 3 faces tray | img 4 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/tc-at006-a"
+  },
+  "www.ymimports.com/fx-at001-a": {
+   "name": "Pepper",
+   "img": "assets/tiles/v94/ymi-pepper-split.jpg",
+   "src": "YMI img 4 faces tray | img 5 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/fx-at001-a"
+  },
+  "www.ymimports.com/fx-at003-a": {
+   "name": "Pattaya",
+   "img": "assets/tiles/v94/ymi-pattaya-split.jpg",
+   "src": "YMI img 4 faces tray | img 5 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/fx-at003-a"
+  },
+  "www.ymimports.com/tc-at003-a": {
+   "name": "Peony",
+   "img": "assets/tiles/v94/ymi-peony-split.jpg",
+   "src": "YMI img 3 faces tray | img 4 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/tc-at003-a"
+  },
+  "www.ymimports.com/tc-at004-a": {
+   "name": "Koi",
+   "img": "assets/tiles/v94/ymi-koi-split.jpg",
+   "src": "YMI img 3 faces tray | img 4 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/tc-at004-a"
+  },
+  "www.ymimports.com/us-at024-a": {
+   "name": "Pink Sparkles",
+   "img": "assets/tiles/v94/ymi-pink-sparkles-split.jpg",
+   "src": "YMI img 3 faces tray | img 4 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/us-at024-a"
+  },
+  "www.ymimports.com/us-at021-c": {
+   "name": "Little Bird",
+   "img": "assets/tiles/v94/ymi-little-bird-split.jpg",
+   "src": "YMI img 4 faces tray | img 5 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/us-at021-c"
+  },
+  "www.ymimports.com/us-at007-a": {
+   "name": "The Classic",
+   "img": "assets/tiles/v94/ymi-the-classic-split.jpg",
+   "src": "YMI img 4 faces tray | img 5 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/us-at007-a"
+  },
+  "www.ymimports.com/us-at022-a": {
+   "name": "Golden Fortune",
+   "img": "assets/tiles/v94/ymi-golden-fortune-split.jpg",
+   "src": "YMI img 4 faces tray | img 5 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/us-at022-a"
+  },
+  "www.ymimports.com/tc-af010-a": {
+   "name": "Aloha",
+   "img": "assets/tiles/v94/ymi-aloha-split.jpg",
+   "src": "YMI img 5 faces | img 6 backs (made in v94_soonlast)"
+  },
+  "www.ymimports.com/tc-af009-a": {
+   "name": "Atlantica",
+   "img": "assets/tiles/v94/ymi-atlantica-split.jpg",
+   "src": "YMI img 6 faces tray | img 7 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/tc-af009-a"
+  },
+  "www.ymimports.com/fx-am021-a": {
+   "name": "Canyon Clay",
+   "img": "assets/tiles/v94/ymi-canyon-clay-split.jpg",
+   "src": "faces tray (img 6) | single flat back tile from YMI joker/side/back shot (img 5); no backs tray on YMI",
+   "product": "https://www.ymimports.com/products/fx-am021-a"
+  },
+  "www.ymimports.com/us-af033-a": {
+   "name": "Celestial Harmony",
+   "img": "assets/tiles/v94/ymi-celestial-harmony-split.jpg",
+   "src": "YMI img 6 faces tray | img 7 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/us-af033-a"
+  },
+  "www.ymimports.com/us-af032-a": {
+   "name": "Chinoise II",
+   "img": "assets/tiles/v94/ymi-chinoise-ii-split.jpg",
+   "src": "YMI img 6 faces tray | img 7 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/us-af032-a"
+  },
+  "www.ymimports.com/us-am001-h": {
+   "name": "Classic Luxe",
+   "img": "assets/tiles/v94/ymi-classic-luxe-split.jpg",
+   "src": "YMI img 6 faces tray | img 7 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/us-am001-h"
+  },
+  "www.ymimports.com/us-am008-a": {
+   "name": "Classic Royale II",
+   "img": "assets/tiles/v94/ymi-classic-royale-ii-split.jpg",
+   "src": "YMI img 6 faces tray | img 7 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/us-am008-a"
+  },
+  "www.ymimports.com/fx-am010-a": {
+   "name": "Harbor Mint",
+   "img": "assets/tiles/v94/ymi-harbor-mint-split.jpg",
+   "src": "YMI img 6 faces tray | img 7 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/fx-am010-a"
+  },
+  "www.ymimports.com/fx-am018-a": {
+   "name": "Harbor Snow",
+   "img": "assets/tiles/v94/ymi-harbor-snow-split.jpg",
+   "src": "YMI img 6 faces tray | img 7 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/fx-am018-a"
+  },
+  "www.ymimports.com/fx-am009-a": {
+   "name": "Harbor Tide",
+   "img": "assets/tiles/v94/ymi-harbor-tide-split.jpg",
+   "src": "YMI img 6 faces tray | img 7 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/fx-am009-a"
+  },
+  "www.ymimports.com/us-am011-a": {
+   "name": "Heather",
+   "img": "assets/tiles/v94/ymi-heather-split.jpg",
+   "src": "YMI img 6 faces tray | img 7 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/us-am011-a"
+  },
+  "www.ymimports.com/fx-am027-a": {
+   "name": "Indigo Bay",
+   "img": "assets/tiles/v94/ymi-indigo-bay-split.jpg",
+   "src": "YMI img 6 faces tray | img 7 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/fx-am027-a"
+  },
+  "www.ymimports.com/fx-am012-a": {
+   "name": "Indigo Tides",
+   "img": "assets/tiles/v94/ymi-indigo-tides-split.jpg",
+   "src": "YMI img 6 faces tray | img 7 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/fx-am012-a"
+  },
+  "www.ymimports.com/fx-am016-a": {
+   "name": "Jade Horizon",
+   "img": "assets/tiles/v94/ymi-jade-horizon-split.jpg",
+   "src": "YMI img 6 faces tray | img 7 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/fx-am016-a"
+  },
+  "www.ymimports.com/us-am009-a": {
+   "name": "Mojave",
+   "img": "assets/tiles/v94/ymi-mojave-split.jpg",
+   "src": "YMI img 6 faces tray | img 7 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/us-am009-a"
+  },
+  "www.ymimports.com/us-af035-a": {
+   "name": "Peony Blush",
+   "img": "assets/tiles/v94/ymi-peony-blush-split.jpg",
+   "src": "YMI img 6 faces tray | img 7 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/us-af035-a"
+  },
+  "www.ymimports.com/fx-am015-a": {
+   "name": "Rosehill",
+   "img": "assets/tiles/v94/ymi-rosehill-split.jpg",
+   "src": "YMI img 6 faces tray | img 7 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/fx-am015-a"
+  },
+  "www.ymimports.com/fx-am020-a": {
+   "name": "Sakura Pink",
+   "img": "assets/tiles/v94/ymi-sakura-pink-split.jpg",
+   "src": "YMI img 6 faces tray | img 7 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/fx-am020-a"
+  },
+  "www.ymimports.com/fx-am011-a": {
+   "name": "Seabreeze",
+   "img": "assets/tiles/v94/ymi-seabreeze-split.jpg",
+   "src": "YMI img 6 faces tray | img 7 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/fx-am011-a"
+  },
+  "www.ymimports.com/fx-am024-a": {
+   "name": "Verdant Spring",
+   "img": "assets/tiles/v94/ymi-verdant-spring-split.jpg",
+   "src": "YMI img 6 faces tray | img 7 backs tray (flat, face-on)",
+   "product": "https://www.ymimports.com/products/fx-am024-a"
+  }
+ },
+ "soon": [
+  "www.ymimports.com/fx-am022-a",
+  "www.ymimports.com/fx-am019-a",
+  "www.ymimports.com/fx-am014-a"
+ ],
+ "soon_note": "Tiffany 8:56am: Ivory Pinstripe / Ivory Ridge / Ivory Stripes can't be told apart and the old photos sit on racks -> Photo coming soon until a photo shows each set's difference with faces (v95)."
+}

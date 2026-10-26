@@ -686,10 +686,34 @@ if "sort((a,b)=>a[0].name.localeCompare(b[0].name))" in UI or ".sort((a,b)=>!!T[
 # [64] Oct 26 (Tiffany 8:43am): Charleston Mahjong Club tile sets use the approved faces | angled-backs photo (config/fym-cmc-splits-oct26.json)
 for _k in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-cmc-splits-oct26.json')))['splits']:
     if _k in D['tiles'] and not str(D['tiles'][_k].get('full', '')).startswith('t94/cmc-'): F.append(f"[64] CMC tile {_k} is not using its approved photo")
-# [62] Oct 26 (Tiffany 8:42am): Mahjong Studios tiles have no tile-back view -> all 'Photo coming soon', and brands
-# whose sets are all 'Photo coming soon' sort last in Shop by brand (builder/fym_fix_oct25/v94_mstudios.py)
-_ms = [t.get('n') for k, t in D['tiles'].items() if k.startswith('mahjongstudios.com/') and not t.get('soon')]
-if _ms: F.append(f"[62] {len(_ms)} Mahjong Studios tile sets show a photo (should be Photo coming soon): {_ms[:4]}")
+# [63] Oct 26 (Tiffany 8:48am): every Yellow Mountain Imports tile set uses its faces|backs split photo (config/fym-ymi-splits-oct26.json)
+for _k, _v in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-ymi-splits-oct26.json')))['splits'].items():
+    if _k in D['tiles'] and D['tiles'][_k].get('full') != 't94/' + os.path.basename(_v['img']): F.append(f"[63] YMI tile {_v['name']} is not using its faces|backs split photo")
+for _k in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-ymi-splits-oct26.json'))).get('soon', []):
+    if _k in D['tiles'] and not D['tiles'][_k].get('soon'): F.append(f"[63] YMI tile {D['tiles'][_k]['n']} should be Photo coming soon (Ivory sets, Tiffany 8:56am)")
+# [65] Oct 26 (Tiffany 8:50am): no visible Bespoke tile photo on a black/dark background (config/fym-bespoke-tiles-oct26.json)
+_vt65 = {s['tile'] for s in D['sets'] if VIS_SET(s)} if 'VIS_SET' in globals() else {s['tile'] for s in D['sets'] if not s.get('hid')}
+for _k in sorted(_vt65):
+    if 'bespokemahjong' not in _k: continue
+    _fp = os.path.join(B, str(D['tiles'].get(_k, {}).get('full', '')))
+    try:
+        _a = np.asarray(Image.open(_fp).convert('L'), dtype=float)
+        _bd = np.concatenate([_a[:6].ravel(), _a[-6:].ravel(), _a[:, :6].ravel(), _a[:, -6:].ravel()]).mean()
+        if _bd < 60: F.append(f"[65] Bespoke tile {D['tiles'][_k].get('n')} photo has a dark background (border {_bd:.0f})")
+    except Exception as _e: F.append(f"[65] Bespoke tile {_k} photo not readable: {_e}")
+# [62] Oct 26 (Tiffany 8:48am, replaces 8:42): Mahjong Studios tile photos follow config/fym-mstudios-oct26.json
+# (keep / white_bg / pile_photo / soon / hide; builder/fym_fix_oct25/v94_mstudios.py); brands whose sets are all
+# 'Photo coming soon' sort last in Shop by brand
+_c62 = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-mstudios-oct26.json')))['sets']
+_s62 = {s['tile']: s for s in D['sets']}
+for _k, _v in _c62.items():
+    _t = D['tiles'].get(_k); _do = _v['do']
+    if not _t: F.append(f"[62] Mahjong Studios tile missing from the build: {_k}"); continue
+    if _do in ('keep', 'white_bg', 'pile_photo') and _t.get('soon'): F.append(f"[62] {_t['n']}: shows Photo coming soon, decided '{_do}'")
+    if _do in ('white_bg', 'pile_photo') and _t.get('full') != 't94/ms-' + os.path.basename(_v['img']): F.append(f"[62] {_t['n']}: not using its {_do} photo")
+    if _do == 'soon' and not _t.get('soon'): F.append(f"[62] {_t['n']}: should be Photo coming soon")
+    if _do == 'hide' and _k in _s62 and not _s62[_k].get('hid'): F.append(f"[62] {_t['n']}: should be hidden")
+    if _do != 'hide' and _k in _s62 and _s62[_k].get('hid') and _do != 'soon': F.append(f"[62] {_t['n']}: hidden but decided '{_do}'")
 if "so[s.maker]=(so[s.maker]??true)&&!!t.soon" not in UI: F.append("[62] Shop by brand does not sort all-'Photo coming soon' brands last")
 # [60] Oct 26 (Tiffany 8:29am): among equally matching racks the best-photographed one leads (config/rack-photo-quality.json,
 # builder/fym_fix_oct26/v94_rackquality.py). Default suggestions (picks off, every album pairing) and the white/clear/wood chips:
