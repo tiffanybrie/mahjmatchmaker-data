@@ -507,3 +507,5 @@ Each is asked once. Until she answers, follow the default given here.
 
 - 2026-10-23 19:25 (Tiffany): **Our community = "Matchmakers"** (no hyphen). "Hey, Matchmakers." She is the Mahj Matchmaker; they are the Matchmakers (after Find Your Mat-ch they do the matching). Her picks in the app stay "Tiffany's picks".
 - 2026-10-23 08:47 (Tiffany, RTS note on the FB group description): never write "saves you money"; use "Use our group code MAHJMATCH to save 10% or more at our partner brands".
+
+- 2026-10-25 21:55 (Tiffany): **Full brand names only.** Always write a partner brand's full name exactly as the brand writes it (Bam Bird Boutique, Mahjong Row & Co., My Fair Mahjong). Never shorten or nickname a brand anywhere (graphics, captions, emails, pages): we have no permission to use partial names.
