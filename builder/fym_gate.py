@@ -447,7 +447,7 @@ except Exception as e_: F.append(f"[22] mat-door check could not run: {e_} {_r.s
 # 23 racks tray (2 slots, x to remove, swap via suitors), one card design in 3 sizes, code line, save/share (no press-and-hold)
 _tr = fn('tray')
 if 'class="tray rtr"' not in _tr or 'data-rx' not in _tr or 'data-rp' not in _tr or '2 of 2' not in _tr or 'data-make' not in _tr or 'class="slots"' in _tr: F.append("[23] rack suitors tray (bottom, Oct 23): hearted racks with ✓ picks (max 2, unpick + pick to swap) + Make it official; no empty slots")
-if "if(S.rpick.length>=2){toast(" not in UI or "S.rpick.shift()" in UI: F.append("[23] a 3rd rack can push one out of the tray without x (max 2, swap via x)")
+if "if(S.rpick.length>=2){const old=S.rpick.shift();toast(" not in UI: F.append("[23] a 3rd rack pick does not swap out the older pick (Tiffany Oct 25 20:08; max 2)")
 _rr = fn('renderRacks')
 if not (0 <= _rr.find("deck('r')") < _rr.find("tray('r')")) or 'Browsing racks' in UI: F.append("[23] racks step: suitors tray must sit after the rack deck, and no 'Browsing racks' tab (Oct 23 mirror)")
 if re.search(r'(?i)press and hold', TXT): F.append("[23] press-and-hold save copy still in the UI (does not work on iPhone)")
@@ -555,7 +555,7 @@ _rr = fn('renderRacks'); _rm = fn('renderMats'); _rm = _rm[_rm.find("head(2,'Mat
 def _order(src, parts):
     pos = [src.find(x) for x in parts]
     return all(p_ >= 0 for p_ in pos) and pos == sorted(pos)
-if not _order(_rm, ["filters('m')", "tileView('m')", 'class="tcap"', "deck('m')", "acts('m')", "tray('m')"]): F.append("[37] mat screen order changed (filters, tiles, caption, deck, ✕/♥, suitors)")
+if not _order(_rm, ["tileView('m')", 'class="tcap"', "filters('m')", "deck('m')", "acts('m')", "tray('m')"]): F.append("[37] mat screen order changed (tiles, caption, filters, deck, ✕/♥, suitors; v91 Tiffany Oct 25 20:03)")
 # Oct 25 (Tiffany 14:36): on racks the Brand/colour row sits BETWEEN the mat picture and the rack cards (her husband never found it above the mat)
 if not _order(_rr, ["matBand()", 'class="tcap"', 'class="rfil"', "filters('r')", "deck('r')", "acts('r')", "tray('r')"]): F.append("[37] rack screen order changed (mat, caption, brand/colour row, rack deck, ✕/♥, rack suitors)")
 _between = _rr[_rr.find("matBand()"):_rr.find("deck('r')")]
@@ -577,7 +577,7 @@ if 'S.mfront' not in fn('matDeck') or "q('[data-mfront]')" not in UI: F.append("
 # can go back to the deck or be removed (she got stuck on a suitor preview).
 _dc = fn('decide')
 if 'S.rpick.push' in _dc: F.append("[41] hearting a rack preselects it (nothing is picked until she taps a rack suitor)")
-if "k==='r'&&S.rpick.length)return rpickView()" not in fn('deck') or 'rpv n${' not in UI: F.append("[41] picked racks are not shown on the deck under the mat")
+if "k==='r'&&S.rpick.length)return rpickView()" in fn('deck'): F.append("[41] picked racks replace the rack deck (it must keep swiping; Tiffany Oct 25 20:08)")
 if 'R[r].pa?0:1e5' not in fn('rackPool') or '!S.f.r.her' not in fn('rackPool'): F.append("[41] rack picks OFF does not re-rank by colour with partners first")
 if 'data-unlike' not in fn('acts') or "q('[data-unlike]')" not in UI or 'keep swiping' not in fn('acts'): F.append("[41] a tapped mat suitor has no way back to swiping / no Remove from suitors")
 if "'Make it a love triangle'" not in UI or 'wingman' in UI: F.append("[41] rack heading is not 'Make it a love triangle'")

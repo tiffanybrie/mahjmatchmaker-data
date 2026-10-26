@@ -156,15 +156,18 @@ run('Tiles door', () => {
   if (S.rpick.length !== 0) fail(`Osler: hearting racks preselected ${S.rpick.length} (nothing is picked until she taps)`);
   if (!/Pick 1 or 2 racks/.test(H('s-racks'))) fail('Osler: no "Pick 1 or 2 racks" note before a pick');
   { const s0 = buttons(H('s-racks')).filter(b => 'data-rp' in b.a); click(s0[0].a);
-    if (!/id="rpv"/.test(H('s-racks')) || /id="top-r"/.test(H('s-racks'))) fail('Osler: tapping a rack suitor did not show it on the deck (or the deck still swipes)');
+    // v91 (Tiffany Oct 25 20:08): picking a rack never locks the deck; the deck keeps swiping
+    if (!/id="top-r"/.test(H('s-racks'))) fail('Osler: picking a rack locked the rack deck (it must keep swiping)');
     click(buttons(H('s-racks')).filter(b => 'data-rp' in b.a)[0].a);
-    if (!/rpv n2/.test(H('s-racks'))) fail('Osler: two picked racks are not both shown on the deck'); }
+    if (S.rpick.length !== 2 || !/id="top-r"/.test(H('s-racks'))) fail('Osler: second pick did not land or the deck locked'); }
   const rt = H('s-racks');
   if (S.rpick.length !== 2) fail(`Osler: racks tray holds ${S.rpick.length} (max 2)`);
   if (!/2 of 2/.test(rt) || (rt.match(/data-rx=/g) || []).length !== 2) fail('Osler: full racks tray lacks "2 of 2" / two x buttons');
   const sug = buttons(rt).find(b => 'data-rp' in b.a);
   if (!sug) fail('Osler: third hearted rack not in Rack suitors');
-  else { click(sug.a); if (S.rpick.includes(sug.a['data-rp'])) fail('Osler: tapping a suitor with 2 of 2 replaced a rack without x'); click({ 'data-rx': S.rpick[0] }); click(sug.a); if (!S.rpick.includes(sug.a['data-rp']) || S.rpick.length !== 2) fail('Osler: x then tap did not swap the rack in'); }
+  else { const older = S.rpick[0], newer = S.rpick[1]; click(sug.a);   // v91: a 3rd pick swaps out the OLDER pick
+    if (!S.rpick.includes(sug.a['data-rp']) || S.rpick.length !== 2 || S.rpick.includes(older) || !S.rpick.includes(newer)) fail('Osler: a third pick did not swap out the older rack');
+    click({ 'data-rx': S.rpick[0] }); if (S.rpick.length !== 1) fail('Osler: tapping a \u2713 did not unpick it'); }
   // Oct 22: Back on racks (Tiffany: "a missed rack is gone for good")
   const rh0 = S.rhist.length, rb = H('s-racks');
   if (!/data-back="r"/.test(rb) || /data-back="r" disabled/.test(rb)) fail('Osler: no enabled Back button above the rack deck after swiping');
