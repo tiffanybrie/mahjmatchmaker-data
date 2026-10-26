@@ -59,6 +59,7 @@ Standing order: (1) Find Your Mat-ch™ launch Tue Oct 27 9am CT, (2) fall conte
 
 - **Main → Tiffany at 4am (Oct 26):** (1) launch explainer reel draft in Planoly (undated, her yes + song); (2) [DONE 12:23pm: Planoly IG relinked through Facebook]; (3) partner email subject uses "sneak peek" (brief 00d says never) → propose "Partner brands: a first look at Find Your Mat-ch™"; (4) /links paste waits on Chrome (OPS item above); (5) docs/MAHJ-CLOSET-LAUNCH-STUDY.md gap list (founder-story post needs her).
 
+- **MAIN tonight (Tiffany Oct 26 6:14pm): OUR VERSION of every partner graphic.** Same picks, but WITH the MAHJMATCH code bar (KEEPCODE=1 shot.py) + a "Now featuring <Brand>" story/post for OUR channels. Use: filler content for every brand that doesn't share (expect most). Recipes: assets/social/partner-kit/trio/recipes_partner.sh (+ cut-outs in trio/src). Render after she finishes approvals; keep both sets in assets/social/partner-kit/ours/ and add to the content calendar (one brand per slot, starting a couple days after launch).
 ## Waiting on Tiffany (only things she can answer now)
 - **OPEN for Tiffany (Oct 26 5:54pm): Peace Love Mahjong partner graphic — she picks the tiles/mat/racks herself AFTER Desert Dreams' tile view is fixed (MATCH-INBOX). Main: once the fix is live, tell her it's ready to match; then render to the partner review page.** Also still to pick: Bam Bird Boutique, My Fair Mahjong (Jubilee previews A–D on the review page), Tigre de Tartán, smaller brands.
 **On HQ Today, in this order:**
