@@ -113,7 +113,7 @@ def build(img,tgt):
 prev=build(lambda f:'img/'+f, lambda u:' target="_blank" rel="noopener"')
 open('index.html','w').write('<title>Mahj Matchmaker Links</title><link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet"><style>:root{color-scheme:light}body{margin:0;background:#fdf0e6}</style>'+prev)
 # live squarespace code block (images via repo CDN)
-CDN='https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@7f2339b54c3bb83f8e832ff1b871f1b8d36a4036/assets/links/'
+CDN='https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@f06182da84ab07124eedc9d902686e75c0f69794/assets/links/'
 # on the live site, own pages open in the same tab; outside sites (Facebook) open a new tab
 open('squarespace_code_block.html','w').write('<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">'+build(lambda f:CDN+f, lambda u:'' if u.startswith(S) else ' target="_blank" rel="noopener"'))
 print('ok')
