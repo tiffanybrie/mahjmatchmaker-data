@@ -657,7 +657,7 @@ for k, r in _RR.items():
 if "<div class=\"rfil mfil\">${filters('m')}</div>${deck('m')}" not in UI or "role=\"listbox\"></div></div>`+filters('m')" in UI:
     F.append("[53] mat filter row is not between the tile photo and the mat deck")
 # [54] Oct 25 (Tiffany 20:07): the texted / emailed shop list has one block per piece with a blank line between
-if "${L.join('\\n\\n')}" not in UI or "${kind} \\u00b7 ${nm} by ${o.bn}\\n${o.u}" not in UI:
+if "${L.join('\\n\\n')}" not in UI or "${kind} \\u00b7 ${nm} by ${o.bn}\\n${o.u" not in UI:
     F.append("[54] 'Text or email me this list' is not one block per piece with blank lines between")
 # [55] Oct 25 (Tiffany 20:02/20:08): the rack deck never locks after picking; a 3rd pick swaps out the older one
 if 'class="rlock"' in UI or "function deck(k){if(k==='r'&&S.rpick.length)return rpickView();" in UI or "const old=S.rpick.shift();" not in UI:

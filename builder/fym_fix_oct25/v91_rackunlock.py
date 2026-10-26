@@ -9,7 +9,7 @@ def rep(a, b):
     assert h.count(a) == 1, a[:100]; h = h.replace(a, b)
 rep(" if(k==='r'&&S.rpick.length)return `<div class=\"acts pk\"><p class=\"rlock\">Tap a \\u2713 rack below to unpick it and keep swiping.</p></div>`;\n", "")
 rep("if(S.rpick.length>=2){toast('2 of 2 picked: tap a \\u2713 rack to unpick it first');return;}S.rpick.push(id);",
-    "if(S.rpick.length>=2){const old=S.rpick.shift();toast('Swapped '+shortR(old)+' for '+shortR(id));}S.rpick.push(id);")
+    "if(S.rpick.length>=2){const old=S.rpick.shift();toast('Swapped '+rackLabel(old)+' for '+rackLabel(id));}S.rpick.push(id);")
 rep("'2 of 2 picked. Tap a \\u2713 to unpick it.'", "'2 of 2 picked. Tap another suitor to swap it in, or tap a \\u2713 to unpick it.'")
 # the deck no longer turns into the picked-racks preview: it keeps swiping; your picks show with \u2713 in the rack suitors and on the card
 rep("function deck(k){if(k==='r'&&S.rpick.length)return rpickView();const q=queue(k);", "function deck(k){const q=queue(k);")
