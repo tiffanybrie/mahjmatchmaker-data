@@ -11,6 +11,7 @@ for f in ('bam-bird-classic-tortoise-scatter.jpg', 'bam-bird-emw-tortoise-scatte
     h = h.replace(b92 + 't92/' + f, b95 + 't92/' + f)
 h, n = re.subn(r"fetch\('" + re.escape(b92) + r"hd/index\.json'\)", "fetch('" + b95 + "hd/index.json')", h); assert n == 1, n
 old = "fetch((c===179?'"; assert h.count(old) == 1
-h = h.replace(old, "fetch((c===180?'" + b95 + "':c===179?'", 1)
+h = h.replace(old, "fetch((c>=180&&c<=183?'" + b95 + "':c===179?'", 1)
+h, nr = re.subn(r'(["\'])(t95r/)', lambda m: m.group(1) + b95 + m.group(2), h); assert nr == 2, nr
 assert 'fym-v95/t92/bam-bird-classic-tortoise-scatter.jpg' in h
 open(OUT, 'w').write(h); print('ok v95', len(h))
