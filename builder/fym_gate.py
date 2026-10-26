@@ -918,13 +918,16 @@ except Exception as _e: F.append(f"[80] chunk check did not run: {_e}")
 # list (top 3) unless it is her pick or the TILE brand's own rack; mat-brand lift needs pq>=3; the clean cutouts are in; Bird &
 # Bamboo "Clear" (= Clear Wood Stain) is a wood rack, not clear.
 try:
-    _h81 = open(os.path.join(B, 'index.html')).read(); _c81 = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-rack-clean-oct26.json')))
+    _h81 = open(os.path.join(B, 'index.html')).read(); _v81 = re.search(r'Version (\d+)', _h81)
+    if _v81 and int(_v81.group(1)) < 96 and '/*v96 poor photo never leads*/' not in _h81: raise StopIteration  # rule starts with v96
+    _c81 = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-rack-clean-oct26.json')))
     if '/*v96 poor photo never leads*/' not in _h81 or "(ownW(r)===2||(R[r].pq||3)>=3)" not in _h81: F.append("[81] rack ranking: poor-photo / mat-brand-lift rule missing (run v96_rackclean.py)")
     for _k in _c81['recut']:
         if _k in D['racks'] and not D['racks'][_k].get('hid') and not str(D['racks'][_k].get('im', '')).endswith('c96'): F.append(f"[81] {D['racks'][_k]['n']}: still shows its boxed/scene photo")
     for _k, _v in _c81['pq'].items():
         if _k in D['racks'] and D['racks'][_k].get('pq') != _v: F.append(f"[81] {D['racks'][_k]['n']}: photo score {D['racks'][_k].get('pq')} != {_v}")
     if 'bb:Clear' in D['racks'] and 'clear' in (D['racks']['bb:Clear'].get('rf') or []): F.append("[81] Bird & Bamboo Clear Wood Stain is tagged clear")
+except StopIteration: pass
 except Exception as _e: F.append(f"[81] check did not run: {_e}")
 
 if W:
