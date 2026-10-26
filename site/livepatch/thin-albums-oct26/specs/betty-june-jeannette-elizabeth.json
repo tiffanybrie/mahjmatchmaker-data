@@ -7,7 +7,6 @@
   640,
   640
  ],
- "mat_key": "betty-june-jeannette-elizabeth",
  "max_racks": 4,
  "cards": [
   {
@@ -37,5 +36,10 @@
    ],
    "file": "taylor-mahjong-tiles-betty-june-jeannette-elizabeth-mat.jpg"
   }
- ]
+ ],
+ "mat_racks": [
+  "Bird & Bamboo Pink Coral",
+  "Bird & Bamboo Peachy"
+ ],
+ "_mat_racks_note": "Claude matpick Oct 26 (scripts/albumcard/matpick.py); kept OUT of config/mat-racks-picks.json because that file feeds FYM D.lm (gate [36]/[51])"
 }

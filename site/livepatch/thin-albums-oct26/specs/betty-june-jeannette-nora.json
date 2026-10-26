@@ -7,7 +7,6 @@
   640,
   640
  ],
- "mat_key": "betty-june-jeannette-nora",
  "max_racks": 4,
  "cards": [
   {
@@ -52,5 +51,10 @@
    ],
    "file": "pippa-mahjong-tiles-betty-june-jeannette-nora-mat.jpg"
   }
- ]
+ ],
+ "mat_racks": [
+  "Bird & Bamboo Pistachio",
+  "Bird & Bamboo Turks Blue"
+ ],
+ "_mat_racks_note": "Claude matpick Oct 26 (scripts/albumcard/matpick.py); kept OUT of config/mat-racks-picks.json because that file feeds FYM D.lm (gate [36]/[51])"
 }

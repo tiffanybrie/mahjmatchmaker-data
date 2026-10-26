@@ -7,7 +7,6 @@
   1732,
   1800
  ],
- "mat_key": "ozark-mahjongg-winslow-1920-navy",
  "max_racks": 4,
  "cards": [
   {
@@ -24,5 +23,10 @@
    ],
    "file": "osler-mahjong-tiles-ozark-mahjongg-winslow-1920-navy-mat.jpg"
   }
- ]
+ ],
+ "mat_racks": [
+  "Bird & Bamboo Blackboard Black",
+  "Bird & Bamboo White"
+ ],
+ "_mat_racks_note": "Claude matpick Oct 26 (scripts/albumcard/matpick.py); kept OUT of config/mat-racks-picks.json because that file feeds FYM D.lm (gate [36]/[51])"
 }

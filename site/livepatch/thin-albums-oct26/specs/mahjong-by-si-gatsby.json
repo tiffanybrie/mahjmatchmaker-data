@@ -7,7 +7,6 @@
   1076,
   1074
  ],
- "mat_key": "mahjong-by-si-gatsby",
  "max_racks": 4,
  "cards": [
   {
@@ -24,5 +23,10 @@
    ],
    "file": "osler-mahjong-tiles-mahjong-by-si-gatsby-mat.jpg"
   }
- ]
+ ],
+ "mat_racks": [
+  "Bird & Bamboo Harbor Blue",
+  "Bird & Bamboo Cream"
+ ],
+ "_mat_racks_note": "Claude matpick Oct 26 (scripts/albumcard/matpick.py); kept OUT of config/mat-racks-picks.json because that file feeds FYM D.lm (gate [36]/[51])"
 }

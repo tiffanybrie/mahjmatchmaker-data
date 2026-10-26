@@ -7,7 +7,6 @@
   640,
   640
  ],
- "mat_key": "tala-mahj-the-pavilion-bamboo-neutral-with-blue-fringe",
  "max_racks": 4,
  "cards": [
   {
@@ -24,5 +23,10 @@
    ],
    "file": "osler-mahjong-tiles-tala-mahj-the-pavilion-bamboo-neutral-with-blue-fringe-mat.jpg"
   }
- ]
+ ],
+ "mat_racks": [
+  "Bird & Bamboo Dark Blue",
+  "Bird & Bamboo Cream"
+ ],
+ "_mat_racks_note": "Claude matpick Oct 26 (scripts/albumcard/matpick.py); kept OUT of config/mat-racks-picks.json because that file feeds FYM D.lm (gate [36]/[51])"
 }

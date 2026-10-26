@@ -7,7 +7,6 @@
   640,
   640
  ],
- "mat_key": "sophie-clima-pink-orchids",
  "max_racks": 4,
  "cards": [
   {
@@ -24,5 +23,10 @@
    ],
    "file": "gemma-mahjong-tiles-sophie-clima-pink-orchids-mat.jpg"
   }
- ]
+ ],
+ "mat_racks": [
+  "Bird & Bamboo Mulberry",
+  "Bird & Bamboo Avocado"
+ ],
+ "_mat_racks_note": "Claude matpick Oct 26 (scripts/albumcard/matpick.py); kept OUT of config/mat-racks-picks.json because that file feeds FYM D.lm (gate [36]/[51])"
 }

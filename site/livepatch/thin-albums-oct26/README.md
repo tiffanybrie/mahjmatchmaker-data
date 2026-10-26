@@ -18,7 +18,7 @@ Source: her hearts in the thin-album review (artifact UQy4YpGD2RR5Z1WqswJWYM, db
 - **Image:** `scripts/albumcard/gen2.py` (live album style), `assets/cards/thin-oct26/*.jpg`, jsDelivr pinned at **e718949b**.
   - Tile photo: `assets/tiles/album/<set>.jpg`.
   - Lower left: the album's tile racks (config/tile-racks-picks.json final_lists). Osler drops Tigre de Tartán Oxblood Scallop, which has no photo and isn't sold.
-  - Upper right: the mat's racks (config/mat-racks-picks.json; new entries are a Claude matpick, `approved: null`).
+  - Upper right: the mat's racks. Kerry uses its registry entry in config/mat-racks-picks.json; the other 27 mats are a Claude matpick kept in the card spec (`specs/*.json` mat_racks), NOT in config/mat-racks-picks.json, because that file feeds FYM D.lm and would change those mats' other pairings (gate [36]/[51]).
   - Code band: 10% OFF MAHJMATCH.
   - Specs: `specs/*.json`; `build.py` re-renders.
 - **Mat photos:** brand flat renders where we have them (Pink Tiger, Midori Shadows, Peony & Parasol, Watercolor Floral, Winslow, Gatsby, Kerry). The rest come from the FYM photo (`assets/mats/thin-oct26`).
@@ -68,7 +68,8 @@ Set names for thinFix: Sorbet, Pippa, Sunset, Limoncello, Osler, Jasmine, Taylor
   - appends the 41 to each set's `m` (her real picks) with the card racks;
   - updates locks.json sets.m;
   - appends the cards to the live-album snapshot (albums-live-oct21.json) and recomputes D.ao.
-- Run it only once the cards are live, because gate [16] compares with live album order.
-- Tested on a copy of b93 → gate result in the commit message.
+- Run it only once the cards are live: gates [16]/[51] compare with the live album pages.
+- Do NOT run fym_fix_oct22/rack_picks.py --locks with it (older than the v90 per-album rack rule; rewrote ~60 other pairings in the Oct 26 test).
+- Tested Oct 26 in an isolated copy of the repo on b93 + this patch: added 41, every rack label resolved; gate failed only on [59] tile door default chip and [61] 'Photo coming soon' sort, both newer UI gates that the unpatched b93 also fails (not this patch).
 - Non-partners allowed as her picks (builder/fym_flags/nonpartner_allow.json mats, "her thin-album ♥ Oct 23-24"): YOLO Pink Tiger, Golden Pond Midori Shadows, Mahjong by SI Gatsby.
 - Ozark (whole line), Tala (ShopMy), BJ&J and Sophie Clima (ShopMy) were already allowed.

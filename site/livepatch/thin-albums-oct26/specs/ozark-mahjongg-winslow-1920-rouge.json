@@ -7,7 +7,6 @@
   1793,
   1800
  ],
- "mat_key": "ozark-mahjongg-winslow-1920-rouge",
  "max_racks": 4,
  "cards": [
   {
@@ -24,5 +23,10 @@
    ],
    "file": "osler-mahjong-tiles-ozark-mahjongg-winslow-1920-rouge-mat.jpg"
   }
- ]
+ ],
+ "mat_racks": [
+  "Bird & Bamboo Red",
+  "Peace Love Mahjong Acrylic Burl"
+ ],
+ "_mat_racks_note": "Claude matpick Oct 26 (scripts/albumcard/matpick.py); kept OUT of config/mat-racks-picks.json because that file feeds FYM D.lm (gate [36]/[51])"
 }

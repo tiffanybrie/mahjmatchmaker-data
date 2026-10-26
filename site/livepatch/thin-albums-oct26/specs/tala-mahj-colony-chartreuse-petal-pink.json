@@ -7,7 +7,6 @@
   640,
   640
  ],
- "mat_key": "tala-mahj-colony-chartreuse-petal-pink",
  "max_racks": 4,
  "cards": [
   {
@@ -38,5 +37,9 @@
    ],
    "file": "pippa-mahjong-tiles-tala-mahj-colony-chartreuse-petal-pink-mat.jpg"
   }
- ]
+ ],
+ "mat_racks": [
+  "Bird & Bamboo Butter"
+ ],
+ "_mat_racks_note": "Claude matpick Oct 26 (scripts/albumcard/matpick.py); kept OUT of config/mat-racks-picks.json because that file feeds FYM D.lm (gate [36]/[51])"
 }

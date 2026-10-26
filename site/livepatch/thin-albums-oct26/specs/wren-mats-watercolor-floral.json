@@ -7,7 +7,6 @@
   1400,
   1400
  ],
- "mat_key": "wren-mats-watercolor-floral",
  "max_racks": 4,
  "cards": [
   {
@@ -24,5 +23,10 @@
    ],
    "file": "pippa-mahjong-tiles-wren-mats-watercolor-floral-mat.jpg"
   }
- ]
+ ],
+ "mat_racks": [
+  "Bird & Bamboo Flamingo",
+  "Bird & Bamboo Pistachio"
+ ],
+ "_mat_racks_note": "Claude matpick Oct 26 (scripts/albumcard/matpick.py); kept OUT of config/mat-racks-picks.json because that file feeds FYM D.lm (gate [36]/[51])"
 }

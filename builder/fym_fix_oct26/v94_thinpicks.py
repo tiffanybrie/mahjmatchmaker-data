@@ -5,8 +5,10 @@ set's match list (m) at the END (same place as on the album page), with racks = 
 final_lists) + the mat's racks (config/mat-racks-picks.json), resolved to FYM rack ids by name; labels with no FYM rack are skipped.
 Also: locks.json sets.<slug>.m updated (approved change, her hearts), the live album snapshot gets the new cards at the end, D.ao
 recomputed (album_order.compute), mat u set to the card's shop link when the FYM mat has none.
-Then runs builder/fym_fix_oct22/rack_picks.py --locks (mat's own picks first + D.lm, gate [36]; the 27 new mat entries in
-config/mat-racks-picks.json are Claude matpicks, approved null, same as the album cards).
+Racks = exactly the card's racks (gate [51] compares with the live album page). Do NOT run fym_fix_oct22/rack_picks.py --locks
+for this: it is older than the v90 per-album rack rule and rewrites ~60 other pairings (tested Oct 26, gate [51] FAIL).
+The card mat racks for mats with no entry in config/mat-racks-picks.json are Claude matpicks kept in the card specs only
+(that file feeds FYM D.lm; adding to it fails gate [36] for those mats' other pairings).
 Config: config/fym-thin-picks-oct26.json. Idempotent.
 Usage: python3 builder/fym_fix_oct26/v94_thinpicks.py <build_dir>"""
 import sys, os, json
@@ -48,6 +50,4 @@ json.dump(A, open(SNAP, 'w'), indent=0)
 D['ao'], _ = album_order.compute(D)
 h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]
 open(B + '/index.html', 'w').write(h)
-import subprocess
-subprocess.run([sys.executable, REPO + 'builder/fym_fix_oct22/rack_picks.py', B, '--locks'], check=True)  # mat picks first, D.lm (gate [36])
 print(f'added {len(added)}; skipped {skipped}; rack labels with no FYM rack: {sorted(nores)}')

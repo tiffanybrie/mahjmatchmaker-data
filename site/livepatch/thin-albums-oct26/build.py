@@ -2,8 +2,8 @@
 match cards appended to 9 live album pages (Tiffany Oct 26 8:01am: "my additional picks for the thin albums ... have not gone
 into the match album").
 Card = live-album layout (scripts/albumcard/gen2.py): tile photo assets/tiles/album/<set>.jpg, lower-left = the album's tile
-racks (config/tile-racks-picks.json final_lists), upper-right = mat racks (config/mat-racks-picks.json; Claude matpick for
-mats with no entry, like jasmine_oct20_build.py), code band 10% OFF USE CODE : MAHJMATCH (OMM tiles).
+racks (config/tile-racks-picks.json final_lists), upper-right = mat racks (config/mat-racks-picks.json when the mat has an entry, else a Claude
+matpick kept in the spec as mat_racks), code band 10% OFF USE CODE : MAHJMATCH (OMM tiles).
 Mat photo: the cleanest local file (brand flat render) where we have one, else the FYM/gallery photo (assets/mats/thin-oct26).
 Shop link = the affiliate link (FYM u: ShopMy / discount / sca_ref); Midori Shadows has no shop link anywhere (no button,
 same as the live Malachite card). Fig HTML mirrors the live cards (Kerry pattern, site/livepatch/kerry-oct21).
@@ -106,11 +106,9 @@ def build_cards():
         im = Image.open(R + f).convert('RGB')
         if crop is None: crop = [0, 0, im.width, im.height]
         b0 = ps[0]; mslug = slug(b0['brand'] + ' ' + b0['name'])
-        mk = next((k for k, v in MR.items() if isinstance(v, dict) and f in v.get('files', [])), None) or mslug
-        if mk not in MR:
-            MR[mk] = {'mat': f"{b0['brand']} {b0['name']}", 'racks': pick(im.crop(tuple(crop))), 'files': [f], 'approved': None,
-                      '_note': 'Claude matpick Oct 26 (thin-album hearts)'}
-            json.dump(MR, open(R + 'config/mat-racks-picks.json', 'w'), indent=1, ensure_ascii=False)
+        mk = next((k for k, v in MR.items() if isinstance(v, dict) and f in v.get('files', [])), None)
+        # no registry entry -> Claude matpick goes in the SPEC (mat_racks), never into config/mat-racks-picks.json (it feeds FYM D.lm)
+        mr = None if mk else pick(im.crop(tuple(crop)))
         cards = []
         for p in ps:
             s = p['set']; short = SHORT.get(p['name'], p['name'])
@@ -118,8 +116,8 @@ def build_cards():
                           'tile_file': f'assets/tiles/album/{s}.jpg', 'tilefit': 'cover',
                           'racks': [r for r in F[s] if r not in NOPHOTO],
                           'file': f'{s}-mahjong-tiles-{mslug}-mat.jpg'})
-        spec = {'_note': f'thin albums Oct 26: {b0["brand"]} {b0["name"]}', 'mat_file': f, 'mat_crop': crop, 'mat_key': mk,
-                'max_racks': 4, 'cards': cards}
+        spec = {'_note': f'thin albums Oct 26: {b0["brand"]} {b0["name"]}', 'mat_file': f, 'mat_crop': crop,
+                **({'mat_key': mk} if mk else {'mat_racks': mr}), 'max_racks': 4, 'cards': cards}
         sp = HERE + f'/specs/{mslug}.json'; os.makedirs(HERE + '/specs', exist_ok=True)
         json.dump(spec, open(sp, 'w'), indent=1, ensure_ascii=False)
         subprocess.run(['python3', R + 'scripts/albumcard/gen2.py', sp, R + OUT], check=True)
@@ -138,7 +136,7 @@ def figures(sha):
     res = {}
     for p in P:
         s = p['set']; short = SHORT.get(p['name'], p['name']); mslug = slug(p['brand'] + ' ' + p['name'])
-        spec = json.load(open(HERE + f'/specs/{mslug}.json')); mr = MR[spec['mat_key']]['racks']
+        spec = json.load(open(HERE + f'/specs/{mslug}.json')); mr = spec.get('mat_racks') or MR[spec['mat_key']]['racks']
         file = f'{s}-mahjong-tiles-{mslug}-mat.jpg'
         shop = SHOP.get(p['key']) or p.get('fym_u') or p['url']
         b = html.escape(p['brand']); by = f'<a href="{CODEPAGE[p["brand"]]}">{b}</a>' if p['brand'] in CODEPAGE else b

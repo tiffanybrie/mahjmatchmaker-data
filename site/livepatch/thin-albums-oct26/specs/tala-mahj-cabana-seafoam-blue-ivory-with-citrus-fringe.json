@@ -7,7 +7,6 @@
   640,
   640
  ],
- "mat_key": "tala-mahj-cabana-seafoam-blue-ivory-with-citrus-fringe",
  "max_racks": 4,
  "cards": [
   {
@@ -38,5 +37,9 @@
    ],
    "file": "limoncello-mahjong-tiles-tala-mahj-cabana-seafoam-blue-ivory-with-citrus-fringe-mat.jpg"
   }
- ]
+ ],
+ "mat_racks": [
+  "Bird & Bamboo Dijon"
+ ],
+ "_mat_racks_note": "Claude matpick Oct 26 (scripts/albumcard/matpick.py); kept OUT of config/mat-racks-picks.json because that file feeds FYM D.lm (gate [36]/[51])"
 }

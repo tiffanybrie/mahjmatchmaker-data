@@ -7,7 +7,6 @@
   640,
   640
  ],
- "mat_key": "mahj-vine-chinoiserie-citrus-grove",
  "max_racks": 4,
  "cards": [
   {
@@ -51,5 +50,10 @@
    ],
    "file": "pippa-mahjong-tiles-mahj-vine-chinoiserie-citrus-grove-mat.jpg"
   }
- ]
+ ],
+ "mat_racks": [
+  "Bird & Bamboo Kelly Green",
+  "Bird & Bamboo Periwinkle Blue"
+ ],
+ "_mat_racks_note": "Claude matpick Oct 26 (scripts/albumcard/matpick.py); kept OUT of config/mat-racks-picks.json because that file feeds FYM D.lm (gate [36]/[51])"
 }

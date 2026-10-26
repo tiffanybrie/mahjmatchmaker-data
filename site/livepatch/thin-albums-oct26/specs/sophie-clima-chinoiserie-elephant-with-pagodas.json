@@ -7,7 +7,6 @@
   640,
   640
  ],
- "mat_key": "sophie-clima-chinoiserie-elephant-with-pagodas",
  "max_racks": 4,
  "cards": [
   {
@@ -24,5 +23,10 @@
    ],
    "file": "limoncello-mahjong-tiles-sophie-clima-chinoiserie-elephant-with-pagodas-mat.jpg"
   }
- ]
+ ],
+ "mat_racks": [
+  "Bird & Bamboo Hot Pink",
+  "Bird & Bamboo Turquoise Blue"
+ ],
+ "_mat_racks_note": "Claude matpick Oct 26 (scripts/albumcard/matpick.py); kept OUT of config/mat-racks-picks.json because that file feeds FYM D.lm (gate [36]/[51])"
 }

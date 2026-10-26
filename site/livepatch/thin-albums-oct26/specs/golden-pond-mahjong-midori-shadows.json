@@ -7,7 +7,6 @@
   906,
   904
  ],
- "mat_key": "golden-pond-mahjong-midori-shadows",
  "max_racks": 4,
  "cards": [
   {
@@ -24,5 +23,10 @@
    ],
    "file": "nantucket-mahjong-tiles-golden-pond-mahjong-midori-shadows-mat.jpg"
   }
- ]
+ ],
+ "mat_racks": [
+  "Bird & Bamboo Moss",
+  "Bird & Bamboo Cream"
+ ],
+ "_mat_racks_note": "Claude matpick Oct 26 (scripts/albumcard/matpick.py); kept OUT of config/mat-racks-picks.json because that file feeds FYM D.lm (gate [36]/[51])"
 }
