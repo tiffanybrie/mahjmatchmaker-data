@@ -1,0 +1,65 @@
+{
+ "_doc": "Bam Bird Boutique uniform tile photo (Tiffany Oct 25 9:43pm): 1600x700, clean faces tray left (right-aligned), that colourway's own backs tray right, 8px white centre line. Real Bam Bird listing photos only, never edited tiles. Built by scratchpad bbs/build.py.",
+ "splits": {
+  "www.bambirdboutique.com/boots-bubbles-mahjong-tile-set": {
+   "img": "assets/tiles/v92/bam-bird-boots-blue-split.jpg",
+   "src": "boots-bubbles imgs 0 (faces + blue backs tray)"
+  },
+  "www.bambirdboutique.com/boots-bubbles-mahjong-tile-set?v=53636177658165": {
+   "img": "assets/tiles/v92/bam-bird-boots-pink-split.jpg",
+   "src": "boots-bubbles img 0 (faces + pink backs tray)"
+  },
+  "www.bambirdboutique.com/mcm-mahjong-tile-set": {
+   "img": "assets/tiles/v92/bam-bird-mcm-navy-olive-split.jpg",
+   "src": "mcm img 16 (faces + navy backs)"
+  },
+  "www.bambirdboutique.com/mcm-mahjong-tile-set?v=53323821482293": {
+   "img": "assets/tiles/v92/bam-bird-mcm-olive-pink-split.jpg",
+   "src": "faces mcm img 16, olive backs mcm img 14"
+  },
+  "www.bambirdboutique.com/tiles-box-die": {
+   "img": "assets/tiles/v92/bam-bird-classic-rose-split.jpg",
+   "src": "tiles-box-die img 0"
+  },
+  "www.bambirdboutique.com/tiles-box-die?v=46437070897461": {
+   "img": "assets/tiles/v92/bam-bird-classic-lavender-split.jpg",
+   "src": "tiles-box-die img 0"
+  },
+  "www.bambirdboutique.com/tiles-box-die?v=47188580139317": {
+   "img": "assets/tiles/v92/bam-bird-classic-teal-split.jpg",
+   "src": "tiles-box-die img 0"
+  },
+  "www.bambirdboutique.com/east-meets-west-tile-set?v=49902711079221": {
+   "img": "assets/tiles/v92/bam-bird-emw-emerald-split.jpg",
+   "src": "faces emw img 3, emerald backs emw img 1"
+  },
+  "www.bambirdboutique.com/east-meets-west-tile-set?v=53195162583349": {
+   "img": "assets/tiles/v92/bam-bird-emw-periwinkle-split.jpg",
+   "src": "emw img 3"
+  },
+  "www.bambirdboutique.com/origami-tile-set": {
+   "img": "assets/tiles/v92/bam-bird-origami-azure-split.jpg",
+   "src": "faces origami img 1, azure backs origami img 2 (straightened)"
+  },
+  "www.bambirdboutique.com/origami-tile-set?v=47949222674741": {
+   "img": "assets/tiles/v92/bam-bird-origami-timber-split.jpg",
+   "src": "faces origami img 1, timber backs origami img 3 (straightened)"
+  },
+  "www.bambirdboutique.com/deco-tile-set": {
+   "img": "assets/tiles/v92/bam-bird-boutique-deco-lagoon-split.jpg",
+   "src": "deco-tile-set img 0 faces tray + own backs tray (approved Oct 25 9:42pm)"
+  },
+  "www.bambirdboutique.com/deco-tile-set?v=51519563333941": {
+   "img": "assets/tiles/v92/bam-bird-boutique-deco-mulberry-split.jpg",
+   "src": "deco-tile-set img 0 faces tray + own backs tray (approved Oct 25 9:42pm)"
+  },
+  "www.bambirdboutique.com/deco-tile-set?v=53195200004405": {
+   "img": "assets/tiles/v92/bam-bird-boutique-deco-indigo-split.jpg",
+   "src": "deco-tile-set img 0 faces tray + own backs tray (approved Oct 25 9:42pm)"
+  }
+ },
+ "skipped": {
+  "www.bambirdboutique.com/east-meets-west-tortoise-shell-tile-set": "no clean source: listing has only faces tray photos (3 imgs), no backs tray; tortoise backs only as scattered loose tiles",
+  "www.bambirdboutique.com/east-meets-west-tortoise-shell-tile-set-copy": "no clean source (Classic Tortoise): 4 imgs, faces tray only, no backs tray"
+ }
+}
