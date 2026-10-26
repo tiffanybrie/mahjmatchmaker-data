@@ -36,7 +36,7 @@ for ka, x in SPEC.items():
     if A['n'] != nA: A['n'] = nA; renamed += 1
     A['side'] = 'A'; A['twin'] = ka + '#side-b'
     if not A.get('dn'):  # short card-subtitle name without the side label ("tiles on the <dn> mat"); MAT label keeps n
-        A['dn'] = re.sub(r'\s*\((Double-Sided)\)|^Bespoke x Corey Paige - |\s+Mat$', '', x['nameA']).replace('Grateful Dead x Bespoke Mahjong', 'Grateful Dead').strip()
+        A['dn'] = re.sub(r'\s*\((Double-Sided)\)|^Bespoke x Corey Paige - |^The |\s+Mat$', '', x['nameA']).replace('Grateful Dead x Bespoke Mahjong', 'Grateful Dead').strip()
     kb = ka + '#side-b'
     if kb in M: continue
     im = Image.open(REPO + x['imgB']).convert('RGB'); im.thumbnail((640, 640)); b = io.BytesIO(); im.save(b, 'WEBP', quality=86, method=6)
@@ -69,12 +69,14 @@ for s in sets:
             if jb in L: continue
             if ja in L: L.insert(L.index(ja) + 1, jb)
             elif fld == 'rank': L.append(jb)
-if CH:
+CHUNKS = sorted({int(f.split('/')[1].split('.')[0]) // 12 for f, _ in CH})  # the page loads chunk n//12 (MCN=12)
+for c in CHUNKS:
     body, hdr = b'', {}
-    for f, raw in CH: hdr[f] = [len(body), len(raw)]; body += raw
-    hj = json.dumps(hdr, separators=(',', ':')).encode(); open(f'{B}/mc/{chunk}.webp', 'wb').write(body + hj + struct.pack('<I', len(hj)))
+    for f, raw in CH:
+        if int(f.split('/')[1].split('.')[0]) // 12 == c: hdr[f] = [len(body), len(raw)]; body += raw
+    hj = json.dumps(hdr, separators=(',', ':')).encode(); open(f'{B}/mc/{c}.webp', 'wb').write(body + hj + struct.pack('<I', len(hj)))
 h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]
-if CH: h = h.replace(mcb.group(0), 'MCB=new Set([' + mcb.group(1) + f', {chunk}]);', 1)
+if CH: h = h.replace(mcb.group(0), 'MCB=new Set([' + mcb.group(1) + ''.join(f', {c}' for c in CHUNKS) + ']);', 1)
 if IMG:
     inl = '<script>window.IMG=Object.assign(window.IMG||{},' + json.dumps(IMG, separators=(',', ':')) + ');</script>'
     a = '<script src="b24v1.js"></script>'; assert h.count(a) == 1; h = h.replace(a, a + inl, 1)
@@ -100,4 +102,4 @@ if lch:
     json.dump(LK, open(REPO + 'builder/fym_flags/locks.json', 'w'), indent=1, ensure_ascii=False)
 json.dump(FL, open(REPO + 'builder/fym_flags/mat_photo_flags.json', 'w'), indent=1, ensure_ascii=False)
 for a_ in added: print(*a_)
-print('bespoke2side: side A renamed', renamed, '| side B added', len(added), '| chunk', chunk if CH else None)
+print('bespoke2side: side A renamed', renamed, '| side B added', len(added), '| chunks', CHUNKS if CH else None)

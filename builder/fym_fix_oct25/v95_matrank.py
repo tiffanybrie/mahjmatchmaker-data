@@ -113,6 +113,9 @@ for s in D['sets']:
         bsw, kind = back_sw(im, (W // 2, 0, W, H)); fsw = faces_sw(im, (0, 0, W // 2, H))
     sw = [[hx, w * BW] for hx, w in bsw] + [[hx, w * (1 - BW)] for hx, w in fsw] if fsw else bsw
     la, wa, vt = prep(sw)
+    if kind != 'v85':   # earthy backs (wood, gold, tortoise: brown/gold hue, not light) are not 'vivid' even when chroma >= 38
+        hue = np.degrees(np.arctan2(la[:, 2], la[:, 1])) % 360; ch = np.hypot(la[:, 1], la[:, 2])
+        vt = float(wa[(ch >= 38) & ~((hue >= 35) & (hue <= 100) & (la[:, 0] < 76))].sum())
     sth = theme_of(s['name']); smo = motif_of(s['name'])
     gf = set(f for g, names in GROUP.items() if s['name'] in names for f in G2F.get(g, []))
     if kind == 'motif': gf = set()   # her site colour group is the plain tile colour (Aloha = Ivory); the back motif decides instead
