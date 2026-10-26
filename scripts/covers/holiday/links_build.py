@@ -12,8 +12,10 @@ S='https://www.mahjmatchmaker.com'
 FYM=S+'/find-your-match'  # planned page: goes live on launch day (Nov 3 proposed, doc 54)
 FAN=['talulah','gatsby','emerald']
 FYM_LIVE=False  # flip to True on 10/27 when /find-your-match goes live (then the card links)
-NEWSET=('papaya-spritz','Papaya Spritz','Oh My Mahjong','Our latest album, now available · code MAHJMATCH')  # launch-week feature card (doc 86 step 11)  # album covers fanned on the Find Your Match card (left, right, center)
+NEWSET=None  # Oct 26 (Tiffany 12:53am): Papaya Spritz feature card OFF; Find Your Mat-ch leads. Set a tuple again for the next album launch.
+# was: ('papaya-spritz','Papaya Spritz','Oh My Mahjong','Our latest album, now available · code MAHJMATCH')  # launch-week feature card (doc 86 step 11)  # album covers fanned on the Find Your Match card (left, right, center)
 def build(img,tgt):
+    nw=(f'<a class="nw" href="{S}/{NEWSET[0]}-mahjong-tile-matches"{tgt(S)}><img src="{img("v2/feature-"+NEWSET[0]+".jpg")}" alt="{NEWSET[1]} mahjong tiles" width="448" height="246"><div><span class="new">New</span><b>{NEWSET[1]}<small>{NEWSET[2]} · {NEWSET[3]}</small></b><span style="font-size:26px">›</span></div></a>') if NEWSET else ''
     # tgt(url) -> target attrs; preview opens everything in a new tab
     COLORS=[('Holiday','#a3192e','/holiday-mahjong-matches'),('Red','#c8343c','/red-mahjong-tile-matches'),('Pink','#d6568a','/pink-mahjong-tile-matches'),('Yellow & Orange','#e08a2e','/yellow-orange-mahjong-tile-matches'),('Green','#3f8f55','/green-mahjong-tile-matches'),('Blue','#3f6fb5','/blue-mahjong-tile-matches'),('Purple','#7d55b0','/purple-mahjong-tile-matches'),('Brown','#7a4a2a','/brown-mahjong-tile-matches'),('Ivory','#b9a57a','/ivory-mahjong-tile-matches'),('Natural Patterns','#8a6a3a','/neutral-mahjong-tile-matches')]
     chips=''.join(f'<a class="chip" href="{S}{u}"{tgt(S+u)} style="--c:{c}">{n}</a>' for n,c,u in COLORS)
@@ -69,10 +71,15 @@ def build(img,tgt):
 <!-- FIND YOUR MATCH: first and biggest link (Tiffany, Oct 15 6:58pm).
      NOTE: /find-your-match is the PLANNED page. It goes live on launch day (Mahj Matchmaker 2.0, doc 54);
      until then this link would 404, so the page and this link launch together. -->
-<a class="nw" href="{S}/{NEWSET[0]}-mahjong-tile-matches"{tgt(S)}><img src="{img('v2/feature-'+NEWSET[0]+'.jpg')}" alt="{NEWSET[1]} mahjong tiles" width="448" height="246"><div><span class="new">New</span><b>{NEWSET[1]}<small>{NEWSET[2]} · {NEWSET[3]}</small></b><span style="font-size:26px">›</span></div></a>
-{(f'<a class="fym" href="{FYM}"{tgt(FYM)}>' if FYM_LIVE else '<div class="fym">')}<span class="new">{'New' if FYM_LIVE else 'Coming 10.27'}</span>
-<img class="ph" src="{img('v2/fym-phones.webp')}" width="448" height="432" alt="Find Your Mat-ch on a phone: pick your tiles or your mat, then swipe through matches">
-<b>Find Your Mat-ch™</b><p>Start with your tiles or your mat, then swipe through the mats and racks that match.</p>{('<span class="go">Start matching ›</span></a>' if FYM_LIVE else '<span class="go" style="opacity:.75">Coming October 27</span></div>')}
+{nw}
+<!-- FYM card switches itself to the live link at 9:00am CT Tue Oct 27 (no repaste needed) -->
+<div class="fym" id="mmlFymSoon"><span class="new">Coming 10.27</span>
+<img class="ph" src="{img('v2/fym-phones-oct26.webp')}" width="448" height="432" alt="Find Your Mat-ch on a phone: pick your tiles or your mat, then swipe through matches">
+<b>Find Your<br>Mat-ch™</b><p>Start with your tiles or your mat, then swipe through the mats and racks that match.</p><span class="go" style="opacity:.75">Launches Tuesday, October 27</span></div>
+<a class="fym" id="mmlFymLive" href="{FYM}"{tgt(FYM)} style="display:none"><span class="new">New</span>
+<img class="ph" src="{img('v2/fym-phones-oct26.webp')}" width="448" height="432" alt="Find Your Mat-ch on a phone: pick your tiles or your mat, then swipe through matches">
+<b>Find Your<br>Mat-ch™</b><p>Start with your tiles or your mat, then swipe through the mats and racks that match.</p><span class="go">Start matching ›</span></a>
+<script>(function(){{if(Date.now()>=Date.UTC(2026,9,27,14,0,0)){{var a=document.getElementById('mmlFymSoon'),b=document.getElementById('mmlFymLive');if(a)a.style.display='none';if(b)b.style.display='block';}}}})();</script>
 <div class="code"><div><small>Partner brand discount</small><b>MAHJMATCH</b></div><button type="button" onclick="(navigator.clipboard?navigator.clipboard.writeText('MAHJMATCH'):Promise.reject()).then(()=>{{this.textContent='Copied ✓'}}).catch(()=>{{this.textContent='MAHJMATCH'}})">Copy code</button></div>
 <a class="where" href="{S}/mahjong-discount-codes"{tgt(S)}>See all our partner brands ›</a>
 <a class="where" href="{S}/mahjong-mats"{tgt(S)}>Browse every mat by color in the Mat Gallery ›</a>
