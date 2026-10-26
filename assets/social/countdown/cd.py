@@ -6,10 +6,10 @@ H=f'''<html><head><meta charset=utf-8><style>@font-face{{font-family:Cap;src:url
 *{{margin:0;box-sizing:border-box}}body{{width:1080px;height:1920px;background:linear-gradient(#fbe3ea,#fdf3f3 60%,#fbe3ea);position:relative;overflow:hidden;font-family:Bit}}
 .c{{position:absolute;left:0;right:0;text-align:center}}
 </style></head><body>
-<div class="c" style="top:250px"><span style="background:#062a55;color:#fff;font:700 32px Bit;letter-spacing:7px;padding:14px 36px;border-radius:50px">MAHJ MATCHMAKER 2.0</span></div>
-<div class="c" style="top:345px;font:italic 64px PF;color:#062a55">Launching tomorrow</div>
-<div class="c" style="top:430px;font:400 100px/1 Cap;color:#e0547f;white-space:nowrap">Find Your Mat-ch&trade;</div>
-<img src="{PH}" style="position:absolute;left:150px;top:560px;width:780px">
+<div class="c" style="top:235px"><span style="background:#062a55;color:#fff;font:700 30px Bit;letter-spacing:7px;padding:13px 34px;border-radius:50px">FIND YOUR MAT-CH&trade; · 10.27</span></div>
+<div class="c" style="top:322px;font:italic 64px PF;color:#062a55">Tomorrow,</div>
+<div class="c" style="top:405px;font:400 96px/1 Cap;color:#062a55;white-space:nowrap">you become</div><div class="c" style="top:500px;font:400 104px/1 Cap;color:#e0547f;white-space:nowrap">the matchmaker.</div>
+<img src="{PH}" style="position:absolute;left:150px;top:630px;width:720px;left:180px">
 <div class="c" style="top:1330px;font:400 58px Cav;color:#062a55">get a reminder when it&rsquo;s live &darr;</div>
 <div class="c" style="top:1745px;font:700 34px Bit;color:#062a55">mahjmatchmaker.com</div>
 </body></html>'''
