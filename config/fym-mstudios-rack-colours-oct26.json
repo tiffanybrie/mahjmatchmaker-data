@@ -1,0 +1,8 @@
+{"note": "Tiffany Oct 26 9:18am: 'Why does Mahjong Studios have 25 racks that are clear, white, or tortoise? That sounds like an error.' It was: coloured translucent racks were also tagged 'clear', 3 multi-colour preorder racks were tagged ONLY 'clear' with one shared blended hex (#91685c / #8d6960 measured off a pile of crossed racks), and the Green Luxury Scalloped rack was tagged blue. Fixed by name (product names verified on mahjongstudios.com). True clears keep 'clear': 20in Clear Acrylic Scalloped, Clear Translucent. Tortoise racks are genuinely tortoise (7 listings).",
+ "by_name": {
+  "Christmas Mahjong Rack and Pusher Set Red & Green": {"rf": ["red", "green"], "hx": "#b5262d"},
+  "LSU Colors - Mahjong Rack": {"rf": ["purple", "yellow"], "hx": "#4b2a7b"},
+  "Mardi Gras Mahjong Rack": {"rf": ["purple", "green", "yellow"], "hx": "#5b2d82"},
+  "20\" Green Luxury Acrylic Scalloped": {"rf": ["green"], "hx": "#1e8a43"}
+ },
+ "drop_clear_unless_name": ["Clear"]}
