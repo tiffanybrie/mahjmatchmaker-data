@@ -1,0 +1,162 @@
+{
+ "_about": "Tiffany Oct 26 11:41am (docs/ANSWERS.md): Bespoke double-sided ('Double the Fun') mats are listed TWICE in FYM, one entry per side, each with ONE real brand listing photo of that side. Side A = the existing entry (name gets ' (Side A: ...)'); Side B = new key '<A key>#side-b' with the brand's side-B listing photo, same shop link/code, colours measured from that photo, ranked right after Side A in every set. Short card name (dn) has no side label so the card subtitle fits (gate [72]). Applied by builder/fym_fix_oct25/v95_bespoke2side.py; gate [78].",
+ "_skipped": {
+  "www.bespokemahjong.com/double-the-fun-dhonkcollabmat": "both sides already listed (Jungle Turquoise + alb2 Jungle Hot Pink)",
+  "www.bespokemahjong.com/bespoke-x-gray-malin-double-sided-mat-double-the-fun-gray-malin-beach-club-mat-copy": "Getaway Dogs is hidden (photo pending Tiffany)",
+  "www.bespokemahjong.com/graymalingamemat": "Gray Malin side A photo is waiting on Tiffany (gate [3c]); side B only exists inside a two-up listing image"
+ },
+ "mats": {
+  "www.bespokemahjong.com/a-very-merry-getaway-double-sided-mat": {
+   "nameA": "Gray Malin A Very Merry Getaway (Double-Sided)",
+   "sideA": "Lighthouse",
+   "sideB": "Beach Tree",
+   "imgB": "assets/mats/v95-bespoke-sideb/a-very-merry-getaway-double-sided-mat.jpg",
+   "holB": true,
+   "listing_img_index": 2
+  },
+  "www.bespokemahjong.com/colorcrushmat": {
+   "nameA": "Bespoke x Corey Paige - Color Crush",
+   "sideA": "Rainbow Frame",
+   "sideB": "Love Doodles",
+   "imgB": "assets/mats/v95-bespoke-sideb/colorcrushmat.jpg",
+   "holB": false,
+   "listing_img_index": 1
+  },
+  "www.bespokemahjong.com/holidayloveblue": {
+   "nameA": "Bespoke x Corey Paige - Holiday Love Mat - Blue",
+   "sideA": "All-Over Hearts",
+   "sideB": "Heart Frame",
+   "imgB": "assets/mats/v95-bespoke-sideb/holidayloveblue.jpg",
+   "holB": true,
+   "listing_img_index": 2
+  },
+  "www.bespokemahjong.com/holidayloveredgreen": {
+   "nameA": "Bespoke x Corey Paige - Holiday Love Mat - Red/Green",
+   "sideA": "All-Over Hearts",
+   "sideB": "Heart Frame",
+   "imgB": "assets/mats/v95-bespoke-sideb/holidayloveredgreen.jpg",
+   "holB": true,
+   "listing_img_index": 2
+  },
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-skull": {
+   "nameA": "Grateful Dead x Bespoke Mahjong We Are Everywhere",
+   "sideA": "Rose",
+   "sideB": "Winged Skull",
+   "imgB": "assets/mats/v95-bespoke-sideb/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-skull.jpg",
+   "holB": false,
+   "listing_img_index": 2
+  },
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-sunshine-galaxy-copy": {
+   "nameA": "Grateful Dead x Bespoke Mahjong Tie Dye Dream",
+   "sideA": "Rainbow",
+   "sideB": "Bears & Bolt",
+   "imgB": "assets/mats/v95-bespoke-sideb/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-sunshine-galax.jpg",
+   "holB": false,
+   "listing_img_index": 2
+  },
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-dancing-bears-copy": {
+   "nameA": "Grateful Dead x Bespoke Mahjong Sunshine to Starlight",
+   "sideA": "Sky Blue",
+   "sideB": "Starry Black",
+   "imgB": "assets/mats/v95-bespoke-sideb/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-dancing-bears-.jpg",
+   "holB": false,
+   "listing_img_index": 2
+  },
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-corey-paige-electric-love-mat-copy": {
+   "nameA": "Grateful Dead x Bespoke Mahjong Dancing Bears",
+   "sideA": "Tie-Dye Swirl",
+   "sideB": "Pink",
+   "imgB": "assets/mats/v95-bespoke-sideb/double-sided-mat-double-the-fun-bespoke-x-corey-paige-electric-love-ma.jpg",
+   "holB": false,
+   "listing_img_index": 2
+  },
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-girl-talk-mat-copy": {
+   "nameA": "Table Talk",
+   "sideA": "Comic Panels",
+   "sideB": "Pop Burst",
+   "imgB": "assets/mats/v95-bespoke-sideb/double-sided-mat-double-the-fun-girl-talk-mat-copy.jpg",
+   "holB": false,
+   "listing_img_index": 2
+  },
+  "www.bespokemahjong.com/year-of-the-dragon-black-copy": {
+   "nameA": "Floral Mat",
+   "sideA": "Leopard Floral",
+   "sideB": "Black Floral",
+   "imgB": "assets/mats/v95-bespoke-sideb/year-of-the-dragon-black-copy.jpg",
+   "holB": false,
+   "listing_img_index": 2
+  },
+  "www.bespokemahjong.com/preorder-double-sided-mat-double-the-fun-year-of-the-horse-mat-harlequin-copy": {
+   "nameA": "Year of the Horse Mat - Bubblegum",
+   "sideA": "Pink",
+   "sideB": "Black",
+   "imgB": "assets/mats/v95-bespoke-sideb/preorder-double-sided-mat-double-the-fun-year-of-the-horse-mat-harlequ.jpg",
+   "holB": false,
+   "listing_img_index": 2
+  },
+  "www.bespokemahjong.com/graffitistreetstylemat": {
+   "nameA": "Bespoke x Corey Paige - Graffiti Street Style Mat",
+   "sideA": "Graffiti",
+   "sideB": "Color Blur",
+   "imgB": "assets/mats/v95-bespoke-sideb/graffitistreetstylemat.jpg",
+   "holB": false,
+   "listing_img_index": 2
+  },
+  "www.bespokemahjong.com/electriclovemat": {
+   "nameA": "Bespoke x Corey Paige - Electric Love Mat",
+   "sideA": "Heart Frame",
+   "sideB": "All-Over Hearts",
+   "imgB": "assets/mats/v95-bespoke-sideb/electriclovemat.jpg",
+   "holB": false,
+   "listing_img_index": 2
+  },
+  "www.bespokemahjong.com/preorder-year-of-the-horse-mat-pleated": {
+   "nameA": "Year of the Horse Mat - Pleated",
+   "sideA": "Cream",
+   "sideB": "Black Quilted",
+   "imgB": "assets/mats/v95-bespoke-sideb/preorder-year-of-the-horse-mat-pleated.jpg",
+   "holB": false,
+   "listing_img_index": 1
+  },
+  "www.bespokemahjong.com/year-of-the-dragon-mat-plum-copy": {
+   "nameA": "Year of the Horse Mat - Harlequin",
+   "sideA": "Pink Harlequin",
+   "sideB": "Brown",
+   "imgB": "assets/mats/v95-bespoke-sideb/year-of-the-dragon-mat-plum-copy.jpg",
+   "holB": false,
+   "listing_img_index": 2
+  },
+  "www.bespokemahjong.com/double-the-fun-chaletmat": {
+   "nameA": "The Chalet Mat",
+   "sideA": "Let It Snow",
+   "sideB": "Ski Lift",
+   "imgB": "assets/mats/v95-bespoke-sideb/double-the-fun-chaletmat.jpg",
+   "holB": true,
+   "listing_img_index": 2
+  },
+  "www.bespokemahjong.com/double-the-fun-darjeeling-peacock-mat": {
+   "nameA": "Darjeeling Peacock Mat",
+   "sideA": "Blue Scales",
+   "sideB": "Navy Floral",
+   "imgB": "assets/mats/v95-bespoke-sideb/double-the-fun-darjeeling-peacock-mat.jpg",
+   "holB": false,
+   "listing_img_index": 2
+  },
+  "www.bespokemahjong.com/double-the-fun-pop-art-mat": {
+   "nameA": "Girl Talk",
+   "sideA": "Comic Panels",
+   "sideB": "Starburst",
+   "imgB": "assets/mats/v95-bespoke-sideb/double-the-fun-pop-art-mat.jpg",
+   "holB": false,
+   "listing_img_index": 2
+  },
+  "www.bespokemahjong.com/double-the-love-graffiti-mat": {
+   "nameA": "Love Graffiti Mat",
+   "sideA": "Watercolor",
+   "sideB": "Soft Pink",
+   "imgB": "assets/mats/v95-bespoke-sideb/double-the-love-graffiti-mat.jpg",
+   "holB": false,
+   "listing_img_index": 2
+  }
+ }
+}

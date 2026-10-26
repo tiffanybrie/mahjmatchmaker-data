@@ -817,6 +817,63 @@ _h75 = open(os.path.join(B, 'index.html')).read()
 if '/*v95 tile brand first*/' not in _h75 or 'ownW(b)-ownW(a)' not in _h75 or "ownW(r)===2?5:2" not in _h75:
     F.append("[75] rack order does not put the TILE brand's racks ahead of the mat brand's (run v95_rackbrand.py)")
 
+# [77] Oct 26 QA v95: Close up card draws 'Photo coming soon' sets in a band that fits (no text cut off, no TILES pill over the
+# name); card pills shrink then wrap long names before '…'; Mood board TILES label wraps (r*1.5). Etsy mats the spec hides
+# (e.g. Savannah Soiree, corner close-up) stay hidden. builder/fym_fix_oct25/v95_qafix.py + config/fym-etsy-shopmy-oct26.json
+_h77 = open(os.path.join(B, 'index.html')).read()
+for _need, _msg in (("/*v95 soon band*/soonBand(x,top,w,hT)", "Close up card crops 'Photo coming soon' into the tiles band"),
+                    ("/*v95 pill fit*/", "card pills cut long names with '…' instead of shrinking/wrapping"),
+                    ("'TILES',s.name,{up:true,right:true,maxW:r*1.5", "Mood board TILES label runs across the mat")):
+    if _need not in _h77: F.append("[77] " + _msg + " (run v95_qafix.py)")
+try:
+    for _x in json.load(open(os.path.join(REPO, 'config/fym-etsy-shopmy-oct26.json')))['mats']:
+        if _x.get('hid') and _x['key'] in D['mats'] and not D['mats'][_x['key']].get('hid'): F.append(f"[77] Etsy mat {_x['name']} should be hidden ({_x.get('reason','')[:60]})")
+except Exception as _e: F.append(f"[77] Etsy hidden check did not run: {_e}")
+
+# [76] Oct 26 (Tiffany 11:37: "The back color is a dominant color"): mat ranking weighs the tile BACK (re-measured from the current
+# photo), partner-first tie-break, motif hint. Every visible non-holiday faces|backs split set carries bsw (v95_matrank.py ran), and
+# Aloha (YMI, white backs with yellow plumeria) has a yellow mat in its first 5 colour-ranked mats. builder/fym_fix_oct25/v95_matrank.py
+try:
+    import re as _re76
+    _hg = _re76.search(r'BACKG=(\{.*?\});', open(os.path.join(B, 'index.html')).read())
+    _hol76 = set(json.loads(_hg.group(1)).get('Holiday', [])) if _hg else set()
+    _miss = [s['name'] for s in D['sets'] if not s.get('hid') and s['name'] not in _hol76 and (D['tiles'].get(s['tile']) or {}).get('split') and not (D['tiles'].get(s['tile']) or {}).get('soon') and not s.get('bsw')]
+    if _miss: F.append(f"[76] {len(_miss)} split tile sets ranked without their back colour (run v95_matrank.py): {', '.join(_miss[:6])}")
+    _C76 = json.load(open(os.path.join(REPO, 'config/fym-colour-oct25.json')))['mats']
+    def _yel(m):
+        from skimage.color import rgb2lab as _r2l
+        import numpy as _np
+        for hx, w in (_C76.get(m) or {}).get('sw', []):
+            L = _r2l(_np.array([[[int(hx[k:k + 2], 16) / 255 for k in (1, 3, 5)]]]))[0, 0]
+            if w >= .12 and L[2] >= 30 and L[0] >= 60 and abs(L[1]) < 25: return True
+        return False
+    for s in D['sets']:
+        if s['slug'] == 'yellow-mountain-imports-aloha' and not s.get('hid') and not s['m']:
+            top = [D['order'][j] for j in s.get('cr', [])]; top = [m for m in top if m in D['mats'] and not D['mats'][m].get('hid') and not D['mats'][m].get('rt')][:5]
+            if not any(_yel(m) for m in top): F.append("[76] Aloha's first 5 mats have no yellow (its yellow plumeria backs are not weighed): " + ', '.join(D['mats'][m]['n'] for m in top))
+except Exception as _e: F.append(f"[76] back-colour ranking check did not run: {_e}")
+
+# [78] Oct 26 (Tiffany 11:41am): Bespoke double-sided mats are listed twice, one entry per side, ONE photo each
+# (config/fym-bespoke-2side-oct26.json, builder/fym_fix_oct25/v95_bespoke2side.py). Side B = '<A key>#side-b', same shop link,
+# visible whenever side A is, ranked right after side A wherever side A is ranked.
+try:
+    _S78 = json.load(open(REPO + 'config/fym-bespoke-2side-oct26.json'))['mats']
+    _ix78 = {m: j for j, m in enumerate(D['order'])}
+    for _ka, _x in _S78.items():
+        _A, _B = D['mats'].get(_ka), D['mats'].get(_ka + '#side-b')
+        if not _A: continue
+        if not _B: F.append(f"[78] {_x['nameA']}: side B entry missing"); continue
+        if not _A.get('f') or not _B.get('f') or _A['f'] == _B['f']: F.append(f"[78] {_x['nameA']}: each side needs its own single photo")
+        if '(Side A:' not in _A['n'] or '(Side B:' not in _B['n']: F.append(f"[78] {_x['nameA']}: names must say Side A / Side B")
+        if bool(_A.get('hid')) != bool(_B.get('hid')): F.append(f"[78] {_x['nameA']}: side B visibility differs from side A")
+        if _B.get('u') != _A.get('u') or _B.get('dc') != _A.get('dc'): F.append(f"[78] {_x['nameA']}: side B shop link/code differs from side A")
+        if bool(_B.get('hol')) != bool(_x['holB']): F.append(f"[78] {_x['nameA']}: side B holiday flag wrong")
+        _ja, _jb = _ix78[_ka], _ix78[_ka + '#side-b']
+        for _s in D['sets']:
+            _r = _s.get('rank') or []
+            if _ja in _r and (_jb not in _r or _r.index(_jb) != _r.index(_ja) + 1): F.append(f"[78] {_x['nameA']}: side B not right after side A in {_s['name']}"); break
+except Exception as _e: F.append(f"[78] double-sided check did not run: {_e}")
+
 if W:
     print(f"FYM GATE WARNING [9]: {sum(map(len, W.values()))} unmatched non-partner mats visible, brands pending Tiffany's decision (builder/fym_flags/nonpartner_pending.json):")
     for b, v in sorted(W.items()): print(f"  {b} ({len(v)}): " + ', '.join(v[:8]) + (' ...' if len(v) > 8 else ''))

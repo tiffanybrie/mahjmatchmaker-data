@@ -1,0 +1,325 @@
+{
+ "_doc": "Tiffany Oct 26 11:35: when racks are otherwise equal the better-photographed one leads (shareable cards). pq 1-5 by eye, v95 card image: 5 = single horizontal straight-on rack cleanly cut; 4 = single rack, slight angle/pusher; 3 = stack or mild issues; 2 = angled/perspective/standing/grey bg; 1 = lifestyle/not the rack. Overrides config/rack-photo-quality.json. Applied by builder/fym_fix_oct25/v95_rackphotos.py.",
+ "racks": {
+  "missmahjong.com/iridescent-opal-scalloped-acrylic-racks": {
+   "pq": 5,
+   "why": "single horizontal brand cutout (recut v95)",
+   "name": "Miss Mahjong Iridescent Opal Scalloped"
+  },
+  "www.ohmymahjong.com/white-rack-pusher": {
+   "pq": 4,
+   "why": "single rack, pusher raised",
+   "name": "Oh My Mahjong White Acrylic"
+  },
+  "mahjongrowandco.com/translucent-chocolate-rack-pusher-set": {
+   "pq": 3,
+   "why": "stack, diagonal",
+   "name": "Mahjong Row & Co. Translucent Plum"
+  },
+  "missmahjong.com/opal-and-brass-acrylic-racks": {
+   "pq": 5,
+   "why": "single horizontal cutout",
+   "name": "Miss Mahjong Opal & Brass"
+  },
+  "mahjmood.com/white-acrylic-racks-set-of-4-no-pushers-included": {
+   "pq": 2,
+   "why": "angled close crop on grey slate, ends cut off",
+   "name": "White Acrylic Racks- Set of 4 (NO PUSHERS INCLUDED)"
+  },
+  "mahjmood.com/pure-white-acrylic-racks-and-pushers": {
+   "pq": 2,
+   "why": "angled pile on grey slate",
+   "name": "Scalloped Pure White Acrylic Racks and Pushers"
+  },
+  "mahjmood.com/white-wooden-racks-with-scalloped-pushers": {
+   "pq": 5,
+   "why": "single horizontal rack cut off slate (recut v95)",
+   "name": "White Wooden Racks with Scalloped Pushers"
+  },
+  "mahjongrowandco.com/white-rack-pusher-set": {
+   "pq": 4,
+   "why": "single rack, slight angle",
+   "name": "White Rack & Pusher Set"
+  },
+  "missmahjong.com/scalloped-acrylic-racks": {
+   "pq": 2,
+   "why": "angled close-up, rack cut off",
+   "name": "Clear Acrylic Racks with Scalloped Pusher"
+  },
+  "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-white": {
+   "pq": 3,
+   "why": "single pusher strip only (recut v95)",
+   "name": "Wavy Mahjong Rack Pusher Set - White"
+  },
+  "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-light-pink": {
+   "pq": 3,
+   "why": "single pusher strip only (recut v95)",
+   "name": "Wavy Mahjong Rack Pusher Set - Light Pink"
+  },
+  "shop.andersruff.com/clear-acrylic-mahjong-rack-set-straight-pushers": {
+   "pq": 2,
+   "why": "angled perspective stack on white",
+   "name": "Clear Acrylic Rack Set — Straight Pushers"
+  },
+  "shop.andersruff.com/clear-acrylic-mahjong-rack-set-scalloped-pushers": {
+   "pq": 2,
+   "why": "angled perspective, rack standing",
+   "name": "Clear Acrylic Rack Set — Scalloped Pushers"
+  },
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers": {
+   "pq": 1,
+   "why": "colour lineup, not this rack",
+   "name": "Lucite Mahjong Rack & Pusher Set – Emerald"
+  },
+  "www.bambirdboutique.com/white-acrylic-rack-and-pusher-set-set-of-4": {
+   "pq": 5,
+   "why": "single horizontal rack (recut v95)",
+   "name": "Bam Bird Boutique White Acrylic"
+  },
+  "www.bamletsmahjong.com/mahjong-white-acrylic-rack-and-pusher": {
+   "pq": 3,
+   "why": "stack of 4",
+   "name": "Mahjong White Acrylic Rack and Pusher"
+  },
+  "www.bamletsmahjong.com/mahjong-clear-acrylic-racks-and-scallop-pusher": {
+   "pq": 2,
+   "why": "pale stack, low contrast",
+   "name": "Mahjong Clear Acrylic Racks and Scallop Pusher"
+  },
+  "www.bamletsmahjong.com/white-acrylic-double-mahjong-racks-with-magnetic-pushers-set-of-2": {
+   "pq": 2,
+   "why": "close-up on busy mat",
+   "name": "White Acrylic Double Mahjong Racks with Magnetic Pushers (Set of 2)"
+  },
+  "www.bamletsmahjong.com/white-acrylic-racks-set-4": {
+   "pq": 2,
+   "why": "lifestyle with tiles",
+   "name": "White Acrylic Mahjong Racks - Set of 4"
+  },
+  "www.bamletsmahjong.com/white-wooden-racks-set-4": {
+   "pq": 4,
+   "why": "single rack, pusher raised",
+   "name": "Wooden Mahjong Racks & Pushers - White - 4 Set"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-red": {
+   "pq": 3,
+   "why": "stack with pusher, diagonal",
+   "name": "The Ultimate Rack - HOLIDAY RED"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-plum": {
+   "pq": 3,
+   "why": "stack with pusher, diagonal",
+   "name": "The Ultimate Rack - ELECTRIC ORCHID"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-turquoise": {
+   "pq": 3,
+   "why": "stack with pusher, diagonal",
+   "name": "The Ultimate Rack - PEACOCK BLUE"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-hottie-pink": {
+   "pq": 3,
+   "why": "stack with pusher, diagonal",
+   "name": "The Ultimate Rack - HIGHLIGHTER PINK"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-bright-white": {
+   "pq": 4,
+   "why": "single horizontal, whites lifted (v95)",
+   "name": "The Ultimate Rack - BRIGHT WHITE"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-clear": {
+   "pq": 3,
+   "why": "close crop of a stack",
+   "name": "The Ultimate Rack - CRYSTAL CLEAR"
+  },
+  "www.letsmahj-on.com/luxe-acrylic-scalloped-mahjong-rack-pink": {
+   "pq": 2,
+   "why": "standing, angled",
+   "name": "Luxe Acrylic Scalloped Mahjong Rack - Pink"
+  },
+  "www.letsmahj-on.com/luxe-acrylic-scalloped-mahjong-rack": {
+   "pq": 2,
+   "why": "angled perspective",
+   "name": "Luxe Acrylic Scalloped Mahjong Rack - Clear"
+  },
+  "www.middleandmainmahjong.com/la-vie-en-rose-mahjong-rack-and-pusher-set-of-4": {
+   "pq": 4,
+   "why": "single rack levelled (v95)",
+   "name": "La Vie En Rose Mahjong Rack and Pusher, Set of 4"
+  },
+  "www.middleandmainmahjong.com/milk-glass-collection-mahjong-rack-and-pusher-set-of-4": {
+   "pq": 4,
+   "why": "single rack, mild perspective",
+   "name": "Milk Glass Collection Mahjong Rack and Pusher, Set of 4"
+  },
+  "www.middleandmainmahjong.com/clear-acrylic-mahjong-rack-and-pusher-set-of-4": {
+   "pq": 2,
+   "why": "angled perspective with tiles",
+   "name": "Clear Acrylic Mahjong Rack and Pusher, Set of 4"
+  },
+  "www.ohmymahjong.com/sandstone-rack-and-pusher-set": {
+   "pq": 3,
+   "why": "diagonal with tiles",
+   "name": "Sandstone Rack and Pusher Set"
+  },
+  "www.ohmymahjong.com/acrylic-rack-and-pusher-set": {
+   "pq": 4,
+   "why": "single rack + pusher",
+   "name": "Multicolor Acrylic Rack & Pusher Set"
+  },
+  "www.ohmymahjong.com/carrara-rack-pusher-set": {
+   "pq": 3,
+   "why": "diagonal with tiles",
+   "name": "Carrara Rack & Pusher Set"
+  },
+  "www.ohmymahjong.com/clear-acrylic-rack-and-pusher-set": {
+   "pq": 5,
+   "why": "single rack + pusher, clean",
+   "name": "Clear Acrylic Rack & Pushers Set"
+  },
+  "www.ymimports.com/nb-mp005-a": {
+   "pq": 2,
+   "why": "diagonal stack",
+   "name": "Modern Mahjong Racks with Built-in Pushers - Black - Set of 4"
+  },
+  "www.ymimports.com/nb-mp004-a": {
+   "pq": 3,
+   "why": "single rack, pusher open (recut v95)",
+   "name": "Modern Mahjong Racks with Built-in Pushers - Clear - Set of 4"
+  },
+  "vr:My Fair Mahjong:Solid White": {
+   "pq": 3,
+   "why": "stack",
+   "name": "My Fair Mahjong White"
+  },
+  "vr:My Fair Mahjong:Appaloosa": {
+   "pq": 3,
+   "why": "stack",
+   "name": "My Fair Mahjong Appaloosa"
+  },
+  "vr:My Fair Mahjong:Transparent Clear": {
+   "pq": 4,
+   "why": "flat horizontal, low contrast",
+   "name": "My Fair Mahjong Clear"
+  },
+  "shop.andersruff.com/rose-pink-pearl-acrylic-mahjong-rack-set-straight-pushers": {
+   "pq": 4,
+   "why": "single rack levelled (v95)",
+   "name": "Anders Ruff Rosè Pink Pearl"
+  },
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51324768551221": {
+   "pq": 3,
+   "why": "stack",
+   "name": "Bam Bird Boutique Lucite – Azure"
+  },
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611368245": {
+   "pq": 3,
+   "why": "stack",
+   "name": "Bam Bird Boutique Lucite – Neon"
+  },
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=53275679654197": {
+   "pq": 3,
+   "why": "stack",
+   "name": "Bam Bird Boutique Lucite – Frosted Pink"
+  },
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611433781": {
+   "pq": 3,
+   "why": "stack",
+   "name": "Bam Bird Boutique Lucite – Magenta"
+  },
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611401013": {
+   "pq": 3,
+   "why": "stack",
+   "name": "Bam Bird Boutique Lucite – Pink"
+  },
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611466549": {
+   "pq": 3,
+   "why": "stack",
+   "name": "Bam Bird Boutique Lucite – Tortoise"
+  },
+  "www.bamletsmahjong.com/mahjong-acrylic-racks-and-ruffle-pushers-pre-order": {
+   "pq": 4,
+   "why": "single rack, slight rise",
+   "name": "Bam! Let's Mahjong White Acrylic Scalloped"
+  },
+  "www.charlestonmahjongclub.com/clear-acrylic-mahjong-racks-with-magnetic-pushers-set-of-4-20-long": {
+   "pq": 3,
+   "why": "single rack levelled, perspective (v95)",
+   "name": "Charleston Mahjong Club Clear Acrylic"
+  },
+  "mahjmood.com/scalloped-white-and-clear-acrylic-rack-and-pusher-set": {
+   "pq": 4,
+   "why": "single rack + pusher levelled (v95)",
+   "name": "Mahj Mood Scalloped White and Clear Acrylic"
+  },
+  "www.middleandmainmahjong.com/blue-and-white-chinoiserie-mahjong-rack-and-pusher-set-of-4-copy": {
+   "pq": 4,
+   "why": "single rack, mild perspective",
+   "name": "Middle & Main White Lace"
+  },
+  "www.middleandmainmahjong.com/blue-and-white-chinoiserie-rack-set-of-4": {
+   "pq": 2,
+   "why": "diagonal on white with background",
+   "name": "Middle & Main Blue and White Chinoiserie"
+  },
+  "myfairmahjong.com/acrylic-mahjong-racks?v=52896919519543": {
+   "pq": 3,
+   "why": "stack",
+   "name": "My Fair Mahjong Pearl White"
+  },
+  "myfairmahjong.com/acrylic-mahjong-racks?v=52896919322935": {
+   "pq": 3,
+   "why": "stack",
+   "name": "My Fair Mahjong Pearl Aqua"
+  },
+  "myfairmahjong.com/acrylic-mahjong-racks?v=52896919683383": {
+   "pq": 3,
+   "why": "stack",
+   "name": "My Fair Mahjong Pearl Blush"
+  },
+  "myfairmahjong.com/acrylic-mahjong-racks?v=52896920207671": {
+   "pq": 3,
+   "why": "stack",
+   "name": "My Fair Mahjong Pearl Blue Crosshatch"
+  },
+  "www.ymimports.com/nb-mp007-a": {
+   "pq": 2,
+   "why": "fanned",
+   "name": "Yellow Mountain Modern Multi-Color"
+  },
+  "www.ymimports.com/us-rl025-a": {
+   "pq": 2,
+   "why": "fanned",
+   "name": "Yellow Mountain Multi-Color Acrylic"
+  },
+  "www.ymimports.com/us-rl010-a": {
+   "pq": 4,
+   "why": "single horizontal",
+   "name": "Yellow Mountain Purple Acrylic"
+  },
+  "www.ymimports.com/us-rl006-a": {
+   "pq": 3,
+   "why": "stack",
+   "name": "Yellow Mountain Jewel Tone Multi-Color Acrylic"
+  },
+  "mahjmood.com/copy-scalloped-clear-acrylic-rack-and-pusher-set-of-4": {
+   "pq": 2,
+   "why": "clear stack angled on grey slate",
+   "name": "Mahj Mood Scalloped Clear Acrylic"
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders": {
+   "pq": 2,
+   "why": "swatch chart",
+   "name": "Mahjong Register Signature Collection Acrylic"
+  },
+  "mahjmood.com/baby-blue-wooden-racks-with-scalloped-pushers": {
+   "pq": 5,
+   "why": "single horizontal rack cut off slate (recut v95)",
+   "name": "Baby Blue Wooden Racks with Scalloped Pushers"
+  },
+  "mahjmood.com/double-wooden-mahjong-racks": {
+   "pq": 4,
+   "why": "single double rack cut off slate (recut v95)",
+   "name": "Double Wooden Mahjong Racks (Set of Racks and 4 Pushers)"
+  }
+ }
+}

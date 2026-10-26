@@ -1,0 +1,9 @@
+{
+ "about": "Motif hints for FYM mat ranking (v95_matrank.py; Tiffany Oct 26 11:37: Aloha is tropical, rank tropical mats up). A set whose NAME matches a motif lifts mats whose NAME matches the same motif. Only names, never invented tags. grid_back_sets / whole_photo_sets: tile photo layouts where the back is not the right half.",
+ "motifs": {
+  "tropical": "aloha|tropic|palm tree|palm leaf|palm frond|hibiscus|plumeria|frangipani|hawai|toucan|parrot|banana leaf|island|pineapple|monstera|flamingo",
+  "nautical": "nautical|sailboat|sailing|anchor|yacht|regatta|lighthouse"
+ },
+ "grid_back_sets": "Nivalee|Tinselle|Sylvaria|Aveline|Lilac[ée]e|Marivelle|Petal[ée]e|Style of Your Life|Legacy Wave",
+ "whole_photo_sets": "Tortoise"
+}
