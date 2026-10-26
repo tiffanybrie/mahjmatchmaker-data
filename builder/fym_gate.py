@@ -656,6 +656,9 @@ for k, r in _RR.items():
 # [53] Oct 25 (Tiffany 20:03): the mat filter row sits between the tile photo and the mat deck (it filters the mats), like the racks row
 if "<div class=\"rfil mfil\">${filters('m')}</div>${deck('m')}" not in UI or "role=\"listbox\"></div></div>`+filters('m')" in UI:
     F.append("[53] mat filter row is not between the tile photo and the mat deck")
+# [54] Oct 25 (Tiffany 20:07): the texted / emailed shop list has one block per piece with a blank line between
+if "${L.join('\\n\\n')}" not in UI or "${kind} \\u00b7 ${nm} by ${o.bn}\\n${o.u}" not in UI:
+    F.append("[54] 'Text or email me this list' is not one block per piece with blank lines between")
 # [46] Oct 25 (Tiffany 16:37): Mood board rack labels sit BELOW the racks (whole rack visible)
 if 'racks(rx,ry,rw,rh,{fs:STORY?23:19,maxRow:rh,rows:true,back:true,below:true})' not in UI:
     F.append("[46] Mood board (tri view) rack labels are not below the racks (below:true)")
