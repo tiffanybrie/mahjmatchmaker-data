@@ -336,3 +336,4 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 - 2026-10-26 14:03 (Matches & Catalog) Tiffany: partner email target send 2:30-2:45pm today (she sends).
 - 2026-10-26 14:05 (Matches & Catalog) Tiffany: the share (link preview) image for the FYM preview page is the generic site logo; wants a better one. Per-page Social Image + SEO title/description to be set on /find-your-mat-ch-preview and /find-your-match. Signature image "xo, Tiffany ♥" (Mrs Saint Delafield script) added to the partner email in place of "Warmly, Tiffany, Mahj Matchmaker".
 - 2026-10-26 14:07 (Matches & Catalog) Tiffany: share image: no fade/gradient, no partial image; crop to just the two (phone + one card), clean.
+- 2026-10-26 14:07 (Matches & Catalog) Tiffany: she times the partner send to Version 1.0 (v96) being LIVE; target ~2:30-2:45. Top priority.
