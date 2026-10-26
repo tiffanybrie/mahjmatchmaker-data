@@ -675,7 +675,7 @@ for _s in D['sets']:
         _want = [m for m in _co[_s['slug']] if m in D['mats'] and not D['mats'][m].get('hid')]
         for _f in ('cr', 'rank'):
             if [D['order'][x] for x in _s.get(_f, [])[:len(_want)]] != _want: F.append(f"[57] {_s['name']}: coordinated mats are not first in {_f}")
-# [58] Oct 25 (Tiffany 21:43): Bam Bird tile sets use the uniform faces|backs split photo (config/fym-bambird-splits-oct25.json)
+# [58] Oct 25 (Tiffany 21:43; + Classic/East Meets West Tortoise Oct 26 9:24am, v94_bambirdtortoise.py): Bam Bird tile sets use the uniform faces|backs split photo (config/fym-bambird-splits-oct25.json)
 for _k in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-bambird-splits-oct25.json')))['splits']:
     if _k in D['tiles'] and not str(D['tiles'][_k].get('full', '')).startswith('t92/'): F.append(f"[58] Bam Bird tile {_k} is not using its split photo")
 # [59] Oct 26 (Tiffany 8:24am): Start with tiles has no default colour chip; every set shows A-Z
