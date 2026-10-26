@@ -208,3 +208,4 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 - 2026-10-26 12:17am · Main · Tiffany's Oh My Mahjong dashboard screenshot → Oct 25 OMM filled: #279514 (35248000) $769.50, 6 items, 3:23pm, $153.90 approved. Oct 25 total $575.34, Oct MTD $7,082.74. Still unknown: My Fair Mahjong 3, Mahjong Register 1. (Oct 21/23 OMM rows already matched.)
 - 2026-10-26 12:27am · Main · Tiffany's Mahjong Register + My Fair Mahjong screenshots → Oct 25 COMPLETE: Mahjong Register #1634 $115.00 10:43pm $16.10; My Fair Mahjong #71430 $11.25, #71457 $11.25, #71466 $31.50. Oct 25 total $645.44, Oct MTD $7,152.84.
 - 2026-10-26 12:27am · Main · Tiffany on partner graphic layouts A/B/C: "So these are bad." Pointed to Instagram @mahjcloset as the reference to look at. → Claude studying it before redoing.
+- Oct 26 12:36am (Matches & Catalog): KEEP the 6 Mahjong by SI mats in FYM for now (non-partner, no commission); relink to www.mahjongbysi.com.
