@@ -590,8 +590,15 @@ if "pairUp(i);jump('s-racks')" not in UI or 'data-dgrid="1"' not in UI or 'data-
 if "const lk=src=>" in UI and "i.crossOrigin='anonymous'" not in UI[UI.index('const lk=src=>'):UI.index('const lk=src=>') + 400]:
     F.append("[43] card image loader lk() does not set crossOrigin='anonymous' for http(s) images (website card breaks: tainted canvas)")
 # [44] Oct 25 (Tiffany 14:43): the card's tile picture must be the SAME photo the shopper matched to on the swipe screen (tileFull), never a separate HD/listing photo.
-if "hdOr('t',s.tile" in UI or 'Promise.resolve(tileFull(s)||pile(s)).then(lk)' not in UI:
+# Oct 26 (Tiffany 11:55, Rackin' Rudolph Canva v2): a tile may carry T.cf = a circle crop of the SAME photo as its swipe-screen strip
+# (the strip cannot centre the backs). Allowed only for tiles listed in config/fym-tile-circle-crops-oct26.json.
+_cf44 = json.load(open(REPO + 'config/fym-tile-circle-crops-oct26.json'))['tiles'] if os.path.exists(REPO + 'config/fym-tile-circle-crops-oct26.json') else {}
+_ok44 = ('Promise.resolve(tileFull(s)||pile(s)).then(lk)' in UI) or ('Promise.resolve((T[s.tile].cf&&!T[s.tile].soon?T[s.tile].cf:tileFull(s))||pile(s)).then(lk)' in UI)
+if "hdOr('t',s.tile" in UI or not _ok44:
     F.append("[44] match card tile photo is not the swipe-screen photo tileFull(s) (it must never pick a separate HD/listing photo)")
+for _k44, _t44 in T.items():
+    if _t44.get('cf') and (_k44 not in _cf44 or _cf44[_k44].get('cf') != _t44['cf'] or _cf44[_k44].get('full') != _t44.get('full')):
+        F.append(f"[44] {_t44.get('n')}: card circle photo cf={_t44['cf']} is not a listed crop of its swipe-screen photo (config/fym-tile-circle-crops-oct26.json)")
 # [45] Oct 25 (Tiffany form Oct 24 9:45pm + 16:36: Boots & Bubbles blue tiles out of frame on the card). The Mood board band (3.87:1,
 #      zoom 1.05, anchor [.5,.45]) of every visible set's tile photo must be mostly tiles, not white background / a pouch gap.
 def _band_tiles(path, bf):

@@ -1,0 +1,11 @@
+{
+ "_about": "Tiles whose card circle uses T.cf, a crop of the SAME photo as the swipe-screen strip T.full (gate [44]). Add only with Tiffany's photo OK.",
+ "tiles": {
+  "hol:rackin-rudolph": {
+   "full": "t95r/rackin-rudolph-strip.jpg",
+   "cf": "t95r/rackin-rudolph-circle.jpg",
+   "source": "assets/tiles/v95/rudolph/canva-v2.png (+ canva-v1.png left part for the strip)",
+   "why": "Tiffany Oct 26 11:55am picked Canva v2 so the circle shows the red back + green/white layer; v2's seam at x~980 means the strip cannot centre the backs"
+  }
+ }
+}
