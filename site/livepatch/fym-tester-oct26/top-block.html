@@ -1,0 +1,33 @@
+<!-- FYM tester page: TOP code block (goes ABOVE the native "FYM Tester Feedback" form block). Draft Oct 26, not live. -->
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+<style>
+  #fymt-top{font-family:'Bitter',Georgia,serif;color:#062A55;text-align:center;max-width:640px;margin:0 auto;padding:8px 16px 4px}
+  #fymt-top .fymt-pill{display:inline-block;background:#fde7ee;color:#062A55;font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:14px}
+  #fymt-top h1{font-family:'Bitter',Georgia,serif;font-weight:700;font-size:clamp(28px,6vw,40px);line-height:1.15;margin:0 0 12px;color:#062A55}
+  #fymt-top h1 em{font-style:italic}
+  #fymt-top p{font-size:17px;line-height:1.55;margin:0 0 10px;color:#062A55}
+  /* Style the native Squarespace form block on THIS page to match the site buttons (CSS in a code block only loads on this page). */
+  .sqs-block-form button[type="submit"],.sqs-block-form input[type="submit"],.sqs-block-form .form-submit-button{background:#F56B8B !important;color:#fff !important;border:0 !important;border-radius:10px !important;font-family:'Bitter',Georgia,serif !important;font-weight:700 !important;letter-spacing:.02em !important;text-transform:none !important}
+  .sqs-block-form{max-width:640px;margin-left:auto;margin-right:auto}
+</style>
+<div id="fymt-top">
+  <div class="fymt-pill">Version 1.0 &middot; Tester week</div>
+  <h1>Thank you for testing Find <em>Your</em> Mat-ch&trade;!</h1>
+  <p>You're one of the very first to try it, and I'd love to hear what you think. What did you love? What was confusing? Anything look off?</p>
+  <p>Fill this out as many times as you like this week. It comes straight to me. &#128149;</p>
+</div>
+<script>
+/* Version tag: fills the form's hidden "Version" field (Squarespace reads ?SQF_VERSION=...).
+   Bump FYMT_VERSION when a new public version goes live (1.1, 1.2 ... per docs/FYM-VERSIONS.md). Public labels only. */
+(function(){
+  var FYMT_VERSION='1.0';
+  try{
+    if(window.top!==window.self) return;                 /* never in the Squarespace editor frame */
+    if(/squarespace\.com$/.test(location.hostname)) return;
+    var q=new URLSearchParams(location.search);
+    if(q.get('SQF_VERSION')===FYMT_VERSION) return;
+    q.set('SQF_VERSION',FYMT_VERSION);
+    location.replace(location.pathname+'?'+q.toString()+location.hash);
+  }catch(e){}
+})();
+</script>

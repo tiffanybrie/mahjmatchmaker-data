@@ -91,7 +91,7 @@
     <id>mahjmatchmaker:contact-form</id>
     <updated>2026-10-21T19:00:00Z</updated>
     <content></content>
-    <apps:property name='hasTheWord' value='from:form-submission@squarespace.info -subject:("Album Requests" OR "Album Request" OR "Share Your Table" OR "FYM Feedback" OR "Find Your Mat-ch Feedback")'/>
+    <apps:property name='hasTheWord' value='from:form-submission@squarespace.info -subject:("Album Requests" OR "Album Request" OR "Share Your Table" OR "FYM Feedback" OR "Find Your Mat-ch Feedback" OR "FYM Tester Feedback")'/>
     <apps:property name='label' value="Site/Contact form"/>
     <apps:property name='shouldStar' value="true"/>
     <apps:property name='shouldAlwaysMarkAsImportant' value="true"/>
@@ -115,6 +115,18 @@
     <content></content>
     <apps:property name='hasTheWord' value='from:form-submission@squarespace.info subject:("FYM Feedback" OR "Find Your Mat-ch Feedback")'/>
     <apps:property name='label' value="Site/FYM feedback"/>
+    <apps:property name='shouldArchive' value="true"/>
+    <apps:property name='shouldMarkAsRead' value="true"/>
+    <apps:property name='shouldNeverSpam' value="true"/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>FYM tester feedback (group + friends, Version 1.0+; separate from partner FYM Feedback)</title>
+    <id>mahjmatchmaker:fymtester</id>
+    <updated>2026-10-26T20:00:00Z</updated>
+    <content></content>
+    <apps:property name='hasTheWord' value='from:form-submission@squarespace.info subject:"FYM Tester Feedback"'/>
+    <apps:property name='label' value="Site/FYM tester feedback"/>
     <apps:property name='shouldArchive' value="true"/>
     <apps:property name='shouldMarkAsRead' value="true"/>
     <apps:property name='shouldNeverSpam' value="true"/>
