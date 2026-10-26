@@ -30,7 +30,7 @@ Links are in the first comment 👇
 
 ✨💕 Sneak Peek: Find Your Mat-ch™ 💕✨
 
-Hey guys! I wanted you guys to be among the first to see Find Your Mat-ch, Mahj Matchmaker 2.0, before it goes public tomorrow! Start with tiles or start with a mat and swipe your perfect match. It's a labor of love and a work in progress, so I'd LOVE your feedback on the tester page. 💗
+Hey guys! I wanted y'all to be among the first to see Find Your Mat-ch, Mahj Matchmaker 2.0, before it goes public tomorrow! Start with tiles or start with a mat and swipe your perfect match. It's a labor of love and a work in progress, so I'd LOVE your feedback on the tester page. 💗
 
 Happy mat-ching! 🀄💕
 Links are in the first comment 👇
