@@ -6,6 +6,7 @@ rm -rf "$D"; cp -r "$S" "$D"
 python3 $H/v92_tilesplits.py "$D" | grep -i tortoise || true
 python3 $H/v95_addracks.py "$D" | tail -1
 python3 $H/v95_etsy.py "$D" | tail -1
+python3 $H/v92_coordinated.py "$D" | tail -1
 python3 $H/v95_rackrotate.py "$D" | tail -1
 if [ -f $H/v95_racksize.py ]; then python3 $H/v95_racksize.py "$D" | tail -1; fi
 python3 $H/v95_titlewidth.py "$D" | tail -1
