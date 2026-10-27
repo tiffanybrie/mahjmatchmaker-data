@@ -505,3 +505,5 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - Oct 27 2:06am · Tiffany BUG: on iPhone the Shop by brand pop-up's last brands (Virora, Wren) can't be reached; scrolling sticks, then pushes the page and the list floats mid-page → v100c: frame pop-ups fit the phone screen, no scroll chaining (gate [99]).
 - Oct 27 2:07am · Tiffany APPROVED: The Classic title = Joker red (#bc375c); Mod Chartreuse title = the ORANGE from its faces (#e49c0c).
 >>>>>>> Stashed changes
+- Oct 27 2:21am · Tiffany: why is Britt Mills House Print missing? ("very old, me chasing down mats") → watch saw it Oct 22 but adding is a manual build step that sat; sweep found ~10 missing partner mats; committed to: add next build, new gate check (partner mat live >2 days missing = FAIL), daily processing.
+- Oct 27 2:07am · Tiffany: FYM went live tonight on /find-your-match (Main, ~1:25am, v99 block); 8am switch task disabled.
