@@ -4,7 +4,7 @@ exec(open('comp.py').read().split('mode=sys.argv[1]')[0])
 for o in []:
     Image.open(o+'_cardonly.png').convert('RGB').resize((1080,1350),Image.LANCZOS).save(f'card-{o}.jpg',quality=92)
 def story_card(o,top_html):
-    return f'<div class="c" style="top:230px">{top_html}</div><img src="file://{D}/card-{o}.jpg" style="position:absolute;left:90px;top:520px;width:900px;border-radius:24px;box-shadow:0 20px 50px rgba(6,42,85,.14)">'
+    return f'<div class="c" style="top:230px">{top_html}</div><img src="file://{D}/card-{o}.jpg" style="position:absolute;left:40px;top:480px;width:1000px;border-radius:24px;box-shadow:0 20px 50px rgba(6,42,85,.14)">'
 P={}
 P['bb-2-phone']=(1350,f'<div class="c" style="top:80px">{pill("FALL FAVORITE")}<div style="font:400 78px/1.05 Cap;margin-top:24px">Start with<br>Brownstone Bloom</div><div style="font:italic 400 36px PF;color:#4a3d58;margin-top:16px">Pick the tiles, swipe your mat, add racks.</div></div>'+phone('bb_swipe.png',400,340,560))
 S={}
