@@ -489,3 +489,7 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 - Oct 27 12:50am (Main): Tiffany '1 yes, 2 yes' → Tigre de Tartán (House Hearts Warm White × Domino Faded Carolina + TdT tortoise) and Yellow Mountain Imports (Huntington × Stella + YMI Chestnut + Clear) APPROVED. 30 of 31 partner graphics done; Peace Love Mahjong left.
 - Oct 27 12:50am (Main): Tiffany: NO white outline/offset on ANY card title (Huntington's dark green still had the faint white copy). Partner graphics: removed everywhere, re-rendering; app: MATCH-INBOX priority updated.
 - Oct 27 12:37-12:47am · Tiffany: hates the v98b card titles (navy outline, OG Desert Dreams); "I didn't tell anybody to do anything to the text"; Solara must be PEACH like her approved album; Papaya Spritz must not be green; stop darkening colours ("chill on things not being able to be read"); show FULL cards with tiles, not title strips. → nothing published; v100b = album colours exactly (config/fym-title-colours-oct27.json), no outline/darkening; pale-set fallback (option 1 deeper own shade vs option 2 navy) waiting on her. Rule: any title-style change needs her yes first (gate [98]).
+
+
+## Oct 27 12:43am - ShopMy product images: aerial flat mat photos only (STANDING for ShopMy mat boards)
+Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aerial photo from the listing gallery (copy its photo URL into the product's Image URL field). Mahj & Moon redone: 6 tabletop-only mats removed, 5 new mats added, 8 re-imaged, cover rebuilt. 13 mats now.

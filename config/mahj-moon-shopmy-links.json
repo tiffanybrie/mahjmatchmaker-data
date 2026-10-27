@@ -6,7 +6,7 @@
     "created": true,
     "url": "https://shopmy.us/collections/8525607",
     "shelf_position": "after Etsy Mahjong Mats, before Betty June (Oct 27)",
-    "products_pinned": 14,
+    "products_pinned": 13,
     "cover": "assets/shopmy/covers-portrait/mahj-and-moon.jpg"
   },
   "mahjandmoon.com/pink-lemon-blossom-mahjong-mat": {
@@ -95,23 +95,8 @@
   },
   "_pinned_etsy_listings": [
     {
-      "title": "Leopard American Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4531965642",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    },
-    {
-      "title": "Floral Chevron Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4527812549",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    },
-    {
       "title": "Sun Tarot Mahjong Mat",
       "etsy_url": "https://www.etsy.com/listing/4527820445",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    },
-    {
-      "title": "Pink Leopard Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4541950825",
       "shopmy_collection": "https://shopmy.us/collections/8525607"
     },
     {
@@ -120,18 +105,8 @@
       "shopmy_collection": "https://shopmy.us/collections/8525607"
     },
     {
-      "title": "Chinoiserie Monkey Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4527262793",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    },
-    {
       "title": "Pink & Blue Grandmillennial Mahjong Mat",
       "etsy_url": "https://www.etsy.com/listing/4527255793",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    },
-    {
-      "title": "Retro Mid-Century Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4538818979",
       "shopmy_collection": "https://shopmy.us/collections/8525607"
     },
     {
@@ -155,15 +130,36 @@
       "shopmy_collection": "https://shopmy.us/collections/8525607"
     },
     {
-      "title": "Orange Gingham Picnic Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4542635324",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    },
-    {
       "title": "Tropical Toucan Pink Palm Mahjong Mat",
       "etsy_url": "https://www.etsy.com/listing/4524615723",
       "shopmy_collection": "https://shopmy.us/collections/8525607"
+    },
+    {
+      "title": "Palm Tree Retro Tropical Mahjong Mat",
+      "etsy_url": "https://www.etsy.com/listing/4577957885",
+      "shopmy_collection": "https://shopmy.us/collections/8525607"
+    },
+    {
+      "title": "Vintage Floral Pink Mahjong Mat",
+      "etsy_url": "https://www.etsy.com/listing/4575845329",
+      "shopmy_collection": "https://shopmy.us/collections/8525607"
+    },
+    {
+      "title": "Preppy Chinoiserie Tiger Mahjong Mat",
+      "etsy_url": "https://www.etsy.com/listing/4458503594",
+      "shopmy_collection": "https://shopmy.us/collections/8525607"
+    },
+    {
+      "title": "Lobster Coastal Mahjong Mat",
+      "etsy_url": "https://www.etsy.com/listing/4566953251",
+      "shopmy_collection": "https://shopmy.us/collections/8525607"
+    },
+    {
+      "title": "Scalloped Pink Floral Mahjong Mat",
+      "etsy_url": "https://www.etsy.com/listing/4600985202",
+      "shopmy_collection": "https://shopmy.us/collections/8525607"
     }
   ],
-  "_note_oct27": "ShopMy product go-links are Rakuten/linksynergy deeplinks that are not exposed per item. Use the collection URL for ShopMy and the Etsy listing URL per mat. Match FYM Mahj & Moon mats to these by design name; Leopard American is a confirmed match for leopard-animal-print-american-mahjong-mat."
+  "_note_oct27": "ShopMy product go-links are Rakuten/linksynergy deeplinks that are not exposed per item. Use the collection URL for ShopMy and the Etsy listing URL per mat. Match FYM Mahj & Moon mats to these by design name; Leopard American is a confirmed match for leopard-animal-print-american-mahjong-mat. IMAGE RULE (Tiffany): ShopMy product images are clean aerial flat mat photos only (no tabletop room shots). Set via edit > Image URL using the listing gallery photo URL.",
+  "_removed_oct27": "Leopard American, Floral Chevron, Pink Leopard, Chinoiserie Monkey, Retro Mid-Century, Orange Gingham: only tabletop/AI-looking photos, removed from the collection (Tiffany Oct 27 12:43am)."
 }
