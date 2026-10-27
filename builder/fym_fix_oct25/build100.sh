@@ -7,3 +7,4 @@ bash $H/build99.sh "$T/b98" "$D" | tail -1
 python3 $H/v100_title.py "$D"; python3 $H/v100b_title.py "$D" dark
 sed -i "s/(Version 1.3)/(Version 1.4)/g; s/Version 1.3/Version 1.4/g" "$D/index.html"; grep -c "Version 1.4" "$D/index.html"; rm -rf "$T"
 python3 $H/v100c_sheet.py "$D"
+python3 $H/v100d_sheet.py "$D"

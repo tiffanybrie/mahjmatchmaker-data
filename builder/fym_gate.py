@@ -1153,7 +1153,7 @@ if not _pre98:
         if not str(D['logos'].get(_b, '')).startswith('lg98') or not str(_hd96.get(_b, '')).startswith('file:r98/'): F.append(f"[96] {_b} logo badge is not the visible v98 wordmark")
 # [99] Tiffany Oct 27 2:06am (iPhone, Shop by brand: last brands unreachable, list sticks then floats mid-page): pop-up sheets
 # inside the website frame must fit the phone screen and not chain their scroll into the page (v100c_sheet.py).
-if 'function openSheet' in h and ('/*v100c sheet*/' not in h or 'overscroll-behavior:contain' not in h or "setProperty('--sbh'" not in h): F.append('[99] framed pop-up sheets can run below the phone screen / chain scroll (v100c fix missing)')
+if 'function openSheet' in h and ('/*v100c sheet*/' not in h or 'overscroll-behavior:contain' not in h or "setProperty('--sbh'" not in h or '/*v100d visible*/' not in h): F.append('[99] framed pop-up sheets can run below the phone screen / chain scroll (v100c fix missing)')
 # [98] Tiffany Oct 27 12:37am ("these cards are hideous now... I didn't tell anybody to do anything to the text"): the match-card
 # title keeps the pre-Oct-26 look: solid fill + soft white offset shadow, NO outline (no strokeText on the title), exact s.tc when it
 # reads (contrast >= 2.5), v97 same-hue darkening otherwise (builder/fym_fix_oct25/v100_title.py). Title style changes need HER yes.
