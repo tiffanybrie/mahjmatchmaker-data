@@ -15,3 +15,4 @@ python3 $H/v98_names.py "$D" | tail -1
 python3 $H/strip_inline_img.py "$D/index.html" write
 sed -i "s/(Version 1.1)/(Version 1.2)/g; s/Version 1.1/Version 1.2/g" "$D/index.html"; grep -c "Version 1.2" "$D/index.html"
 ls -la "$D/index.html"
+python3 $H/v98b_fix.py "$D" | tail -1  # QA fixes: navy title outline for very light colours, Mahjong Register Pearl racks cut out (Oct 26 ~9:20pm)
