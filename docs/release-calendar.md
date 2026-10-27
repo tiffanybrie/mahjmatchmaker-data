@@ -1,6 +1,6 @@
 # Mahj Matchmaker release calendar
 
-Updated 2026-10-27T13:45-04:00 from brand sites, the Sunday release schedule, brand Instagram feeds (Planoly) and Gmail. Source of truth: `config/release-calendar.json`; regenerate with `python3 scripts/release_calendar/build_md.py`.
+Updated 2026-10-27T22:40:00Z from brand sites, the Sunday release schedule, brand Instagram feeds (Planoly) and Gmail. Source of truth: `config/release-calendar.json`; regenerate with `python3 scripts/release_calendar/build_md.py`.
 
 **Rule (Tiffany, Oct 21):** save restock content for the buying window. Don't spend a set's content before you can buy it; post 1-2 weeks before a dated restock so people pick their mat and have the code ready when it drops.
 
@@ -47,6 +47,7 @@ Updated 2026-10-27T13:45-04:00 from brand sites, the Sunday release schedule, br
 | Bam Bird Boutique | Summer Send-Off Sale, 20% off select seasonal items (Floating Game Table) | sale | Oct 26 - Sun Nov 1 | no | yes | Log. | [IG Oct 26](https://www.instagram.com/p/De91RbKCVq6/) |
 | Bam Bird Boutique | Deco Indigo tiles | restock | mid to late November | no | yes | Watch. | [Bam Bird IG Oct 20](https://www.instagram.com/reel/DeuhDVtp6QT/) |
 | Bam Bird Boutique | East Meets West Tortoise Shell + Classic Tortoise Shell tile sets | restock | 'coming soon' (no date) | Classic Tortoise (album shop link = East Meets West Tortoise) | yes | HOLD Tortoise album content until dated; tease 1 week before. | [bambirdboutique.com/collections/coming-soon](https://www.bambirdboutique.com/products/east-meets-west-tortoise-shell-tile-set-copy) |
+| Bird & Bamboo | Wooden racks restock (colours not named) | restock | LIVE Oct 27 | no | yes | Log. | [IG Oct 27](https://www.instagram.com/reel/DfAeojVR2DJ/) |
 | Britt Mills | Isla, Novella, Enchanted neoprene mats (preorders) | preorder | ship late November | Novella/Enchanted (material twins) | yes | Preorder is open now: a 'preorder before they ship' story is fine any time. | [Product pages](https://brittmillsdesign.com/products/isla-neoprene-mahjong-mat-arriving-late-november) |
 | Charleston Mahjong Club | Hunt Club tiles (back in stock) | restock | arriving late Oct/early Nov; preorders ship first | no | yes | Fall content; watch for in-stock. | [IG Sep 30 + Oct 14](https://www.instagram.com/p/DeeKkphxbTb/) |
 | Charleston Mahjong Club | CMC x OTG247 collaboration | launch | November 2026 | no | yes | Log; no details yet. | [IG Oct 26](https://www.instagram.com/reel/De-AxN2slmN/) |

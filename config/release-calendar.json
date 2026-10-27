@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-27T13:45-04:00",
-  "updatedBy": "partner watch (email + IG) Oct 27 1:45pm ET",
+  "updated": "2026-10-27T22:40:00Z",
+  "updatedBy": "partner watch Oct 27 6:40pm ET",
   "rules": {
     "timing": {
       "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -594,7 +594,7 @@
       "brand": "Tigre de Tartán",
       "product": "Classic American Beechwood tiles (solid beechwood); House Tigers Oyster tiles",
       "type": "launch",
-      "window": "Beechwood: Tue Oct 27 4pm CT; Oyster: coming soon (no date)",
+      "window": "Beechwood: LIVE Oct 27 4pm CT; Oyster: coming soon (no date)",
       "source": "TdT IG Oct 24 ('next Tuesday they will go live')",
       "sourceUrl": "https://www.instagram.com/reel/De4kvHDONLd/",
       "album": false,
@@ -602,7 +602,7 @@
       "priority": 3,
       "contentTiming": "No album. Launch-day story with code only if a fitting pairing; otherwise log.",
       "date": "2026-10-27T16:00-05:00",
-      "status": "IG Oct 27 confirms drop TODAY 4pm CT with the Estate Sale print (mat + accessories). Site still coming soon at 1:30pm ET. Beechwood not findable in FYM search (Oct 27)."
+      "status": "Beechwood LIVE Oct 27 (site check 6:35pm ET, $325 available); Estate Sale mat LIVE ($175)"
     },
     {
       "id": "virora-petalee",
@@ -809,6 +809,20 @@
       "status": "LIVE",
       "source": "IG Oct 26",
       "sourceUrl": "https://www.instagram.com/p/De91RbKCVq6/",
+      "album": false,
+      "affiliate": true,
+      "priority": 3,
+      "contentTiming": "Log."
+    },
+    {
+      "id": "bb-racks-restock-oct27",
+      "brand": "Bird & Bamboo",
+      "product": "Wooden racks restock (colours not named)",
+      "type": "restock",
+      "window": "LIVE Oct 27",
+      "status": "LIVE Oct 27 (IG 'they're back')",
+      "source": "IG Oct 27",
+      "sourceUrl": "https://www.instagram.com/reel/DfAeojVR2DJ/",
       "album": false,
       "affiliate": true,
       "priority": 3,
