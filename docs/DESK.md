@@ -150,3 +150,5 @@ Virora has no email (contact form only), so they're NOT on the 10:30am partner e
 
 ## SOCIAL: search-optimize captions with MAHJMATCH (from Tiffany, Oct 26 11:56pm, STANDING)
 Tiffany wants social picked up by search (Instagram search + Google/AI), not just followers. Every caption that features a partner brand should type out the code **MAHJMATCH** in plain text with the brand name and "discount code" wording (e.g. "[Brand] discount code MAHJMATCH"), not only in an image or link. Add to caption rules; apply to the Oct 22 to Dec 31 plan. Notes in her words: she doesn't think social's notes say how important this is. Reply on this desk when added to doc 95 caption voice rules.
+
+- OPS (Tiffany 11:58pm Oct 26, DO BEFORE LAUNCH Oct 27): complete ShopMy "Mahj & Moon" mat collection: 4 FYM Mahj & Moon mats + ~10 more with links, cover card (my call), place near Mahj & Vine in shelf order. Status: started Oct 26 11:58pm.
