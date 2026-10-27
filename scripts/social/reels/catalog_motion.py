@@ -6,7 +6,8 @@ import os, sys, json, random, subprocess
 from playwright.sync_api import sync_playwright
 R = '/home/claude/mahjmatchmaker-data'; F = f'file://{R}/scripts/social/tileprofile/fonts/'
 FR = os.environ.get('FR', '/tmp/catmo'); os.makedirs(FR, exist_ok=True)
-FPS, SECS = 30, 13.0
+FPS, SECS = 30, float(os.environ.get('CM_SECS', 13.0))
+TIMES = [(0.2,1.5),(1.6,2.9),(3.0,99),(99,99),(99,99)] if os.environ.get('CM_SHORT') else [(0.3, 2.6), (2.8, 5.1), (5.3, 7.6), (7.8, 10.0), (10.2, 99)]
 NAVY, PINK, CREAM, BLUSH = '#062a55', '#e0547f', '#fdf6ee', '#f7b6c8'
 random.seed(11)
 with sync_playwright() as p:
@@ -35,11 +36,11 @@ def beat(t0, t1, html):
     return (f'<div class="beat">'
             f'<div class="a" style="animation:pop .5s {t0:.2f}s forwards">{html}</div></div>')
 nm, nt = data['counts']
-B = [beat(0.3, 2.6, f'<div class="big">{nm // 100 * 100}+</div><div class="lab">mats</div>'),
-     beat(2.8, 5.1, f'<div class="big">{nt // 100 * 100}+</div><div class="lab">tile sets</div>'),
-     beat(5.3, 7.6, '<div class="big">50+</div><div class="lab">brands</div>'),
-     beat(7.8, 10.0, f'<div class="cap" style="font-size:118px">One swipe<br>at a time.</div>'),
-     beat(10.2, 13.1, f'<div class="cap" style="font-size:92px;white-space:nowrap">{FYM}</div><div class="cap" style="font-size:170px;color:{PINK}">is HERE.</div>'
+B = [beat(*TIMES[0], f'<div class="big">{nm // 100 * 100}+</div><div class="lab">mats</div>'),
+     beat(*TIMES[1], f'<div class="big">{nt // 100 * 100}+</div><div class="lab">tile sets</div>'),
+     beat(*TIMES[2], '<div class="big">50+</div><div class="lab">brands</div>'),
+     beat(*TIMES[3], f'<div class="cap" style="font-size:118px">One swipe<br>at a time.</div>'),
+     beat(*TIMES[4], f'<div class="cap" style="font-size:92px;white-space:nowrap">{FYM}</div><div class="cap" style="font-size:170px;color:{PINK}">is HERE.</div>'
                       f'<div style="font:700 38px Bit;color:{NAVY};letter-spacing:.12em;margin-top:24px">MAHJMATCHMAKER.COM</div>')]
 html = f"""<!doctype html><html><head><meta charset=utf8><style>
 @font-face{{font-family:Cap;src:url({F}Caprasimo.ttf)}}@font-face{{font-family:Bit;font-weight:700;src:url({F}bitter-latin-700-normal.woff2)}}@font-face{{font-family:PF;font-style:italic;src:url({F}playfair-display-latin-600-italic.woff2)}}
@@ -58,8 +59,8 @@ with sync_playwright() as p:
     b = p.chromium.launch(); pg = b.new_page(viewport={'width': 1080, 'height': 1920})
     pg.goto(f'file://{FR}/wall.html'); pg.wait_for_timeout(1500); pg.evaluate('document.fonts.ready')
     pg.evaluate('document.getAnimations().forEach(a=>a.pause())')
-    spans = [(0.3, 2.6), (2.8, 5.1), (5.3, 7.6), (7.8, 10.0), (10.2, 99)]
-    os.makedirs(f'{FR}/f', exist_ok=True)
+    spans = TIMES
+    import shutil; shutil.rmtree(f'{FR}/f', ignore_errors=True); os.makedirs(f'{FR}/f', exist_ok=True)
     for i in range(int(SECS * FPS)):
         t = i / FPS
         pg.evaluate(f"""()=>{{document.getAnimations().forEach(a=>a.currentTime={t*1000});
