@@ -435,6 +435,7 @@ Never put drop shadows or other effects on text.
 | Oct 21 | Beige felt mat is one recurring asset. Set genders listed in §3. |
 | Oct 21 | This brand guide created. |
 | Oct 21 | FYM promos show the tool (real app screens, tutorial), never the match-card fan; her picks live in the tool; feedback goes to Claude; email headlines are Caprasimo images. |
+| Oct 27 | FYM app reels follow docs/FYM-REEL-RULES.md: labels on their own item, ♥ right into suitors / ✕ left, every on-screen product counted and tagged, real zoom, moving camera, launch-day energy, finished the night before. |
 
 ---
 
@@ -513,4 +514,3 @@ Each is asked once. Until she answers, follow the default given here.
 - 2026-10-26 13:40 (Tiffany): **Phone mockups = blush pink duo** (real iPhone frame: Dynamic Island, side buttons, 9:41 status bar; straight-on, light shadow; builder assets/social/mockups-oct26/mk.py + duo.py; ready graphic assets/links/v2/fym-phones-blush-duo.png). Never the old drawn black tilted phones. The other layouts (trio, overlapping) stay available when supporting screens don't need to be fully readable. Can change later.
 - 2026-10-26 13:59 (Tiffany): **Phone mockups = WHITE iPhone frame** (replaces the 13:40 blush pick): white background + soft shadow for most graphics; on navy/pink backgrounds white phones work too (shadow optional). Trio layout for tool previews (start screen | swipe | match card). Builder assets/social/mockups-oct26/trio_w.py; graphic assets/links/v2/fym-phones-trio-malachite-white.png.
 - 2026-10-26 14:37 (Tiffany): **#MahjMatch goes on EVERY post** (our community/reshare hashtag). Default set of 5: #mahjong #americanmahjong #mahjongtiles #mahjongmat #MahjMatch. Never #findyourmatch (dating content). 🛑 boxes label each step REEL / STORY.
-| Oct 27 | FYM app reels follow docs/FYM-REEL-RULES.md: labels on their own item, ♥ right into suitors / ✕ left, every on-screen product counted and tagged, real zoom, moving camera, launch-day energy, finished the night before. |
