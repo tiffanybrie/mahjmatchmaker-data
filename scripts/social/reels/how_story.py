@@ -25,7 +25,21 @@ for i, t in enumerate(LABELS):
     if i == len(LABELS) - 1: S.append(('zm', zscene(), (0.4 + 0.5 * NZ) * SL))
     S.append((f'sw{i}', page(CREAM, step(2, 'Swipe her mats' if i == 0 else ('&hearts; &hearts; &hearts;' if i < len(LABELS) - 1 else 'Ooh, that one. &hearts;')) + f'<div style="position:absolute;inset:0;animation:flyR .35s {1.0*SL-0.38:.2f}s ease-in both">' + phone(f'02-swipe{i}.png', 720, None, 470, 230, 0, .03) + stamp('yes', .3*SL, 640, 900) + lab('&hearts; ' + t, 90, 1560, -3, .15) + '</div>'), 1.0*SL))
 S.append(('su', page(CREAM, step(3, 'Hearts fall to your suitors') + '<div style="position:absolute;left:0;right:0;top:440px;bottom:0;overflow:hidden"><div style="position:absolute;inset:0;--z:1.35;transform-origin:50% 45%;animation:zoomin 1.6s .3s ease-in-out forwards">' + phone('03-suitors.png', 720, None, 30, 250, 0, .05) + '</div></div>' + lab(f'{len(LABELS)} suitors, pick the one', 520, 1520, 3, .9, NAVY)), 2.3*SL))
-S.append(('rk', page(CREAM, step(4, 'Add racks') + phone(RKIMG, 720, None, 470, 40, 0, .05) + lab('&uarr; her mat stays up top', 330, 1640, -2, .6, NAVY)), 2.0*SL))
+RKL = json.loads(os.environ.get('RKL', '[]'))
+if os.path.exists(f'{CAPDIR}/08-rz0.png') and RKL:
+    # Tiffany 13:06: in the RACKS step, tap + + + on the mat preview until you see her colours, then swipe racks with the mat still zoomed
+    def rzscene():
+        PW, PX, PY, CR = 1000, 40, 400, 40
+        k = (PW - 2 * 0.034 * PW) / 390; rz = json.load(open(f'{CAPDIR}/rz.json')) or [354, 196]
+        tx = PX + PW * .034 + rz[0] * k; ty = PY + PW * .034 + PW * .13 + (rz[1] - CR) * k
+        layers = ''.join(f'<div class="a" style="position:absolute;inset:0;animation:fade .12s {(0.3 + j * .6)*SL:.2f}s forwards">' + phone(f'08-rz{j}.png', PW, PX, PY, CR, 0, 0) + '</div>' for j in range(4))
+        taps = ''.join(f'<div class="a" style="position:absolute;left:{tx-45:.0f}px;top:{ty-45:.0f}px;width:90px;height:90px;border-radius:50%;border:8px solid {PINK};z-index:30;animation:ring .45s {(0.15 + j * .6)*SL:.2f}s forwards"></div>' for j in range(3))
+        return page(CREAM, step(4, 'Add racks. Tap + to see her colors') + layers + taps + lab('+ + + zoom in on her mat', 120, 1700, -3, 2.0*SL, NAVY))
+    S.append(('rz', rzscene(), 2.9*SL))
+    for j, (img, t) in enumerate(zip(['08-rz3.png', '09-rk1.png'], RKL)):
+        S.append((f'rs{j}', page(CREAM, step(4, 'Swipe racks, mat stays zoomed') + f'<div style="position:absolute;inset:0">' + phone(img, 760, None, 430, 40, 0, 0) + f'</div><div style="position:absolute;left:0;right:0;top:1080px;bottom:0;animation:flyR .35s {1.1*SL-0.38:.2f}s ease-in both">' + stamp('yes', .35*SL, 640, 1250) + '</div>' + lab('&hearts; ' + t, 90, 1620, -3, .2)), 1.1*SL))
+else:
+    S.append(('rk', page(CREAM, step(4, 'Add racks') + phone(RKIMG, 720, None, 470, 40, 0, .05) + lab('&uarr; her mat stays up top', 330, 1640, -2, .6, NAVY)), 2.0*SL))
 S.append(('cd', page(NAVY, step(5, '<span style="color:#fff">It&rsquo;s a match!</span>') + f'<div style="position:absolute;left:0;right:0;top:450px"><div class="a" style="animation:pop .5s .1s forwards"><img src="file://{CAPDIR}/card.png" style="width:820px;display:block;margin:0 auto;border-radius:30px;box-shadow:0 30px 70px rgba(0,0,0,.4)"></div></div>' + sparks(.3, 540, 1100, 12), '#fff'), 2.4*SL))
 S.append(('cta', page(NAVY, f'<img class="a" src="{u(R+"/assets/brand/flame-heart.png")}" style="width:140px;animation:pop .45s .05s forwards"><div class="a cap" style="font-size:96px;color:#fff;margin-top:36px;animation:up .5s .2s forwards">Mock up {SHORT}</div><div class="a it" style="color:{BLUSH};font-size:56px;margin-top:18px;animation:up .5s .45s forwards">with all {NM} of her matches</div><div class="a" style="margin-top:60px;animation:pop .5s .8s forwards"><div style="background:{PINK};color:#fff;border-radius:999px;padding:30px 54px;font-family:Cap;font-size:72px;white-space:nowrap">{FYM}</div></div><div class="a" style="font:700 38px Bit;color:#fff;margin-top:50px;letter-spacing:.04em;white-space:nowrap;animation:up .5s 1.1s forwards">mahjmatchmaker.com &middot; code MAHJMATCH</div>', '#fff'), 3.4*SL))
 async def main():
