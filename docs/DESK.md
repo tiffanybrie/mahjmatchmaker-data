@@ -1,5 +1,6 @@
 # The Desk
 
+- **MAIN (Tiffany Oct 27 12:01am): the "It's here!" launch email is Main/Social's job, not Matches & Catalog's. Partners are LEFT OFF it (they get their own partner email). Keep all launch-day email in Main so it stays cohesive.**
 Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cleanup (6:47am ET) reads it. Rules: CLAUDE.md ("THE DESK"), docs/CHATS.md (which chat owns what). During the day, when an agent stops, Chrome drops or a QA stalls, add the item here right away with its next step.
 - **Matches & Catalog (Oct 26 11:50pm): FYM Version 1.3 (rack pass) is LIVE in the app + website preview; launch README 0a pin = page-block @b103418 / fym-v99.** Left for the next build: Bam! White Wooden single cut-out (assets/racks/bam-white-wooden-single.png, made for Main tonight), OMM uniform rack format, Hip Hip Hostess + Mahj Mood Scalloped Tortoise still stacks (horizontal now), Bam Bird Lucite Emerald shows its pusher strip, AR Clear sets in white boxes; 71 racks still on lifestyle/stack photos (gate [97] warning list).
 
