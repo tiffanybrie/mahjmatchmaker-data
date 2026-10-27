@@ -11,6 +11,10 @@ with sync_playwright() as p:
     if os.environ.get('RNAME'):
         for pr in os.environ['RNAME'].split(';;'):
             k_,n_=pr.split('|||'); print('rname',pg.evaluate("([k,n])=>{if(!R[k])return false;R[k].n=n;R[k].sn=n;window.__RL=window.__RL||{};window.__RL[k]=n;if(!window.__rlw){window.__rlw=1;const _rl=rackLabel;rackLabel=function(id){return (window.__RL&&window.__RL[id])||_rl(id)};}return true}",[k_,n_]))
+    if os.environ.get('TILEOV'):  # TILEOV0
+        import base64
+        tu0='data:image/jpeg;base64,'+base64.b64encode(open(os.environ['TILEOV'],'rb').read()).decode()
+        print('tileov0',pg.evaluate("([n,u])=>{const s=D.sets.find(x=>x.name.startsWith(n));if(!s)return false;const t=T[s.tile];t.cf=u;t.full=null;t.soon=false;IMG[t.pile]=u;return s.name}",[TILE,tu0]))
     if os.environ.get('MATOV'):  # MATOV0
         mu0='data:image/jpeg;base64,'+base64.b64encode(open(os.environ['MATOV'],'rb').read()).decode()
         print('matov0',pg.evaluate("([m,br,u])=>{const id=Object.keys(M).find(k=>M[k].n===m&&M[k].bn===br);MC[M[id].f]=u;return id}",[MAT,BRAND,mu0]))
@@ -39,6 +43,12 @@ with sync_playwright() as p:
         import base64
         mu='data:image/jpeg;base64,'+base64.b64encode(open(os.environ['MATOV'],'rb').read()).decode()
         print('matov',pg.evaluate("(u)=>{MC[M[S.fav].f]=u;return !!S.fav}",mu))
+    if os.environ.get('TILEOV'):
+        import base64
+        tu='data:image/jpeg;base64,'+base64.b64encode(open(os.environ['TILEOV'],'rb').read()).decode()
+        print('tileov',pg.evaluate("(u)=>{const t=T[set().tile];t.cf=u;t.soon=false;return true}",tu))
+    if os.environ.get('TNAME'):
+        print('tname',pg.evaluate("(n)=>{const s=set();s.name=n;if(s.n!==undefined)s.n=n;if(s.dn!==undefined)s.dn=n;const t=T[s.tile];if(t){if(t.n!==undefined)t.n=n;}return true}",os.environ['TNAME']))
     Z=float(os.environ.get('TZOOM','0') or 0)
     if Z>1: pg.evaluate("""async(z)=>{const s=set();const t=T[s.tile];const u=(t.cf&&!t.soon?t.cf:null)||(await tileFull(s))||pile(s);const im=await lk(u);const c=document.createElement('canvas');const w=im.width/z,h=im.height/z;c.width=w;c.height=h;c.getContext('2d').drawImage(im,(im.width-w)/2,(im.height-h)/2,w,h,0,0,w,h);t.cf=c.toDataURL('image/jpeg',.92);}""",Z); pg.wait_for_timeout(800)
     if not os.environ.get('KEEPCODE'): pg.evaluate("()=>{window.codeLine=()=>'';try{codeLine=()=>''}catch(e){}}")
