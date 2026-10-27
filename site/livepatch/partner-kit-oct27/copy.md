@@ -5,7 +5,7 @@
 ## 1. Partner follow-up email (Squarespace campaign, list "FYM Partners")
 Send: Tue Oct 27, 10:30am ET (scheduled tonight after her yes). No discount code anywhere.
 
-Subject: It's live! A graphic made for your brand 💕
+Subject: Find Your Mat-ch™ is live! Launch graphics inside
 Preview: Your story + post for Find Your Mat-ch™, ready to share.
 
 Find Your Mat-ch™ is live this morning! 🎉
