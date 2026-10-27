@@ -14,9 +14,7 @@ As promised, I made graphics just for your brand: a story and a feed post showin
 
 [Button: Get your graphics] → <Dropbox folder link>
 
-Open the folder with your brand's name and save what you like. Bookmark the link: I'll add new graphics for your brand there. If you share it, tag @mahjmatchmaker and I'll reshare you right back.
-
-Want a different product featured, or have a better photo? Reply to this email or drop it in our Dropbox and I'll swap it in.
+Open the folder with your brand's name and save what you like. Feel free to bookmark the link: if you'd ever like additional graphics, just ask and we can place them there for you. If you share, tag @mahjmatchmaker and I'll reshare you right back.
 
 Thank you for being part of this from day one!
 
