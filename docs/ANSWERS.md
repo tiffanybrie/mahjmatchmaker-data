@@ -452,3 +452,4 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 - 2026-10-26 7:56pm · Main · Tiffany: rest of the review looks good; Amara Chartreuse still wrong colour; Bam! white wood rack still in a white box; OMM racks must be ONE uniform format (Papaya × Vivienne's straight-across style likely right → Agate needs a straight cut) → three cut-out requests in MATCH-INBOX.
 - 2026-10-26 7:57-7:58pm · Main · Tiffany: OMM rack images = OMM's real angled photos, rotated level is fine (no re-rendering); all OMM racks uniform. Kaleidoscope re-done that way (Hot Pink + Agate). Fait à Main pick: Cypress × Automne Provençal + Bird & Bamboo Moss + Mahjong Row & Co. Autumn Brown.
 - 2026-10-26 8:07pm · Main · Britt Mills pick: OMM Talulah × Reba + Peace Love Mahjong Light Pink + Bird & Bamboo Teal.
+- 2026-10-26 8:18pm · Main · Bam Bird Boutique pick: Boots & Bubbles (Pink Swirl) × Boots & Bubbles – Green + Bam Bird Pink + Dusty Lilac wood racks.
