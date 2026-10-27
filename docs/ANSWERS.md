@@ -493,3 +493,4 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 
 ## Oct 27 12:43am - ShopMy product images: aerial flat mat photos only (STANDING for ShopMy mat boards)
 Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aerial photo from the listing gallery (copy its photo URL into the product's Image URL field). Mahj & Moon redone: 6 tabletop-only mats removed, 5 new mats added, 8 re-imaged, cover rebuilt. 13 mats now.
+- Oct 27 1:00am (Main): Tiffany: Planoly only shows reel covers, she can't watch them there. RULE: every reel put in Planoly also gets a playable copy on the review/plan page next to the post. Partner email moves to 8:30am ET (after 8:00 switch), scheduled tonight once she gives the Dropbox link.
