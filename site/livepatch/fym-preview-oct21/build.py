@@ -20,8 +20,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CDN = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@'
 ASSET = CDN + '44563dd1c2c4d9a00aa3deec61b1d86ccfdbcaf8/assets/site/fym-page/'
 WORDMARK = CDN + '8952b136784680ba365a33d7ae13ba91a25ab561/assets/brand/mahjmatchmaker-wordmark-notag.png'
-APP_COMMIT = '2490bec5a1f8f87d54ab49550649af908f7dbeaa'
-APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v97/index.html'  # public 'Version 1.1' = internal v97 (Oct 26 evening: sticky-search + accent search fixes, MFM sets unhidden, Jubilee Midnight Blue, natural wood rack, PLM racks recut, white-band mats trimmed, mat-door Add racks; files @2260733)
+APP_COMMIT = 'aec9767070508cd730576477bb60f0e477013777'
+APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v98/index.html'  # public 'Version 1.2' = internal v98 (Oct 26 ~9pm: card fixes for partner graphics: equal-length low racks, Bespoke big racks, title = set colour, MRC + Mahjong Register single racks, PLM Chartreuse/Dark Green restored, Wren logo, Peppi name; files @7f886b8)
 APP_BASE = CDN + 'ad0675e42242c3abad40cac9f539a265220e26eb' + '/site-app/fym-v72/'  # every file but index.html is unchanged since v72; base stays on the v72 commit (warmed; jsDelivr 403'd t15/132.jpg at the new commit)
 
 # Oct 21 3:13pm (Tiffany): the tool's promo SHOWS THE TOOL. Hero = real v69 app screens in a true-proportion iPhone
