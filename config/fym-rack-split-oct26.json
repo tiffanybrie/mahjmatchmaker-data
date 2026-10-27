@@ -97,10 +97,57 @@
    "img": "assets/social/partner-kit/mahjmood-white-scalloped-angle.png",
    "c": true
   },
-  "myfairmahjong.com/wooden-racks?v=53371892990263": {
-   "img": "assets/racks/v98/mfm-natural-wood-single-holes.webp",
+  "plm:Chartreuse": {
+   "img": "assets/racks/v98/plm-chartreuse-photo-colour.png",
    "c": true,
-   "why": "v97 QA: the two screw holes showed as white dots on dark mats; holes cut through (the mat shows through, like the real rack)"
+   "why": "URGENT Oct 26 6:58pm: the v97 re-cut read lemon yellow (238,239,103, hue 60). Back to the approved rack shape (assets/racks/card/peace-love-mahjong-chartreuse.png), recoloured to PLM's own photo colour (186,212,96) per Main's 7:28pm answer (the approved png alone reads highlighter, 200,238,80). Locked by gate [94]."
+  },
+  "plm:Dark Green": {
+   "img": "assets/racks/card/peace-love-mahjong-dark-green.png",
+   "c": true,
+   "why": "v98 hue check: the v97 re-cut drifted to a grey green (39,69,43, hue 128, sat .28) with a pale halo; back to the approved card rack (17,69,41, hue 148). Locked by gate [94]."
+  },
+  "mahjongrowandco.com/porcelain-blue-rack-pusher-set": {
+   "img": "assets/racks/cutouts/mahjong-row-and-co-porcelain-blue-1.png",
+   "c": true,
+   "n": "Mahjong Row & Co. Porcelain Blue",
+   "why": "Tiffany 7:45pm regression: showed a 4-rack stack thumbnail (no HD single since <= b94); restored the single straight-on cut (checked on white + navy)"
+  },
+  "mahjongrowandco.com/translucent-chocolate-rack-pusher-set": {
+   "img": "assets/racks/cutouts/mahjong-row-and-co-translucent-plum-1.png",
+   "c": true,
+   "n": "Mahjong Row & Co. Translucent Plum",
+   "why": "Tiffany 7:45pm regression: showed a 4-rack stack thumbnail (no HD single since <= b94); restored the single straight-on cut (checked on white + navy)"
+  },
+  "mahjongrowandco.com/matcha-green-rack-pusher-set": {
+   "img": "assets/racks/card/mahjong-row--co-matcha-green.png",
+   "c": true,
+   "n": "Mahjong Row & Co. Matcha Green",
+   "why": "Tiffany 7:45pm regression: showed a 4-rack stack thumbnail (no HD single since <= b94); restored the single straight-on cut (checked on white + navy)"
+  },
+  "mahjongrowandco.com/chestnut-cream-rack-pusher-set": {
+   "img": "assets/racks/card/mahjong-row--co-chestnut-cream.png",
+   "c": true,
+   "n": "Mahjong Row & Co. Chestnut Cream",
+   "why": "Tiffany 7:45pm regression: showed a 4-rack stack thumbnail (no HD single since <= b94); restored the single straight-on cut (checked on white + navy)"
+  },
+  "mahjongrowandco.com/white-rack-pusher-set": {
+   "img": "assets/racks/cutouts/mahjong-row-and-co-white-1.png",
+   "c": true,
+   "n": "Mahjong Row & Co. White",
+   "why": "Tiffany 7:45pm regression: showed a 4-rack stack thumbnail (no HD single since <= b94); restored the single straight-on cut (checked on white + navy)"
+  },
+  "mahjongrowandco.com/autumn-brown-rack-pusher-set": {
+   "img": "assets/racks/cutouts/mahjong-row-and-co-autumn-brown-1.png",
+   "c": true,
+   "n": "Mahjong Row & Co. Autumn Brown",
+   "why": "Tiffany 7:45pm regression: showed a 4-rack stack thumbnail (no HD single since <= b94); restored the single straight-on cut (checked on white + navy)"
+  },
+  "mahjongrowandco.com/scalloped-deluxe-tortoise-rack": {
+   "img": "assets/racks/card/mahjong-row--co-scalloped-tortoise.png",
+   "c": true,
+   "n": "Mahjong Row & Co. Scalloped Tortoise",
+   "why": "Tiffany 7:45pm regression: showed a 4-rack stack thumbnail (no HD single since <= b94); restored the single straight-on cut (checked on white + navy)"
   }
  },
  "single_ok": {
@@ -111,5 +158,87 @@
   "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959287608": "Peony Blush Pearl Scalloped",
   "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959320376": "Ivory Oyster Pearl Scalloped"
  },
- "_about_single_ok": "Mahjong Register racks whose current photo already shows ONE rack (looked at Oct 26, v98): gate [92] lets these keep their image; any other visible Mahjong Register rack must show a v98 single-rack cut."
+ "_about_single_ok": "Mahjong Register racks whose current photo already shows ONE rack (looked at Oct 26, v98): gate [92] lets these keep their image; any other visible Mahjong Register rack must show a v98 single-rack cut.",
+ "locked": [
+  "plm:Chartreuse",
+  "plm:Dark Green"
+ ],
+ "plm_ref": {
+  "_about": "Reference colour per PLM painted rack (median RGB of the opaque pixels): the approved card rack (assets/racks/card/peace-love-mahjong-*.png) where one exists, else the long-standing pre-v97 photo measured on b96. Gate [94]: every PLM rack photo shown must stay within 8 degrees of hue (or RGB distance 30 for low-saturation colours) of its reference.",
+  "plm:Chartreuse": [
+   186,
+   212,
+   96
+  ],
+  "plm:Dark Green": [
+   17,
+   69,
+   41
+  ],
+  "plm:Navy": [
+   53,
+   44,
+   43
+  ],
+  "plm:Pink": [
+   254,
+   132,
+   177
+  ],
+  "plm:Light Pink": [
+   252,
+   209,
+   225
+  ],
+  "plm:Red": [
+   245,
+   21,
+   31
+  ],
+  "plm:Aqua": [
+   3,
+   179,
+   160
+  ],
+  "plm:French Blue": [
+   168,
+   205,
+   233
+  ],
+  "plm:Purple": [
+   190,
+   118,
+   175
+  ],
+  "plm:Lilac": [
+   227,
+   198,
+   246
+  ],
+  "plm:Cobalt": [
+   1,
+   121,
+   222
+  ],
+  "plm:White": [
+   234,
+   233,
+   227
+  ],
+  "plm:Mint": [
+   165,
+   230,
+   202
+  ]
+ },
+ "mrc_single": [
+  "mahjongrowandco.com/porcelain-blue-rack-pusher-set",
+  "mahjongrowandco.com/translucent-chocolate-rack-pusher-set",
+  "mahjongrowandco.com/matcha-green-rack-pusher-set",
+  "mahjongrowandco.com/chestnut-cream-rack-pusher-set",
+  "mahjongrowandco.com/white-rack-pusher-set",
+  "mahjongrowandco.com/autumn-brown-rack-pusher-set",
+  "mahjongrowandco.com/scalloped-deluxe-tortoise-rack"
+ ],
+ "_about_mrc": "v98: every Mahjong Row & Co. rack shows ONE rack (assets/racks/cutouts/*-1.png straight-on singles, assets/racks/card/mahjong-row--co-*.png; NOT assets/racks/mrc-scalloped-tortoise.png which is the 4-rack stack) with a clean 'Mahjong Row & Co. <colour>' name. Gate [92]."
 }

@@ -3,7 +3,9 @@
    6 racks stacked) is hidden and split into its colour variants (real product variants, links ?variant=...), each with ONE rack
    cut from Mahjong Register's own group shot; the 4 gold-hardware racks swap their multi-rack infographic for one rack cut from
    the brand's 4-rack group shot. Crystal Clear can't be cut cleanly off white -> shown on white (c:false).
-2. Mahj Mood White Wooden Scalloped (Main 6:01pm): angled single rack cut from Mahj Mood's own photo (straight-on read far too
+2. Mahjong Row & Co. (Tiffany 7:45pm regression): all 7 racks back to ONE straight-on rack each + clean names.
+3. PLM Chartreuse (recoloured approved rack) + Dark Green back to approved card racks (gate [94]).
+4. Mahj Mood White Wooden Scalloped (Main 6:01pm): angled single rack cut from Mahj Mood's own photo (straight-on read far too
    long/thin).
 Full image -> <build>/r98/<name>.webp (hd index 'file:'), small inline thumbnail IMG['rk98<name>']. All looked at on white + navy.
 Idempotent. Gate [92] + [56]. Usage: v98_racks.py <build>"""
@@ -18,6 +20,8 @@ IMG = {}; n = 0; os.makedirs(B + '/r98', exist_ok=True)
 def put(src):
     base = os.path.splitext(os.path.basename(src))[0]; key = 'rk98' + ''.join(ch for ch in base if ch.isalnum())
     im = Image.open(REPO + src).convert('RGBA')
+    bb = im.getchannel('A').point(lambda v: 255 if v > 20 else 0).getbbox()
+    if bb: p_ = 6; im = im.crop((max(0, bb[0] - p_), max(0, bb[1] - p_), min(im.width, bb[2] + p_), min(im.height, bb[3] + p_)))  # tight to the rack
     if im.width > 900: im = im.resize((900, round(im.height * 900 / im.width)), Image.LANCZOS)
     im.save(f'{B}/r98/{base}.webp', 'WEBP', quality=90, method=6)
     t = im.resize((360, max(1, round(im.height * 360 / im.width))), Image.LANCZOS); b = io.BytesIO(); t.save(b, 'WEBP', quality=82, method=6)
@@ -36,7 +40,8 @@ for k, v in C['add'].items():
     R[k] = r; hd['r'][k] = f; n += 1
 for k, v in C['replace'].items():
     if k not in R or str(R[k].get('im', '')).startswith('rk98'): continue
-    key, f, hx = put(v['img']); R[k].update(im=key, c=v['c'], pq=max(R[k].get('pq', 3), 4)); hd['r'][k] = f; n += 1
+    key, f, hx = put(v['img']); R[k].update(im=key, c=v['c']); hd['r'][k] = f; n += 1  # keeps the by-eye photo score pq (gate [79])
+    if v.get('n'): R[k]['n'] = v['n']
 json.dump(hd, open(B + '/hd/index.json', 'w'), separators=(',', ':'))
 h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]
 if IMG:

@@ -59,7 +59,7 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
     NRM over every accented name), 84 mat-door Add racks, 85 no set hidden by a stale no_tiles flag + Jubilee Midnight Blue, 86 PLM band
     framing, 87 MFM Natural Wood featured + no 404 wood-rack link, 88 PLM painted racks re-cut, 89 mat photos without white bands (warn:
     angled shots), 90 gallery sync (warn)
- 91-93 (Oct 26 night, v98 = Version 1.2): 91 match card racks low + tight (Main's partner-graphics block), 92 Mahjong Register single
+ 91-94 (Oct 26 night, v98 = Version 1.2): 94 PLM rack colours vs reference + locked approved Chartreuse/Dark Green; 95 card title = assigned s.tc; 96 names without stray quotes + Wren logo; 91 match card racks low + tight + equal length, stack photos big, off the mat's left (partner-graphics layout), 92 Mahjong Register single
     racks (no stacks) + Mahj Mood angled scalloped rack, 93 Desert Dreams Up close strip framing; [89] now FAILS if a v98-flattened
     mat loses its flat photo
 """
@@ -756,7 +756,7 @@ try:
 except Exception as _e: F.append(f"[70] portrait rack check did not run: {_e}")
 # [72] Oct 26 card sweep (docs/FYM-CARD-SWEEP-oct26.md): title contrast >= 3.5:1 on cream, subtitle fits the mat column (no '…'),
 # Photo coming soon text fits the circle, rack label never the generic 'Racks', long mat names have a display name
-for _need, _msg in (("/* v95 contrast */", "title colour is not darkened for contrast"), ("/* v95 subtitle fits the mat column */", "subtitle can overrun the mat / be cut with '…'"),
+for _need, _msg in (("/* v95 contrast */" if "/*v98 assigned title colour*/" not in UI else "/*v98 assigned title colour*/", "title colour is not darkened for contrast"), ("/* v95 subtitle fits the mat column */", "subtitle can overrun the mat / be cut with '…'"),
                     ("/* v95 fit circle */", "Photo coming soon text can be clipped by the circle"), ("/* v95 no generic Racks */", "rack label can fall back to just 'Racks'")):
     if _need not in UI: F.append("[72] " + _msg)
 for _k, _v in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-mat-display-names-oct26.json')))['dn'].items():
@@ -767,6 +767,7 @@ for _k, _m in D['mats'].items():
 # builder/fym_fix_oct25/v95_racksize.py); 'hide' entries stay hidden
 _c73 = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-rack-size-oct26.json')))
 for _k in _c73['racks']:
+    if _k in json.load(open(REPO + 'config/fym-rack-split-oct26.json'))['replace'] and str(D['racks'].get(_k, {}).get('im', '')).startswith('rk98'): continue  # v98 single-rack photo (gate [92])
     if _k in D['racks'] and not D['racks'][_k].get('hid') and 's95' not in str(D['racks'][_k].get('im', '')): F.append(f"[73] {D['racks'][_k]['n']}: still shows its stacked-racks photo (draws tiny on cards)")
 for _k in _c73.get('hide', {}):
     if _k in D['racks'] and not D['racks'][_k].get('hid'): F.append(f"[73] {D['racks'][_k]['n']}: should be hidden (no usable single-rack photo)")
@@ -815,7 +816,7 @@ try:
     if _j60['nfail'] > 6: F.append(f"[60] ... {_j60['nfail'] - 6} more rack photo-order problems")
 except Exception as _e: F.append(f"[60] rack photo-quality check did not run: {_e} {_r60.stderr[:200]}")
 # [46] Oct 25 (Tiffany 16:37): Mood board rack labels sit BELOW the racks (whole rack visible)
-if 'racks(rx,ry,rw,rh,{fs:STORY?23:19,maxRow:rh,rows:true,back:true,below:true})' not in UI:
+if 'racks(rx,ry,rw,rh,{fs:STORY?23:19,maxRow:rh,rows:true,back:true,below:true})' not in UI and 'racks(rx,top+110,rw,bot-top-110,{fs:STORY?23:19,rows:true,back:true,below:true,eq:true' not in UI:  # v98 equal-length block keeps below:true
     F.append("[46] Mood board (tri view) rack labels are not below the racks (below:true)")
 
 # [74] Oct 26 (Tiffany 11:16am, builder/fym_fix_oct25/v96_amazon_holiday.py): partner brands keep preferential order over ShopMy
@@ -931,7 +932,7 @@ try:
     _c81 = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-rack-clean-oct26.json')))
     if '/*v96 poor photo never leads*/' not in _h81 or "(ownW(r)===2||(R[r].pq||3)>=3)" not in _h81: F.append("[81] rack ranking: poor-photo / mat-brand-lift rule missing (run v96_rackclean.py)")
     for _k in _c81['recut']:
-        if _k in D['racks'] and not D['racks'][_k].get('hid') and not str(D['racks'][_k].get('im', '')).endswith('c96'): F.append(f"[81] {D['racks'][_k]['n']}: still shows its boxed/scene photo")
+        if _k in D['racks'] and not D['racks'][_k].get('hid') and not str(D['racks'][_k].get('im', '')).endswith('c96') and not str(D['racks'][_k].get('im', '')).startswith('rk98'): F.append(f"[81] {D['racks'][_k]['n']}: still shows its boxed/scene photo")
     for _k, _v in _c81['pq'].items():
         if _k in D['racks'] and D['racks'][_k].get('pq') != _v: F.append(f"[81] {D['racks'][_k]['n']}: photo score {D['racks'][_k].get('pq')} != {_v}")
     if 'bb:Clear' in D['racks'] and 'clear' in (D['racks']['bb:Clear'].get('rf') or []): F.append("[81] Bird & Bamboo Clear Wood Stain is tagged clear")
@@ -1018,7 +1019,7 @@ except Exception as _e: F.append(f"[87] wood rack check did not run: {_e}")
 if not _pre97:
     for _c in ['Chartreuse', 'Dark Green', 'Aqua', 'French Blue', 'Navy', 'Purple', 'Pink', 'Light Pink', 'Lilac', 'Red', 'Cobalt']:
         _r = D['racks'].get('plm:' + _c)
-        if _r and not _r.get('hid') and not str(_r.get('im', '')).startswith('rk97plm'): F.append(f"[88] Peace Love Mahjong {_c}: still the chopped rack photo")
+        if _r and not _r.get('hid') and not str(_r.get('im', '')).startswith('rk97plm') and not ('plm:' + _c in json.load(open(REPO + 'config/fym-rack-split-oct26.json'))['locked'] and str(_r.get('im', '')).startswith('rk98')): F.append(f"[88] Peace Love Mahjong {_c}: still the chopped rack photo")  # v98: approved whole-rack photos restored (gate [94])
 # [89] Oct 26 5:49pm: mat photos fill the frame (white bands on the card + swipe). FAIL: a visible mat photo with a flat white margin
 # >= 6% on any side (trim it: config/fym-mat-white-oct26.json + v97_matwhite.py). WARN: angled shots whose corners are white
 # (need a perspective flatten like Amahj Blue, Citron + Lilac).
@@ -1031,7 +1032,8 @@ if not _pre97:
                 for _f, (_a, _l) in json.loads(_raw[-4 - _n:-4]).items(): _imgs89[_f] = (_raw, _a, _l)
         _flat89, _ang89 = [], []
         _FL89 = json.load(open(REPO + 'config/fym-mat-flat-oct26.json'))  # v98: flattened angled shots stay fixed; flat-by-design shots skipped
-        for _k, _fo in _FL89['mats'].items():
+        _on89 = any(_m.get('w98') for _m in M.values())  # the flattening is post-launch WIP: checked only in builds that applied it
+        for _k, _fo in (_FL89['mats'].items() if _on89 else []):
             if _k in M and not M[_k].get('hid') and M[_k].get('w98') != _fo['action']: F.append(f"[89] {_fo['brand']} | {_fo['name']}: v98 photo fix ({_fo['action']}) not applied")
         import io as _io89
         for _k, _m in M.items():
@@ -1050,7 +1052,7 @@ if not _pre97:
             if _mg >= .06: _flat89.append(f"{_m.get('bn')} | {_m['n']} ({_mg:.0%})")
             _hh, _ww = _wh.shape; _c = max(2, min(_hh, _ww) // 6)
             if np.mean([_wh[:_c, :_c].mean(), _wh[:_c, -_c:].mean(), _wh[-_c:, :_c].mean(), _wh[-_c:, -_c:].mean()]) >= .45:
-                if _k in _FL89['mats']: F.append(f"[89] {_m.get('bn')} | {_m['n']}: was flattened in v98 but shows an angled photo with white corners again")
+                if _on89 and _k in _FL89['mats']: F.append(f"[89] {_m.get('bn')} | {_m['n']}: was flattened in v98 but shows an angled photo with white corners again")
                 elif _k not in _FL89['not_angled']: _ang89.append(f"{_m.get('bn')} | {_m['n']}")
         if _flat89: F.append(f"[89] {len(_flat89)} mat photos with white bands (trim in config/fym-mat-white-oct26.json): " + '; '.join(_flat89[:8]))
         if _ang89: W97.append(f"[89] {len(_ang89)} angled mat photos with white corners (need a perspective flatten): " + '; '.join(_ang89))
@@ -1082,11 +1084,13 @@ try:
     if _stale90: W97.append(f"[90] {len(_stale90)} visible FYM mats are in config/mat-gallery-extra-rows.json but not in the staged gallery page (rebuild + paste): " + '; '.join(_stale90))
 except Exception as _e: F.append(f"[90] gallery sync check did not run: {_e}")
 # ---- v98 (Version 1.2) checks, Oct 26 night (docs/MATCH-INBOX.md) ----
-_pre98 = _v97 is not None and int(_v97.group(1)) < 98 and '/*v98 racks low*/' not in UI
+_pre98 = _v97 is not None and int(_v97.group(1)) < 98 and '/*v98 racks low equal*/' not in UI
 if not _pre98:
     # [91] Tiffany 6:19pm: match card racks sat too high on the mat (covered the Heirloom Fire + Fortune horse) with a big gap
-    # between two racks. Mood board card rack block = Main's partner-graphics fix (rh=min(bot-top-lch-30,n*150), ry=bot-rh-lch+20).
-    if "rh=Math.min(bot-top-lch-30,n*150),rx=30,ry=bot-rh-lch+20/*v98 racks low*/;" not in UI: F.append("[91] match card racks are not in the low/tight rack block (v98_card.py)")
+    # between two racks. Mood board card rack block = Main's partner-graphics layout (low, tight, equal length, off the mat's left).
+    # Tiffany 7:20pm + Main 7:22pm: every rack the same length (rw = W*.40), stack photos (Bespoke) drawn big, x = max(48, mat left - 8.5% W)
+    for _need91 in ("const lch=56,rw=W*.40,rx=Math.max(48,mbx.x-W*.085);/*v98 racks low equal*/", "eq:true,stk:W*.26,bottom:bot+8}", "/*v98 equal-length racks*/"):
+        if _need91 not in UI: F.append(f"[91] match card rack layout missing: {_need91[:60]}")
     if "Math.max(2*r+40,n*170)" in UI: F.append("[91] old high rack block (n*170, centred on the tile circle) still in drawCard")
     # [92] Tiffany 6:04pm + Main 6:01pm: no Mahjong Register rack image shows a stack / infographic of several racks; Mahj Mood
     # White Wooden Scalloped shows the angled single rack (config/fym-rack-split-oct26.json, v98_racks.py)
@@ -1098,6 +1102,11 @@ if not _pre98:
         if not _r or _r.get('hid'): F.append(f"[92] {_v.get('n', _k)}: single-rack entry missing or hidden"); continue
         if not str(_r.get('im', '')).startswith('rk98') or not str(_hd92.get(_k, '')).startswith('file:r98/') or not os.path.exists(os.path.join(B, _hd92.get(_k, 'x')[5:])): F.append(f"[92] {_r['n']}: does not show its v98 single-rack photo")
         if bool(_r.get('c')) != bool(_v['c']): F.append(f"[92] {_r['n']}: cutout flag c should be {_v['c']}")
+    for _k in _C92.get('mrc_single', []):  # Tiffany 7:45pm: Mahjong Row & Co. racks regressed to 4-rack stacks
+        _r = D['racks'].get(_k)
+        if _r and not _r.get('hid') and (not str(_r.get('im', '')).startswith('rk98') or not _r['n'].startswith('Mahjong Row & Co. ')): F.append(f"[92] Mahjong Row & Co. rack {_r['n']}: not its single-rack photo / clean name")
+    for _k, _r in D['racks'].items():
+        if _r.get('bn', '').startswith('Mahjong Row') and not _r.get('hid') and _k not in _C92.get('mrc_single', []): F.append(f"[92] Mahjong Row & Co. rack {_r['n']}: new entry without a checked single-rack photo")
     for _k, _r in D['racks'].items():
         if _r.get('bn') == 'Mahjong Register' and not _r.get('hid') and not str(_r.get('im', '')).startswith('rk98') and _k not in _C92['single_ok']:
             F.append(f"[92] Mahjong Register rack {_r['n']}: photo not checked as ONE rack (add a single-rack cut or list it in single_ok after looking)")
@@ -1109,6 +1118,38 @@ if not _pre98:
         if _s93[0].get('fp') != [_fx, _fy] or _s93[0].get('fz') != _fz: F.append(f"[93] {_n}: Up close tile strip framing {_s93[0].get('fp')}/{_s93[0].get('fz')} != {[_fx, _fy]}/{_fz} (shows blank tiles)")
         # the 16:7 strip window must stay below the blank row (ends at y ~.68 in the brand photo)
         if _fy - (7 / 16) / _fz / 2 < .675: F.append(f"[93] {_n}: strip window reaches up into the blank-tile row")
+if not _pre98:
+    # [94] Tiffany 6:58pm (URGENT): the v97 PLM Chartreuse re-cut read lemon yellow. Locked racks show their approved photo, and
+    # every PLM painted rack photo shown (thumbnail + HD) stays within 8 deg hue (RGB distance 30 when low saturation) of its
+    # reference colour (config/fym-rack-split-oct26.json plm_ref)
+    import colorsys as _cs94, io as _io94, hashlib as _hl94
+    _C94 = json.load(open(REPO + 'config/fym-rack-split-oct26.json'))
+    for _k in _C94['locked']:
+        _r = D['racks'].get(_k); _want = 'rk98' + ''.join(ch for ch in os.path.splitext(os.path.basename(_C94['replace'][_k]['img']))[0] if ch.isalnum())
+        if not _r or _r.get('hid') or _r.get('im') != _want: F.append(f"[94] {_k}: does not show its locked, approved rack photo ({_C94['replace'][_k]['img']})")
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from fym_rack_images import shown as _shown94
+    for _k, _n, _t, _h, _b in _shown94(B):
+        if _k not in _C94['plm_ref'] or not _b: continue
+        _a = np.asarray(Image.open(_io94.BytesIO(_b)).convert('RGBA')).reshape(-1, 4); _a = _a[_a[:, 3] > 200][:, :3]; _a = _a[~(_a.min(1) > 235)] if (_a.min(1) <= 235).sum() > 50 else _a
+        _m = np.median(_a, 0); _ref = np.array(_C94['plm_ref'][_k], float)
+        _h1, _l1, _s1 = _cs94.rgb_to_hls(*(_m / 255)); _h2, _l2, _s2 = _cs94.rgb_to_hls(*(_ref / 255)); _dh = abs(_h1 - _h2) * 360; _dh = min(_dh, 360 - _dh)
+        if (min(_s1, _s2) >= .2 and _l2 < .93 and _dh > 8) or np.linalg.norm(_m - _ref) > (60 if min(_s1, _s2) >= .2 else 30):
+            F.append(f"[94] {_n} ({_t}): colour {_m.astype(int).tolist()} drifted from PLM reference {_ref.astype(int).tolist()} (hue {_dh:.0f} deg)")
+if not _pre98:
+    # [95] Tiffany 6:25pm: the card title uses the ASSIGNED set colour (s.tc), no contrast-loop darkening; light colours only get
+    # a white outline
+    if "const tc=s.tc||'#d6247f'/*v98 assigned title colour*/" not in UI or "/* v95 contrast */const Hh" in UI: F.append("[95] match card title colour is not the assigned set colour s.tc")
+    if "/*v98 white outline for light colours*/" not in UI: F.append("[95] light title colours have no white outline")
+if not _pre98:
+    # [96] Main 6:25pm + 6:33pm: no visible mat/rack/tile name starts with a straight quote or carries a backslash (Peppi; curly quotes are fine); the Wren Mats
+    # logo badge is the visible wordmark, and every brand logo file is not just a blank white square
+    for _kind, _bag in (('mat', M), ('rack', D['racks']), ('tile', D['tiles'])):
+        for _k, _o in _bag.items():
+            if not _o.get('hid') and (str(_o.get('n', '')).startswith(('"', "'")) or '\\' in str(_o.get('n', ''))): F.append(f"[96] {_kind} name has a stray quote/backslash: {_o.get('n')}")
+    _C96 = json.load(open(REPO + 'config/fym-names-logos-v98.json')); _hd96 = json.load(open(os.path.join(B, 'hd', 'index.json'))).get('l', {})
+    for _b in _C96['logos']:
+        if not str(D['logos'].get(_b, '')).startswith('lg98') or not str(_hd96.get(_b, '')).startswith('file:r98/'): F.append(f"[96] {_b} logo badge is not the visible v98 wordmark")
 if W97:
     print("FYM GATE WARNINGS (v97):")
     for _w in W97: print('  ' + _w)

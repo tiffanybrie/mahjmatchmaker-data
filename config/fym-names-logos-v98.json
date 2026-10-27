@@ -1,0 +1,4 @@
+{"_about": "FYM v98 (Version 1.2), MATCH-INBOX Oct 26 6:25pm + 6:33pm. mat_names: names cleaned (Mahjong Register 'The Peppi' title starts with a quote that showed as a stray backslash/quote; all 33 Mahjong Register mat names checked against mahjongregister.com/products/<handle>.json titles Oct 26 night: the '-copy' handles are Shopify duplicates whose titles really are the names we show, e.g. peach-spotted-cheetah-in-bloom-premium-mahjong-mat-33-copy = 'Paisley Jubilee Premium Mahjong Mat', so no other change). logos: Wren Mats badge was a big white square with thin text (almost blank on the white pill); now a tight, slightly bolder cut of their own WREN MATS wordmark. Applied by builder/fym_fix_oct25/v98_names.py; gate [96].",
+ "mat_names": {"mahjongregister.com/peach-spotted-cheetah-in-bloom-premium-mahjong-mat-33": "The Peppi Peach Spotted Cheetah in Bloom Premium"},
+ "logos": {"Wren Mats": "assets/brands/wren-mats-logo-v98.png"}
+}
