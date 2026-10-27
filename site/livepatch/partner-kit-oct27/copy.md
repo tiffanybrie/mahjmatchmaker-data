@@ -12,7 +12,7 @@ Find Your Mat-ch™ is live this morning! 🎉
 
 I made a story and a feed post for your brand, showing your pieces matched up in the tool. They're yours to use if you'd like, no pressure at all.
 
-[Button: Get your graphics] → <Dropbox folder link>
+[Button: Get your graphics] → https://www.dropbox.com/scl/fo/xe55wdn14lnan02lxghaj/AK7ihAwrTwrq5-91D9bpgfc?rlkey=isruq3n8wt5nk33z4j1efluub&dl=0
 
 Just open the folder with your brand's name. Feel free to bookmark the link: if you'd ever like additional graphics, just ask and we can place them there for you. If you do share, tag @mahjmatchmaker and I'll happily reshare.
 
