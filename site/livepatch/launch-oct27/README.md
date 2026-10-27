@@ -1,5 +1,8 @@
 # Launch-day homepage switch. Tue Oct 27, 2026, 9:00am CT (14:00 UTC). STAGED, not live
 
+**Oct 26 11:15pm: launch switch moved to 8:00am ET (Tiffany leaves ~9:45). Scheduled task trig_011jdGGQRMhNGJVvBQw8tTZn now fires 12:00Z.**
+
+
 **Oct 21 afternoon update:** the switch now also swaps the hero GRAPHIC (Tiffany 12:55pm). Previews: `hero-graphic/previews/hero-launch-1280.png` and `hero-launch-390.png`.
 
 Tiffany approved Oct 21, 12:42pm: "yes to both the announcement bar and also to the 10/27 launch day switch".
