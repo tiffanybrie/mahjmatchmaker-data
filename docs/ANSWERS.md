@@ -564,3 +564,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - 2026-10-27 16:42 (Main) Tiffany: Wine rack on Evergreen & Tartan was wrong; the mat's red needed a matching RED rack (B&B Red measures 148,42,53 vs mat red 150,33,62). Rule: rack colour picks are checked against the ZOOMED mat colour, not copied from the album pairing. 16:43: always use the tall Story 9:16 match card in reels/content, never the squat Post 4:5 crop (bigger, easier to see).
 - 2026-10-27 17:04 (Main) Tiffany: yes, update the website (homepage hero -> FYM app trio phones, build_v2 @8de9442).
 - 2026-10-27 17:10 (Main) DONE: homepage hero now FYM app trio phones, live (Custom CSS), checked at 390 + 1440.
+- Oct 27 5:16pm · Matches & Catalog · Mat Gallery intro updated live: 'coming 10.27' -> link to Find Your Mat-ch.
