@@ -27,11 +27,12 @@ def html(W,H,brand,files,cols,hy,gy,cell,gap,by,line):
 <div style="position:absolute;left:0;right:0;top:{by+56}px;text-align:center;font:700 40px Bit;color:#c8325f">mahjmatchmaker.com</div>
 </body></html>'''
 JOBS=JOBS2 if len(sys.argv)>1 else JOBS0
+if len(sys.argv)>2: JOBS={k:v for k,v in JOBS.items() if k in sys.argv[2].split(',')}
 with sync_playwright() as p:
     b=p.chromium.launch(); pg=b.new_page()
     for tag,(brand,st,po) in JOBS.items():
         L=json.load(open(tag+'.json')); fs=[L[i][0] for i in st]; fp=[L[i][0] for i in po]
-        line=f'Every {brand} mat, ready to swipe'
+        line=(f'{brand} mats, ready to swipe' if tag in ('lbb',) else f'Every {brand} mat, ready to swipe')
         n=len(fs); rows=(n+2)//3
         cell=252 if rows==4 else 300; gap=24
         gh=rows*cell+(rows-1)*gap; gy=590+(1660-590-gh)//2
