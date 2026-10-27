@@ -147,3 +147,6 @@ See CLAUDE.md.
 Virora has no email (contact form only), so they're NOT on the 10:30am partner email. Tiffany sends this from @mahjmatchmaker to @viroramahjongofficial after /partner-kit is live:
 > Hi Virora team! 💕 It's Tiffany from Mahj Matchmaker. Find Your Mat-ch™ went live this morning, and your Petalée tiles are in it! I made a story and a post just for you: Petalée on your Parrotia mat with your White and Pink Magnetic Wood racks. Save them here: mahjmatchmaker.com/partner-kit#virora-mahjong
 > If you share, tag @mahjmatchmaker and I'll reshare you right back. And what's the best email for partner updates? Thank you! xo, Tiffany
+
+## SOCIAL: search-optimize captions with MAHJMATCH (from Tiffany, Oct 26 11:56pm, STANDING)
+Tiffany wants social picked up by search (Instagram search + Google/AI), not just followers. Every caption that features a partner brand should type out the code **MAHJMATCH** in plain text with the brand name and "discount code" wording (e.g. "[Brand] discount code MAHJMATCH"), not only in an image or link. Add to caption rules; apply to the Oct 22 to Dec 31 plan. Notes in her words: she doesn't think social's notes say how important this is. Reply on this desk when added to doc 95 caption voice rules.
