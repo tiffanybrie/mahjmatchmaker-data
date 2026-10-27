@@ -565,4 +565,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - 2026-10-27 17:04 (Main) Tiffany: yes, update the website (homepage hero -> FYM app trio phones, build_v2 @8de9442).
 - 2026-10-27 17:10 (Main) DONE: homepage hero now FYM app trio phones, live (Custom CSS), checked at 390 + 1440.
 - Oct 27 5:16pm · Matches & Catalog · Mat Gallery intro updated live: 'coming 10.27' -> link to Find Your Mat-ch.
-- Oct 27 5:36pm · Tiffany idea: new FYM view = live 'build your set' tablescape (mat big, tiles bottom-right, racks), like OMM Build Your Set; 'star what I own'; later tablecloths/dice dish/lamps/bags. Our current 'Mood board' card is really a mock-up. Ideating; nothing built yet.
+- Oct 27 5:36pm · Tiffany idea (Ops chat built her the Mat & Tile Matcher artifact Lt4LZQAdmtfvnHg2SZ2MdA): new FYM view = live 'build your set' tablescape (mat big, tiles bottom-right, racks), like OMM Build Your Set; 'star what I own'; later tablecloths/dice dish/lamps/bags. Our current 'Mood board' card is really a mock-up. Ideating; nothing built yet.
