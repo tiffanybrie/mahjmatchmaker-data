@@ -24,7 +24,7 @@ def phone(img, w, x, y, rot=0, z=2, crop_top=0):
     return (f'<div style="position:absolute;left:{x}px;top:{y}px;width:{w}px;height:{h}px;transform:rotate({rot}deg);z-index:{z}">'
             f'<div style="position:absolute;inset:0;border-radius:{w*.16}px;background:#f7f7f5;box-shadow:0 30px 70px rgba(6,42,85,.22),inset 0 0 0 {w*.006}px #d6d6d3;padding:{p}px">'
             f'<div style="position:relative;width:100%;height:100%;border-radius:{w*.13}px;overflow:hidden;background:#fff">'
-            f'<img src="{u(img)}" style="width:100%;display:block;margin-top:-{crop_top*(w-2*p)/390:.0f}px"></div>'
+            f'<div style="height:{w*.13:.0f}px;background:#fff"></div><div style="overflow:hidden;height:100%"><img src="{u(img)}" style="width:100%;display:block;margin-top:-{crop_top*(w-2*p)/390:.0f}px"></div></div>'
             f'<div style="position:absolute;left:50%;top:{w*.045}px;transform:translateX(-50%);width:{w*.28}px;height:{w*.08}px;background:#000;border-radius:{w*.05}px"></div></div></div>')
 N = 10
 def dots(k, y): return f'<div class="dots" style="top:{y}px">' + ''.join(f'<i class="{"on" if i == k else ""}"></i>' for i in range(N)) + '</div>'
@@ -40,20 +40,20 @@ def slides(H):
 <div class="c" style="top:{DY-60}px;color:{BLUSH};font:700 30px Bit;letter-spacing:.2em">SWIPE FOR THE ANSWER &rarr;</div>''')
     o['02-here'] = (CREAM, f'''<div class="c" style="top:{T}px"><span class="pill">NOW LIVE &middot; FREE</span><div style="font:400 112px/1.0 Cap;margin-top:26px">{FYM(112)}<br><span style="color:{PINK}">is HERE.</span></div>
 <div class="sub">Today, <b>you</b> are the matchmaker.</div></div>''' + phone('01-home.png', 470, 305, Y + (170 if st else 150), 0, 3) +
-        f'<div class="call" style="left:30px;top:{Y+(500 if st else 480)}px;transform:rotate(-4deg)">Start with your tiles&hellip;</div><div class="call" style="right:30px;top:{Y+(700 if st else 680)}px;transform:rotate(4deg);background:{NAVY}">&hellip;or with the mat you own</div>')
-    o['03-tiles'] = (CREAM, step(1, 'Pick your tiles', 'Search, or shop by colour or brand.', T) + phone('02-search.png', 600, 240, Y-20, 0, 2, 150) +
-        f'<div class="call" style="left:40px;top:{Y+520}px;transform:rotate(-4deg)">Brownstone Bloom<br>by Anders Ruff</div>')
+        f'<div class="call" style="left:30px;top:{Y+(400 if st else 380)}px;transform:rotate(-4deg)">Start with your tiles&hellip;</div><div class="call" style="right:30px;top:{Y+(480 if st else 460)}px;transform:rotate(4deg);background:{NAVY}">&hellip;or with the mat you own</div>')
+    o['03-tiles'] = (CREAM, step(1, 'Pick your tiles', 'Search, or shop by color or brand.', T) + phone('02-search.png', 600, 240, Y-20, 0, 2, 150) +
+        f'<div class="call" style="left:40px;top:{Y+820}px;transform:rotate(-4deg)">Brownstone Bloom<br>by Anders Ruff</div>')
     o['04-swipe'] = (CREAM, step(2, 'Swipe the mats', '&hearts; the ones you love, &#10005; the rest.', T) + phone('04-swipe-marigold.png', 470, 70, Y+60, -7, 1, 120) + phone('03-swipe-scarlett.png', 520, 500, Y-10, 4, 3, 120) +
         f'<div class="call" style="left:40px;top:{Y-20}px;transform:rotate(-4deg)">My picks are baked in,<br>so you never swipe alone</div><div class="call" style="left:150px;top:{Y+520}px;transform:rotate(3deg);background:{NAVY}">&#10005; Marigold</div><div class="call" style="right:60px;top:{Y+700}px;transform:rotate(-3deg)">&hearts; Scarlett</div>')
-    o['05-suitors'] = (CREAM, step(3, 'Meet your suitors', 'Every &hearts; falls to the bottom. Pick the one.', T) + phone('07-suitors.png', 600, 240, Y-20, 0, 2, 240) +
+    o['05-suitors'] = (CREAM, step(3, 'Meet your suitors', 'Every &hearts; falls to the bottom. Pick the one.', T) + phone('07-suitors.png', 600, 240, Y-20, 0, 2, 150) +
         f'<div class="call" style="left:30px;top:{Y+120}px;transform:rotate(-4deg)">Your hearted mats<br>wait down here</div>')
     o['06-racks'] = (CREAM, step(4, 'Add racks', 'Your mat stays up top while you swipe racks.', T) + phone('08-racks.png', 470, 560, Y+60, 7, 1, 40) + phone('09-racks2.png', 520, 80, Y-10, -3, 3, 40) +
-        f'<div class="call" style="right:30px;top:{Y-30}px;transform:rotate(4deg);background:{NAVY}">Racks from brands<br>across the table</div><div class="call" style="left:30px;top:{Y+330}px;transform:rotate(-4deg)">Your mat, zoomed in</div>')
+        f'<div class="call" style="right:30px;top:{Y-30}px;transform:rotate(4deg);background:{NAVY}">Racks from brands<br>across the table</div><div class="call" style="left:30px;top:{Y+560}px;transform:rotate(-4deg)">&uarr; Your mat, zoomed in</div>')
     o['07-official'] = (CREAM, step(5, 'Make it official', 'Pick 1 or 2 racks. Tap &hearts; Make it official.', T) + phone('09-racks2.png', 470, 50, Y+50, -6, 1, 40) + phone('10-rack-slots.png', 520, 510, Y-10, 4, 3, 440) +
         f'<div class="call" style="right:40px;top:{Y+520}px;transform:rotate(3deg)">Walnut + Olive Green<br>by Bam Bird Boutique</div>')
     o['08-card'] = (CREAM, step(6, 'Your match card', 'Save it. Share it. Tag #mahjmatch.', T) + phone('11-card.png', 600, 240, Y-20, 0, 2, 120))
-    o['09-shop'] = (CREAM, step(7, 'Shop your picks', 'Every piece links straight to its shop.', T) + phone('12-shop.png', 600, 240, Y-20, 0, 2, 150) +
-        f'<div class="call" style="right:30px;top:{Y+40}px;transform:rotate(4deg)">Code MAHJMATCH<br>saves at partner brands</div>')
+    o['09-shop'] = (CREAM, step(7, 'Shop your picks', 'Every piece links straight to its shop.', T) + phone('12-shop.png', 600, 240, Y-20, 0, 2, 185) +
+        f'<div class="call" style="left:30px;top:{Y-60}px;transform:rotate(-4deg)">Code MAHJMATCH<br>saves at partner brands</div>')
     o['10-cta'] = (NAVY, f'''<div class="c" style="top:{T+(150 if st else 90)}px;color:#fff"><div class="pf" style="font-size:46px;color:{BLUSH}">Mahj Matchmaker 2.0</div>
 <div style="font:400 108px/1.02 Cap;margin-top:22px">Today, <span style="color:{BLUSH}">you</span><br>are the<br>matchmaker.</div>
 <div style="margin-top:50px"><span style="display:inline-block;background:{PINK};color:#fff;border-radius:999px;padding:26px 50px;font:400 64px Cap">{FYM(64)}</div>
