@@ -18,7 +18,7 @@ STYLE = """<style>
 </style>"""
 FYM = 'Find <i>Your</i> Mat-ch<sup style="font-size:.35em;vertical-align:super;font-style:normal">&trade;</sup>'
 FYM_NOTM = 'Find <i>Your</i> Mat-ch'
-COL_L, COL_W = 90, 770
+COL_L, COL_W = 90, 900   # centred (Tiffany Oct 27 2:08am: off-centre column looked wrong)
 TILE = u('assets/tiles/album/cypress.jpg'); MAT = u('assets/mats/gallery/britt-mills--knox.webp')
 def pair(top, delay):
     return (f'<div class="a" style="position:absolute;left:{COL_L}px;width:{COL_W}px;top:{top}px;display:flex;justify-content:center;align-items:center;gap:34px;animation:up .6s {delay}s forwards">'
