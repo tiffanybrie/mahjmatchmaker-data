@@ -1,0 +1,6 @@
+# Anders Ruff (@andersruffdesignco): what they're pushing on Instagram
+Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
+
+- Oct 27: 'Shop Brownstone Bloom now!' (DfAVY1hSx_j), 'new tile size with hand-painted and engraved details', 'Made to play. Designed to display.' Tags #IndigoPruitt. (Brownstone Bloom live since Sep 28; our album lands by Thu.)
+- Oct 26: 'Monday Madness' 2026 launch recap (De-ElKIypNe): BamsAndBubbly, BrownstoneBloom, ChristmasMahjong, EauDeMahj, GreenLightGatsby, HouseOfHydrangea, MahjInBloom; 'nowhere NEAR done'. Dear Santa preorders shipping.
+- Tone: high-energy, launches every few days. #AndersRuffMahjong #MahjongStyle.
