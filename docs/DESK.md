@@ -1,6 +1,7 @@
 # The Desk
 
 Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cleanup (6:47am ET) reads it. Rules: CLAUDE.md ("THE DESK"), docs/CHATS.md (which chat owns what). During the day, when an agent stops, Chrome drops or a QA stalls, add the item here right away with its next step.
+- **Matches & Catalog, IN PROGRESS (Oct 26 10:10pm, Tiffany asked): FYM Version 1.3 = rack pass (build v99):** rotate vertical racks, cut ONE horizontal rack out of every multi-rack photo where clean, remove backgrounds where clean; ~95 of 296 visible racks need it (audit scratchpad rackaudit.json). Agent running, target ~1am, then gate + independent QA; publishes before launch ONLY if both pass, else launch stays on 1.2.
 
 **Last rewrite:** Mon Oct 26, 2026, ~9:30pm ET (desk cleanup run). Covers the ~405 commits of Mon Oct 26 (93012f2 … c3cf448: FYM v94 → v98b = public Version 1.0 / 1.1 / 1.2), docs/ANSWERS.md (Oct 26 lines through 8:53pm), docs/MATCH-INBOX.md, Planoly (IG workspace 019fc27c… + Pinterest 019fc27b…), HQ needs / log / money / albums, Ready to Ship `ship` docs (nothing new answered today), the Launch week plan page (artifact TodweWYVb8f9iLUGtsd1KQ), scheduled tasks, site/livepatch READMEs and curl checks of the live site tonight.
 
