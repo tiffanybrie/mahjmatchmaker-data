@@ -436,6 +436,7 @@ Never put drop shadows or other effects on text.
 | Oct 21 | This brand guide created. |
 | Oct 21 | FYM promos show the tool (real app screens, tutorial), never the match-card fan; her picks live in the tool; feedback goes to Claude; email headlines are Caprasimo images. |
 | Oct 27 | FYM app reels follow docs/FYM-REEL-RULES.md: labels on their own item, ♥ right into suitors / ✕ left, every on-screen product counted and tagged, real zoom, moving camera, launch-day energy, finished the night before. |
+| Oct 27 | Matches and match content look for TWO-COLOUR coordination (backs colour + a second colour from the faces, racks each picking one), never tonal same-on-same. |
 
 ---
 
