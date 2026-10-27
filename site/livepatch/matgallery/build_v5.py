@@ -652,7 +652,7 @@ chips.forEach(function(x){x.addEventListener('click',function(){var c=x.dataset.
 print(f"""<style>{CSS}</style>
 <div class="mmg"><span class="mmg-eyebrow">The Mat Library</span>
 <h1 class="mmg-title">Mahjong Mats by Color</h1>
-<p class="mmg-intro">Every mat in my matching library, all in one place. Browse by color or pick a brand, then tap any mat to shop it. Want to see which tiles go with a mat? <a href="/mahjong-tile-matches">See my tile matches</a>, and watch for Find Your Match, coming 10.27.</p>
+<p class="mmg-intro">Every mat in my matching library, all in one place. Browse by color or pick a brand, then tap any mat to shop it. Want to see which tiles go with a mat? <a href="/mahjong-tile-matches">See my tile matches</a>, or try <a href="/find-your-match">Find <em>Your</em> Mat-ch&trade;</a> to swipe your own match.</p>
 <p class="mmg-hint">Tap one color to see that section, or tap two or more to find mats that have all of them.</p>
 <div class="mmg-chips" role="group" aria-label="Filter mats by color">{chips}</div>
 <div class="mmg-tools"><label for="mmg-brand">Brand</label><select id="mmg-brand" class="mmg-brand-sel">{opts}</select><span class="mmg-total" aria-live="polite"></span></div>
