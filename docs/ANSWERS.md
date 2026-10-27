@@ -481,3 +481,6 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 - 2026-10-26 11:58pm · ops · DECIDED · Tiffany: ShopMy "Mahj & Moon" mat collection is empty/incomplete (social chat dropped it). Finish it BEFORE launch tomorrow: (1) bring over the 4 Mahj & Moon mats that are already in Find Your Mat-ch, (2) add about 10 more Mahj & Moon mats with their links (Etsy brand; may be stronger as a direct affiliate later), (3) create a cover card however makes sense (she is not directing it; will likely change), (4) place the collection in the shelf order near the other mat brands (e.g. Mahj & Vine). Goal: no empty/incomplete collection on ShopMy at launch.
 - Oct 27 12:01am · Tiffany: partners are left off the "It's here!" launch email (they're on their own partner email); all launch email belongs to Main/Social, handed off in DESK (Matches & Catalog not handling email).
 - Oct 27 12:05am · Tiffany asked whether she approved the "It's here!" email → no: her Oct 23 NO + revisions were never applied; shown the current draft; revision + approval handed to Main in DESK.
+
+## Oct 27 ~1am - Mahj & Moon ShopMy collection DONE
+14 Etsy mats pinned, portrait cover + description set, placed after Etsy Mahjong Mats (before Betty June / Amazon / Mahj & Vine). Link list: docs/SHOPMY-MAHJ-MOON-oct27.md. Matches & Catalog handoff noted on the DESK.
