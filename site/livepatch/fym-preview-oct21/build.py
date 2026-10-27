@@ -20,8 +20,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CDN = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@'
 ASSET = CDN + '44563dd1c2c4d9a00aa3deec61b1d86ccfdbcaf8/assets/site/fym-page/'
 WORDMARK = CDN + '8952b136784680ba365a33d7ae13ba91a25ab561/assets/brand/mahjmatchmaker-wordmark-notag.png'
-APP_COMMIT = '1ace6c28d0dba10b7c580c7610a3ff9c3d9d55a6'
-APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v100/index.html'  # public 'Version 1.4' = internal v100d (Oct 27 ~3am: album title colours (her calls), PLM Chartreuse = album rack, iPhone framed pop-ups fit the visible screen; files @92bfa44, hd @7251aac)
+APP_COMMIT = '8267e33a77daec94260de000379975ffb9bc9cc6'
+APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v101/index.html'  # public 'Version 1.5' = internal v101 (Oct 27 ~4am: missing partner mats added (Britt Mills House Print + leatherettes, TdT, Bespoke x Brooks Brothers, PLM vegan leather), Spirit of Christmas tiles (sold out); on top of 1.4)
 APP_BASE = CDN + 'ad0675e42242c3abad40cac9f539a265220e26eb' + '/site-app/fym-v72/'  # every file but index.html is unchanged since v72; base stays on the v72 commit (warmed; jsDelivr 403'd t15/132.jpg at the new commit)
 
 # Oct 21 3:13pm (Tiffany): the tool's promo SHOWS THE TOOL. Hero = real v69 app screens in a true-proportion iPhone
