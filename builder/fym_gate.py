@@ -1151,6 +1151,11 @@ if not _pre98:
     _C96 = json.load(open(REPO + 'config/fym-names-logos-v98.json')); _hd96 = json.load(open(os.path.join(B, 'hd', 'index.json'))).get('l', {})
     for _b in _C96['logos']:
         if not str(D['logos'].get(_b, '')).startswith('lg98') or not str(_hd96.get(_b, '')).startswith('file:r98/'): F.append(f"[96] {_b} logo badge is not the visible v98 wordmark")
+# [98] Tiffany Oct 27 12:37am ("these cards are hideous now... I didn't tell anybody to do anything to the text"): the match-card
+# title keeps the pre-Oct-26 look: solid fill + soft white offset shadow, NO outline (no strokeText on the title), exact s.tc when it
+# reads (contrast >= 2.5), v97 same-hue darkening otherwise (builder/fym_fix_oct25/v100_title.py). Title style changes need HER yes.
+if 'drawCard' in h and ('tcVL' in h or 'tcLow' in h or 'navy outline when very light' in h): F.append('[98] card title has an outline style (v98/v98b) - title must be solid fill + white offset shadow only (her Oct 27 call)')
+if 'drawCard' in h and '/*v100 title*/' not in h: F.append('[98] card title is not the v100 (pre-Oct-26 look + exact assigned colour) version')
 if os.path.isdir(os.path.join(B, 'r99')):
     # [97] Tiffany Oct 26 10:07pm ("Have all of the vertical racks been rotated to horizontal? Have backgrounds been removed from
     # racks where possible? Have we isolated a single horizontal rack from every set where it's possible?"): FAIL if a visible

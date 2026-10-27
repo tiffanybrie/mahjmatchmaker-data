@@ -20,8 +20,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CDN = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@'
 ASSET = CDN + '44563dd1c2c4d9a00aa3deec61b1d86ccfdbcaf8/assets/site/fym-page/'
 WORDMARK = CDN + '8952b136784680ba365a33d7ae13ba91a25ab561/assets/brand/mahjmatchmaker-wordmark-notag.png'
-APP_COMMIT = '1247645c48988698a445276330ad0f34887746fa'
-APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v99/index.html'  # public 'Version 1.3' = internal v99b (Oct 26 ~11:45pm: rack photo pass - one horizontal rack per card, backgrounds removed where clean; r99 files @2a827da, hd index @f3c2232)
+APP_COMMIT = 'abff853c857a2fd485384a0bb730c80610acd92f'
+APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v100/index.html'  # public 'Version 1.4' = internal v100 (Oct 27 ~1am: card title back to pre-Oct-26 look, exact assigned colour where it reads; rest = v99b)
 APP_BASE = CDN + 'ad0675e42242c3abad40cac9f539a265220e26eb' + '/site-app/fym-v72/'  # every file but index.html is unchanged since v72; base stays on the v72 commit (warmed; jsDelivr 403'd t15/132.jpg at the new commit)
 
 # Oct 21 3:13pm (Tiffany): the tool's promo SHOWS THE TOOL. Hero = real v69 app screens in a true-proportion iPhone
