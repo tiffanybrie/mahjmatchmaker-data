@@ -72,6 +72,8 @@ Standing order: (1) Find Your Mat-ch™ launch TODAY 9am CT, (2) fall content be
 | Malachite + Kingfisher | Matches & Catalog | Kingfisher via nonpartner_allow.json; racks Miss Mahjong Jade, PLM Oak, Bam Bird Indigo. With the Miss Classic restock (now week of Oct 28). | This week |
 | Papaya Beechwood README | Matches & Catalog | Live since Oct 22; README still says STAGED. | Next touch |
 
+- **Main (Oct 27 night, Tiffany 6:17-6:31pm):** (1) HQ overhaul: archive stale cards, add/updated timestamps on every card, Quick answers section, inline previews, Brownstone Bloom to Ready to Ship, fix the HQ cleanup task. (2) FB group: update the 'launches tomorrow' post to live; weekly Claude Doc of group posts (B&B stained wood racks back, Miss Mahjong restock, launches) for her to edit. (3) Daily Google & Revenue task design (waiting on her yes with the usage trims). (4) YOLO onboarding (approved Oct 23). (5) Add verified line to I Love Mahj + /mahjong-discount-codes. (6) DISABLE partner feedback watch after Nov 10 (trig_01RKw9eUwTYPo39gbYHb65gh) unless feedback is arriving.
+
 ## Waiting on Tiffany (only things she can answer now)
 - **Waiting on her notes (Main):** Malachite how-to reel v1 (Tinder cut, everyday + holiday), assets/social/restock-oct27/how/malachite/.
 **On HQ Today, in this order:**
