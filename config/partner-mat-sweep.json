@@ -1,7 +1,7 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-10-27T06:50:52+00:00",
- "fym_ref": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/fym/b101/index.html",
+ "swept_at": "2026-10-27T13:34:03+00:00",
+ "fym_ref": "origin/fym-site-preview:site-app/fym-v101",
  "stores": {
   "amahjline.com": {
    "brand": "Amahj",
@@ -869,53 +869,7 @@
      "willow-neoprene-mahjong-mat"
     ]
    ],
-   "missing": [
-    [
-     "2026-10-26T14:13:20-04:00",
-     "Crimson Harvest Leatherette Mahjong Mat",
-     "crimson-harvest-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-10-20T15:06:48-04:00",
-     "Peacock Garden Leatherette Mahjong Mat",
-     "peacock-garden-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-10-20T15:06:47-04:00",
-     "Rosalie Leatherette Mahjong Mat",
-     "rosalie-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-10-20T15:06:46-04:00",
-     "Mia Leatherette Mahjong Mat",
-     "mia-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-10-20T15:06:45-04:00",
-     "Willow Leatherette Mahjong Mat",
-     "willow-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-10-20T15:06:44-04:00",
-     "Merrywood Leatherette Mahjong Mat",
-     "merrywood-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-10-20T15:06:44-04:00",
-     "Haven Leatherette Mahjong Mat",
-     "haven-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-10-20T15:06:43-04:00",
-     "Huntley Leatherette Mahjong Mat",
-     "huntley-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-10-20T15:06:42-04:00",
-     "Dabney Leatherette Mahjong Mat",
-     "dabney-leatherette-mahjong-mat"
-    ]
-   ]
+   "missing": []
   },
   "charlestonmahjongclub.com": {
    "brand": "Charleston Mahjong Club",
