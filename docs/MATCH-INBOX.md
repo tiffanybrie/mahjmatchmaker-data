@@ -7,6 +7,7 @@ Especially: **a PARTNER brand holiday mat (not Amazon/Etsy) that isn't in a holi
 Format: `- [date time] [who spotted] ITEM · why · fix wanted`
 
 ## OPEN
+- Oct 27 12:25am (Main) **Card title "outline" (Tiffany: "I don't like the look of outlined text")**: drawCard draws each title line twice: a white copy offset +4,+4 (`g.fillStyle='rgba(255,255,255,.9)';g.fillText(l,W/2+4,y+4)`) then the colour. On mid/light title colours (e.g. House Hearts Warm White's tan, pinks, peaches) the white copy reads as an outline; on dark titles (Hunt Club, Brownstone) it's invisible. Fix in the app: draw that white copy ONLY when the title colour's HSL lightness < 0.42 (Main's partner-graphic renders already do this). Add a gate check.
 - Oct 26 11:25pm (Main) **PRIORITY, before Tue 10:30am partner email**: the partner graphics say "Every Britt Mills mat" / "Every Fait à Main mat, ready to swipe" and Tiffany: "We better have them all." Checked each brand site vs FYM v97:
   - **Britt Mills** (brittmillsdesign.com/products.json): all 43 neoprene in FYM, but **10 Leatherette mats missing**: Crimson Harvest, House Print (NEW design, not in FYM at all), Peacock Garden, Rosalie, Mia, Willow, Merrywood, Haven, Huntley, Dabney (handles `<name>-leatherette-mahjong-mat`; Emerald Mirage's handle is `in-the-jungle-leatherette-mahjong-mat`, already in). Please add (catalog adds that pass the gates; standing authority).
   - **Fait à Main** (faitamainstudio.com): missing **Round Top Mon Amour Mahjong Mat** (`round-top-mon-amour-mahjong-mat`).

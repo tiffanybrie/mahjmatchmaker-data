@@ -484,3 +484,4 @@ Format: `- YYYY-MM-DD HH:MM · chat · topic · her answer in her words (short) 
 
 ## Oct 27 ~1am - Mahj & Moon ShopMy collection DONE
 14 Etsy mats pinned, portrait cover + description set, placed after Etsy Mahjong Mats (before Betty June / Amazon / Mahj & Vine). Link list: docs/SHOPMY-MAHJ-MOON-oct27.md. Matches & Catalog handoff noted on the DESK.
+- Oct 27 12:23am (Main): Tiffany dislikes the white 'outline' on card titles (House Hearts Warm White, tan). Cause: white offset shadow copy behind title text; shows on mid/light colours. Rule: white shadow only on dark titles (L<0.42). Main applied to partner graphics; app fix → MATCH-INBOX. She also flagged (screenshot) Huntington card code bar 'Use code MAHJMATCH10-YMI-2025' (YMI's brand-specific code, set Oct 20 patch.py).
