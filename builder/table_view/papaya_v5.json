@@ -1,0 +1,26 @@
+{
+ "mat": "assets/table-view/src/mm-fruit-stand-overhead-photo.jpg",
+ "mat_in": 36,
+ "rack": "assets/colorcards/papaya-spritz/racks/bird-and-bamboo-lavender.png",
+ "rack_in": 22.5,
+ "rack_edge_in": {
+  "N": 0.55,
+  "S": 1.25,
+  "E": 0.85,
+  "W": 0.8
+ },
+ "back_photo": "assets/table-view/src/omm-papaya-back-photo.png",
+ "tile_in": [
+  0.87,
+  1.25
+ ],
+ "tiles_photo": "assets/tiles/album/papaya-spritz.jpg",
+ "label": "Papaya Spritz (Oh My Mahjong) on Middle & Main Fruit Stand: real photo of the mat\nTile backs: real OMM photo of one Papaya Spritz back \u00b7 Bird & Bamboo Lavender racks",
+ "rack_shift_in": {
+  "W": -0.4,
+  "E": -0.4
+ },
+ "mat_px": 3000,
+ "vary": 0.02,
+ "pitch": 0.975
+}

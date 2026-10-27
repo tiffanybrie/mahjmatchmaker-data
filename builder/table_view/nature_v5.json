@@ -1,0 +1,25 @@
+{
+ "mat": "assets/table-view/src/luxe-polo-club-art.jpg",
+ "mat_in": 36,
+ "treat_art": true,
+ "rack": "assets/racks/card/bam-bird-boutique-walnut.png",
+ "rack_in": 22.5,
+ "rack_edge_in": 1.2,
+ "back_photo": "assets/table-view/src/omm-papaya-back-photo.png",
+ "recolour": [
+  78,
+  20,
+  30
+ ],
+ "tile_in": [
+  1.0,
+  1.5
+ ],
+ "tiles_photo": "assets/tiles/album/nature-walk.png",
+ "label": "Nature Walk (Sunday Mahjong) on Luxe The Polo Club: ART FILE + photo treatment\nTile backs: real tile-back photo, recoloured to Sunday cabernet \u00b7 Bam! Bird walnut racks",
+ "mat_px": 3000,
+ "pitch": 0.975,
+ "vary": 0.02,
+ "recolour_gamma": 1.35,
+ "recolour_hi": 1.0
+}
