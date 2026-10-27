@@ -22,6 +22,9 @@ Standing order: (1) Find Your Mat-ch™ launch TODAY 9am CT, (2) fall content be
 4. **Launch-day watch (all chats).** Partner feedback 9am/1pm/5pm/9pm CT (trig_01RKw9e) → HQ Partner tab; FYM feedback + tester form (/find-your-mat-ch-tester); any bug she or a player reports → fixed the same day with a gate check (rule 8). Also today: OMM moving sale mentor early access 10am CT (Elizabeth posts the link; codes don't work on sale items; heads-up post idea for Wed public opening); Mahj Tile Haus Imperial Lotus restock 11am CT (non-partner, ShopMy only: no promo); Miss Classic drop watch (ETA week of Oct 28). Sales checks per her schedule.
 5. **Fall content + overdue site catch-up (Matches & Catalog → Ops).** Brownstone Bloom live by Thu Oct 29: her Save on the order page (https://claude.ai/artifact/WNjXTGjxfdqoa1tzUiYgQ4, db `review/order` still EMPTY tonight; HQ Today) → brownstone_block.py, warm jsDelivr, publish, /links card, NEW-ALBUM-CHECKLIST. Ops catch-up, standing authority, no OK needed: (a) her 41 thin-album hearts are STILL not on the 9 album pages (curl tonight: 0 of 9; README site/livepatch/thin-albums-oct26 @2cd234fe, cards @e718949b) — her picks, overdue since Oct 24, do right after the launch switch; (b) holiday anchor fix (Sierra still `id="holiday"`, approved Oct 25 3:21pm): rename to `holiday-matches` on the 34 albums + 34 links on /holiday-mahjong-matches; (c) site search header injection (site/livepatch/search, QA passed Oct 22) still not live.
 
+## Later / ideas (added Main Oct 26 11:31pm)
+- Partner portal: a bookmarkable place where each partner brand manages its content (uploads, photo swaps) and gets personalized graphics. Tiffany: "eventually it would make sense". Not this week.
+
 ## In progress
 | Item | Owner | Next step | Target |
 |---|---|---|---|
