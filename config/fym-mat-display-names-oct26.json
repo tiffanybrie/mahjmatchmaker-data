@@ -1,4 +1,5 @@
-{"_note": "Short DISPLAY names for match cards (M.dn); the real product name stays in M.n for links and search. Card sweep Oct 26 (docs/FYM-CARD-SWEEP-oct26.md). fix_names = names cut short in our data, corrected from the brand site (mahjongrowandco.com product titles, Oct 26).",
+{
+ "_note": "Short DISPLAY names for match cards (M.dn); the real product name stays in M.n for links and search. Card sweep Oct 26 (docs/FYM-CARD-SWEEP-oct26.md). fix_names = names cut short in our data, corrected from the brand site (mahjongrowandco.com product titles, Oct 26).",
  "dn": {
   "mahjmood.com/beyond-the-ribbon-four-winds-social-collab-mat-benefitting-pink-fund-pre-order-ships-end-of-december": "Beyond the Ribbon",
   "mahjmood.com/the-eloise-collection-mat-collab-with-four-winds-social-pre-order-estimated-delivery": "The Eloise Collection",
@@ -35,9 +36,12 @@
   "mahjongregister.com/pre-order-gold-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy-1": "Very Merry Wreath",
   "tigredetartan.com/tigre-de-tartan-x-miss-mahjong-el-ultimo-refresco-mahjong-mat": "El Último Refresco",
   "tigredetartan.com/katherine-hartman-x-tigre-de-tartan": "Birdsong",
-  "www.etsy.com/listing/4504460459/preppy-mahjong-mat-whimsical-chinoiserie": "Whimsical Chinoiserie Pavilion"
+  "www.etsy.com/listing/4504460459/preppy-mahjong-mat-whimsical-chinoiserie": "Whimsical Chinoiserie Pavilion",
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-brooks-brothers-oxford-classic": "Oxford Classic",
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-brooks-brothers-oxford-classic#side-b": "Oxford Classic"
  },
  "fix_names": {
   "mahjongrowandco.com/spring-awakening-porcelain-blue-mat": "Spring Awakening – Porcelain Blue",
   "mahjongrowandco.com/mocha-bloom-light-mat": "Mocha Bloom – Light"
- }}
+ }
+}

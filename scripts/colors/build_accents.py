@@ -70,6 +70,7 @@ for k, v in M.items():
 gal = P('assets/mats/gallery')
 extra = [r[0] for r in json.load(open(P('site/livepatch/matgallery/new53_rows.json')))['rows']] + ['tigre-de-tartan--holy-mahj-retired', 'tigre-de-tartan--queen-bee-retired', 'mahj-tile-haus--imperial-lotus']  # Imperial Lotus: Tiffany allowed Oct 20 late (her Talulah album)
 extra += [a['img'] for a in json.load(open(P('config/mat-gallery-extra-rows.json')))['rows'] if a.get('added') == '2026-10-26-sync']  # Oct 26 gallery sync rows (FYM b97 photos)
+extra += [a['img'] for a in json.load(open(P('config/mat-gallery-extra-rows.json')))['rows'] if a.get('added') == '2026-10-27-v101']  # Oct 27 v101 partner sweep rows (FYM b101 photos)
 for img in extra:
     acc, sh = pick(measure(os.path.join(gal, img + '.webp')))
     out['mats'][img] = {'accents': acc, 'major': major(sh), 'shares': sh, 'src': 'pixel-families'}

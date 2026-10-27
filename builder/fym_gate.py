@@ -59,6 +59,7 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
     NRM over every accented name), 84 mat-door Add racks, 85 no set hidden by a stale no_tiles flag + Jubilee Midnight Blue, 86 PLM band
     framing, 87 MFM Natural Wood featured + no 404 wood-rack link, 88 PLM painted racks re-cut, 89 mat photos without white bands (warn:
     angled shots), 90 gallery sync (warn)
+ 100 (Oct 27, v101 = Version 1.5): missing partner mats from the last launch-watch sweep (config/partner-mat-sweep.json; no network)
  91-94 (Oct 26 night, v98 = Version 1.2): 94 PLM rack colours vs reference + locked approved Chartreuse/Dark Green; 95 card title = assigned s.tc; 96 names without stray quotes + Wren logo; 91 match card racks low + tight + equal length, stack photos big, off the mat's left (partner-graphics layout), 92 Mahjong Register single
     racks (no stacks) + Mahj Mood angled scalloped rack, 93 Desert Dreams Up close strip framing; [89] now FAILS if a v98-flattened
     mat loses its flat photo
@@ -1186,6 +1187,45 @@ if os.path.isdir(os.path.join(B, 'r99')):
     for _c in _C97['cuts'].values():  # every v99 cut that is on the card keeps the cut-out flag from the config
         _r = D['racks'].get(_c['key'])
         if _r and not _r.get('hid') and str(_r.get('im', '')).startswith('rk99') and bool(_r.get('c')) != bool(_c['c']): F.append(f"[97] {_r['n']}: cutout flag c should be {_c['c']}")
+# [100] Tiffany Oct 27 2:21am ("This is going to get very old, me chasing down mats"; House Print sat 5 days after the watch saw it).
+#       Missing partner mats: reads ONLY the last saved sweep (config/partner-mat-sweep.json, written by builder/partner_mat_sweep.py,
+#       run by the twice-daily launch watch; Tiffany 2:26am: no scanning per build, no network here). FAIL: a full-size partner mat
+#       published > 2 days ago that is in neither this build (key / u / u0 -> domain/handle) nor config/partner-mat-sweep-ignore.json
+#       (with a reason). WARN: the sweep file is older than 3 days, or a partner store could not be read.
+try:
+    import datetime as _dt100, urllib.parse as _up100
+    def _nu100(u):
+        u = str(u or '')
+        if '/discount/' in u and 'redirect=' in u:
+            u = re.sub(r'^(https?://[^/]+).*$', r'\1', u) + _up100.unquote(u.split('redirect=', 1)[1].split('&')[0])
+        u = re.sub(r'^https?://', '', u.split('?')[0].split('#')[0]).rstrip('/').replace('/products/', '/')
+        return re.sub(r'^(www\.|shop\.)', '', u)
+    _sw100p = REPO + 'config/partner-mat-sweep.json'
+    if not os.path.exists(_sw100p): F.append("[100] no partner mat sweep on file (config/partner-mat-sweep.json): run python3 builder/partner_mat_sweep.py")
+    else:
+        _SW = json.load(open(_sw100p)); _IG = json.load(open(REPO + 'config/partner-mat-sweep-ignore.json'))
+        _now = _dt100.datetime.now(_dt100.timezone.utc)
+        _age = (_now - _dt100.datetime.fromisoformat(_SW['swept_at'])).total_seconds() / 86400
+        if _age > 3: W97.append(f"[100] partner mat sweep is {_age:.1f} days old (config/partner-mat-sweep.json, {_SW['swept_at']}): the launch watch should refresh it twice daily")
+        _have = set()
+        for _k, _m in M.items():
+            for _u in (_k, _m.get('u'), _m.get('u0')):
+                if _u: _have.add(_nu100(_u))
+        _miss100, _err100 = [], []
+        for _dom, _v in _SW['stores'].items():
+            if str(_v.get('status', '')).startswith('error'): _err100.append(f"{_dom} ({_v['status'][:60]})")
+            _sb = (_IG.get('stores_before') or {}).get(re.sub(r'^(www\.|shop\.)', '', _dom))
+            for _pub, _t, _hd in _v.get('mats', []):
+                _key = _nu100(f'{_dom}/{_hd}')
+                if _key in _have or _key in _IG['items']: continue
+                try: _pd = _dt100.datetime.fromisoformat(_pub)
+                except Exception: _pd = _now
+                if (_now - _pd).total_seconds() / 86400 <= 2: continue
+                if _sb and _pub[:10] < _sb['before']: continue
+                _miss100.append(f"{_v.get('brand', _dom)} | {_t} ({_key}, live {_pub[:10]})")
+        if _miss100: F.append(f"[100] {len(_miss100)} full-size partner mats live > 2 days are not in FYM (add them, or list them with a reason in config/partner-mat-sweep-ignore.json): " + '; '.join(_miss100[:12]))
+        if _err100: W97.append(f"[100] partner stores the last sweep could not read (not checked): " + '; '.join(_err100))
+except Exception as _e: F.append(f"[100] missing partner mat check did not run: {_e}")
 if W97:
     print("FYM GATE WARNINGS (v97):")
     for _w in W97: print('  ' + _w)

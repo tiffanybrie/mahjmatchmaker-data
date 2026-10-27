@@ -336,6 +336,12 @@
    "src": "assets/tiles/album/sunday-blues.png",
    "full": "t15/190.jpg",
    "pile": "dffd826d85"
+  },
+  "hol:spirit-of-christmas": {
+   "set": "Spirit of Christmas",
+   "src": "assets/tiles/v101/plm-spirit-of-christmas.jpg",
+   "full": "t101/spirit-of-christmas.jpg",
+   "pile": "p1017c45238c0d"
   }
  },
  "sets": {
@@ -16226,6 +16232,80 @@
   "yellow-mountain-imports-verdant-spring": {
    "m": [],
    "name": "Verdant Spring"
+  },
+  "spirit-of-christmas": {
+   "m": [
+    [
+     "peacelovemahjong.com/mahjong-mats-holiday?v=67570521473316",
+     [
+      "bb:Matcha"
+     ]
+    ],
+    [
+     "peacelovemahjong.com/mahjong-mats-holiday?v=67570521407780",
+     [
+      "bb:Mauve",
+      "bb:Basil"
+     ]
+    ],
+    [
+     "peacelovemahjong.com/mahjong-mats-holiday?v=67570521276708",
+     [
+      "bb:Cherry Red",
+      "bb:Light Pink"
+     ]
+    ],
+    [
+     "peacelovemahjong.com/mahjong-mats-holiday?v=67570521375012",
+     [
+      "bb:Light Blue",
+      "bb:Forest Green"
+     ]
+    ],
+    [
+     "peacelovemahjong.com/mahjong-mats-holiday?v=67570521506084",
+     [
+      "bb:Brick Red",
+      "bb:Matcha"
+     ]
+    ],
+    [
+     "peacelovemahjong.com/mahjong-mats-holiday?v=67570778439972",
+     [
+      "bb:Light Pink",
+      "bb:Red"
+     ]
+    ],
+    [
+     "peacelovemahjong.com/mahjong-mats-holiday?v=67570521571620",
+     [
+      "bb:Evergreen",
+      "bb:Flamingo"
+     ]
+    ],
+    [
+     "peacelovemahjong.com/mahjong-mats-holiday?v=67570521440548",
+     [
+      "bb:Cherry Red",
+      "bb:Magenta"
+     ]
+    ],
+    [
+     "peacelovemahjong.com/mahjong-mats-holiday?v=67570521309476",
+     [
+      "bb:Radish",
+      "bb:Forest Green"
+     ]
+    ],
+    [
+     "peacelovemahjong.com/mahjong-mats-holiday?v=67570521342244",
+     [
+      "bb:Pistachio"
+     ]
+    ]
+   ],
+   "sb": true,
+   "name": "Spirit of Christmas"
   }
  },
  "mats": {
@@ -25866,6 +25946,310 @@
     3
    ],
    "hid": false
+  },
+  "tigredetartan.com/mahjong-mat-domino-blonde": {
+   "n": "Domino Blonde",
+   "bn": "Tigre de Tartan",
+   "f": "m/2232.webp",
+   "th": "m101fa88cdc3",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "neutral",
+    "dark"
+   ],
+   "mt": [
+    0,
+    1
+   ]
+  },
+  "tigredetartan.com/mahjong-mat-estate-sale": {
+   "n": "Estate Sale",
+   "bn": "Tigre de Tartan",
+   "f": "m/2233.webp",
+   "th": "m101895ab9ee",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "red",
+    "green",
+    "neutral"
+   ],
+   "mt": [
+    0,
+    1,
+    2
+   ]
+  },
+  "tigredetartan.com/mahjong-mat-fair-isle-cashmere": {
+   "n": "Fair Isle Cashmere",
+   "bn": "Tigre de Tartan",
+   "f": "m/2234.webp",
+   "th": "m1014d895aa4",
+   "rt": false,
+   "hid": true,
+   "mf": [
+    "neutral"
+   ],
+   "mt": [
+    0
+   ]
+  },
+  "brittmillsdesign.com/house-print-leatherette-mahjong-mat": {
+   "n": "House Print Leatherette",
+   "bn": "Britt Mills",
+   "f": "m/2235.webp",
+   "th": "m1014763edf5",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "orange",
+    "blue",
+    "pink",
+    "dark"
+   ],
+   "mt": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-brooks-brothers-oxford-classic": {
+   "n": "Bespoke x Brooks Brothers Oxford Classic (Side A: Oxford Stripe)",
+   "bn": "Bespoke Mahjong",
+   "f": "m/2236.webp",
+   "th": "m1011ccb3121",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "blue"
+   ],
+   "mt": [
+    0
+   ]
+  },
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-brooks-brothers-oxford-classic#side-b": {
+   "n": "Bespoke x Brooks Brothers Oxford Classic (Side B: Navy)",
+   "bn": "Bespoke Mahjong",
+   "f": "m/2237.webp",
+   "th": "m101e5ec9a93",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "dark"
+   ],
+   "mt": [
+    0
+   ]
+  },
+  "peacelovemahjong.com/leather-mat-with-mat-tube?v=67801473679652": {
+   "n": "Vegan Leather – Cognac",
+   "bn": "Peace Love Mahjong",
+   "f": "m/2238.webp",
+   "th": "m101cad592d7",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "dark"
+   ],
+   "mt": [
+    0
+   ]
+  },
+  "peacelovemahjong.com/leather-mat-with-mat-tube?v=67801473745188": {
+   "n": "Vegan Leather – Dusty Rose",
+   "bn": "Peace Love Mahjong",
+   "f": "m/2239.webp",
+   "th": "m10159a45cec",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "pink"
+   ],
+   "mt": [
+    0
+   ]
+  },
+  "peacelovemahjong.com/leather-mat-with-mat-tube?v=67801473777956": {
+   "n": "Vegan Leather – Slate Blue",
+   "bn": "Peace Love Mahjong",
+   "f": "m/2240.webp",
+   "th": "m1014ce01631",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "blue"
+   ],
+   "mt": [
+    0
+   ]
+  },
+  "peacelovemahjong.com/leather-mat-with-mat-tube?v=67801473810724": {
+   "n": "Vegan Leather – Metallic",
+   "bn": "Peace Love Mahjong",
+   "f": "m/2241.webp",
+   "th": "m101a3c491fc",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "neutral",
+    "dark"
+   ],
+   "mt": [
+    0,
+    1
+   ]
+  },
+  "brittmillsdesign.com/crimson-harvest-leatherette-mahjong-mat": {
+   "n": "Crimson Harvest Leatherette",
+   "bn": "Britt Mills",
+   "f": "m/2242.webp",
+   "th": "m1013fe0357a",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "green",
+    "red",
+    "pink",
+    "dark"
+   ],
+   "mt": [
+    0,
+    1,
+    1,
+    2
+   ]
+  },
+  "brittmillsdesign.com/merrywood-leatherette-mahjong-mat": {
+   "n": "Merrywood Leatherette",
+   "bn": "Britt Mills",
+   "f": "m/2243.webp",
+   "th": "m101aec16c29",
+   "rt": false,
+   "hid": false,
+   "mf": [],
+   "mt": []
+  },
+  "brittmillsdesign.com/willow-leatherette-mahjong-mat": {
+   "n": "Willow Leatherette",
+   "bn": "Britt Mills",
+   "f": "m/2244.webp",
+   "th": "m101a160a300",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "neutral"
+   ],
+   "mt": [
+    0
+   ]
+  },
+  "brittmillsdesign.com/haven-leatherette-mahjong-mat": {
+   "n": "Haven Leatherette",
+   "bn": "Britt Mills",
+   "f": "m/2245.webp",
+   "th": "m10118d36588",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "purple",
+    "dark",
+    "pink",
+    "green"
+   ],
+   "mt": [
+    0,
+    2,
+    2,
+    2
+   ]
+  },
+  "brittmillsdesign.com/huntley-leatherette-mahjong-mat": {
+   "n": "Huntley Leatherette",
+   "bn": "Britt Mills",
+   "f": "m/2246.webp",
+   "th": "m1015749ddd0",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "dark",
+    "neutral"
+   ],
+   "mt": [
+    0,
+    2
+   ]
+  },
+  "brittmillsdesign.com/dabney-leatherette-mahjong-mat": {
+   "n": "Dabney Leatherette",
+   "bn": "Britt Mills",
+   "f": "m/2247.webp",
+   "th": "m10165104bd0",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "dark",
+    "neutral"
+   ],
+   "mt": [
+    0,
+    2
+   ]
+  },
+  "brittmillsdesign.com/peacock-garden-leatherette-mahjong-mat": {
+   "n": "Peacock Garden Leatherette",
+   "bn": "Britt Mills",
+   "f": "m/2248.webp",
+   "th": "m101f98f1deb",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "blue",
+    "dark"
+   ],
+   "mt": [
+    0,
+    1
+   ]
+  },
+  "brittmillsdesign.com/mia-leatherette-mahjong-mat": {
+   "n": "Mia Leatherette",
+   "bn": "Britt Mills",
+   "f": "m/2249.webp",
+   "th": "m10191732462",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "pink",
+    "dark",
+    "blue"
+   ],
+   "mt": [
+    0,
+    2,
+    2
+   ]
+  },
+  "brittmillsdesign.com/rosalie-leatherette-mahjong-mat": {
+   "n": "Rosalie Leatherette",
+   "bn": "Britt Mills",
+   "f": "m/2250.webp",
+   "th": "m101761fbfb8",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "purple",
+    "neutral",
+    "pink",
+    "dark"
+   ],
+   "mt": [
+    0,
+    2,
+    2,
+    2
+   ]
   }
  },
  "_changes": [
@@ -25961,6 +26345,7 @@
   "2026-10-26: Mahjong Row & Co. mat names un-truncated (Spring Awakening – Porcelain Blue, Mocha Bloom – Light) from the brand site; card sweep",
   "2026-10-26: Bam Bird Classic Tortoise pile -> scatter composite (Tiffany 10:45am yes)",
   "2026-10-26: Bespoke double-sided mats listed twice (Side A / Side B names + side-B entries; Tiffany 11:41am)",
-  "2026-10-26: 5 My Fair Mahjong sets + YMI Mojave unhidden (stale no_tiles flag from the old photo; Tiffany 5:45pm), Crystal Confetti + Prism on close brand photos (v97_mfm.py)"
+  "2026-10-26: 5 My Fair Mahjong sets + YMI Mojave unhidden (stale no_tiles flag from the old photo; Tiffany 5:45pm), Crystal Confetti + Prism on close brand photos (v97_mfm.py)",
+  "2026-10-27 v101: partner sweep mats (Britt Mills House Print, TdT Domino Blonde + Estate Sale + Fair Isle Cashmere (hidden), Bespoke x Brooks Brothers Oxford Classic A/B, PLM Vegan Leather x4) + Spirit of Christmas tile set (her Spirit swipe book picks)"
  ]
 }

@@ -1,0 +1,286 @@
+{
+ "_about": "Partner mats the missing-mat gate [100] must NOT fail on, each with a reason (Tiffany Oct 27 2:21am: a partner store's full-size mat live > 2 days but not in FYM = FAIL unless listed here with a reason). Keys = store domain without www./shop. + '/' + product handle. 'stores_before' = a whole store's listings published before a date (a print-on-demand catalog FYM only carries a selection of); newer listings from that store still count. Read by builder/fym_gate.py [100]; the sweep itself is builder/partner_mat_sweep.py (run by the launch watch).",
+ "stores_before": {
+  "letsbebesties.com": {
+   "before": "2026-10-27",
+   "reason": "Let's Be Besties is a print-on-demand catalog (~340 mat designs; catalog audit Oct 25 counted it apart, like Splash of Color). FYM carries a ~40-mat selection. Whole-catalog add is Tiffany's call (asked in docs/MATCH-INBOX.md Oct 27); listings after Oct 27 still trip the gate so new designs get looked at."
+  }
+ },
+ "items": {
+  "amahjline.com/mini-amahj-game-mat": {
+   "name": "Green, Pink + Blue Mini Travel Mahjong Mat",
+   "reason": "travel-size mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "amahjline.com/solo-amahj-mini-mat": {
+   "name": "Solo Amahj Mahjong Practice Mat",
+   "reason": "solo-play mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "andersruff.com/bird-bam-the-bees-solo-play-mahjong-mat": {
+   "name": "Bird, Bam & The Bees Solo Play Mahjong Mat",
+   "reason": "solo-play mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "andersruff.com/cabana-royale-solo-play-mahjong-mat": {
+   "name": "Cabana Royale Solo Play Mahjong Mat",
+   "reason": "solo-play mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "andersruff.com/christmas-solo-play-mahjong-mat": {
+   "name": "Christmas Solo Play Mahjong Mat",
+   "reason": "solo-play mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "andersruff.com/eau-de-mahj-solo-play-mahjong-mat": {
+   "name": "Eau De Mahj Solo Play Mahjong Mat",
+   "reason": "solo-play mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "andersruff.com/green-light-gatsby-solo-play-mahjong-mat": {
+   "name": "Green Light Gatsby Solo Play Mahjong Mat",
+   "reason": "solo-play mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "andersruff.com/mahj-in-bloom-solo-play-mahjong-mat": {
+   "name": "Mahj in Bloom Solo Play Mahjong Mat",
+   "reason": "solo-play mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "andersruff.com/the-mat-caddy": {
+   "name": "The Mat Caddy",
+   "reason": "mat caddy accessory",
+   "added": "2026-10-27"
+  },
+  "bambirdboutique.com/mat-storage-tube": {
+   "name": "Mat Storage Tube",
+   "reason": "mat storage tube accessory",
+   "added": "2026-10-27"
+  },
+  "bambirdboutique.com/neoprene-umbrella-mahjong-mat": {
+   "name": "Neoprene Umbrella Mahjong Mat",
+   "reason": "slit-umbrella format of a mat (outdoor format)",
+   "added": "2026-10-27"
+  },
+  "bambirdboutique.com/travel-neoprene-mat": {
+   "name": "Travel Neoprene Mahjong Mat",
+   "reason": "travel-size mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "bespokemahjong.com/game-mat-reusable-storage-tube-and-ribbon": {
+   "name": "Game Mat Storage Tube - Gift Wrapped",
+   "reason": "mat storage tube accessory",
+   "added": "2026-10-27"
+  },
+  "bespokemahjong.com/mat-bag-plastic-drawstring-sheath": {
+   "name": "Bespoke Clear Mat Sleeves - Set of 5",
+   "reason": "mat sleeves accessory",
+   "added": "2026-10-27"
+  },
+  "bespokemahjong.com/odd-lots-less-than-perfect-grateful-dead-xl-mega-tiles-cosmic-white-in-tile-bag-loose-no-box-copy": {
+   "name": "ODD LOTS LESS THAN PERFECT - GRATEFUL DEAD TRAVEL SIZE DOUBLE SIDED MAT 23.6\" x 23.6\"",
+   "reason": "travel-size mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "birdandbamboo.com/bird-bamboo-mahjong-mat-bag": {
+   "name": "Bird & Bamboo Mahjong Mat Bag",
+   "reason": "mat bag accessory",
+   "added": "2026-10-27"
+  },
+  "birdandbamboo.com/poolside-mahj-floating-mat-coming-soon": {
+   "name": "Poolside Mahj Floating Mat with Waterproof Carrying Bag",
+   "reason": "floating pool mat (not a table mat)",
+   "added": "2026-10-27"
+  },
+  "birdandbamboo.com/the-iconic-travel-mahjong-mat-w-hot-pink-rack-bag": {
+   "name": "The Iconic Travel Mahjong Mat w/ Hot Pink Mat Bag",
+   "reason": "travel-size mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "birdandbamboo.com/the-paradise-mahjong-travel-mat-island-green": {
+   "name": "The Paradise Mahjong Travel Mat - Island Green",
+   "reason": "travel-size mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "birdandbamboo.com/the-paradise-mahjong-travel-mat-passion-pink": {
+   "name": "The Paradise Mahjong Travel Mat - Passion Pink",
+   "reason": "travel-size mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "brittmillsdesign.com/britt-mills-mahjong-mat-art-wall-calendars-2027": {
+   "name": "Year of Mahj - Mahjong Mat Art Wall Calendars (2027)",
+   "reason": "wall calendar, not a mat",
+   "added": "2026-10-27"
+  },
+  "brittmillsdesign.com/house-print-desk-mat": {
+   "name": "House Print Desk Mat",
+   "reason": "desk mat, not a mahjong mat",
+   "added": "2026-10-27"
+  },
+  "charlestonmahjongclub.com/floating-mat-2-color-ways": {
+   "name": "Portable Floating Mahjong Mat w/ Carrying Bag- 2 color ways",
+   "reason": "floating pool mat (not a table mat)",
+   "added": "2026-10-27"
+  },
+  "charlestonmahjongclub.com/the-club-mat-bag-handle-toggle-closure": {
+   "name": "The Club Mat Bag- 4 Color Options",
+   "reason": "mat bag accessory",
+   "added": "2026-10-27"
+  },
+  "faitamainstudio.com/round-top-mon-amour-mahjong-mat": {
+   "name": "Round Top Mon Amour Mahjong Mat",
+   "reason": "v94 skip (config/fym-partner-adds-oct26.json): the only photos are corner close-ups with racks/tiles; re-check when Fait à Main posts a full mat photo",
+   "added": "2026-10-27"
+  },
+  "letsmahj-on.com/let-s-mahj-on-floating-pool-mahjong-mat": {
+   "name": "LMO! Floating Pool Mahjong Mat",
+   "reason": "floating pool mat (not a table mat)",
+   "added": "2026-10-27"
+  },
+  "letsmahj-on.com/lmo-crossbody-mat-bag": {
+   "name": "LMO Crossbody Mat Bag",
+   "reason": "mat bag accessory",
+   "added": "2026-10-27"
+  },
+  "macandmillermahjong.com/dream-display-mat-bag-tote": {
+   "name": "The Dream Display Mat Bag Tote (Pack of 5)",
+   "reason": "mat bag accessory",
+   "added": "2026-10-27"
+  },
+  "mahjandvine.com/pre-order-sunset-swirl-copy-1": {
+   "name": "Canvas Storage Bag",
+   "reason": "storage bag accessory",
+   "added": "2026-10-27"
+  },
+  "mahjmood.com/color-splash-travel-mat": {
+   "name": "Color Splash Travel Mat",
+   "reason": "travel-size mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "mahjmood.com/secret-garden-travel-mat": {
+   "name": "Secret Garden Travel Mat",
+   "reason": "travel-size mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "mahjongregister.com/mahjong-mat-strap-silicone-slap-bracelet-mat-holder-roll-up-mahjong-mat-band-travel-storage-strap-american-mahjong-gift": {
+   "name": "Mahjong Mat Strap | Silicone Slap Bracelet Mat Holder | Roll Up Mahjong Mat Band | Travel Storage Strap | American Mahjong Gift",
+   "reason": "travel-size mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "minimahjer.com/mini-mahjer-travel-mat": {
+   "name": "Mini Mahjer Travel Mat",
+   "reason": "travel-size mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "myfairmahjong.com/mahjong-rack-bag-fits-20-racks-folded-mat-protection-for-mahjong-racks": {
+   "name": "Mahjong Rack Bag  |  Fits 20\" Racks + Folded Mat",
+   "reason": "mat bag accessory",
+   "added": "2026-10-27"
+  },
+  "myfairmahjong.com/mini-mahjong-mats": {
+   "name": "MINI MAHJONG MAT  |  Color Wave  |  21\" x 21\"",
+   "reason": "mini mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "ohmymahjong.com/blue-cane-mat": {
+   "name": "Mini Blue Cane Mat",
+   "reason": "mini mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "ohmymahjong.com/blue-mat-storage-bag": {
+   "name": "Blue Mat Storage Bag",
+   "reason": "mat bag accessory",
+   "added": "2026-10-27"
+  },
+  "ohmymahjong.com/green-cane-mat": {
+   "name": "Mini Green Cane Mat",
+   "reason": "mini mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "ohmymahjong.com/green-mat-storage-bag": {
+   "name": "Green Mat Storage Bag",
+   "reason": "mat bag accessory",
+   "added": "2026-10-27"
+  },
+  "ohmymahjong.com/holly-jolly-mat-in-tube": {
+   "name": "Holly Jolly Mat in Tube",
+   "reason": "mat storage tube accessory",
+   "added": "2026-10-27"
+  },
+  "ohmymahjong.com/mint-mat-storage-bag": {
+   "name": "Mint Mat Storage Bag",
+   "reason": "mat bag accessory",
+   "added": "2026-10-27"
+  },
+  "ohmymahjong.com/orange-cane-mat": {
+   "name": "Mini Orange Cane Mat",
+   "reason": "mini mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "ohmymahjong.com/pink-cane-mat": {
+   "name": "Mini Pink Cane Mat",
+   "reason": "mini mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "ohmymahjong.com/pink-mat-storage-bag": {
+   "name": "Pink Mat Storage Bag",
+   "reason": "mat bag accessory",
+   "added": "2026-10-27"
+  },
+  "ohmymahjong.com/pistachio-mat-storage-bag": {
+   "name": "Pistachio Mat Storage Bag",
+   "reason": "mat bag accessory",
+   "added": "2026-10-27"
+  },
+  "ohmymahjong.com/purple-mat-storage-bag": {
+   "name": "Purple Mat Storage Bag",
+   "reason": "mat bag accessory",
+   "added": "2026-10-27"
+  },
+  "ohmymahjong.com/taupe-mat-storage-bag": {
+   "name": "Taupe Mat Storage Bag",
+   "reason": "mat bag accessory",
+   "added": "2026-10-27"
+  },
+  "ohmymahjong.com/teal-mat-storage-bag": {
+   "name": "Teal Mat Storage Bag",
+   "reason": "mat bag accessory",
+   "added": "2026-10-27"
+  },
+  "peacelovemahjong.com/clear-mahjong-mat-storage-tube": {
+   "name": "The Mahj Mat Tube",
+   "reason": "mat storage tube accessory",
+   "added": "2026-10-27"
+  },
+  "peacelovemahjong.com/leather-mat-with-mat-tube": {
+   "name": "Vegan Leather Mahjong Mats with Mat Tube",
+   "reason": "mat storage tube accessory",
+   "added": "2026-10-27"
+  },
+  "sundaymahjong.com/vegan-leather-mini-mahjong-mat": {
+   "name": "Vegan Leather Mini Mahjong Mat",
+   "reason": "mini mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "theroyalmahjongsociety.com/travel-size-mahj-royale-mahjong-mat": {
+   "name": "Travel Size Mahj Royale Mahjong Mat",
+   "reason": "travel-size mat (not full size)",
+   "added": "2026-10-27"
+  },
+  "tigredetartan.com/mahjong-mat-domino-blonde-rules-edition": {
+   "name": "Mahjong Mat, DOMINO BLONDE [W/ RULES]",
+   "reason": "same Domino Blonde design with rules text printed on it; FYM carries the plain Domino Blonde listing (v101)",
+   "added": "2026-10-27"
+  },
+  "tigredetartan.com/paige-spearin-mahjong-mat": {
+   "name": "Paige Spearin ROUND Mahjong Mat, Après Mahj",
+   "reason": "Paige Spearin x Tigre de Tartan collab: NO commission (TdT excluded them); CLAUDE.md rule 6(4): never add or promote. Also round.",
+   "added": "2026-10-27"
+  },
+  "tigredetartan.com/strap-for-tdt-mat-bag": {
+   "name": "Strap for TDT Mat Bag",
+   "reason": "mat strap accessory",
+   "added": "2026-10-27"
+  }
+ }
+}

@@ -13628,19 +13628,22 @@
   "tigre-de-tartan--domino-oxblood": {
    "accents": [
     "neutral",
-    "dark",
     "red"
    ],
-   "major": [
-    "red"
-   ],
+   "major": [],
    "shares": {
-    "dark": 27.0,
-    "red": 18.3,
-    "neutral": 50.7,
-    "green": 3.9
+    "blue": 0.4,
+    "earthy": 2.6,
+    "dark": 16.6,
+    "green": 6.9,
+    "neutral": 48.8,
+    "orange": 0.0,
+    "pink": 0.7,
+    "purple": 9.3,
+    "red": 14.7,
+    "yellow": 0.0
    },
-   "src": "mat-color-measured"
+   "src": "pixel-families"
   },
   "tigre-de-tartan--strawberry-retired": {
    "accents": [
@@ -16063,6 +16066,344 @@
     "pink": 0.0,
     "teal": 4.7,
     "yellow": 63.9
+   },
+   "src": "pixel-families"
+  },
+  "tigre-de-tartan--domino-blonde": {
+   "accents": [
+    "earthy"
+   ],
+   "major": [],
+   "shares": {
+    "blue": 8.1,
+    "earthy": 51.3,
+    "dark": 4.6,
+    "green": 0.3,
+    "neutral": 35.4,
+    "orange": 0.2,
+    "pink": 0.1,
+    "red": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "tigre-de-tartan--estate-sale": {
+   "accents": [
+    "red",
+    "green",
+    "earthy"
+   ],
+   "major": [
+    "red",
+    "green"
+   ],
+   "shares": {
+    "blue": 0.4,
+    "earthy": 23.6,
+    "dark": 3.0,
+    "green": 23.9,
+    "neutral": 6.0,
+    "orange": 7.1,
+    "pink": 0.8,
+    "red": 29.7,
+    "yellow": 5.5
+   },
+   "src": "pixel-families"
+  },
+  "britt-mills--house-print-leatherette": {
+   "accents": [
+    "orange",
+    "earthy",
+    "pink"
+   ],
+   "major": [
+    "orange",
+    "pink"
+   ],
+   "shares": {
+    "blue": 11.5,
+    "earthy": 20.6,
+    "dark": 0.5,
+    "green": 5.1,
+    "neutral": 7.8,
+    "orange": 26.3,
+    "pink": 16.4,
+    "purple": 0.7,
+    "teal": 5.9,
+    "yellow": 5.2
+   },
+   "src": "pixel-families"
+  },
+  "bespoke-mahjong--brooks-brothers-oxford-classic": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 98.7,
+    "earthy": 0.2,
+    "dark": 0.0,
+    "neutral": 1.1,
+    "purple": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "peace-love-mahjong--vegan-leather-cognac": {
+   "accents": [
+    "earthy"
+   ],
+   "major": [],
+   "shares": {
+    "earthy": 99.5,
+    "green": 0.0,
+    "neutral": 0.3,
+    "pink": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "peace-love-mahjong--vegan-leather-dusty-rose": {
+   "accents": [
+    "pink"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "green": 0.0,
+    "neutral": 0.0,
+    "pink": 100.0,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "peace-love-mahjong--vegan-leather-slate-blue": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 99.8,
+    "green": 0.0,
+    "neutral": 0.2,
+    "orange": 0.0,
+    "pink": 0.0,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "peace-love-mahjong--vegan-leather-metallic": {
+   "accents": [
+    "earthy"
+   ],
+   "major": [],
+   "shares": {
+    "blue": 0.0,
+    "earthy": 98.9,
+    "green": 0.0,
+    "neutral": 1.0,
+    "pink": 0.0,
+    "teal": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "britt-mills--crimson-harvest-leatherette": {
+   "accents": [
+    "green",
+    "dark",
+    "red"
+   ],
+   "major": [
+    "green",
+    "red"
+   ],
+   "shares": {
+    "blue": 0.0,
+    "earthy": 4.4,
+    "dark": 21.3,
+    "green": 25.7,
+    "neutral": 19.9,
+    "orange": 0.7,
+    "pink": 10.0,
+    "purple": 0.9,
+    "red": 16.3,
+    "teal": 0.3,
+    "yellow": 0.5
+   },
+   "src": "pixel-families"
+  },
+  "britt-mills--merrywood-leatherette": {
+   "accents": [
+    "green",
+    "blue"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 13.4,
+    "earthy": 3.6,
+    "dark": 4.5,
+    "green": 45.4,
+    "neutral": 27.4,
+    "orange": 0.1,
+    "pink": 0.4,
+    "purple": 0.1,
+    "red": 5.2
+   },
+   "src": "pixel-families"
+  },
+  "britt-mills--willow-leatherette": {
+   "accents": [
+    "green",
+    "blue"
+   ],
+   "major": [
+    "green",
+    "blue"
+   ],
+   "shares": {
+    "blue": 23.1,
+    "earthy": 4.1,
+    "dark": 0.9,
+    "green": 48.7,
+    "neutral": 10.6,
+    "orange": 4.2,
+    "pink": 6.6,
+    "red": 0.6,
+    "teal": 0.0,
+    "yellow": 1.2
+   },
+   "src": "pixel-families"
+  },
+  "britt-mills--haven-leatherette": {
+   "accents": [
+    "pink",
+    "blue"
+   ],
+   "major": [
+    "pink",
+    "blue"
+   ],
+   "shares": {
+    "blue": 17.3,
+    "earthy": 11.1,
+    "dark": 14.8,
+    "green": 3.7,
+    "neutral": 17.3,
+    "orange": 0.4,
+    "pink": 22.0,
+    "purple": 11.2,
+    "red": 2.1,
+    "teal": 0.1,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "britt-mills--huntley-leatherette": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 38.2,
+    "earthy": 8.6,
+    "dark": 3.2,
+    "green": 2.9,
+    "neutral": 30.8,
+    "orange": 2.1,
+    "pink": 10.6,
+    "purple": 0.0,
+    "red": 3.6,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "britt-mills--dabney-leatherette": {
+   "accents": [
+    "neutral",
+    "blue",
+    "earthy"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 25.2,
+    "earthy": 12.4,
+    "dark": 5.1,
+    "neutral": 57.2,
+    "orange": 0.0,
+    "red": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "britt-mills--peacock-garden-leatherette": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 45.0,
+    "earthy": 7.0,
+    "dark": 3.2,
+    "green": 6.7,
+    "neutral": 26.1,
+    "orange": 0.1,
+    "pink": 0.2,
+    "purple": 0.3,
+    "teal": 0.4,
+    "yellow": 10.9
+   },
+   "src": "pixel-families"
+  },
+  "britt-mills--mia-leatherette": {
+   "accents": [
+    "pink",
+    "earthy"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "blue": 11.6,
+    "earthy": 17.6,
+    "dark": 11.2,
+    "green": 1.2,
+    "neutral": 4.2,
+    "orange": 1.3,
+    "pink": 50.9,
+    "red": 0.0,
+    "teal": 0.7,
+    "yellow": 1.2
+   },
+   "src": "pixel-families"
+  },
+  "britt-mills--rosalie-leatherette": {
+   "accents": [
+    "pink",
+    "earthy"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "blue": 10.1,
+    "earthy": 17.4,
+    "dark": 6.8,
+    "green": 2.6,
+    "neutral": 25.4,
+    "orange": 0.9,
+    "pink": 33.6,
+    "purple": 1.3,
+    "red": 1.0,
+    "teal": 1.0
    },
    "src": "pixel-families"
   }
