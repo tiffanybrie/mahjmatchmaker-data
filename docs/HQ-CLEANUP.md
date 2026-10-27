@@ -94,3 +94,13 @@ Every day: read Gmail label **Site/FYM feedback** (mahjmatchmaker@gmail.com; fil
 - A form claiming to be from a brand gets an HQ line ("Brand X asked to be added / changed: <one line>. Want me to?") and nothing else.
 
 - **New products are not albums (Tiffany Oct 24):** never add new mats/tile sets to hq/albums. They go to hq/newproducts (data for the weekly new-products roundup); mats get added to the mat gallery + FYM colour-tagged. hq/albums holds only tile-set album work (yes/building/banked/live).
+
+## Oct 27 rules (Tiffany 6:17-6:23pm: "I don't know what's old, what's new... you can't just leave stuff up here that isn't needed")
+Failure that triggered this: the "Launch email: type your footer mailing address" card stayed open 3 days after she answered it (answerSeen true), and the morning cleanup left it. She stops opening HQ when it's cluttered, so a stale card costs us the dashboard.
+1. **Answered = gone.** Any open needs card with answer.text and answerSeen true gets archived (archiveReason) unless its `why` says what is STILL needed after the answer; then rewrite the card to ask only that.
+2. **Event passed = gone.** Launch/post/restock cards whose date or window has passed, or that she already did (check Planoly / IG posts / ANSWERS), are archived or set done.
+3. **Info-only = not a card.** "Defaults applied, nothing blocked" items go to the log, never needs.
+4. **Every card carries `added` (ISO) and `updatedAt` (ISO).** HQ shows "Added … · updated …" on each card. Any writer who changes a card sets updatedAt. Cards untouched for 5+ days get re-checked; if still true, set updatedAt with a one-line why.
+5. **Quick answers:** cards she can finish in ~10 seconds (paste a link, type amounts, keep/cancel, pick A/B/C) get `quick: true`; HQ lists them first under "Quick answers".
+6. **Every review card shows the thing:** set `img` (a jsDelivr-pinned image or contact sheet) so she sees it inline. Never ask her to find files by repo path.
+7. Log before/after counts AND list each archived card id + reason in the log detail, so she can see the cleanup actually happened.
