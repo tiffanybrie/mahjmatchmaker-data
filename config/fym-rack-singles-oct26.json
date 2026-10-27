@@ -1,0 +1,797 @@
+{
+ "_about": "FYM v99 single horizontal rack cut-outs (Tiffany Oct 26 10:07pm). builder/fym_fix_oct25/v99_cut.py makes assets/racks/v99/<name>.png; v99_racksingles.py puts them on the cards. c=false: shown on white (clear/white racks kept on the brand photo background).",
+ "cuts": {
+  "plm-wavy-pink": {
+   "key": "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-pink",
+   "n": "Wavy Mahjong Rack Pusher Set - Pink",
+   "src": "https://cdn.shopify.com/s/files/1/0812/7230/8004/files/IMG_4599_1.jpg",
+   "pick": [
+    0.42,
+    0.5
+   ],
+   "white": false,
+   "flip": true,
+   "c": true
+  },
+  "omm-agate": {
+   "key": "www.ohmymahjong.com/agate-rack-and-pusher-set",
+   "n": "Oh My Mahjong Agate",
+   "src": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/agate-rack-and-pusher-set-1567810.jpg",
+   "rot": "edge",
+   "c": true
+  },
+  "omm-blond-tortoise": {
+   "key": "www.ohmymahjong.com/blond-tortoise-rack-and-pusher-set",
+   "n": "Blond Tortoise Rack and Pusher Set",
+   "src": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/blond-tortoise-rack-and-pusher-set-6209811.jpg",
+   "rot": "edge",
+   "c": true
+  },
+  "omm-blue-lace-agate": {
+   "key": "www.ohmymahjong.com/blue-lace-agate-rack-and-pusher-set",
+   "n": "Blue Lace Agate Rack and Pusher Set",
+   "src": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/blue-lace-agate-rack-and-pusher-set-7158838.jpg",
+   "rot": "edge",
+   "c": true
+  },
+  "omm-sandstone": {
+   "key": "www.ohmymahjong.com/sandstone-rack-and-pusher-set",
+   "n": "Sandstone Rack and Pusher Set",
+   "src": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/sandstone-rack-and-pusher-set-7221995.jpg",
+   "rot": "edge",
+   "c": true
+  },
+  "omm-multicolor": {
+   "key": "www.ohmymahjong.com/acrylic-rack-and-pusher-set",
+   "n": "Multicolor Acrylic Rack & Pusher Set",
+   "src": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/Racks_Multi_4.jpg",
+   "rot": -13,
+   "c": true
+  },
+  "omm-carrara": {
+   "key": "www.ohmymahjong.com/carrara-rack-pusher-set",
+   "n": "Carrara Rack & Pusher Set",
+   "src": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/carrara-rack-pusher-set-6948532.jpg",
+   "white": true,
+   "rot": -22,
+   "c": true
+  },
+  "ar-tortoise": {
+   "key": "shop.andersruff.com/tortoise-acrylic-rack-set-straight-pushers",
+   "n": "Tortoise Acrylic Rack Set — Straight Pushers",
+   "src": "cur",
+   "mask": "alpha",
+   "c": true
+  },
+  "ar-clear-straight": {
+   "key": "shop.andersruff.com/clear-acrylic-mahjong-rack-set-straight-pushers",
+   "n": "Clear Acrylic Rack Set — Straight Pushers",
+   "src": "https://cdn.shopify.com/s/files/1/0593/2200/7719/files/Straigh-Mahjong-Rack-Brass.png",
+   "mask": "box",
+   "rot": -43,
+   "post": "auto",
+   "c": false
+  },
+  "ar-clear-scalloped": {
+   "key": "shop.andersruff.com/clear-acrylic-mahjong-rack-set-scalloped-pushers",
+   "n": "Clear Acrylic Rack Set — Scalloped Pushers",
+   "src": "https://cdn.shopify.com/s/files/1/0593/2200/7719/files/Clear-Acrylic-Scalloped-Rack-6.png",
+   "mask": "box",
+   "rot": -48,
+   "post": "auto",
+   "c": false
+  },
+  "ar-pistachio": {
+   "key": "shop.andersruff.com/pistachio-acrylic-rack-set-scalloped-pushers",
+   "n": "Anders Ruff Pistachio Green Scalloped",
+   "src": "https://cdn.shopify.com/s/files/1/0593/2200/7719/files/pistachio-lime-green-mahjong-racks-scallopped.png",
+   "solid": true,
+   "c": true
+  },
+  "ar-mahjenta": {
+   "key": "shop.andersruff.com/mahjenta-pink-acrylic-mahjong-rack-set-scalloped-pushers",
+   "n": "Anders Ruff MAHJenta Pink Scalloped",
+   "src": "https://cdn.shopify.com/s/files/1/0593/2200/7719/files/MAHJenta-scallopped-mahjong-racks_32cd2e6f-eb9f-419e-941d-e50c5b27a717.png",
+   "c": true
+  },
+  "ar-rose-pearl": {
+   "key": "shop.andersruff.com/rose-pink-pearl-acrylic-mahjong-rack-set-straight-pushers",
+   "n": "Anders Ruff Rosè Pink Pearl",
+   "src": "cur",
+   "mask": "alpha",
+   "c": true
+  },
+  "ar-jade": {
+   "key": "shop.andersruff.com/jade-acrylic-mahjong-rack-set-straight-pushers",
+   "n": "Anders Ruff Jade",
+   "src": "cur",
+   "mask": "alpha",
+   "c": true
+  },
+  "cmc-key-lime": {
+   "key": "www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue?v=55711274926385",
+   "n": "Charleston Mahjong Club Key Lime Wood",
+   "src": "cur",
+   "mask": "alpha",
+   "c": true
+  },
+  "cmc-azalea": {
+   "key": "www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue?v=55711274959153",
+   "n": "Charleston Mahjong Club Azalea Pink Wood",
+   "src": "cur",
+   "mask": "alpha",
+   "c": true
+  },
+  "ymi-chestnut": {
+   "key": "www.ymimports.com/us-rl027-a",
+   "n": "Yellow Mountain Classic Chestnut Wood",
+   "src": "cur",
+   "mask": "alpha",
+   "c": true
+  },
+  "ymi-black": {
+   "key": "www.ymimports.com/us-rl019-a",
+   "n": "Yellow Mountain Classic Black Wood",
+   "src": "cur",
+   "mask": "alpha",
+   "c": true
+  },
+  "plm-wavy-purple": {
+   "key": "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-purple",
+   "n": "Wavy Mahjong Rack Pusher Set - Purple",
+   "src": "https://cdn.shopify.com/s/files/1/0812/7230/8004/files/IMG_4594_1.jpg",
+   "pick": [
+    0.42,
+    0.5
+   ],
+   "flip": true,
+   "c": true
+  },
+  "plm-wavy-french-blue": {
+   "key": "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-french-blue",
+   "n": "Wavy Mahjong Rack Pusher Set - French Blue",
+   "src": "https://cdn.shopify.com/s/files/1/0812/7230/8004/files/IMG_4618.jpg",
+   "pick": [
+    0.42,
+    0.5
+   ],
+   "flip": true,
+   "c": true
+  },
+  "plm-wavy-chartreuse": {
+   "key": "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-chartrusse",
+   "n": "Wavy Mahjong Rack Pusher Set - Chartreuse",
+   "src": "https://cdn.shopify.com/s/files/1/0812/7230/8004/files/IMG_4610.jpg",
+   "pick": [
+    0.42,
+    0.5
+   ],
+   "flip": true,
+   "c": true
+  },
+  "plm-wavy-dark-green": {
+   "key": "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-dark-green",
+   "n": "Wavy Mahjong Rack Pusher Set - Dark Green",
+   "src": "https://cdn.shopify.com/s/files/1/0812/7230/8004/files/IMG_4590_1.jpg",
+   "pick": [
+    0.42,
+    0.5
+   ],
+   "flip": true,
+   "c": true
+  },
+  "plm-wavy-aqua": {
+   "key": "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-aqua",
+   "n": "Wavy Mahjong Rack Pusher Set - Aqua",
+   "src": "https://cdn.shopify.com/s/files/1/0812/7230/8004/files/IMG_4606_5d87a238-ed82-417d-9e05-885d701c38d4.jpg",
+   "pick": [
+    0.42,
+    0.5
+   ],
+   "flip": true,
+   "c": true
+  },
+  "plm-wavy-navy": {
+   "key": "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-navy",
+   "n": "Wavy Mahjong Rack Pusher Set - Dark Navy",
+   "src": "https://cdn.shopify.com/s/files/1/0812/7230/8004/files/IMG_4602_2.jpg",
+   "pick": [
+    0.42,
+    0.5
+   ],
+   "flip": true,
+   "c": true
+  },
+  "plm-wavy-red": {
+   "key": "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-red",
+   "n": "Wavy Mahjong Rack Pusher Set - Red",
+   "src": "https://cdn.shopify.com/s/files/1/0812/7230/8004/files/IMG_4565_1.jpg",
+   "pick": [
+    0.42,
+    0.5
+   ],
+   "flip": true,
+   "c": true
+  },
+  "plm-wavy-cobalt": {
+   "key": "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-cobalt-blue",
+   "n": "Wavy Mahjong Rack Pusher Set - Cobalt Blue",
+   "src": "https://cdn.shopify.com/s/files/1/0812/7230/8004/files/IMG_4571_1.jpg",
+   "pick": [
+    0.42,
+    0.5
+   ],
+   "flip": true,
+   "c": true
+  },
+  "plm-wavy-mint": {
+   "key": "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-mint",
+   "n": "Wavy Mahjong Rack Pusher Set - Mint",
+   "src": "https://cdn.shopify.com/s/files/1/0812/7230/8004/files/IMG_4564.jpg",
+   "pick": [
+    0.42,
+    0.5
+   ],
+   "flip": true,
+   "c": true
+  },
+  "plm-wavy-lilac": {
+   "key": "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-lilac",
+   "n": "Wavy Mahjong Rack Pusher Set - Lilac",
+   "src": "https://cdn.shopify.com/s/files/1/0812/7230/8004/files/IMG_4577_1.jpg",
+   "pick": [
+    0.42,
+    0.5
+   ],
+   "flip": true,
+   "c": true
+  },
+  "mfm-pink": {
+   "key": "vr:My Fair Mahjong:Solid Macaron Pink",
+   "n": "My Fair Mahjong Macaron Pink",
+   "src": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/All_Rack_Colors.png",
+   "pre": [
+    0.203,
+    0.642,
+    0.814,
+    0.725
+   ],
+   "mask": "box",
+   "rot": 0,
+   "c": false
+  },
+  "mfm-macaron-blue": {
+   "key": "vr:My Fair Mahjong:Solid Macaron Blue",
+   "n": "My Fair Mahjong Macaron Blue",
+   "src": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/All_Rack_Colors.png",
+   "pre": [
+    0.185,
+    0.201,
+    0.835,
+    0.285
+   ],
+   "mask": "light",
+   "bg": [
+    255,
+    255,
+    255
+   ],
+   "t": 24,
+   "rot": 0,
+   "c": true
+  },
+  "mfm-macaron-green": {
+   "key": "vr:My Fair Mahjong:Solid Macaron Green",
+   "n": "My Fair Mahjong Macaron Green",
+   "src": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/All_Rack_Colors.png",
+   "pre": [
+    0.185,
+    0.377,
+    0.835,
+    0.458
+   ],
+   "mask": "light",
+   "bg": [
+    255,
+    255,
+    255
+   ],
+   "t": 24,
+   "rot": 0,
+   "c": true
+  },
+  "mfm-macaron-purple": {
+   "key": "vr:My Fair Mahjong:Solid Macaron Purple",
+   "n": "My Fair Mahjong Macaron Purple",
+   "src": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/All_Rack_Colors.png",
+   "pre": [
+    0.203,
+    0.73,
+    0.814,
+    0.817
+   ],
+   "mask": "box",
+   "rot": 0,
+   "c": false
+  },
+  "mfm-magenta": {
+   "key": "vr:My Fair Mahjong:Solid Magenta",
+   "n": "My Fair Mahjong Magenta",
+   "src": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/All_Rack_Colors.png",
+   "pre": [
+    0.185,
+    0.554,
+    0.835,
+    0.639
+   ],
+   "mask": "light",
+   "bg": [
+    255,
+    255,
+    255
+   ],
+   "t": 24,
+   "rot": 0,
+   "c": true
+  },
+  "mfm-teal": {
+   "key": "vr:My Fair Mahjong:Solid Teal",
+   "n": "My Fair Mahjong Teal",
+   "src": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/All_Rack_Colors.png",
+   "pre": [
+    0.185,
+    0.288,
+    0.835,
+    0.374
+   ],
+   "mask": "light",
+   "bg": [
+    255,
+    255,
+    255
+   ],
+   "t": 24,
+   "rot": 0,
+   "c": true
+  },
+  "mfm-citrus": {
+   "key": "vr:My Fair Mahjong:Solid Citrus Green / Chartreuse",
+   "n": "My Fair Mahjong Citrus Green",
+   "src": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/All_Rack_Colors.png",
+   "pre": [
+    0.185,
+    0.464,
+    0.835,
+    0.55
+   ],
+   "mask": "light",
+   "bg": [
+    255,
+    255,
+    255
+   ],
+   "t": 24,
+   "rot": 0,
+   "c": true
+  },
+  "mfm-indigo": {
+   "key": "vr:My Fair Mahjong:Solid Indigo Blue",
+   "n": "My Fair Mahjong Indigo Blue",
+   "src": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/All_Rack_Colors.png",
+   "pre": [
+    0.185,
+    0.112,
+    0.835,
+    0.197
+   ],
+   "mask": "light",
+   "bg": [
+    255,
+    255,
+    255
+   ],
+   "t": 24,
+   "rot": 0,
+   "c": true
+  },
+  "mfm-tortoise": {
+   "key": "vr:My Fair Mahjong:Tortoiseshell",
+   "n": "My Fair Mahjong Tortoiseshell",
+   "src": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/All_Rack_Colors.png",
+   "pre": [
+    0.185,
+    0.028,
+    0.835,
+    0.109
+   ],
+   "mask": "light",
+   "bg": [
+    255,
+    255,
+    255
+   ],
+   "t": 24,
+   "rot": 0,
+   "c": true
+  },
+  "mfm-acrylic-pink": {
+   "key": "myfairmahjong.com/acrylic-mahjong-racks",
+   "n": "MAHJONG RACKS  |  Premium Acrylic  |  Patent Pending – Ribbon Pink",
+   "src": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/All_Rack_Colors.png",
+   "pre": [
+    0.203,
+    0.642,
+    0.814,
+    0.725
+   ],
+   "mask": "box",
+   "rot": 0,
+   "c": false
+  },
+  "mfm-white": {
+   "key": "vr:My Fair Mahjong:Solid White",
+   "n": "My Fair Mahjong White",
+   "src": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/All_Rack_Colors.png",
+   "pre": [
+    0.203,
+    0.821,
+    0.814,
+    0.905
+   ],
+   "mask": "box",
+   "rot": 0,
+   "c": false
+  },
+  "ymi-dark-camphor": {
+   "key": "www.ymimports.com/us-rl026-a",
+   "n": "Dark Camphor Wooden Mahjong Game Racks with Pushers, 18\" - Set of 4",
+   "src": "https://cdn.shopify.com/s/files/1/0876/1176/files/dark-camphor-wooden-mahjong-game-racks-with-pushers-18-set-of-4-yellow-mountain-imports-3_3bfa88b7.jpg",
+   "pick": [
+    0.5,
+    0.45
+   ],
+   "c": true
+  },
+  "ymi-dark-pine": {
+   "key": "www.ymimports.com/us-rl029-a",
+   "n": "18-Inch Dark Pine Wooden Mahjong Game Racks with Built-in Pushers - Set of 4",
+   "src": "https://cdn.shopify.com/s/files/1/0876/1176/files/18-inch-dark-pine-wooden-mahjong-game-racks-with-built-in-pushers-set-of-4-yellow-mountain-imports-3.jpg",
+   "pick": [
+    0.5,
+    0.45
+   ],
+   "c": true
+  },
+  "ymi-natural-pine": {
+   "key": "www.ymimports.com/us-rl028-a",
+   "n": "18\" Natural Pine Wooden Mahjong Racks with Pushers - Set of 4 (Racks with Pushers Only)",
+   "src": "https://cdn.shopify.com/s/files/1/0876/1176/files/18-natural-pine-wooden-mahjong-racks-with-pushers-set-of-4-racks-with-pushers-only-yellow-mountain-imports-3.jpg",
+   "pick": [
+    0.5,
+    0.45
+   ],
+   "c": true
+  },
+  "ymi-mahogany": {
+   "key": "www.ymimports.com/us-rl017-a",
+   "n": "Classic Wooden Mahjong Racks, 18\" - Mahogany Color - Set of 4",
+   "src": "https://cdn.shopify.com/s/files/1/0876/1176/files/classic-wooden-mahjong-racks-18-mahogany-color-set-of-4-yellow-mountain-imports-2.jpg",
+   "rot": "edge",
+   "c": true
+  },
+  "ymi-modern-builtin": {
+   "key": "www.ymimports.com/nb-mp005-a",
+   "n": "Modern Mahjong Racks with Built-in Pushers - Black - Set of 4",
+   "src": "https://cdn.shopify.com/s/files/1/0876/1176/files/modern-mahjong-racks-with-built-in-pushers-black-set-of-4-yellow-mountain-imports-5.jpg",
+   "pick": [
+    0.3,
+    0.12
+   ],
+   "c": true
+  },
+  "miss-dark-tortoise-brass": {
+   "key": "missmahjong.com/dark-tortoise-and-brass-acrylic-racks",
+   "n": "Dark Tortoise and Brass Acrylic Racks",
+   "src": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/DarkTortoiseandBrassRacks_3.png",
+   "pick": [
+    0.38,
+    0.5
+   ],
+   "c": true
+  },
+  "miss-dark-tortoise-classic": {
+   "key": "missmahjong.com/dark-tortoise-classic-acrylic-racks",
+   "n": "Dark Tortoise Classic Acrylic Racks",
+   "src": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Dark_Tortoise_Racks_2.png",
+   "pick": [
+    0.38,
+    0.5
+   ],
+   "c": true
+  },
+  "miss-blonde-tortoise-brass": {
+   "key": "missmahjong.com/blonde-tortoise-and-brass-acrylic-racks",
+   "n": "Miss Mahjong Blonde Tortoise and Brass Acrylic",
+   "src": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/BlondeTortoiseandBrassRacks_3.png",
+   "pick": [
+    0.38,
+    0.5
+   ],
+   "c": true
+  },
+  "bam-black-acrylic": {
+   "key": "www.bamletsmahjong.com/mahjong-black-acrylic-racks-and-scallop-pushers",
+   "n": "Mahjong Black Acrylic Racks and Scallop Pushers",
+   "src": "https://cdn.shopify.com/s/files/1/0689/4377/3854/files/mahjong-black-acrylic-racks-and-scallop-pushers-racks-pushers-bam-lets-mahjong-3699490.jpg",
+   "pick": [
+    0.4,
+    0.5
+   ],
+   "trim": [
+    0,
+    0.06
+   ],
+   "c": true
+  },
+  "bam-white-acrylic": {
+   "key": "www.bamletsmahjong.com/mahjong-white-acrylic-rack-and-pusher",
+   "n": "Mahjong White Acrylic Rack and Pusher",
+   "src": "https://cdn.shopify.com/s/files/1/0689/4377/3854/files/mahjong-white-acrylic-rack-and-pusher-racks-pushers-bam-lets-mahjong-8424280.jpg",
+   "pre": [
+    0.095,
+    0.11,
+    0.305,
+    0.95
+   ],
+   "mask": "box",
+   "rot": 90,
+   "c": false
+  },
+  "mm-navy": {
+   "key": "mahjmood.com/navy-blue-acrylic-rack-and-pusher-set-of-4",
+   "n": "Mahj Mood Navy Blue Acrylic",
+   "src": "https://cdn.shopify.com/s/files/1/0944/7712/3887/files/F3EBFE63-C37F-430E-BEAC-E7CE92525FE4.jpg",
+   "pick": [
+    0.5,
+    0.5
+   ],
+   "c": true
+  },
+  "bb-two-player": {
+   "key": "www.bambirdboutique.com/wooden-two-player-mahjong-racks-set-of-2",
+   "n": "Two Player Wood Mahjong Racks",
+   "src": "https://cdn.shopify.com/s/files/1/0783/7237/2789/files/BamBird-StudioFeb2026-29_31236049-5dcc-4dbb-b9e2-a5b8a916404c.jpg",
+   "pick": [
+    0.5,
+    0.5
+   ],
+   "c": true
+  },
+  "tala-horizon": {
+   "key": "talamahj.com/horizon-rack",
+   "n": "Tala Mahj Horizon Woven Rattan",
+   "src": "https://cdn.shopify.com/s/files/1/0817/8447/1768/files/1BE5CDD4-3F8C-41B3-8AC3-3E9F7ACF97E1.png",
+   "pick": [
+    0.5,
+    0.5
+   ],
+   "c": true
+  },
+  "hiphip-hostess": {
+   "key": "www.hiphipmahjong.com/hostess-with-the-mostest-racks",
+   "n": "Hip Hip Mahjong Hostess With The Mostest",
+   "src": "https://cdn.shopify.com/s/files/1/0708/4222/0785/files/image9_f4e20a1c-865f-404e-b10b-369eee7a0bd3.jpg",
+   "pick": "all",
+   "rot": 0,
+   "c": true
+  },
+  "mm-milk-glass": {
+   "key": "www.middleandmainmahjong.com/milk-glass-collection-mahjong-rack-and-pusher-set-of-4",
+   "n": "Milk Glass Collection Mahjong Rack and Pusher, Set of 4",
+   "src": "https://cdn.shopify.com/s/files/1/0662/4316/6361/files/1_a21f8266-97c7-402a-8278-956710936ff0.png",
+   "white": true,
+   "c": true
+  },
+  "mm-clear": {
+   "key": "www.middleandmainmahjong.com/clear-acrylic-mahjong-rack-and-pusher-set-of-4",
+   "n": "Clear Acrylic Mahjong Rack and Pusher, Set of 4",
+   "src": "https://cdn.shopify.com/s/files/1/0662/4316/6361/files/2_b378316f-046e-49d8-8e38-ca9dc21bd743.png",
+   "mask": "box",
+   "rot": -38.5,
+   "post": [
+    0.06,
+    0.36,
+    0.94,
+    0.64
+   ],
+   "c": false
+  },
+  "mm-chinoiserie": {
+   "key": "www.middleandmainmahjong.com/blue-and-white-chinoiserie-rack-set-of-4",
+   "n": "Middle & Main Blue and White Chinoiserie",
+   "src": "https://cdn.shopify.com/s/files/1/0662/4316/6361/files/2_fffaec75-8161-4829-b16a-b2c1d4e8132c.png",
+   "white": true,
+   "c": true
+  },
+  "mfm-wood-macaron-purple": {
+   "key": "myfairmahjong.com/wooden-painted-mahjong-racks-20-set-of-4-blue-and-pink-sets-magnetic-attached-pusher",
+   "n": "My Fair Mahjong Macaron Purple Wood",
+   "src": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/Natural_Wooden_Racks_4.png",
+   "pre": [
+    0.679,
+    0.048,
+    0.813,
+    0.951
+   ],
+   "mask": "box",
+   "rot": -90,
+   "c": false
+  },
+  "luxe-pink": {
+   "key": "www.letsmahj-on.com/luxe-acrylic-scalloped-mahjong-rack-pink",
+   "n": "Luxe Acrylic Scalloped Mahjong Rack - Pink",
+   "src": "https://cdn.shopify.com/s/files/1/0599/5475/7737/files/Tile_Racks_Pink_square_RFC.jpg",
+   "mask": "box",
+   "rot": 14,
+   "post": [
+    0.13,
+    0.6,
+    0.85,
+    0.83
+   ],
+   "c": false
+  },
+  "mm-scalloped-tortoise": {
+   "key": "mahjmood.com/scalloped-tortoise-acrylic-racks-and-pushers",
+   "n": "Mahj Mood Scalloped Tortoise Acrylic",
+   "src": "cur",
+   "mask": "alpha",
+   "pick": "all",
+   "c": true
+  },
+  "bb-lucite-emerald": {
+   "key": "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers",
+   "n": "Lucite Mahjong Rack & Pusher Set – Emerald",
+   "src": "https://cdn.shopify.com/s/files/1/0783/7237/2789/files/BamBird_New_Pushers-3.jpg",
+   "c": true
+  },
+  "bb-lucite-azure": {
+   "key": "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51324768551221",
+   "n": "Bam Bird Boutique Lucite – Azure",
+   "src": "https://cdn.shopify.com/s/files/1/0783/7237/2789/files/BamBird_Sept_8th-_Christmas-Under_50-100_Sets-11.jpg",
+   "mask": "box",
+   "pre": [
+    0.145,
+    0.11,
+    0.315,
+    0.925
+   ],
+   "rot": 90,
+   "c": false
+  },
+  "bb-lucite-neon": {
+   "key": "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611368245",
+   "n": "Bam Bird Boutique Lucite – Neon",
+   "src": "https://cdn.shopify.com/s/files/1/0783/7237/2789/files/New_Products_May_2025-55.jpg",
+   "mask": "box",
+   "pre": [
+    0.287,
+    0.16,
+    0.414,
+    0.79
+   ],
+   "rot": 90,
+   "c": false
+  },
+  "bb-lucite-magenta": {
+   "key": "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611433781",
+   "n": "Bam Bird Boutique Lucite – Magenta",
+   "src": "https://cdn.shopify.com/s/files/1/0783/7237/2789/files/New_Products_May_2025-68.jpg",
+   "mask": "box",
+   "pre": [
+    0.054,
+    0.015,
+    0.234,
+    0.8
+   ],
+   "rot": 90,
+   "c": false
+  },
+  "bb-lucite-pink": {
+   "key": "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611401013",
+   "n": "Bam Bird Boutique Lucite – Pink",
+   "src": "https://cdn.shopify.com/s/files/1/0783/7237/2789/files/New_Products_May_2025-81.jpg",
+   "mask": "box",
+   "pre": [
+    0.093,
+    0.105,
+    0.256,
+    0.785
+   ],
+   "rot": 90,
+   "c": false
+  },
+  "bb-lucite-tortoise": {
+   "key": "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611466549",
+   "n": "Bam Bird Boutique Lucite – Tortoise",
+   "src": "https://cdn.shopify.com/s/files/1/0783/7237/2789/files/BamBird-_July_2025_Office-235.jpg",
+   "mask": "box",
+   "pre": [
+    0.057,
+    0.2,
+    0.232,
+    0.915
+   ],
+   "rot": 90,
+   "c": false
+  },
+  "virora-spring-jade": {
+   "key": "www.viroramahjong.com/wooden-rack-pusher-set",
+   "n": "Magnetic Wooden Rack & Pusher Set – Spring Jade",
+   "src": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/2_1.jpg",
+   "pick": [
+    0.65,
+    0.22
+   ],
+   "split": 3,
+   "rot": 0,
+   "c": true
+  },
+  "tala-shoreline": {
+   "key": "talamahj.com/shoreline-mahjong-rack-wavy-pusher-20-inches-set-of-4-ships-oct-1-chocolate-woven-rattan",
+   "n": "Tala Mahj Shoreline Chocolate Woven Rattan",
+   "src": "https://cdn.shopify.com/s/files/1/0817/8447/1768/files/Tala-FINALS-August2026-29.jpg",
+   "rot": 0,
+   "c": false
+  }
+ },
+ "left_as_is": {
+  "www.bespokemahjong.com/the-ultimate-rack-red": "Bespoke: stack of overlapping translucent racks + pusher, no single-rack product shot; 59/61/62 are the approved v92 cut-outs",
+  "www.bespokemahjong.com/the-ultimate-rack-plum": "Bespoke: stack of overlapping translucent racks + pusher, no single-rack product shot; 59/61/62 are the approved v92 cut-outs",
+  "www.bespokemahjong.com/the-ultimate-rack-turquoise": "Bespoke: stack of overlapping translucent racks + pusher, no single-rack product shot; 59/61/62 are the approved v92 cut-outs",
+  "www.bespokemahjong.com/the-ultimate-rack-hottie-pink": "Bespoke: stack of overlapping translucent racks + pusher, no single-rack product shot; 59/61/62 are the approved v92 cut-outs",
+  "www.bespokemahjong.com/the-ultimate-rack-garden-green": "Bespoke: stack of overlapping translucent racks + pusher, no single-rack product shot; 59/61/62 are the approved v92 cut-outs",
+  "sundaymahjong.com/candy-blue-mahjong-rack-set": "Sunday Mahjong: only lifestyle shots on patterned/coloured cloth, no clean cut possible",
+  "sundaymahjong.com/sunday-cola-mahjong-rack-set": "Sunday Mahjong: only lifestyle shots on patterned/coloured cloth, no clean cut possible",
+  "sundaymahjong.com/blonde-tortoise-mahjong-rack-set": "Sunday Mahjong: only lifestyle shots on patterned/coloured cloth, no clean cut possible",
+  "sundaymahjong.com/tortoise-mahjong-rack-set": "Sunday Mahjong: only lifestyle shots on patterned/coloured cloth, no clean cut possible",
+  "sundaymahjong.com/clear-mahjong-rack-set": "Sunday Mahjong: only lifestyle shots on patterned/coloured cloth, no clean cut possible",
+  "theroyalmahjongsociety.com/mahjong-rack-white": "Royal Mahjong Society: only lifestyle shots with the bag on fabric",
+  "theroyalmahjongsociety.com/mahjong-rack-clear": "Royal Mahjong Society: only lifestyle shots with the bag on fabric",
+  "tigredetartan.com/dove-white-beech-wood-straight-mahjong-racks-with-pushers-custom-storage-bag": "Tigre de Tartan: only lifestyle shots on wallpaper prints",
+  "tigredetartan.com/rich-raisin-beech-wood-straight-mahjong-racks-with-pushers-custom-storage-bag": "Tigre de Tartan: only lifestyle shots on wallpaper prints",
+  "tigredetartan.com/marine-blue-beech-wood-straight-mahjong-racks-with-pushers-custom-storage-bag": "Tigre de Tartan: only lifestyle shots on wallpaper prints",
+  "tigredetartan.com/marine-blue-beech-wood-scalloped-mahjong-racks-with-pushers-custom-storage-bag": "Tigre de Tartan: only lifestyle shots on wallpaper prints",
+  "tigredetartan.com/february-preorder-tortoise-scalloped-acrylic-mahjong-racks-with-magnetic-pushers-set-of-4-with-dust-bag": "Tigre de Tartan: only lifestyle shots on wallpaper prints",
+  "www.hiphipmahjong.com/trust-fund-racks": "Hip Hip: only lifestyle shots on wood/table",
+  "www.hiphipmahjong.com/santa-baby-racks": "Hip Hip: only lifestyle shots on wood/table",
+  "www.hiphipmahjong.com/trophy-wife-racks": "Hip Hip: only lifestyle shots on wood/table",
+  "mahjmood.com/chocolate-brown-wooden-racks-with-scalloped-pushers": "Mahj Mood: only lifestyle shots on patterned paper / marble",
+  "mahjmood.com/luxe-racks-amethyst": "Mahj Mood: only lifestyle shots on patterned paper / marble",
+  "mahjmood.com/luxe-racks-grey-marble-acrylic-4": "Mahj Mood: only lifestyle shots on patterned paper / marble",
+  "mahjmood.com/copy-scalloped-clear-acrylic-rack-and-pusher-set-of-4": "Mahj Mood: only lifestyle shots on patterned paper / marble",
+  "mahjmood.com/moss-green-wooden-racks-with-scalloped-pushers": "Mahj Mood: only lifestyle shots on patterned paper / marble",
+  "mahjmood.com/scalloped-pink-wooden-rack-and-pusher-set-of-4": "Mahj Mood: only lifestyle shots on patterned paper / marble",
+  "mahjmood.com/white-acrylic-racks-set-of-4-no-pushers-included": "Mahj Mood white racks on dark slate: shadows leave dark edges when cut",
+  "mahjmood.com/pure-white-acrylic-racks-and-pushers": "Mahj Mood white racks on dark slate: shadows leave dark edges when cut",
+  "missmahjong.com/wood-racks-with-classic-pusher": "Miss Mahjong lilac wood: only lifestyle shots on grey",
+  "missmahjong.com/scalloped-acrylic-racks": "Miss Mahjong clear scalloped: clear acrylic on grey, cut not clean",
+  "www.bamletsmahjong.com/mahjong-clear-acrylic-racks-and-scallop-pusher": "Bam! clear: clear acrylic on white, cut not clean",
+  "www.bamletsmahjong.com/wooden-mahjong-racks-pushers-black-4-set": "Bam! black wood: only a lifestyle shot with tiles",
+  "www.bamletsmahjong.com/white-acrylic-double-mahjong-racks-with-magnetic-pushers-set-of-2": "Bam! double white: only shots on patterned paper / with tiles",
+  "www.bamletsmahjong.com/white-acrylic-racks-set-4": "Bam! white set: single-rack shot has tiles in it, cut not clean",
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=53275679654197": "Bam Bird Lucite: clear racks + coloured pushers interleaved, one rack cannot be told apart cleanly; brand photo on white kept",
+  "vr:My Fair Mahjong:Appaloosa": "My Fair Mahjong: only staircase stacks or close-ups with tiles for these finishes",
+  "myfairmahjong.com/acrylic-mahjong-racks?v=52896917750071": "My Fair Mahjong: only staircase stacks or close-ups with tiles for these finishes",
+  "myfairmahjong.com/acrylic-mahjong-racks?v=52896919519543": "My Fair Mahjong: only staircase stacks or close-ups with tiles for these finishes",
+  "myfairmahjong.com/acrylic-mahjong-racks?v=52896919322935": "My Fair Mahjong: only staircase stacks or close-ups with tiles for these finishes",
+  "myfairmahjong.com/acrylic-mahjong-racks?v=52896919683383": "My Fair Mahjong: only staircase stacks or close-ups with tiles for these finishes",
+  "myfairmahjong.com/acrylic-mahjong-racks?v=52896920207671": "My Fair Mahjong: only staircase stacks or close-ups with tiles for these finishes",
+  "www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue": "Charleston Mahjong Club generic 20in set: cut lost the rack trough (white inside)",
+  "www.charlestonmahjongclub.com/clear-acrylic-mahjong-racks-with-magnetic-pushers-set-of-4-20-long": "Charleston Mahjong Club clear: clear acrylic on grey, already horizontal",
+  "www.ymimports.com/nb-mp007-a": "Yellow Mountain multi-colour set: one rack would show only one of the colours",
+  "www.ymimports.com/us-rl025-a": "Yellow Mountain multi-colour set: one rack would show only one of the colours",
+  "www.ymimports.com/us-rl006-a": "Yellow Mountain multi-colour set: one rack would show only one of the colours",
+  "www.middleandmainmahjong.com/la-vie-en-rose-mahjong-rack-and-pusher-set-of-4": "Middle & Main La Vie en Rose: angled single cut-out kept (rotation made it worse)"
+ }
+}

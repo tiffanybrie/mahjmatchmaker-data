@@ -778,6 +778,7 @@ _c79 = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '
 _q79 = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-rack-pq-oct26.json')))['racks']
 for _k in _c79:
     if _k in json.load(open(REPO + 'config/fym-rack-split-oct26.json'))['replace'] and str(D['racks'].get(_k, {}).get('im', '')).startswith('rk98'): continue  # v98 newer single-rack photo (gate [92])
+    if str(D['racks'].get(_k, {}).get('im', '')).startswith('rk99'): continue  # v99 single horizontal re-cut (gate [97])
     if _k in D['racks'] and not D['racks'][_k].get('hid') and not str(D['racks'][_k].get('im', '')).endswith('q95'): F.append(f"[79] {D['racks'][_k]['n']}: still shows its old rack photo (recut not applied)")
 for _k, _v in _q79.items():
     if _k in _v96pq79 and '/*v96 poor photo never leads*/' in open(os.path.join(B, 'index.html')).read(): continue  # v96 re-scored (config/fym-rack-clean-oct26.json, gate [81])
@@ -1150,6 +1151,33 @@ if not _pre98:
     _C96 = json.load(open(REPO + 'config/fym-names-logos-v98.json')); _hd96 = json.load(open(os.path.join(B, 'hd', 'index.json'))).get('l', {})
     for _b in _C96['logos']:
         if not str(D['logos'].get(_b, '')).startswith('lg98') or not str(_hd96.get(_b, '')).startswith('file:r98/'): F.append(f"[96] {_b} logo badge is not the visible v98 wordmark")
+if os.path.isdir(os.path.join(B, 'r99')):
+    # [97] Tiffany Oct 26 10:07pm ("Have all of the vertical racks been rotated to horizontal? Have backgrounds been removed from
+    # racks where possible? Have we isolated a single horizontal rack from every set where it's possible?"): FAIL if a visible
+    # rack's CARD image (HD if it has one, else the thumbnail) is portrait (h > w). WARN with the racks whose card image still has
+    # an opaque photo background or is a multi-rack / lifestyle photo, so what's left is tracked (config/fym-rack-singles-oct26.json
+    # 'left_as_is' gives the reason for each; v99_cut.py + v99_racksingles.py make the single horizontal cut-outs).
+    import io as _io97
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from fym_rack_images import shown as _shown97
+    _C97 = json.load(open(REPO + 'config/fym-rack-singles-oct26.json')); _done97 = {c['key'] for c in _C97['cuts'].values()}
+    _card97 = {}
+    for _k, _n, _t, _h, _b in _shown97(B):
+        if _b and (_t == 'hd' or _k not in _card97): _card97[_k] = (_n, _b)
+    _opaque97 = []
+    for _k, (_n, _b) in _card97.items():
+        _im = Image.open(_io97.BytesIO(_b)); _A = np.asarray(_im.convert('RGBA')).astype(int)
+        _m = _A[..., 3] > 40 if _A[..., 3].min() < 250 else _A[..., :3].min(2) < 235  # the rack itself (alpha, or non-white on a white photo)
+        _ys, _xs = np.where(_m); _w, _hh = ((_xs.max() - _xs.min() + 1), (_ys.max() - _ys.min() + 1)) if len(_xs) else _im.size
+        if _hh > _w: F.append(f"[97] rack card photo is portrait (rack {_w}x{_hh} px): {_n}")
+        _a = _A[..., 3]
+        if (_a < 20).mean() < 0.02 and _k not in _done97: _opaque97.append(_n)
+    for _k, _v in _C97.get('left_as_is', {}).items():
+        if _k in D['racks'] and not D['racks'][_k].get('hid') and D['racks'][_k]['n'] not in _opaque97: _opaque97.append(D['racks'][_k]['n'] + ' (' + _v + ')')
+    if _opaque97: W97.append(f"[97] {len(_opaque97)} visible racks still show a photo background / several racks / lifestyle shot (left as is): " + '; '.join(sorted(set(_opaque97))))
+    for _c in _C97['cuts'].values():  # every v99 cut that is on the card keeps the cut-out flag from the config
+        _r = D['racks'].get(_c['key'])
+        if _r and not _r.get('hid') and str(_r.get('im', '')).startswith('rk99') and bool(_r.get('c')) != bool(_c['c']): F.append(f"[97] {_r['n']}: cutout flag c should be {_c['c']}")
 if W97:
     print("FYM GATE WARNINGS (v97):")
     for _w in W97: print('  ' + _w)
