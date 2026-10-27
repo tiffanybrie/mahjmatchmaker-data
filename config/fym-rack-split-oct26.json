@@ -100,7 +100,7 @@
   "plm:Chartreuse": {
    "img": "assets/racks/v98/plm-chartreuse-photo-colour.png",
    "c": true,
-   "why": "URGENT Oct 26 6:58pm: the v97 re-cut read lemon yellow (238,239,103, hue 60). Back to the approved rack shape (assets/racks/card/peace-love-mahjong-chartreuse.png), recoloured to PLM's own photo colour (186,212,96) per Main's 7:28pm answer (the approved png alone reads highlighter, 200,238,80). Locked by gate [94]."
+   "why": "URGENT Oct 26 6:58pm: the v97 re-cut read lemon yellow (238,239,103, hue 60). Back to the approved rack shape (assets/racks/card/peace-love-mahjong-chartreuse.png), recoloured to PLM's own photo colour (186,212,96) per Main's 7:28pm answer (the approved png alone reads highlighter, 200,238,80). Locked by gate [94]. | Oct 27 2:04am Tiffany: the recolour looks dirty/shadowed; the correct colour is the rack on her approved Papaya Spritz x Colorful Chinoiserie album card = assets/racks/card/peace-love-mahjong-chartreuse.png (200,238,80), used as-is."
   },
   "plm:Dark Green": {
    "img": "assets/racks/card/peace-love-mahjong-dark-green.png",
@@ -166,9 +166,9 @@
  "plm_ref": {
   "_about": "Reference colour per PLM painted rack (median RGB of the opaque pixels): the approved card rack (assets/racks/card/peace-love-mahjong-*.png) where one exists, else the long-standing pre-v97 photo measured on b96. Gate [94]: every PLM rack photo shown must stay within 8 degrees of hue (or RGB distance 30 for low-saturation colours) of its reference.",
   "plm:Chartreuse": [
-   186,
-   212,
-   96
+   200,
+   238,
+   80
   ],
   "plm:Dark Green": [
    17,
