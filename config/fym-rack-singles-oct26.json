@@ -101,13 +101,6 @@
    "mask": "alpha",
    "c": true
   },
-  "ar-jade": {
-   "key": "shop.andersruff.com/jade-acrylic-mahjong-rack-set-straight-pushers",
-   "n": "Anders Ruff Jade",
-   "src": "cur",
-   "mask": "alpha",
-   "c": true
-  },
   "cmc-key-lime": {
    "key": "www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue?v=55711274926385",
    "n": "Charleston Mahjong Club Key Lime Wood",
@@ -394,40 +387,6 @@
    "rot": 0,
    "c": true
   },
-  "mfm-tortoise": {
-   "key": "vr:My Fair Mahjong:Tortoiseshell",
-   "n": "My Fair Mahjong Tortoiseshell",
-   "src": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/All_Rack_Colors.png",
-   "pre": [
-    0.185,
-    0.028,
-    0.835,
-    0.109
-   ],
-   "mask": "light",
-   "bg": [
-    255,
-    255,
-    255
-   ],
-   "t": 24,
-   "rot": 0,
-   "c": true
-  },
-  "mfm-acrylic-pink": {
-   "key": "myfairmahjong.com/acrylic-mahjong-racks",
-   "n": "MAHJONG RACKS  |  Premium Acrylic  |  Patent Pending – Ribbon Pink",
-   "src": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/All_Rack_Colors.png",
-   "pre": [
-    0.203,
-    0.642,
-    0.814,
-    0.725
-   ],
-   "mask": "box",
-   "rot": 0,
-   "c": false
-  },
   "mfm-white": {
    "key": "vr:My Fair Mahjong:Solid White",
    "n": "My Fair Mahjong White",
@@ -489,36 +448,6 @@
    ],
    "c": true
   },
-  "miss-dark-tortoise-brass": {
-   "key": "missmahjong.com/dark-tortoise-and-brass-acrylic-racks",
-   "n": "Dark Tortoise and Brass Acrylic Racks",
-   "src": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/DarkTortoiseandBrassRacks_3.png",
-   "pick": [
-    0.38,
-    0.5
-   ],
-   "c": true
-  },
-  "miss-dark-tortoise-classic": {
-   "key": "missmahjong.com/dark-tortoise-classic-acrylic-racks",
-   "n": "Dark Tortoise Classic Acrylic Racks",
-   "src": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Dark_Tortoise_Racks_2.png",
-   "pick": [
-    0.38,
-    0.5
-   ],
-   "c": true
-  },
-  "miss-blonde-tortoise-brass": {
-   "key": "missmahjong.com/blonde-tortoise-and-brass-acrylic-racks",
-   "n": "Miss Mahjong Blonde Tortoise and Brass Acrylic",
-   "src": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/BlondeTortoiseandBrassRacks_3.png",
-   "pick": [
-    0.38,
-    0.5
-   ],
-   "c": true
-  },
   "bam-black-acrylic": {
    "key": "www.bamletsmahjong.com/mahjong-black-acrylic-racks-and-scallop-pushers",
    "n": "Mahjong Black Acrylic Racks and Scallop Pushers",
@@ -533,34 +462,10 @@
    ],
    "c": true
   },
-  "bam-white-acrylic": {
-   "key": "www.bamletsmahjong.com/mahjong-white-acrylic-rack-and-pusher",
-   "n": "Mahjong White Acrylic Rack and Pusher",
-   "src": "https://cdn.shopify.com/s/files/1/0689/4377/3854/files/mahjong-white-acrylic-rack-and-pusher-racks-pushers-bam-lets-mahjong-8424280.jpg",
-   "pre": [
-    0.095,
-    0.11,
-    0.305,
-    0.95
-   ],
-   "mask": "box",
-   "rot": 90,
-   "c": false
-  },
   "mm-navy": {
    "key": "mahjmood.com/navy-blue-acrylic-rack-and-pusher-set-of-4",
    "n": "Mahj Mood Navy Blue Acrylic",
    "src": "https://cdn.shopify.com/s/files/1/0944/7712/3887/files/F3EBFE63-C37F-430E-BEAC-E7CE92525FE4.jpg",
-   "pick": [
-    0.5,
-    0.5
-   ],
-   "c": true
-  },
-  "bb-two-player": {
-   "key": "www.bambirdboutique.com/wooden-two-player-mahjong-racks-set-of-2",
-   "n": "Two Player Wood Mahjong Racks",
-   "src": "https://cdn.shopify.com/s/files/1/0783/7237/2789/files/BamBird-StudioFeb2026-29_31236049-5dcc-4dbb-b9e2-a5b8a916404c.jpg",
    "pick": [
     0.5,
     0.5
@@ -630,7 +535,7 @@
   "luxe-pink": {
    "key": "www.letsmahj-on.com/luxe-acrylic-scalloped-mahjong-rack-pink",
    "n": "Luxe Acrylic Scalloped Mahjong Rack - Pink",
-   "src": "https://cdn.shopify.com/s/files/1/0599/5475/7737/files/Tile_Racks_Pink_square_RFC.jpg",
+   "src": "v98 brand product shot rotated -90 (scallops up), cropped; assets/racks/v99/luxe-pink.webp hand-made Oct 26 11:35pm (QA: lifestyle crop was a regression)",
    "mask": "box",
    "rot": 14,
    "post": [
@@ -665,20 +570,6 @@
     0.11,
     0.315,
     0.925
-   ],
-   "rot": 90,
-   "c": false
-  },
-  "bb-lucite-neon": {
-   "key": "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611368245",
-   "n": "Bam Bird Boutique Lucite – Neon",
-   "src": "https://cdn.shopify.com/s/files/1/0783/7237/2789/files/New_Products_May_2025-55.jpg",
-   "mask": "box",
-   "pre": [
-    0.287,
-    0.16,
-    0.414,
-    0.79
    ],
    "rot": 90,
    "c": false
@@ -735,14 +626,12 @@
    ],
    "split": 3,
    "rot": 0,
-   "c": true
-  },
-  "tala-shoreline": {
-   "key": "talamahj.com/shoreline-mahjong-rack-wavy-pusher-20-inches-set-of-4-ships-oct-1-chocolate-woven-rattan",
-   "n": "Tala Mahj Shoreline Chocolate Woven Rattan",
-   "src": "https://cdn.shopify.com/s/files/1/0817/8447/1768/files/Tala-FINALS-August2026-29.jpg",
-   "rot": 0,
-   "c": false
+   "c": true,
+   "hx": "#93e8f4",
+   "rf": [
+    "blue",
+    "green"
+   ]
   }
  },
  "left_as_is": {
@@ -792,6 +681,16 @@
   "www.ymimports.com/nb-mp007-a": "Yellow Mountain multi-colour set: one rack would show only one of the colours",
   "www.ymimports.com/us-rl025-a": "Yellow Mountain multi-colour set: one rack would show only one of the colours",
   "www.ymimports.com/us-rl006-a": "Yellow Mountain multi-colour set: one rack would show only one of the colours",
-  "www.middleandmainmahjong.com/la-vie-en-rose-mahjong-rack-and-pusher-set-of-4": "Middle & Main La Vie en Rose: angled single cut-out kept (rotation made it worse)"
+  "www.middleandmainmahjong.com/la-vie-en-rose-mahjong-rack-and-pusher-set-of-4": "Middle & Main La Vie en Rose: angled single cut-out kept (rotation made it worse)",
+  "shop.andersruff.com/jade-acrylic-mahjong-rack-set-straight-pushers": "v99 independent QA (Oct 26 11:30pm): re-cut was worse than the v98 photo (partial crop / chopped end / wrong colour / not clean / too thin) -> kept v98 image",
+  "missmahjong.com/dark-tortoise-and-brass-acrylic-racks": "v99 independent QA (Oct 26 11:30pm): re-cut was worse than the v98 photo (partial crop / chopped end / wrong colour / not clean / too thin) -> kept v98 image",
+  "missmahjong.com/dark-tortoise-classic-acrylic-racks": "v99 independent QA (Oct 26 11:30pm): re-cut was worse than the v98 photo (partial crop / chopped end / wrong colour / not clean / too thin) -> kept v98 image",
+  "missmahjong.com/blonde-tortoise-and-brass-acrylic-racks": "v99 independent QA (Oct 26 11:30pm): re-cut was worse than the v98 photo (partial crop / chopped end / wrong colour / not clean / too thin) -> kept v98 image",
+  "myfairmahjong.com/acrylic-mahjong-racks": "v99 independent QA (Oct 26 11:30pm): re-cut was worse than the v98 photo (partial crop / chopped end / wrong colour / not clean / too thin) -> kept v98 image",
+  "www.bambirdboutique.com/wooden-two-player-mahjong-racks-set-of-2": "v99 independent QA (Oct 26 11:30pm): re-cut was worse than the v98 photo (partial crop / chopped end / wrong colour / not clean / too thin) -> kept v98 image",
+  "vr:My Fair Mahjong:Tortoiseshell": "v99 independent QA (Oct 26 11:30pm): re-cut was worse than the v98 photo (partial crop / chopped end / wrong colour / not clean / too thin) -> kept v98 image",
+  "www.bamletsmahjong.com/mahjong-white-acrylic-rack-and-pusher": "v99 independent QA (Oct 26 11:30pm): re-cut was worse than the v98 photo (partial crop / chopped end / wrong colour / not clean / too thin) -> kept v98 image",
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611368245": "v99 independent QA (Oct 26 11:30pm): re-cut was worse than the v98 photo (partial crop / chopped end / wrong colour / not clean / too thin) -> kept v98 image",
+  "talamahj.com/shoreline-mahjong-rack-wavy-pusher-20-inches-set-of-4-ships-oct-1-chocolate-woven-rattan": "v99 independent QA (Oct 26 11:30pm): re-cut was worse than the v98 photo (partial crop / chopped end / wrong colour / not clean / too thin) -> kept v98 image"
  }
 }

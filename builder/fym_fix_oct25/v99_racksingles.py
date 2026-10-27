@@ -13,6 +13,8 @@ R = D['racks']; hd = json.load(open(B + '/hd/index.json')); C = json.load(open(R
 IMG = {}; n = 0; os.makedirs(B + '/r99', exist_ok=True)
 for name, c in C.items():
     k = c['key']; src = REPO + 'assets/racks/v99/' + name + '.webp'
+    if k in R and 'hx' in c: R[k]['hx'] = c['hx']
+    if k in R and 'rf' in c: R[k]['rf'] = c['rf']
     if k not in R or R[k].get('hid') or not os.path.exists(src): print('skip', name); continue
     key = 'rk99' + ''.join(ch for ch in name if ch.isalnum())
     if R[k].get('im') == key: continue
