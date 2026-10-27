@@ -756,7 +756,7 @@ try:
 except Exception as _e: F.append(f"[70] portrait rack check did not run: {_e}")
 # [72] Oct 26 card sweep (docs/FYM-CARD-SWEEP-oct26.md): title contrast >= 3.5:1 on cream, subtitle fits the mat column (no '…'),
 # Photo coming soon text fits the circle, rack label never the generic 'Racks', long mat names have a display name
-for _need, _msg in (("/* v95 contrast */" if "/*v98 assigned title colour*/" not in UI else "/*v98 assigned title colour*/", "title colour is not darkened for contrast"), ("/* v95 subtitle fits the mat column */", "subtitle can overrun the mat / be cut with '…'"),
+for _need, _msg in ((("/*v100 title*/" if "/*v100 title*/" in UI else "/* v95 contrast */" if "/*v98 assigned title colour*/" not in UI else "/*v98 assigned title colour*/"), "title colour is not darkened for contrast"), ("/* v95 subtitle fits the mat column */", "subtitle can overrun the mat / be cut with '…'"),
                     ("/* v95 fit circle */", "Photo coming soon text can be clipped by the circle"), ("/* v95 no generic Racks */", "rack label can fall back to just 'Racks'")):
     if _need not in UI: F.append("[72] " + _msg)
 for _k, _v in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-mat-display-names-oct26.json')))['dn'].items():
@@ -1137,7 +1137,7 @@ if not _pre98:
         _h1, _l1, _s1 = _cs94.rgb_to_hls(*(_m / 255)); _h2, _l2, _s2 = _cs94.rgb_to_hls(*(_ref / 255)); _dh = abs(_h1 - _h2) * 360; _dh = min(_dh, 360 - _dh)
         if (min(_s1, _s2) >= .2 and _l2 < .93 and _dh > 8) or np.linalg.norm(_m - _ref) > (60 if min(_s1, _s2) >= .2 else 30):
             F.append(f"[94] {_n} ({_t}): colour {_m.astype(int).tolist()} drifted from PLM reference {_ref.astype(int).tolist()} (hue {_dh:.0f} deg)")
-if not _pre98:
+if not _pre98 and '/*v100 title*/' not in UI:  # v100 replaces [95] with [98] (her Oct 27 12:37am call)
     # [95] Tiffany 6:25pm: the card title uses the ASSIGNED set colour (s.tc), no contrast-loop darkening; light colours only get
     # a white outline
     if "const tc=s.tc||'#d6247f'/*v98 assigned title colour*/" not in UI or "/* v95 contrast */const Hh" in UI: F.append("[95] match card title colour is not the assigned set colour s.tc")
