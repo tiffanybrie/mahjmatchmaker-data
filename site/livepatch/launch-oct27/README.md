@@ -1,5 +1,8 @@
 # Launch-day homepage switch. Tue Oct 27, 2026, 9:00am CT (14:00 UTC). STAGED, not live
 
+**LIVE Tue Oct 27 ~1:25am ET (Main, Tiffany asked to go live at 1:08am).** /find-your-match = page-block @b103418 (fym-v99, Version 1.3), newsletter block removed, SEO description updated (no "Coming 10.27"); homepage H1/H4/button/links block/background swapped; Custom CSS appended — NOTE Squarespace LESS turns `grid-area:a/b/c/d` into a division, so the ≥1200px rules were rewritten as grid-row-start/… longhands, and the two ≤1199px links-block grid rules were removed (they had been no-ops and broke phones once working). Announcement bar OFF. Scheduled task trig_011jdGG DISABLED (nothing left for it). QA: qa/live-launch-1280.png, -390.png, live-fym-390.png.
+
+
 **Oct 26 11:15pm: launch switch moved to 8:00am ET (Tiffany leaves ~9:45). Scheduled task trig_011jdGGQRMhNGJVvBQw8tTZn now fires 12:00Z.**
 
 
