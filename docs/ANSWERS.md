@@ -508,3 +508,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - Oct 27 2:21am · Tiffany: why is Britt Mills House Print missing? ("very old, me chasing down mats") → watch saw it Oct 22 but adding is a manual build step that sat; sweep found ~10 missing partner mats; committed to: add next build, new gate check (partner mat live >2 days missing = FAIL), daily processing.
 - Oct 27 2:07am · Tiffany: FYM went live tonight on /find-your-match (Main, ~1:25am, v99 block); 8am switch task disabled.
 - Oct 27 2:25am · Tiffany: Splash of Color IS a partner; it's pulled from FYM on purpose (too many mats; her Oct 26 rule: only her album-match Splash mats stay). Missing-mat check excludes it with that reason.
+- Oct 27 2:26am · Tiffany: no heavy checks per build. Missing-mat check = the build only READS the last result of the existing twice-daily launch watch (which runs the store comparison); no rescans per build, no new scheduled tasks.
