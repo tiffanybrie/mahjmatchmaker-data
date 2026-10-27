@@ -149,7 +149,7 @@ Standing order: (1) Find Your Mat-ch™ launch TODAY 9am CT, (2) fall content be
 
 See CLAUDE.md.
 
-## Virora DM (Main, for Tiffany Tue ~10:40am; reminder scheduled)
+## Virora DM (Main) — SENT TO HER 10:42am Oct 27 with Dropbox link (+ story/post files); /partner-kit page not live, Dropbox replaced it. Waiting on her to DM.
 Virora has no email (contact form only), so they're NOT on the 10:30am partner email. Tiffany sends this from @mahjmatchmaker to @viroramahjongofficial after /partner-kit is live:
 > Hi Virora team! 💕 It's Tiffany from Mahj Matchmaker. Find Your Mat-ch™ went live this morning, and your Petalée tiles are in it! I made a story and a post just for you: Petalée on your Parrotia mat with your White and Pink Magnetic Wood racks. Save them here: mahjmatchmaker.com/partner-kit#virora-mahjong
 > If you share, tag @mahjmatchmaker and I'll reshare you right back. And what's the best email for partner updates? Thank you! xo, Tiffany
