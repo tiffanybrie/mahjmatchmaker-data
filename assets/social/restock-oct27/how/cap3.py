@@ -4,7 +4,7 @@ from playwright.sync_api import sync_playwright
 SET='Miss Classic Malachite'; OUT='/tmp/sun/how/malt'; os.makedirs(OUT,exist_ok=True)
 EVERY=[('Darjeeling','yes'),('Cognac','no'),('YOTD Black','yes')]
 HOL=[('Classic Very Merry Mahj','yes'),('Sleigh All Day Mat','no'),('Evergreen & Tartan','yes')]
-PICK='Evergreen & Tartan'; RX='peacelovemahjong.com/mahjong-racks-racks-pushers-set-of-4'; RY=['bb:Wine','bb:Dark Teal']
+PICK='Evergreen & Tartan'; RX='peacelovemahjong.com/mahjong-racks-racks-pushers-set-of-4'; RY=['bb:Red','bb:Dark Teal']
 meta={}
 def shot(pg,n): pg.screenshot(path=f'{OUT}/{n}.png'); print('shot',n)
 def deck(pg,sel='.deck.m',off=330): pg.evaluate(f"()=>{{const d=document.querySelector('{sel}');window.scrollTo(0,d.getBoundingClientRect().top+scrollY-{off})}}"); pg.wait_for_timeout(900)
