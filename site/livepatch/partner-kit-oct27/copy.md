@@ -10,13 +10,13 @@ Preview: Your story + post for Find Your Mat-ch™, ready to share.
 
 Find Your Mat-ch™ is live this morning! 🎉
 
-As promised, I made graphics just for your brand: a story and a feed post showing your pieces matched up in the tool.
+I made a story and a feed post for your brand, showing your pieces matched up in the tool. They're yours to use if you'd like, no pressure at all.
 
 [Button: Get your graphics] → <Dropbox folder link>
 
-Open the folder with your brand's name and save what you like. Feel free to bookmark the link: if you'd ever like additional graphics, just ask and we can place them there for you. If you share, tag @mahjmatchmaker and I'll reshare you right back.
+Just open the folder with your brand's name. Feel free to bookmark the link: if you'd ever like additional graphics, just ask and we can place them there for you. If you do share, tag @mahjmatchmaker and I'll happily reshare.
 
-Thank you for being part of this from day one!
+Thanks for making such beautiful pieces to match!
 
 xo, Tiffany
 [signature image, same as yesterday's email]
