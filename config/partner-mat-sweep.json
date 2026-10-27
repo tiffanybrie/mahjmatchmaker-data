@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-10-27T13:34:03+00:00",
+ "swept_at": "2026-10-27T22:07:23+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v101",
  "stores": {
   "amahjline.com": {
@@ -54,8 +54,13 @@
   "bambirdboutique.com": {
    "brand": "Bam Bird Boutique",
    "status": "ok",
-   "products": 112,
+   "products": 113,
    "mats": [
+    [
+     "2026-10-27T13:47:10-05:00",
+     "Plaid Neoprene Mahjong Mat",
+     "plaid-neoprene-mahjong-mat"
+    ],
     [
      "2026-10-21T21:35:06-05:00",
      "Deco Dragon Neoprene Mahjong Mat",
@@ -132,7 +137,13 @@
      "neoprene-mat"
     ]
    ],
-   "missing": []
+   "missing": [
+    [
+     "2026-10-27T13:47:10-05:00",
+     "Plaid Neoprene Mahjong Mat",
+     "plaid-neoprene-mahjong-mat"
+    ]
+   ]
   },
   "bamletsmahjong.com": {
    "brand": "Bam! Let's Mahjong",
@@ -541,8 +552,13 @@
   "brittmillsdesign.com": {
    "brand": "Britt Mills",
    "status": "ok",
-   "products": 699,
+   "products": 702,
    "mats": [
+    [
+     "2026-10-27T09:50:54-04:00",
+     "Bella Leatherette Mahjong Mat",
+     "bella-leatherette-mahjong-mat"
+    ],
     [
      "2026-10-26T14:13:20-04:00",
      "Crimson Harvest Leatherette Mahjong Mat",
@@ -869,7 +885,13 @@
      "willow-neoprene-mahjong-mat"
     ]
    ],
-   "missing": []
+   "missing": [
+    [
+     "2026-10-27T09:50:54-04:00",
+     "Bella Leatherette Mahjong Mat",
+     "bella-leatherette-mahjong-mat"
+    ]
+   ]
   },
   "charlestonmahjongclub.com": {
    "brand": "Charleston Mahjong Club",
@@ -1845,6 +1867,11 @@
    "products": 246,
    "mats": [
     [
+     "2026-10-27T09:58:37-05:00",
+     "Moving Sale Mahjong Mats",
+     "test-warehouse-sale-mats-in-canvas-bag"
+    ],
+    [
      "2026-10-19T14:01:33-05:00",
      "Holly Jolly Mat in Tube",
      "holly-jolly-mat-in-tube"
@@ -2010,12 +2037,18 @@
      "esme-mat-w-tube"
     ]
    ],
-   "missing": []
+   "missing": [
+    [
+     "2026-10-27T09:58:37-05:00",
+     "Moving Sale Mahjong Mats",
+     "test-warehouse-sale-mats-in-canvas-bag"
+    ]
+   ]
   },
   "peacelovemahjong.com": {
    "brand": "Peace Love Mahjong",
    "status": "ok",
-   "products": 96,
+   "products": 95,
    "mats": [
     [
      "2026-09-30T06:45:19-05:00",
@@ -2058,7 +2091,7 @@
   "shop.andersruff.com": {
    "brand": "Anders Ruff",
    "status": "ok",
-   "products": 143,
+   "products": 142,
    "mats": [
     [
      "2026-10-21T23:42:21-04:00",
@@ -2654,8 +2687,23 @@
   "letsbebesties.com": {
    "brand": "Let's Be Besties",
    "status": "ok",
-   "products": 566,
+   "products": 569,
    "mats": [
+    [
+     "2026-10-27T18:06:10-04:00",
+     "Tidal Glass Mahjong Mat",
+     "retro-riviera-mahjong-mat-copy"
+    ],
+    [
+     "2026-10-27T17:45:05-04:00",
+     "Retro Riviera Simple Middle Mahjong Mat",
+     "retro-riviera-simple-middle-mahjong-mat"
+    ],
+    [
+     "2026-10-27T17:40:30-04:00",
+     "Retro Riviera Mahjong Mat",
+     "retro-riviera-mahjong-mat"
+    ],
     [
      "2026-10-26T10:04:23-04:00",
      "Community Garden Mahjong Mat",
@@ -4343,6 +4391,21 @@
     ]
    ],
    "missing": [
+    [
+     "2026-10-27T18:06:10-04:00",
+     "Tidal Glass Mahjong Mat",
+     "retro-riviera-mahjong-mat-copy"
+    ],
+    [
+     "2026-10-27T17:45:05-04:00",
+     "Retro Riviera Simple Middle Mahjong Mat",
+     "retro-riviera-simple-middle-mahjong-mat"
+    ],
+    [
+     "2026-10-27T17:40:30-04:00",
+     "Retro Riviera Mahjong Mat",
+     "retro-riviera-mahjong-mat"
+    ],
     [
      "2026-10-26T10:04:23-04:00",
      "Community Garden Mahjong Mat",
