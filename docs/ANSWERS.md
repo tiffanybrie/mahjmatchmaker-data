@@ -516,3 +516,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - Oct 27 3:05am (Main): Partner email subject = "Find Your Mat-ch™ is live! Launch graphics inside" (hers).
 - Oct 27 3:06am (Main): Partner email: never promise ongoing new graphics. Bookmark line = "if you'd ever like additional graphics, just ask and we can place them there for you" (on request only). Removed the "reply / drop it in our Dropbox" line.
 - Oct 27 3:07am (Main): Partner email tone = INVITED, optional ("yours to use if you would like, no pressure"); never imply they are part of it or must use it; dropped "thank you for being part of this from day one".
+- Oct 27 3:08am (Main): Tiffany: missing a brand (PLM) without knowing is unacceptable. Built scripts/partner_send_check.py (email list vs graphics, DM-only list); must exit 0 before any partner send; noted at top of DESK.
