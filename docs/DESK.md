@@ -71,6 +71,8 @@ Standing order: (1) Find Your Mat-ch™ launch TODAY 9am CT, (2) fall content be
 | Papaya Beechwood README | Matches & Catalog | Live since Oct 22; README still says STAGED. | Next touch |
 
 ## Waiting on Tiffany (only things she can answer now)
+- **Waiting on her yes (Main, Oct 27 2:40pm):** homepage hero swap to the FYM app trio phones. Files @8de9442 site/livepatch/launch-oct27/hero-graphic/fym-app-mahjong-hero-{desktop,mobile}.jpg (build_v2.py; previews/hero-app-*.png). On yes: Custom CSS, replace the mobile URL in the launch-hero block with the new one and add a >=1200px rule using the desktop jpg as the section background (img opacity 0). Rollback: old URLs.
+- **Waiting on her notes (Main):** Malachite how-to reel v1 (Tinder cut, everyday + holiday), assets/social/restock-oct27/how/malachite/.
 **On HQ Today, in this order:**
 1. **Launch switch: turn on "Require this computer"** for the "Launch day: switch homepage hero" task in the Claude desktop app, and leave the laptop on with Chrome open 8:45-10am CT (or tell us to run it by hand).
 2. **Launch week plan: answer the asks** (https://claude.ai/artifact/TodweWYVb8f9iLUGtsd1KQ): "posts yes", "partner yes", "group yes", "subscriber email yes" or "skip", and the last partner graphic picks on the review page (defaults go if she skips).
