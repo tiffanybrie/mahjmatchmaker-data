@@ -1,5 +1,7 @@
 # Launch-morning copy (DRAFT for Tiffany's yes, Oct 26 night)
 
+**Oct 26 11:23pm: Tiffany chose a Dropbox folder (subfolder per brand), NOT the /partner-kit page. page-block.html is retired.**
+
 ## 1. Partner follow-up email (Squarespace campaign, list "FYM Partners")
 Send: Tue Oct 27, 10:30am ET (scheduled tonight after her yes). No discount code anywhere.
 
@@ -8,11 +10,11 @@ Preview: Your story + post for Find Your Mat-ch™, ready to share.
 
 Find Your Mat-ch™ is live this morning! 🎉
 
-As promised, I made a graphic just for your brand: a story and a feed post showing your pieces matched up in the tool.
+As promised, I made graphics just for your brand: a story and a feed post showing your pieces matched up in the tool.
 
-[Button: Get your graphic] → https://www.mahjmatchmaker.com/partner-kit
+[Button: Get your graphics] → <Dropbox folder link>
 
-Find your brand on the page and save the one you like. If you share it, tag @mahjmatchmaker and I'll reshare you right back.
+Open the folder with your brand's name and save what you like. If you share it, tag @mahjmatchmaker and I'll reshare you right back.
 
 Want a different product featured, or have a better photo? Reply to this email or drop it in our Dropbox and I'll swap it in.
 
