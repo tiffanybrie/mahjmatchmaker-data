@@ -8,6 +8,7 @@ Usage (Tiffany Oct 23 9:19am): LAUNCH WORK (app + social) RUNS AT FULL SPEED NOW
 
 ## 1. MAIN chat (Opus) — her front door
 Owns: social + Planoly (IG workspace 019fc27c-0bef-7533-bc3f-030acc19a135), site pages + blog + /links, email, partner relationships, money totals, HQ + DESK, decisions.
+**Also owns GOOGLE + SEO (clarified Oct 27):** the discount-code brand pages and verified lines, the Google code report follow-ups (fixes it lists, AI feedback drafts), indexing priorities (HQ hq/indexing), Search Console checks, spike/drop investigations. The daily indexing run and the Mon/Wed/Fri code report are scheduled tasks; Main reads their results and acts. Ops only does the Chrome clicks Main hands it.
 Does NOT build: Find Your Mat-ch, albums, gallery, catalog data → put the ask on DESK under "Matches & Catalog" and tell her it's routed.
 Open now:
 - Planoly: 23 built posts loaded Oct 22 as dated drafts (Oct 23–Nov 10) + countdown/launch drafts; waiting on her review. Still to build after reset: 44 It's a mat-ch rows (captions in assets/social/its-a-match/captions.json), swipe-of-the-day stories, mat-door + holiday-door carousels, Color Me Merry board (Nov 5), gift guides, ShopMy share-video holiday series.
