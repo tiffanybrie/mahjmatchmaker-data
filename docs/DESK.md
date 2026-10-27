@@ -139,3 +139,8 @@ Standing order: (1) Find Your Mat-ch™ launch TODAY 9am CT, (2) fall content be
 - **HQ:** archived 6 needs (partner email copy = sent; app-first page = approved 8:00am; Planoly IG relink = done 12:23pm; OMM moving sale + Miss Classic restock = Claude's job, on this desk; 29 new mats = new products, Claude's job); added 3 (Require-this-computer for the launch switch, Launch week plan asks, late holiday mats → albums); parked Amazon holiday picks + Etsy re-apply to Wed. Albums tab: Brownstone, thin albums, Gatsby updated; late holiday mats added under Needs your yes.
 
 See CLAUDE.md.
+
+## Virora DM (Main, for Tiffany Tue ~10:40am; reminder scheduled)
+Virora has no email (contact form only), so they're NOT on the 10:30am partner email. Tiffany sends this from @mahjmatchmaker to @viroramahjongofficial after /partner-kit is live:
+> Hi Virora team! 💕 It's Tiffany from Mahj Matchmaker. Find Your Mat-ch™ went live this morning, and your Petalée tiles are in it! I made a story and a post just for you: Petalée on your Parrotia mat with your White and Pink Magnetic Wood racks. Save them here: mahjmatchmaker.com/partner-kit#virora-mahjong
+> If you share, tag @mahjmatchmaker and I'll reshare you right back. And what's the best email for partner updates? Thank you! xo, Tiffany
