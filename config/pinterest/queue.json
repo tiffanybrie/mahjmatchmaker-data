@@ -50,11 +50,13 @@
    "title": "32 Mats That Match Birdie Mahjong Tiles",
    "board": "Blue Mahjong Tiles and Mat Matches",
    "boardId": "908319887286213299",
-   "status": "scheduled",
+   "status": "published",
    "postGroupId": "01a15317-f1d1-7369-adaf-2e55d75a1b79",
    "postId": "01a15317-f1e4-7293-b460-6f81e4aec444",
    "scheduledFor": "2026-10-22T15:00:00.000Z",
-   "note": "Oct 19 launch batch (approved by Tiffany in chat)."
+   "note": "Oct 19 launch batch (approved by Tiffany in chat).",
+   "publishedAt": "2026-10-22T15:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621307016/"
   },
   {
    "id": "oct19-01a15317-fe30",
@@ -64,11 +66,13 @@
    "title": "36 Mats That Match Cypress Mahjong Tiles",
    "board": "Neutral Mahjong Tiles and Mat Matches",
    "boardId": "908319887286213301",
-   "status": "scheduled",
+   "status": "published",
    "postGroupId": "01a15317-fe30-759d-8354-39e2119945dd",
    "postId": "01a15317-fe33-778f-8bb3-a910a9ef23db",
    "scheduledFor": "2026-10-23T15:00:00.000Z",
-   "note": "Oct 19 launch batch (approved by Tiffany in chat)."
+   "note": "Oct 19 launch batch (approved by Tiffany in chat).",
+   "publishedAt": "2026-10-23T15:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621340309/"
   },
   {
    "id": "oct19-01a15318-0b37",
@@ -78,11 +82,13 @@
    "title": "24 Mats That Match Emerald Mahjong Tiles",
    "board": "Green Mahjong Tiles and Mat Matches",
    "boardId": "908319887286213300",
-   "status": "scheduled",
+   "status": "published",
    "postGroupId": "01a15318-0b37-703d-9e04-c5986b17341f",
    "postId": "01a15318-0b3f-74f4-bdae-a6d87ab4053f",
    "scheduledFor": "2026-10-24T15:00:00.000Z",
-   "note": "Oct 19 launch batch (approved by Tiffany in chat)."
+   "note": "Oct 19 launch batch (approved by Tiffany in chat).",
+   "publishedAt": "2026-10-24T15:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621373269/"
   },
   {
    "id": "oct19-01a15318-194d",
@@ -92,11 +98,13 @@
    "title": "59 Mats That Match Gatsby Mahjong Tiles",
    "board": "Blue Mahjong Tiles and Mat Matches",
    "boardId": "908319887286213299",
-   "status": "scheduled",
+   "status": "published",
    "postGroupId": "01a15318-194d-7215-9dbd-d8453e888177",
    "postId": "01a15318-1953-767a-afdf-cf438225675c",
    "scheduledFor": "2026-10-25T15:00:00.000Z",
-   "note": "Oct 19 launch batch (approved by Tiffany in chat)."
+   "note": "Oct 19 launch batch (approved by Tiffany in chat).",
+   "publishedAt": "2026-10-25T15:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621406757/"
   },
   {
    "id": "oct19-01a15318-26f2",
@@ -106,11 +114,13 @@
    "title": "42 Mats That Match Glow Wild Mahjong Tiles",
    "board": "Pink Mahjong Tiles and Mat Matches",
    "boardId": "908319887286213298",
-   "status": "scheduled",
+   "status": "published",
    "postGroupId": "01a15318-26f2-751e-b3e3-29e78c8eb520",
    "postId": "01a15318-26f9-714e-ac1a-7573aed65d1c",
    "scheduledFor": "2026-10-26T15:00:00.000Z",
-   "note": "Oct 19 launch batch (approved by Tiffany in chat)."
+   "note": "Oct 19 launch batch (approved by Tiffany in chat).",
+   "publishedAt": "2026-10-26T15:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621439881/"
   },
   {
    "id": "oct19-01a15318-3537",
@@ -120,11 +130,13 @@
    "title": "78 Mats That Match Heritage 2.0 Mahjong Tiles",
    "board": "Neutral Mahjong Tiles and Mat Matches",
    "boardId": "908319887286213301",
-   "status": "scheduled",
+   "status": "published",
    "postGroupId": "01a15318-3537-7648-8d1d-1e57d0ac50f8",
    "postId": "01a15318-353b-774e-91a8-930cb846fd77",
    "scheduledFor": "2026-10-27T15:00:00.000Z",
-   "note": "Oct 19 launch batch (approved by Tiffany in chat)."
+   "note": "Oct 19 launch batch (approved by Tiffany in chat).",
+   "publishedAt": "2026-10-27T15:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621470763/"
   },
   {
    "id": "oct19-01a15318-4330",
@@ -559,7 +571,7 @@
    "id": "blog-halloween-mahjong-table",
    "kind": "blog",
    "url": "https://www.mahjmatchmaker.com/blog/halloween-mahjong-table",
-   "status": "scheduled",
+   "status": "published",
    "prio": 2,
    "src_url": "http://static1.squarespace.com/static/69b1d01289d0f8016ee3d508/69b1d310ab5d0710ba1304b9/6ad2b3c627026915575f45c8/1792465269071/night-of-the-raven-shop-the-look-v3.jpg?format=1500w",
    "board": "Mahjong Table Inspiration",
@@ -572,7 +584,9 @@
    "boardId": "908319887286202746",
    "pin": "assets/social/pinterest/pins/auto/blog-halloween-mahjong-table.jpg",
    "postGroupId": "01a15eb1-67b6-71c8-9de9-5bc5c05dbdb4",
-   "scheduledFor": "2026-10-21T20:00:00Z"
+   "scheduledFor": "2026-10-21T20:00:00Z",
+   "publishedAt": "2026-10-21T20:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621284075/"
   },
   {
    "id": "blog-christmas-mahjong-sets",
@@ -602,7 +616,7 @@
    "id": "blog-mahjong-buying-guide",
    "kind": "blog",
    "url": "https://www.mahjmatchmaker.com/blog/mahjong-buying-guide",
-   "status": "scheduled",
+   "status": "published",
    "prio": 3,
    "src_url": "http://static1.squarespace.com/static/69b1d01289d0f8016ee3d508/69b1d310ab5d0710ba1304b9/6ac454ae2378ba37836c8b8f/1792261049199/mahjong-buying-guide-heritage-tiles-darjeeling-mat.jpg?format=1500w",
    "board": "Learn to Play Mahjong",
@@ -617,13 +631,15 @@
    "assetId": "01a15eb1-d878-7487-a788-2f849aeda817",
    "plannedFor": "2026-10-22T20:00:00Z",
    "postGroupId": "01a15eb4-34a3-70ec-b48b-7ea1fd5e360b",
-   "scheduledFor": "2026-10-22T20:00:00Z"
+   "scheduledFor": "2026-10-22T20:00:00Z",
+   "publishedAt": "2026-10-22T20:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621315580/"
   },
   {
    "id": "blog-best-mahjong-sets-for-men",
    "kind": "blog",
    "url": "https://www.mahjmatchmaker.com/blog/best-mahjong-sets-for-men",
-   "status": "scheduled",
+   "status": "published",
    "prio": 13,
    "grid": [
     "assets/covers/albums/uniform-v3/drake.jpg",
@@ -643,7 +659,9 @@
    "assetId": "01a15eb1-e43d-71aa-b0cf-ce0ff542a418",
    "plannedFor": "2026-10-25T20:00:00Z",
    "postGroupId": "01a15eb4-416c-751f-96c2-c0cbc0dd096e",
-   "scheduledFor": "2026-10-25T20:00:00Z"
+   "scheduledFor": "2026-10-25T20:00:00Z",
+   "publishedAt": "2026-10-25T20:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621416077/"
   },
   {
    "id": "blog-mahjong-tile-set-details-to-know",
@@ -656,7 +674,7 @@
    "id": "blog-most-versatile-mahjong-tiles",
    "kind": "blog",
    "url": "https://www.mahjmatchmaker.com/blog/most-versatile-mahjong-tiles",
-   "status": "scheduled",
+   "status": "published",
    "prio": 12,
    "grid": [
     "assets/covers/albums/uniform-v3/heritage.jpg",
@@ -676,13 +694,15 @@
    "assetId": "01a15eb1-e146-702b-8987-1a382adcae2b",
    "plannedFor": "2026-10-25T13:00:00Z",
    "postGroupId": "01a15eb4-3f42-718a-af73-bab6d49adf60",
-   "scheduledFor": "2026-10-25T13:00:00Z"
+   "scheduledFor": "2026-10-25T13:00:00Z",
+   "publishedAt": "2026-10-25T13:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621404141/"
   },
   {
    "id": "blog-my-favorite-yellow-orange-mahjong-tiles",
    "kind": "blog",
    "url": "https://www.mahjmatchmaker.com/blog/my-favorite-yellow-orange-mahjong-tiles",
-   "status": "scheduled",
+   "status": "published",
    "prio": 11,
    "grid": [
     "assets/covers/albums/uniform-v3/papaya-spritz.jpg",
@@ -702,7 +722,9 @@
    "assetId": "01a15eb1-df98-7633-8e59-495130b029ee",
    "plannedFor": "2026-10-24T20:00:00Z",
    "postGroupId": "01a15eb4-3d2d-7254-a6a8-994286abce5b",
-   "scheduledFor": "2026-10-24T20:00:00Z"
+   "scheduledFor": "2026-10-24T20:00:00Z",
+   "publishedAt": "2026-10-24T20:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621382334/"
   },
   {
    "id": "blog-best-mahjong-sets-for-kids",
@@ -715,7 +737,7 @@
    "id": "blog-my-favorite-blue-mahjong-tiles",
    "kind": "blog",
    "url": "https://www.mahjmatchmaker.com/blog/my-favorite-blue-mahjong-tiles",
-   "status": "scheduled",
+   "status": "published",
    "prio": 8,
    "grid": [
     "assets/covers/albums/uniform-v3/gatsby.jpg",
@@ -735,13 +757,15 @@
    "assetId": "01a15eb1-da32-7296-8c34-45cc328ede5f",
    "plannedFor": "2026-10-23T13:00:00Z",
    "postGroupId": "01a15eb4-36f0-7503-b08d-8918234db569",
-   "scheduledFor": "2026-10-23T13:00:00Z"
+   "scheduledFor": "2026-10-23T13:00:00Z",
+   "publishedAt": "2026-10-23T13:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621336665/"
   },
   {
    "id": "blog-my-favorite-green-mahjong-tiles",
    "kind": "blog",
    "url": "https://www.mahjmatchmaker.com/blog/my-favorite-green-mahjong-tiles",
-   "status": "scheduled",
+   "status": "published",
    "prio": 10,
    "grid": [
     "assets/covers/albums/uniform-v3/emerald.jpg",
@@ -761,13 +785,15 @@
    "assetId": "01a15eb1-dd9c-709d-9032-a92138d957aa",
    "plannedFor": "2026-10-24T13:00:00Z",
    "postGroupId": "01a15eb4-3b18-740d-aafd-99bcbf57b9bb",
-   "scheduledFor": "2026-10-24T13:00:00Z"
+   "scheduledFor": "2026-10-24T13:00:00Z",
+   "publishedAt": "2026-10-24T13:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621370302/"
   },
   {
    "id": "blog-my-favorite-pink-mahjong-tiles",
    "kind": "blog",
    "url": "https://www.mahjmatchmaker.com/blog/my-favorite-pink-mahjong-tiles",
-   "status": "scheduled",
+   "status": "published",
    "prio": 9,
    "grid": [
     "assets/covers/albums/uniform-v3/amara.jpg",
@@ -787,7 +813,9 @@
    "assetId": "01a15eb1-dc19-734d-a033-50cbab0d6b0b",
    "plannedFor": "2026-10-23T20:00:00Z",
    "postGroupId": "01a15eb4-38fb-70e9-b56c-75d2f92e7e5e",
-   "scheduledFor": "2026-10-23T20:00:00Z"
+   "scheduledFor": "2026-10-23T20:00:00Z",
+   "publishedAt": "2026-10-23T20:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621348375/"
   },
   {
    "id": "blog-pearlescent-tiles-heron-mat-summer-mahjong-table",
@@ -819,7 +847,7 @@
     "masculine"
    ],
    "image": "assets/covers/albums/uniform-v3/tortoise.jpg",
-   "status": "scheduled",
+   "status": "published",
    "prio": 20,
    "link": "https://www.mahjmatchmaker.com/tortoise-mahjong-tile-matches?utm_source=pinterest&utm_medium=social&utm_campaign=evergreen",
    "title": "Tortoise Mahjong Tiles by Bam Bird: Mat & Rack Matches",
@@ -830,7 +858,9 @@
    "assetId": "01a15eb1-e638-72fd-804e-5a14db530c45",
    "plannedFor": "2026-10-26T13:00:00Z",
    "postGroupId": "01a15eb4-43af-72b9-91e0-5a3f4ffa8ef1",
-   "scheduledFor": "2026-10-26T13:00:00Z"
+   "scheduledFor": "2026-10-26T13:00:00Z",
+   "publishedAt": "2026-10-26T13:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621436713/"
   },
   {
    "id": "album-drake",
@@ -844,7 +874,7 @@
     "masculine"
    ],
    "image": "assets/covers/albums/uniform-v3/drake.jpg",
-   "status": "scheduled",
+   "status": "published",
    "prio": 20,
    "link": "https://www.mahjmatchmaker.com/drake-mahjong-tile-matches?utm_source=pinterest&utm_medium=social&utm_campaign=evergreen",
    "title": "Drake Mahjong Tiles by Oh My Mahjong: Mat & Rack Matches",
@@ -855,7 +885,9 @@
    "assetId": "01a15eb1-e7e4-7688-a7cf-4ae765ea669b",
    "plannedFor": "2026-10-26T20:00:00Z",
    "postGroupId": "01a15eb4-4607-728e-b7a1-42a0ac14e063",
-   "scheduledFor": "2026-10-26T20:00:00Z"
+   "scheduledFor": "2026-10-26T20:00:00Z",
+   "publishedAt": "2026-10-26T20:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621448293/"
   },
   {
    "id": "album-sierra",
@@ -868,7 +900,7 @@
     "yellow-orange"
    ],
    "image": "assets/covers/albums/uniform-v3/sierra.jpg",
-   "status": "scheduled",
+   "status": "published",
    "prio": 20,
    "link": "https://www.mahjmatchmaker.com/sierra-mahjong-tile-matches?utm_source=pinterest&utm_medium=social&utm_campaign=evergreen",
    "title": "Sierra Mahjong Tiles by Oh My Mahjong: Mat & Rack Matches",
@@ -879,7 +911,9 @@
    "assetId": "01a15eb1-e99e-731b-bbd1-cff18a3c2572",
    "plannedFor": "2026-10-27T13:00:00Z",
    "postGroupId": "01a15eb4-4828-71ea-b55c-7c7ffd236e4b",
-   "scheduledFor": "2026-10-27T13:00:00Z"
+   "scheduledFor": "2026-10-27T13:00:00Z",
+   "publishedAt": "2026-10-27T13:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621467902/"
   },
   {
    "id": "album-glitterville",
@@ -892,7 +926,7 @@
     "pink"
    ],
    "image": "assets/covers/albums/uniform-v3/glitterville.jpg",
-   "status": "scheduled",
+   "status": "published",
    "prio": 20,
    "link": "https://www.mahjmatchmaker.com/glitterville-mahjong-tile-matches?utm_source=pinterest&utm_medium=social&utm_campaign=evergreen",
    "title": "Glitterville Mahjong Tiles by Oh My Mahjong: Mat & Rack Matches",
@@ -903,7 +937,9 @@
    "assetId": "01a15eb1-eb81-7468-aa1d-19c05b31fd10",
    "plannedFor": "2026-10-27T20:00:00Z",
    "postGroupId": "01a15eb4-4c4d-701b-9d2c-a1710994878a",
-   "scheduledFor": "2026-10-27T20:00:00Z"
+   "scheduledFor": "2026-10-27T20:00:00Z",
+   "publishedAt": "2026-10-27T20:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621478757/"
   },
   {
    "id": "album-lola",
@@ -916,7 +952,7 @@
     "blue"
    ],
    "image": "assets/covers/albums/uniform-v3/lola.jpg",
-   "status": "scheduled",
+   "status": "published",
    "prio": 20,
    "link": "https://www.mahjmatchmaker.com/lola-mahjong-tile-matches?utm_source=pinterest&utm_medium=social&utm_campaign=evergreen",
    "title": "Lola Mahjong Tiles by Oh My Mahjong: Mat & Rack Matches",
@@ -927,7 +963,9 @@
    "assetId": "01a15eb1-ed3d-7788-a7fd-26de03799b79",
    "plannedFor": "2026-10-28T13:00:00Z",
    "postGroupId": "01a15eb4-4ee6-752c-a2da-b9b75069bfc6",
-   "scheduledFor": "2026-10-28T13:00:00Z"
+   "scheduledFor": "2026-10-28T13:00:00Z",
+   "publishedAt": "2026-10-28T13:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621499537/"
   },
   {
    "id": "album-gemma",
@@ -1262,7 +1300,7 @@
     "yellow-orange"
    ],
    "image": "assets/covers/albums/uniform-v3/papaya-spritz.jpg",
-   "status": "scheduled",
+   "status": "published",
    "prio": 1,
    "link": "https://www.mahjmatchmaker.com/papaya-spritz-mahjong-tile-matches?utm_source=pinterest&utm_medium=social&utm_campaign=evergreen",
    "title": "Papaya Spritz Mahjong Tiles by Oh My Mahjong: Mat & Rack Matches",
@@ -1273,7 +1311,9 @@
    "assetId": "01a15eb1-d684-7685-b757-ed70c0df8859",
    "plannedFor": "2026-10-22T13:00:00Z",
    "postGroupId": "01a15eb4-3232-720f-9171-d57f6d4535f1",
-   "scheduledFor": "2026-10-22T13:00:00Z"
+   "scheduledFor": "2026-10-22T13:00:00Z",
+   "publishedAt": "2026-10-22T13:00:00.000Z",
+   "pinUrl": "https://www.pinterest.com/pin/908319818621304388/"
   },
   {
    "id": "album-sunday-tile-set",
@@ -5850,7 +5890,7 @@
    "pin": "assets/social/pinterest/pins/auto/blog-most-versatile-mahjong-mats.jpg"
   }
  ],
- "updated": "2026-10-21T18:15:52Z",
+ "updated": "2026-10-28T13:56:39Z",
  "rules": {
   "pace": "2 new pins/day at 13:00Z and 20:00Z (on top of the Oct 19 batch: 15:00/16:00Z daily to Nov 9, holiday 00:00Z Nov 2-14). Keep ~7 days of new pins scheduled ahead; never more than 4 pins on one day.",
   "ownWorkOnly": "Pin only our own images: album covers (assets/covers/albums/uniform-v3), our color cards / mood boards / graphics, or grids of our covers. Never a brand product photo on its own.",
