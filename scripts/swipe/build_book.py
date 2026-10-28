@@ -211,6 +211,10 @@ def main(spec_path, out):
     html = html.replace("$('shT').textContent='Add another mat (all moody, classic and neutral mats)';",
         "$('shT').textContent='Add another mat';{const q=document.createElement('input');q.placeholder='Search mats or brands…';q.style.cssText='grid-column:1/-1;font:inherit;font-size:16px;padding:10px 12px;border-radius:10px;border:0';q.oninput=()=>{const t=q.value.toLowerCase();[...B.querySelectorAll('button.it')].forEach(b=>b.style.display=b.textContent.toLowerCase().includes(t)?'':'none')};B.append(q);setTimeout(()=>q.focus(),50)}")
     open(out + "/index.html", "w").write(html)
+    # Tiffany Oct 28: Bam Bird + Virora (and Heritage/Sunday/etc.) always use the canonical FYM photos
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from canon_tiles import fix_book
+    fix_book(out + "/index.html")
     json.dump(rep, open(out + "/report.json", "w"), indent=0)
     ok = sum(1 for _, r in rep if r.startswith("OK"))
     print(f"{ok} mats in book, {len(rep) - ok} skipped")

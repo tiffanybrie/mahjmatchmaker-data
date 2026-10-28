@@ -1,0 +1,239 @@
+{
+ "_doc": "Swipe books use the SAME tile photo as Find Your Mat-ch for every Bam Bird Boutique and Virora tile set (Tiffany Oct 28 2:28pm: Classic Tortoise showed a bad scatter-on-white; Petalee too). Built from the live FYM v1.5 build (b101) 'full' images. canon_tiles.py applies it on every book build/patch. Rebuild with builder/swipe_fym_tile_photos.py after an FYM tile-photo change.",
+ "ids": {
+  "tortoise": {
+   "img": "assets/tiles/fym-live/bam-bird-classic-tortoise-scatter.jpg",
+   "name": "Classic Tortoise",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/east-meets-west-tortoise-shell-tile-set-copy"
+  },
+  "bam-bird-classic-tortoise": {
+   "img": "assets/tiles/fym-live/bam-bird-classic-tortoise-scatter.jpg",
+   "name": "Classic Tortoise",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/east-meets-west-tortoise-shell-tile-set-copy"
+  },
+  "classic-tortoise": {
+   "img": "assets/tiles/fym-live/bam-bird-classic-tortoise-scatter.jpg",
+   "name": "Classic Tortoise",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/east-meets-west-tortoise-shell-tile-set-copy"
+  },
+  "nivalee-glacier-blue": {
+   "img": "assets/tiles/fym-live/virora-nivalee-glacier-blue-grid3.jpg",
+   "name": "Nivalee (Glacier Blue)",
+   "brand": "Virora Mahjong",
+   "fym_key": "hol:nivalee-blue"
+  },
+  "tinselle-emerald-green": {
+   "img": "assets/tiles/fym-live/virora-tinselle-emerald-green-grid3.jpg",
+   "name": "Tinselle (Emerald Green)",
+   "brand": "Virora Mahjong",
+   "fym_key": "hol:tinselle-emerald"
+  },
+  "tinselle-ruby-red": {
+   "img": "assets/tiles/fym-live/virora-ruby-christmas-grid3.jpg",
+   "name": "Tinselle (Ruby Red)",
+   "brand": "Virora Mahjong",
+   "fym_key": "hol:tinselle-ruby"
+  },
+  "giant-mahjong-tile-for-decor-sold-as-individual": {
+   "img": "assets/tiles/fym-live/99.jpg",
+   "name": "Giant Mahjong Tile (for decor)- sold as individual",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/giant-mahjong-tiles-set-of-3-for-decor"
+  },
+  "mischief-mahj": {
+   "img": "assets/tiles/fym-live/100.jpg",
+   "name": "Mischief Mahj",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/mischief-mahj-tiles-tastings-event-wed-oct-21"
+  },
+  "mcm-navy-olive": {
+   "img": "assets/tiles/fym-live/bam-bird-mcm-navy-olive-split.jpg",
+   "name": "MCM (Navy/Olive)",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/mcm-mahjong-tile-set"
+  },
+  "boots-bubbles-blue-swirl": {
+   "img": "assets/tiles/fym-live/bam-bird-boots-blue-split.jpg",
+   "name": "Boots & Bubbles (Blue Swirl)",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/boots-bubbles-mahjong-tile-set"
+  },
+  "deco-lagoon": {
+   "img": "assets/tiles/fym-live/bam-bird-boutique-deco-lagoon-split.jpg",
+   "name": "Deco (Lagoon)",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/deco-tile-set"
+  },
+  "east-meets-west-tortoise-shell": {
+   "img": "assets/tiles/fym-live/bam-bird-emw-tortoise-scatter.jpg",
+   "name": "East Meets West Tortoise Shell",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/east-meets-west-tortoise-shell-tile-set"
+  },
+  "origami-azure": {
+   "img": "assets/tiles/fym-live/bam-bird-origami-azure-split.jpg",
+   "name": "Origami (Azure)",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/origami-tile-set"
+  },
+  "nivalee-emerald-green": {
+   "img": "assets/tiles/fym-live/virora-christmas-collection-ii-nivalee-grid3.jpg",
+   "name": "Nivalee Emerald Green",
+   "brand": "Virora Mahjong",
+   "fym_key": "www.viroramahjong.com/christmas-collection-ii-nivalee"
+  },
+  "sylvaria": {
+   "img": "assets/tiles/fym-live/virora-sylvaria-grid3.jpg",
+   "name": "Sylvaria",
+   "brand": "Virora Mahjong",
+   "fym_key": "www.viroramahjong.com/sylvaria"
+  },
+  "aveline": {
+   "img": "assets/tiles/fym-live/virora-aveline-grid3.jpg",
+   "name": "Aveline",
+   "brand": "Virora Mahjong",
+   "fym_key": "www.viroramahjong.com/aveline"
+  },
+  "lilacee": {
+   "img": "assets/tiles/fym-live/virora-yellow-lilacee-grid3.jpg",
+   "name": "Lilacée",
+   "brand": "Virora Mahjong",
+   "fym_key": "www.viroramahjong.com/yellow-lilacee"
+  },
+  "florea": {
+   "img": "assets/tiles/fym-live/virora-mahjong-flor-a.jpg",
+   "name": "Floréa",
+   "brand": "Virora Mahjong",
+   "fym_key": "www.viroramahjong.com/florea"
+  },
+  "viozelle": {
+   "img": "assets/tiles/fym-live/virora-mahjong-viozelle.jpg",
+   "name": "Viozelle",
+   "brand": "Virora Mahjong",
+   "fym_key": "www.viroramahjong.com/viozelle"
+  },
+  "elanisse": {
+   "img": "assets/tiles/fym-live/virora-mahjong-lanisse.jpg",
+   "name": "Élanisse",
+   "brand": "Virora Mahjong",
+   "fym_key": "www.viroramahjong.com/elanisse"
+  },
+  "rosanelle": {
+   "img": "assets/tiles/fym-live/virora-mahjong-rosanelle.jpg",
+   "name": "Rosanelle",
+   "brand": "Virora Mahjong",
+   "fym_key": "www.viroramahjong.com/rosanelle"
+  },
+  "marivelle": {
+   "img": "assets/tiles/fym-live/virora-marivelle-grid3.jpg",
+   "name": "Marivelle",
+   "brand": "Virora Mahjong",
+   "fym_key": "www.viroramahjong.com/marivelle"
+  },
+  "florielle": {
+   "img": "assets/tiles/fym-live/166.jpg",
+   "name": "Florielle",
+   "brand": "Virora Mahjong",
+   "fym_key": "www.viroramahjong.com/florielle"
+  },
+  "amethisse": {
+   "img": "assets/tiles/fym-live/virora-mahjong-am-thisse.jpg",
+   "name": "Améthisse",
+   "brand": "Virora Mahjong",
+   "fym_key": "www.viroramahjong.com/amethisse"
+  },
+  "iriselle": {
+   "img": "assets/tiles/fym-live/168.jpg",
+   "name": "Iriselle",
+   "brand": "Virora Mahjong",
+   "fym_key": "www.viroramahjong.com/iriselle"
+  },
+  "petalee": {
+   "img": "assets/tiles/fym-live/virora-petalee-grid3.jpg",
+   "name": "Petalée",
+   "brand": "Virora Mahjong",
+   "fym_key": "www.viroramahjong.com/petalee"
+  },
+  "classic-rose": {
+   "img": "assets/tiles/fym-live/bam-bird-classic-rose-split.jpg",
+   "name": "Classic (Rose)",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/tiles-box-die"
+  },
+  "classic-lavender": {
+   "img": "assets/tiles/fym-live/bam-bird-classic-lavender-split.jpg",
+   "name": "Classic (Lavender)",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/tiles-box-die?v=46437070897461"
+  },
+  "classic-teal": {
+   "img": "assets/tiles/fym-live/bam-bird-classic-teal-split.jpg",
+   "name": "Classic (Teal)",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/tiles-box-die?v=47188580139317"
+  },
+  "east-meets-west-emerald": {
+   "img": "assets/tiles/fym-live/bam-bird-emw-emerald-split.jpg",
+   "name": "East Meets West (Emerald)",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/east-meets-west-tile-set?v=49902711079221"
+  },
+  "east-meets-west-periwinkle": {
+   "img": "assets/tiles/fym-live/bam-bird-emw-periwinkle-split.jpg",
+   "name": "East Meets West (Periwinkle)",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/east-meets-west-tile-set?v=53195162583349"
+  },
+  "origami-timber": {
+   "img": "assets/tiles/fym-live/bam-bird-origami-timber-split.jpg",
+   "name": "Origami (Timber)",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/origami-tile-set?v=47949222674741"
+  },
+  "deco-mulberry": {
+   "img": "assets/tiles/fym-live/bam-bird-boutique-deco-mulberry-split.jpg",
+   "name": "Deco (Mulberry)",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/deco-tile-set?v=51519563333941"
+  },
+  "deco-indigo": {
+   "img": "assets/tiles/fym-live/bam-bird-boutique-deco-indigo-split.jpg",
+   "name": "Deco (Indigo)",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/deco-tile-set?v=53195200004405"
+  },
+  "mcm-olive-pink": {
+   "img": "assets/tiles/fym-live/bam-bird-mcm-olive-pink-split.jpg",
+   "name": "MCM (Olive/Pink)",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/mcm-mahjong-tile-set?v=53323821482293"
+  },
+  "boots-bubbles-pink-swirl": {
+   "img": "assets/tiles/fym-live/bam-bird-boots-pink-split.jpg",
+   "name": "Boots & Bubbles (Pink Swirl)",
+   "brand": "Bam Bird Boutique",
+   "fym_key": "www.bambirdboutique.com/boots-bubbles-mahjong-tile-set?v=53636177658165"
+  },
+  "nivalee-blue": {
+   "img": "assets/tiles/fym-live/virora-nivalee-glacier-blue-grid3.jpg",
+   "name": "Nivalee (Glacier Blue)",
+   "brand": "Virora Mahjong",
+   "fym_key": "hol:nivalee-blue"
+  },
+  "tinselle-emerald": {
+   "img": "assets/tiles/fym-live/virora-tinselle-emerald-green-grid3.jpg",
+   "name": "Tinselle (Emerald Green)",
+   "brand": "Virora Mahjong",
+   "fym_key": "hol:tinselle-emerald"
+  },
+  "tinselle-ruby": {
+   "img": "assets/tiles/fym-live/virora-ruby-christmas-grid3.jpg",
+   "name": "Tinselle (Ruby Red)",
+   "brand": "Virora Mahjong",
+   "fym_key": "hol:tinselle-ruby"
+  }
+ }
+}
