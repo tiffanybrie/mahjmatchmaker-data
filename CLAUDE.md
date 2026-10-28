@@ -18,6 +18,7 @@ Ask her ONLY for: new decisions (taste, matches, new brands, wording she hasn't 
 
 Update what exists instead of starting over. Example: the launch-day homepage hero was already designed in site/livepatch/nav-plan (match-card fan), then rebuilt from scratch by mistake.
 **When a draft changes, update HQ / Ready to Ship IN THE SAME TURN (Tiffany, Oct 21 3:16pm).** If she rejects a draft or asks for a rebuild, immediately HIDE the HQ / Ready to Ship item. Use parked/archived status, take it out of the NOW list, and show no "being rebuilt" notices. Her words, 3:17pm: "Don't put it in front of me unless I can actually answer the question." She must never see an outdated draft. When the new version is ready, replace the item in place; never add a second copy. Every agent that changes a draft does this itself.
+**PICK / REVIEW PAGES (Tiffany Oct 28 3:37pm, repeated): whenever she has to judge a mat against tiles, show them TOGETHER in one view (match-card style: mat full, tiles inset bottom-right, tap to zoom). Never a mat photo with tile photos listed below it on a phone.**
 **NEW ALBUM = docs/NEW-ALBUM-CHECKLIST.md (Tiffany Oct 26): every album launch runs that list top to bottom (incl. the /links latest-album card). She never has to remember it.**
 **HQ is her one front door.** A daily 6:47am ET scheduled task cleans HQ + Ready to Ship per docs/HQ-CLEANUP.md. Whenever she answers something in chat, close or update the matching HQ/Ready to Ship item the same turn. Never leave an item asking for something she already gave.
 
