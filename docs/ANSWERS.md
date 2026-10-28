@@ -603,3 +603,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - Oct 28 2:42pm · Tiffany: Nature Walk on Rattan v6 looks pretty real. She has Sunday tiles + Rattan mat + a 20-inch rack and will do test shots to cross-check sizes -> HQ need tableview-sizecheck-oct28 added.
 - Oct 28 2:43pm · Tiffany: table view as a partner perk is a good idea, but TBD vs opening it to everyone (money comes from people wanting to use the tool). Undecided.
 - Oct 28 2:44pm · Tiffany: corner view = two walls meeting at the corner (left+bottom or right+bottom) with their racks; full-table view where a full aerial photo exists; maybe offer both.
+- Oct 28 2:46pm · Tiffany: corner/quadrant view = crop of the current layout (two walls + racks on one side, e.g. bottom+left or bottom+right); walls must NOT touch or meet at the corner, keep the open corner exactly as now.
