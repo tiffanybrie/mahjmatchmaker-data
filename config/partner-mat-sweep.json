@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-10-27T22:07:23+00:00",
+ "swept_at": "2026-10-28T13:16:16+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v101",
  "stores": {
   "amahjline.com": {
@@ -1952,21 +1952,6 @@
      "preppy-soiree-mat-in-tube"
     ],
     [
-     "2026-04-27T06:21:57-05:00",
-     "Darjeeling Mat in Tube",
-     "darjeeling-mat-w-tube"
-    ],
-    [
-     "2026-04-27T06:13:33-05:00",
-     "Astor Mat in Tube",
-     "astor-mat-w-tube"
-    ],
-    [
-     "2026-04-27T06:12:03-05:00",
-     "Vanderbilt Mat in Tube",
-     "vanderbilt-mat-w-tube"
-    ],
-    [
      "2026-03-27T15:28:29-05:00",
      "Isla Mat in Tube",
      "isla-mat-in-tube"
@@ -2012,29 +1997,9 @@
      "heron-mat-in-tube"
     ],
     [
-     "2026-01-09T08:09:25-06:00",
-     "Year of the Horse Mat",
-     "year-of-the-horse-mat"
-    ],
-    [
-     "2026-01-02T11:02:13-06:00",
-     "Dapper Mat in Tube",
-     "dapper-mat-w-tube"
-    ],
-    [
-     "2025-12-31T10:21:54-06:00",
-     "Vivara Mat in Tube",
-     "vivara-mat-w-tube"
-    ],
-    [
      "2025-12-26T06:38:33-06:00",
      "Luna Mat in Tube",
      "luna-w-tube"
-    ],
-    [
-     "2025-12-26T06:35:36-06:00",
-     "Esme Mat in Tube",
-     "esme-mat-w-tube"
     ]
    ],
    "missing": [
@@ -2091,8 +2056,13 @@
   "shop.andersruff.com": {
    "brand": "Anders Ruff",
    "status": "ok",
-   "products": 142,
+   "products": 153,
    "mats": [
+    [
+     "2026-10-27T23:11:59-04:00",
+     "Paws in the Garden Mahjong Mat",
+     "paws-in-the-garden-mahjong-mat"
+    ],
     [
      "2026-10-21T23:42:21-04:00",
      "Bellamy Bloom Mahjong Mat",
@@ -2384,7 +2354,13 @@
      "bams-bubbly-mahjong-mat"
     ]
    ],
-   "missing": []
+   "missing": [
+    [
+     "2026-10-27T23:11:59-04:00",
+     "Paws in the Garden Mahjong Mat",
+     "paws-in-the-garden-mahjong-mat"
+    ]
+   ]
   },
   "soireeallday.co": {
    "brand": "Soirée All Day",
@@ -2692,7 +2668,7 @@
     [
      "2026-10-27T18:06:10-04:00",
      "Tidal Glass Mahjong Mat",
-     "retro-riviera-mahjong-mat-copy"
+     "tidal-glass-mahjong-mat"
     ],
     [
      "2026-10-27T17:45:05-04:00",
@@ -4394,7 +4370,7 @@
     [
      "2026-10-27T18:06:10-04:00",
      "Tidal Glass Mahjong Mat",
-     "retro-riviera-mahjong-mat-copy"
+     "tidal-glass-mahjong-mat"
     ],
     [
      "2026-10-27T17:45:05-04:00",
