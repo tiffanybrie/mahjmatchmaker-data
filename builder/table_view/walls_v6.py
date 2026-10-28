@@ -183,6 +183,11 @@ def frame(img):
 on = compose(True); off = compose(False)
 frame(on).save(outp + '-walls.jpg', quality=92)
 frame(off).save(outp + '-nowalls.jpg', quality=92)
+if cfg.get('quadrant'):   # v8 (Tiffany Oct 28 2:46pm): corner/quadrant view = crop of this same layout, walls don't touch
+    q0 = int(N * cfg.get('quadrant_from', 0.36))
+    side_ = cfg['quadrant']   # 'SE' (bottom + right) or 'SW' (bottom + left)
+    box = (q0, q0, N, N) if side_ == 'SE' else (0, q0, N - q0, N)
+    frame(on.crop(box)).save(outp + '-quadrant.jpg', quality=92)
 # close-up: bottom wall corner + rack, at native resolution
 cx0 = int(c - L19 / 2 - 1.0 * PPI); cy0 = int(inner('S') - 4.0 * PPI)
 cl = on.crop((cx0, cy0, cx0 + int(9 * PPI), cy0 + int(7.5 * PPI)))
