@@ -602,3 +602,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - Oct 28 2:40pm · Tiffany: no email to Emily needed. Emily already shared a Canva file of her REAL racks in overhead view (shown in an old Canva walkthrough). Found the shared design 'kelly green bird & bamboo' (DAG08F-eeJM, 188 pages); scanning it for real overhead racks to rebuild the B&B rack look.
 - Oct 28 2:42pm · Tiffany: Nature Walk on Rattan v6 looks pretty real. She has Sunday tiles + Rattan mat + a 20-inch rack and will do test shots to cross-check sizes -> HQ need tableview-sizecheck-oct28 added.
 - Oct 28 2:43pm · Tiffany: table view as a partner perk is a good idea, but TBD vs opening it to everyone (money comes from people wanting to use the tool). Undecided.
+- Oct 28 2:44pm · Tiffany: corner view = two walls meeting at the corner (left+bottom or right+bottom) with their racks; full-table view where a full aerial photo exists; maybe offer both.
