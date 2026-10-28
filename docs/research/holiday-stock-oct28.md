@@ -53,7 +53,7 @@ Research for docs/MERRY-MAHJONG-BRIEF.md. Checked Oct 28 against live Shopify `/
 - **Bird & Bamboo racks (AR tie-in):** the 19" and 20" wood rack sets are in stock in essentially every colour. The only sold-out variant is 20" Gold Metallic/Standard. The holiday rack picks Brick Red, Red, Wine, Evergreen, Forest/Kelly Green, Magenta and Pink Coral are all available. Everything is made to order and **ships in 7-9 business days**, so it's comfortably pre-Christmas.
 
 **SKIP list (sold out / don't promote):**
-- Sunday **Festive Plaid** mat (sold out) and Sunday **Rattan** mat (wfh, sold out; all Sunday premium mats sold out Oct 21). Sunday **December 1994** tiles: both preorders are sold out, leftovers are expected late Nov to early Dec.
+- Sunday **Festive Plaid** mat and Sunday **Rattan** mat (wfh): **BACK IN STOCK Oct 28 6:40pm ET** (store check; $89 / $79). They sold out Oct 21. Sunday **December 1994** tiles: both preorders are sold out, leftovers are expected late Nov to early Dec.
 - Britt Mills **Merrywood, Nutcracker and Winter Berry NEOPRENE** are sold out. The Nutcracker and Winter Berry **Leatherette** versions are in stock ($180).
 - Mahj Mood **Sleigh All Day** (sold out; Holly Berry is in stock). Mahj Squad **Candy Cane Pink Wonderland** (sold out). Mahjong Register **Holly Jolly Double-Sided Leatherette** (sold out; the Holly Jolly neoprene is in stock).
 - Virora **Tinselle Emerald Green tiles** (sold out). HHM **Nativity tiles** (sold out, and hidden in FYM). HHM **Santa Baby racks** (sold out).
@@ -214,7 +214,7 @@ ayr = also year-round (also shows in its colour chips).
 | Soirée All Day | Star of David Hanukkah | In stock (made to order) | Squarespace unlimited stock; "Ships in 4-8 business days" |  |
 | Soirée All Day | Toasty & Tipsy | In stock (made to order) | Squarespace unlimited stock; "Ships in 4-8 business days" |  |
 | Splash of Color | Alpine Ski Lodge Winter | In stock | $72 |  |
-| Sunday Mahjong | Festive Plaid Premium | SOLD OUT | $89 | yes |
+| Sunday Mahjong | Festive Plaid Premium | IN STOCK (back Oct 28) | $89 | yes |
 | Tala Mahj | Sweater Weather - Holiday with Winter Blue Fringe | In stock | page: "Estimated Ship Date: 10/15/2026" (stale; now shipping); $175 |  |
 | Tala Mahj | The Carlyle - Holiday Plaid with Red Fringe | In stock | $175 | yes |
 | Tigre de Tartan | Ditsy Christmas Maraschino | In stock | $175 |  |
@@ -226,6 +226,6 @@ ayr = also year-round (also shows in its colour chips).
 | Wren Mats | Winter Wreath | In stock | 13 + 15 left by size |  |
 | Wren Mats | Winter Wreaths | In stock (low) | 3 left |  |
 
-Works-for-holiday (wfh) mats under the Holiday chip: Luxe The Polo Club (in stock, $85), Sunday Rattan (SOLD OUT), OMM Dapper 2 (product URL 404), OMM Dapper 1 (retired).
+Works-for-holiday (wfh) mats under the Holiday chip: Luxe The Polo Club (in stock, $85), Sunday Rattan (IN STOCK, back Oct 28), OMM Dapper 2 (gone: 404 + not in OMM catalog, Oct 28), OMM Dapper 1 (retired).
 
 Shipping cutoffs: no brand posted a holiday order-by date on the pages checked. The only dates are the preorder dates above (AR Nov 17 mats / end-Nov tiles, Wren Nov 20, Virora Nov). Re-check for cutoff banners in early December.

@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-28T17:35:00Z",
-  "updatedBy": "partner watch Oct 28 1:35pm ET",
+  "updated": "2026-10-28",
+  "updatedBy": "partner watch Oct 28 6:40pm ET",
   "rules": {
     "timing": {
       "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -156,13 +156,13 @@
       "product": "Premium Mahjong Mats (all designs, incl. Rattan)",
       "type": "re-release",
       "window": "'early to mid October' (still the 'Next drop' on the schedule updated Oct 26: overdue)",
-      "status": "all premium mats sold out on Oct 21",
+      "status": "PARTLY BACK: Festive Plaid Premium ($89) + Rattan Premium ($79) LIVE Oct 28 (store check 6:40pm ET, available); other designs not checked",
       "source": "Release schedule 'Next drop'",
       "sourceUrl": "https://sundaymahjong.com/pages/release-schedule",
       "album": "many album mats (Rattan = works_for_holiday)",
       "affiliate": false,
       "priority": 2,
-      "contentTiming": "Watch daily (email watch already flags Retro Rattan). When live: story + Holiday 'year-round mats that work for the holidays' plug the same day."
+      "contentTiming": "Watch daily (email watch already flags Retro Rattan). When live: story + Holiday 'year-round mats that work for the holidays' plug the same day. Oct 28: Rattan (wfh) + Festive Plaid back; Tiffany messaged (Festive Plaid is her personal buy)."
     },
     {
       "id": "sunday-blues-rerelease",
@@ -899,6 +899,48 @@
       "affiliate": true,
       "priority": 3,
       "contentTiming": "No album. Log."
+    },
+    {
+      "id": "bambird-plaid-mats",
+      "brand": "Bam Bird Boutique",
+      "product": "Plaid Neoprene Mahjong Mats x3 (Pink on Pink, Green and Blue/Azure, Green with Pink), $80",
+      "type": "launch",
+      "date": "2026-10-27",
+      "status": "LIVE Oct 27 (store check Oct 28 6:40pm ET: all 3 available); IG launch post Oct 28 4:09pm ET",
+      "source": "Instagram @bambirdboutique",
+      "sourceUrl": "https://www.instagram.com/p/DfDQepUHx3n/",
+      "album": false,
+      "affiliate": true,
+      "priority": 1,
+      "contentTiming": "Partner new mats: reshare Bam Bird's post to stories (Tiffany). FYM frames wait for FYM 1.6 (mats not in the live app yet)."
+    },
+    {
+      "id": "mfm-poppy-red-racks",
+      "brand": "My Fair Mahjong",
+      "product": "Poppy Red Racks (new), shown with their holiday mats",
+      "type": "launch",
+      "date": "2026-10-28",
+      "status": "LIVE Oct 28: 'Solid Poppy Red' colour on their acrylic racks ($125, launch watch 6:10pm ET); IG launch reel 4:24pm ET",
+      "source": "Instagram @myfairmahjong",
+      "sourceUrl": "https://www.instagram.com/reel/DfDRlHph5cK/",
+      "album": false,
+      "affiliate": true,
+      "priority": 3,
+      "contentTiming": "Racks: log only; rack-pairing option for red holiday mats."
+    },
+    {
+      "id": "mahjandvine-whispering-winds",
+      "brand": "Mahj & Vine",
+      "product": "Whispering Winds debut tiles (Sky Blue first, then Tortoise Shell)",
+      "type": "coming soon",
+      "window": "no date (in production)",
+      "status": "coming soon",
+      "source": "Instagram @mahjandvine Oct 28",
+      "sourceUrl": "https://www.instagram.com/p/DfDBWKxHd5h/",
+      "album": false,
+      "affiliate": false,
+      "priority": 3,
+      "contentTiming": "Watch."
     }
   ],
   "sources": {

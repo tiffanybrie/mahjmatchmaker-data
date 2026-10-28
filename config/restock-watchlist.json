@@ -12,20 +12,6 @@
     },
     {
       "brand": "Sunday Mahjong",
-      "item": "Festive Plaid Premium mat",
-      "site": "sundaymahjong.com",
-      "find": "festive plaid",
-      "personal": true,
-      "why": "Tiffany wants to buy it; expected to sell out fast"
-    },
-    {
-      "brand": "Sunday Mahjong",
-      "item": "Rattan Premium mat (works for holiday)",
-      "site": "sundaymahjong.com",
-      "find": "rattan"
-    },
-    {
-      "brand": "Sunday Mahjong",
       "item": "December 1994 tiles (leftovers late Nov-early Dec)",
       "site": "sundaymahjong.com",
       "find": "december 1994"
@@ -78,7 +64,19 @@
     {
       "brand": "Oh My Mahjong",
       "item": "Dapper 2 mat",
-      "note": "Product page 404 Oct 28; likely cleared in OMM's warehouse sale. If confirmed gone: mark retired per doc 90 (retired vs sold out), and find a masculine replacement mat for the works-for-holiday list (Tiffany: none of OMM's other mats are as fully masculine)."
+      "note": "Product page 404 Oct 28; likely cleared in OMM's warehouse sale. If confirmed gone: mark retired per doc 90 (retired vs sold out), and find a masculine replacement mat for the works-for-holiday list (Tiffany: none of OMM's other mats are as fully masculine). Oct 28 6:40pm ET: CONFIRMED GONE (product URL 404 AND absent from ohmymahjong.com/products.json). Handed to Matches & Catalog via MATCH-INBOX to mark retired (doc 90) + find a masculine wfh replacement."
+    }
+  ],
+  "handled": [
+    {
+      "item": "Sunday Festive Plaid Premium mat",
+      "back": "2026-10-28 6:40pm ET",
+      "action": "Tiffany messaged + push (personal buy)"
+    },
+    {
+      "item": "Sunday Rattan Premium mat",
+      "back": "2026-10-28 6:40pm ET",
+      "action": "logged as restock; holiday-stock doc updated"
     }
   ]
 }
