@@ -1,6 +1,6 @@
 # Mahj Matchmaker release calendar
 
-Updated 2026-10-28T13:55:00Z from brand sites, the Sunday release schedule, brand Instagram feeds (Planoly) and Gmail. Source of truth: `config/release-calendar.json`; regenerate with `python3 scripts/release_calendar/build_md.py`.
+Updated 2026-10-28T17:35:00Z from brand sites, the Sunday release schedule, brand Instagram feeds (Planoly) and Gmail. Source of truth: `config/release-calendar.json`; regenerate with `python3 scripts/release_calendar/build_md.py`.
 
 **Rule (Tiffany, Oct 21):** save restock content for the buying window. Don't spend a set's content before you can buy it; post 1-2 weeks before a dated restock so people pick their mat and have the code ready when it drops.
 
@@ -23,11 +23,13 @@ Updated 2026-10-28T13:55:00Z from brand sites, the Sunday release schedule, bran
 | 2026-11-01 | Charleston Mahjong Club | CMC x OTG247 collaboration | November 2026 | no | yes | Log; no details yet. |
 | 2026-11-02 | Oh My Mahjong | IMC 2027 preorder | 2026-11-02 | no | yes | Accessory; story mention only. |
 | 2026-11-05 | Let's Mahj On | New lineup (unnamed) | 'a couple of weeks' from Oct 26 (~Nov 9) | no | yes | Log. |
+| 2026-11-06 | Mahj Mood | Playing for Keeps (Valentine's) tile set preorder $390 + Valentine's mat at launch; transparent pink racks coming soon | 2026-11-06 10:00 | no | yes | Holiday (Valentine) set, no album. Log; revisit near Valentine's content. |
 | 2026-11-16 to 2026-11-30 | Sunday Mahjong | Sunday Blues tiles | around Thanksgiving (Nov 26, 2026), limited, no preorder | Sunday Blues | no | Hold Sunday Blues album content. Tease once Sunday emails the date (expect the week of Nov 16-23); 'pick your mat' post 1-2 days before; launch-day story. Limited + no preorder = short window. No code (non-partner): plug partner mats/racks from the album instead. |
 | 2026-11-16 | Bam Bird Boutique | Deco Indigo tiles | mid to late November | no | yes | Watch. |
 | 2026-11-16 | Mahj Mood | 90s, Mauve-Blush, White Pearl (Radiant Mood) preorder tiles ship | ships late November | no | yes | Watch. |
 | 2026-11-16 | Britt Mills | Isla, Novella, Enchanted neoprene mats (preorders) | ship late November | Novella/Enchanted (material twins) | yes | Preorder is open now: a 'preorder before they ship' story is fine any time. |
 | 2026-11-20 to 2026-11-27 | Miss Mahjong | Jade and Brass acrylic racks | ETA week of Nov 24, 2026 | Jade (rack pairing) | yes | Small follow-up for Jade buyers ~Nov 20 ('the racks are coming back too'), then a story when live. Thanksgiving week: keep it short. |
+| 2026-11-20 | Mahj Mood | Lake Day tile set preorder $390 + Lake Day mat + transparent blue racks | 2026-11-20 10:00 | no | yes | No album. Log. |
 | 2026-11-23 | Sunday Mahjong | December 1994 tiles (Christmas) | preorders deliver November; leftovers listed late Nov/early Dec | no | no | Holiday content: holiday mat matches post when leftovers list (holiday mats only; never single-colour). |
 | 2026-11-30 to 2026-12-04 | Miss Mahjong | Hallmark x Miss Mahjong Miss Heirloom bundle (final restock) | early December (ETA Dec 2, 2026) | no | yes | Gift-guide mention only (no album). |
 
@@ -59,8 +61,10 @@ Updated 2026-10-28T13:55:00Z from brand sites, the Sunday release schedule, bran
 | Lucky Bam | The Mat & Rack Event, 25% off select mats and racks | sale | starts Thu Oct 29 (limited time) | no | no | Log (not a watched partner). | Lucky Bam email Oct 28 9:04am ET |
 | Mahj Mood | 20in Clear Racks restock + 8 pusher add-ons (Pearl pink/purple/light blue/light green; Scalloped Malachite/Blue Agate/Tortoise/White) | restock | 2026-10-23 10:00 | rack pairings (Malachite pushers) | yes | Story Oct 22 (tomorrow!) + drop-day story Oct 23 with code. Malachite pusher = small nod to Malachite owners only. | [Affiliate email Oct 20 + IG Oct 20-21](https://www.instagram.com/p/DeubsdRsjTR/) |
 | Mahj Mood | Luxe Jade racks launch; Amethyst restock | launch | 2026-10-30 10:00 | Jade/Malachite rack pairing | yes | Public now, OK to mention. Racks: Jade album rack pairing; no frames. | [Affiliate-only email Oct 20 (NOT public)](https://www.instagram.com/reel/DfAPQ02RMmv/) |
+| Mahj Mood | Playing for Keeps (Valentine's) tile set preorder $390 + Valentine's mat at launch; transparent pink racks coming soon | preorder | 2026-11-06 10:00 | no | yes | Holiday (Valentine) set, no album. Log; revisit near Valentine's content. | [Mahj Mood affiliate email Oct 28 12:26pm ET](https://mail.google.com/mail/?authuser=mahjmatchmaker@gmail.com#all/thread-f:1880311529352408712) |
 | Mahj Mood | 90s, Mauve-Blush, White Pearl (Radiant Mood) preorder tiles ship | preorder | ships late November | no | yes | Watch. | [Product titles 'Pre-Order, Ships Late November'](https://mahjmood.com/collections/new-arrivals) |
-| Mahj Mood | Pipeline: Plot Twist, Lake Day, Mahj Manor, Playing for Keeps, Fore the Girls, Summer/Mediterranean tiles, 2nd Radiant Mood colorway, 6 fall/winter wood rack colors | launch | no dates | no | yes | DO NOT POST. Watch. | Affiliate-only email Oct 20 (NOT public) |
+| Mahj Mood | Lake Day tile set preorder $390 + Lake Day mat + transparent blue racks | preorder | 2026-11-20 10:00 | no | yes | No album. Log. | [Mahj Mood affiliate email Oct 28 12:26pm ET](https://mail.google.com/mail/?authuser=mahjmatchmaker@gmail.com#all/thread-f:1880311529352408712) |
+| Mahj Mood | Pipeline: Plot Twist, Mahj Manor, Fore the Girls, Summer/Mediterranean tiles, 2nd Radiant Mood colorway, 6 fall/winter wood rack colors | launch | no dates | no | yes | DO NOT POST. Watch. Oct 28: Playing for Keeps + Lake Day now dated (own rows). | Affiliate-only email Oct 20 (NOT public) |
 | Mahjong Row & Co. | Fall collection: Brunette Burl tile set (fox Joker) + botanical tile set + new mats | launch | 'coming soon' (shoot day Oct 20, Christmas tree in set) | no | yes | Top earner brand: build swipe books as soon as product pages appear; post launch day. | [IG Sep 11, Sep 22, Oct 20](https://www.instagram.com/p/Ddm1P_ug1Rm/) |
 | Mahjong Row & Co. | Rosy tile set + Ellington mat (made to pair) | launch | coming soon (IG Oct 26, no date) | no | yes | Watch for date; brand pairs them itself. | [IG Oct 26](https://www.instagram.com/reel/De-ToGKJ6rV/) |
 | Middle & Main | Barrier Island tiles (+ Tidal Trio) backorder | restock | 2026-10-28 | no | yes | No album. Log; story only if a pairing fits. | [M&M IG Oct 28](https://www.instagram.com/p/DfCLWe9BT2z/) |
