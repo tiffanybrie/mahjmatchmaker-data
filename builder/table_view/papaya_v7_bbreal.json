@@ -1,0 +1,24 @@
+{
+ "mat": "assets/table-view/src/mm-fruit-stand-overhead-photo.jpg",
+ "mat_in": 36,
+ "rack": "assets/table-view/src/bb-real/bb-lavender-rack-pusher-overhead.png",
+ "rack_in": 20.0,
+ "rack_edge_in": {
+  "N": 0.55,
+  "S": 1.25,
+  "E": 0.85,
+  "W": 0.8
+ },
+ "back_photo": "assets/table-view/src/omm-papaya-back-photo.png",
+ "tile_in": [
+  0.87,
+  1.25
+ ],
+ "tiles_photo": "assets/tiles/album/papaya-spritz.jpg",
+ "label": "Papaya Spritz on M&M Fruit Stand (real mat photo)\nReal overhead B&B rack + scalloped pusher (Emily's Canva p.100), recoloured Lavender",
+ "rack_shift_in": {},
+ "mat_px": 3000,
+ "vary": 0.02,
+ "pitch": 0.975,
+ "rack_keep_aspect": true
+}

@@ -84,7 +84,7 @@ def sprite(vertical_wall):
 # ---- racks ----
 rack = Image.open(cfg['rack']).convert('RGBA')
 RL = cfg.get('rack_in', 22.5)
-RD = min(max(RL * rack.height / rack.width, 2.2), 2.9)
+RD = (RL * rack.height / rack.width) if cfg.get('rack_keep_aspect') else min(max(RL * rack.height / rack.width, 2.2), 2.9)  # v7: rack+pusher composite keeps its real depth
 rk = rack.resize((round(RL * PPI), round(RD * PPI)), Image.LANCZOS)
 E_ = cfg.get('rack_edge_in', 1.4); EDG = E_ if isinstance(E_, dict) else {k: E_ for k in 'NSEW'}
 OFF = cfg.get('rack_shift_in', {})
