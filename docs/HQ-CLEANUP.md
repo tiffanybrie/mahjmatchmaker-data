@@ -104,3 +104,5 @@ Failure that triggered this: the "Launch email: type your footer mailing address
 5. **Quick answers:** cards she can finish in ~10 seconds (paste a link, type amounts, keep/cancel, pick A/B/C) get `quick: true`; HQ lists them first under "Quick answers".
 6. **Every review card shows the thing:** set `img` (a jsDelivr-pinned image or contact sheet) so she sees it inline. Never ask her to find files by repo path.
 7. Log before/after counts AND list each archived card id + reason in the log detail, so she can see the cleanup actually happened.
+8. **Ready to Ship gets every item that is one step from done** (an album waiting only on her card order, a page waiting on one yes). Not just yes/no drafts. Check hq/albums + needs for "order", "final look", "yes" items daily and make sure each has a Ready to Ship entry (NOW list) with the thing shown inline.
+9. **Restock/launch cards expire the same day.** If a restock card is still open the next day, check stock: sold out or a day passed = archive ("too late"), never re-surface it.
