@@ -612,3 +612,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - 2026-10-28 15:14 (Main) Tiffany: pair mat rule refined: single feature -> skip the pair mat (obvious); group of ~6 -> include it (don't disrespect the tile brand by leaving out its #1 mat). docs/PICKING-RULES.md updated.
 - 2026-10-28 15:14 (Main) Tiffany: analyse her top 3-6 per album; #1-3 strongest, 3-6 good, below that looser. Added to PICKING-RULES.
 - 2026-10-28 15:15 (Main) Tiffany: pair mat can go in a group of 3+; it's only single features that skip it; Claude can ask her specifically.
+- 2026-10-28 15:17 (Main) Tiffany: the Raven piece needed NO storyboard: 'mood board reel' = her Canva template 'How I'm Styling: Heron Mat' (Claude filled copies before, e.g. Coquette era; she fixed image drops; wiggle animation is hers). Fixed templates = just fill and show. Glossary started: docs/CONTENT-GLOSSARY.md.
