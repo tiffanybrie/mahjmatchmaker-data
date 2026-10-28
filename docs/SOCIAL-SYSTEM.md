@@ -33,3 +33,6 @@ Every Monday: per post, follows + profile visits (+ shares). Drop formats that e
 
 ## Later (not public yet)
 Restock page on the site ("we keep tabs on partner restocks in one place") + FB group posts, only once partner watch is reliably AHEAD of restocks.
+
+## Picking a brand's next album / feature (Oct 28 3:18pm)
+Start from best-sellers AND what the brand is excited about now (recent posts, seasonal push, upcoming launches). Piggyback their content so it's shareable and relevant to THEM: the brand sharing is our biggest source of eyeballs.
