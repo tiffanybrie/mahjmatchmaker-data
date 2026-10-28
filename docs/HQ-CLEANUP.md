@@ -106,3 +106,5 @@ Failure that triggered this: the "Launch email: type your footer mailing address
 7. Log before/after counts AND list each archived card id + reason in the log detail, so she can see the cleanup actually happened.
 8. **Ready to Ship gets every item that is one step from done** (an album waiting only on her card order, a page waiting on one yes). Not just yes/no drafts. Check hq/albums + needs for "order", "final look", "yes" items daily and make sure each has a Ready to Ship entry (NOW list) with the thing shown inline.
 9. **Restock/launch cards expire the same day.** If a restock card is still open the next day, check stock: sold out or a day passed = archive ("too late"), never re-surface it.
+
+10. (Oct 27 10pm, Tiffany) The SOCIAL PLAN always lives in HQ's Social tab: hq/social.plan = [{day, today, posts:[{time, where, what, detail, status, you}]}], status = needs-you | ready | making | scheduled | posted | claude | dropped. Every cleanup run refreshes it: drop past days, mark posted/scheduled from Planoly, add the next days. Never leave the tab empty or out of date.
