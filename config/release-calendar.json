@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-27T22:40:00Z",
-  "updatedBy": "partner watch Oct 27 6:40pm ET",
+  "updated": "2026-10-28T13:55:00Z",
+  "updatedBy": "partner watch Oct 28 9:55am ET",
   "rules": {
     "timing": {
       "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -387,7 +387,7 @@
       "affiliate": true,
       "priority": 2,
       "contentTiming": "Good window to push OMM album sets that are in stock (20% commission ends Nov 25).",
-      "status": "LIVE for mentors Oct 27; IG reels Oct 27 'up to 70% off', online only"
+      "status": "LIVE for mentors Oct 27; PUBLIC LIVE Wed Oct 28 10am CT (online only, up to 70% off), ends Sun Nov 1"
     },
     {
       "id": "bbb-deco-restock",
@@ -827,6 +827,50 @@
       "affiliate": true,
       "priority": 3,
       "contentTiming": "Log."
+    },
+    {
+      "id": "plm-merry-nutcracker-restock",
+      "brand": "Peace Love Mahjong",
+      "product": "Merry Nutcracker Holiday Mahjong Tiles Set + Pouch + Dice",
+      "type": "restock",
+      "date": "2026-10-27",
+      "status": "LIVE Oct 27 (IG 'BACK IN STOCK!' 7:21pm ET; site available=true Oct 28, $300)",
+      "source": "PLM IG Oct 27",
+      "sourceUrl": "https://www.instagram.com/p/DfBBojrGrgK/",
+      "album": false,
+      "affiliate": true,
+      "priority": 2,
+      "contentTiming": "Holiday tile set, no album: holiday mats only; holiday social starts Nov 1 (Planoly). Log."
+    },
+    {
+      "id": "mm-barrier-island-backorder",
+      "brand": "Middle & Main",
+      "product": "Barrier Island tiles (+ Tidal Trio) backorder",
+      "type": "restock",
+      "date": "2026-10-28",
+      "status": "LIVE Oct 28 as BACKORDER (site: tiles $325, Tidal Trio $400, orderable; ships with priority)",
+      "source": "M&M IG Oct 28",
+      "sourceUrl": "https://www.instagram.com/p/DfCLWe9BT2z/",
+      "album": false,
+      "affiliate": true,
+      "priority": 3,
+      "contentTiming": "No album. Log; story only if a pairing fits."
+    },
+    {
+      "id": "luckybam-mat-rack-event",
+      "brand": "Lucky Bam",
+      "product": "The Mat & Rack Event, 25% off select mats and racks",
+      "type": "sale",
+      "window": "starts Thu Oct 29 (limited time)",
+      "windowStart": "2026-10-29",
+      "windowEnd": null,
+      "status": "announced (email Oct 28)",
+      "source": "Lucky Bam email Oct 28 9:04am ET",
+      "sourceUrl": "",
+      "album": false,
+      "affiliate": false,
+      "priority": 3,
+      "contentTiming": "Log (not a watched partner)."
     }
   ],
   "sources": {
