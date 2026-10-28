@@ -4,13 +4,16 @@ Sources: docs/research/holiday-stock-oct28.md, docs/research/next-albums-oct28.m
 | Week | Holiday / gift content | Album (swipe book -> release) |
 |---|---|---|
 | Thu Oct 29 - Sat Oct 31 | Thu: Night of the Raven mood board reel. Sat: Happy Halloween story | Fri: Brownstone Bloom release (Anders Ruff) |
-| Nov 2-8 | Mon: MERRY MAHJONG kickoff (11 Christmas albums, 105 holiday mats, 12 holiday tile sets; FYM holiday flow). Tue-Thu: Anders Ruff Christmas series #1: every AR Christmas mat on Dear Santa (preorder now, mats ship Nov 17) + B&B wood racks tie-in | Swipe books: Bam Bird DECO TRIO (Lagoon, Mulberry, Indigo; Lagoon started in Canva 'PATTERNED Tile + Mat Combos') + My Fair Mahjong STYLE OF YOUR LIFE |
-| Nov 9-15 | AR #2: "preorder before Nov 17" reminder. Hip Hip Rackin' Rudolph mood board reel (all in stock). Bam! Let's Mahjong Holly Jolly (ShopMy link) | Release Style of Your Life. Deco trio finished + held for the Indigo restock |
-| Nov 16-22 | Nutcracker week: Mahj Squad Nutcracker + PLM Merry Nutcracker tiles; PLM holiday mats photo dump (14 in stock); Charleston Après Ski (ShopMy link) | Deco trio releases the day Indigo restocks (mid/late Nov; restock watch alerts same day). Swipe book: Middle & Main PEACH AND PINE (not Barrier Island: too summery) |
-| Nov 23-29 (Thanksgiving) | Black Friday: partner sales + code roundup (IG + FB group); Dear Santa ships end of Nov; Sunday Blues restock day (~Thanksgiving) | Release Peach and Pine |
-| Nov 30 - Dec 6 | Cyber Monday roundup. GIFT GUIDE #1 (hostess gifts, stocking stuffers, under $50, from ShopMy) | Swipe book: Sunday Blues (restock ~Thanksgiving) or Mahjong Row fall collection if it dropped |
+| Nov 2-8 | Mon: MERRY MAHJONG kickoff (11 Christmas albums, 105 holiday mats, 12 holiday tile sets; FYM holiday flow). Tue-Thu: Anders Ruff Christmas series #1: every AR Christmas mat on Dear Santa (preorder now, mats ship Nov 17) + B&B wood racks tie-in | Swipe book: My Fair Mahjong STYLE OF YOUR LIFE (first: top affiliate, no album) |
+| Nov 9-15 | AR #2: "preorder before Nov 17" reminder. Hip Hip Rackin' Rudolph mood board reel (all in stock). Bam! Let's Mahjong Holly Jolly (ShopMy link) | Release Style of Your Life. Swipe books: Bam Bird DECO trio, INDIGO first, then Mulberry + Lagoon (held for the Indigo restock) |
+| Nov 16-22 | Nutcracker week: Mahj Squad Nutcracker + PLM Merry Nutcracker tiles; PLM holiday mats photo dump (14 in stock); Charleston Après Ski (ShopMy link) | Deco trio releases the day Indigo restocks (mid/late Nov). Swipe book: Sunday BLUES (restock ~Thanksgiving) (not Barrier Island: too summery) |
+| Nov 23-29 (Thanksgiving) | Black Friday: partner sales + code roundup (IG + FB group); Dear Santa ships end of Nov; Sunday Blues restock day (~Thanksgiving) | Release Sunday Blues on its restock day |
+| Nov 30 - Dec 6 | Cyber Monday roundup. GIFT GUIDE #1 (hostess gifts, stocking stuffers, under $50, from ShopMy) | Swipe book: Sunday NATURE WALK (burgundy holiday tile; larger restock early Jan). TORTOISE RACK guide (Middle & Main best value) also due |
 | Dec 7-13 | GIFT GUIDE #2 (for the new player / for the collector). "Order by" reminders per brand (check cutoffs). Holiday table mood boards | Release that album. Mac + Miller Verdant waits for clean (non-watermarked) photos |
 | Dec 14-20 | Last-minute gifts (in-stock, fast-ship, gift cards). Then shift to New Year / new sets | MFM Park Series (mint relaunch) swipe book |
 
 Wildcards: Mahjong Row & Co. fall collection jumps the album queue the day it drops; OMM releases get their row as they land.
 Rules: storyboard only for NEW formats (fixed Canva templates just get filled); rotate formats week to week; music shortlist with every reel.
+
+After these: Middle & Main Peach and Pine, Mac + Miller Verdant. Mahjong Row fall collection + OMM releases jump the line.
+OVERDUE: the big TORTOISE RACK piece (Middle & Main tortoise is her top; doc 55). Schedule it in November (also a gift-guide tie-in).
