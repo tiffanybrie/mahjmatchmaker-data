@@ -36,3 +36,6 @@ Restock page on the site ("we keep tabs on partner restocks in one place") + FB 
 
 ## Picking a brand's next album / feature (Oct 28 3:18pm)
 Start from best-sellers AND what the brand is excited about now (recent posts, seasonal push, upcoming launches). Piggyback their content so it's shareable and relevant to THEM: the brand sharing is our biggest source of eyeballs.
+
+## Restock-first rule (Oct 28 3:27pm)
+A known upcoming restock moves that set to the FRONT: build the album(s) now so they're ready to post the day it restocks. Example: Bam Bird Deco trio (Lagoon, Mulberry, Indigo) released together on the Indigo restock.
