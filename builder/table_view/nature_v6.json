@@ -1,0 +1,25 @@
+{
+ "mat": "assets/table-view/src/sunday-rattan-overhead-photo.jpg",
+ "mat_in": 33,
+ "treat_art": false,
+ "rack": "assets/racks/card/bam-bird-boutique-walnut.png",
+ "rack_in": 20.0,
+ "rack_edge_in": 1.0,
+ "back_photo": "assets/table-view/src/omm-papaya-back-photo.png",
+ "recolour": [
+  78,
+  20,
+  30
+ ],
+ "tile_in": [
+  1.0,
+  1.5
+ ],
+ "tiles_photo": "assets/tiles/album/nature-walk.png",
+ "label": "Nature Walk (Sunday Mahjong) on Sunday Rattan: real photo of the mat\nTile backs: real back photo recoloured to cabernet \u00b7 20-inch Bam! Bird walnut racks",
+ "mat_px": 3000,
+ "pitch": 0.975,
+ "vary": 0.02,
+ "recolour_gamma": 1.35,
+ "recolour_hi": 1.0
+}
