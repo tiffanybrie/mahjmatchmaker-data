@@ -1,0 +1,20 @@
+{
+  "_note": "Checked by the partner watch (3x daily). Sold out is NEVER permanent (Tiffany Oct 28 3:21pm): re-check every run; when an item flips to available, act SAME DAY. 'personal': true = Tiffany wants to BUY it: message her right away (first line: '<item> is back in stock: <link>'). Remove an item once it's back and handled.",
+  "updated": "2026-10-28",
+  "items": [
+    {"brand": "Sunday Mahjong", "item": "Festive Plaid Premium mat", "site": "sundaymahjong.com", "find": "festive plaid", "personal": true, "why": "Tiffany wants to buy it; expected to sell out fast"},
+    {"brand": "Sunday Mahjong", "item": "Rattan Premium mat (works for holiday)", "site": "sundaymahjong.com", "find": "rattan"},
+    {"brand": "Sunday Mahjong", "item": "December 1994 tiles (leftovers late Nov-early Dec)", "site": "sundaymahjong.com", "find": "december 1994"},
+    {"brand": "Britt Mills", "item": "Merrywood neoprene mat", "site": "brittmills.com", "find": "merrywood"},
+    {"brand": "Britt Mills", "item": "Nutcracker neoprene mat", "site": "brittmills.com", "find": "nutcracker"},
+    {"brand": "Britt Mills", "item": "Winter Berry neoprene mat", "site": "brittmills.com", "find": "winter berry"},
+    {"brand": "Mahj Mood", "item": "Sleigh All Day mat", "find": "sleigh all day"},
+    {"brand": "Mahj Squad", "item": "Candy Cane Pink Wonderland mat", "find": "candy cane pink"},
+    {"brand": "Mahjong Register", "item": "Holly Jolly Double-Sided Leatherette mat", "find": "holly jolly"},
+    {"brand": "Virora", "item": "Tinselle Emerald Green tiles", "find": "tinselle"},
+    {"brand": "Bird & Bamboo", "item": "21in wood rack set", "find": "21"}
+  ],
+  "retired_watch": [
+    {"brand": "Oh My Mahjong", "item": "Dapper 2 mat", "note": "Product page 404 Oct 28; likely cleared in OMM's warehouse sale. If confirmed gone: mark retired per doc 90 (retired vs sold out), and find a masculine replacement mat for the works-for-holiday list (Tiffany: none of OMM's other mats are as fully masculine)."}
+  ]
+}
