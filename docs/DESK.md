@@ -125,4 +125,4 @@ Find Your Mat-ch™ launched (live ~1:25am Oct 27, Version 1.5 on the site since
 
 See CLAUDE.md.
 
-- **Main, Oct 27 10pm (open tonight):** (1) Fix the FB group Find Your Mat-ch post to "live now" (her yes, tonight; needs a browser). (2) Planoly cleanup (stale Oct 21 reminder + old drafts; she can't tell where to look). (3) Draft the FB group Bird & Bamboo stained wood racks post for her look (approved). (4) Malachite reel v2 sent in chat; on her yes → Planoly IG reel ~12pm Oct 28 (collab @missmahjongofficial, tall cover) + FB Page copy.
+- **Main, Oct 27 10pm (open tonight):** (1) DONE 10:20pm: FB group FYM post says LIVE. (2) Planoly cleanup (stale Oct 21 reminder + old drafts; she can't tell where to look). (3) Draft the FB group Bird & Bamboo stained wood racks post for her look (approved). (4) Malachite reel v2 sent in chat; on her yes → Planoly IG reel ~12pm Oct 28 (collab @missmahjongofficial, tall cover) + FB Page copy.
