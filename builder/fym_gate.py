@@ -1226,6 +1226,17 @@ try:
         if _miss100: F.append(f"[100] {len(_miss100)} full-size partner mats live > 2 days are not in FYM (add them, or list them with a reason in config/partner-mat-sweep-ignore.json): " + '; '.join(_miss100[:12]))
         if _err100: W97.append(f"[100] partner stores the last sweep could not read (not checked): " + '; '.join(_err100))
 except Exception as _e: F.append(f"[100] missing partner mat check did not run: {_e}")
+# [102] Oct 29 (Tiffany 12:09/12:11pm): Aerial switch sits next to the deck in BOTH doors; the tile photo in Aerial is a
+# bottom-right inset (never centred over the mat); Shop by brand in BOTH doors says who takes MAHJMATCH and who has no discount.
+try:
+    _h102 = open(os.path.join(B, 'index.html')).read()
+    if 'const VROW=' not in _h102 or _h102.count('VROW()') < 3: F.append("[102] Up close / Aerial switch is not next to the deck in both doors (VROW missing)")
+    _om = re.search(r'\.onmat\{([^}]*)\}', _h102)
+    if not _om or 'translate(-50%' in _om.group(1) or 'right:' not in _om.group(1): F.append("[102] Aerial tile photo is centred over the mat (must be a bottom-right inset)")
+    if "matSrc(S.dmat)}\" alt=\"${esc(MN(S.dmat))} mat\" class=\"tkm\"" not in _h102: F.append("[102] start-with-a-mat side has no Aerial view (mat full, tiles inset)")
+    if 'save 10% or more with code MAHJMATCH' not in _h102 or 'no discount available' not in _h102: F.append("[102] Shop by brand does not label partner (code) vs non-partner (no discount) brands")
+    if "bselect('mbr'" not in _h102 or 'matBrandMenu()+' not in _h102: F.append("[102] start-with-a-mat side has no Shop by brand dropdown")
+except Exception as _e: F.append(f"[102] aerial/brand check did not run: {_e}")
 if W97:
     print("FYM GATE WARNINGS (v97):")
     for _w in W97: print('  ' + _w)
