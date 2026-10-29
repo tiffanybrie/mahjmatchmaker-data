@@ -20,8 +20,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CDN = 'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@'
 ASSET = CDN + '44563dd1c2c4d9a00aa3deec61b1d86ccfdbcaf8/assets/site/fym-page/'
 WORDMARK = CDN + '8952b136784680ba365a33d7ae13ba91a25ab561/assets/brand/mahjmatchmaker-wordmark-notag.png'
-APP_COMMIT = '349b4a7346501961323dc675df1bcd3b5f4b5728'
-APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v102/index.html'  # public 'Version 1.6' = internal v102 (Oct 29: View switch by the deck, bottom-right tile inset, mat-door Aerial + Shop by brand with discount labels). Before: 'Version 1.5' = internal v101 (Oct 27 ~4am: missing partner mats added (Britt Mills House Print + leatherettes, TdT, Bespoke x Brooks Brothers, PLM vegan leather), Spirit of Christmas tiles (sold out); on top of 1.4)
+APP_COMMIT = '9aad4fcd8f62bdf8e9dc1ed7ce6fbc5e96237245'
+APP_INDEX = CDN + APP_COMMIT + '/site-app/fym-v103/index.html'  # public 'Version 1.7' = internal v103 (Oct 29 pm: pink Shop by brand feature box, card titles = tile back colour, fill-frame Hummingbird). Before: public 'Version 1.6' = internal v102 (Oct 29: View switch by the deck, bottom-right tile inset, mat-door Aerial + Shop by brand with discount labels). Before: 'Version 1.5' = internal v101 (Oct 27 ~4am: missing partner mats added (Britt Mills House Print + leatherettes, TdT, Bespoke x Brooks Brothers, PLM vegan leather), Spirit of Christmas tiles (sold out); on top of 1.4)
 APP_BASE = CDN + 'ad0675e42242c3abad40cac9f539a265220e26eb' + '/site-app/fym-v72/'  # every file but index.html is unchanged since v72; base stays on the v72 commit (warmed; jsDelivr 403'd t15/132.jpg at the new commit)
 
 # Oct 21 3:13pm (Tiffany): the tool's promo SHOWS THE TOOL. Hero = real v69 app screens in a true-proportion iPhone
