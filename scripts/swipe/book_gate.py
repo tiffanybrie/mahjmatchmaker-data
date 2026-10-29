@@ -92,6 +92,16 @@ def gate(path, snap_path=None):
             it = items.get(i)
             if not it:
                 continue
+            # NARROW EXCEPTION (Tiffany Oct 29 1:18pm + 1:20pm, docs/ANSWERS.md): TNT recs she asked to SEE that are not in
+            # FYM -- non-partner brands (np) or retired partner mats with no FYM photo (ret) -- may use the brand's own
+            # product photo / a found retired image (item.src) instead of an FYM key/photo. They must be tnt:true, carry
+            # src, be labelled 'TNT rec · ...' and not be holiday. Everything else stays enforced.
+            if it.get('tnt') and (it.get('np') or it.get('ret')) and it.get('src'):
+                if not (it.get('label') or '').startswith('TNT rec · '):
+                    F.append(f"[b] {g.get('label', gid)} · {it.get('label', i)}: TNT exception item not labelled 'TNT rec · ...'")
+                if HOLIDAY.search(it.get('label') or ''):
+                    F.append(f"[d] {g.get('label', gid)} · {it.get('label', i)}: holiday")
+                continue
             key = it.get('key')
             if not key or key not in snap:
                 F.append(f"[c] {g.get('label', gid)} · {it.get('label', i)}: no FYM key (item.key) in the FYM snapshot"); continue

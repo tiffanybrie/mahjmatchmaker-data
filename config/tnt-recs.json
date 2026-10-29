@@ -58,7 +58,7 @@
     {
      "mat": "Bluest Blooms",
      "brand": "Tigre de Tartán",
-     "note": "not in FYM"
+     "note": "= retired Holy Mahj (alb2:tigre-de-tartan-holy-mahj, hidden in FYM, placeholder photo); in book as ret item, partial album-card crop assets/mats/retired-found/tigre-de-tartan--holy-mahj-partial.jpg"
     },
     {
      "mat": "Brown Vegan Leather",
@@ -106,12 +106,12 @@
     {
      "mat": "Mirage (retired)",
      "brand": "Oh My Mahjong",
-     "note": "retired album mat (alb:), no FYM photo"
+     "fym_key": "alb:amara:Mirage"
     },
     {
      "mat": "Amethyst (retired)",
      "brand": "Oh My Mahjong",
-     "note": "retired album mat (alb:), no FYM photo"
+     "fym_key": "alb:emerald:Amethyst"
     },
     {
      "mat": "Scalloped Hunter Green",
@@ -142,7 +142,7 @@
     {
      "mat": "Blonde Caned",
      "brand": "Tigre de Tartán",
-     "note": "not in FYM"
+     "fym_key": "tigredetartan.com/mahjong-mat-cannage-blonde-rules-edition"
     },
     {
      "mat": "French Mural",
