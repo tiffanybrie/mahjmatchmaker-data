@@ -165,7 +165,7 @@ if not ms or "M[id].rt?" not in ms.group(0) or 'Retired' not in ms.group(0):
 # 4. wording (UI text only; product names inside D, CSS and code comments are exempt)
 TXT = re.sub(r'<style>.*?</style>', ' ', UI, flags=re.S); TXT = re.sub(r'/\*.*?\*/', ' ', TXT, flags=re.S)
 for pat, why in ((r'(?<!Color )(?<!Pearl )\b[Cc]rush\b', 'crush'), (r'\bCRUSH\b', 'CRUSH'), (r'(?i)\bnope\b', 'nope'), (r'Pick your crush', 'Pick your crush'),
-                 (r'(?i)[>\'"`\s]pass[<\'"`\s,.!]|\bto pass\b|aria-label="Pass"', 'pass'), (r'(?i)save 10%', 'hard-coded 10%')):
+                 (r'(?i)[>\'"`\s]pass[<\'"`\s,.!]|\bto pass\b|aria-label="Pass"', 'pass'), (r'(?i)save 10%(?! or more)', 'hard-coded 10%')):  # Oct 29 Tiffany 12:11pm: the generic "save 10% or more with code MAHJMATCH" on partner brands is her wording; a bare/brand-specific % is still banned
     for m in re.finditer(pat, TXT):
         F.append(f"[4] UI text contains {why!r}: ...{TXT[max(0, m.start()-50):m.end()+30]!r}")
 # 5. colour-dot selector
