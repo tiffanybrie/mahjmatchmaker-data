@@ -111,3 +111,6 @@ Failure that triggered this: the "Launch email: type your footer mailing address
 
 ## Oct 29 rule: DECIDED BUT NEVER SHIPPED sweep (Tiffany 12:33pm: "Why do things keep falling on the floor?")
 Every run (morning cleanup AND the 9:23pm desk cleanup): read docs/ANSWERS.md for the last 14 days. For every line where she decided/approved/asked for something to be BUILT or PUBLISHED, check for proof it shipped (live URL curl, commit, HQ done). If there is none and it is older than 3 days, put it on the DESK top list with an OWNER chat and a real DATE (never "next week" / "later" without a date), and on HQ only as "overdue, Claude's job". Items parked with no date are not allowed. First catch: the footer Brands link + /brands form + /work-with-us page (decided Oct 19 + Oct 24, never built).
+
+## Oct 29 rule: NO ANSWER IS NOT A NO (Tiffany 1:08pm: "Not getting my yes is not an indicator that I don't want it done")
+Never archive or park an item because she did not answer. Unanswered asks older than 2 days go back on HQ Today as one quick line with the default Claude would pick; reversible on-brand steps go ahead with that default (tell her). Only her explicit "no" / "skip" closes an ask.
