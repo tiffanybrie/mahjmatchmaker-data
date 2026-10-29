@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+"""Export a slim snapshot of the live Find Your Mat-ch mats for book_gate.py.
+Usage: python3 scripts/swipe/fym_snapshot.py <FYM index.html (published artifact copy)> [out=config/fym-mats-snapshot.json]
+Run after every FYM publish (the gate refuses books against a snapshot older than the FYM version they were built from)."""
+import sys, json, os, datetime
+src = sys.argv[1]; out = sys.argv[2] if len(sys.argv) > 2 else os.path.join(os.path.dirname(__file__), '..', '..', 'config', 'fym-mats-snapshot.json')
+h = open(src).read(); i = h.index('const D={') + 8
+D, _ = json.JSONDecoder().raw_decode(h[i:])
+M = {k: {'n': m.get('n'), 'bn': m.get('bn'), 'hol': bool(m.get('hol')), 'hid': bool(m.get('hid')), 'pa': bool(m.get('pa')),
+         'nc': bool(m.get('nc')), 'f': m.get('f'), 'mf': m.get('mf') or []} for k, m in D['mats'].items()}
+json.dump({'_about': 'Slim FYM mats snapshot for scripts/swipe/book_gate.py (fym_snapshot.py).', 'built': datetime.date.today().isoformat(),
+           'source': os.path.basename(src), 'mats': M}, open(out, 'w'), ensure_ascii=False, separators=(',', ':'))
+print('mats', len(M), '->', out)

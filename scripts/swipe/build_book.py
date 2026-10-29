@@ -17,6 +17,9 @@ Rules (Tiffany, Oct 14-15; project doc 51):
      vetted, matched by similarity), trimmed to the mat edge (no white margin),
      saved as its own file m/<n>.jpg at up to 1600px. No data URIs, no 288/520px.
   4. Tile pile = the album tile shot from assets/tiles/album/ (never a product photo).
+  6. GATE (Oct 29): scripts/swipe/book_gate.py must pass (colour card, TNT recs first, FYM photos, no holiday/hidden/
+     skip/Mahjong Studios/Splash, widest pool: spec "pool_src":"fym-full-measured","pool_n":<ranked>). Failing books
+     are renamed index.BLOCKED.html.
   5. Card = the holiday-studio card: mat fills the card, pile inset lower right,
      zoom scales mat + pile together. Done button via finish_patch.py.
 
@@ -145,7 +148,7 @@ def main(spec_path, out):
         if it.get("file"):  # hand-kept clean photo (retired OMM mats, Squarespace brands, her cutouts)
             im = trim(Image.open(it["file"]).convert("RGB")); im.thumbnail((1600, 1600))
             fn = f"m/{n}.jpg"; im.save(os.path.join(out, fn), "JPEG", quality=86)
-            items.append({"id": it["id"], "label": it["label"], "img": fn, "url": it.get("url", ""), "w": im.width, "h": im.height})
+            items.append({"id": it["id"], "label": it["label"], "img": fn, "url": it.get("url", ""), "w": im.width, "h": im.height, "key": it.get("key"), "ph": "canon-override"})
             rep.append((it["id"], f"OK file {im.width}x{im.height}")); continue
         key = it["key"]
         m = M.get(key)
@@ -153,7 +156,7 @@ def main(spec_path, out):
             im = trim(Image.open(OVF[key]).convert("RGB")); im.thumbnail((1600, 1600))
             fn = f"m/{n}.jpg"; im.save(os.path.join(out, fn), "JPEG", quality=86)
             items.append({"id": it["id"], "label": it.get("label") or f"{m['n']} · {m['bn']}", "img": fn,
-                          "url": m.get("u", ""), "w": im.width, "h": im.height})
+                          "url": m.get("u", ""), "w": im.width, "h": im.height, "key": key, "ph": "canon-override"})
             rep.append((it["id"], f"OK override file {im.width}x{im.height}")); continue
         if not m or key.startswith("alb:"):
             rep.append((it["id"], "SKIP not in vetted catalog"));
@@ -177,7 +180,8 @@ def main(spec_path, out):
         fn = f"m/{n}.jpg"
         im.convert("RGB").save(os.path.join(out, fn), "JPEG", quality=86)
         items.append({"id": it["id"], "label": it.get("label") or f"{m['n']} · {m['bn']}", "img": fn,
-                      "url": m.get("u", ""), "w": im.width, "h": im.height})
+                      "url": m.get("u", ""), "w": im.width, "h": im.height, "key": key,
+                      "ph": "fym" if how.startswith("LOWRES") else "fym-hires"})
         rep.append((it["id"], f"OK {how} {im.width}x{im.height}"))
     # pool for "+ Try another mat": the rest of the vetted catalog (catalog-size images, lazy-loaded)
     os.makedirs(out + "/p", exist_ok=True)
@@ -202,7 +206,8 @@ def main(spec_path, out):
     pile.save(out + "/t/pile.jpg", "JPEG", quality=90)
     D = {"col": S["col"], "mode": S.get("mode", "tile"), "listTitle": S["listTitle"],
          "groups": [{"id": g["id"], "label": g["label"], "sub": g["sub"], "img": "t/pile.jpg", "thumb": "t/pile.jpg"}],
-         "items": items + pool, "order": {g["id"]: [x["id"] for x in items]}, "pileShadow": True}
+         "items": items + pool, "order": {g["id"]: [x["id"] for x in items]}, "pileShadow": True,
+         "pool": {"src": S.get("pool_src", ""), "n": S.get("pool_n", 0)}}  # book_gate [e]: widest pool only
     tpl = open(S["template"]).read()
     html = tpl.replace("__DATA__", json.dumps(D, ensure_ascii=False))
     html = re.sub(r"<title>.*?</title>", f"<title>{S['title']}</title>", html, count=1)
@@ -216,6 +221,12 @@ def main(spec_path, out):
     from canon_tiles import fix_book
     fix_book(out + "/index.html")
     json.dump(rep, open(out + "/report.json", "w"), indent=0)
+    # Oct 29 (Tiffany 12:35pm): the rules are enforced here. A failing book is not written as index.html.
+    import subprocess
+    g_ = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "book_gate.py"), out + "/index.html"])
+    if g_.returncode != 0:
+        os.replace(out + "/index.html", out + "/index.BLOCKED.html")
+        sys.exit("book_gate.py FAILED: book left as index.BLOCKED.html, do not publish")
     ok = sum(1 for _, r in rep if r.startswith("OK"))
     print(f"{ok} mats in book, {len(rep) - ok} skipped")
 

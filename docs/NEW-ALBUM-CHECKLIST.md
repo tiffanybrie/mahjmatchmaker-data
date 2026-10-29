@@ -2,6 +2,7 @@
 Run this list top to bottom the day an album goes live. Every item is Claude's job unless marked YOU. Tick each one in the album's HQ Albums row (hq/albums) and log in docs/ANSWERS.md.
 
 ## 1. Before it's live
+- [ ] **Before the swipe book (code-enforced):** colour card built (config/colorcards.json / assets/colorcards/<set>/), TNT recs searched and saved in config/tnt-recs.json, book built from the WIDEST pool (full FYM catalog, measured colour shares) with FYM photos; `python3 scripts/swipe/book_gate.py <book>` = PASS (build_book.py / finish_patch.py refuse otherwise).
 - [ ] Her card order saved (order page) and her yes on the cover.
 - [ ] Album page built + warmed on jsDelivr; color card first (doc 86b).
 

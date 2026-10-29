@@ -1,0 +1,169 @@
+{
+ "_about": "Tiles & Tablescapes (TNT) + other FB group recs per tile set. scripts/swipe/book_gate.py requires a record for every tile-set group in a swipe book and that every allowed, visible, non-holiday rec with an fym_key leads the deck, labelled \"TNT rec · <mat> · brand\" (her preference). Non-partner recs not on builder/fym_flags/nonpartner_allow.json stay out until she says. Add a set here BEFORE building its book (search the group read-only).",
+ "sets": {
+  "nature-walk": {
+   "scanned": "2026-10-29",
+   "source": "docs/research/sunday-sets-colorcards-tnt-oct29.md",
+   "recs": [
+    {
+     "mat": "Winslow 1920 Noir",
+     "brand": "Ozark Mahjongg",
+     "fym_key": "ozarkmahjong.com/winslow-1920-noir-mat"
+    },
+    {
+     "mat": "Sleigh All Day",
+     "brand": "Mahj Mood",
+     "fym_key": "mahjmood.com/sleigh-all-day-mat",
+     "note": "holiday mat"
+    },
+    {
+     "mat": "cream lace mat (unnamed)",
+     "brand": "Tigre de Tartán",
+     "note": "unnamed, not matched yet"
+    },
+    {
+     "mat": "green floral mat (unnamed)",
+     "brand": "Tigre de Tartán",
+     "note": "unnamed, not matched yet"
+    }
+   ],
+   "nonpartner_out": [
+    "Mahjong by SI Brewtifully",
+    "Mahjong by SI fall lanterns mat",
+    "Haus of Tiles Dapplefield",
+    "Lemondrop Mahjong Co.",
+    "It's a Mahjong Life Lowcountry Horizon",
+    "Rack It Kyoto Dreams"
+   ]
+  },
+  "sunday-blues": {
+   "scanned": "2026-10-29",
+   "source": "docs/research/sunday-sets-colorcards-tnt-oct29.md",
+   "recs": [
+    {
+     "mat": "Heron",
+     "brand": "Oh My Mahjong",
+     "fym_key": "www.ohmymahjong.com/heron-mat-in-tube"
+    },
+    {
+     "mat": "Handbook Plaid",
+     "brand": "Tigre de Tartán",
+     "fym_key": "tigredetartan.com/mahjong-mat-handbook-plaid"
+    },
+    {
+     "mat": "Sloan Story",
+     "brand": "Tigre de Tartán",
+     "note": "not in FYM"
+    },
+    {
+     "mat": "Bluest Blooms",
+     "brand": "Tigre de Tartán",
+     "note": "not in FYM"
+    },
+    {
+     "mat": "Brown Vegan Leather",
+     "brand": "Charleston Mahjong Club",
+     "fym_key": "charlestonmahjongclub.com/new-brown-vegan-leather-mahjong-mat-w-carrying-bag-copy"
+    },
+    {
+     "mat": "Bold Blooms Premium",
+     "brand": "Sunday Mahjong",
+     "fym_key": "sundaymahjong.com/bold-blooms-premium-mahjong-mat"
+    },
+    {
+     "mat": "Golden Gingham Premium",
+     "brand": "Sunday Mahjong",
+     "fym_key": "sundaymahjong.com/golden-gingham-premium-mahjong-mat"
+    },
+    {
+     "mat": "Year of the Dragon - Periwinkle",
+     "brand": "Bespoke Mahjong",
+     "fym_key": "www.bespokemahjong.com/year-of-the-dragon-periwinkle",
+     "note": "asked about, not a tested pair"
+    },
+    {
+     "mat": "leatherette (unnamed)",
+     "brand": "Amore Mahjong",
+     "note": "not in FYM"
+    }
+   ],
+   "nonpartner_out": [
+    "Haus of Tiles (unnamed)",
+    "Mahjong Made Chic Leopard Luxe",
+    "Bougie Mahjong Linen Blossom",
+    "Silk Mahjong (unnamed)"
+   ]
+  },
+  "plum-panda": {
+   "scanned": "2026-10-29",
+   "source": "docs/research/sunday-sets-colorcards-tnt-oct29.md",
+   "recs": [
+    {
+     "mat": "Plum Panda Premium",
+     "brand": "Sunday Mahjong",
+     "fym_key": "sundaymahjong.com/plum-panda-premium-mahjong-mat"
+    },
+    {
+     "mat": "Mirage (retired)",
+     "brand": "Oh My Mahjong",
+     "note": "retired album mat (alb:), no FYM photo"
+    },
+    {
+     "mat": "Amethyst (retired)",
+     "brand": "Oh My Mahjong",
+     "note": "retired album mat (alb:), no FYM photo"
+    },
+    {
+     "mat": "Scalloped Hunter Green",
+     "brand": "Oh My Mahjong",
+     "note": "not in FYM"
+    },
+    {
+     "mat": "Summer Bloom",
+     "brand": "Fait à Main",
+     "note": "not in FYM"
+    },
+    {
+     "mat": "(unnamed)",
+     "brand": "Let's Be Besties",
+     "note": "unnamed"
+    }
+   ],
+   "nonpartner_out": [
+    "Lemondrop Sapphire Blooms",
+    "Piper Chase Studios (Etsy)",
+    "Cheetah in Bloom (brand unclear)"
+   ]
+  },
+  "hummingbird": {
+   "scanned": "2026-10-29",
+   "source": "docs/research/sunday-sets-colorcards-tnt-oct29.md",
+   "recs": [
+    {
+     "mat": "Blonde Caned",
+     "brand": "Tigre de Tartán",
+     "note": "not in FYM"
+    },
+    {
+     "mat": "French Mural",
+     "brand": "Tigre de Tartán",
+     "fym_key": "tigredetartan.com/mahjong-mat-french-mural"
+    },
+    {
+     "mat": "Manhattan Holiday",
+     "brand": "Tigre de Tartán",
+     "note": "holiday mat; not in FYM"
+    },
+    {
+     "mat": "Golden Gingham Premium",
+     "brand": "Sunday Mahjong",
+     "fym_key": "sundaymahjong.com/golden-gingham-premium-mahjong-mat"
+    }
+   ],
+   "nonpartner_out": [
+    "Haus of Tiles Fieldmark",
+    "Rack It Mahjong mat (name cut off)"
+   ]
+  }
+ }
+}

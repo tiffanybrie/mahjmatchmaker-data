@@ -8,6 +8,12 @@ def _canon(p):
     # Tiffany Oct 15: canonical Heritage 1.0 / 2.0, Sunday and Spring Fling photos, every build
     from canon_tiles import fix_book
     fix_book(p)
+    # Oct 29 (Tiffany 12:35pm): rules enforced in code. A tile book that fails book_gate.py is not written.
+    import subprocess
+    r = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'book_gate.py'), p])
+    if r.returncode != 0:
+        os.replace(p, p + '.BLOCKED')
+        sys.exit('book_gate.py FAILED: output renamed to ' + p + '.BLOCKED, do not publish')
 HQ='https://claude.ai/artifact/Cor6pKtesou4mFRQ41P6Ye'
 t=open(sys.argv[1]).read()
 if 'id="fsheet"' in t:
