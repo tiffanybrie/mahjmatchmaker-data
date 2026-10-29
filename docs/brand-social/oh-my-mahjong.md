@@ -1,6 +1,7 @@
 # Oh My Mahjong (@ohmymahjong): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Oct 29 11:42am ET: NYT best-seller celebration carousel for the 'Mastering American Mahjong' book (DfFWu0nEcGE, 13 images, family/friends party). No product drop; Moving Sale still on (more $200 tile sets Fri Oct 30 11am ET).
 - Oct 29: 'Meet your new favorite reason to stay in' Oh My Rummi carousel (DfE2cNGmo_f), pushing their rummikub line (Cerulean/Heritage/Confetti/Clementine 2.0, all in stock, not new). Moving Sale runs through Sun Nov 1.
 - Oct 28: 'Can you spot the mistake?' engagement reel (De1Zo9eEk6q). Moving Sale public today 10am CT (through Sun Nov 1).
 - Oct 27: Warehouse Moving Sale reels (De_s0TIyzoC 11:00 UTC, DfAPsDWkTmX 16:05 UTC): 'up to 70% off tiles, mats, racks, accessories', ONLINE ONLY, public Wed Oct 28 10am CT. Details in stories.
