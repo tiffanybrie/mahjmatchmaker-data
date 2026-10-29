@@ -472,6 +472,257 @@
    "shop": "Code MAHJMATCH on partner mats & racks",
    "shop_m": "Code MAHJMATCH on partner mats & racks",
    "_oct21": "Colours measured Oct 21 from the album pile (backs, protea, leaves, craks) + AR's NEWS close-up (doc 86: 3+ spots, saturated-ink median). AR says the tile set itself takes no promo codes (Indigo Pruitt special edition), so the pill never puts the code on the tiles. Top 3 = her album order. Classic Tile Edit labels (no profile wording: gender not set for this set)."
+  },
+  "nature-walk": {
+   "name": "Nature Walk",
+   "col": "#6b1f2a",
+   "sub": "Burgundy backs with ivory faces",
+   "backs": [
+    [
+     "BURGUNDY",
+     "#5a1c24",
+     "solid back"
+    ],
+    [
+     "IVORY",
+     "#ece6cf",
+     "tile body"
+    ]
+   ],
+   "faces": [
+    [
+     "RED",
+     "#a33a35"
+    ],
+    [
+     "GREEN",
+     "#3f7a3e"
+    ],
+    [
+     "GOLD",
+     "#b0843f"
+    ]
+   ],
+   "racks": [
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Bam Bird Boutique Walnut",
+    "Oh My Mahjong Burl"
+   ],
+   "brand": "Sunday Mahjong",
+   "tile": "assets/tiles/album/nature-walk.png",
+   "tag": [
+    "37 mats she's said yes to",
+    "so far (swipe in progress)"
+   ],
+   "mats": [
+    "Burgundy Grove",
+    "Osmanthus Grove",
+    "Bold Blooms"
+   ],
+   "mat_imgs": {
+    "Burgundy Grove": "assets/colorcards/nature-walk/mats/burgundy-grove-anders-ruff.jpg",
+    "Osmanthus Grove": "assets/colorcards/nature-walk/mats/osmanthus-grove-mahjong-row-co.jpg",
+    "Bold Blooms": "assets/colorcards/nature-walk/mats/bold-blooms-sunday-mahjong.jpg"
+   },
+   "rack_imgs": {
+    "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png",
+    "Bam Bird Boutique Walnut": "assets/racks/card/bam-bird-boutique-walnut.png",
+    "Oh My Mahjong Burl": "assets/racks/card/oh-my-mahjong-burl.png"
+   },
+   "shop": "Shop Nature Walk · Sunday Mahjong",
+   "shop_m": "Shop Nature Walk · Sunday Mahjong",
+   "racks_source": "PROPOSAL (no Rack Picks final list yet; Claude picked by colour, pending her OK)",
+   "mats_source": "her swipe-book YES votes so far (db sundaysets), picked by colour; not final album picks",
+   "_oct29": "Colour card BEFORE the swipe (doc 86b), built Oct 29 after the book went out without one. Colours measured from the canonical album pile (saturated-ink medians by hue family) and checked by eye."
+  },
+  "sunday-blues": {
+   "name": "Sunday Blues",
+   "col": "#263548",
+   "sub": "Navy backs with ivory faces",
+   "backs": [
+    [
+     "NAVY",
+     "#283445",
+     "solid back"
+    ],
+    [
+     "IVORY",
+     "#ede1c4",
+     "tile body"
+    ]
+   ],
+   "faces": [
+    [
+     "NAVY",
+     "#2b4158"
+    ],
+    [
+     "SKY BLUE",
+     "#6f9cc2"
+    ],
+    [
+     "GOLD",
+     "#b38749"
+    ]
+   ],
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Bam Bird Boutique Walnut",
+    "Middle & Main Hawksbill Heritage Tortoise"
+   ],
+   "brand": "Sunday Mahjong",
+   "tile": "assets/tiles/album/sunday-blues.png",
+   "tag": [
+    "10 mats she's said yes to",
+    "so far (swipe in progress)"
+   ],
+   "mats": [
+    "Blue Diamond",
+    "Spring Awakening Warm Honey",
+    "Golden Gingham"
+   ],
+   "mat_imgs": {
+    "Blue Diamond": "assets/colorcards/sunday-blues/mats/blue-diamond-sunday-mahjong.jpg",
+    "Spring Awakening Warm Honey": "assets/colorcards/sunday-blues/mats/spring-awakening-warm-honey-mahjong-row-co.jpg",
+    "Golden Gingham": "assets/colorcards/sunday-blues/mats/golden-gingham-sunday-mahjong.jpg"
+   },
+   "rack_imgs": {
+    "Peace Love Mahjong Navy": "assets/racks/card/peace-love-mahjong-navy.png",
+    "Bam Bird Boutique Walnut": "assets/racks/card/bam-bird-boutique-walnut.png",
+    "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png"
+   },
+   "shop": "Shop Sunday Blues · Sunday Mahjong",
+   "shop_m": "Shop Sunday Blues · Sunday Mahjong",
+   "racks_source": "PROPOSAL (no Rack Picks final list yet; Claude picked by colour, pending her OK)",
+   "mats_source": "her swipe-book YES votes so far (db sundaysets), picked by colour; not final album picks",
+   "_oct29": "Colour card BEFORE the swipe (doc 86b), built Oct 29 after the book went out without one. Colours measured from the canonical album pile (saturated-ink medians by hue family) and checked by eye."
+  },
+  "plum-panda": {
+   "name": "Plum Panda",
+   "col": "#5a2740",
+   "sub": "Plum backs with ivory faces",
+   "backs": [
+    [
+     "PLUM",
+     "#4e2938",
+     "solid back"
+    ],
+    [
+     "IVORY",
+     "#f1e8d4",
+     "tile body"
+    ]
+   ],
+   "faces": [
+    [
+     "RED",
+     "#9b3e38"
+    ],
+    [
+     "MAGENTA",
+     "#a8418a"
+    ],
+    [
+     "GREEN",
+     "#3f7059"
+    ],
+    [
+     "GOLD",
+     "#a07a45"
+    ]
+   ],
+   "racks": [
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Oh My Mahjong Burl",
+    "Peace Love Mahjong Dark Green"
+   ],
+   "brand": "Sunday Mahjong",
+   "tile": "assets/tiles/album/plum-panda.png",
+   "tag": [
+    "14 mats she's said yes to",
+    "so far (swipe in progress)"
+   ],
+   "mats": [
+    "Violet Vines Wisteria",
+    "Plum Panda",
+    "Spring Blooms"
+   ],
+   "mat_imgs": {
+    "Violet Vines Wisteria": "assets/colorcards/plum-panda/mats/violet-vines-wisteria-middle-main-mahjong.jpg",
+    "Plum Panda": "assets/colorcards/plum-panda/mats/plum-panda-sunday-mahjong.jpg",
+    "Spring Blooms": "assets/colorcards/plum-panda/mats/spring-blooms-sunday-mahjong.jpg"
+   },
+   "rack_imgs": {
+    "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png",
+    "Oh My Mahjong Burl": "assets/racks/card/oh-my-mahjong-burl.png",
+    "Peace Love Mahjong Dark Green": "assets/racks/card/peace-love-mahjong-dark-green.png"
+   },
+   "shop": "Shop Plum Panda · Sunday Mahjong",
+   "shop_m": "Shop Plum Panda · Sunday Mahjong",
+   "racks_source": "PROPOSAL (no Rack Picks final list yet; Claude picked by colour, pending her OK)",
+   "mats_source": "her swipe-book YES votes so far (db sundaysets), picked by colour; not final album picks",
+   "_oct29": "Colour card BEFORE the swipe (doc 86b), built Oct 29 after the book went out without one. Colours measured from the canonical album pile (saturated-ink medians by hue family) and checked by eye."
+  },
+  "hummingbird": {
+   "name": "Hummingbird",
+   "col": "#a0493f",
+   "sub": "All-ivory tiles with jewel-tone faces",
+   "backs": [
+    [
+     "IVORY",
+     "#ebe3d2",
+     "solid back + body"
+    ]
+   ],
+   "faces": [
+    [
+     "RED",
+     "#a6433a"
+    ],
+    [
+     "TEAL",
+     "#4f9a8a"
+    ],
+    [
+     "NAVY BLUE",
+     "#47659c"
+    ],
+    [
+     "COPPER",
+     "#bb8453"
+    ]
+   ],
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Oh My Mahjong Tortoise Shell"
+   ],
+   "brand": "Sunday Mahjong",
+   "tile": "assets/tiles/album/hummingbird.png",
+   "tag": [
+    "23 mats she's said yes to",
+    "so far (swipe in progress)"
+   ],
+   "mats": [
+    "Azure Bloom",
+    "Savannah Leatherette",
+    "Bold Blooms"
+   ],
+   "mat_imgs": {
+    "Azure Bloom": "assets/colorcards/hummingbird/mats/azure-bloom-luxe-mahjong.jpg",
+    "Savannah Leatherette": "assets/colorcards/hummingbird/mats/savannah-leatherette-britt-mills.jpg",
+    "Bold Blooms": "assets/colorcards/hummingbird/mats/bold-blooms-sunday-mahjong.jpg"
+   },
+   "rack_imgs": {
+    "Peace Love Mahjong Navy": "assets/racks/card/peace-love-mahjong-navy.png",
+    "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png",
+    "Oh My Mahjong Tortoise Shell": "assets/racks/card/oh-my-mahjong-tortoise-shell.png"
+   },
+   "shop": "Shop Hummingbird · Sunday Mahjong",
+   "shop_m": "Shop Hummingbird · Sunday Mahjong",
+   "racks_source": "PROPOSAL (no Rack Picks final list yet; Claude picked by colour, pending her OK)",
+   "mats_source": "her swipe-book YES votes so far (db sundaysets), picked by colour; not final album picks",
+   "_oct29": "Colour card BEFORE the swipe (doc 86b), built Oct 29 after the book went out without one. Colours measured from the canonical album pile (saturated-ink medians by hue family) and checked by eye."
   }
  },
  "_note_oct19_catchup": "Oct 19 catch-up: shangri-la, lilac-soiree, preppy-soiree, spring-love, sunday-tile-set got mat_imgs/rack_imgs and were rendered with the existing style. They use 'tag' (factual). When Tiffany approves the Papaya profile_line style, add profile_line to each set and re-run build.py <key>; nothing else changes."

@@ -1,0 +1,10 @@
+# Sunday sets: colour cards + TNT recs (Oct 29)
+Doc 86b step done late: the Sunday Sets swipe book went out without colour cards. Cards built Oct 29 by scripts/colorcards/build.py from config/colorcards.json (sets nature-walk, sunday-blues, plum-panda, hummingbird). Colours measured from the canonical album piles (assets/tiles/album/<set>.png, saturated-ink medians by hue family, checked by eye). Top mats = 3 of her YES votes so far (db sundaysets), not final picks. Racks = Claude PROPOSAL (no Rack Picks list).
+
+## TNT recs (Tiles & Tablescapes group search, read only, Oct 29)
+Label in books as "TNT rec · <mat> · brand". (nonpartner) = not on the allow list; ask her before adding.
+- **Nature Walk** (11:50am scan): Ozark Winslow 1920 Noir (in FYM, missing from book); Mahj Mood Sleigh All Day (holiday); 2 unnamed TdT mats (cream lace, green floral); nonpartner: Mahjong by SI (Brewtifully, fall lanterns mat), Haus of Tiles Dapplefield, Lemondrop Mahjong Co., It's a Mahjong Life Lowcountry Horizon, Rack It Kyoto Dreams.
+- **Sunday Blues:** OMM Heron; TdT Handbook Plaid; TdT Sloan Story; TdT Bluest Blooms; Charleston Mahjong Club brown vegan leather; Sunday Bold Blooms; Sunday Golden Gingham; Bespoke Year of the Dragon Periwinkle (asked about); Amore leatherette; nonpartner: Haus of Tiles (unnamed), Mahjong Made Chic Leopard Luxe, Bougie Mahjong Linen Blossom (question, not a tested pair), Silk Mahjong (unnamed); Four Winds Social mats (removed brand).
+- **Plum Panda:** Sunday Plum Panda mat; OMM Mirage; OMM Amethyst; OMM Scalloped Hunter Green; Fait à Main Summer Bloom (2 posts); Let's Be Besties (unnamed); nonpartner: Lemondrop Sapphire Blooms, Piper Chase Studios (Etsy), Cheetah in Bloom (brand unclear).
+- **Hummingbird:** TdT Blonde Caned (cannage); TdT French Mural; TdT Manhattan Holiday (holiday); Sunday Golden Gingham; nonpartner: Haus of Tiles Fieldmark (post may be a different set), Rack It Mahjong mat (name cut off).
+Search snippets only (search pages truncate posts); photos not matched by eye yet.
