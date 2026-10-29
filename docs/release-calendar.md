@@ -1,10 +1,10 @@
 # Mahj Matchmaker release calendar
 
-Updated 2026-10-28 from brand sites, the Sunday release schedule, brand Instagram feeds (Planoly) and Gmail. Source of truth: `config/release-calendar.json`; regenerate with `python3 scripts/release_calendar/build_md.py`.
+Updated 2026-10-29 from brand sites, the Sunday release schedule, brand Instagram feeds (Planoly) and Gmail. Source of truth: `config/release-calendar.json`; regenerate with `python3 scripts/release_calendar/build_md.py`.
 
 **Rule (Tiffany, Oct 21):** save restock content for the buying window. Don't spend a set's content before you can buy it; post 1-2 weeks before a dated restock so people pick their mat and have the code ready when it drops.
 
-## Next 8 weeks (Oct 28 - Dec 23)
+## Next 8 weeks (Oct 29 - Dec 24)
 
 | Post window | Brand | Product | Drop date / window | Album | Affiliate | What to post |
 |---|---|---|---|---|---|---|
@@ -17,10 +17,9 @@ Updated 2026-10-28 from brand sites, the Sunday release schedule, brand Instagra
 | 2026-10-27 | Tigre de Tartán | Holiday roll-out: Ditsy Christmas Maraschino (live Oct 20), Birdsong by Katherine Hartman (live Oct 20), Estate Sale (week of Oct 26), Fair Isle Cashmere (November); DOMINO BLONDE mat (new, coming soon Oct 22) | weekly drops, Tue 4pm CT | no | yes | Holiday mats: Holiday section only. Never promote Paige Spearin x TdT (no commission; Après Mahj drops alongside Estate Sale). |
 | 2026-10-28 to 2026-11-02 | Miss Mahjong | Miss Catrina tile set | ETA week of Oct 28, 2026 | no | yes | No album. Reshare + Find Your Mat-ch frames assets/social/restock-catrina-oct27/out (built Oct 27, not posted). Día de Muertos window through Nov 2. |
 | 2026-10-28 | Oh My Mahjong | Moving sale | Mentors Oct 27; public Wed Oct 28 10am CT; ends Sun Nov 1 | no | yes | Good window to push OMM album sets that are in stock (20% commission ends Nov 25). |
-| 2026-10-28 | Middle & Main | Barrier Island tiles (+ Tidal Trio) backorder | 2026-10-28 | no | yes | No album. Log; story only if a pairing fits. |
-| 2026-10-28 | My Fair Mahjong | Poppy Red Racks (new), shown with their holiday mats | 2026-10-28 | no | yes | Racks: log only; rack-pairing option for red holiday mats. |
 | 2026-10-29 | Lucky Bam | The Mat & Rack Event, 25% off select mats and racks | starts Thu Oct 29 (limited time) | no | no | Log (not a watched partner). |
 | 2026-10-30 | Mahj Mood | Luxe Jade racks launch; Amethyst restock | 2026-10-30 10:00 | Jade/Malachite rack pairing | yes | Public now, OK to mention. Racks: Jade album rack pairing; no frames. |
+| 2026-10-30 | Mahjong Row & Co. | 'Something good' tomorrow: friends & family first dibs (product unnamed) | Fri Oct 30 | no | yes | Watch the store Oct 30; if it is Rosy/Ellington it jumps the album line. |
 | 2026-11-01 | Charleston Mahjong Club | CMC x OTG247 collaboration | November 2026 | no | yes | Log; no details yet. |
 | 2026-11-02 | Oh My Mahjong | IMC 2027 preorder | 2026-11-02 | no | yes | Accessory; story mention only. |
 | 2026-11-05 | Let's Mahj On | New lineup (unnamed) | 'a couple of weeks' from Oct 26 (~Nov 9) | no | yes | Log. |
@@ -68,8 +67,10 @@ Updated 2026-10-28 from brand sites, the Sunday release schedule, brand Instagra
 | Mahj Mood | 90s, Mauve-Blush, White Pearl (Radiant Mood) preorder tiles ship | preorder | ships late November | no | yes | Watch. | [Product titles 'Pre-Order, Ships Late November'](https://mahjmood.com/collections/new-arrivals) |
 | Mahj Mood | Lake Day tile set preorder $390 + Lake Day mat + transparent blue racks | preorder | 2026-11-20 10:00 | no | yes | No album. Log. | [Mahj Mood affiliate email Oct 28 12:26pm ET](https://mail.google.com/mail/?authuser=mahjmatchmaker@gmail.com#all/thread-f:1880311529352408712) |
 | Mahj Mood | Pipeline: Plot Twist, Mahj Manor, Fore the Girls, Summer/Mediterranean tiles, 2nd Radiant Mood colorway, 6 fall/winter wood rack colors | launch | no dates | no | yes | DO NOT POST. Watch. Oct 28: Playing for Keeps + Lake Day now dated (own rows). | Affiliate-only email Oct 20 (NOT public) |
+| Mahjong Register | Holly Jolly Double-Sided Leatherette mat 31.5in (restock) | restock | LIVE Oct 29 (store check 9:55am ET, $125) | no | yes | Holiday mat back in stock: holiday content can use it again. Not in FYM (no app frames). | [restock watchlist store check](https://mahjongregister.com/products/pre-order-very-merry-wreath-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy) |
+| Mahjong Row & Co. | 'Something good' tomorrow: friends & family first dibs (product unnamed) | coming soon | Fri Oct 30 | no | yes | Watch the store Oct 30; if it is Rosy/Ellington it jumps the album line. | [Instagram @mahjongrowandco Oct 29](https://www.instagram.com/p/DfDxq34A-k8/) |
 | Mahjong Row & Co. | Fall collection: Brunette Burl tile set (fox Joker) + botanical tile set + new mats | launch | 'coming soon' (shoot day Oct 20, Christmas tree in set) | no | yes | Top earner brand: build swipe books as soon as product pages appear; post launch day. | [IG Sep 11, Sep 22, Oct 20](https://www.instagram.com/p/Ddm1P_ug1Rm/) |
-| Mahjong Row & Co. | Rosy tile set + Ellington mat (made to pair) | launch | coming soon (IG Oct 26, no date) | no | yes | Watch for date; brand pairs them itself. | [IG Oct 26](https://www.instagram.com/reel/De-ToGKJ6rV/) |
+| Mahjong Row & Co. | Rosy tile set + Ellington mat (made to pair) | launch | coming soon (IG Oct 26, no date) | no | yes | Watch for date; brand pairs them itself. Oct 29 IG teaser (DfDxq34A-k8): 'Something good is coming your way tomorrow... friends and family first dibs' = Fri Oct 30, product not named; store has no Rosy/Ellington listing yet (checked Oct 29 9:55am ET). | [IG Oct 26](https://www.instagram.com/reel/De-ToGKJ6rV/) |
 | Middle & Main | Barrier Island tiles (+ Tidal Trio) backorder | restock | 2026-10-28 | no | yes | No album. Log; story only if a pairing fits. | [M&M IG Oct 28](https://www.instagram.com/p/DfCLWe9BT2z/) |
 | Middle & Main | Dockside (special edition) tiles relist 'with a little surprise' + full restock | restock | 'very soon' | no | yes | Watch; post day-of. | [IG Oct 21](https://www.instagram.com/p/DewP2j_BqoI/) |
 | Middle & Main | Summit to Sea tile set (North Carolina) | launch | 'very soon', straight to website, no presale | no | yes | No album. Watch; post day-of if a pairing fits. | [IG Oct 26](https://www.instagram.com/p/De9Ih_NBYeH/) |

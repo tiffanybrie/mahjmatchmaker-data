@@ -1,6 +1,6 @@
 {
   "_note": "Checked by the partner watch (3x daily). Sold out is NEVER permanent (Tiffany Oct 28 3:21pm): re-check every run; when an item flips to available, act SAME DAY. 'personal': true = Tiffany wants to BUY it: message her right away (first line: '<item> is back in stock: <link>'). Remove an item once it's back and handled.",
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "items": [
     {
       "brand": "Bam Bird Boutique",
@@ -42,12 +42,8 @@
     {
       "brand": "Mahj Squad",
       "item": "Candy Cane Pink Wonderland mat",
-      "find": "candy cane pink"
-    },
-    {
-      "brand": "Mahjong Register",
-      "item": "Holly Jolly Double-Sided Leatherette mat",
-      "find": "holly jolly"
+      "find": "candy cane pink",
+      "note": "Oct 29: no product with 'candy cane pink' in mahjsquad.com/products.json (listing may be unpublished). Keep watching."
     },
     {
       "brand": "Virora",
@@ -77,6 +73,11 @@
       "item": "Sunday Rattan Premium mat",
       "back": "2026-10-28 6:40pm ET",
       "action": "logged as restock; holiday-stock doc updated"
+    },
+    {
+      "item": "Mahjong Register Holly Jolly Double-Sided Leatherette mat",
+      "back": "2026-10-29 9:55am ET",
+      "action": "restock: Tiffany messaged + push; HQ launches + calendar + holiday-stock doc"
     }
   ]
 }

@@ -49,13 +49,13 @@ Research for docs/MERRY-MAHJONG-BRIEF.md. Checked Oct 28 against live Shopify `/
 - **Oh My Mahjong:** all 6 current holiday mats are in stock: Clara, Holly Jolly, Merriment, Sugarplum, Winterberry and Yuletide ($90). OMM has no holiday TILE set this year; its holiday products are only mats and ornaments.
 - **Virora:** Tinselle Ruby Red and Nivalee Glacier Blue are preorder, "Expected delivery Nov. 2026". Nivalee Emerald Green is also preorder. The Hollivia and Hiverelle mats ($45) are available.
 - **Mahj Squad:** Nutcracker Ballet tiles in stock ("will ship next week"), Blue Christmas + Clara's Dream mats in stock. **Charleston Mahjong Club:** Après Ski tiles + both Ski Club mats in stock. **PLM:** Merry Nutcracker tiles back in stock ($300) and all 14 holiday/Hanukkah mats in stock ($70).
-- Also fully in stock: Bespoke (all 5 holiday mats), Soirée (6, made to order, ship in 4-8 business days), Mahjong Register (8 of 9), Bam Bird, Let's Be Besties, My Fair Mahjong, Tala, Maison Mahj The Chalet, Splash of Color, B&B The Ornamental, Wren (3 + Christmas Village preorder ships Nov 20).
+- Also fully in stock: Bespoke (all 5 holiday mats), Soirée (6, made to order, ship in 4-8 business days), Mahjong Register (9 of 9 since Oct 29), Bam Bird, Let's Be Besties, My Fair Mahjong, Tala, Maison Mahj The Chalet, Splash of Color, B&B The Ornamental, Wren (3 + Christmas Village preorder ships Nov 20).
 - **Bird & Bamboo racks (AR tie-in):** the 19" and 20" wood rack sets are in stock in essentially every colour. The only sold-out variant is 20" Gold Metallic/Standard. The holiday rack picks Brick Red, Red, Wine, Evergreen, Forest/Kelly Green, Magenta and Pink Coral are all available. Everything is made to order and **ships in 7-9 business days**, so it's comfortably pre-Christmas.
 
 **SKIP list (sold out / don't promote):**
 - Sunday **Festive Plaid** mat and Sunday **Rattan** mat (wfh): **BACK IN STOCK Oct 28 6:40pm ET** (store check; $89 / $79). They sold out Oct 21. Sunday **December 1994** tiles: both preorders are sold out, leftovers are expected late Nov to early Dec.
 - Britt Mills **Merrywood, Nutcracker and Winter Berry NEOPRENE** are sold out. The Nutcracker and Winter Berry **Leatherette** versions are in stock ($180).
-- Mahj Mood **Sleigh All Day** (sold out; Holly Berry is in stock). Mahj Squad **Candy Cane Pink Wonderland** (sold out). Mahjong Register **Holly Jolly Double-Sided Leatherette** (sold out; the Holly Jolly neoprene is in stock).
+- Mahj Mood **Sleigh All Day** (sold out; Holly Berry is in stock). Mahj Squad **Candy Cane Pink Wonderland** (sold out). Mahjong Register **Holly Jolly Double-Sided Leatherette**: **BACK IN STOCK Oct 29 9:55am ET** ($125, store check); the Holly Jolly neoprene is in stock too.
 - Virora **Tinselle Emerald Green tiles** (sold out). HHM **Nativity tiles** (sold out, and hidden in FYM). HHM **Santa Baby racks** (sold out).
 - B&B **21" wood rack set**: all variants sold out. Use 19"/20".
 - OMM **Dapper 2** (wfh): its product URL now returns **404**, so it may have been pulled. Logged in MATCH-INBOX. OMM Sweet Marie is retired.

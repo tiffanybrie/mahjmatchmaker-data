@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-28",
-  "updatedBy": "partner watch Oct 28 6:40pm ET",
+  "updated": "2026-10-29",
+  "updatedBy": "partner watch Oct 29 10am ET",
   "rules": {
     "timing": {
       "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -764,7 +764,7 @@
       "album": false,
       "affiliate": true,
       "priority": 2,
-      "contentTiming": "Watch for date; brand pairs them itself."
+      "contentTiming": "Watch for date; brand pairs them itself. Oct 29 IG teaser (DfDxq34A-k8): 'Something good is coming your way tomorrow... friends and family first dibs' = Fri Oct 30, product not named; store has no Rosy/Ellington listing yet (checked Oct 29 9:55am ET)."
     },
     {
       "id": "cmc-otg247",
@@ -941,6 +941,35 @@
       "affiliate": false,
       "priority": 3,
       "contentTiming": "Watch."
+    },
+    {
+      "id": "mregister-holly-jolly-ds-restock",
+      "brand": "Mahjong Register",
+      "product": "Holly Jolly Double-Sided Leatherette mat 31.5in (restock)",
+      "type": "restock",
+      "window": "LIVE Oct 29 (store check 9:55am ET, $125)",
+      "status": "LIVE 2026-10-29",
+      "source": "restock watchlist store check",
+      "sourceUrl": "https://mahjongregister.com/products/pre-order-very-merry-wreath-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy",
+      "album": false,
+      "affiliate": true,
+      "priority": 2,
+      "contentTiming": "Holiday mat back in stock: holiday content can use it again. Not in FYM (no app frames)."
+    },
+    {
+      "id": "mrc-ff-oct30",
+      "brand": "Mahjong Row & Co.",
+      "product": "'Something good' tomorrow: friends & family first dibs (product unnamed)",
+      "type": "coming soon",
+      "window": "Fri Oct 30",
+      "windowStart": "2026-10-30",
+      "status": "coming soon",
+      "source": "Instagram @mahjongrowandco Oct 29",
+      "sourceUrl": "https://www.instagram.com/p/DfDxq34A-k8/",
+      "album": false,
+      "affiliate": true,
+      "priority": 1,
+      "contentTiming": "Watch the store Oct 30; if it is Rosy/Ellington it jumps the album line."
     }
   ],
   "sources": {
