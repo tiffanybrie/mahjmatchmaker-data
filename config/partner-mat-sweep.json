@@ -1,7 +1,7 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-10-29T13:07:15+00:00",
- "fym_ref": "origin/fym-site-preview:site-app/fym-v101",
+ "swept_at": "2026-10-29T22:09:23+00:00",
+ "fym_ref": "../fym103.html",
  "stores": {
   "amahjline.com": {
    "brand": "Amahj",
@@ -552,7 +552,7 @@
   "brittmillsdesign.com": {
    "brand": "Britt Mills",
    "status": "ok",
-   "products": 702,
+   "products": 705,
    "mats": [
     [
      "2026-10-27T09:50:54-04:00",
@@ -896,7 +896,7 @@
   "charlestonmahjongclub.com": {
    "brand": "Charleston Mahjong Club",
    "status": "ok",
-   "products": 58,
+   "products": 64,
    "mats": [
     [
      "2026-08-28T08:23:55-04:00",
@@ -1864,8 +1864,13 @@
   "ohmymahjong.com": {
    "brand": "Oh My Mahjong",
    "status": "ok",
-   "products": 243,
+   "products": 244,
    "mats": [
+    [
+     "2026-10-29T14:19:42-05:00",
+     "Poppins Mat in Tube",
+     "poppins-mat-in-tube"
+    ],
     [
      "2026-10-28T11:05:27-05:00",
      "Moving Sale Mahjong Mats",
@@ -2003,6 +2008,11 @@
     ]
    ],
    "missing": [
+    [
+     "2026-10-29T14:19:42-05:00",
+     "Poppins Mat in Tube",
+     "poppins-mat-in-tube"
+    ],
     [
      "2026-10-28T11:05:27-05:00",
      "Moving Sale Mahjong Mats",
@@ -2663,12 +2673,22 @@
   "letsbebesties.com": {
    "brand": "Let's Be Besties",
    "status": "ok",
-   "products": 569,
+   "products": 570,
    "mats": [
+    [
+     "2026-10-29T14:49:55-04:00",
+     "Sapphire Leaves Mahjong Mat",
+     "sapphire-leaves-mahjong-mat"
+    ],
     [
      "2026-10-28T16:04:08-04:00",
      "Ornamental Charm Artist Collab Neoprene Mahjong Mat",
      "ornamental-charm-artist-collab-neoprene-mahjong-mat"
+    ],
+    [
+     "2026-10-28T13:20:39-04:00",
+     "Christmas Ribbon Rhapsody Mahjong Mat",
+     "christmas-ribbon-rhapsody"
     ],
     [
      "2026-10-28T11:38:18-04:00",
@@ -4378,9 +4398,19 @@
    ],
    "missing": [
     [
+     "2026-10-29T14:49:55-04:00",
+     "Sapphire Leaves Mahjong Mat",
+     "sapphire-leaves-mahjong-mat"
+    ],
+    [
      "2026-10-28T16:04:08-04:00",
      "Ornamental Charm Artist Collab Neoprene Mahjong Mat",
      "ornamental-charm-artist-collab-neoprene-mahjong-mat"
+    ],
+    [
+     "2026-10-28T13:20:39-04:00",
+     "Christmas Ribbon Rhapsody Mahjong Mat",
+     "christmas-ribbon-rhapsody"
     ],
     [
      "2026-10-28T11:38:18-04:00",

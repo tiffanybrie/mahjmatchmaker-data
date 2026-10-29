@@ -1,0 +1,7 @@
+{"name": "Poppins", "brand": "Oh My Mahjong", "tag": "Hot pink florals, sky-blue medallion & periwinkle parasols", "color": "#d94784", "mat_path": "config/matcard/poppins_mat.jpg",
+ "palette": [["Hot Pink", "#e3528f"], ["Sky Blue", "#4fade3"], ["Periwinkle", "#788ccb"], ["Lavender", "#9f9fd6"], ["Blush", "#e8b9cf"], ["Powder Blue", "#cfe0ee"]],
+ "racks": [["Hot Pink Metallic", "#DD74B9", true], ["Turquoise Blue", "#0EA0C9", true], ["Periwinkle Blue", "#5370B8", true], ["Lavender Metallic", "#C2B9EC", false]],
+ "racks_omm": [["Hot Pink Metallic", "#DD74B9", true], ["Turquoise Blue", "#0EA0C9", true], ["Periwinkle Blue", "#5370B8", true], ["Lavender Metallic", "#C2B9EC", false]],
+ "tiles": [], "tiles_omm": [], "tiles_all": [], "retired": [],
+ "rackNote": "Painted wood racks by Bird &amp; Bamboo",
+ "rack_rule": "Nearest Bird & Bamboo colors to the mat (launch watch Oct 29): Hot Pink border, Turquoise center, Periwinkle edge, Lavender florals. Tile matches stay empty until Tiffany's swipe."}
