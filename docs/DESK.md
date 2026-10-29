@@ -136,3 +136,4 @@ Standing order: (1) Find Your Mat-ch launch: DONE Oct 27 (Version 1.5 live). (2)
 
 See CLAUDE.md.
 - **DONE Oct 29 11:05 (docs/research/traffic-2026-10-29.md) — Main: Rakuten re-apply traffic (Oct 29):** when Chrome is up, read Squarespace Analytics > Traffic (last 30 days: unique visitors, visits, pageviews, top sources) + Search Console 28-day clicks/impressions; send to Tiffany as a paste-ready block; save to docs/research/traffic-<date>.md.
+- **Matches & Catalog (Oct 29):** finish adding the TAB RULE to the remaining Chrome scheduled tasks (done: Mahji Mentor, onboarding builder; left: sales check, Google code report, ShopMy check, TNT scan, verified dates, weekly Google & OMM, weekly SEO review). Tiffany said YES Oct 29.
