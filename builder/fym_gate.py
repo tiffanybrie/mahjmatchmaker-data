@@ -1237,6 +1237,29 @@ try:
     if 'save 10% or more with code MAHJMATCH' not in _h102 or 'no discount available' not in _h102: F.append("[102] Shop by brand does not label partner (code) vs non-partner (no discount) brands")
     if "bselect('mbr'" not in _h102 or 'matBrandMenu()+' not in _h102: F.append("[102] start-with-a-mat side has no Shop by brand dropdown")
 except Exception as _e: F.append(f"[102] aerial/brand check did not run: {_e}")
+# [103] Oct 29 (Tiffany 1:31pm): a card TITLE is the tile BACK colour. Sunday Blues showed tan because its stored tc was the
+# ivory/tan tile body. Every set with a colour card (config/colorcards.json) and no album title colour must use its first back
+# colour (or, for an all-ivory back, the colour card's title colour). Also: the Shop by brand code callout is a pink feature (1:57pm).
+try:
+    _cc103 = json.load(open(REPO + 'config/colorcards.json'))['sets']
+    _h103 = open(os.path.join(B, 'index.html')).read()
+    _am = re.search(r'const tc=.*?\(\(\)=>\{const h=\((\{[^}]*\})\)\[s\.name\]', _h103)
+    _alb103 = set(json.loads(_am.group(1))) if _am else set()
+    _al103 = {'Sunday Tile Set': 'Sunday'}
+    def _lum103(x): return sum(w * int(x[i:i+2], 16) / 255 for w, i in ((.2126, 1), (.7152, 3), (.0722, 5)))
+    _bad103 = []
+    for _k, _v in _cc103.items():
+        _nm = _al103.get(_v['name'], _v['name'])
+        if _nm in _alb103: continue
+        _b0 = _v['backs'][0][1]
+        _want = _b0 if _lum103(_b0) < 0.6 else _v.get('col')
+        for _s in D['sets']:
+            if _s['name'] == _nm and (_s.get('maker') == _v.get('brand') or not _v.get('brand')) and (_s.get('tc') or '').lower() != (_want or '').lower():
+                _bad103.append(f"{_nm} title {_s.get('tc')} (should be {_want})")
+    if _bad103: F.append("[103] card title is not the tile back colour: " + '; '.join(_bad103))
+    if not re.search(r'\.bnote\.gen>span\{[^}]*color:#c8325f', _h103) or '.bnote.gen{background:transparent;color:var(--mute)' in _h103:
+        F.append("[103] Shop by brand code callout is not the pink feature (it went back to light gray)")
+except Exception as _e: F.append(f"[103] title colour / callout check did not run: {_e}")
 if W97:
     print("FYM GATE WARNINGS (v97):")
     for _w in W97: print('  ' + _w)
