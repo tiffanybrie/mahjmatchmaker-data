@@ -61,7 +61,7 @@ Standing order: (1) Find Your Mat-ch launch: DONE Oct 27 (Version 1.5 live). (2)
 | Subscriber "It's here!" email | Main | Never approved; apply her revisions; ask "send or skip" once in chat. | This week |
 | Discount links not converted (Britt Mills, Mahjong Register, YMI, RMS, Hip Hip, Wren/Soirée/Amanda Toppe) | Main | Proof in builder/fym_fix_oct21/discount_check_oct21.json. | This week |
 | Bam Bird sales lull | Main | 0 tracked orders Oct 26-27; if still 0 by Thu Oct 29, check the Bam Bird page in Search Console (money log Oct 28 12:49am). | Thu |
-| Outreach page + Work With rebuild + launch/restock form | Main → Ops | Her l-workwith6 notes (non-Shopify shops; match card pre-formatted per platform). | Next week |
+| **TODAY Oct 29 (was "next week" since Oct 24; she caught it Oct 29 12:33pm):** footer "Brands" link → /brands form → auto-reply → hidden /work-with-us (tier copy: partner vs ShopMy vs no affiliation, her two calls pending in Matches & Catalog chat) | Main copy → Ops paste (Chrome) | site/livepatch/workwith/README.md + her l-workwith6 notes; form spec in README "Brands form". Form + footer link can go up first with the approved Oct 19 copy. | Oct 30 |
 | Amazon mats into gallery + FYM; missing swipe-book products | Ops → Matches & Catalog | Her picks only; OMM Miracle / Twilight Waltz / Merry Mahjong / Santa Baby, PLM Spirit + Nutcracker photos → pending queue. | Next week |
 | ShopMy holiday leftovers + 2:3 covers | Main → Ops | As on the Oct 26 desk. ShopMy (not MAHJMATCH) for Charleston Mahjong Club + Bamlet's in holiday posts (higher commission, her Oct 28). | Next week |
 | Papaya Beechwood README | Matches & Catalog | Live since Oct 22; README still says STAGED. | Next touch |
