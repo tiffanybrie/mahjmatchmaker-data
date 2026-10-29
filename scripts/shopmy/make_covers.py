@@ -78,6 +78,7 @@ MIRROR = {96213996: (2, 4, 1143, 100)}   # keeps the Greek-key border on all fou
 FLAP = {96233460: (.86, 0, 1, .16)}     # santa & reindeer: patching broke the candy-cane border and doubled the holly
 
 COVERS = [
+ (8614817,'luna-ek-studio-mats','Luna EK Studio Mats','garden mats from their etsy shop','mat shop','#3f8f7e',6,[98959494,98952008,98952381,98953916,98954311,98957208]),
  (8525607, 'mahj-and-moon', 'Mahj & Moon Mats', 'bright, pretty mats from their etsy shop', 'mat shop', '#e0607e', 6,
   [90000001, 90000002, 90000003, 90000004, 90000005, 90000006]),
  # id, slug, title, tagline, kicker, accent, layout, picks (hero first; 3-up = [hero, left, right]; 6-up = [hero, under-hero, 4 corners])
