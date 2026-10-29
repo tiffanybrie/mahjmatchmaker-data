@@ -165,6 +165,12 @@ def desktop(S, out):
         d.text((x + 85, 675), n, font=P('Poppins-Medium.ttf', 21), fill=NAVY, anchor='mm'); d.text((x + 85, 704), role, font=P('Poppins-Regular.ttf', 18), fill=(90, 90, 100), anchor='mm')
     label(c, d, 70, 757, lab('faces'), P('Poppins-Bold.ttf', 26), NAVY, 6); d = ImageDraw.Draw(c)
     F = S['faces']; per = 3 if len(F) > 4 else 2 if len(F) == 4 else 3
+    if len(F) > 6:  # Oct 29: 7-8 faces (Sunday sets) = 4 per row, smaller dots, so 2 rows fit
+        for i, (n, h) in enumerate(F):
+            cx = 112 + (i % 4) * 152; cy = 834 + (i // 4) * 140
+            d.ellipse((cx - 40, cy - 40, cx + 40, cy + 40), fill=(255, 255, 255)); d.ellipse((cx - 36, cy - 36, cx + 36, cy + 36), fill=hx(h))
+            d.text((cx, cy + 56), n, font=P('Poppins-Medium.ttf', 17), fill=NAVY, anchor='mm')
+        F = []
     for i, (n, h) in enumerate(F):
         cx = 125 + (i % per) * 190; cy = 838 + (i // per) * 150
         d.ellipse((cx - 46, cy - 46, cx + 46, cy + 46), fill=(255, 255, 255)); d.ellipse((cx - 42, cy - 42, cx + 42, cy + 42), fill=hx(h))
@@ -209,6 +215,12 @@ def mobile(S, out):
         d.text((x + 111, 2196), n, font=P('Poppins-Medium.ttf', 22 * K), fill=NAVY, anchor='mm'); d.text((x + 111, 2244), role, font=P('Poppins-Regular.ttf', 20 * K), fill=(90, 90, 100), anchor='mm')
     label(c, d, 1490, 1868, lab('faces').replace('HER COLORS · ', 'HER '), P('Poppins-Bold.ttf', 27 * K), NAVY, 7 * K, True); d = ImageDraw.Draw(c)
     F = S['faces']; per = 3 if len(F) > 4 else 2
+    if len(F) > 6:  # Oct 29: 7-8 faces = 4 per row, 2 rows inside the panel
+        for i, (n, h) in enumerate(F):
+            cx = 1160 + (i % 4) * 214; cy = 1996 + (i // 4) * 166
+            d.ellipse((cx - 50, cy - 50, cx + 50, cy + 50), fill=(255, 255, 255)); d.ellipse((cx - 46, cy - 46, cx + 46, cy + 46), fill=hx(h))
+            d.text((cx, cy + 76), n, font=P('Poppins-Medium.ttf', 26), fill=NAVY, anchor='mm')
+        F = []
     for i, (n, h) in enumerate(F):
         cx = (1250 + (i % per) * 240) if per == 3 else (1370 + (i % per) * 240); cy = 2000 + (i // per) * 182
         d.ellipse((cx - 56, cy - 56, cx + 56, cy + 56), fill=(255, 255, 255)); d.ellipse((cx - 52, cy - 52, cx + 52, cy + 52), fill=hx(h))
