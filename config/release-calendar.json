@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-29",
-  "updatedBy": "partner watch Oct 29 10am ET",
+  "updatedBy": "partner watch Oct 29 6:30pm",
   "rules": {
     "timing": {
       "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -785,14 +785,14 @@
     {
       "id": "lmo-new-lineup",
       "brand": "Let's Mahj On",
-      "product": "New lineup (unnamed)",
+      "product": "New lineup: 7 new tile set designs (unnamed)",
       "type": "launch",
-      "window": "'a couple of weeks' from Oct 26 (~Nov 9)",
-      "windowStart": "2026-11-05",
-      "windowEnd": "2026-11-13",
+      "window": "delayed to mid-November (IG Oct 29); was ~Nov 9",
+      "windowStart": "2026-11-12",
+      "windowEnd": "2026-11-20",
       "status": "teased",
-      "source": "IG Oct 26",
-      "sourceUrl": "https://www.instagram.com/p/De9ti_2kbhf/",
+      "source": "IG Oct 26 + Oct 29 delay",
+      "sourceUrl": "https://www.instagram.com/reel/DfGDYhkFISK/",
       "album": false,
       "affiliate": true,
       "priority": 3,
@@ -970,6 +970,51 @@
       "affiliate": true,
       "priority": 1,
       "contentTiming": "Watch the store Oct 30; if it is Rosy/Ellington it jumps the album line."
+    },
+    {
+      "id": "atoppe-lila-mat",
+      "brand": "Amanda Toppe",
+      "product": "Lila mat (full size 33in; travel 22.5in releases first)",
+      "type": "coming soon",
+      "window": "Travel Lila (22.5in, 100 made, with case) Mon Nov 2 10am ET; full-size 33in in production, preorder once arrival date is firm",
+      "windowStart": "2026-11-02",
+      "status": "sneak peek",
+      "source": "Instagram @amandatoppeliving Oct 29",
+      "sourceUrl": "https://www.instagram.com/p/DfGBN7fGbpN/",
+      "album": false,
+      "affiliate": true,
+      "priority": 2,
+      "contentTiming": "Sneak peek flagged to Tiffany Oct 29. Travel version: no album (travel rule). Full-size Lila: watch the store; swipe book the day photos/listing appear. Painterly hydrangea blues, lilac, pink and soft green. Photos: assets/launches/amandatoppe-lila-teaser/"
+    },
+    {
+      "id": "marybenson-hydrangea-tiles",
+      "brand": "Mary Benson Art",
+      "product": "Hydrangea tiles (+ updated Hydrangea mat, rack restock)",
+      "type": "launch",
+      "window": "Mon Nov 2: email early access 12pm ET, everyone 1pm ET; limit 1 set per customer",
+      "windowStart": "2026-11-02",
+      "status": "coming soon",
+      "source": "Mary Benson email Oct 29 2:18pm ET",
+      "sourceUrl": "https://marybensonart.com/collections/mahjong",
+      "album": false,
+      "affiliate": false,
+      "priority": 3,
+      "contentTiming": "Log (not a partner)."
+    },
+    {
+      "id": "fourwinds-drop4-oct29",
+      "brand": "Four Winds Social",
+      "product": "Drop 4 (mats)",
+      "type": "drop",
+      "window": "Thu Oct 29 8pm CT",
+      "windowStart": "2026-10-29",
+      "status": "coming soon",
+      "source": "Four Winds Social email Oct 29 5:03am ET",
+      "sourceUrl": "https://www.fourwindssocial.com/",
+      "album": false,
+      "affiliate": false,
+      "priority": 4,
+      "contentTiming": "Log (not a partner; FWS mats removed from gallery Oct 20)."
     }
   ],
   "sources": {

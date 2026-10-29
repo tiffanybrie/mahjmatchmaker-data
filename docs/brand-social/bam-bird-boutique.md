@@ -1,6 +1,7 @@
 # Bam Bird Boutique (@bambirdboutique): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Oct 29 4:25pm ET: tile sponsor for the goldcoastmahjong Stockyards retreat, tickets close Sun Nov 1 (DfF3Iqan6BN). No product drop.
 - Oct 29: humor reel 'what it sounds like trying to learn mahjong' (DfFMLaZRQFa). Still pushing Plaid mats (DfDQepUHx3n) and Origami Timber tiles paired with the Vegan Leather Hunter Green mat (DfCzhZpR7gU); Summer Send-Off Sale 20% off through Sun Nov 1.
 - Oct 28: Origami Timber reel (DfCzhZpR7gU) 'a classic worth revisiting', paired with their Vegan Leather Hunter Green mat. Plaid Mats carousel same day (DfDQepUHx3n).
 - Oct 28 (4:09pm ET): LAUNCH post for the new Plaid Mats in 3 colorways, Green with Pink, Pink with Pink, Green with Azure: 'A timeless pattern, with a little Bam Bird twist!' (DfDQepUHx3n). Store check: $80, all 3 available. Preppy plaid, still pink-led.

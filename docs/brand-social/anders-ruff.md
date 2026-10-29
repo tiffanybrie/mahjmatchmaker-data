@@ -1,6 +1,7 @@
 # Anders Ruff (@andersruffdesignco): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Oct 29: Bams & Bubbly nostalgia reel, 'the mat that went viral' now a full accessories collection (DfFO3VCynEc). No new drop.
 - Oct 29: Bams & Bubbly Collection appreciation reel, the viral mat plus coordinating accessories (DfFO3VCynEc). No launch.
 - Oct 28: Bams & Bubbly throwback reel 'our very first tile set' (DfCu9boyKHX). Brownstone Bloom push Oct 27 (DfAVY1hSx_j).
 - Oct 28: nostalgia reel on Bams and Bubbly, their first tile set (DfCu9boyKHX). No launch.
