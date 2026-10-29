@@ -19,7 +19,7 @@ def card(pg, sel, n):
 def front(pg, k): pg.evaluate("(k)=>{S.mfront=k;S.mfset=S.set;delete S.seen[k];renderAll()}", k); pg.wait_for_timeout(1400)
 def press(pg, kind, last=False): pg.evaluate(f"()=>{{const a=[...document.querySelectorAll('button.{kind}')].filter(b=>b.offsetParent);(a.length?{ 'a[a.length-1]' if last else 'a[0]'}:null).click()}}"); pg.wait_for_timeout(1400)
 def tray(pg, n):
-    ok = pg.evaluate("()=>{const els=[...document.querySelectorAll('div,section')].filter(e=>e.offsetParent&&/SUITORS/i.test(e.innerText||'')&&e.getBoundingClientRect().height<140&&e.getBoundingClientRect().height>40);els.sort((a,b)=>a.getBoundingClientRect().height*a.getBoundingClientRect().width-b.getBoundingClientRect().height*b.getBoundingClientRect().width);const e=els[els.length-1];if(!e)return 0;document.querySelectorAll('[data-tray]').forEach(x=>x.removeAttribute('data-tray'));e.setAttribute('data-tray','1');return 1}")
+    ok = pg.evaluate("()=>{const els=[...document.querySelectorAll('div,section')].filter(e=>e.offsetParent&&/SUITOR/i.test(e.innerText||'')&&e.getBoundingClientRect().height<140&&e.getBoundingClientRect().height>40);els.sort((a,b)=>a.getBoundingClientRect().height*a.getBoundingClientRect().width-b.getBoundingClientRect().height*b.getBoundingClientRect().width);const e=els[els.length-1];if(!e)return 0;document.querySelectorAll('[data-tray]').forEach(x=>x.removeAttribute('data-tray'));e.setAttribute('data-tray','1');return 1}")
     if ok: pg.locator('[data-tray]').first.screenshot(path=f'{OUT}/{n}.png'); print('tray', n)
 def name(pg, sel): return pg.evaluate(f"()=>{{const e=document.querySelector('{sel} .scard:not(.back)');return e?e.innerText.replace(/\\s+/g,' ').slice(0,80):null}}")
 with sync_playwright() as p:
