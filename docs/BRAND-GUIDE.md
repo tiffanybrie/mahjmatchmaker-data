@@ -43,7 +43,7 @@ Mahj Matchmaker (mahjmatchmaker.com, @mahjmatchmaker) is Tiffany's mahjong match
 
 Brand-specific code rules:
 - **LoveShackFancy** collab items never take a code. Link straight to the product, with no code.
-- **Maison Mahj** forbids posting its code online or saying we're an affiliate. Use her link only.
+- **Maison Mahj** (updated Oct 29): its program switched from links to codes (UpPromote, Jun 21 2026), and the brand's own email asks affiliates to share the code. Code **MAHJMATCH** = complimentary shipping on **tile set** orders only (no % off). There is no affiliate link: link plain maisonmahj.com. A Maison mat never carries a discount promise. Don't announce it as a new code.
 - **Sunday Mahjong** has no code. It's an honorary partner, and we say "no code at this time".
 - **Paige Spearin x Tigre de Tartán** collabs earn nothing. Never go out of our way to feature them.
 - A card or post that shows any partner piece carries "Code MAHJMATCH", even if some items on it have no code. Say in the caption which brands have no code.
@@ -438,6 +438,7 @@ Never put drop shadows or other effects on text.
 | Oct 27 | FYM app reels follow docs/FYM-REEL-RULES.md: labels on their own item, ♥ right into suitors / ✕ left, every on-screen product counted and tagged, real zoom, moving camera, launch-day energy, finished the night before. |
 | Oct 27 | Matches and match content look for TWO-COLOUR coordination (backs colour + a second colour from the faces, racks each picking one), never tonal same-on-same. |
 | Oct 27 | Restocks / brand news: never a feed post. Reshare the brand's post or story to our stories + ONE companion story frame (her matches / album / code MAHJMATCH, link sticker). |
+| Oct 29 | Maison Mahj is a code partner: MAHJMATCH = complimentary shipping on tile set orders only, plain brand link (Tiffany 11:07pm; replaces the old 'never post its code' rule). |
 
 ---
 
@@ -519,3 +520,4 @@ Each is asked once. Until she answers, follow the default given here.
 - 2026-10-29 12:41 (Tiffany): **Partner pitch never mentions the Discount Codes page or Google ranking** (that is our win, their cost). Brand page may be mentioned, not linked. Albums = "at least one match album per partner brand" (Tiffany's picks included). Social features are not partner-exclusive. No swipe-data perk until a real sample report exists. Partner differentiator: top of Shop by brand, labelled "save 10% or more with code MAHJMATCH"; non-partners "no discount available".
 - 2026-10-29 12:52 (Tiffany): **Two groups only: partners (give a code) vs non-partners** (ShopMy-only = non-partner). Partners: one guaranteed match album, brand exposure (homepage ticker, partner brands page, own brand page), top of Shop by brand with the discount label. Non-partners can still get albums at her discretion. Never gate colour matching by partnership. Never say a code is "automatically added".
 - 2026-10-29 13:00 (Tiffany): **Never write "partners get featured, everyone else gets listed"**: any brand can be featured when it is the best match. **Swipe/demand data is internal-only** until the user base is real; never a partner selling point yet.
+- 2026-10-29 23:07 (Tiffany): **Maison Mahj is a code partner**: MAHJMATCH = complimentary shipping on tile set orders only (code verified in her UpPromote portal), plain maisonmahj.com link, not announced as new; replaces the old 'never post its code' rule (section on brand-specific code rules updated).
