@@ -5,10 +5,11 @@ Sources: live hub https://www.mahjmatchmaker.com/mahjong-discount-codes at-a-gla
 Left out: Wren Mats + Sunday (no-code per brief), Mahjong Studios (hub: "shop through my link"), Fait à Main (not live: coupon still fails Oct 29).
 Yellow Mountain Imports (MAHJMATCH10-YMI-2025) is in the FB group comment only: she said never feature YMI in social content, and content_lint fails any code but MAHJMATCH.
 No % given for Anders Ruff, The Mahjong Press, Mahjong Register, Let's Be Besties: the hub gives none ("Discount with MAHJMATCH"), and the brand guide allows a % only when the hub states it.
-Counts: FB group list 34 brands; Instagram + FB Page list 33 brands; 30 verified IG handles for Tag people (Instagram allows 20 tags per image, so split them across carousel slides). Hip Hip, Splash of Color, Mahjong Register have no verified handle.
+Counts: FB group list 35 brands (Maison Mahj added Oct 29 late per Tiffany 11:07pm: group version only, not called new; code MAHJMATCH verified in her UpPromote portal); Instagram + FB Page list 33 brands; 30 verified IG handles for Tag people (Instagram allows 20 tags per image, so split them across carousel slides). Hip Hip, Splash of Color, Mahjong Register have no verified handle.
 Length: IG/FB Page captions run past the 350-character caption rule on purpose; the typed list is the point (her Oct 29 yes to "every brand name + MAHJMATCH typed out"). The hook before the list is under 350.
 
 ## 1. Facebook group post (Claude posts from her account on her yes)
+Image: assets/hub/partner-brands-2026-10-29.jpg (37 logos incl. Maison Mahj). The Instagram + FB Page posts keep assets/hub/partner-brands-2026-10-28.jpg (no Maison line there).
 [Heading (H1)] 💸🀄 Partner Codes, All in One Place 🀄💸
 
 Good morning! It's been a BIG week, y'all, so here's your roundup plus every partner code typed out so you can find it anytime.
@@ -52,6 +53,7 @@ Mahj Squad: 10% off with code MAHJMATCH
 Mahjong Co.: 10% off with code MAHJMATCH
 Mahjong Register: save with code MAHJMATCH
 Mahjong Row & Co.: 10% off with code MAHJMATCH
+Maison Mahj: complimentary shipping on tile set orders with code MAHJMATCH
 Middle & Main Mahjong: 10% off with code MAHJMATCH
 Mini Mahjer: 10% off with code MAHJMATCH
 Miss Mahjong: 10% off with code MAHJMATCH
