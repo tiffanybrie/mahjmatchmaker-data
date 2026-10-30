@@ -1,7 +1,7 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-10-29T22:09:23+00:00",
- "fym_ref": "../fym103.html",
+ "swept_at": "2026-10-30T13:48:22+00:00",
+ "fym_ref": "origin/fym-site-preview:site-app/fym-v104",
  "stores": {
   "amahjline.com": {
    "brand": "Amahj",
@@ -137,13 +137,7 @@
      "neoprene-mat"
     ]
    ],
-   "missing": [
-    [
-     "2026-10-27T13:47:10-05:00",
-     "Plaid Neoprene Mahjong Mat",
-     "plaid-neoprene-mahjong-mat"
-    ]
-   ]
+   "missing": []
   },
   "bamletsmahjong.com": {
    "brand": "Bam! Let's Mahjong",
@@ -1140,18 +1134,8 @@
   "mahjmood.com": {
    "brand": "Mahj Mood",
    "status": "ok",
-   "products": 57,
+   "products": 54,
    "mats": [
-    [
-     "2026-10-02T18:45:47-05:00",
-     "Beyond the Ribbon: Four Winds Social Collab Mat Benefitting PINK FUND      | Pre-Order, Ships End of December",
-     "beyond-the-ribbon-four-winds-social-collab-mat-benefitting-pink-fund-pre-order-ships-end-of-december"
-    ],
-    [
-     "2026-10-02T18:45:41-05:00",
-     "Rally in Pink Mat: Four Winds Social Collab Mat Benefitting PINK FUND      | Pre-Order, Ships End of December",
-     "rally-in-pink-mat-four-winds-social-collab-mat-benefitting-pink-fund"
-    ],
     [
      "2026-09-18T09:57:49-05:00",
      "Sleigh All Day Mat",
@@ -1181,11 +1165,6 @@
      "2026-07-24T09:58:55-05:00",
      "The Bow and Bloom Mat: Collab with Four Winds Social | Pre-Order, Ships End of September",
      "the-bow-and-bloom-mat-collab-with-four-winds-social-pre-order-estimated"
-    ],
-    [
-     "2026-07-24T09:58:48-05:00",
-     "The Eloise Collection Mat: Collab with Four Winds Social",
-     "the-eloise-collection-mat-collab-with-four-winds-social-pre-order-estimated-delivery"
     ],
     [
      "2026-06-19T09:59:51-05:00",
@@ -1408,7 +1387,7 @@
   "mahjongrowandco.com": {
    "brand": "Mahjong Row & Co.",
    "status": "ok",
-   "products": 27,
+   "products": 26,
    "mats": [
     [
      "2026-10-05T15:00:47-05:00",
@@ -2364,13 +2343,7 @@
      "bams-bubbly-mahjong-mat"
     ]
    ],
-   "missing": [
-    [
-     "2026-10-27T23:11:59-04:00",
-     "Paws in the Garden Mahjong Mat",
-     "paws-in-the-garden-mahjong-mat"
-    ]
-   ]
+   "missing": []
   },
   "soireeallday.co": {
    "brand": "Soirée All Day",
@@ -2673,7 +2646,7 @@
   "letsbebesties.com": {
    "brand": "Let's Be Besties",
    "status": "ok",
-   "products": 570,
+   "products": 569,
    "mats": [
     [
      "2026-10-29T14:49:55-04:00",
@@ -4416,21 +4389,6 @@
      "2026-10-28T11:38:18-04:00",
      "Jingle Jungle Leatherette Mahjong Mat",
      "jingle-jungle-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-10-27T18:06:10-04:00",
-     "Tidal Glass Mahjong Mat",
-     "tidal-glass-mahjong-mat"
-    ],
-    [
-     "2026-10-27T17:45:05-04:00",
-     "Retro Riviera Simple Middle Mahjong Mat",
-     "retro-riviera-simple-middle-mahjong-mat"
-    ],
-    [
-     "2026-10-27T17:40:30-04:00",
-     "Retro Riviera Mahjong Mat",
-     "retro-riviera-mahjong-mat"
     ],
     [
      "2026-10-26T10:04:23-04:00",
