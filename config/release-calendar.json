@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-30",
-  "updatedBy": "partner watch Oct 30 10:20am ET",
+  "updatedBy": "partner watch Oct 30 1:30pm ET",
   "rules": {
     "timing": {
       "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -1016,6 +1016,51 @@
       "affiliate": false,
       "priority": 4,
       "contentTiming": "Log (not a partner; FWS mats removed from gallery Oct 20)."
+    },
+    {
+      "id": "lbb-artist-collective",
+      "brand": "Let's Be Besties",
+      "product": "LBB Artist Collective (new artist-designed mats: OHBoN Studios, BeachyMahj, Wanda Viola Designs, AC Studios, Lillian Claire Designs, Spill the Mahj)",
+      "type": "coming soon",
+      "window": "early November",
+      "windowStart": "2026-11-02",
+      "status": "sneak peek (no designs shown yet)",
+      "source": "LBB affiliate email + Instagram Oct 30 (new website live)",
+      "sourceUrl": "https://www.instagram.com/reel/DfH0fj7RjRt/",
+      "album": false,
+      "affiliate": true,
+      "priority": 3,
+      "contentTiming": "Sneak peek flagged to Tiffany Oct 30. Print-on-demand mats (no sellouts): when designs list, handle like other LBB mats (FYM + Mat Gallery handoff)."
+    },
+    {
+      "id": "mahjmood-jade-luxe-racks",
+      "brand": "Mahj Mood",
+      "product": "Luxe Racks: Jade Acrylic (4), $130",
+      "type": "launch",
+      "window": "Fri Oct 30 10am CT",
+      "windowStart": "2026-10-30",
+      "status": "LIVE Oct 30 (published 9:57am CT, in stock)",
+      "source": "Instagram @mahj_mood Oct 27 + store check Oct 30",
+      "sourceUrl": "https://mahjmood.com/products/luxe-racks-jade-acrylic",
+      "album": false,
+      "affiliate": true,
+      "priority": 3,
+      "contentTiming": "Racks (not a tile set/mat): record only. Brand pairs them with the Holly Berry Holiday mat."
+    },
+    {
+      "id": "maisonmahj-house-line-1",
+      "brand": "Maison Mahj",
+      "product": "House Line No. 1 tile set (+ House Tote, Maison Rack Bags)",
+      "type": "preorder",
+      "window": "first window opens Sat Oct 31 (tiered windows); ships Feb 2027",
+      "windowStart": "2026-10-31",
+      "status": "coming soon (not in store yet)",
+      "source": "Maison Mahj email Oct 30 'The Art of a Beautiful Table' ('Windows open tomorrow')",
+      "sourceUrl": "https://www.maisonmahj.com/collections/maison-mahj",
+      "album": false,
+      "affiliate": false,
+      "priority": 4,
+      "contentTiming": "Log only (non-partner except The Chalet)."
     }
   ],
   "sources": {
