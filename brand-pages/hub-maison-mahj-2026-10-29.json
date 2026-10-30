@@ -1,0 +1,47 @@
+{
+ "page": "/mahjong-discount-codes",
+ "made": "2026-10-29 (applied live Oct 30 ~12:05am ET)",
+ "brand": "Maison Mahj",
+ "applied": "LIVE, curl verified",
+ "codeBlock": "block-yui_3_17_2_1_1790950307795_4590",
+ "codeBlockPatches": [
+  {
+   "find": "<h2>All 35 mahjong discount codes at a glance</h2>",
+   "replace": "<h2>All 37 mahjong discount codes at a glance</h2>"
+  },
+  {
+   "after": "<li><a href=\"/yolo-mahjong-discount-code\"><strong>YOLO Mahjong</strong></a> &mdash; 10% off with MAHJMATCH</li>",
+   "insert": "\n<li><a href=\"https://www.maisonmahj.com\" target=\"_blank\" rel=\"noopener\"><strong>Maison Mahj</strong></a> &mdash; Complimentary shipping on tile set orders with code MAHJMATCH</li>"
+  },
+  {
+   "find": "\"numberOfItems\": 36,",
+   "replace": "\"numberOfItems\": 37,"
+  },
+  {
+   "after": "ItemList position 36 (YOLO)",
+   "insert": "{\"@type\": \"ListItem\", \"position\": 37, \"name\": \"Maison Mahj: Complimentary shipping on tile set orders with code MAHJMATCH\", \"url\": \"https://www.maisonmahj.com\"}"
+  },
+  {
+   "find": "at most of the 36 mahjong brands",
+   "replace": "at most of the 37 mahjong brands"
+  },
+  {
+   "find": "and I Love Mahj gives a 2-week free trial.\"",
+   "replace": "and I Love Mahj gives a 2-week free trial. Maison Mahj gives complimentary shipping on tile set orders.\""
+  },
+  {
+   "find": "YOLO Mahjong (10% off with MAHJMATCH).\"",
+   "replace": "YOLO Mahjong (10% off with MAHJMATCH); Maison Mahj (complimentary shipping on tile set orders with MAHJMATCH).\""
+  },
+  {
+   "find": "title/aria-label 'Let&amp;rsquo;s' (b16, b18, main + dup rows, 8x)",
+   "replace": "Let’s (plain ’; coordinator fix, brand_page_text.py)"
+  }
+ ],
+ "textBlock": "block-yui_3_17_2_1_1773264930191_635202, appended after YOLO: <h2>Maison Mahj Discount Code</h2><p>Collectible mahjong tile sets released in limited collections. Use <strong>MAHJMATCH</strong> for complimentary shipping on tile set orders.</p><p><a target=\"_blank\" href=\"https://www.maisonmahj.com\">Shop Maison Mahj →</a></p>",
+ "notDone": [
+  "Hub logo graphic image (Partner Brands Oct 28 2026.jpg, 36 logos) not swapped: new file assets/hub/partner-brands-2026-10-29.jpg (37 logos) needs an image-block upload",
+  "Logo ticker (.mmtk, home + hub) not changed: ticker items link to brand pages and Maison has none"
+ ],
+ "graphic": "assets/hub/partner-brands-2026-10-29.jpg (37 logos, 7 cols, last row centred; scripts/hubgraphic/add_logo_centered.py from the Oct 28 graphic + assets/brand/partner-logos/maison-mahj.png)"
+}
