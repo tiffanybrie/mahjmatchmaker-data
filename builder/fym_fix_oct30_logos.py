@@ -125,7 +125,7 @@ k = h.rindex('</style></head>'); h = h[:k] + CSS + h[k:]
 rep('function brandMenu(){', JS_BL + '''const BPA=m=>!!BCODE[m];
 function blogoView(){const all=D.sets.filter(VIS),n={};all.forEach(s=>{n[s.maker]=(n[s.maker]||0)+1;});const ix=m=>{const k=BLORD.indexOf(m);return k<0?1e3-n[m]:k;};
  const B=Object.keys(n).sort((a,b)=>ix(a)-ix(b)||a.localeCompare(b)),P=B.filter(BPA),NP=B.filter(m=>!BPA(m));
- const one=m=>`<button type="button" class="blg" data-blogo="${esc(m)}" aria-label="${esc(m)}: ${n[m]} tile sets"><span class="bli">${BLOGO[m]?`<img src="${BLOGO[m]}" alt="" loading="lazy">`:`<span class="blt">${esc(m)}</span>`}</span><b>${esc(m)}</b><small>${n[m]} tile set${n[m]>1?'s':''}</small>${BPA(m)?'<em>Save with MAHJMATCH</em>':''}</button>`;
+ const one=m=>`<button type="button" class="blg" data-blogo="${esc(m)}" aria-label="${esc(m)}: ${n[m]} tile sets"><span class="bli">${BLOGO[m]?`<img src="${BLOGO[m]}" alt="" loading="lazy">`:`<span class="blt">${esc(m)}</span>`}</span>${BLOGO[m]?`<b>${esc(m)}</b>`:''}<small>${n[m]} tile set${n[m]>1?'s':''}</small>${BPA(m)?'<em>Save with MAHJMATCH</em>':''}</button>`;
  return `<div class="blv" id="blv"><p class="blq">Pick your tiles: tap a brand, a colour, or search your set</p><h4 class="blh">Partner brands \\u00b7 save 10% or more with code MAHJMATCH</h4><div class="blgrid">${P.map(one).join('')}</div>${NP.length?`<h4 class="blh np">More brands \\u00b7 no discount</h4><div class="blgrid np">${NP.map(one).join('')}</div>`:''}</div>`;}
 function brandMenu(){''')
 rep("if(S.tbrand)return all.filter(x=>x[0].maker===S.tbrand)",
@@ -133,9 +133,10 @@ rep("if(S.tbrand)return all.filter(x=>x[0].maker===S.tbrand)",
 rep(" if(S.tcol==='az'||S.tcol==='')return all.sort(",
     " if(S.tcol==='')return blogoView();/* v104: no colour picked = partner brand logos (Tiffany Oct 29 3:31pm) */\n if(S.tcol==='az')return all.sort(")
 rep("return (BACKG[S.tcol]||[]).flatMap(n=>all.filter(x=>x[0].name===n)).sort((a,b)=>!!T[a[0].tile].soon-!!T[b[0].tile].soon)",
-    "return (BACKG[S.tcol]||[]).flatMap(n=>all.filter(x=>x[0].name===n)).sort((a,b)=>(BPA(a[0].maker)?0:1)-(BPA(b[0].maker)?0:1)||!!T[a[0].tile].soon-!!T[b[0].tile].soon)/* v104: partners first, non-partners last */")
+    "return (BACKG[S.tcol]||[]).flatMap(n=>all.filter(x=>x[0].name===n)).sort((a,b)=>!!T[a[0].tile].soon-!!T[b[0].tile].soon||(BPA(a[0].maker)?0:1)-(BPA(b[0].maker)?0:1))/* v104: partners first, non-partners last (Photo coming soon still at the very bottom, gate [61]) */")
 rep("if(b=q('[data-tcol]')){",
     "if(b=q('[data-blogo]')){S.tbrand=b.dataset.blogo;S.tcol='';renderTiles();const g=$(S.tbrand?'tgrid':'tbr');if(g)g.scrollIntoView({block:'start',behavior:'smooth'});trk('brand',{x:S.tbrand||'all',via:'logo'});return;}\n  if(b=q('[data-tcol]')){")
 
+rep("then pick one just below: shop by color or search a specific set.", "then pick one just below: tap a brand, shop by color or search a specific set.")
 open(os.path.join(OUT, 'index.html'), 'w').write(h)
 print('ok', len(h), 'logos', len(BL), 'missing', [m for m in makers if m not in BL])

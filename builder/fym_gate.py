@@ -436,7 +436,8 @@ if "if(b=q('[data-back]')){undo(b.dataset.back)" not in UI: F.append("[18b] Back
 
 # 19. tiles-door colour chips can be cleared (Oct 21)
 if "S.tcol=S.tcol===v?'':v" not in UI: F.append("[19] tiles-door colour chip does not toggle off (radio-style lock)")
-if "S.tcol==='az'||S.tcol===''" not in fn('tileGrid'): F.append("[19] cleared tiles-door chips ('') do not render the full list")
+# v104 (Tiffany Oct 29 3:31pm): a cleared chip ('') shows the partner brand LOGOS (the full list is one tap away: All A-Z); never a locked/empty view
+if "S.tcol==='az'" not in fn('tileGrid') or "if(S.tcol==='')return blogoView();" not in fn('tileGrid'): F.append("[19] cleared tiles-door chips ('') do not render the brand logos / All A-Z list")
 if 'if(!S.tcol)S.tcol=' in UI: F.append("[19] falsy S.tcol re-selects the default chip (clearing impossible)")
 
 # 20. phone orphan in door subtitles (Oct 21: 'for' alone on a line)
@@ -698,7 +699,7 @@ for _k in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__))
 # [59] Oct 26 (Tiffany 8:24am): Start with tiles has no default colour chip; every set shows A-Z
 if "S.tcol=tileOrder()[0]" in UI: F.append("[59] tile door pre-selects a colour chip (should open on all sets A-Z, nothing selected)")
 # [61] Oct 26 (Tiffany 8:25am): 'Photo coming soon' tile sets sort to the bottom of every tile list
-if "sort((a,b)=>a[0].name.localeCompare(b[0].name))" in UI or ".sort((a,b)=>!!T[a[0].tile].soon-!!T[b[0].tile].soon).map(" not in UI:
+if "sort((a,b)=>a[0].name.localeCompare(b[0].name))" in UI or not (".sort((a,b)=>!!T[a[0].tile].soon-!!T[b[0].tile].soon).map(" in UI or ".sort((a,b)=>!!T[a[0].tile].soon-!!T[b[0].tile].soon||(BPA(a[0].maker)?0:1)-(BPA(b[0].maker)?0:1))" in UI):
     F.append("[61] 'Photo coming soon' tile sets are not sorted to the bottom of the tile lists")
 # [64] Oct 26 (Tiffany 8:43am): Charleston Mahjong Club tile sets use the approved faces | angled-backs photo (config/fym-cmc-splits-oct26.json)
 for _k in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-cmc-splits-oct26.json')))['splits']:
@@ -1260,6 +1261,29 @@ try:
     if not re.search(r'\.bnote\.gen>span\{[^}]*color:#c8325f', _h103) or '.bnote.gen{background:transparent;color:var(--mute)' in _h103:
         F.append("[103] Shop by brand code callout is not the pink feature (it went back to light gray)")
 except Exception as _e: F.append(f"[103] title colour / callout check did not run: {_e}")
+# [105] Oct 30 (Tiffany Oct 29 3:29-3:33pm, Oct 30 2:49am): the tiles door must NOT open on the alphabetical tile list
+# (Mahj Mood "90s Pool Party", YMI "Aloha"). With no colour / brand / search it shows PARTNER BRAND LOGOS: Oh My Mahjong first,
+# partners before non-partners, every partner with a logo; colour results list partner sets before non-partner sets.
+try:
+    _h105 = open(os.path.join(B, 'index.html')).read()
+    if 'function blogoView()' not in _h105 or "if(S.tcol==='')return blogoView();" not in _h105:
+        F.append("[105] tiles door opens on the alphabetical tile list, not the partner brand logos")
+    if "q('[data-blogo]')" not in _h105: F.append("[105] tapping a brand logo does nothing (no data-blogo handler)")
+    _v105 = re.search(r"function blogoView\(\)\{.*?function brandMenu", _h105, re.S)
+    if not _v105 or _v105.group(0).find('P.map(one)') < 0 or _v105.group(0).find('P.map(one)') > _v105.group(0).find('NP.map(one)'):
+        F.append("[105] brand logos do not put partner brands before non-partners")
+    _bl = re.search(r'const BLOGO=(\{.*?\});const BLORD=(\[.*?\]);', _h105)
+    if not _bl: F.append("[105] brand logo data (BLOGO/BLORD) missing")
+    else:
+        _blogo, _blord = json.loads(_bl.group(1)), json.loads(_bl.group(2))
+        if not _blord or _blord[0] != 'Oh My Mahjong': F.append("[105] Oh My Mahjong is not the first brand logo")
+        _bc = {o.get('bn') for X in (D.get('mats', {}), D.get('racks', {}), D.get('tiles', {})) for o in X.values()
+               if isinstance(o, dict) and o.get('bn') and not o.get('hid') and o.get('pa') and not o.get('nc')}
+        _miss = sorted({s['maker'] for s in D['sets'] if vis(s) and s['maker'] in _bc and s['maker'] not in _blogo})
+        if _miss: F.append("[105] partner brands with no logo on the opening screen: " + ', '.join(_miss))
+    if not re.search(r"flatMap\(n=>all\.filter\(x=>x\[0\]\.name===n\)\)\.sort\(\(a,b\)=>!!T\[a\[0\]\.tile\]\.soon-!!T\[b\[0\]\.tile\]\.soon\|\|\(BPA\(a\[0\]\.maker\)", _h105):
+        F.append("[105] colour results do not list partner tile sets first")
+except Exception as _e: F.append(f"[105] brand logo opening view check did not run: {_e}")
 # [104] Oct 30 (rules audit GA4; CLAUDE.md FYM 0 "every publish goes to BOTH places"): the build's public "Version X.Y" label
 # == the newest site-app/fym-vNN on the fym-site-preview branch == the page-block pinned at the TOP of
 # site/livepatch/fym-preview-oct21/README.md (that pin is what gets pasted on Squarespace). WARNING by default (the README

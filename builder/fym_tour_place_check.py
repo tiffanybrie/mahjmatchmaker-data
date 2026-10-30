@@ -15,7 +15,7 @@ so = socket.socket(); so.bind(('127.0.0.1', 0)); port = so.getsockname()[1]; so.
 srv = subprocess.Popen([sys.executable, '-m', 'http.server', str(port), '--bind', '127.0.0.1', '--directory', B], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL); time.sleep(1)
 URL = f'http://localhost:{port}/index.html'
 ORDER = ['tiles', 'mats', 'pick', 'add', 'racks', 'rpick', 'make', 'share', 'shop']
-ACT = {'tiles': '#s-tiles .tgrid button', 'mats': '[data-yes="m"]', 'pick': '.tray .th button', 'add': 'TARGET',
+ACT = {'tiles': '#s-tiles .tgrid [data-tile]', 'mats': '[data-yes="m"]', 'pick': '.tray .th button', 'add': 'TARGET',
        'racks': '[data-yes="r"]', 'rpick': '#rtray .th button', 'make': 'TARGET', 'share': '[data-tour-next]', 'shop': '[data-tour-next]'}
 STATE = """()=>{if(!TOUR.on)return {on:false};const s=TSTEPS[TOUR.step],c=document.getElementById('coach'),t=tourTarget(s);
  const cr=c&&c.getBoundingClientRect(),tr=t&&t.getBoundingClientRect(),vh=innerHeight,vw=document.documentElement.clientWidth;
@@ -63,6 +63,8 @@ with sync_playwright() as p:
                 sel = ACT[k]
                 if sel == 'TARGET':
                     sel = pg.evaluate("(()=>{const s=TSTEPS[TOUR.step];return s.b.split(',').find(x=>document.querySelector(x));})()")
+                if k == 'tiles' and not pg.locator(sel).count():  # v104: tiles door opens on brand logos; a person taps a brand, then a set
+                    pg.locator('#s-tiles .blg').first.click(); time.sleep(.7)
                 pg.locator(sel).first.click()
                 if k == 'add':
                     time.sleep(.5)
@@ -83,7 +85,8 @@ with sync_playwright() as p:
             time.sleep(.7); st = pg.evaluate(STATE)
             if st['inter'] or st['vis'] < .6: F(tag, f'{label}: tip box covers the target or target not in view (visible {st["vis"]})')
             return st
-        pg.locator('#s-tiles .tgrid button').first.click(); time.sleep(.9)
+        if not pg.locator('#s-tiles .tgrid [data-tile]').count(): pg.locator('#s-tiles .blg').first.click(); time.sleep(.7)
+        pg.locator('#s-tiles .tgrid [data-tile]').first.click(); time.sleep(.9)
         if pg.locator('.frow [data-her="m"]').count(): pg.locator('.frow [data-her="m"]').first.click(); chk('picks toggle on step 2')
         pg.locator('[data-yes="m"]').click(); time.sleep(.8); pg.locator('.tray .th button').first.click(); time.sleep(.8)
         pg.locator('[data-unpeek]').click(); st = chk('Back to the deck on step 4')
