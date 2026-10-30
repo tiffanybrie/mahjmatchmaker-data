@@ -116,13 +116,19 @@
    "name": "Round Top Stamped",
    "brand": "Amahj",
    "tile_key": "amahjline.com/homestead-stamped-tile-line",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t15/2.jpg",
    "reason": "faces only, no back, no pile on a clean background",
    "product_url": "https://amahjline.com/products/homestead-stamped-tile-line",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/amahj-round-top-stamped.jpg",
+    "kind": "compilation",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "amahj-pink-coastal-signature": {
    "name": "Pink Coastal Signature",
@@ -262,37 +268,55 @@
    "name": "Eau De Mahj",
    "brand": "Anders Ruff",
    "tile_key": "shop.andersruff.com/eau-de-mahj-mahjong-tile-set",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t15/80.jpg",
    "reason": "only lifestyle/mat shots",
    "product_url": "https://shop.andersruff.com/products/eau-de-mahj-mahjong-tile-set?sca_ref=12490265.xTtN8oMUj9qSk1",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/anders-ruff-eau-de-mahj.jpg",
+    "kind": "crop",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "anders-ruff-house-of-hydrangea": {
    "name": "House of Hydrangea",
    "brand": "Anders Ruff",
    "tile_key": "shop.andersruff.com/house-of-hydrangea-mahjong-tile-set",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t15/81.jpg",
    "reason": "only lifestyle/mat shots",
    "product_url": "https://shop.andersruff.com/products/house-of-hydrangea-mahjong-tile-set?sca_ref=12490265.xTtN8oMUj9qSk1",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/anders-ruff-house-of-hydrangea.jpg",
+    "kind": "crop",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "anders-ruff-mahj-in-bloom": {
    "name": "Mahj in Bloom",
    "brand": "Anders Ruff",
    "tile_key": "shop.andersruff.com/mahj-in-bloom-mahjong-tile-set",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t15/78.jpg",
    "reason": "piles sit on patterned mat",
    "product_url": "https://shop.andersruff.com/products/mahj-in-bloom-mahjong-tile-set?sca_ref=12490265.xTtN8oMUj9qSk1",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/anders-ruff-mahj-in-bloom.jpg",
+    "kind": "pile",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "bam-bird-boutique-boots-bubbles": {
    "name": "Boots & Bubbles",
@@ -427,37 +451,55 @@
    "name": "Art Deco",
    "brand": "Bam! Let's Mahjong",
    "tile_key": "www.bamletsmahjong.com/art-deco-mahjong-tile-set",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t15/106.jpg",
    "reason": "faces only, rest lifestyle on pattern",
    "product_url": "https://www.bamletsmahjong.com/products/art-deco-mahjong-tile-set",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/bam-let-s-mahjong-art-deco.jpg",
+    "kind": "crop",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "bam-let-s-mahjong-hocus-pocus-halloween": {
    "name": "Hocus Pocus Halloween",
    "brand": "Bam! Let's Mahjong",
    "tile_key": "www.bamletsmahjong.com/hocus-pocus-halloween-mahjong-tile-set",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t15/107.jpg",
    "reason": "faces only, no back/pile",
    "product_url": "https://www.bamletsmahjong.com/products/hocus-pocus-halloween-mahjong-tile-set",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/bam-let-s-mahjong-hocus-pocus-halloween.jpg",
+    "kind": "crop",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "bam-let-s-mahjong-garden-party-sky-blue": {
    "name": "Garden Party Sky Blue",
    "brand": "Bam! Let's Mahjong",
    "tile_key": "www.bamletsmahjong.com/mahjong-tiles-garden-party?v=45074672025758",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t11/119.jpg",
    "reason": "pile sits on patterned stripe mat",
    "product_url": "https://www.bamletsmahjong.com/products/mahjong-tiles-garden-party?variant=45074672025758",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/bam-let-s-mahjong-garden-party-sky-blue.jpg",
+    "kind": "crop",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "bam-let-s-mahjong-garden-party-petal-pink": {
    "name": "Garden Party Petal Pink",
@@ -622,37 +664,55 @@
    "name": "Bespoke X Corey Paige Color Crush XL Mega",
    "brand": "Bespoke Mahjong",
    "tile_key": "www.bespokemahjong.com/bespoke-x-corey-paige-color-crush-xl-mega-tiles-hottie-pink-1",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": true,
    "current": "t15/124.jpg",
    "reason": "only lifestyle/graphic; clean shot is faces only, no back",
    "product_url": "https://www.bespokemahjong.com/products/bespoke-x-corey-paige-color-crush-xl-mega-tiles-hottie-pink-1?sca_ref=10217561.eoZg0pKJHSf8IQSE",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/bespoke-mahjong-bespoke-x-corey-paige-color-crush-xl-mega.jpg",
+    "kind": "crop",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "bespoke-mahjong-grateful-dead-x-bespoke-mahjong-xl-mega": {
    "name": "Grateful Dead x Bespoke Mahjong XL Mega",
    "brand": "Bespoke Mahjong",
    "tile_key": "www.bespokemahjong.com/bespoke-x-grateful-dead-xl-mega-tiles-stealie-light-blue",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": true,
    "current": "t15/123.jpg",
    "reason": "only lifestyle/graphic; clean shot is faces only",
    "product_url": "https://www.bespokemahjong.com/products/bespoke-x-grateful-dead-xl-mega-tiles-stealie-light-blue?sca_ref=10217561.eoZg0pKJHSf8IQSE",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/bespoke-mahjong-grateful-dead-x-bespoke-mahjong-xl-mega.jpg",
+    "kind": "crop",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "bespoke-mahjong-bespoke-x-gray-malin-getaway-dogs-xl-mega": {
    "name": "Bespoke X Gray Malin Getaway Dogs XL Mega",
    "brand": "Bespoke Mahjong",
    "tile_key": "www.bespokemahjong.com/bespoke-x-gray-malin-getaway-dogs-xl-mega-tiles-bright-white",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": true,
    "current": "t15/121.jpg",
    "reason": "poolside lifestyle only",
    "product_url": "https://www.bespokemahjong.com/products/bespoke-x-gray-malin-getaway-dogs-xl-mega-tiles-bright-white?sca_ref=10217561.eoZg0pKJHSf8IQSE",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/bespoke-mahjong-bespoke-x-gray-malin-getaway-dogs-xl-mega.jpg",
+    "kind": "crop",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "bespoke-mahjong-bespoke-x-gray-malin-beach-club": {
    "name": "Bespoke X Gray Malin Beach Club",
@@ -834,27 +894,39 @@
    "name": "I ❤️ Mahj",
    "brand": "Hip Hip Mahjong",
    "tile_key": "www.hiphipmahjong.com/i-love-mahj-tiles",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t15/192.jpg",
    "reason": "only image: tiles on patterned mat",
    "product_url": "https://www.hiphipmahjong.com/products/i-love-mahj-tiles",
    "tiffany_call": "just not going to work: coming_soon (single brand image)",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/hip-hip-mahjong-i-mahj.jpg",
+    "kind": "pile",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "hip-hip-mahjong-let-freedom-ring": {
    "name": "Let Freedom Ring",
    "brand": "Hip Hip Mahjong",
    "tile_key": "www.hiphipmahjong.com/let-freedom-ring",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t15/130.jpg",
    "reason": "only image: tiles on patterned mat",
    "product_url": "https://www.hiphipmahjong.com/products/let-freedom-ring",
    "tiffany_call": "just not going to work: coming_soon (single brand image)",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/hip-hip-mahjong-let-freedom-ring.jpg",
+    "kind": "pile",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "hip-hip-mahjong-mahj-o-ween": {
    "name": "Mahj-O-Ween",
@@ -872,26 +944,38 @@
    "name": "Nativity",
    "brand": "Hip Hip Mahjong",
    "tile_key": "www.hiphipmahjong.com/nativity-mahjong-tiles",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": true,
    "current": "t15/127.jpg",
    "reason": "only image: tiles on mat, hand in shot",
    "product_url": "https://www.hiphipmahjong.com/products/nativity-mahjong-tiles",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/hip-hip-mahjong-nativity.jpg",
+    "kind": "crop",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "hip-hip-mahjong-so-bam-grateful": {
    "name": "So Bam Grateful",
    "brand": "Hip Hip Mahjong",
    "tile_key": "www.hiphipmahjong.com/so-bam-grateful-mahjong-tiles",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t15/125.jpg",
    "reason": "only image: tiles on patterned mat",
    "product_url": "https://www.hiphipmahjong.com/products/so-bam-grateful-mahjong-tiles",
    "tiffany_call": "just not going to work: coming_soon (single brand image)",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/hip-hip-mahjong-so-bam-grateful.jpg",
+    "kind": "pile",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "hip-hip-mahjong-the-house": {
    "name": "The House",
@@ -1151,37 +1235,55 @@
    "name": "Laissez Les Bons Temps Rouler Collection",
    "brand": "Mac + Miller Mahjong",
    "tile_key": "www.macandmillermahjong.com/laissez-les-bons-temps-rouler-tile-set-pre-order-ships-march-2026",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t15/145.jpg",
    "reason": "tray on printed purple mat; no pile",
    "product_url": "https://www.macandmillermahjong.com/products/laissez-les-bons-temps-rouler-tile-set-pre-order-ships-march-2026",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/mac-miller-mahjong-laissez-les-bons-temps-rouler-collection.jpg",
+    "kind": "pile",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "mac-miller-mahjong-sweet-dreams-collection": {
    "name": "Sweet Dreams Collection",
    "brand": "Mac + Miller Mahjong",
    "tile_key": "www.macandmillermahjong.com/sweet-dreams-collection-tile-set",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t15/146.jpg",
    "reason": "faces only, no back/pile; rest lifestyle",
    "product_url": "https://www.macandmillermahjong.com/products/sweet-dreams-collection-tile-set",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/mac-miller-mahjong-sweet-dreams-collection.jpg",
+    "kind": "pile",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "mahj-mood-90s-taffy-pink": {
    "name": "90s Taffy (Pink)",
    "brand": "Mahj Mood",
    "tile_key": "mahjmood.com/90s-tile-set?v=58077240328495",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": true,
    "current": "t15/17.jpg",
    "reason": "current is a colour-swatch graphic; no pink pile in brand images",
    "product_url": "https://mahjmood.com/products/90s-tile-set?variant=58077240328495&ref=Mahjmatchmaker",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/mahj-mood-90s-taffy-pink.jpg",
+    "kind": "compilation",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "mahj-mood-90s-pool-party-blue": {
    "name": "90s Pool Party (Blue)",
@@ -1766,13 +1868,19 @@
    "name": "Yellow Lilac Ocean Blue",
    "brand": "Mahjong Studios",
    "tile_key": "mahjongstudios.com/mahjong-studios-american-mahjong-tile-set-yellow-lilac-ocean-blue",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": true,
    "current": "t15/41.jpg",
    "reason": "only bags/boxes/lifestyle; stays hidden",
    "product_url": "https://mahjongstudios.com/products/mahjong-studios-american-mahjong-tile-set-yellow-lilac-ocean-blue",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/mahjong-studios-yellow-lilac-ocean-blue.jpg",
+    "kind": "compilation",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "mahjong-studios-american": {
    "name": "American",
@@ -2114,49 +2222,73 @@
    "name": "Classic Jade Numbered Flower",
    "brand": "Miss Mahjong",
    "tile_key": "missmahjong.com/classic-jade-numbered-flower-tiles",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t15/63.jpg",
    "reason": "flower-tile accessory image: faces only, no back or pile on a clean background",
    "product_url": "https://missmahjong.com/products/classic-jade-numbered-flower-tiles?ref=mahjmatch",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/miss-mahjong-classic-jade-numbered-flower.jpg",
+    "kind": "crop",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "miss-mahjong-classic-malachite-numbered-flower": {
    "name": "Classic Malachite Numbered Flower",
    "brand": "Miss Mahjong",
    "tile_key": "missmahjong.com/classic-malachite-numbered-flower-tiles",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t15/64.jpg",
    "reason": "flower-tile accessory image: faces only, no back or pile on a clean background",
    "product_url": "https://missmahjong.com/products/classic-malachite-numbered-flower-tiles?ref=mahjmatch",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/miss-mahjong-classic-malachite-numbered-flower.jpg",
+    "kind": "crop",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "miss-mahjong-cowgirl-americana-numbered-flower": {
    "name": "Cowgirl Americana Numbered Flower",
    "brand": "Miss Mahjong",
    "tile_key": "missmahjong.com/cowgirl-americana-numbered-flower-tiles",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t15/60.jpg",
    "reason": "flower-tile accessory image: faces only, no back or pile on a clean background",
    "product_url": "https://missmahjong.com/products/cowgirl-americana-numbered-flower-tiles?ref=mahjmatch",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/miss-mahjong-cowgirl-americana-numbered-flower.jpg",
+    "kind": "crop",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "miss-mahjong-darling-numbered-flower": {
    "name": "Darling Numbered Flower",
    "brand": "Miss Mahjong",
    "tile_key": "missmahjong.com/darling-numbered-flower-tiles",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t15/62.jpg",
    "reason": "flower-tile accessory image: faces only, no back or pile on a clean background",
    "product_url": "https://missmahjong.com/products/darling-numbered-flower-tiles?ref=mahjmatch",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/miss-mahjong-darling-numbered-flower.jpg",
+    "kind": "crop",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "miss-mahjong-miss-catrina": {
    "name": "Miss Catrina",
@@ -2691,25 +2823,37 @@
    "name": "Classic Beechwood",
    "brand": "Tigre de Tartan",
    "tile_key": "tigredetartan.com/classic-american-mahjong-tile-set-in-beechwood",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": true,
    "current": "t15/95.jpg",
    "reason": "only shots on textiles",
    "product_url": "https://tigredetartan.com/products/classic-american-mahjong-tile-set-in-beechwood?sca_ref=11798386.tvil8GTGTp6s2",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/tigre-de-tartan-classic-beechwood.jpg",
+    "kind": "pile",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "tigre-de-tartan-house-clovers-classic": {
    "name": "House Clovers",
    "brand": "Tigre de Tartan",
    "tile_key": "tigredetartan.com/house-clovers-classic-american-mahjong-tile-set-with-signature-clover-logo",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t15/98.jpg",
    "reason": "only shots on textiles/rugs",
    "product_url": "https://tigredetartan.com/products/house-clovers-classic-american-mahjong-tile-set-with-signature-clover-logo?sca_ref=11798386.tvil8GTGTp6s2",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/tigre-de-tartan-house-clovers.jpg",
+    "kind": "crop",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "tigre-de-tartan-house-hearts-warm-white-classic": {
    "name": "House Hearts Warm White",
@@ -2727,13 +2871,19 @@
    "name": "House Tigers Oyster",
    "brand": "Tigre de Tartan",
    "tile_key": "tigredetartan.com/house-tigers-mahjong-tile-set-oyster",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t15/97.jpg",
    "reason": "only shots on textiles",
    "product_url": "https://tigredetartan.com/products/house-tigers-mahjong-tile-set-oyster?sca_ref=11798386.tvil8GTGTp6s2",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/tigre-de-tartan-house-tigers-oyster.jpg",
+    "kind": "crop",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "nivalee-blue": {
    "name": "Nivalee (Glacier Blue)",
@@ -2962,13 +3112,19 @@
    "name": "Simply",
    "brand": "Wren Mats",
    "tile_key": "www.wrenmats.com/opgv5o7mztp8eu7krduztz8x70u1ms",
-   "status": "coming_soon",
+   "status": "photo_found",
    "locked": false,
    "hidden_now": false,
    "current": "t15/170.jpg",
    "reason": "tiles on printed mat; wrenmats.com has no Shopify product JSON/other images retrievable",
    "product_url": "https://www.wrenmats.com/products/opgv5o7mztp8eu7krduztz8x70u1ms",
-   "frame": null
+   "frame": null,
+   "photo_found": {
+    "date": "2026-10-30",
+    "full": "assets/fym-photos-oct30/tiles/wren-mats-simply.jpg",
+    "kind": "crop",
+    "note": "Tiffany Oct 30 2:51am: every brand photo checked (config/fym-tile-photo-fills-oct30.json)"
+   }
   },
   "yellow-mountain-imports-harbor-tide": {
    "name": "Harbor Tide",

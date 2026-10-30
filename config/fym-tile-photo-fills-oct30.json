@@ -415,18 +415,19 @@
    "key": "www.ymimports.com/hb-at002-a",
    "name": "Outlaws of the Marsh Mahjong Treasure Set",
    "brand": "Yellow Mountain Imports",
-   "kind": "compilation",
+   "kind": "none",
    "layout": "v2",
    "old_full": "t15/177.jpg",
    "old_pile": "0fa69baad2",
-   "full": "assets/fym-photos-oct30/tiles/yellow-mountain-imports-outlaws-of-the-marsh-mahjong-treasure-set.jpg",
-   "thumb": "assets/fym-photos-oct30/thumbs/yellow-mountain-imports-outlaws-of-the-marsh-mahjong-treasure-set.jpg",
    "source_images": [
     "https://cdn.shopify.com/s/files/1/0876/1176/products/outlaws-of-the-marsh-mahjong-treasure-set-tiles-only-yellow-mountain-imports.jpg",
     "https://cdn.shopify.com/s/files/1/0876/1176/products/outlaws-of-the-marsh-mahjong-treasure-set-tiles-only-yellow-mountain-imports-2.jpg"
    ],
    "photos_checked": 2,
-   "drop_soon": true
+   "drop_soon": true,
+   "candidate_full": "assets/fym-photos-oct30/tiles/yellow-mountain-imports-outlaws-of-the-marsh-mahjong-treasure-set.jpg",
+   "candidate_thumb": "assets/fym-photos-oct30/thumbs/yellow-mountain-imports-outlaws-of-the-marsh-mahjong-treasure-set.jpg",
+   "note": "Kept 'Photo coming soon' per the Oct 26 YMI soon list (config/fym-ymi-splits-oct26.json). A faces + back + side compilation of YMI's own photos exists (candidate_full) — her call to switch it on."
   },
   {
    "key": "www.hiphipmahjong.com/i-love-mahj-tiles",
@@ -448,55 +449,55 @@
    "key": "www.ymimports.com/fx-am022-a",
    "name": "Ivory Pinstripe",
    "brand": "Yellow Mountain Imports",
-   "kind": "compilation",
+   "kind": "none",
    "layout": "hs",
    "old_full": "t72/ivory-pinstripe.jpg",
    "old_pile": "p7266c71a46ef",
-   "full": "assets/fym-photos-oct30/tiles/yellow-mountain-imports-ivory-pinstripe.jpg",
-   "thumb": "assets/fym-photos-oct30/thumbs/yellow-mountain-imports-ivory-pinstripe.jpg",
    "source_images": [
     "https://cdn.shopify.com/s/files/1/0876/1176/files/american-mahjong-set-ivory-pinstripe-166-medium-tiles-with-beige-soft-case-wooden-racks-with-pushers-scoring-coins-dice-and-wind-indicator-yellow-mountain-imports-7.jpg",
     "https://cdn.shopify.com/s/files/1/0876/1176/files/american-mahjong-set-ivory-pinstripe-166-medium-tiles-with-beige-soft-case-wooden-racks-with-pushers-scoring-coins-dice-and-wind-indicator-yellow-mountain-imports-2.jpg"
    ],
    "photos_checked": 10,
    "drop_soon": true,
-   "note": "YMI Ivory Pinstripe/Ridge share the same face-grid photo on their own pages; right panel is each set's own back close-up."
+   "note": "Kept 'Photo coming soon' per Tiffany Oct 26 8:56am (config/fym-ymi-splits-oct26.json soon): YMI Ivory Pinstripe / Ridge / Stripes brand photos don't show the difference between the three backs (Pinstripe + Ridge backs look identical; Stripes only on a rack). Candidate compilation kept for her review.",
+   "candidate_full": "assets/fym-photos-oct30/tiles/yellow-mountain-imports-ivory-pinstripe.jpg",
+   "candidate_thumb": "assets/fym-photos-oct30/thumbs/yellow-mountain-imports-ivory-pinstripe.jpg"
   },
   {
    "key": "www.ymimports.com/fx-am019-a",
    "name": "Ivory Ridge",
    "brand": "Yellow Mountain Imports",
-   "kind": "compilation",
+   "kind": "none",
    "layout": "hs",
    "old_full": "t72/ivory-ridge.jpg",
    "old_pile": "p720bfda40f62",
-   "full": "assets/fym-photos-oct30/tiles/yellow-mountain-imports-ivory-ridge.jpg",
-   "thumb": "assets/fym-photos-oct30/thumbs/yellow-mountain-imports-ivory-ridge.jpg",
    "source_images": [
     "https://cdn.shopify.com/s/files/1/0876/1176/files/american-mahjong-set-ivory-ridge-166-tiles-with-mint-green-fabric-case-wooden-racks-with-pushers-scoring-coins-dice-wind-indicator-yellow-mountain-imports-7.jpg",
     "https://cdn.shopify.com/s/files/1/0876/1176/files/american-mahjong-set-ivory-ridge-166-tiles-with-mint-green-fabric-case-wooden-racks-with-pushers-scoring-coins-dice-wind-indicator-yellow-mountain-imports-2.jpg"
    ],
    "photos_checked": 10,
    "drop_soon": true,
-   "note": "YMI Ivory Pinstripe/Ridge share the same face-grid photo on their own pages; right panel is each set's own back close-up."
+   "note": "Kept 'Photo coming soon' per Tiffany Oct 26 8:56am (config/fym-ymi-splits-oct26.json soon): YMI Ivory Pinstripe / Ridge / Stripes brand photos don't show the difference between the three backs (Pinstripe + Ridge backs look identical; Stripes only on a rack). Candidate compilation kept for her review.",
+   "candidate_full": "assets/fym-photos-oct30/tiles/yellow-mountain-imports-ivory-ridge.jpg",
+   "candidate_thumb": "assets/fym-photos-oct30/thumbs/yellow-mountain-imports-ivory-ridge.jpg"
   },
   {
    "key": "www.ymimports.com/fx-am014-a",
    "name": "Ivory Stripes",
    "brand": "Yellow Mountain Imports",
-   "kind": "compilation",
+   "kind": "none",
    "layout": "hs",
    "old_full": "t72/ivory-stripes.jpg",
    "old_pile": "p7224d79a0967",
-   "full": "assets/fym-photos-oct30/tiles/yellow-mountain-imports-ivory-stripes.jpg",
-   "thumb": "assets/fym-photos-oct30/thumbs/yellow-mountain-imports-ivory-stripes.jpg",
    "source_images": [
     "https://cdn.shopify.com/s/files/1/0876/1176/files/american-mahjong-set-ivory-stripes-166-tiles-with-beige-soft-case-wooden-racks-with-pushers-scoring-coins-dice-wind-indicator-yellow-mountain-imports-3.jpg",
     "https://cdn.shopify.com/s/files/1/0876/1176/files/american-mahjong-set-ivory-stripes-166-tiles-with-beige-soft-case-wooden-racks-with-pushers-scoring-coins-dice-wind-indicator-yellow-mountain-imports-5.jpg"
    ],
    "photos_checked": 9,
    "drop_soon": true,
-   "note": "YMI Ivory Pinstripe/Ridge share the same face-grid photo on their own pages; right panel is each set's own back close-up."
+   "note": "Kept 'Photo coming soon' per Tiffany Oct 26 8:56am (config/fym-ymi-splits-oct26.json soon): YMI Ivory Pinstripe / Ridge / Stripes brand photos don't show the difference between the three backs (Pinstripe + Ridge backs look identical; Stripes only on a rack). Candidate compilation kept for her review.",
+   "candidate_full": "assets/fym-photos-oct30/tiles/yellow-mountain-imports-ivory-stripes.jpg",
+   "candidate_thumb": "assets/fym-photos-oct30/thumbs/yellow-mountain-imports-ivory-stripes.jpg"
   },
   {
    "key": "birdandbamboo.com/the-empress-mahjong-tile-set-coming-soon",
