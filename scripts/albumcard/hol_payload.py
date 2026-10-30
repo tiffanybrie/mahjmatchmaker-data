@@ -1,7 +1,9 @@
 """Build the holiday-section payload for live album pages.
 Usage: python3 hol_payload.py <picker data5.json> <cards manifest.json> <git sha> <out.json>
 Output: {album_slug: {"tile": name, "figs": [figure html, ...]}, "_new": {tile_slug: {...}}}"""
-import json, sys, html, re
+import json, sys, html, re, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from tdt_policy import card_code, shop_url  # TdT: no visible code on their cards (Oct 30)
 R = '/home/claude/mahjmatchmaker-data/'
 D = json.load(open(sys.argv[1])); man = json.load(open(sys.argv[2])); sha = sys.argv[3]
 DD = json.load(open(R + 'data.json'))
@@ -65,13 +67,13 @@ out = {}; missing = []
 for c in man:
     slug = c['tile'] + '-mahjong-tile-matches'
     mname = re.sub(r'\s*\(.*?\)', '', c['matName']).strip()
-    url = mat_link(c['mat'], c['matName'])
+    url = shop_url(mat_link(c['mat'], c['matName']), c['brand'])
     if not url: missing.append(c['matName'])
     bh = brand_href(c['brand'])
     by = f'<a href="{bh}">{e(c["brand"])}</a>' if bh else e(c['brand'])
     alt = f"{c['tileName']} mahjong tiles with {c['brand']} {mname} holiday mahjong mat"
     img = f"https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@{sha}/assets/cards/holiday/{c['file']}"
-    code = '' if (c['brand'] in NOCODE or c['tile'] == 'coquette' or c['brand'] == 'Maison Mahj') else '<span class="mm3-code">code MAHJMATCH</span>'
+    code = '' if (c['brand'] in NOCODE or c['tile'] == 'coquette' or c['brand'] == 'Maison Mahj') else card_code(c['brand'])
     btn = f'<a class="mm3-btn" href="{e(url)}" target="_blank" rel="sponsored noopener">Shop the {e(mname)}</a>' if url else ''
     rk = []
     for k in c['racks']:

@@ -13,6 +13,7 @@ import json, os, re, sys, html, subprocess
 R = '/home/claude/mahjmatchmaker-data/'
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, R + 'scripts/albumcard')
+from tdt_policy import card_code, shop_url  # TdT: no visible code on their cards (Oct 30)
 P = json.load(open(HERE + '/picks.json'))
 F = json.load(open(R + 'config/tile-racks-picks.json'))['final_lists']
 RU = json.load(open(HERE + '/rackurls.json'))
@@ -138,9 +139,9 @@ def figures(sha):
         s = p['set']; short = SHORT.get(p['name'], p['name']); mslug = slug(p['brand'] + ' ' + p['name'])
         spec = json.load(open(HERE + f'/specs/{mslug}.json')); mr = spec.get('mat_racks') or MR[spec['mat_key']]['racks']
         file = f'{s}-mahjong-tiles-{mslug}-mat.jpg'
-        shop = SHOP.get(p['key']) or p.get('fym_u') or p['url']
+        shop = shop_url(SHOP.get(p['key']) or p.get('fym_u') or p['url'], p['brand'])
         b = html.escape(p['brand']); by = f'<a href="{CODEPAGE[p["brand"]]}">{b}</a>' if p['brand'] in CODEPAGE else b
-        code = '<span class="mm3-code">code MAHJMATCH</span>' if p['brand'] in CODEPAGE else ''
+        code = card_code(p['brand']) if p['brand'] in CODEPAGE else ''
         tiles = "Oh My Mahjong's current tiles and mats." if s in RETIRED else f"{p['setname']} tiles."
         take = TAKE[(s, short)] + ('' if p['brand'] in CODEPAGE else f" We do not have a code for {p['brand']}; code MAHJMATCH works on {tiles}")
         btn = (f'<a class="mm3-btn" href="{html.escape(shop)}" target="_blank" rel="sponsored noopener">Shop the {html.escape(short)} Mat</a>'

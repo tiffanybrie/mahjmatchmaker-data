@@ -2,8 +2,10 @@
 Mat shop links: data.json M, then work/pub/catalog.json. Rack links: data.json R + links already used in live blocks.
 Brand discount pages: the /<brand>-discount-code links already used in live/staged album blocks.
 Footer rule (Oct 18, papaya_spritz_build.py): every card carries MAHJMATCH; partner % where known."""
-import json, re, glob, html, unicodedata
+import json, re, glob, html, unicodedata, sys
 R = '/home/claude/mahjmatchmaker-data/'
+sys.path.insert(0, R + 'scripts/albumcard')
+from tdt_policy import card_code, shop_url  # TdT: no visible code on their cards (Oct 30)
 e = lambda s: html.escape(s, quote=True)
 D = json.load(open(R + 'data.json'))
 CAT = json.load(open(R + 'work/pub/catalog.json'))
@@ -57,10 +59,10 @@ def footer(brand, retired=False):
 def figure(n, img, tile_full, set_name, mat, brand, tile_racks, mat_racks, url=None, cls='mm3-c', retired=False):
     """One album card, same markup as the live/staged album blocks (Papaya + Malachite holiday captions)."""
     by = f'<a href="{BRANDPG[brand]}">{e(brand)}</a>' if brand in BRANDPG else e(brand)
-    url = url or mat_url(mat, brand)
+    url = shop_url(url or mat_url(mat, brand), brand)
     btn = f'<a class="mm3-btn" href="{e(url)}" target="_blank" rel="sponsored noopener">Shop the {e(mat)} Mat</a>' if url else ''
     if not url: MISSING_LINKS.add(f'MAT {mat} ({brand})')
-    code = '<span class="mm3-code">code MAHJMATCH</span>' if brand in PARTNERS and not retired else ''
+    code = card_code(brand) if brand in PARTNERS and not retired else ''
     cap = 'Match the tiles: ' + ' · '.join(rack_link(x) for x in tile_racks)
     if mat_racks: cap += '<br>Match the mat: ' + ' · '.join(rack_link(x) for x in mat_racks)
     alt = f'{tile_full} mahjong tiles with {brand} {mat} mahjong mat'
