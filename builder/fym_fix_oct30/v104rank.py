@@ -30,7 +30,25 @@ for s in S:
     r = s['rank']; L = len(r)
     for p, j in enumerate(r): k = O[j]; tail[k] = max(tail[k], L - p); seen[k] += 1
 STUCK = {OI[k] for k, m in M.items() if not m.get('hid') and seen[k] and tail[k] <= TAIL}
-print('stuck mats', len(STUCK))
+# also: groups of 3+ visible mats that sit next to each other in EVERY set's rank (an old block append, e.g. Oct 20 r3 Etsy adds):
+# the mat door shows them the identical tile order. Same signature the gate uses ([107]): her picks first, then rank position.
+_VS = [s for s in S if not s.get('hid')]; _sig = {}
+for k, m in M.items():
+    if m.get('hid') or k not in OI: continue
+    j = OI[k]
+    rows = sorted((0 if any(x[0] == k for x in s['m']) else 1, s['rank'].index(j) if j in s['rank'] else 10 ** 9, n) for n, s in enumerate(_VS))
+    _sig.setdefault(tuple(r[2] for r in rows[:8]), []).append(j)
+_blk = {j for v in _sig.values() if len(v) >= 3 for j in v}
+STUCK |= _blk
+print('stuck mats', len(STUCK), '(of which identical-order blocks', len(_blk), ')')
+TWIN = [(OI[k.split('#')[0]], OI[k]) for k in M if k.endswith('#side-b') and k in OI and k.split('#')[0] in OI]
+
+
+def glue(L):  # double-sided mats: side B right after side A (gate [78])
+    for ja, jb in TWIN:
+        if ja in L and jb in L:
+            L.remove(jb); L.insert(L.index(ja) + 1, jb)
+    return L
 
 
 def full_rank(script, holiday_only):
@@ -68,6 +86,8 @@ def place(cur, full, movable, front_keep):
     for j in full:
         if j in movable: (after.setdefault(last, []) if last is not None else lead).append(j)
         elif j in inbase: last = j
+    for j in base[:front_keep]:  # never inside the protected leading block (her coordinated mats): move to just after it
+        lead += after.pop(j, [])
     out = base[:front_keep] + lead + base[front_keep:] if lead else list(base)
     res = []
     for j in out:
@@ -86,26 +106,29 @@ for s in S:
     co = set(COORD.get(s['slug'], []))
     def lead_n(L):  # her coordinated brand mats sit first (v92, gate [57]): never insert ahead of them
         n = 0
-        while n < len(L) and L[n] in co: n += 1
+        while n < len(L) and (L[n] in co or (M[O[L[n]]].get('side') == 'B' and n and L[n - 1] in co)): n += 1
         return n
     # s.rank (what the mat door sorts sets by): each STUCK mat goes in at the same RELATIVE depth as its colour score in this set
     # (top 1% of the full scored list -> top 1% of rank). The anchor method (used for s.cr below) inherits the old rank's quirks.
-    base = [j for j in s['rank'] if j not in STUCK]; ln = lead_n(base); fi = {j: n for n, j in enumerate(full)}
-    ins = sorted(((max(ln, round(fi[j] / len(full) * len(base))), fi[j], j) for j in STUCK if j in fi and j in set(s['rank'])))
+    MV = STUCK - co   # her coordinated brand mats for this set keep their place (first)
+    base = [j for j in s['rank'] if j not in MV]; ln = lead_n(base); fi = {j: n for n, j in enumerate(full)}
+    inr = set(s['rank'])
+    ins = sorted(((max(ln, round(fi[j] / len(full) * len(base))), fi[j], j) for j in MV if j in fi and j in inr))
     newr = []; q = 0
     for n, j in enumerate(base):
         while q < len(ins) and ins[q][0] <= n: newr.append(ins[q][2]); q += 1
         newr.append(j)
-    newr += [x[2] for x in ins[q:]] + [j for j in s['rank'] if j in STUCK and j not in fi]
+    newr += [x[2] for x in ins[q:]] + [j for j in s['rank'] if j in MV and j not in fi]
+    newr = glue(newr)
     assert sorted(newr) == sorted(s['rank']), s['slug']
     if newr != s['rank']: s['rank'] = newr; nr += 1
     cr = s.get('cr') or []
     if cr:
-        top = set(full[:300]); movc = {j for j in STUCK if j in top}
-        keep = [j for j in cr if j not in STUCK]; ks = set(keep)
+        top = set(full[:300]); movc = {j for j in MV if j in top or j in set(cr)}
+        keep = [j for j in cr if j not in MV]; ks = set(keep)
         sub = [j for j in full if j in movc or j in ks]
         newc = place(keep + sorted(movc), sub, movc, lead_n(keep))
-        newc = [j for j in newc if j in ks or j in movc]
+        newc = glue([j for j in newc if j in ks or j in movc])
         if newc != cr: s['cr'] = newc; nc += 1
     rep[s['slug']] = [M[O[j]]['n'] + ' | ' + M[O[j]]['bn'] for j in (s.get('cr') or s['rank'])[:8]]
 h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]

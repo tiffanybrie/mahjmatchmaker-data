@@ -2438,10 +2438,10 @@
    "locked": false,
    "hidden_now": false,
    "current": "t15/67.jpg",
-   "reason": "close pile, backs + faces",
+   "reason": "Oct 30 v104 QA: sharp close pile (MFM product image 12 of 19); the Oct 21 proposal (t71) was a blurry close-up",
    "product_url": "https://myfairmahjong.com/products/lumera",
-   "proposed": "assets/tiles/catalog-better/my-fair-mahjong-the-lumera-series.jpg",
-   "source_url": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/LumeraSeriesMahjongSet_2.png?v=1782929748",
+   "proposed": "assets/fym-photos-oct30/tiles/my-fair-mahjong-the-lumera-series.jpg",
+   "source_url": "https://myfairmahjong.com/products/lumera (image 12)",
    "kind": "pile",
    "frame": {
     "fp": [
@@ -2450,7 +2450,8 @@
     ],
     "fz": 1,
     "note": "reset: old chart-photo fp no longer applies"
-   }
+   },
+   "applied": true
   },
   "my-fair-mahjong-the-new-england-series": {
    "name": "The New England Series",
