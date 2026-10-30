@@ -16,6 +16,11 @@ Checks, for every tile-set group in a tile-mode book (D.mode == 'tile'):
   [d] no holiday / hidden / skip-list (tiffany-skip-list.json) / Mahjong Studios / Splash of Color mats.
   [e] widest pool: D.pool = {src: 'fym-full-measured', n: <mats ranked>} (the full FYM catalog ranked by
       measured colour shares). Missing, or the old TIGHT pull (Oct 19 matcolors.pull, cap 60), fails.
+  [f] fresh snapshot (rules audit GA2, Oct 30): config/fym-mats-snapshot.json must be built from the NEWEST FYM build
+      (site-app/fym-vNN on the fym-site-preview branch, or the top row of docs/FYM-VERSIONS.md). Older = FAIL: run
+      scripts/swipe/fym_snapshot.py <newest FYM index.html> --version vNN, commit, then rebuild the book.
+  Holiday (Oct 30, GA2): uses the FYM `hol` flag (CLAUDE.md Oct 21 FINAL rule: only Christmas, Hanukkah, winter snow/ski).
+      Halloween / Valentine's / Easter mats are NOT holiday and are no longer excluded by name.
 Mat-mode books (groups are mats, items are tile sets) only get [e] skipped and a notice; [c]/[d] do not apply.
 
 Usage: python3 scripts/swipe/book_gate.py <book index.html> [--snapshot config/fym-mats-snapshot.json]
@@ -28,7 +33,29 @@ PH_OK = {'fym', 'fym-hires', 'canon-override'}
 ALIAS = {'sunday': 'sunday-tile-set'}
 BANNED_BRANDS = {'mahjong studios', 'splash of color'}
 HOLIDAY = re.compile(r"christmas|xmas|holly|yuletide|merriment|winterberry|nutcracker|sugarplum|\bclara\b|santa|noel|jingle|"
-                     r"candy cane|winter wonderland|mistletoe|reindeer|snowflake|halloween|spooky|valentine|easter|hanukkah", re.I)
+                     r"candy cane|winter wonderland|mistletoe|reindeer|snowflake|hanukkah", re.I)
+
+
+def _newest_fym():
+    """Newest internal FYM build number (int) from the fym-site-preview branch, else docs/FYM-VERSIONS.md."""
+    import subprocess
+    best = None
+    try:
+        subprocess.run(['git', '-C', REPO, 'fetch', '-q', 'origin', 'fym-site-preview:refs/remotes/origin/fym-site-preview'],
+                       timeout=60, capture_output=True)
+        out = subprocess.run(['git', '-C', REPO, 'ls-tree', '--name-only', 'origin/fym-site-preview', 'site-app/'],
+                             capture_output=True, text=True, timeout=30).stdout
+        nums = [int(n) for n in re.findall(r'fym-v(\d+)', out)]
+        best = max(nums) if nums else None
+    except Exception:
+        pass
+    try:
+        rows = re.findall(r'^\|\s*Version [0-9.]+\s*\|\s*v(\d+)', open(os.path.join(REPO, 'docs', 'FYM-VERSIONS.md')).read(), re.M)
+        if rows:
+            best = max([best or 0] + [int(r) for r in rows])
+    except Exception:
+        pass
+    return best
 
 
 def load_D(path):
@@ -40,7 +67,13 @@ def load_D(path):
 def gate(path, snap_path=None):
     F, notes = [], []
     D = load_D(path)
-    snap = json.load(open(snap_path or os.path.join(REPO, 'config', 'fym-mats-snapshot.json')))['mats']
+    _snapd = json.load(open(snap_path or os.path.join(REPO, 'config', 'fym-mats-snapshot.json')))
+    snap = _snapd['mats']
+    _new = _newest_fym()
+    _sv = re.match(r'v?(\d+)', str(_snapd.get('fym_version') or ''))
+    if _new and (not _sv or int(_sv.group(1)) < _new):
+        F.append(f"[f] FYM snapshot is from {_snapd.get('fym_version') or 'an unknown build'} ({_snapd.get('built')}) but the newest FYM is v{_new}: "
+                 f"run scripts/swipe/fym_snapshot.py <fym-v{_new} index.html> --version v{_new} and rebuild")
     cards = json.load(open(os.path.join(REPO, 'config', 'colorcards.json')))['sets']
     tnt = json.load(open(os.path.join(REPO, 'config', 'tnt-recs.json')))['sets']
     na = json.load(open(os.path.join(REPO, 'builder', 'fym_flags', 'nonpartner_allow.json')))
