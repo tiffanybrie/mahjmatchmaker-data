@@ -13877,7 +13877,7 @@
     [
      "shop.andersruff.com/brownstone-bloom-mahjong-mat",
      [
-      "shop.andersruff.com/tortoise-acrylic-rack-set-straight-pushers",
+      "mm:Hawksbill",
       "peacelovemahjong.com/acrylic-burlwood-mahjong-racks-pushers-set-of-4",
       "peacelovemahjong.com/mahjong-racks-racks-pushers-set-of-4",
       "bb:Lilac",
@@ -14380,9 +14380,8 @@
     [
      "shop.andersruff.com/brownstone-bloom-mahjong-mat",
      [
-      "shop.andersruff.com/tortoise-acrylic-rack-set-straight-pushers",
-      "peacelovemahjong.com/acrylic-burlwood-mahjong-racks-pushers-set-of-4",
       "mm:Hawksbill",
+      "peacelovemahjong.com/acrylic-burlwood-mahjong-racks-pushers-set-of-4",
       "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set",
       "peacelovemahjong.com/mahjong-racks-racks-pushers-set-of-4",
       "bb:Matcha"
@@ -14791,7 +14790,7 @@
     [
      "shop.andersruff.com/brownstone-bloom-mahjong-mat",
      [
-      "shop.andersruff.com/tortoise-acrylic-rack-set-straight-pushers",
+      "mm:Hawksbill",
       "peacelovemahjong.com/acrylic-burlwood-mahjong-racks-pushers-set-of-4",
       "peacelovemahjong.com/mahjong-racks-racks-pushers-set-of-4",
       "bb:Matcha"
@@ -26250,6 +26249,124 @@
     2,
     2
    ]
+  },
+  "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963728199989": {
+   "n": "Plaid Neoprene – Pink on Pink",
+   "bn": "Bam Bird Boutique",
+   "f": "m/2256.webp",
+   "th": "m1015b8df5ca",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "pink"
+   ],
+   "mt": [
+    0
+   ]
+  },
+  "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963728232757": {
+   "n": "Plaid Neoprene – Green and Blue",
+   "bn": "Bam Bird Boutique",
+   "f": "m/2257.webp",
+   "th": "m101b39efd01",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "green",
+    "dark"
+   ],
+   "mt": [
+    0,
+    1
+   ]
+  },
+  "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963852194101": {
+   "n": "Plaid Neoprene – Green with Pink",
+   "bn": "Bam Bird Boutique",
+   "f": "m/2258.webp",
+   "th": "m101ca8a8350",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "green"
+   ],
+   "mt": [
+    0
+   ]
+  },
+  "shop.andersruff.com/paws-in-the-garden-mahjong-mat": {
+   "n": "Paws in the Garden",
+   "bn": "Anders Ruff",
+   "f": "m/2259.webp",
+   "th": "m1019aa5c0dd",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "pink",
+    "green",
+    "blue"
+   ],
+   "mt": [
+    0,
+    1,
+    2
+   ]
+  },
+  "letsbebesties.com/tidal-glass-mahjong-mat": {
+   "n": "Tidal Glass",
+   "bn": "Let's Be Besties",
+   "f": "m/2260.webp",
+   "th": "m101dad3c174",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "blue",
+    "purple"
+   ],
+   "mt": [
+    0,
+    1
+   ]
+  },
+  "letsbebesties.com/retro-riviera-mahjong-mat": {
+   "n": "Retro Riviera",
+   "bn": "Let's Be Besties",
+   "f": "m/2261.webp",
+   "th": "m101a2e7e028",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "red",
+    "dark",
+    "orange",
+    "blue"
+   ],
+   "mt": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  "letsbebesties.com/retro-riviera-simple-middle-mahjong-mat": {
+   "n": "Retro Riviera Simple Middle",
+   "bn": "Let's Be Besties",
+   "f": "m/2262.webp",
+   "th": "m101a4004c92",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "red",
+    "dark",
+    "orange",
+    "blue"
+   ],
+   "mt": [
+    0,
+    1,
+    2,
+    3
+   ]
   }
  },
  "_changes": [
@@ -26346,6 +26463,8 @@
   "2026-10-26: Bam Bird Classic Tortoise pile -> scatter composite (Tiffany 10:45am yes)",
   "2026-10-26: Bespoke double-sided mats listed twice (Side A / Side B names + side-B entries; Tiffany 11:41am)",
   "2026-10-26: 5 My Fair Mahjong sets + YMI Mojave unhidden (stale no_tiles flag from the old photo; Tiffany 5:45pm), Crystal Confetti + Prism on close brand photos (v97_mfm.py)",
-  "2026-10-27 v101: partner sweep mats (Britt Mills House Print, TdT Domino Blonde + Estate Sale + Fair Isle Cashmere (hidden), Bespoke x Brooks Brothers Oxford Classic A/B, PLM Vegan Leather x4) + Spirit of Christmas tile set (her Spirit swipe book picks)"
+  "2026-10-27 v101: partner sweep mats (Britt Mills House Print, TdT Domino Blonde + Estate Sale + Fair Isle Cashmere (hidden), Bespoke x Brooks Brothers Oxford Classic A/B, PLM Vegan Leather x4) + Spirit of Christmas tile set (her Spirit swipe book picks)",
+  "2026-10-30 v104 partner sweep mats: Bam Bird Plaid Neoprene x3 colourways, Anders Ruff Paws in the Garden, Let's Be Besties Tidal Glass / Retro Riviera / Retro Riviera Simple Middle",
+  "2026-10-30 v104 Brownstone Bloom mat racks: M&M Hawksbill Heritage Tortoise replaces AR Tortoise (Tiffany Oct 29, config/mat-racks-picks.json)"
  ]
 }

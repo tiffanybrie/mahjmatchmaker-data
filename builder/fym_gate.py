@@ -1312,6 +1312,18 @@ try:
             W104.append(f"README 0a pin @{_pin104.group(1)[:8]} loads site-app/fym-v{'/'.join(sorted(_ref)) or '?'}, not the newest fym-v{_nn104[-1]} (update the README pin)")
 except Exception as _e:
     W104.append(f"version check did not run: {_e}")
+# [106] Oct 30 (Tiffany 2:51am: "you can't just say you don't have a photo and not go to the website, look through all the photos";
+#       Anders Ruff Mahj in Bloom had a tile-pile shot and showed 'Photo coming soon'). A visible tile set may show the placeholder
+#       (T.soon) ONLY if config/fym-tile-photo-fills-*.json logs it as kind 'none' with photos_checked > 0 (every brand photo looked at).
+try:
+    import glob as _gl106
+    _ok106 = set()
+    for _f106 in _gl106.glob(REPO + 'config/fym-tile-photo-fills-*.json'):
+        for _e106 in json.load(open(_f106)).get('tiles', []):
+            if _e106.get('kind') == 'none' and int(_e106.get('photos_checked') or 0) > 0: _ok106.add(_e106['key'])
+    _bad106 = [f"{T[s['tile']].get('bn', '')} {s['name']}" for s in D['sets'] if vis(s) and T.get(s['tile'], {}).get('soon') and s['tile'] not in _ok106]
+    if _bad106: F.append(f"[106] {len(_bad106)} visible tile sets show 'Photo coming soon' without a logged check of every brand photo (config/fym-tile-photo-fills-*.json kind 'none', photos_checked > 0): " + '; '.join(_bad106[:15]))
+except Exception as _e: F.append(f"[106] placeholder photo check did not run: {_e}")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))

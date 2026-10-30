@@ -116,7 +116,7 @@ CSS = '''.blv{grid-column:1/-1;margin:2px 0 6px}.blv .blq{text-align:center;font
 .tgrid .blg .bli img{width:auto;height:auto;max-width:100%;max-height:100%;aspect-ratio:auto;border-radius:0;object-fit:contain}
 .tgrid .blg{border:1.5px solid #f2d3de;padding:10px 7px 9px;justify-content:flex-start}.tgrid .blgrid.np .blg{border-color:#ece6ea;padding:7px 6px}
 .tgrid .blg b{font:700 12px/1.2 var(--body)}.tgrid .blg small{font:500 10.5px var(--body)}
-.tgrid .blg em{font:800 9px/1.25 var(--body);font-style:normal;letter-spacing:0;white-space:normal;text-align:center;max-width:100%;margin-top:auto;padding:3px 9px;align-self:center}
+.tgrid .blg em{font:800 9px/1.25 var(--body);font-style:normal;letter-spacing:0;white-space:nowrap;text-align:center;max-width:100%;margin-top:auto;padding:3px 9px;align-self:center}
 .blback{grid-column:1/-1;justify-self:start;border:1.5px solid #c8325f;border-radius:999px;background:#fff;color:#c8325f;font:700 12.5px var(--body);padding:4px 12px;cursor:pointer;margin:0 0 4px}
 '''
 k = h.rindex('</style></head>'); h = h[:k] + CSS + h[k:]
@@ -125,8 +125,8 @@ k = h.rindex('</style></head>'); h = h[:k] + CSS + h[k:]
 rep('function brandMenu(){', JS_BL + '''const BPA=m=>!!BCODE[m];
 function blogoView(){const all=D.sets.filter(VIS),n={};all.forEach(s=>{n[s.maker]=(n[s.maker]||0)+1;});const ix=m=>{const k=BLORD.indexOf(m);return k<0?1e3-n[m]:k;};
  const B=Object.keys(n).sort((a,b)=>ix(a)-ix(b)||a.localeCompare(b)),P=B.filter(BPA),NP=B.filter(m=>!BPA(m));
- const one=m=>`<button type="button" class="blg" data-blogo="${esc(m)}" aria-label="${esc(m)}: ${n[m]} tile sets"><span class="bli">${BLOGO[m]?`<img src="${BLOGO[m]}" alt="" loading="lazy">`:`<span class="blt">${esc(m)}</span>`}</span>${BLOGO[m]?`<b>${esc(m)}</b>`:''}<small>${n[m]} tile set${n[m]>1?'s':''}</small>${BPA(m)?'<em>Save with MAHJMATCH</em>':''}</button>`;
- return `<div class="blv" id="blv"><p class="blq">Pick your tiles: tap a brand, a colour, or search your set</p><h4 class="blh">Partner brands \\u00b7 save 10% or more with code MAHJMATCH</h4><div class="blgrid">${P.map(one).join('')}</div>${NP.length?`<h4 class="blh np">More brands \\u00b7 no discount</h4><div class="blgrid np">${NP.map(one).join('')}</div>`:''}</div>`;}
+ const one=m=>`<button type="button" class="blg" data-blogo="${esc(m)}" aria-label="${esc(m)}: ${n[m]} tile sets"><span class="bli">${BLOGO[m]?`<img src="${BLOGO[m]}" alt="" loading="lazy">`:`<span class="blt">${esc(m)}</span>`}</span>${BLOGO[m]?`<b>${esc(m)}</b>`:''}<small>${n[m]} tile set${n[m]>1?'s':''}</small>${BPA(m)?'<em>Code MAHJMATCH</em>':''}</button>`;
+ return `<div class="blv" id="blv"><p class="blq">Pick your tiles: tap a brand, a color, or search your set</p><h4 class="blh">Partner brands \\u00b7 save 10% or more with code MAHJMATCH</h4><div class="blgrid">${P.map(one).join('')}</div>${NP.length?`<h4 class="blh np">More brands \\u00b7 no discount</h4><div class="blgrid np">${NP.map(one).join('')}</div>`:''}</div>`;}
 function brandMenu(){''')
 rep("if(S.tbrand)return all.filter(x=>x[0].maker===S.tbrand)",
     "if(S.tbrand)return '<button type=\"button\" class=\"blback\" data-blogo=\"\">\\u2039 All brands</button>'+all.filter(x=>x[0].maker===S.tbrand)")
