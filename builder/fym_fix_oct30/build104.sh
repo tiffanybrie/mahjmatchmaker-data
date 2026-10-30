@@ -7,4 +7,5 @@ python3 $R/builder/fym_fix_oct30_logos.py "$S" "$D"
 python3 $H/partneradds.py "$D"
 python3 $R/builder/fym_fix_oct25/strip_inline_img.py "$D/index.html" write
 python3 $H/v104data.py "$D"
+python3 $H/v104rank.py "$D"   # QA E1: appended mats colour-ranked into s.rank / s.cr
 grep -c "Version 1.8" "$D/index.html"

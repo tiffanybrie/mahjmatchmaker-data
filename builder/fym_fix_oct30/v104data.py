@@ -24,6 +24,7 @@ for e in F['tiles']:
     pk = 'p104' + hashlib.md5(e['key'].encode()).hexdigest()[:10]
     IMG[pk] = 'data:image/jpeg;base64,' + base64.b64encode(b.getvalue()).decode()
     t['full'] = fn; t['pile'] = pk; t.pop('soon', None); t['src'] = e['full']; n += 1
+    t.pop('fo', None); t.pop('bf', None)  # the old reframed copy / band anchor belonged to the old photo (QA refill Oct 30)
 w = T.get('www.wrenmats.com/opgv5o7mztp8eu7krduztz8x70u1ms')
 if w: w['u'] = 'https://www.wrenmats.com/shop-tiles/p/opgv5o7mztp8eu7krduztz8x70u1ms'
 # Brownstone

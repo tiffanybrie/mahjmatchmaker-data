@@ -5,7 +5,7 @@
    "key": "amahjline.com/homestead-stamped-tile-line",
    "name": "Round Top Stamped",
    "brand": "Amahj",
-   "kind": "compilation",
+   "kind": "crop",
    "layout": "v2",
    "old_full": "t15/2.jpg",
    "old_pile": "4139c2a286",
@@ -16,7 +16,9 @@
     "https://cdn.shopify.com/s/files/1/0675/3805/9486/files/D518F7BA-4C11-4F77-82B1-1380C057FC70.jpg"
    ],
    "photos_checked": 8,
-   "drop_soon": true
+   "drop_soon": true,
+   "src_file": "roundtop/00.jpg (amahjline.com product image 1 of 8: the full set laid out)",
+   "note": "Oct 30 v104 QA refill: previous photo did not fill the frame (white margins / small tiles / blurry); every product photo re-checked, pile shot used where the brand has one, else tight crop of the full-set flat-lay"
   },
   {
    "key": "mahjmood.com/90s-tile-set?v=58077240328495",
@@ -52,7 +54,8 @@
     "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/12_c6e6b761-185d-45f2-b1ee-111d19f17e5a.png"
    ],
    "photos_checked": 14,
-   "drop_soon": true
+   "drop_soon": true,
+   "note": "Oct 30 QA refill: tighter crop of each colourway pile (was 28% white margin)"
   },
   {
    "key": "missmahjong.com/cowgirl-americana-numbered-flower-tiles",
@@ -158,7 +161,7 @@
    "key": "shop.andersruff.com/house-of-hydrangea-mahjong-tile-set",
    "name": "House of Hydrangea",
    "brand": "Anders Ruff",
-   "kind": "crop",
+   "kind": "pile",
    "layout": "single",
    "old_full": "t15/81.jpg",
    "old_pile": "06e0896a0c",
@@ -168,7 +171,9 @@
     "https://cdn.shopify.com/s/files/1/0593/2200/7719/files/Hydrangea-Mahjong-TIles.jpg"
    ],
    "photos_checked": 9,
-   "drop_soon": true
+   "drop_soon": true,
+   "src_file": "hydrangea/03.jpg",
+   "note": "Oct 30 v104 QA refill: previous photo did not fill the frame (white margins / small tiles / blurry); every product photo re-checked, pile shot used where the brand has one, else tight crop of the full-set flat-lay"
   },
   {
    "key": "tigredetartan.com/classic-american-mahjong-tile-set-in-beechwood",
@@ -514,6 +519,136 @@
    ],
    "photos_checked": 6,
    "note": "QA v103: old photo on black. New = the brand pile shot with the black frame cut off."
+  },
+  {
+   "key": "www.bespokemahjong.com/lucky-charms-marshmallow",
+   "name": "Lucky Charms (Marshmallow Pink)",
+   "brand": "Bespoke Mahjong",
+   "kind": "crop",
+   "full": "assets/fym-photos-oct30/tiles/bespoke-mahjong-lucky-charms-marshmallow-pink.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/bespoke-mahjong-lucky-charms-marshmallow-pink.jpg",
+   "photos_checked": 14,
+   "src_file": "lucky-charms/01.jpg",
+   "note": "Oct 30 v104 QA refill: previous photo did not fill the frame (white margins / small tiles / blurry); every product photo re-checked, pile shot used where the brand has one, else tight crop of the full-set flat-lay",
+   "old_full": "t87/bespoke-mahjong-lucky-charms-marshmallow-pink.jpg",
+   "old_pile": "p87c23d5bf777"
+  },
+  {
+   "key": "www.bespokemahjong.com/pop-diva",
+   "name": "Pop Diva (Bright White)",
+   "brand": "Bespoke Mahjong",
+   "kind": "pile",
+   "full": "assets/fym-photos-oct30/tiles/bespoke-mahjong-pop-diva-bright-white.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/bespoke-mahjong-pop-diva-bright-white.jpg",
+   "photos_checked": 21,
+   "src_file": "pop-diva/02.jpg",
+   "note": "Oct 30 v104 QA refill: previous photo did not fill the frame (white margins / small tiles / blurry); every product photo re-checked, pile shot used where the brand has one, else tight crop of the full-set flat-lay",
+   "old_full": "t87/bespoke-mahjong-pop-diva-bright-white.jpg",
+   "old_pile": "p87f0a9adbe01"
+  },
+  {
+   "key": "www.bespokemahjong.com/springtimesafaripetalpink",
+   "name": "Springtime Safari (Petal Pink)",
+   "brand": "Bespoke Mahjong",
+   "kind": "crop",
+   "full": "assets/fym-photos-oct30/tiles/bespoke-mahjong-springtime-safari-petal-pink.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/bespoke-mahjong-springtime-safari-petal-pink.jpg",
+   "photos_checked": 7,
+   "src_file": "safari-pink/01.jpg",
+   "note": "Oct 30 v104 QA refill: previous photo did not fill the frame (white margins / small tiles / blurry); every product photo re-checked, pile shot used where the brand has one, else tight crop of the full-set flat-lay",
+   "old_full": "t87/bespoke-mahjong-springtime-safari-petal-pink.jpg",
+   "old_pile": "p87d5f0113742"
+  },
+  {
+   "key": "www.bespokemahjong.com/springtimesafariskyblue",
+   "name": "Springtime Safari (Sky Blue)",
+   "brand": "Bespoke Mahjong",
+   "kind": "pile",
+   "full": "assets/fym-photos-oct30/tiles/bespoke-mahjong-springtime-safari-sky-blue.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/bespoke-mahjong-springtime-safari-sky-blue.jpg",
+   "photos_checked": 13,
+   "src_file": "safari-blue/03.jpg",
+   "note": "Oct 30 v104 QA refill: previous photo did not fill the frame (white margins / small tiles / blurry); every product photo re-checked, pile shot used where the brand has one, else tight crop of the full-set flat-lay",
+   "old_full": "t87/bespoke-mahjong-springtime-safari-sky-blue.jpg",
+   "old_pile": "p87e5dc8e72e7"
+  },
+  {
+   "key": "www.bespokemahjong.com/the-chalet-frostypearlwhite",
+   "name": "The Chalet (Frosty Pearl White)",
+   "brand": "Bespoke Mahjong",
+   "kind": "pile",
+   "full": "assets/fym-photos-oct30/tiles/bespoke-mahjong-the-chalet-frosty-pearl-white.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/bespoke-mahjong-the-chalet-frosty-pearl-white.jpg",
+   "photos_checked": 11,
+   "src_file": "chalet-white/08.jpg",
+   "note": "Oct 30 v104 QA refill: previous photo did not fill the frame (white margins / small tiles / blurry); every product photo re-checked, pile shot used where the brand has one, else tight crop of the full-set flat-lay",
+   "old_full": "t87/bespoke-mahjong-the-chalet-frosty-pearl-white.jpg",
+   "old_pile": "p87b23744d9af"
+  },
+  {
+   "key": "www.bespokemahjong.com/pearlcream",
+   "name": "Year of the Horse (Pearl Cream)",
+   "brand": "Bespoke Mahjong",
+   "kind": "crop",
+   "full": "assets/fym-photos-oct30/tiles/bespoke-mahjong-year-of-the-horse-pearl-cream.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/bespoke-mahjong-year-of-the-horse-pearl-cream.jpg",
+   "photos_checked": 19,
+   "src_file": "horse-cream/01.jpg",
+   "note": "Oct 30 v104 QA refill: previous photo did not fill the frame (white margins / small tiles / blurry); every product photo re-checked, pile shot used where the brand has one, else tight crop of the full-set flat-lay",
+   "old_full": "t94/bespoke-year-of-the-horse-pearl-cream.jpg",
+   "old_pile": "pb9429e2e6a1aa"
+  },
+  {
+   "key": "www.bespokemahjong.com/gardenglowtiles",
+   "name": "Garden Glow (Matcha Pearl)",
+   "brand": "Bespoke Mahjong",
+   "kind": "pile",
+   "full": "assets/fym-photos-oct30/tiles/bespoke-mahjong-garden-glow-matcha-pearl.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/bespoke-mahjong-garden-glow-matcha-pearl.jpg",
+   "photos_checked": 14,
+   "src_file": "garden-glow/11.jpg",
+   "note": "Oct 30 v104 QA refill: previous photo did not fill the frame (white margins / small tiles / blurry); every product photo re-checked, pile shot used where the brand has one, else tight crop of the full-set flat-lay",
+   "old_full": "t87/bespoke-mahjong-garden-glow-matcha-pearl.jpg",
+   "old_pile": "p87bca5a4c78b"
+  },
+  {
+   "key": "www.bespokemahjong.com/bespoke-x-corey-paige-color-crush-set-pearl",
+   "name": "Corey Paige Color Crush (Pearl Crush)",
+   "brand": "Bespoke Mahjong",
+   "kind": "pile",
+   "full": "assets/fym-photos-oct30/tiles/bespoke-mahjong-corey-paige-color-crush-pearl-crush.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/bespoke-mahjong-corey-paige-color-crush-pearl-crush.jpg",
+   "photos_checked": 7,
+   "src_file": "cp-pearl/05.jpg",
+   "note": "Oct 30 v104 QA refill: previous photo did not fill the frame (white margins / small tiles / blurry); every product photo re-checked, pile shot used where the brand has one, else tight crop of the full-set flat-lay",
+   "old_full": "t87/bespoke-mahjong-corey-paige-color-crush-pearl-crush.jpg",
+   "old_pile": "p8767d1ebad6a"
+  },
+  {
+   "key": "www.bespokemahjong.com/bespoke-x-corey-paige-color-crush-set-white",
+   "name": "Corey Paige Color Crush (Bright White)",
+   "brand": "Bespoke Mahjong",
+   "kind": "pile",
+   "full": "assets/fym-photos-oct30/tiles/bespoke-mahjong-corey-paige-color-crush-bright-white.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/bespoke-mahjong-corey-paige-color-crush-bright-white.jpg",
+   "photos_checked": 14,
+   "src_file": "cp-white/10.jpg",
+   "note": "Oct 30 v104 QA refill: previous photo did not fill the frame (white margins / small tiles / blurry); every product photo re-checked, pile shot used where the brand has one, else tight crop of the full-set flat-lay",
+   "old_full": "t94/bespoke-corey-paige-color-crush-bright-white.jpg",
+   "old_pile": "pb9421555adf2e"
+  },
+  {
+   "key": "myfairmahjong.com/lumera",
+   "name": "The Lumera Series",
+   "brand": "My Fair Mahjong",
+   "kind": "pile",
+   "full": "assets/fym-photos-oct30/tiles/my-fair-mahjong-the-lumera-series.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/my-fair-mahjong-the-lumera-series.jpg",
+   "photos_checked": 19,
+   "src_file": "lumera/11.jpg",
+   "note": "Oct 30 v104 QA refill: previous photo did not fill the frame (white margins / small tiles / blurry); every product photo re-checked, pile shot used where the brand has one, else tight crop of the full-set flat-lay",
+   "old_full": "t71/my-fair-mahjong-the-lumera-series.jpg",
+   "old_pile": "p713f331fd594"
   }
  ],
  "mats": [

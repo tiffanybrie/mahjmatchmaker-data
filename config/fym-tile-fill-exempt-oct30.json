@@ -1,0 +1,21 @@
+{
+ "_about": "Gate [108] exemptions: tile photos whose large plain-white areas are the tiles themselves (white faces with fine line art, laid flat), not background. Only add after looking at the photo. Oct 30 (Matches & Catalog, v104 QA).",
+ "tiles": {
+  "missmahjong.com/cowgirl-americana-numbered-flower-tiles": {
+   "name": "Cowgirl Americana Numbered Flower",
+   "reason": "8-tile Miss Mahjong flower add-on; the brand has ONE photo (6 white-faced tiles on white, cropped tight); the white is the tile faces"
+  },
+  "missmahjong.com/darling-numbered-flower-tiles": {
+   "name": "Darling Numbered Flower",
+   "reason": "8-tile Miss Mahjong flower add-on; the brand has ONE photo (6 white-faced tiles on white, cropped tight); the white is the tile faces"
+  },
+  "missmahjong.com/classic-jade-numbered-flower-tiles": {
+   "name": "Classic Jade Numbered Flower",
+   "reason": "8-tile Miss Mahjong flower add-on; the brand has ONE photo (6 white-faced tiles on white, cropped tight); the white is the tile faces"
+  },
+  "missmahjong.com/classic-malachite-numbered-flower-tiles": {
+   "name": "Classic Malachite Numbered Flower",
+   "reason": "8-tile Miss Mahjong flower add-on; the brand has ONE photo (6 white-faced tiles on white, cropped tight); the white is the tile faces"
+  }
+ }
+}

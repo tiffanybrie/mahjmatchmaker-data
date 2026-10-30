@@ -52,6 +52,7 @@ FILES = {  # brands with no logo in the app yet
     'Sunday Mahjong': 'assets/brand/partner-logos/sunday.png',
     'Royal Mahjong Society': 'assets/brand/fym-logo-src/royal-mahjong-society.png',   # theroyalmahjongsociety.com header logo
     'Tala Mahj': 'assets/brand/fym-logo-src/tala-mahj.png',                           # talamahj.com header logo
+    'Miss Mahjong': 'assets/brand/fym-logo-src/miss-mahjong-stacked.png',            # QA Oct 30: the app's 260x63 wordmark read tiny + faint; same logo stacked (shell over name), strokes darkened
 }
 RECOLOR = {'Tala Mahj': (176, 140, 40)}  # pale #fbe98f on white is invisible -> deeper gold, same shape
 BOX = (360, 150)
@@ -105,7 +106,7 @@ JS_BL = 'const BLOGO=' + json.dumps(BL, ensure_ascii=False) + ';const BLORD=' + 
 # ---------- 3. CSS
 CSS = '''.blv{grid-column:1/-1;margin:2px 0 6px}.blv .blq{text-align:center;font:600 13.5px/1.35 var(--body);color:var(--navy);margin:2px 4px 10px}
 .blh{font:800 11.5px var(--body);letter-spacing:.1em;text-transform:uppercase;color:#c8325f;margin:4px 2px 8px;text-align:center}.blh.np{color:var(--mute);margin-top:18px}
-.blgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}@media (min-width:700px){.blgrid{grid-template-columns:repeat(4,minmax(0,1fr))}}@media (min-width:1000px){.blgrid{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.blgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}@media (min-width:700px){.blgrid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .blg{background:#fff;border:1.5px solid #f2d3de;border-radius:16px;padding:10px 7px 9px;display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;font:inherit;color:inherit;box-shadow:0 2px 8px rgba(163,40,90,.06);transition:transform .12s,border-color .12s}.blg:hover{border-color:#c8325f;transform:translateY(-1px)}
 .blg .bli{width:100%;aspect-ratio:12/5;display:flex;align-items:center;justify-content:center}.blg .bli img{max-width:100%;max-height:100%;object-fit:contain}
 .blg .blt{font:700 italic 14px/1.15 'Playfair Display',Georgia,serif;color:var(--navy);text-align:center}

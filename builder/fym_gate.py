@@ -1324,6 +1324,53 @@ try:
     _bad106 = [f"{T[s['tile']].get('bn', '')} {s['name']}" for s in D['sets'] if vis(s) and T.get(s['tile'], {}).get('soon') and s['tile'] not in _ok106]
     if _bad106: F.append(f"[106] {len(_bad106)} visible tile sets show 'Photo coming soon' without a logged check of every brand photo (config/fym-tile-photo-fills-*.json kind 'none', photos_checked > 0): " + '; '.join(_bad106[:15]))
 except Exception as _e: F.append(f"[106] placeholder photo check did not run: {_e}")
+# [107] Oct 30 (v104 QA E1): new mats were APPENDED to the end of every set's s.rank (and left out of s.cr), so in the mat door
+#       (setsForMat sorts sets by s.rank position) all 7 Oct 30 partner mats showed the SAME tile order (non-partner Coquette first)
+#       and ~65 earlier adds had the same bug. Fix: builder/fym_fix_oct30/v104rank.py. Fails if a visible mat sits in the last
+#       TAIL slots of every set's rank (never ranked), or if 3+ visible mats share an identical mat-door top-8 set order.
+try:
+    _O107 = D['order']; _pos107 = {}
+    for s_ in D['sets']:
+        _r = s_.get('rank') or []; _L = len(_r)
+        for _p, _j in enumerate(_r): k_ = _O107[_j]; _pos107[k_] = max(_pos107.get(k_, 0), _L - _p)
+    _st107 = [f"{M[k_].get('bn', '')} {M[k_]['n']}" for k_, v_ in _pos107.items() if k_ in M and not M[k_].get('hid') and not M[k_].get('hol') and v_ <= 130]
+    if _st107: F.append(f"[107] {len(_st107)} visible mats were appended to the tail of every set's ranking instead of colour-ranked (run builder/fym_fix_oct30/v104rank.py): " + '; '.join(_st107[:12]))
+    _vs107 = [s_ for s_ in D['sets'] if vis(s_)]; _sig107 = {}
+    _OI107 = {k_: j_ for j_, k_ in enumerate(_O107)}
+    for k_, m_ in M.items():
+        if m_.get('hid') or k_ not in _OI107: continue
+        _ix = _OI107[k_]
+        _rows = sorted((0 if any(x[0] == k_ for x in s_['m']) else 1, s_['rank'].index(_ix) if _ix in s_['rank'] else 10 ** 9, n_) for n_, s_ in enumerate(_vs107))
+        _sig107.setdefault(tuple(r_[2] for r_ in _rows[:8]), []).append(m_['n'])
+    _dup107 = [v_ for v_ in _sig107.values() if len(v_) >= 3]
+    if _dup107: F.append(f"[107] {len(_dup107)} groups of 3+ mats show an identical mat-door tile order (un-ranked appends): " + '; '.join(', '.join(v_[:4]) for v_ in _dup107[:5]))
+except Exception as _e: F.append(f"[107] appended-mat rank check did not run: {_e}")
+# [108] Oct 30 (v104 QA: Bespoke XL Mega flat-lays, Round Top Stamped, House of Hydrangea, Lumera did not fill the frame). Gate [45]
+#       only measures the wide match-card BAND (>= 12% not-white) of each photo, so a full-set flat-lay with big white margins, a
+#       bag shot with tiles in one corner or a blurry close-up all passed it; nothing checked the square swipe photo / round picker
+#       thumbnail. New standard for every tile photo added from v104 on (t1NN/ folders, NN >= 104): the centre-square circle may be
+#       at most 11% LARGE empty background (border-connected white/black, opened with a 14px square at 200px so gaps between tiles
+#       and white faces with line art don't count). Exemptions (white tiles laid flat, one brand photo): config/fym-tile-fill-exempt-oct30.json.
+try:
+    from scipy import ndimage as _nd108
+    _ex108 = json.load(open(REPO + 'config/fym-tile-fill-exempt-oct30.json'))['tiles'] if os.path.exists(REPO + 'config/fym-tile-fill-exempt-oct30.json') else {}
+    def _empty108(path, k=14):
+        im = Image.open(path).convert('RGB'); S_ = min(im.size)
+        im = im.crop(((im.width - S_) // 2, (im.height - S_) // 2, (im.width + S_) // 2, (im.height + S_) // 2)).resize((200, 200))
+        a = np.asarray(im).astype(int); flat = ((a.min(2) > 232) & ((a.max(2) - a.min(2)) < 20)) | (a.max(2) < 30)
+        big = _nd108.binary_opening(flat, structure=np.ones((k, k))); lab, _ = _nd108.label(big)
+        bd = set(np.unique(np.concatenate([lab[0], lab[-1], lab[:, 0], lab[:, -1]]))) - {0}
+        bg = np.isin(lab, list(bd)); yy, xx = np.mgrid[:200, :200]; circ = ((yy - 100) ** 2 + (xx - 100) ** 2) <= 100 ** 2
+        return float(bg[circ].mean())
+    _b108 = []
+    for s_ in D['sets']:
+        t_ = T.get(s_['tile']) or {}
+        f_ = t_.get('full') or ''; mm_ = re.match(r't(\d+)/', f_)
+        if not vis(s_) or t_.get('soon') or not mm_ or int(mm_.group(1)) < 104 or s_['tile'] in _ex108 or not os.path.exists(os.path.join(B, f_)): continue
+        v_ = _empty108(os.path.join(B, f_))
+        if v_ > 0.11: _b108.append(f"{s_['name']} ({s_['maker']}) {v_:.2f}")
+    if _b108: F.append(f"[108] {len(_b108)} new tile photos don't fill the frame (large empty background in the swipe photo / picker circle): " + '; '.join(_b108[:12]))
+except Exception as _e: F.append(f"[108] tile frame-fill check did not run: {_e}")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))
