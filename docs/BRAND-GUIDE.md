@@ -44,6 +44,7 @@ Mahj Matchmaker (mahjmatchmaker.com, @mahjmatchmaker) is Tiffany's mahjong match
 Brand-specific code rules:
 - **LoveShackFancy** collab items never take a code. Link straight to the product, with no code.
 - **Maison Mahj** (updated Oct 29): its program switched from links to codes (UpPromote, Jun 21 2026), and the brand's own email asks affiliates to share the code. Code **MAHJMATCH** = complimentary shipping on **tile set** orders only (no % off). There is no affiliate link: link plain maisonmahj.com. A Maison mat never carries a discount promise. Don't announce it as a new code.
+- **Noli June** (Oct 30): code **MAHJMATCH** = 10% off the brand's eligible collections with a **$100 minimum** (always say the minimum, e.g. "10% off orders of $100+ with code MAHJMATCH"). Link https://nolijune.com/MAHJMATCH or product deep links nolijune.com/discount/MAHJMATCH?dt_id=3655694&redirect=%2Fproducts%2F<handle>. Normal partner language; never call it a "new code". IG @nolijunemahjong (footer).
 - **Sunday Mahjong** has no code. It's an honorary partner, and we say "no code at this time".
 - **Tigre de Tartán** (affiliate policy Oct 29; Tiffany Oct 30 12:00am): the TdT code is shown ONLY as an image (hub + brand page graphic). Never type MAHJMATCH (or #MahjMatch) in the same caption, FB text, alt text, title, meta or FAQ as Tigre de Tartán's name; no TdT code on coupon/deal sites; never repost their reels with our code. content_lint `tdt-policy` fails it.
 - **Paige Spearin x Tigre de Tartán** collabs earn nothing. Never go out of our way to feature them.
@@ -441,6 +442,7 @@ Never put drop shadows or other effects on text.
 | Oct 27 | Restocks / brand news: never a feed post. Reshare the brand's post or story to our stories + ONE companion story frame (her matches / album / code MAHJMATCH, link sticker). |
 | Oct 29 | Maison Mahj is a code partner: MAHJMATCH = complimentary shipping on tile set orders only, plain brand link (Tiffany 11:07pm; replaces the old 'never post its code' rule). |
 | Oct 30 | Tigre de Tartán: code only as an image; brand name and MAHJMATCH never in the same text or caption (TdT policy Oct 29; Tiffany 12:00am). Enforced by content_lint `tdt-policy`. |
+| Oct 30 | Noli June is a partner: MAHJMATCH = 10% off eligible collections, $100 minimum; say the minimum; normal partner language, not "new code" (Tiffany 9:04am). |
 
 ---
 

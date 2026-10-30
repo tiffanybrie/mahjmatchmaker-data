@@ -10,7 +10,7 @@ Counts: FB group list 34 brands (Maison Mahj added Oct 29 late per Tiffany 11:07
 Length: IG/FB Page captions run past the 350-character caption rule on purpose; the typed list is the point (her Oct 29 yes to "every brand name + MAHJMATCH typed out"). The hook before the list is under 350.
 
 ## 1. Facebook group post (Claude posts from her account on her yes)
-Image: assets/hub/partner-brands-2026-10-29.jpg (37 logos incl. Maison Mahj). The Instagram + FB Page posts keep assets/hub/partner-brands-2026-10-28.jpg (no Maison line there).
+Image: assets/hub/partner-brands-2026-10-30.jpg (38 logos incl. Maison Mahj + Noli June; Oct 30 onboarding run). Older: assets/hub/partner-brands-2026-10-29.jpg (37). The Instagram + FB Page posts keep assets/hub/partner-brands-2026-10-28.jpg (no Maison line there).
 [Heading (H1)] 💸🀄 Partner Codes, All in One Place 🀄💸
 
 Good morning! It's been a BIG week, y'all, so here's your roundup plus every partner code typed out so you can find it anytime.
@@ -59,6 +59,7 @@ Middle & Main Mahjong: 10% off with code MAHJMATCH
 Mini Mahjer: 10% off with code MAHJMATCH
 Miss Mahjong: 10% off with code MAHJMATCH
 My Fair Mahjong: 10% off with code MAHJMATCH
+Noli June: 10% off orders of $100+ with code MAHJMATCH
 Oh My Mahjong: 10% off with code MAHJMATCH
 Peace Love Mahjong: 10% off with code MAHJMATCH
 Soirée All Day: 10% off The Mahjong Collection with code MAHJMATCH

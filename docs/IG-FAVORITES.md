@@ -9,6 +9,7 @@ The 16 not confirmed last time (all but ohmymahjong, mahjongrowandco, sunday_mah
 Second pass (13 new, each favorited then reload-confirmed): myfairmahjong, amahjline, macmillermahjong, letsmahjon, minimahjer, wrenmats, mahjong_co, i_love_mahj, themahjongpress, theroyalmahjongsociety, letsbebestiesmahjong, ozarkmahjongg, mahjongmoxie
 
 ## Handle verified, follow + favorite pending (Chrome)
+- Noli June (partner, onboarded Oct 30): @nolijunemahjong, from the footer link on https://nolijune.com (Oct 30; their schema.org sameAs lists instagram.com/nolijune, but the footer link is the rule). Added to ig-handles.json. Follow + favorite from @mahjmatchmaker still to do: Chrome was disconnected during the Oct 30 onboarding run (DESK OPS line).
 - Soirée All Day: @soireeallday.co, from the footer of https://www.soireeallday.co (Oct 21 5:50pm; domain is .co, not .com). Added to ig-handles.json. Follow + favorite from @mahjmatchmaker still to do (partner; favorites are 32 of 50).
 
 ## Newly followed
