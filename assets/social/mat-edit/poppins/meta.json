@@ -1,0 +1,114 @@
+{
+ "mat": "Poppins",
+ "brand": "Oh My Mahjong",
+ "handle": "ohmymahjong",
+ "count": 19,
+ "cta_pick": "Petalée",
+ "matches": [
+  {
+   "name": "Lola",
+   "brand": "Oh My Mahjong",
+   "retired": true
+  },
+  {
+   "name": "Moonlight",
+   "brand": "Oh My Mahjong",
+   "retired": false
+  },
+  {
+   "name": "Osler",
+   "brand": "Oh My Mahjong",
+   "retired": false
+  },
+  {
+   "name": "Preppy Soirée",
+   "brand": "Oh My Mahjong",
+   "retired": true
+  },
+  {
+   "name": "Coquette",
+   "brand": "LoveShackFancy",
+   "retired": false
+  },
+  {
+   "name": "Birdie",
+   "brand": "Oh My Mahjong",
+   "retired": true
+  },
+  {
+   "name": "Amara",
+   "brand": "Oh My Mahjong",
+   "retired": false
+  },
+  {
+   "name": "Dandy",
+   "brand": "Oh My Mahjong",
+   "retired": true
+  },
+  {
+   "name": "Glitterville",
+   "brand": "Oh My Mahjong",
+   "retired": true
+  },
+  {
+   "name": "Petalée",
+   "brand": "Virora Mahjong",
+   "retired": false
+  },
+  {
+   "name": "Lilac Soirée",
+   "brand": "Oh My Mahjong",
+   "retired": true
+  },
+  {
+   "name": "Luminaire",
+   "brand": "Oh My Mahjong",
+   "retired": false
+  },
+  {
+   "name": "Taylor",
+   "brand": "Oh My Mahjong",
+   "retired": true
+  },
+  {
+   "name": "Glow Wild",
+   "brand": "Oh My Mahjong",
+   "retired": false
+  },
+  {
+   "name": "La Fete",
+   "brand": "Oh My Mahjong",
+   "retired": false
+  },
+  {
+   "name": "Spring Love",
+   "brand": "Oh My Mahjong",
+   "retired": true
+  },
+  {
+   "name": "Talulah",
+   "brand": "Oh My Mahjong",
+   "retired": false
+  },
+  {
+   "name": "Gemma",
+   "brand": "Oh My Mahjong",
+   "retired": false
+  },
+  {
+   "name": "Pearlescent",
+   "brand": "Oh My Mahjong",
+   "retired": false
+  }
+ ],
+ "brands_shown": [
+  "LoveShackFancy",
+  "Oh My Mahjong",
+  "Virora Mahjong"
+ ],
+ "handles": {
+  "LoveShackFancy": "loveshackfancy",
+  "Oh My Mahjong": "ohmymahjong",
+  "Virora Mahjong": "viroramahjongofficial"
+ }
+}
