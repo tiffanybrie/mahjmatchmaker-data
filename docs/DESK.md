@@ -10,7 +10,6 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 **PARTNER SEND GATE (Oct 27 3:08am, standing):** before scheduling ANY partner email or graphics drop, run `python3 scripts/partner_send_check.py`; it must exit 0.
 
 ## Tomorrow's top priorities (Fri Oct 30), in order
-- **Main (rules audit, Oct 30 ~6:50am): apply the blocked scheduled-task edits** in docs/rules-audit/pending-trigger-edits-oct30.md (verified-date append on trig_01PGtT8NFXe6341WjBHqmYJu; no-second-swipe-book line on trig_01S2Vs / trig_01Ljz8 / trig_01LC2k; create N1 /links Sun 6:37pm, N2 Mon 3:37pm, N3 Fri 12:43pm) and write the HQ card in docs/RULES-ENFORCEMENT-AUDIT.md §14. The approval request went unanswered; Tiffany already said yes (Oct 29 11:03pm, Oct 30 2:45am): don't ask her again. Due before Mon Nov 2 8:17am (verified-date run).
 - Later: clean up 52 legacy caption lint warnings (config/social/content_lint_baseline.json; mostly missing #MahjMatch, '(affiliate)', 2 TdT captions).
 Standing order: (1) Find Your Mat-ch launch: DONE Oct 27 (now Version 1.7 = v103, live in the artifact, /find-your-match and /find-your-mat-ch-preview). (2) Fall content before it expires: Brownstone Bloom live Fri, Night of the Raven before Halloween Sat. Then holiday: Merry Mahjong from Mon Nov 2. Her Oct 29 Google alarm ("major drop") rides as priority 3 because it is money. The order is clear from her answers, so no "set the order" card tonight.
 
