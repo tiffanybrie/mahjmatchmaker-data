@@ -1,0 +1,196 @@
+<style>
+.mmbg{--ink:#1e3a5f;--rose:#c8456f;--blush:#fdf2f5;--sand:#faf7f2;--line:#ead9df;max-width:880px;margin:0 auto;background:#fff;padding:36px 40px;border-radius:18px;color:var(--ink);line-height:1.65;font-size:17px}
+.mmbg *{box-sizing:border-box}
+.mmbg h1,.mmbg h2,.mmbg h3,.mmbg p,.mmbg li{color:var(--ink)}
+.mmbg a{color:var(--rose)}
+.mmbg .hero{position:relative;border-radius:20px;overflow:hidden;background:var(--sand)}
+.mmbg .hero img{display:block;width:100%;height:360px;object-fit:cover}
+.mmbg .hero-txt{padding:28px 36px 30px;background:#fff;margin:-70px 24px 0;position:relative;border-radius:16px;box-shadow:0 8px 30px rgba(30,58,95,.10)}
+.mmbg .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.72em;font-weight:700;color:var(--rose);margin:0 0 6px}
+.mmbg h1{font-size:2.3em;line-height:1.15;margin:0 0 10px}
+.mmbg .dek{font-size:1.08em;margin:0;opacity:.9}
+.mmbg section{margin:46px 0}
+.mmbg h2{font-size:1.55em;margin:0 0 14px;line-height:1.25}
+.mmbg .note{background:var(--sand);border-left:4px solid var(--rose);border-radius:0 14px 14px 0;padding:22px 26px}
+.mmbg .note p{margin:0 0 12px}.mmbg .note p:last-child{margin:0}
+.mmbg .sig{font-style:italic;font-weight:600}
+.mmbg .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.mmbg .card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.mmbg .card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--sand)}
+.mmbg .card .in{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.mmbg .card h3{font-size:1.08em;margin:0}
+.mmbg .card p{margin:0;font-size:.95em}
+.mmbg .card .go{margin-top:auto;font-weight:700;text-decoration:none;font-size:.92em}
+.mmbg .tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.mmbg .tiles a{text-decoration:none;color:var(--ink)}
+.mmbg .tiles img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;display:block}
+.mmbg .tiles span{display:block;font-weight:600;font-size:.92em;margin-top:6px}
+.mmbg .feat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;padding:0;margin:0}
+.mmbg .feat li{margin:0}
+.mmbg .feat a{display:block;padding:14px 16px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);background:#fff}
+.mmbg .feat a b{display:block;color:var(--rose);font-size:.75em;text-transform:uppercase;letter-spacing:.1em}
+.mmbg .perk{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--blush);border-radius:16px;padding:20px 24px}
+.mmbg .perk p{margin:0}
+.mmbg .perk .code{font-weight:800;letter-spacing:.08em;color:var(--rose)}
+.mmbg .btn{display:inline-block;background:var(--rose);color:#fff!important;padding:11px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.95em}
+.mmbg details{border-bottom:1px solid var(--line);padding:12px 0}
+.mmbg summary{cursor:pointer;font-weight:700}
+.mmbg details p{margin:8px 0 0}
+.mmbg .more{display:flex;flex-wrap:wrap;gap:8px}
+.mmbg .more a{border:1px solid var(--line);border-radius:999px;padding:6px 14px;text-decoration:none;font-size:.88em;color:var(--ink);background:#fff}
+.mmbg .small{font-size:.82em;opacity:.75}
+@media(max-width:700px){.mmbg{font-size:16px;padding:22px 16px}.mmbg .hero img{height:230px}.mmbg .hero-txt{margin:-40px 12px 0;padding:20px}.mmbg h1{font-size:1.8em}.mmbg .grid,.mmbg .feat{grid-template-columns:1fr}.mmbg .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.mmbg .me{display:flex;gap:16px;align-items:center;margin:0 0 16px}.mmbg .me img{width:76px;height:76px;border-radius:50%;object-fit:cover;flex:0 0 76px;border:3px solid #fff;box-shadow:0 2px 10px rgba(30,58,95,.15)}.mmbg .me strong{display:block;font-size:1.05em}.mmbg .me span{display:block;font-size:.88em;opacity:.8}
+
+
+.mmbg .tiles.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.mmbg .tiles small{display:block;font-size:.8em;margin-top:2px}
+.mmbg .tiles small a{color:var(--rose);font-weight:600}
+@media(max-width:700px){.mmbg .tiles.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<div class="mmbg">
+<div class="hero">
+<img src="https://cdn.shopify.com/s/files/1/1035/9898/1201/files/soiree_mat_topdown.jpg?v=1778909392&width=1500" style="object-position:50% 50%" alt="Noli June Soiree at Sues mahjong mat on a mahjong table, seen from above">
+<div class="hero-txt">
+<p class="eyebrow">Brand guide</p>
+<h1>Noli June</h1>
+<p class="dek">Founder-designed leatherette mahjong mats with names like little stories, plus coordinating tablecloths and dice dishes. Plus, my Noli June discount code for readers.</p>
+</div>
+</div>
+<div class="perk perk-top" style="margin:22px 0 4px">
+<p><strong>A thank-you for Mahj Matchmaker readers:</strong> use code <span class="code">MAHJMATCH</span> for 10% off Noli June&rsquo;s eligible collections on orders of $100 or more.</p>
+<p style="font-size:14px;opacity:.75;margin:6px 0 14px">&#10003; Noli June discount code: MAHJMATCH &middot; 10% off &middot; verified October 30, 2026</p>
+<a class="btn" href="https://nolijune.com/MAHJMATCH" target="_blank" rel="sponsored noopener">Visit Noli June</a>
+</div>
+<section>
+<h2>About Noli June</h2>
+<div class="note">
+<p>Noli June is a Memphis-based mahjong brand founded by Elyse Pickle and inspired by her grandmother Sue, who hosted a Tuesday mahjong group with her girlfriends for about forty years. Each mat is named for Sue or one of her friends (Lena, Harriet, Jean and the rest of the table), and every design is drawn by the founder herself.</p>
+<p>The mats are 33.5&quot; square in a heavy 20.6oz textured leatherette, about 1mm thick: wipe-clean, spill-proof and made in London. Each one now ships rolled in its own leatherette sleeve with a gold snap. Many mats have a coordinating 55&quot; cotton-linen tablecloth and a little round dice dish, so you can dress the whole table, and there&rsquo;s a scalloped folding mahjong table hand-built in Tennessee.</p>
+</div>
+</section>
+<p>Here are the Noli June mats and table pieces I&rsquo;d look at first.</p>
+<section>
+<h2>Noli June mahjong mats</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/1035/9898/1201/files/soiree_main_2000.jpg?v=1778904937&width=700" alt="Noli June Soiree at Sues pink floral mahjong mat" loading="lazy">
+<div class="in">
+<h3>Soir&eacute;e at Sue&rsquo;s</h3>
+<p>Blush ground with a lush pink, coral and green floral border around an ivory center. $197.</p>
+<a class="go" href="https://nolijune.com/discount/MAHJMATCH?dt_id=3655694&amp;redirect=%2Fproducts%2Fsoiree-at-sues" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/1035/9898/1201/files/3052220_harriet-got-lost-in-the-corn-maze_0_1.jpg?v=1786283598&width=700" alt="Noli June Harriet Got Lost in the Corn Maze periwinkle pumpkin mahjong mat" loading="lazy">
+<div class="in">
+<h3>Harriet Got Lost in the Corn Maze</h3>
+<p>Periwinkle ground, golden pumpkins and teal and burgundy leaves around the border. $197.</p>
+<a class="go" href="https://nolijune.com/discount/MAHJMATCH?dt_id=3655694&amp;redirect=%2Fproducts%2Fharriet-got-lost-in-the-corn-maze" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/1035/9898/1201/files/3051294_sue-dabbled-in-spellwork_0_1.jpg?v=1786584841&width=700" alt="Noli June Sue Dabbled in Spellwork dark floral mahjong mat" loading="lazy">
+<div class="in">
+<h3>Sue Dabbled in Spellwork</h3>
+<p>Inky charcoal ground with blush and plum blooms and a gold scalloped edge. $197.</p>
+<a class="go" href="https://nolijune.com/discount/MAHJMATCH?dt_id=3655694&amp;redirect=%2Fproducts%2Fsue-dabbled-in-spellwork" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/1035/9898/1201/files/3051293_jean-always-chose-cranberry-from-a-can_0_1.jpg?v=1786575796&width=700" alt="Noli June Jean Always Chose Cranberry From a Can crimson rose mahjong mat" loading="lazy">
+<div class="in">
+<h3>Jean Always Chose Cranberry From a Can</h3>
+<p>Cream ground with deep crimson roses and teal foliage looped into a garland. $197.</p>
+<a class="go" href="https://nolijune.com/discount/MAHJMATCH?dt_id=3655694&amp;redirect=%2Fproducts%2Fjean-always-chose-cranberry-from-a-can" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/1035/9898/1201/files/3059114_lena-took-seven-months-to-needlepoint-a-pillow_0_1.jpg?v=1786410689&width=700" alt="Noli June Lena Took Seven Months to Needlepoint a Pillow wine check mahjong mat" loading="lazy">
+<div class="in">
+<h3>Lena Took Seven Months to Needlepoint a Pillow</h3>
+<p>Wine-and-cream check with dusty cabbage roses on the diagonal. $197.</p>
+<a class="go" href="https://nolijune.com/discount/MAHJMATCH?dt_id=3655694&amp;redirect=%2Fproducts%2Flena-took-seven-months-to-needlepoint-a-pillow" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Coordinating tablecloths</h2>
+<p>Each tablecloth is designed to go under one of the mats: cotton-linen, 55&quot; square.</p>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/1035/9898/1201/files/2990324_0_3d_0f726d4c-75f6-4439-b2d1-35bcb98aed4c.jpg?v=1780961321&width=700" alt="Noli June Sue Puts Out the Good China tablecloth" loading="lazy">
+<div class="in">
+<h3>Sue Puts Out the Good China</h3>
+<p>Pairs with Soir&eacute;e at Sue&rsquo;s. $115.</p>
+<a class="go" href="https://nolijune.com/discount/MAHJMATCH?dt_id=3655694&amp;redirect=%2Fproducts%2Fsue-puts-out-the-good-china-table-cloth" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/1035/9898/1201/files/3059295_0_3d.jpg?v=1786412186&width=700" alt="Noli June Harriet Entered the Pie Contest Again periwinkle tablecloth" loading="lazy">
+<div class="in">
+<h3>Harriet Entered the Pie Contest Again</h3>
+<p>Pale periwinkle with a soft gold border, for the corn-maze mat. $115.</p>
+<a class="go" href="https://nolijune.com/discount/MAHJMATCH?dt_id=3655694&amp;redirect=%2Fproducts%2Fharriet-entered-the-pie-contest-again-tablecloth" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/1035/9898/1201/files/3059298_0_3d.jpg?v=1786414288&width=700" alt="Noli June Sue Blamed It on Mercury Retrograde tablecloth" loading="lazy">
+<div class="in">
+<h3>Sue Blamed It on Mercury Retrograde</h3>
+<p>Inky ground with a plum-and-gold diamond motif, for the spellwork mat. $115.</p>
+<a class="go" href="https://nolijune.com/discount/MAHJMATCH?dt_id=3655694&amp;redirect=%2Fproducts%2Fsue-blamed-it-on-mercury-retrograde-tablecloth" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/1035/9898/1201/files/3059270_0_3d.jpg?v=1786733613&width=700" alt="Noli June Jean Kept the Can Ridges on Purpose tablecloth" loading="lazy">
+<div class="in">
+<h3>Jean Kept the Can Ridges on Purpose</h3>
+<p>Cream with crimson roses in the corners, for the cranberry mat. $115.</p>
+<a class="go" href="https://nolijune.com/discount/MAHJMATCH?dt_id=3655694&amp;redirect=%2Fproducts%2Fjean-kept-the-can-ridges-on-purpose-tablecloth" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/1035/9898/1201/files/3059303_0_3d.jpg?v=1786412911&width=700" alt="Noli June Lena Started a Second Pillow tablecloth" loading="lazy">
+<div class="in">
+<h3>Lena Started a Second Pillow</h3>
+<p>Cream with dusty mauve-rose corners, for the needlepoint mat. $115.</p>
+<a class="go" href="https://nolijune.com/discount/MAHJMATCH?dt_id=3655694&amp;redirect=%2Fproducts%2Flena-started-a-second-pillow-tablecloth" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Noli June Discount Code</h2>
+<div class="perk">
+<p><strong>A thank-you for Mahj Matchmaker readers:</strong> use code <span class="code">MAHJMATCH</span> for 10% off Noli June&rsquo;s eligible collections. The minimum order is $100, so one mat qualifies on its own. Shop through my link so the code tracks.</p>
+<a class="btn" href="https://nolijune.com/MAHJMATCH" target="_blank" rel="sponsored noopener">Visit Noli June</a>
+</div>
+</section>
+<section>
+<h2>Questions about Noli June</h2>
+<details><summary>Is there a Noli June discount code?</summary><p>Yes. Use code MAHJMATCH at nolijune.com for 10% off Noli June&rsquo;s eligible collections on orders of $100 or more.</p></details>
+<details><summary>Is there a minimum purchase for the Noli June code?</summary><p>Yes. The 10% off applies to orders of $100 or more from Noli June&rsquo;s eligible collections. One mat ($197) meets the minimum on its own.</p></details>
+<details><summary>What does Noli June make?</summary><p>Founder-designed mahjong mats in 20.6oz textured leatherette, 33.5&quot; square, plus coordinating 55&quot; cotton-linen tablecloths, dice dishes and a scalloped folding mahjong table. Each mat ships in its own leatherette sleeve with a gold snap.</p></details>
+<details><summary>Who is behind Noli June?</summary><p>Noli June was founded by Elyse Pickle in Memphis, Tennessee. The brand is named for Sue&rsquo;s great-granddaughter, and every mat is named for Sue or one of her Tuesday mahjong friends.</p></details>
+<details><summary>How big are Noli June mahjong mats?</summary><p>Noli June mats are 33.5&quot; (85cm) square and about 1mm thick, a wipe-clean textured leatherette that rolls up into the included sleeve.</p></details>
+<details><summary>Does the code work on everything at Noli June?</summary><p>The code covers Noli June&rsquo;s eligible collections. A few items, such as gift cards and some products they carry from other makers, may not be eligible, and most shops allow one discount code per order.</p></details>
+</section>
+<section>
+<h2>More brands I love</h2>
+<div class="more">
+<a href="/oh-my-mahjong-discount-code">Oh My Mahjong</a>
+<a href="/miss-mahjong-discount-code">Miss Mahjong</a>
+<a href="/my-fair-mahjong-discount-code">My Fair Mahjong</a>
+<a href="/mahjong-row-and-co-discount-code">Mahjong Row &amp; Co.</a>
+<a href="/yolo-mahjong-discount-code">YOLO Mahjong</a>
+<a href="/soiree-all-day-discount-code">Soir&eacute;e All Day</a>
+<a href="/lets-be-besties-discount-code">Let&rsquo;s Be Besties</a>
+<a href="/mahjong-register-discount-code">Mahjong Register</a>
+<a href="/mahjong-discount-codes">All brands &rarr;</a>
+</div>
+</section>
+<p class="small">Mahj Matchmaker may earn a commission when you shop through these links, at no extra cost to you. Thank you for supporting the tile match mock-ups and inspiration I share with the community.</p>
+</div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is there a Noli June discount code?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Use code MAHJMATCH at nolijune.com for 10% off Noli June’s eligible collections on orders of $100 or more."}}, {"@type": "Question", "name": "Is there a minimum purchase for the Noli June code?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The 10% off applies to orders of $100 or more from Noli June’s eligible collections. One mat ($197) meets the minimum on its own."}}, {"@type": "Question", "name": "What does Noli June make?", "acceptedAnswer": {"@type": "Answer", "text": "Founder-designed mahjong mats in 20.6oz textured leatherette, 33.5\" square, plus coordinating 55\" cotton-linen tablecloths, dice dishes and a scalloped folding mahjong table. Each mat ships in its own leatherette sleeve with a gold snap."}}, {"@type": "Question", "name": "Who is behind Noli June?", "acceptedAnswer": {"@type": "Answer", "text": "Noli June was founded by Elyse Pickle in Memphis, Tennessee. The brand is named for Sue’s great-granddaughter, and every mat is named for Sue or one of her Tuesday mahjong friends."}}, {"@type": "Question", "name": "How big are Noli June mahjong mats?", "acceptedAnswer": {"@type": "Answer", "text": "Noli June mats are 33.5\" (85cm) square and about 1mm thick, a wipe-clean textured leatherette that rolls up into the included sleeve."}}, {"@type": "Question", "name": "Does the code work on everything at Noli June?", "acceptedAnswer": {"@type": "Answer", "text": "The code covers Noli June’s eligible collections. A few items, such as gift cards and some products they carry from other makers, may not be eligible, and most shops allow one discount code per order."}}]}</script>
