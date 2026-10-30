@@ -1,5 +1,5 @@
 """FYM publish gate. Run before EVERY publish of the Find Your Match artifact:
-    python3 builder/fym_gate.py <build_dir>
+    python3 builder/fym_gate.py <build_dir> [--release]   (--release: [104] version match artifact = website copy = README pin FAILS instead of warning)
 Exits non-zero and prints every failure. Checks (add one for each bug type Tiffany reports):
  1  album / swipe-book sets show their canonical album tile photo (D.tiles[..].src == locked src, file exists, pixels match)
  2  no visible set without an album / swipe book carries a "Tiffany's match" list (m)
@@ -1260,6 +1260,39 @@ try:
     if not re.search(r'\.bnote\.gen>span\{[^}]*color:#c8325f', _h103) or '.bnote.gen{background:transparent;color:var(--mute)' in _h103:
         F.append("[103] Shop by brand code callout is not the pink feature (it went back to light gray)")
 except Exception as _e: F.append(f"[103] title colour / callout check did not run: {_e}")
+# [104] Oct 30 (rules audit GA4; CLAUDE.md FYM 0 "every publish goes to BOTH places"): the build's public "Version X.Y" label
+# == the newest site-app/fym-vNN on the fym-site-preview branch == the page-block pinned at the TOP of
+# site/livepatch/fym-preview-oct21/README.md (that pin is what gets pasted on Squarespace). WARNING by default (the README
+# pin is often written after the gate runs); with --release (before a publish is called done) it FAILS.
+W104 = []
+try:
+    import subprocess as _sp104
+    def _g104(*a):
+        return _sp104.run(['git', '-C', REPO] + list(a), capture_output=True, text=True, timeout=60).stdout
+    _sp104.run(['git', '-C', REPO, 'fetch', '-q', 'origin', 'fym-site-preview:refs/remotes/origin/fym-site-preview'], capture_output=True, timeout=60)
+    _lab104 = re.findall(r'Version (\d+\.\d+)', open(os.path.join(B, 'index.html')).read())
+    _lab104 = _lab104[0] if _lab104 else None
+    _nn104 = sorted(int(x) for x in re.findall(r'fym-v(\d+)', _g104('ls-tree', '--name-only', 'origin/fym-site-preview', 'site-app/')))
+    _site104 = None
+    if _nn104:
+        _sl = re.findall(r'Version (\d+\.\d+)', _g104('show', f'origin/fym-site-preview:site-app/fym-v{_nn104[-1]}/index.html'))
+        _site104 = _sl[0] if _sl else None
+        if _site104 != _lab104:
+            W104.append(f"build is Version {_lab104} but the newest website copy site-app/fym-v{_nn104[-1]} is Version {_site104}")
+    _pin104 = re.search(r'[Pp]in page-block @([0-9a-f]{7,40})', open(REPO + 'site/livepatch/fym-preview-oct21/README.md').read())
+    if not _pin104:
+        W104.append("no 'Pin page-block @<sha>' line in site/livepatch/fym-preview-oct21/README.md")
+    elif _nn104:
+        _ref = set(re.findall(r'site-app/fym-v(\d+)', _g104('show', f'{_pin104.group(1)}:site/livepatch/fym-preview-oct21/page-block.html')))
+        if str(_nn104[-1]) not in _ref:
+            W104.append(f"README 0a pin @{_pin104.group(1)[:8]} loads site-app/fym-v{'/'.join(sorted(_ref)) or '?'}, not the newest fym-v{_nn104[-1]} (update the README pin)")
+except Exception as _e:
+    W104.append(f"version check did not run: {_e}")
+if W104:
+    if '--release' in sys.argv:
+        F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))
+    else:
+        print("FYM GATE WARNING [104] (FAIL with --release): " + '; '.join(W104))
 if W97:
     print("FYM GATE WARNINGS (v97):")
     for _w in W97: print('  ' + _w)
