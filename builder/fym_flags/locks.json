@@ -23209,17 +23209,23 @@
    ]
   },
   "www.bespokemahjong.com/graymalingamemat": {
-   "n": "Gray Malin",
+   "n": "Gray Malin Beach Club (Side A: Pink Umbrellas)",
    "bn": "Bespoke Mahjong",
-   "f": "m/1177.webp",
-   "th": "mtef98cae7",
+   "f": "m/2273.webp",
+   "th": "m1058c95e13f",
    "rt": false,
    "hid": false,
    "mf": [
-    "blue"
+    "blue",
+    "green",
+    "neutral",
+    "pink"
    ],
    "mt": [
-    0
+    0,
+    1,
+    2,
+    3
    ]
   },
   "www.bespokemahjong.com/holidayloveblue": {
@@ -26411,6 +26417,26 @@
    "hid": false,
    "mf": [],
    "mt": []
+  },
+  "www.bespokemahjong.com/graymalingamemat#side-b": {
+   "n": "Gray Malin Beach Club (Side B: East Hampton)",
+   "bn": "Bespoke Mahjong",
+   "f": "m/2274.webp",
+   "th": "m1059fb83c67",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "green",
+    "neutral",
+    "blue",
+    "pink"
+   ],
+   "mt": [
+    0,
+    1,
+    2,
+    3
+   ]
   }
  },
  "_changes": [

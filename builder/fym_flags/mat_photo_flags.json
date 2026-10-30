@@ -1577,11 +1577,10 @@
   "was": "locked_needs_approval"
  },
  "www.bespokemahjong.com/graymalingamemat": {
-  "name": "Gray Malin",
+  "name": "Gray Malin Beach Club (Side A: Pink Umbrellas)",
   "brand": "Bespoke Mahjong",
-  "flag": "locked_needs_approval",
-  "candidate": null,
-  "note": "Oct 21 QA: 10 brand images: corner crops, tiles/racks, or a gift box sitting on the mat; no whole-mat photo; locked, recommend hiding once Tiffany OKs (review_locked.json) | Oct 21 low bar: kept, corner close-up of the mat (no whole-mat view); rule 6 still hides corner close-ups, waiting on Tiffany"
+  "flag": "ok",
+  "note": "Oct 30 v105: Bespoke double-sided = full side (Tiffany STANDING 10:30am)"
  },
  "www.etsy.com/listing/4570669639/deck-the-halls-mahjong-game-mat-preppy": {
   "name": "Deck the Halls",
@@ -2170,5 +2169,11 @@
   "brand": "Let's Be Besties",
   "flag": "ok",
   "note": "Oct 30 partner sweep add (v105): brand flat render, whole mat (only listing photo)"
+ },
+ "www.bespokemahjong.com/graymalingamemat#side-b": {
+  "name": "Gray Malin Beach Club (Side B: East Hampton)",
+  "brand": "Bespoke Mahjong",
+  "flag": "ok",
+  "note": "Oct 30 v105: Bespoke double-sided = full side (Tiffany STANDING 10:30am)"
  }
 }

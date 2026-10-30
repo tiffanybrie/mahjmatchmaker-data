@@ -1383,7 +1383,7 @@ try:
         F.append("[109] tiles door: mat search / View switch is above the deck (out of frame); must be under it")
     if "${deck}</div>`)+`<div class=\"s2ctl\">${VROW()}" not in _rt or _rt.find('VROW()') < _rt.find('id="tv-d"'):
         F.append("[109] mat door: View switch is not under the deck / something sits between the mat photo and the tile card")
-    if "addSB(el,'m')" not in _rm or "addSB(el,'t')" not in _rt or 'class="sb no" data-no="m"' not in UI or 'class="sb no" data-tno' not in UI:
+    if "addSB(el,'m')" not in _rm or "addSB(el,'t')" not in _rt or ('class="sb no" data-no="m"' not in UI and 'data-no="\'+k+\'"' not in UI) or 'class="sb no" data-tno' not in UI:
         F.append("[109] X / heart buttons are not on the left/right of the swipe card in both doors")
 except Exception as _e: F.append(f"[109] step-2 layout check did not run: {_e}")
 # [110] Oct 30 11:45am (Tiffany: "use this as a tabletop tool"): search at step 2 in BOTH directions; a picked item becomes the top card.
@@ -1393,6 +1393,23 @@ try:
     if 'id="msq"' not in fn('renderMats') or 'S.mfront' not in fn('matDeck'):
         F.append("[110] tiles door has no mat search at the swipe step (or a picked mat is not put on top)")
 except Exception as _e: F.append(f"[110] step-2 search check did not run: {_e}")
+# [111] Oct 30 QA (v105): US spelling in everything a shopper reads (brand uses "color"): no "colour" in UI strings
+# (comments and the data blob are ignored; identifiers like photocolour are not words).
+try:
+    _h111 = open(os.path.join(B, 'index.html')).read(); _d0 = _h111.index('const D=') + 8
+    _dD, _dE = json.JSONDecoder().raw_decode(_h111[_d0:])
+    _c111 = _h111[:_d0] + _h111[_d0 + _dE:]
+    _c111 = re.sub(r'/\*[\s\S]*?\*/', '', _c111); _c111 = re.sub(r'(?m)^\s*//.*$', '', _c111)
+    _b111 = sorted(set(m.group(0) for m in re.finditer(r"[^\n]{0,30}\b[Cc]olou?rs?\b[^\n]{0,10}", _c111) if re.search(r'\b[Cc]olours?\b', m.group(0))))
+    if _b111: F.append("[111] British 'colour' in UI text (use 'color'): " + ' | '.join(_b111[:6]))
+except Exception as _e: F.append(f"[111] spelling check did not run: {_e}")
+# [112] Oct 30 QA (v105): side B of a double-sided mat gets its OWN mat-door tile order (M[B].so), not side A's.
+try:
+    _nb = [k for k, m in D['mats'].items() if m.get('side') == 'B' and not m.get('hid')]
+    _miss = [D['mats'][k]['n'] for k in _nb if not D['mats'][k].get('so')]
+    if _miss: F.append(f"[112] side B mats without their own tile order (so): {_miss[:5]}")
+    if "M[id].so" not in UI: F.append("[112] setsForMat does not use M[id].so")
+except Exception as _e: F.append(f"[112] side-B order check did not run: {_e}")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))

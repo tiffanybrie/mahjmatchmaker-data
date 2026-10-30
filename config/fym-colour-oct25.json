@@ -1948,35 +1948,39 @@
 "www.bespokemahjong.com/graymalingamemat": {
 "sw": [
 [
-"#c7cac3",
-0.381
+"#ece6de",
+0.379
 ],
 [
-"#bee2db",
-0.182
+"#41acad",
+0.144
 ],
 [
-"#d5e0da",
-0.176
+"#d6cfbe",
+0.131
 ],
 [
-"#9bcfc7",
-0.101
+"#71c3c2",
+0.116
 ],
 [
-"#b1b5a5",
-0.074
+"#becfc4",
+0.106
 ],
 [
-"#746a71",
-0.035
+"#e7d4dd",
+0.056
 ],
 [
-"#648ba0",
-0.031
+"#b4a0a9",
+0.036
+],
+[
+"#7b788c",
+0.034
 ]
 ],
-"tone": "pastel"
+"tone": "muted"
 },
 "www.ohmymahjong.com/esme-mat-w-tube": {
 "sw": [
@@ -38213,6 +38217,39 @@
 ]
 ],
 "tone": "muted"
+},
+"www.bespokemahjong.com/graymalingamemat#side-b": {
+"sw": [
+[
+"#ece4dc",
+0.496
+],
+[
+"#e1cabb",
+0.147
+],
+[
+"#aad4d2",
+0.126
+],
+[
+"#6fbcb2",
+0.091
+],
+[
+"#c2b8c3",
+0.063
+],
+[
+"#7e7e9c",
+0.035
+],
+[
+"#b69198",
+0.034
+]
+],
+"tone": "pastel"
 }
 },
 "sets": {

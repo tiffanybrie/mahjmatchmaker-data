@@ -28,10 +28,15 @@ TO = {'teal': 'blue', 'earthy': 'dark', 'brown': 'dark', 'gold': 'yellow'}
 ADD = 'oct30-v105-bespoke-ds'
 GM = 'www.bespokemahjong.com/bespoke-x-gray-malin-double-sided-mat-double-the-fun-gray-malin-beach-club-mat-copy'
 JG = 'www.bespokemahjong.com/double-the-fun-dhonkcollabmat'
+GB = 'www.bespokemahjong.com/graymalingamemat'
 A = REPO + 'assets/mats/'
 JOBS = [  # key, image or None (keep), name, dn, side, base fields from
     (GM, A + 'graymalin-oct30/gray-malin-getaway-dogs-side-a-pool.jpg', 'Gray Malin Getaway Dogs (Side A: Pool)', 'Gray Malin Getaway Dogs', 'A'),
     (GM + '#side-b', A + 'graymalin-oct30/gray-malin-getaway-dogs-side-b-ski-lift.jpg', 'Gray Malin Getaway Dogs (Side B: Ski Lift)', 'Gray Malin Getaway Dogs', 'B'),
+    # Oct 30 QA follow-up: the VISIBLE 'Gray Malin' mat (Beach Club, key graymalingamemat) was the corner close-up she asked about.
+    # Bespoke's listing photo 1 shows both sides together -> cropped in two (her rule), same as the Pink Umbrellas / Shoreline crops.
+    (GB, REPO + 'assets/fym-photos-oct30/mats/bespoke-gray-malin-side-a-pink-umbrellas.jpg', 'Gray Malin Beach Club (Side A: Pink Umbrellas)', 'Gray Malin Beach Club', 'A'),
+    (GB + '#side-b', REPO + 'assets/fym-photos-oct30/mats/bespoke-gray-malin-side-b-shoreline.jpg', 'Gray Malin Beach Club (Side B: East Hampton)', 'Gray Malin Beach Club', 'B'),
 ]
 JHP = 'alb2:bespoke-mahjong-jungle-hot-pink'
 HOL = {GM + '#side-b'}  # Side B Ski Lift = snowy ski scene
@@ -73,9 +78,9 @@ for key, img, name, dn, side in JOBS:
     o.pop('hid', None)
     if key not in M: o['add'] = ADD; M[key] = o; D['order'].append(key)
     else: M[key] = o
-M[GM + '#side-b']['add'] = ADD
+M[GM + '#side-b']['add'] = ADD; M[GB + '#side-b']['add'] = ADD
 ix = {m: j for j, m in enumerate(D['order'])}
-for ka in (GM,):
+for ka in (GM, GB):
     ja, jb = ix[ka], ix[ka + '#side-b']
     for s in sets:
         for fld in ('rank', 'cr'):
