@@ -181,27 +181,27 @@ def build(spec, tiles, cta, handle, size):
     frames = {}
 
     # 1 NEW MAT ALERT
-    ms = s(800, 640)
-    frames['alert'] = f"""{LOGO}{eb('NEW MAT ALERT', s(38, 32))}
+    ms = s(720, 560)
+    frames['alert'] = f"""<div>{LOGO}<div style='margin-top:{s(18, 12)}px'>{eb('NEW MAT ALERT', s(38, 32))}</div></div>
 <div>{title(s(150, 124))}<div style='margin-top:{s(10, 6)}px'>{by(s(50, 42))}</div>
 <div class='hdl k' style='font-size:{s(34, 28)}px;margin-top:{s(4, 2)}px'>@{e(handle)}</div></div>
 <div class=mat style="width:{ms}px;height:{ms}px;background-image:url({mat})"></div>
-<div class='cue k' style='font-size:{s(32, 28)}px;padding:{s(16, 12)}px {s(40, 34)}px'>Tiffany&rsquo;s {n} tile matches &rarr;</div>"""
+<div class='cue k' style='font-size:{s(32, 28)}px;padding:{s(16, 12)}px {s(40, 34)}px'>Tiffany&rsquo;s {n} tile matches &rarr;</div>{code_line(s(30, 26))}"""
 
     # 2 THE MAT EDIT (colour card)
     pal = spec['palette'][:6]
     if story:
-        ms = 640
+        ms = 560
         body = f"""<div class=mat style="width:{ms}px;height:{ms}px;background-image:url({mat})"></div>
 <div style='width:100%'><div class='hdl' style='font-size:26px;letter-spacing:.24em;margin-bottom:14px'>THE PALETTE</div>
-<div class=pal style='grid-template-columns:repeat(3,1fr);gap:22px 18px;padding:24px 28px'>{''.join(f"<div class=sw style='font-size:23px'><i style='width:58px;height:58px;background:{h}'></i><span>{e(nm)}</span></div>" for nm, h in pal)}</div></div>"""
+<div class=pal style='grid-template-columns:repeat(3,auto);justify-content:space-evenly;gap:22px 30px;padding:24px 20px'>{''.join(f"<div class=sw style='font-size:23px'><i style='width:58px;height:58px;background:{h}'></i><span>{e(nm)}</span></div>" for nm, h in pal)}</div></div>"""
     else:
         ms = 560
         body = f"""<div style='display:flex;gap:30px;align-items:center;justify-content:center;width:100%'>
 <div class=mat style="width:{ms}px;height:{ms}px;background-image:url({mat})"></div>
-<div style='flex:0 0 360px'><div class='hdl' style='font-size:22px;letter-spacing:.24em;margin-bottom:12px'>THE PALETTE</div>
-<div class=pal style='grid-template-columns:1fr;gap:16px;padding:22px 24px'>{''.join(f"<div class=sw style='font-size:22px'><i style='width:52px;height:52px;background:{h}'></i><span>{e(nm)}</span></div>" for nm, h in pal)}</div></div></div>"""
-    frames['edit'] = f"""{LOGO}{eb('THE MAT EDIT', s(36, 30))}
+<div style='flex:none'><div class='hdl' style='font-size:22px;letter-spacing:.24em;margin-bottom:12px'>THE PALETTE</div>
+<div class=pal style='grid-template-columns:auto;gap:16px;padding:22px 28px'>{''.join(f"<div class=sw style='font-size:22px'><i style='width:52px;height:52px;background:{h}'></i><span>{e(nm)}</span></div>" for nm, h in pal)}</div></div></div>"""
+    frames['edit'] = f"""<div>{LOGO}<div style='margin-top:{s(18, 12)}px'>{eb('THE MAT EDIT', s(36, 30))}</div></div>
 <div>{title(s(130, 112))}<div style='margin-top:8px'>{by(s(46, 40))}</div>
 {f"<div class='tag k' style='font-size:{s(32, 28)}px;margin-top:6px'>{e(spec['tag'])}</div>" if spec.get('tag') else ''}</div>
 {body}{code_line(s(30, 26))}"""
@@ -216,7 +216,7 @@ def build(spec, tiles, cta, handle, size):
                    f"<figcaption style='font-size:{fs}px;margin-top:8px'>{e(t['name'])}{'<small style=font-size:' + str(fs - 5) + 'px>retired</small>' if t['retired'] else ''}</figcaption></figure>" for t in tiles)
     frames['tiles'] = f"""{eb("TIFFANY'S TILE MATCHES", s(32, 28))}
 <div><div class='t k' style='font-size:{s(96, 84)}px;color:{col}'>{e(spec['name'])} + {n}</div>
-<div class='by k' style='font-size:{s(36, 32)}px;margin-top:6px'>tile sets she matched with this {e(spec['brand'])} mat</div></div>
+<div class='by k' style='font-size:{s(36, 32)}px;margin-top:6px'>tile sets matched with this {e(spec['brand'])} mat</div></div>
 <div class=grid style='gap:{s(22, 16)}px 4px'>{figs}</div>{code_line(s(30, 26))}"""
 
     # 4 CTA: match-card style (mat full, tiles inset bottom-right), Find Your Mat-ch
