@@ -1,5 +1,5 @@
 {
- "_note": "v105 (Oct 30) partner sweep adds: gate [100] found 2 Let's Be Besties Christmas mats live Oct 28 (holiday: Christmas). Same flow as fym-partner-adds-oct30.json via builder/fym_fix_oct30/partneradds105.py.",
+ "_note": "v105 (Oct 30) partner sweep adds: gate [100] found 3 Let's Be Besties Christmas mats live Oct 28 (holiday: Christmas). Same flow as fym-partner-adds-oct30.json via builder/fym_fix_oct30/partneradds105.py.",
  "already_in_fym": {},
  "tiles": [],
  "alt_leatherette": {},
@@ -49,6 +49,29 @@
     "neutral"
    ],
    "colors_note": "eye call: red/pink zebra stripes on white, Santa hat centre"
+  },
+  {
+   "key": "letsbebesties.com/ornamental-charm-artist-collab-neoprene-mahjong-mat",
+   "b": "Let's Be Besties",
+   "bn": "Let's Be Besties",
+   "u": "https://letsbebesties.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fornamental-charm-artist-collab-neoprene-mahjong-mat%3Fsca_ref%3D12515508.SUyXEjJsqV",
+   "u0": "https://letsbebesties.com/products/ornamental-charm-artist-collab-neoprene-mahjong-mat?sca_ref=12515508.SUyXEjJsqV",
+   "dc": "https://mahjmatchmaker.com/lets-be-besties-discount-code",
+   "pa": true,
+   "handle": "ornamental-charm-artist-collab-neoprene-mahjong-mat",
+   "name": "Ornamental Charm",
+   "img": "assets/mats/v105/lbb-ornamental-charm.jpg",
+   "primary": "red",
+   "hol": true,
+   "hid": false,
+   "published": "2026-10-28",
+   "photo_note": "brand flat render, whole mat (only listing photo)",
+   "colors": [
+    "red",
+    "green",
+    "neutral"
+   ],
+   "colors_note": "eye call: two Christmas ornaments, red/green/olive on soft red-green tile pattern"
   }
  ]
 }

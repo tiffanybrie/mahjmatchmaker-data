@@ -1,4 +1,4 @@
-"""COPY for v105 (Oct 30 pm): same as partneradds.py (v104), spec config/fym-partner-adds-oct30b.json (2 Let's Be Besties Christmas mats, gate [100]).
+"""COPY for v105 (Oct 30 pm): same as partneradds.py (v104), spec config/fym-partner-adds-oct30b.json (3 Let's Be Besties Christmas mats, gate [100]).
 FYM v101 = public "Version 1.5": partner mats the store sweep found missing (Tiffany Oct 27 2:21am: "This is going to get very
 old, me chasing down mats") + the Peace Love Mahjong Spirit of Christmas tile set (sold out, still listed = NOT retired).
 Spec: config/fym-partner-adds-oct27.json. Mats follow v95_etsy.py (new packed chunk mc/<n>.webp, inline thumb, colours measured
@@ -197,7 +197,7 @@ for x in SPEC['tiles']:
     json.dump(SY, open(REPO + 'builder/fym_flags/swipe_yeses_map.json', 'w'), indent=1, ensure_ascii=False)
 LK.setdefault('_changes', []) if isinstance(LK.get('_changes'), list) else None
 if isinstance(LK.get('_changes'), list) and not any('v105 partner' in str(c) for c in LK['_changes']):
-    LK['_changes'].append('2026-10-30 v105 partner sweep mats: Let\'s Be Besties Christmas Ribbon Rhapsody + Jingle Jungle Leatherette (holiday)')
+    LK['_changes'].append('2026-10-30 v105 partner sweep mats: Let\'s Be Besties Christmas Ribbon Rhapsody + Jingle Jungle Leatherette + Ornamental Charm (holiday)')
 DN = json.load(open(REPO + 'config/fym-mat-display-names-oct26.json'))
 for x in SPEC['mats']:
     if x.get('dn'): DN['dn'][x['key']] = x['dn']
