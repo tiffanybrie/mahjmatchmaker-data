@@ -200,7 +200,7 @@ if 'data-dfam=""' not in UI or 'data-fam="" data-k=' not in UI or "[data-fclear]
 if 'No mats with all of those yet' not in fn('NOAND') or 'data-fclear' not in fn('deck') or 'NOAND' not in fn('deck'):
     F.append("[8] in-deck zero-result message (No mats with all of those yet) missing")
 if UI.count('class="dempty">${NOAND}') < 2: F.append("[8] mat-door zero-result message missing (grid + search reset)")
-if "${filters('m')}</div>${deck('m')}" not in fn('renderMats'): F.append("[8] colour chips not rendered right above the mat deck (filter could lock)")
+if "${deck('m')}</div>`)+`<div class=\"s2ctl\">${VROW()}<div class=\"rfil mfil\">${filters('m')}</div>" not in fn('renderMats'): F.append("[8] colour chips not rendered right under the mat deck (Oct 30 layout; filter could lock)")
 if "fam:''" in UI or 'S.dfam=' in UI: F.append("[8] single-colour filter state left over (fam:'' / S.dfam)")
 if 'D.lead' not in fn('CSORT') or '-(SHR(id,C[0])+20*p)' not in fn('CSORT') or 'Mahjong Studios' in fn('CSORT'):
     F.append("[8b] colour chips not sorted lead > ONE list by score (share + 20 if primary) (CSORT/SHR)")
@@ -670,9 +670,10 @@ for c_ in ('pink', 'red', 'orange', 'yellow', 'green', 'blue', 'purple', 'neutra
     if c_ == 'tortoise' and _l and _l[0] != 'mm:Hawksbill': F.append(f"[52] Tortoise rack chip does not lead with Middle & Main Hawksbill Heritage ({_RR[_l[0]]['n']})")
 for k, r in _RR.items():
     if re.search(r'santa baby|trust fund', r['n'], re.I) and set(r.get('rf') or []) - {'metallic', 'clear'}: F.append(f"[52] {r['n']} sits in a colour chip {r.get('rf')} (metallic / seasonal only)")
-# [53] Oct 25 (Tiffany 20:03): the mat filter row sits between the tile photo and the mat deck (it filters the mats), like the racks row
-if "<div class=\"rfil mfil\">${filters('m')}</div>${deck('m')}" not in UI or "role=\"listbox\"></div></div>`+filters('m')" in UI:
-    F.append("[53] mat filter row is not between the tile photo and the mat deck")
+# [53] Oct 25 (Tiffany 20:03) the mat filter row sat between the tile photo and the mat deck. SUPERSEDED Oct 30 11:53am (Tiffany:
+# keep the two pictures together, like the mat door): the filter row sits right UNDER the deck in the step-2 controls box.
+if "<div class=\"s2ctl\">${VROW()}<div class=\"rfil mfil\">${filters('m')}</div>" not in UI or "role=\"listbox\"></div></div>`+filters('m')" in UI:
+    F.append("[53] mat filter row is not right under the mat deck (step-2 controls box)")
 # [54] Oct 25 (Tiffany 20:07): the texted / emailed shop list has one block per piece with a blank line between
 if "${L.join('\\n\\n')}" not in UI or "${kind} \\u00b7 ${nm} by ${o.bn}\\n${o.u" not in UI:
     F.append("[54] 'Text or email me this list' is not one block per piece with blank lines between")
@@ -1371,6 +1372,27 @@ try:
         if v_ > 0.11: _b108.append(f"{s_['name']} ({s_['maker']}) {v_:.2f}")
     if _b108: F.append(f"[108] {len(_b108)} new tile photos don't fill the frame (large empty background in the swipe photo / picker circle): " + '; '.join(_b108[:12]))
 except Exception as _e: F.append(f"[108] tile frame-fill check did not run: {_e}")
+# [109] Oct 30 11:53am (Tiffany): at step 2 the chosen item's photo and the swipe card TOUCH in BOTH doors (the mat-door model:
+# "that's where they're matching"); View / filters / search sit UNDER the deck, and X / heart sit on the card's left/right sides.
+try:
+    _rm = fn('renderMats'); _rt = fn('renderTiles')
+    _nl = _rm[_rm.find("el.innerHTML=`<div class=\"shrow\">${head(2,'Mat-ching'"):]
+    if "${backBtn()}</div>${deck('m')}</div>" not in _nl or "<div class=\"backrow\">${backBtn()}</div><div class=\"cmp aer\">${deck('m')}</div>" not in _nl:
+        F.append("[109] tiles door: something sits between the tile photo and the mat card (both views)")
+    if _nl.find('id="msq"') < _nl.find("${deck('m')}") or _nl.find('${VROW()}') < _nl.find("${deck('m')}"):
+        F.append("[109] tiles door: mat search / View switch is above the deck (out of frame); must be under it")
+    if "${deck}</div>`)+`<div class=\"s2ctl\">${VROW()}" not in _rt or _rt.find('VROW()') < _rt.find('id="tv-d"'):
+        F.append("[109] mat door: View switch is not under the deck / something sits between the mat photo and the tile card")
+    if "addSB(el,'m')" not in _rm or "addSB(el,'t')" not in _rt or 'class="sb no" data-no="m"' not in UI or 'class="sb no" data-tno' not in UI:
+        F.append("[109] X / heart buttons are not on the left/right of the swipe card in both doors")
+except Exception as _e: F.append(f"[109] step-2 layout check did not run: {_e}")
+# [110] Oct 30 11:45am (Tiffany: "use this as a tabletop tool"): search at step 2 in BOTH directions; a picked item becomes the top card.
+try:
+    if 'id="tdq"' not in fn('renderTiles') or "data-tfront" not in UI or 'S.tfront' not in UI or "A=[r,...A.filter(x=>x.i!==f)]" not in UI:
+        F.append("[110] mat door has no tile-set search at the swipe step (or a picked set is not put on top)")
+    if 'id="msq"' not in fn('renderMats') or 'S.mfront' not in fn('matDeck'):
+        F.append("[110] tiles door has no mat search at the swipe step (or a picked mat is not put on top)")
+except Exception as _e: F.append(f"[110] step-2 search check did not run: {_e}")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))
