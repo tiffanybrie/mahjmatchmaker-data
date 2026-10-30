@@ -45,7 +45,7 @@ If it passes: rewrite it as one plain `title` + one plain `line` + a direct `lin
 **Parked with a date:** an item that can't be done yet (e.g. "Etsy re-opens Oct 26") gets `status: "parked"` + `showFrom`. Each daily run reopens parked needs whose `showFrom` is today or earlier (`status: "open"`).
 
 ## 4. Ordering
-1. Launch-critical first (anything that blocks the Tue Oct 27 Find Your Mat-ch™ launch).
+1. Google first (Tiffany Oct 29 11:03pm: "Google is #1"): anything blocking MAHJMATCH on Google (alerts, indexing, verified dates, codes post). (Was: launch-critical for the Oct 27 FYM launch; updated Oct 30 by the rules audit.)
 2. Then today (things dated today, or blocking live money: affiliate links, codes).
 3. Then this week, by due date.
 - **Today:** 5 or fewer. Overflow moves to the top of This week.
