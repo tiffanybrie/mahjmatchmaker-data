@@ -11,6 +11,8 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 
 - Main: add "close leftover finished Claude tab groups at start" to every Chrome task TAB RULE (Tiffany Oct 30 10:10am).
 
+- Main: POPPINS on hold until OMM announces it + its paired tile set; then build "Match up Poppins in Find Your Mat-ch" (FYM phone mockups, 1 tile or 3-phone view) for her tile pick. Rework mat_alert.py into an FYM phone-mockup builder (ANSWERS Oct 30 10:14am).
+
 ## Tomorrow's top priorities (Fri Oct 30), in order
 - Later: clean up 52 legacy caption lint warnings (config/social/content_lint_baseline.json; mostly missing #MahjMatch, '(affiliate)', 2 TdT captions).
 Standing order: (1) Find Your Mat-ch launch: DONE Oct 27 (now Version 1.7 = v103, live in the artifact, /find-your-match and /find-your-mat-ch-preview). (2) Fall content before it expires: Brownstone Bloom live Fri, Night of the Raven before Halloween Sat. Then holiday: Merry Mahjong from Mon Nov 2. Her Oct 29 Google alarm ("major drop") rides as priority 3 because it is money. The order is clear from her answers, so no "set the order" card tonight.

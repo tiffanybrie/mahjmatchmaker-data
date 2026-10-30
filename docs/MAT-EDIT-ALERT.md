@@ -63,3 +63,6 @@ When a partner mat launches AND Tiffany's swipe book for it is complete, run the
 If her swipe isn't done, the launch watch builds the swipe book (or reuses the existing one), and the Mat Edit waits.
 
 First one: Poppins (Oh My Mahjong), Oct 30. Files are in `assets/social/mat-edit/poppins/` and the post package is `docs/social/mat-alert-poppins-2026-10-30.md`.
+
+## DIRECTION CHANGE (Tiffany Oct 30 10:14am) — read before building
+Do NOT post the album-style Mat Edit (19 album tiles). New-mat social is FIND YOUR MAT-CH driven: "Match up <mat> in Find Your Mat-ch", the mat mocked up in the app with one tile set (the one the brand pairs it with, or Tiffany's pick), optionally a 3-phone view with a few tile sets. Never post before the brand announces the mat. Rework this builder to render real FYM app screens in iPhone frames (pattern: assets/social/restock-oct27/build.py).
