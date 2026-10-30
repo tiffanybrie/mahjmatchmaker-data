@@ -4,8 +4,9 @@ double sided mats"). Audit of every Bespoke double-sided mat in b104 (scratchpad
 pairs already show both full sides; two were still wrong:
  - Gray Malin Getaway Dogs (hidden, one entry, old photo): Side A = pool dogs, Side B = ski-lift dogs, from Bespoke's own full
    flat render of each side (photos 2 + 3 on the product page; photo 1 shows both together). Unhidden (her OK 10:19am).
- - Jungle (Dhonk collab, HOT PINK AND TURQUOISE): one entry 'Jungle Turquoise'. Kept as Side A (her 8 album picks point at it,
-   photo unchanged) + NEW Side B 'Jungle Hot Pink' cropped from Bespoke's photo 1 (both sides side by side).
+ - Jungle (Dhonk collab, HOT PINK AND TURQUOISE): both sides are ALREADY in FYM as two entries, 'Jungle Turquoise' (8 of her picks)
+   and her album entry 'Jungle Hot Pink' (alb2:, 2 picks), each a full side. Not re-split (keys hold her picks); the album entry only
+   gets Bespoke's partner link + MAHJMATCH code like Turquoise (it had pa=false, no code). Crop kept in assets/mats/bespoke-ds-oct30/.
 New photos go in a new packed chunk mc/<n>.webp (same format as partneradds.py), thumbs inline (moved out of index by the build),
 colours measured like partneradds.py, appended to every set's rank (v104rank.py then colour-ranks them; side B right after A).
 Usage: python3 v105data.py <build_dir>"""
@@ -31,9 +32,9 @@ A = REPO + 'assets/mats/'
 JOBS = [  # key, image or None (keep), name, dn, side, base fields from
     (GM, A + 'graymalin-oct30/gray-malin-getaway-dogs-side-a-pool.jpg', 'Gray Malin Getaway Dogs (Side A: Pool)', 'Gray Malin Getaway Dogs', 'A'),
     (GM + '#side-b', A + 'graymalin-oct30/gray-malin-getaway-dogs-side-b-ski-lift.jpg', 'Gray Malin Getaway Dogs (Side B: Ski Lift)', 'Gray Malin Getaway Dogs', 'B'),
-    (JG, None, None, None, 'A'),
-    (JG + '#side-b', A + 'bespoke-ds-oct30/jungle-side-b-hot-pink.jpg', 'Jungle Hot Pink', None, 'B'),
 ]
+JHP = 'alb2:bespoke-mahjong-jungle-hot-pink'
+for k_ in ('b', 'u', 'u0', 'dc', 'pa', 'nc'): M[JHP][k_] = M[JG][k_]
 if not os.path.exists(A + 'bespoke-ds-oct30/jungle-side-b-hot-pink.jpg'):
     os.rename(A + 'bespoke-ds-oct30/jungle-side-a-hot-pink.jpg', A + 'bespoke-ds-oct30/jungle-side-b-hot-pink.jpg')
 if M.get(GM + '#side-b', {}).get('add') == ADD:
@@ -64,9 +65,9 @@ for key, img, name, dn, side in JOBS:
     o.pop('hid', None)
     if key not in M: o['add'] = ADD; M[key] = o; D['order'].append(key)
     else: M[key] = o
-M[GM + '#side-b']['add'] = ADD; M[JG + '#side-b']['add'] = ADD
+M[GM + '#side-b']['add'] = ADD
 ix = {m: j for j, m in enumerate(D['order'])}
-for ka in (GM, JG):
+for ka in (GM,):
     ja, jb = ix[ka], ix[ka + '#side-b']
     for s in sets:
         for fld in ('rank', 'cr'):
@@ -87,7 +88,10 @@ for c in sorted({int(f.split('/')[1].split('.')[0]) // 12 for f, _ in CH}):
     print('chunk', c)
 h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]
 inl = '<script>window.IMG=Object.assign(window.IMG||{},' + json.dumps(IMG, separators=(',', ':')) + ');</script>'
-a = '<script src="b24v1.js"></script>'; assert h.count(a) == 1; h = h.replace(a, a + inl, 1)
+a = '<script src="b24v1.js"></script>'
+if h.count(a) == 1: h = h.replace(a, a + inl, 1)
+else:  # website copy (no b24v1.js tag): next to the other inline IMG blocks
+    a = '<script>window.IMG=Object.assign(window.IMG||{},'; assert a in h; h = h.replace(a, inl + a, 1)
 open(P, 'w').write(h)
 # repo records
 C = json.load(open(REPO + 'config/fym-colour-oct25.json')); C['mats'].update(colour_mats)
@@ -98,8 +102,8 @@ for key, img, name, dn, side in JOBS:
     o = M[key]
     if img: FL[key] = {'name': o['n'], 'brand': o['bn'], 'flag': 'ok', 'note': 'Oct 30 v105: Bespoke double-sided = full side (Tiffany STANDING 10:30am)'}
     LK['mats'][key] = {k: o.get(k) for k in ('n', 'bn', 'f', 'th', 'rt', 'hid', 'mf', 'mt')}; LK['mats'][key]['hid'] = bool(o.get('hid'))
-if isinstance(LK.get('_changes'), list):
-    LK['_changes'].append('2026-10-30 v105 Bespoke double-sided: Gray Malin Getaway Dogs split Side A Pool / Side B Ski Lift (unhidden, Tiffany 10:19am); Jungle Turquoise = Side A + new Side B Jungle Hot Pink')
+if isinstance(LK.get('_changes'), list) and not any('v105 Bespoke double-sided' in str(c) for c in LK['_changes']):
+    LK['_changes'].append('2026-10-30 v105 Bespoke double-sided: Gray Malin Getaway Dogs split Side A Pool / Side B Ski Lift (unhidden, Tiffany 10:19am); Jungle Hot Pink (album entry) gets the Bespoke partner link + code like Jungle Turquoise')
 json.dump(FL, open(REPO + 'builder/fym_flags/mat_photo_flags.json', 'w'), indent=1, ensure_ascii=False)
 json.dump(LK, open(REPO + 'builder/fym_flags/locks.json', 'w'), indent=1, ensure_ascii=False)
 for x in log: print(x)

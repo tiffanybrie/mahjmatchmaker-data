@@ -157,6 +157,15 @@
    "imgB": "assets/mats/v95-bespoke-sideb/double-the-love-graffiti-mat.jpg",
    "holB": false,
    "listing_img_index": 2
+  },
+  "www.bespokemahjong.com/bespoke-x-gray-malin-double-sided-mat-double-the-fun-gray-malin-beach-club-mat-copy": {
+   "nameA": "Gray Malin Getaway Dogs",
+   "sideA": "Pool",
+   "sideB": "Ski Lift",
+   "imgA": "assets/mats/graymalin-oct30/gray-malin-getaway-dogs-side-a-pool.jpg",
+   "imgB": "assets/mats/graymalin-oct30/gray-malin-getaway-dogs-side-b-ski-lift.jpg",
+   "holB": false,
+   "added": "2026-10-30 v105 (builder/fym_fix_oct30/v105data.py; Tiffany OK 10:19am)"
   }
  }
 }

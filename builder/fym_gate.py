@@ -565,7 +565,7 @@ _rr = fn('renderRacks'); _rm = fn('renderMats'); _rm = _rm[_rm.find("head(2,'Mat
 def _order(src, parts):
     pos = [src.find(x) for x in parts]
     return all(p_ >= 0 for p_ in pos) and pos == sorted(pos)
-if not _order(_rm, ["tileView('m')", 'class="tcap"', "filters('m')", "deck('m')", "acts('m')", "tray('m')"]): F.append("[37] mat screen order changed (tiles, caption, filters, deck, ✕/♥, suitors; v91 Tiffany Oct 25 20:03)")
+if not _order(_rm, ["tileView('m')", 'class="tcap"', "deck('m')", "filters('m')", "acts('m')", "tray('m')"]): F.append("[37] mat screen order changed (tiles, caption, deck, filters, ✕/♥, suitors; Tiffany Oct 30 11:53am: pictures together, filters under the deck)")
 # Oct 25 (Tiffany 14:36): on racks the Brand/colour row sits BETWEEN the mat picture and the rack cards (her husband never found it above the mat)
 if not _order(_rr, ["matBand()", 'class="tcap"', 'class="rfil"', "filters('r')", "deck('r')", "acts('r')", "tray('r')"]): F.append("[37] rack screen order changed (mat, caption, brand/colour row, rack deck, ✕/♥, rack suitors)")
 _between = _rr[_rr.find("matBand()"):_rr.find("deck('r')")]
@@ -955,7 +955,7 @@ if not _pre97:
         _js82 = _rf + ";const S={mfront:'x',mfset:3,seen:{a:1},f:{m:{},r:{}}};resetFrom(1);console.log(JSON.stringify([S.mfront,S.mfset]));"
         _o82 = subprocess.run(['node', '-e', _js82], capture_output=True, text=True, timeout=60)
         if _o82.stdout.strip() != '[null,null]': F.append(f"[82] resetFrom(1) leaves the searched mat in front (S.mfront/mfset = {_o82.stdout.strip() or _o82.stderr[:120]})")
-        if 'const tReset=()=>{S.mfront=null;S.mfset=null;' not in UI: F.append("[82] tReset (mat door / start over) does not clear the searched mat")
+        if 'S.mfront=null;S.mfset=null;' not in fn('tReset'): F.append("[82] tReset (mat door / start over) does not clear the searched mat")
         if 'S.mfront&&S.mfset===S.set&&M[S.mfront]' not in UI: F.append("[82] matDeck fronts a searched mat on every set (no S.mfset===S.set guard)")
         if 'S.mfront=id;S.mfset=S.set;' not in UI: F.append("[82] mat search does not remember which set it was searched on")
     except Exception as _e: F.append(f"[82] sticky-search check did not run: {_e}")

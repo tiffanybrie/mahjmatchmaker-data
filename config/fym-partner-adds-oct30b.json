@@ -1,0 +1,54 @@
+{
+ "_note": "v105 (Oct 30) partner sweep adds: gate [100] found 2 Let's Be Besties Christmas mats live Oct 28 (holiday: Christmas). Same flow as fym-partner-adds-oct30.json via builder/fym_fix_oct30/partneradds105.py.",
+ "already_in_fym": {},
+ "tiles": [],
+ "alt_leatherette": {},
+ "mats": [
+  {
+   "key": "letsbebesties.com/christmas-ribbon-rhapsody",
+   "b": "Let's Be Besties",
+   "bn": "Let's Be Besties",
+   "u": "https://letsbebesties.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fchristmas-ribbon-rhapsody%3Fsca_ref%3D12515508.SUyXEjJsqV",
+   "u0": "https://letsbebesties.com/products/christmas-ribbon-rhapsody?sca_ref=12515508.SUyXEjJsqV",
+   "dc": "https://mahjmatchmaker.com/lets-be-besties-discount-code",
+   "pa": true,
+   "handle": "christmas-ribbon-rhapsody",
+   "name": "Christmas Ribbon Rhapsody",
+   "img": "assets/mats/v105/lbb-christmas-ribbon-rhapsody.jpg",
+   "primary": "red",
+   "hol": true,
+   "hid": false,
+   "published": "2026-10-28",
+   "photo_note": "brand flat render, whole mat (only listing photo)",
+   "colors": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "colors_note": "eye call: red/green/gold stripes, red circle, gold ribbon tree"
+  },
+  {
+   "key": "letsbebesties.com/jingle-jungle-leatherette-mahjong-mat",
+   "b": "Let's Be Besties",
+   "bn": "Let's Be Besties",
+   "u": "https://letsbebesties.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fjingle-jungle-leatherette-mahjong-mat%3Fsca_ref%3D12515508.SUyXEjJsqV",
+   "u0": "https://letsbebesties.com/products/jingle-jungle-leatherette-mahjong-mat?sca_ref=12515508.SUyXEjJsqV",
+   "dc": "https://mahjmatchmaker.com/lets-be-besties-discount-code",
+   "pa": true,
+   "handle": "jingle-jungle-leatherette-mahjong-mat",
+   "name": "Jingle Jungle Leatherette",
+   "img": "assets/mats/v105/lbb-jingle-jungle-leatherette.jpg",
+   "primary": "red",
+   "hol": true,
+   "hid": false,
+   "published": "2026-10-28",
+   "photo_note": "brand flat render, whole mat (only listing photo)",
+   "colors": [
+    "red",
+    "pink",
+    "neutral"
+   ],
+   "colors_note": "eye call: red/pink zebra stripes on white, Santa hat centre"
+  }
+ ]
+}

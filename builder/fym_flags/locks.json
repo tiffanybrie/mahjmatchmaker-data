@@ -22849,7 +22849,7 @@
   "www.bespokemahjong.com/bespoke-x-gray-malin-double-sided-mat-double-the-fun-gray-malin-beach-club-mat-copy": {
    "n": "Gray Malin Getaway Dogs (Side A: Pool)",
    "bn": "Bespoke Mahjong",
-   "f": "m/2268.webp",
+   "f": "m/2280.webp",
    "th": "m1057dd19ba8",
    "rt": false,
    "hid": false,
@@ -26375,7 +26375,7 @@
   "www.bespokemahjong.com/bespoke-x-gray-malin-double-sided-mat-double-the-fun-gray-malin-beach-club-mat-copy#side-b": {
    "n": "Gray Malin Getaway Dogs (Side B: Ski Lift)",
    "bn": "Bespoke Mahjong",
-   "f": "m/2269.webp",
+   "f": "m/2281.webp",
    "th": "m1058bef27c6",
    "rt": false,
    "hid": false,
@@ -26392,23 +26392,25 @@
     3
    ]
   },
-  "www.bespokemahjong.com/double-the-fun-dhonkcollabmat#side-b": {
-   "n": "Jungle Hot Pink",
-   "bn": "Bespoke Mahjong",
-   "f": "m/2270.webp",
-   "th": "m1051010542a",
+  "letsbebesties.com/christmas-ribbon-rhapsody": {
+   "n": "Christmas Ribbon Rhapsody",
+   "bn": "Let's Be Besties",
+   "f": "m/2268.webp",
+   "th": "m105p2a6394fd",
    "rt": false,
    "hid": false,
-   "mf": [
-    "purple",
-    "pink",
-    "neutral"
-   ],
-   "mt": [
-    0,
-    1,
-    2
-   ]
+   "mf": [],
+   "mt": []
+  },
+  "letsbebesties.com/jingle-jungle-leatherette-mahjong-mat": {
+   "n": "Jingle Jungle Leatherette",
+   "bn": "Let's Be Besties",
+   "f": "m/2269.webp",
+   "th": "m105p6f95789a",
+   "rt": false,
+   "hid": false,
+   "mf": [],
+   "mt": []
   }
  },
  "_changes": [
@@ -26508,8 +26510,7 @@
   "2026-10-27 v101: partner sweep mats (Britt Mills House Print, TdT Domino Blonde + Estate Sale + Fair Isle Cashmere (hidden), Bespoke x Brooks Brothers Oxford Classic A/B, PLM Vegan Leather x4) + Spirit of Christmas tile set (her Spirit swipe book picks)",
   "2026-10-30 v104 partner sweep mats: Bam Bird Plaid Neoprene x3 colourways, Anders Ruff Paws in the Garden, Let's Be Besties Tidal Glass / Retro Riviera / Retro Riviera Simple Middle",
   "2026-10-30 v104 Brownstone Bloom mat racks: M&M Hawksbill Heritage Tortoise replaces AR Tortoise (Tiffany Oct 29, config/mat-racks-picks.json)",
-  "2026-10-30 v105 Bespoke double-sided: Gray Malin Getaway Dogs split Side A Pool / Side B Ski Lift (unhidden, Tiffany 10:19am); Jungle Turquoise = Side A + new Side B Jungle Hot Pink",
-  "2026-10-30 v105 Bespoke double-sided: Gray Malin Getaway Dogs split Side A Pool / Side B Ski Lift (unhidden, Tiffany 10:19am); Jungle Turquoise = Side A + new Side B Jungle Hot Pink",
-  "2026-10-30 v105 Bespoke double-sided: Gray Malin Getaway Dogs split Side A Pool / Side B Ski Lift (unhidden, Tiffany 10:19am); Jungle Turquoise = Side A + new Side B Jungle Hot Pink"
+  "2026-10-30 v105 partner sweep mats: Let's Be Besties Christmas Ribbon Rhapsody + Jingle Jungle Leatherette (holiday)",
+  "2026-10-30 v105 Bespoke double-sided: Gray Malin Getaway Dogs split Side A Pool / Side B Ski Lift (unhidden, Tiffany 10:19am); Jungle Hot Pink (album entry) gets the Bespoke partner link + code like Jungle Turquoise"
  ]
 }
