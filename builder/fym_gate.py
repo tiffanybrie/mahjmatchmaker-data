@@ -1410,6 +1410,45 @@ try:
     if _miss: F.append(f"[112] side B mats without their own tile order (so): {_miss[:5]}")
     if "M[id].so" not in UI: F.append("[112] setsForMat does not use M[id].so")
 except Exception as _e: F.append(f"[112] side-B order check did not run: {_e}")
+# [113] Oct 30 5:14pm (Tiffany: "when I filter by brand, I'm only seeing the clear wood"): a picked brand at the racks / mats step
+# shows ALL that brand's visible racks/mats (her picks first), even with "Tiffany's picks: on"; stained-wood racks carry the Wood chip.
+try:
+    _rd, _md = fn('rackDeck'), fn('matDeck')
+    if 'ids=f.brand?[...ids.filter(hu),...ids.filter(r=>!hu(r))]' not in _rd:
+        F.append("[113] racks step: picking a brand with Tiffany's picks on still hides that brand's other racks")
+    if 'if(f.her&&f.brand)' not in _md:
+        F.append("[113] mats step: picking a brand with Tiffany's picks on still hides that brand's other mats")
+    _w113 = [r['n'] for k, r in D['racks'].items() if not r.get('hid') and re.search(r'(?i)wood stain|weathered oak|provincial|mahogany|walnut', r.get('n', '')) and 'wood' not in (r.get('rf') or [])]
+    if _w113: F.append(f"[113] stained-wood racks missing the Wood chip: {_w113[:6]}")
+except Exception as _e: F.append(f"[113] brand-filter check did not run: {_e}")
+# [114] Oct 30 5:16pm (Tiffany: new partners' catalogs not in FYM; YOLO 1 of 65 mats, Noli June 0, inbox handoffs sat open):
+# every partner (config/fym-partner-coverage.json, must cover every nonpartner_allow.json partner) has >= 1 visible FYM item
+# unless exempt with a reason, and every MATCH-INBOX "NEW PARTNER" line is marked DONE / CLOSED.
+try:
+    _cov = json.load(open(os.path.join(REPO, 'config/fym-partner-coverage.json')))['brands']
+    _cb = {c['brand'] for c in _cov}
+    _pa = json.load(open(os.path.join(REPO, 'builder/fym_flags/nonpartner_allow.json')))['partners']
+    _miss_cfg = [p for p in _pa if p not in _cb]
+    if _miss_cfg: F.append(f"[114] partners missing from config/fym-partner-coverage.json: {_miss_cfg}")
+    _vis = {}
+    for _kind in ('mats', 'racks', 'tiles'):
+        for _o in D[_kind].values():
+            if not _o.get('hid'): _vis[_o.get('bn')] = _vis.get(_o.get('bn'), 0) + 1
+    _zero = [c['brand'] for c in _cov if not c.get('exempt') and not sum(_vis.get(n, 0) for n in c.get('fym_names', [c['brand']]))]
+    if _zero: F.append(f"[114] partner brands with 0 visible items in FYM (bring their catalog in, or exempt with a reason): {_zero}")
+    _inb = open(os.path.join(REPO, 'docs/MATCH-INBOX.md')).read().splitlines()
+    _open = [l[:90] for l in _inb if 'NEW PARTNER' in l and not re.search(r'\b(DONE|CLOSED)\b', l)]
+    if _open: F.append(f"[114] MATCH-INBOX NEW PARTNER handoffs not marked DONE: {_open}")
+except Exception as _e: F.append(f"[114] partner coverage check did not run: {_e}")
+# [115] Oct 30 eve: the WEBSITE copy (loads with <base> = the v72 folder) must use absolute URLs for every photo not in that folder.
+# v105's site copy swapped in the app's relative paths and 182 of 328 tile photos 404'd live. Run with --site <site index.html>.
+if '--site' in sys.argv:
+    try:
+        _sp = sys.argv[sys.argv.index('--site') + 1]; _sh = open(_sp).read(); _si = _sh.index('const D=') + 8; _SD, _ = json.JSONDecoder().raw_decode(_sh[_si:])
+        _bt = set(subprocess.run(['git', '-C', os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(_sp)))), 'ls-tree', '-r', '--name-only', 'ad0675e42242c3abad40cac9f539a265220e26eb', 'site-app/fym-v72/'], capture_output=True, text=True).stdout.split())
+        _rel = sorted({o.get('full') for o in _SD['tiles'].values() if isinstance(o.get('full'), str) and re.match(r't\d', o['full']) and ('site-app/fym-v72/' + o['full']) not in _bt})
+        if _rel: F.append(f"[115] website copy has {len(_rel)} tile photo paths that 404 from the v72 base (need absolute CDN URLs): {_rel[:4]}")
+    except Exception as _e: F.append(f"[115] website photo path check did not run: {_e}")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))

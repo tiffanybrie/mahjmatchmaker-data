@@ -1,0 +1,247 @@
+{
+ "_about": "Every partner brand (code partners: builder/fym_flags/nonpartner_allow.json partners + Maison Mahj). Gate [114] FAILS if a non-exempt partner has 0 visible FYM items (mats + racks + tiles, matched by fym_names = the bn used in the app), if a partner in nonpartner_allow.json is missing here, or if a docs/MATCH-INBOX.md line with NEW PARTNER is not marked DONE/CLOSED. Added Oct 30 after YOLO (1 of 65 mats) and Noli June (0) sat in the inbox (Tiffany 5:16pm).",
+ "brands": [
+  {
+   "brand": "Oh My Mahjong",
+   "fym_names": [
+    "Oh My Mahjong"
+   ]
+  },
+  {
+   "brand": "Mahjong Row & Co.",
+   "fym_names": [
+    "Mahjong Row & Co."
+   ]
+  },
+  {
+   "brand": "Miss Mahjong",
+   "fym_names": [
+    "Miss Mahjong"
+   ]
+  },
+  {
+   "brand": "My Fair Mahjong",
+   "fym_names": [
+    "My Fair Mahjong"
+   ]
+  },
+  {
+   "brand": "Bam Bird Boutique",
+   "fym_names": [
+    "Bam Bird Boutique"
+   ]
+  },
+  {
+   "brand": "Bespoke Mahjong",
+   "fym_names": [
+    "Bespoke Mahjong"
+   ]
+  },
+  {
+   "brand": "Peace Love Mahjong",
+   "fym_names": [
+    "Peace Love Mahjong"
+   ]
+  },
+  {
+   "brand": "Charleston Mahjong Club",
+   "fym_names": [
+    "Charleston Mahjong Club"
+   ]
+  },
+  {
+   "brand": "Tigre de Tartan",
+   "fym_names": [
+    "Tigre de Tartan"
+   ]
+  },
+  {
+   "brand": "Britt Mills",
+   "fym_names": [
+    "Britt Mills",
+    "Britt Mills (BMD)"
+   ]
+  },
+  {
+   "brand": "Amanda Toppe",
+   "fym_names": [
+    "Amanda Toppe",
+    "Amanda Toppe Living"
+   ]
+  },
+  {
+   "brand": "Amahj",
+   "fym_names": [
+    "Amahj"
+   ]
+  },
+  {
+   "brand": "Mac + Miller Mahjong",
+   "fym_names": [
+    "Mac + Miller Mahjong"
+   ]
+  },
+  {
+   "brand": "Middle & Main Mahjong",
+   "fym_names": [
+    "Middle & Main Mahjong"
+   ]
+  },
+  {
+   "brand": "Mahj Mood",
+   "fym_names": [
+    "Mahj Mood"
+   ]
+  },
+  {
+   "brand": "Mahj Squad",
+   "fym_names": [
+    "Mahj Squad"
+   ]
+  },
+  {
+   "brand": "Bird & Bamboo",
+   "fym_names": [
+    "Bird & Bamboo"
+   ]
+  },
+  {
+   "brand": "Let's Mahj On",
+   "fym_names": [
+    "Let's Mahj On"
+   ]
+  },
+  {
+   "brand": "Splash of Color",
+   "fym_names": [
+    "Splash of Color"
+   ]
+  },
+  {
+   "brand": "Bam! Let's Mahjong",
+   "fym_names": [
+    "Bam! Let's Mahjong"
+   ]
+  },
+  {
+   "brand": "Mini Mahjer",
+   "fym_names": [
+    "Mini Mahjer"
+   ],
+   "exempt": "mini/travel sets only; Tiffany Oct 26 09:13: NO (no mini/travel sets in FYM)"
+  },
+  {
+   "brand": "Wren Mats",
+   "fym_names": [
+    "Wren Mats"
+   ]
+  },
+  {
+   "brand": "Mahj & Vine",
+   "fym_names": [
+    "Mahj & Vine"
+   ]
+  },
+  {
+   "brand": "Hip Hip Mahjong",
+   "fym_names": [
+    "Hip Hip Mahjong"
+   ]
+  },
+  {
+   "brand": "Virora Mahjong",
+   "fym_names": [
+    "Virora Mahjong"
+   ]
+  },
+  {
+   "brand": "Yellow Mountain Imports",
+   "fym_names": [
+    "Yellow Mountain Imports"
+   ]
+  },
+  {
+   "brand": "Mahjong Co.",
+   "fym_names": [
+    "Mahjong Co."
+   ]
+  },
+  {
+   "brand": "I Love Mahj",
+   "fym_names": [
+    "I Love Mahj"
+   ],
+   "exempt": "no mats/tiles/racks to match; Tiffany Oct 26 11:28pm took them off the FYM partner email"
+  },
+  {
+   "brand": "Anders Ruff",
+   "fym_names": [
+    "Anders Ruff"
+   ]
+  },
+  {
+   "brand": "Mahjong Studios",
+   "fym_names": [
+    "Mahjong Studios"
+   ]
+  },
+  {
+   "brand": "The Mahjong Press",
+   "fym_names": [
+    "The Mahjong Press"
+   ],
+   "exempt": "no mats/tiles/racks to match; Tiffany Oct 26 11:28pm took them off the FYM partner email"
+  },
+  {
+   "brand": "The Royal Mahjong Society",
+   "fym_names": [
+    "Royal Mahjong Society"
+   ]
+  },
+  {
+   "brand": "Soirée All Day",
+   "fym_names": [
+    "Soirée All Day"
+   ]
+  },
+  {
+   "brand": "Mahjong Register",
+   "fym_names": [
+    "Mahjong Register"
+   ]
+  },
+  {
+   "brand": "Let's Be Besties",
+   "fym_names": [
+    "Let's Be Besties"
+   ]
+  },
+  {
+   "brand": "Fait à Main",
+   "fym_names": [
+    "Fait à Main"
+   ]
+  },
+  {
+   "brand": "YOLO Mahjong",
+   "fym_names": [
+    "YOLO Mahjong"
+   ],
+   "catalog": "https://www.yolomahjong.com/products.json (data/brands/yolo-mahjong-catalog-2026-10-28.json)"
+  },
+  {
+   "brand": "Noli June",
+   "fym_names": [
+    "Noli June"
+   ],
+   "catalog": "https://nolijune.com/products.json (data/brands/noli-june-catalog-2026-10-30.json)"
+  },
+  {
+   "brand": "Maison Mahj",
+   "fym_names": [
+    "Maison Mahj"
+   ],
+   "note": "code partner since Oct 29 (free shipping on tile sets only); FYM keeps only The Chalet until Tiffany decides (MATCH-INBOX Oct 30 12:15am)"
+  }
+ ]
+}
