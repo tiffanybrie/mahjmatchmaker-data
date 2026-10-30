@@ -1,6 +1,7 @@
 # Maison Mahj (@maisonmahj): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Oct 30: House Line No. 1 preorder access staged: Maison Society Nov 1, Collector's Circle Nov 2, Collector's List Nov 3, public Nov 4, 12:30 CT; ships Feb 2027 (DfIa6a_l2L-). Non-partner.
 - Oct 30 email 'The Art of a Beautiful Table': House Line No. 1 tile set + new House Tote + Maison Rack Bags + acrylic/wood racks + Signature House Mat / Tile House Mat, 'Windows open tomorrow' (Sat Oct 31; tiered windows). Sells the full table look (tiles+mat+racks+bags).
 - Oct 29: House Line No. 1 tile set, 'a new Maison Mahj classic to gift, collect, and bring to the table'; preorders expected to ship Feb 2027 (DfFJR3YlMFx). Not in store products.json yet. #MaisonMahj #LuxuryMahjong #TheArtOfGathering #MahjongGifts.
 - Oct 29 9:45am ET: House Line No. 1 'a new Maison Mahj classic to gift, collect' (DfFJR3YlMFx); preorders ship Feb 2027. #MaisonMahj #LuxuryMahjong #MahjongGifts.

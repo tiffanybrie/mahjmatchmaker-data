@@ -525,12 +525,14 @@
       "window": "arriving late Oct/early Nov; preorders ship first",
       "windowStart": "2026-10-26",
       "windowEnd": "2026-11-07",
-      "source": "IG Sep 30 + Oct 14",
-      "sourceUrl": "https://www.instagram.com/p/DeeKkphxbTb/",
+      "source": "IG Sep 30 + Oct 14; BACK IN STOCK IG Oct 30 4:48pm ET (store confirmed $425)",
+      "sourceUrl": "https://www.instagram.com/p/DfIegGSBKS2/",
       "album": false,
       "affiliate": true,
       "priority": 2,
-      "contentTiming": "Fall content; watch for in-stock."
+      "contentTiming": "Fall content; watch for in-stock.",
+      "status": "LIVE 2026-10-30",
+      "url": "https://charlestonmahjongclub.com/products/the-hunt-club-edition"
     },
     {
       "id": "cmc-cabana-travel",
@@ -1061,6 +1063,21 @@
       "affiliate": false,
       "priority": 4,
       "contentTiming": "Log only (non-partner except The Chalet)."
+    },
+    {
+      "id": "bambird-restock-teaser-oct30",
+      "brand": "Bam Bird Boutique",
+      "product": "Restocks + brand announcements (unnamed; newsletter first)",
+      "type": "teaser",
+      "window": "soon (no date)",
+      "windowStart": "2026-10-30",
+      "windowEnd": "2026-11-15",
+      "source": "IG Oct 30",
+      "sourceUrl": "https://www.instagram.com/p/DfIlDoan_y8/",
+      "album": false,
+      "affiliate": true,
+      "priority": 3,
+      "contentTiming": "Watch store; Deco Indigo restock triggers the Deco trio albums."
     }
   ],
   "sources": {

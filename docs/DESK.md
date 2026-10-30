@@ -9,6 +9,7 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 
 **PARTNER SEND GATE (Oct 27 3:08am, standing):** before scheduling ANY partner email or graphics drop, run `python3 scripts/partner_send_check.py`; it must exit 0.
 
+- **Main: Charleston Mahjong Club Hunt Club tiles BACK IN STOCK (Oct 30, partner watch 6:30pm)**: reshare CMC's post https://www.instagram.com/p/DfIegGSBKS2/ + review 3 story frames (NOT posted): assets/social/restock-huntclub-oct30/out/hc-A-cream-trio.jpg, hc-B-green-trio.jpg, hc-C-white-duo.jpg. HQ needs/launch-cmc-hunt-club-oct30.
 - Main: add "close leftover finished Claude tab groups at start" to every Chrome task TAB RULE (Tiffany Oct 30 10:10am).
 
 - Main: POPPINS on hold until OMM announces it + its paired tile set; then build "Match up Poppins in Find Your Mat-ch" (FYM phone mockups, 1 tile or 3-phone view) for her tile pick. Rework mat_alert.py into an FYM phone-mockup builder (ANSWERS Oct 30 10:14am).
