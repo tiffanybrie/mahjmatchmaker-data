@@ -22847,17 +22847,21 @@
    ]
   },
   "www.bespokemahjong.com/bespoke-x-gray-malin-double-sided-mat-double-the-fun-gray-malin-beach-club-mat-copy": {
-   "n": "Gray Malin Getaway Dogs Mat",
+   "n": "Gray Malin Getaway Dogs (Side A: Pool)",
    "bn": "Bespoke Mahjong",
-   "f": "m/1403.webp",
-   "th": "0c7106c7ae",
+   "f": "m/2268.webp",
+   "th": "m1057dd19ba8",
    "rt": false,
-   "hid": true,
+   "hid": false,
    "mf": [
-    "neutral"
+    "dark",
+    "blue",
+    "pink"
    ],
    "mt": [
-    0
+    0,
+    1,
+    2
    ]
   },
   "www.bespokemahjong.com/cheetah-couture": {
@@ -26367,6 +26371,44 @@
     2,
     3
    ]
+  },
+  "www.bespokemahjong.com/bespoke-x-gray-malin-double-sided-mat-double-the-fun-gray-malin-beach-club-mat-copy#side-b": {
+   "n": "Gray Malin Getaway Dogs (Side B: Ski Lift)",
+   "bn": "Bespoke Mahjong",
+   "f": "m/2269.webp",
+   "th": "m1058bef27c6",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "blue",
+    "neutral",
+    "orange",
+    "dark"
+   ],
+   "mt": [
+    0,
+    1,
+    2,
+    3
+   ]
+  },
+  "www.bespokemahjong.com/double-the-fun-dhonkcollabmat#side-b": {
+   "n": "Jungle Hot Pink",
+   "bn": "Bespoke Mahjong",
+   "f": "m/2270.webp",
+   "th": "m1051010542a",
+   "rt": false,
+   "hid": false,
+   "mf": [
+    "purple",
+    "pink",
+    "neutral"
+   ],
+   "mt": [
+    0,
+    1,
+    2
+   ]
   }
  },
  "_changes": [
@@ -26465,6 +26507,9 @@
   "2026-10-26: 5 My Fair Mahjong sets + YMI Mojave unhidden (stale no_tiles flag from the old photo; Tiffany 5:45pm), Crystal Confetti + Prism on close brand photos (v97_mfm.py)",
   "2026-10-27 v101: partner sweep mats (Britt Mills House Print, TdT Domino Blonde + Estate Sale + Fair Isle Cashmere (hidden), Bespoke x Brooks Brothers Oxford Classic A/B, PLM Vegan Leather x4) + Spirit of Christmas tile set (her Spirit swipe book picks)",
   "2026-10-30 v104 partner sweep mats: Bam Bird Plaid Neoprene x3 colourways, Anders Ruff Paws in the Garden, Let's Be Besties Tidal Glass / Retro Riviera / Retro Riviera Simple Middle",
-  "2026-10-30 v104 Brownstone Bloom mat racks: M&M Hawksbill Heritage Tortoise replaces AR Tortoise (Tiffany Oct 29, config/mat-racks-picks.json)"
+  "2026-10-30 v104 Brownstone Bloom mat racks: M&M Hawksbill Heritage Tortoise replaces AR Tortoise (Tiffany Oct 29, config/mat-racks-picks.json)",
+  "2026-10-30 v105 Bespoke double-sided: Gray Malin Getaway Dogs split Side A Pool / Side B Ski Lift (unhidden, Tiffany 10:19am); Jungle Turquoise = Side A + new Side B Jungle Hot Pink",
+  "2026-10-30 v105 Bespoke double-sided: Gray Malin Getaway Dogs split Side A Pool / Side B Ski Lift (unhidden, Tiffany 10:19am); Jungle Turquoise = Side A + new Side B Jungle Hot Pink",
+  "2026-10-30 v105 Bespoke double-sided: Gray Malin Getaway Dogs split Side A Pool / Side B Ski Lift (unhidden, Tiffany 10:19am); Jungle Turquoise = Side A + new Side B Jungle Hot Pink"
  ]
 }

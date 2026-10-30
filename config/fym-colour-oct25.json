@@ -10688,39 +10688,39 @@
 "www.bespokemahjong.com/bespoke-x-gray-malin-double-sided-mat-double-the-fun-gray-malin-beach-club-mat-copy": {
 "sw": [
 [
-"#ebe2de",
-0.408
+"#9bbabd",
+0.268
 ],
 [
-"#d3d1db",
-0.292
+"#36341e",
+0.235
 ],
 [
-"#aaa3a5",
-0.08
+"#5e5f38",
+0.126
 ],
 [
-"#766656",
-0.054
+"#dec5b8",
+0.1
 ],
 [
-"#757c8f",
-0.053
+"#a78471",
+0.099
 ],
 [
-"#383432",
-0.043
+"#69554b",
+0.071
 ],
 [
-"#dbbea3",
-0.036
+"#e8a9a8",
+0.067
 ],
 [
-"#b58f66",
+"#aeac63",
 0.034
 ]
 ],
-"tone": "pastel"
+"tone": "muted"
 },
 "www.bespokemahjong.com/garden-glow-mat-wild-orchid": {
 "sw": [
@@ -38069,6 +38069,76 @@
 ]
 ],
 "tone": "blend"
+},
+"www.bespokemahjong.com/bespoke-x-gray-malin-double-sided-mat-double-the-fun-gray-malin-beach-club-mat-copy#side-b": {
+"sw": [
+[
+"#ece2de",
+0.403
+],
+[
+"#d3d2da",
+0.304
+],
+[
+"#aaa2a4",
+0.082
+],
+[
+"#6b615b",
+0.05
+],
+[
+"#d8b08c",
+0.044
+],
+[
+"#758099",
+0.043
+],
+[
+"#343130",
+0.038
+],
+[
+"#957859",
+0.036
+]
+],
+"tone": "pastel"
+},
+"www.bespokemahjong.com/double-the-fun-dhonkcollabmat#side-b": {
+"sw": [
+[
+"#991e56",
+0.245
+],
+[
+"#c23674",
+0.229
+],
+[
+"#768377",
+0.138
+],
+[
+"#813751",
+0.123
+],
+[
+"#b0b0a9",
+0.106
+],
+[
+"#916973",
+0.069
+],
+[
+"#494640",
+0.062
+]
+],
+"tone": "bright"
 }
 },
 "sets": {
