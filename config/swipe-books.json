@@ -1,0 +1,13 @@
+{
+  "_about": "Registry of published swipe books (Tiffany Oct 30 2:45am: she never swipes the same product twice). Key = the book's collection key D.col. book_gate.py [g] FAILS a new book whose D.col (or product handle) is already here with votes/completed, unless it is that same book being updated (--update-of <url>). Every task that publishes a swipe book adds its entry here in the same commit.",
+  "books": {
+    "poppins-mat-in-tubeswipe": {
+      "url": "https://claude.ai/artifact/FG8AbqV3YCXtURkQFbuncj",
+      "product": "Poppins mat (Oh My Mahjong, mat in tube)",
+      "handle": "poppins-mat-in-tube",
+      "status": "completed",
+      "completed": "2026-10-28",
+      "votes": true
+    }
+  }
+}

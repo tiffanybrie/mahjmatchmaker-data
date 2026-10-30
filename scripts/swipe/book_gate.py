@@ -19,6 +19,9 @@ Checks, for every tile-set group in a tile-mode book (D.mode == 'tile'):
   [f] fresh snapshot (rules audit GA2, Oct 30): config/fym-mats-snapshot.json must be built from the NEWEST FYM build
       (site-app/fym-vNN on the fym-site-preview branch, or the top row of docs/FYM-VERSIONS.md). Older = FAIL: run
       scripts/swipe/fym_snapshot.py <newest FYM index.html> --version vNN, commit, then rebuild the book.
+  [g] no second book (Tiffany Oct 30 2:45am: she hates swiping twice): fail if D.col, or the product handle inside it
+      (D.col minus the trailing "swipe"), is already in config/swipe-books.json with votes or status completed, unless
+      this run is an update of that same book (--update-of <its artifact url>). Register every published book there.
   Holiday (Oct 30, GA2): uses the FYM `hol` flag (CLAUDE.md Oct 21 FINAL rule: only Christmas, Hanukkah, winter snow/ski).
       Halloween / Valentine's / Easter mats are NOT holiday and are no longer excluded by name.
 Mat-mode books (groups are mats, items are tile sets) only get [e] skipped and a notice; [c]/[d] do not apply.
@@ -64,9 +67,33 @@ def load_D(path):
     return json.JSONDecoder().raw_decode(h[i:])[0]
 
 
-def gate(path, snap_path=None):
+def _dup_book(D, update_of=None):
+    """[g] Return a failure string if this book duplicates a registered book that already has votes."""
+    try:
+        reg = json.load(open(os.path.join(REPO, 'config', 'swipe-books.json'))).get('books', {})
+    except Exception:
+        return None
+    col = (D.get('col') or '').strip().lower()
+    if not col:
+        return None
+    handle = re.sub(r'swipe$', '', col)
+    for k, b in reg.items():
+        bh = (b.get('handle') or re.sub(r'swipe$', '', k)).lower()
+        if k.lower() == col or (handle and bh == handle):
+            if update_of and update_of.rstrip('/') == (b.get('url') or '').rstrip('/'):
+                return None
+            if b.get('votes') or b.get('status') == 'completed':
+                return (f"[g] a swipe book for this product already exists with her votes: {b.get('url')} ({k}, {b.get('status')} "
+                        f"{b.get('completed', '')}). Reuse it (and its votes); don't make her swipe twice. Updating that book? pass --update-of <url>")
+    return None
+
+
+def gate(path, snap_path=None, update_of=None):
     F, notes = [], []
     D = load_D(path)
+    _d = _dup_book(D, update_of)
+    if _d:
+        F.append(_d)
     _snapd = json.load(open(snap_path or os.path.join(REPO, 'config', 'fym-mats-snapshot.json')))
     snap = _snapd['mats']
     _new = _newest_fym()
@@ -154,9 +181,12 @@ def main():
     snap = sys.argv[sys.argv.index('--snapshot') + 1] if '--snapshot' in sys.argv else None
     if snap in a:
         a.remove(snap)
+    upd = sys.argv[sys.argv.index('--update-of') + 1] if '--update-of' in sys.argv else None
+    if upd in a:
+        a.remove(upd)
     if not a:
         print(__doc__); sys.exit(2)
-    F, notes = gate(a[0], snap)
+    F, notes = gate(a[0], snap, upd)
     for n in notes:
         print('BOOK GATE NOTE: ' + n)
     if F:

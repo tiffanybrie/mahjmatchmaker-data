@@ -18,3 +18,5 @@ M = {k: {'n': m.get('n'), 'bn': m.get('bn'), 'hol': bool(m.get('hol')), 'hid': b
 json.dump({'_about': 'Slim FYM mats snapshot for scripts/swipe/book_gate.py (fym_snapshot.py).', 'built': datetime.date.today().isoformat(),
            'source': os.path.basename(src), 'fym_version': VER, 'mats': M}, open(out, 'w'), ensure_ascii=False, separators=(',', ':'))
 print('mats', len(M), 'fym_version', VER, '->', out)
+if not VER:
+    print('WARNING: no FYM build number recorded; book_gate [f] will FAIL. Re-run with --version vNN (the build you just published).')

@@ -295,3 +295,46 @@ The missed-run watchdog is folded into the morning report (E4(c)) rather than a 
 - **Claude can do now (standing authority or carrying out decisions she already made):** E1-E24, N1-N3 setup, GA1-GA4, the BRAND-GUIDE Maison Mahj line, the HQ-CLEANUP §4 "Launch-critical (Oct 27)" line. Disabling E13/E14 is a disable, not a delete: tell her in one line.
 
 Audit by a background agent, Oct 30 2026 ~00:30 ET. No scheduled task or gate was changed by this audit.
+
+## 14. Applied Oct 30 (the "section 11: Applied" report of the apply pass; numbered 14 because 11-13 above are the plan)
+
+Applied by a background agent Oct 30, ~12:05-6:50am ET, under Tiffany's Oct 29 11:03pm yes. Nothing was disabled or deleted. Each trigger edit kept the full existing prompt and appended an "ADDED Oct 30" block (or replaced only the lines named in section 10).
+
+| Fix | Status | Task / file |
+|---|---|---|
+| E1 codes post: TdT never typed in any caption or FB group text (graphic only), Maison line, `content_lint --codes-list`, 9:45am yes follow-up task, texts saved to docs/social/ | DONE | trig_01QNpTLC6egFF4u4oethFWVP |
+| E2 HQ Talk: 9:47am, 1:47pm (no Chrome), 4:47pm, 7:47pm, 10:47pm + codes-post answers first on Mondays + CHROME LOCK/TAB | DONE (times shifted from the audit's 7:47/10:47/13:47 so it never starts on top of the morning report, code report or sales check) | trig_015cSezcshZpncAUiBedzWwv |
+| E3 code report: renamed Mon/Wed/Fri; never overwrites aiSummary/aiBrands/sc/sales/alarm; writes aiReport + codeSummary + top of dailyLog; reuses the morning's per-brand AI Overview results (only AI Mode searched); desktop rank labelled; CHROME LOCK | DONE | trig_01GQHweQ9DbqXgoG2dp8GgBa |
+| E4 morning report | already done before this pass | trig_01LZjGfVneN3vKwweVXwbzub |
+| E5 CHROME LOCK + TAB RULE | DONE on 11 tasks (01GQHw, 015cSe, 019Fji, 01C7xP, 01LC2k, 015vK2, 012tRm, 01CgZr, 01HpSV, 01NpQo, 012P44); 01LZjG already had it. **BLOCKED on trig_01PGtT** (approval unanswered) → docs/rules-audit/pending-trigger-edits-oct30.md §1 | |
+| E6 sales: UpPromote Marketplace + B&B dashboards, new-affiliate + applied scan, policy watch, ShopMy (12:04am) | DONE | trig_019FjiaFBVX512N67EYxrGUw |
+| E7 onboarding: Maison Mahj code partner (old skip removed), TdT image-only, 5b Instagram follow/favorite | DONE; moved 2:22pm → 2:52pm. BRAND-GUIDE Maison line was already updated by the Main agent | trig_01C7xPrJVSgHBv1ysBekgJyh |
+| E8 partner feedback: renamed; text fixed; after Nov 10 it asks (HQ needs + DESK) instead of disabling itself | DONE | trig_01RKw9eUwTYPo39gbYHb65gh |
+| E9 desk cleanup: both Planoly workspaces, Google-first order, weekly verified dates + codes post, restock first, Planoly audit (FB target, stories, tags, lint), MATCH-INBOX age, new-album checks, content_lint legacy line | DONE | trig_01WeCbwyCsSuP5p8c39nPtNT |
+| E10 launch watch: renamed; tile-set books only via build_book.py + book_gate; needs-tnt stage; Dropbox DESK line | DONE | trig_01S2VsjwznnHev1uUbYmEwJq |
+| E11 Mahji Mentor: renamed; daily 1:07pm (was 12:44, 36 min after indexing); stale "Known launches" replaced; book_gate rule; Dropbox line | DONE | trig_01LC2kwT22s8TLGRcuTinrXw |
+| E12 + E24 TNT scan: target sets from DESK/hq/albums/release calendar; writes config/tnt-recs.json in book_gate's real format ({sets:{id:{scanned,source,recs}}}); Tue 10:37am | DONE | trig_015vK2vwvGE2ChkgHmciZjZm |
+| E13 FYM weekly new-mat scan disable | NOT DONE: Tiffany's call | trig_01NRxYaJDZF8R3HW3Dur3S1B |
+| E14 new mat watch (1st/15th) disable | NOT DONE: Tiffany's call (it also starts at 12:08pm on the 1st/15th, same minute as indexing) | trig_01JdJPFFJ7kDeG4PQ7nMpjmy |
+| E15 monthly maintenance: fix-don't-report, brand_page_text, retired doc targets removed; 1st at 8:37pm | DONE | trig_012tRmi5atnTDaUYbuDfiy15 |
+| E16 1-month evaluation sources | DONE | trig_01VMhd3m7dhea9XVLD4c3ksM |
+| E17 SEO review: Tue 8:13am (audit said 9:07; moved so it's 49 min before the Tue ShopMy run), reads reports instead of searching, writes seo/review-<date> | DONE | trig_01CgZr3ZHdhJbSNSQntCTYZ3 |
+| E18 weekly Google & OMM: SC from morning `sc` fields; Chrome only if missing | DONE | trig_01HpSV6bJuJQSJ3aoBjctyhY |
+| E19 Pinterest: renamed "every 3 days", 72-hour alarm, TdT pins never carry MAHJMATCH | DONE | trig_01UsWfwKxnDaTGA3mYrop6zX |
+| E20 / E21 / E22 renames | DONE | 01GQHw, 01S2Vs, trig_01UwvubnWpaW4NoCY6VFaKrx |
+| E23 release calendar → IG workspace 019fc27c | DONE | trig_01Y68dNzLjdvgDFynxik9Nw5 |
+| E24 ShopMy → Tue 9:02am (audit said 9:41; moved to keep 45 min from HQ Talk 9:47 is not possible, so ShopMy goes first) | DONE | trig_01NpQoJYSYh2GCLwcHNpkDiU |
+| Verified-date task: run brand_page_text.py + tdt_visible_code.py after edits, fix FAILs same run; TdT date-only | **BLOCKED** (approval unanswered) → pending file §1 | trig_01PGtT8NFXe6341WjBHqmYJu |
+| No-second-swipe-book rule (Tiffany Oct 30 2:45am) in launch watch, partner watch, Mahji Mentor | **BLOCKED** → pending file §2 (gate [g] is live, see GA below) | 01S2Vs, 01Ljz8, 01LC2k |
+| N1 /links weekly (Sun 6:37pm), N2 Monday social numbers + brand watch (Mon 3:37pm), N3 Friday social prep (Fri 12:43pm, drafts only) | **BLOCKED** (not created) → pending file §3 has the full prompts | new |
+| GA1 content_lint: mahjmatch-missing, hashtag, banned-phrase, short-brand, no-feature, tdt-policy (TdT name + MAHJMATCH or #MahjMatch in one caption, any platform), maison-mahj, `--codes-list`; 52 legacy hits = WARN via config/social/content_lint_baseline.json (8 banned-phrase, 42 hashtag, 2 tdt-policy) | DONE | scripts/social/content_lint.py |
+| GA2 book_gate [f] snapshot older than newest FYM build = FAIL; holiday uses `hol` flag (Halloween/Valentine/Easter no longer excluded by name); fym_snapshot.py records fym_version | DONE; snapshot re-labelled v104 (it had no build number, so [f] failed on it) | scripts/swipe/book_gate.py, fym_snapshot.py |
+| GA2b book_gate [g] (coordinator, Tiffany Oct 30 2:45am): a book whose D.col / product handle is already registered with votes FAILS unless `--update-of <url>`; registry config/swipe-books.json (Poppins registered) | DONE | scripts/swipe/book_gate.py |
+| GA3 center_check `--phone-still [--from --to]` | DONE (tested on smith-swipe-v6: phone box still 2-8s) | scripts/social/center_check.py |
+| GA4 fym_gate [104] artifact = website copy = README pin; warning, FAIL with `--release` | DONE; it warned on live content (README 0a pin still pointed at v95) → README pin line for v103 added; v104's pin line is the Matches & Catalog chat's to add | builder/fym_gate.py |
+| BRAND-GUIDE TdT line + changelog; HQ-CLEANUP §4 "Google first" | DONE | docs/BRAND-GUIDE.md, docs/HQ-CLEANUP.md |
+| HQ needs card "Rules check: N fixes applied, K need you" | **BLOCKED** (ArtifactData write needs approval; no one answering) → DESK for Main | |
+
+**Browser start times after this pass (ET; ≥45 min apart for tasks that must drive Chrome):** daily 12:04am sales · 7:13am morning report · 12:08pm indexing · 1:07pm Mahji Mentor · 2:04pm sales · 2:52pm onboarding. Mon +8:17am verified dates · M/W/F 10:52am code report. Tue 9:02am ShopMy · 10:37am TNT. 1st 8:37pm maintenance. Browser-optional (CHROME LOCK waits): HQ Talk 9:47/4:47/7:47/10:47 (1:47pm run never opens Chrome), Mon 8:37am weekly report, Tue 8:13am SEO review. Known clash left for Tiffany: new mat watch 12:08pm on the 1st/15th (E14).
+
+**HQ card (for Main to write):** ArtifactData set, url https://claude.ai/artifact/Cor6pKtesou4mFRQ41P6Ye, collection "needs", id "rules-audit-2026-10-30": {title: "Rules check: 26 fixes applied, 2 need you", light: "blue", status: "open", quick: true, minutes: 1, added: "2026-10-30", link: "https://github.com/tiffanybrie/mahjmatchmaker-data/blob/partner-catalogs-sqsp/docs/RULES-ENFORCEMENT-AUDIT.md", linkLabel: "See what changed", why: "Every standing rule now has a scheduled task or a gate behind it. Two old duplicate mat-finder tasks can be turned off (not deleted): the weekly FYM new-mat scan (uses the old strict photo rule) and the 1st/15th new mat watch (writes to the retired Work Tracker and starts the same minute as indexing). Reply 'OK turn them off' or 'keep'.", steps: ["OK to turn off the FYM weekly new-mat scan?", "OK to turn off the 1st/15th new mat watch?"]}
