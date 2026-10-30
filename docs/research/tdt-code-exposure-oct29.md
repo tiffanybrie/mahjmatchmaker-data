@@ -15,13 +15,13 @@
 | TdT brand page, visible text (2 thank-you lines, 2 code FAQ questions) | 4 | **FIXED live Oct 30** (lines reworded + auto-apply link; 2 FAQ questions removed from the visible accordion only) |
 | TdT brand page head (title, og/twitter title + description, meta description, itemprop, fullSiteTitle) | 9 tags | Kept on purpose (her call) |
 | TdT brand page FAQ JSON-LD | 2 answers | Kept on purpose (her call) |
-| Album pages: TdT mat match cards showing "code MAHJMATCH" | 97 cards on 28 pages | OPEN: visible pairing remains (card says "Mat by Tigre de Tartan" + "code MAHJMATCH") |
-| Blog /blog/my-favorite-mahjong-racks: TdT box "Tigre de Tartán · Save 10% with code MAHJMATCH" | 1 | OPEN |
+| Album pages: TdT mat match cards showing "code MAHJMATCH" | 97 cards on 28 pages | **FIXED live Oct 30 ~12:45am** ("save 10% with my link" + auto-apply Shop link; source: scripts/albumcard/tdt_policy.py) |
+| Blog /blog/my-favorite-mahjong-racks: TdT box "Tigre de Tartán · Save 10% with code MAHJMATCH" | 1 | **FIXED live Oct 30** ("Save 10% with my link" + auto-apply link) |
 | /jade-mahjong-tile-matches meta/og/twitter description ("...Tigre de Tartan and more. ... save with code MAHJMATCH") | 4 tags | Head only: kept per her call |
 | Mat Gallery /mahjong-mats: 11 TdT rows link to tigredetartan.com/discount/MAHJMATCH?redirect=... | 11 links | Code is in the link address only (not visible text): leave (her call on auto-apply links) |
 | FYM app (v103) | 4 text spots + 33 links | OPEN for Matches & Catalog (see below) |
-| Planoly IG drafts | 1 | OPEN (draft, not scheduled) |
-| Codes post draft (HQ needs/codes-post-2026-10-29) | 3 lines (group comment, IG caption, FB Page) | OPEN: needs her decision before it posts |
+| Planoly IG drafts | 1 | **FIXED Oct 30** (caption code line no longer names TdT) |
+| Codes post draft (HQ needs/codes-post-2026-10-29) | 3 lines (group comment, IG caption, FB Page) | **FIXED Oct 30** (TdT line dropped from all three; logo + tag stay) |
 | Published IG captions (last 49) | 0 | none name TdT |
 | Pinterest (newest 100 pins) | 0 | none (one "red tartan cloth" false hit) |
 
@@ -100,3 +100,6 @@ Owner: Matches & Catalog (docs/MATCH-INBOX.md item added).
 
 ## 4. Not checked
 TikTok (no account connected), Facebook group past posts (doc 94 weekly codes posts may have listed TdT + code: search the group for "Tigre" before the next run), ShopMy/Amazon storefront text, emails/newsletters in Squarespace.
+
+## Check
+`python3 scripts/checks/tdt_visible_code.py` (Oct 30 ~12:45am: 126 pages, 0 problems). Run it after any album/blog paste.

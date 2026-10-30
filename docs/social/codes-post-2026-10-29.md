@@ -5,7 +5,8 @@ Sources: live hub https://www.mahjmatchmaker.com/mahjong-discount-codes at-a-gla
 Left out: Wren Mats + Sunday (no-code per brief), Mahjong Studios (hub: "shop through my link"), Fait à Main (not live: coupon still fails Oct 29).
 Yellow Mountain Imports (MAHJMATCH10-YMI-2025) is in the FB group comment only: she said never feature YMI in social content, and content_lint fails any code but MAHJMATCH.
 No % given for Anders Ruff, The Mahjong Press, Mahjong Register, Let's Be Besties: the hub gives none ("Discount with MAHJMATCH"), and the brand guide allows a % only when the hub states it.
-Counts: FB group list 35 brands (Maison Mahj added Oct 29 late per Tiffany 11:07pm: group version only, not called new; code MAHJMATCH verified in her UpPromote portal); Instagram + FB Page list 33 brands; 30 verified IG handles for Tag people (Instagram allows 20 tags per image, so split them across carousel slides). Hip Hip, Splash of Color, Mahjong Register have no verified handle.
+TdT (Oct 30, Tiffany 12:04-12:10am + TdT affiliate policy): the "Tigre de Tartán: 10% off with code MAHJMATCH" line is dropped from all three texts (no typed code next to their name; IG captions carry no TdT code). TdT stays in the logo graphic and @tigre_de_tartan stays in Tag people.
+Counts: FB group list 34 brands (Maison Mahj added Oct 29 late per Tiffany 11:07pm: group version only, not called new; code MAHJMATCH verified in her UpPromote portal); Instagram + FB Page list 32 brands; 30 verified IG handles for Tag people (Instagram allows 20 tags per image, so split them across carousel slides). Hip Hip, Splash of Color, Mahjong Register have no verified handle.
 Length: IG/FB Page captions run past the 350-character caption rule on purpose; the typed list is the point (her Oct 29 yes to "every brand name + MAHJMATCH typed out"). The hook before the list is under 350.
 
 ## 1. Facebook group post (Claude posts from her account on her yes)
@@ -64,7 +65,6 @@ Soirée All Day: 10% off The Mahjong Collection with code MAHJMATCH
 Splash of Color: 10% off with code MAHJMATCH
 The Mahjong Press: save with code MAHJMATCH
 The Royal Mahjong Society: 15% off with code MAHJMATCH
-Tigre de Tartán: 10% off with code MAHJMATCH
 Virora Mahjong: 10% off with code MAHJMATCH
 Yellow Mountain Imports: 10% off with code MAHJMATCH10-YMI-2025
 YOLO Mahjong: 10% off with code MAHJMATCH
@@ -108,7 +108,6 @@ Soirée All Day: 10% off The Mahjong Collection with code MAHJMATCH
 Splash of Color: 10% off with code MAHJMATCH
 The Mahjong Press: save with code MAHJMATCH
 The Royal Mahjong Society: 15% off with code MAHJMATCH
-Tigre de Tartán: 10% off with code MAHJMATCH
 Virora Mahjong: 10% off with code MAHJMATCH
 YOLO Mahjong: 10% off with code MAHJMATCH
 
@@ -184,7 +183,6 @@ Soirée All Day: 10% off The Mahjong Collection with code MAHJMATCH
 Splash of Color: 10% off with code MAHJMATCH
 The Mahjong Press: save with code MAHJMATCH
 The Royal Mahjong Society: 15% off with code MAHJMATCH
-Tigre de Tartán: 10% off with code MAHJMATCH
 Virora Mahjong: 10% off with code MAHJMATCH
 YOLO Mahjong: 10% off with code MAHJMATCH
 
