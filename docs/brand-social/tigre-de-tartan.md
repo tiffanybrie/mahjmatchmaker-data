@@ -1,6 +1,7 @@
 # Tigre de Tartán (@tigre_de_tartan): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Oct 29: Ditsy Christmas print 'makes tiles POP', available now; shown with antique bamboo-and-bone tiles and mahjpit.co confetti tiles (tagged) (DfFq3CVvnRl). Also a general 'spill-proof, lightweight mats + we sell tiles' reel (DfGN1SjhIIR).
 - Oct 29 2:42pm ET: 'Ditsy Christmas' mat print in a different colorway, 'available now on the site', shown with antique bamboo-and-bone tiles + mahjpit.co confetti (reel DfFq3CVvnRl).
 - Oct 28: personal 'Dollhouse Renovation' series kickoff (DfC7EaZvSmJ), no product. Estate Sale wooden tiles launched Oct 27 4pm CT.
 - Oct 28: started a non-product reel series 'The Dollhouse Renovation' (DfC7EaZvSmJ). No launch.

@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-29",
-  "updatedBy": "partner watch Oct 29 6:30pm",
+  "updated": "2026-10-30",
+  "updatedBy": "partner watch Oct 30 10:20am ET",
   "rules": {
     "timing": {
       "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -790,7 +790,7 @@
       "window": "delayed to mid-November (IG Oct 29); was ~Nov 9",
       "windowStart": "2026-11-12",
       "windowEnd": "2026-11-20",
-      "status": "teased",
+      "status": "teased; Oct 30 SPOOKY 15% off $50+ flash sale \"clearing space for upcoming launches\"",
       "source": "IG Oct 26 + Oct 29 delay",
       "sourceUrl": "https://www.instagram.com/reel/DfGDYhkFISK/",
       "album": false,
@@ -960,16 +960,17 @@
       "id": "mrc-ff-oct30",
       "brand": "Mahjong Row & Co.",
       "product": "'Something good' tomorrow: friends & family first dibs (product unnamed)",
-      "type": "coming soon",
-      "window": "Fri Oct 30",
+      "type": "sale",
+      "window": "Oct 30 - Nov 1",
       "windowStart": "2026-10-30",
-      "status": "coming soon",
+      "status": "RESOLVED Oct 30: Friends & Family SALE (20% off select tiles/mats/racks, code FAMILY20, through Sun Nov 1 11:59pm CST); no new product",
       "source": "Instagram @mahjongrowandco Oct 29",
-      "sourceUrl": "https://www.instagram.com/p/DfDxq34A-k8/",
+      "sourceUrl": "https://www.instagram.com/p/DfHjb4dm4as/",
       "album": false,
       "affiliate": true,
       "priority": 1,
-      "contentTiming": "Watch the store Oct 30; if it is Rosy/Ellington it jumps the album line."
+      "contentTiming": "Watch the store Oct 30; if it is Rosy/Ellington it jumps the album line.",
+      "windowEnd": "2026-11-01"
     },
     {
       "id": "atoppe-lila-mat",
