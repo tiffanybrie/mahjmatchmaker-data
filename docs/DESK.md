@@ -21,6 +21,8 @@ Standing order: (1) Find Your Mat-ch launch: DONE Oct 27 (now Version 1.7 = v103
 **Watch tomorrow:** Mahjong Row & Co. "something good is coming your way tomorrow… friends and family first dibs" (IG teaser Oct 29) = Fri Oct 30, product unnamed. If it is the fall collection (Rosy / Ellington), it JUMPS the album line the same day (colour card first, doc 86b). Mahj Mood Jade Luxe racks drop Fri 10am CST (story + FB group line, same day or never).
 
 ## Handoffs to do first (Fri morning)
+- **Morning HQ cleanup Fri Oct 30 6:50am (done):** HQ open needs 15 → 14 (Today 5: codes post, Mini Mahjer sign-in, Raven reel, late holiday mats, Amazon old posts; This week 8). Archived alert-site-drop (info-only). Mini Mahjer card now asks her only to SIGN IN (no screenshots); once signed in, OPS reads af.uppromote.com/1a09ad-37 itself and fills Oct 29 referral 35369885. Brownstone still 404 live at 6:50am (priority 1). FYM v104 built/QA'd, website still on v103 (+ stray fym-v72): goes in the Ops paste trip.
+
 - **Matches & Catalog: Brownstone card rebuild** (priority 1 above).
 - **Matches & Catalog: FYM Version 1.8 (v104)**, all approved Oct 29, gate + independent QA, artifact AND website (rule 0), +0.1 label:
   - Brand menu copy APPROVED 3:32pm: title "Shop by brand", subline "Code MAHJMATCH works at brands marked ♥", heart badge per partner, non-partners at the bottom (replaces "Partner brands come first…"). Keep the pink box at the top (3:33pm).
