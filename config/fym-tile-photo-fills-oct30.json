@@ -1,0 +1,540 @@
+{
+ "_about": "Oct 30 2:51am Tiffany: no 'Photo coming soon' without checking EVERY brand product photo. Tile pile shot first; else crop/compilation of real brand photos. Files: assets/fym-photos-oct30/tiles/<slug>.jpg (1400x1400), thumbs/<slug>.jpg (360x360), mats/. Build: set T[key].full to the new file (copy into the build as t104/<slug>.jpg), replace the IMG entry for T[key].pile with the thumb as a jpeg data URI (thumb data lives in the b*v1.js chunks, e.g. d8f2423212 in b6v1.js), DROP 'soon', update locks.",
+ "tiles": [
+  {
+   "key": "amahjline.com/homestead-stamped-tile-line",
+   "name": "Round Top Stamped",
+   "brand": "Amahj",
+   "kind": "compilation",
+   "layout": "v2",
+   "old_full": "t15/2.jpg",
+   "old_pile": "4139c2a286",
+   "full": "assets/fym-photos-oct30/tiles/amahj-round-top-stamped.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/amahj-round-top-stamped.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0675/3805/9486/files/DDC6F0FA-B8D6-4537-8ADD-DE9E661B2021.jpg",
+    "https://cdn.shopify.com/s/files/1/0675/3805/9486/files/D518F7BA-4C11-4F77-82B1-1380C057FC70.jpg"
+   ],
+   "photos_checked": 8,
+   "drop_soon": true
+  },
+  {
+   "key": "mahjmood.com/90s-tile-set?v=58077240328495",
+   "name": "90s Taffy (Pink)",
+   "brand": "Mahj Mood",
+   "kind": "compilation",
+   "layout": "hs",
+   "old_full": "t15/17.jpg",
+   "old_pile": "798ff08ea5",
+   "full": "assets/fym-photos-oct30/tiles/mahj-mood-90s-taffy-pink.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/mahj-mood-90s-taffy-pink.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0944/7712/3887/files/image2.jpg",
+    "https://cdn.shopify.com/s/files/1/0944/7712/3887/files/colorway-a.jpg"
+   ],
+   "photos_checked": 4,
+   "drop_soon": true,
+   "note": "Mahj Mood has no Taffy pile shot (the only pile is Pool Party blue); faces + the Taffy colorway back swatch from the product page."
+  },
+  {
+   "key": "mahjongstudios.com/mahjong-studios-american-mahjong-tile-set-yellow-lilac-ocean-blue",
+   "name": "Yellow Lilac Ocean Blue",
+   "brand": "Mahjong Studios",
+   "kind": "compilation",
+   "layout": "h3",
+   "old_full": "t15/41.jpg",
+   "old_pile": "ce9827843e",
+   "full": "assets/fym-photos-oct30/tiles/mahjong-studios-yellow-lilac-ocean-blue.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/mahjong-studios-yellow-lilac-ocean-blue.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/11_9c3e3522-a7c3-4552-8bc1-af1995f2687f.png",
+    "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/10_0c5e4154-bbcd-4dad-b3a7-e4d3e271944e.png",
+    "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/12_c6e6b761-185d-45f2-b1ee-111d19f17e5a.png"
+   ],
+   "photos_checked": 14,
+   "drop_soon": true
+  },
+  {
+   "key": "missmahjong.com/cowgirl-americana-numbered-flower-tiles",
+   "name": "Cowgirl Americana Numbered Flower",
+   "brand": "Miss Mahjong",
+   "kind": "crop",
+   "layout": "single",
+   "old_full": "t15/60.jpg",
+   "old_pile": "7b515a1f7c",
+   "full": "assets/fym-photos-oct30/tiles/miss-mahjong-cowgirl-americana-numbered-flower.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/miss-mahjong-cowgirl-americana-numbered-flower.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/AmericanaFlowerTiles.png"
+   ],
+   "photos_checked": 1,
+   "drop_soon": true,
+   "note": "Flower-tile add-on (8 tiles); the brand has 1 photo; cropped to 6 tiles to fill the frame."
+  },
+  {
+   "key": "missmahjong.com/darling-numbered-flower-tiles",
+   "name": "Darling Numbered Flower",
+   "brand": "Miss Mahjong",
+   "kind": "crop",
+   "layout": "single",
+   "old_full": "t15/62.jpg",
+   "old_pile": "e9895937a5",
+   "full": "assets/fym-photos-oct30/tiles/miss-mahjong-darling-numbered-flower.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/miss-mahjong-darling-numbered-flower.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/DarlingFlowerTiles_ea82b86d-5ede-49a1-b997-ea7d335f67c4.png"
+   ],
+   "photos_checked": 1,
+   "drop_soon": true,
+   "note": "Flower-tile add-on (8 tiles); the brand has 1 photo; cropped to 6 tiles to fill the frame."
+  },
+  {
+   "key": "missmahjong.com/classic-jade-numbered-flower-tiles",
+   "name": "Classic Jade Numbered Flower",
+   "brand": "Miss Mahjong",
+   "kind": "crop",
+   "layout": "single",
+   "old_full": "t15/63.jpg",
+   "old_pile": "cdf976a53e",
+   "full": "assets/fym-photos-oct30/tiles/miss-mahjong-classic-jade-numbered-flower.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/miss-mahjong-classic-jade-numbered-flower.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/JadeFlowerTiles.png"
+   ],
+   "photos_checked": 1,
+   "drop_soon": true,
+   "note": "Flower-tile add-on (8 tiles); the brand has 1 photo; cropped to 6 tiles to fill the frame."
+  },
+  {
+   "key": "missmahjong.com/classic-malachite-numbered-flower-tiles",
+   "name": "Classic Malachite Numbered Flower",
+   "brand": "Miss Mahjong",
+   "kind": "crop",
+   "layout": "single",
+   "old_full": "t15/64.jpg",
+   "old_pile": "22a4839fca",
+   "full": "assets/fym-photos-oct30/tiles/miss-mahjong-classic-malachite-numbered-flower.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/miss-mahjong-classic-malachite-numbered-flower.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/MalachiteFlowerTiles_3fd7a8ae-d8d5-466c-9281-47c6b7796ad9.png"
+   ],
+   "photos_checked": 1,
+   "drop_soon": true,
+   "note": "Flower-tile add-on (8 tiles); the brand has 1 photo; cropped to 6 tiles to fill the frame."
+  },
+  {
+   "key": "shop.andersruff.com/mahj-in-bloom-mahjong-tile-set",
+   "name": "Mahj in Bloom",
+   "brand": "Anders Ruff",
+   "kind": "pile",
+   "layout": "single",
+   "old_full": "t15/78.jpg",
+   "old_pile": "ad171613ea",
+   "full": "assets/fym-photos-oct30/tiles/anders-ruff-mahj-in-bloom.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/anders-ruff-mahj-in-bloom.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0593/2200/7719/files/Mahj-in-Bloom-Mahjong-Tiles7_8f9d1070-a403-4e14-9402-54b132afea43.jpg"
+   ],
+   "photos_checked": 10,
+   "drop_soon": true
+  },
+  {
+   "key": "shop.andersruff.com/eau-de-mahj-mahjong-tile-set",
+   "name": "Eau De Mahj",
+   "brand": "Anders Ruff",
+   "kind": "crop",
+   "layout": "single",
+   "old_full": "t15/80.jpg",
+   "old_pile": "d8f2423212",
+   "full": "assets/fym-photos-oct30/tiles/anders-ruff-eau-de-mahj.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/anders-ruff-eau-de-mahj.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0593/2200/7719/files/eau-de-mahj-tiles6384-2.jpg"
+   ],
+   "photos_checked": 10,
+   "drop_soon": true
+  },
+  {
+   "key": "shop.andersruff.com/house-of-hydrangea-mahjong-tile-set",
+   "name": "House of Hydrangea",
+   "brand": "Anders Ruff",
+   "kind": "crop",
+   "layout": "single",
+   "old_full": "t15/81.jpg",
+   "old_pile": "06e0896a0c",
+   "full": "assets/fym-photos-oct30/tiles/anders-ruff-house-of-hydrangea.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/anders-ruff-house-of-hydrangea.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0593/2200/7719/files/Hydrangea-Mahjong-TIles.jpg"
+   ],
+   "photos_checked": 9,
+   "drop_soon": true
+  },
+  {
+   "key": "tigredetartan.com/classic-american-mahjong-tile-set-in-beechwood",
+   "name": "Classic Beechwood",
+   "brand": "Tigre de Tartan",
+   "kind": "pile",
+   "layout": "single",
+   "old_full": "t15/95.jpg",
+   "old_pile": "6926b6e423",
+   "full": "assets/fym-photos-oct30/tiles/tigre-de-tartan-classic-beechwood.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/tigre-de-tartan-classic-beechwood.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0567/2566/7876/files/IMG_9941.jpg"
+   ],
+   "photos_checked": 15,
+   "drop_soon": true
+  },
+  {
+   "key": "tigredetartan.com/house-tigers-mahjong-tile-set-oyster",
+   "name": "House Tigers Oyster",
+   "brand": "Tigre de Tartan",
+   "kind": "crop",
+   "layout": "single",
+   "old_full": "t15/97.jpg",
+   "old_pile": "eb90573ac9",
+   "full": "assets/fym-photos-oct30/tiles/tigre-de-tartan-house-tigers-oyster.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/tigre-de-tartan-house-tigers-oyster.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0567/2566/7876/files/9F586FDF-F871-448E-9384-9D59CBC6833F.jpg"
+   ],
+   "photos_checked": 16,
+   "drop_soon": true
+  },
+  {
+   "key": "tigredetartan.com/house-clovers-classic-american-mahjong-tile-set-with-signature-clover-logo",
+   "name": "House Clovers",
+   "brand": "Tigre de Tartan",
+   "kind": "crop",
+   "layout": "single",
+   "old_full": "t15/98.jpg",
+   "old_pile": "b5009219af",
+   "full": "assets/fym-photos-oct30/tiles/tigre-de-tartan-house-clovers.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/tigre-de-tartan-house-clovers.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0567/2566/7876/files/IMG_5320.jpg"
+   ],
+   "photos_checked": 24,
+   "drop_soon": true
+  },
+  {
+   "key": "www.bamletsmahjong.com/art-deco-mahjong-tile-set",
+   "name": "Art Deco",
+   "brand": "Bam! Let's Mahjong",
+   "kind": "crop",
+   "layout": "single",
+   "old_full": "t15/106.jpg",
+   "old_pile": "83e0cd90a9",
+   "full": "assets/fym-photos-oct30/tiles/bam-let-s-mahjong-art-deco.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/bam-let-s-mahjong-art-deco.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0689/4377/3854/files/art-deco-mahjong-tile-set-pre-order-estimated-delivery-date-end-of-june-shop-all-bam-lets-mahjong-8057749.jpg"
+   ],
+   "photos_checked": 12,
+   "drop_soon": true
+  },
+  {
+   "key": "www.bamletsmahjong.com/hocus-pocus-halloween-mahjong-tile-set",
+   "name": "Hocus Pocus Halloween",
+   "brand": "Bam! Let's Mahjong",
+   "kind": "crop",
+   "layout": "single",
+   "old_full": "t15/107.jpg",
+   "old_pile": "b3d0b6a52c",
+   "full": "assets/fym-photos-oct30/tiles/bam-let-s-mahjong-hocus-pocus-halloween.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/bam-let-s-mahjong-hocus-pocus-halloween.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0689/4377/3854/files/hocus-pocus-halloween-mahjong-tile-set-pre-order-estimated-delivery-date-end-of-july-mahjong-tiles-bam-lets-mahjong-4443828.jpg"
+   ],
+   "photos_checked": 8,
+   "drop_soon": true
+  },
+  {
+   "key": "www.bamletsmahjong.com/mahjong-tiles-garden-party?v=45074672025758",
+   "name": "Garden Party Sky Blue",
+   "brand": "Bam! Let's Mahjong",
+   "kind": "crop",
+   "layout": "single",
+   "old_full": "t11/119.jpg",
+   "old_pile": "6cace80332",
+   "full": "assets/fym-photos-oct30/tiles/bam-let-s-mahjong-garden-party-sky-blue.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/bam-let-s-mahjong-garden-party-sky-blue.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0689/4377/3854/files/garden-party-mahjong-tile-set-with-mat-shufflers-new-arrivals-bam-lets-mahjong-6345369.jpg"
+   ],
+   "photos_checked": 11,
+   "drop_soon": true
+  },
+  {
+   "key": "www.bespokemahjong.com/bespoke-x-gray-malin-getaway-dogs-xl-mega-tiles-bright-white",
+   "name": "Bespoke X Gray Malin Getaway Dogs XL Mega",
+   "brand": "Bespoke Mahjong",
+   "kind": "crop",
+   "layout": "single",
+   "old_full": "t15/121.jpg",
+   "old_pile": "f5b6effd19",
+   "full": "assets/fym-photos-oct30/tiles/bespoke-mahjong-bespoke-x-gray-malin-getaway-dogs-xl-mega.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/bespoke-mahjong-bespoke-x-gray-malin-getaway-dogs-xl-mega.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0837/2142/1083/files/Untitled_1500x1500px_30.png"
+   ],
+   "photos_checked": 5,
+   "drop_soon": true
+  },
+  {
+   "key": "www.bespokemahjong.com/bespoke-x-grateful-dead-xl-mega-tiles-stealie-light-blue",
+   "name": "Grateful Dead x Bespoke Mahjong XL Mega",
+   "brand": "Bespoke Mahjong",
+   "kind": "crop",
+   "layout": "single",
+   "old_full": "t15/123.jpg",
+   "old_pile": "b2ee52bc0e",
+   "full": "assets/fym-photos-oct30/tiles/bespoke-mahjong-grateful-dead-x-bespoke-mahjong-xl-mega.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/bespoke-mahjong-grateful-dead-x-bespoke-mahjong-xl-mega.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0837/2142/1083/files/Untitled_1500x1500px_-2026-07-08T200808.923.png"
+   ],
+   "photos_checked": 5,
+   "drop_soon": true
+  },
+  {
+   "key": "www.bespokemahjong.com/bespoke-x-corey-paige-color-crush-xl-mega-tiles-hottie-pink-1",
+   "name": "Bespoke X Corey Paige Color Crush XL Mega",
+   "brand": "Bespoke Mahjong",
+   "kind": "crop",
+   "layout": "single",
+   "old_full": "t15/124.jpg",
+   "old_pile": "3b4f925310",
+   "full": "assets/fym-photos-oct30/tiles/bespoke-mahjong-bespoke-x-corey-paige-color-crush-xl-mega.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/bespoke-mahjong-bespoke-x-corey-paige-color-crush-xl-mega.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0837/2142/1083/files/Untitled_1500x1500px_96.png"
+   ],
+   "photos_checked": 4,
+   "drop_soon": true
+  },
+  {
+   "key": "www.hiphipmahjong.com/so-bam-grateful-mahjong-tiles",
+   "name": "So Bam Grateful",
+   "brand": "Hip Hip Mahjong",
+   "kind": "pile",
+   "layout": "single",
+   "old_full": "t15/125.jpg",
+   "old_pile": "ead6cf820c",
+   "full": "assets/fym-photos-oct30/tiles/hip-hip-mahjong-so-bam-grateful.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/hip-hip-mahjong-so-bam-grateful.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0708/4222/0785/files/2026_08_06_HipHipMahjong_SoBamGrateful_TableScape_web_ea5eb98a-ade7-4ddb-8e74-6cc14d64d587.jpg"
+   ],
+   "photos_checked": 1,
+   "drop_soon": true
+  },
+  {
+   "key": "www.hiphipmahjong.com/nativity-mahjong-tiles",
+   "name": "Nativity",
+   "brand": "Hip Hip Mahjong",
+   "kind": "crop",
+   "layout": "single",
+   "old_full": "t15/127.jpg",
+   "old_pile": "b409ad8712",
+   "full": "assets/fym-photos-oct30/tiles/hip-hip-mahjong-nativity.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/hip-hip-mahjong-nativity.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0708/4222/0785/files/2026_08_06_HipHipMahjong_Tables_147.jpg"
+   ],
+   "photos_checked": 1,
+   "drop_soon": true
+  },
+  {
+   "key": "www.hiphipmahjong.com/let-freedom-ring",
+   "name": "Let Freedom Ring",
+   "brand": "Hip Hip Mahjong",
+   "kind": "pile",
+   "layout": "single",
+   "old_full": "t15/130.jpg",
+   "old_pile": "4b5eb921ba",
+   "full": "assets/fym-photos-oct30/tiles/hip-hip-mahjong-let-freedom-ring.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/hip-hip-mahjong-let-freedom-ring.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0708/4222/0785/files/2026_08_06_HipHipMahjong_Tablescape_0146.jpg"
+   ],
+   "photos_checked": 1,
+   "drop_soon": true
+  },
+  {
+   "key": "www.macandmillermahjong.com/laissez-les-bons-temps-rouler-tile-set-pre-order-ships-march-2026",
+   "name": "Laissez Les Bons Temps Rouler Collection",
+   "brand": "Mac + Miller Mahjong",
+   "kind": "pile",
+   "layout": "single",
+   "old_full": "t15/145.jpg",
+   "old_pile": "d022b758dd",
+   "full": "assets/fym-photos-oct30/tiles/mac-miller-mahjong-laissez-les-bons-temps-rouler-collection.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/mac-miller-mahjong-laissez-les-bons-temps-rouler-collection.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0957/7991/4038/files/laissez-les-bons-temps-rouler-collection-mahjong-tile-set-tiles-183.webp"
+   ],
+   "photos_checked": 16,
+   "drop_soon": true
+  },
+  {
+   "key": "www.macandmillermahjong.com/sweet-dreams-collection-tile-set",
+   "name": "Sweet Dreams Collection",
+   "brand": "Mac + Miller Mahjong",
+   "kind": "pile",
+   "layout": "single",
+   "old_full": "t15/146.jpg",
+   "old_pile": "4d41a7a4fb",
+   "full": "assets/fym-photos-oct30/tiles/mac-miller-mahjong-sweet-dreams-collection.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/mac-miller-mahjong-sweet-dreams-collection.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0957/7991/4038/files/sweet-dreams-collection-mahjong-tile-set-tiles-679.webp"
+   ],
+   "photos_checked": 18,
+   "drop_soon": true
+  },
+  {
+   "key": "www.wrenmats.com/opgv5o7mztp8eu7krduztz8x70u1ms",
+   "name": "Simply",
+   "brand": "Wren Mats",
+   "kind": "crop",
+   "layout": "single",
+   "old_full": "t15/170.jpg",
+   "old_pile": "df87f4a841",
+   "full": "assets/fym-photos-oct30/tiles/wren-mats-simply.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/wren-mats-simply.jpg",
+   "source_images": [
+    "https://images.squarespace-cdn.com/content/v1/64cdafb9b53cd929f2bc35bb/73291032-0b5b-48e1-aa61-07d9179115e7/9A9BFBC6-B19B-42F2-8905-CCC93650C9C7.jpeg"
+   ],
+   "photos_checked": 13,
+   "drop_soon": true,
+   "note": "Product URL in FYM is DEAD (404): wrenmats.com/products/opgv5o7mztp8eu7krduztz8x70u1ms. Live page: https://www.wrenmats.com/shop-tiles/p/opgv5o7mztp8eu7krduztz8x70u1ms (Squarespace, 'Simply Tiles'). Fix u."
+  },
+  {
+   "key": "www.ymimports.com/hb-at002-a",
+   "name": "Outlaws of the Marsh Mahjong Treasure Set",
+   "brand": "Yellow Mountain Imports",
+   "kind": "compilation",
+   "layout": "v2",
+   "old_full": "t15/177.jpg",
+   "old_pile": "0fa69baad2",
+   "full": "assets/fym-photos-oct30/tiles/yellow-mountain-imports-outlaws-of-the-marsh-mahjong-treasure-set.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/yellow-mountain-imports-outlaws-of-the-marsh-mahjong-treasure-set.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0876/1176/products/outlaws-of-the-marsh-mahjong-treasure-set-tiles-only-yellow-mountain-imports.jpg",
+    "https://cdn.shopify.com/s/files/1/0876/1176/products/outlaws-of-the-marsh-mahjong-treasure-set-tiles-only-yellow-mountain-imports-2.jpg"
+   ],
+   "photos_checked": 2,
+   "drop_soon": true
+  },
+  {
+   "key": "www.hiphipmahjong.com/i-love-mahj-tiles",
+   "name": "I ❤️ Mahj",
+   "brand": "Hip Hip Mahjong",
+   "kind": "pile",
+   "layout": "single",
+   "old_full": "t15/192.jpg",
+   "old_pile": "6c5b28dc68",
+   "full": "assets/fym-photos-oct30/tiles/hip-hip-mahjong-i-mahj.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/hip-hip-mahjong-i-mahj.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0708/4222/0785/files/2026_08_06_HipHipMahjong_Tablescape_0024.jpg"
+   ],
+   "photos_checked": 1,
+   "drop_soon": true
+  },
+  {
+   "key": "www.ymimports.com/fx-am022-a",
+   "name": "Ivory Pinstripe",
+   "brand": "Yellow Mountain Imports",
+   "kind": "compilation",
+   "layout": "hs",
+   "old_full": "t72/ivory-pinstripe.jpg",
+   "old_pile": "p7266c71a46ef",
+   "full": "assets/fym-photos-oct30/tiles/yellow-mountain-imports-ivory-pinstripe.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/yellow-mountain-imports-ivory-pinstripe.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0876/1176/files/american-mahjong-set-ivory-pinstripe-166-medium-tiles-with-beige-soft-case-wooden-racks-with-pushers-scoring-coins-dice-and-wind-indicator-yellow-mountain-imports-7.jpg",
+    "https://cdn.shopify.com/s/files/1/0876/1176/files/american-mahjong-set-ivory-pinstripe-166-medium-tiles-with-beige-soft-case-wooden-racks-with-pushers-scoring-coins-dice-and-wind-indicator-yellow-mountain-imports-2.jpg"
+   ],
+   "photos_checked": 10,
+   "drop_soon": true,
+   "note": "YMI Ivory Pinstripe/Ridge share the same face-grid photo on their own pages; right panel is each set's own back close-up."
+  },
+  {
+   "key": "www.ymimports.com/fx-am019-a",
+   "name": "Ivory Ridge",
+   "brand": "Yellow Mountain Imports",
+   "kind": "compilation",
+   "layout": "hs",
+   "old_full": "t72/ivory-ridge.jpg",
+   "old_pile": "p720bfda40f62",
+   "full": "assets/fym-photos-oct30/tiles/yellow-mountain-imports-ivory-ridge.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/yellow-mountain-imports-ivory-ridge.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0876/1176/files/american-mahjong-set-ivory-ridge-166-tiles-with-mint-green-fabric-case-wooden-racks-with-pushers-scoring-coins-dice-wind-indicator-yellow-mountain-imports-7.jpg",
+    "https://cdn.shopify.com/s/files/1/0876/1176/files/american-mahjong-set-ivory-ridge-166-tiles-with-mint-green-fabric-case-wooden-racks-with-pushers-scoring-coins-dice-wind-indicator-yellow-mountain-imports-2.jpg"
+   ],
+   "photos_checked": 10,
+   "drop_soon": true,
+   "note": "YMI Ivory Pinstripe/Ridge share the same face-grid photo on their own pages; right panel is each set's own back close-up."
+  },
+  {
+   "key": "www.ymimports.com/fx-am014-a",
+   "name": "Ivory Stripes",
+   "brand": "Yellow Mountain Imports",
+   "kind": "compilation",
+   "layout": "hs",
+   "old_full": "t72/ivory-stripes.jpg",
+   "old_pile": "p7224d79a0967",
+   "full": "assets/fym-photos-oct30/tiles/yellow-mountain-imports-ivory-stripes.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/yellow-mountain-imports-ivory-stripes.jpg",
+   "source_images": [
+    "https://cdn.shopify.com/s/files/1/0876/1176/files/american-mahjong-set-ivory-stripes-166-tiles-with-beige-soft-case-wooden-racks-with-pushers-scoring-coins-dice-wind-indicator-yellow-mountain-imports-3.jpg",
+    "https://cdn.shopify.com/s/files/1/0876/1176/files/american-mahjong-set-ivory-stripes-166-tiles-with-beige-soft-case-wooden-racks-with-pushers-scoring-coins-dice-wind-indicator-yellow-mountain-imports-5.jpg"
+   ],
+   "photos_checked": 9,
+   "drop_soon": true,
+   "note": "YMI Ivory Pinstripe/Ridge share the same face-grid photo on their own pages; right panel is each set's own back close-up."
+  },
+  {
+   "key": "birdandbamboo.com/the-empress-mahjong-tile-set-coming-soon",
+   "name": "The Empress",
+   "brand": "Bird & Bamboo",
+   "kind": "pile",
+   "layout": "single",
+   "old_full": "t15/12.jpg",
+   "old_pile": "89b716eac2",
+   "full": "assets/fym-photos-oct30/tiles/bird-bamboo-the-empress.jpg",
+   "thumb": "assets/fym-photos-oct30/thumbs/bird-bamboo-the-empress.jpg",
+   "source_images": [
+    "https://birdandbamboo.com (product images[0])"
+   ],
+   "photos_checked": 6,
+   "note": "QA v103: old photo on black. New = the brand pile shot with the black frame cut off."
+  }
+ ],
+ "mats": [
+  {
+   "key": "www.bespokemahjong.com/graymalingamemat",
+   "name": "Gray Malin",
+   "brand": "Bespoke Mahjong",
+   "kind": "crop",
+   "photos_checked": 10,
+   "files": [
+    "assets/fym-photos-oct30/mats/bespoke-gray-malin-side-a-pink-umbrellas.jpg",
+    "assets/fym-photos-oct30/mats/bespoke-gray-malin-side-b-shoreline.jpg"
+   ],
+   "note": "QA v103: current m/1177 is a corner close-up. Product = DOUBLE-SIDED 'Double the Fun / Gray Malin Beach Club'. The only whole-mat images are the brand's flat render (both sides, ~470px each, low-res but whole). Recommend: split into Side A/B like the other Bespoke double-sided mats and re-measure colours; room shot img 8 cuts the mat off. If low-res is a problem → Questionable list."
+  },
+  {
+   "key": "www.middleandmainmahjong.com/georgia-mat",
+   "name": "Peaches 'n Cream",
+   "brand": "Middle & Main Mahjong",
+   "kind": "none",
+   "photos_checked": 9,
+   "note": "QA said washed out. The current flat render IS the design (pale peach florals). Other 8 photos: rolled, corner close-up, strap, or angled under an acrylic cover with tiles — none shows the whole mat truer. Keep current; no change."
+  }
+ ]
+}
