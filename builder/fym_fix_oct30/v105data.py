@@ -34,6 +34,7 @@ JOBS = [  # key, image or None (keep), name, dn, side, base fields from
     (GM + '#side-b', A + 'graymalin-oct30/gray-malin-getaway-dogs-side-b-ski-lift.jpg', 'Gray Malin Getaway Dogs (Side B: Ski Lift)', 'Gray Malin Getaway Dogs', 'B'),
 ]
 JHP = 'alb2:bespoke-mahjong-jungle-hot-pink'
+HOL = {GM + '#side-b'}  # Side B Ski Lift = snowy ski scene
 for k_ in ('b', 'u', 'u0', 'dc', 'pa', 'nc'): M[JHP][k_] = M[JG][k_]
 if not os.path.exists(A + 'bespoke-ds-oct30/jungle-side-b-hot-pink.jpg'):
     os.rename(A + 'bespoke-ds-oct30/jungle-side-a-hot-pink.jpg', A + 'bespoke-ds-oct30/jungle-side-b-hot-pink.jpg')
@@ -41,7 +42,12 @@ if M.get(GM + '#side-b', {}).get('add') == ADD:
     print('already applied'); sys.exit(0)
 mcb = re.search(r'MCB=new Set\(\[([0-9, ]+)\]\);', h)
 maxN = max(int(o['f'].split('/')[1].split('.')[0]) for o in M.values() if o.get('f', '').startswith('m/'))
-chunk = max(max(int(v) for v in mcb.group(1).split(',')) + 1, maxN // 12 + 1); n0 = chunk * 12
+# artifact file cap (512): fill the free slots of the newest chunk (e.g. the one partneradds105.py just wrote) before opening a new one
+n0 = maxN + 1; chunk = n0 // 12
+OLD = {}
+if chunk in {int(v) for v in mcb.group(1).split(',')}:
+    _d = open(f'{B}/mc/{chunk}.webp', 'rb').read(); _L = struct.unpack('<I', _d[-4:])[0]
+    for _f, (_o, _l) in json.loads(_d[-4 - _L:-4]).items(): OLD[_f] = _d[_o:_o + _l]
 CH, IMG, colour_mats, log = [], {}, {}, []
 for key, img, name, dn, side in JOBS:
     ka = key.split('#')[0]; base = M[ka]
@@ -57,6 +63,8 @@ for key, img, name, dn, side in JOBS:
         o.update(f=f, th=th, w=im.width, h=im.height, ms=kmeans_sw(im), mf=fams, mt=list(range(len(fams))),
                  sh=[round(sh.get(c, 0), 1) for c in fams], hol=False)
         o.pop('ha', None)
+        if key in HOL:  # snowy ski scene = Holiday (CLAUDE.md holiday rule: Christmas, Hanukkah, winter snowy/ski); colours combo-only
+            o.update(mf=[], mt=[], sh=[], ha=fams, hol=True)
         _, tone, _ = read_image(path); colour_mats[key] = {'sw': o['ms'], 'tone': tone}; os.remove(path)
         log.append((key, name or o.get('n'), fams))
     if name: o['n'] = name
@@ -79,12 +87,12 @@ for ka in (GM,):
                 L.insert(L.index(ja) + 1, jb)
 for c in sorted({int(f.split('/')[1].split('.')[0]) // 12 for f, _ in CH}):
     body, hdr = b'', {}
-    for f, raw in CH:
+    for f, raw in list(OLD.items()) + CH:
         if int(f.split('/')[1].split('.')[0]) // 12 == c: hdr[f] = [len(body), len(raw)]; body += raw
     hj = json.dumps(hdr, separators=(',', ':')).encode(); p = f'{B}/mc/{c}.webp'
     if os.path.exists(p): os.remove(p)
     open(p, 'wb').write(body + hj + struct.pack('<I', len(hj)))
-    h = h.replace(mcb.group(0), 'MCB=new Set([' + mcb.group(1) + f', {c}' + ']);', 1)
+    if c not in {int(v) for v in mcb.group(1).split(',')}: h = h.replace(mcb.group(0), 'MCB=new Set([' + mcb.group(1) + f', {c}' + ']);', 1)
     print('chunk', c)
 h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]
 inl = '<script>window.IMG=Object.assign(window.IMG||{},' + json.dumps(IMG, separators=(',', ':')) + ');</script>'

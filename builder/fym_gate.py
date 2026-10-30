@@ -1375,7 +1375,7 @@ except Exception as _e: F.append(f"[108] tile frame-fill check did not run: {_e}
 # [109] Oct 30 11:53am (Tiffany): at step 2 the chosen item's photo and the swipe card TOUCH in BOTH doors (the mat-door model:
 # "that's where they're matching"); View / filters / search sit UNDER the deck, and X / heart sit on the card's left/right sides.
 try:
-    _rm = fn('renderMats'); _rt = fn('renderTiles')
+    _rm = fn('renderMats'); _rt = fn('tswipe')  # mat-door step 2 renders in tswipe()
     _nl = _rm[_rm.find("el.innerHTML=`<div class=\"shrow\">${head(2,'Mat-ching'"):]
     if "${backBtn()}</div>${deck('m')}</div>" not in _nl or "<div class=\"backrow\">${backBtn()}</div><div class=\"cmp aer\">${deck('m')}</div>" not in _nl:
         F.append("[109] tiles door: something sits between the tile photo and the mat card (both views)")
@@ -1388,7 +1388,7 @@ try:
 except Exception as _e: F.append(f"[109] step-2 layout check did not run: {_e}")
 # [110] Oct 30 11:45am (Tiffany: "use this as a tabletop tool"): search at step 2 in BOTH directions; a picked item becomes the top card.
 try:
-    if 'id="tdq"' not in fn('renderTiles') or "data-tfront" not in UI or 'S.tfront' not in UI or "A=[r,...A.filter(x=>x.i!==f)]" not in UI:
+    if 'id="tdq"' not in fn('tswipe') or "data-tfront" not in UI or 'S.tfront' not in UI or "A=[r,...A.filter(x=>x.i!==f)]" not in UI:
         F.append("[110] mat door has no tile-set search at the swipe step (or a picked set is not put on top)")
     if 'id="msq"' not in fn('renderMats') or 'S.mfront' not in fn('matDeck'):
         F.append("[110] tiles door has no mat search at the swipe step (or a picked mat is not put on top)")

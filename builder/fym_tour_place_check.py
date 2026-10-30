@@ -88,7 +88,7 @@ with sync_playwright() as p:
         if not pg.locator('#s-tiles .tgrid [data-tile]').count(): pg.locator('#s-tiles .blg').first.click(); time.sleep(.7)
         pg.locator('#s-tiles .tgrid [data-tile]').first.click(); time.sleep(.9)
         if pg.locator('.frow [data-her="m"]').count(): pg.locator('.frow [data-her="m"]').first.click(); chk('picks toggle on step 2')
-        pg.locator('[data-yes="m"]').click(); time.sleep(.8); pg.locator('.tray .th button').first.click(); time.sleep(.8)
+        pg.locator('[data-yes="m"]').first.click(); time.sleep(.8); pg.locator('.tray .th button').first.click(); time.sleep(.8)
         pg.locator('[data-unpeek]').click(); st = chk('Back to the deck on step 4')
         if 'Tap Add racks once' in st['ctext']: F(tag, 'step 4 still says "Tap Add racks once" with no suitor picked')
         pg.locator('.tray .th button').first.click(); time.sleep(.7); pg.locator('.tray .go[data-mock]').click(); time.sleep(1)

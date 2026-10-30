@@ -164,7 +164,7 @@
    "sideB": "Ski Lift",
    "imgA": "assets/mats/graymalin-oct30/gray-malin-getaway-dogs-side-a-pool.jpg",
    "imgB": "assets/mats/graymalin-oct30/gray-malin-getaway-dogs-side-b-ski-lift.jpg",
-   "holB": false,
+   "holB": true,
    "added": "2026-10-30 v105 (builder/fym_fix_oct30/v105data.py; Tiffany OK 10:19am)"
   }
  }
