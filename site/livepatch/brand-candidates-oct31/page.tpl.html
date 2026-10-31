@@ -1,0 +1,114 @@
+<title>Brands to Bring In</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Bitter:wght@400;600;700&display=swap">
+<style>
+/* Layout: single phone-first column of brand cards grouped by how each brand could come in; decision row on every card. */
+:root{--bg:#fbf6f1;--card:#ffffff;--ink:#283445;--muted:#6b6470;--navy:#05468a;--pink:#c8325f;--pinksoft:#fde8ef;--line:#eadfd8;
+--display:"Caprasimo",Georgia,serif;--body:"Bitter",Georgia,serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171b24;--card:#212734;--ink:#eef0f5;--muted:#a9a6b3;--navy:#8fb8ef;--pink:#ef6f96;--pinksoft:#3a2230;--line:#323a4a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#171b24;--card:#212734;--ink:#eef0f5;--muted:#a9a6b3;--navy:#8fb8ef;--pink:#ef6f96;--pinksoft:#3a2230;--line:#323a4a;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:400 15px/1.5 var(--body)}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px;display:flex;flex-direction:column;gap:28px}
+h1{font:400 34px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance}
+.intro{margin:8px 0 0;color:var(--muted);max-width:60ch}
+.tally{margin-top:10px;font:600 12px/1.4 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--pink)}
+section{display:flex;flex-direction:column;gap:12px}
+h2{font:400 22px/1.2 var(--display);color:var(--navy);margin:0}
+.sub{margin:-6px 0 2px;color:var(--muted);font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;display:grid;grid-template-columns:92px 1fr;gap:12px 14px}
+.ph{width:92px;height:92px;border-radius:10px;background:var(--pinksoft);overflow:hidden;display:flex;align-items:center;justify-content:center;font:400 30px var(--display);color:var(--pink)}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.info{min-width:0;display:flex;flex-direction:column;gap:4px}
+.top{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.name{font:700 17px/1.25 var(--body);margin:0}
+.name a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.name a:hover,.name a:focus-visible{border-color:var(--pink)}
+.badge{font:700 11px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;background:var(--pinksoft);color:var(--pink);padding:5px 8px;border-radius:999px;white-space:nowrap}
+.meta{font-size:13px;color:var(--muted);margin:0}
+.call{font-size:13px;margin:2px 0 0;padding-left:10px;border-left:2px solid var(--pink);font-style:italic}
+.rec{font-size:14px;margin:4px 0 0}
+.rec b{color:var(--navy)}
+.act{grid-column:1/-1;display:flex;flex-direction:column;gap:8px}
+.btns{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.btns button{font:600 13px/1.2 var(--body);padding:10px 4px;border-radius:10px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;min-height:44px}
+.btns button:hover{border-color:var(--pink)}
+.btns button[aria-pressed="true"]{background:var(--pink);border-color:var(--pink);color:#fff}
+.btns button:focus-visible,.note:focus-visible,summary:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
+.row2{display:flex;gap:8px;align-items:center}
+.note{flex:1;min-width:0;font:400 14px var(--body);padding:9px 10px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+.saved{font:600 12px var(--body);color:var(--pink);min-width:44px;text-align:right}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+summary{cursor:pointer;font:400 20px/1.2 var(--display);color:var(--navy)}
+.pend{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.pend li{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:8px;font-size:14px}
+.pend span{color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.status{font-size:13px;color:var(--muted)}
+@media (max-width:420px){.btns{grid-template-columns:repeat(2,1fr)}.card{grid-template-columns:72px 1fr}.ph{width:72px;height:72px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<div class="wrap">
+  <header>
+    <h1>Brands to Bring In</h1>
+    <p class="intro">Partners are already in. Brands with your application pending stay out until they answer. Pick for the rest.</p>
+    <div class="tally" id="tally"></div>
+    <div class="status" id="status"></div>
+  </header>
+  <div id="groups"></div>
+</div>
+<script>
+const DATA=__DATA__;
+const GROUPS=[["AFFILIATE PROGRAM AVAILABLE","Apply to their affiliate program first","They have a program, so they could come in as partners."],
+["SHOPMY AVAILABLE","Can come in through ShopMy","Links would earn through your ShopMy, with no discount code."],
+["NO PROGRAM FOUND","No program found","No affiliate program we could find. These would come in as non-partners."]];
+const CHOICES=[["now","Bring in now"],["apply","Apply first"],["later","Later"],["no","No"]];
+const picks={};let db=null;
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const init=s=>esc((s||"?").trim()[0]);
+function card(b){
+  const calls=b.calls.map(c=>`<p class="call">${esc(c)}</p>`).join("");
+  return `<article class="card" data-id="${b.id}">
+  <div class="ph">${b.img?`<img src="${esc(b.img)}" alt="" loading="lazy" onerror="this.remove()">`:""}<span aria-hidden="true">${init(b.name)}</span></div>
+  <div class="info">
+    <div class="top"><h3 class="name">${b.site?`<a href="${esc(b.site)}" target="_blank" rel="noopener">${esc(b.name)}</a>`:esc(b.name)}</h3>${b.tnt>0?`<span class="badge">${b.tnt} Tiles &amp; Tablescapes rec${b.tnt>1?"s":""}</span>`:""}</div>
+    <p class="meta">${esc(b.sells||"")}${b.size&&b.size!=="unknown"?" · "+esc(b.size):""}${b.inapp&&b.inapp!=="none"?" · In the app now: "+esc(b.inapp):""}</p>
+    ${calls}
+    <p class="rec"><b>Claude:</b> ${esc(b.rec)}${b.why?". "+esc(b.why):""}</p>
+  </div>
+  <div class="act">
+    <div class="btns" role="group" aria-label="Decision for ${esc(b.name)}">${CHOICES.map(([k,l])=>`<button type="button" data-c="${k}" aria-pressed="false">${l}</button>`).join("")}</div>
+    <div class="row2"><input class="note" id="note-${b.id}" placeholder="Note (optional)" aria-label="Note for ${esc(b.name)}"><span class="saved" aria-live="polite"></span></div>
+  </div></article>`;}
+function render(){
+  const g=document.getElementById("groups");let h="";
+  for(const [k,t,s] of GROUPS){const list=DATA.filter(b=>b.bucket===k);if(!list.length)continue;
+    h+=`<section><h2>${t} <span class="status">(${list.length})</span></h2><p class="sub">${s}</p>${list.map(card).join("")}</section>`;}
+  const pend=DATA.filter(b=>b.bucket==="PENDING APPLICATION");
+  h+=`<details><summary>Pending applications, staying out for now (${pend.length})</summary><ul class="pend">${pend.map(b=>`<li><a href="${esc(b.site||"#")}" target="_blank" rel="noopener">${esc(b.name)}</a><span>applied ${esc(b.applied||"")}</span></li>`).join("")}</ul></details>`;
+  g.innerHTML=h;paint();
+}
+function paint(){
+  let done=0;const open=DATA.filter(b=>b.bucket!=="PENDING APPLICATION");
+  for(const b of open){const el=document.querySelector(`[data-id="${b.id}"]`);if(!el)continue;const p=picks[b.id]||{};
+    if(p.choice)done++;
+    el.querySelectorAll(".btns button").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.c===p.choice)));
+    const n=el.querySelector(".note");if(document.activeElement!==n)n.value=p.note||"";}
+  document.getElementById("tally").textContent=`${done} of ${open.length} decided`;
+}
+async function save(id,patch,el){
+  picks[id]={...(picks[id]||{}),...patch,at:new Date().toISOString()};paint();
+  const s=el.querySelector(".saved");
+  if(!db){s.textContent="Not saved";return;}
+  try{await db.doc("picks/"+id).set(picks[id]);s.textContent="Saved";setTimeout(()=>{s.textContent=""},1800);}
+  catch(e){s.textContent="Not saved";}
+}
+document.addEventListener("click",e=>{const b=e.target.closest(".btns button");if(!b)return;const c=b.closest(".card");
+  const id=c.dataset.id;const cur=(picks[id]||{}).choice;save(id,{choice:cur===b.dataset.c?null:b.dataset.c},c);});
+document.addEventListener("change",e=>{if(!e.target.classList.contains("note"))return;const c=e.target.closest(".card");save(c.dataset.id,{note:e.target.value.trim()},c);});
+render();
+(async()=>{try{db=await claude.use("db");}catch(e){db=null}
+  const st=document.getElementById("status");
+  if(!db){st.textContent="Sign in to save your picks.";return;}
+  db.collection("picks").onSnapshot(snap=>{(snap.docs||[]).forEach(d=>{const v=typeof d.data==="function"?d.data():d.data;picks[d.id]=v||{};});paint();},()=>{});
+})();
+</script>
