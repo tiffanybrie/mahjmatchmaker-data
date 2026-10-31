@@ -4,7 +4,7 @@
    My Fair Mahjong, Oh My Mahjong, + any listed in WM) shrink a little; every card gets a gap between logo and name;
    "Mahjong Row / & Co." breaks cleanly; LSF card reads "LoveShackFancy ×" / "Oh My Mahjong".
 2. v106 QA: (a) a step-2 searched mat only stays on top if it passes the active brand / colour filters;
-   (b) Noli June option label = plain "Noli June (N)" (Tiffany 10:41am: no terms in the dropdown); (c) Noli June $100 minimum in the in-app shop list + text-me list
+   (b) Noli June option label = plain "Noli June (N)" (Tiffany 10:41am: no terms in the dropdown); (c) Noli June $100 minimum in the in-app shop list
    (NOT on the card image: rule 7);
    (d) '(retired)' stripped from the card MAT tag (mName) and the line under "It's a match!".
 3. Aerial tile inset width = ONE CSS variable --onmat-w (Tiffany picked C = 40%, Oct 31). Change it in ONE place: ONMAT_W below.
@@ -36,8 +36,7 @@ rep("${BMIN[b]?' \\u00b7 '+BMIN[b]:''}", "")  # Tiffany Oct 31 10:41am: no terms
 # (card IMAGE code line stays "Use code MAHJMATCH to save": CLAUDE.md rule 7, no % or terms on the card)
 rep("${o.dc?`<a class=\"dc\" href=\"${esc(o.dc)}\" target=\"_blank\" rel=\"noopener\">Discount code ›</a>`:''}",
     "${o.dc?`<a class=\"dc\" href=\"${esc(o.dc)}\" target=\"_blank\" rel=\"noopener\">Discount code ›</a>`:''}${BMIN[o.bn]?`<em class=\"alt\">${BMIN[o.bn]} with code MAHJMATCH</em>`:''}")
-if "return `${kind} \\u00b7 ${nm} by ${o.bn}\\n" in h:
-    rep("return `${kind} \\u00b7 ${nm} by ${o.bn}\\n", "return `${kind} \\u00b7 ${nm} by ${o.bn}${BMIN[o.bn]?' ('+BMIN[o.bn]+' with code MAHJMATCH)':''}\\n")
+# (text-me list format is fixed by gate [54]; the $100 line lives in the on-screen shop list only)
 # 2d. '(retired)' out of the card MAT tag and the "It's a match!" line
 rep("const mName=(M[S.fav].dn||M[S.fav].n).replace(", "const mName=(M[S.fav].dn||M[S.fav].n).replace(/\\s*\\(retired\\)/i,'').replace(")
 rep("${esc(s.name)} + ${esc(M[S.fav].n)}. Pick your view", "${esc(s.name)} + ${esc(M[S.fav].n.replace(/\\s*\\(retired\\)/i,''))}. Pick your view")
