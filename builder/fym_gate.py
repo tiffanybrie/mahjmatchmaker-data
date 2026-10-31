@@ -1451,6 +1451,39 @@ try:
             and _HB.search(m['n']) and not _HW.search(m['n'])]
     if _bad: F.append(f"[118] non-Christmas/winter mats tagged Holiday (must be in colour sections): {_bad}")
 except Exception as _e: F.append(f"[118] holiday-rule name check did not run: {_e}")
+# [120] Oct 31 v108 re-QA: cream/ivory backgrounds were read as YELLOW (Harvest Pumpkin Thanksgiving led the Yellow chip on its
+# cream background). For new-brand mats with a measured YELLOW PRIMARY, the photo must hold >= 8% saturated yellow
+# (hue 30-68 deg, sat >= .25, val >= .35, 6% inset) AND be on the by-eye list config/fym-yellow-verified-oct31.json (the
+# numbers alone can't tell orange pumpkins / cream from yellow); cream belongs in 'neutral'.
+try:
+    import io as _io, struct as _st
+    from PIL import Image as _Im
+    _MCN = int(re.search(r'MCN=(\d+)', h).group(1)); _CH = {}
+    def _mimg(f):
+        c = int(re.match(r'\d+', f.split('/')[1]).group()) // _MCN
+        if c not in _CH:
+            _p = f'{B}/mc/{c}.webp'
+            if not os.path.exists(_p): _CH[c] = None
+            else:
+                _ab = open(_p, 'rb').read(); _n = _st.unpack('<I', _ab[-4:])[0]; _CH[c] = (_ab, json.loads(_ab[-4 - _n:-4]))
+        if not _CH[c]: return None
+        _ab, _hd = _CH[c]; _e = _hd.get(f)
+        return _ab[_e[0]:_e[0] + _e[1]] if _e else None
+    _NB = ('Bougie Mahjong', 'Mahj & Moon', 'Hutch & Nook', 'Betty June & Jeannette', 'Piper Chase Studios')
+    _YV = json.load(open(REPO + 'config/fym-yellow-verified-oct31.json'))['verified']
+    _bad = []
+    for m in M.values():
+        if m.get('hid') or m.get('bn') not in _NB or not m.get('mf') or m['mf'][0] != 'yellow' or not (m.get('sh') or [0])[0] or not m.get('f'): continue
+        _r = _mimg(m['f'])
+        if not _r: continue
+        _i = _Im.open(_io.BytesIO(_r)).convert('RGB'); _w, _h = _i.size
+        _i = _i.crop((int(_w * .06), int(_h * .06), int(_w * .94), int(_h * .94))); _i.thumbnail((200, 200))
+        _a = np.asarray(_i.convert('HSV')).astype(float); _H = _a[..., 0] * 360 / 255; _S = _a[..., 1] / 255; _V = _a[..., 2] / 255
+        _y = ((_H >= 30) & (_H <= 68) & (_S >= .25) & (_V >= .35)).mean() * 100
+        _k = [k for k, v in M.items() if v is m][0]
+        if _y < 8 or _k not in _YV: _bad.append(f"{m['n']} ({_y:.1f}% saturated yellow{'' if _k in _YV else ', not checked by eye: config/fym-yellow-verified-oct31.json'})")
+    if _bad: F.append(f"[120] yellow-primary mats whose 'yellow' is cream/ivory (use 'neutral'): {_bad}")
+except Exception as _e: F.append(f"[120] cream-vs-yellow check did not run: {_e}")
 # [116] Oct 30 v106 QA: a step-2 SEARCHED mat stays on top only while it passes the active brand / colour filters.
 try:
     if 'ids.includes(S.mfront)' not in fn('matDeck'):
