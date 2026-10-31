@@ -1440,6 +1440,22 @@ try:
     _open = [l[:90] for l in _inb if 'NEW PARTNER' in l and not re.search(r'\b(DONE|CLOSED)\b', l)]
     if _open: F.append(f"[114] MATCH-INBOX NEW PARTNER handoffs not marked DONE: {_open}")
 except Exception as _e: F.append(f"[114] partner coverage check did not run: {_e}")
+# [116] Oct 30 v106 QA: a step-2 SEARCHED mat stays on top only while it passes the active brand / colour filters.
+try:
+    if 'ids.includes(S.mfront)' not in fn('matDeck'):
+        F.append("[116] mats step: a searched mat stays on top even after a Brand / colour filter excludes it")
+except Exception as _e: F.append(f"[116] searched-mat filter check did not run: {_e}")
+# [117] Oct 30 v105/v106 QA: '(retired)' never prints on the match card (MAT tag / subtitle use mName) or the "It's a match!" line;
+# Noli June's $100 minimum shows in the in-app shop list but never on the card image code line (rule 7) or the brand dropdown.
+try:
+    _m = re.search(r'const mName=[^;]*;', UI)
+    if not _m or 'retired' not in _m.group(0): F.append("[117] card MAT tag (mName) still prints '(retired)'")
+    if "${esc(M[S.fav].n)}. Pick your view" in UI: F.append("[117] 'It's a match!' line still prints '(retired)'")
+    if 'BMIN' in UI:
+        if 'BMIN' in fn('codeLine'): F.append("[117] card image code line carries discount terms (rule 7: only 'Use code MAHJMATCH')")
+        if "BMIN[b]?' \\u00b7 '" in UI: F.append("[117] brand dropdown option carries Noli June terms (Tiffany Oct 31: plain 'Noli June (N)')")
+        if '${BMIN[o.bn]?`<em class="alt">' not in UI: F.append("[117] shop list does not show Noli June's $100 minimum")
+except Exception as _e: F.append(f"[117] card text check did not run: {_e}")
 # [115] Oct 30 eve: the WEBSITE copy (loads with <base> = the v72 folder) must use absolute URLs for every photo not in that folder.
 # v105's site copy swapped in the app's relative paths and 182 of 328 tile photos 404'd live. Run with --site <site index.html>.
 if '--site' in sys.argv:
