@@ -1,0 +1,523 @@
+{
+ "_about": "Non-partner brand candidates for Find Your Mat-ch (research only, Oct 31 2026; Tiffany 10:31am). Code partners are excluded; Mahjong Studios + Splash of Color are partners pulled by her choice (Oct 26), not listed. Pending applications stay out until answered (her rule). tnt_rec_count = Tiles & Tablescapes recs in config/tnt-recs.json (recs + nonpartner_out). Catalog counts from each store's /products.json on Oct 31 (keyword split, approximate; Shopify caps at 250). Not read by any build.",
+ "brands": [
+  {
+   "name": "Sunday Mahjong",
+   "site": "https://sundaymahjong.com",
+   "sells": "mats, tiles, racks",
+   "catalog_size_est": "85 products: ~15 mats, 18 tile sets, 7 racks (67 in stock)",
+   "tnt_rec_count": 4,
+   "in_app_now": "allowed non-partner, whole line",
+   "status_bucket": "NO PROGRAM FOUND",
+   "applied": null,
+   "program": null,
+   "past_tiffany_calls": [
+    "Oct 20: whole line allowed (personal favorite)"
+   ],
+   "recommendation": "already in (keep)",
+   "why": "Whole line in FYM; 4 TNT recs; no affiliate program found.",
+   "image": "https://cdn.shopify.com/s/files/1/0946/7458/3873/files/Green-Gingham-by-Sunday-Mahjong-1.jpg?v=1793295087"
+  },
+  {
+   "name": "Haus of Tiles",
+   "site": "unknown (likely Etsy/IG shop)",
+   "sells": "mats",
+   "catalog_size_est": "unknown",
+   "tnt_rec_count": 3,
+   "in_app_now": "none",
+   "status_bucket": "NO PROGRAM FOUND",
+   "applied": null,
+   "program": null,
+   "past_tiffany_calls": [
+    "Oct 29 1:18pm: wanted TNT recs incl. Haus of Tiles shown in Sunday book"
+   ],
+   "recommendation": "research more",
+   "why": "3 TNT recs (Dapplefield, Fieldmark, unnamed) = real demand, but no store found online; check the group posts/IG for their shop.",
+   "image": null
+  },
+  {
+   "name": "Lemondrop Mahjong Co.",
+   "site": "https://lemondropmahjongco.com",
+   "sells": "mats, a few tiles/racks",
+   "catalog_size_est": "22 products: ~14 mats, 3 tile sets, 2 racks (20 in stock)",
+   "tnt_rec_count": 2,
+   "in_app_now": "none",
+   "status_bucket": "AFFILIATE PROGRAM AVAILABLE",
+   "applied": null,
+   "program": "UpPromote",
+   "past_tiffany_calls": [
+    "Oct 29 1:18pm: TNT recs (Lemondrop, Sapphire Blooms) shown in Sunday book"
+   ],
+   "recommendation": "apply to program first",
+   "why": "UpPromote program live on their site; 2 TNT recs; ~14 mats.",
+   "image": "https://cdn.shopify.com/s/files/1/0803/6797/6698/files/well-plaid-mat-mahjong-569.webp?v=1792298374"
+  },
+  {
+   "name": "Rack It Mahjong",
+   "site": "https://rackitmahjong.com",
+   "sells": "mats, tiles, racks",
+   "catalog_size_est": "57 products: ~19 mats, 15 tile sets, 11 racks (34 in stock)",
+   "tnt_rec_count": 2,
+   "in_app_now": "none",
+   "status_bucket": "AFFILIATE PROGRAM AVAILABLE",
+   "applied": null,
+   "program": "UpPromote",
+   "past_tiffany_calls": [
+    "Oct 29: TNT recs (Kyoto Dreams + one more) shown in Sunday book"
+   ],
+   "recommendation": "apply to program first",
+   "why": "UpPromote on site; 2 TNT recs; ~19 mats + tiles + racks.",
+   "image": "https://cdn.shopify.com/s/files/1/0817/6281/1938/files/lake-garden-mat.jpg?v=1793115381"
+  },
+  {
+   "name": "Mahjong by SI",
+   "site": "https://www.mahjongbysi.com",
+   "sells": "mats (very large line), some tiles/racks; also at Target",
+   "catalog_size_est": "250 products: ~156 mats, 2 tile sets, 3 racks (250 in stock)",
+   "tnt_rec_count": 2,
+   "in_app_now": "6 mats kept (Oct 26 12:36am), non-partner links",
+   "status_bucket": "PENDING APPLICATION",
+   "applied": "2026-10-11",
+   "program": "Awin / UpPromote",
+   "past_tiffany_calls": [
+    "Oct 26 12:36am: keep the 6 mats, relink to mahjongbysi.com",
+    "Oct 31 10:31am: applied → don't bring in until they answer"
+   ],
+   "recommendation": "skip for now (pending)",
+   "why": "Applied Oct 11; Awin + UpPromote on site. 250+ products incl. Target line. TNT recs: Brewtifully, fall lanterns.",
+   "image": "https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_41fc85f8-890c-4208-b617-af335ef81e02.png?v=1793203079"
+  },
+  {
+   "name": "It's a Mahjong Life",
+   "site": "https://www.itsamahjonglife.com",
+   "sells": "mats",
+   "catalog_size_est": "unknown",
+   "tnt_rec_count": 1,
+   "in_app_now": "none",
+   "status_bucket": "AFFILIATE PROGRAM AVAILABLE",
+   "applied": null,
+   "program": "Awin (signal)",
+   "past_tiffany_calls": [
+    "Oct 29: TNT rec Lowcountry Horizon shown in Sunday book"
+   ],
+   "recommendation": "apply to program first",
+   "why": "Awin tracking on site (likely an Awin program); 1 TNT rec; catalog size not readable (non-Shopify).",
+   "image": null
+  },
+  {
+   "name": "Piper Chase Studios",
+   "site": "Etsy",
+   "sells": "mats",
+   "catalog_size_est": "unknown",
+   "tnt_rec_count": 1,
+   "in_app_now": "none",
+   "status_bucket": "SHOPMY AVAILABLE",
+   "applied": null,
+   "program": "ShopMy (Etsy)",
+   "past_tiffany_calls": [
+    "Oct 29: TNT rec"
+   ],
+   "recommendation": "bring in now via ShopMy",
+   "why": "Etsy seller; 1 TNT rec; ShopMy route like Mahj & Moon.",
+   "image": null
+  },
+  {
+   "name": "Bougie Mahjong",
+   "site": "https://bougiemahjong.com",
+   "sells": "mats (large line), tiles, racks",
+   "catalog_size_est": "108 products: ~75 mats, 11 tile sets, 11 racks (108 in stock)",
+   "tnt_rec_count": 1,
+   "in_app_now": "none",
+   "status_bucket": "NO PROGRAM FOUND",
+   "applied": null,
+   "program": null,
+   "past_tiffany_calls": [
+    "Oct 29: TNT rec Linen Blossom shown in Sunday book"
+   ],
+   "recommendation": "bring in now as non-partner",
+   "why": "~75 mats, all in stock, preppy/chinoiserie styles players like; no affiliate signal found. Contact them; meanwhile bring a curated set in if she likes the look.",
+   "image": "https://cdn.shopify.com/s/files/1/0699/9326/7370/files/front-mat-strawberry-gingham-garden.png?v=1787519048"
+  },
+  {
+   "name": "Ozark Mahjongg",
+   "site": "https://ozarkmahjong.com",
+   "sells": "mats",
+   "catalog_size_est": "unknown",
+   "tnt_rec_count": 1,
+   "in_app_now": "allowed non-partner, whole line",
+   "status_bucket": "NO PROGRAM FOUND",
+   "applied": null,
+   "program": null,
+   "past_tiffany_calls": [
+    "Oct 20 22:42: allowed, she likes them"
+   ],
+   "recommendation": "already in (keep)",
+   "why": "Whole line allowed; TNT rec Winslow 1920 Noir.",
+   "image": null
+  },
+  {
+   "name": "Mahjong Made Chic",
+   "site": "unknown (site password-protected)",
+   "sells": "mats",
+   "catalog_size_est": "unknown",
+   "tnt_rec_count": 1,
+   "in_app_now": "none",
+   "status_bucket": "NO PROGRAM FOUND",
+   "applied": null,
+   "program": null,
+   "past_tiffany_calls": [
+    "Oct 29: TNT rec Leopard Luxe"
+   ],
+   "recommendation": "research more",
+   "why": "Site locked (password page); sells on Faire. 1 TNT rec.",
+   "image": null
+  },
+  {
+   "name": "Silk Mahjong",
+   "site": "unknown",
+   "sells": "mats",
+   "catalog_size_est": "unknown",
+   "tnt_rec_count": 1,
+   "in_app_now": "none",
+   "status_bucket": "NO PROGRAM FOUND",
+   "applied": null,
+   "program": null,
+   "past_tiffany_calls": [
+    "Oct 29: TNT rec (unnamed)"
+   ],
+   "recommendation": "research more",
+   "why": "No store found; 1 TNT rec.",
+   "image": null
+  },
+  {
+   "name": "Amore Mahjong",
+   "site": "https://amoremahjong.com",
+   "sells": "mats, tiles, racks",
+   "catalog_size_est": "21 products: ~13 mats, 2 tile sets, 4 racks (14 in stock)",
+   "tnt_rec_count": 1,
+   "in_app_now": "none (Manor Garden removed Oct 20)",
+   "status_bucket": "PENDING APPLICATION",
+   "applied": "2026-10-17",
+   "program": "UpPromote (signal)",
+   "past_tiffany_calls": [
+    "Oct 20: removed"
+   ],
+   "recommendation": "skip for now (pending)",
+   "why": "Inquiry sent Oct 17; UpPromote signal on site; 1 TNT rec.",
+   "image": "https://cdn.shopify.com/s/files/1/0708/8377/0470/files/PORCELAINATMIDNIGHT.jpg?v=1793024817"
+  },
+  {
+   "name": "Mahj Tile Haus",
+   "site": "https://mahjtilehaus.com",
+   "sells": "mats, tiles, racks, bundles",
+   "catalog_size_est": "42 products: ~9 mats, 22 tile sets, 4 racks (25 in stock)",
+   "tnt_rec_count": 0,
+   "in_app_now": "allowed non-partner partial (her matched mats only, e.g. White Lotus, Imperial Lotus for Talulah)",
+   "status_bucket": "AFFILIATE PROGRAM AVAILABLE",
+   "applied": null,
+   "program": "own affiliate page (network not shown)",
+   "past_tiffany_calls": [
+    "Oct 20: keep ONLY her matched mats (CLAUDE.md / crosstags note)",
+    "Oct 31 10:31am: first brand that comes to mind to bring in"
+   ],
+   "recommendation": "apply to program first",
+   "why": "Their site has a 'Become an Affiliate' page (/pages/become-an-affiliate); 675 Loox reviews = popular. Apply today, bring the line in as a partner; she named them first.",
+   "image": "https://cdn.shopify.com/s/files/1/0935/0899/3308/files/mahj-tile-haus-atelier-de-maison-mat-corner-watermarked_96873306-8bde-4b17-b73e-27724f9643b2.png?v=1791432010"
+  },
+  {
+   "name": "The Mahjong House",
+   "site": "https://themahjonghouse.com",
+   "sells": "mats, tiles, racks (sold in boutiques too)",
+   "catalog_size_est": "109 products: ~52 mats, 37 tile sets, 7 racks (94 in stock)",
+   "tnt_rec_count": 0,
+   "in_app_now": "none",
+   "status_bucket": "AFFILIATE PROGRAM AVAILABLE",
+   "applied": null,
+   "program": "UpPromote (signal)",
+   "past_tiffany_calls": [],
+   "recommendation": "apply to program first",
+   "why": "~52 mats incl. double-sided; UpPromote signal on site; stocked by boutiques (Cal-a-Vie, Waiting on Martha).",
+   "image": "https://cdn.shopify.com/s/files/1/0711/9247/7915/files/Mat-CornerStars-LightBlueRed.jpg?v=1749671060"
+  },
+  {
+   "name": "The Mahjong Line",
+   "site": "https://themahjongline.com",
+   "sells": "mats, tiles (big tile line), racks",
+   "catalog_size_est": "153 products: ~15 mats, 71 tile sets, 8 racks (137 in stock)",
+   "tnt_rec_count": 0,
+   "in_app_now": "none (removed Oct 20)",
+   "status_bucket": "AFFILIATE PROGRAM AVAILABLE",
+   "applied": null,
+   "program": "GoAffPro (+ ShopMy)",
+   "past_tiffany_calls": [
+    "Oct 20: The Mahjong Line removed from the gallery/FYM"
+   ],
+   "recommendation": "apply to program first",
+   "why": "GoAffPro program + ShopMy presence; ~153 products incl. ~71 tile sets (many sets players own). Her Oct 20 removal predates opening the gate: her call.",
+   "image": "https://cdn.shopify.com/s/files/1/0432/0382/1717/files/The-Mahjong-Line-Pattern-Game-Mat-Plaid-Purple-Red-Pink-Plaid-Mahjong-Mats-Pair.jpg?v=1791265880"
+  },
+  {
+   "name": "Four Winds Social",
+   "site": "https://fourwindssocial.com",
+   "sells": "mats",
+   "catalog_size_est": "17 products: ~16 mats, 0 tile sets, 0 racks (3 in stock)",
+   "tnt_rec_count": 0,
+   "in_app_now": "none (all FWS rows removed; Mahj Mood collabs stay)",
+   "status_bucket": "AFFILIATE PROGRAM AVAILABLE",
+   "applied": null,
+   "program": "Ambassador program",
+   "past_tiffany_calls": [
+    "Oct 20: every Four Winds Social mat removed (collabs stay as Mahj Mood)"
+   ],
+   "recommendation": "skip",
+   "why": "Ambassador program, but only 3 of 16 mats in stock.",
+   "image": "https://cdn.shopify.com/s/files/1/0719/3945/7163/files/WebsitePics_1.png?v=1792758355"
+  },
+  {
+   "name": "Mahj House Rules",
+   "site": "https://mahjhouserules.com",
+   "sells": "racks, tiles, 1 mat",
+   "catalog_size_est": "11 products: ~1 mats, 4 tile sets, 2 racks (11 in stock)",
+   "tnt_rec_count": 0,
+   "in_app_now": "none (removed Oct 20)",
+   "status_bucket": "AFFILIATE PROGRAM AVAILABLE",
+   "applied": null,
+   "program": "GoAffPro",
+   "past_tiffany_calls": [
+    "Oct 20: removed"
+   ],
+   "recommendation": "skip",
+   "why": "GoAffPro program but only 1 mat; little to match.",
+   "image": "https://cdn.shopify.com/s/files/1/0689/4328/2311/files/6.jpg?v=1763612798"
+  },
+  {
+   "name": "Mahj & Moon",
+   "site": "https://mahjandmoon.com (also Etsy MahjandMoonCo)",
+   "sells": "mats (huge line)",
+   "catalog_size_est": "122 products: ~119 mats, 3 tile sets, 0 racks (122 in stock)",
+   "tnt_rec_count": 0,
+   "in_app_now": "her 4 album mats + ShopMy collection (13 Etsy mats)",
+   "status_bucket": "SHOPMY AVAILABLE",
+   "applied": null,
+   "program": "ShopMy (Etsy)",
+   "past_tiffany_calls": [
+    "Oct 20: keep only her matched mats",
+    "Oct 26 11:04am: Etsy brand → ShopMy links, no code"
+   ],
+   "recommendation": "bring in more via ShopMy (her picks)",
+   "why": "~119 mats; earns via ShopMy/Etsy. Add the ones she likes to the ShopMy collection, then FYM.",
+   "image": "https://cdn.shopify.com/s/files/1/0924/8201/1522/files/ChatGPT_Image_Jul_4_2026_09_11_20_PM_53.png?v=1786983133"
+  },
+  {
+   "name": "Tala Mahj",
+   "site": "https://talamahj.com",
+   "sells": "mats, tiles, woven racks",
+   "catalog_size_est": "34 products: ~11 mats, 8 tile sets, 4 racks (30 in stock)",
+   "tnt_rec_count": 0,
+   "in_app_now": "allowed partial (her ShopMy 'Tala Mahj Favorites')",
+   "status_bucket": "SHOPMY AVAILABLE",
+   "applied": null,
+   "program": "ShopMy 15% + own affiliate program",
+   "past_tiffany_calls": [
+    "Oct 20 late / Oct 25 15:28: everything in her ShopMy Tala Favorites collection"
+   ],
+   "recommendation": "bring in more via ShopMy (her picks)",
+   "why": "15% on ShopMy; their site also shows an affiliate program: could apply to become a code partner.",
+   "image": "https://cdn.shopify.com/s/files/1/0817/8447/1768/files/4db73fed4b8115d810538841e8e380c80b8c2a5fd471c99d6fa65a61b723359e_png.webp?v=1783189955"
+  },
+  {
+   "name": "BettyJuneJeannette",
+   "site": "https://www.etsy.com/shop/BettyJuneJeannette",
+   "sells": "mats",
+   "catalog_size_est": "unknown",
+   "tnt_rec_count": 0,
+   "in_app_now": "The Kerry only",
+   "status_bucket": "SHOPMY AVAILABLE",
+   "applied": null,
+   "program": "ShopMy (Etsy)",
+   "past_tiffany_calls": [
+    "Oct 20: she loves this shop; link via ShopMy if it pays on Etsy"
+   ],
+   "recommendation": "bring in now via ShopMy",
+   "why": "Etsy shop she loves; ShopMy pays on Etsy (Mahj & Moon precedent). Own site coming.",
+   "image": null
+  },
+  {
+   "name": "Feltectors",
+   "site": "Amazon",
+   "sells": "budget felt mats",
+   "catalog_size_est": "unknown",
+   "tnt_rec_count": 0,
+   "in_app_now": "none",
+   "status_bucket": "SHOPMY AVAILABLE",
+   "applied": null,
+   "program": null,
+   "past_tiffany_calls": [
+    "Oct 26: Amazon = link-volume play (cheap mats)"
+   ],
+   "recommendation": "skip",
+   "why": "Budget felt; Amazon/ShopMy only; not the designer look players come for.",
+   "image": null
+  },
+  {
+   "name": "House of Hearts Studio",
+   "site": "https://www.houseofheartsstudio.com",
+   "sells": "mats (artist vegan leather)",
+   "catalog_size_est": "unknown",
+   "tnt_rec_count": 0,
+   "in_app_now": "allowed non-partner, whole line",
+   "status_bucket": "NO PROGRAM FOUND",
+   "applied": null,
+   "program": null,
+   "past_tiffany_calls": [
+    "Oct 25 11:06: add ALL its mats, 'No code available'"
+   ],
+   "recommendation": "already in (keep)",
+   "why": "Wix store; no program.",
+   "image": null
+  },
+  {
+   "name": "Hutch & Nook",
+   "site": "https://hutchandnook.com",
+   "sells": "mats",
+   "catalog_size_est": "9 products: ~9 mats, 0 tile sets, 0 racks (9 in stock)",
+   "tnt_rec_count": 0,
+   "in_app_now": "her matched mats only",
+   "status_bucket": "NO PROGRAM FOUND",
+   "applied": null,
+   "program": null,
+   "past_tiffany_calls": [
+    "Oct 20: keep only her matched mats"
+   ],
+   "recommendation": "skip",
+   "why": "9 mats, no program found.",
+   "image": "https://cdn.shopify.com/s/files/1/0903/1843/8701/files/40494d82-70d0-4a83-8979-1312f3030023.png?v=1783626465"
+  },
+  {
+   "name": "Mahjong Moxie",
+   "site": "https://mahjongmoxie.com",
+   "sells": "racks, accessories (no mats in store now)",
+   "catalog_size_est": "7 products: ~0 mats, 0 tile sets, 3 racks (7 in stock)",
+   "tnt_rec_count": 0,
+   "in_app_now": "Duck Camp + Heron Landing only",
+   "status_bucket": "NO PROGRAM FOUND",
+   "applied": null,
+   "program": null,
+   "past_tiffany_calls": [
+    "Oct 20: keep only Duck Camp + Heron Landing"
+   ],
+   "recommendation": "skip",
+   "why": "Store shows 7 products, no mats right now.",
+   "image": null
+  },
+  {
+   "name": "Bama Mahj",
+   "site": "unknown",
+   "sells": "tiles",
+   "catalog_size_est": "unknown",
+   "tnt_rec_count": 0,
+   "in_app_now": "none",
+   "status_bucket": "NO PROGRAM FOUND",
+   "applied": null,
+   "program": null,
+   "past_tiffany_calls": [],
+   "recommendation": "research more",
+   "why": "Tile maker seen on Thingtesting (The Ginger Tiles).",
+   "image": null
+  },
+  {
+   "name": "Jank Mats",
+   "site": "https://www.jankmats.com",
+   "sells": "custom-printed mats",
+   "catalog_size_est": "unknown",
+   "tnt_rec_count": 0,
+   "in_app_now": "none",
+   "status_bucket": "NO PROGRAM FOUND",
+   "applied": null,
+   "program": null,
+   "past_tiffany_calls": [],
+   "recommendation": "skip",
+   "why": "Custom-print mats; nothing fixed to colour-match.",
+   "image": null
+  },
+  {
+   "name": "Luxe Mahjong",
+   "site": "https://luxemahjong.com",
+   "sells": "mats, tiles, racks",
+   "catalog_size_est": "42 products: ~9 mats, 15 tile sets, 4 racks (30 in stock)",
+   "tnt_rec_count": 0,
+   "in_app_now": "her matched mats only (e.g. The Polo Club)",
+   "status_bucket": "PENDING APPLICATION",
+   "applied": "2026-10-11",
+   "program": "UpPromote",
+   "past_tiffany_calls": [
+    "Oct 20: keep only her matched mats"
+   ],
+   "recommendation": "skip for now (pending)",
+   "why": "Applied Oct 11 (UpPromote program on site).",
+   "image": "https://cdn.shopify.com/s/files/1/0911/2374/5043/files/9ED4F25C-C485-4ECA-9604-B312170AD2F3_ca3e68b4-2f7e-4ad7-a907-c57dedd93dd8.webp?v=1793030119"
+  },
+  {
+   "name": "Golden Pond Mahjong",
+   "site": "https://goldenpond.shop",
+   "sells": "mats",
+   "catalog_size_est": "unknown",
+   "tnt_rec_count": 0,
+   "in_app_now": "none",
+   "status_bucket": "PENDING APPLICATION",
+   "applied": "2026-10-17",
+   "program": null,
+   "past_tiffany_calls": [],
+   "recommendation": "skip for now (pending)",
+   "why": "She emailed Oct 17; Midori Shadows = Malachite match.",
+   "image": null
+  },
+  {
+   "name": "Mod Mahj",
+   "site": "https://modmahj.com",
+   "sells": "mats, tiles, racks",
+   "catalog_size_est": "86 products: ~7 mats, 13 tile sets, 4 racks (81 in stock)",
+   "tnt_rec_count": 0,
+   "in_app_now": "none",
+   "status_bucket": "PENDING APPLICATION",
+   "applied": "2026-10-09",
+   "program": "Refersion",
+   "past_tiffany_calls": [],
+   "recommendation": "skip for now (pending)",
+   "why": "Applied Oct 9 via Refersion (15%); ~86 products.",
+   "image": "https://cdn.shopify.com/s/files/1/0825/4829/3938/files/chatter_league_logo_final.png?v=1759419580"
+  },
+  {
+   "name": "Bloomjong",
+   "site": "https://bloomjong.com",
+   "sells": "mats, tiles, racks",
+   "catalog_size_est": "16 products: ~4 mats, 4 tile sets, 7 racks (13 in stock)",
+   "tnt_rec_count": 0,
+   "in_app_now": "none",
+   "status_bucket": "PENDING APPLICATION",
+   "applied": "2026-10-09",
+   "program": "GoAffPro",
+   "past_tiffany_calls": [],
+   "recommendation": "skip for now (pending)",
+   "why": "Applied Oct 9 via GoAffPro; no confirmation email seen: worth re-checking.",
+   "image": "https://cdn.shopify.com/s/files/1/0976/2734/1167/files/Untitled-October27_2026at18.55.01-11_66b9a987-4a7c-49c0-a06b-caff6a704f1f.jpg?v=1793142940"
+  },
+  {
+   "name": "Sweet Jojo Designs",
+   "site": "https://www.sweetjojodesigns.com",
+   "sells": "tiles (~83), mats (~41)",
+   "catalog_size_est": "250 products: ~41 mats, 83 tile sets, 0 racks (189 in stock)",
+   "tnt_rec_count": 0,
+   "in_app_now": "held (fym_held_brands)",
+   "status_bucket": "PENDING APPLICATION",
+   "applied": "2026-10-29",
+   "program": "UpPromote",
+   "past_tiffany_calls": [
+    "Oct 29: applied direct; if approved use their links instead of Amazon/ShopMy"
+   ],
+   "recommendation": "skip for now (pending)",
+   "why": "Applied Oct 29 (UpPromote on site).",
+   "image": "https://cdn.shopify.com/s/files/1/0714/9315/6947/files/WildFloral-IV-OR_MahjMat_MAIN_LARGE_9b7b560d-0328-4ef2-924e-931eca143a8a.jpg?v=1793111499"
+  }
+ ]
+}
