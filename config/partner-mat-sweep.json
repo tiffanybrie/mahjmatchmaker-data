@@ -1,12 +1,12 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-10-31T13:08:35+00:00",
- "fym_ref": "origin/fym-site-preview:site-app/fym-v106",
+ "swept_at": "2026-10-31T22:07:50+00:00",
+ "fym_ref": "origin/fym-site-preview:site-app/fym-v109",
  "stores": {
   "amahjline.com": {
    "brand": "Amahj",
    "status": "ok",
-   "products": 31,
+   "products": 33,
    "mats": [
     [
      "2026-10-16T11:03:53-04:00",
@@ -1086,7 +1086,7 @@
   "letsmahj-on.com": {
    "brand": "Let's Mahj On",
    "status": "ok",
-   "products": 84,
+   "products": 83,
    "mats": [
     [
      "2026-09-20T12:00:24-04:00",
@@ -1893,7 +1893,7 @@
   "ohmymahjong.com": {
    "brand": "Oh My Mahjong",
    "status": "ok",
-   "products": 244,
+   "products": 243,
    "mats": [
     [
      "2026-10-29T14:19:42-05:00",
@@ -2032,11 +2032,6 @@
     ]
    ],
    "missing": [
-    [
-     "2026-10-29T14:19:42-05:00",
-     "Poppins Mat in Tube",
-     "poppins-mat-in-tube"
-    ],
     [
      "2026-10-28T11:05:27-05:00",
      "Moving Sale Mahjong Mats",
@@ -2681,8 +2676,13 @@
   "letsbebesties.com": {
    "brand": "Let's Be Besties",
    "status": "ok",
-   "products": 572,
+   "products": 573,
    "mats": [
+    [
+     "2026-10-31T15:20:21-04:00",
+     "Tropicana Mahjong Mat",
+     "tropicana-mahjong-mat"
+    ],
     [
      "2026-10-30T16:28:03-04:00",
      "Vibrant Vortex with Simple Middle Mahjong Mat",
@@ -4591,6 +4591,11 @@
    ],
    "missing": [
     [
+     "2026-10-31T15:20:21-04:00",
+     "Tropicana Mahjong Mat",
+     "tropicana-mahjong-mat"
+    ],
+    [
      "2026-10-30T16:28:03-04:00",
      "Vibrant Vortex with Simple Middle Mahjong Mat",
      "vibrant-vortex-with-simple-middle-mahjong-mat"
@@ -4604,11 +4609,6 @@
      "2026-10-30T14:41:44-04:00",
      "Butterscotch Floral Mahjong Mat",
      "butterscotch-floral-mahjong-mat"
-    ],
-    [
-     "2026-10-29T14:49:55-04:00",
-     "Sapphire Leaves Mahjong Mat",
-     "sapphire-leaves-mahjong-mat"
     ],
     [
      "2026-10-26T10:04:23-04:00",
