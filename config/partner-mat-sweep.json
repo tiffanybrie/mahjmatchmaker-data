@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-10-30T22:03:54+00:00",
+ "swept_at": "2026-10-31T13:08:35+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v106",
  "stores": {
   "amahjline.com": {
@@ -1264,7 +1264,7 @@
   "mahjongregister.com": {
    "brand": "Mahjong Register",
    "status": "ok",
-   "products": 59,
+   "products": 60,
    "mats": [
     [
      "2026-10-08T14:39:42-05:00",
