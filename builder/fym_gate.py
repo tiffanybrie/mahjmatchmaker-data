@@ -65,7 +65,7 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
     mat loses its flat photo
 """
 import struct
-import sys, os, json, re
+import sys, os, json, re, glob
 import numpy as np
 from PIL import Image, ImageOps
 REPO = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')) + '/'
@@ -1480,6 +1480,25 @@ if '--site' in sys.argv:
         _bt = set(subprocess.run(['git', '-C', os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(_sp)))), 'ls-tree', '-r', '--name-only', 'ad0675e42242c3abad40cac9f539a265220e26eb', 'site-app/fym-v72/'], capture_output=True, text=True).stdout.split())
         _rel = sorted({o.get('full') for o in _SD['tiles'].values() if isinstance(o.get('full'), str) and re.match(r't\d', o['full']) and ('site-app/fym-v72/' + o['full']) not in _bt})
         if _rel: F.append(f"[115] website copy has {len(_rel)} tile photo paths that 404 from the v72 base (need absolute CDN URLs): {_rel[:4]}")
+        # [119] (Oct 31, v109): jsDelivr refuses files > 20MB (fym-v108 index hit 19.6MB). Site index must stay < 15MB; every
+        # thumbnail id the data uses must be inline or in the thumbs.js it loads (checked from the local fym-site copy).
+        if len(_sh.encode()) > 15_000_000: F.append(f"[119] website index is {len(_sh.encode())/1e6:.1f}MB (jsDelivr limit 20MB; keep < 15MB: move IMG blocks to thumbs.js)")
+        _ids = set()
+        for _m in re.finditer(r'window\.IMG=Object\.assign\(window\.IMG\|\|\{\},', _sh): _ids |= set(json.JSONDecoder().raw_decode(_sh[_m.end():])[0])
+        for _m in re.finditer(r'src="https://cdn\.jsdelivr\.net/gh/tiffanybrie/mahjmatchmaker-data@[0-9a-f]+/(site-app/fym-v\d+/thumbs\.js)"', _sh):
+            _tp = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(_sp)))), _m.group(1))
+            if os.path.exists(_tp): _tj = open(_tp).read(); _ids |= set(json.JSONDecoder().raw_decode(_tj[_tj.index('{},') + 3:])[0])
+            else: F.append(f"[119] thumbs file {_m.group(1)} not found locally")
+        _sd = os.path.dirname(os.path.dirname(os.path.abspath(_sp))); _cur = int(re.search(r'fym-v(\d+)', _sp).group(1))
+        _prev = max((int(re.search(r'fym-v(\d+)$', d_).group(1)) for d_ in glob.glob(_sd + '/fym-v*') if re.search(r'fym-v(\d+)$', d_) and int(re.search(r'fym-v(\d+)$', d_).group(1)) < _cur and os.path.exists(d_ + '/index.html')), default=None)
+        if _prev:
+            _ph = open(f'{_sd}/fym-v{_prev}/index.html').read(); _pids = set()
+            for _m in re.finditer(r'window\.IMG=Object\.assign\(window\.IMG\|\|\{\},', _ph): _pids |= set(json.JSONDecoder().raw_decode(_ph[_m.end():])[0])
+            for _m in re.finditer(r'src="https://cdn\.jsdelivr\.net/gh/tiffanybrie/mahjmatchmaker-data@[0-9a-f]+/(site-app/fym-v\d+/thumbs\.js)"', _ph):
+                _tp = os.path.join(os.path.dirname(_sd), _m.group(1))
+                if os.path.exists(_tp): _tj = open(_tp).read(); _pids |= set(json.JSONDecoder().raw_decode(_tj[_tj.index('{},') + 3:])[0])
+            _lost = sorted(_pids - _ids)
+            if _lost: F.append(f"[119] website copy lost {len(_lost)} inline/thumbs.js thumbnails the previous copy fym-v{_prev} had: {_lost[:5]}")
     except Exception as _e: F.append(f"[115] website photo path check did not run: {_e}")
 if W104:
     if '--release' in sys.argv:
