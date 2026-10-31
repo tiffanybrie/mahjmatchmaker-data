@@ -1440,6 +1440,17 @@ try:
     _open = [l[:90] for l in _inb if 'NEW PARTNER' in l and not re.search(r'\b(DONE|CLOSED)\b', l)]
     if _open: F.append(f"[114] MATCH-INBOX NEW PARTNER handoffs not marked DONE: {_open}")
 except Exception as _e: F.append(f"[114] partner coverage check did not run: {_e}")
+# [118] Oct 31 v108 QA: holiday rule (CLAUDE.md, Tiffany Oct 21 FINAL) on new / unhidden mats: only Christmas, Hanukkah and
+# winter snowy scenes are Holiday. A v108+ add or v108 unhide whose name says Valentine / Thanksgiving / Halloween / Pumpkin /
+# Easter / Patriotic / 4th / Derby must not be hol (unless the name also has a Christmas / winter word).
+try:
+    _HB = re.compile(r'valentine|thanksgiving|halloween|pumpkin|easter|patriotic|\b4th\b|fourth of july|derby', re.I)
+    _HW = re.compile(r'christmas|xmas|hanukkah|chanukah|snow|ski\b|winter|santa|noel|nutcracker', re.I)
+    _bad = [m['n'] for m in M.values() if not m.get('hid') and m.get('hol')
+            and (str(m.get('add', '')) >= 'oct31' or m.get('bn') in ('Bougie Mahjong', 'Mahj & Moon', 'Hutch & Nook'))
+            and _HB.search(m['n']) and not _HW.search(m['n'])]
+    if _bad: F.append(f"[118] non-Christmas/winter mats tagged Holiday (must be in colour sections): {_bad}")
+except Exception as _e: F.append(f"[118] holiday-rule name check did not run: {_e}")
 # [116] Oct 30 v106 QA: a step-2 SEARCHED mat stays on top only while it passes the active brand / colour filters.
 try:
     if 'ids.includes(S.mfront)' not in fn('matDeck'):

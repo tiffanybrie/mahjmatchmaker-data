@@ -13179,7 +13179,7 @@
 "pink"
 ],
 "tone": "bright",
-"holiday": true,
+"holiday": false, "holiday_note": "Oct 31 v108 QA: not holiday (CLAUDE.md: only Christmas/Hanukkah/winter)",
 "skip": false,
 "image": "mahj-moon--valentine-hearts-american",
 "light": 0.604,
@@ -13986,7 +13986,7 @@
 "neutral"
 ],
 "tone": "muted",
-"holiday": true,
+"holiday": false, "holiday_note": "Oct 31 v108 QA: not holiday (CLAUDE.md: only Christmas/Hanukkah/winter)",
 "skip": false,
 "image": "mahj-moon--harvest-pumpkin-thanksgiving",
 "light": 0.529,
