@@ -28,6 +28,7 @@ HIDE = {  # + v109 re-QA hides (Oct 31 late)
  'pcs29': 'someone holds the mat: body at top, floor at bottom (v109 re-QA, Oct 31)',
  'pcs32': 'hands at the corners placing racks (v109 re-QA, Oct 31)',
  'pcs33': 'hands at the corners placing racks (v109 re-QA, Oct 31)',
+ 'pcs14': 'a person holds the mat up: fingers on both top corners, head and body behind the top edge; only image (v109 final QA, Oct 31)',
 'bjj61': 'angled shot on a kitchen counter with tiles; no flat image (other listing image is a table mockup) (v109 QA)', 'bjj51': 'brand watermark ("Betty June and Jeannette" script) runs across the only mat images', 'bjj56': 'brand watermark runs across the only mat images; mostly blank design',
         **{f'pcs{k}': v for k, v in dec.PCS_HIDE.items()}}
 def slug(s): return re.sub(r'[^a-z0-9]+', '-', s.lower()).strip('-')[:60]
