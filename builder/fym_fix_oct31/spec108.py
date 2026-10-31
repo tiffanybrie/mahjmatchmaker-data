@@ -8,8 +8,10 @@ import numpy as np
 from PIL import Image
 REPO = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')) + '/'
 F = sys.argv[1]
-def trimcopy(src, dst):  # gate [89]: trim the white margin (mat fills the frame)
-    im = Image.open(src).convert('RGB'); a = np.asarray(im).astype(int); nw = ~(a.min(2) > 238)
+def trimcopy(src, dst, inset=0.0):  # gate [89]: trim the white margin (mat fills the frame); inset = crop off a floor border (Mahj & Moon renders sit on a beige floor)
+    im = Image.open(src).convert('RGB')
+    if inset: W_, H_ = im.size; im = im.crop((int(W_*inset), int(H_*inset), int(W_*(1-inset)), int(H_*(1-inset))))
+    a = np.asarray(im).astype(int); nw = ~(a.min(2) > 238)
     ys, xs = np.where(nw)
     if len(xs): im = im.crop((xs.min(), ys.min(), xs.max() + 1, ys.max() + 1))
     im.save(dst, quality=92)
@@ -38,9 +40,18 @@ for store, bn, pre, types in (('bougiemahjong.com', 'Bougie Mahjong', 'bougie', 
         if not any(v['available'] for v in p['variants']): continue
         src = f'{F}/img/{pre}__{h}__0.jpg'
         if not os.path.exists(src): continue
-        dst = f'assets/mats/v108/{pre}-{h[:80]}.jpg'; trimcopy(src, REPO + dst)
+        dst = f'assets/mats/v108/{pre}-{h[:80]}.jpg'; trimcopy(src, REPO + dst, 0.065 if pre == 'mm' else 0.0)
         mats.append(dict(key=f'{store}/{h}', name=nm(p['title']), bn=bn, b=store, u=f'https://{store}/products/{h}', u0=f'https://{store}/products/{h}',
                          dc='', pa=False, img=dst, hol=h in HOL, hid=False, reason='', photo_note='brand image 0: flat render, fills the frame (non-partner add Oct 31)'))
+# partner sweep (gate [100]): Let's Be Besties Sapphire Leaves, live Oct 29, not yet in FYM
+_h = 'sapphire-leaves-mahjong-mat'; _src = f'{F}/img/lbb__{_h}__0.jpg'
+if os.path.exists(_src):
+    _dst = f'assets/mats/v108/lbb-{_h}.jpg'; trimcopy(_src, REPO + _dst); _ref = '12515508.SUyXEjJsqV'
+    mats.append(dict(key=f'letsbebesties.com/{_h}', name='Sapphire Leaves', bn="Let's Be Besties", b='letsbebesties.com',
+                     u=f'https://letsbebesties.com/discount/MAHJMATCH?redirect=%2Fproducts%2F{_h}%3Fsca_ref%3D{_ref}', u0=f'https://letsbebesties.com/products/{_h}?sca_ref={_ref}',
+                     dc='https://mahjmatchmaker.com/lets-be-besties-discount-code', pa=True, img=_dst, hol=False, hid=False, reason='', photo_note='brand image 0: flat render (partner sweep)'))
+for m in mats:
+    if m['key'] == 'mahjandmoon.com/autumn-leaf-mahjong-mat': m['name'] = 'Autumn Leaf Floral'  # store title duplicates Autumn Leaves (other design)
 json.dump(dict(_about=__doc__, made='2026-10-31', mats=mats), open(REPO + 'config/fym-nonpartner-adds-oct31.json', 'w'), indent=1, ensure_ascii=False)
 from collections import Counter
 print(len(mats), 'mats', Counter(m['bn'] for m in mats), sum(m['hol'] for m in mats), 'holiday')

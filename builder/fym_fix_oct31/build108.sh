@@ -6,6 +6,7 @@ set -eo pipefail; S=$1; D=$2; H=$(dirname "$0"); R=$H/../..
 rm -rf "$D"; cp -al "$S" "$D"; rm "$D/index.html"; cp "$S/index.html" "$D/index.html"
 python3 $H/partneradds108.py "$D"
 python3 $R/builder/fym_fix_oct30/v104rank.py "$D"
+python3 $H/v108cr.py "$S/index.html" "$D"
 python3 - "$D/index.html" <<'PY'
 import sys; p=sys.argv[1]; h=open(p).read(); h=h.replace('Version 1.9.2<','Version 1.9.3<').replace('(Version 1.9.2)','(Version 1.9.3)'); assert h.count('Version 1.9.3')==2; open(p,'w').write(h)
 PY
