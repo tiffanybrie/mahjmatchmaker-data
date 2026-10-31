@@ -50,7 +50,7 @@ FL0 = json.load(open(REPO + 'builder/fym_flags/mat_photo_flags.json')); UNHID = 
 for k, o in M.items():
     if o.get('bn') in ('Mahj & Moon', 'Hutch & Nook') and o.get('hid'):
         f = FL0.get(k)
-        if f and f.get('flag') == 'duplicate' and 'non-partner brand decision' in (f.get('note') or ''):
+        if f and f.get('flag') in ('duplicate', 'ok') and 'non-partner brand decision' in (f.get('note') or ''):  # 'ok' = re-run after v108 rewrote the flag (idempotent)
             o.pop('hid', None); UNHID.append(k); added.append(('unhide', o['bn'], o['n']))
 # 2. new mats
 mcb = re.search(r'MCB=new Set\(\[([0-9, ]+)\]\);', h); chunk = max(int(v) for v in mcb.group(1).split(',')) + 1
