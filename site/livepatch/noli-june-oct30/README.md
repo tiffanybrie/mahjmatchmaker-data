@@ -1,4 +1,4 @@
-# Noli June onboarding (Oct 30): STAGED, waiting on one Chrome trip (OPS)
+# Noli June onboarding (Oct 30): LIVE (page + hub done by the onboarding task ~3:30pm ET Oct 30; curl 200 at 9:30pm ET, desk cleanup). Was: STAGED, waiting on one Chrome trip (OPS)
 
 Tiffany approved Oct 30 9:04am (ANSWERS). Chrome was disconnected for the whole onboarding run (list_connected_browsers empty), so nothing below is live yet. Pins (jsDelivr, warmed 200 Oct 30): page + hub spec `https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@1515bc7af11ea37e1fa9ab1d264a72cc676dddfb/brand-pages/noli-june.html` and `.../@1515bc7af11ea37e1fa9ab1d264a72cc676dddfb/brand-pages/hub-noli-june-2026-10-30.json`; apply script + 38-logo graphic `@458613bda4066e549904a4b76167e48280ec1d27/site/livepatch/noli-june-oct30/apply-hub.js` and `.../assets/hub/partner-brands-2026-10-30.jpg`. (At 458613bd jsDelivr intermittently 403s the html with a 50 MB package limit, so keep the 1515bc7a pin for those two files; identical bytes.)
 
