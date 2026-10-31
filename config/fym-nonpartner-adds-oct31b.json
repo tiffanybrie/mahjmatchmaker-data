@@ -150,7 +150,7 @@
    "hol": false,
    "hid": false,
    "reason": "",
-   "photo_note": "Etsy listing image 0, cropped to the mat (auto box)"
+   "photo_note": "Etsy listing image 1, cropped to the mat (grid box)"
   },
   {
    "key": "www.etsy.com/listing/4574264562/noa-hanukkah",
@@ -180,7 +180,7 @@
    "hol": false,
    "hid": false,
    "reason": "",
-   "photo_note": "Etsy listing image 0, cropped to the mat (auto box)"
+   "photo_note": "Etsy listing image 0, cropped to the mat (grid box)"
   },
   {
    "key": "www.etsy.com/listing/4581348013/sugarplum-spruce",
@@ -255,7 +255,7 @@
    "hol": true,
    "hid": false,
    "reason": "",
-   "photo_note": "Etsy listing image 0, cropped to the mat (auto box)"
+   "photo_note": "Etsy listing image 1, cropped to the mat (grid box)"
   },
   {
    "key": "www.etsy.com/listing/4551162253/gameday",
@@ -450,7 +450,7 @@
    "hol": true,
    "hid": false,
    "reason": "",
-   "photo_note": "Etsy listing image 1, cropped to the mat (auto box)"
+   "photo_note": "Etsy listing image 1, cropped to the mat (grid box)"
   },
   {
    "key": "www.etsy.com/listing/4547665298/my-lucky",
@@ -495,7 +495,7 @@
    "hol": false,
    "hid": false,
    "reason": "",
-   "photo_note": "Etsy listing image 0, cropped to the mat (auto box)"
+   "photo_note": "Etsy listing image 1, cropped to the mat (grid box)"
   },
   {
    "key": "www.etsy.com/listing/4483587170/james-pastel-floral",
@@ -778,9 +778,9 @@
    "pa": false,
    "img": "assets/mats/v109/bjj-4399720164-pink-and-orange.jpg",
    "hol": false,
-   "hid": false,
-   "reason": "",
-   "photo_note": "Etsy listing image 0, cropped to the mat (auto box)"
+   "hid": true,
+   "reason": "angled shot on a kitchen counter with tiles; no flat image (other listing image is a table mockup) (v109 QA)",
+   "photo_note": "Etsy listing image 0, cropped to the mat (grid box)"
   },
   {
    "key": "www.etsy.com/listing/4512471128/alex-americana",
@@ -882,7 +882,7 @@
    "dc": "",
    "pa": false,
    "img": "assets/mats/v109/pcs-4578014518-pink-bow-lattice.jpg",
-   "hol": false,
+   "hol": true,
    "hid": false,
    "reason": "",
    "photo_note": "Etsy listing image 0, cropped to the mat (grid box)"
@@ -1228,8 +1228,8 @@
    "pa": false,
    "img": "assets/mats/v109/pcs-4532936856-pink-monogram-hydrangea.jpg",
    "hol": false,
-   "hid": false,
-   "reason": "",
+   "hid": true,
+   "reason": "hands hold the mat on every edge in the only brand image; a crop without hands loses the floral border (v109 QA)",
    "photo_note": "Etsy listing image 0, cropped to the mat (auto box)"
   },
   {
@@ -1272,7 +1272,7 @@
    "dc": "",
    "pa": false,
    "img": "assets/mats/v109/pcs-4553302450-pink-bow-stripe.jpg",
-   "hol": false,
+   "hol": true,
    "hid": false,
    "reason": "",
    "photo_note": "Etsy listing image 0, cropped to the mat (grid box)"
@@ -1290,7 +1290,7 @@
    "hol": false,
    "hid": false,
    "reason": "",
-   "photo_note": "Etsy listing image 0, cropped to the mat (auto box)"
+   "photo_note": "Etsy listing image 0, cropped to the mat (grid box)"
   },
   {
    "key": "www.etsy.com/listing/4554145440/leopard-toile",
@@ -1320,7 +1320,7 @@
    "hol": false,
    "hid": false,
    "reason": "",
-   "photo_note": "Etsy listing image 0, cropped to the mat (auto box)"
+   "photo_note": "Etsy listing image 0, cropped to the mat (grid box)"
   },
   {
    "key": "www.etsy.com/listing/4532898416/leopard-monogram",
@@ -1335,7 +1335,7 @@
    "hol": false,
    "hid": false,
    "reason": "",
-   "photo_note": "Etsy listing image 0, cropped to the mat (auto box)"
+   "photo_note": "Etsy listing image 0, cropped to the mat (grid box)"
   }
  ],
  "skipped": [

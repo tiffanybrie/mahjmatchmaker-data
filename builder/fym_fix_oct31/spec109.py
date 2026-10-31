@@ -17,7 +17,12 @@ NB = {  # normalized crop boxes (x0,y0,x1,y1) picked by eye on the 10% grid (scr
  'pcs17': (.19,.23,.75,.81), 'pcs18': (.19,.23,.76,.81), 'pcs27': (.19,.24,.75,.80), 'pcs28': (.19,.24,.75,.80), 'pcs21': (.23,.20,.77,.76),
  'pcs22': (.23,.21,.77,.77), 'pcs23': (.22,.20,.78,.78), 'pcs24': (.20,.20,.80,.79), 'pcs29': (.18,.18,.82,.83), 'pcs31': (.23,.22,.77,.78),
  'pcs19': (.08,.10,.90,.92), 'pcs20': (.16,.17,.83,.84), 'pcs25': (.21,.22,.79,.78), 'pcs7': (.08,.08,.92,.92)}
-HIDE = {'bjj51': 'brand watermark ("Betty June and Jeannette" script) runs across the only mat images', 'bjj56': 'brand watermark runs across the only mat images; mostly blank design',
+NB.update({  # v109 QA re-crops (Oct 31 eve): hands / person / room / table / bag out of frame (scratchpad fix109/g_*.jpg)
+ 'bjj37': (.02,.03,.82,.94), 'bjj61': (.09,.21,.97,.96), 'bjj17': (.155,.135,.825,.875), 'bjj34': (0,.09,1,1), 'bjj11': (0,.13,.81,.97),
+ 'bjj9': (.06,.18,.76,.97), 'pcs30': (.22,.27,.84,.79), 'pcs32': (.25,.27,.75,.73), 'pcs33': (.25,.27,.75,.73), 'pcs25': (.24,.25,.77,.735),
+ **{t: (.205,.275,.735,.785) for t in ('pcs0','pcs2','pcs3','pcs17','pcs18','pcs27','pcs28')}})
+XCUT = {'bjj5': .75, 'bjj18': .85, 'bjj35': .79, 'bjj50': .785, 'bjj53': .80, 'bjj44': .64, 'bjj45': .80, 'bjj55': .78, 'bjj58': .78, 'bjj59': .78}  # v109 QA: bag/tube beside the mat -> cut the auto box's right edge at this fraction of the image width
+HIDE = {'bjj61': 'angled shot on a kitchen counter with tiles; no flat image (other listing image is a table mockup) (v109 QA)', 'bjj51': 'brand watermark ("Betty June and Jeannette" script) runs across the only mat images', 'bjj56': 'brand watermark runs across the only mat images; mostly blank design',
         **{f'pcs{k}': v for k, v in dec.PCS_HIDE.items()}}
 def slug(s): return re.sub(r'[^a-z0-9]+', '-', s.lower()).strip('-')[:60]
 E = json.load(open(REPO + 'config/etsy-brands-oct31.json'))
@@ -37,6 +42,7 @@ for bi, br in enumerate(E['brands']):
         im = Image.open(src).convert('RGB'); W, H = im.size
         if tag in NB: x0, y0, x1, y1 = NB[tag]; box = (round(x0*W), round(y0*H), round(x1*W), round(y1*H))
         else: box = tuple(AUTO[tag]['box'])
+        if tag in XCUT: box = (box[0], box[1], min(box[2], round(XCUT[tag] * W)), box[3])
         im = im.crop(box); im.thumbnail((1600, 1600)); dst = f'assets/mats/v109/{pre}-{L["listing_id"]}-{slug(name)}.jpg'; im.save(REPO + dst, quality=90)
         hid = tag in HIDE
         mats.append(dict(key=f'www.etsy.com/listing/{L["listing_id"]}/{slug(name)}', name=name, bn=bn, b=bn, u=L['shopmy_url'], u0=L['etsy_url'],

@@ -1,5 +1,5 @@
 {
- "_about": "Oct 31 eve (v109): new-brand mats whose YELLOW PRIMARY was checked by eye on the photo (real yellow, not a cream/ivory background). Gate [120] fails on any new-brand yellow-primary mat not listed here. Add a mat only after looking at its photo (scratchpad cream109/cand.jpg method).",
+ "_about": "Oct 31 eve (v109): new-brand mats whose YELLOW PRIMARY was checked by eye on the photo (real yellow, not a cream/ivory background). Gate [120] fails on any new-brand yellow-primary mat not listed here. Add a mat only after looking at its photo (scratchpad cream109/cand.jpg method). Oct 31 v109 QA: gate [120] now covers ALL visible mats: any mat whose yellow share >= 15 has < 8% saturated yellow must be listed here (pale real yellow), else use 'neutral'.",
  "verified": {
   "mahjandmoon.com/amalfi-soleil-mahjong-mat": "Amalfi Soleil",
   "mahjandmoon.com/lemon-stripe-mahjong-mat": "Lemon Stripe",
@@ -7,6 +7,10 @@
   "www.etsy.com/listing/4497433465/the-katelyn-yellow-mahjong-mat": "Katelyn (Yellow)",
   "bougiemahjong.com/limoncello-mahjong-mat": "Limoncello",
   "bougiemahjong.com/champagne-conservatory-mahjong-mat": "Champagne Conservatory",
-  "mahjandmoon.com/lemon-blossom-mahjong-mat": "Lemon Blossom Coastal Citrus"
+  "mahjandmoon.com/lemon-blossom-mahjong-mat": "Lemon Blossom Coastal Citrus",
+  "www.yolomahjong.com/mahjong-mat-31-5x31-5-ship-rolled-up-blue-hydrangea-mahjong-mat-with-soft-yellow-floral-border": "Blue Hydrangea Yellow Floral (pale yellow border, real)",
+  "sundaymahjong.com/golden-gingham-premium-mahjong-mat": "Golden Gingham Premium (golden/caramel gingham; kept as gold-yellow, borderline)",
+  "www.bespokemahjong.com/electriclovemat": "Electric Love Mat Side A (graffiti hearts include bright yellow; small share of a busy frame)",
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-dancing-bears-copy#side-b": "Grateful Dead Side B (yellow GRATEFUL DEAD lettering on black)"
  }
 }

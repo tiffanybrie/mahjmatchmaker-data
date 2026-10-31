@@ -20,6 +20,12 @@ SWAP = {  # key -> cream share (neutral added at yellow's tier if neutral absent
     'bougiemahjong.com/palm-court-tennis-club-mahjong-mat': 26.3,
     'bougiemahjong.com/palm-garden-tropical-mahjong-mat': 24.2,
     'www.etsy.com/listing/4478449828/hollywood': 0,
+    # v109 QA (Oct 31 eve): scan extended to ALL visible mats (scratchpad fix109/ycand.jpg, looked at each photo)
+    'www.yolomahjong.com/loop-border-mahjong-mat': 78.4,          # cream field, black border, no yellow (led the Yellow chip #2)
+    'www.yolomahjong.com/ivory-scroll-mahjong-mat': 81.7,         # ivory field, black scroll border (#3 in Yellow)
+    'talamahj.com/cabana-mahjong-mat-pink-ivory-with-citrus-fringe': 53.0,  # pink + ivory stripes; the citrus fringe isn't in the photo
+    'talamahj.com/cabana-mahjong-mat-lagoon-blue-ivory-with-citrus-fringe': 0,  # seafoam + white stripes, no yellow
+    'www.yolomahjong.com/mahjong-mat-31-5x31-5-ship-rolled-up-2': 47.1,  # Green Pickleball: cream ground, no yellow
 }
 h = open(P).read(); i = h.index('const D=') + 8; D, end = json.JSONDecoder().raw_decode(h[i:]); end += i
 M = D['mats']; OI = {k: j for j, k in enumerate(D['order'])}; done = []
@@ -41,7 +47,16 @@ for k, cream in SWAP.items():
     y = mf.index('yellow')
     if 'neutral' not in mf and cream >= 8: mf[y], sh[y] = 'neutral', cream
     else: del mf[y]; del mt[y]; del sh[y]
+    if mt and min(mt) > 0: mt = [t - min(mt) for t in mt]  # v109 QA: dropping a yellow PRIMARY leaves tiers starting at 0
     o.update(mf=mf, mt=mt, sh=sh); rerank(k); done.append(o['n'] + ' -> ' + '/'.join(mf))
+# keep locks in step (approved colour change = this cream fix; gate [6])
+import os as _os
+_LP = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', 'fym_flags', 'locks.json'); _LK = json.load(open(_LP)); _n = 0
+for k in list(SET) + list(SWAP):
+    if k in M and k in _LK.get('mats', {}):
+        for fld in ('mf', 'mt'):
+            if fld in _LK['mats'][k] and _LK['mats'][k][fld] != M[k].get(fld): _LK['mats'][k][fld] = M[k].get(fld); _n += 1
+json.dump(_LK, open(_LP, 'w'), indent=1, ensure_ascii=False); print('locks updated', _n)
 h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]
 open(P, 'w').write(h)
 print('v109cream:', done)

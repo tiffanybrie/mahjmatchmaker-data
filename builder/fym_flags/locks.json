@@ -26774,12 +26774,10 @@
    "rt": false,
    "hid": false,
    "mf": [
-    "yellow",
     "neutral"
    ],
    "mt": [
-    0,
-    1
+    0
    ]
   },
   "www.yolomahjong.com/ivory-scroll-mahjong-mat": {
@@ -26790,12 +26788,10 @@
    "rt": false,
    "hid": false,
    "mf": [
-    "yellow",
     "neutral"
    ],
    "mt": [
-    0,
-    1
+    0
    ]
   },
   "www.yolomahjong.com/lavender-scroll-mahjong-mat": {
@@ -27413,13 +27409,11 @@
    "hid": false,
    "mf": [
     "green",
-    "neutral",
-    "yellow"
+    "neutral"
    ],
    "mt": [
     0,
-    1,
-    2
+    1
    ]
   },
   "www.yolomahjong.com/mahjong-mat-blue-pool-float-mahjong-mat-summer-pool-party-mahjong-game-mat": {
@@ -29379,7 +29373,7 @@
     "pink",
     "orange",
     "green",
-    "blue"
+    "dark"
    ],
    "mt": [
     0,
@@ -29399,7 +29393,7 @@
     "pink",
     "green",
     "dark",
-    "blue"
+    "yellow"
    ],
    "mt": [
     0,
@@ -29427,15 +29421,13 @@
    "hid": false,
    "mf": [
     "dark",
-    "neutral",
     "green",
-    "orange"
+    "purple"
    ],
    "mt": [
     0,
     1,
-    2,
-    3
+    2
    ]
   },
   "www.etsy.com/listing/4581348013/sugarplum-spruce": {
@@ -29515,7 +29507,7 @@
     "red",
     "dark",
     "green",
-    "neutral"
+    "pink"
    ],
    "mt": [
     0,
@@ -29708,14 +29700,12 @@
    "mf": [
     "pink",
     "red",
-    "neutral",
     "dark"
    ],
    "mt": [
     0,
     1,
-    2,
-    3
+    2
    ]
   },
   "www.etsy.com/listing/4568403187/day-dreamer-blue-and-green": {
@@ -29744,7 +29734,7 @@
    "mf": [
     "pink",
     "neutral",
-    "red",
+    "purple",
     "dark"
    ],
    "mt": [
@@ -29926,12 +29916,14 @@
    "mf": [
     "orange",
     "pink",
-    "neutral"
+    "neutral",
+    "dark"
    ],
    "mt": [
     0,
     1,
-    2
+    2,
+    3
    ]
   },
   "www.etsy.com/listing/4393333974/christmas-nativity": {
@@ -30060,11 +30052,11 @@
    "f": "m/2511.webp",
    "th": "m108p5d7002dc",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
-    "neutral",
     "dark",
-    "pink"
+    "pink",
+    "neutral"
    ],
    "mt": [
     0,
@@ -30167,18 +30159,8 @@
    "th": "m108pb82c3bc0",
    "rt": false,
    "hid": false,
-   "mf": [
-    "pink",
-    "dark",
-    "neutral",
-    "green"
-   ],
-   "mt": [
-    0,
-    1,
-    2,
-    3
-   ]
+   "mf": [],
+   "mt": []
   },
   "www.etsy.com/listing/4569347080/christmas-wreath": {
    "n": "Christmas Wreath",
@@ -30374,14 +30356,12 @@
    "mf": [
     "green",
     "blue",
-    "dark",
     "neutral"
    ],
    "mt": [
     0,
     1,
-    2,
-    3
+    2
    ]
   },
   "www.etsy.com/listing/4569362054/monogram-crest": {
@@ -30501,9 +30481,9 @@
    "hid": false,
    "mf": [
     "blue",
-    "dark",
     "pink",
-    "neutral"
+    "neutral",
+    "dark"
    ],
    "mt": [
     0,
@@ -30518,7 +30498,7 @@
    "f": "m/2541.webp",
    "th": "m108p1ddd69e4",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "dark",
     "pink",
@@ -30556,8 +30536,8 @@
    "mf": [
     "pink",
     "dark",
-    "neutral",
-    "blue"
+    "blue",
+    "neutral"
    ],
    "mt": [
     0,
@@ -30573,16 +30553,8 @@
    "th": "m108pc8c538eb",
    "rt": false,
    "hid": false,
-   "mf": [
-    "pink",
-    "green",
-    "dark"
-   ],
-   "mt": [
-    0,
-    1,
-    2
-   ]
+   "mf": [],
+   "mt": []
   },
   "www.etsy.com/listing/4551675967/wildflower-garden": {
    "n": "Wildflower Garden",
@@ -30592,10 +30564,10 @@
    "rt": false,
    "hid": false,
    "mf": [
-    "dark",
+    "green",
+    "pink",
     "yellow",
-    "blue",
-    "green"
+    "blue"
    ],
    "mt": [
     0,
@@ -30647,13 +30619,11 @@
    "hid": false,
    "mf": [
     "dark",
-    "neutral",
-    "pink"
+    "neutral"
    ],
    "mt": [
     0,
-    1,
-    2
+    1
    ]
   }
  },

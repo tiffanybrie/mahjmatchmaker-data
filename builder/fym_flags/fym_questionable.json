@@ -127,6 +127,24 @@
    "reason": "covered: tiles cover most of the pattern in an angled room shot (only brand image)",
    "photo": "assets/mats/v109/pcs-4579318475-fall-floral-garden.jpg",
    "added": "2026-10-30"
+  },
+  {
+   "key": "www.etsy.com/listing/4399720164/pink-and-orange",
+   "img": "m/2511.webp",
+   "name": "Pink and Orange",
+   "brand": "Betty June & Jeannette",
+   "reason": "angled shot on a kitchen counter with tiles; no flat image (other listing image is a table mockup) (v109 QA)",
+   "photo": "assets/mats/v109/bjj-4399720164-pink-and-orange.jpg",
+   "added": "2026-10-30"
+  },
+  {
+   "key": "www.etsy.com/listing/4532936856/pink-monogram-hydrangea",
+   "img": "m/2541.webp",
+   "name": "Pink Monogram Hydrangea",
+   "brand": "Piper Chase Studios",
+   "reason": "hands hold the mat on every edge in the only brand image; a crop without hands loses the floral border (v109 QA)",
+   "photo": "assets/mats/v109/pcs-4532936856-pink-monogram-hydrangea.jpg",
+   "added": "2026-10-30"
   }
  ]
 }

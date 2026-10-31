@@ -1482,6 +1482,18 @@ try:
         _y = ((_H >= 30) & (_H <= 68) & (_S >= .25) & (_V >= .35)).mean() * 100
         _k = [k for k, v in M.items() if v is m][0]
         if _y < 8 or _k not in _YV: _bad.append(f"{m['n']} ({_y:.1f}% saturated yellow{'' if _k in _YV else ', not checked by eye: config/fym-yellow-verified-oct31.json'})")
+    # v109 QA (Oct 31 eve): ALL visible mats, any position: a yellow share >= 15 must come from saturated yellow (>= 8%) or be by-eye listed
+    for _k, m in M.items():
+        if m.get('hid') or 'yellow' not in (m.get('mf') or []) or not m.get('f'): continue
+        _j = m['mf'].index('yellow'); _s = (m.get('sh') or [0] * len(m['mf']))[_j] if m.get('sh') else 0
+        if not _s or _s < 15 or _k in _YV: continue
+        _r = _mimg(m['f']) if m['f'].startswith('m/') else None
+        if not _r: continue
+        _i = _Im.open(_io.BytesIO(_r)).convert('RGB'); _w, _h = _i.size
+        _i = _i.crop((int(_w * .06), int(_h * .06), int(_w * .94), int(_h * .94))); _i.thumbnail((200, 200))
+        _a = np.asarray(_i.convert('HSV')).astype(float); _H = _a[..., 0] * 360 / 255; _S = _a[..., 1] / 255; _V = _a[..., 2] / 255
+        _y = ((_H >= 30) & (_H <= 68) & (_S >= .25) & (_V >= .35)).mean() * 100
+        if _y < 8: _bad.append(f"{m['n']} (yellow {_s}% but only {_y:.1f}% saturated yellow: cream/ivory? use 'neutral' or list in config/fym-yellow-verified-oct31.json)")
     if _bad: F.append(f"[120] yellow-primary mats whose 'yellow' is cream/ivory (use 'neutral'): {_bad}")
 except Exception as _e: F.append(f"[120] cream-vs-yellow check did not run: {_e}")
 # [116] Oct 30 v106 QA: a step-2 SEARCHED mat stays on top only while it passes the active brand / colour filters.
