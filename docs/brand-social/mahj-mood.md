@@ -1,6 +1,7 @@
 # Mahj Mood (@mahj_mood): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Oct 29: Holly Berry mat + Jade Luxe racks as a 'holiday tablescape without holiday tiles' (comment HOLIDAY, DfFn6QxMGJZ). Playing for Keeps Valentine's set preorder Fri Nov 6 (DfDkAJrMliW).
 - Oct 30: Jade Luxe racks LIVE (published 9:57am CT, $130, in stock: mahjmood.com/products/luxe-racks-jade-acrylic).
 - Oct 29-30: pushing Holly Berry Holiday mat + Jade racks as the 'no holiday tiles needed' holiday table, comment HOLIDAY (DfFn6QxMGJZ). Jade Luxe racks go live today Oct 30 10am CST (not listed at 9:15am CT). Valentine's PLAYING FOR KEEPS preorder Fri Nov 6, delivers Jan 2027 (DfDkAJrMliW).
 - Oct 29 2:15pm ET: 'Don't want holiday tiles but want a holiday tablescape?' reel (DfFn6QxMGJZ): Holly Berry Mat + Jade Racks (Jade Luxe drop Fri Oct 30 10am CST). Comment HOLIDAY to shop.

@@ -1,6 +1,7 @@
 # Oh My Mahjong (@ohmymahjong): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Oct 30-31: no launches. Halloween reels with Papaya Spritz ('a lot of Papaya Spritz', DfI7UGhyXt9; DfJ_-qbyP2f), The Mahjong Social at Alys Beach for Garden & Gun (DfHbPVcSXwJ), NYT best-seller celebration for Mastering American Mahjong (Oct 29, DfFWu0nEcGE).
 - Oct 29-30: NYT best-seller celebration for Mastering American Mahjong (DfFWu0nEcGE); The Mahjong Social at Alys Beach for Garden & Gun (DfHbPVcSXwJ). Moving sale still the main push (ends Sun Nov 1).
 - Oct 29 11:42am ET: NYT best-seller celebration carousel for the 'Mastering American Mahjong' book (DfFWu0nEcGE, 13 images, family/friends party). No product drop; Moving Sale still on (more $200 tile sets Fri Oct 30 11am ET).
 - Oct 29: 'Meet your new favorite reason to stay in' Oh My Rummi carousel (DfE2cNGmo_f), pushing their rummikub line (Cerulean/Heritage/Confetti/Clementine 2.0, all in stock, not new). Moving Sale runs through Sun Nov 1.

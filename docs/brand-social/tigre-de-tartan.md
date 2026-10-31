@@ -1,6 +1,7 @@
 # Tigre de Tartán (@tigre_de_tartan): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Oct 30 6:51pm + Oct 31 7:50am ET: House Tigers tiles RETURN Tue 11/3 4pm CT, 'back in an oyster finish' (DfIyweTsRnz, DfKFw-7srxS); styled with shell, snow, champagne, oyster themes; 'travels compactly but feels substantial'. Reels with licensed music (no media file).
 - Oct 29: Ditsy Christmas print 'makes tiles POP', available now; shown with antique bamboo-and-bone tiles and mahjpit.co confetti tiles (tagged) (DfFq3CVvnRl). Also a general 'spill-proof, lightweight mats + we sell tiles' reel (DfGN1SjhIIR).
 - Oct 29 2:42pm ET: 'Ditsy Christmas' mat print in a different colorway, 'available now on the site', shown with antique bamboo-and-bone tiles + mahjpit.co confetti (reel DfFq3CVvnRl).
 - Oct 28: personal 'Dollhouse Renovation' series kickoff (DfC7EaZvSmJ), no product. Estate Sale wooden tiles launched Oct 27 4pm CT.

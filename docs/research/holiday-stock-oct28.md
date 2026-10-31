@@ -56,7 +56,7 @@ Research for docs/MERRY-MAHJONG-BRIEF.md. Checked Oct 28 against live Shopify `/
 - Sunday **Festive Plaid** mat and Sunday **Rattan** mat (wfh): **BACK IN STOCK Oct 28 6:40pm ET** (store check; $89 / $79). They sold out Oct 21. Sunday **December 1994** tiles: both preorders are sold out, leftovers are expected late Nov to early Dec.
 - Britt Mills **Merrywood, Nutcracker and Winter Berry NEOPRENE** are sold out. The Nutcracker and Winter Berry **Leatherette** versions are in stock ($180).
 - Mahj Mood **Sleigh All Day** (sold out; Holly Berry is in stock). Mahj Squad **Candy Cane Pink Wonderland** (sold out). Mahjong Register **Holly Jolly Double-Sided Leatherette**: **BACK IN STOCK Oct 29 9:55am ET** ($125, store check); the Holly Jolly neoprene is in stock too.
-- Virora **Tinselle Emerald Green tiles** (sold out). HHM **Nativity tiles** (sold out, and hidden in FYM). HHM **Santa Baby racks** (sold out).
+- ~~Virora Tinselle Emerald Green tiles~~ BACK IN STOCK Oct 31 ~9:35am ET (partner watch; restock frames built). HHM **Nativity tiles** (sold out, and hidden in FYM). HHM **Santa Baby racks** (sold out).
 - B&B **21" wood rack set**: all variants sold out. Use 19"/20".
 - OMM **Dapper 2** (wfh): its product URL now returns **404**, so it may have been pulled. Logged in MATCH-INBOX. OMM Sweet Marie is retired.
 - TdT **Paige Spearin Après Mahj**: in stock but earns NO commission, so don't feature it (CLAUDE.md rule 6(4)).
@@ -90,7 +90,7 @@ AR's only Christmas TILE set is **Dear Santa** (preorder, ships end of Nov). I c
 | Holly Jolly Grinch Green | Bam! Let's Mahjong | $450 | IN STOCK | yes (3) | 4 |
 | Holly Jolly Sugarplum Pink | Bam! Let's Mahjong | $450 | IN STOCK | yes (10) | 19 |
 | Tinselle Ruby Red | Virora | $299 | PREORDER, expected delivery Nov 2026 | yes (2) | 26 |
-| Tinselle Emerald Green | Virora | $299 | **SOLD OUT** | yes (1) | 23 |
+| Tinselle Emerald Green | Virora | $299 | **IN STOCK** (restocked Oct 31 ~9:35am ET) | yes (1) | 23 |
 | Nivalee Glacier Blue | Virora | $299 | PREORDER, expected delivery Nov 2026 (cal: ships from Nov 15) | yes (7) | 8 |
 | Nivalee Emerald Green | Virora | $299 | PREORDER | no | 0 (catalog) |
 | Nutcracker Ballet | Mahj Squad | $250 | IN STOCK, "will ship next week" | yes (12) | 18 |

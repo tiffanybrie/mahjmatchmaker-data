@@ -1,6 +1,7 @@
 # Let's Mahj On (@letsmahjon): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Oct 30: Halloween flash sale 15% off $50+ code SPOOKY, 'clearing space for our upcoming launches' (DfHxTbPkeeY); 7 new tile sets aimed mid-Nov.
 - Oct 30: Halloween flash sale 15% off $50+, code SPOOKY, 'clearing space for our upcoming launches' (DfHxTbPkeeY). Oct 29: 7 new tile sets now mid-November (DfGDYhkFISK).
 - Oct 29 6:14pm ET: new lineup DELAYED: '7 new tile set designs' now aiming for mid-November, in time for holiday game nights/gifting; asks which set followers want (reel DfGDYhkFISK, #ComingSoon #HolidayLaunch). Sets still unnamed.
 - Oct 28: 10K giveaway winner (DfDQbBmykoH). Oct 27: asked followers about a 2027 'Let's Dance' disco tile set idea (black faces, clear backs, lime middle; DfAUoL7mxcV), concept only.

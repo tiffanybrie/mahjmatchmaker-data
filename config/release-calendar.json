@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-30",
-  "updatedBy": "partner watch Oct 30 1:30pm ET",
+  "updated": "2026-10-31",
+  "updatedBy": "partner watch Oct 31 9:30am ET",
   "rules": {
     "timing": {
       "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -596,7 +596,7 @@
       "brand": "Tigre de Tartán",
       "product": "Classic American Beechwood tiles (solid beechwood); House Tigers Oyster tiles",
       "type": "launch",
-      "window": "Beechwood: LIVE Oct 27 4pm CT; Oyster: coming soon (no date)",
+      "window": "Beechwood: LIVE Oct 27 4pm CT; House Tigers (incl. new oyster finish) return Tue Nov 3 4pm CT",
       "source": "TdT IG Oct 24 ('next Tuesday they will go live')",
       "sourceUrl": "https://www.instagram.com/reel/De4kvHDONLd/",
       "album": false,
@@ -604,7 +604,7 @@
       "priority": 3,
       "contentTiming": "No album. Launch-day story with code only if a fitting pairing; otherwise log.",
       "date": "2026-10-27T16:00-05:00",
-      "status": "Beechwood LIVE Oct 27 (site check 6:35pm ET, $325 available); Estate Sale mat LIVE ($175)"
+      "status": "Beechwood LIVE Oct 27 (site check 6:35pm ET, $325 available); Estate Sale mat LIVE ($175); Oct 30-31 IG: House Tigers tiles return Tue 11/3 4pm CT, also in an oyster finish (DfIyweTsRnz, DfKFw-7srxS)"
     },
     {
       "id": "virora-petalee",
@@ -1078,6 +1078,39 @@
       "affiliate": true,
       "priority": 3,
       "contentTiming": "Watch store; Deco Indigo restock triggers the Deco trio albums."
+    },
+    {
+      "id": "virora-tinselle-emerald-restock-oct31",
+      "brand": "Virora Mahjong",
+      "product": "Tinselle Emerald Green tiles (Christmas Collection I)",
+      "type": "restock",
+      "window": "LIVE Oct 31",
+      "windowStart": "2026-10-31",
+      "windowEnd": "2026-11-30",
+      "source": "restock watchlist (store check)",
+      "sourceUrl": "https://viroramahjong.com/products/tinselle-emerald-green",
+      "album": true,
+      "affiliate": true,
+      "priority": 1,
+      "contentTiming": "Holiday album set: restock story frames (assets/social/restock-tinselle-oct31/out) for Tiffany's review; never a feed post.",
+      "status": "LIVE Oct 31 ~9:35am ET ($299 available)"
+    },
+    {
+      "id": "tdt-house-tigers-return-nov3",
+      "brand": "Tigre de Tartán",
+      "product": "House Tigers tiles (return + new oyster finish)",
+      "type": "restock",
+      "window": "Tue Nov 3, 4pm CT",
+      "date": "2026-11-03T16:00-06:00",
+      "windowStart": "2026-11-03",
+      "windowEnd": "2026-11-30",
+      "source": "TdT IG Oct 30-31",
+      "sourceUrl": "https://www.instagram.com/reel/DfKFw-7srxS/",
+      "album": false,
+      "affiliate": true,
+      "priority": 3,
+      "contentTiming": "Not an album set. Check store Nov 3 after 4pm CT; no MAHJMATCH/#MahjMatch in any text naming TdT.",
+      "status": "coming Nov 3"
     }
   ],
   "sources": {
