@@ -1,6 +1,7 @@
 # Bam Bird Boutique (@bambirdboutique): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Oct 31: "Plaid is having its moment": favourite tiles paired with each new plaid mat (DfKYF0Bn650). Oct 30: teases restock + brand news, newsletter first (DfIlDoan_y8). Oct 30: Floating Game Table on sale (DfIRN6zAOcO).
 - Oct 30-31: restock/news teaser pushes newsletter sign-up ('before socials find out', DfIlDoan_y8); Floating Game Table on sale as a Christmas-list gift (DfIRN6zAOcO); tile sponsor at Gold Coast Mahjong Stockyards retreat (tickets close Nov 1, DfF3Iqan6BN). Deco Indigo still sold out Oct 31.
 - Oct 30: teaser 'lots of exciting news on restocks and Bam Bird announcements', newsletter hears before socials, comment NEWS (DfIlDoan_y8). Floating Game Table on sale as a Christmas gift (DfIRN6zAOcO); Panda 'employee of the month' humor reel (DfIIkg1pCt4).
 - Oct 29: tile sponsor for the goldcoastmahjong Stockyards retreat (tickets close Sun 11/1) (DfF3Iqan6BN); 'learning mahjong' humor reel.
