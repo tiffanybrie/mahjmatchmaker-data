@@ -161,5 +161,6 @@
     }
   ],
   "_note_oct27": "ShopMy product go-links are Rakuten/linksynergy deeplinks that are not exposed per item. Use the collection URL for ShopMy and the Etsy listing URL per mat. Match FYM Mahj & Moon mats to these by design name; Leopard American is a confirmed match for leopard-animal-print-american-mahjong-mat. IMAGE RULE (Tiffany): ShopMy product images are clean aerial flat mat photos only (no tabletop room shots). Set via edit > Image URL using the listing gallery photo URL.",
-  "_removed_oct27": "Leopard American, Floral Chevron, Pink Leopard, Chinoiserie Monkey, Retro Mid-Century, Orange Gingham: only tabletop/AI-looking photos, removed from the collection (Tiffany Oct 27 12:43am)."
+  "_removed_oct27": "Leopard American, Floral Chevron, Pink Leopard, Chinoiserie Monkey, Retro Mid-Century, Orange Gingham: only tabletop/AI-looking photos, removed from the collection (Tiffany Oct 27 12:43am).",
+  "_oct31": "Matches & Catalog: ShopMy says mahjandmoon.com links won't earn commission; only the Etsy shop (MahjandMoonCo) earns (6%). 207 Etsy mat listings collected in config/etsy-brands-oct31.json -> mahj_moon_etsy, not yet paired to FYM mats. One 0%-commission test pin was made for mahjandmoon.com/products/amalfi-soleil-mahjong-mat (go.shopmy.us/p-99591860) — don't use it."
 }

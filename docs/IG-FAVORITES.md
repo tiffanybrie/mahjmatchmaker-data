@@ -23,3 +23,10 @@ First pass: viroramahjongofficial. Second pass: macmillermahjong, theroyalmahjon
 - Excluded by instruction: Four Winds Social, Mahj House Rules, The Mahjong Line, Paige Spearin.
 
 Method note: the favorites menu only updates after a reload, so each add was confirmed by reloading the profile and reopening the Following menu.
+
+## Oct 31 (Matches & Catalog, non-partner brands brought in + this week's partners)
+- Followed + favorited (each confirmed after reload: menu shows "Remove from favorites"): bougiemahjong, hutchandnook, piperchasestudios.
+- Already followed; favorited now (confirmed): yolomahjong.
+- Already followed + favorited: nolijunemahjong.
+- Skipped (no verified handle on the brand's own site/shop page): Mahj & Moon, Tala Mahj, BettyJuneJeannette.
+- No challenge/captcha seen. Favorites count not re-counted; IG accepted every add.
