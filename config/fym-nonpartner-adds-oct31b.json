@@ -448,8 +448,8 @@
    "pa": false,
    "img": "assets/mats/v109/bjj-4375629976-away-in-a-manger.jpg",
    "hol": true,
-   "hid": false,
-   "reason": "",
+   "hid": true,
+   "reason": "angled flat-lay on a marble counter, marble on all sides; not croppable to the mat (v109 re-QA, Oct 31)",
    "photo_note": "Etsy listing image 1, cropped to the mat (grid box)"
   },
   {
@@ -1078,8 +1078,8 @@
    "pa": false,
    "img": "assets/mats/v109/pcs-4542517424-peony-garden.jpg",
    "hol": false,
-   "hid": false,
-   "reason": "",
+   "hid": true,
+   "reason": "a person's hair, torso and arms along the top edge in the only usable image (v109 re-QA, Oct 31)",
    "photo_note": "Etsy listing image 0, cropped to the mat (grid box)"
   },
   {
@@ -1273,8 +1273,8 @@
    "pa": false,
    "img": "assets/mats/v109/pcs-4553302450-pink-bow-stripe.jpg",
    "hol": true,
-   "hid": false,
-   "reason": "",
+   "hid": true,
+   "reason": "someone holds the mat: body at top, floor at bottom (v109 re-QA, Oct 31)",
    "photo_note": "Etsy listing image 0, cropped to the mat (grid box)"
   },
   {
@@ -1318,8 +1318,8 @@
    "pa": false,
    "img": "assets/mats/v109/pcs-4532934024-pink-monogram-stripe.jpg",
    "hol": false,
-   "hid": false,
-   "reason": "",
+   "hid": true,
+   "reason": "hands at the corners placing racks (v109 re-QA, Oct 31)",
    "photo_note": "Etsy listing image 0, cropped to the mat (grid box)"
   },
   {
@@ -1333,8 +1333,8 @@
    "pa": false,
    "img": "assets/mats/v109/pcs-4532898416-leopard-monogram.jpg",
    "hol": false,
-   "hid": false,
-   "reason": "",
+   "hid": true,
+   "reason": "hands at the corners placing racks (v109 re-QA, Oct 31)",
    "photo_note": "Etsy listing image 0, cropped to the mat (grid box)"
   }
  ],

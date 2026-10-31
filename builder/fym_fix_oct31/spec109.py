@@ -22,7 +22,13 @@ NB.update({  # v109 QA re-crops (Oct 31 eve): hands / person / room / table / ba
  'bjj9': (.06,.18,.76,.97), 'pcs30': (.22,.27,.84,.79), 'pcs32': (.25,.27,.75,.73), 'pcs33': (.25,.27,.75,.73), 'pcs25': (.24,.25,.77,.735),
  **{t: (.205,.275,.735,.785) for t in ('pcs0','pcs2','pcs3','pcs17','pcs18','pcs27','pcs28')}})
 XCUT = {'bjj5': .75, 'bjj18': .85, 'bjj35': .79, 'bjj50': .785, 'bjj53': .80, 'bjj44': .64, 'bjj45': .80, 'bjj55': .78, 'bjj58': .78, 'bjj59': .78}  # v109 QA: bag/tube beside the mat -> cut the auto box's right edge at this fraction of the image width
-HIDE = {'bjj61': 'angled shot on a kitchen counter with tiles; no flat image (other listing image is a table mockup) (v109 QA)', 'bjj51': 'brand watermark ("Betty June and Jeannette" script) runs across the only mat images', 'bjj56': 'brand watermark runs across the only mat images; mostly blank design',
+HIDE = {  # + v109 re-QA hides (Oct 31 late)
+ 'bjj34': 'angled flat-lay on a marble counter, marble on all sides; not croppable to the mat (v109 re-QA, Oct 31)',
+ 'pcs16': "a person's hair, torso and arms along the top edge in the only usable image (v109 re-QA, Oct 31)",
+ 'pcs29': 'someone holds the mat: body at top, floor at bottom (v109 re-QA, Oct 31)',
+ 'pcs32': 'hands at the corners placing racks (v109 re-QA, Oct 31)',
+ 'pcs33': 'hands at the corners placing racks (v109 re-QA, Oct 31)',
+'bjj61': 'angled shot on a kitchen counter with tiles; no flat image (other listing image is a table mockup) (v109 QA)', 'bjj51': 'brand watermark ("Betty June and Jeannette" script) runs across the only mat images', 'bjj56': 'brand watermark runs across the only mat images; mostly blank design',
         **{f'pcs{k}': v for k, v in dec.PCS_HIDE.items()}}
 def slug(s): return re.sub(r'[^a-z0-9]+', '-', s.lower()).strip('-')[:60]
 E = json.load(open(REPO + 'config/etsy-brands-oct31.json'))
