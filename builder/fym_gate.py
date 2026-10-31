@@ -1451,6 +1451,11 @@ try:
     _m = re.search(r'const mName=[^;]*;', UI)
     if not _m or 'retired' not in _m.group(0): F.append("[117] card MAT tag (mName) still prints '(retired)'")
     if "${esc(M[S.fav].n)}. Pick your view" in UI: F.append("[117] 'It's a match!' line still prints '(retired)'")
+    # v107 QA: the "Shop your match" rows and the "Text or email me this list" text printed "Goldie (retired)"
+    for _lbl, _pat in (("Shop your match list", r'class="shop"><h3>Shop your match.*?const nm=[^;]*;'), ("'Text or email me this list' text", r'function shopText\(\)\{.*?const nm=[^;]*;')):
+        _mm = re.search(_pat, UI, re.S)
+        if not _mm or 'retired' not in _mm.group(0).rsplit('const nm=', 1)[1]: F.append(f"[117] {_lbl} still prints '(retired)' in the item name")
+    if 'My mahjong match: ${s.name} + ${M[S.fav].n}\\n' in UI: F.append("[117] 'Text or email me this list' first line still prints '(retired)' in the mat name")
     if 'BMIN' in UI:
         if 'BMIN' in fn('codeLine'): F.append("[117] card image code line carries discount terms (rule 7: only 'Use code MAHJMATCH')")
         if "BMIN[b]?' \\u00b7 '" in UI: F.append("[117] brand dropdown option carries Noli June terms (Tiffany Oct 31: plain 'Noli June (N)')")

@@ -25,7 +25,13 @@ rep("${BLOGO[m]?`<b>${esc(m)}</b>`:''}", "${BLOGO[m]?`<b>${BNM[m]||esc(m)}</b>`:
 CSS = (".tgrid .blg .bli{margin-bottom:9px}.tgrid .blg .bli img.wm{max-width:80%;max-height:76%}"
        ".tgrid .blg b{line-height:1.22}.tgrid .blgrid.np .blg .blt{font-size:13px;line-height:1.25}"
        f":root{{--onmat-w:{ONMAT_W}}}"
-       ".cmp.aer .sbx,.deck.aer .sbx{top:30%}\n")  # aerial: lift the side X/heart so the 40% tile circle never covers the heart
+       ".cmp.aer .sbx,.deck.aer .sbx{top:30%}"  # aerial: lift the side X/heart so the 40% tile circle never covers the heart
+       # v107 QA (website 544px iframe, short decks): size + place the circle against the MAT (the photo box's shorter side, the mat
+       # is object-fit:contain), not the box width, so on short/wide decks it stays 40% of the mat, sits on the mat's bottom-right
+       # corner and never reaches the side heart. On a phone (square box) it is the same 40% she picked.
+       ".scard .ph:has(> .onmat){container-type:size}"
+       f".scard .ph > .onmat{{--s:min(100cqw,100cqh);width:calc(var(--s)*{float(ONMAT_W.rstrip('%'))/100:g});"
+       "right:calc((100cqw - var(--s))/2 + var(--s)*.03);bottom:calc((100cqh - var(--s))/2 + var(--s)*.03)}\n")
 i = h.rindex('</style></head>'); h = h[:i] + CSS + h[i:]
 # 2a. searched mat respects later filters
 rep("if(S.mfront&&S.mfset===S.set&&M[S.mfront]&&!S.seen[S.mfront])ids=[S.mfront,",
@@ -40,6 +46,10 @@ rep("${o.dc?`<a class=\"dc\" href=\"${esc(o.dc)}\" target=\"_blank\" rel=\"noope
 # 2d. '(retired)' out of the card MAT tag and the "It's a match!" line
 rep("const mName=(M[S.fav].dn||M[S.fav].n).replace(", "const mName=(M[S.fav].dn||M[S.fav].n).replace(/\\s*\\(retired\\)/i,'').replace(")
 rep("${esc(s.name)} + ${esc(M[S.fav].n)}. Pick your view", "${esc(s.name)} + ${esc(M[S.fav].n.replace(/\\s*\\(retired\\)/i,''))}. Pick your view")
+# 2e. (v107 QA) '(retired)' out of the "Shop your match" rows and the "Text or email me this list" text (the Retired button stays)
+rep("const nm=T[id]?set().name:R[id]?o.n:o.n;", "const nm=String(T[id]?set().name:o.n).replace(/\\s*\\(retired\\)/i,'')/*v107 no (retired) on the card screen*/;")
+rep("My mahjong match: ${s.name} + ${M[S.fav].n}\\n", "My mahjong match: ${s.name} + ${M[S.fav].n.replace(/\\s*\\(retired\\)/i,'')}\\n")
+rep("const nm=T[id]?s.name:R[id]?shortR(id):o.n;","const nm=String(T[id]?s.name:R[id]?shortR(id):o.n).replace(/\\s*\\(retired\\)/i,'')/*v107*/;")
 # 3. aerial inset width variable
 rep("width:27%;aspect-ratio:1", "width:var(--onmat-w,40%);aspect-ratio:1")
 rep('Version 1.9.1', 'Version 1.9.2', 2)
