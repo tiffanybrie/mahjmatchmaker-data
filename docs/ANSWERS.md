@@ -797,3 +797,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - 2026-10-31 11:34pm (Tiffany): Supabase Project URL = https://pykkotvkuqjzuhdrgdaw.supabase.co (config/fym-supabase.json). Waiting on the anon/public key.
 - 2026-10-31 11:35pm (Tiffany): Supabase publishable (public) key received → config/fym-supabase.json. Building accounts.
 - 2026-10-31 11:39pm (Tiffany, Main): "Start now, I WANT you to use up all of my limit" before the 10am reset. Running the overdue Chrome site-paste batch now (DESK priority 5) + Brownstone album rebuild in parallel.
+- 2026-10-31 11:41pm (Tiffany): work through the night without pause; use all leftover limit (renews 10am Nov 1). Go max.
