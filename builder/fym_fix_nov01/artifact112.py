@@ -16,7 +16,10 @@ NEW = [c for c in range(190, 218) if os.path.exists(f'{B}/mc/{c}.webp')]
 body, hdr = b'', {}
 for c in NEW:
     ab = open(f'{B}/mc/{c}.webp', 'rb').read(); n = struct.unpack('<I', ab[-4:])[0]; hh = json.loads(ab[-4 - n:-4])
-    for f, (a, l) in hh.items(): assert f not in hdr, f; hdr[f] = [len(body), l]; body += ab[a:a + l]
+    for f, (a, l) in hh.items():
+        assert f not in hdr, f
+        if f not in h: continue   # v112q: images nothing references (the 11 QA-skipped flattens) stay out of the pack
+        hdr[f] = [len(body), l]; body += ab[a:a + l]
 hj = json.dumps(hdr, separators=(',', ':')).encode()
 open(O + '/mc/190raw.webp', 'wb').write(body + hj + struct.pack('<I', len(hj)))
 # 256 MiB budget (live v111 = 251.43 MiB / 512 files): the pack is re-encoded per sub-image at q66 (from the raw build chunks, not

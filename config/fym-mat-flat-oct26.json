@@ -64,83 +64,6 @@
    "img": "assets/mats/v98-flat/my-fair-mahjong-peppermint-wishes.jpg",
    "how": "perspective warp from the 4 detected mat corners to a square (OpenCV getPerspectiveTransform), 3% inset"
   },
-  "missmahjong.com/canopy-mahjong-playing-mat": {
-   "name": "Canopy Palm",
-   "brand": "Miss Mahjong",
-   "action": "replace",
-   "img": "assets/mats/v98-flat/miss-mahjong-canopy-palm.jpg",
-   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
-  },
-  "missmahjong.com/oasis-mahjong-playing-mat": {
-   "name": "Oasis",
-   "brand": "Miss Mahjong",
-   "action": "replace",
-   "img": "assets/mats/v98-flat/miss-mahjong-oasis.jpg",
-   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
-  },
-  "missmahjong.com/papel-picado-mahjong-playing-mat": {
-   "name": "Papel Picado",
-   "brand": "Miss Mahjong",
-   "action": "replace",
-   "img": "assets/mats/v98-flat/miss-mahjong-papel-picado.jpg",
-   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
-  },
-  "missmahjong.com/toile-de-los-muertos": {
-   "name": "Toile de los Muertos",
-   "brand": "Miss Mahjong",
-   "action": "replace",
-   "img": "assets/mats/v98-flat/miss-mahjong-toile-de-los-muertos.jpg",
-   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
-  },
-  "missmahjong.com/gingham-americana-mahjong-playing-mat": {
-   "name": "Gingham - Americana",
-   "brand": "Miss Mahjong",
-   "action": "replace",
-   "img": "assets/mats/v98-flat/miss-mahjong-gingham-americana.jpg",
-   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
-  },
-  "missmahjong.com/after-party-mahjong-playing-mat": {
-   "name": "After Party",
-   "brand": "Miss Mahjong",
-   "action": "replace",
-   "img": "assets/mats/v98-flat/miss-mahjong-after-party.jpg",
-   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
-  },
-  "missmahjong.com/wild-west-mahjong-playing-mat": {
-   "name": "Wild West - Dolly",
-   "brand": "Miss Mahjong",
-   "action": "replace",
-   "img": "assets/mats/v98-flat/miss-mahjong-wild-west-dolly.jpg",
-   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
-  },
-  "missmahjong.com/cowgirl-gingham-mahjong-playing-mat": {
-   "name": "Gingham Cornflower",
-   "brand": "Miss Mahjong",
-   "action": "replace",
-   "img": "assets/mats/v98-flat/miss-mahjong-gingham-cornflower.jpg",
-   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
-  },
-  "www.letsmahj-on.com/signature-logo-mat?v=42014260985961": {
-   "name": "Signature Logo Mat – Bright Pink",
-   "brand": "Let's Mahj On",
-   "action": "replace",
-   "img": "assets/mats/v98-flat/let-s-mahj-on-signature-logo-mat-bright-pink.jpg",
-   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
-  },
-  "missmahjong.com/bandit-mahjong-playing-mat-poppy-red": {
-   "name": "Bandit - Poppy Red",
-   "brand": "Miss Mahjong",
-   "action": "replace",
-   "img": "assets/mats/v98-flat/miss-mahjong-bandit-poppy-red.jpg",
-   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
-  },
-  "missmahjong.com/bandit-mahjong-playing-mat": {
-   "name": "Bandit - Butter Yellow",
-   "brand": "Miss Mahjong",
-   "action": "replace",
-   "img": "assets/mats/v98-flat/miss-mahjong-bandit-butter-yellow.jpg",
-   "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
-  },
   "www.etsy.com/listing/4527676776/the-benjamin-mahjong-mat": {
    "name": "Benjamin",
    "brand": "Etsy",
@@ -251,6 +174,138 @@
    "name": "Wild West - Americana",
    "brand": "Miss Mahjong",
    "why": "white mat on a white page: the mat edge cannot be separated from the background"
+  },
+  "missmahjong.com/canopy-mahjong-playing-mat": {
+   "name": "Canopy Palm",
+   "brand": "Miss Mahjong",
+   "why": "QA Nov 1: flatten = close-up/partial (keep the v111 photo)",
+   "was": {
+    "name": "Canopy Palm",
+    "brand": "Miss Mahjong",
+    "action": "replace",
+    "img": "assets/mats/v98-flat/miss-mahjong-canopy-palm.jpg",
+    "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+   }
+  },
+  "missmahjong.com/oasis-mahjong-playing-mat": {
+   "name": "Oasis",
+   "brand": "Miss Mahjong",
+   "why": "QA Nov 1: flatten = close-up/partial (keep the v111 photo)",
+   "was": {
+    "name": "Oasis",
+    "brand": "Miss Mahjong",
+    "action": "replace",
+    "img": "assets/mats/v98-flat/miss-mahjong-oasis.jpg",
+    "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+   }
+  },
+  "missmahjong.com/papel-picado-mahjong-playing-mat": {
+   "name": "Papel Picado",
+   "brand": "Miss Mahjong",
+   "why": "QA Nov 1: flatten = close-up/partial (keep the v111 photo)",
+   "was": {
+    "name": "Papel Picado",
+    "brand": "Miss Mahjong",
+    "action": "replace",
+    "img": "assets/mats/v98-flat/miss-mahjong-papel-picado.jpg",
+    "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+   }
+  },
+  "missmahjong.com/toile-de-los-muertos": {
+   "name": "Toile de los Muertos",
+   "brand": "Miss Mahjong",
+   "why": "QA Nov 1: flatten = close-up/partial (keep the v111 photo)",
+   "was": {
+    "name": "Toile de los Muertos",
+    "brand": "Miss Mahjong",
+    "action": "replace",
+    "img": "assets/mats/v98-flat/miss-mahjong-toile-de-los-muertos.jpg",
+    "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+   }
+  },
+  "missmahjong.com/gingham-americana-mahjong-playing-mat": {
+   "name": "Gingham - Americana",
+   "brand": "Miss Mahjong",
+   "why": "QA Nov 1: flatten = close-up/partial (keep the v111 photo)",
+   "was": {
+    "name": "Gingham - Americana",
+    "brand": "Miss Mahjong",
+    "action": "replace",
+    "img": "assets/mats/v98-flat/miss-mahjong-gingham-americana.jpg",
+    "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+   }
+  },
+  "missmahjong.com/after-party-mahjong-playing-mat": {
+   "name": "After Party",
+   "brand": "Miss Mahjong",
+   "why": "QA Nov 1: flatten = close-up/partial (keep the v111 photo)",
+   "was": {
+    "name": "After Party",
+    "brand": "Miss Mahjong",
+    "action": "replace",
+    "img": "assets/mats/v98-flat/miss-mahjong-after-party.jpg",
+    "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+   }
+  },
+  "missmahjong.com/wild-west-mahjong-playing-mat": {
+   "name": "Wild West - Dolly",
+   "brand": "Miss Mahjong",
+   "why": "QA Nov 1: flatten = close-up/partial (keep the v111 photo)",
+   "was": {
+    "name": "Wild West - Dolly",
+    "brand": "Miss Mahjong",
+    "action": "replace",
+    "img": "assets/mats/v98-flat/miss-mahjong-wild-west-dolly.jpg",
+    "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+   }
+  },
+  "missmahjong.com/cowgirl-gingham-mahjong-playing-mat": {
+   "name": "Gingham Cornflower",
+   "brand": "Miss Mahjong",
+   "why": "QA Nov 1: flatten = close-up/partial (keep the v111 photo)",
+   "was": {
+    "name": "Gingham Cornflower",
+    "brand": "Miss Mahjong",
+    "action": "replace",
+    "img": "assets/mats/v98-flat/miss-mahjong-gingham-cornflower.jpg",
+    "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+   }
+  },
+  "www.letsmahj-on.com/signature-logo-mat?v=42014260985961": {
+   "name": "Signature Logo Mat – Bright Pink",
+   "brand": "Let's Mahj On",
+   "why": "QA Nov 1: flatten = close-up/partial (keep the v111 photo)",
+   "was": {
+    "name": "Signature Logo Mat – Bright Pink",
+    "brand": "Let's Mahj On",
+    "action": "replace",
+    "img": "assets/mats/v98-flat/let-s-mahj-on-signature-logo-mat-bright-pink.jpg",
+    "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+   }
+  },
+  "missmahjong.com/bandit-mahjong-playing-mat-poppy-red": {
+   "name": "Bandit - Poppy Red",
+   "brand": "Miss Mahjong",
+   "why": "QA Nov 1: flatten = close-up/partial (keep the v111 photo)",
+   "was": {
+    "name": "Bandit - Poppy Red",
+    "brand": "Miss Mahjong",
+    "action": "replace",
+    "img": "assets/mats/v98-flat/miss-mahjong-bandit-poppy-red.jpg",
+    "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+   }
+  },
+  "missmahjong.com/bandit-mahjong-playing-mat": {
+   "name": "Bandit - Butter Yellow",
+   "brand": "Miss Mahjong",
+   "why": "QA Nov 1: flatten = close-up/partial (keep the v111 photo)",
+   "was": {
+    "name": "Bandit - Butter Yellow",
+    "brand": "Miss Mahjong",
+    "action": "replace",
+    "img": "assets/mats/v98-flat/miss-mahjong-bandit-butter-yellow.jpg",
+    "how": "mat runs off the photo edge (no 4 corners): largest photo-aspect rectangle fully inside the mat"
+   }
   }
  }
 }

@@ -675,7 +675,7 @@ for k, r in _RR.items():
 if "<div class=\"s2ctl\">${VROW()}<div class=\"rfil mfil\">${filters('m')}</div>" not in UI or "role=\"listbox\"></div></div>`+filters('m')" in UI:
     F.append("[53] mat filter row is not right under the mat deck (step-2 controls box)")
 # [54] Oct 25 (Tiffany 20:07): the texted / emailed shop list has one block per piece with a blank line between
-if "${L.join('\\n\\n')}" not in UI or "${kind} \\u00b7 ${nm} by ${o.bn}\\n${o.u" not in UI:
+if "${L.join('\\n\\n')}" not in UI or ("${kind} \\u00b7 ${nm} by ${o.bn}\\n${o.u" not in UI and "${kind} \\u00b7 ${nm} by ${BDN(o.bn)}\\n${o.u" not in UI):  # v112q: brand shown via BDN (accent)
     F.append("[54] 'Text or email me this list' is not one block per piece with blank lines between")
 # [55] Oct 25 (Tiffany 20:02/20:08): the rack deck never locks after picking; a 3rd pick swaps out the older one
 if 'class="rlock"' in UI or "function deck(k){if(k==='r'&&S.rpick.length)return rpickView();" in UI or "const old=S.rpick.shift();" not in UI:
@@ -1599,6 +1599,26 @@ if '/*v112' in UI:
         for _id, _o in _col.items():
             if _o.get('oos') and f'{_kd}:{_id}' not in _out: F.append(f"[138] {_kd}:{_id} marked sold out but the stock check says in stock")
             if _o.get('rt') and not _o.get('hid') and f'{_kd}:{_id}' in _st['items'] and _st['items'][f'{_kd}:{_id}']['in']: F.append(f"[138] retired {_kd}:{_id} counted as in stock")
+if '/*v112q' in UI:
+    # [139] QA Nov 1: link-only brands (LINKONLY, Tigre de Tartán) never get the code pill or the ♥ (♥ = code works); partner headings
+    # say 'or through our link' when one is in the section; brand name shown with its accent; rack chips never empty the deck;
+    # the QA flatten skips keep their v111 photo (no w98)
+    _lo = re.search(r"const LINKONLY=(\{[^}]*\})", UI)
+    _lok = set(re.findall(r"'([^']+)':1", _lo.group(1))) if _lo else set()
+    if not _lo: F.append("[139] LINKONLY map missing")
+    for _o in list(D['mats'].values()) + list(D['racks'].values()) + list(D['tiles'].values()):
+        if 'tigredetartan.com' in str(_o.get('u', '')) and _o.get('bn') and _o['bn'] not in _lok: F.append(f"[139] link-only brand name {_o['bn']!r} not in LINKONLY"); break
+    for _a, _w in (("${BPA(m)?(LINKONLY[m]?'<em>Save through our link</em>':'<em>Code MAHJMATCH</em>'):''}", 'logo pill: link-only brands say Save through our link'),
+                   ("${BCODE[b]&&!LINKONLY[b]?'♥ ':''}", 'no ♥ before link-only brands'), ('SECPH(P.map(id=>M[id].bn))', 'shop-by-color mats heading'),
+                   ('SECPH(P.map(x=>x[0].maker))', 'shop-by-color tiles heading'), ("function BDN(x){return x==='Tigre de Tartan'?'Tigre de Tart\\u00e1n':x;}", 'accented display name'),
+                   ('RDOTN(x)>0', 'rack chips only when the deck has racks')):
+        if _a not in UI: F.append(f"[139] {_w} missing")
+    if "'<em>Code MAHJMATCH</em>'" in UI.replace("(LINKONLY[m]?'<em>Save through our link</em>':'<em>Code MAHJMATCH</em>')", ''): F.append("[139] a Code MAHJMATCH pill without the LINKONLY guard")
+    if re.search(r"BCODE\[b\]\?'♥ '", UI): F.append("[139] ♥ shown for every code brand incl. link-only")
+    if 'tick off' in UI: F.append("[139] 'tick off' wording (use 'check off')")
+    if "' · <b class=\"sob\">" in UI: F.append("[139] sold-out badge has a dangling ' · '")
+    for _k, _v in json.load(open(REPO + 'config/fym-mat-flat-oct26.json'))['skipped'].items():
+        if 'QA Nov 1' in _v.get('why', '') and _k in M and M[_k].get('w98'): F.append(f"[139] {_v['brand']} | {_v['name']}: QA said keep the v111 photo, but it is flattened")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))
