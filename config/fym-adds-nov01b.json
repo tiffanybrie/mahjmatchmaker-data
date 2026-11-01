@@ -603,8 +603,8 @@
    "pa": true,
    "img": "assets/mats/v113/lbb/bok-choy-chinoiserie-neoprene-mahjong-mat.jpg",
    "hol": false,
-   "hid": false,
-   "reason": "",
+   "hid": true,
+   "reason": "angled floor shot, no flat brand image (QA round 2 Nov 1)",
    "photo_note": "brand photo, center crop to the mat",
    "inbox": "Nov 1 4:50am (Tiffany: bring LBB in with a per-brand cap)"
   },
@@ -683,8 +683,8 @@
    "pa": true,
    "img": "assets/mats/v113/lbb/butterflies-in-the-park-neoprene-mahjong-mat.jpg",
    "hol": false,
-   "hid": false,
-   "reason": "",
+   "hid": true,
+   "reason": "angled floor shot, no flat brand image (QA round 2 Nov 1)",
    "photo_note": "brand photo, center crop to the mat",
    "inbox": "Nov 1 4:50am (Tiffany: bring LBB in with a per-brand cap)"
   },
@@ -1702,7 +1702,8 @@
    "reason": "",
    "photo_note": "brand flat render",
    "inbox": "Nov 1 4:50am (Tiffany: bring LBB in with a per-brand cap)",
-   "alt": "Also available with a border"
+   "alt": "Also available with a border",
+   "altu": "https://letsbebesties.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fold-lady-funny-mahjong-mat-with-border%3Fsca_ref%3D12515508.SUyXEjJsqV"
   },
   {
    "key": "letsbebesties.com/gallery-glow-neoprene-mahjong-mat",
@@ -2204,7 +2205,7 @@
    "hol": false,
    "hid": false,
    "reason": "",
-   "photo_note": "brand flat render",
+   "photo_note": "brand flat image #1 (QA round 2 Nov 1)",
    "inbox": "Nov 1 4:50am (Tiffany: bring LBB in with a per-brand cap)"
   },
   {

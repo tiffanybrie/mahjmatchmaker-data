@@ -23,6 +23,7 @@ for x in SPEC['mats']:
     if not o: continue
     if x.get('alt') and o.get('alt') != x['alt']: o['alt'] = x['alt']; n += 1
     if x.get('ncn') and not o.get('ncn'): o['ncn'] = 1; n += 1
+    if x.get('altu') and o.get('altu') != x['altu']: o['altu'] = x['altu']; n += 1   # QA r2: 'Also available …' links to the variant's own product
 h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]; open(P, 'w').write(h)
 # QA Nov 1: spec mats that are visible now (flat brand image found) leave the Questionable list; merged twins leave FYM records
 QP = REPO + 'builder/fym_flags/fym_questionable.json'; Q = json.load(open(QP)); vis = {x['key'] for x in SPEC['mats'] if not x['hid']}

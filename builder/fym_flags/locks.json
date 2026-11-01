@@ -31548,7 +31548,7 @@
    "f": "m/2652.webp",
    "th": "m108pb4449928",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "green",
     "dark",
@@ -31628,7 +31628,7 @@
    "f": "m/2657.webp",
    "th": "m108pe48f36ca",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "pink",
     "dark"
@@ -33128,16 +33128,12 @@
    "rt": false,
    "hid": false,
    "mf": [
-    "dark",
-    "pink",
-    "neutral",
-    "blue"
+    "yellow",
+    "pink"
    ],
    "mt": [
     0,
-    1,
-    2,
-    3
+    1
    ]
   },
   "letsbebesties.com/indigo-wings-neoprene-mahjong-mat": {
@@ -35673,6 +35669,19 @@
     2,
     3
    ]
+  },
+  "letsbebesties.com/tobacco-leaves-blue-neoprene-mahjong-mat": {
+   "hid": true
+  },
+  "letsbebesties.com/paint-feathers-neoprene-mahjong-mat": {
+   "hid": true
+  },
+  "letsbebesties.com/leatherette-tobacco-leaves": {
+   "hid": true
+  },
+  "letsbebesties.com/sky-blue-florals-mahjong-mat": {
+   "f": "m/2916.webp",
+   "th": "m113b68c8c17"
   }
  },
  "_changes": [

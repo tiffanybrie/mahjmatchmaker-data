@@ -1625,6 +1625,7 @@ if '/*v112q' in UI:
 # BCAP reorders so no brand gets more than 6 of the first 30 cards and never two in a row while another brand is available; her picks
 # exempt; brand view shows all. QA Nov 1: the mat-door tile deck is tAll() (picks + album + catalog), capped COMBINED.
 # [142] QA Nov 1: no search box returns hidden racks / mats, no result image with src 'undefined'.
+# [143] QA r2: a mouse click on a link inside the top swipe card (Dapper, Also available) opens a new tab, 390 + 1280.
 # Both run in Chromium on the page's own code: builder/fym_cap_check.js (every visible mat's tAll(), every set's matDeck() + rackDeck()).
 if 'function BCAP(' in UI or any(_m.get('add') == 'nov01-v113' for _m in M.values()):
     for _a, _w in (('function BCAP(ids,keep,bo)', 'BCAP function'), ('if(!f.brand)ids=BCAP(ids,f.her?herMat:NOK,id=>M[id].bn);', 'mat deck cap'),

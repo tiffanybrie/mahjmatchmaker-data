@@ -10,3 +10,5 @@ python3 $H/ui113.py "$D"
 python3 $H/answers113.py "$D"                            # Tiffany Nov 1 3:27pm: Estate Sale wfh, Queen Bee corner crop visible (tvc)
 python3 $H/pearl113.py "$D"                              # Tiffany Nov 1 3:43pm: Pearl rack finish chip + finish words in rack search
 python3 $H/ui113b.py "$D"                               # QA Nov 1 round 1: cap over album+catalog, hidden racks out of search, preview height + tour wait, finish row, Dapper in holiday decks
+python3 $H/photos113.py "$D"                            # QA round 2: Sky Blue Florals flat render; 3 angled Oct-16 LBB mats hidden
+python3 $H/ui113c.py "$D"                               # QA round 2: card links open with a mouse; Also available links to the variant

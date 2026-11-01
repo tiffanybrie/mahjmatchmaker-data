@@ -4027,8 +4027,8 @@
  "letsbebesties.com/bok-choy-chinoiserie-neoprene-mahjong-mat": {
   "name": "Bok Choy Chinoiserie",
   "brand": "Let's Be Besties",
-  "flag": "ok",
-  "note": "Nov 1 v113 add (Tiffany 4:50am): brand photo, center crop to the mat"
+  "flag": "questionable",
+  "note": "Nov 1 v113 add (Tiffany 4:50am): angled floor shot, no flat brand image (QA round 2 Nov 1)"
  },
  "letsbebesties.com/botanical-garden-neoprene-mahjong-mat": {
   "name": "Botanical Garden",
@@ -4057,8 +4057,8 @@
  "letsbebesties.com/butterflies-in-the-park-neoprene-mahjong-mat": {
   "name": "Butterflies in the Park",
   "brand": "Let's Be Besties",
-  "flag": "ok",
-  "note": "Nov 1 v113 add (Tiffany 4:50am): brand photo, center crop to the mat"
+  "flag": "questionable",
+  "note": "Nov 1 v113 add (Tiffany 4:50am): angled floor shot, no flat brand image (QA round 2 Nov 1)"
  },
  "letsbebesties.com/camellia-kaleidoscope-ohbon-studios-artist-mahjong-mat": {
   "name": "Camellia Kaleidoscope",
@@ -4622,7 +4622,7 @@
   "name": "Hummingbird Spring",
   "brand": "Let's Be Besties",
   "flag": "ok",
-  "note": "Nov 1 v113 add (Tiffany 4:50am): brand flat render"
+  "note": "Nov 1 v113 add (Tiffany 4:50am): brand flat image #1 (QA round 2 Nov 1)"
  },
  "letsbebesties.com/indigo-wings-neoprene-mahjong-mat": {
   "name": "Indigo Wings",
@@ -5523,5 +5523,29 @@
   "brand": "Let's Be Besties",
   "flag": "ok",
   "note": "Nov 1 v113 add (Tiffany 4:50am): brand flat render"
+ },
+ "letsbebesties.com/tobacco-leaves-blue-neoprene-mahjong-mat": {
+  "name": "Tobacco Leaves Blue",
+  "brand": "Let's Be Besties",
+  "flag": "questionable",
+  "note": "angled floor shot, no flat brand image (QA round 2 Nov 1)"
+ },
+ "letsbebesties.com/paint-feathers-neoprene-mahjong-mat": {
+  "name": "Paint Feathers",
+  "brand": "Let's Be Besties",
+  "flag": "questionable",
+  "note": "angled floor shot; the only other image is a close-up crop (QA round 2 Nov 1)"
+ },
+ "letsbebesties.com/leatherette-tobacco-leaves": {
+  "name": "Tobacco Leaves",
+  "brand": "Let's Be Besties",
+  "flag": "questionable",
+  "note": "angled floor shot; product no longer in the LBB store (QA round 2 Nov 1)"
+ },
+ "letsbebesties.com/sky-blue-florals-mahjong-mat": {
+  "name": "Sky Blue Florals",
+  "brand": "Let's Be Besties",
+  "flag": "ok",
+  "note": "QA round 2 Nov 1: the FYM photo was a 602x296 strip; replaced by the brand's flat render"
  }
 }

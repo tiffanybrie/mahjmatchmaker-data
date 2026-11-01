@@ -2,6 +2,7 @@
 //  [140] brand cap on the decks people actually swipe: mat-door tile deck tAll() for every visible mat, tiles-door mat deck matDeck()
 //        for every visible set, rack deck rackDeck() for every set (picks on + off): in the first 30 non-exempt cards no brand > 6
 //        (when >= 5 brands are available) and no avoidable back-to-back same brand. Exempt: her picks.
+//  [143] card links open on a mouse click (new tab), 390 + 1280.
 //  [142] search: #rsq / #msq never return hidden racks / mats, and no result image has src 'undefined'.
 // Usage: node fym_cap_check.js <build dir>  -> prints JSON {fail:[...]} ; exit 1 on failures
 const {chromium}=require('playwright');const http=require('http');const fs=require('fs');const path=require('path');
@@ -27,5 +28,13 @@ try{const p=await b.newPage({viewport:{width:390,height:844}});await p.route(/su
   fire('rsq','');fire('msq','');
   return {F:[...new Set(F)],n1,n2,nsets:VS.length};});
  fail.push(...out.F);
+ // [143] QA r2: a MOUSE click on a link inside the top swipe card opens it in a new tab (Dapper 'See the difference', 'Also available …')
+ for(const [w,h] of [[390,844],[1280,800]]){await p.setViewportSize({width:w,height:h});
+  for(const [want,sel] of [['dfq','a.dfq'],['altu','a.altl']]){
+   const ok=await p.evaluate(want=>{const id=Object.keys(M).find(k=>!M[k].hid&&(want==='dfq'?M[k].dfq:M[k].altu));if(!id)return 'none';S.door='tiles';S.peek=null;if(S.set==null)S.set=D.sets.findIndex(s=>VIS(s));S.f.m={fam:[],brand:'',her:false,multi:false};S.seen={};S.mfront=id;S.mfset=S.set;renderMats();const a=document.querySelector('#top-m '+(want==='dfq'?'a.dfq':'a.altl'));if(!a)return 'no link on card';a.scrollIntoView({block:'center'});return 'ok';},want);
+   if(ok==='none')continue;if(ok!=='ok'){fail.push(`[143] ${want} link: ${ok} (${w}px)`);continue;}
+   const bx=await p.locator('#top-m '+sel).first().boundingBox();if(!bx){fail.push(`[143] ${want} link not visible (${w}px)`);continue;}
+   try{const [pop]=await Promise.all([p.waitForEvent('popup',{timeout:6000}),p.mouse.click(bx.x+bx.width/2,bx.y+bx.height/2)]);await pop.close();}
+   catch(e){fail.push(`[143] mouse click on the card's ${want} link did not open a new tab (${w}px)`);}}}
 }catch(e){fail.push('[140] cap check did not run: '+String(e).slice(0,200));}
 console.log(JSON.stringify({fail,matDoorMats:out.n1,sets:out.n2}));await b.close();srv.close();process.exit(fail.length?1:0);});
