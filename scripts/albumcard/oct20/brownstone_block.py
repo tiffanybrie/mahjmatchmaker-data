@@ -42,5 +42,9 @@ for g in GONE:
 _M = '<section><h2>My Brownstone Bloom matches</h2>'
 assert out.count(_M) == 1 and 'mm3-guides' not in out
 out = out.replace(_M, GUIDE + _M).replace('Mahjong Row &amp; Co..', 'Mahjong Row &amp; Co.').replace('Mahjong Row & Co..', 'Mahjong Row & Co.')
+# Nov 1 (QA/live paste): the page is a duplicate of Jade, whose section background is navy (Jade's own block forced white
+# with #mmjadebg). Same white override here so the duplicated section never shows navy behind the album.
+BG = '<style id="mmbbbg">section:has(.mm3) .section-background{background:#fff!important}section:has(.mm3){background:#fff}</style>'
+if BG not in out: out = BG + out
 open(OUTF, 'w').write(out)
 print(len(re.findall(r'<figure class="mm3-c', out)), 'figures; missing links:', C.MISSING_LINKS)
