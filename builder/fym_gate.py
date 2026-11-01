@@ -966,7 +966,7 @@ if not _pre97:
         import unicodedata as _ud
         _nrm = re.search(r"const NRM=(x=>.*?\.toLowerCase\(\));", UI).group(1)
         if UI.count('const v=NRM(e.target.value.trim()),') < 4: F.append("[83] a search box still compares the typed text without folding accents")
-        for _need in ("const s=NRM(M[id].n+' '+(M[id].bn||''));", "const h=NRM(s.name+' '+s.maker);", "const s=NRM(R[id].n+' '+(R[id].bn||''));"):
+        for _need in ("const s=NRM(M[id].n+' '+(M[id].bn||''));", "const h=NRM(s.name+' '+s.maker);", "const s=NRM(R[id].n+' '+(R[id].bn||'')"):  # v113: rack haystack may append finish words (RFSYN)
             if _need not in UI: F.append(f"[83] search haystack not accent-folded: {_need[:40]}")
         _fold = lambda x: ''.join(c for c in _ud.normalize('NFD', x) if not _ud.combining(c)).lower()
         _cases = []
