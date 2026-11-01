@@ -149,9 +149,9 @@ bp = bp.crop(bp.split()[3].point(lambda v: 255 if v > 128 else 0).getbbox())
 tiles['oh-my-mahjong-papaya-spritz']['back'] = url(bp, 160, 80, keep_alpha=True)
 brands = sorted({x['bn'] for x in list(mats.values()) + list(racks.values()) + list(tiles.values())})
 logos = {b: url(from_img(D['logos'][b]), 200, 80, keep_alpha=True) for b in brands if b in D['logos'] and from_img(D['logos'][b])}
-def friendly(x): return int(round(x / 5) * 5) if x < 100 else int(round(x / 25) * 25)
+def friendly(x): return int(round(x / 5) * 5) if x < 100 else (int(round(x / 25) * 25) if x < 300 else int(round(x / 50) * 50))
 def ranges(vals):
-    v = sorted(vals); q = [v[int(len(v) * f)] for f in (.25, .5, .75)] if len(v) >= 8 else []
+    v = sorted(vals); q = [v[int(len(v) * f)] for f in (.2, .4, .6, .8)] if len(v) >= 8 else []
     return sorted(set(friendly(x) for x in q))
 allp = {'mat': [m['pc'] for m in mats.values() if m['pc']] + [a[1] for a in idx['mats'] if a[1]],
         'racks': [r['pc'] for r in racks.values() if r['pc']] + [a[1] for a in idx['racks'] if a[1]],
