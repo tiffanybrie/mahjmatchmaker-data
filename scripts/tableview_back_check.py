@@ -14,6 +14,12 @@ for slug, v in BACK.items():
     if not v.get('back') or not src: bad.append(f'{slug}: recorded back has no color or no source')
     if 'title' in src or 'tc' == src.strip(): bad.append(f'{slug}: back source is the title color')
     if v.get('type') == 'pattern' and not v.get('patch'): bad.append(f'{slug}: pattern back without a photo patch')
+    # Nov 1 5:12pm (Dear Santa drawn ivory from a COLOR-GROUP note while its photo clearly shows dark green backs):
+    # a back color must be MEASURED from a real back in a photo. Notes/groups/'her call' records never count on their own;
+    # the only exceptions are ivory-back sets Tiffany explicitly confirmed as ivory backs (listed here).
+    IVORY_OK = {'anders-ruff-brownstone-bloom', 'sunday-mahjong-hummingbird'}
+    if not src.startswith('back photo measured') and slug not in IVORY_OK:
+        bad.append(f'{slug}: back color not measured from a real back photo (source: {v.get("src")})')
 for slug, tl in D['tiles'].items():
     if tl.get('walls'):
         b = BACK.get(slug)

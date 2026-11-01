@@ -24,4 +24,9 @@ for x in SPEC['mats']:
     if x.get('alt') and o.get('alt') != x['alt']: o['alt'] = x['alt']; n += 1
     if x.get('ncn') and not o.get('ncn'): o['ncn'] = 1; n += 1
 h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]; open(P, 'w').write(h)
-print('adds113 post steps:', n)
+# QA Nov 1: spec mats that are visible now (flat brand image found) leave the Questionable list; merged twins leave FYM records
+QP = REPO + 'builder/fym_flags/fym_questionable.json'; Q = json.load(open(QP)); vis = {x['key'] for x in SPEC['mats'] if not x['hid']}
+skipk = {'letsbebesties.com/' + k for k, _ in SPEC.get('skipped', []) if 'merged' in _}
+q0 = len(Q['items']); Q['items'] = [it for it in Q['items'] if it['key'] not in vis and it['key'] not in skipk]
+if len(Q['items']) != q0: json.dump(Q, open(QP, 'w'), indent=1, ensure_ascii=False)
+print('adds113 post steps:', n, '| questionable removed', q0 - len(Q['items']))

@@ -156,8 +156,8 @@
   "sprite": "assets/table-view/src/omm-papaya-back-photo.png"
  },
  "dear-santa": {
-  "back": "#efe9dc",
-  "type": "ivory",
-  "src": "Tiffany (config/tile-back-colors-proposed.json: \"her call: ivory back\")"
+  "back": "#033c2a",
+  "type": "solid",
+  "src": "back photo measured (box inside one back, FYM tile photo); Tiffany Nov 1 5:12pm: dark green back. The old \"ivory\" came from a COLOR-GROUP note in config/tile-back-colors-proposed.json, not a back color."
  }
 }

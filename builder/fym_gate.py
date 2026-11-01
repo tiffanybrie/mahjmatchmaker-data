@@ -1619,34 +1619,23 @@ if '/*v112q' in UI:
     if "' · <b class=\"sob\">" in UI: F.append("[139] sold-out badge has a dangling ' · '")
     for _k, _v in json.load(open(REPO + 'config/fym-mat-flat-oct26.json'))['skipped'].items():
         if 'QA Nov 1' in _v.get('why', '') and _k in M and M[_k].get('w98'): F.append(f"[139] {_v['brand']} | {_v['name']}: QA said keep the v111 photo, but it is flattened")
-# [140] Tiffany Nov 1 4:50am: PER-BRAND CAP on colour-theory decks (Let's Be Besties brought in whole): BCAP reorders so no brand
-# gets more than 6 of the first 30 cards and never two in a row while another brand is available; her picks exempt; brand view
-# shows all. Static: BCAP in matDeck0 / setsForMat0 / rackDeck0. Dynamic: the page's own BCAP run in node on every visible set's
-# colour pool (cr + rank, no hid / rt), the first 30 checked.
+# [140] Tiffany Nov 1 4:50am: PER-BRAND CAP on the colour-theory decks people actually swipe (Let's Be Besties brought in whole):
+# BCAP reorders so no brand gets more than 6 of the first 30 cards and never two in a row while another brand is available; her picks
+# exempt; brand view shows all. QA Nov 1: the mat-door tile deck is tAll() (picks + album + catalog), capped COMBINED.
+# [142] QA Nov 1: no search box returns hidden racks / mats, no result image with src 'undefined'.
+# Both run in Chromium on the page's own code: builder/fym_cap_check.js (every visible mat's tAll(), every set's matDeck() + rackDeck()).
 if 'function BCAP(' in UI or any(_m.get('add') == 'nov01-v113' for _m in M.values()):
     for _a, _w in (('function BCAP(ids,keep,bo)', 'BCAP function'), ('if(!f.brand)ids=BCAP(ids,f.her?herMat:NOK,id=>M[id].bn);', 'mat deck cap'),
-                   ('alb:BCAP(alb,NOK,r=>r.s.maker),cat:BCAP(cat,NOK,r=>r.s.maker)', 'mat-door tile deck cap'),
-                   ('if(!f.brand)ids=BCAP(ids,r=>hr.includes(r),r=>R[r].bn);', 'rack deck cap')):
-        if _a not in UI: F.append(f"[140] brand cap: {_w} missing")
-    _m140 = re.search(r'const NOK=\(\)=>false;function BCAP\(ids,keep,bo\)\{.*?return \[\.\.\.out,\.\.\.pend\];\}', UI)
-    if _m140:
-        import subprocess as _sp140, tempfile as _tf140
-        _pools = {}
-        for _s in D['sets']:
-            if not vis(_s): continue
-            _r = [D['order'][i] for i in ((_s.get('cr') or []) + _s.get('rank', [])) if i < len(D['order'])]
-            _seen, _pl = set(), []
-            for _id in _r:
-                if _id in _seen or _id not in M or M[_id].get('hid') or M[_id].get('rt'): continue
-                _seen.add(_id); _pl.append(M[_id].get('bn') or '?')
-            _pools[_s['slug']] = _pl
-        _js = _m140.group(0) + ';const P=' + json.dumps(_pools) + ';const bad=[];for(const [k,v] of Object.entries(P)){const ids=v.map((b,i)=>i+"|"+b);const o=BCAP(ids,NOK,x=>x.split("|")[1]).slice(0,30);const c={};let prev=null,adj=0;for(const x of o){const b=x.split("|")[1];c[b]=(c[b]||0)+1;if(b===prev)adj++;prev=b;}const over=Object.entries(c).filter(e=>e[1]>6);const brands=new Set(v).size;if(over.length||(adj&&brands>6))bad.push(k+": "+JSON.stringify(over)+" adj "+adj);}console.log(JSON.stringify(bad));'
-        _tf = _tf140.NamedTemporaryFile('w', suffix='.js', delete=False); _tf.write(_js); _tf.close()
-        _o140 = _sp140.run(['node', _tf.name], capture_output=True, text=True, timeout=120); os.unlink(_tf.name)
-        try: _bad140 = json.loads(_o140.stdout.strip() or '["node failed: ' + _o140.stderr[:200].replace('"', "'") + '"]')
-        except Exception: _bad140 = ['node output unreadable']
-        if _bad140: F.append(f"[140] brand cap broken in {len(_bad140)} colour decks: " + '; '.join(_bad140[:5]))
-    else: F.append("[140] BCAP source not found")
+                   ('BCAP([...g.alb,...g.cat],NOK,r=>TB(r.s))', 'mat-door tile deck cap over album+catalog combined'),
+                   ('if(!f.brand)ids=BCAP(ids,r=>hr.includes(r),r=>R[r].bn);return ids;}', 'rack deck cap (last)'),
+                   ('if(!R[id]||R[id].hid)return false;', 'rack search skips hidden racks')):
+        if _a not in UI: F.append(f"[140] {_w} missing")
+    import subprocess as _sp140
+    _o140 = _sp140.run(['node', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fym_cap_check.js'), B], capture_output=True, text=True, timeout=900, cwd=REPO)
+    try: _r140 = json.loads(_o140.stdout.strip().splitlines()[-1])
+    except Exception: _r140 = {'fail': ['[140] cap check output unreadable: ' + (_o140.stderr or _o140.stdout)[-300:]]}
+    for _f in _r140['fail'][:12]: F.append(_f)
+    if len(_r140['fail']) > 12: F.append(f"[140]/[142] ... {len(_r140['fail']) - 12} more")
 # [141] Tiffany Nov 1 3:43pm: PEARL rack finish chip (both doors) + rack search matches finish words. Every rack tagged pearl
 # has a pearl / pearlescent / iridescent / opal / mother-of-pearl word in its name or an approved by-eye note.
 if any('pearl' in (_r.get('rf') or []) for _r in D['racks'].values()) or "pearl:'Pearl'" in UI:
@@ -1655,7 +1644,8 @@ if any('pearl' in (_r.get('rf') or []) for _r in D['racks'].values()) or "pearl:
         if 'pearl' in (_r.get('rf') or []) and not _pw.search(_r.get('n', '')) and _k not in _pc['by_eye']:
             F.append(f"[141] {_r.get('n')}: tagged Pearl without a pearl/opal/iridescent word or a by-eye note (config/fym-rack-pearl-nov01.json)")
         if _pw.search(_r.get('n', '')) and 'pearl' not in (_r.get('rf') or []): F.append(f"[141] {_r.get('n')}: name says pearl/opal/iridescent but no Pearl finish")
-    for _a, _w in (("['wood','tortoise','metallic','clear','pearl']", 'Pearl chip'), ("pearl:'Pearl'", 'Pearl chip label'),
+    for _a, _w in (("const FINS=['wood','walnut','tortoise','pearl','clear','lucite','metallic','white'];", 'finish row (Pearl chip)'), ("pearl:'Pearl'", 'Pearl chip label'),
+                   ('if(f.fin)ids=ids.filter(r=>RFIN(r).includes(f.fin));', 'finish ANDs with the colour'), ('data-finclear', 'finish row is clearable'),
                    ("(R[id].rf||[]).map(x=>RFSYN[x]||'').join(' ')", 'rack search matches finish words')):
         if _a not in UI: F.append(f"[141] {_w} missing")
 if W104:
