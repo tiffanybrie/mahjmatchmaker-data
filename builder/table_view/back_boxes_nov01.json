@@ -1,0 +1,199 @@
+{
+ "_about": "Nov 1 (Table View Sample fix, Tiffany 3:38pm): hand-picked box (x0,y0,x1,y1 as fractions of the set's FYM tile photo) inside ONE visible tile BACK, chosen by looking at gridded contact sheets. solid -> median color; pattern -> cropped texture patch for the walls. ivory sets = Tiffany's call (faces' ivory background measured).",
+ "solara": [
+  0.3,
+  0.52,
+  0.38,
+  0.6,
+  "solid-auto"
+ ],
+ "limoncello": [
+  0.53,
+  0.62,
+  0.6,
+  0.7,
+  "solid"
+ ],
+ "pippa": [
+  0.3,
+  0.25,
+  0.4,
+  0.35,
+  "solid"
+ ],
+ "sunset": [
+  0.82,
+  0.82,
+  0.9,
+  0.9,
+  "solid-auto"
+ ],
+ "amara": [
+  0.62,
+  0.42,
+  0.7,
+  0.5,
+  "solid"
+ ],
+ "tortoise": [
+  0.043,
+  0.42,
+  0.058,
+  0.5,
+  "pattern"
+ ],
+ "jade": [
+  0.2,
+  0.04,
+  0.3,
+  0.11,
+  "pattern"
+ ],
+ "la-fete": [
+  0.82,
+  0.22,
+  0.92,
+  0.3,
+  "solid"
+ ],
+ "glow-wild": [
+  0.1,
+  0.07,
+  0.26,
+  0.16,
+  "pattern"
+ ],
+ "drake": [
+  0.4,
+  0.4,
+  0.48,
+  0.48,
+  "solid"
+ ],
+ "lagoon": [
+  0.25,
+  0.55,
+  0.32,
+  0.65,
+  "solid"
+ ],
+ "coquette": [
+  0.87,
+  0.75,
+  0.96,
+  0.84,
+  "pattern"
+ ],
+ "heritage": [
+  0.71,
+  0.71,
+  0.79,
+  0.79,
+  "pattern"
+ ],
+ "gatsby": [
+  0.4,
+  0.4,
+  0.48,
+  0.5,
+  "solid"
+ ],
+ "willow": [
+  0.62,
+  0.38,
+  0.7,
+  0.46,
+  "solid-auto"
+ ],
+ "moonlight": [
+  0.3,
+  0.62,
+  0.4,
+  0.72,
+  "solid"
+ ],
+ "nantucket": [
+  0.1,
+  0.52,
+  0.2,
+  0.62,
+  "solid"
+ ],
+ "palm-royale": [
+  0.52,
+  0.48,
+  0.62,
+  0.6,
+  "pattern"
+ ],
+ "talulah": [
+  0.22,
+  0.44,
+  0.3,
+  0.5,
+  "pattern"
+ ],
+ "birdie": [
+  0.22,
+  0.7,
+  0.3,
+  0.78,
+  "solid"
+ ],
+ "sorbet": [
+  0.2,
+  0.68,
+  0.28,
+  0.76,
+  "solid-auto"
+ ],
+ "anders-ruff-brownstone-bloom": [
+  0.45,
+  0.55,
+  0.52,
+  0.62,
+  "ivory"
+ ],
+ "sunday-mahjong-hummingbird": [
+  0.42,
+  0.66,
+  0.52,
+  0.74,
+  "ivory"
+ ],
+ "sunday-mahjong-sunday": [
+  0.8,
+  0.22,
+  0.9,
+  0.3,
+  "solid"
+ ],
+ "malachite": [
+  0.54,
+  0.6,
+  0.6,
+  0.66,
+  "pattern"
+ ],
+ "emerald": [
+  0.3,
+  0.09,
+  0.42,
+  0.18,
+  "pattern"
+ ],
+ "seabreeze": [
+  0.02,
+  0.55,
+  0.12,
+  0.65,
+  "solid"
+ ],
+ "sunday-mahjong-nature-walk": [
+  0.28,
+  0.52,
+  0.36,
+  0.58,
+  "solid-auto"
+ ]
+}

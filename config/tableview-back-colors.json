@@ -1,0 +1,163 @@
+{
+ "_about": "Table view wall colors. Walls may ONLY use these (never the match-card title color). Built by builder/table_view/back_colors_nov01.py; checked by scripts/tableview_back_check.py. Sets not listed = back color not confirmed -> walls grayed.",
+ "solara": {
+  "back": "#e6887b",
+  "type": "solid",
+  "src": "back photo measured (dominant back color in the FYM tile photo, checked by eye)"
+ },
+ "limoncello": {
+  "back": "#9caf30",
+  "type": "solid",
+  "src": "back photo measured (box inside one back, FYM tile photo)"
+ },
+ "pippa": {
+  "back": "#ebcf3f",
+  "type": "solid",
+  "src": "back photo measured (box inside one back, FYM tile photo)"
+ },
+ "sunset": {
+  "back": "#ef9353",
+  "type": "solid",
+  "src": "back photo measured (dominant back color in the FYM tile photo, checked by eye)"
+ },
+ "amara": {
+  "back": "#cb357a",
+  "type": "solid",
+  "src": "back photo measured (box inside one back, FYM tile photo)"
+ },
+ "tortoise": {
+  "back": "#71453e",
+  "type": "pattern",
+  "src": "back photo measured (pattern patch cut from one back, FYM tile photo)",
+  "patch": "assets/table-view/backs/tortoise.webp"
+ },
+ "jade": {
+  "back": "#72a876",
+  "type": "pattern",
+  "src": "back photo measured (pattern patch cut from one back, FYM tile photo)",
+  "patch": "assets/table-view/backs/jade.webp"
+ },
+ "la-fete": {
+  "back": "#d5adb5",
+  "type": "solid",
+  "src": "back photo measured (box inside one back, FYM tile photo)"
+ },
+ "glow-wild": {
+  "back": "#66494a",
+  "type": "pattern",
+  "src": "back photo measured (pattern patch cut from one back, FYM tile photo)",
+  "patch": "assets/table-view/backs/glow-wild.webp"
+ },
+ "drake": {
+  "back": "#4e4d26",
+  "type": "solid",
+  "src": "back photo measured (box inside one back, FYM tile photo)"
+ },
+ "lagoon": {
+  "back": "#0184a0",
+  "type": "solid",
+  "src": "back photo measured (box inside one back, FYM tile photo)"
+ },
+ "coquette": {
+  "back": "#ca94a7",
+  "type": "pattern",
+  "src": "back photo measured (pattern patch cut from one back, FYM tile photo)",
+  "patch": "assets/table-view/backs/coquette.webp"
+ },
+ "heritage": {
+  "back": "#a5613d",
+  "type": "pattern",
+  "src": "back photo measured (pattern patch cut from one back, FYM tile photo)",
+  "patch": "assets/table-view/backs/heritage.webp"
+ },
+ "gatsby": {
+  "back": "#034a6a",
+  "type": "solid",
+  "src": "back photo measured (box inside one back, FYM tile photo)"
+ },
+ "willow": {
+  "back": "#a1ac7b",
+  "type": "solid",
+  "src": "back photo measured (dominant back color in the FYM tile photo, checked by eye)"
+ },
+ "moonlight": {
+  "back": "#699be7",
+  "type": "solid",
+  "src": "back photo measured (box inside one back, FYM tile photo)"
+ },
+ "nantucket": {
+  "back": "#d50234",
+  "type": "solid",
+  "src": "back photo measured (box inside one back, FYM tile photo)"
+ },
+ "palm-royale": {
+  "back": "#d0c69b",
+  "type": "pattern",
+  "src": "back photo measured (pattern patch cut from one back, FYM tile photo)",
+  "patch": "assets/table-view/backs/palm-royale.webp"
+ },
+ "talulah": {
+  "back": "#8f6452",
+  "type": "pattern",
+  "src": "back photo measured (pattern patch cut from one back, FYM tile photo)",
+  "patch": "assets/table-view/backs/talulah.webp"
+ },
+ "birdie": {
+  "back": "#afcdc6",
+  "type": "solid",
+  "src": "back photo measured (box inside one back, FYM tile photo)"
+ },
+ "sorbet": {
+  "back": "#eed097",
+  "type": "solid",
+  "src": "back photo measured (dominant back color in the FYM tile photo, checked by eye)"
+ },
+ "anders-ruff-brownstone-bloom": {
+  "back": "#e4e2d2",
+  "type": "ivory",
+  "src": "Tiffany (Nov 1: ivory backs matching the face background; color measured from the faces)"
+ },
+ "sunday-mahjong-hummingbird": {
+  "back": "#d8ccb6",
+  "type": "ivory",
+  "src": "Tiffany (Nov 1: ivory backs matching the face background; color measured from the faces)"
+ },
+ "sunday-mahjong-sunday": {
+  "back": "#bb9550",
+  "type": "solid",
+  "src": "back photo measured (box inside one back, FYM tile photo)"
+ },
+ "malachite": {
+  "back": "#3d4a3d",
+  "type": "pattern",
+  "src": "back photo measured (pattern patch cut from one back, FYM tile photo)",
+  "patch": "assets/table-view/backs/malachite.webp"
+ },
+ "emerald": {
+  "back": "#24b88c",
+  "type": "pattern",
+  "src": "back photo measured (pattern patch cut from one back, FYM tile photo)",
+  "patch": "assets/table-view/backs/emerald.webp"
+ },
+ "seabreeze": {
+  "back": "#2acbbc",
+  "type": "solid",
+  "src": "back photo measured (box inside one back, FYM tile photo)"
+ },
+ "sunday-mahjong-nature-walk": {
+  "back": "#531e23",
+  "type": "solid",
+  "src": "back photo measured (dominant back color in the FYM tile photo, checked by eye)"
+ },
+ "oh-my-mahjong-papaya-spritz": {
+  "back": "#ee790b",
+  "type": "solid",
+  "src": "back photo measured (assets/table-view/src/omm-papaya-back-photo.png)",
+  "sprite": "assets/table-view/src/omm-papaya-back-photo.png"
+ },
+ "dear-santa": {
+  "back": "#efe9dc",
+  "type": "ivory",
+  "src": "Tiffany (config/tile-back-colors-proposed.json: \"her call: ivory back\")"
+ }
+}
