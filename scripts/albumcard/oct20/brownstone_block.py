@@ -32,6 +32,12 @@ GUIDE = ('<section class="mm3-guides"><h2>Colors &amp; racks</h2><div class="mm3
          'Middle &amp; Main Hawksbill Heritage Tortoise and Bam Bird Boutique Olive racks pick up her browns and greens.</p></figcaption></figure>'
          '<style>.mm3-gg>.mm3-g:has(img[src*="tile-edit-moodboard"]){grid-column:1/-1}.mm3-gg>.mm3-g:has(img[src*="tile-edit-moodboard"]) figcaption{max-width:860px;margin:0 auto;padding:20px 26px 12px;font-size:16px}</style>'
          '</div></section>')
+# Oct 31 night: OMM no longer sells these 3 mats (product pages 404, not in ohmymahjong.com/products.json). Her cards stay in
+# her order; only the dead Shop button is left off. Flagged on DESK / MATCH-INBOX for her keep-or-drop call.
+GONE = {'Dapper', 'Vanderbilt', 'Cognac'}
+for g in GONE:
+    out, k = re.subn(r'<a class="mm3-btn" href="[^"]*"[^>]*>Shop the ' + re.escape(g) + r' Mat</a>', '', out)
+    assert k == 1, g
 _M = '<section><h2>My Brownstone Bloom matches</h2>'
 assert out.count(_M) == 1 and 'mm3-guides' not in out
 out = out.replace(_M, GUIDE + _M).replace('Mahjong Row &amp; Co..', 'Mahjong Row &amp; Co.').replace('Mahjong Row & Co..', 'Mahjong Row & Co.')

@@ -7,7 +7,7 @@ import os, sys, json, asyncio, subprocess, random, math, shutil
 R = '/home/claude/mahjmatchmaker-data'; HERE = f'{R}/assets/social/holiday-nov1/fym'
 CAP = '/dev/shm/fym-holiday/caps'; F = f'file://{R}/scripts/social/tileprofile/fonts/'
 MODE = sys.argv[1] if len(sys.argv) > 1 else 'full'
-FR = f'/dev/shm/fym-holiday/fr-{MODE}'; os.makedirs(FR, exist_ok=True)
+FR = f'/dev/shm/fym-holiday/fr-{MODE}' + ('-nobg' if os.environ.get('NOBG') == '1' else ''); os.makedirs(FR, exist_ok=True)
 FPS = 30; BPM = 160; B = 60 / BPM
 META = json.load(open(f'{CAP}/meta.json'))
 NAVY, PINK, BLUSH, GOLD, RED, PINE, SLATE = '#062a55', '#e0547f', '#f7b6c8', '#f2c46d', '#b3202a', '#1f5a3a', '#6f6280'
@@ -60,7 +60,10 @@ def bg(t0):
 def snow_front(t0):
     s = ''.join(f'<div class="snow" style="left:{(x * 1.7) % 1080:.0f}px;top:0;width:{d * .8:.1f}px;height:{d * .8:.1f}px;opacity:{o * .7:.2f};--dx:{-dx:.0f}px;animation-duration:{dur * .8:.2f}s;animation-delay:-{(t0 + ph * 1.3) % (dur * .8):.2f}s"></div>' for x, d, dur, ph, dx, o in FLAKES[:28])
     return f'<div style="position:absolute;inset:0;z-index:60;pointer-events:none">{s}</div>'
-def page(body, t0, front=True): return f'<!doctype html><html><head><meta charset=utf8>{CSS}</head><body><div class="w">{bg(t0)}{body}{snow_front(t0) if front else ""}</div></body></html>'
+NOBG = os.environ.get("NOBG") == "1"
+def page(body, t0, front=True):
+    if NOBG: return f'<!doctype html><html><head><meta charset=utf8>{CSS}</head><body><div class="w" style="background:{NAVY}">{body}</div></body></html>'
+    return f'<!doctype html><html><head><meta charset=utf8>{CSS}</head><body><div class="w">{bg(t0)}{body}{snow_front(t0) if front else ""}</div></body></html>'
 
 # ---- phone geometry (static frame; screenshots are 390-css-wide viewports at 3x)
 PW, PX, PY = 720, 180, 410
@@ -163,9 +166,9 @@ def scene_list(mode):
             cx, cy = sx(box[0] + box[2] / 2), sy(box[1] + box[3] / 2, crop)
             cover = f'<div style="position:absolute;left:{tx - 4:.0f}px;top:{ty - 4:.0f}px;width:{tw + 8:.0f}px;height:{tw + 8:.0f}px;background:#fbefe9;z-index:7"></div>'
             flyin = (f'<div style="position:absolute;left:{tx:.0f}px;top:{ty:.0f}px;width:{tw:.0f}px;height:{tw:.0f}px;z-index:8;transform-origin:0 0;--fx:{700 - tx:.0f}px;--fy:{-600:.0f}px;--fs:9;'
-                     f'animation:land {B * 1.3:.3f}s {B * .2:.3f}s cubic-bezier(.3,.1,.2,1) both"><img src="{u(cardkey + "-card.png")}" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%;border-radius:6px;box-shadow:0 6px 16px rgba(0,0,0,.35)"></div>')
+                     f'animation:land {B * 1.3:.3f}s {B * .2:.3f}s cubic-bezier(.3,.1,.2,1) both"><img src="file://{CAP}/dump/{cardkey}.png" style="width:100%;height:100%;object-fit:cover;border-radius:6px;box-shadow:0 6px 16px rgba(0,0,0,.35)"></div>')
             inner = phone(img, crop) + cover + flyin + ring(tx + tw / 2, ty + tw / 2, B * 1.5, PINK, 1)
-            body = ttl(title) + zcam(inner, crop, (cx, cy), 2.6, 980, B * 1.5, B * .9) + lab(label, 330, 1260, B * 2.4, 3, NAVY)
+            body = ttl(title) + zcam(inner, crop, (cx, cy), 2.05, 1000, B * 1.5, B * .9) + lab(label, 640, 1180, B * 2.4, 3, NAVY)
             return body, beats * B
         return f
     def pick(t0, beats=3):
@@ -203,7 +206,7 @@ def scene_list(mode):
             return body, beats * B
         return f
     def match(t0, beats=4):
-        tile = f'{CAP}/tile_full.jpg'; mat = f'{CAP}/s3-card.png'
+        tile = f'{CAP}/tile_full.jpg'; mat = f'{CAP}/dump/clara.png'
         circ = lambda src, x, d, pos: f'<div class="a" style="position:absolute;top:640px;left:{x}px;width:400px;height:400px;border-radius:50%;border:14px solid {GOLD};overflow:hidden;box-shadow:0 0 0 8px #fff,0 24px 60px rgba(0,0,0,.5);z-index:10;animation:pop .4s {d:.3f}s forwards"><img src="file://{src}" style="width:100%;height:100%;object-fit:cover;object-position:{pos}"></div>'
         body = (f'<div class="a" style="position:absolute;top:300px;left:0;right:0;text-align:center;z-index:30;font:italic 600 150px/1 PF;color:#fff;text-shadow:0 0 50px {PINK};animation:slam .45s 0s forwards">It&rsquo;s a match!</div>'
                 + circ(tile, 90, B * .6, '50% 50%') + circ(mat, 590, B * .9, '50% 35%')
@@ -223,9 +226,9 @@ def scene_list(mode):
         return body, beats * B
     def cta(t0, beats=6):
         body = (f'<img class="a" src="file://{R}/assets/brand/flame-heart.png" style="position:absolute;left:470px;top:300px;width:140px;z-index:10;animation:pop .4s 0s forwards">'
-                + f'<div class="a cap" style="position:absolute;left:30px;right:30px;top:520px;text-align:center;font-size:122px;z-index:10;animation:slam .45s {B * .5:.3f}s forwards">{FYM}</div>'
+                + f'<div class="a cap" style="position:absolute;left:30px;right:30px;top:500px;text-align:center;font-size:104px;white-space:nowrap;z-index:10;animation:slam .45s {B * .5:.3f}s forwards">{FYM}</div>'
                 + f'<div class="a" style="position:absolute;left:60px;right:60px;top:700px;text-align:center;font:italic 600 60px/1.25 PF;color:{GOLD};z-index:10;animation:up .4s {B * 1.5:.3f}s forwards">150+ holiday mats. Your tiles.<br>Racks to match.</div>'
-                + f'<div class="a" style="position:absolute;left:0;right:0;top:960px;text-align:center;z-index:10;animation:pop .4s {B * 2.5:.3f}s forwards"><span style="display:inline-block;background:{PINK};border:5px solid #fff;color:#fff;border-radius:999px;padding:26px 50px;font:400 64px Cap;box-shadow:0 20px 50px rgba(0,0,0,.4);white-space:nowrap">Shop now &middot; use code MAHJMATCH</span></div>'
+                + f'<div class="a" style="position:absolute;left:0;right:0;top:960px;text-align:center;z-index:10;animation:pop .4s {B * 2.5:.3f}s forwards"><span style="display:inline-block;background:{PINK};border:5px solid #fff;color:#fff;border-radius:999px;padding:24px 40px;font:400 54px Cap;box-shadow:0 20px 50px rgba(0,0,0,.4);white-space:nowrap">Shop now &middot; use code MAHJMATCH</span></div>'
                 + f'<div class="a" style="position:absolute;left:0;right:0;top:1150px;text-align:center;font:700 44px Bit;letter-spacing:.03em;z-index:10;animation:up .4s {B * 2.8:.3f}s forwards">Link in bio &middot; mahjmatchmaker.com</div>'
                 + sparks(B * .6, 540, 620, 16))
         return body, beats * B
@@ -262,12 +265,12 @@ def scene_list(mode):
         add('hook', lambda t0: hook(t0, 5), 5); add('dumpA', dumpA, 4)
         add('hol', chip('10-hol-before.png', '11-hol-after.png', META['holc'], 'Tap <em>Holiday</em>', 'only her holiday matches now', 4), 4)
         add('s0', lambda t0: swipe(0, 'yes', 'Swipe &hearts; or &#10005;', '&hearts; Clara&rsquo;s Dream Christmas &middot; Mahj Squad', t0, 3), 3)
-        add('l0', landing('su0', 'su0.png', 's0', 'Hearts land in<br>your <em>suitors</em>', '1 suitor', 3), 3)
+        add('l0', landing('su0', 'su0.png', 'claras-dream', 'Hearts land in<br>your <em>suitors</em>', '1 suitor', 3), 3)
         add('s1', lambda t0: swipe(1, 'no', 'Not the one? &#10005;', '&#10005; Yuletide &middot; Oh My Mahjong', t0, 3), 3)
         add('blue', chip('20-blue-before.png', '21b-blue-after.png', META['blue'], 'Add a color: <em>blue</em>', 'the deck changes', 4), 4)
         add('s2', lambda t0: swipe(2, 'yes', 'Love her? &hearts;', '&hearts; Pretty Little Christmas &middot; Peace Love Mahjong', t0, 3, rot_lab=-2), 3)
         add('s3', lambda t0: swipe(3, 'yes', '<em>Clara</em>, for a Nutcracker?', '&hearts; Clara &middot; Oh My Mahjong', t0, 3), 3)
-        add('l3', landing('su3', 'su3.png', 's3', '3 suitors.<br>One <em>holiday date</em>.', '3 suitors', 3), 3)
+        add('l3', landing('su3', 'su3.png', 'clara', '3 suitors.<br>One <em>holiday date</em>.', '3 suitors', 3), 3)
         add('pick', pick, 3); add('dumpB', dumpB, 4); add('rz', rzoom, 6); add('chips', rchips, 3)
         add('r0', rswipe(0, 'no', 'Wood? &#10005;', '&#10005; Peace Love Mahjong Oak', 3), 3)
         add('r1', rswipe(1, 'yes', 'Her magenta &hearts;', '&hearts; Bird &amp; Bamboo Magenta', 3), 3)
@@ -277,7 +280,7 @@ def scene_list(mode):
         add('hook', lambda t0: hook(t0, 4), 4)
         add('s1', lambda t0: swipe(1, 'no', 'Not the one? &#10005;', '&#10005; Yuletide &middot; Oh My Mahjong', t0, 3), 3)
         add('s3', lambda t0: swipe(3, 'yes', 'Love her? &hearts;', '&hearts; Clara &middot; Oh My Mahjong', t0, 3), 3)
-        add('l3', landing('su3', 'su3.png', 's3', 'Hearts land in<br>your <em>suitors</em>', '3 suitors', 3), 3)
+        add('l3', landing('su3', 'su3.png', 'clara', 'Hearts land in<br>your <em>suitors</em>', '3 suitors', 3), 3)
         add('match', match, 4); add('cta', lambda t0: cta(t0, 4), 4)
     return S
 
@@ -307,8 +310,8 @@ async def main():
         await b.close()
     with open(f'{FR}/all.txt', 'w') as f:
         for c in clips: f.write(f"file '{c}'\n")
-    out = f'{HERE}/fym-holiday-{"reel" if MODE == "full" else "hook"}-nutcracker.mp4'
+    out = f'{HERE}/fym-holiday-{"reel" if MODE == "full" else "hook"}-nutcracker.mp4' if not NOBG else f'/dev/shm/fym-holiday/nobg-{MODE}.mp4'
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', f'{FR}/all.txt', '-c:v', 'libx264', '-crf', '20', '-pix_fmt', 'yuv420p', '-r', '30', '-movflags', '+faststart', out], check=True)
-    json.dump({'bpm': BPM, 'beat_s': B, 'scenes': marks, 'total_s': round(t, 3)}, open(f'{HERE}/beats-{MODE}.json', 'w'), indent=1)
+    if not NOBG: json.dump({'bpm': BPM, 'beat_s': B, 'scenes': marks, 'total_s': round(t, 3)}, open(f'{HERE}/beats-{MODE}.json', 'w'), indent=1)
     print('out', out, 'secs', round(t, 2))
 asyncio.run(main())

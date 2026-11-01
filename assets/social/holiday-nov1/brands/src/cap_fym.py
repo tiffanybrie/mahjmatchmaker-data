@@ -30,14 +30,15 @@ with sync_playwright() as p:
     meta['deckn'] = pg.evaluate("()=>matDeck().length")
     TOP = "()=>{const e=document.querySelector('.deck.m .scard:not(.back)');const n=e.querySelector('b,strong,h3,.nm');return e.innerText.split('\\n').map(x=>x.trim()).filter(x=>x)}"
     meta['swipes'] = []; did_no = False
+    pg.evaluate("(ns)=>{Object.keys(M).forEach(k=>{if(ns.includes(M[k].n))S.seen[k]=1});renderAll()}", CFG.get('skip', [])); pg.wait_for_timeout(1200)
     for i in range(CFG.get('swipes', 5)):
         deck(pg); txt = pg.evaluate(TOP)
         key = pg.evaluate("()=>{const q=queue('m');return q&&q[0]}")
         mm = pg.evaluate("(k)=>M[k]?[M[k].n,M[k].bn]:null", key)
         kind = 'yes'
-        if not did_no and i >= 1 and mm and mm[1] != CFG['brand']: kind = 'no'; did_no = True
+        if mm and mm[0] == CFG.get('no'): kind = 'no'
         shot(pg, f's{i}-b'); card(pg, '.deck.m', f's{i}'); meta['swipes'].append([key, mm, kind])
-        pg.evaluate(f"()=>[...document.querySelectorAll('button.{kind}')].filter(b=>b.offsetParent)[0].click()"); pg.wait_for_timeout(1400)
+        pg.evaluate(f"()=>[...document.querySelectorAll('.deck.m button.{kind}')].filter(b=>b.offsetParent)[0].click()"); pg.wait_for_timeout(1400)
         deck(pg); shot(pg, f's{i}-a')
     print(meta['swipes'])
     deck(pg, '.deck.m', 250); pg.evaluate("window.scrollBy(0,360)"); pg.wait_for_timeout(1000); shot(pg, '30-suitors')
@@ -54,9 +55,9 @@ with sync_playwright() as p:
         if i < 2: pg.evaluate(f"()=>{{const b=({PL})();b&&b.click()}}"); pg.wait_for_timeout(900)
     for j, (rk, kind) in enumerate([(RX, 'no'), (RY[0], 'yes'), (RY[1], 'yes')]):
         shot(pg, f'r{j}-b'); card(pg, '.deck.r', f'r{j}')
-        pg.evaluate(f"()=>[...document.querySelectorAll('button.{kind}')].filter(b=>b.offsetParent).pop().click()"); pg.wait_for_timeout(1500)
+        pg.evaluate(f"()=>[...document.querySelectorAll('.deck.r button.{kind}')].filter(b=>b.offsetParent)[0].click()"); pg.wait_for_timeout(1500)
         shot(pg, f'r{j}-a')
-    pg.evaluate("()=>{S.rpick=S.rliked.slice(0,2);S.made=true;renderAll();}"); pg.wait_for_timeout(2500)
+    pg.evaluate("()=>{S.rpick=S.rliked.slice(-2);S.made=true;renderAll();}"); pg.wait_for_timeout(2500)
     pg.evaluate("()=>{const d=document.getElementById('s-card');window.scrollTo(0,d.getBoundingClientRect().top+scrollY-10)}"); pg.wait_for_timeout(3500)
     shot(pg, '60-card')
     pg.evaluate("window.scrollBy(0,640)"); pg.wait_for_timeout(1500); shot(pg, '61-card2')
