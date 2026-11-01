@@ -332,15 +332,16 @@
    "name": "Chinoiserie Cheer",
    "brand": "Betty June & Jeannette",
    "u": "https://go.shopmy.us/p-96124861",
-   "img": "assets/mats/v95-etsy/chinoiserie-cheer.jpg",
+   "img": "assets/mats/v95-etsy/chinoiserie-cheer-flat.jpg",
    "src": "https://i.etsystatic.com/55450313/r/il/b9d109/8331435512/il_1080xN.8331435512_k007.jpg",
    "crop": null,
    "hol": true,
-   "hid": true,
-   "reason": "Room shot: mat small and angled on a table; no flat photo available to us",
+   "hid": false,
+   "reason": "",
    "shopmy_id": 96124861,
    "sheet": "etsy-hol#14",
-   "note": "BJ&J Chinoiserie Cheer: room shot, mat small + angled. Check listing for a flat shot. Hidden Oct 20."
+   "note": "BJ&J Chinoiserie Cheer: room shot, mat small + angled. Check listing for a flat shot. Hidden Oct 20.",
+   "note_nov01": "flat photo from Tiffany (Oct 29), unhidden v112"
   },
   {
    "key": "www.etsy.com/listing/4571558388/the-gigi-katelyn-bruhn-and-bjj-collab",
