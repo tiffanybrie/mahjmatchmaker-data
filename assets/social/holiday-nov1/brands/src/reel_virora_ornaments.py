@@ -2,7 +2,7 @@
 Tiffany matched with it (FYM v1.10 match list, partners with a verified IG handle, in stock Nov 1 00:10 ET) drop onto the
 tree as ornaments, one per beat. Then two ornaments open into full match views (mat full, tiles inset).
 Primary song: Brenda Lee "Rockin' Around the Christmas Tree" (~142 BPM, beat = 0.4225 s)."""
-import sys, math
+import sys, math, os
 from PIL import Image, ImageDraw, ImageFilter
 from common import *
 
@@ -156,19 +156,26 @@ def end(t, te):
             b = BAUBLES[j].resize((96, 120), Image.LANCZOS); c.paste(b, (W // 2 - 4 * 112 + j * 112 + 8, 1050), b)
         d = ImageDraw.Draw(c)
     if te >= 3 * B:
-        pill(d, W // 2, 1215, 'Back in stock at Virora Mahjong', f_pb(36), (12, 70, 46), (255, 236, 190))
-        pill(d, W // 2, 1320, 'Code MAHJMATCH  ·  link in bio', f_pb(42), (255, 255, 255), PINK)
-        draw_center(d, 1440, 'mahjmatchmaker.com', f_cap(60), CREAMY)
+        pill(d, W // 2, 1200, 'Shop now · use code MAHJMATCH', f_pb(46), (255, 255, 255), PINK, padx=44, pady=22)
+        draw_center(d, 1330, 'Back in stock at Virora Mahjong · link in bio', font(FONT_POP_M, 32), (255, 236, 190))
+        draw_center(d, 1410, 'mahjmatchmaker.com', f_cap(56), CREAMY)
     return c
 
-# timeline in beats
-T_TREE, T_REV1, T_REV2, T_END = 4, 24, 28, 31
+# timeline in beats (v2, Tiffany 12:22am: app moments woven between the photo-dump splices)
+from app import App, Flow
+A = App(os.environ.get('VI_CAP', '/tmp/claude-0/-home-claude/f4da3022-6ec8-595a-90aa-668aea191899/scratchpad/cap/vi3'))
+FL = Flow(A, B, BG, {'tiles': 'Pick your tiles: Tinselle', 'mats': 'Swipe her Tinselle matches', 'suitors': 'Your suitors',
+                     'zoom': 'Zoom in on the mat  + + +', 'racks': 'Now swipe racks', 'card': "It's a match! Your match card",
+                     'shop': 'Shop it all in one list', 'rack_names': ['Peace Love Mahjong Oak', 'Bird & Bamboo Red', 'Bird & Bamboo Evergreen']}, sc=1.35)
+NSW = 5
+T_TREE = 4; T_APP1 = T_TREE + 9.5; T_APP2 = T_APP1 + FL.len1(NSW); T_END = T_APP2 + FL.len2(); NB = T_END + 4
+DUR = NB * B
 def draw(t):
     b = t / B
     if b < T_TREE: return hook(t)
-    if b < T_REV1: return tree_scene(t, b - T_TREE)
-    if b < T_REV2: return reveal(t, 0, t - T_REV1 * B, 4 * B)
-    if b < T_END: return reveal(t, 1, t - T_REV2 * B, 3 * B)
+    if b < T_APP1: return tree_scene(t, (b - T_TREE) * 2)
+    if b < T_APP2: return FL.f1(b - T_APP1, NSW)
+    if b < T_END: return FL.f2(b - T_APP2)
     return end(t, t - T_END * B)
 
 if __name__ == '__main__':
@@ -177,8 +184,9 @@ if __name__ == '__main__':
             draw(tt).save(f'/dev/shm/brand-reshare/vi_{tt:05.2f}.jpg', quality=88)
         sys.exit()
     R = Renderer('vi', DUR); R.run(draw)
-    cuts = [T_TREE * B + i * B for i in range(16)] + [T_REV1 * B, T_REV2 * B, T_END * B]
+    cuts = [x * B for x in [T_TREE, T_APP1, T_APP2, T_END]]
     click_track('/dev/shm/brand-reshare/vi_click.wav', DUR, BPM, marks=cuts)
     R.encode(f'{OUT}/virora-tinselle-tree-reel.mp4', '/dev/shm/brand-reshare/vi_click.wav', f'{OUT}/virora-tinselle-tree-reel-BEATTEST.mp4')
-    tree_scene(19.5 * B, 19.5 - 4 + 0.0).save(f'{OUT}/virora-tinselle-tree-cover.jpg', quality=90)
+    tree_scene(0, 17.0).save(f'{OUT}/virora-tinselle-tree-cover.jpg', quality=90)
     R.cleanup()
+    contact_sheet(f'{OUT}/virora-tinselle-tree-reel.mp4', f'{OUT}/virora-tinselle-tree-contact.jpg')

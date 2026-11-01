@@ -11,7 +11,8 @@ B = O.B; CAP = sys.argv[1] if len(sys.argv) > 1 and not sys.argv[1].startswith('
 A = App(CAP)
 FL = Flow(A, B, O.BG_RED, {'tiles': 'Pick your tiles: Dear Santa', 'mats': 'Swipe her Anders Ruff matches',
                           'suitors': 'Your suitors', 'zoom': 'Zoom in on the mat  + + +', 'racks': 'Now swipe racks',
-                          'card': "It's a match! Your match card", 'shop': 'Shop it all in one list'})
+                          'card': "It's a match! Your match card", 'shop': 'Shop it all in one list',
+                          'rack_names': ['Peace Love Mahjong Oak', 'Bird & Bamboo Red', 'Bird & Bamboo Evergreen']})
 NSW = 4
 # timeline in beats
 T_LOOKS, T_APP1 = 2, 9
@@ -49,8 +50,8 @@ def end(t, te):
         draw_center(d, y, ln, font(FONT_POP_B, 42), (255, 236, 224)); y += 62
     if te >= B:
         pill(d, W // 2, 1100, 'Shop now · use code MAHJMATCH', font(FONT_POP_B, 46), (255, 255, 255), PINK, padx=44, pady=22)
-        draw_center(d, 1240, 'Preorders open · mats ship early November', font(FONT_POP_M, 32), (255, 236, 224))
-        draw_center(d, 1330, 'mahjmatchmaker.com  ·  link in bio', font(FONT_CAP, 50), (255, 244, 230))
+        draw_center(d, 1240, 'Preorders open · mats ship early November · link in bio', font(FONT_POP_M, 30), (255, 236, 224))
+        draw_center(d, 1330, 'mahjmatchmaker.com', font(FONT_CAP, 54), (255, 244, 230))
     return c
 
 def draw(t):
@@ -59,7 +60,7 @@ def draw(t):
     if b < T_APP1:
         k = min(6, int(b - T_LOOKS)); return O.look(t, k, (b - T_LOOKS - k) * B)
     if b < T_GRID: return FL.f1(b - T_APP1, NSW)
-    if b < T_APP2: return O.grid(t, (b - T_GRID) * B * 2)
+    if b < T_APP2: return O.grid(t, (b - T_GRID) * B * 2.8)
     if b < T_END: return FL.f2(b - T_APP2)
     return end(t, (b - T_END) * B)
 

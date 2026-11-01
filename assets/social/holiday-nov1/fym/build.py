@@ -144,7 +144,7 @@ def scene_list(mode):
                 f'<div style="position:absolute;inset:0;border-radius:40px;border:14px solid {GOLD};box-shadow:0 0 0 8px #fff,0 30px 80px rgba(0,0,0,.55);overflow:hidden"><img src="file://{tile}" style="width:100%;height:100%;object-fit:cover"></div></div>'
                 + f'<div class="a cap" style="position:absolute;left:40px;right:40px;top:300px;text-align:center;z-index:80;font-size:90px;animation:slam .4s 0s forwards;text-shadow:0 8px 0 rgba(0,0,0,.25)">Nutcracker Ballet</div>'
                 + f'<div class="a" style="position:absolute;left:40px;right:40px;top:430px;text-align:center;z-index:80;font:italic 600 62px/1.15 PF;color:{GOLD};animation:slam .4s {B * 2:.3f}s forwards;text-shadow:0 6px 18px rgba(0,0,0,.5)">needs a date for the holidays</div>'
-                + lab('Mahj Squad tiles', 360, 1420, B * 3, -3, PINK)
+                + lab('Mahj Squad tiles', 343, 1420, B * 3, -3, PINK)
                 + curtains(B * 1.0, B * 2) + sparks(B * 1.7, 540, 1050, 14))
         return body, beats * B
     def search(t0, beats=3):

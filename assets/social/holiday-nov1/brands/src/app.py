@@ -110,19 +110,27 @@ def tap_ring(c, X, Y, p, col=PINK):
     d.ellipse((X - 26, Y - 26, X + 26, Y + 26), fill=(255, 255, 255), outline=col, width=6)
 
 
+MCAM = (585, 1138, 0.85)
+RCAM = (585, 1150, 0.92)
+def sticker(c, bb, cam, txt, kind, fy=0.10):
+    sx, sy, k = cam; bx, by, bw, bh = [v * 3 for v in bb]
+    Y = H / 2 + (by + bh * fy - sy) * k
+    d = ImageDraw.Draw(c); pill(d, W // 2, int(Y), txt, font(FONT_POP_B, 34), (255, 255, 255), NAVY if kind == 'yes' else SLATE, padx=30, pady=14)
+
 def smooth_cam(a, b, u):
     u = ease_in_out(u); return tuple(lerp(x, y, u) for x, y in zip(a, b))
 
 class Flow:
     """Two app moments, timed in beats. flow1: phone in -> tap the tile set -> swipe mats (fixed camera).
     flow2: suitors -> racks step + + zoom -> swipe racks -> the match card (output) -> shop list."""
-    def __init__(self, A, B, bg, labels):
-        self.A, self.B, self.bg, self.L = A, B, bg, labels
+    def __init__(self, A, B, bg, labels, sc=1.0):
+        self.A, self.B, self.bg, self.L, self.sc = A, B, bg, labels, sc
         self.kinds = [k for _, _, k in A.meta['swipes']]
     # ---- flow 1 ----
-    def len1(self, nsw): return 2 + 1.25 * nsw
+    def len1(self, nsw): return (2 + 1.25 * nsw) * self.sc
+    def len2(self): return self.LEN2 * self.sc
     def f1(self, tb, nsw):
-        A, B = self.A, self.B
+        A, B = self.A, self.B * self.sc; tb = tb / self.sc
         tx, ty = A.meta['tilebtn']; tx *= 3; ty *= 3
         if tb < 2:
             u = tb / 1.2
@@ -134,21 +142,23 @@ class Flow:
             caption(c, self.L['tiles'])
             return c
         tb -= 2; i = min(nsw - 1, int(tb // 1.25)); tt = (tb - i * 1.25) * B
-        cam = (585, 1330, 0.95)
+        cam = MCAM
         c = A.swipe_frame(self.bg, i, tt, cam, self.kinds[i], 'm', dur=min(0.62, 1.2 * B))
         caption(c, self.L['mats'])
+        nm, bn = A.meta['swipes'][i][1]
+        if tt < 0.26: sticker(c, A.meta[f's{i}'], cam, f'{nm} · {bn}', self.kinds[i])
         return c
     # ---- flow 2 ----
     LEN2 = 9.5
     def f2(self, tb):
-        A, B = self.A, self.B
+        A, B = self.A, self.B * self.sc; tb = tb / self.sc
         if tb < 1.5:   # suitors row (lower part of the screen)
-            cam = smooth_cam((585, 1700, 0.9), (585, 2050, 1.2), tb / 1.5)
+            cam = smooth_cam((585, 1950, 0.9), (585, 2230, 1.22), tb / 1.5)
             c = A.phone(self.bg, A.img('30-suitors'), cam); caption(c, self.L['suitors']); return c
         tb -= 1.5
         if tb < 2.0:   # racks step: + + zoom on the mat
             j = min(2, int(tb / 0.67)); u = (tb - j * 0.67) / 0.67
-            cam = (585, 1200, 0.98 + 0.08 * (j + u) / 3)
+            cam = (RCAM[0], RCAM[1], RCAM[2] + 0.08 * (j + u) / 3)
             c = A.phone(self.bg, A.img(f'40-rz{j}'), cam)
             rz = A.meta.get('rz')
             if rz and j < 2 and u > 0.55:
@@ -158,11 +168,13 @@ class Flow:
         tb -= 2.0
         if tb < 3.0:   # rack swipes ✕ ♥ ♥
             j = min(2, int(tb)); tt = (tb - j) * B
-            c = A.swipe_frame(self.bg, j, tt, (585, 1250, 0.98), ['no', 'yes', 'yes'][j], 'r', dur=min(0.6, 0.95 * B))
-            caption(c, self.L['racks']); return c
+            c = A.swipe_frame(self.bg, j, tt, RCAM, ['no', 'yes', 'yes'][j], 'r', dur=min(0.6, 0.95 * B))
+            caption(c, self.L['racks'])
+            if tt < 0.26: sticker(c, A.meta[f'r{j}'], RCAM, self.L['rack_names'][j], ['no', 'yes', 'yes'][j], fy=0.42)
+            return c
         tb -= 3.0
         if tb < 2.0:   # the output: her match card in the app
-            cam = smooth_cam((585, 1450, 0.85), (585, 1560, 1.12), tb / 2.0)
+            cam = smooth_cam((585, 1380, 0.85), (585, 1500, 1.1), tb / 2.0)
             c = A.phone(self.bg, A.img('60-card'), cam); caption(c, self.L['card'], bg=PINK, fg=(255, 255, 255)); return c
         tb -= 2.0
         cam = smooth_cam((585, 1050, 1.0), (585, 1000, 1.12), tb / 1.0)

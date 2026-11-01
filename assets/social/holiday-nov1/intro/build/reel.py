@@ -145,7 +145,7 @@ const $=id=>document.getElementById(id);
 // snow
 const SN=[];let sd=3;const rnd=()=>{sd=(sd*16807)%2147483647;return sd/2147483647};
 for(let i=0;i<90;i++){const e=document.createElement('i');const s=4+rnd()*12;e.style.width=e.style.height=s+'px';e.style.opacity=.35+rnd()*.55;$('snow').appendChild(e);SN.push([e,rnd()*1080,rnd()*H,40+rnd()*90,rnd()*6]);}
-function snow(t,on){$('snow').style.display=on?'block':'none';if(!on)return;for(const [e,x,y,v,p] of SN){e.style.left=(x+Math.sin(t*1.3+p)*30)+'px';e.style.top=((y+t*v)%(H+40)-20)+'px';}}
+function snow(t,on){if(window.NOSNOW)on=false;$('snow').style.display=on?'block':'none';if(!on)return;for(const [e,x,y,v,p] of SN){e.style.left=(x+Math.sin(t*1.3+p)*30)+'px';e.style.top=((y+t*v)%(H+40)-20)+'px';}}
 // burst mats
 C.BURST.forEach((u,i)=>{const im=document.createElement('img');im.src=u;im.className='burst';im.style.display='none';$('bursts').appendChild(im);});
 // odometer
@@ -164,7 +164,7 @@ function photo(item,k,zoomIn){const [u,name,brand,kind]=item;const ph=$('ph');if
   const lb=ph.querySelector('.lab');lb.style.transform=`translateY(${(1-eb(Math.min(1,k*3)))*60}px)`;lb.style.opacity=cl(k*4);}
 // app frames
 const F1=[[0,0],[1.0,0],[1.02,1],[1.9,1],[1.95,3],[2.35,40],[2.9,42],[2.95,43],[3.45,49],[3.5,50],[3.95,59],[4.0,60],[5.45,100],[5.5,101],[5.95,113],[6.4,113],[6.45,115],[7.4,119],[7.45,120],[7.95,125],[8.4,126],[9.4,150],[12,157]];
-const F2=[[0,0],[0.15,2],[1.6,27],[2.0,36],[2.2,36],[2.25,39],[2.75,47],[3.15,48],[3.25,48],[3.3,50],[3.4,51],[3.45,53],[3.9,59],[4.4,60],[4.6,61],[4.65,64],[5.15,72],[5.6,76],[5.7,77],[5.75,90],[6.2,113],[8,125]];
+const F2=[[0,0],[0.15,2],[1.6,27],[2.0,36],[2.2,36],[2.21,39],[2.75,47],[3.15,48],[3.25,48],[3.26,50],[3.4,51],[3.41,53],[3.9,59],[4.4,60],[4.6,61],[4.61,64],[5.15,72],[5.6,75],[5.61,77],[5.74,77],[5.75,113],[8,125]];
 function fidx(K,t){if(t<=K[0][0])return K[0][1];for(let i=1;i<K.length;i++){if(t<=K[i][0]){const [a,x]=K[i-1],[c,y]=K[i];return Math.round(x+(y-x)*(t-a)/(c-a));}}return K[K.length-1][1];}
 function frame(base,i){const u=base+String(i).padStart(5,'0')+'.jpg';const f=$('fr');if(f.dataset.u!==u){f.src=u;f.dataset.u=u;}}
 const SC=900/780; // frame px -> screen px
@@ -193,7 +193,7 @@ window.render=function(t){const B=b(t);
  }
  if(a===4){ const i=Math.floor(L/4), k=L-i*4;
   const D=[[152,'holiday mats','in Find Your Mat-ch™',C.QU,5,false],[13,'holiday tile sets','ready to swipe',C.TILES13,4,false],[45,'tile set albums','with holiday matches',C.COV,4,false]][i];
-  mosaic(D[3],D[4]); $('mos').style.transform=`scale(${1.08-0.06*L/12}) translateY(${-k*12}px)`;
+  mosaic(D[3],D[4]); $('mos').style.display=window.NOSNOW?'none':'grid'; $('mos').style.transform=`scale(${1.08-0.06*L/12}) translateY(${-k*12}px)`;
   setOdo(D[0],k/2,D[5]); const land=cl((k-2)/0.4); $('odo').style.transform=`scale(${1+0.08*Math.sin(Math.PI*land)})`;
   $('olab').textContent=D[1]; $('olab').style.opacity=cl((k-1.6)/0.4); $('olab').style.transform=`translateY(${(1-eo((k-1.6)/0.5))*40}px)`;
   $('osub').textContent=D[2]; $('osub').style.opacity=cl((k-2.2)/0.4);
@@ -203,7 +203,7 @@ window.render=function(t){const B=b(t);
   else { if(L<4.5){const i=Math.min(8,Math.floor(L*2));photo(C.DUMP2[i],(L*2-i));}
    else{photo(C.DUMP2[8],1);}
    // 400+ counter over photo dump from 4.5
-   const ph=$('ph');let cc=ph.querySelector('#c400');if(L>=4.5){if(!cc){cc=document.createElement('div');cc.id='c400';cc.style.cssText='position:absolute;inset:0;background:rgba(6,42,85,.78)';cc.innerHTML=`<div class="c cap" style="top:470px;font-size:300px;color:var(--cream)"><span id="n400">0</span><span style="color:var(--gold)">+</span></div><div class="c cap" style="top:800px;font-size:96px;color:#fff">holiday matches</div><div class="c" style="top:930px;font:italic 600 60px PF;color:var(--gold)">and counting</div>`;ph.appendChild(cc);}
+   const ph=$('ph');let cc=ph.querySelector('#c400');if(L>=4.5){if(!cc){cc=document.createElement('div');cc.id='c400';cc.style.cssText='position:absolute;inset:0;background:rgba(6,42,85,.9)';cc.innerHTML=`<div class="c cap" style="top:470px;font-size:300px;color:var(--cream)"><span id="n400">0</span><span style="color:var(--gold)">+</span></div><div class="c cap" style="top:800px;font-size:96px;color:#fff">holiday matches</div><div class="c" style="top:930px;font:italic 600 60px PF;color:var(--gold)">and counting</div>`;ph.appendChild(cc);}
      const k=eo((L-4.5)/1.4);cc.style.opacity=cl((L-4.5)/0.25);$('n400').textContent=Math.round(400*k);} else if(cc)cc.remove();
   }}
  if(id==='s4'){
@@ -228,7 +228,7 @@ window.render=function(t){const B=b(t);
    }
   } else { // racks a=40
    const fi=fidx(F2,L); frame(C.REC2,fi);
-   $('headt').innerHTML=L<1.9?'Zoom in on the mat.':(L<6?'Swipe racks to match.':'It&rsquo;s a match!');
+   $('headt').innerHTML=L<1.9?'Zoom in on the mat.':(L<5.75?'Swipe racks to match.':'It&rsquo;s a match!');
    if(L<5.7){ if(L<1.6){cam(1.0+0.3*eo(L/0.8),390,700,760);} else {const k=eo((L-1.6)/0.4); cam(1.3-0.38*k,390,700+363*k,760+170*k);}
      for(const t0 of [0.1,0.55,1.0]) if(L>=t0&&L<t0+0.5) o+=ring(706*SC,592*SC,(L-t0)/0.45);
      if(L>=0.2) l+=lab('Festive Plaid Premium<small>Sunday Mahjong · zoomed in</small>',40,880,'n',(L-0.2)/0.3,-3);
@@ -280,6 +280,7 @@ if __name__ == '__main__':
                 pg.evaluate("()=>Promise.all([...document.images].filter(i=>i.offsetParent&&!i.complete).map(i=>new Promise(r=>{i.onload=i.onerror=r})))")
                 pg.screenshot(path=f'{fd}/{n:04d}.jpg', type='jpeg', quality=92)
         else:
+            if mode == 'nosnow': pg.evaluate("window.NOSNOW=1")
             for tt in [float(x) for x in sys.argv[2:]]:
                 pg.evaluate(f"render({tt})"); pg.wait_for_timeout(400)
                 pg.screenshot(path=f'{out}/t{tt:05.2f}.jpg', type='jpeg', quality=88)
