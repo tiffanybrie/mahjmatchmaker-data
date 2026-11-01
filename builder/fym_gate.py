@@ -1647,6 +1647,17 @@ if 'function BCAP(' in UI or any(_m.get('add') == 'nov01-v113' for _m in M.value
         except Exception: _bad140 = ['node output unreadable']
         if _bad140: F.append(f"[140] brand cap broken in {len(_bad140)} colour decks: " + '; '.join(_bad140[:5]))
     else: F.append("[140] BCAP source not found")
+# [141] Tiffany Nov 1 3:43pm: PEARL rack finish chip (both doors) + rack search matches finish words. Every rack tagged pearl
+# has a pearl / pearlescent / iridescent / opal / mother-of-pearl word in its name or an approved by-eye note.
+if any('pearl' in (_r.get('rf') or []) for _r in D['racks'].values()) or "pearl:'Pearl'" in UI:
+    _pc = json.load(open(REPO + 'config/fym-rack-pearl-nov01.json')); _pw = re.compile(_pc['words'], re.I)
+    for _k, _r in D['racks'].items():
+        if 'pearl' in (_r.get('rf') or []) and not _pw.search(_r.get('n', '')) and _k not in _pc['by_eye']:
+            F.append(f"[141] {_r.get('n')}: tagged Pearl without a pearl/opal/iridescent word or a by-eye note (config/fym-rack-pearl-nov01.json)")
+        if _pw.search(_r.get('n', '')) and 'pearl' not in (_r.get('rf') or []): F.append(f"[141] {_r.get('n')}: name says pearl/opal/iridescent but no Pearl finish")
+    for _a, _w in (("['wood','tortoise','metallic','clear','pearl']", 'Pearl chip'), ("pearl:'Pearl'", 'Pearl chip label'),
+                   ("(R[id].rf||[]).map(x=>RFSYN[x]||'').join(' ')", 'rack search matches finish words')):
+        if _a not in UI: F.append(f"[141] {_w} missing")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))

@@ -1,0 +1,214 @@
+<title>Table View Sample</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Bitter:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<style>
+/* Layout: phone = one column (view switch, square table, controls, bottom sheet that leaves the table visible); desktop = table left, tools panel right, always open. The app keeps its own light look in both themes, like Find Your Mat-ch. */
+:root{
+  --bg:#faf3ea; --card:#ffffff; --ink:#2a2036; --mute:#76687f; --line:#ecd5df;
+  --navy:#054689; --pink:#c8325f; --pink2:#fbe3ec; --cream:#f6e9df; --gray:#b8adbf;
+  --display:"Caprasimo","Rockwell","Georgia",serif; --body:"Bitter","Georgia",serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#f3ebe1}}
+:root[data-theme="dark"]{--bg:#f3ebe1}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{overflow-x:hidden;max-width:100%}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 var(--body)}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--pink);outline-offset:2px}
+.app{max-width:1180px;margin:0 auto;padding-block:12px 120px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance}
+.kick{font:700 11px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--pink)}
+.note{font-size:12.5px;color:var(--mute);margin:4px 0 0;max-width:62ch}
+.layout{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin-top:12px}
+@media (min-width:960px){.layout{grid-template-columns:minmax(0,1fr) 400px;align-items:start}}
+.stagecol{min-width:0;display:flex;flex-direction:column;gap:10px}
+.views{display:flex;border:2px solid var(--navy);border-radius:999px;overflow:hidden;background:var(--card)}
+.views button{flex:1;border:0;background:none;padding:10px 6px;font:700 14px/1 var(--body);color:var(--navy);white-space:nowrap}
+.views button.on{background:var(--navy);color:#fff}
+.views .new{font:700 9px/1 var(--body);letter-spacing:.08em;color:var(--pink);margin-left:4px;vertical-align:2px}
+.views button.on .new{color:var(--pink2)}
+.stage{position:relative;width:100%;max-width:720px;aspect-ratio:1/1;border-radius:12px;overflow:hidden;background:#e9e1d8;touch-action:pan-y;-webkit-user-select:none;user-select:none;box-shadow:0 10px 30px -18px rgba(40,20,40,.5)}
+.stage.zoomed{touch-action:none}
+.zoomer{position:absolute;inset:0;transform-origin:0 0}
+.seatmark{position:absolute;border:3px solid var(--pink);border-radius:8px;pointer-events:none;box-shadow:0 0 0 2px #fff}
+.zoomer canvas{width:100%;height:100%;display:block}
+.faces{position:absolute;aspect-ratio:1;border-radius:50%;overflow:hidden;border:4px solid #fff;box-shadow:0 6px 16px rgba(0,0,0,.35);pointer-events:none;transition:all .25s ease}
+.faces img{width:100%;height:100%;object-fit:cover;display:block}
+.zbtns{position:absolute;left:10px;top:10px;display:flex;flex-direction:column;gap:6px}
+.zbtns button{width:34px;height:34px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:var(--navy);font:700 18px/1 var(--body);box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.banner{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(255,255,255,.95);border-radius:10px;padding:8px 10px;font-size:13px;color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.cap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13px;color:var(--mute)}
+.cap b{color:var(--ink);font-weight:600}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card)}
+.seg button{border:0;background:none;padding:8px 13px;font:600 13px/1 var(--body);color:var(--mute)}
+.seg button.on{background:var(--navy);color:#fff}
+.seg button:disabled{color:#cfc5d4;text-decoration:line-through;cursor:not-allowed}
+.btn{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 14px;font:600 13px/1 var(--body);color:var(--navy)}
+.btn.pri{background:var(--pink);border-color:var(--pink);color:#fff}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.actions .btn{padding:11px 6px;text-align:center}
+/* panel / sheet */
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.panel h2{font:400 18px/1.15 var(--display);color:var(--navy);margin:0}
+.panel section{display:flex;flex-direction:column;gap:10px;min-width:0}
+.lab{font:700 11px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.ctl{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.sw{position:relative;width:44px;height:26px;border-radius:999px;border:0;background:#d9cfdc;flex:none}
+.sw::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:left .15s}
+.sw[aria-checked="true"]{background:var(--pink)}
+.sw[aria-checked="true"]::after{left:21px}
+.sw:disabled{opacity:.4}
+.chips{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x proximity;padding:2px 28px 4px 2px;-webkit-mask-image:linear-gradient(90deg,#000 82%,transparent);mask-image:linear-gradient(90deg,#000 82%,transparent);scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;display:flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 11px 6px 6px;font:600 12.5px/1 var(--body);scroll-snap-align:start;white-space:nowrap}
+.chip i{width:20px;height:20px;border-radius:50%;border:1px solid rgba(0,0,0,.12);display:block}
+.chip.on{border-color:var(--navy);box-shadow:inset 0 0 0 1px var(--navy)}
+.tabs{display:flex;border-bottom:1px solid var(--line)}
+.tabs button{flex:1;border:0;background:none;padding:9px 4px;font:700 14px/1 var(--body);color:var(--mute);border-bottom:3px solid transparent}
+.tabs button.on{color:var(--navy);border-bottom-color:var(--navy)}
+.search{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:#fff}
+.search input{border:0;outline:0;flex:1;min-width:0;font:14px var(--body);background:none;color:var(--ink)}
+.dots{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.dot{width:24px;height:24px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line);padding:0}
+.dot.on{box-shadow:0 0 0 2px var(--navy)}
+.dot.all{width:auto;padding:0 10px;border-radius:999px;font:700 12px/20px var(--body);background:var(--card);color:var(--navy)}
+.toggles{display:flex;gap:14px;flex-wrap:wrap}
+.tg{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600}
+.brandwrap{position:relative}
+.pop{position:absolute;z-index:30;top:calc(100% + 6px);left:0;width:min(340px,calc(100vw - 64px));max-height:300px;overflow:auto;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.18);padding:8px}
+.pop .lg{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.pop .lg button{border:1px solid var(--line);background:#fff;border-radius:10px;padding:6px;display:flex;flex-direction:column;align-items:center;gap:4px;font:600 10.5px/1.15 var(--body);min-height:64px;position:relative}
+.pop .lg img{max-height:30px;max-width:90%;object-fit:contain}
+.pop .ls button{display:flex;width:100%;border:0;background:none;text-align:left;padding:8px 6px;border-radius:8px;font-size:14px}
+.pop .ls button:hover,.pop .lg button:hover{background:var(--pink2)}
+.heart{color:var(--pink)}
+.lg .heart{position:absolute;top:3px;right:5px;font-size:11px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:10px}
+.it{position:relative;border:0;background:none;padding:0;text-align:left;display:flex;flex-direction:column;gap:4px;min-width:0}
+.it .ph{position:relative;aspect-ratio:1;border-radius:10px;overflow:hidden;background:#f2ecf1;border:2px solid transparent}
+.it.rk .ph{aspect-ratio:2/1;display:flex;align-items:center;justify-content:center;background:#f6f1f4}
+.it.rk .ph img{object-fit:contain;padding:4px}
+.it .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.it.on .ph{border-color:var(--navy)}
+.it .nm{font:600 11.5px/1.2 var(--body);overflow-wrap:anywhere}
+.it .bn{font-size:10.5px;color:var(--mute);line-height:1.2}
+.it .pk{position:absolute;top:5px;right:5px;width:20px;height:20px;border-radius:50%;background:#fff;color:var(--pink);font-size:12px;display:grid;place-items:center;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.it .tag{position:absolute;left:5px;bottom:5px;right:5px;background:rgba(255,255,255,.94);border-radius:6px;font:700 9.5px/1.2 var(--body);padding:3px 5px;color:var(--ink)}
+.it.off .ph img{filter:grayscale(1) opacity(.45)}
+.it.off .nm,.it.off .bn{color:var(--gray)}
+.it .so{display:inline-block;margin-left:4px;padding:0 6px;border-radius:999px;background:var(--pink2);color:var(--pink);font:700 9.5px/1.6 var(--body)}
+.hint{font-size:12.5px;color:var(--mute);margin:0}
+.active{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px;background:var(--pink2);border-radius:10px;padding:7px 10px}
+.active b{font-weight:700}
+.clear{border:0;background:var(--pink);color:#fff;border-radius:999px;padding:4px 11px;font:700 12px/1.3 var(--body)}
+.fins{display:flex;gap:6px;flex-wrap:wrap}
+.fin{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 10px;font:600 12px/1 var(--body)}
+.fin.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.seats{display:flex;gap:6px;flex-wrap:wrap}
+.seat{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 10px;font:600 12.5px/1 var(--body);display:flex;gap:6px;align-items:center}
+.seat i{width:14px;height:14px;border-radius:50%;display:block;border:1px solid rgba(0,0,0,.15)}
+.seat.on{border-color:var(--pink);box-shadow:inset 0 0 0 1px var(--pink)}
+.empty{font-size:13px;color:var(--mute);padding:10px 0}
+/* phone sheet */
+@media (max-width:959px){
+  .panel{position:fixed;left:0;right:0;bottom:0;z-index:20;width:100%;border-radius:18px 18px 0 0;max-height:52vh;max-height:52dvh;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;transform:translateY(105%);transition:transform .25s ease;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-bottom:calc(16px + env(safe-area-inset-bottom,0px));box-shadow:0 -10px 30px rgba(0,0,0,.18)}
+  .panel.open{transform:none}
+  .panel .grab{display:flex;justify-content:space-between;align-items:center;position:sticky;top:-14px;background:var(--card);padding:6px 0;z-index:2;touch-action:none;cursor:grab}
+  .panel.dragging{transition:none}
+  .panel[data-mode="adjust"] #swapSec,.panel[data-mode="swap"] #adjSec{display:none}
+  .stage{max-width:none}
+}
+@media (min-width:960px){.stage{max-width:min(720px,calc(100vh - 230px));margin-inline:auto}.panel .grab{display:none}.mobileonly{display:none!important}.panel{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto}}
+.grab span{width:44px;height:5px;border-radius:9px;background:#d8ccd6;display:block;margin:0 auto}
+.x{border:0;background:none;font-size:22px;line-height:1;color:var(--mute);padding:4px 8px}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:999px;font-size:13.5px;z-index:60;max-width:calc(100vw - 32px);text-align:center}
+.modal{position:fixed;inset:0;z-index:50;background:rgba(30,20,40,.45);display:grid;place-items:center;padding:16px}
+.modal .box{background:#fff;border-radius:16px;max-width:440px;width:100%;padding:16px;display:flex;flex-direction:column;gap:12px;max-height:90vh;overflow:auto}
+.shop{display:flex;gap:12px;align-items:center}
+.shop img{width:64px;height:64px;border-radius:10px;object-fit:cover;background:#f3eef2;flex:none}
+.shop.rk img{object-fit:contain}
+.shop div{flex:1;min-width:0}
+.shop .nm{font-weight:600;line-height:1.25}
+.code{display:inline-block;margin-top:3px;font:700 10.5px/1.6 var(--body);padding:0 8px;border-radius:999px;background:var(--pink);color:#fff}
+.code.lo{background:var(--navy)}
+.code.nc{background:#ece6ee;color:var(--mute)}
+.shop a{font:700 13px var(--body);color:var(--navy);text-decoration:none;white-space:nowrap}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="app">
+  <header>
+    <div>
+      <div class="kick">Find Your Mat-ch · working sample</div>
+      <h1>Table view</h1>
+      <p class="note">Real tiles, mats and racks from the app, built as a top-down table. Pinch or use + to zoom. Your settings stay put when you swap pieces.</p>
+    </div>
+  </header>
+  <div class="layout">
+    <div class="stagecol">
+      <div class="views" role="tablist" aria-label="View">
+        <button id="v-close" data-v="close">Up close</button>
+        <button id="v-aerial" data-v="aerial">Aerial</button>
+        <button id="v-table" data-v="table" class="on">Table<span class="new">NEW</span></button>
+      </div>
+      <div class="stage" id="stage">
+        <div class="zoomer" id="zoomer"><canvas id="cv" aria-label="Table view of your match"></canvas></div>
+        <div class="faces" id="faces"><img id="facesImg" alt=""></div>
+        <div class="zbtns"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button><button id="zreset" aria-label="Reset zoom" style="font-size:12px">1×</button></div>
+        <div class="banner" id="banner" hidden></div>
+      </div>
+      <div class="cap" id="cap"></div>
+      <div class="row" id="tableRow">
+        <div class="seg" id="modeSeg"><button id="m-full" data-m="full" class="on">Full table</button><button id="m-corner" data-m="corner">Corner</button></div>
+        <button class="btn" id="flip" hidden>Flip ⇄</button>
+        <button class="btn mobileonly" id="openAdj">Adjust</button>
+      </div>
+      <div class="row mobileonly">
+        <button class="btn" id="openTiles">Swap tiles</button><button class="btn" id="openMat">Swap mat</button><button class="btn" id="openRacks">Swap racks</button>
+      </div>
+      <div class="actions"><button class="btn" id="save">Save to my match card</button><button class="btn" id="share">Share</button><button class="btn pri" id="shopBtn">Shop the look</button></div>
+    </div>
+
+    <aside class="panel" id="panel" data-mode="adjust" aria-label="Table tools">
+      <div class="grab"><span></span><button class="x" id="closeSheet" aria-label="Close">×</button></div>
+      <section id="adjSec">
+        <h2>Adjust the table</h2>
+        <div class="ctl"><span>Walls</span><button class="sw" id="walls" role="switch" aria-checked="true" aria-label="Walls"></button></div>
+        <p class="hint" id="wallsNote" hidden></p>
+        <div class="ctl"><span>Players</span><div class="seg" id="players"><button data-n="4" class="on">4</button><button data-n="3">3</button><button data-n="2">2</button></div></div>
+        <div><div class="lab" style="margin-bottom:8px">Racks: pick a seat, or tap a rack on the table, to mix colors</div><div class="seats" id="seats"></div></div>
+        <div><div class="lab" style="margin-bottom:8px" id="rackLab">Rack color · all seats</div><div class="chips" id="rackChips"></div></div>
+        <div class="ctl"><span>Tile faces</span><button class="sw" id="faceSw" role="switch" aria-checked="true" aria-label="Show tile faces"></button></div>
+        <div class="ctl"><span>Tile faces sit</span><div class="seg" id="facePos"><button data-p="center" class="on">Center</button><button data-p="corner">Corner</button></div></div>
+        <div class="row mobileonly"><button class="btn" data-open="tiles">Swap tiles</button><button class="btn" data-open="mat">Swap mat</button><button class="btn" data-open="racks">Swap racks</button></div>
+      </section>
+      <section id="swapSec">
+        <h2>Swap</h2>
+        <div class="tabs" role="tablist"><button data-t="tiles">Tiles</button><button data-t="mat" class="on">Mat</button><button data-t="racks">Racks</button></div>
+        <label class="search"><span aria-hidden="true">⌕</span><input id="q" type="search" placeholder="Search mats by name" autocomplete="off"></label>
+        <div class="row">
+          <div class="brandwrap"><button class="btn" id="brandBtn">All brands ▾</button><div class="pop" id="pop" hidden></div></div>
+        </div>
+        <div class="dots" id="dots"></div>
+        <div class="fins" id="fins" hidden></div>
+        <div class="toggles">
+          <label class="tg"><button class="sw" id="instock" role="switch" aria-checked="false" aria-label="In stock only"></button>In stock only</label>
+          <label class="tg"><button class="sw" id="picks" role="switch" aria-checked="false" aria-label="Tiffany's picks"></button>Tiffany’s picks</label>
+        </div>
+        <div class="active" id="active" hidden></div>
+        <p class="hint" id="swapHint"></p>
+        <div class="grid" id="grid"></div>
+      </section>
+    </aside>
+  </div>
+</div>
+<div class="toast" id="toast" hidden></div>
+<div class="modal" id="modal" hidden><div class="box" id="mbox"></div></div>
+
