@@ -10,7 +10,8 @@ SHA = sys.argv[1]; FOLDER = sys.argv[2] if len(sys.argv) > 2 else 'brownstone-bl
 m = json.load(open(C.R + f'assets/cards/{FOLDER}/manifest.json'))
 for v in json.load(open(C.R + 'config/fym-mats-snapshot.json'))['mats'].values():
     if v.get('pa') and not v.get('nc'): C.PARTNERS.add(v['bn'])
-OUTF = C.R + 'site/livepatch/brownstone-bloom-oct20/brownstone-bloom-codeblock.html'
+C.U.setdefault('Bam Bird Boutique Olive', 'https://www.bambirdboutique.com/products/wooden-mahjong-rack-pusher-set?variant=53195340972341&sca_ref=10069575.cf1ZUJEgbaOpCDgy')  # Olive Green variant (sold out Oct 31; sold-out items stay)
+OUTF = C.R +'site/livepatch/brownstone-bloom-oct20/brownstone-bloom-codeblock.html'
 _old = open(OUTF).read()
 ST = {}
 for _c in m['cards']:
