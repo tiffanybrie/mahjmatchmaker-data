@@ -65,10 +65,10 @@ function proc(card){const x=ctx(card);if(!x.mat||!x.s||!M[x.mat])return;const im
   if(!TVD.backs[x.s.slug]&&TV.walls&&!card.querySelector('.tvna'))note(card,'Walls off: back color not confirmed yet.'),card.classList.remove('tvoff')}
 /* ---------- table bar + rack picker ---------- */
 function bar(){const st=D.sets[S.set];if(!st)return '';const mat=S.fav||S.dmat;const r=pickRack(st,mat||(document.querySelector('#top-m')||{}).dataset?.id);
-  return `<div class="tvbar"><div class="tvrow"><b>Table</b><label><input type="checkbox" data-tvw ${TV.walls?'checked':''}> Walls</label>
+  return `<div class="tvbar"><div class="tvrow"><b>Table</b><span class="tvl">racks:</span><b class="tvrn">${r?esc(R[r].n):'none yet'}</b><button type="button" class="tvchg" data-tvrs>Swap racks ›</button>${TV.rack?'<button type="button" class="tvauto" data-tvauto>Use Tiffany’s pick</button>':''}</div>
+   <div class="tvrow"><label><input type="checkbox" data-tvw ${TV.walls?'checked':''}> Walls</label>
    <span class="tvseg" data-tvp>${[4,3,2].map(n=>`<button type="button" data-n="${n}" class="${TV.players===n?'on':''}">${n}</button>`).join('')}</span><span class="tvl">players</span></div>
    <div class="tvrow"><span class="tvl">Tile faces</span><span class="tvseg" data-tvf>${[['center','Center'],['corner','Corner'],['off','Off']].map(([v,l])=>`<button type="button" data-v="${v}" class="${TV.faces===v?'on':''}">${l}</button>`).join('')}</span></div>
-   <div class="tvrow"><span class="tvl">Racks</span><b class="tvrn">${r?esc(R[r].n):'none yet'}</b><button type="button" class="tvchg" data-tvrs>Swap racks ›</button>${TV.rack?'<button type="button" class="tvauto" data-tvauto>Use Tiffany’s pick</button>':''}</div>
    <p class="tvhint">Table is new. Up close and Aerial work just like today. Gray cards aren’t available in Table view yet.</p></div>`}
 function addBars(){for(const id of ['s-mats','s-tiles','s-racks']){const el=document.getElementById(id);if(!el)continue;const dk=el.querySelector('.deck');const ex=el.querySelector('.tvbar');
   const html=bar();if(!dk||!html){if(ex)ex.remove();continue}if(ex){if(ex.dataset.h!==html){ex.outerHTML=html;const nb=el.querySelector('.tvbar');if(nb)nb.dataset.h=html}continue}
@@ -111,5 +111,5 @@ function pass(force){if(busy)return;busy=true;try{const on=S.mode==='table';docu
   if(on){if(force)document.querySelectorAll('.scard[data-tvk]').forEach(c=>delete c.dataset.tvk);document.querySelectorAll('.scard').forEach(proc);addBars()}
   else{document.querySelectorAll('.tvbar').forEach(b=>b.remove());if(was&&typeof renderRacks==='function')renderRacks()}
   was=on}finally{busy=false}}
-new MutationObserver(()=>{clearTimeout(pass.t);pass.t=setTimeout(()=>pass(false),40)}).observe(document.body,{childList:true,subtree:true});
+if(typeof MutationObserver!=='undefined'&&document.body)new MutationObserver(()=>{clearTimeout(pass.t);pass.t=setTimeout(()=>pass(false),40)}).observe(document.body,{childList:true,subtree:true});
 })();
