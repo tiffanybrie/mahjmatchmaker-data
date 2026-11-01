@@ -31109,7 +31109,7 @@
    "hid": false,
    "mf": [
     "blue",
-    "yellow"
+    "neutral"
    ],
    "mt": [
     0,
@@ -33386,12 +33386,14 @@
    "mf": [
     "dark",
     "red",
-    "yellow"
+    "green",
+    "neutral"
    ],
    "mt": [
     0,
     1,
-    2
+    2,
+    3
    ]
   },
   "letsbebesties.com/mandala-mahjong-mat": {
