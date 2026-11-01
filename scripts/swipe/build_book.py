@@ -143,6 +143,16 @@ def main(spec_path, out):
         M.setdefault(k, dict(v["entry"]))
     os.makedirs(out + "/m", exist_ok=True)
     os.makedirs(out + "/t", exist_ok=True)
+    # per-brand cap (Tiffany Nov 1 4:50am, book_gate [h]): spec items are ranked best match first; keep each brand's top 6
+    # colour-match mats (TNT recs + her picks exempt) so a big-catalog brand never buries the book
+    _bc, _kept = {}, []
+    for it in S["items"]:
+        _m = M.get(it.get("key") or "") or {}
+        if it.get("tnt") or it.get("her") or (it.get("label") or "").startswith("TNT rec · ") or not _m:
+            _kept.append(it); continue
+        _b = _m.get("bn"); _bc[_b] = _bc.get(_b, 0) + 1
+        if _bc[_b] <= 6: _kept.append(it)
+    S["items"] = _kept
     rep, items = [], []
     for n, it in enumerate(S["items"]):
         if it.get("file"):  # hand-kept clean photo (retired OMM mats, Squarespace brands, her cutouts)

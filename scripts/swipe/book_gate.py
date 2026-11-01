@@ -19,6 +19,7 @@ Checks, for every tile-set group in a tile-mode book (D.mode == 'tile'):
   [f] fresh snapshot (rules audit GA2, Oct 30): config/fym-mats-snapshot.json must be built from the NEWEST FYM build
       (site-app/fym-vNN on the fym-site-preview branch, or the top row of docs/FYM-VERSIONS.md). Older = FAIL: run
       scripts/swipe/fym_snapshot.py <newest FYM index.html> --version vNN, commit, then rebuild the book.
+  [h] per-brand cap (Tiffany Nov 1): max 6 colour-match mats per brand per deck (TNT recs + her picks exempt); 50+ mat brands flagged.
   [g] no second book (Tiffany Oct 30 2:45am: she hates swiping twice): fail if D.col, or the product handle inside it
       (D.col minus the trailing "swipe"), is already in config/swipe-books.json with votes or status completed, unless
       this run is an update of that same book (--update-of <its artifact url>). Register every published book there.
@@ -87,6 +88,8 @@ def _dup_book(D, update_of=None):
                         f"{b.get('completed', '')}). Reuse it (and its votes); don't make her swipe twice. Updating that book? pass --update-of <url>")
     return None
 
+
+BRAND_CAP = 6  # Tiffany Nov 1 4:50am: max colour-match mats per brand per book (TNT recs + her picks exempt)
 
 def gate(path, snap_path=None, update_of=None):
     F, notes = [], []
@@ -173,6 +176,23 @@ def gate(path, snap_path=None, update_of=None):
                    'skip list' if key.split('/')[-1].lower() in skip_h else '')
             if why:
                 F.append(f"[d] {g.get('label', gid)} · {m.get('n')} ({m.get('bn')}): {why}")
+        # [h] Tiffany Nov 1 4:50am: per-brand cap. At most 6 colour-match mats per brand in one deck (TNT recs and her own picks
+        # exempt), so a brand with a huge catalog (Let's Be Besties) never buries a book. Brands with 50+ visible FYM mats are flagged.
+        if mode == 'tile':
+            _cnt = {}
+            for i in ids:
+                it = items.get(i)
+                if not it or it.get('tnt') or it.get('her') or (it.get('label') or '').startswith('TNT rec · '): continue
+                m = snap.get(it.get('key') or '') or {}
+                b = m.get('bn') or (it.get('label') or '').split(' · ')[-1]
+                _cnt[b] = _cnt.get(b, 0) + 1
+            _over = {b: n for b, n in _cnt.items() if n > BRAND_CAP}
+            if _over: F.append(f"[h] {g.get('label', gid)}: more than {BRAND_CAP} colour-match mats from one brand {_over} (rank them, keep the brand's top {BRAND_CAP}, mix brands)")
+    _bc = {}
+    for _k, _m in snap.items():
+        if not _m.get('hid'): _bc[_m.get('bn')] = _bc.get(_m.get('bn'), 0) + 1
+    _big = sorted(b for b, n in _bc.items() if b and n >= 50)
+    if _big: notes.append(f"[h] big-catalog brands (50+ FYM mats, capped at {BRAND_CAP} per book): " + ', '.join(_big))
     return F, notes
 
 
