@@ -49,7 +49,7 @@ used, keep = 0, []
 for k in must + order:
     cst = cost(k)
     if k in must or used + cst <= BUDGET: keep.append(k); used += cst
-drop = [k for k in adds if k not in keep]
+drop = [k for k, m in M.items() if m.get('add') == 'nov01-v113' and k not in keep]  # incl. the photo-hidden adds (never shown)
 for k in drop:
     o = M[k]; TH.pop(o.get('th'), None); o.update(hid=True, ahid=1, f='', th='')
 DS = {D['order'].index(k) for k in drop}
