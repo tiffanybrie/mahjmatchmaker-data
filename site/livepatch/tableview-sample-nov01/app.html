@@ -1,0 +1,396 @@
+<title>Table View Sample</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Bitter:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<style>
+/* Layout: phone = one column (view switch, square table, controls, bottom sheet that leaves the table visible); desktop = table left, tools panel right, always open. The app keeps its own light look in both themes, like Find Your Mat-ch. */
+:root{
+  --bg:#faf3ea; --card:#ffffff; --ink:#2a2036; --mute:#76687f; --line:#ecd5df;
+  --navy:#054689; --pink:#c8325f; --pink2:#fbe3ec; --cream:#f6e9df; --gray:#b8adbf;
+  --display:"Caprasimo","Rockwell","Georgia",serif; --body:"Bitter","Georgia",serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#f3ebe1}}
+:root[data-theme="dark"]{--bg:#f3ebe1}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 var(--body)}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--pink);outline-offset:2px}
+.app{max-width:1180px;margin:0 auto;padding-block:12px 120px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance}
+.kick{font:700 11px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--pink)}
+.note{font-size:12.5px;color:var(--mute);margin:4px 0 0;max-width:62ch}
+.layout{display:grid;grid-template-columns:1fr;gap:14px;margin-top:12px}
+@media (min-width:960px){.layout{grid-template-columns:minmax(0,1fr) 400px;align-items:start}}
+.stagecol{min-width:0;display:flex;flex-direction:column;gap:10px}
+.views{display:flex;border:2px solid var(--navy);border-radius:999px;overflow:hidden;background:var(--card)}
+.views button{flex:1;border:0;background:none;padding:10px 6px;font:700 14px/1 var(--body);color:var(--navy);white-space:nowrap}
+.views button.on{background:var(--navy);color:#fff}
+.views .new{font:700 9px/1 var(--body);letter-spacing:.08em;color:var(--pink);margin-left:4px;vertical-align:2px}
+.views button.on .new{color:var(--pink2)}
+.stage{position:relative;width:100%;max-width:720px;aspect-ratio:1/1;border-radius:12px;overflow:hidden;background:#e9e1d8;touch-action:none;box-shadow:0 10px 30px -18px rgba(40,20,40,.5)}
+.zoomer{position:absolute;inset:0;transform-origin:0 0}
+.zoomer canvas{width:100%;height:100%;display:block}
+.faces{position:absolute;aspect-ratio:1;border-radius:50%;overflow:hidden;border:4px solid #fff;box-shadow:0 6px 16px rgba(0,0,0,.35);pointer-events:none;transition:all .25s ease}
+.faces img{width:100%;height:100%;object-fit:cover;display:block}
+.zbtns{position:absolute;left:10px;top:10px;display:flex;flex-direction:column;gap:6px}
+.zbtns button{width:34px;height:34px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:var(--navy);font:700 18px/1 var(--body);box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.banner{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(255,255,255,.95);border-radius:10px;padding:8px 10px;font-size:13px;color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.cap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13px;color:var(--mute)}
+.cap b{color:var(--ink);font-weight:600}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card)}
+.seg button{border:0;background:none;padding:8px 13px;font:600 13px/1 var(--body);color:var(--mute)}
+.seg button.on{background:var(--navy);color:#fff}
+.seg button:disabled{color:#cfc5d4;text-decoration:line-through;cursor:not-allowed}
+.btn{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 14px;font:600 13px/1 var(--body);color:var(--navy)}
+.btn.pri{background:var(--pink);border-color:var(--pink);color:#fff}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.actions .btn{padding:11px 6px;text-align:center}
+/* panel / sheet */
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.panel h2{font:400 18px/1.15 var(--display);color:var(--navy);margin:0}
+.panel section{display:flex;flex-direction:column;gap:10px;min-width:0}
+.lab{font:700 11px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.ctl{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.sw{position:relative;width:44px;height:26px;border-radius:999px;border:0;background:#d9cfdc;flex:none}
+.sw::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:left .15s}
+.sw[aria-checked="true"]{background:var(--pink)}
+.sw[aria-checked="true"]::after{left:21px}
+.sw:disabled{opacity:.4}
+.chips{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x proximity;padding:2px 28px 4px 2px;-webkit-mask-image:linear-gradient(90deg,#000 82%,transparent);mask-image:linear-gradient(90deg,#000 82%,transparent);scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;display:flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 11px 6px 6px;font:600 12.5px/1 var(--body);scroll-snap-align:start;white-space:nowrap}
+.chip i{width:20px;height:20px;border-radius:50%;border:1px solid rgba(0,0,0,.12);display:block}
+.chip.on{border-color:var(--navy);box-shadow:inset 0 0 0 1px var(--navy)}
+.tabs{display:flex;border-bottom:1px solid var(--line)}
+.tabs button{flex:1;border:0;background:none;padding:9px 4px;font:700 14px/1 var(--body);color:var(--mute);border-bottom:3px solid transparent}
+.tabs button.on{color:var(--navy);border-bottom-color:var(--navy)}
+.search{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:#fff}
+.search input{border:0;outline:0;flex:1;min-width:0;font:14px var(--body);background:none;color:var(--ink)}
+.dots{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.dot{width:24px;height:24px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line);padding:0}
+.dot.on{box-shadow:0 0 0 2px var(--navy)}
+.dot.all{width:auto;padding:0 10px;border-radius:999px;font:700 12px/20px var(--body);background:var(--card);color:var(--navy)}
+.toggles{display:flex;gap:14px;flex-wrap:wrap}
+.tg{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600}
+.brandwrap{position:relative}
+.pop{position:absolute;z-index:30;top:calc(100% + 6px);left:0;width:min(340px,calc(100vw - 48px));max-height:300px;overflow:auto;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.18);padding:8px}
+.pop .lg{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.pop .lg button{border:1px solid var(--line);background:#fff;border-radius:10px;padding:6px;display:flex;flex-direction:column;align-items:center;gap:4px;font:600 10.5px/1.15 var(--body);min-height:64px;position:relative}
+.pop .lg img{max-height:30px;max-width:90%;object-fit:contain}
+.pop .ls button{display:flex;width:100%;border:0;background:none;text-align:left;padding:8px 6px;border-radius:8px;font-size:14px}
+.pop .ls button:hover,.pop .lg button:hover{background:var(--pink2)}
+.heart{color:var(--pink)}
+.lg .heart{position:absolute;top:3px;right:5px;font-size:11px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:10px}
+.it{position:relative;border:0;background:none;padding:0;text-align:left;display:flex;flex-direction:column;gap:4px;min-width:0}
+.it .ph{position:relative;aspect-ratio:1;border-radius:10px;overflow:hidden;background:#f2ecf1;border:2px solid transparent}
+.it.rk .ph{aspect-ratio:2/1;display:flex;align-items:center;justify-content:center;background:#f6f1f4}
+.it.rk .ph img{object-fit:contain;padding:4px}
+.it .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.it.on .ph{border-color:var(--navy)}
+.it .nm{font:600 11.5px/1.2 var(--body);overflow-wrap:anywhere}
+.it .bn{font-size:10.5px;color:var(--mute);line-height:1.2}
+.it .pk{position:absolute;top:5px;right:5px;width:20px;height:20px;border-radius:50%;background:#fff;color:var(--pink);font-size:12px;display:grid;place-items:center;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.it .tag{position:absolute;left:5px;bottom:5px;right:5px;background:rgba(255,255,255,.94);border-radius:6px;font:700 9.5px/1.2 var(--body);padding:3px 5px;color:var(--ink)}
+.it.off .ph img{filter:grayscale(1) opacity(.45)}
+.it.off .nm,.it.off .bn{color:var(--gray)}
+.it .so{display:inline-block;margin-left:4px;padding:0 6px;border-radius:999px;background:var(--pink2);color:var(--pink);font:700 9.5px/1.6 var(--body)}
+.hint{font-size:12.5px;color:var(--mute);margin:0}
+.empty{font-size:13px;color:var(--mute);padding:10px 0}
+/* phone sheet */
+@media (max-width:959px){
+  .panel{position:fixed;left:0;right:0;bottom:0;z-index:20;border-radius:18px 18px 0 0;max-height:52vh;overflow:auto;transform:translateY(105%);transition:transform .25s ease;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-bottom:calc(16px + env(safe-area-inset-bottom,0px));box-shadow:0 -10px 30px rgba(0,0,0,.18)}
+  .panel.open{transform:none}
+  .panel .grab{display:flex;justify-content:space-between;align-items:center;position:sticky;top:-14px;background:var(--card);padding-top:4px;z-index:2}
+  .panel[data-mode="adjust"] #swapSec,.panel[data-mode="swap"] #adjSec{display:none}
+  .stage{max-width:none}
+}
+@media (min-width:960px){.stage{max-width:min(720px,calc(100vh - 230px));margin-inline:auto}.panel .grab{display:none}.mobileonly{display:none!important}.panel{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto}}
+.grab span{width:44px;height:5px;border-radius:9px;background:#d8ccd6;display:block;margin:0 auto}
+.x{border:0;background:none;font-size:22px;line-height:1;color:var(--mute);padding:4px 8px}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:999px;font-size:13.5px;z-index:60;max-width:calc(100vw - 32px);text-align:center}
+.modal{position:fixed;inset:0;z-index:50;background:rgba(30,20,40,.45);display:grid;place-items:center;padding:16px}
+.modal .box{background:#fff;border-radius:16px;max-width:440px;width:100%;padding:16px;display:flex;flex-direction:column;gap:12px;max-height:90vh;overflow:auto}
+.shop{display:flex;gap:12px;align-items:center}
+.shop img{width:64px;height:64px;border-radius:10px;object-fit:cover;background:#f3eef2;flex:none}
+.shop.rk img{object-fit:contain}
+.shop div{flex:1;min-width:0}
+.shop .nm{font-weight:600;line-height:1.25}
+.code{display:inline-block;margin-top:3px;font:700 10.5px/1.6 var(--body);padding:0 8px;border-radius:999px;background:var(--pink);color:#fff}
+.code.lo{background:var(--navy)}
+.code.nc{background:#ece6ee;color:var(--mute)}
+.shop a{font:700 13px var(--body);color:var(--navy);text-decoration:none;white-space:nowrap}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="app">
+  <header>
+    <div>
+      <div class="kick">Find Your Mat-ch · working sample</div>
+      <h1>Table view</h1>
+      <p class="note">Real tiles, mats and racks from the app, built as a top-down table. Pinch or use + to zoom. Your settings stay put when you swap pieces.</p>
+    </div>
+  </header>
+  <div class="layout">
+    <div class="stagecol">
+      <div class="views" role="tablist" aria-label="View">
+        <button id="v-close" data-v="close">Up close</button>
+        <button id="v-aerial" data-v="aerial">Aerial</button>
+        <button id="v-table" data-v="table" class="on">Table<span class="new">NEW</span></button>
+      </div>
+      <div class="stage" id="stage">
+        <div class="zoomer" id="zoomer"><canvas id="cv" aria-label="Table view of your match"></canvas></div>
+        <div class="faces" id="faces"><img id="facesImg" alt=""></div>
+        <div class="zbtns"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button><button id="zreset" aria-label="Reset zoom" style="font-size:12px">1×</button></div>
+        <div class="banner" id="banner" hidden></div>
+      </div>
+      <div class="cap" id="cap"></div>
+      <div class="row" id="tableRow">
+        <div class="seg" id="modeSeg"><button id="m-full" data-m="full" class="on">Full table</button><button id="m-corner" data-m="corner">Corner</button></div>
+        <button class="btn" id="flip" hidden>Flip ⇄</button>
+        <button class="btn mobileonly" id="openAdj">Adjust</button>
+      </div>
+      <div class="row mobileonly">
+        <button class="btn" id="openTiles">Swap tiles</button><button class="btn" id="openMat">Swap mat</button><button class="btn" id="openRacks">Swap racks</button>
+      </div>
+      <div class="actions"><button class="btn" id="save">Save to my match card</button><button class="btn" id="share">Share</button><button class="btn pri" id="shopBtn">Shop the look</button></div>
+    </div>
+
+    <aside class="panel" id="panel" data-mode="adjust" aria-label="Table tools">
+      <div class="grab"><span></span><button class="x" id="closeSheet" aria-label="Close">×</button></div>
+      <section id="adjSec">
+        <h2>Adjust the table</h2>
+        <div class="ctl"><span>Walls</span><button class="sw" id="walls" role="switch" aria-checked="true" aria-label="Walls"></button></div>
+        <p class="hint" id="wallsNote" hidden></p>
+        <div class="ctl"><span>Racks</span><div class="seg" id="nr"><button data-n="1">1</button><button data-n="2">2</button><button data-n="3">3</button><button data-n="4" class="on">4</button></div></div>
+        <div><div class="lab" style="margin-bottom:8px">Rack color</div><div class="chips" id="rackChips"></div></div>
+        <div class="ctl"><span>Tile faces</span><button class="sw" id="faceSw" role="switch" aria-checked="true" aria-label="Show tile faces"></button></div>
+        <div class="ctl"><span>Tile faces sit</span><div class="seg" id="facePos"><button data-p="center" class="on">Center</button><button data-p="corner">Corner</button></div></div>
+        <div class="row mobileonly"><button class="btn" data-open="tiles">Swap tiles</button><button class="btn" data-open="mat">Swap mat</button><button class="btn" data-open="racks">Swap racks</button></div>
+      </section>
+      <section id="swapSec">
+        <h2>Swap</h2>
+        <div class="tabs" role="tablist"><button data-t="tiles">Tiles</button><button data-t="mat" class="on">Mat</button><button data-t="racks">Racks</button></div>
+        <label class="search"><span aria-hidden="true">⌕</span><input id="q" type="search" placeholder="Search mats by name" autocomplete="off"></label>
+        <div class="row">
+          <div class="brandwrap"><button class="btn" id="brandBtn">All brands ▾</button><div class="pop" id="pop" hidden></div></div>
+        </div>
+        <div class="dots" id="dots"></div>
+        <div class="toggles">
+          <label class="tg"><button class="sw" id="instock" role="switch" aria-checked="false" aria-label="In stock only"></button>In stock only</label>
+          <label class="tg"><button class="sw" id="picks" role="switch" aria-checked="false" aria-label="Tiffany's picks"></button>Tiffany’s picks</label>
+        </div>
+        <p class="hint" id="swapHint"></p>
+        <div class="grid" id="grid"></div>
+      </section>
+    </aside>
+  </div>
+</div>
+<div class="toast" id="toast" hidden></div>
+<div class="modal" id="modal" hidden><div class="box" id="mbox"></div></div>
+
+<script>const DATA=/*DATA*/null;</script>
+<script>
+(function(){
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const T=DATA.tiles, M=DATA.mats, R=DATA.racks, SETS=Object.fromEntries(DATA.sets.map(s=>[s.slug,s]));
+const LO=new Set(DATA.linkonly);
+const disp=b=>b==='Tigre de Tartan'?'Tigre de Tartán':b;
+const COLORS={pink:'#ef8fb4',red:'#d23b3b',orange:'#f08a2c',yellow:'#f3cf3d',green:'#4f9e5a',blue:'#4c84c9',purple:'#9a6cc0',neutral:'#e9e0d0',black:'#2b2b2b',brown:'#8a5a3a',wood:'#b98a56',clear:'#e8f2f6',tortoise:'#7a4a22',metallic:'#c9b26a'};
+const st={set:'oh-my-mahjong-papaya-spritz',mat:null,rack:null,view:'table',mode:'full',flip:false,walls:true,nr:4,faces:true,facePos:'center',z:1,px:0,py:0,tab:'mat',q:'',brand:'',color:'',instock:false,picks:false};
+const S0=SETS[st.set]; st.mat=S0.picks[0]; st.rack=(S0.recs[st.mat]||[])[0]||S0.racks[0];
+const big=()=>T[st.set].tw>0.95;
+const fits=k=>!(big()&&R[k].len<=18.5);
+const isPick=(sl,mk)=>SETS[sl].picks.includes(mk);
+/* ---------- images ---------- */
+const IC={};function im(src){if(!src)return null;if(!IC[src]){const i=new Image();i.onload=()=>draw();i.src=src;IC[src]=i}return IC[src].complete&&IC[src].naturalWidth?IC[src]:null}
+/* ---------- canvas ---------- */
+const cv=$('#cv'),ctx=cv.getContext('2d'),stage=$('#stage'),zoomer=$('#zoomer');
+function sides(){if(st.mode==='corner')return st.flip?['S','W']:['S','E'];return [['S'],['S','N'],['S','E','W'],['S','N','E','W']][st.nr-1]}
+function rr(c,x,y,w,h,r){c.beginPath();c.moveTo(x+r,y);c.arcTo(x+w,y,x+w,y+h,r);c.arcTo(x+w,y+h,x,y+h,r);c.arcTo(x,y+h,x,y,r);c.arcTo(x,y,x+w,y,r);c.closePath()}
+function shade(hx,f){const n=parseInt(hx.slice(1),16);let r=n>>16,g=n>>8&255,b=n&255;const m=v=>Math.max(0,Math.min(255,Math.round(f>1?v+(255-v)*(f-1):v*f)));return `rgb(${m(r)},${m(g)},${m(b)})`}
+function scene(N){ // draws the full 36" table into an offscreen canvas N px
+  const oc=document.createElement('canvas');oc.width=oc.height=N;const c=oc.getContext('2d');const PPI=N/36;
+  const mat=M[st.mat],mi=im(mat.im),cls=mat.cls;
+  c.fillStyle='#e4dcd2';c.fillRect(0,0,N,N);
+  if(mi){
+    if(st.view==='table'&&st.mode==='corner'&&cls==='B'){const q0=N*0.36;const x0=st.flip?0:q0;c.drawImage(mi,x0,q0,N-q0,N-q0)}
+    else{const s=Math.min(mi.width,mi.height);c.drawImage(mi,(mi.width-s)/2,(mi.height-s)/2,s,s,0,0,N,N)}
+  }
+  if(st.view!=='table')return oc;
+  const rk=R[st.rack],ri=rk&&rk.ok?im(rk.im):null;const sd=sides();const tile=T[st.set];
+  const tw=tile.tw,th=tw*1.43;const RL=rk?rk.len:20;let RD=ri?RL*ri.height/ri.width:2.4;RD=Math.min(Math.max(RD,1.6),3.2);
+  const edge={S:1.1,N:.7,E:.9,W:.9};const C=N/2;const inner={};
+  const place=[];
+  for(const s of sd){const L=RL*PPI,Dp=RD*PPI;let x,y,w,h,ang;
+    if(s==='S'){w=L;h=Dp;x=C-L/2;y=N-edge.S*PPI-Dp;ang=0;inner.S=y}
+    if(s==='N'){w=L;h=Dp;x=C-L/2;y=edge.N*PPI;ang=Math.PI;inner.N=y+Dp}
+    if(s==='E'){w=Dp;h=L;x=N-edge.E*PPI-Dp;y=C-L/2;ang=-Math.PI/2;inner.E=x}
+    if(s==='W'){w=Dp;h=L;x=edge.W*PPI;y=C-L/2;ang=Math.PI/2;inner.W=x+Dp}
+    place.push({s,x,y,w,h,ang})}
+  // walls under racks' shadow order: shadows, walls, racks
+  const back=tile.back?im(tile.back):null;const wallsOn=st.walls&&tile.walls;
+  if(ri){c.save();c.shadowColor='rgba(20,10,10,.45)';c.shadowBlur=.35*PPI;c.shadowOffsetX=.08*PPI;c.shadowOffsetY=.14*PPI;
+    for(const p of place){c.save();c.translate(p.x+p.w/2,p.y+p.h/2);c.rotate(p.ang);const L=RL*PPI,Dp=RD*PPI;c.drawImage(ri,-L/2,-Dp/2,L,Dp);c.restore()}c.restore()}
+  if(wallsOn){
+    const gap=.07*PPI,W=tw*PPI,H=th*PPI,L19=19*W*.985;let seed=7;const rnd=()=>{seed=(seed*16807)%2147483647;return seed/2147483647-.5};
+    for(const p of place){const vert=p.s==='E'||p.s==='W';const along0=(vert?C:C)-L19/2;
+      // group shadow
+      c.save();c.fillStyle='rgba(15,8,8,.32)';c.filter=`blur(${Math.max(1,.12*PPI)}px)`;
+      let gx,gy,gw,gh;
+      if(p.s==='S'){gx=along0;gy=inner.S-gap-H;gw=L19;gh=H}
+      if(p.s==='N'){gx=along0;gy=inner.N+gap;gw=L19;gh=H}
+      if(p.s==='E'){gx=inner.E-gap-H;gy=along0;gw=H;gh=L19}
+      if(p.s==='W'){gx=inner.W+gap;gy=along0;gw=H;gh=L19}
+      rr(c,gx+.08*PPI,gy+.12*PPI,gw+.12*PPI,gh+.12*PPI,.12*PPI);c.fill();c.restore();
+      for(let i=0;i<19;i++){const a=along0+i*W*.985;let x,y,w,h;
+        if(p.s==='S'){x=a;y=inner.S-gap-H;w=W;h=H}
+        if(p.s==='N'){x=a;y=inner.N+gap;w=W;h=H}
+        if(p.s==='E'){x=inner.E-gap-H;y=a;w=H;h=W}
+        if(p.s==='W'){x=inner.W+gap;y=a;w=H;h=W}
+        x+=rnd()*.02*PPI;y+=rnd()*.02*PPI;
+        if(back){c.save();c.translate(x+w/2,y+h/2);if(vert)c.rotate(Math.PI/2);c.rotate(rnd()*.01);c.drawImage(back,-W/2,-H/2,W,H);c.restore()}
+        else{const g=c.createLinearGradient(x,y,x+w,y+h);g.addColorStop(0,shade(tile.tc,1.18));g.addColorStop(.55,tile.tc);g.addColorStop(1,shade(tile.tc,.82));
+          c.fillStyle=g;rr(c,x,y,w,h,.11*PPI);c.fill();c.strokeStyle=shade(tile.tc,.7);c.lineWidth=Math.max(1,.02*PPI);c.stroke();
+          c.fillStyle='rgba(255,255,255,.18)';rr(c,x+.06*PPI,y+.06*PPI,w-.12*PPI,Math.min(h,w)*.18,.06*PPI);c.fill()}
+      }}
+  }
+  if(ri){for(const p of place){c.save();c.translate(p.x+p.w/2,p.y+p.h/2);c.rotate(p.ang);const L=RL*PPI,Dp=RD*PPI;c.drawImage(ri,-L/2,-Dp/2,L,Dp);c.restore()}}
+  return oc;
+}
+let raf=0;function draw(){cancelAnimationFrame(raf);raf=requestAnimationFrame(draw0)}
+function draw0(){
+  const sz=stage.clientWidth||360,dpr=Math.min(window.devicePixelRatio||1,2);const out=Math.min(2048,Math.round(sz*dpr*Math.max(1,Math.min(st.z,2))));
+  cv.width=cv.height=out;
+  if(st.view==='table'&&st.mode==='corner'){const N=Math.round(out/0.64);const sc=scene(N);const q0=N*0.36;ctx.drawImage(sc,st.flip?0:q0,q0,N-q0,N-q0,0,0,out,out)}
+  else ctx.drawImage(scene(out),0,0);
+  placeFaces();applyZoom();
+}
+function placeFaces(){const f=$('#faces');const t=T[st.set];$('#facesImg').src=t.face||t.th||'';
+  let show=st.view!=='table'||st.faces;f.hidden=!show;if(!show)return;
+  let d,cx,cy;if(st.view==='aerial'){d=40;cx=50;cy=50}else if(st.view==='close'){d=30;cx=80;cy=80}else if(st.facePos==='center'){d=st.mode==='corner'?30:26;cx=st.mode==='corner'?(st.flip?68:32):50;cy=st.mode==='corner'?32:50}else{d=24;cx=st.mode==='corner'&&st.flip?18:82;cy=st.mode==='corner'?18:82}
+  if(st.view==='table'&&st.mode==='corner'&&st.facePos==='corner'){cx=st.flip?82:18;cy=18}
+  Object.assign(f.style,{width:d+'%',left:(cx-d/2)+'%',top:(cy-d/2)+'%'})}
+/* ---------- zoom / pan ---------- */
+function clampPan(){const s=stage.clientWidth;const m=s*(st.z-1);st.px=Math.min(0,Math.max(-m,st.px));st.py=Math.min(0,Math.max(-m,st.py))}
+function applyZoom(){clampPan();zoomer.style.transform=`translate(${st.px}px,${st.py}px) scale(${st.z})`;$('#zreset').textContent=st.z>1.01?'1×':'1×'}
+function zoomAt(nz,cx,cy){nz=Math.max(1,Math.min(4,nz));const k=nz/st.z;st.px=cx-(cx-st.px)*k;st.py=cy-(cy-st.py)*k;const re=Math.abs(nz-st.z)>.3;st.z=nz;applyZoom();if(re)draw()}
+$('#zin').onclick=()=>{const s=stage.clientWidth/2;zoomAt(st.z*1.5,s,s)};
+$('#zout').onclick=()=>{const s=stage.clientWidth/2;zoomAt(st.z/1.5,s,s)};
+$('#zreset').onclick=()=>{st.z=1;st.px=st.py=0;applyZoom();draw()};
+const pts=new Map();let pinch=null,pan=null;
+stage.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;stage.setPointerCapture(e.pointerId);pts.set(e.pointerId,{x:e.offsetX,y:e.offsetY});
+  if(pts.size===2){const [a,b]=[...pts.values()];pinch={d:Math.hypot(a.x-b.x,a.y-b.y),z:st.z,cx:(a.x+b.x)/2,cy:(a.y+b.y)/2};pan=null}else pan={x:e.clientX,y:e.clientY,px:st.px,py:st.py}});
+stage.addEventListener('pointermove',e=>{if(!pts.has(e.pointerId))return;const r=stage.getBoundingClientRect();pts.set(e.pointerId,{x:e.clientX-r.left,y:e.clientY-r.top});
+  if(pinch&&pts.size===2){const [a,b]=[...pts.values()];const d=Math.hypot(a.x-b.x,a.y-b.y);const nz=Math.max(1,Math.min(4,pinch.z*d/pinch.d));const k=nz/st.z;st.px=pinch.cx-(pinch.cx-st.px)*k;st.py=pinch.cy-(pinch.cy-st.py)*k;st.z=nz;applyZoom()}
+  else if(pan&&st.z>1){st.px=pan.px+(e.clientX-pan.x);st.py=pan.py+(e.clientY-pan.y);applyZoom()}});
+const up=e=>{pts.delete(e.pointerId);if(pinch&&pts.size<2){pinch=null;draw()}if(!pts.size)pan=null};
+stage.addEventListener('pointerup',up);stage.addEventListener('pointercancel',up);
+stage.addEventListener('wheel',e=>{e.preventDefault();const r=stage.getBoundingClientRect();zoomAt(st.z*(e.deltaY<0?1.15:1/1.15),e.clientX-r.left,e.clientY-r.top)},{passive:false});
+let lastTap=0;stage.addEventListener('pointerup',e=>{const n=Date.now();if(n-lastTap<300&&!e.target.closest('button')){st.z=st.z>1?1:2;st.px=st.z>1?-stage.clientWidth/2:0;st.py=st.z>1?-stage.clientWidth/2:0;applyZoom();draw()}lastTap=n});
+/* ---------- controls ---------- */
+function setSw(el,on,dis){el.setAttribute('aria-checked',on?'true':'false');el.disabled=!!dis}
+function sync(){
+  $$('.views button').forEach(b=>b.classList.toggle('on',b.dataset.v===st.view));
+  const tbl=st.view==='table';$('#tableRow').style.display=tbl?'':'none';
+  const mat=M[st.mat];const fullOk=mat.cls==='A';if(!fullOk&&st.mode==='full'&&mat.cls==='B')st.mode='corner';
+  $('#m-full').disabled=!fullOk;$$('#modeSeg button').forEach(b=>b.classList.toggle('on',b.dataset.m===st.mode));$('#flip').hidden=st.mode!=='corner';
+  setSw($('#walls'),st.walls&&T[st.set].walls,!T[st.set].walls);const wn=$('#wallsNote');
+  wn.hidden=T[st.set].walls&&!T[st.set].pat;wn.textContent=!T[st.set].walls?`Walls aren’t available for ${T[st.set].n}: we don’t have a photo of its tile backs yet.`:(T[st.set].pat?`${T[st.set].n} has patterned backs. This sample shows them in their main back color.`:'');
+  $$('#nr button').forEach(b=>{b.classList.toggle('on',+b.dataset.n===st.nr);b.disabled=st.mode==='corner'});
+  setSw($('#faceSw'),st.faces);$$('#facePos button').forEach(b=>b.classList.toggle('on',b.dataset.p===st.facePos));
+  // banner
+  const bn=$('#banner');let msg='';
+  if(tbl){if(mat.cls==='C')msg=`${mat.n}: ${mat.why} Not available in Table view.`;else if(mat.cls==='B'&&st.mode==='corner')msg=`${mat.n}: ${mat.why}`;if(!R[st.rack]||!R[st.rack].ok)msg+=(msg?' ':'')+`${R[st.rack]?R[st.rack].n:'This rack'}: not available in Table view.`}
+  bn.hidden=!msg;bn.textContent=msg;
+  const rk=R[st.rack];$('#cap').innerHTML=`<span><b>${T[st.set].n}</b> tiles · <b>${mat.n}</b> mat${rk?` · <b>${rk.n}</b>`:''}</span><span>${disp(mat.bn)}</span>`;
+  rackChips();renderGrid();draw();
+}
+function rackList(){const s=SETS[st.set];const recs=s.recs[st.mat]||[];const seen=new Set();const out=[];
+  for(const k of [...recs,...s.racks,...Object.keys(R)])if(!seen.has(k)&&R[k]){seen.add(k);out.push(k)}return out}
+function rackChips(){const box=$('#rackChips');const ks=rackList().filter(k=>R[k].ok&&fits(k)).slice(0,14);
+  box.innerHTML=ks.map(k=>`<button class="chip${k===st.rack?' on':''}" data-k="${encodeURIComponent(k)}"><i style="background:${R[k].hx}"></i>${esc(short(R[k].n,R[k].bn))}</button>`).join('');
+  box.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{st.rack=decodeURIComponent(b.dataset.k);sync()})}
+const short=(n,b)=>n.replace(b,'').replace(/^[\s\-–:]+/,'').replace(/Mahjong Rack.*$/i,'').trim()||n;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
+$$('.views button').forEach(b=>b.onclick=()=>{st.view=b.dataset.v;sync()});
+$$('#modeSeg button').forEach(b=>b.onclick=()=>{if(b.disabled)return;st.mode=b.dataset.m;sync()});
+$('#flip').onclick=()=>{st.flip=!st.flip;sync()};
+$('#walls').onclick=()=>{st.walls=!st.walls;sync()};
+$$('#nr button').forEach(b=>b.onclick=()=>{st.nr=+b.dataset.n;sync()});
+$('#faceSw').onclick=()=>{st.faces=!st.faces;sync()};
+$$('#facePos button').forEach(b=>b.onclick=()=>{st.facePos=b.dataset.p;st.faces=true;sync()});
+/* ---------- sheet / swap ---------- */
+const panel=$('#panel');
+function openSheet(mode,tab){panel.dataset.mode=mode;if(tab){st.tab=tab;tabSync()}panel.classList.add('open');if(window.innerWidth<960)window.scrollTo({top:0,behavior:'smooth'})}
+$('#openAdj').onclick=()=>openSheet('adjust');$('#openTiles').onclick=()=>openSheet('swap','tiles');$('#openMat').onclick=()=>openSheet('swap','mat');$('#openRacks').onclick=()=>openSheet('swap','racks');
+$$('[data-open]').forEach(b=>b.onclick=()=>openSheet('swap',b.dataset.open));
+$('#closeSheet').onclick=()=>panel.classList.remove('open');
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){panel.classList.remove('open');$('#modal').hidden=true;$('#pop').hidden=true}});
+function tabSync(){$$('.tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===st.tab));st.brand='';st.color='';$('#brandBtn').textContent='All brands ▾';$('#pop').hidden=true;
+  $('#q').placeholder={tiles:'Search tile sets',mat:'Search mats by name',racks:'Search racks'}[st.tab];renderDots();renderGrid()}
+$$('.tabs button').forEach(b=>b.onclick=()=>{st.tab=b.dataset.t;tabSync()});
+$('#q').oninput=e=>{st.q=e.target.value.trim().toLowerCase();renderGrid()};
+$('#instock').onclick=()=>{st.instock=!st.instock;setSw($('#instock'),st.instock);renderGrid()};
+$('#picks').onclick=()=>{st.picks=!st.picks;setSw($('#picks'),st.picks);renderGrid()};
+function dotsFor(){return st.tab==='racks'?['pink','red','orange','yellow','green','blue','purple','neutral','black','wood','clear','tortoise','metallic']:['pink','red','orange','yellow','green','blue','purple','neutral','black']}
+function renderDots(){$('#dots').innerHTML=`<button class="dot all${st.color?'':' on'}" data-c="">All</button>`+dotsFor().map(c=>`<button class="dot${st.color===c?' on':''}" data-c="${c}" style="background:${COLORS[c]}" aria-label="${c}" title="${c}"></button>`).join('');
+  $$('#dots .dot').forEach(b=>b.onclick=()=>{st.color=st.color===b.dataset.c?'':b.dataset.c;renderDots();renderGrid()})}
+function pool(){const D=st.tab==='tiles'?T:st.tab==='mat'?M:R;return D}
+function brandsNow(){const D=pool();const keys=st.tab==='tiles'?Object.keys(T):Object.keys(D);const m={};for(const k of keys){const it=D[k];m[it.bn]=m[it.bn]||{n:0,pa:it.pa&&!LO.has(it.bn)};m[it.bn].n++}
+  return Object.entries(m).sort((a,b)=>(b[1].pa-a[1].pa)||a[0].localeCompare(b[0]))}
+$('#brandBtn').onclick=e=>{e.stopPropagation();const p=$('#pop');if(!p.hidden){p.hidden=true;return}
+  const bs=brandsNow();
+  p.innerHTML=st.tab==='tiles'?`<div class="lg"><button data-b="">All brands</button>${bs.map(([b,v])=>`<button data-b="${esc(b)}">${v.pa?'<span class="heart">♥</span>':''}${DATA.logos[b]?`<img src="${DATA.logos[b]}" alt="">`:''}<span>${esc(disp(b))}</span></button>`).join('')}</div>`
+   :`<div class="ls"><button data-b="">All brands</button>${bs.map(([b,v])=>`<button data-b="${esc(b)}">${v.pa?'<span class="heart">♥&nbsp;</span>':''}${esc(disp(b))} (${v.n})</button>`).join('')}</div><p class="hint" style="padding:4px 6px">♥ Code MAHJMATCH works at these brands.</p>`;
+  p.hidden=false;p.querySelectorAll('button').forEach(b=>b.onclick=ev=>{ev.stopPropagation();st.brand=b.dataset.b;$('#brandBtn').textContent=(st.brand?disp(st.brand):'All brands')+' ▾';p.hidden=true;renderGrid()})};
+document.addEventListener('click',e=>{if(!e.target.closest('.brandwrap'))$('#pop').hidden=true});
+function list(){const s=SETS[st.set];let ks,info={};
+  if(st.tab==='mat'){const order=[...s.picks,...s.color];const rest=Object.keys(M).filter(k=>!order.includes(k)).sort((a,b)=>(M[b].pa-M[a].pa)||M[a].n.localeCompare(M[b].n));ks=[...new Set([...order,...rest])];
+    ks=ks.filter(k=>(!st.picks||s.picks.includes(k))&&(!st.color||M[k].mf.includes(st.color)))}
+  else if(st.tab==='tiles'){ks=Object.keys(T).sort((a,b)=>(isPick(b,st.mat)-isPick(a,st.mat))||(T[b].pa-T[a].pa)||T[a].n.localeCompare(T[b].n));
+    ks=ks.filter(k=>(!st.picks||isPick(k,st.mat))&&(!st.color||T[k].fam===st.color))}
+  else{const recs=(s.recs[st.mat]||[]);ks=rackList();const n0=ks.length;ks=ks.filter(fits);info.cut=n0-ks.length;
+    ks=ks.filter(k=>(!st.picks||recs.includes(k))&&(!st.color||R[k].rf.includes(st.color)))}
+  const D=pool();ks=ks.filter(k=>(!st.brand||D[k].bn===st.brand)&&(!st.q||(D[k].n+' '+D[k].bn).toLowerCase().includes(st.q)));
+  if(st.instock){const a=ks.filter(k=>!D[k].so);info.allso=a.length===0&&ks.length>0;if(!info.allso)ks=a}
+  return [ks,info]}
+function renderGrid(){const [ks,info]=list();const s=SETS[st.set];const g=$('#grid');let hint='';
+  if(st.tab==='mat')hint=`♥ = your match for ${T[st.set].n}. Gray = not available in Table view (tap to see why).`;
+  if(st.tab==='tiles')hint=`♥ = you matched this set with ${M[st.mat].n}.`;
+  if(st.tab==='racks')hint=`Only racks that fit ${T[st.set].n} tiles are listed${info.cut?` (${info.cut} shorter racks left out)`:''}. ♥ = your rack picks for this mat.`;
+  if(info.allso)hint='No in-stock matches here, so showing all. '+hint;
+  $('#swapHint').textContent=hint;
+  if(!ks.length){g.innerHTML='<div class="empty">Nothing matches these filters. Try clearing the color or brand.</div>';return}
+  g.innerHTML=ks.map(k=>{let it,off=false,tag='',pk=false,on=false,cls='';
+    if(st.tab==='mat'){it=M[k];off=it.cls==='C';tag=it.cls==='B'?'Corner only':(off?'Not in Table view':'');pk=s.picks.includes(k);on=k===st.mat}
+    else if(st.tab==='tiles'){it=T[k];tag=it.walls?'':'No walls';pk=isPick(k,st.mat);on=k===st.set}
+    else{it=R[k];off=!it.ok;tag=off?'Not in Table view':'';pk=(s.recs[st.mat]||[]).includes(k);on=k===st.rack;cls=' rk'}
+    return `<button class="it${cls}${off?' off':''}${on?' on':''}" data-k="${encodeURIComponent(k)}"><span class="ph"><img src="${it.th||''}" alt="" loading="lazy">${pk?'<span class="pk">♥</span>':''}${tag?`<span class="tag">${tag}</span>`:''}</span><span class="nm">${esc(it.n)}${it.so?'<span class="so">Sold out</span>':''}</span><span class="bn">${esc(disp(it.bn))}</span></button>`}).join('');
+  g.querySelectorAll('.it').forEach(b=>b.onclick=()=>pick(decodeURIComponent(b.dataset.k)))}
+function pick(k){
+  if(st.tab==='mat'){const m=M[k];if(m.cls==='C'){toast(`${m.n}: ${m.why} You can still see it in Up close and Aerial.`);return}st.mat=k;if(m.cls==='B')st.mode='corner';const recs=SETS[st.set].recs[k];if(recs&&recs.length&&R[recs[0]].ok)st.rack=recs[0]}
+  else if(st.tab==='tiles'){st.set=k;if(!fits(st.rack)||!R[st.rack].ok){const r=rackList().find(x=>R[x].ok&&fits(x));if(r)st.rack=r}}
+  else{const r=R[k];if(!r.ok){toast(`${r.n}: ${r.why} It’s still in the app in the other views.`);return}st.rack=k}
+  sync()}
+/* ---------- actions ---------- */
+function toast(t){const e=$('#toast');e.textContent=t;e.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>e.hidden=true,3600)}
+function codeLine(it){if(LO.has(it.bn))return '<span class="code lo">Save through our link</span>';if(it.pa&&!it.nc)return '<span class="code">Code MAHJMATCH</span>';return '<span class="code nc">No code available</span>'}
+$('#save').onclick=()=>{let a=[];try{a=JSON.parse(localStorage.getItem('tvs-cards')||'[]')}catch(e){}a.push({set:st.set,mat:st.mat,rack:st.rack,t:Date.now()});try{localStorage.setItem('tvs-cards',JSON.stringify(a))}catch(e){}toast(`Saved to your match cards (${a.length} in this sample).`)};
+$('#share').onclick=async()=>{const t=`${T[st.set].n} tiles + ${M[st.mat].n} mat + ${R[st.rack].n} racks, from Find Your Mat-ch on mahjmatchmaker.com`;try{await navigator.clipboard.writeText(t);toast('Copied. Paste it anywhere to share this table.')}catch(e){toast(t)}};
+$('#shopBtn').onclick=()=>{const rows=[[T[st.set],'tiles',''],[M[st.mat],'mat',''],[R[st.rack],'racks',' rk']];
+  $('#mbox').innerHTML=`<div class="ctl"><h2 style="font:400 20px var(--display);color:var(--navy);margin:0">Shop the look</h2><button class="x" id="mx" aria-label="Close">×</button></div>`+
+   rows.map(([it,w,c])=>`<div class="shop${c}"><img src="${it.th||''}" alt=""><div><div class="nm">${esc(it.n)}</div><div class="hint">${esc(disp(it.bn))} · ${w}</div>${codeLine(it)}</div>${it.u?`<a href="${esc(it.u)}" target="_blank" rel="noopener">Shop ›</a>`:''}</div>`).join('')+
+   `<p class="hint">Sample only: links go to the real product pages.</p>`;
+  $('#modal').hidden=false;$('#mx').onclick=()=>$('#modal').hidden=true};
+$('#modal').onclick=e=>{if(e.target.id==='modal')$('#modal').hidden=true};
+new ResizeObserver(()=>draw()).observe(stage);
+renderDots();tabSync();sync();
+})();
+</script>
