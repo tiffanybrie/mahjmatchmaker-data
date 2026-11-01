@@ -86,3 +86,13 @@ Tiffany Oct 29 8:04am (HQ answer): remove B&B Wine; swap the Anders Ruff tortois
 - Pinned block b57c01d1: 200, identical to repo copy, 40 `mm3-c`, h1 present; 43/43 image URLs 200.
 - Playwright render 390px + 1280px: no horizontal scroll (scrollWidth = viewport), colour card first, 40 cards, no JS errors, all images load.
 - Retired OMM Dapper #8 / Vanderbilt #22 / Cognac #28 kept as built, no Shop button (her call on HQ: needs/brownstone-retired-omm-2026-11-01).
+
+## LIVE Nov 1, ~1am ET (QA + Chrome agent)
+- Page: duplicated Jade → title 'Brownstone Bloom Mahjong Tile Matches', nav 'Brownstone Bloom Tile Matches', slug + SEO title/description per the Oct 31 section (set via /api/commondata/SaveCollectionSettings with the `crumb` cookie as `?crumb=`; typing into the slug field opens 1Password's inline menu and freezes the tab, so don't type there).
+- Code block = **pin @546ece993d5f5b1555ddbb12e8dbbc0336eeafd3** (b57c01d + `#mmbbbg` style: white section background + ink h1/h2/hero link, because Jade's section is navy with a dark theme). brownstone_block.py adds it on rebuild.
+- curl (cache-busted): 200, 40 `mm3-c`, h1, `mm3-guides`, `<title>` = SEO title, meta description = SEO description; tdt_visible_code.py 0 problems; live 390px render: scrollWidth 390, h1 ink.
+- Covers: /mahjong-tile-matches Latest Albums (first) + Ivory section (`mmalb-c`); home New Tile Match Albums renders from that list (Brownstone first, checked in browser); colour page = **/ivory-mahjong-tile-matches** (`mmcol-card`, 'Anders Ruff · 40 matches'), not /neutral (that page is 'Natural Patterns': marble/tortoise/wood sets) and not /purple (the purple sets have purple backs).
+- /links: latest-album card + first strip item = Brownstone (images assets/links/v2/*-brownstone-bloom.jpg @54e2fb68), edited in place on the live block (the repo links builder has drifted; see note in links_build.py). FYM card stays first.
+- Anders Ruff brand page: album link added to 'Where Anders Ruff shows up' (brand_page_text.py 40 pages, 0 problems).
+- Google: URL Inspection = unknown to Google; Request indexing → Quota Exceeded. Queued first in HQ hq/indexing. Pinterest: 6 pending queue entries (album, colour guide, 4 cards) in config/pinterest/queue.json; uniform cover assets/covers/albums/uniform-v3/brownstone-bloom.jpg.
+- Still open: FYM album link (MATCH-INBOX), social row (Main), sitemap recheck, her keep/drop on the 3 retired OMM mats (HQ need).

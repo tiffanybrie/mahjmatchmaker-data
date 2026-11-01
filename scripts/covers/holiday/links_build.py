@@ -12,7 +12,8 @@ S='https://www.mahjmatchmaker.com'
 FYM=S+'/find-your-match'  # planned page: goes live on launch day (Nov 3 proposed, doc 54)
 FAN=['talulah','gatsby','emerald']
 FYM_LIVE=False  # flip to True on 10/27 when /find-your-match goes live (then the card links)
-NEWSET=('papaya-spritz','Papaya Spritz','Oh My Mahjong','Our latest album, now available · code MAHJMATCH')  # Oct 26 12:46pm (Tiffany): Find Your Mat-ch FIRST, latest album card SECOND. Swap this tuple on every new album (docs/NEW-ALBUM-CHECKLIST.md).
+NEWSET=('brownstone-bloom','Brownstone Bloom','Anders Ruff','Our latest album, now available · code MAHJMATCH')  # Oct 26 12:46pm (Tiffany): Find Your Mat-ch FIRST, latest album card SECOND. Swap this tuple on every new album (docs/NEW-ALBUM-CHECKLIST.md).
+# NOTE Nov 1: the LIVE /links block has drifted from this builder (Oct 31 hand edits: FYM trio phones, no 'Coming 10.27' card). Nov 1 Brownstone swap was done IN PLACE on the live block (nw card + strip first item, images @54e2fb68). Diff the live block before rebuilding from here.
 # was: ('papaya-spritz','Papaya Spritz','Oh My Mahjong','Our latest album, now available · code MAHJMATCH')  # launch-week feature card (doc 86 step 11)  # album covers fanned on the Find Your Match card (left, right, center)
 def build(img,tgt):
     nw=(f'<a class="nw" href="{S}/{NEWSET[0]}-mahjong-tile-matches"{tgt(S)}><img src="{img("v2/feature-"+NEWSET[0]+".jpg")}" alt="{NEWSET[1]} mahjong tiles" width="448" height="246"><div><span class="new">New</span><b>{NEWSET[1]}<small>{NEWSET[2]} · {NEWSET[3]}</small></b><span style="font-size:26px">›</span></div></a>') if NEWSET else ''
