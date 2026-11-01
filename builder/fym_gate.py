@@ -1101,10 +1101,10 @@ if not _pre98:
     _C92 = json.load(open(REPO + 'config/fym-rack-split-oct26.json')); _hd92 = json.load(open(os.path.join(B, 'hd', 'index.json'))).get('r', {})
     for _k in _C92['hide']:
         if _k in D['racks'] and not D['racks'][_k].get('hid'): F.append(f"[92] {D['racks'][_k]['n']}: stacked-racks entry should be hidden (split into single variants)")
-    for _k, _v in list(_C92['add'].items()) + list(_C92['replace'].items()):
+    for _k, _v in list(_C92['add'].items()) + list(_C92['replace'].items()):  # v112: an inline file:data: HD (PLM Chartreuse A) counts
         _r = D['racks'].get(_k)
         if not _r or _r.get('hid'): F.append(f"[92] {_v.get('n', _k)}: single-rack entry missing or hidden"); continue
-        if not str(_r.get('im', '')).startswith('rk98') or not str(_hd92.get(_k, '')).startswith('file:r98/') or not os.path.exists(os.path.join(B, _hd92.get(_k, 'x')[5:])): F.append(f"[92] {_r['n']}: does not show its v98 single-rack photo")
+        if not str(_r.get('im', '')).startswith('rk98') or not (str(_hd92.get(_k, '')).startswith('file:data:image/') or (str(_hd92.get(_k, '')).startswith('file:r98/') and os.path.exists(os.path.join(B, _hd92.get(_k, 'x')[5:])))): F.append(f"[92] {_r['n']}: does not show its v98 single-rack photo")
         if bool(_r.get('c')) != bool(_v['c']): F.append(f"[92] {_r['n']}: cutout flag c should be {_v['c']}")
     for _k in _C92.get('mrc_single', []):  # Tiffany 7:45pm: Mahjong Row & Co. racks regressed to 4-rack stacks
         _r = D['racks'].get(_k)
@@ -1140,6 +1140,7 @@ if not _pre98:
         _h1, _l1, _s1 = _cs94.rgb_to_hls(*(_m / 255)); _h2, _l2, _s2 = _cs94.rgb_to_hls(*(_ref / 255)); _dh = abs(_h1 - _h2) * 360; _dh = min(_dh, 360 - _dh)
         if (min(_s1, _s2) >= .2 and _l2 < .93 and _dh > 8) or np.linalg.norm(_m - _ref) > (60 if min(_s1, _s2) >= .2 else 30):
             F.append(f"[94] {_n} ({_t}): colour {_m.astype(int).tolist()} drifted from PLM reference {_ref.astype(int).tolist()} (hue {_dh:.0f} deg)")
+        if 'hartr' in _k and np.linalg.norm(_m - _ref) > 12: F.append(f"[94] {_n} ({_t}): chartreuse median {_m.astype(int).tolist()} is not Tiffany's shade A {_ref.astype(int).tolist()} (Oct 26 8:53pm)")
 if not _pre98 and '/*v100 title*/' not in UI:  # v100 replaces [95] with [98] (her Oct 27 12:37am call)
     # [95] Tiffany 6:25pm: the card title uses the ASSIGNED set colour (s.tc), no contrast-loop darkening; light colours only get
     # a white outline
@@ -1577,6 +1578,27 @@ if '--site' in sys.argv:
             _lost = sorted(_pids - _ids)
             if _lost: F.append(f"[119] website copy lost {len(_lost)} inline/thumbs.js thumbnails the previous copy fym-v{_prev} had: {_lost[:5]}")
     except Exception as _e: F.append(f"[115] website photo path check did not run: {_e}")
+if '/*v112' in UI:
+    # [130]-[137] Nov 1 inbox-sweep checks (builder/fym_fix_nov01/gate_nov01.py), merged into the gate for v112+
+    _g = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fym_fix_nov01', 'gate_nov01.py'), B], capture_output=True, text=True)
+    F += ['[130-137] ' + l_[5:] for l_ in _g.stdout.splitlines() if l_.startswith('FAIL ')]
+    if _g.returncode and not any(l_.startswith('FAIL ') for l_ in _g.stdout.splitlines()): F.append('[130-137] gate_nov01 did not run: ' + (_g.stderr or '')[-200:])
+    # [138] In stock only (Tiffany Nov 1 12:04am): chip in both doors, default OFF, never empties a deck silently, stock data is
+    # fresh (<= 8 days), retired = sold out, and every sold-out flag in D comes from config/fym-stock.json
+    for _a, _w in (("function matDeck(){return INSF('m',", 'mat deck filtered only via INSF'), ("function setsForMat(id){return INSG(", 'mat-door tile deck filtered via INSG'),
+                   ("function rackDeck(){return INSF('r',", 'rack deck via INSF'), ("function doorMats(){return INSF('m',", 'mat door step 1 via INSF'),
+                   ('return INSB(k)+`<div class="frow"', 'chip by the tiles-door colour filter'), ("INSB('d')+`</div>`;}", 'chip in the mat door colour chips'),
+                   ("if(!f.length&&ids.length){S.insE=1;return ids;}", 'empty in-stock deck falls back to all'), ('No in-stock matches here, so showing all.', 'fallback note')):
+        if _a not in UI: F.append(f"[138] in-stock toggle: {_w} missing")
+    if re.search(r'S\.ins\s*=\s*(true|1|!0)\b', UI) or 'S.ins=localStorage' in UI: F.append("[138] in-stock toggle must default to OFF (All)")
+    _st = json.load(open(REPO + 'config/fym-stock.json')); import datetime as _dt138
+    if (_dt138.date.today() - _dt138.date.fromisoformat(_st['checked'])).days > 8: F.append(f"[138] stock data is stale (checked {_st['checked']}); run scripts/fym_stock_check.py")
+    if not D.get('stk'): F.append("[138] D.stk (stock checked date) missing")
+    _out = {k_ for k_, v_ in _st['items'].items() if not v_['in']}
+    for _kd, _col in (('m', D['mats']), ('r', D['racks']), ('t', D['tiles'])):
+        for _id, _o in _col.items():
+            if _o.get('oos') and f'{_kd}:{_id}' not in _out: F.append(f"[138] {_kd}:{_id} marked sold out but the stock check says in stock")
+            if _o.get('rt') and not _o.get('hid') and f'{_kd}:{_id}' in _st['items'] and _st['items'][f'{_kd}:{_id}']['in']: F.append(f"[138] retired {_kd}:{_id} counted as in stock")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))

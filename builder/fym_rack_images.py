@@ -23,7 +23,8 @@ def shown(B):
         if r.get('im') in IMG: srcs.append(('sm', base64.b64decode(IMG[r['im']])))
         v = hd.get(k)
         if v:
-            if v.startswith('file:'): srcs.append(('hd', open(B + '/' + v[5:], 'rb').read()))
+            if v.startswith('file:data:'): srcs.append(('hd', base64.b64decode(v.split(',', 1)[1])))  # v112 inline HD
+            elif v.startswith('file:'): srcs.append(('hd', open(B + '/' + v[5:], 'rb').read()))
             else:
                 cache.setdefault(v, json.load(open(B + '/hd/' + v))); du = cache[v].get(k)
                 if du: srcs.append(('hd', base64.b64decode(du.split(',', 1)[1])))
