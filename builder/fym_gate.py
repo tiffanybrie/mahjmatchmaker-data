@@ -1639,6 +1639,15 @@ if 'function BCAP(' in UI or any(_m.get('add') == 'nov01-v113' for _m in M.value
     except Exception: _r140 = {'fail': ['[140] cap check output unreadable: ' + (_o140.stderr or _o140.stdout)[-300:]]}
     for _f in _r140['fail'][:12]: F.append(_f)
     if len(_r140['fail']) > 12: F.append(f"[140]/[142] ... {len(_r140['fail']) - 12} more")
+# [144] Nov 1 (live bug found by the Table-preview build): WebKit iPhone, the step nav (.stp) never shrank and pushed the page sideways.
+# builder/fym_webkit_width.py walks open -> card -> mat door at 390 / 375 / 340px: scrollWidth <= innerWidth and the top bar fits.
+if 'function BCAP(' in UI:
+    if '.top .stp{min-width:0;' not in UI: F.append("[144] step nav can't shrink (.top .stp min-width:0 missing)")
+    import subprocess as _sp144
+    _o144 = _sp144.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fym_webkit_width.py'), B], capture_output=True, text=True, timeout=900)
+    _l144 = [l for l in _o144.stdout.splitlines() if l.startswith('[144]')]
+    if _o144.returncode and not _l144: _l144 = ['[144] WebKit width check failed: ' + (_o144.stderr or '')[-200:]]
+    for _f in _l144[:8]: F.append(_f)
 # [141] Tiffany Nov 1 3:43pm: PEARL rack finish chip (both doors) + rack search matches finish words. Every rack tagged pearl
 # has a pearl / pearlescent / iridescent / opal / mother-of-pearl word in its name or an approved by-eye note.
 if any('pearl' in (_r.get('rf') or []) for _r in D['racks'].values()) or "pearl:'Pearl'" in UI:
