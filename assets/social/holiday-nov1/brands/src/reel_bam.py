@@ -30,6 +30,7 @@ def sq(fn):
     return im.crop(((im.width - s) // 2, (im.height - s) // 2, (im.width + s) // 2, (im.height + s) // 2)).resize((CS, CS), Image.LANCZOS)
 MATS = [sq(d[0]) for d in DOORS]
 BG = plaid((W, H), (253, 236, 242), [(0, 60, (244, 170, 196), 0.55), (90, 14, (200, 32, 47), 0.35)], scale=1.2)
+_l = BG.crop((0, 0, W // 2, H)); BG.paste(_l.transpose(Image.FLIP_LEFT_RIGHT), (W // 2, 0))  # mirror: symmetric about the centre
 f_cap = lambda s: font(FONT_CAP, s); f_pb = lambda s: font(FONT_POP_B, s)
 
 def door_panel(i, col):
@@ -90,9 +91,9 @@ def end(t, te):
     # three colourway tiles
     for j, k in enumerate(['Rudolph Red', 'Grinch Green', 'Sugarplum Pink']):
         pj = back_out(clamp((te - 0.3 * B - j * 0.08) / 0.2)); s = max(4, int(250 * pj))
-        x = W // 2 - 400 + j * 300 + (250 - s) // 2
+        x = W // 2 - 425 + j * 300 + (250 - s) // 2
         shadow_paste(c, rounded(cover(TILE[k], (s, s)), 18), (x, 740 + (250 - s) // 2), alpha=110, blur=10, offset=(0, 6))
-        d = ImageDraw.Draw(c); draw_center(d, 1010, k, f_pb(30), CW[k], cx=W // 2 - 400 + j * 300 + 125)
+        d = ImageDraw.Draw(c); draw_center(d, 1010, k, f_pb(30), CW[k], cx=W // 2 - 425 + j * 300 + 125)
     d = ImageDraw.Draw(c)
     if te >= B:
         pill(d, W // 2, 1110, 'Shop now · use code MAHJMATCH', f_pb(46), (255, 255, 255), PINK, padx=44, pady=22)
