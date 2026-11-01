@@ -1,0 +1,4102 @@
+{
+"_about": "Rack fit by TILE SIZE (Tiffany Oct 26 7:37/7:39pm). tw = tile WIDTH in inches (what sets rack length: ~19 tiles stand side by side). Rule: a rack of 18.5\" or less (len<=18.5) is offered only with sets whose tw<=0.95 (OMM-size 0.87, MRC 0.91, Bam Bird 0.9, Virora 0.9, YMI 0.91, Mahjong Studios 0.94 = standard). Sets with 1\"+ tiles (Sunday, PLM, MFM, Mahj Mood, Amahj, Bespoke, Miss Mahjong, M&M, B&B, Mac+Miller, LMO, Charleston, YOLO, Mahj Squad: \"large tiles require racks at least 19 inches\") get 19\"+ racks only. Unknown width = treated as large (safe). 20\" = her recommended standard (\"fits most tiles\"). Researched Nov 1 from each brand product page (/products/<handle>.json); src says where.",
+"rule": {
+"short_rack_max_len": 18.5,
+"standard_tile_max_width": 0.95,
+"unknown_width": "large"
+},
+"racks": {
+"peacelovemahjong.com/mahjong-racks-racks-pushers-set-of-4": {
+"n": "Peace Love Mahjong Oak",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.ohmymahjong.com/white-rack-pusher": {
+"n": "Oh My Mahjong White Acrylic",
+"bn": "Oh My Mahjong",
+"len": 18.5,
+"src": "product page"
+},
+"www.ohmymahjong.com/tortoise-shell-rack-pusher": {
+"n": "Oh My Mahjong Tortoise Shell",
+"bn": "Oh My Mahjong",
+"len": 18.5,
+"src": "product page"
+},
+"www.ohmymahjong.com/agate-rack-and-pusher-set": {
+"n": "Oh My Mahjong Agate",
+"bn": "Oh My Mahjong",
+"len": 18.5,
+"src": "product page"
+},
+"www.bambirdboutique.com/wooden-mahjong-rack-pusher-set": {
+"n": "Bam Bird Boutique Walnut",
+"bn": "Bam Bird Boutique",
+"len": 19,
+"src": "product page"
+},
+"missmahjong.com/iridescent-opal-scalloped-acrylic-racks": {
+"n": "Miss Mahjong Iridescent Opal Scalloped",
+"bn": "Miss Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"missmahjong.com/peach-sorbet-scalloped-acrylic-racks": {
+"n": "Miss Mahjong Peach Sorbet Scalloped",
+"bn": "Miss Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"missmahjong.com/cornflower-blue-scalloped-acrylic-racks": {
+"n": "Miss Mahjong Cornflower Blue Scalloped",
+"bn": "Miss Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongrowandco.com/porcelain-blue-rack-pusher-set": {
+"n": "Mahjong Row & Co. Porcelain Blue",
+"bn": "Mahjong Row & Co.",
+"len": 18.5,
+"src": "product page"
+},
+"mahjongrowandco.com/translucent-chocolate-rack-pusher-set": {
+"n": "Mahjong Row & Co. Translucent Plum",
+"bn": "Mahjong Row & Co.",
+"len": 18.5,
+"src": "product page"
+},
+"mahjongrowandco.com/matcha-green-rack-pusher-set": {
+"n": "Mahjong Row & Co. Matcha Green",
+"bn": "Mahjong Row & Co.",
+"len": 18.5,
+"src": "product page"
+},
+"www.ohmymahjong.com/burlwood-rack": {
+"n": "Oh My Mahjong Burl",
+"bn": "Oh My Mahjong",
+"len": 18.5,
+"src": "product page"
+},
+"www.middleandmainmahjong.com/golden-grain-beechwood-mahjong-rack-and-pusher-set-of-4": {
+"n": "Middle & Main Scalloped Beechwood",
+"bn": "Middle & Main Mahjong",
+"len": 20,
+"src": "products.json body: \"Extended length, 20\\\" long racks\""
+},
+"missmahjong.com/jade-and-brass-acrylic-racks": {
+"n": "Miss Mahjong Jade & Brass",
+"bn": "Miss Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"missmahjong.com/blonde-tortoise-classic-acrylic-racks": {
+"n": "Miss Mahjong Blonde Tortoise",
+"bn": "Miss Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongrowandco.com/chestnut-cream-rack-pusher-set": {
+"n": "Mahjong Row & Co. Chestnut Cream",
+"bn": "Mahjong Row & Co.",
+"len": 18.5,
+"src": "product page"
+},
+"www.ohmymahjong.com/pink-quartz-rack-and-pusher-set": {
+"n": "Oh My Mahjong Pink Quartz",
+"bn": "Oh My Mahjong",
+"len": 18.5,
+"src": "product page"
+},
+"www.ohmymahjong.com/hot-pink-rack-pusher": {
+"n": "Oh My Mahjong Hot Pink",
+"bn": "Oh My Mahjong",
+"len": 18.5,
+"src": "product page"
+},
+"missmahjong.com/opal-and-brass-acrylic-racks": {
+"n": "Miss Mahjong Opal & Brass",
+"bn": "Miss Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"mahjmood.com/white-acrylic-racks-set-of-4-no-pushers-included": {
+"n": "White Acrylic Racks- Set of 4 (NO PUSHERS INCLUDED)",
+"bn": "Mahj Mood",
+"len": 20.0,
+"src": "product page"
+},
+"mahjmood.com/pure-white-acrylic-racks-and-pushers": {
+"n": "Scalloped Pure White Acrylic Racks and Pushers",
+"bn": "Mahj Mood",
+"len": 20.0,
+"src": "product page"
+},
+"mahjmood.com/baby-blue-wooden-racks-with-scalloped-pushers": {
+"n": "Baby Blue Wooden Racks with Scalloped Pushers",
+"bn": "Mahj Mood",
+"len": 20.0,
+"src": "product page"
+},
+"mahjmood.com/white-wooden-racks-with-scalloped-pushers": {
+"n": "White Wooden Racks with Scalloped Pushers",
+"bn": "Mahj Mood",
+"len": 20.0,
+"src": "product page"
+},
+"mahjmood.com/double-wooden-mahjong-racks": {
+"n": "Double Wooden Mahjong Racks (Set of Racks and 4 Pushers)",
+"bn": "Mahj Mood",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongrowandco.com/white-rack-pusher-set": {
+"n": "Mahjong Row & Co. White",
+"bn": "Mahjong Row & Co.",
+"len": 18.5,
+"src": "product page"
+},
+"mahjongrowandco.com/autumn-brown-rack-pusher-set": {
+"n": "Mahjong Row & Co. Autumn Brown",
+"bn": "Mahjong Row & Co.",
+"len": 18.5,
+"src": "product page"
+},
+"missmahjong.com/dark-tortoise-and-brass-acrylic-racks": {
+"n": "Dark Tortoise and Brass Acrylic Racks",
+"bn": "Miss Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"missmahjong.com/wood-racks-with-classic-pusher": {
+"n": "Wood Racks with Classic Pusher",
+"bn": "Miss Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"missmahjong.com/dark-tortoise-classic-acrylic-racks": {
+"n": "Dark Tortoise Classic Acrylic Racks",
+"bn": "Miss Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"missmahjong.com/scalloped-acrylic-racks": {
+"n": "Clear Acrylic Racks with Scalloped Pusher",
+"bn": "Miss Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"myfairmahjong.com/wooden-painted-mahjong-racks-20-set-of-4-blue-and-pink-sets-magnetic-attached-pusher": {
+"n": "My Fair Mahjong Macaron Purple Wood",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"myfairmahjong.com/acrylic-mahjong-racks": {
+"n": "MAHJONG RACKS  |  Premium Acrylic  |  Patent Pending – Ribbon Pink",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"peacelovemahjong.com/wavy-mahjong-rack-pusher-set-pink": {
+"n": "Wavy Mahjong Rack Pusher Set - Pink",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"peacelovemahjong.com/wavy-mahjong-rack-pusher-set-purple": {
+"n": "Wavy Mahjong Rack Pusher Set - Purple",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"peacelovemahjong.com/wavy-mahjong-rack-pusher-set-french-blue": {
+"n": "Wavy Mahjong Rack Pusher Set - French Blue",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"peacelovemahjong.com/wavy-mahjong-rack-pusher-set-white": {
+"n": "Wavy Mahjong Rack Pusher Set - White",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"peacelovemahjong.com/wavy-mahjong-rack-pusher-set-chartrusse": {
+"n": "Wavy Mahjong Rack Pusher Set - Chartreuse",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"peacelovemahjong.com/wavy-mahjong-rack-pusher-set-dark-green": {
+"n": "Wavy Mahjong Rack Pusher Set - Dark Green",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"peacelovemahjong.com/wavy-mahjong-rack-pusher-set-aqua": {
+"n": "Wavy Mahjong Rack Pusher Set - Aqua",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"peacelovemahjong.com/wavy-mahjong-rack-pusher-set-navy": {
+"n": "Wavy Mahjong Rack Pusher Set - Dark Navy",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"peacelovemahjong.com/wavy-mahjong-rack-pusher-set-red": {
+"n": "Wavy Mahjong Rack Pusher Set - Red",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"peacelovemahjong.com/wavy-mahjong-rack-pusher-set-cobalt-blue": {
+"n": "Wavy Mahjong Rack Pusher Set - Cobalt Blue",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"peacelovemahjong.com/wavy-mahjong-rack-pusher-set-mint": {
+"n": "Wavy Mahjong Rack Pusher Set - Mint",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"peacelovemahjong.com/wavy-mahjong-rack-pusher-set-light-pink": {
+"n": "Wavy Mahjong Rack Pusher Set - Light Pink",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"peacelovemahjong.com/wavy-mahjong-rack-pusher-set-lilac": {
+"n": "Wavy Mahjong Rack Pusher Set - Lilac",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"shop.andersruff.com/tortoise-acrylic-rack-set-straight-pushers": {
+"n": "Tortoise Acrylic Rack Set — Straight Pushers",
+"bn": "Anders Ruff",
+"len": 20.0,
+"src": "product page"
+},
+"shop.andersruff.com/clear-acrylic-mahjong-rack-set-straight-pushers": {
+"n": "Clear Acrylic Rack Set — Straight Pushers",
+"bn": "Anders Ruff",
+"len": 20.0,
+"src": "product page"
+},
+"shop.andersruff.com/clear-acrylic-mahjong-rack-set-scalloped-pushers": {
+"n": "Clear Acrylic Rack Set — Scalloped Pushers",
+"bn": "Anders Ruff",
+"len": 20.0,
+"src": "product page"
+},
+"www.bambirdboutique.com/wooden-two-player-mahjong-racks-set-of-2": {
+"n": "Two Player Wood Mahjong Racks",
+"bn": "Bam Bird Boutique",
+"len": 19,
+"src": "product page"
+},
+"www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers": {
+"n": "Lucite Mahjong Rack & Pusher Set – Emerald",
+"bn": "Bam Bird Boutique",
+"len": 18.5,
+"src": "product page"
+},
+"www.bambirdboutique.com/white-acrylic-rack-and-pusher-set-set-of-4": {
+"n": "Bam Bird Boutique White Acrylic",
+"bn": "Bam Bird Boutique",
+"len": 18.5,
+"src": "product page"
+},
+"www.bamletsmahjong.com/mahjong-white-acrylic-rack-and-pusher": {
+"n": "Mahjong White Acrylic Rack and Pusher",
+"bn": "Bam! Let's Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.bamletsmahjong.com/mahjong-black-acrylic-racks-and-scallop-pushers": {
+"n": "Mahjong Black Acrylic Racks and Scallop Pushers",
+"bn": "Bam! Let's Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.bamletsmahjong.com/mahjong-clear-acrylic-racks-and-scallop-pusher": {
+"n": "Mahjong Clear Acrylic Racks and Scallop Pusher",
+"bn": "Bam! Let's Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.bamletsmahjong.com/wooden-mahjong-racks-pushers-black-4-set": {
+"n": "Wooden Mahjong Racks & Pushers - Black - 4 Set",
+"bn": "Bam! Let's Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.bamletsmahjong.com/white-acrylic-double-mahjong-racks-with-magnetic-pushers-set-of-2": {
+"n": "White Acrylic Double Mahjong Racks with Magnetic Pushers (Set of 2)",
+"bn": "Bam! Let's Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.bamletsmahjong.com/white-acrylic-racks-set-4": {
+"n": "White Acrylic Mahjong Racks - Set of 4",
+"bn": "Bam! Let's Mahjong",
+"len": 18.5,
+"src": "product page"
+},
+"www.bamletsmahjong.com/white-wooden-racks-set-4": {
+"n": "Wooden Mahjong Racks & Pushers - White - 4 Set",
+"bn": "Bam! Let's Mahjong",
+"len": 19,
+"src": "product page"
+},
+"www.bespokemahjong.com/the-ultimate-rack-red": {
+"n": "The Ultimate Rack - HOLIDAY RED",
+"bn": "Bespoke Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.bespokemahjong.com/the-ultimate-rack-plum": {
+"n": "The Ultimate Rack - ELECTRIC ORCHID",
+"bn": "Bespoke Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.bespokemahjong.com/the-ultimate-rack-bright-white": {
+"n": "The Ultimate Rack - BRIGHT WHITE",
+"bn": "Bespoke Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.bespokemahjong.com/the-ultimate-rack-turquoise": {
+"n": "The Ultimate Rack - PEACOCK BLUE",
+"bn": "Bespoke Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.bespokemahjong.com/the-ultimate-rack-hottie-pink": {
+"n": "The Ultimate Rack - HIGHLIGHTER PINK",
+"bn": "Bespoke Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.bespokemahjong.com/the-ultimate-rack-clear": {
+"n": "The Ultimate Rack - CRYSTAL CLEAR",
+"bn": "Bespoke Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue": {
+"n": "NEW SHELF ANGLE! 20\" Wooden Mahjong Racks  – 4 Color Options – Admiral Blue",
+"bn": "Charleston Mahjong Club",
+"len": 20.0,
+"src": "product page"
+},
+"www.hiphipmahjong.com/trust-fund-racks": {
+"n": "Trust Fund Racks",
+"bn": "Hip Hip Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.letsmahj-on.com/luxe-acrylic-scalloped-mahjong-rack-pink": {
+"n": "Luxe Acrylic Scalloped Mahjong Rack - Pink",
+"bn": "Let's Mahj On",
+"len": 20.0,
+"src": "product page"
+},
+"www.letsmahj-on.com/luxe-acrylic-scalloped-mahjong-rack": {
+"n": "Luxe Acrylic Scalloped Mahjong Rack - Clear",
+"bn": "Let's Mahj On",
+"len": 20.0,
+"src": "product page"
+},
+"www.middleandmainmahjong.com/la-vie-en-rose-mahjong-rack-and-pusher-set-of-4": {
+"n": "La Vie En Rose Mahjong Rack and Pusher, Set of 4",
+"bn": "Middle & Main Mahjong",
+"len": 20,
+"src": "products.json body: \"Extended length, 20\\\" long racks\""
+},
+"www.middleandmainmahjong.com/milk-glass-collection-mahjong-rack-and-pusher-set-of-4": {
+"n": "Milk Glass Collection Mahjong Rack and Pusher, Set of 4",
+"bn": "Middle & Main Mahjong",
+"len": 20,
+"src": "products.json body: \"Extended length, 20\\\" long racks\""
+},
+"www.middleandmainmahjong.com/clear-acrylic-mahjong-rack-and-pusher-set-of-4": {
+"n": "Clear Acrylic Mahjong Rack and Pusher, Set of 4",
+"bn": "Middle & Main Mahjong",
+"len": 20,
+"src": "products.json body: \"Extended length, 20\\\" long racks\""
+},
+"www.ohmymahjong.com/blond-tortoise-rack-and-pusher-set": {
+"n": "Blond Tortoise Rack and Pusher Set",
+"bn": "Oh My Mahjong",
+"len": 18.5,
+"src": "product page"
+},
+"www.ohmymahjong.com/blue-lace-agate-rack-and-pusher-set": {
+"n": "Blue Lace Agate Rack and Pusher Set",
+"bn": "Oh My Mahjong",
+"len": 18.5,
+"src": "product page"
+},
+"www.ohmymahjong.com/sandstone-rack-and-pusher-set": {
+"n": "Sandstone Rack and Pusher Set",
+"bn": "Oh My Mahjong",
+"len": 18.5,
+"src": "product page"
+},
+"www.ohmymahjong.com/acrylic-rack-and-pusher-set": {
+"n": "Multicolor Acrylic Rack & Pusher Set",
+"bn": "Oh My Mahjong",
+"len": 18.5,
+"src": "product page"
+},
+"www.ohmymahjong.com/carrara-rack-pusher-set": {
+"n": "Carrara Rack & Pusher Set",
+"bn": "Oh My Mahjong",
+"len": 18.5,
+"src": "product page"
+},
+"www.ohmymahjong.com/clear-acrylic-rack-and-pusher-set": {
+"n": "Clear Acrylic Rack & Pushers Set",
+"bn": "Oh My Mahjong",
+"len": 18.5,
+"src": "product page"
+},
+"www.viroramahjong.com/wooden-rack-pusher-set": {
+"n": "Magnetic Wooden Rack & Pusher Set – Spring Jade",
+"bn": "Virora Mahjong",
+"len": 19,
+"src": "product page text (hinged 18.5-inch, wooden 19-inch)"
+},
+"www.ymimports.com/us-rl026-a": {
+"n": "Dark Camphor Wooden Mahjong Game Racks with Pushers, 18\" - Set of 4",
+"bn": "Yellow Mountain Imports",
+"len": 18,
+"src": "product page"
+},
+"www.ymimports.com/us-rl029-a": {
+"n": "18-Inch Dark Pine Wooden Mahjong Game Racks with Built-in Pushers - Set of 4",
+"bn": "Yellow Mountain Imports",
+"len": 18,
+"src": "product page"
+},
+"www.ymimports.com/us-rl028-a": {
+"n": "18\" Natural Pine Wooden Mahjong Racks with Pushers - Set of 4 (Racks with Pushers Only)",
+"bn": "Yellow Mountain Imports",
+"len": 18,
+"src": "product page"
+},
+"www.ymimports.com/us-rl017-a": {
+"n": "Classic Wooden Mahjong Racks, 18\" - Mahogany Color - Set of 4",
+"bn": "Yellow Mountain Imports",
+"len": 18,
+"src": "product page"
+},
+"www.ymimports.com/nb-mp005-a": {
+"n": "Modern Mahjong Racks with Built-in Pushers - Black - Set of 4",
+"bn": "Yellow Mountain Imports",
+"len": 18,
+"src": "product page"
+},
+"www.ymimports.com/nb-mp004-a": {
+"n": "Modern Mahjong Racks with Built-in Pushers - Clear - Set of 4",
+"bn": "Yellow Mountain Imports",
+"len": 18,
+"src": "product page"
+},
+"bb:Ballet Pink": {
+"n": "Bird & Bamboo Ballet Pink",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Light Pink": {
+"n": "Bird & Bamboo Light Pink",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Shell Pink": {
+"n": "Bird & Bamboo Shell Pink",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Mauve": {
+"n": "Bird & Bamboo Mauve",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Flamingo": {
+"n": "Bird & Bamboo Flamingo",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Peony": {
+"n": "Bird & Bamboo Peony",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Pink Coral": {
+"n": "Bird & Bamboo Pink Coral",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Hot Pink": {
+"n": "Bird & Bamboo Hot Pink",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Magenta": {
+"n": "Bird & Bamboo Magenta",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Mulberry": {
+"n": "Bird & Bamboo Mulberry",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Lilac": {
+"n": "Bird & Bamboo Lilac",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Petal Purple": {
+"n": "Bird & Bamboo Petal Purple",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Lavender": {
+"n": "Bird & Bamboo Lavender",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Berry Purple": {
+"n": "Bird & Bamboo Berry Purple",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Purple": {
+"n": "Bird & Bamboo Purple",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Eggplant": {
+"n": "Bird & Bamboo Eggplant",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Cherry Red": {
+"n": "Bird & Bamboo Cherry Red",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Red": {
+"n": "Bird & Bamboo Red",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Radish": {
+"n": "Bird & Bamboo Radish",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Brick Red": {
+"n": "Bird & Bamboo Brick Red",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Wine": {
+"n": "Bird & Bamboo Wine",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Butter": {
+"n": "Bird & Bamboo Butter",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Sunshine": {
+"n": "Bird & Bamboo Sunshine",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Yellow": {
+"n": "Bird & Bamboo Yellow",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Retro Mustard": {
+"n": "Bird & Bamboo Retro Mustard",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Dijon": {
+"n": "Bird & Bamboo Dijon",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Peachy": {
+"n": "Bird & Bamboo Peachy",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Coral": {
+"n": "Bird & Bamboo Coral",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Mango": {
+"n": "Bird & Bamboo Mango",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Carrot": {
+"n": "Bird & Bamboo Carrot",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Orange": {
+"n": "Bird & Bamboo Orange",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Persimmon": {
+"n": "Bird & Bamboo Persimmon",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Icy Mint": {
+"n": "Bird & Bamboo Icy Mint",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Seafoam": {
+"n": "Bird & Bamboo Seafoam",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Mermaid": {
+"n": "Bird & Bamboo Mermaid",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Glowstick": {
+"n": "Bird & Bamboo Glowstick",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Lime Green": {
+"n": "Bird & Bamboo Lime Green",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Pistachio": {
+"n": "Bird & Bamboo Pistachio",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Matcha": {
+"n": "Bird & Bamboo Matcha",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Avocado": {
+"n": "Bird & Bamboo Avocado",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Moss": {
+"n": "Bird & Bamboo Moss",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Jade": {
+"n": "Bird & Bamboo Jade",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Kelly Green": {
+"n": "Bird & Bamboo Kelly Green",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Teal": {
+"n": "Bird & Bamboo Teal",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Dark Teal": {
+"n": "Bird & Bamboo Dark Teal",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Misty Spruce": {
+"n": "Bird & Bamboo Misty Spruce",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Basil": {
+"n": "Bird & Bamboo Basil",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Forest Green": {
+"n": "Bird & Bamboo Forest Green",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Evergreen": {
+"n": "Bird & Bamboo Evergreen",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Tiffany Dusk": {
+"n": "Bird & Bamboo Tiffany Dusk",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Powder Blue": {
+"n": "Bird & Bamboo Powder Blue",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Light Blue": {
+"n": "Bird & Bamboo Light Blue",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Cornflower Blue": {
+"n": "Bird & Bamboo Cornflower Blue",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Periwinkle Blue": {
+"n": "Bird & Bamboo Periwinkle Blue",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:French Blue": {
+"n": "Bird & Bamboo French Blue",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Turquoise Blue": {
+"n": "Bird & Bamboo Turquoise Blue",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Turks Blue": {
+"n": "Bird & Bamboo Turks Blue",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Electric Blue": {
+"n": "Bird & Bamboo Electric Blue",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Harbor Blue": {
+"n": "Bird & Bamboo Harbor Blue",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Ocean Slate": {
+"n": "Bird & Bamboo Ocean Slate",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Cadet": {
+"n": "Bird & Bamboo Cadet",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Dark Blue": {
+"n": "Bird & Bamboo Dark Blue",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Dark Navy": {
+"n": "Bird & Bamboo Dark Navy",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:White": {
+"n": "Bird & Bamboo White",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Cream": {
+"n": "Bird & Bamboo Cream",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Almond": {
+"n": "Bird & Bamboo Almond",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Pebble": {
+"n": "Bird & Bamboo Pebble",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Graphite": {
+"n": "Bird & Bamboo Graphite",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Blackboard Black": {
+"n": "Bird & Bamboo Blackboard Black",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:True Black": {
+"n": "Bird & Bamboo True Black",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Weathered Oak": {
+"n": "Bird & Bamboo Weathered Oak",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Clear": {
+"n": "Bird & Bamboo Clear Wood Stain",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Provincial": {
+"n": "Bird & Bamboo Provincial",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Red Mahogany": {
+"n": "Bird & Bamboo Red Mahogany",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Dark Walnut": {
+"n": "Bird & Bamboo Dark Walnut",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:White Metallic": {
+"n": "Bird & Bamboo White Metallic",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Silver Metallic": {
+"n": "Bird & Bamboo Silver Metallic",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Glacier Metallic": {
+"n": "Bird & Bamboo Glacier Metallic",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Champagne Metallic": {
+"n": "Bird & Bamboo Champagne Metallic",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Gold Metallic": {
+"n": "Bird & Bamboo Gold Metallic",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Bronze Metallic": {
+"n": "Bird & Bamboo Bronze Metallic",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Penny Metallic": {
+"n": "Bird & Bamboo Penny Metallic",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Rust Metallic": {
+"n": "Bird & Bamboo Rust Metallic",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Rose Gold Metallic": {
+"n": "Bird & Bamboo Rose Gold Metallic",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Peach Metallic": {
+"n": "Bird & Bamboo Peach Metallic",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Hot Pink Metallic": {
+"n": "Bird & Bamboo Hot Pink Metallic",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Lilac Blush Metallic": {
+"n": "Bird & Bamboo Lilac Blush Metallic",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Lavender Metallic": {
+"n": "Bird & Bamboo Lavender Metallic",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Jade Metallic": {
+"n": "Bird & Bamboo Jade Metallic",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Mother Of Dragons Metallic": {
+"n": "Bird & Bamboo Mother Of Dragons Metallic",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Blue Metallic": {
+"n": "Bird & Bamboo Blue Metallic",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"bb:Navy Metallic": {
+"n": "Bird & Bamboo Navy Metallic",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"plm:Chartreuse": {
+"n": "Peace Love Mahjong Chartreuse",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"plm:Dark Green": {
+"n": "Peace Love Mahjong Dark Green",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"plm:Aqua": {
+"n": "Peace Love Mahjong Aqua",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"plm:French Blue": {
+"n": "Peace Love Mahjong French Blue",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"plm:Navy": {
+"n": "Peace Love Mahjong Navy",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"plm:Purple": {
+"n": "Peace Love Mahjong Purple",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"plm:Pink": {
+"n": "Peace Love Mahjong Pink",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"plm:Light Pink": {
+"n": "Peace Love Mahjong Light Pink",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"plm:Lilac": {
+"n": "Peace Love Mahjong Lilac",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"plm:Red": {
+"n": "Peace Love Mahjong Red",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"plm:Cobalt": {
+"n": "Peace Love Mahjong Cobalt",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"plm:White": {
+"n": "Peace Love Mahjong White",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"plm:Mint": {
+"n": "Peace Love Mahjong Mint",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"vr:My Fair Mahjong:Solid White": {
+"n": "My Fair Mahjong White",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"vr:My Fair Mahjong:Solid Macaron Pink": {
+"n": "My Fair Mahjong Macaron Pink",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"vr:My Fair Mahjong:Solid Macaron Blue": {
+"n": "My Fair Mahjong Macaron Blue",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"vr:My Fair Mahjong:Solid Macaron Green": {
+"n": "My Fair Mahjong Macaron Green",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"vr:My Fair Mahjong:Solid Macaron Purple": {
+"n": "My Fair Mahjong Macaron Purple",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"vr:My Fair Mahjong:Solid Magenta": {
+"n": "My Fair Mahjong Magenta",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"vr:My Fair Mahjong:Solid Teal": {
+"n": "My Fair Mahjong Teal",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"vr:My Fair Mahjong:Solid Citrus Green / Chartreuse": {
+"n": "My Fair Mahjong Citrus Green",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"vr:My Fair Mahjong:Solid Indigo Blue": {
+"n": "My Fair Mahjong Indigo Blue",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"vr:My Fair Mahjong:Tortoiseshell": {
+"n": "My Fair Mahjong Tortoiseshell",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"vr:My Fair Mahjong:Appaloosa": {
+"n": "My Fair Mahjong Appaloosa",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"vr:My Fair Mahjong:Transparent Clear": {
+"n": "My Fair Mahjong Clear",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"mm:Hawksbill": {
+"n": "Middle & Main Hawksbill Heritage (tortoise)",
+"bn": "Middle & Main Mahjong",
+"len": 20,
+"src": "products.json body: \"Extended length, 20\\\" long racks\""
+},
+"mahjongrowandco.com/scalloped-deluxe-tortoise-rack": {
+"n": "Mahjong Row & Co. Scalloped Tortoise",
+"bn": "Mahjong Row & Co.",
+"len": 20,
+"src": "product page"
+},
+"shop.andersruff.com/pistachio-acrylic-rack-set-scalloped-pushers": {
+"n": "Anders Ruff Pistachio Green Scalloped",
+"bn": "Anders Ruff",
+"len": 20.0,
+"src": "product page"
+},
+"shop.andersruff.com/mahjenta-pink-acrylic-mahjong-rack-set-scalloped-pushers": {
+"n": "Anders Ruff MAHJenta Pink Scalloped",
+"bn": "Anders Ruff",
+"len": 20.0,
+"src": "product page"
+},
+"shop.andersruff.com/rose-pink-pearl-acrylic-mahjong-rack-set-straight-pushers": {
+"n": "Anders Ruff Rosè Pink Pearl",
+"bn": "Anders Ruff",
+"len": 20.0,
+"src": "product page"
+},
+"shop.andersruff.com/jade-acrylic-mahjong-rack-set-straight-pushers": {
+"n": "Anders Ruff Jade",
+"bn": "Anders Ruff",
+"len": 20.0,
+"src": "product page"
+},
+"www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=52307844137269": {
+"n": "Bam Bird Boutique Indigo Wood",
+"bn": "Bam Bird Boutique",
+"len": 19,
+"src": "product page"
+},
+"www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=52307844170037": {
+"n": "Bam Bird Boutique Slate Blue Wood",
+"bn": "Bam Bird Boutique",
+"len": 19,
+"src": "product page"
+},
+"www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=52307844202805": {
+"n": "Bam Bird Boutique Mulberry Wood",
+"bn": "Bam Bird Boutique",
+"len": 19,
+"src": "product page"
+},
+"www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=52307844235573": {
+"n": "Bam Bird Boutique Teal Wood",
+"bn": "Bam Bird Boutique",
+"len": 19,
+"src": "product page"
+},
+"www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=53195340939573": {
+"n": "Bam Bird Boutique Pink Wood",
+"bn": "Bam Bird Boutique",
+"len": 19,
+"src": "product page"
+},
+"www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=53195340972341": {
+"n": "Bam Bird Boutique Olive Green Wood",
+"bn": "Bam Bird Boutique",
+"len": 19,
+"src": "product page"
+},
+"www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=53195341005109": {
+"n": "Bam Bird Boutique Dusty Lilac Wood",
+"bn": "Bam Bird Boutique",
+"len": 19,
+"src": "product page"
+},
+"www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=53195341037877": {
+"n": "Bam Bird Boutique Periwinkle Wood",
+"bn": "Bam Bird Boutique",
+"len": 19,
+"src": "product page"
+},
+"www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=53275469938997": {
+"n": "Bam Bird Boutique Lagoon Wood",
+"bn": "Bam Bird Boutique",
+"len": 19,
+"src": "product page"
+},
+"www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51324768551221": {
+"n": "Bam Bird Boutique Lucite – Azure",
+"bn": "Bam Bird Boutique",
+"len": 18.5,
+"src": "product page"
+},
+"www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611368245": {
+"n": "Bam Bird Boutique Lucite – Neon",
+"bn": "Bam Bird Boutique",
+"len": 18.5,
+"src": "product page"
+},
+"www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=53275679654197": {
+"n": "Bam Bird Boutique Lucite – Frosted Pink",
+"bn": "Bam Bird Boutique",
+"len": 18.5,
+"src": "product page"
+},
+"www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611433781": {
+"n": "Bam Bird Boutique Lucite – Magenta",
+"bn": "Bam Bird Boutique",
+"len": 18.5,
+"src": "product page"
+},
+"www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611401013": {
+"n": "Bam Bird Boutique Lucite – Pink",
+"bn": "Bam Bird Boutique",
+"len": 18.5,
+"src": "product page"
+},
+"www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611466549": {
+"n": "Bam Bird Boutique Lucite – Tortoise",
+"bn": "Bam Bird Boutique",
+"len": 18.5,
+"src": "product page"
+},
+"www.bamletsmahjong.com/mahjong-acrylic-racks-and-ruffle-pushers-pre-order": {
+"n": "Bam! Let's Mahjong White Acrylic Scalloped",
+"bn": "Bam! Let's Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue?v=55711274926385": {
+"n": "Charleston Mahjong Club Key Lime Wood",
+"bn": "Charleston Mahjong Club",
+"len": 20.0,
+"src": "product page"
+},
+"www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue?v=55711274959153": {
+"n": "Charleston Mahjong Club Azalea Pink Wood",
+"bn": "Charleston Mahjong Club",
+"len": 20.0,
+"src": "product page"
+},
+"www.charlestonmahjongclub.com/clear-acrylic-mahjong-racks-with-magnetic-pushers-set-of-4-20-long": {
+"n": "Charleston Mahjong Club Clear Acrylic",
+"bn": "Charleston Mahjong Club",
+"len": 20.0,
+"src": "product page"
+},
+"mahjmood.com/scalloped-white-and-clear-acrylic-rack-and-pusher-set": {
+"n": "Mahj Mood Scalloped White and Clear Acrylic",
+"bn": "Mahj Mood",
+"len": 20.0,
+"src": "product page"
+},
+"mahjmood.com/navy-blue-acrylic-rack-and-pusher-set-of-4": {
+"n": "Mahj Mood Navy Blue Acrylic",
+"bn": "Mahj Mood",
+"len": 20.0,
+"src": "product page"
+},
+"mahjmood.com/scalloped-tortoise-acrylic-racks-and-pushers": {
+"n": "Mahj Mood Scalloped Tortoise Acrylic",
+"bn": "Mahj Mood",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959156536": {
+"n": "Mahjong Register Navy Pearl Scalloped",
+"bn": "Mahjong Register",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959189304": {
+"n": "Mahjong Register Capri Blue Pearl Scalloped",
+"bn": "Mahjong Register",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959222072": {
+"n": "Mahjong Register Emerald Pearl Scalloped",
+"bn": "Mahjong Register",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959254840": {
+"n": "Mahjong Register Sea Glass Pearl Scalloped",
+"bn": "Mahjong Register",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959287608": {
+"n": "Mahjong Register Peony Blush Pearl Scalloped",
+"bn": "Mahjong Register",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959320376": {
+"n": "Mahjong Register Ivory Oyster Pearl Scalloped",
+"bn": "Mahjong Register",
+"len": 20.0,
+"src": "product page"
+},
+"www.middleandmainmahjong.com/blue-and-white-chinoiserie-mahjong-rack-and-pusher-set-of-4-copy": {
+"n": "Middle & Main White Lace",
+"bn": "Middle & Main Mahjong",
+"len": 20,
+"src": "products.json body: \"Extended length, 20\\\" long racks\""
+},
+"www.middleandmainmahjong.com/blue-and-white-chinoiserie-rack-set-of-4": {
+"n": "Middle & Main Blue and White Chinoiserie",
+"bn": "Middle & Main Mahjong",
+"len": 20,
+"src": "products.json body: \"Extended length, 20\\\" long racks\""
+},
+"myfairmahjong.com/wooden-painted-mahjong-racks-20-set-of-4-blue-and-pink-sets-magnetic-attached-pusher?v=48911322874167": {
+"n": "My Fair Mahjong Macaron Green Wood",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"myfairmahjong.com/wooden-painted-mahjong-racks-20-set-of-4-blue-and-pink-sets-magnetic-attached-pusher?v=48911322906935": {
+"n": "My Fair Mahjong Macaron Pink Wood",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"myfairmahjong.com/wooden-painted-mahjong-racks-20-set-of-4-blue-and-pink-sets-magnetic-attached-pusher?v=49600844038455": {
+"n": "My Fair Mahjong Bright White Wood",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"myfairmahjong.com/wooden-painted-mahjong-racks-20-set-of-4-blue-and-pink-sets-magnetic-attached-pusher?v=51249730847031": {
+"n": "My Fair Mahjong Macaron Blue Wood",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"myfairmahjong.com/acrylic-mahjong-racks?v=52896917750071": {
+"n": "My Fair Mahjong Malachite Dapple",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"myfairmahjong.com/acrylic-mahjong-racks?v=52896919519543": {
+"n": "My Fair Mahjong Pearl White",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"myfairmahjong.com/acrylic-mahjong-racks?v=52896919322935": {
+"n": "My Fair Mahjong Pearl Aqua",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"myfairmahjong.com/acrylic-mahjong-racks?v=52896919683383": {
+"n": "My Fair Mahjong Pearl Blush",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"myfairmahjong.com/acrylic-mahjong-racks?v=52896920207671": {
+"n": "My Fair Mahjong Pearl Blue Crosshatch",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"peacelovemahjong.com/acrylic-burlwood-mahjong-racks-pushers-set-of-4": {
+"n": "Peace Love Mahjong Acrylic Burlwood",
+"bn": "Peace Love Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.viroramahjong.com/wooden-rack-pusher-set?v=49226736009399": {
+"n": "Virora Pink Magnetic Wood",
+"bn": "Virora Mahjong",
+"len": 19,
+"src": "product page text (hinged 18.5-inch, wooden 19-inch)"
+},
+"www.viroramahjong.com/wooden-rack-pusher-set?v=49226735976631": {
+"n": "Virora White Magnetic Wood",
+"bn": "Virora Mahjong",
+"len": 19,
+"src": "product page text (hinged 18.5-inch, wooden 19-inch)"
+},
+"www.viroramahjong.com/wooden-rack-pusher-set?v=49226736042167": {
+"n": "Virora Purple Magnetic Wood",
+"bn": "Virora Mahjong",
+"len": 19,
+"src": "product page text (hinged 18.5-inch, wooden 19-inch)"
+},
+"www.viroramahjong.com/wooden-rack-pusher-set?v=49226736074935": {
+"n": "Virora Maldives Green Magnetic Wood",
+"bn": "Virora Mahjong",
+"len": 19,
+"src": "product page text (hinged 18.5-inch, wooden 19-inch)"
+},
+"www.viroramahjong.com/hinged-mahjong-rack-pusher-set?v=49185641660599": {
+"n": "Virora White Hinged",
+"bn": "Virora Mahjong",
+"len": 18.5,
+"src": "product page text (hinged 18.5-inch, wooden 19-inch)"
+},
+"www.viroramahjong.com/hinged-mahjong-rack-pusher-set?v=49185641627831": {
+"n": "Virora Purple Hinged",
+"bn": "Virora Mahjong",
+"len": 18.5,
+"src": "product page text (hinged 18.5-inch, wooden 19-inch)"
+},
+"www.ymimports.com/nb-mp007-a": {
+"n": "Yellow Mountain Modern Multi-Color",
+"bn": "Yellow Mountain Imports",
+"len": 18,
+"src": "product page"
+},
+"www.ymimports.com/us-rl025-a": {
+"n": "Yellow Mountain Multi-Color Acrylic",
+"bn": "Yellow Mountain Imports",
+"len": 18,
+"src": "product page"
+},
+"www.ymimports.com/us-rl010-a": {
+"n": "Yellow Mountain Purple Acrylic",
+"bn": "Yellow Mountain Imports",
+"len": 18,
+"src": "product page"
+},
+"www.ymimports.com/us-rl027-a": {
+"n": "Yellow Mountain Classic Chestnut Wood",
+"bn": "Yellow Mountain Imports",
+"len": 18,
+"src": "product page"
+},
+"www.ymimports.com/us-rl019-a": {
+"n": "Yellow Mountain Classic Black Wood",
+"bn": "Yellow Mountain Imports",
+"len": 18,
+"src": "product page"
+},
+"www.ymimports.com/us-rl006-a": {
+"n": "Yellow Mountain Jewel Tone Multi-Color Acrylic",
+"bn": "Yellow Mountain Imports",
+"len": 18,
+"src": "product page"
+},
+"mahjmood.com/chocolate-brown-wooden-racks-with-scalloped-pushers": {
+"n": "Mahj Mood Chocolate Brown Wooden",
+"bn": "Mahj Mood",
+"len": 20.0,
+"src": "product page"
+},
+"mahjmood.com/luxe-racks-amethyst": {
+"n": "Mahj Mood Luxe",
+"bn": "Mahj Mood",
+"len": 20.0,
+"src": "product page"
+},
+"mahjmood.com/luxe-racks-grey-marble-acrylic-4": {
+"n": "Mahj Mood Luxe",
+"bn": "Mahj Mood",
+"len": 20.0,
+"src": "product page"
+},
+"mahjmood.com/copy-scalloped-clear-acrylic-rack-and-pusher-set-of-4": {
+"n": "Mahj Mood Scalloped Clear Acrylic",
+"bn": "Mahj Mood",
+"len": 20.0,
+"src": "product page"
+},
+"mahjmood.com/moss-green-wooden-racks-with-scalloped-pushers": {
+"n": "Mahj Mood Palm Beach Green Wooden",
+"bn": "Mahj Mood",
+"len": 20.0,
+"src": "product page"
+},
+"mahjmood.com/scalloped-pink-wooden-rack-and-pusher-set-of-4": {
+"n": "Mahj Mood Pink Wooden",
+"bn": "Mahj Mood",
+"len": 20.0,
+"src": "product page"
+},
+"missmahjong.com/blonde-tortoise-and-brass-acrylic-racks": {
+"n": "Miss Mahjong Blonde Tortoise and Brass Acrylic",
+"bn": "Miss Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"sundaymahjong.com/candy-blue-mahjong-rack-set": {
+"n": "Sunday Mahjong Candy Blue",
+"bn": "Sunday Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"sundaymahjong.com/sunday-cola-mahjong-rack-set": {
+"n": "Sunday Mahjong Sunday Cola",
+"bn": "Sunday Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"sundaymahjong.com/blonde-tortoise-mahjong-rack-set": {
+"n": "Sunday Mahjong Blonde Tortoise",
+"bn": "Sunday Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"sundaymahjong.com/tortoise-mahjong-rack-set": {
+"n": "Sunday Mahjong Tortoise",
+"bn": "Sunday Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"sundaymahjong.com/clear-mahjong-rack-set": {
+"n": "Sunday Mahjong Clear",
+"bn": "Sunday Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"theroyalmahjongsociety.com/mahjong-rack-white": {
+"n": "Royal Mahjong Society Mahjong Racks - White",
+"bn": "Royal Mahjong Society",
+"len": 18.5,
+"src": "product page"
+},
+"theroyalmahjongsociety.com/mahjong-rack-clear": {
+"n": "Royal Mahjong Society Mahjong Rack - Clear",
+"bn": "Royal Mahjong Society",
+"len": 18.5,
+"src": "product page"
+},
+"tigredetartan.com/dove-white-beech-wood-straight-mahjong-racks-with-pushers-custom-storage-bag": {
+"n": "Tigre de Tartan Dove White Beechwood",
+"bn": "Tigre de Tartan",
+"len": 20.0,
+"src": "product page"
+},
+"tigredetartan.com/rich-raisin-beech-wood-straight-mahjong-racks-with-pushers-custom-storage-bag": {
+"n": "Tigre de Tartan Rich Raisin Beechwood",
+"bn": "Tigre de Tartan",
+"len": 20.0,
+"src": "product page"
+},
+"tigredetartan.com/marine-blue-beech-wood-straight-mahjong-racks-with-pushers-custom-storage-bag": {
+"n": "Tigre de Tartan Marine Blue Beechwood",
+"bn": "Tigre de Tartan",
+"len": 20.0,
+"src": "product page"
+},
+"tigredetartan.com/marine-blue-beech-wood-scalloped-mahjong-racks-with-pushers-custom-storage-bag": {
+"n": "Tigre de Tartan Marine Blue Beechwood Scalloped",
+"bn": "Tigre de Tartan",
+"len": 20.0,
+"src": "product page"
+},
+"tigredetartan.com/february-preorder-tortoise-scalloped-acrylic-mahjong-racks-with-magnetic-pushers-set-of-4-with-dust-bag": {
+"n": "Tigre de Tartan Tortoise Acrylic Scalloped",
+"bn": "Tigre de Tartan",
+"len": 20.0,
+"src": "product page"
+},
+"www.bespokemahjong.com/the-ultimate-rack-garden-green": {
+"n": "Bespoke Mahjong The Ultimate",
+"bn": "Bespoke Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.hiphipmahjong.com/santa-baby-racks": {
+"n": "Hip Hip Mahjong Santa Baby",
+"bn": "Hip Hip Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.hiphipmahjong.com/trophy-wife-racks": {
+"n": "Hip Hip Mahjong Trophy Wife",
+"bn": "Hip Hip Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.hiphipmahjong.com/hostess-with-the-mostest-racks": {
+"n": "Hip Hip Mahjong Hostess With The Mostest",
+"bn": "Hip Hip Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"talamahj.com/horizon-rack": {
+"n": "Tala Mahj Horizon Woven Rattan",
+"bn": "Tala Mahj",
+"len": 20.0,
+"src": "product page"
+},
+"talamahj.com/shoreline-mahjong-rack-wavy-pusher-20-inches-set-of-4-ships-oct-1-chocolate-woven-rattan": {
+"n": "Tala Mahj Shoreline Chocolate Woven Rattan",
+"bn": "Tala Mahj",
+"len": 20.0,
+"src": "product page"
+},
+"myfairmahjong.com/wooden-racks?v=53371892990263": {
+"n": "My Fair Mahjong Natural Wood",
+"bn": "My Fair Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53555876069688": {
+"n": "Mahjong Register Jet Set Black",
+"bn": "Mahjong Register",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53555876102456": {
+"n": "Mahjong Register Admiral Navy",
+"bn": "Mahjong Register",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53555876135224": {
+"n": "Mahjong Register Peacock Teal",
+"bn": "Mahjong Register",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53555876167992": {
+"n": "Mahjong Register Kelly Green",
+"bn": "Mahjong Register",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53017141248312": {
+"n": "Mahjong Register Patent Black Scalloped",
+"bn": "Mahjong Register",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53017129550136": {
+"n": "Mahjong Register Carrera Marble",
+"bn": "Mahjong Register",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53017129451832": {
+"n": "Mahjong Register Crystal Clear Scalloped",
+"bn": "Mahjong Register",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=52971299897656": {
+"n": "Mahjong Register Emerald Tortoise Scalloped",
+"bn": "Mahjong Register",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53017129517368": {
+"n": "Mahjong Register Tortoise Club Scalloped",
+"bn": "Mahjong Register",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53017141281080": {
+"n": "Mahjong Register Blonde Tortoise Scalloped",
+"bn": "Mahjong Register",
+"len": 20.0,
+"src": "product page"
+},
+"mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53563340915000": {
+"n": "Mahjong Register Pink Lucite Scalloped",
+"bn": "Mahjong Register",
+"len": 20.0,
+"src": "product page"
+},
+"bb:White Wood Stain": {
+"n": "Bird & Bamboo White Wood Stain",
+"bn": "Bird & Bamboo",
+"len": 20.0,
+"src": "product page"
+},
+"www.yolomahjong.com/journey-to-the-west-golden-wooden-rack-20": {
+"n": "YOLO Mahjong Metallic Gold Wooden",
+"bn": "YOLO Mahjong",
+"len": 20.0,
+"src": "product page"
+},
+"www.yolomahjong.com/journey-to-the-west-tortoiseshell-acrylic-rack-20": {
+"n": "YOLO Mahjong Tortoiseshell Acrylic",
+"bn": "YOLO Mahjong",
+"len": 20.0,
+"src": "product page"
+}
+},
+"sets": {
+"amara": {
+"maker": "Oh My Mahjong",
+"name": "Amara",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"heritage": {
+"maker": "Oh My Mahjong",
+"name": "Heritage 1.0",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"gatsby": {
+"maker": "Oh My Mahjong",
+"name": "Gatsby",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"heritage-2-0": {
+"maker": "Oh My Mahjong",
+"name": "Heritage 2.0",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"drake": {
+"maker": "Oh My Mahjong",
+"name": "Drake",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"lagoon": {
+"maker": "Oh My Mahjong",
+"name": "Lagoon",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"seabreeze": {
+"maker": "Oh My Mahjong",
+"name": "Seabreeze",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"talulah": {
+"maker": "Oh My Mahjong",
+"name": "Talulah",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"willow": {
+"maker": "Oh My Mahjong",
+"name": "Willow",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"cypress-forest": {
+"maker": "Mahjong Row & Co.",
+"name": "Cypress",
+"tw": 0.91,
+"src": "brand default: MRC: 0.91\" W",
+"fits_18_5": true
+},
+"solara": {
+"maker": "Oh My Mahjong",
+"name": "Solara",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"coquette": {
+"maker": "LoveShackFancy x Oh My Mahjong",
+"name": "Coquette",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"emerald": {
+"maker": "Oh My Mahjong",
+"name": "Emerald",
+"tw": 0.87,
+"src": "brand default: OMM: 0.87\" W x 1.25\" H",
+"fits_18_5": true
+},
+"gemma": {
+"maker": "Oh My Mahjong",
+"name": "Gemma",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"glow-wild": {
+"maker": "Oh My Mahjong",
+"name": "Glow Wild",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"jasmine": {
+"maker": "Oh My Mahjong",
+"name": "Jasmine",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"la-fete": {
+"maker": "Oh My Mahjong",
+"name": "La Fete",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"luminaire": {
+"maker": "Oh My Mahjong",
+"name": "Luminaire",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"moonlight": {
+"maker": "Oh My Mahjong",
+"name": "Moonlight",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"nantucket": {
+"maker": "Oh My Mahjong",
+"name": "Nantucket",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"osler": {
+"maker": "Oh My Mahjong",
+"name": "Osler",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"palm-royale": {
+"maker": "Oh My Mahjong",
+"name": "Palm Royale",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"pearlescent": {
+"maker": "Oh My Mahjong",
+"name": "Pearlescent",
+"tw": 0.87,
+"src": "brand default: OMM: 0.87\" W x 1.25\" H",
+"fits_18_5": true
+},
+"pippa": {
+"maker": "Oh My Mahjong",
+"name": "Pippa",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"sierra": {
+"maker": "Oh My Mahjong",
+"name": "Sierra",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"smith": {
+"maker": "Oh My Mahjong",
+"name": "Smith",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"tortoise": {
+"maker": "Bam Bird Boutique",
+"name": "Classic Tortoise",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"jade": {
+"maker": "Miss Mahjong",
+"name": "Miss Classic Jade",
+"tw": 1.0,
+"src": "brand default: not on product pages; Tiffany Oct 26: Miss Mahjong = larger tiles, 20\" racks",
+"fits_18_5": false
+},
+"malachite": {
+"maker": "Miss Mahjong",
+"name": "Miss Classic Malachite",
+"tw": 1.0,
+"src": "brand default: not on product pages; Tiffany Oct 26: Miss Mahjong = larger tiles, 20\" racks",
+"fits_18_5": false
+},
+"birdie": {
+"maker": "Oh My Mahjong",
+"name": "Birdie",
+"tw": 0.87,
+"src": "brand default: OMM: 0.87\" W x 1.25\" H",
+"fits_18_5": true
+},
+"dandy": {
+"maker": "Oh My Mahjong",
+"name": "Dandy",
+"tw": 0.87,
+"src": "brand default: OMM: 0.87\" W x 1.25\" H",
+"fits_18_5": true
+},
+"glitterville": {
+"maker": "Oh My Mahjong",
+"name": "Glitterville",
+"tw": 0.87,
+"src": "brand default: OMM: 0.87\" W x 1.25\" H",
+"fits_18_5": true
+},
+"limoncello": {
+"maker": "Oh My Mahjong",
+"name": "Limoncello",
+"tw": 0.87,
+"src": "brand default: OMM: 0.87\" W x 1.25\" H",
+"fits_18_5": true
+},
+"lola": {
+"maker": "Oh My Mahjong",
+"name": "Lola",
+"tw": 0.87,
+"src": "brand default: OMM: 0.87\" W x 1.25\" H",
+"fits_18_5": true
+},
+"sorbet": {
+"maker": "Oh My Mahjong",
+"name": "Sorbet",
+"tw": 0.87,
+"src": "brand default: OMM: 0.87\" W x 1.25\" H",
+"fits_18_5": true
+},
+"sunset": {
+"maker": "Oh My Mahjong",
+"name": "Sunset",
+"tw": 0.87,
+"src": "brand default: OMM: 0.87\" W x 1.25\" H",
+"fits_18_5": true
+},
+"taylor": {
+"maker": "Oh My Mahjong",
+"name": "Taylor",
+"tw": 0.87,
+"src": "brand default: OMM: 0.87\" W x 1.25\" H",
+"fits_18_5": true
+},
+"dear-santa": {
+"maker": "Anders Ruff",
+"name": "Dear Santa",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"rackin-rudolph": {
+"maker": "Hip Hip Mahjong",
+"name": "Rackin' Rudolph",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"holly-jolly-red": {
+"maker": "Bam! Let's Mahjong",
+"name": "Holly Jolly (Rudolph Red)",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"holly-jolly-green": {
+"maker": "Bam! Let's Mahjong",
+"name": "Holly Jolly (Grinch Green)",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"holly-jolly-pink": {
+"maker": "Bam! Let's Mahjong",
+"name": "Holly Jolly (Sugarplum Pink)",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"nivalee-blue": {
+"maker": "Virora Mahjong",
+"name": "Nivalee (Glacier Blue)",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"tinselle-emerald": {
+"maker": "Virora Mahjong",
+"name": "Tinselle (Emerald Green)",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"tinselle-ruby": {
+"maker": "Virora Mahjong",
+"name": "Tinselle (Ruby Red)",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"nutcracker-ballet": {
+"maker": "Mahj Squad",
+"name": "Nutcracker Ballet",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"cmc-apres-ski": {
+"maker": "Charleston Mahjong Club",
+"name": "Après Ski Club",
+"tw": 1.02,
+"src": "product page",
+"fits_18_5": false
+},
+"amahj-garden-stamped": {
+"maker": "Amahj",
+"name": "Garden Stamped",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"amahj-teal-coastal-signature": {
+"maker": "Amahj",
+"name": "Teal Coastal Signature",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"amahj-round-top-stamped": {
+"maker": "Amahj",
+"name": "Round Top Stamped",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"amahj-pink-coastal-signature": {
+"maker": "Amahj",
+"name": "Pink Coastal Signature",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"amahj-foundation-beginner": {
+"maker": "Amahj",
+"name": "Foundation Beginner",
+"tw": 1.0,
+"src": "brand default: Amahj: 1\" x 1 7/16\"",
+"fits_18_5": false
+},
+"amahj-original-stamped": {
+"maker": "Amahj",
+"name": "Original Stamped",
+"tw": 1.0,
+"src": "brand default: Amahj: 1\" x 1 7/16\"",
+"fits_18_5": false
+},
+"amahj-white-signature": {
+"maker": "Amahj",
+"name": "White Signature",
+"tw": 1.0,
+"src": "brand default: Amahj: 1\" x 1 7/16\"",
+"fits_18_5": false
+},
+"amahj-light-blue-signature": {
+"maker": "Amahj",
+"name": "Light Blue Signature",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"amahj-lilac-signature": {
+"maker": "Amahj",
+"name": "Lilac Signature",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"amahj-navy-signature": {
+"maker": "Amahj",
+"name": "Navy Signature",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"bird-bamboo-the-iconic": {
+"maker": "Bird & Bamboo",
+"name": "The Iconic",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"bird-bamboo-the-madeira": {
+"maker": "Bird & Bamboo",
+"name": "The Madeira",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"bird-bamboo-the-empress": {
+"maker": "Bird & Bamboo",
+"name": "The Empress",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"bird-bamboo-the-allure": {
+"maker": "Bird & Bamboo",
+"name": "The Allure",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"bird-bamboo-the-belle": {
+"maker": "Bird & Bamboo",
+"name": "The Belle",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"bird-bamboo-the-boho-chic": {
+"maker": "Bird & Bamboo",
+"name": "The Boho Chic",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"mahj-mood-radiant-mood-collection-white-pearl": {
+"maker": "Mahj Mood",
+"name": "Radiant Mood Collection White Pearl",
+"tw": 1.0,
+"src": "brand default: Mahj Mood: 1.5\" x 1\"",
+"fits_18_5": false
+},
+"mahj-mood-90s-taffy-pink": {
+"maker": "Mahj Mood",
+"name": "90s Taffy (Pink)",
+"tw": 1.0,
+"src": "brand default: Mahj Mood: 1.5\" x 1\"",
+"fits_18_5": false
+},
+"mahj-mood-90s-pool-party-blue": {
+"maker": "Mahj Mood",
+"name": "90s Pool Party (Blue)",
+"tw": 1.0,
+"src": "brand default: Mahj Mood: 1.5\" x 1\"",
+"fits_18_5": false
+},
+"mahj-mood-mauve-blush": {
+"maker": "Mahj Mood",
+"name": "Mauve-Blush",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"mahj-mood-imperfect-serenity-mood": {
+"maker": "Mahj Mood",
+"name": "Imperfect Serenity Mood",
+"tw": 1.0,
+"src": "brand default: Mahj Mood: 1.5\" x 1\"",
+"fits_18_5": false
+},
+"mahj-mood-ballerina-pink": {
+"maker": "Mahj Mood",
+"name": "Ballerina Pink",
+"tw": 1.0,
+"src": "brand default: Mahj Mood: 1.5\" x 1\"",
+"fits_18_5": false
+},
+"mahjong-row-co-oakley": {
+"maker": "Mahjong Row & Co.",
+"name": "Oakley",
+"tw": 0.91,
+"src": "brand default: MRC: 0.91\" W",
+"fits_18_5": true
+},
+"mahjong-row-co-lyla": {
+"maker": "Mahjong Row & Co.",
+"name": "Lyla",
+"tw": 0.91,
+"src": "brand default: MRC: 0.91\" W",
+"fits_18_5": true
+},
+"mahjong-row-co-mabel": {
+"maker": "Mahjong Row & Co.",
+"name": "Mabel",
+"tw": 0.91,
+"src": "brand default: MRC: 0.91\" W",
+"fits_18_5": true
+},
+"mahjong-row-co-laken": {
+"maker": "Mahjong Row & Co.",
+"name": "Laken",
+"tw": 0.91,
+"src": "brand default: MRC: 0.91\" W",
+"fits_18_5": true
+},
+"mahjong-row-co-honey-weave": {
+"maker": "Mahjong Row & Co.",
+"name": "Honey Weave",
+"tw": 0.91,
+"src": "brand default: MRC: 0.91\" W",
+"fits_18_5": true
+},
+"mahjong-row-co-ash-burl": {
+"maker": "Mahjong Row & Co.",
+"name": "Ash Burl",
+"tw": 0.91,
+"src": "brand default: MRC: 0.91\" W",
+"fits_18_5": true
+},
+"mahjong-row-co-terracotta-marble": {
+"maker": "Mahjong Row & Co.",
+"name": "Terracotta Marble",
+"tw": 0.91,
+"src": "brand default: MRC: 0.91\" W",
+"fits_18_5": true
+},
+"mahjong-studios-christmas-kiss": {
+"maker": "Mahjong Studios",
+"name": "Christmas Kiss",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-lavender-sparkle": {
+"maker": "Mahjong Studios",
+"name": "Lavender Sparkle",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-royal-sparkle": {
+"maker": "Mahjong Studios",
+"name": "Royal Sparkle",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-ruby-sparkle": {
+"maker": "Mahjong Studios",
+"name": "Ruby Sparkle",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-lemon-tide": {
+"maker": "Mahjong Studios",
+"name": "Lemon Tide",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-tile-sets": {
+"maker": "Mahjong Studios",
+"name": "Tiles Only",
+"tw": 0.94,
+"src": "brand default: MS: 30 x 24 mm",
+"fits_18_5": true
+},
+"mahjong-studios-teal-lunaflor": {
+"maker": "Mahjong Studios",
+"name": "Teal Lunaflor",
+"tw": 0.94,
+"src": "brand default: MS: 30 x 24 mm",
+"fits_18_5": true
+},
+"mahjong-studios-forest-silk": {
+"maker": "Mahjong Studios",
+"name": "Forest Silk",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-sage-luxe": {
+"maker": "Mahjong Studios",
+"name": "Sage Luxe",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-american": {
+"maker": "Mahjong Studios",
+"name": "American",
+"tw": 0.94,
+"src": "brand default: MS: 30 x 24 mm",
+"fits_18_5": true
+},
+"mahjong-studios-lilac-bloom": {
+"maker": "Mahjong Studios",
+"name": "Lilac Bloom",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-ocean-bloom": {
+"maker": "Mahjong Studios",
+"name": "Ocean Bloom",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-butter-bloom": {
+"maker": "Mahjong Studios",
+"name": "Butter Bloom",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-yellow-lilac-ocean-blue": {
+"maker": "Mahjong Studios",
+"name": "Yellow Lilac Ocean Blue",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-glitter-sparkle-pink": {
+"maker": "Mahjong Studios",
+"name": "Glitter Sparkle Pink",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-white-edit": {
+"maker": "Mahjong Studios",
+"name": "White Edit",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-bubble-pop-2-color-blue": {
+"maker": "Mahjong Studios",
+"name": "Bubble Pop 2-Color Blue",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-neon-shadow": {
+"maker": "Mahjong Studios",
+"name": "Neon Shadow",
+"tw": 0.94,
+"src": "brand default: MS: 30 x 24 mm",
+"fits_18_5": true
+},
+"mahjong-studios-blue-editon-2-color-blue": {
+"maker": "Mahjong Studios",
+"name": "Blue Edition 2-Color Blue",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-peony-garden": {
+"maker": "Mahjong Studios",
+"name": "Peony Garden",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-blue-element": {
+"maker": "Mahjong Studios",
+"name": "Blue Element",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-2-color-blue-studio": {
+"maker": "Mahjong Studios",
+"name": "Blue Studio",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-rose-dragon": {
+"maker": "Mahjong Studios",
+"name": "Rose Dragon",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-bamboo-sky": {
+"maker": "Mahjong Studios",
+"name": "Bamboo Sky",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-blush-bamboo": {
+"maker": "Mahjong Studios",
+"name": "Blush & Bamboo",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahjong-studios-essential": {
+"maker": "Mahjong Studios",
+"name": "Essential",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"mahj-squad-just-peachy": {
+"maker": "Mahj Squad",
+"name": "Just Peachy",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"mahj-squad-parisian-without-acrylic-box": {
+"maker": "Mahj Squad",
+"name": "Parisian",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"mahj-squad-blue-chinoiserie": {
+"maker": "Mahj Squad",
+"name": "Blue Chinoiserie",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"mahj-squad-palm-springs": {
+"maker": "Mahj Squad",
+"name": "Palm Springs",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"miss-mahjong-miss-out-of-office": {
+"maker": "Miss Mahjong",
+"name": "Miss Out Of Office",
+"tw": 1.0,
+"src": "brand default: not on product pages; Tiffany Oct 26: Miss Mahjong = larger tiles, 20\" racks",
+"fits_18_5": false
+},
+"miss-mahjong-miss-catrina": {
+"maker": "Miss Mahjong",
+"name": "Miss Catrina",
+"tw": 1.0,
+"src": "brand default: not on product pages; Tiffany Oct 26: Miss Mahjong = larger tiles, 20\" racks",
+"fits_18_5": false
+},
+"miss-mahjong-cowgirl-americana-numbered-flower": {
+"maker": "Miss Mahjong",
+"name": "Cowgirl Americana Numbered Flower",
+"tw": 1.0,
+"src": "brand default: not on product pages; Tiffany Oct 26: Miss Mahjong = larger tiles, 20\" racks",
+"fits_18_5": false
+},
+"miss-mahjong-miss-cowgirl": {
+"maker": "Miss Mahjong",
+"name": "Miss Cowgirl",
+"tw": 1.0,
+"src": "brand default: not on product pages; Tiffany Oct 26: Miss Mahjong = larger tiles, 20\" racks",
+"fits_18_5": false
+},
+"miss-mahjong-darling-numbered-flower": {
+"maker": "Miss Mahjong",
+"name": "Darling Numbered Flower",
+"tw": 1.0,
+"src": "brand default: not on product pages; Tiffany Oct 26: Miss Mahjong = larger tiles, 20\" racks",
+"fits_18_5": false
+},
+"miss-mahjong-classic-jade-numbered-flower": {
+"maker": "Miss Mahjong",
+"name": "Classic Jade Numbered Flower",
+"tw": 1.0,
+"src": "brand default: not on product pages; Tiffany Oct 26: Miss Mahjong = larger tiles, 20\" racks",
+"fits_18_5": false
+},
+"miss-mahjong-classic-malachite-numbered-flower": {
+"maker": "Miss Mahjong",
+"name": "Classic Malachite Numbered Flower",
+"tw": 1.0,
+"src": "brand default: not on product pages; Tiffany Oct 26: Miss Mahjong = larger tiles, 20\" racks",
+"fits_18_5": false
+},
+"miss-mahjong-miss-darling-cameo-blue": {
+"maker": "Miss Mahjong",
+"name": "Miss Darling Cameo Blue",
+"tw": 1.0,
+"src": "brand default: not on product pages; Tiffany Oct 26: Miss Mahjong = larger tiles, 20\" racks",
+"fits_18_5": false
+},
+"my-fair-mahjong-the-jubilee-series": {
+"maker": "My Fair Mahjong",
+"name": "The Jubilee Series",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"my-fair-mahjong-the-lumera-series": {
+"maker": "My Fair Mahjong",
+"name": "The Lumera Series",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"my-fair-mahjong-crystal-confetti": {
+"maker": "My Fair Mahjong",
+"name": "Crystal Confetti",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"my-fair-mahjong-the-play-series": {
+"maker": "My Fair Mahjong",
+"name": "The Play Series",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"my-fair-mahjong-the-texas-series": {
+"maker": "My Fair Mahjong",
+"name": "The Texas Series",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"my-fair-mahjong-crystal-prism": {
+"maker": "My Fair Mahjong",
+"name": "Crystal Prism",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"my-fair-mahjong-the-new-england-series": {
+"maker": "My Fair Mahjong",
+"name": "The New England Series",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"my-fair-mahjong-the-scandinavian-folk-art-series": {
+"maker": "My Fair Mahjong",
+"name": "The Scandinavian Folk Art Series",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"my-fair-mahjong-the-park-series": {
+"maker": "My Fair Mahjong",
+"name": "The Park Series",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"my-fair-mahjong-the-hawaii-series": {
+"maker": "My Fair Mahjong",
+"name": "The Hawaii Series",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"my-fair-mahjong-the-california-series": {
+"maker": "My Fair Mahjong",
+"name": "The California Series",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"my-fair-mahjong-the-southwest-series": {
+"maker": "My Fair Mahjong",
+"name": "The Southwest Series",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"anders-ruff-mahj-in-bloom": {
+"maker": "Anders Ruff",
+"name": "Mahj in Bloom",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"anders-ruff-brownstone-bloom": {
+"maker": "Anders Ruff",
+"name": "Brownstone Bloom",
+"tw": 0.98,
+"src": "product page",
+"fits_18_5": false
+},
+"anders-ruff-eau-de-mahj": {
+"maker": "Anders Ruff",
+"name": "Eau De Mahj",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"anders-ruff-house-of-hydrangea": {
+"maker": "Anders Ruff",
+"name": "House of Hydrangea",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"anders-ruff-bams-bubbly": {
+"maker": "Anders Ruff",
+"name": "Bams & Bubbly",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"sunday-mahjong-december-1994": {
+"maker": "Sunday Mahjong",
+"name": "December 1994",
+"tw": 1.0,
+"src": "brand default: Sunday: 1.5in tall x 1in wide",
+"fits_18_5": false
+},
+"sunday-mahjong-plum-panda": {
+"maker": "Sunday Mahjong",
+"name": "Plum Panda",
+"tw": 1.0,
+"src": "brand default: Sunday: 1.5in tall x 1in wide",
+"fits_18_5": false
+},
+"sunday-mahjong-hummingbird": {
+"maker": "Sunday Mahjong",
+"name": "Hummingbird",
+"tw": 1.0,
+"src": "brand default: Sunday: 1.5in tall x 1in wide",
+"fits_18_5": false
+},
+"sunday-mahjong-sunday": {
+"maker": "Sunday Mahjong",
+"name": "Sunday",
+"tw": 1.0,
+"src": "brand default: Sunday: 1.5in tall x 1in wide",
+"fits_18_5": false
+},
+"sunday-mahjong-nature-walk": {
+"maker": "Sunday Mahjong",
+"name": "Nature Walk",
+"tw": 1.0,
+"src": "brand default: Sunday: 1.5in tall x 1in wide",
+"fits_18_5": false
+},
+"royal-mahjong-society-heirloom-collection-crown-jewels": {
+"maker": "Royal Mahjong Society",
+"name": "Heirloom Collection Crown Jewels",
+"tw": 0.89,
+"src": "brand default: RMS: 0.89\" x 1.25\"",
+"fits_18_5": true
+},
+"royal-mahjong-society-heirloom-collection-shore": {
+"maker": "Royal Mahjong Society",
+"name": "Heirloom Collection Shore",
+"tw": 0.89,
+"src": "brand default: RMS: 0.89\" x 1.25\"",
+"fits_18_5": true
+},
+"royal-mahjong-society-heirloom-collection-mahj-royale": {
+"maker": "Royal Mahjong Society",
+"name": "Heirloom Collection Mahj Royale",
+"tw": 0.89,
+"src": "brand default: RMS: 0.89\" x 1.25\"",
+"fits_18_5": true
+},
+"royal-mahjong-society-heirloom-collection-cottage": {
+"maker": "Royal Mahjong Society",
+"name": "Heirloom Collection Cottage",
+"tw": 0.89,
+"src": "brand default: RMS: 0.89\" x 1.25\"",
+"fits_18_5": true
+},
+"royal-mahjong-society-heirloom-collection-girly": {
+"maker": "Royal Mahjong Society",
+"name": "Heirloom Collection Girly",
+"tw": 0.89,
+"src": "brand default: RMS: 0.89\" x 1.25\"",
+"fits_18_5": true
+},
+"royal-mahjong-society-heirloom-collection-island": {
+"maker": "Royal Mahjong Society",
+"name": "Heirloom Collection Island",
+"tw": 0.89,
+"src": "brand default: RMS: 0.89\" x 1.25\"",
+"fits_18_5": true
+},
+"royal-mahjong-society-heirloom-collection-newport": {
+"maker": "Royal Mahjong Society",
+"name": "Heirloom Collection Newport",
+"tw": 0.89,
+"src": "brand default: RMS: 0.89\" x 1.25\"",
+"fits_18_5": true
+},
+"tigre-de-tartan-classic-in-beechwood": {
+"maker": "Tigre de Tartan",
+"name": "Classic Beechwood",
+"tw": 0.9,
+"src": "brand default: TdT: standard tournament 1.2 x 0.9",
+"fits_18_5": true
+},
+"tigre-de-tartan-house-hearts-warm-white-classic": {
+"maker": "Tigre de Tartan",
+"name": "House Hearts Warm White",
+"tw": 0.9,
+"src": "brand default: TdT: standard tournament 1.2 x 0.9",
+"fits_18_5": true
+},
+"tigre-de-tartan-house-tigers-oyster-classic": {
+"maker": "Tigre de Tartan",
+"name": "House Tigers Oyster",
+"tw": 0.9,
+"src": "brand default: TdT: standard tournament 1.2 x 0.9",
+"fits_18_5": true
+},
+"tigre-de-tartan-house-clovers-classic": {
+"maker": "Tigre de Tartan",
+"name": "House Clovers",
+"tw": 0.9,
+"src": "brand default: TdT: standard tournament 1.2 x 0.9",
+"fits_18_5": true
+},
+"bam-bird-boutique-mcm": {
+"maker": "Bam Bird Boutique",
+"name": "MCM (Navy/Olive)",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-bird-boutique-boots-bubbles": {
+"maker": "Bam Bird Boutique",
+"name": "Boots & Bubbles (Blue Swirl)",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-bird-boutique-deco": {
+"maker": "Bam Bird Boutique",
+"name": "Deco (Lagoon)",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-bird-boutique-east-meets-west-tortoise-shell": {
+"maker": "Bam Bird Boutique",
+"name": "East Meets West Tortoise Shell",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-bird-boutique-origami": {
+"maker": "Bam Bird Boutique",
+"name": "Origami (Azure)",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-let-s-mahjong-art-deco": {
+"maker": "Bam! Let's Mahjong",
+"name": "Art Deco",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"bam-let-s-mahjong-hocus-pocus-halloween": {
+"maker": "Bam! Let's Mahjong",
+"name": "Hocus Pocus Halloween",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-let-s-mahjong-the-nantucket-coastal-blue": {
+"maker": "Bam! Let's Mahjong",
+"name": "The Nantucket Coastal Blue",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-let-s-mahjong-the-nantucket-seaside-blue": {
+"maker": "Bam! Let's Mahjong",
+"name": "The Nantucket Seaside Blue",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-let-s-mahjong-mint-and-roses": {
+"maker": "Bam! Let's Mahjong",
+"name": "Mint and Roses",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-let-s-mahjong-the-palm-royale-lemon-drop": {
+"maker": "Bam! Let's Mahjong",
+"name": "The Palm Royale Lemon Drop",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-let-s-mahjong-the-palm-royale-tangerine-twist": {
+"maker": "Bam! Let's Mahjong",
+"name": "The Palm Royale Tangerine Twist",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-let-s-mahjong-the-palm-royale-strawberry-sangria": {
+"maker": "Bam! Let's Mahjong",
+"name": "The Palm Royale Strawberry Sangria",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-let-s-mahjong-grandmillennial-pink": {
+"maker": "Bam! Let's Mahjong",
+"name": "Grandmillennial Pink",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-let-s-mahjong-grandmillennial-green": {
+"maker": "Bam! Let's Mahjong",
+"name": "Grandmillennial Green",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-let-s-mahjong-grandmillennial-blue": {
+"maker": "Bam! Let's Mahjong",
+"name": "Grandmillennial Blue",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-let-s-mahjong-garden-party-sky-blue": {
+"maker": "Bam! Let's Mahjong",
+"name": "Garden Party Sky Blue",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-let-s-mahjong-garden-party-petal-pink": {
+"maker": "Bam! Let's Mahjong",
+"name": "Garden Party Petal Pink",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-let-s-mahjong-garden-party-sea-glass-green": {
+"maker": "Bam! Let's Mahjong",
+"name": "Garden Party Sea-Glass Green",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-let-s-mahjong-garden-party-lavender-bloom": {
+"maker": "Bam! Let's Mahjong",
+"name": "Garden Party Lavender Bloom",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"bespoke-mahjong-bespoke-x-gray-malin-beach-club": {
+"maker": "Bespoke Mahjong",
+"name": "Gray Malin Beach Club (Cabana Blue)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-bespoke-x-gray-malin-getaway-dogs-xl-mega": {
+"maker": "Bespoke Mahjong",
+"name": "Bespoke X Gray Malin Getaway Dogs XL Mega",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-grateful-dead-x-bespoke-mahjong-xl-mega": {
+"maker": "Bespoke Mahjong",
+"name": "Grateful Dead x Bespoke Mahjong XL Mega",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-bespoke-x-corey-paige-color-crush-xl-mega": {
+"maker": "Bespoke Mahjong",
+"name": "Bespoke X Corey Paige Color Crush XL Mega",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"charleston-mahjong-club-the-country-club-edition": {
+"maker": "Charleston Mahjong Club",
+"name": "The Country Club Edition",
+"tw": 1.02,
+"src": "product page",
+"fits_18_5": false
+},
+"hip-hip-mahjong-so-bam-grateful": {
+"maker": "Hip Hip Mahjong",
+"name": "So Bam Grateful",
+"tw": 0.94,
+"src": "brand default: Hip Hip: 24 x 34 mm",
+"fits_18_5": true
+},
+"hip-hip-mahjong-hoppy-east-hare": {
+"maker": "Hip Hip Mahjong",
+"name": "Hoppy EAST-Hare",
+"tw": 0.94,
+"src": "brand default: Hip Hip: 24 x 34 mm",
+"fits_18_5": true
+},
+"hip-hip-mahjong-nativity": {
+"maker": "Hip Hip Mahjong",
+"name": "Nativity",
+"tw": 0.94,
+"src": "brand default: Hip Hip: 24 x 34 mm",
+"fits_18_5": true
+},
+"hip-hip-mahjong-mahj-o-ween": {
+"maker": "Hip Hip Mahjong",
+"name": "Mahj-O-Ween",
+"tw": 0.94,
+"src": "brand default: Hip Hip: 24 x 34 mm",
+"fits_18_5": true
+},
+"hip-hip-mahjong-the-house": {
+"maker": "Hip Hip Mahjong",
+"name": "The House",
+"tw": 0.94,
+"src": "brand default: Hip Hip: 24 x 34 mm",
+"fits_18_5": true
+},
+"hip-hip-mahjong-let-freedom-ring": {
+"maker": "Hip Hip Mahjong",
+"name": "Let Freedom Ring",
+"tw": 0.94,
+"src": "brand default: Hip Hip: 24 x 34 mm",
+"fits_18_5": true
+},
+"hip-hip-mahjong-birthday": {
+"maker": "Hip Hip Mahjong",
+"name": "Birthday",
+"tw": 0.94,
+"src": "brand default: Hip Hip: 24 x 34 mm",
+"fits_18_5": true
+},
+"hip-hip-mahjong-celebration": {
+"maker": "Hip Hip Mahjong",
+"name": "Celebration",
+"tw": 0.94,
+"src": "brand default: Hip Hip: 24 x 34 mm",
+"fits_18_5": true
+},
+"let-s-mahj-on-let-s-wander": {
+"maker": "Let's Mahj On",
+"name": "Let's Wander!",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"let-s-mahj-on-let-s-be-iconic-jeweled-purple": {
+"maker": "Let's Mahj On",
+"name": "Let's Be Iconic! Jeweled Purple",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"let-s-mahj-on-let-s-garden-party": {
+"maker": "Let's Mahj On",
+"name": "Let's Garden Party!",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"let-s-mahj-on-let-s-game-set-mahj": {
+"maker": "Let's Mahj On",
+"name": "Let's Game. Set. Mahj!",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"let-s-mahj-on-let-s-be-iconic-brilliant-pink": {
+"maker": "Let's Mahj On",
+"name": "Let's Be Iconic! Brilliant Pink",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"let-s-mahj-on-let-s-get-tropical": {
+"maker": "Let's Mahj On",
+"name": "Let's Get Tropical!",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"let-s-mahj-on-let-s-be-iconic-jeweled-green": {
+"maker": "Let's Mahj On",
+"name": "Let's Be Iconic! Jeweled Green",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"let-s-mahj-on-let-s-get-nautical": {
+"maker": "Let's Mahj On",
+"name": "Let's Get Nautical!",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"let-s-mahj-on-let-s-cocktail-party": {
+"maker": "Let's Mahj On",
+"name": "Let's Cocktail Party!",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"mac-miller-mahjong-red-white-blues-collection": {
+"maker": "Mac + Miller Mahjong",
+"name": "Red White & Blues Collection",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"mac-miller-mahjong-heirloom-collection-fire-fortune-ember-fire": {
+"maker": "Mac + Miller Mahjong",
+"name": "Fire + Fortune (Ember)",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"mac-miller-mahjong-heirloom-collection-fire-fortune-verdant-fortune": {
+"maker": "Mac + Miller Mahjong",
+"name": "Fire + Fortune (Verdant)",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"mac-miller-mahjong-laissez-les-bons-temps-rouler-collection": {
+"maker": "Mac + Miller Mahjong",
+"name": "Laissez Les Bons Temps Rouler Collection",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"mac-miller-mahjong-sweet-dreams-collection": {
+"maker": "Mac + Miller Mahjong",
+"name": "Sweet Dreams Collection",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"middle-main-mahjong-peach-pine": {
+"maker": "Middle & Main Mahjong",
+"name": "Peach & Pine",
+"tw": 1.0,
+"src": "brand default: M&M tile listings: 1.5\" x 1\" x 0.4\"",
+"fits_18_5": false
+},
+"middle-main-mahjong-barrier-island": {
+"maker": "Middle & Main Mahjong",
+"name": "Barrier Island",
+"tw": 1.0,
+"src": "brand default: M&M tile listings: 1.5\" x 1\" x 0.4\"",
+"fits_18_5": false
+},
+"middle-main-mahjong-sunshine": {
+"maker": "Middle & Main Mahjong",
+"name": "Sunshine",
+"tw": 1.0,
+"src": "brand default: M&M tile listings: 1.5\" x 1\" x 0.4\"",
+"fits_18_5": false
+},
+"middle-main-mahjong-palmetto": {
+"maker": "Middle & Main Mahjong",
+"name": "Palmetto",
+"tw": 1.0,
+"src": "brand default: M&M tile listings: 1.5\" x 1\" x 0.4\"",
+"fits_18_5": false
+},
+"middle-main-mahjong-charleston": {
+"maker": "Middle & Main Mahjong",
+"name": "Charleston",
+"tw": 1.0,
+"src": "brand default: M&M tile listings: 1.5\" x 1\" x 0.4\"",
+"fits_18_5": false
+},
+"oh-my-mahjong-papaya-spritz": {
+"maker": "Oh My Mahjong",
+"name": "Papaya Spritz",
+"tw": 0.87,
+"src": "brand default: OMM: 0.87\" W x 1.25\" H",
+"fits_18_5": true
+},
+"oh-my-mahjong-sunburst-debutante": {
+"maker": "Oh My Mahjong",
+"name": "Sunburst Debutante",
+"tw": 0.87,
+"src": "brand default: OMM: 0.87\" W x 1.25\" H",
+"fits_18_5": true
+},
+"oh-my-mahjong-poppy-debutante": {
+"maker": "Oh My Mahjong",
+"name": "Poppy Debutante",
+"tw": 0.87,
+"src": "brand default: OMM: 0.87\" W x 1.25\" H",
+"fits_18_5": true
+},
+"oh-my-mahjong-cadet-debutante": {
+"maker": "Oh My Mahjong",
+"name": "Cadet Debutante",
+"tw": 0.87,
+"src": "brand default: OMM: 0.87\" W x 1.25\" H",
+"fits_18_5": true
+},
+"oh-my-mahjong-jardin-debutante": {
+"maker": "Oh My Mahjong",
+"name": "Jardin Debutante",
+"tw": 0.87,
+"src": "brand default: OMM: 0.87\" W x 1.25\" H",
+"fits_18_5": true
+},
+"virora-mahjong-christmas-collection-ii-nivalee-emerald-green": {
+"maker": "Virora Mahjong",
+"name": "Nivalee Emerald Green",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"virora-mahjong-sylvaria": {
+"maker": "Virora Mahjong",
+"name": "Sylvaria",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"virora-mahjong-aveline": {
+"maker": "Virora Mahjong",
+"name": "Aveline",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"virora-mahjong-lilac-e": {
+"maker": "Virora Mahjong",
+"name": "Lilacée",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"virora-mahjong-flor-a": {
+"maker": "Virora Mahjong",
+"name": "Floréa",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"virora-mahjong-viozelle": {
+"maker": "Virora Mahjong",
+"name": "Viozelle",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"virora-mahjong-lanisse": {
+"maker": "Virora Mahjong",
+"name": "Élanisse",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"virora-mahjong-rosanelle": {
+"maker": "Virora Mahjong",
+"name": "Rosanelle",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"virora-mahjong-marivelle": {
+"maker": "Virora Mahjong",
+"name": "Marivelle",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"virora-mahjong-florielle": {
+"maker": "Virora Mahjong",
+"name": "Florielle",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"virora-mahjong-am-thisse": {
+"maker": "Virora Mahjong",
+"name": "Améthisse",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"virora-mahjong-iriselle": {
+"maker": "Virora Mahjong",
+"name": "Iriselle",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"virora-mahjong-petal-e": {
+"maker": "Virora Mahjong",
+"name": "Petalée",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"wren-mats-simply": {
+"maker": "Wren Mats",
+"name": "Simply",
+"tw": null,
+"src": "brand default: unknown; default large (only 18.5\" racks are held back)",
+"fits_18_5": false
+},
+"yellow-mountain-imports-oceana": {
+"maker": "Yellow Mountain Imports",
+"name": "Oceana",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-toucan": {
+"maker": "Yellow Mountain Imports",
+"name": "Toucan",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-easy-reader": {
+"maker": "Yellow Mountain Imports",
+"name": "Easy Reader",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-panda": {
+"maker": "Yellow Mountain Imports",
+"name": "Panda",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-god-of-fortune": {
+"maker": "Yellow Mountain Imports",
+"name": "God of Fortune",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-jet-set": {
+"maker": "Yellow Mountain Imports",
+"name": "Jet Set",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-outlaws-of-the-marsh-mahjong-treasure-set": {
+"maker": "Yellow Mountain Imports",
+"name": "Outlaws of the Marsh Mahjong Treasure Set",
+"tw": 0.91,
+"src": "brand default: ",
+"fits_18_5": true
+},
+"yellow-mountain-imports-chinoise": {
+"maker": "Yellow Mountain Imports",
+"name": "Chinoise",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-huntington": {
+"maker": "Yellow Mountain Imports",
+"name": "Huntington",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-papillon": {
+"maker": "Yellow Mountain Imports",
+"name": "Papillon",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-sakura": {
+"maker": "Yellow Mountain Imports",
+"name": "Sakura",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-pepper": {
+"maker": "Yellow Mountain Imports",
+"name": "Pepper",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-pattaya": {
+"maker": "Yellow Mountain Imports",
+"name": "Pattaya",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-peony": {
+"maker": "Yellow Mountain Imports",
+"name": "Peony",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-koi": {
+"maker": "Yellow Mountain Imports",
+"name": "Koi",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-pink-sparkles": {
+"maker": "Yellow Mountain Imports",
+"name": "Pink Sparkles",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-little-bird": {
+"maker": "Yellow Mountain Imports",
+"name": "Little Bird",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-the-classic": {
+"maker": "Yellow Mountain Imports",
+"name": "The Classic",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-golden-fortune": {
+"maker": "Yellow Mountain Imports",
+"name": "Golden Fortune",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"sunday-mahjong-sunday-blues": {
+"maker": "Sunday Mahjong",
+"name": "Sunday Blues",
+"tw": 1.0,
+"src": "brand default: Sunday: 1.5in tall x 1in wide",
+"fits_18_5": false
+},
+"bam-bird-boutique-classic-mahjong-tile-set": {
+"maker": "Bam Bird Boutique",
+"name": "Classic (Rose)",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"hip-hip-mahjong-i-mahj": {
+"maker": "Hip Hip Mahjong",
+"name": "I ❤️ Mahj",
+"tw": 0.94,
+"src": "brand default: Hip Hip: 24 x 34 mm",
+"fits_18_5": true
+},
+"mahjong-studios-amber-jade": {
+"maker": "Mahjong Studios",
+"name": "Amber Jade",
+"tw": 0.94,
+"src": "brand default: MS: 30 x 24 mm",
+"fits_18_5": true
+},
+"yellow-mountain-imports-aloha": {
+"maker": "Yellow Mountain Imports",
+"name": "Aloha",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-atlantica": {
+"maker": "Yellow Mountain Imports",
+"name": "Atlantica",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-canyon-clay": {
+"maker": "Yellow Mountain Imports",
+"name": "Canyon Clay",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-celestial-harmony": {
+"maker": "Yellow Mountain Imports",
+"name": "Celestial Harmony",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-chinoise-ii": {
+"maker": "Yellow Mountain Imports",
+"name": "Chinoise II",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-classic-luxe": {
+"maker": "Yellow Mountain Imports",
+"name": "Classic Luxe",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-classic-royale-ii": {
+"maker": "Yellow Mountain Imports",
+"name": "Classic Royale II",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-harbor-mint": {
+"maker": "Yellow Mountain Imports",
+"name": "Harbor Mint",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-harbor-snow": {
+"maker": "Yellow Mountain Imports",
+"name": "Harbor Snow",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-harbor-tide": {
+"maker": "Yellow Mountain Imports",
+"name": "Harbor Tide",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-heather": {
+"maker": "Yellow Mountain Imports",
+"name": "Heather",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-indigo-bay": {
+"maker": "Yellow Mountain Imports",
+"name": "Indigo Bay",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-indigo-tides": {
+"maker": "Yellow Mountain Imports",
+"name": "Indigo Tides",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-ivory-pinstripe": {
+"maker": "Yellow Mountain Imports",
+"name": "Ivory Pinstripe",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-ivory-ridge": {
+"maker": "Yellow Mountain Imports",
+"name": "Ivory Ridge",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-ivory-stripes": {
+"maker": "Yellow Mountain Imports",
+"name": "Ivory Stripes",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-jade-horizon": {
+"maker": "Yellow Mountain Imports",
+"name": "Jade Horizon",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-mojave": {
+"maker": "Yellow Mountain Imports",
+"name": "Mojave",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-peony-blush": {
+"maker": "Yellow Mountain Imports",
+"name": "Peony Blush",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-rosehill": {
+"maker": "Yellow Mountain Imports",
+"name": "Rosehill",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-sakura-pink": {
+"maker": "Yellow Mountain Imports",
+"name": "Sakura Pink",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-seabreeze": {
+"maker": "Yellow Mountain Imports",
+"name": "Seabreeze",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"yellow-mountain-imports-verdant-spring": {
+"maker": "Yellow Mountain Imports",
+"name": "Verdant Spring",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-bird-boutique-classic-lavender": {
+"maker": "Bam Bird Boutique",
+"name": "Classic (Lavender)",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-bird-boutique-classic-teal": {
+"maker": "Bam Bird Boutique",
+"name": "Classic (Teal)",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-bird-boutique-east-meets-west-emerald": {
+"maker": "Bam Bird Boutique",
+"name": "East Meets West (Emerald)",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-bird-boutique-east-meets-west-periwinkle": {
+"maker": "Bam Bird Boutique",
+"name": "East Meets West (Periwinkle)",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-bird-boutique-origami-timber": {
+"maker": "Bam Bird Boutique",
+"name": "Origami (Timber)",
+"tw": 0.9,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-bird-boutique-deco-mulberry": {
+"maker": "Bam Bird Boutique",
+"name": "Deco (Mulberry)",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-bird-boutique-deco-indigo": {
+"maker": "Bam Bird Boutique",
+"name": "Deco (Indigo)",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-bird-boutique-mcm-olive-pink": {
+"maker": "Bam Bird Boutique",
+"name": "MCM (Olive/Pink)",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"bam-bird-boutique-boots-and-bubbles-pink-swirl": {
+"maker": "Bam Bird Boutique",
+"name": "Boots & Bubbles (Pink Swirl)",
+"tw": 0.91,
+"src": "product page",
+"fits_18_5": true
+},
+"bespoke-mahjong-lucky-charms-marshmallow-pink": {
+"maker": "Bespoke Mahjong",
+"name": "Lucky Charms (Marshmallow Pink)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-pop-diva-cotton-candy-pearl": {
+"maker": "Bespoke Mahjong",
+"name": "Pop Diva (Cotton Candy Pearl)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-pop-diva-bright-white": {
+"maker": "Bespoke Mahjong",
+"name": "Pop Diva (Bright White)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-springtime-safari-petal-pink": {
+"maker": "Bespoke Mahjong",
+"name": "Springtime Safari (Petal Pink)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-springtime-safari-sky-blue": {
+"maker": "Bespoke Mahjong",
+"name": "Springtime Safari (Sky Blue)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-the-chalet-frosty-lilac": {
+"maker": "Bespoke Mahjong",
+"name": "The Chalet (Frosty Lilac)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-the-chalet-frosty-pearl-white": {
+"maker": "Bespoke Mahjong",
+"name": "The Chalet (Frosty Pearl White)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-year-of-the-horse-pearl-cream": {
+"maker": "Bespoke Mahjong",
+"name": "Year of the Horse (Pearl Cream)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-year-of-the-horse-saddle-pink": {
+"maker": "Bespoke Mahjong",
+"name": "Year of the Horse (Saddle Pink)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-garden-glow-matcha-pearl": {
+"maker": "Bespoke Mahjong",
+"name": "Garden Glow (Matcha Pearl)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-gray-malin-getaway-dogs-beverly-hills-pink": {
+"maker": "Bespoke Mahjong",
+"name": "Gray Malin Getaway Dogs (Beverly Hills Pink)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-gray-malin-getaway-dogs-icy-blue": {
+"maker": "Bespoke Mahjong",
+"name": "Gray Malin Getaway Dogs (Icy Blue)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-gray-malin-getaway-dogs-bright-white": {
+"maker": "Bespoke Mahjong",
+"name": "Gray Malin Getaway Dogs (Bright White)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-corey-paige-color-crush-pearl-crush": {
+"maker": "Bespoke Mahjong",
+"name": "Corey Paige Color Crush (Pearl Crush)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-corey-paige-color-crush-bright-white": {
+"maker": "Bespoke Mahjong",
+"name": "Corey Paige Color Crush (Bright White)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-grateful-dead-rose-pink-tie-dye-pearl": {
+"maker": "Bespoke Mahjong",
+"name": "Grateful Dead (Rose Pink Tie Dye Pearl)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-grateful-dead-sunshine-daydream-tie-dye-pearl": {
+"maker": "Bespoke Mahjong",
+"name": "Grateful Dead (Sunshine Daydream Tie Dye Pearl)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"bespoke-mahjong-grateful-dead-stealie-blue-tie-dye-pearl": {
+"maker": "Bespoke Mahjong",
+"name": "Grateful Dead (Stealie Blue Tie Dye Pearl)",
+"tw": 1.18,
+"src": "Bespoke tiles 1\"+ (XL Mega 40x30mm); largest tiles",
+"fits_18_5": false
+},
+"tala-mahj-tradewind-sage-jade": {
+"maker": "Tala Mahj",
+"name": "Tradewind (Sage Jade)",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"tala-mahj-tradewind-emerald-jade": {
+"maker": "Tala Mahj",
+"name": "Tradewind (Emerald Jade)",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"tala-mahj-tradewind-tortoise": {
+"maker": "Tala Mahj",
+"name": "Tradewind (Tortoise)",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"tala-mahj-tradewind-aqua": {
+"maker": "Tala Mahj",
+"name": "Tradewind (Aqua)",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"tala-mahj-tradewind-petal": {
+"maker": "Tala Mahj",
+"name": "Tradewind (Petal)",
+"tw": 0.94,
+"src": "product page",
+"fits_18_5": true
+},
+"my-fair-mahjong-style-of-your-life-series-pearl-green": {
+"maker": "My Fair Mahjong",
+"name": "Style of Your Life Series (Pearl Green)",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"my-fair-mahjong-legacy-wave-series-lavender-haze": {
+"maker": "My Fair Mahjong",
+"name": "Legacy Wave Series (Lavender Haze)",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"my-fair-mahjong-florida-series": {
+"maker": "My Fair Mahjong",
+"name": "Florida Series",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"my-fair-mahjong-motor-city-series": {
+"maker": "My Fair Mahjong",
+"name": "Motor City Series",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"my-fair-mahjong-southeast-series": {
+"maker": "My Fair Mahjong",
+"name": "Southeast Series",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"my-fair-mahjong-anywhere-series": {
+"maker": "My Fair Mahjong",
+"name": "Anywhere Series",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"my-fair-mahjong-nyc-series": {
+"maker": "My Fair Mahjong",
+"name": "NYC Series",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"peace-love-mahjong-merry-nutcracker": {
+"maker": "Peace Love Mahjong",
+"name": "Merry Nutcracker",
+"tw": 1.0,
+"src": "brand default: PLM product pages: 1\"-1.1\" x 1-7/16\"",
+"fits_18_5": false
+},
+"peace-love-mahjong-og-desert-dreams": {
+"maker": "Peace Love Mahjong",
+"name": "OG Desert Dreams",
+"tw": 1.0,
+"src": "brand default: PLM product pages: 1\"-1.1\" x 1-7/16\"",
+"fits_18_5": false
+},
+"peace-love-mahjong-mod-french-blue": {
+"maker": "Peace Love Mahjong",
+"name": "Mod French Blue",
+"tw": 1.0,
+"src": "brand default: PLM product pages: 1\"-1.1\" x 1-7/16\"",
+"fits_18_5": false
+},
+"peace-love-mahjong-mod-chartreuse": {
+"maker": "Peace Love Mahjong",
+"name": "Mod Chartreuse",
+"tw": 1.0,
+"src": "brand default: PLM product pages: 1\"-1.1\" x 1-7/16\"",
+"fits_18_5": false
+},
+"peace-love-mahjong-og-pretty-in-pink": {
+"maker": "Peace Love Mahjong",
+"name": "OG Pretty in Pink",
+"tw": 1.0,
+"src": "brand default: PLM product pages: 1\"-1.1\" x 1-7/16\"",
+"fits_18_5": false
+},
+"peace-love-mahjong-og-vibrant-vibes": {
+"maker": "Peace Love Mahjong",
+"name": "OG Vibrant Vibes",
+"tw": 1.0,
+"src": "brand default: PLM product pages: 1\"-1.1\" x 1-7/16\"",
+"fits_18_5": false
+},
+"peace-love-mahjong-taylor-s-tiles": {
+"maker": "Peace Love Mahjong",
+"name": "Taylor's Tiles",
+"tw": 1.0,
+"src": "brand default: PLM product pages: 1\"-1.1\" x 1-7/16\"",
+"fits_18_5": false
+},
+"peace-love-mahjong-og-totally-teal": {
+"maker": "Peace Love Mahjong",
+"name": "OG Totally Teal",
+"tw": 1.0,
+"src": "brand default: PLM product pages: 1\"-1.1\" x 1-7/16\"",
+"fits_18_5": false
+},
+"charleston-mahjong-club-hunt-club-edition": {
+"maker": "Charleston Mahjong Club",
+"name": "Hunt Club Edition",
+"tw": 1.02,
+"src": "product page",
+"fits_18_5": false
+},
+"charleston-mahjong-club-cocktail-club-2-0-edition": {
+"maker": "Charleston Mahjong Club",
+"name": "Cocktail Club 2.0 Edition",
+"tw": 1.02,
+"src": "product page",
+"fits_18_5": false
+},
+"charleston-mahjong-club-yacht-club-edition": {
+"maker": "Charleston Mahjong Club",
+"name": "Yacht Club Edition",
+"tw": 1.02,
+"src": "product page",
+"fits_18_5": false
+},
+"royal-mahjong-society-studio-series-crown-jewels": {
+"maker": "Royal Mahjong Society",
+"name": "Studio Series Crown Jewels",
+"tw": 0.89,
+"src": "brand default: RMS: 0.89\" x 1.25\"",
+"fits_18_5": true
+},
+"royal-mahjong-society-studio-series-cottage": {
+"maker": "Royal Mahjong Society",
+"name": "Studio Series Cottage",
+"tw": 0.89,
+"src": "brand default: RMS: 0.89\" x 1.25\"",
+"fits_18_5": true
+},
+"royal-mahjong-society-studio-series-newport": {
+"maker": "Royal Mahjong Society",
+"name": "Studio Series Newport",
+"tw": 0.89,
+"src": "brand default: RMS: 0.89\" x 1.25\"",
+"fits_18_5": true
+},
+"royal-mahjong-society-studio-series-island": {
+"maker": "Royal Mahjong Society",
+"name": "Studio Series Island",
+"tw": 0.89,
+"src": "brand default: RMS: 0.89\" x 1.25\"",
+"fits_18_5": true
+},
+"royal-mahjong-society-studio-series-girly": {
+"maker": "Royal Mahjong Society",
+"name": "Studio Series Girly",
+"tw": 0.89,
+"src": "brand default: RMS: 0.89\" x 1.25\"",
+"fits_18_5": true
+},
+"mahj-mood-the-eloise-collection": {
+"maker": "Mahj Mood",
+"name": "The Eloise Collection",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"mahj-mood-the-bow-and-bloom-collection": {
+"maker": "Mahj Mood",
+"name": "The Bow and Bloom Collection",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"amahj-on-the-water-signature": {
+"maker": "Amahj",
+"name": "On the Water Signature",
+"tw": 1.0,
+"src": "brand default: Amahj: 1\" x 1 7/16\"",
+"fits_18_5": false
+},
+"anders-ruff-green-light-gatsby": {
+"maker": "Anders Ruff",
+"name": "Green Light Gatsby",
+"tw": 0.98,
+"src": "product page",
+"fits_18_5": false
+},
+"mahjong-studios-lunaflor-mint": {
+"maker": "Mahjong Studios",
+"name": "Lunaflor (Mint)",
+"tw": 0.94,
+"src": "brand default: MS: 30 x 24 mm",
+"fits_18_5": true
+},
+"mahjong-co-kaleidoscope": {
+"maker": "Mahjong Co.",
+"name": "Kaleidoscope",
+"tw": 0.87,
+"src": "product page",
+"fits_18_5": true
+},
+"my-fair-mahjong-the-jubilee-series-midnight-blue": {
+"maker": "My Fair Mahjong",
+"name": "The Jubilee Series (Midnight Blue)",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+},
+"spirit-of-christmas": {
+"maker": "Peace Love Mahjong",
+"name": "Spirit of Christmas",
+"tw": 1.0,
+"src": "brand default: PLM product pages: 1\"-1.1\" x 1-7/16\"",
+"fits_18_5": false
+},
+"yolo-journey-to-the-west": {
+"maker": "YOLO Mahjong",
+"name": "Journey to the West",
+"tw": 1.0,
+"src": "product page",
+"fits_18_5": false
+}
+}
+}
