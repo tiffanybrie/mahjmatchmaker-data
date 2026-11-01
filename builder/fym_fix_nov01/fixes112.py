@@ -8,8 +8,8 @@ made or standing rules (no new taste calls). Idempotent. Run AFTER adds112.py. U
     the real YMI photo (assets/fym-photos-oct30/tiles/yellow-mountain-imports-ivory-pinstripe.jpg: full face grid + back), no
     'Photo coming soon'; Pinstripe + Ridge sets/tiles hidden with merged_into (not deleted), their m carried over.
  4  Holiday calls Oct 29 (config/tiffany-color-notes/2026-10-29-holiday-calls.json): PLM Sugarplum Plaid / Blue Stripes / Blue
-    Blooms -> holiday (were not in v110); the 8 'works_for_holiday_keep' mats -> wfh (bottom of Holiday). Liberty + Crimson
-    Harvest stay year-round (already so).
+    Blooms -> holiday (were not in v110; locks updated). The 'works_for_holiday_keep' group stays in the holiday albums (no FYM
+    wfh: that flag is tied to late-calls works_for_holiday). Liberty + Crimson Harvest stay year-round (already so).
  5  Chinoiserie Cheer (BJ&J): unhide on the flat photo assets/mats/v95-etsy/chinoiserie-cheer-flat.jpg (Tiffany sent it Oct 29)
     -> photo swap via v97_matwhite mechanics (replace112 below), flag ok, off the Questionable list.
  6  Poppins (OMM) = her real swipe picks (book FG8AbqV3YCXtURkQFbuncj, 19 YES): add to those sets' m (rule 4 'Tiffany's match').
@@ -52,9 +52,24 @@ if T[KEEP].get('soon'):
             have = {e[0] for e in ks['m']}
             ks['m'] += [e for e in gs['m'] if e[0] not in have]
             gs['hid'] = 1; gs['merged_into'] = ks['slug']
-        T[g]['hid'] = 1; T[g]['merged_into'] = KEEP
+        T[g]['hid'] = 1; T[g]['merged_into'] = KEEP; T[g].pop('soon', None)
     LK['tiles'][KEEP] = {'set': 'Ivory Stripes', 'src': T[KEEP]['src'], 'full': T[KEEP]['full'], 'pile': 'p112ymiivory'}
     log.append('3 YMI Ivory merged into Ivory Stripes (real photo)')
+# config records the Oct 30 decision (superseding Oct 26 8:56am 'Photo coming soon'), written at build time so v111 gates stay valid
+YS = json.load(open(REPO + 'config/fym-ymi-splits-oct26.json'))
+if any(k_ in YS.get('soon', []) for k_ in [KEEP] + GONE):
+    YS['soon'] = [k_ for k_ in YS['soon'] if k_ not in [KEEP] + GONE]
+    YS['soon_note_nov01'] = 'Tiffany Oct 30 10:34am: the three Ivory sets are ONE set -> merged into Ivory Stripes with a real photo (v112).'
+    json.dump(YS, open(REPO + 'config/fym-ymi-splits-oct26.json', 'w'), indent=1, ensure_ascii=False)
+TU = REPO + 'builder/fym_flags/tile_photo_upgrades.json'
+if os.path.exists(TU):
+    tu = json.load(open(TU))
+    for k_, it_ in tu['sets'].items():
+        if it_.get('tile_key') == KEEP and it_.get('status') == 'coming_soon':
+            it_.update(status='upgrade', applied=True, proposed=T[KEEP].get('src'), note_nov01='merged Ivory set, real YMI photo (Tiffany Oct 30)')
+        if it_.get('tile_key') in GONE and it_.get('status') == 'coming_soon':
+            it_.update(status='merged', merged_into=KEEP)
+    json.dump(tu, open(TU, 'w'), indent=1, ensure_ascii=False)
 # 4 holiday calls
 HC = json.load(open(REPO + 'config/tiffany-color-notes/2026-10-29-holiday-calls.json'))
 def find(full):
@@ -69,11 +84,9 @@ for nm in HC['holiday']:
     if k_ and not M[k_].get('hol'):
         o = M[k_]; fams = o.get('mf') or o.get('ha') or []
         o.update(hol=True, ha=fams, mf=[], mt=[], sh=[]); log.append('4 holiday: ' + nm)
+        if k_ in LK['mats']: LK['mats'][k_].update(mf=[], mt=[])
     elif not k_: log.append('4 NOT FOUND (check by hand): ' + nm)
-for nm in HC['works_for_holiday_keep']:
-    k_ = FIX4.get(nm) or find(nm)
-    if k_ and not M[k_].get('wfh'): M[k_]['wfh'] = True; log.append('4 wfh: ' + nm)
-    elif not k_: log.append('4 wfh NOT FOUND (check by hand): ' + nm)
+# (works_for_holiday_keep = those year-round mats stay in the holiday ALBUMS; no FYM wfh change: gate [13h] ties wfh to late-calls)
 # 6 Poppins picks
 PK = 'www.ohmymahjong.com/poppins-mat-in-tube'
 YES = ['Lola', 'Moonlight', 'Osler', 'Preppy Soirée', 'Coquette', 'Birdie', 'Amara', 'Dandy', 'Glitterville', 'Petalée', 'Lilac Soirée',
@@ -81,7 +94,8 @@ YES = ['Lola', 'Moonlight', 'Osler', 'Preppy Soirée', 'Coquette', 'Birdie', 'Am
 if PK in M:
     for nm in YES:
         s = next((s for s in sets if s['name'] == nm and not s.get('hid')), None)
-        if not s: log.append('6 set not found: ' + nm); continue
+        if not s: log.append('6 not an FYM set (vault): ' + nm); continue
+        if not (s.get('album') or s.get('sb')): log.append('6 skipped (no album / swipe book, gate [2]): ' + nm); continue
         if not any(e[0] == PK for e in s['m']):
             s['m'].append([PK, []]); LK['sets'].setdefault(s['slug'], {})['m'] = s['m']
             log.append('6 Poppins -> ' + nm)
@@ -119,6 +133,10 @@ exec(compile(src, 'replace112', 'exec'), {'__name__': '__main__', '__file__': RE
 FL = json.load(open(REPO + 'builder/fym_flags/mat_photo_flags.json'))
 FL[CC] = dict(FL.get(CC, {}), flag='ok', note='Nov 1 v112: flat photo from Tiffany\'s Etsy screenshots (Oct 29), unhidden')
 json.dump(FL, open(REPO + 'builder/fym_flags/mat_photo_flags.json', 'w'), indent=1, ensure_ascii=False)
+ES = json.load(open(REPO + 'config/fym-etsy-shopmy-oct26.json'))
+for x_ in ES['mats']:
+    if x_['key'] == CC and x_.get('hid'): x_.update(hid=False, reason='', img='assets/mats/v95-etsy/chinoiserie-cheer-flat.jpg', note_nov01='flat photo from Tiffany (Oct 29), unhidden v112')
+json.dump(ES, open(REPO + 'config/fym-etsy-shopmy-oct26.json', 'w'), indent=1, ensure_ascii=False)
 Q = json.load(open(REPO + 'builder/fym_flags/fym_questionable.json'))
 Q['items'] = [it for it in Q['items'] if it.get('key') != CC]
 json.dump(Q, open(REPO + 'builder/fym_flags/fym_questionable.json', 'w'), indent=1, ensure_ascii=False)

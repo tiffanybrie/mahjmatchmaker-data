@@ -99,6 +99,9 @@ for side, ang in (('S', 0), ('N', 180), ('E', 90), ('W', 270)):
     if side == 'W': x, y = edge, c - r.height / 2 + sh_
     racks.append((r, int(x), int(y), side))
 
+SIDES = cfg.get('sides', 'NSEW')   # storyboard Nov 1: racks 1-4 (e.g. 'NS' = 2 players)
+racks = [r_ for r_ in racks if r_[3] in SIDES]
+
 def inner(side):
     for r, x, y, s in racks:
         if s == side:
@@ -108,7 +111,7 @@ def inner(side):
 gap = cfg.get('wall_gap_in', 0.06) * PPI
 L19 = 19 * TW * PPI
 tiles = []   # (x, y, vertical)
-for side in 'NSEW':
+for side in SIDES:
     vert = side in 'EW'
     for i in range(19):
         rc = [(x_ + r_.width / 2, y_ + r_.height / 2) for r_, x_, y_, s_ in racks if s_ == side][0]
@@ -164,6 +167,8 @@ def frame(img):
     pad = int(F * 0.035)
     fr = Image.new('RGB', (F + 2 * pad, F + 2 * pad + int(F * 0.11)), (250, 246, 240))
     fr.paste(im, (pad, pad))
+    if cfg.get('bare'):   # storyboard Nov 1: square render only, the app draws the tile inset
+        return im
     tp = Image.open(cfg['tiles_photo']).convert('RGB')
     cd = int(F * 0.25); s = min(tp.size)
     tp = tp.crop(((tp.width - s) // 2, (tp.height - s) // 2, (tp.width + s) // 2, (tp.height + s) // 2)).resize((cd, cd), Image.LANCZOS)

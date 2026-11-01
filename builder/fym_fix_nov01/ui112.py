@@ -11,9 +11,9 @@ Usage: python3 ui112.py <build_dir>
     first. Save 10% or more at any of them with code MAHJMATCH"; general note = "Code MAHJMATCH works at brands marked ♥"; a ♥
     on every partner brand in the dropdown. Gate N3.
  D  Tigre de Tartán visible-code policy (Oct 29; BRAND-GUIDE changelog Oct 30; docs/research/tdt-code-exposure-oct29.md):
-    no visible text pairs TdT with the code. bnote(TdT) = "Save 10% at Tigre de Tartán through our link"; codeLine counts TdT
-    pieces as link-only; share text drops TdT from the "Use code MAHJMATCH at ..." list and adds "Tigre de Tartán: save 10%
-    through the link above". Links unchanged (auto-apply). Gate N4.
+    no visible text pairs TdT with the code. bnote(TdT) = "Save at Tigre de Tartán through our link" (no % in UI text: gate [4] / rule 7); codeLine counts TdT
+    pieces as link-only; share text drops TdT from the "Use code MAHJMATCH at ..." list and adds "Tigre de Tartán: save through
+    the link above". Links unchanged (auto-apply). Gate N4.
  E  Rack fit by TILE SIZE (Tiffany Oct 26 7:37/7:39pm): rackOK uses R.len + T.tw (data from rackfit112.py) instead of the
     brand-name smallSet()/sm rule: a rack <=18.5" only with tiles <=0.95" wide. OMM-racks-with-OMM-tiles rule unchanged. Gate N5.
  F  Tortoise order (Tiffany Oct 26 7:40pm): Mahjong Row & Co. Scalloped Tortoise (20") always before Middle & Main Hawksbill
@@ -46,16 +46,16 @@ rep("function matBtn(id){", "function DGRID(L){const s=L.slice(0,DOOR.lim);if(!(
 # C + D brand note
 TDT = 'Tigre de Tartan'
 rep("function bnote(b){if(!b)return `<p class=\"bnote gen\"><span>✦ Partner brands come first. Save 10% or more at any of them with code <b>MAHJMATCH</b></span></p>`;",
-    "const LINKONLY={'Tigre de Tartan':1,'Tigre de Tart\\u00e1n':1};/*v112D TdT: no code next to their name*/function bnote(b){if(!b)return `<p class=\"bnote gen\"><span>✦ Code <b>MAHJMATCH</b> works at brands marked ♥</span></p>`;/*v112C*/if(LINKONLY[b])return `<p class=\"bnote ok\"><span>✦ Save 10% at ${esc(b)} through our link</span></p>`;",
+    "const LINKONLY={'Tigre de Tartan':1,'Tigre de Tart\\u00e1n':1};/*v112D TdT: no code next to their name*/function bnote(b){if(!b)return `<p class=\"bnote gen\"><span>✦ Code <b>MAHJMATCH</b> works at brands marked ♥</span></p>`;/*v112C*/if(LINKONLY[b])return `<p class=\"bnote ok\"><span>✦ Save at ${esc(b)} through our link</span></p>`;",
     '/*v112C*/')
 rep("o=b=>`<option value=\"${esc(b)}\"${cur===b?' selected':''}>${esc(b)} (${n[b]})</option>`;",
     "o=b=>`<option value=\"${esc(b)}\"${cur===b?' selected':''}>${BCODE[b]?'♥ ':''}${esc(b)} (${n[b]})</option>`;/*v112C2*/", '/*v112C2*/')
 # D codeLine + share text
 rep("function codeLine(){const ps=[T[set().tile],M[S.fav],...S.rpick.map(r=>R[r])].filter(o=>o&&o.pa&&!o.nc);",
-    "function codeLine(){const ps0=[T[set().tile],M[S.fav],...S.rpick.map(r=>R[r])].filter(o=>o&&o.pa&&!o.nc),ps=ps0.filter(o=>!LINKONLY[o.bn]);if(!ps.length&&ps0.length)return 'Save 10% through our links';/*v112D2*/",
+    "function codeLine(){const ps0=[T[set().tile],M[S.fav],...S.rpick.map(r=>R[r])].filter(o=>o&&o.pa&&!o.nc),ps=ps0.filter(o=>!LINKONLY[o.bn]);if(!ps.length&&ps0.length)return 'Save through our links';/*v112D2*/",
     '/*v112D2*/')
 rep(".filter(o=>o&&o.pa&&!o.nc).map(o=>o.bn))];const code=pb.length?'Use code MAHJMATCH at '+pb.join(', ')+' to save':'';",
-    ".filter(o=>o&&o.pa&&!o.nc).map(o=>o.bn))];const pbL=pb.filter(b=>LINKONLY[b]),pbC=pb.filter(b=>!LINKONLY[b]);const code=[pbC.length?'Use code MAHJMATCH at '+pbC.join(', ')+' to save':'',...pbL.map(b=>b+': save 10% through the link above')].filter(Boolean).join('\\n');/*v112D3*/",
+    ".filter(o=>o&&o.pa&&!o.nc).map(o=>o.bn))];const pbL=pb.filter(b=>LINKONLY[b]),pbC=pb.filter(b=>!LINKONLY[b]);const code=[pbC.length?'Use code MAHJMATCH at '+pbC.join(', ')+' to save':'',...pbL.map(b=>b+': save through the link above')].filter(Boolean).join('\\n');/*v112D3*/",
     '/*v112D3*/')
 # E rack fit by tile size
 rep("const rackOK=r=>R[r]&&!R[r].hid&&!R[r].rt&&(!R[r].sm||smallSet())&&",
