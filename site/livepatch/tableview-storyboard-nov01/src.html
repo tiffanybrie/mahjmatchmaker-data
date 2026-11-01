@@ -1,0 +1,433 @@
+<title>Table View Storyboard</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Bitter:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@1,500&display=swap">
+<style>
+/* Layout: a storyboard strip of phone screens, read left to right, then one desktop screen. Phone screens keep the app's own light colours in both themes. */
+:root{
+  --paper:#faf3ea; --ink:#283445; --navy:#054689; --deep:#062a55; --pink:#c8325f; --blush:#f7b6c8;
+  --mute:#6d6476; --line:#e7d8cf; --card:#fffdfa;
+  /* app (fixed: this is how the app looks) */
+  --a-bg:#ffffff; --a-ink:#2a2036; --a-mute:#7a6a85; --a-line:#ecd5df; --a-pink:#c8325f; --a-pink2:#fbe3ec; --a-navy:#054689; --a-cream:#f6e9df; --a-flame:#f56c8c;
+  --display:"Caprasimo","Rockwell","Georgia",serif;
+  --body:"Bitter","Georgia",serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#1b1f2a; --ink:#ece4dc; --navy:#9cc1ef; --deep:#0d1626; --pink:#f08aa6; --mute:#a99fb2; --line:#343a4a; --card:#242a37; color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#1b1f2a; --ink:#ece4dc; --navy:#9cc1ef; --deep:#0d1626; --pink:#f08aa6; --mute:#a99fb2; --line:#343a4a; --card:#242a37; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.kick{font:700 11px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--pink)}
+h1{font:400 clamp(30px,5vw,46px)/1.05 var(--display);color:var(--navy);margin:8px 0 10px;text-wrap:balance}
+h1 em{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-weight:500}
+h2{font:400 24px/1.15 var(--display);color:var(--navy);margin:0 0 4px;text-wrap:balance}
+.lede{max-width:64ch;margin:0;color:var(--ink)}
+.rules{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0;padding:0;list-style:none}
+.rules li{font:600 12px/1 var(--body);border:1px solid var(--line);background:var(--card);border-radius:999px;padding:7px 11px;color:var(--ink)}
+.ask{margin-top:18px;padding:12px 14px;border-radius:10px;background:var(--card);border:1px solid var(--line);max-width:64ch}
+.ask b{color:var(--pink)}
+
+.strip{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:34px 22px;margin-top:34px}
+.frame{display:flex;flex-direction:column;gap:12px;min-width:0}
+.frame .num{font:700 11px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.frame h3{font:400 19px/1.15 var(--display);color:var(--navy);margin:0}
+.frame p{margin:0;font-size:14px;color:var(--ink);max-width:40ch}
+.tap{all:unset;cursor:zoom-in;display:block;width:fit-content;border-radius:40px}
+.tap:focus-visible{outline:3px solid var(--pink);outline-offset:4px}
+
+/* ---------- phone ---------- */
+.phone{--w:260px;width:var(--w);aspect-ratio:9/19.3;max-width:100%;background:#111;border-radius:36px;padding:9px;box-shadow:0 18px 40px -18px rgba(20,20,40,.45)}
+.scr{position:relative;width:100%;height:100%;border-radius:28px;overflow:hidden;background:var(--a-bg);color:var(--a-ink);font-family:var(--body);font-size:10px;display:flex;flex-direction:column}
+.sb{height:22px;flex:none;display:flex;justify-content:space-between;align-items:center;padding:0 16px;font:700 9px/1 var(--body);color:var(--a-ink)}
+.top{flex:none;display:flex;align-items:center;gap:6px;padding:4px 10px 6px;border-bottom:1px solid var(--a-line)}
+.top .back{font:600 9px/1 var(--body);color:var(--a-navy)}
+.top .ttl{flex:1;text-align:center;font:400 12px/1.1 var(--display);color:var(--a-navy)}
+.top .ico{width:18px;text-align:right;color:var(--a-navy);font-size:12px}
+.body{flex:1;min-height:0;position:relative;display:flex;flex-direction:column}
+.seg{display:flex;gap:0;border:1px solid var(--a-line);border-radius:999px;overflow:hidden;font:600 8.5px/1 var(--body)}
+.seg span{flex:1;text-align:center;padding:6px 5px;color:var(--a-mute);white-space:nowrap}
+.seg span.on{background:var(--a-navy);color:#fff}
+.seg span.new{position:relative}
+.seg span.new::after{content:"NEW";position:absolute;top:-1px;right:2px;font-size:5.5px;letter-spacing:.06em;color:var(--a-pink)}
+.seg span.on.new::after{color:var(--a-pink2)}
+.seg span.dis{color:#c9bfcf;text-decoration:line-through}
+.table{position:relative;margin:8px 8px 0;border-radius:6px;overflow:hidden;aspect-ratio:1/1;background:#eee;flex:none}
+.table img{display:block;width:100%;height:100%;object-fit:cover}
+.inset{position:absolute;right:4%;bottom:4%;width:30%;aspect-ratio:1;border-radius:50%;border:3px solid #fff;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,.3)}
+.inset img{width:100%;height:100%;object-fit:cover}
+.lbl{display:flex;justify-content:space-between;align-items:center;margin:6px 8px 0;font:600 8.5px/1.25 var(--body)}
+.lbl small{display:block;font-weight:400;color:var(--a-mute);font-size:7.5px}
+.pill{font:700 7.5px/1 var(--body);letter-spacing:.05em;text-transform:uppercase;background:var(--a-pink2);color:var(--a-pink);padding:4px 7px;border-radius:999px;white-space:nowrap}
+.bar{margin:8px 8px 0;display:flex;gap:6px;align-items:center}
+.bar .seg{flex:1}
+.btn{font:700 8.5px/1 var(--body);padding:7px 9px;border-radius:999px;background:var(--a-navy);color:#fff;text-align:center;white-space:nowrap}
+.btn.ghost{background:transparent;color:var(--a-navy);border:1px solid var(--a-navy)}
+.btn.pk{background:var(--a-pink)}
+.chiprow{display:flex;gap:5px;flex-wrap:wrap;margin:7px 8px 0}
+.chip{font:600 8px/1 var(--body);padding:5px 8px;border-radius:999px;border:1px solid var(--a-line);color:var(--a-ink);background:#fff;white-space:nowrap}
+.chip.on{border-color:var(--a-navy);background:var(--a-navy);color:#fff}
+
+/* match card screen bits */
+.matph{position:relative;margin:8px 8px 0;border-radius:8px;overflow:hidden;aspect-ratio:1/1;flex:none}
+.matph img{width:100%;height:100%;object-fit:cover;display:block}
+.matbar{margin:0 8px;background:var(--a-navy);color:#fff;font:600 8.5px/1.2 var(--body);padding:6px 8px;border-radius:0 0 8px 8px;display:flex;justify-content:space-between}
+.tcard{margin:8px 8px 0;display:flex;align-items:center;gap:8px;border:1px solid var(--a-line);border-radius:10px;padding:6px}
+.tcard img{width:54px;height:54px;border-radius:8px;object-fit:cover}
+.tcard .nm{flex:1;font:600 9px/1.25 var(--body)}
+.tcard .nm small{display:block;font-weight:400;color:var(--a-mute);font-size:7.5px}
+.round{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:12px;border:1px solid var(--a-line);background:#fff;flex:none}
+.round.h{color:var(--a-flame)}
+.round.x{color:var(--a-mute)}
+.view{display:flex;align-items:center;gap:6px;margin:8px 8px 0;font:700 7.5px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--a-mute)}
+.view .seg{flex:1;letter-spacing:0;text-transform:none}
+.ring{outline:2px solid var(--a-pink);outline-offset:2px;border-radius:999px}
+.finger{position:absolute;width:26px;height:26px;border-radius:50%;background:rgba(200,50,95,.28);border:2px solid rgba(200,50,95,.7);pointer-events:none}
+
+/* bottom sheet */
+.sheet{position:absolute;left:0;right:0;bottom:0;background:#fff;border-radius:16px 16px 0 0;box-shadow:0 -10px 30px rgba(30,20,40,.22);padding:6px 10px 14px;display:flex;flex-direction:column;gap:8px}
+.sheet .grab{width:30px;height:4px;border-radius:4px;background:#d9cbd6;margin:0 auto 2px}
+.sheet h4{margin:0;font:400 12px/1.1 var(--display);color:var(--a-navy)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:8px;font:600 8.5px/1.2 var(--body)}
+.row .seg{width:62%}
+.sw{display:flex;gap:5px}
+.sw span{display:flex;flex-direction:column;align-items:center;gap:3px;font:600 7px/1 var(--body);color:var(--a-mute)}
+.sw i{display:block;width:34px;height:12px;border-radius:3px;border:2px solid transparent}
+.sw .on i{border-color:var(--a-navy)}
+.sw .on{color:var(--a-navy)}
+.dim::after{content:"";position:absolute;inset:0;background:rgba(20,15,30,.18)}
+.toast{position:absolute;left:50%;transform:translateX(-50%);top:46px;background:var(--a-ink);color:#fff;font:600 8px/1.2 var(--body);padding:6px 10px;border-radius:999px;white-space:nowrap}
+.note{margin:8px 8px 0;background:var(--a-cream);border-radius:8px;padding:7px 8px;font:400 8px/1.35 var(--body);color:var(--a-ink)}
+.note b{color:var(--a-pink)}
+.thumbs{display:flex;gap:6px;overflow:hidden}
+.thumbs div{flex:none;width:52px;text-align:center;font:600 7px/1.2 var(--body);color:var(--a-mute)}
+.thumbs img,.thumbs .ph{width:52px;height:52px;border-radius:8px;object-fit:cover;display:block;margin-bottom:3px;border:2px solid transparent}
+.thumbs .on img{border-color:var(--a-navy)}
+.thumbs .ph{background:repeating-linear-gradient(45deg,#f1e7ee,#f1e7ee 6px,#fbf6f9 6px,#fbf6f9 12px)}
+.shop{display:flex;flex-direction:column;gap:6px}
+.shop .it{display:flex;align-items:center;gap:7px;border:1px solid var(--a-line);border-radius:8px;padding:5px}
+.shop .it img,.shop .it .sq{width:32px;height:32px;border-radius:6px;object-fit:cover;flex:none}
+.shop .it .t{flex:1;font:600 8px/1.25 var(--body)}
+.shop .it .t small{display:block;color:var(--a-mute);font-weight:400;font-size:7px}
+.code{font:700 8px/1 var(--body);letter-spacing:.06em;text-align:center;color:var(--a-pink);background:var(--a-pink2);padding:6px;border-radius:6px}
+.zoomwrap{position:relative;margin:8px 8px 0;border-radius:6px;overflow:hidden;aspect-ratio:1/1}
+.zoomwrap img{position:absolute;width:100%;height:100%;object-fit:cover}
+
+/* ---------- desktop ---------- */
+.desk{margin-top:52px;display:grid;gap:14px}
+.laptop{max-width:980px;width:100%}
+.lscr{background:#111;border-radius:14px 14px 0 0;padding:12px}
+.lbase{height:14px;background:linear-gradient(#d9d4d0,#b9b2ae);border-radius:0 0 12px 12px;margin:0 -2%}
+.dapp{background:var(--a-bg);color:var(--a-ink);border-radius:4px;display:grid;grid-template-rows:auto 1fr;aspect-ratio:16/9.6;overflow:hidden}
+.dtop{display:flex;align-items:center;gap:12px;padding:10px 16px;border-bottom:1px solid var(--a-line)}
+.dtop .ttl{font:400 clamp(12px,1.8vw,18px)/1 var(--display);color:var(--a-navy);flex:1}
+.dtop .back{font:600 clamp(9px,1.1vw,12px)/1 var(--body);color:var(--a-navy)}
+.dmain{display:grid;grid-template-columns:1.25fr 1fr;min-height:0}
+.dtab{position:relative;padding:12px;display:grid;place-items:center;background:#faf6f2;min-height:0}
+.dtab .table{margin:0;height:100%;width:auto;max-height:100%}
+.dside{padding:14px 18px;display:flex;flex-direction:column;gap:clamp(6px,1.1vw,12px);font-size:clamp(8px,1.05vw,12px);overflow:hidden;min-width:0}
+.dside h4{margin:0;font:400 clamp(11px,1.5vw,16px)/1.1 var(--display);color:var(--a-navy)}
+.dside .row{font-size:inherit}
+.dside .seg{font-size:clamp(7.5px,.95vw,11px)}
+.dside .chip,.dside .btn{font-size:clamp(7.5px,.95vw,11px)}
+
+/* ---------- enlarge ---------- */
+.lb{position:fixed;inset:0;z-index:20;background:rgba(15,12,24,.82);display:grid;place-items:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));cursor:zoom-out}
+.lb[hidden]{display:none}
+.dock{position:absolute;left:8px;right:8px;bottom:12px;display:flex;gap:5px}
+.dock .btn{flex:1}
+.home{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);width:70px;height:3px;border-radius:3px;background:#222;opacity:.55}
+.lb .holder{transform-origin:center center}
+.lb .cap{position:fixed;left:0;right:0;bottom:max(12px,env(safe-area-inset-bottom,0px));text-align:center;color:#fff;font:600 13px/1.3 var(--body);padding:0 20px}
+.lb .x{position:fixed;top:max(12px,env(safe-area-inset-top,0px));right:max(14px,env(safe-area-inset-right,0px));background:#fff;color:#222;border:0;border-radius:999px;font:700 13px/1 var(--body);padding:9px 13px;cursor:pointer}
+footer{margin-top:44px;font-size:13px;color:var(--mute);max-width:70ch}
+@media (prefers-reduced-motion:no-preference){.tap .phone{transition:transform .2s}.tap:hover .phone{transform:translateY(-4px)}}
+</style>
+
+<div class="wrap">
+  <div class="kick">Find <em>Your</em> Mat-ch™ · storyboard for review</div>
+  <h1>Table view, step by step</h1>
+  <p class="lede">How setting the table would work inside the app, phone first. Every mat, tile and rack picture here is a real asset: Papaya Spritz tiles on the Middle &amp; Main Fruit Stand vendor photo with Emily's Bird &amp; Bamboo racks (Canva p.51, left lilac), plus Nature Walk on Sunday Rattan. Tap any screen to see it bigger.</p>
+  <ul class="rules" aria-label="Rules this follows">
+    <li>Mat = vendor photo, never AI</li><li>Tile backs drawn from real size</li><li>No pusher for now</li><li>Walls on / off</li><li>Up to 4 racks</li><li>Full table only with a top-down photo that passes</li><li>Corner works for any mat</li>
+  </ul>
+  <div class="ask"><b>Your call:</b> reply with what to change, or OK and we build a working sample with a couple of rack colours.</div>
+
+  <div class="strip" id="strip">
+
+    <!-- 1 -->
+    <div class="frame">
+      <div class="num">Screen 1 · where it lives</div>
+      <button class="tap" type="button" data-cap="1 · Table joins the View switch">
+      <div class="phone"><div class="scr">
+        <div class="sb"><span>9:41</span><span>●●● ▮</span></div>
+        <div class="top"><span class="back">‹ Tiles</span><span class="ttl">Mat-ching</span><span class="ico">♡</span></div>
+        <div class="body">
+          <div class="matph"><img src="{{mat-fruitstand}}" alt="Middle &amp; Main Fruit Stand mat, vendor photo"></div>
+          <div class="matbar"><span>Fruit Stand · Middle &amp; Main</span><span>1 / 24</span></div>
+          <div class="view">View <div class="seg"><span>Up close</span><span>Aerial</span><span class="new ring">Table</span></div></div>
+          <div class="tcard"><span class="round x">✕</span><img src="{{tiles-papaya}}" alt="Papaya Spritz tiles"><div class="nm">Papaya Spritz<small>Oh My Mahjong</small></div><span class="round h">♥</span></div>
+          <div class="note">Swipe the tile card: ♥ to keep, ✕ to pass. Change the View any time.</div>
+          <div class="dock"><span class="btn ghost">Shop by brand</span><span class="btn ghost">Share</span></div>
+        </div>
+        <span class="home"></span>
+      </div></div></button>
+      <h3>A third option by the deck</h3>
+      <p>Table sits next to Up close and Aerial in the View switch you already moved down by the mat. Nothing new to hunt for.</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="frame">
+      <div class="num">Screen 2 · open it</div>
+      <button class="tap" type="button" data-cap="2 · The table opens set for 4">
+      <div class="phone"><div class="scr">
+        <div class="sb"><span>9:41</span><span>●●● ▮</span></div>
+        <div class="top"><span class="back">‹ Back</span><span class="ttl">Table view</span><span class="ico">⤴</span></div>
+        <div class="body">
+          <div class="table"><img src="{{lilac-walls}}" alt="Full table: Fruit Stand mat, four lilac racks, Papaya Spritz walls"><div class="inset"><img src="{{tiles-papaya}}" alt=""></div></div>
+          <div class="lbl"><div>Papaya Spritz × Fruit Stand<small>Bird &amp; Bamboo racks · Lilac</small></div><span class="pill">4 racks</span></div>
+          <div class="bar"><div class="seg"><span class="on">Full table</span><span>Corner</span></div><span class="btn ghost">Adjust ▴</span></div>
+          <div class="dock"><span class="btn pk">♥ Save</span><span class="btn ghost">Share</span><span class="btn">Shop the look</span></div>
+        </div>
+        <span class="home"></span>
+      </div></div></button>
+      <h3>The table, already set</h3>
+      <p>It opens on the full table with 4 racks and walls built, tile photo in the same round inset as Aerial. One row of controls; the rest waits under Adjust.</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="frame">
+      <div class="num">Screen 3 · adjust</div>
+      <button class="tap" type="button" data-cap="3 · Adjust slides up from the bottom">
+      <div class="phone"><div class="scr">
+        <div class="sb"><span>9:41</span><span>●●● ▮</span></div>
+        <div class="top"><span class="back">‹ Back</span><span class="ttl">Table view</span><span class="ico">⤴</span></div>
+        <div class="body">
+          <div class="table dim"><img src="{{lilac-walls}}" alt=""></div>
+          <div class="sheet">
+            <div class="grab"></div>
+            <h4>Set the table</h4>
+            <div class="row">View<div class="seg"><span class="on">Full table</span><span>Corner</span></div></div>
+            <div class="row">Walls<div class="seg"><span class="on">On</span><span>Off</span></div></div>
+            <div class="row">Racks<div class="seg"><span>1</span><span>2</span><span>3</span><span class="on">4</span></div></div>
+            <div class="row">Rack colour<div class="sw"><span class="on"><i style="background:#d18cdd"></i>Lilac</span><span><i style="background:#b9a6fc"></i>Lavender</span></div></div>
+            <div class="row"><span class="btn ghost" style="flex:1">Swap tiles</span><span class="btn ghost" style="flex:1">Swap mat</span></div>
+          </div>
+        </div>
+        <span class="home"></span>
+      </div></div></button>
+      <h3>Every control in one sheet</h3>
+      <p>Adjust slides up over the bottom of the table and you can still see it change behind. Swipe down or tap the table to close.</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="frame">
+      <div class="num">Screen 4 · walls off</div>
+      <button class="tap" type="button" data-cap="4 · Walls off shows more of the mat">
+      <div class="phone"><div class="scr">
+        <div class="sb"><span>9:41</span><span>●●● ▮</span></div>
+        <div class="top"><span class="back">‹ Back</span><span class="ttl">Table view</span><span class="ico">⤴</span></div>
+        <div class="body">
+          <div class="table"><img src="{{lilac-nowalls}}" alt="Same table with walls off: racks only"><div class="inset"><img src="{{tiles-papaya}}" alt=""></div></div>
+          <div class="lbl"><div>Papaya Spritz × Fruit Stand<small>Walls off</small></div><span class="pill">4 racks</span></div>
+          <div class="chiprow"><span class="chip">Full table</span><span class="chip on">Walls off</span><span class="chip">Lilac</span><span class="chip">Adjust ▴</span></div>
+          <div class="note">Settings you pick show as chips, so you always know what you're looking at.</div>
+          <div class="dock"><span class="btn pk">♥ Save</span><span class="btn ghost">Share</span><span class="btn">Shop the look</span></div>
+        </div>
+        <span class="home"></span>
+      </div></div></button>
+      <h3>Walls on or off</h3>
+      <p>Walls off is just mat and racks, for judging the mat-to-rack pairing. Your choices stay as chips under the table.</p>
+    </div>
+
+    <!-- 5 -->
+    <div class="frame">
+      <div class="num">Screen 5 · get close</div>
+      <button class="tap" type="button" data-cap="5 · Pinch or double-tap to zoom">
+      <div class="phone"><div class="scr">
+        <div class="sb"><span>9:41</span><span>●●● ▮</span></div>
+        <div class="top"><span class="back">‹ Back</span><span class="ttl">Table view</span><span class="ico">⤴</span></div>
+        <div class="body">
+          <div class="zoomwrap"><img src="{{lilac-closeup}}" alt="Zoomed in: Papaya tile wall against the lilac rack on the lemon mat"></div>
+          <div class="lbl"><div>Zoomed in · 3×<small>Double-tap to zoom back out</small></div><span class="pill">Walls on</span></div>
+          <div class="note">Zoom stays put when you change rack colour or walls, the same way it does in the swipe deck.</div>
+          <div class="dock"><span class="btn pk">♥ Save</span><span class="btn ghost">Share</span><span class="btn">Shop the look</span></div>
+        </div>
+        <span class="home"></span>
+      </div></div></button>
+      <h3>Zoom into one wall</h3>
+      <p>Pinch to see the tile backs right against the rack and the mat behind them. The zoom holds while you change settings.</p>
+    </div>
+
+    <!-- 6 -->
+    <div class="frame">
+      <div class="num">Screen 6 · corner view</div>
+      <button class="tap" type="button" data-cap="6 · Corner: bottom + right, flip to bottom + left">
+      <div class="phone"><div class="scr">
+        <div class="sb"><span>9:41</span><span>●●● ▮</span></div>
+        <div class="top"><span class="back">‹ Back</span><span class="ttl">Table view</span><span class="ico">⤴</span></div>
+        <div class="body">
+          <div class="table"><img src="{{lilac-quadrant}}" alt="Corner view: bottom and right racks with their walls"><div class="inset"><img src="{{tiles-papaya}}" alt=""></div></div>
+          <div class="lbl"><div>Corner · bottom + right<small>Walls stop short of the corner</small></div><span class="pill">2 racks</span></div>
+          <div class="bar"><div class="seg"><span>Full table</span><span class="on">Corner</span></div><span class="btn ghost">⇆ Flip</span></div>
+          <div class="dock"><span class="btn pk">♥ Save</span><span class="btn ghost">Share</span><span class="btn">Shop the look</span></div>
+        </div>
+        <span class="home"></span>
+      </div></div></button>
+      <h3>Corner, your seat at the table</h3>
+      <p>Two walls and their racks, like looking down at your own spot. Flip switches bottom + right to bottom + left.</p>
+    </div>
+
+    <!-- 7 -->
+    <div class="frame">
+      <div class="num">Screen 7 · rack colour</div>
+      <button class="tap" type="button" data-cap="7 · Rack colour swaps in place">
+      <div class="phone"><div class="scr">
+        <div class="sb"><span>9:41</span><span>●●● ▮</span></div>
+        <div class="top"><span class="back">‹ Back</span><span class="ttl">Table view</span><span class="ico">⤴</span></div>
+        <div class="body">
+          <div class="table"><img src="{{lav-walls}}" alt="Full table with lavender racks"><div class="inset"><img src="{{tiles-papaya}}" alt=""></div></div>
+          <div class="toast">Racks: Bird &amp; Bamboo · Lavender</div>
+          <div class="lbl"><div>Papaya Spritz × Fruit Stand<small>Bird &amp; Bamboo racks · Lavender</small></div><span class="pill">4 racks</span></div>
+          <div class="row" style="margin:8px 8px 0">Rack colour<div class="sw"><span><i style="background:#d18cdd"></i>Lilac</span><span class="on"><i style="background:#b9a6fc"></i>Lavender</span></div></div>
+          <div class="dock"><span class="btn pk">♥ Save</span><span class="btn ghost">Share</span><span class="btn">Shop the look</span></div>
+        </div>
+        <span class="home"></span>
+      </div></div></button>
+      <h3>Try another rack colour</h3>
+      <p>Tap a swatch and the racks change in place. The sample stays at two colours; more get added once the look is right.</p>
+    </div>
+
+    <!-- 8 -->
+    <div class="frame">
+      <div class="num">Screen 8 · swap</div>
+      <button class="tap" type="button" data-cap="8 · Swap tiles or mat, settings stay">
+      <div class="phone"><div class="scr">
+        <div class="sb"><span>9:41</span><span>●●● ▮</span></div>
+        <div class="top"><span class="back">‹ Back</span><span class="ttl">Table view</span><span class="ico">⤴</span></div>
+        <div class="body">
+          <div class="table dim"><img src="{{lilac-walls}}" alt=""></div>
+          <div class="sheet">
+            <div class="grab"></div>
+            <div class="seg"><span class="on">Swap tiles</span><span>Swap mat</span></div>
+            <div class="thumbs">
+              <div class="on"><img src="{{tiles-papaya}}" alt="">Papaya Spritz</div>
+              <div><img src="{{tiles-naturewalk}}" alt="">Nature Walk</div>
+              <div><span class="ph"></span>Your matches</div>
+              <div><span class="ph"></span>More…</div>
+            </div>
+            <div class="note" style="margin:0">Your matches for this mat come first. Rack colour, walls and view stay as you set them.</div>
+          </div>
+        </div>
+        <span class="home"></span>
+      </div></div></button>
+      <h3>Swap the tiles or the mat</h3>
+      <p>Your matches for this mat come first, then everything else. Swap mat only lists mats with a passing top-down photo for Full table.</p>
+    </div>
+
+    <!-- 9 -->
+    <div class="frame">
+      <div class="num">Screen 9 · no top-down photo</div>
+      <button class="tap" type="button" data-cap="9 · No top-down photo: Corner only, with a note">
+      <div class="phone"><div class="scr">
+        <div class="sb"><span>9:41</span><span>●●● ▮</span></div>
+        <div class="top"><span class="back">‹ Back</span><span class="ttl">Table view</span><span class="ico">⤴</span></div>
+        <div class="body">
+          <div class="table"><img src="{{nat-quadrant}}" alt="Corner view: bottom and left walnut racks with cabernet tile walls on Sunday Rattan"><div class="inset"><img src="{{tiles-naturewalk}}" alt=""></div></div>
+          <div class="bar"><div class="seg"><span class="dis">Full table</span><span class="on">Corner</span></div><span class="btn ghost">⇆ Flip</span></div>
+          <div class="note"><b>Corner view only for this mat.</b> We don't have a top-down photo of the whole mat yet, so the full table isn't shown.</div>
+          <div class="dock"><span class="btn pk">♥ Save</span><span class="btn ghost">Share</span><span class="btn">Shop the look</span></div>
+        </div>
+        <span class="home"></span>
+      </div></div></button>
+      <h3>When a mat has no top-down photo</h3>
+      <p>Table view still opens, straight into Corner, with Full table greyed out and one plain line saying why. (Pictured with Nature Walk on Sunday Rattan; Rattan does have a top-down photo.)</p>
+    </div>
+
+    <!-- 10 -->
+    <div class="frame">
+      <div class="num">Screen 10 · finish</div>
+      <button class="tap" type="button" data-cap="10 · Save, share or shop the look">
+      <div class="phone"><div class="scr">
+        <div class="sb"><span>9:41</span><span>●●● ▮</span></div>
+        <div class="top"><span class="back">‹ Back</span><span class="ttl">Table view</span><span class="ico">⤴</span></div>
+        <div class="body">
+          <div class="table dim"><img src="{{lilac-walls}}" alt=""></div>
+          <div class="sheet">
+            <div class="grab"></div>
+            <h4>Love this table?</h4>
+            <div class="row"><span class="btn pk" style="flex:1">♥ Save to my match card</span><span class="btn ghost">Share</span></div>
+            <div class="shop">
+              <div class="it"><img src="{{tiles-papaya}}" alt=""><div class="t">Papaya Spritz tiles<small>Oh My Mahjong</small></div><span class="chip">Shop</span></div>
+              <div class="it"><img src="{{mat-fruitstand}}" alt=""><div class="t">Fruit Stand mat<small>Middle &amp; Main Mahjong</small></div><span class="chip">Shop</span></div>
+              <div class="it"><span class="sq" style="background:#d18cdd"></span><div class="t">Racks · Lilac<small>Bird &amp; Bamboo</small></div><span class="chip">Shop</span></div>
+            </div>
+            <div class="code">Code MAHJMATCH</div>
+          </div>
+        </div>
+        <span class="home"></span>
+      </div></div></button>
+      <h3>Save, share, shop the look</h3>
+      <p>Save keeps this table on their match card (rack colour and view included). Share sends the picture with a link back. Shop lists tiles, mat and racks.</p>
+    </div>
+
+  </div>
+
+  <section class="desk">
+    <div class="num" style="font:700 11px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--mute)">Screen 11 · desktop</div>
+    <h2>On a computer: table left, controls right</h2>
+    <p class="lede">Same controls, no sliding sheet. The Adjust panel is always open beside the table, and Shop the look sits at the bottom of it.</p>
+    <button class="tap" type="button" data-cap="11 · Desktop: the panel stays open" style="border-radius:14px;width:100%">
+    <div class="laptop"><div class="lscr"><div class="dapp">
+      <div class="dtop"><span class="back">‹ Back to matches</span><span class="ttl">Table view · Papaya Spritz × Fruit Stand</span><span class="chip">Share ⤴</span></div>
+      <div class="dmain">
+        <div class="dtab"><div class="table" style="aspect-ratio:1/1"><img src="{{lilac-walls}}" alt="Full table on desktop"><div class="inset"><img src="{{tiles-papaya}}" alt=""></div></div></div>
+        <div class="dside">
+          <h4>Set the table</h4>
+          <div class="row">View<div class="seg"><span class="on">Full table</span><span>Corner</span></div></div>
+          <div class="row">Walls<div class="seg"><span class="on">On</span><span>Off</span></div></div>
+          <div class="row">Racks<div class="seg"><span>1</span><span>2</span><span>3</span><span class="on">4</span></div></div>
+          <div class="row">Rack colour<div class="sw"><span class="on"><i style="background:#d18cdd"></i>Lilac</span><span><i style="background:#b9a6fc"></i>Lavender</span></div></div>
+          <div class="row"><span class="btn ghost" style="flex:1">Swap tiles</span><span class="btn ghost" style="flex:1">Swap mat</span></div>
+          <h4>Shop the look</h4>
+          <div class="chiprow" style="margin:0"><span class="chip">Papaya Spritz · Oh My Mahjong</span><span class="chip">Fruit Stand · Middle &amp; Main</span><span class="chip">Racks · Bird &amp; Bamboo</span></div>
+          <div class="row"><span class="btn pk" style="flex:1">♥ Save to my match card</span><span class="code" style="flex:1">Code MAHJMATCH</span></div>
+        </div>
+      </div>
+    </div></div><div class="lbase"></div></div>
+    </button>
+  </section>
+
+  <footer>
+    Open points for the working sample (not decided here): which rack the shop link points to for each colour; whether Racks 1–3 can be offered on mats whose own photo shows props at the edges (Fruit Stand's vendor photo has a clear rack on its sides, so on that mat fewer than 4 racks would show it); and which partners we ask for top-down photos first. Built Nov 1, 2026 from the Oct 28 table renders (real Bird &amp; Bamboo rack cutout from Emily's Canva p.51).
+  </footer>
+</div>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Enlarged screen"><button class="x" type="button" id="lbx">Close ✕</button><div class="holder" id="holder"></div><div class="cap" id="lbcap"></div></div>
+
+<script>
+(function(){
+  var lb=document.getElementById('lb'),holder=document.getElementById('holder'),cap=document.getElementById('lbcap'),last=null;
+  function fit(){
+    var el=holder.firstElementChild; if(!el) return;
+    holder.style.transform='none';
+    var r=el.getBoundingClientRect();
+    var s=Math.min((innerWidth-32)/r.width,(innerHeight-90)/r.height);
+    holder.style.transform='scale('+Math.max(1,s).toFixed(3)+')';
+  }
+  document.querySelectorAll('.tap').forEach(function(b){
+    b.addEventListener('click',function(){
+      last=b; holder.innerHTML='';
+      var src=b.querySelector('.phone,.laptop'); var c=src.cloneNode(true);
+      if(c.classList.contains('laptop')) c.style.width=Math.min(980,innerWidth-32)+'px';
+      holder.appendChild(c); cap.textContent=b.getAttribute('data-cap')||'';
+      lb.hidden=false; requestAnimationFrame(fit); document.getElementById('lbx').focus();
+    });
+  });
+  function close(){lb.hidden=true;holder.innerHTML='';if(last) last.focus();}
+  lb.addEventListener('click',close);
+  addEventListener('keydown',function(e){if(e.key==='Escape'&&!lb.hidden) close();});
+  addEventListener('resize',function(){if(!lb.hidden) fit();});
+})();
+</script>
