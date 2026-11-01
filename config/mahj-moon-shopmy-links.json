@@ -1,166 +1,911 @@
 {
-  "_about": "Tiffany Oct 26 11:04am (docs/ANSWERS.md): ShopMy collection 'Mahj & Moon' holding her matched Mahj & Moon mats from the Etsy shop https://www.etsy.com/shop/MahjandMoonCo; FYM uses these go.shopmy.us links with no code (builder/fym_fix_oct25/v95_mahjmoon.py). Ops makes the collection cover. Keys = FYM mat keys (the 14 visible Mahj & Moon mats in b95). etsy_url / shopmy_url stay null until the Etsy listing is matched by design name + photo and pinned in ShopMy; a mat not on Etsy gets not_on_etsy: true and keeps its mahjandmoon.com link. STATUS Oct 26 ~11:30am: Chrome unreachable from Matches & Catalog, so the collection and links are NOT made yet (see docs/DESK.md). Format: {fym_key: {etsy_url, shopmy_url, name, site_url}}; '_' keys are metadata.",
-  "_collection": {
-    "name": "Mahj & Moon Mats",
-    "id": 8525607,
-    "created": true,
-    "url": "https://shopmy.us/collections/8525607",
-    "shelf_position": "after Etsy Mahjong Mats, before Betty June (Oct 27)",
-    "products_pinned": 13,
-    "cover": "assets/shopmy/covers-portrait/mahj-and-moon.jpg"
+ "_about": "Tiffany Oct 26 11:04am (docs/ANSWERS.md): ShopMy collection 'Mahj & Moon' holding her matched Mahj & Moon mats from the Etsy shop https://www.etsy.com/shop/MahjandMoonCo; FYM uses these go.shopmy.us links with no code (builder/fym_fix_oct25/v95_mahjmoon.py). Ops makes the collection cover. Keys = FYM mat keys (the 14 visible Mahj & Moon mats in b95). etsy_url / shopmy_url stay null until the Etsy listing is matched by design name + photo and pinned in ShopMy; a mat not on Etsy gets not_on_etsy: true and keeps its mahjandmoon.com link. STATUS Oct 26 ~11:30am: Chrome unreachable from Matches & Catalog, so the collection and links are NOT made yet (see docs/DESK.md). Format: {fym_key: {etsy_url, shopmy_url, name, site_url}}; '_' keys are metadata.",
+ "_collection": {
+  "name": "Mahj & Moon Mats",
+  "id": 8525607,
+  "created": true,
+  "url": "https://shopmy.us/collections/8525607",
+  "shelf_position": "after Etsy Mahjong Mats, before Betty June (Oct 27)",
+  "products_pinned": 13,
+  "cover": "assets/shopmy/covers-portrait/mahj-and-moon.jpg"
+ },
+ "mahjandmoon.com/pink-lemon-blossom-mahjong-mat": {
+  "etsy_url": null,
+  "shopmy_url": null,
+  "name": "Pink Citrus",
+  "site_url": "https://mahjandmoon.com/products/pink-lemon-blossom-mahjong-mat",
+  "confidence": "unsure",
+  "note": "no confident Etsy match found Oct 31"
+ },
+ "mahjandmoon.com/amalfi-soleil-mahjong-mat": {
+  "etsy_url": "https://www.etsy.com/listing/4459999032",
+  "shopmy_url": "https://go.shopmy.us/p-99651185",
+  "name": "Amalfi Soleil",
+  "site_url": "https://mahjandmoon.com/products/amalfi-soleil-mahjong-mat",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/retro-waves-mahjong-mat-blue": {
+  "etsy_url": "https://www.etsy.com/listing/4538818979",
+  "shopmy_url": "https://go.shopmy.us/p-99651906",
+  "name": "Retro Waves",
+  "site_url": "https://mahjandmoon.com/products/retro-waves-mahjong-mat-blue",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/retro-waves-mahjong-mat-purple": {
+  "etsy_url": "https://www.etsy.com/listing/4538803376",
+  "shopmy_url": "https://go.shopmy.us/p-99651950",
+  "name": "Retro Waves",
+  "site_url": "https://mahjandmoon.com/products/retro-waves-mahjong-mat-purple",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/equestrian-horse-mahjong-mat": {
+  "etsy_url": "https://www.etsy.com/listing/4534508068",
+  "shopmy_url": "https://go.shopmy.us/p-99652148",
+  "name": "Equestrian",
+  "site_url": "https://mahjandmoon.com/products/equestrian-horse-mahjong-mat",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/leopard-animal-print-american-mahjong-mat": {
+  "etsy_url": "https://www.etsy.com/listing/4531965642",
+  "shopmy_url": "https://go.shopmy.us/p-99652403",
+  "name": "Leopard American",
+  "site_url": "https://mahjandmoon.com/products/leopard-animal-print-american-mahjong-mat",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/blue-floral-bird-american-mahjong-mat": {
+  "etsy_url": "https://www.etsy.com/listing/4530897413",
+  "shopmy_url": "https://go.shopmy.us/p-99652518",
+  "name": "Blue Floral Bird American",
+  "site_url": "https://mahjandmoon.com/products/blue-floral-bird-american-mahjong-mat",
+  "confidence": "medium",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/citrus-chinoiserie-mahjong-mat": {
+  "etsy_url": "https://www.etsy.com/listing/4527259653",
+  "shopmy_url": "https://go.shopmy.us/p-99652950",
+  "name": "Citrus Chinoiserie",
+  "site_url": "https://mahjandmoon.com/products/citrus-chinoiserie-mahjong-mat",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/retro-waves-mahjong-mat": {
+  "etsy_url": "https://www.etsy.com/listing/4526786642",
+  "shopmy_url": "https://go.shopmy.us/p-99652998",
+  "name": "Retro Waves",
+  "site_url": "https://mahjandmoon.com/products/retro-waves-mahjong-mat",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/equestrian-estate-mahjong-mat": {
+  "etsy_url": "https://www.etsy.com/listing/4526049271",
+  "shopmy_url": "https://go.shopmy.us/p-99653187",
+  "name": "Equestrian Estate",
+  "site_url": "https://mahjandmoon.com/products/equestrian-estate-mahjong-mat",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/vintage-floral-gingham-mahjong-mat": {
+  "etsy_url": "https://www.etsy.com/listing/4371281339",
+  "shopmy_url": "https://go.shopmy.us/p-99653834",
+  "name": "Vintage Floral Gingham",
+  "site_url": "https://mahjandmoon.com/products/vintage-floral-gingham-mahjong-mat",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/grand-garden-estate-mahjong-mat": {
+  "etsy_url": "https://www.etsy.com/listing/4472249308",
+  "shopmy_url": "https://go.shopmy.us/p-99654685",
+  "name": "Grand Garden Estate",
+  "site_url": "https://mahjandmoon.com/products/grand-garden-estate-mahjong-mat",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/blue-koi-chinoiserie-mahjong-mat": {
+  "etsy_url": "https://www.etsy.com/listing/4350766223",
+  "shopmy_url": "https://go.shopmy.us/p-99654877",
+  "name": "Blue Koi Chinoiserie",
+  "site_url": "https://mahjandmoon.com/products/blue-koi-chinoiserie-mahjong-mat",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/blue-heritage-toile-mahjong-mat": {
+  "etsy_url": "https://www.etsy.com/listing/4500266647",
+  "shopmy_url": "https://go.shopmy.us/p-99654916",
+  "name": "Blue Heritage Toile",
+  "site_url": "https://mahjandmoon.com/products/blue-heritage-toile-mahjong-mat",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "_pinned_etsy_listings": [
+  {
+   "title": "Sun Tarot Mahjong Mat",
+   "etsy_url": "https://www.etsy.com/listing/4527820445",
+   "shopmy_collection": "https://shopmy.us/collections/8525607"
   },
-  "mahjandmoon.com/pink-lemon-blossom-mahjong-mat": {
-    "etsy_url": null,
-    "shopmy_url": null,
-    "name": "Pink Citrus",
-    "site_url": "https://mahjandmoon.com/products/pink-lemon-blossom-mahjong-mat"
+  {
+   "title": "Blue Chinoiserie Mahjong Mat",
+   "etsy_url": "https://www.etsy.com/listing/4527259653",
+   "shopmy_collection": "https://shopmy.us/collections/8525607"
   },
-  "mahjandmoon.com/amalfi-soleil-mahjong-mat": {
-    "etsy_url": null,
-    "shopmy_url": null,
-    "name": "Amalfi Soleil",
-    "site_url": "https://mahjandmoon.com/products/amalfi-soleil-mahjong-mat"
+  {
+   "title": "Pink & Blue Grandmillennial Mahjong Mat",
+   "etsy_url": "https://www.etsy.com/listing/4527255793",
+   "shopmy_collection": "https://shopmy.us/collections/8525607"
   },
-  "mahjandmoon.com/retro-waves-mahjong-mat-blue": {
-    "etsy_url": null,
-    "shopmy_url": null,
-    "name": "Retro Waves - Pink & Aqua",
-    "site_url": "https://mahjandmoon.com/products/retro-waves-mahjong-mat-blue"
+  {
+   "title": "Sea Turtle Beach Mahjong Mat",
+   "etsy_url": "https://www.etsy.com/listing/4458515584",
+   "shopmy_collection": "https://shopmy.us/collections/8525607"
   },
-  "mahjandmoon.com/retro-waves-mahjong-mat-purple": {
-    "etsy_url": null,
-    "shopmy_url": null,
-    "name": "Retro Waves - Purple",
-    "site_url": "https://mahjandmoon.com/products/retro-waves-mahjong-mat-purple"
+  {
+   "title": "Pink Butterfly Mahjong Mat",
+   "etsy_url": "https://www.etsy.com/listing/4526746785",
+   "shopmy_collection": "https://shopmy.us/collections/8525607"
   },
-  "mahjandmoon.com/equestrian-horse-mahjong-mat": {
-    "etsy_url": null,
-    "shopmy_url": null,
-    "name": "Equestrian",
-    "site_url": "https://mahjandmoon.com/products/equestrian-horse-mahjong-mat"
+  {
+   "title": "Vintage Floral Garden Mahjong Mat",
+   "etsy_url": "https://www.etsy.com/listing/4371281339",
+   "shopmy_collection": "https://shopmy.us/collections/8525607"
   },
-  "mahjandmoon.com/leopard-animal-print-american-mahjong-mat": {
-    "etsy_url": null,
-    "shopmy_url": null,
-    "name": "Leopard American",
-    "site_url": "https://mahjandmoon.com/products/leopard-animal-print-american-mahjong-mat"
+  {
+   "title": "Palm Beach Preppy Mahjong Mat",
+   "etsy_url": "https://www.etsy.com/listing/4350720810",
+   "shopmy_collection": "https://shopmy.us/collections/8525607"
   },
-  "mahjandmoon.com/blue-floral-bird-american-mahjong-mat": {
-    "etsy_url": null,
-    "shopmy_url": null,
-    "name": "Blue Floral Bird American",
-    "site_url": "https://mahjandmoon.com/products/blue-floral-bird-american-mahjong-mat"
+  {
+   "title": "Tropical Toucan Pink Palm Mahjong Mat",
+   "etsy_url": "https://www.etsy.com/listing/4524615723",
+   "shopmy_collection": "https://shopmy.us/collections/8525607"
   },
-  "mahjandmoon.com/citrus-chinoiserie-mahjong-mat": {
-    "etsy_url": null,
-    "shopmy_url": null,
-    "name": "Citrus Chinoiserie",
-    "site_url": "https://mahjandmoon.com/products/citrus-chinoiserie-mahjong-mat"
+  {
+   "title": "Palm Tree Retro Tropical Mahjong Mat",
+   "etsy_url": "https://www.etsy.com/listing/4577957885",
+   "shopmy_collection": "https://shopmy.us/collections/8525607"
   },
-  "mahjandmoon.com/retro-waves-mahjong-mat": {
-    "etsy_url": null,
-    "shopmy_url": null,
-    "name": "Retro Waves",
-    "site_url": "https://mahjandmoon.com/products/retro-waves-mahjong-mat"
+  {
+   "title": "Vintage Floral Pink Mahjong Mat",
+   "etsy_url": "https://www.etsy.com/listing/4575845329",
+   "shopmy_collection": "https://shopmy.us/collections/8525607"
   },
-  "mahjandmoon.com/equestrian-estate-mahjong-mat": {
-    "etsy_url": null,
-    "shopmy_url": null,
-    "name": "Equestrian Estate",
-    "site_url": "https://mahjandmoon.com/products/equestrian-estate-mahjong-mat"
+  {
+   "title": "Preppy Chinoiserie Tiger Mahjong Mat",
+   "etsy_url": "https://www.etsy.com/listing/4458503594",
+   "shopmy_collection": "https://shopmy.us/collections/8525607"
   },
-  "mahjandmoon.com/vintage-floral-gingham-mahjong-mat": {
-    "etsy_url": null,
-    "shopmy_url": null,
-    "name": "Vintage Floral Gingham",
-    "site_url": "https://mahjandmoon.com/products/vintage-floral-gingham-mahjong-mat"
+  {
+   "title": "Lobster Coastal Mahjong Mat",
+   "etsy_url": "https://www.etsy.com/listing/4566953251",
+   "shopmy_collection": "https://shopmy.us/collections/8525607"
   },
-  "mahjandmoon.com/grand-garden-estate-mahjong-mat": {
-    "etsy_url": null,
-    "shopmy_url": null,
-    "name": "Grand Garden Estate",
-    "site_url": "https://mahjandmoon.com/products/grand-garden-estate-mahjong-mat"
-  },
-  "mahjandmoon.com/blue-koi-chinoiserie-mahjong-mat": {
-    "etsy_url": null,
-    "shopmy_url": null,
-    "name": "Blue Koi Chinoiserie",
-    "site_url": "https://mahjandmoon.com/products/blue-koi-chinoiserie-mahjong-mat"
-  },
-  "mahjandmoon.com/blue-heritage-toile-mahjong-mat": {
-    "etsy_url": null,
-    "shopmy_url": null,
-    "name": "Blue Heritage Toile",
-    "site_url": "https://mahjandmoon.com/products/blue-heritage-toile-mahjong-mat"
-  },
-  "_pinned_etsy_listings": [
-    {
-      "title": "Sun Tarot Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4527820445",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    },
-    {
-      "title": "Blue Chinoiserie Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4527259653",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    },
-    {
-      "title": "Pink & Blue Grandmillennial Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4527255793",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    },
-    {
-      "title": "Sea Turtle Beach Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4458515584",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    },
-    {
-      "title": "Pink Butterfly Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4526746785",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    },
-    {
-      "title": "Vintage Floral Garden Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4371281339",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    },
-    {
-      "title": "Palm Beach Preppy Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4350720810",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    },
-    {
-      "title": "Tropical Toucan Pink Palm Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4524615723",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    },
-    {
-      "title": "Palm Tree Retro Tropical Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4577957885",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    },
-    {
-      "title": "Vintage Floral Pink Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4575845329",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    },
-    {
-      "title": "Preppy Chinoiserie Tiger Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4458503594",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    },
-    {
-      "title": "Lobster Coastal Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4566953251",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    },
-    {
-      "title": "Scalloped Pink Floral Mahjong Mat",
-      "etsy_url": "https://www.etsy.com/listing/4600985202",
-      "shopmy_collection": "https://shopmy.us/collections/8525607"
-    }
+  {
+   "title": "Scalloped Pink Floral Mahjong Mat",
+   "etsy_url": "https://www.etsy.com/listing/4600985202",
+   "shopmy_collection": "https://shopmy.us/collections/8525607"
+  }
+ ],
+ "_note_oct27": "ShopMy product go-links are Rakuten/linksynergy deeplinks that are not exposed per item. Use the collection URL for ShopMy and the Etsy listing URL per mat. Match FYM Mahj & Moon mats to these by design name; Leopard American is a confirmed match for leopard-animal-print-american-mahjong-mat. IMAGE RULE (Tiffany): ShopMy product images are clean aerial flat mat photos only (no tabletop room shots). Set via edit > Image URL using the listing gallery photo URL.",
+ "_removed_oct27": "Leopard American, Floral Chevron, Pink Leopard, Chinoiserie Monkey, Retro Mid-Century, Orange Gingham: only tabletop/AI-looking photos, removed from the collection (Tiffany Oct 27 12:43am).",
+ "_oct31": "Matches & Catalog: ShopMy says mahjandmoon.com links won't earn commission; only the Etsy shop (MahjandMoonCo) earns (6%). 207 Etsy mat listings collected in config/etsy-brands-oct31.json -> mahj_moon_etsy, not yet paired to FYM mats. One 0%-commission test pin was made for mahjandmoon.com/products/amalfi-soleil-mahjong-mat (go.shopmy.us/p-99591860) — don't use it.",
+ "mahjandmoon.com/pink-green-floral-mahjong-mat": {
+  "name": "Pink & Green Floral",
+  "etsy_url": "https://www.etsy.com/listing/4557477492",
+  "shopmy_url": "https://go.shopmy.us/p-99651262",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/round-leopard-print-mahjong-mat": {
+  "name": "Round Leopard Print",
+  "etsy_url": "https://www.etsy.com/listing/4550368279",
+  "shopmy_url": "https://go.shopmy.us/p-99651453",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/pink-floral-round-mahjong-mat": {
+  "name": "Pink Floral Round",
+  "etsy_url": "https://www.etsy.com/listing/4549609733",
+  "shopmy_url": "https://go.shopmy.us/p-99651524",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/garden-toile-round-mahjong-mat": {
+  "name": "Garden Toile Round",
+  "etsy_url": "https://www.etsy.com/listing/4549020354",
+  "shopmy_url": "https://go.shopmy.us/p-99651564",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/william-morris-inspired-round-mahjong-mat": {
+  "name": "William Morris Inspired Round",
+  "etsy_url": "https://www.etsy.com/listing/4548986509",
+  "shopmy_url": "https://go.shopmy.us/p-99651597",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/blue-white-lemon-mahjong-mat": {
+  "name": "Blue White Lemon",
+  "etsy_url": "https://www.etsy.com/listing/4541378880",
+  "shopmy_url": "https://go.shopmy.us/p-99651686",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/green-retro-mahjong-mat": {
+  "name": "Green Retro",
+  "etsy_url": "https://www.etsy.com/listing/4540871114",
+  "shopmy_url": "https://go.shopmy.us/p-99651716",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/autumn-leaves-mahjong-mat": {
+  "name": "Autumn Leaves",
+  "etsy_url": "https://www.etsy.com/listing/4540849318",
+  "shopmy_url": "https://go.shopmy.us/p-99651743",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/lemon-stripe-mahjong-mat": {
+  "name": "Lemon Stripe",
+  "etsy_url": "https://www.etsy.com/listing/4539390854",
+  "shopmy_url": "https://go.shopmy.us/p-99651781",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/desert-mahjong-mat": {
+  "name": "Desert",
+  "etsy_url": "https://www.etsy.com/listing/4539378386",
+  "shopmy_url": "https://go.shopmy.us/p-99651817",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/pink-wildflower-mahjong-mat": {
+  "name": "Pink Wildflower",
+  "etsy_url": "https://www.etsy.com/listing/4538300267",
+  "shopmy_url": "https://go.shopmy.us/p-99651981",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/palm-tree-mahjong-mat-tropical-pink-american-mahjong-playing-mat": {
+  "name": "Palm Tree",
+  "etsy_url": "https://www.etsy.com/listing/4535641633",
+  "shopmy_url": "https://go.shopmy.us/p-99652014",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/pickleball-mahjong-mat-preppy-bow-lavender-stripe-design": {
+  "name": "Pickleball",
+  "etsy_url": "https://www.etsy.com/listing/4535627791",
+  "shopmy_url": "https://go.shopmy.us/p-99652038",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/christmas-toile-mahjong-mat-vintage-santa-holiday-design": {
+  "name": "Christmas Toile",
+  "etsy_url": "https://www.etsy.com/listing/4535027563",
+  "shopmy_url": "https://go.shopmy.us/p-99652058",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/butterfly-floral-mahjong-mat": {
+  "name": "Butterfly Floral",
+  "etsy_url": "https://www.etsy.com/listing/4534501596",
+  "shopmy_url": "https://go.shopmy.us/p-99652187",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/valentine-hearts-american-mahjong-mat": {
+  "name": "Valentine Hearts American",
+  "etsy_url": "https://www.etsy.com/listing/4533860165",
+  "shopmy_url": "https://go.shopmy.us/p-99652211",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/strawberry-garden-american-mahjong-mat": {
+  "name": "Strawberry Garden American",
+  "etsy_url": "https://www.etsy.com/listing/4533890058",
+  "shopmy_url": "https://go.shopmy.us/p-99652247",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/pink-damask-american-mahjong-mat": {
+  "name": "Pink Damask American",
+  "etsy_url": "https://www.etsy.com/listing/4533375937",
+  "shopmy_url": "https://go.shopmy.us/p-99652272",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/pastel-tie-dye-american-mahjong-mat": {
+  "name": "Pastel Tie Dye American",
+  "etsy_url": "https://www.etsy.com/listing/4534416953",
+  "shopmy_url": "https://go.shopmy.us/p-99652324",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/personalized-bow-monogram-american-mahjong-mat": {
+  "name": "Personalized Bow American",
+  "etsy_url": "https://www.etsy.com/listing/4531458713",
+  "shopmy_url": "https://go.shopmy.us/p-99652433",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/personalized-chinoiserie-monogram-american-mahjong-mat": {
+  "name": "Personalized Vibrant Floral Chinoiserie Pink",
+  "etsy_url": "https://www.etsy.com/listing/4531439304",
+  "shopmy_url": "https://go.shopmy.us/p-99652459",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/ocean-coastal-american-mahjong-mat": {
+  "name": "Coastal American",
+  "etsy_url": "https://www.etsy.com/listing/4530921434",
+  "shopmy_url": "https://go.shopmy.us/p-99652489",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/palm-beach-bermuda-american-mahjong-mat": {
+  "name": "Palm Beach American",
+  "etsy_url": "https://www.etsy.com/listing/4530383111",
+  "shopmy_url": "https://go.shopmy.us/p-99652549",
+  "confidence": "medium",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/wildflower-american-mahjong-mat": {
+  "name": "Wildflower American",
+  "etsy_url": "https://www.etsy.com/listing/4530374273",
+  "shopmy_url": "https://go.shopmy.us/p-99652636",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/lion-american-mahjong-mat": {
+  "name": "Lion American",
+  "etsy_url": "https://www.etsy.com/listing/4528350574",
+  "shopmy_url": "https://go.shopmy.us/p-99652665",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/seashell-american-mahjong-mat": {
+  "name": "Seashell American",
+  "etsy_url": "https://www.etsy.com/listing/4528331545",
+  "shopmy_url": "https://go.shopmy.us/p-99652694",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/palm-beach-american-mahjong-mat": {
+  "name": "Palm Beach American",
+  "etsy_url": "https://www.etsy.com/listing/4528313883",
+  "shopmy_url": "https://go.shopmy.us/p-99652732",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/the-sun-tarot-mahjong-mat": {
+  "name": "The Sun Tarot",
+  "etsy_url": "https://www.etsy.com/listing/4527820445",
+  "shopmy_url": "https://go.shopmy.us/p-99652762",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/pink-folk-floral-mahjong-mat": {
+  "name": "Pink Folk Floral",
+  "etsy_url": "https://www.etsy.com/listing/4527816703",
+  "shopmy_url": "https://go.shopmy.us/p-99652797",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/botanical-chevron-mahjong-mat": {
+  "name": "Botanical Chevron",
+  "etsy_url": "https://www.etsy.com/listing/4527812549",
+  "shopmy_url": "https://go.shopmy.us/p-99652885",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/monkey-garden-mahjong-mat": {
+  "name": "Monkey Garden",
+  "etsy_url": "https://www.etsy.com/listing/4527262793",
+  "shopmy_url": "https://go.shopmy.us/p-99652922",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/blush-botanical-mahjong-mat": {
+  "name": "Blush Botanical",
+  "etsy_url": "https://www.etsy.com/listing/4527255793",
+  "shopmy_url": "https://go.shopmy.us/p-99652972",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/tropical-leopard-mahjong-mat": {
+  "name": "Tropical Leopard",
+  "etsy_url": "https://www.etsy.com/listing/4526768226",
+  "shopmy_url": "https://go.shopmy.us/p-99653022",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/blush-butterfly-mahjong-mat": {
+  "name": "Blush Butterfly",
+  "etsy_url": "https://www.etsy.com/listing/4526746785",
+  "shopmy_url": "https://go.shopmy.us/p-99653097",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/coastal-bloom-mahjong-mat": {
+  "name": "Coastal Bloom",
+  "etsy_url": "https://www.etsy.com/listing/4526741209",
+  "shopmy_url": "https://go.shopmy.us/p-99653126",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/butterfly-garden-mahjong-mat": {
+  "name": "Butterfly Garden",
+  "etsy_url": "https://www.etsy.com/listing/4526086989",
+  "shopmy_url": "https://go.shopmy.us/p-99653157",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/paris-in-bloom-mahjong-mat": {
+  "name": "Paris in Bloom",
+  "etsy_url": "https://www.etsy.com/listing/4526021527",
+  "shopmy_url": "https://go.shopmy.us/p-99653216",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/heirloom-blooms-mahjong-mat": {
+  "name": "Heirloom Blooms",
+  "etsy_url": "https://www.etsy.com/listing/4524822756",
+  "shopmy_url": "https://go.shopmy.us/p-99653249",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/koi-pond-mahjong-mat": {
+  "name": "Koi Pond",
+  "etsy_url": "https://www.etsy.com/listing/4524801235",
+  "shopmy_url": "https://go.shopmy.us/p-99653328",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/tropical-toucan-mahjong-mat": {
+  "name": "French Country Estate",
+  "etsy_url": "https://www.etsy.com/listing/4524784705",
+  "shopmy_url": "https://go.shopmy.us/p-99653357",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/celestial-sun-mahjong-mat-boho-sunshine-mahjong-mat-in-peach-yellow": {
+  "name": "Celestial Sun",
+  "etsy_url": "https://www.etsy.com/listing/4509652994",
+  "shopmy_url": "https://go.shopmy.us/p-99653389",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/tropical-hibiscus-mahjong-mat-pink-blue-palm-print-mahjong-mat": {
+  "name": "Tropical Hibiscus",
+  "etsy_url": "https://www.etsy.com/listing/4509643570",
+  "shopmy_url": "https://go.shopmy.us/p-99653423",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/botanical-butterfly-mahjong-mat-floral-garden-design-in-pink-green": {
+  "name": "Botanical Butterfly",
+  "etsy_url": "https://www.etsy.com/listing/4494119871",
+  "shopmy_url": "https://go.shopmy.us/p-99653456",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/pink-blue-paisley-mahjong-mat": {
+  "name": "Pink & Blue Paisley",
+  "etsy_url": "https://www.etsy.com/listing/4371281278",
+  "shopmy_url": "https://go.shopmy.us/p-99653472",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/strawberry-thief-inspired-mahjong-mat-heritage-floral-bird-design": {
+  "name": "Strawberry Thief–Inspired",
+  "etsy_url": "https://www.etsy.com/listing/4459995200",
+  "shopmy_url": "https://go.shopmy.us/p-99653545",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/harvest-pumpkin-thanksgiving-mahjong-mat": {
+  "name": "Harvest Pumpkin Thanksgiving",
+  "etsy_url": "https://www.etsy.com/listing/4353378350",
+  "shopmy_url": "https://go.shopmy.us/p-99653581",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/orchard-songbird-mahjong-mat": {
+  "name": "Orchard Songbird",
+  "etsy_url": "https://www.etsy.com/listing/4371277613",
+  "shopmy_url": "https://go.shopmy.us/p-99653617",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/christmas-village-gingham-mahjong-mat": {
+  "name": "Christmas Village Gingham",
+  "etsy_url": "https://www.etsy.com/listing/4353376592",
+  "shopmy_url": "https://go.shopmy.us/p-99653657",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/pastel-wildflower-gingham-mahjong-mat": {
+  "name": "Pastel Wildflower Gingham",
+  "etsy_url": "https://www.etsy.com/listing/4371303201",
+  "shopmy_url": "https://go.shopmy.us/p-99653705",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/italian-riviera-foodie-mahjong-mat": {
+  "name": "Italian Riviera Foodie",
+  "etsy_url": "https://www.etsy.com/listing/4480143773",
+  "shopmy_url": "https://go.shopmy.us/p-99653742",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/pastel-turtle-coastal-mahjong-mat": {
+  "name": "Pastel Turtle Coastal",
+  "etsy_url": "https://www.etsy.com/listing/4458515584",
+  "shopmy_url": "https://go.shopmy.us/p-99653872",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/pastel-garden-landscape-mahjong-mat": {
+  "name": "Pastel Garden Landscape",
+  "etsy_url": "https://www.etsy.com/listing/4351384438",
+  "shopmy_url": "https://go.shopmy.us/p-99653897",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/scalloped-chinoiserie-bird-floral-mahjong-mat": {
+  "name": "Scalloped Chinoiserie Bird & Floral",
+  "etsy_url": "https://www.etsy.com/listing/4478109560",
+  "shopmy_url": "https://go.shopmy.us/p-99653936",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/scalloped-blossom-aviary-mahjong-mat": {
+  "name": "Scalloped Blossom Aviary",
+  "etsy_url": "https://www.etsy.com/listing/4477663582",
+  "shopmy_url": "https://go.shopmy.us/p-99653975",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/scalloped-palm-toile-mahjong-mat": {
+  "name": "Scalloped Pastel Palm Beach Toile",
+  "etsy_url": "https://www.etsy.com/listing/4477622798",
+  "shopmy_url": "https://go.shopmy.us/p-99653996",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/scalloped-tropical-palm-mahjong-mat": {
+  "name": "Scalloped Tropical Palm",
+  "etsy_url": "https://www.etsy.com/listing/4477604888",
+  "shopmy_url": "https://go.shopmy.us/p-99654084",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/zebra-palm-chinoiserie-mahjong-mat": {
+  "name": "Zebra Palm Chinoiserie",
+  "etsy_url": "https://www.etsy.com/listing/4476911313",
+  "shopmy_url": "https://go.shopmy.us/p-99654124",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/emerald-tiger-jungle-mahjong-mat": {
+  "name": "Emerald Tiger Jungle",
+  "etsy_url": "https://www.etsy.com/listing/4476890406",
+  "shopmy_url": "https://go.shopmy.us/p-99654149",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/pink-lemon-grove-mahjong-mat": {
+  "name": "Amongst the Lemon Groves Pink",
+  "etsy_url": "https://www.etsy.com/listing/4476395704",
+  "shopmy_url": "https://go.shopmy.us/p-99654176",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/blue-floral-gingham-mahjong-mat": {
+  "name": "Purple Floral Gingham Geometric",
+  "etsy_url": "https://www.etsy.com/listing/4371297115",
+  "shopmy_url": "https://go.shopmy.us/p-99654210",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/cherry-blossom-mahjong-mat": {
+  "name": "Cherry Blossom",
+  "etsy_url": "https://www.etsy.com/listing/4476379679",
+  "shopmy_url": "https://go.shopmy.us/p-99654233",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/tropical-island-garden-mahjong-mat": {
+  "name": "Tropical Island Garden",
+  "etsy_url": "https://www.etsy.com/listing/4371291171",
+  "shopmy_url": "https://go.shopmy.us/p-99654357",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/elephant-paisley-mahjong-mat": {
+  "name": "Elephant Paisley",
+  "etsy_url": "https://www.etsy.com/listing/4476352221",
+  "shopmy_url": "https://go.shopmy.us/p-99654404",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/blossom-aviary-mahjong-mat": {
+  "name": "Blossom Aviary",
+  "etsy_url": "https://www.etsy.com/listing/4371269704",
+  "shopmy_url": "https://go.shopmy.us/p-99654434",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/cowdesert-oasis-mahjong-mat": {
+  "name": "Desert Oasis",
+  "etsy_url": "https://www.etsy.com/listing/4350941258",
+  "shopmy_url": "https://go.shopmy.us/p-99654459",
+  "confidence": "medium",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/cowgirl-rodeo-mahjong-mat": {
+  "name": "Cowgirl Rodeo",
+  "etsy_url": "https://www.etsy.com/listing/4474604612",
+  "shopmy_url": "https://go.shopmy.us/p-99654498",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/tropical-palm-mahjong-mat": {
+  "name": "Blue Tropical Palm",
+  "etsy_url": "https://www.etsy.com/listing/4371278244",
+  "shopmy_url": "https://go.shopmy.us/p-99654528",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/pink-bow-garden-mahjong-mat": {
+  "name": "Pink Bow Garden",
+  "etsy_url": "https://www.etsy.com/listing/4527864695",
+  "shopmy_url": "https://go.shopmy.us/p-99654620",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/celestial-dragon-mahjong-mat": {
+  "name": "Celestial Dragon Chinoiserie",
+  "etsy_url": "https://www.etsy.com/listing/4474528342",
+  "shopmy_url": "https://go.shopmy.us/p-99654646",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/festive-chinoiserie-mahjong-mat": {
+  "name": "Festive Citrus Chinoiserie",
+  "etsy_url": "https://www.etsy.com/listing/4471803151",
+  "shopmy_url": "https://go.shopmy.us/p-99654724",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/emerald-tiger-chinoiserie-mahjong-mat": {
+  "name": "Emerald Tiger Chinoiserie",
+  "etsy_url": "https://www.etsy.com/listing/4458503594",
+  "shopmy_url": "https://go.shopmy.us/p-99654755",
+  "confidence": "medium",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/riviera-beach-club-mahjong-mat": {
+  "name": "Riviera Beach Club",
+  "etsy_url": "https://www.etsy.com/listing/4459960980",
+  "shopmy_url": "https://go.shopmy.us/p-99654791",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/green-menagerie-toile-mahjong-mat": {
+  "name": "Green Menagerie Toile",
+  "etsy_url": "https://www.etsy.com/listing/4371276019",
+  "shopmy_url": "https://go.shopmy.us/p-99654947",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/pastel-palm-beach-mahjong-mat": {
+  "name": "Pastel Palm Beach",
+  "etsy_url": "https://www.etsy.com/listing/4466522341",
+  "shopmy_url": "https://go.shopmy.us/p-99654995",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/vibrant-floral-chinoiserie-mahjong-mat": {
+  "name": "Vibrant Floral Chinoiserie Pink",
+  "etsy_url": "https://www.etsy.com/listing/4470519420",
+  "shopmy_url": "https://go.shopmy.us/p-99655040",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/chinoiserie-garden-mahjong-mat": {
+  "name": "Chinoiserie Garden",
+  "etsy_url": "https://www.etsy.com/listing/4555990362",
+  "shopmy_url": "https://go.shopmy.us/p-99655079",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/midnight-woodland-christmas-mahjong-mat": {
+  "name": "Midnight Woodland Christmas",
+  "etsy_url": "https://www.etsy.com/listing/4555959791",
+  "shopmy_url": "https://go.shopmy.us/p-99655217",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/honeybee-tiles-mahjong-mat": {
+  "name": "Honeybee Tiles",
+  "etsy_url": "https://www.etsy.com/listing/4555390870",
+  "shopmy_url": "https://go.shopmy.us/p-99655249",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/colorful-floral-mahjong-mat": {
+  "name": "Colorful Botanical",
+  "etsy_url": "https://www.etsy.com/listing/4553162389",
+  "shopmy_url": "https://go.shopmy.us/p-99655296",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/bird-pear-blossom-mahjong-mat": {
+  "name": "Bird & Pear Blossom",
+  "etsy_url": "https://www.etsy.com/listing/4547435454",
+  "shopmy_url": "https://go.shopmy.us/p-99655333",
+  "confidence": "medium",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/halloween-pumpkin-sugar-skull-mahjong-mat": {
+  "name": "Halloween Pumpkin & Sugar Skull",
+  "etsy_url": "https://www.etsy.com/listing/4546172240",
+  "shopmy_url": "https://go.shopmy.us/p-99655392",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/italian-villa-mahjong-mat": {
+  "name": "Italian Villa",
+  "etsy_url": "https://www.etsy.com/listing/4545526731",
+  "shopmy_url": "https://go.shopmy.us/p-99655421",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/preppy-pickleball-mahjong-mat": {
+  "name": "Preppy Pickleball",
+  "etsy_url": "https://www.etsy.com/listing/4545510598",
+  "shopmy_url": "https://go.shopmy.us/p-99655540",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/autumn-leaf-mahjong-mat": {
+  "name": "Autumn Leaf Floral",
+  "etsy_url": "https://www.etsy.com/listing/4591038661",
+  "shopmy_url": "https://go.shopmy.us/p-99655573",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/pastel-christmas-tree-mahjong-mat": {
+  "name": "Pastel Christmas Tree",
+  "etsy_url": "https://www.etsy.com/listing/4544874612",
+  "shopmy_url": "https://go.shopmy.us/p-99655601",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/wildflower-butterfly-mahjong-mat": {
+  "name": "Wildflower Butterfly",
+  "etsy_url": "https://www.etsy.com/listing/4542656049",
+  "shopmy_url": "https://go.shopmy.us/p-99655632",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/orange-gingham-mahjong-mat": {
+  "name": "Orange Gingham",
+  "etsy_url": "https://www.etsy.com/listing/4542635324",
+  "shopmy_url": "https://go.shopmy.us/p-99655660",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/pink-leopard-mahjong-mat": {
+  "name": "Pink Leopard",
+  "etsy_url": "https://www.etsy.com/listing/4541950825",
+  "shopmy_url": "https://go.shopmy.us/p-99655707",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/tulip-botanical-american-mahjong-mat": {
+  "name": "Tulip",
+  "confidence": "unsure",
+  "etsy_candidate": "https://www.etsy.com/listing/4531966831",
+  "etsy_url": null,
+  "shopmy_url": null
+ },
+ "mahjandmoon.com/purple-pumpkin-patch-mahjong-mat": {
+  "name": "Purple Pumpkin Patch",
+  "confidence": "unsure",
+  "etsy_candidate": "https://www.etsy.com/listing/4526060517",
+  "etsy_url": null,
+  "shopmy_url": null
+ },
+ "mahjandmoon.com/retro-cocktail-mahjong-mat": {
+  "name": "Retro Cocktail",
+  "etsy_url": "https://www.etsy.com/listing/4524825903",
+  "shopmy_url": "https://go.shopmy.us/p-99655801",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/pumpkin-patch-mahjong-mat": {
+  "name": "Pumpkin Patch",
+  "etsy_url": "https://www.etsy.com/listing/4353378588",
+  "shopmy_url": "https://go.shopmy.us/p-99655842",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/scalloped-bow-mahjong-mat": {
+  "name": "Scalloped Bow Garden",
+  "etsy_url": "https://www.etsy.com/listing/4477544109",
+  "shopmy_url": "https://go.shopmy.us/p-99655871",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/lemon-blossom-mahjong-mat": {
+  "name": "Lemon Blossom Coastal Citrus",
+  "etsy_url": "https://www.etsy.com/listing/4350943985",
+  "shopmy_url": "https://go.shopmy.us/p-99655906",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/chinoiserie-bird-floral-mahjong-mat": {
+  "name": "Chinoiserie Bird & Floral",
+  "etsy_url": "https://www.etsy.com/listing/4497703295",
+  "shopmy_url": "https://go.shopmy.us/p-99655939",
+  "confidence": "high",
+  "source": "Oct 31 Etsy pairing (by eye), ShopMy quick link, Etsy 6%"
+ },
+ "mahjandmoon.com/candy-cane-christmas-village-mahjong-mat": {
+  "name": "Candy Cane Christmas Village",
+  "etsy_url": null,
+  "shopmy_url": null,
+  "confidence": "unsure",
+  "note": "no confident Etsy match found Oct 31"
+ },
+ "mahjandmoon.com/english-garden-gingham-mahjong-mat": {
+  "name": "English Garden Gingham",
+  "etsy_url": null,
+  "shopmy_url": null,
+  "confidence": "unsure",
+  "note": "no confident Etsy match found Oct 31"
+ },
+ "mahjandmoon.com/blue-pastel-palm-beach-mahjong-mat": {
+  "name": "Blue Pastel Palm Beach",
+  "etsy_url": null,
+  "shopmy_url": null,
+  "confidence": "unsure",
+  "note": "no confident Etsy match found Oct 31"
+ },
+ "mahjandmoon.com/summer-bloom-mahjong-mat": {
+  "name": "Summer Bloom",
+  "etsy_url": null,
+  "shopmy_url": null,
+  "confidence": "unsure",
+  "note": "no confident Etsy match found Oct 31"
+ },
+ "mahjandmoon.com/vintage-garden-floral-mahjong-mat": {
+  "name": "Vintage Garden Floral",
+  "etsy_url": null,
+  "shopmy_url": null,
+  "confidence": "unsure",
+  "note": "no confident Etsy match found Oct 31"
+ },
+ "_oct31_etsy_pass": {
+  "done": "2026-10-31",
+  "fym_mats": 114,
+  "linked": 106,
+  "unsure": [
+   "Blue Pastel Palm Beach",
+   "Candy Cane Christmas Village",
+   "English Garden Gingham",
+   "Pink Citrus",
+   "Purple Pumpkin Patch",
+   "Summer Bloom",
+   "Tulip",
+   "Vintage Garden Floral"
   ],
-  "_note_oct27": "ShopMy product go-links are Rakuten/linksynergy deeplinks that are not exposed per item. Use the collection URL for ShopMy and the Etsy listing URL per mat. Match FYM Mahj & Moon mats to these by design name; Leopard American is a confirmed match for leopard-animal-print-american-mahjong-mat. IMAGE RULE (Tiffany): ShopMy product images are clean aerial flat mat photos only (no tabletop room shots). Set via edit > Image URL using the listing gallery photo URL.",
-  "_removed_oct27": "Leopard American, Floral Chevron, Pink Leopard, Chinoiserie Monkey, Retro Mid-Century, Orange Gingham: only tabletop/AI-looking photos, removed from the collection (Tiffany Oct 27 12:43am).",
-  "_oct31": "Matches & Catalog: ShopMy says mahjandmoon.com links won't earn commission; only the Etsy shop (MahjandMoonCo) earns (6%). 207 Etsy mat listings collected in config/etsy-brands-oct31.json -> mahj_moon_etsy, not yet paired to FYM mats. One 0%-commission test pin was made for mahjandmoon.com/products/amalfi-soleil-mahjong-mat (go.shopmy.us/p-99591860) — don't use it."
+  "shopmy_rate": "Etsy 6% (Rakuten deeplink)",
+  "note": "Keyed by FYM mat key. shopmy_url = go.shopmy.us quick link to the Etsy listing (MahjandMoonCo). Unsure mats keep their mahjandmoon.com link until Tiffany/next pass confirms."
+ }
 }
