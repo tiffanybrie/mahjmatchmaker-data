@@ -50,7 +50,7 @@ rep("MCP[c]=(MCB.has(c)?fetch('mc/'+c+'.webp')", f"MCP[c]=(MCB.has(c)?fetch((c>=
 # 4
 HDX = {k: v for k, v in json.load(open(B + '/hd/index.json'))['r'].items() if v.startswith('file:data:')}
 hdv = re.search(r"fetch\('(https://cdn\.jsdelivr\.net/gh/tiffanybrie/mahjmatchmaker-data@[0-9a-f]+/site-app/fym-v100/hd/index\.json)'\)", v111).group(1)
-rep("HDI=fetch('hd/index.json').then(r=>r.ok?r.json():{})", f"HDI=fetch('{hdv}').then(r=>r.ok?r.json():{{}}).then(x=>{{x.r=Object.assign(x.r||{{}},{json.dumps(HDX, separators=(',', ':'))});return x;}})/*v112 PLM Chartreuse A HD*/")
+rep("HDI=fetch('hd/index.json').then(r=>r.ok?r.json():{})", (f"HDI=fetch('{hdv}').then(r=>r.ok?r.json():{{}})" if not HDX else f"HDI=fetch('{hdv}').then(r=>r.ok?r.json():{{}}).then(x=>{{x.r=Object.assign(x.r||{{}},{json.dumps(HDX, separators=(',', ':'))});return x;}})/*v112 PLM Chartreuse A HD*/"))
 # 5
 i = h.index('const D=') + 8; D, e = json.JSONDecoder().raw_decode(h[i:])
 AMAP = {}

@@ -1,3 +1,5 @@
+"""REVERTED Nov 1 (~1:40am), NOT in the build chain: Tiffany's LATER call (Oct 27 2:04am, config/fym-rack-split-oct26.json) supersedes the
+Oct 26 8:53pm "A" pick: the recolour looks dirty; PLM Chartreuse = the album-card rack (200,238,80) as-is. Kept for the record only."""
 """v112: PLM Chartreuse racks -> Tiffany's approved shade "A" (186,212,96) (Oct 26 8:53pm, ANSWERS line 462).
 b111 still showed the neon (200,238,80) on BOTH plm:Chartreuse and the wavy chartreuse rack.
 New recoloured cut-outs (looked at on white + navy, sheets beside them in assets/racks/v112/):

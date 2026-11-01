@@ -5,7 +5,7 @@ Same method as fym_fix_oct31/artifact109.py, extended:
  - tile full photos in t106/ and t112/ go inline as data: URLs (no new files)
  - b24v1.js stays the PUBLISHED v111 one (pub109d/b24v1.js, 15.76 MB): the 41 thumbnails it lacks (new mats + PLM Chartreuse A)
    go inline in index.html in one window.IMG block before the b24v1.js script tag (b24v1.js would pass 16 MB otherwise)
- - hd/index.json = the build's (PLM Chartreuse A HD inline as file:data:)
+ - hd/index.json: only shipped if the build adds inline HD (none since the PLM revert): the live one stays
 Writes <out>/index.html, <out>/mc/190.webp, <out>/hd/index.json, <out>/files.json (only files that change vs v111).
 Usage: python3 artifact112.py <b112 dir> <published b24v1.js (pub109d/b24v1.js)> <out dir>"""
 import sys, os, json, re, struct, base64, shutil, mimetypes
@@ -41,7 +41,11 @@ assert all(mine[k] == pub[k] for k in pub if k in mine), 'a published thumbnail 
 miss = {k: v for k, v in mine.items() if k not in pub}
 tag = '<script src="b24v1.js">'; assert h.count(tag) == 1
 h = h.replace(tag, '<script>window.IMG=Object.assign(window.IMG||{},' + json.dumps(miss, separators=(',', ':')) + ');</script>' + tag, 1)
-open(O + '/index.html', 'w').write(h); shutil.copy(B + '/hd/index.json', O + '/hd/index.json')
+open(O + '/index.html', 'w').write(h)
+# hd/index.json: ship it only when it carries inline HD (file:data:) the live one lacks. The live v111 artifact runs an OLDER
+# hd/index.json; the build's lists file:r98/... zoom photos that are not artifact files (they would 404), so it stays as is.
+HDNEW = any(v.startswith('file:data:') for v in json.load(open(B + '/hd/index.json')).get('r', {}).values())
+if HDNEW: shutil.copy(B + '/hd/index.json', O + '/hd/index.json')
 # chunk 153 still carries 3 mat images nothing references any more (superseded photos): drop them, bytes of the rest unchanged
 PRUNE = []
 for c in (153,):
@@ -51,7 +55,8 @@ for c in (153,):
     bd, nh = b'', {}
     for k, (a, l) in keep.items(): nh[k] = [len(bd), l]; bd += ab[a:a + l]
     j2 = json.dumps(nh, separators=(',', ':')).encode(); open(f'{O}/mc/{c}.webp', 'wb').write(bd + j2 + struct.pack('<I', len(j2))); PRUNE.append(c)
-files = {'mc/190.webp': os.path.basename(O) + '/mc/190.webp', 'hd/index.json': os.path.basename(O) + '/hd/index.json'}
+files = {'mc/190.webp': os.path.basename(O) + '/mc/190.webp'}
+if HDNEW: files['hd/index.json'] = os.path.basename(O) + '/hd/index.json'
 for c in PRUNE: files[f'mc/{c}.webp'] = os.path.basename(O) + f'/mc/{c}.webp'
 json.dump(files, open(O + '/files.json', 'w'), indent=1)
 sz = len(h.encode()); assert sz < 16 * 10**6 - 30000, sz
