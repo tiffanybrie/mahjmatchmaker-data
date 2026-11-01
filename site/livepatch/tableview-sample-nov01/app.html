@@ -14,7 +14,8 @@
 :root[data-theme="dark"]{--bg:#f3ebe1}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
-html,body{height:100%}
+html,body{overflow-x:hidden;max-width:100%}
+html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 var(--body)}
 button{font:inherit;color:inherit;cursor:pointer}
 button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--pink);outline-offset:2px}
@@ -23,7 +24,7 @@ header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;
 h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance}
 .kick{font:700 11px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--pink)}
 .note{font-size:12.5px;color:var(--mute);margin:4px 0 0;max-width:62ch}
-.layout{display:grid;grid-template-columns:1fr;gap:14px;margin-top:12px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin-top:12px}
 @media (min-width:960px){.layout{grid-template-columns:minmax(0,1fr) 400px;align-items:start}}
 .stagecol{min-width:0;display:flex;flex-direction:column;gap:10px}
 .views{display:flex;border:2px solid var(--navy);border-radius:999px;overflow:hidden;background:var(--card)}
@@ -31,8 +32,10 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
 .views button.on{background:var(--navy);color:#fff}
 .views .new{font:700 9px/1 var(--body);letter-spacing:.08em;color:var(--pink);margin-left:4px;vertical-align:2px}
 .views button.on .new{color:var(--pink2)}
-.stage{position:relative;width:100%;max-width:720px;aspect-ratio:1/1;border-radius:12px;overflow:hidden;background:#e9e1d8;touch-action:none;box-shadow:0 10px 30px -18px rgba(40,20,40,.5)}
+.stage{position:relative;width:100%;max-width:720px;aspect-ratio:1/1;border-radius:12px;overflow:hidden;background:#e9e1d8;touch-action:pan-y;-webkit-user-select:none;user-select:none;box-shadow:0 10px 30px -18px rgba(40,20,40,.5)}
+.stage.zoomed{touch-action:none}
 .zoomer{position:absolute;inset:0;transform-origin:0 0}
+.seatmark{position:absolute;border:3px solid var(--pink);border-radius:8px;pointer-events:none;box-shadow:0 0 0 2px #fff}
 .zoomer canvas{width:100%;height:100%;display:block}
 .faces{position:absolute;aspect-ratio:1;border-radius:50%;overflow:hidden;border:4px solid #fff;box-shadow:0 6px 16px rgba(0,0,0,.35);pointer-events:none;transition:all .25s ease}
 .faces img{width:100%;height:100%;object-fit:cover;display:block}
@@ -79,7 +82,7 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
 .toggles{display:flex;gap:14px;flex-wrap:wrap}
 .tg{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600}
 .brandwrap{position:relative}
-.pop{position:absolute;z-index:30;top:calc(100% + 6px);left:0;width:min(340px,calc(100vw - 48px));max-height:300px;overflow:auto;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.18);padding:8px}
+.pop{position:absolute;z-index:30;top:calc(100% + 6px);left:0;width:min(340px,calc(100vw - 64px));max-height:300px;overflow:auto;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.18);padding:8px}
 .pop .lg{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
 .pop .lg button{border:1px solid var(--line);background:#fff;border-radius:10px;padding:6px;display:flex;flex-direction:column;align-items:center;gap:4px;font:600 10.5px/1.15 var(--body);min-height:64px;position:relative}
 .pop .lg img{max-height:30px;max-width:90%;object-fit:contain}
@@ -102,12 +105,39 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
 .it.off .nm,.it.off .bn{color:var(--gray)}
 .it .so{display:inline-block;margin-left:4px;padding:0 6px;border-radius:999px;background:var(--pink2);color:var(--pink);font:700 9.5px/1.6 var(--body)}
 .hint{font-size:12.5px;color:var(--mute);margin:0}
+.active{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px;background:var(--pink2);border-radius:10px;padding:7px 10px}
+.active b{font-weight:700}
+.clear{border:0;background:var(--pink);color:#fff;border-radius:999px;padding:4px 11px;font:700 12px/1.3 var(--body)}
+.fins{display:flex;gap:6px;flex-wrap:wrap}
+.fin{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 10px;font:600 12px/1 var(--body)}
+.fin.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.seats{display:flex;gap:6px;flex-wrap:wrap}
+.seat{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 10px;font:600 12.5px/1 var(--body);display:flex;gap:6px;align-items:center}
+.seat i{width:14px;height:14px;border-radius:50%;display:block;border:1px solid rgba(0,0,0,.15)}
+.seat.on{border-color:var(--pink);box-shadow:inset 0 0 0 1px var(--pink)}
+#cmpBtn.on{background:var(--pink);border-color:var(--pink);color:#fff}
+.rtag{position:absolute;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:var(--pink);color:#fff;font:700 13px/26px var(--body);text-align:center;box-shadow:0 0 0 2px #fff,0 2px 6px rgba(0,0,0,.3);pointer-events:none}
+.rtag.sel{background:var(--navy)}
+.rtag.pulse{animation:pulse 1.2s ease-in-out 3}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.35)}}
+.legend{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:8px}
+.legend .lh{font-size:13px;color:var(--ink)}
+.lrow{display:grid;grid-template-columns:26px 44px minmax(0,1fr) auto;gap:8px;align-items:center;font-size:13px}
+.lrow .n{width:24px;height:24px;border-radius:50%;background:var(--pink);color:#fff;font:700 12px/24px var(--body);text-align:center}
+.lrow.sel .n{background:var(--navy)}
+.lrow img{width:44px;height:22px;object-fit:contain}
+.lrow .nm{min-width:0;overflow-wrap:anywhere;font-weight:600}
+.lrow .acts{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.lrow a{color:var(--navy);font-weight:700;text-decoration:none;font-size:12.5px}
+.lrow button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 8px;font:600 11.5px/1.2 var(--body);color:var(--navy)}
+@media (prefers-reduced-motion:reduce){.rtag.pulse{animation:none}}
 .empty{font-size:13px;color:var(--mute);padding:10px 0}
 /* phone sheet */
 @media (max-width:959px){
-  .panel{position:fixed;left:0;right:0;bottom:0;z-index:20;border-radius:18px 18px 0 0;max-height:52vh;overflow:auto;transform:translateY(105%);transition:transform .25s ease;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-bottom:calc(16px + env(safe-area-inset-bottom,0px));box-shadow:0 -10px 30px rgba(0,0,0,.18)}
+  .panel{position:fixed;left:0;right:0;bottom:0;z-index:20;width:100%;border-radius:18px 18px 0 0;max-height:52vh;max-height:52dvh;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;transform:translateY(105%);transition:transform .25s ease;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-bottom:calc(16px + env(safe-area-inset-bottom,0px));box-shadow:0 -10px 30px rgba(0,0,0,.18)}
   .panel.open{transform:none}
-  .panel .grab{display:flex;justify-content:space-between;align-items:center;position:sticky;top:-14px;background:var(--card);padding-top:4px;z-index:2}
+  .panel .grab{display:flex;justify-content:space-between;align-items:center;position:sticky;top:-14px;background:var(--card);padding:6px 0;z-index:2;touch-action:none;cursor:grab}
+  .panel.dragging{transition:none}
   .panel[data-mode="adjust"] #swapSec,.panel[data-mode="swap"] #adjSec{display:none}
   .stage{max-width:none}
 }
@@ -151,9 +181,11 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
         <div class="banner" id="banner" hidden></div>
       </div>
       <div class="cap" id="cap"></div>
+      <div class="legend" id="legend" hidden></div>
       <div class="row" id="tableRow">
         <div class="seg" id="modeSeg"><button id="m-full" data-m="full" class="on">Full table</button><button id="m-corner" data-m="corner">Corner</button></div>
         <button class="btn" id="flip" hidden>Flip ⇄</button>
+        <button class="btn" id="cmpBtn">Compare racks</button>
         <button class="btn mobileonly" id="openAdj">Adjust</button>
       </div>
       <div class="row mobileonly">
@@ -168,8 +200,8 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
         <h2>Adjust the table</h2>
         <div class="ctl"><span>Walls</span><button class="sw" id="walls" role="switch" aria-checked="true" aria-label="Walls"></button></div>
         <p class="hint" id="wallsNote" hidden></p>
-        <div class="ctl"><span>Racks</span><div class="seg" id="nr"><button data-n="1">1</button><button data-n="2">2</button><button data-n="3">3</button><button data-n="4" class="on">4</button></div></div>
-        <div><div class="lab" style="margin-bottom:8px">Rack color</div><div class="chips" id="rackChips"></div></div>
+        <div class="ctl"><span>Players</span><div class="seg" id="players"><button data-n="4" class="on">4</button><button data-n="3">3</button><button data-n="2">2</button></div></div>
+        <div><div class="lab" style="margin-bottom:8px" id="rackLab">Rack color · all seats</div><div class="chips" id="rackChips"></div></div>
         <div class="ctl"><span>Tile faces</span><button class="sw" id="faceSw" role="switch" aria-checked="true" aria-label="Show tile faces"></button></div>
         <div class="ctl"><span>Tile faces sit</span><div class="seg" id="facePos"><button data-p="center" class="on">Center</button><button data-p="corner">Corner</button></div></div>
         <div class="row mobileonly"><button class="btn" data-open="tiles">Swap tiles</button><button class="btn" data-open="mat">Swap mat</button><button class="btn" data-open="racks">Swap racks</button></div>
@@ -182,10 +214,12 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
           <div class="brandwrap"><button class="btn" id="brandBtn">All brands ▾</button><div class="pop" id="pop" hidden></div></div>
         </div>
         <div class="dots" id="dots"></div>
+        <div class="fins" id="fins" hidden></div>
         <div class="toggles">
           <label class="tg"><button class="sw" id="instock" role="switch" aria-checked="false" aria-label="In stock only"></button>In stock only</label>
           <label class="tg"><button class="sw" id="picks" role="switch" aria-checked="false" aria-label="Tiffany's picks"></button>Tiffany’s picks</label>
         </div>
+        <div class="active" id="active" hidden></div>
         <p class="hint" id="swapHint"></p>
         <div class="grid" id="grid"></div>
       </section>
@@ -202,20 +236,35 @@ const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const T=DATA.tiles, M=DATA.mats, R=DATA.racks, SETS=Object.fromEntries(DATA.sets.map(s=>[s.slug,s]));
 const LO=new Set(DATA.linkonly);
 const disp=b=>b==='Tigre de Tartan'?'Tigre de Tartán':b;
-const COLORS={pink:'#ef8fb4',red:'#d23b3b',orange:'#f08a2c',yellow:'#f3cf3d',green:'#4f9e5a',blue:'#4c84c9',purple:'#9a6cc0',neutral:'#e9e0d0',black:'#2b2b2b',brown:'#8a5a3a',wood:'#b98a56',clear:'#e8f2f6',tortoise:'#7a4a22',metallic:'#c9b26a'};
-const st={set:'oh-my-mahjong-papaya-spritz',mat:null,rack:null,view:'table',mode:'full',flip:false,walls:true,nr:4,faces:true,facePos:'center',z:1,px:0,py:0,tab:'mat',q:'',brand:'',color:'',instock:false,picks:false};
-const S0=SETS[st.set]; st.mat=S0.picks[0]; st.rack=(S0.recs[st.mat]||[])[0]||S0.racks[0];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
+const COLORS={pink:'#ef8fb4',red:'#d23b3b',orange:'#f08a2c',yellow:'#f3cf3d',green:'#4f9e5a',blue:'#4c84c9',purple:'#9a6cc0',neutral:'#e9e0d0',black:'#2b2b2b',brown:'#8a5a3a'};
+const FINS=[['wood','Wood'],['walnut','Walnut'],['tortoise','Tortoise'],['pearl','Pearl'],['clear','Clear / Acrylic'],['lucite','Lucite'],['metallic','Metallic'],['white','White'],['glitter','Glitter']];
+const SEATN=['You','Right','Across','Left'], SIDE=['S','E','N','W'];
+/* index-only items (whole catalog, no photos) */
+const IX={mat:DATA.idx.mats.map(a=>({k:a[0],n:a[1],bn:a[2],pa:!!a[3],so:!!a[4],mf:a[5],why:a[6],ix:1})),
+          tiles:DATA.idx.tiles.map(a=>({k:a[0],n:a[1],bn:a[2],pa:!!a[3],so:!!a[4],why:a[5],ix:1})),
+          racks:DATA.idx.racks.map(a=>({k:a[0],n:a[1],bn:a[2],pa:!!a[3],so:!!a[4],rf:a[5],fin:a[6],len:a[7],why:a[8],ix:1}))};
+const st={compare:false,pulsed:false,set:'oh-my-mahjong-papaya-spritz',mat:null,seats:[],seatSel:-1,players:4,view:'table',mode:'full',flip:false,walls:true,faces:true,facePos:'center',z:1,px:0,py:0,
+  tab:'mat',qs:{tiles:'',mat:'',racks:''},brand:'',color:'',fin:'',instock:false,picks:false};
 const big=()=>T[st.set].tw>0.95;
-const fits=k=>!(big()&&R[k].len<=18.5);
+const fitsLen=len=>!(big()&&len<=18.5);
+const fits=k=>fitsLen(R[k].len);
+const usable=k=>R[k]&&R[k].ok&&fits(k);
 const isPick=(sl,mk)=>SETS[sl].picks.includes(mk);
+function rackList(){const s=SETS[st.set];const recs=s.recs[st.mat]||[];const seen=new Set();const out=[];
+  for(const k of [...recs,...s.racks,...Object.keys(R)])if(!seen.has(k)&&R[k]){seen.add(k);out.push(k)}return out}
+function firstRack(){const s=SETS[st.set];return [...(s.recs[st.mat]||[]),...rackList()].find(usable)}
+{const S0=SETS[st.set];st.mat=S0.picks[0];const r=firstRack();st.seats=[r,r,r,r]}
+function fixSeats(){const r=firstRack();st.seats=st.seats.map(k=>usable(k)?k:r)}
 /* ---------- images ---------- */
 const IC={};function im(src){if(!src)return null;if(!IC[src]){const i=new Image();i.onload=()=>draw();i.src=src;IC[src]=i}return IC[src].complete&&IC[src].naturalWidth?IC[src]:null}
 /* ---------- canvas ---------- */
 const cv=$('#cv'),ctx=cv.getContext('2d'),stage=$('#stage'),zoomer=$('#zoomer');
-function sides(){if(st.mode==='corner')return st.flip?['S','W']:['S','E'];return [['S'],['S','N'],['S','E','W'],['S','N','E','W']][st.nr-1]}
+function activeSeats(){if(st.mode==='corner')return st.flip?[0,3]:[0,1];return {4:[0,1,2,3],3:[0,1,3],2:[0,2]}[st.players]}
 function rr(c,x,y,w,h,r){c.beginPath();c.moveTo(x+r,y);c.arcTo(x+w,y,x+w,y+h,r);c.arcTo(x+w,y+h,x,y+h,r);c.arcTo(x,y+h,x,y,r);c.arcTo(x,y,x+w,y,r);c.closePath()}
 function shade(hx,f){const n=parseInt(hx.slice(1),16);let r=n>>16,g=n>>8&255,b=n&255;const m=v=>Math.max(0,Math.min(255,Math.round(f>1?v+(255-v)*(f-1):v*f)));return `rgb(${m(r)},${m(g)},${m(b)})`}
-function scene(N){ // draws the full 36" table into an offscreen canvas N px
+let HIT=[];
+function scene(N){
   const oc=document.createElement('canvas');oc.width=oc.height=N;const c=oc.getContext('2d');const PPI=N/36;
   const mat=M[st.mat],mi=im(mat.im),cls=mat.cls;
   c.fillStyle='#e4dcd2';c.fillRect(0,0,N,N);
@@ -223,77 +272,93 @@ function scene(N){ // draws the full 36" table into an offscreen canvas N px
     if(st.view==='table'&&st.mode==='corner'&&cls==='B'){const q0=N*0.36;const x0=st.flip?0:q0;c.drawImage(mi,x0,q0,N-q0,N-q0)}
     else{const s=Math.min(mi.width,mi.height);c.drawImage(mi,(mi.width-s)/2,(mi.height-s)/2,s,s,0,0,N,N)}
   }
-  if(st.view!=='table')return oc;
-  const rk=R[st.rack],ri=rk&&rk.ok?im(rk.im):null;const sd=sides();const tile=T[st.set];
-  const tw=tile.tw,th=tw*1.43;const RL=rk?rk.len:20;let RD=ri?RL*ri.height/ri.width:2.4;RD=Math.min(Math.max(RD,1.6),3.2);
-  const edge={S:1.1,N:.7,E:.9,W:.9};const C=N/2;const inner={};
-  const place=[];
-  for(const s of sd){const L=RL*PPI,Dp=RD*PPI;let x,y,w,h,ang;
+  HIT=[];if(st.view!=='table')return oc;
+  const tile=T[st.set];const tw=tile.tw,th=tw*1.43;const C=N/2;const edge={S:1.1,N:.7,E:.9,W:.9};const inner={};const place=[];
+  for(const si of activeSeats()){const s=SIDE[si];const rk=R[st.seats[si]];const ri=rk&&rk.ok?im(rk.im):null;
+    const RL=rk?rk.len:20;let RD=ri?RL*ri.height/ri.width:2.4;RD=Math.min(Math.max(RD,1.6),3.2);const L=RL*PPI,Dp=RD*PPI;let x,y,w,h,ang;
     if(s==='S'){w=L;h=Dp;x=C-L/2;y=N-edge.S*PPI-Dp;ang=0;inner.S=y}
     if(s==='N'){w=L;h=Dp;x=C-L/2;y=edge.N*PPI;ang=Math.PI;inner.N=y+Dp}
     if(s==='E'){w=Dp;h=L;x=N-edge.E*PPI-Dp;y=C-L/2;ang=-Math.PI/2;inner.E=x}
     if(s==='W'){w=Dp;h=L;x=edge.W*PPI;y=C-L/2;ang=Math.PI/2;inner.W=x+Dp}
-    place.push({s,x,y,w,h,ang})}
-  // walls under racks' shadow order: shadows, walls, racks
-  const back=tile.back?im(tile.back):null;const wallsOn=st.walls&&tile.walls;
-  if(ri){c.save();c.shadowColor='rgba(20,10,10,.45)';c.shadowBlur=.35*PPI;c.shadowOffsetX=.08*PPI;c.shadowOffsetY=.14*PPI;
-    for(const p of place){c.save();c.translate(p.x+p.w/2,p.y+p.h/2);c.rotate(p.ang);const L=RL*PPI,Dp=RD*PPI;c.drawImage(ri,-L/2,-Dp/2,L,Dp);c.restore()}c.restore()}
+    place.push({si,s,x,y,w,h,ang,ri,L,Dp});HIT.push({si,x:x/N,y:y/N,w:w/N,h:h/N})}
+  const sprite=tile.back?im(tile.back):null,patch=tile.patch?im(tile.patch):null;const wallsOn=st.walls&&tile.walls;
+  c.save();c.shadowColor='rgba(20,10,10,.45)';c.shadowBlur=.35*PPI;c.shadowOffsetX=.08*PPI;c.shadowOffsetY=.14*PPI;
+  for(const p of place)if(p.ri){c.save();c.translate(p.x+p.w/2,p.y+p.h/2);c.rotate(p.ang);c.drawImage(p.ri,-p.L/2,-p.Dp/2,p.L,p.Dp);c.restore()}c.restore();
   if(wallsOn){
     const gap=.07*PPI,W=tw*PPI,H=th*PPI,L19=19*W*.985;let seed=7;const rnd=()=>{seed=(seed*16807)%2147483647;return seed/2147483647-.5};
-    for(const p of place){const vert=p.s==='E'||p.s==='W';const along0=(vert?C:C)-L19/2;
-      // group shadow
-      c.save();c.fillStyle='rgba(15,8,8,.32)';c.filter=`blur(${Math.max(1,.12*PPI)}px)`;
-      let gx,gy,gw,gh;
+    for(const p of place){const vert=p.s==='E'||p.s==='W';const along0=C-L19/2;let gx,gy,gw,gh;
       if(p.s==='S'){gx=along0;gy=inner.S-gap-H;gw=L19;gh=H}
       if(p.s==='N'){gx=along0;gy=inner.N+gap;gw=L19;gh=H}
       if(p.s==='E'){gx=inner.E-gap-H;gy=along0;gw=H;gh=L19}
       if(p.s==='W'){gx=inner.W+gap;gy=along0;gw=H;gh=L19}
-      rr(c,gx+.08*PPI,gy+.12*PPI,gw+.12*PPI,gh+.12*PPI,.12*PPI);c.fill();c.restore();
+      c.save();c.fillStyle='rgba(15,8,8,.32)';c.filter=`blur(${Math.max(1,.12*PPI)}px)`;rr(c,gx+.08*PPI,gy+.12*PPI,gw+.12*PPI,gh+.12*PPI,.12*PPI);c.fill();c.restore();
       for(let i=0;i<19;i++){const a=along0+i*W*.985;let x,y,w,h;
         if(p.s==='S'){x=a;y=inner.S-gap-H;w=W;h=H}
         if(p.s==='N'){x=a;y=inner.N+gap;w=W;h=H}
         if(p.s==='E'){x=inner.E-gap-H;y=a;w=H;h=W}
         if(p.s==='W'){x=inner.W+gap;y=a;w=H;h=W}
         x+=rnd()*.02*PPI;y+=rnd()*.02*PPI;
-        if(back){c.save();c.translate(x+w/2,y+h/2);if(vert)c.rotate(Math.PI/2);c.rotate(rnd()*.01);c.drawImage(back,-W/2,-H/2,W,H);c.restore()}
-        else{const g=c.createLinearGradient(x,y,x+w,y+h);g.addColorStop(0,shade(tile.tc,1.18));g.addColorStop(.55,tile.tc);g.addColorStop(1,shade(tile.tc,.82));
-          c.fillStyle=g;rr(c,x,y,w,h,.11*PPI);c.fill();c.strokeStyle=shade(tile.tc,.7);c.lineWidth=Math.max(1,.02*PPI);c.stroke();
-          c.fillStyle='rgba(255,255,255,.18)';rr(c,x+.06*PPI,y+.06*PPI,w-.12*PPI,Math.min(h,w)*.18,.06*PPI);c.fill()}
-      }}
+        if(sprite){c.save();c.translate(x+w/2,y+h/2);if(vert)c.rotate(Math.PI/2);c.drawImage(sprite,-W/2,-H/2,W,H);c.restore();continue}
+        c.save();rr(c,x,y,w,h,.11*PPI);c.clip();
+        if(patch){const pw=patch.width,ph=patch.height,sw=pw*.6,sh=ph*.6,ox=(rnd()+.5)*(pw-sw),oy=(rnd()+.5)*(ph-sh);c.drawImage(patch,ox,oy,sw,sh,x,y,w,h);
+          const g=c.createLinearGradient(x,y,x+w,y+h);g.addColorStop(0,'rgba(255,255,255,.16)');g.addColorStop(1,'rgba(0,0,0,.14)');c.fillStyle=g;c.fillRect(x,y,w,h)}
+        else{const hx=tile.back_hex;const g=c.createLinearGradient(x,y,x+w,y+h);g.addColorStop(0,shade(hx,1.14));g.addColorStop(.55,hx);g.addColorStop(1,shade(hx,.84));c.fillStyle=g;c.fillRect(x,y,w,h)}
+        c.restore();c.strokeStyle='rgba(0,0,0,.28)';c.lineWidth=Math.max(1,.02*PPI);rr(c,x,y,w,h,.11*PPI);c.stroke()}
+    }
   }
-  if(ri){for(const p of place){c.save();c.translate(p.x+p.w/2,p.y+p.h/2);c.rotate(p.ang);const L=RL*PPI,Dp=RD*PPI;c.drawImage(ri,-L/2,-Dp/2,L,Dp);c.restore()}}
+  for(const p of place)if(p.ri){c.save();c.translate(p.x+p.w/2,p.y+p.h/2);c.rotate(p.ang);c.drawImage(p.ri,-p.L/2,-p.Dp/2,p.L,p.Dp);c.restore()}
   return oc;
 }
 let raf=0;function draw(){cancelAnimationFrame(raf);raf=requestAnimationFrame(draw0)}
+const crop=()=>st.view==='table'&&st.mode==='corner'?{q0:.36,x0:st.flip?0:.36}:null;
 function draw0(){
   const sz=stage.clientWidth||360,dpr=Math.min(window.devicePixelRatio||1,2);const out=Math.min(2048,Math.round(sz*dpr*Math.max(1,Math.min(st.z,2))));
-  cv.width=cv.height=out;
-  if(st.view==='table'&&st.mode==='corner'){const N=Math.round(out/0.64);const sc=scene(N);const q0=N*0.36;ctx.drawImage(sc,st.flip?0:q0,q0,N-q0,N-q0,0,0,out,out)}
+  cv.width=cv.height=out;const cr=crop();
+  if(cr){const N=Math.round(out/(1-cr.q0));const sc=scene(N);ctx.drawImage(sc,cr.x0*N,cr.q0*N,N*(1-cr.q0),N*(1-cr.q0),0,0,out,out)}
   else ctx.drawImage(scene(out),0,0);
-  placeFaces();applyZoom();
+  placeFaces();applyZoom();markSeat();
 }
+function sceneToStage(r){const cr=crop();const s=stage.clientWidth;if(!cr)return {x:r.x*s,y:r.y*s,w:r.w*s,h:r.h*s};const k=s/(1-cr.q0);return {x:(r.x-cr.x0)*k,y:(r.y-cr.q0)*k,w:r.w*k,h:r.h*k}}
+function markSeat(){let m=$('#seatmark');if(!m){m=document.createElement('div');m.id='seatmark';m.className='seatmark';zoomer.appendChild(m)}
+  $$('.rtag').forEach(e=>e.remove());const h=HIT.find(h=>h.si===st.seatSel);
+  if(!h||st.view!=='table'||!st.compare)m.hidden=true;else{const b=sceneToStage(h);m.hidden=false;Object.assign(m.style,{left:b.x-3+'px',top:b.y-3+'px',width:b.w+6+'px',height:b.h+6+'px'})}
+  if(!st.compare||st.view!=='table')return;
+  const order=activeSeats();HIT.forEach(h=>{const b=sceneToStage(h);const t=document.createElement('div');t.className='rtag'+(h.si===st.seatSel?' sel':'')+(!st.pulsed&&order.indexOf(h.si)===0?' pulse':'');
+    t.textContent=order.indexOf(h.si)+1;t.style.left=(b.x+b.w/2)+'px';t.style.top=(b.y+b.h/2)+'px';zoomer.appendChild(t)});st.pulsed=true}
+function legend(){const L=$('#legend');L.hidden=!st.compare||st.view!=='table';if(L.hidden)return;const order=activeSeats();
+  L.innerHTML=`<div class="lh">Comparing racks. Tap a numbered rack on the table, then pick a different one to see them side by side.</div>`+order.map((si,i)=>{const r=R[st.seats[si]];
+    return `<div class="lrow${si===st.seatSel?' sel':''}"><span class="n">${i+1}</span><img src="${r.th||''}" alt=""><span class="nm">${esc(r.n)}</span><span class="acts">${r.u?`<a href="${esc(r.u)}" target="_blank" rel="noopener">Shop ›</a>`:''}<button data-all="${si}">Use this one for all 4</button></span></div>`}).join('');
+  L.querySelectorAll('[data-all]').forEach(b=>b.onclick=()=>{const k=st.seats[+b.dataset.all];st.seats=st.seats.map(()=>k);st.compare=false;sync();toast(`${R[k].n} on all 4 seats.`)})}
 function placeFaces(){const f=$('#faces');const t=T[st.set];$('#facesImg').src=t.face||t.th||'';
   let show=st.view!=='table'||st.faces;f.hidden=!show;if(!show)return;
-  let d,cx,cy;if(st.view==='aerial'){d=40;cx=50;cy=50}else if(st.view==='close'){d=30;cx=80;cy=80}else if(st.facePos==='center'){d=st.mode==='corner'?30:26;cx=st.mode==='corner'?(st.flip?68:32):50;cy=st.mode==='corner'?32:50}else{d=24;cx=st.mode==='corner'&&st.flip?18:82;cy=st.mode==='corner'?18:82}
-  if(st.view==='table'&&st.mode==='corner'&&st.facePos==='corner'){cx=st.flip?82:18;cy=18}
+  let d,cx,cy;if(st.view==='aerial'){d=40;cx=50;cy=50}else if(st.view==='close'){d=30;cx=80;cy=80}
+  else if(st.mode==='corner'){d=28;if(st.facePos==='center'){cx=st.flip?68:32;cy=32}else{cx=st.flip?82:18;cy=18}}
+  else if(st.facePos==='center'){d=26;cx=50;cy=50}else{d=22;cx=80;cy=80}
   Object.assign(f.style,{width:d+'%',left:(cx-d/2)+'%',top:(cy-d/2)+'%'})}
-/* ---------- zoom / pan ---------- */
+/* ---------- zoom / pan: at 1x the page scrolls normally; pinch needs two fingers ---------- */
 function clampPan(){const s=stage.clientWidth;const m=s*(st.z-1);st.px=Math.min(0,Math.max(-m,st.px));st.py=Math.min(0,Math.max(-m,st.py))}
-function applyZoom(){clampPan();zoomer.style.transform=`translate(${st.px}px,${st.py}px) scale(${st.z})`;$('#zreset').textContent=st.z>1.01?'1×':'1×'}
-function zoomAt(nz,cx,cy){nz=Math.max(1,Math.min(4,nz));const k=nz/st.z;st.px=cx-(cx-st.px)*k;st.py=cy-(cy-st.py)*k;const re=Math.abs(nz-st.z)>.3;st.z=nz;applyZoom();if(re)draw()}
+function applyZoom(){clampPan();zoomer.style.transform=`translate(${st.px}px,${st.py}px) scale(${st.z})`;stage.classList.toggle('zoomed',st.z>1.01)}
+function zoomAt(nz,cx,cy){nz=Math.max(1,Math.min(4,nz));const k=nz/st.z;st.px=cx-(cx-st.px)*k;st.py=cy-(cy-st.py)*k;const re=Math.abs(nz-st.z)>.3;st.z=nz;if(nz<=1.01){st.z=1;st.px=st.py=0}applyZoom();if(re)draw()}
 $('#zin').onclick=()=>{const s=stage.clientWidth/2;zoomAt(st.z*1.5,s,s)};
 $('#zout').onclick=()=>{const s=stage.clientWidth/2;zoomAt(st.z/1.5,s,s)};
-$('#zreset').onclick=()=>{st.z=1;st.px=st.py=0;applyZoom();draw()};
-const pts=new Map();let pinch=null,pan=null;
-stage.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;stage.setPointerCapture(e.pointerId);pts.set(e.pointerId,{x:e.offsetX,y:e.offsetY});
-  if(pts.size===2){const [a,b]=[...pts.values()];pinch={d:Math.hypot(a.x-b.x,a.y-b.y),z:st.z,cx:(a.x+b.x)/2,cy:(a.y+b.y)/2};pan=null}else pan={x:e.clientX,y:e.clientY,px:st.px,py:st.py}});
-stage.addEventListener('pointermove',e=>{if(!pts.has(e.pointerId))return;const r=stage.getBoundingClientRect();pts.set(e.pointerId,{x:e.clientX-r.left,y:e.clientY-r.top});
+$('#zreset').onclick=()=>{zoomAt(1,0,0);draw()};
+const pts=new Map();let pinch=null,pan=null,moved=false,downAt=null;
+const rel=e=>{const r=stage.getBoundingClientRect();return {x:e.clientX-r.left,y:e.clientY-r.top}};
+stage.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;pts.set(e.pointerId,rel(e));moved=false;downAt=rel(e);
+  if(pts.size===2){for(const id of pts.keys())try{stage.setPointerCapture(id)}catch(_){}const [a,b]=[...pts.values()];pinch={d:Math.hypot(a.x-b.x,a.y-b.y)||1,z:st.z,cx:(a.x+b.x)/2,cy:(a.y+b.y)/2};pan=null}
+  else if(st.z>1.01){try{stage.setPointerCapture(e.pointerId)}catch(_){}pan={x:e.clientX,y:e.clientY,px:st.px,py:st.py}}});
+stage.addEventListener('pointermove',e=>{if(!pts.has(e.pointerId))return;const p=rel(e);pts.set(e.pointerId,p);if(downAt&&Math.hypot(p.x-downAt.x,p.y-downAt.y)>8)moved=true;
   if(pinch&&pts.size===2){const [a,b]=[...pts.values()];const d=Math.hypot(a.x-b.x,a.y-b.y);const nz=Math.max(1,Math.min(4,pinch.z*d/pinch.d));const k=nz/st.z;st.px=pinch.cx-(pinch.cx-st.px)*k;st.py=pinch.cy-(pinch.cy-st.py)*k;st.z=nz;applyZoom()}
-  else if(pan&&st.z>1){st.px=pan.px+(e.clientX-pan.x);st.py=pan.py+(e.clientY-pan.y);applyZoom()}});
-const up=e=>{pts.delete(e.pointerId);if(pinch&&pts.size<2){pinch=null;draw()}if(!pts.size)pan=null};
+  else if(pan&&st.z>1.01){st.px=pan.px+(e.clientX-pan.x);st.py=pan.py+(e.clientY-pan.y);applyZoom()}});
+let lastTap=0;
+const up=e=>{const was=pts.has(e.pointerId);pts.delete(e.pointerId);if(pinch&&pts.size<2){pinch=null;if(st.z<=1.01){st.z=1;st.px=st.py=0;applyZoom()}draw();return}if(!pts.size)pan=null;
+  if(!was||moved||e.type==='pointercancel'||e.target.closest('button'))return;
+  const n=Date.now();if(n-lastTap<300){lastTap=0;if(st.z>1.01)zoomAt(1,0,0);else zoomAt(2,downAt.x,downAt.y);draw();return}lastTap=n;
+  if(st.view==='table'&&st.compare){const s=stage.clientWidth;const x=(downAt.x-st.px)/st.z,y=(downAt.y-st.py)/st.z;
+    const h=HIT.find(h=>{const b=sceneToStage(h);return x>=b.x-8&&x<=b.x+b.w+8&&y>=b.y-8&&y<=b.y+b.h+8});if(h){st.seatSel=h.si;sync();openSheet('swap','racks')}}};
 stage.addEventListener('pointerup',up);stage.addEventListener('pointercancel',up);
-stage.addEventListener('wheel',e=>{e.preventDefault();const r=stage.getBoundingClientRect();zoomAt(st.z*(e.deltaY<0?1.15:1/1.15),e.clientX-r.left,e.clientY-r.top)},{passive:false});
-let lastTap=0;stage.addEventListener('pointerup',e=>{const n=Date.now();if(n-lastTap<300&&!e.target.closest('button')){st.z=st.z>1?1:2;st.px=st.z>1?-stage.clientWidth/2:0;st.py=st.z>1?-stage.clientWidth/2:0;applyZoom();draw()}lastTap=n});
+stage.addEventListener('touchmove',e=>{if(e.touches.length>1||st.z>1.01)e.preventDefault()},{passive:false});
+stage.addEventListener('wheel',e=>{if(!e.ctrlKey&&st.z<=1.01&&Math.abs(e.deltaY)<40)return;e.preventDefault();const p=rel(e);zoomAt(st.z*(e.deltaY<0?1.15:1/1.15),p.x,p.y)},{passive:false});
 /* ---------- controls ---------- */
 function setSw(el,on,dis){el.setAttribute('aria-checked',on?'true':'false');el.disabled=!!dis}
 function sync(){
@@ -301,49 +366,69 @@ function sync(){
   const tbl=st.view==='table';$('#tableRow').style.display=tbl?'':'none';
   const mat=M[st.mat];const fullOk=mat.cls==='A';if(!fullOk&&st.mode==='full'&&mat.cls==='B')st.mode='corner';
   $('#m-full').disabled=!fullOk;$$('#modeSeg button').forEach(b=>b.classList.toggle('on',b.dataset.m===st.mode));$('#flip').hidden=st.mode!=='corner';
-  setSw($('#walls'),st.walls&&T[st.set].walls,!T[st.set].walls);const wn=$('#wallsNote');
-  wn.hidden=T[st.set].walls&&!T[st.set].pat;wn.textContent=!T[st.set].walls?`Walls aren’t available for ${T[st.set].n}: we don’t have a photo of its tile backs yet.`:(T[st.set].pat?`${T[st.set].n} has patterned backs. This sample shows them in their main back color.`:'');
-  $$('#nr button').forEach(b=>{b.classList.toggle('on',+b.dataset.n===st.nr);b.disabled=st.mode==='corner'});
+  const t=T[st.set];setSw($('#walls'),st.walls&&t.walls,!t.walls);const wn=$('#wallsNote');wn.hidden=t.walls&&!t.patch;
+  wn.textContent=!t.walls?`Walls for ${t.n}: ${t.why} We only draw walls from a real back color.`:(t.patch?`${t.n} walls use a pattern cut from a photo of its real backs.`:'');
+  $$('#players button').forEach(b=>{b.classList.toggle('on',+b.dataset.n===st.players);b.disabled=st.mode==='corner'});
+  if(st.seatSel>=0&&!activeSeats().includes(st.seatSel))st.seatSel=-1;
+  if(!st.compare)st.seatSel=-1;
+  $('#cmpBtn').classList.toggle('on',st.compare);$('#cmpBtn').textContent=st.compare?'Done comparing':'Compare racks';
+  $('#rackLab').textContent=st.compare?(st.seatSel<0?'Tap a numbered rack on the table first':`Try a rack in spot ${activeSeats().indexOf(st.seatSel)+1}`):'Rack color · all 4 racks';
+  legend();
   setSw($('#faceSw'),st.faces);$$('#facePos button').forEach(b=>b.classList.toggle('on',b.dataset.p===st.facePos));
-  // banner
   const bn=$('#banner');let msg='';
-  if(tbl){if(mat.cls==='C')msg=`${mat.n}: ${mat.why} Not available in Table view.`;else if(mat.cls==='B'&&st.mode==='corner')msg=`${mat.n}: ${mat.why}`;if(!R[st.rack]||!R[st.rack].ok)msg+=(msg?' ':'')+`${R[st.rack]?R[st.rack].n:'This rack'}: not available in Table view.`}
-  bn.hidden=!msg;bn.textContent=msg;
-  const rk=R[st.rack];$('#cap').innerHTML=`<span><b>${T[st.set].n}</b> tiles · <b>${mat.n}</b> mat${rk?` · <b>${rk.n}</b>`:''}</span><span>${disp(mat.bn)}</span>`;
+  if(tbl&&st.compare)msg='Tap a rack to try a different one there. ';
+  if(tbl){if(mat.cls==='C')msg=`${mat.n}: ${mat.why} Not available in Table view.`;else if(mat.cls==='B'&&st.mode==='corner')msg=`${mat.n}: ${mat.why}`;
+    if(!t.walls&&st.walls)msg+=(msg?' ':'')+`Walls off: ${t.why}`}
+  bn.hidden=!msg;bn.textContent=msg.trim();
+  const rs=[...new Set(activeSeats().map(si=>st.seats[si]))].map(k=>R[k].n).join(' + ');
+  $('#cap').innerHTML=`<span><b>${esc(t.n)}</b> tiles · <b>${esc(mat.n)}</b> mat · <b>${esc(rs)}</b></span><span>${esc(disp(mat.bn))}</span>`;
   rackChips();renderGrid();draw();
 }
-function rackList(){const s=SETS[st.set];const recs=s.recs[st.mat]||[];const seen=new Set();const out=[];
-  for(const k of [...recs,...s.racks,...Object.keys(R)])if(!seen.has(k)&&R[k]){seen.add(k);out.push(k)}return out}
-function rackChips(){const box=$('#rackChips');const ks=rackList().filter(k=>R[k].ok&&fits(k)).slice(0,14);
-  box.innerHTML=ks.map(k=>`<button class="chip${k===st.rack?' on':''}" data-k="${encodeURIComponent(k)}"><i style="background:${R[k].hx}"></i>${esc(short(R[k].n,R[k].bn))}</button>`).join('');
-  box.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{st.rack=decodeURIComponent(b.dataset.k);sync()})}
+function setRack(k){if(!st.compare||st.seatSel<0)st.seats=st.seats.map(()=>k);else st.seats[st.seatSel]=k}
+function rackChips(){const box=$('#rackChips');const cur=st.seats[st.seatSel<0?0:st.seatSel];const ks=rackList().filter(usable).slice(0,16);if(!ks.includes(cur)&&usable(cur))ks.unshift(cur);
+  box.innerHTML=ks.map(k=>`<button class="chip${k===cur?' on':''}" data-k="${encodeURIComponent(k)}"><i style="background:${R[k].hx}"></i>${esc(short(R[k].n,R[k].bn))}</button>`).join('');
+  box.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{setRack(decodeURIComponent(b.dataset.k));sync()})}
 const short=(n,b)=>n.replace(b,'').replace(/^[\s\-–:]+/,'').replace(/Mahjong Rack.*$/i,'').trim()||n;
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
 $$('.views button').forEach(b=>b.onclick=()=>{st.view=b.dataset.v;sync()});
 $$('#modeSeg button').forEach(b=>b.onclick=()=>{if(b.disabled)return;st.mode=b.dataset.m;sync()});
 $('#flip').onclick=()=>{st.flip=!st.flip;sync()};
 $('#walls').onclick=()=>{st.walls=!st.walls;sync()};
-$$('#nr button').forEach(b=>b.onclick=()=>{st.nr=+b.dataset.n;sync()});
+$$('#players button').forEach(b=>b.onclick=()=>{st.players=+b.dataset.n;sync()});
+$('#cmpBtn').onclick=()=>{st.compare=!st.compare;st.seatSel=st.compare?0:-1;if(st.compare){const ks=rackList().filter(usable);const base=st.seats[0];const alts=ks.filter(k=>k!==base&&R[k].hx);
+  /* start with the current rack plus 3 close alternatives so the compare is visible right away */
+  st.seats=[base,...(alts.slice(0,3))];while(st.seats.length<4)st.seats.push(base)}sync()};
 $('#faceSw').onclick=()=>{st.faces=!st.faces;sync()};
 $$('#facePos button').forEach(b=>b.onclick=()=>{st.facePos=b.dataset.p;st.faces=true;sync()});
-/* ---------- sheet / swap ---------- */
+/* ---------- non-modal half sheet (phone) ---------- */
 const panel=$('#panel');
-function openSheet(mode,tab){panel.dataset.mode=mode;if(tab){st.tab=tab;tabSync()}panel.classList.add('open');if(window.innerWidth<960)window.scrollTo({top:0,behavior:'smooth'})}
+function padBody(){document.body.style.paddingBottom=(panel.classList.contains('open')&&window.innerWidth<960)?panel.offsetHeight+'px':''}
+function openSheet(mode,tab){panel.dataset.mode=mode;if(tab&&tab!==st.tab){st.tab=tab;tabSync()}panel.classList.add('open');panel.style.transform='';panel.scrollTop=0;requestAnimationFrame(padBody)}
+function closeSheet(){panel.classList.remove('open');panel.style.transform='';padBody()}
 $('#openAdj').onclick=()=>openSheet('adjust');$('#openTiles').onclick=()=>openSheet('swap','tiles');$('#openMat').onclick=()=>openSheet('swap','mat');$('#openRacks').onclick=()=>openSheet('swap','racks');
 $$('[data-open]').forEach(b=>b.onclick=()=>openSheet('swap',b.dataset.open));
-$('#closeSheet').onclick=()=>panel.classList.remove('open');
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){panel.classList.remove('open');$('#modal').hidden=true;$('#pop').hidden=true}});
-function tabSync(){$$('.tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===st.tab));st.brand='';st.color='';$('#brandBtn').textContent='All brands ▾';$('#pop').hidden=true;
-  $('#q').placeholder={tiles:'Search tile sets',mat:'Search mats by name',racks:'Search racks'}[st.tab];renderDots();renderGrid()}
+$('#closeSheet').onclick=closeSheet;
+{const g=panel.querySelector('.grab');let y0=null,dy=0;
+ g.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;y0=e.clientY;dy=0;panel.classList.add('dragging');try{g.setPointerCapture(e.pointerId)}catch(_){}});
+ g.addEventListener('pointermove',e=>{if(y0===null)return;dy=Math.max(0,e.clientY-y0);panel.style.transform=`translateY(${dy}px)`});
+ const end=()=>{if(y0===null)return;panel.classList.remove('dragging');if(dy>70)closeSheet();else panel.style.transform='';y0=null};
+ g.addEventListener('pointerup',end);g.addEventListener('pointercancel',end)}
+new ResizeObserver(padBody).observe(panel);
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeSheet();$('#modal').hidden=true;$('#pop').hidden=true}});
+/* ---------- swap: each tab keeps its own search text ---------- */
+function tabSync(){$$('.tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===st.tab));st.brand='';st.color='';st.fin='';$('#brandBtn').textContent='All brands ▾';$('#pop').hidden=true;
+  $('#q').value=st.qs[st.tab];$('#q').placeholder={tiles:'Search tile sets',mat:'Search mats by name',racks:'Search racks: name, color or finish'}[st.tab];renderDots();renderFins();renderGrid()}
 $$('.tabs button').forEach(b=>b.onclick=()=>{st.tab=b.dataset.t;tabSync()});
-$('#q').oninput=e=>{st.q=e.target.value.trim().toLowerCase();renderGrid()};
+$('#q').oninput=e=>{st.qs[st.tab]=e.target.value;renderGrid()};
 $('#instock').onclick=()=>{st.instock=!st.instock;setSw($('#instock'),st.instock);renderGrid()};
 $('#picks').onclick=()=>{st.picks=!st.picks;setSw($('#picks'),st.picks);renderGrid()};
-function dotsFor(){return st.tab==='racks'?['pink','red','orange','yellow','green','blue','purple','neutral','black','wood','clear','tortoise','metallic']:['pink','red','orange','yellow','green','blue','purple','neutral','black']}
-function renderDots(){$('#dots').innerHTML=`<button class="dot all${st.color?'':' on'}" data-c="">All</button>`+dotsFor().map(c=>`<button class="dot${st.color===c?' on':''}" data-c="${c}" style="background:${COLORS[c]}" aria-label="${c}" title="${c}"></button>`).join('');
+function renderDots(){$('#dots').innerHTML=`<button class="dot all${st.color?'':' on'}" data-c="">All</button>`+Object.keys(COLORS).filter(c=>c!=='brown'||st.tab==='racks').map(c=>`<button class="dot${st.color===c?' on':''}" data-c="${c}" style="background:${COLORS[c]}" aria-label="${c}" title="${c}"></button>`).join('');
   $$('#dots .dot').forEach(b=>b.onclick=()=>{st.color=st.color===b.dataset.c?'':b.dataset.c;renderDots();renderGrid()})}
-function pool(){const D=st.tab==='tiles'?T:st.tab==='mat'?M:R;return D}
-function brandsNow(){const D=pool();const keys=st.tab==='tiles'?Object.keys(T):Object.keys(D);const m={};for(const k of keys){const it=D[k];m[it.bn]=m[it.bn]||{n:0,pa:it.pa&&!LO.has(it.bn)};m[it.bn].n++}
+function renderFins(){const box=$('#fins');box.hidden=st.tab!=='racks';if(box.hidden)return;
+  const have=new Set([...Object.values(R).flatMap(r=>r.fin),...IX.racks.flatMap(r=>r.fin)]);
+  box.innerHTML=FINS.filter(([f])=>have.has(f)).map(([f,l])=>`<button class="fin${st.fin===f?' on':''}" data-f="${f}">${l}</button>`).join('');
+  box.querySelectorAll('.fin').forEach(b=>b.onclick=()=>{st.fin=st.fin===b.dataset.f?'':b.dataset.f;renderFins();renderGrid()})}
+function poolItems(){if(st.tab==='mat')return Object.entries(M).map(([k,v])=>({...v,k}));if(st.tab==='tiles')return Object.entries(T).map(([k,v])=>({...v,k}));return Object.entries(R).map(([k,v])=>({...v,k}))}
+function brandsNow(){const m={};for(const it of [...poolItems(),...IX[st.tab]]){m[it.bn]=m[it.bn]||{n:0,pa:it.pa&&!LO.has(it.bn)};m[it.bn].n++}
   return Object.entries(m).sort((a,b)=>(b[1].pa-a[1].pa)||a[0].localeCompare(b[0]))}
 $('#brandBtn').onclick=e=>{e.stopPropagation();const p=$('#pop');if(!p.hidden){p.hidden=true;return}
   const bs=brandsNow();
@@ -351,40 +436,54 @@ $('#brandBtn').onclick=e=>{e.stopPropagation();const p=$('#pop');if(!p.hidden){p
    :`<div class="ls"><button data-b="">All brands</button>${bs.map(([b,v])=>`<button data-b="${esc(b)}">${v.pa?'<span class="heart">♥&nbsp;</span>':''}${esc(disp(b))} (${v.n})</button>`).join('')}</div><p class="hint" style="padding:4px 6px">♥ Code MAHJMATCH works at these brands.</p>`;
   p.hidden=false;p.querySelectorAll('button').forEach(b=>b.onclick=ev=>{ev.stopPropagation();st.brand=b.dataset.b;$('#brandBtn').textContent=(st.brand?disp(st.brand):'All brands')+' ▾';p.hidden=true;renderGrid()})};
 document.addEventListener('click',e=>{if(!e.target.closest('.brandwrap'))$('#pop').hidden=true});
-function list(){const s=SETS[st.set];let ks,info={};
-  if(st.tab==='mat'){const order=[...s.picks,...s.color];const rest=Object.keys(M).filter(k=>!order.includes(k)).sort((a,b)=>(M[b].pa-M[a].pa)||M[a].n.localeCompare(M[b].n));ks=[...new Set([...order,...rest])];
-    ks=ks.filter(k=>(!st.picks||s.picks.includes(k))&&(!st.color||M[k].mf.includes(st.color)))}
-  else if(st.tab==='tiles'){ks=Object.keys(T).sort((a,b)=>(isPick(b,st.mat)-isPick(a,st.mat))||(T[b].pa-T[a].pa)||T[a].n.localeCompare(T[b].n));
-    ks=ks.filter(k=>(!st.picks||isPick(k,st.mat))&&(!st.color||T[k].fam===st.color))}
-  else{const recs=(s.recs[st.mat]||[]);ks=rackList();const n0=ks.length;ks=ks.filter(fits);info.cut=n0-ks.length;
-    ks=ks.filter(k=>(!st.picks||recs.includes(k))&&(!st.color||R[k].rf.includes(st.color)))}
-  const D=pool();ks=ks.filter(k=>(!st.brand||D[k].bn===st.brand)&&(!st.q||(D[k].n+' '+D[k].bn).toLowerCase().includes(st.q)));
-  if(st.instock){const a=ks.filter(k=>!D[k].so);info.allso=a.length===0&&ks.length>0;if(!info.allso)ks=a}
-  return [ks,info]}
-function renderGrid(){const [ks,info]=list();const s=SETS[st.set];const g=$('#grid');let hint='';
-  if(st.tab==='mat')hint=`♥ = your match for ${T[st.set].n}. Gray = not available in Table view (tap to see why).`;
+const words=it=>[it.n,disp(it.bn),...(it.mf||[]),...(it.rf||[]),...(it.fin||[]),it.fam||''].join(' ').toLowerCase();
+const matchQ=(it,q)=>q.split(/\s+/).filter(Boolean).every(w=>words(it).includes(w));
+function list(){const s=SETS[st.set];const q=st.qs[st.tab].trim().toLowerCase();let rows=[];const info={};
+  const okF=it=>(!st.brand||it.bn===st.brand)&&(!q||matchQ(it,q));
+  if(st.tab==='mat'){const order=[...s.picks,...s.color];const rest=Object.keys(M).filter(k=>!order.includes(k)).sort((a,b)=>(M[b].pa-M[a].pa)||M[a].n.localeCompare(M[b].n));
+    rows=[...new Set([...order,...rest])].map(k=>({...M[k],k,pk:s.picks.includes(k),off:M[k].cls==='C',tag:M[k].cls==='B'?'Corner only':(M[k].cls==='C'?'Not in Table view':'')}))
+      .filter(it=>(!st.picks||it.pk)&&(!st.color||it.mf.includes(st.color)));
+    if(q||st.brand)rows.push(...IX.mat.filter(it=>!st.picks&&(!st.color||it.mf.includes(st.color))).map(it=>({...it,off:true,tag:'Not in Table view'})))}
+  else if(st.tab==='tiles'){rows=Object.keys(T).sort((a,b)=>(isPick(b,st.mat)-isPick(a,st.mat))||(T[b].pa-T[a].pa)||T[a].n.localeCompare(T[b].n))
+      .map(k=>({...T[k],k,pk:isPick(k,st.mat),tag:T[k].walls?'':'No walls yet'})).filter(it=>(!st.picks||it.pk)&&(!st.color||it.fam===st.color));
+    if(q||st.brand)rows.push(...IX.tiles.filter(()=>!st.picks&&!st.color).map(it=>({...it,off:true,tag:'Not in this sample'})))}
+  else{const recs=s.recs[st.mat]||[];
+    rows=rackList().map(k=>({...R[k],k,pk:recs.includes(k),off:!R[k].ok||!fits(k),tag:!fits(k)?'Too short for these tiles':(!R[k].ok?'Not in Table view':''),short:!fits(k)}))
+      .filter(it=>(!st.picks||it.pk)&&(!st.color||it.rf.includes(st.color))&&(!st.fin||it.fin.includes(st.fin)));
+    info.cut=rows.filter(r=>r.short).length;
+    if(!q&&!st.brand)rows=rows.filter(r=>!r.short);
+    if(q||st.brand||st.fin)rows.push(...IX.racks.filter(it=>!st.picks&&(!st.color||it.rf.includes(st.color))&&(!st.fin||it.fin.includes(st.fin))).map(it=>({...it,off:true,tag:fitsLen(it.len)?'Not in Table view':'Too short for these tiles',why:fitsLen(it.len)?it.why:'Too short for these tiles.'})))}
+  rows=rows.filter(okF);
+  if(st.instock){const a=rows.filter(r=>!r.so);info.allso=a.length===0&&rows.length>0;if(!info.allso)rows=a}
+  rows.sort((a,b)=>(a.off?1:0)-(b.off?1:0));
+  return [rows,info,q]}
+function activeLine(q){const parts=[];if(q)parts.push(`results for <b>“${esc(q)}”</b>`);if(st.brand)parts.push(`<b>${esc(disp(st.brand))}</b>`);if(st.color)parts.push(`<b>${st.color}</b>`);if(st.fin)parts.push(`<b>${FINS.find(f=>f[0]===st.fin)[1]}</b>`);if(st.instock)parts.push('<b>in stock only</b>');if(st.picks)parts.push('<b>Tiffany’s picks</b>');
+  const a=$('#active');a.hidden=!parts.length;if(!parts.length)return;a.innerHTML=`<span>Showing ${parts.join(' · ')}</span><button class="clear" id="clearAll">Clear</button>`;
+  $('#clearAll').onclick=()=>{st.qs[st.tab]='';$('#q').value='';st.brand='';st.color='';st.fin='';st.instock=false;st.picks=false;setSw($('#instock'),false);setSw($('#picks'),false);$('#brandBtn').textContent='All brands ▾';renderDots();renderFins();renderGrid()}}
+function renderGrid(){const [rows,info,q]=list();const s=SETS[st.set];const g=$('#grid');let hint='';activeLine(q);
+  if(st.tab==='mat')hint=`♥ = your match for ${T[st.set].n}. Gray = not available in Table view; tap it to see why.`;
   if(st.tab==='tiles')hint=`♥ = you matched this set with ${M[st.mat].n}.`;
-  if(st.tab==='racks')hint=`Only racks that fit ${T[st.set].n} tiles are listed${info.cut?` (${info.cut} shorter racks left out)`:''}. ♥ = your rack picks for this mat.`;
+  if(st.tab==='racks')hint=`Only racks that fit ${T[st.set].n} tiles can go on the table${info.cut?` (${info.cut} shorter racks are hidden until you search)`:''}. ♥ = your rack picks for this mat.`;
   if(info.allso)hint='No in-stock matches here, so showing all. '+hint;
   $('#swapHint').textContent=hint;
-  if(!ks.length){g.innerHTML='<div class="empty">Nothing matches these filters. Try clearing the color or brand.</div>';return}
-  g.innerHTML=ks.map(k=>{let it,off=false,tag='',pk=false,on=false,cls='';
-    if(st.tab==='mat'){it=M[k];off=it.cls==='C';tag=it.cls==='B'?'Corner only':(off?'Not in Table view':'');pk=s.picks.includes(k);on=k===st.mat}
-    else if(st.tab==='tiles'){it=T[k];tag=it.walls?'':'No walls';pk=isPick(k,st.mat);on=k===st.set}
-    else{it=R[k];off=!it.ok;tag=off?'Not in Table view':'';pk=(s.recs[st.mat]||[]).includes(k);on=k===st.rack;cls=' rk'}
-    return `<button class="it${cls}${off?' off':''}${on?' on':''}" data-k="${encodeURIComponent(k)}"><span class="ph"><img src="${it.th||''}" alt="" loading="lazy">${pk?'<span class="pk">♥</span>':''}${tag?`<span class="tag">${tag}</span>`:''}</span><span class="nm">${esc(it.n)}${it.so?'<span class="so">Sold out</span>':''}</span><span class="bn">${esc(disp(it.bn))}</span></button>`}).join('');
-  g.querySelectorAll('.it').forEach(b=>b.onclick=()=>pick(decodeURIComponent(b.dataset.k)))}
-function pick(k){
-  if(st.tab==='mat'){const m=M[k];if(m.cls==='C'){toast(`${m.n}: ${m.why} You can still see it in Up close and Aerial.`);return}st.mat=k;if(m.cls==='B')st.mode='corner';const recs=SETS[st.set].recs[k];if(recs&&recs.length&&R[recs[0]].ok)st.rack=recs[0]}
-  else if(st.tab==='tiles'){st.set=k;if(!fits(st.rack)||!R[st.rack].ok){const r=rackList().find(x=>R[x].ok&&fits(x));if(r)st.rack=r}}
-  else{const r=R[k];if(!r.ok){toast(`${r.n}: ${r.why} It’s still in the app in the other views.`);return}st.rack=k}
+  if(!rows.length){g.innerHTML='<div class="empty">Nothing matches. Tap Clear above to see everything again.</div>';return}
+  const vis=rows.slice(0,160);
+  g.innerHTML=vis.map((it,i)=>{const on=(st.tab==='mat'&&it.k===st.mat)||(st.tab==='tiles'&&it.k===st.set)||(st.tab==='racks'&&it.k===st.seats[st.seatSel<0?0:st.seatSel]);
+    const ph=it.th?`<img src="${it.th}" alt="" loading="lazy">`:`<span style="display:grid;place-items:center;height:100%;font:600 10px/1.2 var(--body);color:var(--gray);padding:6px;text-align:center">No photo in this sample</span>`;
+    return `<button class="it${st.tab==='racks'?' rk':''}${it.off?' off':''}${on?' on':''}" data-i="${i}"><span class="ph">${ph}${it.pk?'<span class="pk">♥</span>':''}${it.tag?`<span class="tag">${it.tag}</span>`:''}</span><span class="nm">${esc(it.n)}${it.so?'<span class="so">Sold out</span>':''}</span><span class="bn">${esc(disp(it.bn))}</span></button>`}).join('')+(rows.length>vis.length?`<div class="empty">${rows.length-vis.length} more. Search to narrow it down.</div>`:'');
+  g.querySelectorAll('.it').forEach(b=>b.onclick=()=>pick(vis[+b.dataset.i]))}
+function pick(it){
+  if(it.off){toast(`${it.n}: ${it.why||it.tag+'.'} ${it.ix?'It’s in the app; this sample only loads part of the catalog.':'You can still see it in Up close and Aerial.'}`);return}
+  if(st.tab==='mat'){st.mat=it.k;if(it.cls==='B')st.mode='corner';const r=(SETS[st.set].recs[it.k]||[]).find(usable);if(r&&!st.compare)st.seats=st.seats.map(()=>r)}
+  else if(st.tab==='tiles'){st.set=it.k;fixSeats()}
+  else setRack(it.k);
   sync()}
 /* ---------- actions ---------- */
 function toast(t){const e=$('#toast');e.textContent=t;e.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>e.hidden=true,3600)}
 function codeLine(it){if(LO.has(it.bn))return '<span class="code lo">Save through our link</span>';if(it.pa&&!it.nc)return '<span class="code">Code MAHJMATCH</span>';return '<span class="code nc">No code available</span>'}
-$('#save').onclick=()=>{let a=[];try{a=JSON.parse(localStorage.getItem('tvs-cards')||'[]')}catch(e){}a.push({set:st.set,mat:st.mat,rack:st.rack,t:Date.now()});try{localStorage.setItem('tvs-cards',JSON.stringify(a))}catch(e){}toast(`Saved to your match cards (${a.length} in this sample).`)};
-$('#share').onclick=async()=>{const t=`${T[st.set].n} tiles + ${M[st.mat].n} mat + ${R[st.rack].n} racks, from Find Your Mat-ch on mahjmatchmaker.com`;try{await navigator.clipboard.writeText(t);toast('Copied. Paste it anywhere to share this table.')}catch(e){toast(t)}};
-$('#shopBtn').onclick=()=>{const rows=[[T[st.set],'tiles',''],[M[st.mat],'mat',''],[R[st.rack],'racks',' rk']];
+$('#save').onclick=()=>{let a=[];try{a=JSON.parse(localStorage.getItem('tvs-cards')||'[]')}catch(e){}a.push({set:st.set,mat:st.mat,seats:st.seats,t:Date.now()});try{localStorage.setItem('tvs-cards',JSON.stringify(a))}catch(e){}toast(`Saved to your match cards (${a.length} in this sample).`)};
+$('#share').onclick=async()=>{const rs=[...new Set(activeSeats().map(si=>R[st.seats[si]].n))].join(' + ');const t=`${T[st.set].n} tiles + ${M[st.mat].n} mat + ${rs} racks, from Find Your Mat-ch on mahjmatchmaker.com`;try{await navigator.clipboard.writeText(t);toast('Copied. Paste it anywhere to share this table.')}catch(e){toast(t)}};
+$('#shopBtn').onclick=()=>{const rows=[[T[st.set],'tiles',''],[M[st.mat],'mat',''],...[...new Set(activeSeats().map(si=>st.seats[si]))].map(k=>[R[k],'racks',' rk'])];
   $('#mbox').innerHTML=`<div class="ctl"><h2 style="font:400 20px var(--display);color:var(--navy);margin:0">Shop the look</h2><button class="x" id="mx" aria-label="Close">×</button></div>`+
    rows.map(([it,w,c])=>`<div class="shop${c}"><img src="${it.th||''}" alt=""><div><div class="nm">${esc(it.n)}</div><div class="hint">${esc(disp(it.bn))} · ${w}</div>${codeLine(it)}</div>${it.u?`<a href="${esc(it.u)}" target="_blank" rel="noopener">Shop ›</a>`:''}</div>`).join('')+
    `<p class="hint">Sample only: links go to the real product pages.</p>`;

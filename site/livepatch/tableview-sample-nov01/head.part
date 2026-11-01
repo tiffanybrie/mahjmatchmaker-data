@@ -115,6 +115,22 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
 .seat{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 10px;font:600 12.5px/1 var(--body);display:flex;gap:6px;align-items:center}
 .seat i{width:14px;height:14px;border-radius:50%;display:block;border:1px solid rgba(0,0,0,.15)}
 .seat.on{border-color:var(--pink);box-shadow:inset 0 0 0 1px var(--pink)}
+#cmpBtn.on{background:var(--pink);border-color:var(--pink);color:#fff}
+.rtag{position:absolute;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:var(--pink);color:#fff;font:700 13px/26px var(--body);text-align:center;box-shadow:0 0 0 2px #fff,0 2px 6px rgba(0,0,0,.3);pointer-events:none}
+.rtag.sel{background:var(--navy)}
+.rtag.pulse{animation:pulse 1.2s ease-in-out 3}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.35)}}
+.legend{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:8px}
+.legend .lh{font-size:13px;color:var(--ink)}
+.lrow{display:grid;grid-template-columns:26px 44px minmax(0,1fr) auto;gap:8px;align-items:center;font-size:13px}
+.lrow .n{width:24px;height:24px;border-radius:50%;background:var(--pink);color:#fff;font:700 12px/24px var(--body);text-align:center}
+.lrow.sel .n{background:var(--navy)}
+.lrow img{width:44px;height:22px;object-fit:contain}
+.lrow .nm{min-width:0;overflow-wrap:anywhere;font-weight:600}
+.lrow .acts{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.lrow a{color:var(--navy);font-weight:700;text-decoration:none;font-size:12.5px}
+.lrow button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 8px;font:600 11.5px/1.2 var(--body);color:var(--navy)}
+@media (prefers-reduced-motion:reduce){.rtag.pulse{animation:none}}
 .empty{font-size:13px;color:var(--mute);padding:10px 0}
 /* phone sheet */
 @media (max-width:959px){
@@ -165,9 +181,11 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
         <div class="banner" id="banner" hidden></div>
       </div>
       <div class="cap" id="cap"></div>
+      <div class="legend" id="legend" hidden></div>
       <div class="row" id="tableRow">
         <div class="seg" id="modeSeg"><button id="m-full" data-m="full" class="on">Full table</button><button id="m-corner" data-m="corner">Corner</button></div>
         <button class="btn" id="flip" hidden>Flip ⇄</button>
+        <button class="btn" id="cmpBtn">Compare racks</button>
         <button class="btn mobileonly" id="openAdj">Adjust</button>
       </div>
       <div class="row mobileonly">
@@ -183,7 +201,6 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
         <div class="ctl"><span>Walls</span><button class="sw" id="walls" role="switch" aria-checked="true" aria-label="Walls"></button></div>
         <p class="hint" id="wallsNote" hidden></p>
         <div class="ctl"><span>Players</span><div class="seg" id="players"><button data-n="4" class="on">4</button><button data-n="3">3</button><button data-n="2">2</button></div></div>
-        <div><div class="lab" style="margin-bottom:8px">Racks: pick a seat, or tap a rack on the table, to mix colors</div><div class="seats" id="seats"></div></div>
         <div><div class="lab" style="margin-bottom:8px" id="rackLab">Rack color · all seats</div><div class="chips" id="rackChips"></div></div>
         <div class="ctl"><span>Tile faces</span><button class="sw" id="faceSw" role="switch" aria-checked="true" aria-label="Show tile faces"></button></div>
         <div class="ctl"><span>Tile faces sit</span><div class="seg" id="facePos"><button data-p="center" class="on">Center</button><button data-p="corner">Corner</button></div></div>
