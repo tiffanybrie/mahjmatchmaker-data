@@ -14,5 +14,6 @@ python3 $H/ui112.py "$D"                                   # titles, colour sect
 python3 $R/builder/fym_fix_oct25/v98_matflat.py "$D"        # angled mat photos flattened (gate [89]); WIP from Oct 26, every result was looked at
 python3 $H/ui112b.py "$D"                                  # In stock only toggle (config/fym-stock.json from scripts/fym_stock_check.py) + account sheet headings
 python3 $H/qa112.py "$D" "$S"                             # Nov 1 QA: TdT link-only everywhere, 11 flattens kept as v111, sold-out badge, check off, accent, rack chips
+python3 $H/qa112b.py "$D/index.html"                          # QA round 2: badge pill specificity + TdT pill fit
 python3 $H/gate_nov01.py "$D"
 python3 $R/builder/fym_gate.py "$D"

@@ -1608,12 +1608,12 @@ if '/*v112q' in UI:
     if not _lo: F.append("[139] LINKONLY map missing")
     for _o in list(D['mats'].values()) + list(D['racks'].values()) + list(D['tiles'].values()):
         if 'tigredetartan.com' in str(_o.get('u', '')) and _o.get('bn') and _o['bn'] not in _lok: F.append(f"[139] link-only brand name {_o['bn']!r} not in LINKONLY"); break
-    for _a, _w in (("${BPA(m)?(LINKONLY[m]?'<em>Save through our link</em>':'<em>Code MAHJMATCH</em>'):''}", 'logo pill: link-only brands say Save through our link'),
+    for _a, _w in (("${BPA(m)?(LINKONLY[m]?'<em class=\"lo\">Save through our link</em>':'<em>Code MAHJMATCH</em>'):''}", 'logo pill: link-only brands say Save through our link'),
                    ("${BCODE[b]&&!LINKONLY[b]?'♥ ':''}", 'no ♥ before link-only brands'), ('SECPH(P.map(id=>M[id].bn))', 'shop-by-color mats heading'),
                    ('SECPH(P.map(x=>x[0].maker))', 'shop-by-color tiles heading'), ("function BDN(x){return x==='Tigre de Tartan'?'Tigre de Tart\\u00e1n':x;}", 'accented display name'),
                    ('RDOTN(x)>0', 'rack chips only when the deck has racks')):
         if _a not in UI: F.append(f"[139] {_w} missing")
-    if "'<em>Code MAHJMATCH</em>'" in UI.replace("(LINKONLY[m]?'<em>Save through our link</em>':'<em>Code MAHJMATCH</em>')", ''): F.append("[139] a Code MAHJMATCH pill without the LINKONLY guard")
+    if "'<em>Code MAHJMATCH</em>'" in UI.replace("(LINKONLY[m]?'<em class=\"lo\">Save through our link</em>':'<em>Code MAHJMATCH</em>')", ''): F.append("[139] a Code MAHJMATCH pill without the LINKONLY guard")
     if re.search(r"BCODE\[b\]\?'♥ '", UI): F.append("[139] ♥ shown for every code brand incl. link-only")
     if 'tick off' in UI: F.append("[139] 'tick off' wording (use 'check off')")
     if "' · <b class=\"sob\">" in UI: F.append("[139] sold-out badge has a dangling ' · '")
