@@ -9,6 +9,7 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 
 **PARTNER SEND GATE (Oct 27 3:08am, standing):** before scheduling ANY partner email or graphics drop, run `python3 scripts/partner_send_check.py`; it must exit 0.
 
+- **HQ PIN (Nov 1): needs/supabase-settings-nov01 stays at the very top of HQ (order -100) until she does it. Morning cleanup must not move it.**
 ## Tomorrow's top priorities (Sun Nov 1), in order
 Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm), then holiday from Mon Nov 2 (fall is over: Halloween passed, Brownstone is the last fall album). The order is clear, so no "Set tomorrow's order" card tonight.
 
