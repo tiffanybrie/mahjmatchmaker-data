@@ -15,3 +15,5 @@ Leave the repo clean (commit only your folder + ANSWERS). Report: absolute path 
 UPDATE Nov 1 12:22am (Tiffany — this OVERRIDES anything above if they conflict): don't get so creative the tool disappears. Partners still don't understand what we do: every reel must show the matching happening on a phone (visualize + shop mats, tiles, racks together) — but NEVER a static phone on white while zoomed out. The mix: full-screen photo-dump splices of mats/tiles/racks (mix and match) INTERWOVEN with real in-app moments, dynamically zoomed in; never show a bare match card without showing how we got it (it's the OUTPUT of the tool); always "Shop now · use code MAHJMATCH". Upbeat, exciting. Finished content is fine to iterate on this week.
 
 UPDATE Nov 1 12:24am: never "you didn't know we made" wording. Push HOLIDAY ALBUMS (every holiday tile set with an album, its many match cards), not single match cards.
+
+UPDATE Nov 1 12:28am: never "every"/"all" holiday sets matched. Use real counts ("N holiday albums") or "so many".

@@ -63,7 +63,7 @@ def snow_front(t0):
 def page(body, t0, front=True): return f'<!doctype html><html><head><meta charset=utf8>{CSS}</head><body><div class="w">{bg(t0)}{body}{snow_front(t0) if front else ""}</div></body></html>'
 
 # ---- phone geometry (static frame; screenshots are 390-css-wide viewports at 3x)
-PW, PX, PY = 640, 220, 410
+PW, PX, PY = 720, 180, 410
 P = PW * .034; K = (PW - 2 * P) / 390; TOP = PY + P + PW * .10
 def sx(x): return PX + P + x * K
 def sy(y, crop): return TOP + (y - crop) * K
@@ -80,7 +80,14 @@ def ring(x, y, t, c=GOLD, n=2):
     return ''.join(f'<div class="a" style="position:absolute;left:{x - 52:.0f}px;top:{y - 52:.0f}px;width:104px;height:104px;border-radius:50%;border:10px solid {c};z-index:45;animation:ring .5s {t + k * .16:.3f}s forwards"></div>' for k in range(n))
 def lab(t, x, y, d, rot=-3, bgc=PINK, size=42):
     return f'<div class="call a" style="left:{x}px;top:{y}px;transform:rotate({rot}deg);background:{bgc};font-size:{size}px;animation:pop .3s {d:.3f}s forwards">{t}</div>'
-def ttl(t, d=0.0, top=262, size=84): return f'<div class="ttl a" style="top:{top}px;font-size:{size}px;animation:slam .4s {d:.3f}s forwards">{t}</div>'
+def ttl(t, d=0.0, top=250, size=76): return f'<div class="ttl a" style="top:{top}px;font-size:{size}px;animation:slam .4s {d:.3f}s forwards"><span style="display:inline-block;background:rgba(6,42,85,.92);border:5px solid {GOLD};border-radius:34px;padding:16px 34px 20px;box-shadow:0 14px 40px rgba(0,0,0,.45)">{t}</span></div>'
+Z = 1.337; FY = 400   # base framing: every app moment is shown zoomed in (Tiffany Nov 1 12:22am), css crop+15 lands at y=400
+def zcam(inner, crop, focus=None, s1=None, fy=960, d=0.0, dur=.5):
+    y0 = TOP + 15 * K; tx0, ty0 = 540 - 540 * Z, FY - y0 * Z
+    if focus is None: tx1, ty1, s1 = tx0, ty0, Z
+    else: tx1, ty1 = 540 - s1 * focus[0], fy - s1 * focus[1]
+    return (f'<div style="position:absolute;inset:0;z-index:5;transform-origin:0 0;--x0:{tx0:.1f}px;--y0:{ty0:.1f}px;--s0:{Z};--x1:{tx1:.1f}px;--y1:{ty1:.1f}px;--s1:{s1};'
+            f'transform:translate({tx0:.1f}px,{ty0:.1f}px) scale({Z});animation:cam {dur:.3f}s {d:.3f}s cubic-bezier(.45,0,.2,1) forwards">{inner}</div>')
 def cam(inner, x0=0, y0=0, s0=1, x1=0, y1=0, s1=1, d=0, dur=.5, ox=540, oy=960):
     return (f'<div style="position:absolute;inset:0;z-index:5;transform-origin:{ox}px {oy}px;--x0:{x0}px;--y0:{y0}px;--s0:{s0};--x1:{x1}px;--y1:{y1}px;--s1:{s1};'
             f'transform:translate({x0}px,{y0}px) scale({s0});animation:cam {dur:.3f}s {d:.3f}s cubic-bezier(.45,0,.2,1) forwards">{inner}</div>')
@@ -108,7 +115,7 @@ def curtains(t_open, dur=.75, closed_only=False):
     return panel('left', 'curL') + panel('right', 'curR') + valance
 
 # ---- scenes
-CROP = 85                # deck screens: tiles strip + mat card (rule 22: tiles big, not a sliver)
+CROP = 105               # deck screens: tiles strip + mat card (rule 22: tiles big, not a sliver)
 CARD = META['s0']        # deck card box (viewport css)
 def swipe(i, kind, title, label, t0, beats, bgimg=None, crop=CROP, deck='m', card_key=None, rot_lab=-3):
     secs = beats * B; key = card_key or f's{i}'; bx, by, bw, bh = META[key]
@@ -120,7 +127,7 @@ def swipe(i, kind, title, label, t0, beats, bgimg=None, crop=CROP, deck='m', car
            + stamp_on(kind, t_st) + '</div>')
     taps = ring(sx(btn[0] + btn[2] / 2), sy(btn[1] + btn[3] / 2, crop), t_st - .12, PINK if kind == 'yes' else '#fff', 1) if btn else ''
     clip = f'<div style="position:absolute;left:{PX + P:.0f}px;top:{TOP:.0f}px;width:{PW - 2 * P:.0f}px;height:1600px;overflow:hidden;z-index:19;pointer-events:none"></div>'
-    body = ttl(title) + phone(bgimg or f'{key}-a.png', crop) + fly + taps + lab(label, 120, 1380, t_st, rot_lab, PINK if kind == 'yes' else SLATE)
+    body = ttl(title) + zcam(phone(bgimg or f'{key}-a.png', crop) + fly + taps, crop) + lab(label, 110, 1300, t_st, rot_lab, PINK if kind == 'yes' else SLATE)
     return body, secs
 
 def scene_list(mode):
@@ -132,8 +139,8 @@ def scene_list(mode):
         tile = f'{CAP}/tile_full.jpg'
         body = (f'<div class="a" style="position:absolute;left:190px;top:700px;width:700px;height:700px;z-index:10;animation:pop .45s {B * 1.6:.3f}s forwards">'
                 f'<div style="position:absolute;inset:0;border-radius:40px;border:14px solid {GOLD};box-shadow:0 0 0 8px #fff,0 30px 80px rgba(0,0,0,.55);overflow:hidden"><img src="file://{tile}" style="width:100%;height:100%;object-fit:cover"></div></div>'
-                + f'<div class="a cap" style="position:absolute;left:40px;right:40px;top:300px;text-align:center;z-index:80;font-size:104px;animation:slam .4s 0s forwards;text-shadow:0 8px 0 rgba(0,0,0,.25)">Nutcracker Ballet</div>'
-                + f'<div class="a" style="position:absolute;left:40px;right:40px;top:430px;text-align:center;z-index:80;font:italic 600 74px/1.15 PF;color:{GOLD};animation:slam .4s {B * 2:.3f}s forwards;text-shadow:0 6px 18px rgba(0,0,0,.5)">needs a date for the holidays</div>'
+                + f'<div class="a cap" style="position:absolute;left:40px;right:40px;top:300px;text-align:center;z-index:80;font-size:90px;animation:slam .4s 0s forwards;text-shadow:0 8px 0 rgba(0,0,0,.25)">Nutcracker Ballet</div>'
+                + f'<div class="a" style="position:absolute;left:40px;right:40px;top:430px;text-align:center;z-index:80;font:italic 600 62px/1.15 PF;color:{GOLD};animation:slam .4s {B * 2:.3f}s forwards;text-shadow:0 6px 18px rgba(0,0,0,.5)">needs a date for the holidays</div>'
                 + lab('Mahj Squad tiles', 360, 1420, B * 3, -3, PINK)
                 + curtains(B * 1.0, B * 2) + sparks(B * 1.7, 540, 1050, 14))
         return body, beats * B
@@ -146,7 +153,7 @@ def scene_list(mode):
             crop = 85; cx, cy = sx(bb[0] + bb[2] / 2), sy(bb[1] + bb[3] / 2, crop)
             s1 = 1.75; ox, oy = cx, cy
             inner = phone(before, crop) + layer(after, crop, B * 2) + ring(cx, cy, B * 1.3, GOLD, 2)
-            body = ttl(title) + cam(inner, 0, 0, 1, 540 - cx, 960 - cy, s1, B * .2, B * 1.0, ox, oy) + lab(label, 150, 1360 if lab_y is None else lab_y, B * 2.1, -2, PINK)
+            body = ttl(title) + zcam(inner, crop, (cx, cy), 2.4, 980, B * .1, B * 1.0) + lab(label, 150, 1360 if lab_y is None else lab_y, B * 2.1, -2, PINK)
             return body, beats * B
         return f
     def landing(sukey, img, cardkey, title, label, beats, slot=0):
@@ -157,15 +164,16 @@ def scene_list(mode):
             cover = f'<div style="position:absolute;left:{tx - 4:.0f}px;top:{ty - 4:.0f}px;width:{tw + 8:.0f}px;height:{tw + 8:.0f}px;background:#fbefe9;z-index:7"></div>'
             flyin = (f'<div style="position:absolute;left:{tx:.0f}px;top:{ty:.0f}px;width:{tw:.0f}px;height:{tw:.0f}px;z-index:8;transform-origin:0 0;--fx:{700 - tx:.0f}px;--fy:{-600:.0f}px;--fs:9;'
                      f'animation:land {B * 1.3:.3f}s {B * .2:.3f}s cubic-bezier(.3,.1,.2,1) both"><img src="{u(cardkey + "-card.png")}" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%;border-radius:6px;box-shadow:0 6px 16px rgba(0,0,0,.35)"></div>')
-            inner = phone(img, crop) + cover + flyin
-            body = ttl(title) + cam(inner, 0, 0, 1.0, 540 - cx, 900 - cy, 1.6, B * 1.6, B * .9, cx, cy) + ring(540 + (tx + tw / 2 - cx) * 1.6, 900 + (ty + tw / 2 - cy) * 1.6, B * 2.6, PINK, 1) + lab(label, 330, 1260, B * 2.4, 3, NAVY)
+            inner = phone(img, crop) + cover + flyin + ring(tx + tw / 2, ty + tw / 2, B * 1.5, PINK, 1)
+            body = ttl(title) + zcam(inner, crop, (cx, cy), 2.6, 980, B * 1.5, B * .9) + lab(label, 330, 1260, B * 2.4, 3, NAVY)
             return body, beats * B
         return f
     def pick(t0, beats=3):
         su = META['su_final']; pb = META['pickbtn']; crop = 300
         cx, cy = sx(pb[0] + pb[2] / 2), sy(pb[1] + pb[3] / 2, crop)
         inner = phone('30-suitors.png', crop)
-        body = ttl('Which suitor<br>is <em>the one</em>?', 0, 250, 78) + cam(inner, 0, 0, 1, 540 - cx, 940 - cy, 1.45, B * .2, B * .9, cx, cy) + ring(540, 940, B * 1.3, PINK, 2) + lab('Clara, it&rsquo;s you &hearts;', 300, 1270, B * 1.5, -3, PINK)
+        inner += ring(cx, cy, B * 1.3, PINK, 2)
+        body = ttl('Which suitor<br>is <em>the one</em>?') + zcam(inner, crop, (cx, cy), 2.3, 1000, B * .1, B * .9) + lab('Clara, it&rsquo;s you &hearts;', 300, 1270, B * 1.5, -3, PINK)
         return body, beats * B
     def rzoom(t0, beats=6):
         crop = 85; z = META['rz']; zx, zy = sx(z[0] + z[2] / 2), sy(z[1] + z[3] / 2, crop)
@@ -174,13 +182,15 @@ def scene_list(mode):
         pls = ''.join(f'<div class="a cap" style="position:absolute;left:{zx - 40 + j * 0:.0f}px;top:{zy - 150 - j * 20:.0f}px;font-size:90px;color:{GOLD};z-index:46;text-shadow:0 4px 12px rgba(0,0,0,.6);animation:pop .25s {B * (j + .7):.3f}s forwards,out .2s {B * (j + 1.5):.3f}s forwards">+</div>' for j in range(3))
         mx, my = sx(195), sy(210, crop)
         inner = phone('40-rz0.png', crop) + steps
-        body = (ttl('Racks: + + + zoom<br>on her mat', 0, 250, 74) + cam(inner, 0, 0, 1, 540 - mx, 900 - my, 1.5, B * 3.6, B * 1.4, mx, my) + taps + pls
+        inner += taps + pls
+        body = (ttl('Racks: + + + zoom<br>on her mat') + zcam(inner, crop, (mx, my), 2.2, 1000, B * 3.6, B * 1.4)
                 + lab('see her blues &amp; magentas up close', 110, 1380, B * 4.4, -2, NAVY, 38))
         return body, beats * B
     def rchips(t0, beats=3):
         crop = 85; w = META['woodchip']; cx, cy = sx(w[0] + w[2] / 2), sy(w[1] + w[3] / 2, crop)
         inner = phone('45-chips.png', crop) + layer('46-wood.png', crop, B * 1.6)
-        body = ttl('Pick a rack type') + inner + ring(cx, cy, B * 1.0, GOLD, 2) + lab('Wood &middot; Tortoise &middot; Metallic &middot; Clear', 140, sy(w[1] + 50, crop), B * 1.2, 2, NAVY, 38)
+        inner += ring(cx, cy, B * 1.0, GOLD, 2)
+        body = ttl('Pick a rack type') + zcam(inner, crop, (cx, cy), 2.0, 900, B * .1, B * .8) + lab('Wood &middot; Tortoise &middot; Metallic &middot; Clear', 120, 1080, B * 1.2, 2, NAVY, 38)
         return body, beats * B
     def rswipe(j, kind, title, label, beats):
         def f(t0):
@@ -189,7 +199,7 @@ def scene_list(mode):
             fly = (f'<div style="position:absolute;left:{sx(bx):.0f}px;top:{sy(by, crop):.0f}px;width:{bw * K:.0f}px;z-index:20;transform-origin:50% 120%;'
                    f'animation:{"swR" if kind == "yes" else "swL"} {B * 1.4:.3f}s {t_go:.3f}s cubic-bezier(.5,0,.8,.6) both">'
                    f'<img src="{u(key + "-card.png")}" style="width:100%;display:block;border-radius:{14 * K:.0f}px;box-shadow:0 30px 70px rgba(0,0,0,.45)">' + stamp_on(kind, t_st) + '</div>')
-            body = ttl(title) + phone(f'{key}-a.png', crop) + fly + lab(label, 110, 1420, t_st, -3, PINK if kind == 'yes' else SLATE)
+            body = ttl(title) + zcam(phone(f'{key}-a.png', crop) + fly, crop) + lab(label, 110, 1420, t_st, -3, PINK if kind == 'yes' else SLATE)
             return body, beats * B
         return f
     def match(t0, beats=4):
@@ -209,34 +219,62 @@ def scene_list(mode):
         crop = 140
         inner = phone('70-shop.png', crop)
         mx, my = sx(195), sy(330, crop)
-        body = ttl('Then shop it all') + cam(inner, 0, 0, 1, 540 - mx, 960 - my, 1.3, B * .3, B * 1.2, mx, my) + lab('code MAHJMATCH saves at our partners', 90, 1420, B * 1.4, -2, PINK, 40)
+        body = ttl('Then shop it all') + zcam(inner, crop, (mx, my), 1.75, 1000, B * .3, B * 1.2) + lab('code MAHJMATCH saves at our partners', 90, 1420, B * 1.4, -2, PINK, 40)
         return body, beats * B
     def cta(t0, beats=6):
-        body = (f'<img class="a" src="file://{R}/assets/brand/flame-heart.png" style="position:absolute;left:470px;top:330px;width:140px;z-index:10;animation:pop .4s 0s forwards">'
+        body = (f'<img class="a" src="file://{R}/assets/brand/flame-heart.png" style="position:absolute;left:470px;top:300px;width:140px;z-index:10;animation:pop .4s 0s forwards">'
                 + f'<div class="a cap" style="position:absolute;left:30px;right:30px;top:520px;text-align:center;font-size:122px;z-index:10;animation:slam .45s {B * .5:.3f}s forwards">{FYM}</div>'
                 + f'<div class="a" style="position:absolute;left:60px;right:60px;top:700px;text-align:center;font:italic 600 60px/1.25 PF;color:{GOLD};z-index:10;animation:up .4s {B * 1.5:.3f}s forwards">150+ holiday mats. Your tiles.<br>Racks to match.</div>'
-                + f'<div class="a" style="position:absolute;left:0;right:0;top:960px;text-align:center;z-index:10;animation:pop .4s {B * 2.5:.3f}s forwards"><span style="display:inline-block;background:{PINK};border:5px solid #fff;color:#fff;border-radius:999px;padding:26px 56px;font:400 66px Cap;box-shadow:0 20px 50px rgba(0,0,0,.4)">Link in bio</span></div>'
-                + f'<div class="a" style="position:absolute;left:0;right:0;top:1150px;text-align:center;font:700 44px Bit;letter-spacing:.03em;z-index:10;animation:up .4s {B * 3.2:.3f}s forwards">mahjmatchmaker.com &middot; code MAHJMATCH</div>'
+                + f'<div class="a" style="position:absolute;left:0;right:0;top:960px;text-align:center;z-index:10;animation:pop .4s {B * 2.5:.3f}s forwards"><span style="display:inline-block;background:{PINK};border:5px solid #fff;color:#fff;border-radius:999px;padding:26px 50px;font:400 64px Cap;box-shadow:0 20px 50px rgba(0,0,0,.4);white-space:nowrap">Shop now &middot; use code MAHJMATCH</span></div>'
+                + f'<div class="a" style="position:absolute;left:0;right:0;top:1150px;text-align:center;font:700 44px Bit;letter-spacing:.03em;z-index:10;animation:up .4s {B * 2.8:.3f}s forwards">Link in bio &middot; mahjmatchmaker.com</div>'
                 + sparks(B * .6, 540, 620, 16))
         return body, beats * B
+    DUMP = f'{CAP}/dump'
+    def tagp(t, x, y, d, rot=-3, c=NAVY, size=40): return lab(t, x, y, d, rot, c, size)
+    def dumpA(t0, beats=4):
+        mats = [('claras-dream', 'Clara&rsquo;s Dream Christmas &middot; Mahj Squad'), ('pretty-little', 'Pretty Little Christmas &middot; Peace Love Mahjong'),
+                ('tied-bow', 'Tied With A Bow &middot; Peace Love Mahjong'), ('clara', 'Clara &middot; Oh My Mahjong')]
+        top = (f'<div style="position:absolute;left:0;right:0;top:0;height:900px;z-index:8;overflow:hidden;border-bottom:14px solid {GOLD}">'
+               f'<img src="file://{CAP}/tile_full.jpg" style="width:100%;height:100%;object-fit:cover;object-position:50% 45%"></div>'
+               + tagp('Nutcracker Ballet &middot; Mahj Squad', 180, 690, 0, -2, PINK))
+        bot = ''.join(f'<div class="a" style="position:absolute;left:0;right:0;top:914px;bottom:0;z-index:{9 + j};overflow:hidden;animation:fade .06s {j * B:.3f}s forwards">'
+                      f'<img src="file://{DUMP}/{m}.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%;transform:scale(1.04)">' + tagp(t, 90, 426, .02, [-3, 2, -2, 3][j], NAVY, 38) + '</div>' for j, (m, t) in enumerate(mats))
+        hdr = f'<div class="a cap" style="position:absolute;left:0;right:0;top:300px;text-align:center;z-index:30;font-size:96px;text-shadow:0 6px 24px rgba(0,0,0,.6);animation:slam .35s 0s forwards">Try her on.</div>'
+        return top + bot + hdr + ''.join(f'<div class="a" style="position:absolute;left:0;right:0;top:914px;height:20px;z-index:20;background:#fff;animation:out .15s {j * B:.3f}s forwards;opacity:1"></div>' for j in range(1, 4)), beats * B
+    def dumpB(t0, beats=4):
+        racks = [('bb-magenta', 'Bird &amp; Bamboo Magenta'), ('bb-lightblue', 'Bird &amp; Bamboo Light Blue'), ('bb-balletpink', 'Bird &amp; Bamboo Ballet Pink'), ('bb-mulberry', 'Bird &amp; Bamboo Mulberry')]
+        base = (f'<div style="position:absolute;inset:0;z-index:8;overflow:hidden"><img src="file://{DUMP}/clara.png" style="position:absolute;left:-200px;top:300px;width:1480px;height:1480px;object-fit:cover;--x0:0px;--y0:0px;--s0:1;--x1:-60px;--y1:-40px;--s1:1.12;animation:cam {beats * B:.2f}s 0s linear forwards"></div>'
+                + f'<div style="position:absolute;left:0;right:0;top:0;height:300px;z-index:9;background:linear-gradient({NAVY},{NAVY}ee 70%,transparent)"></div>')
+        rk = ''.join(f'<div class="a" style="position:absolute;left:60px;right:60px;top:{620 + j * 190}px;z-index:{12 + j};--r:{[-4, 3, -2, 4][j]}deg;animation:stmp .22s {j * B:.3f}s forwards">'
+                     f'<img src="file://{DUMP}/{r}.png" style="width:100%;display:block;filter:drop-shadow(0 14px 22px rgba(0,0,0,.55))"></div>'
+                     + tagp(t, 120 + (j % 2) * 360, 760 + j * 190, j * B + .05, [-3, 3, -2, 2][j], NAVY, 34) for j, (r, t) in enumerate(racks))
+        hdr = f'<div class="a cap" style="position:absolute;left:0;right:0;top:300px;text-align:center;z-index:30;font-size:88px;text-shadow:0 6px 24px rgba(0,0,0,.6);animation:slam .35s 0s forwards">Now, <span class="pf" style="color:{GOLD}">racks</span>.</div>'
+        return base + rk + hdr + tagp('Clara &middot; Oh My Mahjong', 300, 1440, B * .5, 2, PINK, 38), beats * B
+    def dumpC(t0, beats=4):
+        mats = [('very-merry', 'Very Merry Mahj &middot; Anders Ruff'), ('holly-jolly', 'Holly Jolly Christmas &middot; Bam! Let&rsquo;s Mahjong'),
+                ('candy-cane-ar', 'Candy Cane Lane &middot; Anders Ruff'), ('nutcracker-noel', 'Nutcracker Noel &middot; Peace Love Mahjong')]
+        fl = ''.join(f'<div class="a" style="position:absolute;inset:0;z-index:{8 + j};overflow:hidden;animation:fade .05s {j * B:.3f}s forwards">'
+                     f'<img src="file://{DUMP}/{m}.png" style="width:100%;height:100%;object-fit:cover;--x0:0px;--y0:0px;--s0:1.18;--x1:0px;--y1:0px;--s1:1.02;animation:cam {B * 1.2:.3f}s {j * B:.3f}s ease-out both">' + tagp(t, 80, 1330, .02, [-3, 2, -2, 3][j], NAVY, 36) + '</div>' for j, (m, t) in enumerate(mats))
+        hdr = (f'<div style="position:absolute;left:0;right:0;top:250px;z-index:30;text-align:center"><div class="a" style="display:inline-block;background:{NAVY}e6;border:6px solid {GOLD};border-radius:36px;padding:22px 44px;animation:slam .35s 0s forwards">'
+               f'<div class="cap" style="font-size:96px;color:#fff">150+ holiday mats</div><div style="font:italic 600 52px PF;color:{GOLD};margin-top:6px">all in Find <span>Your</span> Mat&#8209;ch</div></div></div>')
+        return fl + hdr, beats * B
     if mode == 'full':
-        add('hook', hook, 6); add('search', search, 3)
+        add('hook', lambda t0: hook(t0, 5), 5); add('dumpA', dumpA, 4)
         add('hol', chip('10-hol-before.png', '11-hol-after.png', META['holc'], 'Tap <em>Holiday</em>', 'only her holiday matches now', 4), 4)
         add('s0', lambda t0: swipe(0, 'yes', 'Swipe &hearts; or &#10005;', '&hearts; Clara&rsquo;s Dream Christmas &middot; Mahj Squad', t0, 3), 3)
         add('l0', landing('su0', 'su0.png', 's0', 'Hearts land in<br>your <em>suitors</em>', '1 suitor', 3), 3)
         add('s1', lambda t0: swipe(1, 'no', 'Not the one? &#10005;', '&#10005; Yuletide &middot; Oh My Mahjong', t0, 3), 3)
         add('blue', chip('20-blue-before.png', '21b-blue-after.png', META['blue'], 'Add a color: <em>blue</em>', 'the deck changes', 4), 4)
         add('s2', lambda t0: swipe(2, 'yes', 'Love her? &hearts;', '&hearts; Pretty Little Christmas &middot; Peace Love Mahjong', t0, 3, rot_lab=-2), 3)
-        add('s3', lambda t0: swipe(3, 'yes', '<em>Clara</em> for the Nutcracker?', '&hearts; Clara &middot; Oh My Mahjong', t0, 3), 3)
+        add('s3', lambda t0: swipe(3, 'yes', '<em>Clara</em>, for a Nutcracker?', '&hearts; Clara &middot; Oh My Mahjong', t0, 3), 3)
         add('l3', landing('su3', 'su3.png', 's3', '3 suitors.<br>One <em>holiday date</em>.', '3 suitors', 3), 3)
-        add('pick', pick, 3); add('rz', rzoom, 6); add('chips', rchips, 3)
+        add('pick', pick, 3); add('dumpB', dumpB, 4); add('rz', rzoom, 6); add('chips', rchips, 3)
         add('r0', rswipe(0, 'no', 'Wood? &#10005;', '&#10005; Peace Love Mahjong Oak', 3), 3)
         add('r1', rswipe(1, 'yes', 'Her magenta &hearts;', '&hearts; Bird &amp; Bamboo Magenta', 3), 3)
         add('r2', rswipe(2, 'yes', 'Her sky blue &hearts;', '&hearts; Bird &amp; Bamboo Light Blue', 3), 3)
-        add('match', match, 4); add('card', card, 5); add('shop', shop, 4); add('cta', cta, 6)
+        add('dumpC', dumpC, 4); add('match', match, 4); add('card', lambda t0: card(t0, 4), 4); add('shop', shop, 4); add('cta', lambda t0: cta(t0, 4), 4)
     else:
         add('hook', lambda t0: hook(t0, 4), 4)
-        add('hol', chip('10-hol-before.png', '11-hol-after.png', META['holc'], 'Tap <em>Holiday</em>', 'only her holiday matches now', 3), 3)
         add('s1', lambda t0: swipe(1, 'no', 'Not the one? &#10005;', '&#10005; Yuletide &middot; Oh My Mahjong', t0, 3), 3)
         add('s3', lambda t0: swipe(3, 'yes', 'Love her? &hearts;', '&hearts; Clara &middot; Oh My Mahjong', t0, 3), 3)
         add('l3', landing('su3', 'su3.png', 's3', 'Hearts land in<br>your <em>suitors</em>', '3 suitors', 3), 3)
