@@ -11,3 +11,5 @@ DELIVER in your own folder (below) with README.md: concept, beats, song shortlis
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
 Claude-Session: https://claude.ai/code/session_01QxwYQtmWcAr4s5uYJYP3mA
 Leave the repo clean (commit only your folder + ANSWERS). Report: absolute path of finished mp4(s), cover, contact sheet, the song + BPM, counts used with source.
+
+UPDATE Nov 1 12:22am (Tiffany — this OVERRIDES anything above if they conflict): don't get so creative the tool disappears. Partners still don't understand what we do: every reel must show the matching happening on a phone (visualize + shop mats, tiles, racks together) — but NEVER a static phone on white while zoomed out. The mix: full-screen photo-dump splices of mats/tiles/racks (mix and match) INTERWOVEN with real in-app moments, dynamically zoomed in; never show a bare match card without showing how we got it (it's the OUTPUT of the tool); always "Shop now · use code MAHJMATCH". Upbeat, exciting. Finished content is fine to iterate on this week.
