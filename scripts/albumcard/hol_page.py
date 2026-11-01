@@ -42,7 +42,7 @@ sections = {}
 for k, v in P.items():
     if k.startswith('_new'): continue
     t = v['tile']
-    sec = (f'<section class="mm3-hol" id="holiday"><h2>Holiday matches for {e(t)}</h2>'
+    sec = (f'<section class="mm3-hol" id="holiday-matches"><h2>Holiday matches for {e(t)}</h2>'
            f'<p class="mm3-sub">Christmas, Hanukkah and winter mats for {e(t)}, with rack picks. My favorites come first. '
            f'See every holiday match on the <a href="/holiday-mahjong-matches">Holiday Matches</a> page.</p>'
            f'<div class="mm3-grid">{"".join(renum(v["figs"], 1))}</div></section>')
@@ -67,7 +67,7 @@ alb_cards = []
 for k, v in sorted(((k, v) for k, v in P.items() if not k.startswith('_new')), key=lambda kv: -len(kv[1]['figs'])):
     a = albums.get(k)
     if not a: continue
-    alb_cards.append(f'<a href="/{k}#holiday"><img src="{a["cover"]}?format=500w" alt="{e(a["tile"])} mahjong tiles" loading="lazy">'
+    alb_cards.append(f'<a href="/{k}#holiday-matches"><img src="{a["cover"]}?format=500w" alt="{e(a["tile"])} mahjong tiles" loading="lazy">'
                      f'<b>{e(a["tile"])}</b><small>{len(v["figs"])} holiday {"match" if len(v["figs"])==1 else "matches"}</small></a>')
 page = f"""<style>{css}</style>{HOLCSS}
 <div class="mm3" id="holiday-matches"><header class="mm3-hero" style="text-align:center;max-width:900px;margin:0 auto">
