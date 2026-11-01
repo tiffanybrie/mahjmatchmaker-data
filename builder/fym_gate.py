@@ -1523,7 +1523,9 @@ if 'function openAcct(' in h or re.search(r'Version 1\.(1[1-9]|[2-9]\d)\b', h):
     _sv = re.findall(r'@supabase/supabase-js@([^/\'"]+)', h)
     if not _sv or any(not re.fullmatch(r'\d+\.\d+\.\d+', v) for v in _sv): _ac.append(f'supabase-js not pinned to an exact version: {_sv}')
     if 'service_role' in h: _ac.append("'service_role' appears in the page (never ship a secret key)")
-    for _k in re.findall(r"SB_KEY='([^']*)'", h):
+    _ks = re.findall(r"SB_KEY=['\"]([^'\"]*)['\"]", h)
+    if not _ks: _ac.append('SB_KEY not found')
+    for _k in _ks:
         if not (_k.startswith('sb_publishable_') or _k.startswith('eyJ')): _ac.append('SB_KEY is not a publishable/anon key')
     if _ac: F.append(f"[122] accounts: {_ac}")
 # [116] Oct 30 v106 QA: a step-2 SEARCHED mat stays on top only while it passes the active brand / colour filters.
