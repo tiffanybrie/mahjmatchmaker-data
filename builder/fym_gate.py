@@ -1496,6 +1496,18 @@ try:
         if _y < 8: _bad.append(f"{m['n']} (yellow {_s}% but only {_y:.1f}% saturated yellow: cream/ivory? use 'neutral' or list in config/fym-yellow-verified-oct31.json)")
     if _bad: F.append(f"[120] yellow-primary mats whose 'yellow' is cream/ivory (use 'neutral'): {_bad}")
 except Exception as _e: F.append(f"[120] cream-vs-yellow check did not run: {_e}")
+# [121] Oct 31 v110: STARS (Tiffany Oct 27 + Oct 31 9:33pm). Star button on mat/rack swipe cards, tile swipe card, tile/mat/set
+# grids and the shop list; "My stars" entry + list; storage via LS (try/catch) so the app works when storage is blocked.
+if re.search(r'Version 1\.(1\d|[2-9]\d)\b', h) or 'function STB(' in h:
+    _st = []
+    for _pat, _what in [("STB(mat?'m':'r',id)", 'mat/rack swipe card'), ("STB('t',s.slug)}</div></div>`;}", 'tile swipe card'),
+                        ("data-tile=\"${i}\" aria-pressed=\"${S.set===i}\">${STG('t',s.slug)}", 'tile grid'),
+                        ("data-dmat=\"${esc(id)}\">${STG('m',id)}", 'mat grid'), ("${STG('t',r.s.slug)}", 'mat-door set grid'),
+                        ("${T[id]?STB('t',set().slug):STB(M[id]?'m':'r',id)}", 'shop list'), ('${starsLink()}', 'My stars entry'),
+                        ('function openStars(', 'My stars list'), ("LS.get(this.k)", 'storage via LS'), ("trk('star'", 'star tracking')]:
+        if _pat not in h: _st.append(_what)
+    if 'function STB(' in h and "const LS={get(k){try{" not in h: _st.append('LS helper without try/catch')
+    if _st: F.append(f"[121] stars missing: {_st}")
 # [116] Oct 30 v106 QA: a step-2 SEARCHED mat stays on top only while it passes the active brand / colour filters.
 try:
     if 'ids.includes(S.mfront)' not in fn('matDeck'):
