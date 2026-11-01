@@ -9,7 +9,7 @@ from app import App, Flow
 
 BPM = 140; B = 60 / BPM
 OUT = f'{REPO}/assets/social/holiday-nov1/brands'
-RED_ = (200, 32, 47); GRN = (31, 107, 58); PNK = (236, 128, 168)
+RED_ = (200, 32, 47); GRN = (31, 107, 58); PNK = (214, 74, 140)
 CW = {'Rudolph Red': RED_, 'Grinch Green': GRN, 'Sugarplum Pink': PNK}
 TILE = {'Rudolph Red': photo('fym-holly-jolly-red.jpg'), 'Grinch Green': photo('fym-holly-jolly-green.jpg'), 'Sugarplum Pink': photo('fym-holly-jolly-pink.jpg')}
 DOORS = [  # (photo, mat, brand, colourway)   cell order around the centre

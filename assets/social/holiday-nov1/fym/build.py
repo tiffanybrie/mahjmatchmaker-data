@@ -284,12 +284,12 @@ def scene_list(mode):
         add('match', match, 4); add('cta', lambda t0: cta(t0, 4), 4)
     return S
 
-async def shoot(pg, name, html, secs):
+async def shoot(pg, name, html, secs, n=None):
     hp = f'{FR}/{name}.html'; open(hp, 'w').write(html)
     await pg.goto('file://' + hp); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready'); await pg.wait_for_timeout(250)
     d = f'{FR}/{name}'; shutil.rmtree(d, ignore_errors=True); os.makedirs(d)
     await pg.evaluate('document.getAnimations().forEach(a=>a.pause())')
-    n = int(round(secs * FPS))
+    n = n or int(round(secs * FPS))
     for i in range(n):
         await pg.evaluate(f'document.getAnimations().forEach(a=>{{a.currentTime={i * 1000 / FPS}}})')
         await pg.screenshot(path=f'{d}/{i:04d}.jpg', type='jpeg', quality=93)
@@ -305,13 +305,16 @@ async def main():
         for name, fn, beats in S:
             body, secs = fn(t); marks.append((name, round(t, 3), beats))
             if ONLY and name not in ONLY.split(',') and os.path.exists(f'{FR}/{name}.mp4'): clips.append(f'{FR}/{name}.mp4')
-            else: clips.append(await shoot(pg, name, page(body, t, name not in ('card',)), secs))
+            else: clips.append(await shoot(pg, name, page(body, t, name not in ('card',)), secs, round((t + beats * B) * FPS) - round(t * FPS)))
             t += beats * B
         await b.close()
     with open(f'{FR}/all.txt', 'w') as f:
         for c in clips: f.write(f"file '{c}'\n")
     out = f'{HERE}/fym-holiday-{"reel" if MODE == "full" else "hook"}-nutcracker.mp4' if not NOBG else f'/dev/shm/fym-holiday/nobg-{MODE}.mp4'
-    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', f'{FR}/all.txt', '-c:v', 'libx264', '-crf', '20', '-pix_fmt', 'yuv420p', '-r', '30', '-movflags', '+faststart', out], check=True)
+    tmp = f'{FR}/out.mp4'   # encode in /dev/shm, then copy + verify (repo-disk writes were truncated once, Nov 1 12:53am)
+    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', f'{FR}/all.txt', '-c:v', 'libx264', '-crf', '20', '-pix_fmt', 'yuv420p', '-r', '30', '-movflags', '+faststart', tmp], check=True)
+    shutil.copyfile(tmp, out); os.sync()
+    subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', out], check=True)
     if not NOBG: json.dump({'bpm': BPM, 'beat_s': B, 'scenes': marks, 'total_s': round(t, 3)}, open(f'{HERE}/beats-{MODE}.json', 'w'), indent=1)
     print('out', out, 'secs', round(t, 2))
 asyncio.run(main())
