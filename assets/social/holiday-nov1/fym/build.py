@@ -227,9 +227,9 @@ def scene_list(mode):
     def cta(t0, beats=6):
         body = (f'<img class="a" src="file://{R}/assets/brand/flame-heart.png" style="position:absolute;left:470px;top:300px;width:140px;z-index:10;animation:pop .4s 0s forwards">'
                 + f'<div class="a cap" style="position:absolute;left:30px;right:30px;top:500px;text-align:center;font-size:104px;white-space:nowrap;z-index:10;animation:slam .45s {B * .5:.3f}s forwards">{FYM}</div>'
-                + f'<div class="a" style="position:absolute;left:60px;right:60px;top:700px;text-align:center;font:italic 600 60px/1.25 PF;color:{GOLD};z-index:10;animation:up .4s {B * 1.5:.3f}s forwards">150+ holiday mats. Your tiles.<br>Racks to match.</div>'
+                + f'<div class="a" style="position:absolute;left:60px;right:60px;top:700px;text-align:center;font:italic 600 60px/1.25 PF;color:{GOLD};z-index:10;animation:up .4s {B * 1.5:.3f}s forwards">140+ holiday mats. Your tiles.<br>Racks to match.</div>'
                 + f'<div class="a" style="position:absolute;left:0;right:0;top:960px;text-align:center;z-index:10;animation:pop .4s {B * 2.5:.3f}s forwards"><span style="display:inline-block;background:{PINK};border:5px solid #fff;color:#fff;border-radius:999px;padding:24px 40px;font:400 54px Cap;box-shadow:0 20px 50px rgba(0,0,0,.4);white-space:nowrap">Shop now &middot; use code MAHJMATCH</span></div>'
-                + f'<div class="a" style="position:absolute;left:0;right:0;top:1150px;text-align:center;font:700 44px Bit;letter-spacing:.03em;z-index:10;animation:up .4s {B * 2.8:.3f}s forwards">Link in bio &middot; mahjmatchmaker.com</div>'
+                + f'<div class="a" style="position:absolute;left:0;right:0;top:1150px;text-align:center;font:700 44px Bit;letter-spacing:.03em;z-index:10;animation:up .4s {B * 2.8:.3f}s forwards">Link in bio</div>'
                 + sparks(B * .6, 540, 620, 16))
         return body, beats * B
     DUMP = f'{CAP}/dump'
@@ -259,7 +259,7 @@ def scene_list(mode):
         fl = ''.join(f'<div class="a" style="position:absolute;inset:0;z-index:{8 + j};overflow:hidden;animation:fade .05s {j * B:.3f}s forwards">'
                      f'<img src="file://{DUMP}/{m}.png" style="width:100%;height:100%;object-fit:cover;--x0:0px;--y0:0px;--s0:1.18;--x1:0px;--y1:0px;--s1:1.02;animation:cam {B * 1.2:.3f}s {j * B:.3f}s ease-out both">' + tagp(t, 80, 1330, .02, [-3, 2, -2, 3][j], NAVY, 36) + '</div>' for j, (m, t) in enumerate(mats))
         hdr = (f'<div style="position:absolute;left:0;right:0;top:250px;z-index:30;text-align:center"><div class="a" style="display:inline-block;background:{NAVY}e6;border:6px solid {GOLD};border-radius:36px;padding:22px 44px;animation:slam .35s 0s forwards">'
-               f'<div class="cap" style="font-size:96px;color:#fff">150+ holiday mats</div><div style="font:italic 600 52px PF;color:{GOLD};margin-top:6px">all in Find <span>Your</span> Mat&#8209;ch</div></div></div>')
+               f'<div class="cap" style="font-size:96px;color:#fff">140+ holiday mats</div><div style="font:italic 600 52px PF;color:{GOLD};margin-top:6px">all in Find <span>Your</span> Mat&#8209;ch</div></div></div>')
         return fl + hdr, beats * B
     if mode == 'full':
         add('hook', lambda t0: hook(t0, 5), 5); add('dumpA', dumpA, 4)
@@ -313,7 +313,7 @@ async def main():
     out = f'{HERE}/fym-holiday-{"reel" if MODE == "full" else "hook"}-nutcracker.mp4' if not NOBG else f'/dev/shm/fym-holiday/nobg-{MODE}.mp4'
     tmp = f'{FR}/out.mp4'   # encode in /dev/shm, then copy + verify (repo-disk writes were truncated once, Nov 1 12:53am)
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', f'{FR}/all.txt', '-c:v', 'libx264', '-crf', '20', '-pix_fmt', 'yuv420p', '-r', '30', '-movflags', '+faststart', tmp], check=True)
-    shutil.copyfile(tmp, out); os.sync()
+    shutil.copyfile(tmp, out + '.part'); os.replace(out + '.part', out); os.sync()  # temp name, then mv into place
     subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', out], check=True)
     if not NOBG: json.dump({'bpm': BPM, 'beat_s': B, 'scenes': marks, 'total_s': round(t, 3)}, open(f'{HERE}/beats-{MODE}.json', 'w'), indent=1)
     print('out', out, 'secs', round(t, 2))

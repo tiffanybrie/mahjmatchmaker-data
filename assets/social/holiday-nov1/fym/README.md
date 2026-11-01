@@ -40,11 +40,11 @@ The story is a holiday date. **Nutcracker Ballet (Mahj Squad)** needs a date for
 | 0:19.1 | 51 | ✕ Peace Love Mahjong Oak |
 | 0:20.3 | 54 | ♥ Bird & Bamboo Magenta (her magenta border) |
 | 0:21.4 | 57 | ♥ Bird & Bamboo Light Blue (her sky blue) |
-| 0:22.5 | 60 | PHOTO DUMP C "150+ holiday mats": Very Merry Mahj (Anders Ruff), Holly Jolly Christmas (Bam! Let's Mahjong), Candy Cane Lane (Anders Ruff), Nutcracker Noel (Peace Love Mahjong), one per beat |
+| 0:22.5 | 60 | PHOTO DUMP C "140+ holiday mats": Very Merry Mahj (Anders Ruff), Holly Jolly Christmas (Bam! Let's Mahjong), Candy Cane Lane (Anders Ruff), Nutcracker Noel (Peace Love Mahjong), one per beat |
 | 0:24.0 | 64 | "It's a match!" Tiles ♥ Clara circles |
 | 0:25.5 | 68 | The tall Story 9:16 match card from the app, full height |
 | 0:27.0 | 72 | Shop list (push in) + "code MAHJMATCH saves at our partners" |
-| 0:28.5 | 76 | End card: Find *Your* Mat-ch™ · "150+ holiday mats. Your tiles. Racks to match." · **Shop now · use code MAHJMATCH** · Link in bio |
+| 0:28.5 | 76 | End card: Find *Your* Mat-ch™ · "140+ holiday mats. Your tiles. Racks to match." · **Shop now · use code MAHJMATCH** · Link in bio |
 
 Hook cut (7.9 s): hook 0:00 → ✕ Yuletide 0:01.5 → ♥ Clara 0:02.6 → lands in suitors 0:03.8 → It's a match 0:04.9 → Shop now · use code MAHJMATCH 0:06.4.
 
@@ -62,7 +62,7 @@ In stock: Nutcracker Ballet tiles (Mahj Squad), Clara's Dream Christmas (Mahj Sq
 Skipped: Peace Love Mahjong Spirit of Christmas tiles (pre-order, and FYM labels it "sold out"), Mahj Squad Candy Cane Pink Wonderland (sold out), Britt Mills Nutcracker mat (sold out). **OMM Sugarplum is gone from ohmymahjong.com** (404, not in products.json) but is still a visible holiday match in v110. For the capture I hid it in my local session only, so it never shows on screen. It is logged in docs/MATCH-INBOX.md for Matches & Catalog.
 
 ## Counts used (from data, not guessed)
-- **"150+ holiday mats"**: FYM v110 (site-app/fym-v110 @f11610cb) has 152 visible mats with the holiday flag (`M[k].hol && !M[k].hid`, of 1,189 visible mats). That is 151 once Sugarplum is retired, so "150+" stays true.
+- **"140+ holiday mats"**: FYM v110 (site-app/fym-v110 @f11610cb) has 152 visible mats with the holiday flag (`M[k].hol && !M[k].hid`, of 1,189 visible mats). Superseded: see ../COUNTS.md (140+).
 - Nutcracker Ballet: 18 of Tiffany's matches, 17 of them holiday (16 without Sugarplum). The reel shows no count for these, because the live app still counts Sugarplum.
 - Rack match (rule 18): Clara measures #28bcef sky blue 37.5% and magentas #b3286a / #e41a68 about 31% (FYM `ms`), so the hearted racks are Bird & Bamboo Light Blue and Magenta. Both are her picks for this set, and the Oak ✕ is the wood option.
 
@@ -71,3 +71,6 @@ Skipped: Peace Love Mahjong Spirit of Christmas tiles (pre-order, and FYM labels
 - Rule 20, the phone never moves on a swipe: `phone_still.py` on a no-snow render. The bezel edge moved 0 px in all 7 swipes (PASS). `center_check --phone-still` mistakes the white flying card for the phone, so the bezel edge is measured instead.
 - `center_check`: the snow and twinkles make every band read as "off". On a no-snow render, the only flags are the zoomed app UI itself (left-aligned app text, plus push-ins centred on a chip, which is deliberate), sparks mid-flight, and the match circles mid-pop. The settled hook, match, card and end frames are centred. The hook's "Mahj Squad tiles" label was re-centred.
 - Safe zones: titles start at y=250. Key stickers sit at y≤1440, and the bottom 400 px has only app UI or photos.
+
+## Update Nov 1 ~2am (polish)
+Reel + hook re-rendered: "150+" is now "140+ holiday mats" (../COUNTS.md; 144 in stock or unknown tonight in FYM v111), and the end card says "Link in bio" without mahjmatchmaker.com. Everything else unchanged.

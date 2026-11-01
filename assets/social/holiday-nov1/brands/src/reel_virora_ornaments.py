@@ -158,7 +158,7 @@ def end(t, te):
     if te >= 3 * B:
         pill(d, W // 2, 1200, 'Shop now · use code MAHJMATCH', f_pb(46), (255, 255, 255), PINK, padx=44, pady=22)
         draw_center(d, 1330, 'Back in stock at Virora Mahjong · link in bio', font(FONT_POP_M, 32), (255, 236, 190))
-        draw_center(d, 1410, 'mahjmatchmaker.com', f_cap(56), CREAMY)
+        # Nov 1 polish: no URL in reels (brand guide); 'link in bio' stays
     return c
 
 # timeline in beats (v2, Tiffany 12:22am: app moments woven between the photo-dump splices)
@@ -186,7 +186,10 @@ if __name__ == '__main__':
     R = Renderer('vi', DUR); R.run(draw)
     cuts = [x * B for x in [T_TREE, T_APP1, T_APP2, T_END]]
     click_track('/dev/shm/brand-reshare/vi_click.wav', DUR, BPM, marks=cuts)
-    R.encode(f'{OUT}/virora-tinselle-tree-reel.mp4', '/dev/shm/brand-reshare/vi_click.wav', f'{OUT}/virora-tinselle-tree-reel-BEATTEST.mp4')
+    import shutil, os
+    R.encode('/dev/shm/brand-reshare/virora-tinselle-tree-reel.tmp.mp4', '/dev/shm/brand-reshare/vi_click.wav', '/dev/shm/brand-reshare/virora-tinselle-tree-reel-beat.tmp.mp4')
+    for src, dst in [('virora-tinselle-tree-reel.tmp.mp4', 'virora-tinselle-tree-reel.mp4'), ('virora-tinselle-tree-reel-beat.tmp.mp4', 'virora-tinselle-tree-reel-BEATTEST.mp4')]:  # temp name, then mv into place
+        shutil.copyfile(f'/dev/shm/brand-reshare/{src}', f'{OUT}/{dst}.part'); os.replace(f'{OUT}/{dst}.part', f'{OUT}/{dst}')
     tree_scene(0, 17.0).save(f'{OUT}/virora-tinselle-tree-cover.jpg', quality=90)
     R.cleanup()
     contact_sheet(f'{OUT}/virora-tinselle-tree-reel.mp4', f'{OUT}/virora-tinselle-tree-contact.jpg')

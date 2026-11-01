@@ -98,7 +98,7 @@ def end(t, te):
     if te >= B:
         pill(d, W // 2, 1110, 'Shop now · use code MAHJMATCH', f_pb(46), (255, 255, 255), PINK, padx=44, pady=22)
         draw_center(d, 1240, "Bam! Let's Mahjong · link in bio", font(FONT_POP_M, 32), NAVY)
-        draw_center(d, 1320, 'mahjmatchmaker.com', f_cap(56), RED_)
+        # Nov 1 polish: no URL in reels (brand guide); 'link in bio' stays
     return c
 
 def draw(t):
@@ -115,7 +115,10 @@ if __name__ == '__main__':
         sys.exit()
     R = Renderer('bam', DUR); R.run(draw)
     click_track('/dev/shm/brand-reshare/bam_click.wav', DUR, BPM, marks=[x * B for x in [1, T_APP1, T_APP2, T_END]])
-    R.encode(f'{OUT}/bam-holly-jolly-advent-reel.mp4', '/dev/shm/brand-reshare/bam_click.wav', f'{OUT}/bam-holly-jolly-advent-reel-BEATTEST.mp4')
+    import shutil, os
+    R.encode('/dev/shm/brand-reshare/bam-holly-jolly-advent-reel.tmp.mp4', '/dev/shm/brand-reshare/bam_click.wav', '/dev/shm/brand-reshare/bam-holly-jolly-advent-reel-beat.tmp.mp4')
+    for src, dst in [('bam-holly-jolly-advent-reel.tmp.mp4', 'bam-holly-jolly-advent-reel.mp4'), ('bam-holly-jolly-advent-reel-beat.tmp.mp4', 'bam-holly-jolly-advent-reel-BEATTEST.mp4')]:  # temp name, then mv into place
+        shutil.copyfile(f'/dev/shm/brand-reshare/{src}', f'{OUT}/{dst}.part'); os.replace(f'{OUT}/{dst}.part', f'{OUT}/{dst}')
     doors(0, 9.5).save(f'{OUT}/bam-holly-jolly-advent-cover.jpg', quality=90)
     R.cleanup()
     contact_sheet(f'{OUT}/bam-holly-jolly-advent-reel.mp4', f'{OUT}/bam-holly-jolly-advent-contact.jpg')

@@ -31,7 +31,7 @@ Shortlist (other BPMs are approximate and not cut-checked):
 | Beats | Time | Scene |
 |---|---|---|
 | 0-4 | 0.0-1.6 | Hook "We made a holiday list." → "And checked it twice." box shakes on each beat, lid pops on beat 3, real mats burst out |
-| 4-16 | 1.6-6.4 | Slot counters, landing on beats 6 / 10 / 14: **152** holiday mats in Find Your Mat-ch™ · **13** holiday tile sets · **45** tile set albums with holiday matches |
+| 4-16 | 1.6-6.4 | Slot counters, landing on beats 6 / 10 / 14: **140+** holiday mats in Find Your Mat-ch™ · **10+** holiday tile sets · **40+** holiday albums full of match cards |
 | 16-20 | 6.4-8.0 | Photo dump, 1 per beat: Dear Santa tiles, Tartan Tidings mat, Rackin' Rudolph tiles, Very Merry Wreath mat |
 | 20-32 | 8.0-12.8 | APP: push in on the Holiday chip, tap on beat 21; ✕ The Polo Club (beat 23.5), ♥ Candy Cane Lane (25.5), ♥ Festive Plaid Premium (27.5); push in on "2 suitors" |
 | 32-40 | 12.8-16.0 | Quilt doubles each beat (1→2→4…54 mats); "Christmas." "Hanukkah." "Snow days." on beats 37/38/39 |
@@ -39,7 +39,7 @@ Shortlist (other BPMs are approximate and not cut-checked):
 | 50-52 | 20.0-20.8 | "It's a match!" Story card |
 | 52-60 | 20.8-24.0 | Photo dump on 8th notes (tiles / mats / Milk Glass racks), then **400+** holiday matches and counting |
 | 60-64 | 24.0-25.6 | "Holiday tiles / + mats / + racks / together." over the card the app made |
-| 64-72 | 25.6-28.8 | Lockup: Merry Mahjong · Find *Your* Mat-ch™ · "The only place to see holiday tiles, mats & racks together, then shop them." · **Shop now · use code MAHJMATCH** · mahjmatchmaker.com · LINK IN BIO |
+| 64-72 | 25.6-28.8 | Lockup: Merry Mahjong · Find *Your* Mat-ch™ · "The only place to see holiday tiles, mats & racks together, then shop them." · **Shop now · use code MAHJMATCH** · LINK IN BIO |
 
 ## Counts used (from data, Nov 1 ~12:10am ET)
 - **152 holiday mats in Find Your Mat-ch:** the published FYM v1.10 artifact (6epA9HuEdT32zUp79Qv3kd) `const D`, mats with `hol` true and not `hid` (166 hol minus 14 hidden).
@@ -55,7 +55,7 @@ App: Dear Santa tiles (Anders Ruff), The Polo Club (Luxe Mahjong, ✕, no verifi
 
 ## Captions (copy-paste; lint PASS)
 **IG reel** (`captions/reel-ig-caption.txt`):
-> We made a holiday list and checked it twice 🎄💗 152 holiday mats in Find Your Mat-ch: pick your tiles, swipe mats, add racks, then shop the whole look. Dear Santa by @andersruffdesignco on Festive Plaid by @sunday_mahjong, link in bio
+> We made a holiday list and checked it twice 🎄💗 140+ holiday mats in Find Your Mat-ch: pick your tiles, swipe mats, add racks, then shop the whole look. Dear Santa by @andersruffdesignco on Festive Plaid by @sunday_mahjong, link in bio
 > Code MAHJMATCH 💗
 > #mahjong #mahjongmat #christmasmahjong #mahjmatch #affiliate
 
@@ -77,3 +77,6 @@ App: Dear Santa tiles (Anders Ruff), The Polo Club (Luxe Mahjong, ✕, no verifi
 - Phone still: the camera is fixed through every swipe (rule 20). `--phone-still --phone-color 14121a` PASSES on the racks swipes (16.9-18.25s). On the mat swipes the phone bezel sits off-frame at that zoom, so the tool can't find it, but the camera transform is a constant there by construction.
 - Safe zones: key text sits between y 250 and 1520; labels avoid the right 15%.
 - The card is the app's own Story 9:16 output (rule 19). ✕ and ♥ appear in both steps (rule 14). The tile strip and mat show big together on the mat swipes (rule 22).
+
+## Update Nov 1 ~2am (polish)
+Counts now follow ../COUNTS.md (140+ holiday mats, 10+ holiday tile sets, 40+ holiday albums, 400+ holiday matches); captions, carousel slides 2 + 6, story frames 2 + 6 and the cover re-rendered to match. End card: mahjmatchmaker.com removed (no URL in reels; "Link in bio" stays). PLM Spirit of Christmas tiles (sold out) dropped from the tile-sets counter mosaic. Quilt/400+ background stock re-checked: all 54 quilt mats are in stock tonight (the Britt Mills Winter Berry / Merrywood / Nutcracker shown are the in-stock LEATHERETTE versions, not the sold-out neoprene ones; Virora Hollivia, not Hiverelle). The app moments (8.0-12.8 s, 16.0-20.0 s) are spliced from the previous render because the recording frames in /dev/shm were gone; they are unchanged. Counts section above is superseded by ../COUNTS.md.

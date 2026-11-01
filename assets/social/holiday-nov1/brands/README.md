@@ -14,7 +14,7 @@ Brands repost content that makes THEIR product look amazing and sends sales to t
 
 | Reel | File | Length | Collab invite | Why they'd reshare |
 |---|---|---|---|---|
-| 1 Anders Ruff "Outfit change" | `ar-outfit-change-reel.mp4` | 19.4 s | @andersruffdesignco | Their 7 Christmas mats get a fashion-show moment under their own Dear Santa tiles (shipping now). The numbers line says their 8 Christmas mats are matched 93 times. They already reshared our launch reel. |
+| 1 Anders Ruff "Outfit change" | `ar-outfit-change-reel.mp4` | 17.97 s | @andersruffdesignco | Their 7 Christmas mats get a fashion-show moment under their own Dear Santa tiles (shipping now). The numbers line says their 8 Christmas mats are matched 93 times. They already reshared our launch reel. |
 | 2 Virora "Trim the tree" | `virora-tinselle-tree-reel.mp4` | 17.5 s | @viroramahjongofficial | Tinselle is the star on top of the tree on the day it is back in stock, with 16 in-stock holiday mats hung as ornaments. Their own posts are restock and preorder pushes, so this is a ready-made restock reel for them. |
 | 3 Bam! Let's Mahjong "Advent calendar" | `bam-holly-jolly-advent-reel.mp4` | 16.3 s | @bamletsmahjong | It plays on their own Christmas-countdown voice and pink-bow look, and all 3 Holly Jolly colorways get a door. Their tiles are on screen the whole time. |
 
@@ -76,3 +76,7 @@ Files are in `captions/`. IG captions put the brand @handle first. FB Page capti
 - FYM-REEL-RULES: ✕ and ♥ appear in both steps. The camera is fixed on every swipe: only the card flies, with a stamp, and the next real card shows underneath. The camera moves only between actions. The tiles strip and mat show together on every mat swipe. There is a + + zoom in the racks step. Every brand on screen is named (stickers) and tagged.
 - Safe zones: key text sits between y 250 and 1520. The app's own bottom bar can fall below 1520, but our name stickers repeat what it says.
 - Rendering: `src/` (PIL at 30 fps, frames in /dev/shm, deleted after encode). The real app screens come from `src/cap_fym.py`, which loads the live site's FYM HTML (Version 1.10) locally in headless Chromium at 390×844 @3x. Configs are in `src/cfg/`, and capture meta is in `src/cap/`. Product photos come from each brand's Shopify product JSON (`src/fetch_photos.py`).
+
+## Update Nov 1 ~2am (polish)
+Anders Ruff reel trimmed to 17.97 s (28.75 beats at 96 BPM): the "7 Christmas looks" grid is 1.5 beats (was 2), the racks flow starts at beat 17.5, and the end card is 1.75 beats from beat 27 (16.875 s) with everything popping in at once; mahjmatchmaker.com removed from the end card. Its beat map above shifts by -0.31 s from 10.94 s on. Per-brand counts re-checked against FYM v111 (Dear Santa 27, AR 8 mats / 93 / 35 sets, Tinselle Emerald 23, Holly Jolly 44): unchanged. ✕ choices unchanged (her call pending).
+Bam! and Virora reels re-rendered too (same length and beats): mahjmatchmaker.com removed from their end cards; 'link in bio' stays.

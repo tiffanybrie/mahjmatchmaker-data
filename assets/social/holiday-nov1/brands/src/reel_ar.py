@@ -17,9 +17,9 @@ NSW = 4
 # timeline in beats
 T_LOOKS, T_APP1 = 2, 9
 T_GRID = T_APP1 + FL.len1(NSW)          # 16
-T_APP2 = T_GRID + 2                      # 18
-T_END = T_APP2 + Flow.LEN2               # 27.5
-NB = T_END + 3.5                         # 31 beats = 19.4 s
+T_APP2 = T_GRID + 1.5                    # 17.5 (Nov 1 polish: grid 2 -> 1.5 beats)
+T_END = T_APP2 + Flow.LEN2               # 27
+NB = T_END + 1.75                        # 28.75 beats = 17.97 s (Nov 1 polish: <= 18 s, shorter end card)
 DUR = NB * B
 
 def hook(t):
@@ -34,24 +34,23 @@ def hook(t):
 
 def end(t, te):
     c = O.BG_RED.copy(); d = ImageDraw.Draw(c); snow(d, t, n=60, seed=5, col=(255, 240, 236))
-    p1 = back_out(clamp(te / 0.25))
+    p1 = back_out(clamp(te / 0.15))
     draw_center(d, 280, 'Dear Santa has', O.f_cap70, (255, 244, 230), shadow=(0, 5, (90, 8, 16)))
     sz = int(170 * (0.7 + 0.3 * p1))
     draw_center(d, 380 + (170 - sz) // 2, '27 matches', font(FONT_CAP, sz), (255, 214, 120), shadow=(0, 7, (90, 8, 16)))
     draw_runs_center(d, 600, [('in Find ', O.f_cap70), ('Your', font(FONT_PLAY_I, 72)), (' Mat-ch™', O.f_cap70)], (255, 244, 230), shadow=(0, 5, (90, 8, 16)))
     sm = 136; gap = 8; x0 = W // 2 - (7 * sm + 6 * gap) // 2
     for j, m in enumerate(O.MATS):
-        pj = back_out(clamp((te - 0.5 * B - j * 0.04) / 0.2))
+        pj = back_out(clamp((te - 0.05 - j * 0.02) / 0.15))
         if pj <= 0: continue
         s2 = max(4, int(sm * pj)); shadow_paste(c, rounded(m.resize((s2, s2), Image.LANCZOS), 10), (x0 + j * (sm + gap) + (sm - s2) // 2, 750 + (sm - s2) // 2), alpha=120, blur=10, offset=(0, 6))
     d = ImageDraw.Draw(c)
     y = 930
     for ln in ['Anders Ruff’s 8 Christmas mats,', 'matched 93 times with 35 tile sets']:
         draw_center(d, y, ln, font(FONT_POP_B, 42), (255, 236, 224)); y += 62
-    if te >= B:
+    if te >= 0.12:
         pill(d, W // 2, 1100, 'Shop now · use code MAHJMATCH', font(FONT_POP_B, 46), (255, 255, 255), PINK, padx=44, pady=22)
         draw_center(d, 1240, 'Preorders open · mats ship early November · link in bio', font(FONT_POP_M, 30), (255, 236, 224))
-        draw_center(d, 1330, 'mahjmatchmaker.com', font(FONT_CAP, 54), (255, 244, 230))
     return c
 
 def draw(t):
@@ -73,7 +72,10 @@ if __name__ == '__main__':
     R = Renderer('ar2', DUR); R.run(draw)
     cuts = [x * B for x in [T_LOOKS, T_APP1, T_GRID, T_APP2, T_END]]
     click_track('/dev/shm/brand-reshare/ar_click.wav', DUR, O.BPM, marks=cuts)
-    R.encode(f'{OUT}/ar-outfit-change-reel.mp4', '/dev/shm/brand-reshare/ar_click.wav', f'{OUT}/ar-outfit-change-reel-BEATTEST.mp4')
-    O.grid(0, 4 * B).save(f'{OUT}/ar-outfit-change-cover.jpg', quality=90)
+    import shutil, os
+    R.encode('/dev/shm/brand-reshare/ar.tmp.mp4', '/dev/shm/brand-reshare/ar_click.wav', '/dev/shm/brand-reshare/ar-beat.tmp.mp4')
+    for src, dst in [('ar.tmp.mp4', 'ar-outfit-change-reel.mp4'), ('ar-beat.tmp.mp4', 'ar-outfit-change-reel-BEATTEST.mp4')]:  # temp name, then mv into place
+        shutil.copyfile(f'/dev/shm/brand-reshare/{src}', f'{OUT}/{dst}.part'); os.replace(f'{OUT}/{dst}.part', f'{OUT}/{dst}')
+    # cover unchanged (Nov 1 polish)
     R.cleanup()
     contact_sheet(f'{OUT}/ar-outfit-change-reel.mp4', f'{OUT}/ar-outfit-change-contact.jpg')

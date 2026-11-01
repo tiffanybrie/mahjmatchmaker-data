@@ -27,7 +27,7 @@ Shortlist (all real, upbeat; she adds the song by hand):
 ## Beat map (beat N = N × 0.375s)
 | Beats | Time | What happens |
 |---|---|---|
-| 0-8 | 0-3.0s | Gift box. "Psst…" (b0) and "we've been hiding something" (b2). "The Holiday" (b4), "Vault" (b5) and "is open." (b5.6) punch in. The lid flies off (b6) and the phone rises out of the box. |
+| 0-8 | 0-3.0s | Gift box. "Merry Mahjong." (b0) and "unwrap the holiday albums" (b2). "The Holiday" (b4), "Vault" (b5) and "is open." (b5.6) punch in. The lid flies off (b6) and the phone rises out of the box. |
 | 8-13 | 3.0-4.9s | The real /christmas-mahjong-mats page at 390px. Scroll bursts land on b9-b12. A gift tag counts up to 40 Christmas & winter mats. |
 | 13-20 | 4.9-7.5s | A storybook page flip (b13) to /holiday-mahjong-matches. A punch-zoom on its own stat boxes (b14.3) shows "400+ holiday matches". Scroll bursts go through the new holiday tile sets, and a tag counts up to 11. |
 | 20-28 | 7.5-10.5s | A ribbon wipe into a full-screen photo dump, one real brand photo per beat: Dear Santa tiles, Candy Cane Lane, Nutcracker Ballet tiles, Clara's Dream Christmas, Rackin' Rudolph tiles on racks, Festive Plaid, Nivalee on racks, Holly Jolly tiles on racks. |
@@ -83,3 +83,6 @@ Why they'd share: each brand gets its own slide or beat showing how many ways it
    - Every one of these slides carries "Shop now · use code MAHJMATCH".
 9. "34 albums now have a holiday section", with 12 album covers.
 10. A CTA gift tag: Find *Your* Mat-ch™, "Shop now · use code MAHJMATCH", LINK IN BIO and the logo.
+
+## Update Nov 1 ~2am (polish)
+Opener is now "Merry Mahjong. / unwrap the holiday albums" (no secret framing). Gift-tag counters use ../COUNTS.md: 140+ holiday mats (Christmas page + FYM grid), 10+ holiday tile sets, 40+ holiday albums; the punch-zoom on the /holiday-mahjong-matches stat strip now spotlights only its "400+" box (the strip's other boxes still say 42 / 49 / 17, handed to Ops). URL pills replaced with "Christmas & winter mats" / "Holiday matches, by tile set". Carousel slides 1, 9, 10 (+ story frames) and all captions re-rendered with 10+ / 30+ / 140+. Paige Spearin x TdT check: the FYM holiday grid scroll stops at strip y 9,788 px; the first Tigre de Tartan tile (Ditsy Christmas Maraschino) sits at y 12,462 and Après Mahj at 16,459, so neither is ever on screen (OCR of every frame in the scroll confirmed; the "Corey Paige" mats shown are Bespoke Mahjong, not Paige Spearin). Known: OMM Sugarplum (gone from OMM) still shows in the real app grid capture, since v111 still lists it (MATCH-INBOX).
