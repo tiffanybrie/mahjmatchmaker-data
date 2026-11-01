@@ -1,4 +1,4 @@
-# Thin albums: Tiffany's 41 hearts → match cards on 9 live albums (Oct 26). READY FOR OPS PASTE
+# Thin albums: Tiffany's 41 hearts → match cards on 9 live albums (Oct 26). PASTED + LIVE Nov 1 ~12:30am ET (41/41, curl-verified; next: FYM patch below)
 
 Source: her hearts in the thin-album review (artifact UQy4YpGD2RR5Z1WqswJWYM, db `votes`, Oct 23-24). Tiffany, Oct 26 8:01am: "my additional picks for the thin albums that I picked a week ago have not gone into the match album." Why they were late: the Oct 24 desk cleanup parked them as "After launch". This is a standing job, not a new decision, so no OK is needed. Each heart is a match card appended at the END of that album's main grid.
 
