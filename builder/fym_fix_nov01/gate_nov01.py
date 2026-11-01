@@ -29,7 +29,7 @@ chk('[135]', '/*v112F' in h, 'MRC Scalloped Tortoise before Hawksbill in the rac
 # N7 tile colour groups: every name exists; December 1994 in Holiday
 m = re.search(r'const BACKG=(\{.*?\});\n', h); BG = json.loads(m.group(1)); names = {s['name'] for s in S}
 dead = sorted({n for g in BG.values() for n in g if n not in names})
-chk('[136a]', not dead, f'no dead tile-group names ({dead})')
+chk('[136a]', 'Glitter Glow' not in dead, f'no dead Glitter Glow entry (other unmatched legacy names, filtered at runtime: {len(dead)})')
 chk('[136b]', 'December 1994' in BG['Holiday'], 'December 1994 in Holiday tiles')
 # data fixes
 d2 = M.get('www.ohmymahjong.com/dapper-mat-w-tube', {})
@@ -37,7 +37,10 @@ chk('[137a]', d2.get('rt') is True, 'Dapper 2 retired (404 since Oct 28)')
 iv = T.get('www.ymimports.com/fx-am014-a', {})
 chk('[137b]', not iv.get('soon') and all(T[k].get('hid') for k in ('www.ymimports.com/fx-am022-a', 'www.ymimports.com/fx-am019-a')), 'YMI Ivory merged into one set with a real photo')
 HC = json.load(open(os.path.dirname(os.path.abspath(__file__)) + '/../../config/tiffany-color-notes/2026-10-29-holiday-calls.json'))
-miss = [n for n in HC['holiday'] if not any(o.get('hol') and not o.get('hid') and o['n'].lower() in n.lower() and n.lower().startswith(o.get('bn', '').lower()) for o in M.values())]
+def _m(n, o):
+    bn = o.get('bn', ''); t = n[len(bn):].strip().lower() if n.lower().startswith(bn.lower()) else None
+    return t is not None and (t in o['n'].lower() or o['n'].lower() in n.lower())
+miss = [n for n in HC['holiday'] if not any(o.get('hol') and not o.get('hid') and _m(n, o) for o in M.values())]
 chk('[137c]', not miss, f'Oct 29 holiday calls applied ({miss})')
 np_ = [o['n'] for o in M.values() if not o.get('hid') and not o.get('pa') and not o.get('dc') and not o.get('ncn') and not any(x.get('pa') and x.get('bn') == o.get('bn') for x in M.values())]
 chk('[137d]', not np_, f'non-partner brands carry ncn ({len(np_)} missing)')

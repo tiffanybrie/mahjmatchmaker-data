@@ -62,9 +62,10 @@ def find(full):
         if o.get('hid'): continue
         if full.lower() == (o.get('bn', '') + ' ' + o['n']).lower() or (full.lower().startswith(o.get('bn', '').lower()) and o['n'].lower() in full.lower() and len(o['n']) > 5):
             return k_
-FIX4 = {'Bam Bird Boutique Vegan Leather Caramel': 'www.bambirdboutique.com/origami-leather-mat?v=51114566746421'}
+FIX4 = {'Bam Bird Boutique Vegan Leather Caramel': 'www.bambirdboutique.com/origami-leather-mat?v=51114566746421',
+        'Mahj Mood Sleigh All Day': 'mahjmood.com/sleigh-all-day-mat', 'Sunday Mahjong Golden Gingham': 'sundaymahjong.com/golden-gingham-premium-mahjong-mat'}
 for nm in HC['holiday']:
-    k_ = find(nm)
+    k_ = FIX4.get(nm) or find(nm)
     if k_ and not M[k_].get('hol'):
         o = M[k_]; fams = o.get('mf') or o.get('ha') or []
         o.update(hol=True, ha=fams, mf=[], mt=[], sh=[]); log.append('4 holiday: ' + nm)
@@ -76,7 +77,7 @@ for nm in HC['works_for_holiday_keep']:
 # 6 Poppins picks
 PK = 'www.ohmymahjong.com/poppins-mat-in-tube'
 YES = ['Lola', 'Moonlight', 'Osler', 'Preppy Soirée', 'Coquette', 'Birdie', 'Amara', 'Dandy', 'Glitterville', 'Petalée', 'Lilac Soirée',
-       'Luminaire', 'Taylor', 'Glow Wild', 'La Fête', 'Spring Love', 'Talulah', 'Gemma', 'Pearlescent']
+       'Luminaire', 'Taylor', 'Glow Wild', 'La Fete', 'Spring Love', 'Talulah', 'Gemma', 'Pearlescent']
 if PK in M:
     for nm in YES:
         s = next((s for s in sets if s['name'] == nm and not s.get('hid')), None)
@@ -114,7 +115,7 @@ for a_, b_ in [("config/fym-mat-white-oct26.json", "config/fym-mat-replace-nov01
                ("'mt97'", "'mt112'")]:
     assert a_ in src, 'v97_matwhite changed: ' + a_
     src = src.replace(a_, b_)
-exec(compile(src, 'replace112', 'exec'), {'__name__': '__main__'})
+exec(compile(src, 'replace112', 'exec'), {'__name__': '__main__', '__file__': REPO + 'builder/fym_fix_oct25/v97_matwhite.py'})
 FL = json.load(open(REPO + 'builder/fym_flags/mat_photo_flags.json'))
 FL[CC] = dict(FL.get(CC, {}), flag='ok', note='Nov 1 v112: flat photo from Tiffany\'s Etsy screenshots (Oct 29), unhidden')
 json.dump(FL, open(REPO + 'builder/fym_flags/mat_photo_flags.json', 'w'), indent=1, ensure_ascii=False)
