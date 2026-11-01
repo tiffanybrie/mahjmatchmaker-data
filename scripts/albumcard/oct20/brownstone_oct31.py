@@ -20,13 +20,14 @@ assert 'Bird & Bamboo Wine' not in TRACKS and 'Anders Ruff Tortoise' not in TRAC
 def uri(im, maxs=1600):
     im = im.copy(); im.thumbnail((maxs, maxs), Image.LANCZOS); b = io.BytesIO(); im.convert('RGB').save(b, 'JPEG', quality=92)
     return 'data:image/jpeg;base64,' + base64.b64encode(b.getvalue()).decode()
+SHORT = {'Midnight Wildflowers with Camel Fringe': 'Midnight Wildflowers'}  # card title only (the full name ran off the card at the 30px minimum)
 TILE = 'assets/tiles/anders_ruff_brownstone_bloom_tilebox_CARD-ONLY-edited.jpg'; COL = '#7b2d3b'
 cards, man = [], []
 for c in OLD:
     n = c['order']; rk = c.get('mat_reg')
     mr = REG[rk]['racks'] if rk and rk in REG else c['mat_racks']
     im = Image.open(f'{SD}/{n:02d}.png').convert('RGB'); r = REP[str(n)]
-    cards.append({'slug': f'bb{n:02d}', 'title': f'Brownstone Bloom + {c["mat"]}', 'col': COL, 'tile_file': TILE, 'racks': TRACKS,
+    cards.append({'slug': f'bb{n:02d}', 'title': f'Brownstone Bloom + {SHORT.get(c["mat"], c["mat"])}', 'col': COL, 'tile_file': TILE, 'racks': TRACKS,
                   'mat_racks': mr, 'file': c['file'], 'code': c['code'], 'mat': uri(im)})
     man.append(dict(c, racks=TRACKS, mat_racks=mr, crop_px=im.width, photo=r.get('src'), photo_corr=r.get('corr'), photo_src_crop_px=r.get('crop_w')))
 json.dump({'_note': 'Brownstone Bloom album Oct 31', 'cards': cards, 'max_racks': 4, 'tile_brand': 'Anders Ruff'}, open(W + '/spec.json', 'w'))
