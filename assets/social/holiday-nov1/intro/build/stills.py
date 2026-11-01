@@ -51,7 +51,7 @@ def slides(H):
     S.append(('plaid', quilt(0.25), f'''<div class="card"><img src="{R['FH']}" style="width:110px"><div class="kick" style="margin-top:14px">Merry Mahjong</div>
       <div class="cap" style="font-size:104px;margin-top:14px">We made a<br>holiday list.</div>
       <div class="it" style="margin-top:22px">So many holiday sets, matched.<br>Swipe to see it →</div></div>'''))
-    S.append(('', quilt(0.55), f'''<div class="card" style="background:rgba(6,42,85,.94)"><div class="num">152</div><div class="cap" style="font-size:84px">holiday mats</div>
+    S.append(('', quilt(0.55), f'''<div class="card" style="background:rgba(6,42,85,.94)"><div class="num">140+</div><div class="cap" style="font-size:84px">holiday mats</div>
       <div class="it" style="margin-top:12px">in {FYM}</div></div>'''))
     lab1 = ('<div class="lab n" style="left:24px;top:250px">Dear Santa tiles<small>Anders Ruff</small></div>'
             '<div class="lab" style="left:24px;top:760px">♥ Candy Cane Lane<small>Anders Ruff</small></div>'
@@ -67,7 +67,7 @@ def slides(H):
       <div class="it" style="color:#fff;font-size:40px">Dear Santa tiles · Festive Plaid Premium mat<br>Persimmon + Walnut racks</div>'''))
     tiles = ''.join(f'<img src="{u}" style="width:360px;height:360px;object-fit:cover">' for u in (R['TILES13'] * 2)[:18])
     S.append(('', f'<div class="bg"><div style="display:grid;grid-template-columns:repeat(3,360px)">{tiles}</div><div style="position:absolute;inset:0;background:rgba(6,42,85,.45)"></div></div>',
-      f'''<div class="stat"><b>13</b><span>holiday<br>tile sets</span></div><div class="stat"><b>45</b><span>tile set albums with<br>holiday matches</span></div>
+      f'''<div class="stat"><b>10+</b><span>holiday<br>tile sets</span></div><div class="stat"><b>40+</b><span>holiday albums<br>full of match cards</span></div>
       <div class="stat"><b>400+</b><span>holiday matches<br>and counting</span></div>'''))
     S.append(('', '', f'''<img src="{R['FH']}" style="width:130px"><div class="kick">Merry Mahjong</div>
       <div class="cap" style="font-size:100px;color:#fff;white-space:nowrap">{FYM}</div>
@@ -78,7 +78,7 @@ def slides(H):
 
 def cover():
     return ('', quilt(0.15), f'''<div class="card" style="padding:44px 60px 50px"><img src="{CFG['FH']}" style="width:110px"><div class="kick" style="margin-top:12px">Merry Mahjong</div>
-      <div class="cap" style="font-size:150px;margin-top:6px">152</div><div class="cap" style="font-size:78px">holiday mats</div>
+      <div class="cap" style="font-size:150px;margin-top:6px">140+</div><div class="cap" style="font-size:78px">holiday mats</div>
       <div class="it" style="margin-top:14px;font-size:44px">matched with tiles &amp; racks<br>in {FYM}</div></div>''')
 
 def html(H, T, B, sl):

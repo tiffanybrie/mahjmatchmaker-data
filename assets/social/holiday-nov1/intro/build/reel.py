@@ -37,7 +37,7 @@ DUMP2 = [  # eighth notes b52-b56 then hold
 BURST = [mat(n) for n in ['Candy Cane Lane', 'Winterberry', 'Yuletide', 'Peppermint Patty Premium', 'Merry Mix', 'Snowflake Lodge Premium',
                           'Santa\'s Mahjong Mail', 'Hip Hip Hanukkah', 'Clara', 'Perfectly Wrapped', 'Christmas Botanical Bow', 'Plaid Tidings'] if n in MATS]
 TILES13 = [T + f for f in ['dear-santa.jpg', 'rackin-rudolph.jpg', 'holly-jolly-red-pile.jpg', 'holly-jolly-green.jpg', 'holly-jolly-pink-pile.jpg',
-                           'tinselle-emerald-3x3.jpg', 'nivalee-blue.jpg', 'nutcracker-ballet.jpg', 'cmc-apres-ski.jpg', 'plm-spirit-of-christmas-faces-back.jpg']]
+                           'tinselle-emerald-3x3.jpg', 'nivalee-blue.jpg', 'nutcracker-ballet.jpg', 'cmc-apres-ski.jpg']]  # Nov 1 polish: PLM Spirit of Christmas (sold out) dropped
 COV = [f'file://{R}/assets/covers/holiday/{f}' for f in ['dear-santa.jpg', 'rackin-rudolph.jpg', 'holly-jolly-red.jpg', 'holly-jolly-pink.jpg', 'nutcracker-ballet.jpg',
        'cmc-apres-ski.jpg', 'nivalee-blue.jpg', 'tinselle-emerald.jpg', 'december-1994.jpg']] + \
       [f'file://{R}/assets/covers/albums/uniform-v3/{f}.jpg' for f in ['amara', 'birdie', 'coquette', 'gatsby', 'moonlight', 'heritage-2-0', 'osler', 'smith', 'pearlescent', 'lola', 'la-fete', 'glitterville']]
@@ -134,8 +134,7 @@ body{width:1080px;height:__H__px;overflow:hidden;position:relative;background:va
  <div class="c cap" style="top:580px;font-size:104px;color:#fff;white-space:nowrap">Find <span style="font:italic 600 106px/1 PF;color:var(--pink)">Your</span> Mat-ch<sup style="font-size:38px;vertical-align:top;position:relative;top:14px">™</sup></div>
  <div class="c" style="top:760px;font:italic 600 50px/1.3 PF;color:var(--cream);padding:0 90px">The only place to see holiday tiles, mats &amp; racks together, then shop them.</div>
  <div class="c" style="top:1010px" id="shop"><span class="pill" style="background:var(--pink);color:#fff;font-size:44px;letter-spacing:3px;padding:22px 46px;text-transform:none">Shop now · use code MAHJMATCH</span></div>
- <div class="c" style="top:1180px;font:700 46px Bit;color:#fff;letter-spacing:1px">mahjmatchmaker.com</div>
- <div class="c" style="top:1262px"><span class="pill" style="background:transparent;border:4px solid var(--gold);color:var(--gold);font-size:32px">Link in bio</span></div>
+ <div class="c" style="top:1190px"><span class="pill" style="background:transparent;border:4px solid var(--gold);color:var(--gold);font-size:32px">Link in bio</span></div>
 </div>
 <script>
 const C=__CFG__; const H=__H__;
@@ -192,7 +191,7 @@ window.render=function(t){const B=b(t);
     im.style.left=(540-150+Math.cos(ang)*r)+'px';im.style.top=(1000-150+Math.sin(ang)*r*0.75)+'px';im.style.transform=`scale(${0.3+0.45*k}) rotate(${(i%2?1:-1)*k*30}deg)`;});
  }
  if(a===4){ const i=Math.floor(L/4), k=L-i*4;
-  const D=[[152,'holiday mats','in Find Your Mat-ch™',C.QU,5,false],[13,'holiday tile sets','ready to swipe',C.TILES13,4,false],[45,'tile set albums','with holiday matches',C.COV,4,false]][i];
+  const D=[[140,'holiday mats','in Find Your Mat-ch™',C.QU,5,true],[10,'holiday tile sets','ready to swipe',C.TILES13,4,true],[40,'holiday albums','full of match cards',C.COV,4,true]][i]; /* canonical counts: ../../COUNTS.md */
   mosaic(D[3],D[4]); $('mos').style.display=window.NOSNOW?'none':'grid'; $('mos').style.transform=`scale(${1.08-0.06*L/12}) translateY(${-k*12}px)`;
   setOdo(D[0],k/2,D[5]); const land=cl((k-2)/0.4); $('odo').style.transform=`scale(${1+0.08*Math.sin(Math.PI*land)})`;
   $('olab').textContent=D[1]; $('olab').style.opacity=cl((k-1.6)/0.4); $('olab').style.transform=`translateY(${(1-eo((k-1.6)/0.5))*40}px)`;

@@ -90,6 +90,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--pine)}
   </div>
   <div id="tap"></div>
  </div>
+ <div id="spot" style="position:absolute;display:none;border-radius:34px;box-shadow:0 0 0 3000px rgba(6,42,85,.97);pointer-events:none"></div>
  <div id="dump" style="position:absolute;inset:0;display:none;overflow:hidden;background:#000"><img id="dumpbg" style="position:absolute;left:-60px;top:-60px;width:1200px;height:2040px;object-fit:cover;filter:blur(28px) brightness(.55) saturate(1.2)"><div id="pol" style="position:absolute;left:70px;top:420px;width:940px;height:1040px;background:#fbf3e4;padding:24px 24px 96px;box-shadow:0 40px 80px rgba(0,0,0,.6);border-radius:6px"><img id="dumpim" style="width:892px;height:920px;object-fit:cover;display:block"></div><div id="flash" style="position:absolute;inset:0;background:#fff"></div></div>
  <div id="cards"></div>
  <div id="lbls"></div>
@@ -140,7 +141,8 @@ function setStrip(L,src,y,x=0){const im=$(L==1?'S1':'S2');if(im.dataset.s!==src)
 function burst(kf,b,dur=.7){let y=kf[0][1];for(let i=1;i<kf.length;i++){const [bb,yy]=kf[i];if(b>=bb){const p=eo((b-bb)/dur);y=lerp(kf[i-1][1],yy,p)}else break}return y}
 function hd(html){if($('hd').dataset.h!==html){$('hd').innerHTML=html;$('hd').dataset.h=html}}
 function show(id,v){$(id).style.display=v?'block':'none'}
-function tag(on,x,y,rot,n,l,sc=1){const t=$('tag');t.style.display=on?'block':'none';if(!on)return;t.style.left=x+'px';t.style.top=y+'px';t.style.transform=`rotate(${rot}deg) scale(${sc})`;$('tagn').textContent=n;$('tagl').innerHTML=l}
+const cnt=(p,N)=>p>=1?N+'+':String(Math.round(cl(p)*N)); // Nov 1 polish: canonical round-down counts (../../COUNTS.md)
+function tag(on,x,y,rot,n,l,sc=1){const t=$('tag');t.style.display=on?'block':'none';if(!on)return;$('tagn').style.fontSize=String(n).length>3?'100px':'120px';t.style.left=x+'px';t.style.top=y+'px';t.style.transform=`rotate(${rot}deg) scale(${sc})`;$('tagn').textContent=n;$('tagl').innerHTML=l}
 function pill(on,txt,y,sc=1){const p=$('pill');p.style.display=on?'block':'none';if(!on)return;p.textContent=txt;p.style.top=y+'px';p.style.transform=`translateX(-50%) scale(${sc})`}
 const DUMP=[['dump/p1_0.jpg','Dear Santa tiles · Anders Ruff'],['dump/p0_0.jpg','Candy Cane Lane mat · Anders Ruff'],['dump/p3_0.jpg','Nutcracker Ballet tiles · Mahj Squad'],['dump/p2_0.jpg',"Clara's Dream Christmas mat · Mahj Squad"],['dump/p8_0.jpg',"Rackin' Rudolph tiles · Hip Hip Mahjong"],['dump/p6_3.jpg','Festive Plaid mat · Sunday Mahjong'],['dump/p5_3.jpg','Nivalee tiles · Virora Mahjong'],['dump/p7_1.jpg',"Holly Jolly tiles · Bam! Let's Mahjong"]];
 const FL='flow/';
@@ -157,7 +159,7 @@ window.render=function(t){
  let camS=1,camX=540,camY=960,camTx=0,camTy=0;
  let phoneY=0,phoneS=1;
  $('box').style.display='none'; $('boxfront').style.display='none'; show('phone',1);
- show('cards',0); show('cardlbl',0); show('banner',0); tag(0); pill(0); show('end',0); show('tap',0); show('fymhdr',0); show('dump',0); show('fly',0);
+ show('cards',0); show('cardlbl',0); show('banner',0); tag(0); pill(0); show('end',0); show('tap',0); show('fymhdr',0); show('dump',0); show('fly',0); show('spot',0);
  $('L2').style.display='none'; $('L1').style.display='block'; $('L1').style.transform='none'; $('L2').style.transform='none'; $('L1').style.opacity=1; $('L1').style.zIndex=2;$('L2').style.zIndex=1;
  $('ribbon').style.display='none';
  let hdh='', L=[];
@@ -175,8 +177,8 @@ window.render=function(t){
    const w=(i)=>{const p=back((b-i)/.45);return `opacity:${cl((b-i)/.15)};transform:scale(${lerp(1.7,1,p)})`};
    const fade=1-cl((b-6.2)/.6);
    hdh=`<div style="top:40px;opacity:${fade}">
-     <div style="top:0;opacity:${b<4?1:1-eo((b-4)/.4)}"><span style="font-family:PlayI;font-style:italic;font-size:96px;color:#fbf3e4;${w(0)};display:inline-block">Psst…</span></div>
-     <div style="top:130px;opacity:${b<4?1:1-eo((b-4)/.4)}"><span class="bit" style="font-size:42px;color:#e8c46a;${w(2)};display:inline-block">we've been hiding something</span></div>
+     <div style="top:0;opacity:${b<4?1:1-eo((b-4)/.4)}"><span style="font-family:PlayI;font-style:italic;font-size:96px;color:#fbf3e4;${w(0)};display:inline-block">Merry Mahjong.</span></div>
+     <div style="top:130px;opacity:${b<4?1:1-eo((b-4)/.4)}"><span class="bit" style="font-size:42px;color:#e8c46a;${w(2)};display:inline-block">unwrap the holiday albums</span></div>
      <div class="cap" style="top:-10px;font-size:118px;${w(4)}">The Holiday</div>
      <div class="cap" style="top:105px;font-size:210px;${w(5)}">Vault</div>
      <div class="cap" style="top:310px;font-size:118px;${w(5.6)}">is open.</div></div>`;
@@ -187,7 +189,7 @@ window.render=function(t){
    const kf=[[8,0],[9,1500],[10,3300],[11,5100],[12,6900]];
    setStrip(1,'xmas.jpg',burst(kf,b,.55));
    if(b>=8){ camS=1+.08*cl((b-8)/5); camY=900; }
-   if(b>=8.3){ tag(1,736,250,7,Math.round(cl((b-8.5)/4.3)*40),'Christmas &amp; winter mats',back((b-8.3)/.5)); pill(1,'mahjmatchmaker.com/christmas-mahjong-mats',1508,back((b-8.5)/.5)); }
+   if(b>=8.3){ tag(1,736,250,7,cnt((b-8.5)/3.5,140),'holiday mats',back((b-8.3)/.5)); pill(1,'Christmas & winter mats',1508,back((b-8.5)/.5)); }
  }
  // ===== S3 holiday matches page 13-20 =====
  if(b>=12.6&&b<20.5){
@@ -197,10 +199,12 @@ window.render=function(t){
    setStrip(2,'hol.jpg',burst(kf,b,.55));
    if(flip<1){ setStrip(1,'xmas.jpg',6900); $('L1').style.zIndex=3; $('L1').style.transformOrigin='0 50%'; $('L1').style.transform=`perspective(1600px) rotateY(${-flip*100}deg)`; $('L1').style.opacity=1-cl((flip-.7)/.3);} else $('L1').style.display='none';
    const z=b<14.3?0:(b<15.9?back((b-14.3)/.5):1-eio((b-15.9)/.5));
-   if(z>0){ camS=1+.5*z; camX=540; camY=sy(1265); camTy=(900-camY)*z; }
+   if(z>0){ const bx=sx(222), by=sy(1173); camS=1+1.2*z; camX=bx; camY=by; camTx=(540-bx)*z; camTy=(880-by)*z;
+     /* spotlight on the page's own 400+ stat box (its other stat boxes use the site's older counts) */
+     const sw=313*K*camS+36, shh=210*K*camS+36; show('spot',1); const sp=$('spot'); sp.style.left=(540-sw/2)+'px'; sp.style.top=(880-shh/2)+'px'; sp.style.width=sw+'px'; sp.style.height=shh+'px'; sp.style.opacity=cl(z*1.6); }
    if(b>=14.4&&b<16.1) pill(1,'400+ holiday matches & counting',1530,back((b-14.4)/.4));
-   if(b>=13.3&&b<14.3) pill(1,'mahjmatchmaker.com/holiday-mahjong-matches',1508,back((b-13.3)/.5));
-   if(b>=16.6&&b<20.2) tag(1,736,300,-6,Math.round(cl((b-16.6)/1.4)*11),'new holiday tile sets',back((b-16.6)/.5));
+   if(b>=13.3&&b<14.3) pill(1,'Holiday matches, by tile set',1508,back((b-13.3)/.5));
+   if(b>=16.6&&b<20.2) tag(1,736,300,-6,cnt((b-16.6)/1.4,10),'holiday tile sets',back((b-16.6)/.5));
  }
  // ===== S4 photo dump 20-28 =====
  if(b>=19.6&&b<28.4){
@@ -275,7 +279,7 @@ window.render=function(t){
    setStrip(1,'alb_'+A[i]+'.jpg',40+f*260);
    if(i>0){ $('L2').style.display='block'; setStrip(2,'alb_'+A[i-1]+'.jpg',300); $('L1').style.transform=`translateY(${(1-eo(f/.22))*1428}px)`; }
    camS=1.12; camY=sy(500); camTy=(900-camY);
-   tag(1,736,250,6,Math.round(cl((b-46)/3.2)*34),'tile set albums with a holiday section',back((b-46)/.5));
+   tag(1,736,250,6,cnt((b-46)/2.6,40),'holiday albums',back((b-46)/.5));
  }
  // ===== S8 FYM holiday grid 50-57 =====
  if(b>=49.6&&b<57.4){
@@ -288,7 +292,7 @@ window.render=function(t){
      tapAt(chipX,chipY,50.8);
      const z=b<50.8?0:(b<52?back((b-50.8)/.4):1-eio((b-52)/.5)*.6);
      camS=1+.45*z; camX=chipX; camY=chipY;
-     if(b>=51.6) tag(1,736,440,-5,Math.round(cl((b-51.6)/4.5)*156),'holiday mats to swipe',back((b-51.6)/.5));
+     if(b>=51.6) tag(1,736,440,-5,cnt((b-51.6)/3.8,140),'holiday mats to swipe',back((b-51.6)/.5));
    }
  }
  // ===== S9 end 57-66 =====
@@ -305,7 +309,7 @@ window.render=function(t){
    }
  }
  hd(hdh); lbls(L);
- $('cam').style.transform = (camS!==1||camTy)?`translate(0px,${camTy}px) translate(${camX}px,${camY}px) scale(${camS}) translate(${-camX}px,${-camY}px)`:'none';
+ $('cam').style.transform = (camS!==1||camTy||camTx)?`translate(${camTx}px,${camTy}px) translate(${camX}px,${camY}px) scale(${camS}) translate(${-camX}px,${-camY}px)`:'none';
  $('phone').style.transform=`translateY(${phoneY}px) scale(${phoneS*(b>8&&b<57?pulse:1)})`;
 };
 
