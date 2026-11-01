@@ -1,0 +1,87 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Capra;src:url(file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/Caprasimo.ttf)}
+@font-face{font-family:PlayI;font-style:italic;font-weight:600;src:url(file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/playfair-display-latin-600-italic.woff2)}
+@font-face{font-family:Bitter;font-weight:700;src:url(file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/bitter-latin-700-normal.woff2)}
+@font-face{font-family:Bitter;font-weight:400;src:url(file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/bitter-latin-400-normal.woff2)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#222}
+.frame{position:relative;width:1080px;overflow:hidden;background:
+ radial-gradient(ellipse at 50% 35%,rgba(255,240,200,.12),rgba(0,0,0,0) 60%),
+ repeating-linear-gradient(90deg,transparent 0 120px,rgba(179,32,42,.28) 120px 150px,transparent 150px 240px,rgba(232,196,106,.16) 240px 246px,transparent 246px 360px),
+ repeating-linear-gradient(0deg,transparent 0 120px,rgba(179,32,42,.24) 120px 150px,transparent 150px 240px,rgba(232,196,106,.14) 240px 246px,transparent 246px 360px),#0d3a28}
+.frame:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,transparent 50%,rgba(0,0,0,.5) 100%);pointer-events:none}
+.post{height:1350px}.story{height:1920px}
+.slide{position:absolute;left:0;width:1080px;height:1350px}
+.post .slide{top:0}.story .slide{top:250px}
+.kick{position:absolute;left:0;width:100%;text-align:center;font-family:Bitter;font-weight:700;letter-spacing:.22em;font-size:26px;color:#e8c46a}
+.ttl{position:absolute;left:40px;right:40px;text-align:center;font-family:Capra;color:#fbf3e4;line-height:.98;text-shadow:0 5px 0 #7c1019,0 14px 30px rgba(0,0,0,.4)}
+.sub{position:absolute;left:0;width:100%;text-align:center;font-family:Bitter;font-weight:700;color:#fbf3e4;font-size:32px}
+.badge{display:inline-block;padding:10px 26px;border-radius:40px;background:#b3202a;border:3px solid #e8c46a;color:#fff;font-family:Bitter;font-weight:700;font-size:30px}
+.card{position:absolute;width:340px;height:425px;background:#fff;padding:9px;border-radius:8px;box-shadow:0 24px 50px rgba(0,0,0,.55)}
+.card img{width:100%;height:100%;display:block}
+.cover{position:absolute;width:400px;height:400px;background:#fbf3e4;padding:12px;border-radius:8px;box-shadow:0 24px 50px rgba(0,0,0,.55)}
+.cover img{width:100%;height:100%;object-fit:cover;display:block}
+.foot{position:absolute;left:0;width:100%;top:1222px;text-align:center}
+.foot span{display:inline-block;padding:14px 30px;border-radius:12px;background:#fbf3e4;color:#062a55;font-family:Bitter;font-weight:700;font-size:28px;border:3px solid #b3202a;box-shadow:0 10px 24px rgba(0,0,0,.35)}
+.it{font-family:PlayI;font-style:italic;font-weight:600}
+.scr{position:absolute;width:300px;height:520px;border-radius:30px;overflow:hidden;border:10px solid #111;box-shadow:0 0 0 4px #c9a14a,0 24px 50px rgba(0,0,0,.55);background:#fff}
+.scr img{position:absolute;left:0;width:100%}
+.step{position:absolute;width:300px;text-align:center;font-family:Bitter;font-weight:700;color:#fbf3e4;font-size:27px;line-height:1.2}
+.step b{display:block;margin:0 auto 8px;width:54px;height:54px;border-radius:50%;background:#b3202a;border:3px solid #e8c46a;font-family:Capra;font-size:32px;line-height:48px;color:#fff}
+.gtag{position:absolute;background:#fbf3e4;border-radius:22px;box-shadow:0 30px 60px rgba(0,0,0,.5);border:5px dashed rgba(179,32,42,.55);outline:10px solid #fbf3e4}
+</style></head><body><div id="root"></div>
+<script>
+const R='file:///home/claude/mahjmatchmaker-data/assets/';
+const CV=R+'covers/holiday/', CD=R+'cards/holiday-v4/', F='file:///dev/shm/vault-tour/cap/flow/';
+const ALBUMS=[
+ {n:'Dear Santa',b:'Anders Ruff',c:19,cov:'dear-santa.jpg',cards:['dear-santa-mahjong-tiles-anders-ruff-candy-cane-lane-mat.jpg','dear-santa-mahjong-tiles-sunday-mahjong-festive-plaid-mat.jpg','dear-santa-mahjong-tiles-anders-ruff-classic-very-merry-mahj-mat.jpg']},
+ {n:"Rackin' Rudolph",b:'Hip Hip Mahjong',c:22,cov:'rackin-rudolph.jpg',cards:['rackin-rudolph-mahjong-tiles-anders-ruff-classic-very-merry-mahj-mat.jpg','rackin-rudolph-mahjong-tiles-bespoke-mahjong-holiday-love-red-green-mat.jpg','rackin-rudolph-mahjong-tiles-anders-ruff-candy-cane-lane-mat.jpg']},
+ {n:'Holly Jolly',b:"Bam! Let's Mahjong",c:26,sub2:'Rudolph Red · Grinch Green · Sugarplum Pink',cov:'holly-jolly-red.jpg',cards:['holly-jolly-red-mahjong-tiles-bespoke-mahjong-holiday-love-red-green-mat.jpg','holly-jolly-pink-mahjong-tiles-mahjong-register-very-merry-wreath-mat.jpg','holly-jolly-green-mahjong-tiles-bam-let-s-mahjong-holly-jolly-christmas-mat.jpg']},
+ {n:'Nutcracker Ballet',b:'Mahj Squad',c:12,cov:'nutcracker-ballet.jpg',cards:['nutcracker-ballet-mahjong-tiles-mahj-squad-clara-s-dream-christmas-mat.jpg','nutcracker-ballet-mahjong-tiles-anders-ruff-candy-cane-lane-mat.jpg','nutcracker-ballet-mahjong-tiles-oh-my-mahjong-clara-mat.jpg']},
+ {n:'Nivalee',b:'Virora Mahjong',c:7,sub2:'Glacier Blue',cov:'nivalee-blue.jpg',cards:['nivalee-blue-mahjong-tiles-charleston-mahjong-club-ski-club-red-sweater-mat.jpg','nivalee-blue-mahjong-tiles-splash-of-color-alpine-ski-lodge-winter-mat.jpg','nivalee-blue-mahjong-tiles-oh-my-mahjong-winterberry-mat.jpg']},
+ {n:'Après Ski Club',b:'Charleston Mahjong Club',c:9,cov:'cmc-apres-ski.jpg',cards:['cmc-apres-ski-mahjong-tiles-splash-of-color-alpine-ski-lodge-winter-mat.jpg','cmc-apres-ski-mahjong-tiles-charleston-mahjong-club-ski-club-red-sweater-mat.jpg','cmc-apres-ski-mahjong-tiles-oh-my-mahjong-winterberry-mat.jpg']},
+];
+const OWN=['02-nantucket-mahjong-tiles-cover.jpg','01-jade-mahjong-tiles-miss-mahjong-classic.jpg','22-malachite-mahjong-tiles-cover.jpg','51-heritage-2-0-mahjong-tiles-cover.jpg','05-moonlight-mahjong-tiles-cover.jpg','02-birdie-mahjong-tiles-cover.jpg','00-osler-mahjong-tiles-cover.jpg','00-smith-mahjong-tiles-cover.jpg','01-gatsby-mahjong-tiles-cover.jpg','07-pearlescent-mahjong-tiles-cover.jpg','10-amara-mahjong-tiles-cover.jpg','00-coquette-mahjong-tiles-cover.jpg'];
+function cover(){
+ const covs=['dear-santa','rackin-rudolph','holly-jolly-red','holly-jolly-green','holly-jolly-pink','nivalee-blue','nutcracker-ballet','cmc-apres-ski'];
+ const pos=[[50,440,-7],[300,420,5],[540,450,-4],[780,430,7],[60,760,6],[300,740,-5],[540,770,4],[780,750,-6]];
+ return `<div class="kick" style="top:150px">MAHJ MATCHMAKER · HOLIDAY 2026</div>
+ <div class="ttl" style="top:200px;font-size:104px">Holiday albums<br>are here</div>
+ ${covs.map((c,i)=>`<div class="cover" style="width:260px;height:260px;padding:8px;left:${pos[i][0]}px;top:${pos[i][1]}px;transform:rotate(${pos[i][2]}deg)"><img src="${CV}w800/${c}.jpg"></div>`).join('')}
+ <div class="foot" style="top:1240px"><span>10 holiday tile sets, matched · 400+ holiday matches</span></div>`;}
+function how(){
+ const S=[[F+'seq/000.jpg',-150,'Pick your tiles,<br>swipe ♥ on mats'],[F+'seq3/042.jpg',-40,'Swipe racks with<br>the mat zoomed in'],[F+'seq2/072.jpg',-175,'Your match card,<br>ready to shop']];
+ return `<div class="kick" style="top:150px">HOW EVERY MATCH CARD IS MADE</div>
+ <div class="ttl" style="top:195px;font-size:72px;white-space:nowrap">How we make a match</div><div class="sub" style="top:290px;font-size:34px;color:#e8c46a">in Find <span class="it">Your</span> Mat-ch™</div>
+ ${S.map((s,i)=>`<div class="scr" style="left:${45+i*340}px;top:420px;transform:rotate(${[-3,0,3][i]}deg)"><img src="${s[0]}" style="top:${s[1]}px"></div>
+   <div class="step" style="left:${45+i*340}px;top:975px"><b>${i+1}</b>${s[2]}</div>`).join('')}
+ <div class="sub" style="top:1150px;font-size:30px;color:#e8c46a">Dear Santa + Candy Cane Lane (Anders Ruff) · Bird &amp; Bamboo racks</div>
+ <div class="foot" style="top:1222px"><span>Real app screens · mahjmatchmaker.com/find-your-match</span></div>`;}
+function album(a,i){
+ const rot=[-5,2,6], lx=[370,525,690], ty=[600,640,690];
+ return `<div class="kick" style="top:150px">THE HOLIDAY ALBUMS · No. ${String(i+1).padStart(2,'0')}</div>
+ <div class="ttl" style="top:192px;font-size:${a.n.length>14?84:100}px">${a.n}</div>
+ <div class="sub" style="top:${a.n.length>14?290:305}px">${a.b}${a.sub2?' · '+a.sub2:''}</div>
+ <div class="cover" style="left:40px;top:400px;transform:rotate(-6deg);width:400px;height:400px"><img src="${CV}w800/${a.cov}"></div>
+ ${a.cards.map((c,k)=>`<div class="card" style="left:${lx[k]}px;top:${ty[k]}px;transform:rotate(${rot[k]}deg)"><img src="${CD}${c}"></div>`).join('')}
+ <div style="position:absolute;left:50px;top:880px;transform:rotate(-4deg)" ><span class="badge" style="font-size:34px">${a.c} holiday matches</span></div>
+ <div class="foot"><span style="font-size:26px">Full album at mahjmatchmaker.com · Shop now · use code MAHJMATCH</span></div>`;}
+function own(){
+ return `<div class="kick" style="top:150px">ALREADY HAVE YOUR TILES?</div>
+ <div class="ttl" style="top:200px;font-size:84px">34 albums now have<br>a holiday section</div>
+ ${OWN.map((c,i)=>`<div class="cover" style="width:230px;height:230px;padding:7px;left:${70+(i%4)*240}px;top:${430+Math.floor(i/4)*250}px;transform:rotate(${[-4,3,-2,5][i%4]}deg)"><img src="${R}covers/albums/w800/${c}"></div>`).join('')}
+ <div class="foot" style="top:1222px"><span>Nantucket, Jade, Malachite, Heritage 2.0 and 30 more</span></div>`;}
+function cta(){
+ return `<div class="gtag" style="left:110px;top:200px;width:860px;height:1000px">
+  <div style="position:absolute;left:400px;top:30px;width:60px;height:60px;border-radius:50%;background:#0d3a28"></div>
+  <div style="position:absolute;top:130px;width:100%;text-align:center;font-family:Bitter;font-weight:700;letter-spacing:.2em;font-size:30px;color:#b3202a">YOUR TILES, YOUR TURN</div>
+  <div style="position:absolute;top:190px;width:100%;text-align:center;font-family:Capra;font-size:92px;color:#1f5a3a;line-height:1">Find <span class="it" style="font-size:96px">Your</span><br>Mat-ch™</div>
+  <div style="position:absolute;top:420px;width:100%;text-align:center;font-family:Bitter;font-weight:700;font-size:36px;color:#062a55;line-height:1.35">Tap Holiday, pick your tiles,<br>swipe 156 holiday mats + racks.<br>Then browse the holiday albums.</div>
+  <div style="position:absolute;top:630px;width:100%;text-align:center"><span style="display:inline-block;padding:20px 40px;border-radius:50px;background:#b3202a;color:#fff;font-family:Bitter;font-weight:700;font-size:40px;border:4px solid #e8c46a">Shop now · use code MAHJMATCH</span></div>
+  <div style="position:absolute;top:760px;width:100%;text-align:center"><span style="display:inline-block;padding:16px 40px;border-radius:50px;background:#062a55;color:#fff;font-family:Bitter;font-weight:700;font-size:38px;letter-spacing:.12em">LINK IN BIO</span></div>
+  <div style="position:absolute;top:880px;width:100%;text-align:center"><img src="file:///dev/shm/vault-tour/build/logo.png" style="width:420px"></div>
+ </div>`;}
+const SL=[cover(),how()].concat(ALBUMS.map(album)).concat([own(),cta()]);
+window.show=function(i,story){document.getElementById('root').innerHTML=`<div class="frame ${story?'story':'post'}" id="fr"><div class="slide">${SL[i]}</div></div>`;};
+window.N=SL.length;
+</script></body></html>

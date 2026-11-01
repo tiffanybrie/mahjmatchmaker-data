@@ -1,0 +1,312 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Capra;src:url(file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/Caprasimo.ttf)}
+@font-face{font-family:PlayI;font-style:italic;font-weight:600;src:url(file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/playfair-display-latin-600-italic.woff2)}
+@font-face{font-family:PlayI4;font-style:italic;src:url(file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/playfair-display-latin-400-italic.woff2)}
+@font-face{font-family:Bitter;font-weight:700;src:url(file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/bitter-latin-700-normal.woff2)}
+@font-face{font-family:Bitter;font-weight:600;src:url(file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/bitter-latin-600-normal.woff2)}
+:root{--pine:#0d3a28;--red:#b3202a;--gold:#e8c46a;--cream:#fbf3e4;--navy:#062a55}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--pine)}
+#stage{position:absolute;inset:0;overflow:hidden}
+.bg{position:absolute;inset:0;background:
+ radial-gradient(ellipse at 50% 40%,rgba(255,240,200,.10),rgba(0,0,0,0) 55%),
+ repeating-linear-gradient(90deg,rgba(179,32,42,.0) 0 120px,rgba(179,32,42,.28) 120px 150px,rgba(0,0,0,0) 150px 240px,rgba(232,196,106,.16) 240px 246px,rgba(0,0,0,0) 246px 360px),
+ repeating-linear-gradient(0deg,rgba(179,32,42,.0) 0 120px,rgba(179,32,42,.24) 120px 150px,rgba(0,0,0,0) 150px 240px,rgba(232,196,106,.14) 240px 246px,rgba(0,0,0,0) 246px 360px),
+ #0d3a28}
+.vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(0,0,0,0) 45%,rgba(0,0,0,.55) 100%)}
+.abs{position:absolute;left:0;top:0;will-change:transform}
+#snow i{position:absolute;border-radius:50%;background:#fff;display:block}
+#spark i{position:absolute;display:block;width:34px;height:34px;background:radial-gradient(circle,#fff6d8 0 8%,rgba(255,230,160,.0) 60%);}
+#spark i:before,#spark i:after{content:"";position:absolute;left:50%;top:0;width:3px;height:100%;margin-left:-1.5px;background:linear-gradient(transparent,#fff3c4,transparent)}
+#spark i:after{transform:rotate(90deg)}
+/* phone */
+#cam{position:absolute;inset:0;transform-origin:0 0}
+#phone{position:absolute;left:188px;top:226px;width:704px;height:1472px;border-radius:92px;background:linear-gradient(145deg,#2b2b2e,#0c0c0e 60%,#2a2a2c);box-shadow:0 0 0 5px #c9a14a,0 0 0 9px #7a5a1c,0 40px 90px rgba(0,0,0,.55);transform-origin:50% 50%}
+#screen{position:absolute;left:22px;top:22px;width:660px;height:1428px;border-radius:72px;overflow:hidden;background:#fff}
+.layer{position:absolute;inset:0;overflow:hidden;background:#fff;backface-visibility:hidden}
+.layer img.strip{position:absolute;left:0;top:0;width:660px}
+#notch{position:absolute;left:250px;top:14px;width:160px;height:40px;border-radius:22px;background:#0c0c0e;z-index:5}
+/* gift box */
+#box{position:absolute;left:150px;top:1010px;width:780px;height:600px}
+#boxbody{position:absolute;left:20px;top:150px;width:740px;height:470px;border-radius:10px;
+ background:radial-gradient(circle at 25% 25%,rgba(255,215,120,.9) 0 7px,transparent 8px) 0 0/70px 70px,
+ radial-gradient(circle at 75% 75%,rgba(255,255,255,.85) 0 5px,transparent 6px) 0 0/70px 70px,linear-gradient(180deg,#c52a33,#8f1520);box-shadow:inset 0 -30px 60px rgba(0,0,0,.35),0 30px 60px rgba(0,0,0,.5)}
+#boxbody:before{content:"";position:absolute;left:330px;top:0;width:80px;height:100%;background:linear-gradient(90deg,#9c7420,#f3d27a 40%,#e8c46a 60%,#9c7420)}
+#lid{position:absolute;left:0;top:30px;width:780px;height:150px;border-radius:12px;transform-origin:50% 100%;
+ background:radial-gradient(circle at 25% 25%,rgba(255,215,120,.9) 0 7px,transparent 8px) 0 0/70px 70px,radial-gradient(circle at 75% 75%,rgba(255,255,255,.85) 0 5px,transparent 6px) 0 0/70px 70px,linear-gradient(180deg,#d9343e,#a31b26);box-shadow:0 18px 30px rgba(0,0,0,.4)}
+#lid:before{content:"";position:absolute;left:350px;top:0;width:80px;height:100%;background:linear-gradient(90deg,#9c7420,#f3d27a 40%,#e8c46a 60%,#9c7420)}
+#bow{position:absolute;left:290px;top:-110px;width:200px;height:150px;transform-origin:50% 90%}
+#bow b{position:absolute;top:10px;width:120px;height:90px;border-radius:50%;border:26px solid #e8c46a;background:transparent;box-shadow:0 6px 10px rgba(0,0,0,.3)}
+#bow b.l{left:-30px;transform:rotate(-25deg)}#bow b.r{right:-30px;transform:rotate(25deg)}
+#bow u{position:absolute;left:72px;top:55px;width:56px;height:56px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#ffe9a8,#c9a14a 70%,#8a6418)}
+/* text */
+.cap{font-family:Capra;color:var(--gold);text-align:center;text-shadow:0 6px 0 #7c1019,0 14px 30px rgba(0,0,0,.45);line-height:.95}
+.it{font-family:PlayI;font-style:italic;font-weight:600}
+.bit{font-family:Bitter;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+#hd{position:absolute;left:0;width:1080px;top:300px}
+#hd div{position:absolute;left:0;width:1080px;text-align:center}
+/* tags */
+.tag{position:absolute;width:330px;padding:26px 22px 24px 22px;background:var(--cream);border-radius:18px;text-align:center;box-shadow:0 18px 40px rgba(0,0,0,.45);border:4px dashed rgba(179,32,42,.55);outline:6px solid var(--cream)}
+.tag:before{content:"";position:absolute;left:50%;top:14px;width:22px;height:22px;margin-left:-11px;border-radius:50%;background:var(--pine);box-shadow:inset 0 2px 3px rgba(0,0,0,.5)}
+.tag .n{font-family:Capra;font-size:120px;color:var(--red);line-height:1;margin-top:18px}
+.tag .l{font-family:Bitter;font-weight:700;font-size:30px;color:#1f5a3a;line-height:1.15;margin-top:6px}
+.pill{position:absolute;left:50%;transform:translateX(-50%);white-space:nowrap;padding:16px 30px;border-radius:40px;background:var(--red);color:#fff;font-family:Bitter;font-weight:700;font-size:30px;box-shadow:0 10px 24px rgba(0,0,0,.4);border:3px solid var(--gold)}
+/* ribbon wipe */
+#ribbon{position:absolute;left:-700px;top:-400px;width:900px;height:3000px;background:linear-gradient(90deg,#7a5a1c 0 30px,#e8c46a 30px 60px,#b3202a 60px 840px,#e8c46a 840px 870px,#7a5a1c 870px);transform-origin:50% 50%;box-shadow:0 0 60px rgba(0,0,0,.5)}
+#ribbon:after{content:"";position:absolute;inset:0 60px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 6px,transparent 6px 40px)}
+/* cards */
+.card{position:absolute;left:150px;top:470px;width:780px;height:975px;background:#fff;padding:14px;border-radius:12px;box-shadow:0 30px 70px rgba(0,0,0,.55);transform-origin:50% 50%}
+.card img{width:100%;height:100%;display:block;border-radius:4px}
+.lb{position:absolute;padding:12px 24px;background:#fbf3e4;color:#062a55;font-family:Bitter;font-weight:700;font-size:32px;border-radius:12px;box-shadow:0 10px 24px rgba(0,0,0,.35);border:3px solid #b3202a;white-space:nowrap;transform-origin:50% 50%}
+#cardlbl{position:absolute;left:0;width:1080px;top:1478px;text-align:center}
+#cardlbl span{display:inline-block;padding:12px 24px;background:var(--cream);color:var(--navy);font-family:Bitter;font-weight:700;font-size:27px;border-radius:12px;box-shadow:0 10px 24px rgba(0,0,0,.35);border:3px solid var(--red)}
+#tap{position:absolute;width:90px;height:90px;border-radius:50%;border:8px solid rgba(255,255,255,.95);background:rgba(179,32,42,.35);box-shadow:0 0 0 6px rgba(179,32,42,.6)}
+#banner{position:absolute;left:90px;top:262px;width:900px;height:150px;}
+#banner .bn{position:absolute;inset:0;background:var(--red);clip-path:polygon(0 0,100% 0,96% 50%,100% 100%,0 100%,4% 50%);box-shadow:0 10px 30px rgba(0,0,0,.4)}
+#banner .bt{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:Capra;color:var(--cream);font-size:76px;text-shadow:0 4px 0 #6d0e16}
+/* end */
+#end{position:absolute;inset:0}
+#endtag{position:absolute;left:110px;top:330px;width:860px;height:1150px;background:var(--cream);border-radius:40px;box-shadow:0 40px 90px rgba(0,0,0,.55);border:6px dashed rgba(179,32,42,.55);outline:12px solid var(--cream);transform-origin:50% 0}
+#endtag .hole{position:absolute;left:400px;top:40px;width:60px;height:60px;border-radius:50%;background:var(--pine);box-shadow:inset 0 3px 6px rgba(0,0,0,.5)}
+#string{position:absolute;left:534px;top:120px;width:12px;height:250px;background:linear-gradient(90deg,#9c7420,#f3d27a,#9c7420);transform-origin:50% 0}
+.et{position:absolute;left:0;width:860px;text-align:center}
+</style></head><body>
+<div id="stage">
+ <div class="bg"></div>
+ <div id="spark" class="abs"></div>
+ <div id="cam">
+  <div id="box"><div id="boxbody"></div></div>
+  <div id="phone"><div id="screen">
+    <div class="layer" id="L1"><img class="strip" id="S1"></div>
+    <div class="layer" id="L2"><img class="strip" id="S2"></div>
+    <div id="fly" style="position:absolute;display:none;z-index:6;box-shadow:0 20px 40px rgba(0,0,0,.35);border-radius:16px;background-repeat:no-repeat"><div id="stamp" style="position:absolute;left:30px;top:40px;width:150px;height:150px;border:10px solid #e0245e;border-radius:24px;color:#e0245e;font-size:110px;line-height:130px;text-align:center;transform:rotate(-14deg);background:rgba(255,255,255,.75)">&#9829;</div></div>
+    <img id="fymhdr" src="fymhdr.png" style="position:absolute;left:0;top:0;width:660px;display:none">
+   </div><div id="notch"></div></div>
+  <div id="boxfront" style="position:absolute;left:150px;top:1010px;width:780px;height:640px">
+    <div id="bf" style="position:absolute;left:20px;top:150px;width:740px;height:470px;border-radius:10px;background:radial-gradient(circle at 25% 25%,rgba(255,215,120,.9) 0 7px,transparent 8px) 0 0/70px 70px,radial-gradient(circle at 75% 75%,rgba(255,255,255,.85) 0 5px,transparent 6px) 0 0/70px 70px,linear-gradient(180deg,#c52a33,#8f1520);box-shadow:inset 0 -30px 60px rgba(0,0,0,.35),0 30px 60px rgba(0,0,0,.5)"><div style="position:absolute;left:330px;top:0;width:80px;height:100%;background:linear-gradient(90deg,#9c7420,#f3d27a 40%,#e8c46a 60%,#9c7420)"></div></div>
+    <div id="lid"><div id="bow"><b class="l"></b><b class="r"></b><u></u></div></div>
+  </div>
+  <div id="tap"></div>
+ </div>
+ <div id="dump" style="position:absolute;inset:0;display:none;overflow:hidden;background:#000"><img id="dumpbg" style="position:absolute;left:-60px;top:-60px;width:1200px;height:2040px;object-fit:cover;filter:blur(28px) brightness(.55) saturate(1.2)"><div id="pol" style="position:absolute;left:70px;top:420px;width:940px;height:1040px;background:#fbf3e4;padding:24px 24px 96px;box-shadow:0 40px 80px rgba(0,0,0,.6);border-radius:6px"><img id="dumpim" style="width:892px;height:920px;object-fit:cover;display:block"></div><div id="flash" style="position:absolute;inset:0;background:#fff"></div></div>
+ <div id="cards"></div>
+ <div id="lbls"></div>
+ <div id="cardlbl"><span id="cardlbltx"></span></div>
+ <div id="hd"></div>
+ <div id="banner"><div class="bn"></div><div class="bt">Find&nbsp;<span class="it" style="font-size:80px">Your</span>&nbsp;Mat-ch™</div></div>
+ <div class="tag" id="tag"><div class="n" id="tagn">0</div><div class="l" id="tagl"></div></div>
+ <div class="pill" id="pill"></div>
+ <div id="end">
+  <div id="string"></div>
+  <div id="endtag"><div class="hole"></div>
+   <div class="et" style="top:150px;font-family:Bitter;font-weight:700;font-size:34px;letter-spacing:.2em;color:#b3202a">THE HOLIDAY VAULT</div>
+   <div class="et cap e1" style="top:215px;font-size:118px;color:#1f5a3a;text-shadow:none">is open.</div>
+   <div class="et e2" style="top:390px;font-family:Bitter;font-weight:700;font-size:44px;color:#062a55;line-height:1.3">Holiday match albums<br>+ <span style="font-family:Capra">Find</span> <span class="it" style="font-size:48px">Your</span> <span style="font-family:Capra">Mat-ch™</span></div>
+   <div class="et e3" style="top:560px;font-family:PlayI4;font-style:italic;font-size:46px;color:#b3202a;line-height:1.25">Tiles, mats &amp; racks, together.</div>
+   <div class="et e4" style="top:670px"><span style="display:inline-block;padding:20px 40px;border-radius:50px;background:#b3202a;color:#fff;font-family:Bitter;font-weight:700;font-size:38px;letter-spacing:.03em;border:4px solid #e8c46a">Shop now · use code MAHJMATCH</span></div>
+   <div class="et e5" style="top:810px"><span style="display:inline-block;padding:18px 44px;border-radius:50px;background:#062a55;color:#fff;font-family:Bitter;font-weight:700;font-size:44px;letter-spacing:.12em">LINK IN BIO</span></div>
+   <div class="et e6" style="top:950px"><img src="logo.png" style="width:560px"></div>
+  </div>
+ </div>
+ <div id="ribbon"></div>
+ <div class="vig"></div>
+ <div id="snow" class="abs"></div>
+</div>
+<script>
+const BPM=160, B=60/BPM;  // 0.375s
+const P='file:///dev/shm/vault-tour/cap/';
+const K=660/780; // strip px -> screen px
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const eo=x=>1-Math.pow(1-cl(x),3);
+const eio=x=>{x=cl(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+const back=x=>{x=cl(x);const c1=1.9,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const lerp=(a,b,x)=>a+(b-a)*x;
+// snow + sparkles
+const R=(s=>()=>(s=(s*16807)%2147483647)/2147483647)(42);
+const flakes=[];for(let i=0;i<110;i++){const d=document.createElement('i');const r=3+R()*9;d.style.width=d.style.height=r+'px';d.style.opacity=.35+R()*.6;if(r>9)d.style.filter='blur(1.5px)';$('snow').appendChild(d);flakes.push({d,x:R()*1080,y:R()*1920,v:60+R()*120+r*8,a:10+R()*30,w:.5+R()*1.5,p:R()*6})}
+const sparks=[];for(let i=0;i<26;i++){const d=document.createElement('i');$('spark').appendChild(d);sparks.push({d,x:40+R()*1000,y:80+R()*1760,p:R()*8,s:.6+R()*1.2})}
+// cards
+const CARDS=[['dear-santa','Dear Santa (Anders Ruff) × Festive Plaid (Sunday Mahjong)',-4],['nutcracker','Nutcracker Ballet (Mahj Squad) × Candy Cane Lane (Anders Ruff)',3],['rudolph',"Rackin' Rudolph (Hip Hip Mahjong) × Classic Very Merry Mahj (Anders Ruff)",-2],['smith','Smith (Oh My Mahjong) × Hip Hip Hanukkah (Hip Hip Mahjong)',4]];
+CARDS.forEach((c,i)=>{const d=document.createElement('div');d.className='card';d.id='c'+i;d.innerHTML=`<img src="file:///dev/shm/vault-tour/cards/${c[0]}.jpg">`;$('cards').appendChild(d)});
+const ALB=['nantucket','jade','malachite','heritage-2-0','moonlight','birdie','osler','smith'];
+// preload all images
+const IMGS=['flow/seq/000.jpg','flow/seq2/072.jpg','xmas.jpg','hol.jpg','fymA.png','fymB.png','fym_tall.png'].concat(ALB.map(a=>'alb_'+a+'.jpg'));
+window.ready=Promise.all(IMGS.map(s=>new Promise(r=>{const im=new Image();im.onload=im.onerror=r;im.src=P+s}))).then(()=>document.fonts.ready);
+function setStrip(L,src,y,x=0){const im=$(L==1?'S1':'S2');if(im.dataset.s!==src){im.src=P+src;im.dataset.s=src}im.style.transform=`translate(${x}px,${-y*K}px)`}
+// scroll keyframes helper: list of [beat, y]; burst eases over dur beats
+function burst(kf,b,dur=.7){let y=kf[0][1];for(let i=1;i<kf.length;i++){const [bb,yy]=kf[i];if(b>=bb){const p=eo((b-bb)/dur);y=lerp(kf[i-1][1],yy,p)}else break}return y}
+function hd(html){if($('hd').dataset.h!==html){$('hd').innerHTML=html;$('hd').dataset.h=html}}
+function show(id,v){$(id).style.display=v?'block':'none'}
+function tag(on,x,y,rot,n,l,sc=1){const t=$('tag');t.style.display=on?'block':'none';if(!on)return;t.style.left=x+'px';t.style.top=y+'px';t.style.transform=`rotate(${rot}deg) scale(${sc})`;$('tagn').textContent=n;$('tagl').innerHTML=l}
+function pill(on,txt,y,sc=1){const p=$('pill');p.style.display=on?'block':'none';if(!on)return;p.textContent=txt;p.style.top=y+'px';p.style.transform=`translateX(-50%) scale(${sc})`}
+const DUMP=[['dump/p1_0.jpg','Dear Santa tiles · Anders Ruff'],['dump/p0_0.jpg','Candy Cane Lane mat · Anders Ruff'],['dump/p3_0.jpg','Nutcracker Ballet tiles · Mahj Squad'],['dump/p2_0.jpg',"Clara's Dream Christmas mat · Mahj Squad"],['dump/p8_0.jpg',"Rackin' Rudolph tiles · Hip Hip Mahjong"],['dump/p6_3.jpg','Festive Plaid mat · Sunday Mahjong'],['dump/p5_3.jpg','Nivalee tiles · Virora Mahjong'],['dump/p7_1.jpg',"Holly Jolly tiles · Bam! Let's Mahjong"]];
+const FL='flow/';
+['flow/seq/000.jpg','flow/seq/015.jpg','flow/seq/016.jpg','flow/seq/071.jpg','flow/seq2/072.jpg','flow/seq2/073.jpg'].concat([16,17,29,30,32,42,43,45,55].map(k=>'flow/seq3/'+String(k).padStart(3,'0')+'.jpg')).forEach(s=>{const im=new Image();im.src=P+s});
+DUMP.forEach(d=>{const im=new Image();im.src='file:///dev/shm/vault-tour/'+d[0]});
+function lbls(arr){const h=arr.map(a=>`<div class="lb" style="left:${a[1]}px;top:${a[2]}px;transform:translateX(-50%) rotate(${a[3]||0}deg) scale(${a[4]==null?1:a[4]})">${a[0]}</div>`).join('');if($('lbls').dataset.h!==h){$('lbls').innerHTML=h;$('lbls').dataset.h=h}}
+const SX=188+22, SY=226+22; // screen origin on stage
+const sx=x=>SX+x*K, sy=y=>SY+y*K;
+window.render=function(t){
+ const b=t/B;
+ flakes.forEach(f=>{const y=(f.y+t*f.v)%1960-20;const x=f.x+Math.sin(t*f.w+f.p)*f.a;f.d.style.transform=`translate(${x}px,${y}px)`});
+ sparks.forEach(s=>{const k=Math.max(0,Math.sin(t*2.2*s.s+s.p));s.d.style.transform=`translate(${s.x}px,${s.y}px) scale(${.2+k*1.4}) rotate(${t*40}deg)`;s.d.style.opacity=k});
+ const ph=b-Math.floor(b); const pulse=1+.016*Math.exp(-ph*6);
+ let camS=1,camX=540,camY=960,camTx=0,camTy=0;
+ let phoneY=0,phoneS=1;
+ $('box').style.display='none'; $('boxfront').style.display='none'; show('phone',1);
+ show('cards',0); show('cardlbl',0); show('banner',0); tag(0); pill(0); show('end',0); show('tap',0); show('fymhdr',0); show('dump',0); show('fly',0);
+ $('L2').style.display='none'; $('L1').style.display='block'; $('L1').style.transform='none'; $('L2').style.transform='none'; $('L1').style.opacity=1; $('L1').style.zIndex=2;$('L2').style.zIndex=1;
+ $('ribbon').style.display='none';
+ let hdh='', L=[];
+ const wipe=(b0,dir)=>{ if(b>=b0&&b<b0+1.0){ $('ribbon').style.display='block'; const p=eio((b-b0)/1.0); $('ribbon').style.transform=dir>0?`rotate(-28deg) translate(${lerp(-900,2700,p)}px,0)`:`rotate(28deg) translate(${lerp(2700,-900,p)}px,0)`; } };
+ const tapAt=(x,y,b0)=>{ if(b>=b0-.3&&b<b0+.9){ show('tap',1); const tp=cl((b-b0)/.35); const s=b<b0?.6:lerp(1.3,.8,tp); $('tap').style.transform=`translate(${x-45}px,${y-45}px) scale(${s})`; $('tap').style.opacity=b<b0+.4?1:1-cl((b-b0-.4)/.5);} };
+ // ===== S1 gift box 0-8 =====
+ if(b<9.2){
+   const lidUp=eo((b-5.75)/.8), rise=back((b-6.3)/1.6);
+   $('boxfront').style.display='block';
+   const boxDrop=eio((b-7.4)/1.4)*900;
+   $('boxfront').style.transform=`translateY(${boxDrop}px)`;
+   $('bow').style.transform=`scale(${b<4?1+.08*Math.exp(-((b%1))*5):1}) rotate(${b>4?eo((b-4)/1.5)*-8:0}deg)`;
+   $('lid').style.transform=`translate(${lidUp*260}px,${-lidUp*1500}px) rotate(${lidUp*38}deg)`;
+   phoneY=b<6.25?99999:lerp(900,0,rise); phoneS=lerp(.82,1,rise);
+   const w=(i)=>{const p=back((b-i)/.45);return `opacity:${cl((b-i)/.15)};transform:scale(${lerp(1.7,1,p)})`};
+   const fade=1-cl((b-6.2)/.6);
+   hdh=`<div style="top:40px;opacity:${fade}">
+     <div style="top:0;opacity:${b<4?1:1-eo((b-4)/.4)}"><span style="font-family:PlayI;font-style:italic;font-size:96px;color:#fbf3e4;${w(0)};display:inline-block">Psst…</span></div>
+     <div style="top:130px;opacity:${b<4?1:1-eo((b-4)/.4)}"><span class="bit" style="font-size:42px;color:#e8c46a;${w(2)};display:inline-block">we've been hiding something</span></div>
+     <div class="cap" style="top:-10px;font-size:118px;${w(4)}">The Holiday</div>
+     <div class="cap" style="top:105px;font-size:210px;${w(5)}">Vault</div>
+     <div class="cap" style="top:310px;font-size:118px;${w(5.6)}">is open.</div></div>`;
+   setStrip(1,'xmas.jpg',0);
+ }
+ // ===== S2 Christmas mats page 8-13 =====
+ if(b>=6&&b<13.4){
+   const kf=[[8,0],[9,1500],[10,3300],[11,5100],[12,6900]];
+   setStrip(1,'xmas.jpg',burst(kf,b,.55));
+   if(b>=8){ camS=1+.08*cl((b-8)/5); camY=900; }
+   if(b>=8.3){ tag(1,736,250,7,Math.round(cl((b-8.5)/4.3)*40),'Christmas &amp; winter mats',back((b-8.3)/.5)); pill(1,'mahjmatchmaker.com/christmas-mahjong-mats',1508,back((b-8.5)/.5)); }
+ }
+ // ===== S3 holiday matches page 13-20 =====
+ if(b>=12.6&&b<20.5){
+   const flip=eio((b-12.75)/.7);
+   $('L2').style.display='block';
+   const kf=[[13,0],[16.3,2450],[17.3,3500],[18.3,4700],[19.3,6150]];
+   setStrip(2,'hol.jpg',burst(kf,b,.55));
+   if(flip<1){ setStrip(1,'xmas.jpg',6900); $('L1').style.zIndex=3; $('L1').style.transformOrigin='0 50%'; $('L1').style.transform=`perspective(1600px) rotateY(${-flip*100}deg)`; $('L1').style.opacity=1-cl((flip-.7)/.3);} else $('L1').style.display='none';
+   const z=b<14.3?0:(b<15.9?back((b-14.3)/.5):1-eio((b-15.9)/.5));
+   if(z>0){ camS=1+.5*z; camX=540; camY=sy(1265); camTy=(900-camY)*z; }
+   if(b>=14.4&&b<16.1) pill(1,'400+ holiday matches & counting',1530,back((b-14.4)/.4));
+   if(b>=13.3&&b<14.3) pill(1,'mahjmatchmaker.com/holiday-mahjong-matches',1508,back((b-13.3)/.5));
+   if(b>=16.6&&b<20.2) tag(1,736,300,-6,Math.round(cl((b-16.6)/1.4)*11),'new holiday tile sets',back((b-16.6)/.5));
+ }
+ // ===== S4 photo dump 20-28 =====
+ if(b>=19.6&&b<28.4){
+   wipe(19.6,1);
+   if(b>=20.1){ show('phone',0); tag(0); pill(0); show('dump',1);
+     const i=Math.min(7,Math.max(0,Math.floor(b-20))); const f=b-20-i;
+     const im=$('dumpim'); const src='file:///dev/shm/vault-tour/'+DUMP[i][0]; if(im.dataset.s!==src){im.src=src;im.dataset.s=src;$('dumpbg').src=src}
+     $('pol').style.transform=`rotate(${(i%2?3:-3)*(1-.4*eo(f/.3))}deg) scale(${lerp(1.25,1,back(f/.3))+.03*f})`;
+     $('flash').style.opacity=.55*Math.exp(-f*9);
+     L=[[DUMP[i][1],540,1400,i%2?2:-2,back(f/.3)]];
+   }
+ }
+ // ===== S5 in-app 28-42 =====
+ if(b>=27.6&&b<42.4){
+   wipe(27.6,-1);
+   if(b>=28.1){
+     show('dump',0);
+     let img='flow/seq/000.jpg';
+     if(b<30){ img='flow/seq/000.jpg'; }
+     else if(b<31.4){ img='flow/seq/015.jpg'; }
+     else if(b<33){ img='flow/seq/016.jpg'; }
+     else if(b<33.6){ img='flow/seq3/016.jpg'; }
+     else if(b<33.75){ img='flow/seq3/017.jpg'; }
+     else if(b<34.8){ img='flow/seq3/029.jpg'; }
+     else if(b<34.95){ img='flow/seq3/032.jpg'; }
+     else if(b<36){ img='flow/seq3/042.jpg'; }
+     else if(b<36.15){ img='flow/seq3/043.jpg'; }
+     else if(b<37){ img='flow/seq3/055.jpg'; }
+     else if(b<38.4){ img='flow/seq/071.jpg'; }
+     else if(b<40.2){ img='flow/seq2/072.jpg'; }
+     else img='flow/seq2/073.jpg';
+     let y=0; if(img.endsWith('072.jpg')) y=burst([[38.4,0],[39.2,380]],b,.6);
+     setStrip(1,img,y);
+     // mat heart: fly overlay of the Candy Cane Lane card from frame 000
+     if(b>=30&&b<31.4){ const fl=$('fly'); show('fly',1); const p=eio((b-30)/.9);
+       fl.style.left=(24*K)+'px'; fl.style.top=(580*K)+'px'; fl.style.width=(732*K)+'px'; fl.style.height=(820*K)+'px';
+       fl.style.backgroundImage=`url(${P}flow/seq/000.jpg)`; fl.style.backgroundSize='660px auto'; fl.style.backgroundPosition=`${-24*K}px ${-580*K}px`;
+       fl.style.transform=`translate(${p*820}px,${p*120}px) rotate(${p*22}deg)`; $('stamp').style.opacity=cl((b-30)/.15); }
+     // camera: zoom on tiles+mat, then on the rack card + mat, then card
+     let zc=[1.32,sy(760)];
+     if(b>=31.4&&b<33) zc=[1.3,sy(560)];
+     if(b>=33&&b<37) zc=[1.28,sy(560)];
+     if(b>=37&&b<38.4) zc=[1.3,sy(1400)];
+     if(b>=38.4) zc=[1.22+.1*cl((b-38.4)/3.5),sy(900)];
+     const zin=back((b-28.1)/.6);
+     camS=lerp(1,zc[0],zin); camX=540; camY=zc[1]; camTy=(960-zc[1])*zin;
+     const my=v=>camTy+camY+(v-camY)*camS;
+     if(b<30){ L=[['Dear Santa tiles · Anders Ruff',540,Math.max(300,my(sy(330))),-2,back((b-28.5)/.4)],['Candy Cane Lane mat · Anders Ruff',540,Math.min(1480,my(sy(1300))),2,back((b-28.9)/.4)]]; }
+     tapAt(sx(690),sy(1000),29.75);
+     tapAt(sx(390),sy(1220),32.4);
+     tapAt(sx(312),sy(1520),33.4);
+     tapAt(sx(465),sy(1520),34.5);
+     tapAt(sx(465),sy(1520),35.7);
+     tapAt(sx(630),sy(1570),37.7);
+     if(b>=33&&b<37.2) L=[['Racks: Bird & Bamboo',540,330,-2,back((b-33)/.4)]];
+     if(b>=38.6) L=[["Your match card, made in Find Your Mat-ch™",540,1460,0,back((b-38.6)/.4)]];
+   }
+ }
+ // ===== S6 cards 42-46 =====
+ if(b>=41.6&&b<46.6){
+   setStrip(1,'flow/seq2/073.jpg',0);
+   show('cards',1); phoneS=1-.06*eo((b-41.6)/.5);
+   let last=-1;
+   CARDS.forEach((c,k)=>{const d=$('c'+k);const s=back((b-42-k)/.45);const vis=b>=42+k;d.style.display=vis?'block':'none';if(!vis)return;last=k;
+     const sc=lerp(.25,1,s), ty=lerp(250,0,eo((b-42-k)/.35));d.style.transform=`translateY(${ty}px) rotate(${c[2]*s}deg) scale(${sc})`;d.style.opacity=cl((b-42-k)/.12)});
+   if(last>=0){ show('cardlbl',1); $('cardlbltx').textContent=CARDS[last][1]; }
+   hdh=`<div class="cap" style="top:20px;font-size:70px;opacity:${cl((b-42)/.2)}">400+ holiday matches</div>`;
+ }
+ // ===== S7 albums 46-50 =====
+ if(b>=46&&b<50.6){
+   const A=['nantucket','jade','malachite','smith']; const i=Math.min(3,Math.floor(b-46)); const f=b-46-i;
+   setStrip(1,'alb_'+A[i]+'.jpg',40+f*260);
+   if(i>0){ $('L2').style.display='block'; setStrip(2,'alb_'+A[i-1]+'.jpg',300); $('L1').style.transform=`translateY(${(1-eo(f/.22))*1428}px)`; }
+   camS=1.12; camY=sy(500); camTy=(900-camY);
+   tag(1,736,250,6,Math.round(cl((b-46)/3.2)*34),'tile set albums with a holiday section',back((b-46)/.5));
+ }
+ // ===== S8 FYM holiday grid 50-57 =====
+ if(b>=49.6&&b<57.4){
+   wipe(49.6,1);
+   if(b>=50.1){
+     if(b<51.2) setStrip(1,'fymA.png',0);
+     else { const kf=[[51.2,528],[52.3,1700],[53.3,3300],[54.3,4900],[55.3,6500],[56.3,8100]]; const y=burst(kf,b,.55); setStrip(1, b<51.5?'fymB.png':'fym_tall.png', b<51.5?0:y); if(b>=51.5) show('fymhdr',1); }
+     show('banner',1); $('banner').style.transform=`scale(${back((b-50.2)/.5)})`;
+     const chipX=sx(642), chipY=sy(694);
+     tapAt(chipX,chipY,50.8);
+     const z=b<50.8?0:(b<52?back((b-50.8)/.4):1-eio((b-52)/.5)*.6);
+     camS=1+.45*z; camX=chipX; camY=chipY;
+     if(b>=51.6) tag(1,736,440,-5,Math.round(cl((b-51.6)/4.5)*156),'holiday mats to swipe',back((b-51.6)/.5));
+   }
+ }
+ // ===== S9 end 57-66 =====
+ if(b>=56.6){
+   wipe(56.6,-1);
+   if(b>=57.1){
+     show('phone',0); show('banner',0); tag(0); pill(0); hdh=''; L=[];
+     show('end',1);
+     const sw=Math.sin((b-57)*1.2)*Math.exp(-(b-57)*.35)*6, drop=back((b-57.1)/.8);
+     $('endtag').style.transform=`translateY(${lerp(-1500,0,drop)}px) rotate(${sw}deg)`;
+     $('string').style.transform=`translateY(${lerp(-1500,0,drop)}px)`;
+     const e=(cls,bb)=>{const el=document.querySelector('#endtag .'+cls);const p=back((b-bb)/.45);el.style.opacity=cl((b-bb)/.12);el.style.transform=`scale(${lerp(1.5,1,p)})`};
+     e('e1',58);e('e2',59);e('e3',60);e('e4',61);e('e5',62);e('e6',63);
+   }
+ }
+ hd(hdh); lbls(L);
+ $('cam').style.transform = (camS!==1||camTy)?`translate(0px,${camTy}px) translate(${camX}px,${camY}px) scale(${camS}) translate(${-camX}px,${-camY}px)`:'none';
+ $('phone').style.transform=`translateY(${phoneY}px) scale(${phoneS*(b>8&&b<57?pulse:1)})`;
+};
+
+</script></body></html>
