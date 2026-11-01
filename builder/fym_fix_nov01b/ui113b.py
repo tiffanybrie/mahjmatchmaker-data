@@ -22,7 +22,7 @@ rep("const g=setsForMat(S.dmat);let A=[...g.her,...g.alb,...g.cat];", "const g=s
 rep("const hits=Object.keys(R).filter(id=>{const s=NRM(", "const hits=Object.keys(R).filter(id=>{if(!R[id]||R[id].hid)return false;const s=NRM(")
 # 3
 rep("const p=$('prev');if(p&&job===cardJob)p.innerHTML=cardURL?`<img src=\"${cardURL}\" alt=\"Your ${esc(s.name)} match card\">`",
-    "const p=$('prev');if(p&&job===cardJob){if(p.offsetHeight>40)p.style.minHeight=p.offsetHeight+'px';setTimeout(()=>{p.style.minHeight='';},700);}if(p&&job===cardJob)p.innerHTML=cardURL?`<img src=\"${cardURL}\" width=\"${cv.width}\" height=\"${cv.height}\" style=\"height:auto\" alt=\"Your ${esc(s.name)} match card\">`")
+    "const p=$('prev');if(p&&job===cardJob)setTimeout(()=>{if(TOUR.on&&(TSTEPS[TOUR.step]||{}).k==='share'){TOUR.repos=1;tourPaint();}},40);/*v113b: tip re-placed after the card redraws*/if(p&&job===cardJob)p.innerHTML=cardURL?`<img src=\"${cardURL}\" width=\"${cv.width}\" height=\"${cv.height}\" style=\"height:auto\" alt=\"Your ${esc(s.name)} match card\">`")
 rep("{k:'share',t:'Step 8 · Save or share',", "{k:'share',wait:()=>{const p=$('prev');if(!p)return true;const i=p.querySelector('img');return !!(i&&i.complete&&i.naturalHeight&&p.offsetHeight>40)||/Couldn/.test(p.textContent);},t:'Step 8 · Save or share',")
 rep("let c=$('coach');if(!TOUR.on){if(c)c.remove();return;}",
     "let c=$('coach');if(!TOUR.on){if(c)c.remove();return;}const rp=TOUR.repos;TOUR.repos=0;{const s0=TSTEPS[TOUR.step];if(s0&&s0.wait){if(!s0.wait()&&(TOUR.wt=(TOUR.wt||0)+1)<50){clearTimeout(TOUR.wtT);TOUR.wtT=setTimeout(()=>{TOUR.repos=1;tourPaint();},100);}else if(TOUR.wt){TOUR.wt=0;clearTimeout(TOUR.wtT);TOUR.wtT=setTimeout(()=>{TOUR.repos=1;tourPaint();},60);}}}")
@@ -37,7 +37,7 @@ rep("`;})()}`;}\nfunction card(id,k,back){",
 rep("if(!f.brand)ids=BCAP(ids,r=>hr.includes(r),r=>R[r].bn);", "if(f.fin)ids=ids.filter(r=>RFIN(r).includes(f.fin));")
 rep("ids.splice(ia,1);ids.splice(HB,0,A);}}return ids;}\nfunction queue(k){", "ids.splice(ia,1);ids.splice(HB,0,A);}}/*v113b: cap last, after the photo/tortoise reorders*/if(!f.brand)ids=BCAP(ids,r=>hr.includes(r),r=>R[r].bn);return ids;}\nfunction queue(k){")
 rep("if((b=q('.frow [data-fam]'))||(b=q('[data-fam=\"holiday\"]'))){", "if(b=q('[data-fin]')){const f=S.f.r;f.fin=f.fin===b.dataset.fin?'':b.dataset.fin;rerender('r');return;}if(q('[data-finclear]')){S.f.r.fin='';rerender('r');return;}if((b=q('.frow [data-fam]'))||(b=q('[data-fam=\"holiday\"]'))){")
-i = h.index('</style>'); h = h[:i] + '.finrow{margin-top:6px}.finrow .fl{font:700 11px var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin-right:4px}' + h[i:]
+i = h.index('</style>'); h = h[:i] + '.frow.finrow{margin:6px -12px 0;padding:2px 12px;flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}.finrow .fl{font:700 11px var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin-right:4px}' + h[i:]
 # 7
 rep("return [...new Set(r),...set().m.map(x=>x[0]).filter(id=>M[id]&&!M[id].hid&&!s.has(id))];}",
     "const out=[...new Set(r),...set().m.map(x=>x[0]).filter(id=>M[id]&&!M[id].hid&&!s.has(id))];/*v113b: retired works-for-holiday mats (Dapper 1 + 2) close the deck for holiday tile sets*/if(new Set(BACKG.Holiday||[]).has(set().name)){const o=new Set(out);out.push(...Object.keys(M).filter(id=>M[id].rt&&M[id].wfh&&!M[id].hid&&!o.has(id)));}return out;}")
