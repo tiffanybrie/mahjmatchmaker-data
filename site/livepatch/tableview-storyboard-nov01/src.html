@@ -111,6 +111,51 @@ h2{font:400 24px/1.15 var(--display);color:var(--navy);margin:0 0 4px;text-wrap:
 .shop .it .t{flex:1;font:600 8px/1.25 var(--body)}
 .shop .it .t small{display:block;color:var(--a-mute);font-weight:400;font-size:7px}
 .code{font:700 8px/1 var(--body);letter-spacing:.06em;text-align:center;color:var(--a-pink);background:var(--a-pink2);padding:6px;border-radius:6px}
+/* swap sheet: the same filter bar the app uses */
+.sheet.half{top:46%;gap:6px;padding-top:5px}
+.sheet.half>*{flex:none}
+.shd{display:flex;align-items:center;gap:8px}
+.shd h4{flex:none}
+.shd .seg{flex:1}
+.srch{display:flex;align-items:center;gap:5px;border:1px solid var(--a-line);border-radius:999px;padding:5px 9px;font:400 8.5px/1 var(--body);color:var(--a-mute);background:#fff}
+.srch svg{width:9px;height:9px;flex:none}
+.fbar{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.sel{display:inline-flex;align-items:center;gap:4px;font:600 8px/1 var(--body);padding:5px 8px;border-radius:6px;border:1px solid var(--a-line);background:#fff;color:var(--a-ink);white-space:nowrap}
+.sel b{font-weight:600;color:var(--a-mute)}
+.tg{display:inline-flex;align-items:center;gap:4px;font:600 8px/1 var(--body);color:var(--a-ink);white-space:nowrap}
+.tg i{position:relative;width:20px;height:11px;border-radius:999px;background:#d9cbd6;flex:none}
+.tg i::after{content:"";position:absolute;top:1.5px;left:1.5px;width:8px;height:8px;border-radius:50%;background:#fff}
+.tg.on i{background:var(--a-pink)}
+.tg.on i::after{left:10.5px}
+.dots{display:flex;align-items:center;gap:5px}
+.dots .chip{padding:4px 7px}
+.sheet .chiprow .chip{padding:4px 7px}
+.dots i{width:14px;height:14px;border-radius:50%;flex:none;border:1px solid rgba(0,0,0,.08)}
+.dots i.on{outline:2px solid var(--a-navy);outline-offset:1.5px}
+.thumbs div{position:relative}
+.thumbs .hp{position:absolute;top:3px;right:3px;width:13px;height:13px;border-radius:50%;background:#fff;color:var(--a-flame);font:700 8px/13px var(--body);text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.thumbs .rk{width:52px;height:52px;border-radius:8px;display:grid;place-items:center;background:#f6f1f4;margin-bottom:3px;border:2px solid transparent;padding:3px}
+.thumbs .rk img{width:100%;height:auto;max-height:100%;object-fit:contain;border:0;border-radius:2px;margin:0}
+.thumbs .on .rk{border-color:var(--a-navy)}
+.scr .hint,.dside .hint{font:400 7.5px/1.3 var(--body);color:var(--a-mute);margin:0;max-width:none}
+.hint b{color:var(--a-pink);font-weight:700}
+.drop{position:relative}
+.dpanel{border:1px solid var(--a-line);border-radius:8px;background:#fff;box-shadow:0 6px 16px rgba(30,20,40,.14);padding:5px}
+.logos{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.logos span{position:relative;display:grid;place-items:center;height:24px;overflow:visible;border:1px solid var(--a-line);border-radius:5px;background:#fff;padding:2px 3px}
+.logos img{height:16px;width:auto;max-width:100%;object-fit:contain}
+.logos span::after{content:"♥";position:absolute;top:-4px;right:-3px;font:700 7px/1 var(--body);color:var(--a-flame)}
+.logos span.on{border-color:var(--a-navy);box-shadow:0 0 0 1px var(--a-navy)}
+.blist{display:flex;flex-direction:column;font:600 8px/1 var(--body)}
+.blist span{padding:4px 5px;border-radius:4px;display:flex;justify-content:space-between;gap:6px}
+.blist span.on{background:var(--a-pink2)}
+.blist em{font-style:normal;color:var(--a-flame)}
+.pair{display:flex;flex-wrap:wrap;gap:16px}
+@media (min-width:640px){.frame.wide{grid-column:span 2}}
+.dside .srch,.dside .sel,.dside .tg{font-size:clamp(7px,.9vw,10.5px)}
+.dside .thumbs div{width:clamp(36px,4.4vw,52px);font-size:clamp(6px,.75vw,8px)}
+.dside .thumbs img{width:100%;height:auto;aspect-ratio:1}
+.dside .dots i{width:clamp(10px,1.2vw,14px);height:clamp(10px,1.2vw,14px)}
 .zoomwrap{position:relative;margin:8px 8px 0;border-radius:6px;overflow:hidden;aspect-ratio:1/1}
 .zoomwrap img{position:absolute;width:100%;height:100%;object-fit:cover}
 
@@ -212,7 +257,7 @@ footer{margin-top:44px;font-size:13px;color:var(--mute);max-width:70ch}
             <div class="row">Walls<div class="seg"><span class="on">On</span><span>Off</span></div></div>
             <div class="row">Racks<div class="seg"><span>1</span><span>2</span><span>3</span><span class="on">4</span></div></div>
             <div class="row">Rack color<div class="sw"><span class="on"><i style="background:#d18cdd"></i>Lilac</span><span><i style="background:#b9a6fc"></i>Lavender</span></div></div>
-            <div class="row"><span class="btn ghost" style="flex:1">Swap tiles</span><span class="btn ghost" style="flex:1">Swap mat</span></div>
+            <div class="row">Swap<div class="seg"><span>Tiles</span><span>Mat</span><span>Racks</span></div></div>
           </div>
         </div>
         <span class="home"></span>
@@ -299,31 +344,97 @@ footer{margin-top:44px;font-size:13px;color:var(--mute);max-width:70ch}
       <p>Tap a swatch and the racks change in place. The sample stays at two colors; more get added once the look is right.</p>
     </div>
 
-    <!-- 8 -->
+    <!-- 8a -->
     <div class="frame">
-      <div class="num">Screen 8 · swap</div>
-      <button class="tap" type="button" data-cap="8 · Swap tiles or mat, settings stay">
+      <div class="num">Screen 8a · swap the mat</div>
+      <button class="tap" type="button" data-cap="8a · Swap the mat with the same tools as everywhere">
       <div class="phone"><div class="scr">
         <div class="sb"><span>9:41</span><span>●●● ▮</span></div>
         <div class="top"><span class="back">‹ Back</span><span class="ttl">Table view</span><span class="ico">⤴</span></div>
         <div class="body">
-          <div class="table dim"><img src="{{lilac-walls}}" alt=""></div>
-          <div class="sheet">
+          <div class="table"><img src="{{lilac-walls}}" alt="Full table stays visible above the sheet"><div class="inset"><img src="{{tiles-papaya}}" alt=""></div></div>
+          <div class="sheet half">
             <div class="grab"></div>
-            <div class="seg"><span class="on">Swap tiles</span><span>Swap mat</span></div>
+            <div class="shd"><h4>Swap</h4><div class="seg"><span>Tiles</span><span class="on">Mat</span><span>Racks</span></div></div>
+            <div class="srch"><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="5" cy="5" r="3.6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M7.7 7.7 11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Search mats by name</div>
+            <div class="fbar"><span class="sel">All brands ▾</span><span class="chip">In stock only</span><span class="tg on"><i></i>Tiffany’s picks</span></div>
+            <div class="dots"><span class="chip on">All</span><i style="background:#ef7aa0"></i><i style="background:#f08a3c"></i><i style="background:#f2d24b"></i><i style="background:#8fcf4f"></i><i style="background:#5b9bd5"></i><i style="background:#a389be"></i></div>
             <div class="thumbs">
-              <div class="on"><img src="{{tiles-papaya}}" alt="">Papaya Spritz</div>
-              <div><img src="{{tiles-naturewalk}}" alt="">Nature Walk</div>
-              <div><span class="ph"></span>Your matches</div>
-              <div><span class="ph"></span>More…</div>
+              <div class="on"><img src="{{mt-fruitstand}}" alt="Fruit Stand mat"><span class="hp">♥</span>Fruit Stand</div>
+              <div><img src="{{mt-heiress}}" alt="Heiress mat"><span class="hp">♥</span>Heiress</div>
+              <div><img src="{{mt-pressfor}}" alt="Press for Mahjong mat"><span class="hp">♥</span>Press for Mahjong</div>
+              <div><img src="{{mt-greenly}}" alt="Greenly mat"><span class="hp">♥</span>Greenly</div>
+              <div><img src="{{mt-danay}}" alt="Danay mat"><span class="hp">♥</span>Danay</div>
             </div>
-            <div class="note" style="margin:0">Your matches for this mat come first. Rack color, walls and view stay as you set them.</div>
+            <p class="hint"><b>♥</b> Tiffany’s matches for Papaya Spritz come first. Walls, racks and zoom stay.</p>
+          </div>
+          <span class="finger" style="left:78px;top:356px"></span>
+        </div>
+        <span class="home"></span>
+      </div></div></button>
+      <h3>Swap the mat, same tools as everywhere</h3>
+      <p>The sheet covers only the bottom, so the table above changes as you tap. Search, Brand (♥ = partner), color, In stock only and Tiffany’s picks work just like the rest of the app.</p>
+    </div>
+
+    <!-- 8b -->
+    <div class="frame wide">
+      <div class="num">Screen 8b · swap the tiles or racks</div>
+      <div class="pair">
+      <button class="tap" type="button" data-cap="8b · Tiles tab: search, brand logos, color">
+      <div class="phone"><div class="scr">
+        <div class="sb"><span>9:41</span><span>●●● ▮</span></div>
+        <div class="top"><span class="back">‹ Back</span><span class="ttl">Table view</span><span class="ico">⤴</span></div>
+        <div class="body">
+          <div class="table"><img src="{{lilac-walls}}" alt="Full table stays visible above the sheet"><div class="inset"><img src="{{tiles-papaya}}" alt=""></div></div>
+          <div class="sheet half">
+            <div class="grab"></div>
+            <div class="shd"><h4>Swap</h4><div class="seg"><span class="on">Tiles</span><span>Mat</span><span>Racks</span></div></div>
+            <div class="srch"><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="5" cy="5" r="3.6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M7.7 7.7 11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Search tile sets</div>
+            <div class="fbar"><span class="sel">Brands ▴</span><span class="chip">In stock only</span><span class="tg on"><i></i>Tiffany’s picks</span></div>
+            <div class="dpanel logos">
+              <span class="on"><img src="{{lg-omm}}" alt="Oh My Mahjong"></span><span><img src="{{lg-virora}}" alt="Virora Mahjong"></span><span><img src="{{lg-bespoke}}" alt="Bespoke Mahjong"></span><span><img src="{{lg-myfair}}" alt="My Fair Mahjong"></span>
+              <span><img src="{{lg-bambird}}" alt="Bam Bird Boutique"></span><span><img src="{{lg-bam}}" alt="Bam! Let's Mahjong"></span><span><img src="{{lg-miss}}" alt="Miss Mahjong"></span><span><img src="{{lg-ymi}}" alt="Yellow Mountain Imports"></span>
+            </div>
+            <div class="dots"><span class="chip on">All</span><i style="background:#ef7aa0"></i><i style="background:#f08a3c"></i><i style="background:#f2d24b"></i><i style="background:#8fcf4f"></i><i style="background:#5b9bd5"></i><i style="background:#a389be"></i></div>
+            <div class="thumbs">
+              <div class="on"><img src="{{tl-papaya}}" alt="Papaya Spritz tiles"><span class="hp">♥</span>Papaya Spritz</div>
+              <div><img src="{{tl-solara}}" alt="Solara tiles"><span class="hp">♥</span>Solara</div>
+              <div><img src="{{tl-pippa}}" alt="Pippa tiles"><span class="hp">♥</span>Pippa</div>
+              <div><img src="{{tl-limoncello}}" alt="Limoncello tiles">Limoncello</div>
+            </div>
           </div>
         </div>
         <span class="home"></span>
       </div></div></button>
-      <h3>Swap the tiles or the mat</h3>
-      <p>Your matches for this mat come first, then everything else. Swap mat only lists mats with a passing top-down photo for Full table.</p>
+      <button class="tap" type="button" data-cap="8b · Racks tab: color, finish and brand; only racks that fit">
+      <div class="phone"><div class="scr">
+        <div class="sb"><span>9:41</span><span>●●● ▮</span></div>
+        <div class="top"><span class="back">‹ Back</span><span class="ttl">Table view</span><span class="ico">⤴</span></div>
+        <div class="body">
+          <div class="table"><img src="{{lilac-walls}}" alt="Full table stays visible above the sheet"><div class="inset"><img src="{{tiles-papaya}}" alt=""></div></div>
+          <div class="sheet half">
+            <div class="grab"></div>
+            <div class="shd"><h4>Swap</h4><div class="seg"><span>Tiles</span><span>Mat</span><span class="on">Racks</span></div></div>
+            <div class="chiprow" style="margin:0"><span class="chip">Purple</span><span class="chip">Green</span><span class="chip">Wood</span><span class="chip">Tortoise</span><span class="chip">Clear</span></div>
+            <div class="drop"><span class="sel">All brands ▴</span>
+              <div class="dpanel blist" style="margin-top:4px">
+                <span class="on">All brands</span><span>Bird &amp; Bamboo <em>♥</em></span><span>Peace Love Mahjong <em>♥</em></span>
+              </div>
+            </div>
+            <div class="thumbs">
+              <div class="on"><span class="rk"><img src="{{rack-lilac}}" alt="Bird &amp; Bamboo lilac rack"></span>B&amp;B Lilac</div>
+              <div><span class="rk"><img src="{{rack-lavender}}" alt="Bird &amp; Bamboo lavender rack"></span>B&amp;B Lavender</div>
+              <div><span class="rk"><img src="{{rk-plm-chartreuse}}" alt="Peace Love Mahjong chartreuse rack"></span>PLM Chartreuse</div>
+              <div><span class="rk"><img src="{{rk-mm-beechwood}}" alt="Middle &amp; Main scalloped beechwood rack"></span>M&amp;M Beechwood</div>
+            </div>
+            <p class="hint">Only racks that fit Papaya Spritz tiles are listed.</p>
+          </div>
+        </div>
+        <span class="home"></span>
+      </div></div></button>
+      </div>
+      <h3>Swap the tiles or the racks</h3>
+      <p>Same sheet, three tabs. Tiles: search, brand logos, color. Racks: color and finish chips plus Brand, and only racks that fit the tile size.</p>
     </div>
 
     <!-- 9 -->
@@ -377,7 +488,7 @@ footer{margin-top:44px;font-size:13px;color:var(--mute);max-width:70ch}
   <section class="desk">
     <div class="num" style="font:700 11px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--mute)">Screen 11 · desktop</div>
     <h2>On a computer: table left, controls right</h2>
-    <p class="lede">Same controls, no sliding sheet. The Adjust panel is always open beside the table, and Shop the look sits at the bottom of it.</p>
+    <p class="lede">Same controls, no sliding sheet. The panel is always open beside the table: search, Brand, color, In stock only and Tiffany’s picks sit right above the swap thumbnails, and Shop the look is at the bottom.</p>
     <button class="tap" type="button" data-cap="11 · Desktop: the panel stays open" style="border-radius:14px;width:100%">
     <div class="laptop"><div class="lscr"><div class="dapp">
       <div class="dtop"><span class="back">‹ Back to matches</span><span class="ttl">Table view · Papaya Spritz × Fruit Stand</span><span class="chip">Share ⤴</span></div>
@@ -389,7 +500,17 @@ footer{margin-top:44px;font-size:13px;color:var(--mute);max-width:70ch}
           <div class="row">Walls<div class="seg"><span class="on">On</span><span>Off</span></div></div>
           <div class="row">Racks<div class="seg"><span>1</span><span>2</span><span>3</span><span class="on">4</span></div></div>
           <div class="row">Rack color<div class="sw"><span class="on"><i style="background:#d18cdd"></i>Lilac</span><span><i style="background:#b9a6fc"></i>Lavender</span></div></div>
-          <div class="row"><span class="btn ghost" style="flex:1">Swap tiles</span><span class="btn ghost" style="flex:1">Swap mat</span></div>
+          <div class="shd"><h4>Swap</h4><div class="seg"><span>Tiles</span><span class="on">Mat</span><span>Racks</span></div></div>
+          <div class="fbar"><span class="srch" style="flex:1"><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="5" cy="5" r="3.6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M7.7 7.7 11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Search mats by name</span><span class="sel">All brands ▾</span></div>
+          <div class="fbar"><div class="dots"><span class="chip on">All</span><i style="background:#ef7aa0"></i><i style="background:#f08a3c"></i><i style="background:#f2d24b"></i><i style="background:#8fcf4f"></i><i style="background:#5b9bd5"></i><i style="background:#a389be"></i></div><span class="chip">In stock only</span><span class="tg on"><i></i>Tiffany’s picks</span></div>
+          <div class="thumbs">
+            <div class="on"><img src="{{mt-fruitstand}}" alt="Fruit Stand mat"><span class="hp">♥</span>Fruit Stand</div>
+            <div><img src="{{mt-heiress}}" alt="Heiress mat"><span class="hp">♥</span>Heiress</div>
+            <div><img src="{{mt-pressfor}}" alt="Press for Mahjong mat"><span class="hp">♥</span>Press for Mahjong</div>
+            <div><img src="{{mt-greenly}}" alt="Greenly mat"><span class="hp">♥</span>Greenly</div>
+            <div><img src="{{mt-danay}}" alt="Danay mat"><span class="hp">♥</span>Danay</div>
+            <div><img src="{{mt-tangelo}}" alt="Tangelo Delphine mat"><span class="hp">♥</span>Tangelo Delphine</div>
+          </div>
           <h4>Shop the look</h4>
           <div class="chiprow" style="margin:0"><span class="chip">Papaya Spritz · Oh My Mahjong</span><span class="chip">Fruit Stand · Middle &amp; Main</span><span class="chip">Racks · Bird &amp; Bamboo</span></div>
           <div class="row"><span class="btn pk" style="flex:1">♥ Save to my match card</span><span class="code" style="flex:1">Code MAHJMATCH</span></div>
