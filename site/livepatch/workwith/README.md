@@ -1,4 +1,46 @@
-# Work With page: styled code block (Oct 18)
+# Work With page: v3 PREVIEW for Tiffany's approval (Nov 1). NOT LIVE.
+
+**Status:** waiting on her OK (HQ need `workwith-v3-2026-11-01`). Her rule (Oct 31 11:49pm): nothing goes on the site or in the footer until she has seen it. Ops: do not paste /brands, /brand-launches or /work-with-us yet.
+
+**Preview:** artifact Q8RhYaJwAxYHwXGLGavrEC (version 12, "v3 for approval (Nov 1)"), built from `preview.html` (self-contained, images as data URIs; also shows the Brands form, auto-reply and launch form text).
+**Code block:** `workwith.html` (images on jsDelivr pinned @f4fa296a, `urls.txt`, 7 URLs warmed Nov 1, 0 failing).
+**Rebuild:** `python3 build.py <commit>` (writes workwith.html, preview.html, urls.txt). `preview_embedded.html` (v10) was removed; preview.html now embeds its own images.
+Checked with Playwright at 390px and 1280px: no sideways scroll.
+
+## What changed vs v10 (Oct 19)
+- NEW "How brands show up in Find Your Mat-ch" (her Oct 29 12:01pm ask + 12:11/12:41/12:52 rules + Oct 31 partners-first rule): Partner brands (affiliate + code MAHJMATCH: top of Shop by brand with ♥, first in colour results labelled with the code, 1 guaranteed album if they sell tile sets, brand page, partner logo lineup), ShopMy brands (never called partners; listed with non-partners, "no discount available"), no affiliation (only when she matched/picked them; below partners). Lead line: the best colour match always shows (matching is never gated by partnership). Small HTML illustration of the Shop by brand menu with a dashed "Your brand ♥" row (labelled as an illustration, not a screenshot).
+- NEW "Why affiliate programs make sense (especially for small brands)": only her Oct 29 12:55pm points (pay only when paid, zero wasted ad spend, ~10x ROAS at 10%, shoppers who won't pay full price, build into margins like free shipping). No other stats.
+- Her Oct 24 l-workwith6 notes: "shoppable"; New Releases & Restocks; affiliate card reworded to her list; album promise in her words; FAQ "samples or gifting" (her answer); "How do players find my products?" (her text, no Discount Codes page); new FAQ "upcoming launch or restock" → /brand-launches form; non-Shopify FAQ; match cards name every brand + many formats carry logos; match card "pre-formatted for sharing across different platforms".
+- Standalone "Your own partner brand page" section removed (Oct 29: mention, don't highlight). Discount Codes page appears nowhere (HARD RULE Oct 26).
+- Partner strip: the marquee of 36 separate logos showed empty boxes; now ONE image, `assets/workwith/partner-logos-2026-10-30.jpg` (logo grid cropped from `assets/hub/partner-brands-2026-10-30.jpg`, 38 partners). Refresh it whenever the hub graphic changes.
+- FYM section: "Coming 10.27" and the 4 pre-launch step shots replaced by the real launch screens `assets/links/v2/fym-phones-trio-white-links.webp` + a "Try Find Your Mat-ch" button (/find-your-match). "Live now" badge.
+- New closing line: "No affiliate program yet? Please add me to your list of interested partners, and let me know when you open one."
+
+## Flow (decided Oct 19 + Oct 24; unchanged)
+footer "Brands" link → **/brands** form → Squarespace form-response automation email → hidden **/work-with-us**. Footer snippet: `<a href="/brands">Brands</a>`.
+
+## /work-with-us page (after her OK)
+- Duplicate a simple page, paste `workwith.html` into a code block. Not in any navigation; Page Settings → SEO → "Hide page from search results". No password.
+- **SEO title:** Work With Mahj Matchmaker | Partner Program for Mahjong Brands
+- **SEO description:** Partner with Mahj Matchmaker: your products in Find Your Mat-ch™, match albums and our social channels, with code MAHJMATCH for our players.
+
+## Brands form (/brands), v3
+- Hidden page with a Form block, linked only from the footer.
+- **Title:** Work with Mahj Matchmaker
+- **Intro:** "Love what you see? Tell me a little about your brand and I'll send over everything you need to know about partnering with Mahj Matchmaker."
+- **Fields:** Brand name* · Your name* · Email* (required: the automation needs it) · Website or shop link* · What do you make? (checkboxes: Tiles, Mats, Racks, Accessories, Other) · Do you have an affiliate program? (radio: Yes, with a discount code / Yes, without a code / We're on ShopMy / Not yet) · Anything else you'd like me to know? (optional)
+- **Button:** Send. **Success:** "Thank you! Check your inbox. I've just sent over how partnering with Mahj Matchmaker works."
+- **Storage:** email to mahjmatchmaker@gmail.com + kept in Squarespace. No mailing-list opt-in.
+- **Auto-reply:** Email Campaigns → Automations → Form response on the Brands form, text in `emails.md` #1, built as a DRAFT for her final read (Oct 24 rule: nothing sends until she reads it in Squarespace). Fallback: saved Gmail reply.
+
+## Launch & restock form (/brand-launches), NEW (her Oct 24 note)
+- Hidden page, linked from the Work With page ("Tell me about a launch" + the launch FAQ). Must exist before /work-with-us goes live.
+- **Fields:** Brand name* · Your name* · Email* · What's coming? (New release / Restock / Re-launch / Sale / Other)* · Product name(s)* · Date it goes live* · Product or preview link · Link to photos (optional) · Anything else? (optional)
+- **Success:** "Got it, thank you! I'll work it into my content plan."
+- **Storage:** email to mahjmatchmaker@ with a Gmail filter → label Site/Brand launches, skip inbox (her inbox stays clean, like FYM feedback). The 6:47am cleanup reads it and puts each launch on the social calendar + HQ (add to docs/HQ-CLEANUP.md when the form goes live).
+
+---
+## History (v1-v10, Oct 18-24): kept for reference
 
 Tiffany approved the v2 copy ("This page is approved"), then asked for styling: "It needs styled headings, etc., some images… We're cuter than this Claude ;)".
 
