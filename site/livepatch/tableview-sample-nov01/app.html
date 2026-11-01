@@ -119,15 +119,36 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
 .rtag{position:absolute;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:var(--pink);color:#fff;font:700 13px/26px var(--body);text-align:center;box-shadow:0 0 0 2px #fff,0 2px 6px rgba(0,0,0,.3);pointer-events:none}
 .rtag.sel{background:var(--navy)}
 .rtag.pulse{animation:pulse 1.2s ease-in-out 3}
+/* live app's Up close / Aerial (copied from FYM v112 CSS, scoped) */
+.vnote{margin:-2px 0 0;font-size:12.5px;color:var(--mute);text-align:center}
+#live .cmp{display:flex;flex-direction:column;gap:0}
+#live .tilev{position:relative;overflow:hidden;border-radius:18px 18px 0 0;aspect-ratio:16/7;background:#fff}
+#live .tilev img{position:absolute;left:0;top:0;width:100%;height:auto}
+#live .tcap{display:flex;justify-content:space-between;align-items:center;gap:8px;background:#2a2036;color:#fff;font:600 11.5px var(--body);padding:5px 12px;letter-spacing:.02em}
+#live .tcap span:last-child{opacity:.7}
+#live .deck{position:relative;height:min(calc(100vw - 24px + 54px),550px)}
+@media (max-width:560px){#live .deck{height:min(calc(100vw - 24px + 54px),calc(100dvh - 372px),550px);min-height:200px}}
+#live .scard{position:absolute;inset:0;background:#fff;border-radius:22px;border:2px solid #f3e1e8;box-shadow:0 10px 26px rgba(80,30,60,.16);display:flex;flex-direction:column;overflow:hidden}
+#live .cmp .tilev+.tcap+.deck .scard{border-radius:0 0 22px 22px;border-top:0}
+#live .scard .ph{flex:1;min-height:0;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:8px;background:#fff;container-type:size}
+#live .scard .ph img{max-width:100%;max-height:100%;object-fit:contain}
+#live .scard .ph img:not(.onmat){width:100%;height:100%}
+#live .scard .ph img.photo{border-radius:12px}
+#live .onmat{position:absolute;aspect-ratio:1;object-fit:cover;border-radius:50%;border:4px solid #fff;box-shadow:0 6px 16px rgba(0,0,0,.28);pointer-events:none;z-index:1;--s:min(100cqw,100cqh);width:calc(var(--s)*0.4);right:calc((100cqw - var(--s))/2 + var(--s)*.03);bottom:calc((100cqh - var(--s))/2 + var(--s)*.03)}
+#live .scard .meta{flex:none;display:flex;align-items:center;gap:8px;padding:7px 12px 9px;border-top:2px solid #f6e8ee;min-width:0}
+#live .scard .meta .tx{min-width:0;flex:1}
+#live .scard .meta b{display:block;font:700 16px/1.15 var(--body);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#live .scard .meta span{display:block;font-size:12px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#live .scard .meta img.lg{height:26px;width:auto;max-width:76px;object-fit:contain;flex:none}
 @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.35)}}
 .legend{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:8px}
 .legend .lh{font-size:13px;color:var(--ink)}
-.lrow{display:grid;grid-template-columns:26px 44px minmax(0,1fr) auto;gap:8px;align-items:center;font-size:13px}
+.lrow{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:13px;padding:6px 0;border-top:1px solid var(--line)}
 .lrow .n{width:24px;height:24px;border-radius:50%;background:var(--pink);color:#fff;font:700 12px/24px var(--body);text-align:center}
 .lrow.sel .n{background:var(--navy)}
 .lrow img{width:44px;height:22px;object-fit:contain}
-.lrow .nm{min-width:0;overflow-wrap:anywhere;font-weight:600}
-.lrow .acts{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.lrow .nm{flex:1 1 150px;min-width:0;font-weight:600;line-height:1.25}
+.lrow .acts{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-left:auto}
 .lrow a{color:var(--navy);font-weight:700;text-decoration:none;font-size:12.5px}
 .lrow button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 8px;font:600 11.5px/1.2 var(--body);color:var(--navy)}
 @media (prefers-reduced-motion:reduce){.rtag.pulse{animation:none}}
@@ -142,6 +163,7 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
   .stage{max-width:none}
 }
 @media (min-width:960px){.stage{max-width:min(720px,calc(100vh - 230px));margin-inline:auto}.panel .grab{display:none}.mobileonly{display:none!important}.panel{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto}}
+.grab{-webkit-user-select:none;user-select:none}
 .grab span{width:44px;height:5px;border-radius:9px;background:#d8ccd6;display:block;margin:0 auto}
 .x{border:0;background:none;font-size:22px;line-height:1;color:var(--mute);padding:4px 8px}
 .toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:999px;font-size:13.5px;z-index:60;max-width:calc(100vw - 32px);text-align:center}
@@ -164,7 +186,7 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
     <div>
       <div class="kick">Find Your Mat-ch · working sample</div>
       <h1>Table view</h1>
-      <p class="note">Real tiles, mats and racks from the app, built as a top-down table. Pinch or use + to zoom. Your settings stay put when you swap pieces.</p>
+      <p class="note">This is the step after you pick your tiles and mat, same as the app. Real tiles, mats and racks from the app. Pinch or use + to zoom; your settings stay put when you swap pieces.</p>
     </div>
   </header>
   <div class="layout">
@@ -174,6 +196,8 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
         <button id="v-aerial" data-v="aerial">Aerial</button>
         <button id="v-table" data-v="table" class="on">Table<span class="new">NEW</span></button>
       </div>
+      <p class="vnote">Up close and Aerial work just like the app today. Table is the new one.</p>
+      <div id="live" hidden></div>
       <div class="stage" id="stage">
         <div class="zoomer" id="zoomer"><canvas id="cv" aria-label="Table view of your match"></canvas></div>
         <div class="faces" id="faces"><img id="facesImg" alt=""></div>
@@ -330,7 +354,7 @@ function legend(){const L=$('#legend');L.hidden=!st.compare||st.view!=='table';i
     return `<div class="lrow${si===st.seatSel?' sel':''}"><span class="n">${i+1}</span><img src="${r.th||''}" alt=""><span class="nm">${esc(r.n)}</span><span class="acts">${r.u?`<a href="${esc(r.u)}" target="_blank" rel="noopener">Shop ›</a>`:''}<button data-all="${si}">Use this one for all 4</button></span></div>`}).join('');
   L.querySelectorAll('[data-all]').forEach(b=>b.onclick=()=>{const k=st.seats[+b.dataset.all];st.seats=st.seats.map(()=>k);st.compare=false;sync();toast(`${R[k].n} on all 4 seats.`)})}
 function placeFaces(){const f=$('#faces');const t=T[st.set];$('#facesImg').src=t.face||t.th||'';
-  let show=st.view!=='table'||st.faces;f.hidden=!show;if(!show)return;
+  let show=st.view==='table'&&st.faces;f.hidden=!show;if(!show)return;
   let d,cx,cy;if(st.view==='aerial'){d=40;cx=50;cy=50}else if(st.view==='close'){d=30;cx=80;cy=80}
   else if(st.mode==='corner'){d=28;if(st.facePos==='center'){cx=st.flip?68:32;cy=32}else{cx=st.flip?82:18;cy=18}}
   else if(st.facePos==='center'){d=26;cx=50;cy=50}else{d=22;cx=80;cy=80}
@@ -363,7 +387,7 @@ stage.addEventListener('wheel',e=>{if(!e.ctrlKey&&st.z<=1.01&&Math.abs(e.deltaY)
 function setSw(el,on,dis){el.setAttribute('aria-checked',on?'true':'false');el.disabled=!!dis}
 function sync(){
   $$('.views button').forEach(b=>b.classList.toggle('on',b.dataset.v===st.view));
-  const tbl=st.view==='table';$('#tableRow').style.display=tbl?'':'none';
+  const tbl=st.view==='table';$('#tableRow').style.display=tbl?'':'none';$('#stage').hidden=!tbl;$('#live').hidden=tbl;if(!tbl)liveView();
   const mat=M[st.mat];const fullOk=mat.cls==='A';if(!fullOk&&st.mode==='full'&&mat.cls==='B')st.mode='corner';
   $('#m-full').disabled=!fullOk;$$('#modeSeg button').forEach(b=>b.classList.toggle('on',b.dataset.m===st.mode));$('#flip').hidden=st.mode!=='corner';
   const t=T[st.set];setSw($('#walls'),st.walls&&t.walls,!t.walls);const wn=$('#wallsNote');wn.hidden=t.walls&&!t.patch;
@@ -384,6 +408,9 @@ function sync(){
   $('#cap').innerHTML=`<span><b>${esc(t.n)}</b> tiles · <b>${esc(mat.n)}</b> mat · <b>${esc(rs)}</b></span><span>${esc(disp(mat.bn))}</span>`;
   rackChips();renderGrid();draw();
 }
+function liveView(){const t=T[st.set],m=M[st.mat];const lg=DATA.logos[m.bn];const ph=m.im||m.th;
+  const card=`<div class="deck m"><div class="scard"><div class="ph"><img src="${ph}" alt="${esc(m.n)}" class="photo">${st.view==='aerial'?`<img class="onmat" src="${t.face||t.th}" alt="">`:''}</div><div class="meta">${lg?`<img class="lg" src="${lg}" alt="">`:''}<div class="tx"><b>${esc(m.n)}</b><span>${esc(disp(m.bn))}</span></div></div></div></div>`;
+  $('#live').innerHTML=st.view==='close'?`<div class="cmp"><div class="tilev"><img src="${t.face||t.th}" alt="${esc(t.n)} tiles"></div><div class="tcap"><span>${esc(t.n)} tiles</span><span>Pinch either photo to zoom</span></div>${card}</div>`:`<div class="cmp aer">${card}</div>`}
 function setRack(k){if(!st.compare||st.seatSel<0)st.seats=st.seats.map(()=>k);else st.seats[st.seatSel]=k}
 function rackChips(){const box=$('#rackChips');const cur=st.seats[st.seatSel<0?0:st.seatSel];const ks=rackList().filter(usable).slice(0,16);if(!ks.includes(cur)&&usable(cur))ks.unshift(cur);
   box.innerHTML=ks.map(k=>`<button class="chip${k===cur?' on':''}" data-k="${encodeURIComponent(k)}"><i style="background:${R[k].hx}"></i>${esc(short(R[k].n,R[k].bn))}</button>`).join('');
@@ -408,7 +435,7 @@ $('#openAdj').onclick=()=>openSheet('adjust');$('#openTiles').onclick=()=>openSh
 $$('[data-open]').forEach(b=>b.onclick=()=>openSheet('swap',b.dataset.open));
 $('#closeSheet').onclick=closeSheet;
 {const g=panel.querySelector('.grab');let y0=null,dy=0;
- g.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;y0=e.clientY;dy=0;panel.classList.add('dragging');try{g.setPointerCapture(e.pointerId)}catch(_){}});
+ g.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;e.preventDefault();y0=e.clientY;dy=0;panel.classList.add('dragging');try{g.setPointerCapture(e.pointerId)}catch(_){}});
  g.addEventListener('pointermove',e=>{if(y0===null)return;dy=Math.max(0,e.clientY-y0);panel.style.transform=`translateY(${dy}px)`});
  const end=()=>{if(y0===null)return;panel.classList.remove('dragging');if(dy>70)closeSheet();else panel.style.transform='';y0=null};
  g.addEventListener('pointerup',end);g.addEventListener('pointercancel',end)}

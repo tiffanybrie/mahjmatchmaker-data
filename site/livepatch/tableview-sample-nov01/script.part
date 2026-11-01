@@ -99,7 +99,7 @@ function legend(){const L=$('#legend');L.hidden=!st.compare||st.view!=='table';i
     return `<div class="lrow${si===st.seatSel?' sel':''}"><span class="n">${i+1}</span><img src="${r.th||''}" alt=""><span class="nm">${esc(r.n)}</span><span class="acts">${r.u?`<a href="${esc(r.u)}" target="_blank" rel="noopener">Shop ›</a>`:''}<button data-all="${si}">Use this one for all 4</button></span></div>`}).join('');
   L.querySelectorAll('[data-all]').forEach(b=>b.onclick=()=>{const k=st.seats[+b.dataset.all];st.seats=st.seats.map(()=>k);st.compare=false;sync();toast(`${R[k].n} on all 4 seats.`)})}
 function placeFaces(){const f=$('#faces');const t=T[st.set];$('#facesImg').src=t.face||t.th||'';
-  let show=st.view!=='table'||st.faces;f.hidden=!show;if(!show)return;
+  let show=st.view==='table'&&st.faces;f.hidden=!show;if(!show)return;
   let d,cx,cy;if(st.view==='aerial'){d=40;cx=50;cy=50}else if(st.view==='close'){d=30;cx=80;cy=80}
   else if(st.mode==='corner'){d=28;if(st.facePos==='center'){cx=st.flip?68:32;cy=32}else{cx=st.flip?82:18;cy=18}}
   else if(st.facePos==='center'){d=26;cx=50;cy=50}else{d=22;cx=80;cy=80}
@@ -132,7 +132,7 @@ stage.addEventListener('wheel',e=>{if(!e.ctrlKey&&st.z<=1.01&&Math.abs(e.deltaY)
 function setSw(el,on,dis){el.setAttribute('aria-checked',on?'true':'false');el.disabled=!!dis}
 function sync(){
   $$('.views button').forEach(b=>b.classList.toggle('on',b.dataset.v===st.view));
-  const tbl=st.view==='table';$('#tableRow').style.display=tbl?'':'none';
+  const tbl=st.view==='table';$('#tableRow').style.display=tbl?'':'none';$('#stage').hidden=!tbl;$('#live').hidden=tbl;if(!tbl)liveView();
   const mat=M[st.mat];const fullOk=mat.cls==='A';if(!fullOk&&st.mode==='full'&&mat.cls==='B')st.mode='corner';
   $('#m-full').disabled=!fullOk;$$('#modeSeg button').forEach(b=>b.classList.toggle('on',b.dataset.m===st.mode));$('#flip').hidden=st.mode!=='corner';
   const t=T[st.set];setSw($('#walls'),st.walls&&t.walls,!t.walls);const wn=$('#wallsNote');wn.hidden=t.walls&&!t.patch;
@@ -153,6 +153,9 @@ function sync(){
   $('#cap').innerHTML=`<span><b>${esc(t.n)}</b> tiles · <b>${esc(mat.n)}</b> mat · <b>${esc(rs)}</b></span><span>${esc(disp(mat.bn))}</span>`;
   rackChips();renderGrid();draw();
 }
+function liveView(){const t=T[st.set],m=M[st.mat];const lg=DATA.logos[m.bn];const ph=m.im||m.th;
+  const card=`<div class="deck m"><div class="scard"><div class="ph"><img src="${ph}" alt="${esc(m.n)}" class="photo">${st.view==='aerial'?`<img class="onmat" src="${t.face||t.th}" alt="">`:''}</div><div class="meta">${lg?`<img class="lg" src="${lg}" alt="">`:''}<div class="tx"><b>${esc(m.n)}</b><span>${esc(disp(m.bn))}</span></div></div></div></div>`;
+  $('#live').innerHTML=st.view==='close'?`<div class="cmp"><div class="tilev"><img src="${t.face||t.th}" alt="${esc(t.n)} tiles"></div><div class="tcap"><span>${esc(t.n)} tiles</span><span>Pinch either photo to zoom</span></div>${card}</div>`:`<div class="cmp aer">${card}</div>`}
 function setRack(k){if(!st.compare||st.seatSel<0)st.seats=st.seats.map(()=>k);else st.seats[st.seatSel]=k}
 function rackChips(){const box=$('#rackChips');const cur=st.seats[st.seatSel<0?0:st.seatSel];const ks=rackList().filter(usable).slice(0,16);if(!ks.includes(cur)&&usable(cur))ks.unshift(cur);
   box.innerHTML=ks.map(k=>`<button class="chip${k===cur?' on':''}" data-k="${encodeURIComponent(k)}"><i style="background:${R[k].hx}"></i>${esc(short(R[k].n,R[k].bn))}</button>`).join('');
@@ -177,7 +180,7 @@ $('#openAdj').onclick=()=>openSheet('adjust');$('#openTiles').onclick=()=>openSh
 $$('[data-open]').forEach(b=>b.onclick=()=>openSheet('swap',b.dataset.open));
 $('#closeSheet').onclick=closeSheet;
 {const g=panel.querySelector('.grab');let y0=null,dy=0;
- g.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;y0=e.clientY;dy=0;panel.classList.add('dragging');try{g.setPointerCapture(e.pointerId)}catch(_){}});
+ g.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;e.preventDefault();y0=e.clientY;dy=0;panel.classList.add('dragging');try{g.setPointerCapture(e.pointerId)}catch(_){}});
  g.addEventListener('pointermove',e=>{if(y0===null)return;dy=Math.max(0,e.clientY-y0);panel.style.transform=`translateY(${dy}px)`});
  const end=()=>{if(y0===null)return;panel.classList.remove('dragging');if(dy>70)closeSheet();else panel.style.transform='';y0=null};
  g.addEventListener('pointerup',end);g.addEventListener('pointercancel',end)}
