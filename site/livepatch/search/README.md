@@ -1,4 +1,4 @@
-# Site-wide search (Tiffany, Oct 21 2026). STAGED, QA passed Oct 22, install pending (Chrome busy)
+# Site-wide search (Tiffany, Oct 21 2026). INSTALLED Nov 1 ~12:55am ET (Code Injection header, index @6a8c3490)
 
 Oct 22: index refreshed @c6e395f (Kerry, Vivienne, Soiree holiday mats; Mahjong Studios / Four Winds album-only mats excluded), snippet pinned + warmed. QA run by the builder session (a separate agent could not be spawned): Chromium + WebKit at 390/1280 on home, /mahjong-mats, an album, a brand page, /find-your-match: icon visible, burger not displaced, no search-caused sideways scroll (desktop 1494px overflow is the pre-existing nav), all 8 test searches OK, photos load, Esc/Close/Back close, deep link scrolls + pulses, no search console errors, no italic headings.
 
