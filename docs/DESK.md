@@ -45,7 +45,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **Partner feedback watch** trig_01RKw9eUwTYPo39gbYHb65gh runs daily through Nov 10, then asks her (its own ending step). 0 partner items Oct 31.
 
 ## In progress
-- **Matches & Catalog · FYM 1.12 (v112) BUILT, in independent QA (Nov 1 ~3:40am).** b112 / pub112 (files: mc/190.webp, mc/153.webp) / site fym-v112 @0667c1a5 (assets @ab501a66). Chartreuse recolour reverted (Oct 27 call stands). After QA PASS: publish artifact, bump pin, paste both pages, live check. Follow-up: nightly stock check (scripts/fym_stock_check.py) needs a publish path before it can be a scheduled task; rack cut-out review (step 3b) + Mat Gallery rows (step 10) still to do.
+- **Matches & Catalog · FYM 1.12 LIVE (Nov 1 ~5:10am).** Follow-ups: (a) nightly stock check needs a publish path before it can be a scheduled task (today the date shows 'Stock checked Nov 1'); (b) rack cut-out review for the 12 hidden racks (builder/fym_fix_nov01 README step 3b); (c) Mat Gallery rows (step 10, gallery_rows112.py); (d) Etsy shop names (browser chat); (e) two-color coordination ranking bonus (own build). Waiting on Tiffany: 7 inbox questions (HQ inbox-questions-nov01), table-view rack question, Supabase + Resend.
 | Item | Owner | Next step | Target |
 |---|---|---|---|
 | Tinselle Emerald restock story | Main | Priority 1; her frame pick. | Sun Nov 1 |
