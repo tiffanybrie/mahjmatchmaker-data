@@ -3,7 +3,7 @@ Usage: python3 stills.py  -> /dev/shm/holiday-intro/out/{cover.jpg,feed-0N.jpg,s
 import json, os, sys
 os.environ['TMPDIR'] = '/dev/shm/holiday-intro/tmp'
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from reel import CFG, FONTS, W
+from reel import CFG, FONTS, W, Q
 from playwright.sync_api import sync_playwright
 
 CSS = """@font-face{font-family:Cap;src:url(__F__/Caprasimo.ttf)}
@@ -36,7 +36,7 @@ body{width:1080px;height:__H__px;overflow:hidden;position:relative;background:va
 FYM = """Find <span style="font:italic 600 1em/1 PF;color:var(--pink)">Your</span> Mat-ch<sup style="font-size:.36em;vertical-align:top;position:relative;top:.12em">™</sup>"""
 
 def quilt(dim=0.0):
-    ims = ''.join(f'<img src="{u}">' for u in (CFG['QU']*2)[:66])
+    ims = ''.join(f'<img src="{u}">' for u in (CFG['QU']+['file://'+f for f,n,b in Q[54:]]+CFG['QU'])[:66])
     return f'<div class="bg"><div class="quilt">{ims}</div><div style="position:absolute;inset:0;background:rgba(6,42,85,{dim})"></div></div>'
 
 def phone(src, fw, crop_y, crop_h, w, labels=''):
@@ -79,7 +79,7 @@ def slides(H):
 def cover():
     return ('', quilt(0.15), f'''<div class="card" style="padding:44px 60px 50px"><img src="{CFG['FH']}" style="width:110px"><div class="kick" style="margin-top:12px">Merry Mahjong</div>
       <div class="cap" style="font-size:150px;margin-top:6px">152</div><div class="cap" style="font-size:78px">holiday mats</div>
-      <div class="it" style="margin-top:14px;font-size:44px">holiday tiles, mats &amp; racks,<br>matched in {FYM}</div></div>''')
+      <div class="it" style="margin-top:14px;font-size:44px">matched with tiles &amp; racks<br>in {FYM}</div></div>''')
 
 def html(H, T, B, sl):
     cls, bg, body = sl
