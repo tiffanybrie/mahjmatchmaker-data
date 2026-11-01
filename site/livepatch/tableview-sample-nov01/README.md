@@ -35,3 +35,10 @@ and Chromium 1280 with a scrollWidth <= innerWidth check after every step.
 ## Compare racks (Tiffany 3:48pm)
 Default = all 4 seats the same rack (racks sell in sets of 4). "Compare racks" numbers the seats 1-4 (first one pulses),
 tap a rack to try a different one there, legend under the table lists each with Shop + "Use this one for all 4" (ends compare).
+
+## Full-flow preview (Nov 1): "Find Your Mat-ch Preview"
+- Artifact: https://claude.ai/artifact/5QjNXjw15MuZTqzDT1ptbp (separate from live 6epA9HuEdT32zUp79Qv3kd; not on Squarespace).
+- Base: v113 publish copy (scratchpad fym/pub113/index.html, b113 untouched). Build: `python3 builder/table_view/preview_nov01.py <pub index.html> <out dir>` injects builder/table_view/preview_tv.js (Table as 3rd view, Swap racks sheet with search/brand/color/finish/price/in stock, walls, players 4/3/2, tile faces center/corner/off).
+- Files: 512 (index + the live 511). Every mc/* chunk except mc/190, every t* photo and b3/b9/b17/b22 were copied server-side from live, because the local re-encodes went over the 256 MiB version cap.
+- Tested locally: WebKit iPhone 13 + Chromium 1280. Both doors run through to the card, plus the Table deck. No horizontal overflow, 0 errors.
+- Fix carried in: WebKit `.top .stp` nav overflow (289px), CSS `min-width:0`. The same bug exists in live 1.12.
