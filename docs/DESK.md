@@ -42,7 +42,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **Partner feedback watch** trig_01RKw9eUwTYPo39gbYHb65gh runs daily through Nov 10, then asks her (its own ending step). 0 partner items Oct 31.
 
 ## In progress
-- **Matches & Catalog · FYM 1.12 (v112) building (Nov 1 ~1:30am).** 1.11 accounts is LIVE (artifact + both site pages, pin page-block @47155387). v112 = inbox sweep prep (builder/fym_fix_nov01) + in-stock toggle (scripts/fym_stock_check.py → config/fym-stock.json) + PLM chartreuse A racks + account sheet polish. Next: gate → independent QA → publish both places → live check. If the chat stops: resume from the builder report / fym/b112, pub112, site-app/fym-v112.
+- **Matches & Catalog · FYM 1.12 (v112) BUILT, in independent QA (Nov 1 ~3:40am).** b112 / pub112 (files: mc/190.webp, mc/153.webp) / site fym-v112 @0667c1a5 (assets @ab501a66). Chartreuse recolour reverted (Oct 27 call stands). After QA PASS: publish artifact, bump pin, paste both pages, live check. Follow-up: nightly stock check (scripts/fym_stock_check.py) needs a publish path before it can be a scheduled task; rack cut-out review (step 3b) + Mat Gallery rows (step 10) still to do.
 | Item | Owner | Next step | Target |
 |---|---|---|---|
 | Tinselle Emerald restock story | Main | Priority 1; her frame pick. | Sun Nov 1 |
