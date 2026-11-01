@@ -1508,6 +1508,24 @@ if re.search(r'Version 1\.(1\d|[2-9]\d)\b', h) or 'function STB(' in h:
         if _pat not in h: _st.append(_what)
     if 'function STB(' in h and "const LS={get(k){try{" not in h: _st.append('LS helper without try/catch')
     if _st: F.append(f"[121] stars missing: {_st}")
+# [122] Oct 31 v111: ACCOUNTS (Tiffany Oct 31, email sign-in). Supabase-js lazy-loaded at a pinned exact version (never a static
+# <script> tag, so matching never waits on it); only a publishable/anon key ships; every failure falls back to local stars (ACCT.dead);
+# top bar has My stars + account buttons; sign-in = email code (verifyOtp type 'email') + magic link back to /find-your-match.
+if 'function openAcct(' in h or re.search(r'Version 1\.(1[1-9]|[2-9]\d)\b', h):
+    _ac = []
+    for _pat, _what in [('data-mystars', 'top-bar My stars button'), ('data-acct', 'top-bar account button'), ('function openAcct(', 'account sheet'),
+                        ('signInWithOtp', 'email sign-in'), ("type:'email'", 'code verify (verifyOtp type email)'), ('verifyOtp', 'verifyOtp'),
+                        ('ACCT.dead', 'fallback when sign-in is unavailable'), ('function acctMerge(', 'local+cloud star merge'),
+                        ('function acctSaveMatch(', 'save match cards'), ('function openMatch(', 'reopen a saved match card'),
+                        ("find-your-match", 'magic-link redirect to the website page')]:
+        if _pat not in h: _ac.append(_what)
+    if re.search(r'<script[^>]+supabase', h, re.I): _ac.append('supabase-js loaded by a static <script> tag (must be lazy)')
+    _sv = re.findall(r'@supabase/supabase-js@([^/\'"]+)', h)
+    if not _sv or any(not re.fullmatch(r'\d+\.\d+\.\d+', v) for v in _sv): _ac.append(f'supabase-js not pinned to an exact version: {_sv}')
+    if 'service_role' in h: _ac.append("'service_role' appears in the page (never ship a secret key)")
+    for _k in re.findall(r"SB_KEY='([^']*)'", h):
+        if not (_k.startswith('sb_publishable_') or _k.startswith('eyJ')): _ac.append('SB_KEY is not a publishable/anon key')
+    if _ac: F.append(f"[122] accounts: {_ac}")
 # [116] Oct 30 v106 QA: a step-2 SEARCHED mat stays on top only while it passes the active brand / colour filters.
 try:
     if 'ids.includes(S.mfront)' not in fn('matDeck'):
