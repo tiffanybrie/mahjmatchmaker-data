@@ -29,4 +29,7 @@ QP = REPO + 'builder/fym_flags/fym_questionable.json'; Q = json.load(open(QP)); 
 skipk = {'letsbebesties.com/' + k for k, _ in SPEC.get('skipped', []) if 'merged' in _}
 q0 = len(Q['items']); Q['items'] = [it for it in Q['items'] if it['key'] not in vis and it['key'] not in skipk]
 if len(Q['items']) != q0: json.dump(Q, open(QP, 'w'), indent=1, ensure_ascii=False)
+for _fp, _sub in (('builder/fym_flags/locks.json', 'mats'), ('builder/fym_flags/mat_photo_flags.json', None)):
+    _d = json.load(open(REPO + _fp)); _t = _d[_sub] if _sub else _d; _n = sum(1 for k in skipk if _t.pop(k, None) is not None)
+    if _n: json.dump(_d, open(REPO + _fp, 'w'), indent=1, ensure_ascii=False)
 print('adds113 post steps:', n, '| questionable removed', q0 - len(Q['items']))
