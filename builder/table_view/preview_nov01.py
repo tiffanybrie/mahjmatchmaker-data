@@ -95,6 +95,7 @@ n = h.count("S.mode==='aerial'"); h = h.replace("S.mode==='aerial'", "(S.mode===
 h = h.replace("""aria-pressed="${(S.mode==='aerial'||S.mode==='table')}">Aerial""", """aria-pressed="${S.mode==='aerial'}">Aerial""")
 for v in re.findall(r'Version 1\.\d+(?:\.\d+)?', h)[:1]:
     h = h.replace(v + '<', v + ' + Table view preview<')
+h = re.sub(r'<title>[^<]*</title>', '<title>Find Your Mat-ch Preview</title>', h, count=1)
 j = h.rindex('</body>') if '</body>' in h else len(h)
 h = h[:j] + inj + h[j:]
 (OUT / 'index.html').write_text(h)

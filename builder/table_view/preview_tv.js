@@ -2,7 +2,7 @@
    (mat deck, mat-door tile deck, rack deck) is redrawn as a top-down table. Uses the app's own globals (D, S, M, R, T, set,
    matFull, rackSrc, pile, renderRacks) + TVD (coverage classes, real tile back colors, rack finishes/prices). */
 (function(){
-const TV={walls:true,players:4,faces:'center',rack:null,q:'',brand:'',fam:'',fin:'',price:'',instock:false};
+const TV={walls:true,players:4,faces:'center',rack:null,q:'',brand:'',fcol:'',fin:'',price:'',instock:false};
 const LS=(()=>{try{return JSON.parse(localStorage.getItem('fymTV')||'{}')}catch(e){return {}}})();Object.assign(TV,{walls:LS.walls!==false,players:LS.players||4,faces:LS.faces||'center'});
 const save=()=>{try{localStorage.setItem('fymTV',JSON.stringify({walls:TV.walls,players:TV.players,faces:TV.faces}))}catch(e){}};
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
@@ -57,7 +57,7 @@ function note(card,txt){let n=card.querySelector('.tvna');if(!n){n=document.crea
 function proc(card){const x=ctx(card);if(!x.mat||!x.s||!M[x.mat])return;const img=card.querySelector('.ph img:not(.onmat)');if(!img)return;
   const cls=matCls(x.mat);const rack=x.rack||pickRack(x.s,x.mat);const key=[x.mat,x.s.slug,rack,TV.walls,TV.players,TV.faces].join('|');if(card.dataset.tvk===key)return;card.dataset.tvk=key;
   card.classList.remove('tvoff');const old=card.querySelector('.tvna');if(old)old.remove();
-  if(cls==='C'){note(card,'Not available in Table view: '+(TVD.why[x.mat]||'no flat, top-down photo of this mat yet.'));return}
+  if(cls==='C'){note(card,'Not available in Table view: '+(TVD.why[x.mat]||(TVD.cls[x.mat]?'no flat, top-down photo of this mat yet.':'not checked for Table view yet (new to the app this week).')));return}
   if(x.rack&&!rackOK(x.rack,x.s)){note(card,'Not available in Table view: '+rackWhy(x.rack,x.s));return}
   if(!rack){note(card,'No rack with a clean photo fits these tiles yet.');return}
   render(x.mat,x.s,rack,cls==='B').then(u=>{if(card.dataset.tvk===key){img.src=u;img.classList.add('tvimg')}});
@@ -79,16 +79,16 @@ function sheet(){const st=D.sets[S.set];let sh=document.getElementById('tvsheet'
   const q=TV.q.trim().toLowerCase();const brands=[...new Set(Object.keys(R).filter(k=>!R[k].hid).map(k=>R[k].bn))].sort();
   let rows=Object.keys(R).filter(k=>!R[k].hid).map(k=>{const r=R[k];const pr=TVD.price[k]||[];return {k,r,ok:rackOK(k,st),why:rackWhy(k,st),fin:TVD.fin[k]||[],p:pr[0],pc:pr[1],cd:pr[2],so:TVD.so[k]}});
   const words=o=>[o.r.n,BDN(o.r.bn),...(o.r.rf||[]),...o.fin].join(' ').toLowerCase();
-  rows=rows.filter(o=>(!q||q.split(/\s+/).every(w=>words(o).includes(w)))&&(!TV.brand||o.r.bn===TV.brand)&&(!TV.fam||(o.r.rf||[]).includes(TV.fam))&&(!TV.fin||o.fin.includes(TV.fin)));
+  rows=rows.filter(o=>(!q||q.split(/\s+/).every(w=>words(o).includes(w)))&&(!TV.brand||o.r.bn===TV.brand)&&(!TV.fcol||(o.r.rf||[]).includes(TV.fcol))&&(!TV.fin||o.fin.includes(TV.fin)));
   if(!q)rows=rows.filter(o=>fits(o.k,st));
   let nop=0;if(TV.price!==''){nop=rows.filter(o=>o.pc==null).length;rows=rows.filter(o=>o.pc!=null&&o.pc<=TV.price)}
   if(TV.instock&&rows.some(o=>!o.so))rows=rows.filter(o=>!o.so);
   const her=new Set(((st.m.find(x=>x[0]===(S.fav||S.dmat))||[])[1])||[]);rows.sort((a,b)=>(b.ok-a.ok)||(her.has(b.k)-her.has(a.k))||(b.r.pa-a.r.pa)||a.r.n.localeCompare(b.r.n));
-  const act=[q&&`“${esc(TV.q)}”`,TV.brand&&esc(BDN(TV.brand)),TV.fam,TV.fin,TV.price!==''&&`under $${TV.price}`,TV.instock&&'in stock only'].filter(Boolean);
+  const act=[q&&`“${esc(TV.q)}”`,TV.brand&&esc(BDN(TV.brand)),TV.fcol,TV.fin,TV.price!==''&&`under $${TV.price}`,TV.instock&&'in stock only'].filter(Boolean);
   sh.innerHTML=`<div class="tvs-in" role="dialog" aria-label="Swap racks"><div class="tvs-h"><b>Swap racks</b><button type="button" class="tvx" data-tvclose aria-label="Close">×</button></div>
   <input id="tvq" type="search" placeholder="Search racks: name, color or finish (walnut, pearl…)" value="${esc(TV.q)}">
   <select id="tvbrand"><option value="">All brands</option>${brands.map(b=>`<option value="${esc(b)}" ${TV.brand===b?'selected':''}>${esc(BDN(b))}</option>`).join('')}</select>
-  <div class="tvchips">${FAMS.map(f=>`<button type="button" data-tvfam="${f}" class="${TV.fam===f?'on':''}">${f}</button>`).join('')}</div>
+  <div class="tvchips">${FAMS.map(f=>`<button type="button" data-tvfam="${f}" class="${TV.fcol===f?'on':''}">${f}</button>`).join('')}</div>
   <div class="tvchips">${FINS.map(([f,l])=>`<button type="button" data-tvfin="${f}" class="${TV.fin===f?'on':''}">${l}</button>`).join('')}</div>
   <div class="tvchips"><button type="button" data-tvpr="" class="${TV.price===''?'on':''}">Any price</button>${(TVD.pr||[]).map(v=>`<button type="button" data-tvpr="${v}" class="${TV.price===v?'on':''}">Under $${v}</button>`).join('')}<label class="tvst"><input type="checkbox" data-tvstock ${TV.instock?'checked':''}> In stock only</label></div>
   ${act.length?`<div class="tvact">Showing ${act.join(' · ')} <button type="button" data-tvclear>Clear</button></div>`:''}
@@ -99,8 +99,8 @@ function sheet(){const st=D.sets[S.set];let sh=document.getElementById('tvsheet'
 document.addEventListener('click',e=>{const t=e.target.closest('[data-tvp] button,[data-tvf] button,[data-tvrs],[data-tvauto],[data-tvclose],[data-tvfam],[data-tvfin],[data-tvpr],[data-tvclear],[data-tvrack]');if(!t)return;e.stopPropagation();e.preventDefault();
   if(t.closest('[data-tvp]'))TV.players=+t.dataset.n;else if(t.closest('[data-tvf]'))TV.faces=t.dataset.v;else if(t.hasAttribute('data-tvauto'))TV.rack=null;
   else if(t.hasAttribute('data-tvrs')){sheet();return}else if(t.hasAttribute('data-tvclose')){document.getElementById('tvsheet').hidden=true;return}
-  else if(t.dataset.tvfam!==undefined){TV.fam=TV.fam===t.dataset.tvfam?'':t.dataset.tvfam;sheet();return}else if(t.dataset.tvfin!==undefined){TV.fin=TV.fin===t.dataset.tvfin?'':t.dataset.tvfin;sheet();return}
-  else if(t.dataset.tvpr!==undefined){TV.price=t.dataset.tvpr===''?'':+t.dataset.tvpr;sheet();return}else if(t.hasAttribute('data-tvclear')){Object.assign(TV,{q:'',brand:'',fam:'',fin:'',price:'',instock:false});sheet();return}
+  else if(t.dataset.tvfam!==undefined){TV.fcol=TV.fcol===t.dataset.tvfam?'':t.dataset.tvfam;sheet();return}else if(t.dataset.tvfin!==undefined){TV.fin=TV.fin===t.dataset.tvfin?'':t.dataset.tvfin;sheet();return}
+  else if(t.dataset.tvpr!==undefined){TV.price=t.dataset.tvpr===''?'':+t.dataset.tvpr;sheet();return}else if(t.hasAttribute('data-tvclear')){Object.assign(TV,{q:'',brand:'',fcol:'',fin:'',price:'',instock:false});sheet();return}
   else if(t.dataset.tvrack!==undefined){const k=t.dataset.tvrack,st=D.sets[S.set];if(!rackOK(k,st)){alertNote(R[k].n+': '+rackWhy(k,st));return}TV.rack=k;document.getElementById('tvsheet').hidden=true}
   save();pass(true)},true);
 document.addEventListener('change',e=>{if(e.target.matches('[data-tvw]')){TV.walls=e.target.checked;save();pass(true)}if(e.target.matches('[data-tvstock]')){TV.instock=e.target.checked;sheet()}},true);
