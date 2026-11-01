@@ -31,6 +31,7 @@ RACK_ALIAS = {  # approved-name spellings in config files -> app rack ids
 MAT_ALIAS = {  # registry 'mat' names the app spells differently -> app mat ids
     "Bam! Let's Mahjong Cottage Bloom": 'www.bamletsmahjong.com/cottage-bloom-mahjong-mat-blue-floral-american-mahjong-mat',
     "Bam! Let's Mahjong Posy Pop Watercolor": 'www.bamletsmahjong.com/posy-pop-watercolor-floral-mahjong-mat',
+    "Bam! Let's Mahjong Secret Garden": 'www.bamletsmahjong.com/secret-garden-mahjong-mat-watercolor-floral-mahjong-mat',  # v113: LBB also sells a 'Secret Garden'
     'Bespoke Mahjong The Chalet Mat (double-sided)': 'www.bespokemahjong.com/double-the-fun-chaletmat',
 }
 
