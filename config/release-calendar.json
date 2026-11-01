@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-31",
- "updatedBy": "partner watch Oct 31 1:45pm ET",
+ "updated": "2026-11-01",
+ "updatedBy": "partner watch Nov 1 1:45pm ET",
  "rules": {
   "timing": {
    "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -541,11 +541,12 @@
    "type": "preorder",
    "window": "'on their way' (giveaway closes Mon Oct 26 8pm ET before launch)",
    "source": "IG Oct 11, Oct 19",
-   "sourceUrl": "https://www.instagram.com/reel/Dezj-6NxgSC/",
+   "sourceUrl": "https://www.instagram.com/p/DfM2kP6EYPL/",
    "album": false,
    "affiliate": true,
    "priority": 3,
-   "contentTiming": "Skip (travel)."
+   "contentTiming": "Skip (travel).",
+   "status": "PREORDER OPEN Nov 1 (IG 8:35am ET, short window, arrives in a few weeks)"
   },
   {
    "id": "mm-dockside",
@@ -965,7 +966,7 @@
    "type": "sale",
    "window": "Oct 30 - Nov 1",
    "windowStart": "2026-10-30",
-   "status": "RESOLVED Oct 30: Friends & Family SALE (20% off select tiles/mats/racks, code FAMILY20, through Sun Nov 1 11:59pm CST); no new product",
+   "status": "RESOLVED Oct 30: Friends & Family SALE (20% off select tiles/mats/racks, code FAMILY20, through Sun Nov 1 11:59pm CST); no new product; last call Nov 1 (IG + email), ends tonight",
    "source": "Instagram @mahjongrowandco Oct 29",
    "sourceUrl": "https://www.instagram.com/p/DfHjb4dm4as/",
    "album": false,
@@ -1159,6 +1160,22 @@
    "priority": 4,
    "contentTiming": "Record only; watch for a date.",
    "status": "coming (no date)"
+  },
+  {
+   "id": "hoh-juliette-mat",
+   "brand": "House of Hearts Studio",
+   "product": "The Juliette mat (new design)",
+   "type": "launch",
+   "date": "2026-11-01",
+   "windowStart": "2026-11-01",
+   "windowEnd": "2026-11-30",
+   "status": "LIVE per email Nov 1 ('Just Landed'); not in store sitemap yet 1:40pm ET",
+   "source": "Jenni Horne email Nov 1 8:31am ET",
+   "sourceUrl": "https://www.houseofheartsstudio.com/",
+   "album": false,
+   "affiliate": false,
+   "priority": 3,
+   "contentTiming": "Non-partner, no code. Add the full-table-size mat to FYM when listed (brand-watchlist: Tiffany wants all their mats). Log only."
   }
  ],
  "sources": {

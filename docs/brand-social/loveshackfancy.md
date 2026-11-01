@@ -1,6 +1,7 @@
 # LoveShackFancy (@loveshackfancy): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Oct 31-Nov 1: Halloween + dress-up fashion carousels (DfK36beFtO2, DfNQl1hlpKr). Apparel only, no mahjong.
 - Oct 29: Holiday Collection (apparel) launched 8am ET; 6 posts, none mention mahjong or the OMM collab (DfFYvkqFvgp).
 - Oct 29 12pm ET: 'The Holiday Collection, launched now' (DfFYvkqFvgp). Still apparel only, no mahjong in captions.
 - Oct 28-29: Holiday Collection teasers + launch Oct 29 8am ET (DfDfU8uFgNQ, DfE8bqKCADr). Apparel only: 0 new mahjong items in the store; LSF x OMM Coquette tiles/Fleur mat/Pink Quartz racks still sold out.

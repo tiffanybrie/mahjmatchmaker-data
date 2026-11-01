@@ -1,14 +1,13 @@
 # Mahj Matchmaker release calendar
 
-Updated 2026-10-31 from brand sites, the Sunday release schedule, brand Instagram feeds (Planoly) and Gmail. Source of truth: `config/release-calendar.json`; regenerate with `python3 scripts/release_calendar/build_md.py`.
+Updated 2026-11-01 from brand sites, the Sunday release schedule, brand Instagram feeds (Planoly) and Gmail. Source of truth: `config/release-calendar.json`; regenerate with `python3 scripts/release_calendar/build_md.py`.
 
 **Rule (Tiffany, Oct 21):** save restock content for the buying window. Don't spend a set's content before you can buy it; post 1-2 weeks before a dated restock so people pick their mat and have the code ready when it drops.
 
-## Next 8 weeks (Oct 31 - Dec 26)
+## Next 8 weeks (Nov 01 - Dec 27)
 
 | Post window | Brand | Product | Drop date / window | Album | Affiliate | What to post |
 |---|---|---|---|---|---|---|
-| 2026-10-21 to 2026-10-31 | Virora Mahjong | Petalée (new dragon design) | 2026-10-17 | Petalée | yes | In stock NOW: Petalée album post is timely this week (no reason to hold). |
 | 2026-10-22 | Sunday Mahjong | Sunday Cola racks | 2026-10-22 | no | no | Live now (dropped early, not at Thanksgiving). Optional rack-pairing story for Sunday album sets; no code (non-partner). |
 | 2026-10-26 | Charleston Mahjong Club | Hunt Club tiles (back in stock) | arriving late Oct/early Nov; preorders ship first | no | yes | Fall content; watch for in-stock. |
 | 2026-10-26 | Bam Bird Boutique | Summer Send-Off Sale, 20% off select seasonal items (Floating Game Table) | Oct 26 - Sun Nov 1 | no | yes | Log. |
@@ -17,10 +16,10 @@ Updated 2026-10-31 from brand sites, the Sunday release schedule, brand Instagra
 | 2026-10-28 | Oh My Mahjong | Moving sale | Mentors Oct 27; public Wed Oct 28 10am CT; ends Sun Nov 1 | no | yes | Good window to push OMM album sets that are in stock (20% commission ends Nov 25). |
 | 2026-10-30 | Mahjong Row & Co. | 'Something good' tomorrow: friends & family first dibs (product unnamed) | Oct 30 - Nov 1 | no | yes | Watch the store Oct 30; if it is Rosy/Ellington it jumps the album line. |
 | 2026-10-30 | Bam Bird Boutique | Restocks + brand announcements (unnamed; newsletter first) | soon (no date) | no | yes | Watch store; Deco Indigo restock triggers the Deco trio albums. |
-| 2026-10-31 | Maison Mahj | House Line No. 1 tile set (+ House Tote, Maison Rack Bags) | first window opens Sat Oct 31 (tiered windows); ships Feb 2027 | no | no | Log only (non-partner except The Chalet). |
 | 2026-10-31 | Virora Mahjong | Tinselle Emerald Green tiles (Christmas Collection I) | LIVE Oct 31 | yes | yes | Holiday album set: restock story frames (assets/social/restock-tinselle-oct31/out) for Tiffany's review; never a feed post. |
 | 2026-11-01 | Charleston Mahjong Club | CMC x OTG247 collaboration | November 2026 | no | yes | Log; no details yet. |
 | 2026-11-01 | Maison Mahj | New bags (companions to House Line No. 1), ready to ship | Sun Nov 1 | no | no | Accessories; record only. |
+| 2026-11-01 | House of Hearts Studio | The Juliette mat (new design) | 2026-11-01 | no | no | Non-partner, no code. Add the full-table-size mat to FYM when listed (brand-watchlist: Tiffany wants all their mats). Log only. |
 | 2026-11-02 | Oh My Mahjong | IMC 2027 preorder | 2026-11-02 | no | yes | Accessory; story mention only. |
 | 2026-11-02 | Amanda Toppe | Lila mat (full size 33in; travel 22.5in releases first) | Travel Lila (22.5in, 100 made, with case) Mon Nov 2 10am ET; full-size 33in in production, preorder once arrival date is firm | no | yes | Sneak peek flagged to Tiffany Oct 29. Travel version: no album (travel rule). Full-size Lila: watch the store; swipe book the day photos/listing appear. Painterly hydrangea blues, lilac, pink and soft green. Photos: assets/launches/amandatoppe-lila-teaser/ |
 | 2026-11-02 | Mary Benson Art | Hydrangea tiles (+ updated Hydrangea mat, rack restock) | Mon Nov 2: email early access 12pm ET, everyone 1pm ET; limit 1 set per customer | no | no | Log (not a partner). |
@@ -63,9 +62,10 @@ Updated 2026-10-31 from brand sites, the Sunday release schedule, brand Instagra
 | Britt Mills | Isla, Novella, Enchanted neoprene mats (preorders) | preorder | ship late November | Novella/Enchanted (material twins) | yes | Preorder is open now: a 'preorder before they ship' story is fine any time. | [Product pages](https://brittmillsdesign.com/products/isla-neoprene-mahjong-mat-arriving-late-november) |
 | Charleston Mahjong Club | Hunt Club tiles (back in stock) | restock | arriving late Oct/early Nov; preorders ship first | no | yes | Fall content; watch for in-stock. | [IG Sep 30 + Oct 14; BACK IN STOCK IG Oct 30 4:48pm ET (store](https://www.instagram.com/p/DfIegGSBKS2/) |
 | Charleston Mahjong Club | CMC x OTG247 collaboration | launch | November 2026 | no | yes | Log; no details yet. | [IG Oct 26](https://www.instagram.com/reel/De-AxN2slmN/) |
-| Charleston Mahjong Club | Cabana Club travel bundles | preorder | 'on their way' (giveaway closes Mon Oct 26 8pm ET before launch) | no | yes | Skip (travel). | [IG Oct 11, Oct 19](https://www.instagram.com/reel/Dezj-6NxgSC/) |
+| Charleston Mahjong Club | Cabana Club travel bundles | preorder | 'on their way' (giveaway closes Mon Oct 26 8pm ET before launch) | no | yes | Skip (travel). | [IG Oct 11, Oct 19](https://www.instagram.com/p/DfM2kP6EYPL/) |
 | Four Winds Social | Drop 4 (mats) | drop | Thu Oct 29 8pm CT | no | no | Log (not a partner; FWS mats removed from gallery Oct 20). | [Four Winds Social email Oct 29 5:03am ET](https://www.fourwindssocial.com/) |
 | Hip Hip Mahjong | Rackin' Rudolph tiles (restock) + mat, shufflers | restock | 2026-10-20 | no | yes | Holiday: a Rudolph mood board / story only through Planoly. Restock is the money window. No holiday feed posts before Nov 1 unless Tiffany says. | [products.json + product page, Oct 20 17:25 UTC](https://www.hiphipmahjong.com/products/rackin-rudolph-tiles) |
+| House of Hearts Studio | The Juliette mat (new design) | launch | 2026-11-01 | no | no | Non-partner, no code. Add the full-table-size mat to FYM when listed (brand-watchlist: Tiffany wants all their mats). Log only. | [Jenni Horne email Nov 1 8:31am ET](https://www.houseofheartsstudio.com/) |
 | Let's Be Besties | LBB Artist Collective (new artist-designed mats: OHBoN Studios, BeachyMahj, Wanda Viola Designs, AC Studios, Lillian Claire Designs, Spill the Mahj) | coming soon | early November | no | yes | Sneak peek flagged to Tiffany Oct 30. Print-on-demand mats (no sellouts): when designs list, handle like other LBB mats (FYM + Mat Gallery handoff). | [LBB affiliate email + Instagram Oct 30 (new website live)](https://www.instagram.com/reel/DfH0fj7RjRt/) |
 | Let's Mahj On | New lineup: 7 new tile set designs (unnamed) | launch | delayed to mid-November (IG Oct 29); was ~Nov 9 | no | yes | Log. | [IG Oct 26 + Oct 29 delay](https://www.instagram.com/reel/DfGDYhkFISK/) |
 | LoveShackFancy x Oh My Mahjong | Coquette tiles | restock | no date ('Notify Me') | Coquette | no | HOLD Coquette content. LSF '12 Days of Fancy' holiday drops started Oct 21: watch daily for a Coquette restock in that series. | [Product page 'Expected to ship: Sold out, Notify Me'](https://www.loveshackfancy.com/products/pink-floral-mahjong-tile-set) |
