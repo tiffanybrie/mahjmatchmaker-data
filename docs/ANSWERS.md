@@ -795,3 +795,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - 2026-10-31 ~10:30pm (Matches & Catalog): FYM Version 1.10 (v110: STARS + My stars, Mahj & Moon ShopMy 106/114) independent QA PASS (both copies, 0 errors/0 broken); PUBLISHED to the artifact. Website pin bumped (fym-v110 @f11610cb); paste on both pages when Chrome is open.
 - 2026-10-31 ~10:45pm (Matches & Catalog): FYM Version 1.10 pasted on /find-your-match + /find-your-mat-ch-preview (pin cc19744d → fym-v110 @f11610cb); live check: both fym-v110, Round Top Stamped 1400px, 286 thumbs 0 broken, 0 404s. All 3 copies on 1.10 (stars). Next: accounts (Supabase) once she sends Project URL + anon key.
 - 2026-10-31 11:34pm (Tiffany): Supabase Project URL = https://pykkotvkuqjzuhdrgdaw.supabase.co (config/fym-supabase.json). Waiting on the anon/public key.
+- 2026-10-31 11:35pm (Tiffany): Supabase publishable (public) key received → config/fym-supabase.json. Building accounts.
