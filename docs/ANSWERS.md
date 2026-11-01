@@ -798,3 +798,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - 2026-10-31 11:35pm (Tiffany): Supabase publishable (public) key received → config/fym-supabase.json. Building accounts.
 - 2026-10-31 11:39pm (Tiffany, Main): "Start now, I WANT you to use up all of my limit" before the 10am reset. Running the overdue Chrome site-paste batch now (DESK priority 5) + Brownstone album rebuild in parallel.
 - 2026-10-31 11:41pm (Tiffany): work through the night without pause; use all leftover limit (renews 10am Nov 1). Go max.
+- 2026-10-31 11:45pm (Tiffany): OK to delete the 2 stray ShopMy links (duplicate BJJ link for Etsy listing 4579274600 — keep the one in config/etsy-brands-oct31.json; go.shopmy.us/p-99591860 Mahj & Moon website link, 0%). She's relaying the Ops message (Dropbox LBB Tropicana, HQ ShopMy tab, the 2 deletions, Chrome one-driver rule).

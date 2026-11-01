@@ -153,3 +153,4 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 
 See CLAUDE.md.
 - **OPS (tonight, Nov 1, Tiffany OK 11:45pm): ShopMy — delete 2 stray links** made by Matches & Catalog: the DUPLICATE BettyJuneJeannette link for Etsy listing 4579274600 (keep the one saved in config/etsy-brands-oct31.json) and go.shopmy.us/p-99591860 (Mahj & Moon website link, 0%). Chrome: one driver; M&C needs Chrome later tonight to paste FYM 1.11.
+- **OPS (tonight, Nov 1, Tiffany OK 11:45pm): ShopMy — delete 2 stray links** made by Matches & Catalog: the DUPLICATE BettyJuneJeannette link for Etsy listing 4579274600 (keep the one saved in config/etsy-brands-oct31.json) and go.shopmy.us/p-99591860 (Mahj & Moon website link, 0%). Chrome: one driver; M&C needs Chrome later tonight to paste FYM 1.11.
