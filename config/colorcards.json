@@ -416,7 +416,7 @@
    "tile": "assets/tiles/album/brownstone-bloom.jpg",
    "sub": "Ivory with lavender, wine & olive",
    "tag": [
-    "31 mat matches",
+    "40 mat matches",
     "and counting"
    ],
    "backs": [
@@ -450,14 +450,13 @@
     ]
    ],
    "racks": [
-    "Peace Love Mahjong Oak",
-    "Bird & Bamboo Lilac",
-    "Bird & Bamboo Moss",
-    "Bird & Bamboo Wine"
+    "Middle & Main Hawksbill Heritage Tortoise",
+    "Bam Bird Boutique Olive"
    ],
-   "racks_source": "PROPOSAL pending her OK (README site/livepatch/brownstone-bloom-oct20, triage B21); same tile racks as the 31 staged cards",
+   "racks_source": "Tiffany Oct 24 + Oct 29 8:04am (config/tile-racks-picks.json final_lists brownstone-bloom): M&M Hawksbill Heritage Tortoise + Bam Bird Boutique Olive; no B&B Wine, no AR Tortoise",
    "rack_imgs": {
-    "Peace Love Mahjong Oak": "assets/racks/card/peace-love-mahjong-oak.png"
+    "Middle & Main Hawksbill Heritage Tortoise": "assets/racks/card/middle--main-hawksbill-heritage-tortoise.png",
+    "Bam Bird Boutique Olive": "assets/racks/card/bam-bird-boutique-olive.png"
    },
    "mats": [
     "Brownstone Bloom",
