@@ -108,6 +108,9 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
 .it.off .nm,.it.off .bn{color:var(--gray)}
 .it .so{display:inline-block;margin-left:4px;padding:0 6px;border-radius:999px;background:var(--pink2);color:var(--pink);font:700 9.5px/1.6 var(--body)}
 .hint{font-size:12.5px;color:var(--mute);margin:0}
+.it .pr{font:700 11.5px/1.2 var(--body);color:var(--ink)}
+.it .pr em{display:block;font:italic 400 10px/1.2 var(--body);color:var(--pink)}
+.swaprow .btn{flex:1;padding:11px 6px;text-align:center}
 .active{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px;background:var(--pink2);border-radius:10px;padding:7px 10px}
 .active b{font-weight:700}
 .clear{border:0;background:var(--pink);color:#fff;border-radius:999px;padding:4px 11px;font:700 12px/1.3 var(--body)}
@@ -118,10 +121,6 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
 .seat{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 10px;font:600 12.5px/1 var(--body);display:flex;gap:6px;align-items:center}
 .seat i{width:14px;height:14px;border-radius:50%;display:block;border:1px solid rgba(0,0,0,.15)}
 .seat.on{border-color:var(--pink);box-shadow:inset 0 0 0 1px var(--pink)}
-#cmpBtn.on{background:var(--pink);border-color:var(--pink);color:#fff}
-.rtag{position:absolute;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:var(--pink);color:#fff;font:700 13px/26px var(--body);text-align:center;box-shadow:0 0 0 2px #fff,0 2px 6px rgba(0,0,0,.3);pointer-events:none}
-.rtag.sel{background:var(--navy)}
-.rtag.pulse{animation:pulse 1.2s ease-in-out 3}
 /* live app's Up close / Aerial (copied from FYM v112 CSS, scoped) */
 .vnote{margin:-2px 0 0;font-size:12.5px;color:var(--mute);text-align:center}
 #live .cmp{display:flex;flex-direction:column;gap:0}
@@ -143,18 +142,6 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
 #live .scard .meta b{display:block;font:700 16px/1.15 var(--body);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #live .scard .meta span{display:block;font-size:12px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #live .scard .meta img.lg{height:26px;width:auto;max-width:76px;object-fit:contain;flex:none}
-@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.35)}}
-.legend{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:8px}
-.legend .lh{font-size:13px;color:var(--ink)}
-.lrow{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:13px;padding:6px 0;border-top:1px solid var(--line)}
-.lrow .n{width:24px;height:24px;border-radius:50%;background:var(--pink);color:#fff;font:700 12px/24px var(--body);text-align:center}
-.lrow.sel .n{background:var(--navy)}
-.lrow img{width:44px;height:22px;object-fit:contain}
-.lrow .nm{flex:1 1 150px;min-width:0;font-weight:600;line-height:1.25}
-.lrow .acts{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-left:auto}
-.lrow a{color:var(--navy);font-weight:700;text-decoration:none;font-size:12.5px}
-.lrow button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 8px;font:600 11.5px/1.2 var(--body);color:var(--navy)}
-@media (prefers-reduced-motion:reduce){.rtag.pulse{animation:none}}
 .empty{font-size:13px;color:var(--mute);padding:10px 0}
 /* phone sheet */
 @media (max-width:959px){
@@ -208,11 +195,9 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
         <div class="banner" id="banner" hidden></div>
       </div>
       <div class="cap" id="cap"></div>
-      <div class="legend" id="legend" hidden></div>
       <div class="row" id="tableRow">
         <div class="seg" id="modeSeg"><button id="m-full" data-m="full" class="on">Full table</button><button id="m-corner" data-m="corner">Corner</button></div>
         <button class="btn" id="flip" hidden>Flip ⇄</button>
-        <button class="btn" id="cmpBtn">Compare racks</button>
         <button class="btn mobileonly" id="openAdj">Adjust</button>
       </div>
       <div class="row mobileonly">
@@ -225,13 +210,12 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
       <div class="grab"><span></span><button class="x" id="closeSheet" aria-label="Close">×</button></div>
       <section id="adjSec">
         <h2>Adjust the table</h2>
+        <div class="row swaprow"><button class="btn pri" data-open="tiles">Swap tiles</button><button class="btn pri" data-open="mat">Swap mat</button><button class="btn pri" data-open="racks">Swap racks</button></div>
         <div class="ctl"><span>Walls</span><button class="sw" id="walls" role="switch" aria-checked="true" aria-label="Walls"></button></div>
         <p class="hint" id="wallsNote" hidden></p>
         <div class="ctl"><span>Players</span><div class="seg" id="players"><button data-n="4" class="on">4</button><button data-n="3">3</button><button data-n="2">2</button></div></div>
-        <div><div class="lab" style="margin-bottom:8px" id="rackLab">Rack color · all seats</div><div class="chips" id="rackChips"></div></div>
         <div class="ctl"><span>Tile faces</span><button class="sw" id="faceSw" role="switch" aria-checked="true" aria-label="Show tile faces"></button></div>
         <div class="ctl"><span>Tile faces sit</span><div class="seg" id="facePos"><button data-p="center" class="on">Center</button><button data-p="corner">Corner</button></div></div>
-        <div class="row mobileonly"><button class="btn" data-open="tiles">Swap tiles</button><button class="btn" data-open="mat">Swap mat</button><button class="btn" data-open="racks">Swap racks</button></div>
       </section>
       <section id="swapSec">
         <h2>Swap</h2>
@@ -242,6 +226,7 @@ h1{font:400 26px/1.1 var(--display);color:var(--navy);margin:0;text-wrap:balance
         </div>
         <div class="dots" id="dots"></div>
         <div class="fins" id="fins" hidden></div>
+        <div class="fins prices" id="prices" aria-label="Price"></div>
         <div class="toggles">
           <label class="tg"><button class="sw" id="instock" role="switch" aria-checked="false" aria-label="In stock only"></button>In stock only</label>
           <label class="tg"><button class="sw" id="picks" role="switch" aria-checked="false" aria-label="Tiffany's picks"></button>Tiffany’s picks</label>
@@ -268,10 +253,12 @@ const COLORS={pink:'#ef8fb4',red:'#d23b3b',orange:'#f08a2c',yellow:'#f3cf3d',gre
 const FINS=[['wood','Wood'],['walnut','Walnut'],['tortoise','Tortoise'],['pearl','Pearl'],['clear','Clear / Acrylic'],['lucite','Lucite'],['metallic','Metallic'],['white','White'],['glitter','Glitter']];
 const SEATN=['You','Right','Across','Left'], SIDE=['S','E','N','W'];
 /* index-only items (whole catalog, no photos) */
-const IX={mat:DATA.idx.mats.map(a=>({k:a[0],n:a[1],bn:a[2],pa:!!a[3],so:!!a[4],mf:a[5],why:a[6],ix:1})),
-          tiles:DATA.idx.tiles.map(a=>({k:a[0],n:a[1],bn:a[2],pa:!!a[3],so:!!a[4],why:a[5],ix:1})),
-          racks:DATA.idx.racks.map(a=>({k:a[0],n:a[1],bn:a[2],pa:!!a[3],so:!!a[4],rf:a[5],fin:a[6],len:a[7],why:a[8],ix:1}))};
-const st={compare:false,pulsed:false,set:'oh-my-mahjong-papaya-spritz',mat:null,seats:[],seatSel:-1,players:4,view:'table',mode:'full',flip:false,walls:true,faces:true,facePos:'center',z:1,px:0,py:0,
+const P3=a=>({p:a[0],pc:a[1],cd:a[2]});
+const IX={mat:DATA.idx.mats.map(a=>({...P3(a),k:a[3],n:a[4],bn:a[5],pa:!!a[6],so:!!a[7],mf:a[8],why:a[9],ix:1})),
+          tiles:DATA.idx.tiles.map(a=>({...P3(a),k:a[3],n:a[4],bn:a[5],pa:!!a[6],so:!!a[7],why:a[8],ix:1})),
+          racks:DATA.idx.racks.map(a=>({...P3(a),k:a[3],n:a[4],bn:a[5],pa:!!a[6],so:!!a[7],rf:a[8],fin:a[9],len:a[10],why:a[11],ix:1}))};
+const money=v=>'$'+(Math.round(v)===v?v:v.toFixed(2));
+const st={price:'',set:'oh-my-mahjong-papaya-spritz',mat:null,seats:[],seatSel:-1,players:4,view:'table',mode:'full',flip:false,walls:true,faces:true,facePos:'center',z:1,px:0,py:0,
   tab:'mat',qs:{tiles:'',mat:'',racks:''},brand:'',color:'',fin:'',instock:false,picks:false};
 const big=()=>T[st.set].tw>0.95;
 const fitsLen=len=>!(big()&&len<=18.5);
@@ -346,16 +333,7 @@ function draw0(){
   placeFaces();applyZoom();markSeat();
 }
 function sceneToStage(r){const cr=crop();const s=stage.clientWidth;if(!cr)return {x:r.x*s,y:r.y*s,w:r.w*s,h:r.h*s};const k=s/(1-cr.q0);return {x:(r.x-cr.x0)*k,y:(r.y-cr.q0)*k,w:r.w*k,h:r.h*k}}
-function markSeat(){let m=$('#seatmark');if(!m){m=document.createElement('div');m.id='seatmark';m.className='seatmark';zoomer.appendChild(m)}
-  $$('.rtag').forEach(e=>e.remove());const h=HIT.find(h=>h.si===st.seatSel);
-  if(!h||st.view!=='table'||!st.compare)m.hidden=true;else{const b=sceneToStage(h);m.hidden=false;Object.assign(m.style,{left:b.x-3+'px',top:b.y-3+'px',width:b.w+6+'px',height:b.h+6+'px'})}
-  if(!st.compare||st.view!=='table')return;
-  const order=activeSeats();HIT.forEach(h=>{const b=sceneToStage(h);const t=document.createElement('div');t.className='rtag'+(h.si===st.seatSel?' sel':'')+(!st.pulsed&&order.indexOf(h.si)===0?' pulse':'');
-    t.textContent=order.indexOf(h.si)+1;t.style.left=(b.x+b.w/2)+'px';t.style.top=(b.y+b.h/2)+'px';zoomer.appendChild(t)});st.pulsed=true}
-function legend(){const L=$('#legend');L.hidden=!st.compare||st.view!=='table';if(L.hidden)return;const order=activeSeats();
-  L.innerHTML=`<div class="lh">Comparing racks. Tap a numbered rack on the table, then pick a different one to see them side by side.</div>`+order.map((si,i)=>{const r=R[st.seats[si]];
-    return `<div class="lrow${si===st.seatSel?' sel':''}"><span class="n">${i+1}</span><img src="${r.th||''}" alt=""><span class="nm">${esc(r.n)}</span><span class="acts">${r.u?`<a href="${esc(r.u)}" target="_blank" rel="noopener">Shop ›</a>`:''}<button data-all="${si}">Use this one for all 4</button></span></div>`}).join('');
-  L.querySelectorAll('[data-all]').forEach(b=>b.onclick=()=>{const k=st.seats[+b.dataset.all];st.seats=st.seats.map(()=>k);st.compare=false;sync();toast(`${R[k].n} on all 4 seats.`)})}
+function markSeat(){}
 function placeFaces(){const f=$('#faces');const t=T[st.set];$('#facesImg').src=t.face||t.th||'';
   let show=st.view==='table'&&st.faces;f.hidden=!show;if(!show)return;
   let d,cx,cy;if(st.view==='aerial'){d=40;cx=50;cy=50}else if(st.view==='close'){d=30;cx=80;cy=80}
@@ -381,7 +359,7 @@ let lastTap=0;
 const up=e=>{const was=pts.has(e.pointerId);pts.delete(e.pointerId);if(pinch&&pts.size<2){pinch=null;if(st.z<=1.01){st.z=1;st.px=st.py=0;applyZoom()}draw();return}if(!pts.size)pan=null;
   if(!was||moved||e.type==='pointercancel'||e.target.closest('button'))return;
   const n=Date.now();if(n-lastTap<300){lastTap=0;if(st.z>1.01)zoomAt(1,0,0);else zoomAt(2,downAt.x,downAt.y);draw();return}lastTap=n;
-  if(st.view==='table'&&st.compare){const s=stage.clientWidth;const x=(downAt.x-st.px)/st.z,y=(downAt.y-st.py)/st.z;
+  if(false){const s=stage.clientWidth;const x=(downAt.x-st.px)/st.z,y=(downAt.y-st.py)/st.z;
     const h=HIT.find(h=>{const b=sceneToStage(h);return x>=b.x-8&&x<=b.x+b.w+8&&y>=b.y-8&&y<=b.y+b.h+8});if(h){st.seatSel=h.si;sync();openSheet('swap','racks')}}};
 stage.addEventListener('pointerup',up);stage.addEventListener('pointercancel',up);
 stage.addEventListener('touchmove',e=>{if(e.touches.length>1||st.z>1.01)e.preventDefault()},{passive:false});
@@ -397,36 +375,27 @@ function sync(){
   wn.textContent=!t.walls?`Walls for ${t.n}: ${t.why} We only draw walls from a real back color.`:(t.patch?`${t.n} walls use a pattern cut from a photo of its real backs.`:'');
   $$('#players button').forEach(b=>{b.classList.toggle('on',+b.dataset.n===st.players);b.disabled=st.mode==='corner'});
   if(st.seatSel>=0&&!activeSeats().includes(st.seatSel))st.seatSel=-1;
-  if(!st.compare)st.seatSel=-1;
-  $('#cmpBtn').classList.toggle('on',st.compare);$('#cmpBtn').textContent=st.compare?'Done comparing':'Compare racks';
-  $('#rackLab').textContent=st.compare?(st.seatSel<0?'Tap a numbered rack on the table first':`Try a rack in spot ${activeSeats().indexOf(st.seatSel)+1}`):'Rack color · all 4 racks';
-  legend();
+  st.seatSel=-1;
   setSw($('#faceSw'),st.faces);$$('#facePos button').forEach(b=>b.classList.toggle('on',b.dataset.p===st.facePos));
   const bn=$('#banner');let msg='';
-  if(tbl&&st.compare)msg='Tap a rack to try a different one there. ';
   if(tbl){if(mat.cls==='C')msg=`${mat.n}: ${mat.why} Not available in Table view.`;else if(mat.cls==='B'&&st.mode==='corner')msg=`${mat.n}: ${mat.why}`;
     if(!t.walls&&st.walls)msg+=(msg?' ':'')+`Walls off: ${t.why}`}
   bn.hidden=!msg;bn.textContent=msg.trim();
   const rs=[...new Set(activeSeats().map(si=>st.seats[si]))].map(k=>R[k].n).join(' + ');
   $('#cap').innerHTML=`<span><b>${esc(t.n)}</b> tiles · <b>${esc(mat.n)}</b> mat · <b>${esc(rs)}</b></span><span>${esc(disp(mat.bn))}</span>`;
-  rackChips();renderGrid();draw();
+  renderGrid();draw();
 }
 function liveView(){const t=T[st.set],m=M[st.mat];const lg=DATA.logos[m.bn];const ph=m.im||m.th;
   const card=`<div class="deck m"><div class="scard"><div class="ph"><img src="${ph}" alt="${esc(m.n)}" class="photo">${st.view==='aerial'?`<img class="onmat" src="${t.face||t.th}" alt="">`:''}</div><div class="meta">${lg?`<img class="lg" src="${lg}" alt="">`:''}<div class="tx"><b>${esc(m.n)}</b><span>${esc(disp(m.bn))}</span></div></div></div></div>`;
   $('#live').innerHTML=st.view==='close'?`<div class="cmp"><div class="tilev"><img src="${t.face||t.th}" alt="${esc(t.n)} tiles"></div><div class="tcap"><span>${esc(t.n)} tiles</span><span>Pinch either photo to zoom</span></div>${card}</div>`:`<div class="cmp aer">${card}</div>`}
-function setRack(k){if(!st.compare||st.seatSel<0)st.seats=st.seats.map(()=>k);else st.seats[st.seatSel]=k}
-function rackChips(){const box=$('#rackChips');const cur=st.seats[st.seatSel<0?0:st.seatSel];const ks=rackList().filter(usable).slice(0,16);if(!ks.includes(cur)&&usable(cur))ks.unshift(cur);
-  box.innerHTML=ks.map(k=>`<button class="chip${k===cur?' on':''}" data-k="${encodeURIComponent(k)}"><i style="background:${R[k].hx}"></i>${esc(short(R[k].n,R[k].bn))}</button>`).join('');
-  box.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{setRack(decodeURIComponent(b.dataset.k));sync()})}
+function setRack(k){st.seats=st.seats.map(()=>k)}/* always 4 matching racks (Tiffany Nov 1 5:45pm: Compare racks removed) */
 const short=(n,b)=>n.replace(b,'').replace(/^[\s\-–:]+/,'').replace(/Mahjong Rack.*$/i,'').trim()||n;
 $$('.views button').forEach(b=>b.onclick=()=>{st.view=b.dataset.v;sync()});
 $$('#modeSeg button').forEach(b=>b.onclick=()=>{if(b.disabled)return;st.mode=b.dataset.m;sync()});
 $('#flip').onclick=()=>{st.flip=!st.flip;sync()};
 $('#walls').onclick=()=>{st.walls=!st.walls;sync()};
 $$('#players button').forEach(b=>b.onclick=()=>{st.players=+b.dataset.n;sync()});
-$('#cmpBtn').onclick=()=>{st.compare=!st.compare;st.seatSel=st.compare?0:-1;if(st.compare){const ks=rackList().filter(usable);const base=st.seats[0];const alts=ks.filter(k=>k!==base&&R[k].hx);
-  /* start with the current rack plus 3 close alternatives so the compare is visible right away */
-  st.seats=[base,...(alts.slice(0,3))];while(st.seats.length<4)st.seats.push(base)}sync()};
+
 $('#faceSw').onclick=()=>{st.faces=!st.faces;sync()};
 $$('#facePos button').forEach(b=>b.onclick=()=>{st.facePos=b.dataset.p;st.faces=true;sync()});
 /* ---------- non-modal half sheet (phone) ---------- */
@@ -445,8 +414,8 @@ $('#closeSheet').onclick=closeSheet;
 new ResizeObserver(padBody).observe(panel);
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeSheet();$('#modal').hidden=true;$('#pop').hidden=true}});
 /* ---------- swap: each tab keeps its own search text ---------- */
-function tabSync(){$$('.tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===st.tab));st.brand='';st.color='';st.fin='';$('#brandBtn').textContent='All brands ▾';$('#pop').hidden=true;
-  $('#q').value=st.qs[st.tab];$('#q').placeholder={tiles:'Search tile sets',mat:'Search mats by name',racks:'Search racks: name, color or finish'}[st.tab];renderDots();renderFins();renderGrid()}
+function tabSync(){$$('.tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===st.tab));st.brand='';st.color='';st.fin='';st.price='';$('#brandBtn').textContent='All brands ▾';$('#pop').hidden=true;
+  $('#q').value=st.qs[st.tab];$('#q').placeholder={tiles:'Search tile sets',mat:'Search mats by name',racks:'Search racks: name, color or finish'}[st.tab];renderDots();renderFins();renderPrices();renderGrid()}
 $$('.tabs button').forEach(b=>b.onclick=()=>{st.tab=b.dataset.t;tabSync()});
 $('#q').oninput=e=>{st.qs[st.tab]=e.target.value;renderGrid()};
 $('#instock').onclick=()=>{st.instock=!st.instock;setSw($('#instock'),st.instock);renderGrid()};
@@ -457,6 +426,9 @@ function renderFins(){const box=$('#fins');box.hidden=st.tab!=='racks';if(box.hi
   const have=new Set([...Object.values(R).flatMap(r=>r.fin),...IX.racks.flatMap(r=>r.fin)]);
   box.innerHTML=FINS.filter(([f])=>have.has(f)).map(([f,l])=>`<button class="fin${st.fin===f?' on':''}" data-f="${f}">${l}</button>`).join('');
   box.querySelectorAll('.fin').forEach(b=>b.onclick=()=>{st.fin=st.fin===b.dataset.f?'':b.dataset.f;renderFins();renderGrid()})}
+function renderPrices(){const r=(DATA.pr||{})[st.tab]||[];const box=$('#prices');box.hidden=!r.length;
+  box.innerHTML=`<button class="fin${st.price===''?' on':''}" data-p="">Any price</button>`+r.map(v=>`<button class="fin${st.price===v?' on':''}" data-p="${v}">Under $${v}</button>`).join('');
+  box.querySelectorAll('.fin').forEach(b=>b.onclick=()=>{st.price=b.dataset.p===''?'':+b.dataset.p;renderPrices();renderGrid()})}
 function poolItems(){if(st.tab==='mat')return Object.entries(M).map(([k,v])=>({...v,k}));if(st.tab==='tiles')return Object.entries(T).map(([k,v])=>({...v,k}));return Object.entries(R).map(([k,v])=>({...v,k}))}
 function brandsNow(){const m={};for(const it of [...poolItems(),...IX[st.tab]]){m[it.bn]=m[it.bn]||{n:0,pa:it.pa&&!LO.has(it.bn)};m[it.bn].n++}
   return Object.entries(m).sort((a,b)=>(b[1].pa-a[1].pa)||a[0].localeCompare(b[0]))}
@@ -484,27 +456,30 @@ function list(){const s=SETS[st.set];const q=st.qs[st.tab].trim().toLowerCase();
     if(!q&&!st.brand)rows=rows.filter(r=>!r.short);
     if(q||st.brand||st.fin)rows.push(...IX.racks.filter(it=>!st.picks&&(!st.color||it.rf.includes(st.color))&&(!st.fin||it.fin.includes(st.fin))).map(it=>({...it,off:true,tag:fitsLen(it.len)?'Not in Table view':'Too short for these tiles',why:fitsLen(it.len)?it.why:'Too short for these tiles.'})))}
   rows=rows.filter(okF);
+  if(st.price!==''){info.noprice=rows.filter(r=>r.pc==null).length;rows=rows.filter(r=>r.pc!=null&&r.pc<=st.price)}
   if(st.instock){const a=rows.filter(r=>!r.so);info.allso=a.length===0&&rows.length>0;if(!info.allso)rows=a}
   rows.sort((a,b)=>(a.off?1:0)-(b.off?1:0));
   return [rows,info,q]}
-function activeLine(q){const parts=[];if(q)parts.push(`results for <b>“${esc(q)}”</b>`);if(st.brand)parts.push(`<b>${esc(disp(st.brand))}</b>`);if(st.color)parts.push(`<b>${st.color}</b>`);if(st.fin)parts.push(`<b>${FINS.find(f=>f[0]===st.fin)[1]}</b>`);if(st.instock)parts.push('<b>in stock only</b>');if(st.picks)parts.push('<b>Tiffany’s picks</b>');
+function activeLine(q){const parts=[];if(q)parts.push(`results for <b>“${esc(q)}”</b>`);if(st.brand)parts.push(`<b>${esc(disp(st.brand))}</b>`);if(st.color)parts.push(`<b>${st.color}</b>`);if(st.fin)parts.push(`<b>${FINS.find(f=>f[0]===st.fin)[1]}</b>`);if(st.price!=='')parts.push(`<b>under $${st.price}</b>`);if(st.instock)parts.push('<b>in stock only</b>');if(st.picks)parts.push('<b>Tiffany’s picks</b>');
   const a=$('#active');a.hidden=!parts.length;if(!parts.length)return;a.innerHTML=`<span>Showing ${parts.join(' · ')}</span><button class="clear" id="clearAll">Clear</button>`;
-  $('#clearAll').onclick=()=>{st.qs[st.tab]='';$('#q').value='';st.brand='';st.color='';st.fin='';st.instock=false;st.picks=false;setSw($('#instock'),false);setSw($('#picks'),false);$('#brandBtn').textContent='All brands ▾';renderDots();renderFins();renderGrid()}}
+  $('#clearAll').onclick=()=>{st.qs[st.tab]='';$('#q').value='';st.brand='';st.color='';st.fin='';st.price='';st.instock=false;st.picks=false;setSw($('#instock'),false);setSw($('#picks'),false);$('#brandBtn').textContent='All brands ▾';renderDots();renderFins();renderPrices();renderGrid()}}
 function renderGrid(){const [rows,info,q]=list();const s=SETS[st.set];const g=$('#grid');let hint='';activeLine(q);
   if(st.tab==='mat')hint=`♥ = your match for ${T[st.set].n}. Gray = not available in Table view; tap it to see why.`;
   if(st.tab==='tiles')hint=`♥ = you matched this set with ${M[st.mat].n}.`;
   if(st.tab==='racks')hint=`Only racks that fit ${T[st.set].n} tiles can go on the table${info.cut?` (${info.cut} shorter racks are hidden until you search)`:''}. ♥ = your rack picks for this mat.`;
   if(info.allso)hint='No in-stock matches here, so showing all. '+hint;
+  if(st.price!==''&&info.noprice)hint=`${info.noprice} without a listed price not shown (ShopMy, Etsy and Amazon items). `+hint;
+  if(st.price!=='')hint+=' Prices: store price, or less with code MAHJMATCH where it applies.';
   $('#swapHint').textContent=hint;
   if(!rows.length){g.innerHTML='<div class="empty">Nothing matches. Tap Clear above to see everything again.</div>';return}
   const vis=rows.slice(0,160);
   g.innerHTML=vis.map((it,i)=>{const on=(st.tab==='mat'&&it.k===st.mat)||(st.tab==='tiles'&&it.k===st.set)||(st.tab==='racks'&&it.k===st.seats[st.seatSel<0?0:st.seatSel]);
     const ph=it.th?`<img src="${it.th}" alt="" loading="lazy">`:`<span style="display:grid;place-items:center;height:100%;font:600 10px/1.2 var(--body);color:var(--gray);padding:6px;text-align:center">No photo in this sample</span>`;
-    return `<button class="it${st.tab==='racks'?' rk':''}${it.off?' off':''}${on?' on':''}" data-i="${i}"><span class="ph">${ph}${it.pk?'<span class="pk">♥</span>':''}${it.tag?`<span class="tag">${it.tag}</span>`:''}</span><span class="nm">${esc(it.n)}${it.so?'<span class="so">Sold out</span>':''}</span><span class="bn">${esc(disp(it.bn))}</span></button>`}).join('')+(rows.length>vis.length?`<div class="empty">${rows.length-vis.length} more. Search to narrow it down.</div>`:'');
+    return `<button class="it${st.tab==='racks'?' rk':''}${it.off?' off':''}${on?' on':''}" data-i="${i}"><span class="ph">${ph}${it.pk?'<span class="pk">♥</span>':''}${it.tag?`<span class="tag">${it.tag}</span>`:''}</span><span class="nm">${esc(it.n)}${it.so?'<span class="so">Sold out</span>':''}</span><span class="bn">${esc(disp(it.bn))}</span>${it.p!=null?`<span class="pr">${money(it.p)}${it.cd?' <em>less with code MAHJMATCH</em>':''}</span>`:''}</button>`}).join('')+(rows.length>vis.length?`<div class="empty">${rows.length-vis.length} more. Search to narrow it down.</div>`:'');
   g.querySelectorAll('.it').forEach(b=>b.onclick=()=>pick(vis[+b.dataset.i]))}
 function pick(it){
   if(it.off){toast(`${it.n}: ${it.why||it.tag+'.'} ${it.ix?'It’s in the app; this sample only loads part of the catalog.':'You can still see it in Up close and Aerial.'}`);return}
-  if(st.tab==='mat'){st.mat=it.k;if(it.cls==='B')st.mode='corner';const r=(SETS[st.set].recs[it.k]||[]).find(usable);if(r&&!st.compare)st.seats=st.seats.map(()=>r)}
+  if(st.tab==='mat'){st.mat=it.k;if(it.cls==='B')st.mode='corner';const r=(SETS[st.set].recs[it.k]||[]).find(usable);if(r)st.seats=st.seats.map(()=>r)}
   else if(st.tab==='tiles'){st.set=it.k;fixSeats()}
   else setRack(it.k);
   sync()}

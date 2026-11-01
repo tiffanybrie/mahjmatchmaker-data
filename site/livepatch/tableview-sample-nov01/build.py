@@ -22,6 +22,12 @@ for f in glob.glob(B + '/mc/*.webp'):
 COV = json.load(open(R / 'config/tableview-photo-class-nov01.json'))
 STK = json.load(open(R / 'config/fym-stock.json'))['items']
 BACK = json.load(open(R / 'config/tableview-back-colors.json'))
+PCT = json.load(open(R / 'config/fym-code-pct.json'))['pct']
+def price(key, bn, pa):
+    v = STK.get(key, {}).get('price')
+    if v is None: return None, None, 0
+    pc = PCT.get(bn) if pa else None
+    return v, round(v * (1 - pc / 100), 2) if pc else v, int(bool(pc))
 LINKONLY = {'Tigre de Tartan'}
 
 def from_img(key):
@@ -68,7 +74,8 @@ def add_mat(k):
     cls = c['class'] if c.get('racks') != 'colored' else 'C'
     full = from_path(m['f']) if m.get('f') else None
     if k == FRUIT: full = Image.open(R / 'assets/table-view/src/mm-fruit-stand-overhead-photo.jpg')
-    mats[k] = dict(n=m['n'], bn=m['bn'], pa=bool(m.get('pa')), nc=bool(m.get('nc')), u=m.get('u'), rt=bool(m.get('rt')),
+    _p = price('m:' + k, m['bn'], m.get('pa'))
+    mats[k] = dict(p=_p[0], pc=_p[1], cd=_p[2], n=m['n'], bn=m['bn'], pa=bool(m.get('pa')), nc=bool(m.get('nc')), u=m.get('u'), rt=bool(m.get('rt')),
                    mf=m.get('mf', []), hol=bool(m.get('hol')), cls=cls, rk=c.get('racks', 'none'),
                    why={'B': 'Only a close-up or corner photo of this mat, so Corner view only.',
                         'C': ('This mat’s photo has its own colored racks on it.' if c.get('racks') == 'colored' else 'No flat, top-down photo of this mat yet.')}.get(cls, ''),
@@ -83,7 +90,8 @@ def add_rack(k):
     if k in ('bb:Lilac', 'bb:Lavender'):
         im = Image.open(R / ('assets/table-view/src/bb-real/' + ('bb-p51-lilac-rack-overhead.png' if k == 'bb:Lilac' else 'bb-p51-rack-overhead-lavender.png'))); c = {'class': 'S'}
     ok = c['class'] == 'S' and im is not None and im.mode == 'RGBA' and im.width > im.height * 3
-    racks[k] = dict(fin=finish(r), n=r['n'], bn=r['bn'], pa=bool(r.get('pa')), nc=bool(r.get('nc')), u=r.get('u'), hx=r.get('hx', '#ccc'), rf=r.get('rf', []),
+    _p = price('r:' + k, r['bn'], r.get('pa'))
+    racks[k] = dict(p=_p[0], pc=_p[1], cd=_p[2], fin=finish(r), n=r['n'], bn=r['bn'], pa=bool(r.get('pa')), nc=bool(r.get('nc')), u=r.get('u'), hx=r.get('hx', '#ccc'), rf=r.get('rf', []),
                     len=float(r.get('len') or 20), ok=ok, why='' if ok else ('Only a group or lifestyle photo of these racks.' if c['class'] == 'G' else 'Only an angled photo of these racks.'),
                     so=bool(STK.get('r:' + k, {}).get('in') is False),
                     th=url(im, 260, 72, keep_alpha=True), im=url(im, 640, 74, keep_alpha=True) if ok else None)
@@ -112,7 +120,8 @@ for sl in SLUGS:
     for idx in s['cr'][:6]:
         x = D['uni'][idx] if idx < len(D['uni']) else None
         if x and add_rack(x) and x not in rk: rk.append(x)
-    tiles[sl] = dict(n=s['name'], bn=t['bn'], pa=bool(t.get('pa')), nc=bool(t.get('nc')), u=t.get('u'), back_hex=bk['back'] if bk else None, back_src=bk['src'] if bk else None, btype=bk['type'] if bk else None, patch=patch, why=wall_why, fam=fam(bk['back'] if bk else s.get('tc', '#888888')),
+    _p = price('t:' + s['tile'], t['bn'], t.get('pa'))
+    tiles[sl] = dict(p=_p[0], pc=_p[1], cd=_p[2], n=s['name'], bn=t['bn'], pa=bool(t.get('pa')), nc=bool(t.get('nc')), u=t.get('u'), back_hex=bk['back'] if bk else None, back_src=bk['src'] if bk else None, btype=bk['type'] if bk else None, patch=patch, why=wall_why, fam=fam(bk['back'] if bk else s.get('tc', '#888888')),
                      tw=float(t.get('tw') or .9), walls=walls, so=bool(t.get('oos') or t.get('so')),
                      face=url(face, 320, 64, square=True), th=url(face, 120, 64, square=True), back=None)
     sets.append(dict(slug=sl, picks=picks, color=color, recs=recs, racks=rk))
@@ -124,22 +133,33 @@ vis_r = [k for k, r in D['racks'].items() if not r.get('hid')]
 for k, m in D['mats'].items():
     if m.get('hid') or k in mats: continue
     c = COV.get(k, {}); cls = c.get('class', 'C') if c.get('racks') != 'colored' else 'C'
-    idx['mats'].append([k, m['n'], m['bn'], int(bool(m.get('pa'))), int(STK.get('m:' + k, {}).get('in') is False), m.get('mf', []),
+    _p = price('m:' + k, m['bn'], m.get('pa'))
+    idx['mats'].append([*_p, k, m['n'], m['bn'], int(bool(m.get('pa'))), int(STK.get('m:' + k, {}).get('in') is False), m.get('mf', []),
                         'Not loaded in this sample yet (it is in the app).' if cls == 'A' else ('Only a close-up or corner photo of this mat.' if cls == 'B' else ('Its photo has its own colored racks on it.' if c.get('racks') == 'colored' else 'No flat, top-down photo of this mat yet.'))])
 for s_ in D['sets']:
     if s_.get('hid') or s_['slug'] in tiles: continue
-    t = D['tiles'].get(s_['tile'], {}); idx['tiles'].append([s_['slug'], s_['name'], t.get('bn', s_['maker']), int(bool(t.get('pa'))), int(bool(t.get('oos') or t.get('so'))), 'Not loaded in this sample yet (it is in the app).'])
+    t = D['tiles'].get(s_['tile'], {}); _p = price('t:' + s_['tile'], t.get('bn', s_['maker']), t.get('pa')); idx['tiles'].append([*_p, s_['slug'], s_['name'], t.get('bn', s_['maker']), int(bool(t.get('pa'))), int(bool(t.get('oos') or t.get('so'))), 'Not loaded in this sample yet (it is in the app).'])
 for k in vis_r:
     if k in racks or k not in D['racks']: continue
-    r = D['racks'][k]; c = COV['_racks'].get(k, {'class': 'G'})
-    idx['racks'].append([k, r['n'], r['bn'], int(bool(r.get('pa'))), int(STK.get('r:' + k, {}).get('in') is False), r.get('rf', []), finish(r), float(r.get('len') or 20),
+    r = D['racks'][k]; c = COV['_racks'].get(k, {'class': 'G'}); _p = price('r:' + k, r['bn'], r.get('pa'))
+    idx['racks'].append([*_p, k, r['n'], r['bn'], int(bool(r.get('pa'))), int(STK.get('r:' + k, {}).get('in') is False), r.get('rf', []), finish(r), float(r.get('len') or 20),
                          'Only a group or lifestyle photo of these racks.' if c['class'] == 'G' else 'Only an angled photo of these racks.'])
 bp = Image.open(R / 'assets/table-view/src/omm-papaya-back-photo.png').convert('RGBA')
 bp = bp.crop(bp.split()[3].point(lambda v: 255 if v > 128 else 0).getbbox())
 tiles['oh-my-mahjong-papaya-spritz']['back'] = url(bp, 160, 80, keep_alpha=True)
 brands = sorted({x['bn'] for x in list(mats.values()) + list(racks.values()) + list(tiles.values())})
 logos = {b: url(from_img(D['logos'][b]), 200, 80, keep_alpha=True) for b in brands if b in D['logos'] and from_img(D['logos'][b])}
-DATA = dict(idx=idx, sets=sets, mats=mats, racks=racks, tiles=tiles, logos=logos, linkonly=sorted(LINKONLY), checked=json.load(open(R / 'config/fym-stock.json')).get('checked', ''))
+def friendly(x): return int(round(x / 5) * 5) if x < 100 else int(round(x / 25) * 25)
+def ranges(vals):
+    v = sorted(vals); q = [v[int(len(v) * f)] for f in (.25, .5, .75)] if len(v) >= 8 else []
+    return sorted(set(friendly(x) for x in q))
+allp = {'mat': [m['pc'] for m in mats.values() if m['pc']] + [a[1] for a in idx['mats'] if a[1]],
+        'racks': [r['pc'] for r in racks.values() if r['pc']] + [a[1] for a in idx['racks'] if a[1]],
+        'tiles': [t['pc'] for t in tiles.values() if t['pc']] + [a[1] for a in idx['tiles'] if a[1]]}
+cover = {'mat': (len(allp['mat']), len(mats) + len(idx['mats'])), 'racks': (len(allp['racks']), len(racks) + len(idx['racks'])), 'tiles': (len(allp['tiles']), len(tiles) + len(idx['tiles']))}
+PR = {k: ranges(v) for k, v in allp.items()}
+print('price ranges', PR, 'coverage', {k: f'{a}/{b} = {round(100*a/b)}%' for k, (a, b) in cover.items()})
+DATA = dict(pr=PR, idx=idx, sets=sets, mats=mats, racks=racks, tiles=tiles, logos=logos, linkonly=sorted(LINKONLY), checked=json.load(open(R / 'config/fym-stock.json')).get('checked', ''))
 js = json.dumps(DATA, separators=(',', ':'), ensure_ascii=False)
 app = (HERE / 'app.html').read_text()
 out = app.replace('/*DATA*/null', js)

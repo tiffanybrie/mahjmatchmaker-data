@@ -1,6 +1,8 @@
 """FYM stock check (Tiffany Nov 1 12:04am: 'In stock only' filter). Checks every visible FYM mat / rack / tile product on its
 brand's Shopify store (/products/<handle>.js -> available; a ?variant= in the link checks that variant) and writes
-config/fym-stock.json {"checked": "YYYY-MM-DD", "items": {"m:<id>"|"r:<id>"|"t:<tile>": {"in": true|false, "how": ...}}}.
+config/fym-stock.json {"checked": "YYYY-MM-DD", "items": {"m:<id>"|"r:<id>"|"t:<tile>": {"in": true|false, "how": ..., "price"?: USD}}}.
+Nov 1 (Table view price filter): also saves "price" = the linked variant's price, else the product's lowest variant price (USD,
+from the same /products/<handle>.js call; Shopify sends cents). No price for retired / non-Shopify / failed lookups.
 ShopMy / Etsy / Amazon / non-Shopify links and any lookup error = unknown -> treated as IN stock (never hide on a guess).
 Retired items (rt) are always out of stock. Polite: one request at a time per store, 0.4 s apart, 8 stores in parallel.
 Usage: python3 scripts/fym_stock_check.py <build dir> [--out config/fym-stock.json]"""
@@ -45,8 +47,13 @@ def run_host(host):
         if '_err' in j: res[key] = {'in': True, 'how': 'unknown (' + j['_err'] + ')'}; continue
         if variant:
             v = [x for x in j.get('variants', []) if str(x.get('id')) == str(variant)]
-            if v: res[key] = {'in': bool(v[0].get('available')), 'how': 'shopify variant'}; continue
+            if v:
+                res[key] = {'in': bool(v[0].get('available')), 'how': 'shopify variant'}
+                if isinstance(v[0].get('price'), (int, float)): res[key]['price'] = round(v[0]['price'] / 100, 2)
+                continue
         res[key] = {'in': bool(j.get('available')), 'how': 'shopify product'}
+        pm = j.get('price_min', j.get('price'))
+        if isinstance(pm, (int, float)): res[key]['price'] = round(pm / 100, 2)
         if not res[key]['in'] and re.search(r'arriving|pre-?order|coming-soon', handle + ' ' + j.get('title', ''), re.I): res[key] = {'in': True, 'how': 'preorder (store says unavailable, link says arriving / pre-order)'}
 with ThreadPoolExecutor(8) as ex: list(ex.map(run_host, list(jobs)))
 out = {'_about': __doc__.split('\n')[0], 'checked': datetime.date.today().isoformat(), 'items': dict(sorted(res.items()))}

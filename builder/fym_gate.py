@@ -1343,8 +1343,10 @@ try:
         if m_.get('hid') or k_ not in _OI107: continue
         _ix = _OI107[k_]
         _rows = sorted((0 if any(x[0] == k_ for x in s_['m']) else 1, s_['rank'].index(_ix) if _ix in s_['rank'] else 10 ** 9, n_) for n_, s_ in enumerate(_vs107))
-        _sig107.setdefault(tuple(r_[2] for r_ in _rows[:8]), []).append(m_['n'])
-    _dup107 = [v_ for v_ in _sig107.values() if len(v_) >= 3]
+        _sig107.setdefault(tuple(r_[2] for r_ in _rows[:8]), []).append((m_['n'], m_.get('add') or ''))
+    # v113: only a group from ONE add batch is the 'un-ranked appends' bug; genuinely similar mats from different brands/batches
+    # (e.g. Mahj & Moon Pink Damask + two BJJ Betty florals, all ~80% the same pink) may share a top-8 order after colour ranking
+    _dup107 = [[n_ for n_, _ in v_] for v_ in _sig107.values() if len(v_) >= 3 and len({a_ for _, a_ in v_}) == 1]
     if _dup107: F.append(f"[107] {len(_dup107)} groups of 3+ mats show an identical mat-door tile order (un-ranked appends): " + '; '.join(', '.join(v_[:4]) for v_ in _dup107[:5]))
 except Exception as _e: F.append(f"[107] appended-mat rank check did not run: {_e}")
 # [108] Oct 30 (v104 QA: Bespoke XL Mega flat-lays, Round Top Stamped, House of Hydrangea, Lumera did not fill the frame). Gate [45]
@@ -1587,7 +1589,7 @@ if '/*v112' in UI:
     # fresh (<= 8 days), retired = sold out, and every sold-out flag in D comes from config/fym-stock.json
     for _a, _w in (("function matDeck(){return INSF('m',", 'mat deck filtered only via INSF'), ("function setsForMat(id){return INSG(", 'mat-door tile deck filtered via INSG'),
                    ("function rackDeck(){return INSF('r',", 'rack deck via INSF'), ("function doorMats(){return INSF('m',", 'mat door step 1 via INSF'),
-                   ('return INSB(k)+`<div class="frow"', 'chip by the tiles-door colour filter'), ("INSB('d')+`</div>`;}", 'chip in the mat door colour chips'),
+                   ('return INSB(k)+(k===\'r\'?FINROW(f,pool):\'\')+`<div class="frow"' if 'function FINROW(' in UI else 'return INSB(k)+`<div class="frow"', 'chip by the tiles-door colour filter'), ("INSB('d')+`</div>`;}", 'chip in the mat door colour chips'),
                    ("if(!f.length&&ids.length){S.insE=1;return ids;}", 'empty in-stock deck falls back to all'), ('No in-stock matches here, so showing all.', 'fallback note')):
         if _a not in UI: F.append(f"[138] in-stock toggle: {_w} missing")
     if re.search(r'S\.ins\s*=\s*(true|1|!0)\b', UI) or 'S.ins=localStorage' in UI: F.append("[138] in-stock toggle must default to OFF (All)")
