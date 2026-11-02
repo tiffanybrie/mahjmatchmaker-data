@@ -1,22 +1,47 @@
-# Partner codes post, Facebook GROUP only: Mon Nov 2 2026 (doc 94 weekly)
+# Partner codes post, Facebook GROUP only: Mon Nov 2 2026 (doc 94 weekly), v2
 
-Status: DRAFT for Tiffany's yes (HQ needs/codes-post-2026-11-02). Nothing posted, nothing in Planoly. No Instagram caption, no Facebook Page post (her Oct 30 9:06am).
-Where: Mahj Matchmaker Facebook GROUP, from her account (doc 82), list as the FIRST COMMENT, feature it and unfeature last week's.
-Image: assets/hub/partner-brands-2026-10-30.jpg (38 logos; hub unchanged since Oct 30, still "All 38", no partner added or dropped, so no graphic update).
-Sources: live /mahjong-discount-codes (curl Nov 2, "Updated October 30, 2026", 38 rows), HQ brands, hq/launches, config/release-calendar.json (Nov 2).
-News kept (public, future on posting day): Noli June FA LA LADIES public Tue Nov 3 6am CT (IG + waitlist page); Virora Lilacée restock ETA Nov 10 (product page); PLM Black Friday save-the-date Nov 16 (PLM IG Nov 1).
-News left out: Mahj Mood Playing for Keeps preorder Nov 6 (affiliate email only, not confirmed public); Tigre de Tartán House Tigers Nov 3 (TdT never typed in group text); OMM IMC preorder (accessory) and moving sale (codes don't apply).
-List: 34 brands typed. Left out: Tigre de Tartán (graphic only, Oct 30 rule), Yellow Mountain Imports (never featured on social, Oct 27; content_lint no-feature + code), Wren Mats (no program; left out on Oct 29 too), Mahjong Studios (shop through link).
+Status: DRAFT v2 for Tiffany's yes (HQ needs/codes-post-2026-11-02). Nothing posted, nothing in Planoly. No Instagram caption, no Facebook Page post (her Oct 30 9:06am).
+v2 (her Nov 2 chat): H1 = "Monday Partner Codes + Updates"; every partner update we know about goes in (affiliate emails included; Mahj Mood says share in your own words); photos for the updates.
+Where: Mahj Matchmaker Facebook GROUP, from her account (doc 82). Photos in the order below, list as the FIRST COMMENT, feature it, unfeature last week's.
+Preview: assets/social/codes-post/codes-post-preview-2026-11-02.jpg
+Photos (assets/social/codes-post-2026-11-02/): 01 Partner Brands graphic (38 logos, hub unchanged since Oct 30), 02 Mahj Mood Jade Luxe racks (her photo), 03 Virora Tinselle Emerald Green, 04 PLM Merry Nutcracker, 05 RMS Crown Jewels, 06 Charleston Hunt Club, 07 Amanda Toppe Lila travel, 08 Noli June FA LA LADIES (4 mats), 09 Maison Mahj House Line No. 1, 10 LBB Christmas Lights. Product photos are the brands' own store photos.
+Sources: live /mahjong-discount-codes (38 rows), HQ brands + hq/launches (partner + launch watch Oct 24-Nov 1), config/release-calendar.json, Gmail (Mahj Mood Oct 28, Noli June Oct 31, LBB Oct 30, RMS Nov 1, Maison Oct 30). Store checks Nov 2 (available): Mahj Mood Jade Luxe $130, Virora Tinselle Emerald $299, PLM Merry Nutcracker $300, Hip Hip Rackin' Rudolph $375, LBB Christmas Lights, Splash Kitschmas mat, Mahjong Register Holly Jolly $125, RMS Crown Jewels tiles $425 + mat $75, CMC Hunt Club $425, OMM Poppins $90, Britt Mills Calista leatherette $180, Bam Bird plaid neoprene $80, Maison House Line No. 1 $595 (preorder). From IG/email only: Amanda Toppe Lila travel (Nov 2 10am ET), CMC Cabana Club travel preorder, Noli June Nov 3, Maison public Nov 4, LMO mid-Nov, PLM Nov 16.
+Left out: Tigre de Tartán (never typed; House Tigers Nov 3), non-partners, Yellow Mountain Imports (never featured), past items (OMM moving sale, MRC FAMILY20, Bam Bird sale, LMO SPOOKY), no-date teasers (MRC Rosy/Ellington, Mahj & Vine, CMC x OTG247, Bam Bird restock).
+List: 34 brands typed (TdT graphic only; YMI, Wren Mats, Mahjong Studios not typed).
 Lint: python3 scripts/social/content_lint.py --codes-list post + comment: 0 FAIL.
 
 ## Post
-💸🀄 Monday Partner Codes 🀄💸
+💸🀄 Monday Partner Codes + Updates 🀄💸
 
-@everyone Happy Monday, y'all! Here's what's coming up with our partner brands:
+@everyone Happy Monday, y'all! Holiday season is officially here and our partner brands have been busy. Here's your roundup:
 
-❄️ Noli June's FA LA LADIES winter collection goes live tomorrow (Tue 11/3) at 6am CT: 4 new mats, plus matching tablecloths and dice dishes.
-💜 Virora Mahjong's Lilacée tiles are expected back in stock Tue 11/10.
-🗓️ Peace Love Mahjong says save the date: their Black Friday sale starts Mon 11/16.
+🎄 HOLIDAY, AVAILABLE NOW
+💚 Mahj Mood: the Jade Luxe racks dropped Friday and you can still get them ($130). It's a limited run with no more in production yet, and they're gorgeous on a holiday table!
+🌲 Virora Mahjong: Tinselle Emerald Green tiles are back.
+🎶 Peace Love Mahjong: Merry Nutcracker holiday tiles are back, with the pouch and dice.
+🦌 Hip Hip Mahjong: Rackin' Rudolph tiles, mat and shufflers are ready to ship.
+✨ Let's Be Besties: the new Christmas Lights mat.
+🎅 Splash of Color: the new Kitschmas Mahj Club mat and Christmas Cardinal engraved tiles.
+🎁 Mahjong Register: the Holly Jolly double-sided leatherette mat is restocked.
+
+🆕 NEW THIS WEEK
+👑 The Royal Mahjong Society: the Crown Jewels heirloom tiles are here (small first shipment!), plus the matching Crown Jewels mat.
+🦊 Charleston Mahjong Club: the Hunt Club Edition is back, and Cabana Club travel bundles are open for preorder (short window).
+☂️ Oh My Mahjong: the new Poppins mat.
+🩷 Britt Mills: leatherette versions of Calista, Aria, Daphne and Colorful Chinoiserie, plus the new Bella mat.
+💗 Bam Bird Boutique: new plaid neoprene mats in three colorways.
+🎨 Let's Be Besties: their new website is live, so you can shop mats by color, season or occasion.
+
+📅 COMING UP
+💜 Amanda Toppe: the Lila travel mat drops today at 10am ET (only 100 made, each with a case).
+❄️ Noli June: the FA LA LADIES winter collection goes live tomorrow (Tue 11/3) at 6am CT. Four new mats, each with a matching tablecloth and dice dish.
+💎 Maison Mahj: the House Line No. 1 tile set opens to everyone Wed 11/4 at 12:30pm CT (preorder, ships in February). The House Tote and Maison rack bags are ready to ship now.
+💘 Mahj Mood: Playing for Keeps, their Valentine's tile set, opens for preorder Fri 11/6 at 10am CT ($390, delivery planned for January). A matching Valentine's mat launches with it, and transparent pink racks are coming soon.
+🌸 Virora Mahjong: Lilacée tiles are expected back Tue 11/10.
+🖼️ Let's Be Besties: the LBB Artist Collective launches in early November.
+🪩 Let's Mahj On: seven new tile set designs are coming mid-November.
+🗓️ Peace Love Mahjong: save the date! Their Black Friday sale starts Mon 11/16.
+🌊 Mahj Mood: Lake Day opens for preorder Fri 11/20 at 10am CT ($390, delivery planned for February), with a Lake Day mat and transparent blue racks.
 
 Use our group code MAHJMATCH to save 10% or more at our partner brands. The full list, brand by brand, is in the first comment 👇
 

@@ -422,6 +422,7 @@ Never put drop shadows or other effects on text.
 | Oct 15 | No paid placements. Firsthand recommendations only on products she has used. |
 | Oct 18 | Brown is not a brand colour. No "SHOP THE MATCH" footers; every card carries Code MAHJMATCH. "Layers", never "stripes". No text effects. |
 | Oct 19 | Grid Rule D: one row of 3 per tile set (doc 89). Mood board style is the one standard (doc 79); the mat is the star (doc 78). Label tilt ≤12°. |
+| Nov 2 | Weekly FB group codes post (doc 94): H1 "Monday Partner Codes + Updates"; lead with every partner update we know (holiday launches, restocks, preorders, sales), including news from brand/affiliate emails, written in our own words (only skip what a brand asks to keep quiet); include photos: Partner Brands graphic + product photos for the highlights. No welcome-new-member posts (Tiffany Nov 2). |
 | Oct 19 | FB group style: H1 headline with emojis on both sides, links in the first comment, never "I may earn a commission" on visuals (doc 82). |
 | Oct 19 | We talk to collectors; never imply a set is a bad buy. Never shame anyone's matches. Safe villains only (docs 84, 85). |
 | Oct 19 | Profile version D is the standard (looking for / love language / irrational fear). Seal C is the IG profile logo. |
