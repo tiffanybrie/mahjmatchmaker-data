@@ -73,7 +73,13 @@ sz = {'mat': SC.get('mat_listed_in', 33.0), 'edge': 1.0, 'wallDepth': SC['wall_d
 # builder/table_view/rack_audit_nov02.py fix -> assets/table-view/racks/*.webp; listed in config/tableview-rack-audit-nov02.json 'fixed'
 AUD = json.load(open(R / 'config/tableview-rack-audit-nov02.json'))
 ro = {k: durl(v['file'], 900, alpha=True) for k, v in AUD['fixed'].items() if k in rk and (R / v['file']).exists()}
-TVD = dict(cls=cls, why=why, rk=rk, rkw=rkw, fin=fin, price=price, pm=pm, pt=pt, so=so, backs=backs, pr=pr, sz=sz, ro=ro)
+# v114 (Tiffany Nov 2 8:15am): photos fill the whole square. Peel-corner renders filled -> FULL table (class A); every other
+# Corner-class mat gets a fitted corner (affine + scale) so the card is all mat (builder/table_view/peel_nov02.py, corner_nov02.py)
+PF = json.load(open(R / 'config/tableview-peel-fill-nov02.json')); CV = json.load(open(R / 'config/tableview-corner-fit-nov02.json'))
+pf = {k: {'b': v['b']} for k, v in PF['full'].items() if k in D['mats']}
+for k in pf: cls[k] = 'A'; why.pop(k, None)
+cv = {k: {'m': v['m'], 'f': v['f']} for k, v in CV.items() if k in D['mats'] and cls.get(k) == 'B'}
+TVD = dict(cls=cls, why=why, rk=rk, rkw=rkw, fin=fin, price=price, pm=pm, pt=pt, so=so, backs=backs, pr=pr, sz=sz, ro=ro, pf=pf, pfT=PF['T2'], cv=cv)
 css = """<style>/* Table view preview (Nov 1 rebuild: sample UX) */
 /* WebKit iPhone: the step nav (.stp, 289px) would not shrink and pushed the stars/account icons 10px off-screen (also in live 1.12) */
 html{overflow-x:hidden;overscroll-behavior-x:none}body{overflow-x:clip;max-width:100%}/* not overflow on body: WebKit would make body the scroller and window.scrollTo would stop working */.top .stp{min-width:0;flex:1 1 auto;overflow:hidden}
@@ -177,4 +183,4 @@ h = h.replace('const D={', 'const D={"tv":' + json.dumps(TVD, separators=(',', '
 j = h.rindex('</body>') if '</body>' in h else len(h)
 h = h[:j] + inj + h[j:]
 (OUT / 'index.html').write_text(h)
-print('aerial refs', n, 'price ranges', pr, 'priced', {'mat': len(pm), 'tiles': len(pt), 'racks': len(price)}, 'cls', len(cls), 'usable racks', len(rk), 'backs', len(backs), 'priced racks', len(price), 'rack cut-outs', len(ro), 'price chips', pr, 'index MB', round(len(h.encode()) / 1e6, 2))
+print('aerial refs', n, 'price ranges', pr, 'priced', {'mat': len(pm), 'tiles': len(pt), 'racks': len(price)}, 'cls', len(cls), 'usable racks', len(rk), 'backs', len(backs), 'priced racks', len(price), 'rack cut-outs', len(ro), 'peel filled', len(pf), 'corner fits', len(cv), 'class B left', sum(1 for v in cls.values() if v == 'B'), 'price chips', pr, 'index MB', round(len(h.encode()) / 1e6, 2))

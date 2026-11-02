@@ -1,0 +1,938 @@
+{
+"alb2:mahj-tile-haus-imperial-lotus": {
+"m": [
+1.030928,
+0.0,
+0.0,
+1.030928,
+-0.015464,
+-0.015464
+],
+"f": 0.55,
+"kind": "centred",
+"why": "all mat (no background): centred square"
+},
+"alb2:that-mahjong-moment-evergreen": {
+"m": [
+1.030928,
+0.0,
+0.0,
+1.030928,
+-0.015464,
+-0.015464
+],
+"f": 0.55,
+"kind": "centred",
+"why": "all mat (no background): centred square"
+},
+"alb2:tigre-de-tartan-domino-oxblood": {
+"m": [
+1.388889,
+0.0,
+0.0,
+1.833517,
+-0.152778,
+-0.270077
+],
+"f": 0.55,
+"kind": "centred",
+"why": "mat on a table with a rack: square on the mat only"
+},
+"hutchandnook.com/mahjong-mat-pink-rose": {
+"m": [
+1.785714,
+0.0,
+0.0,
+1.797699,
+-0.142857,
+-0.506711
+],
+"f": 0.55,
+"kind": "centred",
+"why": "brand label under the mat, peel top-right: square on the mat only"
+},
+"letsbebesties.com/sky-blue-florals-mahjong-mat": {
+"m": [
+0.0,
+-1.788509,
+1.788509,
+0.0,
+-0.660714,
+1.125
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BL corner of the whole-mat photo"
+},
+"mahjandvine.com/pre-order-botanic-blush": {
+"m": [
+0.0,
+-1.740696,
+1.80072,
+0.0,
+-0.660714,
+1.128001
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BL corner of the whole-mat photo"
+},
+"mahjandvine.com/pre-order-coral-orchard-copy": {
+"m": [
+0.0,
+-1.740696,
+1.80072,
+0.0,
+-0.660714,
+1.128001
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BL corner of the whole-mat photo"
+},
+"mahjandvine.com/pre-order-sapphire-soiree-copy": {
+"m": [
+0.0,
+-1.737776,
+1.797699,
+0.0,
+-0.660714,
+1.127996
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BL corner of the whole-mat photo"
+},
+"mahjandvine.com/pre-order-sunset-swirl-copy": {
+"m": [
+0.0,
+-1.742197,
+1.80072,
+0.0,
+-0.660714,
+1.128001
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BL corner of the whole-mat photo"
+},
+"mahjandvine.com/watercolor-bloom": {
+"m": [
+0.0,
+-1.755753,
+1.797699,
+0.0,
+-0.660714,
+1.127996
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BL corner of the whole-mat photo"
+},
+"mahjongregister.com/pre-order-coral-aqua-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy": {
+"m": [
+0.014846,
+-3.001889,
+2.934431,
+0.014513,
+-1.799624,
+1.12074
+],
+"f": 0.4,
+"kind": "corner",
+"why": ""
+},
+"mahjongregister.com/pre-order-coral-aqua-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy-1": {
+"m": [
+3.019474,
+-0.012151,
+0.011928,
+2.964044,
+-1.867765,
+-1.832428
+],
+"f": 0.4,
+"kind": "corner",
+"why": ""
+},
+"mahjongregister.com/pre-order-emerald-teal-celedon-green-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy": {
+"m": [
+2.432553,
+0.009868,
+-0.009731,
+2.398768,
+-1.323485,
+-1.2897
+],
+"f": 0.42,
+"kind": "corner",
+"why": ""
+},
+"mahjongregister.com/pre-order-purple-coral-pink-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy-copy": {
+"m": [
+3.040282,
+-0.026412,
+0.026314,
+3.029022,
+-1.870493,
+-1.827851
+],
+"f": 0.4,
+"kind": "corner",
+"why": ""
+},
+"mahjongregister.com/pre-order-seafoam-green-slate-blue-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy": {
+"m": [
+0.007956,
+-2.840303,
+2.753934,
+0.007714,
+-1.602194,
+1.11223
+],
+"f": 0.4,
+"kind": "corner",
+"why": ""
+},
+"mahjongregister.com/preorder-butterfly-belle-premium-mahjong-mat-33-estimated-ship-oct-30th-copy": {
+"m": [
+2.895323,
+-0.043957,
+0.043957,
+2.895323,
+-1.806463,
+-1.750899
+],
+"f": 0.4,
+"kind": "corner",
+"why": ""
+},
+"mahjsquadshop.com/bejeweled-dream-mahjong-mat": {
+"m": [
+1.030928,
+0.0,
+0.0,
+1.545619,
+-0.015464,
+-0.272809
+],
+"f": 0.55,
+"kind": "centred",
+"why": "all mat (no background): centred square"
+},
+"mahjsquadshop.com/jade-green-chinoiserie-mahjong-mat": {
+"m": [
+1.030928,
+0.0,
+0.0,
+1.030928,
+-0.015464,
+-0.015464
+],
+"f": 0.55,
+"kind": "centred",
+"why": "all mat (no background): centred square"
+},
+"mahjsquadshop.com/regency-mahjong-mat": {
+"m": [
+1.030928,
+0.0,
+0.0,
+1.545619,
+-0.015464,
+-0.272809
+],
+"f": 0.55,
+"kind": "centred",
+"why": "all mat (no background): centred square"
+},
+"mahjsquadshop.com/the-greenwich-mat": {
+"m": [
+1.030928,
+0.0,
+0.0,
+1.076125,
+-0.015464,
+-0.038063
+],
+"f": 0.55,
+"kind": "centred",
+"why": "all mat (no background): centred square"
+},
+"mahjtilehaus.com/coastal-mat": {
+"m": [
+1.030928,
+0.0,
+0.0,
+1.030928,
+-0.015464,
+-0.015464
+],
+"f": 0.55,
+"kind": "centred",
+"why": "all mat (no background): centred square"
+},
+"missmahjong.com/after-party-mahjong-playing-mat": {
+"m": [
+0.580746,
+-1.806766,
+1.276028,
+0.410152,
+-0.306105,
+0.927174
+],
+"f": 0.507,
+"kind": "corner",
+"why": ""
+},
+"missmahjong.com/bandit-mahjong-playing-mat": {
+"m": [
+-0.009029,
+2.40631,
+-1.646317,
+-0.006178,
+1.081197,
+-1.328105
+],
+"f": 0.4,
+"kind": "corner",
+"why": ""
+},
+"missmahjong.com/bandit-mahjong-playing-mat-poppy-red": {
+"m": [
+-0.009028,
+2.401531,
+-1.645049,
+-0.006184,
+1.081052,
+-1.323481
+],
+"f": 0.4,
+"kind": "corner",
+"why": ""
+},
+"missmahjong.com/canopy-mahjong-playing-mat": {
+"m": [
+0.58621,
+-1.82938,
+1.28209,
+0.410836,
+-0.302815,
+0.917546
+],
+"f": 0.499,
+"kind": "corner",
+"why": ""
+},
+"missmahjong.com/cowgirl-gingham-mahjong-playing-mat": {
+"m": [
+0.57032,
+-1.811235,
+1.276921,
+0.402075,
+-0.301924,
+0.931022
+],
+"f": 0.506,
+"kind": "corner",
+"why": ""
+},
+"missmahjong.com/gingham-americana-mahjong-playing-mat": {
+"m": [
+0.71667,
+-1.840262,
+1.288184,
+0.501669,
+-0.358198,
+0.897996
+],
+"f": 0.51,
+"kind": "corner",
+"why": ""
+},
+"missmahjong.com/oasis-mahjong-playing-mat": {
+"m": [
+0.589797,
+-1.830057,
+1.282565,
+0.41335,
+-0.304252,
+0.916724
+],
+"f": 0.499,
+"kind": "corner",
+"why": ""
+},
+"missmahjong.com/papel-picado-mahjong-playing-mat": {
+"m": [
+0.573481,
+-1.837745,
+1.280296,
+0.399525,
+-0.298995,
+0.930155
+],
+"f": 0.499,
+"kind": "corner",
+"why": ""
+},
+"missmahjong.com/toile-de-los-muertos": {
+"m": [
+0.587395,
+-1.851572,
+1.276042,
+0.404813,
+-0.306291,
+0.937859
+],
+"f": 0.497,
+"kind": "corner",
+"why": ""
+},
+"missmahjong.com/wild-west-americana-mahjong-playing-mat": {
+"m": [
+0.979406,
+-4.457621,
+3.142623,
+0.690481,
+-2.149267,
+1.135286
+],
+"f": 0.4,
+"kind": "corner",
+"why": ""
+},
+"missmahjong.com/wild-west-mahjong-playing-mat": {
+"m": [
+0.975591,
+-4.483454,
+3.160835,
+0.687792,
+-2.160753,
+1.136025
+],
+"f": 0.4,
+"kind": "corner",
+"why": ""
+},
+"shop.andersruff.com/charming-blooms-mahjong-mat": {
+"m": [
+1.030928,
+0.0,
+0.0,
+1.030928,
+-0.015464,
+-0.015464
+],
+"f": 0.55,
+"kind": "centred",
+"why": "all mat (no background): centred square"
+},
+"shop.andersruff.com/palm-springs-mahjong-mat": {
+"m": [
+1.065298,
+-0.002475,
+0.002475,
+1.065298,
+-0.032112,
+-0.02964
+],
+"f": 0.801,
+"kind": "corner",
+"why": ""
+},
+"splashofcolorco.com/alpine-ski-lodge-mahjong-winter-play-mat": {
+"m": [
+1.785714,
+0.0,
+0.0,
+1.787655,
+-0.72632,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"splashofcolorco.com/purple-and-pink-hydrangea-blooms-mahjong-mat-33x33": {
+"m": [
+1.768511,
+0.0,
+0.0,
+1.789155,
+-0.711499,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"tigredetartan.com/mahjong-mat-el-tigre-new-edition": {
+"m": [
+1.612903,
+0.0,
+0.0,
+2.150538,
+-0.306452,
+-0.467742
+],
+"f": 0.55,
+"kind": "centred",
+"why": "mat in a frame: square inside the frame"
+},
+"tigredetartan.com/mahjong-mat-hearts-horseshoes-2": {
+"m": [
+1.030928,
+0.0,
+0.0,
+1.030928,
+-0.015464,
+-0.015464
+],
+"f": 0.55,
+"kind": "centred",
+"why": "all mat (no background): centred square"
+},
+"tigredetartan.com/paige-spearin-mahjong-mat-apres-mahj": {
+"m": [
+1.030928,
+0.0,
+0.0,
+1.37457,
+-0.015464,
+-0.187285
+],
+"f": 0.55,
+"kind": "centred",
+"why": "all mat (no background): centred square"
+},
+"tigredetartan.com/third-shipment-mahjong-mat-jardin-de-los-jefes": {
+"m": [
+1.030928,
+0.0,
+0.0,
+1.030928,
+-0.015464,
+-0.015464
+],
+"f": 0.55,
+"kind": "centred",
+"why": "all mat (no background): centred square"
+},
+"www.etsy.com/listing/4415039691/the-kristen-sweater-weather-mahjong-mat": {
+"m": [
+1.780125,
+0.0,
+0.0,
+1.788509,
+-0.723759,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.etsy.com/listing/4485280508/poppy-green": {
+"m": [
+1.780125,
+0.0,
+0.0,
+1.788509,
+-0.723759,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.etsy.com/listing/4489101904/anisa": {
+"m": [
+1.78292,
+0.0,
+0.0,
+1.788509,
+-0.726554,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.etsy.com/listing/4489102372/la-la-flamingo-garden": {
+"m": [
+1.632014,
+0.0,
+0.0,
+1.788509,
+-0.575648,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.etsy.com/listing/4497975591/preppy-mahjong-mat-with-white-bag": {
+"m": [
+1.861331,
+0.0,
+0.0,
+1.861331,
+-0.769951,
+-0.778676
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.etsy.com/listing/4500663288/junie": {
+"m": [
+1.785714,
+0.0,
+0.0,
+1.791312,
+-0.729344,
+-0.734942
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.etsy.com/listing/4510347710/the-brooke-mahjong-mat": {
+"m": [
+1.520509,
+0.0,
+0.0,
+1.788661,
+-0.461044,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.etsy.com/listing/4511258795/preppy-mahjong-mat-with-white-bag": {
+"m": [
+1.895285,
+0.0,
+0.0,
+1.895285,
+-0.773602,
+-0.758795
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.etsy.com/listing/4512194679/chinese-landscape-mahjong-mat-shan-shui": {
+"m": [
+1.78892,
+0.0,
+0.0,
+1.792126,
+-0.732143,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.etsy.com/listing/4523665977/gentleman-s-mat": {
+"m": [
+1.766152,
+0.0,
+0.0,
+1.788509,
+-0.709786,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.etsy.com/listing/4547665298/my-lucky": {
+"m": [
+1.468571,
+0.0,
+0.0,
+1.828571,
+-0.412143,
+-0.766429
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.etsy.com/listing/4551675967/wildflower-garden": {
+"m": [
+2.071471,
+0.007022,
+-0.005892,
+1.738093,
+-0.867626,
+-0.64367
+],
+"f": 0.634,
+"kind": "corner",
+"why": ""
+},
+"www.etsy.com/listing/4561868498/blythe": {
+"m": [
+1.372978,
+0.0,
+0.0,
+1.796945,
+-0.316599,
+-0.740566
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.etsy.com/listing/4571558388/the-gigi-katelyn-bruhn-and-bjj-collab": {
+"m": [
+1.805587,
+0.0,
+0.0,
+1.816943,
+-0.732143,
+-0.754855
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.letsmahj-on.com/signature-dragon-mat?v=42014242865257": {
+"m": [
+1.125039,
+0.092893,
+-0.093753,
+1.135448,
+-0.000745,
+-0.103959
+],
+"f": 0.807,
+"kind": "corner",
+"why": ""
+},
+"www.letsmahj-on.com/signature-dragon-mat?v=42014242930793": {
+"m": [
+-0.00326,
+-1.833749,
+1.833749,
+-0.00326,
+-0.77386,
+1.058264
+],
+"f": 0.465,
+"kind": "corner",
+"why": ""
+},
+"www.letsmahj-on.com/signature-dragon-mat?v=42014242963561": {
+"m": [
+1.132585,
+0.093872,
+-0.092855,
+1.120315,
+-0.011967,
+-0.092239
+],
+"f": 0.806,
+"kind": "corner",
+"why": ""
+},
+"www.viroramahjong.com/hollivia": {
+"m": [
+1.682494,
+0.0,
+0.0,
+1.789155,
+-0.625482,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.yolomahjong.com/blue-coral-watercolor-mahjong-mat": {
+"m": [
+1.785714,
+0.0,
+0.0,
+1.788509,
+-0.726554,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.yolomahjong.com/bold-pop-art-square-mahjong-mat-ship-rolled-up": {
+"m": [
+1.802775,
+0.0,
+0.0,
+1.819836,
+-0.732143,
+-0.74636
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.yolomahjong.com/classic-red-tartan-mahjong-mat-ship-rolled-up": {
+"m": [
+1.799887,
+0.0,
+0.0,
+1.814059,
+-0.726474,
+-0.74915
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.yolomahjong.com/mahjong-mat-31-5x31-5-ship-folded-2": {
+"m": [
+1.808318,
+0.0,
+0.0,
+1.78854,
+-0.726492,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.yolomahjong.com/mahjong-mat-31-5x31-5-ship-folded-3": {
+"m": [
+1.78292,
+0.0,
+0.0,
+1.788509,
+-0.723759,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.yolomahjong.com/mahjong-mat-green-dragon-scales-print-31-5-square-non-slip-table-mat": {
+"m": [
+1.785714,
+0.0,
+0.0,
+1.788509,
+-0.726554,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.yolomahjong.com/modern-abstract-watercolor-mahjong-mat": {
+"m": [
+1.785714,
+0.0,
+0.0,
+1.788509,
+-0.726554,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.yolomahjong.com/orange-black-abstract-square-mahjong-mat-ship-rolled-up": {
+"m": [
+1.808318,
+0.0,
+0.0,
+1.78854,
+-0.726492,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.yolomahjong.com/pastel-coastal-beach-mahjong-mat": {
+"m": [
+1.785714,
+0.0,
+0.0,
+1.788509,
+-0.726554,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.yolomahjong.com/pink-black-polka-dot-square-mahjong-mat-ship-rolled-up": {
+"m": [
+1.791312,
+0.0,
+0.0,
+1.791312,
+-0.726545,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.yolomahjong.com/rainbow-retro-pop-art-square-mahjong-mat-ship-rolled-up": {
+"m": [
+1.788509,
+0.0,
+0.0,
+1.788509,
+-0.726554,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.yolomahjong.com/sage-pink-watercolor-mahjong-mat": {
+"m": [
+1.785714,
+0.0,
+0.0,
+1.788509,
+-0.726554,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.yolomahjong.com/terracotta-diamond-mahjong-mat": {
+"m": [
+1.811184,
+0.0,
+0.0,
+1.799864,
+-0.732143,
+-0.734973
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+},
+"www.yolomahjong.com/whale-shark-coastal-mahjong-mat": {
+"m": [
+1.808318,
+0.0,
+0.0,
+1.78854,
+-0.723666,
+-0.732143
+],
+"f": 0.56,
+"kind": "corner",
+"why": "flat BR corner of the whole-mat photo"
+}
+}

@@ -45,12 +45,24 @@ function shaveA(im){if(!im)return im;try{const w=im.naturalWidth||im.width,h=im.
     const i=y*w+x;if(m<src[i]){a[i*4+3]=m;any=true}}
   if(!any)return im;g.putImageData(d,0,0);return cv}catch(e){return im}}
 async function rackImg(k){if(SHV.has(k))return SHV.get(k);const p=load(TRS(k)).then(shaveA);SHV.set(k,p);return p}
+/* v114 (Tiffany Nov 2 8:15am): the mat photo always FILLS the square.
+   Corner view (TVD.cv[mat]): the photo is placed by an affine (m: photo 0..1 -> card 0..1) so a real flat corner of the mat sits
+   at the card's bottom-right and the card is all mat (builder/table_view/corner_nov02.py); f = share of the mat's side shown, so
+   the 2 racks + 2 walls on that corner are at the real scale (config/tableview-sizecheck-nov01.json).
+   Peel-corner photos (TVD.pf[mat]): b = the mat square in the photo, p = the curled corner, filled with the mat mirrored left<->right
+   (builder/table_view/peel_nov02.py), so they are full tables. window.TVPROBE paints the background magenta for the gate check. */
 async function render(mat,s,rack,corner,N){
-  const PPI=N/SZ.mat,C=N/2;
+  const cv=corner&&TVD.cv&&TVD.cv[mat],pf=TVD.pf&&TVD.pf[mat];
+  const PPI=cv?N/(cv.f*SZ.mat):N/SZ.mat,C=cv?N-SZ.mat*PPI/2:N/2;
   const [mi,ri,fi]=await Promise.all([matFull(mat).then(load),rackImg(rack),load(tileFull(s)||pile(s))]);
   const bk=TVD.backs[s.slug];const [pat,spr]=await Promise.all([load(bk&&bk.p),load(bk&&bk.s)]);
-  const oc=document.createElement('canvas');oc.width=oc.height=N;const c=oc.getContext('2d');c.imageSmoothingQuality='high';c.fillStyle='#e4dcd2';c.fillRect(0,0,N,N);
-  if(mi){if(corner){const q0=N*.36;c.drawImage(mi,q0,q0,N-q0,N-q0)}else{const m=Math.min(mi.width,mi.height);c.drawImage(mi,(mi.width-m)/2,(mi.height-m)/2,m,m,0,0,N,N)}}
+  const oc=document.createElement('canvas');oc.width=oc.height=N;const c=oc.getContext('2d');c.imageSmoothingQuality='high';c.fillStyle=window.TVPROBE||'#e4dcd2';c.fillRect(0,0,N,N);
+  if(mi){const W=mi.naturalWidth||mi.width,H=mi.naturalHeight||mi.height;
+    if(cv){const [a,b,cc,d,e,f]=cv.m;c.save();c.setTransform(a*N,b*N,cc*N,d*N,e*N,f*N);c.drawImage(mi,0,0,1,1);c.restore()}
+    else if(pf){const [x0,y0,x1,y1]=pf.b,sx=x0*W,sy=y0*H,sw=(x1-x0)*W,sh=(y1-y0)*H;c.drawImage(mi,sx,sy,sw,sh,0,0,N,N);
+      c.save();c.beginPath();(TVD.pfT||pf.p).forEach(([x,y],i)=>i?c.lineTo(x*N,y*N):c.moveTo(x*N,y*N));c.closePath();c.clip();c.translate(N,0);c.scale(-1,1);c.drawImage(mi,sx,sy,sw,sh,0,0,N,N);c.restore()}
+    else if(corner){const q0=N*.36;c.drawImage(mi,q0,q0,N-q0,N-q0)}
+    else{const m=Math.min(W,H);c.drawImage(mi,(W-m)/2,(H-m)/2,m,m,0,0,N,N)}}
   const seats=corner?['S','E']:['S','E','N','W'];/* always 4 players (Tiffany Nov 1 7:43pm) */
   const RL=(R[rack]&&R[rack].len)||20;let RD=ri?RL*ri.height/ri.width:2.4;RD=Math.min(Math.max(RD,1.6),3.2);
   const L=RL*PPI,Dp=RD*PPI,E=SZ.edge*PPI;const inner={},place=[];
@@ -74,7 +86,7 @@ async function render(mat,s,rack,corner,N){
     c.save();c.shadowColor='rgba(0,0,0,.35)';c.shadowBlur=N*.018;c.beginPath();c.arc(cx,cy,d/2+N*.008,0,7);c.fillStyle='#fff';c.fill();c.restore();
     c.save();c.beginPath();c.arc(cx,cy,d/2,0,7);c.clip();const m=Math.min(fi.width,fi.height);c.drawImage(fi,(fi.width-m)/2,(fi.height-m)/2,m,m,cx-d/2,cy-d/2,d,d);c.restore()}
   try{return oc.toDataURL('image/jpeg',.88)}catch(e){return null}}
-window.TVRENDER=(mat,slug,rack,N)=>render(mat,D.sets.find(x=>x.slug===slug),rack,false,N||1400);/* QA hook: one table, no UI */
+window.TVRENDER=(mat,slug,rack,N,corner)=>render(mat,D.sets.find(x=>x.slug===slug),rack,corner==null?matCls(mat)==='B':corner,N||1400);/* QA / gate hook: one table, no UI (corner = as the app shows it) */
 function tableURL(x,N){const key=[x.mat,x.s.slug,x.rack,x.corner?1:0,TV.walls,TV.faces,N].join('|');const v=cget(key);if(v)return v;
   const p=render(x.mat,x.s,x.rack,x.corner,N);cput(key,p,N>2000?3:36);return p}
 /* ---------- cards ---------- */

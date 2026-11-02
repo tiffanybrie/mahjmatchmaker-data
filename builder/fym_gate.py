@@ -1703,6 +1703,17 @@ if '/*v114 table view*/' in UI:
     if _o146.returncode and not _l146: _l146 = ['[146] rack edge check failed: ' + (_o146.stderr or '')[-200:]]
     if len(_l146) > 8: _l146 = _l146[:8] + [f'[146] ... {len(_l146) - 8} more racks with a white box / white edge']
     for _f in _l146: F.append(_f)
+# [147] Tiffany Nov 2 8:15am: 'a corner view must FILL THE WHOLE SQUARE' (Scandi Folk Christmas Cream, YOLO Winter Ski Resort sat small
+# in a beige square). Every mat Table view can show is rendered as the app shows it (full table, or Corner with its fitted corner;
+# peel-corner renders filled) with the background painted two colours; any pixel that changes = uncovered background -> FAIL.
+if '/*v114 table view*/' in UI:
+    if "const cv=corner&&TVD.cv&&TVD.cv[mat]" not in UI: F.append("[147] Corner view does not use the fitted corner (TVD.cv)")
+    import subprocess as _sp147
+    _o147 = _sp147.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'table_view', 'cover_check_nov02.py'), B], capture_output=True, text=True, timeout=1200)
+    _l147 = [l for l in _o147.stdout.splitlines() if l.startswith('[147]')]
+    if _o147.returncode and not _l147: _l147 = ['[147] Table cover check failed: ' + (_o147.stderr or '')[-200:]]
+    if len(_l147) > 8: _l147 = _l147[:8] + [f'[147] ... {len(_l147) - 8} more Table renders with uncovered background']
+    for _f in _l147: F.append(_f)
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))
