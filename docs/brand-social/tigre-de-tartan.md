@@ -1,6 +1,7 @@
 # Tigre de Tartán (@tigre_de_tartan): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 2 3:12pm ET: 'Meet the American Tile set' (traditional faces, tournament size, 'subtly dazzling'), available Tue Nov 3 4pm CT = the House Tigers return (store: house-tigers-mahjong-tile-set-oyster still sold out) (https://www.instagram.com/reel/DfQIacFNuZ9/). Never MAHJMATCH/#MahjMatch with TdT.
 - Nov 2: holiday entertaining reel for their melamine plates (dishwasher-safe, shatterproof; buffets/kids table) (https://www.instagram.com/reel/DfOl7ZYh8q0/). Tableware push, no new tiles/mats.
 - Oct 30-31: House Tigers return Tue Nov 3 4pm CT incl. new oyster finish; pair with shell/snow/champagne themes (DfIyweTsRnz, DfKFw-7srxS). Never MAHJMATCH/#MahjMatch with TdT.
 - Oct 30 6:51pm + Oct 31 7:50am ET: House Tigers tiles RETURN Tue 11/3 4pm CT, 'back in an oyster finish' (DfIyweTsRnz, DfKFw-7srxS); styled with shell, snow, champagne, oyster themes; 'travels compactly but feels substantial'. Reels with licensed music (no media file).

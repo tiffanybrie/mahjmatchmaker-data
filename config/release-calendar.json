@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-02",
-  "updatedBy": "weekly release calendar refresh Nov 2 7:55am ET",
+  "updatedBy": "partner watch Nov 2 6:30pm ET",
   "rules": {
     "timing": {
       "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -606,7 +606,7 @@
       "priority": 3,
       "contentTiming": "No album. Launch-day story with code only if a fitting pairing; otherwise log.",
       "date": "2026-10-27T16:00-05:00",
-      "status": "Beechwood LIVE Oct 27 (site check 6:35pm ET, $325 available); Estate Sale mat LIVE ($175); Oct 30-31 IG: House Tigers tiles return Tue 11/3 4pm CT, also in an oyster finish (DfIyweTsRnz, DfKFw-7srxS)"
+      "status": "Beechwood LIVE Oct 27 (site check 6:35pm ET, $325 available); Estate Sale mat LIVE ($175); Oct 30-31 IG: House Tigers tiles return Tue 11/3 4pm CT, also in an oyster finish (DfIyweTsRnz, DfKFw-7srxS); Nov 2 IG DfQIacFNuZ9 'Meet the American Tile set' confirms Tue Nov 3 4pm CT (oyster still sold out on store)"
     },
     {
       "id": "virora-petalee",
@@ -790,18 +790,18 @@
     {
       "id": "lmo-new-lineup",
       "brand": "Let's Mahj On",
-      "product": "New lineup: 7 new tile set designs (unnamed)",
+      "product": "New lineup: tile sets Wild, Sweet, Golf, Refined, Merry, Stir Things Up (was '7 new designs')",
       "type": "launch",
       "window": "delayed to mid-November (IG Oct 29); was ~Nov 9",
       "windowStart": "2026-11-12",
       "windowEnd": "2026-11-20",
-      "status": "teased; Oct 30 SPOOKY 15% off $50+ flash sale \"clearing space for upcoming launches\"",
+      "status": "SNEAK PEEK Nov 2 3:51pm ET reel names 6 sets, 'coming soon' (no date); not on store yet. Flagged to Tiffany Nov 2.",
       "source": "IG Oct 26 + Oct 29 delay",
-      "sourceUrl": "https://www.instagram.com/reel/DfGDYhkFISK/",
+      "sourceUrl": "https://www.instagram.com/reel/DfQNG0Ejejh/",
       "album": false,
       "affiliate": true,
       "priority": 3,
-      "contentTiming": "Log."
+      "contentTiming": "Sneak peek flagged Nov 2. Watch letsmahj-on.com; swipe book the day photos/listing appear (not an album jump: not MRC/OMM). Teaser: assets/launches/lmo-new-lineup-teaser/"
     },
     {
       "id": "bbb-summer-sendoff-sale",
@@ -999,7 +999,7 @@
       "type": "launch",
       "window": "Mon Nov 2: email early access 12pm ET, everyone 1pm ET; limit 1 set per customer",
       "windowStart": "2026-11-02",
-      "status": "coming soon",
+      "status": "LIVE Nov 2 12pm ET; tiles + both rack bundles SOLD OUT by 6:30pm ET (products.json); mat available",
       "source": "Mary Benson email Oct 29 2:18pm ET",
       "sourceUrl": "https://marybensonart.com/collections/mahjong",
       "album": false,
@@ -1236,6 +1236,21 @@
       "affiliate": true,
       "priority": 2,
       "contentTiming": "New launch: launch watch / new-album rules own it. Travel version skipped."
+    },
+    {
+      "id": "moxie-tiles",
+      "brand": "Mahjong Moxie",
+      "product": "Moxie Tiles (first tile set; bold colours, chinoiserie)",
+      "type": "launch",
+      "window": "LIVE Fri Nov 6 12pm CST",
+      "date": "2026-11-06T12:00-06:00",
+      "status": "announced Nov 2 IG; not on mahjong-moxie.com yet",
+      "source": "IG Nov 2 2:26pm ET",
+      "sourceUrl": "https://www.instagram.com/reel/DfQDWuzhKvH/",
+      "album": false,
+      "affiliate": false,
+      "priority": 4,
+      "contentTiming": "Non-partner: record only."
     }
   ],
   "sources": {

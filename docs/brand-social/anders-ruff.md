@@ -1,6 +1,7 @@
 # Anders Ruff (@andersruffdesignco): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 2 4:32pm ET: close-up reel of the Brownstone Bloom tablescape (indigopruitt x real_simple collab): Brownstone Bloom mat + engraved hand-painted tiles + NEW blonde tortoiseshell racks with lucky hardware (all come with bags) (https://www.instagram.com/reel/DfQR3SoksZN/). Pairing: Brownstone Bloom mat with blonde tortoise racks.
 - Nov 2 12:14pm ET: holiday roundup carousel 'Your Christmas collection, perfectly curated' (tiles, luxe mats, finishing touches; shop.andersruff.com). Nothing new announced (DfP0bFpGJeA). #AndersRuffDesignCo #ChristmasMahjong #mahjongstyle.
 - Oct 31: Halloween mystery-item giveaway, comment BOO, winner Mon Nov 2 (DfKiVGBlerd).
 - Oct 30: Bams & Bubbly lifestyle post 'Two Jokers in one hand?!' (DfH0WuVyveR). #BamsAndBubbly #MahjongLife #AndersRuffDesignCo. No launch.
