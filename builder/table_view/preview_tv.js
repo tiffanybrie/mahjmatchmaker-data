@@ -151,7 +151,7 @@ function panel(){let p=$i('tvpanel');if(p)return p;p=document.createElement('asi
   if(typeof ResizeObserver!=='undefined')new ResizeObserver(pad).observe(p);return p}
 function pad(){const p=$i('tvpanel');document.body.style.paddingBottom=p&&p.classList.contains('open')&&innerWidth<1280?p.offsetHeight+'px':''}
 function fitP(){const p=$i('tvpanel');if(!p||innerWidth>=1280)return;const el=$i(CTX);const c=el&&el.querySelector('.scard[id^="top-"]');const hd=document.querySelector('header.top');
-  const H=(hd?hd.getBoundingClientRect().height:56)+6;const ch=c?c.getBoundingClientRect().height:0;p.style.maxHeight=Math.max(200,Math.round(innerHeight-H-ch-8))+'px'}
+  const H=(hd?hd.getBoundingClientRect().height:56)+6;const ch=c?c.getBoundingClientRect().height:0;const room=Math.round(innerHeight-H-ch-8);p.style.maxHeight=Math.max(innerWidth>=700?130:200,room)+'px'}/* QA Nov 1: the whole card, name row included, stays above the sheet (tablet/small desktop: no 200px floor) */
 addEventListener('resize',()=>{if(panelOpen()){fitP();pad()}});
 function openP(mode,tab){const p=panel();fitP();p.dataset.tvmode=mode;if(tab&&tab!==SW.tab){SW.tab=tab;resetFilters()}p.classList.add('open');p.style.transform='';p.scrollTop=0;syncAdj();if(mode==='swap')tabSync();requestAnimationFrame(()=>{pad();land(CTX)})}
 function closeP(){const p=$i('tvpanel');if(!p)return;p.classList.remove('open');p.style.transform='';pad()}
