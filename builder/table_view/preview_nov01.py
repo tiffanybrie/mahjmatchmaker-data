@@ -152,8 +152,9 @@ sub1("function jump(id){requestAnimationFrame(()=>{", "function jump(id){if(S.mo
 # zoom survives a new tile set in Table view
 sub1("dset:null,zs:{}});", "dset:null,zs:S.zs&&S.zs.tvz?{tvz:S.zs.tvz}:{}});")
 # a mat / rack swapped in from the Table sheet becomes the current card, whatever the deck filters
-sub1("function matDeck(){return INSF('m',matDeck0());}", "function matDeck(){const d=INSF('m',matDeck0());const f=S.tvforce;return f&&f===S.mfront&&S.mfset===S.set&&M[f]&&!S.seen[f]?[f,...d.filter(x=>x!==f)]:d;}")
-sub1("function rackDeck(){return INSF('r',rackDeck0());}", "function rackDeck(){const d=INSF('r',rackDeck0());const f=S.tvrf;return f&&R[f]&&!R[f].hid&&!S.rseen[f]?[f,...d.filter(x=>x!==f)]:d;}")
+# (the app's own matDeck/rackDeck text stays as is for gate [138]; Table view wraps them)
+sub1("function matDeck(){return INSF('m',matDeck0());}", "function matDeck(){return INSF('m',matDeck0());}matDeck=(o=>function(){const d=o();const f=S.tvforce;return f&&f===S.mfront&&S.mfset===S.set&&M[f]&&!S.seen[f]?[f,...d.filter(x=>x!==f)]:d;})(matDeck);")
+sub1("function rackDeck(){return INSF('r',rackDeck0());}", "function rackDeck(){return INSF('r',rackDeck0());}rackDeck=(o=>function(){const d=o();const f=S.tvrf;return f&&R[f]&&!R[f].hid&&!S.rseen[f]?[f,...d.filter(x=>x!==f)]:d;})(rackDeck);")
 
 j = h.rindex('</body>') if '</body>' in h else len(h)
 h = h[:j] + inj + h[j:]
