@@ -26,9 +26,9 @@ const matWhy=k=>TVD.why[k]||(TVD.cls[k]?'no flat, top-down photo of this mat yet
 const toast=t=>{let n=$i('tvtoast');if(!n){n=document.createElement('div');n.id='tvtoast';document.body.appendChild(n)}n.textContent=t;n.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>n.hidden=true,3800)};
 function herFor(s,mat){return ((s&&s.m.find(x=>x[0]===mat))||[])[1]||[]}
 function pickRack(s,mat){if(TV.rack&&rackOK(TV.rack,s))return TV.rack;
-  for(const k of herFor(s,mat))if(rackOK(k,s))return k;
-  for(const k of (D.lt&&D.lt[s.slug])||[])if(rackOK(k,s))return k;
-  return Object.keys(R).find(k=>rackOK(k,s))}
+  const cand=[...herFor(s,mat),...((D.lt&&D.lt[s.slug])||[]),...Object.keys(R)];
+  return cand.find(k=>rackOK(k,s)&&!OOS('r',k))||cand.find(k=>rackOK(k,s))}/* QA Nov 1: an in-stock rack first */
+window.TVPICK=(slug,mat)=>{const s=D.sets.find(x=>x.slug===slug);return s?pickRack(s,mat):null};/* test hook */
 /* ---------- drawing ---------- */
 const IC={};function load(src){if(!src)return Promise.resolve(null);if(!IC[src])IC[src]=new Promise(r=>{const i=new Image();i.onload=()=>r(i);i.onerror=()=>r(null);i.src=src});return IC[src]}
 function rr(c,x,y,w,h,r){c.beginPath();c.moveTo(x+r,y);c.arcTo(x+w,y,x+w,y+h,r);c.arcTo(x+w,y+h,x,y+h,r);c.arcTo(x,y+h,x,y,r);c.arcTo(x,y,x+w,y,r);c.closePath()}
@@ -126,7 +126,7 @@ function addAdjust(){const on=S.mode==='table';
     if(!on||!has||el.querySelector('.tvadj'))continue;
     const vr=el.querySelector('.vrow');const btn='<button type="button" class="tvadj" data-tvadj aria-label="Adjust the table">Adjust</button>';
     if(vr)vr.insertAdjacentHTML('beforeend',btn);else{const dk=el.querySelector('.deck');const host=dk.closest('.cmp')||dk;host.insertAdjacentHTML('afterend','<div class="vrow tvctl">'+btn+'</div>')}}}
-function panel(){let p=$i('tvpanel');if(p)return p;p=document.createElement('aside');p.id='tvpanel';p.className='tvp';p.setAttribute('aria-label','Table tools');p.dataset.mode='adjust';
+function panel(){let p=$i('tvpanel');if(p)return p;p=document.createElement('aside');p.id='tvpanel';p.className='tvp';p.setAttribute('aria-label','Table tools');p.dataset.tvmode='adjust';
   p.innerHTML=`<div class="tvgrab"><span></span><button type="button" class="tvback" data-tvopen="adjust">‹ Adjust</button><button type="button" class="tvx" data-tvclose aria-label="Close">×</button></div>
   <section class="tvadjsec"><h3>Adjust the table</h3>
    <div class="tvswaps"><button type="button" data-tvopen="tiles">Swap tiles</button><button type="button" data-tvopen="mat">Swap mat</button><button type="button" data-tvopen="racks">Swap racks</button></div>
@@ -140,6 +140,8 @@ function panel(){let p=$i('tvpanel');if(p)return p;p=document.createElement('asi
    <div class="tvtg"><label><button type="button" class="tvsw" id="tvins" role="switch" aria-label="In stock only"></button>In stock only</label><label><button type="button" class="tvsw" id="tvpk" role="switch" aria-label="Tiffany's picks"></button>Tiffany’s picks</label></div>
    <div class="tvact" id="tvact" hidden></div><p class="tvhint" id="tvsh"></p><div class="tvgrid" id="tvgrid"></div></section>`;
   document.body.appendChild(p);
+  /* QA Nov 1: the app's click handler must never see clicks/drags in the sheet */
+  for(const ev of ['click','pointerdown','pointerup','mousedown','mouseup','touchstart','touchend'])p.addEventListener(ev,e=>e.stopPropagation());
   /* drag the grab bar down to close */
   const g=p.querySelector('.tvgrab');let y0=null,dy=0;
   g.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;y0=e.clientY;dy=0;p.classList.add('drag');try{g.setPointerCapture(e.pointerId)}catch(_){}});
@@ -148,7 +150,10 @@ function panel(){let p=$i('tvpanel');if(p)return p;p=document.createElement('asi
   p.querySelector('#tvq').addEventListener('input',e=>{SW.qs[SW.tab]=e.target.value;$i('tvqx').hidden=!e.target.value;grid()});
   if(typeof ResizeObserver!=='undefined')new ResizeObserver(pad).observe(p);return p}
 function pad(){const p=$i('tvpanel');document.body.style.paddingBottom=p&&p.classList.contains('open')&&innerWidth<1280?p.offsetHeight+'px':''}
-function openP(mode,tab){const p=panel();p.dataset.mode=mode;if(tab&&tab!==SW.tab){SW.tab=tab;resetFilters()}p.classList.add('open');p.style.transform='';p.scrollTop=0;syncAdj();if(mode==='swap')tabSync();requestAnimationFrame(()=>{pad();land(CTX)})}
+function fitP(){const p=$i('tvpanel');if(!p||innerWidth>=1280)return;const el=$i(CTX);const c=el&&el.querySelector('.scard[id^="top-"]');const hd=document.querySelector('header.top');
+  const H=(hd?hd.getBoundingClientRect().height:56)+6;const ch=c?c.getBoundingClientRect().height:0;p.style.maxHeight=Math.max(200,Math.round(innerHeight-H-ch-8))+'px'}
+addEventListener('resize',()=>{if(panelOpen()){fitP();pad()}});
+function openP(mode,tab){const p=panel();fitP();p.dataset.tvmode=mode;if(tab&&tab!==SW.tab){SW.tab=tab;resetFilters()}p.classList.add('open');p.style.transform='';p.scrollTop=0;syncAdj();if(mode==='swap')tabSync();requestAnimationFrame(()=>{pad();land(CTX)})}
 function closeP(){const p=$i('tvpanel');if(!p)return;p.classList.remove('open');p.style.transform='';pad()}
 function resetFilters(){SW.brand='';SW.color='';SW.fin='';SW.price=''}
 function setSw(el,on){if(el)el.setAttribute('aria-checked',on?'true':'false')}
@@ -212,7 +217,7 @@ function swapRack(k){const s=curSet();if(!rackOK(k,s)){toast(R[k].n+': '+rackWhy
   if(CTX==='s-racks'){S.tvrf=k;delete S.rseen[k];renderRacks()}return true}
 function pickRow(it){if(it.off){toast(`${it.n}: ${it.why||it.tag}${SW.tab==='mat'?' You can still pick it in Up close or Aerial.':''}`);return}
   if(SW.tab==='mat')swapMat(it.k);else if(SW.tab==='tiles')swapTiles(it.k);else if(!swapRack(it.k))return;
-  save();pass(true);syncAdj();grid();setTimeout(()=>land(CTX),120)}
+  save();pass(true);syncAdj();grid();setTimeout(()=>{fitP();pad();land(CTX)},140)}
 document.addEventListener('click',e=>{const t=e.target.closest&&e.target.closest('[data-tvadj],[data-tvopen],[data-tvclose],[data-tvtab],[data-tvc],[data-tvfin],[data-tvpr],[data-tvclear],[data-tvi],[data-tvb],#tvbrand,#tvqx,#tvwalls,#tvins,#tvpk,#tvfaces button,[data-tvauto]');
   if(!t){const p=$i('tvpop');if(p&&!p.hidden&&!e.target.closest('.tvbw'))p.hidden=true;return}e.preventDefault();e.stopPropagation();
   if(t.hasAttribute('data-tvadj')){CTX=secOf(t)||activeSec();openP('adjust');return}

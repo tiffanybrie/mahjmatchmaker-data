@@ -76,7 +76,8 @@ body.tvmode .scard .onmat{display:none}
 .scard .ph img.tvimg{object-fit:contain;border-radius:10px}
 .scard.tvoff .ph img{filter:grayscale(1) opacity(.5)}
 .tvna{position:absolute;left:8px;right:8px;bottom:8px;z-index:3;background:rgba(255,255,255,.95);border-radius:10px;padding:6px 9px;font:600 12px/1.3 var(--body);color:#2a2036;pointer-events:none}
-@media (max-width:460px){.vrow>span{display:none}.vrow{gap:6px}.vrow .seg.mode button{padding-left:10px;padding-right:10px}}/* 3 views + Adjust fit a phone */
+body.tvmode .swh.cue{display:none}/* QA Nov 1: first-time swipe hint would cover the tile faces */
+@media (max-width:460px){.vrow{gap:5px}.vrow>span{font-size:9.5px;letter-spacing:.06em}.vrow .seg.mode{padding:2px}.vrow .seg.mode button{padding:7px 7px;font-size:11.5px}.vrow .tvadj{padding:6px 8px;font-size:11.5px}}/* VIEW label + 3 views + Adjust fit a phone (QA: keep VIEW like live) */
 .tvadj{border:1px solid #ecd5df;background:#fff;border-radius:999px;padding:7px 11px;font:700 12.5px/1 var(--body);color:var(--navy,#054689);cursor:pointer;flex:none}
 .vrow.tvctl{margin:2px 0 6px}
 .tvp{position:fixed;left:0;right:0;bottom:0;z-index:250;background:#fff;border-radius:18px 18px 0 0;max-height:46vh;max-height:46dvh;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;
@@ -84,7 +85,7 @@ body.tvmode .scard .onmat{display:none}
 .tvp.open{transform:none;visibility:visible}.tvp.drag{transition:none}
 @media (min-width:700px){.tvp{left:50%;right:auto;width:560px;margin-left:-280px}}
 @media (min-width:1280px){.tvp{left:auto;right:16px;top:72px;bottom:24px;width:360px;margin-left:0;max-height:none;border-radius:18px;transform:translateX(110%)}.tvp.open{transform:none}}/* desktop: docked beside the app column, the table stays fully visible */
-.tvp[data-mode="adjust"] .tvswapsec,.tvp[data-mode="swap"] .tvadjsec,.tvp[data-mode="adjust"] .tvback{display:none}
+.tvp[data-tvmode="adjust"] .tvswapsec,.tvp[data-tvmode="swap"] .tvadjsec,.tvp[data-tvmode="adjust"] .tvback{display:none}
 .tvp section{display:flex;flex-direction:column;gap:10px;min-width:0}
 .tvp h3{margin:0;font:400 18px/1.15 var(--display,serif);color:var(--navy,#054689)}
 .tvgrab{position:sticky;top:0;z-index:3;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:8px 0 4px;touch-action:none;cursor:grab;-webkit-user-select:none;user-select:none}
@@ -154,6 +155,8 @@ sub1("function jump(id){requestAnimationFrame(()=>{", "function jump(id){if(S.mo
 sub1("dset:null,zs:{}});", "dset:null,zs:S.zs&&S.zs.tvz?{tvz:S.zs.tvz}:{}});")
 # a mat / rack swapped in from the Table sheet becomes the current card, whatever the deck filters
 # (the app's own matDeck/rackDeck text stays as is for gate [138]; Table view wraps them)
+# QA Nov 1: a searched/swapped tile set stays in the mat-door list once seen, so its heart counts as a suitor
+sub1('const f=S.tfront;if(f!=null&&S.tfmat===S.dmat&&D.sets[f]&&!S.tseen[f]){', 'const f=S.tfront;if(f!=null&&S.tfmat===S.dmat&&D.sets[f]){')
 sub1("function matDeck(){return INSF('m',matDeck0());}", "function matDeck(){return INSF('m',matDeck0());}matDeck=(o=>function(){const d=o();const f=S.tvforce;return f&&f===S.mfront&&S.mfset===S.set&&M[f]&&!S.seen[f]?[f,...d.filter(x=>x!==f)]:d;})(matDeck);")
 sub1("function rackDeck(){return INSF('r',rackDeck0());}", "function rackDeck(){return INSF('r',rackDeck0());}rackDeck=(o=>function(){const d=o();const f=S.tvrf;return f&&R[f]&&!R[f].hid&&!S.rseen[f]?[f,...d.filter(x=>x!==f)]:d;})(rackDeck);")
 
