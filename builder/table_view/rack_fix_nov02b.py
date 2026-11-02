@@ -41,7 +41,7 @@ for n in ['Dusty Lilac', 'Indigo', 'Lagoon', 'Mulberry', 'Periwinkle', 'Pink', '
     hole = m & (a0[..., 3] < 128)  # holes in the brand cut (where the stick met the rack, magnet dots): colour from the nearest real pixel
     if hole.any(): _, idx = ndimage.distance_transform_edt(hole, return_indices=True); a[..., :3] = a0[..., :3][idx[0], idx[1]]
     a[..., 3] = 0; save(k, finish(a, m), 'pusher stick removed: rack-only crop (row/column coverage), holes filled + soft 0.6px edge')
-for n, f, meth in (('Mahjong Black Acrylic Racks and Scallop Pushers', 'black.png', 're-cut from the brand top-down photo (black on white, dark-pixel mask)'),
+for n, f, meth in (('Mahjong Black Acrylic Racks and Scallop Pushers', 'black.png', 're-cut from the brand top-down photo, cleanest of 4 racks (builder/table_view/black_acrylic_nov02.py: dark mask, smoothed edges, glare + blue painted out)'),
                    ('Bam Bird Boutique White Acrylic', 'bbwhite.png', 're-cut from the brand top-down photo (white on lavender) + squared ends')):
     save(byname[n], Image.open(os.path.join(CUT, f)).convert('RGBA'), meth)
 for n in ('My Fair Mahjong Clear', 'The Ultimate Rack - CRYSTAL CLEAR'):

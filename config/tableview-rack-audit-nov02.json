@@ -750,10 +750,10 @@
   "www.bamletsmahjong.com/mahjong-black-acrylic-racks-and-scallop-pushers": {
    "file": "assets/table-view/racks/smahjong_com_mahjong_black_acrylic_racks_and_scallop_pushers_1278f919.webp",
    "was": [
-    "QA Nov 2: re-cut from the brand top-down photo (black on white, dark-pixel mask)"
+    "QA Nov 2: re-cut from the brand top-down photo, cleanest of 4 racks (builder/table_view/black_acrylic_nov02.py"
    ],
    "now": [],
-   "method": "re-cut from the brand top-down photo (black on white, dark-pixel mask)"
+   "method": "re-cut from the brand top-down photo, cleanest of 4 racks (builder/table_view/black_acrylic_nov02.py: dark mask, smoothed edges, glare + blue painted out)"
   },
   "www.bambirdboutique.com/white-acrylic-rack-and-pusher-set-set-of-4": {
    "file": "assets/table-view/racks/mbirdboutique_com_white_acrylic_rack_and_pusher_set_set_of_4_efcc6342.webp",
