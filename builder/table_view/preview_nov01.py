@@ -78,6 +78,10 @@ ro = {k: durl(v['file'], 900, alpha=True) for k, v in AUD['fixed'].items() if k 
 PF = json.load(open(R / 'config/tableview-peel-fill-nov02.json')); CV = json.load(open(R / 'config/tableview-corner-fit-nov02.json'))
 pf = {k: {'b': v['b']} for k, v in PF['full'].items() if k in D['mats']}
 for k in pf: cls[k] = 'A'; why.pop(k, None)
+for k in PF.get('_back_to_corner_qa_nov02', {}): cls[k] = 'B'  # QA Nov 2: fill showed a mirror seam -> Corner view
+GRAY = json.load(open(R / 'config/tableview-gray-nov02.json'))
+for k in GRAY['mats']:
+    if k in D['mats']: cls[k] = 'C'; why[k] = GRAY['why']  # QA Nov 2: no clean top-down photo -> grayed in Table view
 cv = {k: {'m': v['m'], 'f': v['f']} for k, v in CV.items() if k in D['mats'] and cls.get(k) == 'B'}
 TVD = dict(cls=cls, why=why, rk=rk, rkw=rkw, fin=fin, price=price, pm=pm, pt=pt, so=so, backs=backs, pr=pr, sz=sz, ro=ro, pf=pf, pfT=PF['T2'], cv=cv)
 css = """<style>/* Table view preview (Nov 1 rebuild: sample UX) */

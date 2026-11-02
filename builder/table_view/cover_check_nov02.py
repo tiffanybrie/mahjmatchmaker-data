@@ -14,6 +14,9 @@ F = []; corners = []
 try:
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(); pg.goto(f'http://127.0.0.1:{port}/index.html#notour'); pg.wait_for_function('window.__imgsReady===true', timeout=90000)
+        G = json.load(open(__import__('os').path.join(__import__('os').path.dirname(__file__), '..', '..', 'config', 'tableview-gray-nov02.json')))['mats']
+        for k, n in G.items():  # QA Nov 2: no clean top-down photo -> must be grayed in Table view
+            if pg.evaluate("k=>!!M[k]&&TVD.cls[k]!=='C'", k): F.append(f"[147] {n}: should be grayed in Table view (config/tableview-gray-nov02.json)")
         ks = pg.evaluate("Object.keys(M).filter(k=>!M[k].hid&&TVD.cls[k]&&TVD.cls[k]!=='C')"); 
         slug = 'oh-my-mahjong-papaya-spritz'; rack = pg.evaluate("Object.keys(TVD.rk)[0]")
         for i in range(0, len(ks), 25):
