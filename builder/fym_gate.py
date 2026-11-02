@@ -1613,7 +1613,7 @@ if '/*v112q' in UI:
     for _a, _w in (("${BPA(m)?(LINKONLY[m]?'<em class=\"lo\">Save through our link</em>':'<em>Code MAHJMATCH</em>'):''}", 'logo pill: link-only brands say Save through our link'),
                    ("${BCODE[b]&&!LINKONLY[b]?'♥ ':''}", 'no ♥ before link-only brands'), ('SECPH(P.map(id=>M[id].bn))', 'shop-by-color mats heading'),
                    ('SECPH(P.map(x=>x[0].maker))', 'shop-by-color tiles heading'), ("function BDN(x){return x==='Tigre de Tartan'?'Tigre de Tart\\u00e1n':x;}", 'accented display name'),
-                   ('RDOTN(x)>0', 'rack chips only when the deck has racks')):
+                   ) + ((('RDOTN(x)>0', 'rack chips only when the deck has racks'),) if '/*v114 singles*/' not in UI else ()):
         if _a not in UI: F.append(f"[139] {_w} missing")
     if "'<em>Code MAHJMATCH</em>'" in UI.replace("(LINKONLY[m]?'<em class=\"lo\">Save through our link</em>':'<em>Code MAHJMATCH</em>')", ''): F.append("[139] a Code MAHJMATCH pill without the LINKONLY guard")
     if re.search(r"BCODE\[b\]\?'♥ '", UI): F.append("[139] ♥ shown for every code brand incl. link-only")
@@ -1674,9 +1674,32 @@ if '/*v114 table view*/' in UI:
     if 'p.dataset.mode' in UI or 'id="tvpanel" data-mode' in UI: F.append("[145] the Table sheet sets data-mode (the app would switch View on a click inside it)")
     import subprocess as _sp145
     _o145 = _sp145.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fym_tableview_check.py'), B], capture_output=True, text=True, timeout=1500)
-    _l145 = [l for l in _o145.stdout.splitlines() if l.startswith('[145]')]
+    _l145 = [l for l in _o145.stdout.splitlines() if l.startswith(('[145]', '[146]'))]
     if _o145.returncode and not _l145: _l145 = ['[145] Table view check failed: ' + (_o145.stderr or '')[-200:]]
     for _f in _l145[:10]: F.append(_f)
+# [146] v114 (Tiffany Nov 1 11:33 + 11:36pm): (a) RACK FILTER = SINGLES: finish chips + colour dots are ONE single-select group (a finish
+# clears the colour, a colour clears the finish, the rainbow / All colors clears both) in the live rack step AND the Table swap sheet,
+# and the rows always show every option (no RDOTN / FINN trimming). (b) Table racks are clean cut-outs: no white box, no white/light
+# edge on any rack the Table can use (builder/table_view/rack_audit_nov02.py check on the built index; by-eye OKs in
+# config/tableview-rack-audit-nov02.json). A rack is never grayed out for a white box: only racks with no single-rack photo.
+# (c) the tour has the 'Try Table view' step on the View switch.
+if '/*v114 table view*/' in UI:
+    for _a, _w in (("if(f.fin)f.fam=[];rerender('r');return;}/*v114 singles*/", 'rack finish chip clears the colour'),
+                   ("if(b.dataset.k==='r'){f.fam=f.fam.slice(-1);f.fin='';}", 'rack colour dot is single and clears the finish'),
+                   ("aria-pressed=\"${!f.fam.length&&!(k==='r'&&f.fin)}\"", 'rainbow = All only when no colour and no finish'),
+                   ("const L=FINS.filter(x=>pool.some(id=>RFIN(id).includes(x)));", 'finish row never shrinks'),
+                   ("if(SW.tab==='racks')SW.fin='';dots();fins();grid();return}", 'Table sheet: a colour replaces the finish'),
+                   ("if(SW.fin)SW.color='';dots();fins();grid();return}", 'Table sheet: a finish replaces the colour'),
+                   ("{k:'table',t:'New · Try Table view'", 'tour step on the View switch'),
+                   ('const TRS=k=>(TVD.ro&&TVD.ro[k])||rackSrc(k)', 'Table racks use the clean cut-outs'), ('function shaveA(im)', '1px alpha shave at draw time')):
+        if _a not in UI: F.append(f"[146] {_w} missing")
+    if 'RDOTN(x)>0' in UI or '&&(f.fin===x||FINN(x)>0)' in UI: F.append("[146] a rack filter row still shrinks to what is left after another pick")
+    import subprocess as _sp146
+    _o146 = _sp146.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'table_view', 'rack_audit_nov02.py'), 'check', B], capture_output=True, text=True, timeout=900)
+    _l146 = [l for l in _o146.stdout.splitlines() if l.startswith('[146]')]
+    if _o146.returncode and not _l146: _l146 = ['[146] rack edge check failed: ' + (_o146.stderr or '')[-200:]]
+    if len(_l146) > 8: _l146 = _l146[:8] + [f'[146] ... {len(_l146) - 8} more racks with a white box / white edge']
+    for _f in _l146: F.append(_f)
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))

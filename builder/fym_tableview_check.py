@@ -47,6 +47,23 @@ def flow(pg, L):
         tap(pg, '#tvpanel [data-tvclose]'); tap(pg, '#s-mats .sbx [data-yes="m"]'); time.sleep(.8)
         tap(pg, f'#s-mats .tray [data-peek="{fest}"]'); time.sleep(.6); tap(pg, '#s-mats .acts.pk [data-mock]'); chk(pg, L + ' Racks after a swapped mat', 's-racks')
         if pg.evaluate("S.fav") != fest: F.append(f"[145] {L}: hearting the swapped mat did not carry it to Racks")
+        # [146] rack filter = SINGLES (Tiffany Nov 1 11:33pm): one pick at a time across finish + colour, rows never shrink
+        if pg.evaluate("document.body.innerHTML.includes('v114 singles')"):
+            st = lambda: pg.evaluate("()=>({fin:S.f.r.fin||'',fam:S.f.r.fam.slice(),nf:document.querySelectorAll('#s-racks [data-fin]').length,nd:document.querySelectorAll('#s-racks [data-fam][data-k=\"r\"]').length})")
+            c0 = st(); fins = pg.evaluate("[...document.querySelectorAll('#s-racks [data-fin]')].map(b=>b.dataset.fin)"); dots = pg.evaluate("[...document.querySelectorAll('#s-racks [data-fam][data-k=\"r\"]')].map(b=>b.dataset.fam).filter(Boolean)")
+            if fins and len(dots) >= 2:
+                cl = lambda sel: pg.locator(sel).first.evaluate('e=>e.click()')
+                cl(f'#s-racks [data-fin="{fins[0]}"]'); time.sleep(.3); a1 = st()
+                cl(f'#s-racks [data-fam="{dots[0]}"][data-k="r"]'); time.sleep(.3); a2 = st()
+                cl(f'#s-racks [data-fam="{dots[1]}"][data-k="r"]'); time.sleep(.3); a3 = st()
+                cl(f'#s-racks [data-fin="{fins[-1]}"]'); time.sleep(.3); a4 = st()
+                cl('#s-racks [data-fam=""][data-k="r"]'); time.sleep(.3); a5 = st()
+                if a1['fin'] != fins[0] or a1['fam']: F.append(f"[146] {L}: finish chip did not select alone: {a1}")
+                if a2['fin'] or a2['fam'] != [dots[0]]: F.append(f"[146] {L}: a colour did not replace the finish: {a2}")
+                if a3['fam'] != [dots[1]]: F.append(f"[146] {L}: a second colour did not replace the first: {a3}")
+                if a4['fam'] or a4['fin'] != fins[-1]: F.append(f"[146] {L}: a finish did not replace the colour: {a4}")
+                if a5['fin'] or a5['fam']: F.append(f"[146] {L}: the rainbow did not clear finish + colour: {a5}")
+                if any((x['nf'], x['nd']) != (c0['nf'], c0['nd']) for x in (a1, a2, a3, a4, a5)): F.append(f"[146] {L}: a rack filter row changed length after a pick")
     # mat door
     boot(pg); lark = pg.evaluate("Object.keys(M).find(k=>M[k].n==='Larkspur'&&!M[k].hid)"); ds = pg.evaluate("D.sets.findIndex(s=>/dear santa/i.test(s.name))")
     if not lark or ds < 0: F.append(f"[145] {L}: test items Larkspur / Dear Santa missing"); return

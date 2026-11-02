@@ -21,7 +21,8 @@ sys.path.insert(0, str(R0 / 'builder'))
 COV = json.load(open(R0 / 'config/tableview-photo-class-nov01.json'))['_racks']
 AUD = R0 / 'config/tableview-rack-audit-nov02.json'
 OVD = R0 / 'assets/table-view/racks'
-safe = lambda k: re.sub(r'[^A-Za-z0-9]+', '_', k).strip('_')[:90]
+import hashlib
+safe = lambda k: re.sub(r'[^A-Za-z0-9]+', '_', k).strip('_')[-60:] + '_' + hashlib.md5(k.encode()).hexdigest()[:8]
 
 def load_build(B):
     h = open(os.path.join(B, 'index.html')).read(); i = h.index('const D=') + 8; D, _ = json.JSONDecoder().raw_decode(h[i:])
@@ -37,27 +38,31 @@ def whiteish(r):
     return bool(rf & {'clear', 'pearl'}) or 'neutral' in rf and re.search(r'white|ivory|cream|pearl|clear|acrylic|lucite|opal', n) is not None
 def metrics(im, wh):
     a = np.asarray(im).astype(float); al = a[..., 3]; rgb = a[..., :3]; H, W = al.shape
-    mn = rgb.min(2); sp = rgb.max(2) - mn
+    mn = rgb.min(2); sp = rgb.max(2) - mn; L = rgb.mean(2)
     tr = al < 40; op = al > 200
     out = {'w': W, 'h': H, 'transp': round(float(tr.mean()), 3)}
-    near = (mn >= 228) & (sp <= 22) & op
-    # white box: near-white opaque pixels connected to the border
-    lab, n = ndimage.label(near)
-    border = np.zeros_like(near); border[:2, :] = border[-2:, :] = border[:, :2] = border[:, -2:] = True
-    ids = np.unique(lab[border & near]); ids = ids[ids > 0]
+    # white card / box: pure-white opaque pixels connected to the photo border
+    pw = (mn >= 240) & (sp <= 14) & op
+    lab, n = ndimage.label(pw)
+    border = np.zeros_like(pw); border[:2, :] = border[-2:, :] = border[:, :2] = border[:, -2:] = True
+    ids = np.unique(lab[border & pw]); ids = ids[ids > 0]
     out['box'] = round(float(np.isin(lab, ids).mean()), 4) if len(ids) else 0.0
-    # fringe: opaque pixels within 2px of transparency
-    edge = op & ndimage.binary_dilation(tr, iterations=2)
+    # fringe / halo: cut-edge pixels clearly lighter than the rack just inside them
+    edge = op & ndimage.binary_dilation(tr, iterations=1)
+    band = op & ~ndimage.binary_dilation(tr, iterations=3) & ndimage.binary_dilation(tr, iterations=7)
+    num = ndimage.uniform_filter(L * band, 11); den = ndimage.uniform_filter(band.astype(float), 11)
+    ref = np.where(den > 0.02, num / np.maximum(den, 1e-6), L)
     ne = int(edge.sum()); out['edge_n'] = ne
-    fw = (mn >= 215) & (sp <= 30)
-    out['fringe'] = round(float((edge & fw).sum() / ne), 3) if ne else 0.0
-    inner = op & ~ndimage.binary_dilation(tr, iterations=6)
-    out['inner_light'] = round(float(np.median(mn[inner])) if inner.any() else 0, 1)
+    halo = edge & (L - ref > 32) & (((mn >= 222) & (sp <= 22)) | ((mn > 110) & (sp <= 14) & (L - ref > 60)))  # whitish / grey rim, not a coloured highlight
+    out['fringe'] = round(float(halo.sum() / ne), 3) if ne else 0.0
     why = []
-    if out['transp'] < 0.02: why.append('no transparency (white card behind the rack)')
-    if out['box'] > 0.015: why.append(f"white box touching the photo edge ({out['box']*100:.1f}% of the image)")
-    if not wh and out['fringe'] > 0.12 and out['inner_light'] < 200: why.append(f"white fringe on {out['fringe']*100:.0f}% of the cut edge")
+    if out['box'] > 0.01: why.append(f"white card around the rack ({out['box']*100:.1f}% of the photo)")
+    inner = op & ~ndimage.binary_dilation(tr, iterations=6); il = float(np.median(mn[inner])) if inner.any() else 0
+    if out['fringe'] > 0.10 and not (wh and il > 215): why.append(f"light halo on {out['fringe']*100:.0f}% of the cut edge")
     out['why'] = why; return out
+def shave(img, px=1):
+    """the Table view's draw-time 1px alpha shave (preview_tv.js rackPrep): grey erosion of alpha, 3x3"""
+    a = np.asarray(img).copy(); a[..., 3] = ndimage.grey_erosion(a[..., 3], size=(2 * px + 1, 2 * px + 1)); return Image.fromarray(a, 'RGBA')
 def table_racks(D):
     return [k for k, v in COV.items() if v.get('class') == 'S' and k in D['racks'] and not D['racks'][k].get('hid')]
 def image_for(k, D, IMG):
@@ -90,7 +95,7 @@ if __name__ == '__main__':
         for k in ks:
             im, src = image_for(k, D, IMG)
             if im is None: res[k] = {'why': ['no image'], 'src': src}; continue
-            m = metrics(im, whiteish(D['racks'][k])); m['src'] = src; res[k] = m
+            m = metrics(shave(im), whiteish(D['racks'][k])); m['src'] = src; res[k] = m
             items.append((k, im, f"{D['racks'][k]['n']} | " + ('; '.join(m['why']) or f"ok (fringe {m['fringe']}, box {m['box']})"), bool(m['why'])))
         items.sort(key=lambda x: (not x[3], x[2]))
         for n0 in range(0, len(items), 36): sheet(items[n0:n0 + 36], f'{OUT}/racks_{n0 // 36:02d}.jpg')
@@ -99,36 +104,69 @@ if __name__ == '__main__':
         print('audit: table racks', len(ks), 'flagged', len(bad)); [print(' ', D['racks'][k]['n'], '|', '; '.join(w)) for k, w in bad.items()]
     elif mode == 'fix':
         from fym_defringe import defringe
-        OVD.mkdir(parents=True, exist_ok=True); done, nu = {}, {}
+        from rembg import new_session, remove
+        SES = new_session('isnet-general-use'); OVD.mkdir(parents=True, exist_ok=True); done, nu = {}, {}
+        def choke(img, px=1):
+            a = np.asarray(img).copy(); al = a[..., 3]; tr = al < 40
+            ring = ndimage.binary_dilation(tr, iterations=px) & ~tr
+            a[..., 3] = np.where(ring, 0, al); return Image.fromarray(a, 'RGBA')
+        def crop(img):
+            al = np.asarray(img)[..., 3]; ys, xs = np.where(al > 20)
+            return img.crop((xs.min(), ys.min(), xs.max() + 1, ys.max() + 1)) if len(xs) else img
+        only = set(sys.argv[3].split('|')) if len(sys.argv) > 3 and sys.argv[3] else None; nu_canva = {}; force_rembg = set()
         for k in ks:
-            if (OVD / (safe(k) + '.webp')).exists(): continue
-            uri = IMG.get(D['racks'][k].get('im'));
+            if only is not None and k not in only: continue
+            uri = IMG.get(D['racks'][k].get('im'))
             if not uri: nu[k] = 'no rack photo'; continue
-            im = decode(uri); wh = whiteish(D['racks'][k]); m = metrics(im, wh)
-            if not m['why']: continue
-            a = np.asarray(im).copy()
-            if m['transp'] < 0.02 or m['box'] > 0.015:  # flood the white background in from the border
-                rgb = a[..., :3].astype(int); mn = rgb.min(2); sp = rgb.max(2) - mn
-                bgm = (mn >= (240 if wh else 225)) & (sp <= (14 if wh else 26))
-                lab, _ = ndimage.label(bgm); bd = np.zeros_like(bgm); bd[:2, :] = bd[-2:, :] = bd[:, :2] = bd[:, -2:] = True
-                ids = np.unique(lab[bd & bgm]); ids = ids[ids > 0]; kill = np.isin(lab, ids)
-                a[..., 3] = np.where(kill, 0, a[..., 3])
-            fx = defringe(Image.fromarray(a, 'RGBA'), whiteish_rack=wh)
-            al = np.asarray(fx)[..., 3]; ys, xs = np.where(al > 20)
-            if len(xs): fx = fx.crop((xs.min(), ys.min(), xs.max() + 1, ys.max() + 1))
-            m2 = metrics(fx, wh)
-            if m2['why']: nu[k] = 'Our photo of these racks still has a white edge after cleaning; not on the table yet.'; continue
-            p = OVD / (safe(k) + '.webp'); fx.save(p, 'WEBP', quality=90, method=6); done[k] = {'file': str(p.relative_to(R0)), 'was': m['why']}
-        aud['fixed'].update(done); aud['not_usable'].update(nu)
+            im = decode(uri); wh = whiteish(D['racks'][k]); m = metrics(shave(im), wh)
+            if not m['why'] and only is None: continue
+            meth = []; a0 = np.asarray(im); il = float(np.median(a0[..., :3].mean(2)[a0[..., 3] > 200])) if (a0[..., 3] > 200).any() else 0  # body lightness
+            card = m['box'] > 0.01 and float((a0[..., 3] < 40).mean()) < 0.02   # a photo on a white card (no transparency at all)
+            light = il >= 175; dark = il < 110
+            if card:
+                big = im.convert('RGB'); pad = Image.new('RGB', (big.width + 40, big.height + 40), (255, 255, 255)); pad.paste(big, (20, 20))
+                fx = remove(pad, session=SES, post_process_mask=True).crop((20, 20, 20 + big.width, 20 + big.height)); meth.append('rembg isnet')
+                fx = choke(fx, 1); meth.append('1px edge choke')
+                rgb0 = a0[..., :3].astype(int); body0 = ~((rgb0.min(2) >= 240) & (rgb0.max(2) - rgb0.min(2) <= 14))
+                kept = float((np.asarray(fx)[..., 3] > 128)[body0].mean()) if body0.any() else 0
+                if kept < 0.85 or metrics(shave(crop(fx)), wh)['why']: nu_canva[k] = f'rembg kept {kept:.0%} of the rack: Canva remove-background'; continue
+            elif light:
+                continue   # light racks: the original cut is kept; the Table's draw-time 1px shave handles the edge (defringe would eat the body)
+            else:
+                fx = choke(im, 1); meth.append('1px edge choke')
+                if dark: fx = defringe(fx, whiteish_rack=wh); meth.append('fym_defringe')  # defringe only on dark bodies (it eats light ones)
+            fx = crop(fx); m2 = metrics(shave(fx), wh)
+            p = OVD / (safe(k) + '.webp'); fx.save(p, 'WEBP', quality=92, method=6)
+            done[k] = {'file': str(p.relative_to(R0)), 'was': m['why'], 'now': m2['why'], 'method': ' + '.join(meth)}
+        aud['fixed'].update(done); aud['not_usable'].update(nu); aud.setdefault('canva', {}).update(nu_canva)
         json.dump(aud, open(AUD, 'w'), indent=1)
-        print('fix: re-cut', len(done), 'not usable', len(nu))
+        print('canva needed', len(nu_canva), [D['racks'][k]['n'] for k in nu_canva]); print('fix: re-cut', len(done), 'still flagged', sum(1 for v in done.values() if v['now']), 'no photo', len(nu))
+        for k, v in done.items():
+            if v['now']: print('  still:', D['racks'][k]['n'], v['now'])
+    elif mode == 'trim':
+        # Nov 2: light racks cut flush to the photo edge (Bird & Bamboo pastels): a partial light strip under the rack (photo leftover)
+        # and a white rim. Pad with transparency, drop partial top/bottom rows (< 90% of the widest row), then a 1px choke on every side.
+        names = sys.argv[3].split('|'); aud = json.load(open(AUD)); done = {}
+        for k in ks:
+            if D['racks'][k]['n'] not in names: continue
+            im = decode(IMG[D['racks'][k]['im']]); a = np.zeros((im.height + 6, im.width + 6, 4), np.uint8); a[3:-3, 3:-3] = np.asarray(im)
+            cov = (a[..., 3] > 200).sum(1); mx = cov.max(); rows = np.where(cov >= .9 * mx)[0]; y0, y1 = rows.min(), rows.max()
+            a[:y0, :, 3] = 0; a[y1 + 1:, :, 3] = 0
+            tr = a[..., 3] < 40; ring = ndimage.binary_dilation(tr, iterations=1) & ~tr; a[..., 3] = np.where(ring, 0, a[..., 3])
+            fx = Image.fromarray(a, 'RGBA'); al = np.asarray(fx)[..., 3]; ys, xs = np.where(al > 20)
+            fx = fx.crop((xs.min() - 2, ys.min() - 2, xs.max() + 3, ys.max() + 3)); m2 = metrics(shave(fx), whiteish(D['racks'][k]))
+            p = OVD / (safe(k) + '.webp'); fx.save(p, 'WEBP', lossless=True)
+            done[k] = {'file': str(p.relative_to(R0)), 'was': metrics(shave(im), whiteish(D['racks'][k]))['why'], 'now': m2['why'], 'method': 'trim partial edge rows + 1px edge choke (flush light cut-out)'}
+            print(D['racks'][k]['n'], 'rows', int(y0) - 3, int(y1) - 3, 'of', im.height, 'now', m2['why'])
+        aud['fixed'].update(done); json.dump(aud, open(AUD, 'w'), indent=1)
     elif mode == 'check':
         h = open(os.path.join(B, 'index.html')).read(); i = h.index('const D=') + 8; D2, _ = json.JSONDecoder().raw_decode(h[i:]); tv = D2.get('tv') or {}
         rk, ro = tv.get('rk', {}), tv.get('ro', {})
-        bad = 0
+        bad = 0; ok_eye = json.load(open(AUD)).get('by_eye_ok', {})
         for k in rk:
+            if k in ok_eye: continue  # looked at on green + plaid: the light edge IS the rack (translucent / tight white crop)
             uri = ro.get(k) or IMG.get(D['racks'].get(k, {}).get('im'))
             if not uri: print(f"[146] Table rack {k}: no image"); bad += 1; continue
-            m = metrics(decode(uri), whiteish(D['racks'][k]))
+            m = metrics(shave(decode(uri)), whiteish(D['racks'][k]))
             if m['why']: print(f"[146] Table rack {D['racks'][k]['n']}: {'; '.join(m['why'])}"); bad += 1
         sys.exit(1 if bad else 0)

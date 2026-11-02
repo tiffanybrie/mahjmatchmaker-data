@@ -1,0 +1,695 @@
+{
+ "not_usable": {},
+ "fixed": {
+  "bb:Avocado": {
+   "file": "assets/table-view/racks/bb_Avocado_10d1256a.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Basil": {
+   "file": "assets/table-view/racks/bb_Basil_b13107df.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Blue Metallic": {
+   "file": "assets/table-view/racks/bb_Blue_Metallic_62ebe464.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Brick Red": {
+   "file": "assets/table-view/racks/bb_Brick_Red_bf1a7f13.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Bronze Metallic": {
+   "file": "assets/table-view/racks/bb_Bronze_Metallic_15fd5482.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Cadet": {
+   "file": "assets/table-view/racks/bb_Cadet_87a8c632.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Clear": {
+   "file": "assets/table-view/racks/bb_Clear_2da2a0e7.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Cornflower Blue": {
+   "file": "assets/table-view/racks/bb_Cornflower_Blue_9d3acaf4.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Dark Navy": {
+   "file": "assets/table-view/racks/bb_Dark_Navy_98d6e942.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Dark Teal": {
+   "file": "assets/table-view/racks/bb_Dark_Teal_5569a32c.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Eggplant": {
+   "file": "assets/table-view/racks/bb_Eggplant_d15b228c.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Flamingo": {
+   "file": "assets/table-view/racks/bb_Flamingo_c4c99132.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:French Blue": {
+   "file": "assets/table-view/racks/bb_French_Blue_b93291fd.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Gold Metallic": {
+   "file": "assets/table-view/racks/bb_Gold_Metallic_1509457e.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Graphite": {
+   "file": "assets/table-view/racks/bb_Graphite_d9b5fdac.webp",
+   "was": [
+    "light halo on 13% of the cut edge"
+   ],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Hot Pink": {
+   "file": "assets/table-view/racks/bb_Hot_Pink_d84e1f4f.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Hot Pink Metallic": {
+   "file": "assets/table-view/racks/bb_Hot_Pink_Metallic_51f3c7cb.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Jade": {
+   "file": "assets/table-view/racks/bb_Jade_ac0806f1.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Lime Green": {
+   "file": "assets/table-view/racks/bb_Lime_Green_3016c16e.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Magenta": {
+   "file": "assets/table-view/racks/bb_Magenta_22946797.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Mauve": {
+   "file": "assets/table-view/racks/bb_Mauve_97acdb62.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Misty Spruce": {
+   "file": "assets/table-view/racks/bb_Misty_Spruce_d1ab161e.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Moss": {
+   "file": "assets/table-view/racks/bb_Moss_216a8776.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Mulberry": {
+   "file": "assets/table-view/racks/bb_Mulberry_56da9bab.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Navy Metallic": {
+   "file": "assets/table-view/racks/bb_Navy_Metallic_f72826da.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Ocean Slate": {
+   "file": "assets/table-view/racks/bb_Ocean_Slate_96163fd7.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Orange": {
+   "file": "assets/table-view/racks/bb_Orange_2ca9f3e2.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Penny Metallic": {
+   "file": "assets/table-view/racks/bb_Penny_Metallic_bb5687ae.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Peony": {
+   "file": "assets/table-view/racks/bb_Peony_ac382c99.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Periwinkle Blue": {
+   "file": "assets/table-view/racks/bb_Periwinkle_Blue_7f71729b.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Pink Coral": {
+   "file": "assets/table-view/racks/bb_Pink_Coral_8e3cc73b.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Pistachio": {
+   "file": "assets/table-view/racks/bb_Pistachio_d7751bcc.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Purple": {
+   "file": "assets/table-view/racks/bb_Purple_f55c6537.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Radish": {
+   "file": "assets/table-view/racks/bb_Radish_890590ca.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Rose Gold Metallic": {
+   "file": "assets/table-view/racks/bb_Rose_Gold_Metallic_2da12419.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Seafoam": {
+   "file": "assets/table-view/racks/bb_Seafoam_8b0f6ef9.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Tiffany Dusk": {
+   "file": "assets/table-view/racks/bb_Tiffany_Dusk_cb522fcc.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Turks Blue": {
+   "file": "assets/table-view/racks/bb_Turks_Blue_db41971e.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Weathered Oak": {
+   "file": "assets/table-view/racks/bb_Weathered_Oak_96df3fb0.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Wine": {
+   "file": "assets/table-view/racks/bb_Wine_5694e152.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53555876135224": {
+   "file": "assets/table-view/racks/mahjong_racks_20_scalloped_edge_design_copy_v_53555876135224_4914dba7.webp",
+   "was": [],
+   "now": [],
+   "method": "1px edge choke + fym_defringe"
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959222072": {
+   "file": "assets/table-view/racks/_racks_set_of_4_20_luxury_tile_holders_copy_v_53016959222072_18ce15d5.webp",
+   "was": [
+    "white card around the rack (21.4% of the photo)"
+   ],
+   "now": [],
+   "method": "rembg isnet + 1px edge choke"
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=52971299897656": {
+   "file": "assets/table-view/racks/hjong_racks_set_of_4_20_luxury_tile_holders_v_52971299897656_e5b90c29.webp",
+   "was": [],
+   "now": [],
+   "method": "1px edge choke + fym_defringe"
+  },
+  "mahjongrowandco.com/chestnut-cream-rack-pusher-set": {
+   "file": "assets/table-view/racks/mahjongrowandco_com_chestnut_cream_rack_pusher_set_9bb2ac6a.webp",
+   "was": [],
+   "now": [],
+   "method": "1px edge choke"
+  },
+  "mahjongrowandco.com/scalloped-deluxe-tortoise-rack": {
+   "file": "assets/table-view/racks/mahjongrowandco_com_scalloped_deluxe_tortoise_rack_60674beb.webp",
+   "was": [],
+   "now": [],
+   "method": "1px edge choke + fym_defringe"
+  },
+  "mahjongrowandco.com/translucent-chocolate-rack-pusher-set": {
+   "file": "assets/table-view/racks/mahjongrowandco_com_translucent_chocolate_rack_pusher_set_1e71de95.webp",
+   "was": [],
+   "now": [
+    "light halo on 18% of the cut edge"
+   ],
+   "method": "1px edge choke"
+  },
+  "peacelovemahjong.com/mahjong-racks-racks-pushers-set-of-4": {
+   "file": "assets/table-view/racks/peacelovemahjong_com_mahjong_racks_racks_pushers_set_of_4_876f2e83.webp",
+   "was": [
+    "white card around the rack (7.4% of the photo)"
+   ],
+   "now": [],
+   "method": "rembg isnet + 1px edge choke"
+  },
+  "plm:Red": {
+   "file": "assets/table-view/racks/plm_Red_e603f9d8.webp",
+   "was": [],
+   "now": [],
+   "method": "1px edge choke + fym_defringe"
+  },
+  "vr:My Fair Mahjong:Solid Magenta": {
+   "file": "assets/table-view/racks/vr_My_Fair_Mahjong_Solid_Magenta_1a497be5.webp",
+   "was": [],
+   "now": [],
+   "method": "1px edge choke"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=52307844202805": {
+   "file": "assets/table-view/racks/boutique_com_wooden_mahjong_rack_pusher_set_v_52307844202805_e213cd29.webp",
+   "was": [],
+   "now": [],
+   "method": "1px edge choke + fym_defringe"
+  },
+  "www.ymimports.com/nb-mp005-a": {
+   "file": "assets/table-view/racks/www_ymimports_com_nb_mp005_a_5284fe7f.webp",
+   "was": [],
+   "now": [
+    "light halo on 24% of the cut edge"
+   ],
+   "method": "1px edge choke + fym_defringe"
+  },
+  "www.viroramahjong.com/hinged-mahjong-rack-pusher-set?v=49185641660599": {
+   "file": "assets/table-view/racks/amahjong_com_hinged_mahjong_rack_pusher_set_v_49185641660599_50decb22.webp",
+   "was": [
+    "white card around the rack"
+   ],
+   "now": [],
+   "method": "Canva remove-background (matte) on the original"
+  },
+  "plm:White": {
+   "file": "assets/table-view/racks/plm_White_67489d6d.webp",
+   "was": [
+    "thumbnail read as white card"
+   ],
+   "now": [],
+   "method": "HD cut-out (already clean)"
+  },
+  "bb:Almond": {
+   "file": "assets/table-view/racks/bb_Almond_b2e194b4.webp",
+   "was": [
+    "light halo on 14% of the cut edge"
+   ],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Ballet Pink": {
+   "file": "assets/table-view/racks/bb_Ballet_Pink_935b9a67.webp",
+   "was": [
+    "white card around the rack (2.4% of the photo)",
+    "light halo on 14% of the cut edge"
+   ],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Champagne Metallic": {
+   "file": "assets/table-view/racks/bb_Champagne_Metallic_0640fcbb.webp",
+   "was": [
+    "light halo on 14% of the cut edge"
+   ],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Cream": {
+   "file": "assets/table-view/racks/bb_Cream_ba405faa.webp",
+   "was": [
+    "white card around the rack (1.0% of the photo)",
+    "light halo on 14% of the cut edge"
+   ],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Lilac": {
+   "file": "assets/table-view/racks/bb_Lilac_e7d2501d.webp",
+   "was": [
+    "white card around the rack (1.9% of the photo)",
+    "light halo on 14% of the cut edge"
+   ],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Peachy": {
+   "file": "assets/table-view/racks/bb_Peachy_59ff5b14.webp",
+   "was": [
+    "white card around the rack (1.8% of the photo)",
+    "light halo on 14% of the cut edge"
+   ],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Pebble": {
+   "file": "assets/table-view/racks/bb_Pebble_2d122f60.webp",
+   "was": [
+    "light halo on 14% of the cut edge"
+   ],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Powder Blue": {
+   "file": "assets/table-view/racks/bb_Powder_Blue_6becc6e4.webp",
+   "was": [
+    "white card around the rack (2.6% of the photo)",
+    "light halo on 14% of the cut edge"
+   ],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Shell Pink": {
+   "file": "assets/table-view/racks/bb_Shell_Pink_ba9050bb.webp",
+   "was": [
+    "light halo on 14% of the cut edge"
+   ],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Silver Metallic": {
+   "file": "assets/table-view/racks/bb_Silver_Metallic_eb0ef6d3.webp",
+   "was": [
+    "light halo on 14% of the cut edge"
+   ],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:White": {
+   "file": "assets/table-view/racks/bb_White_f67b22ee.webp",
+   "was": [
+    "white card around the rack (2.4% of the photo)"
+   ],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:White Metallic": {
+   "file": "assets/table-view/racks/bb_White_Metallic_0dc84e27.webp",
+   "was": [
+    "white card around the rack (2.2% of the photo)",
+    "light halo on 14% of the cut edge"
+   ],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Berry Purple": {
+   "file": "assets/table-view/racks/bb_Berry_Purple_53852d19.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Blackboard Black": {
+   "file": "assets/table-view/racks/bb_Blackboard_Black_719d03a0.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Butter": {
+   "file": "assets/table-view/racks/bb_Butter_c7f446da.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Carrot": {
+   "file": "assets/table-view/racks/bb_Carrot_35bbc2d9.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Cherry Red": {
+   "file": "assets/table-view/racks/bb_Cherry_Red_5013fafa.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Coral": {
+   "file": "assets/table-view/racks/bb_Coral_b795a0b8.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Dark Blue": {
+   "file": "assets/table-view/racks/bb_Dark_Blue_31ebbae6.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Dark Walnut": {
+   "file": "assets/table-view/racks/bb_Dark_Walnut_f7b2ffaf.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Dijon": {
+   "file": "assets/table-view/racks/bb_Dijon_1a5515ff.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Electric Blue": {
+   "file": "assets/table-view/racks/bb_Electric_Blue_ff50b17f.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Evergreen": {
+   "file": "assets/table-view/racks/bb_Evergreen_70e8a379.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Forest Green": {
+   "file": "assets/table-view/racks/bb_Forest_Green_ab8d3ee5.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Glacier Metallic": {
+   "file": "assets/table-view/racks/bb_Glacier_Metallic_018ed239.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Glowstick": {
+   "file": "assets/table-view/racks/bb_Glowstick_060d0174.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Harbor Blue": {
+   "file": "assets/table-view/racks/bb_Harbor_Blue_1f4297fd.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Icy Mint": {
+   "file": "assets/table-view/racks/bb_Icy_Mint_e1890c42.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Jade Metallic": {
+   "file": "assets/table-view/racks/bb_Jade_Metallic_665e927b.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Kelly Green": {
+   "file": "assets/table-view/racks/bb_Kelly_Green_ad697215.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Lavender": {
+   "file": "assets/table-view/racks/bb_Lavender_9fcfbdcb.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Lavender Metallic": {
+   "file": "assets/table-view/racks/bb_Lavender_Metallic_8a353931.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Light Blue": {
+   "file": "assets/table-view/racks/bb_Light_Blue_41d3ab84.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Light Pink": {
+   "file": "assets/table-view/racks/bb_Light_Pink_85ac1a63.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Lilac Blush Metallic": {
+   "file": "assets/table-view/racks/bb_Lilac_Blush_Metallic_0671de79.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Mango": {
+   "file": "assets/table-view/racks/bb_Mango_cb9bece6.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Matcha": {
+   "file": "assets/table-view/racks/bb_Matcha_e719f597.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Mermaid": {
+   "file": "assets/table-view/racks/bb_Mermaid_7656203a.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Mother Of Dragons Metallic": {
+   "file": "assets/table-view/racks/bb_Mother_Of_Dragons_Metallic_69cfbc74.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Peach Metallic": {
+   "file": "assets/table-view/racks/bb_Peach_Metallic_91411cda.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Persimmon": {
+   "file": "assets/table-view/racks/bb_Persimmon_cc215318.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Petal Purple": {
+   "file": "assets/table-view/racks/bb_Petal_Purple_ee287d85.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Provincial": {
+   "file": "assets/table-view/racks/bb_Provincial_9b4aeb3f.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Red": {
+   "file": "assets/table-view/racks/bb_Red_8821f563.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Red Mahogany": {
+   "file": "assets/table-view/racks/bb_Red_Mahogany_09816ebe.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Retro Mustard": {
+   "file": "assets/table-view/racks/bb_Retro_Mustard_3f84ab5f.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Rust Metallic": {
+   "file": "assets/table-view/racks/bb_Rust_Metallic_5e5c9d9d.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Sunshine": {
+   "file": "assets/table-view/racks/bb_Sunshine_486f43a9.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Teal": {
+   "file": "assets/table-view/racks/bb_Teal_31c6e539.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:True Black": {
+   "file": "assets/table-view/racks/bb_True_Black_ed45e8f4.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Turquoise Blue": {
+   "file": "assets/table-view/racks/bb_Turquoise_Blue_f69665fc.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:White Wood Stain": {
+   "file": "assets/table-view/racks/bb_White_Wood_Stain_9b6b9a78.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "bb:Yellow": {
+   "file": "assets/table-view/racks/bb_Yellow_8e44dee5.webp",
+   "was": [],
+   "now": [],
+   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  }
+ },
+ "canva": {},
+ "by_eye_ok": {
+  "vr:My Fair Mahjong:Solid White": "tight crop: the photo is the white rack itself (no card); Canva found no background to remove",
+  "www.bespokemahjong.com/the-ultimate-rack-bright-white": "tight crop: the photo is the white rack itself (no card); Canva found no background to remove",
+  "mahjongrowandco.com/translucent-chocolate-rack-pusher-set": "translucent acrylic: its light edge is the rack, not a halo (looked at on green + plaid)",
+  "www.ymimports.com/nb-mp005-a": "translucent acrylic: its light edge is the rack, not a halo (looked at on green + plaid)"
+ },
+ "canva_done": {
+  "www.viroramahjong.com/hinged-mahjong-rack-pusher-set?v=49185641660599": "MAHZvA5znZM"
+ }
+}

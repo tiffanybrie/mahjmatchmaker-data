@@ -36,9 +36,18 @@ const IC={};function load(src){if(!src)return Promise.resolve(null);if(!IC[src])
 function rr(c,x,y,w,h,r){c.beginPath();c.moveTo(x+r,y);c.arcTo(x+w,y,x+w,y+h,r);c.arcTo(x+w,y+h,x,y+h,r);c.arcTo(x,y+h,x,y,r);c.arcTo(x,y,x+w,y,r);c.closePath()}
 function shade(hx,f){const n=parseInt(hx.slice(1),16);const m=v=>Math.max(0,Math.min(255,Math.round(f>1?v+(255-v)*(f-1):v*f)));return `rgb(${m(n>>16)},${m(n>>8&255)},${m(n&255)})`}
 const CACHE=new Map();const cget=k=>{const v=CACHE.get(k);if(v){CACHE.delete(k);CACHE.set(k,v)}return v};const cput=(k,v,max)=>{CACHE.set(k,v);while(CACHE.size>max)CACHE.delete(CACHE.keys().next().value)};
+/* v114 (Tiffany Nov 1 11:33pm): racks on the table are clean cut-outs. TVD.ro = re-cut images (builder/table_view/rack_audit_nov02.py);
+   every rack is also shaved by 1px of alpha at draw time (3x3 min of alpha) so no light photo edge rings the rack on the mat. */
+const TRS=k=>(TVD.ro&&TVD.ro[k])||rackSrc(k);const SHV=new Map();
+function shaveA(im){if(!im)return im;try{const w=im.naturalWidth||im.width,h=im.naturalHeight||im.height;const cv=document.createElement('canvas');cv.width=w;cv.height=h;const g=cv.getContext('2d');g.drawImage(im,0,0);
+  const d=g.getImageData(0,0,w,h),a=d.data,src=new Uint8ClampedArray(w*h);for(let i=0;i<w*h;i++)src[i]=a[i*4+3];let any=false;
+  for(let y=0;y<h;y++)for(let x=0;x<w;x++){let m=255;for(let dy=-1;dy<=1;dy++){const yy=y+dy;if(yy<0||yy>=h){m=0;break}for(let dx=-1;dx<=1;dx++){const xx=x+dx;const v=xx<0||xx>=w?0:src[yy*w+xx];if(v<m)m=v}}
+    const i=y*w+x;if(m<src[i]){a[i*4+3]=m;any=true}}
+  if(!any)return im;g.putImageData(d,0,0);return cv}catch(e){return im}}
+async function rackImg(k){if(SHV.has(k))return SHV.get(k);const p=load(TRS(k)).then(shaveA);SHV.set(k,p);return p}
 async function render(mat,s,rack,corner,N){
   const PPI=N/SZ.mat,C=N/2;
-  const [mi,ri,fi]=await Promise.all([matFull(mat).then(load),load(rackSrc(rack)),load(tileFull(s)||pile(s))]);
+  const [mi,ri,fi]=await Promise.all([matFull(mat).then(load),rackImg(rack),load(tileFull(s)||pile(s))]);
   const bk=TVD.backs[s.slug];const [pat,spr]=await Promise.all([load(bk&&bk.p),load(bk&&bk.s)]);
   const oc=document.createElement('canvas');oc.width=oc.height=N;const c=oc.getContext('2d');c.imageSmoothingQuality='high';c.fillStyle='#e4dcd2';c.fillRect(0,0,N,N);
   if(mi){if(corner){const q0=N*.36;c.drawImage(mi,q0,q0,N-q0,N-q0)}else{const m=Math.min(mi.width,mi.height);c.drawImage(mi,(mi.width-m)/2,(mi.height-m)/2,m,m,0,0,N,N)}}
@@ -65,6 +74,7 @@ async function render(mat,s,rack,corner,N){
     c.save();c.shadowColor='rgba(0,0,0,.35)';c.shadowBlur=N*.018;c.beginPath();c.arc(cx,cy,d/2+N*.008,0,7);c.fillStyle='#fff';c.fill();c.restore();
     c.save();c.beginPath();c.arc(cx,cy,d/2,0,7);c.clip();const m=Math.min(fi.width,fi.height);c.drawImage(fi,(fi.width-m)/2,(fi.height-m)/2,m,m,cx-d/2,cy-d/2,d,d);c.restore()}
   try{return oc.toDataURL('image/jpeg',.88)}catch(e){return null}}
+window.TVRENDER=(mat,slug,rack,N)=>render(mat,D.sets.find(x=>x.slug===slug),rack,false,N||1400);/* QA hook: one table, no UI */
 function tableURL(x,N){const key=[x.mat,x.s.slug,x.rack,x.corner?1:0,TV.walls,TV.faces,N].join('|');const v=cget(key);if(v)return v;
   const p=render(x.mat,x.s,x.rack,x.corner,N);cput(key,p,N>2000?3:36);return p}
 /* ---------- cards ---------- */
@@ -170,7 +180,7 @@ function tabSync(){const p=panel();p.querySelectorAll('[data-tvtab]').forEach(b=
 const COL={pink:'#ef8fb4',red:'#d23b3b',orange:'#f08a2c',yellow:'#f3cf3d',green:'#4f9e5a',teal:'#2fa3a0',blue:'#4c84c9',purple:'#9a6cc0',neutral:'#e9e0d0',dark:'#3a3340',black:'#222',brown:'#8a5a3a',white:'#fff',wood:'#b07a4a',tortoise:'#7b4a26',clear:'#dfeff4',metallic:'#c9b26b',pearl:'#efe9f2'};
 function colorKeys(){if(SW.tab==='mat')return ['pink','red','orange','yellow','green','blue','purple','neutral','dark'];if(SW.tab==='racks')return ['pink','red','orange','yellow','green','blue','purple','neutral','black','brown','dark'];return Object.keys(typeof BACKG==='object'?BACKG:{})}
 function dots(){const box=$i('tvdots');const ks=colorKeys();
-  box.innerHTML=`<button type="button" class="tvdot all${SW.color?'':' on'}" data-tvc="">All colors</button>`+ks.map(c=>SW.tab==='tiles'?`<button type="button" class="tvchip${SW.color===c?' on':''}" data-tvc="${esc(c)}">${esc(c)}</button>`:`<button type="button" class="tvdot${SW.color===c?' on':''}" data-tvc="${c}" style="background:${COL[c]||'#ccc'}" aria-label="${c}" title="${c}"></button>`).join('')}
+  box.innerHTML=`<button type="button" class="tvdot all${SW.color||(SW.tab==='racks'&&SW.fin)?'':' on'}" data-tvc="">All colors</button>`+ks.map(c=>SW.tab==='tiles'?`<button type="button" class="tvchip${SW.color===c?' on':''}" data-tvc="${esc(c)}">${esc(c)}</button>`:`<button type="button" class="tvdot${SW.color===c?' on':''}" data-tvc="${c}" style="background:${COL[c]||'#ccc'}" aria-label="${c}" title="${c}"></button>`).join('')}
 const FINS=[['wood','Wood'],['walnut','Walnut'],['tortoise','Tortoise'],['pearl','Pearl'],['clear','Clear / Acrylic'],['lucite','Lucite'],['metallic','Metallic'],['white','White'],['glitter','Glitter']];
 function fins(){const box=$i('tvfins');box.hidden=SW.tab!=='racks';if(box.hidden){box.innerHTML='';return}const have=new Set(Object.values(TVD.fin).flat());
   box.innerHTML=FINS.filter(([f])=>have.has(f)).map(([f,l])=>`<button type="button" class="tvchip${SW.fin===f?' on':''}" data-tvfin="${f}">${l}</button>`).join('')}
@@ -182,7 +192,7 @@ function pool(){const s=curSet(),m=curMat();
   if(SW.tab==='tiles'){return D.sets.map((x,i)=>[x,i]).filter(([x])=>typeof VIS!=='function'||VIS(x)).map(([x,i])=>{const t=T[x.tile]||{},pr=TVD.pt[x.tile]||[];const pk=!!(m&&x.m.some(y=>y[0]===m));
     return {k:i,n:x.name,bn:t.bn||x.maker,th:pile(x),pa:t.pa,so:OOS('t',x.tile),pk,off:false,tag:TVD.backs[x.slug]?'':'No walls yet',cols:Object.keys(typeof BACKG==='object'?BACKG:{}).filter(g=>(BACKG[g]||[]).includes(x.name)),p:pr[0],pc:pr[1],cd:pr[2],on:s&&x.slug===s.slug,w:''}}).sort((a,b)=>(b.pk-a.pk)||((b.pa?1:0)-(a.pa?1:0))||a.n.localeCompare(b.n))}
   const her=new Set(s&&m?herFor(s,m):[]);const r0=curRack();
-  return Object.keys(R).filter(k=>!R[k].hid).map(k=>{const o=R[k],pr=TVD.price[k]||[];const ok=rackOK(k,s);return {k,n:o.n,bn:o.bn,th:rackSrc(k),pa:o.pa,so:OOS('r',k),pk:her.has(k),off:!ok,why:rackWhy(k,s),tag:ok?'':rackWhy(k,s).replace(/\.$/,''),short:!fits(k,s),cols:o.rf||[],fin:TVD.fin[k]||[],p:pr[0],pc:pr[1],cd:pr[2],on:k===r0,w:(TVD.fin[k]||[]).join(' ')}}).sort((a,b)=>(a.off-b.off)||(b.pk-a.pk)||((b.pa?1:0)-(a.pa?1:0))||a.n.localeCompare(b.n))}
+  return Object.keys(R).filter(k=>!R[k].hid).map(k=>{const o=R[k],pr=TVD.price[k]||[];const ok=rackOK(k,s);return {k,n:o.n,bn:o.bn,th:TRS(k),pa:o.pa,so:OOS('r',k),pk:her.has(k),off:!ok,why:rackWhy(k,s),tag:ok?'':rackWhy(k,s).replace(/\.$/,''),short:!fits(k,s),cols:o.rf||[],fin:TVD.fin[k]||[],p:pr[0],pc:pr[1],cd:pr[2],on:k===r0,w:(TVD.fin[k]||[]).join(' ')}}).sort((a,b)=>(a.off-b.off)||(b.pk-a.pk)||((b.pa?1:0)-(a.pa?1:0))||a.n.localeCompare(b.n))}
 function list(){const q=SW.qs[SW.tab].trim().toLowerCase();let rows=pool();const info={};
   const words=it=>[it.n,BD(it.bn),...it.cols,it.w].join(' ').toLowerCase();
   if(q)rows=rows.filter(it=>q.split(/\s+/).every(w=>words(it).includes(w)));
@@ -231,8 +241,8 @@ document.addEventListener('click',e=>{const t=e.target.closest&&e.target.closest
   if(t.id==='tvqx'){SW.qs[SW.tab]='';$i('tvq').value='';t.hidden=true;grid();return}
   if(t.id==='tvbrand'){brandPop();return}
   if(t.dataset.tvb!==undefined){SW.brand=t.dataset.tvb;$i('tvbrand').textContent=(SW.brand?BD(SW.brand):'All brands')+' ▾';$i('tvpop').hidden=true;grid();return}
-  if(t.dataset.tvc!==undefined){SW.color=SW.color===t.dataset.tvc?'':t.dataset.tvc;dots();grid();return}
-  if(t.dataset.tvfin!==undefined){SW.fin=SW.fin===t.dataset.tvfin?'':t.dataset.tvfin;fins();grid();return}
+  if(t.dataset.tvc!==undefined){SW.color=SW.color===t.dataset.tvc?'':t.dataset.tvc;if(SW.tab==='racks')SW.fin='';dots();fins();grid();return}/*v114 singles: a colour replaces the finish, All colors clears both*/
+  if(t.dataset.tvfin!==undefined){SW.fin=SW.fin===t.dataset.tvfin?'':t.dataset.tvfin;if(SW.fin)SW.color='';dots();fins();grid();return}
   if(t.dataset.tvpr!==undefined){SW.price=t.dataset.tvpr===''?'':+t.dataset.tvpr;prices();grid();return}
   if(t.id==='tvins'){SW.instock=!SW.instock;setSw(t,SW.instock);grid();return}
   if(t.id==='tvpk'){SW.picks=!SW.picks;setSw(t,SW.picks);grid();return}

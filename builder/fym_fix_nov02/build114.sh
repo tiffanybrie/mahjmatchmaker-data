@@ -6,3 +6,4 @@ set -eo pipefail; S=$1; D=$2; H=$(dirname "$0"); R=$H/../..
 rm -rf "$D"; cp -al "$S" "$D"; rm "$D/index.html"; cp "$S/index.html" "$D/index.html"
 python3 $R/builder/table_view/preview_nov01.py "$D/index.html" "$D" --release 1.14   # Table view as a real build (no preview title)
 python3 $H/price114.py "$D"
+python3 $H/ui114.py "$D"   # rack filter singles + Table tour step (Tiffany Nov 1 11:33pm)

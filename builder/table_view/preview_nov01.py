@@ -69,7 +69,11 @@ def ranges(vals):
 pr = {'mat': ranges([x[1] for x in pm.values()]), 'tiles': ranges([x[1] for x in pt.values()]), 'racks': ranges([x[1] for x in price.values()])}
 SC = json.load(open(R / 'config/tableview-sizecheck-nov01.json'))
 sz = {'mat': SC.get('mat_listed_in', 33.0), 'edge': 1.0, 'wallDepth': SC['wall_depth_in'] / SC['tile_width_in'], 'gap': SC['wall_to_rack_gap_in']}
-TVD = dict(cls=cls, why=why, rk=rk, rkw=rkw, fin=fin, price=price, pm=pm, pt=pt, so=so, backs=backs, pr=pr, sz=sz)
+# v114 (Tiffany Nov 1 11:33/11:36pm): clean rack cut-outs for the Table (no white box / white edges), never grayed for that reason.
+# builder/table_view/rack_audit_nov02.py fix -> assets/table-view/racks/*.webp; listed in config/tableview-rack-audit-nov02.json 'fixed'
+AUD = json.load(open(R / 'config/tableview-rack-audit-nov02.json'))
+ro = {k: durl(v['file'], 900, alpha=True) for k, v in AUD['fixed'].items() if k in rk and (R / v['file']).exists()}
+TVD = dict(cls=cls, why=why, rk=rk, rkw=rkw, fin=fin, price=price, pm=pm, pt=pt, so=so, backs=backs, pr=pr, sz=sz, ro=ro)
 css = """<style>/* Table view preview (Nov 1 rebuild: sample UX) */
 /* WebKit iPhone: the step nav (.stp, 289px) would not shrink and pushed the stars/account icons 10px off-screen (also in live 1.12) */
 html{overflow-x:hidden;overscroll-behavior-x:none}body{overflow-x:clip;max-width:100%}/* not overflow on body: WebKit would make body the scroller and window.scrollTo would stop working */.top .stp{min-width:0;flex:1 1 auto;overflow:hidden}
@@ -128,7 +132,8 @@ body.tvmode .swh.cue{display:none}/* QA Nov 1: first-time swipe hint would cover
 #tvtoast[hidden]{display:none}
 </style>"""
 js = (R / 'builder/table_view/preview_tv.js').read_text()
-inj = css + '<script>const TVD=' + json.dumps(TVD, separators=(',', ':')) + ';</script><script>' + js + '</script>'
+# TVD lives INSIDE D (D.tv): gate [4] word checks read the UI with D stripped, and Table data is data, not UI
+inj = css + '<script>const TVD=D.tv;</script><script>' + js + '</script>'
 a = """<button type="button" data-mode="aerial" aria-pressed="${S.mode==='aerial'}">Aerial</button>"""
 assert h.count(a) == 1, h.count(a)
 h = h.replace(a, a + """<button type="button" data-mode="table" aria-pressed="${S.mode==='table'}">Table <b style="color:#c8325f;font-size:9px;letter-spacing:.06em">NEW</b></button>""")
@@ -167,7 +172,9 @@ sub1('const f=S.tfront;if(f!=null&&S.tfmat===S.dmat&&D.sets[f]&&!S.tseen[f]){', 
 sub1("function matDeck(){return INSF('m',matDeck0());}", "function matDeck(){return INSF('m',matDeck0());}matDeck=(o=>function(){const d=o();const f=S.tvforce;return f&&f===S.mfront&&S.mfset===S.set&&M[f]&&!S.seen[f]?[f,...d.filter(x=>x!==f)]:d;})(matDeck);")
 sub1("function rackDeck(){return INSF('r',rackDeck0());}", "function rackDeck(){return INSF('r',rackDeck0());}rackDeck=(o=>function(){const d=o();const f=S.tvrf;return f&&R[f]&&!R[f].hid&&!S.rseen[f]?[f,...d.filter(x=>x!==f)]:d;})(rackDeck);")
 
+assert h.count('const D={') == 1 and '"tv":{' not in h[:h.index('const D={') + 20]
+h = h.replace('const D={', 'const D={"tv":' + json.dumps(TVD, separators=(',', ':')) + ',', 1)
 j = h.rindex('</body>') if '</body>' in h else len(h)
 h = h[:j] + inj + h[j:]
 (OUT / 'index.html').write_text(h)
-print('aerial refs', n, 'price ranges', pr, 'priced', {'mat': len(pm), 'tiles': len(pt), 'racks': len(price)}, 'cls', len(cls), 'usable racks', len(rk), 'backs', len(backs), 'priced racks', len(price), 'price chips', pr, 'index MB', round(len(h.encode()) / 1e6, 2))
+print('aerial refs', n, 'price ranges', pr, 'priced', {'mat': len(pm), 'tiles': len(pt), 'racks': len(price)}, 'cls', len(cls), 'usable racks', len(rk), 'backs', len(backs), 'priced racks', len(price), 'rack cut-outs', len(ro), 'price chips', pr, 'index MB', round(len(h.encode()) / 1e6, 2))
