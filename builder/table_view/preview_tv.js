@@ -106,7 +106,7 @@ const panelOpen=()=>{const p=$i('tvpanel');return !!(p&&p.classList.contains('op
 function land(id){const el=$i(id);if(!el)return;const c=el.querySelector('.scard[id^="top-"]')||el.querySelector('.deck');if(!c)return;
   const hd=document.querySelector('header.top');const H=(hd?hd.getBoundingClientRect().height:56)+6;const Y=window.scrollY;
   const ct=c.getBoundingClientRect().top+Y;const ac=el.querySelector('.acts');const bot=Math.max(c.getBoundingClientRect().bottom,ac&&ac.offsetParent?ac.getBoundingClientRect().bottom:0)+Y;
-  const vr=el.querySelector('.vrow');const vt=vr&&vr.offsetParent?vr.getBoundingClientRect().top+Y:ct;const avail=innerHeight-(panelOpen()?$i('tvpanel').offsetHeight:0);
+  const vr=el.querySelector('.vrow');const vt=vr&&vr.offsetParent?vr.getBoundingClientRect().top+Y:ct;const avail=innerHeight-(panelOpen()&&innerWidth<1280?$i('tvpanel').offsetHeight:0);
   let y=ct-H;if(!panelOpen()&&vt<ct&&ct-vt<90&&bot-vt+H<=avail)y=vt-H;
   window.scrollTo({top:Math.max(0,y),behavior:'smooth'})}
 window.TVLAND=id=>{if(!['s-mats','s-tiles','s-racks'].includes(id))return false;requestAnimationFrame(()=>setTimeout(()=>land(id),30));return true};/* the Card step keeps the app's own jump */
@@ -147,7 +147,7 @@ function panel(){let p=$i('tvpanel');if(p)return p;p=document.createElement('asi
   const end=()=>{if(y0===null)return;p.classList.remove('drag');if(dy>70)closeP();else p.style.transform='';y0=null};g.addEventListener('pointerup',end);g.addEventListener('pointercancel',end);
   p.querySelector('#tvq').addEventListener('input',e=>{SW.qs[SW.tab]=e.target.value;$i('tvqx').hidden=!e.target.value;grid()});
   if(typeof ResizeObserver!=='undefined')new ResizeObserver(pad).observe(p);return p}
-function pad(){const p=$i('tvpanel');document.body.style.paddingBottom=p&&p.classList.contains('open')?p.offsetHeight+'px':''}
+function pad(){const p=$i('tvpanel');document.body.style.paddingBottom=p&&p.classList.contains('open')&&innerWidth<1280?p.offsetHeight+'px':''}
 function openP(mode,tab){const p=panel();p.dataset.mode=mode;if(tab&&tab!==SW.tab){SW.tab=tab;resetFilters()}p.classList.add('open');p.style.transform='';p.scrollTop=0;syncAdj();if(mode==='swap')tabSync();requestAnimationFrame(()=>{pad();land(CTX)})}
 function closeP(){const p=$i('tvpanel');if(!p)return;p.classList.remove('open');p.style.transform='';pad()}
 function resetFilters(){SW.brand='';SW.color='';SW.fin='';SW.price=''}

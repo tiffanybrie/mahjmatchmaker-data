@@ -83,6 +83,7 @@ body.tvmode .scard .onmat{display:none}
  transform:translateY(105%);transition:transform .25s ease;padding:0 max(14px,env(safe-area-inset-left,0px)) calc(14px + env(safe-area-inset-bottom,0px));box-shadow:0 -10px 30px rgba(0,0,0,.18);font:14px/1.4 var(--body);color:#2a2036;display:flex;flex-direction:column;gap:10px;visibility:hidden}
 .tvp.open{transform:none;visibility:visible}.tvp.drag{transition:none}
 @media (min-width:700px){.tvp{left:50%;right:auto;width:560px;margin-left:-280px}}
+@media (min-width:1280px){.tvp{left:auto;right:16px;top:72px;bottom:24px;width:360px;margin-left:0;max-height:none;border-radius:18px;transform:translateX(110%)}.tvp.open{transform:none}}/* desktop: docked beside the app column, the table stays fully visible */
 .tvp[data-mode="adjust"] .tvswapsec,.tvp[data-mode="swap"] .tvadjsec,.tvp[data-mode="adjust"] .tvback{display:none}
 .tvp section{display:flex;flex-direction:column;gap:10px;min-width:0}
 .tvp h3{margin:0;font:400 18px/1.15 var(--display,serif);color:var(--navy,#054689)}

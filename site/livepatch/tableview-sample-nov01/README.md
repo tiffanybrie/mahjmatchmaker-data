@@ -43,7 +43,7 @@ tap a rack to try a different one there, legend under the table lists each with 
 - Tested locally: WebKit iPhone 13 + Chromium 1280. Both doors run through to the card, plus the Table deck. No horizontal overflow, 0 errors.
 - Fix carried in: WebKit `.top .stp` nav overflow (289px), CSS `min-width:0`. The same bug exists in live 1.12.
 
-### Rebuild (Nov 1 ~8:30pm, after Tiffany 7:43pm + 7:45pm): preview Version 12
+### Rebuild (Nov 1 ~8:30pm, after Tiffany 7:43pm + 7:45pm): preview Version 13 (v13 = v12 + desktop: at 1280px and up the sheet docks beside the app column)
 - Same artifact 5QjNXjw15MuZTqzDT1ptbp. Base = pub113 as rebuilt 18:50 (v113 QA round 2); its mc/190.webp re-uploaded with it.
 - UX now matches the sample. The changes:
   - Adjust button by the View switch (below the card in the Racks step) opens the bottom sheet: Swap tiles / Swap mat / Swap racks, then Walls and Tile faces Center/Corner/Off.
