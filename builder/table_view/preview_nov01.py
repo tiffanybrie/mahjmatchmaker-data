@@ -77,7 +77,7 @@ body.tvmode .scard .onmat{display:none}
 .scard.tvoff .ph img{filter:grayscale(1) opacity(.5)}
 .tvna{position:absolute;left:8px;right:8px;bottom:8px;z-index:3;background:rgba(255,255,255,.95);border-radius:10px;padding:6px 9px;font:600 12px/1.3 var(--body);color:#2a2036;pointer-events:none}
 body.tvmode .swh.cue{display:none}/* QA Nov 1: first-time swipe hint would cover the tile faces */
-@media (max-width:460px){.vrow{gap:5px}.vrow>span{font-size:9.5px;letter-spacing:.06em}.vrow .seg.mode{padding:2px}.vrow .seg.mode button{padding:7px 7px;font-size:11.5px}.vrow .tvadj{padding:6px 8px;font-size:11.5px}}/* VIEW label + 3 views + Adjust fit a phone (QA: keep VIEW like live) */
+@media (max-width:460px){.vrow{gap:4px;flex-wrap:wrap;row-gap:6px;justify-content:center}.vrow>span{font-size:9px;letter-spacing:.04em}.vrow .seg.mode{padding:2px}.vrow .seg.mode button{padding:7px 6px;font-size:11.5px}.vrow .tvadj{padding:6px 7px;font-size:11.5px}}/* VIEW label + 3 views + Adjust fit a phone (QA: keep VIEW like live) */
 .tvadj{border:1px solid #ecd5df;background:#fff;border-radius:999px;padding:7px 11px;font:700 12.5px/1 var(--body);color:var(--navy,#054689);cursor:pointer;flex:none}
 .vrow.tvctl{margin:2px 0 6px}
 .tvp{position:fixed;left:0;right:0;bottom:0;z-index:250;background:#fff;border-radius:18px 18px 0 0;max-height:46vh;max-height:46dvh;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;
