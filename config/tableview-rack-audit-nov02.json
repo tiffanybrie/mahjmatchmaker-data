@@ -39,9 +39,11 @@
   },
   "bb:Clear": {
    "file": "assets/table-view/racks/bb_Clear_2da2a0e7.webp",
-   "was": [],
+   "was": [
+    "flat render / low-res: no visible wood grain (Tiffany Nov 2 10:11am)"
+   ],
    "now": [],
-   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+   "method": "real grain: this stain's band from Bird & Bamboo's WOOD STAINS photo, label rows from the rest of the same rows, B&B rack outline"
   },
   "bb:Cornflower Blue": {
    "file": "assets/table-view/racks/bb_Cornflower_Blue_9d3acaf4.webp",
@@ -233,9 +235,11 @@
   },
   "bb:Weathered Oak": {
    "file": "assets/table-view/racks/bb_Weathered_Oak_96df3fb0.webp",
-   "was": [],
+   "was": [
+    "flat render / low-res: no visible wood grain (Tiffany Nov 2 10:11am)"
+   ],
    "now": [],
-   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+   "method": "real grain: this stain's band from Bird & Bamboo's WOOD STAINS photo, label rows from the rest of the same rows, B&B rack outline"
   },
   "bb:Wine": {
    "file": "assets/table-view/racks/bb_Wine_5694e152.webp",
@@ -481,9 +485,11 @@
   },
   "bb:Dark Walnut": {
    "file": "assets/table-view/racks/bb_Dark_Walnut_f7b2ffaf.webp",
-   "was": [],
+   "was": [
+    "flat render / low-res: no visible wood grain (Tiffany Nov 2 10:11am)"
+   ],
    "now": [],
-   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+   "method": "real grain: this stain's band from Bird & Bamboo's WOOD STAINS photo, label rows from the rest of the same rows, B&B rack outline"
   },
   "bb:Dijon": {
    "file": "assets/table-view/racks/bb_Dijon_1a5515ff.webp",
@@ -619,9 +625,11 @@
   },
   "bb:Provincial": {
    "file": "assets/table-view/racks/bb_Provincial_9b4aeb3f.webp",
-   "was": [],
+   "was": [
+    "flat render / low-res: no visible wood grain (Tiffany Nov 2 10:11am)"
+   ],
    "now": [],
-   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+   "method": "real grain: this stain's band from Bird & Bamboo's WOOD STAINS photo, label rows from the rest of the same rows, B&B rack outline"
   },
   "bb:Red": {
    "file": "assets/table-view/racks/bb_Red_8821f563.webp",
@@ -631,9 +639,11 @@
   },
   "bb:Red Mahogany": {
    "file": "assets/table-view/racks/bb_Red_Mahogany_09816ebe.webp",
-   "was": [],
+   "was": [
+    "flat render / low-res: no visible wood grain (Tiffany Nov 2 10:11am)"
+   ],
    "now": [],
-   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+   "method": "no brand photo of Red Mahogany: Provincial's real grain in Red Mahogany's brand colour (flagged)"
   },
   "bb:Retro Mustard": {
    "file": "assets/table-view/racks/bb_Retro_Mustard_3f84ab5f.webp",
@@ -673,9 +683,11 @@
   },
   "bb:White Wood Stain": {
    "file": "assets/table-view/racks/bb_White_Wood_Stain_9b6b9a78.webp",
-   "was": [],
+   "was": [
+    "flat render / low-res: no visible wood grain (Tiffany Nov 2 10:11am)"
+   ],
    "now": [],
-   "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+   "method": "real grain: this stain's band from Bird & Bamboo's WOOD STAINS photo, label rows from the rest of the same rows, B&B rack outline"
   },
   "bb:Yellow": {
    "file": "assets/table-view/racks/bb_Yellow_8e44dee5.webp",
@@ -786,6 +798,38 @@
    ],
    "now": [],
    "method": "halo removed: hard alpha (>235) + 1px choke"
+  },
+  "www.ymimports.com/us-rl028-a": {
+   "file": "assets/table-view/racks/www_ymimports_com_us_rl028_a_847365fc.webp",
+   "was": [
+    "flat render / low-res: no visible wood grain (Tiffany Nov 2 10:11am)"
+   ],
+   "now": [],
+   "method": "real grain: front rack cut from the brand 2048px 4-rack photo, straightened, squared edges"
+  },
+  "www.ymimports.com/us-rl029-a": {
+   "file": "assets/table-view/racks/www_ymimports_com_us_rl029_a_4c16f468.webp",
+   "was": [
+    "flat render / low-res: no visible wood grain (Tiffany Nov 2 10:11am)"
+   ],
+   "now": [],
+   "method": "real grain: front rack cut from the brand 2048px 4-rack photo, straightened, squared edges"
+  },
+  "www.ymimports.com/us-rl027-a": {
+   "file": "assets/table-view/racks/www_ymimports_com_us_rl027_a_548520aa.webp",
+   "was": [
+    "flat render / low-res: no visible wood grain (Tiffany Nov 2 10:11am)"
+   ],
+   "now": [],
+   "method": "real grain: front rack cut from the brand 2048px 4-rack photo, straightened, squared edges"
+  },
+  "www.ymimports.com/us-rl026-a": {
+   "file": "assets/table-view/racks/www_ymimports_com_us_rl026_a_59cc67c4.webp",
+   "was": [
+    "flat render / low-res: no visible wood grain (Tiffany Nov 2 10:11am)"
+   ],
+   "now": [],
+   "method": "real grain: front rack cut from the brand 2048px 4-rack photo, straightened, squared edges"
   }
  },
  "canva": {},

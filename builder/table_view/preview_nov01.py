@@ -31,10 +31,10 @@ for k in D['mats']:
     if cl == 'C': why[k] = 'its photo has its own colored racks on it.' if c.get('racks') == 'colored' else 'no flat, top-down photo of this mat yet.'
 rk = {k: 1 for k, v in COV['_racks'].items() if v['class'] == 'S'}
 rkw = {k: ('Only a group or lifestyle photo of these racks.' if v['class'] == 'G' else 'Only an angled photo of these racks.') for k, v in COV['_racks'].items() if v['class'] != 'S'}
-FIN = [('walnut', r'walnut'), ('wood', r'wood|walnut|oak|beech|acacia|maple|cherry|mahogany'), ('tortoise', r'tortoise|hawksbill|burl'),
+FIN = [('walnut', r'walnut'), ('wood', r'wood|walnut|oak|beech|acacia|maple|cherry(?! red)|mahogany'), ('tortoise', r'tortoise|hawksbill|burl'),
        ('pearl', r'pearl|iridescent|opal|mother.of|shell|nacre'), ('clear', r'clear|acrylic|transparent|crystal'), ('lucite', r'lucite'),
        ('metallic', r'metallic|gold|silver|chrome|bronze|copper'), ('white', r'\bwhite\b'), ('glitter', r'glitter|sparkle|confetti')]
-fin, price, so = {}, {}, {}
+fin, price, so = {}, {}, {}  # 'cherry(?! red)': B&B 'Cherry Red' is a paint colour, not wood (Nov 2)
 for k, r in D['racks'].items():
     t = (r['n'].replace(r.get('bn', ''), '') + ' ' + ' '.join(r.get('rf', []))).lower()
     f = [a for a, rx in FIN if re.search(rx, t)]
