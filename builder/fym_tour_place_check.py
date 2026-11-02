@@ -15,7 +15,9 @@ so = socket.socket(); so.bind(('127.0.0.1', 0)); port = so.getsockname()[1]; so.
 srv = subprocess.Popen([sys.executable, '-m', 'http.server', str(port), '--bind', '127.0.0.1', '--directory', B], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL); time.sleep(1)
 URL = f'http://localhost:{port}/index.html'
 ORDER = ['tiles', 'mats', 'pick', 'add', 'racks', 'rpick', 'make', 'share', 'shop']
-ACT = {'tiles': '#s-tiles .tgrid [data-tile]', 'mats': '[data-yes="m"]', 'pick': '.tray .th button', 'add': 'TARGET',
+import re as _re
+if "{k:'table'," in open(os.path.join(B, 'index.html')).read(): ORDER.insert(2, 'table')  # v114: 'Try Table view' tip on the View switch after the mat swipe step
+ACT = {'tiles': '#s-tiles .tgrid [data-tile]', 'mats': '[data-yes="m"]', 'table': '[data-tour-next]', 'pick': '.tray .th button', 'add': 'TARGET',
        'racks': '[data-yes="r"]', 'rpick': '#rtray .th button', 'make': 'TARGET', 'share': '[data-tour-next]', 'shop': '[data-tour-next]'}
 STATE = """()=>{if(!TOUR.on)return {on:false};const s=TSTEPS[TOUR.step],c=document.getElementById('coach'),t=tourTarget(s);
  const cr=c&&c.getBoundingClientRect(),tr=t&&t.getBoundingClientRect(),vh=innerHeight,vw=document.documentElement.clientWidth;
