@@ -10,6 +10,10 @@
  "wall_inset_from_rack_ends_in": 0.5,
  "wall_to_rack_gap_in": 0.0,
  "mat_width_in_approx": 31.6,
- "racks_inset_from_mat_edge_in_approx": {"top_bottom": 4.0, "sides": 1.0},
- "notes": "Walls sit tight against the inside of each rack, centered, 19 tiles long (2 high). Racks are close to the mat edge on the sides and further in at top/bottom in this photo (hand placement, not a rule). Use: scale racks by R.len, walls by tile width x 19, mat by its listed size."
+ "racks_inset_from_mat_edge_in_approx": {
+  "top_bottom": 4.0,
+  "sides": 1.0
+ },
+ "notes": "Walls sit tight against the inside of each rack, centered, 19 tiles long (2 high). Racks are close to the mat edge on the sides and further in at top/bottom in this photo (hand placement, not a rule). Use: scale racks by R.len, walls by tile width x 19, mat by its listed size. Mat edge-to-edge measures ~31.6in at the rack scale vs the listed 33in Rattan mat: treat rack/wall/tile ratios as reliable (all measured in the same plane) and the mat ratio as +/-5% (stitched edge, lens).",
+ "mat_listed_in": 33.0
 }
