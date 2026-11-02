@@ -1,7 +1,7 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-02T14:28:22+00:00",
- "fym_ref": "origin/fym-site-preview:site-app/fym-v114",
+ "swept_at": "2026-11-02T23:09:21+00:00",
+ "fym_ref": "/tmp/claude-0/lw/fym114.html",
  "stores": {
   "amahjline.com": {
    "brand": "Amahj",
@@ -220,7 +220,7 @@
   "bespokemahjong.com": {
    "brand": "Bespoke Mahjong",
    "status": "ok",
-   "products": 352,
+   "products": 353,
    "mats": [
     [
      "2026-10-22T12:17:12-05:00",
@@ -546,8 +546,13 @@
   "brittmillsdesign.com": {
    "brand": "Britt Mills",
    "status": "ok",
-   "products": 712,
+   "products": 713,
    "mats": [
+    [
+     "2026-11-02T10:05:36-05:00",
+     "Isla Leatherette Mahjong Mat",
+     "isla-leatherette-mahjong-mat"
+    ],
     [
      "2026-10-30T14:25:52-04:00",
      "Calista Leatherette Mahjong Mat",
@@ -904,7 +909,13 @@
      "willow-neoprene-mahjong-mat"
     ]
    ],
-   "missing": []
+   "missing": [
+    [
+     "2026-11-02T10:05:36-05:00",
+     "Isla Leatherette Mahjong Mat",
+     "isla-leatherette-mahjong-mat"
+    ]
+   ]
   },
   "charlestonmahjongclub.com": {
    "brand": "Charleston Mahjong Club",
@@ -1862,7 +1873,7 @@
   "ohmymahjong.com": {
    "brand": "Oh My Mahjong",
    "status": "ok",
-   "products": 239,
+   "products": 240,
    "mats": [
     [
      "2026-10-29T14:19:42-05:00",
@@ -2043,7 +2054,7 @@
   "shop.andersruff.com": {
    "brand": "Anders Ruff",
    "status": "ok",
-   "products": 153,
+   "products": 154,
    "mats": [
     [
      "2026-10-27T23:11:59-04:00",
@@ -2819,12 +2830,12 @@
     [
      "2026-10-04T20:54:15-04:00",
      "Flutter for a Cause Mahjong Mat",
-     "flutter-for-a-cause-mahjong-mat-charity-donation-included"
+     "flutter-for-a-cause-mahjong-mat"
     ],
     [
      "2026-10-04T16:28:24-04:00",
      "Save the TaTas Mahjong Mat",
-     "save-the-tatas-charity-donation-included-neoprene-mahjong-mat"
+     "save-the-tatas-mahjong-mat"
     ],
     [
      "2026-10-01T16:26:53-04:00",
@@ -3024,7 +3035,7 @@
     [
      "2026-09-18T10:45:21-04:00",
      "A Few of My Favorite Things Custom Mahjong Mat",
-     "favorite-things-custom-mat-personalized-mahjong-mat"
+     "a-few-of-my-favorite-things-custom-mahjong-mat"
     ],
     [
      "2026-09-17T17:59:05-04:00",
@@ -3043,8 +3054,8 @@
     ],
     [
      "2026-09-13T15:35:15-04:00",
-     "Royal Peacock Mahjong Mat",
-     "royal-peacock-mahjong-mat-2"
+     "Royal Blue Peacock Mahjong Mat",
+     "royal-blue-peacock-mahjong-mat"
     ],
     [
      "2026-09-12T15:39:41-04:00",
@@ -3068,8 +3079,8 @@
     ],
     [
      "2026-09-07T17:40:05-04:00",
-     "Purple Royal Peacock Mahjong Mat",
-     "royal-peacock-mahjong-mat"
+     "Royal Purple Peacock Mahjong Mat",
+     "royal-purple-peacock-mahjong-mat"
     ],
     [
      "2026-09-07T17:25:08-04:00",
@@ -3094,7 +3105,7 @@
     [
      "2026-09-06T19:23:27-04:00",
      "Green Apres Skiing with Skiers Mahjong Mat",
-     "green-apres-skiing-in-teal-with-skiers-mahjong-mat"
+     "green-apres-skiing-with-skiers-mahjong-mat"
     ],
     [
      "2026-09-05T16:15:26-04:00",
@@ -3393,8 +3404,8 @@
     ],
     [
      "2026-08-05T16:58:10-04:00",
-     "Year of the Horse 2 OHBoN Studios Artist Mahjong Mat",
-     "year-of-the-horse-artist-collab-mahjong-mat"
+     "Year of the Horse OHBoN Studios Artist Mahjong Mat",
+     "year-of-the-horse-ohbon-studios-artist-mahjong-mat"
     ],
     [
      "2026-08-04T20:06:55-04:00",
@@ -3424,7 +3435,7 @@
     [
      "2026-08-03T18:15:35-04:00",
      "Aggies Game Day Mahjong Mat",
-     "texas-a-m-mahjong-mat"
+     "aggies-game-day-mahjong-mat"
     ],
     [
      "2026-08-02T17:54:51-04:00",
@@ -3524,7 +3535,7 @@
     [
      "2026-07-27T14:45:42-04:00",
      "Halloween Happy Hour Mahjong Mat",
-     "halloween-neoprene-mahjong-mat"
+     "halloween-happy-hour-mahjong-mat"
     ],
     [
      "2026-07-22T10:22:53-04:00",
@@ -3554,7 +3565,7 @@
     [
      "2026-07-19T13:04:43-04:00",
      "Cheaper Than Christmas Tiles OHBoN Studios Artist Mahjong Mat",
-     "ohbon-studios-artist-collab-mahjong-mat"
+     "cheaper-than-christmas-tiles-ohbon-studios-artist-mahjong-mat"
     ],
     [
      "2026-07-18T09:11:45-04:00",
@@ -3624,7 +3635,7 @@
     [
      "2026-07-08T13:07:12-04:00",
      "Pineapple Pattern OHBoN Studios Artist Mahjong Mat",
-     "pineapple-pattern-no-36-artist-collab-leatherette-mahjong-mat"
+     "pineapple-pattern-ohbon-studios-artist-mahjong-mat"
     ],
     [
      "2026-07-07T09:18:32-04:00",
@@ -3803,13 +3814,13 @@
     ],
     [
      "2026-06-22T10:50:46-04:00",
-     "Year of the Horse OHBoN Studios Artist Mahjong Mat",
-     "year-of-the-horse-artist-collab-mahjong-mat-mahj-game-tabletop-31-5-inch"
+     "Year of the Horse Medallion OHBoN Studios Artist Mahjong Mat",
+     "year-of-the-horse-medallion-ohbon-studios-artist-mahjong-mat"
     ],
     [
      "2026-06-22T10:50:46-04:00",
      "Triple Crown with Instructions OHBoN Studios Artist Mahjong Mat",
-     "derby-days-with-instructions-artist-collab-33-inch-mahjong-mat"
+     "triple-crown-with-instructions-ohbon-studios-artist-mahjong-mat"
     ],
     [
      "2026-06-22T10:50:46-04:00",
@@ -3834,7 +3845,7 @@
     [
      "2026-06-22T10:50:44-04:00",
      "Golfing OHBoN Studios Artist Mahjong Mat",
-     "golfing-artist-collab-33-inch-mahjong-mat-copy-copy"
+     "golfing-ohbon-studios-artist-mahjong-mat"
     ],
     [
      "2026-06-22T10:50:44-04:00",
@@ -4293,13 +4304,13 @@
     ],
     [
      "2026-02-18T15:31:09-05:00",
-     "Ocean Florals with Instructions Mahjong Mat",
-     "ocean-florals-with-directions-mahjong-mat"
+     "Pet Plays with Instructions Custom Mahjong Mat",
+     "doodle-plays-mahj-custom-with-directions-mahjong-mat"
     ],
     [
      "2026-02-18T15:31:09-05:00",
-     "Doodle Plays with Instructions Custom Mahjong Mat",
-     "doodle-plays-mahj-custom-with-directions-mahjong-mat"
+     "Ocean Florals with Instructions Mahjong Mat",
+     "ocean-florals-with-directions-mahjong-mat"
     ],
     [
      "2026-02-18T15:31:08-05:00",
@@ -4378,7 +4389,7 @@
     ],
     [
      "2026-02-18T15:18:03-05:00",
-     "Doodle Plays Custom Mahjong Mat",
+     "Pet Plays Custom Mahjong Mat",
      "doodle-plays-mahj-custom-mahjong-mat"
     ],
     [
@@ -4449,6 +4460,16 @@
      "vibrant-vortex-open-middle-mahjong-mat"
     ],
     [
+     "2026-10-04T20:54:15-04:00",
+     "Flutter for a Cause Mahjong Mat",
+     "flutter-for-a-cause-mahjong-mat"
+    ],
+    [
+     "2026-10-04T16:28:24-04:00",
+     "Save the TaTas Mahjong Mat",
+     "save-the-tatas-mahjong-mat"
+    ],
+    [
      "2026-10-01T16:06:09-04:00",
      "Fall Flowers Mahjong Mat",
      "fall-flowers-mahjong-mat"
@@ -4476,12 +4497,27 @@
     [
      "2026-09-18T10:45:21-04:00",
      "A Few of My Favorite Things Custom Mahjong Mat",
-     "favorite-things-custom-mat-personalized-mahjong-mat"
+     "a-few-of-my-favorite-things-custom-mahjong-mat"
+    ],
+    [
+     "2026-09-13T15:35:15-04:00",
+     "Royal Blue Peacock Mahjong Mat",
+     "royal-blue-peacock-mahjong-mat"
     ],
     [
      "2026-09-12T11:45:55-04:00",
      "Safari Garden with Instructions Mahjong Mat",
      "safari-garden-with-instructions-neoprene-mahjong-mat"
+    ],
+    [
+     "2026-09-07T17:40:05-04:00",
+     "Royal Purple Peacock Mahjong Mat",
+     "royal-purple-peacock-mahjong-mat"
+    ],
+    [
+     "2026-09-06T19:23:27-04:00",
+     "Green Apres Skiing with Skiers Mahjong Mat",
+     "green-apres-skiing-with-skiers-mahjong-mat"
     ],
     [
      "2026-08-30T21:36:12-04:00",
@@ -4509,9 +4545,19 @@
      "amalfi-fish-with-directions-neoprene-mahjong-mat"
     ],
     [
+     "2026-08-05T16:58:10-04:00",
+     "Year of the Horse OHBoN Studios Artist Mahjong Mat",
+     "year-of-the-horse-ohbon-studios-artist-mahjong-mat"
+    ],
+    [
      "2026-08-03T18:23:02-04:00",
      "White Bulldog Game Day Mahjong Mat",
      "white-bulldog-game-day-mahjong-mat"
+    ],
+    [
+     "2026-08-03T18:15:35-04:00",
+     "Aggies Game Day Mahjong Mat",
+     "aggies-game-day-mahjong-mat"
     ],
     [
      "2026-08-01T11:34:49-04:00",
@@ -4529,6 +4575,16 @@
      "painted-bulldog-ohbon-studios-artist-game-day-mahjong-mat"
     ],
     [
+     "2026-07-27T14:45:42-04:00",
+     "Halloween Happy Hour Mahjong Mat",
+     "halloween-happy-hour-mahjong-mat"
+    ],
+    [
+     "2026-07-19T13:04:43-04:00",
+     "Cheaper Than Christmas Tiles OHBoN Studios Artist Mahjong Mat",
+     "cheaper-than-christmas-tiles-ohbon-studios-artist-mahjong-mat"
+    ],
+    [
      "2026-07-13T16:49:02-04:00",
      "Winter Wonderland Mahjong Mat",
      "winter-wonderland-neoprene-mahjong-mat"
@@ -4537,6 +4593,11 @@
      "2026-07-09T19:42:29-04:00",
      "Tossing Tiles OHBoN Studios Artist Mahjong Mat",
      "tossing-tiles-artist-collab-leatherette-mahjong-mat"
+    ],
+    [
+     "2026-07-08T13:07:12-04:00",
+     "Pineapple Pattern OHBoN Studios Artist Mahjong Mat",
+     "pineapple-pattern-ohbon-studios-artist-mahjong-mat"
     ],
     [
      "2026-07-03T21:07:51-04:00",
@@ -4595,8 +4656,18 @@
     ],
     [
      "2026-06-22T10:50:46-04:00",
+     "Year of the Horse Medallion OHBoN Studios Artist Mahjong Mat",
+     "year-of-the-horse-medallion-ohbon-studios-artist-mahjong-mat"
+    ],
+    [
+     "2026-06-22T10:50:46-04:00",
      "Triple Crown with Instructions OHBoN Studios Artist Mahjong Mat",
-     "derby-days-with-instructions-artist-collab-33-inch-mahjong-mat"
+     "triple-crown-with-instructions-ohbon-studios-artist-mahjong-mat"
+    ],
+    [
+     "2026-06-22T10:50:44-04:00",
+     "Golfing OHBoN Studios Artist Mahjong Mat",
+     "golfing-ohbon-studios-artist-mahjong-mat"
     ],
     [
      "2026-06-19T21:16:51-04:00",
@@ -4655,17 +4726,17 @@
     ],
     [
      "2026-02-18T15:31:09-05:00",
+     "Pet Plays with Instructions Custom Mahjong Mat",
+     "doodle-plays-mahj-custom-with-directions-mahjong-mat"
+    ],
+    [
+     "2026-02-18T15:31:09-05:00",
      "Ocean Florals with Instructions Mahjong Mat",
      "ocean-florals-with-directions-mahjong-mat"
     ],
     [
-     "2026-02-18T15:31:09-05:00",
-     "Doodle Plays with Instructions Custom Mahjong Mat",
-     "doodle-plays-mahj-custom-with-directions-mahjong-mat"
-    ],
-    [
      "2026-02-18T15:18:03-05:00",
-     "Doodle Plays Custom Mahjong Mat",
+     "Pet Plays Custom Mahjong Mat",
      "doodle-plays-mahj-custom-mahjong-mat"
     ],
     [
