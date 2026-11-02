@@ -1,6 +1,7 @@
 # Peace Love Mahjong (@peacelovemahjong): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 1 (9pm ET): 'BLACK FRIDAY IS COMING! SAVE THE DATE: NOVEMBER 16!' teaser for tiles, mats, racks deals, details TBA (https://www.instagram.com/p/DfOE0UmMPwe/). Early Black Friday = Nov 16; plan affiliate pushes around it. #PeaceLoveMahjong #BlackFriday.
 - Oct 29: Vegan Leather Mats 'main character energy' reel (DfGKguDhz7Z). Nothing new in last 26h.
 - Oct 29: vegan leather mats push, 'main character energy', link in bio (DfGKguDhz7Z). Humor reels continue (host résumé, all-mahj schedule).
 - Oct 28: humor reel 'She has a lot on her schedule. It's all mahjong' (DfDmUo8BKY8). Merry Nutcracker restock post Oct 27 (DfBBojrGrgK).
