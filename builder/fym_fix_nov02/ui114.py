@@ -19,7 +19,7 @@ rep("const f=S.f[b.dataset.k];f.fam=PICK(b.dataset.k,f,b.dataset.fam);rerender(b
     "const f=S.f[b.dataset.k];f.fam=PICK(b.dataset.k,f,b.dataset.fam);if(b.dataset.k==='r'){f.fam=f.fam.slice(-1);f.fin='';}rerender(b.dataset.k);tourEv('fam');return;}")
 # rows always show every option in the pool
 rep("const L=FINS.filter(x=>pool.some(id=>RFIN(id).includes(x))&&(f.fin===x||FINN(x)>0));", "const L=FINS.filter(x=>pool.some(id=>RFIN(id).includes(x)));/*v114: never shrinks*/")
-rep(".filter(x=>pool.some(id=>fk(id).includes(x))).filter(x=>k!=='r'||f.fam.includes(x)||RDOTN(x)>0);", ".filter(x=>pool.some(id=>fk(id).includes(x)));/*v114: rack colours never shrink (RDOTN(x)>0 trimming removed)*/")
+rep(".filter(x=>pool.some(id=>fk(id).includes(x))).filter(x=>k!=='r'||f.fam.includes(x)||RDOTN(x)>0);", ".filter(x=>pool.some(id=>fk(id).includes(x)));/*v114: rack colours never shrink (no dot-count trimming)*/")
 rep('data-fam="" data-k="${k}" aria-pressed="${!f.fam.length}"', 'data-fam="" data-k="${k}" aria-pressed="${!f.fam.length&&!(k===\'r\'&&f.fin)}"')
 # tour step on the View switch
 a = " {k:'pick',t:'Step 3 · Pick your mat',"
