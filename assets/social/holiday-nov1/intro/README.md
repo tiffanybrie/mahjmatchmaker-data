@@ -1,5 +1,32 @@
 # Holiday intro hero reel + carousel ("We made a holiday list"), Mon Nov 2 2026
 
+## v2 (Nov 2, ~11am ET): CURRENT. The v1 reel files below (`holiday-intro-reel*.mp4/jpg`) are SUPERSEDED (kept for reference).
+Built from her Nov 1 6:09pm + Nov 2 9:23am notes (docs/ANSWERS.md). She posts it today and adds the song in Edits.
+| What | File |
+|---|---|
+| Reel v2, silent, 1080x1920, 30.0s, 30fps | `holiday-intro-reel-v2.mp4` |
+| Beat test (click on every 150 BPM beat, loud click = bar downbeat) | `holiday-intro-reel-v2-beat-test.mp4` |
+| Cover (hook grid + "It's holiday time.") | `holiday-intro-reel-v2-cover.jpg` |
+| Contact sheet, every 0.5s | `holiday-intro-reel-v2-contact-sheet.jpg` |
+| Captions (lint PASS) | `captions/reel-v2-ig-caption.txt`, `captions/reel-v2-fb-caption.txt` |
+| Builders | `build/v2_stock.py` → `build/v2_capture.py all` → `build/v2_hd.py` → `build/v2_reel.py frames` → `build/v2_finish.py` (inputs in /dev/shm/introv2; app = live site copy fym-v113 @3c0b8ceb via `build/v2_lib.py`) |
+
+**What changed vs v1**
+1. Pacing: only the app tutorial slows down (swipe flights ~1.5x slower, ~0.8-1.2s holds on Holiday tapped, each card, favorites row, mat zoom, match card). Everything else stays quick and varied (12-mat pop-in grid, 1.2s quilt), cuts on the 0.4s beat grid.
+2. Text: ONE centred cream plate at a time, 2-5 words, Caprasimo 78px navy, at y 270 (clear of the top 250px and the app's own text), held 1.2-2.4s: "It's holiday time." / "Our holiday favorite." / "Pick tiles. Tap Holiday." / "Swipe holiday mats." / "Your favorites, saved." / "Zoom in on your mat." / "Swipe racks to match." / "See it together. Shop it."
+3. Spotlight: on every app moment the screen is dimmed ~58% with a soft-edged cut-out on what matters (Holiday chip, tiles + mat card, favorites row, zoomed mat, zoomed mat + rack card). The phone never moves during a swipe.
+4. Margins: mat grids are designed for 9:16 (hook 3x4 grid, 80px sides; quilt 4x5 grid, 90px sides, centred vertically; counter thumbnails in a 3-up row). No edge-to-edge bursts.
+5. Color Me Merry (Soirée All Day, @soireeallday.co) is the hero: centre of the hook grid, flies up to a full-size "Our holiday favorite." moment, is hearted in the app (a favorites-row pick) and sits mid-quilt. Stock: both sizes available (Squarespace `?format=json`, unlimited stock, Nov 2 ~10am).
+6. Counters: digits are centred as a group; the "+" hangs outside so it never pushes the number off-centre. 140+ holiday mats · 14 holiday tile sets · 40+ holiday albums (COUNTS.md + ANSWERS Nov 1 6:00pm).
+7. No dating language (no "suitors", no "It's a match!" pill). End card: Find *Your* Mat-ch™ ("Your" Playfair italic) · "Holiday tiles, mats & racks across brands, together." · Shop now · use code MAHJMATCH · Link in bio. No URL.
+8. App footage re-recorded from the live site copy (v113): Dear Santa → tap Holiday (Tiffany's picks on) → ✕ The Polo Club (Luxe Mahjong) → ♥ Color Me Merry → ♥ Festive Plaid Premium (Sunday) → favorites row → racks step: + + + zoom on Festive Plaid → ♥ Persimmon, ✕ Basil (Bird & Bamboo), ♥ Walnut (Bam Bird Boutique) → the app's own Story 9:16 match card. The deck order was queued in the capture script (`matDeck0` wrapper); Candy Cane Lane (Anders Ruff) is the card under Festive Plaid.
+
+**Beat map v2 (150 BPM, 1 beat = 0.4s, 75 beats).** 0.0 hook grid · 2.4 Color Me Merry hero · 4.4 / 6.4 / 8.4 counters · 10.4 tap Holiday · 12.4 swipes (✕ 13.1, ♥ 14.6, ♥ 16.0) · 16.8 favorites row · 18.0 mat zoom · 20.0 rack swipes · 23.2 match card · 25.6 quilt · 26.8 end card. Song start as v1: the drop on "I don't want a lot for Christmas" (~0:51) at reel 0:00; she fine-tunes in Edits.
+
+**Every brand on screen (Tag people, 14):** @soireeallday.co @andersruffdesignco @sunday_mahjong @bird_and_bamboo @bambirdboutique @peacelovemahjong @ohmymahjong @letsbebestiesmahjong @mahj_squad @myfairmahjong @bougiemahjong @viroramahjongofficial @bamletsmahjong @charlestonmahjongclub. Shown, no verified handle (name only): Luxe Mahjong (The Polo Club ✕), Mahjong Register (Very Merry Wreath, Snowflake Lodge, Peppermint Patty), Hip Hip Mahjong (Hip Hip Hanukkah), Mahj & Moon (Candy Cane Christmas Village). Mats shown are in stock (Shopify `.js` check Nov 2 ~10am, 108 in stock; Color Me Merry checked on Squarespace). Tiles/covers in the counters: Dear Santa, Holly Jolly Sugarplum Pink, Nivalee; albums Dear Santa, Nutcracker Ballet, Après Ski Club.
+
+---
+## v1 (Nov 1), superseded
 DRAFT for Tiffany's OK. Nothing is posted, scheduled or in Planoly.
 
 ## Files
