@@ -89,6 +89,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **Brand-locked FYM sample (Mahjong Row & Co.)**: "keep exploring" (her Oct 30); docs/brand-lock/STATUS.md.
 
 ## Later / ideas
+- IDEA (Tiffany Nov 1 11:33pm, not now): fold racks into the mat step (no step-3 jump) for Aerial/Table views — racks come in/out on the same view like the match card; only Up close needs a jump. Revisit once Table view is live and if Table/Aerial become the main view.
 - **Clean up 52 legacy caption lint warnings** (still 52 Nov 1) (config/social/content_lint_baseline.json; mostly missing #MahjMatch, '(affiliate)', 2 TdT captions) (rules audit E9, Oct 30). Also 78 legacy FAILs (length 42, naming 36) in banked Season 2 captions: same kinds as yesterday, nothing new.
 - **Noli June FA LA LADIES** winter collection (4 mats incl. Hanukkah + ski) Tue Nov 3: new products → FYM + gallery the day they list (HQ sneak card, Oct 31).
 - **Tigre de Tartán House Tigers** return Nov 3; **Mary Benson Hydrangea tiles** Mon Nov 2 12pm/1pm ET (non-partner); **Maison Mahj** bags Nov 1 / House Line windows Nov 1-4 (record only); **CMC OTG247** announced Nov 1 (release calendar, Oct 31).
