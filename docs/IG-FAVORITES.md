@@ -33,6 +33,6 @@ Method note: the favorites menu only updates after a reload, so each add was con
 
 ## Nov 2 (Monday brand watch)
 - soireeallday.co: was already followed; favorited now, confirmed after reload ("Remove from favorites"). Signed in as @mahjmatchmaker (sidebar Profile = /mahjmatchmaker/).
-- New partners this week: Noli June (done Oct 31), Maison Mahj (code Oct 29; handle maisonmahj already in ig-handles.json, not a favorite yet: next run).
+- New partners this week: Noli June (done Oct 31), Maison Mahj (code Oct 29; handle maisonmahj already in ig-handles.json): already followed; favorited now, confirmed after reload.
 - New ShopMy brand: Luna EK Studio (Etsy shop LunaEKstudio, collection Oct 29): no Instagram link on the Etsy shop page, skipped (no verified handle).
 - Sunday Mahjong read in Chrome: newest post Oct 16 (minis reel); nothing new this week.
