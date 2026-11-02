@@ -1,0 +1,15 @@
+{
+ "_about": "Table view size calibration from Tiffany's real top-down photo (Nov 1 7:34pm): Sunday Mahjong 'Sunday' tiles + Sunday Mahjong 20in Tortoise acrylic racks on a Sunday Mahjong mat (rattan/cane border), shot straight down. Photo: assets/table-view/sizecheck/sunday-tiles-sunday-tortoise-20in-racks-rattan-mat-topdown.jpg (1932x2576). Measured by eye on the photo, approx +/-3%. Scale anchor = the 20in rack.",
+ "px_per_inch_full_res": 57.3,
+ "rack_len_in": 20.0,
+ "rack_depth_seen_from_above_in": 2.4,
+ "wall_tiles_per_side": 19,
+ "wall_len_in": 19.0,
+ "tile_width_in": 1.0,
+ "wall_depth_in": 1.55,
+ "wall_inset_from_rack_ends_in": 0.5,
+ "wall_to_rack_gap_in": 0.0,
+ "mat_width_in_approx": 31.6,
+ "racks_inset_from_mat_edge_in_approx": {"top_bottom": 4.0, "sides": 1.0},
+ "notes": "Walls sit tight against the inside of each rack, centered, 19 tiles long (2 high). Racks are close to the mat edge on the sides and further in at top/bottom in this photo (hand placement, not a rule). Use: scale racks by R.len, walls by tile width x 19, mat by its listed size."
+}
