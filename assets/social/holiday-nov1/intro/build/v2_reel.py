@@ -106,11 +106,11 @@ function label(html,k,y){const l=$('lbl');if(!html){l.innerHTML='';return;}l.sty
 const GX=80,GY=420,CW=287,GUT=30;
 C.HOOK.forEach((u,i)=>{const d=document.createElement('div');d.className='card';d.innerHTML=`<img src="${u}">`;$('grid').appendChild(d);});
 function hook(L){ // L = seconds into the hook+hero span (0..4.0)
- [...$('grid').children].forEach((d,i)=>{const c=i%3,r=Math.floor(i/3);let x=GX+c*(CW+GUT),y=GY+r*(CW+GUT),w=CW,o=1,s=eb((L-0.06-i*0.075)/0.32);
+ [...$('grid').children].forEach((d,i)=>{const c=i%3,r=Math.floor(i/3);let x=GX+c*(CW+GUT),y=GY+r*(CW+GUT),w=CW,o=1,s=eb((L+0.3-i*0.075)/0.32);
   if(i===4&&L>2.4){const k=eio((L-2.4)/0.55);const W2=820;x=x+(540-W2/2-x)*k;y=y+(480-y)*k;w=w+(W2-w)*k;s=1;}
   else if(L>2.4){o=1-cl((L-2.4)/0.3);s=1-0.15*cl((L-2.4)/0.3);}
-  d.style.left=x+'px';d.style.top=y+'px';d.style.width=d.style.height=w+'px';d.style.opacity=L<0.06+i*0.075?0:o;d.style.transform=`scale(${s})`;d.style.zIndex=i===4?5:1;});
- if(L<2.4){plate('It&rsquo;s holiday time.',L-0.15);label('',0);}
+  d.style.left=x+'px';d.style.top=y+'px';d.style.width=d.style.height=w+'px';d.style.opacity=L+0.3<i*0.075?0:o;d.style.transform=`scale(${s})`;d.style.zIndex=i===4?5:1;});
+ if(L<2.4){plate('It&rsquo;s holiday time.',L+0.3);label('',0);}
  else{plate('Our holiday favorite.',L-2.55);label('Color Me Merry <small>· Soirée All Day</small>',L-2.9,1352);}
 }
 // counters
@@ -151,7 +151,7 @@ window.render=function(t){let cur=SC[SC.length-1];for(const s of SC)if(t>=s[1]&&
  if(id==='swipe'){ // phone fixed for every swipe; flights slowed ~1.5x, ~0.8s holds between
   frame(C.RA,C.TA,pw([[0,4.84],[0.7,4.87],[1.4,5.36],[2.2,6.36],[2.25,6.43],[2.95,6.93],[3.6,7.93],[3.65,7.99],[4.4,8.5]],L)); cam(0.92,825,1092);
   spot([[18,200,744,1252,30]],1); plate('Swipe holiday mats.',L-0.05);}
- if(id==='saved'){ frame(C.RA,C.TA,pw([[0,8.9],[0.35,10.2],[1.2,10.2]],L)); cam(1.0+0.1*eio(L/0.5),1117,1010);
+ if(id==='saved'){ frame(C.RA,C.TA,10.2); cam(1.0+0.1*eio(L/0.5),1117,1010);
   spot([[16,1030,748,174,26]],cl(L/0.25)); plate('Your favorites, saved.',L-0.05);}
  if(id==='zoom'){ frame(C.RB,C.TB,pw([[0,0.95],[1.55,3.0],[2,3.4]],L)); cam(1.0+0.22*eio(L/0.45),528,960);
   spot([[16,360,748,336,26]],cl(L/0.25)); $('ov').innerHTML=[0.08,0.84,1.6].map(t0=>ring(706,416,(L-t0)/0.45)).join('');
@@ -180,9 +180,13 @@ if __name__ == '__main__':
         wait = "()=>Promise.all([...document.images].filter(i=>i.offsetParent&&!i.complete).map(i=>new Promise(r=>{i.onload=i.onerror=r})))"
         if mode == 'frames':
             fd = f'{W}/frames'
-            if os.path.isdir(fd): shutil.rmtree(fd)
-            os.makedirs(fd)
-            for n in range(int(FPS * DUR)):
+            rng = range(int(FPS * DUR))
+            if len(sys.argv) > 2:  # re-render only frames a-b (inclusive), e.g. frames 0-20 504-540
+                rng = [n for a in sys.argv[2:] for n in range(int(a.split('-')[0]), int(a.split('-')[1]) + 1)]
+            else:
+                if os.path.isdir(fd): shutil.rmtree(fd)
+                os.makedirs(fd)
+            for n in rng:
                 pg.evaluate(f"render({n / FPS})"); pg.evaluate(wait)
                 pg.screenshot(path=f'{fd}/{n:04d}.jpg', type='jpeg', quality=92)
         else:
