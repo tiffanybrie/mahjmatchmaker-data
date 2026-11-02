@@ -1660,6 +1660,23 @@ if any('pearl' in (_r.get('rf') or []) for _r in D['racks'].values()) or "pearl:
                    ('if(f.fin)ids=ids.filter(r=>RFIN(r).includes(f.fin));', 'finish ANDs with the colour'), ('data-finclear', 'finish row is clearable'),
                    ("(R[id].rf||[]).map(x=>RFSYN[x]||'').join(' ')", 'rack search matches finish words')):
         if _a not in UI: F.append(f"[141] {_w} missing")
+# [145] v114 (Nov 2): Table view + price filter. Static: the sheet uses data-tvmode (never data-mode, which the app reads as a View),
+# swapped items forced onto the app's own decks, landing on the table, price filter falls back with a note and counts unpriced items.
+# Runtime: builder/fym_tableview_check.py (WebKit iPhone 390 / 375 / 340): landing, swap mat -> suitor -> Racks, mat door swap tiles ->
+# suitor -> Add racks, sheet tap keeps Table, every price chip keeps the mat deck non-empty, no sideways slide.
+if '/*v114 table view*/' in UI:
+    for _a, _w in (("p.dataset.tvmode=mode;", 'sheet uses data-tvmode'), ("matDeck=(o=>function(){const d=o();const f=S.tvforce;", 'swapped mat forced on top of the mat deck'),
+                   ("rackDeck=(o=>function(){const d=o();const f=S.tvrf;", 'swapped rack forced on top of the rack deck'),
+                   ("const f=S.tfront;if(f!=null&&S.tfmat===S.dmat&&D.sets[f]){", 'swapped tile set stays in the mat-door list once hearted'),
+                   ("if(S.mode==='table'&&window.TVLAND&&TVLAND(id))return;", 'jump lands on the table'), ('so showing all. ', 'price fallback note'),
+                   ('without a listed price not shown.', 'unpriced count line')):
+        if _a not in UI: F.append(f"[145] Table view / price: {_w} missing")
+    if 'p.dataset.mode' in UI or 'id="tvpanel" data-mode' in UI: F.append("[145] the Table sheet sets data-mode (the app would switch View on a click inside it)")
+    import subprocess as _sp145
+    _o145 = _sp145.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fym_tableview_check.py'), B], capture_output=True, text=True, timeout=1500)
+    _l145 = [l for l in _o145.stdout.splitlines() if l.startswith('[145]')]
+    if _o145.returncode and not _l145: _l145 = ['[145] Table view check failed: ' + (_o145.stderr or '')[-200:]]
+    for _f in _l145[:10]: F.append(_f)
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))

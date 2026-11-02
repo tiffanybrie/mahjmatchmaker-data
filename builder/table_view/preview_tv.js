@@ -30,7 +30,9 @@ function pickRack(s,mat){if(TV.rack&&rackOK(TV.rack,s))return TV.rack;
   return cand.find(k=>rackOK(k,s)&&!OOS('r',k))||cand.find(k=>rackOK(k,s))}/* QA Nov 1: an in-stock rack first */
 window.TVPICK=(slug,mat)=>{const s=D.sets.find(x=>x.slug===slug);return s?pickRack(s,mat):null};/* test hook */
 /* ---------- drawing ---------- */
-const IC={};function load(src){if(!src)return Promise.resolve(null);if(!IC[src])IC[src]=new Promise(r=>{const i=new Image();i.onload=()=>r(i);i.onerror=()=>r(null);i.src=src});return IC[src]}
+const IC={};function load(src){if(!src)return Promise.resolve(null);if(!IC[src])IC[src]=new Promise(r=>{const web=!/^(data|blob):/i.test(src);
+  const go=(u,again)=>{const i=new Image();if(web)i.crossOrigin='anonymous';i.onload=()=>r(i);i.onerror=()=>{if(web&&!again)go(u+(u.includes('?')?'&':'?')+'cors=1',true);else r(null)};i.src=u};go(src,false)});return IC[src]}
+/* website copy: photos come from the jsDelivr CDN (another origin); without crossOrigin the canvas is tainted and toDataURL throws (same as the app's match-card loader lk) */
 function rr(c,x,y,w,h,r){c.beginPath();c.moveTo(x+r,y);c.arcTo(x+w,y,x+w,y+h,r);c.arcTo(x+w,y+h,x,y+h,r);c.arcTo(x,y+h,x,y,r);c.arcTo(x,y,x+w,y,r);c.closePath()}
 function shade(hx,f){const n=parseInt(hx.slice(1),16);const m=v=>Math.max(0,Math.min(255,Math.round(f>1?v+(255-v)*(f-1):v*f)));return `rgb(${m(n>>16)},${m(n>>8&255)},${m(n&255)})`}
 const CACHE=new Map();const cget=k=>{const v=CACHE.get(k);if(v){CACHE.delete(k);CACHE.set(k,v)}return v};const cput=(k,v,max)=>{CACHE.set(k,v);while(CACHE.size>max)CACHE.delete(CACHE.keys().next().value)};
@@ -62,7 +64,7 @@ async function render(mat,s,rack,corner,N){
   if(fi&&TV.faces!=='off'){const d=N*(TV.faces==='center'?.26:.22),cx=TV.faces==='center'?C:(corner?N*.2:N*.8),cy=TV.faces==='center'?C:(corner?N*.2:N*.8);
     c.save();c.shadowColor='rgba(0,0,0,.35)';c.shadowBlur=N*.018;c.beginPath();c.arc(cx,cy,d/2+N*.008,0,7);c.fillStyle='#fff';c.fill();c.restore();
     c.save();c.beginPath();c.arc(cx,cy,d/2,0,7);c.clip();const m=Math.min(fi.width,fi.height);c.drawImage(fi,(fi.width-m)/2,(fi.height-m)/2,m,m,cx-d/2,cy-d/2,d,d);c.restore()}
-  return oc.toDataURL('image/jpeg',.88)}
+  try{return oc.toDataURL('image/jpeg',.88)}catch(e){return null}}
 function tableURL(x,N){const key=[x.mat,x.s.slug,x.rack,x.corner?1:0,TV.walls,TV.faces,N].join('|');const v=cget(key);if(v)return v;
   const p=render(x.mat,x.s,x.rack,x.corner,N);cput(key,p,N>2000?3:36);return p}
 /* ---------- cards ---------- */
@@ -80,13 +82,13 @@ function proc(card){const x=ctx(card);if(!x)return;const img=card.querySelector(
   if(x.cls==='C'){note(card,'Not available in Table view: '+matWhy(x.mat),true);return}
   if(x.fixed&&!rackOK(x.rack,x.s)){note(card,'Not available in Table view: '+rackWhy(x.rack,x.s),true);return}
   if(!x.rack){note(card,'No rack with a clean photo fits these tiles yet.',true);return}
-  tableURL(x,N).then(u=>{if(card.dataset.tvk===key&&!card.dataset.tvhi){img.src=u;img.classList.add('tvimg')}});
+  tableURL(x,N).then(u=>{if(card.dataset.tvk!==key||card.dataset.tvhi)return;if(!u){note(card,'Table view couldn’t load a photo for this one. Try Up close or Aerial.',true);return}img.src=u;img.classList.add('tvimg')});
   if(x.corner)note(card,'Corner view: we only have a close-up photo of this mat.');
   else if(!TVD.backs[x.s.slug]&&TV.walls)note(card,'Walls off: back color not confirmed yet.')}
 /* sharper picture once zoomed in */
 setInterval(()=>{if(S.mode!=='table'||!S.zs||!S.zs.tvz||S.zs.tvz.s<1.2)return;
   for(const c of document.querySelectorAll('.scard[id^="top-"][data-tvk]')){if(c.dataset.tvhi===c.dataset.tvk||c.classList.contains('tvoff'))continue;const x=ctx(c);if(!x||x.cls==='C')continue;
-    const key=c.dataset.tvk;c.dataset.tvhi=key;tableURL(x,2600).then(u=>{if(c.dataset.tvk===key){const im=c.querySelector('.ph img:not(.onmat)');if(im){im.src=u;im.classList.add('tvimg')}}})}},350);
+    const key=c.dataset.tvk;c.dataset.tvhi=key;tableURL(x,2600).then(u=>{if(u&&c.dataset.tvk===key){const im=c.querySelector('.ph img:not(.onmat)');if(im){im.src=u;im.classList.add('tvimg')}}})}},350);
 /* ⤢ = the whole table full screen (app's openLbx calls this first in Table view) */
 window.TVLBX=function(id){const c=[...document.querySelectorAll('.scard[id^="top-"]')].find(e=>id==='tv'?e.id==='top-t':e.dataset.id===id)||$i('top-t');if(!c)return false;
   const x=ctx(c);if(!x||x.cls==='C'||!x.rack)return false;
@@ -96,7 +98,7 @@ window.TVLBX=function(id){const c=[...document.querySelectorAll('.scard[id^="top
   const go=()=>{if(bound)return;bound=true;const r=bx.getBoundingClientRect(),k=Math.min(r.width,r.height);Object.assign(im.style,{width:k+'px',height:k+'px',maxWidth:'none',maxHeight:'none',left:(r.width-k)/2+'px',top:(r.height-k)/2+'px'});zoomer(bx,im,bx,{})};
   im.addEventListener('load',go,{once:true});const cur=c.querySelector('.ph img.tvimg');if(cur)im.src=cur.src;
   bx.addEventListener('wheel',e=>{e.preventDefault();const b=bx.querySelector(e.deltaY<0?'[data-z="1"]':'[data-z="-1"]');if(b)b.click()},{passive:false});
-  tableURL(x,3000).then(u=>{if(im.isConnected)im.src=u});return true};
+  tableURL(x,3000).then(u=>{if(u&&im.isConnected)im.src=u});return true};
 /* the lightbox locks body scrolling; put the page back where it was when it closes */
 {let LBY=null;const ol=window.openLbx,cl=window.closeLbx;if(typeof ol==='function'&&typeof cl==='function'){
   window.openLbx=function(id){if(!document.getElementById('lbx'))LBY=window.scrollY;return ol(id)};

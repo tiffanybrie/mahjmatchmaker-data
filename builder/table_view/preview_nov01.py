@@ -8,11 +8,12 @@ website, NOT the live artifact). Takes the live artifact copy's index.html (pub1
      color, finish, in stock, Tiffany's picks, price), always 4 players; small app patches (zoom on Table cards, ⤢ = whole
      table full screen, land on the table after each step, a swapped pick goes on top of the app's own deck),
   3. labels the build 'Version 1.12 + Table view preview'.
-All other files are copied server-side from the live artifact at publish. Usage: python3 preview_nov01.py <pub index.html> <out dir>"""
+All other files are copied server-side from the live artifact at publish. Usage: python3 preview_nov01.py <pub index.html> <out dir> [--release 1.14]"""
 import sys, json, re, io, base64, pathlib, os
 from PIL import Image
 R = pathlib.Path(__file__).resolve().parents[2]
 SRC, OUT = sys.argv[1], pathlib.Path(sys.argv[2]); OUT.mkdir(parents=True, exist_ok=True)
+REL = sys.argv[sys.argv.index('--release') + 1] if '--release' in sys.argv else None  # e.g. 1.14: a real build (v114), not the preview overlay
 h = open(SRC).read()
 i = h.index('const D=') + 8; D, _ = json.JSONDecoder().raw_decode(h[i:])
 COV = json.load(open(R / 'config/tableview-photo-class-nov01.json'))
@@ -133,9 +134,14 @@ assert h.count(a) == 1, h.count(a)
 h = h.replace(a, a + """<button type="button" data-mode="table" aria-pressed="${S.mode==='table'}">Table <b style="color:#c8325f;font-size:9px;letter-spacing:.06em">NEW</b></button>""")
 n = h.count("S.mode==='aerial'"); h = h.replace("S.mode==='aerial'", "(S.mode==='aerial'||S.mode==='table')")
 h = h.replace("""aria-pressed="${(S.mode==='aerial'||S.mode==='table')}">Aerial""", """aria-pressed="${S.mode==='aerial'}">Aerial""")
-for v in re.findall(r'Version 1\.\d+(?:\.\d+)?', h)[:1]:
-    h = h.replace(v + '<', v + ' + Table view preview<')
-h = re.sub(r'<title>[^<]*</title>', '<title>Find Your Mat-ch Preview</title>', h, count=1)
+if REL:
+    old = re.findall(r'Version 1\.\d+(?:\.\d+)?', h); assert old, 'no version label'
+    for v in set(old): h = h.replace(v, 'Version ' + REL)
+    h = h.replace('</style>', '/*v114 table view*/</style>', 1)
+else:
+    for v in re.findall(r'Version 1\.\d+(?:\.\d+)?', h)[:1]:
+        h = h.replace(v + '<', v + ' + Table view preview<')
+    h = re.sub(r'<title>[^<]*</title>', '<title>Find Your Mat-ch Preview</title>', h, count=1)
 def sub1(a, b):
     global h
     assert h.count(a) == 1, (h.count(a), a[:80]); h = h.replace(a, b)
