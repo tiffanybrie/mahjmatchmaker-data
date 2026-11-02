@@ -305,9 +305,11 @@
   },
   "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=52307844202805": {
    "file": "assets/table-view/racks/boutique_com_wooden_mahjong_rack_pusher_set_v_52307844202805_e213cd29.webp",
-   "was": [],
+   "was": [
+    "QA Nov 2: pusher stick removed"
+   ],
    "now": [],
-   "method": "1px edge choke + fym_defringe"
+   "method": "pusher stick removed: rack-only crop (row/column coverage), holes filled + soft 0.6px edge"
   },
   "www.ymimports.com/nb-mp005-a": {
    "file": "assets/table-view/racks/www_ymimports_com_nb_mp005_a_5284fe7f.webp",
@@ -680,6 +682,110 @@
    "was": [],
    "now": [],
    "method": "trim partial edge rows + 1px edge choke (flush light cut-out)"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=53195341005109": {
+   "file": "assets/table-view/racks/boutique_com_wooden_mahjong_rack_pusher_set_v_53195341005109_6d94b61f.webp",
+   "was": [
+    "QA Nov 2: pusher stick removed"
+   ],
+   "now": [],
+   "method": "pusher stick removed: rack-only crop (row/column coverage), holes filled + soft 0.6px edge"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=52307844137269": {
+   "file": "assets/table-view/racks/boutique_com_wooden_mahjong_rack_pusher_set_v_52307844137269_b02d1f74.webp",
+   "was": [
+    "QA Nov 2: pusher stick removed"
+   ],
+   "now": [],
+   "method": "pusher stick removed: rack-only crop (row/column coverage), holes filled + soft 0.6px edge"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=53275469938997": {
+   "file": "assets/table-view/racks/boutique_com_wooden_mahjong_rack_pusher_set_v_53275469938997_e0fd98e6.webp",
+   "was": [
+    "QA Nov 2: pusher stick removed"
+   ],
+   "now": [],
+   "method": "pusher stick removed: rack-only crop (row/column coverage), holes filled + soft 0.6px edge"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=53195341037877": {
+   "file": "assets/table-view/racks/boutique_com_wooden_mahjong_rack_pusher_set_v_53195341037877_5dc22dcb.webp",
+   "was": [
+    "QA Nov 2: pusher stick removed"
+   ],
+   "now": [],
+   "method": "pusher stick removed: rack-only crop (row/column coverage), holes filled + soft 0.6px edge"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=53195340939573": {
+   "file": "assets/table-view/racks/boutique_com_wooden_mahjong_rack_pusher_set_v_53195340939573_d95a1b4d.webp",
+   "was": [
+    "QA Nov 2: pusher stick removed"
+   ],
+   "now": [],
+   "method": "pusher stick removed: rack-only crop (row/column coverage), holes filled + soft 0.6px edge"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=52307844170037": {
+   "file": "assets/table-view/racks/boutique_com_wooden_mahjong_rack_pusher_set_v_52307844170037_45c7a2f0.webp",
+   "was": [
+    "QA Nov 2: pusher stick removed"
+   ],
+   "now": [],
+   "method": "pusher stick removed: rack-only crop (row/column coverage), holes filled + soft 0.6px edge"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=52307844235573": {
+   "file": "assets/table-view/racks/boutique_com_wooden_mahjong_rack_pusher_set_v_52307844235573_9c035d15.webp",
+   "was": [
+    "QA Nov 2: pusher stick removed"
+   ],
+   "now": [],
+   "method": "pusher stick removed: rack-only crop (row/column coverage), holes filled + soft 0.6px edge"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=53195340972341": {
+   "file": "assets/table-view/racks/boutique_com_wooden_mahjong_rack_pusher_set_v_53195340972341_fa51fbac.webp",
+   "was": [
+    "QA Nov 2: pusher stick removed"
+   ],
+   "now": [],
+   "method": "pusher stick removed: rack-only crop (row/column coverage), holes filled + soft 0.6px edge"
+  },
+  "www.bamletsmahjong.com/mahjong-black-acrylic-racks-and-scallop-pushers": {
+   "file": "assets/table-view/racks/smahjong_com_mahjong_black_acrylic_racks_and_scallop_pushers_1278f919.webp",
+   "was": [
+    "QA Nov 2: re-cut from the brand top-down photo (black on white, dark-pixel mask)"
+   ],
+   "now": [],
+   "method": "re-cut from the brand top-down photo (black on white, dark-pixel mask)"
+  },
+  "www.bambirdboutique.com/white-acrylic-rack-and-pusher-set-set-of-4": {
+   "file": "assets/table-view/racks/mbirdboutique_com_white_acrylic_rack_and_pusher_set_set_of_4_efcc6342.webp",
+   "was": [
+    "QA Nov 2: re-cut from the brand top-down photo (white on lavender) + squared ends"
+   ],
+   "now": [],
+   "method": "re-cut from the brand top-down photo (white on lavender) + squared ends"
+  },
+  "vr:My Fair Mahjong:Transparent Clear": {
+   "file": "assets/table-view/racks/vr_My_Fair_Mahjong_Transparent_Clear_d2d95e1a.webp",
+   "was": [
+    "QA Nov 2: see-through acrylic cut"
+   ],
+   "now": [],
+   "method": "see-through acrylic cut: alpha from darkness (white slab -> clear), squared outline, solid 2px edge"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-clear": {
+   "file": "assets/table-view/racks/www_bespokemahjong_com_the_ultimate_rack_clear_53417317.webp",
+   "was": [
+    "QA Nov 2: see-through acrylic cut"
+   ],
+   "now": [],
+   "method": "see-through acrylic cut: alpha from darkness (white slab -> clear), squared outline, solid 2px edge"
+  },
+  "www.viroramahjong.com/wooden-rack-pusher-set?v=49226735976631": {
+   "file": "assets/table-view/racks/ww_viroramahjong_com_wooden_rack_pusher_set_v_49226735976631_6a015fa0.webp",
+   "was": [
+    "QA Nov 2: halo removed"
+   ],
+   "now": [],
+   "method": "halo removed: hard alpha (>235) + 1px choke"
   }
  },
  "canva": {},

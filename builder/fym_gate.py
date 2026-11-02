@@ -1691,8 +1691,11 @@ if '/*v114 table view*/' in UI:
                    ("if(SW.tab==='racks')SW.fin='';dots();fins();grid();return}", 'Table sheet: a colour replaces the finish'),
                    ("if(SW.fin)SW.color='';dots();fins();grid();return}", 'Table sheet: a finish replaces the colour'),
                    ("{k:'table',t:'New · Try Table view'", 'tour step on the View switch'),
-                   ('const TRS=k=>(TVD.ro&&TVD.ro[k])||rackSrc(k)', 'Table racks use the clean cut-outs'), ('function shaveA(im)', '1px alpha shave at draw time')):
+                   ('const TRS=k=>(TVD.ro&&TVD.ro[k])||rackSrc(k)', 'Table racks use the clean cut-outs'), ('function shaveA(im)', '1px alpha shave at draw time'),
+                   ('<em class="prcv">Under $${v} with code MAHJMATCH</em>', 'card under a price chip only via the code says so (QA Nov 2)'),
+                   ("<em>Under $${SW.price} with code MAHJMATCH</em>", 'Table sheet item under the chip only via the code says so')):
         if _a not in UI: F.append(f"[146] {_w} missing")
+    if "if(SW.tab==='racks')return [" in UI and "'brown','dark']" in UI: F.append("[146] Table sheet Racks tab has a dead 'dark' colour chip (racks use black / brown)")
     if 'RDOTN(x)>0' in UI or '&&(f.fin===x||FINN(x)>0)' in UI: F.append("[146] a rack filter row still shrinks to what is left after another pick")
     import subprocess as _sp146
     _o146 = _sp146.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'table_view', 'rack_audit_nov02.py'), 'check', B], capture_output=True, text=True, timeout=900)

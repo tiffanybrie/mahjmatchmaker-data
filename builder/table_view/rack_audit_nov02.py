@@ -162,7 +162,9 @@ if __name__ == '__main__':
     elif mode == 'check':
         h = open(os.path.join(B, 'index.html')).read(); i = h.index('const D=') + 8; D2, _ = json.JSONDecoder().raw_decode(h[i:]); tv = D2.get('tv') or {}
         rk, ro = tv.get('rk', {}), tv.get('ro', {})
-        bad = 0; ok_eye = json.load(open(AUD)).get('by_eye_ok', {})
+        bad = 0; A2 = json.load(open(AUD)); ok_eye = A2.get('by_eye_ok', {})
+        for k in A2.get('fixed', {}):  # every re-cut rack (incl. QA Nov 2: pusher sticks removed, see-through clear racks) must ship in the build
+            if k in rk and k not in ro: print(f"[146] Table rack {D['racks'].get(k, {}).get('n', k)}: re-cut image not in the build (D.tv.ro)"); bad += 1
         for k in rk:
             if k in ok_eye: continue  # looked at on green + plaid: the light edge IS the rack (translucent / tight white crop)
             uri = ro.get(k) or IMG.get(D['racks'].get(k, {}).get('im'))
