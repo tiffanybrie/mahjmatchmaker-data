@@ -85,6 +85,7 @@ body.tvmode .swh.cue{display:none}/* QA Nov 1: first-time swipe hint would cover
 .tvp.open{transform:none;visibility:visible}.tvp.drag{transition:none}
 @media (min-width:700px){.tvp{left:50%;right:auto;width:560px;margin-left:-280px}}
 @media (min-width:1280px){.tvp{left:auto;right:16px;top:72px;bottom:24px;width:360px;margin-left:0;max-height:none;border-radius:18px;transform:translateX(110%)}.tvp.open{transform:none}}/* desktop: docked beside the app column, the table stays fully visible */
+.tvp.side{left:auto;right:8px;top:64px;bottom:12px;margin-left:0;max-height:none;border-radius:16px;transform:translateX(110%)}.tvp.side.open{transform:none}.tvp.side .tvswaps{grid-template-columns:1fr}
 .tvp[data-tvmode="adjust"] .tvswapsec,.tvp[data-tvmode="swap"] .tvadjsec,.tvp[data-tvmode="adjust"] .tvback{display:none}
 .tvp section{display:flex;flex-direction:column;gap:10px;min-width:0}
 .tvp h3{margin:0;font:400 18px/1.15 var(--display,serif);color:var(--navy,#054689)}
