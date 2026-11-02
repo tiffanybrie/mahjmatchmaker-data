@@ -97,6 +97,10 @@ window.TVLBX=function(id){const c=[...document.querySelectorAll('.scard[id^="top
   im.addEventListener('load',go,{once:true});const cur=c.querySelector('.ph img.tvimg');if(cur)im.src=cur.src;
   bx.addEventListener('wheel',e=>{e.preventDefault();const b=bx.querySelector(e.deltaY<0?'[data-z="1"]':'[data-z="-1"]');if(b)b.click()},{passive:false});
   tableURL(x,3000).then(u=>{if(im.isConnected)im.src=u});return true};
+/* the lightbox locks body scrolling; put the page back where it was when it closes */
+{let LBY=null;const ol=window.openLbx,cl=window.closeLbx;if(typeof ol==='function'&&typeof cl==='function'){
+  window.openLbx=function(id){if(!document.getElementById('lbx'))LBY=window.scrollY;return ol(id)};
+  window.closeLbx=function(){const had=!!document.getElementById('lbx');cl();if(had&&LBY!=null){const y=LBY;LBY=null;window.scrollTo({top:y,behavior:'instant'})}}}}
 /* ---------- landing: the table, not the controls ---------- */
 const panelOpen=()=>{const p=$i('tvpanel');return !!(p&&p.classList.contains('open'))};
 function land(id){const el=$i(id);if(!el)return;const c=el.querySelector('.scard[id^="top-"]')||el.querySelector('.deck');if(!c)return;
@@ -105,7 +109,7 @@ function land(id){const el=$i(id);if(!el)return;const c=el.querySelector('.scard
   const vr=el.querySelector('.vrow');const vt=vr&&vr.offsetParent?vr.getBoundingClientRect().top+Y:ct;const avail=innerHeight-(panelOpen()?$i('tvpanel').offsetHeight:0);
   let y=ct-H;if(!panelOpen()&&vt<ct&&ct-vt<90&&bot-vt+H<=avail)y=vt-H;
   window.scrollTo({top:Math.max(0,y),behavior:'smooth'})}
-window.TVLAND=id=>{requestAnimationFrame(()=>setTimeout(()=>land(id),30))};
+window.TVLAND=id=>{if(!['s-mats','s-tiles','s-racks'].includes(id))return false;requestAnimationFrame(()=>setTimeout(()=>land(id),30));return true};/* the Card step keeps the app's own jump */
 const secOf=e=>{const s=e&&e.closest&&e.closest('#s-mats,#s-tiles,#s-racks');return s?s.id:null};
 function activeSec(){/* the section whose swipe card is nearest the middle of the screen */let best=null,bd=1e9;for(const id of ['s-tiles','s-mats','s-racks']){const c=document.querySelector('#'+id+' .scard[id^="top-"]');if(!c||!c.offsetParent)continue;const r=c.getBoundingClientRect();const d=Math.abs((r.top+r.bottom)/2-innerHeight/2);if(d<bd){bd=d;best=id}}return best||CTX}
 document.addEventListener('click',e=>{const t=e.target.closest&&e.target.closest('[data-mfront],[data-tfront],[data-mode],[data-dmat]');if(!t)return;
@@ -121,7 +125,7 @@ function addAdjust(){const on=S.mode==='table';
     el.querySelectorAll('.tvadj').forEach(b=>{if(!on||!has)b.remove()});el.querySelectorAll('.tvctl').forEach(b=>{if(!on||!has)b.remove()});
     if(!on||!has||el.querySelector('.tvadj'))continue;
     const vr=el.querySelector('.vrow');const btn='<button type="button" class="tvadj" data-tvadj aria-label="Adjust the table">Adjust</button>';
-    if(vr)vr.insertAdjacentHTML('beforeend',btn);else{const dk=el.querySelector('.deck');const host=dk.closest('.cmp')||dk;host.insertAdjacentHTML('beforebegin','<div class="vrow tvctl">'+btn+'</div>')}}}
+    if(vr)vr.insertAdjacentHTML('beforeend',btn);else{const dk=el.querySelector('.deck');const host=dk.closest('.cmp')||dk;host.insertAdjacentHTML('afterend','<div class="vrow tvctl">'+btn+'</div>')}}}
 function panel(){let p=$i('tvpanel');if(p)return p;p=document.createElement('aside');p.id='tvpanel';p.className='tvp';p.setAttribute('aria-label','Table tools');p.dataset.mode='adjust';
   p.innerHTML=`<div class="tvgrab"><span></span><button type="button" class="tvback" data-tvopen="adjust">‹ Adjust</button><button type="button" class="tvx" data-tvclose aria-label="Close">×</button></div>
   <section class="tvadjsec"><h3>Adjust the table</h3>
@@ -198,7 +202,7 @@ function brandPop(){const p=$i('tvpop');if(!p.hidden){p.hidden=true;return}const
 /* ---------- a swap = the app's own current pick ---------- */
 function synth(a,v){const x=document.createElement('button');x.type='button';x.setAttribute(a,String(v));x.style.display='none';document.body.appendChild(x);x.click();x.remove()}
 function swapMat(k){
-  if(S.door==='mat'){if(S.set==null||S.tilesOpen){S.dmat=k;tReset();S.dshow=0;renderTiles();steps();CTX='s-tiles'}else{synth('data-mock',k);CTX='s-racks'}}
+  if(S.door==='mat'){if(S.set==null||S.tilesOpen){const tc=$i('top-t'),ti=tc?+tc.dataset.i:null;S.dmat=k;tReset();S.dshow=0;if(ti!=null&&D.sets[ti]){S.tfront=ti;S.tfmat=k}renderTiles();steps();CTX='s-tiles'}else{synth('data-mock',k);CTX='s-racks'}}
   else if(S.fav&&CTX==='s-racks'){synth('data-mock',k)}
   else{S.mfront=k;S.mfset=S.set;S.tvforce=k;delete S.seen[k];S.peek=null;renderMats();steps();CTX='s-mats'}}
 function swapTiles(i){const m=curMat();

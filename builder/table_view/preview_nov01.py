@@ -71,12 +71,13 @@ sz = {'mat': SC.get('mat_listed_in', 33.0), 'edge': 1.0, 'wallDepth': SC['wall_d
 TVD = dict(cls=cls, why=why, rk=rk, rkw=rkw, fin=fin, price=price, pm=pm, pt=pt, so=so, backs=backs, pr=pr, sz=sz)
 css = """<style>/* Table view preview (Nov 1 rebuild: sample UX) */
 /* WebKit iPhone: the step nav (.stp, 289px) would not shrink and pushed the stars/account icons 10px off-screen (also in live 1.12) */
-html,body{overflow-x:hidden;max-width:100%;overscroll-behavior-x:none}.top .stp{min-width:0;flex:1 1 auto;overflow:hidden}
+html{overflow-x:hidden;overscroll-behavior-x:none}body{overflow-x:clip;max-width:100%}/* not overflow on body: WebKit would make body the scroller and window.scrollTo would stop working */.top .stp{min-width:0;flex:1 1 auto;overflow:hidden}
 body.tvmode .scard .onmat{display:none}
 .scard .ph img.tvimg{object-fit:contain;border-radius:10px}
 .scard.tvoff .ph img{filter:grayscale(1) opacity(.5)}
 .tvna{position:absolute;left:8px;right:8px;bottom:8px;z-index:3;background:rgba(255,255,255,.95);border-radius:10px;padding:6px 9px;font:600 12px/1.3 var(--body);color:#2a2036;pointer-events:none}
-.tvadj{border:1px solid #ecd5df;background:#fff;border-radius:999px;padding:7px 12px;font:700 13px/1 var(--body);color:var(--navy,#054689);cursor:pointer;flex:none}
+@media (max-width:460px){.vrow>span{display:none}.vrow{gap:6px}.vrow .seg.mode button{padding-left:10px;padding-right:10px}}/* 3 views + Adjust fit a phone */
+.tvadj{border:1px solid #ecd5df;background:#fff;border-radius:999px;padding:7px 11px;font:700 12.5px/1 var(--body);color:var(--navy,#054689);cursor:pointer;flex:none}
 .vrow.tvctl{margin:2px 0 6px}
 .tvp{position:fixed;left:0;right:0;bottom:0;z-index:250;background:#fff;border-radius:18px 18px 0 0;max-height:46vh;max-height:46dvh;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;
  transform:translateY(105%);transition:transform .25s ease;padding:0 max(14px,env(safe-area-inset-left,0px)) calc(14px + env(safe-area-inset-bottom,0px));box-shadow:0 -10px 30px rgba(0,0,0,.18);font:14px/1.4 var(--body);color:#2a2036;display:flex;flex-direction:column;gap:10px;visibility:hidden}
@@ -147,7 +148,7 @@ sub1("""${peek?'':'<span class="stamp yes" aria-hidden="true">♥</span><span cl
 # ⤢ in Table view = the whole table full screen
 sub1("function openLbx(id){closeLbx();", "function openLbx(id){closeLbx();if(S.mode==='table'&&window.TVLBX&&TVLBX(id))return;")
 # land on the table (not the controls) after each step
-sub1("function jump(id){requestAnimationFrame(()=>{", "function jump(id){if(S.mode==='table'&&window.TVLAND){TVLAND(id);return;}requestAnimationFrame(()=>{")
+sub1("function jump(id){requestAnimationFrame(()=>{", "function jump(id){if(S.mode==='table'&&window.TVLAND&&TVLAND(id))return;requestAnimationFrame(()=>{")
 # zoom survives a new tile set in Table view
 sub1("dset:null,zs:{}});", "dset:null,zs:S.zs&&S.zs.tvz?{tvz:S.zs.tvz}:{}});")
 # a mat / rack swapped in from the Table sheet becomes the current card, whatever the deck filters
