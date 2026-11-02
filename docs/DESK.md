@@ -37,7 +37,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Item | Owner | Next step | Target |
 |---|---|---|---|
 | Google: 9 pages to re-index, carried-over AI check, verified dates, codes post, code report | Main + tasks | Priority 1; needs her computer on. | Mon Nov 2 |
-| Table view (full preview v14) → FYM 1.14 | Matches & Catalog | Her + husband's notes → fix (+ held 43b9ca7) → gate → QA → publish both places. | Mon Nov 2 night (else Tue) |
+| Table view (full preview v14) → FYM 1.14 | Matches & Catalog | v114 BUILT Nov 2 ~12:20am (Table view + 1024 fix + price filter on all 3 decks + her 11:33/11:36pm fixes: 106 Table racks re-cut, none grayed for white edges; rack filter singles; Table tour step). Gate + --site PASS. Website copy fym-site-preview @3546474 (site-app/fym-v114, jsDelivr warm, NOT pinned); artifact copy on Preview 5QjNXjw15MuZTqzDT1ptbp v16 (~253.6 of 256 MiB, 512 files). Next: independent QA of round 2 → her morning test → her OK → publish live artifact + README 0a pin → fym_snapshot.py. | Mon Nov 2 night (else Tue) |
 | Next week's social (Nov 2-8) | Main | Her yes → render → Planoly IG + FB Page + stories. | Mon Nov 2 |
 | Holiday launch + holiday reels redo (with Table view) | Main | Her detailed notes (HQ This week) → redraft; no re-render before. | Tue/Wed Nov 3-4 |
 | MATCH-INBOX (37 old) + Noli June FA LA LADIES + LBB new mats | Matches & Catalog | Priority 4. | Tue Nov 3 |
