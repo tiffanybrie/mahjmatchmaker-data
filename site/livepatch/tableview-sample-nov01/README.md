@@ -42,3 +42,15 @@ tap a rack to try a different one there, legend under the table lists each with 
 - Files: 512 (index + the live 511). Every mc/* chunk except mc/190, every t* photo and b3/b9/b17/b22 were copied server-side from live, because the local re-encodes went over the 256 MiB version cap.
 - Tested locally: WebKit iPhone 13 + Chromium 1280. Both doors run through to the card, plus the Table deck. No horizontal overflow, 0 errors.
 - Fix carried in: WebKit `.top .stp` nav overflow (289px), CSS `min-width:0`. The same bug exists in live 1.12.
+
+### Rebuild (Nov 1 ~8:30pm, after Tiffany 7:43pm + 7:45pm): preview Version 12
+- Same artifact 5QjNXjw15MuZTqzDT1ptbp. Base = pub113 as rebuilt 18:50 (v113 QA round 2); its mc/190.webp re-uploaded with it.
+- UX now matches the sample. The changes:
+  - Adjust button by the View switch (below the card in the Racks step) opens the bottom sheet: Swap tiles / Swap mat / Swap racks, then Walls and Tile faces Center/Corner/Off.
+  - The swap sheet has tabs Tiles · Mat · Racks with its own search per tab (Clear), brand, color, finish (racks), In stock only, Tiffany's picks and price chips. It is drag-to-close.
+  - Always 4 players. The old inline Table bar is gone.
+- A swapped mat, tile set or rack becomes the app's current card (S.tvforce / S.tfront / S.tvrf), so heart → Racks → Card works. Landing goes to the table after picks; the Card step keeps the app's jump.
+- Zoom: the app's zoomer on Table cards (pinch, double-tap, + / −, persisted as S.zs.tvz), redrawn at 2600px once zoomed. The full-screen button shows the whole table at 3000px.
+- Sizes come from config/tableview-sizecheck-nov01.json: 33in mat, racks 1in from the edge, 19-tile walls = 19 × tile width, tight against the rack, depth 1.55 × tile width.
+- Fixed: html+body overflow-x:hidden made WebKit scroll the BODY, so window.scrollTo failed. Now html hidden, body clip.
+- Tests: WebKit iPhone 13 with real taps, both doors, festive → heart → Racks → Card, Swap racks in the Racks step, zoom (double-tap 2.4×, pinch 3.7×, −/+) and the full-screen table: 0 errors, no sideways overflow. Shots are in the scratchpad pv5–pv7shots.
