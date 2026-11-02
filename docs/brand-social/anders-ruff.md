@@ -1,6 +1,7 @@
 # Anders Ruff (@andersruffdesignco): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 2 12:14pm ET: holiday roundup carousel 'Your Christmas collection, perfectly curated' (tiles, luxe mats, finishing touches; shop.andersruff.com). Nothing new announced (DfP0bFpGJeA). #AndersRuffDesignCo #ChristmasMahjong #mahjongstyle.
 - Oct 31: Halloween mystery-item giveaway, comment BOO, winner Mon Nov 2 (DfKiVGBlerd).
 - Oct 30: Bams & Bubbly lifestyle post 'Two Jokers in one hand?!' (DfH0WuVyveR). #BamsAndBubbly #MahjongLife #AndersRuffDesignCo. No launch.
 - Oct 29: Bams & Bubbly nostalgia reel, 'the mat that went viral' now a full accessories collection (DfFO3VCynEc). No new drop.
