@@ -44,6 +44,7 @@ tap a rack to try a different one there, legend under the table lists each with 
 - Fix carried in: WebKit `.top .stp` nav overflow (289px), CSS `min-width:0`. The same bug exists in live 1.12.
 
 ### Rebuild (Nov 1 ~8:30pm, after Tiffany 7:43pm + 7:45pm): preview Version 13 (v13 = v12 + desktop: at 1280px and up the sheet docks beside the app column)
+- v14 (QA round 1 fixes): the sheet uses data-tvmode and stops all clicks reaching the app; a swapped tile set stays in the mat-door list once hearted (suitor + Add racks); the sheet height keeps the card fully visible on phones; the first-time swipe hint is hidden in Table view; the default rack is in stock first; the VIEW label is kept (Adjust wraps on narrow phones).
 - Same artifact 5QjNXjw15MuZTqzDT1ptbp. Base = pub113 as rebuilt 18:50 (v113 QA round 2); its mc/190.webp re-uploaded with it.
 - UX now matches the sample. The changes:
   - Adjust button by the View switch (below the card in the Racks step) opens the bottom sheet: Swap tiles / Swap mat / Swap racks, then Walls and Tile faces Center/Corner/Off.
