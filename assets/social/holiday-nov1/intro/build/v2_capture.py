@@ -70,15 +70,16 @@ with sync_playwright() as p:
         pg.evaluate("()=>[...document.querySelectorAll('button.yes')].filter(b=>b.offsetParent)[0].click()"); pg.wait_for_timeout(1500)
         pg.evaluate("()=>[...document.querySelectorAll('button.yes')].filter(b=>b.offsetParent)[0].click()"); pg.wait_for_timeout(1500)
         r = pg.evaluate("()=>{const bs=[...document.querySelectorAll('.pick1 button, .r3p button')].filter(b=>b.offsetParent);const f=bs.find(b=>/Festive/.test(b.innerText));(f||bs[0]).click();return bs.map(b=>b.innerText.slice(0,30))}"); print('suitor buttons', r); pg.wait_for_timeout(3000); fixlogo(pg)
-        pg.evaluate("()=>{window._rq=['bb:Persimmon'];const pool=rackPool;window.rackPool=function(){const a=pool();return [...window._rq,...a.filter(x=>!window._rq.includes(x))]};try{rackPool=window.rackPool}catch(e){};renderRacks()}"); pg.wait_for_timeout(1500)
+        pg.evaluate("()=>{window._rq=['bb:Red','bb:Basil','www.bambirdboutique.com/wooden-mahjong-rack-pusher-set'];const pool=rackPool;window.rackPool=function(){const a=pool();return [...window._rq,...a.filter(x=>!window._rq.includes(x))]};try{rackPool=window.rackPool}catch(e){};renderRacks();S.f.r.her=false;renderRacks()}")  # Nov 3: Tiffany wants a painted RED rack (Bird & Bamboo Red, not one of her saved picks, so picks off) + Walnut; pg.wait_for_timeout(1500)
         pg.evaluate("()=>{const d=document.querySelector('.deck.r');window.scrollTo(0,d.getBoundingClientRect().top+scrollY-520)}"); pg.wait_for_timeout(3000); fixlogo(pg)
         pg.screenshot(path=f'{W}/dbg/racks0.png')
         R = Rec(ctx, pg, f'{W}/recB'); R.go(); pg.wait_for_timeout(1000); R.mark('racks', '.tilev.mband', '.deck.r')
         for i in range(3):
             pg.evaluate("()=>{const bs=[...document.querySelectorAll('.tilev.mband .zb button')].filter(b=>b.offsetParent);const plus=bs.find(b=>b.innerText.trim()==='+');plus&&plus.click()}"); R.mark(f'plus{i}', '.tilev.mband .zb'); pg.wait_for_timeout(750)
         pg.wait_for_timeout(500)
-        for r, k in [('bb:Persimmon', 'yes'), ('bb:Basil', 'no'), (WALNUT, 'yes')]:
-            pg.evaluate("(r)=>{window._rq=[r];renderRacks()}", r); pg.wait_for_timeout(1000); R.mark('show ' + r, '.deck.r', '.tilev.mband')
+        SEQ = [('bb:Red', 'yes'), ('bb:Basil', 'no'), (WALNUT, 'yes')]
+        for i, (r, k) in enumerate(SEQ):
+            pg.evaluate("(q)=>{window._rq=q;renderRacks()}", [x for x, _ in SEQ[i:]]); pg.wait_for_timeout(1000); R.mark('show ' + r, '.deck.r', '.tilev.mband')
             pg.evaluate(f"()=>[...document.querySelectorAll('button.{k}')].filter(b=>b.offsetParent).pop().click()"); R.mark(k + ' ' + r); pg.wait_for_timeout(1400)
         pg.evaluate("()=>{S.rpick=S.rliked.slice(0,2);renderRacks()}"); pg.wait_for_timeout(900); R.mark('official')
         pg.evaluate("()=>[...document.querySelectorAll('button.go')].filter(b=>b.offsetParent).pop().click()"); pg.wait_for_timeout(2500)

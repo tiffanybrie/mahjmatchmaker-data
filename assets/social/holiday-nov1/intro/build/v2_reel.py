@@ -28,7 +28,6 @@ QUILT = [mat(n, b) for n, b in [('Santa\'s Mahjong Mail', None), ('Winterberry',
          ('Love & Light', None), ('Holly Jolly Christmas', 'Mahjong Register'), ('Evergreen & Tartan', None), ('Alpine Snowflakes', None),
          ('Merry & Bright, Holiday Prism', None), ('Candy Cane Christmas Village', None), ('Buffalo Plaid Snow Day', None), ('Festive Frost', None),
          ('Classic Very Merry Mahj', None), ('Holly Jolly Gingham', None), ('Vintage Noel', 'Peace Love Mahjong'), ('Holiday Neoprene', None)]]
-QUILT[9] = CMM  # her favourite sits mid-quilt too
 T = f'file://{R}/assets/tiles/holiday/'
 CV = f'file://{R}/assets/covers/holiday/'
 COUNTS = [  # canonical, ../../COUNTS.md + ANSWERS Nov 1 6:00pm (14 holiday tile sets)
@@ -107,11 +106,10 @@ const GX=80,GY=420,CW=287,GUT=30;
 C.HOOK.forEach((u,i)=>{const d=document.createElement('div');d.className='card';d.innerHTML=`<img src="${u}">`;$('grid').appendChild(d);});
 function hook(L){ // L = seconds into the hook+hero span (0..4.0)
  [...$('grid').children].forEach((d,i)=>{const c=i%3,r=Math.floor(i/3);let x=GX+c*(CW+GUT),y=GY+r*(CW+GUT),w=CW,o=1,s=eb((L+0.3-i*0.075)/0.32);
-  if(i===4&&L>2.4){const k=eio((L-2.4)/0.55);const W2=820;x=x+(540-W2/2-x)*k;y=y+(480-y)*k;w=w+(W2-w)*k;s=1;}
-  else if(L>2.4){o=1-cl((L-2.4)/0.3);s=1-0.15*cl((L-2.4)/0.3);}
-  d.style.left=x+'px';d.style.top=y+'px';d.style.width=d.style.height=w+'px';d.style.opacity=L+0.3<i*0.075?0:o;d.style.transform=`scale(${s})`;d.style.zIndex=i===4?5:1;});
- if(L<2.4){plate('It&rsquo;s holiday time.',L+0.3);label('',0);}
- else{plate('Our holiday favorite.',L-2.55);label('Color Me Merry <small>· Soirée All Day</small>',L-2.9,1352);}
+  d.style.left=x+'px';d.style.top=y+'px';d.style.width=d.style.height=w+'px';d.style.opacity=L+0.3<i*0.075?0:o;d.style.transform=`scale(${s})`;d.style.zIndex=1;});
+ /* Nov 3 (Tiffany): no 'Our holiday favorite.' hero, it's an overview. The full grid holds with a slow push-in. */
+ $('grid').style.transformOrigin='540px 1000px';$('grid').style.transform=`scale(${1+0.07*eio((L-1.2)/3.2)})`;
+ plate('It&rsquo;s holiday time.',L+0.3);label('',0);
 }
 // counters
 function buildOdo(D){const g=$('grp');if(g.dataset.n==String(D.n))return;g.dataset.n=String(D.n);g.innerHTML='';for(const ch of String(D.n)){const d=document.createElement('div');d.className='dg';const st=document.createElement('div');st.className='st';for(let r=0;r<4;r++)for(let k=0;k<10;k++){const x=document.createElement('div');x.textContent=k;st.appendChild(x);}d.appendChild(st);g.appendChild(d);}
@@ -156,7 +154,7 @@ window.render=function(t){let cur=SC[SC.length-1];for(const s of SC)if(t>=s[1]&&
  if(id==='zoom'){ frame(C.RB,C.TB,pw([[0,0.95],[1.55,3.0],[2,3.4]],L)); cam(1.0+0.22*eio(L/0.45),528,960);
   spot([[16,360,748,336,26]],cl(L/0.25)); $('ov').innerHTML=[0.08,0.84,1.6].map(t0=>ring(706,416,(L-t0)/0.45)).join('');
   plate('Zoom in on your mat.',L-0.05);}
- if(id==='racks'){ frame(C.RB,C.TB,pw([[0,4.45],[0.5,4.88],[1.15,5.4],[1.15,6.95],[1.55,7.36],[2.2,7.88],[2.2,9.4],[2.6,9.84],[3.2,10.3]],L)); cam(0.8,1124,1092);
+ if(id==='racks'){ frame(C.RB,C.TB,pw([[0,4.45],[0.5,4.88],[1.15,5.4],[1.15,6.95],[1.55,7.36],[2.2,7.88],[2.2,9.4],[2.7,9.85],[3.2,9.85]],L)); cam(0.8,1124,1092);
   spot([[16,360,748,336,26],[16,1032,748,856,30]],1); plate('Swipe racks to match.',L-0.05);}
  if(id==='card'){ const im=$('mcard');if(!im.src)im.src=C.CARD;const k=eo(L/0.6);const w=630;im.style.width=w+'px';im.style.left=(540-w/2)+'px';im.style.top=(440+(1-k)*120)+'px';im.style.opacity=cl(L/0.2);im.style.transform=`scale(${0.92+0.08*k})`;
   plate('See it together. Shop it.',L-0.25);}

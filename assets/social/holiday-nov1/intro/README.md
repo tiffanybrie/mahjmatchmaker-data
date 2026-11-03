@@ -1,6 +1,8 @@
 # Holiday intro hero reel + carousel ("We made a holiday list"), Mon Nov 2 2026
 
-## v2 (Nov 2, ~11am ET): CURRENT. The v1 reel files below (`holiday-intro-reel*.mp4/jpg`) are SUPERSEDED (kept for reference).
+## v2.1 (Nov 3, 10:35am ET): CURRENT, per Tiffany Nov 3 10:20am: removed the 'Our holiday favorite.' Color Me Merry hero (it's an overview; the hook grid now holds 0-4.4s with a slow push-in, Color Me Merry stays in the grid + the app heart, no longer mid-quilt) and the racks are now a painted RED rack (Bird & Bamboo Red, #942934, picked by sight against Festive Plaid's red) + Walnut (Bam Bird Boutique); Persimmon read orange. Picks toggle is off for the rack step because Red isn't one of her saved picks. Festive Plaid Premium (Sunday) is 'Coming soon' on Sunday's site (preorder, not buyable yet) - caption says (coming soon). Same files below, re-rendered.
+
+## v2 (Nov 2, ~11am ET): superseded by v2.1. The v1 reel files below (`holiday-intro-reel*.mp4/jpg`) are SUPERSEDED (kept for reference).
 Built from her Nov 1 6:09pm + Nov 2 9:23am notes (docs/ANSWERS.md). She posts it today and adds the song in Edits.
 | What | File |
 |---|---|
