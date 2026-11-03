@@ -47,6 +47,11 @@ def flow(pg, L):
         tap(pg, '#tvpanel [data-tvclose]'); tap(pg, '#s-mats .sbx [data-yes="m"]'); time.sleep(.8)
         tap(pg, f'#s-mats .tray [data-peek="{fest}"]'); time.sleep(.6); tap(pg, '#s-mats .acts.pk [data-mock]'); chk(pg, L + ' Racks after a swapped mat', 's-racks')
         if pg.evaluate("S.fav") != fest: F.append(f"[145] {L}: hearting the swapped mat did not carry it to Racks")
+        # [148] Tiffany Nov 3 2:27pm: rack deck right after the chosen mat, no filter row between (live DOM order)
+        o148 = pg.evaluate("""()=>{const c=document.querySelector('#s-racks .cmp');if(!c)return 'no .cmp';const k=[...c.children].map(e=>e.className.split(' ')[0]);
+          const i=k.indexOf('deck');if(i<0)return 'no rack deck';if(k.slice(0,i).some(x=>x==='rfil'||x==='s2ctl'))return 'filter row before the rack deck: '+k.join(',');
+          const f=document.querySelector('#s-racks .rfil');if(f&&!(c.compareDocumentPosition(f)&Node.DOCUMENT_POSITION_FOLLOWING))return 'filter row is not below the rack deck';return ''}""")
+        if o148: F.append(f"[148] {L}: rack step: {o148}")
         # [146] rack filter = SINGLES (Tiffany Nov 1 11:33pm): one pick at a time across finish + colour, rows never shrink
         if pg.evaluate("document.body.innerHTML.includes('v114 singles')"):
             st = lambda: pg.evaluate("()=>({fin:S.f.r.fin||'',fam:S.f.r.fam.slice(),nf:document.querySelectorAll('#s-racks [data-fin]').length,nd:document.querySelectorAll('#s-racks [data-fam][data-k=\"r\"]').length})")

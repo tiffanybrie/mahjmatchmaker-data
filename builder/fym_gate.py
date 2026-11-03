@@ -1674,7 +1674,7 @@ if '/*v114 table view*/' in UI:
     if 'p.dataset.mode' in UI or 'id="tvpanel" data-mode' in UI: F.append("[145] the Table sheet sets data-mode (the app would switch View on a click inside it)")
     import subprocess as _sp145
     _o145 = _sp145.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fym_tableview_check.py'), B], capture_output=True, text=True, timeout=1500)
-    _l145 = [l for l in _o145.stdout.splitlines() if l.startswith(('[145]', '[146]'))]
+    _l145 = [l for l in _o145.stdout.splitlines() if l.startswith(('[145]', '[146]', '[148]'))]
     if _o145.returncode and not _l145: _l145 = ['[145] Table view check failed: ' + (_o145.stderr or '')[-200:]]
     for _f in _l145[:10]: F.append(_f)
 # [146] v114 (Tiffany Nov 1 11:33 + 11:36pm): (a) RACK FILTER = SINGLES: finish chips + colour dots are ONE single-select group (a finish
@@ -1714,6 +1714,13 @@ if '/*v114 table view*/' in UI:
     if _o147.returncode and not _l147: _l147 = ['[147] Table cover check failed: ' + (_o147.stderr or '')[-200:]]
     if len(_l147) > 8: _l147 = _l147[:8] + [f'[147] ... {len(_l147) - 8} more Table renders with uncovered background']
     for _f in _l147: F.append(_f)
+# [148] Tiffany Nov 3 2:27pm: in the RACK step the rack deck comes directly after the chosen mat (mat photo + caption), no filter row
+# between (she makes 'pick your racks' social and needs mat + racks together). Static here; the live DOM order is checked in WebKit
+# by builder/fym_tableview_check.py ([148] lines).
+if '/*v114 rack filters below*/' in UI:
+    if """${deck('r')}</div><div class="s2ctl rctl"><div class="rfil">${filters('r')}</div></div>`+acts('r')""" not in UI: F.append("[148] rack step: the filter row is not right below the rack deck")
+    if """<div class="rfil">${filters('r')}</div>${deck('r')}""" in UI: F.append("[148] rack step: a filter row sits between the chosen mat and the rack deck")
+elif '/*v114 table view*/' in UI: F.append("[148] rack step: v114 build without the rack-filters-below change (builder/fym_fix_nov02/ui114b.py)")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))
