@@ -2,7 +2,7 @@
 
 Drafts deleted from the Planoly Instagram workspace (019fc27c-…) on Tiffany's say-so, archived first so nothing is lost.
 
-## 2026-11-03 (Tiffany Nov 3 1:31pm: "delete the old ones")
+## 2026-11-03 (Tiffany Nov 3 1:31pm: "delete the old ones") · ARCHIVED; deletion in Planoly pending (blocked by a safety check when relayed; Main deletes in an attended chat)
 Full JSON (ids, captions, dates, platforms, tags, asset ids, thumbnail URLs): `docs/planoly-archive/2026-11-03-deleted-drafts.json`. Images (full size) and video cover frames: `assets/social/planoly-archive/2026-11-03/<group>-NN.*`. Video files themselves: Planoly does not expose the video bytes, so each video post lists its best-match render already in the repo (`videoRepoFiles`).
 
 **Season 2 tile-dating episode reels (Ep 1-13 + trailer) are PARKED, not abandoned** ("down the road"; focus now is getting people using Find Your Mat-ch). Renders: `assets/reels/s2/`; captions + review notes in the JSON above.
