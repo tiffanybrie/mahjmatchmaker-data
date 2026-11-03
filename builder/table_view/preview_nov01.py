@@ -20,8 +20,8 @@ COV = json.load(open(R / 'config/tableview-photo-class-nov01.json'))
 BACK = json.load(open(R / 'config/tableview-back-colors.json'))
 STK = json.load(open(R / 'config/fym-stock.json'))['items']
 PCT = json.load(open(R / 'config/fym-code-pct.json'))['pct']
-def durl(p, px=320, alpha=False):
-    im = Image.open(R / p).convert('RGBA' if alpha else 'RGB'); im.thumbnail((px, px)); b = io.BytesIO(); im.save(b, 'WEBP', quality=82)
+def durl(p, px=320, alpha=False, q=82):
+    im = Image.open(R / p).convert('RGBA' if alpha else 'RGB'); im.thumbnail((px, px)); b = io.BytesIO(); im.save(b, 'WEBP', quality=q)
     return 'data:image/webp;base64,' + base64.b64encode(b.getvalue()).decode()
 cls, why = {}, {}
 for k in D['mats']:
@@ -72,7 +72,8 @@ sz = {'mat': SC.get('mat_listed_in', 33.0), 'edge': 1.0, 'wallDepth': SC['wall_d
 # v114 (Tiffany Nov 1 11:33/11:36pm): clean rack cut-outs for the Table (no white box / white edges), never grayed for that reason.
 # builder/table_view/rack_audit_nov02.py fix -> assets/table-view/racks/*.webp; listed in config/tableview-rack-audit-nov02.json 'fixed'
 AUD = json.load(open(R / 'config/tableview-rack-audit-nov02.json'))
-ro = {k: durl(v['file'], 900, alpha=True) for k, v in AUD['fixed'].items() if k in rk and (R / v['file']).exists()}
+# real-grain wood racks keep quality 92: q82 smoothed the pale stains' grain away (QA r9 Nov 3, gate [154])
+ro = {k: durl(v['file'], 900, alpha=True, q=92 if 'grain' in v.get('method', '') else 82) for k, v in AUD['fixed'].items() if k in rk and (R / v['file']).exists()}
 # v114 (Tiffany Nov 2 8:15am): photos fill the whole square. Peel-corner renders filled -> FULL table (class A); every other
 # Corner-class mat gets a fitted corner (affine + scale) so the card is all mat (builder/table_view/peel_nov02.py, corner_nov02.py)
 PF = json.load(open(R / 'config/tableview-peel-fill-nov02.json')); CV = json.load(open(R / 'config/tableview-corner-fit-nov02.json'))

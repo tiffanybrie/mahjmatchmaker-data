@@ -9,7 +9,8 @@ import numpy as np
 from PIL import Image, ImageFilter, ImageDraw
 from playwright.sync_api import sync_playwright
 SIG = 6.0
-B = sys.argv[1].rstrip('/'); SHEET = sys.argv[2] if len(sys.argv) > 2 else None; MIN = 0.7
+# MIN calibrated Nov 3 on the 6 B&B flat renders QA flagged (0.26-0.51 at 600px wide) vs their real-grain stain photos (0.94-3.97)
+B = sys.argv[1].rstrip('/'); SHEET = sys.argv[2] if len(sys.argv) > 2 else None; MIN = 0.75
 s = socket.socket(); s.bind(('127.0.0.1', 0)); port = s.getsockname()[1]; s.close()
 srv = subprocess.Popen([sys.executable, '-m', 'http.server', str(port), '--bind', '127.0.0.1', '--directory', B], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL); time.sleep(1)
 F = []
@@ -27,7 +28,9 @@ def tex(uri):
     luminance minus its own smooth trend along the row; the metric is the median over rows."""
     if not uri: return None, None
     from scipy import ndimage
-    im = Image.open(io.BytesIO(base64.b64decode(uri.split(',', 1)[1]))).convert('RGBA'); im.thumbnail((600, 600))
+    im = Image.open(io.BytesIO(base64.b64decode(uri.split(',', 1)[1]))).convert('RGBA')
+    if im.width >= 3 * im.height: im = im.resize((600, max(1, round(im.height * 600 / im.width))), Image.LANCZOS)  # long rack: one scale, so a small flat render can't pass on resampling noise
+    else: im.thumbnail((600, 600))
     a = np.asarray(im).astype(float); m = a[..., 3] > 200
     if m.all() or m.sum() < 200:  # photo on a white background (no cut-out): the rack = the non-white pixels
         c = a[..., :3]; m = ((c.max(2) - c.min(2)) > 14) | (c.mean(2) < 215)
