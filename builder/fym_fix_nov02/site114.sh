@@ -13,4 +13,5 @@ python3 $H/cards114.py "$SITE/site-app/fym-v114"   # My match cards: one per til
 python3 $H/types114.py "$SITE/site-app/fym-v114"   # rack types (one per rack) + Tiffany's picks default off (Nov 3 2:48pm)
 python3 $H/tour114.py "$SITE/site-app/fym-v114"   # 30-second tour rebuild (Tiffany Nov 3 2:54pm)
 python3 $H/hearts114.py "$SITE/site-app/fym-v114"   # hearts (Nov 3 2:58pm)
+python3 $H/door114.py "$SITE/site-app/fym-v114"   # doors neutral
 ls -l "$SITE/site-app/fym-v114/index.html"

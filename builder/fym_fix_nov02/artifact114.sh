@@ -12,4 +12,5 @@ python3 $H/cards114.py "$O"   # My match cards: one per tile set, remove + undo,
 python3 $H/types114.py "$O"   # rack types (one per rack) + Tiffany's picks default off (Nov 3 2:48pm)
 python3 $H/tour114.py "$O"   # 30-second tour rebuild (Tiffany Nov 3 2:54pm)
 python3 $H/hearts114.py "$O"   # hearts (Nov 3 2:58pm)
+python3 $H/door114.py "$O"   # doors neutral
 ls -l "$P/index.html" "$O/index.html" "$O/mc/190.webp"

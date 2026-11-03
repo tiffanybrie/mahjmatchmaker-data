@@ -64,6 +64,9 @@ with sync_playwright() as p:
             if pg.evaluate('window.scrollY') > 2: F(tag, f'opening the app moved the screen (scrollY {pg.evaluate("window.scrollY")})')
             o = pg.evaluate("(()=>{const c=document.getElementById('coach'),l=document.querySelector('#s-tiles [data-tour]'),d=document.querySelector('#s-tiles .door');const cr=c.getBoundingClientRect(),lr=l.getBoundingClientRect(),dr=d.getBoundingClientRect();return {top:cr.top,link:lr.bottom,door:dr.bottom,vis:cr.bottom<=innerHeight}})()")
             if not (o['top'] >= o['door'] and abs(o['top'] - o['link']) < 40 and o['vis']): F(tag, f'offer bubble is not at the tour link under the doors {o}')
+            if V114:  # nothing preselected (Tiffany Nov 3): both doors look the same, neither pressed, until a tap
+                d0 = pg.evaluate("[...document.querySelectorAll('#s-tiles .door button')].map(b=>[b.getAttribute('aria-pressed'),getComputedStyle(b).backgroundColor,getComputedStyle(b).color])")
+                if len(d0) != 2 or any(x[0] == 'true' for x in d0) or d0[0][1:] != d0[1][1:]: F(tag, f'a door looks selected before any tap {d0}')
             if OUT: pg.screenshot(path=f'{OUT}/{tag}-0-offer.png')
             pg.locator('[data-tour-go]').click(); time.sleep(.8)
             if pg.evaluate('window.scrollY') > 2: F(tag, 'step 1 moved the screen')
@@ -97,6 +100,9 @@ with sync_playwright() as p:
                 if k in ('tiles', 'grid') and not pg.locator(sel).count():  # v104: tiles door opens on brand logos; a person taps a brand, then a set
                     pg.locator('#s-tiles .blg').first.click(); time.sleep(.7)
                 pg.locator(sel).first.click()
+                if V114 and k == 'door':
+                    time.sleep(.4)
+                    if pg.evaluate(f"!document.querySelector('#s-tiles .door [data-door=\"{wdoor}\"][aria-pressed=\"true\"]')"): F(tag, 'the tapped door does not show as selected')
                 if k == 'add':
                     time.sleep(.5)
                     if not pg.evaluate('!!S.fav'): F(tag, 'Add racks needed more than one tap')

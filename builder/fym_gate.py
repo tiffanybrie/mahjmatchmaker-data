@@ -1699,6 +1699,7 @@ if '/*v114 table view*/' in UI:
                    ('<em class="prcv">Under $${v} with code MAHJMATCH</em>', 'card under a price chip only via the code says so (QA Nov 2)'),
                    ("<em>Under $${SW.price} with code MAHJMATCH</em>", 'Table sheet item under the chip only via the code says so')):
         if _a not in UI: F.append(f"[146] {_w} missing")
+    if '/*v114 tour*/' in UI and '/*v114 door neutral*/' not in UI: F.append("[146] a door is preselected on first open (Tiffany Nov 3: both doors neutral until a tap; builder/fym_fix_nov02/door114.py)")
     if "if(SW.tab==='racks')return [" in UI and "'brown','dark']" in UI: F.append("[146] Table sheet Racks tab has a dead 'dark' colour chip (racks use black / brown)")
     if 'RDOTN(x)>0' in UI or '&&(f.fin===x||FINN(x)>0)' in UI: F.append("[146] a rack filter row still shrinks to what is left after another pick")
     import subprocess as _sp146
