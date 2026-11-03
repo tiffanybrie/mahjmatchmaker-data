@@ -1,7 +1,7 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-02T23:09:21+00:00",
- "fym_ref": "/tmp/claude-0/lw/fym114.html",
+ "swept_at": "2026-11-03T14:11:55+00:00",
+ "fym_ref": "origin/fym-site-preview:site-app/fym-v114",
  "stores": {
   "amahjline.com": {
    "brand": "Amahj",
@@ -1873,8 +1873,13 @@
   "ohmymahjong.com": {
    "brand": "Oh My Mahjong",
    "status": "ok",
-   "products": 240,
+   "products": 244,
    "mats": [
+    [
+     "2026-11-03T08:01:13-06:00",
+     "Lotus Cove Mat in Tube",
+     "lotus-cove-mat-in-tube"
+    ],
     [
      "2026-10-29T14:19:42-05:00",
      "Poppins Mat in Tube",
@@ -2006,7 +2011,13 @@
      "luna-w-tube"
     ]
    ],
-   "missing": []
+   "missing": [
+    [
+     "2026-11-03T08:01:13-06:00",
+     "Lotus Cove Mat in Tube",
+     "lotus-cove-mat-in-tube"
+    ]
+   ]
   },
   "peacelovemahjong.com": {
    "brand": "Peace Love Mahjong",
@@ -2054,7 +2065,7 @@
   "shop.andersruff.com": {
    "brand": "Anders Ruff",
    "status": "ok",
-   "products": 154,
+   "products": 155,
    "mats": [
     [
      "2026-10-27T23:11:59-04:00",
@@ -2735,7 +2746,7 @@
     [
      "2026-10-25T13:04:44-04:00",
      "Pop Bloom with Instructions Mahjong Mat",
-     "pop-bloom-with-directions-mahjong-mat"
+     "pop-bloom-with-instructions-mahjong-mat"
     ],
     [
      "2026-10-25T12:55:09-04:00",
@@ -4460,6 +4471,11 @@
      "vibrant-vortex-open-middle-mahjong-mat"
     ],
     [
+     "2026-10-25T13:04:44-04:00",
+     "Pop Bloom with Instructions Mahjong Mat",
+     "pop-bloom-with-instructions-mahjong-mat"
+    ],
+    [
      "2026-10-04T20:54:15-04:00",
      "Flutter for a Cause Mahjong Mat",
      "flutter-for-a-cause-mahjong-mat"
@@ -4749,7 +4765,7 @@
   "faitamainstudio.com": {
    "brand": "Fait à Main",
    "status": "ok",
-   "products": 45,
+   "products": 44,
    "mats": [
     [
      "2026-10-17T09:13:39-05:00",
@@ -4770,11 +4786,6 @@
      "2026-05-25T22:09:51-05:00",
      "TEXAS MON AMOUR MAT PEACH",
      "texas-mon-amour-mat-peach"
-    ],
-    [
-     "2026-03-26T15:01:24-05:00",
-     "TEXAS MON AMOUR MAT CREAM",
-     "texas-mon-amour-mat"
     ]
    ],
    "missing": []

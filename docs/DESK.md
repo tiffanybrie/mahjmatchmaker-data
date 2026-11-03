@@ -22,6 +22,9 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 5. **Overdue + mid-way Claude jobs.** (a) Main: **Nov 2 monthly site check never reached the repo** (proxy 403 Nov 1-2; HQ log 2026-11-02-site-maintenance re-logged 8:45pm, still no site-maint folder or audit file in git). Re-run attended or rebuild from the HQ log detail; Emerald + Pearlescent Retired labels go ahead Wed Nov 4 on the default (needs/site-maint-2026-11). (b) OPS: Dropbox copies of flat renders → /Mahj Matchmaker Albums/New releases/: Bespoke Sunshine Glow, Britt Mills Isla Leatherette, LBB Electric ZigZag + Christmas Lights (Chrome method: ANSWERS Nov 1 12:50am). (c) OPS: Tiles & Tablescapes search for Bespoke Garden Glow Sunshine Glow. (d) Amazon 'A Reindeer Holiday Table' board (approved Oct 30) when Amazon is signed in.
 
 ## Handoffs (do first)
+- **OPS (Nov 3 launch watch): copy assets/launches/omm-lotus-cove-mat-in-tube/ and assets/launches/omm-juniper-mahjong-tiles/ to Dropbox /Mahj Matchmaker Albums/New releases/Oh My Mahjong/ today** (flat renders get replaced by photoshoot images later).
+- **OPS: search Tiles & Tablescapes for Oh My Mahjong Juniper** (new OMM tile set Nov 3; its swipe book waits on a TNT rec + colour card per the book gate; HQ Albums: needs-colourcard).
+- **Matches & Catalog: Juniper colour card** (scripts/colorcards) so the Juniper swipe book can be built (OMM = top priority).
 - **OPS / Main: Amanda Toppe 10% live fix** (priority 1a). Overdue since Nov 2 9am.
 - **OPS: Dropbox new-release copies** (priority 5b) + **TNT search for Sunshine Glow** (5c).
 - **Main: re-run / rebuild the unpushed Nov 2 site check** (priority 5a).

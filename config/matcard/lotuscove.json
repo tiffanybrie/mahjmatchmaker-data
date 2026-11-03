@@ -1,0 +1,7 @@
+{"name": "Lotus Cove", "brand": "Oh My Mahjong", "tag": "Bubblegum pink, lagoon aqua & lily-pad green koi pond", "color": "#e0668a", "mat_path": "config/matcard/lotuscove_mat.jpg",
+ "palette": [["Bubblegum Pink", "#ec7fa0"], ["Lagoon Aqua", "#8fd8d3"], ["Lily Pad Green", "#a9d9a8"], ["Lotus Blush", "#f4c4cf"], ["Coral Koi", "#e86f86"], ["Jade Edge", "#2f6b57"]],
+ "racks": [["Peony", "#EE7E91", false], ["Mermaid", "#A7E0CF", false], ["Seafoam", "#9EB79B", false], ["Flamingo", "#E77C85", false], ["Evergreen", "#395544", true]],
+ "racks_omm": [],
+ "tiles": [], "tiles_omm": [], "tiles_all": [], "retired": [],
+ "rackNote": "Painted wood racks by Bird &amp; Bamboo",
+ "rack_rule": "Nearest Bird & Bamboo colors to the mat (launch watch Nov 3, Lab distance from builder/bbracks.json): Peony pink frame, Mermaid aqua border, Seafoam leaves, Flamingo koi, Evergreen edge. Palette picked by eye from the OMM overhead photo (photo is muted; mat props on it). OMM-only card: no OMM rack sold in these colours, so racks_omm empty. Tile matches stay empty until Tiffany's swipe."}
