@@ -302,6 +302,11 @@
    "name": "Christmas Lights Mahjong Mat",
    "reason": "TEMPORARY (Nov 3, v114 builder): new Nov 1 LBB listing queued for the Matches & Catalog catalog build (docs/MATCH-INBOX.md Nov 1 6:10pm); v114 is a UI release and ships without it. REMOVE this line when the mat is added to FYM.",
    "added": "2026-11-03"
+  },
+  "letsbebesties.com/camellia-kaleidoscope-artist-collab-leatherette-mahjong-mat": {
+   "name": "Camellia Kaleidoscope OHBoN Studios Artist Mahjong Mat",
+   "reason": "TEMPORARY (Nov 3, v114 builder, coordinator OK): new Nov 1 LBB listing; the coordinator adds it to FYM after the 1.14 launch (docs/MATCH-INBOX.md Nov 3). v114 is a UI release and ships without it. REMOVE this line when the mat is added to FYM.",
+   "added": "2026-11-03"
   }
  }
 }

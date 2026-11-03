@@ -100,6 +100,12 @@ with sync_playwright() as p:
                 if k in ('tiles', 'grid') and not pg.locator(sel).count():  # v104: tiles door opens on brand logos; a person taps a brand, then a set
                     pg.locator('#s-tiles .blg').first.click(); time.sleep(.7)
                 pg.locator(sel).first.click()
+                if V114:  # QA r9: the NEXT step's bubble may never flash on top of its target while the page settles (sampled every frame)
+                    fl = pg.evaluate("""()=>new Promise(res=>{const t0=performance.now(),bad=[];(function f(){if(TOUR.on){const s=TSTEPS[TOUR.step],c=document.getElementById('coach'),b=s&&!s.hand&&tourTarget(s);
+                      if(c&&b&&c.dataset.step===s.k){const cs=getComputedStyle(c),q=c.getBoundingClientRect(),r=b.getBoundingClientRect();
+                        if(+cs.opacity>.5&&cs.visibility!=='hidden'&&!(q.bottom<=r.top||q.top>=r.bottom||q.right<=r.left||q.left>=r.right)&&r.height+q.height+90<=innerHeight&&r.bottom>0&&r.top<innerHeight)bad.push(s.k+'@'+Math.round(performance.now()-t0));}}
+                      if(performance.now()-t0<900)requestAnimationFrame(f);else res(bad);})();})""")
+                    if fl: F(tag, f'bubble flashed on top of its target before docking: {fl[:4]}')
                 if V114 and k == 'door':
                     time.sleep(.4)
                     if pg.evaluate(f"!document.querySelector('#s-tiles .door [data-door=\"{wdoor}\"][aria-pressed=\"true\"]')"): F(tag, 'the tapped door does not show as selected')

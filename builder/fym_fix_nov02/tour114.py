@@ -52,6 +52,8 @@ h = h[:i] + STEPS + h[j:]
 rep("function tourTarget(s){return s.b.split(',')", "function tourTarget(s){return (typeof s.b==='function'?s.b():s.b).split(',')")
 # a target in the fixed top bar (My match cards under the heart) is on screen even though it sits above the 56px line
 rep("const r=b.getBoundingClientRect(),seen=r.bottom>56&&r.top<innerHeight;", "const r=b.getBoundingClientRect(),seen=(r.bottom>56||!!b.closest('.tbx'))&&r.top<innerHeight;")
+# QA r9: the counter counted skipped steps ('3 of 22' then '9 of 22'): count only the steps this person actually sees
+rep("<span>${TOUR.step+1} of ${TSTEPS.length}</span>", "<span>Step ${TOUR.log.length}</span>")
 # the top-bar target (My match cards) is fixed: never scroll the page for it (the card stays on screen)
 rep(" else if(r.top<TOPS||r.bottom>vh){b.scrollIntoView(", " else if((r.top<TOPS||r.bottom>vh)&&!b.closest('.tbx')){b.scrollIntoView(")
 # re-check on every real action; remember the actions the steps wait for
@@ -63,11 +65,17 @@ document.addEventListener('input',e=>{if(!TOUR.on)return;if(e.target&&/^(tsq|mdq
 document.addEventListener('change',e=>{if(!TOUR.on)return;if(e.target&&e.target.closest&&e.target.closest('.tfind'))TOUR.f.find=1;setTimeout(tourSync,120);},true);
 /* the bubble never sits on its target: for 3s after each paint, if a late image or the app's own scroll moved the target under
    the bubble, dock it again (only when the target and bubble fit on screen together) */
-{const _tp=tourPaint;tourPaint=function(){_tp.apply(this,arguments);let n=0;clearInterval(TOUR.wI);TOUR.wI=setInterval(()=>{if(!TOUR.on||++n>12){clearInterval(TOUR.wI);return;}
+{const _tp=tourPaint;tourPaint=function(){_tp.apply(this,arguments);
+ /* QA r9: a NEW step's bubble stays invisible until its target stops moving (late image, the app's own scroll), then docks and shows: no flash over the photo */
+ {const c0=$('coach'),s0=TSTEPS[TOUR.step];if(c0&&s0&&!s0.hand&&TOUR.lastShown!==TOUR.step){TOUR.lastShown=TOUR.step;c0.style.opacity='0';let last='',k=0;clearInterval(TOUR.stI);
+  TOUR.stI=setInterval(()=>{const cc=$('coach'),b=tourTarget(s0);if(!cc||!TOUR.on||TSTEPS[TOUR.step]!==s0){clearInterval(TOUR.stI);if(cc)cc.style.opacity='';return;}
+   const r=b&&b.getBoundingClientRect(),key=r?[r.top,r.left,r.height].map(Math.round).join():'x';
+   if(key===last||++k>22||!b){clearInterval(TOUR.stI);if(b){const q=cc.getBoundingClientRect();if(!(q.bottom<=r.top||q.top>=r.bottom||q.right<=r.left||q.left>=r.right)&&r.height+q.height+90<=innerHeight)coachPlace(cc,b);}cc.style.opacity='';}last=key;},70);}}
+ let n=0;clearInterval(TOUR.wI);TOUR.wI=setInterval(()=>{if(!TOUR.on||++n>12){clearInterval(TOUR.wI);return;}
  const s=TSTEPS[TOUR.step];if(!s||s.hand)return;const b=tourTarget(s),c=$('coach');if(!b||!c||c.style.visibility==='hidden')return;const r=b.getBoundingClientRect(),q=c.getBoundingClientRect();
  const over=!(q.bottom<=r.top||q.top>=r.bottom||q.right<=r.left||q.left>=r.right);if(over&&r.height+q.height+90<=innerHeight)coachPlace(c,b);},250);};}
 const NOTOUR=""")
-rep("TOUR.on=true;TOUR.step=0;TOUR.log=[];", "TOUR.on=true;TOUR.step=0;TOUR.log=[];TOUR.f={};")
+rep("TOUR.on=true;TOUR.step=0;TOUR.log=[];", "TOUR.on=true;TOUR.step=0;TOUR.log=[];TOUR.f={};TOUR.lastShown=-1;")
 rep("document.querySelectorAll('.bnc').forEach(e=>e.classList.remove('bnc'));", "document.querySelectorAll('.bnc,.tring').forEach(e=>e.classList.remove('bnc','tring'));", 2)
 rep("if(b&&!s.hand)b.classList.add('bnc');", "if(b&&!s.hand)b.classList.add(s.ring?'tring':'bnc');")
 h = h.replace('</style>', '.tring{outline:3px solid #c8325f;outline-offset:4px;border-radius:14px;box-shadow:0 0 0 8px rgba(200,50,95,.12)}</style>', 1)

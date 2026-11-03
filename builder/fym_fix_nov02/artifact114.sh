@@ -13,4 +13,5 @@ python3 $H/types114.py "$O"   # rack types (one per rack) + Tiffany's picks defa
 python3 $H/tour114.py "$O"   # 30-second tour rebuild (Tiffany Nov 3 2:54pm)
 python3 $H/hearts114.py "$O"   # hearts (Nov 3 2:58pm)
 python3 $H/door114.py "$O"   # doors neutral
+python3 $H/wood114.py "$O"   # real-grain wood racks in the deck, card, hearts too (QA r9)
 ls -l "$P/index.html" "$O/index.html" "$O/mc/190.webp"

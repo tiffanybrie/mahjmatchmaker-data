@@ -20,6 +20,15 @@ try:
           x.click();out.afterRm=MCH.get().length;const t=document.getElementById('mctoast');out.toast=!!t&&!t.hidden&&/Undo/.test(t.textContent);
           document.querySelector('#mctoast [data-mundo]').click();out.afterUndo=MCH.get().length;closeStars();
           out.label=document.body.innerHTML.includes('Save image')||String(renderCard).includes('Save image')||document.documentElement.outerHTML.includes('Save image / Share');return out}""")
+        # QA r9: the Undo toast must sit ABOVE the My hearts / match cards sheet, and the FIRST real tap on Undo restores the card
+        r2 = pg.evaluate("""async()=>{const s=D.sets.find(s=>s.m&&s.m.length);const rk=Object.keys(R).filter(k=>!R[k].hid)[0];MCH.put([]);S.set=D.sets.indexOf(s);S.fav=s.m[0][0];S.rpick=[rk];acctSaveMatch();
+          ACCT.tab='matches';openStars();await new Promise(r=>setTimeout(r,50));document.querySelector('#starsov [data-mrm]').click();await new Promise(r=>setTimeout(r,80));
+          const u=document.querySelector('#mctoast [data-mundo]');if(!u)return {err:'no Undo button'};const b=u.getBoundingClientRect(),x=b.left+b.width/2,y=b.top+b.height/2,top=document.elementFromPoint(x,y);
+          return {x,y,onTop:!!(top&&top.closest&&top.closest('#mctoast')),n:MCH.get().length}}""")
+        if not r2.get('err'):
+            pg.mouse.click(r2['x'], r2['y']); time.sleep(.3)
+            r2.update(pg.evaluate("({after:MCH.get().length,sheet:!!document.getElementById('starsov')})"))
+        r['undoTap'] = r2
         br.close()
 finally: srv.kill()
 if r.get('err'): F.append('[150] ' + r['err'])
@@ -31,6 +40,9 @@ else:
     if r['btns'] != r['cards'] or not r['cards']: F.append(f"[150] not every match card has a remove button ({r['btns']} of {r['cards']})")
     if r['afterRm'] != 1 or not r['toast']: F.append(f"[150] remove did not remove the card or show the Undo toast ({r})")
     if r['afterUndo'] != 2: F.append("[150] Undo did not bring the card back")
+    u = r.get('undoTap', {})
+    if u.get('err') or not u.get('onTop'): F.append(f"[150] the Undo toast sits under the My match cards sheet (a tap there hits the sheet) {u}")
+    elif u.get('after') != 1 or not u.get('sheet'): F.append(f"[150] the first tap on Undo did not restore the card (or closed the sheet) {u}")
     if not r['label']: F.append("[150] the card's save button does not say 'Save image'")
 for f in F: print(f)
 print('cards check', 'FAIL' if F else 'ok', json.dumps(r)); sys.exit(1 if F else 0)

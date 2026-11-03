@@ -14,4 +14,5 @@ python3 $H/types114.py "$SITE/site-app/fym-v114"   # rack types (one per rack) +
 python3 $H/tour114.py "$SITE/site-app/fym-v114"   # 30-second tour rebuild (Tiffany Nov 3 2:54pm)
 python3 $H/hearts114.py "$SITE/site-app/fym-v114"   # hearts (Nov 3 2:58pm)
 python3 $H/door114.py "$SITE/site-app/fym-v114"   # doors neutral
+python3 $H/wood114.py "$SITE/site-app/fym-v114"   # real-grain wood racks in the deck, card, hearts too (QA r9)
 ls -l "$SITE/site-app/fym-v114/index.html"

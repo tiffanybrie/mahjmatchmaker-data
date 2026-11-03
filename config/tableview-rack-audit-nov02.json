@@ -687,7 +687,8 @@
     "flat render / low-res: no visible wood grain (Tiffany Nov 2 10:11am)"
    ],
    "now": [],
-   "method": "real grain: this stain's band from Bird & Bamboo's WOOD STAINS photo, label rows from the rest of the same rows, B&B rack outline"
+   "method": "real grain: this stain's band from Bird & Bamboo's WOOD STAINS photo, label rows from the rest of the same rows, B&B rack outline",
+   "grain_lift": "Nov 3 QA r9: the real grain lifted 1.8x (local contrast only) so the whitewash reads as wood, not paint"
   },
   "bb:Yellow": {
    "file": "assets/table-view/racks/bb_Yellow_8e44dee5.webp",

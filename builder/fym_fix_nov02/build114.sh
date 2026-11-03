@@ -14,3 +14,4 @@ python3 $H/types114.py "$D"   # rack types (one per rack) + Tiffany's picks defa
 python3 $H/tour114.py "$D"   # 30-second tour rebuild (Tiffany Nov 3 2:54pm)
 python3 $H/hearts114.py "$D"   # stars become hearts + auto-save hearted swipes + account prompt (Nov 3 2:58pm)
 python3 $H/door114.py "$D"   # neither door preselected (Nov 3)
+python3 $H/wood114.py "$D"   # real-grain wood racks in the deck, card, hearts too (QA r9)

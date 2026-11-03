@@ -1754,6 +1754,15 @@ if '/*v114 table view*/' in UI:
         _l153 = [l for l in _o153.stdout.splitlines() if l.startswith('[153]')]
         if _o153.returncode and not _l153: _l153 = ['[153] hearts check failed: ' + (_o153.stderr or '')[-200:]]
         for _f in _l153[:8]: F.append(_f)
+# [154] Tiffany Nov 3 (QA r9, 'driving me crazy'): every Wood tone rack shows real grain, never a flat fill, on every render path
+# (rackSrc = deck card / suitor / selected rack / match card / My hearts; Table = TVD.ro or rackSrc). builder/fym_fix_nov02/wood_check.py
+if '/*v114 types*/' in UI:
+    if '/*v114 wood deck*/' not in UI: F.append("[154] the real-grain wood racks are not used in the rack deck / card / hearts (builder/fym_fix_nov02/wood114.py)")
+    import subprocess as _sp154
+    _o154 = _sp154.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fym_fix_nov02', 'wood_check.py'), B], capture_output=True, text=True, timeout=600)
+    _l154 = [l for l in _o154.stdout.splitlines() if l.startswith('[154]')]
+    if _o154.returncode and not _l154: _l154 = ['[154] wood grain check failed: ' + (_o154.stderr or '')[-200:]]
+    for _f in _l154[:8]: F.append(_f)
 # [151] Tiffany Nov 3 2:48pm: ONE type per rack (config/rack-types-nov03.json, by eye), Wood tone + Painted, no Walnut, no painted rack
 # in Wood tone. [152]: Tiffany's picks default OFF (tiles, mat door, racks), her picks still lead the mat deck, price = one dropdown.
 if '/*v114 table view*/' in UI:
