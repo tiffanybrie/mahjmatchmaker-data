@@ -10,6 +10,7 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 
 **PARTNER SEND GATE (Oct 27 3:08am, standing):** before scheduling ANY partner email or graphics drop, run `python3 scripts/partner_send_check.py`; it must exit 0.
 
+- **Main/Google (Nov 2 8pm): AI answer does NOT name MAHJMATCH for Bam Bird, My Fair, Peace Love, Oh My Mahjong and MISS MAHJONG (shows MISSYMAHJONG, CHARLOTTEMAHJONG, AUDREYMAW, BRITTANYCRNA; we're #5). Tier-0 indexing + verified-line refresh + Google AI feedback for all 5 on the next runs; FB group codes post this week (needs her yes).**
 - **HQ PIN (Nov 1): needs/supabase-settings-nov01 stays at the very top of HQ (order -100) until she does it. Nothing above it. Morning cleanup must not move it.**
 
 ## Tomorrow's top priorities (Mon Nov 2), in order
