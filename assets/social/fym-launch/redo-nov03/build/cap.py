@@ -18,10 +18,10 @@ def btn(txt): return f"[...document.querySelectorAll('button')].find(b=>b.offset
 def rect(pg, js): return pg.evaluate(f"()=>{{const b={js};if(!b)return null;const r=b.getBoundingClientRect();return [r.left,r.top,r.width,r.height]}}")
 def sunday(pg):
     pg.locator('input[placeholder*=Search]').first.click(); pg.keyboard.type('Sunday'); pg.wait_for_timeout(1300)
-    pg.evaluate("()=>[...document.querySelectorAll('button')].find(b=>b.offsetParent&&/^Sunday\\b/.test(b.innerText.trim())&&!/Blues/.test(b.innerText)).click()"); pg.wait_for_timeout(4000); fixlogo(pg)
+    pg.evaluate("()=>[...document.querySelectorAll('button')].find(b=>b.offsetParent&&/\\nSunday\\nSunday Mahjong/.test(b.innerText)).click()"); pg.wait_for_timeout(4000); fixlogo(pg)
     queue(pg)
 def queue(pg):
-    pg.evaluate("""(q)=>{const md=matDeck0;window.matDeck0=function(){const a=md();return [...q.filter(x=>!S.seen[x]),...a.filter(x=>!q.includes(x))]};try{matDeck0=window.matDeck0}catch(e){};renderAll()}""", DECKQ); pg.wait_for_timeout(1500); imgs(pg)
+    pg.evaluate("""(q)=>{const md=matDeck0;window.matDeck0=function(){const a=md();return q.filter(x=>!S.seen[x])};try{matDeck0=window.matDeck0}catch(e){};renderAll()}""", DECKQ); pg.wait_for_timeout(1500); imgs(pg)
 class Rec:
     def __init__(s, ctx, pg, out):
         s.pg, s.out = pg, out; os.makedirs(out + '/f', exist_ok=True); s.FR = []; s.marks = []; s.cdp = ctx.new_cdp_session(pg)
@@ -38,7 +38,7 @@ class Rec:
         json.dump({'frames': s.FR, 'marks': s.marks, **(extra or {})}, open(s.out + '/marks.json', 'w'), indent=1); print(len(s.FR), 'frames')
 with sync_playwright() as p:
     if WHAT in ('rec0', 'all'):  # home -> Start with tiles -> type Sunday -> tap Sunday -> mats screen
-        b, ctx, pg = start(p, 2)
+        b, ctx, pg = start(p, 2); queue(pg)  # queue first so the first mat card under Sunday is Brownstone Bloom (no unacknowledged card)
         R = Rec(ctx, pg, f'{O}/rec0'); R.go(); pg.wait_for_timeout(1000)
         R.mark('top', {'swt': rect(pg, btn('Start with tiles'))})
         pg.evaluate(f"()=>{btn('Start with tiles')}.click()"); R.mark('swttap'); pg.wait_for_timeout(1000)
@@ -47,10 +47,9 @@ with sync_playwright() as p:
         inp.click(); 
         for ch in 'Sunday': pg.keyboard.type(ch); pg.wait_for_timeout(110)
         pg.wait_for_timeout(900); imgs(pg)
-        sb = "[...document.querySelectorAll('button')].find(b=>b.offsetParent&&/^Sunday\\b/.test(b.innerText.trim())&&!/Blues/.test(b.innerText))"
+        sb = "[...document.querySelectorAll('button')].find(b=>b.offsetParent&&/\\nSunday\\nSunday Mahjong/.test(b.innerText))"
         R.mark('result', {'sun': rect(pg, sb)}); pg.wait_for_timeout(600)
         pg.evaluate(f"()=>{sb}.click()"); R.mark('suntap'); pg.wait_for_timeout(2600); fixlogo(pg)
-        queue(pg)
         CTX = "(()=>{const h=[...document.querySelectorAll('h1,h2,h3,div')].find(e=>e.offsetParent&&e.innerText&&e.innerText.trim().startsWith('Mat-ching'));return h.getBoundingClientRect().top+scrollY-70})()"
         smooth(pg, CTX, 800); imgs(pg); pg.wait_for_timeout(500); R.mark('mats'); pg.wait_for_timeout(900); R.mark('end'); R.stop(); b.close()
     if WHAT in ('recA', 'all'):  # swipes: ♥ Brownstone, ✕ Songbird, ♥ Carson Vintage, ♥ Midnight Garden
@@ -72,7 +71,10 @@ with sync_playwright() as p:
         R0 = Rec(ctx, pg, f'{O}/recP'); R0.go(); pg.wait_for_timeout(900)
         R0.mark('pick0', {'bb': rect(pg, pk)}); pg.wait_for_timeout(700)
         pg.evaluate(f"()=>{pk}.click()"); R0.mark('picktap'); pg.wait_for_timeout(1800); fixlogo(pg); R0.mark('after'); R0.stop()
-        pg.evaluate("(q)=>{window._rq=q;const pool=rackPool;window.rackPool=function(){const a=pool();return [...window._rq,...a.filter(x=>!window._rq.includes(x))]};try{rackPool=window.rackPool}catch(e){};S.f.r.her=false;renderRacks()}", [TEAL, WAL, OAK]); pg.wait_for_timeout(1500)
+        pg.evaluate("(q)=>{window._rq=q;const pool=rackPool;window.rackPool=function(){const a=pool();return window._rq.slice()};try{rackPool=window.rackPool}catch(e){};renderRacks()}", [TEAL, WAL, OAK]); pg.wait_for_timeout(1200)
+        # turn Tiffany's rack picks OFF with the real chip so the deck opens on Teal Wood (nothing on screen goes unacknowledged)
+        pg.evaluate("()=>{const d=document.querySelector('.deck.r');const top=d?d.getBoundingClientRect().top:0;const c=[...document.querySelectorAll('button')].filter(b=>b.offsetParent&&/^Tiffany.s picks: on/.test(b.innerText.trim())).find(b=>b.getBoundingClientRect().top>top-400);c&&c.click()}"); pg.wait_for_timeout(600)
+        pg.evaluate("(q)=>{window._rq=q;renderRacks()}", [TEAL, WAL, OAK]); pg.wait_for_timeout(1500)
         pg.evaluate("()=>{const d=document.querySelector('.deck.r');window.scrollTo(0,d.getBoundingClientRect().top+scrollY-520)}"); pg.wait_for_timeout(2500); fixlogo(pg); imgs(pg)
         pg.screenshot(path=f'{O}/dbg/racks0.png')
         R = Rec(ctx, pg, f'{O}/recB'); R.go(); pg.wait_for_timeout(900); R.mark('racks')
