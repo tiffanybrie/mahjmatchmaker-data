@@ -26,7 +26,7 @@ class Rec:
             except Exception: pass
         s.cdp.on('Page.screencastFrame', onf)
     def go(s):
-        s.cdp.send('Page.startScreencast', {'format': 'jpeg', 'quality': 92, 'maxWidth': 780, 'maxHeight': 1688, 'everyNthFrame': 1}); s.T0 = time.time()
+        s.cdp.send('Page.startScreencast', {'format': 'jpeg', 'quality': 80, 'maxWidth': 780, 'maxHeight': 1688, 'everyNthFrame': 1}); s.T0 = time.time()
     def mark(s, n, *sels):
         rects = {q: s.pg.evaluate(RECT, q) for q in sels}
         s.marks.append([n, round(time.time() - s.T0, 3), len(s.FR), rects]); print(n, s.marks[-1][1:])
@@ -47,7 +47,7 @@ with sync_playwright() as p:
             fn = f"{W}/mats/{k.replace('/', '__')}.{ext}"; open(fn, 'wb').write(base64.b64decode(r[1])); out[k] = [fn, r[2], r[3]]
         json.dump(out, open(f'{W}/mats/map.json', 'w'), indent=1); print('mats', len(out)); b.close()
     if WHAT in ('recA', 'all'):
-        b, ctx, pg = start(p, 2); dear_santa(pg)
+        b, ctx, pg = start(p, 2); dear_santa(pg)  # Nov 3: 2x capture so the app footage stays sharp when zoomed
         DECK = "(()=>{const d=document.querySelector('.deck.m');return d.getBoundingClientRect().top+scrollY-300})()"
         pg.evaluate(f"()=>window.scrollTo(0,{DECK})"); pg.wait_for_timeout(3500)
         pg.evaluate("()=>{const d=document.querySelector('button.holc');window.scrollTo(0,d.getBoundingClientRect().top+scrollY-520)}"); pg.wait_for_timeout(2500)
@@ -64,7 +64,7 @@ with sync_playwright() as p:
         smooth(pg, "(()=>{const t=document.querySelector('.tray');return t?t.getBoundingClientRect().top+scrollY-520:scrollY+300})()", 700)
         R.mark('tray', '.tray'); pg.wait_for_timeout(1800); R.mark('end', '.tray'); R.stop(); b.close()
     if WHAT in ('recB', 'all'):
-        b, ctx, pg = start(p, 2); dear_santa(pg)
+        b, ctx, pg = start(p, 2); dear_santa(pg)  # Nov 3: 2x capture so the app footage stays sharp when zoomed
         pg.evaluate("()=>document.querySelector('.chip.holc').click()"); pg.wait_for_timeout(1200)
         pg.evaluate("()=>[...document.querySelectorAll('button.no')].filter(b=>b.offsetParent)[0].click()"); pg.wait_for_timeout(1500)
         pg.evaluate("()=>[...document.querySelectorAll('button.yes')].filter(b=>b.offsetParent)[0].click()"); pg.wait_for_timeout(1500)

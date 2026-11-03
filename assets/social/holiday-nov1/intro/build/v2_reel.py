@@ -48,28 +48,29 @@ HTML = r"""<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face{font-family:PF;src:url(__F__/playfair-display-latin-600-italic.woff2);font-style:italic}
 :root{--navy:#062a55;--deep:#041d3d;--red:#b3202a;--gold:#e9c77b;--pink:#f56c8c;--rose:#d6336c;--cream:#faf3ea}
 *{margin:0;box-sizing:border-box}
-body{width:1080px;height:1920px;overflow:hidden;position:relative;background:var(--navy);font-family:Bit}
+body{width:1080px;height:1920px;overflow:hidden;position:relative;background:#e4f0f9;font-family:Bit}
 .sc{position:absolute;inset:0;display:none;overflow:hidden}
-.bgn{background:radial-gradient(ellipse at 50% 45%,#0b3a72 0%,var(--navy) 55%,var(--deep) 100%)}
-.snow{position:absolute;inset:0;pointer-events:none}.snow i{position:absolute;border-radius:50%;background:#fff}
+/* Nov 3 (Tiffany): not navy for holiday; a very light snowy blue */
+.bgn{background:radial-gradient(ellipse at 50% 42%,#ffffff 0%,#eef6fc 38%,#d9eaf6 75%,#c6ddef 100%)}
+.snow{position:absolute;inset:0;pointer-events:none}.snow i{position:absolute;border-radius:50%;background:#fff;box-shadow:0 0 0 1.5px rgba(120,165,205,.55),0 2px 6px rgba(70,120,170,.35)}
 .plate{position:absolute;left:0;right:0;text-align:center;z-index:40}
-.plate span{display:inline-block;font:400 78px/1.06 Cap;color:var(--navy);background:var(--cream);padding:24px 50px 32px;border-radius:32px;box-shadow:0 18px 44px rgba(0,0,0,.42);white-space:nowrap}
-.card{position:absolute;border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 16px 40px rgba(0,0,0,.45);border:8px solid #fff}
+.plate span{display:inline-block;font:400 78px/1.06 Cap;color:var(--navy);background:#fff;padding:24px 50px 32px;border-radius:32px;box-shadow:0 14px 36px rgba(30,70,120,.28);white-space:nowrap}
+.card{position:absolute;border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 14px 34px rgba(30,70,120,.30);border:8px solid #fff}
 .card img{width:100%;height:100%;object-fit:cover;display:block;border-radius:12px}
 .pill{display:inline-block;font:700 40px/1.1 Bit;padding:18px 40px;border-radius:60px;white-space:nowrap}
 .pill small{font:600 34px Bit;opacity:.9}
 /* odometer: digits centred as a group; the + hangs outside the group so it never shifts the number */
 .odo{position:absolute;left:0;right:0;top:470px;height:330px;display:flex;justify-content:center}
 .grp{position:relative;display:flex;gap:10px}
-.dg{width:210px;height:320px;overflow:hidden;position:relative;background:rgba(4,29,61,.9);border-radius:28px;border:6px solid var(--gold);box-shadow:0 20px 50px rgba(0,0,0,.45)}
+.dg{width:210px;height:320px;overflow:hidden;position:relative;background:rgba(4,29,61,.9);border-radius:28px;border:6px solid var(--gold);box-shadow:0 18px 40px rgba(30,70,120,.35)}
 .dg .st{position:absolute;left:0;right:0;top:0}
 .dg .st div{height:308px;font:400 262px/308px Cap;color:var(--cream);text-align:center}
 .dg:after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.35),transparent 22%,transparent 78%,rgba(0,0,0,.35))}
-.plus{position:absolute;left:100%;top:-10px;margin-left:14px;font:400 190px/1 Cap;color:var(--gold)}
-.olab{position:absolute;left:0;right:0;top:850px;text-align:center;font:400 104px/1.05 Cap;color:#fff}
+.plus{position:absolute;left:100%;top:-10px;margin-left:14px;font:400 190px/1 Cap;color:var(--red)}
+.olab{position:absolute;left:0;right:0;top:850px;text-align:center;font:400 104px/1.05 Cap;color:var(--navy)}
 /* phone */
 .cam{position:absolute;left:0;top:0;transform-origin:0 0}
-.bez{position:absolute;left:-30px;top:-30px;width:840px;height:1748px;border-radius:118px;background:#14121a;box-shadow:0 40px 90px rgba(0,0,0,.55)}
+.bez{position:absolute;left:-30px;top:-30px;width:840px;height:1748px;border-radius:118px;background:#14121a;box-shadow:0 34px 80px rgba(30,70,120,.40)}
 .scr{position:absolute;left:0;top:0;width:780px;height:1688px;border-radius:92px;overflow:hidden;background:#fff}
 .scr img.f{position:absolute;left:0;top:0;width:780px;height:1688px}
 .ring{position:absolute;border-radius:50%;border:10px solid var(--pink)}
@@ -78,14 +79,14 @@ body{width:1080px;height:1920px;overflow:hidden;position:relative;background:var
 <div id="hook" class="sc bgn"><div id="grid"></div></div>
 <div id="cnt" class="sc bgn"><div class="odo"><div class="grp" id="grp"></div></div><div class="olab" id="olab"></div><div id="thumbs"></div></div>
 <div id="app" class="sc bgn"><div class="cam" id="cam"><div class="bez"></div><div class="scr"><img class="f" id="fr"><svg id="spot" width="780" height="1688" style="position:absolute;left:0;top:0"></svg><div id="ov" style="position:absolute;inset:0"></div></div></div></div>
-<div id="cardsc" class="sc bgn"><img id="mcard" style="position:absolute;border-radius:28px;box-shadow:0 40px 90px rgba(0,0,0,.5)"></div>
+<div id="cardsc" class="sc bgn"><img id="mcard" style="position:absolute;border-radius:28px;box-shadow:0 34px 80px rgba(30,70,120,.40)"></div>
 <div id="quilt" class="sc bgn"><div id="qg"></div></div>
 <div id="end" class="sc bgn">
  <img src="__FH__" id="fh" style="position:absolute;left:470px;top:470px;width:140px">
- <div style="position:absolute;left:0;right:0;top:650px;text-align:center"><span id="lock" style="display:inline-block;font:400 112px/1 Cap;color:#fff;white-space:nowrap">Find <span style="font:italic 600 116px/1 PF;color:var(--pink)">Your</span> Mat-ch<span style="position:absolute;font:400 40px Bit;margin-left:4px;margin-top:6px">™</span></span></div>
- <div style="position:absolute;left:0;right:0;top:840px;text-align:center;font:italic 600 56px/1.28 PF;color:var(--cream)">Holiday tiles, mats &amp; racks<br>across brands, together.</div>
+ <div style="position:absolute;left:0;right:0;top:650px;text-align:center"><span id="lock" style="display:inline-block;font:400 112px/1 Cap;color:var(--navy);white-space:nowrap">Find <span style="font:italic 600 116px/1 PF;color:var(--rose)">Your</span> Mat-ch<span style="position:absolute;font:400 40px Bit;margin-left:4px;margin-top:6px">™</span></span></div>
+ <div style="position:absolute;left:0;right:0;top:840px;text-align:center;font:italic 600 56px/1.28 PF;color:var(--navy)">Holiday tiles, mats &amp; racks<br>across brands, together.</div>
  <div style="position:absolute;left:0;right:0;top:1060px;text-align:center"><span class="pill" id="shop" style="background:var(--pink);color:#fff;font-size:46px">Shop now · use code MAHJMATCH</span></div>
- <div style="position:absolute;left:0;right:0;top:1220px;text-align:center"><span class="pill" style="background:transparent;border:4px solid var(--gold);color:var(--gold);font-size:34px;letter-spacing:4px;text-transform:uppercase;padding:14px 36px">Link in bio</span></div>
+ <div style="position:absolute;left:0;right:0;top:1220px;text-align:center"><span class="pill" style="background:transparent;border:4px solid var(--red);color:var(--red);font-size:34px;letter-spacing:4px;text-transform:uppercase;padding:14px 36px">Link in bio</span></div>
 </div>
 <div class="plate" id="plate"><span id="plt"></span></div>
 <div id="lbl" style="position:absolute;left:0;right:0;text-align:center;z-index:40"></div>

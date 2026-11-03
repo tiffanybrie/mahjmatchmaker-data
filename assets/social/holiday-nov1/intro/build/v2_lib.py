@@ -12,7 +12,7 @@ LOGO = re.search(rb'id="logo"[^>]*?src="(data:image/png;base64,[^"]+)"', HTML).g
 def fixlogo(pg): pg.evaluate('(s)=>{for(const l of document.querySelectorAll("#logo,img[alt=\'Mahj Matchmaker\']"))if(!l.naturalWidth)l.src=s}', LOGO)
 RECT = """(sel)=>{const e=[...document.querySelectorAll(sel)].find(x=>x.offsetParent);if(!e)return null;const r=e.getBoundingClientRect();return [r.left,r.top,r.width,r.height]}"""
 def start(p, scale=2):
-    b = p.chromium.launch(proxy={'server': PX} if PX else None)
+    b = p.chromium.launch(proxy={'server': PX} if PX else None, args=[f'--force-device-scale-factor={scale}'])  # Nov 3: without this the CDP screencast came back at 390px (1x) -> soft app footage
     ctx = b.new_context(viewport={'width': 390, 'height': 844}, device_scale_factor=scale)
     def h(r):
         u = r.request.url
