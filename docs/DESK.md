@@ -64,7 +64,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | December 1994 redo (her RTS notes) | Matches & Catalog | After holiday colour cards. | Fri Nov 6 |
 | Bam Bird Deco trio (Indigo first) | Matches & Catalog | Colour cards ×3, then books. | Week of Nov 9 |
 | Affiliate applications (6 apply-first brands) | Tiffany submits / Main | Kit doc 00h; HQ apply-kit-oct31. | This week |
-| Planoly cleanup (her Oct 27 ask; delete yes Nov 3 1:31pm) | Main | 46 old drafts ARCHIVED (docs/planoly-archive/2026-11-03-deleted-drafts.json + README, media in assets/social/planoly-archive/2026-11-03/). DELETE still to do: the week-drafts fork's delete_post_group was blocked by the safety check (approval was relayed, not her chat); Main deletes the 46 ids in that JSON in an attended chat. 01a16052-2828 (still 'scheduled', Oct 21) left as is. | Tue Nov 3 |
+| Planoly cleanup (her Oct 27 ask; delete yes Nov 3 1:31pm) | Main | 46 old drafts ARCHIVED (docs/planoly-archive/2026-11-03-deleted-drafts.json + README, media in assets/social/planoly-archive/2026-11-03/). DELETE still to do: the week-drafts fork's delete_post_group was blocked by the safety check (approval was relayed, not her chat); Main deletes the 46 ids in that JSON in an attended chat. 01a16052-2828 (still 'scheduled', Oct 21) left as is. | Tue Nov 3 | DONE Nov 3 ~2:05pm (all 46 deleted; archive kept).
 | FB group weekly Claude Doc | Main | https://claude.ai/artifact/54ovPaB6BQU78ztjUgQSbe; keep current. | Tue Nov 3 |
 | Mahj Mood code check (unused codes expire after 4 months) | Main | Before the next Mahj Mood post (Playing for Keeps Fri Nov 6). | Thu Nov 5 |
 | Tortoise rack piece (her Oct 28) | Main | Scope + storyboard; gift-guide tie-in. | Wed Nov 4 |

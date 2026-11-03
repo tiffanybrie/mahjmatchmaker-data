@@ -55,3 +55,5 @@ Full JSON (ids, captions, dates, platforms, tags, asset ids, thumbnail URLs): `d
 | 01a17a6c-12c1 | 2026-10-28 · instagram/grid-post · Miss Classic Malachite and Jade are BACK 💚 Restocked at Miss Mahjong today. Malachite on Year of the Dragon Am | assets/social/planoly-archive/2026-11-03/01a17a6c-12c1-* |
 | 01a16477-092f | 2026-10-28 · instagram/grid-post · 👀 REVIEW: Halloween "Night of the Raven" carousel (table + shop the look), auto Wed 10/28 11am CT — reply yes/ | assets/social/planoly-archive/2026-11-03/01a16477-092f-* |
 | 01a16477-0b08 | 2026-10-31 · instagram/story · 👀 REVIEW: Happy Halloween story: the Night of the Raven table, 2 plain frames, auto Sat 10/31 10am CT — reply  | assets/social/planoly-archive/2026-11-03/01a16477-0b08-* |
+
+**DELETED Nov 3 ~2:05pm ET by Main (all 46), on Tiffany's 1:31pm yes in chat. Records stay here.**
