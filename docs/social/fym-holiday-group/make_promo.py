@@ -18,7 +18,7 @@ import random; random.seed(4)
 snow=''.join(f'<i style="position:absolute;left:{random.randint(0,1080)}px;top:{random.randint(0,1350)}px;width:{s}px;height:{s}px;border-radius:50%;background:#fff;box-shadow:0 0 0 1.5px rgba(120,165,205,.5)"></i>' for s in [random.randint(5,13) for _ in range(70)])
 head='''<div style="position:absolute;left:0;right:0;top:58px;text-align:center;z-index:5">
 <div style="display:inline-block;background:#b3202a;color:#fff;font:700 26px Bit;letter-spacing:5px;padding:12px 28px;border-radius:40px">HOLIDAY EDITION</div>
-<div style="font:400 66px/1.05 Cap;color:#062a55;margin-top:22px">Holiday mats are in</div>
+<div style="font:400 62px/1.05 Cap;color:#062a55;margin-top:22px">Holiday mats &amp; tiles are in</div>
 <div style="font:400 92px/1.05 Cap;color:#062a55;margin-top:6px">Find <span style="font:italic 600 96px PF;color:#b3202a">Your</span> Mat-ch<sup style="font-size:34px">™</sup></div></div>
 <div style="position:absolute;left:0;right:0;bottom:46px;text-align:center;z-index:5"><span style="display:inline-block;background:#062a55;color:#fff;font:700 34px Bit;padding:18px 36px;border-radius:50px">Pick your tiles · tap Holiday · swipe 140+ holiday mats</span></div>'''
 ph=phone('cmm.jpg',330,60,440,-5,1)+phone('fp.jpg',330,690,440,5,1)+phone('card.png',370,355,400,0,3)
