@@ -1070,7 +1070,7 @@ async function drawCard(){const job=++cardJob;
  const PINK='#c8325f',NAVY='#054689',INK='#2a2036',MUTE='#7a6a85',CREAM='#f7ece3';
  const tb=T[s.tile].bn,mb=M[S.fav].bn,rp=S.rpick,rb=[...new Set(rp.map(r=>R[r].bn))];
  const [mat,tile,ours,icon,rks,tl,ml,rl]=await Promise.all([matFull(S.fav).then(lk),Promise.resolve((T[s.tile].cf&&!T[s.tile].soon?T[s.tile].cf:tileFull(s))||pile(s)).then(lk),hdOr('l','ours',LG('ours')).then(lk),hdOr('l','icon',LG('icon')).then(lk),
-  Promise.all(rp.map(r=>hdOr('r',r,rackSrc(r)).then(lk))),hdOr('l',tb,LG(tb)).then(lk),hdOr('l',mb,LG(mb)).then(lk),Promise.all(rb.map(b=>hdOr('l',b,LG(b)).then(lk)))]);
+  Promise.all(rp.map(r=>((R[r]&&String(R[r].im).startsWith('wg:'))?Promise.resolve(rackSrc(r)):hdOr('r',r,rackSrc(r)))/*v114 wood card*/.then(lk))),hdOr('l',tb,LG(tb)).then(lk),hdOr('l',mb,LG(mb)).then(lk),Promise.all(rb.map(b=>hdOr('l',b,LG(b)).then(lk)))]);
  if(job!==cardJob)return;
  const [wmn,seal]=await Promise.all([lk(IMG.wmn),lk(IMG.seal)]);if(job!==cardJob)return;
  const cv=document.createElement('canvas');cv.width=W*SC;cv.height=H*SC;const g=cv.getContext('2d');g.scale(SC,SC);g.imageSmoothingEnabled=true;g.imageSmoothingQuality='high';
