@@ -64,7 +64,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | December 1994 redo (her RTS notes) | Matches & Catalog | After holiday colour cards. | Fri Nov 6 |
 | Bam Bird Deco trio (Indigo first) | Matches & Catalog | Colour cards ×3, then books. | Week of Nov 9 |
 | Affiliate applications (6 apply-first brands) | Tiffany submits / Main | Kit doc 00h; HQ apply-kit-oct31. | This week |
-| Planoly cleanup (her Oct 27 ask) | Main | Clear dates (never delete): 01a16052-33a6…-40c3, -36fd, -3da0, 01a16793-3e02, 01a16477-0ce9, 01a17a6a-943b/-95d3/-9777, 01a17c71-b34b, 01a17c72-0c6d/-0e9a/-11d0/-152c, 01a17a6c-10e4, -12c1, 01a16477-092f, -0b08; 01a16052-2828 still "scheduled". | Tue Nov 3 |
+| Planoly cleanup (her Oct 27 ask) | Main | DONE Nov 3: 46 old drafts archived (docs/planoly-archive/) then deleted on her 1:31pm yes; 01a16052-2828 (still 'scheduled', Oct 21) left as is. | done |
 | FB group weekly Claude Doc | Main | https://claude.ai/artifact/54ovPaB6BQU78ztjUgQSbe; keep current. | Tue Nov 3 |
 | Mahj Mood code check (unused codes expire after 4 months) | Main | Before the next Mahj Mood post (Playing for Keeps Fri Nov 6). | Thu Nov 5 |
 | Tortoise rack piece (her Oct 28) | Main | Scope + storyboard; gift-guide tie-in. | Wed Nov 4 |
@@ -103,6 +103,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **Brand-locked FYM sample (Mahjong Row & Co.)**: "keep exploring" (her Oct 30); docs/brand-lock/STATUS.md.
 
 ## Later / ideas
+- **Season 2 tile-dating episode reels (Ep 1-13 + trailer): PARKED, not abandoned** (Tiffany Nov 3: "down the road"; focus now = people using Find Your Mat-ch). Renders assets/reels/s2/; captions + Planoly records docs/planoly-archive/2026-11-03-deleted-drafts.json (README there).
 - **Let's Mahj On new tile sets** (Wild, Sweet, Golf, Refined, Merry, Stir Things Up), sneak peek Nov 2, coming mid-Nov: new products; ONE swipe book only if she says (partner watch Nov 2; HQ card archived as info-only).
 - **OMM 2027 International Mahjong Card** preorder live Nov 2 ($12, ships Jan 2; TEACHMAHJ + code work): record only; possible teacher/FB group mention (mentor check, Nov 2).
 - **Peace Love Mahjong Black Friday Nov 16**, **Mahj Mood Playing for Keeps preorder Fri Nov 6 10am CT**, **Virora Lilacée restock Nov 10** (release calendar Nov 2): codes post + social on the day.
