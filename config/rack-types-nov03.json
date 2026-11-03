@@ -1,0 +1,1274 @@
+{
+ "_note": "Tiffany Nov 3 2:48pm: every rack has exactly ONE type (filters are single-select). Classified by name/brand rules (builder/fym_fix_nov02/rack_types_propose.py) then every rack LOOKED AT on contact sheets by type; by_eye = corrected by sight. Wood tone = natural wood looks (oak, walnut, mahogany, pine, clear-coat / stained wood, rattan, wood-look and burl acrylic); Painted = painted wood (Bird & Bamboo colours, Bam Bird / Virora / My Fair Mahjong / Tigre de Tartan colour woods); Marble = stone / marble / agate-look acrylic. 'white' = racks that get the White colour dot.",
+ "labels": {
+  "wood": "Wood tone",
+  "painted": "Painted",
+  "acrylic": "Acrylic",
+  "marble": "Marble",
+  "clear": "Clear",
+  "tortoise": "Tortoise",
+  "pearl": "Pearl",
+  "metallic": "Metallic"
+ },
+ "order": [
+  "wood",
+  "painted",
+  "acrylic",
+  "marble",
+  "clear",
+  "tortoise",
+  "pearl",
+  "metallic"
+ ],
+ "white": [
+  "www.ohmymahjong.com/white-rack-pusher",
+  "mahjmood.com/white-acrylic-racks-set-of-4-no-pushers-included",
+  "mahjmood.com/pure-white-acrylic-racks-and-pushers",
+  "mahjmood.com/white-wooden-racks-with-scalloped-pushers",
+  "mahjongrowandco.com/white-rack-pusher-set",
+  "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-white",
+  "www.bambirdboutique.com/white-acrylic-rack-and-pusher-set-set-of-4",
+  "www.bamletsmahjong.com/mahjong-white-acrylic-rack-and-pusher",
+  "www.bamletsmahjong.com/white-acrylic-double-mahjong-racks-with-magnetic-pushers-set-of-2",
+  "www.bamletsmahjong.com/white-acrylic-racks-set-4",
+  "www.bamletsmahjong.com/white-wooden-racks-set-4",
+  "www.bespokemahjong.com/the-ultimate-rack-bright-white",
+  "bb:White",
+  "bb:White Metallic",
+  "plm:White",
+  "vr:My Fair Mahjong:Solid White",
+  "www.bamletsmahjong.com/mahjong-acrylic-racks-and-ruffle-pushers-pre-order",
+  "mahjmood.com/scalloped-white-and-clear-acrylic-rack-and-pusher-set",
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959320376",
+  "www.middleandmainmahjong.com/blue-and-white-chinoiserie-mahjong-rack-and-pusher-set-of-4-copy",
+  "www.middleandmainmahjong.com/blue-and-white-chinoiserie-rack-set-of-4",
+  "myfairmahjong.com/wooden-painted-mahjong-racks-20-set-of-4-blue-and-pink-sets-magnetic-attached-pusher?v=49600844038455",
+  "myfairmahjong.com/acrylic-mahjong-racks?v=52896919519543",
+  "www.viroramahjong.com/wooden-rack-pusher-set?v=49226735976631",
+  "www.viroramahjong.com/hinged-mahjong-rack-pusher-set?v=49185641660599",
+  "theroyalmahjongsociety.com/mahjong-rack-white",
+  "tigredetartan.com/dove-white-beech-wood-straight-mahjong-racks-with-pushers-custom-storage-bag",
+  "bb:White Wood Stain"
+ ],
+ "racks": {
+  "www.ymimports.com/us-rl028-a": {
+   "n": "18\" Natural Pine Wooden Mahjong Racks with Pushers - Set of 4 (Racks with Pushers Only)",
+   "type": "wood"
+  },
+  "www.ymimports.com/us-rl029-a": {
+   "n": "18-Inch Dark Pine Wooden Mahjong Game Racks with Built-in Pushers - Set of 4",
+   "type": "wood"
+  },
+  "shop.andersruff.com/jade-acrylic-mahjong-rack-set-straight-pushers": {
+   "n": "Anders Ruff Jade",
+   "type": "marble",
+   "by_eye": true
+  },
+  "shop.andersruff.com/mahjenta-pink-acrylic-mahjong-rack-set-scalloped-pushers": {
+   "n": "Anders Ruff MAHJenta Pink Scalloped",
+   "type": "acrylic"
+  },
+  "shop.andersruff.com/pistachio-acrylic-rack-set-scalloped-pushers": {
+   "n": "Anders Ruff Pistachio Green Scalloped",
+   "type": "acrylic"
+  },
+  "shop.andersruff.com/rose-pink-pearl-acrylic-mahjong-rack-set-straight-pushers": {
+   "n": "Anders Ruff Rosè Pink Pearl",
+   "type": "pearl"
+  },
+  "mahjmood.com/baby-blue-wooden-racks-with-scalloped-pushers": {
+   "n": "Baby Blue Wooden Racks with Scalloped Pushers",
+   "type": "painted"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=53195341005109": {
+   "n": "Bam Bird Boutique Dusty Lilac Wood",
+   "type": "painted"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=52307844137269": {
+   "n": "Bam Bird Boutique Indigo Wood",
+   "type": "painted"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=53275469938997": {
+   "n": "Bam Bird Boutique Lagoon Wood",
+   "type": "painted"
+  },
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51324768551221": {
+   "n": "Bam Bird Boutique Lucite – Azure",
+   "type": "clear"
+  },
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=53275679654197": {
+   "n": "Bam Bird Boutique Lucite – Frosted Pink",
+   "type": "clear"
+  },
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611433781": {
+   "n": "Bam Bird Boutique Lucite – Magenta",
+   "type": "clear"
+  },
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611368245": {
+   "n": "Bam Bird Boutique Lucite – Neon",
+   "type": "clear"
+  },
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611401013": {
+   "n": "Bam Bird Boutique Lucite – Pink",
+   "type": "clear"
+  },
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611466549": {
+   "n": "Bam Bird Boutique Lucite – Tortoise",
+   "type": "tortoise"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=52307844202805": {
+   "n": "Bam Bird Boutique Mulberry Wood",
+   "type": "painted"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=53195340972341": {
+   "n": "Bam Bird Boutique Olive Green Wood",
+   "type": "painted"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=53195341037877": {
+   "n": "Bam Bird Boutique Periwinkle Wood",
+   "type": "painted"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=53195340939573": {
+   "n": "Bam Bird Boutique Pink Wood",
+   "type": "painted"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=52307844170037": {
+   "n": "Bam Bird Boutique Slate Blue Wood",
+   "type": "painted"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=52307844235573": {
+   "n": "Bam Bird Boutique Teal Wood",
+   "type": "painted"
+  },
+  "www.bambirdboutique.com/wooden-mahjong-rack-pusher-set": {
+   "n": "Bam Bird Boutique Walnut",
+   "type": "wood"
+  },
+  "www.bambirdboutique.com/white-acrylic-rack-and-pusher-set-set-of-4": {
+   "n": "Bam Bird Boutique White Acrylic",
+   "type": "acrylic"
+  },
+  "www.bamletsmahjong.com/mahjong-acrylic-racks-and-ruffle-pushers-pre-order": {
+   "n": "Bam! Let's Mahjong White Acrylic Scalloped",
+   "type": "clear"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-garden-green": {
+   "n": "Bespoke Mahjong The Ultimate",
+   "type": "clear"
+  },
+  "bb:Almond": {
+   "n": "Bird & Bamboo Almond",
+   "type": "painted"
+  },
+  "bb:Avocado": {
+   "n": "Bird & Bamboo Avocado",
+   "type": "painted"
+  },
+  "bb:Ballet Pink": {
+   "n": "Bird & Bamboo Ballet Pink",
+   "type": "painted"
+  },
+  "bb:Basil": {
+   "n": "Bird & Bamboo Basil",
+   "type": "painted"
+  },
+  "bb:Berry Purple": {
+   "n": "Bird & Bamboo Berry Purple",
+   "type": "painted"
+  },
+  "bb:Blackboard Black": {
+   "n": "Bird & Bamboo Blackboard Black",
+   "type": "painted"
+  },
+  "bb:Blue Metallic": {
+   "n": "Bird & Bamboo Blue Metallic",
+   "type": "metallic"
+  },
+  "bb:Brick Red": {
+   "n": "Bird & Bamboo Brick Red",
+   "type": "painted"
+  },
+  "bb:Bronze Metallic": {
+   "n": "Bird & Bamboo Bronze Metallic",
+   "type": "metallic"
+  },
+  "bb:Butter": {
+   "n": "Bird & Bamboo Butter",
+   "type": "painted"
+  },
+  "bb:Cadet": {
+   "n": "Bird & Bamboo Cadet",
+   "type": "painted"
+  },
+  "bb:Carrot": {
+   "n": "Bird & Bamboo Carrot",
+   "type": "painted"
+  },
+  "bb:Champagne Metallic": {
+   "n": "Bird & Bamboo Champagne Metallic",
+   "type": "metallic"
+  },
+  "bb:Cherry Red": {
+   "n": "Bird & Bamboo Cherry Red",
+   "type": "painted"
+  },
+  "bb:Clear": {
+   "n": "Bird & Bamboo Clear Wood Stain",
+   "type": "wood"
+  },
+  "bb:Coral": {
+   "n": "Bird & Bamboo Coral",
+   "type": "painted"
+  },
+  "bb:Cornflower Blue": {
+   "n": "Bird & Bamboo Cornflower Blue",
+   "type": "painted"
+  },
+  "bb:Cream": {
+   "n": "Bird & Bamboo Cream",
+   "type": "painted"
+  },
+  "bb:Dark Blue": {
+   "n": "Bird & Bamboo Dark Blue",
+   "type": "painted"
+  },
+  "bb:Dark Navy": {
+   "n": "Bird & Bamboo Dark Navy",
+   "type": "painted"
+  },
+  "bb:Dark Teal": {
+   "n": "Bird & Bamboo Dark Teal",
+   "type": "painted"
+  },
+  "bb:Dark Walnut": {
+   "n": "Bird & Bamboo Dark Walnut",
+   "type": "wood"
+  },
+  "bb:Dijon": {
+   "n": "Bird & Bamboo Dijon",
+   "type": "painted"
+  },
+  "bb:Eggplant": {
+   "n": "Bird & Bamboo Eggplant",
+   "type": "painted"
+  },
+  "bb:Electric Blue": {
+   "n": "Bird & Bamboo Electric Blue",
+   "type": "painted"
+  },
+  "bb:Evergreen": {
+   "n": "Bird & Bamboo Evergreen",
+   "type": "painted"
+  },
+  "bb:Flamingo": {
+   "n": "Bird & Bamboo Flamingo",
+   "type": "painted"
+  },
+  "bb:Forest Green": {
+   "n": "Bird & Bamboo Forest Green",
+   "type": "painted"
+  },
+  "bb:French Blue": {
+   "n": "Bird & Bamboo French Blue",
+   "type": "painted"
+  },
+  "bb:Glacier Metallic": {
+   "n": "Bird & Bamboo Glacier Metallic",
+   "type": "metallic"
+  },
+  "bb:Glowstick": {
+   "n": "Bird & Bamboo Glowstick",
+   "type": "painted"
+  },
+  "bb:Gold Metallic": {
+   "n": "Bird & Bamboo Gold Metallic",
+   "type": "metallic"
+  },
+  "bb:Graphite": {
+   "n": "Bird & Bamboo Graphite",
+   "type": "painted"
+  },
+  "bb:Harbor Blue": {
+   "n": "Bird & Bamboo Harbor Blue",
+   "type": "painted"
+  },
+  "bb:Hot Pink": {
+   "n": "Bird & Bamboo Hot Pink",
+   "type": "painted"
+  },
+  "bb:Hot Pink Metallic": {
+   "n": "Bird & Bamboo Hot Pink Metallic",
+   "type": "metallic"
+  },
+  "bb:Icy Mint": {
+   "n": "Bird & Bamboo Icy Mint",
+   "type": "painted"
+  },
+  "bb:Jade": {
+   "n": "Bird & Bamboo Jade",
+   "type": "painted"
+  },
+  "bb:Jade Metallic": {
+   "n": "Bird & Bamboo Jade Metallic",
+   "type": "metallic"
+  },
+  "bb:Kelly Green": {
+   "n": "Bird & Bamboo Kelly Green",
+   "type": "painted"
+  },
+  "bb:Lavender": {
+   "n": "Bird & Bamboo Lavender",
+   "type": "painted"
+  },
+  "bb:Lavender Metallic": {
+   "n": "Bird & Bamboo Lavender Metallic",
+   "type": "metallic"
+  },
+  "bb:Light Blue": {
+   "n": "Bird & Bamboo Light Blue",
+   "type": "painted"
+  },
+  "bb:Light Pink": {
+   "n": "Bird & Bamboo Light Pink",
+   "type": "painted"
+  },
+  "bb:Lilac": {
+   "n": "Bird & Bamboo Lilac",
+   "type": "painted"
+  },
+  "bb:Lilac Blush Metallic": {
+   "n": "Bird & Bamboo Lilac Blush Metallic",
+   "type": "metallic"
+  },
+  "bb:Lime Green": {
+   "n": "Bird & Bamboo Lime Green",
+   "type": "painted"
+  },
+  "bb:Magenta": {
+   "n": "Bird & Bamboo Magenta",
+   "type": "painted"
+  },
+  "bb:Mango": {
+   "n": "Bird & Bamboo Mango",
+   "type": "painted"
+  },
+  "bb:Matcha": {
+   "n": "Bird & Bamboo Matcha",
+   "type": "painted"
+  },
+  "bb:Mauve": {
+   "n": "Bird & Bamboo Mauve",
+   "type": "painted"
+  },
+  "bb:Mermaid": {
+   "n": "Bird & Bamboo Mermaid",
+   "type": "painted"
+  },
+  "bb:Misty Spruce": {
+   "n": "Bird & Bamboo Misty Spruce",
+   "type": "painted"
+  },
+  "bb:Moss": {
+   "n": "Bird & Bamboo Moss",
+   "type": "painted"
+  },
+  "bb:Mother Of Dragons Metallic": {
+   "n": "Bird & Bamboo Mother Of Dragons Metallic",
+   "type": "metallic"
+  },
+  "bb:Mulberry": {
+   "n": "Bird & Bamboo Mulberry",
+   "type": "painted"
+  },
+  "bb:Navy Metallic": {
+   "n": "Bird & Bamboo Navy Metallic",
+   "type": "metallic"
+  },
+  "bb:Ocean Slate": {
+   "n": "Bird & Bamboo Ocean Slate",
+   "type": "painted"
+  },
+  "bb:Orange": {
+   "n": "Bird & Bamboo Orange",
+   "type": "painted"
+  },
+  "bb:Peach Metallic": {
+   "n": "Bird & Bamboo Peach Metallic",
+   "type": "metallic"
+  },
+  "bb:Peachy": {
+   "n": "Bird & Bamboo Peachy",
+   "type": "painted"
+  },
+  "bb:Pebble": {
+   "n": "Bird & Bamboo Pebble",
+   "type": "painted"
+  },
+  "bb:Penny Metallic": {
+   "n": "Bird & Bamboo Penny Metallic",
+   "type": "metallic"
+  },
+  "bb:Peony": {
+   "n": "Bird & Bamboo Peony",
+   "type": "painted"
+  },
+  "bb:Periwinkle Blue": {
+   "n": "Bird & Bamboo Periwinkle Blue",
+   "type": "painted"
+  },
+  "bb:Persimmon": {
+   "n": "Bird & Bamboo Persimmon",
+   "type": "painted"
+  },
+  "bb:Petal Purple": {
+   "n": "Bird & Bamboo Petal Purple",
+   "type": "painted"
+  },
+  "bb:Pink Coral": {
+   "n": "Bird & Bamboo Pink Coral",
+   "type": "painted"
+  },
+  "bb:Pistachio": {
+   "n": "Bird & Bamboo Pistachio",
+   "type": "painted"
+  },
+  "bb:Powder Blue": {
+   "n": "Bird & Bamboo Powder Blue",
+   "type": "painted"
+  },
+  "bb:Provincial": {
+   "n": "Bird & Bamboo Provincial",
+   "type": "wood"
+  },
+  "bb:Purple": {
+   "n": "Bird & Bamboo Purple",
+   "type": "painted"
+  },
+  "bb:Radish": {
+   "n": "Bird & Bamboo Radish",
+   "type": "painted"
+  },
+  "bb:Red": {
+   "n": "Bird & Bamboo Red",
+   "type": "painted"
+  },
+  "bb:Red Mahogany": {
+   "n": "Bird & Bamboo Red Mahogany",
+   "type": "wood"
+  },
+  "bb:Retro Mustard": {
+   "n": "Bird & Bamboo Retro Mustard",
+   "type": "painted"
+  },
+  "bb:Rose Gold Metallic": {
+   "n": "Bird & Bamboo Rose Gold Metallic",
+   "type": "metallic"
+  },
+  "bb:Rust Metallic": {
+   "n": "Bird & Bamboo Rust Metallic",
+   "type": "metallic"
+  },
+  "bb:Seafoam": {
+   "n": "Bird & Bamboo Seafoam",
+   "type": "painted"
+  },
+  "bb:Shell Pink": {
+   "n": "Bird & Bamboo Shell Pink",
+   "type": "painted"
+  },
+  "bb:Silver Metallic": {
+   "n": "Bird & Bamboo Silver Metallic",
+   "type": "metallic"
+  },
+  "bb:Sunshine": {
+   "n": "Bird & Bamboo Sunshine",
+   "type": "painted"
+  },
+  "bb:Teal": {
+   "n": "Bird & Bamboo Teal",
+   "type": "painted"
+  },
+  "bb:Tiffany Dusk": {
+   "n": "Bird & Bamboo Tiffany Dusk",
+   "type": "painted"
+  },
+  "bb:True Black": {
+   "n": "Bird & Bamboo True Black",
+   "type": "painted"
+  },
+  "bb:Turks Blue": {
+   "n": "Bird & Bamboo Turks Blue",
+   "type": "painted"
+  },
+  "bb:Turquoise Blue": {
+   "n": "Bird & Bamboo Turquoise Blue",
+   "type": "painted"
+  },
+  "bb:Weathered Oak": {
+   "n": "Bird & Bamboo Weathered Oak",
+   "type": "wood"
+  },
+  "bb:White": {
+   "n": "Bird & Bamboo White",
+   "type": "painted"
+  },
+  "bb:White Metallic": {
+   "n": "Bird & Bamboo White Metallic",
+   "type": "metallic"
+  },
+  "bb:White Wood Stain": {
+   "n": "Bird & Bamboo White Wood Stain",
+   "type": "wood"
+  },
+  "bb:Wine": {
+   "n": "Bird & Bamboo Wine",
+   "type": "painted"
+  },
+  "bb:Yellow": {
+   "n": "Bird & Bamboo Yellow",
+   "type": "painted"
+  },
+  "www.ohmymahjong.com/blond-tortoise-rack-and-pusher-set": {
+   "n": "Blond Tortoise Rack and Pusher Set",
+   "type": "tortoise"
+  },
+  "www.ohmymahjong.com/blue-lace-agate-rack-and-pusher-set": {
+   "n": "Blue Lace Agate Rack and Pusher Set",
+   "type": "marble",
+   "by_eye": true
+  },
+  "www.ohmymahjong.com/carrara-rack-pusher-set": {
+   "n": "Carrara Rack & Pusher Set",
+   "type": "marble",
+   "by_eye": true
+  },
+  "www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue?v=55711274959153": {
+   "n": "Charleston Mahjong Club Azalea Pink Wood",
+   "type": "painted"
+  },
+  "www.charlestonmahjongclub.com/clear-acrylic-mahjong-racks-with-magnetic-pushers-set-of-4-20-long": {
+   "n": "Charleston Mahjong Club Clear Acrylic",
+   "type": "clear"
+  },
+  "www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue?v=55711274926385": {
+   "n": "Charleston Mahjong Club Key Lime Wood",
+   "type": "painted",
+   "by_eye": true
+  },
+  "www.ymimports.com/us-rl017-a": {
+   "n": "Classic Wooden Mahjong Racks, 18\" - Mahogany Color - Set of 4",
+   "type": "wood"
+  },
+  "www.middleandmainmahjong.com/clear-acrylic-mahjong-rack-and-pusher-set-of-4": {
+   "n": "Clear Acrylic Mahjong Rack and Pusher, Set of 4",
+   "type": "clear"
+  },
+  "www.ohmymahjong.com/clear-acrylic-rack-and-pusher-set": {
+   "n": "Clear Acrylic Rack & Pushers Set",
+   "type": "clear"
+  },
+  "shop.andersruff.com/clear-acrylic-mahjong-rack-set-scalloped-pushers": {
+   "n": "Clear Acrylic Rack Set — Scalloped Pushers",
+   "type": "clear"
+  },
+  "shop.andersruff.com/clear-acrylic-mahjong-rack-set-straight-pushers": {
+   "n": "Clear Acrylic Rack Set — Straight Pushers",
+   "type": "clear"
+  },
+  "missmahjong.com/scalloped-acrylic-racks": {
+   "n": "Clear Acrylic Racks with Scalloped Pusher",
+   "type": "clear"
+  },
+  "www.ymimports.com/us-rl026-a": {
+   "n": "Dark Camphor Wooden Mahjong Game Racks with Pushers, 18\" - Set of 4",
+   "type": "painted",
+   "by_eye": true
+  },
+  "missmahjong.com/dark-tortoise-classic-acrylic-racks": {
+   "n": "Dark Tortoise Classic Acrylic Racks",
+   "type": "tortoise"
+  },
+  "missmahjong.com/dark-tortoise-and-brass-acrylic-racks": {
+   "n": "Dark Tortoise and Brass Acrylic Racks",
+   "type": "tortoise"
+  },
+  "mahjmood.com/double-wooden-mahjong-racks": {
+   "n": "Double Wooden Mahjong Racks (Set of Racks and 4 Pushers)",
+   "type": "painted",
+   "by_eye": true
+  },
+  "www.hiphipmahjong.com/hostess-with-the-mostest-racks": {
+   "n": "Hip Hip Mahjong Hostess With The Mostest",
+   "type": "wood",
+   "by_eye": true
+  },
+  "www.hiphipmahjong.com/santa-baby-racks": {
+   "n": "Hip Hip Mahjong Santa Baby",
+   "type": "metallic"
+  },
+  "www.hiphipmahjong.com/trophy-wife-racks": {
+   "n": "Hip Hip Mahjong Trophy Wife",
+   "type": "metallic"
+  },
+  "www.middleandmainmahjong.com/la-vie-en-rose-mahjong-rack-and-pusher-set-of-4": {
+   "n": "La Vie En Rose Mahjong Rack and Pusher, Set of 4",
+   "type": "clear"
+  },
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers": {
+   "n": "Lucite Mahjong Rack & Pusher Set – Emerald",
+   "type": "clear"
+  },
+  "www.letsmahj-on.com/luxe-acrylic-scalloped-mahjong-rack": {
+   "n": "Luxe Acrylic Scalloped Mahjong Rack - Clear",
+   "type": "clear"
+  },
+  "www.letsmahj-on.com/luxe-acrylic-scalloped-mahjong-rack-pink": {
+   "n": "Luxe Acrylic Scalloped Mahjong Rack - Pink",
+   "type": "clear"
+  },
+  "myfairmahjong.com/acrylic-mahjong-racks": {
+   "n": "MAHJONG RACKS  |  Premium Acrylic  |  Patent Pending – Ribbon Pink",
+   "type": "acrylic"
+  },
+  "www.viroramahjong.com/wooden-rack-pusher-set": {
+   "n": "Magnetic Wooden Rack & Pusher Set – Spring Jade",
+   "type": "painted"
+  },
+  "mahjmood.com/chocolate-brown-wooden-racks-with-scalloped-pushers": {
+   "n": "Mahj Mood Chocolate Brown Wooden",
+   "type": "painted",
+   "by_eye": true
+  },
+  "mahjmood.com/luxe-racks-amethyst": {
+   "n": "Mahj Mood Luxe",
+   "type": "marble",
+   "by_eye": true
+  },
+  "mahjmood.com/luxe-racks-grey-marble-acrylic-4": {
+   "n": "Mahj Mood Luxe",
+   "type": "marble",
+   "by_eye": true
+  },
+  "mahjmood.com/navy-blue-acrylic-rack-and-pusher-set-of-4": {
+   "n": "Mahj Mood Navy Blue Acrylic",
+   "type": "acrylic"
+  },
+  "mahjmood.com/moss-green-wooden-racks-with-scalloped-pushers": {
+   "n": "Mahj Mood Palm Beach Green Wooden",
+   "type": "painted"
+  },
+  "mahjmood.com/scalloped-pink-wooden-rack-and-pusher-set-of-4": {
+   "n": "Mahj Mood Pink Wooden",
+   "type": "painted"
+  },
+  "mahjmood.com/copy-scalloped-clear-acrylic-rack-and-pusher-set-of-4": {
+   "n": "Mahj Mood Scalloped Clear Acrylic",
+   "type": "clear"
+  },
+  "mahjmood.com/scalloped-tortoise-acrylic-racks-and-pushers": {
+   "n": "Mahj Mood Scalloped Tortoise Acrylic",
+   "type": "tortoise"
+  },
+  "mahjmood.com/scalloped-white-and-clear-acrylic-rack-and-pusher-set": {
+   "n": "Mahj Mood Scalloped White and Clear Acrylic",
+   "type": "clear"
+  },
+  "www.bamletsmahjong.com/mahjong-black-acrylic-racks-and-scallop-pushers": {
+   "n": "Mahjong Black Acrylic Racks and Scallop Pushers",
+   "type": "acrylic"
+  },
+  "www.bamletsmahjong.com/mahjong-clear-acrylic-racks-and-scallop-pusher": {
+   "n": "Mahjong Clear Acrylic Racks and Scallop Pusher",
+   "type": "clear"
+  },
+  "mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53555876102456": {
+   "n": "Mahjong Register Admiral Navy",
+   "type": "acrylic"
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53017141281080": {
+   "n": "Mahjong Register Blonde Tortoise Scalloped",
+   "type": "tortoise"
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959189304": {
+   "n": "Mahjong Register Capri Blue Pearl Scalloped",
+   "type": "pearl"
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53017129550136": {
+   "n": "Mahjong Register Carrera Marble",
+   "type": "marble",
+   "by_eye": true
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53017129451832": {
+   "n": "Mahjong Register Crystal Clear Scalloped",
+   "type": "clear"
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959222072": {
+   "n": "Mahjong Register Emerald Pearl Scalloped",
+   "type": "pearl"
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=52971299897656": {
+   "n": "Mahjong Register Emerald Tortoise Scalloped",
+   "type": "tortoise"
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959320376": {
+   "n": "Mahjong Register Ivory Oyster Pearl Scalloped",
+   "type": "pearl"
+  },
+  "mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53555876069688": {
+   "n": "Mahjong Register Jet Set Black",
+   "type": "acrylic"
+  },
+  "mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53555876167992": {
+   "n": "Mahjong Register Kelly Green",
+   "type": "acrylic"
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959156536": {
+   "n": "Mahjong Register Navy Pearl Scalloped",
+   "type": "pearl"
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53017141248312": {
+   "n": "Mahjong Register Patent Black Scalloped",
+   "type": "acrylic"
+  },
+  "mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53555876135224": {
+   "n": "Mahjong Register Peacock Teal",
+   "type": "acrylic"
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959287608": {
+   "n": "Mahjong Register Peony Blush Pearl Scalloped",
+   "type": "pearl"
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53563340915000": {
+   "n": "Mahjong Register Pink Lucite Scalloped",
+   "type": "clear"
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959254840": {
+   "n": "Mahjong Register Sea Glass Pearl Scalloped",
+   "type": "pearl"
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53017129517368": {
+   "n": "Mahjong Register Tortoise Club Scalloped",
+   "type": "tortoise"
+  },
+  "mahjongrowandco.com/autumn-brown-rack-pusher-set": {
+   "n": "Mahjong Row & Co. Autumn Brown",
+   "type": "acrylic"
+  },
+  "mahjongrowandco.com/chestnut-cream-rack-pusher-set": {
+   "n": "Mahjong Row & Co. Chestnut Cream",
+   "type": "acrylic",
+   "by_eye": true
+  },
+  "mahjongrowandco.com/matcha-green-rack-pusher-set": {
+   "n": "Mahjong Row & Co. Matcha Green",
+   "type": "acrylic"
+  },
+  "mahjongrowandco.com/porcelain-blue-rack-pusher-set": {
+   "n": "Mahjong Row & Co. Porcelain Blue",
+   "type": "acrylic"
+  },
+  "mahjongrowandco.com/scalloped-deluxe-tortoise-rack": {
+   "n": "Mahjong Row & Co. Scalloped Tortoise",
+   "type": "tortoise"
+  },
+  "mahjongrowandco.com/translucent-chocolate-rack-pusher-set": {
+   "n": "Mahjong Row & Co. Translucent Plum",
+   "type": "clear"
+  },
+  "mahjongrowandco.com/white-rack-pusher-set": {
+   "n": "Mahjong Row & Co. White",
+   "type": "acrylic"
+  },
+  "www.bamletsmahjong.com/mahjong-white-acrylic-rack-and-pusher": {
+   "n": "Mahjong White Acrylic Rack and Pusher",
+   "type": "clear"
+  },
+  "www.middleandmainmahjong.com/blue-and-white-chinoiserie-rack-set-of-4": {
+   "n": "Middle & Main Blue and White Chinoiserie",
+   "type": "clear"
+  },
+  "mm:Hawksbill": {
+   "n": "Middle & Main Hawksbill Heritage (tortoise)",
+   "type": "tortoise"
+  },
+  "www.middleandmainmahjong.com/golden-grain-beechwood-mahjong-rack-and-pusher-set-of-4": {
+   "n": "Middle & Main Scalloped Beechwood",
+   "type": "wood"
+  },
+  "www.middleandmainmahjong.com/blue-and-white-chinoiserie-mahjong-rack-and-pusher-set-of-4-copy": {
+   "n": "Middle & Main White Lace",
+   "type": "acrylic"
+  },
+  "www.middleandmainmahjong.com/milk-glass-collection-mahjong-rack-and-pusher-set-of-4": {
+   "n": "Milk Glass Collection Mahjong Rack and Pusher, Set of 4",
+   "type": "acrylic"
+  },
+  "missmahjong.com/blonde-tortoise-classic-acrylic-racks": {
+   "n": "Miss Mahjong Blonde Tortoise",
+   "type": "tortoise"
+  },
+  "missmahjong.com/blonde-tortoise-and-brass-acrylic-racks": {
+   "n": "Miss Mahjong Blonde Tortoise and Brass Acrylic",
+   "type": "tortoise"
+  },
+  "missmahjong.com/cornflower-blue-scalloped-acrylic-racks": {
+   "n": "Miss Mahjong Cornflower Blue Scalloped",
+   "type": "acrylic"
+  },
+  "missmahjong.com/iridescent-opal-scalloped-acrylic-racks": {
+   "n": "Miss Mahjong Iridescent Opal Scalloped",
+   "type": "pearl"
+  },
+  "missmahjong.com/jade-and-brass-acrylic-racks": {
+   "n": "Miss Mahjong Jade & Brass",
+   "type": "marble",
+   "by_eye": true
+  },
+  "missmahjong.com/opal-and-brass-acrylic-racks": {
+   "n": "Miss Mahjong Opal & Brass",
+   "type": "pearl"
+  },
+  "missmahjong.com/peach-sorbet-scalloped-acrylic-racks": {
+   "n": "Miss Mahjong Peach Sorbet Scalloped",
+   "type": "acrylic"
+  },
+  "www.ymimports.com/nb-mp005-a": {
+   "n": "Modern Mahjong Racks with Built-in Pushers - Black - Set of 4",
+   "type": "clear"
+  },
+  "www.ymimports.com/nb-mp004-a": {
+   "n": "Modern Mahjong Racks with Built-in Pushers - Clear - Set of 4",
+   "type": "clear"
+  },
+  "www.ohmymahjong.com/acrylic-rack-and-pusher-set": {
+   "n": "Multicolor Acrylic Rack & Pusher Set",
+   "type": "clear"
+  },
+  "vr:My Fair Mahjong:Appaloosa": {
+   "n": "My Fair Mahjong Appaloosa",
+   "type": "marble",
+   "by_eye": true
+  },
+  "myfairmahjong.com/wooden-painted-mahjong-racks-20-set-of-4-blue-and-pink-sets-magnetic-attached-pusher?v=49600844038455": {
+   "n": "My Fair Mahjong Bright White Wood",
+   "type": "painted"
+  },
+  "vr:My Fair Mahjong:Solid Citrus Green / Chartreuse": {
+   "n": "My Fair Mahjong Citrus Green",
+   "type": "acrylic"
+  },
+  "vr:My Fair Mahjong:Transparent Clear": {
+   "n": "My Fair Mahjong Clear",
+   "type": "clear"
+  },
+  "vr:My Fair Mahjong:Solid Indigo Blue": {
+   "n": "My Fair Mahjong Indigo Blue",
+   "type": "acrylic"
+  },
+  "vr:My Fair Mahjong:Solid Macaron Blue": {
+   "n": "My Fair Mahjong Macaron Blue",
+   "type": "acrylic"
+  },
+  "myfairmahjong.com/wooden-painted-mahjong-racks-20-set-of-4-blue-and-pink-sets-magnetic-attached-pusher?v=51249730847031": {
+   "n": "My Fair Mahjong Macaron Blue Wood",
+   "type": "painted"
+  },
+  "vr:My Fair Mahjong:Solid Macaron Green": {
+   "n": "My Fair Mahjong Macaron Green",
+   "type": "acrylic"
+  },
+  "myfairmahjong.com/wooden-painted-mahjong-racks-20-set-of-4-blue-and-pink-sets-magnetic-attached-pusher?v=48911322874167": {
+   "n": "My Fair Mahjong Macaron Green Wood",
+   "type": "painted"
+  },
+  "vr:My Fair Mahjong:Solid Macaron Pink": {
+   "n": "My Fair Mahjong Macaron Pink",
+   "type": "acrylic"
+  },
+  "myfairmahjong.com/wooden-painted-mahjong-racks-20-set-of-4-blue-and-pink-sets-magnetic-attached-pusher?v=48911322906935": {
+   "n": "My Fair Mahjong Macaron Pink Wood",
+   "type": "painted"
+  },
+  "vr:My Fair Mahjong:Solid Macaron Purple": {
+   "n": "My Fair Mahjong Macaron Purple",
+   "type": "acrylic"
+  },
+  "myfairmahjong.com/wooden-painted-mahjong-racks-20-set-of-4-blue-and-pink-sets-magnetic-attached-pusher": {
+   "n": "My Fair Mahjong Macaron Purple Wood",
+   "type": "painted"
+  },
+  "vr:My Fair Mahjong:Solid Magenta": {
+   "n": "My Fair Mahjong Magenta",
+   "type": "acrylic"
+  },
+  "myfairmahjong.com/acrylic-mahjong-racks?v=52896917750071": {
+   "n": "My Fair Mahjong Malachite Dapple",
+   "type": "marble",
+   "by_eye": true
+  },
+  "myfairmahjong.com/wooden-racks?v=53371892990263": {
+   "n": "My Fair Mahjong Natural Wood",
+   "type": "wood"
+  },
+  "myfairmahjong.com/acrylic-mahjong-racks?v=52896919322935": {
+   "n": "My Fair Mahjong Pearl Aqua",
+   "type": "pearl"
+  },
+  "myfairmahjong.com/acrylic-mahjong-racks?v=52896920207671": {
+   "n": "My Fair Mahjong Pearl Blue Crosshatch",
+   "type": "pearl"
+  },
+  "myfairmahjong.com/acrylic-mahjong-racks?v=52896919683383": {
+   "n": "My Fair Mahjong Pearl Blush",
+   "type": "pearl"
+  },
+  "myfairmahjong.com/acrylic-mahjong-racks?v=52896919519543": {
+   "n": "My Fair Mahjong Pearl White",
+   "type": "pearl"
+  },
+  "vr:My Fair Mahjong:Solid Teal": {
+   "n": "My Fair Mahjong Teal",
+   "type": "acrylic"
+  },
+  "vr:My Fair Mahjong:Tortoiseshell": {
+   "n": "My Fair Mahjong Tortoiseshell",
+   "type": "tortoise"
+  },
+  "vr:My Fair Mahjong:Solid White": {
+   "n": "My Fair Mahjong White",
+   "type": "acrylic"
+  },
+  "www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue": {
+   "n": "NEW SHELF ANGLE! 20\" Wooden Mahjong Racks  – 4 Color Options – Admiral Blue",
+   "type": "painted"
+  },
+  "www.ohmymahjong.com/agate-rack-and-pusher-set": {
+   "n": "Oh My Mahjong Agate",
+   "type": "marble",
+   "by_eye": true
+  },
+  "www.ohmymahjong.com/burlwood-rack": {
+   "n": "Oh My Mahjong Burl",
+   "type": "wood"
+  },
+  "www.ohmymahjong.com/hot-pink-rack-pusher": {
+   "n": "Oh My Mahjong Hot Pink",
+   "type": "acrylic"
+  },
+  "www.ohmymahjong.com/pink-quartz-rack-and-pusher-set": {
+   "n": "Oh My Mahjong Pink Quartz",
+   "type": "marble",
+   "by_eye": true
+  },
+  "www.ohmymahjong.com/tortoise-shell-rack-pusher": {
+   "n": "Oh My Mahjong Tortoise Shell",
+   "type": "tortoise"
+  },
+  "www.ohmymahjong.com/white-rack-pusher": {
+   "n": "Oh My Mahjong White Acrylic",
+   "type": "acrylic"
+  },
+  "peacelovemahjong.com/acrylic-burlwood-mahjong-racks-pushers-set-of-4": {
+   "n": "Peace Love Mahjong Acrylic Burlwood",
+   "type": "wood"
+  },
+  "plm:Aqua": {
+   "n": "Peace Love Mahjong Aqua",
+   "type": "acrylic"
+  },
+  "plm:Chartreuse": {
+   "n": "Peace Love Mahjong Chartreuse",
+   "type": "acrylic"
+  },
+  "plm:Cobalt": {
+   "n": "Peace Love Mahjong Cobalt",
+   "type": "acrylic"
+  },
+  "plm:Dark Green": {
+   "n": "Peace Love Mahjong Dark Green",
+   "type": "acrylic"
+  },
+  "plm:French Blue": {
+   "n": "Peace Love Mahjong French Blue",
+   "type": "acrylic"
+  },
+  "plm:Light Pink": {
+   "n": "Peace Love Mahjong Light Pink",
+   "type": "acrylic"
+  },
+  "plm:Lilac": {
+   "n": "Peace Love Mahjong Lilac",
+   "type": "acrylic"
+  },
+  "plm:Mint": {
+   "n": "Peace Love Mahjong Mint",
+   "type": "acrylic"
+  },
+  "plm:Navy": {
+   "n": "Peace Love Mahjong Navy",
+   "type": "acrylic"
+  },
+  "peacelovemahjong.com/mahjong-racks-racks-pushers-set-of-4": {
+   "n": "Peace Love Mahjong Oak",
+   "type": "wood"
+  },
+  "plm:Pink": {
+   "n": "Peace Love Mahjong Pink",
+   "type": "acrylic"
+  },
+  "plm:Purple": {
+   "n": "Peace Love Mahjong Purple",
+   "type": "acrylic"
+  },
+  "plm:Red": {
+   "n": "Peace Love Mahjong Red",
+   "type": "acrylic"
+  },
+  "plm:White": {
+   "n": "Peace Love Mahjong White",
+   "type": "acrylic"
+  },
+  "theroyalmahjongsociety.com/mahjong-rack-clear": {
+   "n": "Royal Mahjong Society Mahjong Rack - Clear",
+   "type": "clear"
+  },
+  "theroyalmahjongsociety.com/mahjong-rack-white": {
+   "n": "Royal Mahjong Society Mahjong Racks - White",
+   "type": "acrylic"
+  },
+  "www.ohmymahjong.com/sandstone-rack-and-pusher-set": {
+   "n": "Sandstone Rack and Pusher Set",
+   "type": "marble",
+   "by_eye": true
+  },
+  "mahjmood.com/pure-white-acrylic-racks-and-pushers": {
+   "n": "Scalloped Pure White Acrylic Racks and Pushers",
+   "type": "acrylic"
+  },
+  "sundaymahjong.com/blonde-tortoise-mahjong-rack-set": {
+   "n": "Sunday Mahjong Blonde Tortoise",
+   "type": "tortoise"
+  },
+  "sundaymahjong.com/candy-blue-mahjong-rack-set": {
+   "n": "Sunday Mahjong Candy Blue",
+   "type": "acrylic"
+  },
+  "sundaymahjong.com/clear-mahjong-rack-set": {
+   "n": "Sunday Mahjong Clear",
+   "type": "clear"
+  },
+  "sundaymahjong.com/sunday-cola-mahjong-rack-set": {
+   "n": "Sunday Mahjong Sunday Cola",
+   "type": "clear"
+  },
+  "sundaymahjong.com/tortoise-mahjong-rack-set": {
+   "n": "Sunday Mahjong Tortoise",
+   "type": "tortoise"
+  },
+  "talamahj.com/horizon-rack": {
+   "n": "Tala Mahj Horizon Woven Rattan",
+   "type": "wood"
+  },
+  "talamahj.com/shoreline-mahjong-rack-wavy-pusher-20-inches-set-of-4-ships-oct-1-chocolate-woven-rattan": {
+   "n": "Tala Mahj Shoreline Chocolate Woven Rattan",
+   "type": "wood"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-bright-white": {
+   "n": "The Ultimate Rack - BRIGHT WHITE",
+   "type": "acrylic"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-clear": {
+   "n": "The Ultimate Rack - CRYSTAL CLEAR",
+   "type": "clear"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-plum": {
+   "n": "The Ultimate Rack - ELECTRIC ORCHID",
+   "type": "clear"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-hottie-pink": {
+   "n": "The Ultimate Rack - HIGHLIGHTER PINK",
+   "type": "clear"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-red": {
+   "n": "The Ultimate Rack - HOLIDAY RED",
+   "type": "clear"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-turquoise": {
+   "n": "The Ultimate Rack - PEACOCK BLUE",
+   "type": "clear"
+  },
+  "tigredetartan.com/dove-white-beech-wood-straight-mahjong-racks-with-pushers-custom-storage-bag": {
+   "n": "Tigre de Tartan Dove White Beechwood",
+   "type": "painted",
+   "by_eye": true
+  },
+  "tigredetartan.com/marine-blue-beech-wood-straight-mahjong-racks-with-pushers-custom-storage-bag": {
+   "n": "Tigre de Tartan Marine Blue Beechwood",
+   "type": "painted",
+   "by_eye": true
+  },
+  "tigredetartan.com/marine-blue-beech-wood-scalloped-mahjong-racks-with-pushers-custom-storage-bag": {
+   "n": "Tigre de Tartan Marine Blue Beechwood Scalloped",
+   "type": "painted",
+   "by_eye": true
+  },
+  "tigredetartan.com/rich-raisin-beech-wood-straight-mahjong-racks-with-pushers-custom-storage-bag": {
+   "n": "Tigre de Tartan Rich Raisin Beechwood",
+   "type": "painted",
+   "by_eye": true
+  },
+  "tigredetartan.com/february-preorder-tortoise-scalloped-acrylic-mahjong-racks-with-magnetic-pushers-set-of-4-with-dust-bag": {
+   "n": "Tigre de Tartan Tortoise Acrylic Scalloped",
+   "type": "tortoise"
+  },
+  "shop.andersruff.com/tortoise-acrylic-rack-set-straight-pushers": {
+   "n": "Tortoise Acrylic Rack Set — Straight Pushers",
+   "type": "tortoise"
+  },
+  "www.hiphipmahjong.com/trust-fund-racks": {
+   "n": "Trust Fund Racks",
+   "type": "metallic"
+  },
+  "www.bambirdboutique.com/wooden-two-player-mahjong-racks-set-of-2": {
+   "n": "Two Player Wood Mahjong Racks",
+   "type": "wood"
+  },
+  "www.viroramahjong.com/wooden-rack-pusher-set?v=49226736074935": {
+   "n": "Virora Maldives Green Magnetic Wood",
+   "type": "painted"
+  },
+  "www.viroramahjong.com/wooden-rack-pusher-set?v=49226736009399": {
+   "n": "Virora Pink Magnetic Wood",
+   "type": "painted"
+  },
+  "www.viroramahjong.com/hinged-mahjong-rack-pusher-set?v=49185641627831": {
+   "n": "Virora Purple Hinged",
+   "type": "acrylic"
+  },
+  "www.viroramahjong.com/wooden-rack-pusher-set?v=49226736042167": {
+   "n": "Virora Purple Magnetic Wood",
+   "type": "painted"
+  },
+  "www.viroramahjong.com/hinged-mahjong-rack-pusher-set?v=49185641660599": {
+   "n": "Virora White Hinged",
+   "type": "acrylic"
+  },
+  "www.viroramahjong.com/wooden-rack-pusher-set?v=49226735976631": {
+   "n": "Virora White Magnetic Wood",
+   "type": "painted"
+  },
+  "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-aqua": {
+   "n": "Wavy Mahjong Rack Pusher Set - Aqua",
+   "type": "acrylic"
+  },
+  "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-chartrusse": {
+   "n": "Wavy Mahjong Rack Pusher Set - Chartreuse",
+   "type": "acrylic"
+  },
+  "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-cobalt-blue": {
+   "n": "Wavy Mahjong Rack Pusher Set - Cobalt Blue",
+   "type": "acrylic"
+  },
+  "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-dark-green": {
+   "n": "Wavy Mahjong Rack Pusher Set - Dark Green",
+   "type": "acrylic"
+  },
+  "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-navy": {
+   "n": "Wavy Mahjong Rack Pusher Set - Dark Navy",
+   "type": "acrylic"
+  },
+  "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-french-blue": {
+   "n": "Wavy Mahjong Rack Pusher Set - French Blue",
+   "type": "acrylic"
+  },
+  "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-light-pink": {
+   "n": "Wavy Mahjong Rack Pusher Set - Light Pink",
+   "type": "acrylic"
+  },
+  "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-lilac": {
+   "n": "Wavy Mahjong Rack Pusher Set - Lilac",
+   "type": "acrylic"
+  },
+  "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-mint": {
+   "n": "Wavy Mahjong Rack Pusher Set - Mint",
+   "type": "acrylic"
+  },
+  "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-pink": {
+   "n": "Wavy Mahjong Rack Pusher Set - Pink",
+   "type": "acrylic"
+  },
+  "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-purple": {
+   "n": "Wavy Mahjong Rack Pusher Set - Purple",
+   "type": "acrylic"
+  },
+  "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-red": {
+   "n": "Wavy Mahjong Rack Pusher Set - Red",
+   "type": "acrylic"
+  },
+  "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-white": {
+   "n": "Wavy Mahjong Rack Pusher Set - White",
+   "type": "acrylic"
+  },
+  "www.bamletsmahjong.com/white-acrylic-double-mahjong-racks-with-magnetic-pushers-set-of-2": {
+   "n": "White Acrylic Double Mahjong Racks with Magnetic Pushers (Set of 2)",
+   "type": "acrylic"
+  },
+  "www.bamletsmahjong.com/white-acrylic-racks-set-4": {
+   "n": "White Acrylic Mahjong Racks - Set of 4",
+   "type": "acrylic"
+  },
+  "mahjmood.com/white-acrylic-racks-set-of-4-no-pushers-included": {
+   "n": "White Acrylic Racks- Set of 4 (NO PUSHERS INCLUDED)",
+   "type": "acrylic"
+  },
+  "mahjmood.com/white-wooden-racks-with-scalloped-pushers": {
+   "n": "White Wooden Racks with Scalloped Pushers",
+   "type": "painted"
+  },
+  "missmahjong.com/wood-racks-with-classic-pusher": {
+   "n": "Wood Racks with Classic Pusher",
+   "type": "painted",
+   "by_eye": true
+  },
+  "www.bamletsmahjong.com/wooden-mahjong-racks-pushers-black-4-set": {
+   "n": "Wooden Mahjong Racks & Pushers - Black - 4 Set",
+   "type": "painted"
+  },
+  "www.bamletsmahjong.com/white-wooden-racks-set-4": {
+   "n": "Wooden Mahjong Racks & Pushers - White - 4 Set",
+   "type": "painted"
+  },
+  "www.yolomahjong.com/journey-to-the-west-golden-wooden-rack-20": {
+   "n": "YOLO Mahjong Metallic Gold Wooden",
+   "type": "metallic"
+  },
+  "www.yolomahjong.com/journey-to-the-west-tortoiseshell-acrylic-rack-20": {
+   "n": "YOLO Mahjong Tortoiseshell Acrylic",
+   "type": "tortoise"
+  },
+  "www.ymimports.com/us-rl019-a": {
+   "n": "Yellow Mountain Classic Black Wood",
+   "type": "painted"
+  },
+  "www.ymimports.com/us-rl027-a": {
+   "n": "Yellow Mountain Classic Chestnut Wood",
+   "type": "wood"
+  },
+  "www.ymimports.com/us-rl006-a": {
+   "n": "Yellow Mountain Jewel Tone Multi-Color Acrylic",
+   "type": "clear"
+  },
+  "www.ymimports.com/nb-mp007-a": {
+   "n": "Yellow Mountain Modern Multi-Color",
+   "type": "clear"
+  },
+  "www.ymimports.com/us-rl025-a": {
+   "n": "Yellow Mountain Multi-Color Acrylic",
+   "type": "clear"
+  },
+  "www.ymimports.com/us-rl010-a": {
+   "n": "Yellow Mountain Purple Acrylic",
+   "type": "clear"
+  }
+ }
+}
