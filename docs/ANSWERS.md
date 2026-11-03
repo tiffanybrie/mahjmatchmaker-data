@@ -891,3 +891,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 ## Nov 2, 7:25pm (Ops): amounts filled from her 7 dashboard screenshots
 - Oct 28 -7.20 (Bam Bird refund 35335288); Oct 30 Bam Bird 8.10; Oct 31 Hip Hip 32.25, OMM 45.40, Bam! Let's 37.58, My Fair sale 13.81 minus refunds 33.30; Nov 1 Bam Bird 67.50, My Fair 22.97, Mini Mahjer 30.78, Hip Hip 44.64, B&B 12.15; Nov 2 Bam Bird 8.10. Only My Fair 35473474 (Nov 2 12:52pm) still unknown.
 - LESSON: write a screenshot's numbers into HQ the same turn it arrives. A screenshot must never be the only copy (the Nov 2 11am batch was lost to context compaction and she had to resend).
+- 2026-11-03 8:45am (Tiffany, Main): Poppins (OMM) removed from the codes post: OMM has not announced it. RULE (again, Oct 30): a quietly-listed product is NOT announced; never mention a product in posts until the brand announces it publicly (IG/email), even if its product page exists.
