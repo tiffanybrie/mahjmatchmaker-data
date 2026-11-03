@@ -1,10 +1,10 @@
 # Mahj Matchmaker release calendar
 
-Updated 2026-11-02 from brand sites, the Sunday release schedule, brand Instagram feeds (Planoly) and Gmail. Source of truth: `config/release-calendar.json`; regenerate with `python3 scripts/release_calendar/build_md.py`.
+Updated 2026-11-03 from brand sites, the Sunday release schedule, brand Instagram feeds (Planoly) and Gmail. Source of truth: `config/release-calendar.json`; regenerate with `python3 scripts/release_calendar/build_md.py`.
 
 **Rule (Tiffany, Oct 21):** save restock content for the buying window. Don't spend a set's content before you can buy it; post 1-2 weeks before a dated restock so people pick their mat and have the code ready when it drops.
 
-## Next 8 weeks (Nov 02 - Dec 28)
+## Next 8 weeks (Nov 03 - Dec 29)
 
 | Post window | Brand | Product | Drop date / window | Album | Affiliate | What to post |
 |---|---|---|---|---|---|---|
@@ -16,13 +16,10 @@ Updated 2026-11-02 from brand sites, the Sunday release schedule, brand Instagra
 | 2026-10-31 | Virora Mahjong | Tinselle Emerald Green tiles (Christmas Collection I) | LIVE Oct 31 | yes | yes | Holiday album set: restock story frames (assets/social/restock-tinselle-oct31/out) for Tiffany's review; never a feed post. |
 | 2026-11-01 | Maison Mahj | New bags (companions to House Line No. 1), ready to ship | Sun Nov 1 | no | no | Accessories; record only. |
 | 2026-11-01 | House of Hearts Studio | The Juliette mat (new design) | 2026-11-01 | no | no | Non-partner, no code. Add the full-table-size mat to FYM when listed (brand-watchlist: Tiffany wants all their mats). Log only. |
-| 2026-11-02 | Oh My Mahjong | IMC 2027 preorder | 2026-11-02 | no | yes | Accessory; story mention only. |
 | 2026-11-02 | Charleston Mahjong Club | CMC x OTG|247 collab bags: No. 8 Nudie Green (tiles) + No. 5 Collab Clutch (card + shufflers) | 2026-11-02 | no | yes | Bags: record only (not a tile set/mat). |
-| 2026-11-02 | Amanda Toppe | Lila mat (full size 33in; travel 22.5in releases first) | Travel Lila (22.5in, 100 made, with case) Mon Nov 2 10am ET; full-size 33in in production, preorder once arrival date is firm | no | yes | Sneak peek flagged to Tiffany Oct 29. Travel version: no album (travel rule). Full-size Lila: watch the store; swipe book the day photos/listing appear. Painterly hydrangea blues, lilac, pink and soft green. Photos: assets/launches/amandatoppe-lila-teaser/ |
-| 2026-11-02 | Mary Benson Art | Hydrangea tiles (+ updated Hydrangea mat, rack restock) | Mon Nov 2: email early access 12pm ET, everyone 1pm ET; limit 1 set per customer | no | no | Log (not a partner). |
-| 2026-11-02 | Let's Be Besties | LBB Artist Collective (new artist-designed mats: OHBoN Studios, BeachyMahj, Wanda Viola Designs, AC Studios, Lillian Claire Designs, Spill the Mahj) | early November | no | yes | Sneak peek flagged to Tiffany Oct 30. Print-on-demand mats (no sellouts): when designs list, handle like other LBB mats (FYM + Mat Gallery handoff). |
 | 2026-11-03 | Tigre de Tartán | House Tigers tiles (return + new oyster finish) | 2026-11-03 16:00 | no | yes | Not an album set. Check store Nov 3 after 4pm CT; no MAHJMATCH/#MahjMatch in any text naming TdT. |
 | 2026-11-03 | Noli June | FA LA LADIES winter collection: 4 mats (Marlene, Shirley, Ruth, Rochelle; $215) + 4 tablecloths + 4 dice dishes | 2026-11-03 06:00 | no | yes | Partner (Shopify Collabs, MAHJMATCH 10% off $100+). Noli emails creator links 5am CT Tue. Add the 4 mats to FYM/gallery when public (MATCH-INBOX). Swipe book the day listings go public (check config/swipe-books.json first). Sweater Weather $197 -> $215 Tue. |
+| 2026-11-03 | Sweet Jojo Mahjong | Navy Blue Folk tile set: price drop | 2026-11-03 | no | no | Non-partner: record only. |
 | 2026-11-06 | Mahj Mood | Playing for Keeps (Valentine's) tile set preorder $390 + Valentine's mat at launch; transparent pink racks coming soon | 2026-11-06 10:00 | no | yes | Holiday (Valentine) set, no album. Log; revisit near Valentine's content. |
 | 2026-11-06 | Mahjong Moxie | Moxie Tiles (first tile set; bold colours, chinoiserie) | 2026-11-06 12:00 | no | no | Non-partner: record only. |
 | 2026-11-10 | Virora Mahjong | Lilacée tiles (yellow-lilacee listing) | 2026-11-10 | no | yes | No album. Optional restock story on the day with link + code. |
@@ -124,6 +121,7 @@ Updated 2026-11-02 from brand sites, the Sunday release schedule, brand Instagra
 | Sunday Mahjong | Sunday Emerald Green racks (first run) | launch | no date (schedule no longer says 'around Thanksgiving', Oct 26) | no | no | Rack-pairing story for green album sets once public. | [Release schedule](https://sundaymahjong.com/pages/release-schedule) |
 | Sunday Mahjong | Blonde Tortoise, Candy Blue, Clear, Tortoise, Mini Blonde Tortoise racks; Vegan Leather Mini mat; card sets | re-release | no date | no | no | Watch only. | [Release schedule](https://sundaymahjong.com/pages/release-schedule) |
 | Sunday Mahjong | Peachie Speechie tile set (first run) | launch | no date (new on release schedule, Oct 26) | no | no | Watch; album candidate once dated (no code, non-partner). | [Release schedule (updated Oct 26)](https://sundaymahjong.com/pages/release-schedule) |
+| Sweet Jojo Mahjong | Navy Blue Folk tile set: price drop | sale | 2026-11-03 | no | no | Non-partner: record only. | [email support@sweetjojomahjong.com](https://sweetjojomahjong.com) |
 | Tigre de Tartán | Holiday roll-out: Ditsy Christmas Maraschino (live Oct 20), Birdsong by Katherine Hartman (live Oct 20), Estate Sale (week of Oct 26), Fair Isle Cashmere (November); DOMINO BLONDE mat (new, coming soon Oct 22) | launch | weekly drops, Tue 4pm CT | no | yes | Holiday mats: Holiday section only. Never promote Paige Spearin x TdT (no commission; Après Mahj drops alongside Estate Sale). | [TdT IG Oct 17-19](https://www.instagram.com/reel/DernpTbOPsJ/) |
 | Tigre de Tartán | Classic American Beechwood tiles (solid beechwood); House Tigers Oyster tiles | launch | 2026-10-27 16:00 | no | yes | No album. Launch-day story with code only if a fitting pairing; otherwise log. | [TdT IG Oct 24 ('next Tuesday they will go live')](https://www.instagram.com/reel/De4kvHDONLd/) |
 | Tigre de Tartán | House Tigers tiles (return + new oyster finish) | restock | 2026-11-03 16:00 | no | yes | Not an album set. Check store Nov 3 after 4pm CT; no MAHJMATCH/#MahjMatch in any text naming TdT. | [TdT IG Oct 30-31](https://www.instagram.com/reel/DfKFw-7srxS/) |

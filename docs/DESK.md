@@ -9,6 +9,7 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 
 **PARTNER SEND GATE (Oct 27 3:08am, standing):** before scheduling ANY partner email or graphics drop, run `python3 scripts/partner_send_check.py`; it must exit 0.
 
+- **Main: (partner watch Nov 3 9:45am ET) Noli June FA LA LADIES is LIVE** (6am CT; 4 mats $215 all in stock, nolijune.com/collections/falaladies; partner, MAHJMATCH 10% off $100+). No restock frames built: the 4 mats are not in FYM yet and have no swipe-book matches (no book in config/swipe-books.json), so a "Mock up with her matches" frame can't be real. Order: Matches & Catalog adds the 4 mats to FYM + gallery today (item 4a) → swipe book (check config/swipe-books.json, book_gate) → then story frames for her review. Noli has no IG post of the drop yet (latest Nov 1): reshare their launch post/story when it appears. HQ needs/launch-noli-june-falaladies.
 - **Main/Ops/Matches (Nov 3): launch + partner watch scheduled tasks must check the storefront page text for "wholesale customers only" before calling a product live (OMM Poppins: JSON says available, page says wholesale only). Add to their prompts at next edit.**
 - **HQ PIN (Nov 1): needs/supabase-settings-nov01 stays at the very top of HQ (order -100) until she finishes it. Nothing above it.** Now down to email templates + Resend (Site URL + redirects done Nov 2 10:10am).
 

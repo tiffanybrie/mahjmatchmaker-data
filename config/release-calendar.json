@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-02",
-  "updatedBy": "partner watch Nov 2 6:30pm ET",
+  "updated": "2026-11-03",
+  "updatedBy": "partner watch Nov 3 9:45am ET",
   "rules": {
     "timing": {
       "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -1120,7 +1120,7 @@
       "brand": "Noli June",
       "product": "FA LA LADIES winter collection: 4 mats (Marlene, Shirley, Ruth, Rochelle; $215) + 4 tablecloths + 4 dice dishes",
       "type": "launch",
-      "window": "Early access Mon Nov 2 (waitlist); public Tue Nov 3, 6am CT",
+      "window": "LIVE Tue Nov 3, 6am CT (early access was Mon Nov 2)",
       "date": "2026-11-03T06:00-06:00",
       "windowStart": "2026-11-02",
       "windowEnd": "2026-12-31",
@@ -1130,7 +1130,8 @@
       "affiliate": true,
       "priority": 2,
       "contentTiming": "Partner (Shopify Collabs, MAHJMATCH 10% off $100+). Noli emails creator links 5am CT Tue. Add the 4 mats to FYM/gallery when public (MATCH-INBOX). Swipe book the day listings go public (check config/swipe-books.json first). Sweater Weather $197 -> $215 Tue.",
-      "status": "coming Nov 3 (teaser assets/launches/noli-june-falaladies-teaser)"
+      "status": "LIVE Nov 3 6am CT (store check 9:40am ET: all 4 mats $215 available, + 4 tablecloths $115, 4 dice dishes $39)",
+      "liveUrl": "https://nolijune.com/collections/falaladies"
     },
     {
       "id": "maison-mahj-bags-nov1",
@@ -1250,6 +1251,21 @@
       "album": false,
       "affiliate": false,
       "priority": 4,
+      "contentTiming": "Non-partner: record only."
+    },
+    {
+      "id": "sweetjojo-navy-folk-pricedrop-nov3",
+      "brand": "Sweet Jojo Mahjong",
+      "product": "Navy Blue Folk tile set: price drop",
+      "type": "sale",
+      "window": "from Nov 3",
+      "date": "2026-11-03",
+      "status": "email Nov 3 9:06am ET 'FAN FAVORITE PRICE DROP ALERT'",
+      "source": "email support@sweetjojomahjong.com",
+      "sourceUrl": "https://sweetjojomahjong.com",
+      "album": false,
+      "affiliate": false,
+      "priority": 5,
       "contentTiming": "Non-partner: record only."
     }
   ],
