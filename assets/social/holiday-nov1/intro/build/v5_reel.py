@@ -13,7 +13,10 @@ from playwright.sync_api import sync_playwright
 R = '/home/claude/mahjmatchmaker-data'
 FONTS = f'file://{R}/scripts/social/tileprofile/fonts'
 F = lambda p: 'file://' + p
-WALL = [F(r['f']) for r in json.load(open(f'{W}/wall_sel.json'))]
+try:
+    WALL = [F(r['f']) for r in json.load(open(f'{W}/wall_sel.json'))]
+except FileNotFoundError:  # END_ONLY re-render (container restart): only the end card is drawn
+    WALL = []
 # v5 (Tiffany 2:32pm): the 3 sets with NO holiday album sit in row 3 (cells 6-8) under the centred counter box; every album set shows
 TORD = ['dear-santa', 'rackin-rudolph', 'hj-red', 'hj-green', 'hj-pink', 'tin-ruby', 'niv-emerald', 'merry-nutcracker', 'spirit',
         'tin-emerald', 'niv-blue', 'nutcracker', 'apres', 'dec1994', 'dear-santa']
@@ -29,6 +32,7 @@ ALLP = ['omm','mrc','missm','myfair','middlemain','bb','bambird','squad','tdt','
 PLOGOS = [F(LG + n + '.png') for n in ALLP]                       # 38 code partners (assets/hub/partner-brands-2026-10-30.jpg)
 ELOGOS = [F(LG + n + '.png') for n in ALLP if n != 'tdt']         # end card sits next to "use code": no Tigre de Tartan (affiliate policy)
 def rt(r):
+    if not os.path.exists(f'{W2}/{r}/marks.json'): return [0]
     d = json.load(open(f'{W2}/{r}/marks.json')); Fr = d['frames']; return [round(x - Fr[0], 3) for x in Fr]
 XC = [F(f) for f in sorted(glob.glob(f'{W4}/xcards/*.png'))]   # v5_cards.py: 15 cross-brand FYM match cards (Amara x Very Merry Wreath first), full-frame wall
 CFG = dict(XC=XC, WALL=WALL, TWALL=TWALL, TCOV=TCOV, PLOGOS=PLOGOS, ELOGOS=ELOGOS, CARD=F(f'{W2}/recB/storycard.png'),
@@ -169,7 +173,7 @@ function mkTick(host,logos,rows,y0,dy,off){for(let r=0;r<rows;r++){const t=docum
 mkTick($('ticks'),C.PLOGOS,11,-20,178,0); mkTick($('eticks'),C.ELOGOS,6,1090,138,1); [...$('eticks').querySelectorAll('.chip')].forEach(c=>{c.style.width='190px';c.style.height='120px';}); [...$('eticks').querySelectorAll('.chip img')].forEach(i=>{i.style.maxWidth='172px';i.style.maxHeight='104px';}); [...$('eticks').children].forEach(t=>t.style.height='120px');
 function ticks(host,t,a,sp){[...host.children].forEach((e,i)=>{const d=+e.dataset.dir;const w=e.firstChild.scrollWidth/3;const x=((t*sp*(1+0.15*i))%w);e.firstChild.style.transform=`translateX(${d<0?-x-w*0.2:x-w}px)`;e.style.opacity=a;});}
 // ---------- cards ----------
-const SC=[['open',0,2.8],['wm',2.8,8.0],['wt',8.0,11.2],['wb',11.2,14.8],['intro',14.8,17.2],['tiles',17.2,20.0],['ctx',20.0,21.6],['tap',21.6,23.6],['swipe',23.6,30.0],['fav',30.0,32.4],['racks',32.4,36.4],['card',36.4,38.4],['xw',38.4,40.0],['end',40.0,42.8]];
+const SC=[['open',0,2.8],['wm',2.8,8.0],['wt',8.0,11.2],['wb',11.2,14.8],['intro',14.8,17.2],['tiles',17.2,20.0],['ctx',20.0,21.6],['tap',21.6,23.6],['swipe',23.6,30.0],['fav',30.0,32.4],['racks',32.4,36.4],['card',36.4,38.4],['xw',38.4,40.0],['end',40.0,46.0]];
 const DIV={open:'open',wm:'wall',wt:'wall',wb:'wall',intro:'app',tiles:'app',ctx:'app',tap:'app',swipe:'app',fav:'app',racks:'app',card:'cardsc',xw:'wall',end:'end'};
 window.render=function(t){let cur=SC[SC.length-1];for(const s of SC)if(t>=s[1]&&t<s[2]){cur=s;break;}
  const [id,a]=cur,L=t-a;for(const d of ['open','wall','app','cardsc','end'])$(d).style.display=DIV[id]===d?'block':'none';
@@ -226,7 +230,7 @@ if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'frames'
     out = f'{W5}/out'; os.makedirs(out, exist_ok=True)
     os.makedirs(W5, exist_ok=True); open(f'{W5}/reel.html', 'w').write(page())
-    FPS, DUR = 30, 42.8
+    FPS, DUR = 30, 46.0
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(viewport={'width': 1080, 'height': 1920})
         pg.goto(f'file://{W5}/reel.html'); pg.wait_for_timeout(3000)

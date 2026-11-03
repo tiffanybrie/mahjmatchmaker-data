@@ -2,7 +2,7 @@
 Writes to temp names then moves into assets/social/holiday-nov1/intro/."""
 import os, subprocess, wave, struct, math, shutil
 W = '/dev/shm/introv5'; D = '/home/claude/mahjmatchmaker-data/assets/social/holiday-nov1/intro'
-DUR, BEAT, SR = 42.8, 0.4, 44100
+DUR, BEAT, SR = 46.0, 0.4, 44100
 def run(*a): subprocess.run(a, check=True, capture_output=True)
 n = int(DUR * SR); buf = [0.0] * n
 for b in range(int(DUR / BEAT)):
