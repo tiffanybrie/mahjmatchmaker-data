@@ -1,0 +1,17 @@
+{
+ "_about": "Tiffany Nov 3 2:10pm (Main chat): every candidate on the Late Holiday Mat Picks page (artifact YXt3CzLisaRSEeqKHaoTez) is a pick, EXCEPT Osler on Bespoke It's a Vibe Holiday; and Bespoke A Very Merry Getaway (both sides) stays OUT of the match albums (it's a photograph, looks odd). Her phone-saved picks were never sent; this replaces them.",
+ "picks": {
+  "Soirée All Day | Toasty & Tipsy": ["Miss Classic Malachite", "Dear Santa", "Nutcracker Ballet"],
+  "Soirée All Day | Poinsettia Party": ["Dandy", "Palm Royale", "Limoncello"],
+  "Soirée All Day | Color Me Merry": ["Nutcracker Ballet", "Holly Jolly (Sugarplum Pink)", "La Fete", "Miss Classic Jade"],
+  "Soirée All Day | Pretty in Pink": ["Holly Jolly (Sugarplum Pink)", "Nutcracker Ballet", "La Fete", "Luminaire"],
+  "Soirée All Day | Home for the Holidays": ["Holly Jolly (Rudolph Red)", "Nutcracker Ballet", "Hummingbird"],
+  "Soirée All Day | Star of David Hanukkah": ["Osler", "Lola", "Moonlight"],
+  "House of Hearts Studio | Peace on Earth": ["Lola", "Moonlight", "Osler"],
+  "My Fair Mahjong | Plaid Tidings": ["Tinselle (Emerald Green)", "Dear Santa", "Nantucket", "Rackin' Rudolph"],
+  "My Fair Mahjong | Peppermint Wishes": ["Holly Jolly (Sugarplum Pink)", "Amara", "Glitterville", "Nutcracker Ballet"],
+  "Bespoke Mahjong | It's a Vibe Holiday": ["Nantucket", "Rackin' Rudolph"]
+ },
+ "excluded": {"Bespoke Mahjong | It's a Vibe Holiday": ["Osler"], "Bespoke Mahjong | A Very Merry Getaway (Side A + Side B)": "out of match albums entirely"},
+ "count": 33
+}
