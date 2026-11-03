@@ -90,6 +90,7 @@ Oct 21, launch morning: the Papaya "It's a match" post, the hotline reel and the
 ## INSTAGRAM BRAND WATCH (Tiffany, Oct 21 5:25pm)
 - **Partner onboarding includes Instagram.** When a new partner brand (affiliate/code) or ShopMy brand is added anywhere, in the same turn: verify its handle from its own site footer → config/social/ig-handles.json; follow it from @mahjmatchmaker; add it to Favorites (partners first; Instagram caps Favorites at 50); log it in docs/IG-FAVORITES.md. One driver in Chrome.
 - **ShopMy brands count too.** Any brand behind a ShopMy product we link (e.g. Casetify-style phone case brands with a popular mahjong set) gets followed. Partners get favorites first; ShopMy-only brands get favorites while slots remain, otherwise follow only.
+- **READ THE WHOLE POST (Tiffany Nov 3 1:29pm, after a draft named only 1 of 2 announced sets):** before drafting anything from a brand's post, read EVERY carousel slide and the full caption (carousel dots, 'two sets', 'swipe' = there's more). Open it in Chrome and click through, or ask her for the other slides. Never draft from slide 1 alone.
 - **Weekly brand watch (Mondays, part of the desk cleanup):** scan new ShopMy products/brands and partner launches → follow/favorite any new ones, and list the brands' new posts worth a reshare in HQ (link + one line). Reshares are done by her in the app (Instagram has no API for reposting others' posts); Claude preps the list.
 
 ## Naming: Mat-ch vs match (Tiffany, Oct 21 11:26, FINAL)
