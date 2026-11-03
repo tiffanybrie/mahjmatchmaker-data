@@ -11,4 +11,5 @@ python3 $H/ui114b.py "$SITE/site-app/fym-v114"   # rack filters below the rack d
 python3 $H/share114.py "$SITE/site-app/fym-v114"   # Text or email me this list never ends silently (Nov 3)
 python3 $H/cards114.py "$SITE/site-app/fym-v114"   # My match cards: one per tile set, remove + undo, Save image (Nov 3 2:43pm)
 python3 $H/types114.py "$SITE/site-app/fym-v114"   # rack types (one per rack) + Tiffany's picks default off (Nov 3 2:48pm)
+python3 $H/tour114.py "$SITE/site-app/fym-v114"   # 30-second tour rebuild (Tiffany Nov 3 2:54pm)
 ls -l "$SITE/site-app/fym-v114/index.html"
