@@ -757,7 +757,7 @@ function resetFrom(level){if(level<=1){Object.assign(S,{mfront:null,mfset:null,s
 
 const DOOR={cnt:null,lim:36,slim:18};
 function matCounts(){if(DOOR.cnt)return DOOR.cnt;const c={};D.sets.filter(VIS).forEach(s=>s.m.forEach(x=>{c[x[0]]=(c[x[0]]||0)+1;}));return DOOR.cnt=c;}
-function doorBtns(){const d=S.door||'tiles';return `<div class="door" role="group" aria-label="Start with"><button type="button" data-door="tiles" aria-pressed="${d==='tiles'}">Start with tiles<small>Find the mat they’re meant for</small></button><button type="button" data-door="mat" aria-pressed="${d==='mat'}">Start with a mat<small>Find tiles that match it</small></button></div>`;}
+function doorBtns(){/*v114 door neutral*/const d=(S.doorPicked||S.set!=null||!!S.dmat)?(S.door||'tiles'):'';return `<div class="door" role="group" aria-label="Start with"><button type="button" data-door="tiles" aria-pressed="${d==='tiles'}">Start with tiles<small>Find the mat they’re meant for</small></button><button type="button" data-door="mat" aria-pressed="${d==='mat'}">Start with a mat<small>Find tiles that match it</small></button></div>`;}
 function doorMats(){return INSF('m',doorMats0());}function doorMats0(){const c=matCounts();let ids=Object.keys(M).filter(id=>!M[id].hid&&(!M[id].rt||c[id])&&(!S.mbr||M[id].bn===S.mbr));const C0=S.dfams||[],HF=C0.includes('holiday'),C=C0.filter(x=>x!=='holiday');if(HF)ids=ids.filter(isHolM);if(C.length)ids=ids.filter(id=>HF?C.every(x=>MTI(id,x)<9):HASC(id,C));
  ids=MSL(ids.sort((a,b)=>(c[b]||0)-(c[a]||0)||M[a].n.localeCompare(M[b].n)));if(!C.length)return ids;ids=CSORT(ids,C);/*v112Bm*/return [...ids.filter(id=>BCODE[M[id].bn]),...ids.filter(id=>!BCODE[M[id].bn])];}
 const MN=id=>M[id].rt?M[id].n.replace(/\s*\(retired\)/i,''):M[id].n;/* name without '(retired)' when the Retired pill shows */
@@ -1557,4 +1557,4 @@ function ACPH(){return (typeof ACCT!=='undefined'&&ACCT.user)?'<p class="acok">S
   ov.querySelectorAll('.stb[data-star]').forEach(el=>{el.classList.add('hrm');el.textContent='✕';el.setAttribute('aria-label','Remove from My hearts');});};
  window.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('#starsov .stb.hrm[data-star]');if(!b)return;setTimeout(()=>{try{openStars();}catch(_){}},0);},true);
  window.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.closest&&e.target.closest('#starsov .stb.hrm[data-star]'))setTimeout(()=>{try{openStars();}catch(_){}},0);},true);})();
-</script></body></html>
+</script><script>/*v114 door tap*/document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-door]'))S.doorPicked=true;},true);</script></body></html>
