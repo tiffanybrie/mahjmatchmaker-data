@@ -74,21 +74,21 @@ body{width:1080px;height:1920px;overflow:hidden;position:relative;background:rad
  <div id="flw" style="position:absolute;left:420px;top:380px;width:240px;height:260px"><img id="fl" src="__FL__" style="position:absolute;inset:0;width:240px"><img id="flh" src="__FLH__" style="position:absolute;inset:0;width:240px;opacity:0"><div id="spks"></div></div>
  <div id="olk" style="position:absolute;left:0;right:0;top:690px;text-align:center"><span style="display:inline-block;font:400 104px/1 Cap;color:var(--navy);white-space:nowrap;position:relative">Find <span style="font:italic 600 108px/1 PF;color:var(--red)">Your</span> Mat-ch<span style="position:absolute;font:400 38px Bit;margin-left:4px;margin-top:4px">™</span></span></div>
  <div id="hed" style="position:absolute;left:0;right:0;top:880px;text-align:center"><span class="pill" style="background:var(--red);color:#fff;letter-spacing:8px;font-size:44px;border:5px solid var(--gold);padding:16px 46px">HOLIDAY EDITION</span></div>
- <div id="iht" style="position:absolute;left:0;right:0;top:1100px;text-align:center"><span style="display:inline-block;font:400 112px/1.05 Cap;color:var(--green);background:#fff;padding:26px 56px 38px;border-radius:40px;box-shadow:0 18px 44px rgba(30,70,120,.25);white-space:nowrap">It&rsquo;s holiday time!</span></div>
+ <div id="iht" style="position:absolute;left:0;right:0;top:1050px;text-align:center"><span style="display:inline-block;font:400 82px/1.05 Cap;color:var(--green);background:#fff;padding:26px 56px 38px;border-radius:40px;box-shadow:0 18px 44px rgba(30,70,120,.25);white-space:nowrap">It&rsquo;s holiday time!</span></div>
 </div>
 <div id="wall" class="sc bgn"><div id="wg" style="position:absolute;left:0;top:0;width:1080px"></div><div id="veil" style="position:absolute;inset:0;background:#eef6fc;opacity:0"></div>
  <div class="cnt" id="cnt"><div class="odo"><div class="grp" id="grp"></div></div><div class="olab" id="olab"></div></div><div id="words"></div></div>
 <div id="app" class="sc"><div class="cam" id="cam"><div class="bez"></div><div class="scr"><img class="f" id="fr"><svg id="spot" width="780" height="1688" style="position:absolute;left:0;top:0"></svg><div id="ov" style="position:absolute;inset:0"></div></div></div>
- <div id="intro" style="position:absolute;left:0;right:0;top:150px;text-align:center;z-index:50"></div></div>
+ <div id="intro" style="position:absolute;left:0;right:0;top:250px;text-align:center;z-index:50"></div></div>
 <div id="cardsc" class="sc bgn"><img id="mcard" class="mc"><div id="boom"></div></div>
 <div id="end" class="sc bgn">
- <img src="__FLH__" id="fh" style="position:absolute;left:465px;top:330px;width:150px">
- <img src="__WM__" style="position:absolute;left:300px;top:530px;width:480px">
- <div style="position:absolute;left:0;right:0;top:650px;text-align:center"><span style="display:inline-block;font:400 104px/1 Cap;color:var(--navy);white-space:nowrap;position:relative">Find <span style="font:italic 600 108px/1 PF;color:var(--red)">Your</span> Mat-ch<span style="position:absolute;font:400 38px Bit;margin-left:4px;margin-top:4px">™</span></span></div>
- <div style="position:absolute;left:0;right:0;top:830px;text-align:center;font:italic 600 58px/1.28 PF;color:var(--navy)">Holiday tiles, mats &amp; racks<br>across brands, together</div>
- <div style="position:absolute;left:0;right:0;top:1050px;text-align:center"><span class="pill" id="shop" style="background:var(--red);color:#fff;font-size:48px">Shop now · use code MAHJMATCH</span></div>
- <div style="position:absolute;left:0;right:0;top:1210px;text-align:center"><span class="pill" style="background:#fff;border:4px solid var(--green);color:var(--green);font-size:34px;letter-spacing:4px;text-transform:uppercase;padding:14px 36px">Link in bio</span></div>
- <div id="logos" style="position:absolute;left:60px;right:60px;top:1420px;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:26px 40px"></div>
+ <img src="__FLH__" id="fh" style="position:absolute;left:465px;top:260px;width:150px">
+ <img src="__WM__" style="position:absolute;left:300px;top:440px;width:480px">
+ <div style="position:absolute;left:0;right:0;top:550px;text-align:center"><span style="display:inline-block;font:400 104px/1 Cap;color:var(--navy);white-space:nowrap;position:relative">Find <span style="font:italic 600 108px/1 PF;color:var(--red)">Your</span> Mat-ch<span style="position:absolute;font:400 38px Bit;margin-left:4px;margin-top:4px">™</span></span></div>
+ <div style="position:absolute;left:0;right:0;top:720px;text-align:center;font:italic 600 58px/1.28 PF;color:var(--navy)">Holiday tiles, mats &amp; racks<br>across brands, together</div>
+ <div style="position:absolute;left:0;right:0;top:930px;text-align:center"><span class="pill" id="shop" style="background:var(--red);color:#fff;font-size:48px">Shop now · use code MAHJMATCH</span></div>
+ <div style="position:absolute;left:0;right:0;top:1080px;text-align:center"><span class="pill" style="background:#fff;border:4px solid var(--green);color:var(--green);font-size:34px;letter-spacing:4px;text-transform:uppercase;padding:14px 36px">Link in bio</span></div>
+ <div id="logos" style="position:absolute;left:80px;right:80px;top:1210px;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:26px 40px"></div>
 </div>
 <div class="plate" id="plate"><span id="plt"></span></div>
 <script>
@@ -98,7 +98,7 @@ const $=id=>document.getElementById(id);
 let sd=3;const rnd=()=>{sd=(sd*16807)%2147483647;return sd/2147483647};
 const SN=[];for(let i=0;i<120;i++){const e=document.createElement('i');const s=6+rnd()*12;e.style.width=e.style.height=s+'px';e.style.opacity=.55+rnd()*.45;$('snow').appendChild(e);SN.push([e,rnd()*1080,rnd()*1960,50+rnd()*90,rnd()*6]);}
 function snow(t,a,z){$('snow').style.opacity=a;$('snow').style.zIndex=z||45;for(const [e,x,y,v,p] of SN){e.style.left=(x+Math.sin(t*1.3+p)*30)+'px';e.style.top=((y+t*v)%1980-30)+'px';}}
-function plate(txt,k,y){const p=$('plate');if(!txt){p.style.display='none';return;}p.style.display='block';p.style.top=(y||175)+'px';
+function plate(txt,k,y){const p=$('plate');if(!txt){p.style.display='none';return;}p.style.display='block';p.style.top=(y||250)+'px';
  if($('plt').innerHTML!==txt)$('plt').innerHTML=txt;$('plt').style.transform=`scale(${0.86+0.14*eb(k/0.3)})`;p.style.opacity=cl(k/0.12);}
 // ---------- opener ----------
 for(let i=0;i<10;i++){const s=document.createElement('div');s.className='spk';$('spks').appendChild(s);}
@@ -138,7 +138,8 @@ function words(L){let h='';WD.forEach(([w,c,r],i)=>{const k=(L-i*0.6)/0.3;if(k<0
 function fidx(T,t){let lo=0,hi=T.length-1;if(t<=T[0])return 0;while(lo<hi){const m=(lo+hi+1)>>1;if(T[m]<=t)lo=m;else hi=m-1;}return lo;}
 function pw(P,L){if(L<=P[0][0])return P[0][1];for(let i=1;i<P.length;i++){if(L<=P[i][0]){const [a,x]=P[i-1],[b,y]=P[i];return x+(y-x)*(L-a)/(b-a);}}return P[P.length-1][1];}
 function frame(base,T,t){const i=fidx(T,t);const u=base+String(i).padStart(5,'0')+'.jpg';const f=$('fr');if(f.dataset.u!==u){f.src=u;f.dataset.u=u;}}
-function camK(k,fy,py,x){$('cam').style.transform=`translate(${(x==null?540:x)-390*k}px,${py-fy*k}px) scale(${k})`;}
+/* Nov 3 1:42pm safe zones: whole phone 0.88x and 110px lower so plates sit at y>=250 and the phone clears the right-side buttons */
+function camK(k,fy,py,x){$('cam').style.transform=`translate(${540*0.12}px,110px) scale(0.88) translate(${(x==null?540:x)-390*k}px,${py-fy*k}px) scale(${k})`;}
 function spot(holes,a){$('spot').innerHTML=a<=0?'':`<defs><filter id="bl" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="16"/></filter><mask id="mk"><rect width="780" height="1688" fill="#fff"/>${holes.map(([x,y,w,h,r])=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r||22}" fill="#000" filter="url(#bl)"/>`).join('')}</mask></defs><rect width="780" height="1688" fill="rgb(6,16,38)" fill-opacity="${0.55*a}" mask="url(#mk)"/>`;}
 function ring(x,y,k){if(k<0||k>1)return '';const r=40+60*eo(k);return `<div class="ring" style="left:${x-r}px;top:${y-r}px;width:${2*r}px;height:${2*r}px;opacity:${1-k}"></div>`;}
 // ---------- cards ----------
@@ -176,10 +177,10 @@ window.render=function(t){let cur=SC[SC.length-1];for(const s of SC)if(t>=s[1]&&
  if(id==='racks'){frame(C.RB,C.TB,pw([[0,2.4],[0.5,3.3],[1.1,3.85],[1.5,5.4],[2.1,5.82],[2.6,6.3],[3.3,7.85],[3.8,8.3],[4.4,8.32]],L)); camK(0.82,0,340);
   spot([[16,360,748,336,26],[16,1032,748,856,30]],1); plate('Add racks',L-0.05);}
  if(id==='card'){const im=$('mcard');if(im.dataset.u!=='c'){im.src=C.CARD;im.dataset.u='c';} $('boom').innerHTML='';
-  const k=eo(L/0.6);const w=640;im.style.width=w+'px';im.style.left=(540-w/2)+'px';im.style.top=(430+(1-k)*120)+'px';im.style.opacity=cl(L/0.2);im.style.transform=`scale(${0.92+0.08*k})`;
-  plate('See it together,<br>share it or shop it',L-0.25,150);}
+  const k=eo(L/0.6);const w=560;im.style.width=w+'px';im.style.left=(540-w/2)+'px';im.style.top=(450+(1-k)*120)+'px';im.style.opacity=cl(L/0.2);im.style.transform=`scale(${0.92+0.08*k})`;
+  plate('See it together,<br>share it or shop it',L-0.25,250);}
  if(id==='boom'){const im=$('mcard');const i=Math.min(2,Math.floor(L/0.4));const u='b'+i;if(im.dataset.u!==u){im.src=C.BOOM[i];im.dataset.u=u;}
-  const q=(L-i*0.4)/0.25;const w=860;im.style.width=w+'px';im.style.left=(540-w/2)+'px';im.style.top='420px';im.style.opacity=1;im.style.transform=`scale(${0.8+0.2*eb(q)}) rotate(${[-3,2,-2][i]*(1-cl(q))}deg)`;
+  const q=(L-i*0.4)/0.25;const w=700;im.style.width=w+'px';im.style.left=(540-w/2)+'px';im.style.top='420px';im.style.opacity=1;im.style.transform=`scale(${0.8+0.2*eb(q)}) rotate(${[-3,2,-2][i]*(1-cl(q))}deg)`;
   plate('Holiday match cards',0.4);}
  if(id==='end'){$('fh').style.transform=`scale(${eb(L/0.45)})`;$('shop').style.transform=`scale(${L<1?eb((L-0.35)/0.45):1+0.04*Math.sin(Math.PI*2*((L-1)/0.8))})`;
   [...$('logos').children].forEach((e,i)=>{e.style.opacity=cl((L-0.6-i*0.06)/0.2);});}
