@@ -20,7 +20,8 @@ Run this list top to bottom the day an album goes live. Every item is Claude's j
 - [ ] Instagram row (doc 89 Rule D): intro carousel → "It's a mat-ch!" → reel (album cover as reel cover). Every slide also to stories, brand @tags + Tag people + collaborator invite.
 - [ ] Story with a link sticker to the album.
 - [ ] Pinterest: album pins queued (docs/PINTEREST.md).
-- [ ] Facebook group announcement (doc 82 format).
+- [ ] Facebook group announcement (doc 82 format): EVERY album cover as its own photo (each album gets its moment), plus a Find Your Mat-ch screenshot/promo graphic of the set in the app.
+- [ ] A separate Find Your Mat-ch tie-in post (group + IG/FB Page): the set in the app, "try it in Find Your Mat-ch" (Tiffany Nov 3 2:15pm: don't make her ask for every marketing angle).
 - [ ] Album "now available" wording swapped everywhere the old album said "coming".
 
 ## 4. People who asked

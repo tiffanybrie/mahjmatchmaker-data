@@ -11,10 +11,11 @@ COMBOS = [  # (tile set name, mat name, mat brand, [rack names])
     ('Dear Santa', "Santa's Mahjong Mail", 'Anders Ruff', ['Anders Ruff Jade', 'Peace Love Mahjong Oak']),
     ('Miss Classic Malachite', 'Tartan Tidings', 'Anders Ruff', ['Miss Mahjong Jade & Brass', 'Bam Bird Boutique Walnut']),
     ('Heritage 1.0', 'The Polo Club', 'Luxe Mahjong', ['Miss Mahjong Blonde Tortoise', 'Yellow Mountain Classic Chestnut Wood']),
-    ("Rackin' Rudolph", 'Candy Cane Lane', 'Anders Ruff', ['Peace Love Mahjong Red', 'Milk Glass Collection Mahjong Rack and Pusher, Set of 4']),
+    ('Holly Jolly (Grinch Green)', 'Candy Cane Lane', 'Anders Ruff', ['Anders Ruff Pistachio Green Scalloped', 'Milk Glass Collection Mahjong Rack and Pusher, Set of 4']),  # Rackin' Rudolph dropped: the app's card renders it with NO tile photo (MATCH-INBOX)
     ('Holly Jolly (Sugarplum Pink)', 'Color Me Merry', 'Soirée All Day', ['My Fair Mahjong Pearl Blush', 'Mahjong Register Ivory Oyster Pearl Scalloped']),
     ('Tinselle (Emerald Green)', 'Plaid Tidings', 'My Fair Mahjong', ['Mahjong Register Emerald Pearl Scalloped', 'Middle & Main Scalloped Beechwood']),
     ('Nutcracker Ballet', 'Very Merry Mahj', 'Anders Ruff', ['La Vie En Rose Mahjong Rack and Pusher, Set of 4', 'Peace Love Mahjong Oak']),
+    ('Dear Santa', 'Festive Plaid Premium', 'Sunday Mahjong', ['Bird & Bamboo Red', 'Bam Bird Boutique Walnut']),
 ]
 with sync_playwright() as p:
     b, ctx, pg = start(p, 1)

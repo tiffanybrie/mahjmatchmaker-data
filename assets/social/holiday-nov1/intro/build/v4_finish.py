@@ -2,7 +2,7 @@
 Writes to temp names then moves into assets/social/holiday-nov1/intro/."""
 import os, subprocess, wave, struct, math, shutil
 W = '/dev/shm/introv4'; D = '/home/claude/mahjmatchmaker-data/assets/social/holiday-nov1/intro'
-DUR, BEAT, SR = 42.0, 0.4, 44100
+DUR, BEAT, SR = 42.8, 0.4, 44100
 def run(*a): subprocess.run(a, check=True, capture_output=True)
 n = int(DUR * SR); buf = [0.0] * n
 for b in range(int(DUR / BEAT)):
@@ -17,7 +17,7 @@ run('ffmpeg', '-y', '-i', f'{W}/v4.mp4', '-i', f'{W}/click.wav', '-c:v', 'copy',
 run('convert', f'{W}/frames/0066.jpg', '-quality', '90', f'{W}/v4-cover.jpg')  # t=2.2s: opener with HOLIDAY EDITION + "It's holiday time!"
 os.makedirs(f'{W}/cs', exist_ok=True)
 args = []
-for i in range(84):
+for i in range(86):
     t = i * 0.5; fn = f'{W}/frames/{int(round(t * 30)):04d}.jpg'; args += ['-label', f'{t:.1f}s', fn]
 run('montage', *args, '-tile', '12x', '-geometry', '216x384+4+4', '-pointsize', '18', f'{W}/v4-cs.jpg')
 for src, dst in [('v4.mp4', 'holiday-intro-reel-v4.mp4'), ('v4-beat.mp4', 'holiday-intro-reel-v4-beat-test.mp4'), ('v4-cover.jpg', 'holiday-intro-reel-v4-cover.jpg'), ('v4-cs.jpg', 'holiday-intro-reel-v4-contact-sheet.jpg')]:

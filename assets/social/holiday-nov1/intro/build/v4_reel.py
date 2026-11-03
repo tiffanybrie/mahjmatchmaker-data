@@ -30,7 +30,8 @@ PLOGOS = [F(LG + n + '.png') for n in ALLP]                       # 38 code part
 ELOGOS = [F(LG + n + '.png') for n in ALLP if n != 'tdt']         # end card sits next to "use code": no Tigre de Tartan (affiliate policy)
 def rt(r):
     d = json.load(open(f'{W2}/{r}/marks.json')); Fr = d['frames']; return [round(x - Fr[0], 3) for x in Fr]
-CFG = dict(WALL=WALL, TWALL=TWALL, TCOV=TCOV, PLOGOS=PLOGOS, ELOGOS=ELOGOS, CARD=F(f'{W2}/recB/storycard.png'),
+XC = [F(f'{W4}/xc/{i:02d}.jpg') for i in [0, 1, 2, 3, 8, 4, 5, 6, 7]]   # v4_cards.py: cross-brand FYM match cards (Amara x Very Merry Wreath first)
+CFG = dict(XC=XC, WALL=WALL, TWALL=TWALL, TCOV=TCOV, PLOGOS=PLOGOS, ELOGOS=ELOGOS, CARD=F(f'{W2}/recB/storycard.png'),
            R0=F(f'{W2}/rec0/f/'), RA=F(f'{W2}/recA/f/'), RP=F(f'{W2}/recP/f/'), RB=F(f'{W2}/recB/f/'),
            T0=rt('rec0'), TA=rt('recA'), TP=rt('recP'), TB=rt('recB'),
            FL=F(f'{W}/brand/fl.png'), FLH=F(f'{W}/brand/flh.png'), WM=F(f'{R}/assets/brand/mahjmatchmaker-wordmark-notag.png'))
@@ -131,6 +132,7 @@ function mkwall(key,imgs,cols,cw,ch,top){const g=document.createElement('div');g
  cells.sort((a,b)=>a[0]-b[0]);$('wg').appendChild(g);WL[key]={g,ord:cells.map(x=>x[1]),n};}
 mkwall('m',C.WALL,6,180,180,-30);
 mkwall('t',C.TWALL,3,360,360,60);
+mkwall('x',C.XC,3,360,450,285);
 function wall(key,L){for(const k in WL)WL[k].g.style.display=k===key?'block':'none';const W=WL[key];const ch=W.g.children;
  const n=Math.min(W.n,Math.pow(2,Math.floor(L/0.2)+2));
  W.ord.forEach((ci,j)=>{const d=ch[ci];const on=j<n;d.style.visibility=on?'visible':'hidden';if(on){const born=j<4?0:(Math.floor(Math.log2(j))-1)*0.2;d.style.transform=`scale(${eb((L-born+0.1)/0.3)})`;}});}
@@ -161,8 +163,8 @@ function mkTick(host,logos,rows,y0,dy,off){for(let r=0;r<rows;r++){const t=docum
 mkTick($('ticks'),C.PLOGOS,4,840,165,0); mkTick($('eticks'),C.ELOGOS,2,1200,160,1);
 function ticks(host,t,a,sp){[...host.children].forEach((e,i)=>{const d=+e.dataset.dir;const w=e.firstChild.scrollWidth/3;const x=((t*sp*(1+0.15*i))%w);e.firstChild.style.transform=`translateX(${d<0?-x-w*0.2:x-w}px)`;e.style.opacity=a;});}
 // ---------- cards ----------
-const SC=[['open',0,2.8],['wm',2.8,8.0],['wt',8.0,11.2],['wb',11.2,14.8],['intro',14.8,17.2],['tiles',17.2,20.0],['ctx',20.0,21.6],['tap',21.6,23.6],['swipe',23.6,30.0],['fav',30.0,32.4],['racks',32.4,36.4],['card',36.4,38.8],['end',38.8,42.0]];
-const DIV={open:'open',wm:'wall',wt:'wall',wb:'wall',intro:'app',tiles:'app',ctx:'app',tap:'app',swipe:'app',fav:'app',racks:'app',card:'cardsc',end:'end'};
+const SC=[['open',0,2.8],['wm',2.8,8.0],['wt',8.0,11.2],['wb',11.2,14.8],['intro',14.8,17.2],['tiles',17.2,20.0],['ctx',20.0,21.6],['tap',21.6,23.6],['swipe',23.6,30.0],['fav',30.0,32.4],['racks',32.4,36.4],['card',36.4,38.4],['xw',38.4,40.0],['end',40.0,42.8]];
+const DIV={open:'open',wm:'wall',wt:'wall',wb:'wall',intro:'app',tiles:'app',ctx:'app',tap:'app',swipe:'app',fav:'app',racks:'app',card:'cardsc',xw:'wall',end:'end'};
 window.render=function(t){let cur=SC[SC.length-1];for(const s of SC)if(t>=s[1]&&t<s[2]){cur=s;break;}
  const [id,a]=cur,L=t-a;for(const d of ['open','wall','app','cardsc','end'])$(d).style.display=DIV[id]===d?'block':'none';
  snow(t,1,DIV[id]==='app'?5:45); plate('',0); $('ov').innerHTML=''; $('intro').innerHTML=''; spot([],0); $('words').innerHTML='';
@@ -173,6 +175,7 @@ window.render=function(t){let cur=SC[SC.length-1];for(const s of SC)if(t>=s[1]&&
    if(!cv){return;} if(q<0.5){if(im.dataset.c==='1'){im.src=C.TWALL[ci];im.dataset.c='0';}}else{if(im.dataset.c!=='1'){im.src=cv;im.dataset.c='1';}}
    if(q>0&&q<1)d.style.transform=`scaleX(${Math.abs(Math.cos(Math.PI*q))})`;});}
  $('ticks').style.display=id==='wb'?'block':'none';
+ if(id==='xw'){wall('x',L);$('cnt').style.opacity=0;$('veil').style.opacity=0;} // cross-brand Find Your Mat-ch match cards tile out
  if(id==='wb'){for(const k in WL)WL[k].g.style.display='none';ticks($('ticks'),L,cl(L/0.3),210);$('cnt').style.top='290px';counter(50,true,'brands',L-0.1);}else{$('cnt').style.top='';}
  if(id==='intro'){ // phone flies in; app home screen
   frame(C.R0,C.T0,0.6); camK(PK,-90,470+(1-eo(L/0.6))*1400,540);
@@ -199,7 +202,7 @@ window.render=function(t){let cur=SC[SC.length-1];for(const s of SC)if(t>=s[1]&&
   spot([[16,360,748,336,26],[16,1032,748,500,30]],1); plate('Add racks',L-0.05,330);}
  if(id==='card'){const im=$('mcard');if(im.dataset.u!=='c'){im.src=C.CARD;im.dataset.u='c';} $('boom').innerHTML='';
   const k=eo(L/0.5);const w=560;im.style.width=w+'px';im.style.left=(540-w/2)+'px';im.style.top=(470+(1-k)*120)+'px';im.style.opacity=cl(L/0.2);
-  const z=1+3.2*Math.pow(cl((L-0.5)/1.9),2.2); im.style.transformOrigin='50% 42%'; im.style.transform=`scale(${(0.92+0.08*k)*z})`; // camera keeps pushing in until the card leaves the frame
+  const z=1+3.2*Math.pow(cl((L-0.5)/1.5),2.2); im.style.transformOrigin='50% 42%'; im.style.transform=`scale(${(0.92+0.08*k)*z})`; // camera keeps pushing in until the card leaves the frame
   plate('See it together,<br>share it or shop it',L-0.25,250);}
   if(id==='end'){$('fh').style.transform=`scale(${eb(L/0.45)})`;$('shop').style.transform=`scale(${L<1?eb((L-0.35)/0.45):1+0.04*Math.sin(Math.PI*2*((L-1)/0.8))})`;
   ticks($('eticks'),t,cl((L-0.5)/0.3),150);}
@@ -214,7 +217,7 @@ if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'frames'
     out = f'{W4}/out'; os.makedirs(out, exist_ok=True)
     open(f'{W4}/reel.html', 'w').write(page())
-    FPS, DUR = 30, 42.0
+    FPS, DUR = 30, 42.8
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(viewport={'width': 1080, 'height': 1920})
         pg.goto(f'file://{W4}/reel.html'); pg.wait_for_timeout(3000)
