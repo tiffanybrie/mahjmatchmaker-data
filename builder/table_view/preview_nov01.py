@@ -83,7 +83,10 @@ GRAY = json.load(open(R / 'config/tableview-gray-nov02.json'))
 for k in GRAY['mats']:
     if k in D['mats']: cls[k] = 'C'; why[k] = GRAY['why']  # QA Nov 2: no clean top-down photo -> grayed in Table view
 cv = {k: {'m': v['m'], 'f': v['f']} for k, v in CV.items() if k in D['mats'] and cls.get(k) == 'B'}
-TVD = dict(cls=cls, why=why, rk=rk, rkw=rkw, fin=fin, price=price, pm=pm, pt=pt, so=so, backs=backs, pr=pr, sz=sz, ro=ro, pf=pf, pfT=PF['T2'], cv=cv)
+# v114 (Tiffany Nov 3 2:48pm): ONE type per rack, by eye (config/rack-types-nov03.json); the Table sheet uses the same types
+RT = json.load(open(R / 'config/rack-types-nov03.json'))
+fin = {k: [v['type']] for k, v in RT['racks'].items() if k in D['racks']}
+TVD = dict(cls=cls, why=why, rk=rk, rkw=rkw, fin=fin, rt={k: v['type'] for k, v in RT['racks'].items() if k in D['racks']}, rto=RT['order'], rtl=RT['labels'], rw=[k for k in RT['white'] if k in D['racks']], price=price, pm=pm, pt=pt, so=so, backs=backs, pr=pr, sz=sz, ro=ro, pf=pf, pfT=PF['T2'], cv=cv)
 css = """<style>/* Table view preview (Nov 1 rebuild: sample UX) */
 /* WebKit iPhone: the step nav (.stp, 289px) would not shrink and pushed the stars/account icons 10px off-screen (also in live 1.12) */
 html{overflow-x:hidden;overscroll-behavior-x:none}body{overflow-x:clip;max-width:100%}/* not overflow on body: WebKit would make body the scroller and window.scrollTo would stop working */.top .stp{min-width:0;flex:1 1 auto;overflow:hidden}

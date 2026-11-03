@@ -20,13 +20,15 @@ const _sf=setsForMat;setsForMat=function(id){const g=_sf(id);if(S.pr.t==='')retu
 const money=v=>'$'+(Math.round(v)===v?v:v.toFixed(2));
 window.PRB=function(k){const r=((typeof TVD==='object'&&TVD.pr)||{})[CAT[k]]||[];if(!r.length)return '';
   try{if(k==='m')matDeck();else if(k==='r')rackDeck();else if(S.dmat)setsForMat(S.dmat)}catch(x){}const v=S.pr[k];
-  return `<div class="prw" role="group" aria-label="Price"><button type="button" class="chip prc" data-prc="${k}" data-v="" aria-pressed="${v===''}">Any price</button>${r.map(x=>`<button type="button" class="chip prc" data-prc="${k}" data-v="${x}" aria-pressed="${v===x}">Under $${x}</button>`).join('')}</div>`+
-   (v!==''?`<small class="prn">${S.prE[k]?`Nothing under $${v} here, so showing all. `:''}${S.prN[k]?`${S.prN[k]} without a listed price not shown. `:''}Prices: store price, or less with code MAHJMATCH where it applies.</small>`:'')};
+  /* v114 (Tiffany Nov 3 2:48pm): one compact dropdown, like the other menus, not a tall block of chips */
+  return `<div class="prw"><label class="prsel"><span>Price</span><select data-prsel="${k}" aria-label="Price">${['',...r].map(x=>`<option value="${x}"${v===x?' selected':''}>${x===''?'Any price':'Under $'+x}</option>`).join('')}</select></label>${v!==''?`<small class="prn">${S.prE[k]?`Nothing under $${v} here, so showing all. `:''}${S.prN[k]?`${S.prN[k]} without a listed price not shown. `:''}Store price, or less with code MAHJMATCH where it applies.</small>`:''}</div>`};
 /* QA Nov 2: a card that is under the chip only after the code says so: 'Under $65 with code MAHJMATCH' (no % printed) */
 window.PRC=function(k,id){const v=S.pr[k];if(v==='')return '';const x=PRP(k,id);if(!x)return '';const viaCode=x[2]&&x[0]>v&&x[1]<=v;
   return `<b class="prc1">${money(x[0])}${viaCode?` <em class="prcv">Under $${v} with code MAHJMATCH</em>`:(x[2]?' <em>less with code MAHJMATCH</em>':'')}</b>`};
 /* the in-stock chip row of the mat and rack decks carries the price row right after it */
 const _ib=INSB;INSB=function(k){return _ib(k)+(k==='m'||k==='r'?PRB(k):'')};
+document.addEventListener('change',e=>{const b=e.target.closest&&e.target.closest('[data-prsel]');if(!b)return;const k=b.dataset.prsel,v=b.value===''?'':+b.value;S.pr[k]=v;
+  if(k==='m'){S.peek=null;renderMats()}else if(k==='r')renderRacks();else renderTiles();if(typeof steps==='function')steps()},true);
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-prc]');if(!b)return;e.preventDefault();e.stopPropagation();
   const k=b.dataset.prc,v=b.dataset.v===''?'':+b.dataset.v;S.pr[k]=S.pr[k]===v?'':v;
   if(k==='m'){S.peek=null;renderMats()}else if(k==='r')renderRacks();else renderTiles();if(typeof steps==='function')steps()},true);

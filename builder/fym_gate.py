@@ -1656,7 +1656,7 @@ if any('pearl' in (_r.get('rf') or []) for _r in D['racks'].values()) or "pearl:
         if 'pearl' in (_r.get('rf') or []) and not _pw.search(_r.get('n', '')) and _k not in _pc['by_eye']:
             F.append(f"[141] {_r.get('n')}: tagged Pearl without a pearl/opal/iridescent word or a by-eye note (config/fym-rack-pearl-nov01.json)")
         if _pw.search(_r.get('n', '')) and 'pearl' not in (_r.get('rf') or []): F.append(f"[141] {_r.get('n')}: name says pearl/opal/iridescent but no Pearl finish")
-    for _a, _w in (("const FINS=['wood','walnut','tortoise','pearl','clear','lucite','metallic','white'];", 'finish row (Pearl chip)'), ("pearl:'Pearl'", 'Pearl chip label'),
+    for _a, _w in (() if '/*v114 types*/' in UI else (("const FINS=['wood','walnut','tortoise','pearl','clear','lucite','metallic','white'];", 'finish row (Pearl chip)'), ("pearl:'Pearl'", 'Pearl chip label'))) + (
                    ('if(f.fin)ids=ids.filter(r=>RFIN(r).includes(f.fin));', 'finish ANDs with the colour'), ('data-finclear', 'finish row is clearable'),
                    ("(R[id].rf||[]).map(x=>RFSYN[x]||'').join(' ')", 'rack search matches finish words')):
         if _a not in UI: F.append(f"[141] {_w} missing")
@@ -1740,6 +1740,16 @@ if '/*v114 table view*/' in UI:
         _l150 = [l for l in _o150.stdout.splitlines() if l.startswith('[150]')]
         if _o150.returncode and not _l150: _l150 = ['[150] match cards check failed: ' + (_o150.stderr or '')[-200:]]
         for _f in _l150[:8]: F.append(_f)
+# [151] Tiffany Nov 3 2:48pm: ONE type per rack (config/rack-types-nov03.json, by eye), Wood tone + Painted, no Walnut, no painted rack
+# in Wood tone. [152]: Tiffany's picks default OFF (tiles, mat door, racks), her picks still lead the mat deck, price = one dropdown.
+if '/*v114 table view*/' in UI:
+    if '/*v114 types*/' not in UI: F.append("[151] rack types / picks-off default not applied (builder/fym_fix_nov02/types114.py)")
+    else:
+        import subprocess as _sp151
+        _o151 = _sp151.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fym_fix_nov02', 'types_check.py'), B], capture_output=True, text=True, timeout=900)
+        _l151 = [l for l in _o151.stdout.splitlines() if l.startswith(('[151]', '[152]'))]
+        if _o151.returncode and not _l151: _l151 = ['[151] rack types / picks check failed: ' + (_o151.stderr or '')[-200:]]
+        for _f in _l151[:10]: F.append(_f)
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))
