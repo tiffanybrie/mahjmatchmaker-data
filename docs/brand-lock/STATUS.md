@@ -16,3 +16,10 @@ So the direction is approved for exploring: partners only, "coming soon" in the 
 5. Only after her OK on the stills: ask her whether to show it to Mahjong Row & Co. (sending = her chat approval, doc 74).
 
 Open questions to raise with the stills (once, not before): does the locked version keep MAHJMATCH/affiliate links or go plain (current sample = plain product links, since it would live on the brand's own site)? Free perk vs paid?
+
+## Nov 3 update (Tiffany 3:56-3:59pm)
+- Build the sample for **Bird & Bamboo (Emily)** instead of Mahjong Row & Co. Emily mentioned she'd love interactive tools on her site.
+- Start right after FYM 1.14 is live: re-run make_lock.py on v114 (Table view, hearts, new tour; locked app opens on B&B tile sets/racks).
+- **Protect how it works:** deliver ONLY as a hosted embed (one line she pastes; the app and data load from our side). Never hand over source, files, the catalog data or how the colour matching works. Minified build; no 'how it's made' notes in the embed.
+- Pricing undecided. Claude's lean: 60-90 day pilot with Emily (friend rate, or free in trade for higher commission, IG/newsletter feature, samples, testimonial, a link back to mahjmatchmaker.com), then setup fee + monthly upkeep for everyone else.
+- Show her the private preview + 3 phone stills first. Nothing goes to Emily without her chat OK.
