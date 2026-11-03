@@ -9,6 +9,7 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 
 **PARTNER SEND GATE (Oct 27 3:08am, standing):** before scheduling ANY partner email or graphics drop, run `python3 scripts/partner_send_check.py`; it must exit 0.
 
+- **Main/Ops/Matches (Nov 3): launch + partner watch scheduled tasks must check the storefront page text for "wholesale customers only" before calling a product live (OMM Poppins: JSON says available, page says wholesale only). Add to their prompts at next edit.**
 - **HQ PIN (Nov 1): needs/supabase-settings-nov01 stays at the very top of HQ (order -100) until she finishes it. Nothing above it.** Now down to email templates + Resend (Site URL + redirects done Nov 2 10:10am).
 
 ## Tomorrow's top priorities (Tue Nov 3), in order
