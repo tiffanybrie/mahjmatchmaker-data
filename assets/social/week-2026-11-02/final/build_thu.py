@@ -1,5 +1,5 @@
 """Thu Nov 5 carousel finals: hook slide (1) + 7 Dear Santa x Anders Ruff album cards (her live-page order) + Find Your Mat-ch CTA (9),
-plus 9 story frames (1080x1920, every slide). Fonts: scripts/social/tileprofile/fonts. Run from the repo root."""
+story frames come from build_stories.py. Fonts: scripts/social/tileprofile/fonts. Run from the repo root."""
 import os, shutil
 from playwright.sync_api import sync_playwright
 R = '/home/claude/mahjmatchmaker-data'; O = f'{R}/assets/social/week-2026-11-02/final/thu-ds'
@@ -34,6 +34,5 @@ with sync_playwright() as p:
         pg.set_viewport_size({'width': 1080, 'height': 1350}); open('/dev/shm/weekdrafts/_p.html','w').write('<meta charset=utf-8>'+html); pg.goto('file:///dev/shm/weekdrafts/_p.html'); pg.wait_for_timeout(1200)
         pg.screenshot(path=f'{O}/slide{n}.jpg', type='jpeg', quality=93)
     for i, c in enumerate(CARDS, 2): shutil.copy(c, f'{O}/slide{i}.jpg')
-    for i in range(1, 10): story(pg, f'{O}/slide{i}.jpg', f'{O}/story{i}.jpg')
     b.close()
 print('ok')
