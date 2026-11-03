@@ -123,7 +123,7 @@ mkwall('t',C.TWALL,3,360,360,60);
 mkwall('a',C.AWALL,5,216,270,0);
 function wall(key,L){for(const k in WL)WL[k].g.style.display=k===key?'block':'none';const W=WL[key];const ch=W.g.children;
  const n=Math.min(W.n,Math.pow(2,Math.floor(L/0.2)+2));
- W.ord.forEach((ci,j)=>{const d=ch[ci];const on=j<n;d.style.visibility=on?'visible':'hidden';if(on){const born=j<4?0:(Math.floor(Math.log2(j))-1)*0.2;d.style.transform=`scale(${eb((L-born)/0.3)})`;}});}
+ W.ord.forEach((ci,j)=>{const d=ch[ci];const on=j<n;d.style.visibility=on?'visible':'hidden';if(on){const born=j<4?0:(Math.floor(Math.log2(j))-1)*0.2;d.style.transform=`scale(${eb((L-born+0.1)/0.3)})`;}});}
 function buildOdo(n,plus,lab){const g=$('grp');if(g.dataset.n===lab)return;g.dataset.n=lab;g.innerHTML='';for(const ch of String(n)){const d=document.createElement('div');d.className='dg';const st=document.createElement('div');st.className='st';for(let r=0;r<4;r++)for(let k=0;k<10;k++){const x=document.createElement('div');x.textContent=k;st.appendChild(x);}d.appendChild(st);g.appendChild(d);}
  if(plus){const p=document.createElement('div');p.className='plus';p.id='pl';p.textContent='+';g.appendChild(p);} $('olab').textContent=lab;}
 function counter(n,plus,lab,L,out){buildOdo(n,plus,lab);const s=String(n);const p=eo(L/0.8);
