@@ -30,6 +30,8 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **Matches & Catalog: Juniper colour card** (scripts/colorcards) so the Juniper swipe book can be built (OMM = top priority).
 - **OPS / Main: Amanda Toppe 10% live fix** (priority 1a). Overdue since Nov 2 9am.
 - **OPS: Dropbox new-release copies** (priority 5b) + **TNT search for Sunshine Glow** (5c).
+- **OPS: search Tiles & Tablescapes for Bespoke It's a Vibe Glitter Glow Green** (new Bespoke holiday tile set Nov 3; swipe book waits on a TNT rec + colour card per the book gate; HQ Albums: needs-tnt).
+- **OPS: copy flat renders to Dropbox /Mahj Matchmaker Albums/New releases/ today** (launch watch Nov 3 6:15pm): Let's Be Besties/ ← assets/launches/letsbebesties-tiger-stripes-ohbon-studios-artist-mahjong-mat/, assets/launches/letsbebesties-spinning-dreidel-ohbon-studios-artist-mahjong-mat/, assets/launches/letsbebesties-champange-bubbles-mahjong-mat/, assets/launches/letsbebesties-mid-century-floral-mahjong-mat/, assets/launches/letsbebesties-pink-pizzazz-mahjong-mat/, assets/launches/letsbebesties-gatsby-glow-mahjong-mat/, assets/launches/letsbebesties-mad-for-plaid-mahjong-mat/, assets/launches/letsbebesties-disco-dot-with-simple-middle-mahjong-mat/ · Bespoke Mahjong/ ← assets/launches/bespoke-coming-this-november-mahjong-its-a-vibe-glitter-glow-green/
 - **Main: re-run / rebuild the unpushed Nov 2 site check** (priority 5a).
 - **Main: Wren Mats + OMM verified lines** (priority 1c).
 - **Main: new-arrivals story version** in Planoly on her yes (priority 3).

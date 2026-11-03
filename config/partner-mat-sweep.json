@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-03T14:11:55+00:00",
+ "swept_at": "2026-11-03T23:13:15+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v114",
  "stores": {
   "amahjline.com": {
@@ -220,7 +220,7 @@
   "bespokemahjong.com": {
    "brand": "Bespoke Mahjong",
    "status": "ok",
-   "products": 353,
+   "products": 354,
    "mats": [
     [
      "2026-10-22T12:17:12-05:00",
@@ -1677,7 +1677,7 @@
   "missmahjong.com": {
    "brand": "Miss Mahjong",
    "status": "ok",
-   "products": 89,
+   "products": 91,
    "mats": [
     [
      "2026-09-28T12:32:13-05:00",
@@ -1873,7 +1873,7 @@
   "ohmymahjong.com": {
    "brand": "Oh My Mahjong",
    "status": "ok",
-   "products": 244,
+   "products": 246,
    "mats": [
     [
      "2026-11-03T08:01:13-06:00",
@@ -2656,8 +2656,48 @@
   "letsbebesties.com": {
    "brand": "Let's Be Besties",
    "status": "ok",
-   "products": 547,
+   "products": 555,
    "mats": [
+    [
+     "2026-11-03T11:43:12-05:00",
+     "Tiger Stripes OHBoN Studios Artist Mahjong Mat",
+     "tiger-stripes-ohbon-studios-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-03T11:12:36-05:00",
+     "Spinning Dreidel OHBoN Studios Artist Mahjong Mat",
+     "spinning-dreidel-ohbon-studios-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-03T11:01:12-05:00",
+     "Champange Bubbles Mahjong Mat",
+     "champange-bubbles-mahjong-mat"
+    ],
+    [
+     "2026-11-03T10:47:50-05:00",
+     "Mid Century Floral Mahjong Mat",
+     "mid-century-floral-mahjong-mat"
+    ],
+    [
+     "2026-11-03T10:36:57-05:00",
+     "Pink Pizzazz Mahjong Mat",
+     "pink-pizzazz-mahjong-mat"
+    ],
+    [
+     "2026-11-03T10:31:07-05:00",
+     "Gatsby Glow Mahjong Mat",
+     "gatsby-glow-mahjong-mat"
+    ],
+    [
+     "2026-11-03T10:28:33-05:00",
+     "Mad for Plaid Mahjong Mat",
+     "mad-for-plaid-mahjong-mat"
+    ],
+    [
+     "2026-11-03T10:27:18-05:00",
+     "Disco Dot with Simple Middle Mahjong Mat",
+     "disco-dot-with-simple-middle-mahjong-mat"
+    ],
     [
      "2026-11-01T16:29:11-05:00",
      "Camellia Kaleidoscope OHBoN Studios Artist Mahjong Mat",
@@ -3305,7 +3345,7 @@
     ],
     [
      "2026-08-15T17:00:57-04:00",
-     "Tropical Travels Custom Mahjong Mat",
+     "Tropical Travels Monogram Mahjong Mat",
      "tropical-travels-personalized-neoprene-mahjong-mat"
     ],
     [
@@ -4451,6 +4491,46 @@
    ],
    "missing": [
     [
+     "2026-11-03T11:43:12-05:00",
+     "Tiger Stripes OHBoN Studios Artist Mahjong Mat",
+     "tiger-stripes-ohbon-studios-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-03T11:12:36-05:00",
+     "Spinning Dreidel OHBoN Studios Artist Mahjong Mat",
+     "spinning-dreidel-ohbon-studios-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-03T11:01:12-05:00",
+     "Champange Bubbles Mahjong Mat",
+     "champange-bubbles-mahjong-mat"
+    ],
+    [
+     "2026-11-03T10:47:50-05:00",
+     "Mid Century Floral Mahjong Mat",
+     "mid-century-floral-mahjong-mat"
+    ],
+    [
+     "2026-11-03T10:36:57-05:00",
+     "Pink Pizzazz Mahjong Mat",
+     "pink-pizzazz-mahjong-mat"
+    ],
+    [
+     "2026-11-03T10:31:07-05:00",
+     "Gatsby Glow Mahjong Mat",
+     "gatsby-glow-mahjong-mat"
+    ],
+    [
+     "2026-11-03T10:28:33-05:00",
+     "Mad for Plaid Mahjong Mat",
+     "mad-for-plaid-mahjong-mat"
+    ],
+    [
+     "2026-11-03T10:27:18-05:00",
+     "Disco Dot with Simple Middle Mahjong Mat",
+     "disco-dot-with-simple-middle-mahjong-mat"
+    ],
+    [
      "2026-11-01T16:29:11-05:00",
      "Camellia Kaleidoscope OHBoN Studios Artist Mahjong Mat",
      "camellia-kaleidoscope-artist-collab-leatherette-mahjong-mat"
@@ -4547,7 +4627,7 @@
     ],
     [
      "2026-08-15T17:00:57-04:00",
-     "Tropical Travels Custom Mahjong Mat",
+     "Tropical Travels Monogram Mahjong Mat",
      "tropical-travels-personalized-neoprene-mahjong-mat"
     ],
     [
