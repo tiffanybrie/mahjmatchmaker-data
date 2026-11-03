@@ -41,6 +41,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **Pinterest autopin** next run Wed Nov 4 (blocked by usage limit Sun); Main re-checks Wed.
 - **OPS (standing): HQ ShopMy tab inbox** (db `shopmy`, status new) at the start of every Ops reply. The 2 stray ShopMy links are HER click (HQ needs/shopmy-delete-2-links).
 - **Partner feedback watch** trig_01RKw9eUwTYPo39gbYHb65gh runs daily through Nov 10 (0 new Nov 2).
+- **Matches & Catalog: ShopMy Etsy mats staged (Nov 3 weekly check)**: include `builder/fym_fix_nov03/etsy_shopmy_nov03.py` (spec config/fym-etsy-shopmy-nov03.json: Luna EK Studio 28, BJ&J Grace x3, Strawberry Thief, Pink Hummingbird; 1 Questionable hidden) in the next FYM build after 1.14, then full gate + QA. Check 4 Luna colours by eye (docs/SHOPMY-MAT-AUDIT-nov03.md). Not published.
 
 ## In progress
 | Item | Owner | Next step | Target |
