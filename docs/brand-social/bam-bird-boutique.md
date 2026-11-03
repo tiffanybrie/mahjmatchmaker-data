@@ -1,6 +1,7 @@
 # Bam Bird Boutique (@bambirdboutique): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 3 10:43am ET: 'MCM Olive is making its return!' restock Fri Nov 6 10am CT; retro designs, olive backs, pink middle layer (https://www.instagram.com/p/DfSO1CBkegU/). Store mcm-mahjong-tile-set currently shows only the Navy/Olive variant. First named restock after the Oct 30 newsletter teaser. Nov 2: staff birthday reel.
 - Nov 1: customer reviews carousel, thank-you tone (DfKNyAZH0Ya). No drop; Deco Indigo still sold out (store 1:35pm ET).
 - Oct 31: "Plaid is having its moment": favourite tiles paired with each new plaid mat (DfKYF0Bn650). Oct 30: teases restock + brand news, newsletter first (DfIlDoan_y8). Oct 30: Floating Game Table on sale (DfIRN6zAOcO).
 - Oct 30-31: restock/news teaser pushes newsletter sign-up ('before socials find out', DfIlDoan_y8); Floating Game Table on sale as a Christmas-list gift (DfIRN6zAOcO); tile sponsor at Gold Coast Mahjong Stockyards retreat (tickets close Nov 1, DfF3Iqan6BN). Deco Indigo still sold out Oct 31.

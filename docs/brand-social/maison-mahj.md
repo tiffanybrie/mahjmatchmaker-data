@@ -1,6 +1,7 @@
 # Maison Mahj (@maisonmahj): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 3 9:30am ET: 'Collector's List, today is your day': House Line No. 1 preorder window 12:30pm CT, private link by email (also emailed us 12:31pm ET); public Nov 4; ships Feb 2027 (https://www.instagram.com/p/DfR_kyYl9fs/).
 - Nov 1 9:59am ET: House Line No. 1 'collector access begins this week, check your email for your access window', ships Feb 2027 (DfNABSSKv0H). Luxury/collector tone. Non-partner: record only.
 - Oct 31: new bags available Nov 1, ready to ship, as companions to House Line No. 1 (DfKN9iRl76W). Non-partner: record only.
 - Oct 30: House Line No. 1 preorder access staged: Maison Society Nov 1, Collector's Circle Nov 2, Collector's List Nov 3, public Nov 4, 12:30 CT; ships Feb 2027 (DfIa6a_l2L-). Non-partner.

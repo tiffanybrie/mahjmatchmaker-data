@@ -1,6 +1,7 @@
 # Bespoke Mahjong (@bespoke_mahjong): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 3 9:03am + 11:42am ET: NEW DROP 'Meet SUNSHINE GLOW': Garden Glow artwork in a sunshine-yellow pearl colourway, 'You've met Safari Glow. You've met Garden Glow', drops Wed Nov 4 9am CT, 'won't stick around' (https://www.instagram.com/p/DfSCsFsCYKy/, https://www.instagram.com/reel/DfSVYitpQsA/). Store: bespokemahjong.com/products/sunshineglow listed, not purchasable yet ($495). The Glow pearl line is their current push.
 - Oct 28 4:35pm ET: public call-out asking Walmart to remove third-party dupe sellers using the Bespoke name; listing photo vs knockoff that arrived (DfDTL9uJwVR, 500+ likes, 150+ comments).
 - Oct 28: callout post on Walmart dupe sellers using their name (DfDTL9uJwVR). Pushing Gray Malin A Very Merry Getaway double-sided mat (Oct 27, 'limited quantities').
 - Oct 28: warning post about Walmart third-party 'dupe' sellers using the Bespoke name, listing photo vs what arrived (DfDTL9uJwVR). Brand-protection tone.
