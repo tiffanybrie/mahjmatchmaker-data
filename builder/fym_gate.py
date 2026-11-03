@@ -1731,6 +1731,15 @@ if '/*v114 table view*/' in UI:
         _l149 = [l for l in _o149.stdout.splitlines() if l.startswith('[149]')]
         if _o149.returncode and not _l149: _l149 = ['[149] share-list check failed: ' + (_o149.stderr or '')[-200:]]
         for _f in _l149[:8]: F.append(_f)
+# [150] Tiffany Nov 3 2:43pm: My match cards = ONE card per tile set (new mat replaces), newest first, x remove + Undo, 'Save image'.
+if '/*v114 table view*/' in UI:
+    if '/*v114 cards*/' not in UI: F.append("[150] My match cards still keeps several cards per tile set (builder/fym_fix_nov02/cards114.py)")
+    else:
+        import subprocess as _sp150
+        _o150 = _sp150.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fym_fix_nov02', 'cards_check.py'), B], capture_output=True, text=True, timeout=600)
+        _l150 = [l for l in _o150.stdout.splitlines() if l.startswith('[150]')]
+        if _o150.returncode and not _l150: _l150 = ['[150] match cards check failed: ' + (_o150.stderr or '')[-200:]]
+        for _f in _l150[:8]: F.append(_f)
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))

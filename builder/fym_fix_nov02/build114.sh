@@ -9,3 +9,4 @@ python3 $H/price114.py "$D"
 python3 $H/ui114.py "$D"   # rack filter singles + Table tour step (Tiffany Nov 1 11:33pm)
 python3 $H/ui114b.py "$D"   # rack filters below the rack deck (Tiffany Nov 3 2:27pm)
 python3 $H/share114.py "$D"   # Text or email me this list never ends silently (Nov 3)
+python3 $H/cards114.py "$D"   # My match cards: one per tile set, remove + undo, Save image (Nov 3 2:43pm)
