@@ -8,4 +8,5 @@ python3 $R/builder/table_view/preview_nov01.py "$SITE/site-app/fym-v113/index.ht
 python3 $H/price114.py "$SITE/site-app/fym-v114"
 python3 $H/ui114.py "$SITE/site-app/fym-v114"   # rack filter singles + Table tour step (Tiffany Nov 1 11:33pm)
 python3 $H/ui114b.py "$SITE/site-app/fym-v114"   # rack filters below the rack deck (Tiffany Nov 3 2:27pm)
+python3 $H/share114.py "$SITE/site-app/fym-v114"   # Text or email me this list never ends silently (Nov 3)
 ls -l "$SITE/site-app/fym-v114/index.html"

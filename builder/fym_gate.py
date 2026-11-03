@@ -1721,6 +1721,16 @@ if '/*v114 rack filters below*/' in UI:
     if """${deck('r')}</div><div class="s2ctl rctl"><div class="rfil">${filters('r')}</div></div>`+acts('r')""" not in UI: F.append("[148] rack step: the filter row is not right below the rack deck")
     if """<div class="rfil">${filters('r')}</div>${deck('r')}""" in UI: F.append("[148] rack step: a filter row sits between the chosen mat and the rack deck")
 elif '/*v114 table view*/' in UI: F.append("[148] rack step: v114 build without the rack-filters-below change (builder/fym_fix_nov02/ui114b.py)")
+# [149] Nov 3 2:27pm: 'Text or email me this list' ended silently (share undefined in the site iframe, mailto with no handler, popup
+# blocked after the await). The handler must copy first, toast, and open the Email / Text sheet when share is missing or fails.
+if '/*v114 table view*/' in UI:
+    if '/*v114 shoplist*/' not in UI: F.append("[149] 'Text or email me this list' still uses the old handler (builder/fym_fix_nov02/share114.py)")
+    else:
+        import subprocess as _sp149
+        _o149 = _sp149.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fym_fix_nov02', 'sharelist_check.py'), B], capture_output=True, text=True, timeout=600)
+        _l149 = [l for l in _o149.stdout.splitlines() if l.startswith('[149]')]
+        if _o149.returncode and not _l149: _l149 = ['[149] share-list check failed: ' + (_o149.stderr or '')[-200:]]
+        for _f in _l149[:8]: F.append(_f)
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))

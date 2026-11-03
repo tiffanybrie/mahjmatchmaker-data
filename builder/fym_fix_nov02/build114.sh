@@ -8,3 +8,4 @@ python3 $R/builder/table_view/preview_nov01.py "$D/index.html" "$D" --release 1.
 python3 $H/price114.py "$D"
 python3 $H/ui114.py "$D"   # rack filter singles + Table tour step (Tiffany Nov 1 11:33pm)
 python3 $H/ui114b.py "$D"   # rack filters below the rack deck (Tiffany Nov 3 2:27pm)
+python3 $H/share114.py "$D"   # Text or email me this list never ends silently (Nov 3)
