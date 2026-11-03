@@ -934,12 +934,15 @@ document.addEventListener('input',e=>{if(!TOUR.on)return;if(e.target&&/^(tsq|mdq
 document.addEventListener('change',e=>{if(!TOUR.on)return;if(e.target&&e.target.closest&&e.target.closest('.tfind'))TOUR.f.find=1;setTimeout(tourSync,120);},true);
 /* the bubble never sits on its target: for 3s after each paint, if a late image or the app's own scroll moved the target under
    the bubble, dock it again (only when the target and bubble fit on screen together) */
+function tourHold(){const c0=$('coach');if(!c0||!TOUR.on)return;const s0=TSTEPS[TOUR.step];if(!s0||s0.hand)return;c0.style.opacity='0';let last='',k=0,st=0;clearInterval(TOUR.stI);
+ TOUR.stI=setInterval(()=>{const cc=$('coach'),s=TSTEPS[TOUR.step];if(!cc||!TOUR.on||!s||s.hand){clearInterval(TOUR.stI);if(cc)cc.style.opacity='';return;}
+  const b=tourTarget(s),r=b&&b.getBoundingClientRect(),q=cc.getBoundingClientRect(),key=(r?[r.top,r.left,r.height].map(Math.round).join():'x')+'|'+[q.top,q.left].map(Math.round).join()+'|'+TOUR.step;
+  st=key===last?st+1:0;if(st>=3||++k>22||!b){clearInterval(TOUR.stI);if(b){const q2=cc.getBoundingClientRect();if(!(q2.bottom<=r.top||q2.top>=r.bottom||q2.right<=r.left||q2.left>=r.right)&&r.height+q2.height+90<=innerHeight)coachPlace(cc,b);}cc.style.opacity='';}last=key;},70);}
+/* a real tap re-lays the page (tray re-renders, suitor added, sheet opens): hide the bubble at once, re-dock once things settle */
+document.addEventListener('click',e=>{if(!TOUR.on)return;if(e.target&&e.target.closest&&e.target.closest('#coach'))return;tourHold();},true);
 {const _tp=tourPaint;tourPaint=function(){_tp.apply(this,arguments);
  /* QA r9: a NEW step's bubble stays invisible until its target stops moving (late image, the app's own scroll), then docks and shows: no flash over the photo */
- {const c0=$('coach'),s0=TSTEPS[TOUR.step];if(c0&&s0&&!s0.hand&&TOUR.lastShown!==TOUR.step){TOUR.lastShown=TOUR.step;c0.style.opacity='0';let last='',k=0;clearInterval(TOUR.stI);
-  TOUR.stI=setInterval(()=>{const cc=$('coach'),b=tourTarget(s0);if(!cc||!TOUR.on||TSTEPS[TOUR.step]!==s0){clearInterval(TOUR.stI);if(cc)cc.style.opacity='';return;}
-   const r=b&&b.getBoundingClientRect(),key=r?[r.top,r.left,r.height].map(Math.round).join():'x';
-   if(key===last||++k>22||!b){clearInterval(TOUR.stI);if(b){const q=cc.getBoundingClientRect();if(!(q.bottom<=r.top||q.top>=r.bottom||q.right<=r.left||q.left>=r.right)&&r.height+q.height+90<=innerHeight)coachPlace(cc,b);}cc.style.opacity='';}last=key;},70);}}
+ {const s0=TSTEPS[TOUR.step];if(s0&&!s0.hand&&TOUR.lastShown!==TOUR.step){TOUR.lastShown=TOUR.step;tourHold();}}
  let n=0;clearInterval(TOUR.wI);TOUR.wI=setInterval(()=>{if(!TOUR.on||++n>12){clearInterval(TOUR.wI);return;}
  const s=TSTEPS[TOUR.step];if(!s||s.hand)return;const b=tourTarget(s),c=$('coach');if(!b||!c||c.style.visibility==='hidden')return;const r=b.getBoundingClientRect(),q=c.getBoundingClientRect();
  const over=!(q.bottom<=r.top||q.top>=r.bottom||q.right<=r.left||q.left>=r.right);if(over&&r.height+q.height+90<=innerHeight)coachPlace(c,b);},250);};}
