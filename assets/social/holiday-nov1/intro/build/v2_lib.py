@@ -20,7 +20,11 @@ def start(p, scale=2):
             r.fulfill(status=200, body=HTML, headers={'content-type': 'text/html; charset=utf-8'})
         else:
             f = u.split('fym.test/', 1)[1]
-            r.fulfill(response=r.fetch(url=(BASE if f.startswith(('mc/', 'thumbs113')) else BASE72) + f))
+            # Nov 3 fix: only mc/218+ live in the v113 folder; older mat bundles (mc/86-171) live in v72. Sending them all to v113 404'd,
+            # so the app fell back to its 140px thumbnails (the pixelated mats Tiffany saw).
+            m = re.match(r'mc/(\d+)\.', f)
+            new = f.startswith('thumbs113') or (m and int(m.group(1)) >= 218)
+            r.fulfill(response=r.fetch(url=(BASE if new else BASE72) + f))
     ctx.route('https://fym.test/**', h)
     pg = ctx.new_page()
     pg.goto('https://fym.test/index.html?tour=off'); pg.wait_for_timeout(7000)
