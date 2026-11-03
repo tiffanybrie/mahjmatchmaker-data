@@ -461,7 +461,7 @@ if "if(S.rpick.length>=2){const old=S.rpick.shift();toast(" not in UI: F.append(
 _rr = fn('renderRacks')
 if not (0 <= _rr.find("deck('r')") < _rr.find("tray('r')")) or 'Browsing racks' in UI: F.append("[23] racks step: suitors tray must sit after the rack deck, and no 'Browsing racks' tab (Oct 23 mirror)")
 if re.search(r'(?i)press and hold', TXT): F.append("[23] press-and-hold save copy still in the UI (does not work on iPhone)")
-if "claude.use('downloads')" not in UI or 'navigator.share' not in UI or 'Save / Share my match card' not in UI: F.append("[23] Save / Share button does not use downloads capability + navigator.share")
+if "claude.use('downloads')" not in UI or 'navigator.share' not in UI or ('Save / Share my match card' not in UI and 'Save image / Share' not in UI): F.append("[23] Save / Share button does not use downloads capability + navigator.share")
 if not re.search(r"CARD_SIZES=\{story:\{w:1080,h:1920.*post:\{w:1080,h:1350.*pin:\{w:1000,h:1500", UI) or re.search(r'Facebook post|Pinterest pin', TXT): F.append("[23] card sizes are not Story 9:16 / Post 4:5 / Pin 2:3 (or old FB/Pin variants remain)")
 if "' to save'" not in fn('codeLine') and 'to save' not in fn('codeLine'): F.append("[23] card code line does not say 'Use code ... to save'")
 # 24 zoom (Oct 21 6:30pm: swiping sticky right after zoom-out): pinch end snaps ~1x to 1x and re-seeds the drag
@@ -567,7 +567,9 @@ def _order(src, parts):
     return all(p_ >= 0 for p_ in pos) and pos == sorted(pos)
 if not _order(_rm, ["tileView('m')", 'class="tcap"', "deck('m')", "filters('m')", "acts('m')", "tray('m')"]): F.append("[37] mat screen order changed (tiles, caption, deck, filters, ✕/♥, suitors; Tiffany Oct 30 11:53am: pictures together, filters under the deck)")
 # Oct 25 (Tiffany 14:36): on racks the Brand/colour row sits BETWEEN the mat picture and the rack cards (her husband never found it above the mat)
-if not _order(_rr, ["matBand()", 'class="tcap"', 'class="rfil"', "filters('r')", "deck('r')", "acts('r')", "tray('r')"]): F.append("[37] rack screen order changed (mat, caption, brand/colour row, rack deck, ✕/♥, rack suitors)")
+if '/*v114 rack filters below*/' in UI:  # Tiffany Nov 3 2:27pm: the rack menu sits BELOW the rack deck (gate [148] checks nothing sits between mat and deck)
+    if not _order(_rr, ["matBand()", 'class="tcap"', "deck('r')", 'class="rfil"', "filters('r')", "acts('r')", "tray('r')"]): F.append("[37] rack screen order changed (mat, caption, rack deck, menu below, ✕/♥, rack suitors)")
+elif not _order(_rr, ["matBand()", 'class="tcap"', 'class="rfil"', "filters('r')", "deck('r')", "acts('r')", "tray('r')"]): F.append("[37] rack screen order changed (mat, caption, brand/colour row, rack deck, ✕/♥, rack suitors)")
 _between = _rr[_rr.find("matBand()"):_rr.find("deck('r')")]
 if re.search(r"tray\(|slots|rSuitors|herBar", _between): F.append("[37] something sits between the mat and the rack swiper (no slots/picker there)")
 if "herBar('r')" in _rr: F.append("[37] second Tiffany's picks toggle (herBar) still on the rack screen")
@@ -1628,7 +1630,9 @@ if '/*v112q' in UI:
 # [143] QA r2: a mouse click on a link inside the top swipe card (Dapper, Also available) opens a new tab, 390 + 1280.
 # Both run in Chromium on the page's own code: builder/fym_cap_check.js (every visible mat's tAll(), every set's matDeck() + rackDeck()).
 if 'function BCAP(' in UI or any(_m.get('add') == 'nov01-v113' for _m in M.values()):
-    for _a, _w in (('function BCAP(ids,keep,bo)', 'BCAP function'), ('if(!f.brand)ids=BCAP(ids,f.her?herMat:NOK,id=>M[id].bn);', 'mat deck cap'),
+    # v114 (Nov 3 2:48pm): picks default off but her picks still lead the mat deck, so they stay exempt from the cap either way
+    _mcap = 'if(!f.brand)ids=BCAP(ids,herMat,id=>M[id].bn);' if '/*v114 types*/' in UI else 'if(!f.brand)ids=BCAP(ids,f.her?herMat:NOK,id=>M[id].bn);'
+    for _a, _w in (('function BCAP(ids,keep,bo)', 'BCAP function'), (_mcap, 'mat deck cap'),
                    ('BCAP([...g.alb,...g.cat],NOK,r=>TB(r.s))', 'mat-door tile deck cap over album+catalog combined'),
                    ('if(!f.brand)ids=BCAP(ids,r=>hr.includes(r),r=>R[r].bn);return ids;}', 'rack deck cap (last)'),
                    ('if(!R[id]||R[id].hid)return false;', 'rack search skips hidden racks')):
@@ -1690,7 +1694,7 @@ if '/*v114 table view*/' in UI:
                    ("const L=FINS.filter(x=>pool.some(id=>RFIN(id).includes(x)));", 'finish row never shrinks'),
                    ("if(SW.tab==='racks')SW.fin='';dots();fins();grid();return}", 'Table sheet: a colour replaces the finish'),
                    ("if(SW.fin)SW.color='';dots();fins();grid();return}", 'Table sheet: a finish replaces the colour'),
-                   ("{k:'table',t:'New · Try Table view'", 'tour step on the View switch'),
+                   (("{k:'view',t:'Pick your view'" if '/*v114 tour*/' in UI else "{k:'table',t:'New · Try Table view'"), 'tour step on the View switch'),
                    ('const TRS=k=>(TVD.ro&&TVD.ro[k])||rackSrc(k)', 'Table racks use the clean cut-outs'), ('function shaveA(im)', '1px alpha shave at draw time'),
                    ('<em class="prcv">Under $${v} with code MAHJMATCH</em>', 'card under a price chip only via the code says so (QA Nov 2)'),
                    ("<em>Under $${SW.price} with code MAHJMATCH</em>", 'Table sheet item under the chip only via the code says so')):
@@ -1740,6 +1744,15 @@ if '/*v114 table view*/' in UI:
         _l150 = [l for l in _o150.stdout.splitlines() if l.startswith('[150]')]
         if _o150.returncode and not _l150: _l150 = ['[150] match cards check failed: ' + (_o150.stderr or '')[-200:]]
         for _f in _l150[:8]: F.append(_f)
+# [153] Tiffany Nov 3 2:58pm: stars became hearts; hearted swipes auto-save to My hearts (deduped), x remove, account prompt on the card.
+if '/*v114 table view*/' in UI:
+    if '/*v114 hearts*/' not in UI: F.append("[153] stars are not hearts yet (builder/fym_fix_nov02/hearts114.py)")
+    else:
+        import subprocess as _sp153
+        _o153 = _sp153.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fym_fix_nov02', 'hearts_check.py'), B], capture_output=True, text=True, timeout=600)
+        _l153 = [l for l in _o153.stdout.splitlines() if l.startswith('[153]')]
+        if _o153.returncode and not _l153: _l153 = ['[153] hearts check failed: ' + (_o153.stderr or '')[-200:]]
+        for _f in _l153[:8]: F.append(_f)
 # [151] Tiffany Nov 3 2:48pm: ONE type per rack (config/rack-types-nov03.json, by eye), Wood tone + Painted, no Walnut, no painted rack
 # in Wood tone. [152]: Tiffany's picks default OFF (tiles, mat door, racks), her picks still lead the mat deck, price = one dropdown.
 if '/*v114 table view*/' in UI:

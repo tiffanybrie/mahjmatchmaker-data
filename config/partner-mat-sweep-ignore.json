@@ -292,6 +292,16 @@
    "name": "Vibrant Vortex Open Middle Mahjong Mat",
    "reason": "same design + the same product photo as Vibrant Vortex Simple Middle (already in FYM since v112); LBB lists it twice (checked by eye Nov 1)",
    "added": "2026-11-01"
+  },
+  "letsbebesties.com/electric-zigzag-mahjong-mat": {
+   "name": "Electric ZigZag Mahjong Mat",
+   "reason": "TEMPORARY (Nov 3, v114 builder): new Nov 1 LBB listing queued for the Matches & Catalog catalog build (docs/MATCH-INBOX.md Nov 1 6:10pm); v114 is a UI release and ships without it. REMOVE this line when the mat is added to FYM.",
+   "added": "2026-11-03"
+  },
+  "letsbebesties.com/christmas-lights-mahjong-mat": {
+   "name": "Christmas Lights Mahjong Mat",
+   "reason": "TEMPORARY (Nov 3, v114 builder): new Nov 1 LBB listing queued for the Matches & Catalog catalog build (docs/MATCH-INBOX.md Nov 1 6:10pm); v114 is a UI release and ships without it. REMOVE this line when the mat is added to FYM.",
+   "added": "2026-11-03"
   }
  }
 }

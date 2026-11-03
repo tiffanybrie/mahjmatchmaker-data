@@ -18,7 +18,7 @@ try{const p=await b.newPage({viewport:{width:390,height:844}});await p.route(/su
   S.ins=false;S.door='mat';let n1=0;
   for(const id of Object.keys(M).filter(i=>!M[i].hid&&!M[i].rt)){S.dmat=id;S.tfront=null;S.tseen={};const A=tAll();n1++;const s=st(A,r=>TB(r.s),r=>r.her);if(s.bad&&F.length<40)F.push(`[140] mat-door tile deck for ${M[id].n}: ${s.mx[0]} ${s.mx[1]} of 30, back-to-back ${s.adj}`);}
   S.door='tiles';const VS=D.sets.map((s,i)=>[s,i]).filter(([s])=>VIS(s));let n2=0;
-  for(const [s,i] of VS){S.set=i;S.f.m={fam:[],brand:'',her:false,multi:false};S.mfront=null;S.seen={};const A=matDeck();n2++;const x=st(A,id=>M[id].bn,()=>false);if(x.bad&&F.length<60)F.push(`[140] mat deck for ${s.name}: ${x.mx[0]} ${x.mx[1]} of 30, back-to-back ${x.adj}`);
+  for(const [s,i] of VS){S.set=i;S.f.m={fam:[],brand:'',her:false,multi:false};S.mfront=null;S.seen={};const A=matDeck();n2++;const x=st(A,id=>M[id].bn,typeof herMat==='function'&&String(matDeck0).includes('/*v114')?id=>herMat(id):()=>false);/* v114: her picks lead even with picks off; exempt */if(x.bad&&F.length<60)F.push(`[140] mat deck for ${s.name}: ${x.mx[0]} ${x.mx[1]} of 30, back-to-back ${x.adj}`);
    S.fav=(s.m[0]||[])[0]||A[0];if(!S.fav||!M[S.fav])continue;for(const her of [false,true]){S.f.r={fam:[],brand:'',her,fin:''};S.rseen={};const hr=herRacks();const q=rackDeck();const y=st(q,r=>R[r].bn,r=>hr.includes(r));if(y.bad&&F.length<80)F.push(`[140] rack deck (picks ${her?'on':'off'}) for ${s.name}: ${y.mx[0]} ${y.mx[1]} of 30, back-to-back ${y.adj}`);}}
   // search hygiene
   const QS=['wood','solid wood','tortoise','pearl','clear','white','pink','register','mahjong','acrylic','walnut','lucite','christmas','floral','besties','queen'];

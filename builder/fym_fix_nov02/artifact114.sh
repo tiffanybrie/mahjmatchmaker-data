@@ -11,4 +11,5 @@ python3 $H/share114.py "$O"   # Text or email me this list never ends silently (
 python3 $H/cards114.py "$O"   # My match cards: one per tile set, remove + undo, Save image (Nov 3 2:43pm)
 python3 $H/types114.py "$O"   # rack types (one per rack) + Tiffany's picks default off (Nov 3 2:48pm)
 python3 $H/tour114.py "$O"   # 30-second tour rebuild (Tiffany Nov 3 2:54pm)
+python3 $H/hearts114.py "$O"   # hearts (Nov 3 2:58pm)
 ls -l "$P/index.html" "$O/index.html" "$O/mc/190.webp"

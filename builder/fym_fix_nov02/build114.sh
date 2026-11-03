@@ -12,3 +12,4 @@ python3 $H/share114.py "$D"   # Text or email me this list never ends silently (
 python3 $H/cards114.py "$D"   # My match cards: one per tile set, remove + undo, Save image (Nov 3 2:43pm)
 python3 $H/types114.py "$D"   # rack types (one per rack) + Tiffany's picks default off (Nov 3 2:48pm)
 python3 $H/tour114.py "$D"   # 30-second tour rebuild (Tiffany Nov 3 2:54pm)
+python3 $H/hearts114.py "$D"   # stars become hearts + auto-save hearted swipes + account prompt (Nov 3 2:58pm)

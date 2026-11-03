@@ -14,24 +14,44 @@ B = os.path.abspath(sys.argv[1]); OUT = sys.argv[2] if len(sys.argv) > 2 else No
 so = socket.socket(); so.bind(('127.0.0.1', 0)); port = so.getsockname()[1]; so.close()
 srv = subprocess.Popen([sys.executable, '-m', 'http.server', str(port), '--bind', '127.0.0.1', '--directory', B], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL); time.sleep(1)
 URL = f'http://localhost:{port}/index.html'
-ORDER = ['tiles', 'mats', 'pick', 'add', 'racks', 'rpick', 'make', 'share', 'shop']
 import re as _re
-if "{k:'table'," in open(os.path.join(B, 'index.html')).read(): ORDER.insert(2, 'table')  # v114: 'Try Table view' tip on the View switch after the mat swipe step
+_H = open(os.path.join(B, 'index.html')).read()
+V114 = '/*v114 tour*/' in _H
+if not V114:
+    ORDER = ['tiles', 'mats', 'pick', 'add', 'racks', 'rpick', 'make', 'share', 'shop']
+    if "{k:'table'," in _H: ORDER.insert(2, 'table')
+    FIRST = 'tiles'
+else:  # v114 tour rebuild (Tiffany Nov 3 2:54pm): finder + grid steps, Table mini-tour, rack menu, list + My match cards
+    ORDER = ['door', 'find', 'grid', 'mats', 'view', 'pick', 'add', 'racks', 'rmenu', 'rpick', 'make', 'share', 'list', 'mine']
+    FIRST = 'door'
 ACT = {'tiles': '#s-tiles .tgrid [data-tile]', 'mats': '[data-yes="m"]', 'table': '[data-tour-next]', 'pick': '.tray .th button', 'add': 'TARGET',
-       'racks': '[data-yes="r"]', 'rpick': '#rtray .th button', 'make': 'TARGET', 'share': '[data-tour-next]', 'shop': '[data-tour-next]'}
+       'racks': '[data-yes="r"]', 'rpick': '#rtray .th button', 'make': 'TARGET', 'share': '[data-tour-next]', 'shop': '[data-tour-next]',
+       'door': '[data-door="tiles"]', 'find': '[data-tour-next]', 'grid': '#tgrid [data-tile]', 'view': '[data-tour-next]', 'tv1': '[data-tour-next]',
+       'tv2': '[data-tour-next]', 'tv3': '[data-tour-next]', 'rmenu': '[data-tour-next]', 'list': '[data-tour-next]', 'mine': '[data-tour-next]',
+       'mfind': '[data-tour-next]', 'mgrid': '#mdgrid button', 'tswipe': '[data-tyes]', 'tpk': '#s-tiles .tray [data-tpk]', 'tadd': '#s-tiles [data-tadd]'}
+# extra v114 walks: (name, door, view) -> the steps they must show (tv3 only when the top mat is grayed)
+WALKS = [('tiles-close', 'tiles', None)] + ([('tiles-table', 'tiles', 'table'), ('mat-aerial', 'mat', 'aerial'), ('mat-table', 'mat', 'table')] if V114 else [])
+def want(door, view):
+    if not V114: return ORDER
+    o = (['door', 'find', 'grid', 'mats', 'view'] if door == 'tiles' else ['door', 'mfind', 'mgrid', 'tswipe', 'tpk', 'tadd', 'view'])
+    if view == 'table': o += ['tv1', 'tv2', 'tv3']
+    o += (['pick', 'add'] if door == 'tiles' else []) + ['racks', 'rmenu', 'rpick', 'make', 'share', 'list', 'mine']
+    return o
 STATE = """()=>{if(!TOUR.on)return {on:false};const s=TSTEPS[TOUR.step],c=document.getElementById('coach'),t=tourTarget(s);
  const cr=c&&c.getBoundingClientRect(),tr=t&&t.getBoundingClientRect(),vh=innerHeight,vw=document.documentElement.clientWidth;
  const inter=!!(cr&&tr)&&!(cr.right<=tr.left||tr.right<=cr.left||cr.bottom<=tr.top||tr.bottom<=cr.top);
- const vis=tr?Math.max(0,Math.min(tr.bottom,vh)-Math.max(tr.top,56))/Math.max(1,Math.min(tr.height,vh-56)):0;
+ const top=t&&t.closest&&t.closest('.tbx')?0:56;/* v114: My match cards lives in the fixed top bar */
+ const vis=tr?Math.max(0,Math.min(tr.bottom,vh)-Math.max(tr.top,top))/Math.max(1,Math.min(tr.height,vh-top)):0;
  return {on:true,k:s.k,title:s.t,cstep:c&&c.dataset.step,ctext:c?c.textContent:'',target:!!t,vis:Math.round(vis*100)/100,inter,
    offX:tr?(tr.left<-1||tr.right>vw+1):false,log:TOUR.log.slice()};}"""
 fails = []
 def F(tag, msg): print(tag, 'FAIL', msg); fails.append(f'{tag}: {msg}')
 with sync_playwright() as p:
-    for bt in ('chromium', 'webkit'):
-        for (w, h) in ((390, 664), (390, 844), (1280, 800)):
-            if bt == 'webkit' and w > 400: continue
-            tag = f'{bt}-{w}x{h}'
+    RUNS = [(bt, w, h, WALKS[0]) for bt in ('chromium', 'webkit') for (w, h) in ((390, 664), (390, 844), (1280, 800)) if not (bt == 'webkit' and w > 400)]
+    RUNS += [(bt, 390, 844, wk) for wk in WALKS[1:] for bt in ('chromium', 'webkit')]
+    for (bt, w, h, (wname, wdoor, wview)) in RUNS:
+        if True:
+            tag = f'{bt}-{w}x{h}' + ('' if wname == 'tiles-close' else '-' + wname)
             try: br = getattr(p, bt).launch()
             except Exception as e_: print(tag, 'SKIP: browser not installed here'); continue
             pg = br.new_page(viewport={'width': w, 'height': h}); errs = []
@@ -48,8 +68,12 @@ with sync_playwright() as p:
             pg.locator('[data-tour-go]').click(); time.sleep(.8)
             if pg.evaluate('window.scrollY') > 2: F(tag, 'step 1 moved the screen')
             if pg.evaluate("TSTEPS[TOUR.step].b") != '#s-tiles .door': F(tag, 'step 1 is not the two doors')
-            seen = []
-            for n in range(12):
+            if V114 and pg.evaluate("TSTEPS[TOUR.step].k") != 'door': F(tag, 'step 1 is not the door step')
+            if V114:  # nothing moves on until the person taps a door
+                time.sleep(1.2)
+                if pg.evaluate("TSTEPS[TOUR.step].k") != 'door': F(tag, 'the door step moved on before a door was tapped')
+            seen = []; grayed = False
+            for n in range(24):
                 time.sleep(.9)
                 st = pg.evaluate(STATE)
                 if not st['on']: break
@@ -63,21 +87,27 @@ with sync_playwright() as p:
                 if st['vis'] < .6 or st['offX']: F(tag, f'step {k}: target not in view when the step starts (visible {st["vis"]})')
                 if st['inter']: F(tag, f'step {k}: tip box covers its target')
                 sel = ACT[k]
+                if k == 'door': sel = f'[data-door="{wdoor}"]'
+                if k == 'view' and wview: sel = f'#s-mats .vrow [data-mode="{wview}"]'
+                if k == 'tv1' and not pg.evaluate("S.mode==='table'"): F(tag, 'Table tour step shown outside Table view')
+                if k == 'tv3': grayed = True
                 if sel == 'TARGET':
-                    sel = pg.evaluate("(()=>{const s=TSTEPS[TOUR.step];return s.b.split(',').find(x=>document.querySelector(x));})()")
-                if k == 'tiles' and not pg.locator(sel).count():  # v104: tiles door opens on brand logos; a person taps a brand, then a set
+                    sel = pg.evaluate("(()=>{const s=TSTEPS[TOUR.step];return (typeof s.b==='function'?s.b():s.b).split(',').find(x=>document.querySelector(x));})()")
+                if k == 'view' and wview and not pg.locator(sel).count(): sel = f'[data-mode="{wview}"]'
+                if k in ('tiles', 'grid') and not pg.locator(sel).count():  # v104: tiles door opens on brand logos; a person taps a brand, then a set
                     pg.locator('#s-tiles .blg').first.click(); time.sleep(.7)
                 pg.locator(sel).first.click()
                 if k == 'add':
                     time.sleep(.5)
                     if not pg.evaluate('!!S.fav'): F(tag, 'Add racks needed more than one tap')
             print(tag, 'steps', seen)
-            if seen != ORDER: F(tag, f'step order {seen} != {ORDER}')
+            _w = [x for x in want(wdoor, wview) if x != 'tv3' or grayed]
+            if seen != _w: F(tag, f'step order {seen} != {_w}')
             if pg.evaluate('TOUR.on'): F(tag, 'tour still on after Done')
             if errs: F(tag, f'page errors {errs[:2]}')
             # replay from the start
             pg.locator('[data-tour]').first.click(); time.sleep(.8)
-            if not pg.evaluate("TOUR.on&&TSTEPS[TOUR.step].k==='tiles'"): F(tag, '"Take the tour" did not replay from step 1')
+            if not pg.evaluate(f"TOUR.on&&TSTEPS[TOUR.step].k==='{FIRST}'"): F(tag, '"Take the tour" did not replay from step 1')
             br.close()
     # off-script (QA v75): picks toggle on the swipe steps, Back to the deck on step 4, Change mat on the racks step
     for (w, h) in ((390, 844), (390, 664)):

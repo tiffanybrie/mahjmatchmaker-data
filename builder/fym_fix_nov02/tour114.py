@@ -23,11 +23,13 @@ rep("+doorChips()+matBrandMenu()+`<div class=\"msearch\"><input id=\"mdq\"", "+'
 rep('aria-label="Search mats"></div><div class="tgrid mgrid" id="mdgrid">', 'aria-label="Search mats"></div></div><div class="tgrid mgrid" id="mdgrid">')
 # steps
 i = h.index('const TSTEPS=['); j = h.index('];\nTOUR.log=[];', i) + 2
-STEPS = r"""const TSTEPS=[/*v114 tour*/
+STEPS = r"""/* the finder is taller than a small phone can show with its bubble: ring the colours there (brand + search sit right below) */
+const TFB=()=>(innerHeight||800)<760?'#s-tiles .tfind .tchips':'#s-tiles .tfind';
+const TSTEPS=[/*v114 tour*/
  {k:'door',t:'Tiles or mat',p:'Start with your tiles, or with a mat you already love.',b:'#s-tiles .door',still:true,done:()=>!!TOUR.f.door||S.set!=null||!!S.dmat},
- {k:'find',t:'Find your tiles',p:'Shop by color, pick a brand, or search a set by name.',b:'#s-tiles .tfind',ring:true,next:'Next',done:()=>!!TOUR.f.find||S.set!=null,skip:()=>S.door==='mat'},
+ {k:'find',t:'Find your tiles',p:'Shop by color, pick a brand, or search a set by name.',b:TFB,ring:true,next:'Next',done:()=>!!TOUR.f.find||S.set!=null,skip:()=>S.door==='mat'},
  {k:'grid',t:'Tap a tile set',p:'Tap the tiles you’re bringing to the table.',b:'#tgrid [data-tile],#tgrid .blg,#tgrid button',done:()=>S.set!=null,skip:()=>S.door==='mat'},
- {k:'mfind',t:'Find your mat',p:'Shop by color, pick a brand, or search your mat by name.',b:'#s-tiles .tfind',ring:true,next:'Next',done:()=>!!TOUR.f.find||!!S.dmat,skip:()=>S.door!=='mat'},
+ {k:'mfind',t:'Find your mat',p:'Shop by color, pick a brand, or search your mat by name.',b:TFB,ring:true,next:'Next',done:()=>!!TOUR.f.find||!!S.dmat,skip:()=>S.door!=='mat'},
  {k:'mgrid',t:'Tap your mat',p:'Tap the mat you already have or love.',b:'#mdgrid button',done:()=>!!S.dmat,skip:()=>S.door!=='mat'},
  {k:'tswipe',t:'Swipe the tiles',p:'Tap ♥ if you love these tiles on your mat, ✕ if they’re not the one.',b:'#top-t',hand:'t',done:()=>S.tliked.length>0||S.set!=null,skip:()=>S.door!=='mat'},
  {k:'tpk',t:'Pick your tiles',p:'Tap your favorite in Suitors.',b:'#s-tiles .tray [data-tpk]',done:()=>S.tpeek!=null||S.set!=null,skip:()=>S.door!=='mat'},
@@ -47,13 +49,23 @@ STEPS = r"""const TSTEPS=[/*v114 tour*/
  {k:'list',t:'Your shopping list',p:'Text or email yourself every piece with its link.',b:'[data-shoplist]',next:'Next'},
  {k:'mine',t:'My match cards',p:'Every card you make waits under ★ at the top, one per tile set.',b:'.tbx [data-mystars]',next:'Done ♥'}];"""
 h = h[:i] + STEPS + h[j:]
+rep("function tourTarget(s){return s.b.split(',')", "function tourTarget(s){return (typeof s.b==='function'?s.b():s.b).split(',')")
+# a target in the fixed top bar (My match cards under the heart) is on screen even though it sits above the 56px line
+rep("const r=b.getBoundingClientRect(),seen=r.bottom>56&&r.top<innerHeight;", "const r=b.getBoundingClientRect(),seen=(r.bottom>56||!!b.closest('.tbx'))&&r.top<innerHeight;")
+# the top-bar target (My match cards) is fixed: never scroll the page for it (the card stays on screen)
+rep(" else if(r.top<TOPS||r.bottom>vh){b.scrollIntoView(", " else if((r.top<TOPS||r.bottom>vh)&&!b.closest('.tbx')){b.scrollIntoView(")
 # re-check on every real action; remember the actions the steps wait for
 rep("TOUR.log=[];\nconst NOTOUR=", """TOUR.log=[];TOUR.f={};
 document.addEventListener('click',e=>{if(!TOUR.on)return;const q=s=>e.target.closest&&e.target.closest(s);if(q('#coach'))return;
  if(q('[data-door]'))TOUR.f.door=1;if(q('[data-tcol],[data-blogo],.blg,[data-dfam],[data-dmulti]'))TOUR.f.find=1;if(q('[data-mode]'))TOUR.f.view=1;if(q('[data-tvadj]'))TOUR.f.adj=1;
- setTimeout(tourSync,90);},true);
+ setTimeout(tourSync,90);clearTimeout(TOUR.rpT);TOUR.rpT=setTimeout(()=>{if(TOUR.on){TOUR.repos=1;tourPaint();}},480);/* re-dock after the app's own scroll (land) settles */},true);
 document.addEventListener('input',e=>{if(!TOUR.on)return;if(e.target&&/^(tsq|mdq)$/.test(e.target.id)&&e.target.value.trim().length>1)TOUR.f.find=1;setTimeout(tourSync,150);},true);
 document.addEventListener('change',e=>{if(!TOUR.on)return;if(e.target&&e.target.closest&&e.target.closest('.tfind'))TOUR.f.find=1;setTimeout(tourSync,120);},true);
+/* the bubble never sits on its target: for 3s after each paint, if a late image or the app's own scroll moved the target under
+   the bubble, dock it again (only when the target and bubble fit on screen together) */
+{const _tp=tourPaint;tourPaint=function(){_tp.apply(this,arguments);let n=0;clearInterval(TOUR.wI);TOUR.wI=setInterval(()=>{if(!TOUR.on||++n>12){clearInterval(TOUR.wI);return;}
+ const s=TSTEPS[TOUR.step];if(!s||s.hand)return;const b=tourTarget(s),c=$('coach');if(!b||!c||c.style.visibility==='hidden')return;const r=b.getBoundingClientRect(),q=c.getBoundingClientRect();
+ const over=!(q.bottom<=r.top||q.top>=r.bottom||q.right<=r.left||q.left>=r.right);if(over&&r.height+q.height+90<=innerHeight)coachPlace(c,b);},250);};}
 const NOTOUR=""")
 rep("TOUR.on=true;TOUR.step=0;TOUR.log=[];", "TOUR.on=true;TOUR.step=0;TOUR.log=[];TOUR.f={};")
 rep("document.querySelectorAll('.bnc').forEach(e=>e.classList.remove('bnc'));", "document.querySelectorAll('.bnc,.tring').forEach(e=>e.classList.remove('bnc','tring'));", 2)
