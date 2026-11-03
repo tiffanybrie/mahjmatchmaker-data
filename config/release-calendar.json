@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-03",
- "updatedBy": "partner watch Nov 3 2:50pm ET",
+ "updatedBy": "partner watch Nov 3 6:40pm ET",
  "rules": {
   "timing": {
    "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -1113,7 +1113,8 @@
    "affiliate": true,
    "priority": 3,
    "contentTiming": "Not an album set. Check store Nov 3 after 4pm CT; no MAHJMATCH/#MahjMatch in any text naming TdT.",
-   "status": "coming today 4pm CT (TdT IG Nov 3 11:40am ET 'today's Oyster tile drop')"
+   "status": "LIVE Nov 3 (store check 6:40pm ET: house-tigers-mahjong-tile-set-oyster available, $295)",
+   "url": "https://tigredetartan.com/products/house-tigers-mahjong-tile-set-oyster"
   },
   {
    "id": "noli-june-falaladies-nov3",
@@ -1276,12 +1277,14 @@
    "window": "Fri Nov 6 2026, 10am CST (11am ET)",
    "windowStart": "2026-11-06",
    "windowEnd": "2026-11-06",
-   "status": "announced",
+   "status": "announced; store has no product pages yet (check Nov 3 6:40pm ET); teaser photos assets/launches/mahjongrow-moody-tortoise-brunette-burl-teaser/",
    "source": "Instagram @mahjongrowandco feed post, Tue Nov 3 ~10am ET (after the 9:15am launch watch and the 9:20am FB group codes post; Tiffany sent a screenshot 12:57pm)",
    "album": false,
    "affiliate": true,
    "priority": 1,
-   "contentTiming": "Top earner brand. Same day Fri: add both sets to FYM + gallery when product pages go live, save the flat product renders to Dropbox, reshare their post with code MAHJMATCH; Foxhill Plaid + Oxblood racks when listed. Mention in next Tuesday's codes post."
+   "contentTiming": "Top earner brand. Same day Fri: add both sets to FYM + gallery when product pages go live, save the flat product renders to Dropbox, reshare their post with code MAHJMATCH; Foxhill Plaid + Oxblood racks when listed. Mention in next Tuesday's codes post.",
+   "sourceUrl": "https://www.instagram.com/p/DfSI3P6G3C6/",
+   "date": "2026-11-06T10:00-06:00"
   },
   {
    "id": "bespoke-sunshine-glow-nov4",
@@ -1336,6 +1339,23 @@
    "affiliate": true,
    "priority": 3,
    "contentTiming": "Accessories, not tiles/mats: record only. Affiliate embargo until Nov 4 8am."
+  },
+  {
+   "id": "bb-20in-stain-racks-nov3",
+   "brand": "Bird & Bamboo",
+   "product": "20in wood-STAIN racks back in stock (21in racks sold out until January)",
+   "type": "restock",
+   "window": "LIVE Nov 3",
+   "windowStart": "2026-11-03",
+   "windowEnd": "2026-11-30",
+   "date": "2026-11-03",
+   "status": "LIVE Nov 3 (Emily's email to Tiffany 3:33pm ET; store check 6:40pm ET: 20in rack set 187/188 variants available; 21in all sold out)",
+   "source": "Email from Emily Kelker (Bird & Bamboo) Nov 3, Rack Color Samples thread",
+   "url": "https://birdandbamboo.com/products/20-inch-wooden-mahjong-rack-pusher-set-w-rack-bag",
+   "album": false,
+   "affiliate": true,
+   "priority": 4,
+   "contentTiming": "Racks, not tiles/mats: record only. Stain racks can be suggested again in wood-rack pairings."
   }
  ],
  "sources": {
