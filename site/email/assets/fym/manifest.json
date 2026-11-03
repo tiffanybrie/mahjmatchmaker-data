@@ -8,7 +8,8 @@
   "hl-request-h1": "Thank you for your request!",
   "hl-exists-h1": "Great taste!",
   "hl-live-h1": "You asked, I matched!",
-  "hero": "Find Your Mat-ch on a phone: Papaya Spritz tiles swiping on the Heiress mat by Britt Mills with the X and heart buttons, next to the start screen where you pick I have tiles or I have a mat"
+  "hero": "Find Your Mat-ch on a phone: Papaya Spritz tiles swiping on the Heiress mat by Britt Mills with the X and heart buttons, next to the start screen where you pick I have tiles or I have a mat",
+  "hl-newalbums-h1": "Holiday matches are here!"
  },
  "sizes": {
   "hl-exists-h1.png": [
@@ -100,6 +101,11 @@
    480,
    779,
    49484
+  ],
+  "hl-newalbums-h1.png": [
+   1055,
+   103,
+   5517
   ]
  }
 }

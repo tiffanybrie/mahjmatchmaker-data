@@ -25,6 +25,7 @@ Run this list top to bottom the day an album goes live. Every item is Claude's j
 
 ## 4. People who asked
 - [ ] Album-request contacts for this set get the "your album is live" email (Squarespace automation; doc 54).
+- [ ] **"New albums are live" email to All subscribers (the homepage "Get New Matches First" signups)** the same day: template `new-albums` in site/email/build.py (Tiffany Nov 3 1:59pm: Brownstone Bloom went live and no email went out). Build it as a Squarespace campaign; once she has approved the template, Claude sends (docs/EMAIL.md). Batches (e.g. holiday albums) = one email. The album launch is NOT done until this line is checked and logged in HQ.
 
 ## 5. The album it replaces
 - [ ] The previous "latest album" card leaves /links (it stays in the album strip).

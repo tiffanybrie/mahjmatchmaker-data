@@ -124,6 +124,36 @@ EMAILS = [
         "button": ("See your matches", f"{SITE}/mahjong-tile-matches"),
         "after": [CODE],
     },
+    {
+        # Tiffany Nov 3 1:59pm: every new album (or batch of albums) goes to the people who signed up for new matches.
+        # First send = the holiday albums. Template = one-time OK (needs her final read in Squarespace, doc 00f), then Claude sends.
+        "id": "new-albums",
+        "name": "Campaign: New albums are live",
+        "kind": "campaign",
+        "when": "sent by Claude the day an album (or a batch) goes live",
+        "to": "All subscribers",
+        "subject": "Your holiday matches are here! 🎄",
+        "preview": "New holiday albums, plus 140+ holiday mats to swipe",
+        "h1img": "hl-newalbums-h1",
+        "paras": [
+            'Holiday matching season is officially open! The new holiday albums are live, each one with the mats and racks I&rsquo;d pair with the set:',
+        ],
+        "list_head": "hl-welcome-start",
+        "list_plain": True,
+        "list": [
+            '<b>Dear Santa</b> by Anders Ruff',
+            '<b>Rackin&rsquo; Rudolph</b> by Hip Hip Mahjong',
+            '<b>Holly Jolly</b> in Rudolph Red, Grinch Green and Sugarplum Pink by Bam! Let&rsquo;s Mahjong',
+            '<b>Tinselle</b> and <b>Nivalee</b> by Virora Mahjong',
+            '<b>Nutcracker Ballet</b> by Mahj Squad',
+            '<b>Apr&egrave;s Ski Club</b> by Charleston Mahjong Club',
+        ],
+        "button": ("See the holiday albums", f"{SITE}/holiday-mahjong-matches"),
+        "after": [
+            'Already have tiles you love? 30+ of my albums now have a holiday section too. Or open ' + FYM_HTML + ', tap <b>Holiday</b> and swipe 140+ holiday mats with your own tiles.',
+            CODE,
+        ],
+    },
 ]
 
 CSS = f"""
@@ -207,7 +237,8 @@ def render(e, with_meta=True):
             n = t["n"]
             h.append(f'<div class="step">{img(f"step-sq{n}", "shot", 560)}<p>{nw(t["caption"])}</p></div>')
     if e.get("list"):
-        h.append(f'<div class="h2">{img(e["list_head"])}</div>')
+        if not e.get("list_plain"):
+            h.append(f'<div class="h2">{img(e["list_head"])}</div>')
         h.append("<ul>" + "".join(f"<li>{x}</li>" for x in e["list"]) + "</ul>")
     t, u = e["button"]
     h.append(f'<div class="btnw"><a class="btn" href="{u}">{t}</a></div>')

@@ -30,6 +30,7 @@ Source of truth: `site/email/build.py`. It holds the copy and builds `site/email
 | `album-request` | Album request thank-you | Automation "Reply to form submission", trigger = Request an Album form only | On submit, from launch | Got it! Your album request is in 💕 |
 | `album-exists` | "It's already in our library" | Sent by Claude (one-off campaign or a Gmail reply from mahjmatchmaker@) | When a request is for a set that already has an album | Good news, it's already in our library! |
 | `album-live` | "Your album is live" | Sent by Claude to everyone who asked for that set | When a requested album goes live | Your [tile set] matches are here! 🎉 |
+| `new-albums` | "New albums are live" (Nov 3) | Campaign, sent by Claude | The day an album (or a batch, e.g. holiday) goes live; NEW-ALBUM-CHECKLIST section 4 | Your holiday matches are here! 🎄 (per send) |
 
 Every email:
 - names Find *Your* Mat-ch™ (™ once)
