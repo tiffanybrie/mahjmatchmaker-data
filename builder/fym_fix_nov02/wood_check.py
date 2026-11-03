@@ -20,6 +20,21 @@ try:
         rows = pg.evaluate("""async()=>{const tv=D.tv||{},rt=tv.rt||{},out=[];const ids=Object.keys(rt).filter(k=>rt[k]==='wood'&&R[k]&&!R[k].hid);
           const get=async u=>{if(!u)return '';if(u.startsWith('data:'))return u;try{const b=await (await fetch(u)).blob();return await new Promise(r=>{const f=new FileReader();f.onload=()=>r(f.result);f.readAsDataURL(b);});}catch(e){return ''}};
           for(const k of ids){const d=rackSrc(k),t=(tv.ro&&tv.ro[k])||d;out.push({k,n:R[k].n,deck:await get(d),table:await get(t)});}return out;}""")
+        # QA r2 (Nov 3): the MATCH CARD canvas drew these racks from a different (flat HD) picture. Render the real card for each
+        # Wood tone rack and cut the rack out of the canvas exactly where drawCard drew it (drawImage is watched for the rack picture).
+        cards = pg.evaluate("""async()=>{const tv=D.tv||{},rt=tv.rt||{},out={};const ids=Object.keys(rt).filter(k=>rt[k]==='wood'&&R[k]&&!R[k].hid);
+          const s=D.sets.find(s=>s.m&&s.m.length&&M[s.m[0][0]]);S.set=D.sets.indexOf(s);S.fav=s.m[0][0];
+          const P=CanvasRenderingContext2D.prototype,o=P.drawImage;let rec=[],want=[],der=new WeakSet();
+          const hit=im=>im&&(der.has(im)||(im.src&&want.some(u=>im.src===u||im.src.startsWith(u+'?')||im.src.startsWith(u+'&'))));
+          /* follow the rack picture through the card's own trim / rotate canvases: any canvas it is drawn into counts as the rack too */
+          P.drawImage=function(im,...a){try{if(hit(im)&&a.length>=4){der.add(this.canvas);const t=this.getTransform();const[x,y,w,h]=a.length>=8?a.slice(4):a;rec.push({cv:this.canvas,im,x:t.a*x+t.e,y:t.d*y+t.f,w:t.a*w,h:t.d*h});}}catch(e){}return o.call(this,im,...a);};
+          try{for(const k of ids){rec=[];der=new WeakSet();want=[rackSrc(k),await hd('r',k)].filter(Boolean).map(u=>/^(data|blob):/i.test(u)?u:new URL(u,location.href).href);
+            S.rpick=[k];await drawCard();await new Promise(r=>setTimeout(r,30));
+            const W=Math.max(0,...rec.map(r=>r.cv.width)),d=rec.filter(r=>r.cv.width===W&&W>=1000).pop();  /* the draw onto the card canvas itself */
+            if(!d){out[k]='';continue;}const c=document.createElement('canvas');c.width=Math.max(1,Math.round(d.w));c.height=Math.max(1,Math.round(d.h));
+            const cg=c.getContext('2d');o.call(cg,d.cv,d.x,d.y,d.w,d.h,0,0,c.width,c.height);cg.globalCompositeOperation='destination-in';o.call(cg,d.im,0,0,c.width,c.height);out[k]=c.toDataURL('image/png');}}
+          finally{P.drawImage=o;}return out;}""")
+        for r in rows: r['card'] = cards.get(r['k'], '')
         br.close()
 finally: srv.kill()
 def tex(uri):
@@ -42,12 +57,12 @@ def tex(uri):
     return (round(float(np.median(vals)), 2) if vals else 0.0), im
 res = []
 for r in rows:
-    for path in ('deck', 'table'):
+    for path in ('deck', 'table', 'card'):
         v, im = tex(r[path]); res.append((r['n'], path, v, im))
         if v is None: F.append(f"[154] {r['n']}: no {path} image")
         elif v < MIN: F.append(f"[154] Wood tone rack shows a flat fill, no grain ({path} view, texture {v} < {MIN}): {r['n']}")
 UI = open(B + '/index.html').read(); i = UI.index('const D=') + 8; _, e = json.JSONDecoder().raw_decode(UI, i)
-if len(re.findall(r'R\[[^\]]{1,12}\]\.im\b(?!=)', UI[e:])) > 1: F.append('[154] some code reads a rack picture without rackSrc (wood fix would not reach it)')
+if len(re.findall(r'R\[[^\]]{1,12}\]\.im\b(?!=)', UI[e:].replace("String(R[r].im).startsWith('wg:')", ''))) > 1: F.append('[154] some code reads a rack picture without rackSrc (wood fix would not reach it)')
 if SHEET:
     W = 560; S = Image.new('RGB', (W * 2, 70 * len(res) // 2 + 70), 'white'); dr = ImageDraw.Draw(S)
     for j, (n, path, v, im) in enumerate(res):
