@@ -4,8 +4,8 @@ Gate [35] (tour walk) + [146] static check. Idempotent."""
 import sys, os
 P = sys.argv[1]; P = P if P.endswith('.html') else os.path.join(P, 'index.html'); h = open(P).read()
 if '/*v114 door neutral*/' in h: print('door114 already'); sys.exit()
-a = """function doorBtns(){const d=S.door||'tiles';return `<div class="door" role="group" aria-label="Start with"><button type="button" data-door="tiles" aria-pressed="${d==='tiles'}">Start with tiles<small>Find the mat they’re meant for</small></button><button type="button" data-door="mat" aria-pressed="${d==='mat'}">"""
-b = """function doorBtns(){/*v114 door neutral*/const d=(S.doorPicked||S.set!=null||!!S.dmat)?(S.door||'tiles'):'';return `<div class="door" role="group" aria-label="Start with"><button type="button" data-door="tiles" aria-pressed="${d==='tiles'}">Start with tiles<small>Find the mat they’re meant for</small></button><button type="button" data-door="mat" aria-pressed="${d==='mat'}">"""
+a = "function doorBtns(){const d=S.door||'tiles';"
+b = "function doorBtns(){/*v114 door neutral*/const d=(S.doorPicked||S.set!=null||!!S.dmat)?(S.door||'tiles'):'';"
 assert h.count(a) == 1, h.count(a); h = h.replace(a, b)
 js = "<script>/*v114 door tap*/document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-door]'))S.doorPicked=true;},true);</script>"
 j = h.rindex('</body>') if '</body>' in h else len(h); h = h[:j] + js + h[j:]
