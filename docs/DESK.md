@@ -49,7 +49,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Item | Owner | Next step | Target |
 |---|---|---|---|
 | Google: Amanda Toppe 10% fix, 27 pages to re-send, Wren/OMM verified lines, 5 AI-answer gaps | Main + Ops + tasks | Priority 1. | Tue Nov 3 |
-| Table view → FYM 1.14 | Matches & Catalog | Round 8 QA re-check → her OK → publish both places + README pin → snapshot. | Tue Nov 3 (else Wed) |
+| Table view → FYM 1.14 | Matches & Catalog | FINAL round built (Nov 3 3:40pm): preview v23, site fym-site-preview @40955493, data deef3fdd, gate PASS. With QA agent abcb882adccd9eaaa (hearts, tour both doors + Table, share list, match cards, price dropdown, types, picks off, wood recheck). On QA PASS: coordinator publishes live both places + README pin → snapshot. Her go-live OK already given (ANSWERS 2:48pm). TEMP ignore lines for 2 new LBB mats in config/partner-mat-sweep-ignore.json: remove when catalog adds them. | Tue Nov 3 |
 | Instagram restart (reel, codes post, new arrivals, week's posts) | Main | Her yes/post → Planoly IG + FB Page + stories. | Tue Nov 3 |
 | Holiday reels redo (Nutcracker/FYM reel with Table view) | Main | After 1.14 is live; intro reel v2 goes first. | Thu Nov 5 |
 | Catalog: Noli June, LBB broken links, Isla, Sunshine Glow, 39 new mats, MATCH-INBOX | Matches & Catalog | Priority 4. | Tue Nov 3 |
