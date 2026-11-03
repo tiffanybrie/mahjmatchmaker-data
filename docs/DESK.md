@@ -1,63 +1,65 @@
 # The Desk
-OPS (Nov 2, Tiffany): Amanda Toppe discount is 10%, NOT 20%. Fix live: /mahjong-discount-codes at-a-glance row + brand section + ItemList + FAQ JSON-LD ("20% at Britt Mills and Amanda Toppe" → Britt Mills only, check Britt Mills too: hub glance says 15%, FAQ says 20%), /amanda-toppe-discount-code (2x "20% off", verified line, FAQ JSON-LD), repo config/hub-at-a-glance.html, assets/search/search-index.json, FYM brand notes if any. Re-request indexing after. Docs: docs/ANSWERS.md Nov 2.
 Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cleanup (6:47am ET) reads it. Rules: CLAUDE.md ("THE DESK"), docs/CHATS.md (which chat owns what). During the day, when an agent stops, Chrome drops or a QA stalls, add the item here right away with its next step.
 
-**Last rewrite:** Sun Nov 1, 2026, ~9:55pm ET (desk cleanup run, cloud, no computer linked). Covers the 81 commits of Nov 1 ET (e850b65 … 5964498), docs/ANSWERS.md (Nov 1 lines), docs/MATCH-INBOX.md, Planoly (IG workspace 019fc27c… all 55 groups + Pinterest 019fc27b… scheduled queue), HQ needs (34 open → 25) / hq/albums / hq/now / hq/priorities / hq/social / log, Ready to Ship NOW (0 open), site/livepatch READMEs, config/release-calendar.json, content_lint (repo + Planoly IG export), curl checks (Brownstone checklist, Tinselle stock).
+**Last rewrite:** Mon Nov 2, 2026, ~9:45pm ET (desk cleanup run, cloud, no computer linked). Covers the 43 commits of Nov 2 ET (308a264 … 7fbf5c7), docs/ANSWERS.md (Nov 2 lines), docs/MATCH-INBOX.md, Planoly (IG workspace 019fc27c… scheduled + drafts; IG account posts), HQ needs (23 open → 17) / hq/albums / hq/now / hq/priorities / hq/social / hq/indexing / log (22 entries today), config/release-calendar.json, content_lint (repo + Planoly IG export), curl checks (Amanda Toppe page + hub).
 
 **Owners (three chats, Oct 22):** Main (Opus) = social/Planoly, site pages, email, HQ/DESK, decisions, Google + SEO. Matches & Catalog (Opus) = Find Your Mat-ch, albums, gallery, catalog, search index. Ops (Sonnet) = the ONLY Chrome driver: Squarespace pastes, uploads, IG follows/checks.
 
-**Repo note:** checkout on `partner-catalogs-sqsp` (~4.7 GB with assets). A plain fetch hangs. Tonight's working recipe: `git fetch --filter=blob:none --depth=80 origin partner-catalogs-sqsp:refs/remotes/origin/partner-catalogs-sqsp`, then sparse checkout without `/assets/` (add back `/assets/**/*caption*.txt`, `/assets/**/captions/*`, `/assets/reels/s2/captions.json` so content_lint runs). Never `git ls-tree -l` on a blobless clone (fetches every blob).
+**Repo note:** checkout on `partner-catalogs-sqsp` (~4.7 GB with assets). A plain fetch hangs. Working recipe: `git fetch --depth=50 origin +refs/heads/partner-catalogs-sqsp:refs/remotes/origin/partner-catalogs-sqsp` (took ~1 min tonight), or blobless + sparse without `/assets/` (keep `/assets/**/*caption*.txt`, `/assets/**/captions/*`, `/assets/reels/s2/captions.json` so content_lint runs). Never `git ls-tree -l` on a blobless clone.
 
 **PARTNER SEND GATE (Oct 27 3:08am, standing):** before scheduling ANY partner email or graphics drop, run `python3 scripts/partner_send_check.py`; it must exit 0.
 
-- **Main/Google (Nov 2 8pm): AI answer does NOT name MAHJMATCH for Bam Bird, My Fair, Peace Love, Oh My Mahjong and MISS MAHJONG (shows MISSYMAHJONG, CHARLOTTEMAHJONG, AUDREYMAW, BRITTANYCRNA; we're #5). Tier-0 indexing + verified-line refresh + Google AI feedback for all 5 on the next runs; FB group codes post this week (needs her yes).**
-- **HQ PIN (Nov 1): needs/supabase-settings-nov01 stays at the very top of HQ (order -100) until she does it. Nothing above it. Morning cleanup must not move it.**
+- **HQ PIN (Nov 1): needs/supabase-settings-nov01 stays at the very top of HQ (order -100) until she finishes it. Nothing above it.** Now down to email templates + Resend (Site URL + redirects done Nov 2 10:10am).
 
-## Tomorrow's top priorities (Mon Nov 2), in order
-Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm), then the newest ANSWERS (Table view ASAP, target live Mon night; holiday launch Tue/Wed to show it), then DESK 'Never-ending'. **Restock check (c): no album-set restock is dated for Mon Nov 2.** Tinselle Emerald (Oct 31) is still in stock but its card expired (rule 9, archived tonight). Next dated: TdT House Tigers Tue Nov 3 4pm CT (not an album set; record + FYM stock), Sunday Blues ~Nov 23-30 (album #3), Bam Bird Deco Indigo mid/late Nov (album #2 trio). The order is clear, so no "Set tomorrow's order" card.
+## Tomorrow's top priorities (Tue Nov 3), in order
+Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm), then the newest ANSWERS (Table view ASAP; holiday intro reel was to post Nov 2; codes post format), then DESK 'Never-ending'. **Restock check (c): no album-set restock is dated for Tue Nov 3.** Tue has TdT House Tigers 4pm CT and Miss Classic travel 10am CT (neither is an album set: record + FYM stock only). Tinselle Emerald (album set) still in stock since Oct 31; its card expired (rule 9). Next dated album-set restock: Virora Lilacée Nov 10 (not an album set; codes post), Bam Bird Deco Indigo mid/late Nov (album #2), Sunday Blues ~Nov 23-30 (album #3). The order is clear, so no "Set tomorrow's order" card.
 
-1. **Google (Main + scheduled tasks).** (a) Indexing: 9 pages waiting: Mahj & Vine, Splash of Color, The Mahjong Press, Mahjong Studios, Let's Mahj On (since Oct 27, over the 3-day rule), Anders Ruff, I Love Mahj, Wren Mats + the new **Brownstone Bloom album** (new-album check f: not yet requested; hq/indexing has the 1:30am quota hit). Sunday's 1:15pm run hit quota; later runs had no browser. Needs her computer on (HQ Today card alert-indexing-2026-11-01, order -99). (b) Morning report: AI answers + Search Console carried over from Sunday (Oh My Mahjong first); Tigre de Tartán + Charleston still to re-check (lost Oct 31). (c) **Verified dates task Mon 8:17am ET** (trig_01PGtT8NFXe6341WjBHqmYJu; last recorded run Oct 21): if no "Verified dates refreshed" HQ log by 10am, Main runs it by hand. (d) Codes post: Monday draft task 7:37am (FB GROUP only). (e) Google code report is due Mon (Mon/Wed/Fri).
-2. **Table view → live Mon night (Matches & Catalog).** Preview v14 passed independent QA Sun ~9:30pm and is with her (HQ Today needs/tableview-storyboard-nov01, artifact 5QjNXjw15MuZTqzDT1ptbp). Commit 43b9ca7 (tablet/small-desktop sheet keeps the whole card visible) is BUILT + HELD, not published: fold it into her next round. On her + husband's notes: fix → gate → independent QA → publish as FYM 1.14 to BOTH places (artifact + /find-your-match + /find-your-mat-ch-preview + README 0a pin) → scripts/swipe/fym_snapshot.py. Else Tue. Then Main/social: holiday reels redrafted to show Table view.
-3. **Planoly next 7 days = 0 IG posts scheduled (Main).** Audit (d) tonight: nothing scheduled Nov 2-8 (01a16052-2828 is the stale Oct 21 Papaya reminder still "scheduled"). Dated drafts in the window: Polo Club reel + story Wed 11/4, Rackin' Rudolph reel + story Fri 11/6, both with no Facebook target, no her-OK, reel captions FAIL lint (length 544/431, no #MahjMatch). Default kit = next week's storyboards (HQ Today needs/social-week-2026-11-02, order -96; album-of-the-week kit, brand-mix default b). The Mon 10am Merry Mahjong kickoff moves to the Tue/Wed holiday launch. ON HER YES: render finals, Planoly IG + Facebook Page targets (brand NAMES on FB), every slide as a story, Tag people from config/social/ig-handles.json, `content_lint.py --planoly <export> --only-ig` must pass. I could not add FB targets tonight: the API can't add a target to an existing group and recreating means deleting the old one (never delete) — do it on her yes.
-4. **MATCH-INBOX older than 2 days: 37 open (Matches & Catalog).** Tonight 7 lines marked DONE with proof (Dapper 2 ×3, brand menu copy, shop-by-colour partners first, In stock only, My stars → shipped in 1.11/1.12). Real work left: Sunday Green Gingham / Blue Gingham / Blue Rattan Premium (Oct 29); Britt Mills leatherette versions (Oct 27); late partner holiday mats into albums (waits on her Send); 69 FYM mats with no gallery row (gate [90]); 38 angled photos (gate [89]); rack length by tile size + tortoise rack order; Spirit of Christmas composite; TNT recs not in FYM (Sloan Story …); Hummingbird black background; FYM default tile-set order. **Same day Tue Nov 3:** Noli June FA LA LADIES 4 mats → FYM + gallery the day they list (6am CT); LBB Electric ZigZag + Christmas Lights (Nov 1 6:10pm line). FYM thin-picks patch (thin hearts are live).
-5. **Overdue + mid-way Claude jobs (Ops with Chrome, Main).** (a) ~~FYM 1.13 onto /find-your-mat-ch-preview~~ DONE Nov 1 ~9:40pm (commit 5964498; curl tonight: fym-v113). (b) Main: the **Nov 2 monthly site check (HQ log 2026-11-02-site-maintenance) could not push** (proxy 403): commit 07358309 (DESK OPS line, MATCH-INBOX line, tile-retired.json, docs/audits/site-maintenance-2026-11.md, site/livepatch/site-maint-nov02/) exists only in that cloud session. It is NOT in the repo. Re-run the site check attended (or rebuild from the HQ log detail): 36 dead links, 73 cards newly Retired, Astor/Vivara/Year of the Horse relinks, 2 layout issues; Emerald + Pearlescent Retired labels wait on her default-yes card (needs/site-maint-2026-11, defaults go ahead Wed Nov 4). (c) OPS: Dropbox copies of LBB Electric ZigZag + Christmas Lights flat renders → /Mahj Matchmaker Albums/New releases/Let's Be Besties/ (Chrome method in ANSWERS Nov 1 12:50am). (d) Amazon 'A Reindeer Holiday Table' board (approved Oct 30) when a chat she's in has Amazon signed in.
+1. **Google (Main + Ops + tasks).** (a) **OVERDUE, Ops/Main with Chrome, first thing:** the live site still says **Amanda Toppe 20%** (it is 10%, Tiffany Nov 2 ~9am). Curl tonight: /amanda-toppe-discount-code 13× "20%" (title line, verified line, FAQ JSON-LD); hub /mahjong-discount-codes at-a-glance "20% at Amanda Toppe", ItemList "Amanda Toppe: 20% off", FAQ. Fix all spots + repo config/hub-at-a-glance.html + assets/search/search-index.json + any FYM brand note, curl-verify, then request indexing for both pages. (Britt Mills = 15% everywhere on the hub tonight; check its brand page.) (b) **Indexing after ~9:05am ET** (rolling quota; Mon used 11): 27 changed pages waiting, order in hq/indexing tier0Queue: My Fair, Bam Bird, Bespoke, Yellow Mountain, Britt Mills, Amahj, then Amanda Toppe (after a), then Wren (after c). Needs her computer on (HQ Today alert-indexing-2026-11-01). (c) Code report finds: **Wren Mats page still "Verified: October 9"** and **OMM page has a second "verified October 21" line**: fix both (verified-line refresh is standing authority). (d) **AI-answer gaps** (Nov 2 8pm): Bam Bird, My Fair, Peace Love, Oh My Mahjong, Miss Mahjong do not name MAHJMATCH: tier-0 indexing + Google AI feedback on the next runs. (e) Morning report daily; code report due Wed.
+2. **Table view → FYM 1.14 live (Matches & Catalog).** Preview artifact 5QjNXjw15MuZTqzDT1ptbp **v22** (round 8, real wood grain on 10 wood racks, commit e2b8c5d; site copy fym-site-preview @e7a6d0a, jsDelivr warm, NOT pinned). No independent QA PASS is recorded for round 8: run the QA re-check first, then on her OK publish to BOTH places (live artifact 6epA9HuEdT32zUp79Qv3kd + /find-your-match + /find-your-mat-ch-preview + README 0a pin) → fym_snapshot.py. Held commit 43b9ca7 (tablet sheet) folds in. HQ Today needs/tableview-storyboard-nov01.
+3. **Instagram is silent since Oct 27; Planoly next 7 days = 0 IG posts (Main).** Audit (d): Nov 3-9 has nothing scheduled (01a16052-2828, the Oct 21 Papaya reminder, is still "scheduled": clear its date, never delete). Ready and waiting on her: holiday intro reel v2 (she posts via Edits with the song; HQ This week top), codes post v3 (FB group; HQ Today), **New this week carousel** Planoly 01a19e04 (IG + FB Page targets ✅, brand names on FB ✅, Tag people ✅ 4 verified handles, lint PASS) **but no 7-frame story version: build it with the schedule on her yes**; this week's posts (HQ Today needs/social-week-2026-11-02). Default kit if no yes by Wed: album-of-the-week kit from the Friday social prep task. Every post on her yes: IG + FB Page target, every slide as story, Tag people from config/social/ig-handles.json, `content_lint.py --planoly <export> --only-ig` must pass.
+4. **Catalog (Matches & Catalog).** (a) **Same day Tue:** Noli June FA LA LADIES 4 mats → FYM + gallery the day they list (6am CT). (b) **Broken FYM links:** Let's Be Besties renamed listings (MATCH-INBOX Nov 1 6:10pm, Nov 2 9:35am + 5:57pm lines: old URLs 404). (c) New: Britt Mills Isla Leatherette (2nd shop link), Bespoke Garden Glow Sunshine Glow (tile set, drops Wed Nov 4 9am CT; needs TNT rec + colour card before any book), LBB Electric ZigZag + Christmas Lights, TdT Domino Blonde w/ rules; the 39 photo-OK mats from the Nov 2 weekly scan (HQ card archived as Claude's job). (d) MATCH-INBOX older than 2 days (rule e): still ~37 real open (66 dated lines without DONE; many say FIXED inline but were never marked): mark DONE with proof, then Sunday Gingham/Rattan, Britt Mills leatherettes, late holiday mats (waits on her Send), gate [90] 69 mats with no gallery row, gate [89] 38 angled photos, rack length by tile size + tortoise order, TNT recs not in FYM, FYM default tile-set order.
+5. **Overdue + mid-way Claude jobs.** (a) Main: **Nov 2 monthly site check never reached the repo** (proxy 403 Nov 1-2; HQ log 2026-11-02-site-maintenance re-logged 8:45pm, still no site-maint folder or audit file in git). Re-run attended or rebuild from the HQ log detail; Emerald + Pearlescent Retired labels go ahead Wed Nov 4 on the default (needs/site-maint-2026-11). (b) OPS: Dropbox copies of flat renders → /Mahj Matchmaker Albums/New releases/: Bespoke Sunshine Glow, Britt Mills Isla Leatherette, LBB Electric ZigZag + Christmas Lights (Chrome method: ANSWERS Nov 1 12:50am). (c) OPS: Tiles & Tablescapes search for Bespoke Garden Glow Sunshine Glow. (d) Amazon 'A Reindeer Holiday Table' board (approved Oct 30) when Amazon is signed in.
 
 ## Handoffs (do first)
-- **OPS: copy assets/launches/bespokemahjong-sunshineglow/ to Dropbox /Mahj Matchmaker Albums/New releases/Bespoke Mahjong/ today** (launch watch Nov 2 5:57pm; flat renders before they get swapped).
-- **OPS: copy assets/launches/brittmillsdesign-isla-leatherette-mahjong-mat/ to Dropbox /Mahj Matchmaker Albums/New releases/Britt Mills Design/ today** (launch watch Nov 2 5:57pm).
-- **OPS: search Tiles & Tablescapes for Bespoke Garden Glow - Sunshine Glow** (new tile set, drops Nov 4; no TNT rec or colour card yet, HQ albums needs-tnt).
-- **Main:** re-run / rebuild the unpushed Nov 2 site check (priority 5b).
-- **Matches & Catalog:** commit 43b9ca7 Table view tablet fix is held, not published (priority 2). FYM 1.12 follow-ups still open: nightly stock check needs a publish path before it can be a scheduled task; rack cut-out review for the 12 hidden racks (builder/fym_fix_nov01 README step 3b); Mat Gallery rows (gallery_rows112.py); two-color coordination ranking bonus.
-- **Main: Raven reel + Halloween story are BANKED.** Clear the dates (never delete) on Planoly 01a16477-0b08 (story, 10/31) and 01a16477-092f; plus the past-day drafts list in "In progress" (Planoly cleanup).
-- **Main: CONTENT BANK on her yes (HQ needs/content-bank-2026-10-31, week of Nov 9-15).** Planoly IG + FB Page + every slide as stories, brand @mentions, Tag people, collabs; dates per assets/social/week-2026-11-09/README.md; captions lint 12 / 0 FAIL. 8 FYM pins queued pending in config/pinterest/queue.json.
-- **Main: duplicate catch-up tasks** trig_019StaM8LkmrxGKtK7xhXang (old) + trig_013ZpyRxFivSKPoYTgSvVBU6 (new): pausing one is her call, on HQ rules-audit-2026-10-30.
-- **Main: sales-check prompt fix** (list ALL secomapp + goaffpro + backinstock emails, refunds on the refund date, read tiffanybrie@ at mail.google.com/mail/u/1 per her Oct 31 3pm rule). Still not applied.
-- **Main: "close leftover finished Claude tab groups at start" in every Chrome task TAB RULE** (Oct 30 10:10am). Not done.
-- **Main: mat-edit-alert build step in launch watch trig_01S2VsjwznnHev1uUbYmEwJq** (Oct 30 9:05am; docs/MAT-EDIT-ALERT.md). Not done. Poppins piece waits on its paired tile set announcement.
-- **Pinterest autopin** was blocked by the usage limit Sun 9:41am; its next run is Wed Nov 4. Planoly Pinterest has 3-4 pins a day scheduled through Nov 9, 0 errors, so no gap; Main re-checks Wed.
-- **OPS (standing): HQ ShopMy tab inbox** (db `shopmy`, status new) at the start of every Ops reply. The 2 stray ShopMy links are HER click (HQ needs/shopmy-delete-2-links: a ShopMy delete can't be undone).
-- **Partner feedback watch** trig_01RKw9eUwTYPo39gbYHb65gh runs daily through Nov 10 (0 new Nov 1).
+- **OPS / Main: Amanda Toppe 10% live fix** (priority 1a). Overdue since Nov 2 9am.
+- **OPS: Dropbox new-release copies** (priority 5b) + **TNT search for Sunshine Glow** (5c).
+- **Main: re-run / rebuild the unpushed Nov 2 site check** (priority 5a).
+- **Main: Wren Mats + OMM verified lines** (priority 1c).
+- **Main: new-arrivals story version** in Planoly on her yes (priority 3).
+- **Matches & Catalog: round 8 QA re-check of 1.14** (priority 2); FYM 1.12 follow-ups still open: nightly stock check publish path; rack cut-out review for the 12 hidden racks (builder/fym_fix_nov01 README step 3b); Mat Gallery rows (gallery_rows112.py); two-color coordination ranking bonus.
+- **Main: Planoly cleanup** (clear dates, never delete): Raven 01a16477-0b08 + -092f, the past-day drafts in "In progress", and the stale scheduled 01a16052-2828.
+- **Main: CONTENT BANK on her yes** (HQ week of Nov 9-15; assets/social/week-2026-11-09/README.md; 8 FYM pins queued pending in config/pinterest/queue.json).
+- **Main: duplicate catch-up tasks** trig_019StaM8LkmrxGKtK7xhXang + trig_013ZpyRxFivSKPoYTgSvVBU6: pausing one is her call (HQ rules-audit-2026-10-30).
+- **Main: sales-check prompt fix** (ALL secomapp + goaffpro + backinstock emails, refunds on the refund date, tiffanybrie@ at mail.google.com/mail/u/1 per her Oct 31 3pm rule). Still not applied. Also: the 2:04pm sales check said "DESK.md not found in this workspace": its prompt needs the repo clone step.
+- **Main: "close leftover finished Claude tab groups at start"** in every Chrome task TAB RULE (Oct 30 10:10am). Not done.
+- **Main: mat-edit-alert build step** in launch watch trig_01S2VsjwznnHev1uUbYmEwJq (Oct 30 9:05am; docs/MAT-EDIT-ALERT.md). Not done.
+- **Pinterest autopin** next run Wed Nov 4 (blocked by usage limit Sun); Main re-checks Wed.
+- **OPS (standing): HQ ShopMy tab inbox** (db `shopmy`, status new) at the start of every Ops reply. The 2 stray ShopMy links are HER click (HQ needs/shopmy-delete-2-links).
+- **Partner feedback watch** trig_01RKw9eUwTYPo39gbYHb65gh runs daily through Nov 10 (0 new Nov 2).
 
 ## In progress
 | Item | Owner | Next step | Target |
 |---|---|---|---|
-| Google: 9 pages to re-index, carried-over AI check, verified dates, codes post, code report | Main + tasks | Priority 1; needs her computer on. | Mon Nov 2 |
-| Table view (full preview v14) → FYM 1.14 | Matches & Catalog | v114 round 7: 44 peel-corner photos filled → full table (Tiffany OK 9:25am; 9 seamed/duplicated ones back to Corner); 60 Corner mats fill the square at real scale (Mahjong Register solids kept); 18 mats grayed (no clean top-down photo, config/tableview-gray-nov02.json); gate [147] renders all 1,117 Table mats, 0 uncovered. Earlier rounds: 119 clean rack cut-outs, rack filter singles, tour step, price chips + code note. Gate + --site PASS. Website copy fym-site-preview @e7a6d0a (site-app/fym-v114, jsDelivr warm, NOT pinned); Preview artifact 5QjNXjw15MuZTqzDT1ptbp v22 (round 8: real wood grain on 10 wood racks, Tiffany 10:11am; sheet config/tableview-wood-racks-nov02.jpg). Next: QA re-check → her OK → publish live artifact + README 0a pin → fym_snapshot.py. | Mon Nov 2 night (else Tue) |
-| Next week's social (Nov 2-8) | Main | Her yes → render → Planoly IG + FB Page + stories. | Mon Nov 2 |
-| Holiday launch + holiday reels redo (with Table view) | Main | Her detailed notes (HQ This week) → redraft; no re-render before. | Tue/Wed Nov 3-4 |
-| MATCH-INBOX (37 old) + Noli June FA LA LADIES + LBB new mats | Matches & Catalog | Priority 4. | Tue Nov 3 |
-| Nov 2 monthly site check (unpushed) | Main → Ops | Re-run attended, then OPS pastes from its README. | Tue Nov 3 |
-| Sales dip watch (FAMILY20 ended Sun) | Main | Mon vs last Mon; Tue: Mahjong Row Google answer + page if still <3/day. | Tue Nov 3 |
-| 9 amounts | Tiffany / Main | Her screenshots (HQ Today). | Mon Nov 2 |
+| Google: Amanda Toppe 10% fix, 27 pages to re-send, Wren/OMM verified lines, 5 AI-answer gaps | Main + Ops + tasks | Priority 1. | Tue Nov 3 |
+| Table view → FYM 1.14 | Matches & Catalog | Round 8 QA re-check → her OK → publish both places + README pin → snapshot. | Tue Nov 3 (else Wed) |
+| Instagram restart (reel, codes post, new arrivals, week's posts) | Main | Her yes/post → Planoly IG + FB Page + stories. | Tue Nov 3 |
+| Holiday reels redo (Nutcracker/FYM reel with Table view) | Main | After 1.14 is live; intro reel v2 goes first. | Thu Nov 5 |
+| Catalog: Noli June, LBB broken links, Isla, Sunshine Glow, 39 new mats, MATCH-INBOX | Matches & Catalog | Priority 4. | Tue Nov 3 |
+| Nov 2 monthly site check (unpushed) | Main → Ops | Re-run attended, then OPS pastes. | Tue Nov 3 |
+| My Fair drop watch (14 → 4 orders/week) + Black Friday policy | Main | Watch; her answer on "use our link" (HQ This week). | Wed Nov 4 |
+| Bam Bird + Peace Love week drops | Main | Watch; Bam Bird dashboard signed out (email-only amounts). | Wed Nov 4 |
+| 1 amount (My Fair 35473474) | Tiffany / Ops | Screenshot of My Fair commission page. | This week |
 | Holiday colour cards (Tinselle ×2, Dec 1994, PLM Spirit + Nutcracker) | Matches & Catalog | Not started (was due Oct 31). | Wed Nov 4 |
-| My Fair Mahjong Style of Your Life (#1 album) | Matches & Catalog | Colour card + TNT, then swipe book. | Tue Nov 3 |
-| Sunday Sets TNT rec leftovers | Matches & Catalog | docs/research/sunday-sets-colorcards-tnt-oct29.md. | Tue Nov 3 |
-| Larkspur hearts into 27 tile albums | Matches & Catalog → Ops | Ops trip done; paste album by album. | Wed Nov 4 |
+| My Fair Mahjong Style of Your Life (#1 album) | Matches & Catalog | Colour card + TNT, then swipe book. | Wed Nov 4 |
+| Sunday Sets TNT rec leftovers | Matches & Catalog | docs/research/sunday-sets-colorcards-tnt-oct29.md. | Wed Nov 4 |
+| Larkspur hearts into 27 tile albums | Matches & Catalog → Ops | Paste album by album. | Wed Nov 4 |
+| Holiday album covers page update | Matches & Catalog | After 1.14 live. | Thu Nov 5 |
+| December 1994 redo (her RTS notes) | Matches & Catalog | After holiday colour cards. | Fri Nov 6 |
 | Bam Bird Deco trio (Indigo first) | Matches & Catalog | Colour cards ×3, then books. | Week of Nov 9 |
 | Affiliate applications (6 apply-first brands) | Tiffany submits / Main | Kit doc 00h; HQ apply-kit-oct31. | This week |
-| Planoly cleanup (her Oct 27 ask) | Main | Clear dates (never delete) on past-day drafts: 01a16052-33a6…-40c3, -36fd, -3da0, 01a16793-3e02, 01a16477-0ce9, 01a17a6a-943b/-95d3/-9777, 01a17c71-b34b, 01a17c72-0c6d/-0e9a/-11d0/-152c, 01a17a6c-10e4, -12c1, 01a16477-092f, -0b08; 01a16052-2828 still "scheduled". | Mon Nov 2 |
-| FB group weekly Claude Doc | Main | https://claude.ai/artifact/54ovPaB6BQU78ztjUgQSbe; keep current. | Mon Nov 2 |
-| Mahj Mood code check (unused codes expire after 4 months) | Main | Before the next Mahj Mood post. | Mon Nov 2 |
+| Planoly cleanup (her Oct 27 ask) | Main | Clear dates (never delete): 01a16052-33a6…-40c3, -36fd, -3da0, 01a16793-3e02, 01a16477-0ce9, 01a17a6a-943b/-95d3/-9777, 01a17c71-b34b, 01a17c72-0c6d/-0e9a/-11d0/-152c, 01a17a6c-10e4, -12c1, 01a16477-092f, -0b08; 01a16052-2828 still "scheduled". | Tue Nov 3 |
+| FB group weekly Claude Doc | Main | https://claude.ai/artifact/54ovPaB6BQU78ztjUgQSbe; keep current. | Tue Nov 3 |
+| Mahj Mood code check (unused codes expire after 4 months) | Main | Before the next Mahj Mood post (Playing for Keeps Fri Nov 6). | Thu Nov 5 |
 | Tortoise rack piece (her Oct 28) | Main | Scope + storyboard; gift-guide tie-in. | Wed Nov 4 |
 | UpPromote accounts → mahjmatchmaker@ | Main | Her logins where the owner must move it. | Wed Nov 4 |
 | Discount links not converted (Britt Mills, Mahjong Register, YMI, RMS, Hip Hip, Wren/Soirée/Amanda Toppe) | Main | builder/fym_fix_oct21/discount_check_oct21.json. | Wed Nov 4 |
@@ -68,17 +70,17 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 
 ## Waiting on Tiffany (only things she can answer now)
 **On HQ Today, in this order (5):**
-1. **Supabase + Resend settings** so Find Your Mat-ch sign-in emails send (pinned -100).
-2. **Google: leave the computer on with the Claude app open Monday morning** (9 pages + carried-over Google checks).
-3. **Test the full Find Your Mat-ch Preview with Table view** with her husband, notes in chat.
-4. **9 amounts** (screenshots).
-5. **Next week's posts (Nov 2-8): yes all, or yes/no per day** (Planoly is empty).
+1. **Supabase: finish the email templates + Resend** (pinned -100; Site URL + redirects done).
+2. **Google: leave the computer on with the Claude app open Tuesday morning** (27 pages to re-send from ~9am).
+3. **Facebook group codes post v3: yes to post** (text + first comment on the card).
+4. **Try Find Your Mat-ch 1.14 (Table view) on the preview, reply OK to go live.**
+5. **This week's posts: yes all, or yes/no per day** (Planoly is empty).
 
-**On HQ This week:** sales dip plan (watch only); late holiday picks: tap Send final answers; Holy Mahj from her Canva; quick 1.13 check (TdT link-only + PLM chartreuse); content bank week of Nov 9; holiday reels detailed notes; Work With v3 live yes; face-to-camera + AMA drafts; Sunday Sets round 2 (4 sets); launch reel redo OK; affiliate apply kit; FYM accounts which way; Bama Mahj skip / non-partner / exception; Brownstone keep/drop 3 retired OMM mats; yellow & gold borderline mats; Emerald + Pearlescent Retired labels (default yes Wed); rules check: pause 2 old tasks?; Noli June sneak peek; 2 stray ShopMy links.
+**On HQ This week:** holiday intro reel v2: post it with the song in Edits (top); My Fair Black Friday: say "use our link" or not; 1 amount (My Fair screenshot); late holiday picks: tap Send final answers; 2 quick FYM checks + Holy Mahj from her Canva; Work With v3 live yes; 5 quick calls (defaults go ahead Wed Nov 4); new-arrivals carousel yes; Sunday Sets round 2 (4 sets); affiliate apply kit; 2 stray ShopMy links.
 
 **Asked in chat, not on HQ (the owning chat asks once, next time she's there):**
-- Main: did she post the FB group codes post herself (Oct 29)?; Malachite how-to reel v2 OK + day; FB group B&B racks wording; subscriber "It's here!" email send or skip; ShopMy 2-hourly pickup yes; Santa Baby's 12 yes; Apps Script URL for search logging; her Nov 1 5:47pm message cut off at "that has nothing to do with the number of" (ask her to finish the thought).
-- Matches & Catalog: Lagoon + Mulberry splits; Bam Bird Classic Tortoise match pick; Sunday Rattan: is the 'new' one the Blue Rattan (her Nov 1 4:50am question back to us: answer it); Fruit Stand rack-edge (default a).
+- Main: Malachite how-to reel v2 OK + day; FB group B&B racks wording; subscriber "It's here!" email send or skip; ShopMy 2-hourly pickup yes; Santa Baby's 12 yes; Apps Script URL for search logging; her Nov 1 5:47pm message cut off at "that has nothing to do with the number of" (ask her to finish the thought).
+- Matches & Catalog: Lagoon + Mulberry splits; Bam Bird Classic Tortoise match pick; Sunday Rattan: is the 'new' one the Blue Rattan (her Nov 1 4:50am question: answer it; Blue Rattan is now listed); Fruit Stand rack-edge (default a).
 
 ## Banked (finished, held on purpose)
 - **Petalée (Virora)**: 61 cards, RTS `l-final-petalee`, vault (her Oct 28). Before publishing: colour card, 10% band sweep on the Amanda Toppe/Girly cards, cleaner Petalwing/Coralia photos.
@@ -94,16 +96,20 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **Brand-locked FYM sample (Mahjong Row & Co.)**: "keep exploring" (her Oct 30); docs/brand-lock/STATUS.md.
 
 ## Later / ideas
+- **Let's Mahj On new tile sets** (Wild, Sweet, Golf, Refined, Merry, Stir Things Up), sneak peek Nov 2, coming mid-Nov: new products; ONE swipe book only if she says (partner watch Nov 2; HQ card archived as info-only).
+- **OMM 2027 International Mahjong Card** preorder live Nov 2 ($12, ships Jan 2; TEACHMAHJ + code work): record only; possible teacher/FB group mention (mentor check, Nov 2).
+- **Peace Love Mahjong Black Friday Nov 16**, **Mahj Mood Playing for Keeps preorder Fri Nov 6 10am CT**, **Virora Lilacée restock Nov 10** (release calendar Nov 2): codes post + social on the day.
+- **Reels earn 0 follows two weeks running; the single 'It's a match' image is still the best post** (social measure, Nov 2): weigh image posts in next week's kit.
+- **Sunday Blues restock post window ~Nov 16** (HQ card parked to Nov 16).
 - IDEA (Tiffany Nov 1 11:33pm, not now): fold racks into the mat step (no step-3 jump) for Aerial/Table views — racks come in/out on the same view like the match card; only Up close needs a jump. Revisit once Table view is live and if Table/Aerial become the main view.
-- **Clean up 52 legacy caption lint warnings** (still 52 Nov 1) (config/social/content_lint_baseline.json; mostly missing #MahjMatch, '(affiliate)', 2 TdT captions) (rules audit E9, Oct 30). Also 78 legacy FAILs (length 42, naming 36) in banked Season 2 captions: same kinds as yesterday, nothing new.
-- **Noli June FA LA LADIES** winter collection (4 mats incl. Hanukkah + ski) Tue Nov 3: new products → FYM + gallery the day they list (HQ sneak card, Oct 31).
-- **Tigre de Tartán House Tigers** return Nov 3; **Mary Benson Hydrangea tiles** Mon Nov 2 12pm/1pm ET (non-partner); **Maison Mahj** bags Nov 1 / House Line windows Nov 1-4 (record only); **CMC OTG247** announced Nov 1 (release calendar, Oct 31).
+- **Clean up 52 legacy caption lint warnings** (still 52 Nov 2) (config/social/content_lint_baseline.json; mostly missing #MahjMatch, '(affiliate)', 2 TdT captions) (rules audit E9, Oct 30). Also 78 legacy FAILs (length 42, naming 36) in banked Season 2 captions: same kinds as yesterday, nothing new.
+- **Tigre de Tartán House Tigers** return Tue Nov 3 4pm CT (record + FYM stock; no album); **Mary Benson Hydrangea** went live Nov 2, tiles sold out (non-partner, record only); **CMC x OTG247** bags live Nov 2 (record only); **Mahjong Moxie Moxie Tiles** Fri Nov 6 (non-partner, record only) (watches, Nov 2).
 - **Mahjong Register** Crystal Palace acrylic racks + Solid Wood racks (launch watch Oct 31): racks, FYM rack lists when Matches & Catalog has room.
 - **Sunday Vegan Leather mat moved listing** (launch watch Oct 31): relink the FYM card in the next build.
 - **Brands later (her Oct 31 picks):** Feltectors, Four Winds Social, Mahj House Rules, Mahjong Made Chic, Mahjong Moxie, Silk Mahjong, The Mahjong Line (teacher program only).
 - **LBB Artist Collective mats** (early Nov): new products, never albums (Oct 30).
 - **Bam Bird restock/brand announcement** teaser (IG Oct 30): same day or never.
-- **Amanda Toppe Lila**: travel Lila Mon Nov 2 10am ET (no album); full-size later = swipe book the day it lists (Oct 29).
+- **Amanda Toppe Lila**: travel Lila listed Nov 2 (no album); full-size later = swipe book the day it lists (Oct 29).
 - **Table view later**: walls for pattern-back sets with no back photo (grayed), mats+tiles price filter (racks have it), aerial photos from partners, Table view as a partner perk vs open to all (undecided, don't push) (Tiffany Nov 1).
 - **Splash of Color digest**: 4 undigested Splash mats (Kitschmas Mahj Club, Jolly Nostalgic Santa…); digest at 10+ (launch watch Nov 1 6:10pm).
 - **Mahjong Row Rosy / Ellington** not on their store yet (partner watch Nov 1).
@@ -124,24 +130,26 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **Canva template library + #MahjMatch reshares** (Oct 25); **IDEAS 3.0** (Oct 23); **internal FYM sets view**, **every-tile-set gallery**, **Pinterest ShopMy single-product pins** (Oct 24); **Match Monday / Reader Request** (Oct 23); **Rebecca Illustrated 15% ShopMy**, **Aurora's racks** (Oct 22); **brand alert sign-ups, comment-for-link, UPS cutoffs Dec 1** (Oct 21); **site colours, "Press for Mahjong" rename**, **$200/mo API credits plan** (after launch).
 - **New brand releases** are NEW PRODUCTS, never albums (Anders Ruff Bellamy Bloom / All American / Heritage Tartan; Bespoke x Brooks Brothers; Bespoke x Gray Malin; Britt Mills Emerald Mirage; Mahj & Vine Whispering Winds; LBB Butterscotch Floral).
 
-## Daily operations (Sun Nov 1)
+## Daily operations (Mon Nov 2)
 | Operation | Done today? | Notes |
 |---|---|---|
-| Affiliate tracking (Money tab) | ⚠️ Done with gaps | Sales checks ran; Nov 1 sales logged (Anders Ruff $28.89 filled), 9 amounts open (HQ Today). Sales alarm: Sat 7 sales vs 17.6 avg, cause Mahjong Row FAMILY20 (ended Sun night); plan on HQ This week. 12:04am close-out still to run. |
-| Google code report | ➖ Not due | Mon/Wed/Fri: due Mon. Morning Google & Revenue report ran PARTIAL (10:54am + 2:50pm + 6:48pm re-runs; no computer: AI answers + Search Console carried over). |
-| Verified dates (weekly, Mondays) | ➖ Not due | Mon Nov 2 8:17am ET. Watch it (priority 1c). |
-| Codes post (Mondays) | ➖ Not due | Draft task Mon 7:37am (FB GROUP only). |
-| Pinterest queue health | ✅ OK | Planoly Pinterest: 30+ pins scheduled Nov 2 → Nov 9 (3-4/day), 0 errors. Autopin 9:41am blocked by usage limit (next run Wed Nov 4); queue.json has Brownstone pins. |
-| Indexing | ❌ Not done | 1:15pm run: quota exceeded on the first request; later runs: no browser (computer not linked). 9 pages waiting (priority 1a). Sitemap now lists Brownstone. |
-| Planoly next-7-days (IG + FB Page) | ❌ Not covered | 0 IG posts scheduled Nov 2-8 (priority 3). Planoly IG lint: 63 captions, 81 FAIL, all on past-dated or unapproved drafts (the 11/4 + 11/6 reels among them). |
-| New albums (last 7 days) (f) | ⚠️ 1 miss | Brownstone Bloom (live Nov 1): /mahjong-tile-matches ✅, /ivory-mahjong-tile-matches ✅, /anders-ruff-discount-code ✅, /links latest album ✅, Pinterest queue ✅ (54 lines), sitemap ✅; **indexing ❌ not requested yet** (quota) → priority 1a. FYM album link → MATCH-INBOX (Nov 1 ~1am line). |
-| Repo caption lint (g) | ⚠️ Legacy only | 78 FAIL (length 42, naming 36), all banked Season 2 captions; 52 legacy WARN. Same kinds as yesterday, nothing new. Holiday Nov 1 captions pass. |
-| Restock first (c) | ✅ Checked | No album-set restock dated for Mon. Tinselle Emerald still in stock (store check 9:50pm ET) but card expired (rule 9). |
-| Match inbox (e) | ⚠️ 37 old open | 7 marked DONE tonight with proof; priority 4. |
-| Launch + partner watch | ✅ Done | Launch watch 6:10pm (LBB Electric ZigZag + Christmas Lights, Vibrant Vortex relist; Splash Kitschmas recorded); partner watch 1:45pm (House of Hearts Juliette mat, CMC Cabana travel preorder) + 6:40pm (nothing new); restock watchlist all still sold out. |
-| FYM + partner feedback | ✅ Done | 0 partner feedback (2:20pm run). |
-| FYM releases | ✅ Done | 1.12 live ~5:10am (both pages); 1.13 live ~8:15pm on the artifact + /find-your-match, preview page ~9:40pm. Swipe-book snapshot refreshed. |
-| HQ + Ready to Ship cleanup | ⚠️ Partly | Morning 6:47am run blocked by the usage limit; 7:47pm sweep ran; this desk run: Today 19 → 5, open 34 → 25. RTS NOW 0 open. |
+| Affiliate tracking (Money tab) | ✅ Done | Sales checks 12:04am (Nov 1 final $238.79, 13 sales) + 2:04pm ($90.45, 6 sales); amounts filled from her screenshots (Ops 7:25pm), 1 left. Weekly brand trends: 103 orders vs 139 (-26%). Midnight close-out still to run. |
+| Google code report | ✅ Done | 12:50pm: Overview 24/38, AI Mode 34/38, 14 feedback sent, indexing queue reordered. Next due Wed. |
+| Morning Google report | ✅ Done | 8:15am: 24/38 AI answers (lost Mini Mahjer + I Love Mahj; gained TdT, Charleston, Soirée). Weekly Google & OMM report artifact EnPpqMnAc3PCgYnkRmy2aE. |
+| Verified dates (weekly, Mondays) | ✅ Done | 9am: 36/36 pages + hub "verified November 2, 2026", live-checked. Misses found later: Wren Oct 9 line, OMM second Oct 21 line (priority 1c). |
+| Codes post (Mondays) | ⚠️ Drafted, not posted | v3 (Partner Codes + Updates, 10 photos, Amanda Toppe 10%) waits on her yes (HQ Today). |
+| Pinterest queue health | ✅ OK | Planoly Pinterest 3-4 pins/day through Nov 9 (per Sun check); autopin next Wed. |
+| Indexing | ✅ Done (quota) | 11 requested (10 by verified-date run + Brownstone Bloom); My Fair hit quota. Sitemap OK (130 pages). 27 waiting. |
+| Planoly next-7-days (IG + FB Page) | ❌ Not covered | 0 IG posts Nov 3-9; IG last post Oct 27. New-arrivals draft has IG + FB targets + Tag people, lint PASS (2 captions, 0 FAIL); no story version yet (priority 3). No FB target was missing on any IG group in the window. |
+| New albums (last 7 days) (f) | ✅ All checks | Brownstone Bloom (live Nov 1): /mahjong-tile-matches ✅, /ivory ✅, /anders-ruff-discount-code ✅, /links ✅, Pinterest queue ✅, **indexing ✅ requested Nov 2 12:40pm**. No other album went live. |
+| Repo caption lint (g) | ⚠️ Legacy only | 78 FAIL (length 42, naming 36), all banked Season 2 captions; 52 legacy WARN. Same kinds as yesterday, nothing new. |
+| Restock first (c) | ✅ Checked | No album-set restock dated Tue. |
+| Match inbox (e) | ⚠️ ~37 old open | Priority 4d. |
+| Launch + partner watch | ✅ Done | Release calendar (7 changes); launch watch 9:35am + 5:57pm (Sunshine Glow, Isla Leatherette, LBB renames); partner watch 10:05am, 1:35pm, 6:30pm (LMO sneak peek, Moxie Nov 6, Hydrangea sold out); mentor check (OMM 2027 card). |
+| FYM + partner feedback | ✅ Done | 0 new (2:19pm). |
+| FYM releases | ⚠️ Preview only | 1.14 rounds 3-8 on the preview (v22); nothing published live. |
+| Social measure + brand watch (Mon) | ✅ Done | +61 follows; reels 0 follows 2 weeks running; Maison Mahj favorited. |
+| HQ + Ready to Ship cleanup | ✅ Done | Morning 6:47am (25 → 12), 3 sweeps, this desk run 23 → 17 open, Today 11 → 5. RTS: no new answers since Oct 30. |
 
 ## Never-ending projects
 - **Find Your Mat-ch™ app** (artifact 6epA9HuEdT32zUp79Qv3kd; public Version 1.13 = v113: artifact v111 + /find-your-match + /find-your-mat-ch-preview (page-block @62196501 → app @3c0b8ceb, both verified live Nov 1 ~9:40pm)): gate + independent QA before every publish (QA loads the WEBSITE copy as live: 0 broken images, gate [115]); artifact AND website copy AND README 0a pin in the same step; +0.1 version label (docs/FYM-VERSIONS.md); her feedback the same day with a gate check; when a publish/paste fails, MESSAGE HER right away. Artifact file budget: run builder/fym_artifact_fit.py and publish ONCE. Every nav/header change: screenshot live at 1280, 1440 and 390 with the phone menu OPEN. New partner catalog in FYM within 24h of its inbox line (gate [114]). Refresh config/fym-mats-snapshot.json after every publish.
@@ -159,9 +167,9 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **ShopMy + Amazon storefronts**: square-safe covers, aerial mat photos, HQ ShopMy tab intake, weekly ShopMy mats check (Tue).
 - **HQ hygiene**: Today ≤5, answered = gone, event passed = gone, timestamps on every card, inline previews; ANSWERS.md before asking anything; no answer is not a no.
 
-## Log of this rewrite (Sun Nov 1 night)
-- **Done today:** FYM 1.11 accounts (1am), 1.12 In stock only + Sold out badges + inbox sweep (5:10am), 1.13 Let's Be Besties catalog + per-brand cap + Pearl racks + Dapper explainer link (8:15pm); Brownstone Bloom album LIVE; privacy policy + FAQ page live, footer links; thin-album hearts (41), holiday anchors (37 albums), site search header, holiday stat strip, /christmas-mahjong-mats sold-out/retired labels; Planoly Content Marketplace add-on removed; Table view storyboard → working sample (v2-v4) → full-flow preview v14 (QA passed); size-check photo calibration; 4 holiday reel pieces + slow review copies; face-to-camera + AMA drafts; HQ video links → jsDelivr; LBB Tropicana render to Dropbox; 3 watch runs; partial Google report.
-- **Found mid-way and given a home:** preview page still 1.12 → pasted by another session ~9:40pm (verified); Table view tablet fix held → priority 2; 9 pages not re-indexed (quota, then no browser) → priority 1 + HQ Today; Planoly 0 IG posts → priority 3; Nov 2 site check never pushed (proxy 403) → priority 5b; Tinselle card expired (rule 9) → archived, frames banked; HQ cleanup + Pinterest autopin blocked by usage limit → logged, autopin Wed; her cut-off 5:47pm message → ask once; 4 holiday reel cards + 2 amounts cards + 2 Google cards + duplicate late-picks card merged on HQ.
+## Log of this rewrite (Mon Nov 2 night)
+- **Done today:** verified dates (36 pages + hub), 11 indexing requests, code report + morning report + weekly Google report; FYM 1.14 rounds 3-8 (rack re-cuts, corner view fills the square, peel fills, gray list, wood grain); holiday intro reel v2; codes post v1-v3; new-arrivals carousel draft (Planoly IG + FB); amounts filled; Supabase step A1 (her); release calendar + 2 launch watches + 3 partner watches + mentor check; social measure + brand watch; AI-answer gap list.
+- **Found mid-way and given a home:** Amanda Toppe 20% still live → priority 1a; Wren/OMM verified-line misses → 1c; 1.14 round 8 has no QA PASS recorded → priority 2; holiday intro reel not posted + IG silent since Oct 27 → priority 3 + HQ This week top; new-arrivals has no story version → priority 3; LBB renamed listings break FYM links → 4b; Nov 2 site check still not in git → 5a; sales-check task can't find DESK.md → Handoffs; 5 info-only HQ cards archived, Sunday Blues card parked to Nov 16.
 - HQ smoke test at 390px not run tonight (data-only change, no page HTML changed).
 
 See CLAUDE.md.
