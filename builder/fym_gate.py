@@ -1754,6 +1754,11 @@ if '/*v114 table view*/' in UI:
         _l153 = [l for l in _o153.stdout.splitlines() if l.startswith('[153]')]
         if _o153.returncode and not _l153: _l153 = ['[153] hearts check failed: ' + (_o153.stderr or '')[-200:]]
         for _f in _l153[:8]: F.append(_f)
+# [155] QA r9 (Nov 3): the tour counter counted skipped steps ('3 of 22' then '9 of 22'); it counts only the steps this person sees,
+# and every real tap hides the bubble until the page settles (no flash over its target; flash sampling is in [35])
+if '/*v114 types*/' in UI:
+    if 'of ${TSTEPS.length}' in UI or 'Step ${TOUR.log.length}' not in UI: F.append("[155] the tour step counter counts skipped steps (builder/fym_fix_nov02/tour114.py)")
+    if 'function tourHold(' not in UI: F.append("[155] the tour bubble is not held hidden while the page settles after a tap (builder/fym_fix_nov02/tour114.py)")
 # [154] Tiffany Nov 3 (QA r9, 'driving me crazy'): every Wood tone rack shows real grain, never a flat fill, on every render path
 # (rackSrc = deck card / suitor / selected rack / match card / My hearts; Table = TVD.ro or rackSrc). builder/fym_fix_nov02/wood_check.py
 if '/*v114 types*/' in UI:
