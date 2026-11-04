@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-03T23:13:15+00:00",
+ "swept_at": "2026-11-04T14:05:59+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v114",
  "stores": {
   "amahjline.com": {
@@ -2022,7 +2022,7 @@
   "peacelovemahjong.com": {
    "brand": "Peace Love Mahjong",
    "status": "ok",
-   "products": 95,
+   "products": 99,
    "mats": [
     [
      "2026-09-30T06:45:19-05:00",
@@ -2065,7 +2065,7 @@
   "shop.andersruff.com": {
    "brand": "Anders Ruff",
    "status": "ok",
-   "products": 155,
+   "products": 156,
    "mats": [
     [
      "2026-10-27T23:11:59-04:00",
