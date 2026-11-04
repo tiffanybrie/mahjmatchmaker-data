@@ -80,6 +80,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Fait à Main code | Main | MAHJMATCH still not applicable at cart. | Watch |
 
 ## Blocked, approved (raise at the top of every attended reply until done)
+- PAYOUT RECONCILE (Main, started Nov 4): ledger of earned vs paid vs pending vs overdue per brand, PayPal matched, HQ Money "Payouts" section; spec docs/PAYOUT-RECONCILE.md. First pass today in Chrome (GoAffPro payouts, Marketplace payments, PayPal read-only, both inboxes); then weekly + 1st/16th.
 - FYM tracking TRK_URL into the live app: Matches & Catalog, v114 release, today (endpoint live Nov 4).
 
 ## Waiting on Tiffany (only things she can answer now)
