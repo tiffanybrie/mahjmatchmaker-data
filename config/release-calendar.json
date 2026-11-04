@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-03",
- "updatedBy": "partner watch Nov 3 6:40pm ET",
+ "updated": "2026-11-04",
+ "updatedBy": "partner watch Nov 4 9:45am ET",
  "rules": {
   "timing": {
    "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -883,13 +883,14 @@
    "product": "Playing for Keeps (Valentine's) tile set preorder $390 + Valentine's mat at launch; transparent pink racks coming soon",
    "type": "preorder",
    "date": "2026-11-06T10:00-06:00",
-   "status": "announced (affiliate email Oct 28); delivery targeted January",
+   "status": "preorder: subscribers Thu Nov 5, everyone Fri Nov 6 (IG Nov 4 8:46am ET DfUl55jxvsw); January delivery",
    "source": "Mahj Mood affiliate email Oct 28 12:26pm ET",
    "sourceUrl": "https://mail.google.com/mail/?authuser=mahjmatchmaker@gmail.com#all/thread-f:1880311529352408712",
    "album": false,
    "affiliate": true,
    "priority": 2,
-   "contentTiming": "Holiday (Valentine) set, no album. Log; revisit near Valentine's content."
+   "contentTiming": "Holiday (Valentine) set, no album. Log; revisit near Valentine's content.",
+   "windowStart": "2026-11-05"
   },
   {
    "id": "mm-lake-day",
@@ -1059,13 +1060,14 @@
    "type": "preorder",
    "window": "first window opens Sat Oct 31 (tiered windows); ships Feb 2027",
    "windowStart": "2026-10-31",
-   "status": "coming soon (not in store yet)",
+   "status": "LIVE Nov 4 12:30pm CT public preorder (IG + email Nov 4; store listing house-line-no-1-tile-set $595 available); ships Feb 2027",
    "source": "Maison Mahj email Oct 30 'The Art of a Beautiful Table' ('Windows open tomorrow')",
    "sourceUrl": "https://www.maisonmahj.com/collections/maison-mahj",
    "album": false,
    "affiliate": false,
    "priority": 4,
-   "contentTiming": "Log only (non-partner except The Chalet)."
+   "contentTiming": "Log only (non-partner except The Chalet).",
+   "url": "https://www.maisonmahj.com/products/house-line-no-1-tile-set"
   },
   {
    "id": "bambird-restock-teaser-oct30",
@@ -1277,7 +1279,7 @@
    "window": "Fri Nov 6 2026, 10am CST (11am ET)",
    "windowStart": "2026-11-06",
    "windowEnd": "2026-11-06",
-   "status": "announced; store has no product pages yet (check Nov 3 6:40pm ET); teaser photos assets/launches/mahjongrow-moody-tortoise-brunette-burl-teaser/",
+   "status": "announced; reminder IG Nov 4 9:02am ET (DfUn-wmG-49) shows Brunette Burl on the upcoming ELLINGTON mat + Cognac Burl racks, Moody Tortoise on Foxhill Plaid; no product pages yet (check Nov 4 9:45am ET)",
    "source": "Instagram @mahjongrowandco feed post, Tue Nov 3 ~10am ET (after the 9:15am launch watch and the 9:20am FB group codes post; Tiffany sent a screenshot 12:57pm)",
    "album": false,
    "affiliate": true,
@@ -1356,6 +1358,23 @@
    "affiliate": true,
    "priority": 4,
    "contentTiming": "Racks, not tiles/mats: record only. Stain racks can be suggested again in wood-rack pairings."
+  },
+  {
+   "id": "ar-gatsby-reveal-nov4",
+   "brand": "Anders Ruff",
+   "product": "Unnamed new product (revealed at the end of the 'Green Light Gatsby table' reel)",
+   "type": "coming soon",
+   "window": "unknown",
+   "windowStart": "2026-11-04",
+   "windowEnd": "2026-11-30",
+   "date": null,
+   "status": "teased IG Nov 4 9:02am ET; product not named (video withheld by Instagram); nothing new in shop.andersruff.com products.json 9:45am ET",
+   "source": "IG @andersruffdesignco Nov 4",
+   "sourceUrl": "https://www.instagram.com/reel/DfUn9d2EhUO/",
+   "album": false,
+   "affiliate": true,
+   "priority": 3,
+   "contentTiming": "Watch the store; if it's a new tile set or mat, launch watch logs it + swipe book per the gate."
   }
  ],
  "sources": {

@@ -1,6 +1,7 @@
 # Mahjong Row & Co. (@mahjongrowandco): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 4 9:02am ET: drop reminder carousel, Fri Nov 6 10am CST: Brunette Burl now shown on the upcoming ELLINGTON mat + Cognac Burl racks (auburn + Cabernet accents); Moody Tortoise on Foxhill Plaid (smoky browns + merlot). Both hand-painted faces, botanicals (daffodil, forget-me-not, rose, star-jasmine, magnolia, gladiolus, orange + apple blossom), Fox joker (https://www.instagram.com/p/DfUn-wmG-49/).
 - Nov 3 9:51am ET: DROP DATE: TWO new tile sets, small batches, Fri Nov 6 10am CST: Moody Tortoise (shown on Foxhill Plaid mat + Oxblood racks) and Brunette Burl (on Hawthorne Floral mat + Cognac Burl racks); new mats + racks 'in the next few weeks' (https://www.instagram.com/p/DfSI3P6G3C6/). Teaser photos: assets/launches/mahjongrow-moody-tortoise-brunette-burl-teaser/. Store: no pages yet (6:40pm ET). Rosy + Ellington still unlisted.
 - Nov 1 7:20am ET: 'Last call' F&F sale, FAMILY20 ends tonight 11:59pm CT (DfMsxi9AbnY; email same morning). Shown: Cypress tiles on Midnight Garden mat. Rosy + Ellington still coming soon (no listing).
 - Oct 30-31: Friends & Family sale 20% off select tiles/mats/racks, code FAMILY20, through Sun Nov 1 11:59pm CST (DfHjb4dm4as, DfIo1j9AAQB). Shown: Mabel tiles on Midnight Garden; Honey Weave on Ivy Reverie; Cypress on Midnight Garden. (Rosy tile + Ellington mat still "coming soon".)

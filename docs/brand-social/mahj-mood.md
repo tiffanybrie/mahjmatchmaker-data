@@ -1,6 +1,7 @@
 # Mahj Mood (@mahj_mood): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 4 8:46am ET: Playing for Keeps goes live Fri Nov 6, SUBSCRIBERS Thu Nov 5; preorder, January delivery. Swirly pink + lavender backs, 'chocolate box' jokers (https://www.instagram.com/p/DfUl55jxvsw/).
 - Oct 29: Holly Berry mat + Jade Luxe racks as a holiday table without holiday tiles, comment HOLIDAY (DfFn6QxMGJZ). Playing for Keeps preorder Fri Nov 6 still the next drop.
 - Oct 29: Holly Berry mat + Jade Luxe racks as a 'holiday tablescape without holiday tiles' (comment HOLIDAY, DfFn6QxMGJZ). Playing for Keeps Valentine's set preorder Fri Nov 6 (DfDkAJrMliW).
 - Oct 30: Jade Luxe racks LIVE (published 9:57am CT, $130, in stock: mahjmood.com/products/luxe-racks-jade-acrylic).

@@ -1,6 +1,7 @@
 # Anders Ruff (@andersruffdesignco): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 4 9:02am ET: reel 'Set our Green Light Gatsby table together! And a new product reveal at the end!' (https://www.instagram.com/reel/DfUn9d2EhUO/). Product not named in the caption; video withheld by Instagram (licensed music), so not identified. Store check 9:45am ET: nothing new since Puppy Love Solo Play mat (Nov 2). Watch the store.
 - Nov 2-3: pushing Brownstone Bloom hard: Autumn Bloom mat x Brownstone Bloom tiles 'shop these fall vibes' (https://www.instagram.com/reel/DfSXFUOiXbN/); up-close Brownstone Bloom tablescape from the indigopruitt x real_simple collab with new blonde tortoiseshell racks w/ lucky hardware (DfQR3SoksZN); Christmas collection roundup carousel (DfP0bFpGJeA).
 - Nov 2 4:32pm ET: close-up reel of the Brownstone Bloom tablescape (indigopruitt x real_simple collab): Brownstone Bloom mat + engraved hand-painted tiles + NEW blonde tortoiseshell racks with lucky hardware (all come with bags) (https://www.instagram.com/reel/DfQR3SoksZN/). Pairing: Brownstone Bloom mat with blonde tortoise racks.
 - Nov 2 12:14pm ET: holiday roundup carousel 'Your Christmas collection, perfectly curated' (tiles, luxe mats, finishing touches; shop.andersruff.com). Nothing new announced (DfP0bFpGJeA). #AndersRuffDesignCo #ChristmasMahjong #mahjongstyle.
