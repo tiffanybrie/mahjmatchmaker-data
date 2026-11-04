@@ -93,7 +93,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 **On HQ This week:** OMM Juniper + Lotus Cove (swipe Lotus Cove before Nov 11); My Fair Black Friday "shop through our link" yes/no; 7 amounts; Sweet Jojo W-9; 2 quick FYM checks + Holy Mahj; Sunday Sets round 2 (4 sets); affiliate apply kit; 1 hidden FYM photo (Grace Peacock); 1 Amazon mat to pick; 2 stray ShopMy links.
 
 **Asked in chat, not yet answered: the owning chat RE-ASKS at the top of every reply until answered, with its default (Tiffany Nov 4: nobody said 'ask once'; her rule is 'ask, move on, COME BACK'):**
-- Main: **launch reel redo OK** (sent ~5:35pm Nov 3); Mahjong Row group post photo + OK; holiday albums + FYM holiday group posts OK (after the albums update); Malachite how-to reel v2 OK + day; FB group B&B racks wording; Santa Baby's 12 yes; (search logging: same Apps Script endpoint as FYM tracking, done Nov 4, wire into search with the site-search install); her Nov 1 5:47pm message cut off at "that has nothing to do with the number of".
+- Main: **launch reel redo OK** (sent ~5:35pm Nov 3); Mahjong Row group post photo + OK; holiday albums + FYM holiday group posts OK (after the albums update); Malachite how-to reel v2 OK + day; FB group B&B racks wording; Santa Baby's 12 yes; (search logging: same Apps Script endpoint as FYM tracking, done Nov 4, wire into search with the site-search install);
 - Matches & Catalog: Lagoon + Mulberry splits; Bam Bird Classic Tortoise match pick; Sunday Rattan: is the 'new' one the Blue Rattan; Fruit Stand rack-edge (default a); brand-lock pricing (undecided, don't push).
 
 ## Banked (finished, held on purpose)
