@@ -27,6 +27,8 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 ## Handoffs (do first)
 - **OPS (Nov 3 launch watch): copy assets/launches/omm-lotus-cove-mat-in-tube/ and assets/launches/omm-juniper-mahjong-tiles/ to Dropbox /Mahj Matchmaker Albums/New releases/Oh My Mahjong/ today** (flat renders get replaced by photoshoot images later).
 - **OPS: search Tiles & Tablescapes for Oh My Mahjong Juniper** (new OMM tile set Nov 3; its swipe book waits on a TNT rec + colour card per the book gate; HQ Albums: needs-colourcard).
+- **Matches & Catalog (Tiffany said GO, Nov 3 2:08pm + 2:05pm): next build after 1.14 adds OMM Juniper tiles + Lotus Cove mat (official pair, Ultimate Starter Kit) and the 4 Noli June FA LA LADIES mats to FYM + gallery.** See MATCH-INBOX Nov 3 7:47pm lines.
+- **OPS (HQ sweep Nov 3 7:47pm): check minimahjer.com for a store-wide/Black Friday code bigger than MAHJMATCH** (curl gets a 429 bot wall; Bird & Bamboo + Miss Mahjong homepages checked by curl, no sale code). HQ needs/alert-brand-drop-2026-11-03.
 - **Matches & Catalog: Juniper colour card** (scripts/colorcards) so the Juniper swipe book can be built (OMM = top priority).
 - **OPS / Main: Amanda Toppe 10% live fix** (priority 1a). Overdue since Nov 2 9am.
 - **OPS: Dropbox new-release copies** (priority 5b) + **TNT search for Sunshine Glow** (5c).
