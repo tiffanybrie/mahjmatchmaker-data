@@ -80,6 +80,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Fait à Main code | Main | MAHJMATCH still not applicable at cart. | Watch |
 
 ## Blocked, approved (raise at the top of every attended reply until done)
+- Mahjong Row Moody Tortoise + Brunette Burl: group post LIVE Nov 4 2:40pm (no links yet). WATCH mahjongrowandco.com/products.json: the moment either product page exists -> edit the group post comment with the links + pull both into FYM (Matches & Catalog) before Fri Nov 6 10am CT. Owner: Main (launch watch).
 - Main: render HQ Money "Payouts" section from collection payouts (summary + per brand). First pass data in HQ Nov 4 (docs/reports/payouts/2026-11-04.md). Next pass: read Bam Bird, My Fair, Mini Mahjer, Hip Hip, Charleston, Bam!, Splash, Amahj UpPromote dashboards (one shop session at a time) + PayPal once signed in; identify "Design Mill" $135.48 (Nov 1) and "Kathrine Zell" $3.15 (Oct 15) payers.
 - PAYOUT RECONCILE (Main, started Nov 4): ledger of earned vs paid vs pending vs overdue per brand, PayPal matched, HQ Money "Payouts" section; spec docs/PAYOUT-RECONCILE.md. First pass today in Chrome (GoAffPro payouts, Marketplace payments, PayPal read-only, both inboxes); then weekly + 1st/16th.
 - FYM tracking TRK_URL into the live app: Matches & Catalog, v114 release, today (endpoint live Nov 4).
@@ -94,7 +95,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 **On HQ This week:** OMM Juniper + Lotus Cove (swipe Lotus Cove before Nov 11); My Fair Black Friday "shop through our link" yes/no; 7 amounts; Sweet Jojo W-9; 2 quick FYM checks + Holy Mahj; Sunday Sets round 2 (4 sets); affiliate apply kit; 1 hidden FYM photo (Grace Peacock); 1 Amazon mat to pick; 2 stray ShopMy links.
 
 **Asked in chat, not yet answered: the owning chat RE-ASKS at the top of every reply until answered, with its default (Tiffany Nov 4: nobody said 'ask once'; her rule is 'ask, move on, COME BACK'):**
-- Main: **launch reel redo OK** (sent ~5:35pm Nov 3); Mahjong Row group post photo + OK; holiday albums + FYM holiday group posts OK (after the albums update); Malachite how-to reel v2 OK + day; FB group B&B racks wording; (search logging: same Apps Script endpoint as FYM tracking, done Nov 4, wire into search with the site-search install);
+- Main: **launch reel redo OK** (sent ~5:35pm Nov 3); holiday albums + FYM holiday group posts OK (after the albums update); Malachite how-to reel v2 OK + day; FB group B&B racks wording; (search logging: same Apps Script endpoint as FYM tracking, done Nov 4, wire into search with the site-search install);
 - Matches & Catalog: Lagoon + Mulberry splits; Bam Bird Classic Tortoise match pick; Sunday Rattan: is the 'new' one the Blue Rattan; Fruit Stand rack-edge (default a); brand-lock pricing (undecided, don't push).
 
 ## Banked (finished, held on purpose)
