@@ -1778,6 +1778,12 @@ if '/*v114 table view*/' in UI:
         _l151 = [l for l in _o151.stdout.splitlines() if l.startswith(('[151]', '[152]'))]
         if _o151.returncode and not _l151: _l151 = ['[151] rack types / picks check failed: ' + (_o151.stderr or '')[-200:]]
         for _f in _l151[:10]: F.append(_f)
+# [157] Tiffany Nov 4 2026 ("we were very explicit about it"): FYM usage tracking must be ON in every live release.
+# The counter code shipped Oct 17 with TRK_URL='' and stayed off through launch. Live URL: config/fym-tracking.json.
+if "TRK_URL=''" in UI or 'TRK_URL=""' in UI or 'TRK_URL' not in UI:
+    _m157 = "[157] Find Your Mat-ch usage tracking is OFF (TRK_URL empty): set it from config/fym-tracking.json"
+    if '--release' in sys.argv: F.append(_m157)
+    else: print("FYM GATE WARNING " + _m157 + " (FAIL with --release)")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))

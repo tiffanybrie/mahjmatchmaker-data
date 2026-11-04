@@ -76,8 +76,11 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Discount links not converted (Britt Mills, Mahjong Register, YMI, RMS, Hip Hip, Wren/Soirée/Amanda Toppe) | Main | builder/fym_fix_oct21/discount_check_oct21.json. | Fri Nov 6 |
 | Amazon mats into gallery + FYM | Ops → Matches & Catalog | Her picks only (1 to pick, HQ This week). | Fri Nov 6 |
 | ShopMy holiday leftovers | Main → Ops | ShopMy (not MAHJMATCH) for Charleston Mahjong Club + Bamlet's in holiday posts. | Fri Nov 6 |
-| Search logging | Main | Needs her Apps Script URL (site/livepatch/search README "Tracking"). | Ask once |
+| FYM usage tracking LIVE ENDPOINT | Matches & Catalog | DEPLOYED Nov 4 2:25pm (config/fym-tracking.json, tested OK). Matches & Catalog: apply TRK_URL with builder/fym_track_oct17.py in the v114 release TODAY (both places); gate [157] blocks --release without it. Then confirm rows land in the sheet from a real phone swipe. | TODAY |
 | Fait à Main code | Main | MAHJMATCH still not applicable at cart. | Watch |
+
+## Blocked, approved (raise at the top of every attended reply until done)
+- FYM tracking TRK_URL into the live app: Matches & Catalog, v114 release, today (endpoint live Nov 4).
 
 ## Waiting on Tiffany (only things she can answer now)
 **On HQ Today, in this order (4):**
