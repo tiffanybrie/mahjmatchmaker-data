@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-04",
- "updatedBy": "partner watch Nov 4 9:58am ET",
+ "updatedBy": "partner watch Nov 4 6:30pm ET",
  "rules": {
   "timing": {
    "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -794,8 +794,8 @@
    "type": "launch",
    "window": "delayed to mid-November (IG Oct 29); was ~Nov 9",
    "windowStart": "2026-11-12",
-   "windowEnd": "2026-11-20",
-   "status": "SNEAK PEEK Nov 2 3:51pm ET reel names 6 sets, 'coming soon' (no date); not on store yet. Flagged to Tiffany Nov 2.",
+   "windowEnd": "2026-11-25",
+   "status": "SNEAK PEEK Nov 2; Nov 4 reel: 'first wave gets here in a couple of weeks' (DfVnuhFjlMk). Not on store yet. Flagged to Tiffany Nov 2.",
    "source": "IG Oct 26 + Oct 29 delay",
    "sourceUrl": "https://www.instagram.com/reel/DfQNG0Ejejh/",
    "album": false,
@@ -985,13 +985,14 @@
    "type": "coming soon",
    "window": "Travel Lila (22.5in, 100 made, with case) Mon Nov 2 10am ET; full-size 33in in production, preorder once arrival date is firm",
    "windowStart": "2026-11-02",
-   "status": "sneak peek",
+   "status": "sneak peek; travel Lila SOLD OUT Nov 4 (now preorder, ships early/mid Jan); full-size 33in 'in about a month', preorder when timing firm (IG Nov 4 DfVHftvhnoS)",
    "source": "Instagram @amandatoppeliving Oct 29",
    "sourceUrl": "https://www.instagram.com/p/DfGBN7fGbpN/",
    "album": false,
    "affiliate": true,
    "priority": 2,
-   "contentTiming": "Sneak peek flagged to Tiffany Oct 29. Travel version: no album (travel rule). Full-size Lila: watch the store; swipe book the day photos/listing appear. Painterly hydrangea blues, lilac, pink and soft green. Photos: assets/launches/amandatoppe-lila-teaser/"
+   "contentTiming": "Sneak peek flagged to Tiffany Oct 29. Travel version: no album (travel rule). Full-size Lila: watch the store; swipe book the day photos/listing appear. Painterly hydrangea blues, lilac, pink and soft green. Photos: assets/launches/amandatoppe-lila-teaser/",
+   "windowEnd": "2026-12-10"
   },
   {
    "id": "marybenson-hydrangea-tiles",
@@ -1375,6 +1376,20 @@
    "affiliate": true,
    "priority": 3,
    "contentTiming": "Watch the store; if it's a new tile set or mat, launch watch logs it + swipe book per the gate."
+  },
+  {
+   "id": "bougie-neoprene-mats-nov4",
+   "brand": "Bougie Mahjong",
+   "product": "Neoprene versions of 5 best-seller mats (Riviera Leopard, Cobalt Garden, Imperial Koi Pond, Grandmillennial Peony, Electric Hibiscus)",
+   "type": "launch",
+   "date": "2026-11-04",
+   "status": "LIVE Nov 4 (31.5in $80 / 33in $90)",
+   "source": "IG @bougiemahjong Nov 4 + products.json",
+   "sourceUrl": "https://www.instagram.com/p/DfVPdpIoDis/",
+   "album": false,
+   "affiliate": false,
+   "priority": 4,
+   "contentTiming": "Material version of existing designs; record only."
   }
  ],
  "sources": {

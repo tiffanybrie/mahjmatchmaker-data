@@ -1,6 +1,7 @@
 # Bam Bird Boutique (@bambirdboutique): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 4 4:24pm ET: carousel 'our favorite mats paired with our Olive and Pink MCM tiles', restock Fri Nov 6 10am CT (https://www.instagram.com/p/DfVao48Hx6P/). Nov 4 10:24am reel: mat recommendations for MCM Olive (DfUwdShRoZ1).
 - Nov 4 10:24am ET: countdown reel to the MCM Olive restock Fri Nov 6 10am CT, showing their recommended mats to pair with it (https://www.instagram.com/reel/DfUwdShRoZ1/). Deco Indigo still sold out (1:35pm ET).
 - Nov 3 10:43am ET: 'MCM Olive is making its return!' restock Fri Nov 6 10am CT; retro designs, olive backs, pink middle layer (https://www.instagram.com/p/DfSO1CBkegU/). Store mcm-mahjong-tile-set currently shows only the Navy/Olive variant. First named restock after the Oct 30 newsletter teaser. Nov 2: staff birthday reel.
 - Nov 1: customer reviews carousel, thank-you tone (DfKNyAZH0Ya). No drop; Deco Indigo still sold out (store 1:35pm ET).

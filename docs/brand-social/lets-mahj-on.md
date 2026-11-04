@@ -1,6 +1,7 @@
 # Let's Mahj On (@letsmahjon): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 4 6:19pm ET: reel 'first wave of new mahjong tile set designs get here in a couple of weeks' + inspo snippet of what's coming (https://www.instagram.com/reel/DfVnuhFjlMk/). Same lineup as the Nov 2 sneak peek (Wild, Sweet, Golf, Refined, Merry, Stir Things Up); now ~mid/late Nov. Licensed-music reel.
 - Nov 2 3:51pm ET: SNEAK PEEK reel of the new lineup, sets named Wild, Sweet, Golf, Refined, Merry and Stir Things Up ('coming soon', no date; 'which set would you reach for first?') (https://www.instagram.com/reel/DfQNG0Ejejh/). Was 7 sets, mid-November. Not on letsmahj-on.com yet. Licensed-music reel (no media file).
 - Oct 30: Halloween flash sale 15% off $50+ code SPOOKY, 'clearing space for our upcoming launches' (DfHxTbPkeeY); 7 new tile sets aimed mid-Nov.
 - Oct 30: Halloween flash sale 15% off $50+, code SPOOKY, 'clearing space for our upcoming launches' (DfHxTbPkeeY). Oct 29: 7 new tile sets now mid-November (DfGDYhkFISK).
