@@ -1,0 +1,263 @@
+{
+ "Mahjong Row & Co.": {
+  "network": "UpPromote Marketplace",
+  "account_email": "mahjmatchmaker@",
+  "method": "PayPal",
+  "schedule": "unknown (Marketplace payout rate 1.04% of approved referrals get paid)",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Oh My Mahjong": {
+  "network": "UpPromote (own dashboard)",
+  "account_email": "tiffanybrie@",
+  "method": "PayPal",
+  "schedule": "monthly, ~8th-10th for the prior month (Q Third LLC)",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "The Mahjong Co.": {
+  "network": "UpPromote (own dashboard, same owner as OMM)",
+  "account_email": "tiffanybrie@",
+  "method": "PayPal",
+  "schedule": "monthly, prior month, paid 8th-19th (Q Third LLC)",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Middle & Main": {
+  "network": "UpPromote (own)",
+  "account_email": "tiffanybrie@",
+  "method": "PayPal",
+  "schedule": "frequent (every 1-2 weeks, ~2-3 weeks after order)",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Mahj Squad": {
+  "network": "UpPromote (own)",
+  "account_email": "tiffanybrie@",
+  "method": "PayPal",
+  "schedule": "roughly monthly",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "My Fair Mahjong": {
+  "network": "UpPromote (own)",
+  "account_email": "tiffanybrie@",
+  "method": "PayPal",
+  "schedule": "irregular (Rising Rock LLC)",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Bird & Bamboo": {
+  "network": "UpPromote (own)",
+  "account_email": "tiffanybrie@",
+  "method": "PayPal",
+  "schedule": "~every 6 weeks",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Tigre de Tartán": {
+  "network": "UpPromote Marketplace",
+  "account_email": "mahjmatchmaker@",
+  "method": "PayPal",
+  "schedule": "monthly-ish (payout rate 77%)",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Hip Hip Mahjong": {
+  "network": "UpPromote (own)",
+  "account_email": "tiffanybrie@",
+  "method": "PayPal",
+  "schedule": "unknown",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Charleston Mahjong Club": {
+  "network": "UpPromote (own)",
+  "account_email": "tiffanybrie@",
+  "method": "PayPal",
+  "schedule": "unknown",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Mahjong Register": {
+  "network": "UpPromote Marketplace",
+  "account_email": "mahjmatchmaker@",
+  "method": "PayPal",
+  "schedule": "paid ~1 week after approval",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Let's Be Besties": {
+  "network": "UpPromote Marketplace",
+  "account_email": "mahjmatchmaker@",
+  "method": "PayPal",
+  "schedule": "fast",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Britt Mills": {
+  "network": "UpPromote Marketplace",
+  "account_email": "mahjmatchmaker@",
+  "method": "unknown",
+  "schedule": "fast (Marketplace shows Paid)",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Anders Ruff": {
+  "network": "UpPromote Marketplace",
+  "account_email": "mahjmatchmaker@",
+  "method": "unknown",
+  "schedule": "unknown (payout rate 0.25%)",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Mac + Miller": {
+  "network": "UpPromote Marketplace",
+  "account_email": "mahjmatchmaker@",
+  "method": "unknown",
+  "schedule": "unknown (payout rate 41%)",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Mahj & Vine": {
+  "network": "UpPromote Marketplace",
+  "account_email": "mahjmatchmaker@",
+  "method": "unknown",
+  "schedule": "unknown (payout rate 45%)",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "The Royal Mahjong Society": {
+  "network": "UpPromote Marketplace",
+  "account_email": "mahjmatchmaker@",
+  "method": "unknown",
+  "schedule": "unknown",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Maison Mahj": {
+  "network": "UpPromote Marketplace",
+  "account_email": "mahjmatchmaker@",
+  "method": "store credit (expected)",
+  "schedule": "per order",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Miss Mahjong": {
+  "network": "GoAffPro",
+  "account_email": "mahjmatchmaker@",
+  "method": "PayPal",
+  "schedule": "irregular",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Mahj Mood": {
+  "network": "GoAffPro",
+  "account_email": "mahjmatchmaker@",
+  "method": "unknown",
+  "schedule": "unknown",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Virora Mahjong": {
+  "network": "GoAffPro",
+  "account_email": "mahjmatchmaker@",
+  "method": "unknown",
+  "schedule": "unknown",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Amanda Toppe Living": {
+  "network": "GoAffPro",
+  "account_email": "mahjmatchmaker@",
+  "method": "PayPal",
+  "schedule": "unknown",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "The Mahjong Press": {
+  "network": "GoAffPro",
+  "account_email": "mahjmatchmaker@",
+  "method": "unknown",
+  "schedule": "unknown",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Peace Love Mahjong": {
+  "network": "GoAffPro",
+  "account_email": "mahjmatchmaker@",
+  "method": "Store Gift Card (WRONG)",
+  "schedule": "unknown",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Bam Bird Boutique": {
+  "network": "UpPromote (own)",
+  "account_email": "tiffanybrie@",
+  "method": "PayPal?",
+  "schedule": "unknown",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Mini Mahjer": {
+  "network": "UpPromote (own) / ShopMy",
+  "account_email": "tiffanybrie@",
+  "method": "unknown",
+  "schedule": "unknown",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Bam! Let's Mahjong": {
+  "network": "UpPromote (own)",
+  "account_email": "tiffanybrie@",
+  "method": "PayPal",
+  "schedule": "unknown",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Splash of Color": {
+  "network": "UpPromote (own)",
+  "account_email": "tiffanybrie@",
+  "method": "unknown",
+  "schedule": "unknown",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ },
+ "Amahj": {
+  "network": "UpPromote (own)",
+  "account_email": "tiffanybrie@",
+  "method": "unknown",
+  "schedule": "unknown",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "source": "dashboards + payment emails read Nov 4"
+ }
+}
