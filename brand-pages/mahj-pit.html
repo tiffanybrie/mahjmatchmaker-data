@@ -1,0 +1,245 @@
+<style>
+.mmbg{--ink:#1e3a5f;--rose:#c8456f;--blush:#fdf2f5;--sand:#faf7f2;--line:#ead9df;max-width:880px;margin:0 auto;background:#fff;padding:36px 40px;border-radius:18px;color:var(--ink);line-height:1.65;font-size:17px}
+.mmbg *{box-sizing:border-box}
+.mmbg h1,.mmbg h2,.mmbg h3,.mmbg p,.mmbg li{color:var(--ink)}
+.mmbg a{color:var(--rose)}
+.mmbg .hero{position:relative;border-radius:20px;overflow:hidden;background:var(--sand)}
+.mmbg .hero img{display:block;width:100%;height:360px;object-fit:cover}
+.mmbg .hero-txt{padding:28px 36px 30px;background:#fff;margin:-70px 24px 0;position:relative;border-radius:16px;box-shadow:0 8px 30px rgba(30,58,95,.10)}
+.mmbg .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.72em;font-weight:700;color:var(--rose);margin:0 0 6px}
+.mmbg h1{font-size:2.3em;line-height:1.15;margin:0 0 10px}
+.mmbg .dek{font-size:1.08em;margin:0;opacity:.9}
+.mmbg section{margin:46px 0}
+.mmbg h2{font-size:1.55em;margin:0 0 14px;line-height:1.25}
+.mmbg .note{background:var(--sand);border-left:4px solid var(--rose);border-radius:0 14px 14px 0;padding:22px 26px}
+.mmbg .note p{margin:0 0 12px}.mmbg .note p:last-child{margin:0}
+.mmbg .sig{font-style:italic;font-weight:600}
+.mmbg .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.mmbg .card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.mmbg .card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--sand)}
+.mmbg .card .in{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.mmbg .card h3{font-size:1.08em;margin:0}
+.mmbg .card p{margin:0;font-size:.95em}
+.mmbg .card .go{margin-top:auto;font-weight:700;text-decoration:none;font-size:.92em}
+.mmbg .tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.mmbg .tiles a{text-decoration:none;color:var(--ink)}
+.mmbg .tiles img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;display:block}
+.mmbg .tiles span{display:block;font-weight:600;font-size:.92em;margin-top:6px}
+.mmbg .feat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;padding:0;margin:0}
+.mmbg .feat li{margin:0}
+.mmbg .feat a{display:block;padding:14px 16px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);background:#fff}
+.mmbg .feat a b{display:block;color:var(--rose);font-size:.75em;text-transform:uppercase;letter-spacing:.1em}
+.mmbg .perk{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--blush);border-radius:16px;padding:20px 24px}
+.mmbg .perk p{margin:0}
+.mmbg .perk .code{font-weight:800;letter-spacing:.08em;color:var(--rose)}
+.mmbg .btn{display:inline-block;background:var(--rose);color:#fff!important;padding:11px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.95em}
+.mmbg details{border-bottom:1px solid var(--line);padding:12px 0}
+.mmbg summary{cursor:pointer;font-weight:700}
+.mmbg details p{margin:8px 0 0}
+.mmbg .more{display:flex;flex-wrap:wrap;gap:8px}
+.mmbg .more a{border:1px solid var(--line);border-radius:999px;padding:6px 14px;text-decoration:none;font-size:.88em;color:var(--ink);background:#fff}
+.mmbg .small{font-size:.82em;opacity:.75}
+@media(max-width:700px){.mmbg{font-size:16px;padding:22px 16px}.mmbg .hero img{height:230px}.mmbg .hero-txt{margin:-40px 12px 0;padding:20px}.mmbg h1{font-size:1.8em}.mmbg .grid,.mmbg .feat{grid-template-columns:1fr}.mmbg .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.mmbg .me{display:flex;gap:16px;align-items:center;margin:0 0 16px}.mmbg .me img{width:76px;height:76px;border-radius:50%;object-fit:cover;flex:0 0 76px;border:3px solid #fff;box-shadow:0 2px 10px rgba(30,58,95,.15)}.mmbg .me strong{display:block;font-size:1.05em}.mmbg .me span{display:block;font-size:.88em;opacity:.8}
+
+
+.mmbg .tiles.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.mmbg .tiles small{display:block;font-size:.8em;margin-top:2px}
+.mmbg .tiles small a{color:var(--rose);font-weight:600}
+@media(max-width:700px){.mmbg .tiles.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<div class="mmbg">
+<div class="hero">
+<img src="https://cdn.shopify.com/s/files/1/0699/1668/8550/files/DO01020595.jpg?width=1500" style="object-position:50% 50%" alt="Mahj Pit Original Confetti mahjong tiles">
+<div class="hero-txt">
+<p class="eyebrow">Brand guide</p>
+<h1>Mahj Pit</h1>
+<p class="dek">Translucent acrylic tiles, chenille mats and 20&quot; acrylic racks for design-minded players. Plus, my Mahj Pit discount code for readers.</p>
+</div>
+</div>
+<div class="perk perk-top" style="margin:22px 0 4px">
+<p><strong>A thank-you for Mahj Matchmaker readers:</strong> use code <span class="code">MAHJMATCH</span> for 10% off at Mahj Pit.</p>
+<p style="font-size:14px;opacity:.75;margin:6px 0 14px">&#10003; Mahj Pit discount code: MAHJMATCH &middot; 10% off &middot; verified November 4, 2026</p>
+<a class="btn" href="https://mahjpit.co/tiffany11" target="_blank" rel="sponsored noopener">Visit Mahj Pit</a>
+</div>
+<section>
+<h2>About Mahj Pit</h2>
+<div class="note">
+<p>Mahj Pit started because its founders couldn&rsquo;t find tiles that matched how they wanted to play: not disposable plastic, and not another set covered in palm trees and preppy patterns. So they made design-conscious tiles in translucent acrylic that catches the light, built to be played hard and passed down.</p>
+<p>Their best-known set is the Original Confetti tiles, with an iridescent confetti finish and a high-contrast blue face that&rsquo;s easy to read across the table. They also make low-pile chenille and neoprene mats, travel mats, 20&quot; acrylic racks with magnetic pusher storage, dice holders and vintage finds for the table.</p>
+</div>
+</section>
+<p>Here are the Mahj Pit tiles, mats and racks I&rsquo;d look at first.</p>
+<section>
+<h2>Mahj Pit tiles</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0699/1668/8550/files/DO01020595.jpg?width=700" alt="Mahj Pit The Original Confetti Tiles mahjong tiles" loading="lazy">
+<div class="in">
+<h3>The Original Confetti Tiles (Large)</h3>
+<p>Translucent acrylic with an iridescent confetti finish and a high-contrast blue face; 160 tiles, tile bag and dice. $495. Sold out for now.</p>
+<a class="go" href="https://mahjpit.co/products/large-confetti-tiles?sca_ref=12703261.srer4OxWkeRwwDVs" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0699/1668/8550/files/DO01020604.jpg?width=700" alt="Mahj Pit The Original Confetti Tiles mahjong tiles" loading="lazy">
+<div class="in">
+<h3>The Original Confetti Tiles (Small)</h3>
+<p>The confetti tiles in a smaller size. $395. Sold out for now.</p>
+<a class="go" href="https://mahjpit.co/products/the-original-confetti-tiles-small?sca_ref=12703261.srer4OxWkeRwwDVs" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0699/1668/8550/files/DO01030241.jpg?width=700" alt="Mahj Pit The Martha Tiles mahjong tiles" loading="lazy">
+<div class="in">
+<h3>The Martha Tiles</h3>
+<p>Pearl backs with a wave pattern and solid white faces; 160 tiles incl. jokers and blanks, tile bag and dice. $495. Sold out for now.</p>
+<a class="go" href="https://mahjpit.co/products/the-martha-tiles?sca_ref=12703261.srer4OxWkeRwwDVs" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0699/1668/8550/files/DO01020593.jpg?width=700" alt="Mahj Pit Merry Merry Holiday Tiles mahjong tiles" loading="lazy">
+<div class="in">
+<h3>Merry Merry Holiday Tiles (limited edition)</h3>
+<p>Vintage holiday colours: champagne, citrus, cinnamon and eggnog. $465. Sold out for now.</p>
+<a class="go" href="https://mahjpit.co/products/merry-merry-holiday-tiles-limited-edition?sca_ref=12703261.srer4OxWkeRwwDVs" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Mahj Pit mats</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0699/1668/8550/files/IMG_4458.jpg?width=700" alt="Mahj Pit Domino Oxblood mahjong mat" loading="lazy">
+<div class="in">
+<h3>Domino Oxblood</h3>
+<p>Oxblood botanical ribbons with hidden tigers. $175.</p>
+<a class="go" href="https://mahjpit.co/products/mahjong-mat-domino-oxblood?sca_ref=12703261.srer4OxWkeRwwDVs" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0699/1668/8550/files/IMG_4452.jpg?width=700" alt="Mahj Pit French Mural mahjong mat" loading="lazy">
+<div class="in">
+<h3>French Mural</h3>
+<p>From their tabletop collection. $175.</p>
+<a class="go" href="https://mahjpit.co/products/mahjong-mat-french-mural?sca_ref=12703261.srer4OxWkeRwwDVs" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0699/1668/8550/files/IMG-0403.heic?width=700" alt="Mahj Pit Savannah mahjong mat" loading="lazy">
+<div class="in">
+<h3>Savannah</h3>
+<p>Low-pile chenille, 31" square, machine washable. $98.</p>
+<a class="go" href="https://mahjpit.co/products/savannah?sca_ref=12703261.srer4OxWkeRwwDVs" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0699/1668/8550/files/DO01020882.jpg?width=700" alt="Mahj Pit The Blue Hole mahjong mat" loading="lazy">
+<div class="in">
+<h3>The Blue Hole</h3>
+<p>Low-pile chenille. $98.</p>
+<a class="go" href="https://mahjpit.co/products/inky-mat?sca_ref=12703261.srer4OxWkeRwwDVs" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0699/1668/8550/files/DO01030215.jpg?width=700" alt="Mahj Pit Butterfly Dolly mahjong mat" loading="lazy">
+<div class="in">
+<h3>Butterfly Dolly</h3>
+<p>Low-pile chenille, 31.5" square, comes with a storage tube. $98.</p>
+<a class="go" href="https://mahjpit.co/products/the-butterfly-dolly-mat?sca_ref=12703261.srer4OxWkeRwwDVs" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0699/1668/8550/files/DO01030220.jpg?width=700" alt="Mahj Pit Pixel Pusher mahjong mat" loading="lazy">
+<div class="in">
+<h3>Pixel Pusher</h3>
+<p>Low-pile chenille. $98.</p>
+<a class="go" href="https://mahjpit.co/products/pixel-pusher-mat?sca_ref=12703261.srer4OxWkeRwwDVs" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0699/1668/8550/files/DO01030081.jpg?width=700" alt="Mahj Pit Paint Party mahjong mat" loading="lazy">
+<div class="in">
+<h3>Paint Party</h3>
+<p>Low-pile chenille. $98.</p>
+<a class="go" href="https://mahjpit.co/products/paint-party-mat?sca_ref=12703261.srer4OxWkeRwwDVs" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Holiday mat</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0699/1668/8550/files/IMG-9446.jpg?width=700" alt="Mahj Pit Ditsy Christmas, Maraschino mahjong mat" loading="lazy">
+<div class="in">
+<h3>Ditsy Christmas, Maraschino</h3>
+<p>Holiday mat with the rules printed on it. $175.</p>
+<a class="go" href="https://mahjpit.co/products/mahjong-mat-ditsy-christmas-maraschino-w-rules?sca_ref=12703261.srer4OxWkeRwwDVs" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Mahj Pit racks</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0699/1668/8550/files/98EE20F8-EB72-4CE9-A4BB-162F96729F07.jpg?width=700" alt="Mahj Pit Retro Racks mahjong racks" loading="lazy">
+<div class="in">
+<h3>Retro Racks (set of 4)</h3>
+<p>20", thick acrylic, magnets underneath hold the pusher, dual-pocket carry bag. $165&ndash;$185.</p>
+<a class="go" href="https://mahjpit.co/products/blonde-tortoise-pusher-house-racks-set-of-4-copy?sca_ref=12703261.srer4OxWkeRwwDVs" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0699/1668/8550/files/DO01030031.jpg?width=700" alt="Mahj Pit Blonde Tortoise Pusher House Racks mahjong racks" loading="lazy">
+<div class="in">
+<h3>Blonde Tortoise Pusher House Racks (set of 4)</h3>
+<p>20", thick acrylic, magnetic pusher storage. $165.</p>
+<a class="go" href="https://mahjpit.co/products/blonde-tortoise-pusher-tag-a-long-racks-set-of-4?sca_ref=12703261.srer4OxWkeRwwDVs" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0699/1668/8550/files/IMG_2639.jpg?width=700" alt="Mahj Pit Double Trouble Tortoise Siamese Racks mahjong racks" loading="lazy">
+<div class="in">
+<h3>Double Trouble Tortoise Siamese Racks</h3>
+<p>20", made for two-player games, with a Mahj Pit carry bag. $195. Sold out for now.</p>
+<a class="go" href="https://mahjpit.co/products/double-trouble-tortoise-siamese-racks?sca_ref=12703261.srer4OxWkeRwwDVs" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Mahj Pit Discount Code</h2>
+<div class="perk">
+<p><strong>A thank-you for Mahj Matchmaker readers:</strong> use code <span class="code">MAHJMATCH</span> for 10% off at Mahj Pit. Shop through my link so the code tracks.</p>
+<a class="btn" href="https://mahjpit.co/tiffany11" target="_blank" rel="sponsored noopener">Visit Mahj Pit</a>
+</div>
+</section>
+<section>
+<h2>Questions about Mahj Pit</h2>
+<details><summary>Is there a Mahj Pit discount code?</summary><p>Yes. Use code MAHJMATCH at checkout on mahjpit.co for 10% off.</p></details>
+<details><summary>What is Mahj Pit known for?</summary><p>Design-forward mahjong tiles in translucent acrylic, like their Original Confetti tiles with an iridescent finish and high-contrast blue faces, plus chenille and neoprene mats and 20" acrylic racks with magnetic pusher storage.</p></details>
+<details><summary>What size are Mahj Pit tiles?</summary><p>Their standard sets measure 0.91 x 1.38 x 0.43 in and come with 160 tiles, a tile bag and dice.</p></details>
+<details><summary>Are Mahj Pit mats washable?</summary><p>Their low-pile chenille mats have a non-slip rubber back and are machine washable; they ship rolled in a tube.</p></details>
+<details><summary>What is Mahj Pit&rsquo;s return policy?</summary><p>Unused items in original packaging can be returned within 14 days of delivery; tiles must be unopened with seals intact.</p></details>
+<details><summary>Can I combine the code with other offers?</summary><p>Most shops allow one discount code per order, so the code usually can&rsquo;t be combined with a sale or another code.</p></details>
+</section>
+<section>
+<h2>More brands I love</h2>
+<div class="more">
+<a href="/oh-my-mahjong-discount-code">Oh My Mahjong</a>
+<a href="/miss-mahjong-discount-code">Miss Mahjong</a>
+<a href="/my-fair-mahjong-discount-code">My Fair Mahjong</a>
+<a href="/mahjong-row-and-co-discount-code">Mahjong Row &amp; Co.</a>
+<a href="/bird-and-bamboo-discount-code">Bird &amp; Bamboo</a>
+<a href="/mahj-mood-discount-code">Mahj Mood</a>
+<a href="/yolo-mahjong-discount-code">YOLO Mahjong</a>
+<a href="/noli-june-discount-code">Noli June</a>
+<a href="/mahjong-discount-codes">All brands &rarr;</a>
+</div>
+</section>
+<p class="small">Mahj Matchmaker may earn a commission when you shop through these links, at no extra cost to you. Thank you for supporting the tile match mock-ups and inspiration I share with the community.</p>
+</div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is there a Mahj Pit discount code?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Use code MAHJMATCH at checkout on mahjpit.co for 10% off."}}, {"@type": "Question", "name": "What is Mahj Pit known for?", "acceptedAnswer": {"@type": "Answer", "text": "Design-forward mahjong tiles in translucent acrylic, like their Original Confetti tiles with an iridescent finish and high-contrast blue faces, plus chenille and neoprene mats and 20\" acrylic racks with magnetic pusher storage."}}, {"@type": "Question", "name": "What size are Mahj Pit tiles?", "acceptedAnswer": {"@type": "Answer", "text": "Their standard sets measure 0.91 x 1.38 x 0.43 in and come with 160 tiles, a tile bag and dice."}}, {"@type": "Question", "name": "Are Mahj Pit mats washable?", "acceptedAnswer": {"@type": "Answer", "text": "Their low-pile chenille mats have a non-slip rubber back and are machine washable; they ship rolled in a tube."}}, {"@type": "Question", "name": "What is Mahj Pit's return policy?", "acceptedAnswer": {"@type": "Answer", "text": "Unused items in original packaging can be returned within 14 days of delivery; tiles must be unopened with seals intact."}}]}</script>
