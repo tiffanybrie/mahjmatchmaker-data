@@ -80,6 +80,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Fait à Main code | Main | MAHJMATCH still not applicable at cart. | Watch |
 
 ## Blocked, approved (raise at the top of every attended reply until done)
+- Main: render HQ Money "Payouts" section from collection payouts (summary + per brand). First pass data in HQ Nov 4 (docs/reports/payouts/2026-11-04.md). Next pass: read Bam Bird, My Fair, Mini Mahjer, Hip Hip, Charleston, Bam!, Splash, Amahj UpPromote dashboards (one shop session at a time) + PayPal once signed in; identify "Design Mill" $135.48 (Nov 1) and "Kathrine Zell" $3.15 (Oct 15) payers.
 - PAYOUT RECONCILE (Main, started Nov 4): ledger of earned vs paid vs pending vs overdue per brand, PayPal matched, HQ Money "Payouts" section; spec docs/PAYOUT-RECONCILE.md. First pass today in Chrome (GoAffPro payouts, Marketplace payments, PayPal read-only, both inboxes); then weekly + 1st/16th.
 - FYM tracking TRK_URL into the live app: Matches & Catalog, v114 release, today (endpoint live Nov 4).
 
