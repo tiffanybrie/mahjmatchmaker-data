@@ -47,6 +47,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Item | Owner | Next step | Target |
 |---|---|---|---|
 | Google: Amanda Toppe 10% fix, Wren verified line, code report, indexing queue, AI-answer gaps (OMM, Bam Bird, My Fair, Peace Love) | Main + Ops + tasks | Priority 1. | Wed Nov 4 |
+| Hummingbird holiday section (hidden) | Matches & Catalog | /holiday-mahjong-matches #hummingbird stays display:none until the Hummingbird / Sunday Sets album goes live; it now holds 3 cards incl. Hummingbird + Home for the Holidays (Nov 4). When that album launches: un-hide the section and add a holiday section on the album page (NEW-ALBUM-CHECKLIST). | With Sunday Sets launch |
 | FYM m-lists: late holiday picks + Santa Baby yeses | Matches & Catalog | Add Tiffany's real picks to FYM m-lists in the next build: config/late-holiday-picks-nov03.json (33) + config/swipe-yeses/holiday-oct21.json 'santababy' (12). Santa Baby's Cocktail Hour (Splash of Color) is NOT in FYM at all: add it (flat crop assets/mats/holiday-late-nov04/splash-santa-baby-s-cocktail-hour-flat.png, holiday). Manifest assets/cards/holiday-late-nov04/manifest.json. | Thu Nov 5 |
 | Late holiday picks (33) + Santa Baby yeses (12) → holiday albums | Main (fork) | DONE Nov 4: 45 cards live on 21 pages (curl-verified). | DONE |
 | Holiday albums group post + FYM holiday group post + new-albums email | Main | After the albums update; her OK on each. | Thu Nov 5 |
@@ -81,7 +82,6 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Fait à Main code | Main | MAHJMATCH still not applicable at cart. | Watch |
 
 ## Blocked, approved (raise at the top of every attended reply until done)
-- Independent QA of the 45 late holiday cards LIVE on 21 pages (fork could not spawn a QA agent): Main runs one QA agent on phone 390 + desktop (assets/cards/holiday-late-nov04/manifest.json lists pages). Owner Main, today.
 - Mahjong Row Moody Tortoise + Brunette Burl: group post LIVE Nov 4 2:40pm (no links yet). WATCH mahjongrowandco.com/products.json: the moment either product page exists -> edit the group post comment with the links + pull both into FYM (Matches & Catalog) before Fri Nov 6 10am CT. Owner: Main (launch watch).
 - Main: render HQ Money "Payouts" section from collection payouts (summary + per brand). First pass data in HQ Nov 4 (docs/reports/payouts/2026-11-04.md). Next pass: read Bam Bird, My Fair, Mini Mahjer, Hip Hip, Charleston, Bam!, Splash, Amahj UpPromote dashboards (one shop session at a time) + PayPal once signed in; identify "Design Mill" $135.48 (Nov 1) and "Kathrine Zell" $3.15 (Oct 15) payers.
 - PAYOUT RECONCILE (Main, started Nov 4): ledger of earned vs paid vs pending vs overdue per brand, PayPal matched, HQ Money "Payouts" section; spec docs/PAYOUT-RECONCILE.md. First pass today in Chrome (GoAffPro payouts, Marketplace payments, PayPal read-only, both inboxes); then weekly + 1st/16th.

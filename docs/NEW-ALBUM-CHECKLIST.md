@@ -30,3 +30,5 @@ Run this list top to bottom the day an album goes live. Every item is Claude's j
 
 ## 5. The album it replaces
 - [ ] The previous "latest album" card leaves /links (it stays in the album strip).
+
+- Holiday sections (Nov 4 QA): after any holiday-section paste run `python3 scripts/checks/holiday_numbering.py` (numbering continues the section's own numbers, section not inside .mm3-faq, holiday style present). Hummingbird/Sunday Sets: un-hide #hummingbird on /holiday-mahjong-matches at launch.
