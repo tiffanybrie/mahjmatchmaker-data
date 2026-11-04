@@ -36,3 +36,4 @@ Method note: the favorites menu only updates after a reload, so each add was con
 - New partners this week: Noli June (done Oct 31), Maison Mahj (code Oct 29; handle maisonmahj already in ig-handles.json): already followed; favorited now, confirmed after reload.
 - New ShopMy brand: Luna EK Studio (Etsy shop LunaEKstudio, collection Oct 29): no Instagram link on the Etsy shop page, skipped (no verified handle).
 - Sunday Mahjong read in Chrome: newest post Oct 16 (minis reel); nothing new this week.
+- Mahj Pit (partner, onboarded Nov 4): @mahjpit.co. Their site footer has no Instagram link; the handle is named on mahjpit.co/pages/return-policy ('@mahjpit.co') and resolves to their public business account (Planoly Business Discovery, posts reference mahjpit.co). Added to ig-handles.json. Follow + favorite from @mahjmatchmaker: DESK OPS line.

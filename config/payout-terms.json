@@ -259,5 +259,19 @@
   "minimum": "unknown",
   "hold_days": "unknown",
   "source": "dashboards + payment emails read Nov 4"
+ },
+ "Mahj Pit": {
+  "network": "UpPromote",
+  "account_email": "tiffanybrie@",
+  "method": "PayPal (tiffanybrie@gmail.com)",
+  "schedule": "unknown",
+  "minimum": "unknown",
+  "hold_days": "unknown",
+  "commission": "10% per order, lifetime commission",
+  "dashboard": "https://af.uppromote.com/7ikbqm-b3/dashboard",
+  "link": "https://mahjpit.co/tiffany11",
+  "coupon": "MAHJMATCH (auto-applied via the link)",
+  "tax_field": "0 (Tiffany Nov 4)",
+  "source": "Tiffany Nov 4 3:27pm + dashboard screenshots"
  }
 }

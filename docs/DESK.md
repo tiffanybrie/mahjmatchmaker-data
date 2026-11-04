@@ -81,6 +81,9 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | FYM usage tracking LIVE ENDPOINT | Matches & Catalog | DEPLOYED Nov 4 2:25pm (config/fym-tracking.json, tested OK). Matches & Catalog: apply TRK_URL with builder/fym_track_oct17.py in the v114 release TODAY (both places); gate [157] blocks --release without it. Then confirm rows land in the sheet from a real phone swipe. | TODAY |
 | Fait à Main code | Main | MAHJMATCH still not applicable at cart. | Watch |
 
+- **OPS: follow + favorite @mahjpit.co** (new partner Mahj Pit, Nov 4; handle verified: their return-policy page names @mahjpit.co + public IG business account); log in docs/IG-FAVORITES.md.
+- **Matches & Catalog: Mahj Pit catalog into FYM** (mats, racks, tile sets; partner, code MAHJMATCH) via the partner catalog pipeline + photo flags, in the next build (MATCH-INBOX Nov 4 NEW PARTNER line; gate [114] blocks release until done).
+
 ## Blocked, approved (raise at the top of every attended reply until done)
 - Mahjong Row Moody Tortoise + Brunette Burl: group post LIVE Nov 4 2:40pm (no links yet). WATCH mahjongrowandco.com/products.json: the moment either product page exists -> edit the group post comment with the links + pull both into FYM (Matches & Catalog) before Fri Nov 6 10am CT. Owner: Main (launch watch).
 - Main: render HQ Money "Payouts" section from collection payouts (summary + per brand). First pass data in HQ Nov 4 (docs/reports/payouts/2026-11-04.md). Next pass: read Bam Bird, My Fair, Mini Mahjer, Hip Hip, Charleston, Bam!, Splash, Amahj UpPromote dashboards (one shop session at a time) + PayPal once signed in; identify "Design Mill" $135.48 (Nov 1) and "Kathrine Zell" $3.15 (Oct 15) payers.
