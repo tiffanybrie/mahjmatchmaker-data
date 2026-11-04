@@ -114,3 +114,7 @@ Every run (morning cleanup AND the 9:23pm desk cleanup): read docs/ANSWERS.md fo
 
 ## Oct 29 rule: NO ANSWER IS NOT A NO (Tiffany 1:08pm: "Not getting my yes is not an indicator that I don't want it done")
 Never archive or park an item because she did not answer. Unanswered asks older than 2 days go back on HQ Today as one quick line with the default Claude would pick; reversible on-brand steps go ahead with that default (tell her). Only her explicit "no" / "skip" closes an ask.
+
+
+## No 'ask once' (Tiffany Nov 4 2026)
+Her preference is 'ask once, then move on to the next task and COME BACK when she responds'. It never meant 'ask once and drop it'. Any unanswered ask is re-raised at the top of the owning chat's next reply (one line, with Claude's default) and stays on HQ Today until she answers or says no. The desk cleanup never labels an item 'Ask once'.
