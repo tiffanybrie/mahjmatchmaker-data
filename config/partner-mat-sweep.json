@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-04T14:05:59+00:00",
+ "swept_at": "2026-11-04T23:08:15+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v114",
  "stores": {
   "amahjline.com": {
@@ -220,17 +220,12 @@
   "bespokemahjong.com": {
    "brand": "Bespoke Mahjong",
    "status": "ok",
-   "products": 354,
+   "products": 349,
    "mats": [
     [
      "2026-10-22T12:17:12-05:00",
      "DOUBLE-SIDED MAT | Double the Fun/Bespoke x Gray Malin - A Very Merry Getaway Double-Sided Mat",
      "a-very-merry-getaway-double-sided-mat"
-    ],
-    [
-     "2026-10-22T10:12:46-05:00",
-     "DOUBLE-SIDED MAT | Double the Fun/Bespoke x Brooks Brothers - OXFORD CLASSIC",
-     "double-sided-mat-double-the-fun-bespoke-x-brooks-brothers-oxford-classic"
     ],
     [
      "2026-09-08T05:52:57-05:00",
@@ -546,7 +541,7 @@
   "brittmillsdesign.com": {
    "brand": "Britt Mills",
    "status": "ok",
-   "products": 713,
+   "products": 712,
    "mats": [
     [
      "2026-11-02T10:05:36-05:00",
@@ -1417,7 +1412,7 @@
   "mahjongrowandco.com": {
    "brand": "Mahjong Row & Co.",
    "status": "ok",
-   "products": 26,
+   "products": 27,
    "mats": [
     [
      "2026-10-05T15:00:47-05:00",
@@ -1795,7 +1790,7 @@
   "myfairmahjong.com": {
    "brand": "My Fair Mahjong",
    "status": "ok",
-   "products": 95,
+   "products": 96,
    "mats": [
     [
      "2026-10-19T12:03:31-05:00",
@@ -2022,7 +2017,7 @@
   "peacelovemahjong.com": {
    "brand": "Peace Love Mahjong",
    "status": "ok",
-   "products": 99,
+   "products": 100,
    "mats": [
     [
      "2026-09-30T06:45:19-05:00",
@@ -2065,7 +2060,7 @@
   "shop.andersruff.com": {
    "brand": "Anders Ruff",
    "status": "ok",
-   "products": 156,
+   "products": 158,
    "mats": [
     [
      "2026-10-27T23:11:59-04:00",
@@ -2670,7 +2665,7 @@
     ],
     [
      "2026-11-03T11:01:12-05:00",
-     "Champange Bubbles Mahjong Mat",
+     "Champagne Bubbles Mahjong Mat",
      "champange-bubbles-mahjong-mat"
     ],
     [
@@ -4502,7 +4497,7 @@
     ],
     [
      "2026-11-03T11:01:12-05:00",
-     "Champange Bubbles Mahjong Mat",
+     "Champagne Bubbles Mahjong Mat",
      "champange-bubbles-mahjong-mat"
     ],
     [
