@@ -64,7 +64,9 @@ def tile_racks(t):
     src = F.get(t) or SIB.get(t)
     if t == 'shangri-la': src = ['Miss Mahjong Scalloped Iridescent Opal', 'Bird & Bamboo Light Blue', 'Middle & Main Milk Glass Scalloped Acrylic']
     out, painted = [], 0
+    IDX = json.load(open(R + 'assets/racks/card/index.json'))['racks']
     for l in map(full, src):
+        if not l.startswith('Bird & Bamboo ') and l not in IDX: continue  # no real photo -> never on the card or caption
         if not neutral(l):
             if painted: continue
             painted += 1
@@ -98,7 +100,7 @@ def flat(im):
     return im.convert('RGB')
 def mat_crop(im):
     im = trim(flat(im)); W_, H = im.size
-    z = .72 if W_ >= 900 else 1.0
+    z = 1.0  # Nov 4: whole mat (these flats have plain centres; the border is the design)
     cw = int(W_ * z); ch = int(cw / 0.973)
     if ch > H: ch = H; cw = int(ch * 0.973)
     return im.crop((0, H - ch, cw, H))
