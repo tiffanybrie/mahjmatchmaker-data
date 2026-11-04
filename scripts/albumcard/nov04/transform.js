@@ -12,7 +12,7 @@ function mmTransform(src, figs, opt){
   }
   const end=src.indexOf('</section>',i);
   const seg=src.slice(i,end);
-  const n=(seg.match(/<figure /g)||[]).length;
+  const nums=[...seg.matchAll(/<span class="mm3-n">(\d+)<\/span>/g)].map(m=>+m[1]); const n=nums.length?Math.max(...nums):0; // continue the section's own numbering (QA Nov 4: Spring Love/Shangri-La sections continue from the main grid)
   const gEnd=seg.lastIndexOf('</div>'); // closes mm3-grid
   if(gEnd<0) throw new Error('no grid end');
   let nseg=seg.slice(0,gEnd)+renum(figs,n+1).join('')+seg.slice(gEnd);
