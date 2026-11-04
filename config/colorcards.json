@@ -790,6 +790,89 @@
    "racks_source": "PROPOSAL (no Rack Picks final list yet; Claude picked by colour, pending her OK)",
    "mats_source": "her swipe-book YES votes so far (db sundaysets), picked by colour; not final album picks",
    "_oct29": "Colour card BEFORE the swipe (doc 86b), built Oct 29 after the book went out without one. Colours measured from the canonical album pile (saturated-ink medians by hue family) and checked by eye."
+  },
+  "juniper": {
+   "name": "Juniper",
+   "col": "#225d36",
+   "brand": "Oh My Mahjong",
+   "sub": "Forest green backs, chartreuse + jade layers",
+   "backs": [
+    [
+     "FOREST GREEN",
+     "#225d36",
+     "marbled back"
+    ],
+    [
+     "CHARTREUSE",
+     "#a9c54f",
+     "layer"
+    ],
+    [
+     "JADE",
+     "#00a792",
+     "layer"
+    ]
+   ],
+   "faces": [
+    [
+     "HOT PINK",
+     "#f05aa5"
+    ],
+    [
+     "CORAL",
+     "#f0857c"
+    ],
+    [
+     "BAMBOO GREEN",
+     "#43a16b"
+    ],
+    [
+     "MINT",
+     "#9fdcc5"
+    ],
+    [
+     "JADE",
+     "#18b39c"
+    ],
+    [
+     "NAVY",
+     "#1d4a5a"
+    ],
+    [
+     "GOLD",
+     "#d9b85a"
+    ]
+   ],
+   "racks": [
+    "Miss Mahjong Jade & Brass",
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Pink Quartz"
+   ],
+   "rack_imgs": {
+    "Miss Mahjong Jade & Brass": "assets/racks/card/miss-mahjong-jade--brass.png",
+    "Oh My Mahjong Hot Pink": "assets/racks/card/oh-my-mahjong-hot-pink.png",
+    "Oh My Mahjong Pink Quartz": "assets/racks/card/oh-my-mahjong-pink-quartz.png"
+   },
+   "tile": "assets/tiles/album/juniper.jpg",
+   "tag": [
+    "A lush lantern-lit garden",
+    "pagodas, lotus & a peacock"
+   ],
+   "mats": [
+    "Lotus Cove",
+    "Garden Glow",
+    "Savannah"
+   ],
+   "mat_imgs": {
+    "Lotus Cove": "assets/colorcards/juniper/mats/lotus-cove-oh-my-mahjong.jpg",
+    "Garden Glow": "assets/colorcards/juniper/mats/garden-glow-emerald-bespoke-mahjong.jpg",
+    "Savannah": "assets/colorcards/juniper/mats/savannah-britt-mills.jpg"
+   },
+   "shop": "Shop Juniper · Oh My Mahjong",
+   "shop_m": "Shop Juniper · Oh My Mahjong",
+   "mats_source": "Claude's own picks (Tiffany Nov 4 3:27pm: 'show me how you'd match it'), not her picks yet",
+   "racks_source": "Claude's own picks, pending her OK",
+   "_nov04": "Colours measured from OMM's Juniper alt pile photo (05-Tile_Juniper_Alt) and checked by eye; OMM's own copy: forest green, jade, warm coral pink."
   }
  },
  "_note_oct19_catchup": "Oct 19 catch-up: shangri-la, lilac-soiree, preppy-soiree, spring-love, sunday-tile-set got mat_imgs/rack_imgs and were rendered with the existing style. They use 'tag' (factual). When Tiffany approves the Papaya profile_line style, add profile_line to each set and re-run build.py <key>; nothing else changes."
