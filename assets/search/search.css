@@ -50,7 +50,7 @@ html.mms-lock,html.mms-lock body{overflow:hidden!important}
 .mms-chip i{display:inline-block;width:10px;height:10px;border-radius:50%;border:1px solid rgba(0,0,0,.12)}
 .mms-al{font-size:13px;color:#3d5f86}
 .mms-al a{color:var(--mms-p);text-decoration:underline;text-underline-offset:2px}
-.mms-more{color:#7f97b6}
+.mms-more{color:#c8325f;background:none;border:0;padding:0 2px;font:inherit;font-weight:600;text-decoration:underline;cursor:pointer}
 .mms-acts{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
 .mms-btn{display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border-radius:18px;background:var(--mms-p);color:#fff!important;font-size:14px;font-weight:600;text-decoration:none!important;border:1.5px solid var(--mms-p);line-height:1}
 .mms-btn:hover{filter:brightness(1.05)}

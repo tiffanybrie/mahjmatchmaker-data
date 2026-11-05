@@ -196,7 +196,8 @@
     if (PREF != null && list.indexOf(PREF) > 0) list = [PREF].concat(list.filter(function (a) { return a !== PREF; }));
     if (!list.length) return '';
     var s = list.slice(0, 2).map(albumLink).join(', ');
-    if (list.length > 2) s += ' <span class="mms-more">+' + (list.length - 2) + ' more</span>';
+    /* Nov 5 (reader Nicki + Tiffany): "+N more" was plain text; it now opens the full album list in place */
+    if (list.length > 2) s += '<span class="mms-rest" hidden>, ' + list.slice(2).map(albumLink).join(', ') + '</span> <button type="button" class="mms-more">+' + (list.length - 2) + ' more</button>';
     return '<div class="mms-al">In the ' + s + '</div>';
   }
   function chips(secs) {
@@ -319,6 +320,8 @@
     res.addEventListener('click', function (e) {
       var b = e.target.closest('[data-q]');
       if (b) { inp.value = b.getAttribute('data-q'); render(inp.value); return; }
+      var mo = e.target.closest('.mms-more');
+      if (mo) { var rest = mo.parentNode.querySelector('.mms-rest'); if (rest) rest.hidden = false; mo.remove(); return; }
       var s = e.target.closest('.mms-showall');
       if (s) { shown[s.getAttribute('data-g')] = 1e4; render(lastQ); return; }
       var m = e.target.closest('[data-m],[data-x]');
@@ -430,7 +433,7 @@
     var tries = 0;
     (function look() {
       var imgs = document.querySelectorAll('.mmg-card img[src*="/' + key + '.webp"]');
-      if (!imgs.length) { if (++tries < 40) setTimeout(look, 250); return; }
+      if (!imgs.length) { if (++tries < 160) setTimeout(look, 250); return; } /* Nov 5: wait up to 40 s for a slow phone */
       var card = null;
       imgs.forEach(function (im) { var c = im.closest('.mmg-card'); if (!card && c && c.offsetParent !== null) card = c; });
       if (!card) {
@@ -443,9 +446,15 @@
         imgs.forEach(function (im) { var c = im.closest('.mmg-card'); if (!card && c && c.offsetParent !== null) card = c; });
       }
       if (!card) return;
-      card.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      /* Nov 5 ("See in gallery deadlinks"): on a phone the photos above the card keep loading after the jump and push it
+         off screen, so re-centre it as the page settles until the reader scrolls or taps themselves. */
+      var userMoved = false, stop = function () { userMoved = true; };
+      ['touchstart', 'wheel', 'keydown', 'mousedown'].forEach(function (ev) { window.addEventListener(ev, stop, { once: true, passive: true }); });
+      var centre = function () { if (userMoved) return; var r = card.getBoundingClientRect(); if (Math.abs(r.top + r.height / 2 - innerHeight / 2) > 40) card.scrollIntoView({ block: 'center' }); };
+      centre(); [400, 1000, 2000, 3500, 5500, 8000, 12000].forEach(function (ms) { setTimeout(centre, ms); });
+      window.addEventListener('load', function () { setTimeout(centre, 100); }, { once: true });
       card.classList.add('mms-hit'); window.__mmsJumped = key;
-      setTimeout(function () { card.classList.remove('mms-hit'); }, 3200);
+      setTimeout(function () { card.classList.remove('mms-hit'); }, 6000);
     })();
   }
   window.addEventListener('hashchange', galleryJump);
