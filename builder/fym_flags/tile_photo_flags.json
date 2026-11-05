@@ -469,5 +469,61 @@
  "yolo-journey-to-the-west": {
   "flag": "ok",
   "note": "Oct 30 v106: YOLO listing image 0 (joker tiles on their Journey mat), tiles fill the frame"
+ },
+ "juniper": {
+  "name": "Juniper",
+  "maker": "Oh My Mahjong",
+  "flag": "ok",
+  "note": "Nov 5 v115: album photo (assets/tiles/album/juniper.jpg); catalog set m=[] (Claude picks are not hers)",
+  "photo": "t115/juniper.jpg"
+ },
+ "bespoke-mahjong-garden-glow-sunshine-glow": {
+  "name": "Garden Glow (Sunshine Glow)",
+  "maker": "Bespoke Mahjong",
+  "flag": "ok",
+  "note": "Nov 5 v115: brand flat-lay of the faces",
+  "photo": "t115/bespoke-mahjong-garden-glow-sunshine-glow.jpg"
+ },
+ "bespoke-mahjong-its-a-vibe-glitter-glow-green": {
+  "name": "It's a Vibe (Glitter Glow Green)",
+  "maker": "Bespoke Mahjong",
+  "flag": "ok",
+  "note": "Nov 5 v115: brand pile of faces (green pearl backs)",
+  "photo": "t115/bespoke-mahjong-its-a-vibe-glitter-glow-green.jpg"
+ },
+ "mahj-pit-original-confetti-small": {
+  "name": "The Original Confetti (Small)",
+  "maker": "Mahj Pit",
+  "flag": "ok",
+  "note": "Nov 5 v115: brand photo 02",
+  "photo": "t115/mahj-pit-original-confetti-small.jpg"
+ },
+ "mahj-pit-original-confetti-large": {
+  "name": "The Original Confetti (Large)",
+  "maker": "Mahj Pit",
+  "flag": "ok",
+  "note": "Nov 5 v115: brand photo 01",
+  "photo": "t115/mahj-pit-original-confetti-large.jpg"
+ },
+ "mahj-pit-martha": {
+  "name": "The Martha",
+  "maker": "Mahj Pit",
+  "flag": "ok",
+  "note": "Nov 5 v115: brand photo 02",
+  "photo": "t115/mahj-pit-martha.jpg"
+ },
+ "mahj-pit-merry-merry": {
+  "name": "Merry Merry Holiday",
+  "maker": "Mahj Pit",
+  "flag": "ok",
+  "note": "Nov 5 v115: brand photo 01",
+  "photo": "t115/mahj-pit-merry-merry.jpg"
+ },
+ "mahj-pit-commuter-skinny-midnights": {
+  "name": "Commuter Skinny (Midnights)",
+  "maker": "Mahj Pit",
+  "flag": "ok",
+  "note": "Nov 5 v115: brand photo 03",
+  "photo": "t115/mahj-pit-commuter-skinny-midnights.jpg"
  }
 }
