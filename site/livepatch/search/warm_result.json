@@ -1,20 +1,10 @@
 {
- "commit": "6a8c34900885f4f127abd58f60817da46ba84ac7",
+ "commit": "98e580577e285311fc3ad237ef6dc5f98c5eaf02",
  "total": 876,
- "ok_first_try": 837,
- "ok_after_retry": 27,
+ "ok_first_try": 873,
+ "ok_after_retry": 1,
  "still_failing": {
-  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@6a8c34900885f4f127abd58f60817da46ba84ac7/assets/search/thumbs/a/cypress-forest-mahjong-tile-matches.webp": "403",
-  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@6a8c34900885f4f127abd58f60817da46ba84ac7/assets/search/thumbs/m/anders-ruff--heritage-tartan.webp": "403",
-  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@6a8c34900885f4f127abd58f60817da46ba84ac7/assets/search/thumbs/m/bespoke-mahjong--grateful-dead-x-bespoke-mahjong-double-sided-mat-tie-dye-dream.webp": "403",
-  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@6a8c34900885f4f127abd58f60817da46ba84ac7/assets/search/thumbs/m/let-s-be-besties--merry-bright-holiday-prism.webp": "403",
-  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@6a8c34900885f4f127abd58f60817da46ba84ac7/assets/search/thumbs/m/mahj-vine--shady-lady-umbrella-mat-cabana-stripe-sunset.webp": "403",
-  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@6a8c34900885f4f127abd58f60817da46ba84ac7/assets/search/thumbs/m/mahjong-register--emerald-teal-celedon-green-double-sided-leatherette.webp": "403",
-  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@6a8c34900885f4f127abd58f60817da46ba84ac7/assets/search/thumbs/m/my-fair-mahjong--prism-blue.webp": "403",
-  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@6a8c34900885f4f127abd58f60817da46ba84ac7/assets/search/thumbs/m/peace-love-mahjong--merry-striped.webp": "403",
-  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@6a8c34900885f4f127abd58f60817da46ba84ac7/assets/search/thumbs/m/splash-of-color--alpine-ski-lodge-winter.webp": "403",
-  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@6a8c34900885f4f127abd58f60817da46ba84ac7/assets/search/thumbs/m/splash-of-color--hydrangea-blooms.webp": "403",
-  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@6a8c34900885f4f127abd58f60817da46ba84ac7/assets/search/thumbs/m/virora-mahjong--parrotia.webp": "403",
-  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@6a8c34900885f4f127abd58f60817da46ba84ac7/assets/search/thumbs/x/bam-bird-boutique-classic-in-lavender.webp": "403"
+  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@98e580577e285311fc3ad237ef6dc5f98c5eaf02/assets/search/thumbs/m/amanda-toppe--pink-orchids.webp": "403",
+  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@98e580577e285311fc3ad237ef6dc5f98c5eaf02/assets/search/thumbs/m/anders-ruff--blushing-blooms-mahjong-mat.webp": "403"
  }
 }
