@@ -68,6 +68,8 @@ def rep(a, b):
     assert h.count(a) == 1, (h.count(a), a[:90]); h = h.replace(a, b)
 m = re.search(r'MCB=new Set\(\[([0-9, ]+)\]\);', h); rep(m.group(0), 'MCB=new Set([' + m.group(1) + ''.join(f', {c}' for c in NEWC) + ']);')
 rep("fetch('mc/'+(c>=190&&c<=243?190:c)+'.webp')", f"fetch('mc/'+(c>=190&&c<={NEWC[-1]}?190:c)+'.webp')")
+bl5 = re.search(r'const BLOGO=\{.*?\};const BLORD=\[.*?\];', b5).group(0); blh = re.search(r'const BLOGO=\{.*?\};const BLORD=\[.*?\];', h).group(0)
+h = h.replace(blh, bl5, 1)  # brand logos (Mahj Pit, v115)
 j5 = b5.index('const BACKG=') + 12; BG5, _ = json.JSONDecoder().raw_decode(b5[j5:])
 j = h.index('const BACKG=') + 12; _, e = json.JSONDecoder().raw_decode(h[j:]); h = h[:j] + json.dumps(BG5, ensure_ascii=False) + h[j + e:]
 need = {k: v for k, v in TH5.items() if k not in TH4 and (k in h)}

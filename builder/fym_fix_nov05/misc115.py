@@ -65,7 +65,39 @@ k = 'letsbebesties.com/camellia-kaleidoscope-ohbon-studios-artist-mahjong-mat'
 if k in M and not M[k].get('altu'):
     M[k].update(alt='Also available in leatherette', altu='https://letsbebesties.com/products/camellia-kaleidoscope-artist-collab-leatherette-mahjong-mat?sca_ref=12515508.SUyXEjJsqV')
     log.append('Camellia Kaleidoscope: also in leatherette')
-h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]; open(P, 'w').write(h)
+# 5. Bespoke double-sided mats: side B right after side A in every rank / cr (gate [78]; the v115 re-rank moved some)
+OI = {m: j for j, m in enumerate(D['order'])}
+pairs = [(OI[k.split('#')[0]], OI[k]) for k in M if k.endswith('#side-b') and k.split('#')[0] in OI]
+for s in sets:
+    for fld in ('rank', 'cr'):
+        L = s.get(fld)
+        if not L: continue
+        for ja, jb in pairs:
+            if ja in L and jb in L and L.index(jb) != L.index(ja) + 1: L.remove(jb); L.insert(L.index(ja) + 1, jb)
+# 6. Etsy / ShopMy (non-partner) adds say 'No code available at this time' like every other non-partner (gate [137d])
+for k, o in M.items():
+    if o.get('add') == 'nov03-etsy' and not o.get('pa') and not o.get('ncn'): o['ncn'] = 1
+# 7. Koi Flower Pond (Luna EK Studio): its 'yellow' measures cream (gate [120]) -> neutral
+k = 'www.etsy.com/listing/4573770797/mahjong-mat-non-slip-tabletop-mat-home'
+if k in M and 'yellow' in M[k].get('mf', []): M[k].update(mf=['neutral', 'green'], mt=[0, 1], sh=[66.4, 19.2])
+h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]
+# 8. Mahj Pit logo on the opening screen (gate [105]; assets/brand/partner-logos/mahj-pit.png)
+mb = re.search(r'const BLOGO=(\{.*?\});const BLORD=(\[.*?\]);', h); BL, BO = json.loads(mb.group(1)), json.loads(mb.group(2))
+if 'Mahj Pit' not in BL:
+    import io, base64
+    from PIL import Image
+    im = Image.open(REPO + 'assets/brand/partner-logos/mahj-pit.png').convert('RGBA'); im.thumbnail((263, 150)); bb = io.BytesIO(); im.save(bb, 'WEBP', quality=86)
+    BL['Mahj Pit'] = 'data:image/webp;base64,' + base64.b64encode(bb.getvalue()).decode()
+    BO.insert(BO.index('Splash of Color') + 1 if 'Splash of Color' in BO else len(BO), 'Mahj Pit')
+    h = h.replace(mb.group(0), 'const BLOGO=' + json.dumps(BL, ensure_ascii=False) + ';const BLORD=' + json.dumps(BO, ensure_ascii=False) + ';', 1); log.append('Mahj Pit logo')
+open(P, 'w').write(h)
+# 9. stock records for the new items (sold out per the brand store Nov 4-5) + Esme retired = not in stock (gate [138])
+STP = REPO + 'config/fym-stock.json'; ST = json.load(open(STP)); SPEC = json.load(open(REPO + 'config/fym-adds-nov05.json'))
+for kd, L_ in (('m', SPEC['mats']), ('t', SPEC['tiles'])):
+    for x in L_: ST['items'][f"{kd}:{x['key']}"] = {'in': not x.get('oos'), 'how': 'v115 add (brand store Nov 4-5)', **({'price': x['price']} if x.get('price') else {})}
+ST['items']['m:www.ohmymahjong.com/esme-mat-w-tube'] = {'in': False, 'how': 'retired: gone from ohmymahjong.com Nov 4'}
+ST['items']['t:tigredetartan.com/house-tigers-mahjong-tile-set-oyster'] = {'in': True, 'how': 'store check Nov 3 6:40pm ET (available, $295)', 'price': 295.0}
+json.dump(ST, open(STP, 'w'), indent=0, ensure_ascii=False)
 json.dump(LK, open(REPO + 'builder/fym_flags/locks.json', 'w'), indent=1, ensure_ascii=False)
 json.dump(SY, open(SYP, 'w'), indent=1, ensure_ascii=False)
 for l in log: print(l)
