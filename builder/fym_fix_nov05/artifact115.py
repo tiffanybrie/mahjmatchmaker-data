@@ -4,7 +4,7 @@ The artifact is at its 512-file limit, so it keeps the v113/v114 shape: pub114 =
 artifact-only hides re-applied, the v115 new chunks (244+) APPENDED into mc/190.webp at q66 (route 190..last -> 190), the 8 new tile photos
 inlined as data URIs, their thumbnails inline. If the byte budget is exceeded, the lowest-ranked v115 year-round adds are hidden in THIS copy
 only (as artifact113); the website copy has every add. Writes <out>/index.html, <out>/mc/190.webp, <out>/files.json, <out>/kept.json.
-PUBLISHED Nov 5 (preview v28) with: A115_MUST="Mahj Pit" A115_TILEPX=480 A115_TILEQ=70 python3 artifact115.py <b114> <b115> <pub114> <out> 0
+PUBLISHED Nov 5 (preview v29, QA fixes) with: A115_MUST="Mahj Pit" A115_TILEPX=400 A115_TILEQ=66 python3 artifact115.py <b114> <b115> <pub114> <out> 0
 (the 256 MiB per-version cap: the 6 must-brands at ~2.6 MB were refused, Mahj Pit only at ~2.2 MB fits). Usage: python3 artifact115.py <b114 dir> <b115 dir> <pub114 dir> <out dir> [budget bytes added, default 600000]"""
 import sys, os, json, re, struct, io, base64, mimetypes
 from PIL import Image

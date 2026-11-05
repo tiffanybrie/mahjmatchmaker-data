@@ -65,6 +65,11 @@ k = 'letsbebesties.com/camellia-kaleidoscope-ohbon-studios-artist-mahjong-mat'
 if k in M and not M[k].get('altu'):
     M[k].update(alt='Also available in leatherette', altu='https://letsbebesties.com/products/camellia-kaleidoscope-artist-collab-leatherette-mahjong-mat?sca_ref=12515508.SUyXEjJsqV')
     log.append('Camellia Kaleidoscope: also in leatherette')
+# 4b. Britt Mills Isla (QA Nov 5): the neoprene card has been in FYM since v114 ('Isla Neoprene'; its photo is the same flat render, so it
+#     stays); the Nov 2 leatherette listing is its material twin
+k = 'brittmillsdesign.com/isla-neoprene-mahjong-mat-arriving-late-november'
+if k in M and not M[k].get('altu'):
+    M[k].update(alt='Also available in leatherette', altu='https://brittmillsdesign.com/products/isla-leatherette-mahjong-mat?sca_ref=11205153.24gc8ncLZw3'); log.append('Isla: also in leatherette')
 # 5. Bespoke double-sided mats: side B right after side A in every rank / cr (gate [78]; the v115 re-rank moved some)
 OI = {m: j for j, m in enumerate(D['order'])}
 pairs = [(OI[k.split('#')[0]], OI[k]) for k in M if k.endswith('#side-b') and k.split('#')[0] in OI]

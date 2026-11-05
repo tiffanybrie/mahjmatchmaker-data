@@ -59,6 +59,7 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
     NRM over every accented name), 84 mat-door Add racks, 85 no set hidden by a stale no_tiles flag + Jubilee Midnight Blue, 86 PLM band
     framing, 87 MFM Natural Wood featured + no 404 wood-rack link, 88 PLM painted racks re-cut, 89 mat photos without white bands (warn:
     angled shots), 90 gallery sync (warn)
+ 158 (Nov 5, v115 QA) no visible mat photo beyond 2:1, no tile photo beyond 2.3:1 (strips / edge crops)
  100 (Oct 27, v101 = Version 1.5): missing partner mats from the last launch-watch sweep (config/partner-mat-sweep.json; no network)
  91-94 (Oct 26 night, v98 = Version 1.2): 94 PLM rack colours vs reference + locked approved Chartreuse/Dark Green; 95 card title = assigned s.tc; 96 names without stray quotes + Wren logo; 91 match card racks low + tight + equal length, stack photos big, off the mat's left (partner-graphics layout), 92 Mahjong Register single
     racks (no stacks) + Mahj Mood angled scalloped rack, 93 Desert Dreams Up close strip framing; [89] now FAILS if a v98-flattened
@@ -1784,6 +1785,34 @@ if "TRK_URL=''" in UI or 'TRK_URL=""' in UI or 'TRK_URL' not in UI:
     _m157 = "[157] Find Your Mat-ch usage tracking is OFF (TRK_URL empty): set it from config/fym-tracking.json"
     if '--release' in sys.argv: F.append(_m157)
     else: print("FYM GATE WARNING " + _m157 + " (FAIL with --release)")
+# [158] Nov 5 2026 (v115 independent QA: Mahj Pit Turkey Dinner showed as a 640x209 edge strip, Flower Shop as a 640x202 strip that was
+#       mostly a rack: spec crops applied to already-wide sources; gate [50] only checks mats listed in its config). Every VISIBLE mat
+#       photo (the image actually in its mc chunk, after crop) must be within 2:1 either way. Tile photos: the approved faces|backs split
+#       standard is 16:7 (2.29:1, ~76 sets), so tiles fail beyond 2.3:1 (or taller than 1:2).
+try:
+    import struct as _st158, io as _io158
+    _ch158 = {}
+    def _msz158(f):
+        _n = int(f.split('/')[1].split('.')[0]); _c = _n // 12
+        if _c not in _ch158:
+            _p = os.path.join(B, 'mc', f'{_c}.webp')
+            if not os.path.exists(_p): _ch158[_c] = None
+            else:
+                _ab = open(_p, 'rb').read(); _L = _st158.unpack('<I', _ab[-4:])[0]; _ch158[_c] = (_ab, json.loads(_ab[-4 - _L:-4]))
+        if not _ch158[_c] or f not in _ch158[_c][1]: return None
+        _ab, _hd = _ch158[_c]; _a, _l = _hd[f]; return Image.open(_io158.BytesIO(_ab[_a:_a + _l])).size
+    _b158 = []
+    for _k, _m in M.items():
+        if _m.get('hid') or not str(_m.get('f', '')).startswith('m/'): continue
+        _sz = _msz158(_m['f'])
+        if _sz and max(_sz[0] / _sz[1], _sz[1] / _sz[0]) > 2: _b158.append(f"mat {_m.get('bn')} | {_m['n']} {_sz[0]}x{_sz[1]}")
+    for _s in D['sets']:
+        _t = T.get(_s['tile']) or {}; _f = _t.get('full') or ''
+        if not vis(_s) or not _f or not os.path.exists(os.path.join(B, _f)): continue
+        _w, _h = Image.open(os.path.join(B, _f)).size
+        if _w / _h > 2.3 or _h / _w > 2: _b158.append(f"tiles {_t.get('bn')} | {_t.get('n')} {_w}x{_h}")
+    if _b158: F.append(f"[158] {len(_b158)} visible photos with an extreme aspect ratio (a strip, not the item; re-pick or re-crop the photo): " + '; '.join(_b158[:12]))
+except Exception as _e: F.append(f"[158] aspect-ratio check did not run: {_e}")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))

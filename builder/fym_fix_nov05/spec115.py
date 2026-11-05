@@ -33,9 +33,9 @@ for h, n, hol in [('marlene-put-out-a-spread-on-the-eighth-night', 'Marlene Put 
 MPM = {'mahjong-mat-domino-oxblood': ('Domino Oxblood', '01', False, None), 'mahjong-mat-french-mural': ('French Mural', '01', False, None),
        'mahjong-mat-ditsy-christmas-maraschino-w-rules': ('Ditsy Christmas Maraschino', '01', True, None), 'savannah': ('Savannah', '01', False, None),
        'inky-mat': ('The Blue Hole', '01', False, None), 'the-butterfly-dolly-mat': ('The Butterfly Dolly', '01', False, None),
-       'pixel-pusher-mat': ('Pixel Pusher', '01', False, None), 'paint-party-mat': ('Paint Party', '02', False, (0, 0, 0.82, 1)), 'turkey-dinner-mat': ('Turkey Dinner', '01', False, (0, 0.2, 1, 0.78)),
+       'pixel-pusher-mat': ('Pixel Pusher', '01', False, None), 'paint-party-mat': ('Paint Party', '02', False, (0, 0, 0.82, 1)), 'turkey-dinner-mat': ('Turkey Dinner', '02', False, None),
        'the-line-mat-copy': ('The Calling Card', '01', False, None), 'the-line-mat': ('The Line', '01', False, None), 'the-quigley-mat': ('The Quigley', '01', False, None),
-       'poppylicious-mat': ('Poppylicious', '01', False, None), 'acid-in-the-library-may': ('Acid in the Library', '02', False, None), 'flower-shop': ('Flower Shop', '04', False, (0, 0.22, 1, 0.78)),
+       'poppylicious-mat': ('Poppylicious', '02', False, (0.24, 0.04, 0.96, 0.98)), 'acid-in-the-library-may': ('Acid in the Library', '02', False, None), 'flower-shop': ('Flower Shop', '01', False, None),
        'primary-on-broughton-game-mat-copy': ('Zinnia Jockeys', '01', False, None), 'primary-on-broughton': ('Primary on Broughton', '03', False, None),
        'seaside-game-mat': ('Seaside', '01', False, None), 'mahjong-gaming-mat-el-tigre-rules-edition': ('El Tigre (Rules Edition)', '01', False, None),
        'deep-blue-mat': ('Deep Blue', '03', False, (0.12, 0, 0.79, 0.76)), 'all-vibes-mat': ('All Vibes', '01', False, None)}
@@ -46,10 +46,7 @@ for h, (n, f, hol, crop) in MPM.items():
 add('www.ohmymahjong.com/lotus-cove-mat-in-tube', 'Lotus Cove', dict(b='Oh My Mahjong', bn='Oh My Mahjong', u='https://ohmymahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Flotus-cove-mat-in-tube',
     u0='https://www.ohmymahjong.com/products/lotus-cove-mat-in-tube', dc='https://mahjmatchmaker.com/oh-my-mahjong-discount-code', pa=True),
     save(R + 'config/matcard/lotuscove_mat.jpg', 'assets/mats/v115/omm-lotus-cove.jpg'), False, photo_note='OMM overhead flat, cropped mat card', inbox='Nov 3 HQ: all new OMM into FYM', price=90)
-add('brittmillsdesign.com/isla-neoprene-mahjong-mat-arriving-late-november', 'Isla', dict(b='brittmillsdesign.com', bn='Britt Mills',
-    u=f'https://brittmillsdesign.com/products/isla-neoprene-mahjong-mat-arriving-late-november?sca_ref={BMR}', u0=f'https://brittmillsdesign.com/products/isla-neoprene-mahjong-mat-arriving-late-november?sca_ref={BMR}',
-    dc='https://mahjmatchmaker.com/britt-mills-discount-code', pa=True), 'assets/mats/v115/britt-mills-isla.jpg', False,
-    alt='Also available in leatherette', altu=f'https://brittmillsdesign.com/products/isla-leatherette-mahjong-mat?sca_ref={BMR}', photo_note='brand render cropped to the mat', inbox='Nov 2 launch watch')
+# Britt Mills Isla: already in FYM (v114 'Isla Neoprene', same flat render) -> misc115 adds 'Also available in leatherette' (QA Nov 5)
 add('splashofcolorco.com/santa-baby-s-cocktail-hour-mahjong-mat-sleek-surface', "Santa Baby's Cocktail Hour", dict(b='splashofcolorco.com', bn='Splash of Color',
     u='https://splashofcolorco.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fsanta-baby-s-cocktail-hour-mahjong-mat-sleek-surface',
     u0='https://splashofcolorco.com/products/santa-baby-s-cocktail-hour-mahjong-mat-sleek-surface', dc='https://mahjmatchmaker.com/splash-of-color-discount-code', pa=True),
@@ -73,8 +70,8 @@ def mpt(h): return dict(u=f'https://mahjpit.co/products/{h}?sca_ref={MPR}', u0=f
 for h, slug, n, f, tc, g, crop in [('the-original-confetti-tiles-small', 'mahj-pit-original-confetti-small', 'The Original Confetti (Small)', '02', '#1d3f9a', 'Blue', None),
                                    ('large-confetti-tiles', 'mahj-pit-original-confetti-large', 'The Original Confetti (Large)', '01', '#1d3f9a', 'Blue', (0.05, 0.1, 0.95, 0.9)),
                                    ('the-martha-tiles', 'mahj-pit-martha', 'The Martha', '02', '#e9e3d6', 'Ivory', (0.0, 0.0, 1, 0.62)),
-                                   ('merry-merry-holiday-tiles-limited-edition', 'mahj-pit-merry-merry', 'Merry Merry Holiday', '02', '#b5172b', 'Holiday', (0.1, 0.2, 0.89, 0.75)),
-                                   ('the-commuter-skinny-tiles-only', 'mahj-pit-commuter-skinny-midnights', 'Commuter Skinny (Midnights)', '03', '#16161d', 'Blue', (0.0, 0.15, 1, 0.85))]:
+                                   ('merry-merry-holiday-tiles-limited-edition', 'mahj-pit-merry-merry', 'Merry Merry Holiday', '02', '#b5172b', 'Holiday', (0.2, 0.13, 0.79, 0.82)),
+                                   ('the-commuter-skinny-tiles-only', 'mahj-pit-commuter-skinny-midnights', 'Commuter Skinny (Midnights)', '03', '#16161d', 'Blue', (0.15, 0.1, 0.85, 0.9))]:
     tadd('mahjpit.co/' + h, slug, n, 'Mahj Pit', mpt(h), save(L + f'mahjpit-{h}/{f}.jpg', f'assets/tiles/v115/mahjpit-{h}.jpg', crop), tc, g,
          oos=0 if CAT[h]['available'] else 1, price=CAT[h]['price'], photo_note=f'brand photo {f}')
 json.dump({'_about': 'FYM 1.15 (v115) catalog adds, Nov 5 (DESK item 2b). Photos chosen by eye on contact sheets. Holiday = Christmas/Hanukkah/winter snow only (Rochelle NYE = year-round). '
