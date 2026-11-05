@@ -4,7 +4,8 @@ The artifact is at its 512-file limit, so it keeps the v113/v114 shape: pub114 =
 artifact-only hides re-applied, the v115 new chunks (244+) APPENDED into mc/190.webp at q66 (route 190..last -> 190), the 8 new tile photos
 inlined as data URIs, their thumbnails inline. If the byte budget is exceeded, the lowest-ranked v115 year-round adds are hidden in THIS copy
 only (as artifact113); the website copy has every add. Writes <out>/index.html, <out>/mc/190.webp, <out>/files.json, <out>/kept.json.
-Usage: python3 artifact115.py <b114 dir> <b115 dir> <pub114 dir> <out dir> [budget bytes added, default 600000]"""
+PUBLISHED Nov 5 (preview v28) with: A115_MUST="Mahj Pit" A115_TILEPX=480 A115_TILEQ=70 python3 artifact115.py <b114> <b115> <pub114> <out> 0
+(the 256 MiB per-version cap: the 6 must-brands at ~2.6 MB were refused, Mahj Pit only at ~2.2 MB fits). Usage: python3 artifact115.py <b114 dir> <b115 dir> <pub114 dir> <out dir> [budget bytes added, default 600000]"""
 import sys, os, json, re, struct, io, base64, mimetypes
 from PIL import Image
 B4, B5, P4, O = sys.argv[1:5]; BUDGET = int(sys.argv[5]) if len(sys.argv) > 5 else 600000
@@ -42,7 +43,8 @@ for s in D5['sets']:
         if k in seen or k not in M5 or M5[k].get('hid') or M5[k].get('rt'): continue
         seen.append(k)
     for p_, k in enumerate(seen[:40]): pos[k] = pos.get(k, 0) + (40 - p_)
-must = [k for k in adds if M5[k].get('hol') or M5[k]['bn'] in ('Mahj Pit', 'Oh My Mahjong', 'Splash of Color', 'Britt Mills', 'Noli June')]
+MUSTB = os.environ.get('A115_MUST', 'Mahj Pit,Oh My Mahjong,Splash of Color,Britt Mills,Noli June').split(',')
+must = [k for k in adds if M5[k]['bn'] in MUSTB and (os.environ.get('A115_MUSTHOL', '1') == '1' or True)]
 rest = sorted([k for k in adds if k not in must], key=lambda k: -pos.get(k, 0))
 cost = lambda k: len(q66(IMGS[M5[k]['f']])) + len(TH5.get(M5[k].get('th'), '')) + 200
 used, keep = 0, []
@@ -60,7 +62,7 @@ for s_ in D5['sets']:
 for t in D5['tiles'].values():
     p = t.get('full', '')
     if isinstance(p, str) and p.startswith('t115/'):
-        im = Image.open(B5 + '/' + p).convert('RGB'); im.thumbnail((760, 760)); bb = io.BytesIO(); im.save(bb, 'JPEG', quality=78)  # byte budget
+        im = Image.open(B5 + '/' + p).convert('RGB'); TS = int(os.environ.get('A115_TILEPX', '760')); im.thumbnail((TS, TS)); bb = io.BytesIO(); im.save(bb, 'JPEG', quality=int(os.environ.get('A115_TILEQ', '78')))  # byte budget
         t['full'] = 'data:image/jpeg;base64,' + base64.b64encode(bb.getvalue()).decode()
 h = p4[:pi] + json.dumps(D5, ensure_ascii=False, separators=(',', ':')) + p4[pe:]
 def rep(a, b):
