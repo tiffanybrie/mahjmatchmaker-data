@@ -795,12 +795,12 @@
    "name": "Juniper",
    "col": "#225d36",
    "brand": "Oh My Mahjong",
-   "sub": "Forest green backs, chartreuse + jade layers",
+   "sub": "Jade-look backs, chartreuse + teal layers",
    "backs": [
     [
-     "FOREST GREEN",
+     "FOREST GREEN JADE",
      "#225d36",
-     "marbled back"
+     "jade-look back"
     ],
     [
      "CHARTREUSE",
@@ -808,7 +808,7 @@
      "layer"
     ],
     [
-     "JADE",
+     "TEAL",
      "#00a792",
      "layer"
     ]
@@ -831,7 +831,7 @@
      "#9fdcc5"
     ],
     [
-     "JADE",
+     "TEAL",
      "#18b39c"
     ],
     [
@@ -859,20 +859,21 @@
     "pagodas, lotus & a peacock"
    ],
    "mats": [
-    "Lotus Cove",
     "Garden Glow",
-    "Savannah"
+    "Palm Royale",
+    "Lotus Cove"
    ],
    "mat_imgs": {
-    "Lotus Cove": "assets/colorcards/juniper/mats/lotus-cove-oh-my-mahjong.jpg",
     "Garden Glow": "assets/colorcards/juniper/mats/garden-glow-emerald-bespoke-mahjong.jpg",
-    "Savannah": "assets/colorcards/juniper/mats/savannah-britt-mills.jpg"
+    "Palm Royale": "assets/colorcards/juniper/mats/palm-royale-mahj-tile-haus.jpg",
+    "Lotus Cove": "assets/colorcards/juniper/mats/lotus-cove-oh-my-mahjong.jpg"
    },
    "shop": "Shop Juniper · Oh My Mahjong",
    "shop_m": "Shop Juniper · Oh My Mahjong",
    "mats_source": "Claude's own picks (Tiffany Nov 4 3:27pm: 'show me how you'd match it'), not her picks yet",
    "racks_source": "Claude's own picks, pending her OK",
-   "_nov04": "Colours measured from OMM's Juniper alt pile photo (05-Tile_Juniper_Alt) and checked by eye; OMM's own copy: forest green, jade, warm coral pink."
+   "_nov04": "Colours measured from OMM's Juniper alt pile photo (05-Tile_Juniper_Alt) and checked by eye; OMM's own copy: forest green, jade, warm coral pink.",
+   "_nov05": "Tiffany Nov 5 12:42am: back = forest green JADE-LOOK (OMM: 'inspired by the rich beauty of jade'); never call the teal layer 'jade'. Pair mat Lotus Cove top 3, not #1; Palm Royale #2."
   }
  },
  "_note_oct19_catchup": "Oct 19 catch-up: shangri-la, lilac-soiree, preppy-soiree, spring-love, sunday-tile-set got mat_imgs/rack_imgs and were rendered with the existing style. They use 'tag' (factual). When Tiffany approves the Papaya profile_line style, add profile_line to each set and re-run build.py <key>; nothing else changes."

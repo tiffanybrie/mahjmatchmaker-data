@@ -188,6 +188,17 @@ def gate(path, snap_path=None, update_of=None):
                 _cnt[b] = _cnt.get(b, 0) + 1
             _over = {b: n for b, n in _cnt.items() if n > BRAND_CAP}
             if _over: F.append(f"[h] {g.get('label', gid)}: more than {BRAND_CAP} colour-match mats from one brand {_over} (rank them, keep the brand's top {BRAND_CAP}, mix brands)")
+    # [n] Tiffany Nov 5 12:42am (STANDING): "you cut off the mat titles for me all the time... I need to learn the mats".
+    # Every mat card shows its FULL name and brand: no ellipsis / line-clamp / nowrap+hidden on any text in the book.
+    _html = open(path, encoding='utf-8').read()
+    for _pat, _what in [(r'text-overflow\s*:\s*ellipsis', 'text-overflow:ellipsis'), (r'line-clamp\s*:', 'line-clamp'),
+                        (r'white-space\s*:\s*nowrap[^}]*overflow\s*:\s*hidden|overflow\s*:\s*hidden[^}]*white-space\s*:\s*nowrap', 'nowrap + overflow:hidden')]:
+        if re.search(_pat, _html):
+            F.append(f"[n] the book's CSS cuts text off ({_what}): mat names and brands must show in full (wrap them), never truncated")
+    for _it in D.get('items', []):
+        _lab = (_it.get('label') or '')
+        if _lab.endswith(('…', '...')):
+            F.append(f"[n] item {_it.get('id')}: label is shortened ('{_lab}'): show the full mat name + brand"); break
     _bc = {}
     for _k, _m in snap.items():
         if not _m.get('hid'): _bc[_m.get('bn')] = _bc.get(_m.get('bn'), 0) + 1
