@@ -1,6 +1,8 @@
 # Mahj Mood (@mahj_mood): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 5 10:55am ET: reel 'We love a Versatile Tile': Playing For Keeps (Valentine) tiles styled on 9 different mats, incl. fourwindssocial and brittmillsdesign (https://www.instagram.com/reel/DfXZcMBx-99/). PAIRING proof: they sell PFK as a year-round set, not just Valentine's. Preorder opens to everyone Fri Nov 6 10am CT (subscribers Nov 5), Jan delivery.
+- Nov 5 10:03am ET: tile-back close-up, 'swirly pink and lavender with a hint of sparkle' (https://www.instagram.com/p/DfXTwHLRF2w/). #mahjmood #mahjong #mahj #mahjongstyle #smallshop
 - Nov 4 8:46am ET: Playing for Keeps goes live Fri Nov 6, SUBSCRIBERS Thu Nov 5; preorder, January delivery. Swirly pink + lavender backs, 'chocolate box' jokers (https://www.instagram.com/p/DfUl55jxvsw/).
 - Oct 29: Holly Berry mat + Jade Luxe racks as a holiday table without holiday tiles, comment HOLIDAY (DfFn6QxMGJZ). Playing for Keeps preorder Fri Nov 6 still the next drop.
 - Oct 29: Holly Berry mat + Jade Luxe racks as a 'holiday tablescape without holiday tiles' (comment HOLIDAY, DfFn6QxMGJZ). Playing for Keeps Valentine's set preorder Fri Nov 6 (DfDkAJrMliW).

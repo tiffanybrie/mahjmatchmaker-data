@@ -1,6 +1,7 @@
 # Miss Mahjong (@missmahjongofficial): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 5 11:00am ET: reel 'Bombshell Pink. Butter Yellow. Pistachio. Peony. Chartreuse. New acrylic racks dropping 11/10 at 10 am CT.' (https://www.instagram.com/reel/DfXaYEaR791/). NEW accessory drop (racks, not tiles): record only. Palette = soft pastels + chartreuse; likely styled with their pastel sets (Miss Darling Lilac etc.). No hashtags; 'comment X' CTAs.
 - Nov 2 1:22pm ET: reel 'Lattice talk about your next travel set': Miss Classic TRAVEL set (same faces as Miss Classic Malachite, bamboo lattice back, single-layer engraved acrylic, 5 lbs, racks, carry-all + tile bag, Garden Party or Cherry Blossom travel mat, 4 waterproof Mahjong Press cards) 'takes off' Tue Nov 3 10am CT, ready to ship (DfP71tQRt_R). Travel set: skip (record only). Pairs: Miss Classic faces + their own travel mats + The Mahjong Press cards. First feed post since Sep 24.
 - Oct 27: Email 'Catrina. Jade. Malachite.' (16:19 UTC, Klaviyo): BACK IN STOCK NOW: Miss Classic Malachite ('nearly Malachite season… red and green… made for the holidays'), Miss Catrina (Día de Muertos; 'one more restock next week. That's the last of her until next fall'), Miss Classic Jade. All three LIVE (site check 1:30pm ET).
 - Oct 27: IG feed shows nothing new since Sep 24 via Planoly discovery (they announce restocks in stories/email). Watch the back-in-stock emails (hello@backinstockemail1.com) + Klaviyo emails.

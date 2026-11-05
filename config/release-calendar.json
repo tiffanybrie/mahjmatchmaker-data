@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-05",
- "updatedBy": "partner watch Nov 5 9:45am ET",
+ "updatedBy": "partner watch Nov 5 1:45pm ET",
  "rules": {
   "timing": {
    "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -1442,6 +1442,37 @@
    "affiliate": true,
    "priority": 3,
    "contentTiming": "Watch the store; if it's a new tile set or mat, launch watch logs it + swipe book per the gate."
+  },
+  {
+   "id": "miss-acrylic-racks-nov10",
+   "brand": "Miss Mahjong",
+   "product": "New acrylic racks: Bombshell Pink, Butter Yellow, Pistachio, Peony, Chartreuse",
+   "type": "launch",
+   "date": "2026-11-10",
+   "window": "Tue Nov 10, 10am CT",
+   "windowStart": "2026-11-10",
+   "status": "announced IG Nov 5 (DfXaYEaR791)",
+   "source": "IG @missmahjongofficial Nov 5",
+   "sourceUrl": "https://www.instagram.com/reel/DfXaYEaR791/",
+   "album": false,
+   "affiliate": true,
+   "priority": 3,
+   "contentTiming": "Accessory (racks): record only. Check store Nov 10; rack picks may use them."
+  },
+  {
+   "id": "bamlets-embroidered-tile-bag-restock-nov5",
+   "brand": "Bam! Let's Mahjong",
+   "product": "White Embroidered tile bag (elephants) restock",
+   "type": "restock",
+   "date": "2026-11-05",
+   "window": "LIVE Nov 5",
+   "status": "LIVE Nov 5 (IG back in stock)",
+   "source": "IG @bamletsmahjong Nov 5",
+   "sourceUrl": "https://www.instagram.com/p/DfXSHyxREr9/",
+   "album": false,
+   "affiliate": true,
+   "priority": 4,
+   "contentTiming": "Accessory restock: record only."
   }
  ],
  "sources": {

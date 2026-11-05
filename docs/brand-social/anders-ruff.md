@@ -1,6 +1,7 @@
 # Anders Ruff (@andersruffdesignco): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 5 10:02am ET: '50 days to Christmas' unboxing reel of Dear Santa tiles, 'Shop Dear Santa NOW' (https://www.instagram.com/reel/DfXTgcjiTwt/). In stock, not a new drop. #AndersRuffDesignCo #DearSantaMahjong #ChristmasMahjong #HolidayMahjong
 - Nov 4 10:28am ET: Thanksgiving carousel, in stock + ready to ship: Autumn Bloom, Pumpkin Plaid, Heirloom Harvest mats (https://www.instagram.com/p/DfUx0TUmnYm/). #ThanksgivingMahjong #FallTablescape. Store 1:35pm ET: still nothing new since Puppy Love Solo (the Gatsby reel's 'new product reveal' still unidentified).
 - Nov 4 9:02am ET: reel 'Set our Green Light Gatsby table together! And a new product reveal at the end!' (https://www.instagram.com/reel/DfUn9d2EhUO/). Product not named in the caption; video withheld by Instagram (licensed music), so not identified. Store check 9:45am ET: nothing new since Puppy Love Solo Play mat (Nov 2). Watch the store.
 - Nov 2-3: pushing Brownstone Bloom hard: Autumn Bloom mat x Brownstone Bloom tiles 'shop these fall vibes' (https://www.instagram.com/reel/DfSXFUOiXbN/); up-close Brownstone Bloom tablescape from the indigopruitt x real_simple collab with new blonde tortoiseshell racks w/ lucky hardware (DfQR3SoksZN); Christmas collection roundup carousel (DfP0bFpGJeA).
