@@ -1,7 +1,7 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-04T23:08:15+00:00",
- "fym_ref": "origin/fym-site-preview:site-app/fym-v114",
+ "swept_at": "2026-11-05T14:09:33+00:00",
+ "fym_ref": "origin/fym-site-preview:site-app/fym-v115",
  "stores": {
   "amahjline.com": {
    "brand": "Amahj",
@@ -1868,7 +1868,7 @@
   "ohmymahjong.com": {
    "brand": "Oh My Mahjong",
    "status": "ok",
-   "products": 246,
+   "products": 244,
    "mats": [
     [
      "2026-11-03T08:01:13-06:00",
@@ -2006,13 +2006,7 @@
      "luna-w-tube"
     ]
    ],
-   "missing": [
-    [
-     "2026-11-03T08:01:13-06:00",
-     "Lotus Cove Mat in Tube",
-     "lotus-cove-mat-in-tube"
-    ]
-   ]
+   "missing": []
   },
   "peacelovemahjong.com": {
    "brand": "Peace Love Mahjong",
@@ -2060,7 +2054,7 @@
   "shop.andersruff.com": {
    "brand": "Anders Ruff",
    "status": "ok",
-   "products": 158,
+   "products": 156,
    "mats": [
     [
      "2026-10-27T23:11:59-04:00",
@@ -4486,59 +4480,9 @@
    ],
    "missing": [
     [
-     "2026-11-03T11:43:12-05:00",
-     "Tiger Stripes OHBoN Studios Artist Mahjong Mat",
-     "tiger-stripes-ohbon-studios-artist-mahjong-mat"
-    ],
-    [
-     "2026-11-03T11:12:36-05:00",
-     "Spinning Dreidel OHBoN Studios Artist Mahjong Mat",
-     "spinning-dreidel-ohbon-studios-artist-mahjong-mat"
-    ],
-    [
-     "2026-11-03T11:01:12-05:00",
-     "Champagne Bubbles Mahjong Mat",
-     "champange-bubbles-mahjong-mat"
-    ],
-    [
-     "2026-11-03T10:47:50-05:00",
-     "Mid Century Floral Mahjong Mat",
-     "mid-century-floral-mahjong-mat"
-    ],
-    [
-     "2026-11-03T10:36:57-05:00",
-     "Pink Pizzazz Mahjong Mat",
-     "pink-pizzazz-mahjong-mat"
-    ],
-    [
-     "2026-11-03T10:31:07-05:00",
-     "Gatsby Glow Mahjong Mat",
-     "gatsby-glow-mahjong-mat"
-    ],
-    [
-     "2026-11-03T10:28:33-05:00",
-     "Mad for Plaid Mahjong Mat",
-     "mad-for-plaid-mahjong-mat"
-    ],
-    [
-     "2026-11-03T10:27:18-05:00",
-     "Disco Dot with Simple Middle Mahjong Mat",
-     "disco-dot-with-simple-middle-mahjong-mat"
-    ],
-    [
      "2026-11-01T16:29:11-05:00",
      "Camellia Kaleidoscope OHBoN Studios Artist Mahjong Mat",
      "camellia-kaleidoscope-artist-collab-leatherette-mahjong-mat"
-    ],
-    [
-     "2026-11-01T13:01:52-05:00",
-     "Electric ZigZag Mahjong Mat",
-     "electric-zigzag-mahjong-mat"
-    ],
-    [
-     "2026-11-01T11:57:26-05:00",
-     "Christmas Lights Mahjong Mat",
-     "christmas-lights-mahjong-mat"
     ],
     [
      "2026-10-30T16:28:03-04:00",
