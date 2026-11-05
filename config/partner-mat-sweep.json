@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-05T14:09:33+00:00",
+ "swept_at": "2026-11-05T23:07:23+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v115",
  "stores": {
   "amahjline.com": {
@@ -1104,8 +1104,18 @@
   "macandmillermahjong.com": {
    "brand": "Mac + Miller Mahjong",
    "status": "ok",
-   "products": 34,
+   "products": 36,
    "mats": [
+    [
+     "2026-11-05T13:49:57-06:00",
+     "Perfectly Imperfect Laissez Les Bons Temps Rouler Collection Mahjong Mat",
+     "laissez-les-bons-temps-rouler-collection-mahjong-mat-perfectly-imperfect"
+    ],
+    [
+     "2026-11-05T13:49:45-06:00",
+     "Perfectly Imperfect Sweet Dreams Collection Mahjong Mat",
+     "sweet-dreams-collection-mahjong-mat-copy"
+    ],
     [
      "2026-09-13T14:00:20-05:00",
      "Carnival in Bloom Mahjong Mat",
@@ -1147,7 +1157,18 @@
      "laissez-les-bons-temps-rouler-mahjong-mat-pre-order-ships-march-2026"
     ]
    ],
-   "missing": []
+   "missing": [
+    [
+     "2026-11-05T13:49:57-06:00",
+     "Perfectly Imperfect Laissez Les Bons Temps Rouler Collection Mahjong Mat",
+     "laissez-les-bons-temps-rouler-collection-mahjong-mat-perfectly-imperfect"
+    ],
+    [
+     "2026-11-05T13:49:45-06:00",
+     "Perfectly Imperfect Sweet Dreams Collection Mahjong Mat",
+     "sweet-dreams-collection-mahjong-mat-copy"
+    ]
+   ]
   },
   "mahjandvine.com": {
    "brand": "Mahj & Vine",
@@ -1159,8 +1180,13 @@
   "mahjmood.com": {
    "brand": "Mahj Mood",
    "status": "ok",
-   "products": 55,
+   "products": 57,
    "mats": [
+    [
+     "2026-11-05T15:11:45-06:00",
+     "Playing For Keeps Mat | Pre-Order, Ships January",
+     "playing-for-keeps-mat"
+    ],
     [
      "2026-09-18T09:57:49-05:00",
      "Sleigh All Day Mat",
@@ -1227,7 +1253,13 @@
      "90s-girl-mat"
     ]
    ],
-   "missing": []
+   "missing": [
+    [
+     "2026-11-05T15:11:45-06:00",
+     "Playing For Keeps Mat | Pre-Order, Ships January",
+     "playing-for-keeps-mat"
+    ]
+   ]
   },
   "mahjongco.com": {
    "brand": "Mahjong Co.",
@@ -1239,7 +1271,7 @@
   "mahjongregister.com": {
    "brand": "Mahjong Register",
    "status": "ok",
-   "products": 60,
+   "products": 74,
    "mats": [
     [
      "2026-10-08T14:39:42-05:00",
@@ -1587,7 +1619,7 @@
   "middleandmainmahjong.com": {
    "brand": "Middle & Main Mahjong",
    "status": "ok",
-   "products": 104,
+   "products": 105,
    "mats": [
     [
      "2026-07-02T17:05:30-04:00",
@@ -1672,7 +1704,7 @@
   "missmahjong.com": {
    "brand": "Miss Mahjong",
    "status": "ok",
-   "products": 91,
+   "products": 97,
    "mats": [
     [
      "2026-09-28T12:32:13-05:00",
@@ -2054,7 +2086,7 @@
   "shop.andersruff.com": {
    "brand": "Anders Ruff",
    "status": "ok",
-   "products": 156,
+   "products": 162,
    "mats": [
     [
      "2026-10-27T23:11:59-04:00",
@@ -4781,11 +4813,20 @@
     ]
    ]
   },
+  "mahjpit.co": {
+   "brand": "mahjpit.co",
+   "status": "skipped: not a partner (builder/fym_flags/nonpartner_allow.json partners)"
+  },
   "faitamainstudio.com": {
    "brand": "Fait à Main",
    "status": "ok",
-   "products": 44,
+   "products": 45,
    "mats": [
+    [
+     "2026-11-05T09:23:54-06:00",
+     "TEXAS MON AMOUR MAT GREEN",
+     "texas-mon-amour-mat-green"
+    ],
     [
      "2026-10-17T09:13:39-05:00",
      "Round Top Mon Amour Mahjong Mat",
@@ -4807,7 +4848,13 @@
      "texas-mon-amour-mat-peach"
     ]
    ],
-   "missing": []
+   "missing": [
+    [
+     "2026-11-05T09:23:54-06:00",
+     "TEXAS MON AMOUR MAT GREEN",
+     "texas-mon-amour-mat-green"
+    ]
+   ]
   }
  }
 }
