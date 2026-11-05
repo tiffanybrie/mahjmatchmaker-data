@@ -1,6 +1,7 @@
 # Noli June (@nolijunemahjong): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks. Partner since Oct 30 (Shopify Collabs; MAHJMATCH = 10% off "Affiliate Eligible" collections, $100 minimum).
 
+- Nov 5 8:11am ET: reel for FALALADIES mat 'Rochelle Didn't Make it to Midnight' (New Year's Eve, disco ball + champagne), comment LADIES for link + 10% off (https://www.instagram.com/reel/DfXGrkmTl_R/). Same SEO keyword block (folding scalloped tables).
 - Nov 4 8:49am ET: reel 'FALALADIES is LIVE', 12 pieces (Christmas, Hanukkah, New Year's mats + tables + accessories), comment LADIES for link + 10% off (https://www.instagram.com/reel/DfUmNNZTm_v/).
 - Nov 3 6am CT: FA LA LADIES LIVE (creator email 'Your links. Live in one hour.' 6am ET). Store 9:40am ET: all 4 mats $215 in stock (Marlene / Shirley / Ruth / Rochelle), 4 tablecloths $115, 4 dice dishes $39; collection nolijune.com/collections/falaladies. Sweater Weather now $215 (leatherette sleeve). Asks creators to post at six with their Collabs link/code. No new IG post since Nov 1 as of 9:40am ET.
 - Nov 1 10am ET: 'Twelve new pieces, dropping November 3', comment LADIES for early access code (DfM_4P9TMHq). #mahjongmat #mahjongtable. Already on calendar.

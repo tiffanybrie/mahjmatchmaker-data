@@ -1,6 +1,7 @@
 # Oh My Mahjong (@ohmymahjong): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 5 7:00am ET: 'Oh my, holiday!' gifting reel, comment HOLIDAY to shop gifts + holiday favorites (https://www.instagram.com/reel/DfW-35DyxPH/). No new product.
 - Nov 4 2:32pm ET: behind-the-scenes packing reel for Moving Sale orders, ship in 7-10 business days (https://www.instagram.com/reel/DfVNolKtjwH/). No new product.
 - Nov 4 7am ET: 'a flower is a flower is a flower' reel (https://www.instagram.com/reel/DfUaD-FSzBa/), #mahjongways. No launch; IMC 2027 card preorder still the push.
 - Nov 3 7:05am ET: 2027 International Mahjong Card carousel, 'Year of the Fire Goat', new beginner section, preorder, ships ~Jan 1 (https://www.instagram.com/p/DfR110umhxT/). Juniper + Lotus Cove launch Wed Nov 11 10am CT (email, not on IG yet).

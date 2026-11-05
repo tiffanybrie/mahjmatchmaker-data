@@ -1,6 +1,7 @@
 # LoveShackFancy (@loveshackfancy): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 5 8:57am ET: first-ever Holiday Advent Calendar dropped (12 beauty/fashion surprises; teased Nov 4 reel DfVEzX8Clr6) (https://www.instagram.com/p/DfXMMm8Fm25/); Nov 4: new Holiday Collection in stores + online (DfVkWFXFmpA); Sephora Savings Event through Nov 9. Not mahjong.
 - Oct 31-Nov 1: Halloween + dress-up fashion carousels (DfK36beFtO2, DfNQl1hlpKr). Apparel only, no mahjong.
 - Oct 29: Holiday Collection (apparel) launched 8am ET; 6 posts, none mention mahjong or the OMM collab (DfFYvkqFvgp).
 - Oct 29 12pm ET: 'The Holiday Collection, launched now' (DfFYvkqFvgp). Still apparel only, no mahjong in captions.

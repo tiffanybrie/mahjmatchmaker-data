@@ -1,6 +1,7 @@
 # Tigre de Tartán (@tigre_de_tartan): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 5 1:24am ET: personal 'Return to the Dollhouse' series reel (Sunny's dollhouse; business has moved) (https://www.instagram.com/reel/DfWXsDuRfhl/). No product.
 - Nov 4 12:50pm ET: Hanukkah tablescape reel, asks followers to share setups; chocolate coins, their custom party poppers, mahjpit.co confetti tiles (tagged) (https://www.instagram.com/reel/DfVBd2UBx8G/). No drop. Never MAHJMATCH/#MahjMatch with TdT.
 - Nov 3 4pm CT: House Tigers OYSTER tiles LIVE, $295 (store check 6:40pm ET: available; tigredetartan.com/products/house-tigers-mahjong-tile-set-oyster). Never MAHJMATCH/#MahjMatch with TdT.
 - Nov 3 11:40am ET: fall recap reel: French Mural, the house Domino print now in mahjong, and 'today's Oyster tile drop' (House Tigers, 4pm CT); 'in stock and ready to ship' for the holidays (https://www.instagram.com/reel/DfSTwIFB38K/). Never MAHJMATCH/#MahjMatch with TdT.
