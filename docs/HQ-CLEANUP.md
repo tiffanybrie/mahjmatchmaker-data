@@ -118,3 +118,10 @@ Never archive or park an item because she did not answer. Unanswered asks older 
 
 ## No 'ask once' (Tiffany Nov 4 2026)
 Her preference is 'ask once, then move on to the next task and COME BACK when she responds'. It never meant 'ask once and drop it'. Any unanswered ask is re-raised at the top of the owning chat's next reply (one line, with Claude's default) and stays on HQ Today until she answers or says no. The desk cleanup never labels an item 'Ask once'.
+
+## Gallery sync check (Tiffany Nov 6 2026 5:24pm: daily version check, weekly links)
+Every run: `python3 scripts/checks/gallery_sync_check.py` (seconds). MONDAYS: add `--links` (~3 min, ~1,150 links; ShopMy/Etsy skipped).
+- PASS: nothing to do.
+- FAIL "gallery built from vX, app is vY" or "no data-fym stamp": the Mat Gallery is behind Find Your Mat-ch. Rebuild + pin it (site/livepatch/matgallery/README "v6"), rebuild search against it, and paste both the SAME day: if this run has Chrome, do it; otherwise a DESK "Blocked, approved" line for the next attended chat (standing authority: catalog/broken-link upkeep).
+- FAIL "dead shop links": per mat, look for a new product page (products.json / search suggest); found = swap the link; not found = add it to config/mat-gallery-link-fixes.json (no shop button, NOT 'Retired' unless the brand confirms it's gone for good), rebuild + paste, and drop the link from search the same day.
+Note in the HQ log one line: "Gallery sync: PASS" or what was fixed.
