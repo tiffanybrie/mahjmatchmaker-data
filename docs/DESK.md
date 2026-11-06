@@ -50,6 +50,8 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **Partner feedback watch** trig_01RKw9eUwTYPo39gbYHb65gh runs daily through Nov 10 (0 new Nov 5).
 
 ## In progress
+- [Main] PEACE LOVE -> LEVEL 2 PUSH (Tiffany Nov 5): need $5K referred sales in one month (Oct ~ $3.6K). Next step: plan (PLM page refresh + indexing, oak rack shelf/collage, PLM racks into more albums/FYM rack picks, holiday hats/rack pets in gift posts); track PLM referred sales MTD daily in the morning report.
+
 | Item | Owner | Next step | Target |
 |---|---|---|---|
 | Google: Amanda Toppe 10%, Wren + OMM dates, indexing (My Fair tier 0, OMM, Wren, Amanda Toppe, hub), Fri code report, wrong-form MAHJMATCH10 feedback | Ops + Main + tasks | Priority 1. | Fri Nov 6 |
