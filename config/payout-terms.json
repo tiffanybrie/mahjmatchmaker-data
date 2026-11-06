@@ -166,10 +166,10 @@
   "network": "GoAffPro",
   "account_email": "mahjmatchmaker@",
   "method": "PayPal",
-  "schedule": "irregular",
+  "schedule": "twice a month, about 3 weeks after each half-month ends (Nov 6 payout = all Oct 1-15 orders, $339.39)",
   "minimum": "unknown",
   "hold_days": "unknown",
-  "source": "dashboards + payment emails read Nov 4"
+  "source": "GoAffPro payout email Nov 6 + HQ money log, matched to the cent"
  },
  "Mahj Mood": {
   "network": "GoAffPro",
