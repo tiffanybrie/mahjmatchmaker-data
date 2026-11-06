@@ -72,7 +72,7 @@
   "Virora Mahjong | Hiverelle",
   "Virora Mahjong | Petalwing"
  ],
- "link_from_fym": 499,
+ "link_from_fym": 490,
  "autoapply": {
   "Amahj": {
    "discount": 8
@@ -179,7 +179,7 @@
    "converted": 33
   },
   "Mahjong Row & Co.": {
-   "discount": 9
+   "skip": 9
   },
   "Maison Mahj": {
    "skip": 1
