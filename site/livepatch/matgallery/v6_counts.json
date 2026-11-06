@@ -1,6 +1,6 @@
 {
  "matched": {
-  "key": 1491
+  "key": 1490
  },
  "retired_from_fym": [
   "Oh My Mahjong | Dapper 2 (oh-my-mahjong--dapper-2)",
@@ -48,7 +48,6 @@
   "Mahj Mood | Spring Fling",
   "Mahj Pit | Acid in the Library",
   "Mahj Pit | All Vibes",
-  "Mahj Pit | Deep Blue",
   "Mahj Pit | El Tigre (Rules Edition)",
   "Mahj Pit | Flower Shop",
   "Mahj Pit | Poppylicious",
@@ -162,7 +161,7 @@
    "discount": 15
   },
   "Mahj Pit": {
-   "converted": 17
+   "converted": 16
   },
   "Mahj Squad": {
    "discount": 21
@@ -283,6 +282,9 @@
   "Mahjong Register | Holly Jolly Double-Sided Leatherette -> Holly Jolly Christmas",
   "Mahjong Register | Letters to Santa Double-Sided Leatherette -> Letters to Santa Premium",
   "Piper Chase Studios | Nutcracker Floral -> Nutcracker Bows"
+ ],
+ "held_rows": [
+  "Tigre de Tartan | French Mural"
  ],
  "dupe_candidates": []
 }

@@ -1,9 +1,9 @@
 {
  "fym_version": "v115",
  "before_rows": 793,
- "after_rows": 1463,
+ "after_rows": 1461,
  "before_active": 764,
- "after_active": 1433,
+ "after_active": 1431,
  "before_retired": 29,
  "after_retired": 30,
  "added": [
@@ -566,7 +566,6 @@
   "Mahj & Moon | Zebra Palm Chinoiserie (mahj-moon--zebra-palm-chinoiserie)",
   "Mahj Pit | Acid in the Library (mahj-pit--acid-in-the-library)",
   "Mahj Pit | All Vibes (mahj-pit--all-vibes)",
-  "Mahj Pit | Deep Blue (mahj-pit--deep-blue)",
   "Mahj Pit | El Tigre (Rules Edition) (mahj-pit--el-tigre-rules-edition)",
   "Mahj Pit | Flower Shop (mahj-pit--flower-shop)",
   "Mahj Pit | Paint Party (mahj-pit--paint-party)",
@@ -702,7 +701,8 @@
   "Britt Mills | Walk in the Park Leatherette (britt-mills--walk-in-the-park-leatherette)",
   "Britt Mills | Willow Leatherette (britt-mills--willow-leatherette)",
   "Mahjong Register | Holly Jolly Double-Sided Leatherette (mahjong-register--holly-jolly-double-sided-leatherette)",
-  "Mahjong Register | Letters to Santa Double-Sided Leatherette (mahjong-register--letters-to-santa-double-sided-leatherette)"
+  "Mahjong Register | Letters to Santa Double-Sided Leatherette (mahjong-register--letters-to-santa-double-sided-leatherette)",
+  "Tigre de Tartan | French Mural (tigre-de-tartan--french-mural)"
  ],
  "newly_retired": [
   "Oh My Mahjong | Dapper 2 (oh-my-mahjong--dapper-2)",
@@ -720,7 +720,7 @@
   "Betty June & Jeannette": 54,
   "Luna EK Studio": 26,
   "Piper Chase Studios": 26,
-  "Mahj Pit": 14,
+  "Mahj Pit": 13,
   "Noli June": 9,
   "Hutch & Nook": 7,
   "Britt Mills": 5,
