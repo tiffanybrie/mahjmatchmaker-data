@@ -115,7 +115,8 @@ for r in G:
             stats['unretired_from_fym'].append(f'{r[2]} | {r[1]} ({r[0]}): FYM sells it again -> {o["u"]}')
             r[4], r[3] = 0, o['u']
         if not r[4]:
-            if good_link(o.get('u')) and o['u'] != r[3]:
+            keep_own = r[3] and AA.host_of(r[3]) in AA.SKIP and AA.host_of(r[3]) != 'go.shopmy.us'  # TdT (Oct 30: leave exactly as is), Squarespace stores, Maison: never take FYM's form
+            if good_link(o.get('u')) and o['u'] != r[3] and not keep_own:
                 r[3] = o['u']; stats['link_from_fym'] += 1
             if o.get('oos'):
                 r[13] = 1; stats['sold_out'].append(f'{r[2]} | {r[1]}')
