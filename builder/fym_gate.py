@@ -345,7 +345,7 @@ for img_, fx_ in _PF.items():
     for a in gone:
         if a in r[5] or a in r[8] or a in (r[11] or {}): F.append(f"[13c] {r[1]}: photo-checked colour {a} is back in the gallery (sections {r[5]}, accents {r[8]})")
     k = GKEY(img_)
-    if k in M and not M[k].get('hid'):
+    if k in M and not M[k].get('hid') and not fx_.get('gallery_only'):  # Nov 6: gallery_sync cream-not-orange/yellow drops are gallery-only (FYM follow-up in MATCH-INBOX)
         for a in gone:
             if a in (M[k].get('mf') or []): F.append(f"[13c] {M[k]['n']}: photo-checked colour {a} is back in FYM chips {M[k]['mf']}")
 _lt = re.search(r'LD=(\{.*?\}),TL=(\{.*?\}),IB=', _g)
@@ -1089,9 +1089,13 @@ try:
     _GK = {GKEY(r[0]) for r in _G}; _GU = {_nu(r[3]) for r in _G}; _GN = {_nz(r[1]) + '|' + _nz(r[2]) for r in _G}
     _XK = {a['key'] for a in _XR}; _XU = {_nu(a.get('url') or a.get('u')) for a in _XR if a.get('url') or a.get('u')}
     _miss90, _stale90 = [], []
+    _MERGED90 = set()
+    try:
+        _dx90 = json.load(open(REPO + 'config/mat-gallery-dedupe-v6.json'))['merge']; _MERGED90 = {a_['key'] for a_ in _XR if a_['img'] in _dx90}
+    except Exception: pass
     _HOLD90 = set(json.load(open(REPO + 'config/mat-gallery-photo-holds.json'))['mats']) if os.path.exists(REPO + 'config/mat-gallery-photo-holds.json') else set()
     for _k, _m in M.items():
-        if _m.get('hid') or '#side-b' in _k or _k in _HOLD90: continue  # Nov 6: gallery photo holds (config/mat-gallery-photo-holds.json) stay out on purpose
+        if _m.get('hid') or '#side-b' in _k or _k in _HOLD90 or _k in _MERGED90: continue  # holds + merged duplicate photos stay out on purpose  # Nov 6: gallery photo holds (config/mat-gallery-photo-holds.json) stay out on purpose
         _u = {_nu(_m.get('u0')), _nu(_m.get('u')), _nu(_k)}
         _in_staged = _k in _GK or bool(_u & _GU) or (_nz(_m['n']) + '|' + _nz(_m.get('bn'))) in _GN
         if _in_staged: continue

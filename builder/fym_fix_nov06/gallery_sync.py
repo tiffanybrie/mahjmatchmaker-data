@@ -182,10 +182,10 @@ for k, m in M.items():
     prim_ = (m.get('mf') or [None])[0]  # FYM's first colour survives the cream test when the photo has >= 20% soft tint of it (pastel yellow tie-dye)
     if org_ < 0.04 and peach_ < 0.12 and not (prim_ == 'orange' and softo_ >= 0.2):  # no real orange in the photo: an FYM/measured 'orange' is cream or beige
         secs = [c for c in secs if c != 'orange'] or ['neutral']
-        AFX['mats'][img] = {'drop': ['orange'], 'src': f'gallery_sync {TAG}', 'why': f'saturated orange {org_:.0%}, peach {peach_:.0%} of the photo (cream/beige read as orange)'}
+        AFX['mats'][img] = {'drop': ['orange'], 'gallery_only': True, 'src': f'gallery_sync {TAG}', 'why': f'saturated orange {org_:.0%}, peach {peach_:.0%} of the photo (cream/beige read as orange)'}
     if yel_ < 0.04 and not (prim_ == 'yellow' and softy_ >= 0.2):  # cream/ivory read as yellow: never a yellow section or accent
         secs = [c for c in secs if c != 'yellow'] or ['neutral']
-        AFX['mats'].setdefault(img, {'drop': [], 'src': f'gallery_sync {TAG}', 'why': ''})
+        AFX['mats'].setdefault(img, {'drop': [], 'gallery_only': True, 'src': f'gallery_sync {TAG}', 'why': ''})
         AFX['mats'][img]['drop'] = sorted(set(AFX['mats'][img]['drop']) | {'yellow'}); AFX['mats'][img]['why'] += f' saturated yellow {yel_:.0%} (cream read as yellow)'
     if mag_ >= 0.15 and 'pink' not in secs and 'holiday' not in secs:  # magenta reads 'purple' in FYM: pink leads when it is the main colour
         secs = (['pink'] + secs) if (secs and secs[0] == 'purple' and mag_ >= 0.25) else (secs[:1] + ['pink'] + secs[1:])
@@ -193,7 +193,10 @@ for k, m in M.items():
         _gone = set(AFX['mats'].get(img, {}).get('drop', []))
         _best = max((f for f in sh if f in ('pink', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple', 'neutral', 'earthy') and f not in _gone and f not in secs), key=lambda f: sh[f], default='neutral')
         secs = [_best] + secs
-    if k in CFIX: secs = list(CFIX[k]['secs']); eye_ = 1  # Claude photo-review colour fix (config/mat-gallery-sync-colour-fixes.json)
+    if k in CFIX: secs = list(CFIX[k]['secs']); eye_ = 1
+    if img in AFX['mats'] and str(AFX['mats'][img].get('src', '')).startswith('gallery_sync'):  # a colour the final sections keep is never also dropped
+        AFX['mats'][img]['drop'] = [c for c in AFX['mats'][img]['drop'] if c not in secs]
+        if not AFX['mats'][img]['drop']: AFX['mats'].pop(img)  # Claude photo-review colour fix (config/mat-gallery-sync-colour-fixes.json)
     hol = bool(m.get('hol'))
     if secs == ['holiday']: hol = True  # a colour fix moved it INTO Holiday (photo clearly shows Christmas)
     if hol and not m.get('ayr'):
