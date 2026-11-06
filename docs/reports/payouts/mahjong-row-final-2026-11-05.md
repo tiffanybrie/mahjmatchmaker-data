@@ -56,3 +56,7 @@ Nov 4 3:35pm ET: an UpPromote 'Confirm Your Payment Info Update' OTP email from 
 ## Nov 5 9:17pm: dashboard total after deactivation (Tiffany's screenshot)
 Account status Inactive; Commission totals still visible: Pending $0 · **Approved $2,589.65** · Paid $0. Line items not viewable.
 Reconcile: $2,589.65 − $2,325.50 (Nov 4 snapshot = our log) = **$264.15** for the 7 approvals after the snapshot (avg $37.74 each, consistent with their usual orders). Every logged order is accounted for; nothing pending. **Owed: $2,589.65.** Nothing paid to date.
+
+## When it's due (Tiffany Nov 5 9:19pm: 30 days from each SALE, not from the account ending; her reply to Brad only acknowledged the 30-day window)
+From our log (sale date + 30 days), cumulative owed by: Nov 6 $93.15 (first sales Oct 7) · Nov 15 $853.20 · Nov 30 $2,198.45 · Dec 5 $2,325.50 · the last 7 approvals ($264.15, Nov 4-5 sales) by ~Dec 5. Total $2,589.65.
+Watch PayPal (both inboxes, 'Mahjong Row' / UpPromote auto payment). If nothing by Nov 15 (when $853 is past 30 days): draft a short note to Brad asking how payouts are scheduled now that the account is inactive. Reaching out = her call.
