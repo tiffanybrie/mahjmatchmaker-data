@@ -8,13 +8,14 @@ from common import *
 
 key = sys.argv[1]; OUT = sys.argv[2]; os.makedirs(OUT, exist_ok=True)
 P, S = load(key)
-ACC = S['col']; L = P['launch'] = {'hero': 'assets/launches/omm-papaya-spritz-tiles/05.jpg', 'single': 'assets/launches/omm-papaya-spritz-tiles/06.jpg',
-                                    'all': 'assets/launches/omm-papaya-spritz-tiles/01.jpg'}
+ACC = S['col']; L = P['launch'] = P.get('launch_photos') or {'hero': 'assets/launches/omm-papaya-spritz-tiles/05.jpg', 'single': 'assets/launches/omm-papaya-spritz-tiles/06.jpg',
+                                    'all': 'assets/launches/omm-papaya-spritz-tiles/01.jpg'}  # Nov 6: per-set launch_photos in the profile (Juniper)
 MATS = S['mat_imgs']; RACK = {'Bird & Bamboo Lavender': 'assets/colorcards/papaya-spritz/racks/bird-and-bamboo-lavender.png',
                               'Peace Love Mahjong Chartreuse': 'assets/racks/card/peace-love-mahjong-chartreuse.png',
                               'Peace Love Mahjong Oak': 'assets/racks/card/peace-love-mahjong-oak.png',
                               'Middle & Main Scalloped Beechwood': 'assets/racks/card/middle--main-scalloped-beechwood.png',
                               'Mahjong Row & Co. Scalloped Tortoise': 'assets/racks/card/mahjong-row--co-scalloped-tortoise.png'}
+RACK.update({k: v for k, v in S.get('rack_imgs', {}).items() if k not in RACK})  # Nov 6: the colour card's rack photos (Juniper)
 LOGO = url('assets/brand/mahjmatchmaker-wordmark-notag.png'); TILE = url(S['tile'])
 e = html.escape
 OMM = P.get('omm_launch'); NS = 7 if OMM else 5
@@ -57,7 +58,7 @@ chips_f = ''.join(f"""<div class="chip" style="width:210px"><div class="sw" styl
 s2 = page(2, head('1 · her colors') + f"""
 <div style="position:absolute;top:120px;left:72px;right:72px">
  <div class="cap" style="font-size:96px">Her colors</div>
- <div class="pf" style="font-size:34px;margin-top:10px;color:#3c4f73;max-width:900px">Papaya backs, lavender and light lime layers. Clean brights, no dusty undertone.</div>
+ <div class="pf" style="font-size:34px;margin-top:10px;color:#3c4f73;max-width:900px">{e(P.get('colors_line', 'Papaya backs, lavender and light lime layers. Clean brights, no dusty undertone.'))}</div>
  <div class="caps" style="margin-top:44px;font-size:19px;color:#5a6b85">The backs</div>
  <div style="display:flex;gap:23px;margin-top:14px">{chips_b}</div>
  <div class="caps" style="margin-top:40px;font-size:19px;color:#5a6b85">The faces</div>
@@ -65,7 +66,7 @@ s2 = page(2, head('1 · her colors') + f"""
 </div>
 <div style="position:absolute;left:72px;right:72px;bottom:90px;display:flex;align-items:center;gap:34px">
  <div class="ph" style="flex:0 0 230px;height:230px;border-radius:50%;background-color:#fff;background-size:150%;background-image:url({url(L['single'])});box-shadow:0 0 0 8px #fff,0 10px 26px rgba(6,40,90,.16)"></div>
- <div><div class="hand" style="font-size:50px;line-height:1.05">see the layers?<br>lavender + light lime, under a papaya back.</div>
+ <div><div class="hand" style="font-size:50px;line-height:1.05">{P.get('layers_hand', 'see the layers?<br>lavender + light lime, under a papaya back.')}</div>
  <div style="font:400 24px/1.35 Bit;color:#2c3e63;margin-top:12px">Pull any of these into a mat or rack and she looks put-together.</div></div>
 </div>""")
 
@@ -92,7 +93,7 @@ s3 = page(NS - 1, head(('5' if OMM else '3') + ' · top matches') + f"""
 </div>""")
 
 # 4 racks she's into (Tiffany, Oct 19 11pm): 2 that match her layer colors, then her real recs, the super versatile ones
-BRANDS = ('Bird & Bamboo', 'Peace Love Mahjong', 'Middle & Main', 'Miss Mahjong', 'Mahjong Row & Co.', 'Bam Bird Boutique')
+BRANDS = ('Bird & Bamboo', 'Oh My Mahjong', 'Peace Love Mahjong', 'Middle & Main', 'Miss Mahjong', 'Mahjong Row & Co.', 'Bam Bird Boutique')
 def rrow(r, top):
     b = next((x for x in BRANDS if r['name'].startswith(x)), r['name'].split()[0]); c = r['name'][len(b) + 1:]
     return (f"""<div style="margin-top:{top}px"><div style="display:flex;align-items:baseline;gap:14px"><span class="caps" style="font-size:17px;color:#8a6a80">{e(b)}</span><span class="pf" style="font-size:40px;font-weight:600">{e(c)}</span></div>"""

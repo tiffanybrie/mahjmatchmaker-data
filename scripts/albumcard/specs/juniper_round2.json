@@ -1,0 +1,453 @@
+{
+ "_note": "Juniper round 2 (Nov 5, Claude picks with Tiffany notes; site/livepatch/juniper-picks-nov04/build_r2.py). DRAFT order until she confirms. Rack keys -> names in rack_keys.",
+ "mats": [
+  {
+   "group": "top",
+   "name": "Garden Glow – Emerald Green",
+   "brand": "Bespoke Mahjong",
+   "img": "assets/colorcards/juniper/mats/garden-glow-emerald-bespoke-mahjong.jpg",
+   "why": "Looks made for the set: the deep forest ground is the jade-look back, and the pink wildflowers and greens pick up the craks, bams and dots.",
+   "racks": [
+    "bbfg",
+    "ohp"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "top",
+   "name": "Palm Royale",
+   "brand": "Mahj Tile Haus",
+   "img": "assets/colorcards/juniper/mats/palm-royale-mahj-tile-haus.jpg",
+   "why": "Kelly cane lattice, blush palms and leopards: pink and green at the same brightness as the faces, with enough green to hold the backs.",
+   "racks": [
+    "bbk",
+    "bbhp"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "top",
+   "name": "Lotus Cove",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/juniper/mats/lotus-cove-oh-my-mahjong.jpg",
+   "why": "Oh My Mahjong's own pair for Juniper (starter kit, Nov 11). Pink pond frame and lily pads echo the lotus flower tiles; it has no forest green, so it sits third.",
+   "racks": [
+    "opq",
+    "owa"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "deep",
+   "name": "Botanical Jewel",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/juniper/mats/botanical-jewel-lets-be-besties.jpg",
+   "why": "Forest green ground full of magenta and pink wildflowers: back, bams and craks in one.",
+   "racks": [
+    "bbfg",
+    "ohp"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "deep",
+   "name": "Esme",
+   "brand": "Oh My Mahjong",
+   "img": "assets/mats/gallery/oh-my-mahjong--esme.webp",
+   "why": "Deep teal-green with pink blossoms, an Oh My Mahjong cousin of the set. Retired, but still a match for anyone who owns it.",
+   "racks": [
+    "jb",
+    "opq"
+   ],
+   "retired": true,
+   "exists": true
+  },
+  {
+   "group": "deep",
+   "name": "Emerald Leopard in Bloom",
+   "brand": "Mahjong Register",
+   "img": "assets/colorcards/juniper/mats/emerald-leopard-in-bloom-mahjong-register.jpg",
+   "why": "Emerald lattice frame with pink peonies; the leopard keeps it playful, like the jester jokers.",
+   "racks": [
+    "mrep",
+    "opq"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "deep",
+   "name": "Midori Shadows",
+   "brand": "Golden Pond Mahjong",
+   "img": "assets/mats/gallery/golden-pond-mahjong--midori-shadows.webp",
+   "why": "Deep green with cranes and pink blossoms: the garden-at-night mood of the set. Also one of your Malachite picks.",
+   "racks": [
+    "jb",
+    "opq"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "deep",
+   "name": "Reba",
+   "brand": "Britt Mills",
+   "img": "assets/mats/gallery/britt-mills--reba.webp",
+   "why": "Deep green field inside a pink frame, with a bouquet of pinks and greens.",
+   "racks": [
+    "mal",
+    "ohp"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "deep",
+   "name": "Mahj In Bloom Mat",
+   "brand": "Mahj Mood",
+   "img": "assets/mats/gallery/mahj-mood--mahj-in-bloom-mat.webp",
+   "why": "Deep green with pink and orchid roses; the lilac border is the only colour Juniper doesn't carry.",
+   "racks": [
+    "jb",
+    "opq"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "deep",
+   "name": "Savannah",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/juniper/mats/savannah-britt-mills.jpg",
+   "why": "Forest green with a pink floral medallion. Its olive and orange make it the moodier, Thanksgiving-to-Christmas pick.",
+   "racks": [
+    "mal",
+    "opq"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "deep",
+   "name": "Viola",
+   "brand": "Britt Mills",
+   "img": "assets/mats/gallery/britt-mills--viola.webp",
+   "why": "Deep green center inside a dark floral border of pinks and lilacs: elegant and dark.",
+   "racks": [
+    "jb",
+    "bblp"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "deep",
+   "name": "YOTD Black",
+   "brand": "Bespoke Mahjong",
+   "img": "assets/mats/gallery/bespoke-mahjong--yotd-black.webp",
+   "why": "Black ground with pink roses and a green dragon, for the emerald dragon tiles. The darkest pick here.",
+   "racks": [
+    "jb",
+    "ohp"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "deep",
+   "name": "Sunday Premium",
+   "brand": "Sunday Mahjong",
+   "img": "assets/mats/gallery/sunday-mahjong--sunday-premium.webp",
+   "why": "Teal-green with a coral crane, the peacock tile's cousin; the gold trim picks up the gold dots.",
+   "racks": [
+    "jb",
+    "opq"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "deep",
+   "name": "Crane & Moon",
+   "brand": "YOLO Mahjong",
+   "img": "assets/colorcards/juniper/mats/crane-and-moon-yolo-mahjong.jpg",
+   "why": "Deep green-navy night sky with cranes, coral flowers and a gold moon: the lantern-lit garden in OMM's own words.",
+   "racks": [
+    "mrep",
+    "ohp"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "bright",
+   "name": "Enchanted",
+   "brand": "Oh My Mahjong",
+   "img": "assets/mats/gallery/oh-my-mahjong--enchanted-retired.webp",
+   "why": "Hot pink and kelly green chinoiserie from Oh My Mahjong: the same pink and green, at the same brightness as the faces. Retired.",
+   "racks": [
+    "ohp",
+    "bbk"
+   ],
+   "retired": true,
+   "exists": true
+  },
+  {
+   "group": "bright",
+   "name": "Peonies Burst",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/juniper/mats/peonies-burst-lets-be-besties.jpg",
+   "why": "Magenta peonies around a kelly green star: bold, and right on Juniper's pink and green.",
+   "racks": [
+    "ohp",
+    "bbk"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "bright",
+   "name": "Zesty Plume",
+   "brand": "Mahj & Vine",
+   "img": "assets/colorcards/juniper/mats/zesty-plume-mahj-and-vine.jpg",
+   "why": "Hits every Juniper colour: hot pink frame, teal and chartreuse foliage, and a white field like the faces.",
+   "racks": [
+    "plmp",
+    "jb"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "bright",
+   "name": "Chinoiserie Songbird",
+   "brand": "Mahj & Vine",
+   "img": "assets/colorcards/juniper/mats/chinoiserie-songbird-mahj-and-vine.jpg",
+   "why": "A chinoiserie garden in pink, mint and lime: the world of the peacock and pagoda tiles.",
+   "racks": [
+    "plmp",
+    "plmc"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "bright",
+   "name": "Cherry Blossom Jade",
+   "brand": "Miss Mahjong",
+   "img": "assets/colorcards/juniper/mats/cherry-blossom-jade-miss-mahjong.jpg",
+   "why": "Hot pink, chartreuse and kelly: all three of Juniper's loud colours in one mat.",
+   "racks": [
+    "jb",
+    "bbhp"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "bright",
+   "name": "Day Dreamer (Pink and Green)",
+   "brand": "Betty June & Jeannette",
+   "img": "assets/colorcards/juniper/mats/day-dreamer-pink-and-green-betty-june-and-jeannette.jpg",
+   "why": "Hot pink and lime medallion: picks up the chartreuse layer and the pink dots.",
+   "racks": [
+    "ohp",
+    "plmc"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "bright",
+   "name": "Tropical Travels",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/juniper/mats/tropical-travels-lets-be-besties.jpg",
+   "why": "Pink, kelly and teal tropical leaves: preppy and bright.",
+   "racks": [
+    "ohp",
+    "bbj"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "bright",
+   "name": "Palm Beach Tropical Pink Lime",
+   "brand": "Anders Ruff",
+   "img": "assets/colorcards/juniper/mats/palm-beach-tropical-pink-lime-anders-ruff.jpg",
+   "why": "The chartreuse layer's best friend: a lime centre inside a hot pink tropical frame.",
+   "racks": [
+    "ohp",
+    "bbk"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "chino",
+   "name": "Cheetah in Chinoiserie",
+   "brand": "Sophie Clima",
+   "img": "assets/mats/gallery/sophie-clima--cheetah-in-chinoiserie.webp",
+   "why": "A pagoda garden in pinks and greens under a navy sky, like the pagoda and flower tiles. Etsy, through ShopMy.",
+   "racks": [
+    "jb",
+    "ohp"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "chino",
+   "name": "Whimsical Chinoiserie Meeting in the Pavilion",
+   "brand": "Sophie Clima",
+   "img": "assets/mats/gallery/sophie-clima--whimsical-chinoiserie-meeting-in-the-pavilion.webp",
+   "why": "Pagodas, pink blossoms and green gardens: the flower tiles as a full scene. Etsy, through ShopMy.",
+   "racks": [
+    "opq",
+    "bbj"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "chino",
+   "name": "Grand Rose Medallion Chinoiserie",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/juniper/mats/grand-rose-medallion-chinoiserie-lets-be-besties.jpg",
+   "why": "Pink roses on big green lily pads around a medallion, close to the lotus flower tiles.",
+   "racks": [
+    "opq",
+    "bbj"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "chino",
+   "name": "YOTD Pink",
+   "brand": "Bespoke Mahjong",
+   "img": "assets/mats/gallery/bespoke-mahjong--yotd-pink.webp",
+   "why": "Blush ground, pink roses and a green dragon: the dragon tiles, softened.",
+   "racks": [
+    "opq",
+    "jb"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "chino",
+   "name": "YOTD White",
+   "brand": "Bespoke Mahjong",
+   "img": "assets/mats/gallery/bespoke-mahjong--yotd-white.webp",
+   "why": "White ground like the faces, with roses and a teal dragon: the lightest of the dragon mats.",
+   "racks": [
+    "owa",
+    "jb"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "soft",
+   "name": "The Dahlia",
+   "brand": "Bird & Bamboo",
+   "img": "assets/colorcards/juniper/mats/the-dahlia-bird-and-bamboo.jpg",
+   "why": "Soft pink and teal-green toile: the quiet option that lets the faces do the talking.",
+   "racks": [
+    "bbj",
+    "bblp"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "soft",
+   "name": "Green Bamboo Blossoms",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/juniper/mats/green-bamboo-blossoms-lets-be-besties.jpg",
+   "why": "Bamboo lattice with pink blossoms, like the bam tiles. Its sage green is softer and a little earthier than the backs.",
+   "racks": [
+    "bbfg",
+    "bblp"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "stone",
+   "name": "Green Malachite",
+   "brand": "Mahj Squad",
+   "img": "assets/mats/gallery/mahj-squad--green-malachite.webp",
+   "why": "A green stone pattern that echoes the jade-look backs. Tone on tone; the faces bring the pink.",
+   "racks": [
+    "jb",
+    "ohp"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "stone",
+   "name": "Evergreen",
+   "brand": "That Mahjong Moment",
+   "img": "assets/mats/gallery/that-mahjong-moment--evergreen.webp",
+   "why": "Deep green with ferns: tone on tone, like the backs. One of your Malachite picks.",
+   "racks": [
+    "mal",
+    "opq"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "stone",
+   "name": "Emerald Cove",
+   "brand": "Mahj Mood",
+   "img": "assets/colorcards/juniper/mats/emerald-cove-mahj-mood.jpg",
+   "why": "A swirled emerald that looks like the tile backs themselves. Sleek and moody.",
+   "racks": [
+    "mmc",
+    "mal"
+   ],
+   "retired": false,
+   "exists": true
+  },
+  {
+   "group": "stone",
+   "name": "Emerald Teal & Celadon Leatherette",
+   "brand": "Mahjong Register",
+   "img": "assets/colorcards/juniper/mats/emerald-teal-and-celadon-leatherette-mahjong-register.jpg",
+   "why": "The solid pick: the emerald side matches the teal layer, and the celadon side flips it softer.",
+   "racks": [
+    "mrep",
+    "ohp"
+   ],
+   "retired": false,
+   "exists": true
+  }
+ ],
+ "rack_keys": {
+  "jb": "Miss Mahjong Jade & Brass",
+  "ohp": "Oh My Mahjong Hot Pink",
+  "opq": "Oh My Mahjong Pink Quartz",
+  "oclr": "Clear Acrylic Rack & Pushers Set",
+  "mal": "My Fair Mahjong Malachite Dapple",
+  "mrep": "Mahjong Register Emerald Pearl Scalloped",
+  "plmp": "Peace Love Mahjong Pink",
+  "plmc": "Peace Love Mahjong Chartreuse",
+  "bbk": "Bird & Bamboo Kelly Green",
+  "bbhp": "Bird & Bamboo Hot Pink",
+  "bbj": "Bird & Bamboo Jade",
+  "bblp": "Bird & Bamboo Light Pink",
+  "bbfg": "Bird & Bamboo Forest Green",
+  "arp": "Anders Ruff MAHJenta Pink Scalloped",
+  "arpi": "Anders Ruff Pistachio Green Scalloped",
+  "mmc": "Mahj Mood Scalloped Clear Acrylic",
+  "owa": "White Acrylic"
+ }
+}

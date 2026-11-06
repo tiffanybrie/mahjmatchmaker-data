@@ -1,0 +1,276 @@
+{
+ "_note": "Juniper Tile Set Profile (doc 81), DRAFT Nov 6, built by Claude for Tiffany's review. Colours from config/colorcards.json sets.juniper (her Nov 5 wording: forest green JADE-LOOK back, never call the teal layer jade). Mats = Claude's round-2 top 3 (Garden Glow #1, Palm Royale #2, Lotus Cove #3 = OMM pair, never #1). Racks = colour card racks (Claude's picks, pending her OK). best_features = Claude's 4 PROPOSALS until she picks (site/livepatch/juniper-album-nov06/). matches = round-2 count, not a live album count yet. PRONOUN: brand guide s3 says ask Tiffany for any set not listed; 'her' is used here as the draft default.",
+ "key": "juniper",
+ "name": "Juniper",
+ "brand": "Oh My Mahjong",
+ "status": "The new girl on the block",
+ "launch_line": "Launching Wed 11/11 · Oh My Mahjong",
+ "matches": 33,
+ "album": "https://www.mahjmatchmaker.com/juniper-mahjong-tile-matches",
+ "profile_line": [
+  "Seeking: deep green with a pink streak.",
+  "Must love a lantern-lit garden."
+ ],
+ "profile_line_options": {
+  "A": [
+   "Her type: forest green with a little pink.",
+   "Coral and gold welcome."
+  ],
+  "B": [
+   "Looking for: someone who can handle",
+   "jade, chartreuse and a hot pink flower."
+  ],
+  "C": [
+   "Seeking: deep green with a pink streak.",
+   "Must love a lantern-lit garden."
+  ]
+ },
+ "swipe": {
+  "looking": "Forest green, with a little pink",
+  "pills": [
+   "Lotus ponds",
+   "Lantern light",
+   "Peacocks",
+   "Garden parties"
+  ],
+  "love": "Moonlit garden strolls",
+  "prompt_q": "My most irrational fear",
+  "prompt_a": "Getting set up with a beige felt mat.",
+  "photo": "assets/launches/omm-juniper-mahjong-tiles/06-Tile_Juniper_F.jpg"
+ },
+ "her_colors": {
+  "backs": [
+   [
+    "Forest green jade",
+    "#225d36",
+    "jade-look back"
+   ],
+   [
+    "Chartreuse",
+    "#a9c54f",
+    "layer"
+   ],
+   [
+    "Teal",
+    "#00a792",
+    "layer"
+   ]
+  ],
+  "faces": [
+   [
+    "Hot pink",
+    "#f05aa5"
+   ],
+   [
+    "Coral",
+    "#f0857c"
+   ],
+   [
+    "Bamboo green",
+    "#43a16b"
+   ],
+   [
+    "Mint",
+    "#9fdcc5"
+   ],
+   [
+    "Navy",
+    "#1d4a5a"
+   ],
+   [
+    "Gold",
+    "#d9b85a"
+   ]
+  ],
+  "tone": "Clean jewel tones on a deep green: clean, not earthy, even though the back is dark.",
+  "supporting": [
+   [
+    "Hot pink",
+    "#f05aa5"
+   ],
+   [
+    "Coral",
+    "#f0857c"
+   ],
+   [
+    "Bamboo",
+    "#43a16b"
+   ],
+   [
+    "Mint",
+    "#9fdcc5"
+   ],
+   [
+    "Teal",
+    "#18b39c"
+   ],
+   [
+    "Navy",
+    "#1d4a5a"
+   ],
+   [
+    "Gold",
+    "#d9b85a"
+   ]
+  ],
+  "faces_photo": "assets/launches/omm-juniper-mahjong-tiles/01-Tile_Juniper_A.jpg",
+  "faces_crop": [
+   178,
+   1174,
+   2844,
+   2976
+  ],
+  "source": "config/colorcards.json sets.juniper (OMM pile photo 05-Tile_Juniper_Alt + flat lay 01-Tile_Juniper_A)"
+ },
+ "layers": {
+  "_note": "Juniper has no back + side product photo, so the Her colors slide uses OMM's single-tile shot (09-Tile_Juniper_H), cut out. Labels = [x, y, text, hex] in cutout px (layer centres sampled Nov 6 at x=700).",
+  "img": "assets/tiles/backs/juniper-layers-omm-cutout.png",
+  "labels": [
+   [
+    700,
+    482,
+    "Teal layer",
+    "#00a792"
+   ],
+   [
+    700,
+    527,
+    "Chartreuse layer",
+    "#a9c54f"
+   ],
+   [
+    700,
+    560,
+    "Jade-look back",
+    "#225d36"
+   ]
+  ],
+  "wheel_notes": [
+   [
+    "Forest green jade",
+    "deep, cool green"
+   ],
+   [
+    "Chartreuse",
+    "bright yellow-green"
+   ],
+   [
+    "Teal",
+    "vivid blue-green"
+   ],
+   [
+    "Hot pink + coral",
+    "her faces: across the wheel"
+   ]
+  ]
+ },
+ "her_type": [
+  {
+   "label": "Forest green + pink",
+   "mat": "Garden Glow",
+   "brand": "Bespoke Mahjong",
+   "chips": [
+    "#1f4d2c",
+    "#e46aa0"
+   ],
+   "why": "The deep forest ground is her jade-look back, and the pink wildflowers pick up her craks and dots."
+  },
+  {
+   "label": "Kelly green + blush",
+   "mat": "Palm Royale",
+   "brand": "Mahj Tile Haus",
+   "chips": [
+    "#2f8f4e",
+    "#f2b6c4"
+   ],
+   "why": "Kelly cane lattice and blush palms: pink and green at the same brightness as her faces."
+  },
+  {
+   "label": "Her official pair",
+   "mat": "Lotus Cove",
+   "brand": "Oh My Mahjong",
+   "chips": [
+    "#f2a9bf",
+    "#9fdcc5"
+   ],
+   "why": "Oh My Mahjong's own pair: a pink lotus pond that echoes her lotus flower tiles."
+  }
+ ],
+ "dealbreaker": "Dusty, earthy neutrals like tan and taupe. Next to her clean jewel greens and hot pink they read muddy. Keep the mat clean and saturated.",
+ "racks": [
+  {
+   "name": "Miss Mahjong Jade & Brass",
+   "why": "Green stone and brass: her jade-look backs and gold dots.",
+   "group": "color"
+  },
+  {
+   "name": "Oh My Mahjong Hot Pink",
+   "why": "Her hot pink dots and craks, turned up.",
+   "group": "color"
+  },
+  {
+   "name": "Oh My Mahjong Pink Quartz",
+   "why": "A softer pink stone for her lotus flowers.",
+   "group": "color"
+  }
+ ],
+ "first_dates": [
+  "Garden Glow",
+  "Palm Royale",
+  "Lotus Cove"
+ ],
+ "bio": "A lantern-lit garden at dusk. Deep green, a little pink, and a peacock who knows it.",
+ "best_features": {
+  "_status": "CLAUDE'S PROPOSAL, pending Tiffany's picks (never swap her picks later)",
+  "top": [
+   "The dragons",
+   [
+    "dragon-green",
+    "dragon-red"
+   ],
+   "An emerald dragon and her pink twin"
+  ],
+  "singles": [
+   [
+    "The peacock",
+    "bam-1-peacock",
+    "Her pink-tailed<br>peacock bird bam"
+   ],
+   [
+    "The lotus",
+    "flower-2a",
+    "A hot pink lotus<br>by a jade pagoda"
+   ],
+   [
+    "The jester",
+    "joker-1",
+    "Her jester joker,<br>bird and all"
+   ]
+  ]
+ },
+ "omm_launch": {
+  "pair": {
+   "mat": "Lotus Cove",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/juniper/mats/lotus-cove-oh-my-mahjong.jpg",
+   "together": "assets/launches/omm-lotus-cove-mat-in-tube/01-USK_Juniper_LotusCove_Alt.jpg",
+   "together_fit": "cover",
+   "together_caption": "Juniper on Lotus Cove, in Oh My Mahjong's own photo",
+   "why": "A pink lotus pond with mint lily pads, made for her lotus flowers. Sold together in Oh My Mahjong's Ultimate Starter Kit."
+  },
+  "sisters": [],
+  "strong_label": "Strong match potential"
+ },
+ "launch_photos": {
+  "hero": "assets/launches/omm-juniper-mahjong-tiles/06-Tile_Juniper_F.jpg",
+  "single": "assets/launches/omm-juniper-mahjong-tiles/09-Tile_Juniper_H.jpg",
+  "all": "assets/launches/omm-juniper-mahjong-tiles/01-Tile_Juniper_A.jpg"
+ },
+ "album_peek": [
+  "bespoke-mahjong-garden-glow-emerald-green",
+  "mahj-tile-haus-palm-royale",
+  "oh-my-mahjong-lotus-cove"
+ ],
+ "colors_line": "Forest green jade-look backs, chartreuse and teal layers. Clean jewel tones on a deep green.",
+ "layers_hand": "see the layers?<br>teal + chartreuse, over a forest green back."
+}

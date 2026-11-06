@@ -28,6 +28,18 @@ P = dict(name='Papaya Spritz', brand='Oh My Mahjong', photo='assets/tiles/album/
          basics=[('#de7e30', 'Papaya backs'), ('#a8a3e1', 'Lavender layer'), ('#c8d7a5', 'Light lime layer'), ('#ef7aa0', 'Pink faces')],
          matches=50)
 
+# Nov 6 (Juniper): any other set -> python3 swipe_profile.py <key>, fields from config/profiles/<key>.json 'swipe'.
+# Papaya (no argument, or 'papaya-spritz') is unchanged.
+import sys, json
+KEY = sys.argv[1] if __name__ == '__main__' and len(sys.argv) > 1 else 'papaya-spritz'
+if KEY != 'papaya-spritz':
+    _p = json.load(open(f'{R}/config/profiles/{KEY}.json')); _c = json.load(open(f'{R}/config/colorcards.json'))['sets'][KEY]
+    _w = _p['swipe']
+    P = dict(name=_p['name'], brand=_p['brand'], photo=_w.get('photo', _c['tile']), active=_p['launch_line'].split(' · ')[0],
+             looking=_w['looking'], pills=_w['pills'], love=_w['love'], prompt_q=_w['prompt_q'], prompt_a=_w['prompt_a'],
+             basics=[], matches=_p['matches'])
+    OUT = f'{R}/assets/colorcards/{KEY}/00-{KEY}-mahjong-tiles-profile-d-story.jpg'
+
 def svg(path, color, size, stroke=6, fill='none'):
     return f'<svg width="{size}" height="{size}" viewBox="0 0 48 48"><path d="{path}" fill="{fill}" stroke="{color}" stroke-width="{stroke}" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 

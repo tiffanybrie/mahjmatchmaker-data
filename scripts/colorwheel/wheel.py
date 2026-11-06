@@ -17,9 +17,9 @@ def wheel(size=1200, v=0.96):
     img=(out.reshape(size,size,3)*255).astype(np.uint8)
     a=(r<=1).astype(np.uint8)*255
     im=Image.fromarray(img).convert('RGBA'); im.putalpha(Image.fromarray(a)); return im
-def main(key, pins, title, sub):
+def main(key, pins, title, sub, note=None):
     W,H=1080,1350; bg=Image.new('RGB',(W,H),(246,233,223)); d=ImageDraw.Draw(bg)
-    ws=660; wl=wheel(ws, v=0.97); cx,cy=W//2,575
+    many=len(pins)>3; ws=600 if many else 660; wl=wheel(ws, v=0.97); cx,cy=W//2,(530 if many else 575)
     # soften: blend wheel toward cream a touch so it reads designer, not neon
     cream=Image.new('RGBA',(ws,ws),(246,233,223,255)); wl=Image.composite(Image.blend(wl,cream,0.18),wl.copy(),wl.split()[3])
     sh=Image.new('RGBA',(ws+40,ws+40),(0,0,0,0)); ImageDraw.Draw(sh).ellipse([20,28,ws+20,ws+28],fill=(120,60,30,45))
@@ -32,7 +32,9 @@ def main(key, pins, title, sub):
     for deg,name in [(0,'red'),(30,'orange'),(60,'yellow'),(120,'green'),(180,'teal'),(240,'blue'),(275,'lavender'),(320,'pink')]:
         aa=math.radians(deg-90); x=cx+(ws/2+40)*math.cos(aa); y=cy+(ws/2+40)*math.sin(aa)
         d.text((x,y),name,font=mono,fill=(90,107,133),anchor='mm')
-    n=len(pins); cw=280; gap=40; x0=(W-(n*cw+(n-1)*gap))/2; cyc=975
+    n=len(pins)
+    if n>3: return _rest_many(bg,d,key,pins,cx,cy,ws,mono,num,chipname,chipsm,note)
+    cw=280; gap=40; x0=(W-(n*cw+(n-1)*gap))/2; cyc=975
     for i,p in enumerate(pins):
         hexc=p['hex'].lstrip('#'); r,g,b=[int(hexc[k:k+2],16)/255 for k in (0,2,4)]; h,sat,v=colorsys.rgb_to_hsv(r,g,b)
         col=(int(r*255),int(g*255),int(b*255))
@@ -51,11 +53,54 @@ def main(key, pins, title, sub):
     d.text((W/2,H-88),'Sampled from Oh My Mahjong’s tile back photo. Angle = hue · distance from center = how vivid.',font=mono,fill=(90,107,133),anchor='mm')
     logo=Image.open(R+'assets/brand/mahjmatchmaker-wordmark-notag.png').convert('RGBA'); logo.thumbnail((260,80)); bg.paste(logo,(W//2-logo.width//2,H-62),logo)
     out=R+f'assets/colorwheels/{key}-color-wheel.jpg'; bg.save(out,quality=93); print(out)
+def _rest_many(bg,d,key,pins,cx,cy,ws,mono,num,chipname,chipsm,note):
+    """Nov 6 (Juniper): more than 3 pins -> two rows of 3 smaller chips (backs row, faces row). Papaya (3 pins) unchanged."""
+    W,H=bg.size
+    for i,p in enumerate(pins):
+        hexc=p['hex'].lstrip('#'); r,g,b=[int(hexc[k:k+2],16)/255 for k in (0,2,4)]; h,sat,v=colorsys.rgb_to_hsv(r,g,b)
+        col=(int(r*255),int(g*255),int(b*255))
+        aa=math.radians(h*360-90); rr=sat*(ws/2-6); px=cx+rr*math.cos(aa); py=cy+rr*math.sin(aa)
+        d.ellipse([px-30,py-30,px+30,py+30],fill=col,outline=(255,255,255),width=6)
+        d.ellipse([px-36,py-36,px+36,py+36],outline=(5,70,137),width=3)
+        d.text((px,py),str(i+1),font=num,fill=(255,255,255),anchor='mm')
+    cw=300; gap=24; ch=108
+    rows=[pins[:3],pins[3:6]]; ylab=[922,1088]; labs=['BACKS & LAYERS','FACES']
+    k=0
+    for ri,row in enumerate(rows):
+        n=len(row); x0=(W-(n*cw+(n-1)*gap))/2; y=ylab[ri]+22
+        d.text((W/2,ylab[ri]),labs[ri],font=chipsm,fill=(5,70,137),anchor='mm')
+        for j,p in enumerate(row):
+            k+=1; hexc=p['hex'].lstrip('#'); r,g,b=[int(hexc[q:q+2],16) for q in (0,2,4)]; h=colorsys.rgb_to_hsv(r/255,g/255,b/255)[0]
+            x=x0+j*(cw+gap)
+            d.rounded_rectangle([x+5,y+8,x+cw+5,y+ch+8],16,fill=(220,200,185))
+            d.rounded_rectangle([x,y,x+cw,y+ch],16,fill=(255,255,255))
+            d.rounded_rectangle([x,y,x+64,y+ch],16,fill=(r,g,b)); d.rectangle([x+40,y,x+64,y+ch],fill=(r,g,b))
+            d.text((x+32,y+ch/2),str(k),font=mono,fill=(255,255,255),anchor='mm')
+            nm=p['name']; f=chipname
+            while d.textlength(nm,font=f)>cw-88 and f.size>18: f=ImageFont.truetype(GF+'Lora-Variable.ttf',f.size-1)
+            d.text((x+80,y+52),nm,font=f,fill=(5,70,137),anchor='ls')
+            d.text((x+80,y+88),f"#{hexc.upper()} · {round(h*360)}°",font=chipsm,fill=(90,107,133),anchor='ls')
+    d.text((W/2,H-92),note or 'Angle = hue · distance from center = how vivid.',font=mono,fill=(90,107,133),anchor='mm')
+    logo=Image.open(R+'assets/brand/mahjmatchmaker-wordmark-notag.png').convert('RGBA'); logo.thumbnail((260,80)); bg.paste(logo,(W//2-logo.width//2,H-62),logo)
+    out=R+f'assets/colorwheels/{key}-color-wheel.jpg'; bg.save(out,quality=93); print(out)
+
+# Nov 6: per-set pins. papaya-spritz = the original 3 (unchanged). Others: config/colorcards.json backs + the faces listed here.
+WHEEL_FACES={'juniper':['HOT PINK','CORAL','GOLD']}
+WHEEL_TITLE={'papaya-spritz':('Papaya Spritz','where her colors sit on the color wheel')}
 if __name__=='__main__':
-    pins=[{'name':'Papaya backs','hex':'#de7e30'},
-          {'name':'Lavender layer','hex':'#a8a3e1'},
-          {'name':'Light lime layer','hex':'#c8d7a5'}]
-    main('papaya-spritz',pins,'Papaya Spritz','where her colors sit on the color wheel')
+    key=sys.argv[1] if len(sys.argv)>1 else 'papaya-spritz'
+    if key=='papaya-spritz':
+        pins=[{'name':'Papaya backs','hex':'#de7e30'},
+              {'name':'Lavender layer','hex':'#a8a3e1'},
+              {'name':'Light lime layer','hex':'#c8d7a5'}]
+        main('papaya-spritz',pins,'Papaya Spritz','where her colors sit on the color wheel')
+    else:
+        cc=json.load(open(R+'config/colorcards.json'))['sets'][key]
+        pins=[{'name':n.title(),'hex':h} for n,h,_ in cc['backs']]
+        fx=dict((n,h) for n,h in cc['faces'])
+        pins+=[{'name':n.title(),'hex':fx[n]} for n in WHEEL_FACES.get(key,[])]
+        t,sub=WHEEL_TITLE.get(key,(cc['name'],'where her colors sit on the color wheel'))
+        main(key,pins,t,sub,note=f"From {cc['brand']}'s photos. Angle = hue · farther out = more vivid.")
 
 def mini(key, pins, ws=900):
     """Small transparent color wheel with numbered pins only (for the merged Her colors slide)."""
