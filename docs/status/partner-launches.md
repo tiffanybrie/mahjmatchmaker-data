@@ -1,6 +1,6 @@
-# Partner launches & restocks (2026-11-06 22:29 UTC)
+# Partner launches & restocks (2026-11-06 22:33 UTC)
 
-## Since last run: 0 to act on (first run: snapshot seeded)
+## Since last run: 0 to act on
 
 ## Created/published in the last 14 days (tiles, mats, racks)
 - 2026-11-06 · Let's Be Besties · Pink Christmas Mahjong Mat (mat) · available · https://letsbebesties.com/products/pink-christmas-mahjong-mat
@@ -27,11 +27,8 @@
 - 2026-11-04 · Splash of Color · Tuscan Tapestry Earthy Wine Botanical American Engraved  Mahjong Tiles (tiles) · available · https://splashofcolorco.com/products/tuscan-tapestry-earthy-wine-botanical-american-engraved-mahjong-tiles
 - 2026-11-04 · Splash of Color · The Kitschmas Mail Mahj Club Preppy Pink Christmas Mahjong Tiles (tiles) · available · https://splashofcolorco.com/products/the-kitschmas-mail-mahj-club-preppy-pink-christmas-mahjong-tiles
 - 2026-11-04 · Splash of Color · Kitschmas Mahj Mail Mahjong Christmas Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/kitschmas-mahj-mail-mahjong-christmas-mat-sleek-surface
-- 2026-11-03 · Oh My Mahjong · Green Aqua Jong Pool Mat (mat) · available · https://www.ohmymahjong.com/products/green-aqua-jong-pool-mat
-- 2026-11-03 · Oh My Mahjong · Pink Aqua Jong Pool Mat (mat) · available · https://www.ohmymahjong.com/products/pink-aqua-jong-mat
 - 2026-11-03 · Oh My Mahjong · Lotus Cove Mat in Tube (mat) · NOT available · https://www.ohmymahjong.com/products/lotus-cove-mat-in-tube
 - 2026-11-03 · Oh My Mahjong · Juniper Mahjong Tiles (tiles) · NOT available · https://www.ohmymahjong.com/products/juniper-mahjong-tiles
-- 2026-11-03 · Anders Ruff · Bams & Bubbly™ Floating Tiles (tiles) · NOT available · https://shop.andersruff.com/products/bams-bubbly™-floating-tiles
 - 2026-11-03 · Bespoke Mahjong · COMING SOON - Mahjong It's a Vibe - GLITTER GLOW RED (tiles) · NOT available · PREORDER/COMING SOON · https://www.bespokemahjong.com/products/holiday-mahjong-its-a-vibe-glitter-glow-tiles
 - 2026-11-03 · Bespoke Mahjong · COMING SOON - Mahjong It's a Vibe - GLITTER GLOW GREEN (tiles) · NOT available · PREORDER/COMING SOON · https://www.bespokemahjong.com/products/coming-this-november-mahjong-its-a-vibe-glitter-glow-green
 - 2026-11-03 · Miss Mahjong · Garden Party Travel Mat 21"x21" (travel mat) · available · https://missmahjong.com/products/garden-party-travel-mat-21x21

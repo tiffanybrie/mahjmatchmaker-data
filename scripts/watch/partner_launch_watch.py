@@ -91,6 +91,8 @@ BAG = re.compile(r"\bbags?\b|clutch|pool mat|floating|pool float", re.I)
 def kind_of(p):
     if BAG.search(p.get('title') or '') and not re.search(r"\btiles\b|\bmats?\b", p.get('title') or '', re.I):
         return None
+    if re.search(r"\bpool\b|floating", p.get('title') or '', re.I):
+        return None
     t = (p.get('title') or '') + ' ' + (p.get('product_type') or '') + ' ' + ' '.join(p.get('tags') or [])
     title = p.get('title') or ''
     if SKIP.search(title):
