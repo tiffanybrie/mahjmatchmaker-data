@@ -26,7 +26,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **ALL CHATS: Mahjong Row & Co. is ON HOLD (Tiffany Nov 5 9:20pm).** The Main fork's 9:45pm "STILL TO DO" list (strip sca_ref + code pills from 9 album pages, 4 blog posts, homepage ticker, FYM cards, Mat Gallery rows) is CANCELLED until she decides. Main verified the reversal live ~10:30pm (34820da): brand page + hub identical to the originals (hub 39 brands, 'Updated November 4, 2026', 39-logo graphic), IG codes draft + FB group edits restored. Leave the Nov 4 group-post edits as Main left them. HQ needs/alert-revenue-mahjong-row-2026-11-06 archived as answered (hold). Main: when Brad replies, bring her the reply + options (pause line on our pages / swap to a referral link / remove) as ONE question.
 - **Main: delete the stale 12 GB duplicate clone** /home/claude/tiffanybrie/mahjmatchmaker-data (Oct 22, clean, nothing unpushed) is HER call (safety check): ask at the top of the next Main reply (default: delete).
 - **OPS + Matches & Catalog: The Mahjong Co. shop is empty** (1 product, sold out; our mat links 404; 0 orders in 9 days). Her yes/no is on HQ Today; then retire/hide their mats and fix /mahjong-co-discount-code links.
-- **OPS: Amanda Toppe 10% everywhere + Wren + OMM dates** (priority 1). Overdue since Nov 2.
+- ~~OPS: Amanda Toppe 10% everywhere + Wren + OMM dates~~ DONE by Main Nov 6 12:40am (live check PASS); indexing requests are in docs/OVERDUE.md.
 - **Matches & Catalog: Sunday albums** (priority 3, due Fri).
 - **Matches & Catalog: Lotus Cove swipe book (L8teRCj5w9ncskZYkwNEoZ) + every open book: show FULL mat names and brands** (Tiffany Nov 5, standing; book_gate [n]). Fix before she swipes; then HQ OMM card points to it.
 - **Matches & Catalog: "mat matches" view proposal** (her Nov 5 12:47am ask: all match cards for one mat in one place): Claude proposed one data-driven view opened from search + gallery; RE-ASK her at the top of the next reply (default: build it after the Sunday albums).
@@ -92,7 +92,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 ## Blocked, approved (raise at the top of every attended reply until done)
 - **Planoly roll-forward** (Main): the unattended desk run was refused `set_post_group_schedule` again tonight (2nd night). Priority 4a.
 - **IG EVERGREEN CODES POST** (Main, her plan Nov 4 3:55pm): draft in Planoly 01a1a859-bcb8 (caption has the Mahjong Row line restored, bf1e1b7); she taps Post. NOT on the FB Page.
-- **PAYOUT RECONCILE PASS 2** (Main): needs PayPal + each dashboard signed in. Kathrine Zell $3.15 Oct 15: Tiffany checking her email. Peace Love $402.88 gift-card payout: she fixes the GoAffPro setting herself.
+- **PAYOUT RECONCILE PASS 2** (Main): needs PayPal + each dashboard signed in. Kathrine Zell $3.15 Oct 15: Tiffany checking her email. Peace Love $402.88 gift-card payout = their Level 1 tier (store credit only; cash starts at Level 2 = $5K referred sales/month), NOT a GoAffPro setting (Main found Nov 5).
 - **Dashboards signed out: Bird & Bamboo UpPromote, My Fair, OMM, Mini Mahjer** (blocks amounts + revenue watch): her sign-in (HQ Today card #1). Marketplace + GoAffPro are signed in again.
 - **Mahjong Row product links** (Main): edit the group-post comment the moment pages exist (Fri 10am CT), no code.
 - DONE today: FYM tracking TRK_URL live in all 3 places (1.15, 10:25am; beacon rows land in the sheet; website QA PASS ~9:40pm). Site search Code Injection on 98e58057.

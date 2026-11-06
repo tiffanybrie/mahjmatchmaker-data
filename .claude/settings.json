@@ -1,0 +1,7 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      { "hooks": [ { "type": "command", "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/hooks/front_door.py\"", "timeout": 60 } ] }
+    ]
+  }
+}
