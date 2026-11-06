@@ -61,7 +61,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | This week's IG posts (Planoly drafts; roll-forward) | Main | Priority 4. | Fri Nov 6 |
 | Match inbox close-out after 1.15 + launch-watch adds | Matches & Catalog | Priority 5. | Fri Nov 6 |
 | FYM 1.15 leftovers: Mahj Pit racks (6b) + Mat Gallery, Mahj Mood PFK, Mac + Miller seconds | Matches & Catalog | Next build (1.16): gate + independent QA + both places + pin + snapshot. | Mon Nov 9 |
-| Juniper album (round 2, 33 mats) | Tiffany → Matches & Catalog | She picks (HQ This week); cards + album page live with the launch. | Mon Nov 9 (launch Nov 11) |
+| Juniper album (round 2, 33 mats) | Tiffany → Matches & Catalog | Full set BUILT Nov 6 (agent): cover, wheel + colour theory, 47 face cutouts + faces pick page, Her best features DRAFT, dating profile, 7-slide intro, 33 DRAFT match cards: site/livepatch/juniper-album-nov06/README.md. Waiting on her: 4 faces (pick page), card order/cuts, racks OK, pronoun ('her' in drafts). Then album page live with the launch. | Mon Nov 9 (launch Nov 11) |
 | Lotus Cove swipe book | Matches & Catalog → Tiffany | Fix full names (book_gate [n]), then HQ points her to it. | Sat Nov 7 |
 | Playing for Keeps mat swipe book (JTgtEfAAdS6qrDJUhvPB3n) | Tiffany | Optional, before Valentine's content (HQ Albums "Needs your yes"). | When she likes |
 | Work With v3 + Brands form | Tiffany yes → Ops | Her yes on HQ Today; README says nothing goes live until she has seen it. | On her yes |
