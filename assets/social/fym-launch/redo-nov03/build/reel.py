@@ -17,7 +17,7 @@ FONTS = f'file://{R}/scripts/social/tileprofile/fonts'
 F = lambda p: 'file://' + p
 def rt(r): d = json.load(open(f'{O}/{r}/marks.json')); Fr = d['frames']; return [round(x - Fr[0], 3) for x in Fr]
 LG = '/dev/shm/introv4/logos/'
-ALLP = ['omm','mrc','missm','myfair','middlemain','bb','bambird','squad','britt','plm','cmc','bespoke','virora','ar','mood','minimahjer','macmiller','toppe','amahj','mahjon','vine','hiphip','bam','ymi','mahjongco','studios','ilovemahj','splash','wren','press','royal','soiree','register','lbb','yolo','maison','noli']  # code partners; no Tigre de Tartan (affiliate policy), no Sunday
+ALLP = ['omm','missm','myfair','middlemain','bb','bambird','squad','britt','plm','cmc','bespoke','virora','ar','mood','minimahjer','macmiller','toppe','amahj','mahjon','vine','hiphip','bam','mahjongco','studios','ilovemahj','splash','wren','press','royal','soiree','register','lbb','yolo','maison','noli']  # code partners; no Tigre de Tartan (affiliate policy), no Sunday; Nov 6: no Mahjong Row (out), no YMI (never on social)
 CFG = dict(DW=[F(f) for f in sorted(glob.glob(f'{O}/dwall/*.jpg'))], XC=[F(f) for f in sorted(glob.glob(f'{O}/xcards/*.png'))], LOGOS=[F(LG + n + '.png') for n in ALLP], CARD=F(f'{O}/recB/storycard.png'),
            R0=F(f'{O}/rec0/f/'), RA=F(f'{O}/recA/f/'), RP=F(f'{O}/recP/f/'), RB=F(f'{O}/recB/f/'), T0=rt('rec0'), TA=rt('recA'), TP=rt('recP'), TB=rt('recB'),
            FL=F(f'{R}/assets/brand/flame-heart.png'), WM=F(f'{R}/assets/brand/mahjmatchmaker-wordmark-notag.png'))

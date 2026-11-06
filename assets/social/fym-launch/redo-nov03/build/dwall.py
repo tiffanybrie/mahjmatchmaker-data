@@ -5,7 +5,7 @@ import json, random, collections, subprocess, os, sys, base64
 sys.path.insert(0, '/home/claude/mahjmatchmaker-data/assets/social/holiday-nov1/intro/build')
 from v2_lib import *
 D = json.load(open('/dev/shm/introv2/D.json')); M = D['mats']; O = '/dev/shm/lr/dwall'; os.makedirs(O, exist_ok=True)
-BAD = ('tigre', 'sunday', 'studios', 'paige', 'mahjong line', 'four winds')
+BAD = ('tigre', 'sunday', 'studios', 'paige', 'mahjong line', 'four winds', 'mahjong row', 'yellow mountain', 'mahjong by si', 'mahjong co')  # Nov 6: Mahjong Row out; YMI never on social; Mahjong Co. mats hidden
 c = [(k, v) for k, v in M.items() if v.get('pa') and not v.get('hol') and not v.get('hid') and not v.get('rt') and not v.get('nc') and not v.get('ml')
      and not any(b in (v['bn'] + v['n']).lower() for b in BAD) and 0.9 <= v['w'] / v['h'] <= 1.1 and v['w'] >= 900]
 random.seed(27); random.shuffle(c)

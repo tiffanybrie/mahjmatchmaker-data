@@ -7,7 +7,7 @@ from v2_lib import *
 O = '/dev/shm/lr'; os.makedirs(O + '/dbg', exist_ok=True)
 WHAT = sys.argv[1] if len(sys.argv) > 1 else 'all'
 BB = 'shop.andersruff.com/brownstone-bloom-mahjong-mat'; SONG = 'mahjandvine.com/chinoiserie-song-bird'
-OZ = 'alb2:ozark-mah-jongg-carson-vintage'; MG = 'mahjongrowandco.com/midnight-garden-mat'
+OZ = 'alb2:ozark-mah-jongg-carson-vintage'; MG = 'brittmillsdesign.com/knox-neoprene-mahjong-mat'  # Nov 6: was Mahjong Row Midnight Garden (MR out); Knox = her real Sunday pick
 WAL = 'www.bambirdboutique.com/wooden-mahjong-rack-pusher-set'; OAK = 'peacelovemahjong.com/mahjong-racks-racks-pushers-set-of-4'
 TEAL = 'www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=52307844235573'
 DECKQ = [BB, SONG, OZ, MG]
