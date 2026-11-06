@@ -74,6 +74,21 @@ NPA = json.load(open(REPO + 'builder/fym_flags/nonpartner_allow.json'))
 PARTNERS = {nz(b) for b in NPA['partners']}  # same lockout as fym_gate.py [9]/[13]
 MATCHED = {x[0] for s in D['sets'] if (s.get('album') or s.get('sb')) and not (s.get('hid') or D['tiles'].get(s['tile'], {}).get('hid')) for x in s['m']}
 GALLERY_SKIP_BRANDS = {'House of Hearts Studio': 'Tiffany Oct 25 11:06: add ALL its mats to FYM, "FYM only for now"'}
+POV = json.load(open(REPO + 'config/mat-gallery-photo-overrides.json'))['mats']
+CFIX = json.load(open(REPO + 'config/mat-gallery-sync-colour-fixes.json'))['mats']
+CACHE = os.path.join(tempfile.gettempdir(), 'gallery-photo-cache'); os.makedirs(CACHE, exist_ok=True)
+
+
+def photo_override(k):
+    src = POV[k]['src']
+    if src.startswith('http'):
+        fn = os.path.join(CACHE, re.sub(r'[^A-Za-z0-9._-]', '_', src.split('/')[-1]))
+        if not os.path.exists(fn):
+            subprocess.run(['curl', '-sSf', '-o', fn, src], check=False)
+        return open(fn, 'rb').read() if os.path.exists(fn) and os.path.getsize(fn) > 1000 else None
+    return open(REPO + src, 'rb').read()
+
+
 HOLDS = json.load(open(REPO + 'config/mat-gallery-photo-holds.json'))['mats']
 LATE_P = REPO + 'config/tiffany-color-notes/2026-10-20-late-calls.json'
 LATE = json.load(open(LATE_P))
@@ -86,12 +101,24 @@ measure, pick = ns['measure'], ns['pick']
 
 
 def mood(im):
-    a = np.asarray(im.convert('RGB').resize((96, 96))).astype(float) / 255
-    hh, l, s = _hls(a)
-    keep = ~(((s < 0.14) | ((l > 0.86) & (s < 0.45))) & ((l > 0.72) | (l < 0.3)))  # drop white / black like fam_arr
-    if not keep.any(): return 'pastel'
-    L, S = float(l[keep].mean()), float(s[keep].mean())
-    return 'pastel' if (L >= 0.68 and S < 0.5) else 'brights'
+    """Nov 6 (QA round 2: pale mats and dark solids came out Brights): tags for a mat with no tonal tag yet.
+    HSV over the whole photo minus a pure-white background and the black peel-corner flap:
+      solid (>= 80% of pixels within ~30 RGB of the median colour)  -> 'simple'
+      dark (mean value < 0.45)                                        -> 'dark'
+      pastel (80th-pct saturation < 0.5 and mean value >= 0.72)       -> 'pastel'
+      otherwise                                                       -> 'brights'"""
+    rgb = np.asarray(im.convert('RGB').resize((96, 96))).astype(float)
+    hsv = np.asarray(im.convert('RGB').resize((96, 96)).convert('HSV')).astype(float) / 255
+    S, V = hsv[..., 1], hsv[..., 2]
+    keep = ~(((S < 0.04) & (V > 0.97)) | (V < 0.12))
+    if keep.sum() < 50: keep = np.ones_like(V, bool)
+    med = np.median(rgb[keep], axis=0); solid = float((np.abs(rgb[keep] - med).max(1) < 30).mean()) >= 0.8
+    v, s80 = float(V[keep].mean()), float(np.percentile(S[keep], 80))
+    out = ['simple'] if solid else []
+    if v < 0.45: out.append('dark')
+    elif s80 < 0.5 and v >= 0.72: out.append('pastel')
+    elif not solid: out.append('brights')
+    return out
 
 
 skipped = collections.Counter(); rows = []; P = FymPhotos(CHECKOUT, os.path.relpath(os.path.abspath(IDX), CHECKOUT))
@@ -108,14 +135,17 @@ for k, m in M.items():
     if k in HOLDS: skipped['gallery photo hold (config/mat-gallery-photo-holds.json)'] += 1; continue
     partner = bool(m.get('pa')) or nz(bn) in PARTNERS or bn in NPA['brands'] or k in NPA['mats'] or str(m.get('u', '')).startswith(NPA['shopmy_prefix']) or k in MATCHED
     if not partner: skipped['non-partner not allowed'] += 1; print('  not allowed (gate [13] lockout):', bn, '|', m['n']); continue
-    raw = P.get(m['f'])
+    raw = photo_override(k) if k in POV else P.get(m['f'])
     if raw is None: skipped['no FYM photo'] += 1; continue
     name = re.sub(r'\s*\(retired\)\s*$', '', m.get('dn') or m['n'], flags=re.I).strip()
     img = slug(bn) + '--' + slug(name)[:70]
     base_img, n_ = img, 2
     while img in USED: img = f'{base_img}-{n_}'; n_ += 1
     USED.add(img)
-    im = Image.open(io.BytesIO(raw)).convert('RGB'); im.thumbnail((640, 640))
+    im = Image.open(io.BytesIO(raw)).convert('RGB')
+    if k in POV and POV[k].get('crop'):
+        W_, H_ = im.size; x0, y0, x1, y1 = POV[k]['crop']; im = im.crop((int(x0 * W_), int(y0 * H_), int(x1 * W_), int(y1 * H_)))
+    im.thumbnail((640, 640))  # shrinks only: a small photo stays at its native size, never upscaled
     tmp = os.path.join(tempfile.gettempdir(), img + '.webp'); im.save(tmp, 'WEBP', quality=84)
     acc, sh = pick(measure(tmp))
     secs = []
@@ -125,9 +155,13 @@ for k, m in M.items():
         if c not in secs: secs.append(c)
     if not secs:
         secs = [max((f for f in sh if f in ('pink', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple', 'neutral', 'earthy', 'dark')), key=lambda f: sh[f], default='neutral')]
-    if not any(c in ('neutral', 'earthy', 'dark', 'bw') for c in secs):
-        secs.append(mood(im))
+    for t_ in mood(im):
+        if t_ == 'dark' and any(c in ('dark', 'earthy', 'bw') for c in secs): continue
+        if t_ in ('pastel', 'brights') and any(c in ('neutral', 'earthy', 'dark', 'bw') for c in secs): continue
+        if t_ not in secs: secs.append(t_)
+    if k in CFIX: secs = list(CFIX[k]['secs'])  # Claude photo-review colour fix (config/mat-gallery-sync-colour-fixes.json)
     hol = bool(m.get('hol'))
+    if secs == ['holiday']: hol = True  # a colour fix moved it INTO Holiday (photo clearly shows Christmas)
     if hol and not m.get('ayr'):
         secs = ['holiday']
     elif hol and m.get('ayr'):
@@ -138,8 +172,8 @@ for k, m in M.items():
     code = re.sub(r'^https?://(www\.)?mahjmatchmaker\.com', '', m.get('dc') or '') if m.get('pa') else ''
     rows.append({'img': img, 'key': k, 'name': name, 'brand': bn, 'url': '' if m.get('rt') else (m.get('u') or ''), 'code': code, 'secs': secs,
                  'img_commit': 'PENDING', 'eye': 0, 'added': TAG, 'ret': 1 if m.get('rt') else 0,
-                 'note': f"{TAG} (gallery_sync.py): photo = FYM {VER} {m['f']} at 640px; sections = FYM colours {m.get('mf')} mapped by the measured photo"
-                         f" (shares {dict(sorted(sh.items(), key=lambda kv: -kv[1])[:4])}){'; holiday (FYM hol)' if hol else ''}; measured also-colours + accents by build_v5.py.",
+                 'note': f"{TAG} (gallery_sync.py): photo = {('override ' + POV[k]['src']) if k in POV else ('FYM ' + VER + ' ' + m['f'])} (<= 640px, never upscaled); sections = FYM colours {m.get('mf')} mapped by the measured photo"
+                         f" (shares {dict(sorted(sh.items(), key=lambda kv: -kv[1])[:4])}){'; holiday' if hol else ''}{('; colour fix: ' + CFIX[k]['why']) if k in CFIX else ''}; measured also-colours + accents by build_v5.py.",
                  '_tmp': tmp})
 
 print(f'{VER}: {len(rows)} gallery rows to add (previous {TAG}-style rows replaced: {len(old_rows)})')

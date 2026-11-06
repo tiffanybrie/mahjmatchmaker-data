@@ -1,0 +1,222 @@
+{
+ "by": "claude-photo-review",
+ "date": "2026-11-06",
+ "about": "Mat Gallery duplicate photos (QA Nov 6 + pHash/colour sweep, every pair looked at): build_v6.py drops each key's row and keeps 'keep' (Oct 20 dedupe style). note = shown under the name ('Also available in leatherette'); shop2 = a second shop link on the kept card. not_dupes = sweep pairs checked by eye that are different mats.",
+ "merge": {
+  "let-s-be-besties--navy-green-sky-gator-skin-leatherette": {
+   "keep": "let-s-be-besties--navy-sky-mint-gator-skin",
+   "why": "same photo: Navy Green Sky Gator Skin Leatherette = Navy Sky Mint Gator Skin",
+   "note": "Also available in leatherette",
+   "keep_in_v5": false,
+   "drop_in_v5": false
+  },
+  "let-s-be-besties--jingle-jungle-leatherette": {
+   "keep": "let-s-be-besties--jingle-jungle",
+   "why": "same photo: Jingle Jungle Leatherette = Jingle Jungle",
+   "note": "Also available in leatherette",
+   "keep_in_v5": false,
+   "drop_in_v5": false
+  },
+  "britt-mills--quinn-leatherette-2": {
+   "keep": "britt-mills--quinn-2",
+   "why": "same photo: Quinn Leatherette = Quinn",
+   "note": "Also available in leatherette",
+   "keep_in_v5": false,
+   "drop_in_v5": false
+  },
+  "britt-mills--colorful-chinoiserie-leatherette": {
+   "keep": "britt-mills--colorful-chinoiserie",
+   "why": "same photo: Colorful Chinoiserie Leatherette = Colorful Chinoiserie",
+   "note": "Also available in leatherette",
+   "keep_in_v5": true,
+   "drop_in_v5": false
+  },
+  "britt-mills--bella-leatherette": {
+   "keep": "britt-mills--bella",
+   "why": "same photo: Bella Leatherette = Bella",
+   "note": "Also available in leatherette",
+   "keep_in_v5": true,
+   "drop_in_v5": false
+  },
+  "britt-mills--aria-leatherette": {
+   "keep": "britt-mills--aria",
+   "why": "same photo: Aria Leatherette = Aria",
+   "note": "Also available in leatherette",
+   "keep_in_v5": true,
+   "drop_in_v5": false
+  },
+  "britt-mills--haven-leatherette": {
+   "keep": "britt-mills--haven",
+   "why": "same photo: Haven Leatherette = Haven",
+   "note": "Also available in leatherette",
+   "keep_in_v5": true,
+   "drop_in_v5": true
+  },
+  "britt-mills--crimson-harvest-leatherette": {
+   "keep": "britt-mills--crimson-harvest",
+   "why": "same photo: Crimson Harvest Leatherette = Crimson Harvest",
+   "note": "Also available in leatherette",
+   "keep_in_v5": true,
+   "drop_in_v5": true
+  },
+  "britt-mills--dabney-leatherette": {
+   "keep": "britt-mills--dabney",
+   "why": "same photo: Dabney Leatherette = Dabney",
+   "note": "Also available in leatherette",
+   "keep_in_v5": true,
+   "drop_in_v5": true
+  },
+  "britt-mills--enchanted-leatherette": {
+   "keep": "britt-mills--enchanted",
+   "why": "same photo: Enchanted Leatherette = Enchanted",
+   "note": "Also available in leatherette",
+   "keep_in_v5": true,
+   "drop_in_v5": true
+  },
+  "britt-mills--huntley-leatherette": {
+   "keep": "britt-mills--huntley",
+   "why": "same photo: Huntley Leatherette = Huntley",
+   "note": "Also available in leatherette",
+   "keep_in_v5": true,
+   "drop_in_v5": true
+  },
+  "britt-mills--walk-in-the-park-leatherette": {
+   "keep": "britt-mills--walk-in-the-park",
+   "why": "same photo: Walk in the Park Leatherette = Walk in the Park",
+   "note": "Also available in leatherette",
+   "keep_in_v5": true,
+   "drop_in_v5": true
+  },
+  "britt-mills--willow-leatherette": {
+   "keep": "britt-mills--willow",
+   "why": "same photo: Willow Leatherette = Willow",
+   "note": "Also available in leatherette",
+   "keep_in_v5": true,
+   "drop_in_v5": true
+  },
+  "britt-mills--merrywood-leatherette": {
+   "keep": "britt-mills--merrywood",
+   "why": "same photo: Merrywood Leatherette = Merrywood",
+   "note": "Also available in leatherette",
+   "keep_in_v5": true,
+   "drop_in_v5": true
+  },
+  "britt-mills--calista-leatherette": {
+   "keep": "britt-mills--calista-neoprene-mahjong-mat",
+   "why": "same photo: Calista Leatherette = Calista Neoprene",
+   "note": "Also available in leatherette",
+   "keep_in_v5": true,
+   "drop_in_v5": false
+  },
+  "britt-mills--daphne-leatherette": {
+   "keep": "britt-mills--daphne-neoprene-mahjong-mat",
+   "why": "same photo: Daphne Leatherette = Daphne Neoprene",
+   "note": "Also available in leatherette",
+   "keep_in_v5": true,
+   "drop_in_v5": false
+  },
+  "britt-mills--rosalie-leatherette": {
+   "keep": "britt-mills--rosalie-neoprene",
+   "why": "same photo: Rosalie Leatherette = Rosalie Neoprene",
+   "note": "Also available in leatherette",
+   "keep_in_v5": true,
+   "drop_in_v5": true
+  },
+  "britt-mills--mia-leatherette": {
+   "keep": "britt-mills--mia-neoprene-mahjong-mat-arriving-october",
+   "why": "same photo: Mia Leatherette = Mia Neoprene",
+   "note": "Also available in leatherette",
+   "keep_in_v5": true,
+   "drop_in_v5": true
+  },
+  "britt-mills--emerald-mirage-neoprene": {
+   "keep": "britt-mills--emerald-mirage-leatherette",
+   "why": "same photo: Emerald Mirage Neoprene = Emerald Mirage Leatherette",
+   "note": "Also available in neoprene",
+   "keep_in_v5": true,
+   "drop_in_v5": false
+  },
+  "mahjong-register--holly-jolly-double-sided-leatherette": {
+   "keep": "mahjong-register--holly-jolly-christmas",
+   "why": "same photo: Holly Jolly Double-Sided Leatherette = Holly Jolly Christmas",
+   "note": "Also available as a double-sided leatherette",
+   "keep_in_v5": true,
+   "drop_in_v5": true
+  },
+  "mahjong-register--letters-to-santa-double-sided-leatherette": {
+   "keep": "mahjong-register--letters-to-santa-premium",
+   "why": "same photo: Letters to Santa Double-Sided Leatherette = Letters to Santa Premium",
+   "note": "Also available as a double-sided leatherette",
+   "keep_in_v5": true,
+   "drop_in_v5": true
+  },
+  "let-s-be-besties--porcelain-garden": {
+   "keep": "let-s-be-besties--white-pattern-no-10",
+   "why": "same mat listed twice: Porcelain Garden = White Pattern no. 10",
+   "keep_in_v5": true,
+   "drop_in_v5": false
+  },
+  "piper-chase-studios--nutcracker-floral": {
+   "keep": "piper-chase-studios--nutcracker-bows",
+   "why": "same mat listed twice: Nutcracker Floral = Nutcracker Bows",
+   "keep_in_v5": false,
+   "drop_in_v5": false
+  },
+  "mahj-pit--french-mural": {
+   "keep": "tigre-de-tartan--french-mural",
+   "why": "same mat sold by Tigre de Tartan and Mahj Pit (both earn): TdT card kept, Mahj Pit link added",
+   "shop2": [
+    "Also at Mahj Pit",
+    "https://mahjpit.co/discount/MAHJMATCH?redirect=%2Fproducts%2Fmahjong-mat-french-mural%3Fsca_ref%3D12703261.srer4OxWkeRwwDVs"
+   ],
+   "keep_in_v5": true,
+   "drop_in_v5": false
+  },
+  "mahj-pit--domino-oxblood": {
+   "keep": "tigre-de-tartan--domino-oxblood",
+   "why": "same mat sold by Tigre de Tartan and Mahj Pit (both earn): TdT card kept, Mahj Pit link added",
+   "shop2": [
+    "Also at Mahj Pit",
+    "https://mahjpit.co/discount/MAHJMATCH?redirect=%2Fproducts%2Fmahjong-mat-domino-oxblood%3Fsca_ref%3D12703261.srer4OxWkeRwwDVs"
+   ],
+   "keep_in_v5": true,
+   "drop_in_v5": false
+  },
+  "mahj-pit--ditsy-christmas-maraschino": {
+   "keep": "tigre-de-tartan--ditsy-christmas-maraschino",
+   "why": "same mat sold by Tigre de Tartan and Mahj Pit (both earn): TdT card kept, Mahj Pit link added",
+   "shop2": [
+    "Also at Mahj Pit",
+    "https://mahjpit.co/discount/MAHJMATCH?redirect=%2Fproducts%2Fmahjong-mat-ditsy-christmas-maraschino-w-rules%3Fsca_ref%3D12703261.srer4OxWkeRwwDVs"
+   ],
+   "keep_in_v5": true,
+   "drop_in_v5": false
+  },
+  "let-s-be-besties--garden-glass-with-instructions": {
+   "keep": "let-s-be-besties--diamond-pattern-with-directions",
+   "why": "same mat listed twice: Diamond Pattern with Directions = Garden Glass with Instructions (the card already in the gallery is kept)",
+   "keep_in_v5": true,
+   "drop_in_v5": false
+  },
+  "let-s-be-besties--blue-octagon": {
+   "keep": "let-s-be-besties--blue-octagon-pattern-no-53",
+   "why": "same mat listed twice: Blue Octagon Pattern no. 53 = Blue Octagon (the card already in the gallery is kept)",
+   "keep_in_v5": true,
+   "drop_in_v5": false
+  }
+ },
+ "not_dupes": [
+  [
+   "let-s-be-besties--apres-skiing-in-teal",
+   "let-s-be-besties--apres-skiing-in-teal-with-skiers"
+  ],
+  [
+   "let-s-be-besties--festive-frost",
+   "let-s-be-besties--winter-jewel"
+  ],
+  [
+   "yolo-mahjong--ivory-scroll",
+   "yolo-mahjong--loop-border"
+  ]
+ ]
+}

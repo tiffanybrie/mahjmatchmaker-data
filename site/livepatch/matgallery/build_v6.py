@@ -38,12 +38,15 @@ VER = re.search(r'fym-(v\d+)', os.path.abspath(IDX)).group(1)
 log = lambda *a: print(*a, file=sys.stderr)
 h = open(IDX).read(); i = h.index('const D=') + 8; D, _ = json.JSONDecoder().raw_decode(h, i); M = D['mats']
 
-# --- 0. extra rows: fill img_commit PENDING from git (the commit that added assets/mats/gallery/<img>.webp) ---
+# --- 0. extra rows: fill img_commit PENDING from git (the last commit that changed assets/mats/gallery/<img>.webp) ---
 XP = REPO + 'config/mat-gallery-extra-rows.json'
 X = json.load(open(XP)); fixed = 0
 for a in X['rows']:
     if a.get('img_commit') == 'PENDING':
-        c = subprocess.run(['git', '-C', REPO, 'log', '--diff-filter=A', '--format=%H', '-1', '--', f"assets/mats/gallery/{a['img']}.webp"], capture_output=True, text=True).stdout.strip()
+        _p = f"assets/mats/gallery/{a['img']}.webp"
+        if subprocess.run(['git', '-C', REPO, 'status', '--porcelain', '--', _p], capture_output=True, text=True).stdout.strip():
+            sys.exit(f"build_v6: {_p} has uncommitted changes: commit + push the gallery_sync.py webps first, then rebuild")
+        c = subprocess.run(['git', '-C', REPO, 'log', '--format=%H', '-1', '--', _p], capture_output=True, text=True).stdout.strip()  # LAST commit that changed it (a re-picked photo gets a new pin)
         if not c: sys.exit(f"build_v6: {a['img']}.webp is not committed yet: commit the gallery_sync.py webps first, then rebuild")
         a['img_commit'] = c; fixed += 1
 if fixed:
@@ -124,6 +127,42 @@ for r in G:
         r[3], st = AA.autoapply(r[3])
         b = stats['autoapply'].setdefault(r[2], {}); b[st] = b.get(st, 0) + 1
 
+# --- 2b. duplicate photos (config/mat-gallery-dedupe-v6.json, Claude photo review; Oct 20 dedupe style): drop the twin, keep one card,
+# note under the name (row field 14, e.g. 'Also available in leatherette'), optional second shop link (field 15: [label, url]).
+# A pHash + colour sweep flags NEW look-alike pairs that are neither merged nor listed as not_dupes (v6_counts.json 'dupe_candidates').
+DUP = json.load(open(REPO + 'config/mat-gallery-dedupe-v6.json'))
+GI = {r[0]: r for r in G}
+for d_, m_ in DUP['merge'].items():
+    k_ = GI.get(m_['keep'])
+    if d_ not in GI or k_ is None: continue
+    while len(k_) < 16: k_.append(0 if len(k_) < 14 else '')
+    if m_.get('note'): k_[14] = m_['note']
+    if m_.get('shop2') and not k_[4]:
+        k_[15] = [m_['shop2'][0], AA.autoapply(GI[d_][3] or m_['shop2'][1])[0]]
+stats['dupes_merged'] = sorted(f"{GI[d_][2]} | {GI[d_][1]} -> {GI[m_['keep']][1]}" for d_, m_ in DUP['merge'].items() if d_ in GI and m_['keep'] in GI)
+G = [r for r in G if not (r[0] in DUP['merge'] and DUP['merge'][r[0]]['keep'] in GI)]
+for r in G:
+    while len(r) < 16: r.append(0 if len(r) < 14 else '')
+try:
+    import numpy as _np
+    from PIL import Image as _Im
+    from scipy.fft import dctn as _dct
+    _ok = {tuple(sorted(p_)) for p_ in DUP.get('not_dupes', [])}
+    _H, _C, _ids = [], [], []
+    for r in G:
+        _f = REPO + f'assets/mats/gallery/{r[0]}.webp'
+        if not os.path.exists(_f): continue
+        _a = _np.asarray(_Im.open(_f).convert('L').resize((32, 32)), float); _d = _dct(_a, norm='ortho')[:8, :8]
+        _H.append((_d > _np.median(_d)).ravel()); _C.append(_np.asarray(_Im.open(_f).convert('RGB').resize((8, 8)), float)); _ids.append(r[0])
+    _H, _C = _np.array(_H), _np.array(_C); cand = []
+    for i_ in range(len(_ids)):
+        for j_ in _np.where((_H[i_ + 1:] != _H[i_]).sum(1) <= 12)[0] + i_ + 1:
+            if _np.abs(_C[i_] - _C[j_]).mean() < 8 and tuple(sorted((_ids[i_], _ids[j_]))) not in _ok: cand.append([_ids[i_], _ids[j_]])
+    stats['dupe_candidates'] = cand
+    if cand: log(f'WARNING: {len(cand)} look-alike photo pairs not reviewed (v6_counts.json dupe_candidates): merge them or list them as not_dupes in config/mat-gallery-dedupe-v6.json')
+except Exception as _e:
+    stats['dupe_candidates'] = f'sweep did not run: {_e}'
+
 # --- 3. HTML: data, sold-out pill, stamp ---
 # The rows (~1,500 mats, ~430 KB) live in data/matgallery-<ver>.json, loaded from jsDelivr pinned at --data-commit, so the
 # Squarespace code block stays small (~60 KB). Without --data-commit (local preview) the rows are inlined as before.
@@ -150,7 +189,12 @@ OLD_IMG = "return '<li class=\"mmg-card\" data-b=\"'"
 assert OLD_IMG in out
 out = out.replace("var img='<img src=", "var img=(x[13]&&!x[4]?'<em class=\"mmg-pill\">Sold out</em>':'')+'<img src=", 1)
 out = out.replace(OLD_IMG, "return '<li class=\"mmg-card'+(x[13]&&!x[4]?' is-sold':'')+'\" data-b=\"'", 1)
-CSS6 = '.mmg-img{position:relative}.mmg-pill{position:absolute;top:8px;left:8px;z-index:2;background:#9a8f86;color:#fff;font-style:normal;font-weight:700;font-size:10px;line-height:1;letter-spacing:.12em;text-transform:uppercase;padding:5px 9px;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.18);pointer-events:none}.mmg-card.is-sold .mmg-img img{opacity:.82}\n'
+OLD_NAME = "'<span class=\"mmg-name\">'+esc(x[1])+'</span>'"
+assert OLD_NAME in out, 'card name markup changed'
+out = out.replace(OLD_NAME, OLD_NAME + "+(x[14]?'<span class=\"mmg-also\">'+esc(x[14])+'</span>':'')", 1)
+out = out.replace("+shop+'</div></li>'", "+shop+(x[15]&&x[15][1]&&!x[4]?'<a class=\"mmg-shop mmg-shop2\" href=\"'+esc(x[15][1])+'\" target=\"_blank\" rel=\"sponsored noopener\">'+esc(x[15][0])+'</a>':'')+'</div></li>'", 1)
+assert 'mmg-shop2' in out, 'card end markup changed'
+CSS6 = '.mmg-also{display:block;font-size:.82em;color:#6f655d;font-style:italic;margin-top:.15em}.mmg-shop2{margin-top:2px!important;padding-top:2px!important;font-size:.78em!important}.mmg-img{position:relative}.mmg-pill{position:absolute;top:8px;left:8px;z-index:2;background:#9a8f86;color:#fff;font-style:normal;font-weight:700;font-size:10px;line-height:1;letter-spacing:.12em;text-transform:uppercase;padding:5px 9px;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.18);pointer-events:none}.mmg-card.is-sold .mmg-img img{opacity:.82}\n'
 out = out.replace('</style>', CSS6 + '</style>', 1)
 out = out.replace('<div class="mmg">', f'<div class="mmg" data-fym="{VER}">', 1)
 out = f'<!--mmg-fym:{VER} built by site/livepatch/matgallery/build_v6.py from Find Your Mat-ch {VER}; gate [159b]-->\n' + out

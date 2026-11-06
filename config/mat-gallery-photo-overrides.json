@@ -1,0 +1,321 @@
+{
+ "by": "claude-photo-review",
+ "date": "2026-11-06",
+ "about": "Mat Gallery photo overrides (gallery_sync.py uses these instead of the FYM pack photo). src = repo path or URL; crop = fractions [x0,y0,x1,y1]. Never upscaled.",
+ "mats": {
+  "mahjpit.co/flower-shop": {
+   "src": "assets/launches/mahjpit-flower-shop/04.jpg",
+   "why": "whole mat (edge visible) with racks"
+  },
+  "mahjpit.co/seaside-game-mat": {
+   "src": "assets/launches/mahjpit-seaside-game-mat/04.jpg",
+   "crop": [
+    0.2,
+    0.02,
+    0.99,
+    0.97
+   ],
+   "why": "whole mat on a table, cropped to the mat"
+  },
+  "mahjpit.co/the-butterfly-dolly-mat": {
+   "src": "assets/launches/mahjpit-the-butterfly-dolly-mat/03.jpg",
+   "why": "whole mat (angled, edges visible)"
+  },
+  "mahjpit.co/the-line-mat-copy": {
+   "src": "assets/launches/mahjpit-the-line-mat-copy/02.jpg",
+   "why": "whole mat with racks"
+  },
+  "mahjpit.co/the-line-mat": {
+   "src": "assets/launches/mahjpit-the-line-mat/03.jpg",
+   "why": "mat with racks, edge visible"
+  },
+  "mahjpit.co/turkey-dinner-mat": {
+   "src": "assets/launches/mahjpit-turkey-dinner-mat/02.jpg",
+   "why": "whole mat with racks"
+  },
+  "mahjpit.co/paint-party-mat": {
+   "src": "assets/mats/v115/mahjpit-paint-party-mat.jpg",
+   "why": "FYM 1.15 photo (racks on a readable mat)"
+  },
+  "mahjpit.co/poppylicious-mat": {
+   "src": "assets/mats/v115/mahjpit-poppylicious-mat.jpg",
+   "why": "FYM 1.15 whole-mat photo"
+  },
+  "mahjpit.co/acid-in-the-library-may": {
+   "src": "assets/mats/v115/mahjpit-acid-in-the-library-may.jpg",
+   "why": "FYM 1.15 photo (racks on a readable mat)"
+  },
+  "mahjpit.co/primary-on-broughton": {
+   "src": "assets/mats/v115/mahjpit-primary-on-broughton.jpg",
+   "why": "FYM 1.15 whole-mat photo"
+  },
+  "mahjpit.co/deep-blue-mat": {
+   "src": "assets/launches/mahjpit-deep-blue-mat/04.jpg",
+   "why": "solid mat, corner with edge (solid = lower bar)"
+  },
+  "mahjpit.co/all-vibes-mat": {
+   "src": "assets/launches/mahjpit-all-vibes-mat/03.jpg",
+   "why": "mat with edge, no rack covering it"
+  },
+  "www.etsy.com/listing/4589473769/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8630882946_mxcu.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4529665568/mahjong-mat-non-slip-tabletop-mat-herbal": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8238581965_czo6.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4559186456/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8406373356_j6kf.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4557223507/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8392529194_fu80.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4526609807/mahjong-mat-dark-wood-butterfly-funginon": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8168803084_27fp.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4549519810/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8384442001_h56c.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4548904608/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8332127984_794z.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4547279166/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8368450967_iut9.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4546673909/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8316415302_rnrb.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4546686178/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8364298545_24rv.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4574925306/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8520746714_ieii.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4571747551/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8545238307_d8p7.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4530808773/mahjong-mat-non-slip-tabletop-mat": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8246974545_2onb.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4590227066/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8636519160_93bh.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4571764912/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8497347066_m63s.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4540678803/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8321363087_jyzg.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4547276996/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8320540624_7deo.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4591687944/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8695770971_de8v.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4581591001/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8618443989_cgpj.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4548889339/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8332117680_2mxc.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4544761281/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8302928022_dki7.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4531322993/mahjong-mat-non-slip-tabletop-mat-lotus": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8202757136_44x3.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4573770797/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8560158251_2ypw.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4545375717/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8355066703_86zp.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4556179040/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8384631122_4ei4.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  },
+  "www.etsy.com/listing/4544774758/mahjong-mat-non-slip-tabletop-mat-home": {
+   "src": "https://i.etsystatic.com/x/il_fullxfull.8302906460_kk3m.jpg",
+   "crop": [
+    0.125,
+    0.167,
+    0.875,
+    0.81
+   ],
+   "why": "Etsy listing photo at full size (2000px; was 450x386), same crop as FYM"
+  }
+ }
+}

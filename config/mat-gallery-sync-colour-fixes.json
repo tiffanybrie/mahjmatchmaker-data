@@ -1,0 +1,44 @@
+{
+ "by": "claude-photo-review",
+ "date": "2026-11-06",
+ "about": "Mat Gallery colour fixes for FYM-synced rows (gallery_sync.py): secs replace the mapped FYM colours. Never used to move a holiday-tagged mat OUT of Holiday (her call).",
+ "mats": {
+  "letsbebesties.com/evil-eye-neoprene-mahjong-mat": {
+   "secs": [
+    "pink",
+    "teal",
+    "neutral"
+   ],
+   "why": "rose + teal on cream (FYM orange is a misread)"
+  },
+  "bougiemahjong.com/blue-porcelain-estate-mahjong-mat": {
+   "secs": [
+    "blue",
+    "neutral"
+   ],
+   "why": "blue-and-white porcelain on ivory; no yellow/orange"
+  },
+  "brittmillsdesign.com/flourish-neoprene-mahjong-mat": {
+   "secs": [
+    "purple",
+    "pink",
+    "dark"
+   ],
+   "why": "magenta/purple florals on a dark ground, slate centre"
+  },
+  "www.yolomahjong.com/plum-scallop-mahjong-mat": {
+   "secs": [
+    "neutral",
+    "purple",
+    "simple"
+   ],
+   "why": "cream solid centre with a plum scalloped border; no orange"
+  },
+  "letsbebesties.com/ohbon-studios-artist-collab-mahjong-mat": {
+   "secs": [
+    "holiday"
+   ],
+   "why": "Christmas tree + poinsettia in the photo (moving INTO Holiday is allowed when the photo clearly shows Christmas)"
+  }
+ }
+}
