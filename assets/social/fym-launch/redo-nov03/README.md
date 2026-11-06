@@ -1,4 +1,7 @@
-# Find Your Mat-ch launch reel REDO (Nov 3 2026)
+# Find Your Mat-ch launch reel REDO (Nov 3 2026; RE-CUT Nov 6: Mahjong Row & Co. removed)
+
+**Nov 6 re-cut (Tiffany 5:35pm, Mahjong Row out):** ♥ Midnight Garden (Mahjong Row) -> ♥ Knox (Britt Mills, her real Sunday pick), same timing; match-card wall: 4 cards swapped (Cypress x Legacy, Heritage 2.0 x Midnight Garden, Talulah x Flirty Leopards w/ MR rack, Smith x Ivy Reverie -> Amara x Rally in Pink, Solara x Wren Watercolor Floral, Jasmine x The Dahlia, Pippa x Fruit Stand); depth wall excludes Mahjong Row/YMI/Mahjong Co.; end-card logo ticker drops Mahjong Row + YMI; @mahjongrowandco off Tag people (+ @brittmillsdesign @mahj_mood @wrenmats). Cover unchanged (navy 'is HERE.'). Planoly reminder draft Sat 11/7 (group 01a1b30e-67a2-717f-975c-f1af45e93dcb). Known residual: the ORIGINAL 12.15-16.6s catalog wall (800+ tiny thumbnails, no names/logos, from the Oct 27 cut) was not rebuilt.
+
 Swap-in for the Oct 27 launch post, to be **pinned at the top of Reels** (replaces the old one). Song: **Dancing On My Own**, 58.0s.
 Not published anywhere. Built on app **v113** (/find-your-match = fym-v113, app @3c0b8ceb), 2x screen recordings, mc/ routing fix.
 
@@ -28,7 +31,7 @@ Not published anywhere. Built on app **v113** (/find-your-match = fym-v113, app 
 | 24.06 | **Start with your tiles**: tap Start with tiles, type Sunday, tap Sunday | new, rec0 |
 | 26.76 | **Swipe the mats**: ♥ Brownstone Bloom (Anders Ruff) lands **27.71** on "watching you kiss her" | new, recA |
 | 29.46 | ✕ Chinoiserie Songbird (Mahj & Vine) stamp 30.24, card flies 30.31, card flies left | recA |
-| 31.62 | ♥ Carson Vintage (Ozark) 32.00, ♥ Midnight Garden (Mahjong Row) 32.75, deck ends ("That's all the mats...") and the 3 suitors show | recA |
+| 31.62 | ♥ Carson Vintage (Ozark) 32.00, ♥ Knox (Britt Mills) 32.75, deck ends ("That's all the mats...") and the 3 suitors show | recA |
 | 33.40 | **Pick your favorite**: "Which suitor is the one?" tap Brownstone Bloom | recP |
 | 36.06 | **Add racks**: + + zoom on the mat, tap Wood, ✕ Teal Wood, ♥ Bam Bird Walnut, ♥ PLM Oak, deck ends | recB |
 | 40.03 | match card (Story 9:16, full) with a gentle push: **See it together, share it or shop it** | storycard |
