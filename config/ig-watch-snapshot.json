@@ -1,0 +1,561 @@
+{
+ "seen": {
+  "18075585296732752": {
+   "h": "ohmymahjong",
+   "ts": "2026-11-06T12:00:06Z",
+   "kind": "drop date"
+  },
+  "18147824242590734": {
+   "h": "ohmymahjong",
+   "ts": "2026-11-05T12:00:06Z",
+   "kind": "other"
+  },
+  "18202415344379845": {
+   "h": "ohmymahjong",
+   "ts": "2026-11-04T19:32:33Z",
+   "kind": "sale"
+  },
+  "18161623078506694": {
+   "h": "ohmymahjong",
+   "ts": "2026-11-04T12:00:00Z",
+   "kind": "other"
+  },
+  "17915657967537626": {
+   "h": "ohmymahjong",
+   "ts": "2026-11-03T12:05:00Z",
+   "kind": "preorder"
+  },
+  "17916227760281818": {
+   "h": "ohmymahjong",
+   "ts": "2026-11-02T16:00:00Z",
+   "kind": "preorder"
+  },
+  "18119974234768530": {
+   "h": "ohmymahjong",
+   "ts": "2026-11-01T12:03:25Z",
+   "kind": "other"
+  },
+  "18566632402074921": {
+   "h": "ohmymahjong",
+   "ts": "2026-10-31T11:00:00Z",
+   "kind": "other"
+  },
+  "18020093519740163": {
+   "h": "ohmymahjong",
+   "ts": "2026-10-31T01:00:00Z",
+   "kind": "other"
+  },
+  "18091613054302307": {
+   "h": "ohmymahjong",
+   "ts": "2026-10-30T11:00:07Z",
+   "kind": "other"
+  },
+  "17927522559202665": {
+   "h": "missmahjongofficial",
+   "ts": "2026-11-05T16:00:05Z",
+   "kind": "drop date"
+  },
+  "18011426490005363": {
+   "h": "missmahjongofficial",
+   "ts": "2026-11-02T18:22:15Z",
+   "kind": "launch"
+  },
+  "17895996480607489": {
+   "h": "missmahjongofficial",
+   "ts": "2026-09-24T19:34:27Z",
+   "kind": "preorder"
+  },
+  "18116773967019913": {
+   "h": "bambirdboutique",
+   "ts": "2026-11-05T20:47:19Z",
+   "kind": "drop date"
+  },
+  "18113637020096687": {
+   "h": "bambirdboutique",
+   "ts": "2026-11-04T21:24:44Z",
+   "kind": "other"
+  },
+  "18144609847522263": {
+   "h": "bambirdboutique",
+   "ts": "2026-11-04T15:23:58Z",
+   "kind": "restock"
+  },
+  "18645721708024042": {
+   "h": "bambirdboutique",
+   "ts": "2026-11-03T15:43:49Z",
+   "kind": "restock"
+  },
+  "18095048132187114": {
+   "h": "bambirdboutique",
+   "ts": "2026-11-02T18:40:21Z",
+   "kind": "other"
+  },
+  "18079443920417147": {
+   "h": "bambirdboutique",
+   "ts": "2026-11-01T14:00:03Z",
+   "kind": "other"
+  },
+  "17881087881632562": {
+   "h": "myfairmahjong",
+   "ts": "2026-11-06T16:46:25Z",
+   "kind": "preorder"
+  },
+  "18033852296885146": {
+   "h": "myfairmahjong",
+   "ts": "2026-11-04T22:25:23Z",
+   "kind": "launch"
+  },
+  "17988708543083387": {
+   "h": "myfairmahjong",
+   "ts": "2026-11-04T20:49:42Z",
+   "kind": "other"
+  },
+  "18110530937629181": {
+   "h": "myfairmahjong",
+   "ts": "2026-11-03T15:27:06Z",
+   "kind": "other"
+  },
+  "17900599056674457": {
+   "h": "myfairmahjong",
+   "ts": "2026-10-31T14:18:13Z",
+   "kind": "other"
+  },
+  "18108287585340452": {
+   "h": "myfairmahjong",
+   "ts": "2026-10-28T20:24:02Z",
+   "kind": "launch"
+  },
+  "18136242691729996": {
+   "h": "charlestonmahjongclub",
+   "ts": "2026-11-05T20:02:36Z",
+   "kind": "other"
+  },
+  "18037005659850681": {
+   "h": "charlestonmahjongclub",
+   "ts": "2026-11-02T16:24:48Z",
+   "kind": "collab"
+  },
+  "18126867664931552": {
+   "h": "charlestonmahjongclub",
+   "ts": "2026-11-01T13:35:36Z",
+   "kind": "preorder"
+  },
+  "18247632508315690": {
+   "h": "charlestonmahjongclub",
+   "ts": "2026-10-30T20:48:37Z",
+   "kind": "restock"
+  },
+  "18357588793216086": {
+   "h": "charlestonmahjongclub",
+   "ts": "2026-10-27T17:38:51Z",
+   "kind": "preorder"
+  },
+  "18098142446216334": {
+   "h": "charlestonmahjongclub",
+   "ts": "2026-10-26T19:17:50Z",
+   "kind": "drop date"
+  },
+  "18120656888088979": {
+   "h": "middleandmainmahjong",
+   "ts": "2026-11-06T17:12:20Z",
+   "kind": "launch"
+  },
+  "18142501756615505": {
+   "h": "middleandmainmahjong",
+   "ts": "2026-11-05T10:30:04Z",
+   "kind": "launch"
+  },
+  "17990031534116191": {
+   "h": "middleandmainmahjong",
+   "ts": "2026-11-05T04:25:50Z",
+   "kind": "other"
+  },
+  "18058655936595870": {
+   "h": "middleandmainmahjong",
+   "ts": "2026-11-03T10:30:04Z",
+   "kind": "launch"
+  },
+  "18000826493826822": {
+   "h": "andersruffdesignco",
+   "ts": "2026-11-06T17:00:53Z",
+   "kind": "launch"
+  },
+  "18652509199013425": {
+   "h": "andersruffdesignco",
+   "ts": "2026-11-05T15:02:00Z",
+   "kind": "other"
+  },
+  "18093049181679466": {
+   "h": "andersruffdesignco",
+   "ts": "2026-11-04T15:28:02Z",
+   "kind": "launch"
+  },
+  "18150756676562590": {
+   "h": "andersruffdesignco",
+   "ts": "2026-11-04T14:02:09Z",
+   "kind": "other"
+  },
+  "17952339153057545": {
+   "h": "peacelovemahjong",
+   "ts": "2026-11-06T12:00:04Z",
+   "kind": "sale"
+  },
+  "17929048032428459": {
+   "h": "peacelovemahjong",
+   "ts": "2026-11-06T00:05:07Z",
+   "kind": "other"
+  },
+  "18172279777492507": {
+   "h": "peacelovemahjong",
+   "ts": "2026-11-05T00:10:05Z",
+   "kind": "launch"
+  },
+  "18081168320429538": {
+   "h": "peacelovemahjong",
+   "ts": "2026-11-04T00:05:02Z",
+   "kind": "other"
+  },
+  "18181344226428999": {
+   "h": "mahj_mood",
+   "ts": "2026-11-05T15:55:04Z",
+   "kind": "other"
+  },
+  "18343616860276887": {
+   "h": "mahj_mood",
+   "ts": "2026-11-05T15:03:39Z",
+   "kind": "other"
+  },
+  "17932163916420006": {
+   "h": "mahj_mood",
+   "ts": "2026-11-04T13:46:10Z",
+   "kind": "preorder"
+  },
+  "18044722520827071": {
+   "h": "mahj_mood",
+   "ts": "2026-10-29T18:15:49Z",
+   "kind": "other"
+  },
+  "18648682627016653": {
+   "h": "bespoke_mahjong",
+   "ts": "2026-11-05T20:51:37Z",
+   "kind": "other"
+  },
+  "18153383743555287": {
+   "h": "bespoke_mahjong",
+   "ts": "2026-11-05T04:48:51Z",
+   "kind": "launch"
+  },
+  "18101229839552279": {
+   "h": "bespoke_mahjong",
+   "ts": "2026-11-03T16:42:22Z",
+   "kind": "drop date"
+  },
+  "18236522848323619": {
+   "h": "bespoke_mahjong",
+   "ts": "2026-11-03T14:02:57Z",
+   "kind": "drop date"
+  },
+  "18162856819499591": {
+   "h": "brittmillsdesign",
+   "ts": "2026-10-20T10:53:06Z",
+   "kind": "other"
+  },
+  "18113212235122842": {
+   "h": "brittmillsdesign",
+   "ts": "2026-10-15T17:18:22Z",
+   "kind": "other"
+  },
+  "17882073768627556": {
+   "h": "bird_and_bamboo",
+   "ts": "2026-10-27T18:20:52Z",
+   "kind": "restock"
+  },
+  "17994768686840759": {
+   "h": "bird_and_bamboo",
+   "ts": "2026-10-12T23:08:52Z",
+   "kind": "launch"
+  },
+  "18100007120649314": {
+   "h": "mahj_squad",
+   "ts": "2026-10-22T23:11:08Z",
+   "kind": "preorder"
+  },
+  "18156657955464072": {
+   "h": "mahj_squad",
+   "ts": "2026-10-19T21:13:55Z",
+   "kind": "launch"
+  },
+  "18104839961565840": {
+   "h": "viroramahjongofficial",
+   "ts": "2026-11-06T17:00:04Z",
+   "kind": "drop date"
+  },
+  "17949312864345849": {
+   "h": "viroramahjongofficial",
+   "ts": "2026-11-05T01:00:12Z",
+   "kind": "other"
+  },
+  "18170135401467009": {
+   "h": "viroramahjongofficial",
+   "ts": "2026-10-22T00:00:15Z",
+   "kind": "other"
+  },
+  "17907867690584181": {
+   "h": "macmillermahjong",
+   "ts": "2026-10-24T21:38:27Z",
+   "kind": "other"
+  },
+  "18137540596652520": {
+   "h": "macmillermahjong",
+   "ts": "2026-10-24T13:32:42Z",
+   "kind": "other"
+  },
+  "18134052040757945": {
+   "h": "minimahjer",
+   "ts": "2026-11-06T13:00:06Z",
+   "kind": "other"
+  },
+  "18350253451249747": {
+   "h": "minimahjer",
+   "ts": "2026-11-04T13:00:05Z",
+   "kind": "other"
+  },
+  "18642951628032825": {
+   "h": "minimahjer",
+   "ts": "2026-10-29T13:00:05Z",
+   "kind": "other"
+  },
+  "17936022942146494": {
+   "h": "amandatoppeliving",
+   "ts": "2026-11-05T14:00:19Z",
+   "kind": "other"
+  },
+  "17967525420199638": {
+   "h": "amandatoppeliving",
+   "ts": "2026-11-04T18:40:32Z",
+   "kind": "preorder"
+  },
+  "18115261877056366": {
+   "h": "amandatoppeliving",
+   "ts": "2026-10-30T13:21:58Z",
+   "kind": "drop date"
+  },
+  "18444409102180538": {
+   "h": "bamletsmahjong",
+   "ts": "2026-11-06T15:10:07Z",
+   "kind": "drop date"
+  },
+  "18154480885532203": {
+   "h": "bamletsmahjong",
+   "ts": "2026-11-05T14:50:50Z",
+   "kind": "restock"
+  },
+  "17930528670182258": {
+   "h": "bamletsmahjong",
+   "ts": "2026-11-04T14:18:29Z",
+   "kind": "other"
+  },
+  "18093424658228419": {
+   "h": "maisonmahj",
+   "ts": "2026-11-04T14:30:15Z",
+   "kind": "preorder"
+  },
+  "17973198645188396": {
+   "h": "maisonmahj",
+   "ts": "2026-11-03T14:30:18Z",
+   "kind": "preorder"
+  },
+  "18168220483469119": {
+   "h": "maisonmahj",
+   "ts": "2026-11-01T14:59:07Z",
+   "kind": "preorder"
+  },
+  "18121191076974778": {
+   "h": "mahjandvine",
+   "ts": "2026-11-06T15:30:33Z",
+   "kind": "restock"
+  },
+  "17992499321859810": {
+   "h": "mahjandvine",
+   "ts": "2026-10-28T17:57:24Z",
+   "kind": "drop date"
+  },
+  "18427114705157913": {
+   "h": "amahjline",
+   "ts": "2026-11-05T13:43:33Z",
+   "kind": "drop date"
+  },
+  "18153589561542786": {
+   "h": "amahjline",
+   "ts": "2026-11-03T22:15:21Z",
+   "kind": "other"
+  },
+  "18113951494890717": {
+   "h": "amahjline",
+   "ts": "2026-11-03T02:12:36Z",
+   "kind": "other"
+  },
+  "18002081850031894": {
+   "h": "letsmahjon",
+   "ts": "2026-11-04T23:19:43Z",
+   "kind": "other"
+  },
+  "18122999281940160": {
+   "h": "letsmahjon",
+   "ts": "2026-11-02T20:51:04Z",
+   "kind": "drop date"
+  },
+  "18116970140005997": {
+   "h": "letsmahjon",
+   "ts": "2026-10-30T14:13:37Z",
+   "kind": "sale"
+  },
+  "18371412814208595": {
+   "h": "wrenmats",
+   "ts": "2026-10-01T16:19:55Z",
+   "kind": "launch"
+  },
+  "17999659328842241": {
+   "h": "themahjongpress",
+   "ts": "2025-12-01T22:27:07Z",
+   "kind": "other"
+  },
+  "17916457671471560": {
+   "h": "theroyalmahjongsociety",
+   "ts": "2026-11-03T14:05:26Z",
+   "kind": "other"
+  },
+  "18079962356543450": {
+   "h": "theroyalmahjongsociety",
+   "ts": "2026-10-30T13:54:50Z",
+   "kind": "launch"
+  },
+  "18166847989492820": {
+   "h": "theroyalmahjongsociety",
+   "ts": "2026-10-28T22:51:35Z",
+   "kind": "drop date"
+  },
+  "18080754014735141": {
+   "h": "letsbebestiesmahjong",
+   "ts": "2026-11-06T14:21:48Z",
+   "kind": "other"
+  },
+  "18063421652537626": {
+   "h": "letsbebestiesmahjong",
+   "ts": "2026-11-04T15:55:51Z",
+   "kind": "other"
+  },
+  "18097159859442618": {
+   "h": "letsbebestiesmahjong",
+   "ts": "2026-11-03T17:44:46Z",
+   "kind": "other"
+  },
+  "17994018591116467": {
+   "h": "soireeallday.co",
+   "ts": "2026-11-06T19:28:35Z",
+   "kind": "other"
+  },
+  "18421535140156352": {
+   "h": "soireeallday.co",
+   "ts": "2026-10-27T15:11:34Z",
+   "kind": "other"
+  },
+  "18390864169229886": {
+   "h": "soireeallday.co",
+   "ts": "2026-10-20T19:26:37Z",
+   "kind": "launch"
+  },
+  "18129847063777451": {
+   "h": "mahjong_co",
+   "ts": "2026-09-21T19:31:22Z",
+   "kind": "other"
+  },
+  "18131533813694903": {
+   "h": "tigre_de_tartan",
+   "ts": "2026-11-05T06:24:38Z",
+   "kind": "other"
+  },
+  "17885821983626240": {
+   "h": "tigre_de_tartan",
+   "ts": "2026-11-04T17:50:06Z",
+   "kind": "other"
+  },
+  "18108941123192915": {
+   "h": "tigre_de_tartan",
+   "ts": "2026-11-03T16:40:02Z",
+   "kind": "launch"
+  },
+  "18169319200472735": {
+   "h": "yolomahjong",
+   "ts": "2026-11-06T22:48:08Z",
+   "kind": "other"
+  },
+  "17900367549609072": {
+   "h": "yolomahjong",
+   "ts": "2026-11-06T02:10:41Z",
+   "kind": "other"
+  },
+  "17916981660548326": {
+   "h": "yolomahjong",
+   "ts": "2026-11-04T23:54:57Z",
+   "kind": "other"
+  },
+  "17966446707199087": {
+   "h": "nolijunemahjong",
+   "ts": "2026-11-05T13:11:06Z",
+   "kind": "sale"
+  },
+  "18098780045667512": {
+   "h": "nolijunemahjong",
+   "ts": "2026-11-04T13:49:19Z",
+   "kind": "sale"
+  },
+  "18131058520692820": {
+   "h": "nolijunemahjong",
+   "ts": "2026-11-01T15:00:02Z",
+   "kind": "launch"
+  },
+  "17976811014171076": {
+   "h": "mahjpit.co",
+   "ts": "2026-11-04T02:39:48Z",
+   "kind": "other"
+  },
+  "18235035229323855": {
+   "h": "mahjpit.co",
+   "ts": "2026-11-03T23:47:06Z",
+   "kind": "other"
+  },
+  "18166284103517711": {
+   "h": "mahjpit.co",
+   "ts": "2026-10-30T20:46:05Z",
+   "kind": "restock"
+  },
+  "17943552156382860": {
+   "h": "ozarkmahjongg",
+   "ts": "2026-11-06T16:17:50Z",
+   "kind": "other"
+  },
+  "17993837925063853": {
+   "h": "ozarkmahjongg",
+   "ts": "2026-11-04T16:16:23Z",
+   "kind": "other"
+  },
+  "17870677278659350": {
+   "h": "mahjtilehaus",
+   "ts": "2026-11-06T02:20:50Z",
+   "kind": "drop date"
+  },
+  "18109758347627448": {
+   "h": "mahjtilehaus",
+   "ts": "2026-10-29T12:49:27Z",
+   "kind": "other"
+  },
+  "17891086350619372": {
+   "h": "mahjtilehaus",
+   "ts": "2026-10-27T12:57:12Z",
+   "kind": "restock"
+  }
+ },
+ "first_run": "2026-11-06T23:19:21.794233+00:00",
+ "last_run": "2026-11-06T23:19:21.794233+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "_note": "Claude default, Tiffany to edit (Nov 6 2026). Major NON-partner brands whose launches matter to our users (we sell across brands). Only verified handles from config/social/ig-handles.json; null = not yet verified or not a public business account.",
+  "brands": [
+    {"brand": "Sunday Mahjong", "handle": "sunday_mahjong", "why": "allowed non-partner, personal favorite", "ig_ok": false, "note": "Planoly Business Discovery can't read it (private/personal account) - check in Chrome"},
+    {"brand": "Ozark Mahjongg", "handle": "ozarkmahjongg", "why": "allowed non-partner (whole line)", "ig_ok": true},
+    {"brand": "Mahj Tile Haus", "handle": "mahjtilehaus", "why": "matched mats (White Lotus, Imperial Lotus)", "ig_ok": true},
+    {"brand": "Tala Mahj", "handle": null, "why": "ShopMy favorites collection", "ig_ok": false, "note": "handle not verified yet"},
+    {"brand": "Luxe", "handle": null, "why": "The Polo Club works-for-holiday mat", "ig_ok": false, "note": "handle not verified yet"},
+    {"brand": "LoveShackFancy", "handle": "loveshackfancy", "why": "OMM collab (Coquette tiles)", "ig_ok": null, "note": "fashion brand; only mahj collabs matter"},
+    {"brand": "Mahjong Moxie", "handle": "mahjongmoxie", "why": "allowed mats (Duck Camp, Heron Landing)", "ig_ok": null},
+    {"brand": "Hutch & Nook", "handle": "hutchandnook", "why": "matched mats only", "ig_ok": null},
+    {"brand": "Bougie Mahjong", "handle": "bougiemahjong", "why": "popular brand", "ig_ok": null},
+    {"brand": "Piper Chase Studios", "handle": "piperchasestudios", "why": "popular brand", "ig_ok": null},
+    {"brand": "Sweet Jojo Mahjong", "handle": null, "why": "affiliate application pending (W-9)", "ig_ok": null}
+  ]
+}
