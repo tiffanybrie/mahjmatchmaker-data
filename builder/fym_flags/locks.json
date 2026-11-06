@@ -19611,7 +19611,7 @@
    "f": "m/1927.webp",
    "th": "mte8e924f9",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "blue",
     "dark",
@@ -19629,7 +19629,7 @@
    "f": "m/1928.webp",
    "th": "mt4f1be80e",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "green",
     "yellow",
@@ -19649,7 +19649,7 @@
    "f": "m/1929.webp",
    "th": "mt1fd7f6ad",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "dark"
    ],
@@ -19663,7 +19663,7 @@
    "f": "m/1930.webp",
    "th": "mt255dc402",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "yellow",
     "red",
@@ -19685,7 +19685,7 @@
    "f": "m/1926.webp",
    "th": "mtc0c897df",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "dark",
     "red"
@@ -19701,7 +19701,7 @@
    "f": "m/1931.webp",
    "th": "mtb718c272",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "dark"
    ],
@@ -19865,7 +19865,7 @@
    "f": "m/1169.webp",
    "th": "4a00681aea",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "dark",
     "yellow"
@@ -19881,7 +19881,7 @@
    "f": "m/1166.webp",
    "th": "mtc226539f",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "neutral",
     "dark"
@@ -19897,7 +19897,7 @@
    "f": "m/1170.webp",
    "th": "mtd8e0c05f",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "dark",
     "neutral"
@@ -19913,7 +19913,7 @@
    "f": "m/1167.webp",
    "th": "mt13abb002",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "dark"
    ],
@@ -19927,7 +19927,7 @@
    "f": "m/1168.webp",
    "th": "mt0f5caffe",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "dark"
    ],
@@ -19941,7 +19941,7 @@
    "f": "m/1173.webp",
    "th": "mt74fe7221",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "dark",
     "red"
@@ -19957,7 +19957,7 @@
    "f": "m/1172.webp",
    "th": "mtc79703eb",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "green",
     "dark",
@@ -19975,7 +19975,7 @@
    "f": "m/1171.webp",
    "th": "ec7f846854",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "blue",
     "neutral",
@@ -19993,7 +19993,7 @@
    "f": "m/1165.webp",
    "th": "mtc48bf143",
    "rt": false,
-   "hid": false,
+   "hid": true,
    "mf": [
     "neutral",
     "dark"
@@ -36714,7 +36714,8 @@
   "2026-10-30 v105 partner sweep mats: Let's Be Besties Christmas Ribbon Rhapsody + Jingle Jungle Leatherette + Ornamental Charm (holiday)",
   "2026-10-30 v106 partner catalogs: YOLO Mahjong (63 mats) + Noli June (5 mats)",
   "2026-10-31 v108 non-partner brands: Bougie Mahjong + Mahj & Moon + Hutch & Nook whole lines",
-  "2026-10-31 v109 non-partner brands: Betty June & Jeannette + Piper Chase Studios (Etsy, ShopMy links)"
+  "2026-10-31 v109 non-partner brands: Betty June & Jeannette + Piper Chase Studios (Etsy, ShopMy links)",
+  "2026-11-06 Tiffany: Mahjong Row & Co. OUT of FYM (1:19pm) + every Mahjong Co. mat hidden, retired (3:56pm): hid=true on their 15 locked mats; Kaleidoscope tiles stay"
  ],
  "racks": {
   "mahjongrowandco.com/scalloped-deluxe-tortoise-rack": {
