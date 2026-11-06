@@ -47,5 +47,20 @@ A static copy of the live artifact `6epA9HuEdT32zUp79Qv3kd` (v69 = build fym-oct
 - `shots/`: the Playwright scripts that took the step screenshots from the local v69 build.
 - `code-block.html`: the previous agent's app-only block (rollback).
 
+## EVERY FYM RELEASE = 3 places (Nov 6 2026; Tiffany 1:22am: the Mat Gallery was not kept up, Dapper 2 still sold there after FYM retired it)
+1. **Artifact** 6epA9HuEdT32zUp79Qv3kd (claude.ai).
+2. **Website copy**: site-app/fym-vNN on fym-site-preview + the page-block pin at the top of this README, pasted on /find-your-match + /find-your-mat-ch-preview.
+3. **Mat Gallery /mahjong-mats**, rebuilt from the SAME build (site/livepatch/matgallery/README.md "v6"):
+   ```
+   python3 builder/fym_fix_nov06/autoapply_links.py <build> --write          # (before the gate) partner links auto-apply the code; gate [159]
+   python3 builder/fym_fix_nov06/gallery_sync.py <fym-site>/site-app/fym-vNN/index.html /home/claude/fym-site --write
+   python3 scripts/colors/build_accents.py
+   git add assets/mats/gallery config/mat-gallery-extra-rows.json config/mat-accent-colors.json && commit + push   # webps must be on GitHub first
+   cd site/livepatch/matgallery && python3 build_v6.py <fym-site>/site-app/fym-vNN/index.html > matgallery-v6.html
+   commit + push data/matgallery-vNN.json; then  python3 build_v6.py <same index.html> --data-commit <that sha> > matgallery-v6.html ; commit + push
+   ```
+   Warm the data URL + every card image (README v6), paste the block (README v6 paste steps), curl /mahjong-mats for `data-fym="vNN"`.
+`python3 builder/fym_gate.py <build> --release` FAILS ([159b]) until the staged AND the live gallery carry `data-fym="vNN"` of this release.
+
 ## Publish (Claude in Chrome)
 Your own tab → `https://hexaflexagon-denim-nhf4.squarespace.com/config` → Pages → the page → Edit → double-click the code block → CodeMirror 6: `const v=document.querySelector('.cm-editor .cm-content').cmTile.view; v.dispatch({changes:{from:0,to:v.state.doc.length,insert:html}})`. Get `html` with `await (await fetch('<pinned jsDelivr page-block.html>')).text()`; never retype it. Then Escape, Save, Exit. Verify with curl that the page contains `id="fymx"` and `site-app/fym-v72/index.html` (v72 = full app folder on fym-site-preview @ad0675e; BASE = the same folder). Editor tip: after Pages > page > Edit, wait ~8s until the section shows EDIT SECTION on hover, then double-click the block.

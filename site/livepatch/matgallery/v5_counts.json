@@ -922,18 +922,24 @@
    ]
   },
   "works_for_holiday": {
-   "oh-my-mahjong--dapper-2": [
-    "purple",
-    "dark"
-   ],
    "luxe-mahjong--the-polo-club": [
     "dark",
     "yellow"
    ],
-   "sunday-mahjong--rattan": [
-    "earthy"
+   "oh-my-mahjong--dapper-2": [
+    "purple",
+    "dark"
    ],
    "oh-my-mahjong--dapper-1-retired": [
+    "earthy"
+   ],
+   "tigre-de-tartan--estate-sale": [
+    "red",
+    "green",
+    "florals",
+    "brights"
+   ],
+   "sunday-mahjong--rattan": [
     "earthy"
    ]
   }
