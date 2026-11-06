@@ -1,7 +1,7 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-06T14:06:46+00:00",
- "fym_ref": "origin/fym-site-preview:site-app/fym-v115",
+ "swept_at": "2026-11-06T23:11:12+00:00",
+ "fym_ref": "origin/fym-site-preview:site-app/fym-v116",
  "stores": {
   "amahjline.com": {
    "brand": "Amahj",
@@ -915,7 +915,7 @@
   "charlestonmahjongclub.com": {
    "brand": "Charleston Mahjong Club",
    "status": "ok",
-   "products": 67,
+   "products": 71,
    "mats": [
     [
      "2026-08-28T08:23:55-04:00",
@@ -1271,7 +1271,7 @@
   "mahjongregister.com": {
    "brand": "Mahjong Register",
    "status": "ok",
-   "products": 74,
+   "products": 75,
    "mats": [
     [
      "2026-10-08T14:39:42-05:00",
@@ -1444,7 +1444,7 @@
   "mahjongrowandco.com": {
    "brand": "Mahjong Row & Co.",
    "status": "ok",
-   "products": 29,
+   "products": 31,
    "mats": [
     [
      "2026-10-05T15:00:47-05:00",
@@ -1900,7 +1900,7 @@
   "ohmymahjong.com": {
    "brand": "Oh My Mahjong",
    "status": "ok",
-   "products": 244,
+   "products": 246,
    "mats": [
     [
      "2026-11-03T08:01:13-06:00",
@@ -2456,7 +2456,7 @@
   "tigredetartan.com": {
    "brand": "Tigre de Tartan",
    "status": "ok",
-   "products": 125,
+   "products": 124,
    "mats": [
     [
      "2026-10-22T15:40:28-05:00",
@@ -2465,7 +2465,7 @@
     ],
     [
      "2026-10-22T13:34:12-05:00",
-     "Paige Spearin ROUND Mahjong Mat, Après Mahj",
+     "Paige Spearin Mahjong Mat, Après Mahj, ROUND",
      "paige-spearin-mahjong-mat"
     ],
     [
@@ -2577,7 +2577,7 @@
    "missing": [
     [
      "2026-10-22T13:34:12-05:00",
-     "Paige Spearin ROUND Mahjong Mat, Après Mahj",
+     "Paige Spearin Mahjong Mat, Après Mahj, ROUND",
      "paige-spearin-mahjong-mat"
     ],
     [
@@ -2677,8 +2677,13 @@
   "letsbebesties.com": {
    "brand": "Let's Be Besties",
    "status": "ok",
-   "products": 555,
+   "products": 553,
    "mats": [
+    [
+     "2026-11-06T17:21:30-05:00",
+     "Pink Christmas Mahjong Mat",
+     "pink-christmas-mahjong-mat"
+    ],
     [
      "2026-11-03T11:43:12-05:00",
      "Tiger Stripes OHBoN Studios Artist Mahjong Mat",
@@ -4511,6 +4516,11 @@
     ]
    ],
    "missing": [
+    [
+     "2026-11-06T17:21:30-05:00",
+     "Pink Christmas Mahjong Mat",
+     "pink-christmas-mahjong-mat"
+    ],
     [
      "2026-11-01T16:29:11-05:00",
      "Camellia Kaleidoscope OHBoN Studios Artist Mahjong Mat",

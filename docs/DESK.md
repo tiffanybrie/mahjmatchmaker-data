@@ -37,7 +37,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **Main: OMM Juniper mentor presale** ends Fri 8am CT (live since Thu); FYM 1.15 has Juniper + Lotus Cove on the website. Public launch Wed Nov 11 10am CT: group post per the Papaya precedent.
 - **Main: launch reel redo** (assets/social/fym-launch/redo-nov03/launch-reel-redo.mp4, 58s) stays near the TOP of HQ Today (her Nov 4 2:31pm); on "send me the launch reel": file + swap/pin steps in chat; Claude does the FB Page.
 - **OPS: follow + favorite @mahjpit.co**, log in docs/IG-FAVORITES.md (new partner Nov 4).
-- **OPS: copy flat renders to Dropbox /Mahj Matchmaker Albums/New releases/<brand>/**: Nov 3 + Nov 2 leftovers (OMM Lotus Cove + Juniper, 8 LBB Nov 3 mats, Bespoke Glitter Glow Green + Sunshine Glow, Britt Mills Isla, LBB Electric ZigZag + Christmas Lights) and Nov 5 (assets/launches/mahjmood-playing-for-keeps-mat/ + -tiles/, middleandmain-clearwater-dockside-…/, macandmiller-laissez-…-perfectly-imperfect/ + macandmiller-sweet-dreams-…-copy/) and Nov 6 (assets/launches/faitamain-le-bandana-pink-green/, Fait à Main). Flat render first (01).
+- **OPS: copy flat renders to Dropbox /Mahj Matchmaker Albums/New releases/<brand>/**: Nov 3 + Nov 2 leftovers (OMM Lotus Cove + Juniper, 8 LBB Nov 3 mats, Bespoke Glitter Glow Green + Sunshine Glow, Britt Mills Isla, LBB Electric ZigZag + Christmas Lights) and Nov 5 (assets/launches/mahjmood-playing-for-keeps-mat/ + -tiles/, middleandmain-clearwater-dockside-…/, macandmiller-laissez-…-perfectly-imperfect/ + macandmiller-sweet-dreams-…-copy/) and Nov 6 (assets/launches/faitamain-le-bandana-pink-green/, Fait à Main; assets/launches/letsbebesties-pink-christmas-mahjong-mat/, Let's Be Besties; Splash Valentine mats assets/launches/splash-love-at-first-mahj-sweet-valentine-…/, splash-sweetness-youre-my-weakness-…/, splash-valentine-mahjong-mat-love-at-first-mahj-…/). Flat render first (01).
 - **OPS: minimahjer.com store-wide / Black Friday code check** (from Nov 3; curl 429).
 - **Main: GoAffPro order drop** follow-through in the REVENUE-WATCH (Mahj Mood recovering Thu night; Miss code doesn't apply to accessories: check our page says "tile sets" if that's their rule).
 - **Matches & Catalog: brand-lock FYM sample for Bird & Bamboo (Emily)**, hosted embed only (docs/brand-lock/STATUS.md).
@@ -156,7 +156,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **Bam Bird restock/brand announcement** teaser (IG Oct 30): same day or never.
 - **Amanda Toppe Lila**: full-size later = swipe book the day it lists (Oct 29).
 - **Table view later**: walls for pattern-back sets with no back photo, mats+tiles price filter, aerial photos from partners, Table view as a partner perk vs open to all (undecided, don't push) (Tiffany Nov 1).
-- **Splash of Color digest**: 4 undigested Splash mats; digest at 10+ (launch watch Nov 1).
+- **Splash of Color digest #3** (launch watch Nov 6 5:57pm): 11 mats built into an optional book https://claude.ai/artifact/SNED3mKhfnp41Y5m6BZEUS (on hq/albums); counter reset to 0. HQ doc hq/launches is at ~258 KB of the 256 KiB (262,144 B) cap: next run that adds items must archive old items (e.g. move pre-Oct 20 items to hq/launches-archive) first.
 - **FYM default tile-set order by brand logos + commission ranking** (Oct 29 3:29pm).
 - **Brand-locked FYM as a partner perk**, **brand demand data for partners**, **accounts** (Oct 29).
 - **Rakuten** skipped (Oct 29 11:17am).
