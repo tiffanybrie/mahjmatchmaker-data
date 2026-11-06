@@ -6,7 +6,7 @@ Usage: python3 build.py <commit sha> <out.html>"""
 import json, sys, html, os
 R = '/home/claude/mahjmatchmaker-data/'
 SHA, OUT = sys.argv[1], sys.argv[2]
-CDN = f'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@{SHA}/'
+CDN = '' if SHA == 'local' else f'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@{SHA}/'  # 'local' = relative paths (self-contained copy)
 e = html.escape
 P = json.load(open(R + 'config/profiles/juniper.json'))
 MAN = json.load(open(R + 'assets/cards/juniper/manifest.json'))['cards']
@@ -51,14 +51,17 @@ for title, sub, items in G:
                   f'<button class="heart" aria-pressed="false" aria-label="Pick {e(name)}">&#9829;</button></figure>')
     faces += f'<h3 class="fg">{e(title)} <small>{e(sub)}</small></h3><div class="fgrid{" sm" if small else ""}">{cards}</div>'
 carousel = ''.join(f'<div class="slide">{img(f"assets/social/juniper-launch/intro/{i}.jpg", f"Intro carousel slide {i}")}<span>{i}</span></div>' for i in range(1, 8))
-GROUPS = {'top': 'Top three', 'deep': 'Forest green + pink', 'bright': 'Pink &amp; green brights', 'chino': 'Chinoiserie gardens', 'soft': 'Soft', 'stone': 'Stone &amp; solid'}
+GROUPS = {'top': 'Top three', 'best': 'Among the best', 'deep': 'Forest green + pink', 'bright': 'Pink &amp; green brights', 'chino': 'Chinoiserie gardens',
+          'soft': 'Soft', 'stone': 'Stone &amp; solid', 'new': 'New candidate: your call', 'weak': 'Weak: yours to cut'}
+N = len(MAN)
 mc, cur = '', None
 for c in MAN:
     if c['group'] != cur:
         cur = c['group']; mc += f'<h3 class="fg">{GROUPS[cur]}</h3>'
     racks = ' · '.join(c['racks']) ; mr = ' · '.join(c['mat_racks'])
+    cn = f' · <span class=ret>{e(c["caption_note"])}</span>' if c['caption_note'] else ''
     mc += (f'<article class="mcard">{img("assets/cards/juniper/" + c["file"], "Juniper + " + c["mat"] + " match card")}'
-           f'<div class="mt"><p class="num">#{c["order"]}{" · <span class=ret>Retired</span>" if c["retired_mat"] else ""}{" · <span class=ret>Pair mat</span>" if c["caption_note"] else ""}</p>'
+           f'<div class="mt"><p class="num">#{c["order"]}{" · <span class=ret>Retired</span>" if c["retired_mat"] else ""}{cn}</p>'
            f'<h4>{e(c["mat"])}</h4><p class="bn">{e(c["brand"])}</p><p class="why">{e(c["why"])}</p>'
            f'<p class="rk"><b>Match the tiles:</b> {e(racks)}<br><b>Match the mat:</b> {e(mr)}</p></div></article>')
 HTML = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -104,42 +107,52 @@ ul{{padding-left:20px;margin:6px 0}}li{{margin:3px 0}}
 <p class="kick">Oh My Mahjong · launches Wed 11/11 · 10am CT</p>
 <h1>Juniper, the full album set</h1>
 <p class="lede">Everything for her album in one place. The one question for you is her <b>best features</b>: pick 4 faces below. Everything else is a draft until you OK the match order.</p>
-<nav><a href="#faces">1 · Pick her faces</a><a href="#cover">2 · Cover</a><a href="#colors">3 · Colors + theory</a><a href="#profile">4 · Profile + carousel</a><a href="#cards">5 · 33 match cards</a></nav>
+<nav><a href="#r3">What changed</a><a href="#faces">1 · Pick her faces</a><a href="#cover">2 · Cover</a><a href="#colors">3 · Colors + theory</a><a href="#profile">4 · Profile + carousel</a><a href="#cards">5 · {N} match cards</a></nav>
+<div class="note" id="r3"><p><b>Your round-3 notes, applied</b> (the rest of the page is still yours to review):</p><ul>
+<li>Order: Palm Royale #1, Garden Glow #2, Lotus Cove #3. Peonies Burst, Cherry Blossom Jade, Palm Beach Tropical Pink Lime and Zesty Plume moved up to &ldquo;Among the best&rdquo;.</li>
+<li>Out: Mahj In Bloom Mat and the Sunday mat (its real name is Sunday Premium Mahjong Mat, the mat Sunday Mahjong made for its own Sunday Tile Set).</li>
+<li>Esme and Emerald Leopard in Bloom are at the bottom under &ldquo;Weak&rdquo;, yours to cut. Oh My Mahjong Camellia (retired) added as a new candidate.</li>
+<li>Every match card now uses the tile pile photo, the current logo (flame with the heart) and racks drawn at their real length. The White Acrylic rack is a clean new cutout.</li>
+<li>Crane &amp; Moon and Day Dreamer cards rebuilt from the brands&rsquo; 3000px photos.</li>
+<li>Cover frame has the double white lines on top, like the other Oh My Mahjong covers. Color card says &ldquo;Seeking: hot pink, kelly or forest green.&rdquo;</li>
+<li>New profile prompt (Green flag I look for), the layer arrows are on the joker tile, and the color wheel now shows light and dark, so Forest Green Jade sits on dark green.</li>
+</ul></div>
 
 <h2 id="faces">Pick her 4 best features</h2>
 <p class="lede">Tap the heart on up to 4 faces (the two dragons can count as one pick, as a pair). Green border = Claude&rsquo;s pick. Tap a tile to zoom. When you&rsquo;re done, tap <b>Copy my picks</b> and paste it in the chat. Your picks are final: they never get swapped later.</p>
 {faces}
 
 <h2 id="cover">Album cover</h2>
-<p class="lede">Same style as Papaya Spritz, Coquette and the other Oh My Mahjong covers: her tile pile, forest green panel, white Oh My Mahjong logo.</p>
+<p class="lede">Same style as Papaya Spritz and the other Oh My Mahjong covers: her tile pile, forest green panel, white Oh My Mahjong logo, and the frame with the double white lines top and bottom.</p>
 {img('assets/covers/albums/00-juniper-mahjong-tiles-cover.jpg', 'Juniper Tiles album cover', 'big', False)}
 
 <h2 id="colors">Her colors + color theory</h2>
 <div class="two">{img('assets/colorcards/juniper/00-juniper-mahjong-tiles-color-guide-mobile.jpg', 'Juniper color card', 'big')}{img('assets/colorwheels/juniper-color-wheel.jpg', 'Juniper color wheel', 'big')}</div>
 <div class="note">
-<p><b>Clean, not earthy.</b> The back is dark, but it&rsquo;s a deep jewel green with a jade-look swirl, not a muddy or dusty one. The layers (chartreuse, teal) and faces (hot pink, coral, mint, gold) are all clear, saturated colors. Deep isn&rsquo;t earthy: she sits with Emerald and Jasmine, not with the earthy sets.</p>
+<p><b>Clean, not earthy.</b> The back is dark, but its color, Forest Green Jade, is a deep jewel green with a jade-look stone pattern, not a muddy or dusty one. The layers (chartreuse, teal) and faces (hot pink, coral, mint, gold) are all clear, saturated colors. Deep isn&rsquo;t earthy: she sits with Emerald and Jasmine, not with the earthy sets.</p>
 <p><b>A cool base, warm accents.</b> Forest green (140&deg;) and teal (172&deg;) are cool; chartreuse (74&deg;) leans warm. The warmth comes from the faces: coral (5&deg;) and gold (44&deg;). Her hot pink (330&deg;) is a cool, blue-leaning pink.</p>
-<p><b>Complementary.</b> Pink sits straight across the wheel from her greens. That&rsquo;s why a pink-and-green mat makes her pop, and why a mat that&rsquo;s all green reads tone on tone (moody, but the faces do the work).</p>
+<p><b>Complementary.</b> Pink sits straight across the wheel from her greens. That&rsquo;s why a pink-and-green mat makes her pop (a pink center, like Palm Royale, gives the most contrast), and why a mat that&rsquo;s all green reads tone on tone (moody, but the faces do the work).</p>
+<p><b>Light and dark.</b> The wheel shows light colors toward the center and dark ones toward the rim, with the full, clear color in between. That&rsquo;s why Forest Green Jade sits out near the edge, on dark green, while her hot pink and coral sit closer in.</p>
 <p><b>Mat colors that should work, strongest first:</b></p>
 <ul>
+<li>A pink center inside kelly green: the most contrast, her faces and layers at once (Palm Royale, Peonies Burst, Cherry Blossom Jade).</li>
 <li>Deep forest or emerald ground + pink florals: back and faces in one (Garden Glow, Botanical Jewel).</li>
-<li>Kelly green + hot pink brights: her faces and chartreuse layer (Palm Royale, Enchanted, Peonies Burst).</li>
-<li>Lime or chartreuse centers: the layer, turned up (Palm Beach Tropical Pink Lime).</li>
+<li>Lime or chartreuse centers: the layer, turned up (Palm Beach Tropical Pink Lime, Zesty Plume).</li>
 <li>Pink lotus and chinoiserie gardens: the art on her flowers (Lotus Cove, the Sophie Clima pagodas).</li>
 <li>Tone-on-tone emerald and stone: moody, the faces bring the pink (Emerald Cove, Green Malachite).</li>
 </ul>
 <p><b>Use with care:</b> aqua- or blue-led mats (she has no aqua), lilac and purple borders, and earthy sage, olive or tan greens (they read muddy next to her clean jewel tones).</p>
-<p><b>Odd in the photos:</b> Oh My Mahjong&rsquo;s single-tile shot runs brighter than the pile shot (teal reads aqua, chartreuse reads lime), so we use the pile values. The jade-look back isn&rsquo;t one flat color: the swirl runs from near-black to mid green, so match mats to its deep end. The &ldquo;red&rdquo; dragon is pink on this set.</p>
+<p><b>Odd in the photos:</b> Oh My Mahjong&rsquo;s single-tile shot runs brighter than the pile shot (teal reads aqua, chartreuse reads lime), so we use the pile values. The back isn&rsquo;t one flat color: its jade-look stone pattern runs from near-black to mid green, so match mats to its deep end. The &ldquo;red&rdquo; dragon is pink on this set.</p>
 </div>
 
 <h2 id="profile">Dating profile + intro carousel <span class="draft">DRAFT</span></h2>
-<p class="lede">Doc 81 format. Launch line &ldquo;Launching Wed 11/11 · Oh My Mahjong&rdquo;. Top 3: Garden Glow, Palm Royale, Lotus Cove; slide 6 &ldquo;Made for each other&rdquo; = Lotus Cove, the official pair. Slide 4 shows Claude&rsquo;s 4 faces until you pick. The match count (33) is this draft&rsquo;s count; it updates to your final album.</p>
+<p class="lede">Doc 81 format. Launch line &ldquo;Launching Wed 11/11 · Oh My Mahjong&rdquo;. Top 3: Palm Royale, Garden Glow, Lotus Cove; slide 6 &ldquo;Made for each other&rdquo; = Lotus Cove, the official pair. New third prompt: &ldquo;Green flag I look for: A pink center. Opposites attract.&rdquo; Slide 4 shows Claude&rsquo;s 4 faces until your picks go in. The match count ({N}) is this draft&rsquo;s count; it updates to your final album.</p>
 <div class="two">{img('assets/colorcards/juniper/00-juniper-mahjong-tiles-profile-d-story.jpg', 'Juniper dating profile story', 'big')}{img('assets/social/juniper-launch/juniper-favorite-tiles-DRAFT.jpg', 'Her best features draft graphic', 'big')}</div>
 <p class="lede">Intro carousel, 7 slides (swipe):</p>
 <div class="car">{carousel}</div>
 
-<h2 id="cards">33 match cards <span class="draft">DRAFT ORDER</span></h2>
-<p class="lede">Round-2 order with your Nov 5 notes (Garden Glow #1, Palm Royale #2, Lotus Cove #3; Esme + Enchanted in as Retired). Tile racks on every card (your Nov 6 call): Oh My Mahjong Hot Pink + Oh My Mahjong Agate, both the same OMM shape. Tell me the order and any cuts; the album page gets built from your order.</p>
+<h2 id="cards">{N} match cards <span class="draft">DRAFT ORDER</span></h2>
+<p class="lede">Your round-3 order: Palm Royale #1, Garden Glow #2, Lotus Cove #3, then the four you moved up. Camellia is a new candidate, and the two weak ones sit at the bottom for you to keep or cut. Tile racks on every card: Oh My Mahjong Hot Pink + Agate, both 18.5&Prime; and now drawn the same length.</p>
 {mc}
 </div>
 <div class="bar"><span id="cnt">Your picks: 0 of 4</span><button id="copy">Copy my picks</button></div>
