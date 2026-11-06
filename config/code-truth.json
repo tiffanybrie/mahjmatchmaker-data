@@ -36,9 +36,26 @@
  "removed_brands": {
   "Mahjong Row & Co.": {
    "since": "2026-11-06",
-   "why": "Tiffany Nov 6 1:19pm: no response from the brand; remove from the site completely, parked in archive/mahjong-row-parked-2026-11-06",
+   "why": "Tiffany Nov 6 1:19pm: no response from the brand; remove from the site completely, parked in archive/mahjong-row-parked-2026-11-06. Scope (Tiffany Nov 6 1:33pm): her existing album match cards/colour-card picks of their mats STAY, the Halloween table blog STAYS, their 9 Mat Gallery mats (all matched on her albums) STAY with no code claim; everything else goes.",
    "pattern": "mahjong ?row|mahjong-row|mahjongrow|cypress-forest|cypress forest",
-   "pct_when_parked": 10
+   "pct_when_parked": 10,
+   "removed_pages": [
+    "/mahjong-row-and-co-discount-code",
+    "/cypress-forest-mahjong-tile-matches"
+   ],
+   "allow_mentions": {
+    "/blog/halloween-mahjong-table": "Tiffany: keep (holiday content)",
+    "/mahjong-mats": "her 9 matched mats stay (no code claim)",
+    "/amara-mahjong-tile-matches": "album match cards stay",
+    "/gatsby-mahjong-tile-matches": "album match cards stay",
+    "/heritage-2-0-mahjong-tile-matches": "album match cards stay",
+    "/smith-mahjong-tile-matches": "album match cards stay",
+    "/osler-mahjong-tile-matches": "album match cards stay",
+    "/willow-mahjong-tile-matches": "album match cards stay",
+    "/sunday-tile-set-mahjong-tile-matches": "album match cards stay",
+    "/brownstone-bloom-mahjong-tile-matches": "album match cards stay"
+   },
+   "pct_claim_pattern": "Mahjong Row[^.<]{0,60}(\\d+% off|MAHJMATCH)"
   }
  }
 }

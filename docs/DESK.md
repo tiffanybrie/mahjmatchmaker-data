@@ -92,6 +92,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Fait à Main code | Main | MAHJMATCH still not applicable at cart. | Watch |
 
 ## Blocked, approved (raise at the top of every attended reply until done)
+- (Nov 6, Main) Mahjong Row & Co. OUT (Tiffany 1:19 + 1:33pm, approved, no more asks): Squarespace pages + FB group list per site/livepatch/mahjong-row-out-nov06/README.md (BLOCKED: Chrome not connected at 1:40pm). Matches & Catalog: FYM v116 = run builder/fym_fix_nov06/mr_out.py + gate [160] + QA + publish both copies. Parked copy: archive/mahjong-row-parked-2026-11-06. Done = live_codes_check PASS.
 - **Planoly roll-forward** (Main): the unattended desk run was refused `set_post_group_schedule` again tonight (2nd night). Priority 4a.
 - **IG EVERGREEN CODES POST** (Main, her plan Nov 4 3:55pm): draft in Planoly 01a1a859-bcb8 (caption has the Mahjong Row line restored, bf1e1b7); she taps Post. NOT on the FB Page.
 - **PAYOUT RECONCILE PASS 2** (Main): needs PayPal + each dashboard signed in. Kathrine Zell $3.15 Oct 15: Tiffany checking her email. Peace Love $402.88 gift-card payout = their Level 1 tier (store credit only; cash starts at Level 2 = $5K referred sales/month), NOT a GoAffPro setting (Main found Nov 5).

@@ -69,9 +69,17 @@ if RB:
     for u,h in allp:
         if not h: continue
         t=visible(h)
+        path=u.replace(ROOT,'') or '/'
         for b,o in RB.items():
+            if path in o.get('removed_pages',[]): continue
+            if path in o.get('allow_mentions',{}):  # mentions allowed (her old match cards, Halloween blog): only dead links + code claims fail
+                n=sum(t.count(f'href="{rp}') + t.count(f'href="{ROOT}{rp}') for rp in o.get('removed_pages',[]))
+                if n: fails.append(f"{path}: {n} link(s) to a hidden {b} page")
+                n=len(re.findall(o.get('pct_claim_pattern','$^'),t))
+                if n: fails.append(f"{path}: {b} still shown with a code/% ({n}x)")
+                continue
             n=len(re.findall(o['pattern'],t,flags=re.I))
-            if n: fails.append(f"{u.replace(ROOT,'')}: removed brand {b} still shows ({n}x)")
+            if n: fails.append(f"{path}: removed brand {b} still shows ({n}x)")
 fails=sorted(set(fails))
 print(f'LIVE CODES CHECK {today}: {len(pages)} brand pages + hub · ' + ('PASS' if not fails else f'FAIL ({len(fails)})'))
 for f in fails: print(' -',f)
