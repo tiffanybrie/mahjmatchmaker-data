@@ -514,6 +514,8 @@ def main():
             kind = 'blog'
         pages_out.append(['/' + s, title, kind, desc[:180], img, code, pct, brand])
 
+    mv = mat_views(mats, xs, albums, order, card_img, xpos)
+
     # ---- Thumbnails ----
     man_path = os.path.join(OUT, 'thumbs.json')
     try:
@@ -531,6 +533,16 @@ def main():
         if x[5] and 'jsdelivr' in x[5]:
             rel = 'x/' + re.sub(r'[^a-z0-9]+', '-', norm(x[1] + ' ' + x[0])).strip('-') + '.webp'
             jobs.append((rel, x[5], 200))
+    # All-matches grid: full-size jsDelivr match cards (360-550 KB) get a small webp; zoom keeps the full image.
+    # mat-cards.json card = [album ref, grid img ('~' Squarespace path / '@' thumb / url), fallback, full url if thumb]
+    import hashlib
+
+    def card_rel(u):
+        return 'c/' + hashlib.sha1(u.encode()).hexdigest()[:16] + '.webp'
+    for v in mv['out']['m'].values():
+        for c in v[5]:
+            if c[1].startswith('http') and 'jsdelivr' in c[1]:
+                jobs.append((card_rel(c[1]), c[1], 360))
     if do_thumbs:
         from PIL import Image
 
@@ -570,6 +582,11 @@ def main():
         for f in fails:
             print('  thumb FAIL', f[1], file=sys.stderr)
     have = set(k for k in man if os.path.exists(os.path.join(THUMBS, k)))
+    for v in mv['out']['m'].values():
+        for c in v[5]:
+            if c[1].startswith('http') and card_rel(c[1]) in have:
+                c.append(c[1])                      # [3] full card for zoom
+                c[1] = '@' + card_rel(c[1])         # [1] grid thumb under thumbs/
     # point album covers / album-only card images at their local thumb when we have one
     for a in albums:
         rel = 'a/' + a[0].strip('/').replace('#', '--') + '.webp'
@@ -585,6 +602,7 @@ def main():
     # near-duplicates (QA Nov 6): same brand, names equal after normalising or one is the other + a colourway word.
     # Album-only mats here need a line in config/search-mat-aliases.json (or search-card-variants.json).
     ents = [('m', m[1], m[2]) for m in mats] + [('x', x[0], x[1]) for x in xs]
+    not_dupes = set(json.load(open(ap)).get('not_duplicates', [])) if os.path.exists(ap) else set()
     dupes = []
     for p_ in range(len(ents)):
         for q_ in range(p_ + 1, len(ents)):
@@ -592,7 +610,7 @@ def main():
             if 'x' not in (a_[0], b_[0]) or brand_key(a_[2]) != brand_key(b_[2]):
                 continue
             ta, tb = norm(a_[1]).split(), norm(b_[1]).split()
-            if ta == tb or ta[:len(tb)] == tb or tb[:len(ta)] == ta:
+            if (ta == tb or ta[:len(tb)] == tb or tb[:len(ta)] == ta) and not ({a_[1], b_[1]} & not_dupes):
                 dupes.append((a_, b_))
     for d_ in dupes:
         print('  NEAR-DUPLICATE (add an alias):', d_, file=sys.stderr)
@@ -603,7 +621,6 @@ def main():
             print('  caption matched 2+ gallery mats:', h_, file=sys.stderr)
 
     # ---- All matches for one mat (Tiffany Nov 6 1:03am): mat-cards.json, loaded only when the panel opens ----
-    mv = mat_views(mats, xs, albums, order, card_img, xpos)
     with open(os.path.join(OUT, 'mat-cards.json'), 'w') as f:
         json.dump(mv['out'], f, ensure_ascii=False, separators=(',', ':'))
 

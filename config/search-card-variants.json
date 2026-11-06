@@ -1,5 +1,5 @@
 {
- "_note": "Album captions that name a design with more than one colourway in the gallery (e.g. 'Lagoon + Birdie', 'Brownstone Bloom + Dapper'). Claude LOOKED at each match card (Nov 6 2026, 'All matches for one mat' build) and named the gallery mat it shows: card image file name -> gallery img key. scripts/search/build_index.py uses it so the card (and the 'In the ... album' line) goes to that mat only. Premium / Double-Sided variants of one design are left on both. A value of \"\" leaves the card out of search (variant unknown; see docs/MATCH-INBOX.md). QA Nov 6: Malachite card 28 (caption YOTD Plum) is magenta = Raspberry and card 30 (caption YOTD Purple) is the gallery's Plum; Coquette card 40 'Boots & Bubbles' is the darker royal-blue colourway, not Periwinkle (left out until Tiffany says which).",
+ "_note": "Album captions that name a design with more than one colourway in the gallery (e.g. 'Lagoon + Birdie', 'Brownstone Bloom + Dapper'). Claude LOOKED at each match card (Nov 6 2026, 'All matches for one mat' build) and named the gallery mat it shows: card image file name -> gallery img key. scripts/search/build_index.py uses it so the card (and the 'In the ... album' line) goes to that mat only. Premium / Double-Sided variants of one design are left on both. A value of \"\" leaves the card out of search (variant unknown; see docs/MATCH-INBOX.md). QA Nov 6: Malachite card 28 (caption YOTD Plum) is magenta = Raspberry and card 30 (caption YOTD Purple) is the gallery's Plum; Coquette card 40 'Boots & Bubbles' is the darker royal-blue colourway, not Periwinkle (left out until Tiffany says which). Nov 6 QA sweep (Claude looked at each): Glow Wild Caroline = Peacock; Coquette Bandana = Blue/Pink accents; Papaya Retro Waves = Orange; Sunset Betty = Floral (Monogrammed Neoprene); Papaya Simply Scalloped = the purple Neoprene (not Fall); Solara 'Chinoiserie' (Mahj & Vine) = Chinoiserie Songbird.",
  "cards": {
   "01-moonlight-mahjong-tiles-oh-my-mahjong-birdie-mat.jpg": "oh-my-mahjong--birdie-green-retired",
   "01-lola-mahjong-tiles-oh-my-mahjong-birdie-mat.jpg": "oh-my-mahjong--birdie-green-retired",
@@ -9,6 +9,12 @@
   "brownstone-bloom-mahjong-tiles-oh-my-mahjong-dapper-mat.jpg": "oh-my-mahjong--dapper-2",
   "28-malachite-mahjong-tiles-bespoke-mahjong-yotd-plum-mat.jpg": "bespoke-mahjong--yotd-raspberry",
   "40-coquette-mahjong-tiles-bam-bird-boutique-boots-bubbles-mat.jpg": "",
-  "30-malachite-mahjong-tiles-bespoke-mahjong-yotd-purple-mat.jpg": "bespoke-mahjong--yotd-plum"
+  "30-malachite-mahjong-tiles-bespoke-mahjong-yotd-purple-mat.jpg": "bespoke-mahjong--yotd-plum",
+  "13-glow-wild-mahjong-tiles-mahj-and-vine-caroline-mat.jpg": "mahj-vine--caroline-in-peacock",
+  "41-coquette-mahjong-tiles-bam-bird-boutique-bandana-mat.jpg": "bam-bird-boutique--bandana-blue-pink-accents",
+  "papaya-spritz-mahjong-tiles-mahj-and-moon-retro-waves-mat.jpg": "mahj-moon--retro-waves-3",
+  "sunset-mahjong-tiles-betty-june-jeannette-betty-floral-monogrammed-neoprene-mat.jpg": "betty-june-jeannette--betty-floral-monogrammed-neoprene",
+  "papaya-spritz-mahjong-tiles-bam-bird-boutique-simply-scalloped-mat.jpg": "bam-bird-boutique--simply-scalloped-neoprene-mahjong-mat",
+  "05-solara-mahjong-tiles-mahj-and-vine-chinoiserie-mat.jpg": "mahj-vine--chinoiserie-songbird"
  }
 }

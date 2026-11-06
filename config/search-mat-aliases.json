@@ -1,6 +1,14 @@
 {
- "_note": "Album captions that leave out the colourway (or use another name) -> the gallery mat they show. Key 'Brand|Caption name' (brand and name are normalised: case, accents, apostrophes, 'Mah Jongg' = 'Mahjongg'). Value = gallery img key. Read by scripts/search/build_index.py before fuzzy matching (QA Nov 6: Claude looked at all 6 'Winslow 1920' album cards: all navy).",
+ "_note": "Album captions that leave out the colourway (or use another name) -> the gallery mat they show. Key 'Brand|Caption name' (brand and name are normalised: case, accents, apostrophes, 'Mah Jongg' = 'Mahjongg'). Value = gallery img key. Read by scripts/search/build_index.py before fuzzy matching (QA Nov 6: Claude looked at all 6 'Winslow 1920' album cards: all navy). Nov 6 near-duplicate sweep: Press for Mahjong = gallery 'Press for'; Pink Citrus Chinoiserie = Pink Citrus (same photo pattern); Mocha Bloom Light = Mocha Bloom LT (plaid border). Not merged: Bam Bird 'Vegan Leather' (album card shows a caramel/cream/navy trio, not one gallery colour), 'Amazon'/'Amazon 2' (generic).",
  "aliases": {
-  "Ozark Mahjongg|Winslow 1920": "ozark-mahjongg--winslow-1920-navy"
- }
+  "Ozark Mahjongg|Winslow 1920": "ozark-mahjongg--winslow-1920-navy",
+  "Anders Ruff|Press for Mahjong": "anders-ruff--press-for-mahjong-mat",
+  "Mahj & Moon|Pink Citrus Chinoiserie": "mahj-moon--pink-citrus",
+  "Mahjong Row & Co.|Mocha Bloom Light": "mahjong-row-co--mocha-bloom-lt"
+ },
+ "not_duplicates": [
+  "Vegan Leather",
+  "Amazon",
+  "Amazon 2"
+ ]
 }

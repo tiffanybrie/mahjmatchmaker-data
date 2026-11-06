@@ -204,7 +204,7 @@
     if (list.length > 2) s += '<span class="mms-rest" hidden>, ' + list.slice(2).map(albumLink).join(', ') + '</span> <button type="button" class="mms-more">+' + (list.length - 2) + ' more</button>';
     return '<div class="mms-al">In the ' + s + '</div>';
   }
-  /* "See all N match cards" (opens the All matches panel) for a mat in more than 2 albums */
+  /* "See all N match cards" (opens the All matches panel) for a mat in 2+ albums (same as the gallery link) */
   function allLink(slug, list) {
     var n = (list || []).filter(function (a) { return D.a[a] && D.a[a][5] !== 1; }).length;
     return slug && n > 1 ? '<button type="button" class="mms-allm" data-mv="' + esc(slug) + '">See all ' + n + ' match cards</button>' : '';
@@ -426,6 +426,7 @@
   function mvImg(u, w) {
     if (!u) return '';
     if (u.charAt(0) === '~') return MV.sq + u.slice(1) + '?format=' + w + 'w';
+    if (u.charAt(0) === '@') return MV_URL.replace(/[^\/]*$/, '') + 'thumbs/' + u.slice(1);
     return /squarespace-cdn\.com/.test(u) ? u.replace(/\?.*$/, '') + '?format=' + w + 'w' : u;
   }
   function mvAlbum(c) { return MV.a[c[0]] || ['#', '', 0]; }
@@ -480,7 +481,7 @@
     if (n < 0 || n >= cards.length) return;
     mvIdx = n;
     var c = cards[n], a = mvAlbum(c), img = mvZm.querySelector('img');
-    img.src = mvImg(c[1], 1000); img.alt = a[1] + ' mahjong tiles with ' + v[1] + ' ' + v[0] + ' mahjong mat';
+    img.src = c[3] || mvImg(c[1], 1000); img.alt = a[1] + ' mahjong tiles with ' + v[1] + ' ' + v[0] + ' mahjong mat';
     mvZm.querySelector('figcaption').innerHTML = '<span class="mmv-set">' + esc(a[1]) + ' + ' + esc(v[0]) + '</span><span class="mmv-cnt">' + (n + 1) + ' of ' + cards.length + '</span>' +
       '<a class="mms-btn mms-ghost" href="' + esc(a[0]) + '">See the ' + (a[2] ? 'holiday ' : '') + 'album</a>';
     mv.querySelector('.mmv-prev').hidden = n === 0;
@@ -613,7 +614,8 @@
     try { mq = new URLSearchParams(location.search).get('mmmat'); } catch (e) {}
     if (mq) {
       try { var u0 = new URL(location.href); u0.searchParams.delete('mmmat'); history.replaceState(history.state, '', u0.pathname + u0.search + u0.hash); } catch (e) {}
-      openMat(mq);
+      /* QA Nov 6: an unknown slug just drops the param (no empty full-screen panel) */
+      loadMV().then(function () { if (mvFind(mq)) openMat(mq); }).catch(function () {});
     }
     if (q == null) return;
     try { var u = new URL(location.href); u.searchParams.delete('mmq'); history.replaceState(history.state, '', u.pathname + u.search + u.hash); } catch (e) {}
