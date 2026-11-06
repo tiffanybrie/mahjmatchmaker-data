@@ -639,9 +639,14 @@
     if (location.pathname.replace(/\/$/, '') !== GALLERY) return;
     var key = decodeURIComponent((location.hash || '').slice(1));
     if (!key || !/^[a-z0-9-]+$/.test(key)) return;
-    var tries = 0;
+    var tries = 0, mgTried = false;
     (function look() {
       var imgs = document.querySelectorAll('.mmg-card img[src*="/' + key + '.webp"]');
+      /* Mat Gallery v6 merged duplicate twins (e.g. Britt Mills leatherettes): an old #key jumps to the kept twin's card */
+      if (!imgs.length && !mgTried && tries >= 12 && document.querySelector('.mmg-card')) {
+        mgTried = true;
+        loadMV().then(function () { if (MV.mg && MV.mg[key]) key = MV.mg[key]; }).catch(function () {});
+      }
       if (!imgs.length) { if (++tries < 160) setTimeout(look, 250); return; } /* Nov 5: wait up to 40 s for a slow phone */
       var card = null;
       imgs.forEach(function (im) { var c = im.closest('.mmg-card'); if (!card && c && c.offsetParent !== null) card = c; });

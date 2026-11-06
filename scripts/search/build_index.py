@@ -340,6 +340,32 @@ def check_links(urls):
         return dict(ex.map(one, sorted(set(urls))))
 
 
+def gitshow(spec):
+    """'<rev>:<path>' from git (never the shared working tree), or a plain file path."""
+    if re.match(r'^[0-9a-f]{7,40}:', spec):
+        return subprocess.run(['git', '-C', ROOT, 'show', spec], capture_output=True, text=True, check=True).stdout
+    return open(spec, encoding='utf-8').read()
+
+
+def gallery_merges(R, R_live):
+    """Mat Gallery v6 merged duplicate rows (config/mat-gallery-dedupe-v6.json 'merge': dropped key -> kept key).
+    Returns {dropped key: kept key} for kept keys present in R, plus caption aliases built from the dropped
+    rows' names (from the live page) so album cards of a merged twin land on the kept card."""
+    p = os.path.join(ROOT, 'config', 'mat-gallery-dedupe-v6.json')
+    if not os.path.exists(p):
+        return {}, {}
+    keys = {x[0] for x in R}
+    names = {x[0]: (x[1], x[2]) for x in R_live}
+    mg, al = {}, {}
+    for drop, v in json.load(open(p)).get('merge', {}).items():
+        keep = v.get('keep')
+        if keep in keys and drop not in keys:
+            mg[drop] = keep
+            if drop in names:
+                al[(norm(names[drop][0]), brand_key(names[drop][1]))] = keep
+    return mg, al
+
+
 def main():
     do_thumbs = '--no-thumbs' not in sys.argv
     os.makedirs(OUT, exist_ok=True)
@@ -358,6 +384,19 @@ def main():
     # ---- Mat Gallery (live code block JSON) ----
     g = H['mahjong-mats']
     R = json.loads(re.search(r'<script type="application/json"[^>]*>(.*?)</script>', g, re.S).group(1))
+    R_live = R
+    # --gallery-block <rev>:<path> | <path>: build against a staged Mat Gallery block (v6: rows behind data-src)
+    # instead of the live page, so search can go live in the same session as that gallery (Nov 6).
+    gb = next((a.split('=', 1)[1] for a in sys.argv if a.startswith('--gallery-block=')), '')
+    if gb:
+        g = gitshow(gb)
+        ds = re.search(r'<script type="application/json" data-src="([^"]+)"', g)
+        if ds:
+            m_ = re.search(r'mahjmatchmaker-data@([0-9a-f]{7,40})/(.+)$', ds.group(1))
+            R = json.loads(gitshow(m_.group(1) + ':' + m_.group(2)) if m_ else curl(ds.group(1)))
+        else:
+            R = json.loads(re.search(r'<script type="application/json"[^>]*>(.*?)</script>', g, re.S).group(1))
+        print('gallery: %s (%d rows; live page has %d)' % (gb, len(R), len(R_live)))
     mb = re.search(r"B='(https://cdn\.jsdelivr\.net/[^']+)'", g).group(1)
     ibm = re.search(r'IB=(\{[^}]*\})', g)
     ib = json.loads(ibm.group(1)) if ibm else {}
@@ -439,6 +478,11 @@ def main():
         aliases = {(norm(k.split('|', 1)[1]), brand_key(k.split('|', 1)[0])): v
                    for k, v in json.load(open(ap)).get('aliases', {}).items()}
     rowkey = {x[0]: i for i, x in enumerate(R)}
+    merged, merge_alias = gallery_merges(R, R_live)
+    for k_, v_ in merge_alias.items():
+        aliases.setdefault(k_, v_)
+    variants = {k_: merged.get(v_, v_) for k_, v_ in variants.items()}
+    aliases = {k_: merged.get(v_, v_) for k_, v_ in aliases.items()}
     xname = {}  # (norm name, brand key) -> first (name, brand) spelling seen, so one album-only mat = one entry
     excluded, multi_hits = [], []
     for ai, cards in album_mats.items():
@@ -564,6 +608,11 @@ def main():
         pages_out.append(['/' + s, title, kind, desc[:180], img, code, pct, brand])
 
     mv = mat_views(mats, xs, albums, order, card_img, xpos)
+    # merged-away gallery twins (v6): old #key / ?mmmat=<key> links go to the kept twin's card and panel
+    mv['out']['mg'] = merged
+    for d_, k_ in merged.items():
+        if k_ in mv['out']['k']:
+            mv['out']['k'][d_] = mv['out']['k'][k_]
 
     # ---- Thumbnails ----
     man_path = os.path.join(OUT, 'thumbs.json')
@@ -692,7 +741,7 @@ def main():
         'album_only_mats': len(xs), 'mats_with_theme_kw': sum(1 for m in mats if any(
             w in m[9].split() for w in ('halloween', 'valentine', 'patriotic', 'shamrock', 'easter', 'derby', 'christmas', 'hanukkah', 'winter', 'fall'))),
         'bytes': os.path.getsize(os.path.join(OUT, 'search-index.json')),
-        'mat_views': mv['stats'], 'retired': n_fret, 'dead_shop_links_dropped': len(dead), 'near_duplicates': len(dupes), 'cards_left_out': len(excluded),
+        'mat_views': mv['stats'], 'gallery_rows': len(R), 'merged_twins': len(merged), 'retired': n_fret, 'dead_shop_links_dropped': len(dead), 'near_duplicates': len(dupes), 'cards_left_out': len(excluded),
         'captions_matching_2plus_mats': len(multi_hits),
     }
     print('index:', json.dumps(stats))
