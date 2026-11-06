@@ -1,0 +1,62 @@
+{
+ "by": "claude (standing authority: broken link fixes)",
+ "date": "2026-11-06",
+ "about": "Mat Gallery shop-link overrides applied by build_v6.py AFTER the FYM link sync. url '' = no shop button, NOT retired (Oct 20 Mahjong by SI precedent: label Retired only when confirmed gone), no badge; url = a new live product link (auto-apply form added by the build). Each: product page 404 + not found in the store's products.json or /search/suggest (Nov 6). Remove an entry when the brand relists the mat.",
+ "mats": {
+  "bespoke-mahjong--brooks-brothers-oxford-classic": {
+   "url": "",
+   "name": "Bespoke x Brooks Brothers Oxford Classic",
+   "why": "shop link 404 (Nov 6 search-index check); no new handle in products.json or search/suggest"
+  },
+  "oh-my-mahjong--astor": {
+   "url": "",
+   "name": "OMM Astor",
+   "why": "shop link 404 (Nov 6 search-index check); no new handle in products.json or search/suggest"
+  },
+  "oh-my-mahjong--darjeeling": {
+   "url": "",
+   "name": "OMM Darjeeling",
+   "why": "shop link 404 (Nov 6 search-index check); no new handle in products.json or search/suggest"
+  },
+  "oh-my-mahjong--sugarplum": {
+   "url": "",
+   "name": "OMM Sugarplum",
+   "why": "shop link 404 (Nov 6 search-index check); no new handle in products.json or search/suggest"
+  },
+  "oh-my-mahjong--vanderbilt": {
+   "url": "",
+   "name": "OMM Vanderbilt",
+   "why": "shop link 404 (Nov 6 search-index check); no new handle in products.json or search/suggest"
+  },
+  "oh-my-mahjong--year-of-the-horse": {
+   "url": "",
+   "name": "OMM Year of the Horse",
+   "why": "shop link 404 (Nov 6 search-index check); no new handle in products.json or search/suggest"
+  },
+  "tigre-de-tartan--mahjong-mat-nantucket-basket-round-w-rules": {
+   "url": "",
+   "name": "TdT Nantucket Basket, Round",
+   "why": "shop link 404 (Nov 6 search-index check); no new handle in products.json or search/suggest"
+  },
+  "let-s-be-besties--blue-dots-and-stripes": {
+   "url": "",
+   "name": "LBB Blue Dots and Stripes (20.9in travel listing)",
+   "why": "shop link 404 (Nov 6 search-index check); no new handle in products.json or search/suggest"
+  },
+  "let-s-be-besties--surfs-up": {
+   "url": "",
+   "name": "LBB Surfs Up",
+   "why": "shop link 404 (Nov 6 search-index check); no new handle in products.json or search/suggest"
+  },
+  "yolo-mahjong--christmas-cat": {
+   "url": "",
+   "name": "YOLO Christmas Cat",
+   "why": "shop link 404 (Nov 6 search-index check); no new handle in products.json or search/suggest"
+  },
+  "oh-my-mahjong--vivara": {
+   "url": "",
+   "name": "OMM Vivara",
+   "why": "shop link 404 (build_v6 link check, Nov 6); not in ohmymahjong.com products.json (244) or search/suggest"
+  }
+ }
+}

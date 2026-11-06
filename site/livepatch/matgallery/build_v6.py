@@ -118,7 +118,8 @@ for r in G:
             stats['unretired_from_fym'].append(f'{r[2]} | {r[1]} ({r[0]}): FYM sells it again -> {o["u"]}')
             r[4], r[3] = 0, o['u']
         if not r[4]:
-            keep_own = r[3] and AA.host_of(r[3]) in AA.SKIP and AA.host_of(r[3]) != 'go.shopmy.us'  # TdT (Oct 30: leave exactly as is), Squarespace stores, Maison: never take FYM's form
+            if r[7]: keep_own = True  # 'One to watch' rows (OMM Cognac, Oct 20): no shop button on purpose; FYM's link must not bring one back
+            else: keep_own = r[3] and AA.host_of(r[3]) in AA.SKIP and AA.host_of(r[3]) != 'go.shopmy.us'  # TdT (Oct 30: leave exactly as is), Squarespace stores, Maison: never take FYM's form
             if good_link(o.get('u')) and o['u'] != r[3] and not keep_own:
                 r[3] = o['u']; stats['link_from_fym'] += 1
             if o.get('oos'):
@@ -126,6 +127,13 @@ for r in G:
     if r[3]:
         r[3], st = AA.autoapply(r[3])
         b = stats['autoapply'].setdefault(r[2], {}); b[st] = b.get(st, 0) + 1
+
+# --- 2a. dead shop links (config/mat-gallery-link-fixes.json, Nov 6): '' = no shop button, not retired, no badge (Oct 20 Mahjong by SI precedent)
+LFIX = json.load(open(REPO + 'config/mat-gallery-link-fixes.json'))['mats']
+for r in G:
+    if r[0] in LFIX:
+        r[3] = AA.autoapply(LFIX[r[0]]['url'])[0] if LFIX[r[0]]['url'] else ''
+stats['link_fixes'] = sorted(f"{v['name']}: {'new link' if v['url'] else 'no shop button'}" for k, v in LFIX.items() if k in {r[0] for r in G})
 
 # --- 2b. duplicate photos (config/mat-gallery-dedupe-v6.json, Claude photo review; Oct 20 dedupe style): drop the twin, keep one card,
 # note under the name (row field 14, e.g. 'Also available in leatherette'), optional second shop link (field 15: [label, url]).
@@ -165,6 +173,32 @@ try:
     if cand: log(f'WARNING: {len(cand)} look-alike photo pairs not reviewed (v6_counts.json dupe_candidates): merge them or list them as not_dupes in config/mat-gallery-dedupe-v6.json')
 except Exception as _e:
     stats['dupe_candidates'] = f'sweep did not run: {_e}'
+
+# --- 2c. LINK CHECK (Nov 6: 10 dead links shipped in v6): GET every shop link (and second shop link), following redirects.
+# A 404/410 FAILS the build (fix it in config/mat-gallery-link-fixes.json: a new handle, or '' = no shop button). Other errors
+# (403 bot walls on Etsy/ShopMy, timeouts) only warn. Always on for a pinned build (--data-commit); MMG_LINKCHECK=0 skips it
+# for a local preview only.
+if DATA_COMMIT or os.environ.get('MMG_LINKCHECK', '1') != '0':
+    from concurrent.futures import ThreadPoolExecutor
+    _L = {}
+    for r in G:
+        if r[3]: _L.setdefault(r[3], []).append(f'{r[2]} | {r[1]} ({r[0]})')
+        if len(r) > 15 and r[15] and r[15][1]: _L.setdefault(r[15][1], []).append(f'{r[2]} | {r[1]} (second shop link)')
+    def _chk(u):
+        for _t in range(3):
+            o = subprocess.run(['curl', '-sSL', '-g', '-o', '/dev/null', '-m', '40', '--max-redirs', '10', '-A', 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1', '-w', '%{http_code}', u], capture_output=True, text=True).stdout.strip()
+            if o in ('200', '404', '410'): return u, o
+        return u, o
+    with ThreadPoolExecutor(16) as ex: _res = dict(ex.map(_chk, list(_L)))
+    _dead = {u: c for u, c in _res.items() if c in ('404', '410')}
+    _odd = {u: c for u, c in _res.items() if c not in ('200', '404', '410')}
+    stats['linkcheck'] = {'checked': len(_res), 'ok': sum(1 for c in _res.values() if c == '200'), 'dead': {u: _L[u] for u in _dead}, 'other': {u: [c] + _L[u] for u, c in _odd.items()}}
+    json.dump(stats, open(os.path.join(HERE, 'v6_counts.json'), 'w'), indent=1, ensure_ascii=False)
+    log(f"link check: {len(_res)} links, {stats['linkcheck']['ok']} ok, {len(_dead)} dead (404/410), {len(_odd)} other (warn: {sorted(set(_odd.values()))})")
+    if _dead:
+        sys.exit('build_v6 LINK CHECK FAILED (dead shop links; add each to config/mat-gallery-link-fixes.json with a new handle or url \'\'):\n' + '\n'.join(f'  {c} {u}  <- {"; ".join(_L[u])}' for u, c in _dead.items()))
+else:
+    log('link check skipped (MMG_LINKCHECK=0, local preview only; a pinned --data-commit build always checks)')
 
 # --- 3. HTML: data, sold-out pill, stamp ---
 # The rows (~1,500 mats, ~430 KB) live in data/matgallery-<ver>.json, loaded from jsDelivr pinned at --data-commit, so the
