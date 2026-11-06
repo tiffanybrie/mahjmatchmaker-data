@@ -275,7 +275,7 @@ for k, o in M.items():
 # Nov 6: the staged gallery is the newest site/livepatch/matgallery/matgallery-v<N>.html (v6+ = build_v6.py, FYM-synced); from v6 its
 # rows may live in data/matgallery-<fym ver>.json (block: <script type="application/json" data-src="jsDelivr URL">): read the local copy.
 _GPATH = sorted(glob.glob(REPO + 'site/livepatch/matgallery/matgallery-v[0-9]*.html'), key=lambda p_: int(re.search(r'-v(\d+)\.html$', p_).group(1)))[-1]
-_g = open(_GPATH).read()
+_g = open(_GPATH).read(); _GHTML = _g  # _g is reused later in this file; [159b] reads _GHTML
 _gm = re.search(r'<script type="application/json"( data-src="[^"]*")?>(.*?)</script>', _g, re.S)
 if _gm.group(1):
     _G = json.load(open(REPO + re.search(r'@[0-9a-f]{7,40}/(.*?)"', _gm.group(1)).group(1)))
@@ -1089,8 +1089,9 @@ try:
     _GK = {GKEY(r[0]) for r in _G}; _GU = {_nu(r[3]) for r in _G}; _GN = {_nz(r[1]) + '|' + _nz(r[2]) for r in _G}
     _XK = {a['key'] for a in _XR}; _XU = {_nu(a.get('url') or a.get('u')) for a in _XR if a.get('url') or a.get('u')}
     _miss90, _stale90 = [], []
+    _HOLD90 = set(json.load(open(REPO + 'config/mat-gallery-photo-holds.json'))['mats']) if os.path.exists(REPO + 'config/mat-gallery-photo-holds.json') else set()
     for _k, _m in M.items():
-        if _m.get('hid') or '#side-b' in _k: continue
+        if _m.get('hid') or '#side-b' in _k or _k in _HOLD90: continue  # Nov 6: gallery photo holds (config/mat-gallery-photo-holds.json) stay out on purpose
         _u = {_nu(_m.get('u0')), _nu(_m.get('u')), _nu(_k)}
         _in_staged = _k in _GK or bool(_u & _GU) or (_nz(_m['n']) + '|' + _nz(_m.get('bn'))) in _GN
         if _in_staged: continue
@@ -1843,7 +1844,7 @@ except Exception as _e: F.append(f"[159] auto-apply link check did not run: {_e}
 #       LIVE /mahjong-mats must carry it too. WARNING without --release, FAIL with it.
 try:
     _rel159 = max([int(x) for x in re.findall(r'fym-v(\d+)', os.path.abspath(B))] + ([globals()['_nn104'][-1]] if globals().get('_nn104') else []) or [0])
-    _st159 = re.search(r'data-fym="v(\d+)"', _g)
+    _st159 = re.search(r'data-fym="v(\d+)"', _GHTML)
     _W159 = []
     if not _st159: _W159.append(f"staged Mat Gallery {os.path.basename(_GPATH)} has no FYM version stamp (build it with site/livepatch/matgallery/build_v6.py)")
     elif int(_st159.group(1)) < _rel159: _W159.append(f"staged Mat Gallery was built from FYM v{_st159.group(1)}, release is v{_rel159}: rebuild it (builder/fym_fix_nov06/gallery_sync.py + build_v6.py, README release step)")
