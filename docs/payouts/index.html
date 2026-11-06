@@ -53,12 +53,13 @@
   </section>
   <section class="card" id="brands">
     <h2>By brand</h2>
-    <p class="note">"Past due" only counts money whose payout window we know has passed. Biggest amounts owed first. A blank "Still owed" means that brand's dashboard hasn't been read yet. Updated weekly from PayPal and the affiliate dashboards.</p>
+    <p class="note">"Account" shows where each brand lives: the UpPromote or GoAffPro hub under mahjmatchmaker@, or its own dashboard under tiffanybrie@ (those are the ones to ask to switch). "Past due" only counts money whose payout window we know has passed. Biggest amounts owed first. A blank "Still owed" means that brand's dashboard hasn't been read yet. Updated weekly from PayPal and the affiliate dashboards.</p>
     <div class="tw">
       <table data-source="brands" data-row-key="brand">
         <thead><tr>
           <th data-field="brand">Brand</th>
           <th data-field="status">Status</th>
+          <th data-field="account">Account</th>
           <th class="n" data-field="oct_earned">Oct earned</th>
           <th class="n" data-field="paid_since_sep1">Paid since Sep 1</th>
           <th class="n" data-field="still_owed">Still owed</th>
@@ -124,6 +125,7 @@
       const td = (txt, cls) => { const c = document.createElement('td'); if (cls) c.className = cls; c.textContent = txt; tr.append(c); return c; };
       td(r.brand, 'brand');
       const s = td('', ''); const sp = document.createElement('span'); sp.className = 'st ' + String(r.status).split(' ')[0]; sp.textContent = r.status; s.append(sp);
+      const ac = td(r.account || '', ''); if (/tiffanybrie/.test(r.account || '')) ac.style.color = 'var(--color-warn)';
       td(usd(num(r.oct_earned)), 'n'); td(usd(num(r.paid_since_sep1)), 'n');
       const o = td(num(r.still_owed) == null ? '' : usd(num(r.still_owed)), 'n');
       td(num(r.past_due) ? usd(num(r.past_due)) : '', 'n');
