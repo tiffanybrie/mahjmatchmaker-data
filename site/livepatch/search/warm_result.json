@@ -1,10 +1,7 @@
 {
- "commit": "98e580577e285311fc3ad237ef6dc5f98c5eaf02",
- "total": 876,
- "ok_first_try": 873,
- "ok_after_retry": 1,
- "still_failing": {
-  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@98e580577e285311fc3ad237ef6dc5f98c5eaf02/assets/search/thumbs/m/amanda-toppe--pink-orchids.webp": "403",
-  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@98e580577e285311fc3ad237ef6dc5f98c5eaf02/assets/search/thumbs/m/anders-ruff--blushing-blooms-mahjong-mat.webp": "403"
- }
+ "commit": "720659bd5dac89e358f9c4ab8dea3bf08ac03c60",
+ "total": 882,
+ "ok_first_try": 844,
+ "ok_after_retry": 38,
+ "still_failing": {}
 }
