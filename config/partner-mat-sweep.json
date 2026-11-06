@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-05T23:07:23+00:00",
+ "swept_at": "2026-11-06T14:06:46+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v115",
  "stores": {
   "amahjline.com": {
@@ -1444,7 +1444,7 @@
   "mahjongrowandco.com": {
    "brand": "Mahjong Row & Co.",
    "status": "ok",
-   "products": 27,
+   "products": 29,
    "mats": [
     [
      "2026-10-05T15:00:47-05:00",
@@ -4820,7 +4820,7 @@
   "faitamainstudio.com": {
    "brand": "Fait à Main",
    "status": "ok",
-   "products": 45,
+   "products": 46,
    "mats": [
     [
      "2026-11-05T09:23:54-06:00",
