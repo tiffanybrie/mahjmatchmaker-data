@@ -57,6 +57,21 @@ for path,h,err in got:
             if int(m.group(1))!=p: fails.append(f'{path}: FAQ says {m.group(1)}% (truth {p}%)')
         for m in re.finditer(r'MAHJMATCH</span> for (\d+)% off at '+re.escape(b),h):
             if int(m.group(1))!=p: fails.append(f'{path}: code box says {m.group(1)}% (truth {p}%)')
+# REMOVED BRANDS (Tiffany Nov 6: Mahjong Row & Co. out of the site completely): crawl the whole sitemap; any visible mention FAILS.
+RB=truth.get('removed_brands',{})
+if RB:
+    try: urls=re.findall(r'<loc>([^<]+)</loc>',get(ROOT+'/sitemap.xml'))
+    except Exception as e: urls=[]; fails.append(f'sitemap fetch error {e}')
+    def fetch2(u):
+        try: return u,get(u)
+        except Exception as e: return u,None
+    with ThreadPoolExecutor(12) as ex: allp=list(ex.map(fetch2,urls))
+    for u,h in allp:
+        if not h: continue
+        t=visible(h)
+        for b,o in RB.items():
+            n=len(re.findall(o['pattern'],t,flags=re.I))
+            if n: fails.append(f"{u.replace(ROOT,'')}: removed brand {b} still shows ({n}x)")
 fails=sorted(set(fails))
 print(f'LIVE CODES CHECK {today}: {len(pages)} brand pages + hub · ' + ('PASS' if not fails else f'FAIL ({len(fails)})'))
 for f in fails: print(' -',f)

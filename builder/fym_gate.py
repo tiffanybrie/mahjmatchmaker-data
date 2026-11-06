@@ -18,6 +18,7 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
     except her verified real picks in builder/fym_flags/m_hidden_ok.json (Amore Manor Garden bug, Oct 20)
  12 no Mahjong Studios mat visible in FYM or in the staged Mat Gallery (Tiffany Oct 20 22:31: tiles/racks stay, mats go); no removed
     gallery row back in site/livepatch/matgallery/matgallery-v5.html
+ 160 (Nov 6) no visible mat/tile/rack/set of a brand in config/code-truth.json removed_brands (Mahjong Row & Co.)
  13 staged Mat Gallery (Oct 20 late): non-partner lockout hard FAIL, late-call holiday mats Holiday-only (gallery + FYM), her also/remove/floral
     calls present, holiday_off empty, lead/tail pins match late-calls, section sort = lead > ONE list by score > tail, where
     score = measured share of the colour + 20 if it is the mat's primary (ties: primary first, then name). Checked by RUNNING the page's
@@ -1865,6 +1866,15 @@ try:
         if '--release' in sys.argv: F.append('[159b] ' + _w)
         else: print('FYM GATE WARNING [159b] (FAIL with --release): ' + _w)
 except Exception as _e: F.append(f"[159b] gallery version check did not run: {_e}")
+# [160] (Tiffany Nov 6 1:19pm) REMOVED BRANDS (config/code-truth.json removed_brands, e.g. Mahjong Row & Co.): no mat, tile set, rack or
+# set of a removed brand is visible in FYM; fix = builder/fym_fix_nov06/mr_out.py (hides + parks, never deletes).
+try:
+    _RB160 = json.load(open(REPO + 'config/code-truth.json')).get('removed_brands', {})
+    for _b160 in _RB160:
+        _v160 = [k for sec in ('mats', 'tiles', 'racks') for k, v in D[sec].items() if v.get('bn') == _b160 and not v.get('hid')]
+        _v160 += [s.get('slug') for s in D['sets'] if s.get('maker') == _b160 and not s.get('hid')]
+        if _v160: F.append(f"[160] removed brand {_b160} still visible in FYM ({len(_v160)}): " + ', '.join(map(str, _v160[:8])) + ' (run builder/fym_fix_nov06/mr_out.py)')
+except Exception as _e: F.append(f"[160] removed-brand check did not run: {_e}")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))

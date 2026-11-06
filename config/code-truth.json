@@ -17,7 +17,6 @@
   "Mahj Pit": 10,
   "Mahj Squad": 10,
   "Mahjong Co.": 10,
-  "Mahjong Row & Co.": 10,
   "Middle & Main Mahjong": 10,
   "Mini Mahjer": 10,
   "Miss Mahjong": 10,
@@ -33,5 +32,13 @@
  "notes": {
   "Amanda Toppe": "10% (Tiffany Nov 2 2026)"
  },
- "verified_max_age_days": 9
+ "verified_max_age_days": 9,
+ "removed_brands": {
+  "Mahjong Row & Co.": {
+   "since": "2026-11-06",
+   "why": "Tiffany Nov 6 1:19pm: no response from the brand; remove from the site completely, parked in archive/mahjong-row-parked-2026-11-06",
+   "pattern": "mahjong ?row|mahjong-row|mahjongrow|cypress-forest|cypress forest",
+   "pct_when_parked": 10
+  }
+ }
 }
