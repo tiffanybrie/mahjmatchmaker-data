@@ -2,7 +2,7 @@
  "by": "claude-photo-review",
  "date": "2026-10-20",
  "method": "measured palette (config/mat-accent-colors.json, thresholds eye-checked on contact sheets): a color covering >= 15% of the mat is promoted to an also-color. Never applied to mats Tiffany has called (her v5 final calls or any tiffany-chat override) or to the 53 new mats (tagged by eye in tiffany-color-notes/2026-10-20-new53-claude-tags.json).",
- "count": 140,
+ "count": 180,
  "mats": {
   "amahj--lilac-green-squiggle-mahjong-game-mat": [
    "green"
@@ -50,8 +50,37 @@
    "blue",
    "teal"
   ],
+  "mahj-moon--amongst-the-lemon-groves-pink": [
+   "yellow",
+   "green"
+  ],
+  "mahj-moon--palm-tree": [
+   "green"
+  ],
+  "mahj-moon--paris-in-bloom": [
+   "green"
+  ],
+  "mahj-moon--pastel-garden-landscape": [
+   "teal",
+   "green"
+  ],
+  "mahj-moon--pastel-wildflower-gingham": [
+   "yellow"
+  ],
+  "mahj-moon--personalized-vibrant-floral-chinoiserie-pink": [
+   "blue"
+  ],
+  "mahj-moon--pink-bow-garden": [
+   "green"
+  ],
   "mahj-moon--pink-citrus": [
    "green"
+  ],
+  "mahj-moon--strawberry-garden-american": [
+   "green"
+  ],
+  "mahj-moon--vibrant-floral-chinoiserie-pink": [
+   "blue"
   ],
   "mahj-vine--chinoiserie-songbird": [
    "green"
@@ -137,6 +166,10 @@
    "blue"
   ],
   "mahj-moon--amalfi-soleil": [
+   "blue"
+  ],
+  "mahj-moon--lemon-stripe": [
+   "pink",
    "blue"
   ],
   "oh-my-mahjong--spring-fling-retired": [
@@ -235,11 +268,21 @@
   "charleston-mahjong-club--reversible-vegan-leather-sea-foam-green-dusty-blue": [
    "green"
   ],
+  "hutch-nook--summer-blossom": [
+   "pink",
+   "green"
+  ],
   "let-s-be-besties--hydrangea-haven": [
    "green"
   ],
+  "mahj-moon--blush-botanical": [
+   "pink"
+  ],
   "mahj-moon--citrus-chinoiserie": [
    "green"
+  ],
+  "mahj-moon--lion-american": [
+   "pink"
   ],
   "mahj-vine--shady-lady-umbrella-mat-cabana-stripe-ocean": [
    "green"
@@ -330,8 +373,26 @@
   "isabel-harte--bamboo-dragon": [
    "blue"
   ],
+  "mahj-moon--autumn-leaves": [
+   "green"
+  ],
+  "mahj-moon--botanical-chevron": [
+   "green"
+  ],
+  "mahj-moon--celestial-dragon-chinoiserie": [
+   "green"
+  ],
+  "mahj-moon--cowgirl-rodeo": [
+   "blue"
+  ],
   "mahj-moon--equestrian-estate": [
    "green"
+  ],
+  "mahj-moon--garden-toile-round": [
+   "green"
+  ],
+  "mahj-moon--italian-riviera-foodie": [
+   "blue"
   ],
   "middle-main-mahjong--june-bride": [
    "green",
@@ -462,6 +523,70 @@
   ],
   "sunday-mahjong--bold-blooms-premium": [
    "blue"
+  ],
+  "hip-hip-mahjong--man-of-the-house": [
+   "red"
+  ],
+  "mahjong-register--paisley-jubilee-premium-2": [
+   "green",
+   "yellow"
+  ],
+  "royal-mahjong-society--girly-2": [
+   "green"
+  ],
+  "mahj-moon--blue-white-lemon-2": [
+   "yellow"
+  ],
+  "mahj-moon--equestrian-2": [
+   "blue"
+  ],
+  "mahj-moon--pastel-tie-dye-american-2": [
+   "pink"
+  ],
+  "mahj-moon--wildflower-american-2": [
+   "blue"
+  ],
+  "mahj-moon--heirloom-blooms-2": [
+   "blue"
+  ],
+  "mahj-moon--vintage-floral-gingham-2": [
+   "green"
+  ],
+  "mahj-moon--pastel-turtle-coastal-2": [
+   "green"
+  ],
+  "wren-mats--butterfly-2": [
+   "blue"
+  ],
+  "splash-of-color--preppy-animal-print-2": [
+   "blue"
+  ],
+  "yolo-mahjong--pastel-parrot": [
+   "blue"
+  ],
+  "bougie-mahjong--azure-dolphin-cove": [
+   "yellow"
+  ],
+  "bougie-mahjong--blue-porcelain-estate": [
+   "yellow"
+  ],
+  "let-s-be-besties--amalfi-fish": [
+   "yellow"
+  ],
+  "let-s-be-besties--floral-pink-watercolor": [
+   "blue"
+  ],
+  "let-s-be-besties--go-blue-michigan-game-day": [
+   "yellow"
+  ],
+  "let-s-be-besties--dragon": [
+   "yellow"
+  ],
+  "let-s-be-besties--sea-glass": [
+   "green"
+  ],
+  "let-s-be-besties--starfish": [
+   "yellow"
   ],
   "tigre-de-tartan--holy-mahj-retired": [
    "orange"

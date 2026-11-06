@@ -1,0 +1,169 @@
+"""Mat Gallery <- Find Your Mat-ch sync (Nov 6 2026; Tiffany 1:22am: the gallery is NOT kept up, Dapper 2 not marked Retired).
+Every FYM release now rebuilds the gallery from that release (site/livepatch/fym-preview-oct21/README.md release steps; gate [159b]).
+
+What it does (idempotent; rows it wrote before are replaced):
+ 1. Drafts one config/mat-gallery-extra-rows.json row (added = 'fym-<version>-sync') for every VISIBLE FYM mat that has no gallery row
+    (matched like gate [90]: FYM key, product URL or name + brand). Skipped: '#side-b' second listings, House of Hearts Studio
+    (Tiffany Oct 25: "FYM only for now"), crosstags remove_mats imgs/brands (Mahjong Studios), non-partners not on
+    builder/fym_flags/nonpartner_allow.json (gate [13] would fail them anyway).
+ 2. Exports each mat's FYM photo at 640px to assets/mats/gallery/<img>.webp (fym_photos.py reads the website copy's mc packs from
+    the fym-site-preview checkout, no network).
+ 3. Sections = the mat's FYM colour families in FYM order (FYM carries her colour calls), mapped to gallery sections by measuring
+    the 640px photo (scripts/colors/build_accents.py measure()): FYM 'blue' -> Teal & Aqua when the photo measures more teal than
+    blue; FYM 'dark' -> Earthy when it measures more earthy than dark; a mat with no tonal tag gets Pastels or Brights by lightness
+    and saturation. Holiday mats (FYM hol) -> ['holiday'] only (holiday rule); FYM ayr / wfh mats are added to the late-calls
+    also_year_round / works_for_holiday lists (they are her calls, already applied in FYM). eye = 0, so build_v5.py's measured
+    also-colour pass and accents run on them like any catalog mat, and her late calls are re-applied last as always.
+Then: python3 scripts/colors/build_accents.py; python3 site/livepatch/matgallery/build_v6.py <FYM index.html> ... (see README).
+Usage: python3 builder/fym_fix_nov06/gallery_sync.py <FYM website index.html> <fym-site checkout> [--write]
+       (dry run without --write: prints what it would add)"""
+import sys, os, io, json, re, subprocess, unicodedata, tempfile, collections
+from PIL import Image
+import numpy as np
+REPO = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')) + '/'
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, REPO + 'scripts/colors')
+from fym_photos import FymPhotos
+from families import _hls
+
+IDX, CHECKOUT = sys.argv[1], sys.argv[2]
+WRITE = '--write' in sys.argv
+h = open(IDX).read(); i = h.index('const D=') + 8; D, _ = json.JSONDecoder().raw_decode(h, i); M = D['mats']
+VER = re.search(r'fym-(v\d+)', os.path.abspath(IDX)).group(1)
+TAG = f'fym-{VER}-sync'
+GAL = REPO + 'site/livepatch/matgallery/'
+XP = REPO + 'config/mat-gallery-extra-rows.json'
+X = json.load(open(XP))
+old_rows = [a for a in X['rows'] if str(a.get('added', '')).endswith('-sync') and str(a.get('added', '')).startswith('fym-')]
+X['rows'] = [a for a in X['rows'] if a not in old_rows]
+
+# --- the gallery as build_v5 makes it today (without rows from an earlier run of this script) ---
+json.dump(X, open(XP, 'w'), indent=1, ensure_ascii=False)
+try:
+    out = subprocess.run([sys.executable, GAL + 'build_v5.py', REPO + 'builder/fym_fix_oct20/mat_audit_report.csv', GAL + 'phash_pairs_oct20.json'],
+                         capture_output=True, text=True, check=True, cwd=GAL).stdout
+finally:
+    pass
+G = json.loads(re.search(r'<script type="application/json">(.*?)</script>', out, re.S).group(1).replace('<\\/', '</'))
+
+nz = lambda x: re.sub(r'[^a-z0-9]', '', ''.join(c for c in unicodedata.normalize('NFD', str(x or '')) if not unicodedata.combining(c)).lower())
+slug = lambda x: re.sub(r'[^a-z0-9]+', '-', unicodedata.normalize('NFD', str(x)).encode('ascii', 'ignore').decode().lower()).strip('-')
+import urllib.parse as up
+
+
+def nu(u):
+    u = str(u or '')
+    if '/discount/' in u and 'redirect=' in u:
+        u = re.sub(r'^(https?://[^/]+).*$', r'\1', u) + up.unquote(u.split('redirect=', 1)[1].split('&')[0])
+    return re.sub(r'^https?://(www\.)?', '', u.split('?')[0].split('#')[0]).rstrip('/').replace('/products/', '/')
+
+
+MAN = json.load(open(GAL + 'manifest.json'))
+N53 = json.load(open(GAL + 'new53_rows.json'))['manifest']
+RA = {a['gallery_id']: a['fym_key'] for a in json.load(open(GAL + 'retired_additions_oct20.json'))}
+RA.update({a['img']: a['key'] for a in X['rows']})
+GK = lambda im: MAN.get(im) or N53.get(im) or RA.get(im)
+GKS = {GK(r[0]) for r in G}; GU = {nu(r[3]) for r in G if r[3]}; GN = {nz(r[1]) + '|' + nz(r[2]) for r in G}
+USED = {r[0] for r in G} | set(MAN) | {a['img'] for a in X['rows']}
+XT = json.load(open(REPO + 'config/mat-gallery-crosstags.json'))
+RMI, RMB = set(XT['remove_mats'].get('imgs', [])), set(XT['remove_mats'].get('brands', []))
+RMK = {MAN[i_] for i_ in RMI if i_ in MAN}
+import csv as _csv  # the gallery's own dedupe (Oct 20, hidden_oct20.csv): a catalog mat it folded into its twin stays out (e.g. Britt Mills
+DUPK = {MAN[r['img']] for r in _csv.DictReader(open(GAL + 'hidden_oct20.csv')) if r['reason'].startswith('duplicate') and r['img'] in MAN}  # neoprene = leatherette photo)
+NPA = json.load(open(REPO + 'builder/fym_flags/nonpartner_allow.json'))
+PARTNERS = {nz(b) for b in NPA['partners']}  # same lockout as fym_gate.py [9]/[13]
+MATCHED = {x[0] for s in D['sets'] if (s.get('album') or s.get('sb')) and not (s.get('hid') or D['tiles'].get(s['tile'], {}).get('hid')) for x in s['m']}
+GALLERY_SKIP_BRANDS = {'House of Hearts Studio': 'Tiffany Oct 25 11:06: add ALL its mats to FYM, "FYM only for now"'}
+HOLDS = json.load(open(REPO + 'config/mat-gallery-photo-holds.json'))['mats']
+LATE_P = REPO + 'config/tiffany-color-notes/2026-10-20-late-calls.json'
+LATE = json.load(open(LATE_P))
+
+# measure() from build_accents without running that script's main body
+src = open(REPO + 'scripts/colors/build_accents.py').read()
+ns = {'__file__': REPO + 'scripts/colors/build_accents.py'}
+exec(compile(src.split('\nout = {')[0], 'build_accents_head', 'exec'), ns)
+measure, pick = ns['measure'], ns['pick']
+
+
+def mood(im):
+    a = np.asarray(im.convert('RGB').resize((96, 96))).astype(float) / 255
+    hh, l, s = _hls(a)
+    keep = ~(((s < 0.14) | ((l > 0.86) & (s < 0.45))) & ((l > 0.72) | (l < 0.3)))  # drop white / black like fam_arr
+    if not keep.any(): return 'pastel'
+    L, S = float(l[keep].mean()), float(s[keep].mean())
+    return 'pastel' if (L >= 0.68 and S < 0.5) else 'brights'
+
+
+skipped = collections.Counter(); rows = []; P = FymPhotos(CHECKOUT, os.path.relpath(os.path.abspath(IDX), CHECKOUT))
+late_add = {'works_for_holiday': [], 'also_year_round': []}
+for k, m in M.items():
+    if m.get('hid') or '#side-b' in k: continue
+    us = {nu(m.get('u0')), nu(m.get('u')), nu(k)} - {''}
+    if k in GKS or us & GU or (nz(re.sub(r'\s*\(retired\)', '', m['n'], flags=re.I)) + '|' + nz(m.get('bn'))) in GN or (nz(m['n']) + '|' + nz(m.get('bn'))) in GN:
+        continue
+    bn = m.get('bn')
+    if bn in GALLERY_SKIP_BRANDS: skipped[bn + ' (FYM only for now)'] += 1; continue
+    if bn in RMB or k in RMK: skipped['removed brand/mat'] += 1; continue
+    if k in DUPK: skipped['gallery duplicate (hidden_oct20.csv)'] += 1; continue
+    if k in HOLDS: skipped['gallery photo hold (config/mat-gallery-photo-holds.json)'] += 1; continue
+    partner = bool(m.get('pa')) or nz(bn) in PARTNERS or bn in NPA['brands'] or k in NPA['mats'] or str(m.get('u', '')).startswith(NPA['shopmy_prefix']) or k in MATCHED
+    if not partner: skipped['non-partner not allowed'] += 1; print('  not allowed (gate [13] lockout):', bn, '|', m['n']); continue
+    raw = P.get(m['f'])
+    if raw is None: skipped['no FYM photo'] += 1; continue
+    name = re.sub(r'\s*\(retired\)\s*$', '', m.get('dn') or m['n'], flags=re.I).strip()
+    img = slug(bn) + '--' + slug(name)[:70]
+    base_img, n_ = img, 2
+    while img in USED: img = f'{base_img}-{n_}'; n_ += 1
+    USED.add(img)
+    im = Image.open(io.BytesIO(raw)).convert('RGB'); im.thumbnail((640, 640))
+    tmp = os.path.join(tempfile.gettempdir(), img + '.webp'); im.save(tmp, 'WEBP', quality=84)
+    acc, sh = pick(measure(tmp))
+    secs = []
+    for c in (m.get('mf') or []):
+        if c == 'blue': c = 'teal' if sh.get('teal', 0) > sh.get('blue', 0) else 'blue'
+        elif c == 'dark': c = 'earthy' if sh.get('earthy', 0) > sh.get('dark', 0) else 'dark'
+        if c not in secs: secs.append(c)
+    if not secs:
+        secs = [max((f for f in sh if f in ('pink', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple', 'neutral', 'earthy', 'dark')), key=lambda f: sh[f], default='neutral')]
+    if not any(c in ('neutral', 'earthy', 'dark', 'bw') for c in secs):
+        secs.append(mood(im))
+    hol = bool(m.get('hol'))
+    if hol and not m.get('ayr'):
+        secs = ['holiday']
+    elif hol and m.get('ayr'):
+        late_add['also_year_round'].append((img, f"{bn} {name}", [c for c in secs if c != 'holiday']))
+        secs = [c for c in secs if c != 'holiday'] + ['holiday']
+    if m.get('wfh') and not hol:
+        late_add['works_for_holiday'].append((img, f"{bn} {name}", k))
+    code = re.sub(r'^https?://(www\.)?mahjmatchmaker\.com', '', m.get('dc') or '') if m.get('pa') else ''
+    rows.append({'img': img, 'key': k, 'name': name, 'brand': bn, 'url': '' if m.get('rt') else (m.get('u') or ''), 'code': code, 'secs': secs,
+                 'img_commit': 'PENDING', 'eye': 0, 'added': TAG, 'ret': 1 if m.get('rt') else 0,
+                 'note': f"{TAG} (gallery_sync.py): photo = FYM {VER} {m['f']} at 640px; sections = FYM colours {m.get('mf')} mapped by the measured photo"
+                         f" (shares {dict(sorted(sh.items(), key=lambda kv: -kv[1])[:4])}){'; holiday (FYM hol)' if hol else ''}; measured also-colours + accents by build_v5.py.",
+                 '_tmp': tmp})
+
+print(f'{VER}: {len(rows)} gallery rows to add (previous {TAG}-style rows replaced: {len(old_rows)})')
+print('  by brand:', dict(collections.Counter(r['brand'] for r in rows).most_common()))
+print('  holiday:', sum(1 for r in rows if r['secs'] == ['holiday']), ' retired:', sum(r['ret'] for r in rows))
+print('  skipped:', dict(skipped))
+print('  late-calls adds:', {k: [x[1] for x in v] for k, v in late_add.items()})
+if WRITE:
+    for a in old_rows:  # webps of rows an earlier run wrote and this run no longer makes
+        if a['img'] not in {r['img'] for r in rows} and os.path.exists(REPO + f"assets/mats/gallery/{a['img']}.webp"):
+            os.remove(REPO + f"assets/mats/gallery/{a['img']}.webp")
+    for r in rows:
+        os.replace(r.pop('_tmp'), REPO + f"assets/mats/gallery/{r['img']}.webp")
+    X['rows'] += rows
+    json.dump(X, open(XP, 'w'), indent=1, ensure_ascii=False)
+    wfh = LATE['works_for_holiday']
+    for img, nm, k in late_add['works_for_holiday']:
+        if img not in wfh['imgs']:
+            wfh['imgs'].append(img); wfh.setdefault('names', {})[img] = nm + f' (FYM wfh flag = her call; added by {TAG})'
+    ayr = LATE['also_year_round']['mats']
+    for img, nm, secs in late_add['also_year_round']:
+        ayr.setdefault(img, {'name': nm, 'sections': secs, 'note': f'FYM ayr flag (her call); added by {TAG}'})
+    json.dump(LATE, open(LATE_P, 'w'), indent=1, ensure_ascii=False)
+    print('written', len(rows), 'rows + webps; img_commit = PENDING until the webps are committed; build_v6.py fills it from git (the commit that added the file)')
+else:
+    for r in rows: os.remove(r['_tmp'])
+    json.dump(dict(X, rows=X['rows'] + old_rows), open(XP, 'w'), indent=1, ensure_ascii=False)  # dry run: leave the config as it was

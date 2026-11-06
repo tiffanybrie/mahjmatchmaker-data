@@ -280,8 +280,11 @@
  },
  "v5_final_calls": [
   "amahj--blue-citron-lilac-mahjong-game-mat",
+  "mahj-moon--tropical-hibiscus",
   "amanda-toppe--limelight",
   "birdsong-mahjong--heaven-scent",
+  "mahj-moon--blue-tropical-palm",
+  "mahj-moon--scalloped-tropical-palm",
   "sunday-mahjong--plum-panda-premium",
   "sunday-mahjong--sunday-premium",
   "amanda-toppe--city-queen",
@@ -301,9 +304,12 @@
  "v5_pastel_to_brights": [
   "anders-ruff--a-mahjong-soir-e-mahjong-mat",
   "let-s-mahj-on--signature-dragon-mat-light-pink",
+  "mahj-moon--paris-in-bloom",
   "peace-love-mahjong--hot-tips-cabana-crush",
   "mahj-moon--leopard-american",
   "bespoke-mahjong--flirty-leopards-mint-julep",
+  "mahj-moon--blue-tropical-palm",
+  "mahj-moon--butterfly-floral",
   "anders-ruff--harbor-house-mahjong-mat",
   "mahjong-register--buttercup-cherie-premium",
   "oh-my-mahjong--year-of-the-horse",
@@ -328,13 +334,19 @@
   "charleston-mahjong-club--reversible-vegan-leather-blush-pink-cornflower-blue",
   "charleston-mahjong-club--the-club-mat-pink-white-striped",
   "charleston-mahjong-club--the-cocktail-club-mat",
+  "hutch-nook--pink-rose",
   "let-s-be-besties--green-blooms",
   "let-s-be-besties--green-bright-floral",
   "let-s-be-besties--pink-blooms",
   "let-s-mahj-on--lmo-floral-border-mat-petal",
   "let-s-mahj-on--signature-logo-mat-bright-pink",
   "let-s-mahj-on--signature-logo-mat-pastel-pink",
+  "mahj-moon--blue-pastel-palm-beach",
+  "mahj-moon--palm-tree",
+  "mahj-moon--pastel-palm-beach",
+  "mahj-moon--pink-bow-garden",
   "mahj-moon--pink-citrus",
+  "mahj-moon--pink-wildflower",
   "mahj-vine--botanic-blush",
   "mahj-vine--chinoiserie-songbird",
   "mahj-vine--coral-orchard",
@@ -354,6 +366,7 @@
   "amahj--on-the-water",
   "amahj--round-top",
   "let-s-mahj-on--signature-logo-mat-orange",
+  "mahj-moon--butterfly-garden",
   "mahj-moon--grand-garden-estate",
   "mahjong-register--coral-aqua-double-sided-leatherette",
   "mahjong-register--sunday-sherbert-double-sided-leatherette",
@@ -374,6 +387,8 @@
   "birdsong-mahjong--heaven-scent",
   "charleston-mahjong-club--reversible-vegan-leather-mint-green-sea-foam-green",
   "charleston-mahjong-club--the-club-mat-blue-green-stripe",
+  "mahj-moon--coastal-american",
+  "mahj-moon--palm-beach-american",
   "mahj-mood--the-eloise-collection-mat-collab-with-four-winds-social",
   "mahjong-register--emerald-teal-celedon-green-double-sided-leatherette",
   "my-fair-mahjong--confetti-green",
@@ -406,6 +421,8 @@
   "charleston-mahjong-club--reversible-vegan-leather-sea-foam-green-dusty-blue",
   "charleston-mahjong-club--the-migration-mat-teal-periwinkle-blue",
   "hutch-nook--blue-cowboy-boot",
+  "hutch-nook--blue-white-bird",
+  "hutch-nook--summer-blossom",
   "let-s-mahj-on--let-s-be-refined-refined-blue",
   "let-s-mahj-on--let-s-be-refined-refined-blue-soft-blue-border",
   "let-s-mahj-on--let-s-be-refined-soft-blue",
@@ -436,8 +453,10 @@
   "bird-bamboo--danay",
   "bird-bamboo--jubilee-bloom",
   "britt-mills--mabel-neoprene-mahjong-mat",
+  "hutch-nook--lavender",
   "let-s-be-besties--purple-and-pink-plaid",
   "let-s-mahj-on--signature-logo-mat-light-pink",
+  "mahj-moon--seashell-american",
   "mahjong-register--purple-coral-pink-double-sided-leatherette",
   "middle-main-mahjong--violet-vines-wisteria",
   "my-fair-mahjong--confetti-purple",
@@ -479,91 +498,6 @@
   "four-winds-social--four-winds-fawn",
   "four-winds-social--mulled-mahj-holiday",
   "four-winds-social--preppy-poinsettia",
-  "hutch-nook--pink-rose",
-  "hutch-nook--blue-white-bird",
-  "hutch-nook--moody",
-  "hutch-nook--summer-blossom",
-  "hutch-nook--lavender",
-  "hutch-nook--peacock-garden",
-  "hutch-nook--winged-wonders",
-  "mahj-moon--amongst-the-lemon-groves-pink",
-  "mahj-moon--blossom-aviary",
-  "mahj-moon--blue-pastel-palm-beach",
-  "mahj-moon--cherry-blossom",
-  "mahj-moon--desert-oasis",
-  "mahj-moon--heirloom-blooms",
-  "mahj-moon--orchard-songbird",
-  "mahj-moon--palm-tree",
-  "mahj-moon--paris-in-bloom",
-  "mahj-moon--pastel-garden-landscape",
-  "mahj-moon--pastel-palm-beach",
-  "mahj-moon--pastel-turtle-coastal",
-  "mahj-moon--pastel-wildflower-gingham",
-  "mahj-moon--personalized-bow-american",
-  "mahj-moon--personalized-vibrant-floral-chinoiserie-pink",
-  "mahj-moon--pink-green-floral",
-  "mahj-moon--pink-bow-garden",
-  "mahj-moon--pink-folk-floral",
-  "mahj-moon--pink-wildflower",
-  "mahj-moon--scalloped-blossom-aviary",
-  "mahj-moon--strawberry-garden-american",
-  "mahj-moon--tropical-hibiscus",
-  "mahj-moon--vibrant-floral-chinoiserie-pink",
-  "mahj-moon--pink-damask-american",
-  "mahj-moon--blush-butterfly",
-  "mahj-moon--butterfly-garden",
-  "mahj-moon--celestial-sun",
-  "mahj-moon--lemon-stripe",
-  "mahj-moon--pastel-tie-dye-american",
-  "mahj-moon--the-sun-tarot",
-  "mahj-moon--wildflower-american",
-  "mahj-moon--botanical-butterfly",
-  "mahj-moon--coastal-american",
-  "mahj-moon--emerald-tiger-chinoiserie",
-  "mahj-moon--emerald-tiger-jungle",
-  "mahj-moon--english-garden-gingham",
-  "mahj-moon--green-menagerie-toile",
-  "mahj-moon--green-retro",
-  "mahj-moon--monkey-garden",
-  "mahj-moon--palm-beach-american",
-  "mahj-moon--pink-floral-round",
-  "mahj-moon--scalloped-chinoiserie-bird-floral",
-  "mahj-moon--scalloped-pastel-palm-beach-toile",
-  "mahj-moon--strawberry-thief-inspired",
-  "mahj-moon--tropical-island-garden",
-  "mahj-moon--william-morris-inspired-round",
-  "mahj-moon--zebra-palm-chinoiserie",
-  "mahj-moon--blue-tropical-palm",
-  "mahj-moon--butterfly-floral",
-  "mahj-moon--palm-beach-american-2",
-  "mahj-moon--scalloped-tropical-palm",
-  "mahj-moon--blue-white-lemon",
-  "mahj-moon--blush-botanical",
-  "mahj-moon--elephant-paisley",
-  "mahj-moon--french-country-estate",
-  "mahj-moon--koi-pond",
-  "mahj-moon--lion-american",
-  "mahj-moon--pickleball",
-  "mahj-moon--purple-floral-gingham-geometric",
-  "mahj-moon--riviera-beach-club",
-  "mahj-moon--pink-blue-paisley",
-  "mahj-moon--seashell-american",
-  "mahj-moon--tropical-leopard",
-  "mahj-moon--round-leopard-print",
-  "mahj-moon--autumn-leaves",
-  "mahj-moon--botanical-chevron",
-  "mahj-moon--celestial-dragon-chinoiserie",
-  "mahj-moon--cowgirl-rodeo",
-  "mahj-moon--desert",
-  "mahj-moon--garden-toile-round",
-  "mahj-moon--italian-riviera-foodie",
-  "mahj-moon--coastal-bloom",
-  "mahj-moon--candy-cane-christmas-village",
-  "mahj-moon--christmas-toile",
-  "mahj-moon--christmas-village-gingham",
-  "mahj-moon--festive-citrus-chinoiserie",
-  "mahj-moon--harvest-pumpkin-thanksgiving",
-  "mahj-moon--valentine-hearts-american",
   "maison-mahj--the-rue-de-paris",
   "maison-mahj--the-signature-house",
   "maison-mahj--the-olive-city",
@@ -909,8 +843,7 @@
    "blue",
    "teal",
    "simple"
-  ],
-  "mahj-moon--tropical-island-garden": "tail not in gallery"
+  ]
  },
  "holiday_exceptions_oct21": {
   "also_year_round": {
@@ -989,19 +922,19 @@
    ]
   },
   "works_for_holiday": {
-   "oh-my-mahjong--dapper-1-retired": [
-    "earthy"
-   ],
    "oh-my-mahjong--dapper-2": [
     "purple",
     "dark"
    ],
-   "sunday-mahjong--rattan": [
-    "earthy"
-   ],
    "luxe-mahjong--the-polo-club": [
     "dark",
     "yellow"
+   ],
+   "sunday-mahjong--rattan": [
+    "earthy"
+   ],
+   "oh-my-mahjong--dapper-1-retired": [
+    "earthy"
    ]
   }
  },
@@ -1809,62 +1742,62 @@
    ]
   }
  },
- "claude_also_added": 140,
+ "claude_also_added": 180,
  "section_tiers_active": {
   "pink": {
-   "primary": 122,
-   "also": 72,
-   "accent": 62
+   "primary": 235,
+   "also": 217,
+   "accent": 83
   },
   "red": {
-   "primary": 22,
-   "also": 35,
-   "accent": 19
+   "primary": 41,
+   "also": 95,
+   "accent": 22
   },
   "orange": {
-   "primary": 24,
-   "also": 37,
-   "accent": 11
+   "primary": 48,
+   "also": 122,
+   "accent": 20
   },
   "yellow": {
-   "primary": 15,
-   "also": 39,
-   "accent": 7
+   "primary": 27,
+   "also": 87,
+   "accent": 17
   },
   "green": {
-   "primary": 94,
-   "also": 88,
-   "accent": 56
-  },
-  "teal": {
-   "primary": 43,
-   "also": 33,
-   "accent": 15
-  },
-  "blue": {
-   "primary": 136,
-   "also": 82,
-   "accent": 54
-  },
-  "purple": {
-   "primary": 46,
-   "also": 21,
-   "accent": 13
-  },
-  "neutral": {
-   "primary": 57,
-   "also": 17,
+   "primary": 197,
+   "also": 257,
    "accent": 71
   },
+  "teal": {
+   "primary": 67,
+   "also": 50,
+   "accent": 24
+  },
+  "blue": {
+   "primary": 276,
+   "also": 191,
+   "accent": 73
+  },
+  "purple": {
+   "primary": 74,
+   "also": 57,
+   "accent": 15
+  },
+  "neutral": {
+   "primary": 110,
+   "also": 153,
+   "accent": 91
+  },
   "earthy": {
-   "primary": 36,
-   "also": 48,
-   "accent": 101
+   "primary": 92,
+   "also": 140,
+   "accent": 140
   },
   "dark": {
-   "primary": 36,
-   "also": 50,
-   "accent": 25
+   "primary": 77,
+   "also": 92,
+   "accent": 34
   },
   "bw": {
    "primary": 13,
@@ -1873,31 +1806,31 @@
   },
   "simple": {
    "primary": 2,
-   "also": 153,
+   "also": 166,
    "accent": 0
   },
   "pastel": {
    "primary": 0,
-   "also": 124,
+   "also": 191,
    "accent": 0
   },
   "brights": {
    "primary": 11,
-   "also": 175,
+   "also": 404,
    "accent": 0
   },
   "florals": {
-   "primary": 17,
-   "also": 25,
+   "primary": 20,
+   "also": 27,
    "accent": 0
   },
   "animal": {
    "primary": 0,
-   "also": 30,
+   "also": 35,
    "accent": 0
   },
   "holiday": {
-   "primary": 91,
+   "primary": 173,
    "also": 8,
    "accent": 0
   },
@@ -1908,49 +1841,49 @@
   }
  },
  "section_counts_active": {
-  "pink": 256,
-  "red": 76,
-  "orange": 72,
-  "yellow": 61,
-  "green": 238,
-  "teal": 91,
-  "blue": 272,
-  "purple": 80,
-  "neutral": 145,
-  "earthy": 185,
-  "dark": 111,
+  "pink": 535,
+  "red": 158,
+  "orange": 190,
+  "yellow": 131,
+  "green": 525,
+  "teal": 141,
+  "blue": 540,
+  "purple": 146,
+  "neutral": 354,
+  "earthy": 372,
+  "dark": 203,
   "bw": 13,
-  "simple": 155,
-  "pastel": 124,
-  "brights": 186,
-  "florals": 42,
-  "animal": 30,
-  "holiday": 99,
+  "simple": 168,
+  "pastel": 191,
+  "brights": 415,
+  "florals": 47,
+  "animal": 35,
+  "holiday": 181,
   "multi": 0,
   "retired": 29
  },
  "section_counts_if_retired_shown": {
-  "pink": 270,
-  "red": 79,
-  "orange": 75,
-  "yellow": 66,
-  "green": 251,
-  "teal": 97,
-  "blue": 283,
-  "purple": 83,
-  "neutral": 150,
-  "earthy": 189,
-  "dark": 113,
+  "pink": 549,
+  "red": 161,
+  "orange": 193,
+  "yellow": 136,
+  "green": 538,
+  "teal": 147,
+  "blue": 551,
+  "purple": 149,
+  "neutral": 359,
+  "earthy": 376,
+  "dark": 205,
   "bw": 13,
-  "simple": 157,
-  "pastel": 133,
-  "brights": 198,
-  "florals": 45,
-  "animal": 30,
-  "holiday": 101,
+  "simple": 170,
+  "pastel": 200,
+  "brights": 427,
+  "florals": 50,
+  "animal": 35,
+  "holiday": 183,
   "multi": 0
  },
- "unique_active_mats": 764,
+ "unique_active_mats": 1462,
  "retired": 29,
  "hidden": 18,
  "dedupe_groups": 12,
@@ -3388,6 +3321,14 @@
   "hip-hip-mahjong--rackin-rudolph-mahjong-mat": [
    "Rackin' Rudolph Mahjong Mat!",
    "Rackin' Rudolph!"
+  ],
+  "mahj-moon--palm-beach-american": [
+   "Palm Beach American",
+   "Palm Beach American – Bermuda"
+  ],
+  "mahj-moon--palm-beach-american-2": [
+   "Palm Beach American",
+   "Palm Beach American – Harbor"
   ],
   "mahj-moon--retro-waves-3": [
    "Retro Waves",

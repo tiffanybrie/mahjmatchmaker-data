@@ -1,0 +1,35 @@
+{
+ "by": "claude-photo-review",
+ "date": "2026-11-06",
+ "about": "Mat Gallery photo holds (gallery bar = product photo of the mat; FYM's lower bar keeps these in FYM). builder/fym_fix_nov06/gallery_sync.py leaves these FYM mats out of the gallery until FYM has a clearer photo. Keyed by FYM mat key.",
+ "mats": {
+  "mahjpit.co/paint-party-mat": {
+   "name": "Mahj Pit Paint Party",
+   "reason": "mat mostly covered by racks/tiles"
+  },
+  "mahjpit.co/turkey-dinner-mat": {
+   "name": "Mahj Pit Turkey Dinner",
+   "reason": "edge crop with a white band, not the whole mat"
+  },
+  "mahjpit.co/poppylicious-mat": {
+   "name": "Mahj Pit Poppylicious",
+   "reason": "mat covered by racks/tiles"
+  },
+  "mahjpit.co/acid-in-the-library-may": {
+   "name": "Mahj Pit Acid in the Library",
+   "reason": "mat covered by tiles"
+  },
+  "mahjpit.co/primary-on-broughton": {
+   "name": "Mahj Pit Primary on Broughton",
+   "reason": "mat covered by racks/tiles"
+  },
+  "mahjpit.co/deep-blue-mat": {
+   "name": "Mahj Pit Deep Blue",
+   "reason": "thin strip of the mat (logo corner)"
+  },
+  "mahjpit.co/all-vibes-mat": {
+   "name": "Mahj Pit All Vibes",
+   "reason": "shows a rack, barely any mat"
+  }
+ }
+}

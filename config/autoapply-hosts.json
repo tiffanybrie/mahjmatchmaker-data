@@ -1,0 +1,637 @@
+{
+ "_about": "Auto-apply discount links (Nov 6 2026, standing authority: links checks). A Shopify /discount/<CODE>?redirect=<path+query> link sets the discount_code cookie so the code is already applied at checkout; a plain /products/ link applies nothing (verified in a fresh browser Nov 6, docs/ANSWERS.md). Read by builder/fym_fix_nov06/autoapply_links.py (FYM 1.16+ builds and the Mat Gallery build_v6.py) and fym_gate.py [159]. Hosts are matched without 'www.'. 'hosts' = Shopify stores of code partners (cookie checked with curl + Playwright Nov 6, see 'verified'); 'skip' = left exactly as they are, with the reason.",
+ "hosts": {
+  "amahjline.com": {
+   "brand": "Amahj",
+   "code": "MAHJMATCH"
+  },
+  "bambirdboutique.com": {
+   "brand": "Bam Bird Boutique",
+   "code": "MAHJMATCH"
+  },
+  "bamletsmahjong.com": {
+   "brand": "Bam! Let's Mahjong",
+   "code": "MAHJMATCH"
+  },
+  "bespokemahjong.com": {
+   "brand": "Bespoke Mahjong",
+   "code": "MAHJMATCH"
+  },
+  "birdandbamboo.com": {
+   "brand": "Bird & Bamboo",
+   "code": "MAHJMATCH"
+  },
+  "brittmillsdesign.com": {
+   "brand": "Britt Mills",
+   "code": "MAHJMATCH"
+  },
+  "charlestonmahjongclub.com": {
+   "brand": "Charleston Mahjong Club",
+   "code": "MAHJMATCH"
+  },
+  "hiphipmahjong.com": {
+   "brand": "Hip Hip Mahjong",
+   "code": "MAHJMATCH"
+  },
+  "letsbebesties.com": {
+   "brand": "Let's Be Besties",
+   "code": "MAHJMATCH"
+  },
+  "letsmahj-on.com": {
+   "brand": "Let's Mahj On",
+   "code": "MAHJMATCH"
+  },
+  "macandmillermahjong.com": {
+   "brand": "Mac + Miller Mahjong",
+   "code": "MAHJMATCH"
+  },
+  "mahjandvine.com": {
+   "brand": "Mahj & Vine",
+   "code": "MAHJMATCH"
+  },
+  "mahjmood.com": {
+   "brand": "Mahj Mood",
+   "code": "MAHJMATCH"
+  },
+  "mahjpit.co": {
+   "brand": "Mahj Pit",
+   "code": "MAHJMATCH"
+  },
+  "mahjsquadshop.com": {
+   "brand": "Mahj Squad",
+   "code": "MAHJMATCH"
+  },
+  "mahjongco.com": {
+   "brand": "Mahjong Co.",
+   "code": "MAHJMATCH"
+  },
+  "mahjongregister.com": {
+   "brand": "Mahjong Register",
+   "code": "MAHJMATCH"
+  },
+  "mahjongrowandco.com": {
+   "brand": "Mahjong Row & Co.",
+   "code": "MAHJMATCH"
+  },
+  "mahjongstudios.com": {
+   "brand": "Mahjong Studios",
+   "code": "MAHJMATCH"
+  },
+  "middleandmainmahjong.com": {
+   "brand": "Middle & Main Mahjong",
+   "code": "MAHJMATCH"
+  },
+  "missmahjong.com": {
+   "brand": "Miss Mahjong",
+   "code": "MAHJMATCH"
+  },
+  "myfairmahjong.com": {
+   "brand": "My Fair Mahjong",
+   "code": "MAHJMATCH"
+  },
+  "nolijune.com": {
+   "brand": "Noli June",
+   "code": "MAHJMATCH",
+   "pre": "dt_id=3655694",
+   "note": "brand guide Oct 30: deep links nolijune.com/discount/MAHJMATCH?dt_id=3655694&redirect=..."
+  },
+  "ohmymahjong.com": {
+   "brand": "Oh My Mahjong",
+   "code": "MAHJMATCH"
+  },
+  "peacelovemahjong.com": {
+   "brand": "Peace Love Mahjong",
+   "code": "MAHJMATCH"
+  },
+  "shop.andersruff.com": {
+   "brand": "Anders Ruff",
+   "code": "MAHJMATCH"
+  },
+  "splashofcolorco.com": {
+   "brand": "Splash of Color",
+   "code": "MAHJMATCH"
+  },
+  "theroyalmahjongsociety.com": {
+   "brand": "The Royal Mahjong Society",
+   "code": "MAHJMATCH"
+  },
+  "viroramahjong.com": {
+   "brand": "Virora Mahjong",
+   "code": "MAHJMATCH"
+  },
+  "ymimports.com": {
+   "brand": "Yellow Mountain Imports",
+   "code": "MAHJMATCH10-YMI-2025",
+   "note": "YMI's own code (codes hub)"
+  },
+  "yolomahjong.com": {
+   "brand": "YOLO Mahjong",
+   "code": "MAHJMATCH"
+  }
+ },
+ "skip": {
+  "tigredetartan.com": "Tiffany Oct 30: visible-only compliance; leave every TdT link exactly as it is",
+  "soireeallday.co": "Squarespace store (no /discount/ endpoint, 404); uses its own ?ref= links",
+  "wrenmats.com": "Squarespace store (no /discount/ endpoint, 404)",
+  "amandatoppeart.com": "Squarespace store (no /discount/ endpoint, 404)",
+  "maisonmahj.com": "code = free shipping on tile sets only; brand guide: link plain maisonmahj.com",
+  "go.shopmy.us": "ShopMy affiliate link",
+  "amzn.to": "Amazon",
+  "amazon.com": "Amazon"
+ },
+ "verified": {
+  "date": "2026-11-06",
+  "how": "Playwright chromium, fresh context per link (iPhone UA): goto the /discount/ link -> HTTP 200, final URL = the redirect product, cookie discount_code = the code",
+  "hosts": {
+   "amahjline.com": [
+    {
+     "link": "https://amahjline.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fsquiggle-pink-blue-green-amahj-game-mat",
+     "status": 200,
+     "final": "https://amahjline.com/products/squiggle-pink-blue-green-amahj-game-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://amahjline.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fon-the-water-mahjong-game-mat",
+     "status": 200,
+     "final": "https://amahjline.com/products/on-the-water-mahjong-game-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "bambirdboutique.com": [
+    {
+     "link": "https://www.bambirdboutique.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fvintage-plum-neoprene-mahjong-mat%3Fsca_ref%3D10069575.cf1ZUJEgbaOpCDgy",
+     "status": 200,
+     "final": "https://www.bambirdboutique.com/products/vintage-plum-neoprene-mahjong-mat?sca_ref=10069575.cf1ZUJEgbaOpCDgy",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://www.bambirdboutique.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fdeco-neoprene-mahjong-mat",
+     "status": 200,
+     "final": "https://www.bambirdboutique.com/products/deco-neoprene-mahjong-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "bamletsmahjong.com": [
+    {
+     "link": "https://www.bamletsmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fart-deco-mahjong-mat",
+     "status": 200,
+     "final": "https://www.bamletsmahjong.com/products/art-deco-mahjong-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://www.bamletsmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fsecret-garden-mahjong-mat-watercolor-floral-mahjong-mat",
+     "status": 200,
+     "final": "https://www.bamletsmahjong.com/products/secret-garden-mahjong-mat-watercolor-floral-mahjong-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "bespokemahjong.com": [
+    {
+     "link": "https://www.bespokemahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fcobalt-blue-leopard-game-mat",
+     "status": 200,
+     "final": "https://bespokemahjong.com/products/cobalt-blue-leopard-game-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://www.bespokemahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fyear-of-the-dragon-mat-periwinkle%3Fsca_ref%3D10217561.eoZg0pKJHSf8IQSE",
+     "status": 200,
+     "final": "https://bespokemahjong.com/products/year-of-the-dragon-mat-periwinkle?sca_ref=10217561.eoZg0pKJHSf8IQSE",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "birdandbamboo.com": [
+    {
+     "link": "https://birdandbamboo.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fthe-paradise-mahjong-mat-blue-bliss-copy",
+     "status": 200,
+     "final": "https://birdandbamboo.com/products/the-paradise-mahjong-mat-blue-bliss-copy",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://birdandbamboo.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fthe-royal-deco-mahjong-mat",
+     "status": 200,
+     "final": "https://birdandbamboo.com/products/the-royal-deco-mahjong-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "brittmillsdesign.com": [
+    {
+     "link": "https://brittmillsdesign.com/discount/MAHJMATCH?redirect=%2Fproducts%2Flegacy-leatherette-mahjong-mat%3Fsca_ref%3D11205153.24gc8ncLZw3",
+     "status": 200,
+     "final": "https://brittmillsdesign.com/products/legacy-leatherette-mahjong-mat?sca_ref=11205153.24gc8ncLZw3",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://brittmillsdesign.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fregal-bloom-neoprene-mahjong-mat",
+     "status": 200,
+     "final": "https://brittmillsdesign.com/products/regal-bloom-neoprene-mahjong-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "charlestonmahjongclub.com": [
+    {
+     "link": "https://charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fthe-hunt-club-neoprene-mat-toile-w-carrying-bag%3Fsca_ref%3D10024640.r4MqWQJxOaKK",
+     "status": 200,
+     "final": "https://www.charlestonmahjongclub.com/products/the-hunt-club-neoprene-mat-toile-w-carrying-bag?sca_ref=10024640.r4MqWQJxOaKK",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fnew-brown-vegan-leather-mahjong-mat-w-carrying-bag-copy%3Fsca_ref%3D10024640.r4MqWQJxOaKK",
+     "status": 200,
+     "final": "https://www.charlestonmahjongclub.com/products/new-brown-vegan-leather-mahjong-mat-w-carrying-bag-copy?sca_ref=10024640.r4MqWQJxOaKK",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "hiphipmahjong.com": [
+    {
+     "link": "https://www.hiphipmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fshell-ebration-mahjong-mat",
+     "status": 200,
+     "final": "https://www.hiphipmahjong.com/products/shell-ebration-mahjong-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://www.hiphipmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fsanta-baby-racks",
+     "status": 200,
+     "final": "https://www.hiphipmahjong.com/products/santa-baby-racks",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "letsbebesties.com": [
+    {
+     "link": "https://letsbebesties.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fgreen-bright-floral-mahjong-mat%3Fsca_ref%3D12515508.SUyXEjJsqV",
+     "status": 200,
+     "final": "https://letsbebesties.com/products/green-bright-floral-mahjong-mat?sca_ref=12515508.SUyXEjJsqV",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://letsbebesties.com/discount/MAHJMATCH?redirect=%2Fproducts%2Ftartan-tweed-mahjong-mat%3Fsca_ref%3D12515508.SUyXEjJsqV",
+     "status": 200,
+     "final": "https://letsbebesties.com/products/tartan-tweed-mahjong-mat?sca_ref=12515508.SUyXEjJsqV",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "letsmahj-on.com": [
+    {
+     "link": "https://www.letsmahj-on.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fsignature-logo-mat%3Fvariant%3D42705442537577",
+     "status": 200,
+     "final": "https://www.letsmahj-on.com/products/signature-logo-mat?variant=42705442537577",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://www.letsmahj-on.com/discount/MAHJMATCH?redirect=%2Fproducts%2Flet-s-mahj-on-full-floral-mat",
+     "status": 200,
+     "final": "https://www.letsmahj-on.com/products/let-s-mahj-on-full-floral-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "macandmillermahjong.com": [
+    {
+     "link": "https://www.macandmillermahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fheirloom-fire-fortune-mahjong-mat",
+     "status": 200,
+     "final": "https://www.macandmillermahjong.com/products/heirloom-fire-fortune-mahjong-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://www.macandmillermahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Flaissez-les-bons-temps-rouler-tile-set-pre-order-ships-march-2026",
+     "status": 200,
+     "final": "https://www.macandmillermahjong.com/products/laissez-les-bons-temps-rouler-tile-set-pre-order-ships-march-2026",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "mahjandvine.com": [
+    {
+     "link": "https://mahjandvine.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fshady-lady-umbrella-mat-sunset",
+     "status": 200,
+     "final": "https://mahjandvine.com/products/shady-lady-umbrella-mat-sunset",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://mahjandvine.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fwatercolor-bloom%3Fsca_ref%3D10366165.hDgHZlY4LYtU0W",
+     "status": 200,
+     "final": "https://mahjandvine.com/products/watercolor-bloom?sca_ref=10366165.hDgHZlY4LYtU0W",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "mahjmood.com": [
+    {
+     "link": "https://mahjmood.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fsleigh-all-day-mat",
+     "status": 200,
+     "final": "https://mahjmood.com/products/sleigh-all-day-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://mahjmood.com/discount/MAHJMATCH?redirect=%2Fproducts%2Ffall-fling-mat",
+     "status": 200,
+     "final": "https://mahjmood.com/products/fall-fling-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "mahjongco.com": [
+    {
+     "link": "https://mahjongco.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fkaleidoscope-mahjong-tiles%3Fsca_ref%3D10562574.vUD4JwHzITqzZp4",
+     "status": 200,
+     "final": "https://mahjongco.com/products/kaleidoscope-mahjong-tiles?sca_ref=10562574.vUD4JwHzITqzZp4",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "mahjongregister.com": [
+    {
+     "link": "https://mahjongregister.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fsunday-sherbert-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy",
+     "status": 200,
+     "final": "https://mahjongregister.com/products/sunday-sherbert-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://mahjongregister.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fzebra-noir-safari-club-collection-33-mahjong-mat",
+     "status": 200,
+     "final": "https://mahjongregister.com/products/zebra-noir-safari-club-collection-33-mahjong-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "mahjongrowandco.com": [
+    {
+     "link": "https://mahjongrowandco.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fivy-reverie-mat%3Fsca_ref%3D12475363.JLitn0fWe79Xnn",
+     "status": 200,
+     "final": "https://mahjongrowandco.com/products/ivy-reverie-mat?sca_ref=12475363.JLitn0fWe79Xnn",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://mahjongrowandco.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fmocha-bloom-light-mat%3Fsca_ref%3D12475363.JLitn0fWe79Xnn",
+     "status": 200,
+     "final": "https://mahjongrowandco.com/products/mocha-bloom-light-mat?sca_ref=12475363.JLitn0fWe79Xnn",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "mahjongstudios.com": [
+    {
+     "link": "https://mahjongstudios.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fessential-mahjong-tiles",
+     "status": 200,
+     "final": "https://mahjongstudios.com/products/essential-mahjong-tiles",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://mahjongstudios.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fmahjong-studios-american-mahjong-tile-set-yellow-lilac-ocean-blue",
+     "status": 200,
+     "final": "https://mahjongstudios.com/products/mahjong-studios-american-mahjong-tile-set-yellow-lilac-ocean-blue",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "mahjpit.co": [
+    {
+     "link": "https://mahjpit.co/discount/MAHJMATCH?redirect=%2Fproducts%2Fthe-commuter-skinny-tiles-only%3Fsca_ref%3D12703261.srer4OxWkeRwwDVs",
+     "status": 200,
+     "final": "https://mahjpit.co/products/the-commuter-skinny-tiles-only?sca_ref=12703261.srer4OxWkeRwwDVs",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://mahjpit.co/discount/MAHJMATCH?redirect=%2Fproducts%2Fturkey-dinner-mat%3Fsca_ref%3D12703261.srer4OxWkeRwwDVs",
+     "status": 200,
+     "final": "https://mahjpit.co/products/turkey-dinner-mat?sca_ref=12703261.srer4OxWkeRwwDVs",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "mahjsquadshop.com": [
+    {
+     "link": "https://mahjsquadshop.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fthe-greenwich-mat",
+     "status": 200,
+     "final": "https://mahjsquadshop.com/products/the-greenwich-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://mahjsquadshop.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fbronte-collection-thrushcross-grange",
+     "status": 200,
+     "final": "https://mahjsquadshop.com/products/bronte-collection-thrushcross-grange",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "middleandmainmahjong.com": [
+    {
+     "link": "https://www.middleandmainmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fjune-bride-bouquet-mat%3Fsca_ref%3D10574197.BKiJ48vXYfYfD31E",
+     "status": 200,
+     "final": "https://www.middleandmainmahjong.com/products/june-bride-bouquet-mat?sca_ref=10574197.BKiJ48vXYfYfD31E",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://www.middleandmainmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fmartha-mae-vintage-quilt-pattern-mat%3Fsca_ref%3D10574197.BKiJ48vXYfYfD31E",
+     "status": 200,
+     "final": "https://www.middleandmainmahjong.com/products/martha-mae-vintage-quilt-pattern-mat?sca_ref=10574197.BKiJ48vXYfYfD31E",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "missmahjong.com": [
+    {
+     "link": "https://missmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fcherry-blossom-mahjong-playing-mat-jade%3Fref%3Dmahjmatch",
+     "status": 200,
+     "final": "https://missmahjong.com/products/cherry-blossom-mahjong-playing-mat-jade?ref=mahjmatch",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://missmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fbandit-mahjong-playing-mat-poppy-red%3Fref%3Dmahjmatch",
+     "status": 200,
+     "final": "https://missmahjong.com/products/bandit-mahjong-playing-mat-poppy-red?ref=mahjmatch",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "myfairmahjong.com": [
+    {
+     "link": "https://myfairmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fmahjong-mat-confetti-33-x-33%3Fvariant%3D50899721519415",
+     "status": 200,
+     "final": "https://myfairmahjong.com/products/mahjong-mat-confetti-33-x-33?variant=50899721519415",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://myfairmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fmat-mechanical",
+     "status": 200,
+     "final": "https://myfairmahjong.com/products/mat-mechanical",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "nolijune.com": [
+    {
+     "link": "https://nolijune.com/discount/MAHJMATCH?dt_id=3655694&redirect=%2Fproducts%2Fruth-took-the-last-run-in-the-dark",
+     "status": 200,
+     "final": "https://nolijune.com/products/ruth-took-the-last-run-in-the-dark?dt_id=3655694",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://nolijune.com/discount/MAHJMATCH?dt_id=3655694&redirect=%2Fproducts%2Fjean-always-chose-cranberry-from-a-can",
+     "status": 200,
+     "final": "https://nolijune.com/products/jean-always-chose-cranberry-from-a-can?dt_id=3655694",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "ohmymahjong.com": [
+    {
+     "link": "https://www.ohmymahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fmerriment-mat-in-tube",
+     "status": 200,
+     "final": "https://ohmymahjong.com/products/merriment-mat-in-tube",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://www.ohmymahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fpenelope-mat-in-tube",
+     "status": 200,
+     "final": "https://ohmymahjong.com/products/penelope-mat-in-tube",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "peacelovemahjong.com": [
+    {
+     "link": "https://peacelovemahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fmahjong-mats-plaid-striped%3Fvariant%3D52798579114276",
+     "status": 200,
+     "final": "https://peacelovemahjong.com/products/mahjong-mats-plaid-striped?variant=52798579114276",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://peacelovemahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fmahjong-mats-holiday%3Fvariant%3D67570521407780",
+     "status": 200,
+     "final": "https://peacelovemahjong.com/products/mahjong-mats-holiday?variant=67570521407780",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "shop.andersruff.com": [
+    {
+     "link": "https://shop.andersruff.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fpalm-estate-mahjong-mat",
+     "status": 200,
+     "final": "https://shop.andersruff.com/products/palm-estate-mahjong-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://shop.andersruff.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fautumn-bloom-mahjong-mat",
+     "status": 200,
+     "final": "https://shop.andersruff.com/products/autumn-bloom-mahjong-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "splashofcolorco.com": [
+    {
+     "link": "https://splashofcolorco.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fyear-of-the-fire-goat-mahjong-mat",
+     "status": 200,
+     "final": "https://splashofcolorco.com/products/year-of-the-fire-goat-mahjong-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://splashofcolorco.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fgarden-party-chinoiserie-blue-pink-mahjong-mat",
+     "status": 200,
+     "final": "https://splashofcolorco.com/products/garden-party-chinoiserie-blue-pink-mahjong-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "theroyalmahjongsociety.com": [
+    {
+     "link": "https://theroyalmahjongsociety.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fhydrangea-mahjong-mat",
+     "status": 200,
+     "final": "https://theroyalmahjongsociety.com/products/hydrangea-mahjong-mat",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://theroyalmahjongsociety.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fstudio-series-newport",
+     "status": 200,
+     "final": "https://theroyalmahjongsociety.com/products/studio-series-newport",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "viroramahjong.com": [
+    {
+     "link": "https://www.viroramahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fnavelia",
+     "status": 200,
+     "final": "https://www.viroramahjong.com/products/navelia",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://www.viroramahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Flimoncea%3Fref%3DMahjmatchmaker",
+     "status": 200,
+     "final": "https://www.viroramahjong.com/products/limoncea?ref=Mahjmatchmaker",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ],
+   "ymimports.com": [
+    {
+     "link": "https://www.ymimports.com/discount/MAHJMATCH10-YMI-2025?redirect=%2Fproducts%2Ftc-at006-a",
+     "status": 200,
+     "final": "https://www.ymimports.com/products/tc-at006-a",
+     "cookie": "MAHJMATCH10-YMI-2025",
+     "ok": true
+    },
+    {
+     "link": "https://www.ymimports.com/discount/MAHJMATCH10-YMI-2025?redirect=%2Fproducts%2Fus-am008-a",
+     "status": 200,
+     "final": "https://www.ymimports.com/products/us-am008-a",
+     "cookie": "MAHJMATCH10-YMI-2025",
+     "ok": true
+    }
+   ],
+   "yolomahjong.com": [
+    {
+     "link": "https://www.yolomahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fpink-tiger-mahjong-mat-floral-chinese-mahjong-table-mat-for-mahjong-set-31-5-x-31-5-inch",
+     "status": 200,
+     "final": "https://www.yolomahjong.com/products/pink-tiger-mahjong-mat-floral-chinese-mahjong-table-mat-for-mahjong-set-31-5-x-31-5-inch",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    },
+    {
+     "link": "https://www.yolomahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fpink-black-polka-dot-square-mahjong-mat-ship-rolled-up%3Fsca_ref%3D12572562.5IBLjBHZ1vuX4J",
+     "status": 200,
+     "final": "https://www.yolomahjong.com/products/pink-black-polka-dot-square-mahjong-mat-ship-rolled-up?sca_ref=12572562.5IBLjBHZ1vuX4J",
+     "cookie": "MAHJMATCH",
+     "ok": true
+    }
+   ]
+  }
+ }
+}

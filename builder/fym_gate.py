@@ -60,6 +60,8 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
     framing, 87 MFM Natural Wood featured + no 404 wood-rack link, 88 PLM painted racks re-cut, 89 mat photos without white bands (warn:
     angled shots), 90 gallery sync (warn)
  158 (Nov 5, v115 QA) no visible mat photo beyond 2:1, no tile photo beyond 2.3:1 (strips / edge crops)
+ 159 (Nov 6) every mat/rack/tile link of a Shopify code partner auto-applies the code (/discount/<CODE>?redirect=...; config/autoapply-hosts.json), FYM + staged gallery
+ 159b (Nov 6) staged Mat Gallery stamped with the newest FYM version (data-fym); --release: the LIVE /mahjong-mats too (FAIL), else WARN
  100 (Oct 27, v101 = Version 1.5): missing partner mats from the last launch-watch sweep (config/partner-mat-sweep.json; no network)
  91-94 (Oct 26 night, v98 = Version 1.2): 94 PLM rack colours vs reference + locked approved Chartreuse/Dark Green; 95 card title = assigned s.tc; 96 names without stray quotes + Wren logo; 91 match card racks low + tight + equal length, stack photos big, off the mat's left (partner-graphics layout), 92 Mahjong Register single
     racks (no stacks) + Mahj Mood angled scalloped rack, 93 Desert Dreams Up close strip framing; [89] now FAILS if a v98-flattened
@@ -270,8 +272,15 @@ for s in D['sets']:
 # 12. no Mahjong Studios mats (FYM + staged gallery); removed gallery rows stay out
 for k, o in M.items():
     if not o.get('hid') and (o.get('bn') in RMB or k in RMK): F.append(f"[12] removed mat visible in FYM: {o['n']} ({o.get('bn')}) {k}")
-_g = open(REPO + 'site/livepatch/matgallery/matgallery-v5.html').read()
-_G = json.loads(re.search(r'<script type="application/json">(.*?)</script>', _g, re.S).group(1).replace('<\\/', '</'))
+# Nov 6: the staged gallery is the newest site/livepatch/matgallery/matgallery-v<N>.html (v6+ = build_v6.py, FYM-synced); from v6 its
+# rows may live in data/matgallery-<fym ver>.json (block: <script type="application/json" data-src="jsDelivr URL">): read the local copy.
+_GPATH = sorted(glob.glob(REPO + 'site/livepatch/matgallery/matgallery-v[0-9]*.html'), key=lambda p_: int(re.search(r'-v(\d+)\.html$', p_).group(1)))[-1]
+_g = open(_GPATH).read()
+_gm = re.search(r'<script type="application/json"( data-src="[^"]*")?>(.*?)</script>', _g, re.S)
+if _gm.group(1):
+    _G = json.load(open(REPO + re.search(r'@[0-9a-f]{7,40}/(.*?)"', _gm.group(1)).group(1)))
+else:
+    _G = json.loads(_gm.group(2).replace('<\\/', '</'))
 for r in _G:
     if r[2] in RMB or r[0] in set(XT['remove_mats'].get('imgs', [])): F.append(f"[12] removed mat in staged Mat Gallery: {r[1]} ({r[2]}) {r[0]}")
 
@@ -1813,6 +1822,42 @@ try:
         if _w / _h > 2.3 or _h / _w > 2: _b158.append(f"tiles {_t.get('bn')} | {_t.get('n')} {_w}x{_h}")
     if _b158: F.append(f"[158] {len(_b158)} visible photos with an extreme aspect ratio (a strip, not the item; re-pick or re-crop the photo): " + '; '.join(_b158[:12]))
 except Exception as _e: F.append(f"[158] aspect-ratio check did not run: {_e}")
+# [159] Nov 6 2026 (Tiffany 1:21am: do OMM shop links auto-apply MAHJMATCH? A plain /products/ link applies nothing; a Shopify
+#       /discount/<CODE>?redirect=<path+query> link sets the discount_code cookie). Every mat / rack / tile link of a Shopify code
+#       partner (config/autoapply-hosts.json) must be the auto-apply form. Fix: python3 builder/fym_fix_nov06/autoapply_links.py <build> --write
+try:
+    sys.path.insert(0, REPO + 'builder/fym_fix_nov06')
+    import autoapply_links as _AA159
+    _p159 = _AA159.plain_partner_links(D)
+    if _p159:
+        _by159 = {}
+        for _g159, _k159, _n159, _b159, _u159 in _p159: _by159[_b159] = _by159.get(_b159, 0) + 1
+        F.append(f"[159] {len(_p159)} shop links of Shopify code partners do not auto-apply the code (run builder/fym_fix_nov06/autoapply_links.py <build> --write): "
+                 + ', '.join(f'{b_} {n_}' for b_, n_ in sorted(_by159.items(), key=lambda kv: -kv[1])))
+    _gp159 = [r_ for r_ in _G if r_[3] and _AA159.classify(r_[3]) == 'plain']
+    if _gp159: F.append(f"[159] staged Mat Gallery has {len(_gp159)} plain code-partner shop links (rebuild with site/livepatch/matgallery/build_v6.py): " + '; '.join(f'{r_[2]} {r_[1]}' for r_ in _gp159[:8]))
+except Exception as _e: F.append(f"[159] auto-apply link check did not run: {_e}")
+# [159b] Nov 6 2026 (Tiffany 1:22am: the Mat Gallery was not kept up; live gallery still sold Dapper 2 after FYM retired it). Every FYM
+#       release rebuilds /mahjong-mats from that release (site/livepatch/matgallery/build_v6.py stamps <!--mmg-fym:vNNN--> + data-fym).
+#       The staged gallery must be stamped with the newest FYM website copy (site-app/fym-vNN on fym-site-preview); with --release the
+#       LIVE /mahjong-mats must carry it too. WARNING without --release, FAIL with it.
+try:
+    _rel159 = max([int(x) for x in re.findall(r'fym-v(\d+)', os.path.abspath(B))] + ([globals()['_nn104'][-1]] if globals().get('_nn104') else []) or [0])
+    _st159 = re.search(r'data-fym="v(\d+)"', _g)
+    _W159 = []
+    if not _st159: _W159.append(f"staged Mat Gallery {os.path.basename(_GPATH)} has no FYM version stamp (build it with site/livepatch/matgallery/build_v6.py)")
+    elif int(_st159.group(1)) < _rel159: _W159.append(f"staged Mat Gallery was built from FYM v{_st159.group(1)}, release is v{_rel159}: rebuild it (builder/fym_fix_nov06/gallery_sync.py + build_v6.py, README release step)")
+    if '--release' in sys.argv:
+        import urllib.request as _ur159
+        try:
+            _live159 = _ur159.urlopen(_ur159.Request('https://www.mahjmatchmaker.com/mahjong-mats', headers={'User-Agent': 'Mozilla/5.0'}), timeout=30).read().decode('utf-8', 'replace')
+            _lv159 = re.search(r'data-fym="v(\d+)"', _live159)
+            if not _lv159 or int(_lv159.group(1)) < _rel159: _W159.append(f"LIVE /mahjong-mats is built from FYM {('v' + _lv159.group(1)) if _lv159 else 'an unstamped (pre-Nov 6) build'}, release is v{_rel159}: paste the staged gallery (site/livepatch/matgallery/README.md)")
+        except Exception as _e2: _W159.append(f"could not read the live /mahjong-mats page: {_e2}")
+    for _w in _W159:
+        if '--release' in sys.argv: F.append('[159b] ' + _w)
+        else: print('FYM GATE WARNING [159b] (FAIL with --release): ' + _w)
+except Exception as _e: F.append(f"[159b] gallery version check did not run: {_e}")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))
