@@ -214,3 +214,5 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - HQ smoke test at 390px not run tonight (data-only change, no page HTML changed).
 
 See CLAUDE.md.
+
+- MAIN (Nov 6, ~2:30am): Rudolph mood-board reel, Canva DAHaHg27cPw, has her 2:10am notes applied on all 8 pages: no writing, no arrows, the white rack bigger and overlapping the mat, and the lamp, dice dish and tablecloth scaled up as the stars. UNSAVED (transaction 8602396589085057806, NOT committed). Next step: she glances at it when she has time, nothing for her to direct. On her OK: commit, export MP4, replace the Rudolph Planoly drafts, then do Polo and Rattan the same way. If it's still not right, stop mood-board reels for this season (her call, Nov 6 2:10am).
