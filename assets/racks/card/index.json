@@ -231,10 +231,18 @@
    "source": "shop.andersruff.com tortoise-acrylic-rack-set-straight-pushers image 0, cut out + turned flat, Oct 24",
    "kind": "flat",
    "rack_frac": 0.55
+  },
+  "Oh My Mahjong Agate": {
+   "file": "assets/racks/card/oh-my-mahjong-agate.png",
+   "source": "assets/racks/omm/agate.jpg",
+   "kind": "omm",
+   "rack_frac": 0.445,
+   "built_by": "scripts/albumcard/omm_agate_card.py",
+   "note": "Nov 6: pusher rotated -2.6 deg to the hot-pink angle, height x0.848 (scripts/albumcard/omm_agate_card.py)"
   }
  },
  "missing": {
-  "Tigre de Tart\u00e1n Oxblood Scallop": "not listed in Tigre's shop (checked Oct 18), so no product photo. Oxblood cards use B&B Wine + PLM Acrylic Burl for now. oxblood: swap to her own photo when she sends it.",
+  "Tigre de Tartán Oxblood Scallop": "not listed in Tigre's shop (checked Oct 18), so no product photo. Oxblood cards use B&B Wine + PLM Acrylic Burl for now. oxblood: swap to her own photo when she sends it.",
   "Sunday Mahjong Candy Blue / Tortoise / Blonde Tortoise / Clear": "same problem as Cola: no clean single-rack shot in Sunday's listings. Mat side only once photographed."
  },
  "notes": {

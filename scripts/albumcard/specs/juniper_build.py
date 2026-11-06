@@ -53,6 +53,9 @@ def reg_for(path, name):
     for k, v in REG.items():
         if path in v.get('files', []) or slug(name) == k: return k, v['racks']
     return None, None
+# Nov 6 2:11am (Tiffany): Juniper tile racks = OMM Hot Pink + OMM Agate only (same OMM shape). Jade & Brass lies differently
+# next to OMM racks and Pink Quartz = pink + pink, so neither comes back on the MAT side either.
+DROPPED = {'Miss Mahjong Jade & Brass', 'Oh My Mahjong Pink Quartz'}
 def drawable(l): return l.startswith('Bird & Bamboo ') or RKS.photo(l) is not None
 cards, man = [], []
 for c in A['mats']:
@@ -65,11 +68,11 @@ for c in A['mats']:
         mr = []
         for k in c['racks']:
             l = KEYS[k]
-            if l in TRACKS or l in mr: continue
+            if l in TRACKS or l in mr or l in DROPPED: continue
             if not drawable(l): skipped.append(l); continue
             mr.append(l)
         if len(mr) < 2:
-            for l in pick(m, exclude=TRACKS + mr):
+            for l in pick(m, exclude=TRACKS + mr + sorted(DROPPED)):
                 if l not in mr and len(mr) < 2: mr.append(l)
     fn = f"juniper-mahjong-tiles-{slug(brand)}-{slug(nm)}-mat.jpg"
     code = footer(brand, retired); n = len(cards) + 1

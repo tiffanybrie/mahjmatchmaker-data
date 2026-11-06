@@ -97,7 +97,7 @@ BRANDS = ('Bird & Bamboo', 'Oh My Mahjong', 'Peace Love Mahjong', 'Middle & Main
 def rrow(r, top):
     b = next((x for x in BRANDS if r['name'].startswith(x)), r['name'].split()[0]); c = r['name'][len(b) + 1:]
     return (f"""<div style="margin-top:{top}px"><div style="display:flex;align-items:baseline;gap:14px"><span class="caps" style="font-size:17px;color:#8a6a80">{e(b)}</span><span class="pf" style="font-size:40px;font-weight:600">{e(c)}</span></div>"""
-            f"""<img src="{url(RACK[r['name']])}" style="display:block;width:936px;height:88px;object-fit:fill;margin-top:8px;filter:drop-shadow(0 8px 10px rgba(6,40,90,.18))"></div>""")
+            f"""<img src="{url(RACK[r['name']])}" style="display:block;width:936px;height:{'auto' if P.get('rack_natural') else '88px'};object-fit:fill;margin-top:8px;filter:drop-shadow(0 8px 10px rgba(6,40,90,.18))"></div>""")
 grp = lambda g: [r for r in P['racks'] if r.get('group', 'color') == g]
 col = ''.join(rrow(r, 26) for r in grp('color')); ver = ''.join(rrow(r, 26) for r in grp('versatile'))
 if ver:
@@ -108,8 +108,8 @@ if ver:
   <span class="pf" style="font-size:28px;color:#3c4f73">my go-tos with any set</span></div>{ver}
  <div class="hand" style="font-size:40px;margin-top:34px;color:var(--pink)">now, who she&rsquo;s dating &rarr;</div>"""
 else:
-    racks_body = col + """
- <div class="hand" style="font-size:44px;margin-top:40px;color:var(--navy)">all three picked for her, not just any rack &hearts;</div>
+    racks_body = col + f"""
+ <div class="hand" style="font-size:44px;margin-top:40px;color:var(--navy)">{P.get('racks_hand', 'all three picked for her, not just any rack')} &hearts;</div>
  <div class="hand" style="font-size:40px;margin-top:6px;color:var(--pink)">now, who she&rsquo;s dating &rarr;</div>"""
 s4 = page(3, head("2 · racks she's into") + f"""
 <div style="position:absolute;top:120px;left:72px;right:72px">

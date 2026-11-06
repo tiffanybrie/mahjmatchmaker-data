@@ -129,7 +129,7 @@ if __name__ == '__main__':
     for name, (kind, path) in SRC.items():
         if kind == 'same' and path in idx['racks']: idx['racks'][name] = dict(idx['racks'][path], alias_of=path)
     for name, v in old['racks'].items():  # Oct 18: keep approved renders (Sunday Mahjong Cola) that have no source photo
-        if v.get('kind') == 'render' and name not in idx['racks']: idx['racks'][name] = v
+        if (v.get('kind') == 'render' or v.get('built_by')) and name not in idx['racks']: idx['racks'][name] = v  # Nov 6: + racks built by their own script (OMM Agate: omm_agate_card.py)
     if os.path.exists('/tmp/mb/bb_blank.png'): Image.open('/tmp/mb/bb_blank.png').save(OUT + 'bb-blank.png', optimize=True)
     json.dump(idx, open(OUT + 'index.json', 'w'), indent=1, ensure_ascii=False)
     print(len(idx['racks']), 'racks ->', OUT)

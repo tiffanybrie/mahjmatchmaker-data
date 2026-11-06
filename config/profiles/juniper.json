@@ -1,5 +1,5 @@
 {
- "_note": "Juniper Tile Set Profile (doc 81), DRAFT Nov 6, built by Claude for Tiffany's review. Colours from config/colorcards.json sets.juniper (her Nov 5 wording: forest green JADE-LOOK back, never call the teal layer jade). Mats = Claude's round-2 top 3 (Garden Glow #1, Palm Royale #2, Lotus Cove #3 = OMM pair, never #1). Racks = colour card racks (Claude's picks, pending her OK). best_features = Claude's 4 PROPOSALS until she picks (site/livepatch/juniper-album-nov06/). matches = round-2 count, not a live album count yet. PRONOUN: brand guide s3 says ask Tiffany for any set not listed; 'her' is used here as the draft default.",
+ "_note": "Juniper Tile Set Profile (doc 81), DRAFT Nov 6, built by Claude for Tiffany's review. Colours from config/colorcards.json sets.juniper (her Nov 5 wording: forest green JADE-LOOK back, never call the teal layer jade). Mats = Claude's round-2 top 3 (Garden Glow #1, Palm Royale #2, Lotus Cove #3 = OMM pair, never #1). Racks = OMM Hot Pink + OMM Agate (Tiffany Nov 6 2:11am: OMM racks only, one shape; no Jade & Brass, no pink + pink). best_features = Claude's 4 PROPOSALS until she picks (site/livepatch/juniper-album-nov06/). matches = round-2 count, not a live album count yet. PRONOUN: brand guide s3 says ask Tiffany for any set not listed; 'her' is used here as the draft default.",
  "key": "juniper",
  "name": "Juniper",
  "brand": "Oh My Mahjong",
@@ -212,18 +212,13 @@
  "dealbreaker": "Dusty, earthy neutrals like tan and taupe. Next to her clean jewel greens and hot pink they read muddy. Keep the mat clean and saturated.",
  "racks": [
   {
-   "name": "Miss Mahjong Jade & Brass",
-   "why": "Green stone and brass: her jade-look backs and gold dots.",
-   "group": "color"
-  },
-  {
    "name": "Oh My Mahjong Hot Pink",
    "why": "Her hot pink dots and craks, turned up.",
    "group": "color"
   },
   {
-   "name": "Oh My Mahjong Pink Quartz",
-   "why": "A softer pink stone for her lotus flowers.",
+   "name": "Oh My Mahjong Agate",
+   "why": "A green malachite swirl, like her jade-look backs.",
    "group": "color"
   }
  ],
@@ -285,5 +280,7 @@
   "oh-my-mahjong-lotus-cove"
  ],
  "colors_line": "Forest green jade-look backs, chartreuse and teal layers. Clean jewel tones on a deep green.",
- "layers_hand": "see the layers?<br>teal + chartreuse, over a forest green back."
+ "layers_hand": "see the layers?<br>teal + chartreuse, over a forest green back.",
+ "rack_natural": true,
+ "racks_hand": "both Oh My Mahjong, both picked for her"
 }

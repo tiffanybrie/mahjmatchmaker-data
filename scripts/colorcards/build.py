@@ -212,7 +212,9 @@ def mobile(S, out):
     label(c, d, 500, 1868, lab('backs').replace('HER COLORS · ', 'HER '), P('Poppins-Bold.ttf', 27 * K), NAVY, 7 * K, True); d = ImageDraw.Draw(c)
     for i, (n, h, role) in enumerate(S['backs']):
         x = 140 + i * 256; d.rounded_rectangle((x, 1940, x + 222, 2162), radius=22, fill=hx(h), outline=EDGE if pale(h) else None, width=4)
-        d.text((x + 111, 2196), n, font=P('Poppins-Medium.ttf', 22 * K), fill=NAVY, anchor='mm'); d.text((x + 111, 2244), role, font=P('Poppins-Regular.ttf', 20 * K), fill=(90, 90, 100), anchor='mm')
+        fz = 22 * K
+        while d.textlength(n, font=P('Poppins-Medium.ttf', fz)) > 248 and fz > 14: fz -= 1  # Nov 6: long names (FOREST GREEN JADE) ran into the next label
+        d.text((x + 111, 2196), n, font=P('Poppins-Medium.ttf', fz), fill=NAVY, anchor='mm'); d.text((x + 111, 2244), role, font=P('Poppins-Regular.ttf', 20 * K), fill=(90, 90, 100), anchor='mm')
     label(c, d, 1490, 1868, lab('faces').replace('HER COLORS · ', 'HER '), P('Poppins-Bold.ttf', 27 * K), NAVY, 7 * K, True); d = ImageDraw.Draw(c)
     F = S['faces']; per = 3 if len(F) > 4 else 2
     if len(F) > 6:  # Oct 29: 7-8 faces = 4 per row, 2 rows inside the panel
@@ -228,7 +230,7 @@ def mobile(S, out):
     # racks + mats panel
     d.rounded_rectangle((80, 2340, 1920, 2960), radius=48, fill=PANEL)
     label(c, d, 540 if V is None else 516, 2380, lab('racks'), P('Poppins-Bold.ttf', 27 * K), NAVY, 7 * K, True); d = ImageDraw.Draw(c)
-    rack_panel(c, S, 132, 900, 2452, rowh=min(158, 474 // max(1, len(S['racks']))), fs=28); d = ImageDraw.Draw(c)
+    rack_panel(c, S, 132, 900, 2452, rowh=min(158 if len(S['racks']) > 2 else 230, 474 // max(1, len(S['racks']))), fs=28)  # Nov 6: 2 racks get bigger rows; d = ImageDraw.Draw(c)
     label(c, d, 1450, 2380, lab('mats'), P('Poppins-Bold.ttf', 27 * K), NAVY, 7 * K, True); d = ImageDraw.Draw(c)
     mats_row(c, S, 1035, 2470, 250, 42, 30); d = ImageDraw.Draw(c)
     d.rounded_rectangle((1040, 2812, 1860, 2896), radius=42, fill=NAVY)

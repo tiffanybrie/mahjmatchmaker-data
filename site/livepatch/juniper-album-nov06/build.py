@@ -139,7 +139,7 @@ ul{{padding-left:20px;margin:6px 0}}li{{margin:3px 0}}
 <div class="car">{carousel}</div>
 
 <h2 id="cards">33 match cards <span class="draft">DRAFT ORDER</span></h2>
-<p class="lede">Round-2 order with your Nov 5 notes (Garden Glow #1, Palm Royale #2, Lotus Cove #3; Esme + Enchanted in as Retired). Tile racks on every card: Miss Mahjong Jade &amp; Brass, Oh My Mahjong Hot Pink, Oh My Mahjong Pink Quartz. Tell me the order and any cuts; the album page gets built from your order.</p>
+<p class="lede">Round-2 order with your Nov 5 notes (Garden Glow #1, Palm Royale #2, Lotus Cove #3; Esme + Enchanted in as Retired). Tile racks on every card (your Nov 6 call): Oh My Mahjong Hot Pink + Oh My Mahjong Agate, both the same OMM shape. Tell me the order and any cuts; the album page gets built from your order.</p>
 {mc}
 </div>
 <div class="bar"><span id="cnt">Your picks: 0 of 4</span><button id="copy">Copy my picks</button></div>
