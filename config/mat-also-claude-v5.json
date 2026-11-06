@@ -2,7 +2,7 @@
  "by": "claude-photo-review",
  "date": "2026-10-20",
  "method": "measured palette (config/mat-accent-colors.json, thresholds eye-checked on contact sheets): a color covering >= 15% of the mat is promoted to an also-color. Never applied to mats Tiffany has called (her v5 final calls or any tiffany-chat override) or to the 53 new mats (tagged by eye in tiffany-color-notes/2026-10-20-new53-claude-tags.json).",
- "count": 159,
+ "count": 173,
  "mats": {
   "amahj--lilac-green-squiggle-mahjong-game-mat": [
    "green"
@@ -523,6 +523,49 @@
   ],
   "sunday-mahjong--bold-blooms-premium": [
    "blue"
+  ],
+  "hip-hip-mahjong--man-of-the-house": [
+   "red"
+  ],
+  "mahjong-register--paisley-jubilee-premium-2": [
+   "green",
+   "yellow"
+  ],
+  "royal-mahjong-society--girly-2": [
+   "green"
+  ],
+  "mahj-moon--blue-white-lemon-2": [
+   "yellow"
+  ],
+  "mahj-moon--equestrian-2": [
+   "blue"
+  ],
+  "mahj-moon--wildflower-american-2": [
+   "blue"
+  ],
+  "mahj-moon--heirloom-blooms-2": [
+   "blue"
+  ],
+  "mahj-moon--vintage-floral-gingham-2": [
+   "green"
+  ],
+  "mahj-moon--pastel-turtle-coastal-2": [
+   "green"
+  ],
+  "wren-mats--butterfly-2": [
+   "blue"
+  ],
+  "yolo-mahjong--pastel-parrot": [
+   "blue"
+  ],
+  "let-s-be-besties--amalfi-fish": [
+   "yellow"
+  ],
+  "let-s-be-besties--floral-pink-watercolor": [
+   "blue"
+  ],
+  "let-s-be-besties--sea-glass": [
+   "green"
   ],
   "tigre-de-tartan--holy-mahj-retired": [
    "orange"

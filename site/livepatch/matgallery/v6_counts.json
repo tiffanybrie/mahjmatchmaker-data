@@ -26,6 +26,7 @@
   "Britt Mills | Glory",
   "Britt Mills | Haven",
   "Britt Mills | Legacy",
+  "Britt Mills | Merrywood",
   "Britt Mills | Quinn",
   "Britt Mills | Reba",
   "Britt Mills | Regal Bloom Neoprene",
@@ -75,7 +76,7 @@
   "Virora Mahjong | Hiverelle",
   "Virora Mahjong | Petalwing"
  ],
- "link_from_fym": 489,
+ "link_from_fym": 589,
  "autoapply": {
   "Amahj": {
    "discount": 8
@@ -96,8 +97,7 @@
    "discount": 14
   },
   "Bespoke Mahjong": {
-   "discount": 50,
-   "converted": 1
+   "discount": 51
   },
   "Betty June & Jeannette": {
    "skip": 76
@@ -109,7 +109,7 @@
    "other": 75
   },
   "Britt Mills": {
-   "converted": 64
+   "discount": 64
   },
   "Charleston Mahjong Club": {
    "discount": 14
@@ -121,7 +121,7 @@
    "skip": 8
   },
   "Hip Hip Mahjong": {
-   "converted": 14
+   "discount": 14
   },
   "Hutch & Nook": {
    "other": 9
@@ -130,7 +130,7 @@
    "other": 1
   },
   "Let's Be Besties": {
-   "discount": 324
+   "discount": 322
   },
   "Let's Mahj On": {
    "discount": 18
@@ -161,7 +161,7 @@
    "discount": 15
   },
   "Mahj Pit": {
-   "converted": 16
+   "discount": 16
   },
   "Mahj Squad": {
    "discount": 21
@@ -179,7 +179,7 @@
    "other": 2
   },
   "Mahjong Register": {
-   "converted": 33
+   "discount": 33
   },
   "Mahjong Row & Co.": {
    "skip": 9
@@ -203,7 +203,8 @@
    "discount": 9
   },
   "Oh My Mahjong": {
-   "discount": 33
+   "discount": 27,
+   "converted": 6
   },
   "Ozark Mahjongg": {
    "other": 3
@@ -215,7 +216,7 @@
    "skip": 27
   },
   "Royal Mahjong Society": {
-   "converted": 8
+   "discount": 8
   },
   "Soirée All Day": {
    "skip": 11
@@ -224,8 +225,7 @@
    "skip": 10
   },
   "Splash of Color": {
-   "converted": 1,
-   "discount": 10
+   "discount": 12
   },
   "Sunday Mahjong": {
    "other": 15
@@ -249,7 +249,7 @@
    "skip": 24
   },
   "YOLO Mahjong": {
-   "discount": 64
+   "discount": 63
   }
  },
  "unmatched": [],
@@ -265,6 +265,25 @@
   "OMM Year of the Horse: no shop button",
   "TdT Nantucket Basket, Round: no shop button",
   "YOLO Christmas Cat: no shop button"
+ ],
+ "hidden_mahjong_co": [
+  "Mahjong by SI | Gatsby",
+  "Mahjong by SI | Highland Heritage Plaid",
+  "Mahjong by SI | The Hunt Club",
+  "Mahjong by SI | The Lodge",
+  "Mahjong by SI | Tracing the Tides",
+  "Mahjong by SI | Vintage Oxblood Leather"
+ ],
+ "removed_brand_no_code": [
+  "Mahjong Row & Co. | Autumn Saffron",
+  "Mahjong Row & Co. | Ivy Reverie",
+  "Mahjong Row & Co. | Marigold",
+  "Mahjong Row & Co. | Midnight Garden",
+  "Mahjong Row & Co. | Mocha Bloom",
+  "Mahjong Row & Co. | Mocha Bloom LT",
+  "Mahjong Row & Co. | Osmanthus Grove",
+  "Mahjong Row & Co. | Spring Awakening P",
+  "Mahjong Row & Co. | Spring Awakening Warm Honey"
  ],
  "dupes_merged": [
   "Britt Mills | Aria Leatherette -> Aria",
@@ -301,8 +320,8 @@
  ],
  "dupe_candidates": [],
  "linkcheck": {
-  "checked": 1413,
-  "ok": 1150,
+  "checked": 1408,
+  "ok": 1145,
   "dead": {},
   "other": {
    "https://go.shopmy.us/p-98951063": [
@@ -970,11 +989,11 @@
     "Mahj & Moon | Honeybee Tiles (mahj-moon--honeybee-tiles)"
    ],
    "https://go.shopmy.us/p-99653742": [
-    "403",
+    "000",
     "Mahj & Moon | Italian Riviera Foodie (mahj-moon--italian-riviera-foodie)"
    ],
    "https://go.shopmy.us/p-99655421": [
-    "403",
+    "000",
     "Mahj & Moon | Italian Villa (mahj-moon--italian-villa)"
    ],
    "https://go.shopmy.us/p-99653328": [
@@ -1070,7 +1089,7 @@
     "Mahj & Moon | Pink & Blue Paisley (mahj-moon--pink-blue-paisley-2)"
    ],
    "https://go.shopmy.us/p-99651262": [
-    "403",
+    "000",
     "Mahj & Moon | Pink & Green Floral (mahj-moon--pink-green-floral)"
    ],
    "https://go.shopmy.us/p-99654620": [
@@ -1102,7 +1121,7 @@
     "Mahj & Moon | Preppy Pickleball (mahj-moon--preppy-pickleball)"
    ],
    "https://go.shopmy.us/p-99655842": [
-    "403",
+    "000",
     "Mahj & Moon | Pumpkin Patch (mahj-moon--pumpkin-patch)"
    ],
    "https://go.shopmy.us/p-99654210": [
@@ -1114,7 +1133,7 @@
     "Mahj & Moon | Retro Cocktail (mahj-moon--retro-cocktail)"
    ],
    "https://go.shopmy.us/p-99652998": [
-    "403",
+    "000",
     "Mahj & Moon | Retro Waves – Orange (mahj-moon--retro-waves-3)"
    ],
    "https://go.shopmy.us/p-99651906": [
@@ -1130,7 +1149,7 @@
     "Mahj & Moon | Riviera Beach Club (mahj-moon--riviera-beach-club)"
    ],
    "https://go.shopmy.us/p-99651453": [
-    "403",
+    "000",
     "Mahj & Moon | Round Leopard Print (mahj-moon--round-leopard-print)"
    ],
    "https://go.shopmy.us/p-99653975": [
@@ -1138,7 +1157,7 @@
     "Mahj & Moon | Scalloped Blossom Aviary (mahj-moon--scalloped-blossom-aviary)"
    ],
    "https://go.shopmy.us/p-99655871": [
-    "403",
+    "000",
     "Mahj & Moon | Scalloped Bow Garden (mahj-moon--scalloped-bow-garden)"
    ],
    "https://go.shopmy.us/p-99653936": [
@@ -1150,7 +1169,7 @@
     "Mahj & Moon | Scalloped Pastel Palm Beach Toile (mahj-moon--scalloped-pastel-palm-beach-toile)"
    ],
    "https://go.shopmy.us/p-99654084": [
-    "403",
+    "000",
     "Mahj & Moon | Scalloped Tropical Palm (mahj-moon--scalloped-tropical-palm)"
    ],
    "https://go.shopmy.us/p-99652694": [
@@ -1158,7 +1177,7 @@
     "Mahj & Moon | Seashell American (mahj-moon--seashell-american)"
    ],
    "https://go.shopmy.us/p-99652247": [
-    "403",
+    "000",
     "Mahj & Moon | Strawberry Garden American (mahj-moon--strawberry-garden-american)"
    ],
    "https://go.shopmy.us/p-99653545": [
@@ -1174,7 +1193,7 @@
     "Mahj & Moon | Tropical Hibiscus (mahj-moon--tropical-hibiscus)"
    ],
    "https://go.shopmy.us/p-99654357": [
-    "403",
+    "000",
     "Mahj & Moon | Tropical Island Garden (mahj-moon--tropical-island-garden)"
    ],
    "https://go.shopmy.us/p-99653022": [
@@ -1182,11 +1201,11 @@
     "Mahj & Moon | Tropical Leopard (mahj-moon--tropical-leopard)"
    ],
    "https://go.shopmy.us/p-99652211": [
-    "000",
+    "403",
     "Mahj & Moon | Valentine Hearts American (mahj-moon--valentine-hearts-american)"
    ],
    "https://go.shopmy.us/p-99655040": [
-    "403",
+    "000",
     "Mahj & Moon | Vibrant Floral Chinoiserie Pink (mahj-moon--vibrant-floral-chinoiserie-pink)"
    ],
    "https://go.shopmy.us/p-99653834": [
@@ -1202,23 +1221,23 @@
     "Mahj & Moon | Wildflower Butterfly (mahj-moon--wildflower-butterfly)"
    ],
    "https://go.shopmy.us/p-99651597": [
-    "403",
+    "000",
     "Mahj & Moon | William Morris Inspired Round (mahj-moon--william-morris-inspired-round)"
    ],
    "https://go.shopmy.us/p-99654124": [
-    "403",
+    "000",
     "Mahj & Moon | Zebra Palm Chinoiserie (mahj-moon--zebra-palm-chinoiserie)"
    ],
    "https://go.shopmy.us/p-98960851": [
-    "403",
+    "000",
     "MahjjMaven | Strawberry Thief (mahjjmaven--strawberry-thief)"
    ],
    "https://go.shopmy.us/p-99591155": [
-    "403",
+    "000",
     "Piper Chase Studios | Autumn Lace Wreath (piper-chase-studios--autumn-lace-wreath)"
    ],
    "https://go.shopmy.us/p-99592252": [
-    "000",
+    "403",
     "Piper Chase Studios | Blue Diamond Trellis (piper-chase-studios--blue-diamond-trellis)"
    ],
    "https://go.shopmy.us/p-99592213": [
@@ -1234,11 +1253,11 @@
     "Piper Chase Studios | Christmas Tree Trellis (piper-chase-studios--christmas-tree-trellis)"
    ],
    "https://go.shopmy.us/p-99591691": [
-    "403",
+    "000",
     "Piper Chase Studios | Christmas Wreath (piper-chase-studios--christmas-wreath)"
    ],
    "https://go.shopmy.us/p-99592194": [
-    "000",
+    "403",
     "Piper Chase Studios | Coral Folk Floral (piper-chase-studios--coral-folk-floral)"
    ],
    "https://go.shopmy.us/p-99592256": [
@@ -1262,7 +1281,7 @@
     "Piper Chase Studios | Monogram Floral Fret (piper-chase-studios--monogram-floral-fret)"
    ],
    "https://go.shopmy.us/p-99591372": [
-    "403",
+    "000",
     "Piper Chase Studios | Nutcracker Bows (piper-chase-studios--nutcracker-bows)"
    ],
    "https://go.shopmy.us/p-99592168": [
@@ -1270,11 +1289,11 @@
     "Piper Chase Studios | Ornament Plaid (piper-chase-studios--ornament-plaid)"
    ],
    "https://go.shopmy.us/p-99591275": [
-    "000",
+    "403",
     "Piper Chase Studios | Peppermint Bows (piper-chase-studios--peppermint-bows)"
    ],
    "https://go.shopmy.us/p-99591569": [
-    "000",
+    "403",
     "Piper Chase Studios | Pink Bow Lattice (piper-chase-studios--pink-bow-lattice)"
    ],
    "https://go.shopmy.us/p-99592171": [
@@ -1314,7 +1333,7 @@
     "Piper Chase Studios | Tropical Jungle (piper-chase-studios--tropical-jungle)"
    ],
    "https://go.shopmy.us/p-99592262": [
-    "403",
+    "000",
     "Piper Chase Studios | Wildflower Garden (piper-chase-studios--wildflower-garden)"
    ],
    "https://go.shopmy.us/p-96122627": [
@@ -1322,7 +1341,7 @@
     "Sophie Clima | Cheeky Cockatoo (sophie-clima--cheeky-cockatoo)"
    ],
    "https://go.shopmy.us/p-96131764": [
-    "403",
+    "000",
     "Sophie Clima | Cheetah in Chinoiserie (sophie-clima--cheetah-in-chinoiserie)"
    ],
    "https://go.shopmy.us/p-96131257": [

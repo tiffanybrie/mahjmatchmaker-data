@@ -1,9 +1,9 @@
 {
- "fym_version": "v115",
+ "fym_version": "v116",
  "before_rows": 793,
- "after_rows": 1461,
+ "after_rows": 1455,
  "before_active": 764,
- "after_active": 1431,
+ "after_active": 1425,
  "before_retired": 29,
  "after_retired": 30,
  "added": [
@@ -702,6 +702,12 @@
   "Britt Mills | Willow Leatherette (britt-mills--willow-leatherette)",
   "Mahjong Register | Holly Jolly Double-Sided Leatherette (mahjong-register--holly-jolly-double-sided-leatherette)",
   "Mahjong Register | Letters to Santa Double-Sided Leatherette (mahjong-register--letters-to-santa-double-sided-leatherette)",
+  "Mahjong by SI | Gatsby (mahjong-by-si--gatsby)",
+  "Mahjong by SI | Highland Heritage Plaid (mahjong-by-si--highland-heritage-plaid)",
+  "Mahjong by SI | The Hunt Club (mahjong-by-si--the-hunt-club)",
+  "Mahjong by SI | The Lodge (mahjong-by-si--the-lodge)",
+  "Mahjong by SI | Tracing the Tides (mahjong-by-si--tracing-the-tides)",
+  "Mahjong by SI | Vintage Oxblood Leather (mahjong-by-si--vintage-oxblood-leather)",
   "Tigre de Tartan | French Mural (tigre-de-tartan--french-mural)"
  ],
  "newly_retired": [

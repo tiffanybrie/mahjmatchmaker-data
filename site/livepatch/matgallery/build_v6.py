@@ -135,6 +135,16 @@ for r in G:
         r[3] = AA.autoapply(LFIX[r[0]]['url'])[0] if LFIX[r[0]]['url'] else ''
 stats['link_fixes'] = sorted(f"{v['name']}: {'new link' if v['url'] else 'no shop button'}" for k, v in LFIX.items() if k in {r[0] for r in G})
 
+# --- 2a2. (FYM 1.16, Nov 6) Mahjong Co. mats are HIDDEN in the gallery too (Tiffany 3:56pm: "hide every one", FYM + Mat Gallery;
+# list = archive/mahjong-co-mats-hidden-2026-11-06.json, matched by FYM key). Removed brands (config/code-truth.json removed_brands,
+# Mahjong Row & Co.): her matched mats STAY (Nov 6 1:33pm scope) but with NO code claim: the code-page field (6) is blanked.
+_MCO = set(json.load(open(REPO + 'archive/mahjong-co-mats-hidden-2026-11-06.json'))['hidden_mats'])
+_RBN = set(json.load(open(REPO + 'config/code-truth.json')).get('removed_brands', {}))
+stats['hidden_mahjong_co'] = sorted(f'{r[2]} | {r[1]}' for r in G if fym_key(r)[0] in _MCO)
+G = [r for r in G if fym_key(r)[0] not in _MCO]
+for r in G:
+    if r[2] in _RBN and r[6]: r[6] = ''; stats.setdefault('removed_brand_no_code', []).append(f'{r[2]} | {r[1]}')
+
 # --- 2b. duplicate photos (config/mat-gallery-dedupe-v6.json, Claude photo review; Oct 20 dedupe style): drop the twin, keep one card,
 # note under the name (row field 14, e.g. 'Also available in leatherette'), optional second shop link (field 15: [label, url]).
 # A pHash + colour sweep flags NEW look-alike pairs that are neither merged nor listed as not_dupes (v6_counts.json 'dupe_candidates').
