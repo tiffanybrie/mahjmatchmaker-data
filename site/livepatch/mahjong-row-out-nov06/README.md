@@ -22,3 +22,9 @@ on mahjongrowandco.com (no code text).
    (swap in a partner where a list needs a number); /blog/mahjong-tile-set-details-to-know: drop the brand name from the sentence; /blog index teaser.
 10. Facebook GROUP: featured codes post first comment (typed list) -> delete their line; group About/guides if listed.
 FYM: builder/fym_fix_nov06/mr_out.py on the next build (gate [160] enforces); publish both copies.
+
+## Home page order (Tiffany Nov 6 1:36pm, same paste as step 3)
+In the #mmhome code block (block-yui_3_17_2_1_1791134152790_5194, see site/livepatch/home-oct21/README.md) move the Holiday Mahjong Matches
+section to right under the hero/Find Your Mat-ch (above the MAHJMATCH callout and New Tile Match Albums), then New Tile Match Albums,
+then From the Blog, then Shop by Color / Shop by Brand. Holiday section: add a line with how many partner brands are in the holiday sets
+(count from /holiday-mahjong-matches) to showcase the brands. Edit in CodeMirror (move the <section> nodes), Save, verify at 390 + 1440.
