@@ -22,6 +22,8 @@ Index layout (all arrays, to keep it small):
   a  albums         [path, set name, brand, cover url, hub colours, kind 0 album/1 colour hub/2 holiday,
                      n mats, description, mats in caption order (m idx, or -(x idx + 1) for album-only mats)]
   p  pages          [path, title, kind brand|blog|page, description, image, code, pct, brand]
+  m[10] / x[8]      slug of the mat's 'All matches' view when it is in 2+ albums, else ''
+mat-cards.json (same folder, loaded only when that view opens): see mat_views().
 """
 import html, io, json, os, re, subprocess, sys, time, unicodedata
 from concurrent.futures import ThreadPoolExecutor
@@ -228,6 +230,85 @@ def album_cards(h):
     return out
 
 
+SQS = 'https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/'
+
+
+def slugify(s):
+    return re.sub(r'[^a-z0-9]+', '-', norm(s)).strip('-')
+
+
+def mat_views(mats, xs, albums, order, card_img, xpos):
+    """'All matches for one mat' data (Tiffany Nov 6 1:03am): every mat in 2+ albums gets one view listing the
+    MATCH CARD from each album it is in (the album page's own card image: mat full, tiles inset, racks).
+    Writes slugs into the index (m[10], x[8]) so search can link to the view, and returns the mat-cards.json data:
+      a  albums used   [path, set name (no ' (holiday)'), holiday 0/1]
+      m  mat views     slug -> [mat name, brand, gallery img key or '', shop url, retired 0/1,
+                                [[album ref, card img ('~rel' = Squarespace content path, else full url), fallback 0/1], ...]]
+      k  gallery img key -> slug (for the Mat Gallery 'See its matches' link)
+    Cards are ordered by how high the mat sits in each album (her top picks first)."""
+    ents = []
+    for i, m in enumerate(mats):
+        ents.append(('m', i, m[1], m[2], m[0], m[3], m[4], [a for a in m[7] if albums[a][5] != 1], i))
+    for k, x in enumerate(xs):
+        ents.append(('x', k, x[0], x[1], '', x[3], x[4], [a for a in x[2] if albums[a][5] != 1], ('x', x[0], x[1])))
+    multi = [e for e in ents if len(e[7]) >= 2]
+    names = {}
+    for e in ents:
+        names.setdefault(slugify(e[2]), set()).add((e[2], e[3]))
+    used, aref, views, keys = set(), {}, {}, {}
+    n_card = n_fb = 0
+    for kind, i, name, brand, gkey, shop, ret, alist, mid in multi:
+        sl = slugify(name)
+        if len(names.get(sl, ())) > 1 or sl in used or not sl:
+            sl = slugify(brand + ' ' + name)
+        n = 2
+        base = sl
+        while sl in used:
+            sl = '%s-%d' % (base, n); n += 1
+        used.add(sl)
+        mkey = i if kind == 'm' else -(xpos[(name, brand)] + 1)
+
+        def pos(a):
+            o = albums[a][8]
+            return o.index(mkey) if mkey in o else 999
+        cards = []
+        for a in sorted(alist, key=lambda a: (pos(a), a)):
+            img = card_img.get((mid, a), '')
+            fb = 0
+            if not img:
+                img, fb = albums[a][3], 1
+            if fb:
+                n_fb += 1
+            else:
+                n_card += 1
+            img = re.sub(r'\?format=\d+w$', '', img)
+            if img.startswith(SQS):
+                img = '~' + img[len(SQS):]
+            if a not in aref:
+                aref[a] = len(aref)
+            cards.append([aref[a], img, fb])
+        views[sl] = [name, brand, gkey, shop or '', 1 if ret else 0, cards]
+        if gkey:
+            keys[gkey] = sl
+        if kind == 'm':
+            mats[i].append(sl)
+        else:
+            xs[i].append(sl)
+    for m in mats:
+        if len(m) < 11:
+            m.append('')
+    for x in xs:
+        if len(x) < 9:
+            x.append('')
+    alist = [None] * len(aref)
+    for a, r in aref.items():
+        alist[r] = [albums[a][0], re.sub(r' \(holiday\)$', '', albums[a][1]), 1 if albums[a][5] == 2 else 0]
+    out = {'v': 1, 'sq': SQS, 'a': alist, 'm': views, 'k': keys}
+    return {'out': out, 'stats': {'mats': len(views), 'gallery_mats': sum(1 for v in views.values() if v[2]),
+                                  'album_only_mats': sum(1 for v in views.values() if not v[2]),
+                                  'cards': n_card, 'fallback_covers': n_fb}}
+
+
 def main():
     do_thumbs = '--no-thumbs' not in sys.argv
     os.makedirs(OUT, exist_ok=True)
@@ -317,6 +398,11 @@ def main():
         key.setdefault((norm(x[1]), brand_key(x[2])), i)
     mat_albums, extra, unmatched = {}, {}, 0
     order = {}  # album idx -> mats in her caption order (her top picks first)
+    card_img = {}  # (mat id, album idx) -> that album's match card image for this mat (first card wins)
+    variants = {}
+    vp = os.path.join(ROOT, 'config', 'search-card-variants.json')
+    if os.path.exists(vp):
+        variants = json.load(open(vp)).get('cards', {})
     for ai, cards in album_mats.items():
         od = order.setdefault(ai, [])
         for name, brand, img, shop, ret, pick in cards:
@@ -336,10 +422,18 @@ def main():
                     print('  unmatched:', albums[ai][0], '|', name, '|', brand, file=sys.stderr)
                 if ('x', name, brand) not in od:
                     od.append(('x', name, brand))
+                if img:
+                    card_img.setdefault((('x', name, brand), ai), img)
                 continue
+            if len(hits) > 1 and img:
+                want = variants.get(re.sub(r'\?.*$', '', img).rsplit('/', 1)[-1])
+                if want:
+                    hits = [i for i in hits if R[i][0] == want] or hits
             for i in hits:
                 if i not in od:
                     od.append(i)
+                if img:
+                    card_img.setdefault((i, ai), img)
                 mat_albums.setdefault(i, [])
                 if ai not in mat_albums[i]:
                     mat_albums[i].append(ai)
@@ -357,7 +451,7 @@ def main():
             kw = (kw + ' ' + photo_kw[x[0]]).strip()
         # also-colours are searchable (silent) but chips show the sections
         mats.append([x[0], x[1], x[2], x[3] or '', 1 if x[4] else 0, secs, x[6] or '', mat_albums.get(i, []),
-                     1 if x[7] else 0, kw])
+                     1 if x[7] else 0, kw])  # [10] mat-view slug is appended by mat_views()
     xs = []
     for (n, b), e in sorted(extra.items()):
         hol = any(albums[a][5] == 2 for a in e['a'])
@@ -470,6 +564,11 @@ def main():
         elif x[5]:
             x[5] = small_img(x[5])
 
+    # ---- All matches for one mat (Tiffany Nov 6 1:03am): mat-cards.json, loaded only when the panel opens ----
+    mv = mat_views(mats, xs, albums, order, card_img, xpos)
+    with open(os.path.join(OUT, 'mat-cards.json'), 'w') as f:
+        json.dump(mv['out'], f, ensure_ascii=False, separators=(',', ':'))
+
     idx = {
         'v': 2,
         'built': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
@@ -489,6 +588,7 @@ def main():
         'album_only_mats': len(xs), 'mats_with_theme_kw': sum(1 for m in mats if any(
             w in m[9].split() for w in ('halloween', 'valentine', 'patriotic', 'shamrock', 'easter', 'derby', 'christmas', 'hanukkah', 'winter', 'fall'))),
         'bytes': os.path.getsize(os.path.join(OUT, 'search-index.json')),
+        'mat_views': mv['stats'],
     }
     print('index:', json.dumps(stats))
 

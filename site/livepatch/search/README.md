@@ -6,6 +6,7 @@ A search button in the site header (desktop and phone). Type a mat name, a brand
 
 ## Files
 - `assets/search/search.js`, `assets/search/search.css`: the UI (vanilla JS, no libraries). Loaded site-wide from Code Injection.
+- `assets/search/mat-cards.json`: the All matches panel data (see below).
 - `assets/search/search-index.json` (~270 KB, ~47 KB gzipped) + `assets/search/thumbs/` (small webp thumbs: `m/` gallery mats, `a/` album covers, `x/` album-only mat cards). Loaded only when search is first opened.
 - `scripts/search/build_index.py`: builds the index from the LIVE site (curl only).
 - `config/search-photo-themes.json`: theme words Claude read off mat photos (hearts, dragons, lobsters...). Edit freely.
@@ -25,6 +26,13 @@ A search button in the site header (desktop and phone). Type a mat name, a brand
 - Deep link: any page + `?mmq=<query>` opens search with that query, e.g. `https://www.mahjmatchmaker.com/?mmq=papaya%20spritz` (Claude can send these in chat).
 - "See in gallery" goes to `/mahjong-mats#<image key>`. The gallery block has no anchors, so search.js itself (it runs on every page) finds that card, resets filters if the card is hidden (shows retired if needed), scrolls to it and pulses a pink outline. **No change to the gallery code block is needed.**
 - Phones: the header icon sits left of the burger. To make room the mobile logo shrinks slightly (about 254 -> 222 px wide at 390 px) instead of pushing the burger off-screen. Desktop: the icon sits in the gap right of the logo (absolutely placed, the nav does not move).
+
+## All matches for one mat (Tiffany approved Nov 6 2026 1:03am; built Nov 6)
+Readers want every match card for one mat in one place (e.g. Dapper 2 is in 9 albums). No per-mat albums or cover cards: ONE data-driven panel inside search.js, hidden from the nav.
+- **Opens from:** a search result for a mat in more than 2 albums ("See all N match cards", under the "+N more" line, which stays); Mat Gallery cards for mats in 2+ albums ("See its matches", added by search.js itself to every `.mmg-card`, incl. after filters re-render; no gallery code-block change); `?mmmat=<slug>` on any page (slug = the mat name, e.g. `?mmmat=dapper-2`, `?mmmat=sugarplum`; brand-name slug only when two mats share a name, e.g. `?mmmat=oh-my-mahjong-garden-party`; the gallery img key works too, e.g. `?mmmat=oh-my-mahjong--dapper-2`); `window.MMSearch.openMat(slug)`.
+- **Panel:** "All matches for <Mat> · <Brand>", N match cards, one card per album = that album's own match card image (mat full, tiles inset bottom-right, racks), the tile set name and "See the album" (holiday sections: "See the holiday album", anchor link). Tap a card = zoom (1000w) with prev/next, arrow keys and swipe. Shop the mat + See in the Mat Gallery at the bottom. Close: ✕, Esc (zoom first), phone Back. Background scroll locked. Full names, never truncated. Cards are ordered by how high the mat sits in each album (her top picks first).
+- **Data:** `assets/search/mat-cards.json` (~290 KB, ~44 KB gzipped), loaded only when the panel opens or a page has gallery cards. Built by `build_index.py` (`mat_views()`) from the album pages' own match-card figures; slugs also go into the index (`m[10]`, `x[8]`). Nov 6 build: 230 mats (216 gallery + 14 album-only), 1,534 match cards, 0 album-cover fallbacks.
+- **Same design, two colourways:** an album caption like "Lagoon + Birdie" or "Brownstone Bloom + Dapper" fuzzy-matches 2 gallery mats; `config/search-card-variants.json` names the mat each such card really shows (Claude looked at each card). Add a line there when a new album caption is ambiguous (`--debug` does not flag these; check mats whose view shares a card image). Premium / Double-Sided variants of one design stay on both.
 
 ## Tracking (what people search, and empty searches)
 The live site has **no Google Analytics 4** (no gtag / G- ID found Oct 21), only Squarespace analytics, which cannot see these searches. So search.js POSTs `{q, results_count, page, ts}` to `window.MM_SEARCH_LOG_URL` when that is set (a search is logged after 1.2 s without typing, on Enter, or when search closes; never twice in a row; nothing personal). If GA4 is ever added, `search` and `search_no_results` gtag events fire automatically too.

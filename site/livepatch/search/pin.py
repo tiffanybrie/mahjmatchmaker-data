@@ -28,7 +28,7 @@ def main():
     # every file the snippet can load at that commit
     ls = subprocess.run(['git', '-C', ROOT, 'ls-tree', '-r', '--name-only', sha, 'assets/search/'],
                         capture_output=True, text=True).stdout.split()
-    files = [f for f in ls if f.endswith(('.css', '.js', 'search-index.json', '.webp'))]
+    files = [f for f in ls if f.endswith(('.css', '.js', 'search-index.json', 'mat-cards.json', '.webp'))]
     urls = [base + f[len('assets/search/'):] for f in files]
     urls.sort(key=lambda u: (not u.endswith(('.css', '.js', '.json')), u))
     open(os.path.join(HERE, 'urls.txt'), 'w').write('\n'.join(urls) + '\n')

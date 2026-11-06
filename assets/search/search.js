@@ -7,6 +7,9 @@
  *   Tracking: no GA4 on the site, so queries POST to window.MM_SEARCH_LOG_URL when it is set
  *   ({q, results_count, page, ts}, nothing personal). If gtag ever exists, GA4 events fire too.
  *   Gallery deep links: /mahjong-mats#<img key> scrolls to that mat and highlights it.
+ *   All matches for one mat (Tiffany Nov 6 2026): every match card a mat appears in, in one panel. Opened from a
+ *   search result ("See all N match cards"), Mat Gallery cards ("See its matches") or ?mmmat=<mat slug | img key>
+ *   on any page. Data: mat-cards.json (same folder), loaded only when needed. window.MMSearch.openMat(slug).
  */
 (function () {
   'use strict';
@@ -15,6 +18,7 @@
   var me = document.currentScript;
   var BASE = (me && me.src ? me.src : '').replace(/[^\/]*$/, '');
   var IDX_URL = window.MM_SEARCH_INDEX_URL || BASE + 'search-index.json';
+  var MV_URL = window.MM_MATCARDS_URL || IDX_URL.replace(/[^\/]*$/, '') + 'mat-cards.json';
   var TH = IDX_URL.replace(/[^\/]*$/, '') + 'thumbs/';
   var GALLERY = '/mahjong-mats';
   var D = null, DOCS = null, loading = null, ov, inp, res, lb, lastQ = '', pushed = false, logT = null, lastLogged = '';
@@ -200,6 +204,11 @@
     if (list.length > 2) s += '<span class="mms-rest" hidden>, ' + list.slice(2).map(albumLink).join(', ') + '</span> <button type="button" class="mms-more">+' + (list.length - 2) + ' more</button>';
     return '<div class="mms-al">In the ' + s + '</div>';
   }
+  /* "See all N match cards" (opens the All matches panel) for a mat in more than 2 albums */
+  function allLink(slug, list) {
+    var n = (list || []).filter(function (a) { return D.a[a] && D.a[a][5] !== 1; }).length;
+    return slug && n > 2 ? '<button type="button" class="mms-allm" data-mv="' + esc(slug) + '">See all ' + n + ' match cards</button>' : '';
+  }
   function chips(secs) {
     var L = D.sec || {}, h = '';
     (secs || []).slice(0, 3).forEach(function (c) {
@@ -216,13 +225,13 @@
       var x = D.x[d.i];
       return '<li class="mms-it mms-mat"><button type="button" class="mms-th" data-x="' + d.i + '" aria-label="See ' + esc(x[0]) + ' bigger"><img src="' + esc(th(x[5])) + '" alt="" loading="lazy" decoding="async"></button>' +
         '<div class="mms-tx"><button type="button" class="mms-nm" data-x="' + d.i + '">' + esc(x[0]) + '</button><div class="mms-br">' + esc(x[1]) + (x[4] ? ' <span class="mms-ret">Retired</span>' : '') + '</div>' +
-        albumsLine(x[2]) + '<div class="mms-acts">' + (x[3] ? '<a class="mms-btn" href="' + esc(x[3]) + '" target="_blank" rel="sponsored noopener">Shop</a>' : '') +
+        albumsLine(x[2]) + allLink(x[8], x[2]) + '<div class="mms-acts">' + (x[3] ? '<a class="mms-btn" href="' + esc(x[3]) + '" target="_blank" rel="sponsored noopener">Shop</a>' : '') +
         (x[2] && D.a[x[2][0]] ? '<a class="mms-btn mms-ghost" href="' + esc(D.a[x[2][0]][0]) + '">See the match</a>' : '') + '</div></div></li>';
     }
     var m = D.m[d.i];
     return '<li class="mms-it mms-mat"><button type="button" class="mms-th" data-m="' + d.i + '" aria-label="See ' + esc(m[1]) + ' bigger"><img src="' + esc(matImg(m[0])) + '" alt="" loading="lazy" decoding="async"></button>' +
       '<div class="mms-tx"><button type="button" class="mms-nm" data-m="' + d.i + '">' + esc(m[1]) + '</button><div class="mms-br">' + esc(m[2]) + (m[4] ? ' <span class="mms-ret">Retired</span>' : '') + '</div>' +
-      '<div class="mms-chips">' + chips(m[5]) + '</div>' + albumsLine(m[7]) +
+      '<div class="mms-chips">' + chips(m[5]) + '</div>' + albumsLine(m[7]) + allLink(m[10], m[7]) +
       '<div class="mms-acts">' + (m[3] ? '<a class="mms-btn" href="' + esc(m[3]) + '" target="_blank" rel="sponsored noopener">Shop</a>' : '') +
       '<a class="mms-btn mms-ghost" href="' + GALLERY + '#' + esc(m[0]) + '">See in gallery</a></div></div></li>';
   }
@@ -320,6 +329,8 @@
     res.addEventListener('click', function (e) {
       var b = e.target.closest('[data-q]');
       if (b) { inp.value = b.getAttribute('data-q'); render(inp.value); return; }
+      var av = e.target.closest('[data-mv]');
+      if (av) { openMat(av.getAttribute('data-mv')); return; }
       var mo = e.target.closest('.mms-more');
       if (mo) { var rest = mo.parentNode.querySelector('.mms-rest'); if (rest) rest.hidden = false; mo.remove(); return; }
       var s = e.target.closest('.mms-showall');
@@ -381,8 +392,185 @@
     if (pushed && !nav) { pushed = false; try { history.back(); } catch (e) {} }
     else if (pushed && nav) { pushed = false; try { history.replaceState(null, ''); } catch (e) {} }
   }
-  window.addEventListener('popstate', function () { if (ov && !ov.hidden) { pushed = false; close(true); } });
-  window.MMSearch = { open: open, close: close };
+  window.addEventListener('popstate', function () {
+    if (mvSkipPop) { mvSkipPop = false; return; } /* our own history.back() from closing the panel */
+    if (mv && !mv.hidden) { mvPushed = false; closeMat(true); return; }
+    if (ov && !ov.hidden) { pushed = false; close(true); }
+  });
+  window.MMSearch = { open: open, close: close, openMat: function (k) { openMat(k); }, closeMat: function () { closeMat(); } };
+
+
+  /* ---------- All matches for one mat (Tiffany Nov 6 2026 1:03am) ----------
+     One panel with every album match card a mat is in (mat full, tiles inset, racks: the album's own card image),
+     each with its tile set name + a link to its album. No per-mat pages: built from mat-cards.json. */
+  var MV = null, mvLoading = null, mv = null, mvSkipPop = false, mvGrid, mvZm, mvCur = null, mvIdx = 0, mvPushed = false, mvLast = null;
+  function loadMV() {
+    if (MV) return Promise.resolve(MV);
+    if (mvLoading) return mvLoading;
+    mvLoading = fetch(MV_URL, { credentials: 'omit' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (j) { MV = j; return MV; })
+      .catch(function (e) { mvLoading = null; throw e; });
+    return mvLoading;
+  }
+  function mvFind(k) {
+    k = String(k || '').trim().toLowerCase().replace(/^#/, '');
+    if (!MV || !k) return null;
+    if (MV.m[k]) return k;
+    if (MV.k[k]) return MV.k[k];
+    var f = fold(k).replace(/ /g, '-');
+    if (MV.m[f]) return f;
+    var hit = null;
+    Object.keys(MV.m).forEach(function (s) { if (!hit && (fold(MV.m[s][0]).replace(/ /g, '-') === f || fold(MV.m[s][1] + ' ' + MV.m[s][0]).replace(/ /g, '-') === f)) hit = s; });
+    return hit;
+  }
+  function mvImg(u, w) {
+    if (!u) return '';
+    if (u.charAt(0) === '~') return MV.sq + u.slice(1) + '?format=' + w + 'w';
+    return /squarespace-cdn\.com/.test(u) ? u.replace(/\?.*$/, '') + '?format=' + w + 'w' : u;
+  }
+  function mvAlbum(c) { return MV.a[c[0]] || ['#', '', 0]; }
+  function makeMV() {
+    if (mv) return;
+    mv = document.createElement('div');
+    mv.className = 'mmv-ov'; mv.hidden = true;
+    mv.setAttribute('role', 'dialog'); mv.setAttribute('aria-modal', 'true'); mv.setAttribute('aria-labelledby', 'mmv-h');
+    mv.innerHTML = '<div class="mmv-top"><div class="mmv-hd"><h2 id="mmv-h" class="mmv-h"></h2><p class="mmv-sub"></p></div>' +
+      '<button type="button" class="mmv-x" aria-label="Close">&#x2715;</button></div>' +
+      '<div class="mmv-body"><div class="mmv-in"><ul class="mmv-grid"></ul><div class="mmv-foot"></div></div></div>' +
+      '<div class="mmv-zm" hidden role="dialog" aria-label="Match card"><button type="button" class="mmv-zx" aria-label="Close match card">&#x2715;</button>' +
+      '<button type="button" class="mmv-nav mmv-prev" aria-label="Previous match card">&#x2039;</button><button type="button" class="mmv-nav mmv-next" aria-label="Next match card">&#x203A;</button>' +
+      '<figure class="mmv-zf"><img alt=""><figcaption></figcaption></figure></div>';
+    document.body.appendChild(mv);
+    mvGrid = mv.querySelector('.mmv-grid'); mvZm = mv.querySelector('.mmv-zm');
+    mv.querySelector('.mmv-x').addEventListener('click', function () { closeMat(); });
+    mv.addEventListener('click', function (e) {
+      var c = e.target.closest('.mmv-im');
+      if (c) { zoom(+c.getAttribute('data-n')); return; }
+      if (e.target.closest('.mmv-zx') || e.target === mvZm) { unzoom(); return; }
+      if (e.target.closest('.mmv-prev')) { zoom(mvIdx - 1); return; }
+      if (e.target.closest('.mmv-next')) { zoom(mvIdx + 1); return; }
+      var a = e.target.closest('a[href]');
+      if (a && a.target !== '_blank') mvFollow(e, a);
+    });
+    var sx = null, sy = null;
+    mvZm.addEventListener('touchstart', function (e) { if (e.touches.length === 1) { sx = e.touches[0].clientX; sy = e.touches[0].clientY; } }, { passive: true });
+    mvZm.addEventListener('touchend', function (e) {
+      if (sx == null) return;
+      var dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy; sx = null;
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) zoom(mvIdx + (dx < 0 ? 1 : -1));
+    }, { passive: true });
+  }
+  function renderMat(slug) {
+    var v = MV.m[slug], cards = v[5];
+    mvCur = slug;
+    mv.querySelector('.mmv-h').innerHTML = '<span class="mmv-k">All matches for</span> <span class="mmv-nm">' + esc(v[0]) + '</span> <span class="mmv-br">&middot; ' + esc(v[1]) + '</span>';
+    mv.querySelector('.mmv-sub').innerHTML = cards.length + ' match cards' + (v[4] ? ' <span class="mms-ret">Retired</span>' : '') + ' &middot; tap a card to zoom';
+    mvGrid.innerHTML = cards.map(function (c, n) {
+      var a = mvAlbum(c);
+      return '<li class="mmv-c"><button type="button" class="mmv-im" data-n="' + n + '" aria-label="Zoom the ' + esc(a[1]) + ' + ' + esc(v[0]) + ' match card">' +
+        '<img src="' + esc(mvImg(c[1], 500)) + '" alt="' + esc(a[1] + ' mahjong tiles with ' + v[1] + ' ' + v[0] + ' mahjong mat') + '" loading="lazy" decoding="async" width="500" height="625"></button>' +
+        '<div class="mmv-t"><span class="mmv-set">' + esc(a[1]) + '</span><a class="mmv-al" href="' + esc(a[0]) + '">See the ' + (a[2] ? 'holiday ' : '') + 'album</a></div></li>';
+    }).join('');
+    mv.querySelector('.mmv-foot').innerHTML = (v[3] ? '<a class="mms-btn" href="' + esc(v[3]) + '" target="_blank" rel="sponsored noopener">Shop the mat</a>' : '') +
+      (v[2] ? '<a class="mms-btn mms-ghost" href="' + GALLERY + '#' + esc(v[2]) + '">See in the Mat Gallery</a>' : '');
+    mv.querySelector('.mmv-body').scrollTop = 0;
+  }
+  function zoom(n) {
+    var v = MV.m[mvCur], cards = v[5];
+    if (n < 0 || n >= cards.length) return;
+    mvIdx = n;
+    var c = cards[n], a = mvAlbum(c), img = mvZm.querySelector('img');
+    img.src = mvImg(c[1], 1000); img.alt = a[1] + ' mahjong tiles with ' + v[1] + ' ' + v[0] + ' mahjong mat';
+    mvZm.querySelector('figcaption').innerHTML = '<span class="mmv-set">' + esc(a[1]) + ' + ' + esc(v[0]) + '</span><span class="mmv-cnt">' + (n + 1) + ' of ' + cards.length + '</span>' +
+      '<a class="mms-btn mms-ghost" href="' + esc(a[0]) + '">See the ' + (a[2] ? 'holiday ' : '') + 'album</a>';
+    mv.querySelector('.mmv-prev').hidden = n === 0;
+    mv.querySelector('.mmv-next').hidden = n === cards.length - 1;
+    mvZm.hidden = false;
+    mvZm.querySelector('.mmv-zx').focus({ preventScroll: true });
+  }
+  function unzoom() {
+    if (!mvZm || mvZm.hidden) return;
+    mvZm.hidden = true;
+    var b = mvGrid.querySelector('.mmv-im[data-n="' + mvIdx + '"]'); if (b) b.focus({ preventScroll: true });
+  }
+  function mvKey(e) {
+    if (e.key === 'Escape') { e.preventDefault(); if (!mvZm.hidden) unzoom(); else closeMat(); return; }
+    if (!mvZm.hidden && (e.key === 'ArrowRight' || e.key === 'ArrowLeft')) { e.preventDefault(); zoom(mvIdx + (e.key === 'ArrowRight' ? 1 : -1)); return; }
+    if (e.key === 'Tab') { /* keep focus inside the panel */
+      var f = Array.prototype.filter.call(mv.querySelectorAll('button,a[href]'), function (x) { return x.offsetParent !== null && !x.hidden && (mvZm.hidden || mvZm.contains(x)); });
+      if (!f.length) return;
+      var i = f.indexOf(document.activeElement);
+      if (e.shiftKey && i <= 0) { e.preventDefault(); f[f.length - 1].focus(); } else if (!e.shiftKey && i === f.length - 1) { e.preventDefault(); f[0].focus(); }
+    }
+  }
+  function openMat(k) {
+    makeMV();
+    var first = mv.hidden;
+    if (first) {
+      mvLast = document.activeElement;
+      mv.hidden = false; mvZm.hidden = true;
+      document.documentElement.classList.add('mmv-lock');
+      try { history.pushState({ mmv: 1 }, ''); mvPushed = true; } catch (e) { mvPushed = false; }
+    }
+    if (!MV) { mv.querySelector('.mmv-h').textContent = 'All matches'; mv.querySelector('.mmv-sub').textContent = 'Loading match cards…'; mvGrid.innerHTML = ''; mv.querySelector('.mmv-foot').innerHTML = ''; }
+    loadMV().then(function () {
+      var s = mvFind(k);
+      if (!s) {
+        mv.querySelector('.mmv-h').textContent = 'All matches';
+        mv.querySelector('.mmv-sub').textContent = 'We could not find that mat.';
+        mvGrid.innerHTML = ''; mv.querySelector('.mmv-foot').innerHTML = '<a class="mms-btn mms-ghost" href="' + GALLERY + '">Browse every mat in the Mat Gallery</a>';
+        return;
+      }
+      renderMat(s);
+    }).catch(function () { mv.querySelector('.mmv-sub').textContent = 'The match cards could not load. Please check your connection and try again.'; });
+    setTimeout(function () { mv.querySelector('.mmv-x').focus({ preventScroll: true }); }, 30);
+  }
+  function closeMat(nav) {
+    if (!mv || mv.hidden) return;
+    mv.hidden = true; mvZm.hidden = true;
+    document.documentElement.classList.remove('mmv-lock');
+    if (mvPushed && !nav) { mvPushed = false; mvSkipPop = true; try { history.back(); } catch (e) { mvSkipPop = false; } }
+    else if (mvPushed && nav) { mvPushed = false; try { history.replaceState(null, ''); } catch (e) {} }
+    if (mvLast && mvLast.focus && document.contains(mvLast)) try { mvLast.focus({ preventScroll: true }); } catch (e) {}
+  }
+  /* an album link inside the panel: close the panel (and search) first; a same-page #anchor scrolls after */
+  function mvFollow(e, a) {
+    var u = new URL(a.href, location.href);
+    closeMat(true);
+    if (ov && !ov.hidden) close(true);
+    if (u.pathname === location.pathname && u.hash) {
+      e.preventDefault();
+      setTimeout(function () { if (location.hash === u.hash) galleryJump(); else location.hash = u.hash; var el = document.getElementById(u.hash.slice(1)); if (el) el.scrollIntoView({ block: 'start' }); }, 30);
+    }
+  }
+  /* Mat Gallery cards (any page with .mmg-card): "See its matches" on mats in 2+ albums */
+  function galleryLinks() {
+    var tries = 0;
+    (function look() {
+      if (!document.querySelector('.mmg-card')) { if (++tries < 40) setTimeout(look, 250); return; }
+      loadMV().then(function () {
+        decorate();
+        var pend = false;
+        new MutationObserver(function () { if (pend) return; pend = true; requestAnimationFrame(function () { pend = false; decorate(); }); })
+          .observe(document.body, { childList: true, subtree: true });
+      }).catch(function () {});
+    })();
+  }
+  function decorate() {
+    document.querySelectorAll('.mmg-card:not([data-mmv])').forEach(function (card) {
+      card.setAttribute('data-mmv', '');
+      var im = card.querySelector('img'), m = im && /\/([a-z0-9-]+)\.webp(?:[?#]|$)/.exec(im.getAttribute('src') || '');
+      var slug = m && MV.k[m[1]], body = card.querySelector('.mmg-body');
+      if (!slug || !body) return;
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'mmv-gl'; b.setAttribute('data-mvk', m[1]);
+      b.textContent = 'See its matches';
+      b.setAttribute('aria-label', 'See all ' + MV.m[slug][5].length + ' match cards for ' + MV.m[slug][0]);
+      b.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); openMat(slug); });
+      var end = body.querySelector('.mmg-shop,.mmg-ret,.mmg-watch');
+      if (end) body.insertBefore(b, end); else { b.classList.add('mmv-gl-end'); body.appendChild(b); }
+    });
+  }
 
   /* ---------- header buttons ---------- */
   function addButtons() {
@@ -412,6 +600,7 @@
 
   /* ---------- keyboard + deep link ---------- */
   document.addEventListener('keydown', function (e) {
+    if (mv && !mv.hidden) { mvKey(e); return; } /* the All matches panel sits on top of everything */
     var t = e.target, typing = t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName));
     if ((e.key === 'k' || e.key === 'K') && (e.metaKey || e.ctrlKey)) { e.preventDefault(); if (ov && !ov.hidden) inp.focus(); else open(); return; }
     if (e.key === '/' && !typing && !e.metaKey && !e.ctrlKey && !e.altKey) { e.preventDefault(); open(); return; }
@@ -420,6 +609,12 @@
   function deepLink() {
     var q = null;
     try { q = new URLSearchParams(location.search).get('mmq'); } catch (e) {}
+    var mq = null;
+    try { mq = new URLSearchParams(location.search).get('mmmat'); } catch (e) {}
+    if (mq) {
+      try { var u0 = new URL(location.href); u0.searchParams.delete('mmmat'); history.replaceState(history.state, '', u0.pathname + u0.search + u0.hash); } catch (e) {}
+      openMat(mq);
+    }
     if (q == null) return;
     try { var u = new URL(location.href); u.searchParams.delete('mmq'); history.replaceState(history.state, '', u.pathname + u.search + u.hash); } catch (e) {}
     open(q);
@@ -459,6 +654,6 @@
   }
   window.addEventListener('hashchange', galleryJump);
 
-  function init() { addButtons(); deepLink(); galleryJump(); setTimeout(addButtons, 1500); }
+  function init() { addButtons(); deepLink(); galleryJump(); galleryLinks(); setTimeout(addButtons, 1500); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();

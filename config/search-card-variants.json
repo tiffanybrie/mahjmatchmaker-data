@@ -1,0 +1,11 @@
+{
+ "_note": "Album captions that name a design with more than one colourway in the gallery (e.g. 'Lagoon + Birdie', 'Brownstone Bloom + Dapper'). Claude LOOKED at each match card (Nov 6 2026, 'All matches for one mat' build) and named the gallery mat it shows: card image file name -> gallery img key. scripts/search/build_index.py uses it so the card (and the 'In the ... album' line) goes to that mat only. Premium / Double-Sided variants of one design are left on both.",
+ "cards": {
+  "01-moonlight-mahjong-tiles-oh-my-mahjong-birdie-mat.jpg": "oh-my-mahjong--birdie-green-retired",
+  "01-lola-mahjong-tiles-oh-my-mahjong-birdie-mat.jpg": "oh-my-mahjong--birdie-green-retired",
+  "04-lagoon-mahjong-tiles-oh-my-mahjong-birdie-mat.jpg": "oh-my-mahjong--birdie-green-retired",
+  "05-amara-mahjong-tiles-oh-my-mahjong-birdie-mat.jpg": "oh-my-mahjong--birdie-green-retired",
+  "03-birdie-mahjong-tiles-oh-my-mahjong-birdie-mat.jpg": "oh-my-mahjong--birdie-green-retired",
+  "brownstone-bloom-mahjong-tiles-oh-my-mahjong-dapper-mat.jpg": "oh-my-mahjong--dapper-2"
+ }
+}
