@@ -1,0 +1,135 @@
+{
+ "qa": "Independent QA, FYM v115 website copy (site-app/fym-v115 @57f0b4e6, assets @a3cba38) via page-block.html pin, Playwright chromium, 390x844 + 1280x900",
+ "date": "2026-11-05",
+ "verdict": "PASS",
+ "runs": {
+  "results-mat-1280.json": {
+   "checks": {
+    "loaded_v115": true,
+    "matdoor_colour_switch": true,
+    "matdoor_colour_clear_never_locks": true,
+    "matdoor_holiday_button": true,
+    "no_broken_imgs_matdoor": true,
+    "matdoor_reaches_racks": true,
+    "matdoor_card": true,
+    "no_broken_imgs_end": true,
+    "no_hscroll": true
+   },
+   "consoleErrors": [],
+   "badRequests": [],
+   "beaconPosts": 2
+  },
+  "results-mat-390.json": {
+   "checks": {
+    "loaded_v115": true,
+    "matdoor_colour_switch": true,
+    "matdoor_colour_clear_never_locks": true,
+    "matdoor_holiday_button": true,
+    "no_broken_imgs_matdoor": true,
+    "matdoor_reaches_racks": true,
+    "matdoor_card": true,
+    "no_broken_imgs_end": true,
+    "no_hscroll": true
+   },
+   "consoleErrors": [],
+   "badRequests": [],
+   "beaconPosts": 2
+  },
+  "results-sheets-390.json": {
+   "checks": {
+    "loaded_v115": true,
+    "sheet_mats-1_no_broken": true,
+    "sheet_mats-2_no_broken": true,
+    "sheet_mats-3_no_broken": true,
+    "sheet_tiles_no_broken": true,
+    "all_visible_thumbs_present": true
+   },
+   "consoleErrors": [],
+   "badRequests": [],
+   "beaconPosts": 0
+  },
+  "results-tiles-1280.json": {
+   "checks": {
+    "loaded_v115": true,
+    "tile_colour_switch": true,
+    "tile_colour_clear_never_locks": true,
+    "tile_holiday_button": true,
+    "new_tile_sets_in_AZ": true,
+    "no_broken_imgs_tiles_grid": true,
+    "juniper_leads_lotus_cove": true,
+    "zoom_persists_across_swipes": true,
+    "mat_colour_switch": true,
+    "mat_colour_clear_never_locks": true,
+    "mat_holiday_button": true,
+    "mat_holiday_toggle_off": true,
+    "x_and_heart_only": true,
+    "table_view": true,
+    "no_broken_imgs_table": true,
+    "racks_deck_shows": true,
+    "match_card_drawn": true,
+    "card_section_code_MAHJMATCH": false,
+    "share_or_save_works": true,
+    "no_broken_imgs_end": true,
+    "no_hscroll": true
+   },
+   "consoleErrors": [],
+   "badRequests": [],
+   "beaconPosts": 4
+  },
+  "results-tiles-390.json": {
+   "checks": {
+    "loaded_v115": true,
+    "tile_colour_switch": true,
+    "tile_colour_clear_never_locks": true,
+    "tile_holiday_button": true,
+    "new_tile_sets_in_AZ": true,
+    "no_broken_imgs_tiles_grid": true,
+    "juniper_leads_lotus_cove": true,
+    "zoom_persists_across_swipes": true,
+    "mat_colour_switch": true,
+    "mat_colour_clear_never_locks": true,
+    "mat_holiday_button": true,
+    "mat_holiday_toggle_off": true,
+    "x_and_heart_only": true,
+    "table_view": true,
+    "no_broken_imgs_table": true,
+    "racks_deck_shows": true,
+    "match_card_drawn": true,
+    "card_section_code_MAHJMATCH": false,
+    "share_or_save_works": true,
+    "no_broken_imgs_end": true,
+    "no_hscroll": true
+   },
+   "consoleErrors": [],
+   "badRequests": [],
+   "beaconPosts": 4
+  },
+  "results-tour-1280.json": {
+   "checks": {
+    "loaded_v115": true,
+    "tour_runs_through": true,
+    "no_hscroll_after_tour": true,
+    "no_broken_imgs_tour": true
+   },
+   "consoleErrors": [],
+   "badRequests": [],
+   "beaconPosts": 2
+  },
+  "results-tour-390.json": {
+   "checks": {
+    "loaded_v115": true,
+    "tour_runs_through": true,
+    "no_hscroll_after_tour": true,
+    "no_broken_imgs_tour": true
+   },
+   "consoleErrors": [],
+   "badRequests": [],
+   "beaconPosts": 2
+  }
+ },
+ "notes": [
+  "card_section_code_MAHJMATCH FAIL is a test artefact: the code is drawn on the card image (see tiles-1280-card-image.jpg \"Use code MAHJMATCH to save\"); the shop list shows \"Discount code\" links per partner piece.",
+  "Earlier crashes (Target crashed / ERR_INSUFFICIENT_RESOURCES) were the QA host disk being full; reruns with the browser cache on /dev/shm passed.",
+  "Tracking: sendBeacon POST (type ping, text/plain JSON {events:[...]}) to the AKfycbxS8 endpoint fired in every run: tiles, left/right, matdoor, brand, card events; ~2-4 posts per run."
+ ]
+}
