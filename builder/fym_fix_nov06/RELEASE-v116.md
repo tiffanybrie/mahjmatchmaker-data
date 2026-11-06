@@ -1,3 +1,19 @@
+# FYM v116 r2 = the FULL 1.16 build (Nov 6 evening, Matches & Catalog build for Main). NOT published.
+NOTE: r1 (below) went LIVE as "Version 1.16" at ~6:42pm (commit 702eaa5a, pin @80d4f0b8) while r2 was being built, so r2 needs a new
+label before it ships (e.g. Version 1.16.1 / 1.17: edit release116.py, re-run site116/artifact116 + gate).
+r1 (below) was a narrower fork (Mahjong Row parked + Mahjong Co. mats hidden only). r2 contains r1's edits (its mr_out.py + mco_out.py)
+PLUS: auto-apply discount links (gate [159]); 17 dead shop links with no shop button, not Retired (config/fym-dead-links.json, new gate
+[162] curl-checks every visible shop link); colour fixes from the Mat Gallery v6 work on 17 visible unlocked mats (84 LOCKED mats the rule
+would change are listed in config/fym-colour-fixes-v116.json 'skipped', untouched: need her OK); Juniper deck = Palm Royale, Garden Glow,
+Lotus Cove (config/fym-coordinated.json _top3, gate [57]); Mahj Pit White Beech Wood rack (6b white+navy reviewed; the other 5 Mahj Pit racks
+have no clean photo); her 41 thin-album hearts; MATCH-INBOX link/stock/album fixes. Build: builder/fym_fix_nov06/build116.sh <b115> <b116>.
+Gate (build + website copy): PASS, docs/reports/fym/gate-v116-full-build-2026-11-06.txt.
+- Website copy: fym-site-preview @fdcc1868e475c8fa393132b97e6d1c55475caf66 site-app/fym-v116/index.html (jsDelivr 200; no new asset files).
+- Artifact copy: /tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/fym/pub116 (index.html + mc/190.webp = pub115's pack unchanged, files.json), made by artifact116.py from pub115.
+- Mat Gallery: site/livepatch/matgallery/matgallery-v6.html stamped data-fym="v116" (rows data/matgallery-v116.json @8ed532e9, 1,455 rows;
+  Mahjong Co. mats hidden, Mahjong Row's 9 matched mats kept with no code-page link). Staged, NOT pasted.
+- Not done here (by request): artifact publish, README 0a pin, Squarespace paste, search rebuild. Independent QA still required (rule 2).
+
 # FYM v116 = "Version 1.16" (Nov 6): Mahjong Row & Co. parked + Mahjong Co. mats hidden
 
 Built from the LIVE artifact 6epA9HuEdT32zUp79Qv3kd (version 1793866353-792d = Version 1.15, artifact-slim copy) and from the live website
