@@ -19,6 +19,7 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
  12 no Mahjong Studios mat visible in FYM or in the staged Mat Gallery (Tiffany Oct 20 22:31: tiles/racks stay, mats go); no removed
     gallery row back in site/livepatch/matgallery/matgallery-v5.html
  160 (Nov 6) no visible mat/tile/rack/set of a brand in config/code-truth.json removed_brands (Mahjong Row & Co.)
+ 161 (Nov 6) no visible Mahjong Co. mat (retired; Kaleidoscope tiles stay)
  13 staged Mat Gallery (Oct 20 late): non-partner lockout hard FAIL, late-call holiday mats Holiday-only (gallery + FYM), her also/remove/floral
     calls present, holiday_off empty, lead/tail pins match late-calls, section sort = lead > ONE list by score > tail, where
     score = measured share of the colour + 20 if it is the mat's primary (ties: primary first, then name). Checked by RUNNING the page's
@@ -1875,6 +1876,14 @@ try:
         _v160 += [s.get('slug') for s in D['sets'] if s.get('maker') == _b160 and not s.get('hid')]
         if _v160: F.append(f"[160] removed brand {_b160} still visible in FYM ({len(_v160)}): " + ', '.join(map(str, _v160[:8])) + ' (run builder/fym_fix_nov06/mr_out.py)')
 except Exception as _e: F.append(f"[160] removed-brand check did not run: {_e}")
+# [161] (Tiffany Nov 6 3:56pm) MAHJONG CO. MATS are retired (shop empty, product pages 404): every mat on mahjongco.com is hidden in FYM;
+# the Kaleidoscope tiles (and any other Mahjong Co. tile set) stay visible. Fix = builder/fym_fix_nov06/mco_out.py.
+try:
+    _v161 = [k for k, v in D['mats'].items() if k.startswith('mahjongco.com/') and not v.get('hid')]
+    if _v161: F.append(f"[161] Mahjong Co. mat visible in FYM ({len(_v161)}): " + ', '.join(_v161[:8]) + ' (run builder/fym_fix_nov06/mco_out.py)')
+    _t161 = [k for k, v in D['tiles'].items() if k.startswith('mahjongco.com/') and 'kaleidoscope' in k and v.get('hid') and not v.get('soon')]
+    if _t161: F.append(f"[161] Mahjong Co. Kaleidoscope tiles were hidden (they stay): {_t161}")
+except Exception as _e: F.append(f"[161] Mahjong Co. mat check did not run: {_e}")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))
