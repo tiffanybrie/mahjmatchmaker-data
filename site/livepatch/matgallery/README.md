@@ -75,7 +75,7 @@ Rebuild: `python3 ../../../scripts/colors/build_accents.py` then `python3 build_
 - **Rebuild (every FYM release):** see site/livepatch/fym-preview-oct21/README.md "EVERY FYM RELEASE". `python3 build_v6.py <fym index.html>` (inline rows, local preview) → commit data → `python3 build_v6.py <fym index.html> --data-commit <sha> > matgallery-v6.html`.
 - **Paste (one driver in Chrome; Squarespace page /mahjong-mats, its one code block):** Pages → Mat Gallery (/mahjong-mats) → Edit → double-click the code block → in the console:
   ```js
-  const html=await (await fetch('https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@473f787cae3cd1ad9a7a54ffc8ec1957897a5a65/site/livepatch/matgallery/matgallery-v6.html')).text();
+  const html=await (await fetch('https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@c4bcb7d63fbcd6871c2dcc5d354c37f392161695/site/livepatch/matgallery/matgallery-v6.html')).text();
   const v=document.querySelector('.cm-editor .cm-content').cmTile.view; v.dispatch({changes:{from:0,to:v.state.doc.length,insert:html}});
   v.state.doc.length===html.length
   ```
