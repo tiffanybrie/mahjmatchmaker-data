@@ -1,6 +1,6 @@
 {
- "at": "2026-11-06T00:58:37",
- "links": 604,
+ "at": "2026-11-06T17:32:46",
+ "links": 603,
  "pages": 39,
  "bad": [
   {
@@ -52,6 +52,14 @@
    ]
   },
   {
+   "url": "https://brittmillsdesign.com/products/knox-neoprene-mahjong-mat?sca_ref=11205153.24gc8ncLZw3",
+   "status": 200,
+   "note": "SOLD OUT",
+   "pages": [
+    "/britt-mills-discount-code"
+   ]
+  },
+  {
    "url": "https://brittmillsdesign.com/products/legacy-britt-mills-mahjong-mat?sca_ref=11205153.24gc8ncLZw3",
    "status": 200,
    "note": "SOLD OUT",
@@ -85,14 +93,6 @@
   },
   {
    "url": "https://mahjmood.com/products/rally-in-pink-mat-four-winds-social-collab-mat-benefitting-pink-fund?ref=Mahjmatchmaker",
-   "status": 200,
-   "note": "SOLD OUT",
-   "pages": [
-    "/mahj-mood-discount-code"
-   ]
-  },
-  {
-   "url": "https://mahjmood.com/products/white-pearl-travel-tiles?ref=Mahjmatchmaker",
    "status": 200,
    "note": "SOLD OUT",
    "pages": [
@@ -193,14 +193,6 @@
    "note": "SOLD OUT",
    "pages": [
     "/peace-love-mahjong-discount-code"
-   ]
-  },
-  {
-   "url": "https://shop.andersruff.com/products/bams-bubbly-mahjong-anywhere%E2%84%A2-convertible-table-set?sca_ref=12490265.xTtN8oMUj9qSk1",
-   "status": 404,
-   "note": "",
-   "pages": [
-    "/anders-ruff-discount-code"
    ]
   },
   {
@@ -340,31 +332,15 @@
    ]
   },
   {
-   "url": "https://www.ohmymahjong.com/products/dapper-mat-w-tube",
-   "status": 404,
-   "note": "",
-   "pages": [
-    "/oh-my-mahjong-discount-code"
-   ]
-  },
-  {
-   "url": "https://www.ohmymahjong.com/products/darjeeling-mat-w-tube",
-   "status": 404,
-   "note": "",
-   "pages": [
-    "/oh-my-mahjong-discount-code"
-   ]
-  },
-  {
-   "url": "https://www.ohmymahjong.com/products/pearlescent-tile-set",
-   "status": 404,
-   "note": "",
-   "pages": [
-    "/oh-my-mahjong-discount-code"
-   ]
-  },
-  {
    "url": "https://www.viroramahjong.com/products/florielle?ref=Mahjmatchmaker",
+   "status": 200,
+   "note": "SOLD OUT",
+   "pages": [
+    "/virora-mahjong-discount-code"
+   ]
+  },
+  {
+   "url": "https://www.viroramahjong.com/products/hollivia?ref=Mahjmatchmaker",
    "status": 200,
    "note": "SOLD OUT",
    "pages": [
@@ -381,6 +357,14 @@
   },
   {
    "url": "https://www.viroramahjong.com/products/rosanelle?ref=Mahjmatchmaker",
+   "status": 200,
+   "note": "SOLD OUT",
+   "pages": [
+    "/virora-mahjong-discount-code"
+   ]
+  },
+  {
+   "url": "https://www.viroramahjong.com/products/ruby-christmas?ref=Mahjmatchmaker",
    "status": 200,
    "note": "SOLD OUT",
    "pages": [
