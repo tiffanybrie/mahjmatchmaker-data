@@ -232,7 +232,7 @@
     return '<li class="mms-it mms-mat"><button type="button" class="mms-th" data-m="' + d.i + '" aria-label="See ' + esc(m[1]) + ' bigger"><img src="' + esc(matImg(m[0])) + '" alt="" loading="lazy" decoding="async"></button>' +
       '<div class="mms-tx"><button type="button" class="mms-nm" data-m="' + d.i + '">' + esc(m[1]) + '</button><div class="mms-br">' + esc(m[2]) + (m[4] ? ' <span class="mms-ret">Retired</span>' : '') + '</div>' +
       '<div class="mms-chips">' + chips(m[5]) + '</div>' + albumsLine(m[7]) + allLink(m[10], m[7]) +
-      '<div class="mms-acts">' + (m[3] ? '<a class="mms-btn" href="' + esc(m[3]) + '" target="_blank" rel="sponsored noopener">Shop</a>' : '') +
+      '<div class="mms-acts">' + (m[3] && !m[4] ? '<a class="mms-btn" href="' + esc(m[3]) + '" target="_blank" rel="sponsored noopener">Shop</a>' : '') +
       '<a class="mms-btn mms-ghost" href="' + GALLERY + '#' + esc(m[0]) + '">See in gallery</a></div></div></li>';
   }
   function rAlbum(d) {
@@ -359,7 +359,7 @@
       var m = D.m[i];
       img.src = matImg(m[0], true); img.alt = m[2] + ' ' + m[1] + ' mahjong mat';
       h = '<b>' + esc(m[1]) + '</b><span>' + esc(m[2]) + (m[4] ? ' · Retired' : '') + '</span><div class="mms-acts">' +
-        (m[3] ? '<a class="mms-btn" href="' + esc(m[3]) + '" target="_blank" rel="sponsored noopener">Shop the mat</a>' : '') +
+        (m[3] && !m[4] ? '<a class="mms-btn" href="' + esc(m[3]) + '" target="_blank" rel="sponsored noopener">Shop the mat</a>' : '') +
         '<a class="mms-btn mms-ghost" href="' + GALLERY + '#' + esc(m[0]) + '">See in gallery</a></div>';
     } else {
       var x = D.x[i];
@@ -472,7 +472,8 @@
         '<img src="' + esc(mvImg(c[1], 500)) + '" alt="' + esc(a[1] + ' mahjong tiles with ' + v[1] + ' ' + v[0] + ' mahjong mat') + '" loading="lazy" decoding="async" width="500" height="625"></button>' +
         '<div class="mmv-t"><span class="mmv-set">' + esc(a[1]) + '</span><a class="mmv-al" href="' + esc(a[0]) + '">See the ' + (a[2] ? 'holiday ' : '') + 'album</a></div></li>';
     }).join('');
-    mv.querySelector('.mmv-foot').innerHTML = (v[3] ? '<a class="mms-btn" href="' + esc(v[3]) + '" target="_blank" rel="sponsored noopener">Shop the mat</a>' : '') +
+    /* retired (live gallery or FYM): a Retired label, never a shop link (QA Nov 6: retired Dapper 2's link 404s) */
+    mv.querySelector('.mmv-foot').innerHTML = (v[4] ? '<span class="mmv-ret">Retired</span>' : v[3] ? '<a class="mms-btn" href="' + esc(v[3]) + '" target="_blank" rel="sponsored noopener">Shop the mat</a>' : '') +
       (v[2] ? '<a class="mms-btn mms-ghost" href="' + GALLERY + '#' + esc(v[2]) + '">See in the Mat Gallery</a>' : '');
     mv.querySelector('.mmv-body').scrollTop = 0;
   }

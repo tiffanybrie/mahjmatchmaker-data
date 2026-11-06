@@ -144,3 +144,4 @@ html.mmv-lock,html.mmv-lock body{overflow:hidden!important}
   .mmv-prev{left:16px}.mmv-next{right:16px}
 }
 @media(min-width:1100px){.mmv-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.mmv-ret{display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border-radius:18px;background:#ececec;color:#555;font-size:14px;font-weight:700;letter-spacing:.04em}

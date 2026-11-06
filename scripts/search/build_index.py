@@ -165,7 +165,7 @@ def toks(s):
 
 def brand_key(b):
     b = re.sub(r'\bmah ?jongg?\b|\bmahjongg\b', 'mahjong', norm(b))  # Ozark Mah Jongg == Ozark Mahjongg
-    return ' '.join(w for w in b.split() if w not in ('co', 'company', 'the', 'mahjong'))
+    return ' '.join(w for w in b.split() if w not in ('co', 'company', 'the', 'mahjong', 'and'))  # 'Mahj and Moon' == 'Mahj & Moon'
 
 
 def fuzzy_mat(R, name, brand):
@@ -308,6 +308,36 @@ def mat_views(mats, xs, albums, order, card_img, xpos):
     return {'out': out, 'stats': {'mats': len(views), 'gallery_mats': sum(1 for v in views.values() if v[2]),
                                   'album_only_mats': sum(1 for v in views.values() if not v[2]),
                                   'cards': n_card, 'fallback_covers': n_fb}}
+
+
+# FYM is ahead of the live Mat Gallery on retired mats (QA Nov 6: OMM Dapper 2 + Esme retired, shop links 404).
+FYM_HTML = os.environ.get('MM_FYM_HTML', '/home/claude/fym-site/site-app/fym-v115/index.html')
+
+
+def fym_retired():
+    """(norm name, brand key) of every mat FYM marks retired (rt flag or '(retired)' in the name). Empty if missing."""
+    try:
+        h = open(FYM_HTML, encoding='utf-8').read()
+        D = json.loads(re.search(r'const D=(\{.*?\});\s*\n', h, re.S).group(1))
+    except Exception as e:
+        print('WARN FYM retired list not read (%s): %s' % (FYM_HTML, str(e)[:80]), file=sys.stderr)
+        return set()
+    out = set()
+    for v in D.get('mats', {}).values():
+        if v.get('rt') or re.search(r'\(retired\)', v.get('n', ''), re.I):
+            out.add((norm(v.get('n', '')), brand_key(v.get('bn') or v.get('b') or '')))
+    return out
+
+
+def check_links(urls):
+    """HTTP status per shop url (GET, redirects followed, browser UA). Only 404/410 count as dead."""
+    def one(u):
+        r = subprocess.run(['curl', '-s', '-o', '/dev/null', '-L', '--max-time', '25', '-w', '%{http_code}',
+                            '-A', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15', u],
+                           capture_output=True, text=True)
+        return u, r.stdout.strip()
+    with ThreadPoolExecutor(12) as ex:
+        return dict(ex.map(one, sorted(set(urls))))
 
 
 def main():
@@ -458,6 +488,7 @@ def main():
     photo_kw = {}
     if os.path.exists(PHOTO_THEMES_FILE):
         photo_kw = {k: v for k, v in json.load(open(PHOTO_THEMES_FILE)).get('mats', {}).items()}
+    fret = fym_retired()
     mats = []
     for i, x in enumerate(R):
         secs = [c for c in x[5] if c in sec_lab]
@@ -468,13 +499,31 @@ def main():
         if x[0] in photo_kw:
             kw = (kw + ' ' + photo_kw[x[0]]).strip()
         # also-colours are searchable (silent) but chips show the sections
-        mats.append([x[0], x[1], x[2], x[3] or '', 1 if x[4] else 0, secs, x[6] or '', mat_albums.get(i, []),
+        ret = 1 if (x[4] or (norm(x[1]), brand_key(x[2])) in fret) else 0
+        mats.append([x[0], x[1], x[2], '' if ret else (x[3] or ''), ret, secs, x[6] or '', mat_albums.get(i, []),
                      1 if x[7] else 0, kw])  # [10] mat-view slug is appended by mat_views()
     xs = []
     for (n, b), e in sorted(extra.items()):
         hol = any(albums[a][5] == 2 for a in e['a'])
         xs.append([n, b, e['a'], e['shop'], e['ret'] if not e['shop'] else 0, e['img'], themes(n, (), hol),
                    re.sub(r'\?format=\d+w$', '?format=750w', e['img'])])
+    for x in xs:
+        if (norm(x[0]), brand_key(x[1])) in fret:
+            x[3], x[4] = '', 1
+    n_fret = sum(1 for m in mats if m[4]) + sum(1 for x in xs if x[4])
+    # every shop link is checked: a 404/410 link is dropped (QA Nov 6: retired Dapper 2's OMM link 404s)
+    dead = []
+    if '--no-link-check' not in sys.argv:
+        codes = check_links([m[3] for m in mats if m[3]] + [x[3] for x in xs if x[3]])
+        for row, si in [(m, 3) for m in mats] + [(x, 3) for x in xs]:
+            if row[si] and codes.get(row[si]) in ('404', '410'):
+                dead.append((row[1] if len(row) > 9 and row is not None and isinstance(row[5], list) else row[0], row[si], codes[row[si]]))
+                row[si] = ''
+        odd = {u: c for u, c in codes.items() if c not in ('200', '404', '410')}
+        for d_ in dead:
+            print('  DEAD shop link dropped:', d_, file=sys.stderr)
+        for u, c in sorted(odd.items()):
+            print('  shop link not 200 (kept):', c, u, file=sys.stderr)
     xpos = {(x[0], x[1]): k for k, x in enumerate(xs)}
     for ai, a in enumerate(albums):
         a.append([v if isinstance(v, int) else -(xpos[(v[1], v[2])] + 1) for v in order.get(ai, [])])
@@ -643,7 +692,7 @@ def main():
         'album_only_mats': len(xs), 'mats_with_theme_kw': sum(1 for m in mats if any(
             w in m[9].split() for w in ('halloween', 'valentine', 'patriotic', 'shamrock', 'easter', 'derby', 'christmas', 'hanukkah', 'winter', 'fall'))),
         'bytes': os.path.getsize(os.path.join(OUT, 'search-index.json')),
-        'mat_views': mv['stats'], 'near_duplicates': len(dupes), 'cards_left_out': len(excluded),
+        'mat_views': mv['stats'], 'retired': n_fret, 'dead_shop_links_dropped': len(dead), 'near_duplicates': len(dupes), 'cards_left_out': len(excluded),
         'captions_matching_2plus_mats': len(multi_hits),
     }
     print('index:', json.dumps(stats))
