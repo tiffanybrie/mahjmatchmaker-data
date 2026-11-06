@@ -235,6 +235,7 @@ else:
         if bad: F.append(f"[8b] chip {c_}: {_MS[bad[0]]['n']} (score {sc(bad[0]):.1f}) sits above {_MS[bad[1]]['n']} (score {sc(bad[1]):.1f}); rule = share + 20 if primary, high to low")
 for c_, ks_ in (D.get('lead') or {}).items():
     for k_ in ks_:
+        if k_ in M and M[k_].get('parked'): continue  # Nov 6: lead mat of a parked/retired brand (Mahjong Row, Mahjong Co.) is hidden on purpose
         if k_ not in M or M[k_].get('hid') or (M[k_].get('mf') or [None])[0] != c_: F.append(f"[8b] lead mat {k_} for {c_} missing, hidden or not {c_} primary")
 for k, o in M.items():
     if len(o.get('sh') or []) != len(o.get('mf') or []): F.append(f"[8b] mat {o['n']}: sh shares {o.get('sh')} do not line up with mf {o.get('mf')}")
@@ -1124,6 +1125,7 @@ if not _pre98:
         if _k in D['racks'] and not D['racks'][_k].get('hid'): F.append(f"[92] {D['racks'][_k]['n']}: stacked-racks entry should be hidden (split into single variants)")
     for _k, _v in list(_C92['add'].items()) + list(_C92['replace'].items()):  # v112: an inline file:data: HD (PLM Chartreuse A) counts
         _r = D['racks'].get(_k)
+        if _r and _r.get('parked'): continue  # Nov 6: parked brand (Mahjong Row) racks are hidden on purpose
         if not _r or _r.get('hid'): F.append(f"[92] {_v.get('n', _k)}: single-rack entry missing or hidden"); continue
         if not str(_r.get('im', '')).startswith('rk98') or not (str(_hd92.get(_k, '')).startswith('file:data:image/') or (str(_hd92.get(_k, '')).startswith('file:r98/') and os.path.exists(os.path.join(B, _hd92.get(_k, 'x')[5:])))): F.append(f"[92] {_r['n']}: does not show its v98 single-rack photo")
         if bool(_r.get('c')) != bool(_v['c']): F.append(f"[92] {_r['n']}: cutout flag c should be {_v['c']}")
