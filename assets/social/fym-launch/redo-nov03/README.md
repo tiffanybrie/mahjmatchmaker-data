@@ -1,4 +1,6 @@
-# Find Your Mat-ch launch reel REDO (Nov 3 2026; RE-CUT Nov 6: Mahjong Row & Co. removed)
+# Find Your Mat-ch launch reel REDO (Nov 3 2026; RE-CUT Nov 6: Mahjong Row & Co. removed; SPOTLIGHT Nov 6 6:10pm)
+
+**Nov 6 spotlight (Tiffany 5:57pm, FYM-REEL-RULES #39):** every app moment 24.06-51.5s now dims the screen ~58% with soft cut-outs on the action (holiday intro v2 style, `spot()`/`sp()` in build/reel.py): Start with tiles button -> search box + results -> Sunday tile; tile strip + mat card on every swipe; the 3 suitors; zoomed mat -> Wood/Walnut chips -> mat + rack deck; the card's MAHJMATCH pill -> the shop list. Length 58.0s, cuts, song sync, cover unchanged. Planoly group 01a1b30e-67a2 media swapped (asset 01a1b320-eb1f).
 
 **Nov 6 re-cut (Tiffany 5:35pm, Mahjong Row out):** ♥ Midnight Garden (Mahjong Row) -> ♥ Knox (Britt Mills, her real Sunday pick), same timing; match-card wall: 4 cards swapped (Cypress x Legacy, Heritage 2.0 x Midnight Garden, Talulah x Flirty Leopards w/ MR rack, Smith x Ivy Reverie -> Amara x Rally in Pink, Solara x Wren Watercolor Floral, Jasmine x The Dahlia, Pippa x Fruit Stand); depth wall excludes Mahjong Row/YMI/Mahjong Co.; end-card logo ticker drops Mahjong Row + YMI; @mahjongrowandco off Tag people (+ @brittmillsdesign @mahj_mood @wrenmats). Cover unchanged (navy 'is HERE.'). Planoly reminder draft Sat 11/7 (group 01a1b30e-67a2-717f-975c-f1af45e93dcb). Known residual: the ORIGINAL 12.15-16.6s catalog wall (800+ tiny thumbnails, no names/logos, from the Oct 27 cut) was not rebuilt.
 
