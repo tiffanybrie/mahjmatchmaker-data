@@ -1,10 +1,7 @@
 {
- "commit": "179651ea94a89c8189bf7565102dbe32117647b9",
+ "commit": "d89d8d26f05a824c5f69600a5178b9b89125a810",
  "total": 1705,
- "ok_first_try": 1641,
- "ok_after_retry": 62,
- "still_failing": {
-  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@179651ea94a89c8189bf7565102dbe32117647b9/assets/search/thumbs/c/731cf8c0b04f0be4.webp": "403",
-  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@179651ea94a89c8189bf7565102dbe32117647b9/assets/search/thumbs/m/britt-mills--haven-leatherette.webp": "403"
- }
+ "ok_first_try": 1604,
+ "ok_after_retry": 101,
+ "still_failing": {}
 }
