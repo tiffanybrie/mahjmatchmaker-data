@@ -27,18 +27,33 @@
 <div class="po">
   <header>
     <h1>Payout Tracker</h1>
-    <p class="lede">You earned <b data-draw="earned" data-source="totals" data-field="earned">—</b> in October. <b data-draw="paid" data-source="totals" data-field="paid">—</b> has been paid since Sep 1, <b data-draw="owed" data-source="totals" data-field="owed">—</b> is still owed, and <b data-draw="overdue" data-source="totals" data-field="overdue">—</b> of that is overdue.</p>
+    <p class="lede">You earned <b data-draw="earned" data-source="totals" data-field="earned">—</b> in October. <b data-draw="paid" data-source="totals" data-field="paid">—</b> has been paid since Sep 1, <b data-draw="owed" data-source="totals" data-field="owed">—</b> is still owed, and <b data-draw="overdue" data-source="totals" data-field="overdue">—</b> of that is past the brand's payout window.</p>
   </header>
   <div class="tiles">
     <div class="tile"><div class="l">October earned</div><div class="v" data-draw="earned" data-source="totals" data-field="earned">—</div></div>
     <div class="tile"><div class="l">Paid since Sep 1</div><div class="v" data-draw="paid" data-source="totals" data-field="paid">—</div></div>
     <div class="tile"><div class="l">Still owed (known)</div><div class="v" data-draw="owed" data-source="totals" data-field="owed">—</div></div>
-    <div class="tile bad"><div class="l">Overdue</div><div class="v" data-draw="overdue" data-source="totals" data-field="overdue">—</div></div>
+    <div class="tile bad"><div class="l">Past due (window passed)</div><div class="v" data-draw="overdue" data-source="totals" data-field="overdue">—</div></div>
     <div class="tile"><div class="l">Brands still to check</div><div class="v" data-draw="unknown" data-source="totals" data-field="unknown">—</div></div>
   </div>
+  <section class="card" id="coming">
+    <h2>When the money should arrive</h2>
+    <p class="note">Every brand that owes you, by the date it should pay. "How sure" says whether the date comes from their past payouts or is my check-in date. Anything that passes its date unpaid gets flagged to you.</p>
+    <div class="tw">
+      <table data-source="brands" data-row-key="brand">
+        <thead><tr>
+          <th data-field="expected_by">Expected by</th>
+          <th data-field="brand">Brand</th>
+          <th class="n" data-field="still_owed">Amount</th>
+          <th class="hide-sm" data-field="how_sure">How sure</th>
+        </tr></thead>
+        <tbody data-draw="calrows"></tbody>
+      </table>
+    </div>
+  </section>
   <section class="card" id="brands">
     <h2>By brand</h2>
-    <p class="note">Biggest amounts owed first. A blank "Still owed" means that brand's dashboard hasn't been read yet. Updated weekly from PayPal and the affiliate dashboards.</p>
+    <p class="note">"Past due" only counts money whose payout window we know has passed. Biggest amounts owed first. A blank "Still owed" means that brand's dashboard hasn't been read yet. Updated weekly from PayPal and the affiliate dashboards.</p>
     <div class="tw">
       <table data-source="brands" data-row-key="brand">
         <thead><tr>
@@ -47,7 +62,8 @@
           <th class="n" data-field="oct_earned">Oct earned</th>
           <th class="n" data-field="paid_since_sep1">Paid since Sep 1</th>
           <th class="n" data-field="still_owed">Still owed</th>
-          <th data-field="next_expected">Next payout</th>
+          <th class="n" data-field="past_due">Past due</th>
+          <th data-field="expected_by">Expected by</th>
           <th class="hide-sm" data-field="method">Paid by</th>
           <th class="hide-sm" data-field="note">Note</th>
         </tr></thead>
@@ -75,10 +91,10 @@
 <script>
   const num = (x) => (x === '' || x == null ? null : Number(x));
   const usd = (v) => v == null ? '' : '$' + d3.format(',.2f')(v);
-  window.poUsd = usd; window.poNum = num;
+  const fmtD = (iso) => d3.utcFormat('%b %-d')(new Date(iso + 'T12:00:00Z'));
   dash.calc('totals', {
     title: 'Payout totals',
-    description: 'Sums of October earned, paid since Sep 1, known amounts still owed, overdue owed, and brands not yet checked.',
+    description: 'Sums of October earned, paid since Sep 1, known amounts still owed, amounts past their payout window, and brands not yet checked.',
     inputs: ['brands'],
     fn: (brands) => {
       const n = (x) => (x === '' || x == null ? 0 : Number(x));
@@ -86,7 +102,7 @@
         earned: brands.reduce((s, b) => s + n(b.oct_earned), 0),
         paid: brands.reduce((s, b) => s + n(b.paid_since_sep1), 0),
         owed: brands.reduce((s, b) => s + n(b.still_owed), 0),
-        overdue: brands.filter((b) => b.status === 'Overdue').reduce((s, b) => s + n(b.still_owed), 0),
+        overdue: brands.reduce((s, b) => s + n(b.past_due), 0),
         unknown: brands.filter((b) => b.status === 'Need to check').length
       }];
     }
@@ -110,9 +126,22 @@
       const s = td('', ''); const sp = document.createElement('span'); sp.className = 'st ' + String(r.status).split(' ')[0]; sp.textContent = r.status; s.append(sp);
       td(usd(num(r.oct_earned)), 'n'); td(usd(num(r.paid_since_sep1)), 'n');
       const o = td(num(r.still_owed) == null ? '' : usd(num(r.still_owed)), 'n');
-      td(r.next_expected || '', ''); td(r.method, 'hide-sm muted'); td(r.note || '', 'hide-sm muted');
+      td(num(r.past_due) ? usd(num(r.past_due)) : '', 'n');
+      td(r.expected_by ? fmtD(r.expected_by) : '', ''); td(r.method, 'hide-sm muted'); td(r.note || '', 'hide-sm muted');
       tb.append(tr);
     });
+  });
+  dash.draw('calrows', (tb) => {
+    const g = dash.data('brands'); tb.replaceChildren();
+    if (g.status !== 'ok') return;
+    g.data.filter((r) => r.expected_by && (num(r.still_owed) == null || num(r.still_owed) > 0))
+      .sort((a, b) => a.expected_by.localeCompare(b.expected_by) || (num(b.still_owed) || 0) - (num(a.still_owed) || 0))
+      .forEach((r) => {
+        const tr = document.createElement('tr');
+        [[fmtD(r.expected_by), ''], [r.brand, 'brand'], [num(r.still_owed) == null ? 'amount not read yet' : usd(num(r.still_owed)), 'n'], [r.how_sure || '', 'hide-sm muted']]
+          .forEach(([t, c]) => { const x = document.createElement('td'); x.className = c; x.textContent = t; tr.append(x); });
+        tb.append(tr);
+      });
   });
   dash.draw('payrows', (tb) => {
     const g = dash.data('payments'); tb.replaceChildren();
