@@ -52,9 +52,9 @@ Undo: delete those lines from Code Injection.
 ## Mat Gallery v6 (Nov 6): build search against the staged gallery
 Search and gallery v6 go live in the same session, so the index is built from the v6 block's rows, not the live v5 page:
 ```
-python3 scripts/search/build_index.py --gallery-block=0b063191:site/livepatch/matgallery/matgallery-v6.html
+python3 scripts/search/build_index.py --gallery-block=ae6af119:site/livepatch/matgallery/matgallery-v6.html
 ```
-(`<rev>:<path>` is read with `git show`, never the shared working tree; the block's `data-src` rows are read from the commit they are pinned to.) Merged duplicate twins (config/mat-gallery-dedupe-v6.json `merge`, 28 rows, e.g. Britt Mills / Mahjong Register leatherettes): album captions naming a dropped twin land on the kept card, `?mmmat=<dropped key>` opens the kept twin's panel, and an old `/mahjong-mats#<dropped key>` link jumps to the kept card (mat-cards.json `mg`). Until the v6 block is pasted, "See in gallery" for the ~700 mats new in v6 has no card to land on: swap both in the same session. Once v6 is live, the plain build (no flag) reads the same rows from the live page.
+(`<rev>:<path>` is read with `git show`, never the shared working tree; the block's `data-src` rows are read from the commit they are pinned to.) Final candidate block @ae6af119 (rows @ada16762, 1,461 cards): held mats (Mahj Pit Deep Blue, TdT French Mural + its Mahj Pit twin) have no gallery card, so search shows them album-only ("See the match", no "See in gallery"); the 11 no-button mats (config/mat-gallery-link-fixes.json) have no Shop in search. Merged duplicate twins (config/mat-gallery-dedupe-v6.json `merge`, 27 kept rows, e.g. Britt Mills / Mahjong Register leatherettes): album captions naming a dropped twin land on the kept card, `?mmmat=<dropped key>` opens the kept twin's panel, and an old `/mahjong-mats#<dropped key>` link jumps to the kept card (mat-cards.json `mg`). Until the v6 block is pasted, "See in gallery" for the ~700 mats new in v6 has no card to land on: swap both in the same session. Once v6 is live, the plain build (no flag) reads the same rows from the live page.
 
 ## Refresh the index (after the gallery, an album or a brand page changes)
 ```
