@@ -1,0 +1,238 @@
+{
+ "width": 390,
+ "flow": "tiles",
+ "checks": {
+  "loaded_v115": {
+   "pass": true
+  },
+  "tile_colour_switch": {
+   "pass": true,
+   "info": {
+    "pink": 51,
+    "blue": 75,
+    "pressed": [
+     "Blue"
+    ]
+   }
+  },
+  "tile_colour_clear_never_locks": {
+   "pass": true,
+   "info": {
+    "afterClear": 0,
+    "pressed": []
+   }
+  },
+  "tile_holiday_button": {
+   "pass": true,
+   "info": {
+    "n": 16,
+    "hasMerryMerry": true
+   }
+  },
+  "new_tile_sets_in_AZ": {
+   "pass": true,
+   "info": {
+    "az": 291,
+    "missing": []
+   }
+  },
+  "no_broken_imgs_tiles_grid": {
+   "pass": true,
+   "info": []
+  },
+  "juniper_leads_lotus_cove": {
+   "pass": true,
+   "info": {
+    "id": "www.ohmymahjong.com/lotus-cove-mat-in-tube",
+    "tf": "translate(0px, 0px) scale(1)"
+   }
+  },
+  "zoom_persists_across_swipes": {
+   "pass": true,
+   "info": {
+    "z1": {
+     "id": "www.ohmymahjong.com/lotus-cove-mat-in-tube",
+     "tf": "translate(-269.88px, -273px) scale(2.56)"
+    },
+    "z2": {
+     "id": "bougiemahjong.com/palm-court-tennis-club-mahjong-mat",
+     "tf": "translate(-269.88px, -273px) scale(2.56)"
+    },
+    "z3": {
+     "id": "www.ohmymahjong.com/hampton-mat-in-tube",
+     "tf": "translate(-269.88px, -273px) scale(2.56)"
+    }
+   }
+  },
+  "mat_colour_switch": {
+   "pass": true,
+   "info": {
+    "pink": [
+     [
+      "pink"
+     ],
+     {
+      "id": "letsbebesties.com/bam-bird-toile-pink-neoprene-mahjong-mat",
+      "tf": "translate(0px, 0px) scale(1)"
+     },
+     [
+      "pink"
+     ]
+    ],
+    "blue": [
+     [
+      "blue"
+     ],
+     {
+      "id": "www.bambirdboutique.com/blue-abstract-neoprene-mahjong-mat",
+      "tf": "translate(0px, 0px) scale(1)"
+     },
+     [
+      "blue"
+     ]
+    ],
+    "clear": [
+     [
+      "ALL"
+     ],
+     {
+      "id": "www.ohmymahjong.com/hampton-mat-in-tube",
+      "tf": "translate(0px, 0px) scale(1)"
+     }
+    ]
+   }
+  },
+  "mat_colour_clear_never_locks": {
+   "pass": true,
+   "info": {
+    "fc": [
+     "ALL"
+    ]
+   }
+  },
+  "mat_holiday_button": {
+   "pass": true,
+   "info": {
+    "top": {
+     "n": "Estate Sale",
+     "hol": false,
+     "wfh": true
+    },
+    "state": [
+     "holiday"
+    ]
+   }
+  },
+  "mat_holiday_toggle_off": {
+   "pass": true,
+   "info": {
+    "fh2": [
+     "ALL"
+    ]
+   }
+  },
+  "x_and_heart_only": {
+   "pass": true,
+   "info": {
+    "lbl": [
+     "✕:No thanks",
+     "♥:Love"
+    ]
+   }
+  },
+  "table_view": {
+   "pass": true,
+   "info": {
+    "pressed": "true",
+    "hasCanvasOrImg": true
+   }
+  },
+  "no_broken_imgs_table": {
+   "pass": true,
+   "info": []
+  },
+  "racks_deck_shows": {
+   "pass": true,
+   "info": {
+    "id": "www.viroramahjong.com/wooden-rack-pusher-set?v=49226735976631",
+    "tf": ""
+   }
+  }
+ },
+ "notes": [],
+ "errors": [],
+ "beacons": [
+  {
+   "m": "POST",
+   "type": "ping",
+   "body": "{\"events\":[{\"t\":\"tiles\",\"set\":\"juniper\",\"mat\":\"\",\"rack\":\"\",\"x\":\"\",\"sid\":\"3pochrxq\"},{\"t\":\"left\",\"set\":\"juniper\",\"mat\":\"www.ohmymahjong.com/lotus-cove-mat-in-tube\",\"rack\":\"\",\"x\":\"\",\"sid\":\"3pochrxq\"}]}"
+  },
+  {
+   "m": "POST",
+   "type": "ping",
+   "body": "{\"events\":[{\"t\":\"left\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/palm-court-tennis-club-mahjong-mat\",\"rack\":\"\",\"x\":\"\",\"sid\":\"3pochrxq\"},{\"t\":\"right\",\"set\":\"juniper\",\"mat\":\"www.ohmymahjong.com/hampton-mat-in-tube\",\"rack\":\"\",\"x\":\"\",\"sid\":\"3pochrxq\"},{\"t\":\"left\",\"set\":\"juniper\",\"mat\":\"letsbebesties.com/botanical-jewel-neoprene-mahjong-mat\",\"rack\":\"\",\"x\":\"\",\"sid\":\"3pochrxq\"},{\"t\":\"right\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"\",\"x\":\"\",\"sid\":\"3pochrxq\"}]}"
+  },
+  {
+   "m": "POST",
+   "type": "ping",
+   "body": "{\"events\":[{\"t\":\"right\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"www.viroramahjong.com/wooden-rack-pusher-set?v=49226735976631\",\"x\":\"\",\"sid\":\"3pochrxq\"},{\"t\":\"left\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"bb:White Metallic\",\"x\":\"\",\"sid\":\"3pochrxq\"},{\"t\":\"right\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"mahjmood.com/white-wooden-racks-with-scalloped-pushers\",\"x\":\"\",\"sid\":\"3pochrxq\"}]}"
+  }
+ ],
+ "badReq": [],
+ "version": "Version 1.15",
+ "holidayTiles": [
+  "Dear SantaAnders Ruff",
+  "Rackin' RudolphHip Hip Mahjong",
+  "Holly Jolly (Rudolph Red)Bam! Let's Mahj",
+  "Holly Jolly (Grinch Green)Bam! Let's Mah",
+  "Holly Jolly (Sugarplum Pink)Bam! Let's M",
+  "Tinselle (Ruby Red)Virora Mahjong",
+  "Tinselle (Emerald Green)Virora Mahjong",
+  "Nivalee (Glacier Blue)Virora Mahjong",
+  "Nutcracker BalletMahj Squad",
+  "Après Ski ClubCharleston Mahjong Club",
+  "Nivalee Emerald GreenVirora Mahjong",
+  "Merry NutcrackerPeace Love Mahjong",
+  "Spirit of ChristmasPeace Love Mahjong · ",
+  "It's a Vibe (Glitter Glow Green)Bespoke ",
+  "Merry Merry HolidayMahj Pit · sold out",
+  "December 1994Sunday Mahjong"
+ ],
+ "matFilter": {
+  "pink": [
+   [
+    "pink"
+   ],
+   {
+    "id": "letsbebesties.com/bam-bird-toile-pink-neoprene-mahjong-mat",
+    "tf": "translate(0px, 0px) scale(1)"
+   },
+   [
+    "pink"
+   ]
+  ],
+  "blue": [
+   [
+    "blue"
+   ],
+   {
+    "id": "www.bambirdboutique.com/blue-abstract-neoprene-mahjong-mat",
+    "tf": "translate(0px, 0px) scale(1)"
+   },
+   [
+    "blue"
+   ]
+  ],
+  "clear": [
+   [
+    "ALL"
+   ],
+   {
+    "id": "www.ohmymahjong.com/hampton-mat-in-tube",
+    "tf": "translate(0px, 0px) scale(1)"
+   }
+  ]
+ },
+ "fatal": "locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-make]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled class=\"go\" data-make=\"\" type=\"button\">Make it official ♥</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click ac",
+ "errorsN": 0
+}
