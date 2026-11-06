@@ -51,3 +51,6 @@ Mahjong Row ($227 vs $835: FAMILY20 friends-and-family sale through Nov 1), The 
 Peace Love (2 vs 12), Mahj Mood (3 vs 9; 0 since Oct 28; White Acrylic Racks launched Oct 25 now SOLD OUT,
 plus Chocolate Brown racks, Sleigh All Day mat, Amethyst Luxe racks), Britt Mills (0, 7 days; AI answer
 doesn't name us), Miss Mahjong (4 vs 9), Mahj Squad (1 vs 4).
+
+## AI MODE TOO (Tiffany Nov 6 2026 ~1am: "brands we're showing up for in both AI and AI overview... none... only one")
+The morning report checks BOTH for every brand: AI Overview (normal results) AND AI Mode (same query + `&udm=50`). Record per brand: overview named/cited, aiMode named/cited, and report four lists: BOTH / OVERVIEW ONLY / AI MODE ONLY / NEITHER. AI Mode in her signed-in Chrome is personalized: click "Try without personalization" when shown. First full read: docs/reports/ai-mode/2026-11-06.md.
