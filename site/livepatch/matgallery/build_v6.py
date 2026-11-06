@@ -132,14 +132,14 @@ for r in G:
 # A pHash + colour sweep flags NEW look-alike pairs that are neither merged nor listed as not_dupes (v6_counts.json 'dupe_candidates').
 DUP = json.load(open(REPO + 'config/mat-gallery-dedupe-v6.json'))
 GI = {r[0]: r for r in G}
-for d_, m_ in DUP['merge'].items():
-    k_ = GI.get(m_['keep'])
+for d_, mm_ in DUP['merge'].items():
+    k_ = GI.get(mm_['keep'])
     if d_ not in GI or k_ is None: continue
     while len(k_) < 16: k_.append(0 if len(k_) < 14 else '')
-    if m_.get('note'): k_[14] = m_['note']
-    if m_.get('shop2') and not k_[4]:
-        k_[15] = [m_['shop2'][0], AA.autoapply(GI[d_][3] or m_['shop2'][1])[0]]
-stats['dupes_merged'] = sorted(f"{GI[d_][2]} | {GI[d_][1]} -> {GI[m_['keep']][1]}" for d_, m_ in DUP['merge'].items() if d_ in GI and m_['keep'] in GI)
+    if mm_.get('note'): k_[14] = mm_['note']
+    if mm_.get('shop2') and not k_[4]:
+        k_[15] = [mm_['shop2'][0], AA.autoapply(GI[d_][3] or mm_['shop2'][1])[0]]
+stats['dupes_merged'] = sorted(f"{GI[d_][2]} | {GI[d_][1]} -> {GI[mm_['keep']][1]}" for d_, mm_ in DUP['merge'].items() if d_ in GI and mm_['keep'] in GI)
 G = [r for r in G if not (r[0] in DUP['merge'] and DUP['merge'][r[0]]['keep'] in GI)]
 for r in G:
     while len(r) < 16: r.append(0 if len(r) < 14 else '')
@@ -189,7 +189,7 @@ OLD_IMG = "return '<li class=\"mmg-card\" data-b=\"'"
 assert OLD_IMG in out
 out = out.replace("var img='<img src=", "var img=(x[13]&&!x[4]?'<em class=\"mmg-pill\">Sold out</em>':'')+'<img src=", 1)
 out = out.replace(OLD_IMG, "return '<li class=\"mmg-card'+(x[13]&&!x[4]?' is-sold':'')+'\" data-b=\"'", 1)
-OLD_NAME = "'<span class=\"mmg-name\">'+esc(x[1])+'</span>'"
+OLD_NAME = "<span class=\"mmg-name\">'+esc(x[1])+'</span>'"
 assert OLD_NAME in out, 'card name markup changed'
 out = out.replace(OLD_NAME, OLD_NAME + "+(x[14]?'<span class=\"mmg-also\">'+esc(x[14])+'</span>':'')", 1)
 out = out.replace("+shop+'</div></li>'", "+shop+(x[15]&&x[15][1]&&!x[4]?'<a class=\"mmg-shop mmg-shop2\" href=\"'+esc(x[15][1])+'\" target=\"_blank\" rel=\"sponsored noopener\">'+esc(x[15][0])+'</a>':'')+'</div></li>'", 1)

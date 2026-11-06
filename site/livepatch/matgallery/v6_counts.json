@@ -46,12 +46,16 @@
   "Mahj Mood | Mahj In Bloom",
   "Mahj Mood | Sleigh All Day",
   "Mahj Mood | Spring Fling",
+  "Mahj Pit | Acid in the Library",
+  "Mahj Pit | All Vibes",
+  "Mahj Pit | Deep Blue",
   "Mahj Pit | El Tigre (Rules Edition)",
   "Mahj Pit | Flower Shop",
+  "Mahj Pit | Poppylicious",
+  "Mahj Pit | Primary on Broughton",
   "Mahj Pit | Seaside",
   "Mahj Pit | The Calling Card",
   "Mahj Pit | The Line",
-  "Mahj Pit | The Quigley",
   "Mahj Pit | Zinnia Jockeys",
   "Mahj Squad | Candy Cane Pink Wonderland",
   "Mahj Squad | The Gamekeeper",
@@ -115,7 +119,7 @@
    "skip": 17
   },
   "Fait à Main": {
-   "other": 8
+   "skip": 8
   },
   "Hip Hip Mahjong": {
    "converted": 14
@@ -139,7 +143,7 @@
    "other": 1
   },
   "Luna EK Studio": {
-   "skip": 28
+   "skip": 26
   },
   "Luxe Mahjong": {
    "other": 3
@@ -158,7 +162,7 @@
    "discount": 15
   },
   "Mahj Pit": {
-   "converted": 14
+   "converted": 17
   },
   "Mahj Squad": {
    "discount": 21
@@ -221,7 +225,7 @@
    "skip": 10
   },
   "Splash of Color": {
-   "converted": 2,
+   "converted": 1,
    "discount": 10
   },
   "Sunday Mahjong": {
@@ -249,5 +253,36 @@
    "discount": 64
   }
  },
- "unmatched": []
+ "unmatched": [],
+ "dupes_merged": [
+  "Britt Mills | Aria Leatherette -> Aria",
+  "Britt Mills | Bella Leatherette -> Bella",
+  "Britt Mills | Calista Leatherette -> Calista Neoprene",
+  "Britt Mills | Colorful Chinoiserie Leatherette -> Colorful Chinoiserie",
+  "Britt Mills | Crimson Harvest Leatherette -> Crimson Harvest",
+  "Britt Mills | Dabney Leatherette -> Dabney",
+  "Britt Mills | Daphne Leatherette -> Daphne Neoprene",
+  "Britt Mills | Emerald Mirage Neoprene -> Emerald Mirage Leatherette",
+  "Britt Mills | Enchanted Leatherette -> Enchanted",
+  "Britt Mills | Haven Leatherette -> Haven",
+  "Britt Mills | Huntley Leatherette -> Huntley",
+  "Britt Mills | Merrywood Leatherette -> Merrywood",
+  "Britt Mills | Mia Leatherette -> Mia Neoprene",
+  "Britt Mills | Quinn Leatherette -> Quinn",
+  "Britt Mills | Rosalie Leatherette -> Rosalie Neoprene",
+  "Britt Mills | Walk in the Park Leatherette -> Walk in the Park",
+  "Britt Mills | Willow Leatherette -> Willow",
+  "Let's Be Besties | Blue Octagon -> Blue Octagon Pattern no. 53",
+  "Let's Be Besties | Garden Glass with Instructions -> Diamond Pattern with Directions",
+  "Let's Be Besties | Jingle Jungle Leatherette -> Jingle Jungle",
+  "Let's Be Besties | Navy Green Sky Gator Skin Leatherette -> Navy Sky Mint Gator Skin",
+  "Let's Be Besties | Porcelain Garden -> White Pattern no. 10",
+  "Mahj Pit | Ditsy Christmas Maraschino -> Ditsy Christmas Maraschino",
+  "Mahj Pit | Domino Oxblood -> Domino Oxblood",
+  "Mahj Pit | French Mural -> French Mural",
+  "Mahjong Register | Holly Jolly Double-Sided Leatherette -> Holly Jolly Christmas",
+  "Mahjong Register | Letters to Santa Double-Sided Leatherette -> Letters to Santa Premium",
+  "Piper Chase Studios | Nutcracker Floral -> Nutcracker Bows"
+ ],
+ "dupe_candidates": []
 }

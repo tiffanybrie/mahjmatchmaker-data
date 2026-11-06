@@ -2,7 +2,7 @@
  "by": "claude-photo-review",
  "date": "2026-10-20",
  "method": "measured palette (config/mat-accent-colors.json, thresholds eye-checked on contact sheets): a color covering >= 15% of the mat is promoted to an also-color. Never applied to mats Tiffany has called (her v5 final calls or any tiffany-chat override) or to the 53 new mats (tagged by eye in tiffany-color-notes/2026-10-20-new53-claude-tags.json).",
- "count": 180,
+ "count": 172,
  "mats": {
   "amahj--lilac-green-squiggle-mahjong-game-mat": [
    "green"
@@ -540,12 +540,6 @@
   "mahj-moon--equestrian-2": [
    "blue"
   ],
-  "mahj-moon--pastel-tie-dye-american-2": [
-   "pink"
-  ],
-  "mahj-moon--wildflower-american-2": [
-   "blue"
-  ],
   "mahj-moon--heirloom-blooms-2": [
    "blue"
   ],
@@ -558,17 +552,8 @@
   "wren-mats--butterfly-2": [
    "blue"
   ],
-  "splash-of-color--preppy-animal-print-2": [
-   "blue"
-  ],
   "yolo-mahjong--pastel-parrot": [
    "blue"
-  ],
-  "bougie-mahjong--azure-dolphin-cove": [
-   "yellow"
-  ],
-  "bougie-mahjong--blue-porcelain-estate": [
-   "yellow"
   ],
   "let-s-be-besties--amalfi-fish": [
    "yellow"
@@ -576,17 +561,8 @@
   "let-s-be-besties--floral-pink-watercolor": [
    "blue"
   ],
-  "let-s-be-besties--go-blue-michigan-game-day": [
-   "yellow"
-  ],
-  "let-s-be-besties--dragon": [
-   "yellow"
-  ],
   "let-s-be-besties--sea-glass": [
    "green"
-  ],
-  "let-s-be-besties--starfish": [
-   "yellow"
   ],
   "tigre-de-tartan--holy-mahj-retired": [
    "orange"

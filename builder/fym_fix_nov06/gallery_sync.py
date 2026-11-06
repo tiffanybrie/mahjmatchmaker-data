@@ -121,6 +121,24 @@ def mood(im):
     return out
 
 
+def hue_checks(im):
+    """Nov 6 QA round 2: the family measurement reads cream/beige as 'orange' and FYM reads magenta as 'purple'.
+    Returns (saturated-orange share, peach share, magenta share) over the non-white pixels."""
+    hsv = np.asarray(im.convert('RGB').resize((96, 96)).convert('HSV')).astype(float)
+    H, S, V = hsv[..., 0] * 360 / 255, hsv[..., 1] / 255, hsv[..., 2] / 255
+    keep = ~(((S < 0.08) & (V > 0.9)) | (V < 0.12)); n = max(int(keep.sum()), 1)
+    org = ((H >= 8) & (H <= 45) & (S > 0.45) & (V > 0.45) & keep).sum() / n
+    yel = ((H >= 45) & (H <= 65) & (S > 0.4) & (V > 0.5) & keep).sum() / n
+    peach = ((H >= 5) & (H <= 33) & (S > 0.22) & (V > 0.7) & keep).sum() / n  # 'Orange & Peach': soft peach counts, cream (hue ~40, low sat) does not
+    soft_y = ((H >= 45) & (H <= 65) & (S > 0.18) & (V > 0.75) & keep).sum() / n
+    soft_o = ((H >= 5) & (H <= 45) & (S > 0.18) & (V > 0.75) & keep).sum() / n
+    mag = ((H >= 300) & (H <= 345) & (S > 0.4) & (V > 0.4) & keep).sum() / n
+    return float(org), float(peach), float(mag), float(yel), float(soft_o), float(soft_y)
+
+
+AFX_P = REPO + 'config/mat-accent-photo-fixes.json'
+AFX = json.load(open(AFX_P))
+AFX['mats'] = {i_: v_ for i_, v_ in AFX['mats'].items() if not str(v_.get('src', '')).startswith('gallery_sync')}  # rebuilt each run
 skipped = collections.Counter(); rows = []; P = FymPhotos(CHECKOUT, os.path.relpath(os.path.abspath(IDX), CHECKOUT))
 late_add = {'works_for_holiday': [], 'also_year_round': []}
 for k, m in M.items():
@@ -159,7 +177,23 @@ for k, m in M.items():
         if t_ == 'dark' and any(c in ('dark', 'earthy', 'bw') for c in secs): continue
         if t_ in ('pastel', 'brights') and any(c in ('neutral', 'earthy', 'dark', 'bw') for c in secs): continue
         if t_ not in secs: secs.append(t_)
-    if k in CFIX: secs = list(CFIX[k]['secs'])  # Claude photo-review colour fix (config/mat-gallery-sync-colour-fixes.json)
+    eye_ = 0
+    org_, peach_, mag_, yel_, softo_, softy_ = hue_checks(im)
+    prim_ = (m.get('mf') or [None])[0]  # FYM's first colour survives the cream test when the photo has >= 20% soft tint of it (pastel yellow tie-dye)
+    if org_ < 0.04 and peach_ < 0.12 and not (prim_ == 'orange' and softo_ >= 0.2):  # no real orange in the photo: an FYM/measured 'orange' is cream or beige
+        secs = [c for c in secs if c != 'orange'] or ['neutral']
+        AFX['mats'][img] = {'drop': ['orange'], 'src': f'gallery_sync {TAG}', 'why': f'saturated orange {org_:.0%}, peach {peach_:.0%} of the photo (cream/beige read as orange)'}
+    if yel_ < 0.04 and not (prim_ == 'yellow' and softy_ >= 0.2):  # cream/ivory read as yellow: never a yellow section or accent
+        secs = [c for c in secs if c != 'yellow'] or ['neutral']
+        AFX['mats'].setdefault(img, {'drop': [], 'src': f'gallery_sync {TAG}', 'why': ''})
+        AFX['mats'][img]['drop'] = sorted(set(AFX['mats'][img]['drop']) | {'yellow'}); AFX['mats'][img]['why'] += f' saturated yellow {yel_:.0%} (cream read as yellow)'
+    if mag_ >= 0.15 and 'pink' not in secs and 'holiday' not in secs:  # magenta reads 'purple' in FYM: pink leads when it is the main colour
+        secs = (['pink'] + secs) if (secs and secs[0] == 'purple' and mag_ >= 0.25) else (secs[:1] + ['pink'] + secs[1:])
+    if not secs or secs[0] in ('pastel', 'brights', 'simple', 'dark'):  # a colour must lead: best measured colour that survived the cream tests
+        _gone = set(AFX['mats'].get(img, {}).get('drop', []))
+        _best = max((f for f in sh if f in ('pink', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple', 'neutral', 'earthy') and f not in _gone and f not in secs), key=lambda f: sh[f], default='neutral')
+        secs = [_best] + secs
+    if k in CFIX: secs = list(CFIX[k]['secs']); eye_ = 1  # Claude photo-review colour fix (config/mat-gallery-sync-colour-fixes.json)
     hol = bool(m.get('hol'))
     if secs == ['holiday']: hol = True  # a colour fix moved it INTO Holiday (photo clearly shows Christmas)
     if hol and not m.get('ayr'):
@@ -171,7 +205,7 @@ for k, m in M.items():
         late_add['works_for_holiday'].append((img, f"{bn} {name}", k))
     code = re.sub(r'^https?://(www\.)?mahjmatchmaker\.com', '', m.get('dc') or '') if m.get('pa') else ''
     rows.append({'img': img, 'key': k, 'name': name, 'brand': bn, 'url': '' if m.get('rt') else (m.get('u') or ''), 'code': code, 'secs': secs,
-                 'img_commit': 'PENDING', 'eye': 0, 'added': TAG, 'ret': 1 if m.get('rt') else 0,
+                 'img_commit': 'PENDING', 'eye': eye_, 'added': TAG, 'ret': 1 if m.get('rt') else 0,
                  'note': f"{TAG} (gallery_sync.py): photo = {('override ' + POV[k]['src']) if k in POV else ('FYM ' + VER + ' ' + m['f'])} (<= 640px, never upscaled); sections = FYM colours {m.get('mf')} mapped by the measured photo"
                          f" (shares {dict(sorted(sh.items(), key=lambda kv: -kv[1])[:4])}){'; holiday' if hol else ''}{('; colour fix: ' + CFIX[k]['why']) if k in CFIX else ''}; measured also-colours + accents by build_v5.py.",
                  '_tmp': tmp})
@@ -197,6 +231,7 @@ if WRITE:
     for img, nm, secs in late_add['also_year_round']:
         ayr.setdefault(img, {'name': nm, 'sections': secs, 'note': f'FYM ayr flag (her call); added by {TAG}'})
     json.dump(LATE, open(LATE_P, 'w'), indent=1, ensure_ascii=False)
+    json.dump(AFX, open(AFX_P, 'w'), indent=1, ensure_ascii=False)
     print('written', len(rows), 'rows + webps; img_commit = PENDING until the webps are committed; build_v6.py fills it from git (the commit that added the file)')
 else:
     for r in rows: os.remove(r['_tmp'])
