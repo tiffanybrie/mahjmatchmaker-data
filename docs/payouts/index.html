@@ -1,0 +1,126 @@
+<meta name="dash-one-writer">
+<style>
+.po{display:grid;gap:var(--cds-gap-lg);font-family:var(--font-anthropic-sans)}
+.po h1{font-family:var(--font-anthropic-serif);font-weight:400;font-size:var(--cds-font-size-title);margin:0}
+.po .lede{color:var(--color-fg-muted);margin:var(--cds-gap-xs) 0 0;font-size:var(--cds-font-size-body)}
+.po .lede b{font-weight:600;color:var(--color-fg)}
+.po .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,10rem),1fr));gap:var(--cds-gap-md)}
+.po .tile,.po .card{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-lg)}
+.po .tile .l{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.po .tile .v{font-family:var(--font-anthropic-serif);font-weight:400;font-size:var(--cds-font-size-title);font-variant-numeric:tabular-nums;margin-top:var(--cds-gap-xs)}
+.po .tile.bad .v{color:var(--color-bad)}
+.po h2{font-size:var(--cds-font-size-heading);font-weight:var(--cds-font-weight-medium);margin:0}
+.po .note{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin:var(--cds-gap-xs) 0 var(--cds-gap-md)}
+.po .tw{overflow:auto;max-height:36rem}
+.po table{width:100%;border-collapse:collapse;font-size:var(--cds-font-size-caption);font-variant-numeric:tabular-nums}
+.po th{position:sticky;top:0;background:var(--color-panel);text-align:left;color:var(--color-fg-muted);font-weight:var(--cds-font-weight-medium);padding:var(--cds-pad-xs) var(--cds-pad-sm);border-bottom:1px solid var(--color-border-line);white-space:nowrap}
+.po td{padding:var(--cds-pad-xs) var(--cds-pad-sm);border-bottom:1px solid var(--color-border-line);vertical-align:top}
+.po td.n,.po th.n{text-align:right;white-space:nowrap}
+.po td.brand{font-weight:600;white-space:nowrap}
+.po .st{display:inline-block;padding:1px 8px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.po .st.Overdue,.po .st.Wrong{color:var(--color-bad)} .po .st.Due{color:var(--color-warn)} .po .st.OK{color:var(--color-ok)} .po .st.Need{color:var(--color-fg-muted)}
+.po .muted{color:var(--color-fg-muted)}
+@media (max-width:640px){.po .hide-sm{display:none}}
+[data-dash-source-state=empty]{color:transparent}
+[data-dash-source-state=refreshing]{opacity:.5;transition:opacity var(--cds-dur-slow)}
+</style>
+<div class="po">
+  <header>
+    <h1>Payout Tracker</h1>
+    <p class="lede">You earned <b data-draw="earned" data-source="totals" data-field="earned">—</b> in October. <b data-draw="paid" data-source="totals" data-field="paid">—</b> has been paid since Sep 1, <b data-draw="owed" data-source="totals" data-field="owed">—</b> is still owed, and <b data-draw="overdue" data-source="totals" data-field="overdue">—</b> of that is overdue.</p>
+  </header>
+  <div class="tiles">
+    <div class="tile"><div class="l">October earned</div><div class="v" data-draw="earned" data-source="totals" data-field="earned">—</div></div>
+    <div class="tile"><div class="l">Paid since Sep 1</div><div class="v" data-draw="paid" data-source="totals" data-field="paid">—</div></div>
+    <div class="tile"><div class="l">Still owed (known)</div><div class="v" data-draw="owed" data-source="totals" data-field="owed">—</div></div>
+    <div class="tile bad"><div class="l">Overdue</div><div class="v" data-draw="overdue" data-source="totals" data-field="overdue">—</div></div>
+    <div class="tile"><div class="l">Brands still to check</div><div class="v" data-draw="unknown" data-source="totals" data-field="unknown">—</div></div>
+  </div>
+  <section class="card" id="brands">
+    <h2>By brand</h2>
+    <p class="note">Biggest amounts owed first. A blank "Still owed" means that brand's dashboard hasn't been read yet. Updated weekly from PayPal and the affiliate dashboards.</p>
+    <div class="tw">
+      <table data-source="brands" data-row-key="brand">
+        <thead><tr>
+          <th data-field="brand">Brand</th>
+          <th data-field="status">Status</th>
+          <th class="n" data-field="oct_earned">Oct earned</th>
+          <th class="n" data-field="paid_since_sep1">Paid since Sep 1</th>
+          <th class="n" data-field="still_owed">Still owed</th>
+          <th data-field="next_expected">Next payout</th>
+          <th class="hide-sm" data-field="method">Paid by</th>
+          <th class="hide-sm" data-field="note">Note</th>
+        </tr></thead>
+        <tbody data-draw="brandrows"></tbody>
+      </table>
+    </div>
+  </section>
+  <section class="card" id="payments">
+    <h2>Payments received</h2>
+    <p class="note">Every payout as it lands, newest first.</p>
+    <div class="tw">
+      <table data-source="payments" data-row-key="date,brand">
+        <thead><tr>
+          <th data-field="date">Date</th>
+          <th data-field="brand">Brand</th>
+          <th class="n" data-field="amount">Amount</th>
+          <th data-field="method">Method</th>
+          <th class="hide-sm" data-field="note">Note</th>
+        </tr></thead>
+        <tbody data-draw="payrows"></tbody>
+      </table>
+    </div>
+  </section>
+</div>
+<script>
+  const num = (x) => (x === '' || x == null ? null : Number(x));
+  const usd = (v) => v == null ? '' : '$' + d3.format(',.2f')(v);
+  window.poUsd = usd; window.poNum = num;
+  dash.calc('totals', {
+    title: 'Payout totals',
+    description: 'Sums of October earned, paid since Sep 1, known amounts still owed, overdue owed, and brands not yet checked.',
+    inputs: ['brands'],
+    fn: (brands) => {
+      const n = (x) => (x === '' || x == null ? 0 : Number(x));
+      return [{
+        earned: brands.reduce((s, b) => s + n(b.oct_earned), 0),
+        paid: brands.reduce((s, b) => s + n(b.paid_since_sep1), 0),
+        owed: brands.reduce((s, b) => s + n(b.still_owed), 0),
+        overdue: brands.filter((b) => b.status === 'Overdue').reduce((s, b) => s + n(b.still_owed), 0),
+        unknown: brands.filter((b) => b.status === 'Need to check').length
+      }];
+    }
+  });
+  ['earned', 'paid', 'owed', 'overdue'].forEach((k) => dash.draw(k, (el) => {
+    const t = dash.data('totals');
+    el.textContent = t.status === 'ok' && t.data[0] ? usd(t.data[0][k]) : '—';
+  }));
+  dash.draw('unknown', (el) => {
+    const t = dash.data('totals');
+    el.textContent = t.status === 'ok' && t.data[0] ? String(t.data[0].unknown) : '—';
+  });
+  dash.draw('brandrows', (tb) => {
+    const g = dash.data('brands'); tb.replaceChildren();
+    if (g.status !== 'ok') return;
+    const rows = g.data.slice().sort((a, b) => (num(b.still_owed) ?? -1) - (num(a.still_owed) ?? -1) || (num(b.oct_earned) || 0) - (num(a.oct_earned) || 0));
+    rows.forEach((r) => {
+      const tr = document.createElement('tr');
+      const td = (txt, cls) => { const c = document.createElement('td'); if (cls) c.className = cls; c.textContent = txt; tr.append(c); return c; };
+      td(r.brand, 'brand');
+      const s = td('', ''); const sp = document.createElement('span'); sp.className = 'st ' + String(r.status).split(' ')[0]; sp.textContent = r.status; s.append(sp);
+      td(usd(num(r.oct_earned)), 'n'); td(usd(num(r.paid_since_sep1)), 'n');
+      const o = td(num(r.still_owed) == null ? '' : usd(num(r.still_owed)), 'n');
+      td(r.next_expected || '', ''); td(r.method, 'hide-sm muted'); td(r.note || '', 'hide-sm muted');
+      tb.append(tr);
+    });
+  });
+  dash.draw('payrows', (tb) => {
+    const g = dash.data('payments'); tb.replaceChildren();
+    if (g.status !== 'ok') return;
+    g.data.slice().sort((a, b) => String(b.date).localeCompare(String(a.date))).forEach((r) => {
+      const tr = document.createElement('tr');
+      [[r.date, ''], [r.brand, 'brand'], [usd(num(r.amount)), 'n'], [r.method, ''], [r.note || '', 'hide-sm muted']].forEach(([t, c]) => { const x = document.createElement('td'); x.className = c; x.textContent = t; tr.append(x); });
+      tb.append(tr);
+    });
+  });
+</script>

@@ -32,3 +32,7 @@ Month view: "October earned $X · paid $Y · approved, not yet due $Z · overdue
 Weekly (Mondays, with the sales close-out) + the 1st and 16th of each month. OVERDUE (past the program's stated date
 + 7 days, or no payout ever with approved > minimum) → HQ red needs card "Brand owes $X since <date>: ask them?"
 (reaching out is HER call; Claude drafts the note).
+
+## Payout Tracker (Tiffany Nov 6 4:20pm: "build the sheet")
+Live page: https://claude.ai/artifact/Q3r6wMhYLqoyJSYnfKmtH2 (Dashboard type). Data = two attached CSVs (source of truth copies in docs/payouts/brands.csv + payments.csv).
+WEEKLY (Main, standing): read PayPal + GoAffPro + UpPromote payment emails/dashboards, update both CSVs, upload_asset the new file, update datasets/<id> url+name+updated+edit. Every new payout lands in payments.csv the day its email arrives.
