@@ -141,6 +141,7 @@ def small_img(u):
 def norm(s):
     s = unicodedata.normalize('NFKD', s or '')
     s = ''.join(c for c in s if not unicodedata.combining(c)).lower()
+    s = re.sub(r"['\u2019\u2018`]", '', s)  # Sparrow's Nest == Sparrows Nest (QA Nov 6)
     s = re.sub(r'\(retired\)|mahjong mat|game mat|\bmat\b', ' ', s)
     return re.sub(r'[^a-z0-9]+', ' ', s).strip()
 
@@ -163,7 +164,7 @@ def toks(s):
 
 
 def brand_key(b):
-    b = norm(b).replace('mahjongg', 'mahjong')
+    b = re.sub(r'\bmah ?jongg?\b|\bmahjongg\b', 'mahjong', norm(b))  # Ozark Mah Jongg == Ozark Mahjongg
     return ' '.join(w for w in b.split() if w not in ('co', 'company', 'the', 'mahjong'))
 
 
@@ -399,19 +400,40 @@ def main():
     mat_albums, extra, unmatched = {}, {}, 0
     order = {}  # album idx -> mats in her caption order (her top picks first)
     card_img = {}  # (mat id, album idx) -> that album's match card image for this mat (first card wins)
-    variants = {}
+    variants, aliases = {}, {}
     vp = os.path.join(ROOT, 'config', 'search-card-variants.json')
     if os.path.exists(vp):
         variants = json.load(open(vp)).get('cards', {})
+    ap = os.path.join(ROOT, 'config', 'search-mat-aliases.json')
+    if os.path.exists(ap):
+        aliases = {(norm(k.split('|', 1)[1]), brand_key(k.split('|', 1)[0])): v
+                   for k, v in json.load(open(ap)).get('aliases', {}).items()}
+    rowkey = {x[0]: i for i, x in enumerate(R)}
+    xname = {}  # (norm name, brand key) -> first (name, brand) spelling seen, so one album-only mat = one entry
+    excluded, multi_hits = [], []
     for ai, cards in album_mats.items():
         od = order.setdefault(ai, [])
         for name, brand, img, shop, ret, pick in cards:
-            i = key.get((norm(name), brand_key(brand)))
-            hits = [i] if i is not None else fuzzy_mat(R, name, brand)
+            base = re.sub(r'\?.*$', '', img).rsplit('/', 1)[-1] if img else ''
+            nk = (norm(name), brand_key(brand))
+            if base in variants:  # Claude looked at this card: it shows this gallery mat ('' = unknown variant, leave out)
+                want = variants[base]
+                if not want or want not in rowkey:
+                    excluded.append((albums[ai][0], name, brand, base))
+                    continue
+                hits = [rowkey[want]]
+            elif nk in aliases and aliases[nk] in rowkey:  # caption leaves out the colourway
+                hits = [rowkey[aliases[nk]]]
+            else:
+                i = key.get(nk)
+                hits = [i] if i is not None else fuzzy_mat(R, name, brand)
+                if hits and len(hits) > 1:
+                    multi_hits.append((albums[ai][0], name, brand, base, [R[h][1] for h in hits]))
             if not hits and re.search(r'mahjong studios|four winds', brand or '', re.I):
                 continue  # removed brands (Tiffany Oct 20): no mat cards/shop links in search either
             if not hits:
                 unmatched += 1
+                name, brand = xname.setdefault(nk, (name, brand))
                 e = extra.setdefault((name, brand), {'a': [], 'shop': '', 'ret': ret, 'img': ''})
                 if ai not in e['a']:
                     e['a'].append(ai)
@@ -425,10 +447,6 @@ def main():
                 if img:
                     card_img.setdefault((('x', name, brand), ai), img)
                 continue
-            if len(hits) > 1 and img:
-                want = variants.get(re.sub(r'\?.*$', '', img).rsplit('/', 1)[-1])
-                if want:
-                    hits = [i for i in hits if R[i][0] == want] or hits
             for i in hits:
                 if i not in od:
                     od.append(i)
@@ -564,6 +582,26 @@ def main():
         elif x[5]:
             x[5] = small_img(x[5])
 
+    # near-duplicates (QA Nov 6): same brand, names equal after normalising or one is the other + a colourway word.
+    # Album-only mats here need a line in config/search-mat-aliases.json (or search-card-variants.json).
+    ents = [('m', m[1], m[2]) for m in mats] + [('x', x[0], x[1]) for x in xs]
+    dupes = []
+    for p_ in range(len(ents)):
+        for q_ in range(p_ + 1, len(ents)):
+            a_, b_ = ents[p_], ents[q_]
+            if 'x' not in (a_[0], b_[0]) or brand_key(a_[2]) != brand_key(b_[2]):
+                continue
+            ta, tb = norm(a_[1]).split(), norm(b_[1]).split()
+            if ta == tb or ta[:len(tb)] == tb or tb[:len(ta)] == ta:
+                dupes.append((a_, b_))
+    for d_ in dupes:
+        print('  NEAR-DUPLICATE (add an alias):', d_, file=sys.stderr)
+    for e_ in excluded:
+        print('  card left out (search-card-variants.json ""):', e_, file=sys.stderr)
+    if '--debug' in sys.argv:
+        for h_ in multi_hits:
+            print('  caption matched 2+ gallery mats:', h_, file=sys.stderr)
+
     # ---- All matches for one mat (Tiffany Nov 6 1:03am): mat-cards.json, loaded only when the panel opens ----
     mv = mat_views(mats, xs, albums, order, card_img, xpos)
     with open(os.path.join(OUT, 'mat-cards.json'), 'w') as f:
@@ -588,7 +626,8 @@ def main():
         'album_only_mats': len(xs), 'mats_with_theme_kw': sum(1 for m in mats if any(
             w in m[9].split() for w in ('halloween', 'valentine', 'patriotic', 'shamrock', 'easter', 'derby', 'christmas', 'hanukkah', 'winter', 'fall'))),
         'bytes': os.path.getsize(os.path.join(OUT, 'search-index.json')),
-        'mat_views': mv['stats'],
+        'mat_views': mv['stats'], 'near_duplicates': len(dupes), 'cards_left_out': len(excluded),
+        'captions_matching_2plus_mats': len(multi_hits),
     }
     print('index:', json.dumps(stats))
 
