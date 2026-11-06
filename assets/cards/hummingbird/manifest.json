@@ -1,0 +1,1075 @@
+{
+ "set": "Hummingbird",
+ "status": "DRAFT: her swipe-book yeses, Claude draft order + racks",
+ "title_color": "#a0493f",
+ "tile": "assets/tiles/album/hummingbird.png",
+ "tile_racks": [
+  "Peace Love Mahjong Navy",
+  "Peace Love Mahjong Acrylic Burl"
+ ],
+ "cards": [
+  {
+   "order": 1,
+   "vote_id": "fx-cannage-blonde",
+   "mat": "Cannage Blonde",
+   "mat_full": "Cannage Blonde (Blonde Caned)",
+   "brand": "Tigre de Tartan",
+   "tnt_rec": true,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-tigre-de-tartan-cannage-blonde-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mz/fx-cannage-blonde.jpg",
+   "fym_key": "tigredetartan.com/mahjong-mat-cannage-blonde-rules-edition",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Graphite"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 2,
+   "vote_id": "tnt-hummingbird-sundayma-golden-gingham-premium-mahjong-mat",
+   "mat": "Golden Gingham Premium",
+   "mat_full": "Golden Gingham Premium",
+   "brand": "Sunday Mahjong",
+   "tnt_rec": true,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-sunday-mahjong-golden-gingham-premium-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/61.jpg",
+   "fym_key": "sundaymahjong.com/golden-gingham-premium-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Retro Mustard",
+    "Bird & Bamboo Radish"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 3,
+   "vote_id": "sundayma-bold-blooms-premium-mahjong-mat",
+   "mat": "Bold Blooms Premium",
+   "mat_full": "Bold Blooms Premium",
+   "brand": "Sunday Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-sunday-mahjong-bold-blooms-premium-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/63.jpg",
+   "fym_key": "sundaymahjong.com/bold-blooms-premium-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Dark Navy"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 4,
+   "vote_id": "sundayma-spring-blooms-premium-mahjong-mat",
+   "mat": "Spring Blooms Premium",
+   "mat_full": "Spring Blooms Premium",
+   "brand": "Sunday Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-sunday-mahjong-spring-blooms-premium-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/68.jpg",
+   "fym_key": "sundaymahjong.com/spring-blooms-premium-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Misty Spruce",
+    "Bird & Bamboo Retro Mustard"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 5,
+   "vote_id": "sundayma-gaylord-premium-mahjong-mat",
+   "mat": "Gaylord Premium",
+   "mat_full": "Gaylord Premium",
+   "brand": "Sunday Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-sunday-mahjong-gaylord-premium-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/66.jpg",
+   "fym_key": "sundaymahjong.com/gaylord-premium-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Seafoam",
+    "Bird & Bamboo Evergreen"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 6,
+   "vote_id": "sundayma-sunday-premium-mahjong-mat",
+   "mat": "Sunday Premium",
+   "mat_full": "Sunday Premium",
+   "brand": "Sunday Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-sunday-mahjong-sunday-premium-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/64.jpg",
+   "fym_key": "sundaymahjong.com/sunday-premium-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Forest Green",
+    "Bird & Bamboo Pistachio"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 7,
+   "vote_id": "sundayma-vegan-leather-premium-mahjong-mat",
+   "mat": "Vegan Leather Premium",
+   "mat_full": "Vegan Leather Premium",
+   "brand": "Sunday Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-sunday-mahjong-vegan-leather-premium-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/65.jpg",
+   "fym_key": "sundaymahjong.com/vegan-leather-premium-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Brick Red",
+    "Bird & Bamboo Retro Mustard"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 8,
+   "vote_id": "sundayma-rattan-premium-mahjong-mat",
+   "mat": "Rattan",
+   "mat_full": "Rattan",
+   "brand": "Sunday Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-sunday-mahjong-rattan-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/60.jpg",
+   "fym_key": "sundaymahjong.com/rattan-premium-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Brick Red",
+    "Bird & Bamboo Matcha"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 9,
+   "vote_id": "sundayma-blue-diamond-premium-mahjong-mat",
+   "mat": "Blue Diamond Premium",
+   "mat_full": "Blue Diamond Premium",
+   "brand": "Sunday Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-sunday-mahjong-blue-diamond-premium-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/69.jpg",
+   "fym_key": "sundaymahjong.com/blue-diamond-premium-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Cadet",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 10,
+   "vote_id": "sundayma-retro-plaid",
+   "mat": "Retro Plaid Premium",
+   "mat_full": "Retro Plaid Premium",
+   "brand": "Sunday Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-sunday-mahjong-retro-plaid-premium-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/62.jpg",
+   "fym_key": "sundaymahjong.com/retro-plaid",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Bird & Bamboo Red"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 11,
+   "vote_id": "sundayma-coastal-grandma-premium-mahjong-mat",
+   "mat": "Coastal Grandma Premium",
+   "mat_full": "Coastal Grandma Premium",
+   "brand": "Sunday Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-sunday-mahjong-coastal-grandma-premium-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/59.jpg",
+   "fym_key": "sundaymahjong.com/coastal-grandma-premium-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Cream",
+    "Bird & Bamboo Radish"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 12,
+   "vote_id": "sundayma-festive-plaid-premium-mahjong-mat",
+   "mat": "Festive Plaid Premium",
+   "mat_full": "Festive Plaid Premium",
+   "brand": "Sunday Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-sunday-mahjong-festive-plaid-premium-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/home/claude/mahjmatchmaker-data/assets/mats/holiday/hd/sunday-festive-plaid.jpg",
+   "fym_key": "sundaymahjong.com/festive-plaid-premium-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Radish",
+    "Bird & Bamboo Brick Red"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 13,
+   "vote_id": "fx-novella-leatherette-mahjong-mat-b0a80",
+   "mat": "Novella",
+   "mat_full": "Novella Leatherette",
+   "brand": "Britt Mills",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-britt-mills-novella-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mz/fx-novella-leatherette-mahjong-mat-b0a80.jpg",
+   "fym_key": "brittmillsdesign.com/novella-leatherette-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Peachy"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 14,
+   "vote_id": "c-cognac-mat",
+   "mat": "Cognac",
+   "mat_full": "Cognac",
+   "brand": "Oh My Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-oh-my-mahjong-cognac-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/151.jpg",
+   "fym_key": "www.ohmymahjong.com/cognac-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Brick Red"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 15,
+   "vote_id": "fx-lets-be-refined-mahjong-mats-v-47969268498537-a1d9d",
+   "mat": "Let's Be Refined Blue",
+   "mat_full": "Let's Be Refined! – Refined Blue",
+   "brand": "Let's Mahj On",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-lets-mahj-on-lets-be-refined-blue-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mz/fx-lets-be-refined-mahjong-mats-v-47969268498537-a1d9d.jpg",
+   "fym_key": "www.letsmahj-on.com/lets-be-refined-mahjong-mats?v=47969268498537",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Periwinkle Blue"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 16,
+   "vote_id": "fx-t4eyv0rb7euouw482trf20qmrqtpw7-krskj-7f0f8",
+   "mat": "Cottage Core",
+   "mat_full": "Cottage Core",
+   "brand": "Wren Mats",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-wren-mats-cottage-core-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mz/fx-t4eyv0rb7euouw482trf20qmrqtpw7-krskj-7f0f8.jpg",
+   "fym_key": "www.wrenmats.com/t4eyv0rb7euouw482trf20qmrqtpw7-krskj",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Brick Red"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 17,
+   "vote_id": "cc-jade-mat-in-tube",
+   "mat": "Jade",
+   "mat_full": "Jade",
+   "brand": "Oh My Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-oh-my-mahjong-jade-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/3.jpg",
+   "fym_key": "www.ohmymahjong.com/jade-mat-in-tube",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo French Blue",
+    "Bird & Bamboo Harbor Blue"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 18,
+   "vote_id": "md-www-ohmymahjong-com-scarlett-mat-in-tube",
+   "mat": "Scarlett",
+   "mat_full": "Scarlett",
+   "brand": "Oh My Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-oh-my-mahjong-scarlett-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/159.jpg",
+   "fym_key": "www.ohmymahjong.com/scarlett-mat-in-tube",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Carrot"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 19,
+   "vote_id": "fx-festival-mahjong-playing-mat-malachite-23109",
+   "mat": "Festival Malachite",
+   "mat_full": "Festival Malachite",
+   "brand": "Miss Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-miss-mahjong-festival-malachite-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mz/fx-festival-mahjong-playing-mat-malachite-23109.jpg",
+   "fym_key": "missmahjong.com/festival-mahjong-playing-mat-malachite",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Turquoise Blue",
+    "Bird & Bamboo Eggplant"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 20,
+   "vote_id": "fx-city-queen-83acb",
+   "mat": "City Queen",
+   "mat_full": "City Queen",
+   "brand": "Amanda Toppe",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-amanda-toppe-city-queen-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mz/fx-city-queen-83acb.jpg",
+   "fym_key": "amandatoppeart.com/city-queen",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Harbor Blue",
+    "Bird & Bamboo Petal Purple"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 21,
+   "vote_id": "fx-sedona-mat-in-tube-28e25",
+   "mat": "Sedona",
+   "mat_full": "Sedona",
+   "brand": "Oh My Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-oh-my-mahjong-sedona-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mz/fx-sedona-mat-in-tube-28e25.jpg",
+   "fym_key": "www.ohmymahjong.com/sedona-mat-in-tube",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Brick Red",
+    "Bird & Bamboo Cornflower Blue"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 22,
+   "vote_id": "fx-navelia-ae699",
+   "mat": "Navelia",
+   "mat_full": "Navelia",
+   "brand": "Virora Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-virora-mahjong-navelia-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mz/fx-navelia-ae699.jpg",
+   "fym_key": "www.viroramahjong.com/navelia",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Blue",
+    "Bird & Bamboo Red"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 23,
+   "vote_id": "fx-the-paradise-mahjong-mat-island-green-79305",
+   "mat": "The Paradise Island Green",
+   "mat_full": "The Paradise - Island Green",
+   "brand": "Bird & Bamboo",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-bird-and-bamboo-the-paradise-island-green-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mz/fx-the-paradise-mahjong-mat-island-green-79305.jpg",
+   "fym_key": "birdandbamboo.com/the-paradise-mahjong-mat-island-green",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Misty Spruce"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 24,
+   "vote_id": "fx-gatsbys-feathered-affair-mahjong-mat-b53b6",
+   "mat": "Gatsby's Feathered Affair",
+   "mat_full": "Gatsby's Feathered Affair",
+   "brand": "Anders Ruff",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-anders-ruff-gatsbys-feathered-affair-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mz/fx-gatsbys-feathered-affair-mahjong-mat-b53b6.jpg",
+   "fym_key": "shop.andersruff.com/gatsbys-feathered-affair-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Seafoam",
+    "Bird & Bamboo Basil"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 25,
+   "vote_id": "fx-winslow-1920-rouge-mat-3443d",
+   "mat": "Winslow 1920 Rouge",
+   "mat_full": "Winslow 1920 Rouge",
+   "brand": "Ozark Mahjongg",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-ozark-mahjongg-winslow-1920-rouge-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mz/fx-winslow-1920-rouge-mat-3443d.jpg",
+   "fym_key": "ozarkmahjong.com/winslow-1920-rouge-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Wine",
+    "Bird & Bamboo Mauve"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 26,
+   "vote_id": "fx-year-of-the-dragon-amped-up-grey-1-4807a",
+   "mat": "Year of the Dragon Amped-Up Grey",
+   "mat_full": "Year of the Dragon Mat - Amped-Up Grey",
+   "brand": "Bespoke Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-bespoke-mahjong-year-of-the-dragon-amped-up-grey-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mz/fx-year-of-the-dragon-amped-up-grey-1-4807a.jpg",
+   "fym_key": "www.bespokemahjong.com/year-of-the-dragon-amped-up-grey-1",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Basil"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 27,
+   "vote_id": "fx-willow-leatherette-mahjong-mat-a160a",
+   "mat": "Willow",
+   "mat_full": "Willow Leatherette",
+   "brand": "Britt Mills",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-britt-mills-willow-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mz/fx-willow-leatherette-mahjong-mat-a160a.jpg",
+   "fym_key": "brittmillsdesign.com/willow-leatherette-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Berry Purple"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 28,
+   "vote_id": "fx-mahjong-by-si-tracing-the-tides-mahjong-mat-85232",
+   "mat": "Tracing the Tides",
+   "mat_full": "Tracing the Tides",
+   "brand": "Mahjong by SI",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-mahjong-by-si-tracing-the-tides-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mz/fx-mahjong-by-si-tracing-the-tides-mahjong-mat-85232.jpg",
+   "fym_key": "mahjongco.com/mahjong-by-si-tracing-the-tides-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Pistachio",
+    "Bird & Bamboo Moss"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 29,
+   "vote_id": "fx-deco-neoprene-mahjong-mat-copy-2-v-6766309828229-0652f",
+   "mat": "Deco Dragon (Indigo)",
+   "mat_full": "Deco Dragon (Indigo)",
+   "brand": "Bam Bird Boutique",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-bam-bird-boutique-deco-dragon-indigo-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mz/fx-deco-neoprene-mahjong-mat-copy-2-v-6766309828229-0652f.jpg",
+   "fym_key": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098282293",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Blackboard Black",
+    "Bird & Bamboo Harbor Blue"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 30,
+   "vote_id": "mahjong-mat-nantucket-basket-1",
+   "mat": "Nantucket Basket, Rope",
+   "mat_full": "Nantucket Basket, Rope",
+   "brand": "Tigre de Tartan",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-tigre-de-tartan-nantucket-basket-rope-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/135.jpg",
+   "fym_key": "tigredetartan.com/mahjong-mat-nantucket-basket-1",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Retro Mustard"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 31,
+   "vote_id": "shop-midnight-peacock-mahjong-mat",
+   "mat": "Midnight Peacock",
+   "mat_full": "Midnight Peacock",
+   "brand": "Anders Ruff",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-anders-ruff-midnight-peacock-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/77.jpg",
+   "fym_key": "shop.andersruff.com/midnight-peacock-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Jade"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 32,
+   "vote_id": "luxemahj-coming-soon-the-polo-club-mahjong-mat",
+   "mat": "The Polo Club",
+   "mat_full": "The Polo Club",
+   "brand": "Luxe Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/136.jpg",
+   "fym_key": "luxemahjong.com/coming-soon-the-polo-club-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Blackboard Black",
+    "Bird & Bamboo Evergreen"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 33,
+   "vote_id": "brittmil-savannah-mahjong-mat-art-print",
+   "mat": "Savannah",
+   "mat_full": "Savannah Leatherette",
+   "brand": "Britt Mills",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-britt-mills-savannah-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/73.jpg",
+   "fym_key": "brittmillsdesign.com/savannah-leatherette-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Evergreen"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 34,
+   "vote_id": "mahjong-mat-no-cut-out-nantucket-basket-tdt-for-center-and-spring",
+   "mat": "Nantucket Basket",
+   "mat_full": "Nantucket Basket",
+   "brand": "Tigre de Tartan",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-tigre-de-tartan-nantucket-basket-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/90.jpg",
+   "fym_key": "tigredetartan.com/mahjong-mat-no-cut-out-nantucket-basket-tdt-for-center-and-spring",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Retro Mustard"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 35,
+   "vote_id": "brittmil-legacy-britt-mills-mahjong-mat",
+   "mat": "Legacy",
+   "mat_full": "Legacy",
+   "brand": "Britt Mills",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-britt-mills-legacy-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/87.jpg",
+   "fym_key": "brittmillsdesign.com/legacy-britt-mills-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Graphite"
+   ],
+   "mat_reg": null,
+   "caption_note": "Also available in leatherette",
+   "twins_merged": [
+    "brittmil-legacy-mahjong-mat-art-print"
+   ],
+   "flag": null
+  },
+  {
+   "order": 36,
+   "vote_id": "mahjongb-mahjong-by-si-highland-house-mahjong-mat",
+   "mat": "Highland Heritage Plaid",
+   "mat_full": "Highland Heritage Plaid",
+   "brand": "Mahjong by SI",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-mahjong-by-si-highland-heritage-plaid-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/137.jpg",
+   "fym_key": "mahjongco.com/mahjong-by-si-highland-house-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Blackboard Black",
+    "Bird & Bamboo Cream"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 37,
+   "vote_id": "luxemahj-azure-bloom-mahjong-mat",
+   "mat": "Azure Bloom",
+   "mat_full": "Azure Bloom",
+   "brand": "Luxe Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-luxe-mahjong-azure-bloom-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/141.jpg",
+   "fym_key": "luxemahjong.com/azure-bloom-mahjong-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Radish",
+    "Bird & Bamboo Basil"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 38,
+   "vote_id": "paige-spearin-mahjong-mat-bunny-love",
+   "mat": "Bunny Love",
+   "mat_full": "Bunny Love",
+   "brand": "Tigre de Tartan",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-tigre-de-tartan-bunny-love-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/143.jpg",
+   "fym_key": "tigredetartan.com/paige-spearin-mahjong-mat-bunny-love",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Seafoam",
+    "Bird & Bamboo Cream"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": "Paige Spearin x TdT: no commission (CLAUDE.md 6.4); her yes, kept"
+  },
+  {
+   "order": 39,
+   "vote_id": "mahjsqua-the-study-mat",
+   "mat": "The Study",
+   "mat_full": "The Study",
+   "brand": "Mahj Squad",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-mahj-squad-the-study-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/76.jpg",
+   "fym_key": "mahjsquadshop.com/the-study-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo True Black"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 40,
+   "vote_id": "mahjongr-osmanthus-grove-mat",
+   "mat": "Osmanthus Grove",
+   "mat_full": "Osmanthus Grove",
+   "brand": "Mahjong Row & Co.",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-mahjong-row-and-co-osmanthus-grove-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/88.jpg",
+   "fym_key": "mahjongrowandco.com/osmanthus-grove-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Matcha",
+    "Bird & Bamboo Pistachio"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  },
+  {
+   "order": 41,
+   "vote_id": "double-the-fun-darjeeling-peacock-mat",
+   "mat": "Darjeeling Peacock Blue Scales",
+   "mat_full": "Darjeeling Peacock Mat (Side A: Blue Scales)",
+   "brand": "Bespoke Mahjong",
+   "tnt_rec": false,
+   "non_partner_tnt": false,
+   "retired_mat": false,
+   "file": "hummingbird-mahjong-tiles-bespoke-mahjong-darjeeling-peacock-blue-scales-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/sunday/pub/mx/145.jpg",
+   "fym_key": "www.bespokemahjong.com/double-the-fun-darjeeling-peacock-mat",
+   "racks": [
+    "Peace Love Mahjong Navy",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo French Blue",
+    "Bird & Bamboo Harbor Blue"
+   ],
+   "mat_reg": null,
+   "caption_note": null,
+   "twins_merged": [],
+   "flag": null
+  }
+ ],
+ "holiday_yes": [],
+ "racks_note": "tile racks = PLM only (same shape); mat racks = registry or matpick"
+}
