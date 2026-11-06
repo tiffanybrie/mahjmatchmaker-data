@@ -851,42 +851,6 @@
     "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow)"
    },
    {
-    "key": "mahjongco.com/mahjong-by-si-highland-house-mahjong-mat",
-    "name": "Highland Heritage Plaid",
-    "brand": "Mahjong by SI",
-    "now": [
-     "green",
-     "yellow",
-     "blue",
-     "dark"
-    ],
-    "rule would give": [
-     "green",
-     "blue",
-     "dark"
-    ],
-    "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow)"
-   },
-   {
-    "key": "mahjongco.com/mahjong-by-si-tracing-the-tides-mahjong-mat",
-    "name": "Tracing the Tides",
-    "brand": "Mahjong by SI",
-    "now": [
-     "yellow",
-     "red",
-     "neutral",
-     "green",
-     "dark"
-    ],
-    "rule would give": [
-     "red",
-     "neutral",
-     "green",
-     "dark"
-    ],
-    "why": "yellow dropped: saturated yellow 0.3% (cream read as yellow)"
-   },
-   {
     "key": "luckydaughters.com/astor-place-mat",
     "name": "Astor Place",
     "brand": "Lucky Daughters",

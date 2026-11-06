@@ -21,3 +21,7 @@ python3 $R/builder/fym_fix_oct25/v92_coordinated.py "$D" | grep -i juniper
 python3 $H/sideb116.py "$D"                                          # Bespoke side B after side A again (gate [78])
 python3 $H/release116.py "$D"
 python3 $R/builder/fym_apply_locks.py "$D"
+python3 - "$R" <<'PY'                                                 # v94_thinpicks appends its _changes line on every run: keep one
+import json, sys; p = sys.argv[1] + '/builder/fym_flags/locks.json'; L = json.load(open(p)); c = L['_changes']; seen = set(); u = [x for x in c if not (isinstance(x, str) and (x in seen or seen.add(x)))]
+if u != c: L['_changes'] = u; json.dump(L, open(p, 'w'), indent=1, ensure_ascii=False); print('locks _changes de-duplicated', len(c) - len(u))
+PY

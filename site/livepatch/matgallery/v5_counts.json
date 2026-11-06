@@ -922,10 +922,6 @@
    ]
   },
   "works_for_holiday": {
-   "oh-my-mahjong--dapper-2": [
-    "purple",
-    "dark"
-   ],
    "tigre-de-tartan--estate-sale": [
     "red",
     "green",
@@ -935,12 +931,16 @@
    "sunday-mahjong--rattan": [
     "earthy"
    ],
-   "luxe-mahjong--the-polo-club": [
-    "dark",
-    "yellow"
+   "oh-my-mahjong--dapper-2": [
+    "purple",
+    "dark"
    ],
    "oh-my-mahjong--dapper-1-retired": [
     "earthy"
+   ],
+   "luxe-mahjong--the-polo-club": [
+    "dark",
+    "yellow"
    ]
   }
  },
@@ -1748,62 +1748,62 @@
    ]
   }
  },
- "claude_also_added": 172,
+ "claude_also_added": 159,
  "section_tiers_active": {
   "pink": {
-   "primary": 240,
-   "also": 217,
-   "accent": 83
+   "primary": 144,
+   "also": 83,
+   "accent": 73
   },
   "red": {
-   "primary": 42,
-   "also": 99,
-   "accent": 22
+   "primary": 24,
+   "also": 35,
+   "accent": 20
   },
   "orange": {
-   "primary": 43,
-   "also": 101,
-   "accent": 18
+   "primary": 27,
+   "also": 38,
+   "accent": 16
   },
   "yellow": {
-   "primary": 24,
-   "also": 66,
+   "primary": 18,
+   "also": 42,
    "accent": 7
   },
   "green": {
-   "primary": 203,
-   "also": 257,
-   "accent": 70
+   "primary": 107,
+   "also": 102,
+   "accent": 67
   },
   "teal": {
-   "primary": 70,
-   "also": 51,
-   "accent": 26
+   "primary": 45,
+   "also": 35,
+   "accent": 18
   },
   "blue": {
-   "primary": 279,
-   "also": 192,
-   "accent": 73
+   "primary": 148,
+   "also": 89,
+   "accent": 60
   },
   "purple": {
-   "primary": 73,
-   "also": 59,
-   "accent": 14
+   "primary": 49,
+   "also": 22,
+   "accent": 13
   },
   "neutral": {
-   "primary": 114,
-   "also": 156,
-   "accent": 91
+   "primary": 66,
+   "also": 17,
+   "accent": 87
   },
   "earthy": {
-   "primary": 116,
-   "also": 139,
-   "accent": 131
+   "primary": 37,
+   "also": 48,
+   "accent": 112
   },
   "dark": {
-   "primary": 38,
-   "also": 141,
-   "accent": 34
+   "primary": 36,
+   "also": 53,
+   "accent": 25
   },
   "bw": {
    "primary": 13,
@@ -1812,17 +1812,17 @@
   },
   "simple": {
    "primary": 2,
-   "also": 200,
+   "also": 166,
    "accent": 0
   },
   "pastel": {
    "primary": 0,
-   "also": 254,
+   "also": 154,
    "accent": 0
   },
   "brights": {
    "primary": 11,
-   "also": 331,
+   "also": 195,
    "accent": 0
   },
   "florals": {
@@ -1836,7 +1836,7 @@
    "accent": 0
   },
   "holiday": {
-   "primary": 174,
+   "primary": 95,
    "also": 8,
    "accent": 0
   },
@@ -1847,49 +1847,49 @@
   }
  },
  "section_counts_active": {
-  "pink": 540,
-  "red": 163,
-  "orange": 162,
-  "yellow": 97,
-  "green": 530,
-  "teal": 147,
-  "blue": 544,
-  "purple": 146,
-  "neutral": 361,
-  "earthy": 386,
-  "dark": 213,
+  "pink": 300,
+  "red": 79,
+  "orange": 81,
+  "yellow": 67,
+  "green": 276,
+  "teal": 98,
+  "blue": 297,
+  "purple": 84,
+  "neutral": 170,
+  "earthy": 197,
+  "dark": 114,
   "bw": 13,
-  "simple": 202,
-  "pastel": 254,
-  "brights": 342,
+  "simple": 168,
+  "pastel": 154,
+  "brights": 206,
   "florals": 47,
   "animal": 35,
-  "holiday": 182,
+  "holiday": 103,
   "multi": 0,
   "retired": 29
  },
  "section_counts_if_retired_shown": {
-  "pink": 554,
-  "red": 166,
-  "orange": 165,
-  "yellow": 102,
-  "green": 543,
-  "teal": 153,
-  "blue": 555,
-  "purple": 149,
-  "neutral": 366,
-  "earthy": 390,
-  "dark": 215,
+  "pink": 314,
+  "red": 82,
+  "orange": 84,
+  "yellow": 72,
+  "green": 289,
+  "teal": 104,
+  "blue": 308,
+  "purple": 87,
+  "neutral": 175,
+  "earthy": 201,
+  "dark": 116,
   "bw": 13,
-  "simple": 204,
-  "pastel": 263,
-  "brights": 354,
+  "simple": 170,
+  "pastel": 163,
+  "brights": 218,
   "florals": 50,
   "animal": 35,
-  "holiday": 184,
+  "holiday": 105,
   "multi": 0
  },
- "unique_active_mats": 1461,
+ "unique_active_mats": 841,
  "retired": 29,
  "hidden": 18,
  "dedupe_groups": 12,
