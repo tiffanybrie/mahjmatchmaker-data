@@ -6,16 +6,27 @@
    "pass": true
   },
   "tour_runs_through": {
-   "pass": false,
+   "pass": true,
    "info": {
     "steps": [
      "door:Tiles or mat",
      "find:Find your tiles",
-     "grid:Tap a tile set"
+     "grid:Tap a tile set",
+     "mats:Swipe the mats",
+     "view:Pick your view",
+     "pick:Pick your mat",
+     "add:Add racks",
+     "racks:Swipe the racks",
+     "rmenu:Narrow the racks",
+     "rpick:Pick 1 or 2 racks",
+     "make:Make it official",
+     "share:Your match card",
+     "list:Your shopping list",
+     "mine:My match cards"
     ],
     "final": {
-     "on": true,
-     "step": 2
+     "on": false,
+     "step": 22
     }
    }
   },
@@ -37,7 +48,12 @@
   {
    "m": "POST",
    "type": "ping",
-   "body": "{\"events\":[{\"t\":\"brand\",\"set\":\"\",\"mat\":\"\",\"rack\":\"\",\"x\":\"Oh My Mahjong\",\"sid\":\"roedsktb\"},{\"t\":\"brand\",\"set\":\"\",\"mat\":\"\",\"rack\":\"\",\"x\":\"all\",\"sid\":\"roedsktb\"},{\"t\":\"brand\",\"set\":\"\",\"mat\":\"\",\"rack\":\"\",\"x\":\"Oh My Mahjong\",\"sid\":\"roedsktb\"}]}"
+   "body": "{\"events\":[{\"t\":\"brand\",\"set\":\"\",\"mat\":\"\",\"rack\":\"\",\"x\":\"Oh My Mahjong\",\"sid\":\"cme58x8p\"},{\"t\":\"tiles\",\"set\":\"amara\",\"mat\":\"\",\"rack\":\"\",\"x\":\"\",\"sid\":\"cme58x8p\"},{\"t\":\"right\",\"set\":\"amara\",\"mat\":\"mahjandvine.com/chinoiserie-song-bird\",\"rack\":\"\",\"x\":\"\",\"sid\":\"cme58x8p\"}]}"
+  },
+  {
+   "m": "POST",
+   "type": "ping",
+   "body": "{\"events\":[{\"t\":\"right\",\"set\":\"amara\",\"mat\":\"mahjandvine.com/chinoiserie-song-bird\",\"rack\":\"www.ohmymahjong.com/clear-acrylic-rack-and-pusher-set\",\"x\":\"\",\"sid\":\"cme58x8p\"},{\"t\":\"card\",\"set\":\"amara\",\"mat\":\"mahjandvine.com/chinoiserie-song-bird\",\"rack\":\"www.ohmymahjong.com/clear-acrylic-rack-and-pusher-set\",\"x\":\"\",\"sid\":\"cme58x8p\"}]}"
   }
  ],
  "badReq": [],
@@ -45,7 +61,18 @@
  "tour": [
   "door:Tiles or mat",
   "find:Find your tiles",
-  "grid:Tap a tile set"
+  "grid:Tap a tile set",
+  "mats:Swipe the mats",
+  "view:Pick your view",
+  "pick:Pick your mat",
+  "add:Add racks",
+  "racks:Swipe the racks",
+  "rmenu:Narrow the racks",
+  "rpick:Pick 1 or 2 racks",
+  "make:Make it official",
+  "share:Your match card",
+  "list:Your shopping list",
+  "mine:My match cards"
  ],
  "errorsN": 0
 }
