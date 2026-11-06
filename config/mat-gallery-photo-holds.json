@@ -1,7 +1,7 @@
 {
  "by": "claude-photo-review",
  "date": "2026-11-06 (QA round 2)",
- "about": "Mat Gallery photo holds. ONE rule = the CLAUDE.md FYM low bar: a photo stays if the mat and its colours are clearly readable (tiles/racks on it are fine); held = no mat edge at all (fabric close-up), a different product, or too far/small. builder/fym_fix_nov06/gallery_sync.py leaves these out until a clearer photo exists. Nov 6 QA re-check: Paint Party, Turkey Dinner, Poppylicious, Acid in the Library, Primary on Broughton, Deep Blue, All Vibes came back (racks/tiles on a readable mat; Deep Blue/All Vibes = solids).",
+ "about": "Mat Gallery photo holds. ONE rule = the CLAUDE.md FYM low bar: a photo stays if the mat and its colours are clearly readable (tiles/racks on it are fine); held = no mat edge at all (fabric close-up), a different product, or too far/small. builder/fym_fix_nov06/gallery_sync.py leaves these out until a clearer photo exists. Nov 6 QA re-check: Paint Party, Turkey Dinner, Poppylicious, Acid in the Library, Primary on Broughton, Deep Blue, All Vibes came back (racks/tiles on a readable mat; Deep Blue/All Vibes = solids). 'imgs' = gallery rows held by gallery img id (catalog rows that are not FYM-synced); build_v6.py removes them.",
  "mats": {
   "mahjpit.co/pixel-pusher-mat": {
    "name": "Mahj Pit Pixel Pusher",
@@ -30,6 +30,16 @@
   "alb2:splash-of-color-preppy-animal-print": {
    "name": "Splash of Color Preppy Animal Print",
    "reason": "room shot, 396x261 (QA Nov 6)"
+  },
+  "mahjpit.co/deep-blue-mat": {
+   "name": "Mahj Pit Deep Blue",
+   "reason": "every brand photo is a corner close-up or racks on part of the mat; no whole-mat photo (re-QA Nov 6)"
+  }
+ },
+ "imgs": {
+  "tigre-de-tartan--french-mural": {
+   "name": "Tigre de Tartan French Mural (+ its Mahj Pit twin, merged)",
+   "reason": "every TdT (6) and Mahj Pit (4) brand photo has racks/box/cards covering the mat or is a close-up (re-QA Nov 6). When it comes back, config/mat-gallery-dedupe-v6.json still adds the \"Also at Mahj Pit\" link."
   }
  }
 }

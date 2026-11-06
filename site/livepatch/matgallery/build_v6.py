@@ -141,6 +141,9 @@ for d_, mm_ in DUP['merge'].items():
         k_[15] = [mm_['shop2'][0], AA.autoapply(GI[d_][3] or mm_['shop2'][1])[0]]
 stats['dupes_merged'] = sorted(f"{GI[d_][2]} | {GI[d_][1]} -> {GI[mm_['keep']][1]}" for d_, mm_ in DUP['merge'].items() if d_ in GI and mm_['keep'] in GI)
 G = [r for r in G if not (r[0] in DUP['merge'] and DUP['merge'][r[0]]['keep'] in GI)]
+HOLDI = json.load(open(REPO + 'config/mat-gallery-photo-holds.json')).get('imgs', {})  # catalog rows held for their photo (re-QA Nov 6: TdT French Mural)
+stats['held_rows'] = sorted(f'{GI[i_][2]} | {GI[i_][1]}' for i_ in HOLDI if i_ in GI)
+G = [r for r in G if r[0] not in HOLDI]
 for r in G:
     while len(r) < 16: r.append(0 if len(r) < 14 else '')
 try:

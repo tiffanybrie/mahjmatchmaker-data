@@ -4,8 +4,8 @@
  "about": "Mat Gallery photo overrides (gallery_sync.py uses these instead of the FYM pack photo). src = repo path or URL; crop = fractions [x0,y0,x1,y1]. Never upscaled.",
  "mats": {
   "mahjpit.co/flower-shop": {
-   "src": "assets/launches/mahjpit-flower-shop/04.jpg",
-   "why": "whole mat (edge visible) with racks"
+   "src": "assets/launches/mahjpit-flower-shop/01.jpg",
+   "why": "flat mat photo (FYM 1.15 uses it); 04 cropped square to a rack (re-QA Nov 6)"
   },
   "mahjpit.co/seaside-game-mat": {
    "src": "assets/launches/mahjpit-seaside-game-mat/04.jpg",
@@ -48,10 +48,6 @@
   "mahjpit.co/primary-on-broughton": {
    "src": "assets/mats/v115/mahjpit-primary-on-broughton.jpg",
    "why": "FYM 1.15 whole-mat photo"
-  },
-  "mahjpit.co/deep-blue-mat": {
-   "src": "assets/launches/mahjpit-deep-blue-mat/04.jpg",
-   "why": "solid mat, corner with edge (solid = lower bar)"
   },
   "mahjpit.co/all-vibes-mat": {
    "src": "assets/launches/mahjpit-all-vibes-mat/03.jpg",

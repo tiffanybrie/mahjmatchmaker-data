@@ -189,7 +189,7 @@
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": " saturated yellow 0% (cream read as yellow)"
+   "why": " saturated yellow 0% (cream read as yellow) by-eye colour fix"
   },
   "britt-mills--flourish-neoprene": {
    "drop": [
@@ -198,7 +198,7 @@
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": "saturated orange 3%, peach 0% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow)"
+   "why": "saturated orange 3%, peach 0% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow) by-eye colour fix"
   },
   "bespoke-mahjong--gray-malin-getaway-dogs": {
    "drop": [
@@ -274,7 +274,7 @@
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": "saturated orange 0%, peach 0% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow)"
+   "why": "saturated orange 0%, peach 0% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow) by-eye colour fix"
   },
   "mahj-moon--wildflower-american-2": {
    "drop": [
@@ -621,7 +621,7 @@
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": "saturated orange 0%, peach 0% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow)"
+   "why": "saturated orange 0%, peach 0% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow) by-eye colour fix"
   },
   "yolo-mahjong--terracotta-diamond": {
    "drop": [
@@ -1069,11 +1069,12 @@
   },
   "bougie-mahjong--tortoiseshell-after-dark": {
    "drop": [
+    "orange",
     "yellow"
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": " saturated yellow 0% (cream read as yellow)"
+   "why": " saturated yellow 0% (cream read as yellow) by-eye colour fix"
   },
   "bougie-mahjong--black-tie": {
    "drop": [
@@ -1176,11 +1177,12 @@
   },
   "bougie-mahjong--vino-amici": {
    "drop": [
+    "orange",
     "yellow"
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": " saturated yellow 0% (cream read as yellow)"
+   "why": " saturated yellow 0% (cream read as yellow) by-eye colour fix"
   },
   "bougie-mahjong--cobalt-garden": {
    "drop": [
@@ -1215,7 +1217,7 @@
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": "saturated orange 0%, peach 0% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow)"
+   "why": "saturated orange 0%, peach 0% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow) by-eye colour fix"
   },
   "bougie-mahjong--palm-beach-summerween": {
    "drop": [
@@ -1236,19 +1238,29 @@
   },
   "bougie-mahjong--riviera-leopard": {
    "drop": [
+    "orange",
     "yellow"
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": " saturated yellow 0% (cream read as yellow)"
+   "why": " saturated yellow 0% (cream read as yellow) by-eye colour fix"
+  },
+  "bougie-mahjong--limoncello": {
+   "drop": [
+    "orange"
+   ],
+   "gallery_only": true,
+   "src": "gallery_sync fym-v115-sync",
+   "why": " by-eye colour fix"
   },
   "bougie-mahjong--liberty-250": {
    "drop": [
+    "orange",
     "yellow"
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": " saturated yellow 0% (cream read as yellow)"
+   "why": " saturated yellow 0% (cream read as yellow) by-eye colour fix"
   },
   "bougie-mahjong--azure-dolphin-cove": {
    "drop": [
@@ -1269,11 +1281,12 @@
   },
   "bougie-mahjong--happy-camper": {
    "drop": [
+    "orange",
     "yellow"
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": " saturated yellow 2% (cream read as yellow)"
+   "why": " saturated yellow 2% (cream read as yellow) by-eye colour fix"
   },
   "bougie-mahjong--linen-blossom": {
    "drop": [
@@ -1343,7 +1356,7 @@
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": "saturated orange 0%, peach 0% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow)"
+   "why": "saturated orange 0%, peach 0% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow) by-eye colour fix"
   },
   "bougie-mahjong--jade-pagoda-chinoiserie": {
    "drop": [
@@ -1374,11 +1387,12 @@
   },
   "bougie-mahjong--midnight-koi-garden": {
    "drop": [
+    "orange",
     "yellow"
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": " saturated yellow 1% (cream read as yellow)"
+   "why": " saturated yellow 1% (cream read as yellow) by-eye colour fix"
   },
   "bougie-mahjong--canine-garden-party": {
    "drop": [
@@ -1533,11 +1547,12 @@
   },
   "bougie-mahjong--moonlit-crane-garden": {
    "drop": [
+    "orange",
     "yellow"
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": " saturated yellow 0% (cream read as yellow)"
+   "why": " saturated yellow 0% (cream read as yellow) by-eye colour fix"
   },
   "bougie-mahjong--paris-conservatory": {
    "drop": [
@@ -1592,11 +1607,12 @@
   },
   "bougie-mahjong--indigo-reef": {
    "drop": [
+    "orange",
     "yellow"
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": " saturated yellow 0% (cream read as yellow)"
+   "why": " saturated yellow 0% (cream read as yellow) by-eye colour fix"
   },
   "bougie-mahjong--imperial-peacock": {
    "drop": [
@@ -2953,11 +2969,12 @@
   },
   "let-s-be-besties--cheaper-than-christmas-tiles": {
    "drop": [
+    "orange",
     "yellow"
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": " saturated yellow 0% (cream read as yellow)"
+   "why": " saturated yellow 0% (cream read as yellow) by-eye colour fix"
   },
   "let-s-be-besties--checkerboard-with-instructions": {
    "drop": [
@@ -3229,7 +3246,7 @@
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": "saturated orange 0%, peach 0% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow)"
+   "why": "saturated orange 0%, peach 0% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow) by-eye colour fix"
   },
   "let-s-be-besties--exotic-snakes": {
    "drop": [
@@ -4205,7 +4222,7 @@
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": "saturated orange 0%, peach 0% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow)"
+   "why": "saturated orange 0%, peach 0% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow) by-eye colour fix"
   },
   "let-s-be-besties--pink-paris-watercolor": {
    "drop": [
@@ -4275,7 +4292,7 @@
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": "saturated orange 0%, peach 1% of the photo (cream/beige read as orange) saturated yellow 2% (cream read as yellow)"
+   "why": "saturated orange 0%, peach 1% of the photo (cream/beige read as orange) saturated yellow 2% (cream read as yellow) by-eye colour fix"
   },
   "let-s-be-besties--primary-arabesque": {
    "drop": [
@@ -5011,7 +5028,7 @@
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": " saturated yellow 0% (cream read as yellow)"
+   "why": " saturated yellow 1% (cream read as yellow)"
   },
   "mahj-pit--zinnia-jockeys": {
    "drop": [
@@ -5045,15 +5062,6 @@
    "src": "gallery_sync fym-v115-sync",
    "why": " saturated yellow 0% (cream read as yellow)"
   },
-  "mahj-pit--deep-blue": {
-   "drop": [
-    "orange",
-    "yellow"
-   ],
-   "gallery_only": true,
-   "src": "gallery_sync fym-v115-sync",
-   "why": "saturated orange 0%, peach 0% of the photo (cream/beige read as orange) saturated yellow 3% (cream read as yellow)"
-  },
   "mahj-pit--all-vibes": {
    "drop": [
     "orange",
@@ -5061,7 +5069,7 @@
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": "saturated orange 0%, peach 0% of the photo (cream/beige read as orange) saturated yellow 1% (cream read as yellow)"
+   "why": "saturated orange 0%, peach 0% of the photo (cream/beige read as orange) saturated yellow 1% (cream read as yellow) by-eye colour fix"
   },
   "oh-my-mahjong--lotus-cove": {
    "drop": [
@@ -5193,7 +5201,7 @@
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": "saturated orange 0%, peach 1% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow)"
+   "why": "saturated orange 0%, peach 1% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow) by-eye colour fix"
   },
   "luna-ek-studio--meadow-butterfly-border": {
    "drop": [
@@ -5210,7 +5218,7 @@
    ],
    "gallery_only": true,
    "src": "gallery_sync fym-v115-sync",
-   "why": " saturated yellow 0% (cream read as yellow)"
+   "why": " saturated yellow 0% (cream read as yellow) by-eye colour fix"
   },
   "luna-ek-studio--crane-lantern-pattern": {
    "drop": [

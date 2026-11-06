@@ -1094,6 +1094,8 @@ try:
         _dx90 = json.load(open(REPO + 'config/mat-gallery-dedupe-v6.json'))['merge']; _MERGED90 = {a_['key'] for a_ in _XR if a_['img'] in _dx90}
     except Exception: pass
     _HOLD90 = set(json.load(open(REPO + 'config/mat-gallery-photo-holds.json'))['mats']) if os.path.exists(REPO + 'config/mat-gallery-photo-holds.json') else set()
+    try: _HOLD90 |= {GKEY(i_) for i_ in json.load(open(REPO + 'config/mat-gallery-photo-holds.json')).get('imgs', {})}
+    except Exception: pass
     for _k, _m in M.items():
         if _m.get('hid') or '#side-b' in _k or _k in _HOLD90 or _k in _MERGED90: continue  # holds + merged duplicate photos stay out on purpose  # Nov 6: gallery photo holds (config/mat-gallery-photo-holds.json) stay out on purpose
         _u = {_nu(_m.get('u0')), _nu(_m.get('u')), _nu(_k)}

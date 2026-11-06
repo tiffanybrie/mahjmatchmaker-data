@@ -194,6 +194,11 @@ for k, m in M.items():
         _best = max((f for f in sh if f in ('pink', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple', 'neutral', 'earthy') and f not in _gone and f not in secs), key=lambda f: sh[f], default='neutral')
         secs = [_best] + secs
     if k in CFIX: secs = list(CFIX[k]['secs']); eye_ = 1
+    if eye_:  # a by-eye fix that leaves out orange/yellow: the measured cream/gold 'orange'/'yellow' must not come back as an accent either
+        _dr = [c for c in ('orange', 'yellow') if c not in secs]
+        if _dr:
+            AFX['mats'].setdefault(img, {'drop': [], 'gallery_only': True, 'src': f'gallery_sync {TAG}', 'why': ''})
+            AFX['mats'][img]['drop'] = sorted(set(AFX['mats'][img]['drop']) | set(_dr)); AFX['mats'][img]['why'] += ' by-eye colour fix'
     if img in AFX['mats'] and str(AFX['mats'][img].get('src', '')).startswith('gallery_sync'):  # a colour the final sections keep is never also dropped
         AFX['mats'][img]['drop'] = [c for c in AFX['mats'][img]['drop'] if c not in secs]
         if not AFX['mats'][img]['drop']: AFX['mats'].pop(img)  # Claude photo-review colour fix (config/mat-gallery-sync-colour-fixes.json)

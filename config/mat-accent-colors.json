@@ -28655,24 +28655,26 @@
   },
   "mahj-pit--flower-shop": {
    "accents": [
-    "earthy",
-    "blue"
+    "red",
+    "blue",
+    "purple"
    ],
    "major": [
+    "red",
     "blue"
    ],
    "shares": {
-    "blue": 15.4,
-    "earthy": 48.9,
-    "dark": 12.4,
-    "green": 0.4,
-    "neutral": 7.8,
-    "orange": 0.4,
-    "pink": 3.4,
-    "purple": 1.1,
-    "red": 9.9,
-    "teal": 0.3,
-    "yellow": 0.2
+    "blue": 18.0,
+    "earthy": 8.0,
+    "dark": 9.5,
+    "green": 1.2,
+    "neutral": 5.2,
+    "orange": 7.5,
+    "pink": 5.9,
+    "purple": 13.0,
+    "red": 29.2,
+    "teal": 0.6,
+    "yellow": 2.1
    },
    "src": "pixel-families"
   },
@@ -28761,25 +28763,6 @@
     "red": 0.1,
     "teal": 0.0,
     "yellow": 0.2
-   },
-   "src": "pixel-families"
-  },
-  "mahj-pit--deep-blue": {
-   "accents": [
-    "blue"
-   ],
-   "major": [
-    "blue"
-   ],
-   "shares": {
-    "blue": 93.2,
-    "dark": 0.1,
-    "earthy": 0.3,
-    "green": 0.7,
-    "neutral": 0.3,
-    "pink": 0.4,
-    "teal": 0.4,
-    "yellow": 4.7
    },
    "src": "pixel-families"
   },
