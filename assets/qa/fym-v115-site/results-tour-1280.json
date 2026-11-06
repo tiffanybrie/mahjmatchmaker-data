@@ -1,0 +1,51 @@
+{
+ "width": 1280,
+ "flow": "tour",
+ "checks": {
+  "loaded_v115": {
+   "pass": true
+  },
+  "tour_runs_through": {
+   "pass": false,
+   "info": {
+    "steps": [
+     "door:Tiles or mat",
+     "find:Find your tiles",
+     "grid:Tap a tile set"
+    ],
+    "final": {
+     "on": true,
+     "step": 2
+    }
+   }
+  },
+  "no_hscroll_after_tour": {
+   "pass": true,
+   "info": {
+    "page": 0,
+    "app": 0
+   }
+  },
+  "no_broken_imgs_tour": {
+   "pass": true,
+   "info": []
+  }
+ },
+ "notes": [],
+ "errors": [],
+ "beacons": [
+  {
+   "m": "POST",
+   "type": "ping",
+   "body": "{\"events\":[{\"t\":\"brand\",\"set\":\"\",\"mat\":\"\",\"rack\":\"\",\"x\":\"Oh My Mahjong\",\"sid\":\"duze4c3o\"},{\"t\":\"brand\",\"set\":\"\",\"mat\":\"\",\"rack\":\"\",\"x\":\"all\",\"sid\":\"duze4c3o\"},{\"t\":\"brand\",\"set\":\"\",\"mat\":\"\",\"rack\":\"\",\"x\":\"Oh My Mahjong\",\"sid\":\"duze4c3o\"}]}"
+  }
+ ],
+ "badReq": [],
+ "version": "Version 1.15",
+ "tour": [
+  "door:Tiles or mat",
+  "find:Find your tiles",
+  "grid:Tap a tile set"
+ ],
+ "errorsN": 0
+}

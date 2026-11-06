@@ -1,0 +1,299 @@
+{
+ "width": 1280,
+ "flow": "tiles",
+ "checks": {
+  "loaded_v115": {
+   "pass": true
+  },
+  "tile_colour_switch": {
+   "pass": true,
+   "info": {
+    "pink": 51,
+    "blue": 75,
+    "pressed": [
+     "Blue"
+    ]
+   }
+  },
+  "tile_colour_clear_never_locks": {
+   "pass": true,
+   "info": {
+    "afterClear": 0,
+    "pressed": []
+   }
+  },
+  "tile_holiday_button": {
+   "pass": true,
+   "info": {
+    "n": 16,
+    "hasMerryMerry": true
+   }
+  },
+  "new_tile_sets_in_AZ": {
+   "pass": true,
+   "info": {
+    "az": 291,
+    "missing": []
+   }
+  },
+  "no_broken_imgs_tiles_grid": {
+   "pass": true,
+   "info": []
+  },
+  "juniper_leads_lotus_cove": {
+   "pass": true,
+   "info": {
+    "id": "www.ohmymahjong.com/lotus-cove-mat-in-tube",
+    "tf": "translate(0px, 0px) scale(1)"
+   }
+  },
+  "zoom_persists_across_swipes": {
+   "pass": true,
+   "info": {
+    "z1": {
+     "id": "www.ohmymahjong.com/lotus-cove-mat-in-tube",
+     "tf": "translate(-371.28px, -273px) scale(2.56)"
+    },
+    "z2": {
+     "id": "bougiemahjong.com/palm-court-tennis-club-mahjong-mat",
+     "tf": "translate(-371.28px, -273px) scale(2.56)"
+    },
+    "z3": {
+     "id": "www.ohmymahjong.com/hampton-mat-in-tube",
+     "tf": "translate(-371.28px, -273px) scale(2.56)"
+    }
+   }
+  },
+  "mat_colour_switch": {
+   "pass": true,
+   "info": {
+    "pink": [
+     [
+      "pink"
+     ],
+     {
+      "id": "letsbebesties.com/bam-bird-toile-pink-neoprene-mahjong-mat",
+      "tf": "translate(0px, 0px) scale(1)"
+     },
+     [
+      "pink"
+     ]
+    ],
+    "blue": [
+     [
+      "blue"
+     ],
+     {
+      "id": "www.bambirdboutique.com/blue-abstract-neoprene-mahjong-mat",
+      "tf": "translate(0px, 0px) scale(1)"
+     },
+     [
+      "blue"
+     ]
+    ],
+    "clear": [
+     [
+      "ALL"
+     ],
+     {
+      "id": "www.ohmymahjong.com/hampton-mat-in-tube",
+      "tf": "translate(0px, 0px) scale(1)"
+     }
+    ]
+   }
+  },
+  "mat_colour_clear_never_locks": {
+   "pass": true,
+   "info": {
+    "fc": [
+     "ALL"
+    ]
+   }
+  },
+  "mat_holiday_button": {
+   "pass": true,
+   "info": {
+    "top": {
+     "n": "Estate Sale",
+     "hol": false,
+     "wfh": true
+    },
+    "state": [
+     "holiday"
+    ]
+   }
+  },
+  "mat_holiday_toggle_off": {
+   "pass": true,
+   "info": {
+    "fh2": [
+     "ALL"
+    ]
+   }
+  },
+  "x_and_heart_only": {
+   "pass": true,
+   "info": {
+    "lbl": [
+     "✕:No thanks",
+     "♥:Love"
+    ]
+   }
+  },
+  "table_view": {
+   "pass": true,
+   "info": {
+    "pressed": "true",
+    "hasCanvasOrImg": true
+   }
+  },
+  "no_broken_imgs_table": {
+   "pass": true,
+   "info": []
+  },
+  "racks_deck_shows": {
+   "pass": true,
+   "info": {
+    "id": "www.viroramahjong.com/wooden-rack-pusher-set?v=49226735976631",
+    "tf": ""
+   }
+  },
+  "match_card_drawn": {
+   "pass": true,
+   "info": {
+    "imgW": 2160
+   }
+  },
+  "card_section_code_MAHJMATCH": {
+   "pass": false,
+   "info": {}
+  },
+  "share_or_save_works": {
+   "pass": true,
+   "info": {
+    "download": null,
+    "share": {
+     "files": [
+      "juniper-match-post.png"
+     ],
+     "title": "My Find Your Mat-ch card"
+    },
+    "toast": ""
+   }
+  },
+  "no_broken_imgs_end": {
+   "pass": true,
+   "info": []
+  },
+  "no_hscroll": {
+   "pass": true,
+   "info": {
+    "page": 0,
+    "app": 0
+   }
+  }
+ },
+ "notes": [],
+ "errors": [],
+ "beacons": [
+  {
+   "m": "POST",
+   "type": "ping",
+   "body": "{\"events\":[{\"t\":\"tiles\",\"set\":\"juniper\",\"mat\":\"\",\"rack\":\"\",\"x\":\"\",\"sid\":\"zj8b9r76\"},{\"t\":\"left\",\"set\":\"juniper\",\"mat\":\"www.ohmymahjong.com/lotus-cove-mat-in-tube\",\"rack\":\"\",\"x\":\"\",\"sid\":\"zj8b9r76\"}]}"
+  },
+  {
+   "m": "POST",
+   "type": "ping",
+   "body": "{\"events\":[{\"t\":\"left\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/palm-court-tennis-club-mahjong-mat\",\"rack\":\"\",\"x\":\"\",\"sid\":\"zj8b9r76\"},{\"t\":\"right\",\"set\":\"juniper\",\"mat\":\"www.ohmymahjong.com/hampton-mat-in-tube\",\"rack\":\"\",\"x\":\"\",\"sid\":\"zj8b9r76\"},{\"t\":\"left\",\"set\":\"juniper\",\"mat\":\"letsbebesties.com/botanical-jewel-neoprene-mahjong-mat\",\"rack\":\"\",\"x\":\"\",\"sid\":\"zj8b9r76\"},{\"t\":\"right\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"\",\"x\":\"\",\"sid\":\"zj8b9r76\"}]}"
+  },
+  {
+   "m": "POST",
+   "type": "ping",
+   "body": "{\"events\":[{\"t\":\"right\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"www.viroramahjong.com/wooden-rack-pusher-set?v=49226735976631\",\"x\":\"\",\"sid\":\"zj8b9r76\"},{\"t\":\"left\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"bb:White Metallic\",\"x\":\"\",\"sid\":\"zj8b9r76\"},{\"t\":\"right\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"mahjmood.com/white-wooden-racks-with-scalloped-pushers\",\"x\":\"\",\"sid\":\"zj8b9r76\"},{\"t\":\"card\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"mahjmood.com/white"
+  },
+  {
+   "m": "POST",
+   "type": "ping",
+   "body": "{\"events\":[{\"t\":\"save\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"mahjmood.com/white-wooden-racks-with-scalloped-pushers\",\"x\":\"post\",\"sid\":\"zj8b9r76\"},{\"t\":\"stars\",\"set\":\"juniper\",\"mat\":\"\",\"rack\":\"\",\"x\":\"stars:4\",\"sid\":\"zj8b9r76\"}]}"
+  }
+ ],
+ "badReq": [],
+ "version": "Version 1.15",
+ "holidayTiles": [
+  "Dear SantaAnders Ruff",
+  "Rackin' RudolphHip Hip Mahjong",
+  "Holly Jolly (Rudolph Red)Bam! Let's Mahj",
+  "Holly Jolly (Grinch Green)Bam! Let's Mah",
+  "Holly Jolly (Sugarplum Pink)Bam! Let's M",
+  "Tinselle (Ruby Red)Virora Mahjong",
+  "Tinselle (Emerald Green)Virora Mahjong",
+  "Nivalee (Glacier Blue)Virora Mahjong",
+  "Nutcracker BalletMahj Squad",
+  "Après Ski ClubCharleston Mahjong Club",
+  "Nivalee Emerald GreenVirora Mahjong",
+  "Merry NutcrackerPeace Love Mahjong",
+  "Spirit of ChristmasPeace Love Mahjong · ",
+  "It's a Vibe (Glitter Glow Green)Bespoke ",
+  "Merry Merry HolidayMahj Pit · sold out",
+  "December 1994Sunday Mahjong"
+ ],
+ "matFilter": {
+  "pink": [
+   [
+    "pink"
+   ],
+   {
+    "id": "letsbebesties.com/bam-bird-toile-pink-neoprene-mahjong-mat",
+    "tf": "translate(0px, 0px) scale(1)"
+   },
+   [
+    "pink"
+   ]
+  ],
+  "blue": [
+   [
+    "blue"
+   ],
+   {
+    "id": "www.bambirdboutique.com/blue-abstract-neoprene-mahjong-mat",
+    "tf": "translate(0px, 0px) scale(1)"
+   },
+   [
+    "blue"
+   ]
+  ],
+  "clear": [
+   [
+    "ALL"
+   ],
+   {
+    "id": "www.ohmymahjong.com/hampton-mat-in-tube",
+    "tf": "translate(0px, 0px) scale(1)"
+   }
+  ]
+ },
+ "cardText": "4\nYour match card\nIt’s a match!\n\nJuniper + Citrus Veranda. Pick your view, then save it or share it.\n\nMood board\nClose up\nStory 9:16\nPost 4:5\nPin 2:3\nSave image / Share\n\nShare your match! Tag #mahjmatch, we love to see your matches!\n\nShop your match\n\nEach Shop button opens that store in a new tab. Come back here to check off the rest.\n\nJuniper\nOh My Mahjong\nDiscount code ›\n♡\nShop ›\nCitrus Veranda\nBougie Mahjong\nNo code available at this time\n♥\nShop ›\nWhite Wooden Racks with Scalloped Pushers\nMahj Mood\nDiscount code ›\n♥\nShop ›\nText or email me this list\nSave your match cards and hearts to every device: sign in with your email\nStart over with new tiles",
+ "cardFormats": [
+  "story",
+  "post",
+  "pin"
+ ],
+ "myHearts": "My hearts\n\nSaved on this device. Sign in to keep them on every device.\n\n♥ Hearts (4)\nMy match cards (1)\nTILE SETS\n\nNo tile sets hearted yet.\n\nMATS\nCitrus Veranda\nBougie Mahjong\n✕\nHampton\nOh My Mahjong\n✕\nRACKS\n",
+ "cardPieces": [
+  {
+   "id": "bougiemahjong.com/citrus-veranda-mahjong-mat",
+   "n": "Citrus Veranda",
+   "bn": "Bougie Mahjong",
+   "pa": false,
+   "nc": false
+  },
+  {
+   "id": "mahjmood.com/white-wooden-racks-with-scalloped-pushers",
+   "n": "White Wooden Racks with Scalloped Pushers",
+   "bn": "Mahj Mood",
+   "pa": true,
+   "nc": false
+  }
+ ],
+ "errorsN": 0
+}

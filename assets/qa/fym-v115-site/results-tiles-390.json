@@ -157,6 +157,40 @@
     "id": "www.viroramahjong.com/wooden-rack-pusher-set?v=49226735976631",
     "tf": ""
    }
+  },
+  "match_card_drawn": {
+   "pass": true,
+   "info": {
+    "imgW": 2160
+   }
+  },
+  "card_section_code_MAHJMATCH": {
+   "pass": false,
+   "info": {}
+  },
+  "share_or_save_works": {
+   "pass": true,
+   "info": {
+    "download": null,
+    "share": {
+     "files": [
+      "juniper-match-post.png"
+     ],
+     "title": "My Find Your Mat-ch card"
+    },
+    "toast": ""
+   }
+  },
+  "no_broken_imgs_end": {
+   "pass": true,
+   "info": []
+  },
+  "no_hscroll": {
+   "pass": true,
+   "info": {
+    "page": 0,
+    "app": 0
+   }
   }
  },
  "notes": [],
@@ -165,17 +199,22 @@
   {
    "m": "POST",
    "type": "ping",
-   "body": "{\"events\":[{\"t\":\"tiles\",\"set\":\"juniper\",\"mat\":\"\",\"rack\":\"\",\"x\":\"\",\"sid\":\"3pochrxq\"},{\"t\":\"left\",\"set\":\"juniper\",\"mat\":\"www.ohmymahjong.com/lotus-cove-mat-in-tube\",\"rack\":\"\",\"x\":\"\",\"sid\":\"3pochrxq\"}]}"
+   "body": "{\"events\":[{\"t\":\"tiles\",\"set\":\"juniper\",\"mat\":\"\",\"rack\":\"\",\"x\":\"\",\"sid\":\"tvdn1yn4\"},{\"t\":\"left\",\"set\":\"juniper\",\"mat\":\"www.ohmymahjong.com/lotus-cove-mat-in-tube\",\"rack\":\"\",\"x\":\"\",\"sid\":\"tvdn1yn4\"}]}"
   },
   {
    "m": "POST",
    "type": "ping",
-   "body": "{\"events\":[{\"t\":\"left\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/palm-court-tennis-club-mahjong-mat\",\"rack\":\"\",\"x\":\"\",\"sid\":\"3pochrxq\"},{\"t\":\"right\",\"set\":\"juniper\",\"mat\":\"www.ohmymahjong.com/hampton-mat-in-tube\",\"rack\":\"\",\"x\":\"\",\"sid\":\"3pochrxq\"},{\"t\":\"left\",\"set\":\"juniper\",\"mat\":\"letsbebesties.com/botanical-jewel-neoprene-mahjong-mat\",\"rack\":\"\",\"x\":\"\",\"sid\":\"3pochrxq\"},{\"t\":\"right\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"\",\"x\":\"\",\"sid\":\"3pochrxq\"}]}"
+   "body": "{\"events\":[{\"t\":\"left\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/palm-court-tennis-club-mahjong-mat\",\"rack\":\"\",\"x\":\"\",\"sid\":\"tvdn1yn4\"},{\"t\":\"right\",\"set\":\"juniper\",\"mat\":\"www.ohmymahjong.com/hampton-mat-in-tube\",\"rack\":\"\",\"x\":\"\",\"sid\":\"tvdn1yn4\"},{\"t\":\"left\",\"set\":\"juniper\",\"mat\":\"letsbebesties.com/botanical-jewel-neoprene-mahjong-mat\",\"rack\":\"\",\"x\":\"\",\"sid\":\"tvdn1yn4\"},{\"t\":\"right\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"\",\"x\":\"\",\"sid\":\"tvdn1yn4\"}]}"
   },
   {
    "m": "POST",
    "type": "ping",
-   "body": "{\"events\":[{\"t\":\"right\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"www.viroramahjong.com/wooden-rack-pusher-set?v=49226735976631\",\"x\":\"\",\"sid\":\"3pochrxq\"},{\"t\":\"left\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"bb:White Metallic\",\"x\":\"\",\"sid\":\"3pochrxq\"},{\"t\":\"right\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"mahjmood.com/white-wooden-racks-with-scalloped-pushers\",\"x\":\"\",\"sid\":\"3pochrxq\"}]}"
+   "body": "{\"events\":[{\"t\":\"right\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"www.viroramahjong.com/wooden-rack-pusher-set?v=49226735976631\",\"x\":\"\",\"sid\":\"tvdn1yn4\"},{\"t\":\"left\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"bb:White Metallic\",\"x\":\"\",\"sid\":\"tvdn1yn4\"},{\"t\":\"right\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"mahjmood.com/white-wooden-racks-with-scalloped-pushers\",\"x\":\"\",\"sid\":\"tvdn1yn4\"},{\"t\":\"card\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"mahjmood.com/white"
+  },
+  {
+   "m": "POST",
+   "type": "ping",
+   "body": "{\"events\":[{\"t\":\"save\",\"set\":\"juniper\",\"mat\":\"bougiemahjong.com/citrus-veranda-mahjong-mat\",\"rack\":\"mahjmood.com/white-wooden-racks-with-scalloped-pushers\",\"x\":\"post\",\"sid\":\"tvdn1yn4\"},{\"t\":\"stars\",\"set\":\"juniper\",\"mat\":\"\",\"rack\":\"\",\"x\":\"stars:4\",\"sid\":\"tvdn1yn4\"}]}"
   }
  ],
  "badReq": [],
@@ -233,6 +272,28 @@
    }
   ]
  },
- "fatal": "locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-make]').first()\u001b[22m\n\u001b[2m    - locator resolved to <button disabled class=\"go\" data-make=\"\" type=\"button\">Make it official ♥</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click ac",
+ "cardText": "4\nYour match card\nIt’s a match!\n\nJuniper + Citrus Veranda. Pick your view, then save it or share it.\n\nMood board\nClose up\nStory 9:16\nPost 4:5\nPin 2:3\nSave image / Share\n\nShare your match! Tag #mahjmatch, we love to see your matches!\n\nShop your match\n\nEach Shop button opens that store in a new tab. Come back here to check off the rest.\n\nJuniper\nOh My Mahjong\nDiscount code ›\n♡\nShop ›\nCitrus Veranda\nBougie Mahjong\nNo code available at this time\n♥\nShop ›\nWhite Wooden Racks with Scalloped Pushers\nMahj Mood\nDiscount code ›\n♥\nShop ›\nText or email me this list\nSave your match cards and hearts to every device: sign in with your email\nStart over with new tiles",
+ "cardFormats": [
+  "story",
+  "post",
+  "pin"
+ ],
+ "myHearts": "My hearts\n\nSaved on this device. Sign in to keep them on every device.\n\n♥ Hearts (4)\nMy match cards (1)\nTILE SETS\n\nNo tile sets hearted yet.\n\nMATS\nCitrus Veranda\nBougie Mahjong\n✕\nHampton\nOh My Mahjong\n✕\nRACKS\n",
+ "cardPieces": [
+  {
+   "id": "bougiemahjong.com/citrus-veranda-mahjong-mat",
+   "n": "Citrus Veranda",
+   "bn": "Bougie Mahjong",
+   "pa": false,
+   "nc": false
+  },
+  {
+   "id": "mahjmood.com/white-wooden-racks-with-scalloped-pushers",
+   "n": "White Wooden Racks with Scalloped Pushers",
+   "bn": "Mahj Mood",
+   "pa": true,
+   "nc": false
+  }
+ ],
  "errorsN": 0
 }

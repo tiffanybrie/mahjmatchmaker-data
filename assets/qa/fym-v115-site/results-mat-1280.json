@@ -1,0 +1,165 @@
+{
+ "width": 1280,
+ "flow": "mat",
+ "checks": {
+  "loaded_v115": {
+   "pass": true
+  },
+  "matdoor_colour_switch": {
+   "pass": true,
+   "info": {
+    "a": [
+     "pink"
+    ],
+    "g": [
+     "green"
+    ],
+    "an": 36,
+    "gn": 36
+   }
+  },
+  "matdoor_colour_clear_never_locks": {
+   "pass": true,
+   "info": {
+    "afterTapAgain": [
+     "ALL"
+    ],
+    "afterMostMatched": [
+     "ALL"
+    ]
+   }
+  },
+  "matdoor_holiday_button": {
+   "pass": true,
+   "info": {
+    "n": 36,
+    "first": [
+     "Sugarplum PlaidPeace Love Mahjong",
+     "SugarplumOh My Mahjong",
+     "ClaraOh My Mahjong",
+     "Very Merry MahjAnders Ruff",
+     "Very Merry Wreath PremiumMahjong Register",
+     "WinterberryOh My Mahjong",
+     "YuletideOh My Mahjong",
+     "Perfectly WrappedPeace Love Mahjong"
+    ]
+   }
+  },
+  "no_broken_imgs_matdoor": {
+   "pass": true,
+   "info": []
+  },
+  "matdoor_reaches_racks": {
+   "pass": true,
+   "info": {
+    "id": "peacelovemahjong.com/mahjong-racks-racks-pushers-set-of-4",
+    "tf": ""
+   }
+  },
+  "matdoor_card": {
+   "pass": true,
+   "info": {
+    "img": true,
+    "w": 2160,
+    "code": false
+   }
+  },
+  "no_broken_imgs_end": {
+   "pass": true,
+   "info": []
+  },
+  "no_hscroll": {
+   "pass": true,
+   "info": {
+    "page": 0,
+    "app": 0
+   }
+  }
+ },
+ "notes": [],
+ "errors": [],
+ "beacons": [
+  {
+   "m": "POST",
+   "type": "ping",
+   "body": "{\"events\":[{\"t\":\"matdoor\",\"set\":\"\",\"mat\":\"www.ohmymahjong.com/larkspur-mat-in-tube\",\"rack\":\"\",\"x\":\"\",\"sid\":\"j0ht1ajh\"}]}"
+  },
+  {
+   "m": "POST",
+   "type": "ping",
+   "body": "{\"events\":[{\"t\":\"right\",\"set\":\"limoncello\",\"mat\":\"www.ohmymahjong.com/larkspur-mat-in-tube\",\"rack\":\"\",\"x\":\"\",\"sid\":\"j0ht1ajh\"},{\"t\":\"left\",\"set\":\"luminaire\",\"mat\":\"www.ohmymahjong.com/larkspur-mat-in-tube\",\"rack\":\"\",\"x\":\"\",\"sid\":\"j0ht1ajh\"},{\"t\":\"right\",\"set\":\"la-fete\",\"mat\":\"www.ohmymahjong.com/larkspur-mat-in-tube\",\"rack\":\"\",\"x\":\"\",\"sid\":\"j0ht1ajh\"},{\"t\":\"matdoor\",\"set\":\"la-fete\",\"mat\":\"www.ohmymahjong.com/larkspur-mat-in-tube\",\"rack\":\"\",\"x\":\"\",\"sid\":\"j0ht1ajh\"},{\"t\":\"right\",\"set\":\"la-fete\",\"mat\":\"www.ohmymahjong.com/larkspur-mat-in-tube\",\"rack\":\"peacelovemahjong.com/mahjong-racks-racks-push"
+  }
+ ],
+ "badReq": [],
+ "version": "Version 1.15",
+ "matdoorHoliday": [
+  "Sugarplum PlaidPeace Love Mahjong",
+  "SugarplumOh My Mahjong",
+  "ClaraOh My Mahjong",
+  "Very Merry MahjAnders Ruff",
+  "Very Merry Wreath PremiumMahjong Register",
+  "WinterberryOh My Mahjong",
+  "YuletideOh My Mahjong",
+  "Perfectly WrappedPeace Love Mahjong",
+  "Spirit of ChristmasPeace Love Mahjong",
+  "Candy Cane LanePeace Love Mahjong",
+  "MerrimentOh My Mahjong",
+  "Merry MixPeace Love Mahjong",
+  "Tied With A BowPeace Love Mahjong",
+  "Clara's Dream ChristmasMahj Squad",
+  "Holly JollyOh My Mahjong",
+  "Peace Love & MistletoePeace Love Mahjong",
+  "Santa's Mahjong MailAnders Ruff",
+  "The Polo ClubLuxe Mahjong",
+  "Festive Plaid PremiumSunday Mahjong",
+  "Merry & StripedPeace Love Mahjong",
+  "Nutcracker Noel - GoldPeace Love Mahjong",
+  "Candy Cane Pink WonderlandMahj Squad",
+  "Holly Jolly ChristmasBam! Let's Mahjong",
+  "MerrywoodBritt Mills",
+  "Nutcracker Noel - Red & GreenPeace Love Mahjong",
+  "RattanSunday Mahjong",
+  "Tartan TidingsAnders Ruff",
+  "Vintage NoelPeace Love Mahjong",
+  "Watercolor Christmas TreeAnders Ruff",
+  "Candy Cane LaneAnders Ruff",
+  "Holiday NeopreneBam Bird Boutique",
+  "Pretty Little ChristmasPeace Love Mahjong",
+  "Santa Baby's Cocktail HourSplash of Color",
+  "Winter BerryBritt Mills",
+  "Classic Very Merry MahjAnders Ruff",
+  "Dapper 1Oh My MahjongRetired"
+ ],
+ "matdoorPicked": "first",
+ "matdoorFirstTile": "♥\n✕\nTiffany’s match\nLimoncello\nOh My Mahjong Sold out\n♡",
+ "matdoorButtons": [
+  "data-jump=s-tiles|1Tiles",
+  "data-jump=s-mats|2Mats",
+  "data-jump=s-racks|3Racks",
+  "data-jump=s-card|4Card",
+  "data-mystars=|♥",
+  "data-acct=|",
+  "data-door=tiles|Start with tilesFind the",
+  "data-door=mat|Start with a matFind til",
+  "data-dchange=|Change mat",
+  "data-dgrid=1|See all",
+  "data-tz=-1|−",
+  "data-tz=1|+",
+  "data-tback=|‹ Back",
+  "data-tno=|✕",
+  "data-tyes=|♥",
+  "data-mode=close|Up close",
+  "data-mode=aerial|Aerial",
+  "data-mode=table|Table NEW",
+  "data-tno=|✕",
+  "data-tyes=|♥",
+  "data-tpk=16|",
+  "data-tpk=32|"
+ ],
+ "matdoorAdds": [
+  "type=button,data-jump=s-racks,disabled=|3Racks",
+  "type=button,class=go pkgo,data-tadd=16|Add racks ›",
+  "type=button,class=go,data-tadd=16|Add racks ›"
+ ],
+ "errorsN": 0
+}
