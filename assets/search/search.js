@@ -545,6 +545,17 @@
     }
   }
   /* Mat Gallery cards (any page with .mmg-card): "See its matches" on mats in 2+ albums */
+  /* jsDelivr can refuse a single thumb ("package size exceeded", Nov 6 warm): fall back to the full image */
+  document.addEventListener('error', function (e) {
+    var im = e.target;
+    if (!im || im.tagName !== 'IMG' || im.getAttribute('data-fb-done')) return;
+    var src = im.getAttribute('src') || '', full = null, m;
+    if (im.closest('.mmv-ov')) {
+      var b = im.closest('.mmv-im');
+      if (b && MV && mvCur) { var c = MV.m[mvCur][5][+b.getAttribute('data-n')]; full = c && c[3] ? c[3] : null; }
+    } else if (im.closest('.mms-ov') && D && (m = /\/thumbs\/m\/([a-z0-9-]+)\.webp$/.exec(src))) full = matImg(m[1], true);
+    if (full && full !== src) { im.setAttribute('data-fb-done', '1'); im.src = full; }
+  }, true);
   function galleryLinks() {
     var tries = 0;
     (function look() {

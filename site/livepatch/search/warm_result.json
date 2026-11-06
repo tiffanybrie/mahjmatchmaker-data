@@ -1,9 +1,10 @@
 {
- "commit": "3d3ba720ea1dbe81d4ff2ca1d28dbd8a214a8ad2",
- "total": 882,
- "ok_first_try": 871,
- "ok_after_retry": 10,
+ "commit": "179651ea94a89c8189bf7565102dbe32117647b9",
+ "total": 1705,
+ "ok_first_try": 1641,
+ "ok_after_retry": 62,
  "still_failing": {
-  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@3d3ba720ea1dbe81d4ff2ca1d28dbd8a214a8ad2/assets/search/thumbs/a/neutral-mahjong-tile-matches.webp": "403"
+  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@179651ea94a89c8189bf7565102dbe32117647b9/assets/search/thumbs/c/731cf8c0b04f0be4.webp": "403",
+  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@179651ea94a89c8189bf7565102dbe32117647b9/assets/search/thumbs/m/britt-mills--haven-leatherette.webp": "403"
  }
 }
