@@ -22,3 +22,4 @@ How partners reach us (partner sneak-peek email, Mon Oct 26):
 - 2026-11-02 2:19pm ET: 0 new (form: none in last 2-3 days, also checked label + Squarespace sender; Dropbox: only test file). Local git fetch hung again, committed via GitHub API.
 - 2026-11-04 2:25pm ET: 0 new (form: none in last 7 days, FYM subject + Squarespace sender; Dropbox: only test file). Local git fetch hung, committed via GitHub API.
 - 2026-11-05 2:20pm ET: 0 new (form: none in last 2-3 days, FYM subject + Squarespace sender + label; Dropbox: only test file). Local git fetch hung, committed via GitHub API.
+- 2026-11-06 2:19pm ET: 0 new (form: none in last 2 days, FYM subject + Squarespace sender; Dropbox: only test file). Local git fetch hung, fresh shallow clone used.
