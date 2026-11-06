@@ -74,7 +74,7 @@ const run = (label, fn) => { try { fn(); } catch (e) { fail(`${label}: threw ${e
 // ---------- scenario 1: Rattan -> December 1994 -> change tiles to Cypress -> See other mats -> swipe -> picks -> Back
 run('Rattan path', () => {
   X.doStartOver(); click({ 'data-door': 'mat' });
-  const rat = matKey('Rattan', 'Sunday Mahjong'), dec = setIx('December 1994'), cyp = ['Cypress', 'Willow', 'Gatsby'].map(setIx).find(i => i >= 0) ?? -1;  // Nov 6: Cypress (Mahjong Row) parked -> next visible album set
+  const rat = matKey('Rattan', 'Sunday Mahjong'), dec = setIx('December 1994'), cyp = ['Cypress', 'Willow', 'Gatsby'].map(n => setIx(n)).find(i => i >= 0) ?? -1;  // Nov 6: Cypress (Mahjong Row) parked -> next visible album set
   if (!rat || dec < 0 || cyp < 0) { fail('Rattan path: Rattan / December 1994 / Cypress|Willow|Gatsby not found'); return; }
   click({ 'data-dmat': rat });
   click({ 'data-dset': String(dec) });
