@@ -1,0 +1,92 @@
+{
+ "by": "claude (standing authority: broken link fixes)",
+ "date": "2026-11-06",
+ "about": "FYM dead shop links (FYM 1.16). Applied by builder/fym_fix_nov06/deadlinks116.py: u = '' (no shop button; share text says 'Link coming soon'), old link kept in u_dead, NOT labelled Retired (Mahjong by SI precedent: Retired only when confirmed gone; an item already rt keeps it). Gate [162] (builder/fym_fix_nov06/linkcheck.py) fails on any visible FYM shop link that answers 404/410. Remove an entry when the brand relists the item (and restore u from u_dead). Mats mirror config/mat-gallery-link-fixes.json; the extra 6 were found by the [162] check.",
+ "items": {
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-brooks-brothers-oxford-classic": {
+   "g": "mats",
+   "name": "Bespoke x Brooks Brothers Oxford Classic (Side A)",
+   "why": "Nov 6 search-index check (config/mat-gallery-link-fixes.json)"
+  },
+  "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-brooks-brothers-oxford-classic#side-b": {
+   "g": "mats",
+   "name": "Bespoke x Brooks Brothers Oxford Classic (Side B)",
+   "why": "same listing as side A"
+  },
+  "www.ohmymahjong.com/astor-mat-w-tube": {
+   "g": "mats",
+   "name": "OMM Astor",
+   "why": "Nov 6 search-index check"
+  },
+  "www.ohmymahjong.com/darjeeling-mat-w-tube": {
+   "g": "mats",
+   "name": "OMM Darjeeling",
+   "why": "Nov 6 search-index check"
+  },
+  "www.ohmymahjong.com/sugarplum-mat": {
+   "g": "mats",
+   "name": "OMM Sugarplum",
+   "why": "Nov 6 search-index check"
+  },
+  "www.ohmymahjong.com/vanderbilt-mat-w-tube": {
+   "g": "mats",
+   "name": "OMM Vanderbilt",
+   "why": "Nov 6 search-index check"
+  },
+  "www.ohmymahjong.com/year-of-the-horse-mat": {
+   "g": "mats",
+   "name": "OMM Year of the Horse",
+   "why": "Nov 6 search-index check"
+  },
+  "www.ohmymahjong.com/vivara-mat-w-tube": {
+   "g": "mats",
+   "name": "OMM Vivara",
+   "why": "Nov 6 build_v6 link check"
+  },
+  "tigredetartan.com/mahjong-mat-nantucket-basket-rules-edition-round": {
+   "g": "mats",
+   "name": "TdT Nantucket Basket, Round",
+   "why": "Nov 6 search-index check"
+  },
+  "letsbebesties.com/dots-and-stripes-travel-mahjong-mat-mahj-game-tabletop-20-9-inch": {
+   "g": "mats",
+   "name": "LBB Blue Dots and Stripes",
+   "why": "Nov 6 search-index check"
+  },
+  "letsbebesties.com/surfs-up-mahjong-mat": {
+   "g": "mats",
+   "name": "LBB Surfs Up",
+   "why": "Nov 6 search-index check"
+  },
+  "www.yolomahjong.com/christmas-cat-square-mahjong-mat-ship-rolled-up": {
+   "g": "mats",
+   "name": "YOLO Christmas Cat",
+   "why": "Nov 6 search-index check"
+  },
+  "www.ohmymahjong.com/cognac-mat": {
+   "g": "mats",
+   "name": "OMM Cognac",
+   "why": "FYM 1.16 link check [162] Nov 6: 404, not in products.json (only a Cognac folio + tile bag)"
+  },
+  "www.ohmymahjong.com/liberty-mat-w-tube": {
+   "g": "mats",
+   "name": "OMM Liberty (already Retired in FYM)",
+   "why": "FYM 1.16 link check [162] Nov 6: 404, not in products.json; keeps its existing rt flag"
+  },
+  "alb2:my-fair-mahjong-confetti-lemon-lime": {
+   "g": "mats",
+   "name": "MFM Confetti Lemon Lime",
+   "why": "FYM 1.16 link check [162] Nov 6: the link myfairmahjong.com/tiffany817 (old referral path) 404s"
+  },
+  "www.ohmymahjong.com/emerald-mahjong-tile-set": {
+   "g": "tiles",
+   "name": "OMM Emerald tile set",
+   "why": "FYM 1.16 link check [162] Nov 6: 404, not in ohmymahjong.com products.json (246 products)"
+  },
+  "www.ohmymahjong.com/pearlescent-tile-set": {
+   "g": "tiles",
+   "name": "OMM Pearlescent tile set",
+   "why": "FYM 1.16 link check [162] Nov 6: 404, not in ohmymahjong.com products.json"
+  }
+ }
+}

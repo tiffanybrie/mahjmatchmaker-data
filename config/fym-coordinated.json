@@ -430,5 +430,15 @@
  ],
  "juniper": [
   "www.ohmymahjong.com/lotus-cove-mat-in-tube"
- ]
+ ],
+ "_top3": {
+  "juniper": {
+   "lead": [
+    "mahjtilehaus.com/palm-royale-mat",
+    "www.bespokemahjong.com/garden-glow-mat-emerald-green"
+   ],
+   "why": "Tiffany Nov 6 1:10am + Juniper round-3 notes: Lotus Cove (OMM's pair) is not Juniper's top match. Deck order Palm Royale (Mahj Tile Haus, her #1: pink centre = max contrast), Garden Glow Emerald Green, then Lotus Cove, then the rest."
+  }
+ },
+ "_top3_about": "Tiffany Nov 6: a coordinated/pair mat is never automatically #1; it leads only when it truly is the top match. A set listed in _top3 keeps its coordinated mats inside the top 3 of s.cr and s.rank, after its 'lead' mats (in that order). Applied by builder/fym_fix_oct25/v92_coordinated.py; gate [57] checks top 3 + lead order for these sets, #1 for the rest."
 }

@@ -78,6 +78,10 @@ sys.path.insert(0, REPO + 'builder')
 from fym_apply_locks import diffs
 
 B = sys.argv[1]
+# Nov 6 2026 (FYM 1.16): brands Tiffany REMOVED (config/code-truth.json removed_brands, e.g. Mahjong Row & Co.) are parked hidden in FYM
+# (builder/fym_fix_nov06/mr_out.py, gate [160]); checks that expect their items visible ([8b] leads, [11] her picks, [92], [114]) skip them.
+try: _RBN = set(json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'code-truth.json'))).get('removed_brands', {}))
+except Exception: _RBN = set()
 h = open(os.path.join(B, 'index.html')).read()
 i = h.find('const D=') + 8
 D, end = json.JSONDecoder().raw_decode(h, i)
@@ -270,7 +274,7 @@ for s in D['sets']:
     for x in s['m']:
         o = M.get(x[0])
         if o is None: F.append(f"[11] {s['slug']}: m references unknown mat {x[0]}"); continue
-        if (o.get('hid') or x[0] in RMK or o.get('bn') in RMB) and (s['slug'], x[0]) not in MOK:
+        if (o.get('hid') or x[0] in RMK or o.get('bn') in RMB) and (s['slug'], x[0]) not in MOK and not (o.get('bn') in _RBN and o.get('parked')):  # removed brand: her pick parked (hidden, kept for undo)
             F.append(f"[11] {s['slug']}: Tiffany's-match list has hidden/removed mat {o['n']} ({o.get('bn')}) {x[0]}")
 # 12. no Mahjong Studios mats (FYM + staged gallery); removed gallery rows stay out
 for k, o in M.items():
@@ -702,13 +706,19 @@ from fym_rack_images import problems as _rack_img_problems
 _rp = _rack_img_problems(B)
 if _rp: F.append(f"[56] {len(_rp)} rack photos not reviewed / rejected cutout: " + '; '.join(_rp[:6]))
 # [57] Oct 25 (Tiffany 20:24): a brand's coordinated mats come first for its tile set (config/fym-coordinated.json)
-_co = {k: v for k, v in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-coordinated.json'))).items() if not k.startswith('_')}
+#      Nov 6 (Tiffany): a pair mat is never automatically #1. A set in the config's _top3 puts its 'lead' mats first (in order) and
+#      its coordinated mats right after them, all inside the top 3 (Juniper: Palm Royale, Garden Glow, Lotus Cove).
+_co0 = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-coordinated.json')))
+_co = {k: v for k, v in _co0.items() if not k.startswith('_')}; _top57 = _co0.get('_top3', {})
 for _s in D['sets']:
     if _s['slug'] in _co:
         _want = [m for m in _co[_s['slug']] if m in D['mats'] and not D['mats'][m].get('hid')]
+        _lead57 = [m for m in _top57.get(_s['slug'], {}).get('lead', []) if m in D['mats'] and not D['mats'][m].get('hid')]
+        if _s['slug'] in _top57: _want = _lead57 + [m for m in _want if m not in _lead57]
         for _f in ('cr', 'rank'):
             _lst57 = [D['order'][x] for x in _s.get(_f, []) if D['mats'][D['order'][x]].get('side') != 'B' or D['order'][x] in _want]  # Oct 26: Bespoke side B sits next to its twin (v95_bespoke2side)
-            if _lst57[:len(_want)] != _want: F.append(f"[57] {_s['name']}: coordinated mats are not first in {_f}")
+            if _s['slug'] in _top57 and len(_want) > 3: F.append(f"[57] {_s['name']}: _top3 lead + coordinated mats do not fit in the top 3")
+            if _lst57[:len(_want)] != _want: F.append(f"[57] {_s['name']}: coordinated mats are not {'in the top 3 after the lead mats' if _s['slug'] in _top57 else 'first'} in {_f}")
 # [58] Oct 25 (Tiffany 21:43; + Classic/East Meets West Tortoise Oct 26 9:24am, v94_bambirdtortoise.py): Bam Bird tile sets use the uniform faces|backs split photo (config/fym-bambird-splits-oct25.json)
 for _k in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'fym-bambird-splits-oct25.json')))['splits']:
     if _k in D['tiles'] and not str(D['tiles'][_k].get('full', '')).startswith('t92/'): F.append(f"[58] Bam Bird tile {_k} is not using its split photo")
@@ -1460,7 +1470,7 @@ try:
     for _kind in ('mats', 'racks', 'tiles'):
         for _o in D[_kind].values():
             if not _o.get('hid'): _vis[_o.get('bn')] = _vis.get(_o.get('bn'), 0) + 1
-    _zero = [c['brand'] for c in _cov if not c.get('exempt') and not sum(_vis.get(n, 0) for n in c.get('fym_names', [c['brand']]))]
+    _zero = [c['brand'] for c in _cov if not c.get('exempt') and c['brand'] not in _RBN and not sum(_vis.get(n, 0) for n in c.get('fym_names', [c['brand']]))]
     if _zero: F.append(f"[114] partner brands with 0 visible items in FYM (bring their catalog in, or exempt with a reason): {_zero}")
     _inb = open(os.path.join(REPO, 'docs/MATCH-INBOX.md')).read().splitlines()
     _open = [l[:90] for l in _inb if 'NEW PARTNER' in l and not re.search(r'\b(DONE|CLOSED)\b', l)]
@@ -1886,6 +1896,17 @@ try:
     _t161 = [k for k, v in D['tiles'].items() if k.startswith('mahjongco.com/') and 'kaleidoscope' in k and v.get('hid') and not v.get('soon')]
     if _t161: F.append(f"[161] Mahjong Co. Kaleidoscope tiles were hidden (they stay): {_t161}")
 except Exception as _e: F.append(f"[161] Mahjong Co. mat check did not run: {_e}")
+# [162] Nov 6 2026 (FYM 1.16; numbered [162] because [161] = Mahjong Co. mats; 11 shop links found dead only because the Mat Gallery build happened to check them): curl-check EVERY
+#       visible FYM shop link (mats / racks / tiles; an auto-apply link at its landing page) and FAIL on 404 / 410. Skips ShopMy, Etsy
+#       and Amazon (they block bots). Cached in config/fym-link-check-cache.json (ok 7 days, dead 12 h; 403/429/5xx/timeouts re-tried,
+#       warned only). Fix: config/fym-dead-links.json + builder/fym_fix_nov06/deadlinks116.py (no shop button, NOT 'Retired').
+try:
+    sys.path.insert(0, REPO + 'builder/fym_fix_nov06')
+    import linkcheck as _LC161
+    _d161, _u161, _n161 = _LC161.check(D)
+    if _d161: F.append(f"[162] {len(_d161)} visible shop links are dead (404/410; add them to config/fym-dead-links.json): " + '; '.join(f'{x[3]} | {x[2]} ({x[5]})' for x in _d161[:10]))
+    if _u161: print(f"FYM GATE WARNING [162]: {len(_u161)} shop links did not answer cleanly (re-checked next run): " + '; '.join(f'{x[3]} | {x[2]} ({x[5]})' for x in _u161[:8]))
+except Exception as _e: F.append(f"[162] shop-link check did not run: {_e}")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))

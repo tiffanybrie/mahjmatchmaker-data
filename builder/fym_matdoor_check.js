@@ -71,7 +71,7 @@ function toggleChecks(label) {
 }
 const run = (label, fn) => { try { fn(); } catch (e) { fail(`${label}: threw ${e.message}`); } };
 
-// ---------- scenario 1: Rattan -> December 1994 -> change tiles to Cypress -> See other mats -> swipe -> picks -> Back
+// ---------- scenario 1: Rattan -> December 1994 -> change tiles to Willow (was Cypress until Mahjong Row was removed Nov 6) -> See other mats -> swipe -> picks -> Back
 run('Rattan path', () => {
   X.doStartOver(); click({ 'data-door': 'mat' });
   const rat = matKey('Rattan', 'Sunday Mahjong'), dec = setIx('December 1994'), cyp = ['Cypress', 'Willow', 'Gatsby'].map(n => setIx(n)).find(i => i >= 0) ?? -1;  // Nov 6: Cypress (Mahjong Row) parked -> next visible album set
@@ -84,8 +84,8 @@ run('Rattan path', () => {
   if (!/data-dkeept/.test(t)) fail('Rattan: Change tiles view has no "Keep <set>" way back');
   if (!/data-dset=/.test(t)) fail('Rattan: Change tiles view shows no tile sets');
   click({ 'data-dset': String(cyp) });
-  if (S.dmat !== rat || S.set !== cyp) fail(`Rattan: after changing tiles the pairing is not Rattan + Cypress (mat ${S.dmat}, set ${S.set})`);
-  lockedChecks('Rattan + Cypress');
+  if (S.dmat !== rat || S.set !== cyp) fail(`Rattan: after changing tiles the pairing is not Rattan + Willow (mat ${S.dmat}, set ${S.set})`);
+  lockedChecks('Rattan + Willow');
   press('s-mats', b => 'data-ddeck' in b.a, 'Rattan: See other mats');
   if (X.matLocked() || S.peek) fail('Rattan: "See other mats" still shows a locked card');
   if (!S.liked.includes(rat)) fail('Rattan: her mat is not kept in the shortlist when the deck opens');
@@ -110,7 +110,7 @@ run('Change mat', () => {
   if (!/data-dmat=/.test(H('s-tiles'))) fail('Change mat: picker shows no mats');
   click({ 'data-dmat': jade });
   if (S.set !== cyp || S.dmat !== jade) fail('Change mat: picking a new mat did not keep the tiles');
-  lockedChecks('Jade + Cypress (after Change mat)');
+  lockedChecks('Jade + Willow (after Change mat)');
   press('s-tiles', b => 'data-dswap' in b.a, 'Change mat 2'); click({ 'data-dkeep': '' });
   if (S.dmat !== jade || !X.matLocked()) fail('Change mat: "Keep" did not restore the pairing');
 });

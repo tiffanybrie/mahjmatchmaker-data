@@ -881,8 +881,8 @@
 "price": 180.0
 },
 "m:brittmillsdesign.com/merrywood-neoprene-mahjong-mat-arriving-late-october": {
-"in": true,
-"how": "preorder (store says unavailable, link says arriving / pre-order)"
+"in": false,
+"how": "brittmillsdesign.com /products/<handle>.js available=false, Nov 6 (v116)"
 },
 "m:brittmillsdesign.com/mia-leatherette-mahjong-mat": {
 "in": true,
@@ -909,8 +909,8 @@
 "price": 180.0
 },
 "m:brittmillsdesign.com/nutcracker-neoprene-mahjong-mat-arriving-late-october": {
-"in": true,
-"how": "preorder (store says unavailable, link says arriving / pre-order)"
+"in": false,
+"how": "brittmillsdesign.com /products/<handle>.js available=false, Nov 6 (v116)"
 },
 "m:brittmillsdesign.com/peacock-garden-leatherette-mahjong-mat": {
 "in": true,
@@ -8970,6 +8970,11 @@
 "in": false,
 "how": "v115 add (brand store Nov 4-5)",
 "price": 285.0
+},
+"r:mahjpit.co/white-beech-wood-mahjong-racks-with-magnetic-pushers-custom-storage-bag-1": {
+"in": true,
+"how": "v116 add (mahjpit.co products.json Nov 6)",
+"price": 145.0
 }
 }
 }

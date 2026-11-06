@@ -22,6 +22,16 @@ n0 = h.count('"Mahjong Row & Co.", ') + h.count(', "Mahjong Row & Co."')
 h = re.sub(r'(const BLORD=\[[^\]]*?)"Mahjong Row & Co\.", ', r'\1', h, count=1)
 h = re.sub(r"('Mahjong Row & Co\.',)(?=[^;]*'My Fair Mahjong')", '', h, count=1)
 open(p, 'w').write(h)
+# Locks (FYM 1.16 build): her Nov 6 1:33pm scope says Find Your Mat-ch loses ALL of Mahjong Row, so the locked 'hid' of their items
+# follows her call (otherwise fym_apply_locks.py would un-hide 9 locked mats). Only hid / parked change; everything else stays locked.
+LKP = R + 'builder/fym_flags/locks.json'; LK = json.load(open(LKP)); nl = 0
+for sec in ('mats', 'tiles', 'racks', 'sets'):
+    for k, v in LK.get(sec, {}).items():
+        mine = (v.get('bn') == BRAND or k.startswith(DOM)) if sec != 'sets' else any(s.get('slug') == k and s.get('maker') == BRAND for s in D['sets'])
+        if mine and 'hid' in v and not v['hid']: v['hid'] = True; nl += 1
+if nl:
+    LK['_changes'].append('2026-11-06 v116 Mahjong Row & Co. OUT of FYM (Tiffany Nov 6 1:19pm + 1:33pm scope, docs/ANSWERS.md): locked hid -> true for %d items (builder/fym_fix_nov06/mr_out.py)' % nl)
+    json.dump(LK, open(LKP, 'w'), indent=1, ensure_ascii=False)
 A = R + 'archive/mahjong-row-parked-2026-11-06/'; os.makedirs(A, exist_ok=True)
 json.dump(hid, open(A + 'fym-hidden.json', 'w'), indent=1)
 print('Mahjong Row OUT of FYM:', {k: len(v) for k, v in hid.items()})

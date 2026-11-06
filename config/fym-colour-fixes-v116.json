@@ -1,0 +1,1763 @@
+{
+ "about": "FYM 1.16 colour fixes, carried over from the Mat Gallery v6 work (Nov 6 QA round 2; builder/fym_fix_nov06/gallery_sync.py).",
+ "build": "b116",
+ "changed": {
+  "mahjmood.com/spring-fling-mat": {
+   "name": "Spring Fling Mat",
+   "brand": "Mahj Mood",
+   "hid": false,
+   "from": [
+    "yellow"
+   ],
+   "to": [
+    "neutral"
+   ],
+   "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow); nothing left: neutral"
+  },
+  "mahjongstudios.com/mahjong-mat?v=50645970616557": {
+   "name": "Looking Glass",
+   "brand": "Mahjong Studios",
+   "hid": true,
+   "from": [
+    "pink",
+    "yellow",
+    "orange"
+   ],
+   "to": [
+    "pink"
+   ],
+   "why": "orange dropped: saturated orange 0.0%, peach 4.3% (cream/beige read as orange); yellow dropped: saturated yellow 0.1% (cream read as yellow)"
+  },
+  "mahjandmoon.com/pastel-tie-dye-american-mahjong-mat": {
+   "name": "Pastel Tie Dye American",
+   "brand": "Mahj & Moon",
+   "hid": false,
+   "from": [
+    "yellow"
+   ],
+   "to": [
+    "yellow",
+    "pink",
+    "green"
+   ],
+   "why": "by-eye: pastel yellow / pink / green tie-dye (QA Nov 6: pastel, not brights)"
+  },
+  "mahjandmoon.com/wildflower-american-mahjong-mat": {
+   "name": "Wildflower American",
+   "brand": "Mahj & Moon",
+   "hid": false,
+   "from": [
+    "yellow"
+   ],
+   "to": [
+    "neutral"
+   ],
+   "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow); nothing left: neutral"
+  },
+  "mahjandmoon.com/the-sun-tarot-mahjong-mat": {
+   "name": "The Sun Tarot",
+   "brand": "Mahj & Moon",
+   "hid": false,
+   "from": [
+    "yellow",
+    "neutral",
+    "orange",
+    "dark"
+   ],
+   "to": [
+    "neutral",
+    "orange",
+    "dark"
+   ],
+   "why": "yellow dropped: saturated yellow 0.2% (cream read as yellow)"
+  },
+  "mahjandmoon.com/coastal-bloom-mahjong-mat": {
+   "name": "Coastal Bloom",
+   "brand": "Mahj & Moon",
+   "hid": false,
+   "from": [
+    "pink",
+    "blue",
+    "yellow"
+   ],
+   "to": [
+    "pink",
+    "blue"
+   ],
+   "why": "yellow dropped: saturated yellow 0.2% (cream read as yellow)"
+  },
+  "mahjandmoon.com/celestial-sun-mahjong-mat-boho-sunshine-mahjong-mat-in-peach-yellow": {
+   "name": "Celestial Sun",
+   "brand": "Mahj & Moon",
+   "hid": false,
+   "from": [
+    "yellow",
+    "neutral",
+    "orange"
+   ],
+   "to": [
+    "neutral",
+    "orange"
+   ],
+   "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow)"
+  },
+  "luxemahjong.com/bougie-bee-mahjong-mat": {
+   "name": "Bougie Bee",
+   "brand": "Luxe Mahjong",
+   "hid": true,
+   "from": [
+    "dark",
+    "neutral",
+    "yellow"
+   ],
+   "to": [
+    "dark",
+    "neutral"
+   ],
+   "why": "yellow dropped: saturated yellow 0.1% (cream read as yellow)"
+  },
+  "www.wrenmats.com/watercolor-floral-wz34m-m4836": {
+   "name": "Sitting Sea Side",
+   "brand": "Wren Mats",
+   "hid": false,
+   "from": [
+    "neutral",
+    "yellow"
+   ],
+   "to": [
+    "neutral"
+   ],
+   "why": "yellow dropped: saturated yellow 0.1% (cream read as yellow)"
+  },
+  "www.etsy.com/listing/4537282808/the-caroline-preppy-mahjong-mat": {
+   "name": "Caroline (Preppy)",
+   "brand": "Betty June & Jeannette",
+   "hid": false,
+   "from": [
+    "pink",
+    "orange",
+    "blue"
+   ],
+   "to": [
+    "pink",
+    "blue"
+   ],
+   "why": "orange dropped: saturated orange 3.5%, peach 8.4% (cream/beige read as orange)"
+  },
+  "mahjandvine.com/citrus-grove": {
+   "name": "Chinoiserie Citrus Grove",
+   "brand": "Mahj & Vine",
+   "hid": false,
+   "from": [
+    "blue",
+    "pink",
+    "orange",
+    "green"
+   ],
+   "to": [
+    "blue",
+    "pink",
+    "green"
+   ],
+   "why": "orange dropped: saturated orange 4.0%, peach 1.9% (cream/beige read as orange)"
+  },
+  "splashofcolorco.com/falling-for-monkey-business-nordic-fall-mahjong-mat": {
+   "name": "Falling For Monkey Business Nordic Fall",
+   "brand": "Splash of Color",
+   "hid": true,
+   "from": [
+    "orange",
+    "red",
+    "green",
+    "yellow"
+   ],
+   "to": [
+    "orange",
+    "red",
+    "green"
+   ],
+   "why": "yellow dropped: saturated yellow 0.4% (cream read as yellow)"
+  },
+  "splashofcolorco.com/william-morris-inspired-round-mahjong-mat": {
+   "name": "William Morris Inspired Round",
+   "brand": "Splash of Color",
+   "hid": true,
+   "from": [
+    "dark",
+    "green",
+    "yellow"
+   ],
+   "to": [
+    "dark",
+    "green"
+   ],
+   "why": "yellow dropped: saturated yellow 0.1% (cream read as yellow)"
+  },
+  "splashofcolorco.com/mediterranean-olive-old-world-tuscan-mahjong-mat": {
+   "name": "Mediterranean Olive Old World Tuscan",
+   "brand": "Splash of Color",
+   "hid": true,
+   "from": [
+    "green",
+    "blue",
+    "yellow"
+   ],
+   "to": [
+    "green",
+    "blue"
+   ],
+   "why": "yellow dropped: saturated yellow 0.8% (cream read as yellow)"
+  },
+  "splashofcolorco.com/under-the-tuscan-sun-mahjong-mat": {
+   "name": "Under The Tuscan Sun",
+   "brand": "Splash of Color",
+   "hid": true,
+   "from": [
+    "yellow",
+    "blue",
+    "green"
+   ],
+   "to": [
+    "blue",
+    "green"
+   ],
+   "why": "yellow dropped: saturated yellow 0.1% (cream read as yellow)"
+  },
+  "faitamainstudio.com/le-madeline": {
+   "name": "Le Madeline",
+   "brand": "Fait à Main",
+   "hid": false,
+   "from": [
+    "yellow",
+    "pink"
+   ],
+   "to": [
+    "pink"
+   ],
+   "why": "yellow dropped: saturated yellow 0.1% (cream read as yellow)"
+  },
+  "faitamainstudio.com/le-drip-mat-summer-colors": {
+   "name": "Le Drip Summer Colors",
+   "brand": "Fait à Main",
+   "hid": false,
+   "from": [
+    "pink",
+    "orange",
+    "yellow",
+    "neutral"
+   ],
+   "to": [
+    "pink",
+    "orange",
+    "neutral"
+   ],
+   "why": "yellow dropped: saturated yellow 3.9% (cream read as yellow)"
+  },
+  "www.etsy.com/listing/4529665568/mahjong-mat-non-slip-tabletop-mat-herbal": {
+   "name": "Herbal Drawing Butterfly Border",
+   "brand": "Luna EK Studio",
+   "hid": false,
+   "from": [
+    "dark",
+    "orange",
+    "neutral"
+   ],
+   "to": [
+    "dark",
+    "neutral"
+   ],
+   "why": "orange dropped: saturated orange 1.0%, peach 1.8% (cream/beige read as orange)"
+  },
+  "www.etsy.com/listing/4559186456/mahjong-mat-non-slip-tabletop-mat-home": {
+   "name": "Fern Berry Wreath",
+   "brand": "Luna EK Studio",
+   "hid": false,
+   "from": [
+    "dark",
+    "orange",
+    "yellow",
+    "neutral"
+   ],
+   "to": [
+    "dark",
+    "neutral"
+   ],
+   "why": "orange dropped: saturated orange 0.8%, peach 2.5% (cream/beige read as orange); yellow dropped: saturated yellow 0.0% (cream read as yellow)"
+  },
+  "www.etsy.com/listing/4546673909/mahjong-mat-non-slip-tabletop-mat-home": {
+   "name": "Swallow Peony Dance",
+   "brand": "Luna EK Studio",
+   "hid": false,
+   "from": [
+    "neutral",
+    "dark"
+   ],
+   "to": [
+    "green",
+    "neutral"
+   ],
+   "why": "by-eye: sage green ground, cream florals"
+  },
+  "www.etsy.com/listing/4546686178/mahjong-mat-non-slip-tabletop-mat-home": {
+   "name": "Meadow Butterfly Border",
+   "brand": "Luna EK Studio",
+   "hid": false,
+   "from": [
+    "dark",
+    "neutral",
+    "orange",
+    "yellow"
+   ],
+   "to": [
+    "dark",
+    "neutral"
+   ],
+   "why": "orange dropped: saturated orange 0.8%, peach 2.0% (cream/beige read as orange); yellow dropped: saturated yellow 0.5% (cream read as yellow)"
+  },
+  "www.etsy.com/listing/4574925306/mahjong-mat-non-slip-tabletop-mat-home": {
+   "name": "Japanese Sakura Scene",
+   "brand": "Luna EK Studio",
+   "hid": false,
+   "from": [
+    "dark",
+    "orange",
+    "neutral"
+   ],
+   "to": [
+    "neutral",
+    "red",
+    "blue",
+    "orange"
+   ],
+   "why": "by-eye: cream centre, red maples, navy waves, orange accents"
+  },
+  "www.etsy.com/listing/4547276996/mahjong-mat-non-slip-tabletop-mat-home": {
+   "name": "Hummingbird Floral Frame (Blue)",
+   "brand": "Luna EK Studio",
+   "hid": false,
+   "from": [
+    "neutral",
+    "orange",
+    "dark"
+   ],
+   "to": [
+    "neutral",
+    "dark"
+   ],
+   "why": "orange dropped: saturated orange 0.1%, peach 1.8% (cream/beige read as orange)"
+  }
+ },
+ "skipped": {
+  "locked": [
+   {
+    "key": "www.bespokemahjong.com/year-of-the-dragon-mat-white-copy",
+    "name": "YOTD Raspberry",
+    "brand": "Bespoke Mahjong",
+    "now": [
+     "purple"
+    ],
+    "rule would give": [
+     "pink",
+     "purple"
+    ],
+    "why": "pink added: magenta 50.1% (magenta read as purple only)"
+   },
+   {
+    "key": "www.ohmymahjong.com/anastasia-mat-in-tube",
+    "name": "Anastasia",
+    "brand": "Oh My Mahjong",
+    "now": [
+     "pink",
+     "blue",
+     "yellow"
+    ],
+    "rule would give": [
+     "pink",
+     "blue"
+    ],
+    "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow)"
+   },
+   {
+    "key": "www.ohmymahjong.com/darjeeling-mat-w-tube",
+    "name": "Darjeeling",
+    "brand": "Oh My Mahjong",
+    "now": [
+     "blue",
+     "green",
+     "red",
+     "orange",
+     "purple",
+     "yellow",
+     "dark"
+    ],
+    "rule would give": [
+     "blue",
+     "green",
+     "red",
+     "purple",
+     "dark"
+    ],
+    "why": "orange dropped: saturated orange 0.4%, peach 0.8% (cream/beige read as orange); yellow dropped: saturated yellow 0.2% (cream read as yellow)"
+   },
+   {
+    "key": "www.ohmymahjong.com/isla-mat-in-tube",
+    "name": "Isla",
+    "brand": "Oh My Mahjong",
+    "now": [
+     "blue",
+     "green",
+     "yellow"
+    ],
+    "rule would give": [
+     "blue",
+     "green"
+    ],
+    "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow)"
+   },
+   {
+    "key": "www.ohmymahjong.com/astor-mat-w-tube",
+    "name": "Astor",
+    "brand": "Oh My Mahjong",
+    "now": [
+     "blue",
+     "purple",
+     "dark",
+     "yellow",
+     "orange"
+    ],
+    "rule would give": [
+     "blue",
+     "purple",
+     "dark"
+    ],
+    "why": "orange dropped: saturated orange 0.5%, peach 1.0% (cream/beige read as orange); yellow dropped: saturated yellow 0.0% (cream read as yellow)"
+   },
+   {
+    "key": "brittmillsdesign.com/knox-neoprene-mahjong-mat",
+    "name": "Knox",
+    "brand": "Britt Mills",
+    "now": [
+     "green",
+     "yellow",
+     "dark"
+    ],
+    "rule would give": [
+     "green",
+     "dark"
+    ],
+    "why": "yellow dropped: saturated yellow 0.3% (cream read as yellow)"
+   },
+   {
+    "key": "www.ohmymahjong.com/penelope-mat-in-tube",
+    "name": "Penelope",
+    "brand": "Oh My Mahjong",
+    "now": [
+     "red",
+     "blue"
+    ],
+    "rule would give": [
+     "red",
+     "pink",
+     "blue"
+    ],
+    "why": "pink added: magenta 15.8% (magenta read as purple only)"
+   },
+   {
+    "key": "www.middleandmainmahjong.com/georgia-mat",
+    "name": "Peaches 'n Cream",
+    "brand": "Middle & Main Mahjong",
+    "now": [
+     "orange"
+    ],
+    "rule would give": [
+     "neutral"
+    ],
+    "why": "orange dropped: saturated orange 0.0%, peach 0.8% (cream/beige read as orange); nothing left: neutral"
+   },
+   {
+    "key": "mahjtilehaus.com/white-lotus-mat",
+    "name": "White Lotus",
+    "brand": "Mahj Tile Haus",
+    "now": [
+     "green",
+     "dark",
+     "yellow"
+    ],
+    "rule would give": [
+     "green",
+     "dark"
+    ],
+    "why": "yellow dropped: saturated yellow 3.5% (cream read as yellow)"
+   },
+   {
+    "key": "brittmillsdesign.com/soiree-scalloped-neoprene-mahjong-mat",
+    "name": "Soirée Scalloped Neoprene",
+    "brand": "Britt Mills",
+    "now": [
+     "blue"
+    ],
+    "rule would give": [
+     "pink",
+     "orange",
+     "blue"
+    ],
+    "why": "by-eye: peach + pink pattern with a blue scalloped border"
+   },
+   {
+    "key": "brittmillsdesign.com/flourish-neoprene-mahjong-mat",
+    "name": "Flourish Neoprene",
+    "brand": "Britt Mills",
+    "now": [
+     "dark"
+    ],
+    "rule would give": [
+     "purple",
+     "pink",
+     "dark"
+    ],
+    "why": "by-eye: magenta/purple florals on a dark ground, slate centre"
+   },
+   {
+    "key": "mahjandvine.com/porcelain-bloom-copy",
+    "name": "Chinoiserie Elephant",
+    "brand": "Mahj & Vine",
+    "now": [
+     "orange",
+     "blue",
+     "pink"
+    ],
+    "rule would give": [
+     "blue",
+     "pink"
+    ],
+    "why": "orange dropped: saturated orange 0.0%, peach 0.8% (cream/beige read as orange)"
+   },
+   {
+    "key": "missmahjong.com/deep-green-garden-party-mahjong-playing-mat",
+    "name": "Deep Green Garden Party",
+    "brand": "Miss Mahjong",
+    "now": [
+     "green",
+     "purple",
+     "yellow",
+     "dark",
+     "neutral"
+    ],
+    "rule would give": [
+     "green",
+     "purple",
+     "dark",
+     "neutral"
+    ],
+    "why": "yellow dropped: saturated yellow 0.3% (cream read as yellow)"
+   },
+   {
+    "key": "myfairmahjong.com/mat-garden-party-mulberry",
+    "name": "Garden Party – Mulberry",
+    "brand": "My Fair Mahjong",
+    "now": [
+     "purple"
+    ],
+    "rule would give": [
+     "pink",
+     "purple"
+    ],
+    "why": "pink added: magenta 49.2% (magenta read as purple only)"
+   },
+   {
+    "key": "myfairmahjong.com/mat-tropical-palm",
+    "name": "Tropical Palm",
+    "brand": "My Fair Mahjong",
+    "now": [
+     "pink",
+     "orange",
+     "yellow"
+    ],
+    "rule would give": [
+     "pink",
+     "orange"
+    ],
+    "why": "yellow dropped: saturated yellow 0.2% (cream read as yellow)"
+   },
+   {
+    "key": "shop.andersruff.com/midnight-peacock-mahjong-mat",
+    "name": "Midnight Peacock",
+    "brand": "Anders Ruff",
+    "now": [
+     "green",
+     "dark",
+     "yellow"
+    ],
+    "rule would give": [
+     "green",
+     "dark"
+    ],
+    "why": "yellow dropped: saturated yellow 2.2% (cream read as yellow)"
+   },
+   {
+    "key": "shop.andersruff.com/palm-beach-pink-cabana-blue-mahjong-mat",
+    "name": "Palm Beach Pink Cabana Blue",
+    "brand": "Anders Ruff",
+    "now": [
+     "blue"
+    ],
+    "rule would give": [
+     "blue",
+     "pink"
+    ],
+    "why": "pink added: magenta 26.1% (magenta read as purple only)"
+   },
+   {
+    "key": "www.bespokemahjong.com/copy-of-moss-green-spring-garden-game-mat",
+    "name": "Preppy Pink Garden Mat",
+    "brand": "Bespoke Mahjong",
+    "now": [
+     "pink",
+     "yellow"
+    ],
+    "rule would give": [
+     "pink"
+    ],
+    "why": "yellow dropped: saturated yellow 3.0% (cream read as yellow)"
+   },
+   {
+    "key": "www.viroramahjong.com/limoncea-with-flower",
+    "name": "Limoncea",
+    "brand": "Virora Mahjong",
+    "now": [
+     "yellow"
+    ],
+    "rule would give": [
+     "neutral"
+    ],
+    "why": "yellow dropped: saturated yellow 0.6% (cream read as yellow); nothing left: neutral"
+   },
+   {
+    "key": "alb:amara:Imperial",
+    "name": "Imperial (retired)",
+    "brand": "Oh My Mahjong",
+    "now": [
+     "neutral",
+     "yellow",
+     "green"
+    ],
+    "rule would give": [
+     "neutral",
+     "green"
+    ],
+    "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow)"
+   },
+   {
+    "key": "alb:amara:Citrus Songbird",
+    "name": "Citrus Songbird (retired)",
+    "brand": "Oh My Mahjong",
+    "now": [
+     "green",
+     "pink",
+     "yellow"
+    ],
+    "rule would give": [
+     "green",
+     "pink"
+    ],
+    "why": "yellow dropped: saturated yellow 2.4% (cream read as yellow)"
+   },
+   {
+    "key": "alb:limoncello:Garden Party",
+    "name": "Garden Party (retired)",
+    "brand": "Oh My Mahjong",
+    "now": [
+     "green",
+     "pink",
+     "yellow",
+     "purple"
+    ],
+    "rule would give": [
+     "green",
+     "pink",
+     "purple"
+    ],
+    "why": "yellow dropped: saturated yellow 2.9% (cream read as yellow)"
+   },
+   {
+    "key": "sundaymahjong.com/sunday-premium-mahjong-mat",
+    "name": "Sunday Premium",
+    "brand": "Sunday Mahjong",
+    "now": [
+     "green",
+     "yellow"
+    ],
+    "rule would give": [
+     "green"
+    ],
+    "why": "yellow dropped: saturated yellow 1.8% (cream read as yellow)"
+   },
+   {
+    "key": "sundaymahjong.com/spring-blooms-premium-mahjong-mat",
+    "name": "Spring Blooms Premium",
+    "brand": "Sunday Mahjong",
+    "now": [
+     "green",
+     "yellow",
+     "blue",
+     "dark"
+    ],
+    "rule would give": [
+     "green",
+     "blue",
+     "dark"
+    ],
+    "why": "yellow dropped: saturated yellow 0.2% (cream read as yellow)"
+   },
+   {
+    "key": "sundaymahjong.com/bold-blooms-premium-mahjong-mat",
+    "name": "Bold Blooms Premium",
+    "brand": "Sunday Mahjong",
+    "now": [
+     "red",
+     "blue",
+     "yellow",
+     "dark"
+    ],
+    "rule would give": [
+     "red",
+     "blue",
+     "dark"
+    ],
+    "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow)"
+   },
+   {
+    "key": "sundaymahjong.com/golden-gingham-premium-mahjong-mat",
+    "name": "Golden Gingham Premium",
+    "brand": "Sunday Mahjong",
+    "now": [
+     "yellow",
+     "dark"
+    ],
+    "rule would give": [
+     "dark"
+    ],
+    "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow)"
+   },
+   {
+    "key": "luxemahjong.com/untitled-sep29_16-36-07",
+    "name": "Midnight Romance",
+    "brand": "Luxe Mahjong",
+    "now": [
+     "neutral",
+     "yellow"
+    ],
+    "rule would give": [
+     "neutral"
+    ],
+    "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow)"
+   },
+   {
+    "key": "luxemahjong.com/azure-bloom-mahjong-mat",
+    "name": "Azure Bloom",
+    "brand": "Luxe Mahjong",
+    "now": [
+     "green",
+     "red",
+     "blue",
+     "dark",
+     "yellow",
+     "neutral"
+    ],
+    "rule would give": [
+     "green",
+     "red",
+     "blue",
+     "dark",
+     "neutral"
+    ],
+    "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow)"
+   },
+   {
+    "key": "luxemahjong.com/coming-soon-the-polo-club-mahjong-mat",
+    "name": "The Polo Club",
+    "brand": "Luxe Mahjong",
+    "now": [
+     "dark",
+     "yellow",
+     "green"
+    ],
+    "rule would give": [
+     "dark",
+     "green"
+    ],
+    "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow)"
+   },
+   {
+    "key": "mahjongregister.com/snowflake-reindeer-lodge-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy",
+    "name": "Sunday Sherbert Double-Sided Leatherette",
+    "brand": "Mahjong Register",
+    "now": [
+     "orange",
+     "pink",
+     "blue"
+    ],
+    "rule would give": [
+     "pink",
+     "blue"
+    ],
+    "why": "orange dropped: saturated orange 0.1%, peach 3.2% (cream/beige read as orange)"
+   },
+   {
+    "key": "missmahjong.com/powder-blue-garden-party-mahjong-playing-mat",
+    "name": "Powder Blue Garden Party",
+    "brand": "Miss Mahjong",
+    "now": [
+     "blue",
+     "green",
+     "yellow",
+     "red",
+     "purple"
+    ],
+    "rule would give": [
+     "blue",
+     "green",
+     "red",
+     "purple"
+    ],
+    "why": "yellow dropped: saturated yellow 0.4% (cream read as yellow)"
+   },
+   {
+    "key": "tigredetartan.com/third-shipment-mahjong-mat-jardin-de-los-jefes",
+    "name": "Jardín de Los Jefes",
+    "brand": "Tigre de Tartan",
+    "now": [
+     "red",
+     "yellow",
+     "green"
+    ],
+    "rule would give": [
+     "red",
+     "green"
+    ],
+    "why": "yellow dropped: saturated yellow 3.2% (cream read as yellow)"
+   },
+   {
+    "key": "alb2:ozark-mah-jongg-carson-vintage",
+    "name": "Carson Vintage",
+    "brand": "Ozark Mahjongg",
+    "now": [
+     "neutral",
+     "yellow"
+    ],
+    "rule would give": [
+     "neutral"
+    ],
+    "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow)"
+   },
+   {
+    "key": "mahjongco.com/mahjong-by-si-highland-house-mahjong-mat",
+    "name": "Highland Heritage Plaid",
+    "brand": "Mahjong by SI",
+    "now": [
+     "green",
+     "yellow",
+     "blue",
+     "dark"
+    ],
+    "rule would give": [
+     "green",
+     "blue",
+     "dark"
+    ],
+    "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow)"
+   },
+   {
+    "key": "mahjongco.com/mahjong-by-si-tracing-the-tides-mahjong-mat",
+    "name": "Tracing the Tides",
+    "brand": "Mahjong by SI",
+    "now": [
+     "yellow",
+     "red",
+     "neutral",
+     "green",
+     "dark"
+    ],
+    "rule would give": [
+     "red",
+     "neutral",
+     "green",
+     "dark"
+    ],
+    "why": "yellow dropped: saturated yellow 0.3% (cream read as yellow)"
+   },
+   {
+    "key": "luckydaughters.com/astor-place-mat",
+    "name": "Astor Place",
+    "brand": "Lucky Daughters",
+    "now": [
+     "yellow",
+     "green",
+     "dark"
+    ],
+    "rule would give": [
+     "green",
+     "dark"
+    ],
+    "why": "yellow dropped: saturated yellow 1.2% (cream read as yellow)"
+   },
+   {
+    "key": "talamahj.com/carlyle-holiday-mahjong-mat-with-red-fringe",
+    "name": "The Carlyle - Holiday Plaid with Red Fringe",
+    "brand": "Tala Mahj",
+    "now": [
+     "neutral",
+     "dark",
+     "red",
+     "orange"
+    ],
+    "rule would give": [
+     "neutral",
+     "dark",
+     "red"
+    ],
+    "why": "orange dropped: saturated orange 0.0%, peach 0.4% (cream/beige read as orange)"
+   },
+   {
+    "key": "www.yolomahjong.com/plum-scallop-mahjong-mat",
+    "name": "Plum Scallop",
+    "brand": "YOLO Mahjong",
+    "now": [
+     "orange",
+     "dark",
+     "neutral"
+    ],
+    "rule would give": [
+     "neutral",
+     "purple"
+    ],
+    "why": "by-eye: cream solid centre with a plum scalloped border; no orange"
+   },
+   {
+    "key": "www.yolomahjong.com/golden-hour-ripple-mahjong-mat",
+    "name": "Golden Hour Ripple",
+    "brand": "YOLO Mahjong",
+    "now": [
+     "orange",
+     "yellow",
+     "dark"
+    ],
+    "rule would give": [
+     "orange",
+     "dark"
+    ],
+    "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow)"
+   },
+   {
+    "key": "www.yolomahjong.com/pink-hydrangea-mahjong-mat",
+    "name": "Pink Hydrangea",
+    "brand": "YOLO Mahjong",
+    "now": [
+     "pink",
+     "orange"
+    ],
+    "rule would give": [
+     "pink"
+    ],
+    "why": "orange dropped: saturated orange 0.0%, peach 0.1% (cream/beige read as orange)"
+   },
+   {
+    "key": "www.yolomahjong.com/mahjong-mat-31-5x31-5-ship-rolled-up-blue-hydrangea-mahjong-mat-with-soft-yellow-floral-border",
+    "name": "Blue Hydrangea Yellow Floral",
+    "brand": "YOLO Mahjong",
+    "now": [
+     "blue",
+     "yellow",
+     "green"
+    ],
+    "rule would give": [
+     "blue",
+     "green"
+    ],
+    "why": "yellow dropped: saturated yellow 0.8% (cream read as yellow)"
+   },
+   {
+    "key": "bougiemahjong.com/strawberry-gingham-garden-mahjong-mat",
+    "name": "Strawberry Gingham Garden",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "neutral",
+     "orange",
+     "blue",
+     "dark"
+    ],
+    "rule would give": [
+     "neutral",
+     "blue",
+     "dark"
+    ],
+    "why": "orange dropped: saturated orange 2.4%, peach 2.8% (cream/beige read as orange)"
+   },
+   {
+    "key": "bougiemahjong.com/tortoiseshell-after-dark-mahjong-mat",
+    "name": "Tortoiseshell After Dark",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "dark",
+     "neutral",
+     "orange"
+    ],
+    "rule would give": [
+     "dark",
+     "neutral"
+    ],
+    "why": "by-eye: tortoise brown + black art deco, cream centre; no orange"
+   },
+   {
+    "key": "bougiemahjong.com/vino-amici-mahjong-mat",
+    "name": "Vino Amici",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "dark",
+     "orange"
+    ],
+    "rule would give": [
+     "dark",
+     "neutral",
+     "red"
+    ],
+    "why": "by-eye: tan/cream vineyard, burgundy border; no orange"
+   },
+   {
+    "key": "bougiemahjong.com/lake-house-mahjong-mat",
+    "name": "Lake House",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "dark",
+     "orange",
+     "neutral",
+     "blue"
+    ],
+    "rule would give": [
+     "blue",
+     "neutral",
+     "dark"
+    ],
+    "why": "by-eye: navy/blue scene on beige; no orange"
+   },
+   {
+    "key": "bougiemahjong.com/seaside-escape-mahjong-mat",
+    "name": "Seaside Escape",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "orange",
+     "blue",
+     "neutral",
+     "dark"
+    ],
+    "rule would give": [
+     "blue",
+     "neutral",
+     "dark"
+    ],
+    "why": "orange dropped: saturated orange 2.9%, peach 7.2% (cream/beige read as orange)"
+   },
+   {
+    "key": "bougiemahjong.com/riviera-leopard-mahjong-mat",
+    "name": "Riviera Leopard",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "orange",
+     "dark",
+     "neutral"
+    ],
+    "rule would give": [
+     "neutral",
+     "blue",
+     "dark"
+    ],
+    "why": "by-eye: cream centre, navy + blue hydrangeas, tan leopard; no orange (re-QA Nov 6)"
+   },
+   {
+    "key": "bougiemahjong.com/limoncello-mahjong-mat",
+    "name": "Limoncello",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "yellow",
+     "dark"
+    ],
+    "rule would give": [
+     "yellow",
+     "green",
+     "neutral"
+    ],
+    "why": "by-eye: lemons + green leaves on white"
+   },
+   {
+    "key": "bougiemahjong.com/liberty-250-mahjong-mat",
+    "name": "Liberty 250",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "orange",
+     "neutral",
+     "dark"
+    ],
+    "rule would give": [
+     "neutral",
+     "blue",
+     "red"
+    ],
+    "why": "by-eye: cream/navy/red Americana; no orange (re-QA Nov 6)"
+   },
+   {
+    "key": "bougiemahjong.com/azure-dolphin-cove-mahjong-mat",
+    "name": "Azure Dolphin Cove",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "blue",
+     "orange",
+     "neutral",
+     "dark"
+    ],
+    "rule would give": [
+     "blue",
+     "neutral",
+     "dark"
+    ],
+    "why": "orange dropped: saturated orange 1.4%, peach 0.8% (cream/beige read as orange)"
+   },
+   {
+    "key": "bougiemahjong.com/happy-camper-mahjong-mat",
+    "name": "Happy Camper",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "dark",
+     "orange",
+     "green"
+    ],
+    "rule would give": [
+     "green",
+     "dark",
+     "neutral"
+    ],
+    "why": "by-eye: forest green, tan, cream; gold/tan read as orange"
+   },
+   {
+    "key": "bougiemahjong.com/linen-blossom-mahjong-mat",
+    "name": "Linen Blossom",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "dark",
+     "orange",
+     "neutral"
+    ],
+    "rule would give": [
+     "dark",
+     "neutral"
+    ],
+    "why": "orange dropped: saturated orange 1.0%, peach 10.3% (cream/beige read as orange)"
+   },
+   {
+    "key": "bougiemahjong.com/champagne-conservatory-mahjong-mat",
+    "name": "Champagne Conservatory",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "yellow",
+     "dark",
+     "neutral"
+    ],
+    "rule would give": [
+     "dark",
+     "neutral"
+    ],
+    "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow)"
+   },
+   {
+    "key": "bougiemahjong.com/blue-porcelain-estate-mahjong-mat",
+    "name": "Blue Porcelain Estate",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "blue",
+     "neutral",
+     "orange"
+    ],
+    "rule would give": [
+     "blue",
+     "neutral"
+    ],
+    "why": "by-eye: blue-and-white porcelain on ivory; no yellow/orange"
+   },
+   {
+    "key": "bougiemahjong.com/silk-dragon-mahjong-mat",
+    "name": "Silk Dragon",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "blue",
+     "pink",
+     "purple",
+     "orange"
+    ],
+    "rule would give": [
+     "blue",
+     "pink",
+     "purple"
+    ],
+    "why": "orange dropped: saturated orange 0.0%, peach 0.0% (cream/beige read as orange)"
+   },
+   {
+    "key": "bougiemahjong.com/midnight-koi-garden-mahjong-mat",
+    "name": "Midnight Koi Garden",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "dark",
+     "orange"
+    ],
+    "rule would give": [
+     "dark",
+     "neutral"
+    ],
+    "why": "by-eye: black ground, gold koi, cream centre; gold read as orange"
+   },
+   {
+    "key": "bougiemahjong.com/canine-garden-party-mahjong-mat",
+    "name": "Canine Garden Party",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "dark",
+     "neutral",
+     "orange"
+    ],
+    "rule would give": [
+     "dark",
+     "neutral"
+    ],
+    "why": "orange dropped: saturated orange 1.0%, peach 0.4% (cream/beige read as orange)"
+   },
+   {
+    "key": "bougiemahjong.com/moonlit-crane-garden-mahjong-mat",
+    "name": "Moonlit Crane Garden",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "dark",
+     "orange"
+    ],
+    "rule would give": [
+     "dark",
+     "neutral"
+    ],
+    "why": "by-eye: navy-black, white cranes, gold trim; no orange"
+   },
+   {
+    "key": "bougiemahjong.com/indigo-reef-mahjong-mat",
+    "name": "Indigo Reef",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "dark",
+     "orange",
+     "blue",
+     "green"
+    ],
+    "rule would give": [
+     "blue",
+     "neutral",
+     "dark"
+    ],
+    "why": "by-eye: navy border, teal turtles, cream centre; no orange"
+   },
+   {
+    "key": "bougiemahjong.com/jaguar-royale-mahjong-mat",
+    "name": "Jaguar Royale",
+    "brand": "Bougie Mahjong",
+    "now": [
+     "dark",
+     "green",
+     "orange",
+     "yellow"
+    ],
+    "rule would give": [
+     "dark",
+     "green",
+     "orange"
+    ],
+    "why": "yellow dropped: saturated yellow 1.6% (cream read as yellow)"
+   },
+   {
+    "key": "www.etsy.com/listing/4602554389/kaleidoscope-lilies",
+    "name": "Kaleidoscope (Lilies)",
+    "brand": "Betty June & Jeannette",
+    "now": [
+     "blue",
+     "green",
+     "pink",
+     "orange"
+    ],
+    "rule would give": [
+     "blue",
+     "green",
+     "pink"
+    ],
+    "why": "orange dropped: saturated orange 3.4%, peach 10.3% (cream/beige read as orange)"
+   },
+   {
+    "key": "www.etsy.com/listing/4500653985/collins",
+    "name": "Collins",
+    "brand": "Betty June & Jeannette",
+    "now": [
+     "pink",
+     "blue",
+     "yellow"
+    ],
+    "rule would give": [
+     "pink",
+     "blue"
+    ],
+    "why": "yellow dropped: saturated yellow 0.1% (cream read as yellow)"
+   },
+   {
+    "key": "www.etsy.com/listing/4375629284/lemon-chinoiserie",
+    "name": "Lemon Chinoiserie",
+    "brand": "Betty June & Jeannette",
+    "now": [
+     "pink",
+     "orange",
+     "yellow"
+    ],
+    "rule would give": [
+     "pink",
+     "yellow"
+    ],
+    "why": "orange dropped: saturated orange 0.1%, peach 3.8% (cream/beige read as orange)"
+   },
+   {
+    "key": "www.etsy.com/listing/4537268469/ghosts-n-bows",
+    "name": "Ghosts N Bows",
+    "brand": "Betty June & Jeannette",
+    "now": [
+     "orange",
+     "pink",
+     "neutral",
+     "dark"
+    ],
+    "rule would give": [
+     "pink",
+     "neutral",
+     "dark"
+    ],
+    "why": "orange dropped: saturated orange 3.0%, peach 11.9% (cream/beige read as orange)"
+   },
+   {
+    "key": "www.etsy.com/listing/4375632985/blue-and-red-damask",
+    "name": "Blue and Red Damask",
+    "brand": "Betty June & Jeannette",
+    "now": [
+     "blue",
+     "orange",
+     "neutral",
+     "pink"
+    ],
+    "rule would give": [
+     "blue",
+     "neutral",
+     "pink"
+    ],
+    "why": "orange dropped: saturated orange 0.0%, peach 0.4% (cream/beige read as orange)"
+   },
+   {
+    "key": "www.etsy.com/listing/4574518457/pink-chinoiserie-medallion",
+    "name": "Pink Chinoiserie Medallion",
+    "brand": "Piper Chase Studios",
+    "now": [
+     "pink",
+     "orange",
+     "green",
+     "neutral"
+    ],
+    "rule would give": [
+     "pink",
+     "green",
+     "neutral"
+    ],
+    "why": "orange dropped: saturated orange 0.2%, peach 4.3% (cream/beige read as orange)"
+   },
+   {
+    "key": "www.etsy.com/listing/4553922554/tiger-fans",
+    "name": "Tiger Fans",
+    "brand": "Piper Chase Studios",
+    "now": [
+     "purple",
+     "dark",
+     "neutral"
+    ],
+    "rule would give": [
+     "purple",
+     "pink",
+     "dark",
+     "neutral"
+    ],
+    "why": "pink added: magenta 20.5% (magenta read as purple only)"
+   },
+   {
+    "key": "letsbebesties.com/chino-monkey-neoprene-mahjong-mat",
+    "name": "Chino Monkey",
+    "brand": "Let's Be Besties",
+    "now": [
+     "green",
+     "neutral",
+     "dark",
+     "yellow"
+    ],
+    "rule would give": [
+     "green",
+     "neutral",
+     "dark"
+    ],
+    "why": "yellow dropped: saturated yellow 0.4% (cream read as yellow)"
+   },
+   {
+    "key": "letsbebesties.com/community-joy-neoprene-mahjong-mat",
+    "name": "Community Joy",
+    "brand": "Let's Be Besties",
+    "now": [
+     "blue",
+     "purple"
+    ],
+    "rule would give": [
+     "blue",
+     "pink",
+     "purple"
+    ],
+    "why": "pink added: magenta 47.1% (magenta read as purple only)"
+   },
+   {
+    "key": "letsbebesties.com/egyptian-eye-neoprene-mahjong-mat",
+    "name": "Egyptian Eye",
+    "brand": "Let's Be Besties",
+    "now": [
+     "pink",
+     "orange",
+     "purple"
+    ],
+    "rule would give": [
+     "pink",
+     "purple"
+    ],
+    "why": "orange dropped: saturated orange 0.0%, peach 0.0% (cream/beige read as orange)"
+   },
+   {
+    "key": "letsbebesties.com/evil-eye-neoprene-mahjong-mat",
+    "name": "Evil Eye",
+    "brand": "Let's Be Besties",
+    "now": [
+     "orange",
+     "pink"
+    ],
+    "rule would give": [
+     "pink",
+     "blue",
+     "neutral"
+    ],
+    "why": "by-eye: rose + teal on cream (FYM orange is a misread)"
+   },
+   {
+    "key": "letsbebesties.com/fall-barn-quilt-neoprene-mahjong-mat",
+    "name": "Fall Barn Quilt",
+    "brand": "Let's Be Besties",
+    "now": [
+     "dark",
+     "red",
+     "yellow",
+     "green"
+    ],
+    "rule would give": [
+     "dark",
+     "red",
+     "green"
+    ],
+    "why": "yellow dropped: saturated yellow 0.9% (cream read as yellow)"
+   },
+   {
+    "key": "letsbebesties.com/falling-flowers-neoprene-mahjong-mat",
+    "name": "Falling Flowers",
+    "brand": "Let's Be Besties",
+    "now": [
+     "green",
+     "blue",
+     "orange",
+     "yellow"
+    ],
+    "rule would give": [
+     "green",
+     "blue",
+     "orange"
+    ],
+    "why": "yellow dropped: saturated yellow 0.4% (cream read as yellow)"
+   },
+   {
+    "key": "letsbebesties.com/festival-bloom-neoprene-mahjong-mat",
+    "name": "Festival Bloom",
+    "brand": "Let's Be Besties",
+    "now": [
+     "purple",
+     "blue",
+     "orange",
+     "green"
+    ],
+    "rule would give": [
+     "pink",
+     "purple",
+     "blue",
+     "orange",
+     "green"
+    ],
+    "why": "pink added: magenta 38.4% (magenta read as purple only)"
+   },
+   {
+    "key": "letsbebesties.com/georgia-peach-mahjong-mat",
+    "name": "Georgia Peach",
+    "brand": "Let's Be Besties",
+    "now": [
+     "orange",
+     "pink",
+     "yellow"
+    ],
+    "rule would give": [
+     "orange",
+     "pink"
+    ],
+    "why": "yellow dropped: saturated yellow 2.8% (cream read as yellow)"
+   },
+   {
+    "key": "letsbebesties.com/jewel-of-diwali-mahjong-mat",
+    "name": "Jewel of Diwali",
+    "brand": "Let's Be Besties",
+    "now": [
+     "yellow",
+     "pink",
+     "purple",
+     "orange"
+    ],
+    "rule would give": [
+     "pink",
+     "purple",
+     "orange"
+    ],
+    "why": "yellow dropped: saturated yellow 0.3% (cream read as yellow)"
+   },
+   {
+    "key": "letsbebesties.com/neon-daze-queen-neoprene-mahjong-mat",
+    "name": "Neon Daze Queen",
+    "brand": "Let's Be Besties",
+    "now": [
+     "purple",
+     "green"
+    ],
+    "rule would give": [
+     "pink",
+     "purple",
+     "green"
+    ],
+    "why": "pink added: magenta 58.5% (magenta read as purple only)"
+   },
+   {
+    "key": "letsbebesties.com/pineapple-pattern-no-36-artist-collab-leatherette-mahjong-mat",
+    "name": "Pineapple Pattern",
+    "brand": "Let's Be Besties",
+    "now": [
+     "dark",
+     "pink",
+     "orange",
+     "yellow"
+    ],
+    "rule would give": [
+     "dark",
+     "pink",
+     "orange"
+    ],
+    "why": "yellow dropped: saturated yellow 1.0% (cream read as yellow)"
+   },
+   {
+    "key": "letsbebesties.com/pink-and-green-open-heart-mahjong-mat",
+    "name": "Pink and Green Open Heart",
+    "brand": "Let's Be Besties",
+    "now": [
+     "green",
+     "purple"
+    ],
+    "rule would give": [
+     "green",
+     "pink"
+    ],
+    "why": "by-eye: green solid with a magenta heart"
+   },
+   {
+    "key": "letsbebesties.com/red-hearts-mahjong-mat",
+    "name": "Red Hearts",
+    "brand": "Let's Be Besties",
+    "now": [
+     "red",
+     "pink",
+     "yellow"
+    ],
+    "rule would give": [
+     "red",
+     "pink"
+    ],
+    "why": "yellow dropped: saturated yellow 0.2% (cream read as yellow)"
+   },
+   {
+    "key": "letsbebesties.com/texas-yellow-rose-and-pink-celebration-mahjong-mat",
+    "name": "Texas Yellow Rose and Pink Celebration",
+    "brand": "Let's Be Besties",
+    "now": [
+     "blue",
+     "yellow"
+    ],
+    "rule would give": [
+     "blue"
+    ],
+    "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow)"
+   },
+   {
+    "key": "letsbebesties.com/tossing-tiles-ohbon-studios-artist-mahjong-mat",
+    "name": "Tossing Tiles",
+    "brand": "Let's Be Besties",
+    "now": [
+     "pink",
+     "blue",
+     "yellow",
+     "red"
+    ],
+    "rule would give": [
+     "pink",
+     "blue",
+     "red"
+    ],
+    "why": "yellow dropped: saturated yellow 0.9% (cream read as yellow)"
+   },
+   {
+    "key": "letsbebesties.com/tiger-stripes-ohbon-studios-artist-mahjong-mat",
+    "name": "Tiger Stripes",
+    "brand": "Let's Be Besties",
+    "now": [
+     "orange",
+     "dark",
+     "yellow"
+    ],
+    "rule would give": [
+     "orange",
+     "dark"
+    ],
+    "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow)"
+   },
+   {
+    "key": "mahjpit.co/pixel-pusher-mat",
+    "name": "Pixel Pusher",
+    "brand": "Mahj Pit",
+    "now": [
+     "purple",
+     "neutral",
+     "red"
+    ],
+    "rule would give": [
+     "pink",
+     "purple",
+     "neutral",
+     "red"
+    ],
+    "why": "pink added: magenta 43.3% (magenta read as purple only)"
+   },
+   {
+    "key": "mahjpit.co/poppylicious-mat",
+    "name": "Poppylicious",
+    "brand": "Mahj Pit",
+    "now": [
+     "dark",
+     "neutral",
+     "orange",
+     "blue"
+    ],
+    "rule would give": [
+     "dark",
+     "neutral",
+     "blue"
+    ],
+    "why": "orange dropped: saturated orange 3.6%, peach 5.9% (cream/beige read as orange)"
+   },
+   {
+    "key": "mahjpit.co/all-vibes-mat",
+    "name": "All Vibes",
+    "brand": "Mahj Pit",
+    "now": [
+     "neutral",
+     "orange",
+     "dark"
+    ],
+    "rule would give": [
+     "neutral"
+    ],
+    "why": "by-eye: grey solid with white lines"
+   }
+  ],
+  "her colour call": [
+   {
+    "key": "mahjandmoon.com/botanical-butterfly-mahjong-mat-floral-garden-design-in-pink-green",
+    "name": "Botanical Butterfly",
+    "brand": "Mahj & Moon",
+    "now": [
+     "orange",
+     "yellow",
+     "dark",
+     "green"
+    ],
+    "rule would give": [
+     "orange",
+     "dark",
+     "green"
+    ],
+    "why": "yellow dropped: saturated yellow 1.5% (cream read as yellow)"
+   },
+   {
+    "key": "letsbebesties.com/garden-lilies-neoprene-artist-collab-mahjong-mat",
+    "name": "Garden Lilies",
+    "brand": "Let's Be Besties",
+    "now": [
+     "blue",
+     "green",
+     "orange",
+     "pink"
+    ],
+    "rule would give": [
+     "blue",
+     "green",
+     "pink"
+    ],
+    "why": "orange dropped: saturated orange 0.0%, peach 2.7% (cream/beige read as orange)"
+   },
+   {
+    "key": "letsbebesties.com/southern-stained-glass-mahjong-mat",
+    "name": "Southern Stained Glass",
+    "brand": "Let's Be Besties",
+    "now": [
+     "green",
+     "orange",
+     "dark"
+    ],
+    "rule would give": [
+     "green",
+     "dark"
+    ],
+    "why": "orange dropped: saturated orange 3.4%, peach 8.2% (cream/beige read as orange)"
+   }
+  ],
+  "by-eye holiday (FYM hol is her call)": [
+   "letsbebesties.com/ohbon-studios-artist-collab-mahjong-mat"
+  ],
+  "no photo": [
+   "mahjongstudios.com/mahjong-mat?v=50645970911469",
+   "alb2:mahj-vine-chinoiserie-songbird-2",
+   "alb2:mary-benson-hydrangea",
+   "splashofcolorco.com/sunny-citrus-chinoiserie-watercolor-blooms-mahjong-mat",
+   "splashofcolorco.com/the-watercolor-citrus-grove-mahjong-mat",
+   "splashofcolorco.com/asian-bamboo-chinoiserie-tigeress-mahjong-mat-33x33-ship-rolled-up",
+   "splashofcolorco.com/nostalgic-floral-garden-party-mahjong-mat",
+   "splashofcolorco.com/summer-sorbet-paint-strokes-pink-and-yellow-mahjong-mat",
+   "splashofcolorco.com/lemondrop-on-the-amalfi-coast-round-mahjong-mat",
+   "splashofcolorco.com/koi-fish-tranquil-tides-mahjong-mat"
+  ]
+ }
+}
