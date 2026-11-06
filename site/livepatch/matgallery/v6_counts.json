@@ -75,7 +75,7 @@
   "Virora Mahjong | Hiverelle",
   "Virora Mahjong | Petalwing"
  ],
- "link_from_fym": 490,
+ "link_from_fym": 489,
  "autoapply": {
   "Amahj": {
    "discount": 8
@@ -203,7 +203,7 @@
    "discount": 9
   },
   "Oh My Mahjong": {
-   "discount": 34
+   "discount": 33
   },
   "Ozark Mahjongg": {
    "other": 3
@@ -253,6 +253,19 @@
   }
  },
  "unmatched": [],
+ "link_fixes": [
+  "Bespoke x Brooks Brothers Oxford Classic: no shop button",
+  "LBB Blue Dots and Stripes (20.9in travel listing): no shop button",
+  "LBB Surfs Up: no shop button",
+  "OMM Astor: no shop button",
+  "OMM Darjeeling: no shop button",
+  "OMM Sugarplum: no shop button",
+  "OMM Vanderbilt: no shop button",
+  "OMM Vivara: no shop button",
+  "OMM Year of the Horse: no shop button",
+  "TdT Nantucket Basket, Round: no shop button",
+  "YOLO Christmas Cat: no shop button"
+ ],
  "dupes_merged": [
   "Britt Mills | Aria Leatherette -> Aria",
   "Britt Mills | Bella Leatherette -> Bella",
