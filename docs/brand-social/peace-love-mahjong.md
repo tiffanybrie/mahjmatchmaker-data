@@ -1,6 +1,7 @@
 # Peace Love Mahjong (@peacelovemahjong): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 6 7am ET: 40K-follower flash sale, 40% off OG holiday mats (Perfectly Wrapped, Candy Cane Lane, Sugarplum Plaid) with code 40KMAT until Sat 6am CST (https://www.instagram.com/p/DfYALI1Tu8h/). Also Holiday Rack Pets ($15/10) Nov 5; Black Friday save-the-date Nov 16.
 - Nov 6 7:00am ET: 40K-followers FLASH SALE: 40% off OG holiday mats Perfectly Wrapped, Candy Cane Lane, Sugarplum Plaid ($70 -> $42), code 40KMAT, ends Sat Nov 7 6am CST (https://www.instagram.com/p/DfYALI1Tu8h/). Nov 5 7:05pm ET: Strategy Class + 'Ready, Set, Mahj!' tournament prep at @wheredragonsplay (DfYR2xiBkXu).
 - Nov 4 7:10pm ET: reel INTRODUCING HOLIDAY RACK PETS: random bag of 10 festive rack pets, $15, no repeats; follows the hit Halloween Rack Pets; stocking-stuffer angle (https://www.instagram.com/reel/DfVtmwtBVjc/).
 - Nov 3 7:05pm ET: tips carousel '3 things your table is telling you' (https://www.instagram.com/p/DfTIQinGuja/). Mini holiday launch public Nov 4 8am CT (email); Black Friday Nov 16.

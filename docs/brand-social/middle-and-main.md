@@ -1,6 +1,7 @@
 # Middle & Main Mahjong (@middleandmainmahjong): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 6 12:12pm ET: flagship boutique grand opening weekend (raffle of Wanderlust/Odyssey travel sets, gift with purchase, 10% to Fix-It) (https://www.instagram.com/p/DfaHV8JFqva/). Store event; travel sets: skip.
 - Nov 4 11:25pm + Nov 5 5:30am ET: FLAGSHIP STORE GRAND OPENING WEEKEND starts Fri Nov 6 (reel DfWKuedBosN, post https://www.instagram.com/p/DfWLgG1h_9r/). No product named. #mahjongstore #grandopening
 - Nov 3 5:30am ET: gift cards now online + in person; NEW FLAGSHIP STORE opens today (Rainbow Row card art) (https://www.instagram.com/p/DfQwUmgswaM/). #merrymahjong #mahjongwishlist.
 - Nov 3 5:30am ET: gift cards now online + in store; flagship store opens today, new address in bio (DfQwUmgswaM). No tile drop; Summit to Sea still unlisted.

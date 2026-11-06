@@ -1,6 +1,7 @@
 # Bam Bird Boutique (@bambirdboutique): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 6 10am CT: MCM Olive/Pink restock LIVE (mcm-mahjong-tile-set Olive/Pink variants available, $350/$370). Nov 5 carousel explained the MCM motifs: monkey jokers, geometric winds/dragons, partridge 1 Bam (https://www.instagram.com/p/DfX7JrXnz5H/). Pushes MCM neoprene mats (Geo Bloom, Mod Geo) with it.
 - Nov 5 3:47pm ET: carousel walking through the MCM designs (monkey jokers, geometric winds, colour-blocked partridge 1 Bam, abstract dragons): 'Available tomorrow, 11/6 at 10AM CT' (https://www.instagram.com/p/DfX7JrXnz5H/). MCM Olive restock countdown continues.
 - Nov 4 4:24pm ET: carousel 'our favorite mats paired with our Olive and Pink MCM tiles', restock Fri Nov 6 10am CT (https://www.instagram.com/p/DfVao48Hx6P/). Nov 4 10:24am reel: mat recommendations for MCM Olive (DfUwdShRoZ1).
 - Nov 4 10:24am ET: countdown reel to the MCM Olive restock Fri Nov 6 10am CT, showing their recommended mats to pair with it (https://www.instagram.com/reel/DfUwdShRoZ1/). Deco Indigo still sold out (1:35pm ET).
