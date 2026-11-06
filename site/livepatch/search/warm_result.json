@@ -1,7 +1,9 @@
 {
- "commit": "d89d8d26f05a824c5f69600a5178b9b89125a810",
+ "commit": "5e583dfabe249d973e3684d82b9c946a28eae631",
  "total": 1705,
- "ok_first_try": 1604,
- "ok_after_retry": 101,
- "still_failing": {}
+ "ok_first_try": 1624,
+ "ok_after_retry": 80,
+ "still_failing": {
+  "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@5e583dfabe249d973e3684d82b9c946a28eae631/assets/search/thumbs/c/f07e88ae12d92008.webp": "403"
+ }
 }
