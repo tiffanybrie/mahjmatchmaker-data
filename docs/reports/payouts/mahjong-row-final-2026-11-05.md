@@ -53,3 +53,6 @@ Nov 4 3:35pm ET: an UpPromote 'Confirm Your Payment Info Update' OTP email from 
 - 2026-11-02: 2 orders, $55.8 — Marketplace #8562 (35468750) $48.60, 10:09am; #8568 (35478826) $7.20, 3:43pm; approved.
 - 2026-11-03: 4 orders, $21.3 — Marketplace: #8580 (35499949) $7.20, 10:24am; #8581 (35499964) $1.50, 10:24am; #8586 (35505865) $5.40, 2:07pm; #8590 (35515525) $7.20, 9:43pm. All approved.
 - 2026-11-04: 2 orders, $49.95 — Marketplace: #8596 (35532070) $5.40, 11:18am; #8597 (35533673) $44.55, 12:19pm. Both approved.
+## Nov 5 9:17pm: dashboard total after deactivation (Tiffany's screenshot)
+Account status Inactive; Commission totals still visible: Pending $0 · **Approved $2,589.65** · Paid $0. Line items not viewable.
+Reconcile: $2,589.65 − $2,325.50 (Nov 4 snapshot = our log) = **$264.15** for the 7 approvals after the snapshot (avg $37.74 each, consistent with their usual orders). Every logged order is accounted for; nothing pending. **Owed: $2,589.65.** Nothing paid to date.
