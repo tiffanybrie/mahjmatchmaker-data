@@ -120,7 +120,15 @@
    2844,
    2976
   ],
-  "source": "config/colorcards.json sets.juniper (OMM pile photo 05-Tile_Juniper_Alt + flat lay 01-Tile_Juniper_A)"
+  "source": "config/colorcards.json sets.juniper (OMM pile photo 05-Tile_Juniper_Alt + flat lay 01-Tile_Juniper_A)",
+  "faces_blank": [
+   [
+    2300,
+    1765,
+    2666,
+    1802
+   ]
+  ]
  },
  "layers": {
   "_note": "Juniper has no back + side product photo, so the Her colors slide uses OMM's single-tile shot (09-Tile_Juniper_H), cut out. Labels = [x, y, text, hex] in cutout px (layer centres sampled Nov 6 at x=700).",
@@ -162,6 +170,11 @@
     "Hot pink + coral",
     "her faces: across the wheel"
    ]
+  ],
+  "label_y": [
+   400,
+   510,
+   620
   ]
  },
  "her_type": [
@@ -239,7 +252,7 @@
    [
     "The lotus",
     "flower-2a",
-    "A hot pink lotus<br>by a jade pagoda"
+    "A hot pink lotus<br>by a green pagoda"
    ],
    [
     "The jester",

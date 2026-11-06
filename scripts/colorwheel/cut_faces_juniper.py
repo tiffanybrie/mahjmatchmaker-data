@@ -41,6 +41,7 @@ n = 0
 for j, row in enumerate(NAMES):
     for i, nm in enumerate(row):
         if not nm: continue
-        box = (xs[i] + INSET, ys[j] + INSET, xs[i + 1] - INSET + 1, ys[j + 1] - INSET + 1)
+        bot = 12 if j == 4 else INSET  # bottom row: the outer edge shows a sliver of the green layers
+        box = (xs[i] + INSET, ys[j] + INSET, xs[i + 1] - INSET + 1, ys[j + 1] - bot + 1)
         t = im.crop(box).convert('RGBA'); t.putalpha(mask(*t.size)); t.save(OUT + nm + '.png'); n += 1
 print(n, 'tiles ->', OUT)

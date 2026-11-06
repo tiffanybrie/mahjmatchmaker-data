@@ -76,7 +76,11 @@ colors = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 135
 </div></body></html>"""
 if P.get('layers'):  # Nov 6 (Juniper): no back + side photo -> OMM's single-tile shot, layers labelled, same wheel + notes
     LY = P['layers']; LIM = Image.open(R + LY['img']); sc = 520 / LIM.width; th = LIM.height * sc; X0, Y0 = 70, 262
-    labs = ''.join(lab(int(Y0 + y * sc), t, c, int(X0 + x * sc)) for x, y, t, c in LY['labels'])
+    def lab2(yl, yp, txt, col, xp):  # label at its own row yl, leader line to the layer point (xp, yp); layers are thin, so labels fan out
+        return (f'<div style="position:absolute;left:806px;top:{yl-22}px;display:flex;align-items:center;gap:10px;font:700 27px Bit;color:var(--navy);white-space:nowrap">'
+                f'<i style="width:26px;height:26px;border-radius:50%;background:{col};box-shadow:0 0 0 3px #fff,0 1px 4px rgba(5,40,90,.25)"></i>{txt}</div>'
+                f'<svg style="position:absolute;left:0;top:0" width="1080" height="1350"><polyline points="{xp},{yp} {xp+60},{yp} 760,{yl} 798,{yl}" fill="none" stroke="#054689" stroke-width="3"/><circle cx="{xp}" cy="{yp}" r="7" fill="#fff" stroke="#054689" stroke-width="3"/></svg>')
+    labs = ''.join(lab2(LY.get('label_y', [380, 480, 580])[i], int(Y0 + y * sc), t, c, int(X0 + x * sc)) for i, (x, y, t, c) in enumerate(LY['labels']))
     notes = ''.join(f'<b style="font-weight:700;color:var(--navy)">{i + 1} &nbsp;{e(n)}</b><br>{e(d)}<div style="height:18px"></div>' for i, (n, d) in enumerate(LY['wheel_notes']))
     colors = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 1350, S['col'])}</style></head><body>
 <div style="position:relative;width:1080px;height:1350px">
