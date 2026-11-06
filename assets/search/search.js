@@ -207,7 +207,7 @@
   /* "See all N match cards" (opens the All matches panel) for a mat in more than 2 albums */
   function allLink(slug, list) {
     var n = (list || []).filter(function (a) { return D.a[a] && D.a[a][5] !== 1; }).length;
-    return slug && n > 2 ? '<button type="button" class="mms-allm" data-mv="' + esc(slug) + '">See all ' + n + ' match cards</button>' : '';
+    return slug && n > 1 ? '<button type="button" class="mms-allm" data-mv="' + esc(slug) + '">See all ' + n + ' match cards</button>' : '';
   }
   function chips(secs) {
     var L = D.sec || {}, h = '';
