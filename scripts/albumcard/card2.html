@@ -55,7 +55,10 @@ document.querySelector('#tile img').src=D.tile;if(D.loose)document.getElementByI
 const bb=document.getElementById('bb');if(D.bb.length||(D.mr||[]).length){const g=document.createElement('div');g.className='grp';g.textContent='MATCH THE MAT';bb.appendChild(g)}
 // Oct 15 evening: no rack-brand logos here; B&B picks = colour bars named in full, other brands = the real rack photo (no white box) + small name pill
 D.bb.forEach(x=>{const r=document.createElement('div');r.className='bar';r.style.backgroundColor=x.hex;r.textContent='Bird & Bamboo '+x.name;if(x.light)r.style.color='#2b2b2b',r.style.textShadow='none';bb.appendChild(r)});
-(D.mr||[]).forEach(x=>{const m=document.createElement('div');m.className='mr';m.innerHTML=`<img src="${x.img}"><span>${x.full||x.name}</span>`;bb.appendChild(m)});
+(D.mr||[]).forEach(x=>{const m=document.createElement('div');m.className='mr';
+ // Nov 6: true_len -> mat-side racks share one scale (an 18.5" body = 230px), so their lengths compare honestly with each other
+ const st=(D.true_len&&x.len&&x.body)?` style="width:${Math.min(290,(x.len/18.5*230)/(x.body[1]-x.body[0]))}px;max-height:none;height:auto"`:'';
+ m.innerHTML=`<img src="${x.img}"${st}><span>${x.full||x.name}</span>`;bb.appendChild(m)});
 // tile set brand logo flag (Oct 15 evening): tile set logo only
 if(D.tlogo){document.querySelector('#flag img').src=D.tlogo}else{document.getElementById('flag').remove()}
 // racks (match the TILES): one copy each, all at the SAME angle and the SAME visible length L, evenly stacked
@@ -64,8 +67,17 @@ if(D.tlogo){document.querySelector('#flag img').src=D.tlogo}else{document.getEle
 // pill labels start at the card's left edge (LX) and MATCH THE TILES sits at the far left above the top rack.
 const ANG=-20,L=660,X0=-150,YB=1240,DY={1:0,2:140,3:128,4:108},LX=10,T=Math.tan(-ANG*Math.PI/180),C=Math.cos(-ANG*Math.PI/180);
 const rk=document.getElementById('racks');const n=Math.min(4,D.racks.length);
+// Nov 6 (Tiffany, Juniper round 3): D.true_len -> racks with a known length are drawn at their REAL relative size: the rack
+// BODY (r.body = trough x0..x1 as image fractions) is r.len/18.5 x BL px long and every body starts at the same point XB on its
+// slot line, so two 18.5" racks end at the same place. Racks without a length keep the old fixed width L.
+const BL=599,XB=-91;
 D.racks.slice(0,4).forEach((r,i)=>{const d=document.createElement('div');d.className='rk';
- const H=L/(r.ar||8),fr=r.frac||1,cy=H-H*fr/2,y=YB-(n-1-i)*DY[n];
+ const TLN=D.true_len&&r.len&&r.body,Wd=TLN?(r.len/18.5*BL)/(r.body[1]-r.body[0]):L;
+ const H=Wd/(r.ar||8),fr=r.frac||1,cy=H-H*fr/2,y=YB-(n-1-i)*DY[n];
+ if(TLN){const p=r.body[0]*Wd,yp=y-(XB-X0)*T;  // pivot = body's left end, on the same slanted slot line as before
+  const u=p+(LX+18-XB)/C;
+  d.style.left=(XB-p)+'px';d.style.top=(yp-cy)+'px';d.style.width=Wd+'px';d.style.height=H+'px';d.style.transformOrigin=`${p}px ${cy}px`;d.style.transform=`rotate(${ANG}deg)`;
+  d.innerHTML=`<img src="${r.img}" style="width:${Wd}px;height:${H}px"><b style="left:${u}px;bottom:${fr*100}%">${r.label}</b>`;rk.appendChild(d);return}
  const u=(LX+18-X0)/C;  // rack-local x where the label starts: its rotated top-left corner lands at the card's left edge
  d.style.left=X0+'px';d.style.top=(y-cy)+'px';d.style.width=L+'px';d.style.height=H+'px';d.style.transformOrigin=`0 ${cy}px`;d.style.transform=`rotate(${ANG}deg)`;
  d.innerHTML=`<img src="${r.img}" style="width:${L}px;height:${H}px"><b style="left:${u}px;bottom:${fr*100}%">${r.label}</b>`;rk.appendChild(d)});

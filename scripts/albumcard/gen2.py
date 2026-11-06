@@ -26,7 +26,12 @@ def lum(h):
     h = h.lstrip('#'); r, g, b = [int(h[k:k+2], 16) for k in (0, 2, 4)]; return .299*r + .587*g + .114*b
 tpl = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'card2.html')).read()
 logos = json.load(open(R + 'builder/logos/map.json'))
-BBLOGO = uri(R + 'builder/logos/' + logos['Bird & Bamboo'], 'PNG'); NAVY = uri(R + 'assets/brand/card_navy_logo_v2.png', 'PNG')
+BBLOGO = uri(R + 'builder/logos/' + logos['Bird & Bamboo'], 'PNG')
+NAVY = uri(R + spec.get('navy', 'assets/brand/card_navy_logo_v2.png'), 'PNG')  # Nov 6: spec 'navy' = another navy logo box (Juniper: current flame-heart wordmark)
+# Nov 6 (Tiffany, Juniper round 3): spec 'true_len' -> every rack with a known length (config/rack-lengths.json) is drawn at its
+# REAL relative length: the rack body (trough, measured by rack_body.py) = inches / 18.5 x the old body length.
+TL = json.load(open(R + 'config/rack-lengths.json'))['inches'] if spec.get('true_len') else {}
+from rack_body import body as _body
 MAT = uri(Image.open(R + spec['mat_file']).convert('RGB').crop(tuple(spec['mat_crop'])), maxs=1400) if spec.get('mat_file') else None
 BRANDS = {'Middle & Main': 'Middle & Main Mahjong'}  # rack-name prefix -> builder/logos/map.json key
 def brand_of(label):
@@ -50,7 +55,9 @@ def chart_for(c):
         im = RK.photo(l)
         if im is None: RK.MISSING.add(l); continue
         b, n = brand_of(l)
-        other.append({'img': uri(im, 'PNG', maxs=700), 'name': n, 'full': l})
+        o = {'img': uri(im, 'PNG', maxs=700), 'name': n, 'full': l}
+        if l in TL: o['len'] = TL[l]; o['body'] = _body(im); o['ar'] = im.width / im.height
+        other.append(o)
     return bars, other
 TLOGO = {}
 _IDX = json.load(open(R + 'assets/tiles/album/index.json'))
@@ -70,7 +77,9 @@ for c in spec['cards']:
         seen.add(l); r = RK.by_label(l)
         if r:
             fr = 1.0 if l.startswith('Bird & Bamboo ') else RK.frac(l)  # size by the RACK; an OMM photo's pusher overhangs above it
-            drawn.append({'img': uri(r[0], 'PNG', maxs=1400), 'label': r[1], 'frac': fr, 'ar': r[0].width / r[0].height})  # card2: same angle + same length for every rack (Oct 15)
+            dd = {'img': uri(r[0], 'PNG', maxs=1400), 'label': r[1], 'frac': fr, 'ar': r[0].width / r[0].height}
+            if l in TL: dd['len'] = TL[l]; dd['body'] = _body(r[0])
+            drawn.append(dd)  # card2: same angle + same length for every rack (Oct 15)
         else: missing.setdefault(c['slug'], []).append(l)
     dl = {d['label'] for d in drawn}
     ch = chart_for(c); other = []
@@ -84,7 +93,7 @@ for c in spec['cards']:
     data = {'title': c['title'], 'col': c['col'], 'mat': c.get('mat') or MAT, 'tile': (uri(R + c['tile_file'], 'PNG', maxs=900) if (c.get('tile_mode') == 'loose' or c['tile_file'] in LOOSE_FILES) else uri(R + c['tile_file'], maxs=900)) if not c['tile_file'].startswith('data:') else c['tile_file'], 'loose': c.get('tile_mode') == 'loose' or c['tile_file'] in LOOSE_FILES,
             'racks': drawn, 'bb': chart[:3], 'mr': other[:3 if not chart else 2], 'bblogo': BBLOGO, 'navy': NAVY,
             'code': c.get('code', spec.get('code', '10% OFF  USE CODE : MAHJMATCH')), 'hol': c.get('hol', False), 'flame': c.get('flame'),
-            'tlogo': tlogo(c.get('tile_brand', spec.get('tile_brand', 'Oh My Mahjong')))}
+            'tlogo': tlogo(c.get('tile_brand', spec.get('tile_brand', 'Oh My Mahjong'))), 'true_len': bool(spec.get('true_len'))}
     hf = f"/tmp/cards2/{c['slug']}.html"; open(hf, 'w').write(tpl.replace('__DATA__', json.dumps(data)))
     jobs.append((hf, os.path.join(out, c['file'])))
 NP = subprocess.run(['npm', 'root', '-g'], capture_output=True, text=True).stdout.strip()

@@ -17,9 +17,31 @@ def wheel(size=1200, v=0.96):
     img=(out.reshape(size,size,3)*255).astype(np.uint8)
     a=(r<=1).astype(np.uint8)*255
     im=Image.fromarray(img).convert('RGBA'); im.putalpha(Image.fromarray(a)); return im
-def main(key, pins, title, sub, note=None):
+# Nov 6 (Tiffany, Juniper round 3: "Forest Green Jade sits where the colour isn't shown"): a hue/saturation wheel only shows
+# bright colours, so a DARK colour lands on a bright patch. VALUE wheel: hue around, LIGHTNESS outward (center = near white,
+# middle ring = full clear colour, outer ring = dark), so every pin sits on a patch of its own colour, light or dark.
+# Used automatically when a set has a dark colour (needs_value); sets without one (Papaya Spritz) keep the classic wheel.
+VL0, VL1, VS = 0.97, 0.12, 0.85   # lightness at the center / at the rim, saturation of the painted wheel
+def _hsl(hh, ss, ll):
+    c = (1 - abs(2 * ll - 1)) * ss; hp = hh * 6; x = c * (1 - abs(hp % 2 - 1)); m = ll - c / 2
+    i = np.floor(hp).astype(int) % 6; z = 0 * hh
+    r = np.choose(i, [c, x, z, z, x, c]); g = np.choose(i, [x, c, c, x, z, z]); b = np.choose(i, [z, z, x, c, c, x])
+    return r + m, g + m, b + m
+def wheel_value(size=1200):
+    y, x = np.mgrid[0:size, 0:size]; c = size / 2; dx = x - c; dy = y - c
+    r = np.sqrt(dx * dx + dy * dy) / c; h = (np.degrees(np.arctan2(dy, dx)) + 90) % 360 / 360
+    ll = VL0 - np.clip(r, 0, 1) * (VL0 - VL1)
+    R_, G_, B_ = _hsl(h, VS + 0 * h, ll); img = (np.stack([R_, G_, B_], 2).clip(0, 1) * 255).astype(np.uint8)
+    im = Image.fromarray(img).convert('RGBA'); im.putalpha(Image.fromarray(((r <= 1) * 255).astype(np.uint8))); return im
+def light(hexc):
+    hexc = hexc.lstrip('#'); v = [int(hexc[k:k + 2], 16) / 255 for k in (0, 2, 4)]; return (max(v) + min(v)) / 2
+def needs_value(pins): return any(light(p['hex']) < 0.35 for p in pins)
+def pin_r(hexc, sat, value):
+    """distance from the center as a share of the radius: saturation (classic) or 1 - lightness (value wheel)"""
+    return min(1.0, max(0.0, (VL0 - light(hexc)) / (VL0 - VL1))) if value else sat
+def main(key, pins, title, sub, note=None, value=False):
     W,H=1080,1350; bg=Image.new('RGB',(W,H),(246,233,223)); d=ImageDraw.Draw(bg)
-    many=len(pins)>3; ws=600 if many else 660; wl=wheel(ws, v=0.97); cx,cy=W//2,(530 if many else 575)
+    many=len(pins)>3; ws=600 if many else 660; wl=wheel_value(ws) if value else wheel(ws, v=0.97); cx,cy=W//2,(530 if many else 575)
     # soften: blend wheel toward cream a touch so it reads designer, not neon
     cream=Image.new('RGBA',(ws,ws),(246,233,223,255)); wl=Image.composite(Image.blend(wl,cream,0.18),wl.copy(),wl.split()[3])
     sh=Image.new('RGBA',(ws+40,ws+40),(0,0,0,0)); ImageDraw.Draw(sh).ellipse([20,28,ws+20,ws+28],fill=(120,60,30,45))
@@ -33,12 +55,12 @@ def main(key, pins, title, sub, note=None):
         aa=math.radians(deg-90); x=cx+(ws/2+40)*math.cos(aa); y=cy+(ws/2+40)*math.sin(aa)
         d.text((x,y),name,font=mono,fill=(90,107,133),anchor='mm')
     n=len(pins)
-    if n>3: return _rest_many(bg,d,key,pins,cx,cy,ws,mono,num,chipname,chipsm,note)
+    if n>3: return _rest_many(bg,d,key,pins,cx,cy,ws,mono,num,chipname,chipsm,note,value)
     cw=280; gap=40; x0=(W-(n*cw+(n-1)*gap))/2; cyc=975
     for i,p in enumerate(pins):
         hexc=p['hex'].lstrip('#'); r,g,b=[int(hexc[k:k+2],16)/255 for k in (0,2,4)]; h,sat,v=colorsys.rgb_to_hsv(r,g,b)
         col=(int(r*255),int(g*255),int(b*255))
-        aa=math.radians(h*360-90); rr=sat*(ws/2-6); px=cx+rr*math.cos(aa); py=cy+rr*math.sin(aa)
+        aa=math.radians(h*360-90); rr=pin_r(hexc,sat,value)*(ws/2-6); px=cx+rr*math.cos(aa); py=cy+rr*math.sin(aa)
         d.ellipse([px-34,py-34,px+34,py+34],fill=col,outline=(255,255,255),width=7)
         d.ellipse([px-40,py-40,px+40,py+40],outline=(5,70,137),width=3)
         d.text((px,py),str(i+1),font=num,fill=(255,255,255),anchor='mm')
@@ -53,13 +75,13 @@ def main(key, pins, title, sub, note=None):
     d.text((W/2,H-88),'Sampled from Oh My Mahjong’s tile back photo. Angle = hue · distance from center = how vivid.',font=mono,fill=(90,107,133),anchor='mm')
     logo=Image.open(R+'assets/brand/mahjmatchmaker-wordmark-notag.png').convert('RGBA'); logo.thumbnail((260,80)); bg.paste(logo,(W//2-logo.width//2,H-62),logo)
     out=R+f'assets/colorwheels/{key}-color-wheel.jpg'; bg.save(out,quality=93); print(out)
-def _rest_many(bg,d,key,pins,cx,cy,ws,mono,num,chipname,chipsm,note):
+def _rest_many(bg,d,key,pins,cx,cy,ws,mono,num,chipname,chipsm,note,value=False):
     """Nov 6 (Juniper): more than 3 pins -> two rows of 3 smaller chips (backs row, faces row). Papaya (3 pins) unchanged."""
     W,H=bg.size
     for i,p in enumerate(pins):
         hexc=p['hex'].lstrip('#'); r,g,b=[int(hexc[k:k+2],16)/255 for k in (0,2,4)]; h,sat,v=colorsys.rgb_to_hsv(r,g,b)
         col=(int(r*255),int(g*255),int(b*255))
-        aa=math.radians(h*360-90); rr=sat*(ws/2-6); px=cx+rr*math.cos(aa); py=cy+rr*math.sin(aa)
+        aa=math.radians(h*360-90); rr=pin_r(hexc,sat,value)*(ws/2-6); px=cx+rr*math.cos(aa); py=cy+rr*math.sin(aa)
         d.ellipse([px-30,py-30,px+30,py+30],fill=col,outline=(255,255,255),width=6)
         d.ellipse([px-36,py-36,px+36,py+36],outline=(5,70,137),width=3)
         d.text((px,py),str(i+1),font=num,fill=(255,255,255),anchor='mm')
@@ -100,20 +122,21 @@ if __name__=='__main__':
         fx=dict((n,h) for n,h in cc['faces'])
         pins+=[{'name':n.title(),'hex':fx[n]} for n in WHEEL_FACES.get(key,[])]
         t,sub=WHEEL_TITLE.get(key,(cc['name'],'where her colors sit on the color wheel'))
-        main(key,pins,t,sub,note=f"From {cc['brand']}'s photos. Angle = hue · farther out = more vivid.")
+        vv=needs_value(pins)
+        main(key,pins,t,sub,value=vv,note=(f"From {cc['brand']}'s photos. Angle = hue · center = light, outer ring = dark." if vv else f"From {cc['brand']}'s photos. Angle = hue · farther out = more vivid."))
 
-def mini(key, pins, ws=900):
-    """Small transparent color wheel with numbered pins only (for the merged Her colors slide)."""
+def mini(key, pins, ws=900, value=False):
+    """Small transparent color wheel with numbered pins only (for the merged Her colors slide). value=True: the light/dark wheel."""
     import math, colorsys
     pad=60; S=ws+2*pad; im=Image.new('RGBA',(S,S),(0,0,0,0)); d=ImageDraw.Draw(im)
-    wl=wheel(ws, v=0.97); cream=Image.new('RGBA',(ws,ws),(246,233,223,255)); wl=Image.composite(Image.blend(wl,cream,0.18),wl.copy(),wl.split()[3])
+    wl=wheel_value(ws) if value else wheel(ws, v=0.97); cream=Image.new('RGBA',(ws,ws),(246,233,223,255)); wl=Image.composite(Image.blend(wl,cream,0.18),wl.copy(),wl.split()[3])
     sh=Image.new('RGBA',(S,S),(0,0,0,0)); ImageDraw.Draw(sh).ellipse([pad,pad+10,pad+ws,pad+ws+10],fill=(120,60,30,45))
     from PIL import ImageFilter; im.alpha_composite(sh.filter(ImageFilter.GaussianBlur(8))); im.alpha_composite(wl,(pad,pad))
     d.ellipse([pad,pad,pad+ws,pad+ws],outline=(255,255,255),width=12)
     num=ImageFont.truetype(GF+'Lora-Variable.ttf',44); cx=cy=S/2
     for i,p in enumerate(pins):
         hexc=p['hex'].lstrip('#'); r,g,b=[int(hexc[k:k+2],16)/255 for k in (0,2,4)]; h,sat,v=colorsys.rgb_to_hsv(r,g,b)
-        aa=math.radians(h*360-90); rr=sat*(ws/2-8); px=cx+rr*math.cos(aa); py=cy+rr*math.sin(aa)
+        aa=math.radians(h*360-90); rr=pin_r(hexc,sat,value)*(ws/2-8); px=cx+rr*math.cos(aa); py=cy+rr*math.sin(aa)
         d.ellipse([px-50,py-50,px+50,py+50],fill=(int(r*255),int(g*255),int(b*255)),outline=(255,255,255),width=10)
         d.ellipse([px-58,py-58,px+58,py+58],outline=(5,70,137),width=4)
         d.text((px,py),str(i+1),font=num,fill=(255,255,255),anchor='mm')

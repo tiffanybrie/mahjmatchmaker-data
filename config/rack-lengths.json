@@ -1,0 +1,15 @@
+{
+ "_note": "Real rack lengths in inches, for drawing racks at TRUE relative size on album match cards (Tiffany Nov 6, Juniper round-3 note 4: OMM Hot Pink and Pink Quartz are both 18.5\" but the card made Pink Quartz look shorter). Read by scripts/albumcard/gen2.py when a spec sets true_len; the rack BODY (trough, not the pusher) is measured from each card PNG (scripts/albumcard/rack_body.py). Add a rack only from the brand's own product page.",
+ "inches": {
+  "Oh My Mahjong Hot Pink": 18.5,
+  "Oh My Mahjong Agate": 18.5,
+  "Oh My Mahjong Pink Quartz": 18.5,
+  "Oh My Mahjong White Acrylic": 18.5,
+  "Peace Love Mahjong Pink": 20,
+  "Peace Love Mahjong Chartreuse": 20
+ },
+ "sources": {
+  "Oh My Mahjong": "ohmymahjong.com product pages (Hot Pink / White Acrylic Rack & Pusher Set): '18.5 inches'; Tiffany Nov 6: all OMM racks are 18.5\"",
+  "Peace Love Mahjong": "peacelovemahjong.com Wavy Mahjong Rack Pusher Set pages: 20\""
+ }
+}

@@ -795,12 +795,12 @@
    "name": "Juniper",
    "col": "#225d36",
    "brand": "Oh My Mahjong",
-   "sub": "Jade-look backs, chartreuse + teal layers",
+   "sub": "Forest green jade with chartreuse & teal layers",
    "backs": [
     [
      "FOREST GREEN JADE",
      "#225d36",
-     "jade-look back"
+     "jade-look stone"
     ],
     [
      "CHARTREUSE",
@@ -857,8 +857,8 @@
     "pagodas, lotus & a peacock"
    ],
    "mats": [
-    "Garden Glow",
     "Palm Royale",
+    "Garden Glow",
     "Lotus Cove"
    ],
    "mat_imgs": {
@@ -871,7 +871,26 @@
    "mats_source": "Claude's own picks (Tiffany Nov 4 3:27pm: 'show me how you'd match it'), not her picks yet",
    "racks_source": "Claude's own picks, pending her OK",
    "_nov04": "Colours measured from OMM's Juniper alt pile photo (05-Tile_Juniper_Alt) and checked by eye; OMM's own copy: forest green, jade, warm coral pink.",
-   "_nov05": "Tiffany Nov 5 12:42am: back = forest green JADE-LOOK (OMM: 'inspired by the rich beauty of jade'); never call the teal layer 'jade'. Pair mat Lotus Cove top 3, not #1; Palm Royale #2."
+   "_nov05": "Tiffany Nov 5 12:42am: back = forest green JADE-LOOK (OMM: 'inspired by the rich beauty of jade'); never call the teal layer 'jade'. Pair mat Lotus Cove top 3, not #1; Palm Royale #2.",
+   "profile_line": [
+    "Seeking: hot pink, kelly or forest green.",
+    "Must love a garden party."
+   ],
+   "profile_line_options": {
+    "A": [
+     "Seeking: hot pink, kelly or forest green.",
+     "Must love a garden party."
+    ],
+    "B": [
+     "Her type: pink with a green streak.",
+     "Lotus ponds a plus."
+    ],
+    "C": [
+     "Looking for: someone who can handle",
+     "forest green, chartreuse and hot pink."
+    ]
+   },
+   "_nov06r3": "Tiffany Nov 6 2:26am round 3: tagline in the dating-app voice like Papaya ('Seeking: ...'), not 'A lush lantern-lit garden'; back = Forest Green Jade colour with a jade-look STONE pattern (never 'jade-look green'); tile = PILE photo; top mats Palm Royale #1, Garden Glow #2, Lotus Cove #3."
   }
  },
  "_note_oct19_catchup": "Oct 19 catch-up: shangri-la, lilac-soiree, preppy-soiree, spring-love, sunday-tile-set got mat_imgs/rack_imgs and were rendered with the existing style. They use 'tag' (factual). When Tiffany approves the Papaya profile_line style, add profile_line to each set and re-run build.py <key>; nothing else changes."

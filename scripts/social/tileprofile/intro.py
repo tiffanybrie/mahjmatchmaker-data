@@ -49,10 +49,10 @@ BACK_CUT = BACK.rsplit('.', 1)[0] + '-cutout.png'
 bk = {b[0].lower(): b[1] for b in P['her_colors']['backs']}
 cpap, clav, clime = bk.get('papaya', '#de7e30'), bk.get('lavender', '#a8a3e1'), bk.get('light lime', '#c8d7a5')
 faces = ''.join(f'<span style="display:inline-flex;align-items:center;gap:10px"><i style="width:26px;height:26px;border-radius:50%;background:{h};box-shadow:0 0 0 3px #fff,0 1px 4px rgba(5,40,90,.2)"></i>{e(n.title())}</span>' for n, h in P['her_colors']['faces'])
-if not os.path.exists(R + f'assets/colorwheels/{key}-color-wheel-mini.png'):  # Nov 6: build the mini wheel from the profile colours
+if P.get('layers') or not os.path.exists(R + f'assets/colorwheels/{key}-color-wheel-mini.png'):  # Nov 6: build the mini wheel from the profile colours (rebuilt each run for layer-diagram sets)
     sys.path.insert(0, R + 'scripts/colorwheel'); import wheel as _wh
     _pins = [{'hex': h} for _, h, _ in P['her_colors']['backs']] + ([{'hex': h} for n, h in P['her_colors']['faces'][:2]] if P.get('layers') else [])
-    _wh.mini(key, _pins)
+    _wh.mini(key, _pins, value=_wh.needs_value(_pins))
 WHEEL = url(f'assets/colorwheels/{key}-color-wheel-mini.png')
 BACK_NUDGE = 74  # Tiffany Oct 19: center the back tile over the color wheel
 def lab(y, txt, col, x2):
@@ -92,7 +92,7 @@ if P.get('layers'):  # Nov 6 (Juniper): no back + side photo -> OMM's single-til
 <div style="position:absolute;left:584px;top:860px;right:56px">
  <div class="caps" style="font-size:21px;color:var(--pink)">On the color wheel</div>
  <div style="font:400 28px/1.3 Bit;color:#2c3e63;margin-top:20px">{notes}</div>
- <div style="margin-top:6px;font:italic 400 24px/1.35 PF;color:#5a6b85">Outer edge = bright.<br>Toward the center = soft and pastel.</div>
+ <div style="margin-top:6px;font:italic 400 24px/1.35 PF;color:#5a6b85">{LY.get('wheel_legend', 'Outer edge = bright.<br>Toward the center = soft and pastel.')}</div>
 </div>
 </div></body></html>"""
 # slide 3 "Her faces" (Tiffany, Oct 19 night): the brand's photo of the faces + ALL the color cards in one place
@@ -107,7 +107,7 @@ def chip(n, h, w, sw):
             f'<div style="height:{sw}px;background:{h}"></div><div style="padding:10px 6px 11px;text-align:center">'
             f'<div style="font:700 {19 if w < 130 else 23}px/1.1 Bit;color:var(--navy)">{e(n)}</div>'
             f'<div style="font:500 14px Bit;letter-spacing:.06em;color:#7a879c;margin-top:4px">{h.upper()}</div></div></div>')
-mains = ''.join(chip(n, h, 170, 88) for n, h in ([('Papaya', cpap), ('Lavender', clav), ('Light lime', clime)] if key == 'papaya-spritz' else [(b[0].capitalize() if len(b[0]) < 14 else 'Jade-look green', b[1]) for b in P['her_colors']['backs']]))
+mains = ''.join(chip(n, h, 170, 88) for n, h in ([('Papaya', cpap), ('Lavender', clav), ('Light lime', clime)] if key == 'papaya-spritz' else [(n, b[1]) for n, b in zip(hc.get('main_labels') or [x[0].capitalize() for x in hc['backs']], hc['backs'])]))  # Nov 6: main_labels (never 'Jade-look green')
 sups = ''.join(chip(n, h, 106, 70) for n, h in hc['supporting'])
 facesl = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 1350, S['col'])}</style></head><body>
 <div style="position:relative;width:1080px;height:1350px">

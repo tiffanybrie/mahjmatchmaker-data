@@ -10,6 +10,10 @@ My Fair Malachite Dapple + Mahjong Register Emerald Pearl have none, so they are
 (nearest B&B colours). config/mat-racks-picks.json registry wins when the mat is listed.
 Code band: 10% floor everywhere (Oct 21 rule), 'SAVE WITH CODE' for the no-% brands. Title colour #225d36 (set colour,
 same as the FYM title colour fix in v115).
+Nov 6 round 3 (Tiffany 2:26am notes): spec = juniper_round3.json (her order, outs, Camellia candidate, weak at the bottom), mat 'box'
+crops on the hi-res Crane & Moon / Day Dreamer photos, the tile PILE photo (assets/tiles/album/juniper.jpg, rebuilt from OMM
+06-Tile_Juniper_F), the current flame-heart wordmark in the navy box (card_navy_logo_v3.png) and racks at TRUE relative length
+(spec true_len -> config/rack-lengths.json). JUNIPER_SPEC=<path> picks another spec.
 Usage: python3 juniper_build.py <workdir>; then python3 scripts/albumcard/gen2.py <workdir>/spec.json assets/cards/juniper"""
 import json, io, base64, re, os, sys
 from PIL import Image
@@ -18,7 +22,7 @@ from matpick import pick
 import racks as RKS
 R = '/home/claude/mahjmatchmaker-data/'
 W = sys.argv[1]; os.makedirs(W, exist_ok=True)
-A = json.load(open(R + 'scripts/albumcard/specs/juniper_round2.json'))
+A = json.load(open(os.environ.get('JUNIPER_SPEC', R + 'scripts/albumcard/specs/juniper_round3.json')))
 CC = json.load(open(R + 'config/colorcards.json'))['sets']['juniper']
 TRACKS = CC['racks']
 REG = {k: v for k, v in json.load(open(R + 'config/mat-racks-picks.json')).items() if isinstance(v, dict)}
@@ -61,7 +65,7 @@ cards, man = [], []
 for c in A['mats']:
     nm, brand, retired = c['name'], c['brand'], c['retired']
     src = Image.open(R + c['img'])
-    m = flat(src).crop(BOX[nm]) if nm in BOX else crop(src)
+    m = flat(src).crop(tuple(c['box'])) if c.get('box') else (flat(src).crop(BOX[nm]) if nm in BOX else crop(src))
     rk, mr = reg_for(c['img'], nm)
     skipped = []
     if not mr:
@@ -80,9 +84,11 @@ for c in A['mats']:
                   'tilefit': 'cover', 'racks': TRACKS, 'mat_racks': mr, 'file': fn, 'code': code, 'mat': uri(m)})
     man.append({'order': n, 'group': c['group'], 'mat': nm, 'brand': brand, 'retired_mat': retired, 'holiday': False,
                 'file': fn, 'code': code, 'src': c['img'], 'racks': TRACKS, 'mat_racks': mr, 'mat_reg': rk,
-                'skipped_no_photo': skipped, 'why': c['why'], 'caption_note': 'Pair mat' if nm == 'Lotus Cove' else None})
-json.dump({'_note': 'Juniper album DRAFT (Nov 6)', 'cards': cards, 'max_racks': 4, 'tile_brand': 'Oh My Mahjong'}, open(W + '/spec.json', 'w'))
-json.dump({'set': 'Juniper', 'status': 'DRAFT: Claude round-2 order, pending Tiffany', 'cards': man, 'title_color': CC['col'], 'tile': CC['tile'],
+                'skipped_no_photo': skipped, 'why': c['why'],
+                'caption_note': 'Pair mat' if nm == 'Lotus Cove' else ('New candidate' if c['group'] == 'new' else ('Weak: yours to cut' if c['group'] == 'weak' else None))})
+json.dump({'_note': 'Juniper album DRAFT (Nov 6 round 3)', 'cards': cards, 'max_racks': 4, 'tile_brand': 'Oh My Mahjong',
+           'navy': 'assets/brand/card_navy_logo_v3.png', 'true_len': True}, open(W + '/spec.json', 'w'))
+json.dump({'set': 'Juniper', 'status': "DRAFT: round 3 = Tiffany's Nov 6 notes applied, pending her final order", 'cards': man, 'title_color': CC['col'], 'tile': CC['tile'],
            'racks_note': 'tile racks = colorcards juniper racks; mat racks = round-2 racks with real photos (not tile racks) + matpick fill'},
           open(W + '/manifest.json', 'w'), indent=1, ensure_ascii=False)
 print(len(cards), 'cards')

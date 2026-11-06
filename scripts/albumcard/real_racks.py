@@ -119,6 +119,7 @@ if __name__ == '__main__':
     old = json.load(open(OUT + 'index.json')) if os.path.exists(OUT + 'index.json') else {'racks': {}}
     for name, (kind, path) in SRC.items():
         if kind == 'same': continue
+        if old['racks'].get(name, {}).get('built_by'): continue  # Nov 6: hand-fixed cut (e.g. OMM White Acrylic recut): never overwrite; kept below
         f = slug(name) + '.png'
         frac = old['racks'].get(name, {}).get('rack_frac', 1.0)
         if os.path.exists(path):
