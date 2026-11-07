@@ -1,7 +1,7 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-06T23:11:12+00:00",
- "fym_ref": "origin/fym-site-preview:site-app/fym-v116",
+ "swept_at": "2026-11-07T14:09:22+00:00",
+ "fym_ref": "origin/fym-site-preview:site-app/fym-v117",
  "stores": {
   "amahjline.com": {
    "brand": "Amahj",
@@ -1180,17 +1180,12 @@
   "mahjmood.com": {
    "brand": "Mahj Mood",
    "status": "ok",
-   "products": 57,
+   "products": 55,
    "mats": [
     [
      "2026-11-05T15:11:45-06:00",
      "Playing For Keeps Mat | Pre-Order, Ships January",
      "playing-for-keeps-mat"
-    ],
-    [
-     "2026-09-18T09:57:49-05:00",
-     "Sleigh All Day Mat",
-     "sleigh-all-day-mat"
     ],
     [
      "2026-09-18T09:57:41-05:00",
@@ -2456,7 +2451,7 @@
   "tigredetartan.com": {
    "brand": "Tigre de Tartan",
    "status": "ok",
-   "products": 124,
+   "products": 125,
    "mats": [
     [
      "2026-10-22T15:40:28-05:00",
@@ -4527,24 +4522,9 @@
      "camellia-kaleidoscope-artist-collab-leatherette-mahjong-mat"
     ],
     [
-     "2026-10-30T16:28:03-04:00",
-     "Vibrant Vortex Open Middle Mahjong Mat",
-     "vibrant-vortex-open-middle-mahjong-mat"
-    ],
-    [
      "2026-10-25T13:04:44-04:00",
      "Pop Bloom with Instructions Mahjong Mat",
      "pop-bloom-with-instructions-mahjong-mat"
-    ],
-    [
-     "2026-10-04T20:54:15-04:00",
-     "Flutter for a Cause Mahjong Mat",
-     "flutter-for-a-cause-mahjong-mat"
-    ],
-    [
-     "2026-10-04T16:28:24-04:00",
-     "Save the TaTas Mahjong Mat",
-     "save-the-tatas-mahjong-mat"
     ],
     [
      "2026-10-01T16:06:09-04:00",
@@ -4577,24 +4557,9 @@
      "a-few-of-my-favorite-things-custom-mahjong-mat"
     ],
     [
-     "2026-09-13T15:35:15-04:00",
-     "Royal Blue Peacock Mahjong Mat",
-     "royal-blue-peacock-mahjong-mat"
-    ],
-    [
      "2026-09-12T11:45:55-04:00",
      "Safari Garden with Instructions Mahjong Mat",
      "safari-garden-with-instructions-neoprene-mahjong-mat"
-    ],
-    [
-     "2026-09-07T17:40:05-04:00",
-     "Royal Purple Peacock Mahjong Mat",
-     "royal-purple-peacock-mahjong-mat"
-    ],
-    [
-     "2026-09-06T19:23:27-04:00",
-     "Green Apres Skiing with Skiers Mahjong Mat",
-     "green-apres-skiing-with-skiers-mahjong-mat"
     ],
     [
      "2026-08-30T21:36:12-04:00",
@@ -4630,11 +4595,6 @@
      "2026-08-03T18:23:02-04:00",
      "White Bulldog Game Day Mahjong Mat",
      "white-bulldog-game-day-mahjong-mat"
-    ],
-    [
-     "2026-08-03T18:15:35-04:00",
-     "Aggies Game Day Mahjong Mat",
-     "aggies-game-day-mahjong-mat"
     ],
     [
      "2026-08-01T11:34:49-04:00",
@@ -4830,7 +4790,7 @@
   "faitamainstudio.com": {
    "brand": "Fait à Main",
    "status": "ok",
-   "products": 46,
+   "products": 42,
    "mats": [
     [
      "2026-11-05T09:23:54-06:00",
@@ -4846,11 +4806,6 @@
      "2026-09-01T18:43:17-05:00",
      "SAINT-RÉMY MAT",
      "saint-remy-mat"
-    ],
-    [
-     "2026-08-29T00:55:11-05:00",
-     "LE DRIP MAT - SUMMER COLORS",
-     "le-drip-mat-summer-colors"
     ],
     [
      "2026-05-25T22:09:51-05:00",
