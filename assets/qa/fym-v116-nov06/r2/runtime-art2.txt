@@ -1,0 +1,55 @@
+{
+ "fails": [],
+ "info": {
+  "visibleSets": 283,
+  "kaleidoscope": true,
+  "visibleMats": 1219,
+  "deckChecks": 6226,
+  "rackChecks": 1132,
+  "emptyDecks": [],
+  "picks": {
+   "Gatsby (Oh My Mahjong)": {
+    "herVisible": 54,
+    "herDeck": 54,
+    "mTotal": 60
+   },
+   "Heritage 2.0 (Oh My Mahjong)": {
+    "herVisible": 75,
+    "herDeck": 75,
+    "mTotal": 85
+   },
+   "Osler (Oh My Mahjong)": {
+    "herVisible": 35,
+    "herDeck": 35,
+    "mTotal": 39
+   },
+   "Smith (Oh My Mahjong)": {
+    "herVisible": 38,
+    "herDeck": 38,
+    "mTotal": 40
+   },
+   "Sunday (Sunday Mahjong)": {
+    "herVisible": 34,
+    "herDeck": 34,
+    "mTotal": 43
+   },
+   "Sunday Blues (Sunday Mahjong)": {
+    "herVisible": 0,
+    "herDeck": 0,
+    "mTotal": 0
+   },
+   "Green Light Gatsby (Anders Ruff)": {
+    "herVisible": 0,
+    "herDeck": 0,
+    "mTotal": 0
+   }
+  },
+  "doorMats": 1219,
+  "doorChecks": 3805,
+  "setsForMatChecks": 1219,
+  "logosInDoorBrands": []
+ },
+ "errs": [],
+ "nErrs": 0
+}
+PAGEERR []

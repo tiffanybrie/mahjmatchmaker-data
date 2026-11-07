@@ -48,3 +48,10 @@ Gatsby / Heritage 2.0 / Smith / Osler / Sunday sets still show matches (no empty
 3. Mat Gallery (rule 0, third place): gallery_sync.py + build_v6.py against the v116 website index -> data-fym="v116". Mahjong Co. mats go
    Retired/no button; Mahjong Row's 9 gallery mats STAY with NO code claim (autoapply-hosts.json has them ON HOLD; check build_v6 does not
    add /discount/MAHJMATCH to them) before pasting.
+
+## r2 (Nov 6 ~8pm): @fdcc1868 = FULL 1.16, independent QA PASSED, artifact published
+Website copy site-app/fym-v116/index.html @fdcc1868 (fym-site-preview). The r2 builder's b116 dir was not in the QA container, so the ARTIFACT copy was made with
+builder/fym_fix_nov06/artifact116_r2.py: live r1 artifact (/home/claude/fymb116) + every field the r2 website D changed vs the r1 website D (ahid slim mats: link fields only;
+rank/cr minus ahid indexes) + the Mahj Pit rack IMG script before b24v1.js; then --slim: u_plain/u_dead dropped (build metadata, 0 refs in app code) and u/u0 dropped on the
+325 artifact-hidden slim mats, because the artifact version total must stay under 256 MiB (unslimmed = 268,484,358 bytes, refused). Every VISIBLE mat/rack/tile link and flag
+equals the website copy (1,839 items, 0 mismatches). QA evidence: assets/qa/fym-v116-nov06/r2/. Open link findings: docs/MATCH-INBOX.md (Nov 6 8pm).

@@ -1,0 +1,60 @@
+{"rl":["www.ohmymahjong.com/clear-acrylic-rack-and-pusher-set"],"rp":[],"nrp":1,"nrx":0,"closeB":0} |x
+PASS title Version 1.16 (Find Your Mat-ch (Version 1.16))
+PASS no parked names visible on home
+PASS no Mahjong Row logo in brand grid
+PASS Mahjong Co. logo present (Kaleidoscope)
+PASS tile search "Cypress" -> none
+PASS tile search "Mahjong Row" -> ♡ Heirloom Collection Crown Jewels Royal Mahjong Society / ♡ Studio Series Crown Jewels Royal Mahjong Society
+PASS tile search "Oakley" -> none
+PASS tile search "Lyla" -> none
+PASS tile search "Mabel" -> none
+PASS tile search "Laken" -> none
+PASS tile search "Honey Weave" -> none
+PASS tile search "Ash Burl" -> none
+PASS tile search "Terracotta" -> none
+PASS Kaleidoscope tile search -> ♡ Kaleidoscope Mahjong Co. · sold out
+PASS All A–Z tile list: 283 sets, none Mahjong Row/Cypress
+PASS tile colour chip switch Blue->Green then tap again clears (Green -> "")
+PASS no parked names visible on mats step (Gatsby)
+PASS colour blue -> 476 mats
+PASS colour switch to green (replaces blue) -> 392 mats; top card www.ohmymahjong.com/jade-mat-in-tube fams ["blue","green","dark","neutral","purple"]
+PASS All colors clears filter -> 1188 mats (start 1188)
+PASS tapping pink twice: fam=[] n=1188 (not locked)
+PASS no colour chip disabled (0)
+PASS mat search "Ivy Reverie" results: (none listed)
+PASS mat search "Mocha Bloom" results: (none listed)
+PASS mat search "The Lodge" results: Snowflake Reindeer Lodge Double-Sided Leatherette Mahjong Register
+PASS mat search "Hunt Club" results: The Hunt Club Charleston Mahjong Club
+PASS mat search "Gatsby" results: Gatsby's Feathered Affair Anders Ruff
+PASS mat search "Tracing the Tides" results: (none listed)
+PASS mat search "Mahjong Row" results: Brown Vegan Leather Charleston Mahjong Club / Crown Jewels Royal Mahjong Society / Year of the Horse Mat - Harlequin (Side B: Brown) Bespoke Mahjong
+PASS mat search "Mahjong Co" results: Art Deco Bam! Let's Mahjong / Azure Dolphin Cove Bougie Mahjong / Bespoke x Corey Paige - Color Crush (Side A: Rainbow Frame) Bespoke Mahjong / Bespoke x Corey Paige - Color Crush (Side B: Love Doodles) Bespoke Mahjong / Bespoke x Corey Paige - Electric Love Mat (Side A: Heart Frame) Bespoke Mahjong / Bespoke x Corey Paige - Electric Love Mat (Side B: All-Over Hearts) Bespoke Mahjong
+PASS zoom persists across 2 swipes (scale 2.5600000000000005 -> 2.5600000000000005, card www.ohmymahjong.com/cognac-mat -> www.ohmymahjong.com/heron-mat-in-tube, transform matrix(2.56, 0, 0, 2.56, -371.28, -374.4))
+PASS Tiffany picks on for Gatsby -> 52 mats
+PASS no parked names visible on her picks
+PASS picked mat www.ohmymahjong.com/heron-mat-in-tube
+PASS no parked names visible on racks
+PASS rack deck has no Mahjong Row (293 racks)
+PASS rack Brand menu has no Mahjong Row
+PASS card preview rendered: 2160x2700 data:image/jpeg;base64,/9j/4AAQSkZJRgABA ; 560x560 data:image/jpeg;base64,/9j/4AAQSkZJRgABA ; 140x138 data:image/jpeg;base64,/9j/4AAQSkZJRgABA canvas none
+PASS share action fired {"text":"Matched on www.mahjmatchmaker.com","title":"My Find Your Mat-ch card","files":["gatsby-match-post.png 5182659"]}
+PASS Discount code links -> https://mahjmatchmaker.com/oh-my-mahjong-discount-code , https://mahjmatchmaker.com/oh-my-mahjong-discount-code , https://mahjmatchmaker.com/oh-my-mahjong-discount-code
+PASS no parked names visible on mat door
+PASS mat door brands (56) exclude Mahjong Row / Mahjong Co. mats
+PASS mat door colour: blue {"f":["blue"],"n":488} -> green {"f":["green"],"n":404} -> tap again {"f":[],"n":1219} -> cleared {"f":[],"n":1219} (all 1219)
+PASS mat door search "Ivy Reverie" -> none
+PASS mat door search "Lodge" -> ♡ Snowflake Lodge Premium Mahjong Register / ♡ Snowflake Reindeer Lodge Double-Sided Leatherette Mahjong  / ♡ Alpine Ski Lodge Winter Splash of Color
+PASS mat door search "Hunt Club" -> ♡ The Hunt Club Charleston Mahjong Club
+PASS mat door search "Gatsby" -> ♡ Gatsby's Feathered Affair Anders Ruff
+PASS mat door search "Mocha" -> ♡ Mocha Kaleidoscope Let's Be Besties / ♡ Mocha Ripple YOLO Mahjong
+PASS mat door search "Mahjong Row" -> ♡ Brown Vegan Leather Charleston Mahjong Club / ♡ Crown Jewels Royal Mahjong Society / ♡ Year of the Horse Mat - Harlequin (Side B: Brown) Bespoke 
+PASS no parked names visible on tile swipe (mat first)
+PASS mat-first tile deck for www.ohmymahjong.com/larkspur-mat-in-tube: 267 sets, no Mahjong Row
+PASS mat-door tile search "Cypress" -> none
+PASS mat-door tile search "Oakley" -> none
+PASS mat-door tile search "Mahjong Row" -> Heirloom Collection Crown Jewels Royal Mahjong Society / Studio Series Crown Jewels Royal Mahjong Society
+PASS mat-door tile search "Ash Burl" -> none
+PASS mat-door tile search Kaleidoscope -> Kaleidoscope Mahjong Co. · sold out
+PASS mat-door card shared ({"step":"tiles","set":32,"setName":"Limoncello","fav":"www.ohmymahjong.com/larkspur-mat-in-tube"})
+PASS no page errors (0)
+FAILS 0
