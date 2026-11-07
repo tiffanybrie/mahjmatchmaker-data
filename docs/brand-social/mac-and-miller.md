@@ -1,6 +1,7 @@
 # Mac + Miller Mahjong (@macmillermahjong): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 7 12:05pm ET (email): 'The Dreamer's Holiday Gift Guide is here' newsletter (HTML-only; no new product named in the text).
 - Nov 7 8:08am ET: sponsor at the Carry On Mahjong retreat (Palm Springs); event-only specials by QR for attendees (https://www.instagram.com/reel/DfcQDn4zuYA/). Not a public sale.
 - Oct 24: Golden Heirloom collection samples (mat arrived; tiles, racks, bags pending) (De5G6IFz0qa); at New Orleans Mahjong Classic.
 - Oct 17: new mats Carnival in Bloom + Let the Good Times Toile in stock (Dek4TIPNQ7U).

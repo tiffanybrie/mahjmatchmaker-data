@@ -1,10 +1,18 @@
-# Partner launches & restocks (2026-11-07 18:36 UTC)
+# Partner launches & restocks (2026-11-07 23:33 UTC)
 
-## Since last run: 1 to act on
-- **NEW** Oh My Mahjong · Pearlescent Mahjong Tiles (tiles) · https://www.ohmymahjong.com/products/pearlescent-tile-set
+## Since last run: 6 to act on
+- **RESTOCK** Mahjong Studios · 20" Luxury Handmade Tortoise Shell Acrylic Mahjong Racks and Pusher Set (rack) · 20" Tortoise Shell Straight Pusher · https://mahjongstudios.com/products/20-luxury-handmade-tortoise-shell-acrylic-mahjong-racks-and-pusher-set
+- **RESTOCK** Mahjong Studios · 20" Red Luxury Acrylic Scalloped Mahjong Rack & Pusher (rack) · Red · https://mahjongstudios.com/products/20-red-luxury-acrylic-scalloped-mahjong-rack-pusher
+- **NEW** Let's Be Besties · Tidal Glass with Simple Middle Mahjong Mat (mat) · https://letsbebesties.com/products/tidal-glass-with-simple-middle-mahjong-mat
+- **NEW VARIANT** Let's Be Besties · Canasta Suits Game Mat Tabletop (mat) · 33.5" · https://letsbebesties.com/products/canasta-suits-game-mat-tabletop-31-5-inch
+- **NEW** Fait à Main · LE DRIP MAT - SUMMER COLORS (mat) · https://www.fait-a-main.com/products/le-drip-mat-summer-colors
+- **NEW** Fait à Main · TEXAS MON AMOUR MAT CREAM (mat) · https://www.fait-a-main.com/products/texas-mon-amour-mat
 
 ## Created/published in the last 7 days (tiles, mats, racks)
 - 2026-11-07 · Oh My Mahjong · Pearlescent Mahjong Tiles (tiles) · available · https://www.ohmymahjong.com/products/pearlescent-tile-set
+- 2026-11-07 · Let's Be Besties · Tidal Glass with Simple Middle Mahjong Mat (mat) · available · https://letsbebesties.com/products/tidal-glass-with-simple-middle-mahjong-mat
+- 2026-11-07 · Fait à Main · LE DRIP MAT - SUMMER COLORS (mat) · NOT available · https://www.fait-a-main.com/products/le-drip-mat-summer-colors
+- 2026-11-07 · Fait à Main · TEXAS MON AMOUR MAT CREAM (mat) · available · https://www.fait-a-main.com/products/texas-mon-amour-mat
 - 2026-11-06 · Let's Be Besties · Pink Christmas Mahjong Mat (mat) · available · https://letsbebesties.com/products/pink-christmas-mahjong-mat
 - 2026-11-06 · Splash of Color · Love At First Mahj Sweet Valentine Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/love-at-first-mahj-sweet-valentine-mahjong-mat-sleek-surface
 - 2026-11-06 · Splash of Color · Sweetness You're My Weakness Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/sweetness-youre-my-weakness-mahjong-mat-sleek-surface
@@ -54,13 +62,12 @@
 - 2026-11-01 · Splash of Color · The Kitschmas Mahj Club Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/the-kitschmas-mahj-club-mahjong-mat-sleek-surface
 - 2026-11-01 · Splash of Color · The Kitschmas Mahj Club Christmas Cardinal American Engraved Mahjong Tiles (tiles) · available · https://splashofcolorco.com/products/the-kitschmas-mahj-club-christmas-cardinal-american-engraved-mahjong-tiles
 - 2026-11-01 · Splash of Color · Jolly Nostalgic Santa Bam Bird Christmas Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/jolly-nostalgic-santa-bam-bird-christmas-mahjong-mat-sleek-surface
-- 2026-10-31 · Let's Be Besties · Tropicana Mahjong Mat (mat) · available · https://letsbebesties.com/products/tropicana-mahjong-mat
 
 ## Stores
 - amahjline.com: ok 33 products
 - birdandbamboo.com: ok 59 products
 - brittmillsdesign.com: ok 712 products
-- letsbebesties.com: ok 553 products
+- letsbebesties.com: ok 554 products
 - mahjandvine.com: ok 21 products
 - mahjmood.com: ok 55 products
 - mahjongco.com: ok 1 products
@@ -74,7 +81,7 @@
 - shop.andersruff.com: ok 162 products
 - soireeallday.co: not checkable (not Shopify or blocked)
 - splashofcolorco.com: ok 2150 products
-- sundaymahjong.com: ok 86 products
+- sundaymahjong.com: ok 87 products
 - sweetjojomahjong.com: ok 82 products
 - themahjongpress.com: ok 7 products
 - theroyalmahjongsociety.com: ok 50 products
@@ -83,7 +90,7 @@
 - www.bamletsmahjong.com: ok 68 products
 - www.bespokemahjong.com: ok 349 products
 - www.charlestonmahjongclub.com: ok 71 products
-- www.fait-a-main.com: ok 42 products
+- www.fait-a-main.com: ok 41 products
 - www.hiphipmahjong.com: ok 72 products
 - www.letsmahj-on.com: ok 83 products
 - www.macandmillermahjong.com: ok 36 products

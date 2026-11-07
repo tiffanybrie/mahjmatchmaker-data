@@ -135,6 +135,22 @@
    "what": "In-person store coming soon",
    "tag": "news",
    "action": "Watch"
+  },
+  {
+   "brand": "Middle & Main",
+   "partner": true,
+   "what": "Unannounced new tile set on display in the new store, 'awaiting her online debut' (no name/date yet)",
+   "tag": "tiles",
+   "action": "Watch the store; swipe book the day the listing appears",
+   "url": "https://www.instagram.com/reel/DfcJsTxyEiw/"
+  },
+  {
+   "brand": "YOLO Mahjong",
+   "partner": true,
+   "what": "Journey to the West tiles: 1st allocation fully reserved; 2nd allocation reservations open (delivery Jan 2027)",
+   "tag": "tiles",
+   "action": "Add to Monday codes post as a preorder",
+   "url": "https://www.instagram.com/p/DfaykcRzwQq/"
   }
  ],
  "just_dropped": [
@@ -155,6 +171,24 @@
    "tag": "tiles",
    "action": "Reshare + code MAHJMATCH",
    "url": "https://www.viroramahjong.com/products/florielle"
+  },
+  {
+   "date": "2026-11-07",
+   "brand": "Fait à Main",
+   "partner": true,
+   "what": "Texas Mon Amour mat in CREAM (bandana + paisley + hearts, $175)",
+   "tag": "mat",
+   "action": "New in Find Your Mat-ch (queued; repoint the Green card's link to -green)",
+   "url": "https://www.faitamainstudio.com/products/texas-mon-amour-mat"
+  },
+  {
+   "date": "2026-11-07",
+   "brand": "Let's Be Besties",
+   "partner": true,
+   "what": "Tidal Glass with Simple Middle mat (plain-centre version of Tidal Glass, from $85)",
+   "tag": "mat",
+   "action": "New in Find Your Mat-ch (queued for photo flags)",
+   "url": "https://letsbebesties.com/products/tidal-glass-with-simple-middle-mahjong-mat"
   },
   {
    "date": "2026-11-06",
@@ -309,6 +343,12 @@
   }
  ],
  "nonpartners": [
+  {
+   "date": "2026-11-07",
+   "brand": "Bougie Mahjong",
+   "what": "Riviera Leopard Collection launched: mat (neoprene or sueded felt) + tote, tile bag, pouch",
+   "url": "https://www.instagram.com/p/Dfc30dQoIqR/"
+  },
   {
    "date": "2026-11-07",
    "brand": "Mahjong Moxie",
@@ -555,9 +595,9 @@
    "src": "store"
   }
  ],
- "updatedAt": "2026-11-07T22:03:39+00:00",
+ "updatedAt": "2026-11-07T23:39:50+00:00",
  "sources": {
-  "store_run": "2026-11-07T18:36:01+00:00",
-  "ig_run": "2026-11-07T18:49:14.193517+00:00"
+  "store_run": "2026-11-07T23:33:23+00:00",
+  "ig_run": "2026-11-07T23:38:25.960642+00:00"
  }
 }

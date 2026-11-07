@@ -19,6 +19,24 @@
    "url": "https://sweetjojomahjong.com/collections/all",
    "status": "HELD: Sweet Jojo is not on the partner allow list (builder/fym_flags/nonpartner_allow.json); add only if Tiffany says it's a partner",
    "source": "partner_launch_watch"
+  },
+  {
+   "added": "2026-11-07",
+   "brand": "Let's Be Besties",
+   "name": "Tidal Glass with Simple Middle Mahjong Mat",
+   "kind": "mat",
+   "url": "https://letsbebesties.com/products/tidal-glass-with-simple-middle-mahjong-mat",
+   "status": "pending photo flags",
+   "source": "partner_launch_watch"
+  },
+  {
+   "added": "2026-11-07",
+   "brand": "Fait à Main",
+   "name": "Texas Mon Amour Mat Cream (reuses old handle texas-mon-amour-mat; repoint FYM Green card to -green)",
+   "kind": "mat",
+   "url": "https://www.faitamainstudio.com/products/texas-mon-amour-mat",
+   "status": "pending photo flags",
+   "source": "partner_launch_watch"
   }
  ]
 }
