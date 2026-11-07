@@ -23,12 +23,68 @@
 @media (max-width:640px){.po .hide-sm{display:none}}
 [data-dash-source-state=empty]{color:transparent}
 [data-dash-source-state=refreshing]{opacity:.5;transition:opacity var(--cds-dur-slow)}
+.po>*{min-width:0}
+.po .close{border:2px solid var(--color-fg);min-width:0}
+.po .tw{max-width:100%}
+.po .big{font-family:var(--font-anthropic-serif);font-size:calc(var(--cds-font-size-title)*1.6);font-variant-numeric:tabular-nums;line-height:1.1;margin:var(--cds-gap-xs) 0}
+.po .tile.go .v{color:var(--color-ok)}
+.po .bar{height:12px;border-radius:999px;background:var(--color-border-line);overflow:hidden;margin:var(--cds-gap-sm) 0 var(--cds-gap-xs)}
+.po .bar>div{height:100%;width:0;background:var(--color-ok);transition:width var(--cds-dur-slow)}
+.po h3{font-size:var(--cds-font-size-body);font-weight:var(--cds-font-weight-medium);margin:var(--cds-gap-lg) 0 var(--cds-gap-xs)}
+.po .grid2{display:grid;gap:var(--cds-gap-md);grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr))}
+.po .grid2>div{min-width:0}
 </style>
 <div class="po">
   <header>
     <h1>Payout Tracker</h1>
     <p class="lede">You earned <b data-draw="earned" data-source="totals" data-field="earned">—</b> in October. <b data-draw="paid" data-source="totals" data-field="paid">—</b> has been paid since Sep 1, <b data-draw="owed" data-source="totals" data-field="owed">—</b> is still owed, and <b data-draw="overdue" data-source="totals" data-field="overdue">—</b> of that is past the brand's payout window.</p>
   </header>
+  <section class="card close" id="close-october">
+    <h2>Close October</h2>
+    <p class="note">October sales only. Money for November sales stays in PayPal. Brands pay October on their own schedule, so this fills in through December.</p>
+    <div class="l">Safe to move out of PayPal now (October money)</div>
+    <div class="big" data-draw="safe" data-source="close" data-field="safe">—</div>
+    <p class="note">October money that has landed in PayPal, minus what you've already moved to Byline. November-sales money in PayPal right now: <b data-draw="novpp" data-source="close" data-field="nov_pp">—</b> (leave it). September money also sitting in PayPal: <b data-draw="seppp" data-source="close" data-field="sep_pp">—</b> (closed too, fine to move whenever).</p>
+    <div class="tiles">
+      <div class="tile"><div class="l">October earned</div><div class="v" data-draw="oe" data-source="close" data-field="earned">—</div></div>
+      <div class="tile go"><div class="l">Received in PayPal</div><div class="v" data-draw="rpp" data-source="close" data-field="rec_paypal">—</div></div>
+      <div class="tile go"><div class="l">Received in the bank</div><div class="v" data-draw="rbank" data-source="close" data-field="rec_bank">—</div></div>
+      <div class="tile"><div class="l">Gift card / store credit (not cash)</div><div class="v" data-draw="rcard" data-source="close" data-field="rec_card">—</div></div>
+      <div class="tile"><div class="l">Still to come for October</div><div class="v" data-draw="tocome" data-source="close" data-field="to_come">—</div></div>
+    </div>
+    <h3>Set aside so far vs October earned</h3>
+    <div class="bar" data-draw="bar" data-source="close"></div>
+    <p class="note"><b data-draw="setaside" data-source="close" data-field="set_aside">—</b> set aside of <b data-draw="oe2" data-source="close" data-field="earned">—</b> (<b data-draw="pct" data-source="close" data-field="pct">—</b>). Set aside = the Bam Bird bank transfer + everything you've moved from PayPal to Byline.</p>
+    <div class="grid2">
+      <div>
+        <h3>Still to come for October</h3>
+        <div class="tw">
+          <table data-source="octcome" data-row-key="brand">
+            <thead><tr><th data-field="expected_by">Expected</th><th data-field="brand">Brand</th><th class="n" data-field="left">October left</th></tr></thead>
+            <tbody data-draw="octcomerows"></tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h3>October money received</h3>
+        <div class="tw">
+          <table data-source="payments" data-row-key="date,brand">
+            <thead><tr><th data-field="date">Date</th><th data-field="brand">Brand</th><th class="n" data-field="oct_amount">October part</th><th data-field="account">Where</th></tr></thead>
+            <tbody data-draw="octrecrows"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <h3>Moved to Byline</h3>
+    <p class="note">Tell me in chat when you move money ("moved $X to Byline today") and I log it here; the safe-to-move number goes down by that amount. I never move money myself.</p>
+    <div class="tw">
+      <table data-source="moves" data-row-key="date">
+        <thead><tr><th data-field="date">Date</th><th class="n" data-field="amount">Amount</th><th data-field="note">Note</th></tr></thead>
+        <tbody data-draw="moverows"></tbody>
+      </table>
+    </div>
+    <p class="note nomoves" hidden>Nothing moved yet.</p>
+  </section>
   <div class="tiles">
     <div class="tile"><div class="l">October earned</div><div class="v" data-draw="earned" data-source="totals" data-field="earned">—</div></div>
     <div class="tile"><div class="l">Paid since Sep 1</div><div class="v" data-draw="paid" data-source="totals" data-field="paid">—</div></div>
@@ -66,6 +122,7 @@
           <th class="n" data-field="past_due">Past due</th>
           <th data-field="expected_by">Expected by</th>
           <th class="hide-sm" data-field="method">Paid by</th>
+          <th class="hide-sm" data-field="sep_check">September check</th>
           <th class="hide-sm" data-field="note">Note</th>
         </tr></thead>
         <tbody data-draw="brandrows"></tbody>
@@ -74,14 +131,16 @@
   </section>
   <section class="card" id="payments">
     <h2>Payments received</h2>
-    <p class="note">Every payout as it lands, newest first.</p>
+    <p class="note">Every payout as it lands, newest first, with which month&rsquo;s sales it pays and how sure that is (known = amounts match to the cent; likely = fits their pattern; guess = needs their dashboard).</p>
     <div class="tw">
       <table data-source="payments" data-row-key="date,brand">
         <thead><tr>
           <th data-field="date">Date</th>
           <th data-field="brand">Brand</th>
           <th class="n" data-field="amount">Amount</th>
-          <th data-field="method">Method</th>
+          <th data-field="account">Where</th>
+          <th data-field="for_month">For sales in</th>
+          <th class="hide-sm" data-field="how_sure">How sure</th>
           <th class="hide-sm" data-field="note">Note</th>
         </tr></thead>
         <tbody data-draw="payrows"></tbody>
@@ -134,7 +193,7 @@
       td(usd(num(r.oct_earned)), 'n'); td(usd(num(r.paid_since_sep1)), 'n');
       const o = td(num(r.still_owed) == null ? '' : usd(num(r.still_owed)), 'n');
       td(num(r.past_due) ? usd(num(r.past_due)) : '', 'n');
-      td(r.expected_by ? fmtD(r.expected_by) : '', ''); td(r.method, 'hide-sm muted'); td(r.note || '', 'hide-sm muted');
+      td(r.expected_by ? fmtD(r.expected_by) : '', ''); td(r.method, 'hide-sm muted'); td(r.sep_check || '', 'hide-sm muted'); td(r.note || '', 'hide-sm muted');
       tb.append(tr);
     });
   });
@@ -153,10 +212,69 @@
   dash.draw('payrows', (tb) => {
     const g = dash.data('payments'); tb.replaceChildren();
     if (g.status !== 'ok') return;
-    g.data.slice().sort((a, b) => String(b.date).localeCompare(String(a.date))).forEach((r) => {
+    g.data.slice().sort((a, b) => String(b.date || '9').localeCompare(String(a.date || '9'))).forEach((r) => {
       const tr = document.createElement('tr');
-      [[r.date, ''], [r.brand, 'brand'], [usd(num(r.amount)), 'n'], [r.method, ''], [r.note || '', 'hide-sm muted']].forEach(([t, c]) => { const x = document.createElement('td'); x.className = c; x.textContent = t; tr.append(x); });
+      [[r.date, ''], [r.brand, 'brand'], [num(r.amount) == null ? '' : usd(num(r.amount)), 'n'], [r.account, ''], [r.for_month, ''], [r.how_sure, 'hide-sm muted'], [r.note || '', 'hide-sm muted']].forEach(([t, c]) => { const x = document.createElement('td'); x.className = c; x.textContent = t; tr.append(x); });
       tb.append(tr);
     });
   });
+  dash.calc('close', {
+    title: 'Close October',
+    description: 'October earned, October money received by account, still to come, what has been moved to Byline, and what is safe to move out of PayPal.',
+    inputs: ['brands', 'payments', 'moves'],
+    fn: (brands, payments, moves) => {
+      const n = (x) => (x === '' || x == null ? 0 : Number(x));
+      const earned = brands.reduce((s, b) => s + n(b.oct_earned), 0);
+      const oct = (acc) => payments.filter((p) => acc(p.account)).reduce((s, p) => s + n(p.oct_amount), 0);
+      const rec_paypal = oct((a) => a === 'PayPal');
+      const rec_bank = oct((a) => /^Bank/.test(a));
+      const rec_card = oct((a) => /gift card|credit/i.test(a));
+      const moved = moves.reduce((s, m) => s + n(m.amount), 0);
+      const pp = payments.filter((p) => p.account === 'PayPal');
+      const set_aside = moved + rec_bank;
+      return [{ earned, rec_paypal, rec_bank, rec_card, to_come: earned - rec_paypal - rec_bank - rec_card, moved,
+        safe: Math.max(0, rec_paypal - moved), sep_pp: pp.reduce((s, p) => s + n(p.sep_amount), 0),
+        nov_pp: pp.reduce((s, p) => s + n(p.nov_amount), 0), set_aside, pct: earned ? set_aside / earned : 0 }];
+    }
+  });
+  dash.calc('octcome', {
+    title: 'October still to come',
+    description: 'Per brand: October earned minus the October part of every payment received.',
+    inputs: ['brands', 'payments'],
+    fn: (brands, payments) => {
+      const n = (x) => (x === '' || x == null ? 0 : Number(x));
+      return brands.map((b) => ({ brand: b.brand, expected_by: b.expected_by, how_sure: b.how_sure,
+        left: n(b.oct_earned) - payments.filter((p) => p.brand === b.brand).reduce((s, p) => s + n(p.oct_amount), 0) }))
+        .filter((r) => r.left > 0.005);
+    }
+  });
+  const closeVal = (k, f) => (el) => { const t = dash.data('close'); el.textContent = t.status === 'ok' && t.data[0] ? f(t.data[0][k]) : '—'; };
+  [['safe', 'safe'], ['novpp', 'nov_pp'], ['seppp', 'sep_pp'], ['oe', 'earned'], ['oe2', 'earned'], ['rpp', 'rec_paypal'], ['rbank', 'rec_bank'], ['rcard', 'rec_card'], ['tocome', 'to_come'], ['setaside', 'set_aside']]
+    .forEach(([d, k]) => dash.draw(d, closeVal(k, usd)));
+  dash.draw('pct', closeVal('pct', (v) => d3.format('.0%')(v)));
+  dash.draw('bar', (el) => { const t = dash.data('close'); const fill = document.createElement('div'); fill.style.width = t.status === 'ok' && t.data[0] ? Math.min(100, t.data[0].pct * 100) + '%' : '0'; el.replaceChildren(fill); });
+  dash.draw('octcomerows', (tb) => {
+    const g = dash.data('octcome'); tb.replaceChildren();
+    if (g.status !== 'ok') return;
+    g.data.slice().sort((a, b) => String(a.expected_by || '9').localeCompare(String(b.expected_by || '9')) || b.left - a.left).forEach((r) => {
+      const tr = document.createElement('tr');
+      [[r.expected_by ? fmtD(r.expected_by) : 'not set', ''], [r.brand, 'brand'], [usd(r.left), 'n']].forEach(([t, c]) => { const x = document.createElement('td'); x.className = c; x.textContent = t; tr.append(x); });
+      tb.append(tr);
+    });
+  });
+  dash.draw('octrecrows', (tb) => {
+    const g = dash.data('payments'); tb.replaceChildren();
+    if (g.status !== 'ok') return;
+    g.data.filter((r) => num(r.oct_amount) > 0).sort((a, b) => String(b.date || '9').localeCompare(String(a.date || '9'))).forEach((r) => {
+      const tr = document.createElement('tr');
+      [[r.date || 'date pending', ''], [r.brand, 'brand'], [usd(num(r.oct_amount)), 'n'], [r.account, '']].forEach(([t, c]) => { const x = document.createElement('td'); x.className = c; x.textContent = t; tr.append(x); });
+      tb.append(tr);
+    });
+  });
+  dash.draw('moverows', (tb) => {
+    const g = dash.data('moves'); tb.replaceChildren();
+    if (g.status !== 'ok') return;
+    g.data.forEach((r) => { const tr = document.createElement('tr'); [[r.date, ''], [usd(num(r.amount)), 'n'], [r.note || '', 'muted']].forEach(([t, c]) => { const x = document.createElement('td'); x.className = c; x.textContent = t; tr.append(x); }); tb.append(tr); });
+  });
+  dash.onData(() => { const g = dash.data('moves'); document.querySelectorAll('.nomoves').forEach((el) => { el.hidden = !(g.status === 'ok' && g.data.length === 0); }); });
 </script>

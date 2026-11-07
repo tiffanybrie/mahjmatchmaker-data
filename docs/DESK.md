@@ -207,3 +207,5 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - HQ smoke test at 390px not run (data-only change, no page HTML changed).
 
 See CLAUDE.md.
+
+- OPS (Chrome): SEPTEMBER CHECK for the Payout Tracker 'Close October': on each own-dashboard brand (My Fair, Mahjong Co., Mini Mahjer, Hip Hip, Bam!, CMC, Amahj, Splash, Mac + Miller, OMM) read Commission filtered Sep 1-30: any Approved/Pending (unpaid) September rows -> amount per brand into docs/payouts/brands.csv sep_check, re-upload + update dataset 'brands' on https://claude.ai/artifact/Q3r6wMhYLqoyJSYnfKmtH2. Also confirm the Middle & Main Oct 13 $43.88 payout is September and the Bird & Bamboo Oct 26 $106.65 is September (payments.csv for_month). Bam Bird bank transfer: exact amount + date from Tiffany's screenshot.

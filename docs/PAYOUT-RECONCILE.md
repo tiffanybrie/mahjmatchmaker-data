@@ -36,3 +36,6 @@ Weekly (Mondays, with the sales close-out) + the 1st and 16th of each month. OVE
 ## Payout Tracker (Tiffany Nov 6 4:20pm: "build the sheet")
 Live page: https://claude.ai/artifact/Q3r6wMhYLqoyJSYnfKmtH2 (Dashboard type). Data = two attached CSVs (source of truth copies in docs/payouts/brands.csv + payments.csv).
 WEEKLY (Main, standing): read PayPal + GoAffPro + UpPromote payment emails/dashboards, update both CSVs, upload_asset the new file, update datasets/<id> url+name+updated+edit. Every new payout lands in payments.csv the day its email arrives.
+
+## Close October (Nov 7)
+Payout Tracker top section 'Close October': payments.csv has account + for_month + sep/oct/nov split + how_sure; moves.csv logs PayPal->Byline transfers she tells us about (Claude never moves money). Safe to move = PayPal October money - moved. Update both files and re-upload when a payout lands or she moves money.
