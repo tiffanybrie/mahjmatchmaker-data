@@ -27,7 +27,7 @@
     },
     "le-bandana-pink-greenswipe": {
       "url": "https://claude.ai/artifact/EMbrWBQp3ah2GGH62dfZB3",
-      "product": "Le Bandana Pink & Green mat (Fait à Main)",
+      "product": "Le Bandana Pink & Green mat (Fait \u00e0 Main)",
       "handle": "le-bandana-pink-green",
       "status": "open",
       "votes": false,
@@ -40,6 +40,14 @@
       "status": "open",
       "votes": false,
       "published": "2026-11-06"
+    },
+    "texas-mon-amour-mat-creamswipe": {
+      "url": "https://claude.ai/artifact/SQ95amcyW1VY8K5pNkDJZC",
+      "product": "Texas Mon Amour Cream mat (Fait \u00e0 Main)",
+      "handle": "texas-mon-amour-mat",
+      "status": "open",
+      "votes": false,
+      "published": "2026-11-07"
     }
   }
 }

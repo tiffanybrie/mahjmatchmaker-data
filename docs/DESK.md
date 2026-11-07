@@ -35,6 +35,8 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **Main: blog posts name tile sets with albums but don't link them** (list in the Nov 5 desk, git show 09006524:docs/DESK.md). Target Mon Nov 9.
 - **Main: revenue-alert cards**: 11 per-brand alert docs still in HQ needs (archived/info-only); fold into one Money summary in the morning report.
 - **OPS: copy flat renders to Dropbox /Mahj Matchmaker Albums/New releases/<brand>/** (Nov 2-6 list in the Nov 5 desk) + Bam! Let's Mahjong teaser (assets/launches/bamlets-new-mat-teaser/).
+- **OPS: copy assets/launches/faitamain-texas-mon-amour-mat-cream/ to Dropbox /Mahj Matchmaker Albums/New releases/Fait à Main/ today** and **assets/launches/letsbebesties-tidal-glass-with-simple-middle-mahjong-mat/ to /New releases/Let's Be Besties/** (launch watch Nov 7 6pm).
+- **OPS: search Tiles & Tablescapes for Mahj Pit Full Sizes Black Tiles** (listed Nov 7, $385, no photos yet; copy its photos to Dropbox /New releases/Mahj Pit/ once posted).
 - **OPS: follow + favorite @mahjpit.co** (docs/IG-FAVORITES.md); minimahjer.com Black Friday code check.
 - **Main: prompt fixes still not applied**: sales-check prompt (all secomapp/goaffpro/backinstock mails, refunds on the refund date); "close leftover Claude tab groups" in every Chrome task; mat-edit-alert step in launch watch trig_01S2VsjwznnHev1uUbYmEwJq; launch/partner watch "wholesale customers only" + same-day FB group draft.
 - **Main: duplicate catch-up tasks** trig_019StaM8LkmrxGKtK7xhXang + trig_013ZpyRxFivSKPoYTgSvVBU6: pausing one is her call.

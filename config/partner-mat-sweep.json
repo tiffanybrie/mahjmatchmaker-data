@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-07T14:09:22+00:00",
+ "swept_at": "2026-11-07T23:08:47+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v117",
  "stores": {
   "amahjline.com": {
@@ -2451,7 +2451,7 @@
   "tigredetartan.com": {
    "brand": "Tigre de Tartan",
    "status": "ok",
-   "products": 125,
+   "products": 124,
    "mats": [
     [
      "2026-10-22T15:40:28-05:00",
@@ -2672,8 +2672,13 @@
   "letsbebesties.com": {
    "brand": "Let's Be Besties",
    "status": "ok",
-   "products": 553,
+   "products": 554,
    "mats": [
+    [
+     "2026-11-07T17:54:35-05:00",
+     "Tidal Glass with Simple Middle Mahjong Mat",
+     "tidal-glass-with-simple-middle-mahjong-mat"
+    ],
     [
      "2026-11-06T17:21:30-05:00",
      "Pink Christmas Mahjong Mat",
@@ -4512,6 +4517,11 @@
    ],
    "missing": [
     [
+     "2026-11-07T17:54:35-05:00",
+     "Tidal Glass with Simple Middle Mahjong Mat",
+     "tidal-glass-with-simple-middle-mahjong-mat"
+    ],
+    [
      "2026-11-06T17:21:30-05:00",
      "Pink Christmas Mahjong Mat",
      "pink-christmas-mahjong-mat"
@@ -4790,8 +4800,18 @@
   "faitamainstudio.com": {
    "brand": "Fait à Main",
    "status": "ok",
-   "products": 42,
+   "products": 41,
    "mats": [
+    [
+     "2026-11-07T15:22:25-06:00",
+     "LE DRIP MAT - SUMMER COLORS",
+     "le-drip-mat-summer-colors"
+    ],
+    [
+     "2026-11-07T14:02:16-06:00",
+     "TEXAS MON AMOUR MAT CREAM",
+     "texas-mon-amour-mat"
+    ],
     [
      "2026-11-05T09:23:54-06:00",
      "TEXAS MON AMOUR MAT GREEN",
@@ -4806,11 +4826,6 @@
      "2026-09-01T18:43:17-05:00",
      "SAINT-RÉMY MAT",
      "saint-remy-mat"
-    ],
-    [
-     "2026-05-25T22:09:51-05:00",
-     "TEXAS MON AMOUR MAT PEACH",
-     "texas-mon-amour-mat-peach"
     ]
    ],
    "missing": [
