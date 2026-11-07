@@ -380,6 +380,20 @@ def main():
     bad = [s for s in pages if len(H[s]) < 2000]
     if bad:
         print('WARN short/failed pages:', bad, file=sys.stderr)
+    # Removed brands (config/code-truth.json removed_brands, e.g. Mahjong Row & Co., Tiffany Nov 6 1:19/1:33pm): their
+    # removed_pages (code page, Cypress album) never appear in search, even before the site hides them. Pages that are
+    # gone (404 / short) or password-hidden are dropped too.
+    RB = json.load(open(os.path.join(ROOT, 'config', 'code-truth.json'))).get('removed_brands', {})
+    gone = {p_.strip('/') for v_ in RB.values() for p_ in v_.get('removed_pages', [])}
+    gone |= {s_ for s_ in pages if len(H[s_]) < 2000 or re.search(r'<input[^>]+type="password"', H[s_])}
+    for s_ in sorted(gone):
+        if s_ in H:
+            print('  page left out of search (removed brand / gone / password):', s_, file=sys.stderr)
+            H[s_] = ''
+    slugs = [s_ for s_ in slugs if s_ not in gone]
+    pages = [s_ for s_ in pages if s_ not in gone]
+    removed_brand_keys = {brand_key(b_) for b_ in RB}
+    HIDDEN_MAT_BRANDS = re.compile(r'^mahjong co\.?$|mahjong by si', re.I)  # every Mahjong Co. mat hidden (Tiffany Nov 6 3:56pm); tiles stay
 
     # ---- Mat Gallery (live code block JSON) ----
     g = H['mahjong-mats']
@@ -503,7 +517,7 @@ def main():
                 hits = [i] if i is not None else fuzzy_mat(R, name, brand)
                 if hits and len(hits) > 1:
                     multi_hits.append((albums[ai][0], name, brand, base, [R[h][1] for h in hits]))
-            if not hits and re.search(r'mahjong studios|four winds', brand or '', re.I):
+            if not hits and (re.search(r'mahjong studios|four winds', brand or '', re.I) or HIDDEN_MAT_BRANDS.search((brand or '').strip())):
                 continue  # removed brands (Tiffany Oct 20): no mat cards/shop links in search either
             if not hits:
                 unmatched += 1
@@ -554,6 +568,13 @@ def main():
     for x in xs:
         if (norm(x[0]), brand_key(x[1])) in fret:
             x[3], x[4] = '', 1
+    # removed brands keep their album mats but never a code claim: no code-page link, no /discount/ link (gallery 2a2 match)
+    for row, nm_, br_ in [(m, m[1], m[2]) for m in mats] + [(x, x[0], x[1]) for x in xs]:
+        if brand_key(br_) in removed_brand_keys:
+            if row[3] and (row[3].startswith('/') or '/discount/' in row[3]):
+                row[3] = ''
+            if row is not None and len(row) > 9 and isinstance(row[5], list):
+                row[6] = ''
     n_fret = sum(1 for m in mats if m[4]) + sum(1 for x in xs if x[4])
     # every shop link is checked: a 404/410 link is dropped (QA Nov 6: retired Dapper 2's OMM link 404s)
     dead = []
