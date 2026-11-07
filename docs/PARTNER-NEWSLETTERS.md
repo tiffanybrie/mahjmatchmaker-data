@@ -10,13 +10,16 @@ Why: launches like Cabana Club (CMC) and Bam Bird's MCM Olive restock were misse
 4. Weekly (Monday desk cleanup): any partner with no email in 30 days -> recheck the signup.
 5. New partner onboarding = add a row here and sign up the same day.
 
+## Chrome method that works (Nov 7)
+Shopify footer forms submitted by script or Enter do NOT confirm (page shows an hCaptcha badge; no customer_posted reload). Use the brand's signup POPUP instead (Klaviyo/Privy/Attentive): navigate, wait ~8s for it, screenshot, click the email box, type, click the button, then close/Escape the SMS step. ~2 browser calls per brand. If no popup shows, note it and move on.
+
 ## Status (Gmail check Nov 6: "seen" = their marketing emails already arrive)
 | Brand | Store | Status |
 |---|---|---|
 | Mac + Miller | macandmillermahjong.com | seen (on list) |
 | Britt Mills | brittmillsdesign.com | seen |
 | Anders Ruff | andersruff.com | seen |
-| Bam Bird | bambirdboutique.com | seen once (Aug restock, hello@); re-sign up to be safe: TODO |
+| Bam Bird | bambirdboutique.com | signed up 2026-11-07 (popup 'Sign me up', SMS step declined); check Gmail for welcome |
 | Peace Love Mahjong | peacelovemahjong.com | seen |
 | Miss Mahjong | missmahjong.com | seen |
 | Royal Mahjong Society | theroyalmahjongsociety.com | seen |
@@ -24,11 +27,11 @@ Why: launches like Cabana Club (CMC) and Bam Bird's MCM Olive restock were misse
 | Soirée All Day | soireeallday.co | seen |
 | Sweet Jojo | sweetjojomahjong.com | seen |
 | I Love Mahj | ilovemahj.com | platform emails only; TODO check for a newsletter box |
-| Charleston Mahjong Club | charlestonmahjongclub.com | TODO (priority: Cabana Club) |
-| Amahj | amahjline.com | TODO |
+| Charleston Mahjong Club | charlestonmahjongclub.com | signed up 2026-11-07 ('Join The Club' popup; first name required, used 'Mahj Matchmaker'; 'Welcome to the Club!' shown) |
+| Amahj | amahjline.com | TRIED 2026-11-07: no popup; Shopify footer form gave no confirmation (hCaptcha badge on page). Check Gmail; if nothing, retry via popup or Tiffany 10s |
 | Amanda Toppe | amandatoppeart.com | TODO (not Shopify) |
 | Bam! Let's Mahjong | bamletsmahjong.com | TODO |
-| Bespoke | bespokemahjong.com | TODO |
+| Bespoke | bespokemahjong.com | signed up 2026-11-07 (popup email step accepted, SMS step declined) |
 | Bird & Bamboo | birdandbamboo.com | TODO |
 | Fait à Main | fait-a-main.com | TODO |
 | Hip Hip | hiphipmahjong.com | TODO |
