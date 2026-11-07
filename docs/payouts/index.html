@@ -54,7 +54,7 @@
     </div>
     <h3>Set aside so far vs October earned</h3>
     <div class="bar" data-draw="bar" data-source="close"></div>
-    <p class="note"><b data-draw="setaside" data-source="close" data-field="set_aside">—</b> set aside of <b data-draw="oe2" data-source="close" data-field="earned">—</b> (<b data-draw="pct" data-source="close" data-field="pct">—</b>). Set aside = the Bam Bird bank transfer + everything you've moved from PayPal to Byline.</p>
+    <p class="note"><b data-draw="setaside" data-source="close" data-field="set_aside">—</b> set aside of <b data-draw="oe2" data-source="close" data-field="earned">—</b> (<b data-draw="pct" data-source="close" data-field="pct">—</b>). Set aside = every bank transfer received in full (Bam Bird's deposit) + everything you've moved from PayPal to Byline.</p>
     <div class="grid2">
       <div>
         <h3>Still to come for October</h3>
@@ -231,7 +231,8 @@
       const rec_card = oct((a) => /gift card|credit/i.test(a));
       const moved = moves.reduce((s, m) => s + n(m.amount), 0);
       const pp = payments.filter((p) => p.account === 'PayPal');
-      const set_aside = moved + rec_bank;
+      const bank_cash = payments.filter((p) => /^Bank/.test(p.account)).reduce((s, p) => s + n(p.amount), 0);
+      const set_aside = moved + bank_cash;
       return [{ earned, rec_paypal, rec_bank, rec_card, to_come: earned - rec_paypal - rec_bank - rec_card, moved,
         safe: Math.max(0, rec_paypal - moved), sep_pp: pp.reduce((s, p) => s + n(p.sep_amount), 0),
         nov_pp: pp.reduce((s, p) => s + n(p.nov_amount), 0), set_aside, pct: earned ? set_aside / earned : 0 }];
