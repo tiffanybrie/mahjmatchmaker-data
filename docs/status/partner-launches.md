@@ -1,9 +1,10 @@
-# Partner launches & restocks (2026-11-07 14:34 UTC)
+# Partner launches & restocks (2026-11-07 18:36 UTC)
 
 ## Since last run: 1 to act on
-- **RESTOCK** Virora Mahjong · Florielle Mahjong Tiles (tiles) · Florielle - Rose Red 4 Layers · https://www.viroramahjong.com/products/florielle
+- **NEW** Oh My Mahjong · Pearlescent Mahjong Tiles (tiles) · https://www.ohmymahjong.com/products/pearlescent-tile-set
 
 ## Created/published in the last 7 days (tiles, mats, racks)
+- 2026-11-07 · Oh My Mahjong · Pearlescent Mahjong Tiles (tiles) · available · https://www.ohmymahjong.com/products/pearlescent-tile-set
 - 2026-11-06 · Let's Be Besties · Pink Christmas Mahjong Mat (mat) · available · https://letsbebesties.com/products/pink-christmas-mahjong-mat
 - 2026-11-06 · Splash of Color · Love At First Mahj Sweet Valentine Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/love-at-first-mahj-sweet-valentine-mahjong-mat-sleek-surface
 - 2026-11-06 · Splash of Color · Sweetness You're My Weakness Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/sweetness-youre-my-weakness-mahjong-mat-sleek-surface
@@ -77,7 +78,7 @@
 - sweetjojomahjong.com: ok 82 products
 - themahjongpress.com: ok 7 products
 - theroyalmahjongsociety.com: ok 50 products
-- tigredetartan.com: ok 125 products
+- tigredetartan.com: ok 124 products
 - www.bambirdboutique.com: ok 117 products
 - www.bamletsmahjong.com: ok 68 products
 - www.bespokemahjong.com: ok 349 products

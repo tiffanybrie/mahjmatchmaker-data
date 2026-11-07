@@ -52,6 +52,7 @@ Updated 2026-11-07 from brand sites, the Sunday release schedule, brand Instagra
 
 ## Held content: restocks with no date yet (do not post until dated)
 
+- **Oh My Mahjong Pearlescent tiles back on ohmymahjong.com (tagged 'retiring soon')** (yes): Sat Nov 7 2026, republished 9:14am CT. [source](https://www.ohmymahjong.com/products/pearlescent-tile-set)
 - **Oh My Mahjong Drake tiles** (Drake): 'Coming Soon' (no date). [source](https://www.ohmymahjong.com/products/drake-mahjong-tiles)
 - **Oh My Mahjong La Fete tiles** (La Fete): 'Coming Soon' + 'Retiring Soon' (no date). [source](https://www.ohmymahjong.com/products/la-fete-mahjong-tiles)
 - **Bam Bird Boutique East Meets West Tortoise Shell + Classic Tortoise Shell tile sets** (Classic Tortoise (album shop link = East Meets West Tortoise)): 'coming soon' (no date). [source](https://www.bambirdboutique.com/products/east-meets-west-tortoise-shell-tile-set-copy)
@@ -133,6 +134,7 @@ Updated 2026-11-07 from brand sites, the Sunday release schedule, brand Instagra
 | Oh My Mahjong | Moving sale | sale | Mentors Oct 27; public Wed Oct 28 10am CT; ends Sun Nov 1 | no | yes | Good window to push OMM album sets that are in stock (20% commission ends Nov 25). | HQ (mentor group) |
 | Oh My Mahjong | IMC 2027 preorder | preorder | 2026-11-02 | no | yes | Accessory; story mention only. | HQ (mentor group) |
 | Oh My Mahjong | Juniper tiles ($475) + Lotus Cove mat ($90) | launch | 2026-11-11 10:00 | Juniper (album set built, waits on her picks by Nov 9) | yes | Album live with the launch; group post per the Papaya precedent (needs/launch-juniper-mahjong-tiles). | [OMM Mahji Minute email Nov 2 + IG Nov 6](https://www.instagram.com/reel/DfZjqoCScnJ/) |
+| Oh My Mahjong | Pearlescent tiles back on ohmymahjong.com (tagged 'retiring soon') | restock | Sat Nov 7 2026, republished 9:14am CT | yes | yes | Restock playbook: reshare OMM + FYM story frames (assets/social/restock-pearlescent-nov07/out), for her review; never a feed post | [store watch (products.json published_at)](https://www.ohmymahjong.com/products/pearlescent-tile-set) |
 | Oh My Mahjong | Drake tiles | restock | 'Coming Soon' (no date) | Drake | yes | HOLD Drake album/reel content until OMM dates the restock (mentor group/email). OMM pays 20% through Nov 25: a restock before then is the biggest window. | [Product page badge](https://www.ohmymahjong.com/products/drake-mahjong-tiles) |
 | Oh My Mahjong | La Fete tiles | restock | 'Coming Soon' + 'Retiring Soon' (no date) | La Fete | yes | HOLD. When dated: 'last chance before La Fete retires' post 3-5 days before + launch-day story. | [Product page badges](https://www.ohmymahjong.com/products/la-fete-mahjong-tiles) |
 | Peace Love Mahjong | Vegan Leather mats (Cognac, Metallic, Dusty Rose, Slate Blue) + Pusher Rack Bags + Navy Rack Bag | launch | 2026-10-20 | no | yes | Solid mats: good FYM/gallery adds; optional story through Planoly. Navy colorway: separate item plm-navy-vegan (do not post until live). | [PLM affiliate email Oct 20 9:26am ET](https://peacelovemahjong.com/products/leather-mat-with-mat-tube) |

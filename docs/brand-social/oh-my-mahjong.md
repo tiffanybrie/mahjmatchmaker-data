@@ -1,6 +1,7 @@
 # Oh My Mahjong (@ohmymahjong): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 7 1:30pm ET (STORE, not IG): Pearlescent tiles republished on ohmymahjong.com 9:14am CT, buyable, $475, tagged 'retiring soon' (album set). No IG post about it yet.
 - Nov 7 7am ET: 'Gather' holiday mood reel (https://www.instagram.com/reel/DfuKCInyNW5/). Juniper + Lotus Cove launch Wed Nov 11 10am CT still the push.
 - Nov 6 7:00am ET: 'Meet Juniper & Lotus Cove!' reveal reel, launches Wed Nov 11 10am CT; asks which tile + mat pairings followers want to see (https://www.instagram.com/reel/DfZjqoCScnJ/). First public IG post for the collection (store: both Coming Soon, not purchasable).
 - Nov 5 7:00am ET: 'Oh my, holiday!' gifting reel, comment HOLIDAY to shop gifts + holiday favorites (https://www.instagram.com/reel/DfW-35DyxPH/). No new product.
