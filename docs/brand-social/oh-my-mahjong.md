@@ -1,6 +1,7 @@
 # Oh My Mahjong (@ohmymahjong): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 7 7am ET: 'Gather' holiday mood reel (https://www.instagram.com/reel/DfuKCInyNW5/). Juniper + Lotus Cove launch Wed Nov 11 10am CT still the push.
 - Nov 6 7:00am ET: 'Meet Juniper & Lotus Cove!' reveal reel, launches Wed Nov 11 10am CT; asks which tile + mat pairings followers want to see (https://www.instagram.com/reel/DfZjqoCScnJ/). First public IG post for the collection (store: both Coming Soon, not purchasable).
 - Nov 5 7:00am ET: 'Oh my, holiday!' gifting reel, comment HOLIDAY to shop gifts + holiday favorites (https://www.instagram.com/reel/DfW-35DyxPH/). No new product.
 - Nov 4 2:32pm ET: behind-the-scenes packing reel for Moving Sale orders, ship in 7-10 business days (https://www.instagram.com/reel/DfVNolKtjwH/). No new product.

@@ -1,6 +1,7 @@
 # Mahjong Moxie (@mahjongmoxie): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 6 2:35pm ET: thank-you after the first Moxie Tiles release; 'still have some sets in stock' (https://www.instagram.com/reel/DfaXdrvhrDq/). Non-partner (only Duck Camp + Heron Landing mats allowed).
 - Nov 5 9:39pm ET: close-up reel of Moxie Tiles, 'drop TOMORROW at 12 PM CST', larger numbers (https://www.instagram.com/reel/DfYjDi4BWX3/). Store Nov 6 9:45am ET: moxie-tile-set listed, not purchasable yet.
 - Nov 4 8:05pm ET: unboxing reel with her mom: Moxie Tiles (first tile run) go LIVE on the website FRIDAY Nov 6 at NOON; wholesale January invoices sent; close-ups coming over the next few days (https://www.instagram.com/reel/DfVzruURdpK/). #MoxieTiles
 - Nov 2 2:26pm ET: 'THEY'RE FINALLY HERE!' Moxie Tiles (first tile set, bold colours, chinoiserie, Grandmillennial) go LIVE Fri Nov 6 12pm CST (https://www.instagram.com/reel/DfQDWuzhKvH/). Non-partner: record only.

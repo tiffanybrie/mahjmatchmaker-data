@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-06",
-  "updatedBy": "partner watch Nov 6 1:40pm ET",
+  "updated": "2026-11-07",
+  "updatedBy": "partner watch Nov 7 9:30am ET",
   "rules": {
     "timing": {
       "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -746,7 +746,7 @@
       "product": "Summit to Sea tile set (North Carolina)",
       "type": "launch",
       "window": "'very soon', straight to website, no presale",
-      "status": "announced",
+      "status": "announced; in-store preview at the new flagship (IG Nov 7 DfcJsTxyEiw), not online yet; plus an unannounced set 'awaiting her online debut'",
       "source": "IG Oct 26",
       "sourceUrl": "https://www.instagram.com/p/De9Ih_NBYeH/",
       "album": false,
@@ -1605,6 +1605,37 @@
       "affiliate": true,
       "priority": 3,
       "contentTiming": "Solo-play mat: record only."
+    },
+    {
+      "id": "virora-florielle-restock-nov7",
+      "brand": "Virora Mahjong",
+      "product": "Florielle tiles (Rose Red, 4 layers)",
+      "type": "restock",
+      "date": "2026-11-07",
+      "windowStart": "2026-11-07",
+      "windowEnd": "2026-11-30",
+      "window": "in stock now",
+      "status": "LIVE 2026-11-07 (back in stock ~9:35am ET)",
+      "source": "store watch",
+      "sourceUrl": "https://www.viroramahjong.com/products/florielle",
+      "album": false,
+      "affiliate": true,
+      "priority": 2,
+      "contentTiming": "Restock playbook: reshare + FYM frames assets/social/restock-florielle-nov07 (her review)."
+    },
+    {
+      "id": "mahjvine-chinoiserie-bg-restock",
+      "brand": "Mahj & Vine",
+      "product": "Chinoiserie Blue & Green mat restock",
+      "type": "restock",
+      "window": "'restock en route', no date",
+      "status": "coming soon",
+      "source": "IG @mahjandvine Nov 6",
+      "sourceUrl": "https://www.instagram.com/reel/DfZ6g55vpQs/",
+      "album": false,
+      "affiliate": true,
+      "priority": 3,
+      "contentTiming": "Watch the store; restock playbook when live."
     }
   ],
   "sources": {

@@ -1,6 +1,7 @@
-# Partner launches & restocks (2026-11-06 23:30 UTC)
+# Partner launches & restocks (2026-11-07 14:34 UTC)
 
-## Since last run: 0 to act on
+## Since last run: 1 to act on
+- **RESTOCK** Virora Mahjong · Florielle Mahjong Tiles (tiles) · Florielle - Rose Red 4 Layers · https://www.viroramahjong.com/products/florielle
 
 ## Created/published in the last 7 days (tiles, mats, racks)
 - 2026-11-06 · Let's Be Besties · Pink Christmas Mahjong Mat (mat) · available · https://letsbebesties.com/products/pink-christmas-mahjong-mat
@@ -52,8 +53,6 @@
 - 2026-11-01 · Splash of Color · The Kitschmas Mahj Club Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/the-kitschmas-mahj-club-mahjong-mat-sleek-surface
 - 2026-11-01 · Splash of Color · The Kitschmas Mahj Club Christmas Cardinal American Engraved Mahjong Tiles (tiles) · available · https://splashofcolorco.com/products/the-kitschmas-mahj-club-christmas-cardinal-american-engraved-mahjong-tiles
 - 2026-11-01 · Splash of Color · Jolly Nostalgic Santa Bam Bird Christmas Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/jolly-nostalgic-santa-bam-bird-christmas-mahjong-mat-sleek-surface
-- 2026-10-31 · Mahjong Register · Solid Wood Mahjong Racks | 20" Magnetic Pusher | Set of 4 (rack) · available · https://mahjongregister.com/products/solid-wood-mahjong-racks-20-magnetic-pusher-set-of-4-copy
-- 2026-10-31 · Mahjong Register · Solid Wood Mahjong Racks | 20" Magnetic Pusher | Set of 4 (rack) · available · https://mahjongregister.com/products/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy-1
 - 2026-10-31 · Let's Be Besties · Tropicana Mahjong Mat (mat) · available · https://letsbebesties.com/products/tropicana-mahjong-mat
 
 ## Stores
@@ -62,7 +61,7 @@
 - brittmillsdesign.com: ok 712 products
 - letsbebesties.com: ok 553 products
 - mahjandvine.com: ok 21 products
-- mahjmood.com: ok 57 products
+- mahjmood.com: ok 55 products
 - mahjongco.com: ok 1 products
 - mahjongregister.com: ok 75 products
 - mahjongstudios.com: ok 155 products
@@ -78,7 +77,7 @@
 - sweetjojomahjong.com: ok 82 products
 - themahjongpress.com: ok 7 products
 - theroyalmahjongsociety.com: ok 50 products
-- tigredetartan.com: ok 124 products
+- tigredetartan.com: ok 125 products
 - www.bambirdboutique.com: ok 117 products
 - www.bamletsmahjong.com: ok 68 products
 - www.bespokemahjong.com: ok 349 products
