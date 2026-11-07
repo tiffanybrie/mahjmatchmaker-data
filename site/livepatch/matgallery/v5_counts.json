@@ -925,22 +925,22 @@
    "sunday-mahjong--rattan": [
     "earthy"
    ],
-   "oh-my-mahjong--dapper-2": [
-    "purple",
-    "dark"
-   ],
-   "luxe-mahjong--the-polo-club": [
-    "dark",
-    "yellow"
-   ],
-   "oh-my-mahjong--dapper-1-retired": [
-    "earthy"
-   ],
    "tigre-de-tartan--estate-sale": [
     "red",
     "green",
     "florals",
     "brights"
+   ],
+   "luxe-mahjong--the-polo-club": [
+    "dark",
+    "yellow"
+   ],
+   "oh-my-mahjong--dapper-2": [
+    "purple",
+    "dark"
+   ],
+   "oh-my-mahjong--dapper-1-retired": [
+    "earthy"
    ]
   }
  },
@@ -1748,7 +1748,7 @@
    ]
   }
  },
- "claude_also_added": 173,
+ "claude_also_added": 172,
  "section_tiers_active": {
   "pink": {
    "primary": 240,
@@ -1767,8 +1767,8 @@
   },
   "yellow": {
    "primary": 24,
-   "also": 66,
-   "accent": 7
+   "also": 68,
+   "accent": 6
   },
   "green": {
    "primary": 203,
@@ -1781,17 +1781,17 @@
    "accent": 26
   },
   "blue": {
-   "primary": 278,
-   "also": 193,
+   "primary": 279,
+   "also": 195,
    "accent": 73
   },
   "purple": {
    "primary": 73,
-   "also": 59,
+   "also": 60,
    "accent": 14
   },
   "neutral": {
-   "primary": 115,
+   "primary": 114,
    "also": 156,
    "accent": 91
   },
@@ -1817,7 +1817,7 @@
   },
   "pastel": {
    "primary": 0,
-   "also": 253,
+   "also": 254,
    "accent": 0
   },
   "brights": {
@@ -1850,17 +1850,17 @@
   "pink": 540,
   "red": 163,
   "orange": 162,
-  "yellow": 97,
+  "yellow": 98,
   "green": 530,
   "teal": 147,
-  "blue": 544,
-  "purple": 146,
-  "neutral": 362,
+  "blue": 547,
+  "purple": 147,
+  "neutral": 361,
   "earthy": 386,
   "dark": 213,
   "bw": 13,
   "simple": 202,
-  "pastel": 253,
+  "pastel": 254,
   "brights": 342,
   "florals": 47,
   "animal": 35,
@@ -1872,17 +1872,17 @@
   "pink": 554,
   "red": 166,
   "orange": 165,
-  "yellow": 102,
+  "yellow": 103,
   "green": 543,
   "teal": 153,
-  "blue": 555,
-  "purple": 149,
-  "neutral": 367,
+  "blue": 558,
+  "purple": 150,
+  "neutral": 366,
   "earthy": 390,
   "dark": 215,
   "bw": 13,
   "simple": 204,
-  "pastel": 262,
+  "pastel": 263,
   "brights": 354,
   "florals": 50,
   "animal": 35,

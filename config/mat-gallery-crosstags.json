@@ -400,7 +400,8 @@
    "amahj--blue-citron-lilac-mahjong-game-mat"
   ],
   "yellow": [
-   "amahj--blue-citron-lilac-mahjong-game-mat"
+   "amahj--blue-citron-lilac-mahjong-game-mat",
+   "wren-mats--sitting-sea-side"
   ],
   "dark": [
    "anders-ruff--midnight-peacock-mahjong-mat",
@@ -440,6 +441,10 @@
    "the-mahjong-line--round",
    "mahjong-studios--jade-peacock-mahjong-mat-ships-rolled",
    "mahjong-studios--red-year-of-the-horse"
+  ],
+  "blue": [
+   "mahj-moon--the-sun-tarot",
+   "wren-mats--sitting-sea-side"
   ]
  },
  "unhold": {
@@ -833,5 +838,8 @@
   "brands": [
    "Mahjong Studios"
   ]
+ },
+ "also_notes": {
+  "2026-11-06 FYM 1.17 QA (d)": "By-eye gallery colours matching the FYM eye fixes (config/fym-colour-fixes-v116.json eye): The Sun Tarot also blue; Wren Sitting Sea Side also blue + yellow. (Spring Fling purple = its extra row secs; Wildflower American = config/mat-gallery-sync-colour-fixes.json.)"
  }
 }

@@ -1,6 +1,82 @@
 {
  "about": "FYM 1.16 colour fixes, carried over from the Mat Gallery v6 work (Nov 6 QA round 2; builder/fym_fix_nov06/gallery_sync.py).",
- "build": "b116",
+ "build": "b117",
+ "eye": {
+  "mahjmood.com/spring-fling-mat": {
+   "name": "Spring Fling Mat",
+   "mf": [
+    "dark",
+    "blue",
+    "pink",
+    "purple"
+   ],
+   "why": "navy/black centre, teal band, pink border, pink + purple florals; LOOKED at the FYM photo Nov 6 night (1.17 QA item d)"
+  },
+  "faitamainstudio.com/le-madeline": {
+   "name": "Le Madeline",
+   "mf": [
+    "yellow",
+    "pink"
+   ],
+   "why": "mustard yellow ground with pink buds (mustard is not cream); LOOKED at the FYM photo Nov 6 night (1.17 QA item d)"
+  },
+  "mahjandvine.com/citrus-grove": {
+   "name": "Chinoiserie Citrus Grove",
+   "mf": [
+    "blue",
+    "pink",
+    "orange",
+    "green"
+   ],
+   "why": "real oranges in the border; LOOKED at the FYM photo Nov 6 night (1.17 QA item d)"
+  },
+  "mahjandmoon.com/celestial-sun-mahjong-mat-boho-sunshine-mahjong-mat-in-peach-yellow": {
+   "name": "Celestial Sun",
+   "mf": [
+    "yellow",
+    "neutral",
+    "orange"
+   ],
+   "why": "yellow sun + corner rays on cream, peach border; LOOKED at the FYM photo Nov 6 night (1.17 QA item d)"
+  },
+  "mahjandmoon.com/wildflower-american-mahjong-mat": {
+   "name": "Wildflower American",
+   "mf": [
+    "yellow",
+    "blue"
+   ],
+   "why": "pale yellow striped centre, periwinkle border + blue florals; LOOKED at the FYM photo Nov 6 night (1.17 QA item d)"
+  },
+  "mahjandmoon.com/the-sun-tarot-mahjong-mat": {
+   "name": "The Sun Tarot",
+   "mf": [
+    "yellow",
+    "blue",
+    "neutral",
+    "orange",
+    "dark"
+   ],
+   "why": "light blue sky ground (blue added); the many yellow suns are real yellow, so yellow kept too (QA asked only to add blue); LOOKED at the FYM photo Nov 6 night (1.17 QA item d)"
+  },
+  "www.etsy.com/listing/4547276996/mahjong-mat-non-slip-tabletop-mat-home": {
+   "name": "Hummingbird Floral Frame (Blue)",
+   "mf": [
+    "neutral",
+    "blue",
+    "dark"
+   ],
+   "why": "cream centre, dusty blue frame; LOOKED at the FYM photo Nov 6 night (1.17 QA item d)"
+  },
+  "www.wrenmats.com/watercolor-floral-wz34m-m4836": {
+   "name": "Sitting Sea Side",
+   "mf": [
+    "yellow",
+    "blue",
+    "neutral"
+   ],
+   "why": "flagged by gate [163] (rule left neutral-only): butter-yellow scalloped frame, pale aqua stripes, cream centre (pink shells are small accents); LOOKED at the FYM photo Nov 6 night"
+  }
+ },
  "changed": {
   "mahjmood.com/spring-fling-mat": {
    "name": "Spring Fling Mat",
@@ -10,9 +86,12 @@
     "yellow"
    ],
    "to": [
-    "neutral"
+    "dark",
+    "blue",
+    "pink",
+    "purple"
    ],
-   "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow); nothing left: neutral"
+   "why": "by-eye (FYM QA): navy/black centre, teal band, pink border, pink + purple florals; LOOKED at the FYM photo Nov 6 night (1.17 QA item d)"
   },
   "mahjongstudios.com/mahjong-mat?v=50645970616557": {
    "name": "Looking Glass",
@@ -50,9 +129,10 @@
     "yellow"
    ],
    "to": [
-    "neutral"
+    "yellow",
+    "blue"
    ],
-   "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow); nothing left: neutral"
+   "why": "by-eye (FYM QA): pale yellow striped centre, periwinkle border + blue florals; LOOKED at the FYM photo Nov 6 night (1.17 QA item d)"
   },
   "mahjandmoon.com/the-sun-tarot-mahjong-mat": {
    "name": "The Sun Tarot",
@@ -65,11 +145,13 @@
     "dark"
    ],
    "to": [
+    "yellow",
+    "blue",
     "neutral",
     "orange",
     "dark"
    ],
-   "why": "yellow dropped: saturated yellow 0.2% (cream read as yellow)"
+   "why": "by-eye (FYM QA): light blue sky ground (blue added); the many yellow suns are real yellow, so yellow kept too (QA asked only to add blue); LOOKED at the FYM photo Nov 6 night (1.17 QA item d)"
   },
   "mahjandmoon.com/coastal-bloom-mahjong-mat": {
    "name": "Coastal Bloom",
@@ -85,21 +167,6 @@
     "blue"
    ],
    "why": "yellow dropped: saturated yellow 0.2% (cream read as yellow)"
-  },
-  "mahjandmoon.com/celestial-sun-mahjong-mat-boho-sunshine-mahjong-mat-in-peach-yellow": {
-   "name": "Celestial Sun",
-   "brand": "Mahj & Moon",
-   "hid": false,
-   "from": [
-    "yellow",
-    "neutral",
-    "orange"
-   ],
-   "to": [
-    "neutral",
-    "orange"
-   ],
-   "why": "yellow dropped: saturated yellow 0.0% (cream read as yellow)"
   },
   "luxemahjong.com/bougie-bee-mahjong-mat": {
    "name": "Bougie Bee",
@@ -125,9 +192,11 @@
     "yellow"
    ],
    "to": [
+    "yellow",
+    "blue",
     "neutral"
    ],
-   "why": "yellow dropped: saturated yellow 0.1% (cream read as yellow)"
+   "why": "by-eye (FYM QA): flagged by gate [163] (rule left neutral-only): butter-yellow scalloped frame, pale aqua stripes, cream centre (pink shells are small accents); LOOKED at the FYM photo Nov 6 night"
   },
   "www.etsy.com/listing/4537282808/the-caroline-preppy-mahjong-mat": {
    "name": "Caroline (Preppy)",
@@ -143,23 +212,6 @@
     "blue"
    ],
    "why": "orange dropped: saturated orange 3.5%, peach 8.4% (cream/beige read as orange)"
-  },
-  "mahjandvine.com/citrus-grove": {
-   "name": "Chinoiserie Citrus Grove",
-   "brand": "Mahj & Vine",
-   "hid": false,
-   "from": [
-    "blue",
-    "pink",
-    "orange",
-    "green"
-   ],
-   "to": [
-    "blue",
-    "pink",
-    "green"
-   ],
-   "why": "orange dropped: saturated orange 4.0%, peach 1.9% (cream/beige read as orange)"
   },
   "splashofcolorco.com/falling-for-monkey-business-nordic-fall-mahjong-mat": {
    "name": "Falling For Monkey Business Nordic Fall",
@@ -220,19 +272,6 @@
    "to": [
     "blue",
     "green"
-   ],
-   "why": "yellow dropped: saturated yellow 0.1% (cream read as yellow)"
-  },
-  "faitamainstudio.com/le-madeline": {
-   "name": "Le Madeline",
-   "brand": "Fait à Main",
-   "hid": false,
-   "from": [
-    "yellow",
-    "pink"
-   ],
-   "to": [
-    "pink"
    ],
    "why": "yellow dropped: saturated yellow 0.1% (cream read as yellow)"
   },
@@ -342,9 +381,10 @@
    ],
    "to": [
     "neutral",
+    "blue",
     "dark"
    ],
-   "why": "orange dropped: saturated orange 0.1%, peach 1.8% (cream/beige read as orange)"
+   "why": "by-eye (FYM QA): cream centre, dusty blue frame; LOOKED at the FYM photo Nov 6 night (1.17 QA item d)"
   }
  },
  "skipped": {

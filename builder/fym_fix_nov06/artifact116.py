@@ -6,6 +6,7 @@ before b24v1.js, Version 1.16 + TRK_URL. mc/190.webp is pub115's file unchanged 
 <out>/files.json. Usage: python3 artifact116.py <b115 dir> <b116 dir> <pub115 dir> <out dir>"""
 import sys, os, json, re, subprocess
 B5, B6, P5, O = sys.argv[1:5]
+VER = sys.argv[5] if len(sys.argv) > 5 else '116'  # release script: release<VER>.py (1.17 = 117)
 os.makedirs(O + '/mc', exist_ok=True)
 def LD(h):
     i = h.index('const D=') + 8; D, e = json.JSONDecoder().raw_decode(h[i:]); return D, i, i + e
@@ -44,6 +45,6 @@ dst = O + '/mc/190.webp'
 if os.path.exists(dst): os.remove(dst)
 os.link(P5 + '/mc/190.webp', dst)
 json.dump({'mc/190.webp': os.path.basename(O) + '/mc/190.webp'}, open(O + '/files.json', 'w'), indent=1)
-subprocess.run([sys.executable, os.path.dirname(os.path.abspath(__file__)) + '/release116.py', O + '/index.html'], check=True)
+subprocess.run([sys.executable, os.path.dirname(os.path.abspath(__file__)) + f'/release{VER}.py', O + '/index.html'], check=True)
 sz = os.path.getsize(O + '/index.html'); assert sz < 16 * 10**6 - 30000, sz
 print('artifact116: ahid kept', len(AH), '| index', sz, 'delta vs pub115', sz - len(p5.encode()))

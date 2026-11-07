@@ -499,13 +499,14 @@
     "teal",
     "blue",
     "pink",
+    "purple",
     "dark",
     "florals"
    ],
    "img_commit": "ae02d66a4404ebec83cae6b54b019aee4a1dc0a9",
    "eye": 1,
    "added": "2026-10-26-sync",
-   "note": "Oct 26 gallery sync (FYM b97 gate [90]): photo = FYM b97 m/1267.webp at 640px; sections = FYM colours ['yellow'] mapped to gallery sections + Claude photo review (tonal/mood/florals by eye). Was held out of the gallery by held-low-98.json (Oct 20 low-confidence photo); FYM's current photo replaces it. FYM says yellow but the photo shows no yellow (teal/navy/pink florals on dark): gallery uses what is visible."
+   "note": "Oct 26 gallery sync (FYM b97 gate [90]): photo = FYM b97 m/1267.webp at 640px; sections = FYM colours ['yellow'] mapped to gallery sections + Claude photo review (tonal/mood/florals by eye). Was held out of the gallery by held-low-98.json (Oct 20 low-confidence photo); FYM's current photo replaces it. FYM says yellow but the photo shows no yellow (teal/navy/pink florals on dark): gallery uses what is visible. Purple added by eye Nov 6 (FYM 1.17 QA d)."
   },
   {
    "img": "miss-mahjong--toile-de-los-muertos-mahjong-playing-mat",
@@ -2004,13 +2005,15 @@
    "url": "https://go.shopmy.us/p-99652636",
    "code": "",
    "secs": [
-    "neutral"
+    "blue",
+    "yellow",
+    "pastel"
    ],
    "img_commit": "7d0f93b6aa8749a4180a2c186685e91c872609f2",
-   "eye": 0,
+   "eye": 1,
    "added": "fym-v117-sync",
    "ret": 0,
-   "note": "fym-v117-sync (gallery_sync.py): photo = FYM v117 m/1683.webp (<= 640px, never upscaled); sections = FYM colours ['neutral'] mapped by the measured photo (shares {'yellow': np.float64(32.6), 'blue': np.float64(30.0), 'orange': np.float64(19.2), 'neutral': np.float64(11.1)}); measured also-colours + accents by build_v5.py."
+   "note": "fym-v117-sync (gallery_sync.py): photo = FYM v117 m/1683.webp (<= 640px, never upscaled); sections = FYM colours ['yellow', 'blue'] mapped by the measured photo (shares {'yellow': np.float64(32.6), 'blue': np.float64(30.0), 'orange': np.float64(19.2), 'neutral': np.float64(11.1)}); colour fix: periwinkle border + blue florals, pale yellow striped centre (FYM 1.17 QA d; LOOKED at the photo Nov 6 night); measured also-colours + accents by build_v5.py."
   },
   {
    "img": "mahj-moon--coastal-bloom-2",
@@ -12674,13 +12677,14 @@
    "code": "",
    "secs": [
     "neutral",
+    "blue",
     "earthy"
    ],
    "img_commit": "7cc2e8f38457e36ea4c04b079e08b23adcd329ba",
    "eye": 0,
    "added": "fym-v117-sync",
    "ret": 0,
-   "note": "fym-v117-sync (gallery_sync.py): photo = override https://i.etsystatic.com/x/il_fullxfull.8320540624_7deo.jpg (<= 640px, never upscaled); sections = FYM colours ['neutral', 'dark'] mapped by the measured photo (shares {'neutral': np.float64(43.6), 'orange': np.float64(42.6), 'earthy': np.float64(13.5), 'yellow': np.float64(0.4)}); measured also-colours + accents by build_v5.py."
+   "note": "fym-v117-sync (gallery_sync.py): photo = override https://i.etsystatic.com/x/il_fullxfull.8320540624_7deo.jpg (<= 640px, never upscaled); sections = FYM colours ['neutral', 'blue', 'dark'] mapped by the measured photo (shares {'neutral': np.float64(43.6), 'orange': np.float64(42.6), 'earthy': np.float64(13.5), 'yellow': np.float64(0.4)}); measured also-colours + accents by build_v5.py."
   },
   {
    "img": "luna-ek-studio--celadon-blossom-garden",

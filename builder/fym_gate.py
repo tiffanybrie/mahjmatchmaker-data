@@ -1907,6 +1907,20 @@ try:
     if _d161: F.append(f"[162] {len(_d161)} visible shop links are dead (404/410; add them to config/fym-dead-links.json): " + '; '.join(f'{x[3]} | {x[2]} ({x[5]})' for x in _d161[:10]))
     if _u161: print(f"FYM GATE WARNING [162]: {len(_u161)} shop links did not answer cleanly (re-checked next run): " + '; '.join(f'{x[3]} | {x[2]} ({x[5]})' for x in _u161[:8]))
 except Exception as _e: F.append(f"[162] shop-link check did not run: {_e}")
+# [163] Nov 6 2026 (FYM 1.17 QA item d: the cream/orange/yellow rule left Spring Fling neutral-only and cut Le Madeline to pink only).
+#       Every mat builder/fym_fix_nov06/colour116.py changed (config/fym-colour-fixes-v116.json 'changed') that the rule left NEUTRAL-ONLY,
+#       or dropped to ONE colour from several, needs an eye check: it FAILS unless the mat has a by-eye entry in the same file's 'eye'
+#       section (set after looking at the photo). Every 'eye' entry must also be what the build shows.
+try:
+    _C163 = json.load(open(REPO + 'config/fym-colour-fixes-v116.json')); _E163 = _C163.get('eye') or {}
+    for _k163, _v163 in (_C163.get('changed') or {}).items():
+        if _k163 in _E163 or _k163 not in M or M[_k163].get('hid'): continue
+        _f163, _t163 = _v163.get('from') or [], _v163.get('to') or []
+        if _t163 == ['neutral'] or (len(_t163) == 1 and len(_f163) > 1):
+            F.append(f"[163] {_v163.get('brand')} | {_v163.get('name')}: colour rule left {_t163} (was {_f163}); LOOK at the photo and add an 'eye' entry")
+    for _k163, _v163 in _E163.items():
+        if _k163 in M and (M[_k163].get('mf') or []) != _v163['mf']: F.append(f"[163] {_v163.get('name')}: build colours {M[_k163].get('mf')} != by-eye {_v163['mf']}")
+except Exception as _e: F.append(f"[163] colour eye-check did not run: {_e}")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))

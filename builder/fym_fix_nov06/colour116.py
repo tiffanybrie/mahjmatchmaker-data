@@ -19,6 +19,11 @@ B = sys.argv[1]; P = B + '/index.html'; h = open(P).read(); i = h.index('const D
 MCN = int(re.search(r'MCN=(\d+)', h).group(1)); M = D['mats']
 LK = json.load(open(REPO + 'builder/fym_flags/locks.json'))['mats']
 CFIX = json.load(open(REPO + 'config/mat-gallery-sync-colour-fixes.json'))['mats']
+# By-eye FYM colours (QA Nov 6 night, 1.17 item d): kept in this script's own output file under 'eye' and preserved on every run.
+# They win over the rule and the gallery fixes. Each one was set after LOOKING at the FYM photo. Gate [163] fails when the rule leaves a
+# mat neutral-only, or drops it to one colour from several, without an 'eye' entry.
+OUTP = REPO + 'config/fym-colour-fixes-v116.json'
+EYE = (json.load(open(OUTP)).get('eye') or {}) if os.path.exists(OUTP) else {}
 
 
 def slug(s):
@@ -76,7 +81,11 @@ for k, m in M.items():
     call = slug(m.get('bn')) + '--' + slug(name) in CALLS
     sh = list(m.get('sh') or [None] * len(mf)); sh += [None] * (len(mf) - len(sh))
     shd = dict(zip(mf, sh)); why = []
-    if k in CFIX:
+    if k in EYE:
+        new = [c for c in EYE[k]['mf'] if c in FAM]
+        if new != mf: why.append('by-eye (FYM QA): ' + EYE[k]['why'])
+        mf = new
+    elif k in CFIX:
         secs = CFIX[k]['secs']
         if 'holiday' in secs: skipped['by-eye holiday (FYM hol is her call)'].append(k); continue
         new = []
@@ -112,8 +121,8 @@ for k, m in M.items():
         if m.get(kk): m[kk] = [c for c in m[kk] if c not in mf] or None
     log[k] = {'name': m.get('n'), 'brand': m.get('bn'), 'hid': bool(m.get('hid')), 'from': old['mf'], 'to': mf, 'why': '; '.join(why)}
 h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[i + e:]; open(P, 'w').write(h)
-json.dump({'about': __doc__.split('\n')[0], 'build': os.path.basename(os.path.abspath(B)), 'changed': log,
-           'skipped': skipped}, open(REPO + 'config/fym-colour-fixes-v116.json', 'w'), indent=1, ensure_ascii=False)
+json.dump({'about': __doc__.split('\n')[0], 'build': os.path.basename(os.path.abspath(B)), 'eye': EYE, 'changed': log,
+           'skipped': skipped}, open(OUTP, 'w'), indent=1, ensure_ascii=False)
 vis = [v for v in log.values() if not v['hid']]
 c_ = lambda s: sum(1 for v in vis if s in v['why'])
 print(f"colour116: changed {len(log)} mats ({len(vis)} visible): orange dropped {c_('orange dropped')}, yellow dropped {c_('yellow dropped')}, "

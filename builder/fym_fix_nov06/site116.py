@@ -7,8 +7,9 @@ v116 adds NO new mat chunks and NO new tile photos, so the website copy needs no
 Usage: python3 site116.py <b115 dir> <b116 dir> <fym-site repo dir>"""
 import sys, json, re, os, subprocess
 B5, B6, SITE = sys.argv[1:4]
+VER = sys.argv[4] if len(sys.argv) > 4 else '116'  # Nov 6: 1.16 r2 was relabelled 1.17 -> site116.py <b115> <b> <site> 117
 H = os.path.dirname(os.path.abspath(__file__))
-OUTD = SITE + '/site-app/fym-v116'; os.makedirs(OUTD, exist_ok=True)
+OUTD = SITE + f'/site-app/fym-v{VER}'; os.makedirs(OUTD, exist_ok=True)
 s5 = open(SITE + '/site-app/fym-v115/index.html').read(); b5 = open(B5 + '/index.html').read(); b6 = open(B6 + '/index.html').read()
 def LD(h):
     i = h.index('const D=') + 8; D, e = json.JSONDecoder().raw_decode(h[i:]); return D, i, i + e
@@ -32,5 +33,5 @@ img = re.search(r'<script>window\.IMG=Object\.assign\(window\.IMG\|\|\{\},\{"rk1
 t115 = re.search(r'<script src="https://cdn\.jsdelivr\.net/gh/tiffanybrie/mahjmatchmaker-data@[0-9a-f]+/site-app/fym-v115/thumbs115\.js"></script>', h).group(0)
 rep(t115, t115 + img)
 open(OUTD + '/index.html', 'w').write(h)
-subprocess.run([sys.executable, H + '/release116.py', OUTD + '/index.html'], check=True)
+subprocess.run([sys.executable, H + f'/release{VER}.py', OUTD + '/index.html'], check=True)
 print('site116: index', os.path.getsize(OUTD + '/index.html'))
