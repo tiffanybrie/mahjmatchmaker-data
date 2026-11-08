@@ -1,0 +1,457 @@
+{
+ "date": "2026-11-07",
+ "sources": {
+  "fym": "site-app/fym-v117 @8a3081f2",
+  "gallery": "matgallery-v117.json @c90f4aaf",
+  "search": "@de5e43f1",
+  "artifact": "1794098137-5687",
+  "pages_curled": 103
+ },
+ "gaps": [
+  {
+   "id": "A1",
+   "area": "revenue",
+   "title": "6 money/Google scheduled tasks switched off (device_absent)",
+   "claimed": "cloud catch-up re-enables suspended tasks 3x daily",
+   "measured": {
+    "disabled": [
+     "Morning Google & Revenue report (last Nov 5 8:27pm ET)",
+     "Google code report M/W/F (last Nov 4)",
+     "Sales check (last Nov 6 12:04am)",
+     "Daily ShopMy pickup (last Nov 5)",
+     "Mahji Mentor + OMM launch check (last Nov 5)",
+     "New affiliate onboarding builder (last run ABANDONED Nov 5-6)",
+     "Partner newsletter signups",
+     "duplicate catch-up"
+    ]
+   },
+   "why": "unattended update_trigger re-enable does not take effect; nothing surfaces 'tasks off'",
+   "fix": "re-enable from an attended chat; front_door.py lists disabled tasks; catch-up writes an HQ red card on failure",
+   "effort": "S",
+   "guard": "none - needs front-door 'tasks off' line"
+  },
+  {
+   "id": "A2",
+   "area": "revenue",
+   "title": "Removed Mahjong Row brand page + Cypress Forest album still live, in sitemap, claiming MAHJMATCH 10%",
+   "claimed": "code-truth removed_pages; live_codes_check FAIL 1 (blog line only)",
+   "measured": {
+    "live_200": 2,
+    "in_sitemap": 2,
+    "cypress_on_hub": false
+   },
+   "why": "live_codes_check skips removed_pages without confirming they are gone",
+   "fix": "disable both pages; make the check fail when a removed page answers 200 or is in the sitemap",
+   "effort": "S",
+   "guard": "none - live_codes_check skips these pages"
+  },
+  {
+   "id": "A3",
+   "area": "revenue",
+   "title": "Oh My Mahjong missing from every AI surface",
+   "claimed": "earlier reports quoted 36/39 snapshots",
+   "measured": {
+    "omm_ai_overview": "0/6",
+    "omm_ai_mode": "0/2",
+    "all_brands_ai_overview_checks": "162/225",
+    "brands_hit_every_check": "18/38",
+    "omm_orders_7d": "4 vs 10 prior"
+   },
+   "why": "single good snapshots reported as coverage",
+   "fix": "OMM-first page/indexing/feedback plan",
+   "effort": "M",
+   "guard": "scripts/checks/code_visibility.py + daily scorecard (measures only)"
+  },
+  {
+   "id": "A4",
+   "area": "revenue",
+   "title": "%-truth covers 27 of 38 hub brands; only hub-linked pages checked",
+   "claimed": "live_codes_check guards every code page",
+   "measured": {
+    "truth_brands": 27,
+    "hub_brands": 38,
+    "uncovered": [
+     "Anders Ruff",
+     "Tigre de Tartan",
+     "Let's Be Besties",
+     "Noli June",
+     "Maison Mahj",
+     "Yellow Mountain Imports",
+     "Soiree All Day",
+     "The Mahjong Press",
+     "Mahjong Register",
+     "Mahjong Studios",
+     "I Love Mahj"
+    ],
+    "sitemap_brand_pages_not_checked": [
+     "/bird-and-bamboo-discount-code-2",
+     "/mahjong-row-and-co-discount-code",
+     "/sunday-mahjong-discount-code"
+    ]
+   },
+   "why": "truth file built from the earning brands only",
+   "fix": "add truth for all hub brands; crawl every *-discount-code in the sitemap; fail on a brand with no truth",
+   "effort": "S",
+   "guard": "partial - live_codes_check.py"
+  },
+  {
+   "id": "A5",
+   "area": "revenue",
+   "title": "Maison Mahj code partner (Oct 29) half onboarded",
+   "claimed": "approved + on hub",
+   "measured": {
+    "brand_page": false,
+    "in_code_truth": false,
+    "fym_partner_flag": false
+   },
+   "why": "onboarding builder suspended",
+   "fix": "brand page + FYM code + truth entry",
+   "effort": "M",
+   "guard": "none"
+  },
+  {
+   "id": "A6",
+   "area": "revenue",
+   "title": "Duplicate /bird-and-bamboo-discount-code-2 live in sitemap",
+   "claimed": "n/a",
+   "measured": {
+    "status": 200,
+    "verified_line": false,
+    "indexing_requested": false
+   },
+   "why": "leftover duplicate",
+   "fix": "disable or 301",
+   "effort": "S",
+   "guard": "none"
+  },
+  {
+   "id": "A7",
+   "area": "revenue",
+   "title": "Pearlescent back on OMM ($475, Nov 7) but FYM has no shop link or price",
+   "claimed": "partner watch caught the restock",
+   "measured": {
+    "store_json": 200,
+    "fym_u_dead": true,
+    "her_matches": 40,
+    "other_dead_omm_mats_truly_gone": 7
+   },
+   "why": "nothing reopens a u_dead link",
+   "fix": "relink in 1.18; partner watch flags u_dead items that return",
+   "effort": "S",
+   "guard": "gate [162] only hides dead links"
+  },
+  {
+   "id": "B1",
+   "area": "fym",
+   "title": "Table view walls",
+   "claimed": "Table view published",
+   "measured": {
+    "walls": "30/283 visible sets",
+    "pattern_backs": 9
+   },
+   "why": "back colours confirmed for the sample only",
+   "fix": "confirm back colours for every set",
+   "effort": "L",
+   "guard": "none - needs coverage gate"
+  },
+  {
+   "id": "B2",
+   "area": "fym",
+   "title": "Table view mats greyed out",
+   "claimed": "Table view published",
+   "measured": {
+    "A": 1042,
+    "B_corner": 60,
+    "C": 85,
+    "never_classified": 334,
+    "usable": "1102/1521"
+   },
+   "why": "classifier never run on adds since Nov 1",
+   "fix": "classify every add at build time",
+   "effort": "M",
+   "guard": "none - needs gate: every visible mat has tv.cls"
+  },
+  {
+   "id": "B3",
+   "area": "fym",
+   "title": "Table view racks usable",
+   "claimed": "n/a",
+   "measured": {
+    "usable": "169/293",
+    "group_photo_only": 72,
+    "angled_only": 51,
+    "rack_review_ok": "293/293"
+   },
+   "why": "no single flat rack photos",
+   "fix": "cut-outs or brand flats",
+   "effort": "M-L",
+   "guard": "gate [97] WARN only"
+  },
+  {
+   "id": "B4",
+   "area": "fym",
+   "title": "Price filter hides mats with no price",
+   "claimed": "price filter shipped",
+   "measured": {
+    "mats": "813/1521",
+    "tiles": "249/283",
+    "racks": "289/293",
+    "top_missing": {
+     "Let's Be Besties": 284,
+     "Mahj & Moon": 106,
+     "Betty June & Jeannette": 75,
+     "Oh My Mahjong": 33
+    }
+   },
+   "why": "prices only pulled for part of the catalog",
+   "fix": "fill prices; show no-price items last instead of hiding",
+   "effort": "M",
+   "guard": "none"
+  },
+  {
+   "id": "B5",
+   "area": "fym",
+   "title": "Mat Gallery v117 missing 24 visible FYM partner/allowed mats; shows 25 FYM hides",
+   "claimed": "gate [90]: 1 missing",
+   "measured": {
+    "missing": 24,
+    "of_which_in_extra_rows_config": 10,
+    "gallery_shows_fym_hidden": 25,
+    "house_of_hearts_fym_only_excluded": 8
+   },
+   "why": "gate [90] counts config rows, not the built gallery",
+   "fix": "point gate [90] at matgallery-vNNN.json; rebuild",
+   "effort": "S",
+   "guard": "gate [90] (wrong denominator, WARN)"
+  },
+  {
+   "id": "B6",
+   "area": "fym",
+   "title": "Artifact copy hides 302 visible mats; swipe-book snapshot built from it",
+   "claimed": "by design for file size",
+   "measured": {
+    "hidden": 302,
+    "lbb": 264,
+    "luna": 28
+   },
+   "why": "snapshot source",
+   "fix": "build snapshot from the website copy",
+   "effort": "S",
+   "guard": "none"
+  },
+  {
+   "id": "B7",
+   "area": "fym",
+   "title": "Approved catalog adds not live",
+   "claimed": "staged for 1.18",
+   "measured": {
+    "shopmy_mats": 51,
+    "amazon_picks": 28,
+    "rebecca_illustrated_in_fym": "1 of ~8 (approved Oct 22)"
+   },
+   "why": "earlier ShopMy runs read only some collections; v96 build dropped picks",
+   "fix": "ship 1.18",
+   "effort": "M",
+   "guard": "shopmy_sync_check.py (its daily task is suspended)"
+  },
+  {
+   "id": "B8",
+   "area": "fym",
+   "title": "Tile-set taglines/profiles",
+   "claimed": "doc 81 profiles (Oct 19)",
+   "measured": {
+    "tagline": "1/283",
+    "profiles": 4
+   },
+   "why": "written for samples",
+   "fix": "generate for album sets first",
+   "effort": "L",
+   "guard": "none"
+  },
+  {
+   "id": "C1",
+   "area": "albums",
+   "title": "Live album pages not wired into FYM",
+   "claimed": null,
+   "measured": {
+    "pages_not_wired": "7/45",
+    "no_fym_set": [
+     "shangri-la",
+     "lilac-soiree",
+     "preppy-soiree",
+     "spring-love"
+    ],
+    "fym_set_no_album_link": [
+     "papaya-spritz",
+     "sunday",
+     "december-1994"
+    ],
+    "holiday_links_to_page_top": 10
+   },
+   "why": "album launches never ran the FYM link step for these",
+   "fix": "add vault sets + links + anchors in 1.18",
+   "effort": "M",
+   "guard": "none - needs album-URL coverage gate"
+  },
+  {
+   "id": "C2",
+   "area": "albums",
+   "title": "Mat swipe-book hearts missing from album pages",
+   "claimed": "approved Oct 25 8:17pm",
+   "measured": {
+    "larkspur": "2/28 album pages",
+    "fym_picks_named_on_album_page": "1223/1546",
+    "most_missing": {
+     "Larkspur": 27,
+     "Sugarplum Plaid": 16,
+     "Poppins": 15,
+     "Very Merry Wreath Premium": 13,
+     "Vivienne": 13
+    }
+   },
+   "why": "no step pushes FYM m-list changes to album pages",
+   "fix": "album pass from m-list diff",
+   "effort": "L",
+   "guard": "none"
+  },
+  {
+   "id": "C3",
+   "area": "albums",
+   "title": "Search index points to hidden holiday sections",
+   "claimed": null,
+   "measured": {
+    "hidden_anchors": [
+     "#sunday",
+     "#hummingbird",
+     "#nature-walk",
+     "#sunday-blues"
+    ]
+   },
+   "why": "index built from page ids, not visibility",
+   "fix": "drop until un-hidden",
+   "effort": "S",
+   "guard": "none"
+  },
+  {
+   "id": "C4",
+   "area": "albums",
+   "title": "Holiday colour cards not started; colour card tracking incomplete",
+   "claimed": "target Oct 31",
+   "measured": {
+    "tracked_colorcards": 19,
+    "album_sets": 55,
+    "status": "older albums unverified"
+   },
+   "why": "",
+   "fix": "build holiday cards; inventory the rest",
+   "effort": "M",
+   "guard": "book_gate (new books only)"
+  },
+  {
+   "id": "C5",
+   "area": "social",
+   "title": "Pinterest queue mostly unpublished",
+   "claimed": null,
+   "measured": {
+    "published": "37/348",
+    "pending": 287,
+    "albums_with_pins_queued": "44/44"
+   },
+   "why": "pace rule 2/day",
+   "fix": "decide pace",
+   "effort": "S",
+   "guard": "autopin task"
+  },
+  {
+   "id": "C6",
+   "area": "email",
+   "title": "Welcome/album-request automations + new-albums email",
+   "claimed": "approved Oct 23 / Nov 3",
+   "measured": {
+    "automations": "EMAIL.md says not built; unverified",
+    "new_albums_email_brownstone": "never sent",
+    "holiday_batch": "draft, target Nov 9"
+   },
+   "why": "Chrome-only steps with no owner check",
+   "fix": "verify in Squarespace; send",
+   "effort": "S-M",
+   "guard": "none"
+  },
+  {
+   "id": "C7",
+   "area": "ops",
+   "title": "Partner newsletters 3/26; Bing blocked",
+   "claimed": "standing yes Nov 6",
+   "measured": {
+    "signed_up": 3,
+    "total": 26
+   },
+   "why": "task suspended",
+   "fix": "re-enable task",
+   "effort": "S",
+   "guard": "none"
+  }
+ ],
+ "approved_not_done": [
+  [
+   "2026-10-22",
+   "Rebecca Illustrated whole line",
+   "1 of ~8 in FYM"
+  ],
+  [
+   "2026-10-23",
+   "Welcome + album-request automations NOW",
+   "unverified; EMAIL.md says not built"
+  ],
+  [
+   "2026-10-25",
+   "Larkspur hearts on 27 albums",
+   "2 of 28"
+  ],
+  [
+   "2026-10-26",
+   "Card library",
+   "no evidence"
+  ],
+  [
+   "2026-10-26",
+   "28 Amazon holiday picks",
+   "dropped v96; staged 1.18"
+  ],
+  [
+   "2026-10-29",
+   "Close-every-tab rule in all Chrome tasks",
+   "DESK: not all applied"
+  ],
+  [
+   "2026-10-29",
+   "Maison Mahj code partner",
+   "hub only"
+  ],
+  [
+   "2026-11-03",
+   "New-albums email same day",
+   "never sent for Brownstone"
+  ],
+  [
+   "2026-11-06",
+   "All matches for one mat view",
+   "not in v117/search"
+  ],
+  [
+   "2026-11-06",
+   "Partner newsletters",
+   "3 of 26"
+  ],
+  [
+   "2026-11-06",
+   "Bing Webmaster Tools",
+   "blocked on her tap"
+  ],
+  [
+   "2026-11-06",
+   "Mahjong Row out completely",
+   "brand page + Cypress album live"
+  ]
+ ]
+}
