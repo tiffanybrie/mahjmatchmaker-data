@@ -71,8 +71,7 @@ css = tpl[:tpl.index('<div class="mm3" id="papaya-spritz-album">')]
 lb = tpl[tpl.index('<div class="mm3-lb"'):]
 HOLCSS = open(R + 'site/livepatch/missed-album-picks-nov07/holcss.html').read().strip()
 CC = CDN + 'assets/colorcards/juniper/00-juniper-mahjong-tiles-'
-BG = ('<style id="mmjunbg">section:has(.mm3) .section-background{background:#fff!important}section:has(.mm3){background:#fff}'
-      'section:has(.mm3) .mm3 h1,section:has(.mm3) .mm3 h2{color:var(--ink,#1f3a6b)!important}section:has(.mm3) .mm3-cta a:not(.mm3-btn){color:var(--ink,#1f3a6b)!important}'
+BG = ('<style id="mmjunbg">'  # page duplicated from Papaya Spritz (white section): only the launch pill style is added
       '.mm3-launch{display:inline-block;background:#225d36;color:#fff;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 12px;border-radius:12px;margin:0 0 10px}</style>')
 body = (
  f'<div class="mm3" id="juniper-album"><header class="mm3-hero mm3-hero-2"><div class="mm3-hero-img"><img src="{CDN}assets/covers/albums/00-juniper-mahjong-tiles-cover.jpg" data-lb="" alt="Oh My Mahjong Juniper mahjong tiles" fetchpriority="high"></div>'
