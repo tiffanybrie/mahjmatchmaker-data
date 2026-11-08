@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Missed Mats Round 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf3ea; --card:#ffffff; --ink:#1f2433; --muted:#6b6670; --line:#eadfd3;
+  --navy:#054689; --deep:#062a55; --heart:#f56c8c; --star:#e0a100; --blush:#fbe3ea;
+  --chip:#fffaf4; --photo:#ffffff; --shadow:0 1px 2px rgba(40,30,20,.06),0 4px 14px rgba(40,30,20,.06);
+  --hol:#1f5a3a; --np:#8a6d3b; --lock:#2f7a52; --field:#fffdf9;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16181f; --card:#20232c; --ink:#f1ece6; --muted:#a8a2a8; --line:#353a47;
+    --navy:#8fb6ea; --deep:#cfe0f7; --heart:#ff7aa2; --star:#ffc94a; --blush:#3a2530;
+    --chip:#272b35; --photo:#ffffff; --shadow:none; --hol:#7fc79c; --np:#d6b77a; --lock:#7fc79c; --field:#1a1d25;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16181f; --card:#20232c; --ink:#f1ece6; --muted:#a8a2a8; --line:#353a47;
+  --navy:#8fb6ea; --deep:#cfe0f7; --heart:#ff7aa2; --star:#ffc94a; --blush:#3a2530;
+  --chip:#272b35; --photo:#ffffff; --shadow:none; --hol:#7fc79c; --np:#d6b77a; --lock:#7fc79c; --field:#1a1d25;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{overflow-x:clip;font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
+button,select,textarea{font:inherit;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 6px}
+h1{font-family:Caprasimo,Georgia,serif;font-weight:400;color:var(--deep);font-size:30px;line-height:1.1;margin:0 0 8px}
+.lede{color:var(--muted);margin:0;font-size:15px;max-width:720px}
+.lede b{color:var(--ink)}
+.picker{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 0}
+.prow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.prow label{font-size:14px;color:var(--muted)}
+.sel{flex:1 1 220px;min-width:0;max-width:420px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--card)}
+.count{font-size:14px;color:var(--muted)}
+.count b{color:var(--heart)}
+.copy{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:7px 12px;font-size:13px;cursor:pointer;color:var(--muted)}
+.grid{display:grid;grid-template-columns:1fr;gap:18px;padding:16px 0 40px}
+@media (min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+@media (min-width:1120px){.grid{grid-template-columns:1fr 1fr 1fr}}
+.card{background:var(--card);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;min-width:0}
+.card.on{border-color:var(--heart);box-shadow:0 0 0 2px var(--heart)}
+.photo{position:relative;display:block;width:100%;aspect-ratio:1/1;background:var(--photo);border:0;padding:0;cursor:zoom-in}
+.photo .mat{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.photo .fits{position:absolute;left:10px;top:10px;background:rgba(255,255,255,.94);color:#062a55;font-size:12px;font-weight:700;border-radius:999px;padding:3px 10px}
+.body{padding:14px 14px 16px}
+.name{font-size:19px;font-weight:700;line-height:1.25;margin:0;overflow-wrap:anywhere}
+.meta{font-size:14px;color:var(--muted);margin:3px 0 10px;display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center}
+.meta a{color:var(--navy)}
+.tag{font-size:12px;font-weight:600;border-radius:6px;padding:1px 7px;border:1px solid currentColor}
+.tag.p{color:var(--navy)} .tag.np{color:var(--np)} .tag.h{color:var(--hol)}
+.pairs{display:flex;flex-direction:column;gap:8px}
+.pair{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:12px;background:var(--chip);padding:6px 6px 6px 6px}
+.pair.on{border-color:var(--heart);background:var(--blush)}
+.pair.focus{outline:2px solid var(--navy);outline-offset:1px}
+.pair .tp{flex:0 0 auto;width:52px;height:52px;border-radius:9px;border:0;padding:0;background:#fff;cursor:zoom-in;overflow:hidden}
+.pair .tp img{width:100%;height:100%;object-fit:cover;display:block}
+.pair .an{flex:1;min-width:0;font-size:15px;font-weight:600;line-height:1.2}
+.pair .an small{display:block;font-weight:500;font-size:12px;color:var(--muted)}
+.pair .an small.lk{color:var(--lock);font-weight:700}
+.ib{flex:0 0 auto;width:44px;height:44px;border-radius:50%;border:2px solid var(--line);background:var(--card);display:grid;place-items:center;cursor:pointer;-webkit-tap-highlight-color:transparent;padding:0}
+.ib svg{width:24px;height:24px;fill:none;stroke-width:2}
+.ib.h svg{stroke:var(--heart)} .ib.s svg{stroke:var(--star)}
+.ib.h[aria-pressed="true"]{background:var(--heart);border-color:var(--heart)} .ib.h[aria-pressed="true"] svg{fill:#fff;stroke:#fff}
+.ib.s[aria-pressed="true"]{background:var(--star);border-color:var(--star)} .ib.s[aria-pressed="true"] svg{fill:#fff;stroke:#fff}
+.ib.h[disabled]{cursor:default;opacity:1}
+.ib:active{transform:scale(.92)}
+.add{display:flex;gap:8px;margin-top:10px}
+.add select{flex:1;min-width:0;padding:9px 10px;border-radius:10px;border:1px dashed var(--line);background:var(--field);font-size:14px}
+.note{width:100%;margin-top:10px;min-height:58px;padding:9px 10px;border-radius:10px;border:1px solid var(--line);background:var(--field);font-size:15px;resize:vertical}
+.saved{font-size:12px;color:var(--lock);height:14px;margin-top:2px}
+.more{display:block;margin:0 auto 40px;padding:12px 22px;border-radius:12px;border:1px solid var(--line);background:var(--card);font-weight:600;cursor:pointer}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#062a55;color:#fff;padding:9px 16px;border-radius:999px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:60}
+.toast.show{opacity:1}
+.zoom{position:fixed;inset:0;z-index:50;background:#0d0f15;display:none;flex-direction:column}
+.zoom.open{display:flex}
+.zoom .stage{position:relative;flex:1;overflow:auto;display:flex;align-items:center;justify-content:center;touch-action:pinch-zoom;min-height:0}
+.zoom .frame{position:relative;display:inline-block;line-height:0}
+.zoom .big{display:block;max-width:100vw;max-height:calc(100vh - 150px);max-height:calc(100dvh - 150px);object-fit:contain;background:#fff}
+.zoom .zt{position:absolute;right:10px;bottom:10px;width:38%;max-width:300px;aspect-ratio:1/1;object-fit:cover;border:3px solid #fff;border-radius:12px;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.35)}
+.zoom .zbar{display:flex;align-items:center;gap:10px;padding:12px 16px calc(12px + env(safe-area-inset-bottom));color:#fff;flex-wrap:wrap}
+.zoom .zn{flex:1 1 160px;min-width:0;font-size:15px}
+.zoom .zn small{display:block;opacity:.7}
+#zbtn{display:flex;gap:8px}
+.zoom .ib{border-color:rgba(255,255,255,.35);background:transparent}
+.zoom .x,.zoom .nv{border:1px solid rgba(255,255,255,.4);background:transparent;color:#fff;border-radius:999px;padding:9px 14px;cursor:pointer}
+.fb{position:fixed;inset:0;z-index:70;background:rgba(10,12,18,.6);display:none;align-items:center;justify-content:center;padding:16px}
+.fb.open{display:flex}
+.fb .box{background:var(--card);border-radius:14px;padding:16px;width:100%;max-width:560px}
+.fb textarea{width:100%;height:260px;font:13px/1.4 ui-monospace,Menlo,monospace;border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--bg);color:var(--ink)}
+.fb p{margin:0 0 8px;font-size:14px}
+.fb button{margin-top:10px;padding:10px 18px;border-radius:10px;border:1px solid var(--line);background:var(--card);cursor:pointer}
+.empty{padding:30px 0;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Missed mats, round 2: every album each mat fits</h1>
+    <p class="lede" id="lede"></p>
+  </header>
+</div>
+<nav class="picker" aria-label="Filter"><div class="wrap prow">
+  <label for="flt">Show</label>
+  <select class="sel" id="flt"></select>
+  <span class="count" id="count"></span>
+  <button class="copy" id="copy" type="button">Copy my picks (backup)</button>
+</div></nav>
+<main class="wrap"><div class="grid" id="grid"></div><button class="more" id="more" type="button" hidden>Show more mats</button></main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="zoom" id="zoom" role="dialog" aria-modal="true" aria-label="Mat with album tiles">
+  <div class="stage"><div class="frame"><img class="big" id="zbig" alt=""><img class="zt" id="zt" alt=""></div></div>
+  <div class="zbar"><div class="zn" id="zn"></div><span id="zbtn"></span><button class="nv" id="zp" type="button" aria-label="Previous album">&#8249;</button><button class="nv" id="zf" type="button" aria-label="Next album">&#8250;</button><button class="x" id="zx" type="button">Close</button></div>
+</div>
+<div class="fb" id="fb" role="dialog" aria-modal="true" aria-label="Copy your picks">
+  <div class="box"><p>Copy didn't go through on its own. The text is selected: long-press and copy.</p><textarea id="fbt" readonly></textarea><button id="fbx" type="button">Done</button></div>
+</div>
+<script>
+const DATA=/*__DATA__*/null;
+const KEY='mm-missed-picks-r2-nov07', FKEY='mm-missed-picks-r2-filter';
+const A=DATA.albums, AB={}; A.forEach(a=>AB[a.id]=a);
+const M=DATA.mats, MB={}; M.forEach(m=>MB[m.id]=m);
+/* ALL of Tiffany's selections live in ONE object; every change goes through persist(state). */
+let state={hearts:{},stars:{},notes:{},added:{}};
+function norm(s){s=s&&typeof s==='object'?s:{};return {hearts:s.hearts||{},stars:s.stars||{},notes:s.notes||{},added:s.added||{}}}
+function persist(st){try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}}
+window.MM_LOAD=function(){try{return norm(JSON.parse(localStorage.getItem(KEY)||'{}'))}catch(e){return norm({})}};
+window.MM_STATE=()=>state;
+window.MM_APPLY=function(s){state=norm(s);render(true)};
+const pk=(m,a)=>m+'|'+a;
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const HEART='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.4 2.9 4.5 6.6 4.5c2.2 0 3.6 1.2 4.4 2.5.8-1.3 2.2-2.5 4.4-2.5 3.7 0 5.7 3.9 4.2 7.2C19.5 16.4 12 21 12 21z"/></svg>';
+const STAR='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 17l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8z" stroke-linejoin="round"/></svg>';
+let flt='all'; try{const f=localStorage.getItem(FKEY); if(f&&(f==='all'||f==='picked'||AB[f])) flt=f}catch(e){}
+const PAGE=24; let shown=PAGE;
+
+function pairsOf(m){
+  const ps=m.p.map(p=>({a:p.a,s:p.s,r1:p.r1||0}));
+  (state.added[m.id]||[]).forEach(a=>{if(!ps.some(p=>p.a===a)) ps.push({a,s:0,r1:0,add:1})});
+  return ps;
+}
+const isLocked=(m,p)=>p.r1===2;
+const isYes=(m,a)=>!!state.hearts[pk(m.id,a)];
+function newYes(){return Object.keys(state.hearts).filter(k=>state.hearts[k]).length}
+function lede(){
+  const pairs=M.reduce((n,m)=>n+m.p.filter(p=>p.r1!==2).length,0), locked=M.reduce((n,m)=>n+m.p.filter(p=>p.r1===2).length,0);
+  document.getElementById('lede').innerHTML=`<b>${M.length} mats</b> your ${A.length} live albums never got to see, each shown with <b>every album it fits</b> (${pairs} new pairings, most versatile mats first). Heart the albums you want it in, star a top match, and leave a note. Not hearted = stays out. <b>${locked}</b> round-1 yeses are already in, marked "Yes from round 1". Tap a tile photo to see the mat with those tiles.`;
+}
+function filterOpts(){
+  const cnt={}; M.forEach(m=>pairsOf(m).forEach(p=>cnt[p.a]=(cnt[p.a]||0)+1));
+  const al=[...A].sort((x,y)=>x.name.localeCompare(y.name));
+  document.getElementById('flt').innerHTML=`<option value="all">All mats, most versatile first (${M.length})</option><option value="picked">Only what I've hearted, starred or noted</option>`+
+    al.map(a=>`<option value="${a.id}">All mats for ${esc(a.name)} (${cnt[a.id]||0})</option>`).join('');
+  document.getElementById('flt').value=flt;
+}
+function visible(){
+  let ms=M;
+  if(flt==='picked') ms=M.filter(m=>pairsOf(m).some(p=>isYes(m,p.a)||state.stars[pk(m.id,p.a)])||(state.notes[m.id]||'').trim());
+  else if(flt!=='all'){ms=M.filter(m=>pairsOf(m).some(p=>p.a===flt));
+    const sc=m=>{const p=pairsOf(m).find(p=>p.a===flt);return p?(p.r1===2?-1:p.add?99:p.s):0}; // already-yes last
+    ms=[...ms].sort((x,y)=>sc(y)-sc(x));}
+  return ms;
+}
+function pairHTML(m,p){
+  const a=AB[p.a], k=pk(m.id,p.a), lock=isLocked(m,p), yes=lock||isYes(m,p.a), star=!!state.stars[k];
+  const sub=lock?'<small class="lk">Yes from round 1</small>':p.add?'<small>added by you</small>':p.r1===1?'<small>shown in round 1</small>':'';
+  return `<div class="pair${yes?' on':''}${flt===p.a?' focus':''}" data-m="${m.id}" data-a="${p.a}">
+    <button class="tp" type="button" data-z="${m.id}" data-za="${p.a}" aria-label="See ${esc(m.n)} with ${esc(a.name)} tiles"><img src="${a.tile}" alt="" loading="lazy" decoding="async"></button>
+    <div class="an">${esc(a.name)}${sub}</div>
+    <button class="ib s" type="button" data-star aria-pressed="${star}" aria-label="Top match for ${esc(a.name)}" title="Top match">${STAR}</button>
+    <button class="ib h" type="button" data-heart aria-pressed="${yes}" ${lock?'disabled':''} aria-label="${lock?'Already yes from round 1':'Yes for '+esc(a.name)}">${HEART}</button>
+  </div>`;
+}
+function cardHTML(m,i){
+  let ps=pairsOf(m);
+  if(flt!=='all'&&flt!=='picked') ps=[...ps.filter(p=>p.a===flt),...ps.filter(p=>p.a!==flt)];
+  const on=ps.some(p=>isYes(m,p.a));
+  const have=new Set(ps.map(p=>p.a));
+  const opts=[...A].filter(a=>!have.has(a.id)).sort((x,y)=>x.name.localeCompare(y.name)).map(a=>`<option value="${a.id}">${esc(a.name)}</option>`).join('');
+  const n=m.p.length;
+  return `<article class="card${on?' on':''}" data-m="${m.id}">
+  <button class="photo" type="button" data-z="${m.id}" data-za="${ps[0]?ps[0].a:''}" aria-label="Zoom ${esc(m.n)}">
+    ${m.img?`<img class="mat" src="${m.img}" alt="${esc(m.n)} mat" loading="${i<3?'eager':'lazy'}" decoding="async">`:''}
+    <span class="fits">Fits ${n} album${n===1?'':'s'}</span>
+  </button>
+  <div class="body">
+    <h3 class="name">${esc(m.n)}</h3>
+    <div class="meta"><span>${esc(m.b)}</span><span class="tag ${m.pa?'p':'np'}">${m.pa?'Partner (code)':'No partner code'}</span>${m.h?'<span class="tag h">Holiday</span>':''}${m.u?`<a href="${esc(m.u)}" target="_blank" rel="noopener">Shop</a>`:''}</div>
+    <div class="pairs">${ps.map(p=>pairHTML(m,p)).join('')}</div>
+    <div class="add"><select data-add aria-label="Add another album for ${esc(m.n)}"><option value="">+ add another album</option>${opts}</select></div>
+    <textarea class="note" data-note placeholder="Note (e.g. top match for Smith)" aria-label="Note for ${esc(m.n)}">${esc(state.notes[m.id]||'')}</textarea>
+    <div class="saved" data-saved></div>
+  </div></article>`;
+}
+function count(){document.getElementById('count').innerHTML=`<b>${newYes()}</b> new yes · ${Object.keys(state.stars).filter(k=>state.stars[k]).length} stars`}
+function render(reset){
+  if(reset) shown=PAGE;
+  lede(); filterOpts(); count();
+  const ms=visible(), g=document.getElementById('grid');
+  g.innerHTML=ms.length?ms.slice(0,shown).map(cardHTML).join(''):'<p class="empty">Nothing here yet.</p>';
+  const more=document.getElementById('more'); more.hidden=ms.length<=shown; more.textContent=`Show more mats (${ms.length-shown} left)`;
+}
+function rerenderCard(mid){
+  const el=document.querySelector(`.card[data-m="${mid}"]`); if(!el) return;
+  const i=[...el.parentNode.children].indexOf(el); const t=document.createElement('div'); t.innerHTML=cardHTML(MB[mid],i+3); el.replaceWith(t.firstElementChild);
+}
+let tt; function toast(s){const t=document.getElementById('toast');t.textContent=s;t.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('show'),1500)}
+function toggle(kind,mid,a){
+  const k=pk(mid,a), o=state[kind];
+  if(o[k]) delete o[k]; else o[k]=1;
+  if(kind==='stars'&&o[k]&&!state.hearts[k]&&!MB[mid].p.some(p=>p.a===a&&p.r1===2)) state.hearts[k]=1; // a top match is a yes
+  persist(state); count(); rerenderCard(mid); if(zoomM===mid) zoomBtns();
+}
+const grid=document.getElementById('grid');
+grid.addEventListener('click',e=>{
+  const z=e.target.closest('[data-z]'); if(z){openZoom(z.dataset.z,z.dataset.za);return}
+  const b=e.target.closest('[data-heart],[data-star]'); if(!b||b.disabled) return;
+  const p=b.closest('.pair'); toggle(b.hasAttribute('data-heart')?'hearts':'stars',p.dataset.m,p.dataset.a);
+});
+grid.addEventListener('change',e=>{
+  const s=e.target.closest('[data-add]'); if(!s||!s.value) return;
+  const mid=s.closest('.card').dataset.m, a=s.value;
+  (state.added[mid]=state.added[mid]||[]).push(a); state.hearts[pk(mid,a)]=1;
+  persist(state); count(); rerenderCard(mid); toast('Added '+AB[a].name+' (hearted)');
+});
+let nt={};
+grid.addEventListener('input',e=>{
+  const t=e.target.closest('[data-note]'); if(!t) return;
+  const card=t.closest('.card'), mid=card.dataset.m;
+  const v=t.value; if(v.trim()) state.notes[mid]=v; else delete state.notes[mid];
+  clearTimeout(nt[mid]); nt[mid]=setTimeout(()=>{persist(state); const s=card.querySelector('[data-saved]'); if(s){s.textContent='Note saved';setTimeout(()=>s.textContent='',1400)}},400);
+});
+document.getElementById('flt').addEventListener('change',e=>{flt=e.target.value;try{localStorage.setItem(FKEY,flt)}catch(_){ }render(true);window.scrollTo({top:0})});
+document.getElementById('more').addEventListener('click',()=>{shown+=PAGE;render(false)});
+/* zoom: mat full + album tiles inset (match-card style); arrows step through the mat's albums */
+let zoomM=null, zoomA=null;
+const Z=document.getElementById('zoom');
+function zoomBtns(){
+  const m=MB[zoomM], p=pairsOf(m).find(p=>p.a===zoomA)||{a:zoomA,r1:0}, k=pk(zoomM,zoomA), lock=p.r1===2, yes=lock||isYes(m,zoomA);
+  document.getElementById('zbtn').innerHTML=`<button class="ib s" type="button" id="zs" aria-pressed="${!!state.stars[k]}" aria-label="Top match">${STAR}</button> <button class="ib h" type="button" id="zh" aria-pressed="${yes}" ${lock?'disabled':''} aria-label="Yes">${HEART}</button>`;
+}
+function openZoom(mid,a){
+  zoomM=mid; const m=MB[mid]; const ps=pairsOf(m); zoomA=a||(ps[0]&&ps[0].a);
+  const al=AB[zoomA];
+  document.getElementById('zbig').src=m.img; document.getElementById('zbig').alt=m.n+' mat';
+  document.getElementById('zt').src=al.tile; document.getElementById('zt').alt=al.name+' tiles';
+  const p=ps.find(p=>p.a===zoomA);
+  document.getElementById('zn').innerHTML=`${esc(m.n)} + ${esc(al.name)}<small>${esc(m.b)}${p&&p.r1===2?' · Yes from round 1':''} · ${ps.findIndex(p=>p.a===zoomA)+1} of ${ps.length}</small>`;
+  zoomBtns(); Z.classList.add('open'); document.body.style.overflow='hidden';
+}
+function step(d){const ps=pairsOf(MB[zoomM]); let i=ps.findIndex(p=>p.a===zoomA); i=(i+d+ps.length)%ps.length; openZoom(zoomM,ps[i].a)}
+document.getElementById('zp').onclick=()=>step(-1); document.getElementById('zf').onclick=()=>step(1);
+document.getElementById('zbtn').addEventListener('click',e=>{const b=e.target.closest('button'); if(!b||b.disabled) return; toggle(b.id==='zh'?'hearts':'stars',zoomM,zoomA)});
+function closeZoom(){Z.classList.remove('open');document.body.style.overflow='';zoomM=null}
+document.getElementById('zx').onclick=closeZoom;
+document.addEventListener('keydown',e=>{if(!Z.classList.contains('open'))return; if(e.key==='Escape')closeZoom(); if(e.key==='ArrowRight')step(1); if(e.key==='ArrowLeft')step(-1)});
+let tx=null; Z.addEventListener('touchstart',e=>{tx=e.touches.length===1?e.touches[0].clientX:null},{passive:true});
+Z.addEventListener('touchend',e=>{if(tx==null||(window.visualViewport&&visualViewport.scale>1.05))return; const dx=e.changedTouches[0].clientX-tx; if(Math.abs(dx)>60) step(dx<0?1:-1); tx=null});
+/* backup: copy picks grouped by album */
+function picksText(){
+  const by={}, line=(a)=>(by[a]=by[a]||[]);
+  M.forEach(m=>pairsOf(m).forEach(p=>{const k=pk(m.id,p.a); if(p.r1===2&&!state.stars[k]) return;
+    if(isYes(m,p.a)||state.stars[k]) line(p.a).push(`${m.n} (${m.b})${state.stars[k]?' ⭐ top match':''}${p.r1===2?' [round-1 yes]':''}${p.add?' [added by me]':''}`)}));
+  let out='My round-2 picks from the missed-mats page (Nov 7):\n';
+  [...A].sort((x,y)=>x.name.localeCompare(y.name)).forEach(a=>{if(by[a.id]) out+=`${a.name}: ${by[a.id].join(', ')}\n`});
+  const notes=M.filter(m=>(state.notes[m.id]||'').trim());
+  if(notes.length){out+='\nNotes:\n'; notes.forEach(m=>out+=`${m.n} (${m.b}): ${state.notes[m.id].trim()}\n`)}
+  return out;
+}
+document.getElementById('copy').onclick=async()=>{
+  const t=picksText();
+  try{await navigator.clipboard.writeText(t);toast('Copied')}catch(e){const fb=document.getElementById('fb'),ta=document.getElementById('fbt');ta.value=t;fb.classList.add('open');ta.focus();ta.select()}
+};
+document.getElementById('fbx').onclick=()=>document.getElementById('fb').classList.remove('open');
+window.MM_PICKS_TEXT=picksText;
+Promise.resolve().then(()=>window.MM_LOAD()).then(s=>{state=norm(s);render(true)}).catch(()=>render(true));
+render(true);
+</script>
+</body>
+</html>
