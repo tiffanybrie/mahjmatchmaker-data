@@ -57,4 +57,7 @@ Legend: Y = there before 1.18 · **ADDED** = added in 1.18 · n/a = does not app
 
 - **Filters never lock.** Tapping a colour, the brand chip (it reads "Brand ✕") or the same-brand chip a second time clears it, and there is also a Clear link. If a combination leaves no tile sets, the deck shows all of them with a note saying "No tile sets fit all of those, so showing all" and a Clear link. The mat door's tile filters reset when you change the mat.
 - **Tiles door, step 1:** the brand logos are still the first thing you see. Turning on In stock or picking a price shows the filtered A-Z list.
-- **Not changed:** ranking, X and heart, zoom, and the swipe itself.
+- **Not changed:** ranking (another agent owns tile ranking, gate [168]), X and heart, zoom, and the swipe itself.
+- **Holiday on the tiles step** only appears when the mat has holiday tile sets in its list. A non-holiday mat such as Lotus Cove never lists holiday sets (the existing holiday rule), so it shows no Holiday chip there.
+- **Collab sets count for both brands.** 'LoveShackFancy x Oh My Mahjong' sets count as Oh My Mahjong for 'Same brand as my mat'.
+- **The patch keeps the code text older gates read:** [8] (no `fam:''`), [19]/[105] (the brand-logo line, the colour-branch sort), [61], and [153] (no star glyph).

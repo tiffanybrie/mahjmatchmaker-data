@@ -46,9 +46,9 @@ REPL = [
     # tile grid (tiles door step 1): in-stock + price filter the list; with either on, no colour/brand = the A-Z list
     ("const all=D.sets.map((s,i)=>[s,i]).filter(x=>VIS(x[0]));if(S.tbrand)",
      "let all=D.sets.map((s,i)=>[s,i]).filter(x=>VIS(x[0]));if(typeof TGF==='function')all=TGF(all);if(S.tbrand)"),
+    # (gates [19]/[105] keep the literal blogoView line: the in-stock/price A-Z list goes in front of it)
     ("if(S.tcol==='')return blogoView();",
-     "if(S.tcol===''&&!(typeof TGON==='function'&&TGON()))return blogoView();"),
-    ("if(S.tcol==='az')return all", "if(S.tcol==='az'||S.tcol==='')return all"),
+     "if(S.tcol===''&&typeof TGON==='function'&&TGON())return all.sort((a,b)=>(TGNP(a)-TGNP(b)||!!T[a[0].tile].soon-!!T[b[0].tile].soon)||a[0].name.localeCompare(b[0].name)).map(([s,i])=>tileBtn(s,i)).join('');if(S.tcol==='')return blogoView();"),
     # price line on grid buttons (only shows while a price is picked; PRC returns '' otherwise)
     ("<small>${esc(BDN(s.maker))}${(T[s.tile]||{}).so?' · sold out':''}</small></button>",
      "<small>${esc(BDN(s.maker))}${(T[s.tile]||{}).so?' · sold out':''}</small>${typeof PRC==='function'?PRC('t',i):''}</button>"),
@@ -61,18 +61,18 @@ REPL = [
      "p.innerHTML=`<button type=\"button\" data-tvb=\"\">All brands</button>`+(()=>{const s=curSet(),m=curMat(),o=[];"
      "const add=(w,L)=>{const b=L.find(x=>x&&cnt[x]);if(b&&!o.some(y=>y[1]===b))o.push([w,b]);};"
      "if(SW.tab!=='mat'&&m&&M[m])add('mat',[M[m].bn]);if(SW.tab!=='tiles'&&s)add('tiles',[(T[s.tile]||{}).bn,s.maker,...String(s.maker||'').split(/\\s+x\\s+/i)]);"
-     "return o.map(([w,b])=>`<button type=\"button\" class=\"tvsame\" data-tvb=\"${esc(b)}\">\\u2605 Same brand as my ${w} \\u00b7 ${esc(BD(b))}</button>`).join('');})()+bs.map("),
+     "return o.map(([w,b])=>`<button type=\"button\" class=\"tvsame\" data-tvb=\"${esc(b)}\">Same brand as my ${w} \\u00b7 ${esc(BD(b))}</button>`).join('');})()+bs.map("),
     ("if(SW.tab==='mat')return ['pink'", "if(SW.tab==='mat')return ['holiday','pink'"),
     ("cols:[...(o.mf||[]),...(o.ha||[])]", "cols:[...(o.mf||[]),...(o.ha||[]),...(isHolM(k)?['holiday']:[])]"),
     ("const COL={pink:'#ef8fb4'", "const COL={holiday:'linear-gradient(135deg,#c8202f 50%,#1f6b3a 50%)',pink:'#ef8fb4'"),
 ]
 
 # tile grid sorts: tile sets with no listed price go last while a price is picked (same rule as the decks, gate [166])
-SOON = "!!T[a[0].tile].soon-!!T[b[0].tile].soon"
+SOON = "(!!T[a[0].tile].soon-!!T[b[0].tile].soon)"  # brand + A-Z branches only; the colour branch stays as gates [61]/[105] read it
 
 JS = r"""<script>""" + MARK + r"""(function(){
 /* FYM 1.18 door parity (Tiffany Nov 7 10:24pm). Filters for TILE SETS at the mat door's step 2 live in S.f.t (reset when the mat changes). */
-S.f.t=S.f.t||{fam:'',brand:'',her:false,mat:null};S.tfE=0;S.tinsE=0;S.tgNP=null;
+S.f.t=S.f.t||{fam:null,brand:'',her:false,mat:null};S.tfE=0;S.tinsE=0;S.tgNP=null;
 const TBM=(s,B)=>!!B&&(s.maker===B||TB(s)===B||String(s.maker||'').split(/\s+x\s+/i).includes(B));window.TBM=TBM;
 const TGR=s=>Object.keys(BACKG).filter(g=>(BACKG[g]||[]).includes(s.name));window.TGR=TGR;
 function tf(){const f=S.f.t;if(f.mat!==S.dmat){f.fam='';f.brand='';f.her=false;f.mat=S.dmat;}return f;}
@@ -84,7 +84,7 @@ setsForMat=function(id){const g=_sfm(id);if(id!==S.dmat)return g;S.tfE=0;const f
  if(!(n.her.length+n.alb.length+n.cat.length)){S.tfE=1;return g;}/* never empties: show all + a note with Clear */
  return Object.assign({},g,n);};
 const chipIns=e=>`<div class="insw"><button type="button" class="chip insb" data-ins aria-pressed="${!!S.ins}">${S.ins?'\u2713 ':''}In stock only</button><small>Stock checked ${esc(D.stk||'')}</small>${S.ins&&e?'<small class="inse">No in-stock matches here, so showing all.</small>':''}</div>`;
-const sameChip=(k,w,B,on)=>`<button type="button" class="chip sameb${on?' on':''}" data-sameb="${k}" data-b="${esc(B)}" aria-pressed="${on}" title="Only ${esc(BDN(B))}">${on?'\u2713 ':'\u2605 '}Same brand as my ${w}</button>`;
+const sameChip=(k,w,B,on)=>`<button type="button" class="chip sameb${on?' on':''}" data-sameb="${k}" data-b="${esc(B)}" aria-pressed="${on}" title="Only ${esc(BDN(B))}">${on?'\u2713 ':''}Same brand as my ${w}</button>`;
 /* TILE SETS at the mat door's step 2: in stock, price, picks, brand, same brand as my mat, holiday + colour groups */
 window.TFIL=function(){if(!S.dmat||!M[S.dmat])return '';const f=tf();S.insE=0;let g0;try{g0=_sfm(S.dmat);}catch(x){g0={her:[],alb:[],cat:[]};}const ie=S.insE;
  let pr='';try{pr=typeof PRB==='function'?PRB('t'):'';}catch(x){}try{setsForMat(S.dmat);}catch(x){}
@@ -140,9 +140,9 @@ def patch(b):
             print(f'doors_v118: anchor found {n}x (need 1): {old[:80]}'); return 1
         h = h.replace(old, new)
     a = h.find('function tileGrid('); z = h.find('\nconst GCHIP=', a)
-    if a < 0 or z < 0 or h[a:z].count(SOON) != 3:
-        print(f'doors_v118: tileGrid sort anchors not found (need 3 in tileGrid)'); return 1
-    h = h[:a] + h[a:z].replace(SOON, 'TGNP(a)-TGNP(b)||' + SOON) + h[z:]
+    if a < 0 or z < 0 or h[a:z].count(SOON) != 2:
+        print(f'doors_v118: tileGrid sort anchors not found (need 2 in tileGrid)'); return 1
+    h = h[:a] + h[a:z].replace(SOON, '(TGNP(a)-TGNP(b)||' + SOON[1:]) + h[z:]
     i = h.rfind('</body>')
     if i < 0:
         print('doors_v118: no </body>'); return 1
