@@ -28911,6 +28911,17 @@
    },
    "src": "pixel-families"
   },
+  "luna-ek-studio--sage-green-botanical": {
+   "accents": [
+    "neutral"
+   ],
+   "major": [],
+   "shares": {
+    "earthy": 0.6,
+    "neutral": 99.4
+   },
+   "src": "pixel-families"
+  },
   "luna-ek-studio--forest-bird-bloom": {
    "accents": [
     "earthy"
@@ -29364,6 +29375,1108 @@
     "neutral": 18.2,
     "orange": 0.2,
     "teal": 1.8
+   },
+   "src": "pixel-families"
+  },
+  "mahj-moon--tropical-toucan-pink-palm": {
+   "accents": [
+    "pink"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "blue": 1.0,
+    "earthy": 8.1,
+    "dark": 0.6,
+    "green": 10.4,
+    "neutral": 17.9,
+    "orange": 0.0,
+    "pink": 50.4,
+    "purple": 0.9,
+    "red": 9.7,
+    "teal": 1.1
+   },
+   "src": "pixel-families"
+  },
+  "mahj-moon--palm-tree-retro-tropical": {
+   "accents": [
+    "pink",
+    "earthy"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "blue": 3.0,
+    "earthy": 14.4,
+    "green": 2.9,
+    "neutral": 37.4,
+    "orange": 2.2,
+    "pink": 40.0,
+    "red": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "mahj-moon--vintage-floral-pink": {
+   "accents": [
+    "neutral",
+    "orange",
+    "pink"
+   ],
+   "major": [
+    "orange",
+    "pink"
+   ],
+   "shares": {
+    "earthy": 1.2,
+    "green": 0.1,
+    "neutral": 45.5,
+    "orange": 31.1,
+    "pink": 20.5,
+    "yellow": 1.6
+   },
+   "src": "pixel-families"
+  },
+  "mahj-moon--lobster-coastal": {
+   "accents": [
+    "pink",
+    "blue"
+   ],
+   "major": [
+    "pink",
+    "blue"
+   ],
+   "shares": {
+    "blue": 36.9,
+    "earthy": 0.2,
+    "neutral": 1.8,
+    "orange": 1.4,
+    "pink": 51.6,
+    "purple": 8.1
+   },
+   "src": "pixel-families"
+  },
+  "mahj-moon--scalloped-pink-floral": {
+   "accents": [
+    "pink",
+    "green"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "earthy": 1.6,
+    "green": 14.0,
+    "neutral": 9.3,
+    "orange": 5.4,
+    "pink": 64.2,
+    "purple": 0.9,
+    "red": 0.6,
+    "yellow": 4.0
+   },
+   "src": "pixel-families"
+  },
+  "rebecca-illustrated--pool-pawty": {
+   "accents": [
+    "pink",
+    "green",
+    "blue"
+   ],
+   "major": [
+    "pink",
+    "green",
+    "blue"
+   ],
+   "shares": {
+    "blue": 17.4,
+    "earthy": 6.2,
+    "dark": 0.2,
+    "green": 23.3,
+    "neutral": 4.0,
+    "orange": 0.3,
+    "pink": 35.8,
+    "purple": 0.4,
+    "red": 0.1,
+    "teal": 9.6,
+    "yellow": 2.9
+   },
+   "src": "pixel-families"
+  },
+  "rebecca-illustrated--canaries": {
+   "accents": [
+    "pink",
+    "green"
+   ],
+   "major": [
+    "pink",
+    "green"
+   ],
+   "shares": {
+    "blue": 8.4,
+    "earthy": 0.7,
+    "green": 27.2,
+    "neutral": 2.3,
+    "orange": 1.7,
+    "pink": 49.4,
+    "purple": 2.7,
+    "red": 0.0,
+    "teal": 0.6,
+    "yellow": 6.9
+   },
+   "src": "pixel-families"
+  },
+  "rebecca-illustrated--chinoiserie-citrus": {
+   "accents": [
+    "orange",
+    "blue",
+    "pink"
+   ],
+   "major": [
+    "orange",
+    "blue"
+   ],
+   "shares": {
+    "blue": 32.0,
+    "earthy": 4.7,
+    "green": 7.2,
+    "neutral": 6.0,
+    "orange": 34.6,
+    "pink": 12.4,
+    "purple": 0.3,
+    "teal": 0.0,
+    "yellow": 2.9
+   },
+   "src": "pixel-families"
+  },
+  "rebecca-illustrated--white-sailboats": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 83.5,
+    "earthy": 0.0,
+    "green": 2.0,
+    "neutral": 2.9,
+    "orange": 0.2,
+    "pink": 0.8,
+    "purple": 0.3,
+    "teal": 10.1,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "rebecca-illustrated--maxine": {
+   "accents": [
+    "pink",
+    "green",
+    "teal"
+   ],
+   "major": [
+    "pink",
+    "green",
+    "teal"
+   ],
+   "shares": {
+    "blue": 2.4,
+    "earthy": 8.7,
+    "green": 26.5,
+    "neutral": 1.9,
+    "orange": 1.5,
+    "pink": 34.4,
+    "purple": 0.0,
+    "red": 0.3,
+    "teal": 22.8,
+    "yellow": 1.4
+   },
+   "src": "pixel-families"
+  },
+  "rebecca-illustrated--pink-gingham": {
+   "accents": [
+    "pink"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "blue": 0.5,
+    "earthy": 7.5,
+    "dark": 0.1,
+    "green": 9.5,
+    "neutral": 10.3,
+    "orange": 1.8,
+    "pink": 66.3,
+    "purple": 0.1,
+    "red": 0.8,
+    "teal": 1.3,
+    "yellow": 1.8
+   },
+   "src": "pixel-families"
+  },
+  "waiting-on-martha--cocktails-double-sided": {
+   "accents": [
+    "earthy",
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 1.1,
+    "earthy": 59.4,
+    "dark": 0.5,
+    "green": 15.1,
+    "neutral": 4.8,
+    "orange": 4.9,
+    "pink": 7.1,
+    "purple": 0.1,
+    "red": 0.9,
+    "teal": 2.4,
+    "yellow": 3.9
+   },
+   "src": "pixel-families"
+  },
+  "waiting-on-martha--vintage-twinkle-double-sided": {
+   "accents": [
+    "pink",
+    "green",
+    "blue"
+   ],
+   "major": [
+    "pink",
+    "green"
+   ],
+   "shares": {
+    "blue": 12.7,
+    "earthy": 0.4,
+    "green": 21.5,
+    "neutral": 1.0,
+    "orange": 0.5,
+    "pink": 54.2,
+    "purple": 1.9,
+    "red": 0.7,
+    "teal": 6.3,
+    "yellow": 0.9
+   },
+   "src": "pixel-families"
+  },
+  "waiting-on-martha--tasslin-double-sided": {
+   "accents": [
+    "red"
+   ],
+   "major": [
+    "red"
+   ],
+   "shares": {
+    "blue": 6.8,
+    "earthy": 0.4,
+    "dark": 0.3,
+    "green": 9.3,
+    "neutral": 3.1,
+    "orange": 9.4,
+    "pink": 11.1,
+    "purple": 0.0,
+    "red": 46.6,
+    "teal": 3.4,
+    "yellow": 9.6
+   },
+   "src": "pixel-families"
+  },
+  "the-mahjong-house--ruby-table-double-sided": {
+   "accents": [
+    "red",
+    "pink"
+   ],
+   "major": [
+    "red",
+    "pink"
+   ],
+   "shares": {
+    "green": 0.0,
+    "orange": 0.0,
+    "pink": 19.7,
+    "red": 80.3,
+    "teal": 0.0,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "southern-living--green-ikat": {
+   "accents": [
+    "green",
+    "neutral"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 0.2,
+    "dark": 0.6,
+    "green": 49.7,
+    "neutral": 45.4,
+    "orange": 0.2,
+    "pink": 0.7,
+    "purple": 0.0,
+    "teal": 0.9,
+    "yellow": 2.3
+   },
+   "src": "pixel-families"
+  },
+  "southern-living--status-cats-pink": {
+   "accents": [
+    "pink"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "blue": 11.1,
+    "earthy": 11.7,
+    "dark": 2.9,
+    "green": 6.2,
+    "neutral": 25.9,
+    "orange": 0.1,
+    "pink": 34.1,
+    "purple": 3.1,
+    "red": 3.6,
+    "teal": 0.6,
+    "yellow": 0.6
+   },
+   "src": "pixel-families"
+  },
+  "southern-living--bird-floral": {
+   "accents": [
+    "blue",
+    "pink"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 25.6,
+    "earthy": 11.1,
+    "dark": 0.3,
+    "green": 8.9,
+    "neutral": 27.0,
+    "orange": 0.7,
+    "pink": 12.7,
+    "purple": 0.6,
+    "red": 10.4,
+    "teal": 0.8,
+    "yellow": 1.8
+   },
+   "src": "pixel-families"
+  },
+  "case-mate--classic-tortoiseshell": {
+   "accents": [
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "earthy": 7.7,
+    "dark": 8.6,
+    "green": 74.3,
+    "neutral": 9.3,
+    "red": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "case-mate--classic-carolina-blue": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 59.5,
+    "dark": 12.1,
+    "green": 0.8,
+    "neutral": 24.4,
+    "pink": 0.2,
+    "teal": 2.2,
+    "yellow": 0.8
+   },
+   "src": "pixel-families"
+  },
+  "case-mate--classic-ballet-pink": {
+   "accents": [
+    "pink",
+    "purple"
+   ],
+   "major": [
+    "pink",
+    "purple"
+   ],
+   "shares": {
+    "green": 0.0,
+    "orange": 0.2,
+    "pink": 81.2,
+    "purple": 17.0,
+    "red": 0.0,
+    "teal": 0.1,
+    "yellow": 1.4
+   },
+   "src": "pixel-families"
+  },
+  "case-mate--classic-cabana-stripe": {
+   "accents": [
+    "pink",
+    "green"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "blue": 6.6,
+    "dark": 1.8,
+    "green": 13.3,
+    "neutral": 11.6,
+    "orange": 3.1,
+    "pink": 53.8,
+    "purple": 0.3,
+    "teal": 1.0,
+    "yellow": 8.5
+   },
+   "src": "pixel-families"
+  },
+  "tuckernuck--in-full-bloom-oh-my-mahjong-x-tuckernuck": {
+   "accents": [
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 74.9,
+    "earthy": 2.4,
+    "green": 17.8,
+    "neutral": 4.1,
+    "orange": 0.1,
+    "pink": 0.1,
+    "purple": 0.1,
+    "teal": 0.5
+   },
+   "src": "pixel-families"
+  },
+  "amazon--pink-blue-christmas-village": {
+   "accents": [
+    "pink",
+    "blue",
+    "earthy"
+   ],
+   "major": [
+    "pink",
+    "blue"
+   ],
+   "shares": {
+    "blue": 24.5,
+    "earthy": 12.5,
+    "dark": 0.8,
+    "green": 1.1,
+    "neutral": 9.7,
+    "orange": 3.8,
+    "pink": 44.6,
+    "purple": 0.0,
+    "red": 2.4,
+    "teal": 0.1,
+    "yellow": 0.4
+   },
+   "src": "pixel-families"
+  },
+  "amazon--folk-christmas-reindeer": {
+   "accents": [
+    "red",
+    "orange"
+   ],
+   "major": [
+    "red",
+    "orange"
+   ],
+   "shares": {
+    "blue": 0.9,
+    "earthy": 11.6,
+    "green": 11.4,
+    "neutral": 3.8,
+    "orange": 20.2,
+    "pink": 6.6,
+    "red": 33.9,
+    "teal": 0.1,
+    "yellow": 11.6
+   },
+   "src": "pixel-families"
+  },
+  "amazon--pink-christmas-tree-gingham": {
+   "accents": [
+    "pink"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "blue": 0.6,
+    "earthy": 1.8,
+    "green": 6.9,
+    "neutral": 4.3,
+    "orange": 0.5,
+    "pink": 84.5,
+    "red": 1.4,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "amazon--christmas-red-tartan-scalloped": {
+   "accents": [
+    "red"
+   ],
+   "major": [
+    "red"
+   ],
+   "shares": {
+    "blue": 2.0,
+    "earthy": 4.9,
+    "dark": 11.8,
+    "green": 0.8,
+    "neutral": 3.1,
+    "orange": 1.4,
+    "pink": 3.6,
+    "purple": 9.6,
+    "red": 62.1,
+    "teal": 0.5,
+    "yellow": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "amazon--green-scottish-plaid": {
+   "accents": [
+    "earthy",
+    "dark",
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "earthy": 37.1,
+    "dark": 35.5,
+    "green": 23.9,
+    "neutral": 2.0,
+    "orange": 0.4,
+    "red": 0.8,
+    "yellow": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "amazon--red-tartan-scalloped-lewtemi": {
+   "accents": [
+    "red"
+   ],
+   "major": [
+    "red"
+   ],
+   "shares": {
+    "blue": 0.6,
+    "earthy": 8.4,
+    "dark": 9.8,
+    "green": 3.7,
+    "neutral": 0.6,
+    "orange": 1.9,
+    "pink": 1.9,
+    "purple": 2.8,
+    "red": 69.4,
+    "teal": 0.7,
+    "yellow": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "amazon--christmas-dark-tartan": {
+   "accents": [
+    "dark"
+   ],
+   "major": [],
+   "shares": {
+    "earthy": 1.3,
+    "dark": 87.6,
+    "green": 0.1,
+    "neutral": 1.5,
+    "orange": 0.0,
+    "red": 9.4,
+    "teal": 0.0,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "amazon--winter-christmas-trees-stripe": {
+   "accents": [
+    "green",
+    "orange"
+   ],
+   "major": [
+    "green",
+    "orange"
+   ],
+   "shares": {
+    "blue": 0.0,
+    "earthy": 7.1,
+    "dark": 6.4,
+    "green": 32.1,
+    "neutral": 22.4,
+    "orange": 31.7,
+    "yellow": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "amazon--christmas-plaid-pinecone-border": {
+   "accents": [
+    "red",
+    "dark"
+   ],
+   "major": [
+    "red"
+   ],
+   "shares": {
+    "blue": 0.0,
+    "earthy": 4.9,
+    "dark": 36.3,
+    "green": 3.6,
+    "neutral": 0.2,
+    "orange": 0.1,
+    "red": 55.0,
+    "teal": 0.0,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "amazon--red-snowflake": {
+   "accents": [
+    "red"
+   ],
+   "major": [
+    "red"
+   ],
+   "shares": {
+    "earthy": 0.1,
+    "green": 0.0,
+    "neutral": 0.8,
+    "pink": 4.8,
+    "red": 94.3,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "amazon--vintage-boho-reindeer": {
+   "accents": [
+    "earthy",
+    "red",
+    "orange"
+   ],
+   "major": [],
+   "shares": {
+    "earthy": 25.0,
+    "dark": 0.1,
+    "green": 1.5,
+    "neutral": 34.8,
+    "orange": 12.8,
+    "pink": 1.3,
+    "red": 13.3,
+    "yellow": 11.2
+   },
+   "src": "pixel-families"
+  },
+  "amazon--christmas-holly-berries": {
+   "accents": [
+    "dark"
+   ],
+   "major": [],
+   "shares": {
+    "earthy": 1.7,
+    "dark": 81.2,
+    "green": 8.5,
+    "neutral": 3.5,
+    "orange": 0.2,
+    "red": 4.9,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "amazon--christmas-golden-retrievers": {
+   "accents": [
+    "red",
+    "orange",
+    "earthy"
+   ],
+   "major": [
+    "red",
+    "orange"
+   ],
+   "shares": {
+    "blue": 1.9,
+    "earthy": 15.4,
+    "dark": 1.6,
+    "green": 11.9,
+    "neutral": 7.2,
+    "orange": 18.0,
+    "pink": 7.0,
+    "purple": 0.0,
+    "red": 25.8,
+    "teal": 1.1,
+    "yellow": 10.1
+   },
+   "src": "pixel-families"
+  },
+  "amazon--red-nose-reindeer": {
+   "accents": [
+    "earthy"
+   ],
+   "major": [],
+   "shares": {
+    "earthy": 62.1,
+    "dark": 10.5,
+    "neutral": 23.8,
+    "orange": 1.3,
+    "pink": 0.2,
+    "red": 2.1,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "amazon--christmas-cabana-stripe-with-bows": {
+   "accents": [
+    "orange",
+    "green",
+    "yellow"
+   ],
+   "major": [
+    "orange",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "earthy": 1.0,
+    "dark": 0.2,
+    "green": 28.7,
+    "neutral": 1.5,
+    "orange": 29.6,
+    "pink": 2.3,
+    "red": 8.3,
+    "teal": 0.1,
+    "yellow": 28.3
+   },
+   "src": "pixel-families"
+  },
+  "amazon--green-blue-scalloped-stripes": {
+   "accents": [
+    "green",
+    "blue"
+   ],
+   "major": [
+    "green",
+    "blue"
+   ],
+   "shares": {
+    "blue": 35.0,
+    "earthy": 1.8,
+    "green": 53.6,
+    "neutral": 0.1,
+    "pink": 1.3,
+    "purple": 0.1,
+    "red": 7.5,
+    "teal": 0.6,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "amazon--green-plaid-christmas-tree": {
+   "accents": [
+    "green",
+    "red"
+   ],
+   "major": [
+    "green",
+    "red"
+   ],
+   "shares": {
+    "earthy": 0.8,
+    "dark": 2.8,
+    "green": 52.9,
+    "neutral": 5.4,
+    "pink": 8.4,
+    "purple": 0.0,
+    "red": 29.6,
+    "teal": 0.1,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "amazon--pink-green-christmas-tree-plaid": {
+   "accents": [
+    "pink",
+    "green"
+   ],
+   "major": [
+    "pink",
+    "green"
+   ],
+   "shares": {
+    "blue": 4.6,
+    "earthy": 0.1,
+    "dark": 0.8,
+    "green": 15.2,
+    "neutral": 26.7,
+    "orange": 0.0,
+    "pink": 47.9,
+    "red": 0.4,
+    "teal": 4.3,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "amazon--pink-winter-village": {
+   "accents": [
+    "pink",
+    "green"
+   ],
+   "major": [
+    "pink",
+    "green"
+   ],
+   "shares": {
+    "blue": 0.2,
+    "earthy": 0.6,
+    "dark": 0.0,
+    "green": 42.2,
+    "neutral": 10.7,
+    "orange": 0.7,
+    "pink": 42.7,
+    "purple": 0.1,
+    "red": 2.6,
+    "teal": 0.2,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "amazon--christmas-tree-gingham": {
+   "accents": [
+    "neutral",
+    "earthy"
+   ],
+   "major": [],
+   "shares": {
+    "earthy": 35.0,
+    "dark": 3.4,
+    "green": 0.0,
+    "neutral": 51.2,
+    "orange": 1.3,
+    "pink": 0.1,
+    "red": 9.1,
+    "teal": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "amazon--red-green-christmas-village": {
+   "accents": [
+    "red",
+    "earthy",
+    "green"
+   ],
+   "major": [
+    "red"
+   ],
+   "shares": {
+    "blue": 0.0,
+    "earthy": 15.4,
+    "dark": 0.1,
+    "green": 13.2,
+    "neutral": 37.4,
+    "orange": 0.4,
+    "pink": 10.4,
+    "red": 22.8,
+    "teal": 0.1,
+    "yellow": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "amazon--gingerbread-gingham": {
+   "accents": [
+    "earthy",
+    "orange",
+    "pink"
+   ],
+   "major": [
+    "orange",
+    "pink"
+   ],
+   "shares": {
+    "blue": 0.0,
+    "earthy": 46.4,
+    "green": 0.7,
+    "neutral": 14.2,
+    "orange": 19.8,
+    "pink": 17.6,
+    "red": 1.1,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "amazon--cardinal-evergreen-wreath": {
+   "accents": [
+    "yellow",
+    "green",
+    "earthy"
+   ],
+   "major": [
+    "yellow",
+    "green"
+   ],
+   "shares": {
+    "earthy": 13.3,
+    "dark": 7.4,
+    "green": 19.0,
+    "neutral": 24.9,
+    "orange": 1.1,
+    "pink": 0.1,
+    "red": 3.1,
+    "yellow": 31.2
+   },
+   "src": "pixel-families"
+  },
+  "amazon--winter-berry-evergreen": {
+   "accents": [
+    "teal",
+    "blue"
+   ],
+   "major": [
+    "teal"
+   ],
+   "shares": {
+    "blue": 12.6,
+    "dark": 0.4,
+    "earthy": 0.0,
+    "green": 3.2,
+    "neutral": 2.4,
+    "pink": 0.7,
+    "purple": 0.0,
+    "red": 6.3,
+    "teal": 74.2,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "amazon--blue-hanukkah-menorah": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 63.8,
+    "earthy": 3.6,
+    "dark": 0.2,
+    "green": 0.4,
+    "neutral": 20.1,
+    "orange": 0.2,
+    "pink": 9.1,
+    "purple": 0.0,
+    "red": 1.9,
+    "teal": 0.2,
+    "yellow": 0.4
+   },
+   "src": "pixel-families"
+  },
+  "amazon--blue-white-snowflake": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 99.2,
+    "dark": 0.2,
+    "neutral": 0.6,
+    "pink": 0.0,
+    "teal": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "amazon--light-blue-hanukkah-star": {
+   "accents": [
+    "teal",
+    "blue"
+   ],
+   "major": [
+    "teal",
+    "blue"
+   ],
+   "shares": {
+    "blue": 30.1,
+    "green": 0.0,
+    "neutral": 0.9,
+    "pink": 0.0,
+    "teal": 68.7,
+    "yellow": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "amazon--hanukkah-menorah-peacocks": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 62.7,
+    "earthy": 2.5,
+    "dark": 0.2,
+    "neutral": 16.9,
+    "orange": 10.6,
+    "pink": 0.8,
+    "purple": 1.8,
+    "yellow": 4.5
+   },
+   "src": "pixel-families"
+  },
+  "mahj-mood--playing-for-keeps": {
+   "accents": [
+    "pink"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "blue": 0.0,
+    "earthy": 0.1,
+    "green": 9.2,
+    "neutral": 3.5,
+    "pink": 87.1,
+    "purple": 0.0,
+    "teal": 0.0,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "fait-a-main--texas-mon-amour-green": {
+   "accents": [
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 0.0,
+    "green": 90.5,
+    "neutral": 6.2,
+    "pink": 2.4,
+    "teal": 0.9
    },
    "src": "pixel-families"
   }

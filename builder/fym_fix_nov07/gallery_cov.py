@@ -68,6 +68,7 @@ def compare(D, G):
         if why is None:
             for im in IMG_OF.get(k, set()):
                 if im in DUP and DUP[im]['keep'] in GIDS: why = 'duplicate photo merged into its twin'; break
+                if im in DUP and DUP[im]['keep'] in HOLDI: why = 'gallery photo hold (with reason)'; break  # twin held with it (TdT/Mahj Pit French Mural)
         if why is None and k in DUPK: why = 'duplicate (hidden_oct20.csv)'
         if why: acc.setdefault(why, []).append(f"{v['bn']}: {v['n']}"); continue
         missing.append(k)
