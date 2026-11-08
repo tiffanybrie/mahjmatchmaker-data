@@ -25,6 +25,17 @@ the tiles go on sale Wed Nov 11 10am CT). Copy is pre-launch: "Launches Wed 11/1
 - **Pinterest**: config/pinterest/queue.json album-juniper + card-juniper-01..04 (guide-juniper already existed); uniform cover assets/covers/albums/uniform-v3/juniper.jpg.
 - **Google**: URL Inspection = unknown to Google; Request indexing clicked (result in docs/ANSWERS.md).
 
+## Nov 8 ~11am: code bands + zoom fix LIVE (Tiffany 10:11am HARD RULE + 10:15am zoom crash)
+- 9 cards re-rendered with **SAVE WITH CODE : MAHJMATCH** (were NOT A PARTNER : NO CODE x6 / NO CODE AT THIS TIME x3): Palm Royale,
+  The Kerry, Merrye, Evergreen, Cheetah in Chinoiserie, Whimsical Chinoiserie Meeting in the Pavilion, Emerald Leopard in Bloom,
+  Emerald Teal & Celadon Leatherette, Very Merry Wreath Premium (holiday card keeps its holiday band colours). Pixel diff vs the old
+  cards: only the band strip changed, the other 33 cards identical. juniper_final.py no longer sets no-code bands; gen2.py refuses one
+  on any card with a partner piece (scripts/checks/card_code_band_check.py; CLI scans every spec + manifest). Caption notes
+  ("No code for <brand>", Mahjong Register note) unchanged on the page.
+- Block rebuilt `build_block.py 3ad554c9...` (images @3ad554c9) + lightbox pinch fix (site/livepatch/lightbox-zoom-nov08/README.md),
+  block @44f61ea5, pasted in Chrome (editor confirmed Juniper's block: 105 x "Juniper", 0 x Papaya, old pin @4d61e0df).
+- curl live: 42 mm3-c (5 holiday), 47/47 images @3ad554c9 = 200, the 9 new cards md5 = repo files, pinch fix present.
+
 ## Cards (assets/cards/juniper-final/, 42 + manifest.json, her order 1..42)
 Spec scripts/albumcard/specs/juniper_final_nov07.json (built by juniper_final.py from the round-3 / holiday / to-see / OMM-adds specs),
 `JUNIPER_SPEC=... python3 scripts/albumcard/specs/juniper_build.py <work> && python3 scripts/albumcard/gen2.py <work>/spec.json assets/cards/juniper-final`.
