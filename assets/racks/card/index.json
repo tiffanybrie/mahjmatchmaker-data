@@ -241,6 +241,20 @@
    "rack_frac": 0.445,
    "built_by": "scripts/albumcard/omm_agate_card.py",
    "note": "Nov 6: pusher rotated -2.6 deg to the hot-pink angle, height x0.848 (scripts/albumcard/omm_agate_card.py)"
+  },
+  "My Fair Mahjong Indigo Blue": {
+   "file": "assets/racks/card/my-fair-mahjong-indigo-blue.png",
+   "source": "assets/racks/v99/mfm-indigo.webp",
+   "kind": "flat",
+   "rack_frac": 1.0,
+   "note": "Nov 7: MFM solid acrylic rack, FYM v99 cutout (single rack, flat), for the Style of Your Life album"
+  },
+  "My Fair Mahjong Magenta": {
+   "file": "assets/racks/card/my-fair-mahjong-magenta.png",
+   "source": "assets/racks/v99/mfm-magenta.webp",
+   "kind": "flat",
+   "rack_frac": 1.0,
+   "note": "Nov 7: MFM solid acrylic rack, FYM v99 cutout (single rack, flat), for the Style of Your Life album"
   }
  },
  "missing": {

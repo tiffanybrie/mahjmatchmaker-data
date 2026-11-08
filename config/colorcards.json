@@ -891,6 +891,82 @@
     ]
    },
    "_nov06r3": "Tiffany Nov 6 2:26am round 3: tagline in the dating-app voice like Papaya ('Seeking: ...'), not 'A lush lantern-lit garden'; back = Forest Green Jade colour with a jade-look STONE pattern (never 'jade-look green'); tile = PILE photo; top mats Palm Royale #1, Garden Glow #2, Lotus Cove #3."
+  },
+  "style-of-your-life": {
+   "name": "Style of Your Life",
+   "col": "#0b6b3a",
+   "brand": "My Fair Mahjong",
+   "sub": "Pearl green malachite with a deep green layer",
+   "backs": [
+    [
+     "PEARL GREEN",
+     "#0e9a5a",
+     "malachite swirl"
+    ],
+    [
+     "DEEP GREEN",
+     "#0a4a25",
+     "middle layer"
+    ]
+   ],
+   "faces": [
+    [
+     "INDIGO",
+     "#393c90"
+    ],
+    [
+     "WINE",
+     "#902836"
+    ],
+    [
+     "BUBBLEGUM PINK",
+     "#f590b8"
+    ],
+    [
+     "CORNFLOWER",
+     "#80acdf"
+    ],
+    [
+     "MARIGOLD",
+     "#e79d15"
+    ],
+    [
+     "FERN GREEN",
+     "#4f9a60"
+    ]
+   ],
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "rack_imgs": {
+    "My Fair Mahjong Indigo Blue": "assets/racks/card/my-fair-mahjong-indigo-blue.png",
+    "My Fair Mahjong Magenta": "assets/racks/card/my-fair-mahjong-magenta.png"
+   },
+   "tile": "assets/tiles/album/style-of-your-life.jpg",
+   "tag": [
+    "A day of shopping",
+    "shoes, handbags, jewelry & escalators"
+   ],
+   "mats": [
+    "Tennis Club",
+    "MOD Daisies",
+    "Crimson Harvest"
+   ],
+   "mat_imgs": {
+    "Tennis Club": "assets/colorcards/style-of-your-life/mats/tennis-club-lets-be-besties.jpg",
+    "MOD Daisies": "assets/colorcards/style-of-your-life/mats/mod-daisies-lets-be-besties.jpg",
+    "Crimson Harvest": "assets/colorcards/style-of-your-life/mats/crimson-harvest-britt-mills.jpg"
+   },
+   "shop": "Shop Style of Your Life · My Fair Mahjong",
+   "shop_m": "Shop Style of Your Life · My Fair Mahjong",
+   "profile_line": [
+    "Seeking: navy with a pink streak.",
+    "Retail therapy a plus."
+   ],
+   "mats_source": "Claude's own picks (Nov 7, run like Juniper), not her picks yet",
+   "racks_source": "Claude's own picks (MFM solid acrylic Indigo Blue + Magenta, same shape, 20in), pending her OK",
+   "_nov07": "Colours measured from MFM's pile photo (StyleofYourLifeSeries_11) and the flat lay (_2), checked by eye. MFM's own words: 'a pearl green back, a deep green middle layer, and a white face'. Faces lead with indigo ink; wine, bubblegum pink, cornflower, marigold, fern green. No chartreuse, teal or coral (those are Juniper's)."
   }
  },
  "_note_oct19_catchup": "Oct 19 catch-up: shangri-la, lilac-soiree, preppy-soiree, spring-love, sunday-tile-set got mat_imgs/rack_imgs and were rendered with the existing style. They use 'tag' (factual). When Tiffany approves the Papaya profile_line style, add profile_line to each set and re-run build.py <key>; nothing else changes."

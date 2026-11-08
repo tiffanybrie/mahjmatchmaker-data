@@ -67,7 +67,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Holiday new-albums email | Main | Squarespace draft; her final read. | Mon Nov 9 |
 | Blog album links | Main | Handoffs. | Mon Nov 9 |
 | Holiday colour cards (Tinselle ×2, Dec 1994, PLM Spirit + Nutcracker) | Matches & Catalog | Not started (was Oct 31). | Tue Nov 10 |
-| My Fair Style of Your Life (#1 album) | Matches & Catalog | Colour card + TNT, then swipe book. | Tue Nov 10 |
+| My Fair Style of Your Life (#1 album) | Matches & Catalog | Nov 7: album set built the Juniper way (colour card, wheel, cover, faces, 22 match cards, Juniper overlap + timing): site/livepatch/mfm-style-of-your-life-album-nov07/README.md. Next: publish the review page for her (faces + order), TNT search (Chrome), then profile + intro carousel after her face picks. Post >= 1 week after Juniper (target Wed 11/18), only once it's back in stock on myfairmahjong.com (sold out online Nov 7). | Tue Nov 10 |
 | Larkspur hearts into 27 tile albums | Matches & Catalog → Ops | 0 of 27. | Tue Nov 10 |
 | December 1994 redo (her RTS notes) | Matches & Catalog | After holiday colour cards. | Wed Nov 11 |
 | Lotus Cove swipe book full names (book_gate [n]) | Matches & Catalog | Before Juniper launch. | Mon Nov 9 |

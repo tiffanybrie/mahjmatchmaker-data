@@ -107,7 +107,9 @@ def _rest_many(bg,d,key,pins,cx,cy,ws,mono,num,chipname,chipsm,note,value=False)
     out=R+f'assets/colorwheels/{key}-color-wheel.jpg'; bg.save(out,quality=93); print(out)
 
 # Nov 6: per-set pins. papaya-spritz = the original 3 (unchanged). Others: config/colorcards.json backs + the faces listed here.
-WHEEL_FACES={'juniper':['HOT PINK','CORAL','GOLD']}
+WHEEL_FACES={'juniper':['HOT PINK','CORAL','GOLD'],'style-of-your-life':['INDIGO','WINE','BUBBLEGUM PINK']}
+# Nov 7: the legend is 3 + 3, so a set with 2 back colours names its third layer here (MFM: 'a pearl green back, a deep green middle layer, and a white face').
+WHEEL_EXTRA_BACKS={'style-of-your-life':[{'name':'White Face','hex':'#f4f1ec'}]}
 WHEEL_TITLE={'papaya-spritz':('Papaya Spritz','where her colors sit on the color wheel')}
 if __name__=='__main__':
     key=sys.argv[1] if len(sys.argv)>1 else 'papaya-spritz'
@@ -118,7 +120,7 @@ if __name__=='__main__':
         main('papaya-spritz',pins,'Papaya Spritz','where her colors sit on the color wheel')
     else:
         cc=json.load(open(R+'config/colorcards.json'))['sets'][key]
-        pins=[{'name':n.title(),'hex':h} for n,h,_ in cc['backs']]
+        pins=[{'name':n.title(),'hex':h} for n,h,_ in cc['backs']]+WHEEL_EXTRA_BACKS.get(key,[])
         fx=dict((n,h) for n,h in cc['faces'])
         pins+=[{'name':n.title(),'hex':fx[n]} for n in WHEEL_FACES.get(key,[])]
         t,sub=WHEEL_TITLE.get(key,(cc['name'],'where her colors sit on the color wheel'))
