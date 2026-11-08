@@ -1,20 +1,6 @@
 {
  "deco-lagoon": [
   {
-   "name": "Deco Dragon (Lagoon)",
-   "brand": "Bam Bird Boutique",
-   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-lagoon.jpg",
-   "why": "Bam Bird Boutique's own Lagoon mat. Lagoon tiles on the Lagoon mat is blue on blue (your Oct 26 rule), so the Mulberry Dragon is in instead.",
-   "retired": false
-  },
-  {
-   "name": "Deco Neoprene",
-   "brand": "Bam Bird Boutique",
-   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-neoprene.jpg",
-   "why": "The same lagoon teal as the backs, so the tiles disappear into it. It's in the Mulberry album.",
-   "retired": false
-  },
-  {
    "name": "Savannah",
    "brand": "Britt Mills",
    "img": "assets/colorcards/deco/leftout/britt-mills-savannah.jpg",
@@ -33,13 +19,6 @@
    "brand": "Bam! Let's Mahjong",
    "img": "assets/colorcards/deco/leftout/bam-lets-mahjong-art-deco.jpg",
    "why": "Black and white geometric. Right era, but no color to hold her.",
-   "retired": false
-  },
-  {
-   "name": "Gatsby's Feathered Affair",
-   "brand": "Anders Ruff",
-   "img": "assets/colorcards/deco/leftout/anders-ruff-gatsbys-feathered-affair.jpg",
-   "why": "An art deco fan, but sage and gray-green read dusty next to her jewel tones.",
    "retired": false
   },
   {
@@ -71,24 +50,10 @@
    "retired": false
   },
   {
-   "name": "Jade",
-   "brand": "Oh My Mahjong",
-   "img": "assets/colorcards/deco/mats/oh-my-mahjong-jade.jpg",
-   "why": "Blue-green with no berry: tonal on Lagoon. It's in the Mulberry album.",
-   "retired": false
-  },
-  {
    "name": "Peacock Garden",
    "brand": "Britt Mills",
    "img": "assets/colorcards/deco/leftout/britt-mills-peacock-garden.jpg",
    "why": "Navy and olive: no teal, no berry.",
-   "retired": false
-  },
-  {
-   "name": "Ruby",
-   "brand": "Britt Mills",
-   "img": "assets/colorcards/deco/leftout/britt-mills-ruby.jpg",
-   "why": "A sage center and small florals: low contrast with her.",
    "retired": false
   },
   {
@@ -127,10 +92,66 @@
    "retired": false
   },
   {
-   "name": "East Meets West – Magenta",
-   "brand": "Bam Bird Boutique",
-   "img": "assets/colorcards/deco/leftout/bam-bird-boutique-east-meets-west-magenta.jpg",
-   "why": "Solid hot magenta: brighter than her berry, and no teal.",
+   "name": "Petals After Dark",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-petals-after-dark.jpg",
+   "why": "Out on your Nov 8 review.",
+   "retired": false
+  },
+  {
+   "name": "Crown Jewels",
+   "brand": "Royal Mahjong Society",
+   "img": "assets/colorcards/deco/mats/royal-mahjong-society-crown-jewels.jpg",
+   "why": "Out on your Nov 8 review.",
+   "retired": false
+  },
+  {
+   "name": "Royal Peacock",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-royal-peacock.jpg",
+   "why": "Out on your Nov 8 review.",
+   "retired": false
+  },
+  {
+   "name": "Imperial Peacock",
+   "brand": "Bougie Mahjong",
+   "img": "assets/colorcards/deco/mats/bougie-mahjong-imperial-peacock.jpg",
+   "why": "Out on your Nov 8 review.",
+   "retired": false
+  },
+  {
+   "name": "Imperial Koi Pond",
+   "brand": "Bougie Mahjong",
+   "img": "assets/colorcards/deco/mats/bougie-mahjong-imperial-koi-pond.jpg",
+   "why": "Out on your Nov 8 review.",
+   "retired": false
+  },
+  {
+   "name": "Indigo Reef",
+   "brand": "Bougie Mahjong",
+   "img": "assets/colorcards/deco/mats/bougie-mahjong-indigo-reef.jpg",
+   "why": "Out on your Nov 8 review.",
+   "retired": false
+  },
+  {
+   "name": "Teal Tapestry",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-teal-tapestry.jpg",
+   "why": "Out on your Nov 8 review.",
+   "retired": false
+  },
+  {
+   "name": "Community Joy",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-community-joy.jpg",
+   "why": "Out on your Nov 8 review.",
+   "retired": false
+  },
+  {
+   "name": "Purple & Aqua Marble",
+   "brand": "Anders Ruff",
+   "img": "assets/colorcards/deco/mats/anders-ruff-purple-and-aqua-marble.jpg",
+   "why": "Out on your Nov 8 review.",
    "retired": false
   }
  ],

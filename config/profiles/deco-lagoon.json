@@ -9,7 +9,7 @@
   "single": "assets/tiles/v92/bam-bird-boutique-deco-lagoon-split.jpg",
   "all": "assets/launches/bambird-deco-tile-set/16-faces-tray.jpg"
  },
- "_note": "Deco (Lagoon) Tile Set Profile (doc 81), DRAFT Nov 7, built by Claude for Tiffany's review (her Nov 7 7:03pm: run it like Juniper). Colours from config/colorcards.json sets.deco-lagoon. Mats = Claude's top 3 (Reba #1 = her Oct 27 favourite Deco pairing, Wren #2, Deco Dragon (Mulberry) #3 = Bam Bird's own sister mat, never #1 and never Lagoon on Lagoon). Racks = Bam Bird Lagoon Wood + Mulberry Wood (same 19in shape). best_features = Claude's 4 PROPOSALS until she picks. PRONOUN: brand guide s3 says ask Tiffany; 'her' is the draft default. Prompts are new (not Papaya's irrational fear, not Juniper's green flag).",
+ "_note": "Deco (Lagoon) Tile Set Profile (doc 81), DRAFT Nov 7, built by Claude for Tiffany's review (her Nov 7 7:03pm: run it like Juniper). Colours from config/colorcards.json sets.deco-lagoon. Mats = Claude's top 3 (Reba #1 = her Oct 27 favourite Deco pairing, Viola #2 (Tiffany Nov 8: rank Viola higher; was Wren), Deco Dragon (Mulberry) #3 = Bam Bird's own sister mat, never #1 and never Lagoon on Lagoon). Racks = Bam Bird Lagoon Wood + Mulberry Wood (same 19in shape). best_features = Claude's 4 PROPOSALS until she picks. PRONOUN: brand guide s3 says ask Tiffany; 'her' is the draft default. Prompts are new (not Papaya's irrational fear, not Juniper's green flag).",
  "key": "deco-lagoon",
  "name": "Deco (Lagoon)",
  "matches": 30,
@@ -194,14 +194,14 @@
    "why": "Your favorite Deco pairing: a deep teal field for her Lagoon backs, inside a pink frame that picks up her mulberry and rose faces."
   },
   {
-   "label": "Deep teal + mulberry",
-   "mat": "Wren",
+   "label": "Deep teal + berry florals",
+   "mat": "Viola",
    "brand": "Britt Mills",
    "chips": [
-    "#163a3c",
-    "#b07aa8"
+    "#163d3f",
+    "#b85a86"
    ],
-   "why": "A dark lagoon center inside a mulberry scalloped frame: her back color and her faces' second color in one mat."
+   "why": "A deep teal center inside a black floral border of pinks and plums: her back color and her mulberry faces in one mat."
   },
   {
    "label": "Her sister mat",
@@ -229,7 +229,7 @@
  ],
  "first_dates": [
   "Reba",
-  "Wren",
+  "Viola",
   "Deco Dragon (Mulberry)"
  ],
  "bio": "Art deco after dark. Deep teal, a little gold, and a lion on the joker.",
@@ -277,8 +277,9 @@
  },
  "album_peek": [
   "britt-mills-reba",
-  "britt-mills-wren",
-  "bam-bird-boutique-deco-dragon-mulberry"
+  "britt-mills-viola",
+  "bam-bird-boutique-deco-dragon-mulberry",
+  "britt-mills-eden"
  ],
  "colors_line": "Lagoon teal backs with a gold-foil deco palm, on an ivory face. Deep jewel tones, rich, not earthy.",
  "layers_hand": "see the layers?<br>an ivory face on a Lagoon back, gold palm on top.",

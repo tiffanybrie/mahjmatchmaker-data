@@ -17,6 +17,7 @@ LO = json.load(open(R + 'scripts/albumcard/specs/deco_leftout_nov07.json'))[KEY]
 LAG = KEY == 'deco-lagoon'; IND = KEY == 'deco-indigo'; COL = {'deco-lagoon': 'Lagoon', 'deco-mulberry': 'Mulberry', 'deco-indigo': 'Indigo'}[KEY]; OTHER = 'Mulberry' if (LAG or IND) else 'Lagoon'
 QUEUE = IND or '--queue' in sys.argv  # Nov 7 late: ordering-queue page (drag / arrows to reorder, Out, Copy my order)
 F = 'assets/tiles/faces/deco/clean/'
+INSET = f'assets/tiles/album/inset/{KEY}-flowers.jpg'  # Nov 8: the cards' tile inset (flower columns | FYM backs)
 def src(p): USED.add(p); return CDN + p
 def img(p, alt, cls='', lazy=True):
     return f'<img src="{src(p)}" alt="{e(alt)}"{" loading=lazy" if lazy else ""} class="{cls}" data-zoom>'
@@ -55,7 +56,7 @@ for title, sub, items in G:
                   f'<button class="heart" aria-pressed="false" aria-label="Pick {e(name)}">&#9829;</button></figure>')
     faces += f'<h3 class="fg">{e(title)} <small>{e(sub)}</small></h3><div class="fgrid{" sm" if small else ""}">{cards}</div>'
 carousel = ''.join(f'<div class="slide">{img(f"assets/social/{KEY}-launch/intro/{i}.jpg", f"Intro carousel slide {i}")}<span>{i}</span></div>' for i in range(1, 8))
-N = len(MAN); mc, cur = '', None; qmain, qhol = '', ''
+N = len(MAN); mc, cur = '', None; TNTN = sum(1 for c in MAN if c.get('caption_note') == 'TNT rec'); qmain, qhol = '', ''
 for c in MAN:
     if not QUEUE and c['group'] != cur:
         cur = c['group']; mc += f'<h3 class="fg">{e(GROUPS[cur])}</h3>'
@@ -64,12 +65,13 @@ for c in MAN:
     if QUEUE: notes.append(f'<span class=gt>{e(GROUPS[c["group"]])}</span>')
     if c['retired_mat']: notes.append('<span class=ret>Retired</span>')
     if c['caption_note'] and c['caption_note'] != 'Retired': notes.append(f'<span class=ret>{e(c["caption_note"])}</span>')
-    if not c.get('partner', True): notes.append('<span class=ret>Not a partner: no code</span>')
+    if c.get('caption_note') == 'TNT rec': pass
+    if not c.get('partner', True): notes.append('<span class=ret>No code at this brand (caption only)</span>')
     if c['lowres']: notes.append('<span class=lr>Small brand photo</span>')
     ctl = ('<div class="qc"><button class="up" aria-label="Move up">&#8593; Up</button><button class="dn" aria-label="Move down">&#8595; Down</button><button class="out" aria-pressed="false">Out</button></div>') if QUEUE else ''
     card = (f'<article class="mcard" data-mat="{e(c["mat"])} · {e(c["brand"])}">{img(f"assets/cards/{KEY}/" + c["file"], CC["name"] + " + " + c["mat"] + " match card")}'
            f'<div class="mt"><p class="num"><span class="pos">#{c["order"]}</span>{" · " + " ".join(notes) if notes else ""}</p>'
-           f'<h4>{e(c["mat"])}</h4><p class="bn">{e(c["brand"])}</p><p class="why">{e(c["why"])}</p>'
+           f'<h4>{("TNT rec · " + e(c["mat"]) + " · " + e(c["brand"])) if c.get("caption_note") == "TNT rec" else e(c["mat"])}</h4><p class="bn">{e(c["brand"])}</p><p class="why">{e(c["why"])}</p>'
            f'<p class="rk"><b>Match the tiles:</b> {e(racks)}<br><b>Match the mat:</b> {e(mr)}</p>{ctl}</div></article>')
     if QUEUE and c.get('holiday'): qhol += card
     elif QUEUE: qmain += card
@@ -78,13 +80,13 @@ if QUEUE:
     mc = f'<div class="q" id="q">{qmain}</div>' + (f'<h3 class="fg">{e(GROUPS.get("holiday", "Holiday"))} <small>Holiday matches, in their own section</small></h3><div class="q" id="qh">{qhol}</div>' if qhol else '')
 lo = ''
 for m in LO:
-    lo += (f'<article class="lo"><div class="lop">{img(m["img"], m["name"])}<div class="ins">{img(CC["tile"], CC["name"] + " tiles")}</div></div>'
+    lo += (f'<article class="lo"><div class="lop">{img(m["img"], m["name"])}<div class="ins">{img(INSET, CC["name"] + " tiles")}</div></div>'
            f'<div class="mt"><h4>{e(m["name"])}</h4><p class="bn">{e(m["brand"])}{" · <span class=ret>Retired</span>" if m["retired"] else ""}</p><p class="why">{e(m["why"])}</p></div></article>')
 top3 = ', '.join(f'{m}' for m in P['first_dates'])
 COVSRC = {'deco-lagoon': 'Photo: Bam Bird listing image 7 (BamBird_40K_and_Christmas_-102), the Lagoon / Lucite Display Box variant photo.',
           'deco-mulberry': 'Photo: Bam Bird listing image 8 (BamBird_40K_and_Christmas_-83), the Mulberry / Lucite Display Box variant photo.',
           'deco-indigo': 'Photo: Bam Bird listing image 1 (BamBird_Deco-1-2), the navy box of their three stacked Deco boxes. Their two Indigo-variant photos show the bag or the faces, so neither works as a backs-only cover.'}[KEY]
-QTXT = ('<b>Reorder them:</b> drag a card (desktop) or tap &uarr; Up / &darr; Down, tap <b>Out</b> to cut one, then tap <b>Copy my order</b> and paste it in the chat. Your order is saved on this phone. Holiday matches have their own section at the end. Non-partner mats say &ldquo;Not a partner: no code&rdquo; on the card.' if QUEUE else '')
+QTXT = ('<b>Reorder them:</b> drag a card (desktop) or tap &uarr; Up / &darr; Down, tap <b>Out</b> to cut one, then tap <b>Copy my order</b> and paste it in the chat. Your order is saved on this phone. Holiday matches have their own section at the end. Every card carries the code band (the tiles are a partner); mats from brands with no code are marked here and say so in the caption only.' if QUEUE else '')
 if IND:
     THEORY = '''
 <p><b>Rich, not earthy.</b> Her back, Indigo, is a deep navy-blue under a glassy acrylic, with a gold-foil art deco palm on every tile. The faces are ivory with clear inks: mulberry, teal, rose, gold, periwinkle and deep green. Dark, but clean.</p>
@@ -103,8 +105,8 @@ elif LAG:
 <ul><li>Deep teal inside a pink or mulberry frame: her back plus her faces (Reba, Wren, Caroline in Peacock).</li>
 <li>Her sister color, Mulberry: the Deco Dragon (Mulberry) and other berry mats, where the tiles bring the teal.</li>
 <li>Art deco gold lines and fans: the same era as the tiles (Gilded Peacock, SoHo, Gatsby Glow).</li>
-<li>Peacocks and night gardens on dark teal or navy: her wind tiles and crane (Royal Peacock, Crane &amp; Moon).</li></ul>
-<p><b>Use with care:</b> sage, olive and tan (they look dusty next to her), neon brights, and other mats in the same Lagoon teal (blue on blue, your Oct 26 rule).</p>
+<li>Peacocks and night gardens on dark teal: her wind tiles and crane (Midnight Peacock, Crane &amp; Moon).</li></ul>
+<p><b>Use with care:</b> dusty tan, neon brights, and navy-heavy mats. A same-teal mat (the Lagoon Deco Dragon, Deco Neoprene) works best with the Mulberry racks bringing her second color.</p>
 <p><b>Odd in the photos:</b> Bam Bird Boutique&rsquo;s tray shot reads a little greener than the pile shot. The backs are glassy, so they look lighter where the light hits; we matched to the deep middle of the tile.</p>"""
 else:
     THEORY = f"""
@@ -166,7 +168,7 @@ ul{{padding-left:20px;margin:6px 0}}li{{margin:3px 0}}
 <h1>{e(CC['name'])}, the full album set</h1>
 <p class="lede">Everything for her album in one place, built the way we did Juniper. The one question for you is her <b>best features</b>: pick 4 faces below. Everything else is a draft until you OK the match order.</p>
 <nav><a href="#faces">1 · Pick her faces</a><a href="#cover">2 · Cover</a><a href="#colors">3 · Colors + theory</a><a href="#profile">4 · Profile + carousel</a><a href="#cards">5 · {N} match cards{' (reorder)' if QUEUE else ''}</a><a href="#left">6 · Left out</a></nav>
-<div class="note"><p><b>How I matched her.</b> Two-color matches first: a mat that carries her {COL} backs <i>and</i> a second color from her faces. Her top 3: {e(top3)}. {('Reba is your favorite Deco pairing from October.' if LAG else ('Peacock Garden and Savannah are the two you put Indigo on in October.' if IND else 'Viola is the Mulberry pairing you liked in October.'))} Bam Bird Boutique&rsquo;s own Deco Dragon mat is in the top 3, not #1, and only in her sister color ({OTHER}), never {COL} on {COL}.</p>
+<div class="note"><p><b>How I matched her.</b> Two-color matches first: a mat that carries her {COL} backs <i>and</i> a second color from her faces. Her top 3: {e(top3)}. {(f'Your Nov 8 edits are in: {TNTN} Tiles &amp; Tablescapes recs lead (labelled TNT rec), then Reba, your favorite Deco pairing from October, with Viola, Eden and Pretty in Plum moved into the top 10. The 9 mats you cut are at the bottom, and the 6 you added are in.' if LAG else ('Peacock Garden and Savannah are the two you put Indigo on in October.' if IND else 'Viola is the Mulberry pairing you liked in October.'))} {('Bam Bird Boutique&rsquo;s own Mulberry Deco Dragon is in the top 10, never #1; the Lagoon Dragon and Deco Neoprene are in too, at your ask.' if LAG else f'Bam Bird Boutique&rsquo;s own Deco Dragon mat is in the top 3, not #1, and only in her sister color ({OTHER}), never {COL} on {COL}.')}</p>
 <p>Racks on every card: Bam Bird Boutique&rsquo;s own 19&Prime; wood racks in {('Lagoon and Mulberry (never navy on navy; you paired Indigo with the Lagoon racks in October)' if IND else COL + ' and ' + OTHER)}, same shape so they lie the same, drawn at their real length. I looked at all {N} mats next to her tiles; the ones I passed on are at the bottom with the reason.</p></div>
 
 <h2 id="faces">Pick her 4 best features</h2>
@@ -188,7 +190,7 @@ ul{{padding-left:20px;margin:6px 0}}li{{margin:3px 0}}
 <div class="car">{carousel}</div>
 
 <h2 id="cards">{N} match cards <span class="draft">DRAFT ORDER</span></h2>
-<p class="lede">Claude&rsquo;s order, best first. Every card shows the mat with her tiles, in the same faces|backs photo as Find Your Mat-ch. {QTXT} Full mat and brand names under each card. &ldquo;Small brand photo&rdquo; = the brand&rsquo;s best photo is small, so that card is a bit soft.</p>
+<p class="lede">Claude&rsquo;s order, best first{(', with the Tiles &amp; Tablescapes recs leading' if TNTN else '')}. Every card shows the mat with her tiles: the tile inset is the two flower columns (more of her colors) next to her backs, from Bam Bird Boutique&rsquo;s own photos. Every card carries SAVE WITH CODE or 10% OFF with MAHJMATCH, since the tiles are a partner. {QTXT} Full mat and brand names under each card. &ldquo;Small brand photo&rdquo; = the brand&rsquo;s best photo is small, so that card is a bit soft.</p>
 {mc}
 <h2 id="left">Left out ({len(LO)}), and why</h2>
 <p class="lede">Mats I looked at next to her tiles and passed on. Tap one to zoom; if you want any back in, say so in the chat.</p>

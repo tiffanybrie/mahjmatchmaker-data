@@ -164,6 +164,77 @@
     "Haus of Tiles Fieldmark",
     "Rack It Mahjong mat (name cut off)"
    ]
+  },
+  "deco-lagoon": {
+   "scanned": "2026-11-08",
+   "source": "Tiles & Tablescapes group search (read only, Claude in Chrome, Nov 8): 'Deco Lagoon', 'Deco', 'Bam Bird lagoon'; full captions read, photos checked for Mahj in Bloom (tablescape 2 = Deco Lagoon) and Bespoke YOTD (black)",
+   "recs": [
+    {
+     "mat": "Jade",
+     "brand": "Oh My Mahjong",
+     "fym_key": "www.ohmymahjong.com/jade-mat-in-tube",
+     "by": "Heather Huddleston McDonough"
+    },
+    {
+     "mat": "White Lotus",
+     "brand": "Mahj Tile Haus",
+     "fym_key": "mahjtilehaus.com/white-lotus-mat",
+     "by": "Nandi Linscombe Shenkan; Bernadette Yllana Gerace",
+     "note": "non-partner on nonpartner_allow (her White Lotus match)"
+    },
+    {
+     "mat": "Mahj In Bloom Mat",
+     "brand": "Mahj Mood",
+     "fym_key": "mahjmood.com/mahj-in-bloom-mat",
+     "by": "Jessica Green-Myrow (tablescape 2, Bam Bird Mulberry racks)"
+    },
+    {
+     "mat": "YOTD Black",
+     "brand": "Bespoke Mahjong",
+     "fym_key": "www.bespokemahjong.com/year-of-the-dragon-black",
+     "by": "Nandi Linscombe Shenkan (\"Year of Dragon by Bespoke\", black by photo)"
+    },
+    {
+     "mat": "Brightside",
+     "brand": "My Fair Mahjong",
+     "fym_key": "myfairmahjong.com/mahjong-mat-brightside-33-x-33",
+     "by": "Rhonda Lehtinen (\"bright side mat in green\")"
+    }
+   ],
+   "nonpartner_out": [
+    "Lemondrop Mahjong Co Garnet Blooms (Briana Davis Warner, \"Art Deco the Halls\")",
+    "Printerval mat, unnamed (Cherl Trumbly Prince)",
+    "Mahjong by SI Fall Into the Wild + Gatsby (Rhonda Lehtinen)",
+    "Mahjong by SI Brewtifully leatherette (Jennifer Rodriguez: \"lagoon would hit even better\")",
+    "Golden Pond Mahjong Parlor (Emily Franklin Stevens)"
+   ],
+   "questions_no_rec": [
+    "Sherrae Cornett asks for Lagoon mat options",
+    "Heather Milton Corbitt asks about Sunday Scalloped Palms, It's a Mahjong Life Whispering Sparrow, May Mahjong Parisian Scarf, Wren Dancing Poppies, Wren Neutral Stripe (Maison Rue de Paris too purple)",
+    "Brittany Fulks asks about an unnamed mat",
+    "Michele Klump asks about Bespoke YOTD blush"
+   ]
+  },
+  "deco-mulberry": {
+   "scanned": "2026-11-08",
+   "source": "Tiles & Tablescapes group search (read only, Claude in Chrome, Nov 8): 'Deco Lagoon', 'Deco', 'Bam Bird lagoon'; full captions read, photos checked for Mahj in Bloom (tablescape 2 = Deco Lagoon) and Bespoke YOTD (black)",
+   "recs": [],
+   "notes": [
+    "Bird Bam Cheer: Deco Mulberry on Four Winds Social Wild Nights (Feral Auntie): FWS removed Oct 20, out",
+    "Robin Free: Deco Mulberry on an unnamed Mahj Mood mat (\"Fall Vibes\"), not identified",
+    "Carrie Snively asks about Britt Mills Winterberry (question, no rec)"
+   ],
+   "nonpartner_out": [
+    "Four Winds Social Wild Nights"
+   ]
+  },
+  "deco-indigo": {
+   "scanned": "2026-11-08",
+   "source": "Tiles & Tablescapes group search (read only, Claude in Chrome, Nov 8): 'Deco Lagoon', 'Deco', 'Bam Bird lagoon'; full captions read, photos checked for Mahj in Bloom (tablescape 2 = Deco Lagoon) and Bespoke YOTD (black)",
+   "recs": [],
+   "notes": [
+    "No Indigo pairings posted (Indigo sold out; only the July launch announcements)"
+   ]
   }
  }
 }
