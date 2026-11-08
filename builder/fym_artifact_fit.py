@@ -22,6 +22,9 @@ Notes learned Oct 30:
 - mc/*.webp are packed chunks: concatenated images + JSON header + 4-byte
   length. Never re-encode a chunk as one image. To shrink one, re-encode each
   sub-image and rebuild the header (see shrink_chunk below).
+- Nov 7 (1.17): over the cap by ~100 KB and chunks would not shrink (already
+  optimised). Fix that worked: drop from mc/190.webp the images used ONLY by
+  hid:true mats (found in D.order only), rebuilding the header; 12 images, 350 KB.
 - Inline window.IMG thumb blocks count against the 16 MB index limit; append
   them to an existing b*v1.js instead of adding a new file (file-count cap).
 """
