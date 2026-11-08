@@ -12,14 +12,14 @@ from playwright.sync_api import sync_playwright
 R = '/home/claude/mahjmatchmaker-data'
 FONTS = f'file://{R}/scripts/social/tileprofile/fonts'
 F = lambda p: 'file://' + p
-LG = '/dev/shm/introv4/logos/'
-ALLP = ['omm','missm','myfair','middlemain','bb','bambird','squad','britt','plm','cmc','bespoke','virora','ar','mood','minimahjer','macmiller','toppe','amahj','mahjon','vine','hiphip','bam','mahjongco','studios','ilovemahj','splash','wren','press','royal','soiree','register','lbb','yolo','maison','noli']  # code partners; no Tigre de Tartan, no Sunday, no Mahjong Row, no YMI
+NOLOGO = {'Tigre de Tartán', 'Tigre de Tartan', 'Sunday Mahjong', 'YMI', 'Mahjong Row'}  # image-only/never-on-social brands stay off the strip
+ALLP_V2 = ['omm','missm','myfair','middlemain','bb','bambird','squad','britt','plm','cmc','bespoke','virora','ar','mood','minimahjer','macmiller','toppe','amahj','mahjon','vine','hiphip','bam','mahjongco','studios','ilovemahj','splash','wren','press','royal','soiree','register','lbb','yolo','maison','noli']  # code partners; no Tigre de Tartan, no Sunday, no Mahjong Row, no YMI
 V = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] in ('A', 'B') else 'A'
 def rec(n):
     d = json.load(open(f'{O}/{n}/marks.json')); f0 = d['frames'][0]
     ts = sorted((x - f0 + 0.05, i) for i, x in enumerate(d['frames']))
     return dict(u=F(f'{O}/{n}/f/'), t=[round(a, 3) for a, _ in ts], i=[b for _, b in ts])
-CFG = dict(V=V, LOGOS=[F(LG + n + '.png') for n in ALLP], FL=F(f'{R}/assets/brand/flame-heart.png'),
+CFG = dict(V=V, LOGOS=[F(f'{R}/assets/hub/build-2026-11-07/' + x['file']) for x in json.load(open(f'{R}/assets/hub/build-2026-11-07/trim/list.json')) if x['brand'] not in NOLOGO], FL=F(f'{R}/assets/brand/flame-heart.png'),
            R0=rec('rec0'), S=rec('S' + V), P=rec('P' + V), K=rec('K' + V))
 DUR = 39.3
 HTML = r"""<!doctype html><html><head><meta charset="utf-8"><style>
@@ -69,11 +69,11 @@ body{width:1080px;height:1920px;overflow:hidden;position:relative;background:var
 </div>
 <div class="plate" id="plate"><span id="plt"></span></div>
 <div class="code" id="code"><span>Use code MAHJMATCH</span></div>
-<svg id="safe" width="1080" height="1920"><defs><pattern id="hp" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="24" fill="rgba(0,160,255,.45)"/></pattern></defs>
- <rect x="0" y="0" width="1080" height="269" fill="rgba(255,0,0,.28)"/><text x="20" y="250" font-size="30" fill="#c00" font-family="Arial">TOP 14% (IG header)</text>
- <rect x="0" y="1248" width="1080" height="672" fill="rgba(255,140,0,.16)"/><rect x="0" y="1536" width="1080" height="384" fill="rgba(255,0,0,.28)"/>
+<svg id="safe" width="1080" height="1920"><defs><pattern id="hp" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="24" fill="rgba(0,160,255,.30)"/></pattern></defs>
+ <rect x="0" y="0" width="1080" height="269" fill="rgba(255,0,0,.16)"/><text x="20" y="250" font-size="30" fill="#c00" font-family="Arial">TOP 14% (IG header)</text>
+ <rect x="0" y="1248" width="1080" height="672" fill="rgba(255,140,0,.10)"/><rect x="0" y="1536" width="1080" height="384" fill="rgba(255,0,0,.16)"/>
  <rect x="0" y="1450" width="1080" height="190" fill="url(#hp)" stroke="#08f" stroke-width="4"/><text x="20" y="1560" font-size="34" fill="#035" font-family="Arial" font-weight="bold">STORY LINK-STICKER LANE 1450-1640</text>
- <rect x="950" y="1000" width="130" height="700" fill="rgba(255,0,0,.28)"/><text x="20" y="1290" font-size="28" fill="#a50" font-family="Arial">bottom 35% (caption when expanded)</text>
+ <rect x="950" y="1000" width="130" height="700" fill="rgba(255,0,0,.16)"/><text x="20" y="1290" font-size="28" fill="#a50" font-family="Arial">bottom 35% (caption when expanded)</text>
  <text x="20" y="1880" font-size="30" fill="#c00" font-family="Arial">bottom 20% (caption, buttons)</text>
  <rect x="0" y="269" width="1080" height="1171" fill="none" stroke="#0a0" stroke-width="5" stroke-dasharray="20 12"/></svg>
 <script>
@@ -118,31 +118,31 @@ window.render=function(t){let cur=SC[SC.length-1];for(const s of SC)if(t>=s[1]&&
   if(!B){ // A: Up close -> Aerial -> Table (the view switcher), back to Up close, then swipe with tiles AND mat both in view (no dimming)
    const T=pw([[0,0.3],[1.2,1.75],[2.2,3.1],[2.5,3.3],[3.5,4.9],[3.51,5.45],[4.3,6.85],[5.3,8.62],[6.3,10.39],[7.2,12.17],[7.4,12.42]],L); frame(C.S,T);
    camAt([[0,0.95,390,1148],[1.84,0.95,390,1148],[1.85,1.0,390,904],[3.42,1.0,390,904],[3.6,1.0,390,792],[4.95,1.0,390,792],[5.4,1.0,390,775]],T);
-   $('ov').innerHTML=ring(419,1453,(L-0.85)/0.4)+ring(560,1144,(L-2.05)/0.4)+stamp(390,855,(L-4.15)/0.9,true)+stamp(390,855,(L-5.15)/0.9,false)+stamp(390,855,(L-6.15)/0.9,true)+stamp(390,855,(L-7.05)/0.9,true);
+   $('ov').innerHTML=ring(419,1453,(L-0.85)/0.4)+ring(560,1144,(L-2.05)/0.4)+stamp(390,855,(L-4.15)/0.7,true)+stamp(390,855,(L-5.15)/0.7,false)+stamp(390,855,(L-6.15)/0.7,true)+stamp(390,855,(L-7.05)/0.7,true);
    if(L<1.2)plate('View it up close',L); else if(L<2.5)plate('From above',L-1.2); else if(L<3.5)plate('Or at the table',L-2.5); else if(L<4.2)plate('Swipe the mats',L-3.5);}
   else { // B: Up close -> Aerial -> Table, then every swipe happens AT THE TABLE (tiles + racks on the mat)
    const T=pw([[0,0.3],[1.2,1.72],[2.2,3.0],[2.5,3.25],[3.4,4.6],[3.9,5.46],[4.9,7.23],[5.9,9.0],[6.85,10.77],[7.05,10.86]],L); frame(C.S,T);
    camAt([[0,0.95,390,1148],[1.81,0.95,390,1148],[1.82,1.0,390,904],[3.36,1.0,390,904],[3.52,1.0,390,792],[4.6,1.0,390,792],[5.25,1.25,390,600]],T);
-   $('ov').innerHTML=ring(419,1453,(L-0.85)/0.4)+ring(560,1144,(L-2.05)/0.4)+stamp(390,453,(L-3.75)/0.9,true)+stamp(390,453,(L-4.75)/0.9,false)+stamp(390,453,(L-5.75)/0.9,true)+stamp(390,453,(L-6.7)/0.9,true);
+   $('ov').innerHTML=ring(419,1453,(L-0.85)/0.4)+ring(560,1144,(L-2.05)/0.4)+stamp(390,453,(L-3.75)/0.7,true)+stamp(390,453,(L-4.75)/0.7,false)+stamp(390,453,(L-5.75)/0.7,true)+stamp(390,453,(L-6.7)/0.7,true);
    if(L<1.2)plate('View it up close',L); else if(L<2.5)plate('From above',L-1.2); else if(L<3.4)plate('Or at the table',L-2.5); else if(L<4.0)plate('Swipe the mats',L-3.4);}}
  if(id==='pick'){ // which suitor is the one? straight zoom in on Brownstone Bloom, tap
-  const T=pw([[0,0.3],[1.45,1.71],[1.8,1.93]],L); frame(C.P,T);
-  camAt([[0.3,1.0,390,1150],[0.75,1.0,390,1150],[1.65,2.5,598,1248],[2.0,2.5,598,1248]],T);
-  sp(L,0.15,1.8,[[500,1120,196,256,26]]); $('ov').innerHTML=ring(598,1240,(L-1.15)/0.45); if(L<0.9)plate('Pick your favorite',L);}
+  const T=pw([[0,0.3],[1.8,1.0]],L); frame(C.P,T);
+  camAt([[0.3,1.0,390,1150],[0.48,1.0,390,1150],[0.85,2.0,570,1200],[1.0,2.0,570,1200]],T);
+  sp(L,0.15,1.8,[[480,1080,180,250,26]]); $('ov').innerHTML=ring(570,1200,(L-1.2)/0.45); if(L<0.9)plate('Pick your favorite',L);}
  if(id==='racks'){ // YES racks only, seen against the mat; the rack filters: colour dot, then Wood tone
   const e=B?0.35:0;
-  const T=pw([[0,0.4],[1.2,1.6],[1.7,3.1],[2.3,3.82],[2.6,4.3],[3.0,5.01],[3.5,5.9],[3.51,6.5],[4.0,7.3],[4.6+e*0.5,8.99],[5.3+e*0.5,9.8],[5.31+e*0.5,10.6],[5.8+e,11.2],[6.4+e,12.3]],L); frame(C.K,T);
-  const deck=B?[1.35,390,600]:[1.25,390,900], fil=[1.5,390,900];
+  const T=pw([[0,0.4],[1.2,1.6],[1.7,3.1],[2.3,3.82],[2.6,4.3],[3.0,5.01],[3.5,5.9],[3.51,6.5],[4.0,7.3],[4.6+e*0.5,8.99],[5.3+e*0.5,9.8],[5.31+e*0.5,10.6],[5.8+e,11.2],[6.4+e,11.42]],L); frame(C.K,T);
+  const deck=B?[1.35,390,600]:[1.15,390,1060], fil=[1.5,390,900];
   camAt([[0,...deck],[2.4,...deck],[3.1,...fil],[6.5,...fil],[7.3,...deck]],T);
   const sy=B?580:1050;
-  $('ov').innerHTML=ring(314,1090,(L-1.95)/0.4)+ring(428,736,(L-2.65)/0.4)+stamp(390,sy,(L-(4.45+e*0.5))/0.9,true)+stamp(390,sy,(L-(5.65+e))/0.9,true);
+  $('ov').innerHTML=ring(314,1090,(L-1.95)/0.4)+ring(280,631,(L-2.65)/0.4)+stamp(390,sy,(L-(4.45+e*0.5))/0.9,true)+stamp(390,sy,(L-(5.65+e))/0.9,true);
   if(L<1.2)plate(B?'Add racks, at the table':'Add racks',L); else if(L<2.3)plate('Find racks by color',L-1.2); else if(L<3.6)plate('Or by wood tone',L-2.3); else if(L<4.4+e*0.5)plate('Love it',L-3.6);}
  if(id==='off'){ // the tray -> 'Make it official ♥' big
-  const T=pw([[0,13.5],[0.9,14.66],[1.6,15.3]],L); frame(C.K,T);
-  camAt([[13.5,1.0,390,1100],[13.95,1.0,390,1100],[14.55,2.4,630,1296],[15.4,2.4,630,1296]],T);
-  sp(L,0.15,1.6,[[495,1220,270,160,44]]); $('ov').innerHTML=ring(630,1296,(L-0.75)/0.45); if(L<1.0)plate('Make it official',L);}
+  const T=pw([[0,13.95],[0.8,14.66],[1.6,14.72]],L); frame(C.K,T);
+  camAt([[13.95,1.0,390,1100],[14.2,1.0,390,1100],[14.6,2.4,630,1296],[15.4,2.4,630,1296]],T);
+  sp(L,0.15,1.6,[[495,1220,270,160,44]]); $('ov').innerHTML=ring(630,1296,(L-0.7)/0.45); if(L<1.0)plate('Make it official',L);}
  if(id==='card'){ // Save + share: the GRAPHIC changes, Story close up -> Story mood board
-  const T=pw([[0,21.6],[1.9,23.3],[2.0,23.5],[4.4,25.7]],L); frame(C.K,T); camAt([[0,0.83,390,1110]],T);
+  const T=pw([[0,21.6],[1.9,23.1],[1.91,23.97],[4.4,25.7]],L); frame(C.K,T); camAt([[0,0.83,390,1110]],T);
   plate('Save + share<br>your match card',L);}
  if(id==='shop'){ // shop list: live stock (Sunday sold out), the 1-2-3 of what you can shop, code MAHJMATCH
   const T=pw([[0,26.0],[0.9,26.96],[4.6,29.49]],L); frame(C.K,T); camAt([[0,1.36,390,740]],T);

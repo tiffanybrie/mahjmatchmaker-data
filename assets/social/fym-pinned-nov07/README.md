@@ -1,3 +1,43 @@
+# Pinned Find Your Mat-ch reel, v3 A + B (Nov 8 2026, Tiffany's 4:05pm notes in FEEDBACK-nov08-v3.md)
+fym-pinned-reel-v3A.mp4 / fym-pinned-reel-v3B.mp4: 1080x1920, 30fps, **58.9s** each, silent (Planet Mahjong added in the app; cheer ends at 59s).
+**A** = v2 style with every fix. **B** = same, but leans into the views: the mat swipes AND the rack step happen in **Table view** (racks + tiles on the mat).
+Covers: fym-pinned-reel-v3A-cover.jpg / -v3B-cover.jpg (18.6s, Find Your Mat-ch + 3 phones, same as v2).
+Contact sheets (1 frame / 0.5s): fym-pinned-reel-v3A-contact-sheet.jpg, -v3B-contact-sheet.jpg. Safe-zone overlay sheets: -v3A-safezones.jpg, -v3B-safezones.jpg
+(red = IG top 14% / bottom 20% / right icon rail, orange = bottom 35%, blue hatch = story link-sticker lane y 1450-1640, green box = text area y 270-1440).
+Not in Planoly yet: she picks A or B first.
+
+| Time | Scene (A) | B differs |
+|---|---|---|
+| 0-19.6 | v2 teaser, unchanged (cut from fym-pinned-reel.mp4) | same |
+| 19.6-24.0 | Start with your tiles -> "Search your set": phone zoomed 1.4x on the search box, "Sunday" typed at real speed (280ms/letter, ~2s) -> "Tap your tiles" | same |
+| 24.0-31.4 | View switcher: "View it up close" -> "From above" (Aerial) -> "Or at the table" (Table), taps ringed; back to Up close; swipes with tiles + mat both in frame, NO dimming: ♥ Brownstone Bloom, ✕ Chinoiserie Songbird, ♥ Carson Vintage, ♥ Knox | swipes stay in Table view (tiles circle + racks on each mat), 24.0-31.05 |
+| 31.4-33.2 | Pick your favorite: straight zoom in on Brownstone Bloom | 31.05-32.85 |
+| 33.2-39.6 | "Add racks" (mat + rack together, zoomed) -> "Find racks by color" (brown dot tapped) -> "Or by wood tone" (Wood tone tapped) -> "Love it": ♥ Bam Bird Boutique Walnut, ♥ Peace Love Mahjong Oak. YES racks only, no blue ✕ rack | "Add racks, at the table": Walnut and Oak shown ON the Brownstone Bloom mat around the Sunday tiles (Table view), 32.85-39.6 |
+| 39.6-41.2 | Make it official (button zoomed 2.4x) | same |
+| 41.2-45.6 | "Save + share your match card": the graphic changes Story close up -> Story mood board (selector not shown, Post skipped) | same |
+| 45.6-50.2 | Shop your match: live stock check (Sunday sold out), 1-2-3 Shop rings on mat + 2 racks, "Use code MAHJMATCH" pill (moved up to y 440) | same |
+| 50.2-52.8 | See it together. Save it. Share it. Shop it. (lifted to y 400-1230) | same |
+| 52.8-58.9 | Find *Your* Mat-ch (96px, breathing room) / Match Tiles, Mats & Racks Across Brands (Title Case, brand-guide tagline) / LINK IN BIO / partner logo strip (ends y 1424) | same |
+
+Build: build/cap3.py (+lib3.py) re-records the LIVE site app v118 (@7817f04d) -> /dev/shm/pin3/{rec0,SA,PA,KA,SB,PB,KB};
+build/reel3.py A|B frames renders 19.6-58.9 (camera keyed to recording time; safe overlay: `reel3.py A safe <t>`); build/assemble3.sh concats.
+Logo strip: assets/hub/build-2026-11-07/trim (no Tigre de Tartán, Sunday, YMI, Mahjong Row).
+
+## Checklist v3A
+- [x] Readable typing: "Sunday" types over ~2s, search box zoomed 1.4x
+- [x] No greying of tiles during mat swipes (spotlight only on buttons: Start with tiles, pick, Make it official, shop rows)
+- [x] Up close / Aerial / Table switcher shown (3 taps, labelled)
+- [x] Blue ✕ rack cut; only the 2 yes racks
+- [x] Zoom on mat + rack and the rack filters (color dot, Wood tone) — A shows the app's Up close rack step (mat thumbnail above the rack), so the rack sits under the mat, not on it; B is the version that shows racks ON the mat
+- [x] "Save + share your match card" shows the graphic change, Story close up -> Story mood board
+- [x] Live stock + 1-2-3 Shop highlight kept
+- [x] All text/callouts inside y 270-1440 and x < 950 (checked on -v3A-safezones.jpg)
+- [~] Link-sticker lane y 1450-1640: no text, callout, tap or code pill in it from 19.6s on; the phone SCREEN imagery still passes through it (lower app rows), and the unchanged 0-19.6 teaser has the album grid/phones crossing it (kept as asked)
+- [x] End title with breathing room + Title Case tagline
+- [x] 58.9s (<= 59)
+## Checklist v3B
+- same as A, plus: [x] swipes in Table view; [x] rack step in Table view, Walnut + Oak seen on the mat with the tiles. Same lane note.
+
 # Pinned Find Your Mat-ch reel, v2 (Nov 8 2026, Tiffany's notes in FEEDBACK-nov08.md)
 fym-pinned-reel.mp4: 1080x1920, 30fps, **58.9s**, silent (she adds Planet Mahjong by Mahjong King in the app, from the top; the cheer ends at 59s).
 Cover: fym-pinned-reel-cover.jpg (18.6s, Find Your Mat-ch + 3 phones). Contact sheet (1 frame / 0.5s): fym-pinned-reel-contact-sheet.jpg.
