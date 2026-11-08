@@ -26,7 +26,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 ## Handoffs (do first)
 - **Main: Black Friday deals page** (site/livepatch/black-friday-2026, built Nov 7, DRAFT): new public page = her yes (HQ Today). On yes: Ops pastes (README steps), index it, link from home Holiday line + /links + Mon codes post comment. Must be live before PLM Black Friday Mon Nov 16.
 - **Main: FB group easy-engagement week Nov 9-15** (docs/social/fb-group-week-2026-11-09.md): one yes covers Tue poll / Thu table thread / Sat help-me-match (HQ Today). Mon codes post + Wed Juniper launch post are standing/approved formats.
-- **Matches & Catalog: publish the review pages** for Deco (Lagoon) + Deco (Mulberry) (site/livepatch/deco-{lagoon,mulberry}-album-nov07, images @eee80bfd) under the 8:31pm rule (publish freely, always send the link): she picks 4 faces each + OKs order. Indigo album next.
+- **DONE Nov 8 ~10:45am (Matches & Catalog subagent):** Deco (Lagoon) review page republished with her 10:11am edits (v3, https://claude.ai/artifact/P42niZjFS8UT21T9Q9Ajdu; 5 TNT recs lead, 9 out, 6 in, code band on every card, flower-column inset). Mulberry + Indigo pages rebuilt (code band + inset, images @5f65e307), not published. Open for her: 4 faces (Lagoon page) + Lagoon order OK; Mulberry/Indigo pages still to publish (Matches & Catalog).
 - **Matches & Catalog: missed-mats pick page** (https://claude.ai/artifact/C9RNQPxnYr7MdFiDNgoXmJ, 43 albums, 374 cards, yes-only): her yeses go straight into the albums + FYM m-lists (A YES IS A YES). HQ This week.
 - **Main: OMM Pearlescent + Virora Florielle restock frames** (assets/social/restock-pearlescent-nov07/, restock-florielle-nov07/): restock day passed (rule 9), HQ cards archived; frames banked for the next restock/reshare.
 - **Main: retired-mats angle reel** (her 8:24pm): storyboard for her yes (Later, target Thu Nov 12).
@@ -54,7 +54,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Sunday albums ×4 | Tiffany picks → Matches & Catalog | Priority 5. | Mon Nov 9 |
 | Match inbox: ~19 old unmarked lines + 32 LBB listings | Matches & Catalog | Priority 5. | Mon Nov 9 |
 | Album wiring gaps (7 live albums; C2 hearts staged, see missed album picks row) | Matches & Catalog | Gap audit C1/C2. | Tue Nov 10 |
-| Deco Lagoon + Mulberry review pages; Indigo album | Matches & Catalog | Publish + send links; she picks faces/order. | Mon Nov 9 |
+| Deco Mulberry + Indigo review pages (Lagoon v3 published Nov 8) | Matches & Catalog | Publish Mulberry + Indigo (rebuilt @5f65e307) + send links; she picks faces/order. | Mon Nov 9 |
 | Missed-mats picks into 43 albums | Tiffany yes → Matches & Catalog | Her yeses go in automatically. | On her picks |
 | Black Friday deals page | Tiffany yes → Ops | Paste + index before PLM Nov 16. | Thu Nov 12 |
 | FB group week Nov 9-15 | Tiffany yes → Main (Chrome) | Mon codes post standing; rest on her yes. | Mon Nov 9 |

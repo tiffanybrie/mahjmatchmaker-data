@@ -10,3 +10,5 @@ Pieces:
 - Racks: Bam Bird Lagoon Wood + Mulberry Wood (never navy on navy; her Oct 27 Indigo pairing used Bam Bird Lagoon racks).
 Top 3: Peacock Garden (her Oct 27 Indigo two-colour pick), Savannah (her Oct 27 'put Indigo on the green mat'), Deco Dragon (Mulberry) sister #3; Indigo Deco Dragon left out (navy on navy).
 Open: pronoun; TNT not searched; small brand photos flagged on cards (SoHo, Moody, Midnight Garden Club, Snowflake Reindeer Lodge).
+
+Nov 8 (Tiffany 10:11am notes): code band ALWAYS on (tiles are a partner; no "NOT A PARTNER : NO CODE" on any card, no-code notes in captions only); card tile inset = assets/tiles/album/inset/deco-indigo-flowers.jpg (flower columns 3-4 from Bam Bird faces tray img 16 | FYM split backs; scripts/albumcard/specs/deco_inset.py). Cards + page rebuilt, images @5f65e307.
