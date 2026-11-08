@@ -1,236 +1,240 @@
 {
- "_about": "TRUTH for every MAHJMATCH offer on the live site. Change only when a partner email/Tiffany says the code changed (log in ANSWERS). scripts/checks/live_codes_check.py reads this and FAILS when a hub brand or a live *-discount-code page has no entry here (pct or terms). pct = brands whose offer is a plain N% off (checked on every page). terms = the full offer for brands with a scope/minimum/non-% perk or no confirmed %; pct:null means NO % may be shown for that brand. status 'page only, unconfirmed' = no partner email/Tiffany record confirms it yet (listed for Tiffany).",
- "pct": {
-  "Amahj": 10,
-  "Amanda Toppe": 10,
-  "Bam Bird Boutique": 10,
-  "Bam! Let's Mahjong": 10,
-  "Bespoke Mahjong": 10,
-  "Bird & Bamboo": 10,
-  "Britt Mills": 15,
-  "Charleston Mahjong Club": 10,
-  "Hip Hip Mahjong": 10,
-  "Let's Mahj On": 10,
-  "Mac + Miller Mahjong": 10,
-  "Mahj & Vine": 10,
-  "Mahj Mood": 10,
-  "Mahj Pit": 10,
-  "Mahj Squad": 10,
-  "Mahjong Co.": 10,
-  "Middle & Main Mahjong": 10,
-  "Mini Mahjer": 10,
-  "Miss Mahjong": 10,
-  "My Fair Mahjong": 10,
-  "Noli June": 10,
-  "Oh My Mahjong": 10,
-  "Peace Love Mahjong": 10,
-  "Soir\u00e9e All Day": 10,
-  "Splash of Color": 10,
-  "The Royal Mahjong Society": 15,
-  "Tigre de Tartan": 10,
-  "Virora Mahjong": 10,
-  "Wren Mats": 10,
-  "Yellow Mountain Imports": 10,
-  "YOLO Mahjong": 10
- },
- "notes": {
-  "Amanda Toppe": "10% (Tiffany Nov 2 2026)",
-  "_A4": "Nov 7 2026 (Ops, gap audit A4): 11 hub brands had no entry; added pct (4) + terms (12 incl. Sunday no-code). Sources per brand in terms.*.source."
- },
- "verified_max_age_days": 9,
- "removed_brands": {
-  "Mahjong Row & Co.": {
-   "since": "2026-11-06",
-   "why": "Tiffany Nov 6 1:19pm: no response from the brand; remove from the site completely, parked in archive/mahjong-row-parked-2026-11-06. Scope (Tiffany Nov 6 1:33pm): her existing album match cards/colour-card picks of their mats STAY, the Halloween table blog STAYS, their 9 Mat Gallery mats (all matched on her albums) STAY with no code claim; everything else goes.",
-   "pattern": "mahjong ?row|mahjong-row|mahjongrow|cypress-forest|cypress forest",
-   "pct_when_parked": 10,
-   "removed_pages": [
-    "/mahjong-row-and-co-discount-code",
-    "/cypress-forest-mahjong-tile-matches"
-   ],
-   "allow_mentions": {
-    "/blog/halloween-mahjong-table": "Tiffany: keep (holiday content)",
-    "/mahjong-mats": "her 9 matched mats stay (no code claim)",
-    "/amara-mahjong-tile-matches": "album match cards stay",
-    "/gatsby-mahjong-tile-matches": "album match cards stay",
-    "/heritage-2-0-mahjong-tile-matches": "album match cards stay",
-    "/smith-mahjong-tile-matches": "album match cards stay",
-    "/osler-mahjong-tile-matches": "album match cards stay",
-    "/willow-mahjong-tile-matches": "album match cards stay",
-    "/sunday-tile-set-mahjong-tile-matches": "album match cards stay",
-    "/brownstone-bloom-mahjong-tile-matches": "album match cards stay"
-   },
-   "pct_claim_pattern": "Mahjong Row[^.<]{0,60}(\\d+% off|MAHJMATCH)"
-  }
- },
- "aliases": {
-  "Tigre de Tartan": [
-   "Tigre de Tart\u00e1n",
-   "Tigre De Tartan",
-   "Tigre De Tart\u00e1n"
-  ],
-  "Let's Be Besties": [
-   "Let\u2019s Be Besties",
-   "Lets Be Besties"
-  ],
-  "Let's Mahj On": [
-   "Let\u2019s Mahj On"
-  ],
-  "Bam! Let's Mahjong": [
-   "Bam! Let\u2019s Mahjong",
-   "Bam Let\u2019s Mahjong",
-   "Bam Let's Mahjong"
-  ],
-  "Soir\u00e9e All Day": [
-   "Soiree All Day"
-  ],
-  "Mac + Miller Mahjong": [
-   "Mac and Miller Mahjong"
-  ],
-  "The Royal Mahjong Society": [
-   "Royal Mahjong Society"
-  ]
- },
- "page_brand": {
-  "/royal-mahjong-society-discount-code": "The Royal Mahjong Society",
-  "/bird-and-bamboo-discount-code-2": "Bird & Bamboo"
- },
- "terms": {
-  "Tigre de Tartan": {
-   "code": "MAHJMATCH",
-   "pct": 10,
-   "code_visible": "image_only",
-   "hub_must": "10% off",
-   "source": "ANSWERS 2026-10-30 12:01am: auto-apply link tested in a cart, 10% applied; Tiffany final calls Oct 30 12:04-12:10am (code shown only as an IMAGE on what visitors see; SEO/alt/JSON-LD keep MAHJMATCH); TdT approval email Jul 18 2026 (affiliate sets own code) + policy email Oct 30 (Caroline)",
-   "status": "confirmed"
+  "_about": "TRUTH for every MAHJMATCH offer on the live site. Change only when a partner email/Tiffany says the code changed (log in ANSWERS). scripts/checks/live_codes_check.py reads this and FAILS when a hub brand or a live *-discount-code page has no entry here (pct or terms). pct = brands whose offer is a plain N% off (checked on every page). terms = the full offer for brands with a scope/minimum/non-% perk or no confirmed %; pct:null means NO % may be shown for that brand. status 'page only, unconfirmed' = no partner email/Tiffany record confirms it yet (listed for Tiffany).",
+  "pct": {
+    "Amahj": 10,
+    "Amanda Toppe": 10,
+    "Bam Bird Boutique": 10,
+    "Bam! Let's Mahjong": 10,
+    "Bespoke Mahjong": 10,
+    "Bird & Bamboo": 10,
+    "Britt Mills": 15,
+    "Charleston Mahjong Club": 10,
+    "Hip Hip Mahjong": 10,
+    "Let's Mahj On": 10,
+    "Mac + Miller Mahjong": 10,
+    "Mahj & Vine": 10,
+    "Mahj Mood": 10,
+    "Mahj Pit": 10,
+    "Mahj Squad": 10,
+    "Mahjong Co.": 10,
+    "Middle & Main Mahjong": 10,
+    "Mini Mahjer": 10,
+    "Miss Mahjong": 10,
+    "My Fair Mahjong": 10,
+    "Noli June": 10,
+    "Oh My Mahjong": 10,
+    "Peace Love Mahjong": 10,
+    "Soirée All Day": 10,
+    "Splash of Color": 10,
+    "The Royal Mahjong Society": 15,
+    "Tigre de Tartan": 10,
+    "Virora Mahjong": 10,
+    "Wren Mats": 10,
+    "Yellow Mountain Imports": 10,
+    "YOLO Mahjong": 10
   },
-  "Noli June": {
-   "code": "MAHJMATCH",
-   "pct": 10,
-   "min_order": 100,
-   "scope": "Affiliate Eligible collections",
-   "hub_must": "\\$100",
-   "source": "Shopify Collabs terms (Tiffany's screenshot, ANSWERS 2026-10-30 9:04am) + Tiffany Oct 31 10:39am: 10% off $100+",
-   "status": "confirmed"
+  "notes": {
+    "Amanda Toppe": "10% (Tiffany Nov 2 2026)",
+    "_A4": "Nov 7 2026 (Ops, gap audit A4): 11 hub brands had no entry; added pct (4) + terms (12 incl. Sunday no-code). Sources per brand in terms.*.source."
   },
-  "Soir\u00e9e All Day": {
-   "code": "MAHJMATCH",
-   "pct": 10,
-   "scope": "The Mahjong Collection",
-   "hub_must": "Mahjong Collection",
-   "desc_must": "Mahjong Collection",
-   "source": "Gmail 2026-10-10 approval email from owner Hollis Gallagher (GoAffPro): MAHJMATCH 10% off, applies to The Mahjong Collection",
-   "status": "confirmed"
+  "verified_max_age_days": 9,
+  "removed_brands": {
+    "Mahjong Row & Co.": {
+      "since": "2026-11-06",
+      "why": "Tiffany Nov 6 1:19pm: no response from the brand; remove from the site completely, parked in archive/mahjong-row-parked-2026-11-06. Scope (Tiffany Nov 6 1:33pm): her existing album match cards/colour-card picks of their mats STAY, the Halloween table blog STAYS, their 9 Mat Gallery mats (all matched on her albums) STAY with no code claim; everything else goes.",
+      "pattern": "mahjong ?row|mahjong-row|mahjongrow|cypress-forest|cypress forest",
+      "pct_when_parked": 10,
+      "removed_pages": [
+        "/mahjong-row-and-co-discount-code",
+        "/cypress-forest-mahjong-tile-matches"
+      ],
+      "allow_mentions": {
+        "/blog/halloween-mahjong-table": "Tiffany: keep (holiday content)",
+        "/mahjong-mats": "her 9 matched mats stay (no code claim)",
+        "/amara-mahjong-tile-matches": "album match cards stay",
+        "/gatsby-mahjong-tile-matches": "album match cards stay",
+        "/heritage-2-0-mahjong-tile-matches": "album match cards stay",
+        "/smith-mahjong-tile-matches": "album match cards stay",
+        "/osler-mahjong-tile-matches": "album match cards stay",
+        "/willow-mahjong-tile-matches": "album match cards stay",
+        "/sunday-tile-set-mahjong-tile-matches": "album match cards stay",
+        "/brownstone-bloom-mahjong-tile-matches": "album match cards stay"
+      },
+      "pct_claim_pattern": "Mahjong Row[^.<]{0,60}(\\d+% off|MAHJMATCH)"
+    }
   },
-  "Yellow Mountain Imports": {
-   "code": "MAHJMATCH10-YMI-2025",
-   "pct": 10,
-   "hub_must": "first order",
-   "source": "Gmail tiffanybrie@ (old inbox), thread \"Welcome to the Yellow Mountain Imports' Affiliate Program!\" (GoAffPro, Vera/Penny): Dec 13 2025 first code MMM10-YMI-2025 \"will only work on orders from new customers\"; Dec 17 2025 changed to MAHJMATCH10-YMI-2025 (cannot be exactly MAHJMATCH); Dec 19 2025 \"active and working\". Cart test Nov 7 2026: 10% applied.",
-   "status": "confirmed by email + cart test 2026-11-07",
-   "note": "Never featured on social (Tiffany Oct 27 2:44am) and left off the Nov 7 Partner Brands graphic, but still a hub brand with a live page.",
-   "scope": "new customers only (first order), store-wide",
-   "cart_test": {
-    "date": "2026-11-07",
-    "result": "10% cart-level, target all: us-am008-a $196.99 -> $177.30 (anonymous cart; the new-customer rule is enforced at checkout)"
-   }
+  "aliases": {
+    "Tigre de Tartan": [
+      "Tigre de Tartán",
+      "Tigre De Tartan",
+      "Tigre De Tartán"
+    ],
+    "Let's Be Besties": [
+      "Let’s Be Besties",
+      "Lets Be Besties"
+    ],
+    "Let's Mahj On": [
+      "Let’s Mahj On"
+    ],
+    "Bam! Let's Mahjong": [
+      "Bam! Let’s Mahjong",
+      "Bam Let’s Mahjong",
+      "Bam Let's Mahjong"
+    ],
+    "Soirée All Day": [
+      "Soiree All Day"
+    ],
+    "Mac + Miller Mahjong": [
+      "Mac and Miller Mahjong"
+    ],
+    "The Royal Mahjong Society": [
+      "Royal Mahjong Society"
+    ]
   },
-  "Maison Mahj": {
-   "code": "MAHJMATCH",
-   "pct": null,
-   "perk": "complimentary shipping on tile set orders",
-   "hub_must": "[Cc]omplimentary shipping on tile set orders",
-   "source": "Gmail 2026-06-21 Maison Mahj UpPromote email (code gives free shipping on tile sets only) + code verified in her UpPromote portal Oct 30 (ANSWERS 2026-10-30 12:20am); Tiffany Oct 29 11:07pm",
-   "status": "confirmed",
-   "note": "No brand page yet (hub links to maisonmahj.com), gap A5."
+  "page_brand": {
+    "/royal-mahjong-society-discount-code": "The Royal Mahjong Society",
+    "/bird-and-bamboo-discount-code-2": "Bird & Bamboo"
   },
-  "I Love Mahj": {
-   "code": "MAHJMATCH",
-   "pct": null,
-   "perk": "2-week free trial",
-   "hub_must": "2-week free trial",
-   "source": "page only (hub + brand page); Gmail has only the Jan 2026 partner-program application, no terms; Nov 7 2026 old inbox tiffanybrie@: only trial emails (Nov 2025) + Stripe payout account with Mind Partnership LLC (DBA I Love Mahj) Jan 20 2026, no terms",
-   "status": "page only, unconfirmed (no terms email; cannot cart-test)",
-   "cart_test": {
-    "date": "2026-11-07",
-    "result": "Not testable without creating an account (the promo is only checked on signup; Claude may not create accounts). ilovemahj.com/register?promo=MAHJMATCH pre-fills the promo field. Note: the 2-week free trial is I Love Mahj's STANDARD offer for everyone ($6/mo or $60/yr after), so MAHJMATCH gives no extra perk that we can see; it likely only credits the referral."
-   }
+  "terms": {
+    "Tigre de Tartan": {
+      "code": "MAHJMATCH",
+      "pct": 10,
+      "code_visible": "image_only",
+      "hub_must": "10% off",
+      "source": "ANSWERS 2026-10-30 12:01am: auto-apply link tested in a cart, 10% applied; Tiffany final calls Oct 30 12:04-12:10am (code shown only as an IMAGE on what visitors see; SEO/alt/JSON-LD keep MAHJMATCH); TdT approval email Jul 18 2026 (affiliate sets own code) + policy email Oct 30 (Caroline)",
+      "status": "confirmed"
+    },
+    "Noli June": {
+      "code": "MAHJMATCH",
+      "pct": 10,
+      "min_order": 100,
+      "scope": "Affiliate Eligible collections",
+      "hub_must": "\\$100",
+      "source": "Shopify Collabs terms (Tiffany's screenshot, ANSWERS 2026-10-30 9:04am) + Tiffany Oct 31 10:39am: 10% off $100+",
+      "status": "confirmed"
+    },
+    "Soirée All Day": {
+      "code": "MAHJMATCH",
+      "pct": 10,
+      "scope": "The Mahjong Collection",
+      "hub_must": "Mahjong Collection",
+      "desc_must": "Mahjong Collection",
+      "source": "Gmail 2026-10-10 approval email from owner Hollis Gallagher (GoAffPro): MAHJMATCH 10% off, applies to The Mahjong Collection",
+      "status": "confirmed"
+    },
+    "Yellow Mountain Imports": {
+      "code": "MAHJMATCH10-YMI-2025",
+      "pct": 10,
+      "hub_must": "first order",
+      "source": "Gmail tiffanybrie@ (old inbox), thread \"Welcome to the Yellow Mountain Imports' Affiliate Program!\" (GoAffPro, Vera/Penny): Dec 13 2025 first code MMM10-YMI-2025 \"will only work on orders from new customers\"; Dec 17 2025 changed to MAHJMATCH10-YMI-2025 (cannot be exactly MAHJMATCH); Dec 19 2025 \"active and working\". Cart test Nov 7 2026: 10% applied.",
+      "status": "confirmed by email + cart test 2026-11-07",
+      "note": "Never featured on social (Tiffany Oct 27 2:44am) and left off the Nov 7 Partner Brands graphic, but still a hub brand with a live page.",
+      "scope": "new customers only (first order), store-wide",
+      "cart_test": {
+        "date": "2026-11-07",
+        "result": "10% cart-level, target all: us-am008-a $196.99 -> $177.30 (anonymous cart; the new-customer rule is enforced at checkout)"
+      }
+    },
+    "Maison Mahj": {
+      "code": "MAHJMATCH",
+      "pct": null,
+      "perk": "complimentary shipping on tile set orders",
+      "hub_must": "[Cc]omplimentary shipping on tile set orders",
+      "source": "Gmail 2026-06-21 Maison Mahj UpPromote email (code gives free shipping on tile sets only) + code verified in her UpPromote portal Oct 30 (ANSWERS 2026-10-30 12:20am); Tiffany Oct 29 11:07pm",
+      "status": "confirmed",
+      "note": "No brand page yet (hub links to maisonmahj.com), gap A5."
+    },
+    "I Love Mahj": {
+      "code": "MAHJMATCH",
+      "pct": null,
+      "perk": "2-week free trial",
+      "hub_must": "2-week free trial",
+      "source": "page only (hub + brand page); Gmail has only the Jan 2026 partner-program application, no terms; Nov 7 2026 old inbox tiffanybrie@: only trial emails (Nov 2025) + Stripe payout account with Mind Partnership LLC (DBA I Love Mahj) Jan 20 2026, no terms",
+      "status": "page only, unconfirmed (no terms email; cannot cart-test)",
+      "cart_test": {
+        "date": "2026-11-07",
+        "result": "Not testable without creating an account (the promo is only checked on signup; Claude may not create accounts). ilovemahj.com/register?promo=MAHJMATCH pre-fills the promo field. Note: the 2-week free trial is I Love Mahj's STANDARD offer for everyone ($6/mo or $60/yr after), so MAHJMATCH gives no extra perk that we can see; it likely only credits the referral."
+      }
+    },
+    "Anders Ruff": {
+      "code": "MAHJMATCH",
+      "pct": 10,
+      "hub_must": "MAHJMATCH",
+      "source": "Gmail 2026-10-06 UpPromote approval (no code or % in it); referral orders tracked since Oct 30; code from page only; cart test Nov 7 2026: 10% off (shop.andersruff.com)",
+      "status": "confirmed by cart test 2026-11-07",
+      "cart_pct": 10,
+      "scope": "nearly sitewide (mats, solo mats, reversible mats, tile sets, racks, tablecloths, card covers, passports, dice, keychains, totes, shufflers, printables, mat caddy); one item not eligible: Brownstone Bloom dice set",
+      "cart_test": {
+        "date": "2026-11-07",
+        "result": "10% per eligible line (MAHJMATCH, target entitled): Palm Estate + Autumn Bloom mats $96 -> $86.40; 16 products in 4 carts, all 10% except brownstone-bloom-dice-set"
+      }
+    },
+    "Let's Be Besties": {
+      "code": "MAHJMATCH",
+      "pct": 10,
+      "hub_must": "mats",
+      "source": "Gmail 2026-10-16 UpPromote 'You have been assigned a coupon code: MAHJMATCH' + Laurie (owner) 'You are all set-up!'; the % is not stated anywhere; cart test Nov 7 2026: 10% on mats only",
+      "status": "confirmed by cart test 2026-11-07",
+      "cart_pct": 10,
+      "scope": "mats only (all mats incl. mat gift cards); NOT tile pouches, bags, travel tile sets, charcuterie board, mat storage bag",
+      "cart_test": {
+        "date": "2026-11-07",
+        "result": "10% on mats (Tartan Tweed, Green Bright Floral, Pink Christmas $60 -> $54) and mat gift cards; $0 on pouches, weekender bag, travel tiles, charcuterie board, bestie-bag-mat-storage"
+      },
+      "desc_must": "mats"
+    },
+    "Mahjong Register": {
+      "code": "MAHJMATCH",
+      "alt_codes": [
+        "MAHJMATCHMAKER"
+      ],
+      "pct": 10,
+      "excludes": "racks and other brands' products (commission still earned)",
+      "commission_pct": 14,
+      "hub_must": "10% off",
+      "source": "Brandy (Mahjong Register) email Nov 8 2026 8:37am to mahjmatchmaker@: codes MAHJMATCH + MAHJMATCHMAKER live, 10% off, excludes racks + other brands, 14% commission on all",
+      "status": "confirmed",
+      "cart_test": {
+        "date": "2026-11-08",
+        "how": "curl Shopify AJAX cart /cart/add.js + /cart/update.js {discount}",
+        "result": "MAHJMATCH and MAHJMATCHMAKER applicable:true, $115 mat -> $103.50 (10%); fake code applicable:false"
+      }
+    },
+    "The Mahjong Press": {
+      "code": "MAHJMATCH",
+      "pct": 10,
+      "hub_must": "MAHJMATCH",
+      "source": "page only; nothing from The Mahjong Press in Gmail (contacts csv: general inbox only); cart test Nov 7 2026: 10% off",
+      "status": "confirmed by cart test 2026-11-07",
+      "cart_pct": 10,
+      "scope": "store-wide (store sells only 2026 American mahjong cards)",
+      "cart_test": {
+        "date": "2026-11-07",
+        "result": "10% cart-level: 1 card $12 -> $10.80; 5 cards $60 -> $54"
+      }
+    },
+    "Mahjong Studios": {
+      "code": "MAHJMATCH",
+      "pct": 10,
+      "hub_must": "MAHJMATCH",
+      "source": "Gmail 2026-10-07 UpPromote 'coupon code assigned to you: mahjmatch'; % not stated; cart test Nov 7 2026: 10% store-wide",
+      "status": "confirmed by cart test 2026-11-07",
+      "note": "Mahjong Studios MATS are out of the site (Oct 20); tile sets/racks stay.",
+      "cart_pct": 10,
+      "scope": "store-wide (target all)",
+      "cart_test": {
+        "date": "2026-11-07",
+        "result": "10% cart-level, target all: Essential tiles $145 -> $130.50; Yellow/Lilac/Ocean Blue tile set $175 -> $157.50"
+      }
+    },
+    "Sunday Mahjong": {
+      "code": null,
+      "pct": null,
+      "page_only": true,
+      "hub_listed": false,
+      "source": "non-partner (Tiffany Oct 20 allow: whole line, personal favorite); page /sunday-mahjong-discount-code says there is no code",
+      "status": "confirmed (no code)"
+    }
   },
-  "Anders Ruff": {
-   "code": "MAHJMATCH",
-   "pct": 10,
-   "hub_must": "MAHJMATCH",
-   "source": "Gmail 2026-10-06 UpPromote approval (no code or % in it); referral orders tracked since Oct 30; code from page only; cart test Nov 7 2026: 10% off (shop.andersruff.com)",
-   "status": "confirmed by cart test 2026-11-07",
-   "cart_pct": 10,
-   "scope": "nearly sitewide (mats, solo mats, reversible mats, tile sets, racks, tablecloths, card covers, passports, dice, keychains, totes, shufflers, printables, mat caddy); one item not eligible: Brownstone Bloom dice set",
-   "cart_test": {
-    "date": "2026-11-07",
-    "result": "10% per eligible line (MAHJMATCH, target entitled): Palm Estate + Autumn Bloom mats $96 -> $86.40; 16 products in 4 carts, all 10% except brownstone-bloom-dice-set"
-   }
-  },
-  "Let's Be Besties": {
-   "code": "MAHJMATCH",
-   "pct": 10,
-   "hub_must": "mats",
-   "source": "Gmail 2026-10-16 UpPromote 'You have been assigned a coupon code: MAHJMATCH' + Laurie (owner) 'You are all set-up!'; the % is not stated anywhere; cart test Nov 7 2026: 10% on mats only",
-   "status": "confirmed by cart test 2026-11-07",
-   "cart_pct": 10,
-   "scope": "mats only (all mats incl. mat gift cards); NOT tile pouches, bags, travel tile sets, charcuterie board, mat storage bag",
-   "cart_test": {
-    "date": "2026-11-07",
-    "result": "10% on mats (Tartan Tweed, Green Bright Floral, Pink Christmas $60 -> $54) and mat gift cards; $0 on pouches, weekender bag, travel tiles, charcuterie board, bestie-bag-mat-storage"
-   },
-   "desc_must": "mats"
-  },
-  "Mahjong Register": {
-   "code": "MAHJMATCH",
-   "pct": null,
-   "hub_must": "code coming soon",
-   "source": "Gmail 2026-10-10 UpPromote approval; Tiffany asked them Oct 16 to assign MAHJMATCH (sent to hello@mahjongregister.com), no reply or coupon email found; cart test Nov 7 2026: MAHJMATCH not applied anywhere",
-   "status": "DOES NOT WORK: cart test 2026-11-07",
-   "cart_test": {
-    "date": "2026-11-07",
-    "how": "curl Shopify AJAX cart: /cart/add.js + /cart/update.js {discount} (and /discount/MAHJMATCH link)",
-    "result": "MAHJMATCH applicable:false, $0 off, on every product type tried (2 mats, acrylic racks, dice pouch, dice holder; also a $1,140 multi-item cart). Control: same method gives 10% at Bird & Bamboo, and a made-up code reads the same applicable:false here, so the code is not set up (or not usable) at Mahjong Register."
-   },
-   "note": "Nov 8: live wording changed to \"shop with our link (code coming soon)\" / \"Our MAHJMATCH code isn't active at Mahjong Register yet\" (OVERDUE Nov 7 line); re-test when they reply."
-  },
-  "The Mahjong Press": {
-   "code": "MAHJMATCH",
-   "pct": 10,
-   "hub_must": "MAHJMATCH",
-   "source": "page only; nothing from The Mahjong Press in Gmail (contacts csv: general inbox only); cart test Nov 7 2026: 10% off",
-   "status": "confirmed by cart test 2026-11-07",
-   "cart_pct": 10,
-   "scope": "store-wide (store sells only 2026 American mahjong cards)",
-   "cart_test": {
-    "date": "2026-11-07",
-    "result": "10% cart-level: 1 card $12 -> $10.80; 5 cards $60 -> $54"
-   }
-  },
-  "Mahjong Studios": {
-   "code": "MAHJMATCH",
-   "pct": 10,
-   "hub_must": "MAHJMATCH",
-   "source": "Gmail 2026-10-07 UpPromote 'coupon code assigned to you: mahjmatch'; % not stated; cart test Nov 7 2026: 10% store-wide",
-   "status": "confirmed by cart test 2026-11-07",
-   "note": "Mahjong Studios MATS are out of the site (Oct 20); tile sets/racks stay.",
-   "cart_pct": 10,
-   "scope": "store-wide (target all)",
-   "cart_test": {
-    "date": "2026-11-07",
-    "result": "10% cart-level, target all: Essential tiles $145 -> $130.50; Yellow/Lilac/Ocean Blue tile set $175 -> $157.50"
-   }
-  },
-  "Sunday Mahjong": {
-   "code": null,
-   "pct": null,
-   "page_only": true,
-   "hub_listed": false,
-   "source": "non-partner (Tiffany Oct 20 allow: whole line, personal favorite); page /sunday-mahjong-discount-code says there is no code",
-   "status": "confirmed (no code)"
-  }
- },
- "sitemap_lag_days": 3
+  "sitemap_lag_days": 3
 }
