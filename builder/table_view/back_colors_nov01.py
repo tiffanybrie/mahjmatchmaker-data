@@ -46,5 +46,9 @@ for slug, v in BOX.items():
 bp = Image.open(R / 'assets/table-view/src/omm-papaya-back-photo.png').convert('RGBA'); a = np.asarray(bp).astype(float)
 OUT['oh-my-mahjong-papaya-spritz'] = dict(back=hexs(np.median(a[..., :3][a[..., 3] > 200], 0)), type='solid', src='back photo measured (assets/table-view/src/omm-papaya-back-photo.png)', sprite='assets/table-view/src/omm-papaya-back-photo.png')
 OUT['dear-santa'] = dict(back='#efe9dc', type='ivory', src='Tiffany (config/tile-back-colors-proposed.json: "her call: ivory back")')
+try:  # Nov 7: keep the sets added by back_colors_nov07.py (a rerun of this script must not wipe their walls)
+    for _k, _v in json.load(open(R / 'config/tableview-back-colors.json')).items():
+        if _k not in OUT and 'nov07' in (_v.get('src') or ''): OUT[_k] = _v
+except Exception: pass
 json.dump(OUT, open(R / 'config/tableview-back-colors.json', 'w'), indent=1, ensure_ascii=False)
 print(len(OUT) - 1, 'sets'); [print(k, v['type'], v['back']) for k, v in OUT.items() if not k.startswith('_')]

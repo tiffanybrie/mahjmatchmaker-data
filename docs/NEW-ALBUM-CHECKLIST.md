@@ -1,6 +1,9 @@
 # New album: order of operations (Tiffany, Oct 26 12:46pm: "I can't be the one who's expected to remember all these things")
 Run this list top to bottom the day an album goes live. Every item is Claude's job unless marked YOU. Tick each one in the album's HQ Albums row (hq/albums) and log in docs/ANSWERS.md.
 
+## 0. FIRST, before anything goes to Tiffany (Tiffany Nov 7 8:13pm; gate [165])
+- [ ] **Tile set fully built in Find Your Mat-ch first: tile photo, back colour / walls, colours, before the album goes to Tiffany. Her matches come after the album.** She judges mats in FYM's Table view, so the set needs walls: add its back box to config/tableview-back-boxes-nov07.json (box inside one real back, by eye; solid / pattern / sprite), run `python3 builder/table_view/back_colors_nov07.py <build> --sheet out.jpg` and LOOK at back | wall. Unclear back = `_needs_eye` with the photo, never a guess. Map the album in config/album-fym-sets.json. `builder/fym_gate.py` [165] fails while an album set (colour card or site/livepatch/*album*/) has no walls.
+
 ## 1. Before it's live
 - [ ] **Before the swipe book (code-enforced):** colour card built (config/colorcards.json / assets/colorcards/<set>/), TNT recs searched and saved in config/tnt-recs.json, book built from the WIDEST pool (full FYM catalog, measured colour shares) with FYM photos; `python3 scripts/swipe/book_gate.py <book>` = PASS (build_book.py / finish_patch.py refuse otherwise).
 - [ ] Her card order saved (order page) and her yes on the cover.
