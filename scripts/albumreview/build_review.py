@@ -74,6 +74,8 @@ for c in man['cards']:
     if c.get('retired_mat'): tags.append('Retired')
     if not c.get('partner', True): tags.append('No code at this brand (caption only)')
     if c.get('lowres'): tags.append('Small brand photo')
+    tags += [f'Rack note: {x}' for x in c.get('rack_notes') or []]
+    tags += [f"New partner rack: {r}" for r in c.get('mat_racks', []) if r.startswith('Mahjong Register ') or r.startswith('Anders Ruff ')]
     title = f"TNT rec · {c['mat']} · {c['brand']}" if c.get('caption_note') == 'TNT rec' else c['mat']
     cards.append({'id': i, 'mat': c['mat'], 'brand': c['brand'], 'title': title, 'g': man['groups'].get(c['group'], c['group']),
                   'hol': bool(c.get('holiday')), 'why': c.get('why', ''), 'tags': tags, 'fym': c.get('fym'), 'her_note': m.get('her_note')})

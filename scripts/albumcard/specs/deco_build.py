@@ -21,6 +21,10 @@ CC = json.load(open(R + 'config/colorcards.json'))['sets'][KEY]
 TRACKS = CC['racks']
 INSET = f"assets/tiles/album/inset/deco-{KEY.split('-')[1]}-flowers.jpg"  # Nov 8: flower columns, not 9/joker
 BAMBIRD = {'Bam Bird Boutique Olive': '#4c5221', 'Bam Bird Boutique Walnut': '#8c5529'}  # measured from assets/racks/card PNGs
+# Nov 8 2:12pm (Tiffany): use partners with big rack lines more (Mahjong Register, Anders Ruff) and their NEW colourways; a sold-out
+# new rack may go on a card with a note, never a card full of out-of-stock racks. Stock checked on the brand's .js Nov 8.
+PARTNER_RACKS = {'Mahjong Register Navy Solid Wood': '#2c3c53', 'Mahjong Register Admiral Navy': '#22375c', 'Mahjong Register Peacock Teal': '#018f9b'}
+SOLDOUT = {'Mahjong Register Admiral Navy': 'brand new (Oct 24), already sold out'}
 SISTER = {'Deco Dragon (Mulberry)', 'Deco Dragon (Lagoon)', 'Deco Dragon (Indigo)', 'Deco Neoprene'}
 def flat(im):
     if im.mode in ('RGBA', 'LA', 'P'):
@@ -46,15 +50,25 @@ def is_partner(c):
 def footer(c):  # Nov 8 HARD RULE: the tiles are a partner, so the code band is ALWAYS on; non-partner mats get no % promise
     if not is_partner(c): return 'SAVE WITH CODE : MAHJMATCH'
     return 'SAVE WITH CODE : MAHJMATCH' if c['brand'] in NOPCT else '10% OFF  USE CODE : MAHJMATCH'
-cards, man = [], []
+cards, man = [], []; SO_USED = [0]; RUSE = {}
 for c in A['mats']:
     nm, brand = c['name'], c['brand']
     src = Image.open(R + c['img']); m = flat(src).crop(tuple(c['box'])) if c.get('box') else crop(src)
     mr = []
     # Nov 8 1:50pm (Playbook step 8): the tile brand's own racks first. Bam Bird's other cut-out racks (Olive, Walnut, 19in like
     # the set racks, so proportional) win when they match the mat; else Bird & Bamboo colours.
-    for l in pick(m, exclude=TRACKS, prefer=BAMBIRD):
+    _pref = {k: v for k, v in {**BAMBIRD, **PARTNER_RACKS}.items() if RUSE.get(k, 0) < 6}  # no rack on more than 6 cards (stale)
+    for l in pick(m, exclude=TRACKS, prefer=_pref):
         if l not in mr and len(mr) < 2: mr.append(l)
+    if sum(1 for l in mr if l in SOLDOUT) > 1: mr = [l for l in mr if l not in SOLDOUT][:1] + [l for l in mr if l in SOLDOUT][:1]
+    for j, l in enumerate(mr):  # a sold-out new rack: at most 2 cards per album, then its in-stock sibling
+        if l in SOLDOUT:
+            if SO_USED[0] >= 2: mr[j] = 'Mahjong Register Navy Solid Wood' if ('Mahjong Register Navy Solid Wood' not in mr and RUSE.get('Mahjong Register Navy Solid Wood', 0) < 6) else None
+            else: SO_USED[0] += 1
+    mr = [l for l in mr if l] or ['Bird & Bamboo Dark Navy']
+    if all(l in SOLDOUT for l in mr): mr = mr + ['Bird & Bamboo Dark Navy']  # never only out-of-stock racks
+    rnotes = [f'{l}: {SOLDOUT[l]}' for l in mr if l in SOLDOUT]
+    for l in mr: RUSE[l] = RUSE.get(l, 0) + 1
     fn = f"{KEY}-mahjong-tiles-{slug(brand)}-{slug(nm)}-mat.jpg"; n = len(cards) + 1
     code = footer(c); hol = bool(c.get('holiday'))
     cards.append({'slug': f'{KEY[:6]}{n:02d}', 'title': f"{CC['name']} + {nm}", 'col': CC['col'], 'tile_file': INSET,
@@ -62,7 +76,7 @@ for c in A['mats']:
     note = 'TNT rec' if c.get('tnt') else 'Sister mat' if nm in SISTER else ('Holiday match' if c.get('holiday') else ('Retired' if c['retired'] else None))
     man.append({'order': n, 'group': c['group'], 'mat': nm, 'brand': brand, 'retired_mat': c['retired'], 'holiday': hol, 'partner': is_partner(c), 'file': fn,
                 'code': code, 'src': c['img'], 'racks': TRACKS, 'mat_racks': mr, 'why': c['why'], 'fym': c['fym'], 'lowres': c['lowres'],
-                'caption_note': note})
+                'caption_note': note, 'rack_notes': rnotes})
 json.dump({'_note': f'{KEY} album DRAFT (Nov 7)', 'cards': cards, 'max_racks': 4, 'tile_brand': 'Bam Bird Boutique',
            'navy': 'assets/brand/card_navy_logo_v3.png', 'true_len': True}, open(W + '/spec.json', 'w'))
 json.dump({'set': CC['name'], 'status': "DRAFT: Claude's own picks, pending Tiffany's review", 'groups': A['groups'], 'cards': man,
