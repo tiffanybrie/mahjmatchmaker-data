@@ -1,0 +1,38 @@
+{
+ "not_mappable": [
+  {
+   "set": "Cypress",
+   "n": 37,
+   "why": "Mahjong Row is out of the site (Nov 6)"
+  },
+  {
+   "set": "Hummingbird",
+   "n": 42,
+   "why": "album drafted (site/livepatch/sunday-albums-nov06), not live yet; holiday section #hummingbird hidden"
+  },
+  {
+   "set": "Spirit of Christmas",
+   "n": 10,
+   "why": "PLM Spirit of Christmas has no holiday-page section or album yet"
+  }
+ ],
+ "dropped": [
+  {
+   "why": "Mahjong Row is out of the site (Nov 6)",
+   "set": "Brownstone Bloom",
+   "slug": "anders-ruff-brownstone-bloom",
+   "album": "https://www.mahjmatchmaker.com/brownstone-bloom-mahjong-tile-matches",
+   "key": "mahjongrowandco.com/midnight-garden-mat",
+   "mat": "Midnight Garden",
+   "brand": "Mahjong Row & Co.",
+   "hol": false,
+   "ayr": false,
+   "fym_racks": [],
+   "src": [
+    "fym117"
+   ],
+   "page_text_mentions": false,
+   "mat_hidden_fym": true
+  }
+ ]
+}

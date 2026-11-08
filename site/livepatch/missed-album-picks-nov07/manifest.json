@@ -1,0 +1,712 @@
+{
+ "sha": "aa72f9439bc2c17378d057b363aa280d6779025f",
+ "order": [
+  "jade",
+  "la-fete",
+  "amara",
+  "coquette",
+  "moonlight",
+  "nantucket",
+  "talulah",
+  "lola",
+  "birdie",
+  "dandy",
+  "heritage-2-0",
+  "drake",
+  "seabreeze",
+  "solara",
+  "tortoise",
+  "gatsby",
+  "glow-wild",
+  "luminaire",
+  "smith",
+  "osler",
+  "pearlescent",
+  "taylor",
+  "glitterville",
+  "palm-royale",
+  "pippa",
+  "sorbet",
+  "limoncello",
+  "gemma",
+  "willow",
+  "holiday#december-1994",
+  "holiday#tinselle-ruby",
+  "holiday#tinselle-emerald",
+  "holiday#rackin-rudolph",
+  "holiday#holly-jolly-pink",
+  "holiday#holly-jolly-red",
+  "holiday#dear-santa",
+  "holiday#nutcracker-ballet",
+  "holiday#holly-jolly-green",
+  "holiday#nivalee-blue",
+  "malachite",
+  "brownstone-bloom",
+  "heritage",
+  "jasmine",
+  "sunday-tile-set",
+  "emerald",
+  "shangri-la",
+  "sierra",
+  "papaya-spritz",
+  "lagoon",
+  "preppy-soiree",
+  "sunset",
+  "spring-love"
+ ],
+ "pages": {
+  "amara": {
+   "url": "https://www.mahjmatchmaker.com/amara-mahjong-tile-matches",
+   "file": "pages/amara.json",
+   "main": 10,
+   "holiday": 4,
+   "brands": [
+    "Bam Bird Boutique",
+    "Let's Be Besties",
+    "Oh My Mahjong",
+    "Peace Love Mahjong",
+    "Splash of Color"
+   ]
+  },
+  "birdie": {
+   "url": "https://www.mahjmatchmaker.com/birdie-mahjong-tile-matches",
+   "file": "pages/birdie.json",
+   "main": 7,
+   "holiday": 3,
+   "brands": [
+    "Bougie Mahjong",
+    "Let's Be Besties",
+    "Oh My Mahjong",
+    "Peace Love Mahjong",
+    "Splash of Color"
+   ]
+  },
+  "brownstone-bloom": {
+   "url": "https://www.mahjmatchmaker.com/brownstone-bloom-mahjong-tile-matches",
+   "file": "pages/brownstone-bloom.json",
+   "main": 12,
+   "holiday": 1,
+   "brands": [
+    "Amazon",
+    "Anders Ruff",
+    "Luna EK Studio",
+    "Mahj Mood",
+    "Noli June",
+    "Oh My Mahjong",
+    "Piper Chase Studios",
+    "Tigre de Tartan"
+   ]
+  },
+  "coquette": {
+   "url": "https://www.mahjmatchmaker.com/coquette-mahjong-tile-matches",
+   "file": "pages/coquette.json",
+   "main": 7,
+   "holiday": 7,
+   "brands": [
+    "Amazon",
+    "Betty June & Jeannette",
+    "Let's Be Besties",
+    "Mahj & Moon",
+    "Oh My Mahjong",
+    "Peace Love Mahjong"
+   ]
+  },
+  "dandy": {
+   "url": "https://www.mahjmatchmaker.com/dandy-mahjong-tile-matches",
+   "file": "pages/dandy.json",
+   "main": 7,
+   "holiday": 3,
+   "brands": [
+    "Bam Bird Boutique",
+    "Betty June & Jeannette",
+    "Etsy",
+    "Let's Be Besties",
+    "Oh My Mahjong",
+    "Peace Love Mahjong",
+    "Splash of Color"
+   ]
+  },
+  "drake": {
+   "url": "https://www.mahjmatchmaker.com/drake-mahjong-tile-matches",
+   "file": "pages/drake.json",
+   "main": 8,
+   "holiday": 1,
+   "brands": [
+    "Bam Bird Boutique",
+    "Britt Mills",
+    "Etsy",
+    "Let's Be Besties",
+    "Luna EK Studio",
+    "Oh My Mahjong",
+    "Tigre de Tartan"
+   ]
+  },
+  "emerald": {
+   "url": "https://www.mahjmatchmaker.com/emerald-mahjong-tile-matches",
+   "file": "pages/emerald.json",
+   "main": 3,
+   "holiday": 4,
+   "brands": [
+    "Britt Mills",
+    "Let's Be Besties",
+    "Peace Love Mahjong"
+   ]
+  },
+  "gatsby": {
+   "url": "https://www.mahjmatchmaker.com/gatsby-mahjong-tile-matches",
+   "file": "pages/gatsby.json",
+   "main": 7,
+   "holiday": 0,
+   "brands": [
+    "Bam Bird Boutique",
+    "Bougie Mahjong",
+    "Britt Mills",
+    "Let's Be Besties",
+    "Oh My Mahjong"
+   ]
+  },
+  "gemma": {
+   "url": "https://www.mahjmatchmaker.com/gemma-mahjong-tile-matches",
+   "file": "pages/gemma.json",
+   "main": 4,
+   "holiday": 0,
+   "brands": [
+    "Bam Bird Boutique",
+    "Let's Be Besties",
+    "Oh My Mahjong",
+    "Splash of Color"
+   ]
+  },
+  "glitterville": {
+   "url": "https://www.mahjmatchmaker.com/glitterville-mahjong-tile-matches",
+   "file": "pages/glitterville.json",
+   "main": 3,
+   "holiday": 2,
+   "brands": [
+    "Bam Bird Boutique",
+    "Oh My Mahjong",
+    "Peace Love Mahjong"
+   ]
+  },
+  "glow-wild": {
+   "url": "https://www.mahjmatchmaker.com/glow-wild-mahjong-tile-matches",
+   "file": "pages/glow-wild.json",
+   "main": 3,
+   "holiday": 4,
+   "brands": [
+    "Isabel Harte",
+    "Oh My Mahjong",
+    "Peace Love Mahjong"
+   ]
+  },
+  "heritage-2-0": {
+   "url": "https://www.mahjmatchmaker.com/heritage-2-0-mahjong-tile-matches",
+   "file": "pages/heritage-2-0.json",
+   "main": 3,
+   "holiday": 7,
+   "brands": [
+    "Mahj & Moon",
+    "Oh My Mahjong",
+    "Peace Love Mahjong",
+    "Tigre de Tartan"
+   ]
+  },
+  "heritage": {
+   "url": "https://www.mahjmatchmaker.com/heritage-mahjong-tile-matches",
+   "file": "pages/heritage.json",
+   "main": 4,
+   "holiday": 8,
+   "brands": [
+    "Luna EK Studio",
+    "Mahj & Moon",
+    "Peace Love Mahjong",
+    "Tigre de Tartan"
+   ]
+  },
+  "holiday#dear-santa": {
+   "url": "https://www.mahjmatchmaker.com/holiday-mahjong-matches#dear-santa",
+   "file": "pages/holiday--dear-santa.json",
+   "main": 0,
+   "holiday": 7,
+   "brands": [
+    "Peace Love Mahjong"
+   ]
+  },
+  "holiday#december-1994": {
+   "url": "https://www.mahjmatchmaker.com/holiday-mahjong-matches#december-1994",
+   "file": "pages/holiday--december-1994.json",
+   "main": 0,
+   "holiday": 25,
+   "brands": [
+    "Anders Ruff",
+    "Bam Bird Boutique",
+    "Britt Mills",
+    "Charleston Mahjong Club",
+    "Hip Hip Mahjong",
+    "Let's Be Besties",
+    "Mahj Mood",
+    "Mahj Squad",
+    "Mahjong Register",
+    "Mahjong by SI",
+    "Oh My Mahjong",
+    "Peace Love Mahjong",
+    "Sunday Mahjong",
+    "Virora Mahjong"
+   ]
+  },
+  "holiday#holly-jolly-green": {
+   "url": "https://www.mahjmatchmaker.com/holiday-mahjong-matches#holly-jolly-green",
+   "file": "pages/holiday--holly-jolly-green.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Peace Love Mahjong"
+   ]
+  },
+  "holiday#holly-jolly-pink": {
+   "url": "https://www.mahjmatchmaker.com/holiday-mahjong-matches#holly-jolly-pink",
+   "file": "pages/holiday--holly-jolly-pink.json",
+   "main": 0,
+   "holiday": 10,
+   "brands": [
+    "Peace Love Mahjong"
+   ]
+  },
+  "holiday#holly-jolly-red": {
+   "url": "https://www.mahjmatchmaker.com/holiday-mahjong-matches#holly-jolly-red",
+   "file": "pages/holiday--holly-jolly-red.json",
+   "main": 0,
+   "holiday": 8,
+   "brands": [
+    "Peace Love Mahjong"
+   ]
+  },
+  "holiday#nivalee-blue": {
+   "url": "https://www.mahjmatchmaker.com/holiday-mahjong-matches#nivalee-blue",
+   "file": "pages/holiday--nivalee-blue.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Peace Love Mahjong"
+   ]
+  },
+  "holiday#nutcracker-ballet": {
+   "url": "https://www.mahjmatchmaker.com/holiday-mahjong-matches#nutcracker-ballet",
+   "file": "pages/holiday--nutcracker-ballet.json",
+   "main": 0,
+   "holiday": 6,
+   "brands": [
+    "Peace Love Mahjong"
+   ]
+  },
+  "holiday#rackin-rudolph": {
+   "url": "https://www.mahjmatchmaker.com/holiday-mahjong-matches#rackin-rudolph",
+   "file": "pages/holiday--rackin-rudolph.json",
+   "main": 0,
+   "holiday": 11,
+   "brands": [
+    "Peace Love Mahjong"
+   ]
+  },
+  "holiday#tinselle-emerald": {
+   "url": "https://www.mahjmatchmaker.com/holiday-mahjong-matches#tinselle-emerald",
+   "file": "pages/holiday--tinselle-emerald.json",
+   "main": 0,
+   "holiday": 21,
+   "brands": [
+    "Anders Ruff",
+    "Bam! Let's Mahjong",
+    "Bespoke Mahjong",
+    "Hip Hip Mahjong",
+    "Mahj Mood",
+    "Mahjong Register",
+    "Oh My Mahjong",
+    "Peace Love Mahjong",
+    "Sunday Mahjong"
+   ]
+  },
+  "holiday#tinselle-ruby": {
+   "url": "https://www.mahjmatchmaker.com/holiday-mahjong-matches#tinselle-ruby",
+   "file": "pages/holiday--tinselle-ruby.json",
+   "main": 0,
+   "holiday": 23,
+   "brands": [
+    "Anders Ruff",
+    "Bam! Let's Mahjong",
+    "Britt Mills",
+    "Charleston Mahjong Club",
+    "Hip Hip Mahjong",
+    "Mahj Mood",
+    "Mahjong Register",
+    "Oh My Mahjong",
+    "Peace Love Mahjong"
+   ]
+  },
+  "jade": {
+   "url": "https://www.mahjmatchmaker.com/jade-mahjong-tile-matches",
+   "file": "pages/jade.json",
+   "main": 7,
+   "holiday": 9,
+   "brands": [
+    "Bespoke Mahjong",
+    "Let's Be Besties",
+    "Oh My Mahjong",
+    "Peace Love Mahjong",
+    "Splash of Color"
+   ]
+  },
+  "jasmine": {
+   "url": "https://www.mahjmatchmaker.com/jasmine-mahjong-tile-matches",
+   "file": "pages/jasmine.json",
+   "main": 2,
+   "holiday": 7,
+   "brands": [
+    "Bam Bird Boutique",
+    "Let's Be Besties",
+    "Peace Love Mahjong",
+    "Rebecca Illustrated"
+   ]
+  },
+  "la-fete": {
+   "url": "https://www.mahjmatchmaker.com/la-fete-mahjong-tile-matches",
+   "file": "pages/la-fete.json",
+   "main": 6,
+   "holiday": 10,
+   "brands": [
+    "Amazon",
+    "Betty June & Jeannette",
+    "Britt Mills",
+    "Let's Be Besties",
+    "Oh My Mahjong",
+    "Peace Love Mahjong",
+    "Piper Chase Studios",
+    "Rebecca Illustrated"
+   ]
+  },
+  "lagoon": {
+   "url": "https://www.mahjmatchmaker.com/lagoon-mahjong-tile-matches",
+   "file": "pages/lagoon.json",
+   "main": 3,
+   "holiday": 1,
+   "brands": [
+    "Bam Bird Boutique",
+    "Bespoke Mahjong",
+    "Let's Be Besties",
+    "Splash of Color"
+   ]
+  },
+  "limoncello": {
+   "url": "https://www.mahjmatchmaker.com/limoncello-mahjong-tile-matches",
+   "file": "pages/limoncello.json",
+   "main": 1,
+   "holiday": 0,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "lola": {
+   "url": "https://www.mahjmatchmaker.com/lola-mahjong-tile-matches",
+   "file": "pages/lola.json",
+   "main": 9,
+   "holiday": 3,
+   "brands": [
+    "Amazon",
+    "Bougie Mahjong",
+    "Let's Be Besties",
+    "Oh My Mahjong",
+    "Peace Love Mahjong",
+    "Royal Mahjong Society",
+    "YOLO Mahjong"
+   ]
+  },
+  "luminaire": {
+   "url": "https://www.mahjmatchmaker.com/luminaire-mahjong-tile-matches",
+   "file": "pages/luminaire.json",
+   "main": 7,
+   "holiday": 0,
+   "brands": [
+    "AussieHannaGift",
+    "Betty June & Jeannette",
+    "Mahj & Moon",
+    "Oh My Mahjong",
+    "Rebecca Illustrated"
+   ]
+  },
+  "malachite": {
+   "url": "https://www.mahjmatchmaker.com/malachite-mahjong-tile-matches",
+   "file": "pages/malachite.json",
+   "main": 12,
+   "holiday": 4,
+   "brands": [
+    "Amanda Toppe",
+    "Bam Bird Boutique",
+    "Britt Mills",
+    "Etsy",
+    "Golden Pond Mahjong",
+    "Let's Be Besties",
+    "Mahj Tile Haus",
+    "Miss Mahjong",
+    "My Fair Mahjong",
+    "Peace Love Mahjong",
+    "YOLO Mahjong"
+   ]
+  },
+  "moonlight": {
+   "url": "https://www.mahjmatchmaker.com/moonlight-mahjong-tile-matches",
+   "file": "pages/moonlight.json",
+   "main": 9,
+   "holiday": 5,
+   "brands": [
+    "Amazon",
+    "Bougie Mahjong",
+    "Let's Be Besties",
+    "Oh My Mahjong",
+    "Peace Love Mahjong"
+   ]
+  },
+  "nantucket": {
+   "url": "https://www.mahjmatchmaker.com/nantucket-mahjong-tile-matches",
+   "file": "pages/nantucket.json",
+   "main": 5,
+   "holiday": 9,
+   "brands": [
+    "Amazon",
+    "Oh My Mahjong",
+    "Peace Love Mahjong",
+    "Splash of Color",
+    "The Mahjong House",
+    "Tigre de Tartan",
+    "YOLO Mahjong"
+   ]
+  },
+  "osler": {
+   "url": "https://www.mahjmatchmaker.com/osler-mahjong-tile-matches",
+   "file": "pages/osler.json",
+   "main": 5,
+   "holiday": 1,
+   "brands": [
+    "Let's Be Besties",
+    "Oh My Mahjong",
+    "Peace Love Mahjong",
+    "Rebecca Illustrated"
+   ]
+  },
+  "palm-royale": {
+   "url": "https://www.mahjmatchmaker.com/palm-royale-mahjong-tile-matches",
+   "file": "pages/palm-royale.json",
+   "main": 4,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong",
+    "Peace Love Mahjong",
+    "Splash of Color",
+    "Tigre de Tartan"
+   ]
+  },
+  "papaya-spritz": {
+   "url": "https://www.mahjmatchmaker.com/papaya-spritz-mahjong-tile-matches",
+   "file": "pages/papaya-spritz.json",
+   "main": 5,
+   "holiday": 1,
+   "brands": [
+    "Let's Be Besties",
+    "Middle & Main Mahjong",
+    "My Fair Mahjong",
+    "Oh My Mahjong",
+    "Splash of Color"
+   ]
+  },
+  "pearlescent": {
+   "url": "https://www.mahjmatchmaker.com/pearlescent-mahjong-tile-matches",
+   "file": "pages/pearlescent.json",
+   "main": 3,
+   "holiday": 3,
+   "brands": [
+    "Oh My Mahjong",
+    "Peace Love Mahjong"
+   ]
+  },
+  "pippa": {
+   "url": "https://www.mahjmatchmaker.com/pippa-mahjong-tile-matches",
+   "file": "pages/pippa.json",
+   "main": 3,
+   "holiday": 2,
+   "brands": [
+    "Bougie Mahjong",
+    "Oh My Mahjong",
+    "Peace Love Mahjong"
+   ]
+  },
+  "preppy-soiree": {
+   "url": "https://www.mahjmatchmaker.com/preppy-soiree-mahjong-tile-matches",
+   "file": "pages/preppy-soiree.json",
+   "main": 2,
+   "holiday": 2,
+   "brands": [
+    "Amazon",
+    "Bougie Mahjong",
+    "Let's Be Besties"
+   ]
+  },
+  "seabreeze": {
+   "url": "https://www.mahjmatchmaker.com/seabreeze-mahjong-tile-matches",
+   "file": "pages/seabreeze.json",
+   "main": 7,
+   "holiday": 2,
+   "brands": [
+    "Betty June & Jeannette",
+    "Bougie Mahjong",
+    "Let's Be Besties",
+    "Oh My Mahjong",
+    "Peace Love Mahjong",
+    "Splash of Color"
+   ]
+  },
+  "shangri-la": {
+   "url": "https://www.mahjmatchmaker.com/shangri-la-mahjong-tile-matches",
+   "file": "pages/shangri-la.json",
+   "main": 5,
+   "holiday": 2,
+   "brands": [
+    "Bam Bird Boutique",
+    "Bougie Mahjong",
+    "Britt Mills",
+    "Let's Be Besties",
+    "My Fair Mahjong"
+   ]
+  },
+  "sierra": {
+   "url": "https://www.mahjmatchmaker.com/sierra-mahjong-tile-matches",
+   "file": "pages/sierra.json",
+   "main": 6,
+   "holiday": 1,
+   "brands": [
+    "Fait à Main",
+    "House of Hearts Studio",
+    "Luna EK Studio",
+    "Peace Love Mahjong",
+    "Sunday Mahjong",
+    "Tigre de Tartan"
+   ]
+  },
+  "smith": {
+   "url": "https://www.mahjmatchmaker.com/smith-mahjong-tile-matches",
+   "file": "pages/smith.json",
+   "main": 5,
+   "holiday": 2,
+   "brands": [
+    "Bam Bird Boutique",
+    "Fait à Main",
+    "Let's Be Besties",
+    "Luna EK Studio",
+    "Oh My Mahjong",
+    "Peace Love Mahjong"
+   ]
+  },
+  "solara": {
+   "url": "https://www.mahjmatchmaker.com/solara-mahjong-tile-matches",
+   "file": "pages/solara.json",
+   "main": 9,
+   "holiday": 0,
+   "brands": [
+    "Anders Ruff",
+    "Bespoke Mahjong",
+    "Betty June & Jeannette",
+    "Mary Benson",
+    "Oh My Mahjong",
+    "Sophie Clima"
+   ]
+  },
+  "sorbet": {
+   "url": "https://www.mahjmatchmaker.com/sorbet-mahjong-tile-matches",
+   "file": "pages/sorbet.json",
+   "main": 3,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong",
+    "Peace Love Mahjong",
+    "Splash of Color"
+   ]
+  },
+  "spring-love": {
+   "url": "https://www.mahjmatchmaker.com/spring-love-mahjong-tile-matches",
+   "file": "pages/spring-love.json",
+   "main": 1,
+   "holiday": 0,
+   "brands": [
+    "YOLO Mahjong"
+   ]
+  },
+  "sunday-tile-set": {
+   "url": "https://www.mahjmatchmaker.com/sunday-tile-set-mahjong-tile-matches",
+   "file": "pages/sunday-tile-set.json",
+   "main": 2,
+   "holiday": 7,
+   "brands": [
+    "Amazon",
+    "Let's Be Besties",
+    "Luna EK Studio",
+    "Peace Love Mahjong",
+    "Sunday Mahjong"
+   ]
+  },
+  "sunset": {
+   "url": "https://www.mahjmatchmaker.com/sunset-mahjong-tile-matches",
+   "file": "pages/sunset.json",
+   "main": 2,
+   "holiday": 1,
+   "brands": [
+    "Let's Be Besties",
+    "Peace Love Mahjong",
+    "Splash of Color"
+   ]
+  },
+  "talulah": {
+   "url": "https://www.mahjmatchmaker.com/talulah-mahjong-tile-matches",
+   "file": "pages/talulah.json",
+   "main": 7,
+   "holiday": 6,
+   "brands": [
+    "Let's Be Besties",
+    "Mahj & Moon",
+    "Oh My Mahjong",
+    "Peace Love Mahjong",
+    "YOLO Mahjong"
+   ]
+  },
+  "taylor": {
+   "url": "https://www.mahjmatchmaker.com/taylor-mahjong-tile-matches",
+   "file": "pages/taylor.json",
+   "main": 6,
+   "holiday": 0,
+   "brands": [
+    "Mahj & Moon",
+    "Oh My Mahjong",
+    "Splash of Color",
+    "YOLO Mahjong"
+   ]
+  },
+  "tortoise": {
+   "url": "https://www.mahjmatchmaker.com/tortoise-mahjong-tile-matches",
+   "file": "pages/tortoise.json",
+   "main": 4,
+   "holiday": 5,
+   "brands": [
+    "Bam Bird Boutique",
+    "Oh My Mahjong",
+    "Peace Love Mahjong",
+    "Tigre de Tartan"
+   ]
+  },
+  "willow": {
+   "url": "https://www.mahjmatchmaker.com/willow-mahjong-tile-matches",
+   "file": "pages/willow.json",
+   "main": 2,
+   "holiday": 0,
+   "brands": [
+    "Oh My Mahjong",
+    "Tigre de Tartan"
+   ]
+  }
+ }
+}

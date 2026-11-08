@@ -52,7 +52,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | FYM 1.18 + gallery v118 + search | Matches & Catalog | Priority 4. | Mon Nov 9 |
 | Sunday albums ×4 | Tiffany picks → Matches & Catalog | Priority 5. | Mon Nov 9 |
 | Match inbox: ~19 old unmarked lines + 32 LBB listings | Matches & Catalog | Priority 5. | Mon Nov 9 |
-| Album wiring gaps (7 live albums, Larkspur/Poppins/Vivienne hearts) | Matches & Catalog | Gap audit C1/C2. | Tue Nov 10 |
+| Album wiring gaps (7 live albums; C2 hearts staged, see missed album picks row) | Matches & Catalog | Gap audit C1/C2. | Tue Nov 10 |
 | Deco Lagoon + Mulberry review pages; Indigo album | Matches & Catalog | Publish + send links; she picks faces/order. | Mon Nov 9 |
 | My Fair Style of Your Life (#1 in her album order) | Matches & Catalog | Review page out; TNT search (Chrome); post >= 1 week after Juniper (~Wed 11/18) once back in stock. | Tue Nov 10 |
 | Missed-mats picks into 43 albums | Tiffany yes → Matches & Catalog | Her yeses go in automatically. | On her picks |
@@ -66,7 +66,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Work With v3 + Brands form | Ops | Default applies: goes up HIDDEN as is next Chrome trip unless she types wait/changes (HQ This week). | Next Chrome trip |
 | Holiday new-albums email | Main | Squarespace draft; her final read. | Mon Nov 9 |
 | Holiday colour cards (Tinselle ×2, Dec 1994, PLM Spirit + Nutcracker) | Matches & Catalog | Not started (was Oct 31). | Tue Nov 10 |
-| Larkspur hearts into 27 tile albums | Matches & Catalog → Ops | 0 of 27. | Tue Nov 10 |
+| Missed album picks (gap C2): 462 cards for 52 album pages / holiday sections (Larkspur 27, Poppins, Vivienne, holiday mat books, round-1 yeses) | Ops paste (Chrome) | STAGED Nov 7: site/livepatch/missed-album-picks-nov07/README.md (OPS PASTE; images @aa72f943; dry run 52/52 OK). Order: manifest.json `order`. 1 held (Green Malachite, watermarked photo). Not mappable: Hummingbird (album not live), PLM Spirit of Christmas (no section). | Tue Nov 10 |
 | December 1994 redo (her RTS notes) | Matches & Catalog | After holiday colour cards. | Wed Nov 11 |
 | Lotus Cove swipe book full names (book_gate [n]) | Matches & Catalog | Before Juniper launch. | Mon Nov 9 |
 | Discount links not converted (Britt Mills, Register, YMI, RMS, Hip Hip, Wren/Soirée/Amanda Toppe) | Main | builder/fym_fix_oct21/discount_check_oct21.json. | Mon Nov 9 |
