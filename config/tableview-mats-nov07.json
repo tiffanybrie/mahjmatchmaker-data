@@ -1,0 +1,18 @@
+{
+ "_about": "Table view MAT coverage, Nov 7 2026 (Tiffany 10:22pm: 'get table view completely updated'; Lotus Cove first). Applied by builder/fym_fix_nov07/tableview_v118.py after tv118.py. Mats are ALWAYS the vendor's own photo, never AI (ANSWERS Oct 27-Nov 2). cls: A = full table, B = corner view, C = grayed (why[k] says why). fa = canvas affine (photo 0..1 -> card 0..1) that crops/straightens the app's OWN FYM photo to the mat (no new bytes). mo = a different vendor photo from the product page, straightened to a square that is all mat (assets/table-view/mats/*.webp, inlined at build as a data URL); src = where it came from. cv = corner fit (builder/table_view/corner_nov02.py format). Every mat marked A/B here was LOOKED AT on the table-view render contact sheet. Racks are NOT here (rack agent: config/tableview-racks-nov07.json).",
+ "cls": {
+  "www.ohmymahjong.com/lotus-cove-mat-in-tube": "A",
+  "www.ohmymahjong.com/preppy-soiree-mat-in-tube": "A"
+ },
+ "why": {},
+ "fa": {},
+ "mo": {
+  "www.ohmymahjong.com/lotus-cove-mat-in-tube": "assets/table-view/mats/omm-lotus-cove.webp",
+  "www.ohmymahjong.com/preppy-soiree-mat-in-tube": "assets/table-view/mats/oh-my-mahjong-preppy-soiree-f27cf9.webp"
+ },
+ "cv": {},
+ "src": {
+  "www.ohmymahjong.com/lotus-cove-mat-in-tube": "OMM product page image 1 (lotus-cove-mat-in-tube-3067585.jpg, flat top-down on grey, no props), perspective-straightened; the FYM photo has racks/cards/tiles on it",
+  "www.ohmymahjong.com/preppy-soiree-mat-in-tube": "vendor product image 1: https://cdn.shopify.com/s/files/1/0680/9639/3500/files/preppy-soiree-mat-639043.jpg (straightened to the mat)"
+ }
+}
