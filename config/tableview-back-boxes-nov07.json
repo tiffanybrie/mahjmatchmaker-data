@@ -3125,44 +3125,373 @@
    "kind": "pattern",
    "img": "assets/table-view/back-photos/mahj-pit-original-confetti-large.jpg",
    "note": "wall of confetti backs behind a face-up joker"
-  }
- },
- "_needs_eye": {
-  "amahj-white-signature": {
-   "name": "White Signature",
-   "brand": "Amahj",
-   "why": "all-white tiles, no back identifiable"
   },
   "holly-jolly-red": {
    "name": "Holly Jolly (Rudolph Red)",
    "brand": "Bam! Let's Mahjong",
-   "why": "faces only, no back in the photo"
+   "box": [
+    0.875,
+    0.41,
+    0.935,
+    0.47
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/holly-jolly-red.jpg",
+   "note": "Nov 8: Rudolph Red variant photo: red tile-back frame around the face grid. Source https://cdn.shopify.com/s/files/1/0689/4377/3854/files/holly-jolly-christmas-mahjong-tiles-new-arrivals-bam-lets-mahjong-102137.jpg"
   },
   "holly-jolly-green": {
    "name": "Holly Jolly (Grinch Green)",
    "brand": "Bam! Let's Mahjong",
-   "why": "tiles sit in a rack, backs not visible"
+   "box": [
+    0.885,
+    0.42,
+    0.935,
+    0.48
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/holly-jolly-green.jpg",
+   "note": "Nov 8: Grinch Green variant photo: green tile-back frame. Source https://cdn.shopify.com/s/files/1/0689/4377/3854/files/holly-jolly-christmas-mahjong-tiles-new-arrivals-bam-lets-mahjong-857714.jpg"
+  },
+  "bam-let-s-mahjong-art-deco": {
+   "name": "Art Deco",
+   "brand": "Bam! Let's Mahjong",
+   "box": [
+    0.1,
+    0.42,
+    0.2,
+    0.48
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/bam-let-s-mahjong-art-deco.jpg",
+   "note": "Nov 8: black backs on the wall in the rack. Source https://cdn.shopify.com/s/files/1/0689/4377/3854/files/art-deco-mahjong-tile-set-pre-order-estimated-delivery-date-end-of-june-shop-all-bam-lets-mahjong-5347721.jpg"
+  },
+  "bam-let-s-mahjong-hocus-pocus-halloween": {
+   "name": "Hocus Pocus Halloween",
+   "brand": "Bam! Let's Mahjong",
+   "box": [
+    0.675,
+    0.13,
+    0.745,
+    0.18
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/bam-let-s-mahjong-hocus-pocus-halloween.jpg",
+   "note": "Nov 8: flipped black-back tile, top right. Source https://cdn.shopify.com/s/files/1/0689/4377/3854/files/hocus-pocus-halloween-mahjong-tile-set-pre-order-estimated-delivery-date-end-of-july-mahjong-tiles-bam-lets-mahjong-4656729.jpg"
+  },
+  "bam-let-s-mahjong-the-palm-royale-lemon-drop": {
+   "name": "The Palm Royale Lemon Drop",
+   "brand": "Bam! Let's Mahjong",
+   "box": [
+    0.785,
+    0.585,
+    0.835,
+    0.635
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/bam-let-s-mahjong-the-palm-royale-lemon-drop.jpg",
+   "note": "Nov 8: Lemon Drop variant photo: yellow back tile in the grid (brand: back Soft Yellow). Source https://cdn.shopify.com/s/files/1/0689/4377/3854/files/the-palm-royale-tile-collection-and-matching-mat-pre-order-mahjong-tiles-bam-lets-mahjong-564072.jpg"
+  },
+  "bam-let-s-mahjong-garden-party-sky-blue": {
+   "name": "Garden Party Sky Blue",
+   "brand": "Bam! Let's Mahjong",
+   "box": [
+    0.3,
+    0.48,
+    0.38,
+    0.53
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/bam-let-s-mahjong-garden-party-sky-blue.jpg",
+   "note": "Nov 8: Sky Blue variant photo: sky-blue wall behind the rack. Source https://cdn.shopify.com/s/files/1/0689/4377/3854/files/garden-party-mahjong-tile-set-with-mat-shufflers-new-arrivals-bam-lets-mahjong-6345369.jpg"
+  },
+  "bam-let-s-mahjong-garden-party-lavender-bloom": {
+   "name": "Garden Party Lavender Bloom",
+   "brand": "Bam! Let's Mahjong",
+   "box": [
+    0.72,
+    0.7,
+    0.85,
+    0.78
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/bam-let-s-mahjong-garden-party-lavender-bloom.jpg",
+   "note": "Nov 8: Lavender Bloom variant photo: lavender tile-back frame. Source https://cdn.shopify.com/s/files/1/0689/4377/3854/files/garden-party-mahjong-tile-set-with-mat-shufflers-new-arrivals-bam-lets-mahjong-4465234.jpg"
   },
   "nutcracker-ballet": {
    "name": "Nutcracker Ballet",
    "brand": "Mahj Squad",
-   "why": "faces only; tile bodies pink but no back shown"
+   "box": [
+    0.45,
+    0.19,
+    0.53,
+    0.25
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/nutcracker-ballet.jpg",
+   "note": "Nov 8: pink backs on the wall (brand: backs are solid pink). Source https://cdn.shopify.com/s/files/1/0659/3200/1489/files/nutcracker-ballet-mahjong-tile-set-with-bag-947.webp"
+  },
+  "mahj-squad-just-peachy": {
+   "name": "Just Peachy",
+   "brand": "Mahj Squad",
+   "box": [
+    0.03,
+    0.15,
+    0.18,
+    0.3
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/mahj-squad-just-peachy.jpg",
+   "note": "Nov 8: face-down peach tile, top left. Source https://cdn.shopify.com/s/files/1/0659/3200/1489/files/just-peachy-mahjong-tile-set-665.webp"
+  },
+  "mahj-squad-parisian-without-acrylic-box": {
+   "name": "Parisian",
+   "brand": "Mahj Squad",
+   "box": [
+    0.51,
+    0.17,
+    0.59,
+    0.3
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/mahj-squad-parisian-without-acrylic-box.jpg",
+   "note": "Nov 8: lavender backs on the wall behind the rack. Source https://cdn.shopify.com/s/files/1/0659/3200/1489/files/parisian-mahjong-tile-set-820.webp"
   },
   "amahj-round-top-stamped": {
    "name": "Round Top Stamped",
    "brand": "Amahj",
-   "why": "faces grid only"
+   "box": [
+    0.687,
+    0.178,
+    0.706,
+    0.215
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/amahj-round-top-stamped.jpg",
+   "note": "Nov 8: racked tiles turned back-up: white back with Amahj logo + corner motif. Source https://cdn.shopify.com/s/files/1/0675/3805/9486/files/9EA56834-D856-454C-829A-57A8C6D47040.jpg"
+  },
+  "amahj-white-signature": {
+   "name": "White Signature",
+   "brand": "Amahj",
+   "box": [
+    0.2,
+    0.765,
+    0.26,
+    0.79
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/amahj-white-signature.jpg",
+   "note": "Nov 8: face-down tile lower left: white back with Amahj logo + red corner brackets. Source https://cdn.shopify.com/s/files/1/0675/3805/9486/files/B090ADCB-E027-4068-9EDD-2EB13E2C056F.jpg"
+  },
+  "amahj-on-the-water-signature": {
+   "name": "On the Water Signature",
+   "brand": "Amahj",
+   "box": [
+    0.25,
+    0.22,
+    0.32,
+    0.28
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/amahj-on-the-water-signature.jpg",
+   "note": "Nov 8: tiles in the back rack facing away: white back with Amahj logo + blue corner brackets. Source https://cdn.shopify.com/s/files/1/0675/3805/9486/files/F8CC9B14-602B-424D-AF82-81AF899C643D.png"
   },
   "bird-bamboo-the-belle": {
    "name": "The Belle",
    "brand": "Bird & Bamboo",
-   "why": "all tiles face up"
+   "box": [
+    0.855,
+    0.055,
+    0.885,
+    0.085
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/bird-bamboo-the-belle.jpg",
+   "note": "Nov 8: ALL-WHITE: brand states \"Back of tile is white\" (white acrylic); every tile edge in the photo is white, no coloured layer. Box = plain white tile body. Source https://cdn.shopify.com/s/files/1/0668/7293/4552/files/The_Belle_Mahjong_Tile_Set.png"
   },
   "bird-bamboo-the-boho-chic": {
    "name": "The Boho Chic",
    "brand": "Bird & Bamboo",
-   "why": "all tiles face up"
+   "box": [
+    0.845,
+    0.205,
+    0.87,
+    0.235
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/bird-bamboo-the-boho-chic.jpg",
+   "note": "Nov 8: ALL-WHITE: brand states \"Back of tile is white\" (white acrylic); every tile edge white. Box = plain white tile body. Source https://cdn.shopify.com/s/files/1/0668/7293/4552/files/The_Boho_Chic_Mahjong_Tile_Set_Full.png"
   },
+  "anders-ruff-eau-de-mahj": {
+   "name": "Eau De Mahj",
+   "brand": "Anders Ruff",
+   "box": [
+    0.622,
+    0.3,
+    0.645,
+    0.62
+   ],
+   "kind": "pattern",
+   "img": "assets/table-view/back-photos/anders-ruff-eau-de-mahj.jpg",
+   "note": "Nov 8: wall of pearl backs (gold ring printed in the centre; patch taken beside the rings). Brand: pearl-backed tiles. Source https://cdn.shopify.com/s/files/1/0593/2200/7719/files/IMG_3864.jpg"
+  },
+  "sunday-mahjong-december-1994": {
+   "name": "December 1994",
+   "brand": "Sunday Mahjong",
+   "box": [
+    0.04,
+    0.67,
+    0.12,
+    0.75
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/sunday-mahjong-december-1994.jpg",
+   "note": "Nov 8: face-down ivory tiles around the box (brand: solid ivory). Source https://cdn.shopify.com/s/files/1/0946/7458/3873/files/December-1994.1.jpg"
+  },
+  "middle-main-mahjong-sunshine": {
+   "name": "Sunshine",
+   "brand": "Middle & Main Mahjong",
+   "box": [
+    0.4,
+    0.645,
+    0.53,
+    0.73
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/middle-main-mahjong-sunshine.jpg",
+   "note": "Nov 8: plain white tile on the towel; brand: \"The tiles are a glossy white acrylic\" (same wording as Charleston, whose back photo is white). Source https://cdn.shopify.com/s/files/1/0662/4316/6361/files/3_81678be2-5b9d-40c1-b7cf-df86a9621ca8.png"
+  },
+  "virora-mahjong-flor-a": {
+   "name": "Floréa",
+   "brand": "Virora Mahjong",
+   "box": [
+    0.34,
+    0.455,
+    0.46,
+    0.505
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/virora-mahjong-flor-a.jpg",
+   "note": "Nov 8: purple back layer on top of the wall. Source https://cdn.shopify.com/s/files/1/0734/6605/2791/files/3.png"
+  },
+  "virora-mahjong-lanisse": {
+   "name": "Élanisse",
+   "brand": "Virora Mahjong",
+   "box": [
+    0.3,
+    0.425,
+    0.43,
+    0.465
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/virora-mahjong-lanisse.jpg",
+   "note": "Nov 8: rose-pink back layer on top of the wall. Source https://cdn.shopify.com/s/files/1/0734/6605/2791/files/3_e973112a-81db-40aa-bb17-0fcf25c94c6b.jpg"
+  },
+  "virora-mahjong-iriselle": {
+   "name": "Iriselle",
+   "brand": "Virora Mahjong",
+   "box": [
+    0.25,
+    0.475,
+    0.4,
+    0.52
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/virora-mahjong-iriselle.jpg",
+   "note": "Nov 8: mint back layer on top of the wall. Source https://cdn.shopify.com/s/files/1/0734/6605/2791/files/3_439bc8a5-df7c-41e1-b922-47dc7d0a7741.jpg"
+  },
+  "bespoke-mahjong-corey-paige-color-crush-bright-white": {
+   "name": "Corey Paige Color Crush (Bright White)",
+   "brand": "Bespoke Mahjong",
+   "box": [
+    0.33,
+    0.105,
+    0.355,
+    0.14
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/bespoke-mahjong-corey-paige-color-crush-bright-white.jpg",
+   "note": "Nov 8: walls (15+ tiles, more than the 6 blanks) all show the white back with a small pink star. Source https://cdn.shopify.com/s/files/1/0837/2142/1083/files/Untitled_1500x1500px_14.png"
+  },
+  "mahjong-co-kaleidoscope": {
+   "name": "Kaleidoscope",
+   "brand": "Mahjong Co.",
+   "box": [
+    0.4,
+    0.72,
+    0.47,
+    0.79
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/mahjong-co-kaleidoscope.jpg",
+   "note": "Nov 8: bottom row of pink backs (brand: deep pink backing). Source https://cdn.shopify.com/s/files/1/0929/2873/7561/files/Tiles_Kaleidoscope_Edit.png"
+  },
+  "yolo-journey-to-the-west": {
+   "name": "Journey to the West",
+   "brand": "YOLO Mahjong",
+   "box": [
+    0.43,
+    0.355,
+    0.48,
+    0.4
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/yolo-journey-to-the-west.jpg",
+   "note": "Nov 8: wall of ivory backs (brand: warm ivory marble-inspired back). Source https://cdn.shopify.com/s/files/1/0742/9613/1723/files/JTWTiles1.png"
+  },
+  "mahj-pit-martha": {
+   "name": "The Martha",
+   "brand": "Mahj Pit",
+   "box": [
+    0.38,
+    0.32,
+    0.62,
+    0.88
+   ],
+   "kind": "sprite",
+   "img": "assets/table-view/back-photos/mahj-pit-martha.jpg",
+   "note": "Nov 8: middle tile = pearl back with blue double wave (brand: pearl back and wave pattern). Source https://cdn.shopify.com/s/files/1/0699/1668/8550/files/DO01030255.jpg"
+  },
+  "mahj-pit-merry-merry": {
+   "name": "Merry Merry Holiday",
+   "brand": "Mahj Pit",
+   "box": [
+    0.4,
+    0.215,
+    0.46,
+    0.355
+   ],
+   "kind": "pattern",
+   "img": "assets/table-view/back-photos/mahj-pit-merry-merry.jpg",
+   "note": "Nov 8: glitter-confetti backs in the rows above/below the red faces. Source https://cdn.shopify.com/s/files/1/0699/1668/8550/files/DO01020569.jpg"
+  },
+  "mahj-pit-commuter-skinny-midnights": {
+   "name": "Commuter Skinny (Midnights)",
+   "brand": "Mahj Pit",
+   "box": [
+    0.669,
+    0.65,
+    0.731,
+    0.731
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/mahj-pit-commuter-skinny-midnights.jpg",
+   "note": "Nov 8: spill from the box: 7+ plain glossy black tiles (more than the 6 blanks) = black backs. Source https://cdn.shopify.com/s/files/1/0699/1668/8550/files/FB57D005-599E-46D0-ADD7-4807BB8430BF_1_201_a_705b97d8-32bb-4156-9891-96899388f21e.jpg"
+  },
+  "middle-main-mahjong-palmetto": {
+   "name": "Palmetto",
+   "brand": "Middle & Main Mahjong",
+   "box": [
+    0.64,
+    0.13,
+    0.72,
+    0.18
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/middle-main-mahjong-charleston.jpg",
+   "note": "Nov 8: ALL-WHITE. No Palmetto photo shows a back (7 brand images, faces only). Brand: \"The tiles are a glossy white acrylic\", the exact wording on Charleston, whose back photo (used here) is plain white; M&M sets with coloured backs (Peach Pine, Barrier Island) do not carry that wording. Every Palmetto tile edge is white, no coloured layer."
+  }
+ },
+ "_needs_eye": {
   "mahjong-studios-white-edit": {
    "name": "White Edit",
    "brand": "Mahjong Studios",
@@ -3172,16 +3501,6 @@
    "name": "Essential",
    "brand": "Mahjong Studios",
    "why": "all tiles face up"
-  },
-  "mahj-squad-just-peachy": {
-   "name": "Just Peachy",
-   "brand": "Mahj Squad",
-   "why": "faces only"
-  },
-  "mahj-squad-parisian-without-acrylic-box": {
-   "name": "Parisian",
-   "brand": "Mahj Squad",
-   "why": "faces only"
   },
   "miss-mahjong-cowgirl-americana-numbered-flower": {
    "name": "Cowgirl Americana Numbered Flower",
@@ -3203,41 +3522,6 @@
    "brand": "Miss Mahjong",
    "why": "faces only"
   },
-  "anders-ruff-eau-de-mahj": {
-   "name": "Eau De Mahj",
-   "brand": "Anders Ruff",
-   "why": "backs only seen edge-on (pink layers)"
-  },
-  "sunday-mahjong-december-1994": {
-   "name": "December 1994",
-   "brand": "Sunday Mahjong",
-   "why": "no back visible"
-  },
-  "bam-let-s-mahjong-art-deco": {
-   "name": "Art Deco",
-   "brand": "Bam! Let's Mahjong",
-   "why": "faces grid only"
-  },
-  "bam-let-s-mahjong-hocus-pocus-halloween": {
-   "name": "Hocus Pocus Halloween",
-   "brand": "Bam! Let's Mahjong",
-   "why": "only a corner of a dark tile"
-  },
-  "bam-let-s-mahjong-the-palm-royale-lemon-drop": {
-   "name": "The Palm Royale Lemon Drop",
-   "brand": "Bam! Let's Mahjong",
-   "why": "pile mixes lemon, pink and orange backs"
-  },
-  "bam-let-s-mahjong-garden-party-sky-blue": {
-   "name": "Garden Party Sky Blue",
-   "brand": "Bam! Let's Mahjong",
-   "why": "backs not visible"
-  },
-  "bam-let-s-mahjong-garden-party-lavender-bloom": {
-   "name": "Garden Party Lavender Bloom",
-   "brand": "Bam! Let's Mahjong",
-   "why": "only one small tile edge"
-  },
   "bespoke-mahjong-bespoke-x-corey-paige-color-crush-xl-mega": {
    "name": "Bespoke X Corey Paige Color Crush XL Mega",
    "brand": "Bespoke Mahjong",
@@ -3247,66 +3531,6 @@
    "name": "Nativity",
    "brand": "Hip Hip Mahjong",
    "why": "no back visible"
-  },
-  "middle-main-mahjong-sunshine": {
-   "name": "Sunshine",
-   "brand": "Middle & Main Mahjong",
-   "why": "faces grid only"
-  },
-  "middle-main-mahjong-palmetto": {
-   "name": "Palmetto",
-   "brand": "Middle & Main Mahjong",
-   "why": "faces grid only"
-  },
-  "virora-mahjong-flor-a": {
-   "name": "Floréa",
-   "brand": "Virora Mahjong",
-   "why": "backs only seen edge-on (layers)"
-  },
-  "virora-mahjong-lanisse": {
-   "name": "Élanisse",
-   "brand": "Virora Mahjong",
-   "why": "backs only seen edge-on"
-  },
-  "virora-mahjong-iriselle": {
-   "name": "Iriselle",
-   "brand": "Virora Mahjong",
-   "why": "one small tile, colour blends into the background"
-  },
-  "bespoke-mahjong-corey-paige-color-crush-bright-white": {
-   "name": "Corey Paige Color Crush (Bright White)",
-   "brand": "Bespoke Mahjong",
-   "why": "faces only"
-  },
-  "amahj-on-the-water-signature": {
-   "name": "On the Water Signature",
-   "brand": "Amahj",
-   "why": "faces grid only"
-  },
-  "mahjong-co-kaleidoscope": {
-   "name": "Kaleidoscope",
-   "brand": "Mahjong Co.",
-   "why": "faces grid only"
-  },
-  "yolo-journey-to-the-west": {
-   "name": "Journey to the West",
-   "brand": "YOLO Mahjong",
-   "why": "brand says ivory marble-look backs, no back photo"
-  },
-  "mahj-pit-martha": {
-   "name": "The Martha",
-   "brand": "Mahj Pit",
-   "why": "brand says pearl backs with a wave pattern, no back photo"
-  },
-  "mahj-pit-merry-merry": {
-   "name": "Merry Merry Holiday",
-   "brand": "Mahj Pit",
-   "why": "glitter under the rack may be the backs, unclear"
-  },
-  "mahj-pit-commuter-skinny-midnights": {
-   "name": "Commuter Skinny (Midnights)",
-   "brand": "Mahj Pit",
-   "why": "black bodies; no back shown"
   }
  },
  "_hidden_skipped": [

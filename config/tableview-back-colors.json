@@ -1536,5 +1536,148 @@
   "type": "pattern",
   "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/mahj-pit-original-confetti-large.jpg; checked by eye as back | wall swatch)",
   "patch": "assets/table-view/backs/mahj-pit-original-confetti-large.webp"
+ },
+ "holly-jolly-red": {
+  "back": "#d10000",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/holly-jolly-red.jpg; checked by eye as back | wall swatch)"
+ },
+ "holly-jolly-green": {
+  "back": "#01b630",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/holly-jolly-green.jpg; checked by eye as back | wall swatch)"
+ },
+ "bam-let-s-mahjong-art-deco": {
+  "back": "#030408",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bam-let-s-mahjong-art-deco.jpg; checked by eye as back | wall swatch)"
+ },
+ "bam-let-s-mahjong-hocus-pocus-halloween": {
+  "back": "#02070a",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bam-let-s-mahjong-hocus-pocus-halloween.jpg; checked by eye as back | wall swatch)"
+ },
+ "bam-let-s-mahjong-the-palm-royale-lemon-drop": {
+  "back": "#f3dd5a",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bam-let-s-mahjong-the-palm-royale-lemon-drop.jpg; checked by eye as back | wall swatch)"
+ },
+ "bam-let-s-mahjong-garden-party-sky-blue": {
+  "back": "#afdae1",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bam-let-s-mahjong-garden-party-sky-blue.jpg; checked by eye as back | wall swatch)"
+ },
+ "bam-let-s-mahjong-garden-party-lavender-bloom": {
+  "back": "#b6a6c1",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bam-let-s-mahjong-garden-party-lavender-bloom.jpg; checked by eye as back | wall swatch)"
+ },
+ "nutcracker-ballet": {
+  "back": "#fed8d7",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/nutcracker-ballet.jpg; checked by eye as back | wall swatch)"
+ },
+ "mahj-squad-just-peachy": {
+  "back": "#fde3cc",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/mahj-squad-just-peachy.jpg; checked by eye as back | wall swatch)"
+ },
+ "mahj-squad-parisian-without-acrylic-box": {
+  "back": "#dbd6f4",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/mahj-squad-parisian-without-acrylic-box.jpg; checked by eye as back | wall swatch)"
+ },
+ "amahj-round-top-stamped": {
+  "back": "#e2e1df",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/amahj-round-top-stamped.jpg; checked by eye as back | wall swatch)"
+ },
+ "amahj-white-signature": {
+  "back": "#c5c4cd",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/amahj-white-signature.jpg; checked by eye as back | wall swatch)"
+ },
+ "amahj-on-the-water-signature": {
+  "back": "#e8e9fb",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/amahj-on-the-water-signature.jpg; checked by eye as back | wall swatch)"
+ },
+ "bird-bamboo-the-belle": {
+  "back": "#ddddd8",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bird-bamboo-the-belle.jpg; checked by eye as back | wall swatch)"
+ },
+ "bird-bamboo-the-boho-chic": {
+  "back": "#ddd1cd",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bird-bamboo-the-boho-chic.jpg; checked by eye as back | wall swatch)"
+ },
+ "anders-ruff-eau-de-mahj": {
+  "back": "#b8dbf5",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/anders-ruff-eau-de-mahj.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/anders-ruff-eau-de-mahj.webp"
+ },
+ "sunday-mahjong-december-1994": {
+  "back": "#eeebde",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/sunday-mahjong-december-1994.jpg; checked by eye as back | wall swatch)"
+ },
+ "middle-main-mahjong-sunshine": {
+  "back": "#d7d7df",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/middle-main-mahjong-sunshine.jpg; checked by eye as back | wall swatch)"
+ },
+ "virora-mahjong-flor-a": {
+  "back": "#d3bbf8",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/virora-mahjong-flor-a.jpg; checked by eye as back | wall swatch)"
+ },
+ "virora-mahjong-lanisse": {
+  "back": "#de89b3",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/virora-mahjong-lanisse.jpg; checked by eye as back | wall swatch)"
+ },
+ "virora-mahjong-iriselle": {
+  "back": "#bde4e3",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/virora-mahjong-iriselle.jpg; checked by eye as back | wall swatch)"
+ },
+ "bespoke-mahjong-corey-paige-color-crush-bright-white": {
+  "back": "#faf6ec",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-corey-paige-color-crush-bright-white.jpg; checked by eye as back | wall swatch)"
+ },
+ "mahjong-co-kaleidoscope": {
+  "back": "#df4ba4",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/mahjong-co-kaleidoscope.jpg; checked by eye as back | wall swatch)"
+ },
+ "yolo-journey-to-the-west": {
+  "back": "#f6e4b8",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/yolo-journey-to-the-west.jpg; checked by eye as back | wall swatch)"
+ },
+ "mahj-pit-martha": {
+  "back": "#c8ccd5",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/mahj-pit-martha.jpg; checked by eye as back | wall swatch)",
+  "sprite": "assets/table-view/backs/mahj-pit-martha-sprite.webp"
+ },
+ "mahj-pit-merry-merry": {
+  "back": "#b59c87",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/mahj-pit-merry-merry.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/mahj-pit-merry-merry.webp"
+ },
+ "mahj-pit-commuter-skinny-midnights": {
+  "back": "#323133",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/mahj-pit-commuter-skinny-midnights.jpg; checked by eye as back | wall swatch)"
+ },
+ "middle-main-mahjong-palmetto": {
+  "back": "#f7f9fe",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/middle-main-mahjong-charleston.jpg; checked by eye as back | wall swatch)"
  }
 }
