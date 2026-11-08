@@ -64,6 +64,7 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
  158 (Nov 5, v115 QA) no visible mat photo beyond 2:1, no tile photo beyond 2.3:1 (strips / edge crops)
  159 (Nov 6) every mat/rack/tile link of a Shopify code partner auto-applies the code (/discount/<CODE>?redirect=...; config/autoapply-hosts.json), FYM + staged gallery
  166b (Nov 8, 1.18 QA) mat-door tile deck + See all with a price: unpriced sets last (node run of the page's code, Lotus Cove 'Under $175')
+ 166c (Nov 8, 1.18 QA2) mat door deck subtitle / See all heading never say 'hasn't matched' for a mat with picks, at any price
  170 (Nov 8, 1.18 QA) every Tiffany's-match (m) mat shown + photo loads in build, website copy and artifact folder (picks never slimmed)
  171 (Nov 8, 1.18 QA) no visible watermarked photo (builder/fym_flags/watermark_flags.json) unless accepted
  167 (Nov 7, FYM 1.18) door parity: same filters for an item type in both doors / every step / Table view + 'same brand' (doors_check.py)
@@ -2012,8 +2013,8 @@ except Exception as _e: F.append(f"[168] tiles-for-a-mat ranking check did not r
 try:
     _r166b = subprocess.run(['node', REPO + 'builder/fym_fix_nov07/tiledeckprice_check.js', B], capture_output=True, text=True, timeout=600)
     _j166b = json.loads(_r166b.stdout.strip().splitlines()[-1])
-    for _x in _j166b['fails']: F.append('[166b] ' + _x)
-    for _x in _j166b['notes'][:2]: print('FYM GATE INFO [166b] ' + _x[:400])
+    for _x in _j166b['fails']: F.append(_x if _x.startswith('[166c]') else '[166b] ' + _x)  # [166c] (Nov 8 QA2 Q3): no 'hasn't matched' on a matched mat
+    for _x in _j166b['notes'][:3]: print('FYM GATE INFO [166b] ' + _x[:400])
 except Exception as _e: F.append(f"[166b] tile-deck price order check did not run: {_e}")
 # [170] Nov 8 2026 (FYM 1.18 independent QA F1: the artifact copy slimmed 8 of Juniper's 42 picks and picks on 22 other sets; the website
 #       copy hid Paint Feathers). Every m-list mat is shown with a photo that loads in the build, the website copy (origin/fym-site-preview

@@ -28,13 +28,23 @@ MARK2 = '/*v118c grid price groups*/'
 G_OLD = 'const m=M[S.dmat];const g=setsForMat(S.dmat);const n=S.dshow||DOOR.slim;\n if(!S.dgrid&&S.set==null){tswipe(el,lock,m,g);return;}'
 G_NEW = ('const m=M[S.dmat];let g=setsForMat(S.dmat);const n=S.dshow||DOOR.slim;\n if(!S.dgrid&&S.set==null){tswipe(el,lock,m,g);return;}'
          + MARK2 + 'g=TGG(g);')  # keeps the 'tswipe(el,lock,m,g)' text (gate [42])
-G_DEF = (MARK2 + "const TGG=g=>{const herN=(g.her||[]).length;if(S.pr.t===''||S.prE.t)return Object.assign({},g,{herN,np:[]});"
+G_DEF = (MARK2 + "const HERT=id=>{try{return setsForMat0(id).her.length}catch(e){return 0}};"
+         "const HSFX=(t,v)=>v>=t||v?'':(S.pr&&S.pr.t!==''?' (over your price)':' (not in your filters)');"
+         "const TGG=g=>{const herN=HERT(S.dmat),herV=(g.her||[]).length;if(S.pr.t===''||S.prE.t)return Object.assign({},g,{herN,herV,np:[]});"
          "const pr=r=>!!((typeof TVD==='object'&&TVD.pt)||{})[r.s.tile],R=TSOM([...g.alb,...g.cat]);"
-         "return Object.assign({},g,{herN,her:g.her.filter(pr),alb:R.filter(pr),cat:[],np:[...g.her.filter(r=>!pr(r)),...R.filter(r=>!pr(r))]});}; ")
+         "return Object.assign({},g,{herN,herV,her:g.her.filter(pr),alb:R.filter(pr),cat:[],np:[...g.her.filter(r=>!pr(r)),...R.filter(r=>!pr(r))]});}; ")
 H_OLD = ("(g.her.length?`<p class=\"dsub\">Tiffany matched this mat with ${g.her.length} tile set${g.her.length>1?'s':''}</p>"
          "<div class=\"tgrid dsets\">${g.her.map(dsetBtn).join('')}</div>`:")
-H_NEW = ("(g.herN?`<p class=\"dsub\">Tiffany matched this mat with ${g.herN} tile set${g.herN>1?'s':''}</p>"
-         "${g.her.length?`<div class=\"tgrid dsets\">${g.her.map(dsetBtn).join('')}</div>`:'<p class=\"hint\">Her picks have no listed price, so they are under Price not listed below.</p>'}`:")
+H_NEW = ("(g.herN?`<p class=\"dsub\">Tiffany matched this mat with ${g.herN} tile set${g.herN>1?'s':''}${HSFX(g.herN,g.herV)}</p>"
+         "${g.her.length?`<div class=\"tgrid dsets\">${g.her.map(dsetBtn).join('')}</div>`:g.herV?'<p class=\"hint\">Her picks have no listed price, so they are under Price not listed below.</p>':''}`:")
+# QA2 re-check Q3 (Nov 8): the deck subtitle and the See all heading counted her picks AFTER the price filter, so Lotus Cove
+# 'Under $175' (Juniper + Talulah $475) said 'Tiffany hasn't matched this mat yet'. Both now count every pick (HERT = setsForMat0)
+# and add ' (over your price)' when none is left (' (not in your filters)' when another filter removed them); never 'hasn't matched'
+# while the mat has picks. Gate [166c].
+S_OLD = ("const sub=g.her.length?`Tiffany matched ${esc(MN(S.dmat))} with ${g.her.length} tile set${g.her.length>1?'s':''}; they come first. "
+         "Tap ♥ if you love it, ✕ if it’s not the one.`:")
+S_NEW = ("const sub=HERT(S.dmat)?`Tiffany matched ${esc(MN(S.dmat))} with ${HERT(S.dmat)} tile set${HERT(S.dmat)>1?'s':''}${HSFX(HERT(S.dmat),g.her.length)}"
+         "${g.her.length?'; they come first':', so the closest color matches come first'}. Tap ♥ if you love it, ✕ if it’s not the one.`:")
 M_OLD = "`<p class=\"dsub\">${g.her.length?'More tile sets that suit it':'Best color matches'}</p>"
 M_NEW = "`<p class=\"dsub\">${g.herN?'More tile sets that suit it':'Best color matches'}</p>"
 E_OLD = "(g.cat.length?`<button type=\"button\" class=\"dmore\" data-dmore=\"c\">Show partner brands’ tile sets</button>`:''));}"
@@ -44,9 +54,9 @@ E_NEW = ("(g.cat.length?`<button type=\"button\" class=\"dmore\" data-dmore=\"c\
 
 def patch_grid(h):
     if MARK2 in h: return h, False
-    for a in (G_OLD, H_OLD, M_OLD, E_OLD, DEF_A):
+    for a in (G_OLD, H_OLD, M_OLD, E_OLD, DEF_A, S_OLD):
         assert h.count(a) == 1, ('grid anchor not found once', h.count(a), a[:70])
-    h = h.replace(G_OLD, G_NEW).replace(H_OLD, H_NEW).replace(M_OLD, M_NEW).replace(E_OLD, E_NEW).replace(DEF_A, G_DEF + DEF_A)
+    h = h.replace(S_OLD, S_NEW).replace(G_OLD, G_NEW).replace(H_OLD, H_NEW).replace(M_OLD, M_NEW).replace(E_OLD, E_NEW).replace(DEF_A, G_DEF + DEF_A)
     return h, True
 
 

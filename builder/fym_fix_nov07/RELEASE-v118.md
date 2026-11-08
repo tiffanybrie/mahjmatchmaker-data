@@ -22,7 +22,7 @@ Build dir: scratchpad fym/b118. On top of 1.17 (b117):
 - Gate changes: [90] compares with the BUILT gallery via gallery_cov.py (same definition as coverage_check), FAIL when the staged gallery
   is this release; [162b], [166], [169] new; [145] reads the new price note.
 
-Website copy: fym-site-preview @a4fb6d3f site-app/fym-v118/index.html (r12; r10 @e0a6a233 was blocked by QA2; assets @0d56bec7: mc 251-258 + thumbs118.js + t118),
+Website copy: fym-site-preview @7817f04d site-app/fym-v118/index.html (r13; r10 @e0a6a233 was blocked by QA2; assets @0d56bec7: mc 251-258 + thumbs118.js + t118),
 produced by site118.py (r9 @1eb284bc was the copy the Nov 8 independent QA blocked).
 Mat Gallery: site/livepatch/matgallery/matgallery-v8.html (data-fym="v118"), rows data/matgallery-v118.json. build_v6 now drops cards
 whose FYM mat is hidden (Mahjong Row album picks kept, Nov 6 1:33pm).
@@ -74,7 +74,7 @@ copy r10 via site118.py (tiledeckprice118 applied after the tilerank JS), artifa
   mats.** artifact118.py never slims a partner brand (config/fym-partner-coverage.json), an allowed non-partner (nonpartner_allow.json
   partners / brands / mats), a pick, or (HOLIDAY_SEASON on) a holiday mat. It now re-packs live chunk files from the live mirror too
   (lossless: only photos of mats hidden in this copy leave), which freed enough room that **0 mats are slimmed** in this delta: the 39
-  from the first fix are all back. Artifact: 265,216,439 bytes (3,219,017 free), 503 files, 1,306 visible mats (live 1,274; website
+  from the first fix are all back. Artifact: 265,216,764 bytes (3,218,692 free), 503 files, 1,306 visible mats (live 1,274; website
   1,574). The only artifact-slimmed mats are the bulk catalogs slimmed by design before 1.18 (LBB, Luna EK, Noli June, BJ&J).
   Gate [170b] fails on any partner / allowed / holiday-season holiday mat slimmed outside those catalogs (picks_check.py).
 - **Q2 See all grid unpriced first with a price.** tiledeckprice118.py (now after doors_v118 in build118.sh): with a tile price chosen
@@ -84,3 +84,9 @@ copy r10 via site118.py (tiledeckprice118 applied after the tilerank JS), artifa
   (as it opens and fully opened) for Lotus Cove + 4 most-picked mats at every price option and fails on a priced card after an unpriced
   one, or unpriced cards shown while priced ones sit behind a button; it fails 78 times on the r10 build and passes on build, website
   r12 and artifact. (r11 @b9f7f816 renamed the grid variable and tripped gate [42]; r12 keeps the text [42] reads.)
+- **Q3 (QA2 re-check): 'Tiffany hasn't matched this mat yet' with a price chosen.** The mat-door deck subtitle and the See all heading
+  counted her picks after the price filter (Lotus Cove 'Under $175': Juniper + Talulah are $475). tiledeckprice118.py now counts every
+  pick the app shows (HERT = setsForMat0) and says e.g. 'Tiffany matched Lotus Cove with 2 tile sets (over your price), so the
+  closest color matches come first' when none is left; some left = the normal line with the true total; ' (not in your filters)'
+  when another filter removed them. Gate [166c] (in tiledeckprice_check.js) renders the deck and See all for all 464 mats with picks
+  on shown sets x no price + 4 price options (4,640 renders): 2,016 failures before, 0 on build, website r13 and artifact.

@@ -80,5 +80,24 @@ if (lotus) {
   if (r && r.priced === 0) F.push('Lotus Cove, Under $175: no priced set in the deck (test would pass vacuously)');
 }
 for (const mk of [lotus, ...more].filter(Boolean)) for (const v of opts) run(mk, v, `${M[mk].n} (${M[mk].bn}), Under $${v}`);
+// [166c] (QA2 re-check Q3, Nov 8): never "Tiffany hasn't matched this mat" (deck subtitle or See all heading) for a mat that HAS
+// picks, at any price option or with no price (Lotus Cove 'Under $175': Juniper + Talulah are $475 and the deck said she hadn't).
+{
+  const HAS = Object.keys(cnt).filter(k => M[k] && !M[k].hid);
+  let bad = 0, tried = 0; const ex = [];
+  const herAll = mk => { S.dmat = mk; S.pr = Object.assign({}, S.pr || {}, { t: '' }); return X.setsForMat(mk).her.length; };
+  const HAS2 = HAS.filter(mk => herAll(mk) > 0);  // picks on sets the app shows (picks only on hidden sets do not count)
+  if (X.renderMatDoor) for (const mk of HAS2) for (const v of ['', ...opts]) {
+    S.dmat = mk; S.set = null; S.door = 'mat'; S.tfront = null; S.pr = Object.assign({}, S.pr || {}, { t: v });
+    for (const grid of [false, true]) {
+      S.dgrid = grid; S.dshow = 0; S.dcat = false; const el = El('s-tiles'); tried++;
+      try { X.renderMatDoor(el); } catch (e) { bad++; if (ex.length < 5) ex.push(`${M[mk].n}: render threw ${e.message}`); continue; }
+      if (/hasn[’']t matched/.test(el.innerHTML)) { bad++; if (ex.length < 8) ex.push(`${M[mk].n} (${M[mk].bn}) ${v === '' ? 'any price' : 'Under $' + v} ${grid ? 'See all' : 'deck'}`); }
+    }
+  }
+  S.dgrid = false;
+  if (bad) F.push(`[166c] ${bad} of ${tried} mat-door renders say "Tiffany hasn't matched this mat" for a mat with picks: ${ex.join('; ')}`);
+  N.push(`[166c] ${tried} renders of ${HAS2.length} matched mats x ${opts.length + 1} price options x deck/See all`);
+}
 S.pr.t = '';
 console.log(JSON.stringify({ fails: F, notes: N }));
