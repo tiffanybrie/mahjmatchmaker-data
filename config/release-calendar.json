@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-07",
- "updatedBy": "partner watch 1:30pm ET",
+ "updated": "2026-11-08",
+ "updatedBy": "partner watch",
  "rules": {
   "timing": {
    "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -1650,6 +1650,22 @@
    "affiliate": true,
    "priority": 3,
    "contentTiming": "Watch the store; restock playbook when live."
+  },
+  {
+   "id": "luckybam-holiday-mats-nov8",
+   "brand": "Lucky Bam",
+   "product": "New holiday mats: The Rosé Noël + The Slopes",
+   "type": "launch",
+   "window": "LIVE Sun Nov 8",
+   "windowStart": "2026-11-08",
+   "windowEnd": null,
+   "status": "LIVE 2026-11-08",
+   "source": "Lucky Bam email Nov 8 11:03am ET",
+   "sourceUrl": "https://luckybam.com",
+   "album": false,
+   "affiliate": false,
+   "priority": 3,
+   "contentTiming": "Non-partner: Brand Watch non-partner list only."
   }
  ],
  "sources": {

@@ -1,56 +1,380 @@
 {
-  "_note": "Curated Brand Watch lines for HQ (hq/brandWatch). The 3x-daily partner watch adds new store/IG events automatically (deduped); edit this file for dates/actions. Week = Sun-Sat. Times CT. Tigre de Tartan is image-only on social: never type its name in captions. YMI never on social.",
-  "week_label": "Week of Sun Nov 8 – Sat Nov 14",
-  "this_week": [
-    {"date":"2026-11-09","day":"Mon 11/9","time":"8pm ET","brand":"Charleston Mahjong Club","partner":true,"what":"Cabana Club giveaway ends","tag":"tiles","action":"Reshare their giveaway post to stories + @charlestonmahjongclub (no code needed)","url":"https://www.instagram.com/reel/DfX1w9hRo7l/"},
-    {"date":"2026-11-10","day":"Tue 11/10","time":"10am CT","brand":"Miss Mahjong","partner":true,"what":"New acrylic racks drop: Bombshell Pink, Butter Yellow, Pistachio, Peony, Chartreuse","tag":"racks","action":"Reshare their post + code MAHJMATCH sticker; new in Find Your Mat-ch (racks); add to Monday codes post","url":"https://www.instagram.com/reel/DfXaYEaR791/"},
-    {"date":"2026-11-11","day":"Wed 11/11","time":"10am CT","brand":"Oh My Mahjong","partner":true,"what":"Juniper tiles + Lotus Cove mat go on sale (Juniper album day)","tag":"tiles + mat","action":"Juniper album live + 'It's a mat-ch!' post; reshare OMM's launch post + code MAHJMATCH; launch-day FB group post","url":"https://www.instagram.com/reel/DfZjqoCScnJ/"},
-    {"date":"2026-11-11","day":"Wed 11/11","time":"","brand":"Mahj Pit","partner":true,"what":"Christmas tiles launch + Confetti tiles restock","tag":"tiles","action":"Reshare their post + code MAHJMATCH; new in Find Your Mat-ch (holiday tiles)","url":"https://www.instagram.com/p/DfId2tWPVhq/"},
-    {"date":"2026-11-14","day":"any day","time":"","brand":"Charleston Mahjong Club","partner":true,"what":"FULL-SIZE Cabana Club tiles arrive any day (email subscribers get first access; next batch December)","tag":"tiles","action":"The moment it's live: reshare + code MAHJMATCH; new in Find Your Mat-ch","url":"https://www.instagram.com/reel/DfX1w9hRo7l/"}
-  ],
-  "coming_soon": [
-    {"brand":"Peace Love Mahjong","partner":true,"what":"Black Friday deals start Mon 11/16","tag":"sale","action":"Add to the 11/16 Monday codes post"},
-    {"brand":"Let's Mahj On","partner":true,"what":"6 new sets in ~2 weeks: Wild, Sweet, Golf, Refined, Merry, Stir Things Up","tag":"tiles","action":"New in Find Your Mat-ch when live","url":"https://www.instagram.com/reel/DfQNG0Ejejh/"},
-    {"brand":"Bespoke Mahjong","partner":true,"what":"Glitter Glow Red + Green tiles (holiday) coming in November","tag":"tiles","action":"New in Find Your Mat-ch (holiday) when live","url":"https://www.bespokemahjong.com/products/holiday-mahjong-its-a-vibe-glitter-glow-tiles"},
-    {"brand":"Bam! Let's Mahjong","partner":true,"what":"New mat teased (Art Deco + pink)","tag":"mat","action":"New in Find Your Mat-ch when live","url":"https://www.instagram.com/p/DfZ5W0yEXtG/"},
-    {"brand":"Amahj","partner":true,"what":"'A new season is coming' (fall tease)","tag":"tiles?","action":"Watch","url":"https://www.instagram.com/reel/DfXKgl6pwy_/"},
-    {"brand":"Amanda Toppe","partner":true,"what":"Full-size Lila mat in ~a month (travel Lila sold out, January preorder)","tag":"mat","action":"Watch","url":"https://www.instagram.com/p/DfVHftvhnoS/"},
-    {"brand":"Maison Mahj","partner":true,"what":"House Line No. 1 public preorder (ships Feb 2027)","tag":"tiles","action":"Add to Monday codes post (free shipping on tile sets)","url":"https://www.instagram.com/p/DfUkYeUDXrZ/"},
-    {"brand":"Mahj & Vine","partner":true,"what":"Chinoiserie Blue & Green mat restock en route (no date)","tag":"mat","action":"Reshare when it lands","url":"https://www.instagram.com/reel/DfZ6g55vpQs/"},
-    {"brand":"Mahj Mood","partner":true,"what":"Playing For Keeps tiles + mat on PREORDER (ships January)","tag":"tiles + mat","action":"Add to Monday codes post","url":"https://mahjmood.com/products/playing-for-keeps-tiles"},
-    {"brand":"The Royal Mahjong Society","partner":true,"what":"In-person store coming soon","tag":"news","action":"Watch"},
-    {"brand":"Middle & Main","partner":true,"what":"Unannounced new tile set on display in the new store, 'awaiting her online debut' (no name/date yet)","tag":"tiles","action":"Watch the store; swipe book the day the listing appears","url":"https://www.instagram.com/reel/DfcJsTxyEiw/"},
-    {"brand":"YOLO Mahjong","partner":true,"what":"Journey to the West tiles: 1st allocation fully reserved; 2nd allocation reservations open (delivery Jan 2027)","tag":"tiles","action":"Add to Monday codes post as a preorder","url":"https://www.instagram.com/p/DfaykcRzwQq/"}
-  ],
-  "just_dropped": [
-    {"date":"2026-11-07","brand":"Oh My Mahjong","partner":true,"what":"Pearlescent tiles BACK, buyable ($475, tagged 'retiring soon'; album set, 40 matches)","tag":"tiles","action":"Pick a story frame on HQ card (A/B/C) or reshare if OMM posts","url":"https://www.ohmymahjong.com/products/pearlescent-tile-set"},
-    {"date":"2026-11-07","brand":"Virora","partner":true,"what":"Florielle tiles (Rose Red, 4 layers) RESTOCKED + new tile bags (Emerald Green, Pearl White)","tag":"tiles","action":"Reshare + code MAHJMATCH","url":"https://www.viroramahjong.com/products/florielle"},
-    {"date":"2026-11-07","brand":"Fait à Main","partner":true,"what":"Texas Mon Amour mat in CREAM (bandana + paisley + hearts, $175)","tag":"mat","action":"New in Find Your Mat-ch (queued; repoint the Green card's link to -green)","url":"https://www.faitamainstudio.com/products/texas-mon-amour-mat"},
-    {"date":"2026-11-07","brand":"Let's Be Besties","partner":true,"what":"Tidal Glass with Simple Middle mat (plain-centre version of Tidal Glass, from $85)","tag":"mat","action":"New in Find Your Mat-ch (queued for photo flags)","url":"https://letsbebesties.com/products/tidal-glass-with-simple-middle-mahjong-mat"},
-    {"date":"2026-11-06","brand":"Bam Bird Boutique","partner":true,"what":"MCM tiles (Olive + pink) RESTOCKED","tag":"tiles","action":"Reshare + code MAHJMATCH","url":"https://www.bambirdboutique.com/products/mcm-mahjong-tile-set"},
-    {"date":"2026-11-06","brand":"Let's Be Besties","partner":true,"what":"~25 new mats incl. Pink Christmas, Christmas Lights, Spinning Dreidel","tag":"mats","action":"New in Find Your Mat-ch (holiday)","url":"https://letsbebesties.com/products/pink-christmas-mahjong-mat"},
-    {"date":"2026-11-06","brand":"Middle & Main","partner":true,"what":"Flagship store opened; gift cards online; Summit to Sea tiles in-store preview","tag":"news","action":"Congrats comment from @mahjmatchmaker","url":"https://www.instagram.com/reel/DfcJsTxyEiw/"},
-    {"date":"2026-11-05","brand":"Fait à Main","partner":true,"what":"Texas Mon Amour mat (green)","tag":"mat","action":"New in Find Your Mat-ch","url":"https://www.fait-a-main.com/products/texas-mon-amour-mat-green"},
-    {"date":"2026-11-05","brand":"Peace Love Mahjong","partner":true,"what":"Holiday Rack Pets","tag":"accessory","action":"Reshare + code MAHJMATCH","url":"https://www.instagram.com/reel/DfVtmwtBVjc/"},
-    {"date":"2026-11-04","brand":"Bespoke Mahjong","partner":true,"what":"Sunshine Glow tiles LIVE","tag":"tiles","action":"'New in Find Your Mat-ch' post (Mon 11/9 draft in Planoly)","url":"https://www.bespokemahjong.com/products/sunshineglow"},
-    {"date":"2026-11-04","brand":"My Fair Mahjong","partner":true,"what":"Mega Swirled Dice + Confetti racks short preorder (mid-Nov delivery)","tag":"racks","action":"Add to Monday codes post","url":"https://www.instagram.com/p/DfaD7aThh-_/"},
-    {"date":"2026-11-03","brand":"Miss Mahjong","partner":true,"what":"Miss Classic travel set (lattice back) LIVE","tag":"travel tiles","action":"Monday codes post only (travel)","url":"https://www.instagram.com/reel/DfP71tQRt_R/"},
-    {"date":"2026-11-03","brand":"Tigre de Tartán (image-only)","partner":true,"what":"Oyster tiles dropped","tag":"tiles","action":"Reshare with code IMAGE only, never type the brand name","url":""},
-    {"date":"2026-11-02","brand":"Britt Mills","partner":true,"what":"Isla leatherette mat + ~7 more mats since Oct 26","tag":"mats","action":"New in Find Your Mat-ch","url":"https://brittmillsdesign.com/products/isla-leatherette-mahjong-mat"},
-    {"date":"2026-11-01","brand":"Noli June","partner":true,"what":"FALALADIES holiday collection live (12 pieces)","tag":"mats","action":"New in Find Your Mat-ch (holiday)","url":"https://www.instagram.com/reel/DfUmNNZTm_v/"},
-    {"date":"2026-11-01","brand":"Anders Ruff","partner":true,"what":"Paws in the Garden mat + 3 tablecloths on preorder; Christmas Solo mat in stock","tag":"mat","action":"New in Find Your Mat-ch","url":"https://shop.andersruff.com/products/paws-in-the-garden-mahjong-mat"},
-    {"date":"2026-11-01","brand":"Mahjong Register","partner":true,"what":"New wood + rattan racks","tag":"racks","action":"New in Find Your Mat-ch (racks)","url":""},
-    {"date":"2026-11-01","brand":"Mahj Mood","partner":true,"what":"Jade acrylic racks","tag":"racks","action":"New in Find Your Mat-ch (racks)","url":""},
-    {"date":"2026-10-29","brand":"Charleston Mahjong Club","partner":true,"what":"Cabana Club TRAVEL bundle preorder","tag":"travel tiles","action":"Monday codes post only (travel)","url":"https://www.charlestonmahjongclub.com/products/the-cabana-club-travel-bundle"}
-  ],
-  "sales": [
-    {"brand":"Peace Love Mahjong","partner":true,"what":"Black Friday deals start Mon 11/16","ends":"","action":"Monday codes post 11/16"},
-    {"brand":"Peace Love Mahjong","partner":true,"what":"40% off original holiday mats with their code 40KMAT","ends":"ENDED Sat 11/7 6am CT","action":"none"}
-  ],
-  "nonpartners": [
-    {"date":"2026-11-07","brand":"Bougie Mahjong","what":"Riviera Leopard Collection launched: mat (neoprene or sueded felt) + tote, tile bag, pouch","url":"https://www.instagram.com/p/Dfc30dQoIqR/"},
-    {"date":"2026-11-07","brand":"Mahjong Moxie","what":"New tile designs dropped Sat 11/7 12pm CST (bigger numbers)","url":""},
-    {"date":"2026-11-06","brand":"Mahj Tile Haus","what":"Interview series with women in mahj coming soon","url":"https://www.instagram.com/reel/DfYggPAxJ73/"},
-    {"date":"","brand":"Sunday Mahjong","what":"Not readable via Instagram API: release schedule checked Mondays","url":""}
-  ]
+ "_note": "Curated Brand Watch lines for HQ (hq/brandWatch). The 3x-daily partner watch adds new store/IG events automatically (deduped); edit this file for dates/actions. Week = Sun-Sat. Times CT. Tigre de Tartan is image-only on social: never type its name in captions. YMI never on social.",
+ "week_label": "Week of Sun Nov 8 – Sat Nov 14",
+ "this_week": [
+  {
+   "date": "2026-11-09",
+   "day": "Mon 11/9",
+   "time": "8pm ET",
+   "brand": "Charleston Mahjong Club",
+   "partner": true,
+   "what": "Cabana Club giveaway ends",
+   "tag": "tiles",
+   "action": "Reshare their giveaway post to stories + @charlestonmahjongclub (no code needed)",
+   "url": "https://www.instagram.com/reel/DfX1w9hRo7l/"
+  },
+  {
+   "date": "2026-11-10",
+   "day": "Tue 11/10",
+   "time": "10am CT",
+   "brand": "Miss Mahjong",
+   "partner": true,
+   "what": "New acrylic racks drop: Bombshell Pink, Butter Yellow, Pistachio, Peony, Chartreuse",
+   "tag": "racks",
+   "action": "Reshare their post + code MAHJMATCH sticker; new in Find Your Mat-ch (racks); add to Monday codes post",
+   "url": "https://www.instagram.com/reel/DfXaYEaR791/"
+  },
+  {
+   "date": "2026-11-11",
+   "day": "Wed 11/11",
+   "time": "10am CT",
+   "brand": "Oh My Mahjong",
+   "partner": true,
+   "what": "Juniper tiles + Lotus Cove mat go on sale (Juniper album day)",
+   "tag": "tiles + mat",
+   "action": "Juniper album live + 'It's a mat-ch!' post; reshare OMM's launch post + code MAHJMATCH; launch-day FB group post",
+   "url": "https://www.instagram.com/reel/DfZjqoCScnJ/"
+  },
+  {
+   "date": "2026-11-11",
+   "day": "Wed 11/11",
+   "time": "",
+   "brand": "Mahj Pit",
+   "partner": true,
+   "what": "Christmas tiles launch + Confetti tiles restock",
+   "tag": "tiles",
+   "action": "Reshare their post + code MAHJMATCH; new in Find Your Mat-ch (holiday tiles)",
+   "url": "https://www.instagram.com/p/DfId2tWPVhq/"
+  },
+  {
+   "date": "2026-11-14",
+   "day": "any day",
+   "time": "",
+   "brand": "Charleston Mahjong Club",
+   "partner": true,
+   "what": "FULL-SIZE Cabana Club tiles arrive any day (email subscribers get first access; next batch December)",
+   "tag": "tiles",
+   "action": "The moment it's live: reshare + code MAHJMATCH; new in Find Your Mat-ch",
+   "url": "https://www.instagram.com/reel/DfX1w9hRo7l/"
+  }
+ ],
+ "coming_soon": [
+  {
+   "brand": "Peace Love Mahjong",
+   "partner": true,
+   "what": "Black Friday deals start Mon 11/16",
+   "tag": "sale",
+   "action": "Add to the 11/16 Monday codes post"
+  },
+  {
+   "brand": "Let's Mahj On",
+   "partner": true,
+   "what": "6 new sets in ~2 weeks: Wild, Sweet, Golf, Refined, Merry, Stir Things Up",
+   "tag": "tiles",
+   "action": "New in Find Your Mat-ch when live",
+   "url": "https://www.instagram.com/reel/DfQNG0Ejejh/"
+  },
+  {
+   "brand": "Bespoke Mahjong",
+   "partner": true,
+   "what": "Glitter Glow Red + Green tiles (holiday) coming in November",
+   "tag": "tiles",
+   "action": "New in Find Your Mat-ch (holiday) when live",
+   "url": "https://www.bespokemahjong.com/products/holiday-mahjong-its-a-vibe-glitter-glow-tiles"
+  },
+  {
+   "brand": "Bam! Let's Mahjong",
+   "partner": true,
+   "what": "New mat teased (Art Deco + pink)",
+   "tag": "mat",
+   "action": "New in Find Your Mat-ch when live",
+   "url": "https://www.instagram.com/p/DfZ5W0yEXtG/"
+  },
+  {
+   "brand": "Amahj",
+   "partner": true,
+   "what": "'A new season is coming' (fall tease)",
+   "tag": "tiles?",
+   "action": "Watch",
+   "url": "https://www.instagram.com/reel/DfXKgl6pwy_/"
+  },
+  {
+   "brand": "Amanda Toppe",
+   "partner": true,
+   "what": "Full-size Lila mat in ~a month (travel Lila sold out, January preorder)",
+   "tag": "mat",
+   "action": "Watch",
+   "url": "https://www.instagram.com/p/DfVHftvhnoS/"
+  },
+  {
+   "brand": "Maison Mahj",
+   "partner": true,
+   "what": "House Line No. 1 public preorder (ships Feb 2027)",
+   "tag": "tiles",
+   "action": "Add to Monday codes post (free shipping on tile sets)",
+   "url": "https://www.instagram.com/p/DfUkYeUDXrZ/"
+  },
+  {
+   "brand": "Mahj & Vine",
+   "partner": true,
+   "what": "Chinoiserie Blue & Green mat restock en route (no date)",
+   "tag": "mat",
+   "action": "Reshare when it lands",
+   "url": "https://www.instagram.com/reel/DfZ6g55vpQs/"
+  },
+  {
+   "brand": "Mahj Mood",
+   "partner": true,
+   "what": "Playing For Keeps tiles + mat on PREORDER (ships January)",
+   "tag": "tiles + mat",
+   "action": "Add to Monday codes post",
+   "url": "https://mahjmood.com/products/playing-for-keeps-tiles"
+  },
+  {
+   "brand": "The Royal Mahjong Society",
+   "partner": true,
+   "what": "In-person store coming soon",
+   "tag": "news",
+   "action": "Watch"
+  },
+  {
+   "brand": "Middle & Main",
+   "partner": true,
+   "what": "Unannounced new tile set on display in the new store, 'awaiting her online debut' (no name/date yet)",
+   "tag": "tiles",
+   "action": "Watch the store; swipe book the day the listing appears",
+   "url": "https://www.instagram.com/reel/DfcJsTxyEiw/"
+  },
+  {
+   "brand": "YOLO Mahjong",
+   "partner": true,
+   "what": "Journey to the West tiles: 1st allocation fully reserved; 2nd allocation reservations open (delivery Jan 2027)",
+   "tag": "tiles",
+   "action": "Add to Monday codes post as a preorder",
+   "url": "https://www.instagram.com/p/DfaykcRzwQq/"
+  }
+ ],
+ "just_dropped": [
+  {
+   "date": "2026-11-07",
+   "brand": "Oh My Mahjong",
+   "partner": true,
+   "what": "Pearlescent tiles BACK, buyable ($475, tagged 'retiring soon'; album set, 40 matches)",
+   "tag": "tiles",
+   "action": "Pick a story frame on HQ card (A/B/C) or reshare if OMM posts",
+   "url": "https://www.ohmymahjong.com/products/pearlescent-tile-set"
+  },
+  {
+   "date": "2026-11-07",
+   "brand": "Virora",
+   "partner": true,
+   "what": "Florielle tiles (Rose Red, 4 layers) RESTOCKED + new tile bags (Emerald Green, Pearl White)",
+   "tag": "tiles",
+   "action": "Reshare + code MAHJMATCH",
+   "url": "https://www.viroramahjong.com/products/florielle"
+  },
+  {
+   "date": "2026-11-07",
+   "brand": "Fait à Main",
+   "partner": true,
+   "what": "Texas Mon Amour mat in CREAM (bandana + paisley + hearts, $175)",
+   "tag": "mat",
+   "action": "New in Find Your Mat-ch (queued; repoint the Green card's link to -green)",
+   "url": "https://www.faitamainstudio.com/products/texas-mon-amour-mat"
+  },
+  {
+   "date": "2026-11-07",
+   "brand": "Let's Be Besties",
+   "partner": true,
+   "what": "Tidal Glass with Simple Middle mat (plain-centre version of Tidal Glass, from $85)",
+   "tag": "mat",
+   "action": "New in Find Your Mat-ch (queued for photo flags)",
+   "url": "https://letsbebesties.com/products/tidal-glass-with-simple-middle-mahjong-mat"
+  },
+  {
+   "date": "2026-11-06",
+   "brand": "Bam Bird Boutique",
+   "partner": true,
+   "what": "MCM tiles (Olive + pink) RESTOCKED",
+   "tag": "tiles",
+   "action": "Reshare + code MAHJMATCH",
+   "url": "https://www.bambirdboutique.com/products/mcm-mahjong-tile-set"
+  },
+  {
+   "date": "2026-11-06",
+   "brand": "Let's Be Besties",
+   "partner": true,
+   "what": "~25 new mats incl. Pink Christmas, Christmas Lights, Spinning Dreidel",
+   "tag": "mats",
+   "action": "New in Find Your Mat-ch (holiday)",
+   "url": "https://letsbebesties.com/products/pink-christmas-mahjong-mat"
+  },
+  {
+   "date": "2026-11-06",
+   "brand": "Middle & Main",
+   "partner": true,
+   "what": "Flagship store opened; gift cards online; Summit to Sea tiles in-store preview",
+   "tag": "news",
+   "action": "Congrats comment from @mahjmatchmaker",
+   "url": "https://www.instagram.com/reel/DfcJsTxyEiw/"
+  },
+  {
+   "date": "2026-11-05",
+   "brand": "Fait à Main",
+   "partner": true,
+   "what": "Texas Mon Amour mat (green)",
+   "tag": "mat",
+   "action": "New in Find Your Mat-ch",
+   "url": "https://www.fait-a-main.com/products/texas-mon-amour-mat-green"
+  },
+  {
+   "date": "2026-11-05",
+   "brand": "Peace Love Mahjong",
+   "partner": true,
+   "what": "Holiday Rack Pets",
+   "tag": "accessory",
+   "action": "Reshare + code MAHJMATCH",
+   "url": "https://www.instagram.com/reel/DfVtmwtBVjc/"
+  },
+  {
+   "date": "2026-11-04",
+   "brand": "Bespoke Mahjong",
+   "partner": true,
+   "what": "Sunshine Glow tiles LIVE",
+   "tag": "tiles",
+   "action": "'New in Find Your Mat-ch' post (Mon 11/9 draft in Planoly)",
+   "url": "https://www.bespokemahjong.com/products/sunshineglow"
+  },
+  {
+   "date": "2026-11-04",
+   "brand": "My Fair Mahjong",
+   "partner": true,
+   "what": "Mega Swirled Dice + Confetti racks short preorder (mid-Nov delivery)",
+   "tag": "racks",
+   "action": "Add to Monday codes post",
+   "url": "https://www.instagram.com/p/DfaD7aThh-_/"
+  },
+  {
+   "date": "2026-11-03",
+   "brand": "Miss Mahjong",
+   "partner": true,
+   "what": "Miss Classic travel set (lattice back) LIVE",
+   "tag": "travel tiles",
+   "action": "Monday codes post only (travel)",
+   "url": "https://www.instagram.com/reel/DfP71tQRt_R/"
+  },
+  {
+   "date": "2026-11-03",
+   "brand": "Tigre de Tartán (image-only)",
+   "partner": true,
+   "what": "Oyster tiles dropped",
+   "tag": "tiles",
+   "action": "Reshare with code IMAGE only, never type the brand name",
+   "url": ""
+  },
+  {
+   "date": "2026-11-02",
+   "brand": "Britt Mills",
+   "partner": true,
+   "what": "Isla leatherette mat + ~7 more mats since Oct 26",
+   "tag": "mats",
+   "action": "New in Find Your Mat-ch",
+   "url": "https://brittmillsdesign.com/products/isla-leatherette-mahjong-mat"
+  },
+  {
+   "date": "2026-11-01",
+   "brand": "Noli June",
+   "partner": true,
+   "what": "FALALADIES holiday collection live (12 pieces)",
+   "tag": "mats",
+   "action": "New in Find Your Mat-ch (holiday)",
+   "url": "https://www.instagram.com/reel/DfUmNNZTm_v/"
+  },
+  {
+   "date": "2026-11-01",
+   "brand": "Anders Ruff",
+   "partner": true,
+   "what": "Paws in the Garden mat + 3 tablecloths on preorder; Christmas Solo mat in stock",
+   "tag": "mat",
+   "action": "New in Find Your Mat-ch",
+   "url": "https://shop.andersruff.com/products/paws-in-the-garden-mahjong-mat"
+  },
+  {
+   "date": "2026-11-01",
+   "brand": "Mahjong Register",
+   "partner": true,
+   "what": "New wood + rattan racks",
+   "tag": "racks",
+   "action": "New in Find Your Mat-ch (racks)",
+   "url": ""
+  },
+  {
+   "date": "2026-11-01",
+   "brand": "Mahj Mood",
+   "partner": true,
+   "what": "Jade acrylic racks",
+   "tag": "racks",
+   "action": "New in Find Your Mat-ch (racks)",
+   "url": ""
+  }
+ ],
+ "sales": [
+  {
+   "brand": "Peace Love Mahjong",
+   "partner": true,
+   "what": "Black Friday deals start Mon 11/16",
+   "ends": "",
+   "action": "Monday codes post 11/16"
+  },
+  {
+   "brand": "Peace Love Mahjong",
+   "partner": true,
+   "what": "40% off original holiday mats with their code 40KMAT",
+   "ends": "ENDED Sat 11/7 6am CT",
+   "action": "none"
+  },
+  {
+   "brand": "Noli June",
+   "partner": true,
+   "what": "10% off the FALALADIES winter collection: comment LADIES on their reel for the link",
+   "tag": "sale",
+   "ends": "no end date",
+   "action": "Add to Monday codes post",
+   "url": "https://www.instagram.com/reel/DfdqlVAtDwp/"
+  }
+ ],
+ "nonpartners": [
+  {
+   "date": "2026-11-08",
+   "brand": "Lucky Bam",
+   "partner": false,
+   "what": "Two new holiday mats: The Rosé Noël (pink candy-cane Christmas) + The Slopes (après-ski) (email Nov 8)",
+   "tag": "mat",
+   "url": "https://luckybam.com"
+  },
+  {
+   "date": "2026-11-07",
+   "brand": "Bougie Mahjong",
+   "what": "Riviera Leopard Collection launched: mat (neoprene or sueded felt) + tote, tile bag, pouch",
+   "url": "https://www.instagram.com/p/Dfc30dQoIqR/"
+  },
+  {
+   "date": "2026-11-07",
+   "brand": "Mahjong Moxie",
+   "what": "New tile designs dropped Sat 11/7 12pm CST (bigger numbers)",
+   "url": ""
+  },
+  {
+   "date": "2026-11-06",
+   "brand": "Mahj Tile Haus",
+   "what": "Interview series with women in mahj coming soon",
+   "url": "https://www.instagram.com/reel/DfYggPAxJ73/"
+  },
+  {
+   "date": "",
+   "brand": "Sunday Mahjong",
+   "what": "Not readable via Instagram API: release schedule checked Mondays",
+   "url": ""
+  }
+ ]
 }

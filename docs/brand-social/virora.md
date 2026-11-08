@@ -1,6 +1,7 @@
 # Virora Mahjong (@viroramahjongofficial): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 7 9:00pm ET: 'Now Available' tile bags, Pearl White + Emerald Green, launch price $49, comment 'Mahjong Bag' for link (https://www.instagram.com/p/Dfdol0EDdnf/). Bags only: no feature. Nivalee Christmas set ships in batches from Nov 15.
 - Nov 7 ~9:35am ET (store, not IG): Florielle tiles (Rose Red, 4 layers, $229) BACK IN STOCK; restock frames assets/social/restock-florielle-nov07. Bags drop tonight 5pm PT.
 - Nov 6 12pm ET: mahjong bags in Emerald Green + Pearl White (clear front, printed lining, gold zipper pulls) available Sat Nov 7, 5pm PT (https://www.instagram.com/p/DfaF8KTjAiB/). Comment-for-link CTA.
 - Nov 4 8:00pm ET: 'Petalée, up close' detail carousel: green dragon curled around a pink bloom (https://www.instagram.com/p/DfVzS8coIPA/). Existing set (launched ~Oct 17).

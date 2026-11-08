@@ -315,15 +315,6 @@
    "tag": "racks",
    "action": "New in Find Your Mat-ch (racks)",
    "url": ""
-  },
-  {
-   "date": "2026-10-29",
-   "brand": "Charleston Mahjong Club",
-   "partner": true,
-   "what": "Cabana Club TRAVEL bundle preorder",
-   "tag": "travel tiles",
-   "action": "Monday codes post only (travel)",
-   "url": "https://www.charlestonmahjongclub.com/products/the-cabana-club-travel-bundle"
   }
  ],
  "sales": [
@@ -340,9 +331,26 @@
    "what": "40% off original holiday mats with their code 40KMAT",
    "ends": "ENDED Sat 11/7 6am CT",
    "action": "none"
+  },
+  {
+   "brand": "Noli June",
+   "partner": true,
+   "what": "10% off the FALALADIES winter collection: comment LADIES on their reel for the link",
+   "tag": "sale",
+   "ends": "no end date",
+   "action": "Add to Monday codes post",
+   "url": "https://www.instagram.com/reel/DfdqlVAtDwp/"
   }
  ],
  "nonpartners": [
+  {
+   "date": "2026-11-08",
+   "brand": "Lucky Bam",
+   "partner": false,
+   "what": "Two new holiday mats: The Rosé Noël (pink candy-cane Christmas) + The Slopes (après-ski) (email Nov 8)",
+   "tag": "mat",
+   "url": "https://luckybam.com"
+  },
   {
    "date": "2026-11-07",
    "brand": "Bougie Mahjong",
@@ -369,6 +377,42 @@
   }
  ],
  "auto": [
+  {
+   "date": "2026-11-08",
+   "brand": "Middle & Main Mahjong",
+   "partner": true,
+   "kind": "launch",
+   "what": "Which one are you reaching for your holiday travel plans?! {You’d be right either way!}\n\nWe created these sets to seamlessly cover all four seasons. Wanderlust ",
+   "url": "https://www.instagram.com/reel/Dfe2zLcR4Nw/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-08",
+   "brand": "Virora Mahjong",
+   "partner": true,
+   "kind": "launch",
+   "what": "Pearl White & Emerald Green.\nTwo designs, each with its own elegance.\nNow Available | Launch Price: $49\nComment “Mahjong Bag” for the link.",
+   "url": "https://www.instagram.com/p/Dfdol0EDdnf/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-08",
+   "brand": "Mahj & Vine",
+   "partner": true,
+   "kind": "launch",
+   "what": "Your next favorite mahjong mat is waiting! 💗\n\nOur current lineup is in stock and ready to ship, with plenty of color, personality, and pretty patterns to bring ",
+   "url": "https://www.instagram.com/p/Dfde2H6HUYy/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-08",
+   "brand": "Mac + Miller Mahjong",
+   "partner": true,
+   "kind": "launch",
+   "what": "Same tiles, with a little holiday spirit! 🎄\n\nWe pulled out a few Mahjong by Si mats we purchased to give our Red, White & Blues and Verdant Fortune tiles a seas",
+   "url": "https://www.instagram.com/reel/DffHl5sRLzd/",
+   "src": "instagram"
+  },
   {
    "date": "2026-11-06",
    "brand": "Virora Mahjong",
@@ -557,47 +601,11 @@
    "what": "New mats, Besties! 🩷🀄️\n\nNew designs, different sizes, and even more ways to make your mahjong table YOURS! \n\nWhether you’re looking for a travel-friendly mat or",
    "url": "https://www.instagram.com/reel/DfP_Kmusmo7/",
    "src": "instagram"
-  },
-  {
-   "date": "2026-11-02",
-   "brand": "Oh My Mahjong",
-   "partner": true,
-   "kind": "preorder",
-   "what": "The 2027 International Mahjong Card is officially available for preorder! Cards expected to ship around the first of the year.",
-   "url": "https://www.instagram.com/reel/DfPr_tpyjVZ/",
-   "src": "instagram"
-  },
-  {
-   "date": "2026-11-01",
-   "brand": "Charleston Mahjong Club",
-   "partner": true,
-   "kind": "preorder",
-   "what": "A little candy hangover? We have one more treat for you! Because we DON’T STOP TILL YOU GET ENOUGH… 🕺🍬☀️\n\n**CABANA CLUB TRAVEL BUNDLES ARE OFFICIALLY OPEN FOR P",
-   "url": "https://www.instagram.com/p/DfM2kP6EYPL/",
-   "src": "instagram"
-  },
-  {
-   "date": "2026-11-01",
-   "brand": "Maison Mahj",
-   "partner": true,
-   "kind": "preorder",
-   "what": "Crafted to be played, displayed, and treasured. 💜\n\nHouse Line No. 1 pairs timeless American Mahjong with signature Maison Mahj artistry.\n\nCollector access begin",
-   "url": "https://www.instagram.com/reel/DfNABSSKv0H/",
-   "src": "instagram"
-  },
-  {
-   "date": "2026-11-01",
-   "brand": "Let's Be Besties",
-   "partner": true,
-   "kind": "launch",
-   "what": "4 new listings: Camellia Kaleidoscope OHBoN Studios Artist Mahjong Mat; Electric ZigZag Mahjong Mat; Floral Pink Watercolor Mahjong Mat; Christmas Lights Mahjong Mat",
-   "url": "https://letsbebesties.com/products/camellia-kaleidoscope-artist-collab-leatherette-mahjong-mat",
-   "src": "store"
   }
  ],
- "updatedAt": "2026-11-07T23:39:50+00:00",
+ "updatedAt": "2026-11-08T18:36:57+00:00",
  "sources": {
-  "store_run": "2026-11-07T23:33:23+00:00",
-  "ig_run": "2026-11-07T23:38:25.960642+00:00"
+  "store_run": "2026-11-08T18:33:08+00:00",
+  "ig_run": "2026-11-08T18:36:23.754343+00:00"
  }
 }
