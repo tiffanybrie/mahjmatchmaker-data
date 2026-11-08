@@ -1,0 +1,1120 @@
+{
+ "at": "2026-11-07T20:49:02",
+ "fym": "v117",
+ "sources": {
+  "fym": "site-app/fym-v117/index.html @8a3081f2 (live /find-your-match)",
+  "gallery": "matgallery-v117.json @c90f4aaf (live /mahjong-mats, data-fym=v117)",
+  "search": "search-index.json @de5e43f1 (live search.js pin)"
+ },
+ "net_at": "2026-11-07T20:49:02",
+ "summary": "6 OK, 23 GAP, 1 UNKNOWN",
+ "gaps": [
+  "Removed pages still live or in the sitemap: 2 (target 0) | missing: /cypress-forest-mahjong-tile-matches (sitemap), /mahjong-row-and-co-discount-code (sitemap)",
+  "Hub brands with a code-truth % entry (live_codes_check can catch a wrong %): 27 of 38 (target all) | missing: Tigre de Tartan, Yellow Mountain Imports, I Love Mahj, Anders Ruff, Mahjong Studios, The Mahjong Press +5 more",
+  "Live brand pages with a verified line within 9 days: 37 of 39 (target all); as of 2026-11-07T20:49 | missing: bird-and-bamboo-discount-code-2 (no line), sunday-mahjong-discount-code (no line)",
+  "Hub brands with their own brand page: 37 of 38 (target all) | missing: Maison Mahj",
+  "Live brand pages in the sitemap but not on the codes hub: 2 (target 0) | missing: /bird-and-bamboo-discount-code-2, /sunday-mahjong-discount-code",
+  "Approved/overdue items older than 3 days (OVERDUE + DESK Blocked): 0 (target 0); 9 more carry no date, so they cannot age (give each a date)",
+  "ShopMy mats live in FYM: 127 of 173 (target all); shopmy-crosscheck-nov07.json: 51 staged, 58 Amazon (her pick), 11 skipped, 5 photo-held",
+  "Mats with a price (price filter hides the rest): 813 of 1521 (target all) | missing: Let's Be Besties 284, Mahj & Moon 106, Betty June & Jeannette 75, Oh My Mahjong 33, Luna EK Studio 28, Piper Chase Studios 27 +27 more",
+  "Visible FYM mats that are in the live Mat Gallery: 1447 of 1469 (target all); House of Hearts (FYM only), Mahjong Studios, side-B twins left out | missing: Bespoke Mahjong: Year of the Dragon - Periwinkle, Mahjong Register: Letters to Santa Double-Sided Leatherette, Mahjong Register: Holly Jolly Double-Sided Leatherette, Tigre de Tartan: French Mural, Charleston Mahjong Club: Club Mat, My Fair Mahjong: Confetti Lemon Lime +16 more",
+  "Gallery mats that FYM hides: 23 (target 0); 0 gallery rows not found in FYM at all | missing: Betty June & Jeannette: The Most Wonderful Time of the Year, Etsy: Savannah Soirée, Let's Be Besties: Paint Feathers, Let's Be Besties: Tobacco Leaves, Let's Be Besties: Tobacco Leaves Blue, Mahj Squad: Pink Floral Chinoiserie +17 more",
+  "Live album pages wired to an FYM tile set: 37 of 43 (target all) | missing: lilac-soiree, papaya-spritz, preppy-soiree, shangri-la, spring-love, sunday-tile-set",
+  "FYM sets with her picks that link to their album: 47 of 52 (target all) | missing: December 1994, Hummingbird, Sunday, Papaya Spritz, Spirit of Christmas",
+  "Table view walls (back colour confirmed): 30 of 283 visible tile sets (target all) | missing: Heritage 2.0, Gemma, Jasmine, Luminaire, Osler, Pearlescent +247 more",
+  "Mats checked for Table view (have a class): 1187 of 1521 visible mats (target all) | missing: Tigre de Tartan: Queen Bee (retired), Sunday Mahjong: Vegan Leather (Ruby), Sunday Mahjong: Vegan Leather (Forrest), Let's Be Besties: Abstract, Let's Be Besties: Acrylic Flowers, Let's Be Besties: Agate Whirlpool +328 more",
+  "Racks usable in Table view: 169 of 293 visible racks (target all) | missing: Oh My Mahjong White Acrylic, Oh My Mahjong Tortoise Shell, Oh My Mahjong Agate, Miss Mahjong Peach Sorbet Scalloped, Miss Mahjong Cornflower Blue Scalloped, Oh My Mahjong Burl +118 more",
+  "Mats usable in Table view (class A/B): 1102 of 1521 (target all); 85 class C (need a flat photo)",
+  "Tile sets with a price: 249 of 283 (target all) | missing: Heritage 1.0, Emerald, Pearlescent, Miss Classic Jade, Miss Classic Malachite, Birdie +28 more",
+  "Racks with a price: 289 of 293 (target all) | missing: Bam! Let's Mahjong White Acrylic Scalloped, Tala Mahj Horizon Woven Rattan, Tala Mahj Shoreline Chocolate Woven Rattan, Mahj Pit White Beech Wood",
+  "Her FYM picks named on the live album page: 1326 of 1712 (target all); name match, a little noise | missing: Larkspur (27), Sugarplum Plaid (23), Very Merry Wreath Premium (19), Perfectly Wrapped (17), Poppins (15), Spirit of Christmas (15) +4 more",
+  "Search entries pointing at hidden/missing holiday sections: 4 (target 0) | missing: hummingbird, nature-walk, sunday, sunday-blues",
+  "Holiday sets linking to their own holiday-page section: 0 of 10 (target all) | missing: Dear Santa, Rackin' Rudolph, Holly Jolly (Rudolph Red), Holly Jolly (Grinch Green), Holly Jolly (Sugarplum Pink), Nivalee (Glacier Blue) +4 more",
+  "Tile sets in a colour group (tile colour filter): 275 of 283 (target all) | missing: The Empress, Art Deco, Hocus Pocus Halloween, Mahj-O-Ween, Celebration, Fire + Fortune (Ember) +2 more",
+  "Tile sets with a tagline (\"dating profile\" line): 1 of 283 (target all) | missing: Heritage 1.0, Gatsby, Heritage 2.0, Drake, Lagoon, Seabreeze +40 more"
+ ],
+ "unknown": [
+  "Scheduled tasks switched off: unknown (no docs/status/tasks-off.json; an attended chat runs list_triggers and writes it)"
+ ],
+ "lines": [
+  {
+   "id": "removed_live",
+   "area": "Codes",
+   "status": "GAP",
+   "have": 2,
+   "total": 2,
+   "target": "0",
+   "text": "Removed pages still live or in the sitemap: 2 (target 0) | missing: /cypress-forest-mahjong-tile-matches (sitemap), /mahjong-row-and-co-discount-code (sitemap)"
+  },
+  {
+   "id": "tasks_off",
+   "area": "Ops",
+   "status": "UNKNOWN",
+   "have": null,
+   "total": null,
+   "target": "0",
+   "text": "Scheduled tasks switched off: unknown (no docs/status/tasks-off.json; an attended chat runs list_triggers and writes it)"
+  },
+  {
+   "id": "truth_brands",
+   "area": "Codes",
+   "status": "GAP",
+   "have": 27,
+   "total": 38,
+   "target": "all",
+   "text": "Hub brands with a code-truth % entry (live_codes_check can catch a wrong %): 27 of 38 (target all) | missing: Tigre de Tartan, Yellow Mountain Imports, I Love Mahj, Anders Ruff, Mahjong Studios, The Mahjong Press +5 more"
+  },
+  {
+   "id": "verified",
+   "area": "Codes",
+   "status": "GAP",
+   "have": 37,
+   "total": 39,
+   "target": "all",
+   "text": "Live brand pages with a verified line within 9 days: 37 of 39 (target all); as of 2026-11-07T20:49 | missing: bird-and-bamboo-discount-code-2 (no line), sunday-mahjong-discount-code (no line)"
+  },
+  {
+   "id": "hub_pages",
+   "area": "Codes",
+   "status": "GAP",
+   "have": 37,
+   "total": 38,
+   "target": "all",
+   "text": "Hub brands with their own brand page: 37 of 38 (target all) | missing: Maison Mahj"
+  },
+  {
+   "id": "orphan_brand_pages",
+   "area": "Codes",
+   "status": "GAP",
+   "have": 2,
+   "total": 39,
+   "target": "0",
+   "text": "Live brand pages in the sitemap but not on the codes hub: 2 (target 0) | missing: /bird-and-bamboo-discount-code-2, /sunday-mahjong-discount-code"
+  },
+  {
+   "id": "approved_old",
+   "area": "Ops",
+   "status": "GAP",
+   "have": 0,
+   "total": 19,
+   "target": "0",
+   "text": "Approved/overdue items older than 3 days (OVERDUE + DESK Blocked): 0 (target 0); 9 more carry no date, so they cannot age (give each a date)"
+  },
+  {
+   "id": "shopmy_unaccounted",
+   "area": "ShopMy",
+   "status": "OK",
+   "have": 0,
+   "total": 247,
+   "target": "0",
+   "text": "ShopMy mats not in FYM, staged or decided: 0 (target 0)"
+  },
+  {
+   "id": "shopmy_fym",
+   "area": "ShopMy",
+   "status": "GAP",
+   "have": 127,
+   "total": 173,
+   "target": "all",
+   "text": "ShopMy mats live in FYM: 127 of 173 (target all); shopmy-crosscheck-nov07.json: 51 staged, 58 Amazon (her pick), 11 skipped, 5 photo-held"
+  },
+  {
+   "id": "price_mats",
+   "area": "FYM",
+   "status": "GAP",
+   "have": 813,
+   "total": 1521,
+   "target": "all",
+   "text": "Mats with a price (price filter hides the rest): 813 of 1521 (target all) | missing: Let's Be Besties 284, Mahj & Moon 106, Betty June & Jeannette 75, Oh My Mahjong 33, Luna EK Studio 28, Piper Chase Studios 27 +27 more"
+  },
+  {
+   "id": "gallery_has_fym",
+   "area": "Gallery",
+   "status": "GAP",
+   "have": 1447,
+   "total": 1469,
+   "target": "all",
+   "text": "Visible FYM mats that are in the live Mat Gallery: 1447 of 1469 (target all); House of Hearts (FYM only), Mahjong Studios, side-B twins left out | missing: Bespoke Mahjong: Year of the Dragon - Periwinkle, Mahjong Register: Letters to Santa Double-Sided Leatherette, Mahjong Register: Holly Jolly Double-Sided Leatherette, Tigre de Tartan: French Mural, Charleston Mahjong Club: Club Mat, My Fair Mahjong: Confetti Lemon Lime +16 more"
+  },
+  {
+   "id": "gallery_shows_hidden",
+   "area": "Gallery",
+   "status": "GAP",
+   "have": 23,
+   "total": 1455,
+   "target": "0",
+   "text": "Gallery mats that FYM hides: 23 (target 0); 0 gallery rows not found in FYM at all | missing: Betty June & Jeannette: The Most Wonderful Time of the Year, Etsy: Savannah Soirée, Let's Be Besties: Paint Feathers, Let's Be Besties: Tobacco Leaves, Let's Be Besties: Tobacco Leaves Blue, Mahj Squad: Pink Floral Chinoiserie +17 more"
+  },
+  {
+   "id": "gallery_version",
+   "area": "Gallery",
+   "status": "OK",
+   "have": 1,
+   "total": 1,
+   "target": "all",
+   "text": "Live gallery built from the live FYM (v117): 1 of 1 (target all); gallery data-fym=v117"
+  },
+  {
+   "id": "albums_in_fym",
+   "area": "Albums",
+   "status": "GAP",
+   "have": 37,
+   "total": 43,
+   "target": "all",
+   "text": "Live album pages wired to an FYM tile set: 37 of 43 (target all) | missing: lilac-soiree, papaya-spritz, preppy-soiree, shangri-la, spring-love, sunday-tile-set"
+  },
+  {
+   "id": "fym_album_link",
+   "area": "Albums",
+   "status": "GAP",
+   "have": 47,
+   "total": 52,
+   "target": "all",
+   "text": "FYM sets with her picks that link to their album: 47 of 52 (target all) | missing: December 1994, Hummingbird, Sunday, Papaya Spritz, Spirit of Christmas"
+  },
+  {
+   "id": "walls",
+   "area": "FYM",
+   "status": "GAP",
+   "have": 30,
+   "total": 283,
+   "target": "all",
+   "text": "Table view walls (back colour confirmed): 30 of 283 visible tile sets (target all) | missing: Heritage 2.0, Gemma, Jasmine, Luminaire, Osler, Pearlescent +247 more"
+  },
+  {
+   "id": "tv_mats_checked",
+   "area": "FYM",
+   "status": "GAP",
+   "have": 1187,
+   "total": 1521,
+   "target": "all",
+   "text": "Mats checked for Table view (have a class): 1187 of 1521 visible mats (target all) | missing: Tigre de Tartan: Queen Bee (retired), Sunday Mahjong: Vegan Leather (Ruby), Sunday Mahjong: Vegan Leather (Forrest), Let's Be Besties: Abstract, Let's Be Besties: Acrylic Flowers, Let's Be Besties: Agate Whirlpool +328 more"
+  },
+  {
+   "id": "tv_racks",
+   "area": "FYM",
+   "status": "GAP",
+   "have": 169,
+   "total": 293,
+   "target": "all",
+   "text": "Racks usable in Table view: 169 of 293 visible racks (target all) | missing: Oh My Mahjong White Acrylic, Oh My Mahjong Tortoise Shell, Oh My Mahjong Agate, Miss Mahjong Peach Sorbet Scalloped, Miss Mahjong Cornflower Blue Scalloped, Oh My Mahjong Burl +118 more"
+  },
+  {
+   "id": "tv_mats_usable",
+   "area": "FYM",
+   "status": "GAP",
+   "have": 1102,
+   "total": 1521,
+   "target": "all",
+   "text": "Mats usable in Table view (class A/B): 1102 of 1521 (target all); 85 class C (need a flat photo)"
+  },
+  {
+   "id": "price_tiles",
+   "area": "FYM",
+   "status": "GAP",
+   "have": 249,
+   "total": 283,
+   "target": "all",
+   "text": "Tile sets with a price: 249 of 283 (target all) | missing: Heritage 1.0, Emerald, Pearlescent, Miss Classic Jade, Miss Classic Malachite, Birdie +28 more"
+  },
+  {
+   "id": "price_racks",
+   "area": "FYM",
+   "status": "GAP",
+   "have": 289,
+   "total": 293,
+   "target": "all",
+   "text": "Racks with a price: 289 of 293 (target all) | missing: Bam! Let's Mahjong White Acrylic Scalloped, Tala Mahj Horizon Woven Rattan, Tala Mahj Shoreline Chocolate Woven Rattan, Mahj Pit White Beech Wood"
+  },
+  {
+   "id": "album_picks",
+   "area": "Albums",
+   "status": "GAP",
+   "have": 1326,
+   "total": 1712,
+   "target": "all",
+   "text": "Her FYM picks named on the live album page: 1326 of 1712 (target all); name match, a little noise | missing: Larkspur (27), Sugarplum Plaid (23), Very Merry Wreath Premium (19), Perfectly Wrapped (17), Poppins (15), Spirit of Christmas (15) +4 more"
+  },
+  {
+   "id": "search_hidden",
+   "area": "Search",
+   "status": "GAP",
+   "have": 4,
+   "total": 70,
+   "target": "0",
+   "text": "Search entries pointing at hidden/missing holiday sections: 4 (target 0) | missing: hummingbird, nature-walk, sunday, sunday-blues"
+  },
+  {
+   "id": "holiday_anchor",
+   "area": "Albums",
+   "status": "GAP",
+   "have": 0,
+   "total": 10,
+   "target": "all",
+   "text": "Holiday sets linking to their own holiday-page section: 0 of 10 (target all) | missing: Dear Santa, Rackin' Rudolph, Holly Jolly (Rudolph Red), Holly Jolly (Grinch Green), Holly Jolly (Sugarplum Pink), Nivalee (Glacier Blue) +4 more"
+  },
+  {
+   "id": "search_albums",
+   "area": "Search",
+   "status": "OK",
+   "have": 43,
+   "total": 43,
+   "target": "all",
+   "text": "Live album pages in the site search: 43 of 43 (target all)"
+  },
+  {
+   "id": "search_mats",
+   "area": "Search",
+   "status": "OK",
+   "have": 1455,
+   "total": 1455,
+   "target": "all",
+   "text": "Gallery mats findable in site search: 1455 of 1455 (target all)"
+  },
+  {
+   "id": "tile_colours",
+   "area": "FYM",
+   "status": "GAP",
+   "have": 275,
+   "total": 283,
+   "target": "all",
+   "text": "Tile sets in a colour group (tile colour filter): 275 of 283 (target all) | missing: The Empress, Art Deco, Hocus Pocus Halloween, Mahj-O-Ween, Celebration, Fire + Fortune (Ember) +2 more"
+  },
+  {
+   "id": "tile_photo",
+   "area": "FYM",
+   "status": "OK",
+   "have": 283,
+   "total": 283,
+   "target": "all",
+   "text": "Tile sets with a tile photo: 283 of 283 (target all)"
+  },
+  {
+   "id": "pile",
+   "area": "FYM",
+   "status": "OK",
+   "have": 283,
+   "total": 283,
+   "target": "all",
+   "text": "Tile sets with a pile image: 283 of 283 (target all)"
+  },
+  {
+   "id": "tagline",
+   "area": "FYM",
+   "status": "GAP",
+   "have": 1,
+   "total": 283,
+   "target": "all",
+   "text": "Tile sets with a tagline (\"dating profile\" line): 1 of 283 (target all) | missing: Heritage 1.0, Gatsby, Heritage 2.0, Drake, Lagoon, Seabreeze +40 more"
+  }
+ ],
+ "net": {
+  "at": "2026-11-07T20:49:02",
+  "errors": [],
+  "fym_pin": {
+   "sha": "8a3081f2a0d177914c45fc621778230ab4b84efd",
+   "path": "site-app/fym-v117/index.html"
+  },
+  "gallery_pin": {
+   "sha": "c90f4aaf1b5eff4315677b76999cfc94969d586f",
+   "path": "site/livepatch/matgallery/data/matgallery-v117.json"
+  },
+  "gallery_data_fym": "v117",
+  "search_pin": {
+   "sha": "de5e43f1110ede2f42b7434706e3395e4d834a9a",
+   "path": "assets/search/search-index.json"
+  },
+  "sitemap": [
+   "/blog",
+   "/blog/holiday-mahjong-table",
+   "/blog/halloween-mahjong-table",
+   "/blog/christmas-mahjong-sets",
+   "/blog/mahjong-buying-guide",
+   "/blog/best-mahjong-sets-for-men",
+   "/blog/mahjong-tile-set-details-to-know",
+   "/blog/most-versatile-mahjong-tiles",
+   "/blog/my-favorite-yellow-orange-mahjong-tiles",
+   "/blog/best-mahjong-sets-for-kids",
+   "/blog/my-favorite-mahjong-racks",
+   "/blog/my-favorite-blue-mahjong-tiles",
+   "/blog/my-favorite-green-mahjong-tiles",
+   "/blog/most-versatile-mahjong-mats",
+   "/blog/my-favorite-pink-mahjong-tiles",
+   "/blog/pearlescent-tiles-heron-mat-summer-mahjong-table",
+   "/home",
+   "/mahj-matchmaker-community-old",
+   "/mahjong-tile-matches",
+   "/jade-mahjong-tile-matches",
+   "/malachite-mahjong-tile-matches",
+   "/lagoon-mahjong-tile-matches",
+   "/tortoise-mahjong-tile-matches",
+   "/amara-mahjong-tile-matches",
+   "/pearlescent-mahjong-tile-matches",
+   "/drake-mahjong-tile-matches",
+   "/palm-royale-mahjong-tile-matches",
+   "/events",
+   "/rentals",
+   "/oh-my-mahjong-discount-code",
+   "/miss-mahjong-discount-code",
+   "/my-fair-mahjong-discount-code",
+   "/bam-bird-boutique-discount-code",
+   "/bespoke-mahjong-discount-code",
+   "/peace-love-mahjong-discount-code",
+   "/charleston-mahjong-club-discount-code",
+   "/tigre-de-tartan-discount-code",
+   "/britt-mills-discount-code",
+   "/amanda-toppe-discount-code",
+   "/amahj-discount-code",
+   "/mac-and-miller-mahjong-discount-code",
+   "/middle-and-main-mahjong-discount-code",
+   "/mahj-mood-discount-code",
+   "/mahj-squad-discount-code",
+   "/bird-and-bamboo-discount-code",
+   "/lets-mahj-on-discount-code",
+   "/splash-of-color-discount-code",
+   "/bam-lets-mahjong-discount-code",
+   "/mini-mahjer-discount-code",
+   "/wren-mats-discount-code",
+   "/mahj-and-vine-discount-code",
+   "/hip-hip-mahjong-discount-code",
+   "/virora-mahjong-discount-code",
+   "/yellow-mountain-imports-discount-code",
+   "/mahjong-co-discount-code",
+   "/i-love-mahj-discount-code",
+   "/mahjong-row-and-co-discount-code",
+   "/heritage-mahjong-tile-matches",
+   "/glow-wild-mahjong-tile-matches",
+   "/moonlight-mahjong-tile-matches",
+   "/sierra-mahjong-tile-matches",
+   "/glitterville-mahjong-tile-matches",
+   "/birdie-mahjong-tile-matches",
+   "/lola-mahjong-tile-matches",
+   "/gemma-mahjong-tile-matches",
+   "/jasmine-mahjong-tile-matches",
+   "/la-fete-mahjong-tile-matches",
+   "/taylor-mahjong-tile-matches",
+   "/sunset-mahjong-tile-matches",
+   "/sorbet-mahjong-tile-matches",
+   "/nantucket-mahjong-tile-matches",
+   "/solara-mahjong-tile-matches",
+   "/heritage-2-0-mahjong-tile-matches",
+   "/willow-mahjong-tile-matches",
+   "/emerald-mahjong-tile-matches",
+   "/dandy-mahjong-tile-matches",
+   "/luminaire-mahjong-tile-matches",
+   "/limoncello-mahjong-tile-matches",
+   "/first-mahjong-racks-to-buy",
+   "/gatsby-mahjong-tile-matches",
+   "/share-your-table",
+   "/mahjong-studios-discount-code",
+   "/private-mahjong-lessons",
+   "/pippa-mahjong-tile-matches",
+   "/smith-mahjong-tile-matches",
+   "/seabreeze-mahjong-tile-matches",
+   "/talulah-mahjong-tile-matches",
+   "/cypress-forest-mahjong-tile-matches",
+   "/osler-mahjong-tile-matches",
+   "/anders-ruff-discount-code",
+   "/pink-mahjong-tile-matches",
+   "/blue-mahjong-tile-matches",
+   "/green-mahjong-tile-matches",
+   "/yellow-orange-mahjong-tile-matches",
+   "/purple-mahjong-tile-matches",
+   "/neutral-mahjong-tile-matches",
+   "/masculine-mahjong-tile-matches",
+   "/request-an-album",
+   "/bird-and-bamboo-rack-colors",
+   "/bird-and-bamboo-discount-code-2",
+   "/coquette-mahjong-tile-matches",
+   "/the-mahjong-press-discount-code",
+   "/soiree-all-day-discount-code",
+   "/royal-mahjong-society-discount-code",
+   "/mahjong-register-discount-code",
+   "/sunday-mahjong-discount-code",
+   "/holiday-mahjong-matches",
+   "/red-mahjong-tile-matches",
+   "/brown-mahjong-tile-matches",
+   "/ivory-mahjong-tile-matches",
+   "/lets-be-besties-discount-code",
+   "/christmas-mahjong-mats",
+   "/shangri-la-mahjong-tile-matches",
+   "/lilac-soiree-mahjong-tile-matches",
+   "/preppy-soiree-mahjong-tile-matches",
+   "/spring-love-mahjong-tile-matches",
+   "/papaya-spritz-mahjong-tile-matches",
+   "/sunday-tile-set-mahjong-tile-matches",
+   "/links",
+   "/about",
+   "/find-your-match",
+   "/mahj-matchmaker-community",
+   "/mahjong-mats",
+   "/contact",
+   "/yolo-mahjong-discount-code",
+   "/noli-june-discount-code",
+   "/privacy-policy",
+   "/brownstone-bloom-mahjong-tile-matches",
+   "/faq",
+   "/mahj-pit-discount-code",
+   "/mahjong-discount-codes"
+  ],
+  "hub_brands": [
+   [
+    "Oh My Mahjong",
+    "/oh-my-mahjong-discount-code"
+   ],
+   [
+    "Miss Mahjong",
+    "/miss-mahjong-discount-code"
+   ],
+   [
+    "My Fair Mahjong",
+    "/my-fair-mahjong-discount-code"
+   ],
+   [
+    "Bam Bird Boutique",
+    "/bam-bird-boutique-discount-code"
+   ],
+   [
+    "Bespoke Mahjong",
+    "/bespoke-mahjong-discount-code"
+   ],
+   [
+    "Peace Love Mahjong",
+    "/peace-love-mahjong-discount-code"
+   ],
+   [
+    "Charleston Mahjong Club",
+    "/charleston-mahjong-club-discount-code"
+   ],
+   [
+    "Tigre de Tartan",
+    "/tigre-de-tartan-discount-code"
+   ],
+   [
+    "Britt Mills",
+    "/britt-mills-discount-code"
+   ],
+   [
+    "Amanda Toppe",
+    "/amanda-toppe-discount-code"
+   ],
+   [
+    "Amahj",
+    "/amahj-discount-code"
+   ],
+   [
+    "Mac + Miller Mahjong",
+    "/mac-and-miller-mahjong-discount-code"
+   ],
+   [
+    "Middle & Main Mahjong",
+    "/middle-and-main-mahjong-discount-code"
+   ],
+   [
+    "Mahj Mood",
+    "/mahj-mood-discount-code"
+   ],
+   [
+    "Mahj Squad",
+    "/mahj-squad-discount-code"
+   ],
+   [
+    "Bird & Bamboo",
+    "/bird-and-bamboo-discount-code"
+   ],
+   [
+    "Let's Mahj On",
+    "/lets-mahj-on-discount-code"
+   ],
+   [
+    "Splash of Color",
+    "/splash-of-color-discount-code"
+   ],
+   [
+    "Bam! Let's Mahjong",
+    "/bam-lets-mahjong-discount-code"
+   ],
+   [
+    "Mini Mahjer",
+    "/mini-mahjer-discount-code"
+   ],
+   [
+    "Wren Mats",
+    "/wren-mats-discount-code"
+   ],
+   [
+    "Mahj & Vine",
+    "/mahj-and-vine-discount-code"
+   ],
+   [
+    "Hip Hip Mahjong",
+    "/hip-hip-mahjong-discount-code"
+   ],
+   [
+    "Virora Mahjong",
+    "/virora-mahjong-discount-code"
+   ],
+   [
+    "Yellow Mountain Imports",
+    "/yellow-mountain-imports-discount-code"
+   ],
+   [
+    "Mahjong Co.",
+    "/mahjong-co-discount-code"
+   ],
+   [
+    "I Love Mahj",
+    "/i-love-mahj-discount-code"
+   ],
+   [
+    "Anders Ruff",
+    "/anders-ruff-discount-code"
+   ],
+   [
+    "Mahjong Studios",
+    "/mahjong-studios-discount-code"
+   ],
+   [
+    "The Mahjong Press",
+    "/the-mahjong-press-discount-code"
+   ],
+   [
+    "The Royal Mahjong Society",
+    "/royal-mahjong-society-discount-code"
+   ],
+   [
+    "Soirée All Day",
+    "/soiree-all-day-discount-code"
+   ],
+   [
+    "Mahjong Register",
+    "/mahjong-register-discount-code"
+   ],
+   [
+    "Let’s Be Besties",
+    "/lets-be-besties-discount-code"
+   ],
+   [
+    "YOLO Mahjong",
+    "/yolo-mahjong-discount-code"
+   ],
+   [
+    "Maison Mahj",
+    "https://www.maisonmahj.com"
+   ],
+   [
+    "Noli June",
+    "/noli-june-discount-code"
+   ],
+   [
+    "Mahj Pit",
+    "/mahj-pit-discount-code"
+   ]
+  ],
+  "holiday_ids": {
+   "6acebd38595c8e121190cc57": false,
+   "6acebd38595c8e121190cc5c": false,
+   "new-holiday-sets": false,
+   "your-tiles": false,
+   "dear-santa": false,
+   "rackin-rudolph": false,
+   "holly-jolly-red": false,
+   "holly-jolly-green": false,
+   "holly-jolly-pink": false,
+   "tinselle-emerald": false,
+   "tinselle-ruby": false,
+   "nivalee-blue": false,
+   "nutcracker-ballet": false,
+   "december-1994": false,
+   "cmc-apres-ski": false,
+   "sunday": true,
+   "hummingbird": true,
+   "nature-walk": true,
+   "sunday-blues": true,
+   "69b21f4a4ee00b1b2d78be27": false
+  },
+  "brand_pages": {
+   "/amahj-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/amanda-toppe-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/anders-ruff-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/bam-bird-boutique-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/bam-lets-mahjong-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/bespoke-mahjong-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/bird-and-bamboo-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/bird-and-bamboo-discount-code-2": {
+    "status": 200,
+    "redirected": false,
+    "verified": null,
+    "verified_min": null
+   },
+   "/britt-mills-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/charleston-mahjong-club-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/cypress-forest-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": true,
+    "verified": null,
+    "verified_min": null
+   },
+   "/hip-hip-mahjong-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/i-love-mahj-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/lets-be-besties-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/lets-mahj-on-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/mac-and-miller-mahjong-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/mahj-and-vine-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/mahj-mood-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/mahj-pit-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-04",
+    "verified_min": "2026-11-04"
+   },
+   "/mahj-squad-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/mahjong-co-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/mahjong-register-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/mahjong-row-and-co-discount-code": {
+    "status": 200,
+    "redirected": true,
+    "verified": null,
+    "verified_min": null
+   },
+   "/mahjong-studios-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/middle-and-main-mahjong-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/mini-mahjer-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/miss-mahjong-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/my-fair-mahjong-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/noli-june-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/oh-my-mahjong-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/peace-love-mahjong-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/royal-mahjong-society-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/soiree-all-day-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/splash-of-color-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/sunday-mahjong-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": null,
+    "verified_min": null
+   },
+   "/the-mahjong-press-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/tigre-de-tartan-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/virora-mahjong-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/wren-mats-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-06",
+    "verified_min": "2026-11-06"
+   },
+   "/yellow-mountain-imports-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   },
+   "/yolo-mahjong-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-02",
+    "verified_min": "2026-11-02"
+   }
+  },
+  "album_pages": {
+   "/amara-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/birdie-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/blue-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/brown-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/brownstone-bloom-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/coquette-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/cypress-forest-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": true
+   },
+   "/dandy-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/drake-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/emerald-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/gatsby-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/gemma-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/glitterville-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/glow-wild-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/green-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/heritage-2-0-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/heritage-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/ivory-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/jade-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/jasmine-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/la-fete-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/lagoon-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/lilac-soiree-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/limoncello-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/lola-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/luminaire-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/malachite-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/masculine-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/moonlight-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/nantucket-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/neutral-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/osler-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/palm-royale-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/papaya-spritz-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/pearlescent-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/pink-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/pippa-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/preppy-soiree-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/purple-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/red-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/seabreeze-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/shangri-la-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/sierra-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/smith-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/solara-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/sorbet-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/spring-love-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/sunday-tile-set-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/sunset-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/talulah-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/taylor-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/tortoise-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/willow-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/yellow-orange-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   }
+  },
+  "album_picks": {
+   "fym": "v117",
+   "named": 1326,
+   "total": 1712,
+   "top_missing": [
+    "Larkspur (27)",
+    "Sugarplum Plaid (23)",
+    "Very Merry Wreath Premium (19)",
+    "Perfectly Wrapped (17)",
+    "Poppins (15)",
+    "Spirit of Christmas (15)",
+    "Tied With A Bow (14)",
+    "Vivienne (13)",
+    "Merry Mix (13)",
+    "Peony and Parasol (12)"
+   ]
+  }
+ }
+}

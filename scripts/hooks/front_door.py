@@ -3,6 +3,7 @@
 - pulls the repo (quiet, 10s cap)
 - live code/date check (scripts/checks/live_codes_check.py), re-run if the cached result is older than 3 hours
 - docs/OVERDUE.md lines + DESK 'Blocked, approved' items
+- coverage GAP lines (top 8) from docs/status/coverage.json (scripts/checks/coverage_check.py; file read only)
 Prints nothing when all is clear. Output becomes context for the chat, which must deal with it FIRST."""
 import subprocess, json, os, re, sys, datetime
 R=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -29,6 +30,17 @@ try:
     d=open('docs/DESK.md').read(); m=re.search(r'## Blocked, approved[^\n]*\n(.*?)\n## ',d,re.S)
     items=[l.strip() for l in (m.group(1).splitlines() if m else []) if l.strip().startswith(('-','1','2','3','4','5','6','7','8','9'))]
     if items: out.append(f'BLOCKED BUT APPROVED ({len(items)}): raise at the top of your reply ("These approved tasks are blocked: ... Can I do them now?") and do any you can:'); out+=['  '+l[:220] for l in items[:8]]
+except Exception: pass
+# Coverage gaps (Tiffany Nov 7: "where do we have other gaps"): read docs/status/coverage.json ONLY (no network, no rebuild here).
+# Written by scripts/checks/coverage_check.py (morning HQ cleanup runs it with --refresh).
+try:
+    cj=json.load(open('docs/status/coverage.json'))
+    cage=(datetime.datetime.now()-datetime.datetime.fromisoformat(cj['at'])).total_seconds()/3600
+    g=cj.get('gaps',[])+cj.get('unknown',[])
+    if g or cage>30:
+        out.append(f"COVERAGE GAPS ({len(cj.get('gaps',[]))} GAP, {len(cj.get('unknown',[]))} unknown; checked {cj['at'][:16]}"+(', STALE: run python3 scripts/checks/coverage_check.py --refresh' if cage>30 else '')+'). Not done until X of N = target:')
+        out+=['  - '+l.split(' | missing:')[0][:170] for l in g[:8]]
+        if len(g)>8: out.append(f'  ... +{len(g)-8} more: python3 scripts/checks/coverage_check.py')
 except Exception: pass
 if out:
     print('=== FRONT DOOR (automatic, every message) ===\n'+'\n'.join(out)+'\nRule: if you tell Tiffany you will fix something, fix it BEFORE you reply, or add it to docs/OVERDUE.md in the same turn and tell her who/when.')
