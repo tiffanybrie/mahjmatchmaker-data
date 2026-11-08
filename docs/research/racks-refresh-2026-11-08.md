@@ -26,10 +26,13 @@ Checked for a SCALLOPED tortoise at other partners (products.json):
 - Also seen: Fait à Main (partner) "The Scalloped Rack – Pink Tortoise", $175, in stock. It's PINK tortoise, has lifestyle photos only, and isn't in FYM. YOLO Tortoiseshell acrylic ($128, straight, in FYM). Charleston Mahjong Club Tortoise **travel** racks ($60, new Oct 29).
 
 **Recommendation: Mahjong Register Tortoise Club Scalloped.** It has the same classic warm amber and dark-brown tortoise as the Mahjong Row rack, the same scalloped top, and a clean straight-on single-rack photo that's already in FYM and approved on white and navy. It's in stock, at $135 against Mahjong Row's $130. The partner pays 14% on racks even though the code doesn't apply.
-No re-cut is needed: the current cut-out comes from the brand's "Front View" infographic strip and is clean.
-Proportions: it's 20" (Mahjong Row's was 20" too), so it pairs with other 20" racks on a card.
+It's 20" (Mahjong Row's was 20" too), so it pairs with other 20" racks on a card. The earlier sheet from the Deco racks agent (commit fa3e7234) is at assets/racks/candidates/tortoise-scalloped-replacement-sheet-nov08.jpg.
+
+**Finished cut-out, staged for FYM 1.19: assets/racks/v119/mr-tortoise-club.webp.** The infographic "Front View" strip, which both the v98 cut-out and the fa3e7234 candidate used, has the 1.75" dimension arrow touching the right end cap, so that end came out cropped short. The new cut-out comes from Mahjong Register's clean 5-rack group shot (product image 1, rack 3, 2000px). Both end caps are whole, and the edge colours are decontaminated, so the faint white rim on navy is gone (on the candidate it showed at the bottom left). I looked at it on white and navy, zoomed in on both ends, and approved it in rack_image_review.json. racks119.py swaps it in as the FYM photo through the config `cutouts` entry.
 
 ## Job 2: new partner racks in the last ~60 days (since Sep 9)
+
+Already covered by commit fa3e7234 (Deco album racks, not repeated here): Mahjong Register Peacock Teal, Navy Solid Wood and Admiral Navy (album cut-outs and card rules); Mahj Mood Jade and the Miss Mahjong Nov 10 drop (noted). This doc stages the FYM side. Navy Solid Wood is in the FYM unhide list below, and Admiral Navy only gets the `oos` flag.
 
 Legend: **STAGED** = in config/fym-rack-adds-nov08.json for FYM 1.19 (builder/fym_fix_nov08/racks119.py). Every image was cut, LOOKED AT on white + navy and approved in builder/fym_flags/rack_image_review.json.
 
