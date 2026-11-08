@@ -15,6 +15,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import racks as RK
 R = '/home/claude/mahjmatchmaker-data/'
 spec = json.load(open(sys.argv[1])); out = sys.argv[2]; os.makedirs(out, exist_ok=True); os.makedirs('/tmp/cards2', exist_ok=True)
+# Nov 8 HARD RULE (Tiffany 10:11am): no "NOT A PARTNER : NO CODE" / "NO CODE AT THIS TIME" band on a card with ANY partner piece.
+sys.path.insert(0, R + 'scripts/checks'); from card_code_band_check import check_cards as _band_check
+_bad = _band_check(spec)
+if _bad: sys.exit('REFUSED (card_code_band_check): the code band must be "SAVE WITH CODE : MAHJMATCH" on these cards:\n  ' + '\n  '.join(_bad))
 def uri(im, fmt='JPEG', q=88, maxs=None):
     if isinstance(im, str): im = Image.open(im)
     if maxs: im = im.copy(); im.thumbnail((maxs, maxs))

@@ -1,10 +1,11 @@
 """Juniper FINAL album spec (Tiffany's order, Nov 7 11:21pm 'done': config/picks/juniper-final-order-2026-11-07.json, 42 in).
 Pulls each card's spec row (photo, crop box, racks, why) from the round-3 / holiday / to-see / OMM-adds specs by mat + brand, in HER
-order, and fixes the code band:
-- non-partner mat brands (not on the codes hub / builder/fym_flags/nonpartner_allow.json 'partners'): 'NOT A PARTNER : NO CODE'
-  (Mahj Tile Haus, Sophie Clima, That Mahjong Moment, Betty June & Jeannette; MATCH-INBOX Nov 7 Kerry);
-- Mahjong Register: MAHJMATCH does not apply there (cart test Nov 7, config/code-truth.json; docs/OVERDUE.md) -> 'NO CODE AT THIS TIME'
-  (same words as the FYM 'No code available at this time' line); re-render these 3 cards when their code works.
+order, and sets the code band:
+- Nov 8 HARD RULE (Tiffany 10:11am, docs/ANSWERS.md): every Juniper card has Oh My Mahjong tiles (a partner), so EVERY card carries the
+  code band. Non-partner mats (Mahj Tile Haus, Sophie Clima, That Mahjong Moment, Betty June & Jeannette) and Mahjong Register (MAHJMATCH
+  not working there yet, cart test Nov 7) get 'SAVE WITH CODE : MAHJMATCH' (no % promise). Never 'NOT A PARTNER : NO CODE' /
+  'NO CODE AT THIS TIME' on a card: 'no code' notes live in the page captions only. gen2.py refuses a no-code band
+  (scripts/checks/card_code_band_check.py).
 - Green Malachite (Mahj Squad): every Mahj Squad photo but one carries MAHJ SQUAD overlay watermarks; card now uses the one clean
   product image (mats-191, the library table shot), cropped to the mat and EDSR x4 (assets/colorcards/juniper/mats/green-malachite-mahj-squad.jpg).
 Usage: python3 juniper_final.py  -> writes scripts/albumcard/specs/juniper_final_nov07.json; then
@@ -24,8 +25,7 @@ out = []
 for it in ORDER:
     m = re.match(r'^(.*)\(([^()]*)\)\s*$', it); name, brand = m.group(1).strip(), m.group(2).strip()
     row = dict(ROWS[(name, brand)]); row.pop('out', None); row.pop('out_reason', None); row.pop('code', None)
-    if brand not in PARTNERS: row['code'] = 'NOT A PARTNER : NO CODE'
-    elif brand == 'Mahjong Register': row['code'] = 'NO CODE AT THIS TIME'
+    if brand not in PARTNERS or brand == 'Mahjong Register': row['code'] = 'SAVE WITH CODE : MAHJMATCH'  # Nov 8 rule: band always on
     if name == 'Green Malachite':
         row['img'] = 'assets/colorcards/juniper/mats/green-malachite-mahj-squad.jpg'; row['box'] = [0, 0, 1680, 1728]
         row['photo_src'] = 'mahjsquadshop.com green-malachite-mahjong-mat-mats-191.webp (only image without overlay watermarks), mat crop, EDSR x4'
