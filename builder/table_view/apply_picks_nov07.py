@@ -3,6 +3,7 @@
   pick = 'fa'           the FYM photo cropped/straightened to the mat quad found by analyze()        -> cls A + fa
   pick = <int j >= 1>   vendor image j from <cands dir>/cands.json, re-downloaded at 2000px,
                         perspective-straightened to a 1200px all-mat square -> assets/table-view/mats/ -> cls A + mo
+  pick = 'pf'           the FYM photo is a peel-corner render: square box -> D.tv.pf (full table, corner mirrored) -> cls A
   pick = 'B'            corner view (cv from builder/table_view/corner_nov02.py output given with --cv)
   pick = 'C:<reason>'   grayed with that reason
 Usage: python3 apply_picks_nov07.py <build dir> <cands dir> <picks.json> [--cv corner_out.json]"""
@@ -20,7 +21,7 @@ CP = R / 'config/tableview-mats-nov07.json'; C = json.load(open(CP))
 UA = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/130 Safari/537.36'}
 slug = lambda k: re.sub(r'[^a-z0-9]+', '-', (M[k]['bn'] + '-' + M[k]['n']).lower()).strip('-')[:60] + '-' + hashlib.md5(k.encode()).hexdigest()[:6]
 def clear(k):
-    for sec in ('fa', 'mo', 'cv', 'why'): C[sec].pop(k, None)
+    for sec in ('fa', 'mo', 'cv', 'why', 'pf'): C.setdefault(sec, {}).pop(k, None)
 n = {}
 for k, p in picks.items():
     if k not in M: print('not in build:', k); continue
@@ -32,10 +33,16 @@ for k, p in picks.items():
         C['cls'][k] = 'A'; C['fa'][k] = affine(a['quad'], a['W'], a['H']); C['src'][k] = 'FYM photo cropped/straightened to the mat (affine)'
     elif isinstance(p, int):
         src = cands[k]['c'][p]['src']; url = src + ('&' if '?' in src else '?') + 'width=2000'
-        im = Image.open(io.BytesIO(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40).read())).convert('RGB')
+        im = Image.open(io.BytesIO(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40).read()))
         a = analyze(im); assert a.get('quad'), k
         f = f'assets/table-view/mats/{slug(k)}.webp'; warp_square(im, a['quad'], 1200).save(R / f, 'WEBP', quality=88)
         C['cls'][k] = 'A'; C['mo'][k] = f; C['src'][k] = f'vendor product image {p}: {src.split("?")[0]} (straightened to the mat)'
+    elif p == 'pf':  # peel-corner product render: full table with the curled top-right corner mirrored (builder/table_view/peel_nov02.py)
+        from peel_nov02 import analyse as peel, square_box
+        im = mat_full(B, M[k]['f']); r = peel(im) or {}
+        if 'b' not in r: r = {'b': square_box(im)}  # peel not traced: the JS fills the standard T2 polygon anyway; only the box matters
+        assert r.get('b'), (k, r)
+        C['cls'][k] = 'A'; C.setdefault('pf', {})[k] = {'b': r['b']}; C['src'][k] = 'FYM photo, peel corner filled (peel_nov02 square box)'
     elif p == 'B':
         C['cls'][k] = 'B'; C['cv'][k] = {'m': CVD[k]['m'], 'f': CVD[k]['f']}; C['src'][k] = 'FYM photo, corner view (corner_nov02 fit)'
     elif isinstance(p, str) and p.startswith('C:'):

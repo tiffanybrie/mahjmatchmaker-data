@@ -40,7 +40,7 @@ def one(idx_k):
             for j, imr in enumerate(p.get('images', [])[:10], 1):
                 src = imr['src']; s2 = src + ('&' if '?' in src else '?') + 'width=900'
                 try:
-                    im = Image.open(io.BytesIO(get(s2))).convert('RGB'); a = analyze(im); a['src'] = src; a['score'] = score(a)
+                    im = Image.open(io.BytesIO(get(s2))); a = analyze(im); a['src'] = src; a['score'] = score(a)
                     (warp_square(im, a['quad'], 260) if a.get('quad') else im.resize((260, 260))).save(f'{OUT}/{idx:03d}_{j}.jpg', quality=80)
                     rec['c'].append(a)
                 except Exception as e: rec['c'].append({'src': src, 'err': str(e)[:80], 'score': 0})

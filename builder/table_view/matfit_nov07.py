@@ -13,6 +13,12 @@ import numpy as np, cv2
 from PIL import Image
 from scipy import ndimage
 
+def flatten(im):
+    """transparent PNG/WebP product shots (Let's Mahj On) -> on white, so the backdrop is found (RGBA -> RGB alone makes it black)"""
+    if im.mode in ('RGBA', 'LA', 'P'):
+        im = im.convert('RGBA'); bg = Image.new('RGB', im.size, 'white'); bg.paste(im, mask=im.split()[3]); return bg
+    return im.convert('RGB')
+
 def _ring(a, r):
     return np.concatenate([a[:r].reshape(-1, 3), a[-r:].reshape(-1, 3), a[:, :r].reshape(-1, 3), a[:, -r:].reshape(-1, 3)]).astype(float)
 
@@ -23,7 +29,7 @@ def order_quad(q):
     return q
 
 def analyze(im, tol=26):
-    im = im.convert('RGB'); a = np.asarray(im).astype(float); H, W = a.shape[:2]; r = max(2, int(.015 * min(W, H)))
+    im = flatten(im); a = np.asarray(im).astype(float); H, W = a.shape[:2]; r = max(2, int(.015 * min(W, H)))
     ring = _ring(a, r); bgc = np.median(ring, 0)
     ring_uniform = float((np.sqrt(((ring - bgc) ** 2).sum(1)) < tol).mean())
     out = {'W': W, 'H': H, 'ring_uniform': round(ring_uniform, 3), 'bg': [int(x) for x in bgc]}
@@ -58,7 +64,7 @@ def _inset(q, inset):
 
 def warp_square(im, quad, px=900, inset=.006):
     q = _inset(quad, inset).astype(np.float32); dst = np.float32([[0, 0], [px, 0], [px, px], [0, px]])
-    Mx = cv2.getPerspectiveTransform(q, dst); a = np.asarray(im.convert('RGB'))
+    Mx = cv2.getPerspectiveTransform(q, dst); a = np.asarray(flatten(im))
     w = cv2.warpPerspective(a, Mx, (px, px), flags=cv2.INTER_AREA if max(a.shape[:2]) > 2 * px else cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
     return Image.fromarray(w)
 

@@ -4,6 +4,7 @@ Runs after tv118.py (build118.sh calls it when present). Reads config/tableview-
   fa         affine that crops/straightens the app's own FYM photo to the mat (full table; no new bytes)
   mo         a different VENDOR photo (product page), straightened to an all-mat square, inlined as a data URL (800px webp)
   cv         corner fit for new corner-class mats
+  pf         peel-corner renders filled to a full table (square box b; the global T2 peel polygon)
 A mat given fa/mo loses any old peel fill (pf) / corner fit (cv) entry, which were measured on the old photo.
 JS (preview_tv.js render(), patched in place, idempotent): the Table render uses TVD.mo[mat] instead of matFull(mat) when set,
 and draws TVD.fa[mat] (full table) before the plain centre-square crop. Racks are NOT touched (rack agent: tableview_racks_v118.py).
@@ -27,13 +28,14 @@ for k, cl in C['cls'].items():
     TV['cls'][k] = cl; n['cls'] += 1
     if cl in ('A', 'B'): TV['why'].pop(k, None)
     elif C['why'].get(k): TV['why'][k] = C['why'][k]
-    if k in C['fa'] or k in C['mo']:
+    TV['fa'].pop(k, None); TV['mo'].pop(k, None)  # this config owns fa/mo for its keys (a re-run never keeps a stale photo)
+    if k in C['fa'] or k in C['mo'] or k in C.get('pf', {}) or cl == 'C':
         TV['pf'].pop(k, None)
         if k not in C['cv']: TV['cv'].pop(k, None)
-        TV['fa'].pop(k, None); TV['mo'].pop(k, None)
     if k in C['fa']: TV['fa'][k] = C['fa'][k]; n['fa'] += 1
     if k in C['mo']: TV['mo'][k] = durl(C['mo'][k]); n['mo'] += 1
     if k in C['cv']: TV['cv'][k] = C['cv'][k]; n['cv'] += 1
+    if k in C.get('pf', {}): TV['pf'][k] = C['pf'][k]; n['pf'] = n.get('pf', 0) + 1
 for k in list(TV['fa']):
     if TV['cls'].get(k) != 'A': TV['fa'].pop(k)
 h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[i + e:]
