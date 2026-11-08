@@ -24,3 +24,11 @@ touchend: ignore while fingers remain down`.
   needs Tiffany's yes. Alternative: re-paste each page's block with the one-line script change (44 Chrome edits).
 Tests: zt.py (resize/zoom/lightbox, DOM + console), pinch2.py / pinch3.py (pinch inside the lightbox; pinch3 takes an init script),
 swipe3.py (one-finger swipe still works).
+
+## INSTALLED Nov 8 2026 ~1:30pm ET (Tiffany 1:00pm yes)
+header-snippet.html appended to Code Injection > HEADER right after the search lines (diffed in the editor: old 588 chars unchanged + newline +
+snippet; footer untouched). curl: Papaya Spritz, /holiday-mahjong-matches, Brownstone Bloom all carry it. Playwright chromium iPhone 14 (live_pinch.py
+/ swipe_fresh.py in this folder): 5 pinches stay on the same photo on all 3 (baseline with the snippet stripped: 4->8, 1->5, 3->7); one-finger
+swipe at normal zoom still flips (4->5->6->5 etc.); after a pinch the page is zoomed (scale 4.49) and a one-finger drag pans instead of flipping (by design).
+Console errors identical with/without the snippet (0 new). Juniper (block fix + header): pinches stay 5/46, swipes 5->6->7->6, 0 new errors:
+both guards run harmlessly (the header one stops the event first on pinch/zoom; at scale 1 one-finger events pass to the block), so Juniper's copy stays.
