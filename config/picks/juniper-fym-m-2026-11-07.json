@@ -1,0 +1,342 @@
+{
+ "_about": "Juniper (Oh My Mahjong) Tiffany's-match list for FYM, in her FINAL album order (config/picks/juniper-final-order-2026-11-07.json, Tiffany Nov 7 11:21pm 'done'; A YES IS A YES). Applied by builder/fym_fix_nov07/juniper_m118.py: set 'juniper' m = these keys in this order (racks []), written to locks too. Keys mapped against config/fym-mats-snapshot.json (FYM 1.17/1.18). Paint Feathers neoprene is hidden in FYM: added to m_hidden_ok (her real pick).",
+ "set": "juniper",
+ "m": [
+  {
+   "order": 1,
+   "pick": "Palm Royale (Mahj Tile Haus)",
+   "key": "mahjtilehaus.com/palm-royale-mat",
+   "fym_name": "Palm Royale",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 2,
+   "pick": "Flora Belle (Anders Ruff)",
+   "key": "shop.andersruff.com/flora-belle-mahjong-mat",
+   "fym_name": "Flora Belle",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 3,
+   "pick": "Lotus Cove (Oh My Mahjong)",
+   "key": "www.ohmymahjong.com/lotus-cove-mat-in-tube",
+   "fym_name": "Lotus Cove",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 4,
+   "pick": "Garden Glow – Emerald Green (Bespoke Mahjong)",
+   "key": "www.bespokemahjong.com/garden-glow-mat-emerald-green",
+   "fym_name": "Garden Glow Mat - Emerald Green",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 5,
+   "pick": "Cherry Blossom Jade (Miss Mahjong)",
+   "key": "missmahjong.com/cherry-blossom-mahjong-playing-mat-jade",
+   "fym_name": "Cherry Blossom Jade",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 6,
+   "pick": "Jungle Hot Pink (Bespoke Mahjong)",
+   "key": "alb2:bespoke-mahjong-jungle-hot-pink",
+   "fym_name": "Jungle Hot Pink",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 7,
+   "pick": "The Kerry (Betty June & Jeannette)",
+   "key": "www.etsy.com/listing/4493549326/the-kerry-mahjong-mat-watercolor-pink",
+   "fym_name": "The Kerry",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 8,
+   "pick": "Zesty Plume (Mahj & Vine)",
+   "key": "mahjandvine.com/pre-order-chinoiserie-elephant-copy",
+   "fym_name": "Zesty Plume",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 9,
+   "pick": "Emerald Mirage (Britt Mills)",
+   "key": "brittmillsdesign.com/emerald-mirage-neoprene-mahjong-mat",
+   "fym_name": "Emerald Mirage Neoprene",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 10,
+   "pick": "Evergreen (That Mahjong Moment)",
+   "key": "alb2:that-mahjong-moment-evergreen",
+   "fym_name": "Evergreen",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 11,
+   "pick": "Paint Feathers (Let's Be Besties)",
+   "key": "letsbebesties.com/paint-feathers-neoprene-mahjong-mat",
+   "fym_name": "Paint Feathers",
+   "hidden_in_fym": true,
+   "holiday": false
+  },
+  {
+   "order": 12,
+   "pick": "Color Me Birdie (Let's Be Besties)",
+   "key": "letsbebesties.com/color-me-birdie-mahjong-mat",
+   "fym_name": "Color Me Birdie",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 13,
+   "pick": "Palm Beach Tropical Pink Lime (Anders Ruff)",
+   "key": "shop.andersruff.com/palm-beach-tropical-pink-lime-mahjong-mat",
+   "fym_name": "Palm Beach Tropical Pink Lime",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 14,
+   "pick": "Camellia (Oh My Mahjong)",
+   "key": "alb:amara:Camellia",
+   "fym_name": "Camellia (retired)",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 15,
+   "pick": "Reba (Britt Mills)",
+   "key": "brittmillsdesign.com/reba-neoprene-mahjong-mat",
+   "fym_name": "Reba",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 16,
+   "pick": "Merrye (Pink and Blue) (Betty June & Jeannette)",
+   "key": "www.etsy.com/listing/4495222617/merrye-pink-and-blue",
+   "fym_name": "Merrye (Pink and Blue)",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 17,
+   "pick": "Savannah (Britt Mills)",
+   "key": "brittmillsdesign.com/savannah-neoprene-mahjong-mat",
+   "fym_name": "Savannah",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 18,
+   "pick": "Birdie Green (Oh My Mahjong)",
+   "key": "alb:coquette:Birdie Green",
+   "fym_name": "Birdie Green (retired)",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 19,
+   "pick": "Peonies Burst (Let's Be Besties)",
+   "key": "letsbebesties.com/peonies-burst-neoprene-mahjong-mat",
+   "fym_name": "Peonies Burst",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 20,
+   "pick": "Paradise (Let's Be Besties)",
+   "key": "letsbebesties.com/paradise-neoprene-mahjong-mat",
+   "fym_name": "Paradise",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 21,
+   "pick": "Botanical Jewel (Let's Be Besties)",
+   "key": "letsbebesties.com/botanical-jewel-neoprene-mahjong-mat",
+   "fym_name": "Botanical Jewel",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 22,
+   "pick": "Green Bright Floral (Let's Be Besties)",
+   "key": "letsbebesties.com/green-bright-floral-mahjong-mat",
+   "fym_name": "Green Bright Floral",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 23,
+   "pick": "Emerald Leopard in Bloom (Mahjong Register)",
+   "key": "mahjongregister.com/emerald-leopard-in-bloom-premium-padded-mahjong-mat-33",
+   "fym_name": "Emerald Leopard in Bloom Premium Padded",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 24,
+   "pick": "Haven (Britt Mills)",
+   "key": "brittmillsdesign.com/haven-neoprene-mahjong-mat",
+   "fym_name": "Haven",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 25,
+   "pick": "YOTD Black (Bespoke Mahjong)",
+   "key": "www.bespokemahjong.com/year-of-the-dragon-black",
+   "fym_name": "YOTD Black",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 26,
+   "pick": "Tropical Travels (Let's Be Besties)",
+   "key": "letsbebesties.com/tropical-travels-neoprene-mahjong-mat",
+   "fym_name": "Tropical Travels",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 27,
+   "pick": "Cheetah in Chinoiserie (Sophie Clima)",
+   "key": "www.etsy.com/listing/4515510897/preppy-mahjong-mat-with-white-bag",
+   "fym_name": "Cheetah in Chinoiserie",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 28,
+   "pick": "Whimsical Chinoiserie Meeting in the Pavilion (Sophie Clima)",
+   "key": "www.etsy.com/listing/4504460459/preppy-mahjong-mat-whimsical-chinoiserie",
+   "fym_name": "Whimsical Chinoiserie Meeting in the Pavilion",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 29,
+   "pick": "Grand Rose Medallion Chinoiserie (Let's Be Besties)",
+   "key": "letsbebesties.com/grand-rose-medallion-chinoiserie-neoprene-mahjong-mat",
+   "fym_name": "Grand Rose Medallion Chinoiserie",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 30,
+   "pick": "YOTD Pink (Bespoke Mahjong)",
+   "key": "www.bespokemahjong.com/year-of-the-dragon-pink-blush-1",
+   "fym_name": "YOTD Pink",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 31,
+   "pick": "YOTD White (Bespoke Mahjong)",
+   "key": "www.bespokemahjong.com/year-of-the-dragon-mat-white",
+   "fym_name": "YOTD White",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 32,
+   "pick": "The Dahlia (Bird & Bamboo)",
+   "key": "birdandbamboo.com/the-dahlia-mahjong-mat",
+   "fym_name": "The Dahlia",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 33,
+   "pick": "Green Bamboo Blossoms (Let's Be Besties)",
+   "key": "letsbebesties.com/green-bamboo-blossoms-mahjong-mat",
+   "fym_name": "Green Bamboo Blossoms",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 34,
+   "pick": "Green Malachite (Mahj Squad)",
+   "key": "mahjsquadshop.com/green-malachite-mahjong-mat-emerald-green-and-jewel-neoprene-mahjongg-mat-jewel-tone-mahj-mat-malachite-stone-mahj-ongg-mat-1",
+   "fym_name": "Green Malachite",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 35,
+   "pick": "Emerald Cove (Mahj Mood)",
+   "key": "mahjmood.com/emerald-cove-mat",
+   "fym_name": "Emerald Cove Mat",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 36,
+   "pick": "Emerald Teal & Celadon Leatherette (Mahjong Register)",
+   "key": "mahjongregister.com/pre-order-coral-aqua-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy-1",
+   "fym_name": "Emerald Teal & Celedon Green Double-Sided Leatherette",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 37,
+   "pick": "Esme (Oh My Mahjong)",
+   "key": "www.ohmymahjong.com/esme-mat-w-tube",
+   "fym_name": "Esme (retired)",
+   "hidden_in_fym": false,
+   "holiday": false
+  },
+  {
+   "order": 38,
+   "pick": "Holly Berry Mat (Mahj Mood)",
+   "key": "mahjmood.com/holly-berry-mat",
+   "fym_name": "Holly Berry Mat",
+   "hidden_in_fym": false,
+   "holiday": true
+  },
+  {
+   "order": 39,
+   "pick": "Yuletide (Oh My Mahjong)",
+   "key": "www.ohmymahjong.com/yuletide-mat-in-tube",
+   "fym_name": "Yuletide",
+   "hidden_in_fym": false,
+   "holiday": true
+  },
+  {
+   "order": 40,
+   "pick": "Watercolor Christmas Tree (Anders Ruff)",
+   "key": "shop.andersruff.com/watercolor-christmas-tree-mahjong-mat",
+   "fym_name": "Watercolor Christmas Tree",
+   "hidden_in_fym": false,
+   "holiday": true
+  },
+  {
+   "order": 41,
+   "pick": "Very Merry Wreath Premium (Mahjong Register)",
+   "key": "mahjongregister.com/preorder-moonlit-crane-premium-mahjong-mat-33-estimated-ship-aug-20th-copy",
+   "fym_name": "Very Merry Wreath Premium",
+   "hidden_in_fym": false,
+   "holiday": true
+  },
+  {
+   "order": 42,
+   "pick": "Perfectly Wrapped (Peace Love Mahjong)",
+   "key": "peacelovemahjong.com/mahjong-mats-holiday?v=67570521538852",
+   "fym_name": "Perfectly Wrapped",
+   "hidden_in_fym": false,
+   "holiday": true
+  }
+ ]
+}

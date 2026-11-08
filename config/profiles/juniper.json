@@ -5,7 +5,7 @@
  "brand": "Oh My Mahjong",
  "status": "The new girl on the block",
  "launch_line": "Launching Wed 11/11 · Oh My Mahjong",
- "matches": 32,
+ "matches": 42,
  "album": "https://www.mahjmatchmaker.com/juniper-mahjong-tile-matches",
  "profile_line": [
   "Seeking: hot pink, kelly or forest green.",
@@ -197,14 +197,14 @@
    "why": "Her #1: a pink center gives her greens the most contrast (pink is green's opposite), with kelly lattice and blush palms."
   },
   {
-   "label": "Forest green + pink",
-   "mat": "Garden Glow",
-   "brand": "Bespoke Mahjong",
+   "label": "Hot pink + mint",
+   "mat": "Flora Belle",
+   "brand": "Anders Ruff",
    "chips": [
-    "#1f4d2c",
-    "#e46aa0"
+    "#e8458b",
+    "#a8dcc8"
    ],
-   "why": "The deep forest ground matches her Forest Green Jade backs, and the pink wildflowers pick up her craks and dots."
+   "why": "A hot pink frame and pink peonies, with a mint lattice center that echoes her mint layer."
   },
   {
    "label": "Her official pair",
@@ -232,7 +232,7 @@
  ],
  "first_dates": [
   "Palm Royale",
-  "Garden Glow",
+  "Flora Belle",
   "Lotus Cove"
  ],
  "bio": "A lantern-lit garden at dusk. Deep green, a little pink, and a peacock who knows it.",
@@ -284,11 +284,12 @@
  },
  "album_peek": [
   "mahj-tile-haus-palm-royale",
-  "bespoke-mahjong-garden-glow-emerald-green",
+  "anders-ruff-flora-belle",
   "oh-my-mahjong-lotus-cove"
  ],
  "colors_line": "Forest Green Jade backs with a jade-look stone pattern, chartreuse and teal layers. Clean jewel tones on a deep green.",
  "layers_hand": "see the layers?<br>teal + chartreuse, over a Forest Green Jade back.",
  "rack_natural": true,
- "racks_hand": "both Oh My Mahjong, both picked for her"
+ "racks_hand": "both Oh My Mahjong, both picked for her",
+ "_nov07_final": "Tiffany's final order Nov 7 11:21pm: 42 matches; top 3 Palm Royale, Flora Belle, Lotus Cove (first_dates, album_peek, her_type #2 = Flora Belle)."
 }

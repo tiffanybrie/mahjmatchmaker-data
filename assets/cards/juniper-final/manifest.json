@@ -1,0 +1,987 @@
+{
+ "set": "Juniper",
+ "status": "FINAL: Tiffany's order Nov 7 11:21pm ('done'); 42 cards (37 year-round + 5 holiday)",
+ "cards": [
+  {
+   "order": 1,
+   "group": "top",
+   "mat": "Palm Royale",
+   "brand": "Mahj Tile Haus",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-mahj-tile-haus-palm-royale-mat.jpg",
+   "code": "NOT A PARTNER : NO CODE",
+   "src": "assets/colorcards/juniper/mats/palm-royale-mahj-tile-haus.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Hot Pink"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Your #1: the pink centre gives the most contrast with her greens (pink sits opposite green on the color wheel). Kelly cane lattice, blush palms and leopards, with enough green to hold the backs.",
+   "caption_note": null
+  },
+  {
+   "order": 2,
+   "group": "to see",
+   "mat": "Flora Belle",
+   "brand": "Anders Ruff",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-anders-ruff-flora-belle-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/flora-belle-anders-ruff.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Moss"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "A real contender: hot pink frame, pink and coral peonies, green leaves and a mint lattice centre that echoes her mint layer. A close cousin of Lotus Cove.",
+   "caption_note": "You asked to see"
+  },
+  {
+   "order": 3,
+   "group": "top",
+   "mat": "Lotus Cove",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-oh-my-mahjong-lotus-cove-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/lotus-cove-oh-my-mahjong.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Oh My Mahjong White Acrylic",
+    "Bird & Bamboo Peony"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Oh My Mahjong designed Lotus Cove to go with Juniper, and they're sold together in the starter kit. The pink pond frame and lily pads echo her lotus flower tiles. It has no forest green, so it sits third.",
+   "caption_note": "Pair mat"
+  },
+  {
+   "order": 4,
+   "group": "top",
+   "mat": "Garden Glow – Emerald Green",
+   "brand": "Bespoke Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-bespoke-mahjong-garden-glow-emerald-green-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/garden-glow-emerald-bespoke-mahjong.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Forest Green",
+    "Bird & Bamboo Evergreen"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Looks made for the set: the deep forest ground matches her Forest Green Jade backs, and the pink wildflowers pick up the craks, bams and dots. Lower contrast than Palm Royale, so it's #2.",
+   "caption_note": null
+  },
+  {
+   "order": 5,
+   "group": "best",
+   "mat": "Cherry Blossom Jade",
+   "brand": "Miss Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-miss-mahjong-cherry-blossom-jade-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/cherry-blossom-jade-miss-mahjong.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Berry Purple"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Hot pink, chartreuse and kelly: all three of Juniper's loud colors in one mat.",
+   "caption_note": null
+  },
+  {
+   "order": 6,
+   "group": "to see",
+   "mat": "Jungle Hot Pink",
+   "brand": "Bespoke Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-bespoke-mahjong-jungle-hot-pink-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/jungle-hot-pink-bespoke-mahjong.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Mulberry"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Bold and works: a hot pink ground with green-and-white palms, like Palm Royale turned up. The magenta leans a touch purpler than her OMM Hot Pink rack.",
+   "caption_note": "You asked to see"
+  },
+  {
+   "order": 7,
+   "group": "soft",
+   "mat": "The Kerry",
+   "brand": "Betty June & Jeannette",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-betty-june-and-jeannette-the-kerry-mat.jpg",
+   "code": "NOT A PARTNER : NO CODE",
+   "src": "assets/mats/etsy/bettyjunejeannette/kerry-2.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Ballet Pink",
+    "Miss Mahjong Scalloped Iridescent Opal",
+    "Mahj Mood Scalloped Clear Acrylic"
+   ],
+   "mat_reg": "kerry",
+   "skipped_no_photo": [],
+   "why": "Your pick to look at: pink chinoiserie with pink lotus, lime and leaf greens, like her pink lotus and green pagoda faces and her lime layer. The soft, pretty take: little forest green.",
+   "caption_note": null
+  },
+  {
+   "order": 8,
+   "group": "best",
+   "mat": "Zesty Plume",
+   "brand": "Mahj & Vine",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-mahj-and-vine-zesty-plume-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/zesty-plume-mahj-and-vine.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Pink",
+    "Bird & Bamboo Berry Purple"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Hits every Juniper color: hot pink frame, teal and chartreuse foliage, and a white field like the faces.",
+   "caption_note": null
+  },
+  {
+   "order": 9,
+   "group": "to see",
+   "mat": "Emerald Mirage",
+   "brand": "Britt Mills",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-britt-mills-emerald-mirage-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/emerald-mirage-britt-mills.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Avocado",
+    "Bird & Bamboo Evergreen"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Good on green: a deep forest jungle like her backs, with a blush sky. Very little hot pink, and darker and moodier than her bright faces. Neoprene shows sold out on Britt Mills; the leatherette is in stock.",
+   "caption_note": "You asked to see"
+  },
+  {
+   "order": 10,
+   "group": "stone",
+   "mat": "Evergreen",
+   "brand": "That Mahjong Moment",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-that-mahjong-moment-evergreen-mat.jpg",
+   "code": "NOT A PARTNER : NO CODE",
+   "src": "assets/mats/gallery/that-mahjong-moment--evergreen.webp",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Blackboard Black"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [
+    "My Fair Mahjong Malachite Dapple"
+   ],
+   "why": "Deep green with ferns: tone on tone, like the backs. One of your Malachite picks.",
+   "caption_note": null
+  },
+  {
+   "order": 11,
+   "group": "to see",
+   "mat": "Paint Feathers",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-lets-be-besties-paint-feathers-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/paint-feathers-lets-be-besties.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Magenta"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Closer than expected: forest green, coral-pink and white marbling echo her backs and faces. The all-over swirl is busy under tiles.",
+   "caption_note": "You asked to see"
+  },
+  {
+   "order": 12,
+   "group": "to see",
+   "mat": "Color Me Birdie",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-lets-be-besties-color-me-birdie-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/color-me-birdie-lets-be-besties.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Flamingo",
+    "Bird & Bamboo Forest Green"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "A real contender: hot pink and coral blooms with deep forest and kelly greens on a light ground. The blue birds are the only off note.",
+   "caption_note": "You asked to see"
+  },
+  {
+   "order": 13,
+   "group": "best",
+   "mat": "Palm Beach Tropical Pink Lime",
+   "brand": "Anders Ruff",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-anders-ruff-palm-beach-tropical-pink-lime-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/palm-beach-tropical-pink-lime-anders-ruff.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Avocado"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "The chartreuse layer's best friend: a lime centre inside a hot pink tropical frame.",
+   "caption_note": null
+  },
+  {
+   "order": 14,
+   "group": "best",
+   "mat": "Camellia",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-oh-my-mahjong-camellia-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/omm-retired/camellia.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Pink camellias with deep forest-green leaves on a soft pink ground: the leaves pick up her Forest Green Jade backs, the blooms her pink faces. A great match (Tiffany Nov 7). Retired.",
+   "caption_note": null
+  },
+  {
+   "order": 15,
+   "group": "deep",
+   "mat": "Reba",
+   "brand": "Britt Mills",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-britt-mills-reba-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/gallery/britt-mills--reba.webp",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Peony"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [
+    "My Fair Mahjong Malachite Dapple"
+   ],
+   "why": "Deep green field inside a pink frame, with a bouquet of pinks and greens.",
+   "caption_note": null
+  },
+  {
+   "order": 16,
+   "group": "to see",
+   "mat": "Merrye (Pink and Blue)",
+   "brand": "Betty June & Jeannette",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-betty-june-and-jeannette-merrye-pink-and-blue-mat.jpg",
+   "code": "NOT A PARTNER : NO CODE",
+   "src": "assets/colorcards/juniper/mats/merrye-pink-and-blue-betty-june-and-jeannette.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Has her pink lotus and leaf greens, but bright sky blue and periwinkle take over, and blue isn't in Juniper; busy next to her faces.",
+   "caption_note": "You asked to see"
+  },
+  {
+   "order": 17,
+   "group": "deep",
+   "mat": "Savannah",
+   "brand": "Britt Mills",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-britt-mills-savannah-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/savannah-britt-mills.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Evergreen"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [
+    "My Fair Mahjong Malachite Dapple"
+   ],
+   "why": "Forest green with a pink floral medallion. Its olive and orange make it the moodier, Thanksgiving-to-Christmas pick.",
+   "caption_note": null
+  },
+  {
+   "order": 18,
+   "group": "Your adds",
+   "mat": "Birdie Green",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-oh-my-mahjong-birdie-green-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/birdie-green-oh-my-mahjong.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Forest Green",
+    "Bird & Bamboo Periwinkle Blue"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Your add: the deep green frame and kelly centre carry her Forest Green Jade backs, and the blue-and-teal peacocks pick up her teal layer; almost no pink, so the faces bring it. Retired.",
+   "caption_note": "Your add"
+  },
+  {
+   "order": 19,
+   "group": "best",
+   "mat": "Peonies Burst",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-lets-be-besties-peonies-burst-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/peonies-burst-lets-be-besties.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Mulberry"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Magenta peonies around a kelly green star: bold, and right on Juniper's pink and green.",
+   "caption_note": null
+  },
+  {
+   "order": 20,
+   "group": "to see",
+   "mat": "Paradise",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-lets-be-besties-paradise-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/paradise-lets-be-besties.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Matcha",
+    "Bird & Bamboo Hot Pink"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Mixed: the mint centre and pink blooms suit her, but orange poppies, yellow and royal blue flowers pull it tropical-rainbow, away from her pink and green.",
+   "caption_note": "You asked to see"
+  },
+  {
+   "order": 21,
+   "group": "deep",
+   "mat": "Botanical Jewel",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-lets-be-besties-botanical-jewel-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/botanical-jewel-lets-be-besties.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Forest Green",
+    "Bird & Bamboo Evergreen"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Forest green ground full of magenta and pink wildflowers: back, bams and craks in one.",
+   "caption_note": null
+  },
+  {
+   "order": 22,
+   "group": "to see",
+   "mat": "Green Bright Floral",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-lets-be-besties-green-bright-floral-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/green-bright-floral-lets-be-besties.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Jade",
+    "Bird & Bamboo Peony"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Just okay: the centre is a muted grey-sage, not her forest green, and the floral border runs more coral-red than pink.",
+   "caption_note": "You asked to see"
+  },
+  {
+   "order": 23,
+   "group": "weak",
+   "mat": "Emerald Leopard in Bloom",
+   "brand": "Mahjong Register",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-mahjong-register-emerald-leopard-in-bloom-mat.jpg",
+   "code": "NO CODE AT THIS TIME",
+   "src": "assets/colorcards/juniper/mats/emerald-leopard-in-bloom-mahjong-register.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Forest Green",
+    "Bird & Bamboo Teal"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [
+    "Mahjong Register Emerald Pearl Scalloped"
+   ],
+   "why": "Weak, on your list to cut: emerald lattice frame with pink peonies and a leopard. It didn't wow you.",
+   "caption_note": "Weak: yours to cut"
+  },
+  {
+   "order": 24,
+   "group": "to see",
+   "mat": "Haven",
+   "brand": "Britt Mills",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-britt-mills-haven-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/haven-britt-mills.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Mulberry",
+    "Bird & Bamboo Dark Navy"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Not a fit: navy and plum ground, purple and magenta peonies, orange accents. There's no forest green, and the purple fights her pink.",
+   "caption_note": "You asked to see"
+  },
+  {
+   "order": 25,
+   "group": "deep",
+   "mat": "YOTD Black",
+   "brand": "Bespoke Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-bespoke-mahjong-yotd-black-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/gallery/bespoke-mahjong--yotd-black.webp",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Flamingo",
+    "Bird & Bamboo Wine"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Black ground with pink roses and a green dragon, for the emerald dragon tiles. The darkest pick here.",
+   "caption_note": null
+  },
+  {
+   "order": 26,
+   "group": "bright",
+   "mat": "Tropical Travels",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-lets-be-besties-tropical-travels-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/tropical-travels-lets-be-besties.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Jade",
+    "Bird & Bamboo Peony"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Pink, kelly and teal tropical leaves: preppy and bright.",
+   "caption_note": null
+  },
+  {
+   "order": 27,
+   "group": "chino",
+   "mat": "Cheetah in Chinoiserie",
+   "brand": "Sophie Clima",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-sophie-clima-cheetah-in-chinoiserie-mat.jpg",
+   "code": "NOT A PARTNER : NO CODE",
+   "src": "assets/mats/gallery/sophie-clima--cheetah-in-chinoiserie.webp",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Avocado"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "A pagoda garden in pinks and greens under a navy sky, like the pagoda and flower tiles. Sold on Etsy.",
+   "caption_note": null
+  },
+  {
+   "order": 28,
+   "group": "chino",
+   "mat": "Whimsical Chinoiserie Meeting in the Pavilion",
+   "brand": "Sophie Clima",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-sophie-clima-whimsical-chinoiserie-meeting-in-the-pavilion-mat.jpg",
+   "code": "NOT A PARTNER : NO CODE",
+   "src": "assets/mats/gallery/sophie-clima--whimsical-chinoiserie-meeting-in-the-pavilion.webp",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Jade",
+    "Bird & Bamboo Avocado"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Pagodas, pink blossoms and green gardens: the flower tiles as a full scene. Sold on Etsy.",
+   "caption_note": null
+  },
+  {
+   "order": 29,
+   "group": "chino",
+   "mat": "Grand Rose Medallion Chinoiserie",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-lets-be-besties-grand-rose-medallion-chinoiserie-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/grand-rose-medallion-chinoiserie-lets-be-besties.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Jade",
+    "Bird & Bamboo Seafoam"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Pink roses on big green lily pads around a medallion, close to the lotus flower tiles.",
+   "caption_note": null
+  },
+  {
+   "order": 30,
+   "group": "chino",
+   "mat": "YOTD Pink",
+   "brand": "Bespoke Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-bespoke-mahjong-yotd-pink-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/gallery/bespoke-mahjong--yotd-pink.webp",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Pistachio",
+    "Bird & Bamboo Radish"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Blush ground, pink roses and a green dragon: the dragon tiles, softened.",
+   "caption_note": null
+  },
+  {
+   "order": 31,
+   "group": "chino",
+   "mat": "YOTD White",
+   "brand": "Bespoke Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-bespoke-mahjong-yotd-white-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/gallery/bespoke-mahjong--yotd-white.webp",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Oh My Mahjong White Acrylic",
+    "Bird & Bamboo Pistachio"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "White ground like the faces, with roses and a teal dragon: the lightest of the dragon mats.",
+   "caption_note": null
+  },
+  {
+   "order": 32,
+   "group": "soft",
+   "mat": "The Dahlia",
+   "brand": "Bird & Bamboo",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-bird-and-bamboo-the-dahlia-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/the-dahlia-bird-and-bamboo.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Jade",
+    "Bird & Bamboo Light Pink"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Soft pink and teal-green toile: the quiet option that lets the faces do the talking.",
+   "caption_note": null
+  },
+  {
+   "order": 33,
+   "group": "soft",
+   "mat": "Green Bamboo Blossoms",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-lets-be-besties-green-bamboo-blossoms-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/green-bamboo-blossoms-lets-be-besties.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Forest Green",
+    "Bird & Bamboo Light Pink"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Bamboo lattice with pink blossoms, like the bam tiles. Its sage green is softer and a little earthier than the backs.",
+   "caption_note": null
+  },
+  {
+   "order": 34,
+   "group": "stone",
+   "mat": "Green Malachite",
+   "brand": "Mahj Squad",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-mahj-squad-green-malachite-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/green-malachite-mahj-squad.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Jade",
+    "Bird & Bamboo Evergreen"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "A green stone pattern, like the jade-look stone pattern on her backs. Tone on tone; the faces bring the pink.",
+   "caption_note": null
+  },
+  {
+   "order": 35,
+   "group": "stone",
+   "mat": "Emerald Cove",
+   "brand": "Mahj Mood",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-mahj-mood-emerald-cove-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/emerald-cove-mahj-mood.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Mahj Mood Scalloped Clear Acrylic",
+    "Bird & Bamboo Evergreen"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [
+    "My Fair Mahjong Malachite Dapple"
+   ],
+   "why": "A swirled emerald that looks like the tile backs themselves. Sleek and moody.",
+   "caption_note": null
+  },
+  {
+   "order": 36,
+   "group": "stone",
+   "mat": "Emerald Teal & Celadon Leatherette",
+   "brand": "Mahjong Register",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-mahjong-register-emerald-teal-and-celadon-leatherette-mat.jpg",
+   "code": "NO CODE AT THIS TIME",
+   "src": "assets/colorcards/juniper/mats/emerald-teal-and-celadon-leatherette-mahjong-register.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Forest Green",
+    "Bird & Bamboo Seafoam"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [
+    "Mahjong Register Emerald Pearl Scalloped"
+   ],
+   "why": "The solid pick: the emerald side matches the teal layer, and the celadon side flips it softer.",
+   "caption_note": null
+  },
+  {
+   "order": 37,
+   "group": "soft",
+   "mat": "Esme",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-oh-my-mahjong-esme-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/gallery/oh-my-mahjong--esme.webp",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Dark Teal"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Matched on the faces: her pink blossoms and teal-green leaves pick up Juniper's pink faces and teal layer. Retired.",
+   "caption_note": null
+  },
+  {
+   "order": 38,
+   "group": "holiday",
+   "mat": "Holly Berry Mat",
+   "brand": "Mahj Mood",
+   "retired_mat": false,
+   "holiday": true,
+   "file": "juniper-mahjong-tiles-mahj-mood-holly-berry-mat-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/holly-berry-mat-mahj-mood.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Brick Red"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Holiday match: a deep forest-green field like her backs, coral-red poinsettias like her pink and coral faces, and mint sprigs like her mint and teal layers.",
+   "caption_note": "Holiday match"
+  },
+  {
+   "order": 39,
+   "group": "holiday",
+   "mat": "Yuletide",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": true,
+   "file": "juniper-mahjong-tiles-oh-my-mahjong-yuletide-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/yuletide-oh-my-mahjong.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Red"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Holiday match from her own brand: an emerald-and-teal plaid centre for her backs and layers, framed in hot pink roses and red bows.",
+   "caption_note": "Holiday match"
+  },
+  {
+   "order": 40,
+   "group": "holiday",
+   "mat": "Watercolor Christmas Tree",
+   "brand": "Anders Ruff",
+   "retired_mat": false,
+   "holiday": true,
+   "file": "juniper-mahjong-tiles-anders-ruff-watercolor-christmas-tree-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/watercolor-christmas-tree-anders-ruff.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Lime Green",
+    "Bird & Bamboo Red"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Holiday match: a chartreuse centre like her bright layer, green gingham, pink-trimmed trees and a pink stripe inside the red border.",
+   "caption_note": "Holiday match"
+  },
+  {
+   "order": 41,
+   "group": "holiday",
+   "mat": "Very Merry Wreath Premium",
+   "brand": "Mahjong Register",
+   "retired_mat": false,
+   "holiday": true,
+   "file": "juniper-mahjong-tiles-mahjong-register-very-merry-wreath-premium-mat.jpg",
+   "code": "NO CODE AT THIS TIME",
+   "src": "assets/colorcards/juniper/mats/very-merry-wreath-premium-mahjong-register.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Ballet Pink"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Holiday match: green and hot pink plaid with a pink wreath centre: her greens and her hot pink, dressed up for Christmas.",
+   "caption_note": "Holiday match"
+  },
+  {
+   "order": 42,
+   "group": "holiday",
+   "mat": "Perfectly Wrapped",
+   "brand": "Peace Love Mahjong",
+   "retired_mat": false,
+   "holiday": true,
+   "file": "juniper-mahjong-tiles-peace-love-mahjong-perfectly-wrapped-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/perfectly-wrapped-peace-love-mahjong.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Forest Green",
+    "Bird & Bamboo Light Pink"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Holiday match: the simple one. A solid green gift with a pink ribbon and red bow, so her tiles and the hot pink rack do the talking.",
+   "caption_note": "Holiday match"
+  }
+ ],
+ "title_color": "#225d36",
+ "tile": "assets/tiles/album/juniper.jpg",
+ "racks_note": "tile racks = colorcards juniper racks; mat racks = round-2 racks with real photos (not tile racks) + matpick fill",
+ "_spec": "scripts/albumcard/specs/juniper_final_nov07.json (juniper_final.py)"
+}

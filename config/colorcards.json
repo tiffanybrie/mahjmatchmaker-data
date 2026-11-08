@@ -858,18 +858,19 @@
    ],
    "mats": [
     "Palm Royale",
-    "Garden Glow",
+    "Flora Belle",
     "Lotus Cove"
    ],
    "mat_imgs": {
     "Garden Glow": "assets/colorcards/juniper/mats/garden-glow-emerald-bespoke-mahjong.jpg",
     "Palm Royale": "assets/colorcards/juniper/mats/palm-royale-mahj-tile-haus.jpg",
-    "Lotus Cove": "assets/colorcards/juniper/mats/lotus-cove-oh-my-mahjong.jpg"
+    "Lotus Cove": "assets/colorcards/juniper/mats/lotus-cove-oh-my-mahjong.jpg",
+    "Flora Belle": "assets/colorcards/juniper/mats/flora-belle-anders-ruff.jpg"
    },
    "shop": "Shop Juniper · Oh My Mahjong",
    "shop_m": "Shop Juniper · Oh My Mahjong",
-   "mats_source": "Claude's own picks (Tiffany Nov 4 3:27pm: 'show me how you'd match it'), not her picks yet",
-   "racks_source": "Claude's own picks, pending her OK",
+   "mats_source": "Tiffany's final album order Nov 7 11:21pm (top 3: Palm Royale, Flora Belle, Lotus Cove)",
+   "racks_source": "Tiffany Nov 6 2:11am: OMM Hot Pink + OMM Agate",
    "_nov04": "Colours measured from OMM's Juniper alt pile photo (05-Tile_Juniper_Alt) and checked by eye; OMM's own copy: forest green, jade, warm coral pink.",
    "_nov05": "Tiffany Nov 5 12:42am: back = forest green JADE-LOOK (OMM: 'inspired by the rich beauty of jade'); never call the teal layer 'jade'. Pair mat Lotus Cove top 3, not #1; Palm Royale #2.",
    "profile_line": [
@@ -890,7 +891,9 @@
      "forest green, chartreuse and hot pink."
     ]
    },
-   "_nov06r3": "Tiffany Nov 6 2:26am round 3: tagline in the dating-app voice like Papaya ('Seeking: ...'), not 'A lush lantern-lit garden'; back = Forest Green Jade colour with a jade-look STONE pattern (never 'jade-look green'); tile = PILE photo; top mats Palm Royale #1, Garden Glow #2, Lotus Cove #3."
+   "_nov06r3": "Tiffany Nov 6 2:26am round 3: tagline in the dating-app voice like Papaya ('Seeking: ...'), not 'A lush lantern-lit garden'; back = Forest Green Jade colour with a jade-look STONE pattern (never 'jade-look green'); tile = PILE photo; top mats Palm Royale #1, Garden Glow #2, Lotus Cove #3.",
+   "matches": 42,
+   "_nov07": "Final: top 3 from her order; 42 matches (37 + 5 holiday)."
   },
   "style-of-your-life": {
    "name": "Style of Your Life",
