@@ -1661,7 +1661,7 @@ if 'function BCAP(' in UI or any(_m.get('add') == 'nov01-v113' for _m in M.value
     # v114 (Nov 3 2:48pm): picks default off but her picks still lead the mat deck, so they stay exempt from the cap either way
     _mcap = 'if(!f.brand)ids=BCAP(ids,herMat,id=>M[id].bn);' if '/*v114 types*/' in UI else 'if(!f.brand)ids=BCAP(ids,f.her?herMat:NOK,id=>M[id].bn);'
     for _a, _w in (('function BCAP(ids,keep,bo)', 'BCAP function'), (_mcap, 'mat deck cap'),
-                   ('BCAP([...g.alb,...g.cat],NOK,r=>TB(r.s))', 'mat-door tile deck cap over album+catalog combined'),
+                   (('BCAP(TSOM([...g.alb,...g.cat]),NOK,r=>TB(r.s))' if 'BCAP(TSOM(' in UI else 'BCAP([...g.alb,...g.cat],NOK,r=>TB(r.s))'), 'mat-door tile deck cap over album+catalog combined'),  # Nov 7: tilerank_v118 orders the pool first (TSOM), cap unchanged
                    ('if(!f.brand)ids=BCAP(ids,r=>hr.includes(r),r=>R[r].bn);return ids;}', 'rack deck cap (last)'),
                    ('if(!R[id]||R[id].hid)return false;', 'rack search skips hidden racks')):
         if _a not in UI: F.append(f"[140] {_w} missing")

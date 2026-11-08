@@ -8,7 +8,7 @@
    Lagoon #0a4f5c, Mulberry #7d3456). The Oct 23 add (bambird_tiles.py) had picked #0d6b6e / #a3195b by guess.
 3. Gate [100]: the two Mac + Miller 'Perfectly Imperfect' listings (seconds of Laissez Les Bons Temps Rouler and Sweet Dreams, both
    already in FYM; Sweet Dreams is hidden + locked there) go on config/partner-mat-sweep-ignore.json with that reason."""
-import sys, os, json, datetime
+import sys, os, json, datetime, re
 R = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')) + '/'
 P = sys.argv[1] + '/index.html'; h = open(P).read(); i = h.index('const D=') + 8; D, e = json.JSONDecoder().raw_decode(h[i:])
 M = D['mats']; out = []
@@ -24,10 +24,17 @@ for k, sl in OZ.items():
     if k in M and M[k].get('u') != u:
         M[k]['u'] = M[k]['u0'] = u; M[k]['dc'] = ''; M[k]['pa'] = False; M[k].pop('u_dead', None); M[k].pop('u_plain', None); out.append(f'Ozark {M[k]["n"]} -> {u}')
 CC = json.load(open(R + 'config/colorcards.json'))['sets']
-for card, nm in (('deco-lagoon', 'Deco (Lagoon)'), ('deco-mulberry', 'Deco (Mulberry)')):
-    want = CC[card]['backs'][0][1]
+# gate [103] rule, for every colour card (Nov 7: new cards keep arriving, e.g. Deco (Indigo)): no album title colour -> the card's
+# first back colour (or its title colour for an all-ivory back)
+_am = re.search(r'const tc=.*?\(\(\)=>\{const h=\((\{[^}]*\})\)\[s\.name\]', h); _alb = set(json.loads(_am.group(1))) if _am else set()
+_lum = lambda x: sum(w * int(x[i_:i_ + 2], 16) / 255 for w, i_ in ((.2126, 1), (.7152, 3), (.0722, 5)))
+for card, v in CC.items():
+    nm = {'Sunday Tile Set': 'Sunday'}.get(v['name'], v['name'])
+    if nm in _alb: continue
+    b0 = v['backs'][0][1]; want = b0 if _lum(b0) < 0.6 else v.get('col')
     for s in D['sets']:
-        if s['name'] == nm and s.get('tc', '').lower() != want.lower(): out.append(f"{nm} tc {s.get('tc')} -> {want}"); s['tc'] = want
+        if want and s['name'] == nm and (s.get('maker') == v.get('brand') or not v.get('brand')) and (s.get('tc') or '').lower() != want.lower():
+            out.append(f"{nm} tc {s.get('tc')} -> {want}"); s['tc'] = want
 h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[i + e:]; open(P, 'w').write(h)
 IG = json.load(open(R + 'config/partner-mat-sweep-ignore.json')); today = datetime.date.today().isoformat(); n = 0
 for key, name, base in (('macandmillermahjong.com/laissez-les-bons-temps-rouler-collection-mahjong-mat-perfectly-imperfect',
