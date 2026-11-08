@@ -41,3 +41,18 @@ Baseline Nov 7 curls: 0 missed-nov07 cards on every page.
 | heritage | 4+8 | main: +4 (grid now 59); hol +8 (2-9); counts: all 67 Heritage mat matches from 17 brands x2; new brands: Mahj & Moon, Luna EK, PLM | 12, bad imgs 0, last n 59 | DONE 04:36Z |
 | jasmine | 2+7 | main: +2 (grid now 18); hol +7 (9-15); counts: all 25 Jasmine mat matches from 11 brands x2; new brands: Bam Bird, Rebecca Illustrated, PLM, LBB | 9, bad imgs 0, last n 18 | DONE 04:37Z |
 | sunday-tile-set | 2+7 | main: +2 (grid now 37); hol +7 (2-8); no count string in block (as README says); new brands: Luna EK, Amazon, PLM; + 4 Ozark links re-pointed to www.ozarkmahjongg.com/product-page/ | 9, bad imgs 0, last n 37 | DONE 04:38Z |
+| emerald | 3+4 | main: +3 (grid now 19); hol +4 (10-13); counts: all 23 Emerald mat matches from 5 brands x2; new brands: LBB, Britt Mills | 7, bad imgs 0, last n 19 | DONE 04:39Z |
+| shangri-la | 5+2 | main: +5 (grid now 17); hol +2 (17-18); counts: 19 Shangri La mat matches x1, 'from Oh My Mahjong' -> 'from 7 brands' by hand; editor source checked card-by-card against live (Copy page exists in panel; correct /shangri-la-mahjong-tile-matches edited) | 7, bad imgs 0, last n 17 | DONE 04:41Z |
+| sierra | 6+1 | main: +6 (grid now 22); hol +1 (3); counts: all 23 Sierra mat matches from 7 brands x2; new brands: Fait a Main, House of Hearts Studio, Luna EK, PLM | 7, bad imgs 0, last n 22 | DONE 04:42Z |
+| papaya-spritz | 5+1 | main: +5 (grid now 55); NEW holiday section: 1; counts: 56 Papaya Spritz mat matches x1, 'from 13 brands' -> 15; new brands: LBB, Splash | 6, bad imgs 0, last n 55 | DONE 04:43Z |
+| lagoon | 3+1 | main: +3 (grid now 40); hol +1 (6); counts: all 41 Lagoon mat matches from 12 brands x2; new brands: Bam Bird, LBB | 4, bad imgs 0, last n 40 | DONE 04:43Z |
+| preppy-soiree | 2+2 | main: +2 (grid now 15); hol +2 (15-16); counts: 17 Preppy Soiree mat matches x1, 'from 2 brands' -> 5; new brands: Bougie, LBB, Amazon (page JSON via raw.githubusercontent: jsDelivr returned 'Package size exceeded') | 4, bad imgs 0, last n 15 | DONE 04:44Z |
+| sunset | 2+1 | main: +2 (grid now 17); NEW holiday section: 1 (+css); counts: all 18 Sunset mat matches from 10 brands x2; new brands: LBB, Splash, PLM | 3, bad imgs 0, last n 17 | DONE 04:45Z |
+| spring-love | 1+0 | main: +1 (grid now 15); counts: 15 Spring Love mat matches x1, 'from Oh My Mahjong' -> 'from 3 brands' by hand; new brands: YOLO | 1, bad imgs 0, last n 15 | DONE 04:46Z |
+
+## Summary (Nov 8)
+- 437 of 462 staged cards live: 50 album pages + 9 holiday-page sections. holiday_numbering.py: 57 sections, 0 problems.
+- Not pasted: holiday#december-1994 (25, waits for the DESK Dec 1994 redo), held Malachite + Green Malachite (not in the kit).
+- Extra fixes made by hand in the same pastes: Coquette intro "53 from 18 brands" -> 67/21; Brownstone Bloom, Papaya Spritz, Preppy Soiree "from N brands" bumped; Shangri La + Spring Love "from Oh My Mahjong" -> "from N brands"; Ozark links (Osler 2, Sunday 4).
+- Not changed (page settings, outside the code block): SEO titles/descriptions that carry old counts (e.g. Jade title "37 Mat & Rack Matches", Sunday "35"). /holiday-mahjong-matches "140+ holiday mats" and "10+ tile sets" left as they were; no new "your tiles" tiles added for albums that got their first holiday section (Brownstone Bloom, Papaya Spritz, Sunset, also Heritage/Sunday/Shangri La/Preppy/Spring Love/Talulah etc. not in that list).
+- jsDelivr started answering "Package size exceeded" for kit JSON near the end; the last pages loaded pages/*.json from raw.githubusercontent at the same commit. Card images were all warmed 200 before and verified 200 after each page.
