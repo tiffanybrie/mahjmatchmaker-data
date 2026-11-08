@@ -1,4 +1,6 @@
 # New album: order of operations (Tiffany, Oct 26 12:46pm: "I can't be the one who's expected to remember all these things")
+> **Start here: the Album Playbook doc https://claude.ai/artifact/14oGH3ovycd2xMgrHbodJZ is the order of operations Tiffany sees and edits (Nov 8). This file is the go-live detail.**
+
 Run this list top to bottom the day an album goes live. Every item is Claude's job unless marked YOU. Tick each one in the album's HQ Albums row (hq/albums) and log in docs/ANSWERS.md.
 
 ## 0. FIRST, before anything goes to Tiffany (Tiffany Nov 7 8:13pm; gate [165])
