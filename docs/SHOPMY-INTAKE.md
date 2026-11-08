@@ -6,7 +6,7 @@
 
 ## Doing a request (Ops/Chrome; set status "working" first)
 1. Read ShopMy (her collections): `GET https://apiv3.shopmy.us/api/Collections/<id>` works from a shopmy.us tab with `credentials:'include'` (pins list inside). Collections are found via shopmy.us/links (collection name is a link). Pin image URLs on S3 return 403 from the shell; use the retailer's original (Etsy: i.etsystatic.com).
-2. **New mats in an existing collection / a new collection:** follow the weekly check prompt (FYM staging after photo gates; Amazon never auto-enters FYM). Put a DESK line for Matches & Catalog.
+2. **New mats in an existing collection / a new collection:** follow the weekly check prompt (FYM staging after photo gates; Amazon pins enter FYM like every other ShopMy mat: Tiffany Nov 8 2:08pm "if it's in ShopMy, bring it in"). Put a DESK line for Matches & Catalog.
 3. **Mats for a match album (e.g. Sunday Mahjong):** write them in docs/MATCH-INBOX.md (album, mat names, ShopMy collection/link) the same turn and a DESK line "Matches & Catalog:" so they come into the album/FYM.
 4. **New collection = cover + description + shelf, always (a collection with no Section_id shows on NO shelf):**
    - Name: Etsy-shop collections end in " (Etsy)" (her rule Oct 29).
