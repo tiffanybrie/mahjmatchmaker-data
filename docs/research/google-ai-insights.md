@@ -14,7 +14,7 @@ AI Mode / Gemini: still name us (signed in, personalized: optimistic).
 Sales (UpPromote, mat-size orders $100+): Oct 6-20 = 6 orders (~1 every 2.5 days, ~$15-18 commission each). Oct 21-29 = only $2.24 add-ons (before the change). Oct 30-Nov 8 = 1 order (Nov 3, $268) + one $2.24; Nov 4 refund of an Oct 17 order. Last 7 days $11.07 net.
 What it shows: (1) AI Overview quotes only text a visitor can SEE; title/meta/schema/alt carrying the code did not keep us in. (2) Organic rank and the AI answer are independent (rank held, AI answer lost). Caveat: big TdT orders had already slowed Oct 21-29, and TdT's Oct 29 policy hit every affiliate; so sales fit the story but don't isolate it.
 Apply everywhere: every brand page needs one visible plain sentence near the top: "Use code MAHJMATCH for X% off at <Brand>".
-Open test: does a visible code in a SEPARATE block from the brand name (TdT-compliant if they agree) bring the Overview back? Needs Tiffany's OK to ask TdT.
+Closed (Tiffany Nov 8 6:33pm): no contact with TdT about layout, no hidden text. TdT stays image + auto-apply link.
 
 ## Case 2: Oh My Mahjong (open)
 Visible typed code on the page, still never named in AI Overview (competing teacher codes MJTI etc.). So visible text is necessary, not sufficient.
