@@ -34,9 +34,10 @@ python3 "$R/builder/fym_fix_nov06/sideb116.py" "$D" | tail -1
 python3 "$H/picks118.py" "$D" --report "$D/picks118.json"                # Tiffany's missed-mats round-1 yeses into m (+ locks)
 python3 "$R/builder/fym_apply_locks.py" "$D" | tail -2
 python3 "$H/tv118.py" "$D" --backs "$BK"
-for x in prices_v118.py tableview_v118.py; do                          # coordinator Nov 7: later 1.18 patches (prices from config/fym-prices-nov07.json; Table view usable mats/racks, Lotus Cove first), run after tv118 when present
+for x in prices_v118.py tableview_v118.py tableview_racks_v118.py; do                          # coordinator Nov 7: later 1.18 patches (prices from config/fym-prices-nov07.json; Table view usable mats/racks, Lotus Cove first), run after tv118 when present
   if [ -f "$H/$x" ]; then python3 "$H/$x" "$D" | tail -3; else echo "(not present yet: $x)"; fi
 done
 python3 "$H/price118.py" "$D"
 python3 "$H/zoomswipe_v118.py" "$D" | tail -1
+if [ -f "$H/doors_v118.py" ]; then python3 "$H/doors_v118.py" "$D" | tail -2; fi                  # doors patch (after zoomswipe), when present
 python3 "$H/release118.py" "$D"

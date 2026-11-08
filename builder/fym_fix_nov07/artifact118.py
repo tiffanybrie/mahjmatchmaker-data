@@ -76,7 +76,7 @@ tag = '<script src="b24v1.js">'; assert h.count(tag) == 1
 h = h.replace(tag, '<script>window.IMG=Object.assign(window.IMG||{},' + json.dumps(newth, separators=(',', ':')) + ');</script>' + tag)
 os.makedirs(OUT + '/mc', exist_ok=True)
 open(OUT + '/index.html', 'w').write(h)
-for s_ in ('price118.py', 'zoomswipe_v118.py', 'release118.py'):
+for s_ in [x for x in ('price118.py', 'zoomswipe_v118.py', 'tableview_v118.py', 'tableview_racks_v118.py', 'doors_v118.py', 'release118.py') if os.path.exists(H + '/' + x)]:  # code patches (tableview/doors patch render() in place)
     subprocess.run([sys.executable, H + '/' + s_, OUT + '/index.html'], check=True, capture_output=True)
 h = open(OUT + '/index.html').read()
 # pack: live mc/190.webp + the new chunks' photos

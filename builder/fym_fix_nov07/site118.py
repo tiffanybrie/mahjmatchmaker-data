@@ -50,6 +50,6 @@ j = h.index('const BACKG=') + 12; _, e = json.JSONDecoder().raw_decode(h[j:]); h
 tags = list(re.finditer(r'<script src="https://cdn\.jsdelivr\.net/gh/tiffanybrie/mahjmatchmaker-data@[0-9a-f]+/site-app/fym-v\d+/thumbs\d*\.js"></script>', h))
 last = tags[-1].group(0); rep(last, last + f'<script src="{CDN}{FC}/site-app/fym-v118/thumbs118.js"></script>')
 open(OUTD + '/index.html', 'w').write(h)
-for s_ in ('price118.py', 'zoomswipe_v118.py', 'release118.py'):
+for s_ in [x for x in ('price118.py', 'zoomswipe_v118.py', 'tableview_v118.py', 'tableview_racks_v118.py', 'doors_v118.py', 'release118.py') if os.path.exists(H + '/' + x)]:  # code patches (tableview/doors patch render() in place)
     subprocess.run([sys.executable, H + '/' + s_, OUTD + '/index.html'], check=True)
 print('site118: index', os.path.getsize(OUTD + '/index.html'), 'new chunks', NEWC)
