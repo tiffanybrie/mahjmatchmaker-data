@@ -926,21 +926,21 @@
     "purple",
     "dark"
    ],
-   "sunday-mahjong--rattan": [
-    "earthy"
-   ],
    "oh-my-mahjong--dapper-1-retired": [
     "earthy"
-   ],
-   "luxe-mahjong--the-polo-club": [
-    "dark",
-    "yellow"
    ],
    "tigre-de-tartan--estate-sale": [
     "red",
     "green",
     "florals",
     "brights"
+   ],
+   "luxe-mahjong--the-polo-club": [
+    "dark",
+    "yellow"
+   ],
+   "sunday-mahjong--rattan": [
+    "earthy"
    ]
   }
  },
@@ -1798,7 +1798,7 @@
   "earthy": {
    "primary": 116,
    "also": 143,
-   "accent": 132
+   "accent": 131
   },
   "dark": {
    "primary": 38,
@@ -1856,7 +1856,7 @@
   "blue": 557,
   "purple": 149,
   "neutral": 375,
-  "earthy": 391,
+  "earthy": 390,
   "dark": 216,
   "bw": 13,
   "simple": 205,
@@ -1878,7 +1878,7 @@
   "blue": 568,
   "purple": 152,
   "neutral": 380,
-  "earthy": 395,
+  "earthy": 394,
   "dark": 218,
   "bw": 13,
   "simple": 207,
