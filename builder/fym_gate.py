@@ -63,6 +63,7 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
     angled shots), 90 gallery sync (warn)
  158 (Nov 5, v115 QA) no visible mat photo beyond 2:1, no tile photo beyond 2.3:1 (strips / edge crops)
  159 (Nov 6) every mat/rack/tile link of a Shopify code partner auto-applies the code (/discount/<CODE>?redirect=...; config/autoapply-hosts.json), FYM + staged gallery
+ 164 (Nov 7, FYM 1.18) zoom swipe: a zoomed card still swipes past the photo edge / on a flick (builder/fym_fix_nov07/zoomswipe_v118.py; node test zoomswipe_check.js)
  159b (Nov 6) staged Mat Gallery stamped with the newest FYM version (data-fym); --release: the LIVE /mahjong-mats too (FAIL), else WARN
  100 (Oct 27, v101 = Version 1.5): missing partner mats from the last launch-watch sweep (config/partner-mat-sweep.json; no network)
  91-94 (Oct 26 night, v98 = Version 1.2): 94 PLM rack colours vs reference + locked approved Chartreuse/Dark Green; 95 card title = assigned s.tc; 96 names without stray quotes + Wren logo; 91 match card racks low + tight + equal length, stack photos big, off the mat's left (partner-graphics layout), 92 Mahjong Register single
@@ -1921,6 +1922,19 @@ try:
     for _k163, _v163 in _E163.items():
         if _k163 in M and (M[_k163].get('mf') or []) != _v163['mf']: F.append(f"[163] {_v163.get('name')}: build colours {M[_k163].get('mf')} != by-eye {_v163['mf']}")
 except Exception as _e: F.append(f"[163] colour eye-check did not run: {_e}")
+# [164] Nov 7 2026 (FYM 1.18; Tiffany 8:24pm "when mat is zoomed in you can't swipe right or left"): a ZOOMED card must still swipe.
+#       Static: zoomer() carries the v118 zoom-swipe handler (marker + edge-overflow + flick code). Behavioural: node runs the build's own
+#       zoomer() with fake pointer events (builder/fym_fix_nov07/zoomswipe_check.js): small drag pans, drag past the edge = X / heart,
+#       short overflow springs back, flick swipes + restores the pan, vertical/diagonal drags pan, locked cards only pan, unzoomed swipe works.
+#       Fix = python3 builder/fym_fix_nov07/zoomswipe_v118.py <build>.
+try:
+    _z164 = UI[UI.find('function zoomer('):UI.find('function bindCard(')]
+    for _n164, _s164 in (('marker', '/*v118 zoom swipe*/'), ('edge overflow', 'const ov=wx-z.x;'), ('flick', 'flick=Math.abs(v)>ZSW.v'), ('fly while zoomed', 'if(sw.ok()&&(far||flick))')):
+        if _s164 not in _z164: F.append(f"[164] zoom swipe: zoomer() is missing the {_n164} code (run builder/fym_fix_nov07/zoomswipe_v118.py)")
+    _r164 = subprocess.run(['node', REPO + 'builder/fym_fix_nov07/zoomswipe_check.js', B], capture_output=True, text=True, timeout=60)
+    _j164 = json.loads(_r164.stdout.strip().splitlines()[-1])
+    for _f164 in _j164.get('fails', []): F.append(f"[164] zoom swipe behaviour: {_f164}")
+except Exception as _e: F.append(f"[164] zoom-swipe check did not run: {_e}")
 # [165] Nov 7 2026 (Tiffany 8:13pm: "every tile set we bring in for an album must be FULLY built in Find Your Mat-ch BEFORE she reviews
 #       the album", Juniper's Table view said "Walls off: back color not confirmed yet"). Every album set (each config/colorcards.json
 #       'sets' key + each site/livepatch/*album*/ dir) must be mapped in config/album-fym-sets.json, and every mapped FYM set must be in
