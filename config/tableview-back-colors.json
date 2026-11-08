@@ -1440,8 +1440,101 @@
   "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/amahj-foundation-beginner.jpg; checked by eye as back | wall swatch)"
  },
  "middle-main-mahjong-peach-pine": {
-  "back": "#ec9a7f",
+  "back": "#ddaea1",
   "type": "solid",
   "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/middle-main-mahjong-peach-pine.jpg; checked by eye as back | wall swatch)"
+ },
+ "oh-my-mahjong-sunburst-debutante": {
+  "back": "#e7beb7",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/oh-my-mahjong-sunburst-debutante.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/oh-my-mahjong-sunburst-debutante.webp"
+ },
+ "oh-my-mahjong-cadet-debutante": {
+  "back": "#a9c7e7",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/oh-my-mahjong-cadet-debutante.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/oh-my-mahjong-cadet-debutante.webp"
+ },
+ "oh-my-mahjong-jardin-debutante": {
+  "back": "#bedeb2",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/oh-my-mahjong-jardin-debutante.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/oh-my-mahjong-jardin-debutante.webp"
+ },
+ "peace-love-mahjong-mod-french-blue": {
+  "back": "#acd7f5",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/peace-love-mahjong-mod-french-blue.jpg; checked by eye as back | wall swatch)"
+ },
+ "peace-love-mahjong-mod-chartreuse": {
+  "back": "#d1ef48",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/peace-love-mahjong-mod-chartreuse.jpg; checked by eye as back | wall swatch)"
+ },
+ "peace-love-mahjong-taylor-s-tiles": {
+  "back": "#e7caf0",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/peace-love-mahjong-taylor-s-tiles.jpg; checked by eye as back | wall swatch)"
+ },
+ "peace-love-mahjong-og-vibrant-vibes": {
+  "back": "#e1e4ea",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/peace-love-mahjong-og-vibrant-vibes.jpg; checked by eye as back | wall swatch)"
+ },
+ "tigre-de-tartan-house-hearts-warm-white-classic": {
+  "back": "#d59b7d",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/tigre-de-tartan-house-hearts-warm-white-classic.jpg; checked by eye as back | wall swatch)",
+  "sprite": "assets/table-view/backs/tigre-de-tartan-house-hearts-warm-white-classic-sprite.webp"
+ },
+ "tigre-de-tartan-house-tigers-oyster-classic": {
+  "back": "#7e654f",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/tigre-de-tartan-house-tigers-oyster-classic.jpg; checked by eye as back | wall swatch)",
+  "sprite": "assets/table-view/backs/tigre-de-tartan-house-tigers-oyster-classic-sprite.webp"
+ },
+ "middle-main-mahjong-barrier-island": {
+  "back": "#bbd1c8",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/middle-main-mahjong-barrier-island.jpg; checked by eye as back | wall swatch)"
+ },
+ "middle-main-mahjong-charleston": {
+  "back": "#f7f9fe",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/middle-main-mahjong-charleston.jpg; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-yellow-lilac-ocean-blue": {
+  "back": "#d2ab28",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/mahjong-studios-yellow-lilac-ocean-blue.jpg; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-rose-dragon": {
+  "back": "#c27ea1",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/mahjong-studios-rose-dragon.jpg; checked by eye as back | wall swatch)"
+ },
+ "amahj-garden-stamped": {
+  "back": "#fafbf6",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/amahj-garden-stamped.jpg; checked by eye as back | wall swatch)"
+ },
+ "mahj-pit-original-confetti-small": {
+  "back": "#948078",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/mahj-pit-original-confetti-small.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/mahj-pit-original-confetti-small.webp"
+ },
+ "mahj-mood-radiant-mood-collection-white-pearl": {
+  "back": "#c9d4d6",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/mahj-mood-radiant-mood-collection-white-pearl.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/mahj-mood-radiant-mood-collection-white-pearl.webp"
+ },
+ "mahj-pit-original-confetti-large": {
+  "back": "#948078",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/mahj-pit-original-confetti-large.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/mahj-pit-original-confetti-large.webp"
  }
 }

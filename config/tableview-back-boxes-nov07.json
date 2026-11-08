@@ -2879,7 +2879,8 @@
     0.165
    ],
    "kind": "sprite",
-   "img": "assets/table-view/back-photos/tigre-de-tartan-house-clovers-classic.jpg"
+   "img": "assets/table-view/back-photos/tigre-de-tartan-house-clovers-classic.jpg",
+   "note": "Pure White: FYM tile photo shows clear/white clover backs, matching the Pure White half of the brand comparison photo"
   },
   "amahj-original-stamped": {
    "name": "Original Stamped",
@@ -2909,21 +2910,224 @@
    "name": "Peach & Pine",
    "brand": "Middle & Main Mahjong",
    "box": [
-    0.62,
-    0.6,
-    0.8,
-    0.68
+    0.12,
+    0.33,
+    0.19,
+    0.37
    ],
    "kind": "solid",
    "img": "assets/table-view/back-photos/middle-main-mahjong-peach-pine.jpg"
-  }
- },
- "_needs_eye": {
+  },
+  "oh-my-mahjong-sunburst-debutante": {
+   "name": "Sunburst Debutante",
+   "brand": "Oh My Mahjong",
+   "box": [
+    0.52,
+    0.62,
+    0.68,
+    0.68
+   ],
+   "kind": "pattern",
+   "img": "assets/table-view/back-photos/oh-my-mahjong-sunburst-debutante.jpg"
+  },
+  "oh-my-mahjong-cadet-debutante": {
+   "name": "Cadet Debutante",
+   "brand": "Oh My Mahjong",
+   "box": [
+    0.57,
+    0.22,
+    0.7,
+    0.28
+   ],
+   "kind": "pattern",
+   "img": "assets/table-view/back-photos/oh-my-mahjong-cadet-debutante.jpg"
+  },
+  "oh-my-mahjong-jardin-debutante": {
+   "name": "Jardin Debutante",
+   "brand": "Oh My Mahjong",
+   "box": [
+    0.72,
+    0.5,
+    0.84,
+    0.545
+   ],
+   "kind": "pattern",
+   "img": "assets/table-view/back-photos/oh-my-mahjong-jardin-debutante.jpg"
+  },
+  "peace-love-mahjong-mod-french-blue": {
+   "name": "Mod French Blue",
+   "brand": "Peace Love Mahjong",
+   "box": [
+    0.74,
+    0.758,
+    0.762,
+    0.775
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/peace-love-mahjong-mod-french-blue.jpg"
+  },
+  "peace-love-mahjong-mod-chartreuse": {
+   "name": "Mod Chartreuse",
+   "brand": "Peace Love Mahjong",
+   "box": [
+    0.26,
+    0.7,
+    0.3,
+    0.73
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/peace-love-mahjong-mod-chartreuse.jpg"
+  },
+  "peace-love-mahjong-taylor-s-tiles": {
+   "name": "Taylor's Tiles",
+   "brand": "Peace Love Mahjong",
+   "box": [
+    0.801,
+    0.835,
+    0.817,
+    0.86
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/peace-love-mahjong-taylor-s-tiles.jpg"
+  },
+  "peace-love-mahjong-og-vibrant-vibes": {
+   "name": "OG Vibrant Vibes",
+   "brand": "Peace Love Mahjong",
+   "box": [
+    0.78,
+    0.75,
+    0.9,
+    0.83
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/peace-love-mahjong-og-vibrant-vibes.jpg"
+  },
+  "tigre-de-tartan-house-hearts-warm-white-classic": {
+   "name": "House Hearts Warm White",
+   "brand": "Tigre de Tartan",
+   "box": [
+    0.252,
+    0.105,
+    0.302,
+    0.158
+   ],
+   "kind": "sprite",
+   "img": "assets/table-view/back-photos/tigre-de-tartan-house-hearts-warm-white-classic.jpg"
+  },
+  "tigre-de-tartan-house-tigers-oyster-classic": {
+   "name": "House Tigers Oyster",
+   "brand": "Tigre de Tartan",
+   "box": [
+    0.3,
+    0.098,
+    0.343,
+    0.14
+   ],
+   "kind": "sprite",
+   "img": "assets/table-view/back-photos/tigre-de-tartan-house-tigers-oyster-classic.jpg"
+  },
+  "middle-main-mahjong-barrier-island": {
+   "name": "Barrier Island",
+   "brand": "Middle & Main Mahjong",
+   "box": [
+    0.25,
+    0.245,
+    0.275,
+    0.275
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/middle-main-mahjong-barrier-island.jpg"
+  },
+  "middle-main-mahjong-charleston": {
+   "name": "Charleston",
+   "brand": "Middle & Main Mahjong",
+   "box": [
+    0.64,
+    0.13,
+    0.72,
+    0.18
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/middle-main-mahjong-charleston.jpg"
+  },
+  "mahjong-studios-yellow-lilac-ocean-blue": {
+   "name": "Yellow Lilac Ocean Blue",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.13,
+    0.66,
+    0.27,
+    0.78
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/mahjong-studios-yellow-lilac-ocean-blue.jpg",
+   "note": "listing default colourway Butter Bloom (yellow); measured on a yellow back in the FYM tile photo"
+  },
+  "mahjong-studios-rose-dragon": {
+   "name": "Rose Dragon",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.895,
+    0.82,
+    0.945,
+    0.89
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/mahjong-studios-rose-dragon.jpg"
+  },
+  "amahj-garden-stamped": {
+   "name": "Garden Stamped",
+   "brand": "Amahj",
+   "box": [
+    0.39,
+    0.08,
+    0.43,
+    0.18
+   ],
+   "kind": "solid",
+   "img": "assets/table-view/back-photos/amahj-garden-stamped.jpg"
+  },
+  "mahj-pit-original-confetti-small": {
+   "name": "The Original Confetti (Small)",
+   "brand": "Mahj Pit",
+   "box": [
+    0.04,
+    0.06,
+    0.3,
+    0.45
+   ],
+   "kind": "pattern",
+   "img": "assets/table-view/back-photos/mahj-pit-original-confetti-small.jpg",
+   "note": "back = confetti glitter side (faces are dark blue); photo from the brand's Large listing, same Original Confetti tiles"
+  },
   "mahj-mood-radiant-mood-collection-white-pearl": {
    "name": "Radiant Mood Collection White Pearl",
    "brand": "Mahj Mood",
-   "why": "pearl-white pile; every clear patch has a face print, back not isolated"
+   "box": [
+    0.455,
+    0.36,
+    0.5,
+    0.39
+   ],
+   "kind": "pattern",
+   "img": "assets/table-view/back-photos/mahj-mood-radiant-mood-collection-white-pearl.jpg",
+   "note": "plain pearl backs in the brand's White Pearl Travel Tiles listing (same Radiant Mood White Pearl colourway)"
   },
+  "mahj-pit-original-confetti-large": {
+   "name": "The Original Confetti (Large)",
+   "brand": "Mahj Pit",
+   "box": [
+    0.04,
+    0.06,
+    0.3,
+    0.45
+   ],
+   "kind": "pattern",
+   "img": "assets/table-view/back-photos/mahj-pit-original-confetti-large.jpg",
+   "note": "wall of confetti backs behind a face-up joker"
+  }
+ },
+ "_needs_eye": {
   "amahj-white-signature": {
    "name": "White Signature",
    "brand": "Amahj",
@@ -2944,11 +3148,6 @@
    "brand": "Mahj Squad",
    "why": "faces only; tile bodies pink but no back shown"
   },
-  "amahj-garden-stamped": {
-   "name": "Garden Stamped",
-   "brand": "Amahj",
-   "why": "all tiles face up"
-  },
   "amahj-round-top-stamped": {
    "name": "Round Top Stamped",
    "brand": "Amahj",
@@ -2964,20 +3163,10 @@
    "brand": "Bird & Bamboo",
    "why": "all tiles face up"
   },
-  "mahjong-studios-yellow-lilac-ocean-blue": {
-   "name": "Yellow Lilac Ocean Blue",
-   "brand": "Mahjong Studios",
-   "why": "photo mixes 3 colourways (yellow, lilac, ocean blue)"
-  },
   "mahjong-studios-white-edit": {
    "name": "White Edit",
    "brand": "Mahjong Studios",
    "why": "all-white pile, no back identifiable"
-  },
-  "mahjong-studios-rose-dragon": {
-   "name": "Rose Dragon",
-   "brand": "Mahjong Studios",
-   "why": "2-colour tiles; back only seen edge-on"
   },
   "mahjong-studios-essential": {
    "name": "Essential",
@@ -3024,16 +3213,6 @@
    "brand": "Sunday Mahjong",
    "why": "no back visible"
   },
-  "tigre-de-tartan-house-hearts-warm-white-classic": {
-   "name": "House Hearts Warm White",
-   "brand": "Tigre de Tartan",
-   "why": "faces only"
-  },
-  "tigre-de-tartan-house-tigers-oyster-classic": {
-   "name": "House Tigers Oyster",
-   "brand": "Tigre de Tartan",
-   "why": "faces only (oyster pearl bodies)"
-  },
   "bam-let-s-mahjong-art-deco": {
    "name": "Art Deco",
    "brand": "Bam! Let's Mahjong",
@@ -3069,11 +3248,6 @@
    "brand": "Hip Hip Mahjong",
    "why": "no back visible"
   },
-  "middle-main-mahjong-barrier-island": {
-   "name": "Barrier Island",
-   "brand": "Middle & Main Mahjong",
-   "why": "faces grid only"
-  },
   "middle-main-mahjong-sunshine": {
    "name": "Sunshine",
    "brand": "Middle & Main Mahjong",
@@ -3082,26 +3256,6 @@
   "middle-main-mahjong-palmetto": {
    "name": "Palmetto",
    "brand": "Middle & Main Mahjong",
-   "why": "faces grid only"
-  },
-  "middle-main-mahjong-charleston": {
-   "name": "Charleston",
-   "brand": "Middle & Main Mahjong",
-   "why": "faces grid only"
-  },
-  "oh-my-mahjong-sunburst-debutante": {
-   "name": "Sunburst Debutante",
-   "brand": "Oh My Mahjong",
-   "why": "faces grid only"
-  },
-  "oh-my-mahjong-cadet-debutante": {
-   "name": "Cadet Debutante",
-   "brand": "Oh My Mahjong",
-   "why": "faces grid only"
-  },
-  "oh-my-mahjong-jardin-debutante": {
-   "name": "Jardin Debutante",
-   "brand": "Oh My Mahjong",
    "why": "faces grid only"
   },
   "virora-mahjong-flor-a": {
@@ -3124,26 +3278,6 @@
    "brand": "Bespoke Mahjong",
    "why": "faces only"
   },
-  "peace-love-mahjong-mod-french-blue": {
-   "name": "Mod French Blue",
-   "brand": "Peace Love Mahjong",
-   "why": "faces grid only"
-  },
-  "peace-love-mahjong-mod-chartreuse": {
-   "name": "Mod Chartreuse",
-   "brand": "Peace Love Mahjong",
-   "why": "faces grid only"
-  },
-  "peace-love-mahjong-og-vibrant-vibes": {
-   "name": "OG Vibrant Vibes",
-   "brand": "Peace Love Mahjong",
-   "why": "faces grid only"
-  },
-  "peace-love-mahjong-taylor-s-tiles": {
-   "name": "Taylor's Tiles",
-   "brand": "Peace Love Mahjong",
-   "why": "faces grid only"
-  },
   "amahj-on-the-water-signature": {
    "name": "On the Water Signature",
    "brand": "Amahj",
@@ -3158,16 +3292,6 @@
    "name": "Journey to the West",
    "brand": "YOLO Mahjong",
    "why": "brand says ivory marble-look backs, no back photo"
-  },
-  "mahj-pit-original-confetti-small": {
-   "name": "The Original Confetti (Small)",
-   "brand": "Mahj Pit",
-   "why": "unclear which side is the back (blue vs confetti)"
-  },
-  "mahj-pit-original-confetti-large": {
-   "name": "The Original Confetti (Large)",
-   "brand": "Mahj Pit",
-   "why": "unclear which side is the back (blue vs confetti)"
   },
   "mahj-pit-martha": {
    "name": "The Martha",
