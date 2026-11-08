@@ -1,5 +1,5 @@
 {
- "_note": "Catalog refresh Nov 08 13:41: ShopMy mat pins not yet in the gallery/FYM (incl. her Amazon pins), staged for the next FYM release by scripts/albumreview/catalog_refresh.py. Photo flags decide visibility at build time.",
+ "_note": "Her Amazon ShopMy pins found by the catalog refresh Nov 08 13:52: album candidates only. NOT staged for FYM (Amazon never auto-enters FYM; waiting on her call, Nov 8).",
  "mats": [
   {
    "key": "amazon.com/dp/B0H8PLLW27",
@@ -24,7 +24,7 @@
     "yellow": 0.4,
     "dark": 0.3
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96196014,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -53,7 +53,7 @@
     "blue": 0.1,
     "teal": 0.1
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96196096,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -82,7 +82,7 @@
     "orange": 0.6,
     "teal": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96196170,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -110,7 +110,7 @@
     "orange": 0.0,
     "pink": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96210384,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -132,7 +132,7 @@
     "neutral": 1.7,
     "teal": 0.1
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96210535,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -159,7 +159,7 @@
     "pink": 0.0,
     "teal": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96210704,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -188,7 +188,7 @@
     "dark": 0.1,
     "blue": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96210831,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -218,7 +218,7 @@
     "teal": 0.2,
     "purple": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96210981,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -248,7 +248,7 @@
     "earthy": 0.4,
     "purple": 0.1
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96211090,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -278,7 +278,7 @@
     "purple": 0.2,
     "dark": 0.1
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96211229,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -308,7 +308,7 @@
     "red": 0.4,
     "dark": 0.2
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96211335,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -336,7 +336,7 @@
     "yellow": 0.1,
     "dark": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96211453,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -363,7 +363,7 @@
     "pink": 0.1,
     "dark": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96211598,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -390,7 +390,7 @@
     "dark": 0.0,
     "pink": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96211720,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -420,7 +420,7 @@
     "purple": 0.0,
     "yellow": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96211852,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -441,7 +441,7 @@
     "blue": 22.1,
     "yellow": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96212194,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -468,7 +468,7 @@
     "pink": 0.1,
     "teal": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96212656,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -495,7 +495,7 @@
     "teal": 0.0,
     "yellow": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96212791,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -522,7 +522,7 @@
     "pink": 0.6,
     "yellow": 0.2
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96213166,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -550,7 +550,7 @@
     "yellow": 0.5,
     "teal": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96213291,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -575,7 +575,7 @@
     "brown": 0.0,
     "pink": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96213424,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -604,7 +604,7 @@
     "yellow": 0.3,
     "red": 0.1
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96213709,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -633,7 +633,7 @@
     "yellow": 0.4,
     "dark": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96213841,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -661,7 +661,7 @@
     "green": 0.2,
     "pink": 0.2
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96213996,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -688,7 +688,7 @@
     "teal": 0.1,
     "blue": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96214256,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -717,7 +717,7 @@
     "yellow": 0.3,
     "red": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96214366,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -746,7 +746,7 @@
     "orange": 0.1,
     "yellow": 0.1
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96214480,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -771,7 +771,7 @@
     "pink": 0.0,
     "yellow": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96214696,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -800,7 +800,7 @@
     "yellow": 0.3,
     "orange": 0.1
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96214854,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -828,7 +828,7 @@
     "earthy": 0.5,
     "red": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96215791,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -857,7 +857,7 @@
     "earthy": 0.2,
     "red": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96215914,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -887,7 +887,7 @@
     "teal": 0.2,
     "purple": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96216016,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -914,7 +914,7 @@
     "teal": 0.7,
     "pink": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96216110,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -944,7 +944,7 @@
     "teal": 0.4,
     "purple": 0.2
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96233460,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -970,7 +970,7 @@
     "orange": 0.6,
     "purple": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96234587,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -998,7 +998,7 @@
     "yellow": 0.9,
     "blue": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96237159,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1022,7 +1022,7 @@
     "teal": 0.0,
     "yellow": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 96237389,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1052,7 +1052,7 @@
     "brown": 0.0,
     "purple": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97609333,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1082,7 +1082,7 @@
     "blue": 0.1,
     "purple": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97609502,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1111,7 +1111,7 @@
     "blue": 0.7,
     "dark": 0.3
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97609805,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1141,7 +1141,7 @@
     "yellow": 0.6,
     "orange": 0.1
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97609985,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1170,7 +1170,7 @@
     "earthy": 0.3,
     "blue": 0.1
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97610188,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1198,7 +1198,7 @@
     "teal": 1.1,
     "blue": 0.1
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97610638,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1227,7 +1227,7 @@
     "dark": 0.1,
     "purple": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97638780,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1255,7 +1255,7 @@
     "teal": 0.1,
     "yellow": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97639136,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1284,7 +1284,7 @@
     "blue": 0.1,
     "pink": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97639622,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1312,7 +1312,7 @@
     "pink": 0.7,
     "blue": 0.6
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97639775,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1340,7 +1340,7 @@
     "pink": 0.9,
     "teal": 0.1
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97639950,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1369,7 +1369,7 @@
     "blue": 0.0,
     "teal": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97640123,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1398,7 +1398,7 @@
     "brown": 1.5,
     "dark": 0.8
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97640537,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1427,7 +1427,7 @@
     "red": 0.1,
     "purple": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97640747,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1457,7 +1457,7 @@
     "dark": 0.3,
     "purple": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97640938,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1486,7 +1486,7 @@
     "blue": 0.1,
     "dark": 0.1
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97641123,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1513,7 +1513,7 @@
     "dark": 0.4,
     "yellow": 0.1
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97641275,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1541,7 +1541,7 @@
     "teal": 0.1,
     "blue": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97641648,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1571,7 +1571,7 @@
     "purple": 0.2,
     "dark": 0.1
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97641830,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1601,7 +1601,7 @@
     "brown": 0.0,
     "purple": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97642042,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"
@@ -1631,7 +1631,7 @@
     "earthy": 0.5,
     "purple": 0.0
    },
-   "added_by": "catalog_refresh deco-mulberry 2026-11-08T13:41-05:00",
+   "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00",
    "shopmy_id": 97642223,
    "b": "Amazon",
    "note": "Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)"

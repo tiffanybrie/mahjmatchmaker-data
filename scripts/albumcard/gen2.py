@@ -79,7 +79,7 @@ def tlogo(b):
     if b not in TLOGO:
         f = RK.tile_logo(b); TLOGO[b] = uri(f, 'PNG', maxs=500) if f else None
     return TLOGO[b]
-jobs = []; missing = {}; over = {}
+jobs = []; missing = {}; over = {}; PROP = {}
 for c in spec['cards']:
     drawn = []
     labels = list(c['racks']) if 'mat_racks' in spec or 'mat_racks' in c else [l for l in c['racks'] if not l.startswith('Bird & Bamboo')] + [l for l in c['racks'] if l.startswith('Bird & Bamboo')] + c.get('bb', [])
@@ -94,6 +94,13 @@ for c in spec['cards']:
             if l in TL: dd['len'] = TL[l]; dd['body'] = _body(r[0])
             drawn.append(dd)  # card2: same angle + same length for every rack (Oct 15)
         else: missing.setdefault(c['slug'], []).append(l)
+    # Nov 8 1:50pm (Playbook step 8): racks on one card must look proportional. Warn when two drawn racks differ in true
+    # length by more than ~15%, or when a drawn rack has no known length (it would be drawn at the default size).
+    _ls = [(d['label'], d.get('len')) for d in drawn]
+    _kn = [x for x in _ls if x[1]]
+    if spec.get('true_len') and len(_ls) > 1:
+        if len(_kn) < len(_ls): PROP.setdefault(c['slug'], []).append('no known length: ' + ', '.join(l for l, v in _ls if not v))
+        if _kn and max(v for _, v in _kn) > 1.15 * min(v for _, v in _kn): PROP.setdefault(c['slug'], []).append('lengths ' + ', '.join(f'{l} {v}in' for l, v in _kn))
     dl = {d['label'] for d in drawn}
     ch = chart_for(c); other = []
     if ch is not None: chart, other = ch
@@ -117,3 +124,4 @@ print(len(jobs), 'cards ->', out)
 if missing: print('NO REAL PHOTO (left off the card):', json.dumps(missing, ensure_ascii=False))
 if over: print('OVER THE 4-RACK CAPACITY (left off the card):', json.dumps(over, ensure_ascii=False))
 json.dump({'no_real_photo': missing, 'over_capacity': over} if over else missing, open(os.path.join(out, '_missing_racks.json'), 'w'), indent=1, ensure_ascii=False)
+if PROP: print('WARNING (rack proportion, Playbook step 8): racks on these cards differ in length by >15% or have no known length; LOOK at the contact sheet:', json.dumps(PROP, ensure_ascii=False))

@@ -1,6 +1,7 @@
 {
  "_note": "deco-mulberry album DRAFT (Nov 7): Claude's own picks, Tiffany's Nov 7 7:03pm ask ('You take them, just like you did this one'). Groups in order; 'lowres' = best photo we have is under ~800px.",
  "groups": {
+  "stand": "Standouts: the six that look best together",
   "top": "Top three",
   "best": "Among the best",
   "teal": "Deep teal, so the berry pops",
@@ -11,7 +12,7 @@
  },
  "mats": [
   {
-   "group": "top",
+   "group": "stand",
    "name": "Viola",
    "brand": "Britt Mills",
    "img": "assets/colorcards/deco/mats/britt-mills-viola.jpg",
@@ -21,7 +22,7 @@
    "lowres": false
   },
   {
-   "group": "top",
+   "group": "stand",
    "name": "Caroline in Peacock",
    "brand": "Mahj & Vine",
    "img": "assets/colorcards/deco/mats/mahj-and-vine-caroline-in-peacock.jpg",
@@ -31,7 +32,7 @@
    "lowres": false
   },
   {
-   "group": "top",
+   "group": "stand",
    "name": "Deco Dragon (Lagoon)",
    "brand": "Bam Bird Boutique",
    "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-lagoon.jpg",
@@ -41,7 +42,7 @@
    "lowres": false
   },
   {
-   "group": "best",
+   "group": "stand",
    "name": "Wren",
    "brand": "Britt Mills",
    "img": "assets/colorcards/deco/mats/britt-mills-wren.jpg",
@@ -51,7 +52,18 @@
    "lowres": false
   },
   {
-   "group": "best",
+   "group": "stand",
+   "name": "Ocean Florals",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-ocean-florals.jpg",
+   "why": "A deep teal field like her bams, framed in berry-pink, coral and periwinkle blooms. Found in the Nov 8 catalog check (its new 'with instructions' version); the card uses the plain mat.",
+   "retired": false,
+   "fym": "letsbebesties.com/ocean-florals-mahjong-mat",
+   "lowres": false,
+   "catalog_check": "2026-11-08"
+  },
+  {
+   "group": "stand",
    "name": "Spring Blooms Premium",
    "brand": "Sunday Mahjong",
    "img": "assets/colorcards/deco/mats/sunday-mahjong-spring-blooms-premium.jpg",
@@ -159,17 +171,6 @@
    "retired": false,
    "fym": "letsbebesties.com/the-mariner-mahjong-mat",
    "lowres": false
-  },
-  {
-   "group": "teal",
-   "name": "Ocean Florals",
-   "brand": "Let's Be Besties",
-   "img": "assets/colorcards/deco/mats/lets-be-besties-ocean-florals.jpg",
-   "why": "A deep teal field like her bams, framed in berry-pink, coral and periwinkle blooms. Found in the Nov 8 catalog check (its new 'with instructions' version); the card uses the plain mat.",
-   "retired": false,
-   "fym": "letsbebesties.com/ocean-florals-mahjong-mat",
-   "lowres": false,
-   "catalog_check": "2026-11-08"
   },
   {
    "group": "berry",
@@ -341,7 +342,13 @@
    "retired": false,
    "fym": "letsbebesties.com/winter-jewel-neoprene-mahjong-mat",
    "lowres": false,
-   "holiday": true
+   "holiday": true,
+   "box": [
+    30,
+    150,
+    1020,
+    1080
+   ]
   },
   {
    "group": "holiday",
@@ -354,5 +361,6 @@
    "lowres": false,
    "holiday": true
   }
- ]
+ ],
+ "_order_nov08": "Standouts first (Playbook step 7, Tiffany Nov 8 1:46pm): colour theory carries the weight; no automatic TNT-first, sister mat may be #1 if truly best."
 }

@@ -201,14 +201,18 @@ async function flush(){if(writing||!dirty||!REF)return;writing=true;dirty=false;
   writing=false;if(dirty&&!readonly)flush()}
 async function connect(){
   let db=null;try{db=window.claude&&window.claude.use?await window.claude.use('db'):null}catch(e){db=null}
-  if(!db){status('Not saving: open this page signed in on claude.ai','err');return}
+  if(!db){status('Not saving: open this page signed in on claude.ai','err');legacyFaces();return}
   REF=db.doc('review/'+D.set);const to=setTimeout(()=>status('Still connecting…','err'),10000);
   try{const s=await REF.get();clearTimeout(to);
     if(s.exists){const d=s.data()||{};if(d.round===D.round){S=hydrate(d);renderAll();status('Your answers are loaded · saved','ok')}else status('Round '+D.round+': ready','ok')}
-    else status('Ready. Your taps save here','ok');
+    else{status('Ready. Your taps save here','ok');legacyFaces()}
     if(dirty)flush()}
   catch(e){clearTimeout(to);status('Couldn’t load saved answers. Reload to try again','err')}}
 
+function legacyFaces(){ // her face hearts saved on this page's earlier version (browser storage), carried over once
+  if(!D.legacyFaces)return;let a=null;try{a=JSON.parse(localStorage.getItem(D.legacyFaces)||'null')}catch(e){}
+  const fk=new Set(D.faces.flatMap(g=>g.items.map(i=>i.k)));if(!Array.isArray(a))return;a=a.filter(k=>fk.has(k));if(!a.length)return;
+  S.faces=a;renderFaces();$('#fcount').textContent+=' · your picks from the last version';save()}
 /* ---------- render ---------- */
 function renderRound(){if(!D.last)return;const l=D.last;$('#round').innerHTML=`<div class="round"><b>Round ${D.round}: what changed</b><ul>${(l.changes||[]).map(x=>`<li>${esc(x)}</li>`).join('')||'<li>No changes</li>'}</ul></div>`}
 function renderSteps(){$('#steps').innerHTML=D.steps.map(s=>`<li class="step"><span class="n">${s.n}</span><div class="t">${esc(s.name)} <span class="pill ${s.ok?'ok':'no'}">${s.ok?'Done':'Missing'}</span></div><p>${esc(s.txt)}</p>${s.img?`<img src="${s.img}" alt="${esc(s.name)}" data-z="${s.img}" loading="lazy">`:''}</li>`).join('')}

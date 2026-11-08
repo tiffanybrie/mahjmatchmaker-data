@@ -148,18 +148,18 @@ steps = [
  {'n': 4, 'name': 'Candidates pulled', 'ok': bool(pool.get('size') and ck.get('at')),
   'txt': (f"Catalog checked {CKT}: {len(ck.get('added', []))} new mats added ({ck.get('shopmy_new', 0)} from ShopMy, {ck.get('partner_new', 0)} from partner stores). " if ck.get('at') else 'Catalog not checked. ')
          + f"Pool of {pool.get('size')} mats ({pool.get('year_round', '?')} year-round, {pool.get('holiday', '?')} holiday in Find Your Mat-ch, plus the new ones). Sources: " + '; '.join(pool.get('sources', [])) + '.'},
- {'n': 5, 'name': 'By-sight check', 'ok': P['leftout'] > 0, 'txt': f"{P['leftout']} mats cut by eye. Each one is in Left out below with the reason."},
+ {'n': 5, 'name': 'By-sight check', 'ok': P['leftout'] > 0, 'txt': f"{P['leftout']} mats cut by eye. Each one is in Left out below with the reason. " + (rec.get('bysight') or {}).get('catalog_new', '')},
  {'n': 6, 'name': 'Holiday section', 'ok': bool(P['holiday']['n'] or P['holiday'].get('note')),
   'txt': f"{nhol} holiday cards. " + (P['holiday'].get('note') or '')},
- {'n': 7, 'name': 'Ranked', 'ok': True,
-  'txt': (f"{P['cards'].get('tnt', 0)} Tiles & Tablescapes recs lead the album. " if P['cards'].get('tnt') else '') + (rec.get('rank') or {}).get('note', 'Recs first, then your past pairings, then colour.')},
+ {'n': 7, 'name': 'Ordered', 'ok': True,
+  'txt': 'Standouts first: the 5-6 matches that look best together (the colour card top 3 come from them). Colour theory carries the weight; your past pairings and Tiles & Tablescapes recs add a little (' + str(P['cards'].get('tnt', 0)) + ' TNT recs, labelled, no automatic front spot). ' + (rec.get('rank') or {}).get('note', '')},
  {'n': 8, 'name': 'Cards built', 'ok': P['cards'].get('band') == 'PASS',
   'txt': f"{P['cards'].get('n')} match cards. Code band check: {P['cards'].get('band')} (every card with a partner piece says MAHJMATCH)."},
 ]
 rounds = rec.get('rounds', [])
 DATA = {'set': SET, 'name': rec['name'], 'brand': rec['brand'], 'round': len(rounds) + 1,
         'last': rounds[-1] if rounds else None, 'steps': steps, 'covers': covers, 'coverDefault': rec['covers'].get('default', 0),
-        'faces': fgroups, 'picks': picks, 'cards': cards, 'leftout': leftout,
+        'faces': fgroups, 'picks': picks, 'legacyFaces': rec.get('legacy_faces_key'), 'cards': cards, 'leftout': leftout,
         'groupsOrder': list(dict.fromkeys(c['g'] for c in cards if not c['hol']))}
 
 e = html.escape

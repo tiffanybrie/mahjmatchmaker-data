@@ -2,6 +2,7 @@
  "set": "Deco (Indigo)",
  "status": "DRAFT: Claude's own picks, pending Tiffany's review",
  "groups": {
+  "stand": "Standouts: the six that look best together",
   "top": "Top three",
   "best": "Among the best",
   "berry": "Berry + teal: her faces, on the mat",
@@ -13,7 +14,7 @@
  "cards": [
   {
    "order": 1,
-   "group": "top",
+   "group": "stand",
    "mat": "Peacock Garden",
    "brand": "Britt Mills",
    "retired_mat": false,
@@ -37,7 +38,7 @@
   },
   {
    "order": 2,
-   "group": "top",
+   "group": "stand",
    "mat": "Savannah",
    "brand": "Britt Mills",
    "retired_mat": false,
@@ -52,7 +53,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo Evergreen",
-    "Bird & Bamboo Jade"
+    "Bam Bird Boutique Olive"
    ],
    "why": "You put Indigo on the green mat in October. Deep green with pink and plum flowers: the navy backs stand out, and the pinks pick up her crak frames.",
    "fym": "brittmillsdesign.com/savannah-neoprene-mahjong-mat",
@@ -61,7 +62,7 @@
   },
   {
    "order": 3,
-   "group": "top",
+   "group": "stand",
    "mat": "Deco Dragon (Mulberry)",
    "brand": "Bam Bird Boutique",
    "retired_mat": false,
@@ -85,31 +86,7 @@
   },
   {
    "order": 4,
-   "group": "best",
-   "mat": "Grandmillennial Peony",
-   "brand": "Bougie Mahjong",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": false,
-   "file": "deco-indigo-mahjong-tiles-bougie-mahjong-grandmillennial-peony-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/deco/mats/bougie-mahjong-grandmillennial-peony.jpg",
-   "racks": [
-    "Bam Bird Boutique Lagoon Wood",
-    "Bam Bird Boutique Mulberry Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Dark Blue",
-    "Bird & Bamboo Magenta"
-   ],
-   "why": "A navy center with a pink frame, inside coral and pink peonies. Navy plus berry, at full strength.",
-   "fym": "bougiemahjong.com/grandmillennial-peony-mahjong-mat",
-   "lowres": false,
-   "caption_note": null
-  },
-  {
-   "order": 5,
-   "group": "best",
+   "group": "stand",
    "mat": "Caroline in Navy",
    "brand": "Mahj & Vine",
    "retired_mat": false,
@@ -132,8 +109,32 @@
    "caption_note": null
   },
   {
+   "order": 5,
+   "group": "stand",
+   "mat": "Grandmillennial Peony",
+   "brand": "Bougie Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "deco-indigo-mahjong-tiles-bougie-mahjong-grandmillennial-peony-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/deco/mats/bougie-mahjong-grandmillennial-peony.jpg",
+   "racks": [
+    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Mulberry Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Magenta"
+   ],
+   "why": "A navy center with a pink frame, inside coral and pink peonies. Navy plus berry, at full strength.",
+   "fym": "bougiemahjong.com/grandmillennial-peony-mahjong-mat",
+   "lowres": false,
+   "caption_note": null
+  },
+  {
    "order": 6,
-   "group": "best",
+   "group": "stand",
    "mat": "Crown Jewels",
    "brand": "Royal Mahjong Society",
    "retired_mat": false,
@@ -386,7 +387,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo True Black",
-    "Peace Love Mahjong Acrylic Burl"
+    "Bam Bird Boutique Walnut"
    ],
    "why": "Black with a gold deco frame. Simple and moody, and the gold frame matches the palm on her backs.",
    "fym": "mahjsquadshop.com/the-speakeasy-mat",
@@ -840,8 +841,8 @@
     "Bam Bird Boutique Mulberry Wood"
    ],
    "mat_racks": [
-    "Peace Love Mahjong Acrylic Burl",
-    "Bird & Bamboo Dark Teal"
+    "Bird & Bamboo Dark Teal",
+    "Bird & Bamboo Brick Red"
    ],
    "why": "Holiday: deep teal with a red, ivory and teal snowflake medallion.",
    "fym": "letsbebesties.com/winter-jewel-neoprene-mahjong-mat",

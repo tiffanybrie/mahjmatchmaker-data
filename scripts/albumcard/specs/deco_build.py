@@ -20,6 +20,7 @@ A = json.load(open(R + f'scripts/albumcard/specs/{KEY}_nov07.json'))
 CC = json.load(open(R + 'config/colorcards.json'))['sets'][KEY]
 TRACKS = CC['racks']
 INSET = f"assets/tiles/album/inset/deco-{KEY.split('-')[1]}-flowers.jpg"  # Nov 8: flower columns, not 9/joker
+BAMBIRD = {'Bam Bird Boutique Olive': '#4c5221', 'Bam Bird Boutique Walnut': '#8c5529'}  # measured from assets/racks/card PNGs
 SISTER = {'Deco Dragon (Mulberry)', 'Deco Dragon (Lagoon)', 'Deco Dragon (Indigo)', 'Deco Neoprene'}
 def flat(im):
     if im.mode in ('RGBA', 'LA', 'P'):
@@ -50,7 +51,9 @@ for c in A['mats']:
     nm, brand = c['name'], c['brand']
     src = Image.open(R + c['img']); m = flat(src).crop(tuple(c['box'])) if c.get('box') else crop(src)
     mr = []
-    for l in pick(m, exclude=TRACKS):
+    # Nov 8 1:50pm (Playbook step 8): the tile brand's own racks first. Bam Bird's other cut-out racks (Olive, Walnut, 19in like
+    # the set racks, so proportional) win when they match the mat; else Bird & Bamboo colours.
+    for l in pick(m, exclude=TRACKS, prefer=BAMBIRD):
         if l not in mr and len(mr) < 2: mr.append(l)
     fn = f"{KEY}-mahjong-tiles-{slug(brand)}-{slug(nm)}-mat.jpg"; n = len(cards) + 1
     code = footer(c); hol = bool(c.get('holiday'))

@@ -2,6 +2,7 @@
  "set": "Deco (Mulberry)",
  "status": "DRAFT: Claude's own picks, pending Tiffany's review",
  "groups": {
+  "stand": "Standouts: the six that look best together",
   "top": "Top three",
   "best": "Among the best",
   "teal": "Deep teal, so the berry pops",
@@ -13,7 +14,7 @@
  "cards": [
   {
    "order": 1,
-   "group": "top",
+   "group": "stand",
    "mat": "Viola",
    "brand": "Britt Mills",
    "retired_mat": false,
@@ -37,7 +38,7 @@
   },
   {
    "order": 2,
-   "group": "top",
+   "group": "stand",
    "mat": "Caroline in Peacock",
    "brand": "Mahj & Vine",
    "retired_mat": false,
@@ -61,7 +62,7 @@
   },
   {
    "order": 3,
-   "group": "top",
+   "group": "stand",
    "mat": "Deco Dragon (Lagoon)",
    "brand": "Bam Bird Boutique",
    "retired_mat": false,
@@ -85,7 +86,7 @@
   },
   {
    "order": 4,
-   "group": "best",
+   "group": "stand",
    "mat": "Wren",
    "brand": "Britt Mills",
    "retired_mat": false,
@@ -109,7 +110,31 @@
   },
   {
    "order": 5,
-   "group": "best",
+   "group": "stand",
+   "mat": "Ocean Florals",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "deco-mulberry-mahjong-tiles-lets-be-besties-ocean-florals-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/deco/mats/lets-be-besties-ocean-florals.jpg",
+   "racks": [
+    "Bam Bird Boutique Mulberry Wood",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Blackboard Black",
+    "Bird & Bamboo Brick Red"
+   ],
+   "why": "A deep teal field like her bams, framed in berry-pink, coral and periwinkle blooms. Found in the Nov 8 catalog check (its new 'with instructions' version); the card uses the plain mat.",
+   "fym": "letsbebesties.com/ocean-florals-mahjong-mat",
+   "lowres": false,
+   "caption_note": null
+  },
+  {
+   "order": 6,
+   "group": "stand",
    "mat": "Spring Blooms Premium",
    "brand": "Sunday Mahjong",
    "retired_mat": false,
@@ -132,7 +157,7 @@
    "caption_note": null
   },
   {
-   "order": 6,
+   "order": 7,
    "group": "best",
    "mat": "Tiger Fans",
    "brand": "Piper Chase Studios",
@@ -148,7 +173,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo Wine",
-    "Peace Love Mahjong Acrylic Burl"
+    "Bam Bird Boutique Walnut"
    ],
    "why": "Plum deco fans around a jewel-tone tiger tapestry. The fan shape is pure art deco, and the plum is her back. Sold on Etsy.",
    "fym": "www.etsy.com/listing/4553922554/tiger-fans",
@@ -156,7 +181,7 @@
    "caption_note": null
   },
   {
-   "order": 7,
+   "order": 8,
    "group": "best",
    "mat": "Peony Sociale Premium",
    "brand": "Mahjong Register",
@@ -180,7 +205,7 @@
    "caption_note": null
   },
   {
-   "order": 8,
+   "order": 9,
    "group": "teal",
    "mat": "Deco Neoprene",
    "brand": "Bam Bird Boutique",
@@ -203,7 +228,7 @@
    "caption_note": "Sister mat"
   },
   {
-   "order": 9,
+   "order": 10,
    "group": "teal",
    "mat": "Dark Teal Cocktail Hour",
    "brand": "Peace Love Mahjong",
@@ -226,7 +251,7 @@
    "caption_note": null
   },
   {
-   "order": 10,
+   "order": 11,
    "group": "teal",
    "mat": "Jade",
    "brand": "Oh My Mahjong",
@@ -250,7 +275,7 @@
    "caption_note": null
   },
   {
-   "order": 11,
+   "order": 12,
    "group": "teal",
    "mat": "Emerald Cove Mat",
    "brand": "Mahj Mood",
@@ -274,7 +299,7 @@
    "caption_note": null
   },
   {
-   "order": 12,
+   "order": 13,
    "group": "teal",
    "mat": "Evergreen",
    "brand": "That Mahjong Moment",
@@ -298,7 +323,7 @@
    "caption_note": null
   },
   {
-   "order": 13,
+   "order": 14,
    "group": "teal",
    "mat": "Year of the Snake",
    "brand": "Wren Mats",
@@ -322,7 +347,7 @@
    "caption_note": null
   },
   {
-   "order": 14,
+   "order": 15,
    "group": "teal",
    "mat": "Mahj In Bloom Mat",
    "brand": "Mahj Mood",
@@ -346,7 +371,7 @@
    "caption_note": null
   },
   {
-   "order": 15,
+   "order": 16,
    "group": "teal",
    "mat": "The Mariner",
    "brand": "Let's Be Besties",
@@ -370,7 +395,7 @@
    "caption_note": null
   },
   {
-   "order": 16,
+   "order": 17,
    "group": "berry",
    "mat": "Pretty in Plum Premium",
    "brand": "Mahjong Register",
@@ -394,7 +419,7 @@
    "caption_note": null
   },
   {
-   "order": 17,
+   "order": 18,
    "group": "berry",
    "mat": "Fall Fling Mat",
    "brand": "Mahj Mood",
@@ -418,7 +443,7 @@
    "caption_note": null
   },
   {
-   "order": 18,
+   "order": 19,
    "group": "berry",
    "mat": "Flourish Neoprene",
    "brand": "Britt Mills",
@@ -442,7 +467,7 @@
    "caption_note": null
   },
   {
-   "order": 19,
+   "order": 20,
    "group": "berry",
    "mat": "Regal Bloom Neoprene",
    "brand": "Britt Mills",
@@ -466,7 +491,7 @@
    "caption_note": null
   },
   {
-   "order": 20,
+   "order": 21,
    "group": "berry",
    "mat": "Mulberry and Sage",
    "brand": "Wren Mats",
@@ -490,7 +515,7 @@
    "caption_note": null
   },
   {
-   "order": 21,
+   "order": 22,
    "group": "berry",
    "mat": "Garden Party – Mulberry",
    "brand": "My Fair Mahjong",
@@ -514,7 +539,7 @@
    "caption_note": null
   },
   {
-   "order": 22,
+   "order": 23,
    "group": "berry",
    "mat": "YOTD Raspberry",
    "brand": "Bespoke Mahjong",
@@ -538,7 +563,7 @@
    "caption_note": null
   },
   {
-   "order": 23,
+   "order": 24,
    "group": "berry",
    "mat": "Burgundy Grove",
    "brand": "Anders Ruff",
@@ -561,7 +586,7 @@
    "caption_note": null
   },
   {
-   "order": 24,
+   "order": 25,
    "group": "jewel",
    "mat": "Gilded Peacock",
    "brand": "Bougie Mahjong",
@@ -585,7 +610,7 @@
    "caption_note": null
   },
   {
-   "order": 25,
+   "order": 26,
    "group": "jewel",
    "mat": "Hawthorne",
    "brand": "Oh My Mahjong",
@@ -609,7 +634,7 @@
    "caption_note": null
   },
   {
-   "order": 26,
+   "order": 27,
    "group": "jewel",
    "mat": "Crown Jewels",
    "brand": "Royal Mahjong Society",
@@ -632,7 +657,7 @@
    "caption_note": null
   },
   {
-   "order": 27,
+   "order": 28,
    "group": "jewel",
    "mat": "Peacock Flair",
    "brand": "Let's Be Besties",
@@ -656,7 +681,7 @@
    "caption_note": null
   },
   {
-   "order": 28,
+   "order": 29,
    "group": "jewel",
    "mat": "Purple & Aqua Marble",
    "brand": "Anders Ruff",
@@ -680,7 +705,7 @@
    "caption_note": null
   },
   {
-   "order": 29,
+   "order": 30,
    "group": "quiet",
    "mat": "Plum Scallop",
    "brand": "YOLO Mahjong",
@@ -703,7 +728,7 @@
    "caption_note": null
   },
   {
-   "order": 30,
+   "order": 31,
    "group": "quiet",
    "mat": "Petals After Dark",
    "brand": "Let's Be Besties",
@@ -727,7 +752,7 @@
    "caption_note": null
   },
   {
-   "order": 31,
+   "order": 32,
    "group": "holiday",
    "mat": "Poinsettia Party",
    "brand": "Soirée All Day",
@@ -751,7 +776,7 @@
    "caption_note": "Holiday match"
   },
   {
-   "order": 32,
+   "order": 33,
    "group": "holiday",
    "mat": "Winter Jewel",
    "brand": "Let's Be Besties",
@@ -766,8 +791,8 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Peace Love Mahjong Acrylic Burl",
-    "Bird & Bamboo Dark Teal"
+    "Bird & Bamboo Dark Teal",
+    "Bird & Bamboo Brick Red"
    ],
    "why": "Holiday: a deep teal ground like her bams with a jewel snowflake in berry, coral and gold. Teal across the wheel from her berry backs.",
    "fym": "letsbebesties.com/winter-jewel-neoprene-mahjong-mat",
@@ -775,7 +800,7 @@
    "caption_note": "Holiday match"
   },
   {
-   "order": 33,
+   "order": 34,
    "group": "holiday",
    "mat": "Yuletide",
    "brand": "Oh My Mahjong",

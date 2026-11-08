@@ -20,7 +20,10 @@ BBL = {k: _lab(v) for k, v in BB.items() if 'Metallic' not in k and k != 'Clear'
 EXTRA = {'Peace Love Mahjong Acrylic Burl': '#9b6a45'}
 BBL.update({k: _lab(v) for k, v in EXTRA.items()})
 
-def pick(im, exclude=(), k=6, maxn=2):
+def pick(im, exclude=(), k=6, maxn=2, prefer=None, prefer_de=12):
+    """prefer = {full rack label: hex} of the TILE BRAND's own racks (Playbook step 8, Tiffany Nov 8 1:50pm: the tile brand's
+    matching racks come before any other brand). A cluster whose nearest preferred rack is within prefer_de (CIEDE2000) takes it."""
+    PL = {n: _lab(h) for n, h in (prefer or {}).items() if n not in exclude}
     im = im.convert('RGB').copy(); im.thumbnail((220, 220))
     a = np.asarray(im).reshape(-1, 3) / 255.
     a = a[a.min(1) < .95]
@@ -36,9 +39,15 @@ def pick(im, exclude=(), k=6, maxn=2):
     col = [i for i in range(k) if ch[i] >= 12 and cnt[i] >= .06]
     order = sorted(col, key=lambda i: -cnt[i] * min(ch[i], 40)) or list(np.argsort(-cnt))
     for i in order:
+        if PL:
+            pn = min(PL, key=lambda n: deltaE_ciede2000(c[i], PL[n]))
+            if deltaE_ciede2000(c[i], PL[pn]) < prefer_de and pn not in out:
+                out.append(pn)
+                if len(out) >= maxn: break
+                continue
         n = min(cand, key=lambda n: deltaE_ciede2000(c[i], cand[n]))
         if n in out: continue
-        if out and deltaE_ciede2000(cand[n], cand[out[0]]) < 15: continue
+        if out and out[0] in cand and deltaE_ciede2000(cand[n], cand[out[0]]) < 15: continue
         out.append(n)
         if len(out) >= maxn: break
-    return [n if n in EXTRA else 'Bird & Bamboo ' + n for n in out]
+    return [n if (n in EXTRA or n in PL) else 'Bird & Bamboo ' + n for n in out]

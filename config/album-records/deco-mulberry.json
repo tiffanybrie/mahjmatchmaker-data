@@ -17,10 +17,11 @@
  "tile_photo": {
   "file": "assets/tiles/v92/bam-bird-boutique-deco-mulberry-split.jpg",
   "inset": "assets/tiles/album/inset/deco-mulberry-flowers.jpg",
-  "source": "Card inset = flower columns 3-4 from Bam Bird listing image 16 BamBird_Deco-15-2.jpg (variant_ids [], the faces tray; faces are the same on every colourway) | backs from the FYM faces|backs split (approved Oct 25). Mulberry-variant listing image: 8 BamBird_40K_and_Christmas_-83.jpg (variant_ids [51519563333941] = Mulberry / Lucite Display Box).",
+  "source": "Card inset = faces-tray columns 1-2 (1-2 dots, 1 bam crane + 2 bam, 1-2 craks, navy + gold iris) from Bam Bird listing image 16 BamBird_Deco-15-2.jpg (variant_ids [], the faces tray; faces are the same on every colourway) | backs from the FYM faces|backs split (approved Oct 25). Mulberry-variant listing image: 8 BamBird_40K_and_Christmas_-83.jpg (variant_ids [51519563333941] = Mulberry / Lucite Display Box).",
   "asked_at": "2026-11-08T13:44:26-05:00",
   "asked_by": "coordinator (Main chat), Nov 8 ~1:37pm, current inset photo",
-  "approved_at": null
+  "approved_at": "2026-11-08T13:47:00-05:00",
+  "approval_note": "approved with change: columns 1-2 + backs, Nov 8 1:47pm (\"do the 1, 2 columns and then the tile backs\")"
  },
  "colorcard_img": "assets/colorcards/deco-mulberry/00-deco-mulberry-mahjong-tiles-color-guide-mobile.jpg",
  "wheel_img": "assets/colorwheels/deco-mulberry-color-wheel.jpg",
@@ -2773,7 +2774,7 @@
   "note": "All 221 visible holiday mats looked at on one contact sheet next to the Mulberry tiles: 3 in (Poinsettia Party, Winter Jewel, Yuletide), 2 near misses in Left out."
  },
  "rank": {
-  "note": "No Tiles & Tablescapes or other-group recs for Mulberry, so her Oct 27 pairing (Viola) leads; the sister mat Deco Dragon (Lagoon) is #3, never #1."
+  "note": "Standouts: Viola, Caroline in Peacock, Deco Dragon (Lagoon), Wren, Ocean Florals, Spring Blooms (deep teal with berry/pink: her two colours). No TNT or other-group recs for Mulberry."
  },
  "rounds": [],
  "catalog_checked": {
@@ -2900,5 +2901,6 @@
    "config/partner-mat-sweep.json"
   ],
   "partner_swept_at": "2026-11-08T18:43:05+00:00"
- }
+ },
+ "review_url": "https://claude.ai/artifact/8V74MMkepN9TnVCF5cRNAw"
 }

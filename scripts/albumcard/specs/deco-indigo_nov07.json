@@ -1,6 +1,7 @@
 {
  "_note": "deco-indigo album DRAFT (Nov 7 late): Claude's own picks (coordinator 11:38pm). Holiday matches in their own section at the end.",
  "groups": {
+  "stand": "Standouts: the six that look best together",
   "top": "Top three",
   "best": "Among the best",
   "berry": "Berry + teal: her faces, on the mat",
@@ -11,7 +12,7 @@
  },
  "mats": [
   {
-   "group": "top",
+   "group": "stand",
    "name": "Peacock Garden",
    "brand": "Britt Mills",
    "img": "assets/colorcards/deco/mats/britt-mills-peacock-garden.jpg",
@@ -22,7 +23,7 @@
    "holiday": false
   },
   {
-   "group": "top",
+   "group": "stand",
    "name": "Savannah",
    "brand": "Britt Mills",
    "img": "assets/colorcards/deco/mats/britt-mills-savannah.jpg",
@@ -33,7 +34,7 @@
    "holiday": false
   },
   {
-   "group": "top",
+   "group": "stand",
    "name": "Deco Dragon (Mulberry)",
    "brand": "Bam Bird Boutique",
    "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-mulberry.jpg",
@@ -44,18 +45,7 @@
    "holiday": false
   },
   {
-   "group": "best",
-   "name": "Grandmillennial Peony",
-   "brand": "Bougie Mahjong",
-   "img": "assets/colorcards/deco/mats/bougie-mahjong-grandmillennial-peony.jpg",
-   "why": "A navy center with a pink frame, inside coral and pink peonies. Navy plus berry, at full strength.",
-   "retired": false,
-   "fym": "bougiemahjong.com/grandmillennial-peony-mahjong-mat",
-   "lowres": false,
-   "holiday": false
-  },
-  {
-   "group": "best",
+   "group": "stand",
    "name": "Caroline in Navy",
    "brand": "Mahj & Vine",
    "img": "assets/colorcards/deco/mats/mahj-and-vine-caroline-in-navy.jpg",
@@ -66,7 +56,18 @@
    "holiday": false
   },
   {
-   "group": "best",
+   "group": "stand",
+   "name": "Grandmillennial Peony",
+   "brand": "Bougie Mahjong",
+   "img": "assets/colorcards/deco/mats/bougie-mahjong-grandmillennial-peony.jpg",
+   "why": "A navy center with a pink frame, inside coral and pink peonies. Navy plus berry, at full strength.",
+   "retired": false,
+   "fym": "bougiemahjong.com/grandmillennial-peony-mahjong-mat",
+   "lowres": false,
+   "holiday": false
+  },
+  {
+   "group": "stand",
    "name": "Crown Jewels",
    "brand": "Royal Mahjong Society",
    "img": "assets/colorcards/deco/mats/royal-mahjong-society-crown-jewels.jpg",
@@ -393,7 +394,13 @@
    "retired": false,
    "fym": "letsbebesties.com/winter-jewel-neoprene-mahjong-mat",
    "lowres": false,
-   "holiday": true
+   "holiday": true,
+   "box": [
+    30,
+    150,
+    1020,
+    1080
+   ]
   }
  ]
 }
