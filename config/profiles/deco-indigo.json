@@ -1,0 +1,286 @@
+{
+ "brand": "Bam Bird Boutique",
+ "status": "The jazz-age girl",
+ "launch_line": "Sold out · restocking soon · Bam Bird Boutique",
+ "rack_natural": true,
+ "racks_hand": "both Bam Bird Boutique, same shape, picked for her",
+ "launch_photos": {
+  "hero": "assets/launches/bambird-deco-tile-set/13-deco-indigo-variant-photo.jpg",
+  "single": "assets/tiles/v92/bam-bird-boutique-deco-indigo-split.jpg",
+  "all": "assets/launches/bambird-deco-tile-set/16-faces-tray.jpg"
+ },
+ "_note": "Deco (Indigo) Tile Set Profile (doc 81), DRAFT Nov 7 late, built by Claude (coordinator 11:38pm: Tiffany asked for the third colourway). Top 3: Peacock Garden, Savannah (both her Oct 27 Indigo pairings), Deco Dragon (Mulberry) = sister mat #3, never the Indigo Dragon. Racks Bam Bird Lagoon Wood + Mulberry Wood. Indigo sold out at Bam Bird Nov 7. best_features = Claude's 4 PROPOSALS. PRONOUN: ask Tiffany; 'her' is the draft default.",
+ "key": "deco-indigo",
+ "name": "Deco (Indigo)",
+ "matches": 35,
+ "album": "https://www.mahjmatchmaker.com/deco-indigo-mahjong-tile-matches",
+ "profile_line": [
+  "Seeking: berry, teal or a little gold.",
+  "Must love a midnight garden."
+ ],
+ "profile_line_options": {
+  "A": [
+   "Seeking: berry, teal or a little gold.",
+   "Must love a midnight garden."
+  ],
+  "B": [
+   "Her type: anything but navy.",
+   "Gold accents a plus."
+  ],
+  "C": [
+   "Seeking: a green that can keep up",
+   "with a navy back."
+  ]
+ },
+ "swipe": {
+  "looking": "Anything but navy on navy",
+  "pills": [
+   "Midnight gardens",
+   "Velvet bags",
+   "Gold palms",
+   "Jazz clubs"
+  ],
+  "love": "Late dinners after the show",
+  "prompt_q": "Two truths and a lie",
+  "prompt_a": "I'm navy. I'm gold. I'm always in stock.",
+  "photo": "assets/tiles/v92/bam-bird-boutique-deco-indigo-split.jpg"
+ },
+ "her_colors": {
+  "backs": [
+   [
+    "INDIGO",
+    "#263a63",
+    "jewel-tone back"
+   ],
+   [
+    "GOLD FOIL",
+    "#c9a24a",
+    "deco palm"
+   ],
+   [
+    "IVORY",
+    "#f4efe6",
+    "face layer"
+   ]
+  ],
+  "faces": [
+   [
+    "Mulberry",
+    "#7c2b55"
+   ],
+   [
+    "Teal",
+    "#22939a"
+   ],
+   [
+    "Rose",
+    "#c47e68"
+   ],
+   [
+    "Gold",
+    "#d1ad5c"
+   ],
+   [
+    "Periwinkle",
+    "#7f9fd0"
+   ],
+   [
+    "Deep green",
+    "#1f4d3e"
+   ]
+  ],
+  "tone": "Deep jewel tones with gold: rich, not earthy.",
+  "supporting": [
+   [
+    "Mulberry",
+    "#7c2b55"
+   ],
+   [
+    "Teal",
+    "#22939a"
+   ],
+   [
+    "Rose",
+    "#c47e68"
+   ],
+   [
+    "Gold",
+    "#d1ad5c"
+   ],
+   [
+    "Periwinkle",
+    "#7f9fd0"
+   ],
+   [
+    "Deep green",
+    "#1f4d3e"
+   ],
+   [
+    "Navy",
+    "#2a3f7a"
+   ]
+  ],
+  "faces_photo": "assets/launches/bambird-deco-tile-set/16-faces-tray.jpg",
+  "faces_crop": [
+   110,
+   10,
+   1840,
+   1173
+  ],
+  "source": "Bam Bird Boutique listing photos: backs tray (img 07), faces tray (img 16), pile (img 14)",
+  "main_labels": [
+   "Indigo",
+   "Gold foil",
+   "Ivory"
+  ]
+ },
+ "layers": {
+  "_note": "Nov 7: Deco tiles are two layers (ivory face on a jewel-tone acrylic back with a gold-foil palm). Diagram = the approved faces|backs split photo (assets/tiles/v92), labels point at the back, the palm and the face.",
+  "img": "assets/tiles/backs/deco-indigo-layers-split-crop.jpg",
+  "labels": [
+   [
+    150,
+    40,
+    "Ivory face",
+    "#f4efe6"
+   ],
+   [
+    560,
+    212,
+    "Gold-foil palm",
+    "#c9a24a"
+   ],
+   [
+    625,
+    360,
+    "Indigo back",
+    "#263a63"
+   ]
+  ],
+  "wheel_notes": [
+   [
+    "Indigo",
+    "deep navy-blue (dark)"
+   ],
+   [
+    "Gold foil",
+    "warm gold"
+   ],
+   [
+    "Ivory",
+    "the face layer"
+   ],
+   [
+    "Mulberry + teal",
+    "her faces: around the wheel"
+   ]
+  ],
+  "label_y": [
+   380,
+   480,
+   580
+  ],
+  "wheel_legend": "Center = light. Outer ring = dark.<br>Middle ring = full, clear color."
+ },
+ "her_type": [
+  {
+   "label": "Navy + olive green",
+   "mat": "Peacock Garden",
+   "brand": "Britt Mills",
+   "chips": [
+    "#16274a",
+    "#7b8a2c"
+   ],
+   "why": "Your October Indigo pick: a navy center that holds her backs, inside an olive frame and a blue-and-cream paisley border. Navy plus a second color."
+  },
+  {
+   "label": "Deep green + berry",
+   "mat": "Savannah",
+   "brand": "Britt Mills",
+   "chips": [
+    "#1d4a33",
+    "#d98fb6"
+   ],
+   "why": "You put Indigo on the green mat in October: deep green with pink and plum florals, so the navy backs have something to stand against."
+  },
+  {
+   "label": "Her sister mat",
+   "mat": "Deco Dragon (Mulberry)",
+   "brand": "Bam Bird Boutique",
+   "chips": [
+    "#6e1640",
+    "#c9a24a"
+   ],
+   "why": "Bam Bird Boutique made the Deco Dragon mats for these tiles. Indigo looks best on a sister color, Mulberry."
+  }
+ ],
+ "dealbreaker": "Navy on navy and plain royal blue. Next to her deep indigo they just disappear. Give her berry, green or gold to play against.",
+ "racks": [
+  {
+   "name": "Bam Bird Boutique Lagoon Wood",
+   "why": "The teal from her bams and green dragon, in Bam Bird's own wood rack.",
+   "group": "color"
+  },
+  {
+   "name": "Bam Bird Boutique Mulberry Wood",
+   "why": "The mulberry from her crak frames and South wind.",
+   "group": "color"
+  }
+ ],
+ "first_dates": [
+  "Peacock Garden",
+  "Savannah",
+  "Deco Dragon (Mulberry)"
+ ],
+ "bio": "Midnight and gold. Navy backs, a mulberry heart and a lion on the joker.",
+ "best_features": {
+  "_status": "CLAUDE'S PROPOSAL, pending Tiffany's picks (never swap her picks later)",
+  "shop": "Shop Deco at Bam Bird Boutique",
+  "top": [
+   "The dragons",
+   [
+    "dragon-green",
+    "dragon-red"
+   ],
+   "A teal-framed dragon and her mulberry twin"
+  ],
+  "singles": [
+   [
+    "The crane",
+    "bam-1-crane",
+    "Her gold-winged<br>crane bird bam"
+   ],
+   [
+    "The iris",
+    "flower-iris-navy",
+    "A navy iris,<br>her back color in bloom"
+   ],
+   [
+    "The lion",
+    "joker-rose-lion",
+    "Her rose<br>lion joker"
+   ]
+  ]
+ },
+ "omm_launch": {
+  "pair": {
+   "mat": "Deco Dragon (Mulberry)",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-mulberry.jpg",
+   "together": "assets/launches/bambird-deco-tile-set/13-deco-indigo-variant-photo.jpg",
+   "together_fit": "cover",
+   "together_caption": "Indigo tiles in Bam Bird Boutique's own photo (Indigo / Lucite Display Box)",
+   "why": "Bam Bird Boutique made the Deco Dragon mats to go with these tiles. Indigo shines on a sister color: Mulberry or Lagoon, never navy on navy."
+  },
+  "sisters": [],
+  "strong_label": "Strong match potential"
+ },
+ "album_peek": [
+  "britt-mills-peacock-garden",
+  "britt-mills-savannah",
+  "bam-bird-boutique-deco-dragon-mulberry"
+ ],
+ "colors_line": "Indigo backs with a gold-foil deco palm, on an ivory face. Deep jewel tones, rich, not earthy.",
+ "layers_hand": "see the layers?<br>an ivory face on an Indigo back, gold palm on top.",
+ "faces_dir": "assets/tiles/faces/deco/clean/"
+}

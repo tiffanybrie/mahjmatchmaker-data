@@ -973,13 +973,13 @@
   },
   "deco-lagoon": {
    "name": "Deco (Lagoon)",
-   "col": "#0b5566",
+   "col": "#0a5560",
    "brand": "Bam Bird Boutique",
    "sub": "Lagoon teal backs with a gold-foil deco palm",
    "backs": [
     [
      "LAGOON",
-     "#0a4f5c",
+     "#0a4a56",
      "jewel-tone back"
     ],
     [
@@ -1031,7 +1031,7 @@
     "Bam Bird Boutique Lagoon Wood": "assets/racks/card/bam-bird-boutique-lagoon-wood.png",
     "Bam Bird Boutique Mulberry Wood": "assets/racks/card/bam-bird-boutique-mulberry-wood.png"
    },
-   "tile": "assets/tiles/album/deco-lagoon.jpg",
+   "tile": "assets/tiles/v92/bam-bird-boutique-deco-lagoon-split.jpg",
    "tag": [
     "Art deco after dark",
     "peacock winds, gold cranes & lions"
@@ -1068,7 +1068,8 @@
    },
    "mats_source": "Claude's own picks (Tiffany Nov 7 7:03pm: 'You take them, just like you did this one'), not her picks yet",
    "racks_source": "Claude's own picks: Bam Bird's own 19in wood racks, one per tile colour (Lagoon = backs, Mulberry = the crak frames), same shape so they lie the same",
-   "_nov07": "Colours measured from Bam Bird's Deco listing photos (backs tray img 07, faces tray img 16, pile img 14) and checked by eye. Bam Bird's own words: 'two jewel-toned colorways: Lagoon and Mulberry', 'inspired by the bold elegance of the Art Deco era'. Same faces on every colourway. Top 3: Reba #1 (her favourite Deco pairing Oct 27), Wren #2, Deco Dragon (Mulberry) #3 = Bam Bird's own sister mat (pair rule: never #1; her Oct 26 rule: Lagoon tiles on the MULBERRY Dragon, never Lagoon on Lagoon)."
+   "_nov07": "Colours measured from Bam Bird's Deco listing photos (backs tray img 07, faces tray img 16, pile img 14) and checked by eye. Bam Bird's own words: 'two jewel-toned colorways: Lagoon and Mulberry', 'inspired by the bold elegance of the Art Deco era'. Same faces on every colourway. Top 3: Reba #1 (her favourite Deco pairing Oct 27), Wren #2, Deco Dragon (Mulberry) #3 = Bam Bird's own sister mat (pair rule: never #1; her Oct 26 rule: Lagoon tiles on the MULBERRY Dragon, never Lagoon on Lagoon).",
+   "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 7 BamBird_40K_and_Christmas_-102.jpg (variant Lagoon / Lucite Display Box)"
   },
   "deco-mulberry": {
    "name": "Deco (Mulberry)",
@@ -1130,7 +1131,7 @@
     "Bam Bird Boutique Lagoon Wood": "assets/racks/card/bam-bird-boutique-lagoon-wood.png",
     "Bam Bird Boutique Mulberry Wood": "assets/racks/card/bam-bird-boutique-mulberry-wood.png"
    },
-   "tile": "assets/tiles/album/deco-mulberry.jpg",
+   "tile": "assets/tiles/v92/bam-bird-boutique-deco-mulberry-split.jpg",
    "tag": [
     "Art deco after dark",
     "berry backs, gold palms & lions"
@@ -1167,7 +1168,108 @@
    },
    "mats_source": "Claude's own picks (Tiffany Nov 7 7:03pm: 'You take them, just like you did this one'), not her picks yet",
    "racks_source": "Claude's own picks: Bam Bird's own 19in wood racks, Mulberry (backs) + Lagoon (the teal bams)",
-   "_nov07": "Same source photos as deco-lagoon. Top 3: Viola #1 (her Oct 27 Mulberry pairing), Caroline in Peacock #2, Deco Dragon (Lagoon) #3 = Bam Bird's own sister mat (never Mulberry on Mulberry)."
+   "_nov07": "Same source photos as deco-lagoon. Top 3: Viola #1 (her Oct 27 Mulberry pairing), Caroline in Peacock #2, Deco Dragon (Lagoon) #3 = Bam Bird's own sister mat (never Mulberry on Mulberry).",
+   "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 8 BamBird_40K_and_Christmas_-83.jpg (variant Mulberry / Lucite Display Box)"
+  },
+  "deco-indigo": {
+   "name": "Deco (Indigo)",
+   "col": "#253a66",
+   "brand": "Bam Bird Boutique",
+   "sub": "Indigo backs with a gold-foil deco palm",
+   "backs": [
+    [
+     "INDIGO",
+     "#263a63",
+     "jewel-tone back"
+    ],
+    [
+     "GOLD FOIL",
+     "#c9a24a",
+     "deco palm"
+    ],
+    [
+     "IVORY",
+     "#f4efe6",
+     "face layer"
+    ]
+   ],
+   "faces": [
+    [
+     "MULBERRY",
+     "#7c2b55"
+    ],
+    [
+     "TEAL",
+     "#22939a"
+    ],
+    [
+     "ROSE",
+     "#c47e68"
+    ],
+    [
+     "GOLD",
+     "#d1ad5c"
+    ],
+    [
+     "PERIWINKLE",
+     "#7f9fd0"
+    ],
+    [
+     "DEEP GREEN",
+     "#1f4d3e"
+    ],
+    [
+     "NAVY",
+     "#2a3f7a"
+    ]
+   ],
+   "racks": [
+    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Mulberry Wood"
+   ],
+   "rack_imgs": {
+    "Bam Bird Boutique Lagoon Wood": "assets/racks/card/bam-bird-boutique-lagoon-wood.png",
+    "Bam Bird Boutique Mulberry Wood": "assets/racks/card/bam-bird-boutique-mulberry-wood.png"
+   },
+   "tile": "assets/tiles/v92/bam-bird-boutique-deco-indigo-split.jpg",
+   "tag": [
+    "Art deco after dark",
+    "navy backs, gold palms & lions"
+   ],
+   "mats": [
+    "Peacock Garden",
+    "Savannah",
+    "Deco Dragon (Mulberry)"
+   ],
+   "mat_imgs": {
+    "Peacock Garden": "assets/colorcards/deco/mats/britt-mills-peacock-garden.jpg",
+    "Savannah": "assets/colorcards/deco/mats/britt-mills-savannah.jpg",
+    "Deco Dragon (Mulberry)": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-mulberry.jpg"
+   },
+   "shop": "Shop Deco · Bam Bird Boutique",
+   "shop_m": "Shop Deco · Bam Bird Boutique",
+   "profile_line": [
+    "Seeking: berry, teal or a little gold.",
+    "Must love a midnight garden."
+   ],
+   "profile_line_options": {
+    "A": [
+     "Seeking: berry, teal or a little gold.",
+     "Must love a midnight garden."
+    ],
+    "B": [
+     "Her type: anything but navy.",
+     "Gold accents a plus."
+    ],
+    "C": [
+     "Seeking: a green that can keep up",
+     "with a navy back."
+    ]
+   },
+   "mats_source": "Claude's own picks (Tiffany Nov 7 7:03pm: 'You take them, just like you did this one'), not her picks yet",
+   "racks_source": "Claude's own picks: Bam Bird's own 19in wood racks in Lagoon (her teal bams) + Mulberry (her crak frames), never Indigo on Indigo; Tiffany Oct 27 put Indigo with Bam Bird Lagoon racks",
+   "_nov07": "Indigo back = Bam Bird's Indigo showroom photo (#2a3b5e) + FYM table-view wall (#233862, config/tableview-back-colors.json bam-bird-boutique-deco-indigo), checked by eye against the bag pile (listing img 18). Faces = same as Lagoon/Mulberry. Top 3: Peacock Garden (her Oct 27 two-colour pick: Indigo/Peacock Garden), Savannah (her Oct 27 'put Indigo on the green mat'), Deco Dragon (Mulberry) #3 = sister mat (never #1, never the Indigo Dragon). Indigo SOLD OUT on bambirdboutique.com Nov 7 (all 3 variants).",
+   "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 1 BamBird_Deco-1-2.jpg (no variant attached; the navy box of the three stacked boxes; the only Indigo-variant images, 11 and 13, show bags or faces)"
   }
  },
  "_note_oct19_catchup": "Oct 19 catch-up: shangri-la, lilac-soiree, preppy-soiree, spring-love, sunday-tile-set got mat_imgs/rack_imgs and were rendered with the existing style. They use 'tag' (factual). When Tiffany approves the Papaya profile_line style, add profile_line to each set and re-run build.py <key>; nothing else changes."

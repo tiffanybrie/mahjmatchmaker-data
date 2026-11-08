@@ -5,8 +5,8 @@
  "rack_natural": true,
  "racks_hand": "both Bam Bird Boutique, same shape, picked for her",
  "launch_photos": {
-  "hero": "assets/launches/bambird-deco-tile-set/14-deco-two-bags-FULL.jpg",
-  "single": "assets/launches/bambird-deco-tile-set/04-deco-tile-set.jpg",
+  "hero": "assets/launches/bambird-deco-tile-set/08-deco-mulberry-variant-photo.jpg",
+  "single": "assets/tiles/v92/bam-bird-boutique-deco-mulberry-split.jpg",
   "all": "assets/launches/bambird-deco-tile-set/16-faces-tray.jpg"
  },
  "_note": "Deco (Mulberry) Tile Set Profile (doc 81), DRAFT Nov 7, built by Claude for Tiffany's review (her Nov 7 7:03pm: run it like Juniper). Colours from config/colorcards.json sets.deco-mulberry. Mats = Claude's top 3 (Viola #1 = her Oct 27 Mulberry pairing, Caroline in Peacock #2, Deco Dragon (Lagoon) #3 = Bam Bird's own sister mat, never #1 and never Mulberry on Mulberry). Racks = Bam Bird Mulberry Wood + Lagoon Wood (same 19in shape). best_features = Claude's 4 PROPOSALS until she picks. PRONOUN: brand guide s3 says ask Tiffany; 'her' is the draft default. Prompts are new (not Papaya's irrational fear, not Juniper's green flag).",
@@ -43,7 +43,7 @@
   "love": "Candlelit dinners",
   "prompt_q": "I'm weirdly attracted to",
   "prompt_a": "Gold accents. Every single time.",
-  "photo": "assets/tiles/album/deco-mulberry.jpg"
+  "photo": "assets/tiles/v92/bam-bird-boutique-deco-mulberry-split.jpg"
  },
  "her_colors": {
   "backs": [

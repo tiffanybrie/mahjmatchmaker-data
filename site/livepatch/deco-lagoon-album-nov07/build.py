@@ -14,7 +14,8 @@ e = html.escape
 P = json.load(open(R + f'config/profiles/{KEY}.json')); CC = json.load(open(R + 'config/colorcards.json'))['sets'][KEY]
 MANF = json.load(open(R + f'assets/cards/{KEY}/manifest.json')); MAN = MANF['cards']; GROUPS = MANF['groups']
 LO = json.load(open(R + 'scripts/albumcard/specs/deco_leftout_nov07.json'))[KEY]
-LAG = KEY == 'deco-lagoon'; COL = 'Lagoon' if LAG else 'Mulberry'; OTHER = 'Mulberry' if LAG else 'Lagoon'
+LAG = KEY == 'deco-lagoon'; IND = KEY == 'deco-indigo'; COL = {'deco-lagoon': 'Lagoon', 'deco-mulberry': 'Mulberry', 'deco-indigo': 'Indigo'}[KEY]; OTHER = 'Mulberry' if (LAG or IND) else 'Lagoon'
+QUEUE = IND or '--queue' in sys.argv  # Nov 7 late: ordering-queue page (drag / arrows to reorder, Out, Copy my order)
 F = 'assets/tiles/faces/deco/clean/'
 def src(p): USED.add(p); return CDN + p
 def img(p, alt, cls='', lazy=True):
@@ -24,7 +25,10 @@ CLAUDE = {  # Claude's 4 proposals (= config/profiles/<key>.json best_features)
  'dragon-red': "Pair them: the mulberry twin of the teal dragon.",
  'bam-1-crane': "The signature tile: a gold-winged crane with a teal crest, pure deco.",
 }
-if LAG:
+if IND:
+    CLAUDE.update({'flower-iris-navy': "A navy iris: her back color, in bloom on the face.",
+                   'joker-rose-lion': "The rose lion in teal stripes: two of her face colors, swapped."})
+elif LAG:
     CLAUDE.update({'wind-east': "A gold peacock feather: the gold palm on her back, on the face.",
                    'joker-teal-lion': "The deep green lion, framed in mulberry and gold stripes. The boldest tile in the set."})
 else:
@@ -51,25 +55,45 @@ for title, sub, items in G:
                   f'<button class="heart" aria-pressed="false" aria-label="Pick {e(name)}">&#9829;</button></figure>')
     faces += f'<h3 class="fg">{e(title)} <small>{e(sub)}</small></h3><div class="fgrid{" sm" if small else ""}">{cards}</div>'
 carousel = ''.join(f'<div class="slide">{img(f"assets/social/{KEY}-launch/intro/{i}.jpg", f"Intro carousel slide {i}")}<span>{i}</span></div>' for i in range(1, 8))
-N = len(MAN); mc, cur = '', None
+N = len(MAN); mc, cur = '', None; qmain, qhol = '', ''
 for c in MAN:
-    if c['group'] != cur:
+    if not QUEUE and c['group'] != cur:
         cur = c['group']; mc += f'<h3 class="fg">{e(GROUPS[cur])}</h3>'
     racks = ' · '.join(c['racks']); mr = ' · '.join(c['mat_racks'])
     notes = []
+    if QUEUE: notes.append(f'<span class=gt>{e(GROUPS[c["group"]])}</span>')
     if c['retired_mat']: notes.append('<span class=ret>Retired</span>')
     if c['caption_note'] and c['caption_note'] != 'Retired': notes.append(f'<span class=ret>{e(c["caption_note"])}</span>')
+    if not c.get('partner', True): notes.append('<span class=ret>Not a partner: no code</span>')
     if c['lowres']: notes.append('<span class=lr>Small brand photo</span>')
-    mc += (f'<article class="mcard">{img(f"assets/cards/{KEY}/" + c["file"], CC["name"] + " + " + c["mat"] + " match card")}'
-           f'<div class="mt"><p class="num">#{c["order"]}{" · " + " ".join(notes) if notes else ""}</p>'
+    ctl = ('<div class="qc"><button class="up" aria-label="Move up">&#8593; Up</button><button class="dn" aria-label="Move down">&#8595; Down</button><button class="out" aria-pressed="false">Out</button></div>') if QUEUE else ''
+    card = (f'<article class="mcard" data-mat="{e(c["mat"])} · {e(c["brand"])}">{img(f"assets/cards/{KEY}/" + c["file"], CC["name"] + " + " + c["mat"] + " match card")}'
+           f'<div class="mt"><p class="num"><span class="pos">#{c["order"]}</span>{" · " + " ".join(notes) if notes else ""}</p>'
            f'<h4>{e(c["mat"])}</h4><p class="bn">{e(c["brand"])}</p><p class="why">{e(c["why"])}</p>'
-           f'<p class="rk"><b>Match the tiles:</b> {e(racks)}<br><b>Match the mat:</b> {e(mr)}</p></div></article>')
+           f'<p class="rk"><b>Match the tiles:</b> {e(racks)}<br><b>Match the mat:</b> {e(mr)}</p>{ctl}</div></article>')
+    if QUEUE and c.get('holiday'): qhol += card
+    elif QUEUE: qmain += card
+    else: mc += card
+if QUEUE:
+    mc = f'<div class="q" id="q">{qmain}</div>' + (f'<h3 class="fg">{e(GROUPS.get("holiday", "Holiday"))} <small>Holiday matches, in their own section</small></h3><div class="q" id="qh">{qhol}</div>' if qhol else '')
 lo = ''
 for m in LO:
     lo += (f'<article class="lo"><div class="lop">{img(m["img"], m["name"])}<div class="ins">{img(CC["tile"], CC["name"] + " tiles")}</div></div>'
            f'<div class="mt"><h4>{e(m["name"])}</h4><p class="bn">{e(m["brand"])}{" · <span class=ret>Retired</span>" if m["retired"] else ""}</p><p class="why">{e(m["why"])}</p></div></article>')
 top3 = ', '.join(f'{m}' for m in P['first_dates'])
-if LAG:
+COVSRC = {'deco-lagoon': 'Photo: Bam Bird listing image 7 (BamBird_40K_and_Christmas_-102), the Lagoon / Lucite Display Box variant photo.',
+          'deco-mulberry': 'Photo: Bam Bird listing image 8 (BamBird_40K_and_Christmas_-83), the Mulberry / Lucite Display Box variant photo.',
+          'deco-indigo': 'Photo: Bam Bird listing image 1 (BamBird_Deco-1-2), the navy box of their three stacked Deco boxes. Their two Indigo-variant photos show the bag or the faces, so neither works as a backs-only cover.'}[KEY]
+QTXT = ('<b>Reorder them:</b> drag a card (desktop) or tap &uarr; Up / &darr; Down, tap <b>Out</b> to cut one, then tap <b>Copy my order</b> and paste it in the chat. Your order is saved on this phone. Holiday matches have their own section at the end. Non-partner mats say &ldquo;Not a partner: no code&rdquo; on the card.' if QUEUE else '')
+if IND:
+    THEORY = '''
+<p><b>Rich, not earthy.</b> Her back, Indigo, is a deep navy-blue under a glassy acrylic, with a gold-foil art deco palm on every tile. The faces are ivory with clear inks: mulberry, teal, rose, gold, periwinkle and deep green. Dark, but clean.</p>
+<p><b>A cool base, warm accents.</b> Indigo (220&deg;) is cool and dark. The gold foil (42&deg;) and rose crak frames (14&deg;) bring the warmth; mulberry (329&deg;) and teal (184&deg;) sit on either side of her on the wheel.</p>
+<p><b>Two-color, not tonal.</b> Navy is the easiest color to lose on a mat: navy on navy and royal blue make her backs disappear. She lights up with a second color: olive or deep green (Peacock Garden, Savannah), berry and pink (Caroline in Navy, Grandmillennial Peony), or gold (Crown Jewels, The Speakeasy).</p>
+<p><b>Light and dark.</b> Indigo sits near the dark rim of the wheel, so a light ivory or a bright center gives the most contrast; a dark mat needs a strong second color.</p>
+<p><b>Use with care:</b> plain navy and royal blue, brick and tomato reds (they fight her mulberry), and the Indigo Deco Dragon (navy on navy, your Oct 26 rule).</p>
+<p><b>Stock:</b> Deco (Indigo) is sold out on bambirdboutique.com (checked Nov 7, all three options). Bam Bird Boutique hasn&rsquo;t posted a date on the page; your Oct 28 note said mid to late November.</p>'''
+elif LAG:
     THEORY = f"""
 <p><b>Rich, not earthy.</b> Her back, Lagoon, is a deep jewel teal under a glassy acrylic, with a gold-foil art deco palm on every tile. The faces are ivory with clear inks: mulberry, rose, gold, teal, navy and periwinkle. Dark, but clean. She sits with the jewel-tone sets, not the earthy ones.</p>
 <p><b>A cool base, warm accents.</b> Lagoon (190&deg;) and navy (224&deg;) are cool. The warmth comes from the gold foil (42&deg;) and the rose crak frames (14&deg;). Her mulberry (329&deg;) is a cool, blue-leaning berry.</p>
@@ -130,6 +154,7 @@ h3.fg{{font:700 13px Bitter;letter-spacing:.16em;text-transform:uppercase;color:
 .mt{{padding:12px 14px 14px}}.mt h4{{font:400 24px/1.1 Caprasimo;margin:0;overflow-wrap:anywhere}}.num{{margin:0 0 4px;font:700 12px Bitter;letter-spacing:.12em;color:var(--muted)}}
 .ret,.lr{{background:var(--muted);color:var(--card);border-radius:999px;padding:1px 8px;font-size:11px;letter-spacing:.06em}}.lr{{background:#b07a1f}}
 .bn{{margin:2px 0 6px;color:var(--muted);font-weight:600}}.why{{margin:0 0 8px}}.rk{{margin:0;font-size:14px;color:var(--muted)}}
+.qc{{display:flex;gap:8px;margin-top:10px}}.qc button{{flex:1;min-height:44px;border-radius:999px;border:2px solid var(--ink);background:transparent;color:var(--ink);font:700 14px Bitter}}.qc .out[aria-pressed="true"]{{background:var(--pink);border-color:var(--pink);color:#fff}}.mcard.isout{{opacity:.45}}.mcard.drag{{outline:3px dashed var(--pink)}}.gt{{background:var(--acc);color:#fff;border-radius:999px;padding:1px 8px;font-size:11px}}
 .lop{{position:relative}}.lop>img{{width:100%;aspect-ratio:1;object-fit:cover;display:block;cursor:zoom-in}}
 .ins{{position:absolute;right:8px;bottom:8px;width:38%;border:4px solid #fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.25)}}.ins img{{width:100%;display:block;cursor:zoom-in}}
 .logrid{{display:grid;grid-template-columns:1fr;gap:0 14px}}@media(min-width:640px){{.logrid{{grid-template-columns:1fr 1fr}}}}
@@ -137,19 +162,19 @@ h3.fg{{font:700 13px Bitter;letter-spacing:.16em;text-transform:uppercase;color:
 .lb{{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:9;padding:12px}}.lb.on{{display:flex}}.lb img{{max-width:100%;max-height:100%;object-fit:contain}}
 ul{{padding-left:20px;margin:6px 0}}li{{margin:3px 0}}
 </style></head><body><div class="wrap">
-<p class="kick">Bam Bird Boutique · in stock now</p>
+<p class="kick">Bam Bird Boutique · {"sold out, restock expected mid/late November" if IND else "in stock now"}</p>
 <h1>{e(CC['name'])}, the full album set</h1>
 <p class="lede">Everything for her album in one place, built the way we did Juniper. The one question for you is her <b>best features</b>: pick 4 faces below. Everything else is a draft until you OK the match order.</p>
-<nav><a href="#faces">1 · Pick her faces</a><a href="#cover">2 · Cover</a><a href="#colors">3 · Colors + theory</a><a href="#profile">4 · Profile + carousel</a><a href="#cards">5 · {N} match cards</a><a href="#left">6 · Left out</a></nav>
-<div class="note"><p><b>How I matched her.</b> Two-color matches first: a mat that carries her {COL} backs <i>and</i> a second color from her faces. Her top 3: {e(top3)}. {('Reba is your favorite Deco pairing from October.' if LAG else 'Viola is the Mulberry pairing you liked in October.')} Bam Bird Boutique&rsquo;s own Deco Dragon mat is in the top 3, not #1, and only in her sister color ({OTHER}), never {COL} on {COL}.</p>
-<p>Racks on every card: Bam Bird Boutique&rsquo;s own 19&Prime; wood racks in {COL} and {OTHER}, same shape so they lie the same, drawn at their real length. I looked at all {N} mats next to her tiles; the ones I passed on are at the bottom with the reason.</p></div>
+<nav><a href="#faces">1 · Pick her faces</a><a href="#cover">2 · Cover</a><a href="#colors">3 · Colors + theory</a><a href="#profile">4 · Profile + carousel</a><a href="#cards">5 · {N} match cards{' (reorder)' if QUEUE else ''}</a><a href="#left">6 · Left out</a></nav>
+<div class="note"><p><b>How I matched her.</b> Two-color matches first: a mat that carries her {COL} backs <i>and</i> a second color from her faces. Her top 3: {e(top3)}. {('Reba is your favorite Deco pairing from October.' if LAG else ('Peacock Garden and Savannah are the two you put Indigo on in October.' if IND else 'Viola is the Mulberry pairing you liked in October.'))} Bam Bird Boutique&rsquo;s own Deco Dragon mat is in the top 3, not #1, and only in her sister color ({OTHER}), never {COL} on {COL}.</p>
+<p>Racks on every card: Bam Bird Boutique&rsquo;s own 19&Prime; wood racks in {('Lagoon and Mulberry (never navy on navy; you paired Indigo with the Lagoon racks in October)' if IND else COL + ' and ' + OTHER)}, same shape so they lie the same, drawn at their real length. I looked at all {N} mats next to her tiles; the ones I passed on are at the bottom with the reason.</p></div>
 
 <h2 id="faces">Pick her 4 best features</h2>
-<p class="lede">Every Deco colorway has the same faces, so your picks can carry over to both albums if you like. Tap the heart on up to 4 (the two dragons can count as one pick, as a pair). Green border = Claude&rsquo;s pick. Tap a tile to zoom. Then tap <b>Copy my picks</b> and paste it in the chat. Your picks are final: they never get swapped later.</p>
+<p class="lede">Every Deco colorway has the same faces, so your picks can carry over to all three albums if you like. Tap the heart on up to 4 (the two dragons can count as one pick, as a pair). Green border = Claude&rsquo;s pick. Tap a tile to zoom. Then tap <b>Copy my picks</b> and paste it in the chat. Your picks are final: they never get swapped later.</p>
 {faces}
 
 <h2 id="cover">Album cover</h2>
-<p class="lede">Same style as Juniper and the other covers: her tile pile from Bam Bird Boutique&rsquo;s photo, a {COL.lower()} panel, the white Bam Bird Boutique logo, and the frame with the double white lines. Bam Bird has no loose pile shot, so the pile is the tiles in their velvet bag (a little lining shows at the edges).</p>
+<p class="lede">Same style as Juniper and the other covers: a backs-only photo of her tiles in Bam Bird Boutique&rsquo;s lucite box (no bag, no faces), a {COL.lower()} panel, the white Bam Bird Boutique logo, and the frame with the double white lines. {COVSRC}</p>
 {img(f'assets/covers/albums/00-{KEY}-mahjong-tiles-cover.jpg', CC['name'] + ' album cover', 'big', False)}
 
 <h2 id="colors">Her colors + color theory</h2>
@@ -157,19 +182,19 @@ ul{{padding-left:20px;margin:6px 0}}li{{margin:3px 0}}
 <div class="note">{THEORY}<p><b>In Bam Bird Boutique&rsquo;s words:</b> &ldquo;two jewel-toned colorways: Lagoon and Mulberry&rdquo;, &ldquo;inspired by the bold elegance of the Art Deco era.&rdquo;</p></div>
 
 <h2 id="profile">Dating profile + intro carousel <span class="draft">DRAFT</span></h2>
-<p class="lede">Doc 81 format. Line: &ldquo;{e(P['launch_line'])}&rdquo;. Top 3: {e(top3)}. New prompt: &ldquo;{e(P['swipe']['prompt_q'])}: {e(P['swipe']['prompt_a'])}&rdquo; (not used on any earlier album). Slide 4 shows Claude&rsquo;s 4 faces until your picks go in. Slide 6 uses Bam Bird Boutique&rsquo;s own photo of {('Lagoon tiles on the Indigo Deco Dragon (they have no photo of Lagoon on the Mulberry Dragon)' if LAG else 'Mulberry tiles on the Lagoon Deco Dragon')}.</p>
+<p class="lede">Doc 81 format. Line: &ldquo;{e(P['launch_line'])}&rdquo;. Top 3: {e(top3)}. New prompt: &ldquo;{e(P['swipe']['prompt_q'])}: {e(P['swipe']['prompt_a'])}&rdquo; (not used on any earlier album). Slide 4 shows Claude&rsquo;s 4 faces until your picks go in. Slide 6 uses Bam Bird Boutique&rsquo;s own photo of {('Lagoon tiles on the Indigo Deco Dragon (they have no photo of Lagoon on the Mulberry Dragon)' if LAG else ('Indigo tiles in their lucite box (no photo of Indigo on a sister Dragon mat exists)' if IND else 'Mulberry tiles on the Lagoon Deco Dragon'))}.</p>
 <div class="two">{img(f'assets/colorcards/{KEY}/00-{KEY}-mahjong-tiles-profile-d-story.jpg', CC['name'] + ' dating profile story', 'big')}{img(f'assets/social/{KEY}-launch/{KEY}-favorite-tiles-DRAFT.jpg', 'Her best features draft graphic', 'big')}</div>
 <p class="lede">Intro carousel, 7 slides (swipe):</p>
 <div class="car">{carousel}</div>
 
 <h2 id="cards">{N} match cards <span class="draft">DRAFT ORDER</span></h2>
-<p class="lede">Claude&rsquo;s order, best first. Every card shows the mat with her tile pile. Full mat and brand names under each card. &ldquo;Small brand photo&rdquo; = the brand&rsquo;s best photo is small, so that card is a bit soft.</p>
+<p class="lede">Claude&rsquo;s order, best first. Every card shows the mat with her tiles, in the same faces|backs photo as Find Your Mat-ch. {QTXT} Full mat and brand names under each card. &ldquo;Small brand photo&rdquo; = the brand&rsquo;s best photo is small, so that card is a bit soft.</p>
 {mc}
 <h2 id="left">Left out ({len(LO)}), and why</h2>
 <p class="lede">Mats I looked at next to her tiles and passed on. Tap one to zoom; if you want any back in, say so in the chat.</p>
 <div class="logrid">{lo}</div>
 </div>
-<div class="bar"><span id="cnt">Your picks: 0 of 4</span><button id="copy">Copy my picks</button></div>
+<div class="bar"><span id="cnt">Your picks: 0 of 4</span><button id="copy">Copy my picks</button>{'<button id="copyo">Copy my order</button>' if QUEUE else ''}</div>
 <div class="lb" id="lb"><img alt=""></div>
 <script>
 (function(){{
@@ -190,6 +215,25 @@ ul{{padding-left:20px;margin:6px 0}}li{{margin:3px 0}}
  document.addEventListener('click',function(ev){{var t=ev.target;if(t.matches&&t.matches('img[data-zoom]')){{li.src=t.src;li.alt=t.alt;lb.classList.add('on')}}}});
  lb.addEventListener('click',function(){{lb.classList.remove('on')}});
  render();
+ var Q=[].slice.call(document.querySelectorAll('.q'));if(Q.length){{
+  var OK='{KEY}-order';
+  function cards(){{return [].slice.call(document.querySelectorAll('.q .mcard'))}}
+  function renum(){{var n=0;cards().forEach(function(c){{if(!c.classList.contains('isout'))n++;c.querySelector('.pos').textContent=c.classList.contains('isout')?'Out':'#'+n}});
+   try{{localStorage.setItem(OK,JSON.stringify(cards().map(function(c){{return [c.parentNode.id,c.dataset.mat,c.classList.contains('isout')]}})))}}catch(e){{}} }}
+  try{{var sv=JSON.parse(localStorage.getItem(OK)||'null');if(sv)sv.forEach(function(r){{var c=cards().filter(function(x){{return x.dataset.mat===r[1]}})[0],box=document.getElementById(r[0]);if(c&&box){{box.appendChild(c);if(r[2]){{c.classList.add('isout');c.querySelector('.out').setAttribute('aria-pressed','true')}}}}}})}}catch(e){{}}
+  cards().forEach(function(c){{c.setAttribute('draggable','true');
+   c.querySelector('.up').onclick=function(){{var p=c.previousElementSibling;if(p)c.parentNode.insertBefore(c,p);renum();c.scrollIntoView({{block:'center'}})}};
+   c.querySelector('.dn').onclick=function(){{var n=c.nextElementSibling;if(n)c.parentNode.insertBefore(n,c);renum();c.scrollIntoView({{block:'center'}})}};
+   c.querySelector('.out').onclick=function(){{var o=c.classList.toggle('isout');this.setAttribute('aria-pressed',o);renum()}};
+   c.addEventListener('dragstart',function(ev){{c.classList.add('drag');ev.dataTransfer.effectAllowed='move';try{{ev.dataTransfer.setData('text/plain','x')}}catch(e){{}}}});
+   c.addEventListener('dragend',function(){{c.classList.remove('drag');renum()}});
+   c.addEventListener('dragover',function(ev){{var d=document.querySelector('.mcard.drag');if(!d||d===c||d.parentNode!==c.parentNode)return;ev.preventDefault();var r=c.getBoundingClientRect();c.parentNode.insertBefore(d,ev.clientY<r.top+r.height/2?c:c.nextSibling)}});
+  }});
+  renum();
+  document.getElementById('copyo').addEventListener('click',function(){{var n=0,out=[],t='{e(CC['name'])} order: '+cards().filter(function(c){{if(c.classList.contains('isout')){{out.push(c.dataset.mat);return false}}return true}}).map(function(c){{return (++n)+'. '+c.dataset.mat}}).join(' | ')+(out.length?' || OUT: '+out.join(' | '):'');
+   var b=this,done=function(){{b.textContent='Copied!';setTimeout(function(){{b.textContent='Copy my order'}},1500)}};
+   if(navigator.clipboard)navigator.clipboard.writeText(t).then(done,function(){{prompt('Copy this:',t)}});else prompt('Copy this:',t)}});
+ }}
 }})();
 </script></body></html>"""
 HTML = HTML.replace('colour', 'color')
