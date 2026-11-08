@@ -205,7 +205,7 @@ def main():
                            'staged' if (st and not f) else                    # in a pending spec, waiting for the next FYM build
                            'held-gallery' if (f and held and not g) else       # gallery photo hold (config/mat-gallery-photo-holds.json)
                            'gallery-next-sync' if (f and not g and not fm.get('hid')) else  # visible in FYM; gallery_sync.py adds it at the next release
-                           'amazon-her-pick' if amazon else                    # Amazon mats never auto-enter FYM (Tiffany Oct 26 11:06)
+                           # (Amazon pins are no longer 'her pick': Tiffany Nov 8 2:08pm "if it's in ShopMy, bring it in")
                            'missing')
             rows.append(r)
     from collections import Counter, defaultdict

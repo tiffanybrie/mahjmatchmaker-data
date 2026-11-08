@@ -1,5 +1,5 @@
 {
- "_about": "scripts/checks/shopmy_sync_check.py: ShopMy pins that are decided (not a mat / bundle / dead / her call) or are the same product as an FYM mat under another link. pin id -> reason. Add a line here (with the reason) instead of ignoring a FAIL. Amazon pins are never listed: they show as 'amazon: her pick' (Amazon mats never auto-enter FYM, Tiffany Oct 26 11:06).",
+ "_about": "scripts/checks/shopmy_sync_check.py: ShopMy pins that are decided (not a mat / bundle / dead / her call) or are the same product as an FYM mat under another link. pin id -> reason. Add a line here (with the reason) instead of ignoring a FAIL. Amazon pins are treated like every other ShopMy mat (Tiffany Nov 8 2:08pm: \"if it's in ShopMy, bring it in\").",
  "pins": {
   "95958505": {
    "kind": "not-a-mat",
