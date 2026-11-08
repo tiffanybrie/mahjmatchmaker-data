@@ -5,6 +5,7 @@ Why: launches like Cabana Club (CMC) and Bam Bird's MCM Olive restock were misse
 
 ## How to resume (any chat or scheduled task)
 1. Server-side signup does NOT work (Nov 6: every Shopify /contact POST returned 403). This is a Chrome job: one driver at a time, close your tab.
+NOTE 2026-11-08: automated Chrome submits on Shopify footer forms (Amahj, Bam!, Mahj Mood) silently fail (Shopify bot protection); only popups (Klaviyo etc.) have worked. Remaining TODO rows: try only if a popup appears; otherwise it is a 10-second job for Tiffany on her phone.
 2. For each row marked TODO: open the store homepage, use the footer "Subscribe / Join our list" email box (or the popup), enter mahjmatchmaker@gmail.com, submit. Decline SMS steps. If a captcha appears, stop on that brand (never solve captchas) and mark "captcha: Tiffany 10s".
 3. Mark the row `signed up <date>`; then within 1 day check Gmail (from:<domain>) for a welcome/confirm email; click a double-opt-in confirm link if one comes (it's our own subscription). Mark `confirmed`.
 4. Weekly (Monday desk cleanup): any partner with no email in 30 days -> recheck the signup.
@@ -30,14 +31,14 @@ Shopify footer forms submitted by script or Enter do NOT confirm (page shows an 
 | Charleston Mahjong Club | charlestonmahjongclub.com | signed up 2026-11-07 ('Join The Club' popup; first name required, used 'Mahj Matchmaker'; 'Welcome to the Club!' shown) |
 | Amahj | amahjline.com | TRIED 2026-11-07: no popup; Shopify footer form gave no confirmation (hCaptcha badge on page). Check Gmail; if nothing, retry via popup or Tiffany 10s |
 | Amanda Toppe | amandatoppeart.com | TODO (not Shopify) |
-| Bam! Let's Mahjong | bamletsmahjong.com | TODO |
+| Bam! Let's Mahjong | bamletsmahjong.com | TRIED 2026-11-08: no popup; Shopify footer form gave no confirmation (same as Amahj). Tiffany 10s |
 | Bespoke | bespokemahjong.com | signed up 2026-11-07 (popup email step accepted, SMS step declined) |
 | Bird & Bamboo | birdandbamboo.com | TODO |
 | Fait à Main | fait-a-main.com | TODO |
 | Hip Hip | hiphipmahjong.com | TODO |
 | Let's Be Besties | letsbebesties.com | TODO |
 | Let's Mahj On | letsmahj-on.com | TODO |
-| Mahj Mood | mahjmood.com | TODO |
+| Mahj Mood | mahjmood.com | TRIED 2026-11-08: no popup; footer form (typed + JS submit) gave no confirmation, field cleared. Tiffany 10s |
 | Mahj Squad | mahjsquad.com | TODO |
 | Mahj & Vine | mahjandvine.com | TODO |
 | The Mahjong Co. | mahjongco.com | TODO (mats hidden, tiles stay) |
