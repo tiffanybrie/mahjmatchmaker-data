@@ -20,6 +20,12 @@ def pack_hdr(raw):
 a7, b8, F = open(S7).read(), open(S8).read(), open(LIVE + '/index.html').read()
 DA, _, _ = LD(a7); DB, _, _ = LD(b8); DF, fi, fe = LD(F)
 AH = {k for k, o in DF['mats'].items() if o.get('ahid')}
+# partner mats the artifact had slimmed out ('ahid') come back in full (Nov 7: OMM Lotus Cove was artifact-hidden with no photo while
+# Tiffany wanted it in Table view tonight): website entry copied, photo added to the pack, thumb inlined
+SLIM_BRANDS = {"Let's Be Besties", 'Luna EK Studio', 'Noli June', 'Betty June & Jeannette'}  # the bulk catalogs slimmed on purpose (size)
+UNSLIM = {k for k in AH if DB['mats'].get(k, {}).get('pa') and not DB['mats'][k].get('hid') and DB['mats'][k].get('bn') not in SLIM_BRANDS}
+for k in UNSLIM: DF['mats'][k] = dict(DB['mats'][k])
+AH -= UNSLIM
 LINK = {'u', 'u0', 'u_dead', 'u_plain', 'dc', 'pa', 'oos', 'alt', 'altu', 'hid', 'rt'}
 n = 0
 for top in DB:
@@ -77,7 +83,7 @@ def img_ids(s):
         o, _ = json.JSONDecoder().raw_decode(s[mm.end():]); out.update(o)
     return out
 IMG8 = img_ids(open(B8 + '/index.html').read()); have = img_ids(F)
-newth = {DF['mats'][k]['th']: IMG8[DF['mats'][k]['th']] for k in DF['mats'] if k not in DA['mats'] and DF['mats'][k].get('th') in IMG8 and DF['mats'][k]['th'] not in have}
+newth = {DF['mats'][k]['th']: IMG8[DF['mats'][k]['th']] for k in DF['mats'] if (k not in DA['mats'] or k in UNSLIM) and DF['mats'][k].get('th') in IMG8 and DF['mats'][k]['th'] not in have}
 tag = '<script src="b24v1.js">'; assert h.count(tag) == 1
 h = h.replace(tag, '<script>window.IMG=Object.assign(window.IMG||{},' + json.dumps(newth, separators=(',', ':')) + ');</script>' + tag)
 os.makedirs(OUT + '/mc', exist_ok=True)
@@ -92,6 +98,16 @@ h = open(OUT + '/index.html').read()
 # pack: live mc/190.webp + the new chunks' photos
 raw = open(LIVE + '/mc/190.webp', 'rb').read(); hdr = pack_hdr(raw); body = raw[:-4 - struct.unpack('<I', raw[-4:])[0]]
 hd2 = dict(hdr); added = 0
+# photos of the un-slimmed partner mats (from the build's own chunk files)
+for k in UNSLIM:
+    f = DF['mats'][k].get('f') or ''
+    if not f.startswith('m/') or f in hd2: continue
+    c = int(f[2:-5]) // 12; src = f'{B8}/mc/{c}.webp'
+    if os.path.exists(src):
+        r_ = open(src, 'rb').read(); hh = pack_hdr(r_)
+        if f in hh: a_, l_ = hh[f]; hd2[f] = [len(body), l_]; body += r_[a_:a_ + l_]; added += 1
+    elif os.path.exists(f'{B8}/mc/{c}.json'):
+        print('WARNING: un-slimmed mat photo is in a json chunk, not packed:', k)
 for c in NEWC:
     r_ = open(f'{B8}/mc/{c}.webp', 'rb').read(); hh = pack_hdr(r_)
     for f, (a_, l_) in hh.items():
@@ -135,7 +151,7 @@ json.dump(files, open(OUT + '/files.json', 'w'), indent=1)
 idx = len(h.encode()); pk = os.path.getsize(OUT + '/mc/190.webp')
 tot = sum(L.values()) - L['index.html'] - L['mc/190.webp'] - sum(L[p] for p in drop) + idx + pk
 nf = len(L) - len(drop)
-print(json.dumps({'repacked': repacked, 'repack_saved': saved, 'field_changes': n, 'new_chunks': NEWC, 'photos_added_to_pack': added, 'new_thumbs': len(newth), 'dropped_files': drop,
+print(json.dumps({'unslimmed': sorted(UNSLIM), 'repacked': repacked, 'repack_saved': saved, 'field_changes': n, 'new_chunks': NEWC, 'photos_added_to_pack': added, 'new_thumbs': len(newth), 'dropped_files': drop,
                   'dropped_bytes': sum(L[p] for p in drop), 'index_bytes': idx, 'pack_bytes': pk, 'total_bytes': tot, 'files': nf,
                   'free_bytes': CAP_TOTAL - tot, 'fits_with_3MB_margin': tot <= CAP_TOTAL - MARGIN and nf <= CAP_FILES and idx <= CAP_INDEX,
                   'fits': tot <= CAP_TOTAL and nf <= CAP_FILES and idx <= CAP_INDEX}, indent=1))
