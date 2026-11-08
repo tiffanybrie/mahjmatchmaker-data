@@ -28,6 +28,49 @@ def synth_doc(D):
             'faces': D['picks'], 'cover': 0, 'putin': [], 'adds': [], 'finds': {}, 'anything': '', 'done': True}
 
 
+def keep_place(pg, ids, order, doc):
+    """Tiffany Nov 8 6:06pm: she types a number in a card's Move to # box, then taps the NEXT card's box. That alone must apply and
+    save the move, the next box keeps focus, and the page must not jump (the next card stays within ~1 card, we require half).
+    Same in grid view (pick up, tap a later spot): the cell after the spot she left stays put."""
+    bad, L = [], len(order)
+    if doc.get('ordering_off') or L < 8: return bad
+    k = 2; A, B = order[k], order[k + 1]; to = min(L, k + 7)
+    pg.locator(f'#mv-{A}').fill(str(to))
+    pg.evaluate(f"window.scrollBy(0, document.getElementById('mv-{B}').getBoundingClientRect().top - 600)")
+    y0 = pg.evaluate(f"document.getElementById('mv-{B}').getBoundingClientRect().top")
+    card = pg.evaluate(f"document.querySelector('.mc[data-id=\"{B}\"]').getBoundingClientRect().height")
+    n0 = len(pg.evaluate('window.__W'))
+    pg.locator(f'#mv-{B}').click()
+    pg.wait_for_timeout(800)
+    now = ids('#main .mc', 'id')
+    if A not in now or now.index(A) != to - 1: bad.append(f'blur (tapping the next box) did not apply Move to # for {A} (want #{to}, now #{now.index(A) + 1 if A in now else "gone"})')
+    W = pg.evaluate('window.__W')
+    if len(W) <= n0 or W[-1]['order']['main'].index(A) != to - 1: bad.append('blur (tapping the next box) did not SAVE the Move to #')
+    y1 = pg.evaluate(f"document.getElementById('mv-{B}').getBoundingClientRect().top")
+    if abs(y1 - y0) > card / 2: bad.append(f'page jumped after Move to #: the next box moved {y1 - y0:+.0f}px (card is {card:.0f}px)')
+    if pg.evaluate('document.activeElement && document.activeElement.id') != f'mv-{B}': bad.append('the next card\'s Move to # box lost focus after the move')
+    if 'Moved to #' not in (pg.evaluate("[...document.querySelectorAll('.mvnote')].map(x=>x.textContent).join(' ')") or ''): bad.append('no "Moved to #N" note on the spot she left')
+    pg.locator(f'#mv-{A}').fill(str(k + 1)); pg.locator(f'#mv-{A}').press('Enter')
+    if ids('#main .mc', 'id') != order: bad.append('Enter did not move the card back (order not restored)')
+    if L >= 12:  # grid: pick up #4, tap #10; the cell that was #5 stays on screen where it was
+        pg.locator('.topview .vt button[data-view="grid"]').click()
+        P, N, T = order[3], order[4], order[9]
+        pg.evaluate(f"window.scrollBy(0, document.querySelector('.gc[data-gid=\"{N}\"]').getBoundingClientRect().top - 300)")
+        y0 = pg.evaluate(f"document.querySelector('.gc[data-gid=\"{N}\"]').getBoundingClientRect().top")
+        row = pg.evaluate(f"document.querySelector('.gc[data-gid=\"{N}\"]').getBoundingClientRect().height")
+        pg.locator(f'.gc[data-gid="{P}"]').click(); pg.locator(f'.gc[data-gid="{T}"]').click()
+        g = ids('#main .gc', 'gid')
+        if g.index(P) != 9: bad.append(f'grid tap-to-place failed (#4 went to #{g.index(P) + 1}, want #10)')
+        y1 = pg.evaluate(f"document.querySelector('.gc[data-gid=\"{N}\"]').getBoundingClientRect().top")
+        if abs(y1 - y0) > row / 2: bad.append(f'grid jumped after a move: {y1 - y0:+.0f}px (row is {row:.0f}px)')
+        nums = pg.eval_on_selector_all('#main .gc .gn', 'els=>els.map(e=>e.textContent)')
+        if nums != [f'#{n + 1}' for n in range(len(nums))]: bad.append('grid numbers not redone after a move')
+        pg.locator(f'.gc[data-gid="{P}"]').click(); pg.locator(f'.gc[data-gid="{N}"]').click()
+        pg.locator('.topview .vt button[data-view="cards"]').click()
+        if ids('#main .mc', 'id') != order: bad.append('grid round trip did not restore the order')
+    return bad
+
+
 def run(path, doc=None):
     from playwright.sync_api import sync_playwright
     D = page_data(path)
@@ -78,6 +121,7 @@ def run(path, doc=None):
             if now[:1] != [i] or len(now) != len(expect['main']): bad.append(f'New box Move to # failed for {i}')
             pg.locator(f'#mv-{i}').fill(str(orig)); pg.locator(f'[data-go="mv-{i}"]').click()
         if ids('#main .mc', 'id') != expect['main']: bad.append('order not restored after the Move to # round trip')
+        bad += keep_place(pg, ids, expect['main'], doc)
         # Done never locks: with done set, hearts, arrows and grid still work
         first = expect['main'][0]
         pg.locator(f'.mc[data-id="{first}"] [data-act="keep"]').click()

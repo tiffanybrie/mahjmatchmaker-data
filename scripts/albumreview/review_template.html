@@ -113,6 +113,10 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{
 .gc.rm img{opacity:.45;filter:grayscale(.6)}
 .gc[aria-pressed="true"]{border-color:var(--pink);box-shadow:0 0 0 3px var(--pink)}
 .gc.flash{border-color:var(--pink)}
+/* "Moved to #N ✓": flashes on the spot she left; the page never jumps to where the card went (Tiffany Nov 8 6:06pm) */
+.mvnote{position:absolute;z-index:4;background:var(--ink);color:var(--card);font:700 14px/1 var(--body);padding:7px 12px;border-radius:999px;pointer-events:none;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.2);animation:mvfade 1.8s forwards}
+@keyframes mvfade{0%,75%{opacity:1}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.mvnote{animation:none}}
 .gsel{position:fixed;left:0;right:0;bottom:calc(52px + env(safe-area-inset-bottom,0px));z-index:6;background:var(--chip);border-top:1px solid var(--line);
   padding:8px max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px));display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .gsel b{flex:1 1 100%;min-width:0;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -305,13 +309,31 @@ function setView(sec,v){VIEW[sec]=v;if(SEL&&SEL.sec===sec)SEL=null;try{localStor
 function renderSel(){const b=$('#gsel');document.querySelectorAll('.gc').forEach(x=>x.setAttribute('aria-pressed',!!SEL&&x.dataset.gid===SEL.id));
   if(!SEL){b.hidden=true;return}const n=S.order[SEL.sec].indexOf(SEL.id)+1;
   $('#gselt').textContent=`#${n} ${byId[SEL.id].mat} picked up. Tap the spot it should take.`;const inp=$('#gmv');inp.dataset.mv=SEL.id;inp.dataset.sec=SEL.sec;inp.value='';b.hidden=false}
-function moveTo(sec,id,pos){const a=S.order[sec],i=a.indexOf(id);if(i<0||!Number.isFinite(pos))return;
-  const j=Math.max(0,Math.min(a.length-1,Math.round(pos)-1));if(j!==i){a.splice(i,1);a.splice(j,0,id);save()}
-  SEL=null;renderList(sec);renderSel();
-  const el=document.querySelector(VIEW[sec]==='grid'?`.gc[data-gid="${id}"]`:`.mc[data-id="${id}"]`);
-  if(el){el.scrollIntoView({block:VIEW[sec]==='grid'?'nearest':'center'});el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),1400)}}
-function applyMv(inp){if(!inp||!inp.dataset.mv)return;const v=inp.value.trim();if(!v)return;inp.value='';const fromNew=inp.id.startsWith('nmv-'),id=inp.dataset.mv;moveTo(inp.dataset.sec,id,parseInt(v,10));
-  if(fromNew)showInList(inp.dataset.sec,id)}
+/* Move to # keeps her place (Tiffany Nov 8 6:06pm: she works top to bottom and doesn't want to jump to where the card went).
+   The moved card's node moves in place (no re-render, so the box she tapped next keeps focus), every number is redone, and the
+   card she is heading to (or the one right after the spot she left) stays put on screen; a small note flashes on that spot. */
+function listEl(sec){return $(sec==='main'?'#main':'#hol')}
+function nodeOf(sec,id){return id?listEl(sec).querySelector(VIEW[sec]==='grid'?`.gc[data-gid="${id}"]`:`.mc[data-id="${id}"]`):null}
+function inView(x){const r=x.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight}
+function renumber(sec){const g=VIEW[sec]==='grid',xs=listEl(sec).querySelectorAll(g?'.gc':'.mc'),n=xs.length;
+  xs.forEach((x,i)=>{if(g){x.querySelector('.gn').textContent='#'+(i+1);x.setAttribute('aria-label',x.getAttribute('aria-label').replace(/^#\d+/,'#'+(i+1)))}
+    else{x.querySelector('.pos').textContent='#'+(i+1);x.querySelector('[data-act="up"]').disabled=i===0;x.querySelector('[data-act="down"]').disabled=i===n-1}})}
+function mvNote(anc,n,g){const r=anc.getBoundingClientRect(),t=document.createElement('div');t.className='mvnote';t.setAttribute('role','status');t.textContent=`Moved to #${n} ✓`;
+  document.body.appendChild(t);const w=t.offsetWidth,h=t.offsetHeight,cx=Math.max(8,Math.min(document.documentElement.clientWidth-8-w,r.left+r.width/2-w/2));
+  t.style.left=(cx+scrollX)+'px';t.style.top=(scrollY+(g?r.top+6:r.top-h/2-8))+'px';setTimeout(()=>t.remove(),1900)}
+function moveTo(sec,id,pos,toward){const a=S.order[sec],i=a.indexOf(id);if(i<0||!Number.isFinite(pos))return;
+  const j=Math.max(0,Math.min(a.length-1,Math.round(pos)-1));SEL=null;if(j===i){renderSel();return}
+  const g=VIEW[sec]==='grid',el=listEl(sec),node=nodeOf(sec,id);
+  // anchor = the card she is heading to (focus went there), else the card right after the spot she left if on screen, else the first card on screen
+  let anc=toward&&toward.closest?toward.closest('.mc,.gc'):null;if(anc&&(anc===node||!el.contains(anc)))anc=null;
+  if(!anc){const nx=nodeOf(sec,a[i+1])||nodeOf(sec,a[i-1]);anc=nx&&inView(nx)?nx:[...el.querySelectorAll(g?'.gc':'.mc')].find(x=>x!==node&&x.getBoundingClientRect().bottom>8)||null}
+  const top0=anc?anc.getBoundingClientRect().top:0,root=document.documentElement;root.style.overflowAnchor='none';
+  a.splice(i,1);a.splice(j,0,id);save();
+  if(node&&el.children.length===a.length){el.insertBefore(node,nodeOf(sec,a[j+1]));renumber(sec);renderNew()}else renderList(sec);
+  renderSel();
+  if(anc&&anc.isConnected){const d=anc.getBoundingClientRect().top-top0;if(Math.abs(d)>.5)window.scrollBy(0,d);mvNote(anc,j+1,g)}
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{root.style.overflowAnchor=''}))}
+function applyMv(inp,toward){if(!inp||!inp.dataset.mv)return;const v=inp.value.trim();if(!v)return;inp.value='';moveTo(inp.dataset.sec,inp.dataset.mv,parseInt(v,10),toward)}
 function showInList(sec,id){const el=document.querySelector(VIEW[sec]==='grid'?`.gc[data-gid="${id}"]`:`.mc[data-id="${id}"]`);
   if(el){el.scrollIntoView({block:'center'});el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),1400)}}
 function renderTally(){const v=Object.values(S.v);$('#tally').textContent=`${v.filter(x=>x==='keep').length} kept · ${v.filter(x=>x==='remove').length} out · ${D.cards.length} cards`;$('#noorder').checked=S.ordering_off}
@@ -328,12 +350,13 @@ function renderFinds(){$('#nf').innerHTML=D.finds.length?D.finds.map(f=>{const v
 function renderAdds(){$('#adds').innerHTML=S.adds.map(a=>`<span class="chip">♥ ${esc(a.n)} · ${esc(a.b)}<button data-unadd="${esc(a.k)}" aria-label="Remove ${esc(a.n)}">✕</button></span>`).join('');if(CAT)search()}
 function renderDone(){const b=$('#done');b.setAttribute('aria-pressed',S.done);b.textContent=S.done?'Done ✓ (tap to reopen)':'Done';$('#donebar').hidden=!S.done;$('#donenote').hidden=!S.done;
   if(document.activeElement!==$('#anything'))$('#anything').value=S.anything}
-function renderNew(){const el=$('#newbox');const ids=S.order.main.filter(id=>byId[id].new).concat(S.order.hol.filter(id=>byId[id].new));
+function renderNew(){const el=$('#newbox'),fa=document.activeElement,fid=fa&&el.contains(fa)?fa.id:'';const ids=S.order.main.filter(id=>byId[id].new).concat(S.order.hol.filter(id=>byId[id].new));
   if(!ids.length){el.hidden=true;return}el.hidden=false;
   el.innerHTML=`<h2>New since you finished: ${ids.length} card${ids.length===1?'':'s'}</h2><p class="lede">Added after your review; everything you already ordered stays where you put it. Each one is also in the list below at the spot shown. Type a new spot any time.</p>`+
   ids.map(id=>{const c=byId[id],sec=c.hol?'hol':'main',a=S.order[sec],i=a.indexOf(id);
    return `<div class="nb"><img src="c/${id}.jpg" alt="${esc(D.name)} + ${esc(c.mat)} match card" data-z="c/${id}.jpg"><div><h4>${esc(c.title)}</h4><p class="bn">${esc(c.brand)} · now #${i+1} of ${a.length}${c.hol?' (holiday)':''}</p><p class="why">${esc(c.why)}</p>
-<div class="mv"><label for="nmv-${id}">Move to #</label><input id="nmv-${id}" data-mv="${id}" data-sec="${sec}" inputmode="numeric" pattern="[0-9]*" enterkeyhint="go" autocomplete="off"><button data-go="nmv-${id}" aria-label="Move ${esc(c.mat)} to that number">Go</button><span>of ${a.length}</span></div><button class="see" data-see="${id}" data-sec="${sec}">See it in the list</button></div></div>`}).join('')}
+<div class="mv"><label for="nmv-${id}">Move to #</label><input id="nmv-${id}" data-mv="${id}" data-sec="${sec}" inputmode="numeric" pattern="[0-9]*" enterkeyhint="go" autocomplete="off"><button data-go="nmv-${id}" aria-label="Move ${esc(c.mat)} to that number">Go</button><span>of ${a.length}</span></div><button class="see" data-see="${id}" data-sec="${sec}">See it in the list</button></div></div>`}).join('');
+  if(fid)document.getElementById(fid)?.focus({preventScroll:true})}
 function renderAll(){renderRound();renderNew();renderCovers();renderFaces();renderList('main');renderList('hol');renderTally();renderLeft();renderFinds();renderAdds();renderDone()}
 
 /* ---------- search ---------- */
@@ -378,7 +401,9 @@ document.addEventListener('input',e=>{const t=e.target;
   else if(t.id==='q'){loadCat();search()}});
 $('#q').addEventListener('focus',loadCat);
 $('#noorder').addEventListener('change',e=>{S.ordering_off=e.target.checked;SEL=null;renderList('main');renderList('hol');renderSel();save()});
-document.addEventListener('change',e=>{if(e.target.dataset&&e.target.dataset.mv!==undefined)applyMv(e.target)});
+/* Move to # applies + saves on Go, on Enter, and when she leaves the box (blur, or tapping the next card's box). The blur case runs
+   once focus has landed on the next box, so that box keeps focus and stays where it is. */
+document.addEventListener('focusout',e=>{const t=e.target;if(t.dataset&&t.dataset.mv!==undefined&&t.value.trim())setTimeout(()=>applyMv(t,document.activeElement),0)});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')$('#lb').hidden=true;
   if(e.key==='Enter'&&e.target.dataset&&e.target.dataset.mv!==undefined){e.preventDefault();applyMv(e.target)}});
 renderSteps();renderAll();connect();
