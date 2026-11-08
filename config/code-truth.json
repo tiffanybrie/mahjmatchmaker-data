@@ -125,7 +125,7 @@
   "Yellow Mountain Imports": {
    "code": "MAHJMATCH10-YMI-2025",
    "pct": 10,
-   "hub_must": "MAHJMATCH10-YMI-2025",
+   "hub_must": "first order",
    "source": "Gmail tiffanybrie@ (old inbox), thread \"Welcome to the Yellow Mountain Imports' Affiliate Program!\" (GoAffPro, Vera/Penny): Dec 13 2025 first code MMM10-YMI-2025 \"will only work on orders from new customers\"; Dec 17 2025 changed to MAHJMATCH10-YMI-2025 (cannot be exactly MAHJMATCH); Dec 19 2025 \"active and working\". Cart test Nov 7 2026: 10% applied.",
    "status": "confirmed by email + cart test 2026-11-07",
    "note": "Never featured on social (Tiffany Oct 27 2:44am) and left off the Nov 7 Partner Brands graphic, but still a hub brand with a live page.",
@@ -158,7 +158,7 @@
   },
   "Anders Ruff": {
    "code": "MAHJMATCH",
-   "pct": null,
+   "pct": 10,
    "hub_must": "MAHJMATCH",
    "source": "Gmail 2026-10-06 UpPromote approval (no code or % in it); referral orders tracked since Oct 30; code from page only; cart test Nov 7 2026: 10% off (shop.andersruff.com)",
    "status": "confirmed by cart test 2026-11-07",
@@ -171,8 +171,8 @@
   },
   "Let's Be Besties": {
    "code": "MAHJMATCH",
-   "pct": null,
-   "hub_must": "MAHJMATCH",
+   "pct": 10,
+   "hub_must": "mats",
    "source": "Gmail 2026-10-16 UpPromote 'You have been assigned a coupon code: MAHJMATCH' + Laurie (owner) 'You are all set-up!'; the % is not stated anywhere; cart test Nov 7 2026: 10% on mats only",
    "status": "confirmed by cart test 2026-11-07",
    "cart_pct": 10,
@@ -180,23 +180,25 @@
    "cart_test": {
     "date": "2026-11-07",
     "result": "10% on mats (Tartan Tweed, Green Bright Floral, Pink Christmas $60 -> $54) and mat gift cards; $0 on pouches, weekender bag, travel tiles, charcuterie board, bestie-bag-mat-storage"
-   }
+   },
+   "desc_must": "mats"
   },
   "Mahjong Register": {
    "code": "MAHJMATCH",
    "pct": null,
-   "hub_must": "MAHJMATCH",
+   "hub_must": "code coming soon",
    "source": "Gmail 2026-10-10 UpPromote approval; Tiffany asked them Oct 16 to assign MAHJMATCH (sent to hello@mahjongregister.com), no reply or coupon email found; cart test Nov 7 2026: MAHJMATCH not applied anywhere",
    "status": "DOES NOT WORK: cart test 2026-11-07",
    "cart_test": {
     "date": "2026-11-07",
     "how": "curl Shopify AJAX cart: /cart/add.js + /cart/update.js {discount} (and /discount/MAHJMATCH link)",
     "result": "MAHJMATCH applicable:false, $0 off, on every product type tried (2 mats, acrylic racks, dice pouch, dice holder; also a $1,140 multi-item cart). Control: same method gives 10% at Bird & Bamboo, and a made-up code reads the same applicable:false here, so the code is not set up (or not usable) at Mahjong Register."
-   }
+   },
+   "note": "Nov 8: live wording changed to \"shop with our link (code coming soon)\" / \"Our MAHJMATCH code isn't active at Mahjong Register yet\" (OVERDUE Nov 7 line); re-test when they reply."
   },
   "The Mahjong Press": {
    "code": "MAHJMATCH",
-   "pct": null,
+   "pct": 10,
    "hub_must": "MAHJMATCH",
    "source": "page only; nothing from The Mahjong Press in Gmail (contacts csv: general inbox only); cart test Nov 7 2026: 10% off",
    "status": "confirmed by cart test 2026-11-07",
@@ -209,7 +211,7 @@
   },
   "Mahjong Studios": {
    "code": "MAHJMATCH",
-   "pct": null,
+   "pct": 10,
    "hub_must": "MAHJMATCH",
    "source": "Gmail 2026-10-07 UpPromote 'coupon code assigned to you: mahjmatch'; % not stated; cart test Nov 7 2026: 10% store-wide",
    "status": "confirmed by cart test 2026-11-07",
