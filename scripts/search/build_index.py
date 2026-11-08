@@ -397,19 +397,22 @@ def main():
 
     # ---- Mat Gallery (live code block JSON) ----
     g = H['mahjong-mats']
-    R = json.loads(re.search(r'<script type="application/json"[^>]*>(.*?)</script>', g, re.S).group(1))
+
+    def gallery_rows(g_):
+        # v6+ blocks keep rows behind data-src (pinned jsDelivr JSON); v5 kept them inline.
+        ds_ = re.search(r'<script type="application/json" data-src="([^"]+)"', g_)
+        if ds_:
+            m2 = re.search(r'mahjmatchmaker-data@([0-9a-f]{7,40})/(.+)$', ds_.group(1))
+            return json.loads(gitshow(m2.group(1) + ':' + m2.group(2)) if m2 else curl(ds_.group(1)))
+        return json.loads(re.search(r'<script type="application/json"[^>]*>(.*?)</script>', g_, re.S).group(1))
+    R = gallery_rows(g)
     R_live = R
     # --gallery-block <rev>:<path> | <path>: build against a staged Mat Gallery block (v6: rows behind data-src)
     # instead of the live page, so search can go live in the same session as that gallery (Nov 6).
     gb = next((a.split('=', 1)[1] for a in sys.argv if a.startswith('--gallery-block=')), '')
     if gb:
         g = gitshow(gb)
-        ds = re.search(r'<script type="application/json" data-src="([^"]+)"', g)
-        if ds:
-            m_ = re.search(r'mahjmatchmaker-data@([0-9a-f]{7,40})/(.+)$', ds.group(1))
-            R = json.loads(gitshow(m_.group(1) + ':' + m_.group(2)) if m_ else curl(ds.group(1)))
-        else:
-            R = json.loads(re.search(r'<script type="application/json"[^>]*>(.*?)</script>', g, re.S).group(1))
+        R = gallery_rows(g)
         print('gallery: %s (%d rows; live page has %d)' % (gb, len(R), len(R_live)))
     mb = re.search(r"B='(https://cdn\.jsdelivr\.net/[^']+)'", g).group(1)
     ibm = re.search(r'IB=(\{[^}]*\})', g)
