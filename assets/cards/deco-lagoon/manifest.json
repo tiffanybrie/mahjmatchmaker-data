@@ -913,6 +913,55 @@
    "lowres": true,
    "caption_note": null,
    "rack_notes": []
+  },
+  {
+   "order": 37,
+   "group": "deco",
+   "mat": "Lady Luck's Teal Lounge",
+   "brand": "Splash of Color",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "deco-lagoon-mahjong-tiles-splash-of-color-lady-lucks-teal-lounge-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/deco/mats/splash-of-color-lady-lucks-teal-lounge.jpg",
+   "racks": [
+    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Mulberry Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dijon",
+    "Bird & Bamboo Dark Teal"
+   ],
+   "why": "Splash of Color's art deco fans: deep lagoon teal with gold fans and a gold deco lattice frame. Her teal backs and her gold deco palm, as a whole mat.",
+   "fym": "splashofcolorco.com/art-deco-mahjong-mat-lady-luck-s-teal-lounge",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 38,
+   "group": "deco",
+   "mat": "Dark Blue Art Deco, Gold Fans",
+   "brand": "Dreamframer Art",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "deco-lagoon-mahjong-tiles-dreamframer-art-dark-blue-art-deco-gold-fans-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/albums/discovery/dreamframer-art-dark-blue-art-deco-gold-fans.jpg",
+   "racks": [
+    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Mulberry Wood"
+   ],
+   "mat_racks": [
+    "Mahjong Register Navy Solid Wood"
+   ],
+   "why": "Your New finds pick: navy ground with teal and gold art deco fans. Her teal on the fans, her gold palm, her navy dots.",
+   "fym": "www.etsy.com/listing/4491199204",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
   }
  ],
  "title_color": "#0a5560",

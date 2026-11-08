@@ -75,6 +75,12 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{
 .nb{display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px;align-items:start;border-top:1px solid var(--line);padding:10px 0 0;margin-top:10px}
 .nb img{width:96px;border-radius:8px;display:block;cursor:zoom-in}
 .nb .mv{margin-top:6px}
+.nb .see{min-height:40px;border-radius:12px;border:1.5px solid var(--line);background:var(--card);padding:0 12px;margin-top:6px}
+.topview a{color:var(--pink);font-weight:700}
+.topview{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0 0;font-weight:600}
+.donebar{margin:14px 0 0;background:var(--chip);border-radius:14px;padding:10px 14px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.donebar button{min-height:44px;border-radius:999px;border:2px solid var(--pink);background:var(--card);color:var(--pink);padding:0 18px}
+.donenote{margin:8px 0 0;text-align:center;color:var(--muted);font-size:14px}
 .tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 9px}
 .her{font-size:14px;color:var(--pink);margin:0}
 .ctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:4px}
@@ -156,6 +162,8 @@ textarea{width:100%;min-height:140px;font:16px/1.45 var(--body);border:2px solid
   <h1>__SETNAME__</h1>
   <p class="lede">Every tap saves on its own. Nothing to copy or paste. When you're finished, tap <b>Done</b> at the bottom, or just say “done” in chat.</p>
   <div id="round"></div>
+  <div class="donebar" id="donebar" hidden><span>You tapped Done. Everything still works: keep ordering, every tap still saves.</span><button id="reopen">Still ordering</button></div>
+  <div class="topview"><span>Matches view</span><div class="vt" role="group" aria-label="Matches view (top)" data-sec="main"><button data-view="cards" aria-pressed="true">Cards</button><button data-view="grid" aria-pressed="false">Grid</button></div><a href="#matches">Go to the matches ↓</a></div>
   <section id="newbox" hidden aria-live="polite"></section>
   <nav aria-label="Sections"><a href="#did">What Claude did</a><a href="#tiles">Tiles</a><a href="#faces">Faces</a><a href="#matches">Matches</a><a href="#holiday">Holiday</a><a href="#left">Left out</a><a href="#finds">New finds</a><a href="#missed">Missed one?</a><a href="#else">Anything else</a></nav>
 
@@ -209,6 +217,7 @@ textarea{width:100%;min-height:140px;font:16px/1.45 var(--body);border:2px solid
   <label for="anything" class="lede" style="display:block">Notes that don't fit a card.</label>
   <textarea id="anything" placeholder="Type anything here. It saves as you go."></textarea>
   <button class="done" id="done" aria-pressed="false">Done</button>
+  <p class="donenote" id="donenote" hidden>Done never locks the page. Keep ordering any time; tap again to reopen.</p>
 </div>
 <div class="gsel" id="gsel" hidden><b id="gselt"></b><span class="mv"><label for="gmv">Move to #</label><input id="gmv" data-mv="" data-sec="" inputmode="numeric" pattern="[0-9]*" enterkeyhint="go" autocomplete="off"><button data-go="gmv">Go</button></span><button class="x2" id="gselx">Cancel</button></div>
 <div class="save" role="status" aria-live="polite"><span class="st" id="st">Connecting…</span><a href="#else">Done ↓</a></div>
@@ -235,7 +244,7 @@ function hydrate(d){ // keep only ids this round knows about
 /* ---------- saving: one write at a time, coalesced ---------- */
 let REF=null,dirty=false,writing=false,timer=null,readonly=false;
 const st=$('#st');function status(t,c){st.textContent=t;st.className='st '+(c||'')}
-function save(){if(readonly)return;dirty=true;if(!REF){status('Not saved: open this page signed in on claude.ai','err');return}
+function save(fromDone){if(readonly)return;if(!fromDone&&S.done){S.done=false;renderDone()}dirty=true;if(!REF){status('Not saved: open this page signed in on claude.ai','err');return}
   status('Saving…');clearTimeout(timer);timer=setTimeout(flush,450)}
 async function flush(){if(writing||!dirty||!REF)return;writing=true;dirty=false;
   try{await REF.set({...S,updated:new Date().toISOString()});status('Saved · '+new Date().toLocaleTimeString([],{hour:'numeric',minute:'2-digit'}),'ok')}
@@ -267,7 +276,7 @@ function renderFaces(){const on=new Set(S.faces);
   $('#whys').innerHTML=S.faces.map(k=>`<li><b style="font-style:normal">${esc(why[k].l)}</b>${why[k].why?': '+esc(why[k].why):''}</li>`).join('')}
 function cardHTML(c,i,n,sec){const v=S.v[c.id]||'';
   return `<article class="mc${v==='remove'?' rm':''}" data-id="${c.id}" data-sec="${sec}">
-<button class="zoom" data-z="c/${c.id}.jpg" aria-label="See ${esc(c.mat)} full size"><img src="c/${c.id}.jpg" alt="${esc(D.name)} + ${esc(c.mat)} match card" loading="lazy"></button>
+<button class="zoom" data-z="c/${c.id}.jpg" aria-label="See ${esc(c.mat)} full size"><img src="c/${c.id}.jpg" alt="${esc(D.name)} + ${esc(c.mat)} match card" loading="${i<8?'eager':'lazy'}"></button>
 <div class="body"><div class="top"><span class="pos">#${i+1}</span><h4>${esc(c.title)}</h4></div><p class="bn">${esc(c.brand)} · ${esc(c.g)}</p>
 ${c.tags.length?`<div class="tags">${c.tags.map(t=>`<span class="tag${t.startsWith('NEW,')?' new':''}">${esc(t)}</span>`).join('')}</div>`:''}
 <p class="why">${esc(c.why)}</p>${c.her_note?`<p class="her">Your note last round: ${esc(c.her_note)}</p>`:''}
@@ -278,12 +287,17 @@ ${c.tags.length?`<div class="tags">${c.tags.map(t=>`<span class="tag${t.startsWi
 <label class="bn" for="n-${c.id}">Note</label><input class="note" id="n-${c.id}" data-note="${c.id}" maxlength="500" placeholder="e.g. rank higher, wrong colour" value="${esc(S.notes[c.id]||'')}"></div></article>`}
 function gridHTML(c,i,sec){const v=S.v[c.id]||'',on=!!SEL&&SEL.id===c.id;
   return `<button class="gc${v==='remove'?' rm':''}" data-gid="${c.id}" data-sec="${sec}" aria-pressed="${on}" aria-label="#${i+1} ${esc(c.mat)}${v==='keep'?', keeping':v==='remove'?', taking out':''}"><img src="c/${c.id}.jpg" alt="" loading="lazy"><span class="gn">#${i+1}</span>${v==='keep'?'<span class="gk">♥</span>':v==='remove'?'<span class="gk">✕</span>':''}</button>`}
-function renderList(sec){const ids=S.order[sec];const el=$(sec==='main'?'#main':'#hol');const g=VIEW[sec]==='grid';
+function renderList(sec){ensureAll();const ids=S.order[sec];const el=$(sec==='main'?'#main':'#hol');const g=VIEW[sec]==='grid';
   el.classList.toggle('grid',g&&ids.length>0);
   el.innerHTML=ids.length?ids.map((id,i)=>g?gridHTML(byId[id],i,sec):cardHTML(byId[id],i,ids.length,sec)).join(''):'<p class="empty">No cards in this section.</p>';
   el.classList.toggle('noord',S.ordering_off);
+  const shown=el.querySelectorAll(g?'.gc':'.mc').length;if(shown!==ids.length)console.error('review page: '+sec+' shows '+shown+' of '+ids.length+' cards');
+  el.dataset.shown=shown;
   document.querySelectorAll(`.vt[data-sec="${sec}"] button`).forEach(b=>b.setAttribute('aria-pressed',b.dataset.view===VIEW[sec]));
   $('#'+sec+'-hint').hidden=!(g&&!S.ordering_off&&ids.length>1);if(typeof renderNew==='function')renderNew()}
+/* every card shows in its list exactly once, wherever it was placed (never hidden, never deduped by design) */
+function ensureAll(){for(const sec of['main','hol']){const seen=new Set();S.order[sec]=S.order[sec].filter(id=>byId[id]&&(byId[id].hol?'hol':'main')===sec&&!seen.has(id)&&seen.add(id))}
+  for(const c of D.cards){const sec=c.hol?'hol':'main';if(!S.order[sec].includes(c.id))S.order[sec].push(c.id)}}
 /* ---------- view (per viewer, browser only) + move to # ---------- */
 let VIEW={main:'cards',hol:'cards'},SEL=null;const VKEY='albumreview-view-'+D.set;
 try{const v=JSON.parse(localStorage.getItem(VKEY)||'null');if(v)for(const k of['main','hol'])if(v[k]==='grid'||v[k]==='cards')VIEW[k]=v[k]}catch(e){}
@@ -297,7 +311,9 @@ function moveTo(sec,id,pos){const a=S.order[sec],i=a.indexOf(id);if(i<0||!Number
   const el=document.querySelector(VIEW[sec]==='grid'?`.gc[data-gid="${id}"]`:`.mc[data-id="${id}"]`);
   if(el){el.scrollIntoView({block:VIEW[sec]==='grid'?'nearest':'center'});el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),1400)}}
 function applyMv(inp){if(!inp||!inp.dataset.mv)return;const v=inp.value.trim();if(!v)return;inp.value='';const fromNew=inp.id.startsWith('nmv-'),id=inp.dataset.mv;moveTo(inp.dataset.sec,id,parseInt(v,10));
-  if(fromNew){const nb=$('#newbox');nb.scrollIntoView({block:'start'});const i2=document.getElementById('nmv-'+id);if(i2){i2.closest('.nb').classList.add('flash');i2.focus({preventScroll:true})}}}
+  if(fromNew)showInList(inp.dataset.sec,id)}
+function showInList(sec,id){const el=document.querySelector(VIEW[sec]==='grid'?`.gc[data-gid="${id}"]`:`.mc[data-id="${id}"]`);
+  if(el){el.scrollIntoView({block:'center'});el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),1400)}}
 function renderTally(){const v=Object.values(S.v);$('#tally').textContent=`${v.filter(x=>x==='keep').length} kept · ${v.filter(x=>x==='remove').length} out · ${D.cards.length} cards`;$('#noorder').checked=S.ordering_off}
 function loHTML(l,on){return `<article class="mc lo" data-lo="${l.id}"><div class="pic"><button data-z="lo/${l.id}.jpg" aria-label="See ${esc(l.name)} full size"><img class="mat" src="lo/${l.id}.jpg" alt="${esc(l.name)} mat" loading="lazy"></button><img class="ins" src="t/inset.jpg" alt=""></div>
 <div class="body"><h4>${esc(l.name)}</h4><p class="bn">${esc(l.brand)}${l.hol?' · Holiday':''}${l.retired?' · Retired':''}</p><p class="why">${esc(l.why)}</p>
@@ -310,13 +326,14 @@ function renderFinds(){$('#nf').innerHTML=D.finds.length?D.finds.map(f=>{const v
 <div class="body"><h4>${esc(f.name)}</h4><p class="bn">${esc(f.seller)}</p><p class="why">${esc(f.why)}</p>${f.note?`<p class="bn">${esc(f.note)}</p>`:''}<p class="bn"><a href="${esc(f.url)}" target="_blank" rel="noopener">See it where it's sold</a> · found via ${esc(f.source)}</p>
 <div class="ctl"><button class="put" data-find="${f.id}" data-v="in" aria-pressed="${v==='in'}">${v==='in'?'♥ Bringing it in':'Bring it in'}</button><button class="ic x" data-find="${f.id}" data-v="skip" aria-pressed="${v==='skip'}" aria-label="Skip ${esc(f.name)}">✕</button><span class="state">${v==='skip'?'Skipped':''}</span></div></div></article>`}).join(''):'<p class="empty">No new mats turned up in this search.</p>'}
 function renderAdds(){$('#adds').innerHTML=S.adds.map(a=>`<span class="chip">♥ ${esc(a.n)} · ${esc(a.b)}<button data-unadd="${esc(a.k)}" aria-label="Remove ${esc(a.n)}">✕</button></span>`).join('');if(CAT)search()}
-function renderDone(){const b=$('#done');b.setAttribute('aria-pressed',S.done);b.textContent=S.done?'Done ✓ Claude will take it from here':'Done';$('#anything').value=S.anything}
+function renderDone(){const b=$('#done');b.setAttribute('aria-pressed',S.done);b.textContent=S.done?'Done ✓ (tap to reopen)':'Done';$('#donebar').hidden=!S.done;$('#donenote').hidden=!S.done;
+  if(document.activeElement!==$('#anything'))$('#anything').value=S.anything}
 function renderNew(){const el=$('#newbox');const ids=S.order.main.filter(id=>byId[id].new).concat(S.order.hol.filter(id=>byId[id].new));
   if(!ids.length){el.hidden=true;return}el.hidden=false;
-  el.innerHTML=`<h2>New since you finished: ${ids.length} card${ids.length===1?'':'s'} to place</h2><p class="lede">Added after your review; everything you already ordered stays where you put it. These sit at the end for now. Type the spot each one should take.</p>`+
+  el.innerHTML=`<h2>New since you finished: ${ids.length} card${ids.length===1?'':'s'}</h2><p class="lede">Added after your review; everything you already ordered stays where you put it. Each one is also in the list below at the spot shown. Type a new spot any time.</p>`+
   ids.map(id=>{const c=byId[id],sec=c.hol?'hol':'main',a=S.order[sec],i=a.indexOf(id);
    return `<div class="nb"><img src="c/${id}.jpg" alt="${esc(D.name)} + ${esc(c.mat)} match card" data-z="c/${id}.jpg"><div><h4>${esc(c.title)}</h4><p class="bn">${esc(c.brand)} · now #${i+1} of ${a.length}${c.hol?' (holiday)':''}</p><p class="why">${esc(c.why)}</p>
-<div class="mv"><label for="nmv-${id}">Move to #</label><input id="nmv-${id}" data-mv="${id}" data-sec="${sec}" inputmode="numeric" pattern="[0-9]*" enterkeyhint="go" autocomplete="off"><button data-go="nmv-${id}" aria-label="Move ${esc(c.mat)} to that number">Go</button><span>of ${a.length}</span></div></div></div>`}).join('')}
+<div class="mv"><label for="nmv-${id}">Move to #</label><input id="nmv-${id}" data-mv="${id}" data-sec="${sec}" inputmode="numeric" pattern="[0-9]*" enterkeyhint="go" autocomplete="off"><button data-go="nmv-${id}" aria-label="Move ${esc(c.mat)} to that number">Go</button><span>of ${a.length}</span></div><button class="see" data-see="${id}" data-sec="${sec}">See it in the list</button></div></div>`}).join('')}
 function renderAll(){renderRound();renderNew();renderCovers();renderFaces();renderList('main');renderList('hol');renderTally();renderLeft();renderFinds();renderAdds();renderDone()}
 
 /* ---------- search ---------- */
@@ -333,7 +350,7 @@ function search(){if(!CAT)return;const q=norm($('#q').value).trim();const res=$(
 function move(sec,id,d){const a=S.order[sec],i=a.indexOf(id),j=i+d;if(j<0||j>=a.length)return;[a[i],a[j]]=[a[j],a[i]];renderList(sec);save();
   const b=document.querySelector(`.mc[data-id="${id}"] [data-act="${d<0?'up':'down'}"]`);(b&&!b.disabled?b:document.querySelector(`.mc[data-id="${id}"] [data-act="${d<0?'down':'up'}"]`))?.focus()}
 document.addEventListener('click',e=>{const t=e.target;
-  const vb=t.closest('.vt button');if(vb){setView(vb.closest('.vt').dataset.sec,vb.dataset.view);return}
+  const vb=t.closest('.vt button');if(vb){setView(vb.closest('.vt').dataset.sec,vb.dataset.view);if(vb.closest('.topview'))$('#matches').scrollIntoView({block:'start'});return}
   const gc=t.closest('[data-gid]');if(gc){const id=gc.dataset.gid,sec=gc.dataset.sec;
     if(S.ordering_off){const lb=$('#lb');lb.querySelector('img').src='c/'+id+'.jpg';lb.classList.remove('big');lb.hidden=false;$('#lbx').focus();return}
     if(SEL&&SEL.sec===sec&&SEL.id!==id){moveTo(sec,SEL.id,S.order[sec].indexOf(id)+1);return}
@@ -352,10 +369,12 @@ document.addEventListener('click',e=>{const t=e.target;
   const un=t.closest('[data-unadd]');if(un){S.adds=S.adds.filter(x=>x.k!==un.dataset.unadd);renderAdds();save();return}
   if(t.id==='lbx'||t.id==='lb'){$('#lb').hidden=true;return}
   if(t.closest('#lb img')){$('#lb').classList.toggle('big');return}
-  if(t.id==='done'){S.done=!S.done;renderDone();save();return}});
+  if(t.id==='done'){S.done=!S.done;renderDone();save(true);return}
+  if(t.id==='reopen'){S.done=false;renderDone();save(true);return}
+  const see=t.closest('[data-see]');if(see){showInList(see.dataset.sec,see.dataset.see);return}});
 document.addEventListener('input',e=>{const t=e.target;
   if(t.dataset.note){const v=t.value.trim();v?S.notes[t.dataset.note]=t.value:delete S.notes[t.dataset.note];save()}
-  else if(t.id==='anything'){S.anything=t.value;save()}
+  else if(t.id==='anything'){S.anything=t.value;save(true)}
   else if(t.id==='q'){loadCat();search()}});
 $('#q').addEventListener('focus',loadCat);
 $('#noorder').addEventListener('change',e=>{S.ordering_off=e.target.checked;SEL=null;renderList('main');renderList('hol');renderSel();save()});

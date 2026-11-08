@@ -5,7 +5,8 @@ Usage: python3 scripts/albumreview/build_review.py <set> [outdir]
     index.html            the page (publish this; capabilities {db: {rules: [{path: "", read: "view", write: "admin"}]}})
     files.json            {published path: source path} for the Artifact tool's `files` (cards, faces, covers, catalog)
     c/ lo/ f/ t/ cat/     images + the catalog search data (cat/catalog.json + cat/s<N>.jpg sprites)
-Refuses to write anything when scripts/checks/album_gate.py <set> fails.
+Refuses to write anything when scripts/checks/album_gate.py <set> fails, and refuses to write index.html when
+scripts/albumreview/selftest.py fails on the finished page (every ordered card shown, grid toggle, Move to #, Done never locks).
 
 Inputs (all named by config/album-records/<set>.json): the album spec (deco_build-style JSON: groups + mats), the card
 manifest (assets/cards/<set>/manifest.json, cards from gen2 = code band enforced), config/colorcards.json,
@@ -180,6 +181,19 @@ page = (TPL.replace('__TITLE__', e(f"{rec['name']} Album Review"))
            .replace('__SETNAME__', e(rec['name'])).replace('__BRAND__', e(rec['brand']))
            .replace('__COL__', cc.get('col', '#7a2c55'))
            .replace('"__DATA__"', json.dumps(DATA, ensure_ascii=False).replace('</', '<\\/')))
+# Self-test BEFORE the page is written (Nov 8 3:06pm: Scarlett vanished, grid looked gone, Done must not lock):
+# a saved order with NEW cards placed near the top must render every card, in order, in cards + grid view; Move to # works
+# on every NEW card; controls stay live after Done; no console errors. REVIEW_SELFTEST_DOC=<her saved doc json> also tests hers.
+import selftest
+TMP = os.path.join(OUT, '_selftest.html'); open(TMP, 'w').write(page)
+try:
+    fails = selftest.run(TMP)
+    if os.environ.get('REVIEW_SELFTEST_DOC'): fails += ['(her saved doc) ' + x for x in selftest.run(TMP, json.load(open(os.environ['REVIEW_SELFTEST_DOC'])))]
+finally:
+    os.remove(TMP)
+if fails:
+    sys.exit('REFUSED (review page self-test):\n  ' + '\n  '.join(fails))
+print('review page self-test: PASS')
 open(os.path.join(OUT, 'index.html'), 'w').write(page)
 json.dump(FILES, open(os.path.join(OUT, 'files.json'), 'w'), indent=0)
 print(f'ALBUM REVIEW PAGE {SET}: {OUT}/index.html  ({len(cards)} cards, {len(leftout)} left out, {len(cat)} catalog mats, {len(FILES)} files)')
