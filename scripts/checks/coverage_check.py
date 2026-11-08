@@ -146,9 +146,15 @@ if REFRESH or age_h > MAX_NET_AGE_H or not net.get('fym_pin'):
 
 # ---------------------------------------------------------------- load live builds
 src = {}
+# Nov 7 (FYM 1.18): --fym <index.html> / --gallery-data <matgallery-vNNN.json> check a CANDIDATE release before it goes live
+# (the FYM / gallery lines then describe the candidate; everything else stays live). Not saved to docs/status/coverage.json.
+CAND_FYM = sys.argv[sys.argv.index('--fym') + 1] if '--fym' in sys.argv else None
+CAND_GAL = sys.argv[sys.argv.index('--gallery-data') + 1] if '--gallery-data' in sys.argv else None
 pin = net.get('fym_pin')
-fym_html = git_show(pin['sha'], pin['path']) if pin else None
-if fym_html:
+fym_html = open(CAND_FYM).read() if CAND_FYM else (git_show(pin['sha'], pin['path']) if pin else None)
+if CAND_FYM:
+    src['fym'] = f'{CAND_FYM} (CANDIDATE, not live)'
+elif fym_html:
     src['fym'] = f"{pin['path']} @{pin['sha'][:8]} (live /find-your-match)"
 else:  # fall back to the newest preview build in the website worktree
     vs = sorted((int(d[5:]), d) for d in os.listdir(FYM_WORKTREE + '/site-app') if re.fullmatch(r'fym-v\d+', d))
@@ -169,7 +175,9 @@ vis_racks = [k for k, v in RK.items() if not v.get('hid')]
 
 G = None
 gp = net.get('gallery_pin')
-if gp:
+if CAND_GAL:
+    G = json.load(open(CAND_GAL)); src['gallery'] = f'{CAND_GAL} (CANDIDATE, not live)'
+elif gp:
     t = git_show(gp['sha'], gp['path'])
     if t: G = json.loads(t); src['gallery'] = f"{gp['path'].split('/')[-1]} @{gp['sha'][:8]} (live /mahjong-mats, data-fym={net.get('gallery_data_fym')})"
 SIDX = None
@@ -270,42 +278,18 @@ line('price_mats', 'FYM', 'Mats with a price (price filter hides the rest)', sum
 line('price_tiles', 'FYM', 'Tile sets with a price', sum(1 for s in vis_sets if s['tile'] in pt), N, missing=[s['name'] for s in vis_sets if s['tile'] not in pt])
 line('price_racks', 'FYM', 'Racks with a price', sum(1 for k in vis_racks if k in pr), len(vis_racks), missing=[RK[k]['n'] for k in vis_racks if k not in pr])
 
-# --- gallery vs FYM (both directions; matched like gate [90]: FYM key via gallery manifests, product URL, or name + brand)
+# --- gallery vs FYM (both directions). Nov 7 (FYM 1.18): ONE definition with gate [90], builder/fym_fix_nov07/gallery_cov.py
+# (the old copy here counted twins merged into a kept card, photo holds and her kept Mahjong Row picks as gaps: "24 missing")
 if G is not None:
-    GALD = 'site/livepatch/matgallery/'
-    def lj(p, d=None):
-        try: return json.load(open(p))
-        except Exception: return d
-    MAN = lj(GALD + 'manifest.json', {}); N53 = (lj(GALD + 'new53_rows.json', {}) or {}).get('manifest', {})
-    RA = {a['gallery_id']: a['fym_key'] for a in lj(GALD + 'retired_additions_oct20.json', [])}
-    XR = lj('config/mat-gallery-extra-rows.json', {'rows': []})['rows']
-    RA.update({a['img']: a['key'] for a in XR})
-    GK = lambda im: MAN.get(im) or N53.get(im) or RA.get(im)
-    nameb = lambda n, b: nz(re.sub(r'\b(neoprene|leatherette|vegan leather|mahjong|mat)\b', '', n or '', flags=re.I)) + '|' + nz(b)
-    GKS = {GK(r[0]) for r in G}; GU = {nu(r[3]) for r in G if r[3]}; GN = {nameb(r[1], r[2]) for r in G}
-    XT = lj('config/mat-gallery-crosstags.json', {}).get('remove_mats', {})
-    RMB = set(XT.get('brands', [])); RMK = {MAN.get(i) for i in XT.get('imgs', [])}
-    SKIPB = {'House of Hearts Studio'}  # Tiffany Oct 25 11:06: FYM only for now
-    def in_gal(k):
-        v = M[k]
-        return k in GKS or nu(v.get('u')) in GU or nu(v.get('u0')) in GU or nameb(v['n'], v['bn']) in GN
-    elig = [k for k in vis_mats if M[k]['bn'] not in SKIPB | RMB and k not in RMK and '#side-b' not in k and not M[k].get('twin')]
-    miss = [k for k in elig if not in_gal(k)]
-    line('gallery_has_fym', 'Gallery', 'Visible FYM mats that are in the live Mat Gallery', len(elig) - len(miss), len(elig),
-         note='House of Hearts (FYM only), Mahjong Studios, side-B twins left out', missing=[f"{M[k]['bn']}: {M[k]['n']}" for k in miss])
-    # reverse: gallery rows whose FYM mat is hidden
-    UK = {}
-    for k, v in M.items():
-        for u in (v.get('u'), v.get('u0')):
-            if u: UK.setdefault(nu(u), k)
-    NK = {nameb(v['n'], v['bn']): k for k, v in M.items()}
-    hid_rows = []; unmapped = 0
-    for r in G:
-        k = GK(r[0]); k = k if k in M else (UK.get(nu(r[3])) or NK.get(nameb(r[1], r[2])))
-        if not k: unmapped += 1
-        elif M[k].get('hid'): hid_rows.append(f'{r[2]}: {r[1]}')
+    sys.path.insert(0, os.path.join(R, 'builder/fym_fix_nov07'))
+    import gallery_cov as _GC
+    _r = _GC.compare(D, G)
+    miss = _r['missing']
+    line('gallery_has_fym', 'Gallery', 'Visible FYM mats that are in the Mat Gallery', _r['eligible'] - len(miss), _r['eligible'],
+         note='out on purpose: ' + ', '.join(f'{w} {len(x)}' for w, x in _r['accounted'].items()), missing=[f"{M[k]['bn']}: {M[k]['n']}" for k in miss])
+    hid_rows = [f"{M[k]['bn']}: {M[k]['n']}" for _i, k in _r['shown_hidden']]
     line('gallery_shows_hidden', 'Gallery', 'Gallery mats that FYM hides', len(hid_rows), len(G), zero=True,
-         note=f'{unmapped} gallery rows not found in FYM at all', missing=hid_rows)
+         note=f"{_r['unmapped']} gallery rows not found in FYM at all", missing=hid_rows)
     gv = net.get('gallery_data_fym')
     line('gallery_version', 'Gallery', f'Live gallery built from the live FYM ({FYM_VER})', int(gv == FYM_VER), 1,
          note=f'gallery data-fym={gv}', status='OK' if gv == FYM_VER else 'GAP')
@@ -416,7 +400,7 @@ res = {'at': NOW.isoformat(timespec='seconds'), 'fym': FYM_VER, 'sources': src, 
        'gaps': [x['text'] for x in gaps], 'unknown': [x['text'] for x in unk], 'lines': L,
        'net': {k: v for k, v in net.items()}}
 os.makedirs('docs/status', exist_ok=True)
-json.dump(res, open(OUT, 'w'), indent=1, ensure_ascii=False)
+if not (CAND_FYM or CAND_GAL): json.dump(res, open(OUT, 'w'), indent=1, ensure_ascii=False)  # a candidate check never replaces the live status
 print(f"COVERAGE CHECK {res['at'][:16]} · FYM {FYM_VER} · {res['summary']} · network data {net.get('at', '?')[:16]} · {time.time() - T0:.1f}s")
 for k, v in src.items(): print(f'  source {k}: {v}')
 for x in L: print(f"{x['status']:<7} [{x['area']}] {x['text']}")

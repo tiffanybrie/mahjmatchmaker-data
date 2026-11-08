@@ -144,6 +144,13 @@ stats['hidden_mahjong_co'] = sorted(f'{r[2]} | {r[1]}' for r in G if fym_key(r)[
 G = [r for r in G if fym_key(r)[0] not in _MCO]
 for r in G:
     if r[2] in _RBN and r[6]: r[6] = ''; stats.setdefault('removed_brand_no_code', []).append(f'{r[2]} | {r[1]}')
+# --- 2a3. (FYM 1.18, Nov 7; gap audit B5: the live gallery showed 23 mats FYM hides) a card whose FYM mat is HIDDEN in FYM comes out
+# of the gallery too (FYM hides for the photo bar, the non-partner lockout or a brand pull). Exception: removed brands (Mahjong Row):
+# Tiffany Nov 6 1:33pm kept the handful of their mats she matched on albums in the gallery (no code claim, above).
+_hid3 = [r for r in G if r[2] not in _RBN and (lambda k_: bool(k_) and bool(M[k_].get('hid')))(fym_key(r)[0])]
+stats['hidden_in_fym_out'] = sorted(f'{r[2]} | {r[1]} ({r[0]})' for r in _hid3)
+G = [r for r in G if r not in _hid3]
+if _hid3: log(f'{len(_hid3)} gallery cards out because FYM hides the mat: ' + '; '.join(stats['hidden_in_fym_out']))
 
 # --- 2b. duplicate photos (config/mat-gallery-dedupe-v6.json, Claude photo review; Oct 20 dedupe style): drop the twin, keep one card,
 # note under the name (row field 14, e.g. 'Also available in leatherette'), optional second shop link (field 15: [label, url]).

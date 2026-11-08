@@ -77,10 +77,13 @@ def compare(D, G):
         for u in (v.get('u'), v.get('u0'), v.get('u_dead')):
             if u: UK.setdefault(nu(u), k)
     NK = {nameb(v['n'], v['bn']): k for k, v in M.items()}
+    RBN = set((lj(R + 'config/code-truth.json', {}) or {}).get('removed_brands', {}))
     shown_hidden, unmapped = [], 0
     for r in G:
         k = GK(r[0]); k = k if k in M else (UK.get(nu(r[3])) or NK.get(nameb(r[1], r[2])))
         if not k: unmapped += 1
-        elif M[k].get('hid'): shown_hidden.append((r[0], k))
-    eligible = sum(1 for k, v in M.items() if not v.get('hid')) - sum(len(x) for x in acc.values())
+        elif M[k].get('hid'):
+            if r[2] in RBN: acc.setdefault('removed brand: her album-matched mats kept in the gallery (Nov 6 1:33pm)', []).append(f'{r[2]}: {r[1]}')
+            else: shown_hidden.append((r[0], k))
+    eligible = sum(1 for k, v in M.items() if not v.get('hid')) - sum(len(x) for w, x in acc.items() if not w.startswith('removed brand: her'))
     return dict(missing=missing, shown_hidden=shown_hidden, accounted=acc, unmapped=unmapped, eligible=eligible)
