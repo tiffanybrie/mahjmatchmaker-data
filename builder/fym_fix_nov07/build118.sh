@@ -44,7 +44,7 @@ for x in prices_v118.py tableview_v118.py tableview_racks_v118.py; do           
 done
 python3 "$H/rackhold118.py" "$D"                                        # gate [146]: rack cut-outs with a halo held from the Table
 python3 "$H/price118.py" "$D"
-python3 "$H/tiledeckprice118.py" "$D"                                  # QA Nov 8 F2: mat-door tile deck keeps unpriced sets last with a price chosen (gate [166b])
 python3 "$H/zoomswipe_v118.py" "$D" | tail -1
 if git -C "$R" ls-files --error-unmatch "$H/doors_v118.py" >/dev/null 2>&1; then python3 "$H/doors_v118.py" "$D" | tail -2; fi                  # doors patch (after zoomswipe), when present
+python3 "$H/tiledeckprice118.py" "$D"                                  # QA Nov 8 F2: mat-door tile deck keeps unpriced sets last with a price chosen + See all grid across sections (QA2), after doors_v118 (gate [166b])
 python3 "$H/release118.py" "$D"

@@ -20,7 +20,7 @@ Usage: python3 builder/fym_fix_nov07/artifact118.py <live artifact dir (index.ht
 import sys, os, json, re, struct, subprocess, copy, shutil
 LIVE, S7, S8, B8, OUT, LST = sys.argv[1:7]
 MIRROR = sys.argv[7] if len(sys.argv) > 7 else None
-H = os.path.dirname(os.path.abspath(__file__))
+H = os.path.dirname(os.path.abspath(__file__)); REPO = os.path.abspath(os.path.join(H, '..', '..')) + '/'
 CAP_TOTAL, CAP_FILES, CAP_INDEX, MARGIN = 256 * 2**20, 512, 16 * 10**6, 3 * 10**6
 FILES_MAX, SLACK = 510, 150_000   # coordinator Nov 8: <= 510 files; keep a little over the 3 MB margin
 def LD(h):
@@ -93,7 +93,16 @@ _best = {}
 for s_ in DFM['sets']:
     if s_.get('hid'): continue
     for pos, j in enumerate(s_.get('rank', [])): _best[j] = min(_best.get(j, 1e9), pos)
-CANDS = [k for k, o in DFM['mats'].items() if not o.get('hid') and k not in PICKS and not o.get('pa') and inpack(o.get('f'))
+# QA2 Nov 8: 'pa' only means the code auto-applies; partner brands without a working code (Fait a Main) and the allowed
+# non-partners are protected too, and in the holiday season no holiday mat is slimmed
+_COV = {n for b in json.load(open(REPO + 'config/fym-partner-coverage.json'))['brands'] for n in b['fym_names']}
+_NA = json.load(open(REPO + 'builder/fym_flags/nonpartner_allow.json'))
+PROT_BRANDS = _COV | set(_NA.get('partners', [])) | set(_NA.get('brands', {})); PROT_MATS = set(_NA.get('mats', {}))
+HOL_SEASON = 'HOLIDAY_SEASON=true' in F
+HOLRE = re.compile(r'(?i)christmas|hanukk?ah|chanukah|menorah|dreidel|santa|holiday|xmas|noel|snow|winter|reindeer|nutcracker|merry|jingle|ornament|gingerbread|candy cane|poinsettia|sleigh|tinsel|festive')
+def holiday_mat(o): return bool(o.get('hol') or o.get('wfh') or o.get('ayr') or HOLRE.search(o.get('n', '')))
+def protected(k, o): return o.get('pa') or o.get('bn') in PROT_BRANDS or k in PROT_MATS or k in PICKS or (HOL_SEASON and holiday_mat(o))
+CANDS = [k for k, o in DFM['mats'].items() if not o.get('hid') and not protected(k, o) and inpack(o.get('f'))
          and json.dumps(k, ensure_ascii=False) not in _rest]
 CANDS.sort(key=lambda k: (-_best.get(_oi.get(k), 1e9), k))
 def img_ids(s):
@@ -213,7 +222,9 @@ def emit(SL):
         mm = re.fullmatch(r'mc/(\d+)\.webp', p)
         if not mm or p in drop or p in reship or int(mm.group(1)) >= 190: continue
         src = f'{B8}/{p}'
-        if not os.path.exists(src) or os.path.getsize(src) != L[p]: continue
+        if not os.path.exists(src) or os.path.getsize(src) != L[p]:
+            src = f'{MIRROR}/{p}' if MIRROR else ''  # QA2 Nov 8: the live mirror copy is the live file byte for byte
+            if not src or not os.path.exists(src) or os.path.getsize(src) != L[p]: continue
         raw_ = open(src, 'rb').read(); hh = pack_hdr(raw_)
         keep = {f: v for f, v in hh.items() if needed(f)}
         if len(keep) == len(hh) or not keep: continue
@@ -227,7 +238,7 @@ def emit(SL):
     files.update(T118F); files.update({p: None for p in drop})
     json.dump(files, open(OUT + '/files.json', 'w'), indent=1)
     # manifest for gate [170]: every final mc file -> photo names (None = not verifiable here)
-    man = {'pack_hi': PACK_HI, 'files': {}}
+    man = {'pack_hi': PACK_HI, 'slim_by_design_brands': sorted(SLIM_BRANDS), 'holiday_season': HOL_SEASON, 'files': {}}
     for p in sorted(L):
         if not p.startswith('mc/') or p in drop: continue
         if p == 'mc/190.webp': man['files'][p] = sorted(hd2); continue

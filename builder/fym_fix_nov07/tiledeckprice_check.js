@@ -1,4 +1,4 @@
-// FYM gate [166b] (Nov 8, FYM 1.18 QA F2): runs the page's OWN code in node (tiny DOM stub, same harness as fym_matdoor_check.js)
+// FYM gate [166b] (Nov 8, FYM 1.18 QA F2 + QA2 Q2: across every See all section): runs the page's OWN code in node (tiny DOM stub, same harness as fym_matdoor_check.js)
 // for the mat door -> tile deck with a price chosen. For Lotus Cove (OMM) + 'Under $175' (and 4 more mats x every price option):
 //   deck  = tAll() (what the swipe deck deals): no priced set after an unpriced one; no priced set over the limit; tile-rank order (p)
 //           holds inside the priced album+catalog group and inside the unpriced one, apart from the brand cap (BCAP) moves.
@@ -23,8 +23,9 @@ const ctx = { document, console: { log() {}, warn() {}, error() {} }, URL, Blob,
   localStorage: { getItem: () => null, setItem() {}, removeItem() {} }, sessionStorage: { getItem: () => null, setItem() {}, removeItem() {} }, location: { search: '', hash: '', href: '' }, history: { replaceState() {} } };
 ctx.window = ctx; ctx.window.IMG = {};
 vm.createContext(ctx);
-try { vm.runInContext(scripts.join('\n;\n') + '\n;globalThis.__T={S,M,D,setsForMat,tAll};', ctx, { timeout: 30000 }); }
+try { vm.runInContext(scripts.join('\n;\n') + '\n;globalThis.__T={S,M,D,setsForMat,tAll,renderMatDoor:(typeof renderMatDoor==="function"?renderMatDoor:null)};', ctx, { timeout: 30000 }); }
 catch (e) { console.log(JSON.stringify({ fails: ['page script failed to run in node: ' + e.message], notes: [] })); process.exit(0); }
+ctx.window.__imgsReady = true;
 const X = ctx.__T, S = X.S, M = X.M, D = X.D, TVD = D.tv || {};
 if (!html.includes('/*v118 no-price last*/')) F.push('price118 not applied');
 if (!html.includes('/*v118b tile-deck price groups*/')) F.push('tile-deck price groups not applied (builder/fym_fix_nov07/tiledeckprice118.py)');
@@ -54,11 +55,22 @@ function run(mk, v, label) {
     const byB = {}; for (const r of rows) { const b = (D.tiles[r.s.tile] || {}).bn || r.s.maker; (byB[b] = byB[b] || []).push(r.p); }
     for (const b in byB) { const a = byB[b]; for (let j = 1; j < a.length; j++) if (a[j] < a[j - 1]) { F.push(`${label}: ${grp ? 'priced' : 'unpriced'} group out of tile-rank order for ${b}`); break; } }
   }
-  // See all grid sections
-  const g = X.setsForMat(mk);
-  for (const sec of ['her', 'alb', 'cat']) {
-    const a = (g[sec] || []).map(r => price(r.i)); const fn = a.findIndex(p => p == null);
-    if (!S.prE.t && fn >= 0 && a.slice(fn).some(p => p != null)) F.push(`${label}: See all '${sec}' section has a priced set after an unpriced one`);
+  // See all grid (QA2 Nov 8): the RENDERED grid, across every section, first as it opens, then with Show more / partner sets opened
+  if (!X.renderMatDoor) F.push('renderMatDoor() missing');
+  else for (const open of [false, true]) {
+    S.dgrid = true; S.dshow = open ? 9999 : 0; S.dcat = open; const el = El('s-tiles');
+    try { X.renderMatDoor(el); } catch (e) { F.push(`${label}: See all render threw ${e.message}`); break; }
+    if (!/data-dset=/.test(el.innerHTML)) { F.push(`${label}: See all grid rendered no tile sets`); break; }
+    const ids = [...el.innerHTML.matchAll(/data-dset="(\d+)"/g)].map(m => +m[1]);
+    const a = ids.map(price); const fn = a.findIndex(p => p == null);
+    if (!S.prE.t && fn >= 0 && a.slice(fn).some(p => p != null)) F.push(`${label}: See all grid${open ? ' (all opened)' : ''} shows a priced set after an unpriced one (card ${fn + 1} has no price)`);
+    if (!S.prE.t && !open) {  // an unpriced card may only show once every priced set the grid has is on screen
+      const g = X.setsForMat(mk); const allPriced = [...g.her, ...g.alb, ...g.cat].filter(r => price(r.i) != null).length;
+      if (fn >= 0 && a.filter(p => p != null).length < allPriced) F.push(`${label}: See all grid shows unpriced sets while ${allPriced - a.filter(p => p != null).length} priced set(s) are still behind a button`);
+    }
+    if (!S.prE.t && /without a listed price shown last/.test(el.innerHTML) && fn >= 0 && fn < a.filter(p => p != null).length) F.push(`${label}: note says shown last but they are not`);
+    if (open && label.startsWith('Lotus Cove, Under')) N.push(`grid ${label}: ${a.map(p => p == null ? '-' : '$').join('')}`);
+    S.dgrid = false; S.dshow = 0; S.dcat = false;
   }
   return { n: deck.length, priced: pr.filter(p => p != null).length, firstUnpriced: firstNo + 1, top: deck.slice(0, 8).map((r, j) => `${r.s.name}${pr[j] == null ? ' (no price)' : ' $' + pr[j]}`) };
 }

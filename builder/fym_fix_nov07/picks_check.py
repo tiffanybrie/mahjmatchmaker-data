@@ -90,6 +90,22 @@ def run(B, argv=()):
                 if man['files'][p] is None: return f'{p} contents not verifiable (no live mirror copy)'
                 return None if f in man['files'][p] else f'not in {p}'
             copy_check('artifact ' + os.path.basename(A.rstrip('/')), DA, ha, art_ok)
+            # [170b] (QA2 Nov 8: Fait a Main Texas Mon Amour Chocolate Blue + 5 holiday mats were slimmed): no partner-brand mat
+            # (config/fym-partner-coverage.json, code applies or not), no allowed non-partner (nonpartner_allow.json) and, in the
+            # holiday season, no holiday mat may be artifact-slimmed ('ahid') while the build shows it. Exempt: the bulk catalogs
+            # slimmed by design before 1.18 (manifest slim_by_design_brands: LBB, Luna EK, Noli June, BJ&J).
+            cov = {n for b in json.load(open(REPO + 'config/fym-partner-coverage.json'))['brands'] for n in b['fym_names']}
+            na = json.load(open(REPO + 'builder/fym_flags/nonpartner_allow.json'))
+            prot = cov | set(na.get('partners', [])) | set(na.get('brands', {})); pm = set(na.get('mats', {}))
+            byd = set(man.get('slim_by_design_brands', [])); hs = man.get('holiday_season', 'HOLIDAY_SEASON=true' in ha)
+            holre = re.compile(r'(?i)christmas|hanukk?ah|chanukah|menorah|dreidel|santa|holiday|xmas|noel|snow|winter|reindeer|nutcracker|merry|jingle|ornament|gingerbread|candy cane|poinsettia|sleigh|tinsel|festive')
+            for k, o in DA['mats'].items():
+                b = DB['mats'].get(k)
+                if not o.get('ahid') or not b or b.get('hid') or b.get('bn') in byd: continue
+                why = ('partner brand' if b.get('bn') in cov or b.get('bn') in na.get('partners', []) else 'allowed non-partner' if b.get('bn') in prot or k in pm
+                       else 'holiday mat in the holiday season' if hs and (b.get('hol') or b.get('wfh') or b.get('ayr') or holre.search(b.get('n', ''))) else None)
+                if why: F.append(f"[170b] artifact: {b.get('n')} ({b.get('bn')}) is slimmed (ahid) but is a {why}")
+            I.append(f"artifact slimmed outside the by-design catalogs: {sum(1 for k, o in DA['mats'].items() if o.get('ahid') and DB['mats'].get(k, {}).get('bn') not in byd and not DB['mats'].get(k, {}).get('hid'))}")
         except Exception as e: F.append(f'[170] artifact copy check did not run: {e}')
     else: I.append(f'artifact folder not found ({A}); artifact copy not checked')
     return F, I

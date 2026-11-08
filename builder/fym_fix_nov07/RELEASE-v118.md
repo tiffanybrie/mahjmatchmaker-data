@@ -22,7 +22,7 @@ Build dir: scratchpad fym/b118. On top of 1.17 (b117):
 - Gate changes: [90] compares with the BUILT gallery via gallery_cov.py (same definition as coverage_check), FAIL when the staged gallery
   is this release; [162b], [166], [169] new; [145] reads the new price note.
 
-Website copy: fym-site-preview @e0a6a233 site-app/fym-v118/index.html (r10; assets @0d56bec7: mc 251-258 + thumbs118.js + t118),
+Website copy: fym-site-preview @a4fb6d3f site-app/fym-v118/index.html (r12; r10 @e0a6a233 was blocked by QA2; assets @0d56bec7: mc 251-258 + thumbs118.js + t118),
 produced by site118.py (r9 @1eb284bc was the copy the Nov 8 independent QA blocked).
 Mat Gallery: site/livepatch/matgallery/matgallery-v8.html (data-fym="v118"), rows data/matgallery-v118.json. build_v6 now drops cards
 whose FYM mat is hidden (Mahjong Row album picks kept, Nov 6 1:33pm).
@@ -68,3 +68,19 @@ copy r10 via site118.py (tiledeckprice118 applied after the tilerank JS), artifa
   2,728 URLs, all 200 after retrying 26 transient jsDelivr 403s). Not pasted / not installed.
 - **First --release gate after the rebuild** failed [3c] (flag photo field pointed at the asset, not m/3096) and [90] (gallery had no
   Paint Feathers card); both fixed above, gate re-run: docs/reports/fym/gate-v118-2026-11-08.txt.
+
+## QA2 fixes (Nov 8, docs/reports/fym/qa2-v118-2026-11-08.md = BLOCK)
+- **Q1 artifact slimmed a partner mat (Fait a Main Texas Mon Amour Chocolate Blue; 'pa' only means the code auto-applies) + 5 holiday
+  mats.** artifact118.py never slims a partner brand (config/fym-partner-coverage.json), an allowed non-partner (nonpartner_allow.json
+  partners / brands / mats), a pick, or (HOLIDAY_SEASON on) a holiday mat. It now re-packs live chunk files from the live mirror too
+  (lossless: only photos of mats hidden in this copy leave), which freed enough room that **0 mats are slimmed** in this delta: the 39
+  from the first fix are all back. Artifact: 265,216,439 bytes (3,219,017 free), 503 files, 1,306 visible mats (live 1,274; website
+  1,574). The only artifact-slimmed mats are the bulk catalogs slimmed by design before 1.18 (LBB, Luna EK, Noli June, BJ&J).
+  Gate [170b] fails on any partner / allowed / holiday-season holiday mat slimmed outside those catalogs (picks_check.py).
+- **Q2 See all grid unpriced first with a price.** tiledeckprice118.py (now after doors_v118 in build118.sh): with a tile price chosen
+  the grid is her priced picks, then every priced album + partner set as one tile-rank list (no partner button), then a last 'Price not
+  listed' section (her unpriced picks first), shown once every priced set is on screen; her header still counts all her picks. Lotus
+  Cove 'Under $175' opened grid: 36 priced then 9 unpriced. Gate [166b] now renders the grid with the page's own renderMatDoor in node
+  (as it opens and fully opened) for Lotus Cove + 4 most-picked mats at every price option and fails on a priced card after an unpriced
+  one, or unpriced cards shown while priced ones sit behind a button; it fails 78 times on the r10 build and passes on build, website
+  r12 and artifact. (r11 @b9f7f816 renamed the grid variable and tripped gate [42]; r12 keeps the text [42] reads.)

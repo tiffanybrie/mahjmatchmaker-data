@@ -19,8 +19,40 @@ DEF = (MARK + "const TPG=g=>{const pr=r=>!!((typeof TVD==='object'&&TVD.pt)||{})
        "return [...g.her.filter(pr),...cap(R.filter(pr)),...g.her.filter(r=>!pr(r)),...cap(R.filter(r=>!pr(r)))];}; ")
 
 
+# QA2 (Nov 8): the 'See all' grid kept priced-first only INSIDE each section, so Lotus Cove + 'Under $175' opened on 9 unpriced
+# 'Best color matches' with the 24 priced partner sets behind a button. With a tile price chosen (and something priced under it) the
+# grid is now: her priced picks | priced album + catalog sets as ONE tile-rank list ('More tile sets that suit it' / 'Best color
+# matches', 'Show more' as before; the partner button is not needed) | a last 'Price not listed' section (her unpriced picks first,
+# then the rest), shown once every priced set is on screen. The her header still counts all her picks.
+MARK2 = '/*v118c grid price groups*/'
+G_OLD = 'const m=M[S.dmat];const g=setsForMat(S.dmat);const n=S.dshow||DOOR.slim;\n if(!S.dgrid&&S.set==null){tswipe(el,lock,m,g);return;}'
+G_NEW = ('const m=M[S.dmat];let g=setsForMat(S.dmat);const n=S.dshow||DOOR.slim;\n if(!S.dgrid&&S.set==null){tswipe(el,lock,m,g);return;}'
+         + MARK2 + 'g=TGG(g);')  # keeps the 'tswipe(el,lock,m,g)' text (gate [42])
+G_DEF = (MARK2 + "const TGG=g=>{const herN=(g.her||[]).length;if(S.pr.t===''||S.prE.t)return Object.assign({},g,{herN,np:[]});"
+         "const pr=r=>!!((typeof TVD==='object'&&TVD.pt)||{})[r.s.tile],R=TSOM([...g.alb,...g.cat]);"
+         "return Object.assign({},g,{herN,her:g.her.filter(pr),alb:R.filter(pr),cat:[],np:[...g.her.filter(r=>!pr(r)),...R.filter(r=>!pr(r))]});}; ")
+H_OLD = ("(g.her.length?`<p class=\"dsub\">Tiffany matched this mat with ${g.her.length} tile set${g.her.length>1?'s':''}</p>"
+         "<div class=\"tgrid dsets\">${g.her.map(dsetBtn).join('')}</div>`:")
+H_NEW = ("(g.herN?`<p class=\"dsub\">Tiffany matched this mat with ${g.herN} tile set${g.herN>1?'s':''}</p>"
+         "${g.her.length?`<div class=\"tgrid dsets\">${g.her.map(dsetBtn).join('')}</div>`:'<p class=\"hint\">Her picks have no listed price, so they are under Price not listed below.</p>'}`:")
+M_OLD = "`<p class=\"dsub\">${g.her.length?'More tile sets that suit it':'Best color matches'}</p>"
+M_NEW = "`<p class=\"dsub\">${g.herN?'More tile sets that suit it':'Best color matches'}</p>"
+E_OLD = "(g.cat.length?`<button type=\"button\" class=\"dmore\" data-dmore=\"c\">Show partner brands’ tile sets</button>`:''));}"
+E_NEW = ("(g.cat.length?`<button type=\"button\" class=\"dmore\" data-dmore=\"c\">Show partner brands’ tile sets</button>`:''))"
+         "+(g.np.length&&g.alb.length<=n?`<p class=\"dsub\">Price not listed</p><div class=\"tgrid dsets\">${g.np.map(dsetBtn).join('')}</div>`:'');}")
+
+
+def patch_grid(h):
+    if MARK2 in h: return h, False
+    for a in (G_OLD, H_OLD, M_OLD, E_OLD, DEF_A):
+        assert h.count(a) == 1, ('grid anchor not found once', h.count(a), a[:70])
+    h = h.replace(G_OLD, G_NEW).replace(H_OLD, H_NEW).replace(M_OLD, M_NEW).replace(E_OLD, E_NEW).replace(DEF_A, G_DEF + DEF_A)
+    return h, True
+
+
 def patch(h):
-    if MARK in h: return h, False
+    h, d2 = patch_grid(h)
+    if MARK in h: return h, d2
     for a in (OLD, DEF_A, '/*v118 no-price last*/', 'function TSOM(', "function PRP(k,id){if(typeof TVD!=='object')return null;"):
         assert h.count(a) == 1, ('anchor not found once (run price118 + tilerank_v118 first)', h.count(a), a[:60])
     h = h.replace(OLD, NEW).replace(DEF_A, DEF + DEF_A)
