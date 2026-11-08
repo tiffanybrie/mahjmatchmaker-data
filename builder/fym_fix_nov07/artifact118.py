@@ -50,7 +50,13 @@ for top in DB:
                     n += 1
     else: DF[top] = b; n += 1
 assert DF['order'] == DB['order']
-DS = {DF['order'].index(k) for k in AH if k in DF['order']}
+# size (Nov 7, 1.18 at the artifact cap): every mat HIDDEN in this copy (incl. the artifact-only 'ahid' slim mats) leaves s.rank / s.cr
+# and its Table view entries (mo vendor photos, fa, cls, why, pm, cv, pf): hidden mats are never dealt, drawn or priced
+HID = {k for k, o in DF['mats'].items() if o.get('hid')}
+for _f in ('mo', 'fa', 'cls', 'why', 'pm', 'cv', 'pf'):
+    if isinstance(DF.get('tv', {}).get(_f), dict):
+        for k in [k for k in DF['tv'][_f] if k in HID]: DF['tv'][_f].pop(k)
+DS = {j for j, k in enumerate(DF['order']) if k in AH or k in HID}
 for s in DF['sets']:
     for fld in ('rank', 'cr'):
         if fld in s: s[fld] = [j for j in s[fld] if j not in DS]
@@ -76,7 +82,7 @@ tag = '<script src="b24v1.js">'; assert h.count(tag) == 1
 h = h.replace(tag, '<script>window.IMG=Object.assign(window.IMG||{},' + json.dumps(newth, separators=(',', ':')) + ');</script>' + tag)
 os.makedirs(OUT + '/mc', exist_ok=True)
 open(OUT + '/index.html', 'w').write(h)
-for s_ in [x for x in ('price118.py', 'zoomswipe_v118.py', 'tableview_v118.py', 'tableview_racks_v118.py', 'doors_v118.py', 'release118.py') if subprocess.run(['git', '-C', H, 'ls-files', '--error-unmatch', x], capture_output=True).returncode == 0]:  # code patches (tableview/doors patch render() in place)
+for s_ in [x for x in ('price118.py', 'zoomswipe_v118.py', 'tableview_v118.py', 'doors_v118.py', 'release118.py') if subprocess.run(['git', '-C', H, 'ls-files', '--error-unmatch', x], capture_output=True).returncode == 0]:  # code patches (tableview/doors patch render() in place)
     subprocess.run([sys.executable, H + '/' + s_, OUT + '/index.html'], check=True, capture_output=True)
 h = open(OUT + '/index.html').read()
 # pack: live mc/190.webp + the new chunks' photos
@@ -100,12 +106,32 @@ for p in L:
     if not mm or int(mm.group(1)) >= 190: continue
     c = int(mm.group(1)); keys = [f'm/{c * 12 + j}.webp' for j in range(12)]
     if not any(needed(f) for f in keys): drop.append(p)
-files = {'mc/190.webp': 'mc/190.webp', **{p: None for p in drop}}
+# still short of the 3 MB margin: re-pack (never re-encode) chunk files whose local build copy is byte-identical to the live one
+# (same size), keeping only the photos a visible / Tiffany's-match mat uses (fym_artifact_fit.py note: rebuild the header)
+repacked, saved = [], 0
+cands = []
+for p in L:
+    mm = re.fullmatch(r'mc/(\d+)\.webp', p)
+    if not mm or p in drop or int(mm.group(1)) >= 190: continue
+    src = f'{B8}/{p}'
+    if not os.path.exists(src) or os.path.getsize(src) != L[p]: continue
+    raw_ = open(src, 'rb').read(); hh = pack_hdr(raw_)
+    keep = {f: v for f, v in hh.items() if needed(f)}
+    if len(keep) == len(hh) or not keep: continue
+    cands.append((sum(l for f, (a, l) in hh.items() if f not in keep), p, raw_, keep))
+NEED_FREE = CAP_TOTAL - MARGIN - (sum(L.values()) - L['index.html'] - L['mc/190.webp'] - sum(L[p] for p in drop) + len(h.encode()) + os.path.getsize(OUT + '/mc/190.webp'))
+for sv, p, raw_, keep in sorted(cands, key=lambda x: -x[0]):
+    if saved >= -NEED_FREE + 200000: break
+    body_, hd_ = b'', {}
+    for f, (a, l) in sorted(keep.items(), key=lambda kv: kv[1][0]): hd_[f] = [len(body_), l]; body_ += raw_[a:a + l]
+    hj_ = json.dumps(hd_, separators=(',', ':')).encode(); open(OUT + '/' + p, 'wb').write(body_ + hj_ + struct.pack('<I', len(hj_)))
+    saved += L[p] - os.path.getsize(OUT + '/' + p); repacked.append(p); L[p] = os.path.getsize(OUT + '/' + p)
+files = {'mc/190.webp': 'mc/190.webp', **{p: p for p in repacked}, **{p: None for p in drop}}
 json.dump(files, open(OUT + '/files.json', 'w'), indent=1)
 idx = len(h.encode()); pk = os.path.getsize(OUT + '/mc/190.webp')
 tot = sum(L.values()) - L['index.html'] - L['mc/190.webp'] - sum(L[p] for p in drop) + idx + pk
 nf = len(L) - len(drop)
-print(json.dumps({'field_changes': n, 'new_chunks': NEWC, 'photos_added_to_pack': added, 'new_thumbs': len(newth), 'dropped_files': drop,
+print(json.dumps({'repacked': repacked, 'repack_saved': saved, 'field_changes': n, 'new_chunks': NEWC, 'photos_added_to_pack': added, 'new_thumbs': len(newth), 'dropped_files': drop,
                   'dropped_bytes': sum(L[p] for p in drop), 'index_bytes': idx, 'pack_bytes': pk, 'total_bytes': tot, 'files': nf,
                   'free_bytes': CAP_TOTAL - tot, 'fits_with_3MB_margin': tot <= CAP_TOTAL - MARGIN and nf <= CAP_FILES and idx <= CAP_INDEX,
                   'fits': tot <= CAP_TOTAL and nf <= CAP_FILES and idx <= CAP_INDEX}, indent=1))
