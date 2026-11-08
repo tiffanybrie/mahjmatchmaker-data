@@ -46,7 +46,7 @@ def figure(n, c, k, hol):
         u = plain(m['u']) if brand == 'Mahjong Register' else m['u']
         btn = f'<a class="mm3-btn" href="{e(u)}" target="_blank" rel="sponsored noopener">Shop the {e(label)}</a>'
     if brand not in PARTNERS: code = f'<span class="mm3-code" style="color:#8a8a8a">No code for {e(brand)}</span>'
-    elif brand == 'Mahjong Register': code = '<span class="mm3-code" style="color:#8a8a8a">No code at Mahjong Register right now</span>'
+    elif brand == 'Mahjong Register': code = '<span class="mm3-code">10% off at Mahjong Register with MAHJMATCH (excludes racks and other brands\' products)</span>'
     else: code = '<span class="mm3-code">code MAHJMATCH</span>'
     take = ('<div class="mm3-take"><p>Pair mat: Oh My Mahjong made Lotus Cove to go with Juniper. Both launch Wednesday, November 11.</p></div>'
             if mat == 'Lotus Cove' else '')

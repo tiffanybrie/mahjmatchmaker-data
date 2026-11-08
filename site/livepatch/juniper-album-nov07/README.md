@@ -14,7 +14,7 @@ the tiles go on sale Wed Nov 11 10am CT). Copy is pre-launch: "Launches Wed 11/1
   colour-theory paragraphs), 37 year-round cards, holiday section `#holiday-matches` (5 cards, 01-05, her relative order; holcss), footer.
   Captions: full mat name, "Mat by" brand page link (partners), Retired tag + "Shop Current OMM Mats" (Camellia, Birdie Green, Esme),
   Shop button = FYM 1.18 links (Mahjong Register = plain product link), `code MAHJMATCH` chip for partners, "No code for <brand>" for
-  non-partners, "No code at Mahjong Register right now", Match the tiles / Match the mat rack links. Lotus Cove: Papaya-style pair note.
+  non-partners, "10% off at Mahjong Register with MAHJMATCH (excludes racks and other brands' products)" (was "No code at Mahjong Register right now" until Nov 8), Match the tiles / Match the mat rack links. Lotus Cove: Papaya-style pair note.
   No "Tiffany's take" blurbs: the review-page "why" notes were written TO her (e.g. "Your #1", "so it's #2"), not for readers.
 - curl: 200, 42 `mm3-c` (5 `mm3-hc`), h1, title/description = SEO, 47/47 images 200; holiday_numbering.py 0 problems; Papaya page untouched (56 cards).
 - **/mahjong-tile-matches**: Juniper first in "Our Latest Albums" + end of Green grid (block ...1478_3720; the home page album strip renders from it).
