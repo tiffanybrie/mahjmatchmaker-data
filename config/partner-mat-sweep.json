@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-08T18:54:22+00:00",
+ "swept_at": "2026-11-08T23:04:26+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v118",
  "stores": {
   "amahjline.com": {
@@ -1180,7 +1180,7 @@
   "mahjmood.com": {
    "brand": "Mahj Mood",
    "status": "ok",
-   "products": 55,
+   "products": 54,
    "mats": [
     [
      "2026-11-05T15:11:45-06:00",
@@ -2666,8 +2666,18 @@
   "letsbebesties.com": {
    "brand": "Let's Be Besties",
    "status": "ok",
-   "products": 554,
+   "products": 556,
    "mats": [
+    [
+     "2026-11-08T15:28:09-05:00",
+     "Seasons Mid-Century Mahjong Mat",
+     "seasons-mid-century-mahjong-mat"
+    ],
+    [
+     "2026-11-08T14:47:31-05:00",
+     "Nutcracker Christmas Mahjong Mat",
+     "nutcracker-christmas-mahjong-mat"
+    ],
     [
      "2026-11-07T17:54:35-05:00",
      "Tidal Glass with Simple Middle Mahjong Mat",
@@ -4510,6 +4520,16 @@
     ]
    ],
    "missing": [
+    [
+     "2026-11-08T15:28:09-05:00",
+     "Seasons Mid-Century Mahjong Mat",
+     "seasons-mid-century-mahjong-mat"
+    ],
+    [
+     "2026-11-08T14:47:31-05:00",
+     "Nutcracker Christmas Mahjong Mat",
+     "nutcracker-christmas-mahjong-mat"
+    ],
     [
      "2026-11-07T17:54:35-05:00",
      "Tidal Glass with Simple Middle Mahjong Mat",
