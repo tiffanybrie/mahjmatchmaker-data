@@ -129,15 +129,11 @@ def main():
               'u': m['link'], 'product_url': m.get('product_url'), 'img': p, 'src': url, 'hol': hol, 'hid': False, 'reason': '',
               'colours': sh, 'added_by': f'catalog_refresh {SET} {NOW.isoformat(timespec="minutes")}'}
         if m.get('shopmy_id'): st['shopmy_id'] = m['shopmy_id']
-        if m.get('amazon_her_pick'): st['b'] = 'Amazon'; st['note'] = 'Her own Amazon ShopMy pin (counts as her pick for albums, Tiffany Nov 8)'
-        if m.get('amazon_her_pick'): amz.append(st)  # Nov 8 (coordinator for Tiffany): Amazon pins stay in the album pool, NOT staged for FYM until she says
-        else: (stage_sm if m.get('shopmy_id') else stage_pa).append(st)
+        if m.get('amazon_her_pick'): st['b'] = 'Amazon'; st['note'] = "Her own Amazon ShopMy pin: staged for FYM on her Nov 8 2:08pm yes; counts as her pick for albums"
+        (stage_sm if m.get('shopmy_id') else stage_pa).append(st)  # Tiffany Nov 8 2:08pm: "if it's in ShopMy, bring it in" (Amazon pins too)
     if stage_sm:
         json.dump({'_note': f'Catalog refresh {NOW:%b %d %H:%M}: ShopMy mat pins not yet in the gallery/FYM (incl. her Amazon pins), staged for the next FYM release by scripts/albumreview/catalog_refresh.py. Photo flags decide visibility at build time.',
                    'mats': stage_sm}, open(R + f'config/fym-shopmy-catalog-refresh-{D8}.json', 'w'), indent=1, ensure_ascii=False)
-    if amz:
-        json.dump({'_note': f'Her Amazon ShopMy pins found by the catalog refresh {NOW:%b %d %H:%M}: album candidates only. NOT staged for FYM (Amazon never auto-enters FYM; waiting on her call, Nov 8).',
-                   'mats': amz}, open(R + f'config/album-candidates-amazon-{D8}.json', 'w'), indent=1, ensure_ascii=False)
     if stage_pa:
         json.dump({'_note': f'Catalog refresh {NOW:%b %d %H:%M}: partner-store mats not in the website FYM build (builder/partner_mat_sweep.py), staged for the next FYM release.',
                    'mats': stage_pa}, open(R + f'config/fym-partner-adds-{D8}.json', 'w'), indent=1, ensure_ascii=False)
