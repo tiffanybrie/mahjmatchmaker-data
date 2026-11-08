@@ -18,3 +18,20 @@ Baseline Nov 7 curls: 0 missed-nov07 cards on every page.
 | dandy | 7+3 | main: +7 (grid now 28); hol +3 (10-12); counts: all 28 Dandy mat matches from 8 brands x2; new brands: LBB, Bam Bird, Etsy | 10, bad imgs 0, last n 28 | DONE 04:13Z |
 | heritage-2-0 | 3+7 | main: +3 (grid now 65); hol +7 (16-22); counts: all 72 Heritage 2.0 mat matches from 18 brands x2; new brands: Mahj & Moon, PLM | 10, bad imgs 0, last n 65 | DONE 04:14Z |
 | drake | 8+1 | main: +8 (grid now 45); hol +1 (5); counts: all 46 Drake mat matches from 19 brands x2; new brands: Luna EK, LBB, Etsy | 9, bad imgs 0, last n 45 | DONE 04:15Z |
+| seabreeze | 7+2 | main: +7 (grid now 31); hol +2 (7-8); counts: all 30 Seabreeze mat matches from 13 brands x2; new brands: LBB, Bougie, BJ&J, Splash | 9, bad imgs 0, last n 31 | DONE 04:16Z |
+| solara | 9+0 | main: +9 (grid now 45); counts: all 44 Solara mat matches from 16 brands x2; new brands: Anders Ruff, BJ&J, Sophie Clima | 9, bad imgs 0, last n 45 | DONE 04:16Z |
+| tortoise | 4+5 | main: +4 (grid now 50); hol +5 (5-9); counts: all 55 Tortoise mat matches from 10 brands x2; new brands: PLM | 9, bad imgs 0, last n 50 | DONE 04:17Z |
+| gatsby | 7+0 | main: +7 (grid now 55); counts: all 55 Gatsby mat matches from 12 brands x2; new brands: LBB, Bougie, Bam Bird | 7, bad imgs 0, last n 55 | DONE 04:18Z |
+| glow-wild | 3+4 | main: +3 (grid now 39); hol +4 (6-9); counts: all 43 Glow Wild mat matches from 11 brands x2; new brands: none | 7, bad imgs 0, last n 39 | DONE 04:19Z |
+| luminaire | 7+0 | main: +7 (grid now 22); counts: all 21 Luminaire mat matches from 7 brands x2; new brands: Rebecca Illustrated, AussieHannaGift, Mahj & Moon | 7, bad imgs 0, last n 22 | DONE 04:20Z |
+| smith | 5+2 | main: +5 (grid now 31); hol +2 (14-15); counts: all 33 Smith mat matches from 13 brands x2; new brands: Fait a Main, LBB, Luna EK | 7, bad imgs 0, last n 31 | DONE 04:20Z |
+| osler | 5+1 | main: +5 (grid now 28); hol +1 (16); counts: all 29 Osler mat matches from 13 brands x2; new brands: LBB, Rebecca Illustrated; + 2 Ozark links re-pointed to www.ozarkmahjongg.com/product-page/ | 6, bad imgs 0, last n 28 | DONE 04:21Z |
+| pearlescent | 3+3 | main: +3 (grid now 29); hol +3 (12-14); counts: all 32 Pearlescent mat matches from 7 brands x2; new brands: none | 6, bad imgs 0, last n 29 | DONE 04:22Z |
+| taylor | 6+0 | main: +6 (grid now 23); counts: all 22 Taylor mat matches from 7 brands x2; new brands: YOLO, Splash, Mahj & Moon | 6, bad imgs 0, last n 23 | DONE 04:23Z |
+| glitterville | 3+2 | main: +3 (grid now 19); hol +2 (10-11); counts: all 21 Glitterville mat matches from 4 brands x2; new brands: Bam Bird | 5, bad imgs 0, last n 19 | DONE 04:24Z |
+| palm-royale | 4+1 | main: +4 (grid now 23); hol +1 (7); counts: all 24 Palm Royale mat matches from 5 brands x2; new brands: Splash, PLM | 5, bad imgs 0, last n 23 | DONE 04:24Z |
+| pippa | 3+2 | main: +3 (grid now 29); hol +2 (2-3); counts: all 29 Pippa mat matches from 15 brands x2; new brands: Bougie, PLM | 5, bad imgs 0, last n 29 | DONE 04:25Z |
+| sorbet | 3+1 | main: +3 (grid now 23); hol +1 (6); counts: all 21 Sorbet mat matches from 6 brands x2; new brands: none | 4, bad imgs 0, last n 23 | DONE 04:26Z |
+| limoncello | 1+0 | main: +1 (grid now 18); counts: all 16 Limoncello mat matches from 6 brands x2; new brands: none | 1, bad imgs 0, last n 18 | DONE 04:27Z |
+| gemma | 4+0 | main: +4 (grid now 19); counts: all 18 Gemma mat matches from 8 brands x2; new brands: Bam Bird, LBB, Splash | 4, bad imgs 0, last n 19 | DONE 04:27Z |
+| willow | 2+0 | main: +2 (grid now 46); counts: all 46 Willow mat matches from 20 brands x2; new brands: none | 2, bad imgs 0, last n 46 | DONE 04:28Z |
