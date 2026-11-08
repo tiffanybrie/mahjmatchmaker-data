@@ -42,5 +42,10 @@ try:
         out+=['  - '+l.split(' | missing:')[0][:170] for l in g[:8]]
         if len(g)>8: out.append(f'  ... +{len(g)-8} more: python3 scripts/checks/coverage_check.py')
 except Exception: pass
+# Nov 8 12:57pm (Tiffany: TNT recs "get missed every single time"): every album set needs a Tiles & Tablescapes search on record.
+try:
+    r=subprocess.run(['python3','scripts/checks/tnt_check.py'],capture_output=True,text=True,timeout=20)
+    if r.returncode: out+=[l for l in r.stdout.splitlines() if l.strip()]
+except Exception: pass
 if out:
     print('=== FRONT DOOR (automatic, every message) ===\n'+'\n'.join(out)+'\nRule: if you tell Tiffany you will fix something, fix it BEFORE you reply, or add it to docs/OVERDUE.md in the same turn and tell her who/when.')

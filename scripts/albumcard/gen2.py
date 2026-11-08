@@ -19,6 +19,11 @@ spec = json.load(open(sys.argv[1])); out = sys.argv[2]; os.makedirs(out, exist_o
 sys.path.insert(0, R + 'scripts/checks'); from card_code_band_check import check_cards as _band_check
 _bad = _band_check(spec)
 if _bad: sys.exit('REFUSED (card_code_band_check): the code band must be "SAVE WITH CODE : MAHJMATCH" on these cards:\n  ' + '\n  '.join(_bad))
+# Nov 8 12:57pm (Tiffany): Tiles & Tablescapes recs are never optional for an album. No TNT search on record = no album cards.
+from tnt_check import missing_for_outdir as _tnt_missing
+_t = _tnt_missing(out)
+if _t: sys.exit(f'REFUSED (tnt_check): album set "{_t}" has no Tiles & Tablescapes search in config/tnt-recs.json. '
+                'Search the TNT group first; allowed recs lead the album ("TNT rec · mat · brand").')
 def uri(im, fmt='JPEG', q=88, maxs=None):
     if isinstance(im, str): im = Image.open(im)
     if maxs: im = im.copy(); im.thumbnail((maxs, maxs))
