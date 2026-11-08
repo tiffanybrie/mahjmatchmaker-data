@@ -89,6 +89,8 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{
 .lo .pic img.ins{position:absolute;right:10px;bottom:10px;width:34%;border:3px solid #fff;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.25);pointer-events:none}
 .put{min-height:44px;border-radius:999px;border:2px solid var(--pink);background:var(--card);color:var(--pink);padding:0 18px}
 .put[aria-pressed="true"]{background:var(--pink);color:#fff}
+.morebox{margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px}
+.morebox summary{cursor:pointer;font-weight:700;min-height:32px}.morebox summary small{font-weight:400;color:var(--muted)}
 /* search */
 .search{width:100%;font:16px var(--body);border:2px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--card);color:var(--ink)}
 .res{display:grid;gap:8px;margin-top:10px}
@@ -125,7 +127,7 @@ textarea{width:100%;min-height:140px;font:16px/1.45 var(--body);border:2px solid
   <h1>__SETNAME__</h1>
   <p class="lede">Every tap saves on its own. Nothing to copy or paste. When you're finished, tap <b>Done</b> at the bottom, or just say “done” in chat.</p>
   <div id="round"></div>
-  <nav aria-label="Sections"><a href="#did">What Claude did</a><a href="#tiles">Tiles</a><a href="#faces">Faces</a><a href="#matches">Matches</a><a href="#holiday">Holiday</a><a href="#left">Left out</a><a href="#missed">Missed one?</a><a href="#else">Anything else</a></nav>
+  <nav aria-label="Sections"><a href="#did">What Claude did</a><a href="#tiles">Tiles</a><a href="#faces">Faces</a><a href="#matches">Matches</a><a href="#holiday">Holiday</a><a href="#left">Left out</a><a href="#finds">New finds</a><a href="#missed">Missed one?</a><a href="#else">Anything else</a></nav>
 
   <h2 id="did">What Claude did</h2>
   <p class="lede">Steps 1–8 of the Album Playbook, each with its proof. The page only builds when every step is on record.</p>
@@ -154,8 +156,14 @@ textarea{width:100%;min-height:140px;font:16px/1.45 var(--body);border:2px solid
   <div class="list" id="hol"></div>
 
   <h2 id="left">Left out</h2>
-  <p class="lede">Every mat Claude passed over, with the reason. <b>Put it in</b> moves it into the album next round.</p>
+  <p class="lede">Every mat Claude passed over, with the reason. <b>Put it in</b> moves it into the album next round. Extra true matches from big catalogs sit in the <b>More from</b> lists below.</p>
   <div class="list" id="leftout"></div>
+
+  <div id="more"></div>
+
+  <h2 id="finds">New finds</h2>
+  <p class="lede">Mats Claude found online that aren't in our catalog yet. <b>Bring it in</b> = Claude adds it to the catalog and this album; you add the ShopMy link if you want one.</p>
+  <div class="list" id="nf"></div>
 
   <h2 id="missed">Missed one?</h2>
   <p class="lede">Search every mat in Find Your Mat-ch. Tap one to add it.</p>
@@ -177,7 +185,7 @@ const D="__DATA__";
 const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const byId=Object.fromEntries(D.cards.map(c=>[c.id,c]));
 function fresh(){return{set:D.set,round:D.round,v:{},notes:{},order:{main:D.cards.filter(c=>!c.hol).map(c=>c.id),hol:D.cards.filter(c=>c.hol).map(c=>c.id)},
-  ordering_off:false,faces:D.picks.slice(),cover:D.coverDefault,putin:[],adds:[],anything:'',done:false}}
+  ordering_off:false,faces:D.picks.slice(),cover:D.coverDefault,putin:[],adds:[],finds:{},anything:'',done:false}}
 let S=fresh();
 function hydrate(d){ // keep only ids this round knows about
   const n=fresh(),ok=new Set(D.cards.map(c=>c.id)),lo=new Set(D.leftout.map(l=>l.id)),fk=new Set(D.faces.flatMap(g=>g.items.map(i=>i.k)));
@@ -187,6 +195,7 @@ function hydrate(d){ // keep only ids this round knows about
   n.ordering_off=!!d.ordering_off;if(Array.isArray(d.faces))n.faces=d.faces.filter(k=>fk.has(k));
   if(Number.isInteger(d.cover)&&D.covers[d.cover])n.cover=d.cover;
   n.putin=(d.putin||[]).filter(i=>lo.has(i));n.adds=(d.adds||[]).filter(a=>a&&a.k).slice(0,60);
+  const fi=new Set(D.finds.map(f=>f.id));for(const[k,v]of Object.entries(d.finds||{}))if(fi.has(k)&&(v==='in'||v==='skip'))n.finds[k]=v;
   n.anything=typeof d.anything==='string'?d.anything.slice(0,5000):'';n.done=!!d.done;return n}
 
 /* ---------- saving: one write at a time, coalesced ---------- */
@@ -236,12 +245,19 @@ function renderList(sec){const ids=S.order[sec];const el=$(sec==='main'?'#main':
   el.innerHTML=ids.length?ids.map((id,i)=>cardHTML(byId[id],i,ids.length,sec)).join(''):'<p class="empty">No cards in this section.</p>';
   el.classList.toggle('noord',S.ordering_off)}
 function renderTally(){const v=Object.values(S.v);$('#tally').textContent=`${v.filter(x=>x==='keep').length} kept · ${v.filter(x=>x==='remove').length} out · ${D.cards.length} cards`;$('#noorder').checked=S.ordering_off}
-function renderLeft(){const on=new Set(S.putin);$('#leftout').innerHTML=D.leftout.length?D.leftout.map(l=>`<article class="mc lo" data-lo="${l.id}"><div class="pic"><button data-z="lo/${l.id}.jpg" aria-label="See ${esc(l.name)} full size"><img class="mat" src="lo/${l.id}.jpg" alt="${esc(l.name)} mat" loading="lazy"></button><img class="ins" src="t/inset.jpg" alt=""></div>
+function loHTML(l,on){return `<article class="mc lo" data-lo="${l.id}"><div class="pic"><button data-z="lo/${l.id}.jpg" aria-label="See ${esc(l.name)} full size"><img class="mat" src="lo/${l.id}.jpg" alt="${esc(l.name)} mat" loading="lazy"></button><img class="ins" src="t/inset.jpg" alt=""></div>
 <div class="body"><h4>${esc(l.name)}</h4><p class="bn">${esc(l.brand)}${l.hol?' · Holiday':''}${l.retired?' · Retired':''}</p><p class="why">${esc(l.why)}</p>
-<div class="ctl"><button class="put" data-put="${l.id}" aria-pressed="${on.has(l.id)}">${on.has(l.id)?'♥ Going in':'Put it in'}</button></div></div></article>`).join(''):'<p class="empty">Nothing was left out.</p>'}
+<div class="ctl"><button class="put" data-put="${l.id}" aria-pressed="${on.has(l.id)}">${on.has(l.id)?'♥ Going in':'Put it in'}</button></div></div></article>`}
+function renderLeft(){const on=new Set(S.putin);const lo=D.leftout.filter(l=>!l.more),mo=D.leftout.filter(l=>l.more);
+  $('#leftout').innerHTML=lo.length?lo.map(l=>loHTML(l,on)).join(''):'<p class="empty">Nothing was left out.</p>';
+  const by={};mo.forEach(l=>(by[l.more]=by[l.more]||[]).push(l));
+  $('#more').innerHTML=Object.entries(by).map(([b,ls])=>`<details class="morebox"${ls.some(l=>on.has(l.id))?' open':''}><summary>More from ${esc(b)} <small>(${ls.length} more true ${ls.length===1?'match':'matches'}; only the best few go in the album)</small></summary><div class="list">${ls.map(l=>loHTML(l,on)).join('')}</div></details>`).join('')}
+function renderFinds(){$('#nf').innerHTML=D.finds.length?D.finds.map(f=>{const v=S.finds[f.id]||'';return `<article class="mc lo"><div class="pic"><button data-z="nf/${f.id}.jpg" aria-label="See ${esc(f.name)} full size"><img class="mat" src="nf/${f.id}.jpg" alt="${esc(f.name)}" loading="lazy"></button><img class="ins" src="t/inset.jpg" alt=""></div>
+<div class="body"><h4>${esc(f.name)}</h4><p class="bn">${esc(f.seller)}</p><p class="why">${esc(f.why)}</p>${f.note?`<p class="bn">${esc(f.note)}</p>`:''}<p class="bn"><a href="${esc(f.url)}" target="_blank" rel="noopener">See it where it's sold</a> · found via ${esc(f.source)}</p>
+<div class="ctl"><button class="put" data-find="${f.id}" data-v="in" aria-pressed="${v==='in'}">${v==='in'?'♥ Bringing it in':'Bring it in'}</button><button class="ic x" data-find="${f.id}" data-v="skip" aria-pressed="${v==='skip'}" aria-label="Skip ${esc(f.name)}">✕</button><span class="state">${v==='skip'?'Skipped':''}</span></div></div></article>`}).join(''):'<p class="empty">No new mats turned up in this search.</p>'}
 function renderAdds(){$('#adds').innerHTML=S.adds.map(a=>`<span class="chip">♥ ${esc(a.n)} · ${esc(a.b)}<button data-unadd="${esc(a.k)}" aria-label="Remove ${esc(a.n)}">✕</button></span>`).join('');if(CAT)search()}
 function renderDone(){const b=$('#done');b.setAttribute('aria-pressed',S.done);b.textContent=S.done?'Done ✓ Claude will take it from here':'Done';$('#anything').value=S.anything}
-function renderAll(){renderRound();renderCovers();renderFaces();renderList('main');renderList('hol');renderTally();renderLeft();renderAdds();renderDone()}
+function renderAll(){renderRound();renderCovers();renderFaces();renderList('main');renderList('hol');renderTally();renderLeft();renderFinds();renderAdds();renderDone()}
 
 /* ---------- search ---------- */
 let CAT=null,catLoading=null;
@@ -263,6 +279,7 @@ document.addEventListener('click',e=>{const t=e.target;
   const a=t.closest('[data-act]');if(a){const card=a.closest('.mc'),id=card.dataset.id,sec=card.dataset.sec,act=a.dataset.act;
     if(act==='up'||act==='down'){move(sec,id,act==='up'?-1:1);return}
     S.v[id]===act?delete S.v[id]:S.v[id]=act;renderList(sec);renderTally();save();document.querySelector(`.mc[data-id="${id}"] [data-act="${act}"]`)?.focus();return}
+  const fd=t.closest('[data-find]');if(fd){const id=fd.dataset.find,v=fd.dataset.v;S.finds[id]===v?delete S.finds[id]:S.finds[id]=v;renderFinds();save();document.querySelector(`[data-find="${id}"][data-v="${v}"]`)?.focus();return}
   const p=t.closest('[data-put]');if(p){const id=p.dataset.put,i=S.putin.indexOf(id);i>-1?S.putin.splice(i,1):S.putin.push(id);renderLeft();save();document.querySelector(`[data-put="${id}"]`)?.focus();return}
   const ad=t.closest('[data-add]');if(ad){const k=ad.dataset.add,i=S.adds.findIndex(x=>x.k===k);if(i>-1)S.adds.splice(i,1);else{const r=CAT.find(r=>r[0]===k);S.adds.push({k,n:r[1],b:r[2]})}renderAdds();save();return}
   const un=t.closest('[data-unadd]');if(un){S.adds=S.adds.filter(x=>x.k!==un.dataset.unadd);renderAdds();save();return}

@@ -37,7 +37,7 @@ lo_all = J(rec['leftout']['file'])[rec['leftout']['key']]
 cc = J('config/colorcards.json')['sets'][SET]
 snap = J('config/fym-mats-snapshot.json')
 os.makedirs(OUT, exist_ok=True)
-for d in ('c', 'lo', 'f', 't', 'cat'): os.makedirs(os.path.join(OUT, d), exist_ok=True)
+for d in ('c', 'lo', 'f', 't', 'cat', 'nf'): os.makedirs(os.path.join(OUT, d), exist_ok=True)
 FILES = {}
 
 
@@ -85,7 +85,13 @@ leftout = []
 for n, m in enumerate(lo_all):
     i = f"lo-{slug(m['brand'])}-{slug(m['name'])}"
     put(f'lo/{i}.jpg', src=m['img'], maxs=900, q=82)
-    leftout.append({'id': i, 'name': m['name'], 'brand': m['brand'], 'why': m['why'], 'retired': m.get('retired', False), 'hol': bool(m.get('holiday'))})
+    leftout.append({'id': i, 'name': m['name'], 'brand': m['brand'], 'why': m['why'], 'retired': m.get('retired', False), 'hol': bool(m.get('holiday')), 'more': m.get('more_from')})
+# ---- new finds (Playbook step 3b discovery): mats not in our catalog, Bring it in / Skip
+disc = rec.get('discovery') or {}
+finds = []
+for f in disc.get('new_finds', []):
+    put(f"nf/{f['id']}.jpg", src=f['img'], maxs=900, q=84)
+    finds.append({k: f.get(k, '') for k in ('id', 'name', 'seller', 'url', 'source', 'why', 'note')})
 
 # ---- tiles, covers, colour card, wheel, faces
 put('t/tile.jpg', src=TP['file'], maxs=1400)
@@ -145,6 +151,8 @@ steps = [
  {'n': 2, 'name': 'Colour card', 'ok': bool(P['colorcard'].get('img')), 'txt': 'Back colour first, then layers, then face colours by how many tiles carry them.', 'img': 't/cc.jpg'},
  {'n': 3, 'name': 'Facebook research', 'ok': bool(t.get('scanned') and og.get('scanned')),
   'txt': f"Searched {groups_txt}. Terms: {terms}. Tiles & Tablescapes recs: {tnt_recs}; other groups: {og_recs}. " + (og.get('note') or '')},
+ {'n': '3b', 'name': 'Mat discovery', 'ok': bool(disc.get('at')),
+  'txt': f"{len(disc.get('searches', []))} searches (" + ', '.join(sorted({x['where'] for x in disc.get('searches', [])})) + '): ' + '; '.join(f"“{x['terms']}”" for x in disc.get('searches', [])) + f". New finds: {len(disc.get('new_finds', []))} (below, Bring it in or Skip). Missed catalog mats added: " + (', '.join(disc.get('misses_added', [])) or 'none') + '. ' + (('Complementary side: ' + '; '.join(f"“{x['terms']}”" for x in disc.get('searches', []) if x.get('complementary')) + '. ' + disc.get('complementary', '') + ' ') if disc.get('complementary') else '') + disc.get('recheck_nonpartner', '')},
  {'n': 4, 'name': 'Candidates pulled', 'ok': bool(pool.get('size') and ck.get('at')),
   'txt': (f"Catalog checked {CKT}: {len(ck.get('added', []))} new mats added ({ck.get('shopmy_new', 0)} from ShopMy, {ck.get('partner_new', 0)} from partner stores). " if ck.get('at') else 'Catalog not checked. ')
          + f"Pool of {pool.get('size')} mats ({pool.get('year_round', '?')} year-round, {pool.get('holiday', '?')} holiday in Find Your Mat-ch, plus the new ones). Sources: " + '; '.join(pool.get('sources', [])) + '.'},
@@ -159,7 +167,7 @@ steps = [
 rounds = rec.get('rounds', [])
 DATA = {'set': SET, 'name': rec['name'], 'brand': rec['brand'], 'round': len(rounds) + 1,
         'last': rounds[-1] if rounds else None, 'steps': steps, 'covers': covers, 'coverDefault': rec['covers'].get('default', 0),
-        'faces': fgroups, 'picks': picks, 'legacyFaces': rec.get('legacy_faces_key'), 'cards': cards, 'leftout': leftout,
+        'finds': finds, 'faces': fgroups, 'picks': picks, 'legacyFaces': rec.get('legacy_faces_key'), 'cards': cards, 'leftout': leftout,
         'groupsOrder': list(dict.fromkeys(c['g'] for c in cards if not c['hol']))}
 
 e = html.escape

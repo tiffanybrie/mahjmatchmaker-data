@@ -171,3 +171,9 @@ Her note (Oct 31): "I think will only allow you to affiliate if you are in their
 - The Mahjong House: https://themahjonghouse.com/pages/contact · https://themahjonghouse.com/pages/teachers · https://www.cuelinks.com/campaigns/the-mahjong-house-affiliate-program
 - Rack It! Mahjong: https://rackitmahjong.com/policies/refund-policy · https://partners.rackitmahjong.com/login
 - The Mahjong Line: https://themahjongline.com/pages/become-a-tml-ambassador · https://ox8u47p4pr2.typeform.com/to/rBWiKxlH
+
+## New brands from album mat discovery (Nov 8, Deco albums; Album Playbook step 3b)
+| Brand | Where it sells | Why it came up | Next |
+|---|---|---|---|
+| Dreamframer Art | Etsy shop DreamframerArt (Star Seller, 3.6k sales); wholesale on Faire | Teal Art Deco Peacock and Dark Blue Art Deco Gold Fans mats: standout candidates for Deco Lagoon / Indigo / Mulberry (New finds on the review pages). Note: their lifestyle photos are AI-generated (they label them). | Check for an affiliate program or ShopMy (Etsy); outreach email if none |
+| Golden Pond Mahjong | Etsy shop GoldenPondMahjong | Secret Canopy (peacocks, peonies, pagoda): teal + pink, a New find for Lagoon / Mulberry; Parlor was a Tiles & Tablescapes Deco Lagoon pairing. Already in the catalog once (Midori Shadows, non-partner). | Outreach email; ask for a clean photo without the banner |

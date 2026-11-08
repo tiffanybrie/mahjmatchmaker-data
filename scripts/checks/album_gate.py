@@ -11,6 +11,7 @@ Checks, in playbook order:
   [3b] other groups     config/tnt-recs.json sets.<set>.other_groups: scanned + groups[] (each with members),
                         or an empty groups list WITH a note
   [0] tile photo        record tile_photo approved_at set (her yes in chat; scripts/checks/tile_photo_check.py)
+  [3c] mat discovery   record discovery {at, searches[]} (light Google/Etsy/Amazon search; finds may be empty) + variety warning
   [4] pool              record pool.size > 0 and pool.sources
   [4a] catalog fresh    record catalog_checked.at the same day as pool.pulled_at and not after it
                         (scripts/albumreview/catalog_refresh.py: ShopMy every collection + partner-store sweep)
@@ -36,6 +37,21 @@ def J(p, default=None):
 
 def record(s):
     return J(f'config/album-records/{s}.json')
+
+
+def variety(s, rec):
+    import glob as _g
+    tops = {}
+    for f in _g.glob(R + 'scripts/albumcard/specs/*.json'):
+        try: d = json.load(open(f))
+        except Exception: continue
+        if not isinstance(d, dict) or not isinstance(d.get('mats'), list): continue
+        key = os.path.basename(f).rsplit('_', 1)[0]
+        tops[key] = [m.get('name') for m in d['mats'] if isinstance(m, dict) and not m.get('holiday')][:6]
+    mine = tops.get(os.path.basename(rec.get('spec', '')).rsplit('_', 1)[0], [])
+    if not mine: return None
+    common = [n for n in mine if sum(1 for k, v in tops.items() if n in v and k != os.path.basename(rec['spec']).rsplit('_', 1)[0]) >= 5]
+    return f'all 6 standouts are in the top 6 of 5+ other albums ({", ".join(common)}): add one rare or special match' if len(common) == len(mine) == 6 else None
 
 
 def check(s):
@@ -74,6 +90,11 @@ def check(s):
     elif not og.get('groups') and not og.get('note'): bad.append('[3b] other_groups has no groups and no note saying why')
     elif any(not g.get('members') for g in og.get('groups', [])): bad.append('[3b] other_groups: every group needs its member count')
     proof['research'] = {'tnt': t, 'other': og}
+    # [3c] mat discovery (Playbook step 3b, Tiffany Nov 8 1:59pm): a light targeted web search on record (finds may be empty)
+    dsc = rec.get('discovery') or {}
+    if not dsc.get('at') or not dsc.get('searches'): bad.append(f'[3c] no mat discovery on record (record discovery {{at, searches, new_finds, misses_added}})')
+    # variety (warning only): the top 6 should not all be mats already in the top 6 of 5+ other albums
+    proof['variety_warning'] = variety(s, rec)
     # [4] pool
     pool = rec.get('pool') or {}
     if not pool.get('size') or not pool.get('sources'): bad.append('[4] no candidate pool on record (record pool.size + sources)')
@@ -172,9 +193,10 @@ def main(a):
         if not fails: print('ALBUM GATE PASS: every album in progress has steps 1-8 on record')
         return 1 if fails else 0
     if not a: sys.exit(__doc__)
-    bad, _ = check(a[0])
+    bad, proof = check(a[0])
     if bad:
         print(f'ALBUM GATE FAIL {a[0]} ({len(bad)}):'); [print('  ' + b) for b in bad]; return 1
+    if proof.get('variety_warning'): print('WARNING (variety): ' + proof['variety_warning'])
     print(f'ALBUM GATE PASS {a[0]}: steps 1-8 on record'); return 0
 
 

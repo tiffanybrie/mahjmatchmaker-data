@@ -2897,5 +2897,136 @@
    "config/partner-mat-sweep.json"
   ],
   "partner_swept_at": "2026-11-08T18:52:09+00:00"
+ },
+ "discovery": {
+  "at": "2026-11-08T14:04:25-05:00",
+  "searches": [
+   {
+    "where": "Google",
+    "terms": "art deco mahjong mat",
+    "hits": "Etsy listings incl. Dreamframer Art dark blue art deco fans; OMM SoHo (in); Faire Dreamframer Art"
+   },
+   {
+    "where": "Google",
+    "terms": "peacock feather mahjong mat teal",
+    "hits": "Dreamframer Art peacock set (Faire); OMM Amethyst, Isla; Golden Pond Secret Canopy (Etsy)"
+   },
+   {
+    "where": "Google",
+    "terms": "jewel tone mahjong mat",
+    "hits": "OMM Amethyst, Jade, Astor, Hawthorne; MFM Laugh Lines"
+   },
+   {
+    "where": "Google",
+    "terms": "teal and pink mahjong mat",
+    "hits": "B&B The Dahlia, MFM Garden Party Mulberry (in), OMM La Fete, Anastasia"
+   },
+   {
+    "where": "Google",
+    "terms": "plum and teal mahjong mat berry",
+    "hits": "MFM Garden Party Mulberry (in), OMM Sugarplum, Amethyst; several unavailable Etsy listings"
+   },
+   {
+    "where": "Google",
+    "terms": "navy and gold mahjong mat",
+    "hits": "OMM Vanderbilt, Hawthorne (in), Scarlett; Mahjong by SI (Target, non-partner)"
+   },
+   {
+    "where": "Etsy",
+    "terms": "art deco peacock mahjong mat",
+    "hits": "Etsy search pages only (market/mahjong_mat_art_deco, peacock_mahjong_mat)"
+   },
+   {
+    "where": "Amazon",
+    "terms": "teal jewel tone mahjong mat",
+    "hits": "generic teal and floral-mandala mats; nothing deco"
+   },
+   {
+    "where": "Google",
+    "terms": "crane iris mahjong mat dark teal",
+    "hits": "OMM Heron, Veranda, Hampton; Mahjong by SI Crane Dynasty (Target); Etsy listings unavailable"
+   },
+   {
+    "where": "Google",
+    "terms": "navy olive peacock mahjong mat",
+    "hits": "OMM Isla, Esme; Etsy peacock listings (Golden Pond)"
+   },
+   {
+    "where": "Etsy",
+    "terms": "mulberry magenta mahjong mat",
+    "hits": "Etsy search pages only"
+   },
+   {
+    "where": "Amazon",
+    "terms": "gatsby art deco fan mahjong mat navy gold",
+    "hits": "Amazon search pages; one navy/rust/gold abstract mat (not deco)"
+   },
+   {
+    "where": "Google",
+    "terms": "magenta berry mahjong mat gold",
+    "hits": "OMM Hawthorne (in), Goldie (not visible in FYM), MFM Garden Party Mulberry (in), Delilah",
+    "complementary": "Lagoon"
+   },
+   {
+    "where": "Google",
+    "terms": "coral and plum mahjong mat",
+    "hits": "OMM Delilah (Lagoon left out: too bright), Mirage (Mulberry left out), Peri-twinkle; Mahjong by SI (Target)",
+    "complementary": "Lagoon"
+   },
+   {
+    "where": "Google",
+    "terms": "emerald green and gold mahjong mat",
+    "hits": "OMM Jade (in), Elysium (Indigo in); Etsy listings; Mahjong by SI Golden Grove",
+    "complementary": "Mulberry"
+   },
+   {
+    "where": "Google",
+    "terms": "amber copper gold mahjong mat",
+    "hits": "OMM Vanderbilt (added to Indigo), Hawthorne (in), Goldie, Imperial (not visible in FYM)",
+    "complementary": "Indigo"
+   },
+   {
+    "where": "Etsy",
+    "terms": "mustard gold mahjong mat",
+    "hits": "Etsy search pages only",
+    "complementary": "Indigo"
+   }
+  ],
+  "new_finds": [
+   {
+    "id": "teal-peacock",
+    "name": "Teal Art Deco Peacock",
+    "seller": "Dreamframer Art (Etsy shop DreamframerArt; also on Faire)",
+    "url": "https://www.faire.com/product/p_2ebkuduwvu",
+    "source": "Google: art deco / peacock / crane searches",
+    "img": "assets/albums/discovery/dreamframer-art-teal-art-deco-peacock.jpg",
+    "note": "Brand photos are renders; their lifestyle shots are AI-generated (they say so).",
+    "why": "Deep teal and gold with a peacock medallion and deco corners: her back colour, her gold palm and her peacock winds. A standout candidate."
+   },
+   {
+    "id": "navy-fans",
+    "name": "Dark Blue Art Deco, Gold Geometric Fans",
+    "seller": "Dreamframer Art (Etsy shop DreamframerArt)",
+    "url": "https://www.etsy.com/listing/4491199204",
+    "source": "Google: art deco mahjong mat",
+    "img": "assets/albums/discovery/dreamframer-art-dark-blue-art-deco-gold-fans.jpg",
+    "note": "Personalised; a buyer said the blue looked different from the photo.",
+    "why": "Navy ground with teal and gold art deco fans: her teal on the fans, her gold palm, her navy dots."
+   },
+   {
+    "id": "secret-canopy",
+    "name": "Secret Canopy (peacocks, peonies, pagoda)",
+    "seller": "Golden Pond Mahjong (Etsy), not a partner",
+    "url": "https://www.etsy.com/listing/4462059894",
+    "source": "Google: peacock feather mahjong mat",
+    "img": "assets/albums/discovery/golden-pond-mahjong-secret-canopy.jpg",
+    "note": "The only photo carries the shop name as a banner across the middle.",
+    "why": "A teal pond inside a hot pink peony frame: teal plus berry-pink, the two-colour look you like for her."
+   }
+  ],
+  "misses_added": [],
+  "note": "Light targeted search (12 searches: Google, Etsy, Amazon via WebSearch/WebFetch). Terms from the colour card (teal/berry/navy/gold), mood (art deco, jewel tone) and the faces (peacock feather, crane, iris, fan). Many Etsy hits were unavailable listings; Mahjong by SI (Target) is not a partner.",
+  "recheck_nonpartner": "Rule Nov 8 2:03pm ('if it matches, it matches'): the 5 Tiles & Tablescapes Deco Lagoon pairings dropped only as non-partners (Lemondrop Garnet Blooms, Mahjong by SI Gatsby / Fall Into the Wild / Brewtifully leatherette, Golden Pond Parlor; Printerval unnamed) need their product photos to be judged; a light search did not find the listings. Next: pull the photos from the TNT posts in Chrome and judge by eye.",
+  "complementary": "Complementary re-check (Tiffany 2:05pm: the colour pull leans tonal): berry/magenta/plum/coral/gold mats already carry the album's standouts (Reba, Viola, Deco Dragon Mulberry, Wren) and Garden Party Mulberry, East Meets West Magenta, Pretty in Plum; Delilah stays out (bright turquoise, not her deep teal)."
  }
 }

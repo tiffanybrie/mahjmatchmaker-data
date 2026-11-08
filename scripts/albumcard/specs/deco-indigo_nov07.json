@@ -57,14 +57,14 @@
   },
   {
    "group": "stand",
-   "name": "Grandmillennial Peony",
-   "brand": "Bougie Mahjong",
-   "img": "assets/colorcards/deco/mats/bougie-mahjong-grandmillennial-peony.jpg",
-   "why": "A navy center with a pink frame, inside coral and pink peonies. Navy plus berry, at full strength.",
+   "name": "Astor",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/mats/oh-my-mahjong-astor.jpg",
+   "why": "Navy floral with berry and coral inside a navy-plum plaid border: navy plus her berry. The colour pull missed it (measured as blue/purple, not navy). (Found in the Nov 8 mat discovery.)",
    "retired": false,
-   "fym": "bougiemahjong.com/grandmillennial-peony-mahjong-mat",
-   "lowres": false,
-   "holiday": false
+   "fym": "www.ohmymahjong.com/astor-mat-w-tube",
+   "lowres": true,
+   "discovery": "2026-11-08"
   },
   {
    "group": "stand",
@@ -188,28 +188,6 @@
    "holiday": false
   },
   {
-   "group": "deco",
-   "name": "Navy Club",
-   "brand": "Bougie Mahjong",
-   "img": "assets/colorcards/deco/mats/bougie-mahjong-navy-club.jpg",
-   "why": "A navy solid with a gold border. Navy on navy, but the gold line keeps it from being flat. The quiet pick.",
-   "retired": false,
-   "fym": "bougiemahjong.com/navy-club-mahjong-mat",
-   "lowres": false,
-   "holiday": false
-  },
-  {
-   "group": "deco",
-   "name": "Moonlit Crane Garden",
-   "brand": "Bougie Mahjong",
-   "img": "assets/colorcards/deco/mats/bougie-mahjong-moonlit-crane-garden.jpg",
-   "why": "Black with gold cranes, a moon and lotuses around an ivory center. Her crane bird bam, in gold.",
-   "retired": false,
-   "fym": "bougiemahjong.com/moonlit-crane-garden-mahjong-mat",
-   "lowres": false,
-   "holiday": false
-  },
-  {
    "group": "night",
    "name": "Peacock Feathers",
    "brand": "Let's Be Besties",
@@ -244,17 +222,6 @@
   },
   {
    "group": "night",
-   "name": "Royal Peacock",
-   "brand": "Let's Be Besties",
-   "img": "assets/colorcards/deco/mats/lets-be-besties-royal-peacock.jpg",
-   "why": "A blue center in a pink frame with peacock feathers, like her wind tiles.",
-   "retired": false,
-   "fym": "letsbebesties.com/royal-peacock-mahjong-mat-2",
-   "lowres": false,
-   "holiday": false
-  },
-  {
-   "group": "night",
    "name": "Crane & Moon",
    "brand": "YOLO Mahjong",
    "img": "assets/colorcards/deco/mats/yolo-mahjong-crane-and-moon.jpg",
@@ -266,45 +233,12 @@
   },
   {
    "group": "night",
-   "name": "Indigo Reef",
-   "brand": "Bougie Mahjong",
-   "img": "assets/colorcards/deco/mats/bougie-mahjong-indigo-reef.jpg",
-   "why": "Navy sea, sea turtles and gold fretwork around an ivory center. The name says it.",
-   "retired": false,
-   "fym": "bougiemahjong.com/indigo-reef-mahjong-mat",
-   "lowres": false,
-   "holiday": false
-  },
-  {
-   "group": "night",
-   "name": "Imperial Koi Pond",
-   "brand": "Bougie Mahjong",
-   "img": "assets/colorcards/deco/mats/bougie-mahjong-imperial-koi-pond.jpg",
-   "why": "Navy and teal with coral koi and a gold frame.",
-   "retired": false,
-   "fym": "bougiemahjong.com/imperial-koi-pond-mahjong-mat",
-   "lowres": false,
-   "holiday": false
-  },
-  {
-   "group": "night",
    "name": "Elysium",
    "brand": "Oh My Mahjong",
    "img": "assets/colorcards/deco/mats/oh-my-mahjong-elysium.jpg",
    "why": "Oh My Mahjong's navy pagoda garden inside a bright green fretwork frame. Navy plus green.",
    "retired": false,
    "fym": "www.ohmymahjong.com/elysium-mat-in-tube",
-   "lowres": false,
-   "holiday": false
-  },
-  {
-   "group": "warm",
-   "name": "Butterscotch Floral Simple Middle",
-   "brand": "Let's Be Besties",
-   "img": "assets/colorcards/deco/mats/lets-be-besties-butterscotch-floral-simple-middle.jpg",
-   "why": "A navy center with a gold line, inside peach and coral roses. Warm flowers against her cool navy.",
-   "retired": false,
-   "fym": "letsbebesties.com/butterscotch-floral-simple-middle-mahjong-mat",
    "lowres": false,
    "holiday": false
   },
@@ -340,6 +274,27 @@
    "fym": "hutchandnook.com/mahjong-mat-moody-mat",
    "lowres": true,
    "holiday": false
+  },
+  {
+   "group": "deco",
+   "name": "Vanderbilt",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/mats/oh-my-mahjong-vanderbilt.jpg",
+   "why": "Navy and ivory plaid inside a gold deco-scallop frame: her navy back and gold palm. (Found in the Nov 8 mat discovery.)",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/vanderbilt-mat-w-tube",
+   "lowres": true,
+   "discovery": "2026-11-08"
+  },
+  {
+   "group": "warm",
+   "name": "Butterscotch Floral Simple Middle",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-butterscotch-floral-simple-middle.jpg",
+   "why": "A navy center with a gold line, inside peach and coral roses. Warm flowers against her cool navy. Amber is her complement on the wheel.",
+   "retired": false,
+   "fym": "letsbebesties.com/butterscotch-floral-simple-middle-mahjong-mat",
+   "lowres": false
   },
   {
    "group": "holiday",

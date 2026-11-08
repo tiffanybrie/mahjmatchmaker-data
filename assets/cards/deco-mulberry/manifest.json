@@ -729,30 +729,6 @@
   },
   {
    "order": 31,
-   "group": "quiet",
-   "mat": "Petals After Dark",
-   "brand": "Let's Be Besties",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "deco-mulberry-mahjong-tiles-lets-be-besties-petals-after-dark-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/deco/mats/lets-be-besties-petals-after-dark.jpg",
-   "racks": [
-    "Bam Bird Boutique Mulberry Wood",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Turks Blue",
-    "Bird & Bamboo Magenta"
-   ],
-   "why": "Black with teal and pink petals: her teal bams and berry backs on a night sky.",
-   "fym": "letsbebesties.com/petals-after-dark-neoprene-mahjong-mat",
-   "lowres": false,
-   "caption_note": null
-  },
-  {
-   "order": 32,
    "group": "holiday",
    "mat": "Poinsettia Party",
    "brand": "Soirée All Day",
@@ -776,7 +752,7 @@
    "caption_note": "Holiday match"
   },
   {
-   "order": 33,
+   "order": 32,
    "group": "holiday",
    "mat": "Winter Jewel",
    "brand": "Let's Be Besties",
@@ -800,7 +776,7 @@
    "caption_note": "Holiday match"
   },
   {
-   "order": 34,
+   "order": 33,
    "group": "holiday",
    "mat": "Yuletide",
    "brand": "Oh My Mahjong",

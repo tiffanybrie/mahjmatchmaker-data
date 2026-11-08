@@ -108,6 +108,22 @@ cv = A.get('cover')
 if isinstance(cv, int) and cv != rec['covers'].get('default', 0) and cv < len(rec['covers']['options']):
     rec['covers']['default'] = cv; rec['covers']['chosen'] = cv; ch.append(f"Cover: {rec['covers']['options'][cv]['label']}")
 elif isinstance(cv, int): rec['covers']['chosen'] = cv
+# new finds (Playbook step 3b): Bring it in -> album pool + a DESK line (she adds the ShopMy link; Claude stages the catalog/FYM entry)
+fi = {f['id']: f for f in (rec.get('discovery') or {}).get('new_finds', [])}
+brought = [fi[k] for k, v in (A.get('finds') or {}).items() if v == 'in' and k in fi]
+for f in brought:
+    rec.setdefault('pool', {}).setdefault('new_candidates', []).append({'name': f['name'], 'brand': f['seller'], 'img': f['img'], 'source': 'discovery: her Bring it in', 'link': f['url'], 'her_pick': True})
+    spec['mats'].append({'group': 'yours', 'name': f['name'], 'brand': f['seller'].split(' (')[0], 'img': f['img'], 'why': f"Your pick from New finds (round {rnd}). {f.get('why', '')}",
+                         'retired': False, 'fym': None, 'lowres': True, 'her_pick': True, 'new_find': f['url']})
+if brought:
+    ch.append('New finds brought in: ' + ', '.join(f['name'] for f in brought))
+    if not DRY:
+        dp = R + 'docs/DESK.md'; d = open(dp).read()
+        lines = ''.join(f"- {datetime.date.today():%b %d} · {rec['name']} album · add {f['name']} ({f['seller']}) to ShopMy + catalog: Tiffany adds the ShopMy link if she wants one; Claude stages the catalog/FYM entry ({f['url']}). Owner: Matches & Catalog\n" for f in brought)
+        d = d.replace('## Handoffs (do first)\n', '## Handoffs (do first)\n' + lines, 1) if '## Handoffs (do first)\n' in d else d + '\n' + lines
+        open(dp, 'w').write(d)
+skipped = [fi[k]['name'] for k, v in (A.get('finds') or {}).items() if v == 'skip' and k in fi]
+if skipped: ch.append('New finds skipped: ' + ', '.join(skipped))
 if (A.get('anything') or '').strip(): ch.append('Your note: “' + A['anything'].strip()[:300] + '”')
 rec.setdefault('rounds', []).append({'round': rnd, 'applied_at': datetime.datetime.now().astimezone().isoformat(timespec='seconds'),
                                      'changes': ch or ['No changes: every card stays as it was'], 'anything': A.get('anything', ''), 'done': bool(A.get('done')), 'answers': A})
