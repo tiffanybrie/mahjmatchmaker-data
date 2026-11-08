@@ -1,0 +1,12 @@
+{
+ "at": "2026-11-07T21:10:00-05:00",
+ "source": "list_triggers enabled:false (first page; more may exist)",
+ "off": [
+  {"id": "trig_01LZjGfVneN3vKwweVXwbzub", "name": "Mahj Matchmaker morning Google & Revenue report", "reason": "device_absent", "since": "2026-11-06"},
+  {"id": "trig_01GQHweQ9DbqXgoG2dp8GgBa", "name": "Google code report (Mon/Wed/Fri)", "reason": "device_absent", "since": "2026-11-06"},
+  {"id": "trig_01NpQoJYSYh2GCLwcHNpkDiU", "name": "Daily ShopMy pickup", "reason": "device_absent", "since": "2026-11-06"},
+  {"id": "trig_01V1SsTySQv2yXyzbnJArmsm", "name": "Partner newsletter signups (until done)", "reason": "device_absent", "since": "2026-11-07"},
+  {"id": "trig_019StaM8LkmrxGKtK7xhXang", "name": "Mahj Matchmaker catch-up (old copy; the cloud catch-up trig_013ZpyRxFivSKPoYTgSvVBU6 is on)", "reason": "device_absent", "since": "2026-11-06"}
+ ],
+ "note": "Re-enabling from a chat is blocked by the safety check (Nov 7); Tiffany turns them on in the app. Gap audit also lists the sales check, Mahji Mentor and new-affiliate builder."
+}
