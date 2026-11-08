@@ -1,5 +1,5 @@
 {
- "_about": "TRUTH for every MAHJMATCH % on the live site. Change only when a partner email/Tiffany says the code changed (log in ANSWERS). scripts/checks/live_codes_check.py reads this.",
+ "_about": "TRUTH for every MAHJMATCH offer on the live site. Change only when a partner email/Tiffany says the code changed (log in ANSWERS). scripts/checks/live_codes_check.py reads this and FAILS when a hub brand or a live *-discount-code page has no entry here (pct or terms). pct = brands whose offer is a plain N% off (checked on every page). terms = the full offer for brands with a scope/minimum/non-% perk or no confirmed %; pct:null means NO % may be shown for that brand. status 'page only, unconfirmed' = no partner email/Tiffany record confirms it yet (listed for Tiffany).",
  "pct": {
   "Amahj": 10,
   "Amanda Toppe": 10,
@@ -21,16 +21,21 @@
   "Mini Mahjer": 10,
   "Miss Mahjong": 10,
   "My Fair Mahjong": 10,
+  "Noli June": 10,
   "Oh My Mahjong": 10,
   "Peace Love Mahjong": 10,
+  "Soirée All Day": 10,
   "Splash of Color": 10,
   "The Royal Mahjong Society": 15,
+  "Tigre de Tartan": 10,
   "Virora Mahjong": 10,
   "Wren Mats": 10,
+  "Yellow Mountain Imports": 10,
   "YOLO Mahjong": 10
  },
  "notes": {
-  "Amanda Toppe": "10% (Tiffany Nov 2 2026)"
+  "Amanda Toppe": "10% (Tiffany Nov 2 2026)",
+  "_A4": "Nov 7 2026 (Ops, gap audit A4): 11 hub brands had no entry; added pct (4) + terms (12 incl. Sunday no-code). Sources per brand in terms.*.source."
  },
  "verified_max_age_days": 9,
  "removed_brands": {
@@ -57,5 +62,135 @@
    },
    "pct_claim_pattern": "Mahjong Row[^.<]{0,60}(\\d+% off|MAHJMATCH)"
   }
- }
+ },
+ "aliases": {
+  "Tigre de Tartan": [
+   "Tigre de Tartán",
+   "Tigre De Tartan",
+   "Tigre De Tartán"
+  ],
+  "Let's Be Besties": [
+   "Let’s Be Besties",
+   "Lets Be Besties"
+  ],
+  "Let's Mahj On": [
+   "Let’s Mahj On"
+  ],
+  "Bam! Let's Mahjong": [
+   "Bam! Let’s Mahjong",
+   "Bam Let’s Mahjong",
+   "Bam Let's Mahjong"
+  ],
+  "Soirée All Day": [
+   "Soiree All Day"
+  ],
+  "Mac + Miller Mahjong": [
+   "Mac and Miller Mahjong"
+  ],
+  "The Royal Mahjong Society": [
+   "Royal Mahjong Society"
+  ]
+ },
+ "page_brand": {
+  "/royal-mahjong-society-discount-code": "The Royal Mahjong Society",
+  "/bird-and-bamboo-discount-code-2": "Bird & Bamboo"
+ },
+ "terms": {
+  "Tigre de Tartan": {
+   "code": "MAHJMATCH",
+   "pct": 10,
+   "code_visible": "image_only",
+   "hub_must": "10% off",
+   "source": "ANSWERS 2026-10-30 12:01am: auto-apply link tested in a cart, 10% applied; Tiffany final calls Oct 30 12:04-12:10am (code shown only as an IMAGE on what visitors see; SEO/alt/JSON-LD keep MAHJMATCH); TdT approval email Jul 18 2026 (affiliate sets own code) + policy email Oct 30 (Caroline)",
+   "status": "confirmed"
+  },
+  "Noli June": {
+   "code": "MAHJMATCH",
+   "pct": 10,
+   "min_order": 100,
+   "scope": "Affiliate Eligible collections",
+   "hub_must": "\\$100",
+   "source": "Shopify Collabs terms (Tiffany's screenshot, ANSWERS 2026-10-30 9:04am) + Tiffany Oct 31 10:39am: 10% off $100+",
+   "status": "confirmed"
+  },
+  "Soirée All Day": {
+   "code": "MAHJMATCH",
+   "pct": 10,
+   "scope": "The Mahjong Collection",
+   "hub_must": "Mahjong Collection",
+   "desc_must": "Mahjong Collection",
+   "source": "Gmail 2026-10-10 approval email from owner Hollis Gallagher (GoAffPro): MAHJMATCH 10% off, applies to The Mahjong Collection",
+   "status": "confirmed"
+  },
+  "Yellow Mountain Imports": {
+   "code": "MAHJMATCH10-YMI-2025",
+   "pct": 10,
+   "hub_must": "MAHJMATCH10-YMI-2025",
+   "source": "page only (hub since Oct 10, config/autoapply-hosts.json); no YMI email in Gmail",
+   "status": "page only, unconfirmed",
+   "note": "Never featured on social (Tiffany Oct 27 2:44am) and left off the Nov 7 Partner Brands graphic, but still a hub brand with a live page."
+  },
+  "Maison Mahj": {
+   "code": "MAHJMATCH",
+   "pct": null,
+   "perk": "complimentary shipping on tile set orders",
+   "hub_must": "[Cc]omplimentary shipping on tile set orders",
+   "source": "Gmail 2026-06-21 Maison Mahj UpPromote email (code gives free shipping on tile sets only) + code verified in her UpPromote portal Oct 30 (ANSWERS 2026-10-30 12:20am); Tiffany Oct 29 11:07pm",
+   "status": "confirmed",
+   "note": "No brand page yet (hub links to maisonmahj.com), gap A5."
+  },
+  "I Love Mahj": {
+   "code": "MAHJMATCH",
+   "pct": null,
+   "perk": "2-week free trial",
+   "hub_must": "2-week free trial",
+   "source": "page only (hub + brand page); Gmail has only the Jan 2026 partner-program application, no terms",
+   "status": "page only, unconfirmed"
+  },
+  "Anders Ruff": {
+   "code": "MAHJMATCH",
+   "pct": null,
+   "hub_must": "MAHJMATCH",
+   "source": "Gmail 2026-10-06 UpPromote approval (no code or % in it); referral orders tracked since Oct 30; code from page only",
+   "status": "page only, unconfirmed"
+  },
+  "Let's Be Besties": {
+   "code": "MAHJMATCH",
+   "pct": null,
+   "hub_must": "MAHJMATCH",
+   "source": "Gmail 2026-10-16 UpPromote 'You have been assigned a coupon code: MAHJMATCH' + Laurie (owner) 'You are all set-up!'; the % is not stated anywhere",
+   "status": "code confirmed, % unknown"
+  },
+  "Mahjong Register": {
+   "code": "MAHJMATCH",
+   "pct": null,
+   "hub_must": "MAHJMATCH",
+   "source": "Gmail 2026-10-10 UpPromote approval; Tiffany asked them Oct 16 to assign MAHJMATCH (sent to hello@mahjongregister.com), no reply or coupon email found",
+   "status": "page only, unconfirmed"
+  },
+  "The Mahjong Press": {
+   "code": "MAHJMATCH",
+   "pct": null,
+   "hub_must": "MAHJMATCH",
+   "source": "page only; nothing from The Mahjong Press in Gmail (contacts csv: general inbox only)",
+   "status": "page only, unconfirmed"
+  },
+  "Mahjong Studios": {
+   "code": "MAHJMATCH",
+   "pct": null,
+   "hub_must": "MAHJMATCH",
+   "source": "Gmail 2026-10-07 UpPromote 'coupon code assigned to you: mahjmatch'; % not stated",
+   "status": "code confirmed, % unknown",
+   "note": "Mahjong Studios MATS are out of the site (Oct 20); tile sets/racks stay."
+  },
+  "Sunday Mahjong": {
+   "code": null,
+   "pct": null,
+   "page_only": true,
+   "hub_listed": false,
+   "source": "non-partner (Tiffany Oct 20 allow: whole line, personal favorite); page /sunday-mahjong-discount-code says there is no code",
+   "status": "confirmed (no code)"
+  }
+ },
+ "sitemap_lag_days": 3
 }

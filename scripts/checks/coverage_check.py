@@ -309,8 +309,8 @@ if SIDX is not None:
 hb = net.get('hub_brands', [])
 removed_names = {nz(b) for b in REMOVED_BRANDS}
 hb = [(n, h) for n, h in hb if nz(n) not in removed_names]
-PN = {nz(b) for b in P}
-line('truth_brands', 'Codes', 'Hub brands with a code-truth % entry (live_codes_check can catch a wrong %)',
+PN = {nz(n) for b in set(P) | set(truth.get('terms', {})) for n in [b] + truth.get('aliases', {}).get(b, [])}  # A4 Nov 7: terms (no-% / scoped offers) count too
+line('truth_brands', 'Codes', 'Hub brands with a code-truth entry, pct or terms (live_codes_check can catch a wrong offer)',
      sum(1 for n, _ in hb if nz(n) in PN), len(hb), missing=[n for n, _ in hb if nz(n) not in PN])
 line('hub_pages', 'Codes', 'Hub brands with their own brand page', sum(1 for _, h in hb if h.startswith('/')), len(hb),
      missing=[n for n, h in hb if not h.startswith('/')])
