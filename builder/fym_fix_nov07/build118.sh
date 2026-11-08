@@ -17,6 +17,7 @@ rm -rf "$D"; cp -al "$S" "$D"; rm "$D/index.html"; cp "$S/index.html" "$D/index.
 python3 "$H/partner_adds118.py" "$D" | tail -3
 python3 "$H/fixes118.py" "$D"
 python3 "$H/revive_links.py" "$D" | tail -2
+python3 "$R/builder/fym_fix_nov06/deadlinks116.py" "$D"                         # Nov 7: 9 Bougie Mahjong mats pulled from their store (404): no shop button
 python3 "$R/builder/fym_fix_nov06/autoapply_links.py" "$D" --write | tail -2
 python3 "$R/builder/fym_fix_oct30/v104rank.py" "$D" | tail -2
 python3 "$R/builder/fym_fix_oct25/v92_coordinated.py" "$D" | tail -2
