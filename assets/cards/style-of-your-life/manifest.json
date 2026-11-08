@@ -1,0 +1,493 @@
+{
+ "set": "The Style of Your Life Series (Pearl Green)",
+ "brand": "My Fair Mahjong",
+ "status": "DRAFT: round 1 = Claude's picks, pending her order",
+ "cards": [
+  {
+   "order": 1,
+   "group": "top",
+   "mat": "Tennis Club",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-lets-be-besties-tennis-club-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/style-of-your-life/mats/tennis-club-lets-be-besties.jpg",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Peony"
+   ],
+   "mat_reg": null,
+   "why": "Every one of her face colors in one mat: navy stripes like her indigo ink, a bubblegum pink frame, kelly gingham to hold the pearl green backs, and a powder blue plaid like her cornflower earrings.",
+   "caption_note": null
+  },
+  {
+   "order": 2,
+   "group": "top",
+   "mat": "MOD Daisies",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-lets-be-besties-mod-daisies-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/style-of-your-life/mats/mod-daisies-lets-be-besties.jpg",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Forest Green",
+    "Bird & Bamboo Ocean Slate"
+   ],
+   "mat_reg": null,
+   "why": "Her faces turned into flowers: cornflower, bubblegum pink and red daisies with marigold centers, on a green ground that makes the backs glow.",
+   "caption_note": null
+  },
+  {
+   "order": 3,
+   "group": "top",
+   "mat": "Crimson Harvest",
+   "brand": "Britt Mills",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-britt-mills-crimson-harvest-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/style-of-your-life/mats/crimson-harvest-britt-mills.jpg",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Red"
+   ],
+   "mat_reg": null,
+   "why": "Wine pomegranates and pink roses on deep green: her wine handbags, her pink, and the darkest green in her backs. The moody one, and it carries her from Thanksgiving to Christmas.",
+   "caption_note": null
+  },
+  {
+   "order": 4,
+   "group": "best",
+   "mat": "Floral Instincts",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-lets-be-besties-floral-instincts-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/style-of-your-life/mats/floral-instincts-lets-be-besties.jpg",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Mulberry"
+   ],
+   "mat_reg": null,
+   "why": "Pink leopard on navy inside a green frame. A set about handbags and shoes deserves a little leopard.",
+   "caption_note": null
+  },
+  {
+   "order": 5,
+   "group": "best",
+   "mat": "Peacock Circle",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-lets-be-besties-peacock-circle-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/style-of-your-life/mats/peacock-circle-lets-be-besties.jpg",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "mat_reg": null,
+   "why": "Cobalt ground and green peacock feathers: just her indigo and her greens, so the white faces pop.",
+   "caption_note": null
+  },
+  {
+   "order": 6,
+   "group": "best",
+   "mat": "Peach Petals",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-lets-be-besties-peach-petals-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/style-of-your-life/mats/peach-petals-lets-be-besties.jpg",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Blackboard Black"
+   ],
+   "mat_reg": null,
+   "why": "Navy and hot pink stripes around pink and green petals: pink, navy and green, all turned up.",
+   "caption_note": null
+  },
+  {
+   "order": 7,
+   "group": "best",
+   "mat": "Parquet Petal",
+   "brand": "My Fair Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-my-fair-mahjong-parquet-petal-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/gallery/my-fair-mahjong--coming-soon-mahjong-mat-parquet-petal-31-x-31.webp",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Mulberry"
+   ],
+   "mat_reg": null,
+   "why": "My Fair Mahjong made Parquet Petal for this set: its border print is on her tile bag and box. The pink center is lovely with her faces, but there's no green in it, so it sits here, not at #1. Still listed as coming soon on their site.",
+   "caption_note": "Pair mat"
+  },
+  {
+   "order": 8,
+   "group": "best",
+   "mat": "Merrye (Pink and Blue)",
+   "brand": "Betty June & Jeannette",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-betty-june-and-jeannette-merrye-pink-and-blue-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/gallery/betty-june-jeannette--merrye-pink-and-blue.webp",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo French Blue",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "mat_reg": null,
+   "why": "Pink, cornflower and kelly green in a kaleidoscope of cranes and blossoms.",
+   "caption_note": null
+  },
+  {
+   "order": 9,
+   "group": "navy",
+   "mat": "Preppy Palms",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-lets-be-besties-preppy-palms-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/style-of-your-life/mats/preppy-palms-lets-be-besties.jpg",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Peony"
+   ],
+   "mat_reg": null,
+   "why": "Tennis Club's sister: the same gingham and navy stripes, with a solid navy center and palm fronds.",
+   "caption_note": null
+  },
+  {
+   "order": 10,
+   "group": "navy",
+   "mat": "Grandmillennial Peony",
+   "brand": "Bougie Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-bougie-mahjong-grandmillennial-peony-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/style-of-your-life/mats/grandmillennial-peony-bougie-mahjong.jpg",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Magenta"
+   ],
+   "mat_reg": null,
+   "why": "Coral-pink peonies around a deep navy center. Polished, a little grown-up, with her indigo underneath.",
+   "caption_note": null
+  },
+  {
+   "order": 11,
+   "group": "navy",
+   "mat": "Haven",
+   "brand": "Britt Mills",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-britt-mills-haven-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/style-of-your-life/mats/haven-britt-mills.jpg",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Berry Purple",
+    "Bird & Bamboo Dark Navy"
+   ],
+   "mat_reg": null,
+   "why": "Painterly pink and violet peonies on deep navy.",
+   "caption_note": null
+  },
+  {
+   "order": 12,
+   "group": "navy",
+   "mat": "Color Wave – Cobalt Center",
+   "brand": "My Fair Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-my-fair-mahjong-color-wave-cobalt-center-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/gallery/my-fair-mahjong--color-wave-cobalt-center-light-blue-scallop.webp",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Light Blue"
+   ],
+   "mat_reg": null,
+   "why": "Her two blues as solid color: a cobalt center with a light blue scallop, so the green backs and white faces do the talking.",
+   "caption_note": null
+  },
+  {
+   "order": 13,
+   "group": "navy",
+   "mat": "Birdie Green",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-oh-my-mahjong-birdie-green-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/omm-retired/birdie-green.jpg",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Periwinkle Blue"
+   ],
+   "mat_reg": null,
+   "why": "Kelly green with cobalt peacocks and a touch of pink: green, indigo and pink.",
+   "caption_note": null
+  },
+  {
+   "order": 14,
+   "group": "navy",
+   "mat": "SoHo",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-oh-my-mahjong-soho-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/omm-retired/soho.jpg",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Matcha"
+   ],
+   "mat_reg": null,
+   "why": "Navy and blue art deco with a green edge.",
+   "caption_note": null
+  },
+  {
+   "order": 15,
+   "group": "pink",
+   "mat": "Pink and Green Gator Skin",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-lets-be-besties-pink-and-green-gator-skin-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/style-of-your-life/mats/pink-and-green-gator-skin-lets-be-besties.jpg",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "mat_reg": null,
+   "why": "A croc handbag as a mat: bubblegum pink scales on kelly green, right at home with her handbag craks.",
+   "caption_note": null
+  },
+  {
+   "order": 16,
+   "group": "pink",
+   "mat": "Pink Peonies",
+   "brand": "Sophie Clima",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-sophie-clima-pink-peonies-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/gallery/sophie-clima--pink-peonies.webp",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Moss"
+   ],
+   "mat_reg": null,
+   "why": "Pink peonies in a blue-and-white vase: pink, cornflower and green leaves.",
+   "caption_note": null
+  },
+  {
+   "order": 17,
+   "group": "deep",
+   "mat": "The Polo Club",
+   "brand": "Luxe Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/style-of-your-life/mats/the-polo-club-luxe-mahjong.jpg",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Blackboard Black"
+   ],
+   "mat_reg": null,
+   "why": "A navy center inside green tartan: her indigo and deep green, and it works for the holidays too.",
+   "caption_note": null
+  },
+  {
+   "order": 18,
+   "group": "deep",
+   "mat": "Deep Green Garden Party",
+   "brand": "Miss Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-miss-mahjong-deep-green-garden-party-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/gallery/miss-mahjong--deep-green-garden-party-mahjong-playing-mat.webp",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Basil",
+    "Bird & Bamboo Cornflower Blue"
+   ],
+   "mat_reg": null,
+   "why": "Blue and lavender hydrangeas on deep green.",
+   "caption_note": null
+  },
+  {
+   "order": 19,
+   "group": "deep",
+   "mat": "Legacy",
+   "brand": "Britt Mills",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-britt-mills-legacy-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/style-of-your-life/mats/legacy-britt-mills.jpg",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "mat_reg": null,
+   "why": "A leopard and pink roses on forest green, with a pink border.",
+   "caption_note": null
+  },
+  {
+   "order": 20,
+   "group": "shared",
+   "mat": "Green Malachite",
+   "brand": "Mahj Squad",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-mahj-squad-green-malachite-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/gallery/mahj-squad--green-malachite.webp",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Evergreen"
+   ],
+   "mat_reg": null,
+   "why": "The stone her backs are made to look like, so it's tone on tone. It's also in Juniper's album.",
+   "caption_note": "Also in Juniper"
+  },
+  {
+   "order": 21,
+   "group": "shared",
+   "mat": "Garden Glow – Emerald Green",
+   "brand": "Bespoke Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-bespoke-mahjong-garden-glow-emerald-green-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/garden-glow-emerald-bespoke-mahjong.jpg",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "mat_reg": null,
+   "why": "Blue, violet and marigold wildflowers on deep green suit her faces even better than Juniper's, but it's Juniper's #2.",
+   "caption_note": "Also in Juniper"
+  },
+  {
+   "order": 22,
+   "group": "shared",
+   "mat": "Cheetah in Chinoiserie",
+   "brand": "Sophie Clima",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "style-of-your-life-mahjong-tiles-sophie-clima-cheetah-in-chinoiserie-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/mats/gallery/sophie-clima--cheetah-in-chinoiserie.webp",
+   "racks": [
+    "My Fair Mahjong Indigo Blue",
+    "My Fair Mahjong Magenta"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Avocado"
+   ],
+   "mat_reg": null,
+   "why": "Navy sky, pink blossoms and a bamboo frame. Also in Juniper's album.",
+   "caption_note": "Also in Juniper"
+  }
+ ],
+ "title_color": "#0b6b3a",
+ "tile": "assets/tiles/album/style-of-your-life.jpg",
+ "racks_note": "tile racks = colorcards style-of-your-life racks (My Fair Mahjong Indigo Blue + Magenta); mat racks = registry or matpick"
+}
