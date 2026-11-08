@@ -967,6 +967,204 @@
    "mats_source": "Claude's own picks (Nov 7, run like Juniper), not her picks yet",
    "racks_source": "Claude's own picks (MFM solid acrylic Indigo Blue + Magenta, same shape, 20in), pending her OK",
    "_nov07": "Colours measured from MFM's pile photo (StyleofYourLifeSeries_11) and the flat lay (_2), checked by eye. MFM's own words: 'a pearl green back, a deep green middle layer, and a white face'. Faces lead with indigo ink; wine, bubblegum pink, cornflower, marigold, fern green. No chartreuse, teal or coral (those are Juniper's)."
+  },
+  "deco-lagoon": {
+   "name": "Deco (Lagoon)",
+   "col": "#0b5566",
+   "brand": "Bam Bird Boutique",
+   "sub": "Lagoon teal backs with a gold-foil deco palm",
+   "backs": [
+    [
+     "LAGOON",
+     "#0a4f5c",
+     "jewel-tone back"
+    ],
+    [
+     "GOLD FOIL",
+     "#c9a24a",
+     "deco palm"
+    ],
+    [
+     "IVORY",
+     "#f4efe6",
+     "face layer"
+    ]
+   ],
+   "faces": [
+    [
+     "MULBERRY",
+     "#7c2b55"
+    ],
+    [
+     "ROSE",
+     "#c47e68"
+    ],
+    [
+     "GOLD",
+     "#d1ad5c"
+    ],
+    [
+     "TEAL",
+     "#22939a"
+    ],
+    [
+     "NAVY",
+     "#2a3f7a"
+    ],
+    [
+     "PERIWINKLE",
+     "#7f9fd0"
+    ],
+    [
+     "DEEP GREEN",
+     "#1f4d3e"
+    ]
+   ],
+   "racks": [
+    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Mulberry Wood"
+   ],
+   "rack_imgs": {
+    "Bam Bird Boutique Lagoon Wood": "assets/racks/card/bam-bird-boutique-lagoon-wood.png",
+    "Bam Bird Boutique Mulberry Wood": "assets/racks/card/bam-bird-boutique-mulberry-wood.png"
+   },
+   "tile": "assets/tiles/album/deco-lagoon.jpg",
+   "tag": [
+    "Art deco after dark",
+    "peacock winds, gold cranes & lions"
+   ],
+   "mats": [
+    "Reba",
+    "Wren",
+    "Deco Dragon (Mulberry)"
+   ],
+   "mat_imgs": {
+    "Reba": "assets/colorcards/deco/mats/britt-mills-reba.jpg",
+    "Wren": "assets/colorcards/deco/mats/britt-mills-wren.jpg",
+    "Deco Dragon (Mulberry)": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-mulberry.jpg"
+   },
+   "shop": "Shop Deco · Bam Bird Boutique",
+   "shop_m": "Shop Deco · Bam Bird Boutique",
+   "profile_line": [
+    "Seeking: deep teal with a berry streak.",
+    "Must love a speakeasy."
+   ],
+   "profile_line_options": {
+    "A": [
+     "Seeking: deep teal with a berry streak.",
+     "Must love a speakeasy."
+    ],
+    "B": [
+     "Seeking: teal, mulberry or gold.",
+     "Jazz age a plus."
+    ],
+    "C": [
+     "Her type: dark teal, with a little berry.",
+     "Gold accents only."
+    ]
+   },
+   "mats_source": "Claude's own picks (Tiffany Nov 7 7:03pm: 'You take them, just like you did this one'), not her picks yet",
+   "racks_source": "Claude's own picks: Bam Bird's own 19in wood racks, one per tile colour (Lagoon = backs, Mulberry = the crak frames), same shape so they lie the same",
+   "_nov07": "Colours measured from Bam Bird's Deco listing photos (backs tray img 07, faces tray img 16, pile img 14) and checked by eye. Bam Bird's own words: 'two jewel-toned colorways: Lagoon and Mulberry', 'inspired by the bold elegance of the Art Deco era'. Same faces on every colourway. Top 3: Reba #1 (her favourite Deco pairing Oct 27), Wren #2, Deco Dragon (Mulberry) #3 = Bam Bird's own sister mat (pair rule: never #1; her Oct 26 rule: Lagoon tiles on the MULBERRY Dragon, never Lagoon on Lagoon)."
+  },
+  "deco-mulberry": {
+   "name": "Deco (Mulberry)",
+   "col": "#7a2c55",
+   "brand": "Bam Bird Boutique",
+   "sub": "Mulberry backs with a gold-foil deco palm",
+   "backs": [
+    [
+     "MULBERRY",
+     "#7d3456",
+     "jewel-tone back"
+    ],
+    [
+     "GOLD FOIL",
+     "#c9a24a",
+     "deco palm"
+    ],
+    [
+     "IVORY",
+     "#f4efe6",
+     "face layer"
+    ]
+   ],
+   "faces": [
+    [
+     "TEAL",
+     "#22939a"
+    ],
+    [
+     "MULBERRY",
+     "#7c2b55"
+    ],
+    [
+     "ROSE",
+     "#c47e68"
+    ],
+    [
+     "GOLD",
+     "#d1ad5c"
+    ],
+    [
+     "NAVY",
+     "#2a3f7a"
+    ],
+    [
+     "PERIWINKLE",
+     "#7f9fd0"
+    ],
+    [
+     "DEEP GREEN",
+     "#1f4d3e"
+    ]
+   ],
+   "racks": [
+    "Bam Bird Boutique Mulberry Wood",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "rack_imgs": {
+    "Bam Bird Boutique Lagoon Wood": "assets/racks/card/bam-bird-boutique-lagoon-wood.png",
+    "Bam Bird Boutique Mulberry Wood": "assets/racks/card/bam-bird-boutique-mulberry-wood.png"
+   },
+   "tile": "assets/tiles/album/deco-mulberry.jpg",
+   "tag": [
+    "Art deco after dark",
+    "berry backs, gold palms & lions"
+   ],
+   "mats": [
+    "Viola",
+    "Caroline in Peacock",
+    "Deco Dragon (Lagoon)"
+   ],
+   "mat_imgs": {
+    "Viola": "assets/colorcards/deco/mats/britt-mills-viola.jpg",
+    "Caroline in Peacock": "assets/colorcards/deco/mats/mahj-and-vine-caroline-in-peacock.jpg",
+    "Deco Dragon (Lagoon)": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-lagoon.jpg"
+   },
+   "shop": "Shop Deco · Bam Bird Boutique",
+   "shop_m": "Shop Deco · Bam Bird Boutique",
+   "profile_line": [
+    "Seeking: mulberry, lagoon teal or gold.",
+    "Must love jazz-age glamour."
+   ],
+   "profile_line_options": {
+    "A": [
+     "Seeking: mulberry, lagoon teal or gold.",
+     "Must love jazz-age glamour."
+    ],
+    "B": [
+     "Her type: deep teal. Opposites attract.",
+     "Gold accents a plus."
+    ],
+    "C": [
+     "Seeking: a teal that can keep up",
+     "with a berry back."
+    ]
+   },
+   "mats_source": "Claude's own picks (Tiffany Nov 7 7:03pm: 'You take them, just like you did this one'), not her picks yet",
+   "racks_source": "Claude's own picks: Bam Bird's own 19in wood racks, Mulberry (backs) + Lagoon (the teal bams)",
+   "_nov07": "Same source photos as deco-lagoon. Top 3: Viola #1 (her Oct 27 Mulberry pairing), Caroline in Peacock #2, Deco Dragon (Lagoon) #3 = Bam Bird's own sister mat (never Mulberry on Mulberry)."
   }
  },
  "_note_oct19_catchup": "Oct 19 catch-up: shangri-la, lilac-soiree, preppy-soiree, spring-love, sunday-tile-set got mat_imgs/rack_imgs and were rendered with the existing style. They use 'tag' (factual). When Tiffany approves the Papaya profile_line style, add profile_line to each set and re-run build.py <key>; nothing else changes."

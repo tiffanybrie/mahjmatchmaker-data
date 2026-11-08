@@ -126,7 +126,7 @@ facesl = f"""<!doctype html><html><head><meta charset=utf8><style>{css(1080, 135
 # slide 4 "Her best features" (Tiffany, Oct 20): same look as every other profile slide (cream, header, Caprasimo title,
 # pink caps section labels, Playfair captions). Her own picks, clean cutouts, no frames, no shadows. Faces from the brand's
 # highest-res faces shot (assets/tiles/faces/<set>/clean/).
-FT = R + f'assets/tiles/faces/{key}/clean/'
+FT = R + P.get('faces_dir', f'assets/tiles/faces/{key}/clean/')  # Nov 7: Deco colourways share one face set
 FAV = P.get('best_features', {'top': ['The dancing dragons', ['dragon-coral', 'dragon-green'], 'My favorite dragons, and they come as a pair'],
        'singles': [['The crane', 'crane', 'Her gray-crowned<br>crane bird bam'], ['Ginger Lola', 'lola-ginger', 'The redheaded<br>matriarch'], ['The parasols', 'dot3', 'Little umbrellas']]})
 ftile = lambda k, w: f'<img src="file://{FT}{k}.png" style="width:{w}px;display:block">'

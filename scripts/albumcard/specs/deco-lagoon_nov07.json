@@ -1,0 +1,314 @@
+{
+ "_note": "deco-lagoon album DRAFT (Nov 7): Claude's own picks, Tiffany's Nov 7 7:03pm ask ('You take them, just like you did this one'). Groups in order; 'lowres' = best photo we have is under ~800px.",
+ "groups": {
+  "top": "Top three",
+  "best": "Among the best",
+  "teal": "Deep teal + berry",
+  "deco": "Art deco, like her",
+  "peacock": "Peacocks + night gardens",
+  "contrast": "Her mulberry, on the mat",
+  "bright": "Brighter, still two colors"
+ },
+ "mats": [
+  {
+   "group": "top",
+   "name": "Reba",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-reba.jpg",
+   "why": "Your favorite Deco pairing. The deep teal field holds her Lagoon backs, and the pink frame and bouquet pick up her mulberry and rose faces.",
+   "retired": false,
+   "fym": "brittmillsdesign.com/reba-neoprene-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "top",
+   "name": "Wren",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-wren.jpg",
+   "why": "A dark lagoon center inside a mulberry scalloped frame, with a plum paisley border. Her back color plus her faces' second color, like it was made for her.",
+   "retired": false,
+   "fym": "brittmillsdesign.com/wren-neoprene-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "top",
+   "name": "Deco Dragon (Mulberry)",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-mulberry.jpg",
+   "why": "Bam Bird Boutique's own Deco Dragon mat, in her sister color. Same deco lines and dragons as the tiles, and the mulberry plays off the teal instead of copying it.",
+   "retired": false,
+   "fym": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098347829",
+   "lowres": false
+  },
+  {
+   "group": "best",
+   "name": "Caroline in Peacock",
+   "brand": "Mahj & Vine",
+   "img": "assets/colorcards/deco/mats/mahj-and-vine-caroline-in-peacock.jpg",
+   "why": "A peacock teal center inside a frame of berry and magenta blooms. Both of her colors at full strength.",
+   "retired": false,
+   "fym": "mahjandvine.com/caroline-in-peacock",
+   "lowres": false
+  },
+  {
+   "group": "best",
+   "name": "Gilded Peacock",
+   "brand": "Bougie Mahjong",
+   "img": "assets/colorcards/deco/mats/bougie-mahjong-gilded-peacock.jpg",
+   "why": "Art deco on art deco: gold fan lines and peacock feathers on deep teal, with an ivory center like her faces.",
+   "retired": false,
+   "fym": "bougiemahjong.com/gilded-peacock-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "best",
+   "name": "Peony Sociale Premium",
+   "brand": "Mahjong Register",
+   "img": "assets/colorcards/deco/mats/mahjong-register-peony-sociale-premium.jpg",
+   "why": "Deep teal medallions with hot pink peonies. Teal for the backs, berry pink for the craks.",
+   "retired": false,
+   "fym": "mahjongregister.com/paisley-jubilee-premium-mahjong-mat-33-copy",
+   "lowres": false
+  },
+  {
+   "group": "best",
+   "name": "Spring Blooms Premium",
+   "brand": "Sunday Mahjong",
+   "img": "assets/colorcards/deco/mats/sunday-mahjong-spring-blooms-premium.jpg",
+   "why": "A lagoon-teal center framed in plum and gold flowers: the backs, the crak frames and the gold palm all at once.",
+   "retired": false,
+   "fym": "sundaymahjong.com/spring-blooms-premium-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "teal",
+   "name": "Viola",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-viola.jpg",
+   "why": "A deep teal center inside a black floral border of pinks and plums. Moody, and very her.",
+   "retired": false,
+   "fym": "brittmillsdesign.com/viola-neoprene-mahjong-mat-arriving-late-october",
+   "lowres": false
+  },
+  {
+   "group": "teal",
+   "name": "Mahj In Bloom Mat",
+   "brand": "Mahj Mood",
+   "img": "assets/colorcards/deco/mats/mahj-mood-mahj-in-bloom-mat.jpg",
+   "why": "Deep teal with lilac and pink roses, in a lilac frame. Soft berry on her teal.",
+   "retired": false,
+   "fym": "mahjmood.com/mahj-in-bloom-mat",
+   "lowres": false
+  },
+  {
+   "group": "teal",
+   "name": "Year of the Snake",
+   "brand": "Wren Mats",
+   "img": "assets/colorcards/deco/mats/wren-mats-year-of-the-snake.jpg",
+   "why": "Lagoon-blue ground with a pink frame and pink snakes; the sage center keeps it soft.",
+   "retired": false,
+   "fym": "www.wrenmats.com/year-of-the-snake-mat",
+   "lowres": true
+  },
+  {
+   "group": "teal",
+   "name": "Ocean Florals",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-ocean-florals.jpg",
+   "why": "A dark teal center ringed in coral, rose and blue blooms, close to her rose crak frames.",
+   "retired": false,
+   "fym": "letsbebesties.com/ocean-florals-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "teal",
+   "name": "Plum Panda Premium",
+   "brand": "Sunday Mahjong",
+   "img": "assets/colorcards/deco/mats/sunday-mahjong-plum-panda-premium.jpg",
+   "why": "Teal-green with a plum border and little pink flowers. The orange trim is the only stretch.",
+   "retired": false,
+   "fym": "sundaymahjong.com/plum-panda-premium-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "teal",
+   "name": "Petals After Dark",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-petals-after-dark.jpg",
+   "why": "Black with teal and pink petals: her teal bams and mulberry faces on a night sky.",
+   "retired": false,
+   "fym": "letsbebesties.com/petals-after-dark-neoprene-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "teal",
+   "name": "Eden",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-eden.jpg",
+   "why": "A deep teal frame around a garden of blues and corals; the pond in the middle picks up her periwinkle stars.",
+   "retired": false,
+   "fym": "brittmillsdesign.com/eden-neoprene-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "deco",
+   "name": "SoHo",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/mats/oh-my-mahjong-soho.jpg",
+   "why": "Oh My Mahjong's deco sunburst in teal, blue and green. Retired, but a match if you already own it.",
+   "retired": true,
+   "fym": "alb:drake:SoHo",
+   "lowres": true
+  },
+  {
+   "group": "deco",
+   "name": "Gatsby Glow",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-gatsby-glow.jpg",
+   "why": "Deco fans and a gold sunburst, from the same era as the tiles. The blue-teal fans carry the backs; the rust sun is the one wild card.",
+   "retired": false,
+   "fym": "letsbebesties.com/gatsby-glow-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "deco",
+   "name": "Crown Jewels",
+   "brand": "Royal Mahjong Society",
+   "img": "assets/colorcards/deco/mats/royal-mahjong-society-crown-jewels.jpg",
+   "why": "Navy with jewel-tone flowers and a gold line border. The navy picks up her dots and numbers.",
+   "retired": false,
+   "fym": "theroyalmahjongsociety.com/crown-jewels-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "peacock",
+   "name": "Midnight Peacock",
+   "brand": "Anders Ruff",
+   "img": "assets/colorcards/deco/mats/anders-ruff-midnight-peacock.jpg",
+   "why": "Deep teal-green with gold palms, a quiet echo of the gold palm on every back.",
+   "retired": false,
+   "fym": "shop.andersruff.com/midnight-peacock-mahjong-mat",
+   "lowres": true
+  },
+  {
+   "group": "peacock",
+   "name": "Royal Peacock",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-royal-peacock.jpg",
+   "why": "A lagoon-blue center framed in pink, with peacock feathers like her wind tiles.",
+   "retired": false,
+   "fym": "letsbebesties.com/royal-peacock-mahjong-mat-2",
+   "lowres": false
+  },
+  {
+   "group": "peacock",
+   "name": "Imperial Peacock",
+   "brand": "Bougie Mahjong",
+   "img": "assets/colorcards/deco/mats/bougie-mahjong-imperial-peacock.jpg",
+   "why": "A peacock and pink lotuses on ivory. Lighter than she is, but it carries every face color.",
+   "retired": false,
+   "fym": "bougiemahjong.com/imperial-peacock-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "peacock",
+   "name": "Imperial Koi Pond",
+   "brand": "Bougie Mahjong",
+   "img": "assets/colorcards/deco/mats/bougie-mahjong-imperial-koi-pond.jpg",
+   "why": "Deep navy-teal with coral koi and a gold frame.",
+   "retired": false,
+   "fym": "bougiemahjong.com/imperial-koi-pond-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "peacock",
+   "name": "Indigo Reef",
+   "brand": "Bougie Mahjong",
+   "img": "assets/colorcards/deco/mats/bougie-mahjong-indigo-reef.jpg",
+   "why": "Navy-teal sea, gold fretwork and an ivory center. The gold frame matches her palm.",
+   "retired": false,
+   "fym": "bougiemahjong.com/indigo-reef-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "peacock",
+   "name": "Crane & Moon",
+   "brand": "YOLO Mahjong",
+   "img": "assets/colorcards/deco/mats/yolo-mahjong-crane-and-moon.jpg",
+   "why": "Deep teal with a gold moon, cranes and coral flowers. The crane is a twin of her 1 Bam.",
+   "retired": false,
+   "fym": "www.yolomahjong.com/crane-moon-mahjong-mat-floral-chinese-mahjong-table-mat-for-mahjong-set-31-5-x-31-5-inch",
+   "lowres": false
+  },
+  {
+   "group": "peacock",
+   "name": "Teal Tapestry",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-teal-tapestry.jpg",
+   "why": "A teal, gold and rust medallion on ivory, like a deco tile floor.",
+   "retired": false,
+   "fym": "letsbebesties.com/teal-tapestry-neoprene-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "contrast",
+   "name": "Garden Party – Mulberry",
+   "brand": "My Fair Mahjong",
+   "img": "assets/colorcards/deco/mats/my-fair-mahjong-garden-party-mulberry.jpg",
+   "why": "A berry center with a teal edge and lilac scallops. The tiles bring the teal, the mat brings the berry.",
+   "retired": false,
+   "fym": "myfairmahjong.com/mat-garden-party-mulberry",
+   "lowres": false
+  },
+  {
+   "group": "contrast",
+   "name": "Hawthorne",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/mats/oh-my-mahjong-hawthorne.jpg",
+   "why": "A plum center inside navy and gold. Rich and dark, so her mulberry crak frames come forward.",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/hawthorne-mat-in-tube",
+   "lowres": false
+  },
+  {
+   "group": "contrast",
+   "name": "Pretty in Plum Premium",
+   "brand": "Mahjong Register",
+   "img": "assets/colorcards/deco/mats/mahjong-register-pretty-in-plum-premium.jpg",
+   "why": "Plum, lilac and ivory with a scalloped deco pattern in the middle: her mulberry faces, big.",
+   "retired": false,
+   "fym": "mahjongregister.com/preorder-buttercup-cherie-premium-mahjong-mat-33-estimated-ship-oct-30th-copy",
+   "lowres": false
+  },
+  {
+   "group": "contrast",
+   "name": "Deco Dragon (Indigo)",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-indigo.jpg",
+   "why": "Bam Bird Boutique's navy Deco Dragon. It matches her navy dots and numbers, and the dragons match hers.",
+   "retired": false,
+   "fym": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098282293",
+   "lowres": false
+  },
+  {
+   "group": "bright",
+   "name": "Community Joy",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-community-joy.jpg",
+   "why": "Lagoon stripes and a raspberry star. Brighter and more preppy than the tiles, but the teal and berry line up exactly.",
+   "retired": false,
+   "fym": "letsbebesties.com/community-joy-neoprene-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "bright",
+   "name": "Purple & Aqua Marble",
+   "brand": "Anders Ruff",
+   "img": "assets/colorcards/deco/mats/anders-ruff-purple-and-aqua-marble.jpg",
+   "why": "Aqua and purple marble with gold veins. Lighter than the tiles; the gold veins pick up the palm.",
+   "retired": false,
+   "fym": "shop.andersruff.com/purple-aqua-marble-mahjong-mat",
+   "lowres": false
+  }
+ ]
+}

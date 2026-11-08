@@ -107,7 +107,8 @@ def _rest_many(bg,d,key,pins,cx,cy,ws,mono,num,chipname,chipsm,note,value=False)
     out=R+f'assets/colorwheels/{key}-color-wheel.jpg'; bg.save(out,quality=93); print(out)
 
 # Nov 6: per-set pins. papaya-spritz = the original 3 (unchanged). Others: config/colorcards.json backs + the faces listed here.
-WHEEL_FACES={'juniper':['HOT PINK','CORAL','GOLD'],'style-of-your-life':['INDIGO','WINE','BUBBLEGUM PINK']}
+WHEEL_FACES={'juniper':['HOT PINK','CORAL','GOLD'],'style-of-your-life':['INDIGO','WINE','BUBBLEGUM PINK'],
+            'deco-lagoon':['MULBERRY','ROSE','NAVY'],'deco-mulberry':['TEAL','ROSE','NAVY']}  # Nov 7 Bam Bird Deco
 # Nov 7: the legend is 3 + 3, so a set with 2 back colours names its third layer here (MFM: 'a pearl green back, a deep green middle layer, and a white face').
 WHEEL_EXTRA_BACKS={'style-of-your-life':[{'name':'White Face','hex':'#f4f1ec'}]}
 WHEEL_TITLE={'papaya-spritz':('Papaya Spritz','where her colors sit on the color wheel')}

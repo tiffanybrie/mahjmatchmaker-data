@@ -242,6 +242,18 @@
    "built_by": "scripts/albumcard/omm_agate_card.py",
    "note": "Nov 6: pusher rotated -2.6 deg to the hot-pink angle, height x0.848 (scripts/albumcard/omm_agate_card.py)"
   },
+  "Bam Bird Boutique Lagoon Wood": {
+   "file": "assets/racks/card/bam-bird-boutique-lagoon-wood.png",
+   "source": "bambirdboutique.com wooden-mahjong-rack-pusher-set image 12 (Lagoon variant photo, 4 racks upright on white): one rack cut out, turned to lie flat like the Walnut card rack (lip on top), Nov 7 Deco albums",
+   "kind": "flat",
+   "rack_frac": 1.0
+  },
+  "Bam Bird Boutique Mulberry Wood": {
+   "file": "assets/racks/card/bam-bird-boutique-mulberry-wood.png",
+   "source": "bambirdboutique.com wooden-mahjong-rack-pusher-set image 6 (Mulberry variant photo, 4 racks upright on white): one rack cut out, turned to lie flat like the Walnut card rack (lip on top), Nov 7 Deco albums",
+   "kind": "flat",
+   "rack_frac": 1.0
+  },
   "My Fair Mahjong Indigo Blue": {
    "file": "assets/racks/card/my-fair-mahjong-indigo-blue.png",
    "source": "assets/racks/v99/mfm-indigo.webp",

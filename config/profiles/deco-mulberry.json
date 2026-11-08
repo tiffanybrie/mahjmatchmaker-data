@@ -1,0 +1,286 @@
+{
+ "brand": "Bam Bird Boutique",
+ "status": "The jazz-age girl",
+ "launch_line": "In stock now · Bam Bird Boutique",
+ "rack_natural": true,
+ "racks_hand": "both Bam Bird Boutique, same shape, picked for her",
+ "launch_photos": {
+  "hero": "assets/launches/bambird-deco-tile-set/14-deco-two-bags-FULL.jpg",
+  "single": "assets/launches/bambird-deco-tile-set/04-deco-tile-set.jpg",
+  "all": "assets/launches/bambird-deco-tile-set/16-faces-tray.jpg"
+ },
+ "_note": "Deco (Mulberry) Tile Set Profile (doc 81), DRAFT Nov 7, built by Claude for Tiffany's review (her Nov 7 7:03pm: run it like Juniper). Colours from config/colorcards.json sets.deco-mulberry. Mats = Claude's top 3 (Viola #1 = her Oct 27 Mulberry pairing, Caroline in Peacock #2, Deco Dragon (Lagoon) #3 = Bam Bird's own sister mat, never #1 and never Mulberry on Mulberry). Racks = Bam Bird Mulberry Wood + Lagoon Wood (same 19in shape). best_features = Claude's 4 PROPOSALS until she picks. PRONOUN: brand guide s3 says ask Tiffany; 'her' is the draft default. Prompts are new (not Papaya's irrational fear, not Juniper's green flag).",
+ "key": "deco-mulberry",
+ "name": "Deco (Mulberry)",
+ "matches": 30,
+ "album": "https://www.mahjmatchmaker.com/deco-mulberry-mahjong-tile-matches",
+ "profile_line": [
+  "Seeking: mulberry, lagoon teal or gold.",
+  "Must love jazz-age glamour."
+ ],
+ "profile_line_options": {
+  "A": [
+   "Seeking: mulberry, lagoon teal or gold.",
+   "Must love jazz-age glamour."
+  ],
+  "B": [
+   "Her type: deep teal. Opposites attract.",
+   "Gold accents a plus."
+  ],
+  "C": [
+   "Seeking: a teal that can keep up",
+   "with a berry back."
+  ]
+ },
+ "swipe": {
+  "looking": "A teal who can keep up",
+  "pills": [
+   "Velvet",
+   "Cocktail hour",
+   "Lions",
+   "Gold leaf"
+  ],
+  "love": "Candlelit dinners",
+  "prompt_q": "I'm weirdly attracted to",
+  "prompt_a": "Gold accents. Every single time.",
+  "photo": "assets/tiles/album/deco-mulberry.jpg"
+ },
+ "her_colors": {
+  "backs": [
+   [
+    "MULBERRY",
+    "#7d3456",
+    "jewel-tone back"
+   ],
+   [
+    "GOLD FOIL",
+    "#c9a24a",
+    "deco palm"
+   ],
+   [
+    "IVORY",
+    "#f4efe6",
+    "face layer"
+   ]
+  ],
+  "faces": [
+   [
+    "Teal",
+    "#22939a"
+   ],
+   [
+    "Mulberry",
+    "#7c2b55"
+   ],
+   [
+    "Rose",
+    "#c47e68"
+   ],
+   [
+    "Gold",
+    "#d1ad5c"
+   ],
+   [
+    "Navy",
+    "#2a3f7a"
+   ],
+   [
+    "Periwinkle",
+    "#7f9fd0"
+   ]
+  ],
+  "tone": "Deep jewel tones with gold: rich, not earthy.",
+  "supporting": [
+   [
+    "Teal",
+    "#22939a"
+   ],
+   [
+    "Mulberry",
+    "#7c2b55"
+   ],
+   [
+    "Rose",
+    "#c47e68"
+   ],
+   [
+    "Gold",
+    "#d1ad5c"
+   ],
+   [
+    "Navy",
+    "#2a3f7a"
+   ],
+   [
+    "Periwinkle",
+    "#7f9fd0"
+   ],
+   [
+    "Deep green",
+    "#1f4d3e"
+   ]
+  ],
+  "faces_photo": "assets/launches/bambird-deco-tile-set/16-faces-tray.jpg",
+  "faces_crop": [
+   110,
+   10,
+   1840,
+   1173
+  ],
+  "source": "Bam Bird Boutique listing photos: backs tray (img 07), faces tray (img 16), pile (img 14)",
+  "main_labels": [
+   "Mulberry",
+   "Gold foil",
+   "Ivory"
+  ]
+ },
+ "layers": {
+  "_note": "Nov 7: Deco tiles are two layers (ivory face on a jewel-tone acrylic back with a gold-foil palm). Diagram = the approved faces|backs split photo (assets/tiles/v92), labels point at the back, the palm and the face.",
+  "img": "assets/tiles/backs/deco-mulberry-layers-split-crop.jpg",
+  "labels": [
+   [
+    150,
+    40,
+    "Ivory face",
+    "#f4efe6"
+   ],
+   [
+    550,
+    127,
+    "Gold-foil palm",
+    "#c9a24a"
+   ],
+   [
+    625,
+    360,
+    "Mulberry back",
+    "#7d3456"
+   ]
+  ],
+  "wheel_notes": [
+   [
+    "Mulberry",
+    "deep berry (dark)"
+   ],
+   [
+    "Gold foil",
+    "warm gold"
+   ],
+   [
+    "Ivory",
+    "the face layer"
+   ],
+   [
+    "Teal + navy",
+    "her faces: across the wheel"
+   ]
+  ],
+  "label_y": [
+   380,
+   480,
+   580
+  ],
+  "wheel_legend": "Center = light. Outer ring = dark.<br>Middle ring = full, clear color."
+ },
+ "her_type": [
+  {
+   "label": "Deep teal + berry florals",
+   "mat": "Viola",
+   "brand": "Britt Mills",
+   "chips": [
+    "#1c3d3a",
+    "#d98fb6"
+   ],
+   "why": "Your Mulberry pairing from October: a deep teal center for her teal bams, framed in pink and plum florals that echo her backs."
+  },
+  {
+   "label": "Teal + berry",
+   "mat": "Caroline in Peacock",
+   "brand": "Mahj & Vine",
+   "chips": [
+    "#0f8a8f",
+    "#c0287a"
+   ],
+   "why": "A peacock teal center in a frame of berry blooms: both of her colors, at full strength."
+  },
+  {
+   "label": "Her sister mat",
+   "mat": "Deco Dragon (Lagoon)",
+   "brand": "Bam Bird Boutique",
+   "chips": [
+    "#0c5a63",
+    "#c9a24a"
+   ],
+   "why": "Bam Bird Boutique made the Deco Dragon mats for these tiles. Mulberry looks best on its sister color, Lagoon."
+  }
+ ],
+ "dealbreaker": "Orange-reds and brick. Next to her cool berry they clash. Pick a deep teal, a plum or a clean ivory instead.",
+ "racks": [
+  {
+   "name": "Bam Bird Boutique Mulberry Wood",
+   "why": "Her Mulberry backs, in Bam Bird's own wood rack.",
+   "group": "color"
+  },
+  {
+   "name": "Bam Bird Boutique Lagoon Wood",
+   "why": "The deep teal from her bams and the green dragon.",
+   "group": "color"
+  }
+ ],
+ "first_dates": [
+  "Viola",
+  "Caroline in Peacock",
+  "Deco Dragon (Lagoon)"
+ ],
+ "bio": "Velvet and gold. A berry back, teal bams and a lion who knows it.",
+ "best_features": {
+  "_status": "CLAUDE'S PROPOSAL, pending Tiffany's picks (never swap her picks later)",
+  "top": [
+   "The dragons",
+   [
+    "dragon-green",
+    "dragon-red"
+   ],
+   "A teal-framed dragon and her mulberry twin"
+  ],
+  "singles": [
+   [
+    "The crane",
+    "bam-1-crane",
+    "Her gold-winged<br>crane bird bam"
+   ],
+   [
+    "The heart",
+    "wind-south",
+    "A mulberry heart<br>South wind"
+   ],
+   [
+    "The lion",
+    "joker-rose-lion",
+    "Her rose<br>lion joker"
+   ]
+  ],
+  "shop": "Shop Deco at Bam Bird Boutique"
+ },
+ "omm_launch": {
+  "pair": {
+   "mat": "Deco Dragon (Lagoon)",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-lagoon.jpg",
+   "together": "assets/launches/bambird-deco-dragon-mat/10-deco-dragon.jpg",
+   "together_fit": "cover",
+   "together_caption": "Mulberry tiles on the Lagoon Deco Dragon, in Bam Bird Boutique's own photo",
+   "why": "Bam Bird Boutique made the Deco Dragon mats to go with these tiles. Mulberry shines on its sister color, Lagoon."
+  },
+  "sisters": [],
+  "strong_label": "Strong match potential"
+ },
+ "album_peek": [
+  "britt-mills-viola",
+  "mahj-and-vine-caroline-in-peacock",
+  "bam-bird-boutique-deco-dragon-lagoon"
+ ],
+ "colors_line": "Mulberry backs with a gold-foil deco palm, on an ivory face. Deep jewel tones, rich, not earthy.",
+ "layers_hand": "see the layers?<br>an ivory face on a Mulberry back, gold palm on top.",
+ "faces_dir": "assets/tiles/faces/deco/clean/"
+}

@@ -17,7 +17,7 @@ DRAFT = ''
 OUTF = R+'/assets/social/papaya-spritz-launch/papaya-spritz-favorite-tiles.jpg'; HTMLF = R+'/scripts/colorwheel/favorites.html'
 if KEY != 'papaya-spritz':
     _p = json.load(open(f'{R}/config/profiles/{KEY}.json')); _b = _p['best_features']
-    T = f'assets/tiles/faces/{KEY}/clean/'
+    T = _p.get('faces_dir', f'assets/tiles/faces/{KEY}/clean/')  # Nov 7: Deco colourways share one face set
     SET = dict(title='Her best features', shop=_b.get('shop', f"Shop {_p['name']} at {_p['brand']}"), top=tuple(_b['top']), singles=[tuple(x) for x in _b['singles']])
     isdraft = 'PROPOSAL' in _b.get('_status', '')
     DRAFT = ('<div style="position:absolute;bottom:128px;left:50%;transform:translateX(-50%);white-space:nowrap;background:#1f3a6b;color:#fff;font:700 20px Pop;letter-spacing:.14em;'
