@@ -94,7 +94,7 @@ body = (
  f'<figure class="mm3-g mm3-fav2"><img src="{CDN}assets/social/juniper-launch/juniper-favorite-tiles.jpg" data-lb="" alt="My favorite Juniper mahjong tiles: the emerald dragon and her pink twin, the peacock bird bam, the hot pink lotus by a green pagoda and the 7 bam" loading="lazy">'
  f'<figcaption><a class="mm3-btn" href="{e(TILE_URL)}" target="_blank" rel="noopener">See Juniper Tiles</a></figcaption></figure>'
  '<style>.mm3-gg>.mm3-g.mm3-fav2{grid-column:1/-1;max-width:540px;width:100%;margin:6px auto 0;background:none}.mm3-fav2 img{border-radius:14px}.mm3-fav2 figcaption{text-align:center;padding:14px 0 4px}</style>'
- f'<figure class="mm3-g mm3-wheel"><img src="{CDN}assets/colorwheels/juniper-color-wheel.jpg" data-lb="" alt="Juniper mahjong tiles on the color wheel: Forest Green Jade, chartreuse, teal, hot pink, coral, mint and gold" loading="lazy">'
+ f'<figure class="mm3-g mm3-wheel"><img src="{CC}color-wheel.jpg" data-lb="" alt="Juniper mahjong tiles on the color wheel: Forest Green Jade, chartreuse, teal, hot pink, coral, mint and gold" loading="lazy">'
  '<figcaption><strong>Her colors on the wheel</strong><p>Pink sits straight across the wheel from her greens. That is why a pink-and-green mat makes Juniper pop, and why an all-green mat reads tone on tone, with the faces bringing the pink.</p>'
  '<p>Light colors sit toward the center and dark ones toward the rim, so Forest Green Jade sits out near the edge, while her hot pink and coral sit closer in.</p></figcaption></figure>'
  '<style>.mm3-gg>.mm3-g.mm3-wheel{grid-column:1/-1;max-width:760px;width:100%;margin:6px auto 0}</style>'
