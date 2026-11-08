@@ -40,7 +40,9 @@ for top in DB:
                 for f in set(a[k]) | set(b[k]):
                     if a[k].get(f) == b[k].get(f): continue
                     if top == 'mats' and k in AH and f not in LINK: continue
-                    if top == 'tiles' and f == 'full': continue  # the artifact keeps its own relative tile photo paths
+                    if top == 'tiles' and f == 'full':  # the artifact keeps its own relative tile photo paths; new t118/ album photos ship as files
+                        if '/site-app/fym-v118/t118/' in str(b[k][f]): DF[top][k][f] = 't118/' + b[k][f].split('/t118/')[1]; n += 1
+                        continue
                     if f in b[k]: DF[top][k][f] = b[k][f]
                     else: DF[top][k].pop(f, None)
                     n += 1
@@ -146,11 +148,15 @@ for sv, p, raw_, keep in sorted(cands, key=lambda x: -x[0]):
     for f, (a, l) in sorted(keep.items(), key=lambda kv: kv[1][0]): hd_[f] = [len(body_), l]; body_ += raw_[a:a + l]
     hj_ = json.dumps(hd_, separators=(',', ':')).encode(); open(OUT + '/' + p, 'wb').write(body_ + hj_ + struct.pack('<I', len(hj_)))
     saved += L[p] - os.path.getsize(OUT + '/' + p); repacked.append(p); L[p] = os.path.getsize(OUT + '/' + p)
-files = {'mc/190.webp': 'mc/190.webp', **{p: p for p in repacked}, **{p: None for p in drop}}
+T118F = {}
+for o in DF['tiles'].values():
+    if str(o.get('full', '')).startswith('t118/'):
+        os.makedirs(OUT + '/t118', exist_ok=True); import shutil; shutil.copy(f"{B8}/{o['full']}", f"{OUT}/{o['full']}"); T118F[o['full']] = o['full']
+files = {'mc/190.webp': 'mc/190.webp', **T118F, **{p: p for p in repacked}, **{p: None for p in drop}}
 json.dump(files, open(OUT + '/files.json', 'w'), indent=1)
 idx = len(h.encode()); pk = os.path.getsize(OUT + '/mc/190.webp')
-tot = sum(L.values()) - L['index.html'] - L['mc/190.webp'] - sum(L[p] for p in drop) + idx + pk
-nf = len(L) - len(drop)
+tot = sum(L.values()) - L['index.html'] - L['mc/190.webp'] - sum(L[p] for p in drop) + idx + pk + sum(os.path.getsize(f'{OUT}/{p}') for p in T118F)
+nf = len(L) - len(drop) + len(T118F)
 print(json.dumps({'unslimmed': sorted(UNSLIM), 'repacked': repacked, 'repack_saved': saved, 'field_changes': n, 'new_chunks': NEWC, 'photos_added_to_pack': added, 'new_thumbs': len(newth), 'dropped_files': drop,
                   'dropped_bytes': sum(L[p] for p in drop), 'index_bytes': idx, 'pack_bytes': pk, 'total_bytes': tot, 'files': nf,
                   'free_bytes': CAP_TOTAL - tot, 'fits_with_3MB_margin': tot <= CAP_TOTAL - MARGIN and nf <= CAP_FILES and idx <= CAP_INDEX,

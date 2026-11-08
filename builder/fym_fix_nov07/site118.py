@@ -6,7 +6,7 @@ v117 index (= b117 + those differences, checked Nov 7: every D key equal except 
  3. thumbnails b118 has and b117 lacks -> fym-v118/thumbs118.js (script tag right after the last thumbs*.js tag),
  4. BACKG / BLOGO+BLORD from b118, then the same code patches as the build: price118.py, zoomswipe_v118.py, release118.py.
 Two phases: `assets` copies thumbs118.js + new chunks into the site folder (commit + push = FC), then `<FC>` writes the index.
-Usage: python3 builder/fym_fix_nov07/site118.py <b117 dir> <b118 dir> <fym-site repo dir> assets|<FC sha>"""
+Usage: python3 builder/fym_fix_nov07/site118.py <b117 dir> <b118 dir> <fym-site repo dir> assets|<FC sha> [<t118 sha>]"""
 import sys, json, re, os, shutil, subprocess
 B7, B8, SITE, FC = sys.argv[1:5]
 H = os.path.dirname(os.path.abspath(__file__))
@@ -26,13 +26,18 @@ if FC == 'assets':
     T7 = img_ids(b7); T8 = img_ids(b8); NEW = {k: v for k, v in T8.items() if k not in T7}
     open(OUTD + '/thumbs118.js', 'w').write('window.IMG=Object.assign(window.IMG||{},' + json.dumps(NEW, separators=(',', ':')) + ');')
     for c in NEWC: shutil.copy(f'{B8}/mc/{c}.webp', f'{OUTD}/mc/{c}.webp')
+    if os.path.isdir(B8 + '/t118'):  # new album tile photos (Juniper pile shot, albumlive118.py)
+        os.makedirs(OUTD + '/t118', exist_ok=True)
+        for f in os.listdir(B8 + '/t118'): shutil.copy(f'{B8}/t118/{f}', f'{OUTD}/t118/{f}')
     print('site118 assets: new thumbs', len(NEW), 'chunks', NEWC); sys.exit()
 D7, _, _ = LD(b7); DS, si, se = LD(s7); D8, _, _ = LD(b8)
+T118 = sys.argv[5] if len(sys.argv) > 5 else FC  # commit holding site-app/fym-v118/t118 (tile photos added after the chunk assets)
 left = []
 for k, t in D8['tiles'].items():
     p = t.get('full')
     if not isinstance(p, str) or p.startswith(('http', 'data:')): continue
-    if k in DS['tiles'] and D7['tiles'].get(k, {}).get('full') == p: t['full'] = DS['tiles'][k]['full']
+    if p.startswith('t118/'): t['full'] = f'{CDN}{T118}/site-app/fym-v118/{p}'
+    elif k in DS['tiles'] and D7['tiles'].get(k, {}).get('full') == p: t['full'] = DS['tiles'][k]['full']
     elif any(o.get('full') == p for o in D7['tiles'].values()):
         t['full'] = next(DS['tiles'][k2]['full'] for k2, o in D7['tiles'].items() if o.get('full') == p)
     else: left.append((k, p))

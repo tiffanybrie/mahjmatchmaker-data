@@ -12,6 +12,16 @@ for slug in ('juniper',):
     s = next(x for x in D['sets'] if x['slug'] == slug); t = D['tiles'][s['tile']]
     if s['tile'] not in L['tiles'] and t.get('src'):
         L['tiles'][s['tile']] = {'set': s['name'], 'src': t['src'], 'full': t['full'], 'pile': t.get('pile')}; nl += 1
+# rule 3 (album tile photos are canonical): the FYM tile photo becomes the album photo (Juniper: the OMM pile shot, round 3 Nov 6)
+from PIL import Image
+nt = 0
+for slug in ('juniper',):
+    s = next(x for x in D['sets'] if x['slug'] == slug); t = D['tiles'][s['tile']]; src = R + t['src']
+    rel = f't118/{slug}.jpg'; out = os.path.join(sys.argv[1], rel)
+    if t.get('full') != rel or not os.path.exists(out):
+        os.makedirs(os.path.dirname(out), exist_ok=True); im = Image.open(src).convert('RGB'); im.thumbnail((1200, 1200)); im.save(out, 'JPEG', quality=88)
+        t['full'] = rel; t.pop('fo', None); nt += 1
+        if s['tile'] in L['tiles']: L['tiles'][s['tile']]['full'] = rel
 lm, _, _ = expected(json.loads(json.dumps(D))); nr = 0
 for s in D['sets']:
     for x in s.get('m', []):
@@ -25,4 +35,4 @@ for s in D['sets']:
             if s['slug'] in L['sets'] and 'm' in L['sets'][s['slug']]: L['sets'][s['slug']]['m'] = s['m']
 open(P, 'w').write(h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[e:])
 json.dump(L, open(R + 'builder/fym_flags/locks.json', 'w'), indent=1, ensure_ascii=False)
-print('albumlive118: album photos locked', nl, '| pairings given her rack picks', nr)
+print('albumlive118: album photos locked', nl, '| tile photo = album photo', nt, '| pairings given her rack picks', nr)
