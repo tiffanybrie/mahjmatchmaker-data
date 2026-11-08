@@ -61,6 +61,7 @@ def check(D, workers=16, now=None):
                 items.append((g, k, o.get('n'), o.get('bn'), o.get('u'), t))
     def fresh(t):
         c = cache.get(t)
+        if c and 's' not in c: return False
         if not c:
             return False
         s, age = c['s'], now - c['t']
@@ -75,8 +76,27 @@ def check(D, workers=16, now=None):
             for t, s in zip(todo, ex.map(fetch, todo)):
                 cache[t] = {'s': s, 't': int(now)}
         json.dump(dict(sorted(cache.items())), open(CACHE, 'w'), indent=0)
+    # Nov 7 2026 (Ozark): a whole-domain failure (parked page that answers 200 and redirects in JS, a known WRONG host for the brand)
+    # is DEAD here with status 'parked: <what to do>' -> find the brand's real domain first (scripts/checks/domain_check.py,
+    # config/brand-domains.json); never mark those items dead. Host verdicts cached 7 days under 'domain:<host>'.
+    sys.path.insert(0, REPO + 'scripts/checks')
+    import domain_check as DCK
+    hb = {}
+    for g, k, n, b, u, t in items: hb.setdefault(DCK.host(t), (t, b))
+    dom = {}
+    def hv(x):
+        h, (t, b) = x; c = cache.get('domain:' + h)
+        if c and now - c['t'] < OK_TTL: return h, c.get('v')
+        return h, DCK.verdict(t, b)
+    with ThreadPoolExecutor(workers) as ex:
+        for h, v in ex.map(hv, hb.items()):
+            dom[h] = v
+            if not (cache.get('domain:' + h) and now - cache['domain:' + h]['t'] < OK_TTL): cache['domain:' + h] = {'s': 0 if v else 200, 't': int(now), 'v': v}
+    json.dump(dict(sorted(cache.items())), open(CACHE, 'w'), indent=0)
     dead, unk = [], []
     for g, k, n, b, u, t in items:
+        if dom.get(DCK.host(t)):
+            dead.append((g, k, n, b, u, 'parked: ' + dom[DCK.host(t)])); continue
         s = cache[t]['s']
         if s in (404, 410):
             dead.append((g, k, n, b, u, s))

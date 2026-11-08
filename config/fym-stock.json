@@ -43,8 +43,9 @@
 "how": "unknown (not a Shopify product link)"
 },
 "m:alb2:ozark-mah-jongg-carson-vintage": {
-"in": true,
-"how": "unknown (not a Shopify product link)"
+"in": false,
+"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
+"price": 75.0
 },
 "m:alb2:splash-of-color-preppy-animal-print": {
 "in": true,
@@ -2673,16 +2674,19 @@
 "price": 90.0
 },
 "m:ozarkmahjong.com/winslow-1920-noir-mat": {
-"in": true,
-"how": "unknown (Expecting value: line 1 column 1 (char 0))"
+"in": false,
+"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
+"price": 75.0
 },
 "m:ozarkmahjong.com/winslow-1920-original-navy-blue-mat": {
-"in": true,
-"how": "unknown (Expecting value: line 1 column 1 (char 0))"
+"in": false,
+"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
+"price": 75.0
 },
 "m:ozarkmahjong.com/winslow-1920-rouge-mat": {
-"in": true,
-"how": "unknown (Expecting value: line 1 column 1 (char 0))"
+"in": false,
+"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
+"price": 75.0
 },
 "m:peacelovemahjong.com/leather-mat-with-mat-tube?v=67801473679652": {
 "in": true,
@@ -8976,6 +8980,61 @@
 "in": true,
 "how": "v116 add (mahjpit.co products.json Nov 6)",
 "price": 145.0
+},
+"m:ozarkmahjongg.com/baker-bright-mat": {
+"in": false,
+"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
+"price": 75.0
+},
+"m:ozarkmahjongg.com/baker-traditional-mat": {
+"in": false,
+"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
+"price": 75.0
+},
+"m:ozarkmahjongg.com/carson-revel-mat": {
+"in": false,
+"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
+"price": 75.0
+},
+"m:ozarkmahjongg.com/eaton-indigo-mat": {
+"in": false,
+"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
+"price": 75.0
+},
+"m:ozarkmahjongg.com/trent-joy-mahjong-mat": {
+"in": false,
+"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
+"price": 75.0
+},
+"m:ozarkmahjongg.com/trent-midnight-mahjong-mat": {
+"in": false,
+"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
+"price": 75.0
+},
+"m:ozarkmahjongg.com/trent-neutral-mahjong-mat": {
+"in": false,
+"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
+"price": 75.0
+},
+"m:ozarkmahjongg.com/fitz-carmine-mahjong-mat": {
+"in": false,
+"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
+"price": 75.0
+},
+"m:ozarkmahjongg.com/fitz-verdant-mahjong-mat": {
+"in": false,
+"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
+"price": 75.0
+},
+"m:ozarkmahjongg.com/trent-celadon-mahjong-mat": {
+"in": false,
+"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
+"price": 75.0
+},
+"m:ozarkmahjongg.com/trent-neutral-mahjong-mat-1": {
+"in": false,
+"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
+"price": 75.0
 }
 }
 }

@@ -1,0 +1,388 @@
+{
+ "_note": "Nov 7 Ozark Mahjongg catalog add (Tiffany 10:45pm: the real store is https://www.ozarkmahjongg.com, Wix; our ozarkmahjong.com links were a parked wrong domain; FYM had only 4 of the store's 15 mats). Ozark = NON-partner WHOLE-LINE allow (Oct 20 22:42, builder/fym_flags/nonpartner_allow.json): plain shop link, NO code claim (dc '', pa False, ncn 1). Prices + stock from each product page's ld+json/Wix inventory (Nov 7 ~11pm): every Ozark mat is $75 and OUT OF STOCK (Wix inventory out_of_stock, incl. the 4 already in FYM) -> oos 1 (Sold out badge, NOT retired). Photos: store gallery images only (never AI), LOOKED at on assets/qa/ozark-nov07/sheet-*.jpg + adds.jpg; 7 flat top-down shots cropped to the mat (Table view A, the FYM photo is the whole mat); Fitz Carmine/Verdant, Trent Celadon, Trent Spice have ONLY close-ups -> hidden + Questionable (when in doubt, pull it). Holiday: none (Trent Joy is red/green/marigold Art Nouveau florals with no Christmas/Hanukkah/snow graphic -> year-round; a possible works_for_holiday candidate, her call only). Colours: by eye ('mf'), measured shares kept. Not added: Ozark's tile/rack listings are other brands (Mini Mahjer tiles, My Fair Mahjong racks) or vintage one-offs; their unbranded 'Essential Mahjong Tile Set' ($55 / $155 bundle) has only a pile-of-tiles perspective photo and no maker name (her call whether a generic starter set belongs in FYM). Patch: builder/fym_fix_nov07/ozark_v119.py (run after adds118.sh / partner_adds118.py, before v104rank + locks; 1.18 if in time, else 1.19).",
+ "store": "https://www.ozarkmahjongg.com",
+ "checked": "2026-11-07",
+ "existing": {
+  "ozarkmahjong.com/winslow-1920-noir-mat": "winslow-1920-noir-mat",
+  "ozarkmahjong.com/winslow-1920-original-navy-blue-mat": "winslow-1920-original-navy-blue-mat",
+  "ozarkmahjong.com/winslow-1920-rouge-mat": "winslow-1920-rouge-mat",
+  "alb2:ozark-mah-jongg-carson-vintage": "carson-vintage-mat"
+ },
+ "existing_note": "keys keep the old 'ozarkmahjong.com/' prefix: they are IDs (locks, m lists, albums), not links; only u/u0 change. fixes118.py (1.18) also re-points these four; this patch is idempotent with it.",
+ "not_added": {
+  "essential-mahjong-tile-set": "unbranded generic tile set, $55 (bundle $155), in stock; perspective pile photo only; her call",
+  "mini-mahjer-complete-game-og-edition": "Mini Mahjer brand (resold), not Ozark's own",
+  "mini-mahjer-just-the-tiles-beach-edition": "Mini Mahjer brand (resold)",
+  "my-fair-mahjong-acrylic-racks-magnetic-pushers": "My Fair Mahjong brand (resold), not Ozark's own",
+  "one-clear-mahjong-mat-storage-bag": "storage bag, not a mat",
+  "ozark-bird-bam-rack-bag / whimsical-hinge-head-rack-magnet": "accessories, not racks",
+  "category/vintage (8)": "vintage one-off Catalin/Lucite sets, not their own line"
+ },
+ "mats": [
+  {
+   "key": "ozarkmahjongg.com/baker-bright-mat",
+   "name": "Baker Bright",
+   "brand": "Ozark Mahjongg",
+   "b": "Ozark Mahjongg",
+   "u": "https://www.ozarkmahjongg.com/product-page/baker-bright-mat",
+   "slug": "baker-bright-mat",
+   "img": "assets/mats/ozark-nov07/baker-bright-mat.jpg",
+   "src": "https://static.wixstatic.com/media/8220b2_29729e34458041bdb411d597ab3488b7~mv2.jpg",
+   "crop": [
+    0.1536,
+    0.1829,
+    0.8464,
+    0.8057
+   ],
+   "price": 75.0,
+   "oos": true,
+   "hol": false,
+   "hid": false,
+   "reason": "",
+   "mf": [
+    "blue",
+    "red",
+    "green",
+    "neutral"
+   ],
+   "measured": {
+    "neutral": 60.4,
+    "brown": 18.2,
+    "blue": 9.5,
+    "red": 7.9
+   },
+   "eye": "cream field with a navy-blue border, red/rust medallion and an olive-green ground",
+   "tableview": "A",
+   "photo_note": "store photo 1, flat top-down on wood, cropped to the mat"
+  },
+  {
+   "key": "ozarkmahjongg.com/baker-traditional-mat",
+   "name": "Baker Traditional",
+   "brand": "Ozark Mahjongg",
+   "b": "Ozark Mahjongg",
+   "u": "https://www.ozarkmahjongg.com/product-page/baker-traditional-mat",
+   "slug": "baker-traditional-mat",
+   "img": "assets/mats/ozark-nov07/baker-traditional-mat.jpg",
+   "src": "https://static.wixstatic.com/media/8220b2_03404b6bb30444f9939557f36c76672b~mv2.jpg",
+   "crop": [
+    0.1575,
+    0.1814,
+    0.8456,
+    0.8114
+   ],
+   "price": 75.0,
+   "oos": true,
+   "hol": false,
+   "hid": false,
+   "reason": "",
+   "mf": [
+    "red",
+    "blue",
+    "neutral"
+   ],
+   "measured": {
+    "neutral": 51.3,
+    "brown": 27.3,
+    "red": 15.3,
+    "earthy": 3.8
+   },
+   "eye": "red/rust medallion and field, navy border, cream centre",
+   "tableview": "A",
+   "photo_note": "store photo 1, flat top-down on wood, cropped to the mat"
+  },
+  {
+   "key": "ozarkmahjongg.com/carson-revel-mat",
+   "name": "Carson Revel",
+   "brand": "Ozark Mahjongg",
+   "b": "Ozark Mahjongg",
+   "u": "https://www.ozarkmahjongg.com/product-page/carson-revel-mat",
+   "slug": "carson-revel-mat",
+   "img": "assets/mats/ozark-nov07/carson-revel-mat.jpg",
+   "src": "https://static.wixstatic.com/media/8220b2_b7ff2935ff5f470e8baf62bc33608849~mv2.jpg",
+   "crop": [
+    0.156,
+    0.175,
+    0.8464,
+    0.8043
+   ],
+   "price": 75.0,
+   "oos": true,
+   "hol": false,
+   "hid": false,
+   "reason": "",
+   "mf": [
+    "pink",
+    "neutral",
+    "blue"
+   ],
+   "measured": {
+    "pink": 53.7,
+    "blue": 14.3,
+    "neutral": 13.3,
+    "purple": 6.7,
+    "red": 5.4,
+    "green": 3.2
+   },
+   "eye": "magenta medallion on cream with aqua/turquoise accents",
+   "tableview": "A",
+   "photo_note": "store photo 1, flat top-down on wood, cropped to the mat"
+  },
+  {
+   "key": "ozarkmahjongg.com/eaton-indigo-mat",
+   "name": "Eaton Indigo",
+   "brand": "Ozark Mahjongg",
+   "b": "Ozark Mahjongg",
+   "u": "https://www.ozarkmahjongg.com/product-page/eaton-indigo-mat",
+   "slug": "eaton-indigo-mat",
+   "img": "assets/mats/ozark-nov07/eaton-indigo-mat.jpg",
+   "src": "https://static.wixstatic.com/media/8220b2_e8639598b98d440d93b4032e97513b84~mv2.jpg",
+   "crop": [
+    0.1567,
+    0.1836,
+    0.8456,
+    0.805
+   ],
+   "price": 75.0,
+   "oos": true,
+   "hol": false,
+   "hid": false,
+   "reason": "",
+   "mf": [
+    "blue",
+    "red",
+    "neutral"
+   ],
+   "measured": {
+    "neutral": 48.4,
+    "red": 16.6,
+    "purple": 16.4,
+    "blue": 12.8,
+    "pink": 3.8
+   },
+   "eye": "indigo-navy florals and red on cream, red binding",
+   "tableview": "A",
+   "photo_note": "store photo 1, flat top-down on wood, cropped to the mat"
+  },
+  {
+   "key": "ozarkmahjongg.com/trent-joy-mahjong-mat",
+   "name": "Trent Joy",
+   "brand": "Ozark Mahjongg",
+   "b": "Ozark Mahjongg",
+   "u": "https://www.ozarkmahjongg.com/product-page/trent-joy-mahjong-mat",
+   "slug": "trent-joy-mahjong-mat",
+   "img": "assets/mats/ozark-nov07/trent-joy-mahjong-mat.jpg",
+   "src": "https://static.wixstatic.com/media/1ef672_5fd26c7fcaf946e28f79fd9a88a4625c~mv2.jpg",
+   "crop": [
+    0.1545,
+    0.1786,
+    0.8416,
+    0.7986
+   ],
+   "price": 75.0,
+   "oos": true,
+   "hol": false,
+   "hid": false,
+   "reason": "",
+   "mf": [
+    "green",
+    "red",
+    "orange",
+    "neutral"
+   ],
+   "measured": {
+    "neutral": 59.9,
+    "brown": 18.0,
+    "red": 13.8,
+    "green": 5.5
+   },
+   "eye": "Art Nouveau red poppies, green leaves, marigold border on a light grey-cream ground; no Christmas/Hanukkah/snow graphic",
+   "tableview": "A",
+   "photo_note": "store photo 1, flat top-down on wood, cropped to the mat"
+  },
+  {
+   "key": "ozarkmahjongg.com/trent-midnight-mahjong-mat",
+   "name": "Trent Midnight",
+   "brand": "Ozark Mahjongg",
+   "b": "Ozark Mahjongg",
+   "u": "https://www.ozarkmahjongg.com/product-page/trent-midnight-mahjong-mat",
+   "slug": "trent-midnight-mahjong-mat",
+   "img": "assets/mats/ozark-nov07/trent-midnight-mahjong-mat.jpg",
+   "src": "https://static.wixstatic.com/media/1ef672_fff2343f54ad455cadaf28e7f2b8a25e~mv2.jpg",
+   "crop": [
+    0.158,
+    0.177,
+    0.822,
+    0.796
+   ],
+   "price": 75.0,
+   "oos": true,
+   "hol": false,
+   "hid": false,
+   "reason": "",
+   "mf": [
+    "dark",
+    "blue",
+    "green",
+    "pink"
+   ],
+   "measured": {
+    "dark": 31.3,
+    "blue": 25.0,
+    "green": 17.7,
+    "purple": 8.3,
+    "teal": 6.7,
+    "neutral": 4.3
+   },
+   "eye": "black-navy ground, cobalt border, green leaves, pink/magenta, purple, red, yellow and aqua flowers",
+   "tableview": "A",
+   "photo_note": "store photo 1, flat top-down on wood, cropped to the mat"
+  },
+  {
+   "key": "ozarkmahjongg.com/trent-neutral-mahjong-mat",
+   "name": "Trent Neutral",
+   "brand": "Ozark Mahjongg",
+   "b": "Ozark Mahjongg",
+   "u": "https://www.ozarkmahjongg.com/product-page/trent-neutral-mahjong-mat",
+   "slug": "trent-neutral-mahjong-mat",
+   "img": "assets/mats/ozark-nov07/trent-neutral-mahjong-mat.jpg",
+   "src": "https://static.wixstatic.com/media/1ef672_3de8a57e782245e9a70e2ba224955683~mv2.jpg",
+   "crop": [
+    0.1671,
+    0.185,
+    0.8361,
+    0.8121
+   ],
+   "price": 75.0,
+   "oos": true,
+   "hol": false,
+   "hid": false,
+   "reason": "",
+   "mf": [
+    "neutral",
+    "dark"
+   ],
+   "measured": {
+    "neutral": 74.6,
+    "brown": 22.8
+   },
+   "eye": "black Art Nouveau print on cream",
+   "tableview": "A",
+   "photo_note": "store photo 1, flat top-down on wood, cropped to the mat"
+  },
+  {
+   "key": "ozarkmahjongg.com/fitz-carmine-mahjong-mat",
+   "name": "Fitz Carmine",
+   "brand": "Ozark Mahjongg",
+   "b": "Ozark Mahjongg",
+   "u": "https://www.ozarkmahjongg.com/product-page/fitz-carmine-mahjong-mat",
+   "slug": "fitz-carmine-mahjong-mat",
+   "img": "assets/mats/ozark-nov07/fitz-carmine-mahjong-mat.jpg",
+   "src": "https://static.wixstatic.com/media/1ef672_c2e872df73604341949e22f7eea5d6f2~mv2.jpg",
+   "crop": null,
+   "price": 75.0,
+   "oos": true,
+   "hol": false,
+   "hid": true,
+   "reason": "only close-up detail photos on the store (no full-mat shot); colours clear but the mat itself never shown whole",
+   "mf": [
+    "red",
+    "neutral"
+   ],
+   "measured": {
+    "red": 58.3,
+    "neutral": 28.3,
+    "brown": 10.0
+   },
+   "eye": "carmine red with beige poppies and teal outlines",
+   "tableview": null,
+   "photo_note": "store close-up (no full-mat photo exists)"
+  },
+  {
+   "key": "ozarkmahjongg.com/fitz-verdant-mahjong-mat",
+   "name": "Fitz Verdant",
+   "brand": "Ozark Mahjongg",
+   "b": "Ozark Mahjongg",
+   "u": "https://www.ozarkmahjongg.com/product-page/fitz-verdant-mahjong-mat",
+   "slug": "fitz-verdant-mahjong-mat",
+   "img": "assets/mats/ozark-nov07/fitz-verdant-mahjong-mat.jpg",
+   "src": "https://static.wixstatic.com/media/1ef672_ccb0ef6194104fc09fa526ecd5e145e6~mv2.jpg",
+   "crop": null,
+   "price": 75.0,
+   "oos": true,
+   "hol": false,
+   "hid": true,
+   "reason": "only close-up detail photos on the store (no full-mat shot); colours clear but the mat itself never shown whole",
+   "mf": [
+    "green",
+    "blue"
+   ],
+   "measured": {
+    "green": 58.7,
+    "blue": 23.8,
+    "earthy": 9.2,
+    "neutral": 3.9
+   },
+   "eye": "chartreuse/green with royal-blue outlines",
+   "tableview": null,
+   "photo_note": "store close-up (no full-mat photo exists)"
+  },
+  {
+   "key": "ozarkmahjongg.com/trent-celadon-mahjong-mat",
+   "name": "Trent Celadon",
+   "brand": "Ozark Mahjongg",
+   "b": "Ozark Mahjongg",
+   "u": "https://www.ozarkmahjongg.com/product-page/trent-celadon-mahjong-mat",
+   "slug": "trent-celadon-mahjong-mat",
+   "img": "assets/mats/ozark-nov07/trent-celadon-mahjong-mat.jpg",
+   "src": "https://static.wixstatic.com/media/1ef672_bd4232133fd84523a663495fe00f192e~mv2.jpg",
+   "crop": null,
+   "price": 75.0,
+   "oos": true,
+   "hol": false,
+   "hid": true,
+   "reason": "only angled close-ups on the store (no full-mat shot)",
+   "mf": [
+    "green",
+    "red"
+   ],
+   "measured": {
+    "green": 67.0,
+    "neutral": 14.2,
+    "red": 12.6
+   },
+   "eye": "celadon/mint ground with red flowers, olive and teal",
+   "tableview": null,
+   "photo_note": "store close-up (no full-mat photo exists)"
+  },
+  {
+   "key": "ozarkmahjongg.com/trent-neutral-mahjong-mat-1",
+   "name": "Trent Spice",
+   "brand": "Ozark Mahjongg",
+   "b": "Ozark Mahjongg",
+   "u": "https://www.ozarkmahjongg.com/product-page/trent-neutral-mahjong-mat-1",
+   "slug": "trent-neutral-mahjong-mat-1",
+   "img": "assets/mats/ozark-nov07/trent-neutral-mahjong-mat-1.jpg",
+   "src": "https://static.wixstatic.com/media/1ef672_dccd9c3ae653472a9e1725130903e343~mv2.jpg",
+   "crop": null,
+   "price": 75.0,
+   "oos": true,
+   "hol": false,
+   "hid": true,
+   "reason": "only angled close-ups on the store (no full-mat shot)",
+   "mf": [
+    "neutral",
+    "orange",
+    "blue",
+    "yellow"
+   ],
+   "measured": {
+    "neutral": 46.9,
+    "brown": 34.3,
+    "dark": 11.5
+   },
+   "eye": "cream with rust-orange, mustard and deep-teal print",
+   "tableview": null,
+   "photo_note": "store close-up (no full-mat photo exists)"
+  }
+ ]
+}

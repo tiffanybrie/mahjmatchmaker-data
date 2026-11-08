@@ -1,0 +1,11 @@
+{
+ "_about": "Each brand's REAL store domain, and wrong/parked domains we have used for it. Read by scripts/checks/domain_check.py (gate [162] via builder/fym_fix_nov06/linkcheck.py, and builder/fym_fix_nov06/deadlinks116.py). Rule (Tiffany Nov 7 10:45pm, Ozark): a whole-domain failure (parked page, /lander, for-sale, root redirecting off-host, DNS gone) means find the brand's real store first (IG bio, site footer, Google) and re-point; items are dead only if missing ON THE REAL STORE. Add a brand here whenever a wrong domain is found.",
+ "brands": {
+  "Ozark Mahjongg": {
+   "real": "https://www.ozarkmahjongg.com",
+   "wrong": ["ozarkmahjong.com"],
+   "platform": "Wix (/category/mats, /product-page/<slug>)",
+   "found": "2026-11-07 Tiffany 10:45pm: ozarkmahjong.com (one g) is a parked domain (JS redirect to /lander); the store is ozarkmahjongg.com (two g)"
+  }
+ }
+}

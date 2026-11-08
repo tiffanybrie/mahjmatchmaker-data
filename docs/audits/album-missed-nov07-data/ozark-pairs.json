@@ -1,0 +1,558 @@
+{
+ "date": "2026-11-07",
+ "round": "ozark",
+ "method": "Ozark Mahjongg line (missed: our links used the parked ozarkmahjong.com). 7 newly staged visible mats (config/fym-ozark-nov07.json) + the 4 already in FYM, scored against all 43 live albums with round 2's scorer and selection (scripts/audits/album_missed_ozark_nov07.py; score>=4.3, or within 85% of the mat's best album (>=3.7), or top-12 per album (>=3.0)); pairs already on the live album or her FYM list skipped; then a by-eye pass on contact sheets (mat full, album tiles inset; assets/qa/ozark-nov07/albums/) pulled clear misses (ozark-by-eye.json). Every Ozark mat is SOLD OUT on the store (Nov 7): sold_out true.",
+ "summary": {
+  "mats": 8,
+  "new_pairs": 30,
+  "scored_selected": 53,
+  "pruned_by_eye": 23,
+  "pairs_per_album": {
+   "heritage-2-0": 4,
+   "heritage": 4,
+   "brownstone-bloom": 2,
+   "gemma": 2,
+   "glow-wild": 2,
+   "smith": 2,
+   "tortoise": 2,
+   "amara": 1,
+   "coquette": 1,
+   "gatsby": 1,
+   "la-fete": 1,
+   "lagoon": 1,
+   "shangri-la": 1,
+   "sierra": 1,
+   "solara": 1,
+   "sunday-tile-set": 1,
+   "sunset": 1,
+   "taylor": 1,
+   "willow": 1
+  }
+ },
+ "mats": [
+  {
+   "key": "ozarkmahjongg.com/baker-bright-mat",
+   "name": "Baker Bright",
+   "brand": "Ozark Mahjongg",
+   "partner": false,
+   "holiday": false,
+   "url": "https://www.ozarkmahjongg.com/product-page/baker-bright-mat",
+   "sold_out": true,
+   "new_in_fym": true,
+   "img": "assets/mats/ozark-nov07/baker-bright-mat.jpg",
+   "albums": [
+    {
+     "album": "heritage",
+     "album_name": "Heritage",
+     "score": 4.406,
+     "round1": "new",
+     "why": {
+      "back": 0.39,
+      "dom_back": 0.5,
+      "hits": 3,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 24
+     }
+    },
+    {
+     "album": "heritage-2-0",
+     "album_name": "Heritage 2.0",
+     "score": 4.056,
+     "round1": "new",
+     "why": {
+      "back": 0.38,
+      "dom_back": 0.5,
+      "hits": 2,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 24
+     }
+    },
+    {
+     "album": "sunday-tile-set",
+     "album_name": "Sunday Tile Set",
+     "score": 3.794,
+     "round1": "new",
+     "why": {
+      "back": 0.33,
+      "dom_back": 0.5,
+      "hits": 2,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 24
+     }
+    }
+   ]
+  },
+  {
+   "key": "ozarkmahjongg.com/baker-traditional-mat",
+   "name": "Baker Traditional",
+   "brand": "Ozark Mahjongg",
+   "partner": false,
+   "holiday": false,
+   "url": "https://www.ozarkmahjongg.com/product-page/baker-traditional-mat",
+   "sold_out": true,
+   "new_in_fym": true,
+   "img": "assets/mats/ozark-nov07/baker-traditional-mat.jpg",
+   "albums": [
+    {
+     "album": "heritage",
+     "album_name": "Heritage",
+     "score": 4.32,
+     "round1": "new",
+     "why": {
+      "back": 0.52,
+      "dom_back": 0.5,
+      "hits": 1,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 26
+     }
+    },
+    {
+     "album": "sunset",
+     "album_name": "Sunset",
+     "score": 3.968,
+     "round1": "new",
+     "why": {
+      "back": 0.24,
+      "dom_back": 0.5,
+      "hits": 4,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 26
+     }
+    },
+    {
+     "album": "heritage-2-0",
+     "album_name": "Heritage 2.0",
+     "score": 3.845,
+     "round1": "new",
+     "why": {
+      "back": 0.4,
+      "dom_back": 0.5,
+      "hits": 1,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 26
+     }
+    },
+    {
+     "album": "solara",
+     "album_name": "Solara",
+     "score": 3.76,
+     "round1": "new",
+     "why": {
+      "back": 0.39,
+      "dom_back": 0.5,
+      "hits": 1,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 26
+     }
+    },
+    {
+     "album": "smith",
+     "album_name": "Smith",
+     "score": 3.475,
+     "round1": "new",
+     "why": {
+      "back": 0.3,
+      "dom_back": 0.0,
+      "hits": 3,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 26
+     }
+    },
+    {
+     "album": "tortoise",
+     "album_name": "Classic Tortoise",
+     "score": 3.212,
+     "round1": "new",
+     "why": {
+      "back": 0.25,
+      "dom_back": 0.0,
+      "hits": 3,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 26
+     }
+    }
+   ]
+  },
+  {
+   "key": "ozarkmahjongg.com/carson-revel-mat",
+   "name": "Carson Revel",
+   "brand": "Ozark Mahjongg",
+   "partner": false,
+   "holiday": false,
+   "url": "https://www.ozarkmahjongg.com/product-page/carson-revel-mat",
+   "sold_out": true,
+   "new_in_fym": true,
+   "img": "assets/mats/ozark-nov07/carson-revel-mat.jpg",
+   "albums": [
+    {
+     "album": "coquette",
+     "album_name": "Coquette",
+     "score": 5.14,
+     "round1": "new",
+     "why": {
+      "back": 0.53,
+      "dom_back": 1.0,
+      "hits": 2,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 28
+     }
+    },
+    {
+     "album": "taylor",
+     "album_name": "Taylor",
+     "score": 3.498,
+     "round1": "new",
+     "why": {
+      "back": 0.31,
+      "dom_back": 0.5,
+      "hits": 2,
+      "fit": 0.81,
+      "unexpl": 0.07,
+      "ch": 28
+     }
+    },
+    {
+     "album": "amara",
+     "album_name": "Amara",
+     "score": 3.377,
+     "round1": "new",
+     "why": {
+      "back": 0.28,
+      "dom_back": 0.0,
+      "hits": 3,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 28
+     }
+    },
+    {
+     "album": "la-fete",
+     "album_name": "La Fete",
+     "score": 3.216,
+     "round1": "new",
+     "why": {
+      "back": 0.25,
+      "dom_back": 0.5,
+      "hits": 2,
+      "fit": 0.81,
+      "unexpl": 0.07,
+      "ch": 28
+     }
+    }
+   ]
+  },
+  {
+   "key": "ozarkmahjongg.com/eaton-indigo-mat",
+   "name": "Eaton Indigo",
+   "brand": "Ozark Mahjongg",
+   "partner": false,
+   "holiday": false,
+   "url": "https://www.ozarkmahjongg.com/product-page/eaton-indigo-mat",
+   "sold_out": true,
+   "new_in_fym": true,
+   "img": "assets/mats/ozark-nov07/eaton-indigo-mat.jpg",
+   "albums": [
+    {
+     "album": "gemma",
+     "album_name": "Gemma",
+     "score": 3.393,
+     "round1": "new",
+     "why": {
+      "back": 0.25,
+      "dom_back": 0.5,
+      "hits": 2,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 25
+     }
+    }
+   ]
+  },
+  {
+   "key": "ozarkmahjongg.com/trent-joy-mahjong-mat",
+   "name": "Trent Joy",
+   "brand": "Ozark Mahjongg",
+   "partner": false,
+   "holiday": false,
+   "url": "https://www.ozarkmahjongg.com/product-page/trent-joy-mahjong-mat",
+   "sold_out": true,
+   "new_in_fym": true,
+   "img": "assets/mats/ozark-nov07/trent-joy-mahjong-mat.jpg",
+   "albums": [
+    {
+     "album": "heritage-2-0",
+     "album_name": "Heritage 2.0",
+     "score": 4.162,
+     "round1": "new",
+     "why": {
+      "back": 0.34,
+      "dom_back": 0.5,
+      "hits": 3,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 24
+     }
+    },
+    {
+     "album": "willow",
+     "album_name": "Willow",
+     "score": 3.958,
+     "round1": "new",
+     "why": {
+      "back": 0.43,
+      "dom_back": 0.5,
+      "hits": 2,
+      "fit": 0.65,
+      "unexpl": 0.14,
+      "ch": 24
+     }
+    },
+    {
+     "album": "heritage",
+     "album_name": "Heritage",
+     "score": 3.608,
+     "round1": "new",
+     "why": {
+      "back": 0.33,
+      "dom_back": 0.0,
+      "hits": 3,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 24
+     }
+    }
+   ]
+  },
+  {
+   "key": "ozarkmahjongg.com/trent-midnight-mahjong-mat",
+   "name": "Trent Midnight",
+   "brand": "Ozark Mahjongg",
+   "partner": false,
+   "holiday": false,
+   "url": "https://www.ozarkmahjongg.com/product-page/trent-midnight-mahjong-mat",
+   "sold_out": true,
+   "new_in_fym": true,
+   "img": "assets/mats/ozark-nov07/trent-midnight-mahjong-mat.jpg",
+   "albums": [
+    {
+     "album": "gemma",
+     "album_name": "Gemma",
+     "score": 4.357,
+     "round1": "new",
+     "why": {
+      "back": 0.32,
+      "dom_back": 0.5,
+      "hits": 4,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 28
+     }
+    },
+    {
+     "album": "shangri-la",
+     "album_name": "Shangri-la (retired)",
+     "score": 3.779,
+     "round1": "new",
+     "why": {
+      "back": 0.23,
+      "dom_back": 0.5,
+      "hits": 4,
+      "fit": 0.83,
+      "unexpl": 0.07,
+      "ch": 28
+     }
+    },
+    {
+     "album": "gatsby",
+     "album_name": "Gatsby",
+     "score": 3.688,
+     "round1": "new",
+     "why": {
+      "back": 0.52,
+      "dom_back": 0.5,
+      "hits": 0,
+      "fit": 0.69,
+      "unexpl": 0.13,
+      "ch": 28
+     }
+    },
+    {
+     "album": "lagoon",
+     "album_name": "Lagoon",
+     "score": 3.595,
+     "round1": "new",
+     "why": {
+      "back": 0.23,
+      "dom_back": 0.5,
+      "hits": 3,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 28
+     }
+    },
+    {
+     "album": "glow-wild",
+     "album_name": "Glow Wild",
+     "score": 3.222,
+     "round1": "new",
+     "why": {
+      "back": 0.28,
+      "dom_back": 0.5,
+      "hits": 4,
+      "fit": 0.31,
+      "unexpl": 0.29,
+      "ch": 28
+     }
+    }
+   ]
+  },
+  {
+   "key": "ozarkmahjong.com/winslow-1920-rouge-mat",
+   "name": "Winslow 1920 Rouge",
+   "brand": "Ozark Mahjongg",
+   "partner": false,
+   "holiday": false,
+   "url": "https://www.ozarkmahjongg.com/product-page/winslow-1920-rouge-mat",
+   "sold_out": true,
+   "new_in_fym": false,
+   "img": "assets/mats/ozark-mahjongg/winslow-1920-rouge-mat.jpg",
+   "albums": [
+    {
+     "album": "heritage-2-0",
+     "album_name": "Heritage 2.0",
+     "score": 5.14,
+     "round1": "new",
+     "why": {
+      "back": 0.68,
+      "dom_back": 1.0,
+      "hits": 2,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 30
+     }
+    },
+    {
+     "album": "heritage",
+     "album_name": "Heritage",
+     "score": 5.14,
+     "round1": "new",
+     "why": {
+      "back": 0.64,
+      "dom_back": 1.0,
+      "hits": 2,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 30
+     }
+    },
+    {
+     "album": "tortoise",
+     "album_name": "Classic Tortoise",
+     "score": 4.96,
+     "round1": "new",
+     "why": {
+      "back": 0.52,
+      "dom_back": 0.5,
+      "hits": 3,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 30
+     }
+    },
+    {
+     "album": "smith",
+     "album_name": "Smith",
+     "score": 4.82,
+     "round1": "new",
+     "why": {
+      "back": 0.54,
+      "dom_back": 1.0,
+      "hits": 1,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 30
+     }
+    },
+    {
+     "album": "glow-wild",
+     "album_name": "Glow Wild",
+     "score": 4.614,
+     "round1": "new",
+     "why": {
+      "back": 0.5,
+      "dom_back": 1.0,
+      "hits": 1,
+      "fit": 0.8,
+      "unexpl": 0.12,
+      "ch": 30
+     }
+    },
+    {
+     "album": "sierra",
+     "album_name": "Sierra",
+     "score": 4.047,
+     "round1": "new",
+     "why": {
+      "back": 0.32,
+      "dom_back": 0.5,
+      "hits": 3,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 30
+     }
+    },
+    {
+     "album": "brownstone-bloom",
+     "album_name": "Brownstone Bloom",
+     "score": 3.97,
+     "round1": "new",
+     "why": {
+      "back": 0.3,
+      "dom_back": 0.5,
+      "hits": 3,
+      "fit": 1.0,
+      "unexpl": 0.0,
+      "ch": 30
+     }
+    }
+   ]
+  },
+  {
+   "key": "alb2:ozark-mah-jongg-carson-vintage",
+   "name": "Carson Vintage",
+   "brand": "Ozark Mahjongg",
+   "partner": false,
+   "holiday": false,
+   "url": "https://www.ozarkmahjongg.com/product-page/carson-vintage-mat",
+   "sold_out": true,
+   "new_in_fym": false,
+   "img": "assets/mats/ozark-mahjongg/carson-vintage-mat.jpg",
+   "albums": [
+    {
+     "album": "brownstone-bloom",
+     "album_name": "Brownstone Bloom",
+     "score": 3.349,
+     "round1": "new",
+     "why": {
+      "back": 0.36,
+      "dom_back": 0.5,
+      "hits": 2,
+      "fit": 0.4,
+      "unexpl": 0.0,
+      "ch": 16
+     }
+    }
+   ]
+  }
+ ]
+}

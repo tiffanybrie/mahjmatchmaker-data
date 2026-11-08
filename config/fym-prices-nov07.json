@@ -5220,13 +5220,6 @@
   },
   {
    "c": "m",
-   "k": "alb2:ozark-mah-jongg-carson-vintage",
-   "n": "Carson Vintage",
-   "bn": "Ozark Mahjongg",
-   "urls": []
-  },
-  {
-   "c": "m",
    "k": "alb2:tigre-de-tartan-pop-art-roses",
    "n": "Pop Art Roses (retired)",
    "bn": "Tigre de Tartan",
@@ -5260,36 +5253,6 @@
    "bn": "Tigre de Tartan",
    "urls": [
     "https://tigredetartan.com/mahjmatchmaker"
-   ]
-  },
-  {
-   "c": "m",
-   "k": "ozarkmahjong.com/winslow-1920-original-navy-blue-mat",
-   "n": "Winslow 1920 Navy",
-   "bn": "Ozark Mahjongg",
-   "urls": [
-    "https://ozarkmahjong.com/products/winslow-1920-original-navy-blue-mat",
-    "https://ozarkmahjong.com/winslow-1920-original-navy-blue-mat"
-   ]
-  },
-  {
-   "c": "m",
-   "k": "ozarkmahjong.com/winslow-1920-rouge-mat",
-   "n": "Winslow 1920 Rouge",
-   "bn": "Ozark Mahjongg",
-   "urls": [
-    "https://ozarkmahjong.com/products/winslow-1920-rouge-mat",
-    "https://ozarkmahjong.com/winslow-1920-rouge-mat"
-   ]
-  },
-  {
-   "c": "m",
-   "k": "ozarkmahjong.com/winslow-1920-noir-mat",
-   "n": "Winslow 1920 Noir",
-   "bn": "Ozark Mahjongg",
-   "urls": [
-    "https://ozarkmahjong.com/products/winslow-1920-noir-mat",
-    "https://ozarkmahjong.com/winslow-1920-noir-mat"
    ]
   },
   {
@@ -5582,5 +5545,125 @@
     "https://www.mahjmatchmaker.com/taylor-mahjong-tile-matches"
    ]
   }
- ]
+ ],
+ "ozarkmahjong.com/winslow-1920-noir-mat": {
+  "c": "m",
+  "p": 75.0,
+  "src": "https://www.ozarkmahjongg.com/product-page/winslow-1920-noir-mat",
+  "at": "2026-11-07",
+  "how": "wix ld+json (offers.price) + inventory out_of_stock",
+  "so": 1
+ },
+ "ozarkmahjong.com/winslow-1920-original-navy-blue-mat": {
+  "c": "m",
+  "p": 75.0,
+  "src": "https://www.ozarkmahjongg.com/product-page/winslow-1920-original-navy-blue-mat",
+  "at": "2026-11-07",
+  "how": "wix ld+json (offers.price) + inventory out_of_stock",
+  "so": 1
+ },
+ "ozarkmahjong.com/winslow-1920-rouge-mat": {
+  "c": "m",
+  "p": 75.0,
+  "src": "https://www.ozarkmahjongg.com/product-page/winslow-1920-rouge-mat",
+  "at": "2026-11-07",
+  "how": "wix ld+json (offers.price) + inventory out_of_stock",
+  "so": 1
+ },
+ "alb2:ozark-mah-jongg-carson-vintage": {
+  "c": "m",
+  "p": 75.0,
+  "src": "https://www.ozarkmahjongg.com/product-page/carson-vintage-mat",
+  "at": "2026-11-07",
+  "how": "wix ld+json (offers.price) + inventory out_of_stock",
+  "so": 1
+ },
+ "ozarkmahjongg.com/baker-bright-mat": {
+  "c": "m",
+  "p": 75.0,
+  "src": "https://www.ozarkmahjongg.com/product-page/baker-bright-mat",
+  "at": "2026-11-07",
+  "how": "wix ld+json (offers.price) + inventory out_of_stock",
+  "so": 1
+ },
+ "ozarkmahjongg.com/baker-traditional-mat": {
+  "c": "m",
+  "p": 75.0,
+  "src": "https://www.ozarkmahjongg.com/product-page/baker-traditional-mat",
+  "at": "2026-11-07",
+  "how": "wix ld+json (offers.price) + inventory out_of_stock",
+  "so": 1
+ },
+ "ozarkmahjongg.com/carson-revel-mat": {
+  "c": "m",
+  "p": 75.0,
+  "src": "https://www.ozarkmahjongg.com/product-page/carson-revel-mat",
+  "at": "2026-11-07",
+  "how": "wix ld+json (offers.price) + inventory out_of_stock",
+  "so": 1
+ },
+ "ozarkmahjongg.com/eaton-indigo-mat": {
+  "c": "m",
+  "p": 75.0,
+  "src": "https://www.ozarkmahjongg.com/product-page/eaton-indigo-mat",
+  "at": "2026-11-07",
+  "how": "wix ld+json (offers.price) + inventory out_of_stock",
+  "so": 1
+ },
+ "ozarkmahjongg.com/trent-joy-mahjong-mat": {
+  "c": "m",
+  "p": 75.0,
+  "src": "https://www.ozarkmahjongg.com/product-page/trent-joy-mahjong-mat",
+  "at": "2026-11-07",
+  "how": "wix ld+json (offers.price) + inventory out_of_stock",
+  "so": 1
+ },
+ "ozarkmahjongg.com/trent-midnight-mahjong-mat": {
+  "c": "m",
+  "p": 75.0,
+  "src": "https://www.ozarkmahjongg.com/product-page/trent-midnight-mahjong-mat",
+  "at": "2026-11-07",
+  "how": "wix ld+json (offers.price) + inventory out_of_stock",
+  "so": 1
+ },
+ "ozarkmahjongg.com/trent-neutral-mahjong-mat": {
+  "c": "m",
+  "p": 75.0,
+  "src": "https://www.ozarkmahjongg.com/product-page/trent-neutral-mahjong-mat",
+  "at": "2026-11-07",
+  "how": "wix ld+json (offers.price) + inventory out_of_stock",
+  "so": 1
+ },
+ "ozarkmahjongg.com/fitz-carmine-mahjong-mat": {
+  "c": "m",
+  "p": 75.0,
+  "src": "https://www.ozarkmahjongg.com/product-page/fitz-carmine-mahjong-mat",
+  "at": "2026-11-07",
+  "how": "wix ld+json (offers.price) + inventory out_of_stock",
+  "so": 1
+ },
+ "ozarkmahjongg.com/fitz-verdant-mahjong-mat": {
+  "c": "m",
+  "p": 75.0,
+  "src": "https://www.ozarkmahjongg.com/product-page/fitz-verdant-mahjong-mat",
+  "at": "2026-11-07",
+  "how": "wix ld+json (offers.price) + inventory out_of_stock",
+  "so": 1
+ },
+ "ozarkmahjongg.com/trent-celadon-mahjong-mat": {
+  "c": "m",
+  "p": 75.0,
+  "src": "https://www.ozarkmahjongg.com/product-page/trent-celadon-mahjong-mat",
+  "at": "2026-11-07",
+  "how": "wix ld+json (offers.price) + inventory out_of_stock",
+  "so": 1
+ },
+ "ozarkmahjongg.com/trent-neutral-mahjong-mat-1": {
+  "c": "m",
+  "p": 75.0,
+  "src": "https://www.ozarkmahjongg.com/product-page/trent-neutral-mahjong-mat-1",
+  "at": "2026-11-07",
+  "how": "wix ld+json (offers.price) + inventory out_of_stock",
+  "so": 1
+ }
 }
