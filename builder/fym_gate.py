@@ -63,6 +63,7 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
     angled shots), 90 gallery sync (warn)
  158 (Nov 5, v115 QA) no visible mat photo beyond 2:1, no tile photo beyond 2.3:1 (strips / edge crops)
  159 (Nov 6) every mat/rack/tile link of a Shopify code partner auto-applies the code (/discount/<CODE>?redirect=...; config/autoapply-hosts.json), FYM + staged gallery
+ 167 (Nov 7, FYM 1.18) door parity: same filters for an item type in both doors / every step / Table view + 'same brand' (doors_check.py)
  164 (Nov 7, FYM 1.18) zoom swipe: a zoomed card still swipes past the photo edge / on a flick (builder/fym_fix_nov07/zoomswipe_v118.py; node test zoomswipe_check.js)
  159b (Nov 6) staged Mat Gallery stamped with the newest FYM version (data-fym); --release: the LIVE /mahjong-mats too (FAIL), else WARN
  100 (Oct 27, v101 = Version 1.5): missing partner mats from the last launch-watch sweep (config/partner-mat-sweep.json; no network)
@@ -1984,6 +1985,16 @@ try:
     _vr166 = [k for k, r in D['racks'].items() if not r.get('hid')]; _tv166 = D.get('tv') or {}
     print(f"FYM GATE INFO [166] prices: mats {sum(1 for k in _vm166 if k in _tv166.get('pm', {}))}/{len(_vm166)}, tile sets {sum(1 for s_ in _vs166 if s_['tile'] in _tv166.get('pt', {}))}/{len(_vs166)}, racks {sum(1 for k in _vr166 if k in _tv166.get('price', {}))}/{len(_vr166)}; walls {sum(1 for s_ in _vs166 if s_['slug'] in _tv166.get('backs', {}))}/{len(_vs166)} visible sets")
 except Exception as _e: F.append(f"[166] price filter check did not run: {_e}")
+# [167] Nov 7 2026 (FYM 1.18; Tiffany 10:24pm: mat door -> Lotus Cove -> tiles step had no brand dropdown / colour filter: "make sure
+#       everything is mirrored up"). STATIC door parity: each item type (tile sets, mats, racks) must carry the same filters wherever it is
+#       chosen (both doors, every step, Table view swap sheet); 2nd-step places also Tiffany's picks + 'Same brand as my mat/tiles'.
+#       Matrix: docs/fym-door-parity-nov07.md. Fix: python3 builder/fym_fix_nov07/doors_v118.py <build>.
+try:
+    sys.path.insert(0, REPO + 'builder/fym_fix_nov07')
+    import doors_check as _DC167
+    _f167, _ = _DC167.check(open(os.path.join(B, 'index.html')).read())
+    for _x167 in _f167: F.append('[167] door parity: ' + _x167)
+except Exception as _e: F.append(f"[167] door-parity check did not run: {_e}")
 # [168] Nov 7 2026 (FYM 1.18; Tiffany 10:33pm: Lotus Cove's mat door suggested Halloween tile sets). Tiles-for-a-mat ranking:
 #       D.tso + app patch present, no themed/holiday tile set in a non-holiday mat's first 15 (her picks / brand pairs / same theme
 #       excepted), colour families of the first 10 ranked sets for the 30 most-matched mats. Fix: builder/fym_fix_nov07/tilerank_v118.py.
