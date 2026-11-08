@@ -85,13 +85,13 @@ for c in A['mats']:
             for l in pick(m, exclude=TRACKS + mr + sorted(DROPPED)):
                 if l not in mr and len(mr) < 2: mr.append(l)
     fn = f"juniper-mahjong-tiles-{slug(brand)}-{slug(nm)}-mat.jpg"
-    code = footer(brand, retired); n = len(cards) + 1 + OFF; hol = bool(c.get('holiday'))
+    code = c.get('code') or footer(brand, retired); n = len(cards) + 1 + OFF; hol = bool(c.get('holiday'))  # Nov 7: spec 'code' overrides (non-partner review cards: no code)
     cards.append({'slug': f'jun{n:02d}', 'title': f'Juniper + {nm}', 'col': CC['col'], 'tile_file': CC['tile'],
                   'tilefit': 'cover', 'racks': TRACKS, 'mat_racks': mr, 'file': fn, 'code': code, 'mat': uri(m), 'hol': hol, 'flame': FLAME if hol else None})
     man.append({'order': n, 'group': c['group'], 'mat': nm, 'brand': brand, 'retired_mat': retired, 'holiday': hol,
                 'file': fn, 'code': code, 'src': c['img'], 'racks': TRACKS, 'mat_racks': mr, 'mat_reg': rk,
                 'skipped_no_photo': skipped, 'why': c['why'],
-                'caption_note': 'Holiday match' if hol else 'Pair mat' if nm == 'Lotus Cove' else ('New candidate' if c['group'] == 'new' else ('Weak: yours to cut' if c['group'] == 'weak' else None))})
+                'caption_note': 'You asked to see' if c['group'] == 'to see' else 'Holiday match' if hol else 'Pair mat' if nm == 'Lotus Cove' else ('New candidate' if c['group'] == 'new' else ('Weak: yours to cut' if c['group'] == 'weak' else None))})
 json.dump({'_note': 'Juniper album DRAFT (Nov 6 round 3)', 'cards': cards, 'max_racks': 4, 'tile_brand': 'Oh My Mahjong',
            'navy': 'assets/brand/card_navy_logo_v3.png', 'true_len': True}, open(W + '/spec.json', 'w'))
 json.dump({'set': 'Juniper', 'status': "DRAFT: round 3 = Tiffany's Nov 6 notes applied, pending her final order", 'cards': man, 'title_color': CC['col'], 'tile': CC['tile'],
