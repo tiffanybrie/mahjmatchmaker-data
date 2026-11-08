@@ -43,6 +43,7 @@ for x in SPEC:
     sh = {}
     for fam, p in measure(path): fam = TO.get(fam, fam); sh[fam] = sh.get(fam, 0) + p
     fams = [c for c, p in sorted(sh.items(), key=lambda kv: -kv[1]) if p >= 8][:4] or [max(sh, key=sh.get)]
+    if x.get('mf'): fams = list(x['mf'])  # by-eye colours (Nov 7 check of her Oct 26 condition 'colours measured and checked')
     o = dict(n=x['name'], bn=x['brand'], b='Amazon', u=x['u'], u0=x['u'], dc='', pa=False, nc=False, rt=False, c=False, ml=False,
              f=f, th=th, w=im.width, h=im.height, ms=kmeans_sw(im), src='shopmy-amazon-oct26', add='oct26-amazon')
     if x['hol']: o.update(mf=[], mt=[], sh=[], ha=fams, hol=True)
@@ -143,7 +144,9 @@ h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]
 if CH: h = h.replace(mcb.group(0), 'MCB=new Set([' + mcb.group(1) + f', {chunk}]);', 1)
 if IMG:
     inl = '<script>window.IMG=Object.assign(window.IMG||{},' + json.dumps(IMG, separators=(',', ':')) + ');</script>'
-    a = '<script src="b24v1.js"></script>'; assert h.count(a) == 1; h = h.replace(a, a + inl, 1)
+    a = '<script src="b24v1.js"></script>'
+    if h.count(a) != 1: a = re.search(r'<script src="b\d+v\d+\.js"></script>', h).group(0)  # website copy (no b24 tag), Nov 7
+    h = h.replace(a, a + inl, 1)
 open(P, 'w').write(h)
 json.dump(report, open(B + '/v96_amazon_order_report.json', 'w'), indent=1, ensure_ascii=False)
 # repo-side records (idempotent)

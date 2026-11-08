@@ -1,0 +1,92 @@
+{
+ "_about": "scripts/checks/shopmy_sync_check.py: ShopMy pins that are decided (not a mat / bundle / dead / her call) or are the same product as an FYM mat under another link. pin id -> reason. Add a line here (with the reason) instead of ignoring a FAIL. Amazon pins are never listed: they show as 'amazon: her pick' (Amazon mats never auto-enter FYM, Tiffany Oct 26 11:06).",
+ "pins": {
+  "95958505": {
+   "kind": "not-a-mat",
+   "reason": "CMC Club Sporty tote with mat straps (a bag, not a mat)",
+   "title": "CHARLESTON MAHJONG CLUB | The Club Sporty Mahjong Tote W Crossbody Strap Slide Through Mat"
+  },
+  "96448190": {
+   "kind": "not-a-mat",
+   "reason": "CMC Club Sporty tote with mat straps (a bag, not a mat)",
+   "title": "CHARLESTON MAHJONG CLUB - The Club Sporty Mahjong Tote W Crossbody Strap Slide Through Mat"
+  },
+  "95959079": {
+   "kind": "duplicate",
+   "reason": "CMC scratch-and-dent listing of the Cabana Club mat (the full-price Cabana Club is in FYM + gallery)",
+   "title": "CHARLESTON MAHJONG CLUB | Cabana Club Neoprene Umbrella Mat with Carrying Bag"
+  },
+  "96194505": {
+   "kind": "bundle",
+   "reason": "BAM tile set + mat + shufflers bundle; the Grandmillennial mat itself is in FYM + gallery",
+   "title": "BAM! LET’S MAHJONG | Grandmillennial Mahjong Tiles With Mat & Shufflers"
+  },
+  "96194516": {
+   "kind": "bundle",
+   "reason": "BAM tile set + mat + shufflers bundle; the Nantucket mat itself is in FYM + gallery",
+   "title": "BAM! LET’S MAHJONG | The Nantucket Mahjong Tile Collection with Mat & Shufflers"
+  },
+  "96132006": {
+   "kind": "not-a-mat",
+   "reason": "Sophie Clima art print (Etsy Mats shelf; Oct 26 audit: the 10 Sophie Clima prints are not mats)",
+   "title": "Preppy colors chinoiserie pagoda garden, watercolor"
+  },
+  "96129391": {
+   "kind": "her-call",
+   "reason": "Custom Football mat: team-colour custom graphic, no fixed colourway (held for her call Nov 3)",
+   "title": "Custom Football Mahjong Mat | Pick your team colors | Family Mahjong Mat"
+  },
+  "97201926": {
+   "kind": "dead-link",
+   "reason": "Waiting On Martha Winter Forest: product page 404 on waitingonmarthahome.com (Nov 7); her ShopMy pin points at a dead page",
+   "title": "Winter Forest Double Sided Mahjong Mat"
+  },
+  "97202826": {
+   "kind": "dead-link",
+   "reason": "Waiting On Martha Holiday Lights: product page 404 (Nov 7); dead ShopMy pin",
+   "title": "Holiday Lights Double Sided Mahjong Mat"
+  },
+  "97201286": {
+   "kind": "dead-link",
+   "reason": "Waiting On Martha Apres Ski: product page 404 (Nov 7); dead ShopMy pin",
+   "title": "Apres Ski Double Sided Mahjong Mat- PRE ORDER"
+  },
+  "97202654": {
+   "kind": "sold-out",
+   "reason": "The Mahjong House Green Flower Border (at Waiting On Martha): sold out Nov 7; add when it is back",
+   "title": "The Mahjong House - Green Flower Border Mahjong Mat"
+  }
+ },
+ "same_as": {
+  "96620630": {
+   "fym": "rebecca:rainbow-row",
+   "gallery": "rebecca-illustrated--rainbow-row",
+   "why": "Rebecca Rainbow Row (album mat)"
+  },
+  "96620593": {
+   "fym": "rebecca:rainbow-row",
+   "gallery": "rebecca-illustrated--rainbow-row",
+   "why": "second pin of Rebecca Rainbow Row (generic title \"REBECCA ILLUSTRATED | Mahjong Mat\")"
+  },
+  "96622260": {
+   "fym": "alb:amara:Goldie",
+   "gallery": "oh-my-mahjong--goldie-retired",
+   "why": "OMM Goldie (retired in FYM) sold at Tuckernuck"
+  },
+  "96212924": {
+   "fym": "alb2:sweet-jojo-designs-boho-wildflower",
+   "gallery": "sweet-jojo-designs--boho-wildflower",
+   "why": "Sweet Jojo Boho Wildflower (in FYM on its Amazon link)"
+  },
+  "98067163": {
+   "fym": "mahjandmoon.com/blue-pastel-palm-beach-mahjong-mat",
+   "gallery": "mahj-moon--blue-pastel-palm-beach",
+   "why": "Mahj & Moon 'Palm Beach Preppy' Etsy pin = FYM Blue Pastel Palm Beach (by eye Nov 7); FYM 1.18 switches its link to this pin"
+  },
+  "97598044": {
+   "fym": "www.waitingonmarthahome.com/cocktails-double-sided-mahjong-mat-pre-order",
+   "gallery": null,
+   "why": "second pin of WoM Cocktails Double Sided"
+  }
+ }
+}
