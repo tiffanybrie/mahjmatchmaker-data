@@ -10,6 +10,7 @@ CDN = '' if SHA == 'local' else f'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjma
 e = html.escape
 P = json.load(open(R + 'config/profiles/juniper.json'))
 MAN = json.load(open(R + 'assets/cards/juniper/manifest.json'))['cards']
+MAN = [c for c in MAN if not c.get('out')]  # Nov 7 8:24pm: Midori Shadows, Crane & Moon, Day Dreamer removed by Tiffany
 F = 'assets/tiles/faces/juniper/clean/'
 CLAUDE = {  # Claude's 4 proposals (= config/profiles/juniper.json best_features)
  'dragon-green': "Pair them: OMM's emerald dragon is the star of the set, and her pink twin is the reverse colorway.",
@@ -53,7 +54,7 @@ for title, sub, items in G:
 carousel = ''.join(f'<div class="slide">{img(f"assets/social/juniper-launch/intro/{i}.jpg", f"Intro carousel slide {i}")}<span>{i}</span></div>' for i in range(1, 8))
 GROUPS = {'top': 'Top three', 'best': 'Among the best', 'deep': 'Forest green + pink', 'bright': 'Pink &amp; green brights', 'chino': 'Chinoiserie gardens',
           'soft': 'Soft', 'stone': 'Stone &amp; solid', 'new': 'New candidate: your call', 'weak': 'Weak: yours to cut',
-          'holiday': 'Holiday matches'}  # Nov 7: holiday group (Tiffany 7:42pm)
+          'holiday': 'Holiday matches', 'to see': 'You asked to see', 'Your adds': 'Your adds'}  # Nov 7: holiday group (Tiffany 7:42pm); 'Your adds' = her 8:24pm OMM adds
 N = len(MAN)
 mc, cur = '', None
 for c in MAN:

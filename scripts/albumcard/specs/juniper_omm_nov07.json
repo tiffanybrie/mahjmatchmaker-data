@@ -1,0 +1,123 @@
+{
+ "_note": "Juniper 'Your adds' (Tiffany Nov 7 8:24pm, docs/ANSWERS.md): five OMM mats she added. Built with JUNIPER_ORDER_START=54, rows appended to assets/cards/juniper/manifest.json. Photos: OMM full-size flat product shots (Anastasia, Hampton, Lorelei from products.json; Darjeeling from OMM's CDN, product gone from the store = retired; Birdie Green = our retired OMM asset assets/mats/omm-retired/birdie-green.jpg).",
+ "out": "assets/cards/juniper",
+ "rack_keys": {
+  "jb": "Miss Mahjong Jade & Brass",
+  "ohp": "Oh My Mahjong Hot Pink",
+  "opq": "Oh My Mahjong Pink Quartz",
+  "bbk": "Bird & Bamboo Kelly Green",
+  "bbhp": "Bird & Bamboo Hot Pink",
+  "bbj": "Bird & Bamboo Jade",
+  "bblp": "Bird & Bamboo Light Pink",
+  "bbfg": "Bird & Bamboo Forest Green",
+  "owa": "White Acrylic",
+  "bbtq": "Bird & Bamboo Turquoise Blue",
+  "bbt": "Bird & Bamboo Teal",
+  "bblg": "Bird & Bamboo Lime Green",
+  "bbfb": "Bird & Bamboo French Blue",
+  "bbpw": "Bird & Bamboo Periwinkle Blue"
+ },
+ "mats": [
+  {
+   "group": "Your adds",
+   "name": "Lorelei",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/juniper/mats/lorelei-oh-my-mahjong.jpg",
+   "box": [
+    155,
+    455,
+    2255,
+    2545
+   ],
+   "why": "Your add: a pagoda match, and very cute. The pinks, lime greens and teals are all there; no forest green, but a lot of colour range in the greens.",
+   "retired": false,
+   "exists": true,
+   "racks": [
+    "bbfb",
+    "bblp"
+   ],
+   "photo_src": "ohmymahjong.com/products/lorelei-mat (flat, 2400x3000)"
+  },
+  {
+   "group": "Your adds",
+   "name": "Darjeeling",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/juniper/mats/darjeeling-oh-my-mahjong.jpg",
+   "box": [
+    194,
+    471,
+    2223,
+    2516
+   ],
+   "why": "Your add (\"How could we forget?!\"): the pagoda ties in, and while the tiles are brighter than Darjeeling, it has the greens. The mat is a chameleon with its infusion of bright blue and a pink inner border. Retired.",
+   "retired": true,
+   "exists": true,
+   "racks": [
+    "bbfb",
+    "bbk"
+   ],
+   "photo_src": "OMM CDN darjeeling-mat-312731.jpg (flat, 2400x3000); product page gone"
+  },
+  {
+   "group": "Your adds",
+   "name": "Anastasia",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/juniper/mats/anastasia-oh-my-mahjong.jpg",
+   "box": [
+    161,
+    482,
+    2235,
+    2550
+   ],
+   "why": "Your add: a pink centre for her pink faces and a turquoise-and-teal frame for her layers, with leafy blossom branches; the blue band and peach lattice are extra colours, and there's no forest green.",
+   "retired": false,
+   "exists": true,
+   "racks": [
+    "bbhp",
+    "bbtq"
+   ],
+   "photo_src": "ohmymahjong.com/products/anastasia-mat-in-tube (flat, 2400x3000)"
+  },
+  {
+   "group": "Your adds",
+   "name": "Hampton",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/juniper/mats/hampton-oh-my-mahjong.jpg",
+   "box": [
+    133,
+    441,
+    2280,
+    2579
+   ],
+   "why": "Your add: chartreuse and mint like her layers, pink brushstrokes and pagoda lanterns, though the blue lanterns and cranes make it lighter and sunnier than her forest-green backs.",
+   "retired": false,
+   "exists": true,
+   "racks": [
+    "bbt",
+    "bblg"
+   ],
+   "photo_src": "ohmymahjong.com/products/hampton-mat-in-tube (flat, 2400x3000)"
+  },
+  {
+   "group": "Your adds",
+   "name": "Birdie Green",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/juniper/mats/birdie-green-oh-my-mahjong.jpg",
+   "box": [
+    3,
+    2,
+    1948,
+    1945
+   ],
+   "why": "Your add: the deep green frame and kelly centre carry her Forest Green Jade backs, and the blue-and-teal peacocks pick up her teal layer; almost no pink, so the faces bring it. Retired.",
+   "retired": true,
+   "exists": true,
+   "racks": [
+    "bbfg",
+    "bbpw"
+   ],
+   "photo_src": "assets/mats/omm-retired/birdie-green.jpg (flat, 1952x1947)"
+  }
+ ],
+ "_racks": "Mat racks follow her earlier album picks for these mats where they exist (config/album-rack-picks.json: Lorelei French Blue + Light Pink, Anastasia Hot Pink + Turquoise Blue, Hampton Teal + Lime Green); Darjeeling + Birdie Green = matpick (French Blue + Kelly Green, Forest Green + Periwinkle Blue). Tile racks (OMM Hot Pink + Agate) are never repeated on the mat side."
+}

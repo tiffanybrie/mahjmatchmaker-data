@@ -120,7 +120,9 @@
     "opq"
    ],
    "retired": false,
-   "exists": true
+   "exists": true,
+   "out": true,
+   "out_reason": "Tiffany Nov 7 8:24pm: remove from the album"
   },
   {
    "group": "deep",
@@ -191,7 +193,9 @@
     1440,
     1740,
     2858
-   ]
+   ],
+   "out": true,
+   "out_reason": "Tiffany Nov 7 8:24pm: remove from the album"
   },
   {
    "group": "bright",
@@ -236,7 +240,9 @@
     712,
     2210,
     2680
-   ]
+   ],
+   "out": true,
+   "out_reason": "Tiffany Nov 7 8:24pm: remove from the album"
   },
   {
    "group": "bright",

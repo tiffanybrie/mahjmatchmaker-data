@@ -29,3 +29,8 @@ DO NOT rebuild/republish until she says go (she was kicked out of the page by th
 - Profile prompt "Green flag I look for" (sounded weird) -> "We'll get along if / You bring the pink. I've got the green covered." Profile story + intro slide 1 re-rendered.
 - Crane & Moon: she is questioning it; no change.
 - Review page juniper-album.html NOT rebuilt (images pinned to @95ec1edf; the new cards need a new pin): build.py text updated, rebuild with a new sha when the page is next published.
+
+## Nov 7 8:24pm (Tiffany, docs/ANSWERS.md) applied in files, NOT published
+- OUT of the album: Midori Shadows (Golden Pond), Crane & Moon (YOLO), Day Dreamer (Pink and Green) (BJ&J). Card files kept; manifest rows #9/#14/#17 and juniper_round3.json carry `out: true` + out_reason; juniper_build.py carries `out` into the manifest and build.py skips `out` rows, so no rebuild brings them back.
+- "Your adds" (group 'Your adds'), cards #54-58, spec scripts/albumcard/specs/juniper_omm_nov07.json (JUNIPER_ORDER_START=54): OMM Lorelei, Darjeeling (retired), Anastasia, Hampton, Birdie Green (retired). Full-size OMM flat shots (2400x3000; Birdie Green 1952px retired asset) in assets/colorcards/juniper/mats/. Lorelei + Darjeeling whys in her words.
+- build.py GROUPS gained 'to see' (was missing: the page build would have failed on the Nov 7 'to see' cards) and 'Your adds'.

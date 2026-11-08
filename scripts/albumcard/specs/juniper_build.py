@@ -88,10 +88,13 @@ for c in A['mats']:
     code = c.get('code') or footer(brand, retired); n = len(cards) + 1 + OFF; hol = bool(c.get('holiday'))  # Nov 7: spec 'code' overrides (non-partner review cards: no code)
     cards.append({'slug': f'jun{n:02d}', 'title': f'Juniper + {nm}', 'col': CC['col'], 'tile_file': CC['tile'],
                   'tilefit': 'cover', 'racks': TRACKS, 'mat_racks': mr, 'file': fn, 'code': code, 'mat': uri(m), 'hol': hol, 'flame': FLAME if hol else None})
+    # Nov 7 8:24pm (Tiffany): spec mat 'out': true = removed from the album; still built (numbering stays) but the manifest row
+    # carries out/out_reason and the album page (site/livepatch/juniper-album-nov06/build.py) skips it, so no rebuild brings it back.
     man.append({'order': n, 'group': c['group'], 'mat': nm, 'brand': brand, 'retired_mat': retired, 'holiday': hol,
                 'file': fn, 'code': code, 'src': c['img'], 'racks': TRACKS, 'mat_racks': mr, 'mat_reg': rk,
                 'skipped_no_photo': skipped, 'why': c['why'],
-                'caption_note': 'You asked to see' if c['group'] == 'to see' else 'Holiday match' if hol else 'Pair mat' if nm == 'Lotus Cove' else ('New candidate' if c['group'] == 'new' else ('Weak: yours to cut' if c['group'] == 'weak' else None))})
+                **({'out': True, 'out_reason': c.get('out_reason', '')} if c.get('out') else {}),
+                'caption_note': 'Your add' if c['group'] == 'Your adds' else 'You asked to see' if c['group'] == 'to see' else 'Holiday match' if hol else 'Pair mat' if nm == 'Lotus Cove' else ('New candidate' if c['group'] == 'new' else ('Weak: yours to cut' if c['group'] == 'weak' else None))})
 json.dump({'_note': 'Juniper album DRAFT (Nov 6 round 3)', 'cards': cards, 'max_racks': 4, 'tile_brand': 'Oh My Mahjong',
            'navy': 'assets/brand/card_navy_logo_v3.png', 'true_len': True}, open(W + '/spec.json', 'w'))
 json.dump({'set': 'Juniper', 'status': "DRAFT: round 3 = Tiffany's Nov 6 notes applied, pending her final order", 'cards': man, 'title_color': CC['col'], 'tile': CC['tile'],

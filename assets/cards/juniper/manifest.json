@@ -207,7 +207,9 @@
    "mat_reg": null,
    "skipped_no_photo": [],
    "why": "Deep green with cranes and pink blossoms: the garden-at-night mood of the set. Also one of your Malachite picks.",
-   "caption_note": null
+   "caption_note": null,
+   "out": true,
+   "out_reason": "Tiffany Nov 7 8:24pm: remove from the album (docs/ANSWERS.md)"
   },
   {
    "order": 10,
@@ -327,7 +329,9 @@
     "Mahjong Register Emerald Pearl Scalloped"
    ],
    "why": "Deep green-navy night sky with white cranes, coral flowers and a gold moon: a garden after dark, like the set.",
-   "caption_note": null
+   "caption_note": null,
+   "out": true,
+   "out_reason": "Tiffany Nov 7 8:24pm: remove from the album (docs/ANSWERS.md)"
   },
   {
    "order": 15,
@@ -396,7 +400,9 @@
    "mat_reg": null,
    "skipped_no_photo": [],
    "why": "Hot pink and lime medallion: picks up the chartreuse layer and the pink dots. Sold on Etsy.",
-   "caption_note": null
+   "caption_note": null,
+   "out": true,
+   "out_reason": "Tiffany Nov 7 8:24pm: remove from the album (docs/ANSWERS.md)"
   },
   {
    "order": 18,
@@ -1233,9 +1239,125 @@
    "skipped_no_photo": [],
    "why": "Soft and pretty: the sage frame and pink peonies suit her, but it's very pale, the dark backs would sit on a nearly white centre, and blue birds aren't Juniper colours. The brand photo is a flat mockup.",
    "caption_note": "You asked to see"
+  },
+  {
+   "order": 54,
+   "group": "Your adds",
+   "mat": "Lorelei",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-oh-my-mahjong-lorelei-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/lorelei-oh-my-mahjong.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo French Blue",
+    "Bird & Bamboo Light Pink"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Your add: a pagoda match, and very cute. The pinks, lime greens and teals are all there; no forest green, but a lot of colour range in the greens.",
+   "caption_note": "Your add"
+  },
+  {
+   "order": 55,
+   "group": "Your adds",
+   "mat": "Darjeeling",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-oh-my-mahjong-darjeeling-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/darjeeling-oh-my-mahjong.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo French Blue",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Your add (\"How could we forget?!\"): the pagoda ties in, and while the tiles are brighter than Darjeeling, it has the greens. The mat is a chameleon with its infusion of bright blue and a pink inner border. Retired.",
+   "caption_note": "Your add"
+  },
+  {
+   "order": 56,
+   "group": "Your adds",
+   "mat": "Anastasia",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-oh-my-mahjong-anastasia-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/anastasia-oh-my-mahjong.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Hot Pink",
+    "Bird & Bamboo Turquoise Blue"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Your add: a pink centre for her pink faces and a turquoise-and-teal frame for her layers, with leafy blossom branches; the blue band and peach lattice are extra colours, and there's no forest green.",
+   "caption_note": "Your add"
+  },
+  {
+   "order": 57,
+   "group": "Your adds",
+   "mat": "Hampton",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-oh-my-mahjong-hampton-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/hampton-oh-my-mahjong.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Teal",
+    "Bird & Bamboo Lime Green"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Your add: chartreuse and mint like her layers, pink brushstrokes and pagoda lanterns, though the blue lanterns and cranes make it lighter and sunnier than her forest-green backs.",
+   "caption_note": "Your add"
+  },
+  {
+   "order": 58,
+   "group": "Your adds",
+   "mat": "Birdie Green",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "file": "juniper-mahjong-tiles-oh-my-mahjong-birdie-green-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/juniper/mats/birdie-green-oh-my-mahjong.jpg",
+   "racks": [
+    "Oh My Mahjong Hot Pink",
+    "Oh My Mahjong Agate"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Forest Green",
+    "Bird & Bamboo Periwinkle Blue"
+   ],
+   "mat_reg": null,
+   "skipped_no_photo": [],
+   "why": "Your add: the deep green frame and kelly centre carry her Forest Green Jade backs, and the blue-and-teal peacocks pick up her teal layer; almost no pink, so the faces bring it. Retired.",
+   "caption_note": "Your add"
   }
  ],
  "title_color": "#225d36",
  "tile": "assets/tiles/album/juniper.jpg",
- "racks_note": "tile racks = colorcards juniper racks; mat racks = round-2 racks with real photos (not tile racks) + matpick fill"
+ "racks_note": "tile racks = colorcards juniper racks; mat racks = round-2 racks with real photos (not tile racks) + matpick fill",
+ "_nov07_omm": "Nov 7 8:24pm (Tiffany): Midori Shadows, Crane & Moon, Day Dreamer (Pink and Green) marked out (card files kept); 5 OMM 'Your adds' appended #54-58 (spec scripts/albumcard/specs/juniper_omm_nov07.json)."
 }
