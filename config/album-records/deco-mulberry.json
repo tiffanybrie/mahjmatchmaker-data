@@ -1,0 +1,288 @@
+{
+ "_about": "Album record (Album Playbook, Nov 8): the proof for steps 1-8 that scripts/checks/album_gate.py checks and scripts/albumreview/build_review.py turns into the review page. One file per album: config/album-records/<set>.json. Paths are repo-relative. read_review.py appends to 'rounds' when her answers are applied.",
+ "set": "deco-mulberry",
+ "name": "Deco (Mulberry)",
+ "brand": "Bam Bird Boutique",
+ "spec": "scripts/albumcard/specs/deco-mulberry_nov07.json",
+ "leftout": {
+  "file": "scripts/albumcard/specs/deco_leftout_nov07.json",
+  "key": "deco-mulberry"
+ },
+ "cards_dir": "assets/cards/deco-mulberry",
+ "card_build": [
+  "python3 scripts/albumcard/specs/deco_build.py deco-mulberry {work}",
+  "python3 scripts/albumcard/gen2.py {work}/spec.json assets/cards/deco-mulberry",
+  "cp {work}/manifest.json assets/cards/deco-mulberry/manifest.json"
+ ],
+ "tile_photo": "assets/tiles/v92/bam-bird-boutique-deco-mulberry-split.jpg",
+ "tile_inset": "assets/tiles/album/inset/deco-mulberry-flowers.jpg",
+ "colorcard_img": "assets/colorcards/deco-mulberry/00-deco-mulberry-mahjong-tiles-color-guide-mobile.jpg",
+ "wheel_img": "assets/colorwheels/deco-mulberry-color-wheel.jpg",
+ "covers": {
+  "options": [
+   {
+    "img": "assets/covers/albums/00-deco-mulberry-mahjong-tiles-cover.jpg",
+    "label": "Backs only",
+    "note": "Bam Bird listing image 8 (Mulberry / Lucite variant), backs-only crop. No box, no bag."
+   },
+   {
+    "img": "assets/covers/albums/options/00-deco-mulberry-mahjong-tiles-cover-B-faces.jpg",
+    "label": "Faces + backs",
+    "note": "The Find Your Mat-ch photo (faces | backs). A smaller photo, so a little softer."
+   }
+  ],
+  "default": 0
+ },
+ "faces": {
+  "dir": "assets/tiles/faces/deco/clean/",
+  "groups": [
+   {
+    "title": "Dragons",
+    "items": [
+     {
+      "key": "dragon-green",
+      "label": "Green Dragon: teal frame, gold dragon"
+     },
+     {
+      "key": "dragon-red",
+      "label": "Red Dragon: mulberry frame, gold dragon"
+     },
+     {
+      "key": "dragon-white",
+      "label": "White Dragon (soap): periwinkle frame"
+     }
+    ]
+   },
+   {
+    "title": "Bird bam",
+    "items": [
+     {
+      "key": "bam-1-crane",
+      "label": "Bird bam: the gold-winged crane"
+     }
+    ]
+   },
+   {
+    "title": "Flowers",
+    "items": [
+     {
+      "key": "flower-iris-navy",
+      "label": "Flower: navy iris"
+     },
+     {
+      "key": "flower-iris-gold",
+      "label": "Flower: gold iris"
+     },
+     {
+      "key": "flower-poppy",
+      "label": "Flower: teal poppy"
+     },
+     {
+      "key": "flower-lily",
+      "label": "Flower: mulberry and gold lilies"
+     }
+    ]
+   },
+   {
+    "title": "Jokers",
+    "items": [
+     {
+      "key": "joker-teal-lion",
+      "label": "Joker: deep green lion, mulberry stripes"
+     },
+     {
+      "key": "joker-rose-lion",
+      "label": "Joker: rose lion, teal stripes"
+     }
+    ]
+   },
+   {
+    "title": "Winds",
+    "items": [
+     {
+      "key": "wind-north",
+      "label": "North wind: periwinkle feather"
+     },
+     {
+      "key": "wind-east",
+      "label": "East wind: gold feather"
+     },
+     {
+      "key": "wind-west",
+      "label": "West wind: rose feather"
+     },
+     {
+      "key": "wind-south",
+      "label": "South wind: mulberry heart"
+     }
+    ]
+   },
+   {
+    "title": "Dots",
+    "items": [
+     {
+      "key": "dot-1",
+      "label": "1 Dot"
+     },
+     {
+      "key": "dot-2",
+      "label": "2 Dot"
+     },
+     {
+      "key": "dot-3",
+      "label": "3 Dot"
+     },
+     {
+      "key": "dot-4",
+      "label": "4 Dot"
+     },
+     {
+      "key": "dot-5",
+      "label": "5 Dot"
+     },
+     {
+      "key": "dot-6",
+      "label": "6 Dot"
+     },
+     {
+      "key": "dot-7",
+      "label": "7 Dot"
+     },
+     {
+      "key": "dot-8",
+      "label": "8 Dot"
+     },
+     {
+      "key": "dot-9",
+      "label": "9 Dot"
+     }
+    ]
+   },
+   {
+    "title": "Bams",
+    "items": [
+     {
+      "key": "bam-2",
+      "label": "2 Bam"
+     },
+     {
+      "key": "bam-3",
+      "label": "3 Bam"
+     },
+     {
+      "key": "bam-4",
+      "label": "4 Bam"
+     },
+     {
+      "key": "bam-5",
+      "label": "5 Bam"
+     },
+     {
+      "key": "bam-6",
+      "label": "6 Bam"
+     },
+     {
+      "key": "bam-7",
+      "label": "7 Bam"
+     },
+     {
+      "key": "bam-8",
+      "label": "8 Bam"
+     },
+     {
+      "key": "bam-9",
+      "label": "9 Bam"
+     }
+    ]
+   },
+   {
+    "title": "Craks",
+    "items": [
+     {
+      "key": "crak-1",
+      "label": "1 Crak"
+     },
+     {
+      "key": "crak-2",
+      "label": "2 Crak"
+     },
+     {
+      "key": "crak-3",
+      "label": "3 Crak"
+     },
+     {
+      "key": "crak-4",
+      "label": "4 Crak"
+     },
+     {
+      "key": "crak-5",
+      "label": "5 Crak"
+     },
+     {
+      "key": "crak-6",
+      "label": "6 Crak"
+     },
+     {
+      "key": "crak-7",
+      "label": "7 Crak"
+     },
+     {
+      "key": "crak-8",
+      "label": "8 Crak"
+     },
+     {
+      "key": "crak-9",
+      "label": "9 Crak"
+     }
+    ]
+   }
+  ],
+  "picks": [
+   {
+    "key": "dragon-green",
+    "why": "The teal-framed dragon in gold: her teal bams on a face."
+   },
+   {
+    "key": "dragon-red",
+    "why": "Its mulberry twin: her back colour, framed."
+   },
+   {
+    "key": "bam-1-crane",
+    "why": "The signature tile: a gold-winged crane with a teal crest."
+   },
+   {
+    "key": "wind-south",
+    "why": "A mulberry heart in a peacock crest: her back colour, in bloom."
+   },
+   {
+    "key": "joker-rose-lion",
+    "why": "The rose lion in teal stripes: her two colours, swapped."
+   }
+  ]
+ },
+ "pool": {
+  "size": 1574,
+  "year_round": 1353,
+  "holiday": 221,
+  "colour_weighted": 990,
+  "sources": [
+   "Find Your Mat-ch catalog v118 (every visible mat, partners + allowed brands)",
+   "Colour-weighted for her berry, teal, pink and plum (measured colour shares)",
+   "Her Oct 27 Mulberry pairing (Viola) and the sister albums Deco (Lagoon) + Deco (Indigo)",
+   "Tiles & Tablescapes + the 4 other big groups"
+  ],
+  "note": "Shortlist built Nov 7 from the FYM catalog; counts recorded Nov 8 from config/fym-mats-snapshot.json (v118)."
+ },
+ "bysight": {
+  "done": "2026-11-07",
+  "note": "Every shortlisted mat looked at next to the tile photo; cut mats keep a reason in the left-out list."
+ },
+ "holiday": {
+  "considered": "2026-11-08",
+  "note": "All 221 visible holiday mats looked at on one contact sheet next to the Mulberry tiles: 3 in (Poinsettia Party, Winter Jewel, Yuletide), 2 near misses in Left out."
+ },
+ "rank": {
+  "note": "No Tiles & Tablescapes or other-group recs for Mulberry, so her Oct 27 pairing (Viola) leads; the sister mat Deco Dragon (Lagoon) is #3, never #1."
+ },
+ "rounds": []
+}

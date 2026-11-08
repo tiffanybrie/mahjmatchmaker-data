@@ -47,5 +47,14 @@ try:
     r=subprocess.run(['python3','scripts/checks/tnt_check.py'],capture_output=True,text=True,timeout=20)
     if r.returncode: out+=[l for l in r.stdout.splitlines() if l.strip()]
 except Exception: pass
+# Nov 8 (Album Playbook "How it's enforced"): album_gate for every album in progress (upcoming + colour cards with no live album).
+# Reads docs/status/live-albums.json only (refresh: python3 scripts/checks/album_gate.py --refresh-live).
+try:
+    r=subprocess.run(['python3','scripts/checks/album_gate.py','--in-progress'],capture_output=True,text=True,timeout=20)
+    if r.returncode:
+        ls=[l for l in r.stdout.splitlines() if l.strip()]
+        out.append(f'ALBUMS IN PROGRESS MISSING PLAYBOOK STEPS ({len(ls)}): the review page refuses to build until album_gate passes (config/album-records/<set>.json, Album Playbook steps 1-8):')
+        out+=['  - '+l for l in ls[:8]]
+except Exception: pass
 if out:
     print('=== FRONT DOOR (automatic, every message) ===\n'+'\n'.join(out)+'\nRule: if you tell Tiffany you will fix something, fix it BEFORE you reply, or add it to docs/OVERDUE.md in the same turn and tell her who/when.')

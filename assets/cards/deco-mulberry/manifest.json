@@ -7,7 +7,8 @@
   "teal": "Deep teal, so the berry pops",
   "berry": "Berry + a teal accent",
   "jewel": "Jewel box",
-  "quiet": "Quiet + clean"
+  "quiet": "Quiet + clean",
+  "holiday": "Holiday"
  },
  "cards": [
   {
@@ -724,6 +725,78 @@
    "fym": "letsbebesties.com/petals-after-dark-neoprene-mahjong-mat",
    "lowres": false,
    "caption_note": null
+  },
+  {
+   "order": 31,
+   "group": "holiday",
+   "mat": "Poinsettia Party",
+   "brand": "Soirée All Day",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": true,
+   "file": "deco-mulberry-mahjong-tiles-soir-e-all-day-poinsettia-party-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/deco/mats/soiree-all-day-poinsettia-party.jpg",
+   "racks": [
+    "Bam Bird Boutique Mulberry Wood",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Avocado",
+    "Bird & Bamboo Mulberry"
+   ],
+   "why": "Holiday: a mulberry frame like her backs around a chartreuse field, with berry poinsettias and pink ornaments. Her back colour is already on the mat.",
+   "fym": "soireeallday.co/poinsettia-party-mahjong-mat",
+   "lowres": true,
+   "caption_note": "Holiday match"
+  },
+  {
+   "order": 32,
+   "group": "holiday",
+   "mat": "Winter Jewel",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": true,
+   "file": "deco-mulberry-mahjong-tiles-lets-be-besties-winter-jewel-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/deco/mats/lets-be-besties-winter-jewel.jpg",
+   "racks": [
+    "Bam Bird Boutique Mulberry Wood",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Acrylic Burl",
+    "Bird & Bamboo Dark Teal"
+   ],
+   "why": "Holiday: a deep teal ground like her bams with a jewel snowflake in berry, coral and gold. Teal across the wheel from her berry backs.",
+   "fym": "letsbebesties.com/winter-jewel-neoprene-mahjong-mat",
+   "lowres": false,
+   "caption_note": "Holiday match"
+  },
+  {
+   "order": 33,
+   "group": "holiday",
+   "mat": "Yuletide",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": true,
+   "file": "deco-mulberry-mahjong-tiles-oh-my-mahjong-yuletide-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/deco/mats/oh-my-mahjong-yuletide.jpg",
+   "racks": [
+    "Bam Bird Boutique Mulberry Wood",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Forest Green",
+    "Bird & Bamboo Mermaid"
+   ],
+   "why": "Holiday: an emerald-and-teal plaid inside a berry-red frame with roses and lanterns. Teal for her bams, berry for her backs.",
+   "fym": "www.ohmymahjong.com/yuletide-mat-in-tube",
+   "lowres": false,
+   "caption_note": "Holiday match"
   }
  ],
  "title_color": "#7a2c55",

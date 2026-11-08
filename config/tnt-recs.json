@@ -226,7 +226,44 @@
    ],
    "nonpartner_out": [
     "Four Winds Social Wild Nights"
-   ]
+   ],
+   "other_groups": {
+    "scanned": "2026-11-08",
+    "how": "Claude in Chrome, read only. Groups she has joined, listed from Facebook search with the 'My groups' filter (queries mahj / jongg / tablescapes), member counts as Facebook shows them on Nov 8; searched every joined mahjong group over 30,000 members besides Tiles & Tablescapes (75K, scanned separately above). Each group's own search for 'Deco Mulberry' and 'Bam Bird Deco'; whole posts read incl. all comments of the one discussion thread.",
+    "groups": [
+     {
+      "name": "Mahjong Community",
+      "members": "123K",
+      "url": "https://www.facebook.com/groups/mahjongcommunity/",
+      "found": "nothing ('Deco Mulberry' no results; 'Bam Bird Deco' only an unrelated Art Deco palace post)"
+     },
+     {
+      "name": "The Mahj Lounge",
+      "members": "46K",
+      "url": "https://www.facebook.com/groups/1514161333186568/",
+      "found": "one unboxing video of Deco tiles (Stacy Cirrito), comments compliments only; no mat named"
+     },
+     {
+      "name": "The Mahjong Table - buy, sell, share",
+      "members": "37K",
+      "url": "https://www.facebook.com/groups/1628897271459610/",
+      "found": "sale/ISO posts for Deco Mulberry; Isaac Thompson 'which tile set' thread (57 comments read): Mulberry photos on unnamed mats (Kim Cyrkiel Rice: gold-framed red/pink floral mat; Jessica Alexander; Dasha Parker Cowart); Andrea Sievers would pair Deco (Lagoon/Indigo) with 'the Bam Bird gold mat' + MFM Appaloosa racks (not Mulberry)"
+     },
+     {
+      "name": "Ask the Mah Jongg Teacher",
+      "members": "36K",
+      "url": "https://www.facebook.com/groups/AsktheMahJonggTeacher/",
+      "found": "nothing (rules/welcome post only)"
+     }
+    ],
+    "terms": [
+     "Deco Mulberry",
+     "Bam Bird Deco"
+    ],
+    "recs": [],
+    "note": "No named mat recs for Deco (Mulberry) in the other big groups. Lead for Lagoon/Indigo only: 'Bam Bird gold mat' (unconfirmed which Bam Bird mat).",
+    "under_30k_joined": "I Love Mahj 29K, Mahjong Buy Sell Trade & Chat 27K, Mahjong Tablescapes 26K, Mah Jongg Maven 21K, Mah Jongg Network 20K, Mah Jongg Menagerie 18K, Lara's Mahjong Edit 17K, Luxury Mahjong BST 17K, Mahjong Madness 17K, Mahjong Daily Deals 17K, Mahjong Pretties 16K, Mahjong Merch 16K (not searched: under 30K)"
+   }
   },
   "deco-indigo": {
    "scanned": "2026-11-08",

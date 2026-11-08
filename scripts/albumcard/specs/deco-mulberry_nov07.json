@@ -6,7 +6,8 @@
   "teal": "Deep teal, so the berry pops",
   "berry": "Berry + a teal accent",
   "jewel": "Jewel box",
-  "quiet": "Quiet + clean"
+  "quiet": "Quiet + clean",
+  "holiday": "Holiday"
  },
  "mats": [
   {
@@ -308,6 +309,39 @@
    "retired": false,
    "fym": "letsbebesties.com/petals-after-dark-neoprene-mahjong-mat",
    "lowres": false
+  },
+  {
+   "group": "holiday",
+   "name": "Poinsettia Party",
+   "brand": "Soirée All Day",
+   "img": "assets/colorcards/deco/mats/soiree-all-day-poinsettia-party.jpg",
+   "why": "Holiday: a mulberry frame like her backs around a chartreuse field, with berry poinsettias and pink ornaments. Her back colour is already on the mat.",
+   "retired": false,
+   "fym": "soireeallday.co/poinsettia-party-mahjong-mat",
+   "lowres": true,
+   "holiday": true
+  },
+  {
+   "group": "holiday",
+   "name": "Winter Jewel",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-winter-jewel.jpg",
+   "why": "Holiday: a deep teal ground like her bams with a jewel snowflake in berry, coral and gold. Teal across the wheel from her berry backs.",
+   "retired": false,
+   "fym": "letsbebesties.com/winter-jewel-neoprene-mahjong-mat",
+   "lowres": false,
+   "holiday": true
+  },
+  {
+   "group": "holiday",
+   "name": "Yuletide",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/mats/oh-my-mahjong-yuletide.jpg",
+   "why": "Holiday: an emerald-and-teal plaid inside a berry-red frame with roses and lanterns. Teal for her bams, berry for her backs.",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/yuletide-mat-in-tube",
+   "lowres": false,
+   "holiday": true
   }
  ]
 }
