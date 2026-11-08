@@ -5,8 +5,9 @@
 #  1. shopmy_nov07.py: 25 ShopMy mats (Mahj & Moon x5, Rebecca Illustrated x8 incl. 2 Questionable hidden, Waiting On Martha x3,
 #     The Mahjong House Ruby Table, Southern Living x3, Case-Mate x4 colourways, OMM x Tuckernuck In Full Bloom) + fixes
 #     (Luna Hummingbird Mint hidden/Questionable; ShopMy links for Blue Pastel Palm Beach + Rainbow Row).
-#  2. v96_amazon_holiday.py: Tiffany's 28 Amazon holiday picks (Oct 26 11:16), held out of v96 and never re-added; colours by eye Nov 7.
+#  2. amazon118.py (= v96_amazon_holiday.py adds, WITHOUT its stale s.cr placement): Tiffany's 28 Amazon holiday picks (Oct 26 11:16),
+#     held out of v96 and never re-added; colours by eye Nov 7. Then builder/fym_fix_oct30/v104rank.py colour-ranks every new mat.
 # Usage: adds118.sh <build_dir>
 set -eo pipefail; H=$(dirname "$0"); R=$(cd "$H/../.." && pwd)
 python3 "$H/shopmy_nov07.py" "$1" | tail -3
-python3 "$R/builder/fym_fix_oct25/v96_amazon_holiday.py" "$1" | tail -2
+python3 "$H/amazon118.py" "$1" | tail -2

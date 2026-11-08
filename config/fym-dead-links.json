@@ -82,11 +82,16 @@
    "g": "tiles",
    "name": "OMM Emerald tile set",
    "why": "FYM 1.16 link check [162] Nov 6: 404, not in ohmymahjong.com products.json (246 products)"
-  },
+  }
+ },
+ "revived": {
   "www.ohmymahjong.com/pearlescent-tile-set": {
    "g": "tiles",
    "name": "OMM Pearlescent tile set",
-   "why": "FYM 1.16 link check [162] Nov 6: 404, not in ohmymahjong.com products.json"
+   "why": "FYM 1.16 link check [162] Nov 6: 404, not in ohmymahjong.com products.json",
+   "revived": "2026-11-07",
+   "url": "https://ohmymahjong.com/products/pearlescent-tile-set",
+   "price": 475.0
   }
  }
 }

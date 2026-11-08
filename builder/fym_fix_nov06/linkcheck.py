@@ -8,6 +8,7 @@ FYM shop link (D.mats / D.racks / D.tiles `u`) and FAILS on 404 / 410.
 - Results are cached in config/fym-link-check-cache.json: a 2xx/3xx answer is trusted for 7 days, a 404/410 for 12 hours, anything else
   (403, 429, 5xx, timeout) is re-tried on the next run and only WARNED about.
 Fix for a dead link: builder/fym_fix_nov06/deadlinks116.py (config/mat-gallery-link-fixes.json): no shop button, NOT 'Retired'.
+Live again (Nov 7): the command line run also lists dead-link items whose store product is available again (revive_links.py, gate [162b]).
 Usage: python3 builder/fym_fix_nov06/linkcheck.py <build dir or index.html>   (prints dead + unknown; exit 1 on dead)"""
 import json, os, sys, time, subprocess
 from concurrent.futures import ThreadPoolExecutor
@@ -96,4 +97,13 @@ if __name__ == '__main__':
         print('  DEAD', x[5], x[0], x[3], '|', x[2], '|', x[1])
     for x in unk:
         print('  ?', x[5], x[0], x[3], '|', x[2], '|', x[4])
-    sys.exit(1 if dead else 0)
+    # Nov 7 2026 (FYM 1.18, gap audit A7 Pearlescent): a dead-link item whose store product is live + available again gets its button back
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'fym_fix_nov07'))
+        import revive_links as RV
+        live, _ = RV.revivable(D, json.load(open(REPO + 'config/fym-dead-links.json'))['items'])
+        for x in live:
+            print('  LIVE AGAIN', x[1], '|', x[2], '|', x[3], '-> python3 builder/fym_fix_nov07/revive_links.py <build>')
+    except Exception as e:
+        print('  revive check did not run:', e); live = []
+    sys.exit(1 if dead or live else 0)

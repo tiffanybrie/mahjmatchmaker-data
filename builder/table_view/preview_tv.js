@@ -212,7 +212,7 @@ function list(){const q=SW.qs[SW.tab].trim().toLowerCase();let rows=pool();const
   if(SW.brand)rows=rows.filter(it=>it.bn===SW.brand);if(SW.color)rows=rows.filter(it=>it.cols.includes(SW.color));if(SW.fin)rows=rows.filter(it=>(it.fin||[]).includes(SW.fin));
   if(SW.picks)rows=rows.filter(it=>it.pk);
   if(SW.tab==='racks'&&!q&&!SW.brand){info.cut=rows.filter(r=>r.short).length;rows=rows.filter(r=>!r.short)}
-  if(SW.price!==''){info.nop=rows.filter(r=>r.pc==null).length;rows=rows.filter(r=>r.pc!=null&&r.pc<=SW.price)}
+  if(SW.price!==''){info.nop=rows.filter(r=>r.pc==null).length;rows=rows.filter(r=>r.pc!=null&&r.pc<=SW.price).concat(rows.filter(r=>r.pc==null))}
   if(SW.instock){const a=rows.filter(r=>!r.so);info.allso=!a.length&&rows.length>0;if(!info.allso)rows=a}
   rows.sort((a,b)=>(a.off?1:0)-(b.off?1:0));return [rows,info,q]}
 const money=v=>'$'+(Math.round(v)===v?v:v.toFixed(2));
@@ -223,11 +223,11 @@ function grid(){const [rows,info,q]=list();const s=curSet(),m=curMat();
   let h='';if(SW.tab==='mat')h=s?`♥ = Tiffany’s match for ${esc(s.name)}. Gray = not available in Table view (tap to see why).`:'';
   if(SW.tab==='tiles')h=m&&M[m]?`♥ = Tiffany matched this set with ${esc(M[m].n)}.`:'';
   if(SW.tab==='racks')h=`Only racks that fit ${s?esc(s.name):'these'} tiles can go on the table${info.cut?` (${info.cut} shorter racks show when you search)`:''}. ♥ = Tiffany’s rack picks for this mat.`;
-  if(info.allso)h='No in-stock matches here, so showing all. '+h;if(SW.price!==''&&info.nop)h=`${info.nop} without a listed price not shown. `+h;if(SW.price!=='')h+=' Prices: store price, or less with code MAHJMATCH where it applies.';
+  if(info.allso)h='No in-stock matches here, so showing all. '+h;if(SW.price!==''&&info.nop)h=`${info.nop} without a listed price shown last. `+h;if(SW.price!=='')h+=' Prices: store price, or less with code MAHJMATCH where it applies.';
   $i('tvsh').innerHTML=h;const g=$i('tvgrid');
   if(!rows.length){g.innerHTML='<div class="tvempty">Nothing matches. Tap Clear above to see everything again.</div>';VIS_ROWS=[];return}
   VIS_ROWS=rows.slice(0,150);g.className='tvgrid'+(SW.tab==='racks'?' rk':'');
-  g.innerHTML=VIS_ROWS.map((it,i)=>`<button type="button" class="tvit${it.off?' off':''}${it.on?' on':''}" data-tvi="${i}"><span class="ph">${it.th?`<img src="${esc(it.th)}" alt="" loading="lazy">`:''}${it.pk?'<span class="tvpk">♥</span>':''}${it.tag?`<span class="tvtag">${esc(it.tag)}</span>`:''}</span><span class="nm">${esc(it.n)}${it.so?' <small>Sold out</small>':''}</span><span class="bn">${esc(BD(it.bn))}</span>${it.p!=null?`<span class="pr">${money(it.p)}${it.cd&&SW.price!==''&&it.p>SW.price&&it.pc<=SW.price?` <em>Under $${SW.price} with code MAHJMATCH</em>`:(it.cd?' <em>less with code MAHJMATCH</em>':'')}</span>`:''}</button>`).join('')+(rows.length>VIS_ROWS.length?`<div class="tvempty">${rows.length-VIS_ROWS.length} more. Search to narrow it down.</div>`:'')}
+  g.innerHTML=VIS_ROWS.map((it,i)=>`<button type="button" class="tvit${it.off?' off':''}${it.on?' on':''}" data-tvi="${i}"><span class="ph">${it.th?`<img src="${esc(it.th)}" alt="" loading="lazy">`:''}${it.pk?'<span class="tvpk">♥</span>':''}${it.tag?`<span class="tvtag">${esc(it.tag)}</span>`:''}</span><span class="nm">${esc(it.n)}${it.so?' <small>Sold out</small>':''}</span><span class="bn">${esc(BD(it.bn))}</span>${it.p!=null?`<span class="pr">${money(it.p)}${it.cd&&SW.price!==''&&it.p>SW.price&&it.pc<=SW.price?` <em>Under $${SW.price} with code MAHJMATCH</em>`:(it.cd?' <em>less with code MAHJMATCH</em>':'')}</span>`:(SW.price!==''?'<span class="pr"><em>Price not listed</em></span>':'')}</button>`).join('')+(rows.length>VIS_ROWS.length?`<div class="tvempty">${rows.length-VIS_ROWS.length} more. Search to narrow it down.</div>`:'')}
 function brandPop(){const p=$i('tvpop');if(!p.hidden){p.hidden=true;return}const cnt={};for(const it of pool()){cnt[it.bn]=cnt[it.bn]||{n:0,pa:!!it.pa};cnt[it.bn].n++}
   const bs=Object.entries(cnt).sort((a,b)=>(b[1].pa-a[1].pa)||a[0].localeCompare(b[0]));
   p.innerHTML=`<button type="button" data-tvb="">All brands</button>`+bs.map(([b,v])=>`<button type="button" data-tvb="${esc(b)}">${v.pa?'<span class="tvh">♥</span> ':''}${esc(BD(b))} (${v.n})</button>`).join('')+'<p class="tvhint">♥ Code MAHJMATCH works at these brands.</p>';p.hidden=false}

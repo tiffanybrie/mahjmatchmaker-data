@@ -1087,38 +1087,25 @@ if not _pre97:
         if _flat89: F.append(f"[89] {len(_flat89)} mat photos with white bands (trim in config/fym-mat-white-oct26.json): " + '; '.join(_flat89[:8]))
         if _ang89: W97.append(f"[89] {len(_ang89)} angled mat photos with white corners (need a perspective flatten): " + '; '.join(_ang89))
     except Exception as _e: F.append(f"[89] white-band check did not run: {_e}")
-# [90] Oct 26: gallery sync. Every visible FYM mat (not hidden, not a '#side-b' second listing) should have a Mat Gallery row
-# (staged site/livepatch/matgallery/matgallery-v5.html rows or config/mat-gallery-extra-rows.json), matched by key, product URL or
-# name + brand. WARN for now (lists them); extra rows not yet in the staged page are listed too (that page needs a rebuild + paste).
+# [90] Oct 26: gallery sync. REWRITTEN Nov 7 2026 (FYM 1.18; gap audit B5: [90] said 1 missing while the built gallery v117 lacked
+#      24 visible FYM mats: it counted config/mat-gallery-extra-rows.json rows as if they were in the page, and used another denominator
+#      than coverage_check). Now it compares this build with the BUILT gallery rows of the newest staged page (data/matgallery-vNNN.json)
+#      through builder/fym_fix_nov07/gallery_cov.py, the same definition scripts/checks/coverage_check.py uses: visible FYM mats with no
+#      gallery card (minus the ones out on purpose: House of Hearts, removed, side B/twins, photo holds with a reason, duplicate photos
+#      merged into a twin that IS in the gallery) and gallery cards whose FYM mat is hidden. FAIL when the staged gallery carries this
+#      release's FYM version (data-fym = the build's version, i.e. it claims to be built from it); WARN while it is older ([159b] asks
+#      for the rebuild).
 try:
-    import unicodedata as _ud90
-    _nz = lambda x: re.sub(r'[^a-z0-9]', '', ''.join(c for c in _ud90.normalize('NFD', str(x or '')) if not _ud90.combining(c)).lower())
-    import urllib.parse as _up90
-    def _nu(u):  # Oct 26 fix: a /discount/CODE?redirect=/products/x link is keyed by its redirect product (it used to collapse to the brand's discount URL and match any row of that brand)
-        u = str(u or '')
-        if '/discount/' in u and 'redirect=' in u:
-            u = re.sub(r'^(https?://[^/]+).*$', r'\1', u) + _up90.unquote(u.split('redirect=', 1)[1].split('&')[0])
-        return re.sub(r'^https?://(www\.)?', '', u.split('?')[0].split('#')[0]).rstrip('/').replace('/products/', '/')
-    _XR = json.load(open(REPO + 'config/mat-gallery-extra-rows.json'))['rows']
-    _GK = {GKEY(r[0]) for r in _G}; _GU = {_nu(r[3]) for r in _G}; _GN = {_nz(r[1]) + '|' + _nz(r[2]) for r in _G}
-    _XK = {a['key'] for a in _XR}; _XU = {_nu(a.get('url') or a.get('u')) for a in _XR if a.get('url') or a.get('u')}
-    _miss90, _stale90 = [], []
-    _MERGED90 = set()
-    try:
-        _dx90 = json.load(open(REPO + 'config/mat-gallery-dedupe-v6.json'))['merge']; _MERGED90 = {a_['key'] for a_ in _XR if a_['img'] in _dx90}
-    except Exception: pass
-    _HOLD90 = set(json.load(open(REPO + 'config/mat-gallery-photo-holds.json'))['mats']) if os.path.exists(REPO + 'config/mat-gallery-photo-holds.json') else set()
-    try: _HOLD90 |= {GKEY(i_) for i_ in json.load(open(REPO + 'config/mat-gallery-photo-holds.json')).get('imgs', {})}
-    except Exception: pass
-    for _k, _m in M.items():
-        if _m.get('hid') or '#side-b' in _k or _k in _HOLD90 or _k in _MERGED90: continue  # holds + merged duplicate photos stay out on purpose  # Nov 6: gallery photo holds (config/mat-gallery-photo-holds.json) stay out on purpose
-        _u = {_nu(_m.get('u0')), _nu(_m.get('u')), _nu(_k)}
-        _in_staged = _k in _GK or bool(_u & _GU) or (_nz(_m['n']) + '|' + _nz(_m.get('bn'))) in _GN
-        if _in_staged: continue
-        if _k in _XK or _u & _XU: _stale90.append(f"{_m.get('bn')} | {_m['n']}"); continue
-        _miss90.append(f"{_m.get('bn')} | {_m['n']}")
-    if _miss90: W97.append(f"[90] {len(_miss90)} visible FYM mats have no Mat Gallery row: " + '; '.join(_miss90))
-    if _stale90: W97.append(f"[90] {len(_stale90)} visible FYM mats are in config/mat-gallery-extra-rows.json but not in the staged gallery page (rebuild + paste): " + '; '.join(_stale90))
+    sys.path.insert(0, REPO + 'builder/fym_fix_nov07')
+    import gallery_cov as _GC90
+    _r90 = _GC90.compare(D, _G)
+    _gv90 = re.search(r'data-fym="v(\d+)"', _GHTML)
+    _bv90 = re.search(r'Version 1\.(\d+)', open(os.path.join(B, 'index.html')).read())
+    _same90 = bool(_gv90 and _bv90 and int(_gv90.group(1)) >= 100 + int(_bv90.group(1)))  # Version 1.18 = v118
+    _put90 = F.append if _same90 else W97.append
+    if _r90['missing']: _put90(f"[90] {len(_r90['missing'])} of {_r90['eligible']} visible FYM mats have no card in the built gallery {os.path.basename(_GPATH)}: " + '; '.join(f"{M[k].get('bn')} | {M[k]['n']}" for k in _r90['missing'][:15]))
+    if _r90['shown_hidden']: _put90(f"[90] {len(_r90['shown_hidden'])} gallery cards show a mat FYM hides: " + '; '.join(f"{M[k].get('bn')} | {M[k]['n']}" for _i, k in _r90['shown_hidden'][:15]))
+    if not _same90: W97.append(f"[90] staged gallery {os.path.basename(_GPATH)} is not built from this release yet (missing/hidden counts above are against it)")
 except Exception as _e: F.append(f"[90] gallery sync check did not run: {_e}")
 # ---- v98 (Version 1.2) checks, Oct 26 night (docs/MATCH-INBOX.md) ----
 _pre98 = _v97 is not None and int(_v97.group(1)) < 98 and '/*v98 racks low equal*/' not in UI
@@ -1908,6 +1895,18 @@ try:
     if _d161: F.append(f"[162] {len(_d161)} visible shop links are dead (404/410; add them to config/fym-dead-links.json): " + '; '.join(f'{x[3]} | {x[2]} ({x[5]})' for x in _d161[:10]))
     if _u161: print(f"FYM GATE WARNING [162]: {len(_u161)} shop links did not answer cleanly (re-checked next run): " + '; '.join(f'{x[3]} | {x[2]} ({x[5]})' for x in _u161[:8]))
 except Exception as _e: F.append(f"[162] shop-link check did not run: {_e}")
+# [162b] Nov 7 2026 (FYM 1.18; gap audit A7: OMM Pearlescent was back on the store at $475 with 40 of Tiffany's matches, but FYM kept
+#       it as a dead link with no shop button). FAIL: an item on config/fym-dead-links.json whose store product (Shopify .json) answers
+#       200 with an available variant. Fix: python3 builder/fym_fix_nov07/revive_links.py <build> (button back, price + stock updated).
+try:
+    sys.path.insert(0, REPO + 'builder/fym_fix_nov07')
+    import revive_links as _RV162
+    _lv162, _ = _RV162.revivable(D, json.load(open(REPO + 'config/fym-dead-links.json'))['items'])
+    if _lv162: F.append(f"[162b] {len(_lv162)} dead-link items are live + available again (run builder/fym_fix_nov07/revive_links.py): " + '; '.join(f'{x[2]} ({x[3]})' for x in _lv162))
+    for _k162, _x162 in (json.load(open(REPO + 'config/fym-dead-links.json')).get('revived') or {}).items():
+        _o162 = (D.get(_x162['g']) or {}).get(_k162)
+        if _o162 and not _o162.get('hid') and (_o162.get('u_dead') or not _o162.get('u')): F.append(f"[162b] {_o162.get('n')}: revived {_x162.get('revived')} but this build has no shop link (run revive_links.py)")
+except Exception as _e: print(f"FYM GATE WARNING [162b]: live-again check did not run: {_e}")
 # [163] Nov 6 2026 (FYM 1.17 QA item d: the cream/orange/yellow rule left Spring Fling neutral-only and cut Le Madeline to pink only).
 #       Every mat builder/fym_fix_nov06/colour116.py changed (config/fym-colour-fixes-v116.json 'changed') that the rule left NEUTRAL-ONLY,
 #       or dropped to ONE colour from several, needs an eye check: it FAILS unless the mat has a by-eye entry in the same file's 'eye'
@@ -1953,6 +1952,30 @@ try:
         if _s165 not in _S165: F.append(f"[165] album set {_s165} ({_w165}) is not a set in this build: build it in FYM before the album goes to Tiffany")
         elif _s165 not in _BK165: F.append(f"[165] album set {_s165} ({_w165}) has no walls (no back in D.tv.backs): add its back (builder/table_view/back_colors_nov07.py) before the album goes to Tiffany")
 except Exception as _e: F.append(f"[165] album-sets-have-walls check did not run: {_e}")
+# [166] Nov 7 2026 (FYM 1.18; gap audit B4: 'Under $X' silently hid every mat with no listed price, 708 of 1,521). With a price chosen,
+#       priced items under it come first and items with NO price follow (never hidden), each saying 'Price not listed'; same in the Table
+#       view swap sheet. Static markers + node runs the build's own PRF() with stub data. Fix: builder/fym_fix_nov07/price118.py <build>.
+#       Also prints price coverage (mats / tile sets / racks with a price).
+try:
+    _h166 = open(os.path.join(B, 'index.html')).read()
+    for _n166, _s166 in (('deck marker', '/*v118 no-price last*/'), ('card line', 'Price not listed'), ('note', 'without a listed price shown last'),
+                         ('table sheet', 'rows=rows.filter(r=>r.pc!=null&&r.pc<=SW.price).concat(rows.filter(r=>r.pc==null))')):
+        if _s166 not in _h166: F.append(f"[166] price filter: missing the {_n166} code (run builder/fym_fix_nov07/price118.py)")
+    for _o166 in ('without a listed price not shown', 'rows=rows.filter(r=>r.pc!=null&&r.pc<=SW.price)}'):
+        if _o166 in _h166: F.append(f"[166] price filter still hides items with no price ({_o166[:40]})")
+    _a166 = _h166.find('function PRP(k,id)'); _b166 = _h166.find('window.PRF=PRF;', _a166)
+    _js166 = ("const S={pr:{m:30,t:'',r:''},prE:{},prN:{},tvforce:null,mfront:null,tvrf:null};const D={sets:[]};"
+              "const TVD={pm:{a:[10,10,0],b:[50,50,0],e:[60,25,1]},price:{},pt:{}};" + _h166[_a166:_b166] +
+              "const r1=PRF('m',['c','a','b','d','e']);const n1=S.prN.m;const r2=PRF('m',['b','c']);"
+              "console.log(JSON.stringify({r1,n1,r2,e2:S.prE.m}));")
+    _o166r = subprocess.run(['node', '-e', _js166], capture_output=True, text=True, timeout=30)
+    _j166 = json.loads(_o166r.stdout.strip().splitlines()[-1])
+    if _j166['r1'] != ['a', 'e', 'c', 'd'] or _j166['n1'] != 2: F.append(f"[166] PRF('m') with 'Under $30' should give priced a, e (via code) then no-price c, d: got {_j166}")
+    if _j166['r2'] != ['b', 'c'] or _j166['e2'] != 1: F.append(f"[166] PRF('m') with nothing priced under $30 should show all with the note: got {_j166}")
+    _vm166 = [k for k, m in M.items() if not m.get('hid')]; _vs166 = [s_ for s_ in D['sets'] if not s_.get('hid') and not D['tiles'].get(s_['tile'], {}).get('hid')]
+    _vr166 = [k for k, r in D['racks'].items() if not r.get('hid')]; _tv166 = D.get('tv') or {}
+    print(f"FYM GATE INFO [166] prices: mats {sum(1 for k in _vm166 if k in _tv166.get('pm', {}))}/{len(_vm166)}, tile sets {sum(1 for s_ in _vs166 if s_['tile'] in _tv166.get('pt', {}))}/{len(_vs166)}, racks {sum(1 for k in _vr166 if k in _tv166.get('price', {}))}/{len(_vr166)}; walls {sum(1 for s_ in _vs166 if s_['slug'] in _tv166.get('backs', {}))}/{len(_vs166)} visible sets")
+except Exception as _e: F.append(f"[166] price filter check did not run: {_e}")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))

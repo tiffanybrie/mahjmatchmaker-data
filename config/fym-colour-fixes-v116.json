@@ -1,6 +1,6 @@
 {
  "about": "FYM 1.16 colour fixes, carried over from the Mat Gallery v6 work (Nov 6 QA round 2; builder/fym_fix_nov06/gallery_sync.py).",
- "build": "b117",
+ "build": "b118",
  "eye": {
   "mahjmood.com/spring-fling-mat": {
    "name": "Spring Fling Mat",
@@ -402,6 +402,21 @@
     "dark"
    ],
    "why": "by-eye (FYM QA): cream centre, dusty blue frame; LOOKED at the FYM photo Nov 6 night (1.17 QA item d)"
+  },
+  "www.etsy.com/listing/4575845329/vintage-floral-pink-mahjong-mat": {
+   "name": "Vintage Floral Pink",
+   "brand": "Mahj & Moon",
+   "hid": false,
+   "from": [
+    "neutral",
+    "orange",
+    "pink"
+   ],
+   "to": [
+    "neutral",
+    "pink"
+   ],
+   "why": "orange dropped: saturated orange 0.0%, peach 2.4% (cream/beige read as orange)"
   }
  },
  "skipped": {

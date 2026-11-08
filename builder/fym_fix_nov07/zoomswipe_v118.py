@@ -49,7 +49,7 @@ REPL = [
 
 
 def patch(b):
-    p = os.path.join(b, 'index.html')
+    p = b if b.endswith('.html') else os.path.join(b, 'index.html')  # Nov 7: also a website copy's index.html
     h = open(p).read()
     if MARK in h:
         print('zoomswipe_v118: already applied'); return 0
