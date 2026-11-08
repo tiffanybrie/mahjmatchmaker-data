@@ -1,7 +1,7 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-07T23:08:47+00:00",
- "fym_ref": "origin/fym-site-preview:site-app/fym-v117",
+ "swept_at": "2026-11-08T18:43:05+00:00",
+ "fym_ref": "origin/fym-site-preview:site-app/fym-v118",
  "stores": {
   "amahjline.com": {
    "brand": "Amahj",
@@ -1248,13 +1248,7 @@
      "90s-girl-mat"
     ]
    ],
-   "missing": [
-    [
-     "2026-11-05T15:11:45-06:00",
-     "Playing For Keeps Mat | Pre-Order, Ships January",
-     "playing-for-keeps-mat"
-    ]
-   ]
+   "missing": []
   },
   "mahjongco.com": {
    "brand": "Mahjong Co.",
@@ -4800,7 +4794,7 @@
   "faitamainstudio.com": {
    "brand": "Fait à Main",
    "status": "ok",
-   "products": 41,
+   "products": 40,
    "mats": [
     [
      "2026-11-07T15:22:25-06:00",
@@ -4828,13 +4822,7 @@
      "saint-remy-mat"
     ]
    ],
-   "missing": [
-    [
-     "2026-11-05T09:23:54-06:00",
-     "TEXAS MON AMOUR MAT GREEN",
-     "texas-mon-amour-mat-green"
-    ]
-   ]
+   "missing": []
   }
  }
 }

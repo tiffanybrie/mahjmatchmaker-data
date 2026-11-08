@@ -56,5 +56,11 @@ try:
         out.append(f'ALBUMS IN PROGRESS MISSING PLAYBOOK STEPS ({len(ls)}): the review page refuses to build until album_gate passes (config/album-records/<set>.json, Album Playbook steps 1-8):')
         out+=['  - '+l for l in ls[:8]]
 except Exception: pass
+# Nov 8 1:37pm (Tiffany, Album Playbook step 0): an album tile photo sent for her yes and not answered goes FIRST, every message,
+# until she answers (no card is built before it: gen2.py refuses).
+try:
+    r=subprocess.run(['python3','scripts/checks/tile_photo_check.py'],capture_output=True,text=True,timeout=20)
+    if r.returncode: out[0:0]=[l for l in r.stdout.splitlines() if l.startswith('ASK TIFFANY NOW')]
+except Exception: pass
 if out:
     print('=== FRONT DOOR (automatic, every message) ===\n'+'\n'.join(out)+'\nRule: if you tell Tiffany you will fix something, fix it BEFORE you reply, or add it to docs/OVERDUE.md in the same turn and tell her who/when.')

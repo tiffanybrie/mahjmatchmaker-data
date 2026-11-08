@@ -10,7 +10,10 @@ Checks, in playbook order:
   [3] TNT search        config/tnt-recs.json sets.<set> with scanned + source (scripts/checks/tnt_check.py)
   [3b] other groups     config/tnt-recs.json sets.<set>.other_groups: scanned + groups[] (each with members),
                         or an empty groups list WITH a note
+  [0] tile photo        record tile_photo approved_at set (her yes in chat; scripts/checks/tile_photo_check.py)
   [4] pool              record pool.size > 0 and pool.sources
+  [4a] catalog fresh    record catalog_checked.at the same day as pool.pulled_at and not after it
+                        (scripts/albumreview/catalog_refresh.py: ShopMy every collection + partner-store sweep)
   [5] by-sight pass     the left-out list exists, has mats, and every mat has a reason
   [6] holiday           the album spec has holiday cards, or record holiday.considered + note (none fit)
   [7] faces pre-picked  record faces.picks = 5 keys, each with a face image
@@ -41,6 +44,12 @@ def check(s):
     rec = record(s)
     if rec is None:
         return [f'[0] no album record config/album-records/{s}.json'], proof
+    # [0] tile photo approved by her in chat (Playbook step 0, Nov 8 1:37pm)
+    from tile_photo_check import problem as tp_problem, tile_photo
+    tpp = tp_problem(s)
+    if tpp: bad.append('[0] ' + tpp)
+    tp = tile_photo(s) or {}
+    proof['tile_photo'] = tp
     # [1] FYM set + walls
     afs = J('config/album-fym-sets.json', {})
     slug = (afs.get('colorcards') or {}).get(s)
@@ -48,8 +57,9 @@ def check(s):
     w = walls.get(slug) if slug else None
     if not slug: bad.append(f'[1] tiles not set up in Find Your Mat-ch: config/album-fym-sets.json colorcards.{s} has no FYM set')
     elif not (isinstance(w, dict) and w.get('back')): bad.append(f'[1] FYM set {slug} has no walls (config/tableview-back-colors.json)')
-    proof['fym'] = {'slug': slug, 'back': (w or {}).get('back'), 'photo': rec.get('tile_photo')}
-    if rec.get('tile_photo') and not os.path.exists(R + rec['tile_photo']): bad.append(f"[1] tile photo missing: {rec['tile_photo']}")
+    proof['fym'] = {'slug': slug, 'back': (w or {}).get('back'), 'photo': tp.get('file')}
+    for k in ('file', 'inset'):
+        if tp.get(k) and not os.path.exists(R + tp[k]): bad.append(f"[1] tile photo file missing: {tp[k]}")
     # [2] colour card
     cc = (J('config/colorcards.json', {}).get('sets') or {}).get(s)
     if not cc or not cc.get('backs') or not cc.get('faces'): bad.append(f'[2] no colour card in config/colorcards.json sets.{s}')
@@ -68,6 +78,16 @@ def check(s):
     pool = rec.get('pool') or {}
     if not pool.get('size') or not pool.get('sources'): bad.append('[4] no candidate pool on record (record pool.size + sources)')
     proof['pool'] = pool
+    # [4a] catalog up to date before the pull (Tiffany Nov 8 1:33pm): catalog_checked the same day as pool.pulled_at, not after it
+    ck = rec.get('catalog_checked') or {}
+    import datetime as _dt
+    try:
+        ca, pa = _dt.datetime.fromisoformat(ck['at']), _dt.datetime.fromisoformat(pool['pulled_at'])
+        if ca.date() != pa.date(): bad.append(f"[4a] catalog checked {ca:%b %d} but the pool was pulled {pa:%b %d}: run scripts/albumreview/catalog_refresh.py {s} the day of the pull")
+        elif ca > pa: bad.append('[4a] the pool was pulled before the catalog check: re-pull after scripts/albumreview/catalog_refresh.py')
+    except Exception:
+        bad.append(f'[4a] catalog not checked before the pull (record catalog_checked + pool.pulled_at): run scripts/albumreview/catalog_refresh.py {s}')
+    proof['catalog'] = ck
     # [5] by-sight
     lo = rec.get('leftout') or {}
     lst = (J(lo.get('file', ''), {}) or {}).get(lo.get('key')) if lo.get('file') else None

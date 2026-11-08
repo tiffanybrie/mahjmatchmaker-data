@@ -24,6 +24,10 @@ from tnt_check import missing_for_outdir as _tnt_missing
 _t = _tnt_missing(out)
 if _t: sys.exit(f'REFUSED (tnt_check): album set "{_t}" has no Tiles & Tablescapes search in config/tnt-recs.json. '
                 'Search the TNT group first; allowed recs lead the album ("TNT rec · mat · brand").')
+# Nov 8 1:37pm (Tiffany, Album Playbook step 0): no album card is built until she has approved the set's tile photo in chat.
+from tile_photo_check import missing_for_outdir as _tp_missing, problem as _tp_problem
+_tp = _tp_missing(out)
+if _tp: sys.exit(f'REFUSED (tile_photo_check): {_tp_problem(_tp)}. Record her yes in config/album-records/{_tp}.json tile_photo.approved_at.')
 def uri(im, fmt='JPEG', q=88, maxs=None):
     if isinstance(im, str): im = Image.open(im)
     if maxs: im = im.copy(); im.thumbnail((maxs, maxs))

@@ -39,6 +39,7 @@ NOPCT = {'Anders Ruff', 'Mahjong Register', 'The Mahjong Press'}
 import base64 as _b64
 FLAME = 'data:image/png;base64,' + _b64.b64encode(open(R + 'assets/brand/flame-heart-holiday.png', 'rb').read()).decode()
 def is_partner(c):
+    if 'partner' in c: return bool(c['partner'])  # Nov 8: catalog-refresh adds not in FYM yet carry their own partner flag
     m = SNAP.get(c.get('fym'), {})
     return bool(m.get('pa')) and not m.get('nc')
 def footer(c):  # Nov 8 HARD RULE: the tiles are a partner, so the code band is ALWAYS on; non-partner mats get no % promise
