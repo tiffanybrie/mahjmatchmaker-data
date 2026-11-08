@@ -21,6 +21,7 @@ python3 "$R/builder/fym_fix_nov06/deadlinks116.py" "$D"                         
 python3 "$R/builder/fym_fix_nov06/autoapply_links.py" "$D" --write | tail -2
 python3 "$R/builder/fym_fix_oct30/v104rank.py" "$D" | tail -2
 python3 "$R/builder/fym_fix_oct25/v92_coordinated.py" "$D" | tail -2
+python3 "$H/holiday118.py" "$D"                                         # gate [74]: Amazon picks below the first 6 on holiday sets
 python3 "$R/builder/fym_fix_nov06/colour116.py" "$D" | tail -2
 python3 - "$R" <<'PY'                                                 # colour116 rewrites 'changed' with only this run's changes: keep the earlier record (gate [163] reads it)
 import json, sys, subprocess; R = sys.argv[1]; p = R + '/config/fym-colour-fixes-v116.json'; C = json.load(open(p))
@@ -30,6 +31,7 @@ for sec in ('changed', 'skipped'):
 json.dump(C, open(p, 'w'), indent=1, ensure_ascii=False); print('colour116 record kept:', len(C['changed']), 'changed')
 PY
 python3 "$R/builder/fym_fix_nov06/sideb116.py" "$D" | tail -1
+python3 "$H/picks118.py" "$D" --report "$D/picks118.json"                # Tiffany's missed-mats round-1 yeses into m (+ locks)
 python3 "$R/builder/fym_apply_locks.py" "$D" | tail -2
 python3 "$H/tv118.py" "$D" --backs "$BK"
 python3 "$H/price118.py" "$D"

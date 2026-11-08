@@ -1692,7 +1692,7 @@ if '/*v114 table view*/' in UI:
                    ("rackDeck=(o=>function(){const d=o();const f=S.tvrf;", 'swapped rack forced on top of the rack deck'),
                    ("const f=S.tfront;if(f!=null&&S.tfmat===S.dmat&&D.sets[f]){", 'swapped tile set stays in the mat-door list once hearted'),
                    ("if(S.mode==='table'&&window.TVLAND&&TVLAND(id))return;", 'jump lands on the table'), ('so showing all. ', 'price fallback note'),
-                   ('without a listed price not shown.', 'unpriced count line')):
+                   ('without a listed price shown last.', 'unpriced count line')  # Nov 7 (1.18, gate [166]): no-price items are shown last, not hidden):
         if _a not in UI: F.append(f"[145] Table view / price: {_w} missing")
     if 'p.dataset.mode' in UI or 'id="tvpanel" data-mode' in UI: F.append("[145] the Table sheet sets data-mode (the app would switch View on a click inside it)")
     import subprocess as _sp145
