@@ -240,6 +240,20 @@
    "notes": "non-partner",
    "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
   },
+  "It's a Mahjong Life": {
+   "route": "none",
+   "store_hosts": [],
+   "commission_pct": 0,
+   "notes": "no program likely; brand in as non-partner (Tiffany Nov 8 4:52pm); set its store host when its mats land",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+  },
+  "Lemondrop Mahjong Co": {
+   "route": "none",
+   "store_hosts": [],
+   "commission_pct": 0,
+   "notes": "applied (UpPromote), waiting for approval (Nov 8): route none until approved, then code-site; Sapphire Blooms is a Lagoon add",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+  },
   "Let's Be Besties": {
    "route": "code-site",
    "store_hosts": [
@@ -567,6 +581,15 @@
    "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
    "rate_compare": "code",
    "shopmy_pct": 0
+  },
+  "Silk Mahjong": {
+   "route": "none",
+   "store_hosts": [
+    "silkmahjong.com"
+   ],
+   "commission_pct": 0,
+   "notes": "no affiliate program; whole line in as non-partner (Tiffany Nov 8 6:25pm, Lagoon add). ShopMy not checked yet",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
   },
   "Soirée All Day": {
    "route": "code-site",
