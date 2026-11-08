@@ -283,5 +283,18 @@
  ],
  "colors_line": "Lagoon teal backs with a gold-foil deco palm, on an ivory face. Deep jewel tones, rich, not earthy.",
  "layers_hand": "see the layers?<br>an ivory face on a Lagoon back, gold palm on top.",
- "faces_dir": "assets/tiles/faces/deco/clean/"
+ "faces_dir": "assets/tiles/faces/deco/clean/",
+ "best_features_her": {
+  "keys": [
+   "dragon-green",
+   "dragon-red",
+   "bam-1-crane",
+   "wind-east",
+   "flower-iris-gold",
+   "flower-iris-navy",
+   "joker-rose-lion"
+  ],
+  "round": 1,
+  "_note": "Tiffany's face picks from the review page; rebuild best_features from these"
+ }
 }

@@ -223,10 +223,30 @@
     "why": "A gold peacock feather: the gold palm on her back, on the face."
    },
    {
-    "key": "joker-teal-lion",
-    "why": "The deep green lion in mulberry and gold stripes. The boldest tile in the set."
+    "key": "flower-iris-gold",
+    "why": "Your pick."
+   },
+   {
+    "key": "flower-iris-navy",
+    "why": "Your pick."
+   },
+   {
+    "key": "joker-rose-lion",
+    "why": "Your pick."
    }
-  ]
+  ],
+  "her": {
+   "round": 1,
+   "keys": [
+    "dragon-green",
+    "dragon-red",
+    "bam-1-crane",
+    "wind-east",
+    "flower-iris-gold",
+    "flower-iris-navy",
+    "joker-rose-lion"
+   ]
+  }
  },
  "bysight": {
   "done": "2026-11-07",
@@ -256,7 +276,8 @@
     "note": "Bam Bird listing image 7 (Lagoon / Lucite variant), backs-only crop. No box, no bag."
    }
   ],
-  "default": 0
+  "default": 0,
+  "chosen": 0
  },
  "rank": {
   "note": "Standouts: Reba (your favourite Deco pairing), Viola, Deco Dragon (Mulberry), Wren, Ocean Florals, Eden: deep teal with berry or pink. The 5 Tiles & Tablescapes recs are labelled and placed by colour, not first."
@@ -265,7 +286,95 @@
   "considered": "2026-11-08",
   "note": "All 221 visible holiday mats looked at next to the Lagoon tiles: Poinsettia Party, Yuletide and Winter Jewel carry her teal plus a berry second colour."
  },
- "rounds": [],
+ "rounds": [
+  {
+   "round": 1,
+   "applied_at": "2026-11-08T18:51:33-05:00",
+   "changes": [
+    "1 cards hearted (kept)",
+    "Order updated (37 positions changed); new top 3: Deco Dragon (Mulberry), Reba, Viola",
+    "Faces: dragon-green, dragon-red, bam-1-crane, wind-east, flower-iris-gold, flower-iris-navy, joker-rose-lion (7)",
+    "New finds brought in: Dark Blue Art Deco, Gold Geometric Fans",
+    "Bring-in Dark Blue Art Deco, Gold Geometric Fans: route shopmy-etsy (Brought in: all set (paid link + catalog))",
+    "New finds skipped: Secret Canopy (peacocks, peonies, pagoda)",
+    "Your note: “https://lemondropmahjongco.com/products/sapphire-blooms-mahjong-mat\n\nhttps://go.shopmy.us/p-102728618\n\nThat's someone else's shopmy link, not mine so be sure not to use it.  I grabbed both of these from Tiles & Tablescapes.  Disappointed you didn't find them for me.  Also the brand silk mahjong has ”"
+   ],
+   "anything": "https://lemondropmahjongco.com/products/sapphire-blooms-mahjong-mat\n\nhttps://go.shopmy.us/p-102728618\n\nThat's someone else's shopmy link, not mine so be sure not to use it.  I grabbed both of these from Tiles & Tablescapes.  Disappointed you didn't find them for me.  Also the brand silk mahjong has other mats and you didn't flag it.  You need to research better, you didn't even make it thru the Deco tiles list on just Tiles & tablescapes let alone get thru more exciting matches that could be out there.  Research skills need to improve.",
+   "done": true,
+   "answers": {
+    "adds": [],
+    "anything": "https://lemondropmahjongco.com/products/sapphire-blooms-mahjong-mat\n\nhttps://go.shopmy.us/p-102728618\n\nThat's someone else's shopmy link, not mine so be sure not to use it.  I grabbed both of these from Tiles & Tablescapes.  Disappointed you didn't find them for me.  Also the brand silk mahjong has other mats and you didn't flag it.  You need to research better, you didn't even make it thru the Deco tiles list on just Tiles & tablescapes let alone get thru more exciting matches that could be out there.  Research skills need to improve.",
+    "cover": 0,
+    "done": true,
+    "faces": [
+     "dragon-green",
+     "dragon-red",
+     "bam-1-crane",
+     "wind-east",
+     "flower-iris-gold",
+     "flower-iris-navy",
+     "joker-rose-lion"
+    ],
+    "finds": {
+     "navy-fans": "in",
+     "secret-canopy": "skip"
+    },
+    "notes": {},
+    "order": {
+     "hol": [
+      "lets-be-besties-winter-jewel",
+      "oh-my-mahjong-yuletide",
+      "soir-e-all-day-poinsettia-party"
+     ],
+     "main": [
+      "bam-bird-boutique-deco-dragon-mulberry",
+      "britt-mills-reba",
+      "britt-mills-viola",
+      "splash-of-color-lady-lucks-teal-lounge",
+      "mahjong-register-pretty-in-plum-premium",
+      "bougie-mahjong-gilded-peacock",
+      "sunday-mahjong-spring-blooms-premium",
+      "bespoke-mahjong-yotd-black",
+      "bam-bird-boutique-deco-neoprene",
+      "dreamframer-art-dark-blue-art-deco-gold-fans",
+      "mahjong-register-peony-sociale-premium",
+      "britt-mills-wren",
+      "britt-mills-flora",
+      "betty-june-and-jeannette-f-te-peacock",
+      "britt-mills-eden",
+      "britt-mills-scarlett",
+      "mahj-mood-mahj-in-bloom-mat",
+      "mahj-and-vine-caroline-in-peacock",
+      "yolo-mahjong-crane-and-moon",
+      "bam-bird-boutique-deco-dragon-indigo",
+      "anders-ruff-gatsbys-feathered-affair",
+      "britt-mills-ruby",
+      "anders-ruff-midnight-peacock",
+      "lets-be-besties-ocean-florals",
+      "wren-mats-year-of-the-snake",
+      "my-fair-mahjong-garden-party-mulberry",
+      "bam-bird-boutique-east-meets-west-magenta",
+      "oh-my-mahjong-jade",
+      "oh-my-mahjong-hawthorne",
+      "mahj-tile-haus-white-lotus",
+      "sunday-mahjong-plum-panda-premium",
+      "bam-bird-boutique-deco-dragon-lagoon",
+      "my-fair-mahjong-brightside",
+      "lets-be-besties-gatsby-glow",
+      "oh-my-mahjong-soho"
+     ]
+    },
+    "ordering_off": false,
+    "putin": [],
+    "round": 1,
+    "set": "deco-lagoon",
+    "updated": "2026-11-08T23:19:57.663Z",
+    "v": {
+     "bespoke-mahjong-yotd-black": "keep"
+    }
+   }
+  }
+ ],
  "pool": {
   "size_fym": 1574,
   "size": 1686,
@@ -2759,6 +2868,14 @@
     "link": "https://letsbebesties.com/products/old-lady-funny-mahjong-mat-with-border",
     "product_url": "https://letsbebesties.com/products/old-lady-funny-mahjong-mat-with-border",
     "lowres": false
+   },
+   {
+    "name": "Dark Blue Art Deco, Gold Geometric Fans",
+    "brand": "Dreamframer Art (Etsy shop DreamframerArt)",
+    "img": "assets/albums/discovery/dreamframer-art-dark-blue-art-deco-gold-fans.jpg",
+    "source": "discovery: her Bring it in",
+    "link": "https://www.etsy.com/listing/4491199204",
+    "her_pick": true
    }
   ],
   "pulled_at": "2026-11-08T14:46:51-05:00",
@@ -3060,6 +3177,45 @@
    "round": 1,
    "at": "2026-11-08T18:39:34-05:00",
    "notes": "Tiffany brought it in on the Lagoon review page (Nov 8). Brand Dreamframer Art (Etsy, non-partner, ShopMy 7%). Pin 102728926 resolves to etsy.com/listing/4491199204."
+  },
+  {
+   "id": "sapphire-blooms",
+   "mat": "Sapphire Blooms",
+   "brand": "Lemondrop Mahjong Co",
+   "store": "lemondropmahjongco.com",
+   "store_url": "https://lemondropmahjongco.com/products/sapphire-blooms-mahjong-mat",
+   "route": "none",
+   "shopmy_link": "n/a: pending affiliate (UpPromote applied Nov 8); product link until approved, then swap to her affiliate link (config/link-routes.json Lemondrop pending_swap)",
+   "shopmy_collection": null,
+   "amazon_saved": null,
+   "ops_imported": null,
+   "catalog_staged": "config/fym-catalog-adds-nov08-lagoon.json (FYM 1.19 + gallery; photo gates apply)",
+   "round": 1,
+   "at": "2026-11-08T18:52:57-05:00",
+   "notes": "Tiffany 6:20pm review note (found in Tiles & Tablescapes). Placed #5 by colour. $80; product page shows available (coming-soon restock tag)."
+  },
+  {
+   "id": "crane-cloud",
+   "mat": "Crane Cloud",
+   "brand": "Silk Mahjong",
+   "store": "silkmahjong.com",
+   "store_url": "https://silkmahjong.com/products/mahjong-mat-2994012",
+   "route": "none",
+   "shopmy_link": "n/a: no affiliate program (Tiffany 6:25pm); route none. ShopMy merchant check for silkmahjong.com: see link-routes Silk Mahjong notes",
+   "shopmy_collection": null,
+   "amazon_saved": null,
+   "ops_imported": null,
+   "catalog_staged": "config/fym-catalog-adds-nov08-lagoon.json (whole Silk line, FYM 1.19 + gallery)",
+   "round": 1,
+   "at": "2026-11-08T18:52:57-05:00",
+   "notes": "Tiffany 6:24pm correction: the mat she meant (not Charleston Cocktail Club). Placed #11 by colour. $109, leatherette or neoprene."
+  }
+ ],
+ "not_added": [
+  {
+   "mat": "Cocktail Club Neoprene Mat",
+   "brand": "Charleston Mahjong Club",
+   "why": "Tiffany 6:24pm: go.shopmy.us/p-102728618 was the wrong link; she did not mean to bring it in"
   }
  ]
 }
