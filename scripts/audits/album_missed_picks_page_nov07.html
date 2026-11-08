@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Missed Mat Picks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf3ea; --card:#ffffff; --ink:#1f2433; --muted:#6b6670; --line:#eadfd3;
+  --navy:#054689; --deep:#062a55; --pink:#d6336c; --heart:#f56c8c; --blush:#fbe3ea;
+  --chip:#ffffff; --chip-on:#062a55; --chip-on-ink:#ffffff; --photo:#ffffff; --shadow:0 1px 2px rgba(40,30,20,.06),0 4px 14px rgba(40,30,20,.06);
+  --hol:#1f5a3a; --np:#8a6d3b;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16181f; --card:#20232c; --ink:#f1ece6; --muted:#a8a2a8; --line:#323642;
+    --navy:#8fb6ea; --deep:#cfe0f7; --pink:#ff7aa2; --heart:#ff7aa2; --blush:#3a2530;
+    --chip:#262a34; --chip-on:#cfe0f7; --chip-on-ink:#10131a; --photo:#ffffff; --shadow:none;
+    --hol:#7fc79c; --np:#d6b77a;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16181f; --card:#20232c; --ink:#f1ece6; --muted:#a8a2a8; --line:#323642;
+  --navy:#8fb6ea; --deep:#cfe0f7; --pink:#ff7aa2; --heart:#ff7aa2; --blush:#3a2530;
+  --chip:#262a34; --chip-on:#cfe0f7; --chip-on-ink:#10131a; --photo:#ffffff; --shadow:none;
+  --hol:#7fc79c; --np:#d6b77a;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{overflow-x:clip}
+body{font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
+button{font:inherit;color:inherit}
+.wrap{max-width:640px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 6px}
+h1{font-family:Caprasimo,Georgia,serif;font-weight:400;color:var(--deep);font-size:30px;line-height:1.1;margin:0 0 8px}
+.lede{color:var(--muted);margin:0;font-size:15px}
+.lede b{color:var(--ink)}
+.picker{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 0}
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px 16px;margin:0 -16px;scroll-snap-type:x proximity}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;scroll-snap-align:start;border:1px solid var(--line);background:var(--chip);border-radius:999px;padding:7px 12px;font-size:14px;cursor:pointer;white-space:nowrap;display:flex;gap:6px;align-items:center}
+.chip .c{font-variant-numeric:tabular-nums;color:var(--muted);font-size:12px}
+.chip .c.has{color:var(--pink);font-weight:700}
+.chip[aria-pressed="true"]{background:var(--chip-on);color:var(--chip-on-ink);border-color:var(--chip-on)}
+.chip[aria-pressed="true"] .c{color:inherit;opacity:.8}
+.albhead{display:flex;gap:14px;align-items:center;padding:18px 0 6px}
+.albhead img{width:64px;height:64px;object-fit:cover;border-radius:10px;background:#fff;flex:0 0 auto}
+.albhead h2{font-family:Caprasimo,Georgia,serif;font-weight:400;font-size:26px;line-height:1.1;margin:0;color:var(--deep)}
+.albhead .sub{color:var(--muted);font-size:14px;margin-top:3px}
+.albhead .sub b{color:var(--pink)}
+.sect{font-family:Caprasimo,Georgia,serif;font-weight:400;font-size:20px;margin:26px 0 4px;color:var(--hol)}
+.sectnote{color:var(--muted);font-size:14px;margin:0 0 6px}
+.card{background:var(--card);border-radius:16px;box-shadow:var(--shadow);margin:14px 0 18px;overflow:hidden;border:1px solid var(--line)}
+.card.on{border-color:var(--heart);box-shadow:0 0 0 2px var(--heart)}
+.photo{position:relative;display:block;width:100%;aspect-ratio:1/1;background:var(--photo);border:0;padding:0;cursor:zoom-in}
+.photo .mat{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.photo .tiles{position:absolute;right:10px;bottom:10px;width:36%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;border:3px solid #fff;box-shadow:0 2px 10px rgba(0,0,0,.25);background:#fff}
+.photo .num{position:absolute;left:10px;top:10px;background:rgba(255,255,255,.92);color:#062a55;font-size:12px;font-weight:700;border-radius:999px;padding:3px 9px}
+.body{display:flex;gap:12px;padding:14px 14px 16px;align-items:flex-start}
+.txt{flex:1;min-width:0}
+.name{font-size:19px;font-weight:700;line-height:1.25;margin:0;overflow-wrap:anywhere}
+.meta{font-size:14px;color:var(--muted);margin:3px 0 7px;display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center}
+.tag{font-size:12px;font-weight:600;border-radius:6px;padding:1px 7px;border:1px solid currentColor}
+.tag.p{color:var(--navy)} .tag.np{color:var(--np)} .tag.h{color:var(--hol)}
+.why{font-size:15px;margin:0}
+.shop{display:inline-block;margin-top:7px;font-size:13px;color:var(--navy)}
+.heart{flex:0 0 auto;width:64px;height:64px;border-radius:50%;border:2px solid var(--line);background:var(--card);display:grid;place-items:center;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .12s}
+.heart svg{width:34px;height:34px;fill:none;stroke:var(--heart);stroke-width:2}
+.heart[aria-pressed="true"]{background:var(--heart);border-color:var(--heart)}
+.heart[aria-pressed="true"] svg{fill:#fff;stroke:#fff}
+.heart:active{transform:scale(.9)}
+.next{display:block;width:100%;margin:10px 0 30px;padding:14px;border-radius:12px;border:1px solid var(--line);background:var(--card);font-weight:600;cursor:pointer}
+.bar{position:sticky;bottom:0;z-index:20;background:linear-gradient(to top,var(--bg) 70%,transparent);padding:12px 0 calc(12px + env(safe-area-inset-bottom))}
+.copy{display:block;width:100%;padding:15px;border:0;border-radius:14px;background:var(--deep);color:var(--bg);font-weight:700;font-size:17px;cursor:pointer}
+.copy small{font-weight:500;opacity:.8}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:#062a55;color:#fff;padding:9px 16px;border-radius:999px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:60}
+.toast.show{opacity:1}
+.zoom{position:fixed;inset:0;z-index:50;background:#0d0f15;display:none;flex-direction:column}
+.zoom.open{display:flex}
+.zoom .stage{position:relative;flex:1;overflow:auto;display:flex;align-items:center;justify-content:center;touch-action:pinch-zoom}
+.zoom .big{max-width:100%;max-height:100%;object-fit:contain;background:#fff}
+.zoom .zt{position:absolute;right:12px;bottom:12px;width:min(42vw,260px);aspect-ratio:1/1;object-fit:cover;border:3px solid #fff;border-radius:12px;background:#fff;cursor:pointer}
+.zoom .zbar{display:flex;align-items:center;gap:10px;padding:12px 16px calc(12px + env(safe-area-inset-bottom));color:#fff}
+.zoom .zbar .zn{flex:1;min-width:0;font-size:15px}
+.zoom .zbar .zn small{display:block;opacity:.7}
+.zoom .x{border:1px solid rgba(255,255,255,.4);background:transparent;color:#fff;border-radius:999px;padding:9px 16px;cursor:pointer}
+.zoom .hint{position:absolute;left:12px;top:12px;color:#fff;background:rgba(0,0,0,.45);font-size:12px;padding:4px 10px;border-radius:999px}
+.fb{position:fixed;inset:0;z-index:70;background:rgba(10,12,18,.6);display:none;align-items:center;justify-content:center;padding:16px}
+.fb.open{display:flex}
+.fb .box{background:var(--card);border-radius:14px;padding:16px;width:100%;max-width:560px}
+.fb textarea{width:100%;height:240px;font:14px/1.4 ui-monospace,Menlo,monospace;border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--bg);color:var(--ink)}
+.fb p{margin:0 0 8px;font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Mats your albums never saw</h1>
+    <p class="lede" id="lede"></p>
+  </header>
+</div>
+<nav class="picker" aria-label="Albums"><div class="wrap"><div class="chips" id="chips"></div></div></nav>
+<main class="wrap" id="main"></main>
+<div class="bar"><div class="wrap"><button class="copy" id="copy" type="button">Copy my picks</button></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="zoom" id="zoom" role="dialog" aria-modal="true" aria-label="Zoomed mat">
+  <div class="stage" id="zstage"><img class="big" id="zbig" alt=""><img class="zt" id="zt" alt="Album tiles (tap to swap)"><span class="hint" id="zhint">Tap the tiles to swap</span></div>
+  <div class="zbar"><div class="zn" id="zn"></div><button class="x" id="zx" type="button">Close</button></div>
+</div>
+<div class="fb" id="fb" role="dialog" aria-modal="true" aria-label="Copy your picks">
+  <div class="box"><p>Copy didn't go through on its own. The text is selected: long-press and copy.</p><textarea id="fbt" readonly></textarea><button class="next" id="fbx" type="button" style="margin:10px 0 0">Done</button></div>
+</div>
+<script>
+const DATA=/*__DATA__*/null;
+const KEY='mm-missed-picks-nov07', AKEY='mm-missed-picks-nov07-album';
+let picks={};
+try{picks=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){picks={}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(picks))}catch(e){}}
+const A=DATA.albums, byId={}; A.forEach(a=>byId[a.id]=a);
+let cur=A[0].id; try{const s=localStorage.getItem(AKEY); if(s&&byId[s]) cur=s}catch(e){}
+const pk=(a,i)=>a.id+'|'+i.k;
+const nPicked=a=>a.items.filter(i=>picks[pk(a,i)]).length;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const HEART='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.4 2.9 4.5 6.6 4.5c2.2 0 3.6 1.2 4.4 2.5.8-1.3 2.2-2.5 4.4-2.5 3.7 0 5.7 3.9 4.2 7.2C19.5 16.4 12 21 12 21z"/></svg>';
+const total=A.reduce((n,a)=>n+a.items.length,0), hol=A.reduce((n,a)=>n+a.items.filter(i=>i.h).length,0);
+document.getElementById('lede').innerHTML=`<b>${total} mats</b> (${total-hol} year-round, ${hol} holiday) arrived after ${A.length} live albums were built, so the albums never got to consider them. Tap the heart on the ones you want added. Anything you don't heart stays out. Tap a photo to zoom.`;
+
+function chips(){
+  document.getElementById('chips').innerHTML=A.map(a=>{const n=nPicked(a);return `<button class="chip" type="button" data-id="${a.id}" aria-pressed="${a.id===cur}">${esc(a.name)} <span class="c${n?' has':''}">${n?n+'/':''}${a.items.length}</span></button>`}).join('');
+}
+function cardHTML(a,i,idx){
+  const on=!!picks[pk(a,i)];
+  return `<article class="card${on?' on':''}" data-k="${esc(i.k)}">
+  <button class="photo" type="button" data-zoom="${esc(i.k)}" aria-label="Zoom ${esc(i.n)}">
+    ${i.img?`<img class="mat" src="${i.img}" alt="${esc(i.n)} mat" loading="${idx<2?'eager':'lazy'}" decoding="async">`:''}
+    <img class="tiles" src="${a.tile}" alt="${esc(a.name)} tiles" loading="lazy" decoding="async">
+    <span class="num">${idx+1}</span>
+  </button>
+  <div class="body"><div class="txt">
+    <p class="name">${esc(i.n)}</p>
+    <div class="meta"><span>${esc(i.b)}</span>${i.p?'<span class="tag p">Partner · code</span>':'<span class="tag np">Non-partner · link only</span>'}${i.h?'<span class="tag h">Holiday</span>':''}</div>
+    <p class="why">${esc(i.w)}</p>
+    ${i.url?`<a class="shop" href="${esc(i.url)}" target="_blank" rel="noopener">See it at ${esc(i.b)} ↗</a>`:''}
+  </div>
+  <button class="heart" type="button" data-heart="${esc(i.k)}" aria-pressed="${on}" aria-label="Yes to ${esc(i.n)}">${HEART}</button></div>
+</article>`;
+}
+function render(){
+  const a=byId[cur], yr=a.items.filter(i=>!i.h), hd=a.items.filter(i=>i.h), n=nPicked(a);
+  let h=`<section class="albhead"><img src="${a.tile}" alt=""><div><h2>${esc(a.name)}</h2><div class="sub" id="asub">${a.items.length} mats to look at · <b>${n} hearted</b> · ${a.cards} cards live now</div></div></section>`;
+  let k=0;
+  h+=yr.map(i=>cardHTML(a,i,k++)).join('');
+  if(hd.length){h+=`<h3 class="sect">Holiday</h3><p class="sectnote">For this album's holiday section only.</p>`+hd.map(i=>cardHTML(a,i,k++)).join('')}
+  const ix=A.findIndex(x=>x.id===cur), nx=A[ix+1];
+  if(nx) h+=`<button class="next" type="button" data-go="${nx.id}">Next album: ${esc(nx.name)} →</button>`;
+  else h+=`<p class="sectnote" style="padding:16px 0 30px">That's every album. Tap “Copy my picks” and paste it to Claude.</p>`;
+  document.getElementById('main').innerHTML=h;
+}
+function updCounts(){
+  const a=byId[cur], n=nPicked(a), s=document.getElementById('asub');
+  if(s) s.innerHTML=`${a.items.length} mats to look at · <b>${n} hearted</b> · ${a.cards} cards live now`;
+  const c=document.querySelector(`.chip[data-id="${cur}"] .c`); if(c){c.textContent=(n?n+'/':'')+a.items.length;c.classList.toggle('has',n>0)}
+  const t=Object.keys(picks).length; document.getElementById('copy').innerHTML=t?`Copy my picks <small>(${t})</small>`:'Copy my picks';
+}
+function go(id,scroll){
+  cur=id; try{localStorage.setItem(AKEY,id)}catch(e){}
+  chips(); render(); updCounts();
+  const c=document.querySelector(`.chip[data-id="${id}"]`); if(c) c.scrollIntoView({inline:'center',block:'nearest'});
+  if(scroll) window.scrollTo({top:document.querySelector('.picker').offsetTop,behavior:'instant'});
+}
+document.getElementById('chips').addEventListener('click',e=>{const b=e.target.closest('.chip'); if(b) go(b.dataset.id,true)});
+document.getElementById('main').addEventListener('click',e=>{
+  const hb=e.target.closest('[data-heart]');
+  if(hb){const a=byId[cur], i=a.items.find(x=>x.k===hb.dataset.heart), key=pk(a,i);
+    if(picks[key]) delete picks[key]; else picks[key]=1; save();
+    const on=!!picks[key]; hb.setAttribute('aria-pressed',on); hb.closest('.card').classList.toggle('on',on); updCounts(); return}
+  const z=e.target.closest('[data-zoom]'); if(z){openZoom(z.dataset.zoom);return}
+  const g=e.target.closest('[data-go]'); if(g) go(g.dataset.go,true);
+});
+// zoom
+const Z=document.getElementById('zoom'), zb=document.getElementById('zbig'), zt=document.getElementById('zt');
+let swapped=false, zi=null;
+function paintZoom(){const a=byId[cur]; zb.src=swapped?a.tile:zi.img; zt.src=swapped?zi.img:a.tile; zt.style.objectFit=swapped?'contain':'cover'}
+function openZoom(k){const a=byId[cur]; zi=a.items.find(x=>x.k===k); swapped=false; paintZoom();
+  document.getElementById('zn').innerHTML=`${esc(zi.n)}<small>${esc(zi.b)} · with ${esc(a.name)}</small>`;
+  Z.classList.add('open'); document.body.style.overflow='hidden'}
+function closeZoom(){Z.classList.remove('open'); document.body.style.overflow=''}
+zt.addEventListener('click',e=>{e.stopPropagation(); swapped=!swapped; paintZoom()});
+document.getElementById('zx').addEventListener('click',closeZoom);
+document.getElementById('zstage').addEventListener('click',e=>{if(e.target.id==='zstage') closeZoom()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeZoom();document.getElementById('fb').classList.remove('open')}});
+// copy
+function picksText(){
+  const lines=[];
+  A.forEach(a=>{const yr=a.items.filter(i=>!i.h&&picks[pk(a,i)]), hd=a.items.filter(i=>i.h&&picks[pk(a,i)]);
+    const f=l=>l.map(i=>`${i.n} (${i.b})`).join(', ');
+    if(yr.length) lines.push(`${a.name}: ${f(yr)}`);
+    if(hd.length) lines.push(`${a.name} (holiday): ${f(hd)}`);});
+  return lines.length?'My yeses from the missed-mats page (Nov 7):\n'+lines.join('\n'):'';
+}
+function toast(m){const t=document.getElementById('toast'); t.textContent=m; t.classList.add('show'); clearTimeout(toast._t); toast._t=setTimeout(()=>t.classList.remove('show'),2200)}
+function fallback(txt){const fb=document.getElementById('fb'), ta=document.getElementById('fbt'); ta.value=txt; fb.classList.add('open'); ta.focus(); ta.select(); try{ta.setSelectionRange(0,txt.length)}catch(e){}}
+document.getElementById('copy').addEventListener('click',async()=>{
+  const txt=picksText(); if(!txt){toast('No hearts yet');return}
+  try{await navigator.clipboard.writeText(txt); toast('Copied. Paste it to Claude.')}
+  catch(e){ let ok=false; try{const ta=document.createElement('textarea'); ta.value=txt; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select(); ok=document.execCommand('copy'); ta.remove()}catch(e2){}
+    if(ok) toast('Copied. Paste it to Claude.'); else fallback(txt)}
+});
+document.getElementById('fbx').addEventListener('click',()=>document.getElementById('fb').classList.remove('open'));
+go(cur,false);
+</script>
+</body>
+</html>
