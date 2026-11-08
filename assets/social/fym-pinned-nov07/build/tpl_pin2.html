@@ -1,0 +1,46 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Cap;src:url(file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/Caprasimo.ttf)}
+@font-face{font-family:Bit;src:url(file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/bitter-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:PF;src:url(file:///home/claude/mahjmatchmaker-data/scripts/social/tileprofile/fonts/playfair-display-latin-400-italic.woff2);font-style:italic}
+*{margin:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#faf3ea;overflow:hidden;position:relative;font-family:Bit}
+.sc{position:absolute;inset:0;display:none}
+.c{position:absolute;left:0;right:0;text-align:center}
+.cap{font-family:Cap;color:#062a55}
+.pill{display:inline-block;background:#062a55;color:#fff;font:700 40px Bit;letter-spacing:6px;padding:18px 40px;border-radius:60px}
+.it{font:italic 54px PF;color:#c8325f}
+#cov{position:absolute;left:150px;top:470px;width:780px;border-radius:24px;box-shadow:0 20px 50px rgba(6,42,85,.25)}
+#grid img{position:absolute;width:176px;border-radius:10px;box-shadow:0 6px 14px rgba(6,42,85,.22)}
+#big{position:absolute;left:70px;right:70px;top:620px;background:rgba(250,243,234,.94);border-radius:48px;padding:50px 20px;text-align:center;box-shadow:0 20px 60px rgba(6,42,85,.25)}
+.h{position:absolute;color:#f56c8c}
+</style></head><body>
+<div id="s1" class="sc"><img src="file:///home/claude/mahjmatchmaker-data/assets/brand/flame-heart.png" style="width:170px;left:455px;top:500px;position:absolute"><div class="c cap" style="top:740px;font-size:110px;line-height:1.05">We've been<br>busy matching.</div></div>
+<div id="s2" class="sc"><div class="c" style="top:300px"><span class="pill" id="cnt" style="font-size:46px">1 TILE SET ALBUM</span></div><img id="cov"></div>
+<div id="s2b" class="sc"><div id="grid"></div><div id="big" style="display:none"><div class="cap" style="font-size:200px;line-height:1">44</div><div class="cap" style="font-size:84px;line-height:1.05">tile set albums</div><div class="it" style="font-size:66px;margin-top:10px">and counting…</div><div style="margin-top:34px;font:700 40px Bit;color:#062a55;letter-spacing:1px">All free at mahjmatchmaker.com</div></div></div>
+<div id="s3" class="sc"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding-bottom:140px"><div class="cap" style="font-size:150px;line-height:1.1;text-align:center" id="t3"></div></div></div>
+<div id="s4" class="sc" style="background:#062a55"><div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:140px;text-align:center"><div class="cap" style="font-size:150px;line-height:1;color:#fff">Now it&rsquo;s</div><div class="cap" style="font-size:230px;line-height:1;color:#f56c8c;margin-top:10px">your turn.</div></div></div>
+<div id="s6" class="sc" style="background:#fff"><div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;padding-top:250px;text-align:center"><div id="ft" class="cap" style="font-size:108px;line-height:1;margin-top:60px;white-space:nowrap">Find <span style="font:italic 400 112px/1 PF">Your</span> Mat-ch<sup style="font-size:40px;vertical-align:top;position:relative;top:10px">™</sup></div><div id="fs" class="it" style="font-size:46px;line-height:1.3;margin-top:34px">Start with your tiles or your mat<br>and find the perfect match<br>across brands.</div><img id="ph" src="file:///home/claude/mahjmatchmaker-data/assets/links/v2/fym-phones-trio-malachite-white.png" style="width:1040px;margin-top:10px;transform-origin:50% 35%"></div></div>
+</div>
+<script>
+const COV=__COV__;
+// v2 (Nov 8): count-up 2.0-7.6 (44 real album covers, Classic Tortoise last, held to 8.1); grid 8.1-11.7 (panel 9.9); Tiles/Mats/Racks 11.7-13.9; your turn 13.9-15.8; FYM phones 15.8-19.6 (phones ease in)
+const S=[['s1',0,2.0],['s2',2.0,8.1],['s2b',8.1,11.7],['s3',11.7,13.9],['s4',13.9,15.8],['s6',15.8,19.6]];
+const cl=x=>Math.min(Math.max(x,0),1), e=x=>1-Math.pow(1-cl(x),3), eio=x=>{x=cl(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+const G=document.getElementById('grid'); const CELLS=[];
+(function(){const cols=6,w=176,h=220,gx=4,gy=6; let k=0; for(let r=0;r<9;r++)for(let c=0;c<cols;c++){const im=document.createElement('img');im.src=COV[k%COV.length];im.style.left=(c*(w+gx)+2)+'px';im.style.top=(r*(h+gy)-60+ (c%2?40:0))+'px';im.style.display='none';G.appendChild(im);CELLS.push(im);k++;}
+ let s=11; const rnd=()=>{s=(s*16807)%2147483647;return s/2147483647}; CELLS.forEach(c=>c.dataset.d=rnd());})();
+window.render=function(t){
+ for(const [id,a,b] of S){const el=document.getElementById(id);const on=t>=a&&t<b;el.style.display=on?'block':'none';if(on&&id!=='s6'){const k=e((t-a)/0.35);el.style.opacity=k;el.style.transform='scale('+(0.96+0.04*k)+')';}}
+ if(t>=2.0&&t<8.1){let i=Math.floor((t-2.0)/(5.45/(COV.length-1))); i=Math.min(i,COV.length-1);
+   const c=document.getElementById('cov');if(c.dataset.i!=i){c.src=COV[i];c.dataset.i=i;}
+   document.getElementById('cnt').textContent=(i+1)+(i?' TILE SET ALBUMS':' TILE SET ALBUM');}
+ if(t>=8.1&&t<11.7){const p=(t-8.1)/1.5; CELLS.forEach(c=>{const d=+c.dataset.d; const q=e((p-d*0.85)/0.15); c.style.display=q>0?'block':'none'; c.style.transform='scale('+(0.6+0.4*q)+') rotate('+((d-0.5)*8)+'deg)'; c.style.opacity=q;});
+   const big=document.getElementById('big'); const q=e((t-9.9)/0.35); big.style.display=t>9.9?'block':'none'; big.style.opacity=q; big.style.transform='scale('+(0.9+0.1*q)+')';}
+ const t3=document.getElementById('t3'); if(t>=11.7&&t<13.9){t3.innerHTML=t<12.4?'Tiles.':t<13.1?'Tiles.<br>Mats.':'Tiles.<br>Mats.<br>Racks.';}
+ if(t>=15.8&&t<19.6){const L=t-15.8; const ph=document.getElementById('ph');
+   // phones start a little further out (0.8, not tiny) and glide in to full size, then keep a slow push
+   const z=0.8+0.2*eio(L/1.9)+0.035*cl((L-1.9)/1.9); ph.style.transform=`translateY(${(1-eio(L/1.9))*70}px) scale(${z})`; ph.style.opacity=cl(L/0.25);
+   const ft=document.getElementById('ft'); ft.style.opacity=cl((L-0.15)/0.3); ft.style.transform=`scale(${0.9+0.1*e((L-0.15)/0.45)})`;
+   const fs=document.getElementById('fs'); fs.style.opacity=cl((L-0.55)/0.35); fs.style.transform=`translateY(${(1-e((L-0.55)/0.45))*24}px)`;}
+};
+</script></body></html>
