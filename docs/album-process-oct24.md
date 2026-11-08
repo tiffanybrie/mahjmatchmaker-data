@@ -1,5 +1,8 @@
 # 86b Album Process update (Oct 24) - read with doc 86
 
+## Nov 7 update (Tiffany 8:13pm): the tile set is FULLY built in Find Your Mat-ch BEFORE the album goes to her
+Step zero of every album, before the colour card and the swipe book reach her: the set is in FYM with its album tile photo, its colours and its Table view walls (confirmed back colour; builder/table_view/back_colors_nov07.py, config/tableview-back-boxes-nov07.json). She uses the Table view to judge mats, so a set with "Walls off: back color not confirmed yet" is not ready. Her matches come after the album. Enforced by builder/fym_gate.py [165] (album sets mapped in config/album-fym-sets.json). Checklist: docs/NEW-ALBUM-CHECKLIST.md section 0.
+
 ## Oct 24 update (Tiffany, voice note): the color card comes BEFORE the swipe, every time
 Missed on Papaya and again on Brownstone and Gatsby: the color card was made after her picks. From now on **no swipe book goes to her without the color card at its top** (tile photos + the colors), so she understands the set before she matches it.
 

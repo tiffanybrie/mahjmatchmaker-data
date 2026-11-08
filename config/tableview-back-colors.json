@@ -1,5 +1,5 @@
 {
- "_about": "Table view wall colors. Walls may ONLY use these (never the match-card title color). Built by builder/table_view/back_colors_nov01.py; checked by scripts/tableview_back_check.py. Sets not listed = back color not confirmed -> walls grayed.",
+ "_about": "Table view wall colors. Walls may ONLY use these (never the match-card title color). Built by builder/table_view/back_colors_nov01.py; checked by scripts/tableview_back_check.py. Sets not listed = back color not confirmed -> walls grayed. Nov 7: + sets from builder/table_view/back_colors_nov07.py (config/tableview-back-boxes-nov07.json; its _needs_eye sets stay without walls until Tiffany confirms).",
  "solara": {
   "back": "#e6887b",
   "type": "solid",
@@ -159,5 +159,1056 @@
   "back": "#033c2a",
   "type": "solid",
   "src": "back photo measured (box inside one back, FYM tile photo); Tiffany Nov 1 5:12pm: dark green back. The old \"ivory\" came from a COLOR-GROUP note in config/tile-back-colors-proposed.json, not a back color."
+ },
+ "juniper": {
+  "back": "#183927",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/tiles/album/juniper.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/juniper.webp"
+ },
+ "sunday-mahjong-plum-panda": {
+  "back": "#502a3d",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/tiles/album/plum-panda.png; checked by eye as back | wall swatch)"
+ },
+ "sunday-mahjong-sunday-blues": {
+  "back": "#132e45",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/tiles/album/sunday-blues.png; checked by eye as back | wall swatch)"
+ },
+ "virora-mahjong-petal-e": {
+  "back": "#fbb1d6",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "my-fair-mahjong-style-of-your-life-series-pearl-green": {
+  "back": "#027b42",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/my-fair-mahjong-style-of-your-life-series-pearl-green.webp"
+ },
+ "rackin-rudolph": {
+  "back": "#af0005",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/blog/holiday-tablescape-rudolph/rackin-rudolph-tile-back.png; checked by eye as back | wall swatch)"
+ },
+ "spirit-of-christmas": {
+  "back": "#d8d6d7",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/tiles/holiday/plm-spirit-of-christmas-faces-back.jpg; checked by eye as back | wall swatch)",
+  "sprite": "assets/table-view/backs/spirit-of-christmas-sprite.webp"
+ },
+ "heritage-2-0": {
+  "back": "#e7b391",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/heritage-2-0.webp"
+ },
+ "luminaire": {
+  "back": "#d8e0f7",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "pearlescent": {
+  "back": "#bc9c8d",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "smith": {
+  "back": "#b05d42",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/smith.webp"
+ },
+ "lola": {
+  "back": "#0771da",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "nivalee-blue": {
+  "back": "#acdfd8",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/nivalee-blue.webp"
+ },
+ "tinselle-emerald": {
+  "back": "#0c522d",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/tinselle-emerald.webp"
+ },
+ "tinselle-ruby": {
+  "back": "#7a0102",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/tinselle-ruby.webp"
+ },
+ "cmc-apres-ski": {
+  "back": "#a5dbd9",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bird-bamboo-the-iconic": {
+  "back": "#2e5276",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bird-bamboo-the-madeira": {
+  "back": "#22c289",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bird-bamboo-the-allure": {
+  "back": "#b0cfbd",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahj-mood-90s-taffy-pink": {
+  "back": "#c90654",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/mahj-mood-90s-taffy-pink.webp"
+ },
+ "mahj-mood-mauve-blush": {
+  "back": "#a6849c",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahj-mood-imperfect-serenity-mood": {
+  "back": "#01c7b6",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-christmas-kiss": {
+  "back": "#ae232a",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-lemon-tide": {
+  "back": "#4f94d0",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-teal-lunaflor": {
+  "back": "#5ecfb4",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-american": {
+  "back": "#6d8914",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-lilac-bloom": {
+  "back": "#cb97bb",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-butter-bloom": {
+  "back": "#fadc6e",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-glitter-sparkle-pink": {
+  "back": "#ad314b",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/mahjong-studios-glitter-sparkle-pink.webp"
+ },
+ "mahjong-studios-bubble-pop-2-color-blue": {
+  "back": "#3e72a1",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-blue-editon-2-color-blue": {
+  "back": "#62767d",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-blush-bamboo": {
+  "back": "#cc8692",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahj-squad-palm-springs": {
+  "back": "#de60c1",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "miss-mahjong-miss-out-of-office": {
+  "back": "#fadcb2",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/miss-mahjong-miss-out-of-office.webp"
+ },
+ "miss-mahjong-miss-catrina": {
+  "back": "#4d414a",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/miss-mahjong-miss-catrina.webp"
+ },
+ "miss-mahjong-miss-darling-cameo-blue": {
+  "back": "#b1c8e5",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/miss-mahjong-miss-darling-cameo-blue.webp"
+ },
+ "anders-ruff-mahj-in-bloom": {
+  "back": "#91c7c5",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "anders-ruff-house-of-hydrangea": {
+  "back": "#b7c5d2",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "anders-ruff-bams-bubbly": {
+  "back": "#f09601",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "royal-mahjong-society-heirloom-collection-crown-jewels": {
+  "back": "#fe5b7e",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "royal-mahjong-society-heirloom-collection-newport": {
+  "back": "#2954c0",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "tigre-de-tartan-classic-in-beechwood": {
+  "back": "#b6886e",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bam-bird-boutique-east-meets-west-tortoise-shell": {
+  "back": "#612f25",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/bam-bird-boutique-east-meets-west-tortoise-shell.webp"
+ },
+ "bam-let-s-mahjong-the-nantucket-coastal-blue": {
+  "back": "#0157a4",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bam-let-s-mahjong-the-nantucket-seaside-blue": {
+  "back": "#0c8cc9",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bam-let-s-mahjong-mint-and-roses": {
+  "back": "#0188c0",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bam-let-s-mahjong-the-palm-royale-tangerine-twist": {
+  "back": "#f5b039",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bam-let-s-mahjong-grandmillennial-pink": {
+  "back": "#d33c73",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bam-let-s-mahjong-grandmillennial-green": {
+  "back": "#33951c",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bam-let-s-mahjong-grandmillennial-blue": {
+  "back": "#1551b3",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "charleston-mahjong-club-the-country-club-edition": {
+  "back": "#196333",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/charleston-mahjong-club-the-country-club-edition.webp"
+ },
+ "hip-hip-mahjong-so-bam-grateful": {
+  "back": "#c70122",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "hip-hip-mahjong-mahj-o-ween": {
+  "back": "#0a080d",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "hip-hip-mahjong-the-house": {
+  "back": "#824c0f",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/hip-hip-mahjong-the-house.webp"
+ },
+ "hip-hip-mahjong-let-freedom-ring": {
+  "back": "#520607",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/hip-hip-mahjong-let-freedom-ring.webp"
+ },
+ "hip-hip-mahjong-celebration": {
+  "back": "#23262c",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "let-s-mahj-on-let-s-wander": {
+  "back": "#015b76",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "let-s-mahj-on-let-s-be-iconic-jeweled-purple": {
+  "back": "#9796d8",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "let-s-mahj-on-let-s-garden-party": {
+  "back": "#015e75",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "let-s-mahj-on-let-s-game-set-mahj": {
+  "back": "#017e60",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "let-s-mahj-on-let-s-be-iconic-brilliant-pink": {
+  "back": "#b91255",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "let-s-mahj-on-let-s-get-tropical": {
+  "back": "#015b90",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "let-s-mahj-on-let-s-be-iconic-jeweled-green": {
+  "back": "#01a2b2",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "let-s-mahj-on-let-s-get-nautical": {
+  "back": "#015f9b",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "let-s-mahj-on-let-s-cocktail-party": {
+  "back": "#9f4686",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mac-miller-mahjong-red-white-blues-collection": {
+  "back": "#436f85",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/mac-miller-mahjong-red-white-blues-collection.webp"
+ },
+ "mac-miller-mahjong-heirloom-collection-fire-fortune-ember-fire": {
+  "back": "#aa341f",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/mac-miller-mahjong-heirloom-collection-fire-fortune-ember-fire.webp"
+ },
+ "mac-miller-mahjong-heirloom-collection-fire-fortune-verdant-fortune": {
+  "back": "#1c6241",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/mac-miller-mahjong-heirloom-collection-fire-fortune-verdant-fortune.webp"
+ },
+ "mac-miller-mahjong-laissez-les-bons-temps-rouler-collection": {
+  "back": "#6f5535",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/mac-miller-mahjong-laissez-les-bons-temps-rouler-collection.webp"
+ },
+ "mac-miller-mahjong-sweet-dreams-collection": {
+  "back": "#aac7b7",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "virora-mahjong-christmas-collection-ii-nivalee-emerald-green": {
+  "back": "#046c39",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/virora-mahjong-christmas-collection-ii-nivalee-emerald-green.webp"
+ },
+ "virora-mahjong-sylvaria": {
+  "back": "#b1c234",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "virora-mahjong-aveline": {
+  "back": "#01868d",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "virora-mahjong-lilac-e": {
+  "back": "#fede76",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "virora-mahjong-marivelle": {
+  "back": "#fd38a2",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "virora-mahjong-rosanelle": {
+  "back": "#fec3de",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "virora-mahjong-florielle": {
+  "back": "#df3398",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "wren-mats-simply": {
+  "back": "#a8c1cd",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-outlaws-of-the-marsh-mahjong-treasure-set": {
+  "back": "#c5925d",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/yellow-mountain-imports-outlaws-of-the-marsh-mahjong-treasure-set.webp"
+ },
+ "mahjong-studios-amber-jade": {
+  "back": "#3b3028",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/mahjong-studios-amber-jade.webp"
+ },
+ "yellow-mountain-imports-canyon-clay": {
+  "back": "#d0a38c",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/yellow-mountain-imports-canyon-clay.webp"
+ },
+ "tala-mahj-tradewind-tortoise": {
+  "back": "#502418",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/tala-mahj-tradewind-tortoise.webp"
+ },
+ "my-fair-mahjong-legacy-wave-series-lavender-haze": {
+  "back": "#c77ca9",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "charleston-mahjong-club-hunt-club-edition": {
+  "back": "#a4453b",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/charleston-mahjong-club-hunt-club-edition.webp"
+ },
+ "charleston-mahjong-club-cocktail-club-2-0-edition": {
+  "back": "#4c0080",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "charleston-mahjong-club-yacht-club-edition": {
+  "back": "#24427e",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "royal-mahjong-society-studio-series-crown-jewels": {
+  "back": "#fc5879",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "royal-mahjong-society-studio-series-newport": {
+  "back": "#13359d",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "royal-mahjong-society-studio-series-island": {
+  "back": "#01dae3",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahj-mood-the-eloise-collection": {
+  "back": "#2a1b22",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/mahj-mood-the-eloise-collection.webp"
+ },
+ "mahj-mood-the-bow-and-bloom-collection": {
+  "back": "#95b6a5",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "my-fair-mahjong-the-jubilee-series-midnight-blue": {
+  "back": "#025295",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/my-fair-mahjong-the-jubilee-series-midnight-blue.webp"
+ },
+ "bespoke-mahjong-its-a-vibe-glitter-glow-green": {
+  "back": "#a9dea6",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-ivory-stripes": {
+  "back": "#e7cfa5",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "gemma": {
+  "back": "#5c4571",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "jasmine": {
+  "back": "#009265",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "osler": {
+  "back": "#a9cffe",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "sierra": {
+  "back": "#ca5220",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "dandy": {
+  "back": "#e6367d",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "glitterville": {
+  "back": "#be0042",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "taylor": {
+  "back": "#dcceea",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "holly-jolly-pink": {
+  "back": "#fcc2d5",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "amahj-teal-coastal-signature": {
+  "back": "#65d1c1",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "amahj-pink-coastal-signature": {
+  "back": "#dec4c3",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "amahj-light-blue-signature": {
+  "back": "#b2c3e1",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "amahj-lilac-signature": {
+  "back": "#e8d5ec",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "amahj-navy-signature": {
+  "back": "#172960",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bird-bamboo-the-empress": {
+  "back": "#373741",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahj-mood-90s-pool-party-blue": {
+  "back": "#0089ab",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahj-mood-ballerina-pink": {
+  "back": "#b981c8",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-lavender-sparkle": {
+  "back": "#ab9bde",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-royal-sparkle": {
+  "back": "#011857",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-ruby-sparkle": {
+  "back": "#ab1828",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-tile-sets": {
+  "back": "#e08dac",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-forest-silk": {
+  "back": "#375c28",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-sage-luxe": {
+  "back": "#8bbd7f",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-ocean-bloom": {
+  "back": "#6ea6c7",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-neon-shadow": {
+  "back": "#353732",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-peony-garden": {
+  "back": "#fea4b0",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-blue-element": {
+  "back": "#3b7fd5",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-2-color-blue-studio": {
+  "back": "#006fc1",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-bamboo-sky": {
+  "back": "#7ca7ae",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahj-squad-blue-chinoiserie": {
+  "back": "#a6bae2",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "miss-mahjong-miss-cowgirl": {
+  "back": "#0077d3",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "my-fair-mahjong-crystal-confetti": {
+  "back": "#b7d7f5",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "my-fair-mahjong-the-play-series": {
+  "back": "#34c9ce",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "my-fair-mahjong-the-california-series": {
+  "back": "#fe9d91",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "royal-mahjong-society-heirloom-collection-shore": {
+  "back": "#dabc97",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "royal-mahjong-society-heirloom-collection-mahj-royale": {
+  "back": "#43ca87",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "royal-mahjong-society-heirloom-collection-cottage": {
+  "back": "#feaa97",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "royal-mahjong-society-heirloom-collection-girly": {
+  "back": "#efccc3",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "royal-mahjong-society-heirloom-collection-island": {
+  "back": "#00b2b0",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bam-let-s-mahjong-the-palm-royale-strawberry-sangria": {
+  "back": "#edbbc5",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bam-let-s-mahjong-garden-party-petal-pink": {
+  "back": "#f8bbc8",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bam-let-s-mahjong-garden-party-sea-glass-green": {
+  "back": "#b7e7c0",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "hip-hip-mahjong-hoppy-east-hare": {
+  "back": "#e27f36",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "hip-hip-mahjong-birthday": {
+  "back": "#f4ce01",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "virora-mahjong-viozelle": {
+  "back": "#c8aef0",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "virora-mahjong-am-thisse": {
+  "back": "#c6b4e8",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "hip-hip-mahjong-i-mahj": {
+  "back": "#fed2d8",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bespoke-mahjong-pop-diva-cotton-candy-pearl": {
+  "back": "#e8c1e1",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "tala-mahj-tradewind-sage-jade": {
+  "back": "#4c9688",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "tala-mahj-tradewind-emerald-jade": {
+  "back": "#093834",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "tala-mahj-tradewind-aqua": {
+  "back": "#9dd5d0",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "tala-mahj-tradewind-petal": {
+  "back": "#ecc9d6",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "royal-mahjong-society-studio-series-cottage": {
+  "back": "#ff8f9d",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "royal-mahjong-society-studio-series-girly": {
+  "back": "#fec6c7",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "mahjong-studios-lunaflor-mint": {
+  "back": "#69d2b7",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bam-bird-boutique-mcm": {
+  "back": "#1a1f37",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "sprite": "assets/table-view/backs/bam-bird-boutique-mcm-sprite.webp"
+ },
+ "bam-bird-boutique-mcm-olive-pink": {
+  "back": "#76772d",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "sprite": "assets/table-view/backs/bam-bird-boutique-mcm-olive-pink-sprite.webp"
+ },
+ "yellow-mountain-imports-peony": {
+  "back": "#412c19",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "sprite": "assets/table-view/backs/yellow-mountain-imports-peony-sprite.webp"
+ },
+ "yellow-mountain-imports-koi": {
+  "back": "#082052",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "sprite": "assets/table-view/backs/yellow-mountain-imports-koi-sprite.webp"
+ },
+ "bam-bird-boutique-deco-indigo": {
+  "back": "#233862",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "sprite": "assets/table-view/backs/bam-bird-boutique-deco-indigo-sprite.webp"
+ },
+ "bam-bird-boutique-boots-bubbles": {
+  "back": "#89a6ee",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/bam-bird-boutique-boots-bubbles.webp"
+ },
+ "bam-bird-boutique-deco": {
+  "back": "#0a4d55",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "sprite": "assets/table-view/backs/bam-bird-boutique-deco-sprite.webp"
+ },
+ "bam-bird-boutique-origami": {
+  "back": "#026184",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "sprite": "assets/table-view/backs/bam-bird-boutique-origami-sprite.webp"
+ },
+ "yellow-mountain-imports-oceana": {
+  "back": "#3a7086",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/yellow-mountain-imports-oceana.webp"
+ },
+ "yellow-mountain-imports-toucan": {
+  "back": "#386163",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "sprite": "assets/table-view/backs/yellow-mountain-imports-toucan-sprite.webp"
+ },
+ "yellow-mountain-imports-easy-reader": {
+  "back": "#e7e2e6",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-panda": {
+  "back": "#cac5bf",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "sprite": "assets/table-view/backs/yellow-mountain-imports-panda-sprite.webp"
+ },
+ "yellow-mountain-imports-god-of-fortune": {
+  "back": "#c6afa7",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "sprite": "assets/table-view/backs/yellow-mountain-imports-god-of-fortune-sprite.webp"
+ },
+ "yellow-mountain-imports-jet-set": {
+  "back": "#231916",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/yellow-mountain-imports-jet-set.webp"
+ },
+ "yellow-mountain-imports-chinoise": {
+  "back": "#abd0e0",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/yellow-mountain-imports-chinoise.webp"
+ },
+ "yellow-mountain-imports-huntington": {
+  "back": "#4c7b1b",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-papillon": {
+  "back": "#b36036",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/yellow-mountain-imports-papillon.webp"
+ },
+ "yellow-mountain-imports-sakura": {
+  "back": "#e592c2",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/yellow-mountain-imports-sakura.webp"
+ },
+ "yellow-mountain-imports-pepper": {
+  "back": "#6ac3b7",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-pattaya": {
+  "back": "#732f28",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-pink-sparkles": {
+  "back": "#e1899a",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/yellow-mountain-imports-pink-sparkles.webp"
+ },
+ "yellow-mountain-imports-little-bird": {
+  "back": "#b9977a",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/yellow-mountain-imports-little-bird.webp"
+ },
+ "yellow-mountain-imports-the-classic": {
+  "back": "#ecdccc",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-golden-fortune": {
+  "back": "#ba9c52",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/yellow-mountain-imports-golden-fortune.webp"
+ },
+ "bam-bird-boutique-classic-mahjong-tile-set": {
+  "back": "#f0cac0",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-aloha": {
+  "back": "#f1eddd",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/yellow-mountain-imports-aloha.webp"
+ },
+ "yellow-mountain-imports-atlantica": {
+  "back": "#407991",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/yellow-mountain-imports-atlantica.webp"
+ },
+ "yellow-mountain-imports-celestial-harmony": {
+  "back": "#efeff1",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-chinoise-ii": {
+  "back": "#abd1e0",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/yellow-mountain-imports-chinoise-ii.webp"
+ },
+ "yellow-mountain-imports-classic-luxe": {
+  "back": "#e8d7c3",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-classic-royale-ii": {
+  "back": "#e8dacf",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-harbor-mint": {
+  "back": "#4dcbba",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-harbor-snow": {
+  "back": "#f7f7f7",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-harbor-tide": {
+  "back": "#084ba5",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-heather": {
+  "back": "#eee1d5",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-indigo-bay": {
+  "back": "#054193",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-indigo-tides": {
+  "back": "#054193",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-jade-horizon": {
+  "back": "#c0dfbf",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-mojave": {
+  "back": "#e5d7cc",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-peony-blush": {
+  "back": "#eebebc",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-rosehill": {
+  "back": "#ce5882",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-sakura-pink": {
+  "back": "#fdc5e2",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-seabreeze": {
+  "back": "#59dfce",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "yellow-mountain-imports-verdant-spring": {
+  "back": "#afe35d",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bam-bird-boutique-classic-lavender": {
+  "back": "#aea1cc",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bam-bird-boutique-classic-teal": {
+  "back": "#5f9ca6",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)"
+ },
+ "bam-bird-boutique-east-meets-west-emerald": {
+  "back": "#047871",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "sprite": "assets/table-view/backs/bam-bird-boutique-east-meets-west-emerald-sprite.webp"
+ },
+ "bam-bird-boutique-east-meets-west-periwinkle": {
+  "back": "#0341d2",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "sprite": "assets/table-view/backs/bam-bird-boutique-east-meets-west-periwinkle-sprite.webp"
+ },
+ "bam-bird-boutique-origami-timber": {
+  "back": "#8c422a",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/bam-bird-boutique-origami-timber.webp"
+ },
+ "bam-bird-boutique-deco-mulberry": {
+  "back": "#7b3854",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "sprite": "assets/table-view/backs/bam-bird-boutique-deco-mulberry-sprite.webp"
+ },
+ "bam-bird-boutique-boots-and-bubbles-pink-swirl": {
+  "back": "#bb1e83",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/bam-bird-boutique-boots-and-bubbles-pink-swirl.webp"
  }
 }

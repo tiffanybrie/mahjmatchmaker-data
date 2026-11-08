@@ -1,0 +1,65 @@
+{
+ "_about": "Nov 7 2026 (Tiffany 8:13pm): which FYM set (D.sets slug) each album-in-progress belongs to. Read by builder/fym_gate.py [165]: every album set (each config/colorcards.json 'sets' key and each site/livepatch/*album*/ dir) must be listed here, and every non-null slug must have walls (a back in D.tv.backs). null = not a set in FYM (retired vault set) with the reason. A new album = add its line here when the album work starts, and give the set its walls FIRST (builder/table_view/back_colors_nov07.py).",
+ "colorcards": {
+  "shangri-la": null,
+  "lilac-soiree": null,
+  "preppy-soiree": null,
+  "spring-love": null,
+  "papaya-spritz": "oh-my-mahjong-papaya-spritz",
+  "sunday-tile-set": "sunday-mahjong-sunday",
+  "brownstone-bloom": "anders-ruff-brownstone-bloom",
+  "nature-walk": "sunday-mahjong-nature-walk",
+  "sunday-blues": "sunday-mahjong-sunday-blues",
+  "plum-panda": "sunday-mahjong-plum-panda",
+  "hummingbird": "sunday-mahjong-hummingbird",
+  "juniper": "juniper",
+  "style-of-your-life": "my-fair-mahjong-style-of-your-life-series-pearl-green",
+  "deco-lagoon": "bam-bird-boutique-deco",
+  "deco-mulberry": "bam-bird-boutique-deco-mulberry"
+ },
+ "_null_why": {
+  "shangri-la": "retired OMM vault set, not in FYM",
+  "lilac-soiree": "retired OMM vault set, not in FYM",
+  "preppy-soiree": "retired OMM vault set, not in FYM",
+  "spring-love": "retired OMM vault set, not in FYM"
+ },
+ "livepatch": {
+  "albums": [
+   "sunday-mahjong-sunday"
+  ],
+  "deco-lagoon-album-nov07": [
+   "bam-bird-boutique-deco"
+  ],
+  "deco-mulberry-album-nov07": [
+   "bam-bird-boutique-deco-mulberry"
+  ],
+  "juniper-album-nov06": [
+   "juniper"
+  ],
+  "mfm-style-of-your-life-album-nov07": [
+   "my-fair-mahjong-style-of-your-life-series-pearl-green"
+  ],
+  "sunday-albums-nov06": [
+   "sunday-mahjong-nature-walk",
+   "sunday-mahjong-sunday-blues",
+   "sunday-mahjong-plum-panda",
+   "sunday-mahjong-hummingbird"
+  ],
+  "thin-albums-oct26": [
+   "gemma",
+   "jasmine",
+   "limoncello",
+   "nantucket",
+   "osler",
+   "pippa",
+   "sorbet",
+   "sunset",
+   "taylor"
+  ]
+ },
+ "upcoming": {
+  "bam-bird-boutique-deco-indigo": "Deco (Indigo), next Bam Bird album",
+  "virora-mahjong-petal-e": "Petalée (staged)",
+  "anders-ruff-green-light-gatsby": "Green Light Gatsby (release-calendar upcomingAlbums; back needs her eye)"
+ }
+}

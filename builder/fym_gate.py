@@ -1921,6 +1921,24 @@ try:
     for _k163, _v163 in _E163.items():
         if _k163 in M and (M[_k163].get('mf') or []) != _v163['mf']: F.append(f"[163] {_v163.get('name')}: build colours {M[_k163].get('mf')} != by-eye {_v163['mf']}")
 except Exception as _e: F.append(f"[163] colour eye-check did not run: {_e}")
+# [165] Nov 7 2026 (Tiffany 8:13pm: "every tile set we bring in for an album must be FULLY built in Find Your Mat-ch BEFORE she reviews
+#       the album", Juniper's Table view said "Walls off: back color not confirmed yet"). Every album set (each config/colorcards.json
+#       'sets' key + each site/livepatch/*album*/ dir) must be mapped in config/album-fym-sets.json, and every mapped FYM set must be in
+#       the build WITH walls (D.tv.backs, built from config/tableview-back-colors.json by builder/table_view/back_colors_nov07.py).
+try:
+    _A165 = json.load(open(REPO + 'config/album-fym-sets.json')); _BK165 = (D.get('tv') or {}).get('backs') or {}
+    _S165 = {s['slug'] for s in D['sets']}; _want165 = {}
+    for _k165 in json.load(open(REPO + 'config/colorcards.json')).get('sets', {}):
+        if _k165 not in _A165['colorcards']: F.append(f"[165] colour card '{_k165}' is not mapped to its FYM set in config/album-fym-sets.json"); continue
+        if _A165['colorcards'][_k165]: _want165[_A165['colorcards'][_k165]] = 'colour card ' + _k165
+    for _d165 in sorted(glob.glob(REPO + 'site/livepatch/*album*/')):
+        _n165 = os.path.basename(_d165.rstrip('/'))
+        if _n165 not in _A165['livepatch']: F.append(f"[165] album work site/livepatch/{_n165}/ is not mapped to its FYM set(s) in config/album-fym-sets.json"); continue
+        for _s165 in _A165['livepatch'][_n165]: _want165.setdefault(_s165, 'site/livepatch/' + _n165)
+    for _s165, _w165 in sorted(_want165.items()):
+        if _s165 not in _S165: F.append(f"[165] album set {_s165} ({_w165}) is not a set in this build: build it in FYM before the album goes to Tiffany")
+        elif _s165 not in _BK165: F.append(f"[165] album set {_s165} ({_w165}) has no walls (no back in D.tv.backs): add its back (builder/table_view/back_colors_nov07.py) before the album goes to Tiffany")
+except Exception as _e: F.append(f"[165] album-sets-have-walls check did not run: {_e}")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))

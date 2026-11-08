@@ -1,0 +1,2892 @@
+{
+ "_about": "Nov 7 2026 (Tiffany 8:13pm: every album set fully built in FYM before she reviews the album; Table view walls need a confirmed back). Box (x0,y0,x1,y1 fractions) inside ONE real tile BACK, picked by eye on gridded contact sheets and checked as back photo | wall swatch (scratchpad walls-nov07.jpg). img = repo photo, or null = the set's FYM tile photo in the build. kind: solid (median colour), pattern (texture patch, walls cut from it), sprite (one whole back tile drawn as each wall tile, e.g. Bam Bird / YMI printed backs). Read by builder/table_view/back_colors_nov07.py, which ADDS these to config/tableview-back-colors.json.",
+ "sets": {
+  "juniper": {
+   "name": "Juniper",
+   "brand": "Oh My Mahjong",
+   "box": [
+    0.535,
+    0.44,
+    0.665,
+    0.56
+   ],
+   "kind": "pattern",
+   "img": "assets/tiles/album/juniper.jpg"
+  },
+  "sunday-mahjong-plum-panda": {
+   "name": "Plum Panda",
+   "brand": "Sunday Mahjong",
+   "box": [
+    0.7206,
+    0.9005,
+    0.7823,
+    0.9519
+   ],
+   "kind": "solid",
+   "img": "assets/tiles/album/plum-panda.png"
+  },
+  "sunday-mahjong-sunday-blues": {
+   "name": "Sunday Blues",
+   "brand": "Sunday Mahjong",
+   "box": [
+    0.3,
+    0.52,
+    0.42,
+    0.59
+   ],
+   "kind": "solid",
+   "img": "assets/tiles/album/sunday-blues.png"
+  },
+  "virora-mahjong-petal-e": {
+   "name": "Petalée",
+   "brand": "Virora Mahjong",
+   "box": [
+    0.44,
+    0.27,
+    0.55,
+    0.73
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "my-fair-mahjong-style-of-your-life-series-pearl-green": {
+   "name": "Style of Your Life Series (Pearl Green)",
+   "brand": "My Fair Mahjong",
+   "box": [
+    0.55,
+    0.2,
+    0.8,
+    0.8
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "rackin-rudolph": {
+   "name": "Rackin' Rudolph",
+   "brand": "Hip Hip Mahjong",
+   "box": [
+    0.15,
+    0.15,
+    0.85,
+    0.85
+   ],
+   "kind": "solid",
+   "img": "assets/blog/holiday-tablescape-rudolph/rackin-rudolph-tile-back.png"
+  },
+  "spirit-of-christmas": {
+   "name": "Spirit of Christmas",
+   "brand": "Peace Love Mahjong",
+   "box": [
+    0.42,
+    0.735,
+    0.585,
+    0.985
+   ],
+   "kind": "sprite",
+   "img": "assets/tiles/holiday/plm-spirit-of-christmas-faces-back.jpg"
+  },
+  "heritage-2-0": {
+   "name": "Heritage 2.0",
+   "brand": "Oh My Mahjong",
+   "box": [
+    0.33,
+    0.02,
+    0.44,
+    0.12
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "luminaire": {
+   "name": "Luminaire",
+   "brand": "Oh My Mahjong",
+   "box": [
+    0.144,
+    0.1083,
+    0.275,
+    0.2393
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "pearlescent": {
+   "name": "Pearlescent",
+   "brand": "Oh My Mahjong",
+   "box": [
+    0.6,
+    0.52,
+    0.68,
+    0.6
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "smith": {
+   "name": "Smith",
+   "brand": "Oh My Mahjong",
+   "box": [
+    0.15,
+    0.21,
+    0.26,
+    0.32
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "lola": {
+   "name": "Lola",
+   "brand": "Oh My Mahjong",
+   "box": [
+    0.0284,
+    0.3717,
+    0.1345,
+    0.4777
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "nivalee-blue": {
+   "name": "Nivalee (Glacier Blue)",
+   "brand": "Virora Mahjong",
+   "box": [
+    0.43,
+    0.3,
+    0.55,
+    0.7
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "tinselle-emerald": {
+   "name": "Tinselle (Emerald Green)",
+   "brand": "Virora Mahjong",
+   "box": [
+    0.43,
+    0.3,
+    0.55,
+    0.7
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "tinselle-ruby": {
+   "name": "Tinselle (Ruby Red)",
+   "brand": "Virora Mahjong",
+   "box": [
+    0.43,
+    0.3,
+    0.55,
+    0.7
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "cmc-apres-ski": {
+   "name": "Après Ski Club",
+   "brand": "Charleston Mahjong Club",
+   "box": [
+    0.5411,
+    0.1537,
+    0.597,
+    0.2811
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bird-bamboo-the-iconic": {
+   "name": "The Iconic",
+   "brand": "Bird & Bamboo",
+   "box": [
+    0.5344,
+    0.8524,
+    0.6016,
+    0.9196
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bird-bamboo-the-madeira": {
+   "name": "The Madeira",
+   "brand": "Bird & Bamboo",
+   "box": [
+    0.4123,
+    0.7671,
+    0.4782,
+    0.8329
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bird-bamboo-the-allure": {
+   "name": "The Allure",
+   "brand": "Bird & Bamboo",
+   "box": [
+    0.335,
+    0.6278,
+    0.3841,
+    0.6769
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahj-mood-90s-taffy-pink": {
+   "name": "90s Taffy (Pink)",
+   "brand": "Mahj Mood",
+   "box": [
+    0.75,
+    0.3,
+    0.95,
+    0.6
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "mahj-mood-mauve-blush": {
+   "name": "Mauve-Blush",
+   "brand": "Mahj Mood",
+   "box": [
+    0.8704,
+    0.4052,
+    0.9391,
+    0.4567
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahj-mood-imperfect-serenity-mood": {
+   "name": "Imperfect Serenity Mood",
+   "brand": "Mahj Mood",
+   "box": [
+    0.4606,
+    0.7621,
+    0.5362,
+    0.8189
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-christmas-kiss": {
+   "name": "Christmas Kiss",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.835,
+    0.849,
+    0.9031,
+    0.9443
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-lemon-tide": {
+   "name": "Lemon Tide",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.2357,
+    0.2595,
+    0.3214,
+    0.3452
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-teal-lunaflor": {
+   "name": "Teal Lunaflor",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.9401,
+    0.2949,
+    1,
+    0.4099
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-american": {
+   "name": "American",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.068,
+    0.2799,
+    0.151,
+    0.3629
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-lilac-bloom": {
+   "name": "Lilac Bloom",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.7201,
+    0.6343,
+    0.7895,
+    0.7038
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-butter-bloom": {
+   "name": "Butter Bloom",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.9069,
+    0.6412,
+    0.9789,
+    0.7444
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-glitter-sparkle-pink": {
+   "name": "Glitter Sparkle Pink",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.6279,
+    0.835,
+    0.6959,
+    0.9031
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "mahjong-studios-bubble-pop-2-color-blue": {
+   "name": "Bubble Pop 2-Color Blue",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.3886,
+    0.6748,
+    0.4114,
+    0.6919
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-blue-editon-2-color-blue": {
+   "name": "Blue Edition 2-Color Blue",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.53,
+    0.13,
+    0.65,
+    0.25
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-blush-bamboo": {
+   "name": "Blush & Bamboo",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.1061,
+    0.3538,
+    0.1843,
+    0.4319
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahj-squad-palm-springs": {
+   "name": "Palm Springs",
+   "brand": "Mahj Squad",
+   "box": [
+    0.6733,
+    0.8352,
+    0.7648,
+    0.9267
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "miss-mahjong-miss-out-of-office": {
+   "name": "Miss Out Of Office",
+   "brand": "Miss Mahjong",
+   "box": [
+    0.25,
+    0.5,
+    0.34,
+    0.66
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "miss-mahjong-miss-catrina": {
+   "name": "Miss Catrina",
+   "brand": "Miss Mahjong",
+   "box": [
+    0.55,
+    0.59,
+    0.65,
+    0.68
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "miss-mahjong-miss-darling-cameo-blue": {
+   "name": "Miss Darling Cameo Blue",
+   "brand": "Miss Mahjong",
+   "box": [
+    0.28,
+    0.5,
+    0.37,
+    0.58
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "anders-ruff-mahj-in-bloom": {
+   "name": "Mahj in Bloom",
+   "brand": "Anders Ruff",
+   "box": [
+    0.0358,
+    0,
+    0.1071,
+    0.0357
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "anders-ruff-house-of-hydrangea": {
+   "name": "House of Hydrangea",
+   "brand": "Anders Ruff",
+   "box": [
+    0.24,
+    0.57,
+    0.3,
+    0.61
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "anders-ruff-bams-bubbly": {
+   "name": "Bams & Bubbly",
+   "brand": "Anders Ruff",
+   "box": [
+    0.0438,
+    0.6764,
+    0.0991,
+    0.7593
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "royal-mahjong-society-heirloom-collection-crown-jewels": {
+   "name": "Heirloom Collection Crown Jewels",
+   "brand": "Royal Mahjong Society",
+   "box": [
+    0.9327,
+    0.5113,
+    1,
+    0.6411
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "royal-mahjong-society-heirloom-collection-newport": {
+   "name": "Heirloom Collection Newport",
+   "brand": "Royal Mahjong Society",
+   "box": [
+    0.2924,
+    0.271,
+    0.36,
+    0.3386
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "tigre-de-tartan-classic-in-beechwood": {
+   "name": "Classic Beechwood",
+   "brand": "Tigre de Tartan",
+   "box": [
+    0.33,
+    0.56,
+    0.375,
+    0.61
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bam-bird-boutique-east-meets-west-tortoise-shell": {
+   "name": "East Meets West Tortoise Shell",
+   "brand": "Bam Bird Boutique",
+   "box": [
+    0,
+    0.6676,
+    0.0337,
+    0.7672
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "bam-let-s-mahjong-the-nantucket-coastal-blue": {
+   "name": "The Nantucket Coastal Blue",
+   "brand": "Bam! Let's Mahjong",
+   "box": [
+    0.2388,
+    0.1434,
+    0.2819,
+    0.1757
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bam-let-s-mahjong-the-nantucket-seaside-blue": {
+   "name": "The Nantucket Seaside Blue",
+   "brand": "Bam! Let's Mahjong",
+   "box": [
+    0.3371,
+    0.6909,
+    0.4438,
+    0.771
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bam-let-s-mahjong-mint-and-roses": {
+   "name": "Mint and Roses",
+   "brand": "Bam! Let's Mahjong",
+   "box": [
+    0.6383,
+    0.2001,
+    0.7585,
+    0.2903
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bam-let-s-mahjong-the-palm-royale-tangerine-twist": {
+   "name": "The Palm Royale Tangerine Twist",
+   "brand": "Bam! Let's Mahjong",
+   "box": [
+    0.1401,
+    0.0983,
+    0.1933,
+    0.1549
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bam-let-s-mahjong-grandmillennial-pink": {
+   "name": "Grandmillennial Pink",
+   "brand": "Bam! Let's Mahjong",
+   "box": [
+    0.9378,
+    0.2486,
+    1,
+    0.3371
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bam-let-s-mahjong-grandmillennial-green": {
+   "name": "Grandmillennial Green",
+   "brand": "Bam! Let's Mahjong",
+   "box": [
+    0.408,
+    0.6845,
+    0.5,
+    0.7535
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bam-let-s-mahjong-grandmillennial-blue": {
+   "name": "Grandmillennial Blue",
+   "brand": "Bam! Let's Mahjong",
+   "box": [
+    0.3181,
+    0.7195,
+    0.4184,
+    0.7947
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "charleston-mahjong-club-the-country-club-edition": {
+   "name": "The Country Club Edition",
+   "brand": "Charleston Mahjong Club",
+   "box": [
+    0.534,
+    0.1591,
+    0.5898,
+    0.2865
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "hip-hip-mahjong-so-bam-grateful": {
+   "name": "So Bam Grateful",
+   "brand": "Hip Hip Mahjong",
+   "box": [
+    0.3252,
+    0,
+    0.3939,
+    0.0367
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "hip-hip-mahjong-mahj-o-ween": {
+   "name": "Mahj-O-Ween",
+   "brand": "Hip Hip Mahjong",
+   "box": [
+    0.6461,
+    0.1437,
+    0.773,
+    0.2706
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "hip-hip-mahjong-the-house": {
+   "name": "The House",
+   "brand": "Hip Hip Mahjong",
+   "box": [
+    0.655,
+    0.16,
+    0.7,
+    0.2
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "hip-hip-mahjong-let-freedom-ring": {
+   "name": "Let Freedom Ring",
+   "brand": "Hip Hip Mahjong",
+   "box": [
+    0.5233,
+    0.44,
+    0.5767,
+    0.4933
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "hip-hip-mahjong-celebration": {
+   "name": "Celebration",
+   "brand": "Hip Hip Mahjong",
+   "box": [
+    0.773,
+    0.0445,
+    0.8317,
+    0.1032
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "let-s-mahj-on-let-s-wander": {
+   "name": "Let's Wander!",
+   "brand": "Let's Mahj On",
+   "box": [
+    0.9055,
+    0.2032,
+    1,
+    0.3873
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "let-s-mahj-on-let-s-be-iconic-jeweled-purple": {
+   "name": "Let's Be Iconic! Jeweled Purple",
+   "brand": "Let's Mahj On",
+   "box": [
+    0.84,
+    0.05,
+    0.93,
+    0.13
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "let-s-mahj-on-let-s-garden-party": {
+   "name": "Let's Garden Party!",
+   "brand": "Let's Mahj On",
+   "box": [
+    0.66,
+    0.04,
+    0.76,
+    0.12
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "let-s-mahj-on-let-s-game-set-mahj": {
+   "name": "Let's Game. Set. Mahj!",
+   "brand": "Let's Mahj On",
+   "box": [
+    0.84,
+    0.12,
+    0.94,
+    0.22
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "let-s-mahj-on-let-s-be-iconic-brilliant-pink": {
+   "name": "Let's Be Iconic! Brilliant Pink",
+   "brand": "Let's Mahj On",
+   "box": [
+    0.7,
+    0.05,
+    0.8,
+    0.15
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "let-s-mahj-on-let-s-get-tropical": {
+   "name": "Let's Get Tropical!",
+   "brand": "Let's Mahj On",
+   "box": [
+    0.65,
+    0.88,
+    0.78,
+    0.97
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "let-s-mahj-on-let-s-be-iconic-jeweled-green": {
+   "name": "Let's Be Iconic! Jeweled Green",
+   "brand": "Let's Mahj On",
+   "box": [
+    0.03,
+    0.48,
+    0.13,
+    0.62
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "let-s-mahj-on-let-s-get-nautical": {
+   "name": "Let's Get Nautical!",
+   "brand": "Let's Mahj On",
+   "box": [
+    0.22,
+    0.3,
+    0.3,
+    0.4
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "let-s-mahj-on-let-s-cocktail-party": {
+   "name": "Let's Cocktail Party!",
+   "brand": "Let's Mahj On",
+   "box": [
+    0.8,
+    0.3,
+    0.92,
+    0.4
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mac-miller-mahjong-red-white-blues-collection": {
+   "name": "Red White & Blues Collection",
+   "brand": "Mac + Miller Mahjong",
+   "box": [
+    0.5078,
+    0.6745,
+    0.635,
+    0.8017
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "mac-miller-mahjong-heirloom-collection-fire-fortune-ember-fire": {
+   "name": "Fire + Fortune (Ember)",
+   "brand": "Mac + Miller Mahjong",
+   "box": [
+    0.9036,
+    0,
+    0.9726,
+    0.046
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "mac-miller-mahjong-heirloom-collection-fire-fortune-verdant-fortune": {
+   "name": "Fire + Fortune (Verdant)",
+   "brand": "Mac + Miller Mahjong",
+   "box": [
+    0.8928,
+    0.9365,
+    0.9786,
+    1
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "mac-miller-mahjong-laissez-les-bons-temps-rouler-collection": {
+   "name": "Laissez Les Bons Temps Rouler Collection",
+   "brand": "Mac + Miller Mahjong",
+   "box": [
+    0.02,
+    0.31,
+    0.1,
+    0.4
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "mac-miller-mahjong-sweet-dreams-collection": {
+   "name": "Sweet Dreams Collection",
+   "brand": "Mac + Miller Mahjong",
+   "box": [
+    0.3,
+    0.17,
+    0.36,
+    0.22
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "virora-mahjong-christmas-collection-ii-nivalee-emerald-green": {
+   "name": "Nivalee Emerald Green",
+   "brand": "Virora Mahjong",
+   "box": [
+    0.43,
+    0.27,
+    0.55,
+    0.73
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "virora-mahjong-sylvaria": {
+   "name": "Sylvaria",
+   "brand": "Virora Mahjong",
+   "box": [
+    0.43,
+    0.27,
+    0.55,
+    0.73
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "virora-mahjong-aveline": {
+   "name": "Aveline",
+   "brand": "Virora Mahjong",
+   "box": [
+    0.43,
+    0.27,
+    0.55,
+    0.73
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "virora-mahjong-lilac-e": {
+   "name": "Lilacée",
+   "brand": "Virora Mahjong",
+   "box": [
+    0.43,
+    0.27,
+    0.55,
+    0.73
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "virora-mahjong-marivelle": {
+   "name": "Marivelle",
+   "brand": "Virora Mahjong",
+   "box": [
+    0.43,
+    0.27,
+    0.55,
+    0.73
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "virora-mahjong-rosanelle": {
+   "name": "Rosanelle",
+   "brand": "Virora Mahjong",
+   "box": [
+    0.2103,
+    0.4603,
+    0.2802,
+    0.5302
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "virora-mahjong-florielle": {
+   "name": "Florielle",
+   "brand": "Virora Mahjong",
+   "box": [
+    0.9271,
+    0.6897,
+    0.9443,
+    0.7103
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "wren-mats-simply": {
+   "name": "Simply",
+   "brand": "Wren Mats",
+   "box": [
+    0.55,
+    0.5,
+    0.7,
+    0.6
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-outlaws-of-the-marsh-mahjong-treasure-set": {
+   "name": "Outlaws of the Marsh Mahjong Treasure Set",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.72,
+    0.15,
+    0.92,
+    0.85
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "mahjong-studios-amber-jade": {
+   "name": "Amber Jade",
+   "brand": "Mahjong Studios",
+   "box": [
+    0,
+    0.4336,
+    0.0497,
+    0.533
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "yellow-mountain-imports-canyon-clay": {
+   "name": "Canyon Clay",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.53,
+    0.3,
+    0.65,
+    0.7
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "tala-mahj-tradewind-tortoise": {
+   "name": "Tradewind (Tortoise)",
+   "brand": "Tala Mahj",
+   "box": [
+    0.7485,
+    0.1186,
+    0.7801,
+    0.1608
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "my-fair-mahjong-legacy-wave-series-lavender-haze": {
+   "name": "Legacy Wave Series (Lavender Haze)",
+   "brand": "My Fair Mahjong",
+   "box": [
+    0.55,
+    0.15,
+    0.8,
+    0.85
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "charleston-mahjong-club-hunt-club-edition": {
+   "name": "Hunt Club Edition",
+   "brand": "Charleston Mahjong Club",
+   "box": [
+    0.7454,
+    0.2993,
+    0.7737,
+    0.3638
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "charleston-mahjong-club-cocktail-club-2-0-edition": {
+   "name": "Cocktail Club 2.0 Edition",
+   "brand": "Charleston Mahjong Club",
+   "box": [
+    0.9086,
+    0.2099,
+    0.9628,
+    0.3336
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "charleston-mahjong-club-yacht-club-edition": {
+   "name": "Yacht Club Edition",
+   "brand": "Charleston Mahjong Club",
+   "box": [
+    0.5366,
+    0.1543,
+    0.5919,
+    0.2805
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "royal-mahjong-society-studio-series-crown-jewels": {
+   "name": "Studio Series Crown Jewels",
+   "brand": "Royal Mahjong Society",
+   "box": [
+    0.9553,
+    0.2744,
+    1,
+    0.3351
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "royal-mahjong-society-studio-series-newport": {
+   "name": "Studio Series Newport",
+   "brand": "Royal Mahjong Society",
+   "box": [
+    0.0333,
+    0.6452,
+    0.081,
+    0.6929
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "royal-mahjong-society-studio-series-island": {
+   "name": "Studio Series Island",
+   "brand": "Royal Mahjong Society",
+   "box": [
+    0.0724,
+    0.7819,
+    0.1276,
+    0.8372
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahj-mood-the-eloise-collection": {
+   "name": "The Eloise Collection",
+   "brand": "Mahj Mood",
+   "box": [
+    0.6897,
+    0.1078,
+    0.7706,
+    0.1684
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "mahj-mood-the-bow-and-bloom-collection": {
+   "name": "The Bow and Bloom Collection",
+   "brand": "Mahj Mood",
+   "box": [
+    0.9569,
+    0.3615,
+    1,
+    0.4702
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "my-fair-mahjong-the-jubilee-series-midnight-blue": {
+   "name": "The Jubilee Series (Midnight Blue)",
+   "brand": "My Fair Mahjong",
+   "box": [
+    0.8,
+    0.56,
+    0.92,
+    0.68
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "bespoke-mahjong-its-a-vibe-glitter-glow-green": {
+   "name": "It's a Vibe (Glitter Glow Green)",
+   "brand": "Bespoke Mahjong",
+   "box": [
+    0.4471,
+    0.0829,
+    0.5005,
+    0.1362
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-ivory-stripes": {
+   "name": "Ivory Stripes",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.62,
+    0.3,
+    0.88,
+    0.7
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "gemma": {
+   "name": "Gemma",
+   "brand": "Oh My Mahjong",
+   "box": [
+    0,
+    0.0672,
+    0.059,
+    0.1804
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "jasmine": {
+   "name": "Jasmine",
+   "brand": "Oh My Mahjong",
+   "box": [
+    0.3525,
+    0.6192,
+    0.4713,
+    0.738
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "osler": {
+   "name": "Osler",
+   "brand": "Oh My Mahjong",
+   "box": [
+    0.2852,
+    0.8019,
+    0.41,
+    0.9267
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "sierra": {
+   "name": "Sierra",
+   "brand": "Oh My Mahjong",
+   "box": [
+    0.1758,
+    0.3996,
+    0.2956,
+    0.5194
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "dandy": {
+   "name": "Dandy",
+   "brand": "Oh My Mahjong",
+   "box": [
+    0.9346,
+    0.6038,
+    1,
+    0.7246
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "glitterville": {
+   "name": "Glitterville",
+   "brand": "Oh My Mahjong",
+   "box": [
+    0.3729,
+    0.6593,
+    0.4765,
+    0.7629
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "taylor": {
+   "name": "Taylor",
+   "brand": "Oh My Mahjong",
+   "box": [
+    0.4391,
+    0.0317,
+    0.5683,
+    0.1609
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "holly-jolly-pink": {
+   "name": "Holly Jolly (Sugarplum Pink)",
+   "brand": "Bam! Let's Mahjong",
+   "box": [
+    0.2919,
+    0.6856,
+    0.4065,
+    0.7716
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "amahj-teal-coastal-signature": {
+   "name": "Teal Coastal Signature",
+   "brand": "Amahj",
+   "box": [
+    0.9301,
+    0.5523,
+    1,
+    0.6239
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "amahj-pink-coastal-signature": {
+   "name": "Pink Coastal Signature",
+   "brand": "Amahj",
+   "box": [
+    0.7591,
+    0.8591,
+    0.8314,
+    0.9314
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "amahj-light-blue-signature": {
+   "name": "Light Blue Signature",
+   "brand": "Amahj",
+   "box": [
+    0.0958,
+    0.7577,
+    0.2042,
+    0.8661
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "amahj-lilac-signature": {
+   "name": "Lilac Signature",
+   "brand": "Amahj",
+   "box": [
+    0.2129,
+    0.5177,
+    0.3014,
+    0.6061
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "amahj-navy-signature": {
+   "name": "Navy Signature",
+   "brand": "Amahj",
+   "box": [
+    0.4884,
+    0.8362,
+    0.5449,
+    0.921
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bird-bamboo-the-empress": {
+   "name": "The Empress",
+   "brand": "Bird & Bamboo",
+   "box": [
+    0.2471,
+    0.8947,
+    0.3338,
+    0.9815
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahj-mood-90s-pool-party-blue": {
+   "name": "90s Pool Party (Blue)",
+   "brand": "Mahj Mood",
+   "box": [
+    0,
+    0.595,
+    0.0353,
+    0.6431
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahj-mood-ballerina-pink": {
+   "name": "Ballerina Pink",
+   "brand": "Mahj Mood",
+   "box": [
+    0.5993,
+    0.4019,
+    0.6769,
+    0.46
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-lavender-sparkle": {
+   "name": "Lavender Sparkle",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.4923,
+    0.3804,
+    0.5506,
+    0.4387
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-royal-sparkle": {
+   "name": "Royal Sparkle",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.1005,
+    0.4338,
+    0.1519,
+    0.4852
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-ruby-sparkle": {
+   "name": "Ruby Sparkle",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.1507,
+    0.1983,
+    0.2065,
+    0.2541
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-tile-sets": {
+   "name": "Tiles Only",
+   "brand": "Mahjong Studios",
+   "box": [
+    0,
+    0.7647,
+    0.0591,
+    0.8829
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-forest-silk": {
+   "name": "Forest Silk",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.8066,
+    0.6514,
+    0.8505,
+    0.7131
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-sage-luxe": {
+   "name": "Sage Luxe",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.2329,
+    0.2663,
+    0.3147,
+    0.348
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-ocean-bloom": {
+   "name": "Ocean Bloom",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.5266,
+    0.2456,
+    0.602,
+    0.321
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-neon-shadow": {
+   "name": "Neon Shadow",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.6749,
+    0.6109,
+    0.8236,
+    0.7224
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-peony-garden": {
+   "name": "Peony Garden",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.4822,
+    0.5346,
+    0.5559,
+    0.6082
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-blue-element": {
+   "name": "Blue Element",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.8453,
+    0.4762,
+    0.9214,
+    0.5523
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-2-color-blue-studio": {
+   "name": "Blue Studio",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.8291,
+    0.9053,
+    0.9614,
+    1
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-bamboo-sky": {
+   "name": "Bamboo Sky",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.769,
+    0.3929,
+    0.8548,
+    0.4786
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahj-squad-blue-chinoiserie": {
+   "name": "Blue Chinoiserie",
+   "brand": "Mahj Squad",
+   "box": [
+    0.53,
+    0.57,
+    0.6,
+    0.66
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "miss-mahjong-miss-cowgirl": {
+   "name": "Miss Cowgirl",
+   "brand": "Miss Mahjong",
+   "box": [
+    0.7466,
+    0.9052,
+    0.8248,
+    1
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "my-fair-mahjong-crystal-confetti": {
+   "name": "Crystal Confetti",
+   "brand": "My Fair Mahjong",
+   "box": [
+    0.6921,
+    0.4969,
+    0.7412,
+    0.546
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "my-fair-mahjong-the-play-series": {
+   "name": "The Play Series",
+   "brand": "My Fair Mahjong",
+   "box": [
+    0,
+    0.1833,
+    0.081,
+    0.3453
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "my-fair-mahjong-the-california-series": {
+   "name": "The California Series",
+   "brand": "My Fair Mahjong",
+   "box": [
+    0.9228,
+    0.7636,
+    0.982,
+    0.8521
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "royal-mahjong-society-heirloom-collection-shore": {
+   "name": "Heirloom Collection Shore",
+   "brand": "Royal Mahjong Society",
+   "box": [
+    0.7122,
+    0.9479,
+    0.8116,
+    1
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "royal-mahjong-society-heirloom-collection-mahj-royale": {
+   "name": "Heirloom Collection Mahj Royale",
+   "brand": "Royal Mahjong Society",
+   "box": [
+    0.7034,
+    0.9558,
+    0.7728,
+    1
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "royal-mahjong-society-heirloom-collection-cottage": {
+   "name": "Heirloom Collection Cottage",
+   "brand": "Royal Mahjong Society",
+   "box": [
+    0.4958,
+    0.9173,
+    0.6565,
+    1
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "royal-mahjong-society-heirloom-collection-girly": {
+   "name": "Heirloom Collection Girly",
+   "brand": "Royal Mahjong Society",
+   "box": [
+    0.5318,
+    0.7747,
+    0.6491,
+    0.892
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "royal-mahjong-society-heirloom-collection-island": {
+   "name": "Heirloom Collection Island",
+   "brand": "Royal Mahjong Society",
+   "box": [
+    0.0081,
+    0.5533,
+    0.0634,
+    0.6086
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bam-let-s-mahjong-the-palm-royale-strawberry-sangria": {
+   "name": "The Palm Royale Strawberry Sangria",
+   "brand": "Bam! Let's Mahjong",
+   "box": [
+    0.1347,
+    0.6058,
+    0.2399,
+    0.6847
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bam-let-s-mahjong-garden-party-petal-pink": {
+   "name": "Garden Party Petal Pink",
+   "brand": "Bam! Let's Mahjong",
+   "box": [
+    0.657,
+    0.1642,
+    0.8096,
+    0.2786
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bam-let-s-mahjong-garden-party-sea-glass-green": {
+   "name": "Garden Party Sea-Glass Green",
+   "brand": "Bam! Let's Mahjong",
+   "box": [
+    0.0393,
+    0.5176,
+    0.1448,
+    0.5967
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "hip-hip-mahjong-hoppy-east-hare": {
+   "name": "Hoppy EAST-Hare",
+   "brand": "Hip Hip Mahjong",
+   "box": [
+    0.9782,
+    0.502,
+    1,
+    0.5408
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "hip-hip-mahjong-birthday": {
+   "name": "Birthday",
+   "brand": "Hip Hip Mahjong",
+   "box": [
+    0.7429,
+    0.4095,
+    0.7905,
+    0.4571
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "virora-mahjong-viozelle": {
+   "name": "Viozelle",
+   "brand": "Virora Mahjong",
+   "box": [
+    0.4147,
+    0.2909,
+    0.471,
+    0.3472
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "virora-mahjong-am-thisse": {
+   "name": "Améthisse",
+   "brand": "Virora Mahjong",
+   "box": [
+    0.8605,
+    0.0533,
+    0.9681,
+    0.1609
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "hip-hip-mahjong-i-mahj": {
+   "name": "I ❤️ Mahj",
+   "brand": "Hip Hip Mahjong",
+   "box": [
+    0.7781,
+    0.3734,
+    0.8457,
+    0.4409
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bespoke-mahjong-pop-diva-cotton-candy-pearl": {
+   "name": "Pop Diva (Cotton Candy Pearl)",
+   "brand": "Bespoke Mahjong",
+   "box": [
+    0.8123,
+    0.5015,
+    0.8794,
+    0.5461
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "tala-mahj-tradewind-sage-jade": {
+   "name": "Tradewind (Sage Jade)",
+   "brand": "Tala Mahj",
+   "box": [
+    0.2873,
+    0.7155,
+    0.3222,
+    0.7645
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "tala-mahj-tradewind-emerald-jade": {
+   "name": "Tradewind (Emerald Jade)",
+   "brand": "Tala Mahj",
+   "box": [
+    0.6855,
+    0.4135,
+    0.7335,
+    0.4735
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "tala-mahj-tradewind-aqua": {
+   "name": "Tradewind (Aqua)",
+   "brand": "Tala Mahj",
+   "box": [
+    0.3233,
+    0.9555,
+    0.3815,
+    1
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "tala-mahj-tradewind-petal": {
+   "name": "Tradewind (Petal)",
+   "brand": "Tala Mahj",
+   "box": [
+    0.4338,
+    0.8323,
+    0.4852,
+    0.9051
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "royal-mahjong-society-studio-series-cottage": {
+   "name": "Studio Series Cottage",
+   "brand": "Royal Mahjong Society",
+   "box": [
+    0,
+    0.5168,
+    0.0309,
+    0.5785
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "royal-mahjong-society-studio-series-girly": {
+   "name": "Studio Series Girly",
+   "brand": "Royal Mahjong Society",
+   "box": [
+    0.8902,
+    0.4711,
+    0.9765,
+    0.5575
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "mahjong-studios-lunaflor-mint": {
+   "name": "Lunaflor (Mint)",
+   "brand": "Mahjong Studios",
+   "box": [
+    0.6153,
+    0,
+    0.6847,
+    0.0433
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bam-bird-boutique-mcm": {
+   "name": "MCM (Navy/Olive)",
+   "brand": "Bam Bird Boutique",
+   "box": [
+    0.632,
+    0.23,
+    0.705,
+    0.448
+   ],
+   "kind": "sprite",
+   "img": null
+  },
+  "bam-bird-boutique-mcm-olive-pink": {
+   "name": "MCM (Olive/Pink)",
+   "brand": "Bam Bird Boutique",
+   "box": [
+    0.632,
+    0.23,
+    0.705,
+    0.448
+   ],
+   "kind": "sprite",
+   "img": null
+  },
+  "yellow-mountain-imports-peony": {
+   "name": "Peony",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.612,
+    0.315,
+    0.705,
+    0.595
+   ],
+   "kind": "sprite",
+   "img": null
+  },
+  "yellow-mountain-imports-koi": {
+   "name": "Koi",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.637,
+    0.01,
+    0.738,
+    0.31
+   ],
+   "kind": "sprite",
+   "img": null
+  },
+  "bam-bird-boutique-deco-indigo": {
+   "name": "Deco (Indigo)",
+   "brand": "Bam Bird Boutique",
+   "box": [
+    0.7372,
+    0.4936,
+    0.8134,
+    0.735
+   ],
+   "kind": "sprite",
+   "img": null
+  },
+  "bam-bird-boutique-boots-bubbles": {
+   "name": "Boots & Bubbles (Blue Swirl)",
+   "brand": "Bam Bird Boutique",
+   "box": [
+    0.73,
+    0.5272,
+    0.7881,
+    0.7113
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "bam-bird-boutique-deco": {
+   "name": "Deco (Lagoon)",
+   "brand": "Bam Bird Boutique",
+   "box": [
+    0.7353,
+    0.4922,
+    0.8109,
+    0.7349
+   ],
+   "kind": "sprite",
+   "img": null
+  },
+  "bam-bird-boutique-origami": {
+   "name": "Origami (Azure)",
+   "brand": "Bam Bird Boutique",
+   "box": [
+    0.7504,
+    0.2767,
+    0.8296,
+    0.5304
+   ],
+   "kind": "sprite",
+   "img": null
+  },
+  "yellow-mountain-imports-oceana": {
+   "name": "Oceana",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7539,
+    0.4078,
+    0.8349,
+    0.6536
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "yellow-mountain-imports-toucan": {
+   "name": "Toucan",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7391,
+    0.3711,
+    0.8477,
+    0.7003
+   ],
+   "kind": "sprite",
+   "img": null
+  },
+  "yellow-mountain-imports-easy-reader": {
+   "name": "Easy Reader",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7532,
+    0.4013,
+    0.8193,
+    0.5987
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-panda": {
+   "name": "Panda",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7392,
+    0.33,
+    0.8533,
+    0.6729
+   ],
+   "kind": "sprite",
+   "img": null
+  },
+  "yellow-mountain-imports-god-of-fortune": {
+   "name": "God of Fortune",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7366,
+    0.3239,
+    0.8434,
+    0.6503
+   ],
+   "kind": "sprite",
+   "img": null
+  },
+  "yellow-mountain-imports-jet-set": {
+   "name": "Jet Set",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.6719,
+    0.4035,
+    0.7556,
+    0.6565
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "yellow-mountain-imports-chinoise": {
+   "name": "Chinoise",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7566,
+    0.3665,
+    0.8421,
+    0.6206
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "yellow-mountain-imports-huntington": {
+   "name": "Huntington",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7563,
+    0.3867,
+    0.8225,
+    0.5833
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-papillon": {
+   "name": "Papillon",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.75,
+    0.388,
+    0.8337,
+    0.642
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "yellow-mountain-imports-sakura": {
+   "name": "Sakura",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7642,
+    0.3739,
+    0.9339,
+    0.6218
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "yellow-mountain-imports-pepper": {
+   "name": "Pepper",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7704,
+    0.3916,
+    0.8377,
+    0.5941
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-pattaya": {
+   "name": "Pattaya",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.6634,
+    0.4516,
+    0.7286,
+    0.6541
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-pink-sparkles": {
+   "name": "Pink Sparkles",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.671,
+    0.3437,
+    0.7534,
+    0.5906
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "yellow-mountain-imports-little-bird": {
+   "name": "Little Bird",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7398,
+    0.3537,
+    0.8221,
+    0.6006
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "yellow-mountain-imports-the-classic": {
+   "name": "The Classic",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7314,
+    0.4114,
+    0.7911,
+    0.6014
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-golden-fortune": {
+   "name": "Golden Fortune",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.6769,
+    0.3564,
+    0.7575,
+    0.6022
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "bam-bird-boutique-classic-mahjong-tile-set": {
+   "name": "Classic (Rose)",
+   "brand": "Bam Bird Boutique",
+   "box": [
+    0.7655,
+    0.364,
+    0.8126,
+    0.5146
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-aloha": {
+   "name": "Aloha",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7365,
+    0.4623,
+    0.8216,
+    0.7163
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "yellow-mountain-imports-atlantica": {
+   "name": "Atlantica",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7539,
+    0.4078,
+    0.8349,
+    0.6536
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "yellow-mountain-imports-celestial-harmony": {
+   "name": "Celestial Harmony",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.75,
+    0.3827,
+    0.8162,
+    0.5802
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-chinoise-ii": {
+   "name": "Chinoise II",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7566,
+    0.3665,
+    0.8421,
+    0.6206
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "yellow-mountain-imports-classic-luxe": {
+   "name": "Classic Luxe",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.732,
+    0.4168,
+    0.7917,
+    0.606
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-classic-royale-ii": {
+   "name": "Classic Royale II",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7314,
+    0.4114,
+    0.7911,
+    0.6014
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-harbor-mint": {
+   "name": "Harbor Mint",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7698,
+    0.3916,
+    0.8371,
+    0.5941
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-harbor-snow": {
+   "name": "Harbor Snow",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7371,
+    0.3789,
+    0.8023,
+    0.5739
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-harbor-tide": {
+   "name": "Harbor Tide",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.759,
+    0.4034,
+    0.826,
+    0.6066
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-heather": {
+   "name": "Heather",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7314,
+    0.4114,
+    0.7911,
+    0.6014
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-indigo-bay": {
+   "name": "Indigo Bay",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7396,
+    0.4022,
+    0.8016,
+    0.6021
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-indigo-tides": {
+   "name": "Indigo Tides",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7396,
+    0.4022,
+    0.8016,
+    0.6021
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-jade-horizon": {
+   "name": "Jade Horizon",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7473,
+    0.3956,
+    0.8146,
+    0.5972
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-mojave": {
+   "name": "Mojave",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7314,
+    0.4114,
+    0.7911,
+    0.6014
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-peony-blush": {
+   "name": "Peony Blush",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7282,
+    0.3595,
+    0.7912,
+    0.552
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-rosehill": {
+   "name": "Rosehill",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7501,
+    0.4062,
+    0.8168,
+    0.6053
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-sakura-pink": {
+   "name": "Sakura Pink",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7441,
+    0.3865,
+    0.8115,
+    0.5864
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-seabreeze": {
+   "name": "Seabreeze",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.7612,
+    0.3934,
+    0.8288,
+    0.5966
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "yellow-mountain-imports-verdant-spring": {
+   "name": "Verdant Spring",
+   "brand": "Yellow Mountain Imports",
+   "box": [
+    0.74,
+    0.3865,
+    0.8062,
+    0.5864
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bam-bird-boutique-classic-lavender": {
+   "name": "Classic (Lavender)",
+   "brand": "Bam Bird Boutique",
+   "box": [
+    0.7383,
+    0.3113,
+    0.7829,
+    0.4544
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bam-bird-boutique-classic-teal": {
+   "name": "Classic (Teal)",
+   "brand": "Bam Bird Boutique",
+   "box": [
+    0.7602,
+    0.3197,
+    0.8067,
+    0.4703
+   ],
+   "kind": "solid",
+   "img": null
+  },
+  "bam-bird-boutique-east-meets-west-emerald": {
+   "name": "East Meets West (Emerald)",
+   "brand": "Bam Bird Boutique",
+   "box": [
+    0.729,
+    0.2649,
+    0.8028,
+    0.4994
+   ],
+   "kind": "sprite",
+   "img": null
+  },
+  "bam-bird-boutique-east-meets-west-periwinkle": {
+   "name": "East Meets West (Periwinkle)",
+   "brand": "Bam Bird Boutique",
+   "box": [
+    0.7247,
+    0.4949,
+    0.7978,
+    0.728
+   ],
+   "kind": "sprite",
+   "img": null
+  },
+  "bam-bird-boutique-origami-timber": {
+   "name": "Origami (Timber)",
+   "brand": "Bam Bird Boutique",
+   "box": [
+    0.7223,
+    0.5011,
+    0.779,
+    0.6903
+   ],
+   "kind": "pattern",
+   "img": null
+  },
+  "bam-bird-boutique-deco-mulberry": {
+   "name": "Deco (Mulberry)",
+   "brand": "Bam Bird Boutique",
+   "box": [
+    0.7372,
+    0.4936,
+    0.8134,
+    0.735
+   ],
+   "kind": "sprite",
+   "img": null
+  },
+  "bam-bird-boutique-boots-and-bubbles-pink-swirl": {
+   "name": "Boots & Bubbles (Pink Swirl)",
+   "brand": "Bam Bird Boutique",
+   "box": [
+    0.7583,
+    0.2911,
+    0.8173,
+    0.4732
+   ],
+   "kind": "pattern",
+   "img": null
+  }
+ },
+ "_needs_eye": {
+  "mahj-mood-radiant-mood-collection-white-pearl": {
+   "name": "Radiant Mood Collection White Pearl",
+   "brand": "Mahj Mood",
+   "why": "pearl-white pile; every clear patch has a face print, back not isolated"
+  },
+  "bespoke-mahjong-garden-glow-matcha-pearl": {
+   "name": "Garden Glow (Matcha Pearl)",
+   "brand": "Bespoke Mahjong",
+   "why": "pile of matcha tiles; no back clearly visible"
+  },
+  "bespoke-mahjong-grateful-dead-stealie-blue-tie-dye-pearl": {
+   "name": "Grateful Dead (Stealie Blue Tie Dye Pearl)",
+   "brand": "Bespoke Mahjong",
+   "why": "the marble end tile is a blank face (star), not a back"
+  },
+  "amahj-white-signature": {
+   "name": "White Signature",
+   "brand": "Amahj",
+   "why": "all-white tiles, no back identifiable"
+  },
+  "holly-jolly-red": {
+   "name": "Holly Jolly (Rudolph Red)",
+   "brand": "Bam! Let's Mahjong",
+   "why": "faces only, no back in the photo"
+  },
+  "holly-jolly-green": {
+   "name": "Holly Jolly (Grinch Green)",
+   "brand": "Bam! Let's Mahjong",
+   "why": "tiles sit in a rack, backs not visible"
+  },
+  "nutcracker-ballet": {
+   "name": "Nutcracker Ballet",
+   "brand": "Mahj Squad",
+   "why": "faces only; tile bodies pink but no back shown"
+  },
+  "amahj-garden-stamped": {
+   "name": "Garden Stamped",
+   "brand": "Amahj",
+   "why": "all tiles face up"
+  },
+  "amahj-round-top-stamped": {
+   "name": "Round Top Stamped",
+   "brand": "Amahj",
+   "why": "faces grid only"
+  },
+  "amahj-foundation-beginner": {
+   "name": "Foundation Beginner",
+   "brand": "Amahj",
+   "why": "all tiles face up"
+  },
+  "amahj-original-stamped": {
+   "name": "Original Stamped",
+   "brand": "Amahj",
+   "why": "all tiles face up"
+  },
+  "bird-bamboo-the-belle": {
+   "name": "The Belle",
+   "brand": "Bird & Bamboo",
+   "why": "all tiles face up"
+  },
+  "bird-bamboo-the-boho-chic": {
+   "name": "The Boho Chic",
+   "brand": "Bird & Bamboo",
+   "why": "all tiles face up"
+  },
+  "mahjong-studios-yellow-lilac-ocean-blue": {
+   "name": "Yellow Lilac Ocean Blue",
+   "brand": "Mahjong Studios",
+   "why": "photo mixes 3 colourways (yellow, lilac, ocean blue)"
+  },
+  "mahjong-studios-white-edit": {
+   "name": "White Edit",
+   "brand": "Mahjong Studios",
+   "why": "all-white pile, no back identifiable"
+  },
+  "mahjong-studios-rose-dragon": {
+   "name": "Rose Dragon",
+   "brand": "Mahjong Studios",
+   "why": "2-colour tiles; back only seen edge-on"
+  },
+  "mahjong-studios-essential": {
+   "name": "Essential",
+   "brand": "Mahjong Studios",
+   "why": "all tiles face up"
+  },
+  "mahj-squad-just-peachy": {
+   "name": "Just Peachy",
+   "brand": "Mahj Squad",
+   "why": "faces only"
+  },
+  "mahj-squad-parisian-without-acrylic-box": {
+   "name": "Parisian",
+   "brand": "Mahj Squad",
+   "why": "faces only"
+  },
+  "miss-mahjong-cowgirl-americana-numbered-flower": {
+   "name": "Cowgirl Americana Numbered Flower",
+   "brand": "Miss Mahjong",
+   "why": "faces only"
+  },
+  "miss-mahjong-darling-numbered-flower": {
+   "name": "Darling Numbered Flower",
+   "brand": "Miss Mahjong",
+   "why": "faces only"
+  },
+  "miss-mahjong-classic-jade-numbered-flower": {
+   "name": "Classic Jade Numbered Flower",
+   "brand": "Miss Mahjong",
+   "why": "faces only"
+  },
+  "miss-mahjong-classic-malachite-numbered-flower": {
+   "name": "Classic Malachite Numbered Flower",
+   "brand": "Miss Mahjong",
+   "why": "faces only"
+  },
+  "my-fair-mahjong-the-jubilee-series": {
+   "name": "The Jubilee Series",
+   "brand": "My Fair Mahjong",
+   "why": "faces/layers only"
+  },
+  "my-fair-mahjong-the-lumera-series": {
+   "name": "The Lumera Series",
+   "brand": "My Fair Mahjong",
+   "why": "pink tile bodies, no clear back"
+  },
+  "my-fair-mahjong-the-texas-series": {
+   "name": "The Texas Series",
+   "brand": "My Fair Mahjong",
+   "why": "faces grid only"
+  },
+  "my-fair-mahjong-crystal-prism": {
+   "name": "Crystal Prism",
+   "brand": "My Fair Mahjong",
+   "why": "banner background, no clear back"
+  },
+  "my-fair-mahjong-the-new-england-series": {
+   "name": "The New England Series",
+   "brand": "My Fair Mahjong",
+   "why": "faces grid only"
+  },
+  "my-fair-mahjong-the-scandinavian-folk-art-series": {
+   "name": "The Scandinavian Folk Art Series",
+   "brand": "My Fair Mahjong",
+   "why": "faces grid only"
+  },
+  "my-fair-mahjong-the-park-series": {
+   "name": "The Park Series",
+   "brand": "My Fair Mahjong",
+   "why": "faces grid only (mint bodies)"
+  },
+  "my-fair-mahjong-the-hawaii-series": {
+   "name": "The Hawaii Series",
+   "brand": "My Fair Mahjong",
+   "why": "faces grid only (aqua bodies)"
+  },
+  "my-fair-mahjong-the-southwest-series": {
+   "name": "The Southwest Series",
+   "brand": "My Fair Mahjong",
+   "why": "faces grid only (pink bodies)"
+  },
+  "anders-ruff-eau-de-mahj": {
+   "name": "Eau De Mahj",
+   "brand": "Anders Ruff",
+   "why": "backs only seen edge-on (pink layers)"
+  },
+  "sunday-mahjong-december-1994": {
+   "name": "December 1994",
+   "brand": "Sunday Mahjong",
+   "why": "no back visible"
+  },
+  "tigre-de-tartan-house-hearts-warm-white-classic": {
+   "name": "House Hearts Warm White",
+   "brand": "Tigre de Tartan",
+   "why": "faces only"
+  },
+  "tigre-de-tartan-house-tigers-oyster-classic": {
+   "name": "House Tigers Oyster",
+   "brand": "Tigre de Tartan",
+   "why": "faces only (oyster pearl bodies)"
+  },
+  "tigre-de-tartan-house-clovers-classic": {
+   "name": "House Clovers",
+   "brand": "Tigre de Tartan",
+   "why": "faces only"
+  },
+  "bam-let-s-mahjong-art-deco": {
+   "name": "Art Deco",
+   "brand": "Bam! Let's Mahjong",
+   "why": "faces grid only"
+  },
+  "bam-let-s-mahjong-hocus-pocus-halloween": {
+   "name": "Hocus Pocus Halloween",
+   "brand": "Bam! Let's Mahjong",
+   "why": "only a corner of a dark tile"
+  },
+  "bam-let-s-mahjong-the-palm-royale-lemon-drop": {
+   "name": "The Palm Royale Lemon Drop",
+   "brand": "Bam! Let's Mahjong",
+   "why": "pile mixes lemon, pink and orange backs"
+  },
+  "bam-let-s-mahjong-garden-party-sky-blue": {
+   "name": "Garden Party Sky Blue",
+   "brand": "Bam! Let's Mahjong",
+   "why": "backs not visible"
+  },
+  "bam-let-s-mahjong-garden-party-lavender-bloom": {
+   "name": "Garden Party Lavender Bloom",
+   "brand": "Bam! Let's Mahjong",
+   "why": "only one small tile edge"
+  },
+  "bespoke-mahjong-bespoke-x-gray-malin-beach-club": {
+   "name": "Gray Malin Beach Club (Cabana Blue)",
+   "brand": "Bespoke Mahjong",
+   "why": "faces on blue bodies, no back shown"
+  },
+  "bespoke-mahjong-bespoke-x-gray-malin-getaway-dogs-xl-mega": {
+   "name": "Bespoke X Gray Malin Getaway Dogs XL Mega",
+   "brand": "Bespoke Mahjong",
+   "why": "no back visible"
+  },
+  "bespoke-mahjong-grateful-dead-x-bespoke-mahjong-xl-mega": {
+   "name": "Grateful Dead x Bespoke Mahjong XL Mega",
+   "brand": "Bespoke Mahjong",
+   "why": "only a small blue tile, may be a rack"
+  },
+  "bespoke-mahjong-bespoke-x-corey-paige-color-crush-xl-mega": {
+   "name": "Bespoke X Corey Paige Color Crush XL Mega",
+   "brand": "Bespoke Mahjong",
+   "why": "no back visible"
+  },
+  "hip-hip-mahjong-nativity": {
+   "name": "Nativity",
+   "brand": "Hip Hip Mahjong",
+   "why": "no back visible"
+  },
+  "middle-main-mahjong-peach-pine": {
+   "name": "Peach & Pine",
+   "brand": "Middle & Main Mahjong",
+   "why": "faces grid only"
+  },
+  "middle-main-mahjong-barrier-island": {
+   "name": "Barrier Island",
+   "brand": "Middle & Main Mahjong",
+   "why": "faces grid only"
+  },
+  "middle-main-mahjong-sunshine": {
+   "name": "Sunshine",
+   "brand": "Middle & Main Mahjong",
+   "why": "faces grid only"
+  },
+  "middle-main-mahjong-palmetto": {
+   "name": "Palmetto",
+   "brand": "Middle & Main Mahjong",
+   "why": "faces grid only"
+  },
+  "middle-main-mahjong-charleston": {
+   "name": "Charleston",
+   "brand": "Middle & Main Mahjong",
+   "why": "faces grid only"
+  },
+  "oh-my-mahjong-sunburst-debutante": {
+   "name": "Sunburst Debutante",
+   "brand": "Oh My Mahjong",
+   "why": "faces grid only"
+  },
+  "oh-my-mahjong-poppy-debutante": {
+   "name": "Poppy Debutante",
+   "brand": "Oh My Mahjong",
+   "why": "faces grid only"
+  },
+  "oh-my-mahjong-cadet-debutante": {
+   "name": "Cadet Debutante",
+   "brand": "Oh My Mahjong",
+   "why": "faces grid only"
+  },
+  "oh-my-mahjong-jardin-debutante": {
+   "name": "Jardin Debutante",
+   "brand": "Oh My Mahjong",
+   "why": "faces grid only"
+  },
+  "virora-mahjong-flor-a": {
+   "name": "Floréa",
+   "brand": "Virora Mahjong",
+   "why": "backs only seen edge-on (layers)"
+  },
+  "virora-mahjong-lanisse": {
+   "name": "Élanisse",
+   "brand": "Virora Mahjong",
+   "why": "backs only seen edge-on"
+  },
+  "virora-mahjong-iriselle": {
+   "name": "Iriselle",
+   "brand": "Virora Mahjong",
+   "why": "one small tile, colour blends into the background"
+  },
+  "bespoke-mahjong-lucky-charms-marshmallow-pink": {
+   "name": "Lucky Charms (Marshmallow Pink)",
+   "brand": "Bespoke Mahjong",
+   "why": "faces grid only"
+  },
+  "bespoke-mahjong-pop-diva-bright-white": {
+   "name": "Pop Diva (Bright White)",
+   "brand": "Bespoke Mahjong",
+   "why": "all-white pile"
+  },
+  "bespoke-mahjong-springtime-safari-petal-pink": {
+   "name": "Springtime Safari (Petal Pink)",
+   "brand": "Bespoke Mahjong",
+   "why": "faces on pink bodies"
+  },
+  "bespoke-mahjong-springtime-safari-sky-blue": {
+   "name": "Springtime Safari (Sky Blue)",
+   "brand": "Bespoke Mahjong",
+   "why": "faces on sky-blue bodies"
+  },
+  "bespoke-mahjong-the-chalet-frosty-lilac": {
+   "name": "The Chalet (Frosty Lilac)",
+   "brand": "Bespoke Mahjong",
+   "why": "no back visible"
+  },
+  "bespoke-mahjong-the-chalet-frosty-pearl-white": {
+   "name": "The Chalet (Frosty Pearl White)",
+   "brand": "Bespoke Mahjong",
+   "why": "no back visible"
+  },
+  "bespoke-mahjong-year-of-the-horse-pearl-cream": {
+   "name": "Year of the Horse (Pearl Cream)",
+   "brand": "Bespoke Mahjong",
+   "why": "faces grid only"
+  },
+  "bespoke-mahjong-year-of-the-horse-saddle-pink": {
+   "name": "Year of the Horse (Saddle Pink)",
+   "brand": "Bespoke Mahjong",
+   "why": "faces grid only"
+  },
+  "bespoke-mahjong-gray-malin-getaway-dogs-beverly-hills-pink": {
+   "name": "Gray Malin Getaway Dogs (Beverly Hills Pink)",
+   "brand": "Bespoke Mahjong",
+   "why": "faces grid only"
+  },
+  "bespoke-mahjong-gray-malin-getaway-dogs-icy-blue": {
+   "name": "Gray Malin Getaway Dogs (Icy Blue)",
+   "brand": "Bespoke Mahjong",
+   "why": "faces grid only"
+  },
+  "bespoke-mahjong-gray-malin-getaway-dogs-bright-white": {
+   "name": "Gray Malin Getaway Dogs (Bright White)",
+   "brand": "Bespoke Mahjong",
+   "why": "faces grid only"
+  },
+  "bespoke-mahjong-corey-paige-color-crush-pearl-crush": {
+   "name": "Corey Paige Color Crush (Pearl Crush)",
+   "brand": "Bespoke Mahjong",
+   "why": "faces only"
+  },
+  "bespoke-mahjong-corey-paige-color-crush-bright-white": {
+   "name": "Corey Paige Color Crush (Bright White)",
+   "brand": "Bespoke Mahjong",
+   "why": "faces only"
+  },
+  "bespoke-mahjong-grateful-dead-rose-pink-tie-dye-pearl": {
+   "name": "Grateful Dead (Rose Pink Tie Dye Pearl)",
+   "brand": "Bespoke Mahjong",
+   "why": "last tile may be a blank face, not a back"
+  },
+  "bespoke-mahjong-grateful-dead-sunshine-daydream-tie-dye-pearl": {
+   "name": "Grateful Dead (Sunshine Daydream Tie Dye Pearl)",
+   "brand": "Bespoke Mahjong",
+   "why": "last tile may be a blank face, not a back"
+  },
+  "my-fair-mahjong-florida-series": {
+   "name": "Florida Series",
+   "brand": "My Fair Mahjong",
+   "why": "faces grid only"
+  },
+  "my-fair-mahjong-motor-city-series": {
+   "name": "Motor City Series",
+   "brand": "My Fair Mahjong",
+   "why": "faces grid only (blue bodies)"
+  },
+  "my-fair-mahjong-southeast-series": {
+   "name": "Southeast Series",
+   "brand": "My Fair Mahjong",
+   "why": "faces grid only"
+  },
+  "my-fair-mahjong-anywhere-series": {
+   "name": "Anywhere Series",
+   "brand": "My Fair Mahjong",
+   "why": "faces grid only"
+  },
+  "my-fair-mahjong-nyc-series": {
+   "name": "NYC Series",
+   "brand": "My Fair Mahjong",
+   "why": "faces grid only"
+  },
+  "peace-love-mahjong-merry-nutcracker": {
+   "name": "Merry Nutcracker",
+   "brand": "Peace Love Mahjong",
+   "why": "faces grid only"
+  },
+  "peace-love-mahjong-og-desert-dreams": {
+   "name": "OG Desert Dreams",
+   "brand": "Peace Love Mahjong",
+   "why": "faces grid only"
+  },
+  "peace-love-mahjong-mod-french-blue": {
+   "name": "Mod French Blue",
+   "brand": "Peace Love Mahjong",
+   "why": "faces grid only"
+  },
+  "peace-love-mahjong-mod-chartreuse": {
+   "name": "Mod Chartreuse",
+   "brand": "Peace Love Mahjong",
+   "why": "faces grid only"
+  },
+  "peace-love-mahjong-og-pretty-in-pink": {
+   "name": "OG Pretty in Pink",
+   "brand": "Peace Love Mahjong",
+   "why": "faces grid only"
+  },
+  "peace-love-mahjong-og-vibrant-vibes": {
+   "name": "OG Vibrant Vibes",
+   "brand": "Peace Love Mahjong",
+   "why": "faces grid only"
+  },
+  "peace-love-mahjong-taylor-s-tiles": {
+   "name": "Taylor's Tiles",
+   "brand": "Peace Love Mahjong",
+   "why": "faces grid only"
+  },
+  "peace-love-mahjong-og-totally-teal": {
+   "name": "OG Totally Teal",
+   "brand": "Peace Love Mahjong",
+   "why": "faces grid only"
+  },
+  "amahj-on-the-water-signature": {
+   "name": "On the Water Signature",
+   "brand": "Amahj",
+   "why": "faces grid only"
+  },
+  "anders-ruff-green-light-gatsby": {
+   "name": "Green Light Gatsby",
+   "brand": "Anders Ruff",
+   "why": "upcoming album; only dark, moody brand photos (shop.andersruff.com AR_261016_MAGJONG1012 shows one back: deep teal with a gold deco motif). Default pick: pattern patch from that photo, about #1d4e4f. Needs her eye."
+  },
+  "mahjong-co-kaleidoscope": {
+   "name": "Kaleidoscope",
+   "brand": "Mahjong Co.",
+   "why": "faces grid only"
+  },
+  "yolo-journey-to-the-west": {
+   "name": "Journey to the West",
+   "brand": "YOLO Mahjong",
+   "why": "brand says ivory marble-look backs, no back photo"
+  },
+  "bespoke-mahjong-garden-glow-sunshine-glow": {
+   "name": "Garden Glow (Sunshine Glow)",
+   "brand": "Bespoke Mahjong",
+   "why": "faces grid only"
+  },
+  "mahj-pit-original-confetti-small": {
+   "name": "The Original Confetti (Small)",
+   "brand": "Mahj Pit",
+   "why": "unclear which side is the back (blue vs confetti)"
+  },
+  "mahj-pit-original-confetti-large": {
+   "name": "The Original Confetti (Large)",
+   "brand": "Mahj Pit",
+   "why": "unclear which side is the back (blue vs confetti)"
+  },
+  "mahj-pit-martha": {
+   "name": "The Martha",
+   "brand": "Mahj Pit",
+   "why": "brand says pearl backs with a wave pattern, no back photo"
+  },
+  "mahj-pit-merry-merry": {
+   "name": "Merry Merry Holiday",
+   "brand": "Mahj Pit",
+   "why": "glitter under the rack may be the backs, unclear"
+  },
+  "mahj-pit-commuter-skinny-midnights": {
+   "name": "Commuter Skinny (Midnights)",
+   "brand": "Mahj Pit",
+   "why": "black bodies; no back shown"
+  }
+ },
+ "_hidden_skipped": [
+  "cypress-forest",
+  "mahjong-row-co-ash-burl",
+  "mahjong-row-co-honey-weave",
+  "mahjong-row-co-laken",
+  "mahjong-row-co-lyla",
+  "mahjong-row-co-mabel",
+  "mahjong-row-co-oakley",
+  "mahjong-row-co-terracotta-marble",
+  "yellow-mountain-imports-ivory-pinstripe",
+  "yellow-mountain-imports-ivory-ridge"
+ ]
+}
