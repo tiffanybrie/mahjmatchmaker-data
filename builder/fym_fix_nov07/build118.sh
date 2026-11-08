@@ -39,6 +39,7 @@ python3 "$H/tv118.py" "$D" --backs "$BK"
 for x in prices_v118.py tableview_v118.py tableview_racks_v118.py; do                          # coordinator Nov 7: later 1.18 patches (prices from config/fym-prices-nov07.json; Table view usable mats/racks, Lotus Cove first), run after tv118 once committed (an uncommitted work-in-progress copy is skipped)
   if git -C "$R" ls-files --error-unmatch "$H/$x" >/dev/null 2>&1; then python3 "$H/$x" "$D" | tail -3; else echo "(not present yet: $x)"; fi
 done
+python3 "$H/rackhold118.py" "$D"                                        # gate [146]: rack cut-outs with a halo held from the Table
 python3 "$H/price118.py" "$D"
 python3 "$H/zoomswipe_v118.py" "$D" | tail -1
 if git -C "$R" ls-files --error-unmatch "$H/doors_v118.py" >/dev/null 2>&1; then python3 "$H/doors_v118.py" "$D" | tail -2; fi                  # doors patch (after zoomswipe), when present
