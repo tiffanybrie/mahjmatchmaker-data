@@ -10,6 +10,7 @@ How partners reach us (partner sneak-peek email, Mon Oct 26):
 
 | received (ET) | source | brand | sender | what they asked | status | owner |
 |---|---|---|---|---|---|---|
+| 2026-11-07 10:28pm | form | Tiffany (own test) | tiffanybrie@gmail.com | "Testing my bots" - asked for a reply in chat + on HQ | done (HQ row + chat reply) | - |
 
 ## Watch runs
 - 2026-10-26 10:18am ET: 0 new (form: only test + Tiffany's own Oct 24 note; Dropbox: only test file).
@@ -23,3 +24,4 @@ How partners reach us (partner sneak-peek email, Mon Oct 26):
 - 2026-11-04 2:25pm ET: 0 new (form: none in last 7 days, FYM subject + Squarespace sender; Dropbox: only test file). Local git fetch hung, committed via GitHub API.
 - 2026-11-05 2:20pm ET: 0 new (form: none in last 2-3 days, FYM subject + Squarespace sender + label; Dropbox: only test file). Local git fetch hung, committed via GitHub API.
 - 2026-11-06 2:19pm ET: 0 new (form: none in last 2 days, FYM subject + Squarespace sender; Dropbox: only test file). Local git fetch hung, fresh shallow clone used.
+- 2026-11-08 2:20pm ET: 1 new, Tiffany's own test note (Nov 7 10:28pm, "Testing my bots") -> HQ partnerfb row form-20261107-2228-tiffany-test (done) + chat reply as she asked. 0 real partner items (form: only her test; Dropbox: only test file). Local git fetch hung, committed via GitHub API.
