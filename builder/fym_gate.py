@@ -1976,6 +1976,13 @@ try:
     _vr166 = [k for k, r in D['racks'].items() if not r.get('hid')]; _tv166 = D.get('tv') or {}
     print(f"FYM GATE INFO [166] prices: mats {sum(1 for k in _vm166 if k in _tv166.get('pm', {}))}/{len(_vm166)}, tile sets {sum(1 for s_ in _vs166 if s_['tile'] in _tv166.get('pt', {}))}/{len(_vs166)}, racks {sum(1 for k in _vr166 if k in _tv166.get('price', {}))}/{len(_vr166)}; walls {sum(1 for s_ in _vs166 if s_['slug'] in _tv166.get('backs', {}))}/{len(_vs166)} visible sets")
 except Exception as _e: F.append(f"[166] price filter check did not run: {_e}")
+# [168] Nov 7 2026 (FYM 1.18; Tiffany 10:33pm: Lotus Cove's mat door suggested Halloween tile sets). Tiles-for-a-mat ranking:
+#       D.tso + app patch present, no themed/holiday tile set in a non-holiday mat's first 15 (her picks / brand pairs / same theme
+#       excepted), colour families of the first 10 ranked sets for the 30 most-matched mats. Fix: builder/fym_fix_nov07/tilerank_v118.py.
+try:
+    sys.path.insert(0, REPO + 'builder/fym_fix_nov07'); import tilerank_check as _tc168
+    F.extend(_tc168.run(B))
+except Exception as _e: F.append(f"[168] tiles-for-a-mat ranking check did not run: {_e}")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))

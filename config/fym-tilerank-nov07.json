@@ -1,0 +1,37 @@
+{
+  "_about": "Tiles-for-a-mat ranking (FYM 1.18, builder/fym_fix_nov07/tilerank_v118.py, gate [168]). Tiffany Nov 7 10:33pm: Lotus Cove's mat door showed Halloween tile sets ~10 deep. backs: tile BACK colours for the visible sets that have no confirmed back in config/tableview-back-colors.json (that file always wins; these are Claude's by-eye reads of the FYM tile photo, Nov 7, used ONLY for ranking, never for Table view walls). themed: non-holiday seasonal/themed tile sets (go to the bottom for every mat that does not share the theme); holiday tile sets come from the page's BACKG.Holiday. not_themed: sets whose name hits a theme word but are year-round. motifs: extra name motifs (on top of config/fym-motifs-oct26.json) for the motif bonus, which only applies when the colours already fit (Tiffany Nov 7 8:07pm).",
+  "backs": {
+    "holly-jolly-red": "#c8202a",
+    "holly-jolly-green": "#2fbf3a",
+    "nutcracker-ballet": "#f2b8b0",
+    "amahj-round-top-stamped": "#f3f1ea",
+    "amahj-white-signature": "#f3f1ea",
+    "bird-bamboo-the-belle": "#efe9dc",
+    "bird-bamboo-the-boho-chic": "#efe9dc",
+    "mahj-squad-just-peachy": "#f5c9b0",
+    "mahj-squad-parisian-without-acrylic-box": "#a8dcd2",
+    "anders-ruff-eau-de-mahj": "#f06aa6",
+    "sunday-mahjong-december-1994": "#efe6d2",
+    "bam-let-s-mahjong-art-deco": "#161616",
+    "bam-let-s-mahjong-hocus-pocus-halloween": "#161616",
+    "bam-let-s-mahjong-the-palm-royale-lemon-drop": "#f2de47",
+    "bam-let-s-mahjong-garden-party-sky-blue": "#a8dcea",
+    "bam-let-s-mahjong-garden-party-lavender-bloom": "#b5dcc0",
+    "virora-mahjong-lanisse": "#e9a6c6",
+    "bespoke-mahjong-corey-paige-color-crush-bright-white": "#f3f1ea",
+    "mahj-pit-merry-merry": "#b5172b",
+    "mahj-pit-commuter-skinny-midnights": "#16161d"
+  },
+  "themed": {
+    "halloween": "hallowe|ween\\b|witch|spook|hocus|\\bboo\\b|pumpkin|ghoul|catrina|skull",
+    "patriotic": "freedom|americana|patriot|\\busa\\b|liberty|stars (and|&) stripes|4th of july",
+    "easter": "easter|bunny|east-hare|hoppy",
+    "hanukkah": "hanukkah|menorah|dreidel"
+  },
+  "not_themed": ["House Clovers", "I ❤️ Mahj"],
+  "motifs": {
+    "chinoiserie": "chinoiserie|pagoda|lotus|koi|ginger jar|journey to the west|plum panda|panda|imperial",
+    "floral": "floral|flower|bloom|blossom|garden|peony|rose\\b|roses|hydrangea|petal|posy|wildflower",
+    "coastal": "coastal|nantucket|shore|seaside|on the water|beach|ocean|sea glass"
+  }
+}
