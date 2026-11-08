@@ -16,6 +16,8 @@ Her taps save to the artifact db, doc review/<set> (one shared doc per album):
   {set, round, v: {cardId: 'keep'|'remove'}, notes: {cardId: text}, order: {main: [...], hol: [...]}, ordering_off,
    faces: [keys], cover: index, putin: [leftoutId], adds: [{k, n, b}], anything, done, updated}
 Claude reads it with ArtifactData (get review/<set>) and applies it with scripts/albumreview/read_review.py.
+Cards whose spec mat carries added_after_review (added after she finished/ordered) get new:true: the page appends them after
+her saved order and lists them at the top under 'New since you finished: N cards to place' with Move to #.
 Page rules: X and heart only (never crush/nope/pass); mat + tiles together (match-card style); nothing pre-set she must clear."""
 import json, os, re, sys, html, io, shutil
 from PIL import Image
@@ -68,7 +70,7 @@ for c in man['cards']:
     i = cid(c['file'])
     put(f'c/{i}.jpg', src=f"{rec['cards_dir']}/{c['file']}", maxs=1080, q=82)
     m = specmat.get(c['mat'], {})
-    tags = []
+    tags = ['NEW, added after your review'] if m.get('added_after_review') else []
     if c.get('caption_note') == 'TNT rec': tags.append('TNT rec')
     elif c.get('caption_note') and c['caption_note'] not in ('Retired', 'Holiday match'): tags.append(c['caption_note'])
     if c.get('retired_mat'): tags.append('Retired')
@@ -78,7 +80,7 @@ for c in man['cards']:
     tags += [f"New partner rack: {r}" for r in c.get('mat_racks', []) if r.startswith('Mahjong Register ') or r.startswith('Anders Ruff ')]
     title = f"TNT rec · {c['mat']} · {c['brand']}" if c.get('caption_note') == 'TNT rec' else c['mat']
     cards.append({'id': i, 'mat': c['mat'], 'brand': c['brand'], 'title': title, 'g': man['groups'].get(c['group'], c['group']),
-                  'hol': bool(c.get('holiday')), 'why': c.get('why', ''), 'tags': tags, 'fym': c.get('fym'), 'her_note': m.get('her_note')})
+                  'hol': bool(c.get('holiday')), 'why': c.get('why', ''), 'tags': tags, 'fym': c.get('fym'), 'her_note': m.get('her_note'), 'new': bool(m.get('added_after_review'))})
 
 # ---- left out (mat full + the cards' tile inset, match-card style)
 TP = rec['tile_photo']

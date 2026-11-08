@@ -2761,7 +2761,16 @@
     "lowres": false
    }
   ],
-  "pulled_at": "2026-11-08T13:50:11-05:00"
+  "pulled_at": "2026-11-08T14:46:51-05:00",
+  "pulled_by": "scripts/albumreview/pull.py",
+  "no_photo": 0,
+  "shortlist": 118,
+  "contrast_colours": [
+   "MULBERRY",
+   "ROSE",
+   "GOLD"
+  ],
+  "repull_nov08": "Re-pulled Nov 8 ~2:45pm after Tiffany caught Britt Mills Scarlett + Flora. Cause: the Nov 7 pull built its by-eye sheets from Mat Gallery images only and silently dropped 13 scored mats with no gallery image (Scarlett among them); its tonal score put Flora ~190th, and she was cut by eye with no reason on record. pull.py now reads every FYM photo (hard fail if one is missing) and always shows the contrast side (mulberry/rose/gold for Lagoon) on the sheets."
  },
  "legacy_faces_key": "deco-lagoon-faces-picks",
  "review_url": "https://claude.ai/artifact/P42niZjFS8UT21T9Q9Ajdu",
@@ -3024,7 +3033,11 @@
     "why": "A teal pond inside a hot pink peony frame: teal plus berry-pink, the two-colour look you like for her."
    }
   ],
-  "misses_added": [],
+  "misses_added": [
+   "Betty June & Jeannette Fête (Peacock) (re-pull)",
+   "Britt Mills Flora (caught by Tiffany)",
+   "Britt Mills Scarlett (caught by Tiffany)"
+  ],
   "note": "Light targeted search (12 searches: Google, Etsy, Amazon via WebSearch/WebFetch). Terms from the colour card (teal/berry/navy/gold), mood (art deco, jewel tone) and the faces (peacock feather, crane, iris, fan). Many Etsy hits were unavailable listings; Mahjong by SI (Target) is not a partner.",
   "recheck_nonpartner": "Rule Nov 8 2:03pm ('if it matches, it matches'): the 5 Tiles & Tablescapes Deco Lagoon pairings dropped only as non-partners (Lemondrop Garnet Blooms, Mahjong by SI Gatsby / Fall Into the Wild / Brewtifully leatherette, Golden Pond Parlor; Printerval unnamed) need their product photos to be judged; a light search did not find the listings. Next: pull the photos from the TNT posts in Chrome and judge by eye.",
   "complementary": "Complementary re-check (Tiffany 2:05pm: the colour pull leans tonal): berry/magenta/plum/coral/gold mats already carry the album's standouts (Reba, Viola, Deco Dragon Mulberry, Wren) and Garden Party Mulberry, East Meets West Magenta, Pretty in Plum; Delilah stays out (bright turquoise, not her deep teal)."

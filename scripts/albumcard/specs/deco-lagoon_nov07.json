@@ -354,8 +354,60 @@
     1020,
     1080
    ]
+  },
+  {
+   "group": "stand",
+   "name": "Scarlett",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-scarlett.jpg",
+   "box": [
+    0,
+    0,
+    1200,
+    1192
+   ],
+   "why": "Reba's berry sister: a deep mulberry field with a flower-crowned statue head in pinks, plum and gold. Her mulberry faces as the whole mat, so the Lagoon backs pop against it.",
+   "retired": false,
+   "fym": "brittmillsdesign.com/scarlett-neoprene-mahjong-mat",
+   "lowres": false,
+   "added_after_review": "Nov 8 2:45pm: added after her review (she caught Scarlett + Flora; Fête (Peacock) from the re-pull). Appended after her saved order."
+  },
+  {
+   "group": "teal",
+   "name": "Flora",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-flora.jpg",
+   "box": [
+    0,
+    0,
+    1200,
+    1200
+   ],
+   "why": "Berry roses on lilac, framed in sage leaves with deep lagoon-teal corner bars: her back colour and her mulberry faces in one mat.",
+   "retired": false,
+   "fym": "brittmillsdesign.com/flora-neoprene-mahjong-mat",
+   "lowres": false,
+   "added_after_review": "Nov 8 2:45pm: added after her review (she caught Scarlett + Flora; Fête (Peacock) from the re-pull). Appended after her saved order."
+  },
+  {
+   "group": "deco",
+   "name": "Fête (Peacock)",
+   "brand": "Betty June & Jeannette",
+   "img": "assets/colorcards/deco/mats/betty-june-and-jeannette-fete-peacock.jpg",
+   "box": [
+    24,
+    16,
+    617,
+    640
+   ],
+   "why": "Peacock feathers in deep teal, magenta and gold: her peacock-feather winds blown up into a whole mat, with both her backs and her berry faces.",
+   "retired": false,
+   "fym": "www.etsy.com/listing/4568416056/f-te-peacock",
+   "lowres": true,
+   "added_after_review": "Nov 8 2:45pm: added after her review (she caught Scarlett + Flora; Fête (Peacock) from the re-pull). Appended after her saved order."
   }
  ],
  "_nov08": "Tiffany Nov 8 10:11am edits: removed Petals After Dark, Crown Jewels, Royal Peacock, Imperial Peacock, Imperial Koi Pond, Indigo Reef, Teal Tapestry, Community Joy, Purple & Aqua Marble; added Deco Dragon (Lagoon), Deco Neoprene, Gatsby's Feathered Affair, OMM Jade, Britt Mills Ruby, East Meets West Magenta; Eden, Viola, Pretty in Plum into the top 10; TNT recs (config/tnt-recs.json deco-lagoon) lead the album, labelled 'TNT rec · mat · brand'. Reba stays the first non-TNT card; Deco Dragon (Mulberry) #8 (sister mat never #1).",
- "_order_nov08": "Re-ordered Nov 8 by the Playbook step 7 rule (Tiffany 1:46pm): standouts first (the 5-6 that look best together), colour theory carries the weight, her pairings + TNT recs add a little; TNT recs get no automatic front spot (label kept as information); the sister mat may be #1 if it is truly best."
+ "_order_nov08": "Re-ordered Nov 8 by the Playbook step 7 rule (Tiffany 1:46pm): standouts first (the 5-6 that look best together), colour theory carries the weight, her pairings + TNT recs add a little; TNT recs get no automatic front spot (label kept as information); the sister mat may be #1 if it is truly best.",
+ "_added_after_review_nov08": "Nov 8 2:45pm: added after her review (she caught Scarlett + Flora; Fête (Peacock) from the re-pull). Appended after her saved order. Missed because the Nov 7 pull dropped mats with no Mat Gallery image (Scarlett) and ranked by a tonal score (Flora cut by eye); fixed in scripts/albumreview/pull.py."
 }

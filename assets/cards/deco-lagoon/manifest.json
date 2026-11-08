@@ -838,6 +838,81 @@
    "lowres": false,
    "caption_note": "Holiday match",
    "rack_notes": []
+  },
+  {
+   "order": 34,
+   "group": "stand",
+   "mat": "Scarlett",
+   "brand": "Britt Mills",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "deco-lagoon-mahjong-tiles-britt-mills-scarlett-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/deco/mats/britt-mills-scarlett.jpg",
+   "racks": [
+    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Mulberry Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Wine",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "why": "Reba's berry sister: a deep mulberry field with a flower-crowned statue head in pinks, plum and gold. Her mulberry faces as the whole mat, so the Lagoon backs pop against it.",
+   "fym": "brittmillsdesign.com/scarlett-neoprene-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 35,
+   "group": "teal",
+   "mat": "Flora",
+   "brand": "Britt Mills",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "deco-lagoon-mahjong-tiles-britt-mills-flora-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/deco/mats/britt-mills-flora.jpg",
+   "racks": [
+    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Mulberry Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Petal Purple"
+   ],
+   "why": "Berry roses on lilac, framed in sage leaves with deep lagoon-teal corner bars: her back colour and her mulberry faces in one mat.",
+   "fym": "brittmillsdesign.com/flora-neoprene-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 36,
+   "group": "deco",
+   "mat": "Fête (Peacock)",
+   "brand": "Betty June & Jeannette",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "deco-lagoon-mahjong-tiles-betty-june-and-jeannette-f-te-peacock-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/deco/mats/betty-june-and-jeannette-fete-peacock.jpg",
+   "racks": [
+    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Mulberry Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Wine",
+    "Bird & Bamboo Evergreen"
+   ],
+   "why": "Peacock feathers in deep teal, magenta and gold: her peacock-feather winds blown up into a whole mat, with both her backs and her berry faces.",
+   "fym": "www.etsy.com/listing/4568416056/f-te-peacock",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
   }
  ],
  "title_color": "#0a5560",

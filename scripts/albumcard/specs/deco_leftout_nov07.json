@@ -153,6 +153,29 @@
    "img": "assets/colorcards/deco/mats/anders-ruff-purple-and-aqua-marble.jpg",
    "why": "Out on your Nov 8 review.",
    "retired": false
+  },
+  {
+   "name": "Vibrant Symphony",
+   "brand": "House of Hearts Studio",
+   "img": "assets/colorcards/deco/leftout/house-of-hearts-studio-vibrant-symphony.jpg",
+   "why": "Found by the Nov 8 re-pull (contrast side). Berry-red florals on teal, but the teal is a bright turquoise, not her deep lagoon, and the only photo has a name banner across it.",
+   "retired": false
+  },
+  {
+   "name": "Peace Love & Mistletoe",
+   "brand": "Peace Love Mahjong",
+   "img": "assets/colorcards/deco/leftout/peace-love-mahjong-peace-love-and-mistletoe.jpg",
+   "why": "Found by the Nov 8 re-pull. Deep teal-green with pink, red and gold leaves: a real holiday option, but the brand photo is small (472px), so the card would look soft.",
+   "retired": false,
+   "holiday": true
+  },
+  {
+   "name": "YOTD Raspberry",
+   "brand": "Bespoke Mahjong",
+   "img": "assets/colorcards/deco/mats/bespoke-mahjong-yotd-raspberry.jpg",
+   "why": "Found by the Nov 8 re-pull. The berry sister of the YOTD Black TNT rec: dragons and roses on orchid, a little more purple than her mulberry.",
+   "retired": false,
+   "more_from": "Bespoke Mahjong"
   }
  ],
  "deco-mulberry": [
