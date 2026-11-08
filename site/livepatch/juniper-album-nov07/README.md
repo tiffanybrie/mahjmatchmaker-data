@@ -57,4 +57,4 @@ The same 42 files were copied over assets/cards/juniper/ so the review/intro too
 ## Still to do (NEW-ALBUM-CHECKLIST)
 - FYM: Juniper `album` link + m-list ship with the 1.18 build (three places + gallery).
 - Social row (Planoly drafts), FB group post, FYM tie-in, "new albums" email to subscribers: Main / social owners.
-- Mahjong Register: re-render 3 bands + page chips when their code is set up.
+- ~~Mahjong Register: re-render 3 bands + page chips~~ DONE Nov 8 (bands @3ad554c9; chips '10% off at Mahjong Register with MAHJMATCH (excludes racks and other brands' products)' block @34502290, pasted in Chrome, curl 0 old / 3 new, 42 cards, 47/47 images 200).
