@@ -732,21 +732,6 @@
    "review": "looked at on white + navy Nov 7 (final_*.jpg)",
    "date": "2026-11-07"
   },
-  "www.bambirdboutique.com/wooden-two-player-mahjong-racks-set-of-2": {
-   "name": "Two Player Wood Mahjong Racks",
-   "brand": "Bam Bird Boutique",
-   "was": "G",
-   "file": "assets/table-view/racks/nov07/bambirdboutique_com_wooden_two_player_mahjong_racks_set_of_2_c8c831d6.webp",
-   "sha1": "5f53174d9852d1d576902127b1e1c7c3849d2d8a",
-   "w": 900,
-   "h": 277,
-   "photo": "https://cdn.shopify.com/s/files/1/0783/7237/2789/files/BamBird-StudioFeb2026-34_4a3920af-9950-41e5-849f-f2331d167a9b.jpg",
-   "method": "brand top-down photo of the set (racks laid apart, not touching): ONE rack's 4 corners -> perspective-straightened to a level view (cv2 homography), cut exactly to the rack's straight outline, 1px edge choke",
-   "len": 19,
-   "len_src": "brand product page: Two Player Wood Mahjong Racks",
-   "review": "looked at on white + navy Nov 7 (final_*.jpg)",
-   "date": "2026-11-07"
-  },
   "mahjmood.com/moss-green-wooden-racks-with-scalloped-pushers": {
    "name": "Mahj Mood Palm Beach Green Wooden",
    "brand": "Mahj Mood",
@@ -1385,6 +1370,13 @@
    "brand": "Peace Love Mahjong",
    "why": "Only an angled photo of these racks.",
    "note": "pale pink: no HD cut; the card photo re-cut loses the body (pink on white)",
+   "checked": "2026-11-07"
+  },
+  "www.bambirdboutique.com/wooden-two-player-mahjong-racks-set-of-2": {
+   "name": "Two Player Wood Mahjong Racks",
+   "brand": "Bam Bird Boutique",
+   "why": "Two-player double racks: too deep for the Table drawing.",
+   "note": "clean top-down cut exists (scratchpad), but 19x5.5in is deeper than the Table's 3.2in rack-depth cap, so it would draw squashed 45%",
    "checked": "2026-11-07"
   }
  }
