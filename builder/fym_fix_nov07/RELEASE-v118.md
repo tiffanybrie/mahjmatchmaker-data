@@ -61,5 +61,10 @@ copy r10 via site118.py (tiledeckprice118 applied after the tilerank JS), artifa
   card) is the same watermarked image.
 - **Gates:** [166b] tile-deck price order (node), [170] every m-list mat shown with a loadable photo in build / website copy /
   artifact folder (+ manifest), [171] visible watermarked photos unless accepted.
-- **Not done (needs the gallery chain):** Paint Feathers is now visible in FYM, so the staged Mat Gallery v8 / search index do not
-  carry it until the next gallery rebuild (build_v6 drops hidden FYM mats).
+- **Gallery + search (Paint Feathers now visible in FYM):** gallery photo let-s-be-besties--paint-feathers.webp = the clean crop
+  (@5e63ac8e); gallery_sync + build_accents + build_v6: rows data/matgallery-v118.json r3 @4cb195dc (1,496 rows; Mahjong Register
+  links now plain because config/autoapply-hosts.json moved it out Nov 7, code not set up), block matgallery-v8.html r3 @78072ca0
+  (data-fym="v118", link check 0 dead). Search index r3 built against that block @3afb680e, pinned in header-injection.html (warm:
+  2,728 URLs, a few jsDelivr 403s retried, see warm_result.json). Not pasted / not installed.
+- **First --release gate after the rebuild** failed [3c] (flag photo field pointed at the asset, not m/3096) and [90] (gallery had no
+  Paint Feathers card); both fixed above, gate re-run: docs/reports/fym/gate-v118-2026-11-08.txt.
