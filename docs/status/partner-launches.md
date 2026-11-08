@@ -1,18 +1,18 @@
-# Partner launches & restocks (2026-11-08 18:33 UTC)
+# Partner launches & restocks (2026-11-08 23:32 UTC)
 
-## Since last run: 10 to act on
-- **RESTOCK** Mahjong Studios · 20" Luxury Handmade Tortoise Shell Acrylic Mahjong Racks and Pusher Set (rack) · 20" Tortoise Shell Scalloped Pusher · https://mahjongstudios.com/products/20-luxury-handmade-tortoise-shell-acrylic-mahjong-racks-and-pusher-set
-- **RESTOCK** Mahjong Studios · Mahjong Studios - Rack and Pusher Set of 4 (rack) · 18.5" Luxury Tortoise Shell · https://mahjongstudios.com/products/mahjong-studios-rack-and-pusher-set-of-4
-- **RESTOCK** Mahjong Studios · 20" Clear Acrylic Scalloped Mahjong Rack & Pushers | Premium American Mahjong Rack Set (rack) · Clear · https://mahjongstudios.com/products/20-clear-acrylic-scalloped-mahjong-rack-pushers-premium-american-mahjong-rack-set
-- **NEW** Splash of Color · Mahj Airways (mat) · https://splashofcolorco.com/products/mahj-airways-travel-mini-mahjong-mat
-- **NEW** Splash of Color · The Mahj Motel Palm Springs 4Layer American Mahjong Tiles Set (tiles) · https://splashofcolorco.com/products/the-mahj-motel-palm-springs-4layer-american-mahjong-tiles-set
-- **NEW** Splash of Color · Mahj Airways Mahjong Mat Sleek Surface (mat) · https://splashofcolorco.com/products/mahj-airways-mahjong-mat-sleek-surface
-- **NEW** Splash of Color · Mahj Airways Engraved 4Layer American Mahjong Tiles Blue Green Layered (tiles) · https://splashofcolorco.com/products/mahj-airways-engraved-4layer-american-mahjong-tiles-blue-green-layered
-- **NEW** Splash of Color · Preppy Pink And White Striped Extended Mahjong Rack Set of 4  Scalloped Magnetic Tile Pusher (rack) · https://splashofcolorco.com/products/preppy-pink-and-white-striped-extended-mahjong-rack-set-of-4-scalloped-magnetic-tile-pusher
-- **NEW** Splash of Color · Palm Mahj Paradise Palm Springs Style Mahjong Mat Sleek Surface (mat) · https://splashofcolorco.com/products/palm-mahj-paradise-palm-springs-style-mahjong-mat-sleek-surface
-- **NEW** Splash of Color · Secret Society of Mahj Peacock Chinoiserie Chic American Engraved Mahjong Tiles (tiles) · https://splashofcolorco.com/products/secret-society-of-mahj-peacock-chinoiserie-chic-american-engraved-mahjong-tiles
+## Since last run: 8 to act on
+- **RESTOCK** Miss Mahjong · Blonde Tortoise and Brass Acrylic Racks (rack) · Default Title · https://missmahjong.com/products/blonde-tortoise-and-brass-acrylic-racks
+- **RESTOCK** Sunday Mahjong · Sunday Emerald Mahjong Rack Set (rack) · Default Title · https://sundaymahjong.com/products/emerald-mahjong-rack-set
+- **RESTOCK** Sunday Mahjong · Sunday Cola Mahjong Rack Set (rack) · Default Title · https://sundaymahjong.com/products/sunday-cola-mahjong-rack-set
+- **RESTOCK** Sunday Mahjong · Festive Plaid Premium Mahjong Mat (mat) · Default Title · https://sundaymahjong.com/products/festive-plaid-premium-mahjong-mat
+- **RESTOCK** Sunday Mahjong · Retro Plaid Premium Mahjong Mat (mat) · Regular · https://sundaymahjong.com/products/retro-plaid
+- **RESTOCK** Sunday Mahjong · Green Rattan Premium Mahjong Mat (mat) · Default Title · https://sundaymahjong.com/products/rattan-premium-mahjong-mat
+- **NEW** Let's Be Besties · Seasons Mid-Century Mahjong Mat (mat) · https://letsbebesties.com/products/seasons-mid-century-mahjong-mat
+- **NEW** Let's Be Besties · Nutcracker Christmas Mahjong Mat (mat) · https://letsbebesties.com/products/nutcracker-christmas-mahjong-mat
 
 ## Created/published in the last 7 days (tiles, mats, racks)
+- 2026-11-08 · Let's Be Besties · Seasons Mid-Century Mahjong Mat (mat) · available · https://letsbebesties.com/products/seasons-mid-century-mahjong-mat
+- 2026-11-08 · Let's Be Besties · Nutcracker Christmas Mahjong Mat (mat) · available · https://letsbebesties.com/products/nutcracker-christmas-mahjong-mat
 - 2026-11-08 · Splash of Color · Mahj Airways (mat) · available · https://splashofcolorco.com/products/mahj-airways-travel-mini-mahjong-mat
 - 2026-11-08 · Splash of Color · The Mahj Motel Palm Springs 4Layer American Mahjong Tiles Set (tiles) · available · https://splashofcolorco.com/products/the-mahj-motel-palm-springs-4layer-american-mahjong-tiles-set
 - 2026-11-08 · Splash of Color · Mahj Airways Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/mahj-airways-mahjong-mat-sleek-surface
@@ -66,15 +66,14 @@
 - 2026-11-02 · Anders Ruff · Puppy Love Solo Play Mahjong Mat (travel mat) · available · PREORDER/COMING SOON · https://shop.andersruff.com/products/puppy-love-solo-play-mahjong-mat
 - 2026-11-02 · Bespoke Mahjong · SUNSHINE GLOW (tiles) · available · https://www.bespokemahjong.com/products/sunshineglow
 - 2026-11-02 · Britt Mills · Isla Leatherette Mahjong Mat (mat) · available · https://brittmillsdesign.com/products/isla-leatherette-mahjong-mat
-- 2026-11-01 · Let's Be Besties · Camellia Kaleidoscope OHBoN Studios Artist Mahjong Mat (mat) · available · https://letsbebesties.com/products/camellia-kaleidoscope-artist-collab-leatherette-mahjong-mat
 
 ## Stores
 - amahjline.com: ok 33 products
 - birdandbamboo.com: ok 59 products
 - brittmillsdesign.com: ok 712 products
-- letsbebesties.com: ok 554 products
+- letsbebesties.com: ok 556 products
 - mahjandvine.com: ok 21 products
-- mahjmood.com: ok 55 products
+- mahjmood.com: ok 54 products
 - mahjongco.com: ok 1 products
 - mahjongregister.com: ok 75 products
 - mahjongstudios.com: ok 155 products
