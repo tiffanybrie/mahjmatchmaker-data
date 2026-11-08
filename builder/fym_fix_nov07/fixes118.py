@@ -23,6 +23,10 @@ for k, sl in OZ.items():
     u = f'https://www.ozarkmahjongg.com/product-page/{sl}'
     if k in M and M[k].get('u') != u:
         M[k]['u'] = M[k]['u0'] = u; M[k]['dc'] = ''; M[k]['pa'] = False; M[k].pop('u_dead', None); M[k].pop('u_plain', None); out.append(f'Ozark {M[k]["n"]} -> {u}')
+# 5. Album links for albums that went live (Juniper LIVE Nov 8 ~12:45am, MATCH-INBOX)
+for slug, url in {'juniper': 'https://www.mahjmatchmaker.com/juniper-mahjong-tile-matches'}.items():
+    for s in D['sets']:
+        if s['slug'] == slug and s.get('album') != url: s['album'] = url; out.append(f'{slug} album -> {url}')
 CC = json.load(open(R + 'config/colorcards.json'))['sets']
 # gate [103] rule, for every colour card (Nov 7: new cards keep arriving, e.g. Deco (Indigo)): no album title colour -> the card's
 # first back colour (or its title colour for an all-ivory back)
