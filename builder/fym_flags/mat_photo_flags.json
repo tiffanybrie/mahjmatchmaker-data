@@ -5971,7 +5971,157 @@
  "www.etsy.com/listing/4547277502/mahjong-mat-non-slip-tabletop-mat-home": {
   "name": "Hummingbird Floral Frame (Mint)",
   "brand": "Luna EK Studio",
+  "flag": "questionable",
+  "note": "Nov 7 ShopMy cross-check: The photo (ShopMy pin + Etsy listing photo) shows a koi + bamboo pond mat, not the mint hummingbird frame in the name (different product). The Mat Gallery already holds it (config/mat-gallery-photo-holds.json). Hidden + Questionable until a photo of the right mat exists."
+ },
+ "www.etsy.com/listing/4524615723/tropical-toucan-pink-palm-mahjong-mat": {
+  "name": "Tropical Toucan Pink Palm",
+  "brand": "Mahj & Moon",
   "flag": "ok",
-  "note": "Nov 3 Etsy ShopMy add: cropped to the mat, colours clear"
+  "note": "Nov 7 ShopMy cross-check add: cropped to the mat, colours clear"
+ },
+ "www.etsy.com/listing/4577957885/palm-tree-retro-tropical-mahjong-mat": {
+  "name": "Palm Tree Retro Tropical",
+  "brand": "Mahj & Moon",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: cropped to the mat, colours clear"
+ },
+ "www.etsy.com/listing/4575845329/vintage-floral-pink-mahjong-mat": {
+  "name": "Vintage Floral Pink",
+  "brand": "Mahj & Moon",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: cropped to the mat, colours clear"
+ },
+ "www.etsy.com/listing/4566953251/lobster-coastal-mahjong-mat": {
+  "name": "Lobster Coastal",
+  "brand": "Mahj & Moon",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: cropped to the mat, colours clear"
+ },
+ "www.etsy.com/listing/4600985202/scalloped-pink-floral-mahjong-mat": {
+  "name": "Scalloped Pink Floral",
+  "brand": "Mahj & Moon",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: cropped to the mat, colours clear"
+ },
+ "rebeccaillustrated.com/pool-pawty-mahjong-mat-preorder": {
+  "name": "Pool Pawty",
+  "brand": "Rebecca Illustrated",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: brand flat render, colours clear"
+ },
+ "rebeccaillustrated.com/canaries-mahjong-mat-preorder": {
+  "name": "Canaries",
+  "brand": "Rebecca Illustrated",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: brand flat render, colours clear"
+ },
+ "rebeccaillustrated.com/chinoiserie-citrus-mahjong-mat-preorder": {
+  "name": "Chinoiserie & Citrus",
+  "brand": "Rebecca Illustrated",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: brand flat render, colours clear"
+ },
+ "rebeccaillustrated.com/white-sailboats-mahjong-mat-preorder": {
+  "name": "White Sailboats",
+  "brand": "Rebecca Illustrated",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: brand flat render, colours clear"
+ },
+ "rebeccaillustrated.com/maxine-mahjong-mat-preorder": {
+  "name": "Maxine",
+  "brand": "Rebecca Illustrated",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: brand flat render, colours clear"
+ },
+ "rebeccaillustrated.com/pink-gingham-mahjong-mat-preorder": {
+  "name": "Pink Gingham",
+  "brand": "Rebecca Illustrated",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: brand flat render, colours clear"
+ },
+ "rebeccaillustrated.com/girly-bar-cart-mahjong-mat": {
+  "name": "Girly Bar Cart",
+  "brand": "Rebecca Illustrated",
+  "flag": "questionable",
+  "note": "Nov 7 ShopMy cross-check add: Only in-play photos: hands, tiles and drinks over the mat, angled (Oct 26 audit: Questionable). Needs a flat render from Rebecca."
+ },
+ "rebeccaillustrated.com/pickle-ball-mahjong-mat": {
+  "name": "Pickle Ball",
+  "brand": "Rebecca Illustrated",
+  "flag": "questionable",
+  "note": "Nov 7 ShopMy cross-check add: Only in-play photos: hands and tiles over the mat (Oct 26 audit: Questionable). Needs a flat render from Rebecca."
+ },
+ "waitingonmarthahome.com/cocktails-double-sided-mahjong-mat-pre-order": {
+  "name": "Cocktails Double Sided",
+  "brand": "Waiting On Martha",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: cropped to the mat, colours clear"
+ },
+ "waitingonmarthahome.com/vintage-twinkle-double-sided-mahjong-mat-pre-order": {
+  "name": "Vintage Twinkle Double Sided",
+  "brand": "Waiting On Martha",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: cropped to the mat, colours clear"
+ },
+ "waitingonmarthahome.com/tasslin-double-sided-mahjong-mat-pre-order": {
+  "name": "Tasslin' Double Sided",
+  "brand": "Waiting On Martha",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: cropped to the mat, colours clear"
+ },
+ "themahjonghouse.com/ruby-table-double-sided-mahjong-mat": {
+  "name": "Ruby Table Double-Sided",
+  "brand": "The Mahjong House",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: cropped to the mat, colours clear"
+ },
+ "dillards.com/southern-living-mahjong-green-ikat-mat": {
+  "name": "Green Ikat",
+  "brand": "Southern Living",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: cropped to the mat, colours clear"
+ },
+ "dillards.com/southern-living-mahjong-status-cats-pink-mat": {
+  "name": "Status Cats Pink",
+  "brand": "Southern Living",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: cropped to the mat, colours clear"
+ },
+ "dillards.com/southern-living-mahjong-bird-floral-mat": {
+  "name": "Bird Floral",
+  "brand": "Southern Living",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: cropped to the mat, colours clear"
+ },
+ "case-mate.com/mahjong-mats?v=67665869209736": {
+  "name": "Classic Tortoiseshell",
+  "brand": "Case-Mate",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: cropped to the mat, colours clear"
+ },
+ "case-mate.com/mahjong-mats?v=67665869242504": {
+  "name": "Classic Carolina Blue",
+  "brand": "Case-Mate",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: cropped to the mat, colours clear"
+ },
+ "case-mate.com/mahjong-mats?v=67665869275272": {
+  "name": "Classic Ballet Pink",
+  "brand": "Case-Mate",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: cropped to the mat, colours clear"
+ },
+ "case-mate.com/mahjong-mats?v=67665869406344": {
+  "name": "Classic Cabana Stripe",
+  "brand": "Case-Mate",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: cropped to the mat, colours clear"
+ },
+ "tnuck.com/in-full-bloom-mat-in-tube": {
+  "name": "In Full Bloom (Oh My Mahjong x Tuckernuck)",
+  "brand": "Tuckernuck",
+  "flag": "ok",
+  "note": "Nov 7 ShopMy cross-check add: cropped to the mat, colours clear"
  }
 }

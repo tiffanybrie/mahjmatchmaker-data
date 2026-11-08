@@ -430,6 +430,33 @@
    "reason": "Room/pool lifestyle shot with a text banner over the mat; mat angled and partly covered. Check the Etsy listing for a flat shot.",
    "photo": "assets/mats/shopmy-nov03/betty-june-jeannette-grace-peacock.jpg",
    "added": "2026-11-03"
+  },
+  {
+   "key": "rebeccaillustrated.com/girly-bar-cart-mahjong-mat",
+   "img": "m/3023.webp",
+   "name": "Girly Bar Cart",
+   "brand": "Rebecca Illustrated",
+   "reason": "Only in-play photos: hands, tiles and drinks over the mat, angled (Oct 26 audit: Questionable). Needs a flat render from Rebecca.",
+   "photo": "assets/mats/shopmy-nov07/rebecca-illustrated-girly-bar-cart.jpg",
+   "added": "2026-11-07"
+  },
+  {
+   "key": "rebeccaillustrated.com/pickle-ball-mahjong-mat",
+   "img": "m/3024.webp",
+   "name": "Pickle Ball",
+   "brand": "Rebecca Illustrated",
+   "reason": "Only in-play photos: hands and tiles over the mat (Oct 26 audit: Questionable). Needs a flat render from Rebecca.",
+   "photo": "assets/mats/shopmy-nov07/rebecca-illustrated-pickle-ball.jpg",
+   "added": "2026-11-07"
+  },
+  {
+   "key": "www.etsy.com/listing/4547277502/mahjong-mat-non-slip-tabletop-mat-home",
+   "img": "m/3008.webp",
+   "name": "Hummingbird Floral Frame (Mint)",
+   "brand": "Luna EK Studio",
+   "reason": "The photo (ShopMy pin + Etsy listing photo) shows a koi + bamboo pond mat, not the mint hummingbird frame in the name (different product). The Mat Gallery already holds it (config/mat-gallery-photo-holds.json). Hidden + Questionable until a photo of the right mat exists.",
+   "photo": "assets/mats/shopmy-nov03/luna-ek-studio-hummingbird-floral-frame-mint.jpg",
+   "added": "2026-11-07"
   }
  ]
 }

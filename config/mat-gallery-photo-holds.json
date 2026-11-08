@@ -23,10 +23,6 @@
    "name": "Luna EK Studio Hummingbird Floral Frame (Mint)",
    "reason": "listing photo shows a different mat (koi + bamboo, no hummingbirds); Etsy listing page not readable from here (403)"
   },
-  "www.etsy.com/listing/4549533535/personalized-mahjong-mat-sage-green": {
-   "name": "Luna EK Studio Sage Green Botanical",
-   "reason": "room shot: the mat is too small/far (QA Nov 6)"
-  },
   "alb2:splash-of-color-preppy-animal-print": {
    "name": "Splash of Color Preppy Animal Print",
    "reason": "room shot, 396x261 (QA Nov 6)"
@@ -40,6 +36,13 @@
   "tigre-de-tartan--french-mural": {
    "name": "Tigre de Tartan French Mural (+ its Mahj Pit twin, merged)",
    "reason": "every TdT (6) and Mahj Pit (4) brand photo has racks/box/cards covering the mat or is a close-up (re-QA Nov 6). When it comes back, config/mat-gallery-dedupe-v6.json still adds the \"Also at Mahj Pit\" link."
+  }
+ },
+ "released": {
+  "www.etsy.com/listing/4549533535/personalized-mahjong-mat-sage-green": {
+   "name": "Luna EK Studio Sage Green Botanical",
+   "when": "2026-11-07",
+   "why": "Nov 7 ShopMy cross-check: FYM's own photo (assets/mats/shopmy-nov03/luna-ek-studio-sage-green-botanical.jpg, the ShopMy pin cropped to the mat) fills the frame and shows the sage colour clearly (FYM low bar); the hold was for the full-size Etsy room shot. gallery_sync.py now uses the FYM photo (no override)."
   }
  }
 }
