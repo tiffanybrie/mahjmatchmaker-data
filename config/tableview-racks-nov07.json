@@ -1,5 +1,5 @@
 {
- "_about": "",
+ "_about": "Table view RACK cut-outs, Nov 7 2026 (Tiffany: Table view completely caught up; gap audit B3 169 of 293). racks: rack key -> clean straight single-rack cut-out for the Table (file, sha1 approved in builder/fym_flags/rack_image_review.json tag tv, looked at on white + navy), brand length; not_usable: still grayed, why = the line the swap sheet shows, note = what the brand photos lack. Applied by builder/fym_fix_nov07/tableview_racks_v118.py.",
  "racks": {
   "www.ohmymahjong.com/blond-tortoise-rack-and-pusher-set": {
    "name": "Blond Tortoise Rack and Pusher Set",
@@ -956,7 +956,436 @@
    "len_src": "brand product page: Jewel Tone Multi-Color Acrylic Mahjong Racks, 18\" - Set of 4",
    "review": "looked at on white + navy Nov 7 (final_*.jpg)",
    "date": "2026-11-07"
+  },
+  "talamahj.com/shoreline-mahjong-rack-wavy-pusher-20-inches-set-of-4-ships-oct-1-chocolate-woven-rattan": {
+   "name": "Tala Mahj Shoreline Chocolate Woven Rattan",
+   "brand": "Tala Mahj",
+   "was": "P",
+   "file": "assets/table-view/racks/nov07/pusher_20_inches_set_of_4_ships_oct_1_chocolate_woven_rattan_557cfd67.webp",
+   "sha1": "8f8da4854f1b1d1476890b16436115bbc83a8520",
+   "w": 900,
+   "h": 83,
+   "photo": "https://cdn.shopify.com/s/files/1/0817/8447/1768/files/Tala-FINALS-August2026-29.jpg",
+   "method": "brand single-rack product photo (level front view on white): cut out (rembg isnet), auto-levelled (envelope lines -> homography), 3x3 alpha opening + 2px edge choke + fym_defringe",
+   "len": 20.0,
+   "len_src": "brand product page: Shoreline Mahjong Rack & Wavy Pusher | 20 Inches | Set of 4 | Chocolat",
+   "review": "looked at on white + navy Nov 7 (final_*.jpg)",
+   "date": "2026-11-07"
   }
  },
- "not_usable": {}
+ "not_usable": {
+  "shop.andersruff.com/jade-acrylic-mahjong-rack-set-straight-pushers": {
+   "name": "Anders Ruff Jade",
+   "brand": "Anders Ruff",
+   "why": "Only an angled photo of these racks.",
+   "note": "3/4 view along the rack only; straightened, the far half smears",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "shop.andersruff.com/pistachio-acrylic-rack-set-scalloped-pushers": {
+   "name": "Anders Ruff Pistachio Green Scalloped",
+   "brand": "Anders Ruff",
+   "why": "Only an angled photo of these racks.",
+   "note": "3/4 view only; a large glare patch reads as a hole once cut",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "shop.andersruff.com/clear-acrylic-mahjong-rack-set-scalloped-pushers": {
+   "name": "Clear Acrylic Rack Set — Scalloped Pushers",
+   "brand": "Anders Ruff",
+   "why": "Clear racks: no photo we can cut cleanly yet.",
+   "note": "clear acrylic, end-on single photo / on mats",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "shop.andersruff.com/clear-acrylic-mahjong-rack-set-straight-pushers": {
+   "name": "Clear Acrylic Rack Set — Straight Pushers",
+   "brand": "Anders Ruff",
+   "why": "Clear racks: no photo we can cut cleanly yet.",
+   "note": "clear acrylic with brass corners, thin outline; cut was not clean",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=53275679654197": {
+   "name": "Bam Bird Boutique Lucite – Frosted Pink",
+   "brand": "Bam Bird Boutique",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "brand single shots are the coloured PUSHERS (BamBird_New_Pushers), racks only in groups",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.bambirdboutique.com/lucite-rack-and-pusher-set-set-include-4-racks-and-4-pushers?v=51322611368245": {
+   "name": "Bam Bird Boutique Lucite – Neon",
+   "brand": "Bam Bird Boutique",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "same: single shot is the pusher",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.bamletsmahjong.com/mahjong-acrylic-racks-and-ruffle-pushers-pre-order": {
+   "name": "Bam! Let's Mahjong White Acrylic Scalloped",
+   "brand": "Bam! Let's Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "the 4 racks touch on a pink ground; quad cut picked up the pink",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.bamletsmahjong.com/mahjong-clear-acrylic-racks-and-scallop-pusher": {
+   "name": "Mahjong Clear Acrylic Racks and Scallop Pusher",
+   "brand": "Bam! Let's Mahjong",
+   "why": "Clear racks: no photo we can cut cleanly yet.",
+   "note": "clear acrylic, group/with tiles only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.bamletsmahjong.com/white-acrylic-double-mahjong-racks-with-magnetic-pushers-set-of-2": {
+   "name": "White Acrylic Double Mahjong Racks with Magnetic Pushers (Set of 2)",
+   "brand": "Bam! Let's Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "double racks, lifestyle only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.bamletsmahjong.com/white-acrylic-racks-set-4": {
+   "name": "White Acrylic Mahjong Racks - Set of 4",
+   "brand": "Bam! Let's Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "group / with tiles only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.bamletsmahjong.com/wooden-mahjong-racks-pushers-black-4-set": {
+   "name": "Wooden Mahjong Racks & Pushers - Black - 4 Set",
+   "brand": "Bam! Let's Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "one photo: racks stacked with tiles",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-garden-green": {
+   "name": "Bespoke Mahjong The Ultimate",
+   "brand": "Bespoke Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "stacked group + lifestyle only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-plum": {
+   "name": "The Ultimate Rack - ELECTRIC ORCHID",
+   "brand": "Bespoke Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "stacked group + lifestyle only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-hottie-pink": {
+   "name": "The Ultimate Rack - HIGHLIGHTER PINK",
+   "brand": "Bespoke Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "stacked group + lifestyle only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-red": {
+   "name": "The Ultimate Rack - HOLIDAY RED",
+   "brand": "Bespoke Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "stacked group only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.bespokemahjong.com/the-ultimate-rack-turquoise": {
+   "name": "The Ultimate Rack - PEACOCK BLUE",
+   "brand": "Bespoke Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "stacked group + lifestyle only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue?v=55711274959153": {
+   "name": "Charleston Mahjong Club Azalea Pink Wood",
+   "brand": "Charleston Mahjong Club",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "plain-ground photos crop the rack ends (38.15); others angled groups",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.charlestonmahjongclub.com/clear-acrylic-mahjong-racks-with-magnetic-pushers-set-of-4-20-long": {
+   "name": "Charleston Mahjong Club Clear Acrylic",
+   "brand": "Charleston Mahjong Club",
+   "why": "Clear racks: no photo we can cut cleanly yet.",
+   "note": "clear acrylic on white, angled",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue?v=55711274926385": {
+   "name": "Charleston Mahjong Club Key Lime Wood",
+   "brand": "Charleston Mahjong Club",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "same as Azalea: ends cropped",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue": {
+   "name": "NEW SHELF ANGLE! 20\" Wooden Mahjong Racks  – 4 Color Options – Admiral Blue",
+   "brand": "Charleston Mahjong Club",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "4 colours in one listing, ends cropped",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.hiphipmahjong.com/hostess-with-the-mostest-racks": {
+   "name": "Hip Hip Mahjong Hostess With The Mostest",
+   "brand": "Hip Hip Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "group (staggered) / lifestyle only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.hiphipmahjong.com/santa-baby-racks": {
+   "name": "Hip Hip Mahjong Santa Baby",
+   "brand": "Hip Hip Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "lifestyle only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.hiphipmahjong.com/trophy-wife-racks": {
+   "name": "Hip Hip Mahjong Trophy Wife",
+   "brand": "Hip Hip Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "lifestyle only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.hiphipmahjong.com/trust-fund-racks": {
+   "name": "Trust Fund Racks",
+   "brand": "Hip Hip Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "lifestyle only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.letsmahj-on.com/luxe-acrylic-scalloped-mahjong-rack": {
+   "name": "Luxe Acrylic Scalloped Mahjong Rack - Clear",
+   "brand": "Let's Mahj On",
+   "why": "Clear racks: no photo we can cut cleanly yet.",
+   "note": "clear acrylic, angled / lifestyle",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.letsmahj-on.com/luxe-acrylic-scalloped-mahjong-rack-pink": {
+   "name": "Luxe Acrylic Scalloped Mahjong Rack - Pink",
+   "brand": "Let's Mahj On",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "end view / lifestyle",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "mahjmood.com/chocolate-brown-wooden-racks-with-scalloped-pushers": {
+   "name": "Mahj Mood Chocolate Brown Wooden",
+   "brand": "Mahj Mood",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "top-down set on a busy floral print, racks and pushers interleaved",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "mahjmood.com/luxe-racks-amethyst": {
+   "name": "Mahj Mood Luxe",
+   "brand": "Mahj Mood",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "same, translucent: print shows through",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "mahjmood.com/luxe-racks-grey-marble-acrylic-4": {
+   "name": "Mahj Mood Luxe",
+   "brand": "Mahj Mood",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "same, translucent: print shows through",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "mahjmood.com/copy-scalloped-clear-acrylic-rack-and-pusher-set-of-4": {
+   "name": "Mahj Mood Scalloped Clear Acrylic",
+   "brand": "Mahj Mood",
+   "why": "Clear racks: no photo we can cut cleanly yet.",
+   "note": "clear acrylic group on marble",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "mahjmood.com/scalloped-tortoise-acrylic-racks-and-pushers": {
+   "name": "Mahj Mood Scalloped Tortoise Acrylic",
+   "brand": "Mahj Mood",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "group on marble at an angle",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53017129451832": {
+   "name": "Mahjong Register Crystal Clear Scalloped",
+   "brand": "Mahjong Register",
+   "why": "Clear racks: no photo we can cut cleanly yet.",
+   "note": "clear acrylic: only an annotated infographic",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.middleandmainmahjong.com/clear-acrylic-mahjong-rack-and-pusher-set-of-4": {
+   "name": "Clear Acrylic Mahjong Rack and Pusher, Set of 4",
+   "brand": "Middle & Main Mahjong",
+   "why": "Clear racks: no photo we can cut cleanly yet.",
+   "note": "clear acrylic, tiles on it / end-on",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.middleandmainmahjong.com/la-vie-en-rose-mahjong-rack-and-pusher-set-of-4": {
+   "name": "La Vie En Rose Mahjong Rack and Pusher, Set of 4",
+   "brand": "Middle & Main Mahjong",
+   "why": "Only an angled photo of these racks.",
+   "note": "translucent, end-on single photo; straightened cut was not clean",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.middleandmainmahjong.com/blue-and-white-chinoiserie-rack-set-of-4": {
+   "name": "Middle & Main Blue and White Chinoiserie",
+   "brand": "Middle & Main Mahjong",
+   "why": "Only an angled photo of these racks.",
+   "note": "single photos crop the rack end",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.middleandmainmahjong.com/milk-glass-collection-mahjong-rack-and-pusher-set-of-4": {
+   "name": "Milk Glass Collection Mahjong Rack and Pusher, Set of 4",
+   "brand": "Middle & Main Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "clean photos have tiles on the rack",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "missmahjong.com/scalloped-acrylic-racks": {
+   "name": "Clear Acrylic Racks with Scalloped Pusher",
+   "brand": "Miss Mahjong",
+   "why": "Clear racks: no photo we can cut cleanly yet.",
+   "note": "clear acrylic, close-ups / tiles",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "missmahjong.com/dark-tortoise-classic-acrylic-racks": {
+   "name": "Dark Tortoise Classic Acrylic Racks",
+   "brand": "Miss Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "top-down set photo crops the rack ends; others angled groups",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "missmahjong.com/dark-tortoise-and-brass-acrylic-racks": {
+   "name": "Dark Tortoise and Brass Acrylic Racks",
+   "brand": "Miss Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "same as Dark Tortoise",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "missmahjong.com/blonde-tortoise-and-brass-acrylic-racks": {
+   "name": "Miss Mahjong Blonde Tortoise and Brass Acrylic",
+   "brand": "Miss Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "same as Dark Tortoise",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "missmahjong.com/wood-racks-with-classic-pusher": {
+   "name": "Wood Racks with Classic Pusher",
+   "brand": "Miss Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "close-ups / with tiles",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-white": {
+   "name": "Wavy Mahjong Rack Pusher Set - White",
+   "brand": "Peace Love Mahjong",
+   "why": "Only an angled photo of these racks.",
+   "note": "white rack on white: close-up crops only; no HD cut",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "theroyalmahjongsociety.com/mahjong-rack-clear": {
+   "name": "Royal Mahjong Society Mahjong Rack - Clear",
+   "brand": "Royal Mahjong Society",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "lifestyle with bags only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "theroyalmahjongsociety.com/mahjong-rack-white": {
+   "name": "Royal Mahjong Society Mahjong Racks - White",
+   "brand": "Royal Mahjong Society",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "lifestyle with bags only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "tigredetartan.com/dove-white-beech-wood-straight-mahjong-racks-with-pushers-custom-storage-bag": {
+   "name": "Tigre de Tartan Dove White Beechwood",
+   "brand": "Tigre de Tartan",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "racks overlap on a patterned cloth",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "tigredetartan.com/marine-blue-beech-wood-straight-mahjong-racks-with-pushers-custom-storage-bag": {
+   "name": "Tigre de Tartan Marine Blue Beechwood",
+   "brand": "Tigre de Tartan",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "patterned cloth / lifestyle",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "tigredetartan.com/marine-blue-beech-wood-scalloped-mahjong-racks-with-pushers-custom-storage-bag": {
+   "name": "Tigre de Tartan Marine Blue Beechwood Scalloped",
+   "brand": "Tigre de Tartan",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "patterned cloth / lifestyle",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "tigredetartan.com/rich-raisin-beech-wood-straight-mahjong-racks-with-pushers-custom-storage-bag": {
+   "name": "Tigre de Tartan Rich Raisin Beechwood",
+   "brand": "Tigre de Tartan",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "patterned cloth (racks apart, but edges not cuttable cleanly) / lifestyle",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "tigredetartan.com/february-preorder-tortoise-scalloped-acrylic-mahjong-racks-with-magnetic-pushers-set-of-4-with-dust-bag": {
+   "name": "Tigre de Tartan Tortoise Acrylic Scalloped",
+   "brand": "Tigre de Tartan",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "lifestyle only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.ymimports.com/nb-mp004-a": {
+   "name": "Modern Mahjong Racks with Built-in Pushers - Clear - Set of 4",
+   "brand": "Yellow Mountain Imports",
+   "why": "Clear racks: no photo we can cut cleanly yet.",
+   "note": "clear; single photo carries dimension arrows/text",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.ymimports.com/nb-mp007-a": {
+   "name": "Yellow Mountain Modern Multi-Color",
+   "brand": "Yellow Mountain Imports",
+   "why": "Only an angled photo of these racks.",
+   "note": "single photo carries dimension arrows/text over the rack",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "www.ymimports.com/us-rl025-a": {
+   "name": "Yellow Mountain Multi-Color Acrylic",
+   "brand": "Yellow Mountain Imports",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "group only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "sundaymahjong.com/blonde-tortoise-mahjong-rack-set": {
+   "name": "Sunday Mahjong Blonde Tortoise",
+   "brand": "Sunday Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "lifestyle only (non-partner)",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "sundaymahjong.com/candy-blue-mahjong-rack-set": {
+   "name": "Sunday Mahjong Candy Blue",
+   "brand": "Sunday Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "lifestyle only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "sundaymahjong.com/clear-mahjong-rack-set": {
+   "name": "Sunday Mahjong Clear",
+   "brand": "Sunday Mahjong",
+   "why": "Clear racks: no photo we can cut cleanly yet.",
+   "note": "clear, lifestyle only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "sundaymahjong.com/sunday-cola-mahjong-rack-set": {
+   "name": "Sunday Mahjong Sunday Cola",
+   "brand": "Sunday Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "lifestyle only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "sundaymahjong.com/tortoise-mahjong-rack-set": {
+   "name": "Sunday Mahjong Tortoise",
+   "brand": "Sunday Mahjong",
+   "why": "Only a group or lifestyle photo of these racks.",
+   "note": "lifestyle only",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "talamahj.com/horizon-rack": {
+   "name": "Tala Mahj Horizon Woven Rattan",
+   "brand": "Tala Mahj",
+   "why": "Only an angled photo of these racks.",
+   "note": "racks touching / 3/4 end view",
+   "checked": "2026-11-07: every product-page image looked at (brand products.json)"
+  },
+  "peacelovemahjong.com/wavy-mahjong-rack-pusher-set-light-pink": {
+   "name": "Wavy Mahjong Rack Pusher Set - Light Pink",
+   "brand": "Peace Love Mahjong",
+   "why": "Only an angled photo of these racks.",
+   "note": "pale pink: no HD cut; the card photo re-cut loses the body (pink on white)",
+   "checked": "2026-11-07"
+  }
+ }
 }
