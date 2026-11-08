@@ -1210,5 +1210,238 @@
   "type": "pattern",
   "src": "back photo measured (nov07 box inside one back, FYM tile photo; checked by eye as back | wall swatch)",
   "patch": "assets/table-view/backs/bam-bird-boutique-boots-and-bubbles-pink-swirl.webp"
+ },
+ "bespoke-mahjong-lucky-charms-marshmallow-pink": {
+  "back": "#f4d4e3",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-lucky-charms-marshmallow-pink.jpg; checked by eye as back | wall swatch)"
+ },
+ "bespoke-mahjong-springtime-safari-petal-pink": {
+  "back": "#ec899f",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-springtime-safari-petal-pink.jpg; checked by eye as back | wall swatch)"
+ },
+ "bespoke-mahjong-springtime-safari-sky-blue": {
+  "back": "#87d3c7",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-springtime-safari-sky-blue.jpg; checked by eye as back | wall swatch)"
+ },
+ "bespoke-mahjong-the-chalet-frosty-lilac": {
+  "back": "#c6c5cc",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-the-chalet-frosty-lilac.jpg; checked by eye as back | wall swatch)"
+ },
+ "bespoke-mahjong-pop-diva-bright-white": {
+  "back": "#d9d9d6",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-pop-diva-bright-white.jpg; checked by eye as back | wall swatch)"
+ },
+ "bespoke-mahjong-the-chalet-frosty-pearl-white": {
+  "back": "#bfbfb7",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-the-chalet-frosty-pearl-white.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/bespoke-mahjong-the-chalet-frosty-pearl-white.webp"
+ },
+ "bespoke-mahjong-year-of-the-horse-pearl-cream": {
+  "back": "#d8ccbd",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-year-of-the-horse-pearl-cream.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/bespoke-mahjong-year-of-the-horse-pearl-cream.webp"
+ },
+ "bespoke-mahjong-year-of-the-horse-saddle-pink": {
+  "back": "#fe96d7",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-year-of-the-horse-saddle-pink.jpg; checked by eye as back | wall swatch)"
+ },
+ "bespoke-mahjong-corey-paige-color-crush-pearl-crush": {
+  "back": "#f5f0ef",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-corey-paige-color-crush-pearl-crush.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/bespoke-mahjong-corey-paige-color-crush-pearl-crush.webp"
+ },
+ "bespoke-mahjong-grateful-dead-rose-pink-tie-dye-pearl": {
+  "back": "#fcf8f6",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-grateful-dead-rose-pink-tie-dye-pearl.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/bespoke-mahjong-grateful-dead-rose-pink-tie-dye-pearl.webp"
+ },
+ "bespoke-mahjong-grateful-dead-stealie-blue-tie-dye-pearl": {
+  "back": "#626a81",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-grateful-dead-stealie-blue-tie-dye-pearl.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/bespoke-mahjong-grateful-dead-stealie-blue-tie-dye-pearl.webp"
+ },
+ "bespoke-mahjong-garden-glow-matcha-pearl": {
+  "back": "#e1eedc",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-garden-glow-matcha-pearl.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/bespoke-mahjong-garden-glow-matcha-pearl.webp"
+ },
+ "bespoke-mahjong-garden-glow-sunshine-glow": {
+  "back": "#fdeaa7",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-garden-glow-sunshine-glow.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/bespoke-mahjong-garden-glow-sunshine-glow.webp"
+ },
+ "bespoke-mahjong-grateful-dead-x-bespoke-mahjong-xl-mega": {
+  "back": "#4d7fbc",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-grateful-dead-x-bespoke-mahjong-xl-mega.jpg; checked by eye as back | wall swatch)"
+ },
+ "bespoke-mahjong-gray-malin-getaway-dogs-beverly-hills-pink": {
+  "back": "#fdbfc7",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-gray-malin-getaway-dogs-beverly-hills-pink.jpg; checked by eye as back | wall swatch)"
+ },
+ "bespoke-mahjong-gray-malin-getaway-dogs-icy-blue": {
+  "back": "#b9e3d9",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-gray-malin-getaway-dogs-icy-blue.jpg; checked by eye as back | wall swatch)"
+ },
+ "bespoke-mahjong-gray-malin-getaway-dogs-bright-white": {
+  "back": "#f6ede8",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-gray-malin-getaway-dogs-bright-white.jpg; checked by eye as back | wall swatch)"
+ },
+ "bespoke-mahjong-bespoke-x-gray-malin-beach-club": {
+  "back": "#6583cf",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-bespoke-x-gray-malin-beach-club.jpg; checked by eye as back | wall swatch)"
+ },
+ "bespoke-mahjong-bespoke-x-gray-malin-getaway-dogs-xl-mega": {
+  "back": "#dfe3ee",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-bespoke-x-gray-malin-getaway-dogs-xl-mega.jpg; checked by eye as back | wall swatch)"
+ },
+ "bespoke-mahjong-grateful-dead-sunshine-daydream-tie-dye-pearl": {
+  "back": "#c3bbab",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/bespoke-mahjong-grateful-dead-sunshine-daydream-tie-dye-pearl.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/bespoke-mahjong-grateful-dead-sunshine-daydream-tie-dye-pearl.webp"
+ },
+ "my-fair-mahjong-the-jubilee-series": {
+  "back": "#dedade",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/my-fair-mahjong-the-jubilee-series.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/my-fair-mahjong-the-jubilee-series.webp"
+ },
+ "my-fair-mahjong-the-lumera-series": {
+  "back": "#c8a8b1",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/my-fair-mahjong-the-lumera-series.jpg; checked by eye as back | wall swatch)"
+ },
+ "my-fair-mahjong-the-texas-series": {
+  "back": "#d0d9e0",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/my-fair-mahjong-the-texas-series.jpg; checked by eye as back | wall swatch)"
+ },
+ "my-fair-mahjong-crystal-prism": {
+  "back": "#07a6e1",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/my-fair-mahjong-crystal-prism.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/my-fair-mahjong-crystal-prism.webp"
+ },
+ "my-fair-mahjong-the-new-england-series": {
+  "back": "#dddee1",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/my-fair-mahjong-the-new-england-series.jpg; checked by eye as back | wall swatch)"
+ },
+ "my-fair-mahjong-the-park-series": {
+  "back": "#93cbaa",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/my-fair-mahjong-the-park-series.jpg; checked by eye as back | wall swatch)"
+ },
+ "my-fair-mahjong-the-hawaii-series": {
+  "back": "#01cbd4",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/my-fair-mahjong-the-hawaii-series.jpg; checked by eye as back | wall swatch)"
+ },
+ "my-fair-mahjong-the-southwest-series": {
+  "back": "#f7d5d2",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/my-fair-mahjong-the-southwest-series.jpg; checked by eye as back | wall swatch)"
+ },
+ "my-fair-mahjong-motor-city-series": {
+  "back": "#022ba3",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/my-fair-mahjong-motor-city-series.jpg; checked by eye as back | wall swatch)"
+ },
+ "my-fair-mahjong-southeast-series": {
+  "back": "#79d1c4",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/my-fair-mahjong-southeast-series.jpg; checked by eye as back | wall swatch)"
+ },
+ "my-fair-mahjong-nyc-series": {
+  "back": "#d0d7dd",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/my-fair-mahjong-nyc-series.jpg; checked by eye as back | wall swatch)"
+ },
+ "my-fair-mahjong-florida-series": {
+  "back": "#f6e9e8",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/my-fair-mahjong-florida-series.jpg; checked by eye as back | wall swatch)"
+ },
+ "my-fair-mahjong-anywhere-series": {
+  "back": "#a4dffc",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/my-fair-mahjong-anywhere-series.jpg; checked by eye as back | wall swatch)"
+ },
+ "my-fair-mahjong-the-scandinavian-folk-art-series": {
+  "back": "#d9e0f7",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/my-fair-mahjong-the-scandinavian-folk-art-series.jpg; checked by eye as back | wall swatch)"
+ },
+ "anders-ruff-green-light-gatsby": {
+  "back": "#023a3e",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/anders-ruff-green-light-gatsby.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/anders-ruff-green-light-gatsby.webp"
+ },
+ "peace-love-mahjong-merry-nutcracker": {
+  "back": "#d4dbe6",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/peace-love-mahjong-merry-nutcracker.jpg; checked by eye as back | wall swatch)"
+ },
+ "peace-love-mahjong-og-desert-dreams": {
+  "back": "#b4beca",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/peace-love-mahjong-og-desert-dreams.jpg; checked by eye as back | wall swatch)"
+ },
+ "peace-love-mahjong-og-pretty-in-pink": {
+  "back": "#fcb8e6",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/peace-love-mahjong-og-pretty-in-pink.jpg; checked by eye as back | wall swatch)"
+ },
+ "peace-love-mahjong-og-totally-teal": {
+  "back": "#017f90",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/peace-love-mahjong-og-totally-teal.jpg; checked by eye as back | wall swatch)"
+ },
+ "oh-my-mahjong-poppy-debutante": {
+  "back": "#f2ddec",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/oh-my-mahjong-poppy-debutante.jpg; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/oh-my-mahjong-poppy-debutante.webp"
+ },
+ "tigre-de-tartan-house-clovers-classic": {
+  "back": "#adb2b0",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/tigre-de-tartan-house-clovers-classic.jpg; checked by eye as back | wall swatch)",
+  "sprite": "assets/table-view/backs/tigre-de-tartan-house-clovers-classic-sprite.webp"
+ },
+ "amahj-original-stamped": {
+  "back": "#dbe6e8",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/amahj-original-stamped.jpg; checked by eye as back | wall swatch)"
+ },
+ "amahj-foundation-beginner": {
+  "back": "#eeede9",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/amahj-foundation-beginner.jpg; checked by eye as back | wall swatch)"
+ },
+ "middle-main-mahjong-peach-pine": {
+  "back": "#ec9a7f",
+  "type": "solid",
+  "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/middle-main-mahjong-peach-pine.jpg; checked by eye as back | wall swatch)"
  }
 }
