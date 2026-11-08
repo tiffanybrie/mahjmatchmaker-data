@@ -34,7 +34,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **Rainy day (Tiffany Nov 8 1:11pm, tabled):** TNT search for albums live before the TNT gate: Juniper, Papaya Spritz, Brownstone Bloom, Sunday, Shangri-la, Lilac Soirée, Preppy Soirée, Spring Love (remove each from SKIP in scripts/checks/tnt_check.py when done). Already found Nov 8 before tabling: Juniper none; Papaya Spritz 1 rec (Vivienne mat, Oh My Mahjong, poster Bird Bam Cheer); Brownstone no mat recs (rack ask: Mahj Diva Lilac Luxe, Mahj Mood Luxe Amethyst). TNT group: facebook.com/groups/1350179120446918.
 - **Main: Bam Bird deposits** done (her 4:35pm screenshot + Chrome verify). **OPS (Chrome): September check** for the Payout Tracker 'Close October' (own-dashboard brands, Commission Sep 1-30 unpaid rows → docs/payouts/brands.csv sep_check; confirm Middle & Main Oct 13 $43.88 and Bird & Bamboo Oct 26 $106.65 are September).
 - **OPS: copy flat renders to Dropbox /Mahj Matchmaker Albums/New releases/<brand>/**: Fait à Main Texas Mon Amour Cream (assets/launches/faitamain-texas-mon-amour-mat-cream/), LBB Tidal Glass Simple Middle (assets/launches/letsbebesties-tidal-glass-with-simple-middle-mahjong-mat/), Bam! Let's Mahjong teaser, Nov 2-6 list (Nov 5 desk). Mahj Pit Full Sizes Black Tiles: photos once posted (search Tiles & Tablescapes).
-- **OPS: partner newsletter signups** (docs/PARTNER-NEWSLETTERS.md, 24 TODO rows; popup method; I Love Mahj + Amahj: check Gmail first). **Follow + favorite @mahjpit.co**; minimahjer.com Black Friday code check.
+- **Follow + favorite @mahjpit.co**; minimahjer.com Black Friday code check. (Partner newsletter signups DONE Nov 8 except the 9 hCaptcha stores: see Blocked, approved.)
 - **Main: blog posts name album tile sets but don't link them** (list in the Nov 5 desk, git show 09006524:docs/DESK.md). Target Mon Nov 9.
 - **Main: revenue-alert cards**: 11 per-brand alert docs still sit in HQ needs (archived/info-only); fold into one Money summary in the morning report.
 - **Main: prompt fixes still not applied**: sales-check prompt (all secomapp/goaffpro/backinstock mails, refunds on the refund date); "close leftover Claude tab groups" in every Chrome task; mat-edit-alert step in launch watch trig_01S2VsjwznnHev1uUbYmEwJq; launch/partner watch "wholesale customers only" + same-day FB group draft.
@@ -62,7 +62,6 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Merged pinned FYM reel (01a1b83b-fc22) | Tiffany posts | On "send me the pinned reel": file + steps in chat. | When she posts |
 | Easy content button (3 samples → daily auto post) | Tiffany yes → Main | Switch the Fri prep task after her yes. | Mon Nov 9 |
 | Payout Tracker 'Close October' September check | Ops (Chrome) | Handoffs. | Mon Nov 9 |
-| Partner newsletter signups (24 left) | Ops (Chrome) | docs/PARTNER-NEWSLETTERS.md. | Tue Nov 10 |
 | ManyChat comment-for-links draft + trial reminder | Main (Chrome) | OVERDUE lines (low priority, her Nov 6 4:11pm). | Tue Nov 10 |
 | Work With v3 + Brands form | Ops | Default applies: goes up HIDDEN as is next Chrome trip unless she types wait/changes (HQ This week). | Next Chrome trip |
 | Holiday new-albums email | Main | Squarespace draft; her final read. | Mon Nov 9 |
@@ -76,6 +75,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Affiliate applications (apply kit doc 00h) | Tiffany submits | Top of the Affiliates tab. | Fri Nov 13 |
 
 ## Blocked, approved (raise at the top of every attended reply until done)
+- **Partner newsletters, 9 stores block automated signup (Shopify hCaptcha)**: Amahj, Bam! Let's Mahjong, Mahj Mood, Let's Be Besties, Mini Mahjer, My Fair, The Mahjong Press, Tigre de Tartán, Splash of Color. Next step: Tiffany types mahjmatchmaker@gmail.com into each store's footer box on her phone (~10s each); then mark rows in docs/PARTNER-NEWSLETTERS.md. (Hip Hip + Mahjong Register have no signup form; Middle & Main store is offline.)
 - **6 scheduled tasks OFF** (Google report, code report, ShopMy pickup, sales check, newsletter signups, new-affiliate builder): only she can switch them on (safety check blocks chats). HQ Today #1.
 - **Bing Webmaster Tools** (her yes Nov 6): one tap from her on Google's account chooser (OVERDUE line has the steps).
 - **Planoly roll-forward + story-caption fixes**: the unattended desk run is refused for update_post (4th night, 0 of 8 tonight). Priority 3a lists them; an attended Main chat does it Sun.
