@@ -18,4 +18,5 @@ Pieces:
 - Dating profile: assets/colorcards/juniper/00-juniper-mahjong-tiles-profile-d-story.jpg (swipe_profile.py juniper). Profile data: config/profiles/juniper.json.
 - Intro carousel (7): assets/social/juniper-launch/intro/1-7.jpg (intro.py juniper; carousel.py/intro.py read launch_photos, rack_imgs, layers from the profile).
 - Match cards (32, round-3 order): assets/cards/juniper/ + manifest.json (scripts/albumcard/specs/juniper_build.py -> gen2.py, spec navy v3 + true_len). Order = scripts/albumcard/specs/juniper_round3.json.
+Nov 7: +6 holiday cards (#33-38) + The Kerry (#39), Camellia -> best, Esme -> faces-only (soft), new profile prompt; see NOTES-round3-nov06.md "Nov 7".
 Open: pronoun for Juniper (brand guide s3: ask her once; drafts use "her"); match count 33 is the draft count; racks are Claude's picks pending her OK.

@@ -21,3 +21,11 @@ DO NOT rebuild/republish until she says go (she was kicked out of the page by th
 18. Sunday mat: why "Sunday Premium"? (check real name) and take it OUT: tiles too bright for it, rack picks looked ridiculous.
 19. Crane & Moon and Day Dreamer: low resolution; she needs to see them again (find better photos).
 (She did not finish the page: the rest of the mats, faces pick and other sections still to review.)
+
+## Nov 7 (Tiffany 7:38-7:42pm, docs/ANSWERS.md) applied in files, NOT published (she is working in the ordering page NcjAba5oRhBEZB2rfiJx1H)
+- #15 superseded: Esme STAYS IN, matched on the faces only (group soft, why rewritten). Camellia: her call, the deep leaves ARE forest green, a great match (group best; "no forest green" was wrong and is gone from manifest/spec/page source).
+- Holiday matches (she wants every tile set to show holiday matches): cards #33-38, group "holiday", holiday-coded card (HOLIDAY MATCH band + flame-heart), spec scripts/albumcard/specs/juniper_holiday_nov07.json (JUNIPER_ORDER_START=33). Mahj Mood Holly Berry, OMM Yuletide, PLM Peace Love & Mistletoe, Anders Ruff Watercolor Christmas Tree, Mahjong Register Very Merry Wreath Premium, PLM Perfectly Wrapped. Full-size brand photos in assets/colorcards/juniper/mats/.
+- The Kerry (Betty June & Jeannette, her question): good soft match, card #39 (group soft), mat racks = her Oct 20 Kerry registry picks.
+- Profile prompt "Green flag I look for" (sounded weird) -> "We'll get along if / You bring the pink. I've got the green covered." Profile story + intro slide 1 re-rendered.
+- Crane & Moon: she is questioning it; no change.
+- Review page juniper-album.html NOT rebuilt (images pinned to @95ec1edf; the new cards need a new pin): build.py text updated, rebuild with a new sha when the page is next published.

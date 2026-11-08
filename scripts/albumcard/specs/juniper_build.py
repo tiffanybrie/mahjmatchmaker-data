@@ -61,6 +61,12 @@ def reg_for(path, name):
 # next to OMM racks and Pink Quartz = pink + pink, so neither comes back on the MAT side either.
 DROPPED = {'Miss Mahjong Jade & Brass', 'Oh My Mahjong Pink Quartz'}
 def drawable(l): return l.startswith('Bird & Bamboo ') or RKS.photo(l) is not None
+# Nov 7 (Tiffany 7:42pm, holiday matches in Juniper): spec mat 'holiday': true -> holiday-coded card (gen2/card2 'hol' band +
+# flame-heart, same as the holiday album cards) and manifest holiday true. JUNIPER_ORDER_START=<n> numbers appended cards
+# after the existing ones (build them in their own workdir and append their manifest rows; never renumber the 32).
+import base64 as _b64
+FLAME = 'data:image/png;base64,' + _b64.b64encode(open(R + 'assets/brand/flame-heart-holiday.png', 'rb').read()).decode()
+OFF = int(os.environ.get('JUNIPER_ORDER_START', '1')) - 1
 cards, man = [], []
 for c in A['mats']:
     nm, brand, retired = c['name'], c['brand'], c['retired']
@@ -79,13 +85,13 @@ for c in A['mats']:
             for l in pick(m, exclude=TRACKS + mr + sorted(DROPPED)):
                 if l not in mr and len(mr) < 2: mr.append(l)
     fn = f"juniper-mahjong-tiles-{slug(brand)}-{slug(nm)}-mat.jpg"
-    code = footer(brand, retired); n = len(cards) + 1
+    code = footer(brand, retired); n = len(cards) + 1 + OFF; hol = bool(c.get('holiday'))
     cards.append({'slug': f'jun{n:02d}', 'title': f'Juniper + {nm}', 'col': CC['col'], 'tile_file': CC['tile'],
-                  'tilefit': 'cover', 'racks': TRACKS, 'mat_racks': mr, 'file': fn, 'code': code, 'mat': uri(m)})
-    man.append({'order': n, 'group': c['group'], 'mat': nm, 'brand': brand, 'retired_mat': retired, 'holiday': False,
+                  'tilefit': 'cover', 'racks': TRACKS, 'mat_racks': mr, 'file': fn, 'code': code, 'mat': uri(m), 'hol': hol, 'flame': FLAME if hol else None})
+    man.append({'order': n, 'group': c['group'], 'mat': nm, 'brand': brand, 'retired_mat': retired, 'holiday': hol,
                 'file': fn, 'code': code, 'src': c['img'], 'racks': TRACKS, 'mat_racks': mr, 'mat_reg': rk,
                 'skipped_no_photo': skipped, 'why': c['why'],
-                'caption_note': 'Pair mat' if nm == 'Lotus Cove' else ('New candidate' if c['group'] == 'new' else ('Weak: yours to cut' if c['group'] == 'weak' else None))})
+                'caption_note': 'Holiday match' if hol else 'Pair mat' if nm == 'Lotus Cove' else ('New candidate' if c['group'] == 'new' else ('Weak: yours to cut' if c['group'] == 'weak' else None))})
 json.dump({'_note': 'Juniper album DRAFT (Nov 6 round 3)', 'cards': cards, 'max_racks': 4, 'tile_brand': 'Oh My Mahjong',
            'navy': 'assets/brand/card_navy_logo_v3.png', 'true_len': True}, open(W + '/spec.json', 'w'))
 json.dump({'set': 'Juniper', 'status': "DRAFT: round 3 = Tiffany's Nov 6 notes applied, pending her final order", 'cards': man, 'title_color': CC['col'], 'tile': CC['tile'],

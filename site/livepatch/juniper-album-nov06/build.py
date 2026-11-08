@@ -52,7 +52,8 @@ for title, sub, items in G:
     faces += f'<h3 class="fg">{e(title)} <small>{e(sub)}</small></h3><div class="fgrid{" sm" if small else ""}">{cards}</div>'
 carousel = ''.join(f'<div class="slide">{img(f"assets/social/juniper-launch/intro/{i}.jpg", f"Intro carousel slide {i}")}<span>{i}</span></div>' for i in range(1, 8))
 GROUPS = {'top': 'Top three', 'best': 'Among the best', 'deep': 'Forest green + pink', 'bright': 'Pink &amp; green brights', 'chino': 'Chinoiserie gardens',
-          'soft': 'Soft', 'stone': 'Stone &amp; solid', 'new': 'New candidate: your call', 'weak': 'Weak: yours to cut'}
+          'soft': 'Soft', 'stone': 'Stone &amp; solid', 'new': 'New candidate: your call', 'weak': 'Weak: yours to cut',
+          'holiday': 'Holiday matches'}  # Nov 7: holiday group (Tiffany 7:42pm)
 N = len(MAN)
 mc, cur = '', None
 for c in MAN:
@@ -111,11 +112,11 @@ ul{{padding-left:20px;margin:6px 0}}li{{margin:3px 0}}
 <div class="note" id="r3"><p><b>Your round-3 notes, applied</b> (the rest of the page is still yours to review):</p><ul>
 <li>Order: Palm Royale #1, Garden Glow #2, Lotus Cove #3. Peonies Burst, Cherry Blossom Jade, Palm Beach Tropical Pink Lime and Zesty Plume moved up to &ldquo;Among the best&rdquo;.</li>
 <li>Out: Mahj In Bloom Mat and the Sunday mat (its real name is Sunday Premium Mahjong Mat, the mat Sunday Mahjong made for its own Sunday Tile Set).</li>
-<li>Esme and Emerald Leopard in Bloom are at the bottom under &ldquo;Weak&rdquo;, yours to cut. Oh My Mahjong Camellia (retired) added as a new candidate.</li>
+<li>Camellia (retired) is among the best: its deep leaves are forest green (your Nov 7 call). Esme stays in, matched on the faces. Emerald Leopard in Bloom is at the bottom under &ldquo;Weak&rdquo;, yours to cut.</li>\n<li>Holiday matches (Nov 7): Holly Berry, Yuletide, Peace Love &amp; Mistletoe, Watercolor Christmas Tree, Very Merry Wreath Premium, Perfectly Wrapped. Plus The Kerry in Soft.</li>
 <li>Every match card now uses the tile pile photo, the current logo (flame with the heart) and racks drawn at their real length. The White Acrylic rack is a clean new cutout.</li>
 <li>Crane &amp; Moon and Day Dreamer cards rebuilt from the brands&rsquo; 3000px photos.</li>
 <li>Cover frame has the double white lines on top, like the other Oh My Mahjong covers. Color card says &ldquo;Seeking: hot pink, kelly or forest green.&rdquo;</li>
-<li>New profile prompt (Green flag I look for), the layer arrows are on the joker tile, and the color wheel now shows light and dark, so Forest Green Jade sits on dark green.</li>
+<li>New profile prompt (We&rsquo;ll get along if), the layer arrows are on the joker tile, and the color wheel now shows light and dark, so Forest Green Jade sits on dark green.</li>
 </ul></div>
 
 <h2 id="faces">Pick her 4 best features</h2>
@@ -146,7 +147,7 @@ ul{{padding-left:20px;margin:6px 0}}li{{margin:3px 0}}
 </div>
 
 <h2 id="profile">Dating profile + intro carousel <span class="draft">DRAFT</span></h2>
-<p class="lede">Doc 81 format. Launch line &ldquo;Launching Wed 11/11 · Oh My Mahjong&rdquo;. Top 3: Palm Royale, Garden Glow, Lotus Cove; slide 6 &ldquo;Made for each other&rdquo; = Lotus Cove, the official pair. New third prompt: &ldquo;Green flag I look for: A pink center. Opposites attract.&rdquo; Slide 4 shows Claude&rsquo;s 4 faces until your picks go in. The match count ({N}) is this draft&rsquo;s count; it updates to your final album.</p>
+<p class="lede">Doc 81 format. Launch line &ldquo;Launching Wed 11/11 · Oh My Mahjong&rdquo;. Top 3: Palm Royale, Garden Glow, Lotus Cove; slide 6 &ldquo;Made for each other&rdquo; = Lotus Cove, the official pair. New third prompt: &ldquo;We&rsquo;ll get along if: You bring the pink. I&rsquo;ve got the green covered.&rdquo; Slide 4 shows Claude&rsquo;s 4 faces until your picks go in. The match count ({N}) is this draft&rsquo;s count; it updates to your final album.</p>
 <div class="two">{img('assets/colorcards/juniper/00-juniper-mahjong-tiles-profile-d-story.jpg', 'Juniper dating profile story', 'big')}{img('assets/social/juniper-launch/juniper-favorite-tiles-DRAFT.jpg', 'Her best features draft graphic', 'big')}</div>
 <p class="lede">Intro carousel, 7 slides (swipe):</p>
 <div class="car">{carousel}</div>
