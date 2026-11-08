@@ -65,6 +65,6 @@ copy r10 via site118.py (tiledeckprice118 applied after the tilerank JS), artifa
   (@5e63ac8e); gallery_sync + build_accents + build_v6: rows data/matgallery-v118.json r3 @4cb195dc (1,496 rows; Mahjong Register
   links now plain because config/autoapply-hosts.json moved it out Nov 7, code not set up), block matgallery-v8.html r3 @78072ca0
   (data-fym="v118", link check 0 dead). Search index r3 built against that block @3afb680e, pinned in header-injection.html (warm:
-  2,728 URLs, a few jsDelivr 403s retried, see warm_result.json). Not pasted / not installed.
+  2,728 URLs, all 200 after retrying 26 transient jsDelivr 403s). Not pasted / not installed.
 - **First --release gate after the rebuild** failed [3c] (flag photo field pointed at the asset, not m/3096) and [90] (gallery had no
   Paint Feathers card); both fixed above, gate re-run: docs/reports/fym/gate-v118-2026-11-08.txt.
