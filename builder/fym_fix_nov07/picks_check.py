@@ -80,13 +80,16 @@ def run(B, argv=()):
             ha = open(os.path.join(A, 'index.html')).read(); DA = LD(ha)
             man = json.load(open(A.rstrip('/') + '.manifest.json'))
             r = re.search(r"c>=190&&c<=(\d+)\?190:c", ha); hi = int(r.group(1)) if r else 189
+            # Nov 8 (1.18 publish): a second pack (split_pack118.py) when mc/190.webp passes the tool's per-file limit
+            r2 = re.search(r"\?190:c>=(\d+)&&c<=(\d+)\?(\d+):c", ha); p2 = [int(r2.group(1)), int(r2.group(2))] if r2 and r2.group(1) == r2.group(3) else None
+            if (man.get('pack2') or None) != p2: F.append(f"[170] artifact: manifest pack2 {man.get('pack2')} != page routing {p2}")
             if man.get('pack_hi') != hi: F.append(f"[170] artifact: manifest pack range 190-{man.get('pack_hi')} != page routing 190-{hi} (re-run artifact118.py)")
             def art_ok(f):
                 m = re.fullmatch(r'm/(\d+)\.webp', f)
                 if not m: return None if f.startswith('data:') else 'not a chunk photo'
-                c = int(m.group(1)) // 12; p = 'mc/190.webp' if 190 <= c <= hi else f'mc/{c}.webp'
+                c = int(m.group(1)) // 12; p = 'mc/190.webp' if 190 <= c <= hi else f'mc/{p2[0]}.webp' if p2 and p2[0] <= c <= p2[1] else f'mc/{c}.webp'
                 if p not in man['files']:
-                    return None if f'mc/{c}.json' in man['files'] and p != 'mc/190.webp' else f'{p} is not in the artifact'
+                    return None if f'mc/{c}.json' in man['files'] and p == f'mc/{c}.webp' else f'{p} is not in the artifact'
                 if man['files'][p] is None: return f'{p} contents not verifiable (no live mirror copy)'
                 return None if f in man['files'][p] else f'not in {p}'
             copy_check('artifact ' + os.path.basename(A.rstrip('/')), DA, ha, art_ok)
