@@ -55,7 +55,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Sunday albums ×4 | Tiffany picks → Matches & Catalog | Priority 5. | Mon Nov 9 |
 | Match inbox: ~19 old unmarked lines + 32 LBB listings | Matches & Catalog | Priority 5. | Mon Nov 9 |
 | Album wiring gaps (7 live albums; C2 hearts staged, see missed album picks row) | Matches & Catalog | Gap audit C1/C2. | Tue Nov 10 |
-| Deco Mulberry + Indigo review pages (Lagoon v3 published Nov 8) | Matches & Catalog | Publish Mulberry + Indigo (rebuilt @5f65e307) + send links; she picks faces/order. | Mon Nov 9 |
+| Deco Mulberry + Indigo review pages (Lagoon v3 published Nov 8) | Matches & Catalog | Mulberry: everything on record (album_gate passes except [0] her tile-photo yes, asked Nov 8 ~1:40pm, and [8] the Ocean Florals card, which renders right after her yes). On her yes: set config/album-records/deco-mulberry.json tile_photo.approved_at, run its card_build commands, `python3 scripts/albumreview/build_review.py deco-mulberry`, publish index.html + files.json as a new artifact with capabilities {db:{rules:[{path:"",read:"view",write:"admin"}]}}, save the url as record review_url. Indigo: record stub only (tile photo asked); steps 1-8 + catalog_refresh still to record. | Mon Nov 9 |
 | Missed-mats picks into 43 albums | Tiffany yes → Matches & Catalog | Her yeses go in automatically. | On her picks |
 | Black Friday deals page | Tiffany yes → Ops | Paste + index before PLM Nov 16. | Thu Nov 12 |
 | FB group week Nov 9-15 | Tiffany yes → Main (Chrome) | Mon codes post standing; rest on her yes. | Mon Nov 9 |
