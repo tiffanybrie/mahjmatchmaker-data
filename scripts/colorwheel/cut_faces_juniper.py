@@ -3,7 +3,10 @@ ohmymahjong.com/products/juniper-mahjong-tiles.json = assets/launches/omm-junipe
 The flat lay is a 10 x 5 grid of butted tiles separated by a 1-2px shadow line. We find each line exactly (column /
 row median darkness inside a search window), crop just inside it, and give the tile a rounded-corner alpha mask:
 no white frame, no shadow. Output: assets/tiles/faces/juniper/clean/<name>.png
-Usage: python3 scripts/colorwheel/cut_faces_juniper.py"""
+Usage: python3 scripts/colorwheel/cut_faces_juniper.py [name ...]
+Nov 7: checked every OMM Juniper image (tiles, starter kit, ultimate kit; retailers carry none). The flat lay is the
+ONLY straight-on shot of all faces and its master is 3185x3982 (~266 px per tile); the 2048px corner close-up is angled
+with depth-of-field blur, so these ~256x351 cutouts are the sharpest true source. No upscaling."""
 import numpy as np, os
 from PIL import Image, ImageDraw
 R = '/home/claude/mahjmatchmaker-data/'
@@ -33,6 +36,10 @@ NAMES = [
  ['wind-north', 'wind-east', 'wind-west', 'wind-south', 'joker-1', 'joker-2', 'joker-3', 'joker-4', 'joker-5', None],
 ]
 INSET = 5; RAD = 22
+# per-tile extra inset (left, top, right, bottom): Nov 7 bam-1-peacock top edge carried a sliver of the shadow line
+EXTRA = {'bam-1-peacock': (0, 3, 0, 0)}
+import sys
+ONLY = set(sys.argv[1:])  # optional: cut only these names
 def mask(w, h):
     s = 4; m = Image.new('L', (w * s, h * s), 0)
     ImageDraw.Draw(m).rounded_rectangle([0, 0, w * s - 1, h * s - 1], RAD * s, fill=255)
@@ -40,8 +47,9 @@ def mask(w, h):
 n = 0
 for j, row in enumerate(NAMES):
     for i, nm in enumerate(row):
-        if not nm: continue
+        if not nm or (ONLY and nm not in ONLY): continue
+        el, et, er, eb = EXTRA.get(nm, (0, 0, 0, 0))
         bot = 12 if j == 4 else INSET  # bottom row: the outer edge shows a sliver of the green layers
-        box = (xs[i] + INSET, ys[j] + INSET, xs[i + 1] - INSET + 1, ys[j + 1] - bot + 1)
+        box = (xs[i] + INSET + el, ys[j] + INSET + et, xs[i + 1] - INSET + 1 - er, ys[j + 1] - bot + 1 - eb)
         t = im.crop(box).convert('RGBA'); t.putalpha(mask(*t.size)); t.save(OUT + nm + '.png'); n += 1
 print(n, 'tiles ->', OUT)
