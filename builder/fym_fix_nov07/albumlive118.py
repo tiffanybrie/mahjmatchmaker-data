@@ -22,6 +22,10 @@ for slug in ('juniper',):
         os.makedirs(os.path.dirname(out), exist_ok=True); im = Image.open(src).convert('RGB'); im.thumbnail((1200, 1200)); im.save(out, 'JPEG', quality=88)
         t['full'] = rel; t.pop('fo', None); nt += 1
         if s['tile'] in L['tiles']: L['tiles'][s['tile']]['full'] = rel
+    TF = json.load(open(R + 'builder/fym_flags/tile_photo_flags.json'))  # gate [3c]: the cleaned photo on record is the album photo
+    if slug in TF and TF[slug].get('photo') != rel:
+        TF[slug].update(photo=rel, flag='ok', note=f"Nov 8 (FYM 1.18): album photo {t['src']} (OMM pile shot, round 3), LOOKED at: faces, backs and layers clear")
+        json.dump(TF, open(R + 'builder/fym_flags/tile_photo_flags.json', 'w'), indent=1, ensure_ascii=False)
 lm, _, _ = expected(json.loads(json.dumps(D))); nr = 0
 for s in D['sets']:
     for x in s.get('m', []):
