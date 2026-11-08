@@ -1,15 +1,9 @@
 {
- "at": "2026-11-07T22:20:11",
+ "at": "2026-11-07T22:30:11",
  "date": "2026-11-07",
  "pages": 39,
  "hub_brands": 38,
- "fails": [
-  "/soiree-all-day-discount-code: SEO description states a % without the scope /Mahjong Collection/: \"Save 10% at Soir\u00e9e All Day with discount code MAHJMATCH. Verified code for mahjong mats, score cards, notecard\"",
-  "hub row Mahjong Studios: offer should say /MAHJMATCH/ (truth: MAHJMATCH) but says \"\u2014 Shop through my link (see page)\"",
-  "hub: FAQ says \"most of the 39 mahjong brands\" but lists 38",
-  "hub: ItemList numberOfItems 39 but lists 38 brands",
-  "hub: heading says \"All 39\" but lists 38 brands"
- ],
+ "fails": [],
  "warns": [
   "/mahjong-row-and-co-discount-code: removed Mahjong Row & Co. page still in sitemap.xml (1 days since 2026-11-06; status 302) WARN: sitemap lag allowed up to 3 days",
   "/cypress-forest-mahjong-tile-matches: removed Mahjong Row & Co. page still in sitemap.xml (1 days since 2026-11-06; status 302) WARN: sitemap lag allowed up to 3 days"
