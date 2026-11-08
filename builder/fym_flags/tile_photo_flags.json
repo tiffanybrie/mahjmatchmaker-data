@@ -525,5 +525,12 @@
   "flag": "ok",
   "note": "Nov 5 v115: brand photo 03",
   "photo": "t115/mahj-pit-commuter-skinny-midnights.jpg"
+ },
+ "yellow-mountain-imports-outlaws-of-the-marsh-mahjong-treasure-set": {
+  "name": "Outlaws of the Marsh Mahjong Treasure Set",
+  "maker": "Yellow Mountain Imports",
+  "flag": "no_tiles",
+  "photo": "t15/177.jpg",
+  "note": "Nov 8 (FYM 1.18 QA F3): showed the 'PHOTO COMING SOON' placeholder; set stays hidden until a real photo exists. Brand images checked Nov 8 (ymimports.com/products/hb-at002-a.json): a single-tile face/side/back shot and a full-set layout strip."
  }
 }

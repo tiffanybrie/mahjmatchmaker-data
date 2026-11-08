@@ -5533,8 +5533,10 @@
  "letsbebesties.com/paint-feathers-neoprene-mahjong-mat": {
   "name": "Paint Feathers",
   "brand": "Let's Be Besties",
-  "flag": "questionable",
-  "note": "angled floor shot; the only other image is a close-up crop (QA round 2 Nov 1)"
+  "flag": "ok",
+  "photo": "m/3096.webp",
+  "src": "assets/mats/qafix-nov08/lbb-paint-feathers-flat.jpg",
+  "note": "Nov 8 (FYM 1.18 QA F1): brand photo IMG-3212 (straight-down shot of the whole mat) perspective-corrected + cropped to the mat; whole mat, colours clear (LOOKED at). Was questionable (angled floor shot, Nov 1)."
  },
  "letsbebesties.com/leatherette-tobacco-leaves": {
   "name": "Tobacco Leaves",

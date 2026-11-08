@@ -1,0 +1,45 @@
+{
+ "_about": "Photos that carry a brand watermark / copyright text (FYM 1.18 QA F3, Nov 8). fym_gate.py [171] FAILS on any VISIBLE tile set (T.full == photo) or mat (M.f == photo) listed here unless accepted is true. accepted = no clean brand image exists (every brand image checked, listed in why); swap the photo and drop the line when one appears. New watermark finds go here the same day (kind tile|mat, key, photo, accepted false).",
+ "items": [
+  {
+   "kind": "tile",
+   "key": "www.macandmillermahjong.com/heirloom-collection-fire-fortune-verdant-fortune-coming-soon",
+   "name": "Fire + Fortune (Verdant)",
+   "brand": "Mac + Miller Mahjong",
+   "photo": "t15/144.jpg",
+   "watermark": "\"© 2026 Mac and Miller Mahjong\" across the photo",
+   "accepted": true,
+   "why": "Nov 8: every image on the product (macandmillermahjong.com/products/heirloom-collection-fire-fortune-verdant-fortune-coming-soon.json, 12 images) and the whole store catalog (/products.json, 36 products) checked: all carry the watermark; no clean image exists. Kept until the brand posts one."
+  },
+  {
+   "kind": "tile",
+   "key": "www.macandmillermahjong.com/heirloom-collection-fire-fortune-ember-fire-coming-soon",
+   "name": "Fire + Fortune (Ember)",
+   "brand": "Mac + Miller Mahjong",
+   "photo": "t15/143.jpg",
+   "watermark": "\"© 2026 Mac and Miller Mahjong\" across the photo",
+   "accepted": true,
+   "why": "Nov 8: all 12 product images (heirloom-collection-fire-fortune-ember-fire-coming-soon.json) + /products.json checked: all watermarked; no clean image exists."
+  },
+  {
+   "kind": "tile",
+   "key": "www.macandmillermahjong.com/coming-soon-red-white-blues-collection",
+   "name": "Red White & Blues Collection",
+   "brand": "Mac + Miller Mahjong",
+   "photo": "t71/mac-miller-mahjong-red-white-blues-collection.jpg",
+   "watermark": "\"© 2026 Mac and Miller Mahjong\" across the photo",
+   "accepted": true,
+   "why": "Nov 8: all 16 product images (coming-soon-red-white-blues-collection.json) + /products.json checked: all watermarked; no clean image exists."
+  },
+  {
+   "kind": "mat",
+   "key": "mahjtilehaus.com/palm-royale-mat",
+   "name": "Palm Royale",
+   "brand": "Mahj Tile Haus",
+   "photo": "m/1644.webp",
+   "watermark": "faint repeated \"Tile Haus\" script watermark over the mat",
+   "accepted": true,
+   "why": "Nov 8: Juniper's #2 Tiffany's match, never hidden. mahjtilehaus.com answers /products/*.json with a bot check (not retried); the only other copy we hold (assets/colorcards/juniper/mats/palm-royale-mahj-tile-haus.jpg, the album colour card) is the same watermarked image. Kept until a clean image is found."
+  }
+ ]
+}

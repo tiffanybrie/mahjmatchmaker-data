@@ -61,4 +61,7 @@ for s_ in [x for x in ('price118.py', 'zoomswipe_v118.py', 'tableview_v118.py', 
 if subprocess.run(['git', '-C', H, 'ls-files', '--error-unmatch', 'tilerank_v118.py'], capture_output=True).returncode == 0:
     sys.path.insert(0, H); import tilerank_v118 as _TR
     _p = OUTD + '/index.html'; _h, _did = _TR.patch_js(open(_p).read()); open(_p, 'w').write(_h)
+# tile-deck price groups (QA F2, Nov 8): after price118 + the tilerank JS patch
+if subprocess.run(['git', '-C', H, 'ls-files', '--error-unmatch', 'tiledeckprice118.py'], capture_output=True).returncode == 0:
+    subprocess.run([sys.executable, H + '/tiledeckprice118.py', OUTD + '/index.html'], check=True)
 print('site118: index', os.path.getsize(OUTD + '/index.html'), 'new chunks', NEWC)

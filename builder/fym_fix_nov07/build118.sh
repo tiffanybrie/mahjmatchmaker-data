@@ -7,7 +7,8 @@
 #  d. revive_links.py: dead-link items whose store product is live again get their shop button back (OMM Pearlescent, $475)
 #  -  autoapply_links + v104rank (new mats colour-ranked, gate [107]) + v92_coordinated (gate [57]) + colour116 + locks
 #  b. tv118.py: Table view walls from config/tableview-back-colors.json (BACKS = a committed snapshot) + prices refreshed
-#  e. price118.py: no-price items shown last with 'Price not listed' instead of hidden (gate [166])
+#  e. price118.py: no-price items shown last with 'Price not listed' instead of hidden (gate [166]); tiledeckprice118.py: same in the mat-door tile deck ([166b])
+#  f. qafix118.py (QA Nov 8): LBB Paint Feathers clean photo + visible, YMI Outlaws set hidden (no_tiles); gates [170] picks, [171] watermarks
 #  c. zoomswipe_v118.py (after the data patches), then release118.py (Version 1.18 + tracking)
 # Usage: build118.sh <b117 dir> <b118 dir> <backs json>. Out = hardlinks to b117 + NEW index.html (b117 is never modified; new mc
 # chunks are new files).
@@ -34,6 +35,7 @@ python3 "$R/builder/fym_fix_nov06/sideb116.py" "$D" | tail -1
 python3 "$H/picks118.py" "$D" --report "$D/picks118.json"                # Tiffany's missed-mats round-1 yeses into m (+ locks)
 python3 "$H/juniper_m118.py" "$D"                                        # Juniper m = her final album order (config/picks/juniper-fym-m-2026-11-07.json, + locks)
 python3 "$H/albumlive118.py" "$D"                                      # live album (Juniper): album photo locked + her rack picks lead each pairing
+python3 "$H/qafix118.py" "$D"                                         # QA Nov 8: Paint Feathers clean photo + visible (Juniper 42/42), YMI Outlaws placeholder set hidden (no_tiles)
 python3 "$R/builder/fym_apply_locks.py" "$D" | tail -2
 if git -C "$R" ls-files --error-unmatch "$H/tilerank_v118.py" >/dev/null 2>&1; then python3 "$H/tilerank_v118.py" "$D" | tail -2; fi   # mat-door tile order (D.tso + JS, gate [168])
 python3 "$H/tv118.py" "$D" --backs "$BK"
@@ -42,6 +44,7 @@ for x in prices_v118.py tableview_v118.py tableview_racks_v118.py; do           
 done
 python3 "$H/rackhold118.py" "$D"                                        # gate [146]: rack cut-outs with a halo held from the Table
 python3 "$H/price118.py" "$D"
+python3 "$H/tiledeckprice118.py" "$D"                                  # QA Nov 8 F2: mat-door tile deck keeps unpriced sets last with a price chosen (gate [166b])
 python3 "$H/zoomswipe_v118.py" "$D" | tail -1
 if git -C "$R" ls-files --error-unmatch "$H/doors_v118.py" >/dev/null 2>&1; then python3 "$H/doors_v118.py" "$D" | tail -2; fi                  # doors patch (after zoomswipe), when present
 python3 "$H/release118.py" "$D"

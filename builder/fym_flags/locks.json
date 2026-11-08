@@ -37091,9 +37091,6 @@
   "letsbebesties.com/tobacco-leaves-blue-neoprene-mahjong-mat": {
    "hid": true
   },
-  "letsbebesties.com/paint-feathers-neoprene-mahjong-mat": {
-   "hid": true
-  },
   "letsbebesties.com/leatherette-tobacco-leaves": {
    "hid": true
   },
@@ -37830,7 +37827,8 @@
   "2026-10-31 v109 non-partner brands: Betty June & Jeannette + Piper Chase Studios (Etsy, ShopMy links)",
   "2026-11-06 Tiffany: Mahjong Row & Co. OUT of FYM (1:19pm) + every Mahjong Co. mat hidden, retired (3:56pm): hid=true on their 15 locked mats; Kaleidoscope tiles stay",
   "2026-11-06 v116 Mahjong Row & Co. OUT of FYM (Tiffany Nov 6 1:19pm + 1:33pm scope, docs/ANSWERS.md): locked hid -> true for 9 items (builder/fym_fix_nov06/mr_out.py)",
-  "2026-10-26: 41 thin-album hearts appended to sets m (gemma, jasmine, limoncello, nantucket, osler, pippa, sorbet, sunset, taylor); Tiffany's hearts in the thin-album review Oct 23-24 = her real picks (config/fym-thin-picks-oct26.json)"
+  "2026-10-26: 41 thin-album hearts appended to sets m (gemma, jasmine, limoncello, nantucket, osler, pippa, sorbet, sunset, taylor); Tiffany's hearts in the thin-album review Oct 23-24 = her real picks (config/fym-thin-picks-oct26.json)",
+  "2026-11-08 FYM 1.18 QA F1: letsbebesties.com/paint-feathers-neoprene-mahjong-mat hid lock removed: clean photo found (brand IMG-3212 cropped to the mat, builder/fym_fix_nov07/qafix118.py); Tiffany's Juniper final 42 (her yes Nov 7 11:21pm)"
  ],
  "racks": {
   "mahjongrowandco.com/scalloped-deluxe-tortoise-rack": {

@@ -63,6 +63,9 @@ Exits non-zero and prints every failure. Checks (add one for each bug type Tiffa
     angled shots), 90 gallery sync (warn)
  158 (Nov 5, v115 QA) no visible mat photo beyond 2:1, no tile photo beyond 2.3:1 (strips / edge crops)
  159 (Nov 6) every mat/rack/tile link of a Shopify code partner auto-applies the code (/discount/<CODE>?redirect=...; config/autoapply-hosts.json), FYM + staged gallery
+ 166b (Nov 8, 1.18 QA) mat-door tile deck + See all with a price: unpriced sets last (node run of the page's code, Lotus Cove 'Under $175')
+ 170 (Nov 8, 1.18 QA) every Tiffany's-match (m) mat shown + photo loads in build, website copy and artifact folder (picks never slimmed)
+ 171 (Nov 8, 1.18 QA) no visible watermarked photo (builder/fym_flags/watermark_flags.json) unless accepted
  167 (Nov 7, FYM 1.18) door parity: same filters for an item type in both doors / every step / Table view + 'same brand' (doors_check.py)
  164 (Nov 7, FYM 1.18) zoom swipe: a zoomed card still swipes past the photo edge / on a flick (builder/fym_fix_nov07/zoomswipe_v118.py; node test zoomswipe_check.js)
  159b (Nov 6) staged Mat Gallery stamped with the newest FYM version (data-fym); --release: the LIVE /mahjong-mats too (FAIL), else WARN
@@ -2002,6 +2005,45 @@ try:
     sys.path.insert(0, REPO + 'builder/fym_fix_nov07'); import tilerank_check as _tc168
     F.extend(_tc168.run(B))
 except Exception as _e: F.append(f"[168] tiles-for-a-mat ranking check did not run: {_e}")
+# [166b] Nov 8 2026 (FYM 1.18 independent QA F2: mat door -> Lotus Cove -> 'Under $175' dealt Taylor 'Price not listed' 6th and 31 priced
+#       sets after it; tAll() re-sorted by D.tso + brand cap after the price wrapper). Runs the page's OWN code in node: tile deck (tAll) and
+#       'See all' sections for Lotus Cove + 4 most-picked mats x every price option: no priced set after an unpriced one, none over the
+#       limit, tile-rank order inside each price group. Fix: builder/fym_fix_nov07/tiledeckprice118.py <copy>.
+try:
+    _r166b = subprocess.run(['node', REPO + 'builder/fym_fix_nov07/tiledeckprice_check.js', B], capture_output=True, text=True, timeout=600)
+    _j166b = json.loads(_r166b.stdout.strip().splitlines()[-1])
+    for _x in _j166b['fails']: F.append('[166b] ' + _x)
+    for _x in _j166b['notes'][:2]: print('FYM GATE INFO [166b] ' + _x[:400])
+except Exception as _e: F.append(f"[166b] tile-deck price order check did not run: {_e}")
+# [170] Nov 8 2026 (FYM 1.18 independent QA F1: the artifact copy slimmed 8 of Juniper's 42 picks and picks on 22 other sets; the website
+#       copy hid Paint Feathers). Every m-list mat is shown with a photo that loads in the build, the website copy (origin/fym-site-preview
+#       newest fym-vNN) and the artifact folder (pub<NN> next to the build, or --artifact <dir>, + its .manifest.json); hidden only when the
+#       pair is in m_hidden_ok.json. builder/fym_fix_nov07/picks_check.py; fix: artifact118.py (picks never slimmed).
+try:
+    sys.path.insert(0, REPO + 'builder/fym_fix_nov07'); import picks_check as _pc170
+    _f170, _i170 = _pc170.run(B, sys.argv)
+    F.extend(_f170[:40] + ([f'[170] ... {len(_f170) - 40} more'] if len(_f170) > 40 else []))
+    print('FYM GATE INFO [170] ' + '; '.join(_i170))
+except Exception as _e: F.append(f"[170] picks-shown check did not run: {_e}")
+# [171] Nov 8 2026 (FYM 1.18 independent QA F3: Mac + Miller tile photos with '(c) 2026 Mac and Miller Mahjong', Palm Royale watermark).
+#       A VISIBLE tile set (T.full) or mat (M.f) whose photo is on builder/fym_flags/watermark_flags.json fails unless accepted (no clean
+#       brand image exists, every image checked and listed). Swap in a clean photo and drop the line when one appears.
+try:
+    _wm171 = json.load(open(REPO + 'builder/fym_flags/watermark_flags.json'))['items']
+    _vt171 = {}
+    for _s in D['sets']:
+        if vis(_s): _vt171.setdefault(T.get(_s['tile'], {}).get('full'), []).append(_s['name'])
+    _vm171 = {}
+    for _k, _o in M.items():
+        if not _o.get('hid'): _vm171.setdefault(_o.get('f'), []).append(_o.get('n'))
+    _acc171 = 0
+    for _w in _wm171:
+        _hit = (_vt171 if _w.get('kind') == 'tile' else _vm171).get(_w.get('photo'))
+        if not _hit: continue
+        if _w.get('accepted'): _acc171 += 1; continue
+        F.append(f"[171] watermarked photo visible: {_w.get('kind')} {', '.join(_hit[:3])} ({_w.get('brand')}) {_w.get('photo')}: {_w.get('watermark')} (swap it, or mark accepted with every brand image checked)")
+    print(f"FYM GATE INFO [171] watermark list: {len(_wm171)} photos, {_acc171} visible + accepted (no clean brand image)")
+except Exception as _e: F.append(f"[171] watermark check did not run: {_e}")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))
