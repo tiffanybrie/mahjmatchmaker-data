@@ -1,0 +1,394 @@
+{
+ "_about": "FYM 1.19 rack refresh (Tiffany Nov 8 2:12pm: review what is NEW in partner racks; docs/research/racks-refresh-2026-11-08.md). adds = new partner colourways not in FYM (in stock Nov 8), each with ONE rack cut from the brand photo (MR: front view of its own infographic; MFM: house stack shot; Mahj Mood Luxe: brand photo, c:false like the other Luxe racks). cutouts = the 12 Nov 1 racks that sat hidden pending_review (adds112): cut-out made, unhide. fixes = data corrections. All images looked at on white + navy Nov 8 (rule 6b). Applied by builder/fym_fix_nov08/racks119.py <build>.",
+ "adds": [
+  {
+   "key": "mahjongregister.com/set-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1?v=53717290254648",
+   "n": "Mahjong Register Moon Marble Celestial",
+   "bn": "Mahjong Register",
+   "b": "mahjongregister.com",
+   "u": "https://mahjongregister.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fset-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1%3Fvariant%3D53717290254648",
+   "u0": "https://mahjongregister.com/products/set-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1?variant=53717290254648",
+   "u_plain": "https://mahjongregister.com/products/set-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1?variant=53717290254648",
+   "dc": "https://www.mahjmatchmaker.com/mahjong-register-discount-code",
+   "pa": true,
+   "nc": false,
+   "rt": false,
+   "c": true,
+   "ml": false,
+   "sk": false,
+   "rf": [
+    "neutral"
+   ],
+   "pq": 5,
+   "len": 20,
+   "price": 139,
+   "add": "nov08-v119",
+   "wh": 1,
+   "img": "assets/racks/v119/mr-moon-marble.webp"
+  },
+  {
+   "key": "mahjongregister.com/set-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1?v=53565098459448",
+   "n": "Mahjong Register Celestial Tide Scalloped",
+   "bn": "Mahjong Register",
+   "b": "mahjongregister.com",
+   "u": "https://mahjongregister.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fset-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1%3Fvariant%3D53565098459448",
+   "u0": "https://mahjongregister.com/products/set-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1?variant=53565098459448",
+   "u_plain": "https://mahjongregister.com/products/set-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1?variant=53565098459448",
+   "dc": "https://www.mahjmatchmaker.com/mahjong-register-discount-code",
+   "pa": true,
+   "nc": false,
+   "rt": false,
+   "c": true,
+   "ml": false,
+   "sk": false,
+   "rf": [
+    "blue"
+   ],
+   "pq": 5,
+   "len": 20,
+   "price": 139,
+   "add": "nov08-v119",
+   "img": "assets/racks/v119/mr-celestial-tide.webp"
+  },
+  {
+   "key": "mahjongregister.com/set-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1?v=53565098524984",
+   "n": "Mahjong Register Cosmic Lilac Scalloped",
+   "bn": "Mahjong Register",
+   "b": "mahjongregister.com",
+   "u": "https://mahjongregister.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fset-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1%3Fvariant%3D53565098524984",
+   "u0": "https://mahjongregister.com/products/set-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1?variant=53565098524984",
+   "u_plain": "https://mahjongregister.com/products/set-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1?variant=53565098524984",
+   "dc": "https://www.mahjmatchmaker.com/mahjong-register-discount-code",
+   "pa": true,
+   "nc": false,
+   "rt": false,
+   "c": true,
+   "ml": false,
+   "sk": false,
+   "rf": [
+    "purple"
+   ],
+   "pq": 5,
+   "len": 20,
+   "price": 139,
+   "add": "nov08-v119",
+   "img": "assets/racks/v119/mr-cosmic-lilac.webp"
+  },
+  {
+   "key": "mahjongregister.com/set-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1?v=53565098492216",
+   "n": "Mahjong Register Solar Coral Scalloped",
+   "bn": "Mahjong Register",
+   "b": "mahjongregister.com",
+   "u": "https://mahjongregister.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fset-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1%3Fvariant%3D53565098492216",
+   "u0": "https://mahjongregister.com/products/set-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1?variant=53565098492216",
+   "u_plain": "https://mahjongregister.com/products/set-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1?variant=53565098492216",
+   "dc": "https://www.mahjmatchmaker.com/mahjong-register-discount-code",
+   "pa": true,
+   "nc": false,
+   "rt": false,
+   "c": true,
+   "ml": false,
+   "sk": false,
+   "rf": [
+    "orange",
+    "pink"
+   ],
+   "pq": 5,
+   "len": 20,
+   "price": 139,
+   "add": "nov08-v119",
+   "img": "assets/racks/v119/mr-solar-coral.webp"
+  },
+  {
+   "key": "mahjongregister.com/set-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1?v=53717367554360",
+   "n": "Mahjong Register Pink Nova Scalloped",
+   "bn": "Mahjong Register",
+   "b": "mahjongregister.com",
+   "u": "https://mahjongregister.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fset-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1%3Fvariant%3D53717367554360",
+   "u0": "https://mahjongregister.com/products/set-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1?variant=53717367554360",
+   "u_plain": "https://mahjongregister.com/products/set-of-4-luxury-acrylic-mahjong-racks-with-gold-hardware-20-straight-edge-design-copy-1?variant=53717367554360",
+   "dc": "https://www.mahjmatchmaker.com/mahjong-register-discount-code",
+   "pa": true,
+   "nc": false,
+   "rt": false,
+   "c": true,
+   "ml": false,
+   "sk": false,
+   "rf": [
+    "pink"
+   ],
+   "pq": 5,
+   "len": 20,
+   "price": 119,
+   "add": "nov08-v119",
+   "img": "assets/racks/v119/mr-pink-nova.webp"
+  },
+  {
+   "key": "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53562919289144",
+   "n": "Mahjong Register White Opal Scalloped",
+   "bn": "Mahjong Register",
+   "b": "mahjongregister.com",
+   "u": "https://mahjongregister.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fsignature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy%3Fvariant%3D53562919289144",
+   "u0": "https://mahjongregister.com/products/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?variant=53562919289144",
+   "u_plain": "https://mahjongregister.com/products/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?variant=53562919289144",
+   "dc": "https://www.mahjmatchmaker.com/mahjong-register-discount-code",
+   "pa": true,
+   "nc": false,
+   "rt": false,
+   "c": true,
+   "ml": false,
+   "sk": false,
+   "rf": [
+    "neutral",
+    "pearl"
+   ],
+   "pq": 5,
+   "len": 20,
+   "price": 135,
+   "add": "nov08-v119",
+   "wh": 1,
+   "img": "assets/racks/v119/mr-white-opal.webp"
+  },
+  {
+   "key": "mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53562981351736",
+   "n": "Mahjong Register Imperial Jade Scalloped",
+   "bn": "Mahjong Register",
+   "b": "mahjongregister.com",
+   "u": "https://mahjongregister.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fsignature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy%3Fvariant%3D53562981351736",
+   "u0": "https://mahjongregister.com/products/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?variant=53562981351736",
+   "u_plain": "https://mahjongregister.com/products/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?variant=53562981351736",
+   "dc": "https://www.mahjmatchmaker.com/mahjong-register-discount-code",
+   "pa": true,
+   "nc": false,
+   "rt": false,
+   "c": true,
+   "ml": false,
+   "sk": false,
+   "rf": [
+    "green"
+   ],
+   "pq": 5,
+   "len": 20,
+   "price": 135,
+   "add": "nov08-v119",
+   "img": "assets/racks/v119/mr-imperial-jade.webp"
+  },
+  {
+   "key": "mahjongregister.com/imperial-jade-premium-scalloped-acrylic-mahjong-racks-set-of-4-copy?v=53566966792504",
+   "n": "Mahjong Register Cane Cabana Rattan",
+   "bn": "Mahjong Register",
+   "b": "mahjongregister.com",
+   "u": "https://mahjongregister.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fimperial-jade-premium-scalloped-acrylic-mahjong-racks-set-of-4-copy%3Fvariant%3D53566966792504",
+   "u0": "https://mahjongregister.com/products/imperial-jade-premium-scalloped-acrylic-mahjong-racks-set-of-4-copy?variant=53566966792504",
+   "u_plain": "https://mahjongregister.com/products/imperial-jade-premium-scalloped-acrylic-mahjong-racks-set-of-4-copy?variant=53566966792504",
+   "dc": "https://www.mahjmatchmaker.com/mahjong-register-discount-code",
+   "pa": true,
+   "nc": false,
+   "rt": false,
+   "c": true,
+   "ml": false,
+   "sk": false,
+   "rf": [
+    "wood"
+   ],
+   "pq": 5,
+   "len": 20,
+   "price": 149,
+   "add": "nov08-v119",
+   "img": "assets/racks/v119/mr-cane-cabana.webp"
+  },
+  {
+   "key": "vr:My Fair Mahjong:Confetti Pink",
+   "n": "My Fair Mahjong Confetti Pink",
+   "bn": "My Fair Mahjong",
+   "b": "myfairmahjong.com",
+   "u": "https://myfairmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Facrylic-mahjong-racks%3Fvariant%3D53543438942519",
+   "u0": "https://myfairmahjong.com/products/acrylic-mahjong-racks?variant=53543438942519",
+   "u_plain": "https://myfairmahjong.com/products/acrylic-mahjong-racks?variant=53543438942519",
+   "dc": "https://mahjmatchmaker.com/my-fair-mahjong-discount-code",
+   "pa": true,
+   "nc": false,
+   "rt": false,
+   "c": false,
+   "ml": false,
+   "sk": false,
+   "rf": [
+    "pink",
+    "clear"
+   ],
+   "pq": 3,
+   "len": 20,
+   "price": 150,
+   "add": "nov08-v119",
+   "img": "assets/racks/v119/mfm-confetti-pink.webp"
+  },
+  {
+   "key": "vr:My Fair Mahjong:Confetti Green",
+   "n": "My Fair Mahjong Confetti Green",
+   "bn": "My Fair Mahjong",
+   "b": "myfairmahjong.com",
+   "u": "https://myfairmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Facrylic-mahjong-racks%3Fvariant%3D53543439532343",
+   "u0": "https://myfairmahjong.com/products/acrylic-mahjong-racks?variant=53543439532343",
+   "u_plain": "https://myfairmahjong.com/products/acrylic-mahjong-racks?variant=53543439532343",
+   "dc": "https://mahjmatchmaker.com/my-fair-mahjong-discount-code",
+   "pa": true,
+   "nc": false,
+   "rt": false,
+   "c": false,
+   "ml": false,
+   "sk": false,
+   "rf": [
+    "green",
+    "clear"
+   ],
+   "pq": 3,
+   "len": 20,
+   "price": 150,
+   "add": "nov08-v119",
+   "img": "assets/racks/v119/mfm-confetti-green.webp"
+  },
+  {
+   "key": "vr:My Fair Mahjong:Confetti Purple",
+   "n": "My Fair Mahjong Confetti Purple",
+   "bn": "My Fair Mahjong",
+   "b": "myfairmahjong.com",
+   "u": "https://myfairmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Facrylic-mahjong-racks%3Fvariant%3D53543439860023",
+   "u0": "https://myfairmahjong.com/products/acrylic-mahjong-racks?variant=53543439860023",
+   "u_plain": "https://myfairmahjong.com/products/acrylic-mahjong-racks?variant=53543439860023",
+   "dc": "https://mahjmatchmaker.com/my-fair-mahjong-discount-code",
+   "pa": true,
+   "nc": false,
+   "rt": false,
+   "c": false,
+   "ml": false,
+   "sk": false,
+   "rf": [
+    "purple",
+    "clear"
+   ],
+   "pq": 3,
+   "len": 20,
+   "price": 150,
+   "add": "nov08-v119",
+   "img": "assets/racks/v119/mfm-confetti-purple.webp"
+  },
+  {
+   "key": "vr:My Fair Mahjong:Confetti Blue",
+   "n": "My Fair Mahjong Confetti Blue",
+   "bn": "My Fair Mahjong",
+   "b": "myfairmahjong.com",
+   "u": "https://myfairmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Facrylic-mahjong-racks%3Fvariant%3D53543440318775",
+   "u0": "https://myfairmahjong.com/products/acrylic-mahjong-racks?variant=53543440318775",
+   "u_plain": "https://myfairmahjong.com/products/acrylic-mahjong-racks?variant=53543440318775",
+   "dc": "https://mahjmatchmaker.com/my-fair-mahjong-discount-code",
+   "pa": true,
+   "nc": false,
+   "rt": false,
+   "c": false,
+   "ml": false,
+   "sk": false,
+   "rf": [
+    "blue",
+    "clear"
+   ],
+   "pq": 3,
+   "len": 20,
+   "price": 150,
+   "add": "nov08-v119",
+   "img": "assets/racks/v119/mfm-confetti-blue.webp"
+  },
+  {
+   "key": "mahjmood.com/luxe-racks-jade-acrylic",
+   "n": "Mahj Mood Luxe Jade",
+   "bn": "Mahj Mood",
+   "b": "mahjmood.com",
+   "u": "https://mahjmood.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fluxe-racks-jade-acrylic%3Fref%3DMahjmatchmaker",
+   "u0": "https://mahjmood.com/products/luxe-racks-jade-acrylic?ref=Mahjmatchmaker",
+   "u_plain": "https://mahjmood.com/products/luxe-racks-jade-acrylic?ref=Mahjmatchmaker",
+   "dc": "https://mahjmatchmaker.com/mahj-mood-discount-code",
+   "pa": true,
+   "nc": false,
+   "rt": false,
+   "c": false,
+   "ml": false,
+   "sk": false,
+   "rf": [
+    "green"
+   ],
+   "pq": 2,
+   "len": 20,
+   "price": 130,
+   "add": "nov08-v119",
+   "img": "assets/racks/v119/mm-luxe-jade.jpg"
+  }
+ ],
+ "cutouts": {
+  "mahjongregister.com/solid-wood-mahjong-racks-20-magnetic-pusher-set-of-4-copy?v=53698788065592": {
+   "img": "assets/racks/v119/mr-wood-light-pink.webp",
+   "c": true
+  },
+  "mahjongregister.com/solid-wood-mahjong-racks-20-magnetic-pusher-set-of-4-copy?v=53698788131128": {
+   "img": "assets/racks/v119/mr-wood-pink.webp",
+   "c": true
+  },
+  "mahjongregister.com/solid-wood-mahjong-racks-20-magnetic-pusher-set-of-4-copy?v=53698788196664": {
+   "img": "assets/racks/v119/mr-wood-peach.webp",
+   "c": true
+  },
+  "mahjongregister.com/solid-wood-mahjong-racks-20-magnetic-pusher-set-of-4-copy?v=53698788262200": {
+   "img": "assets/racks/v119/mr-wood-purple.webp",
+   "c": true
+  },
+  "mahjongregister.com/solid-wood-mahjong-racks-20-magnetic-pusher-set-of-4-copy?v=53698788327736": {
+   "img": "assets/racks/v119/mr-wood-navy.webp",
+   "c": true
+  },
+  "mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy-1?v=53697948057912": {
+   "img": "assets/racks/v119/mr-wood-sky-blue.webp",
+   "c": true
+  },
+  "mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy-1?v=53697948123448": {
+   "img": "assets/racks/v119/mr-wood-mint.webp",
+   "c": true
+  },
+  "mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy-1?v=53697948188984": {
+   "img": "assets/racks/v119/mr-wood-green.webp",
+   "c": true
+  },
+  "mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy-1?v=53697948254520": {
+   "img": "assets/racks/v119/mr-wood-black.webp",
+   "c": true
+  },
+  "mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy-1?v=53697948320056": {
+   "img": "assets/racks/v119/mr-wood-white.webp",
+   "c": true
+  },
+  "mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53705296740664": {
+   "img": "assets/racks/v119/mr-crystal-palace.webp",
+   "c": false
+  },
+  "vr:My Fair Mahjong:Solid Poppy Red": {
+   "img": "assets/racks/v119/mfm-poppy-red.webp",
+   "c": true
+  }
+ },
+ "fixes": {
+  "mahjmood.com/luxe-racks-grey-marble-acrylic-4": {
+   "n": "Mahj Mood Luxe Grey Marble",
+   "rf": [
+    "neutral"
+   ],
+   "hx": "#9aa3a6",
+   "why": "photo is grey marble; build had green #4f9a5a and the same name as Amethyst"
+  },
+  "mahjmood.com/luxe-racks-amethyst": {
+   "n": "Mahj Mood Luxe Amethyst",
+   "oos": 1,
+   "why": "two racks shared the name \"Mahj Mood Luxe\"; Amethyst sold out Nov 8"
+  },
+  "mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53555876102456": {
+   "oos": 1,
+   "why": "Admiral Navy sold out Nov 8"
+  }
+ }
+}
