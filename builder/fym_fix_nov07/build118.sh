@@ -33,6 +33,7 @@ PY
 python3 "$R/builder/fym_fix_nov06/sideb116.py" "$D" | tail -1
 python3 "$H/picks118.py" "$D" --report "$D/picks118.json"                # Tiffany's missed-mats round-1 yeses into m (+ locks)
 python3 "$R/builder/fym_apply_locks.py" "$D" | tail -2
+if git -C "$R" ls-files --error-unmatch "$H/tilerank_v118.py" >/dev/null 2>&1; then python3 "$H/tilerank_v118.py" "$D" | tail -2; fi   # mat-door tile order (D.tso + JS, gate [168])
 python3 "$H/tv118.py" "$D" --backs "$BK"
 for x in prices_v118.py tableview_v118.py tableview_racks_v118.py; do                          # coordinator Nov 7: later 1.18 patches (prices from config/fym-prices-nov07.json; Table view usable mats/racks, Lotus Cove first), run after tv118 once committed (an uncommitted work-in-progress copy is skipped)
   if git -C "$R" ls-files --error-unmatch "$H/$x" >/dev/null 2>&1; then python3 "$H/$x" "$D" | tail -3; else echo "(not present yet: $x)"; fi

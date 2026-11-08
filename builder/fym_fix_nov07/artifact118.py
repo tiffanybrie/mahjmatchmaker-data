@@ -84,6 +84,10 @@ os.makedirs(OUT + '/mc', exist_ok=True)
 open(OUT + '/index.html', 'w').write(h)
 for s_ in [x for x in ('price118.py', 'zoomswipe_v118.py', 'tableview_v118.py', 'doors_v118.py', 'release118.py') if subprocess.run(['git', '-C', H, 'ls-files', '--error-unmatch', x], capture_output=True).returncode == 0]:  # code patches (tableview/doors patch render() in place)
     subprocess.run([sys.executable, H + '/' + s_, OUT + '/index.html'], check=True, capture_output=True)
+# tile ranking (FYM 1.18, tilerank_v118.py): the copy inherits D.tso/D.tsoB from the build's D; only its JS patch is applied here
+if subprocess.run(['git', '-C', H, 'ls-files', '--error-unmatch', 'tilerank_v118.py'], capture_output=True).returncode == 0:
+    sys.path.insert(0, H); import tilerank_v118 as _TR
+    _p = OUT + '/index.html'; _h, _did = _TR.patch_js(open(_p).read()); open(_p, 'w').write(_h)
 h = open(OUT + '/index.html').read()
 # pack: live mc/190.webp + the new chunks' photos
 raw = open(LIVE + '/mc/190.webp', 'rb').read(); hdr = pack_hdr(raw); body = raw[:-4 - struct.unpack('<I', raw[-4:])[0]]

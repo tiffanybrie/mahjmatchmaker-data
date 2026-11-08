@@ -1307,6 +1307,14 @@ try:
     if not re.search(r"flatMap\(n=>all\.filter\(x=>x\[0\]\.name===n\)\)\.sort\(\(a,b\)=>!!T\[a\[0\]\.tile\]\.soon-!!T\[b\[0\]\.tile\]\.soon\|\|\(BPA\(a\[0\]\.maker\)", _h105):
         F.append("[105] colour results do not list partner tile sets first")
 except Exception as _e: F.append(f"[105] brand logo opening view check did not run: {_e}")
+# [169] Nov 7 2026 (FYM 1.18; Tiffany 10:22pm: OMM's new Lotus Cove was not in Table view; 334 mats added since Nov 1 never classified).
+#       Every visible mat has a Table view class; vendor photos / crops / fills only on full-table mats; the build matches
+#       config/tableview-mats-nov07.json; render() patched for vendor photos. Runs scripts/checks/tableview_mats_check.py.
+try:
+    _r169 = subprocess.run([sys.executable, REPO + 'scripts/checks/tableview_mats_check.py', B], capture_output=True, text=True, timeout=300)
+    print('FYM GATE INFO [169] ' + (_r169.stdout.strip().splitlines() or [''])[0])
+    if _r169.returncode != 0: F.append('[169] Table view mats: ' + ' | '.join(l for l in _r169.stdout.splitlines()[1:] if l.startswith('[tv-mats]'))[:900])
+except Exception as _e: F.append(f"[169] Table view mats check did not run: {_e}")
 # [104] Oct 30 (rules audit GA4; CLAUDE.md FYM 0 "every publish goes to BOTH places"): the build's public "Version X.Y" label
 # == the newest site-app/fym-vNN on the fym-site-preview branch == the page-block pinned at the TOP of
 # site/livepatch/fym-preview-oct21/README.md (that pin is what gets pasted on Squarespace). WARNING by default (the README

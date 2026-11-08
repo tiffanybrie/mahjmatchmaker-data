@@ -15,6 +15,14 @@ M = D['mats']; out = []
 k = 'www.loveshackfancy.com/pink-floral-designer-mahjong-mat'
 if k in M and M[k].get('u') != 'https://go.shopmy.us/p-96227058':
     M[k]['u'] = M[k]['u0'] = 'https://go.shopmy.us/p-96227058'; M[k]['dc'] = ''; M[k].pop('u_plain', None); out.append('LSF Fleur -> ShopMy p-96227058')
+# 4. Ozark Mahjongg (Tiffany Nov 7 10:45pm): the store is https://www.ozarkmahjongg.com (two g; Wix /product-page/<slug>), not the
+#    ozarkmahjong.com links we had. Non-partner whole-line allow: plain link, no code claim. All four answer 200 (Nov 7).
+OZ = {'ozarkmahjong.com/winslow-1920-noir-mat': 'winslow-1920-noir-mat', 'ozarkmahjong.com/winslow-1920-original-navy-blue-mat': 'winslow-1920-original-navy-blue-mat',
+      'ozarkmahjong.com/winslow-1920-rouge-mat': 'winslow-1920-rouge-mat', 'alb2:ozark-mah-jongg-carson-vintage': 'carson-vintage-mat'}
+for k, sl in OZ.items():
+    u = f'https://www.ozarkmahjongg.com/product-page/{sl}'
+    if k in M and M[k].get('u') != u:
+        M[k]['u'] = M[k]['u0'] = u; M[k]['dc'] = ''; M[k]['pa'] = False; M[k].pop('u_dead', None); M[k].pop('u_plain', None); out.append(f'Ozark {M[k]["n"]} -> {u}')
 CC = json.load(open(R + 'config/colorcards.json'))['sets']
 for card, nm in (('deco-lagoon', 'Deco (Lagoon)'), ('deco-mulberry', 'Deco (Mulberry)')):
     want = CC[card]['backs'][0][1]

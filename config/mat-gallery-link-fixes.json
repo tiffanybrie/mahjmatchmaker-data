@@ -114,24 +114,29 @@
    "why": "shop link 404 (Nov 7 Mat Gallery v118 link check); not in bougiemahjong.com products.json (113 products)"
   },
   "ozark-mahjongg--winslow-1920-navy": {
-   "url": "",
+   "url": "https://www.ozarkmahjongg.com/product-page/winslow-1920-original-navy-blue-mat",
    "name": "Ozark Mahjongg Winslow 1920 Navy",
-   "why": "shop link dead (Ozark domain parked / Splash product gone), Nov 7"
+   "why": "Tiffany Nov 7 10:45pm: the store is ozarkmahjongg.com (two g, Wix /product-page/); our ozarkmahjong.com links were the wrong domain"
   },
   "ozark-mahjongg--winslow-1920-noir": {
-   "url": "",
+   "url": "https://www.ozarkmahjongg.com/product-page/winslow-1920-noir-mat",
    "name": "Ozark Mahjongg Winslow 1920 Noir",
-   "why": "shop link dead (Ozark domain parked / Splash product gone), Nov 7"
+   "why": "Tiffany Nov 7 10:45pm: the store is ozarkmahjongg.com (two g, Wix /product-page/); our ozarkmahjong.com links were the wrong domain"
   },
   "ozark-mahjongg--winslow-1920-rouge": {
-   "url": "",
+   "url": "https://www.ozarkmahjongg.com/product-page/winslow-1920-rouge-mat",
    "name": "Ozark Mahjongg Winslow 1920 Rouge",
-   "why": "shop link dead (Ozark domain parked / Splash product gone), Nov 7"
+   "why": "Tiffany Nov 7 10:45pm: the store is ozarkmahjongg.com (two g, Wix /product-page/); our ozarkmahjong.com links were the wrong domain"
   },
   "splash-of-color--peony-and-parasol": {
    "url": "",
    "name": "Splash of Color Peony and Parasol",
    "why": "shop link dead (Ozark domain parked / Splash product gone), Nov 7"
+  },
+  "ozark-mah-jongg--carson-vintage": {
+   "url": "https://www.ozarkmahjongg.com/product-page/carson-vintage-mat",
+   "name": "Ozark Mahjongg Carson Vintage",
+   "why": "Tiffany Nov 7 10:45pm: the store is ozarkmahjongg.com (Wix /product-page/); this album mat had no link"
   }
  }
 }

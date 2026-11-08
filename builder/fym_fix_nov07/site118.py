@@ -52,4 +52,8 @@ last = tags[-1].group(0); rep(last, last + f'<script src="{CDN}{FC}/site-app/fym
 open(OUTD + '/index.html', 'w').write(h)
 for s_ in [x for x in ('price118.py', 'zoomswipe_v118.py', 'tableview_v118.py', 'doors_v118.py', 'release118.py') if subprocess.run(['git', '-C', H, 'ls-files', '--error-unmatch', x], capture_output=True).returncode == 0]:  # code patches (tableview/doors patch render() in place)
     subprocess.run([sys.executable, H + '/' + s_, OUTD + '/index.html'], check=True)
+# tile ranking (FYM 1.18, tilerank_v118.py): the copy inherits D.tso/D.tsoB from the build's D; only its JS patch is applied here
+if subprocess.run(['git', '-C', H, 'ls-files', '--error-unmatch', 'tilerank_v118.py'], capture_output=True).returncode == 0:
+    sys.path.insert(0, H); import tilerank_v118 as _TR
+    _p = OUTD + '/index.html'; _h, _did = _TR.patch_js(open(_p).read()); open(_p, 'w').write(_h)
 print('site118: index', os.path.getsize(OUTD + '/index.html'), 'new chunks', NEWC)
