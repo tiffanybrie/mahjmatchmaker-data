@@ -21,9 +21,10 @@ brands. So if one of those brands falls off, it's a really big deal."
    commission < 50% of its weekly baseline (≥$40/week) or of last week (≥$60).
 4. EVERY brand alarm gets an investigation the same day, written as "<brand>: down X%. Likely because ___.
    Checked: ___. Doing: ___." Never just "code is populating". Checklist, in order:
-   a. DATA FIRST: is the drop real or a reading gap? Which dashboard/inbox carries this brand
-      (GoAffPro universal, UpPromote Marketplace, tiffanybrie@ UpPromote dashboard, own portal)? Was it actually
-      read for these days? If not, it's "unknown", not "zero": read it or ask her for a screenshot.
+   a. DATA FIRST: is the drop real or a reading gap? Only TWO dashboards are ever read: GoAffPro and the
+      UpPromote Marketplace (Tiffany Nov 8 1:17pm; never try a brand's own dashboard/portal). Every other brand's
+      orders come from order emails: logged on the money tab with amount "?" so she screenshots them (Nov 8 1:20pm).
+      Brands with "?" amounts are compared by ORDER COUNT. No email and no dashboard row = "unknown", not "zero".
    b. GOOGLE: AI answer still names MAHJMATCH? which other code does it show now? our organic position;
       page last crawled; Search Console clicks for "<brand> discount code" this week vs last.
    c. CODE: still applies at checkout (cart test, never check out); same % as our page says.
