@@ -56,7 +56,7 @@ def version(p, V):
     pg.evaluate(f"()=>{mode('table')}.click()"); R.mark('table'); pg.wait_for_timeout(500); imgs(pg); pg.wait_for_timeout(1100)
     R.mark('table2', {'close': rect(pg, mode('close')), 'yes': rect(pg, "[...document.querySelectorAll('button.yes')].filter(b=>b.offsetParent)[0]")})
     if V == 'A':
-        pg.evaluate(f"()=>{mode('close')}.click()"); R.mark('close'); pg.wait_for_timeout(500); imgs(pg); pg.wait_for_timeout(700)
+        pg.evaluate(f"()=>{mode('close')}.click()"); R.mark('close'); pg.wait_for_timeout(400); pg.evaluate(f"()=>window.scrollTo(0,{MATCH}+60)"); imgs(pg); pg.wait_for_timeout(900); R.mark('closed')
     for nm, k in [('bb', 'yes'), ('song', 'no'), ('oz', 'yes'), ('mg', 'yes')]: swipe(pg, R, nm, k)
     R.mark('end'); R.stop(); pg.screenshot(path=f'{O}/dbg/S{V}1.png')
     pk = "[...document.querySelectorAll('.pick1 button')].find(b=>b.offsetParent&&/Brownstone/.test(b.innerText))"
@@ -64,7 +64,7 @@ def version(p, V):
     R0 = Rec(ctx, pg, f'{O}/P{V}'); R0.go(); pg.wait_for_timeout(900)
     R0.mark('pick0', {'tray': rect(pg, "document.querySelector('.pick1')"), 'bb': rect(pg, pk)}); pg.wait_for_timeout(700)
     pg.evaluate(f"()=>{pk}.click()"); R0.mark('picktap'); pg.wait_for_timeout(2200); fixlogo(pg); R0.mark('after'); R0.stop()
-    pg.evaluate("(q)=>{window._rq=q;const pool=rackPool;window.rackPool=function(){return window._rq.slice()};try{rackPool=window.rackPool}catch(e){};renderRacks()}", [WAL, OAK]); pg.wait_for_timeout(1500)
+    pg.evaluate("(q)=>{window._rq=q;const pool=rackPool;window.rackPool=function(){const a=pool();return window._rq.concat(a.filter(x=>!window._rq.includes(x)))};try{rackPool=window.rackPool}catch(e){};renderRacks()}", [WAL, OAK]); pg.wait_for_timeout(1500)
     DECK = "(()=>{const d=document.querySelector('.deck.r');return d.getBoundingClientRect().top+scrollY-%d})()"
     off = 470 if V == 'A' else 120
     pg.evaluate(f"()=>window.scrollTo(0,{DECK % off})"); pg.wait_for_timeout(2500); fixlogo(pg); imgs(pg); pg.wait_for_timeout(1500)
@@ -74,10 +74,10 @@ def version(p, V):
     WOOD = "[...document.querySelectorAll('button.chip.finc')].find(b=>b.offsetParent&&/Wood tone/.test(b.innerText))"
     smooth(pg, f"(()=>{{const b={WOOD};return b.getBoundingClientRect().top+scrollY-300}})()", 700)
     R.mark('filters', {'wood': rect(pg, WOOD), 'dots': pg.evaluate("()=>[...document.querySelectorAll('button.dot')].filter(b=>b.offsetParent).map(b=>{const r=b.getBoundingClientRect();return [b.title||b.getAttribute('aria-label')||b.style.background,r.left,r.top,r.width,r.height]})")}); pg.wait_for_timeout(500)
-    pg.evaluate(f"()=>{WOOD}.click()"); R.mark('wood'); pg.wait_for_timeout(1000)
-    BROWN = "[...document.querySelectorAll('button.dot')].filter(b=>b.offsetParent).find(b=>/brown/i.test((b.title||'')+(b.getAttribute('aria-label')||'')+(b.dataset.c||'')+(b.dataset.color||'')))"
-    R.mark('brown0', {'brown': rect(pg, BROWN)})
-    pg.evaluate(f"()=>{{const b={BROWN};if(b)b.click()}}"); R.mark('brown'); pg.wait_for_timeout(1000)
+    BROWN = "[...document.querySelectorAll('button.dot')].filter(b=>b.offsetParent&&b.getBoundingClientRect().top>0).find(b=>/^Brown/i.test(b.title||b.getAttribute('aria-label')||''))"
+    R.mark('brown0', {'brown': rect(pg, BROWN)}); pg.evaluate(f"()=>{{const b={BROWN};if(b)b.click()}}"); R.mark('brown'); pg.wait_for_timeout(1100)
+    R.mark('wood0', {'wood': rect(pg, WOOD)}); pg.evaluate(f"()=>{WOOD}.click()"); R.mark('wood'); pg.wait_for_timeout(1100)
+    R.mark('woodd', {'deck': pg.evaluate("()=>(document.querySelector('.deck.r')||{}).innerText||''")[:80]})
     pg.evaluate("()=>{window._rq=window._rq;renderRacks()}"); pg.wait_for_timeout(300); imgs(pg)
     smooth(pg, DECK % off, 700); imgs(pg); R.mark('back', {'yes': rect(pg, "[...document.querySelectorAll('button.yes')].filter(b=>b.offsetParent).pop()")}); pg.wait_for_timeout(700)
     for i, r in enumerate([WAL, OAK]):
@@ -88,11 +88,14 @@ def version(p, V):
     smooth(pg, f"(()=>{{const b={GO};return b.getBoundingClientRect().top+scrollY-600}})()", 700); R.mark('tray', {'go': rect(pg, GO)}); pg.wait_for_timeout(700)
     pg.evaluate(f"()=>{GO}.click()"); R.mark('official'); pg.wait_for_timeout(2400); imgs(pg)
     CARD = "(()=>{const h=[...document.querySelectorAll('h1,h2,h3,div')].find(e=>e.offsetParent&&e.innerText&&/^4\\s*Your match card/.test(e.innerText.trim())||e.offsetParent&&e.innerText&&e.innerText.trim().startsWith('Your match card'));return h?h.getBoundingClientRect().top+scrollY-40:scrollY+600})()"
-    pg.evaluate(f"()=>{{const b={btn('Story 9:16')};if(b)b.click()}}"); pg.wait_for_timeout(300)
-    pg.evaluate(f"()=>{{const b={btn('Close up')};if(b)b.click()}}"); pg.wait_for_timeout(300)
-    smooth(pg, CARD, 900); imgs(pg); pg.wait_for_timeout(600)
+    smooth(pg, CARD, 900)
+    pg.wait_for_function("()=>!/Dressing up your match/.test(document.body.innerText)", timeout=20000); pg.wait_for_timeout(500)
+    pg.evaluate(f"()=>{{const b={btn('Story 9:16')};if(b)b.click()}}"); pg.wait_for_timeout(600)
+    pg.evaluate(f"()=>{{const b={btn('Close up')};if(b)b.click()}}"); pg.wait_for_timeout(600)
+    pg.wait_for_function("()=>!/Dressing up your match/.test(document.body.innerText)", timeout=20000); imgs(pg); pg.wait_for_timeout(1200)
+    pg.screenshot(path=f'{O}/dbg/C{V}close.png')
     R.mark('card', {'save': rect(pg, btn('Save image')), 'img': rect(pg, "[...document.querySelectorAll('img,canvas')].filter(i=>i.offsetParent&&i.getBoundingClientRect().top>-50&&i.getBoundingClientRect().top<844).sort((a,b)=>b.getBoundingClientRect().width*b.getBoundingClientRect().height-a.getBoundingClientRect().width*a.getBoundingClientRect().height)[0]")}); pg.wait_for_timeout(1500)
-    R.mark('v0 Mood board', {'b': rect(pg, btn('Mood board'))}); pg.evaluate(f"()=>{btn('Mood board')}.click()"); pg.wait_for_timeout(250); R.mark('v Mood board'); pg.wait_for_timeout(2000); imgs(pg)
+    R.mark('v0 Mood board', {'b': rect(pg, btn('Mood board'))}); pg.evaluate(f"()=>{btn('Mood board')}.click()"); pg.wait_for_timeout(250); R.mark('v Mood board'); pg.wait_for_timeout(600); pg.wait_for_function("()=>!/Dressing up your match/.test(document.body.innerText)", timeout=20000); imgs(pg); pg.wait_for_timeout(1500); pg.screenshot(path=f'{O}/dbg/C{V}mood.png')
     R.mark('mood2')
     SH = "(()=>{const h=[...document.querySelectorAll('h2,h3,div,p')].find(e=>e.offsetParent&&e.innerText&&/^Shop your match/.test(e.innerText.trim()));return h?h.getBoundingClientRect().top+scrollY-120:scrollY+900})()"
     smooth(pg, SH, 1000); imgs(pg)
