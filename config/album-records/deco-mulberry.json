@@ -2761,8 +2761,17 @@
     "amazon_her_pick": true
    }
   ],
-  "pulled_at": "2026-11-08T13:41:05-05:00",
-  "size_fym": 1574
+  "pulled_at": "2026-11-08T14:53:05-05:00",
+  "size_fym": 1574,
+  "pulled_by": "scripts/albumreview/pull.py",
+  "no_photo": 0,
+  "shortlist": 102,
+  "contrast_colours": [
+   "TEAL",
+   "GOLD",
+   "DEEP GREEN"
+  ],
+  "repull_nov08": "Re-pulled Nov 8 ~3pm with the committed pull (every FYM photo, contrast side always on the sheets) after Tiffany caught Britt Mills Scarlett + Flora missing from Lagoon. No new cards: Scarlett is berry on berry (out like Deco Dragon Mulberry); Flora, Vibrant Symphony and Esme (retired) went to Left out with Put it in."
  },
  "bysight": {
   "done": "2026-11-07",

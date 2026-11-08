@@ -117,6 +117,33 @@
   {
    "order": 5,
    "group": "stand",
+   "mat": "Darjeeling Peacock (Navy Floral)",
+   "brand": "Bespoke Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "deco-indigo-mahjong-tiles-bespoke-mahjong-darjeeling-peacock-navy-floral-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/deco/mats/bespoke-mahjong-darjeeling-peacock-navy-floral.jpg",
+   "racks": [
+    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Mulberry Wood"
+   ],
+   "mat_racks": [
+    "Mahjong Register Admiral Navy",
+    "Bird & Bamboo Mulberry"
+   ],
+   "why": "Navy as deep as her backs, scattered with embroidered berry pansies and peacock feathers: her mulberry faces and her peacock-feather winds on her own navy.",
+   "fym": "www.bespokemahjong.com/double-the-fun-darjeeling-peacock-mat#side-b",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": [
+    "Mahjong Register Admiral Navy: brand new (Oct 24), already sold out"
+   ]
+  },
+  {
+   "order": 6,
+   "group": "stand",
    "mat": "Astor",
    "brand": "Oh My Mahjong",
    "retired_mat": false,
@@ -130,19 +157,17 @@
     "Bam Bird Boutique Mulberry Wood"
    ],
    "mat_racks": [
-    "Mahjong Register Admiral Navy",
+    "Mahjong Register Navy Solid Wood",
     "Bird & Bamboo Dark Blue"
    ],
    "why": "Navy floral with berry and coral inside a navy-plum plaid border: navy plus her berry. The colour pull missed it (measured as blue/purple, not navy). (Found in the Nov 8 mat discovery.)",
    "fym": "www.ohmymahjong.com/astor-mat-w-tube",
    "lowres": true,
    "caption_note": null,
-   "rack_notes": [
-    "Mahjong Register Admiral Navy: brand new (Oct 24), already sold out"
-   ]
+   "rack_notes": []
   },
   {
-   "order": 6,
+   "order": 7,
    "group": "stand",
    "mat": "Crown Jewels",
    "brand": "Royal Mahjong Society",
@@ -167,7 +192,7 @@
    "rack_notes": []
   },
   {
-   "order": 7,
+   "order": 8,
    "group": "best",
    "mat": "Hawthorne",
    "brand": "Oh My Mahjong",
@@ -192,7 +217,7 @@
    "rack_notes": []
   },
   {
-   "order": 8,
+   "order": 9,
    "group": "best",
    "mat": "Gilded Peacock",
    "brand": "Bougie Mahjong",
@@ -217,7 +242,32 @@
    "rack_notes": []
   },
   {
-   "order": 9,
+   "order": 10,
+   "group": "berry",
+   "mat": "Scarlett",
+   "brand": "Britt Mills",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "deco-indigo-mahjong-tiles-britt-mills-scarlett-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/deco/mats/britt-mills-scarlett.jpg",
+   "racks": [
+    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Mulberry Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Wine",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "why": "A deep mulberry field with a flower-crowned statue head: her berry faces as the whole mat, the jewel-tone partner to her navy backs.",
+   "fym": "brittmillsdesign.com/scarlett-neoprene-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 11,
    "group": "berry",
    "mat": "Pretty in Plum Premium",
    "brand": "Mahjong Register",
@@ -242,7 +292,7 @@
    "rack_notes": []
   },
   {
-   "order": 10,
+   "order": 12,
    "group": "berry",
    "mat": "Garden Party – Mulberry",
    "brand": "My Fair Mahjong",
@@ -267,7 +317,7 @@
    "rack_notes": []
   },
   {
-   "order": 11,
+   "order": 13,
    "group": "berry",
    "mat": "Caroline in Peacock",
    "brand": "Mahj & Vine",
@@ -292,7 +342,7 @@
    "rack_notes": []
   },
   {
-   "order": 12,
+   "order": 14,
    "group": "berry",
    "mat": "Deco Dragon (Lagoon)",
    "brand": "Bam Bird Boutique",
@@ -317,7 +367,7 @@
    "rack_notes": []
   },
   {
-   "order": 13,
+   "order": 15,
    "group": "berry",
    "mat": "Navy and Red Pop",
    "brand": "Let's Be Besties",
@@ -341,7 +391,7 @@
    "rack_notes": []
   },
   {
-   "order": 14,
+   "order": 16,
    "group": "deco",
    "mat": "Gatsby Glow",
    "brand": "Let's Be Besties",
@@ -366,7 +416,7 @@
    "rack_notes": []
   },
   {
-   "order": 15,
+   "order": 17,
    "group": "deco",
    "mat": "SoHo",
    "brand": "Oh My Mahjong",
@@ -381,7 +431,6 @@
     "Bam Bird Boutique Mulberry Wood"
    ],
    "mat_racks": [
-    "Mahjong Register Navy Solid Wood",
     "Bird & Bamboo French Blue"
    ],
    "why": "Oh My Mahjong's deco sunburst in blue and green. Retired, but a match if you already own it.",
@@ -391,7 +440,7 @@
    "rack_notes": []
   },
   {
-   "order": 16,
+   "order": 18,
    "group": "deco",
    "mat": "The Speakeasy",
    "brand": "Mahj Squad",
@@ -416,7 +465,7 @@
    "rack_notes": []
   },
   {
-   "order": 17,
+   "order": 19,
    "group": "night",
    "mat": "Peacock Feathers",
    "brand": "Let's Be Besties",
@@ -441,7 +490,7 @@
    "rack_notes": []
   },
   {
-   "order": 18,
+   "order": 20,
    "group": "night",
    "mat": "Midnight Garden Club",
    "brand": "Soirée All Day",
@@ -465,7 +514,7 @@
    "rack_notes": []
   },
   {
-   "order": 19,
+   "order": 21,
    "group": "night",
    "mat": "Sapphire Blue Garden Mat",
    "brand": "Bespoke Mahjong",
@@ -489,7 +538,7 @@
    "rack_notes": []
   },
   {
-   "order": 20,
+   "order": 22,
    "group": "night",
    "mat": "Crane & Moon",
    "brand": "YOLO Mahjong",
@@ -514,7 +563,7 @@
    "rack_notes": []
   },
   {
-   "order": 21,
+   "order": 23,
    "group": "night",
    "mat": "Elysium",
    "brand": "Oh My Mahjong",
@@ -538,7 +587,7 @@
    "rack_notes": []
   },
   {
-   "order": 22,
+   "order": 24,
    "group": "warm",
    "mat": "Calista Leatherette",
    "brand": "Britt Mills",
@@ -562,7 +611,7 @@
    "rack_notes": []
   },
   {
-   "order": 23,
+   "order": 25,
    "group": "warm",
    "mat": "Tilly Neoprene",
    "brand": "Britt Mills",
@@ -586,7 +635,7 @@
    "rack_notes": []
   },
   {
-   "order": 24,
+   "order": 26,
    "group": "warm",
    "mat": "Moody",
    "brand": "Hutch & Nook",
@@ -610,7 +659,7 @@
    "rack_notes": []
   },
   {
-   "order": 25,
+   "order": 27,
    "group": "deco",
    "mat": "Vanderbilt",
    "brand": "Oh My Mahjong",
@@ -634,7 +683,7 @@
    "rack_notes": []
   },
   {
-   "order": 26,
+   "order": 28,
    "group": "warm",
    "mat": "Butterscotch Floral Simple Middle",
    "brand": "Let's Be Besties",
@@ -658,7 +707,7 @@
    "rack_notes": []
   },
   {
-   "order": 27,
+   "order": 29,
    "group": "holiday",
    "mat": "Yuletide",
    "brand": "Oh My Mahjong",
@@ -683,7 +732,7 @@
    "rack_notes": []
   },
   {
-   "order": 28,
+   "order": 30,
    "group": "holiday",
    "mat": "Love & Light",
    "brand": "Peace Love Mahjong",
@@ -707,7 +756,7 @@
    "rack_notes": []
   },
   {
-   "order": 29,
+   "order": 31,
    "group": "holiday",
    "mat": "Snowflake Reindeer Lodge Double-Sided Leatherette",
    "brand": "Mahjong Register",
@@ -731,7 +780,7 @@
    "rack_notes": []
   },
   {
-   "order": 30,
+   "order": 32,
    "group": "holiday",
    "mat": "Alpine Snowflakes",
    "brand": "Let's Be Besties",
@@ -756,7 +805,7 @@
    "rack_notes": []
   },
   {
-   "order": 31,
+   "order": 33,
    "group": "holiday",
    "mat": "Winter Jewel",
    "brand": "Let's Be Besties",

@@ -309,6 +309,34 @@
    "holiday": false,
    "more_from": "Let's Be Besties",
    "more_note": "Big catalog: only the best few go in the album (Tiffany Nov 8 2:03pm)"
+  },
+  {
+   "name": "Scarlett",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-scarlett.jpg",
+   "why": "Nov 8 Britt Mills check (Reba's berry sister). Mulberry on Mulberry, the same reason Deco Dragon (Mulberry) is out; it's in Lagoon and Indigo.",
+   "retired": false
+  },
+  {
+   "name": "Flora",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-flora.jpg",
+   "why": "Nov 8 Britt Mills check. Berry roses with lagoon-teal corner bars, but the lilac ground is lighter than her berry. A maybe.",
+   "retired": false
+  },
+  {
+   "name": "Vibrant Symphony",
+   "brand": "House of Hearts Studio",
+   "img": "assets/colorcards/deco/leftout/house-of-hearts-studio-vibrant-symphony.jpg",
+   "why": "Found by the Nov 8 re-pull. Turquoise with berry-red florals, close to Caroline in Peacock, but the only photo has a name banner across it.",
+   "retired": false
+  },
+  {
+   "name": "Esme (retired)",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/leftout/oh-my-mahjong-esme.jpg",
+   "why": "Found by the Nov 8 re-pull. Deep teal with pink florals: a real match, but retired.",
+   "retired": true
   }
  ],
  "deco-indigo": [
@@ -482,6 +510,20 @@
    "holiday": false,
    "more_from": "Let's Be Besties",
    "more_note": "Big catalog: only the best few go in the album"
+  },
+  {
+   "name": "Darjeeling Peacock Mat (Side A: Blue Scales)",
+   "brand": "Bespoke Mahjong",
+   "img": "assets/colorcards/deco/leftout/bespoke-mahjong-darjeeling-peacock-blue-scales.jpg",
+   "why": "Found by the Nov 8 re-pull. The reverse of the Side B card: periwinkle-blue scales with the same pansies and feathers; lighter and busier than her navy. Side B is in.",
+   "retired": false
+  },
+  {
+   "name": "Flora",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-flora.jpg",
+   "why": "Nov 8 Britt Mills check. Berry roses and teal bars, but on lilac and sage: soft and light next to her navy.",
+   "retired": false
   }
  ]
 }

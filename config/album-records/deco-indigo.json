@@ -2761,7 +2761,16 @@
     "lowres": false
    }
   ],
-  "pulled_at": "2026-11-08T13:52:26-05:00"
+  "pulled_at": "2026-11-08T14:53:05-05:00",
+  "pulled_by": "scripts/albumreview/pull.py",
+  "no_photo": 0,
+  "shortlist": 139,
+  "contrast_colours": [
+   "MULBERRY",
+   "ROSE",
+   "GOLD"
+  ],
+  "repull_nov08": "Re-pulled Nov 8 ~3pm with the committed pull (every FYM photo, contrast side always on the sheets) after Tiffany caught Britt Mills Scarlett + Flora missing from Lagoon. Darjeeling Peacock (Navy Floral) in as standout #5, Scarlett first in Berry + teal; Darjeeling Side A and Flora in Left out."
  },
  "tile_photo": {
   "file": "assets/tiles/v92/bam-bird-boutique-deco-indigo-split.jpg",
@@ -3016,9 +3025,19 @@
   ],
   "misses_added": [
    "Astor · Oh My Mahjong",
+   "Bespoke Mahjong Darjeeling Peacock (Navy Floral) (re-pull)",
+   "Britt Mills Scarlett (Britt Mills check)",
    "Vanderbilt · Oh My Mahjong"
   ],
   "note": "Light targeted search (12 searches: Google, Etsy, Amazon via WebSearch/WebFetch). Terms from the colour card (teal/berry/navy/gold), mood (art deco, jewel tone) and the faces (peacock feather, crane, iris, fan). Many Etsy hits were unavailable listings; Mahjong by SI (Target) is not a partner.",
   "complementary": "Complementary re-check (gold/amber/copper on navy): Vanderbilt (gold frame) added; Let's Be Besties Butterscotch Floral (amber) kept in the album in place of Royal Peacock (navy on navy, now in More from Let's Be Besties); Gatsby Glow, Calista, Tilly, Hawthorne stay in."
+ },
+ "pull": {
+  "contrast": [
+   "MULBERRY",
+   "ROSE",
+   "GOLD"
+  ],
+  "why": "Indigo backs: berry sits 67 deg from indigo, under the 90-deg default, but it is the set's accent colour"
  }
 }

@@ -13,6 +13,7 @@ Checks, in playbook order:
   [0] tile photo        record tile_photo approved_at set (her yes in chat; scripts/checks/tile_photo_check.py)
   [3c] mat discovery   record discovery {at, searches[]} (light Google/Etsy/Amazon search; finds may be empty) + variety warning
   [4] pool              record pool.size > 0 and pool.sources
+  [4b] committed pull   record pool.pulled_by = scripts/albumreview/pull.py and pool.no_photo = 0
   [4a] catalog fresh    record catalog_checked.at the same day as pool.pulled_at and not after it
                         (scripts/albumreview/catalog_refresh.py: ShopMy every collection + partner-store sweep)
   [5] by-sight pass     the left-out list exists, has mats, and every mat has a reason
@@ -99,6 +100,10 @@ def check(s):
     pool = rec.get('pool') or {}
     if not pool.get('size') or not pool.get('sources'): bad.append('[4] no candidate pool on record (record pool.size + sources)')
     proof['pool'] = pool
+    # [4b] the pull is the committed one (Nov 8, after Tiffany caught Britt Mills Scarlett + Flora missing from Deco Lagoon: the
+    # scratch pull silently dropped 13 scored mats with no gallery photo and never showed the contrast side)
+    if pool and (pool.get('pulled_by') != 'scripts/albumreview/pull.py' or pool.get('no_photo', 1) != 0):
+        bad.append(f'[4b] pool not pulled by scripts/albumreview/pull.py (every FYM photo, no silent drops, contrast side on the sheets): run python3 scripts/albumreview/pull.py {s} <out> --record and judge its miss sheets')
     # [4a] catalog up to date before the pull (Tiffany Nov 8 1:33pm): catalog_checked the same day as pool.pulled_at, not after it
     ck = rec.get('catalog_checked') or {}
     import datetime as _dt

@@ -57,6 +57,23 @@
   },
   {
    "group": "stand",
+   "name": "Darjeeling Peacock (Navy Floral)",
+   "brand": "Bespoke Mahjong",
+   "img": "assets/colorcards/deco/mats/bespoke-mahjong-darjeeling-peacock-navy-floral.jpg",
+   "box": [
+    0,
+    0,
+    631,
+    640
+   ],
+   "why": "Navy as deep as her backs, scattered with embroidered berry pansies and peacock feathers: her mulberry faces and her peacock-feather winds on her own navy.",
+   "retired": false,
+   "fym": "www.bespokemahjong.com/double-the-fun-darjeeling-peacock-mat#side-b",
+   "lowres": true,
+   "repull_nov08": "Nov 8 ~3pm re-pull (scripts/albumreview/pull.py, contrast side) after Tiffany caught Scarlett + Flora missing from Lagoon."
+  },
+  {
+   "group": "stand",
    "name": "Astor",
    "brand": "Oh My Mahjong",
    "img": "assets/colorcards/deco/mats/oh-my-mahjong-astor.jpg",
@@ -98,6 +115,23 @@
    "fym": "bougiemahjong.com/gilded-peacock-mahjong-mat",
    "lowres": false,
    "holiday": false
+  },
+  {
+   "group": "berry",
+   "name": "Scarlett",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-scarlett.jpg",
+   "box": [
+    0,
+    0,
+    1200,
+    1192
+   ],
+   "why": "A deep mulberry field with a flower-crowned statue head: her berry faces as the whole mat, the jewel-tone partner to her navy backs.",
+   "retired": false,
+   "fym": "brittmillsdesign.com/scarlett-neoprene-mahjong-mat",
+   "lowres": false,
+   "repull_nov08": "Nov 8 ~3pm re-pull (scripts/albumreview/pull.py, contrast side) after Tiffany caught Scarlett + Flora missing from Lagoon."
   },
   {
    "group": "berry",
@@ -357,5 +391,6 @@
     1080
    ]
   }
- ]
+ ],
+ "_repull_nov08": "Nov 8 ~3pm re-pull (scripts/albumreview/pull.py, contrast side) after Tiffany caught Scarlett + Flora missing from Lagoon. Added: Darjeeling Peacock (Side B) as standout #5, Scarlett first in Berry + teal. Not reviewed yet, so placed by standout order."
 }

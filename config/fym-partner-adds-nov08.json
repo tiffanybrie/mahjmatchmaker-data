@@ -1296,6 +1296,33 @@
     "yellow": 0.3
    },
    "added_by": "catalog_refresh deco-indigo 2026-11-08T13:52-05:00"
+  },
+  {
+   "key": "brittmillsdesign.com/isla-leatherette-mahjong-mat",
+   "name": "Isla Leatherette",
+   "brand": "Britt Mills",
+   "u": "https://brittmillsdesign.com/products/isla-leatherette-mahjong-mat",
+   "product_url": "https://brittmillsdesign.com/products/isla-leatherette-mahjong-mat",
+   "img": "assets/albums/catalog-new/britt-mills--isla-leatherette-mahjong-mat.jpg",
+   "src": "https://cdn.shopify.com/s/files/1/1184/0004/files/Islaleatherettelisting.jpg?v=1793629640",
+   "hol": false,
+   "hid": false,
+   "reason": "",
+   "colours": {
+    "brown": 58.8,
+    "pink": 19.4,
+    "earthy": 7.5,
+    "orange": 5.6,
+    "neutral": 2.5,
+    "blue": 2.3,
+    "red": 2.1,
+    "yellow": 1.0,
+    "dark": 0.7,
+    "purple": 0.1,
+    "green": 0.0,
+    "teal": 0.0
+   },
+   "added_by": "Nov 8 Britt Mills catalog sync (Tiffany 2:35pm: FYM must match the brand site). The only one of Britt Mills' 70 mahjong mats not in FYM; was skipped as Isla's material twin (partner-mat-sweep-ignore), now staged as its own mat like every other Britt Mills leatherette (Eden, Novella, Revelry...). FYM 1.19."
   }
  ]
 }
