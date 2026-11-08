@@ -82,6 +82,29 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{
 .note{width:100%;font:15px var(--body);border:1.5px solid var(--line);border-radius:10px;padding:9px 10px;background:var(--bg);color:var(--ink)}
 .mc.rm{opacity:.55}.mc.rm .zoom img{filter:grayscale(.6)}
 .state{font-size:13px;font-weight:700}
+/* move to # + cards/grid view */
+.vt{display:inline-flex;border:1.5px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card)}
+.vt button{min-height:40px;padding:0 16px;border:0;background:none}
+.vt button[aria-pressed="true"]{background:var(--ink);color:var(--card)}
+.mv{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--muted)}
+.mv input{width:64px;min-height:44px;font:600 16px var(--body);text-align:center;border:1.5px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+.mv button{min-height:44px;min-width:52px;border-radius:12px;border:1.5px solid var(--pink);background:var(--card);color:var(--pink)}
+.noord .mv{display:none}
+.mc{scroll-margin-top:12px}.mc.flash{box-shadow:0 0 0 3px var(--pink)}
+.hint{font-size:14px;color:var(--muted);margin:8px 0 0}
+.list.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.gc{position:relative;display:block;padding:0;border:2px solid var(--line);border-radius:10px;overflow:hidden;background:var(--dim);cursor:pointer}
+.gc img{display:block;width:100%;height:auto;aspect-ratio:auto 4/5}
+.mc .zoom img{aspect-ratio:auto 4/5}
+.gc .gn{position:absolute;top:4px;left:4px;background:var(--card);color:var(--set);font:400 15px/1 var(--disp);border-radius:999px;padding:4px 7px;font-variant-numeric:tabular-nums}
+.gc .gk{position:absolute;top:4px;right:4px;background:var(--card);border-radius:999px;padding:2px 6px;font-size:13px;line-height:1.2}
+.gc.rm img{opacity:.45;filter:grayscale(.6)}
+.gc[aria-pressed="true"]{border-color:var(--pink);box-shadow:0 0 0 3px var(--pink)}
+.gc.flash{border-color:var(--pink)}
+.gsel{position:fixed;left:0;right:0;bottom:calc(52px + env(safe-area-inset-bottom,0px));z-index:6;background:var(--chip);border-top:1px solid var(--line);
+  padding:8px max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px));display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.gsel b{flex:1 1 100%;min-width:0;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gsel .x2{min-height:44px;border-radius:12px;border:1.5px solid var(--line);background:var(--card);padding:0 14px;margin-left:auto}
 /* left out */
 .lo .pic{position:relative;background:var(--dim)}
 .lo .pic>button{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in}
@@ -148,11 +171,14 @@ textarea{width:100%;min-height:140px;font:16px/1.45 var(--body);border:2px solid
 
   <h2 id="matches">The matches</h2>
   <p class="lede">Tap a card to see it full size. ♥ keeps it, ✕ takes it out. Tap again to undo.</p>
-  <div class="bar2"><label class="sw" for="noorder"><input type="checkbox" id="noorder" role="switch"> Not ordering yet</label><span class="tally" id="tally"></span></div>
+  <div class="bar2"><div class="vt" role="group" aria-label="Matches view" data-sec="main"><button data-view="cards" aria-pressed="true">Cards</button><button data-view="grid" aria-pressed="false">Grid</button></div><label class="sw" for="noorder"><input type="checkbox" id="noorder" role="switch"> Not ordering yet</label><span class="tally" id="tally"></span></div>
+  <p class="hint" id="main-hint" hidden>Tap a card to pick it up, then tap the card whose spot it should take.</p>
   <div class="list" id="main"></div>
 
   <h2 id="holiday">Holiday matches</h2>
   <p class="lede">Christmas, Hanukkah and winter-snow mats. Same controls.</p>
+  <div class="bar2"><div class="vt" role="group" aria-label="Holiday view" data-sec="hol"><button data-view="cards" aria-pressed="true">Cards</button><button data-view="grid" aria-pressed="false">Grid</button></div></div>
+  <p class="hint" id="hol-hint" hidden>Tap a card to pick it up, then tap the card whose spot it should take.</p>
   <div class="list" id="hol"></div>
 
   <h2 id="left">Left out</h2>
@@ -177,6 +203,7 @@ textarea{width:100%;min-height:140px;font:16px/1.45 var(--body);border:2px solid
   <textarea id="anything" placeholder="Type anything here. It saves as you go."></textarea>
   <button class="done" id="done" aria-pressed="false">Done</button>
 </div>
+<div class="gsel" id="gsel" hidden><b id="gselt"></b><span class="mv"><label for="gmv">Move to #</label><input id="gmv" data-mv="" data-sec="" inputmode="numeric" pattern="[0-9]*" enterkeyhint="go" autocomplete="off"><button data-go="gmv">Go</button></span><button class="x2" id="gselx">Cancel</button></div>
 <div class="save" role="status" aria-live="polite"><span class="st" id="st">Connecting…</span><a href="#else">Done ↓</a></div>
 <div id="lb" hidden><button id="lbx">Close</button><img alt=""></div>
 
@@ -240,10 +267,29 @@ ${c.tags.length?`<div class="tags">${c.tags.map(t=>`<span class="tag">${esc(t)}<
 <div class="ctl"><button class="ic h" data-act="keep" aria-pressed="${v==='keep'}" aria-label="Keep ${esc(c.mat)}">♥</button><button class="ic x" data-act="remove" aria-pressed="${v==='remove'}" aria-label="Remove ${esc(c.mat)}">✕</button>
 <span class="state">${v==='keep'?'Keeping':v==='remove'?'Taking out':''}</span>
 <span class="ord"><button data-act="up" aria-label="Move ${esc(c.mat)} up" ${i===0?'disabled':''}>↑</button><button data-act="down" aria-label="Move ${esc(c.mat)} down" ${i===n-1?'disabled':''}>↓</button></span></div>
+<div class="mv"><label for="mv-${c.id}">Move to #</label><input id="mv-${c.id}" data-mv="${c.id}" data-sec="${sec}" inputmode="numeric" pattern="[0-9]*" enterkeyhint="go" autocomplete="off"><button data-go="mv-${c.id}" aria-label="Move ${esc(c.mat)} to that number">Go</button><span>of ${n}</span></div>
 <label class="bn" for="n-${c.id}">Note</label><input class="note" id="n-${c.id}" data-note="${c.id}" maxlength="500" placeholder="e.g. rank higher, wrong colour" value="${esc(S.notes[c.id]||'')}"></div></article>`}
-function renderList(sec){const ids=S.order[sec];const el=$(sec==='main'?'#main':'#hol');
-  el.innerHTML=ids.length?ids.map((id,i)=>cardHTML(byId[id],i,ids.length,sec)).join(''):'<p class="empty">No cards in this section.</p>';
-  el.classList.toggle('noord',S.ordering_off)}
+function gridHTML(c,i,sec){const v=S.v[c.id]||'',on=!!SEL&&SEL.id===c.id;
+  return `<button class="gc${v==='remove'?' rm':''}" data-gid="${c.id}" data-sec="${sec}" aria-pressed="${on}" aria-label="#${i+1} ${esc(c.mat)}${v==='keep'?', keeping':v==='remove'?', taking out':''}"><img src="c/${c.id}.jpg" alt="" loading="lazy"><span class="gn">#${i+1}</span>${v==='keep'?'<span class="gk">♥</span>':v==='remove'?'<span class="gk">✕</span>':''}</button>`}
+function renderList(sec){const ids=S.order[sec];const el=$(sec==='main'?'#main':'#hol');const g=VIEW[sec]==='grid';
+  el.classList.toggle('grid',g&&ids.length>0);
+  el.innerHTML=ids.length?ids.map((id,i)=>g?gridHTML(byId[id],i,sec):cardHTML(byId[id],i,ids.length,sec)).join(''):'<p class="empty">No cards in this section.</p>';
+  el.classList.toggle('noord',S.ordering_off);
+  document.querySelectorAll(`.vt[data-sec="${sec}"] button`).forEach(b=>b.setAttribute('aria-pressed',b.dataset.view===VIEW[sec]));
+  $('#'+sec+'-hint').hidden=!(g&&!S.ordering_off&&ids.length>1)}
+/* ---------- view (per viewer, browser only) + move to # ---------- */
+let VIEW={main:'cards',hol:'cards'},SEL=null;const VKEY='albumreview-view-'+D.set;
+try{const v=JSON.parse(localStorage.getItem(VKEY)||'null');if(v)for(const k of['main','hol'])if(v[k]==='grid'||v[k]==='cards')VIEW[k]=v[k]}catch(e){}
+function setView(sec,v){VIEW[sec]=v;if(SEL&&SEL.sec===sec)SEL=null;try{localStorage.setItem(VKEY,JSON.stringify(VIEW))}catch(e){}renderList(sec);renderSel()}
+function renderSel(){const b=$('#gsel');document.querySelectorAll('.gc').forEach(x=>x.setAttribute('aria-pressed',!!SEL&&x.dataset.gid===SEL.id));
+  if(!SEL){b.hidden=true;return}const n=S.order[SEL.sec].indexOf(SEL.id)+1;
+  $('#gselt').textContent=`#${n} ${byId[SEL.id].mat} picked up. Tap the spot it should take.`;const inp=$('#gmv');inp.dataset.mv=SEL.id;inp.dataset.sec=SEL.sec;inp.value='';b.hidden=false}
+function moveTo(sec,id,pos){const a=S.order[sec],i=a.indexOf(id);if(i<0||!Number.isFinite(pos))return;
+  const j=Math.max(0,Math.min(a.length-1,Math.round(pos)-1));if(j!==i){a.splice(i,1);a.splice(j,0,id);save()}
+  SEL=null;renderList(sec);renderSel();
+  const el=document.querySelector(VIEW[sec]==='grid'?`.gc[data-gid="${id}"]`:`.mc[data-id="${id}"]`);
+  if(el){el.scrollIntoView({block:VIEW[sec]==='grid'?'nearest':'center'});el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),1400)}}
+function applyMv(inp){if(!inp||!inp.dataset.mv)return;const v=inp.value.trim();if(!v)return;inp.value='';moveTo(inp.dataset.sec,inp.dataset.mv,parseInt(v,10))}
 function renderTally(){const v=Object.values(S.v);$('#tally').textContent=`${v.filter(x=>x==='keep').length} kept · ${v.filter(x=>x==='remove').length} out · ${D.cards.length} cards`;$('#noorder').checked=S.ordering_off}
 function loHTML(l,on){return `<article class="mc lo" data-lo="${l.id}"><div class="pic"><button data-z="lo/${l.id}.jpg" aria-label="See ${esc(l.name)} full size"><img class="mat" src="lo/${l.id}.jpg" alt="${esc(l.name)} mat" loading="lazy"></button><img class="ins" src="t/inset.jpg" alt=""></div>
 <div class="body"><h4>${esc(l.name)}</h4><p class="bn">${esc(l.brand)}${l.hol?' · Holiday':''}${l.retired?' · Retired':''}</p><p class="why">${esc(l.why)}</p>
@@ -273,6 +319,13 @@ function search(){if(!CAT)return;const q=norm($('#q').value).trim();const res=$(
 function move(sec,id,d){const a=S.order[sec],i=a.indexOf(id),j=i+d;if(j<0||j>=a.length)return;[a[i],a[j]]=[a[j],a[i]];renderList(sec);save();
   const b=document.querySelector(`.mc[data-id="${id}"] [data-act="${d<0?'up':'down'}"]`);(b&&!b.disabled?b:document.querySelector(`.mc[data-id="${id}"] [data-act="${d<0?'down':'up'}"]`))?.focus()}
 document.addEventListener('click',e=>{const t=e.target;
+  const vb=t.closest('.vt button');if(vb){setView(vb.closest('.vt').dataset.sec,vb.dataset.view);return}
+  const gc=t.closest('[data-gid]');if(gc){const id=gc.dataset.gid,sec=gc.dataset.sec;
+    if(S.ordering_off){const lb=$('#lb');lb.querySelector('img').src='c/'+id+'.jpg';lb.classList.remove('big');lb.hidden=false;$('#lbx').focus();return}
+    if(SEL&&SEL.sec===sec&&SEL.id!==id){moveTo(sec,SEL.id,S.order[sec].indexOf(id)+1);return}
+    SEL=SEL&&SEL.id===id?null:{sec,id};renderSel();return}
+  const go=t.closest('[data-go]');if(go){applyMv(document.getElementById(go.dataset.go));return}
+  if(t.id==='gselx'){SEL=null;renderSel();return}
   const z=t.closest('[data-z]');if(z){const lb=$('#lb');lb.querySelector('img').src=z.dataset.z;lb.classList.remove('big');lb.hidden=false;$('#lbx').focus();return}
   const cv=t.closest('[data-cover]');if(cv){S.cover=+cv.dataset.cover;renderCovers();save();return}
   const f=t.closest('[data-face]');if(f){const k=f.dataset.face,i=S.faces.indexOf(k);if(i>-1)S.faces.splice(i,1);else S.faces.push(k);renderFaces();save();document.querySelector(`[data-face="${k}"]`)?.focus();return}
@@ -291,7 +344,9 @@ document.addEventListener('input',e=>{const t=e.target;
   else if(t.id==='anything'){S.anything=t.value;save()}
   else if(t.id==='q'){loadCat();search()}});
 $('#q').addEventListener('focus',loadCat);
-$('#noorder').addEventListener('change',e=>{S.ordering_off=e.target.checked;renderList('main');renderList('hol');save()});
-document.addEventListener('keydown',e=>{if(e.key==='Escape')$('#lb').hidden=true});
+$('#noorder').addEventListener('change',e=>{S.ordering_off=e.target.checked;SEL=null;renderList('main');renderList('hol');renderSel();save()});
+document.addEventListener('change',e=>{if(e.target.dataset&&e.target.dataset.mv!==undefined)applyMv(e.target)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')$('#lb').hidden=true;
+  if(e.key==='Enter'&&e.target.dataset&&e.target.dataset.mv!==undefined){e.preventDefault();applyMv(e.target)}});
 renderSteps();renderAll();connect();
 </script>
