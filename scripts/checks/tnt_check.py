@@ -16,6 +16,9 @@ SKIP: sets Tiffany dropped (no album)."""
 import json, os, sys
 R = '/home/claude/mahjmatchmaker-data/'
 SKIP = {'style-of-your-life'}  # dropped Nov 7 11:47pm (Dillard's exclusive)
+# TABLED (Tiffany Nov 8 1:11pm): albums already live before the TNT gate; no backward-looking TNT search this week
+# ("we got to make sure we're at least on track for this week before we start looking backwards"). Rainy-day item on DESK.
+SKIP |= {'shangri-la', 'lilac-soiree', 'preppy-soiree', 'spring-love', 'papaya-spritz', 'sunday-tile-set', 'brownstone-bloom', 'juniper'}
 
 
 def album_sets():
