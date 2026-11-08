@@ -97,6 +97,11 @@ finds = []
 for f in disc.get('new_finds', []):
     put(f"nf/{f['id']}.jpg", src=f['img'], maxs=900, q=84)
     finds.append({k: f.get(k, '') for k in ('id', 'name', 'seller', 'url', 'source', 'why', 'note')})
+    # Playbook step 10b (Nov 8): a find she brought in shows its loop status (paid link + catalog; Amazon: Associates + Ops import)
+    _bi = next((b for b in rec.get('bringins', []) if b.get('id') == f['id']), None)
+    if _bi:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import bringins as _BI
+        finds[-1]['bi'] = _BI.status(_bi) + f" · {_bi.get('route')}"; finds[-1]['biDone'] = not _BI.missing(_bi)
 
 # ---- tiles, covers, colour card, wheel, faces
 put('t/tile.jpg', src=TP['file'], maxs=1400)

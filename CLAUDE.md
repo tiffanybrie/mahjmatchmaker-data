@@ -55,6 +55,7 @@ Live app: claude.ai artifact 6epA9HuEdT32zUp79Qv3kd. Its published index.html (`
 6b. **Rack photos (Tiffany Oct 23 + Oct 25 21:42, reported twice):** every rack photo shown must be LOOKED AT on white AND navy (`python3 builder/fym_rack_images.py <build> --sheet out.jpg`) and marked ok (`--approve`) in builder/fym_flags/rack_image_review.json; gate [56] fails otherwise. Brand shots on black: cut with `cutout_on_black` (builder/fym_fix_oct25/v92_bespokeracks.py); white halos: builder/fym_defringe.py; a white/clear rack that can't be cut cleanly shows the brand photo on white. Tile photos: real brand photos only, never paste tiles in (Oct 25 21:15). Bam Bird = uniform faces|backs split (config/fym-bambird-splits-oct25.json, gate [58]). Coordinated brand mats first: config/fym-coordinated.json (gate [57]).
 7. **UX:** X and heart only (never crush/nope/pass). Zoom persists. Color filter never locks. Code MAHJMATCH on every card with a partner piece (no hard-coded %).
 8. When she reports a bug, add a gate check for that bug type the same day.
+9. **Link routes (Nov 8):** every shop link is paid the way config/link-routes.json says for its brand (code-site / shopmy-site / shopmy-etsy / shopmy-amazon / none); gate [172] + scripts/checks/link_route_check.py. Read docs/LINK-ROUTES.md before adding a brand, a link or an album bring-in.
 
 ## Working rules
 - Never sit idle; finish one task, start the next. Project docs (claude.ai Project "Mahj Matchmaker") doc 00 = top rules.

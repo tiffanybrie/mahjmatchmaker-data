@@ -6,7 +6,9 @@ WEEKLY (Mondays, ~3 min, adds links):   python3 scripts/checks/gallery_sync_chec
 
 Daily: the live /mahjong-mats gallery must be stamped data-fym="vNNN" with the SAME version
 as the live /find-your-match app (page block loads site-app/fym-vNNN/index.html).
-Weekly: every non-ShopMy shop link in the live gallery data is loaded; 404/410 = dead.
+Weekly: every non-ShopMy shop link in the live gallery data is loaded; 404/410 = dead. --links also runs the LINK-ROUTE check
+(scripts/checks/link_route_check.py, config/link-routes.json, Nov 8): every live gallery link + the newest website FYM build must be
+paid the way its brand's route says (ShopMy redirects resolved); unstaged mismatches FAIL, staged ones are listed.
 Prints one line: PASS ... or FAIL ... (exit 1). FAIL = fix the same day (rebuild/paste the
 gallery per site/livepatch/matgallery/README.md "v6", or drop/replace dead links via
 config/mat-gallery-link-fixes.json). No Claude usage beyond reading the one line.
@@ -80,6 +82,19 @@ def main():
             if unk: notes.append(f'{unk} unreachable (not counted)')
             if dead:
                 problems.append(f'{len(dead)} dead shop links: ' + '; '.join(dead[:15]))
+            try:  # link routes (Nov 8 2026, Tiffany 6:02pm): live gallery rows + newest website FYM build
+                sys.path.insert(0, __import__('os').path.dirname(__import__('os').path.abspath(__file__)))
+                import link_route_check as LR
+                try:
+                    _html, _src = LR.website_build(); _D = LR.load_D(_html)
+                except BaseException:
+                    _D = None
+                lr = LR.check(_D, rows)
+                notes.append(f"link routes: {len(lr['fails'])} mismatches, {len(lr['staged'])} staged")
+                if lr['fails']:
+                    problems.append(f"{len(lr['fails'])} links not paid the way config/link-routes.json says: " + '; '.join(lr['fails'][:10]))
+            except Exception as e:
+                notes.append(f'link-route check did not run: {e}')
     head = f'app v{app_v}, gallery v{gal_v}'
     if problems:
         print('FAIL gallery_sync_check: ' + head + ' | ' + ' | '.join(problems + notes)); sys.exit(1)

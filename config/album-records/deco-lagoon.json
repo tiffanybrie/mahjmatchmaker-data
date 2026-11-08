@@ -3043,5 +3043,23 @@
   "note": "Light targeted search (12 searches: Google, Etsy, Amazon via WebSearch/WebFetch). Terms from the colour card (teal/berry/navy/gold), mood (art deco, jewel tone) and the faces (peacock feather, crane, iris, fan). Many Etsy hits were unavailable listings; Mahjong by SI (Target) is not a partner.",
   "recheck_nonpartner": "Rule Nov 8 2:03pm ('if it matches, it matches'): the 5 Tiles & Tablescapes Deco Lagoon pairings dropped only as non-partners (Lemondrop Garnet Blooms, Mahjong by SI Gatsby / Fall Into the Wild / Brewtifully leatherette, Golden Pond Parlor; Printerval unnamed) need their product photos to be judged; a light search did not find the listings. Next: pull the photos from the TNT posts in Chrome and judge by eye.",
   "complementary": "Complementary re-check (Tiffany 2:05pm: the colour pull leans tonal): berry/magenta/plum/coral/gold mats already carry the album's standouts (Reba, Viola, Deco Dragon Mulberry, Wren) and Garden Party Mulberry, East Meets West Magenta, Pretty in Plum; Delilah stays out (bright turquoise, not her deep teal)."
- }
+ },
+ "bringins": [
+  {
+   "id": "navy-fans",
+   "mat": "Dark Blue Art Deco, Gold Geometric Fans",
+   "brand": "Dreamframer Art",
+   "store": "etsy.com",
+   "store_url": "https://www.etsy.com/listing/4491199204",
+   "route": "shopmy-etsy",
+   "shopmy_link": "https://go.shopmy.us/p-102728926",
+   "shopmy_collection": "Etsy Mahjong Mats (8392222)",
+   "amazon_saved": null,
+   "ops_imported": null,
+   "catalog_staged": "config/fym-shopmy-catalog-refresh-nov08.json (FYM 1.19 + gallery; photo gates apply)",
+   "round": 1,
+   "at": "2026-11-08T18:39:34-05:00",
+   "notes": "Tiffany brought it in on the Lagoon review page (Nov 8). Brand Dreamframer Art (Etsy, non-partner, ShopMy 7%). Pin 102728926 resolves to etsy.com/listing/4491199204."
+  }
+ ]
 }

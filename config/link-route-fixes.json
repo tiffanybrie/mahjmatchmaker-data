@@ -1,0 +1,250 @@
+{
+ "_about": "Staged link-route fixes (config/link-routes.json; Tiffany Nov 8 6:02pm). '<group>|<FYM key>' -> corrected paid link for the NEXT FYM build. Apply: python3 builder/fym_fix_nov08/apply_link_routes.py <build>; the Mat Gallery follows from that build. scripts/checks/link_route_check.py reports these as STAGED until the live build carries them; gate [172] (--gate) FAILS a build that does not. Delete an item once it is live.",
+ "items": {
+  "mats|charlestonmahjongclub.com/the-hunt-club-neoprene-mat-toile-w-carrying-bag": {
+   "u": "https://go.shopmy.us/p-95958610",
+   "brand": "Charleston Mahjong Club",
+   "name": "The Hunt Club",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fthe-hunt-club-neoprene-mat-toile-w-carrying-bag%3Fsca_ref%3D10024640.r4MqWQJxOaKK",
+   "product": "https://charlestonmahjongclub.com/products/the-hunt-club-neoprene-mat-toile-w-carrying-bag",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": 95958610
+  },
+  "mats|charlestonmahjongclub.com/new-brown-vegan-leather-mahjong-mat-w-carrying-bag-copy": {
+   "u": "https://go.shopmy.us/p-95958614",
+   "brand": "Charleston Mahjong Club",
+   "name": "Brown Vegan Leather",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fnew-brown-vegan-leather-mahjong-mat-w-carrying-bag-copy%3Fsca_ref%3D10024640.r4MqWQJxOaKK",
+   "product": "https://charlestonmahjongclub.com/products/new-brown-vegan-leather-mahjong-mat-w-carrying-bag-copy",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": 95958614
+  },
+  "mats|www.charlestonmahjongclub.com/the-migration-mat-in-pink-with-matching-mat-bag": {
+   "u": "https://go.shopmy.us/p-95958991",
+   "brand": "Charleston Mahjong Club",
+   "name": "Migration in Pink & Light Blue",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fthe-migration-mat-in-pink-with-matching-mat-bag%3Fsca_ref%3D10024640.r4MqWQJxOaKK",
+   "product": "https://charlestonmahjongclub.com/products/the-migration-mat-in-pink-with-matching-mat-bag",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": 95958991
+  },
+  "mats|www.charlestonmahjongclub.com/the-club-mat-2-color-options-copy": {
+   "u": "https://go.shopmy.us/p-95958990",
+   "brand": "Charleston Mahjong Club",
+   "name": "The Club Mat – Blue/Green Stripe",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fthe-club-mat-2-color-options-copy",
+   "product": "https://charlestonmahjongclub.com/products/the-club-mat-2-color-options-copy",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": 95958990
+  },
+  "mats|www.charlestonmahjongclub.com/the-migration-mat-2-color-options-copy": {
+   "u": "https://go.shopmy.us/p-95958985",
+   "brand": "Charleston Mahjong Club",
+   "name": "The Migration Mat –Teal & Periwinkle Blue",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fthe-migration-mat-2-color-options-copy",
+   "product": "https://charlestonmahjongclub.com/products/the-migration-mat-2-color-options-copy",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": 95958985
+  },
+  "mats|www.charlestonmahjongclub.com/new-ski-mat-with-red-sweater-border-and-toilet-pattern": {
+   "u": "https://go.shopmy.us/p-95959013",
+   "brand": "Charleston Mahjong Club",
+   "name": "Ski Club Mat- Red Sweater Border",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fnew-ski-mat-with-red-sweater-border-and-toilet-pattern",
+   "product": "https://charlestonmahjongclub.com/products/new-ski-mat-with-red-sweater-border-and-toilet-pattern",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": 95959013
+  },
+  "mats|www.charlestonmahjongclub.com/cocktail-club-neoprene-mat-w-carrying-bag": {
+   "u": "https://go.shopmy.us/p-102728618",
+   "brand": "Charleston Mahjong Club",
+   "name": "The Cocktail Club Mat",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fcocktail-club-neoprene-mat-w-carrying-bag",
+   "product": "https://charlestonmahjongclub.com/products/cocktail-club-neoprene-mat-w-carrying-bag",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": "102728618",
+   "made": "2026-11-08 (link-route agent, ShopMy 15% confirmed in the link maker)"
+  },
+  "mats|www.charlestonmahjongclub.com/neoprene-club-mat-w-matching-bag-2-color-options": {
+   "u": "https://go.shopmy.us/p-95958961",
+   "brand": "Charleston Mahjong Club",
+   "name": "The Club Mat – Pink/White Striped",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fneoprene-club-mat-w-matching-bag-2-color-options",
+   "product": "https://charlestonmahjongclub.com/products/neoprene-club-mat-w-matching-bag-2-color-options",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": 95958961
+  },
+  "mats|www.charlestonmahjongclub.com/the-ski-club-mat-in-toile-w-matching-bag": {
+   "u": "https://go.shopmy.us/p-95959041",
+   "brand": "Charleston Mahjong Club",
+   "name": "Ski Club Mat - Periwinkle Center",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fthe-ski-club-mat-in-toile-w-matching-bag",
+   "product": "https://charlestonmahjongclub.com/products/the-ski-club-mat-in-toile-w-matching-bag",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": 95959041
+  },
+  "mats|www.charlestonmahjongclub.com/vegan-leather-reversible-game-mat?v=50377156297009": {
+   "u": "https://go.shopmy.us/p-95958509",
+   "brand": "Charleston Mahjong Club",
+   "name": "Reversible Vegan Leather – Bight Pink & Purple",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fvegan-leather-reversible-game-mat%3Fvariant%3D50377156297009",
+   "product": "https://charlestonmahjongclub.com/products/vegan-leather-reversible-game-mat",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": 95958509
+  },
+  "mats|www.charlestonmahjongclub.com/vegan-leather-reversible-game-mat?v=50377156264241": {
+   "u": "https://go.shopmy.us/p-95958509",
+   "brand": "Charleston Mahjong Club",
+   "name": "Reversible Vegan Leather – Blush Pink & Cornflower Blue",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fvegan-leather-reversible-game-mat%3Fvariant%3D50377156264241",
+   "product": "https://charlestonmahjongclub.com/products/vegan-leather-reversible-game-mat",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": 95958509
+  },
+  "mats|www.charlestonmahjongclub.com/vegan-leather-reversible-game-mat?v=50377156329777": {
+   "u": "https://go.shopmy.us/p-95958509",
+   "brand": "Charleston Mahjong Club",
+   "name": "Reversible Vegan Leather – Mint Green & Sea Foam Green",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fvegan-leather-reversible-game-mat%3Fvariant%3D50377156329777",
+   "product": "https://charlestonmahjongclub.com/products/vegan-leather-reversible-game-mat",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": 95958509
+  },
+  "mats|www.charlestonmahjongclub.com/vegan-leather-reversible-game-mat?v=50377156362545": {
+   "u": "https://go.shopmy.us/p-95958509",
+   "brand": "Charleston Mahjong Club",
+   "name": "Reversible Vegan Leather – Sea Foam Green & Dusty Blue",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fvegan-leather-reversible-game-mat%3Fvariant%3D50377156362545",
+   "product": "https://charlestonmahjongclub.com/products/vegan-leather-reversible-game-mat",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": 95958509
+  },
+  "mats|www.charlestonmahjongclub.com/cabana-club-neoprene-mat": {
+   "u": "https://go.shopmy.us/p-95958998",
+   "brand": "Charleston Mahjong Club",
+   "name": "Cabana Club",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fcabana-club-neoprene-mat%3Fsca_ref%3D10024640.r4MqWQJxOaKK",
+   "product": "https://charlestonmahjongclub.com/products/cabana-club-neoprene-mat",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": 95958998
+  },
+  "racks|www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue": {
+   "u": "https://go.shopmy.us/p-102728812",
+   "brand": "Charleston Mahjong Club",
+   "name": "NEW SHELF ANGLE! 20\" Wooden Mahjong Racks  – 4 Color Options – Admiral Blue",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fnew-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue",
+   "product": "https://charlestonmahjongclub.com/products/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": "102728812",
+   "made": "2026-11-08 (link-route agent, ShopMy 15% confirmed in the link maker)"
+  },
+  "racks|www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue?v=55711274926385": {
+   "u": "https://go.shopmy.us/p-102728813",
+   "brand": "Charleston Mahjong Club",
+   "name": "Charleston Mahjong Club Key Lime Wood",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fnew-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue%3Fvariant%3D55711274926385%26sca_ref%3D10024640.r4MqWQJxOaKK",
+   "product": "https://charlestonmahjongclub.com/products/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": "102728813",
+   "made": "2026-11-08 (link-route agent, ShopMy 15% confirmed in the link maker)"
+  },
+  "racks|www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue?v=55711274959153": {
+   "u": "https://go.shopmy.us/p-102728814",
+   "brand": "Charleston Mahjong Club",
+   "name": "Charleston Mahjong Club Azalea Pink Wood",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fnew-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue%3Fvariant%3D55711274959153%26sca_ref%3D10024640.r4MqWQJxOaKK",
+   "product": "https://charlestonmahjongclub.com/products/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": "102728814",
+   "made": "2026-11-08 (link-route agent, ShopMy 15% confirmed in the link maker)"
+  },
+  "racks|www.charlestonmahjongclub.com/clear-acrylic-mahjong-racks-with-magnetic-pushers-set-of-4-20-long": {
+   "u": "https://go.shopmy.us/p-102728815",
+   "brand": "Charleston Mahjong Club",
+   "name": "Charleston Mahjong Club Clear Acrylic",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fclear-acrylic-mahjong-racks-with-magnetic-pushers-set-of-4-20-long%3Fsca_ref%3D10024640.r4MqWQJxOaKK",
+   "product": "https://charlestonmahjongclub.com/products/clear-acrylic-mahjong-racks-with-magnetic-pushers-set-of-4-20-long",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": "102728815",
+   "made": "2026-11-08 (link-route agent, ShopMy 15% confirmed in the link maker)"
+  },
+  "tiles|hol:cmc-apres-ski": {
+   "u": "https://go.shopmy.us/p-95958590",
+   "brand": "Charleston Mahjong Club",
+   "name": "Après Ski Club",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fapres-ski-edition-tile-set",
+   "product": "https://charlestonmahjongclub.com/products/apres-ski-edition-tile-set",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": 95958590
+  },
+  "tiles|charlestonmahjongclub.com/the-country-club-edition": {
+   "u": "https://go.shopmy.us/p-95958494",
+   "brand": "Charleston Mahjong Club",
+   "name": "The Country Club Edition",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fthe-country-club-edition%3Fsca_ref%3D10024640.r4MqWQJxOaKK",
+   "product": "https://charlestonmahjongclub.com/products/the-country-club-edition",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": 95958494
+  },
+  "tiles|www.charlestonmahjongclub.com/the-hunt-club-edition": {
+   "u": "https://go.shopmy.us/p-95958571",
+   "brand": "Charleston Mahjong Club",
+   "name": "Hunt Club Edition",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fthe-hunt-club-edition",
+   "product": "https://charlestonmahjongclub.com/products/the-hunt-club-edition",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": 95958571
+  },
+  "tiles|www.charlestonmahjongclub.com/cocktail-club-2-0": {
+   "u": "https://go.shopmy.us/p-102728816",
+   "brand": "Charleston Mahjong Club",
+   "name": "Cocktail Club 2.0 Edition",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fcocktail-club-2-0",
+   "product": "https://charlestonmahjongclub.com/products/cocktail-club-2-0",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": "102728816",
+   "made": "2026-11-08 (link-route agent, ShopMy 15% confirmed in the link maker)"
+  },
+  "tiles|www.charlestonmahjongclub.com/the-yacht-club-edition": {
+   "u": "https://go.shopmy.us/p-95958579",
+   "brand": "Charleston Mahjong Club",
+   "name": "Yacht Club Edition",
+   "old_u": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fthe-yacht-club-edition",
+   "product": "https://charlestonmahjongclub.com/products/the-yacht-club-edition",
+   "why": "route shopmy-site (ShopMy 15% vs own 10%, Tiffany Oct 28)",
+   "for": "FYM 1.19",
+   "pin": 95958579
+  },
+  "tiles|www.loveshackfancy.com/pink-floral-mahjong-tile-set": {
+   "u": "https://go.shopmy.us/p-96226860",
+   "brand": "LoveShackFancy",
+   "name": "Coquette",
+   "old_u": "https://www.loveshackfancy.com/products/pink-floral-mahjong-tile-set",
+   "why": "route shopmy-site: her existing pin 96226860 (OMM x LoveShackFancy collection)",
+   "for": "FYM 1.19",
+   "pin": "96226860"
+  }
+ }
+}

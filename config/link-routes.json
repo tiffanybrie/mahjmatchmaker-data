@@ -1,0 +1,731 @@
+{
+ "_about": "ONE truth table for HOW each brand's shop links get paid (Tiffany Nov 8 6:02pm: close the ShopMy gap once and for all). route: code-site = the brand's own store (MAHJMATCH, auto-apply link where config/autoapply-hosts.json says); shopmy-site = go.shopmy.us link that lands on the brand's (or its retailer's) own site; shopmy-etsy = go.shopmy.us -> etsy.com (6%); shopmy-amazon = go.shopmy.us -> amazon.com (or a direct amzn.to / amazon.com link with tag heritagesig05-20); none = no commission, plain link. commission_pct = what she earns (null = not recorded). rate_compare: which pays more when a partner has BOTH (unknown = ask her). Checked by scripts/checks/link_route_check.py (FYM gate [172], gallery_sync_check --links). docs/LINK-ROUTES.md explains it. A brand missing here FAILS the check: add its row the day it comes in.",
+ "updated": "2026-11-08",
+ "internal_ok": [
+  "mahjmatchmaker.com"
+ ],
+ "brands": {
+  "Amahj": {
+   "route": "code-site",
+   "store_hosts": [
+    "amahjline.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Amanda Toppe": {
+   "route": "code-site",
+   "store_hosts": [
+    "amandatoppeart.com"
+   ],
+   "commission_pct": null,
+   "notes": "Squarespace store (no /discount/); ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json skip + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Amazon": {
+   "route": "shopmy-amazon",
+   "store_hosts": [
+    "amazon.com"
+   ],
+   "commission_pct": null,
+   "notes": "Amazon pays via her Associates tag heritagesig05-20 (ShopMy Amazon links carry it). Flow: save in the Associates portal, then Ops imports into ShopMy.",
+   "source": "docs/ANSWERS.md 2026-11-08 14:08 + 18:02",
+   "associates_tag": "heritagesig05-20"
+  },
+  "Anders Ruff": {
+   "route": "code-site",
+   "store_hosts": [
+    "shop.andersruff.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "AussieHannaGift": {
+   "route": "shopmy-etsy",
+   "store_hosts": [
+    "etsy.com"
+   ],
+   "commission_pct": 7,
+   "notes": "Etsy. ShopMy link maker shows 7% for Etsy on Nov 8 (was 6% Oct 29; Etsy pays ShopMy 9% via Rakuten).",
+   "source": "docs/ANSWERS.md 2026-10-29 11:17 + 2026-11-08 15:42 / 16:27 + ShopMy My Links Nov 8"
+  },
+  "Bam Bird Boutique": {
+   "route": "code-site",
+   "store_hosts": [
+    "bambirdboutique.com"
+   ],
+   "commission_pct": null,
+   "notes": "ShopMy pays only 4%; her call: don't use it, own program is better (ShopMy via AvantLink, merchant 10%, her share ~4%).",
+   "source": "docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + Tiffany Oct 20 (memory affiliate-income)",
+   "shopmy_pct": 4,
+   "rate_compare": "code"
+  },
+  "Bam! Let's Mahjong": {
+   "route": "code-site",
+   "store_hosts": [
+    "bamletsmahjong.com"
+   ],
+   "commission_pct": null,
+   "notes": "bamletsmahjong.com is NOT a ShopMy merchant: the link maker says \"This link won't earn commission\" (re-checked Nov 8). ShopMy pays 15% only through retailer Printfresh (printfresh.com, same $95 price, in stock Nov 8: Nantucket, Grandmillennial, Holly Jolly mats; tiles there are bundles with mat + shufflers). MAHJMATCH does not work at Printfresh, so a Printfresh link drops the shopper's 10% code: kept on bamletsmahjong.com + code until Tiffany says (her Oct 28 call assumed the brand itself paid on ShopMy). Printfresh pins: Nantucket mat 96194625, Grandmillennial mat 96194603, Holly Jolly mat 96194546.",
+   "source": "docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + Tiffany Oct 28 (memory partner-brands)",
+   "shopmy_pct": 15,
+   "shopmy_via": "printfresh.com",
+   "rate_compare": "shopmy-via-retailer",
+   "shopmy_collection": 8398045,
+   "exception_hosts": [
+    "printfresh.com"
+   ],
+   "shopmy_pct_own_site": 0
+  },
+  "Bespoke Mahjong": {
+   "route": "code-site",
+   "store_hosts": [
+    "bespokemahjong.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Betty June & Jeannette": {
+   "route": "shopmy-etsy",
+   "store_hosts": [
+    "etsy.com"
+   ],
+   "commission_pct": 7,
+   "notes": "Etsy shop BettyJuneJeannette. ShopMy link maker shows 7% for Etsy on Nov 8 (was 6% Oct 29; Etsy pays ShopMy 9% via Rakuten).",
+   "source": "docs/ANSWERS.md 2026-10-29 11:17 + 2026-11-08 15:42 / 16:27 + ShopMy My Links Nov 8"
+  },
+  "Bird & Bamboo": {
+   "route": "code-site",
+   "store_hosts": [
+    "birdandbamboo.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Birdsong Mahjong": {
+   "route": "none",
+   "store_hosts": [],
+   "commission_pct": 0,
+   "notes": "no program; no shop link yet",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+  },
+  "Bougie Mahjong": {
+   "route": "none",
+   "store_hosts": [
+    "bougiemahjong.com"
+   ],
+   "commission_pct": 0,
+   "notes": "non-partner (Oct 31 picks)",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+  },
+  "Britt Mills": {
+   "route": "code-site",
+   "store_hosts": [
+    "brittmillsdesign.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Case-Mate": {
+   "route": "shopmy-site",
+   "store_hosts": [
+    "case-mate.com"
+   ],
+   "commission_pct": 20,
+   "notes": "",
+   "source": "ShopMy pin merchant_data (Nov 8)"
+  },
+  "Charleston Mahjong Club": {
+   "route": "shopmy-site",
+   "store_hosts": [
+    "charlestonmahjongclub.com"
+   ],
+   "commission_pct": 15,
+   "notes": "PARTNER where ShopMy pays MORE (15% vs own 10%): product links are go.shopmy.us pins landing on charlestonmahjongclub.com (collection 8398013). MAHJMATCH still works at checkout (shown on the card).",
+   "source": "Tiffany Oct 28 (memory partner-brands) + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check); docs/ANSWERS.md 2026-11-08 18:02",
+   "code_pct_own": 10,
+   "shopmy_pct": 15,
+   "rate_compare": "shopmy",
+   "shopmy_collection": 8398013,
+   "code_also": true
+  },
+  "Dreamframer Art": {
+   "route": "shopmy-etsy",
+   "store_hosts": [
+    "etsy.com"
+   ],
+   "commission_pct": 7,
+   "notes": "Etsy shop DreamframerArt; Deco Lagoon bring-in Nov 8 (pin 102728926, staged for FYM 1.19). ShopMy link maker shows 7% for Etsy on Nov 8 (was 6% Oct 29; Etsy pays ShopMy 9% via Rakuten).",
+   "source": "docs/ANSWERS.md 2026-10-29 11:17 + 2026-11-08 15:42 / 16:27 + ShopMy My Links Nov 8"
+  },
+  "Etsy": {
+   "route": "shopmy-etsy",
+   "store_hosts": [
+    "etsy.com"
+   ],
+   "commission_pct": 7,
+   "notes": "misc Etsy shops. ShopMy link maker shows 7% for Etsy on Nov 8 (was 6% Oct 29; Etsy pays ShopMy 9% via Rakuten).",
+   "source": "docs/ANSWERS.md 2026-10-29 11:17 + 2026-11-08 15:42 / 16:27 + ShopMy My Links Nov 8"
+  },
+  "Fait à Main": {
+   "route": "code-site",
+   "store_hosts": [
+    "faitamainstudio.com"
+   ],
+   "commission_pct": null,
+   "notes": "UpPromote partner (Oct 20) but MAHJMATCH does not apply at its cart; links stay plain; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json skip + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Golden Pond Mahjong": {
+   "route": "none",
+   "store_hosts": [],
+   "commission_pct": 0,
+   "notes": "no shop link",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+  },
+  "Hip Hip Mahjong": {
+   "route": "code-site",
+   "store_hosts": [
+    "hiphipmahjong.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "House of Hearts Studio": {
+   "route": "none",
+   "store_hosts": [
+    "houseofheartsstudio.com"
+   ],
+   "commission_pct": 0,
+   "notes": "own site, no program recorded",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+  },
+  "Hutch & Nook": {
+   "route": "none",
+   "store_hosts": [
+    "hutchandnook.com"
+   ],
+   "commission_pct": 0,
+   "notes": "non-partner, matched mats only",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+  },
+  "Isabel Harte": {
+   "route": "none",
+   "store_hosts": [
+    "isabelharte.com"
+   ],
+   "commission_pct": 0,
+   "notes": "non-partner",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+  },
+  "Let's Be Besties": {
+   "route": "code-site",
+   "store_hosts": [
+    "letsbebesties.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Let's Mahj On": {
+   "route": "code-site",
+   "store_hosts": [
+    "letsmahj-on.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "LoveShackFancy": {
+   "route": "shopmy-site",
+   "store_hosts": [
+    "loveshackfancy.com"
+   ],
+   "commission_pct": 13,
+   "notes": "OMM x LoveShackFancy collab, sold by LoveShackFancy (collection 8400718)",
+   "source": "ShopMy pin merchant_data (Nov 8)"
+  },
+  "Lucky Daughters": {
+   "route": "none",
+   "store_hosts": [
+    "luckydaughters.com"
+   ],
+   "commission_pct": 0,
+   "notes": "no program (Oct 7 email)",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+  },
+  "Luna EK Studio": {
+   "route": "shopmy-etsy",
+   "store_hosts": [
+    "etsy.com"
+   ],
+   "commission_pct": 7,
+   "notes": "Etsy. ShopMy link maker shows 7% for Etsy on Nov 8 (was 6% Oct 29; Etsy pays ShopMy 9% via Rakuten).",
+   "source": "docs/ANSWERS.md 2026-10-29 11:17 + 2026-11-08 15:42 / 16:27 + ShopMy My Links Nov 8"
+  },
+  "Luxe Mahjong": {
+   "route": "none",
+   "store_hosts": [
+    "luxemahjong.com"
+   ],
+   "commission_pct": 0,
+   "notes": "non-partner (ambassador application)",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+  },
+  "Mac + Miller Mahjong": {
+   "route": "code-site",
+   "store_hosts": [
+    "macandmillermahjong.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Mahj & Moon": {
+   "route": "shopmy-etsy",
+   "store_hosts": [
+    "etsy.com"
+   ],
+   "commission_pct": 7,
+   "notes": "ALL links via Etsy (shop MahjandMoonCo); their website pays 0% (Tiffany Nov 8 4:27pm).. ShopMy link maker shows 7% for Etsy on Nov 8 (was 6% Oct 29; Etsy pays ShopMy 9% via Rakuten).",
+   "source": "docs/ANSWERS.md 2026-10-29 11:17 + 2026-11-08 15:42 / 16:27 + ShopMy My Links Nov 8",
+   "pending_fix": "7 plain mahjandmoon.com links: Etsy ShopMy fix running in another agent (Nov 8 4:27pm); drop this field when it lands"
+  },
+  "Mahj & Vine": {
+   "route": "code-site",
+   "store_hosts": [
+    "mahjandvine.com"
+   ],
+   "commission_pct": null,
+   "notes": "ShopMy pays 15% (14 pins already in her \"Mahj & Vine\" collection 8398036, landing on mahjandvine.com). Own UpPromote rate not recorded: if it is under 15%, switch to shopmy-site. Their UpPromote link auto-applies TIFFANYEMERY; MAHJMATCH also works.",
+   "source": "docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + Tiffany Nov 6 (memory partner-brands)",
+   "shopmy_pct": 15,
+   "rate_compare": "unknown",
+   "shopmy_collection": 8398036
+  },
+  "Mahj Mood": {
+   "route": "code-site",
+   "store_hosts": [
+    "mahjmood.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Mahj Pit": {
+   "route": "code-site",
+   "store_hosts": [
+    "mahjpit.co"
+   ],
+   "commission_pct": null,
+   "notes": "UpPromote (Nov 4). own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Mahj Squad": {
+   "route": "code-site",
+   "store_hosts": [
+    "mahjsquadshop.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Mahj Tile Haus": {
+   "route": "none",
+   "store_hosts": [
+    "mahjtilehaus.com"
+   ],
+   "commission_pct": 0,
+   "notes": "ShopMy pays 0% (not a ShopMy merchant, Nov 8); hold, message out",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+  },
+  "MahjjMaven": {
+   "route": "shopmy-etsy",
+   "store_hosts": [
+    "etsy.com"
+   ],
+   "commission_pct": 7,
+   "notes": "Etsy (Strawberry Thief); program check pending. ShopMy link maker shows 7% for Etsy on Nov 8 (was 6% Oct 29; Etsy pays ShopMy 9% via Rakuten).",
+   "source": "docs/ANSWERS.md 2026-10-29 11:17 + 2026-11-08 15:42 / 16:27 + ShopMy My Links Nov 8"
+  },
+  "Mahjong Co.": {
+   "route": "code-site",
+   "store_hosts": [
+    "mahjongco.com"
+   ],
+   "commission_pct": null,
+   "notes": "tiles only (mats retired Nov 6); own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Mahjong Moxie": {
+   "route": "none",
+   "store_hosts": [
+    "mahjong-moxie.com"
+   ],
+   "commission_pct": 0,
+   "notes": "no program (Nov 8)",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+  },
+  "Mahjong Register": {
+   "route": "code-site",
+   "store_hosts": [
+    "mahjongregister.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Mahjong Row & Co.": {
+   "route": "none",
+   "store_hosts": [
+    "mahjongrowandco.com"
+   ],
+   "commission_pct": 0,
+   "notes": "REMOVED partner (Nov 6): 9 matched gallery mats stay, no code claim",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+  },
+  "Mahjong Studios": {
+   "route": "code-site",
+   "store_hosts": [
+    "mahjongstudios.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Maison Mahj": {
+   "route": "code-site",
+   "store_hosts": [
+    "maisonmahj.com"
+   ],
+   "commission_pct": 10,
+   "notes": "10% store credit; code = free shipping on tile sets; brand guide: link plain maisonmahj.com",
+   "source": "config/autoapply-hosts.json skip + memory partner-brands (Oct 29) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Mary Benson": {
+   "route": "none",
+   "store_hosts": [
+    "marybensonart.com"
+   ],
+   "commission_pct": 0,
+   "notes": "no program yet",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+  },
+  "Middle & Main Mahjong": {
+   "route": "code-site",
+   "store_hosts": [
+    "middleandmainmahjong.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Mini Mahjer": {
+   "route": "code-site",
+   "store_hosts": [
+    "minimahjer.com"
+   ],
+   "commission_pct": 15,
+   "notes": "not in FYM (no mini/travel sets). ShopMy also 15%: ShopMy orders = the SAME UpPromote orders, never double count.",
+   "source": "docs/ANSWERS.md 2026-10-29 4:14pm (Ops) + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check)",
+   "shopmy_pct": 15,
+   "rate_compare": "same"
+  },
+  "Miss Mahjong": {
+   "route": "code-site",
+   "store_hosts": [
+    "missmahjong.com"
+   ],
+   "commission_pct": null,
+   "notes": "ShopMy pays 10% (Miss Mahjong joined ShopMy as a direct merchant; found Nov 8). Own program rate not recorded: if it is under 10%, switch to shopmy-site. own program rate not recorded here.",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "unknown",
+   "shopmy_pct": 10
+  },
+  "My Fair Mahjong": {
+   "route": "code-site",
+   "store_hosts": [
+    "myfairmahjong.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Noli June": {
+   "route": "code-site",
+   "store_hosts": [
+    "nolijune.com"
+   ],
+   "commission_pct": null,
+   "notes": "Shopify Collabs; auto-apply link carries dt_id=3655694. own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Oh My Mahjong": {
+   "route": "code-site",
+   "store_hosts": [
+    "ohmymahjong.com"
+   ],
+   "commission_pct": 20,
+   "notes": "own program 20% for Q4 2026 (normally 10%) beats ShopMy 8%; OMM items hidden in her ShopMy. Retired sets link to our album pages (mahjmatchmaker.com). ShopMy: OMM via Impact (merchant 10%, her share 8%).",
+   "source": "docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + Tiffany (project memory partner-brands: OMM 20% Q4)",
+   "shopmy_pct": 8,
+   "rate_compare": "code"
+  },
+  "Ozark Mahjongg": {
+   "route": "none",
+   "store_hosts": [
+    "ozarkmahjongg.com"
+   ],
+   "commission_pct": 0,
+   "notes": "non-partner, she likes them",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+  },
+  "Peace Love Mahjong": {
+   "route": "code-site",
+   "store_hosts": [
+    "peacelovemahjong.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Piper Chase Studios": {
+   "route": "shopmy-etsy",
+   "store_hosts": [
+    "etsy.com"
+   ],
+   "commission_pct": 7,
+   "notes": "Etsy. ShopMy link maker shows 7% for Etsy on Nov 8 (was 6% Oct 29; Etsy pays ShopMy 9% via Rakuten).",
+   "source": "docs/ANSWERS.md 2026-10-29 11:17 + 2026-11-08 15:42 / 16:27 + ShopMy My Links Nov 8"
+  },
+  "Rebecca Illustrated": {
+   "route": "shopmy-site",
+   "store_hosts": [
+    "rebeccaillustrated.com"
+   ],
+   "commission_pct": 15,
+   "notes": "sells on her own site via ShopMy",
+   "source": "docs/ANSWERS.md 2026-10-22 05:01 + 2026-11-08 15:42"
+  },
+  "Royal Mahjong Society": {
+   "route": "code-site",
+   "store_hosts": [
+    "theroyalmahjongsociety.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Soirée All Day": {
+   "route": "code-site",
+   "store_hosts": [
+    "soireeallday.co"
+   ],
+   "commission_pct": null,
+   "notes": "Squarespace store, own ?ref= links (no /discount/); ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json skip + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Sophie Clima": {
+   "route": "shopmy-etsy",
+   "store_hosts": [
+    "etsy.com"
+   ],
+   "commission_pct": 7,
+   "notes": "Etsy. ShopMy link maker shows 7% for Etsy on Nov 8 (was 6% Oct 29; Etsy pays ShopMy 9% via Rakuten).",
+   "source": "docs/ANSWERS.md 2026-10-29 11:17 + 2026-11-08 15:42 / 16:27 + ShopMy My Links Nov 8"
+  },
+  "Southern Living": {
+   "route": "shopmy-site",
+   "store_hosts": [
+    "dillards.com"
+   ],
+   "commission_pct": null,
+   "notes": "Southern Living mats sold by Dillard's; Dillard's on ShopMy via Pepperjam (merchant 10%, her share lower)",
+   "source": "ShopMy pin merchant_data (Nov 8)"
+  },
+  "Splash of Color": {
+   "route": "code-site",
+   "store_hosts": [
+    "splashofcolorco.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Sunday Mahjong": {
+   "route": "none",
+   "store_hosts": [
+    "sundaymahjong.com"
+   ],
+   "commission_pct": 0,
+   "notes": "non-partner, whole line allowed (favorite)",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+  },
+  "Sweet Jojo Designs": {
+   "route": "shopmy-amazon",
+   "store_hosts": [
+    "amazon.com"
+   ],
+   "commission_pct": null,
+   "notes": "Amazon listing via direct amzn.to Associates link (tag heritagesig05-20) = paid. Partner application (UpPromote) pending: when approved switch to code-site on their own store.",
+   "source": "amzn.to resolve Nov 8 + docs/ANSWERS.md 2026-11-08 4:25pm",
+   "associates_tag": "heritagesig05-20"
+  },
+  "Tala Mahj": {
+   "route": "shopmy-site",
+   "store_hosts": [
+    "talamahj.com"
+   ],
+   "commission_pct": 15,
+   "notes": "only her \"Tala Mahj Favorites\" ShopMy mats",
+   "source": "docs/shopmy-rates / memory partner-brands (Oct 20)"
+  },
+  "That Mahjong Moment": {
+   "route": "none",
+   "store_hosts": [
+    "thatmahjongmoment.com"
+   ],
+   "commission_pct": 0,
+   "notes": "no program",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+  },
+  "The Mahjong House": {
+   "route": "shopmy-site",
+   "store_hosts": [
+    "themahjonghouse.com",
+    "themahjonghouse.pxf.io"
+   ],
+   "commission_pct": 4,
+   "notes": "4% on ShopMy, she takes it (application to their own program is in). ShopMy hands off through their Impact link (themahjonghouse.pxf.io); merchant 5% via Impact, her share 4%",
+   "source": "docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + memory affiliate-income"
+  },
+  "Tigre de Tartan": {
+   "route": "code-site",
+   "store_hosts": [
+    "tigredetartan.com"
+   ],
+   "commission_pct": null,
+   "notes": "links left exactly as they are (visible-only compliance, Oct 30). Paige Spearin collabs earn 0; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json skip + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Tuckernuck": {
+   "route": "shopmy-site",
+   "store_hosts": [
+    "tnuck.com"
+   ],
+   "commission_pct": 9,
+   "notes": "",
+   "source": "ShopMy pin merchant_data (Nov 8)"
+  },
+  "Virora Mahjong": {
+   "route": "code-site",
+   "store_hosts": [
+    "viroramahjong.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Waiting On Martha": {
+   "route": "shopmy-site",
+   "store_hosts": [
+    "waitingonmarthahome.com"
+   ],
+   "commission_pct": 12,
+   "notes": "",
+   "source": "ShopMy pin merchant_data (Nov 8)"
+  },
+  "Wren Mats": {
+   "route": "code-site",
+   "store_hosts": [
+    "wrenmats.com"
+   ],
+   "commission_pct": 0,
+   "notes": "no affiliate program: FB-group code only, she earns nothing (memory affiliate-income). Kept from early on.",
+   "source": "memory affiliate-income (Wren)",
+   "rate_compare": "n/a"
+  },
+  "YOLO Mahjong": {
+   "route": "code-site",
+   "store_hosts": [
+    "yolomahjong.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  },
+  "Yellow Mountain Imports": {
+   "route": "code-site",
+   "store_hosts": [
+    "ymimports.com"
+   ],
+   "commission_pct": null,
+   "notes": "own program rate not recorded here; ShopMy pays 0 (not a ShopMy merchant, Nov 8)",
+   "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
+   "rate_compare": "code",
+   "shopmy_pct": 0
+  }
+ }
+}

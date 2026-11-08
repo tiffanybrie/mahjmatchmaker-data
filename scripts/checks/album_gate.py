@@ -25,6 +25,10 @@ Usage:
   python3 scripts/checks/album_gate.py <set>        PASS / FAIL with the missing steps (exit 1 on FAIL)
   python3 scripts/checks/album_gate.py --in-progress   every album in progress (front door; reads docs/status/live-albums.json)
   python3 scripts/checks/album_gate.py --refresh-live  re-check which colour-card albums are live (network)
+  python3 scripts/checks/album_gate.py <set> --golive   GO-LIVE mode (Playbook step 10b, Nov 8 6:02pm): steps 1-8 PLUS
+                        [10b] every bring-in in record "bringins" has its paid link (route from config/link-routes.json:
+                        ShopMy link for shopmy-*; Amazon also saved in Associates + imported by Ops) AND catalog staging
+                        (scripts/albumreview/bringins.py missing()). Run before the album goes live (NEW-ALBUM-CHECKLIST).
 Imported by scripts/albumreview/build_review.py (refuses to write the page on FAIL) and scripts/hooks/front_door.py."""
 import json, os, sys, glob
 R = '/home/claude/mahjmatchmaker-data/'
@@ -185,6 +189,17 @@ def in_progress():
     return sorted(out - SKIP)
 
 
+def golive(s):
+    """[10b] bring-in loop: every bring-in closed (paid link + catalog staging)."""
+    sys.path.insert(0, R + 'scripts/albumreview')
+    import bringins as BI
+    bad = []
+    for e in (record(s) or {}).get('bringins', []):
+        m = BI.missing(e)
+        if m: bad.append(f"[10b] bring-in {e.get('mat')} ({e.get('brand')}, route {e.get('route')}) still needs: " + ', '.join(m))
+    return bad
+
+
 def main(a):
     if a and a[0] == '--refresh-live':
         print('live albums:', ', '.join(refresh_live())); return 0
@@ -199,10 +214,11 @@ def main(a):
         return 1 if fails else 0
     if not a: sys.exit(__doc__)
     bad, proof = check(a[0])
+    if '--golive' in a: bad += golive(a[0])
     if bad:
         print(f'ALBUM GATE FAIL {a[0]} ({len(bad)}):'); [print('  ' + b) for b in bad]; return 1
     if proof.get('variety_warning'): print('WARNING (variety): ' + proof['variety_warning'])
-    print(f'ALBUM GATE PASS {a[0]}: steps 1-8 on record'); return 0
+    print(f'ALBUM GATE PASS {a[0]}: steps 1-8 on record' + (f", {len((record(a[0]) or {}).get('bringins', []))} bring-ins closed (go-live)" if '--golive' in a else '')); return 0
 
 
 if __name__ == '__main__':

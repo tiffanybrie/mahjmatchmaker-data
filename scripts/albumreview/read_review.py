@@ -13,6 +13,7 @@ note and face swap without asking again").
    - "Missed one?" adds  -> new spec mats (group 'yours'; photo from Find Your Mat-ch, holiday if FYM says so)
    - faces               -> record faces.picks = her picks (pre-selected next round) + config/profiles/<set>.json best_features_her
    - cover               -> record covers.default + covers.chosen
+   - Bring it in (finds) -> album pool + spec + record bringins[] tracker (scripts/albumreview/bringins.py) + DESK lines
    - anything else / done -> record rounds[-1].anything / done
    Appends record rounds[] {round, applied_at, changes[], answers} -> the next page shows "Round N+1: what changed".
 3. Rebuild the cards with the record's card_build commands (gen2 still enforces the code band, TNT and tile-photo gates),
@@ -108,19 +109,29 @@ cv = A.get('cover')
 if isinstance(cv, int) and cv != rec['covers'].get('default', 0) and cv < len(rec['covers']['options']):
     rec['covers']['default'] = cv; rec['covers']['chosen'] = cv; ch.append(f"Cover: {rec['covers']['options'][cv]['label']}")
 elif isinstance(cv, int): rec['covers']['chosen'] = cv
-# new finds (Playbook step 3b): Bring it in -> album pool + a DESK line (she adds the ShopMy link; Claude stages the catalog/FYM entry)
+# new finds (Playbook step 3b + 10b): Bring it in -> album pool + a bring-in tracker entry + DESK line(s) (Claude makes the paid link
+# by the brand's route in config/link-routes.json and stages the catalog/FYM entry; Amazon: Associates save, then Ops imports to ShopMy)
 fi = {f['id']: f for f in (rec.get('discovery') or {}).get('new_finds', [])}
 brought = [fi[k] for k, v in (A.get('finds') or {}).items() if v == 'in' and k in fi]
-for f in brought:
+_have = {m.get('new_find') for m in spec['mats']}
+brought_new = [f for f in brought if f['url'] not in _have]  # a bring-in recorded earlier (e.g. by hand) is not added twice
+for f in brought_new:
     rec.setdefault('pool', {}).setdefault('new_candidates', []).append({'name': f['name'], 'brand': f['seller'], 'img': f['img'], 'source': 'discovery: her Bring it in', 'link': f['url'], 'her_pick': True})
     spec['mats'].append({'group': 'yours', 'name': f['name'], 'brand': f['seller'].split(' (')[0], 'img': f['img'], 'why': f"Your pick from New finds (round {rnd}). {f.get('why', '')}",
                          'retired': False, 'fym': None, 'lowres': True, 'her_pick': True, 'new_find': f['url']})
 if brought:
     ch.append('New finds brought in: ' + ', '.join(f['name'] for f in brought))
-    if not DRY:
+    # Playbook step 10b (Nov 8 6:02pm): every bring-in gets a tracker entry (record "bringins": paid link + catalog staging, Amazon
+    # Associates save + Ops import); album_gate.py --golive FAILS until each loop is closed. docs/LINK-ROUTES.md
+    import bringins as BI
+    lines = []
+    for f in brought:
+        e, is_new = BI.add(rec, f, rnd)
+        if is_new: lines += BI.desk_lines(rec, e)
+        ch.append(f"Bring-in {e['mat']}: route {e['route']} ({BI.status(e)})")
+    if lines and not DRY:
         dp = R + 'docs/DESK.md'; d = open(dp).read()
-        lines = ''.join(f"- {datetime.date.today():%b %d} · {rec['name']} album · add {f['name']} ({f['seller']}) to ShopMy + catalog: Tiffany adds the ShopMy link if she wants one; Claude stages the catalog/FYM entry ({f['url']}). Owner: Matches & Catalog\n" for f in brought)
-        d = d.replace('## Handoffs (do first)\n', '## Handoffs (do first)\n' + lines, 1) if '## Handoffs (do first)\n' in d else d + '\n' + lines
+        d = d.replace('## Handoffs (do first)\n', '## Handoffs (do first)\n' + ''.join(lines), 1) if '## Handoffs (do first)\n' in d else d + '\n' + ''.join(lines)
         open(dp, 'w').write(d)
 skipped = [fi[k]['name'] for k, v in (A.get('finds') or {}).items() if v == 'skip' and k in fi]
 if skipped: ch.append('New finds skipped: ' + ', '.join(skipped))

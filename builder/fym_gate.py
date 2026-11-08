@@ -2045,6 +2045,18 @@ try:
         F.append(f"[171] watermarked photo visible: {_w.get('kind')} {', '.join(_hit[:3])} ({_w.get('brand')}) {_w.get('photo')}: {_w.get('watermark')} (swap it, or mark accepted with every brand image checked)")
     print(f"FYM GATE INFO [171] watermark list: {len(_wm171)} photos, {_acc171} visible + accepted (no clean brand image)")
 except Exception as _e: F.append(f"[171] watermark check did not run: {_e}")
+# [172] Nov 8 2026 (Tiffany 6:02pm: "close the ShopMy gap once and for all"; Charleston + Bam! sat on code links while ShopMy pays
+#       Charleston 15%). Every visible FYM + staged Mat Gallery shop link must follow its brand's route in config/link-routes.json
+#       (code-site / shopmy-site / shopmy-etsy / shopmy-amazon / none; go.shopmy.us destinations resolved + cached). Staged fixes in
+#       config/link-route-fixes.json must be APPLIED in the build (builder/fym_fix_nov08/apply_link_routes.py). docs/LINK-ROUTES.md
+try:
+    sys.path.insert(0, REPO + 'scripts/checks')
+    import link_route_check as _LR172
+    _r172 = _LR172.check(D, _G, gate=True)
+    for _x in _r172['fails'][:25]: F.append('[172] link route: ' + _x)
+    if len(_r172['fails']) > 25: F.append(f"[172] ... {len(_r172['fails']) - 25} more link-route mismatches (python3 scripts/checks/link_route_check.py <build> --gate)")
+    print('FYM GATE INFO [172] ' + '; '.join(_r172['info']) + (f"; {len(_r172['staged'])} staged (gallery follows the build)" if _r172['staged'] else ''))
+except Exception as _e: F.append(f"[172] link-route check did not run: {_e}")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))
