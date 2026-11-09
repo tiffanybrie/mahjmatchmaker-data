@@ -52,6 +52,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 ## In progress
 | Item | Owner | Next step | Target |
 |---|---|---|---|
+| HOLIDAY PAGE FIX (Tiffany 1:39-1:44am): blurry cards (every section + album cards from the same low-res photos), Virora tile insets (Tinselle Emerald/Ruby, filled crops locked in config/tile-fill-locks.json), every holiday yes on the page incl. Dec 1994 card #1 Festive Plaid rebuild + Sugarplum Plaid | Matches & Catalog agent (session 01U7RfeJ), working NOW from 2:05am: do not duplicate; gates added (gen2 card sharpness + tile fill, scripts/checks/card_sharpness_check.py) | Re-render with hi-res brand photos, paste via Chrome, QA | Mon Nov 9 |
 | Google & Revenue report back (none since Nov 6) | Main | Priority 1a: 12:13pm run; fire by hand at 12:45pm if missing. | Mon Nov 9 |
 | Sitemap: Juniper + Lagoon missing, Mahjong Row 302s listed | Ops (Chrome) | Priority 1b. | Mon Nov 9 (FAIL Tue) |
 | Deco Lagoon indexing confirm + hq/indexing row | Main / Ops | Priority 1c. | Mon Nov 9 |
