@@ -1,8 +1,9 @@
 """Live card sharpness + tile-fill scan (Tiffany Nov 9 1:39-1:43am: blurry Dec 1994 + Festive Plaid card; Virora tile insets in a
 white box). Scans every card image on /holiday-mahjong-matches and every *-mahjong-tile-matches page in the sitemap:
   - mat area soft/pixelated (scripts/checks/card_sharpness.py: e2 >= 0.6 and r < 0.2), unless listed in config/card-sharpness-ok.json
-  - tile inset (card2 #tile, x667-1080 y592-1106) with a near-white border band on its left or top edge > 3% (the white box
-    around shrunk tiles). Only card2-layout cards (1080x1350 or 750x938) are measured.
+  - tile inset (card2 #tile, x667-1080 y592-1106) with a near-white border band > 5% (the white box around shrunk tiles:
+    Tinselle 3x3 was 20%). Live tolerance 5% because a scattered pile shot on white (Dear Santa, ~3.5%) is a photo, not a box;
+    new builds are held to 3% by tile_fill_check in gen2.py. Only card2-layout cards (1080x1350 or 750x938) are measured.
 Images pinned to this repo (jsDelivr @sha) are read from git (git show sha:path); others are downloaded once into
 /tmp/card_sharpness_cache. Writes docs/status/card-sharpness.json; front_door.py shows the FAIL lines on every message.
 Usage: python3 scripts/checks/card_sharpness_check.py [slug ...]   (exit 1 on any FAIL)
@@ -53,7 +54,7 @@ def check(page, u, h3, ok):
     m = CS.measure(im)
     if CS.blurry(m) and fn not in ok: out.append(f'blurry mat r={m["r"]} e2={m["e2"]}')
     b = tile_band(im)
-    if b > 0.03 and fn not in ok: out.append(f'white band around tile inset {b*100:.0f}%')
+    if b > 0.05 and fn not in ok: out.append(f'white band around tile inset {b*100:.0f}%')
     return (page, h3, u, '; '.join(out)) if out else None
 def main():
     pages = sys.argv[1:]
