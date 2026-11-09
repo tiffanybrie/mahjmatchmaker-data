@@ -1,0 +1,8 @@
+# Monday codes post: what it must contain (Tiffany, Nov 9 2026, 4:28-4:32am)
+Read before writing ANY Monday "Partner Codes + Updates" post.
+1. NEW MATCH ALBUMS section FIRST: every album that went live (or was never announced to the group) gets a line + its page link. Christmas season: always a line linking ALL holiday albums (/holiday-mahjong-matches) + any partner holiday set still for sale (e.g. Anders Ruff Dear Santa preorder). Check: albums live on the site vs. albums ever named in a group post; any never-announced album goes in (Brownstone Bloom was missed).
+2. Brand watch = product news ONLY: launches, launch dates, restocks, new products in shops, preorders. NEVER Instagram giveaways or social minutiae.
+3. Build it from the Brand Watch (partner watch output, last 7 days), not from memory. Every partner item with partner:true goes in or is consciously left out.
+4. No hype we can't back: never "goes fast"/"will sell out". "Set your alarms!" is fine. Only quote a brand's own urgency ("one special run") when the brand said it.
+5. Don't call the week "big" unless it is.
+6. Codes list: keep every partner until truly closed (Mahjong Co. stays while Kaleidoscope earns). Never drop a partner on our own (CLAUDE.md). Never call a quietly-added partner "new".
