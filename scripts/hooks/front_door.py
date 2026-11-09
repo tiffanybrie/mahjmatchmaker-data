@@ -31,6 +31,16 @@ try:
     items=[l.strip() for l in (m.group(1).splitlines() if m else []) if l.strip().startswith(('-','1','2','3','4','5','6','7','8','9'))]
     if items: out.append(f'BLOCKED BUT APPROVED ({len(items)}): raise at the top of your reply ("These approved tasks are blocked: ... Can I do them now?") and do any you can:'); out+=['  '+l[:220] for l in items[:8]]
 except Exception: pass
+# Nov 8 6:55pm (Tiffany, HARD: "If the Google report ever doesn't run, it's the very first thing that you should prompt me for"):
+# goes FIRST in the output. Report runs 12:13pm ET daily and commits docs/reports/google-revenue/<date>.md.
+try:
+    now=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-5)))
+    want=now.date() if now.hour>=13 else now.date()-datetime.timedelta(days=1)
+    ds=sorted(f[:10] for f in os.listdir('docs/reports/google-revenue') if re.match(r'\d{4}-\d\d-\d\d\.md$',f))
+    last=ds[-1] if ds else 'never'
+    if last<str(want):
+        out.insert(0,f"GOOGLE REPORT DIDN'T RUN (last full report {last}, expected {want}). SAY THIS FIRST to Tiffany, before anything else: 'The Google report didn't run (last one {last}). Want me to run it now?' and IN THE SAME REPLY call mcp__claude-code-remote__fire_trigger trig_01LZjGfVneN3vKwweVXwbzub so she only has to tap Approve (if it is disabled, update_trigger enabled:true first). Never wait for her to notice.")
+except Exception: pass
 # Coverage gaps (Tiffany Nov 7: "where do we have other gaps"): read docs/status/coverage.json ONLY (no network, no rebuild here).
 # Written by scripts/checks/coverage_check.py (morning HQ cleanup runs it with --refresh).
 try:
