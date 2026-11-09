@@ -35,6 +35,15 @@ brands. So if one of those brands falls off, it's a really big deal."
       earnings" hides zero stores; payout method (store credit vs PayPal).
    f. OUR SIDE: page edits/indexing on our brand page in the last 10 days; hub changes; FYM shop links.
    g. SEASON/TIMING: launch-week spike fading, weekday pattern, holiday shipping cutoffs.
+      HOLIDAYS ARE LOW DAYS (Tiffany Nov 9 2026: "the Saturday before was Halloween, so holidays often are not
+      big shopping days because people are doing things with their families"). When either side of a
+      comparison (same weekday last week, week vs week) contains a family holiday, say so next to the number
+      and don't treat the gap as a real gain or drop: "Sat 15 orders vs 7 on Halloween (holiday, low day)".
+      The "<60% of the same weekday last week" alarm does NOT fire when today is a holiday, and a jump vs
+      a holiday isn't news; compare with the weekday two weeks back instead. Family holidays: Halloween,
+      Thanksgiving (Thu Nov 26 2026), Christmas Eve + Day, New Year's Eve + Day, Easter, Mother's Day,
+      Father's Day, July 4, Memorial Day + Labor Day weekends. The OPPOSITE: Black Friday through
+      Cyber Monday (Nov 27-30 2026) are BIG days, so expect a spike there and a lower week after.
 5. Alarm → HQ needs doc `alert-revenue-<brand>-<date>` (red, top of NOW) + push/message to Tiffany:
    what dropped, likely cause, what Claude already did, one yes/no if something needs her.
 6. Log in the daily seo doc (`brandWatch` field) and docs/reports/google-revenue/<date>.md.
