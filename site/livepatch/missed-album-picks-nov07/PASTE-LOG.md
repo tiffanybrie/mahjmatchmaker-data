@@ -63,3 +63,8 @@ Baseline Nov 7 curls: 0 missed-nov07 cards on every page.
 
 ## Nov 9 (~3:45am): holiday QA fix, image swaps only (site/livepatch/holiday-qa-nov09)
 - /holiday-mahjong-matches block-84960a4f67d03b1b89be: 28 card srcs swapped to @e52f2827 assets/cards/holiday-qa-nov09/ (18 soft mats re-rendered: PLM Peace Love Holiday/Sugarplum Plaid x10, Bespoke Holiday Love R&G x4, Anders Ruff Candy Cane Lane x4; Candy Cane Pink Wonderland x2 cropped to the mat; Apres Ski #1-#8 tile inset = #9 filled crop). Diff: srcs only, reverse-swap restores original. curl: 244 figures, 28 new / 0 old, 288/288 jsDelivr images 200, order/titles/racks/links identical, holiday_numbering 0 problems, card_sharpness_check holiday page PASS.
+
+## Nov 9 (~5-6am): album-page soft cards, image swaps only (site/livepatch/album-sharp-nov09)
+- 22 album pages, 35 card srcs swapped to @38928444 assets/cards/album-sharp-nov09/: PLM Sugarplum Plaid x17 + Peace Love Holiday x11 (1512px photo), Bespoke Holiday Love R&G x3 + Blue x4 (Side A screenshots). Same title/colour/tile/racks/footer; figures diffed identical except img.
+- Pages: amara 2, birdie 1, coquette 2, dandy 2, emerald 2, glitterville 2, glow-wild 2, jade 2, jasmine 1, la-fete 2, moonlight 1, nantucket 3, osler 1, palm-royale 1, pearlescent 2, pippa 1, seabreeze 2, smith 1, sorbet 2, sunday-tile-set 1, talulah 1, tortoise 1.
+- 20 of the first saves did not stick (Escape straight after the dispatch): redone with wait + space/Backspace. curl: 35/35 new, 0 old, images 200. card_sharpness_check: 2178 cards, 41 -> 6 FAIL (no better photo: Amara Chinoiserie, Papaya B&B Periwinkle, Solara VFG, Brownstone Neutre Blanc, Coquette Bejeweled Dream, Lagoon Gray Malin).
