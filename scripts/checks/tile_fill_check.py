@@ -5,6 +5,10 @@ inset aspect, no side may carry a white/near-white band thicker than 3% of that 
   band(im)            -> {'top','bottom','left','right'} band fractions of the cover-cropped inset
   problem(path)       -> None or a reason string (used by gen2.py, which REFUSES a card whose tile file fails)
   fill_crop(im)       -> trims the white border and cover-crops to the inset aspect (used to make *-fill tile files)
+CREAM margin (Nov 9 QA, Apres Ski #01-#08): a photo shot on an off-white/cream backdrop (232-237, below the pure-white
+cut) left a ~9% left / ~12% top margin that the white test missed. The visible TOP and LEFT edges of the inset (right =
+card edge, bottom = navy box) are also tested with a cream definition (all channels >= 215, chroma <= 18, >= 95% of the
+row) and may carry at most CREAM_MAX (5%); scattered piles on white (Dear Santa fill 4.3%) pass.
 Loose tile modes (tile_mode 'loose', transparent cut-outs) are exempt: they are drawn without a box.
 CLI: python3 scripts/checks/tile_fill_check.py [files...]  (default: every tile file the live/staged card builds use)
 Exit 1 on any failure."""
@@ -14,6 +18,7 @@ from PIL import Image, ImageFilter
 R = '/home/claude/mahjmatchmaker-data/'
 AR = 422 / 526          # card2.html #tile box
 MAXBAND = 0.03
+CREAM_MAX = 0.05
 def _cover(im):
     w, h = im.size
     if w / h > AR: nw = int(h * AR); return im.crop(((w - nw) // 2, 0, (w - nw) // 2 + nw, h))
@@ -33,12 +38,21 @@ def band(im):
     rows = _white_rows(a); cols = _white_rows(a.transpose(1, 0, 2))
     h, w = rows.size, cols.size
     return {'top': _run(rows) / h, 'bottom': _run(rows[::-1]) / h, 'left': _run(cols) / w, 'right': _run(cols[::-1]) / w}
+def _cream_rows(a):
+    c = (a.min(axis=2) >= 215) & ((a.max(axis=2) - a.min(axis=2)) <= 18)
+    return c.mean(axis=1) >= 0.95
+def cream(im):
+    im = im.convert('RGB'); im = _cover(im); im.thumbnail((400, 400))
+    a = np.asarray(im.filter(ImageFilter.MedianFilter(3)), dtype=np.int16)
+    rows = _cream_rows(a); cols = _cream_rows(a.transpose(1, 0, 2))
+    return {'top': _run(rows) / rows.size, 'left': _run(cols) / cols.size}
 def problem(path):
     p = path if os.path.isabs(path) else R + path
     im = Image.open(p)
     if im.mode in ('RGBA', 'LA') and np.asarray(im.split()[-1]).min() < 250: return None  # transparent cut-out (loose mode)
     b = band(im)
     bad = {k: round(v * 100, 1) for k, v in b.items() if v > MAXBAND}
+    bad.update({f'{k} (cream)': round(v * 100, 1) for k, v in cream(im).items() if v > CREAM_MAX})
     return f'tile inset has a white border band ({", ".join(f"{k} {v}%" for k, v in bad.items())}; max {MAXBAND*100:.0f}%): use a filled crop (tile_fill_check.fill_crop)' if bad else None
 def fill_crop(im, grow=0.0, box=None):
     """Bounding box of the tile ART (coloured or dark pixels: faces, engraving, coloured backs), grown by `grow` x its size

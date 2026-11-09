@@ -1,6 +1,7 @@
 """Live card sharpness + tile-fill scan (Tiffany Nov 9 1:39-1:43am: blurry Dec 1994 + Festive Plaid card; Virora tile insets in a
 white box). Scans every card image on /holiday-mahjong-matches and every *-mahjong-tile-matches page in the sitemap:
-  - mat area soft/pixelated (scripts/checks/card_sharpness.py: e2 >= 0.6 and r < 0.2), unless listed in config/card-sharpness-ok.json
+  - mat area soft/pixelated (scripts/checks/card_sharpness.py blurry(): r < 0.21, or r < 0.24 on strong patterns; Nov 9)
+  - tile inset cream margin on the top/left edge > 7% (tile_cream; Nov 9 Apres Ski), unless listed in config/card-sharpness-ok.json
   - tile inset (card2 #tile, x667-1080 y592-1106) with a near-white border band > 5% (the white box around shrunk tiles:
     Tinselle 3x3 was 20%). Live tolerance 5% because a scattered pile shot on white (Dear Santa, ~3.5%) is a photo, not a box;
     new builds are held to 3% by tile_fill_check in gen2.py. Only card2-layout cards (1080x1350 or 750x938) are measured.
@@ -41,6 +42,21 @@ def tile_band(im):
         return n
     rows = wht.mean(axis=1) >= 0.97; cols = wht.mean(axis=0) >= 0.97
     return max(run(rows) / rows.size, run(cols) / cols.size)
+def tile_cream(im):
+    """Nov 9 QA (Apres Ski #01-#08): cream/off-white backdrop margin on the inset's TOP/LEFT (visible) edges that the
+    pure-white test above misses (pixels 232-237). Cream = all channels >= 215, chroma <= 18, >= 95% of the row.
+    Live max CREAM_LIVE (7%): old Dear Santa pile cards (photo on white) measure 5.8%, the Apres Ski margin 8.5-12.6%."""
+    im = im.convert('RGB').resize((1080, 1350)) if im.size != (1080, 1350) else im.convert('RGB')
+    a = np.asarray(im.crop((667, 592, 1080, 1106)), dtype=np.int16)
+    c = (a.min(axis=2) >= 215) & ((a.max(axis=2) - a.min(axis=2)) <= 18)
+    def run(fl):
+        n = 0
+        for f in fl:
+            if not f: break
+            n += 1
+        return n
+    return max(run(c.mean(axis=1) >= 0.95) / c.shape[0], run(c.mean(axis=0) >= 0.95) / c.shape[1])
+CREAM_LIVE = 0.07
 def cards(t):
     for m in re.finditer(r'<figure class="mm3-c[^"]*">(.*?)</figure>', t, re.S):
         im = re.search(r'<img src="([^"]+)"', m.group(1)); h = re.search(r'<h3>(.*?)</h3>', m.group(1), re.S)
@@ -55,6 +71,8 @@ def check(page, u, h3, ok):
     if CS.blurry(m) and fn not in ok: out.append(f'blurry mat r={m["r"]} e2={m["e2"]}')
     b = tile_band(im)
     if b > 0.05 and fn not in ok: out.append(f'white band around tile inset {b*100:.0f}%')
+    cr = tile_cream(im)
+    if b <= 0.05 and cr > CREAM_LIVE and fn not in ok: out.append(f'cream margin top/left of tile inset {cr*100:.0f}%')
     return (page, h3, u, '; '.join(out)) if out else None
 def main():
     pages = sys.argv[1:]
