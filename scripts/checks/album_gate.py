@@ -20,6 +20,7 @@ Checks, in playbook order:
   [6] holiday           the album spec has holiday cards, or record holiday.considered + note (none fit)
   [7] faces pre-picked  record faces.picks = 5 keys, each with a face image
   [8] cards + code band manifest exists, every card file exists, card_code_band_check passes on it
+  [8b] card sharpness   no card has a blurry/pixelated mat (card_sharpness.py; Nov 9)
 
 Usage:
   python3 scripts/checks/album_gate.py <set>        PASS / FAIL with the missing steps (exit 1 on FAIL)
@@ -156,6 +157,15 @@ def check(s):
         if notin: bad.append(f'[8] cards are stale (not in the spec): {", ".join(notin[:3])}; rebuild the cards')
         nspec = [m['name'] for m in spec.get('mats', []) if m['name'] not in {c['mat'] for c in man['cards']}]
         if nspec: bad.append(f'[8] spec mats with no card: {", ".join(nspec[:3])}; rebuild the cards')
+        # [8b] Nov 9 (Tiffany: blurry Dec 1994 + Festive Plaid card, white-boxed Virora tiles): every built card's mat must be sharp
+        # and its tile inset filled (card_sharpness / tile_fill_check; gen2.py refuses new ones, this catches older builds)
+        import card_sharpness as _CS
+        from PIL import Image as _I
+        _ok = _CS.ok_list(); _soft = []
+        for c in man['cards']:
+            f = f'{R}{cd}/{c["file"]}'
+            if os.path.exists(f) and c['file'] not in _ok and _CS.blurry(_CS.measure(_I.open(f))): _soft.append(c['file'])
+        if _soft: bad.append(f'[8b] {len(_soft)} card(s) with a blurry/pixelated mat, e.g. {_soft[0]}: re-render from the brand full-size photo')
         proof['cards'] = {'n': len(man['cards']), 'tnt': sum(1 for c in man['cards'] if c.get('caption_note') == 'TNT rec'), 'band': 'PASS' if not band else 'FAIL'}
     return bad, proof
 

@@ -52,6 +52,17 @@ try:
         out+=['  - '+l.split(' | missing:')[0][:170] for l in g[:8]]
         if len(g)>8: out.append(f'  ... +{len(g)-8} more: python3 scripts/checks/coverage_check.py')
 except Exception: pass
+# Nov 9 (Tiffany 1:39-1:43am: blurry Dec 1994 + Festive Plaid card; Virora tile insets in a white box): live card sharpness +
+# tile-fill scan. Reads docs/status/card-sharpness.json ONLY (written by scripts/checks/card_sharpness_check.py in the morning
+# HQ cleanup and after every album/holiday paste). Fix = re-render with the brand's full-size photo (gen2.py refuses blurry/too-small).
+try:
+    cs=json.load(open('docs/status/card-sharpness.json'))
+    cage=(datetime.datetime.now()-datetime.datetime.fromisoformat(cs['at'])).total_seconds()/3600
+    if cs.get('fails') or cage>30:
+        out.append(f"BLURRY / WHITE-BOXED CARDS LIVE ({len(cs.get('fails',[]))} of {cs.get('cards')} cards; checked {cs['at'][:16]}"+(', STALE: run python3 scripts/checks/card_sharpness_check.py' if cage>30 else '')+'):')
+        out+=['  - '+f"{f['page']} | {f['card']} | {f['why']}" for f in cs.get('fails',[])[:8]]
+        if len(cs.get('fails',[]))>8: out.append(f"  ... +{len(cs['fails'])-8} more: docs/status/card-sharpness.json")
+except Exception: pass
 # Nov 8 12:57pm (Tiffany: TNT recs "get missed every single time"): every album set needs a Tiles & Tablescapes search on record.
 try:
     r=subprocess.run(['python3','scripts/checks/tnt_check.py'],capture_output=True,text=True,timeout=20)

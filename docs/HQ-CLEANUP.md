@@ -127,6 +127,8 @@ Every run: `python3 scripts/checks/gallery_sync_check.py` (seconds). MONDAYS: ad
 Note in the HQ log one line: "Gallery sync: PASS" or what was fixed.
 
 ## Coverage check (Tiffany Nov 7 2026: "It makes me worry about where we have other gaps")
+Every morning run, also: `python3 scripts/checks/card_sharpness_check.py` (Nov 9, Tiffany's blurry Dec 1994 + Festive Plaid card and white-boxed Virora tiles: scans every card on /holiday-mahjong-matches + every album page for a soft/pixelated mat or a white band round the tile inset; writes docs/status/card-sharpness.json, shown by front_door.py; any FAIL = re-render with the brand's full-size photo, site/livepatch/holiday-fix-nov09/README.md).
+
 Every morning run, early (before deciding Today): `python3 scripts/checks/coverage_check.py --refresh` (~5-30s; reads the LIVE FYM build, live gallery, search index, sitemap, codes hub, brand + album pages; writes docs/status/coverage.json, which front_door.py shows at the top of every chat). One "X of N (target)" line per feature: walls, table-view mats/racks, prices, gallery vs FYM both ways, album pages wired, picks on album pages, code-truth brands, verified lines, removed pages, ShopMy, approved items older than 3 days, tasks off.
 - **GAP lines go to HQ Today** as ONE card ("Coverage: N gaps", one plain line per gap, Google/codes first; the script already sorts them). Each gap is Claude's job unless it needs her (a taste call, a sign-in, money): fix what can be fixed today, put the rest on DESK with an owner chat + date. Never report a feature "done" while its line says GAP.
 - A number that went DOWN since yesterday (compare the committed docs/status/coverage.json) is a regression: same-day investigation.
