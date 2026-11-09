@@ -9,3 +9,4 @@ Read before writing ANY Monday "Partner Codes + Updates" post.
 7. PHOTOS SELL (Tiffany Nov 9 4:43am): every item worth a line gets the brand's own product/teaser photo in the post (numbered set in assets/social/codes-post-<date>/), not only album covers. Collages: holiday/season roundup + "Last week's launches: still in stock / sold out" with stock pills, stock checked the morning of.
 8. Skip minor items (a colourway of an existing mat). Lead with what sells now (season, deadlines like a preorder shipping date).
 9. Sales season: tease our Black Friday deals page.
+10. Never say an album is 'up before the tiles drop' - it always is (Tiffany Nov 9).
