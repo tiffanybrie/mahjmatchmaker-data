@@ -1,0 +1,11 @@
+{
+ "_about": "Tile-inset filled crops (Tiffany Nov 9 1:43am: tiles must FILL the inset, no white box). gen2.py swaps each original tile file for its filled crop; tile_fill_check.py gates it. LOCKED: no rebuild may point a card back at the original. Petalee = hand-picked close-up of the official grid (4 5 6 / flower tiles / S + jokers); the scattered pile left white between and around the tiles.",
+ "files": {
+  "assets/tiles/holiday/tinselle-emerald-3x3.jpg": "assets/tiles/holiday/tinselle-emerald-fill.jpg",
+  "assets/tiles/holiday/tinselle-ruby-3x3.jpg": "assets/tiles/holiday/tinselle-ruby-fill.jpg",
+  "assets/tiles/album/petalee-pile.jpg": "assets/tiles/album/petalee-fill.jpg",
+  "assets/tiles/holiday/cmc-apres-ski.jpg": "assets/tiles/holiday/cmc-apres-ski-fill.jpg",
+  "assets/tiles/holiday/dear-santa.jpg": "assets/tiles/holiday/dear-santa-fill.jpg",
+  "assets/tiles/holiday/plm-spirit-of-christmas-faces-back.jpg": "assets/tiles/holiday/plm-spirit-of-christmas-faces-back-fill.jpg"
+ }
+}

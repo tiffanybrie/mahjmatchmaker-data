@@ -28,6 +28,31 @@ if _t: sys.exit(f'REFUSED (tnt_check): album set "{_t}" has no Tiles & Tablescap
 from tile_photo_check import missing_for_outdir as _tp_missing, problem as _tp_problem
 _tp = _tp_missing(out)
 if _tp: sys.exit(f'REFUSED (tile_photo_check): {_tp_problem(_tp)}. Record her yes in config/album-records/{_tp}.json tile_photo.approved_at.')
+# Nov 9 1:39-1:43am (Tiffany): (1) blurry/pixelated mat on a live card (Dec 1994 + Festive Plaid); (2) Virora tile insets
+# shrunk inside a white box. Gates: card_sharpness (source too small for the crop / soft rendered mat) and tile_fill_check
+# (white border band > 3% on the tile inset). Locked filled crops (config/tile-fill-locks.json) replace the padded originals.
+import card_sharpness as _CS, tile_fill_check as _TF
+_FILL = json.load(open(R + 'config/tile-fill-locks.json'))['files']
+_SOK = _CS.ok_list()
+_refuse = []
+for _c in spec['cards']:
+    if not _c['tile_file'].startswith('data:'):
+        _c['tile_file'] = _FILL.get(_c['tile_file'], _c['tile_file'])
+        if not (_c.get('tile_mode') == 'loose'):
+            _tp = _TF.problem(_c['tile_file'])
+            if _tp: _refuse.append(f"{_c['file']}: {_c['tile_file']}: {_tp}")
+def _mat_size(c):
+    m = c.get('mat')
+    if m and m.startswith('data:'):
+        _im = Image.open(io.BytesIO(base64.b64decode(m.split(',', 1)[1]))); return _im.size
+    if spec.get('mat_file'):
+        x0, y0, x1, y1 = spec['mat_crop']; return (x1 - x0, y1 - y0)
+    return None
+for _c in spec['cards']:
+    _sz = _mat_size(_c)
+    if _sz and _CS.upscale(*_sz) > _CS.MAX_UPSCALE and _c['file'] not in _SOK:
+        _refuse.append(f"{_c['file']}: mat source {_sz[0]}x{_sz[1]} is too small for the card (x{_CS.upscale(*_sz):.1f} upscale, max x{_CS.MAX_UPSCALE}): get the brand's full-size photo (Shopify /products/<handle>.json, Etsy il_fullxfull)")
+if _refuse: sys.exit('REFUSED (card sharpness / tile fill, Nov 9):\n  ' + '\n  '.join(_refuse))
 def uri(im, fmt='JPEG', q=88, maxs=None):
     if isinstance(im, str): im = Image.open(im)
     if maxs: im = im.copy(); im.thumbnail((maxs, maxs))
@@ -120,6 +145,12 @@ NP = subprocess.run(['npm', 'root', '-g'], capture_output=True, text=True).stdou
 js = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'shot.js')
 for i in range(0, len(jobs), 40):
     subprocess.run(['node', js] + [x for p in jobs[i:i+40] for x in p], check=True, env={**os.environ, 'NODE_PATH': NP}, stdout=subprocess.DEVNULL)
+_soft = []
+for _hf, _o in jobs:
+    _m = _CS.measure(Image.open(_o))
+    if _CS.blurry(_m) and os.path.basename(_o) not in _SOK:
+        _soft.append(f'{os.path.basename(_o)} {_m}'); os.remove(_o)
+if _soft: sys.exit('REFUSED (card_sharpness, Nov 9): the rendered mat is soft/pixelated; card deleted. Get a sharper photo:\n  ' + '\n  '.join(_soft))
 print(len(jobs), 'cards ->', out)
 if missing: print('NO REAL PHOTO (left off the card):', json.dumps(missing, ensure_ascii=False))
 if over: print('OVER THE 4-RACK CAPACITY (left off the card):', json.dumps(over, ensure_ascii=False))
