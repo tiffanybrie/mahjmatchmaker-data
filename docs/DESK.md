@@ -237,3 +237,4 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **HQ:** Today = Google report + Bing, Black Friday yes, FB group week yes, next week's posts, Sunday 31 mats. This week = Quick calls (new), missed mats, easy content, Work With, Holy Mahj, Grace Peacock, ShopMy, Brand Watch. Albums: Lagoon → Live, Mulberry + Indigo → Claude building, Juniper → Live, Style of Your Life → Banked, missed album picks → Claude building (staged for Ops).
 
 See CLAUDE.md.
+- 11/9 Monday FB group codes post: THIS CHAT (Main, session 01QxwYQt) is posting it now with Tiffany's 10:47/10:50am yes. Other chats: do NOT post it.
