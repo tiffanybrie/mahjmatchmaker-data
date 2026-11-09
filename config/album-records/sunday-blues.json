@@ -1,0 +1,19 @@
+{
+ "_about": "Album record (Album Playbook, Nov 8): the proof for steps 1-8 that scripts/checks/album_gate.py checks and scripts/albumreview/build_review.py turns into the review page. One file per album: config/album-records/<set>.json. Paths are repo-relative. read_review.py appends to 'rounds' when her answers are applied.",
+ "set": "sunday-blues",
+ "name": "Sunday Blues",
+ "brand": "Sunday Mahjong",
+ "tile_photo": {
+  "file": "assets/tiles/album/sunday-blues.png",
+  "inset": "assets/tiles/album/sunday-blues.png",
+  "source": "Crop of Sunday Mahjong listing image Sunday-Blues-4.jpg (sundaymahjong.com/products/sunday-blues-tile-set). Every brand photo carries Sunday's own watermark; this crop is the cleanest.",
+  "asked_at": "2026-11-08T22:40:00-05:00",
+  "approved_at": "2026-11-08T23:10:00-05:00",
+  "approval_note": "Tiffany in chat Nov 8 ~11:10pm: 'The Sunday Blues photo is approved.' Step 0 done."
+ },
+ "notes": [
+  "Rebuild on the Album Playbook (Nov 8). Her Oct 29 swipe yeses (56 cards, assets/cards/sunday-blues) are kept as yeses (A YES IS A YES); the 31 post-swipe mats become New finds.",
+  "Tile-side racks: one pair on every card. Mat-side racks: rotate, max 6 cards per rack.",
+  "Held for Sunday's ~Thanksgiving restock (config/release-calendar.json sunday-blues-rerelease); launch kit built before go-live (CLAUDE.md ALBUM LAUNCH = ANNOUNCED)."
+ ]
+}
