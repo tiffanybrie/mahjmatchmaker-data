@@ -1,6 +1,7 @@
 # Amanda Toppe (@amandatoppeliving): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 9 12:37pm ET: BIG LILA UPDATE: first batch of FULL-SIZE Lila mats has SHIPPED, should arrive in time for Christmas delivery; preorder details coming soon, email list gets it first (https://www.instagram.com/p/Dfh3q5fyXYb/).
 - Nov 5 9:00am ET: holiday-gift push for her bestseller HYDRANGEA BLISS mat (hand-painted original art, soft blue + green, 'pairs with almost every tile set'; customer stylings in her 'Hydrangea Bliss' highlight; photo credit whitehouseflowerfarm) (https://www.instagram.com/p/DfXMkw4lQrC/).
 - Nov 4 1:40pm ET: Lila TRAVEL mats (100 released Nov 2) COMPLETELY SOLD OUT; travel Lila now on PREORDER for early/mid-January shipping. Full-size 33in Lila 'in about a month', preorders open once timing is firm (https://www.instagram.com/p/DfVHftvhnoS/).
 - Oct 29-30: Lila travel mat drop Mon Nov 2 10am EST, only 100, 22.5in with matching case, no restock until the new year; full 33in in production, preorder once arrival is firm (DfGBN7fGbpN, DfHqogSMo9z: story behind the name, photo credit whitehouseflowerfarm).

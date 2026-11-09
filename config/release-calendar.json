@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-09",
- "updatedBy": "Weekly release calendar refresh (Mon Nov 9, scheduled)",
+ "updatedBy": "partner watch 1:30pm ET",
  "rules": {
   "timing": {
    "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -1789,6 +1789,42 @@
    "album": false,
    "affiliate": false,
    "priority": 5
+  },
+  {
+   "id": "omm-nantucket-restock-nov09",
+   "brand": "Oh My Mahjong",
+   "product": "Nantucket tiles",
+   "type": "restock",
+   "date": "2026-11-09",
+   "status": "LIVE 2026-11-09 (store products.json 12:35pm CT, partner watch 1:30pm ET)",
+   "sourceUrl": "https://www.ohmymahjong.com/products/nantucket-tiles",
+   "album": true,
+   "affiliate": true,
+   "priority": 1
+  },
+  {
+   "id": "tdt-domino-blonde-drop-nov10",
+   "brand": "Tigre de Tartán",
+   "product": "Domino Blonde mat (rules + no-text editions)",
+   "type": "restock",
+   "date": "2026-11-10",
+   "status": "coming 2026-11-10 4pm CT (IG Nov 9 Dfh8nR1ttsi; store listed, sold out)",
+   "sourceUrl": "https://www.instagram.com/reel/Dfh8nR1ttsi/",
+   "album": false,
+   "affiliate": true,
+   "priority": 2
+  },
+  {
+   "id": "amanda-toppe-lila-fullsize-ship",
+   "brand": "Amanda Toppe",
+   "product": "Full-size Lila mat (preorder details soon)",
+   "type": "launch",
+   "date": "",
+   "status": "first batch shipped Nov 9; preorder details coming soon (IG Dfh3q5fyXYb)",
+   "sourceUrl": "https://www.instagram.com/p/Dfh3q5fyXYb/",
+   "album": false,
+   "affiliate": true,
+   "priority": 3
   }
  ],
  "sources": {

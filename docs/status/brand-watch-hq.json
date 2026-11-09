@@ -4,17 +4,6 @@
   {
    "date": "2026-11-10",
    "day": "Tue 11/10",
-   "time": "7pm CT (5pm PT)",
-   "brand": "Virora",
-   "partner": true,
-   "what": "Lilacée in Yellow tiles RESTOCK (sold out now; 4 layers, vintage florals)",
-   "tag": "tiles",
-   "action": "Reshare their post + code MAHJMATCH sticker; story frames ready (assets/social/restock-lilacee-nov10/out)",
-   "url": "https://www.instagram.com/p/DfgNXkPo43d/"
-  },
-  {
-   "date": "2026-11-10",
-   "day": "Tue 11/10",
    "time": "10am CT",
    "brand": "Miss Mahjong",
    "partner": true,
@@ -24,15 +13,26 @@
    "url": "https://www.instagram.com/reel/DfXaYEaR791/"
   },
   {
-   "date": "2026-11-11",
-   "day": "Wed 11/11",
-   "time": "10am CT",
-   "brand": "Oh My Mahjong",
+   "date": "2026-11-10",
+   "day": "Tue 11/10",
+   "time": "4pm CT",
+   "brand": "Tigre de Tartán (image-only)",
    "partner": true,
-   "what": "Juniper tiles + Lotus Cove mat go on sale (Juniper album day)",
-   "tag": "tiles + mat",
-   "action": "Juniper album live + 'It's a mat-ch!' post; reshare OMM's launch post + code MAHJMATCH; launch-day FB group post",
-   "url": "https://www.instagram.com/reel/DfZjqoCScnJ/"
+   "what": "Domino Blonde mat drops (sold out now; rules + no-text editions; already in Find Your Mat-ch)",
+   "tag": "mat",
+   "action": "Reshare their post with the code IMAGE only, never type the brand name",
+   "url": "https://www.instagram.com/reel/Dfh8nR1ttsi/"
+  },
+  {
+   "date": "2026-11-10",
+   "day": "Tue 11/10",
+   "time": "7pm CT (5pm PT)",
+   "brand": "Virora",
+   "partner": true,
+   "what": "Lilacée in Yellow tiles RESTOCK (sold out now; 4 layers, vintage florals)",
+   "tag": "tiles",
+   "action": "Reshare their post + code MAHJMATCH sticker; story frames ready (assets/social/restock-lilacee-nov10/out)",
+   "url": "https://www.instagram.com/p/DfgNXkPo43d/"
   },
   {
    "date": "2026-11-11",
@@ -44,6 +44,17 @@
    "tag": "tiles",
    "action": "Reshare their post + code MAHJMATCH; new in Find Your Mat-ch (holiday tiles)",
    "url": "https://www.instagram.com/p/DfId2tWPVhq/"
+  },
+  {
+   "date": "2026-11-11",
+   "day": "Wed 11/11",
+   "time": "10am CT",
+   "brand": "Oh My Mahjong",
+   "partner": true,
+   "what": "Juniper tiles + Lotus Cove mat go on sale (Juniper album day)",
+   "tag": "tiles + mat",
+   "action": "Juniper album live + 'It's a mat-ch!' post; reshare OMM's launch post + code MAHJMATCH; launch-day FB group post",
+   "url": "https://www.instagram.com/reel/DfZjqoCScnJ/"
   },
   {
    "date": "2026-11-14",
@@ -100,10 +111,10 @@
   {
    "brand": "Amanda Toppe",
    "partner": true,
-   "what": "Full-size Lila mat in ~a month (travel Lila sold out, January preorder)",
+   "what": "Full-size Lila mat: first batch SHIPPED Nov 9, should arrive by Christmas; preorder details coming soon (email list first)",
    "tag": "mat",
    "action": "Watch",
-   "url": "https://www.instagram.com/p/DfVHftvhnoS/"
+   "url": "https://www.instagram.com/p/Dfh3q5fyXYb/"
   },
   {
    "brand": "Maison Mahj",
@@ -154,6 +165,15 @@
   }
  ],
  "just_dropped": [
+  {
+   "date": "2026-11-09",
+   "brand": "Oh My Mahjong",
+   "partner": true,
+   "what": "Nantucket tiles BACK in stock (album set, 52 matches in Find Your Mat-ch)",
+   "tag": "tiles",
+   "action": "Reshare + code MAHJMATCH sticker; story frames ready (assets/social/restock-nantucket-nov09/out)",
+   "url": "https://www.ohmymahjong.com/products/nantucket-tiles"
+  },
   {
    "date": "2026-11-09",
    "brand": "Anders Ruff",
@@ -422,15 +442,6 @@
  ],
  "auto": [
   {
-   "date": "2026-11-09",
-   "brand": "Oh My Mahjong",
-   "partner": true,
-   "kind": "launch",
-   "what": "11:11, make a wish. ✨ Meet Juniper Tiles, styled with a few of our favorite mats, including the new Lotus Cove Mat. Your next favorite pairing is coming 11.11. ",
-   "url": "https://www.instagram.com/reel/DfhSF50yZlp/",
-   "src": "instagram"
-  },
-  {
    "date": "2026-11-08",
    "brand": "Middle & Main Mahjong",
    "partner": true,
@@ -536,6 +547,15 @@
    "kind": "sale",
    "what": "Packed with love, worth the wait. 📦🩷 A little behind the scenes as we get your Moving Sale finds out the door!\n\nPlease allow 7–10 business days for orders to sh",
    "url": "https://www.instagram.com/reel/DfVNolKtjwH/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-04",
+   "brand": "Amanda Toppe",
+   "partner": true,
+   "kind": "preorder",
+   "what": "Completely sold out of the travel-size Lila mats! Thank you, thank you, thank you! If you missed out, they are now available for pre-order for early/mid January",
+   "url": "https://www.instagram.com/p/DfVHftvhnoS/",
    "src": "instagram"
   },
   {
@@ -647,9 +667,9 @@
    "src": "instagram"
   }
  ],
- "updatedAt": "2026-11-09T14:57:13+00:00",
+ "updatedAt": "2026-11-09T18:44:07+00:00",
  "sources": {
-  "store_run": "2026-11-09T14:33:27+00:00",
-  "ig_run": "2026-11-09T14:52:40.851649+00:00"
+  "store_run": "2026-11-09T18:35:25+00:00",
+  "ig_run": "2026-11-09T18:41:09.525401+00:00"
  }
 }
