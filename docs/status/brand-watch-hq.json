@@ -2,15 +2,15 @@
  "week_label": "Week of Sun Nov 8 – Sat Nov 14",
  "this_week": [
   {
-   "date": "2026-11-09",
-   "day": "Mon 11/9",
-   "time": "8pm ET",
-   "brand": "Charleston Mahjong Club",
+   "date": "2026-11-10",
+   "day": "Tue 11/10",
+   "time": "7pm CT (5pm PT)",
+   "brand": "Virora",
    "partner": true,
-   "what": "Cabana Club giveaway ends",
+   "what": "Lilacée in Yellow tiles RESTOCK (sold out now; 4 layers, vintage florals)",
    "tag": "tiles",
-   "action": "Reshare their giveaway post to stories + @charlestonmahjongclub (no code needed)",
-   "url": "https://www.instagram.com/reel/DfX1w9hRo7l/"
+   "action": "Reshare their post + code MAHJMATCH sticker; story frames ready (assets/social/restock-lilacee-nov10/out)",
+   "url": "https://www.instagram.com/p/DfgNXkPo43d/"
   },
   {
    "date": "2026-11-10",
@@ -154,6 +154,33 @@
   }
  ],
  "just_dropped": [
+  {
+   "date": "2026-11-09",
+   "brand": "Anders Ruff",
+   "partner": true,
+   "what": "Bams & Bees mat BACK in stock",
+   "tag": "mat",
+   "action": "Reshare + code MAHJMATCH; already in Find Your Mat-ch",
+   "url": "https://shop.andersruff.com/products/bams-bees-mahjong-mat"
+  },
+  {
+   "date": "2026-11-09",
+   "brand": "Virora",
+   "partner": true,
+   "what": "Hiverelle holiday mat BACK in stock",
+   "tag": "mat",
+   "action": "Reshare + code MAHJMATCH",
+   "url": "https://www.viroramahjong.com/products/hiverelle"
+  },
+  {
+   "date": "2026-11-09",
+   "brand": "Mini Mahjer",
+   "partner": true,
+   "what": "Bitty Bundle gift (kids' book + strips + OG mini tiles) live",
+   "tag": "mini tiles",
+   "action": "Add to Monday codes post (mini: no swipe book)",
+   "url": "https://www.instagram.com/reel/DfhY31wBIhU/"
+  },
   {
    "date": "2026-11-08",
    "brand": "Wren Mats",
@@ -315,42 +342,6 @@
    "tag": "mats",
    "action": "New in Find Your Mat-ch",
    "url": "https://brittmillsdesign.com/products/isla-leatherette-mahjong-mat"
-  },
-  {
-   "date": "2026-11-01",
-   "brand": "Noli June",
-   "partner": true,
-   "what": "FALALADIES holiday collection live (12 pieces)",
-   "tag": "mats",
-   "action": "New in Find Your Mat-ch (holiday)",
-   "url": "https://www.instagram.com/reel/DfUmNNZTm_v/"
-  },
-  {
-   "date": "2026-11-01",
-   "brand": "Anders Ruff",
-   "partner": true,
-   "what": "Paws in the Garden mat + 3 tablecloths on preorder; Christmas Solo mat in stock",
-   "tag": "mat",
-   "action": "New in Find Your Mat-ch",
-   "url": "https://shop.andersruff.com/products/paws-in-the-garden-mahjong-mat"
-  },
-  {
-   "date": "2026-11-01",
-   "brand": "Mahjong Register",
-   "partner": true,
-   "what": "New wood + rattan racks",
-   "tag": "racks",
-   "action": "New in Find Your Mat-ch (racks)",
-   "url": ""
-  },
-  {
-   "date": "2026-11-01",
-   "brand": "Mahj Mood",
-   "partner": true,
-   "what": "Jade acrylic racks",
-   "tag": "racks",
-   "action": "New in Find Your Mat-ch (racks)",
-   "url": ""
   }
  ],
  "sales": [
@@ -360,13 +351,6 @@
    "what": "Black Friday deals start Mon 11/16",
    "ends": "",
    "action": "Monday codes post 11/16"
-  },
-  {
-   "brand": "Peace Love Mahjong",
-   "partner": true,
-   "what": "40% off original holiday mats with their code 40KMAT",
-   "ends": "ENDED Sat 11/7 6am CT",
-   "action": "none"
   },
   {
    "brand": "Noli June",
@@ -381,6 +365,14 @@
  "nonpartners": [
   {
    "date": "2026-11-08",
+   "brand": "Mahj Tile Haus",
+   "partner": false,
+   "what": "'Tide & Leather' teased: launching soon",
+   "tag": "tiles?",
+   "url": "https://www.instagram.com/reel/DfgJrlOR-lD/"
+  },
+  {
+   "date": "2026-11-08",
    "brand": "Bougie Mahjong",
    "partner": false,
    "what": "Scarlet Sakura Collection launched: mat (neoprene or sueded felt) + rack tote, tile bag, pouch",
@@ -391,7 +383,7 @@
    "date": "2026-11-08",
    "brand": "Sunday Mahjong",
    "partner": false,
-   "what": "Restocked: Festive Plaid, Retro Plaid + Green Rattan premium mats; Emerald + Cola rack sets (store)",
+   "what": "Restocked mats (Festive Plaid, Plum Panda, Sunday, Retro Plaid) + NEW Blue Gingham, Green Gingham, Blue Rattan and regular-size vegan leathers; Cola racks restock (email Nov 8)",
    "tag": "mat",
    "url": "https://sundaymahjong.com/products/festive-plaid-premium-mahjong-mat"
   },
@@ -429,6 +421,15 @@
   }
  ],
  "auto": [
+  {
+   "date": "2026-11-09",
+   "brand": "Oh My Mahjong",
+   "partner": true,
+   "kind": "launch",
+   "what": "11:11, make a wish. ✨ Meet Juniper Tiles, styled with a few of our favorite mats, including the new Lotus Cove Mat. Your next favorite pairing is coming 11.11. ",
+   "url": "https://www.instagram.com/reel/DfhSF50yZlp/",
+   "src": "instagram"
+  },
   {
    "date": "2026-11-08",
    "brand": "Middle & Main Mahjong",
@@ -566,6 +567,15 @@
   },
   {
    "date": "2026-11-04",
+   "brand": "Noli June",
+   "partner": true,
+   "kind": "sale",
+   "what": "❄️ FALALADIES is LIVE! Twelve new pieces for the most festive tables of the season.\n\nComment LADIES and we’ll send you the link plus 10% off ‼️\n\nShop all twelve",
+   "url": "https://www.instagram.com/reel/DfUmNNZTm_v/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-04",
    "brand": "Sweet Jojo Mahjong",
    "partner": true,
    "kind": "launch",
@@ -629,35 +639,17 @@
   },
   {
    "date": "2026-11-02",
-   "brand": "Peace Love Mahjong",
+   "brand": "Anders Ruff",
    "partner": true,
-   "kind": "drop date",
-   "what": "🖤 BLACK FRIDAY IS COMING! 🖤\n\nConsider this your official warning: the deals are about to be MAHJ-OR. 👀\n\nYour favorite tiles, mats, racks, and all things mahjong",
-   "url": "https://www.instagram.com/p/DfOE0UmMPwe/",
-   "src": "instagram"
-  },
-  {
-   "date": "2026-11-02",
-   "brand": "Charleston Mahjong Club",
-   "partner": true,
-   "kind": "launch",
-   "what": "Comment “MAHJONG” and we’ll send you a link to Shop The NEW Collab Collection!  Don’t do this. Do this instead. 🀄️✨\nLoose mahjong tiles everywhere. Trying to fi",
-   "url": "https://www.instagram.com/reel/DfPuShzRLfn/",
-   "src": "instagram"
-  },
-  {
-   "date": "2026-11-02",
-   "brand": "Let's Be Besties",
-   "partner": true,
-   "kind": "launch",
-   "what": "New mats, Besties! 🩷🀄️\n\nNew designs, different sizes, and even more ways to make your mahjong table YOURS! \n\nWhether you’re looking for a travel-friendly mat or",
-   "url": "https://www.instagram.com/reel/DfP_Kmusmo7/",
+   "kind": "collab",
+   "what": "Up close & personal with our BROWNSTONE BLOOM tablescape \n\nA closer look at our indigopruitt collaboration for real_simple featuring our Brownstone Bloom mat, d",
+   "url": "https://www.instagram.com/reel/DfQR3SoksZN/",
    "src": "instagram"
   }
  ],
- "updatedAt": "2026-11-08T23:36:30+00:00",
+ "updatedAt": "2026-11-09T14:57:13+00:00",
  "sources": {
-  "store_run": "2026-11-08T23:32:39+00:00",
-  "ig_run": "2026-11-08T23:35:04.184975+00:00"
+  "store_run": "2026-11-09T14:33:27+00:00",
+  "ig_run": "2026-11-09T14:52:40.851649+00:00"
  }
 }

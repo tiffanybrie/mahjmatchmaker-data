@@ -1,19 +1,47 @@
-# Partner launches & restocks (2026-11-08 23:32 UTC)
+# Partner launches & restocks (2026-11-09 14:33 UTC)
 
-## Since last run: 8 to act on
-- **RESTOCK** Miss Mahjong · Blonde Tortoise and Brass Acrylic Racks (rack) · Default Title · https://missmahjong.com/products/blonde-tortoise-and-brass-acrylic-racks
-- **RESTOCK** Sunday Mahjong · Sunday Emerald Mahjong Rack Set (rack) · Default Title · https://sundaymahjong.com/products/emerald-mahjong-rack-set
-- **RESTOCK** Sunday Mahjong · Sunday Cola Mahjong Rack Set (rack) · Default Title · https://sundaymahjong.com/products/sunday-cola-mahjong-rack-set
-- **RESTOCK** Sunday Mahjong · Festive Plaid Premium Mahjong Mat (mat) · Default Title · https://sundaymahjong.com/products/festive-plaid-premium-mahjong-mat
-- **RESTOCK** Sunday Mahjong · Retro Plaid Premium Mahjong Mat (mat) · Regular · https://sundaymahjong.com/products/retro-plaid
-- **RESTOCK** Sunday Mahjong · Green Rattan Premium Mahjong Mat (mat) · Default Title · https://sundaymahjong.com/products/rattan-premium-mahjong-mat
-- **NEW** Let's Be Besties · Seasons Mid-Century Mahjong Mat (mat) · https://letsbebesties.com/products/seasons-mid-century-mahjong-mat
-- **NEW** Let's Be Besties · Nutcracker Christmas Mahjong Mat (mat) · https://letsbebesties.com/products/nutcracker-christmas-mahjong-mat
+## Since last run: 33 to act on
+- **RESTOCK** Anders Ruff · Bams & Bees Mahjong Mat (mat) · Default Title · https://shop.andersruff.com/products/bams-bees-mahjong-mat
+- **RESTOCK** Mahjong Studios · 20" Luxury Handmade Tortoise Shell Acrylic Mahjong Racks and Pusher Set (rack) · 20" Green Tortoise Shell Scalloped Racks · https://mahjongstudios.com/products/20-luxury-handmade-tortoise-shell-acrylic-mahjong-racks-and-pusher-set
+- **RESTOCK** Mahjong Studios · Mahjong Studios – American Mahjong Tiles - Lemon Lime Green Back (tiles) · Lemon Lime Tiles · https://mahjongstudios.com/products/mahjong-studios-american-mahjong-tiles-lemon-lime-green-back
+- **NEW** Mini Mahjer · The Bitty Bundle: OG Edition (tiles) · https://minimahjer.com/products/the-bitty-bundle-og-edition
+- **RESTOCK** Virora Mahjong · Hiverelle Mahjong Mat (mat) · Default Title · https://www.viroramahjong.com/products/hiverelle
+- **NEW** Mahjong Register · Lovely Lavender Double-Sided Mahjong Mat – Leatherette 31.5" (mat) · https://mahjongregister.com/products/lovely-lavender-double-sided-leatherette-mahjong-mat
+- **NEW** Mahjong Register · Colette's Kaleidoscope Double-Sided Mahjong Mat – Leatherette 31.5" (mat) · https://mahjongregister.com/products/colette-s-kaleidoscope-double-sided-leatherette-mahjong-mat
+- **NEW** Mahjong Register · Sunday Sherbert Double-Sided Mahjong Mat – Leatherette 31.5" (mat) · https://mahjongregister.com/products/sunday-sherbert-double-sided-leatherette-mahjong-mat
+- **NEW** Mahjong Register · Snowflake Reindeer Lodge Double-Sided Mahjong Mat – Leatherette 31.5" (mat) · https://mahjongregister.com/products/snowflake-reindeer-lodge-double-sided-leatherette-mahjong-mat
+- **NEW** Mahjong Register · Letters to Santa Double-Sided Mahjong Mat – Leatherette 31.5" (mat) · https://mahjongregister.com/products/letters-to-santa-double-sided-leatherette-mahjong-mat
+- **NEW** Mahjong Register · Holly Jolly Double-Sided Mahjong Mat – Leatherette 31.5" (mat) · https://mahjongregister.com/products/holly-jolly-double-sided-leatherette-mahjong-mat
+- **NEW** Mahjong Register · Very Merry Wreath Double-Sided Mahjong Mat – Leatherette 31.5" (mat) · https://mahjongregister.com/products/very-merry-wreath-double-sided-leatherette-mahjong-mat
+- **NEW** Mahjong Register · Gold Leatherette Mahjong Mat – 33" (mat) · https://mahjongregister.com/products/gold-leatherette-mahjong-mat
+- **NEW** Mahjong Register · Purple & Coral Pink Double-Sided Leatherette Mahjong Mat – 33" (mat) · https://mahjongregister.com/products/purple-coral-pink-double-sided-leatherette-mahjong-mat
+- **NEW** Mahjong Register · Hunter Green & Navy Double-Sided Leatherette Mahjong Mat – 33" (mat) · https://mahjongregister.com/products/hunter-green-navy-double-sided-leatherette-mahjong-mat
+- **NEW** Mahjong Register · Seafoam Green & Slate Blue Double-Sided Leatherette Mahjong Mat – 33" (mat) · https://mahjongregister.com/products/seafoam-green-slate-blue-double-sided-leatherette-mahjong-mat
+- **NEW** Mahjong Register · Emerald Teal & Celadon Green Double-Sided Leatherette Mahjong Mat – 33" (mat) · https://mahjongregister.com/products/emerald-teal-celadon-green-double-sided-leatherette-mahjong-mat
+- **NEW** Mahjong Register · Navy Leatherette Mahjong Mat – 33" (mat) · https://mahjongregister.com/products/navy-leatherette-mahjong-mat
+- **NEW** Mahjong Register · Coral & Aqua Double-Sided Leatherette Mahjong Mat – 33" (mat) · https://mahjongregister.com/products/coral-aqua-double-sided-leatherette-mahjong-mat
+- **NEW** Mahjong Register · Butterfly Belle Mahjong Mat – Neoprene 33" (mat) · https://mahjongregister.com/products/butterfly-belle-neoprene-mahjong-mat
+- **NEW** Mahjong Register · Pretty in Plum Mahjong Mat – Neoprene 33" (mat) · https://mahjongregister.com/products/pretty-in-plum-neoprene-mahjong-mat
+- **NEW** Mahjong Register · Buttercup Cherie Mahjong Mat – Neoprene 33" (mat) · https://mahjongregister.com/products/buttercup-cherie-neoprene-mahjong-mat
+- **NEW** Mahjong Register · Snowflake Lodge Mahjong Mat – Neoprene 33" (mat) · https://mahjongregister.com/products/snowflake-lodge-neoprene-mahjong-mat
+- **NEW** Mahjong Register · Peppermint Patty Mahjong Mat – Neoprene 33" (mat) · https://mahjongregister.com/products/peppermint-patty-neoprene-mahjong-mat
+- **NEW** Mahjong Register · Letters to Santa Mahjong Mat – Neoprene 33" (mat) · https://mahjongregister.com/products/letters-to-santa-neoprene-mahjong-mat
+- **NEW** Mahjong Register · Very Merry Wreath Mahjong Mat – Neoprene 33" (mat) · https://mahjongregister.com/products/very-merry-wreath-neoprene-mahjong-mat
+- **NEW** Mahjong Register · Holly Jolly Mahjong Mat – Neoprene 33" (mat) · https://mahjongregister.com/products/holly-jolly-neoprene-mahjong-mat
+- **NEW** Mahjong Register · Paisley Jubilee Mahjong Mat – Neoprene 33" (mat) · https://mahjongregister.com/products/paisley-jubilee-neoprene-mahjong-mat
+- **NEW** Mahjong Register · Moonlit Crane Mahjong Mat – Neoprene 33" (mat) · https://mahjongregister.com/products/moonlit-crane-neoprene-mahjong-mat
+- **NEW** Mahjong Register · Peony Sociale Mahjong Mat – Neoprene 33" (mat) · https://mahjongregister.com/products/peony-sociale-neoprene-mahjong-mat
+- **NEW** Mahjong Register · Palm Beach Pink Leopard Mahjong Mat – Neoprene 33" (mat) · https://mahjongregister.com/products/palm-beach-pink-leopard-neoprene-mahjong-mat
+- **NEW** Let's Be Besties · Tropical Travels with Simple Middle Mahjong Mat (travel mat) · https://letsbebesties.com/products/tropical-travels-with-simple-middle-mahjong-mat
+- **NEW** Splash of Color · Sunny Citrus Chinoiserie Mahjong Tablecloth | 55" Square (mat) · https://splashofcolorco.com/products/sunny-citrus-chinoiserie-square-mahjong-tablecloth-dining-cover
 
 ## Created/published in the last 7 days (tiles, mats, racks)
+- 2026-11-09 · Mini Mahjer · The Bitty Bundle: OG Edition (tiles) · available · https://minimahjer.com/products/the-bitty-bundle-og-edition
+- 2026-11-09 · Splash of Color · Sunny Citrus Chinoiserie Mahjong Tablecloth | 55" Square (mat) · available · https://splashofcolorco.com/products/sunny-citrus-chinoiserie-square-mahjong-tablecloth-dining-cover
+- 2026-11-08 · Let's Be Besties · Tropical Travels with Simple Middle Mahjong Mat (travel mat) · available · https://letsbebesties.com/products/tropical-travels-with-simple-middle-mahjong-mat
 - 2026-11-08 · Let's Be Besties · Seasons Mid-Century Mahjong Mat (mat) · available · https://letsbebesties.com/products/seasons-mid-century-mahjong-mat
 - 2026-11-08 · Let's Be Besties · Nutcracker Christmas Mahjong Mat (mat) · available · https://letsbebesties.com/products/nutcracker-christmas-mahjong-mat
-- 2026-11-08 · Splash of Color · Mahj Airways (mat) · available · https://splashofcolorco.com/products/mahj-airways-travel-mini-mahjong-mat
+- 2026-11-08 · Splash of Color · Mahj Airways Mini Travel Mahjong Mat (travel mat) · available · https://splashofcolorco.com/products/mahj-airways-travel-mini-mahjong-mat
 - 2026-11-08 · Splash of Color · The Mahj Motel Palm Springs 4Layer American Mahjong Tiles Set (tiles) · available · https://splashofcolorco.com/products/the-mahj-motel-palm-springs-4layer-american-mahjong-tiles-set
 - 2026-11-08 · Splash of Color · Mahj Airways Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/mahj-airways-mahjong-mat-sleek-surface
 - 2026-11-08 · Splash of Color · Mahj Airways Engraved 4Layer American Mahjong Tiles Blue Green Layered (tiles) · available · https://splashofcolorco.com/products/mahj-airways-engraved-4layer-american-mahjong-tiles-blue-green-layered
@@ -71,30 +99,30 @@
 - amahjline.com: ok 33 products
 - birdandbamboo.com: ok 59 products
 - brittmillsdesign.com: ok 712 products
-- letsbebesties.com: ok 556 products
+- letsbebesties.com: ok 557 products
 - mahjandvine.com: ok 21 products
 - mahjmood.com: ok 54 products
 - mahjongco.com: ok 1 products
 - mahjongregister.com: ok 75 products
 - mahjongstudios.com: ok 155 products
 - mahjsquadshop.com: ok 60 products
-- minimahjer.com: ok 29 products
+- minimahjer.com: ok 30 products
 - missmahjong.com: ok 97 products
 - myfairmahjong.com: ok 96 products
 - peacelovemahjong.com: ok 100 products
-- shop.andersruff.com: ok 162 products
+- shop.andersruff.com: ok 161 products
 - soireeallday.co: not checkable (not Shopify or blocked)
-- splashofcolorco.com: ok 2162 products
+- splashofcolorco.com: ok 2161 products
 - sundaymahjong.com: ok 87 products
 - sweetjojomahjong.com: ok 82 products
 - themahjongpress.com: ok 7 products
 - theroyalmahjongsociety.com: ok 50 products
-- tigredetartan.com: ok 124 products
+- tigredetartan.com: ok 125 products
 - www.bambirdboutique.com: ok 117 products
 - www.bamletsmahjong.com: ok 68 products
 - www.bespokemahjong.com: ok 349 products
 - www.charlestonmahjongclub.com: ok 71 products
-- www.fait-a-main.com: ok 40 products
+- www.fait-a-main.com: ok 42 products
 - www.hiphipmahjong.com: ok 72 products
 - www.letsmahj-on.com: ok 83 products
 - www.macandmillermahjong.com: ok 36 products

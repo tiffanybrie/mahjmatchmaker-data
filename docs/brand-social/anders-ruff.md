@@ -1,6 +1,7 @@
 # Anders Ruff (@andersruffdesignco): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 9 (store): Bams & Bees mahjong mat back in stock (https://shop.andersruff.com/products/bams-bees-mahjong-mat). IG Nov 9: '25K Mahj besties' thank-you post (no product).
 - Nov 6 12pm ET: Christmas Solo Mats in stock, paired with Dear Santa tiles (https://www.instagram.com/reel/DfaF_DdAQ51/). Nov 5: '50 days to Christmas' Dear Santa unboxing. #DearSantaMahjong #SoloMahjong
 - Nov 5 10:02am ET: '50 days to Christmas' unboxing reel of Dear Santa tiles, 'Shop Dear Santa NOW' (https://www.instagram.com/reel/DfXTgcjiTwt/). In stock, not a new drop. #AndersRuffDesignCo #DearSantaMahjong #ChristmasMahjong #HolidayMahjong
 - Nov 4 10:28am ET: Thanksgiving carousel, in stock + ready to ship: Autumn Bloom, Pumpkin Plaid, Heirloom Harvest mats (https://www.instagram.com/p/DfUx0TUmnYm/). #ThanksgivingMahjong #FallTablescape. Store 1:35pm ET: still nothing new since Puppy Love Solo (the Gatsby reel's 'new product reveal' still unidentified).

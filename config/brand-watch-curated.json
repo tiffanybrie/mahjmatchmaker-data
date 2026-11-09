@@ -5,6 +5,17 @@
   {
    "date": "2026-11-10",
    "day": "Tue 11/10",
+   "time": "7pm CT (5pm PT)",
+   "brand": "Virora",
+   "partner": true,
+   "what": "Lilacée in Yellow tiles RESTOCK (sold out now; 4 layers, vintage florals)",
+   "tag": "tiles",
+   "action": "Reshare their post + code MAHJMATCH sticker; story frames ready (assets/social/restock-lilacee-nov10/out)",
+   "url": "https://www.instagram.com/p/DfgNXkPo43d/"
+  },
+  {
+   "date": "2026-11-10",
+   "day": "Tue 11/10",
    "time": "10am CT",
    "brand": "Miss Mahjong",
    "partner": true,
@@ -144,6 +155,33 @@
   }
  ],
  "just_dropped": [
+  {
+   "date": "2026-11-09",
+   "brand": "Anders Ruff",
+   "partner": true,
+   "what": "Bams & Bees mat BACK in stock",
+   "tag": "mat",
+   "action": "Reshare + code MAHJMATCH; already in Find Your Mat-ch",
+   "url": "https://shop.andersruff.com/products/bams-bees-mahjong-mat"
+  },
+  {
+   "date": "2026-11-09",
+   "brand": "Virora",
+   "partner": true,
+   "what": "Hiverelle holiday mat BACK in stock",
+   "tag": "mat",
+   "action": "Reshare + code MAHJMATCH",
+   "url": "https://www.viroramahjong.com/products/hiverelle"
+  },
+  {
+   "date": "2026-11-09",
+   "brand": "Mini Mahjer",
+   "partner": true,
+   "what": "Bitty Bundle gift (kids' book + strips + OG mini tiles) live",
+   "tag": "mini tiles",
+   "action": "Add to Monday codes post (mini: no swipe book)",
+   "url": "https://www.instagram.com/reel/DfhY31wBIhU/"
+  },
   {
    "date": "2026-11-08",
    "brand": "Wren Mats",
@@ -305,42 +343,6 @@
    "tag": "mats",
    "action": "New in Find Your Mat-ch",
    "url": "https://brittmillsdesign.com/products/isla-leatherette-mahjong-mat"
-  },
-  {
-   "date": "2026-11-01",
-   "brand": "Noli June",
-   "partner": true,
-   "what": "FALALADIES holiday collection live (12 pieces)",
-   "tag": "mats",
-   "action": "New in Find Your Mat-ch (holiday)",
-   "url": "https://www.instagram.com/reel/DfUmNNZTm_v/"
-  },
-  {
-   "date": "2026-11-01",
-   "brand": "Anders Ruff",
-   "partner": true,
-   "what": "Paws in the Garden mat + 3 tablecloths on preorder; Christmas Solo mat in stock",
-   "tag": "mat",
-   "action": "New in Find Your Mat-ch",
-   "url": "https://shop.andersruff.com/products/paws-in-the-garden-mahjong-mat"
-  },
-  {
-   "date": "2026-11-01",
-   "brand": "Mahjong Register",
-   "partner": true,
-   "what": "New wood + rattan racks",
-   "tag": "racks",
-   "action": "New in Find Your Mat-ch (racks)",
-   "url": ""
-  },
-  {
-   "date": "2026-11-01",
-   "brand": "Mahj Mood",
-   "partner": true,
-   "what": "Jade acrylic racks",
-   "tag": "racks",
-   "action": "New in Find Your Mat-ch (racks)",
-   "url": ""
   }
  ],
  "sales": [
@@ -350,13 +352,6 @@
    "what": "Black Friday deals start Mon 11/16",
    "ends": "",
    "action": "Monday codes post 11/16"
-  },
-  {
-   "brand": "Peace Love Mahjong",
-   "partner": true,
-   "what": "40% off original holiday mats with their code 40KMAT",
-   "ends": "ENDED Sat 11/7 6am CT",
-   "action": "none"
   },
   {
    "brand": "Noli June",
@@ -371,6 +366,14 @@
  "nonpartners": [
   {
    "date": "2026-11-08",
+   "brand": "Mahj Tile Haus",
+   "partner": false,
+   "what": "'Tide & Leather' teased: launching soon",
+   "tag": "tiles?",
+   "url": "https://www.instagram.com/reel/DfgJrlOR-lD/"
+  },
+  {
+   "date": "2026-11-08",
    "brand": "Bougie Mahjong",
    "partner": false,
    "what": "Scarlet Sakura Collection launched: mat (neoprene or sueded felt) + rack tote, tile bag, pouch",
@@ -381,7 +384,7 @@
    "date": "2026-11-08",
    "brand": "Sunday Mahjong",
    "partner": false,
-   "what": "Restocked: Festive Plaid, Retro Plaid + Green Rattan premium mats; Emerald + Cola rack sets (store)",
+   "what": "Restocked mats (Festive Plaid, Plum Panda, Sunday, Retro Plaid) + NEW Blue Gingham, Green Gingham, Blue Rattan and regular-size vegan leathers; Cola racks restock (email Nov 8)",
    "tag": "mat",
    "url": "https://sundaymahjong.com/products/festive-plaid-premium-mahjong-mat"
   },

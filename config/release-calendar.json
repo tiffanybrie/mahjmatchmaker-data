@@ -1207,7 +1207,7 @@
    "product": "Lilacée tiles (yellow-lilacee listing)",
    "type": "restock",
    "date": "2026-11-10T17:00-08:00",
-   "status": "sold out; restock CONFIRMED Tue Nov 10 5pm PT (IG Nov 8 9pm ET DfgNXkPo43d 'Lilacée in Yellow is coming back'); product page 'Expected Stock On November 10, 2026'",
+   "status": "sold out; restock CONFIRMED Tue Nov 10 5pm PT (IG Nov 8 9pm ET DfgNXkPo43d 'Lilacée in Yellow is coming back'); product page 'Expected Stock On November 10, 2026'; Nov 9 9:40am ET store re-check: still sold out; story frames assets/social/restock-lilacee-nov10/out; HQ needs/launch-virora-lilacee-nov10; Tiffany messaged Nov 9 (day before)",
    "source": "Product page ETA (release scan Nov 2)",
    "sourceUrl": "https://www.instagram.com/p/DfgNXkPo43d/",
    "album": false,
@@ -1753,6 +1753,42 @@
    "affiliate": false,
    "priority": 3,
    "contentTiming": "Non-partner, no code. FYM/catalog pass adds the full-size mats if not already in (match-inbox); no dedicated post."
+  },
+  {
+   "id": "andersruff-bams-bees-restock-nov09",
+   "brand": "Anders Ruff",
+   "product": "Bams & Bees mahjong mat",
+   "type": "restock",
+   "date": "2026-11-09",
+   "status": "LIVE 2026-11-09 (store products.json, partner watch 9:30am)",
+   "sourceUrl": "https://shop.andersruff.com/products/bams-bees-mahjong-mat",
+   "album": false,
+   "affiliate": true,
+   "priority": 3
+  },
+  {
+   "id": "virora-hiverelle-restock-nov09",
+   "brand": "Virora Mahjong",
+   "product": "Hiverelle holiday mat",
+   "type": "restock",
+   "date": "2026-11-09",
+   "status": "LIVE 2026-11-09 (store products.json, partner watch 9:30am)",
+   "sourceUrl": "https://www.viroramahjong.com/products/hiverelle",
+   "album": false,
+   "affiliate": true,
+   "priority": 3
+  },
+  {
+   "id": "mahjtilehaus-tide-leather-tease",
+   "brand": "Mahj Tile Haus",
+   "product": "Tide & Leather (teased, non-partner)",
+   "type": "launch",
+   "date": "",
+   "status": "coming soon (IG Nov 8 DfgJrlOR-lD)",
+   "sourceUrl": "https://www.instagram.com/reel/DfgJrlOR-lD/",
+   "album": false,
+   "affiliate": false,
+   "priority": 5
   }
  ],
  "sources": {
