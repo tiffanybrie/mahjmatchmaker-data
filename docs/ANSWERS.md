@@ -1275,3 +1275,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - 2026-11-09 11:23am Tiffany: 'we have to post about Juniper today'. Scheduled in Planoly 12:30pm ET: Juniper full-mat grid IG feed (collab @ohmymahjong, tag) + FB Page (group 01a1c120-59d7) and story IG+FB 12:32pm (group 01a1c120-5c0f). Holly Jolly Red grid 3pm + Dear Santa reel v2 7pm shown, waiting her yes.
 - 2026-11-09 11:25am Tiffany: a reel that promotes Find Your Mat-ch MUST show the tool in use (real screen recording). Dear Santa reel v3 = v2 + 8s live FYM recording (search Dear Santa, swipe mats) in a phone frame (scripts/social/albumgrid/rec_fym_live.py).
 - 2026-11-09 2:25pm Tiffany: Juniper grid posted (12:30pm auto-post confirmed).
+- 2026-11-09 4:27pm Tiffany: /links (IG link in bio) must feature Juniper now (both OK, never leave Juniper out). Patch: site/livepatch/links-nov09/README.md. Chrome unreachable 4:28pm; retry scheduled.
