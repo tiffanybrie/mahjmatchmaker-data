@@ -1,13 +1,10 @@
 {
- "at": "2026-11-08T11:19:14",
- "date": "2026-11-08",
+ "at": "2026-11-09T03:18:17",
+ "date": "2026-11-09",
  "pages": 39,
  "hub_brands": 38,
  "fails": [],
- "warns": [
-  "/mahjong-row-and-co-discount-code: removed Mahjong Row & Co. page still in sitemap.xml (2 days since 2026-11-06; status 302) WARN: sitemap lag allowed up to 3 days",
-  "/cypress-forest-mahjong-tile-matches: removed Mahjong Row & Co. page still in sitemap.xml (2 days since 2026-11-06; status 302) WARN: sitemap lag allowed up to 3 days"
- ],
+ "warns": [],
  "unconfirmed": [
   "I Love Mahj: MAHJMATCH 2-week free trial = page only, unconfirmed (page only (hub + brand page); Gmail has only the Jan 2026 partner-program application, no )"
  ]
