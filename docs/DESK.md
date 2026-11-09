@@ -81,6 +81,8 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Affiliate applications: Lemondrop, Rack It!, The Mahjong House (waiting), Bloomjong (verified, not approved), Sweet Jojo (W-9 replaced) | Partner watch | Watch mahjmatchmaker@; onboard on approval (page, IG, newsletter). | On approval |
 | UpPromote accounts → mahjmatchmaker@ | Tiffany / Main | Screenshots before each switch. | Fri Nov 13 |
 
+- REVIEW WEEK Dec 7-13 in Planoly (Tiffany Nov 9 1:09am): this week's posts are parked 28 days out. Before Dec 6 EVERY one must be moved back (approved) or unscheduled, or it auto-posts. Owner: Main + nightly desk cleanup.
+
 ## Blocked, approved (raise at the top of every attended reply until done)
 - **Planoly roll-forward + story-caption fixes**: the unattended desk run is refused for update_post (5th night). Priority 2a lists the ids; attended Main does it Mon morning.
 - **Partner newsletters, 9 stores block automated signup (Shopify hCaptcha)**: Amahj, Bam! Let's Mahjong, Mahj Mood, Let's Be Besties, Mini Mahjer, My Fair, The Mahjong Press, Tigre de Tartán, Splash of Color. Next step: Tiffany types mahjmatchmaker@gmail.com into each footer box on her phone (~10s each); then mark rows in docs/PARTNER-NEWSLETTERS.md.
