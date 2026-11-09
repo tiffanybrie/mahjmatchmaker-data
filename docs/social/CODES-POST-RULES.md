@@ -6,3 +6,6 @@ Read before writing ANY Monday "Partner Codes + Updates" post.
 4. No hype we can't back: never "goes fast"/"will sell out". "Set your alarms!" is fine. Only quote a brand's own urgency ("one special run") when the brand said it.
 5. Don't call the week "big" unless it is.
 6. Codes list: keep every partner until truly closed (Mahjong Co. stays while Kaleidoscope earns). Never drop a partner on our own (CLAUDE.md). Never call a quietly-added partner "new".
+7. PHOTOS SELL (Tiffany Nov 9 4:43am): every item worth a line gets the brand's own product/teaser photo in the post (numbered set in assets/social/codes-post-<date>/), not only album covers. Collages: holiday/season roundup + "Last week's launches: still in stock / sold out" with stock pills, stock checked the morning of.
+8. Skip minor items (a colourway of an existing mat). Lead with what sells now (season, deadlines like a preorder shipping date).
+9. Sales season: tease our Black Friday deals page.
