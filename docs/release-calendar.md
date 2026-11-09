@@ -1,16 +1,15 @@
 # Mahj Matchmaker release calendar
 
-Updated 2026-11-08 from brand sites, the Sunday release schedule, brand Instagram feeds (Planoly) and Gmail. Source of truth: `config/release-calendar.json`; regenerate with `python3 scripts/release_calendar/build_md.py`.
+Updated 2026-11-09 from brand sites, the Sunday release schedule, brand Instagram feeds (Planoly) and Gmail. Source of truth: `config/release-calendar.json`; regenerate with `python3 scripts/release_calendar/build_md.py`.
 
 **Rule (Tiffany, Oct 21):** save restock content for the buying window. Don't spend a set's content before you can buy it; post 1-2 weeks before a dated restock so people pick their mat and have the code ready when it drops.
 
-## Next 8 weeks (Nov 08 - Jan 03)
+## Next 8 weeks (Nov 09 - Jan 04)
 
 | Post window | Brand | Product | Drop date / window | Album | Affiliate | What to post |
 |---|---|---|---|---|---|---|
 | 2026-10-27 | Tigre de Tartán | Holiday roll-out: Ditsy Christmas Maraschino (live Oct 20), Birdsong by Katherine Hartman (live Oct 20), Estate Sale (week of Oct 26), Fair Isle Cashmere (November); DOMINO BLONDE mat (new, coming soon Oct 22) | weekly drops, Tue 4pm CT | no | yes | Holiday mats: Holiday section only. Never promote Paige Spearin x TdT (no commission; Après Mahj drops alongside Estate Sale). |
-| 2026-10-28 to 2026-11-08 | Miss Mahjong | Miss Catrina tile set | ETA week of Oct 28, 2026 | no | yes | No album. If the final restock email lands this week: one 'last chance until next fall' story with link + MAHJMATCH. Reshare frames assets/social/restock-catrina-oct27/out. |
-| 2026-10-28 | Sunday Mahjong | Premium Mahjong Mats (all designs, incl. Rattan) | 'Now' (schedule Updated 2 Nov 2026: restocked, being added to the site as inspected; email list notified once all listed). Next drop on schedule = Premium Mahjong Mats. | many album mats (Rattan = works_for_holiday) | no | Watch daily (email watch already flags Retro Rattan). When live: story + Holiday 'year-round mats that work for the holidays' plug the same day. Oct 28: Rattan (wfh) + Festive Plaid back; Tiffany messaged (Festive Plaid is her personal buy). Nov 2: Retro Rattan holiday reel + story are still HELD in Planoly 'until Sunday relists the Rattan mat': Green Rattan is still sold out; Blue Rattan is live (new design). Social workflow decides whether Blue Rattan works for that reel. |
+| 2026-10-28 | Sunday Mahjong | Premium Mahjong Mats (all designs, incl. Rattan) | 'Now' (schedule Updated 9 Nov 2026: still 'Next drop = Premium Mahjong Mats (all designs)'; restocked, being added as inspected; email list notified once all listed). | many album mats (Rattan = works_for_holiday) | no | Watch daily (email watch already flags Retro Rattan). When live: story + Holiday 'year-round mats that work for the holidays' plug the same day. Oct 28: Rattan (wfh) + Festive Plaid back; Tiffany messaged (Festive Plaid is her personal buy). Nov 2: Retro Rattan holiday reel + story are still HELD in Planoly 'until Sunday relists the Rattan mat': Green Rattan is still sold out; Blue Rattan is live (new design). Social workflow decides whether Blue Rattan works for that reel. Nov 9: Green Rattan still sold out, so the held Retro Rattan reel stays held. Sunday's own note: Retro Plaid = Thanksgiving mat, Green Gingham = Christmas-to-spring (non-partner, no code). |
 | 2026-10-30 | Bam Bird Boutique | Restocks + brand announcements (unnamed; newsletter first) | soon (no date) | no | yes | Watch store; Deco Indigo restock triggers the Deco trio albums. |
 | 2026-10-31 | Virora Mahjong | Tinselle Emerald Green tiles (Christmas Collection I) | LIVE Oct 31 | yes | yes | Holiday album set: restock story frames (assets/social/restock-tinselle-oct31/out) for Tiffany's review; never a feed post. |
 | 2026-11-01 | Maison Mahj | New bags (companions to House Line No. 1), ready to ship | Sun Nov 1 | no | no | Accessories; record only. |
@@ -29,12 +28,8 @@ Updated 2026-11-08 from brand sites, the Sunday release schedule, brand Instagra
 | 2026-11-06 | My Fair Mahjong | Confetti Racks (purple, pink, blue, green) short preorder | 2026-11-06 | no | yes | Racks: record only. |
 | 2026-11-06 | Anders Ruff | Christmas Solo Mat (pairs with Dear Santa tiles) | 2026-11-06 | no | yes | Solo-play mat: record only. |
 | 2026-11-07 | Virora Mahjong | Florielle tiles (Rose Red, 4 layers) | 2026-11-07 | no | yes | Restock playbook: reshare + FYM frames assets/social/restock-florielle-nov07 (her review). |
-| 2026-11-08 | Lucky Bam | New holiday mats: The Rosé Noël + The Slopes | LIVE Sun Nov 8 | no | no | Non-partner: Brand Watch non-partner list only. |
-| 2026-11-08 | Wren Mats | Christmas Village holiday mat (first batch in stock) | LIVE Sun Nov 8 | no | yes | Partner holiday mat, already in FYM: reshare their reel + code MAHJMATCH sticker; HQ needs/launch-wren-christmas-village-nov08. |
-| 2026-11-08 | Let's Be Besties | New mats: Nutcracker Christmas (holiday) + Seasons Mid-Century | LIVE Sun Nov 8 | no | yes | Queued for FYM (config/fym-pending-queue.json) + MATCH-INBOX. |
-| 2026-11-08 | Miss Mahjong | Blonde Tortoise and Brass Acrylic Racks | LIVE Sun Nov 8 | no | yes | Racks (not a tile set/mat): record only. |
-| 2026-11-08 | Bougie Mahjong | Scarlet Sakura Collection (mat + tote, tile bag, pouch) | LIVE Sun Nov 8 | no | no | Non-partner: Brand Watch non-partner list only. |
-| 2026-11-10 | Virora Mahjong | Lilacée tiles (yellow-lilacee listing) | 2026-11-10 | no | yes | No album. Optional restock story on the day with link + code. |
+| 2026-11-08 | Sunday Mahjong | Vegan Leather Mat, Regular size 33in (Chestnut, Ruby, Forrest) - new size | 2026-11-08 | no | no | Non-partner, no code. FYM/catalog pass adds the full-size mats if not already in (match-inbox); no dedicated post. |
+| 2026-11-10 | Virora Mahjong | Lilacée tiles (yellow-lilacee listing) | 2026-11-10 17:00 | no | yes | No album. Optional restock story on the day with link + code. |
 | 2026-11-10 | Miss Mahjong | New acrylic racks: Bombshell Pink, Butter Yellow, Pistachio, Peony, Chartreuse | 2026-11-10 | no | yes | Accessory (racks): record only. Check store Nov 10; rack picks may use them. |
 | 2026-11-11 | Mahj Pit | Christmas tiles launch (red backs with folk-floral faces + gold-glitter confetti tiles; looks like the Merry Merry Holiday Tiles Limited Edition design, currently sold out on the store) | 2026-11-11 | no | yes | Check store Nov 11; if it's a NEW design (not Merry Merry relisted) treat as a partner launch. Photo: assets/launches/mahjpit-christmas-tiles-teaser/. |
 | 2026-11-11 | Mahj Pit | Original Confetti tiles restock (Small $395 / Large $495) | 2026-11-11 | no | yes | Restock of existing set; check store Nov 11. |
@@ -49,8 +44,9 @@ Updated 2026-11-08 from brand sites, the Sunday release schedule, brand Instagra
 | 2026-11-20 to 2026-11-27 | Miss Mahjong | Jade and Brass acrylic racks | ETA week of Nov 24, 2026 | Jade (rack pairing) | yes | Small follow-up for Jade buyers ~Nov 20 ('the racks are coming back too'), then a story when live. Thanksgiving week: keep it short. |
 | 2026-11-20 | Mahj Mood | Lake Day tile set preorder $390 + Lake Day mat + transparent blue racks | 2026-11-20 10:00 | no | yes | No album. Log. |
 | 2026-11-23 | Sunday Mahjong | Sunday Cola racks | next restock around Thanksgiving (Nov 26) | no | no | Optional rack-pairing story for Sunday album sets when it restocks with Sunday Blues; no code (non-partner). |
-| 2026-11-23 | Sunday Mahjong | December 1994 tiles (Christmas) | preorders deliver November; leftovers listed late Nov/early Dec | no | no | Holiday content: holiday mat matches post when leftovers list (holiday mats only; never single-colour). |
+| 2026-11-25 | Sunday Mahjong | December 1994 tiles (Christmas) | preorders deliver November; leftovers listed late Nov/early Dec | no | no | Holiday content: holiday mat matches post when leftovers list (holiday mats only; never single-colour). |
 | 2026-11-30 to 2026-12-04 | Miss Mahjong | Hallmark x Miss Mahjong Miss Heirloom bundle (final restock) | early December (ETA Dec 2, 2026) | no | yes | Gift-guide mention only (no album). |
+| 2027-01-04 | Sunday Mahjong | Nature Walk tiles | small restocks as sets arrive; larger restock early January 2027 | Nature Walk | no | Hold album content for the January restock (tease ~Dec 28-Jan 2 if a date is set). |
 
 ## Held content: restocks with no date yet (do not post until dated)
 
@@ -152,7 +148,8 @@ Updated 2026-11-08 from brand sites, the Sunday release schedule, brand Instagra
 | Royal Mahjong Society | Crown Jewels tile set + mat + Studio Series travel | launch | 2026-11-01 | no | yes | New launch: launch watch / new-album rules own it. Travel version skipped. | [Royal Mahjong Society email Nov 1](https://www.theroyalmahjongsociety.com/) |
 | Soirée All Day | Holiday mats (Toasty & Tipsy, Poinsettia Party, Home for the Holidays, Color Me Merry, Pretty in Pink) + Star of David Hanukkah mat + Mahjong Card Holders | launch | 2026-10-20 | swipe books exist (HQ Albums tab) | yes | Holiday mats: Holiday section only. Holiday social starts Nov 1 (Planoly). | [Soirée affiliate email Oct 20 2:58pm ET](https://www.soireeallday.co/the-mahjong-collection) |
 | Sunday Mahjong | Mini Hummingbird tiles (travel/mini) | preorder | 2026-10-25 13:00 | no | no | Skip (mini/travel tiles; never match to full-size mats). | [Release schedule + email Oct 18 'Mini Hummingbird Tile Relea](https://sundaymahjong.com/pages/release-schedule) |
-| Sunday Mahjong | Premium Mahjong Mats (all designs, incl. Rattan) | re-release | 'Now' (schedule Updated 2 Nov 2026: restocked, being added to the site as inspected; email list notified once all listed). Next drop on schedule = Premium Mahjong Mats. | many album mats (Rattan = works_for_holiday) | no | Watch daily (email watch already flags Retro Rattan). When live: story + Holiday 'year-round mats that work for the holidays' plug the same day. Oct 28: Rattan (wfh) + Festive Plaid back; Tiffany messaged (Festive Plaid is her personal buy). Nov 2: Retro Rattan holiday reel + story are still HELD in Planoly 'until Sunday relists the Rattan mat': Green Rattan is still sold out; Blue Rattan is live (new design). Social workflow decides whether Blue Rattan works for that reel. | [Release schedule 'Next drop'](https://sundaymahjong.com/pages/release-schedule) |
+| Sunday Mahjong | Premium Mahjong Mats (all designs, incl. Rattan) | re-release | 'Now' (schedule Updated 9 Nov 2026: still 'Next drop = Premium Mahjong Mats (all designs)'; restocked, being added as inspected; email list notified once all listed). | many album mats (Rattan = works_for_holiday) | no | Watch daily (email watch already flags Retro Rattan). When live: story + Holiday 'year-round mats that work for the holidays' plug the same day. Oct 28: Rattan (wfh) + Festive Plaid back; Tiffany messaged (Festive Plaid is her personal buy). Nov 2: Retro Rattan holiday reel + story are still HELD in Planoly 'until Sunday relists the Rattan mat': Green Rattan is still sold out; Blue Rattan is live (new design). Social workflow decides whether Blue Rattan works for that reel. Nov 9: Green Rattan still sold out, so the held Retro Rattan reel stays held. Sunday's own note: Retro Plaid = Thanksgiving mat, Green Gingham = Christmas-to-spring (non-partner, no code). | [Release schedule 'Next drop'](https://sundaymahjong.com/pages/release-schedule) |
+| Sunday Mahjong | Vegan Leather Mat, Regular size 33in (Chestnut, Ruby, Forrest) - new size | mat | 2026-11-08 | no | no | Non-partner, no code. FYM/catalog pass adds the full-size mats if not already in (match-inbox); no dedicated post. | [Release schedule (Updated 9 Nov 2026) + Sunday email Nov 8](https://sundaymahjong.com/pages/release-schedule) |
 | Sunday Mahjong | Sunday Blues tiles | re-release | around Thanksgiving (Nov 26, 2026), limited, no preorder | Sunday Blues | no | Hold Sunday Blues album content. Tease once Sunday emails the date (expect the week of Nov 16-23); 'pick your mat' post 1-2 days before; launch-day story. Limited + no preorder = short window. No code (non-partner): plug partner mats/racks from the album instead. | [Release schedule: 'restocking around Thanksgiving in limited](https://sundaymahjong.com/pages/release-schedule) |
 | Sunday Mahjong | Sunday Cola racks | re-release | next restock around Thanksgiving (Nov 26) | no | no | Optional rack-pairing story for Sunday album sets when it restocks with Sunday Blues; no code (non-partner). | [Sunday email Oct 22 'Cola is back on tap'](https://sundaymahjong.com/pages/release-schedule) |
 | Sunday Mahjong | December 1994 tiles (Christmas) | re-release | preorders deliver November; leftovers listed late Nov/early Dec | no | no | Holiday content: holiday mat matches post when leftovers list (holiday mats only; never single-colour). | [Release schedule](https://sundaymahjong.com/pages/release-schedule) |
@@ -161,7 +158,7 @@ Updated 2026-11-08 from brand sites, the Sunday release schedule, brand Instagra
 | Sunday Mahjong | Hummingbird tiles (full size) | restock | late Jan/early Feb 2027 | Hummingbird | no | Hold album content; tease 1-2 weeks before once dated. | [Release schedule](https://sundaymahjong.com/pages/release-schedule) |
 | Sunday Mahjong | Sunday Tiles (unlabeled dragons) | restock | late Jan/early Feb 2027 | Sunday Tile Set | no | Hold album content; tease once dated. | [Release schedule](https://sundaymahjong.com/pages/release-schedule) |
 | Sunday Mahjong | Plum Panda tiles (last release before retiring) | re-release | late Feb/early March 2027 | Plum Panda | no | 'Last chance before it retires' angle; tease once dated. | [Release schedule](https://sundaymahjong.com/pages/release-schedule) |
-| Sunday Mahjong | Sunday Emerald Green racks (first run) | launch | no date (schedule no longer says 'around Thanksgiving', Oct 26) | no | no | Rack-pairing story for green album sets once public. | [Release schedule](https://sundaymahjong.com/pages/release-schedule) |
+| Sunday Mahjong | Sunday Emerald Green racks (first run) | launch | in stock (first run); schedule Nov 9 lists without a date | no | no | Rack-pairing story for green album sets once public. | [Release schedule](https://sundaymahjong.com/pages/release-schedule) |
 | Sunday Mahjong | Blonde Tortoise, Candy Blue, Clear, Tortoise, Mini Blonde Tortoise racks; Vegan Leather Mini mat; card sets | re-release | no date | no | no | Watch only. | [Release schedule](https://sundaymahjong.com/pages/release-schedule) |
 | Sunday Mahjong | Peachie Speechie tile set (first run) | launch | no date (new on release schedule, Oct 26) | no | no | Watch; album candidate once dated (no code, non-partner). | [Release schedule (updated Oct 26)](https://sundaymahjong.com/pages/release-schedule) |
 | Sweet Jojo Mahjong | Navy Blue Folk tile set: price drop | sale | 2026-11-03 | no | no | Non-partner: record only. | [email support@sweetjojomahjong.com](https://sweetjojomahjong.com) |
@@ -172,7 +169,7 @@ Updated 2026-11-08 from brand sites, the Sunday release schedule, brand Instagra
 | Virora Mahjong | Tinselle Emerald Green tiles (Christmas Collection I) | restock | LIVE Oct 31 | yes | yes | Holiday album set: restock story frames (assets/social/restock-tinselle-oct31/out) for Tiffany's review; never a feed post. | [restock watchlist (store check)](https://viroramahjong.com/products/tinselle-emerald-green) |
 | Virora Mahjong | Mahjong bags in Emerald Green + Pearl White (clear front, printed lining) | accessories | 2026-11-07 17:00 | no | yes | Accessory: record only. | [IG @viroramahjongofficial](https://www.instagram.com/p/DfaF8KTjAiB/) |
 | Virora Mahjong | Florielle tiles (Rose Red, 4 layers) | restock | 2026-11-07 | no | yes | Restock playbook: reshare + FYM frames assets/social/restock-florielle-nov07 (her review). | [store watch](https://www.viroramahjong.com/products/florielle) |
-| Virora Mahjong | Lilacée tiles (yellow-lilacee listing) | restock | 2026-11-10 | no | yes | No album. Optional restock story on the day with link + code. | [Product page ETA (release scan Nov 2)](https://www.viroramahjong.com/products/yellow-lilacee) |
+| Virora Mahjong | Lilacée tiles (yellow-lilacee listing) | restock | 2026-11-10 17:00 | no | yes | No album. Optional restock story on the day with link + code. | [Product page ETA (release scan Nov 2)](https://www.instagram.com/p/DfgNXkPo43d/) |
 | Virora Mahjong | Nivalee Glacier Blue (Christmas II) preorder | preorder | ships from Nov 15 | no | yes | Holiday tile set; holiday mats only. | [Virora IG Oct 14 + Oct 20](https://www.instagram.com/reel/DesfzYXCEEQ/) |
 | Wren Mats | Christmas Village holiday mat (first batch in stock) | restock | LIVE Sun Nov 8 | no | yes | Partner holiday mat, already in FYM: reshare their reel + code MAHJMATCH sticker; HQ needs/launch-wren-christmas-village-nov08. | [Wren IG reel Nov 8 3:31pm ET + store JSON (both sizes availa](https://www.instagram.com/reel/Dffng5YoZQi/) |
 
@@ -186,7 +183,7 @@ Updated 2026-11-08 from brand sites, the Sunday release schedule, brand Instagra
 - **no commission**: Content value only (no code). Lower priority than partner drops on the same day.
 - **travel mini**: Skip (we never match travel/mini tiles to full-size mats); travel-tiles blog article only.
 
-## Brand newsletters (2026-11-02, mahjmatchmaker@gmail.com)
+## Brand newsletters (2026-11-09, mahjmatchmaker@gmail.com)
 
 Receiving:
 - Oh My Mahjong: info@ohmymahjong.com (customer newsletter)
@@ -202,6 +199,8 @@ Receiving:
 - Tala Mahj: hello@talamahj.com (customer newsletter (first seen Oct 28))
 - Sweet Jojo Mahjong: support@sweetjojomahjong.com (customer newsletter (first seen Oct 30))
 - House of Hearts Studio: jennihorneart@pb08.wixemails.com (customer newsletter (first seen Nov 1))
+- Maison Mahj: hello@maisonmahj.com (customer newsletter / Collector's List (first seen in this scan Nov 3))
+- Mahjong Studios: info@mahjongstudios.com (customer newsletter (welcome 5% off + early Black Friday look; first seen Nov 8))
 
 Not receiving (sign-up needs Tiffany's OK; nothing was signed up):
 - Bam Bird Boutique: https://www.bambirdboutique.com/pages/newsletter-signup-form

@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-08",
- "updatedBy": "partner watch",
+ "updated": "2026-11-09",
+ "updatedBy": "Weekly release calendar refresh (Mon Nov 9, scheduled)",
  "rules": {
   "timing": {
    "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -169,14 +169,14 @@
    "brand": "Sunday Mahjong",
    "product": "Premium Mahjong Mats (all designs, incl. Rattan)",
    "type": "re-release",
-   "window": "'Now' (schedule Updated 2 Nov 2026: restocked, being added to the site as inspected; email list notified once all listed). Next drop on schedule = Premium Mahjong Mats.",
-   "status": "MOSTLY BACK (store check Nov 2 7:50am ET): available = Sunday Premium, Festive Plaid, Gaylord, Plum Panda, Golden Gingham, Vegan Leather + NEW Blue Rattan, Green Gingham, Blue Gingham (published Oct 29). Still sold out/not relisted: Green Rattan, Spring Blooms, Blue Diamond, Retro Plaid, Bold Blooms, Coastal Grandma.",
+   "window": "'Now' (schedule Updated 9 Nov 2026: still 'Next drop = Premium Mahjong Mats (all designs)'; restocked, being added as inspected; email list notified once all listed).",
+   "status": "MOSTLY BACK. Sunday email Nov 8 'Sunday Updates': restocked many mats + new Regular-size vegan leathers (Chestnut, Ruby, Forrest), Blue Gingham, Green Gingham ('perfect for Christmas'), Blue Rattan; brought back Plum Panda, Sunday, Retro Plaid. Store scan Nov 9 7:35am ET: Retro Plaid, Green Rattan, Spring Blooms, Blue Diamond, Bold Blooms, Coastal Grandma show sold out (Retro Plaid likely sold through again).",
    "source": "Release schedule 'Next drop'",
    "sourceUrl": "https://sundaymahjong.com/pages/release-schedule",
    "album": "many album mats (Rattan = works_for_holiday)",
    "affiliate": false,
    "priority": 2,
-   "contentTiming": "Watch daily (email watch already flags Retro Rattan). When live: story + Holiday 'year-round mats that work for the holidays' plug the same day. Oct 28: Rattan (wfh) + Festive Plaid back; Tiffany messaged (Festive Plaid is her personal buy). Nov 2: Retro Rattan holiday reel + story are still HELD in Planoly 'until Sunday relists the Rattan mat': Green Rattan is still sold out; Blue Rattan is live (new design). Social workflow decides whether Blue Rattan works for that reel.",
+   "contentTiming": "Watch daily (email watch already flags Retro Rattan). When live: story + Holiday 'year-round mats that work for the holidays' plug the same day. Oct 28: Rattan (wfh) + Festive Plaid back; Tiffany messaged (Festive Plaid is her personal buy). Nov 2: Retro Rattan holiday reel + story are still HELD in Planoly 'until Sunday relists the Rattan mat': Green Rattan is still sold out; Blue Rattan is live (new design). Social workflow decides whether Blue Rattan works for that reel. Nov 9: Green Rattan still sold out, so the held Retro Rattan reel stays held. Sunday's own note: Retro Plaid = Thanksgiving mat, Green Gingham = Christmas-to-spring (non-partner, no code).",
    "windowStart": "2026-10-28",
    "windowEnd": "2026-11-15"
   },
@@ -189,7 +189,7 @@
    "windowStart": "2026-11-23",
    "windowEnd": "2026-11-30",
    "status": "sold out",
-   "source": "Release schedule: 'restocking around Thanksgiving in limited quantities ... not offered for preorder ... email list notified' (re-checked Nov 2: still 'Around Thanksgiving'; also the site's 'Next tile release')",
+   "source": "Release schedule: 'restocking around Thanksgiving in limited quantities ... not offered for preorder ... email list notified' (re-checked Nov 2: still 'Around Thanksgiving'; also the site's 'Next tile release'); re-checked Nov 9 (Updated 9 Nov 2026): still 'Around Thanksgiving', still the site's 'Next tile release'; Nov 8 email gives no date",
    "sourceUrl": "https://sundaymahjong.com/pages/release-schedule",
    "album": "Sunday Blues",
    "affiliate": false,
@@ -212,14 +212,14 @@
    "affiliate": false,
    "priority": 3,
    "contentTiming": "Optional rack-pairing story for Sunday album sets when it restocks with Sunday Blues; no code (non-partner).",
-   "status": "LIVE 2026-10-22 (sold through); schedule (Nov 2) lists Cola Racks again 'Around Thanksgiving' = next restock"
+   "status": "Small restock LIVE ~Nov 8 (Sunday email Nov 8: 'just had a small restock of our Cola racks'); schedule Nov 9 still lists Cola Racks 'Around Thanksgiving'"
   },
   {
    "id": "sunday-emerald-racks",
    "brand": "Sunday Mahjong",
    "product": "Sunday Emerald Green racks (first run)",
    "type": "launch",
-   "window": "no date (schedule no longer says 'around Thanksgiving', Oct 26)",
+   "window": "in stock (first run); schedule Nov 9 lists without a date",
    "windowStart": null,
    "windowEnd": null,
    "source": "Release schedule",
@@ -227,7 +227,8 @@
    "album": false,
    "affiliate": false,
    "priority": 3,
-   "contentTiming": "Rack-pairing story for green album sets once public."
+   "contentTiming": "Rack-pairing story for green album sets once public.",
+   "status": "LIVE (Sunday email Nov 8: Emerald racks still in stock; now ship with the neutral bag, red special-edition bags sold through)"
   },
   {
    "id": "sunday-december-1994",
@@ -235,14 +236,15 @@
    "product": "December 1994 tiles (Christmas)",
    "type": "re-release",
    "window": "preorders deliver November; leftovers listed late Nov/early Dec",
-   "windowStart": "2026-11-23",
+   "windowStart": "2026-11-25",
    "windowEnd": "2026-12-11",
    "source": "Release schedule",
    "sourceUrl": "https://sundaymahjong.com/pages/release-schedule",
    "album": false,
    "affiliate": false,
    "priority": 2,
-   "contentTiming": "Holiday content: holiday mat matches post when leftovers list (holiday mats only; never single-colour)."
+   "contentTiming": "Holiday content: holiday mat matches post when leftovers list (holiday mats only; never single-colour).",
+   "status": "Preorders SHIPPING (Sunday email Nov 8): batches in order received, one more batch 'any day now', all preorders shipped before end of November; unclaimed sets listed on the site once all preorders ship (schedule Nov 9: 'late Nov / early Dec')."
   },
   {
    "id": "sunday-nature-walk",
@@ -330,7 +332,8 @@
    "album": false,
    "affiliate": false,
    "priority": 3,
-   "contentTiming": "Watch only."
+   "contentTiming": "Watch only.",
+   "status": "Sunday email Nov 8: Blonde Tortoise, Mini Blonde Tortoise, Traditional Tortoise and some Candy Blue racks in stock; Learn to Play / Nature Walk / Peachie Speechie / Plum Panda / Sunday Blues card sets listed (re-release); new Christmas card 4-pack"
   },
   {
    "id": "omm-papaya-vivienne",
@@ -1203,14 +1206,17 @@
    "brand": "Virora Mahjong",
    "product": "Lilacée tiles (yellow-lilacee listing)",
    "type": "restock",
-   "date": "2026-11-10",
-   "status": "sold out; product page 'Expected Stock On November 10, 2026'",
+   "date": "2026-11-10T17:00-08:00",
+   "status": "sold out; restock CONFIRMED Tue Nov 10 5pm PT (IG Nov 8 9pm ET DfgNXkPo43d 'Lilacée in Yellow is coming back'); product page 'Expected Stock On November 10, 2026'",
    "source": "Product page ETA (release scan Nov 2)",
-   "sourceUrl": "https://www.viroramahjong.com/products/yellow-lilacee",
+   "sourceUrl": "https://www.instagram.com/p/DfgNXkPo43d/",
    "album": false,
    "affiliate": true,
    "priority": 3,
-   "contentTiming": "No album. Optional restock story on the day with link + code."
+   "contentTiming": "No album. Optional restock story on the day with link + code.",
+   "window": "Tue Nov 10, 5pm PT",
+   "windowStart": "2026-11-10",
+   "windowEnd": "2026-11-10"
   },
   {
    "id": "plm-black-friday-nov16",
@@ -1730,6 +1736,23 @@
    "affiliate": false,
    "priority": 3,
    "contentTiming": "Non-partner: Brand Watch non-partner list only."
+  },
+  {
+   "id": "sunday-vegan-leather-regular-nov8",
+   "brand": "Sunday Mahjong",
+   "product": "Vegan Leather Mat, Regular size 33in (Chestnut, Ruby, Forrest) - new size",
+   "type": "mat",
+   "date": "2026-11-08",
+   "window": "available now",
+   "windowStart": "2026-11-08",
+   "windowEnd": "2026-11-30",
+   "status": "LIVE (release schedule Nov 9 'available now'; Sunday email Nov 8)",
+   "source": "Release schedule (Updated 9 Nov 2026) + Sunday email Nov 8",
+   "sourceUrl": "https://sundaymahjong.com/pages/release-schedule",
+   "album": false,
+   "affiliate": false,
+   "priority": 3,
+   "contentTiming": "Non-partner, no code. FYM/catalog pass adds the full-size mats if not already in (match-inbox); no dedicated post."
   }
  ],
  "sources": {
@@ -1739,7 +1762,7 @@
   "gmail": "mahjmatchmaker@gmail.com (Gmail connector). tiffanybrie@ is not visible to the connector."
  },
  "newsletters": {
-  "checked": "2026-11-02, mahjmatchmaker@gmail.com",
+  "checked": "2026-11-09, mahjmatchmaker@gmail.com",
   "receiving": [
    {
     "brand": "Oh My Mahjong",
@@ -1805,6 +1828,16 @@
     "brand": "House of Hearts Studio",
     "from": "jennihorneart@pb08.wixemails.com",
     "kind": "customer newsletter (first seen Nov 1)"
+   },
+   {
+    "brand": "Maison Mahj",
+    "from": "hello@maisonmahj.com",
+    "kind": "customer newsletter / Collector's List (first seen in this scan Nov 3)"
+   },
+   {
+    "brand": "Mahjong Studios",
+    "from": "info@mahjongstudios.com",
+    "kind": "customer newsletter (welcome 5% off + early Black Friday look; first seen Nov 8)"
    }
   ],
   "gaps": [
