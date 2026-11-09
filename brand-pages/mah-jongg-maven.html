@@ -1,0 +1,293 @@
+<style>
+.mmbg{--ink:#1e3a5f;--rose:#c8456f;--blush:#fdf2f5;--sand:#faf7f2;--line:#ead9df;max-width:880px;margin:0 auto;background:#fff;padding:36px 40px;border-radius:18px;color:var(--ink);line-height:1.65;font-size:17px}
+.mmbg *{box-sizing:border-box}
+.mmbg h1,.mmbg h2,.mmbg h3,.mmbg p,.mmbg li{color:var(--ink)}
+.mmbg a{color:var(--rose)}
+.mmbg .hero{position:relative;border-radius:20px;overflow:hidden;background:var(--sand)}
+.mmbg .hero img{display:block;width:100%;height:360px;object-fit:cover}
+.mmbg .hero-txt{padding:28px 36px 30px;background:#fff;margin:-70px 24px 0;position:relative;border-radius:16px;box-shadow:0 8px 30px rgba(30,58,95,.10)}
+.mmbg .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.72em;font-weight:700;color:var(--rose);margin:0 0 6px}
+.mmbg h1{font-size:2.3em;line-height:1.15;margin:0 0 10px}
+.mmbg .dek{font-size:1.08em;margin:0;opacity:.9}
+.mmbg section{margin:46px 0}
+.mmbg h2{font-size:1.55em;margin:0 0 14px;line-height:1.25}
+.mmbg .note{background:var(--sand);border-left:4px solid var(--rose);border-radius:0 14px 14px 0;padding:22px 26px}
+.mmbg .note p{margin:0 0 12px}.mmbg .note p:last-child{margin:0}
+.mmbg .sig{font-style:italic;font-weight:600}
+.mmbg .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.mmbg .card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.mmbg .card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--sand)}
+.mmbg .card .in{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.mmbg .card h3{font-size:1.08em;margin:0}
+.mmbg .card p{margin:0;font-size:.95em}
+.mmbg .card .go{margin-top:auto;font-weight:700;text-decoration:none;font-size:.92em}
+.mmbg .tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.mmbg .tiles a{text-decoration:none;color:var(--ink)}
+.mmbg .tiles img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;display:block}
+.mmbg .tiles span{display:block;font-weight:600;font-size:.92em;margin-top:6px}
+.mmbg .feat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;padding:0;margin:0}
+.mmbg .feat li{margin:0}
+.mmbg .feat a{display:block;padding:14px 16px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);background:#fff}
+.mmbg .feat a b{display:block;color:var(--rose);font-size:.75em;text-transform:uppercase;letter-spacing:.1em}
+.mmbg .perk{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--blush);border-radius:16px;padding:20px 24px}
+.mmbg .perk p{margin:0}
+.mmbg .perk .code{font-weight:800;letter-spacing:.08em;color:var(--rose)}
+.mmbg .btn{display:inline-block;background:var(--rose);color:#fff!important;padding:11px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.95em}
+.mmbg details{border-bottom:1px solid var(--line);padding:12px 0}
+.mmbg summary{cursor:pointer;font-weight:700}
+.mmbg details p{margin:8px 0 0}
+.mmbg .more{display:flex;flex-wrap:wrap;gap:8px}
+.mmbg .more a{border:1px solid var(--line);border-radius:999px;padding:6px 14px;text-decoration:none;font-size:.88em;color:var(--ink);background:#fff}
+.mmbg .small{font-size:.82em;opacity:.75}
+@media(max-width:700px){.mmbg{font-size:16px;padding:22px 16px}.mmbg .hero img{height:230px}.mmbg .hero-txt{margin:-40px 12px 0;padding:20px}.mmbg h1{font-size:1.8em}.mmbg .grid,.mmbg .feat{grid-template-columns:1fr}.mmbg .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.mmbg .me{display:flex;gap:16px;align-items:center;margin:0 0 16px}.mmbg .me img{width:76px;height:76px;border-radius:50%;object-fit:cover;flex:0 0 76px;border:3px solid #fff;box-shadow:0 2px 10px rgba(30,58,95,.15)}.mmbg .me strong{display:block;font-size:1.05em}.mmbg .me span{display:block;font-size:.88em;opacity:.8}
+
+
+.mmbg .tiles.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.mmbg .tiles small{display:block;font-size:.8em;margin-top:2px}
+.mmbg .tiles small a{color:var(--rose);font-weight:600}
+@media(max-width:700px){.mmbg .tiles.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<div class="mmbg">
+<div class="hero">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2026/02/MahjInBloom_final-scaled.jpg?w=1500&ssl=1" style="object-position:50% 50%" alt="Mah Jongg Maven Mahj in Bloom engraved and hand painted mahjong tiles">
+<div class="hero-txt">
+<p class="eyebrow">Brand guide</p>
+<h1>Mah Jongg Maven</h1>
+<p class="dek">Engraved and hand painted American Mah Jongg tiles with colorful flair, plus mats and racks. Plus, my Mah Jongg Maven discount code for readers.</p>
+</div>
+</div>
+<div class="perk perk-top" style="margin:22px 0 4px">
+<p><strong>A thank-you for Mahj Matchmaker readers:</strong> use code <span class="code">MAHJMATCH</span> for 5% off at Mah Jongg Maven.</p>
+<p style="font-size:14px;opacity:.75;margin:6px 0 14px">&#10003; Mah Jongg Maven discount code: MAHJMATCH &middot; 5% off (not valid on NMJL cards or custom Jokers) &middot; verified November 9, 2026</p>
+<a class="btn" href="https://mahjonggmaven.com/" target="_blank" rel="noopener">Visit Mah Jongg Maven</a>
+</div>
+<section>
+<h2>About Mah Jongg Maven</h2>
+<div class="note">
+<p>For more than 28 years, Mah Jongg Maven has made engraved and hand painted Mah Jongg sets that keep the traditional suits everyone knows, with color and personality layered on top. They built the business through a printed catalog long before online shopping, and today offer more than 30 tile sets and colorways.</p>
+<p>Their best sellers are the 3 layer Sparkle sets and the sets with jewel-tone ink in pink, turquoise and royal blue. They also make custom Joker tiles for many sets, and their newest collections are artist-inspired, like Mahj in Bloom with artist Lorra Kurtz. You&rsquo;ll find mats, racks, cases and accessories there too.</p>
+</div>
+</section>
+<p>Here are the Mah Jongg Maven tiles, mats and racks I&rsquo;d look at first.</p>
+<section>
+<h2>Mah Jongg Maven tiles</h2>
+<div class="grid">
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2025/02/Purple-Amythyst-sparkle-1-scaled.jpg?w=700&ssl=1" alt="Mah Jongg Maven Amethyst Sparkle, 3 layer mahjong tiles" loading="lazy">
+<div class="in">
+<h3>Amethyst Sparkle, 3 layer</h3>
+<p>Sparkle tiles with jewel-tone pink, turquoise and light blue ink. $250.</p>
+<a class="go" href="https://mahjonggmaven.com/product/3-layer-amythyst-sparkle-mah-jongg-tiles-with-pink-turquoise-light-blue-ink/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2025/09/blue-glitter-singl-scaled.jpg?w=700&ssl=1" alt="Mah Jongg Maven Dark Blue Sparkle, 3 layer mahjong tiles" loading="lazy">
+<div class="in">
+<h3>Dark Blue Sparkle, 3 layer</h3>
+<p>Sparkle tiles; choose jewel-tone or primary ink. $250.</p>
+<a class="go" href="https://mahjonggmaven.com/product/dark-blue-sparkle-engraved-hand-painted-american-mah-jongg-tile-set-with-turquoise-pink-blue-ink/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2025/09/deep-lake-sing-scaled.jpg?w=700&ssl=1" alt="Mah Jongg Maven Midnight Blue with jewel-tone ink, 3 layer mahjong tiles" loading="lazy">
+<div class="in">
+<h3>Midnight Blue with jewel-tone ink, 3 layer</h3>
+<p>Deep blue tiles with turquoise, pink and royal blue ink. $250.</p>
+<a class="go" href="https://mahjonggmaven.com/product/3-layer-deep-lake-blue-tiles-with-turquoise-pink-royal-blue-ink-american-mah-jongg-set/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2025/09/teal-green-sing-scaled.jpg?w=700&ssl=1" alt="Mah Jongg Maven Teal Green Jelly, 3 layer mahjong tiles" loading="lazy">
+<div class="in">
+<h3>Teal Green Jelly, 3 layer</h3>
+<p>Jelly-style tiles with turquoise, pink and royal blue ink. $250.</p>
+<a class="go" href="https://mahjonggmaven.com/product/3-layer-teal-green-engraved-and-hand-painted-american-mah-jongg-tile-set-with-turquoise-pink-blue-ink/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2025/09/royal-purple-single-scaled.jpg?w=700&ssl=1" alt="Mah Jongg Maven Royal Purple Jelly, 3 layer mahjong tiles" loading="lazy">
+<div class="in">
+<h3>Royal Purple Jelly, 3 layer</h3>
+<p>Jelly-style tiles with turquoise, pink and blue ink. $250.</p>
+<a class="go" href="https://mahjonggmaven.com/product/3-layer-royal-purple-engraved-hand-painted-american-mah-jongg-tile-set-turquoise-pink-blue-ink/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2026/11/Pink-Leopard-scaled.jpeg?w=700&ssl=1" alt="Mah Jongg Maven Pink Leopard, 3 layer mahjong tiles" loading="lazy">
+<div class="in">
+<h3>Pink Leopard, 3 layer</h3>
+<p>Engraved and hand painted. $250.</p>
+<a class="go" href="https://mahjonggmaven.com/product/3-layer-pink-leopard-mah-jongg-set/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2026/02/MahjInBloom_final-scaled.jpg?w=700&ssl=1" alt="Mah Jongg Maven Mahj in Bloom mahjong tiles" loading="lazy">
+<div class="in">
+<h3>Mahj in Bloom (artist collaboration)</h3>
+<p>Made with artist Lorra Kurtz; each tile draws on her paintings. $375.</p>
+<a class="go" href="https://mahjonggmaven.com/product/mahj-in-bloom-artist-inspired-american-mah-jongg-set/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2025/09/Orange-tiles--scaled.jpeg?w=700&ssl=1" alt="Mah Jongg Maven Royal Garden, Orange Red mahjong tiles" loading="lazy">
+<div class="in">
+<h3>Royal Garden, Orange Red (artist-inspired)</h3>
+<p>A fresh take on the traditional suits; standard size, fits 18" racks. $350.</p>
+<a class="go" href="https://mahjonggmaven.com/product/royal-garden-series-artist-inspired-3-layer-orange-red-american-mah-jongg-set/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Mah Jongg Maven mats</h2>
+<div class="grid">
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2026/07/mahj-in-bloom-pink-scaled.jpeg?w=700&ssl=1" alt="Mah Jongg Maven Colorful Floral, Pink Center mahjong mat" loading="lazy">
+<div class="in">
+<h3>Colorful Floral, Pink Center</h3>
+<p>34" x 34". $65.</p>
+<a class="go" href="https://mahjonggmaven.com/product/mahj-in-bloom-floral-mat-with-pink-center-34-x-34/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2026/07/mahjj-in-bloom-green-scaled.jpeg?w=700&ssl=1" alt="Mah Jongg Maven Colorful Floral, Olive Green Center mahjong mat" loading="lazy">
+<div class="in">
+<h3>Colorful Floral, Olive Green Center</h3>
+<p>34" x 34". $65.</p>
+<a class="go" href="https://mahjonggmaven.com/product/mahj-in-bloom-floral-mat-with-green-center-34-x-34/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2025/12/navy-center-mat-scaled.jpg?w=700&ssl=1" alt="Mah Jongg Maven Pink Flower, Navy Center mahjong mat" loading="lazy">
+<div class="in">
+<h3>Pink Flower, Navy Center</h3>
+<p>34" x 34". $65.</p>
+<a class="go" href="https://mahjonggmaven.com/product/pink-flower-mat-with-navy-center-34x34-mah-jongg-mat/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2025/10/Screenshot-2025-10-30-at-10.58.21-PM.png?w=700&ssl=1" alt="Mah Jongg Maven Leopard mahjong mat" loading="lazy">
+<div class="in">
+<h3>Leopard</h3>
+<p>34" x 34". $65.</p>
+<a class="go" href="https://mahjonggmaven.com/product/leopard-design-mah-jongg-mat-34x34/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2026/06/royal-blue-peace-mat.jpg?w=700&ssl=1" alt="Mah Jongg Maven Peace, Love mahjong mat" loading="lazy">
+<div class="in">
+<h3>Peace, Love</h3>
+<p>34" x 34". $85.</p>
+<a class="go" href="https://mahjonggmaven.com/product/peace-love-mah-jongg-game-mat-34x-34/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2026/06/blue-tye-die.jpg?w=700&ssl=1" alt="Mah Jongg Maven Colorful Tie Dye mahjong mat" loading="lazy">
+<div class="in">
+<h3>Colorful Tie Dye</h3>
+<p>34" x 34". $85.</p>
+<a class="go" href="https://mahjonggmaven.com/product/colorful-tye-dye-mah-jongg-game-mat-34x-34/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>For the holidays</h2>
+<div class="grid">
+<div class="card">
+<img src="https://mahjonggmaven.com/wp-content/uploads/2026/11/MM-Hanukkah-Mat-pdf.jpg" alt="Mah Jongg Maven Menorah Hanukkah Mat mahjong holiday" loading="lazy">
+<div class="in">
+<h3>Menorah Hanukkah Mat</h3>
+<p>Blue, gold and green menorah; 34" x 34" neoprene. $95.</p>
+<a class="go" href="https://mahjonggmaven.com/product/menorah-hanukkah-mah-jongg-mat/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://mahjonggmaven.com/wp-content/uploads/2026/11/Dreidel-Mat-pdf.jpg" alt="Mah Jongg Maven Dreidel Hanukkah Mat mahjong holiday" loading="lazy">
+<div class="in">
+<h3>Dreidel Hanukkah Mat</h3>
+<p>34" x 34". $95.</p>
+<a class="go" href="https://mahjonggmaven.com/product/dreidel-hanukkah-mah-jongg-mat/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2026/09/Santa-1-scaled.jpeg?w=700&ssl=1" alt="Mah Jongg Maven Sparkle Santa Christmas tiles mahjong holiday" loading="lazy">
+<div class="in">
+<h3>Sparkle Santa Christmas tiles</h3>
+<p>Engraved and hand painted holiday set. $450.</p>
+<a class="go" href="https://mahjonggmaven.com/product/sparkle-santa-christmas-mahjong-set-for-christmas-engraved-and-hand-painted/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Mah Jongg Maven racks</h2>
+<div class="grid">
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2024/09/pink-racks-scaled.jpeg?w=700&ssl=1" alt="Mah Jongg Maven Pink Transparent Racks mahjong racks" loading="lazy">
+<div class="in">
+<h3>Pink Transparent Racks (set of 4)</h3>
+<p>Attached straight pusher with adjustable tension. $65.</p>
+<a class="go" href="https://mahjonggmaven.com/product/pink-transparent-racks-with-attached-pushers/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2024/09/Turqoise-.png?w=700&ssl=1" alt="Mah Jongg Maven Turquoise Racks mahjong racks" loading="lazy">
+<div class="in">
+<h3>Turquoise Racks (set of 4)</h3>
+<p>Attached pushers. $65.</p>
+<a class="go" href="https://mahjonggmaven.com/product/turquoise-racks-with-attached-helping-hands-pushers/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2022/10/Purple-racks-scaled.jpeg?w=700&ssl=1" alt="Mah Jongg Maven Purple Transparent Racks mahjong racks" loading="lazy">
+<div class="in">
+<h3>Purple Transparent Racks (set of 4)</h3>
+<p>Attached pushers. $65.</p>
+<a class="go" href="https://mahjonggmaven.com/product/lavender-mahjong-racks-with-attached-pushers/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://i0.wp.com/mahjonggmaven.com/wp-content/uploads/2023/04/Oak-Racks--scaled.jpeg?w=700&ssl=1" alt="Mah Jongg Maven Handcrafted Oak Racks mahjong racks" loading="lazy">
+<div class="in">
+<h3>Handcrafted Oak Racks</h3>
+<p>Three wood stains. $250.</p>
+<a class="go" href="https://mahjonggmaven.com/product/hand-made-oak-wooden-racks-3-colors-available-natural-medium-dark-see-pictures/" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Mah Jongg Maven Discount Code</h2>
+<div class="perk">
+<p><strong>A thank-you for Mahj Matchmaker readers:</strong> use code <span class="code">MAHJMATCH</span> for 5% off at Mah Jongg Maven. It works on everything except NMJL cards and custom Jokers.</p>
+<a class="btn" href="https://mahjonggmaven.com/" target="_blank" rel="noopener">Visit Mah Jongg Maven</a>
+</div>
+</section>
+<section>
+<h2>Questions about Mah Jongg Maven</h2>
+<details><summary>Is there a Mah Jongg Maven discount code?</summary><p>Yes. Use code MAHJMATCH at checkout on mahjonggmaven.com for 5% off. It works on everything except NMJL cards and custom Jokers.</p></details>
+<details><summary>What is Mah Jongg Maven known for?</summary><p>Engraved and hand painted American Mah Jongg tile sets that honor the traditional suits with colorful flair, made for more than 28 years. Their best sellers are the 3 layer Sparkle and jewel-tone ink sets.</p></details>
+<details><summary>Can I customize the Jokers?</summary><p>Yes. Mah Jongg Maven offers custom Joker tiles for many of its sets, so you can personalize your set. The discount code does not apply to custom Jokers.</p></details>
+<details><summary>Does Mah Jongg Maven sell mats and racks too?</summary><p>Yes. They carry 34" x 34" Mah Jongg mats (including Hanukkah designs), acrylic racks with attached pushers in many colors, handcrafted wooden racks, bags, cases and accessories.</p></details>
+<details><summary>Does the code work on NMJL cards?</summary><p>No. The MAHJMATCH discount does not apply to National Mah Jongg League cards or custom Jokers.</p></details>
+<details><summary>Can I combine the code with other offers?</summary><p>Most shops allow one discount code per order, so the code usually can&rsquo;t be combined with a sale or another code.</p></details>
+</section>
+<section>
+<h2>More brands I love</h2>
+<div class="more">
+<a href="/oh-my-mahjong-discount-code">Oh My Mahjong</a>
+<a href="/miss-mahjong-discount-code">Miss Mahjong</a>
+<a href="/my-fair-mahjong-discount-code">My Fair Mahjong</a>
+<a href="/bird-and-bamboo-discount-code">Bird &amp; Bamboo</a>
+<a href="/mahj-mood-discount-code">Mahj Mood</a>
+<a href="/yolo-mahjong-discount-code">YOLO Mahjong</a>
+<a href="/noli-june-discount-code">Noli June</a>
+<a href="/mahj-pit-discount-code">Mahj Pit</a>
+<a href="/mahjong-discount-codes">All brands &rarr;</a>
+</div>
+</section>
+<p class="small">Mahj Matchmaker may earn a commission when you use my code, at no extra cost to you. Thank you for supporting the tile match mock-ups and inspiration I share with the community.</p>
+</div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is there a Mah Jongg Maven discount code?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Use code MAHJMATCH at checkout on mahjonggmaven.com for 5% off. It works on everything except NMJL cards and custom Jokers."}}, {"@type": "Question", "name": "What is Mah Jongg Maven known for?", "acceptedAnswer": {"@type": "Answer", "text": "Engraved and hand painted American Mah Jongg tile sets that honor the traditional suits with colorful flair, made for more than 28 years. Their best sellers are the 3 layer Sparkle and jewel-tone ink sets."}}, {"@type": "Question", "name": "Can I customize the Jokers?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Mah Jongg Maven offers custom Joker tiles for many of its sets, so you can personalize your set. The discount code does not apply to custom Jokers."}}, {"@type": "Question", "name": "Does Mah Jongg Maven sell mats and racks too?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. They carry 34\" x 34\" Mah Jongg mats (including Hanukkah designs), acrylic racks with attached pushers in many colors, handcrafted wooden racks, bags, cases and accessories."}}, {"@type": "Question", "name": "Does the code work on NMJL cards?", "acceptedAnswer": {"@type": "Answer", "text": "No. The MAHJMATCH discount does not apply to National Mah Jongg League cards or custom Jokers."}}]}</script>

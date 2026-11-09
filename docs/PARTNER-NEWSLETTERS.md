@@ -58,4 +58,5 @@ Shopify footer forms submitted by script or Enter do NOT confirm (page shows an 
 | Wren Mats | wrenmats.com | signed up 2026-11-08 (Squarespace footer form, "Thank you!") |
 | Splash of Color | splashofcolorco.com | FAILED 2026-11-08 (store splashofcolorco.com; footer hCaptcha; its popup is a loyalty ACCOUNT signup, not used). Tiffany 10s |
 | Yellow Mountain Imports | ymimports.com | signed up 2026-11-08 (footer form, "Thanks for joining us"; confirmation email pending) (never featured on social) |
+| Mah Jongg Maven | mahjonggmaven.com | NOT YET (onboarding run Nov 9: Chrome offline). Footer box "subscribe to our newsletter!" (WordPress/Elementor). DESK OPS line |
 | Mahjong Row & Co. | - | EXCLUDED (out Nov 6) |
