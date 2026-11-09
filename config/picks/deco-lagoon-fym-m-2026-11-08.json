@@ -1,0 +1,301 @@
+{
+ "_about": "Deco (Lagoon) (Bam Bird Boutique) Tiffany's-match list for FYM 1.19, in her FINAL album order (review round 1, Nov 8 6:19pm, + her 6:20-6:25pm bring-ins at colour rank; A YES IS A YES). Applied by builder/fym_fix_nov08/deco_lagoon_m119.py: set 'bam-bird-boutique-deco' m = these keys in this order (racks []), written to locks too. 'pending' keys arrive in 1.19 from the catalog adds listed in src: apply those first.",
+ "set": "bam-bird-boutique-deco",
+ "album": "https://www.mahjmatchmaker.com/deco-lagoon-mahjong-tile-matches",
+ "m": [
+  {
+   "order": 1,
+   "pick": "Deco Dragon (Mulberry) (Bam Bird Boutique)",
+   "key": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098347829",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 2,
+   "pick": "Reba (Britt Mills)",
+   "key": "brittmillsdesign.com/reba-neoprene-mahjong-mat",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 3,
+   "pick": "Viola (Britt Mills)",
+   "key": "brittmillsdesign.com/viola-neoprene-mahjong-mat-arriving-late-october",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 4,
+   "pick": "Lady Luck's Teal Lounge (Splash of Color)",
+   "key": "splashofcolorco.com/art-deco-mahjong-mat-lady-luck-s-teal-lounge",
+   "holiday": false,
+   "src": "config/fym-catalog-adds-nov08-lagoon.json"
+  },
+  {
+   "order": 5,
+   "pick": "Sapphire Blooms (Lemondrop Mahjong Co)",
+   "key": "lemondropmahjongco.com/sapphire-blooms-mahjong-mat",
+   "holiday": false,
+   "src": "config/fym-catalog-adds-nov08-lagoon.json"
+  },
+  {
+   "order": 6,
+   "pick": "Pretty in Plum Premium (Mahjong Register)",
+   "key": "mahjongregister.com/preorder-buttercup-cherie-premium-mahjong-mat-33-estimated-ship-oct-30th-copy",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 7,
+   "pick": "Gilded Peacock (Bougie Mahjong)",
+   "key": "bougiemahjong.com/gilded-peacock-mahjong-mat",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 8,
+   "pick": "Spring Blooms Premium (Sunday Mahjong)",
+   "key": "sundaymahjong.com/spring-blooms-premium-mahjong-mat",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 9,
+   "pick": "YOTD Black (Bespoke Mahjong)",
+   "key": "www.bespokemahjong.com/year-of-the-dragon-black",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 10,
+   "pick": "Deco Neoprene (Bam Bird Boutique)",
+   "key": "www.bambirdboutique.com/deco-neoprene-mahjong-mat",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 11,
+   "pick": "Crane Cloud (Silk Mahjong)",
+   "key": "silkmahjong.com/mahjong-mat-2994012",
+   "holiday": false,
+   "src": "config/fym-catalog-adds-nov08-lagoon.json"
+  },
+  {
+   "order": 12,
+   "pick": "Dark Blue Art Deco, Gold Fans (Dreamframer Art)",
+   "key": "www.etsy.com/listing/4491199204/dark-blue-art-deco-gold-geometric-fans",
+   "holiday": false,
+   "src": "config/fym-shopmy-catalog-refresh-nov08.json"
+  },
+  {
+   "order": 13,
+   "pick": "Peony Sociale Premium (Mahjong Register)",
+   "key": "mahjongregister.com/paisley-jubilee-premium-mahjong-mat-33-copy",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 14,
+   "pick": "Wren (Britt Mills)",
+   "key": "brittmillsdesign.com/wren-neoprene-mahjong-mat",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 15,
+   "pick": "Flora (Britt Mills)",
+   "key": "brittmillsdesign.com/flora-neoprene-mahjong-mat",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 16,
+   "pick": "Fête (Peacock) (Betty June & Jeannette)",
+   "key": "www.etsy.com/listing/4568416056/f-te-peacock",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 17,
+   "pick": "Eden (Britt Mills)",
+   "key": "brittmillsdesign.com/eden-neoprene-mahjong-mat",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 18,
+   "pick": "Scarlett (Britt Mills)",
+   "key": "brittmillsdesign.com/scarlett-neoprene-mahjong-mat",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 19,
+   "pick": "Mahj In Bloom Mat (Mahj Mood)",
+   "key": "mahjmood.com/mahj-in-bloom-mat",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 20,
+   "pick": "Caroline in Peacock (Mahj & Vine)",
+   "key": "mahjandvine.com/caroline-in-peacock",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 21,
+   "pick": "Crane & Moon (YOLO Mahjong)",
+   "key": "www.yolomahjong.com/crane-moon-mahjong-mat-floral-chinese-mahjong-table-mat-for-mahjong-set-31-5-x-31-5-inch",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 22,
+   "pick": "Deco Dragon (Indigo) (Bam Bird Boutique)",
+   "key": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098282293",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 23,
+   "pick": "Gatsby's Feathered Affair (Anders Ruff)",
+   "key": "shop.andersruff.com/gatsbys-feathered-affair-mahjong-mat",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 24,
+   "pick": "Ruby (Britt Mills)",
+   "key": "brittmillsdesign.com/ruby-neoprene-mahjong-mat",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 25,
+   "pick": "Midnight Peacock (Anders Ruff)",
+   "key": "shop.andersruff.com/midnight-peacock-mahjong-mat",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 26,
+   "pick": "Floral Affair (Lemondrop Mahjong Co)",
+   "key": "lemondropmahjongco.com/floral-affair-mat",
+   "holiday": false,
+   "src": "config/fym-catalog-adds-nov08-lagoon.json"
+  },
+  {
+   "order": 27,
+   "pick": "Ocean Florals (Let's Be Besties)",
+   "key": "letsbebesties.com/ocean-florals-mahjong-mat",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 28,
+   "pick": "Year of the Snake (Wren Mats)",
+   "key": "www.wrenmats.com/year-of-the-snake-mat",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 29,
+   "pick": "Garden Party – Mulberry (My Fair Mahjong)",
+   "key": "myfairmahjong.com/mat-garden-party-mulberry",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 30,
+   "pick": "East Meets West – Magenta (Bam Bird Boutique)",
+   "key": "www.bambirdboutique.com/east-meets-west-neoprene-mat?v=49857170735413",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 31,
+   "pick": "Jade (Oh My Mahjong)",
+   "key": "www.ohmymahjong.com/jade-mat-in-tube",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 32,
+   "pick": "Hawthorne (Oh My Mahjong)",
+   "key": "www.ohmymahjong.com/hawthorne-mat-in-tube",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 33,
+   "pick": "White Lotus (Mahj Tile Haus)",
+   "key": "mahjtilehaus.com/white-lotus-mat",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 34,
+   "pick": "Plum Panda Premium (Sunday Mahjong)",
+   "key": "sundaymahjong.com/plum-panda-premium-mahjong-mat",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 35,
+   "pick": "Deco Dragon (Lagoon) (Bam Bird Boutique)",
+   "key": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098315061",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 36,
+   "pick": "Brightside (My Fair Mahjong)",
+   "key": "myfairmahjong.com/mahjong-mat-brightside-33-x-33",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 37,
+   "pick": "Gatsby Glow (Let's Be Besties)",
+   "key": "letsbebesties.com/gatsby-glow-mahjong-mat",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": 38,
+   "pick": "SoHo (Oh My Mahjong)",
+   "key": "alb:drake:SoHo",
+   "holiday": false,
+   "src": "fym118"
+  },
+  {
+   "order": null,
+   "pick": "Winter Jewel (Let's Be Besties)",
+   "key": "letsbebesties.com/winter-jewel-neoprene-mahjong-mat",
+   "holiday": true,
+   "src": "fym118"
+  },
+  {
+   "order": null,
+   "pick": "Yuletide (Oh My Mahjong)",
+   "key": "www.ohmymahjong.com/yuletide-mat-in-tube",
+   "holiday": true,
+   "src": "fym118"
+  },
+  {
+   "order": null,
+   "pick": "Poinsettia Party (Soirée All Day)",
+   "key": "soireeallday.co/poinsettia-party-mahjong-mat",
+   "holiday": true,
+   "src": "fym118"
+  }
+ ],
+ "pending_keys": [
+  "splashofcolorco.com/art-deco-mahjong-mat-lady-luck-s-teal-lounge",
+  "lemondropmahjongco.com/sapphire-blooms-mahjong-mat",
+  "silkmahjong.com/mahjong-mat-2994012",
+  "www.etsy.com/listing/4491199204/dark-blue-art-deco-gold-geometric-fans",
+  "lemondropmahjongco.com/floral-affair-mat"
+ ]
+}

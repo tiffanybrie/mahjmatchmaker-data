@@ -3217,5 +3217,29 @@
    "brand": "Charleston Mahjong Club",
    "why": "Tiffany 6:24pm: go.shopmy.us/p-102728618 was the wrong link; she did not mean to bring it in"
   }
- ]
+ ],
+ "live": {
+  "at": "2026-11-08T19:35:00-05:00",
+  "url": "https://www.mahjmatchmaker.com/deco-lagoon-mahjong-tile-matches",
+  "cards": 41,
+  "main": 38,
+  "holiday": 3,
+  "brands": 21,
+  "block": "site/livepatch/deco-lagoon-album-nov08/deco-lagoon-codeblock.html @a5cc037e (images @24f5e814)",
+  "squarespace": "page duplicated from Juniper; title/nav/slug/SEO set",
+  "verify": "curl 200, 41 cards (3 holiday), 46/46 images 200, 0 Juniper strings, holiday_numbering 0 problems",
+  "checklist": {
+   "albums_index": "latest first + end of Blue grid",
+   "colour_page": "/blue-mahjong-tile-matches first",
+   "brand_page": "/bam-bird-boutique-discount-code album link first",
+   "links": "latest-album card + strip first (FYM card stays first)",
+   "google": "Request indexing done Nov 8",
+   "pinterest": "album + guide + 4 cards queued",
+   "hq": "hq/albums updated",
+   "fym": "config/picks/deco-lagoon-fym-m-2026-11-08.json + builder/fym_fix_nov08/deco_lagoon_m119.py for 1.19",
+   "social": "handed to the social owner (DESK)",
+   "emails": "new-albums email + album-request contacts: DESK/OVERDUE"
+  },
+  "stock": "bambirdboutique.com deco-tile-set.js Nov 8: Lagoon variants available ($350-370), Indigo sold out"
+ }
 }

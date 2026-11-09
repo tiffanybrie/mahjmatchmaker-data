@@ -284,6 +284,39 @@
    "price": "$80",
    "route": "none (pending UpPromote approval, then code-site)",
    "note": "Deco Lagoon album add (Nov 8 research redo)"
+  },
+  {
+   "key": "splashofcolorco.com/art-deco-mahjong-mat-lady-luck-s-teal-lounge",
+   "name": "Lady Luck's Teal Lounge",
+   "brand": "Splash of Color",
+   "b": "Splash of Color",
+   "pa": true,
+   "u": "https://splashofcolorco.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fart-deco-mahjong-mat-lady-luck-s-teal-lounge%3Fsca_ref%3D10059443.c9rDRhYNIB31oxJN",
+   "product_url": "https://splashofcolorco.com/products/art-deco-mahjong-mat-lady-luck-s-teal-lounge",
+   "img": "assets/colorcards/deco/mats/splash-of-color-lady-lucks-teal-lounge.jpg",
+   "box": [
+    0,
+    0,
+    740,
+    748
+   ],
+   "src": "album colour-card photo (Deco Lagoon card)",
+   "hol": false,
+   "hid": false,
+   "reason": "",
+   "colours": {
+    "blue": 49.5,
+    "brown": 24.9,
+    "neutral": 14.5,
+    "earthy": 6.1,
+    "teal": 1.6,
+    "yellow": 1.1,
+    "green": 1.1,
+    "orange": 1.1,
+    "pink": 0.1
+   },
+   "route": "code-site",
+   "note": "Partner mat in her Deco Lagoon album (#4, added after her review Nov 8 3:20pm); not in FYM 1.18"
   }
  ]
 }

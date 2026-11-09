@@ -249,10 +249,25 @@
   },
   "Lemondrop Mahjong Co": {
    "route": "none",
-   "store_hosts": [],
+   "store_hosts": [
+    "lemondropmahjongco.com"
+   ],
    "commission_pct": 0,
-   "notes": "applied (UpPromote), waiting for approval (Nov 8): route none until approved, then code-site; Sapphire Blooms is a Lagoon add",
-   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+   "notes": "applied (UpPromote), waiting for approval (Nov 8): route none until approved, then code-site. Deco Lagoon album uses plain product links for Sapphire Blooms (#5, her bring-in) and Floral Affair (#26).",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm",
+   "pending_swap": {
+    "status": "pending",
+    "why": "Tiffany Nov 8 6:20pm: link to the product page for now; swap to her affiliate link when Lemondrop approves her (UpPromote)",
+    "links": [
+     "https://lemondropmahjongco.com/products/sapphire-blooms-mahjong-mat",
+     "https://lemondropmahjongco.com/products/floral-affair-mat"
+    ],
+    "where": [
+     "https://www.mahjmatchmaker.com/deco-lagoon-mahjong-tile-matches (code block site/livepatch/deco-lagoon-album-nov08)",
+     "config/fym-catalog-adds-nov08-lagoon.json (FYM 1.19 + gallery)"
+    ],
+    "on_approval": "route -> code-site; links -> https://lemondropmahjongco.com/discount/MAHJMATCH?redirect=/products/<handle> (+ her ref param if UpPromote gives one); add to partners list + brand page; rebuild the Lagoon block and re-render the 2 cards with the 10% band if the % is known"
+   }
   },
   "Let's Be Besties": {
    "route": "code-site",
@@ -588,8 +603,13 @@
     "silkmahjong.com"
    ],
    "commission_pct": 0,
-   "notes": "no affiliate program; whole line in as non-partner (Tiffany Nov 8 6:25pm, Lagoon add). ShopMy not checked yet",
-   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
+   "notes": "no affiliate program on silkmahjong.com (custom Next.js store, no affiliate app/page; Tiffany 6:25pm: none); whole line in as non-partner (8 mats, leatherette or neoprene twins in one listing). Crane Cloud = Deco Lagoon #11. ShopMy: NOT YET CHECKED (get_merchant_data returned 401 from Claude's tab Nov 8 ~7:40pm; docs/OVERDUE.md). Etsy: no Silk Mahjong shop found (etsy.com blocks curl; check in Chrome with the ShopMy check). Switch to a paid route when found.",
+   "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm",
+   "check": {
+    "shopmy": "pending (OVERDUE)",
+    "etsy": "pending (OVERDUE)",
+    "affiliate": "none found on site (Nov 8)"
+   }
   },
   "Soirée All Day": {
    "route": "code-site",
