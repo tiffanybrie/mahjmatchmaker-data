@@ -59,7 +59,10 @@ HOLTILE = {'dear-santa': 'assets/tiles/holiday/dear-santa.jpg', 'nutcracker-ball
            'tinselle-ruby': 'assets/tiles/holiday/tinselle-ruby-3x3.jpg', 'rackin-rudolph': 'assets/tiles/holiday/rackin-rudolph.jpg',
            'nivalee-blue': 'assets/tiles/holiday/nivalee-blue.jpg', 'cmc-apres-ski': 'assets/tiles/holiday/cmc-apres-ski.jpg',
            'december-1994': 'assets/tiles/sunday_mahjong_december_1994_tilebox_CARD-ONLY-edited.jpg'}
-TILEFILE = {'tortoise': 'assets/tiles/album/classic-tortoise-cream.jpg', 'sunday-tile-set': 'assets/tiles/album/sunday-tile-set.png'}
+# Nov 9: Tortoise tiles lie LOOSE on the mat (her Oct 17 rule): the transparent PNG, never the cream-backed JPG (that drew a
+# big cream box on 9 live Tortoise cards). LOOSE sets get tile_mode 'loose'; gen2 refuses a loose tile file without transparency.
+LOOSE = {'tortoise'}
+TILEFILE = {'tortoise': 'assets/tiles/album/classic-tortoise.png', 'sunday-tile-set': 'assets/tiles/album/sunday-tile-set.png'}
 def page_key(u):  # 'lola' / 'holiday#dear-santa'
     p = u.replace(SITE, '').strip('/').split('#')
     return ('holiday#' + p[1]) if len(p) > 1 else p[0].replace('-mahjong-tile-matches', '')
@@ -184,7 +187,7 @@ def build_cards(only=()):
         mr = [x for x in mr if x not in tr]
         col = COLS.get(t) or (CC.get(t) or {}).get('col') or p.get('tc') or '#1f3a6b'
         c = {'slug': p['file'][:-4], 'set': t, 'title': f"{p['tile_name']} + {CARDTITLE.get(p['mat'], p['mat'])}", 'col': col, 'tile_file': tile_file(t), 'tilefit': 'cover',
-             'racks': tr, 'mat_racks': mr, 'file': p['file'], 'code': footer(p['brand']), 'mat': uri(m), 'tile_brand': p['tile_brand']}
+             'racks': tr, 'mat_racks': mr, 'file': p['file'], 'code': footer(p['brand']), 'mat': uri(m), 'tile_brand': p['tile_brand'], **({'tile_mode': 'loose'} if t in LOOSE else {})}
         if hol: c.update(hol=True, flame=FLAME)
         if not (os.environ.get('SKIP_DONE') and os.path.exists(R + OUT + '/' + p['file'])): cards.append(c)
         if os.environ.get('META_ONLY'): cards.clear()

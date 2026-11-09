@@ -1,1 +1,8 @@
-{"_about": "Cards allowed past the card-sharpness gate (scripts/checks/card_sharpness.py), each with the reason. Only when no larger/sharper brand photo exists (checked, with date). Keep this list tiny.", "ok": {}}
+{
+ "_about": "Cards allowed past the card-sharpness gate (scripts/checks/card_sharpness.py), each with the reason. Only when no larger/sharper brand photo exists (checked, with date). Keep this list tiny.",
+ "ok": {
+  "solara-mahjong-tiles-middle-and-main-mahjong-peaches-and-cream-mat.jpg": "Nov 9: M&M Peaches and Cream is soft watercolour art; rendered from the brand's 2000px photo (no upscale), still measures soft. Checked by eye.",
+  "papaya-spritz-mahjong-tiles-bam-bird-boutique-classic-in-lavender-mat.jpg": "Nov 9: solid lavender neoprene; the meter reads fabric texture, nothing to sharpen; the brand variant photo is a different colour",
+  "42-coquette-mahjong-tiles-bam-bird-boutique-classic-lavender-mat.jpg": "Nov 9: solid lavender neoprene (same as above)"
+ }
+}

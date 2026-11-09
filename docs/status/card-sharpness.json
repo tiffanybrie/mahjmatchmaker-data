@@ -1,145 +1,187 @@
 {
- "at": "2026-11-09T02:24",
- "cards": 238,
- "pages": 1,
+ "at": "2026-11-09T02:36",
+ "cards": 2178,
+ "pages": 56,
  "fails": [
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Candy Cane Lane",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/dear-santa-mahjong-tiles-anders-ruff-candy-cane-lane-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "brownstone-bloom-mahjong-tile-matches",
+   "card": "Brownstone Bloom + Brownstone Bloom",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@b63ce533a067002730a27790f012ace4a83ac3e2/assets/cards/brownstone-bloom-oct31/brownstone-bloom-mahjong-tiles-anders-ruff-brownstone-bloom-mat.jpg",
+   "why": "blurry mat r=0.177 e2=3.315"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Classic Very Merry Mahj",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/dear-santa-mahjong-tiles-anders-ruff-classic-very-merry-mahj-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "brownstone-bloom-mahjong-tile-matches",
+   "card": "Brownstone Bloom + Flourish",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@b63ce533a067002730a27790f012ace4a83ac3e2/assets/cards/brownstone-bloom-oct31/brownstone-bloom-mahjong-tiles-britt-mills-flourish-mat.jpg",
+   "why": "blurry mat r=0.191 e2=3.159"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Evergreen &amp; Tartan",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/dear-santa-mahjong-tiles-anders-ruff-evergreen-tartan-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "brownstone-bloom-mahjong-tile-matches",
+   "card": "Brownstone Bloom + Neutre Blanc",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@b63ce533a067002730a27790f012ace4a83ac3e2/assets/cards/brownstone-bloom-oct31/brownstone-bloom-mahjong-tiles-bird-and-bamboo-neutre-blanc-mat.jpg",
+   "why": "blurry mat r=0.179 e2=1.074"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Festive Plaid",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@7a470d676df87a925c3472c4a24050f27723cd2b/assets/cards/codefooter-v1/cards/holiday-v4/dear-santa-mahjong-tiles-sunday-mahjong-festive-plaid-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "coquette-mahjong-tile-matches",
+   "card": "Coquette + Bejeweled Dream",
+   "img": "https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/0a95d0c3-ea75-4b2b-bc78-b910c579b2cb/12-coquette-mahjong-tiles-mahj-squad-bejeweled-dream-mat.jpg?format=750w",
+   "why": "blurry mat r=0.17 e2=0.718"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Bam Bird Holiday",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/dear-santa-mahjong-tiles-bam-bird-boutique-bam-bird-holiday-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "coquette-mahjong-tile-matches",
+   "card": "Coquette + Classic Neoprene in Lavender",
+   "img": "https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/0636ca62-1e8b-4a02-8c4c-4f9c64a7f218/42-coquette-mahjong-tiles-bam-bird-boutique-classic-lavender-mat.jpg?format=750w",
+   "why": "blurry mat r=0.166 e2=0.826"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Letters to Santa",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/dear-santa-mahjong-tiles-mahjong-register-letters-to-santa-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "coquette-mahjong-tile-matches",
+   "card": "Coquette + Candy Cane Lane",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/coquette-mahjong-tiles-peace-love-mahjong-candy-cane-lane-mat.jpg",
+   "why": "blurry mat r=0.188 e2=1.873"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Merrywood",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/dear-santa-mahjong-tiles-britt-mills-merrywood-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "deco-lagoon-mahjong-tile-matches",
+   "card": "Deco (Lagoon) + Brightside",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@24f5e8141638b1bf2548d356d3f99c31db7ca7ce/assets/cards/deco-lagoon/deco-lagoon-mahjong-tiles-my-fair-mahjong-brightside-mat.jpg",
+   "why": "blurry mat r=0.175 e2=2.78"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Santa&#x27;s Mahjong Mail",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/dear-santa-mahjong-tiles-anders-ruff-santa-s-mahjong-mail-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "emerald-mahjong-tile-matches",
+   "card": "Emerald + Candy Cane Lane",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/emerald-mahjong-tiles-peace-love-mahjong-candy-cane-lane-mat.jpg",
+   "why": "blurry mat r=0.188 e2=1.873"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Tartan Tidings",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/dear-santa-mahjong-tiles-anders-ruff-tartan-tidings-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "gatsby-mahjong-tile-matches",
+   "card": "Gatsby + The Polo Club",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d4ee12ce47f77d88d4806425ca83553db3dd28ed/assets/cards/codefooter-v1/cards/polofix-v1/gatsby-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "why": "blurry mat r=0.132 e2=1.706"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Tartan Toile Noël",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/dear-santa-mahjong-tiles-anders-ruff-tartan-toile-no-l-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "heritage-2-0-mahjong-tile-matches",
+   "card": "Heritage 2.0 + The Polo Club",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d4ee12ce47f77d88d4806425ca83553db3dd28ed/assets/cards/codefooter-v1/cards/polofix-v1/heritage-2-0-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "why": "blurry mat r=0.132 e2=1.706"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Watercolor Christmas Tree",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/dear-santa-mahjong-tiles-anders-ruff-watercolor-christmas-tree-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "heritage-2-0-mahjong-tile-matches",
+   "card": "Heritage 2.0 + Merry &amp; Striped",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/heritage-2-0-mahjong-tiles-peace-love-mahjong-merry-and-striped-mat.jpg",
+   "why": "blurry mat r=0.19 e2=4.075"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Holiday Love Red &amp; Green",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/dear-santa-mahjong-tiles-bespoke-mahjong-holiday-love-red-green-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "heritage-mahjong-tile-matches",
+   "card": "Heritage + Merry &amp; Striped",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/heritage-mahjong-tiles-peace-love-mahjong-merry-and-striped-mat.jpg",
+   "why": "blurry mat r=0.19 e2=4.075"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Holly Jolly Christmas",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/dear-santa-mahjong-tiles-bam-let-s-mahjong-holly-jolly-christmas-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "jade-mahjong-tile-matches",
+   "card": "Jade + The Polo Club",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d4ee12ce47f77d88d4806425ca83553db3dd28ed/assets/cards/codefooter-v1/cards/polofix-v1/jade-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "why": "blurry mat r=0.132 e2=1.706"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Holly Jolly",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/dear-santa-mahjong-tiles-oh-my-mahjong-holly-jolly-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "jade-mahjong-tile-matches",
+   "card": "Jade + Merry &amp; Striped",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/jade-mahjong-tiles-peace-love-mahjong-merry-and-striped-mat.jpg",
+   "why": "blurry mat r=0.19 e2=4.075"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Sleigh All Day",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/dear-santa-mahjong-tiles-mahj-mood-sleigh-all-day-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "jasmine-mahjong-tile-matches",
+   "card": "Jasmine + Candy Cane Lane",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/jasmine-mahjong-tiles-peace-love-mahjong-candy-cane-lane-mat.jpg",
+   "why": "blurry mat r=0.188 e2=1.873"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Very Merry Wreath",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/dear-santa-mahjong-tiles-mahjong-register-very-merry-wreath-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "jasmine-mahjong-tile-matches",
+   "card": "Jasmine + Merry &amp; Striped",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/jasmine-mahjong-tiles-peace-love-mahjong-merry-and-striped-mat.jpg",
+   "why": "blurry mat r=0.19 e2=4.075"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Winterberry",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/dear-santa-mahjong-tiles-oh-my-mahjong-winterberry-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "la-fete-mahjong-tile-matches",
+   "card": "La Fete + Candy Cane Lane",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/la-fete-mahjong-tiles-peace-love-mahjong-candy-cane-lane-mat.jpg",
+   "why": "blurry mat r=0.188 e2=1.873"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Yuletide",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/dear-santa-mahjong-tiles-oh-my-mahjong-yuletide-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "lagoon-mahjong-tile-matches",
+   "card": "Lagoon + Gray Malin",
+   "img": "https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/09334761-9db2-4a5a-bf17-20b45ec0d5ed/15-lagoon-mahjong-tiles-bespoke-mahjong-gray-malin-mat.jpg?format=750w",
+   "why": "blurry mat r=0.188 e2=2.055"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Toasty &amp; Tipsy",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@14968bdd699eae7912895227d713846b2dd66812/assets/cards/holiday-late-nov04/dear-santa-mahjong-tiles-soiree-all-day-toasty-tipsy-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "lagoon-mahjong-tile-matches",
+   "card": "Lagoon + Deco Dragon (Lagoon)",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/lagoon-mahjong-tiles-bam-bird-boutique-deco-dragon-lagoon-mat.jpg",
+   "why": "blurry mat r=0.166 e2=1.988"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Merry Mix",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/dear-santa-mahjong-tiles-peace-love-mahjong-merry-mix-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "malachite-mahjong-tile-matches",
+   "card": "Malachite + The Polo Club",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d4ee12ce47f77d88d4806425ca83553db3dd28ed/assets/cards/codefooter-v1/cards/polofix-v1/malachite-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "why": "blurry mat r=0.132 e2=1.706"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Perfectly Wrapped",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/dear-santa-mahjong-tiles-peace-love-mahjong-perfectly-wrapped-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "malachite-mahjong-tile-matches",
+   "card": "Malachite + Merry &amp; Striped",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/malachite-mahjong-tiles-peace-love-mahjong-merry-and-striped-mat.jpg",
+   "why": "blurry mat r=0.19 e2=4.075"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Sugarplum Plaid",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/dear-santa-mahjong-tiles-peace-love-mahjong-sugarplum-plaid-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "nantucket-mahjong-tile-matches",
+   "card": "Nantucket + The Polo Club",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@d4ee12ce47f77d88d4806425ca83553db3dd28ed/assets/cards/codefooter-v1/cards/polofix-v1/nantucket-mahjong-tiles-luxe-mahjong-the-polo-club-mat.jpg",
+   "why": "blurry mat r=0.132 e2=1.706"
   },
   {
-   "page": "holiday-mahjong-matches",
-   "card": "Dear Santa + Vintage Noel",
-   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/dear-santa-mahjong-tiles-peace-love-mahjong-vintage-noel-mat.jpg",
-   "why": "white band around tile inset 3%"
+   "page": "nantucket-mahjong-tile-matches",
+   "card": "Nantucket + Merry &amp; Striped",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/nantucket-mahjong-tiles-peace-love-mahjong-merry-and-striped-mat.jpg",
+   "why": "blurry mat r=0.19 e2=4.075"
+  },
+  {
+   "page": "papaya-spritz-mahjong-tile-matches",
+   "card": "Papaya Spritz + Greenly",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@fbf7ec953d379647212f69722c3cf90239c09b8b/assets/cards/papaya-spritz/papaya-spritz-mahjong-tiles-mahj-and-vine-greenly-mat.jpg",
+   "why": "blurry mat r=0.09 e2=0.729"
+  },
+  {
+   "page": "papaya-spritz-mahjong-tile-matches",
+   "card": "Papaya Spritz + Classic in Lavender",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@fbf7ec953d379647212f69722c3cf90239c09b8b/assets/cards/papaya-spritz/papaya-spritz-mahjong-tiles-bam-bird-boutique-classic-in-lavender-mat.jpg",
+   "why": "blurry mat r=0.182 e2=0.657"
+  },
+  {
+   "page": "papaya-spritz-mahjong-tile-matches",
+   "card": "Papaya Spritz + Coral Orchard",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@fbf7ec953d379647212f69722c3cf90239c09b8b/assets/cards/papaya-spritz/papaya-spritz-mahjong-tiles-mahj-and-vine-coral-orchard-mat.jpg",
+   "why": "blurry mat r=0.118 e2=1.802"
+  },
+  {
+   "page": "pearlescent-mahjong-tile-matches",
+   "card": "Pearlescent + Candy Cane Lane",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/pearlescent-mahjong-tiles-peace-love-mahjong-candy-cane-lane-mat.jpg",
+   "why": "blurry mat r=0.188 e2=1.873"
+  },
+  {
+   "page": "solara-mahjong-tile-matches",
+   "card": "Solara + Peaches and Cream",
+   "img": "https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/0f6411c5-9b67-4ac9-be23-fdd5d9dc8ae0/21-solara-mahjong-tiles-middle-and-main-mahjong-peaches-and-cream-mat.jpg?format=750w",
+   "why": "blurry mat r=0.131 e2=1.046"
+  },
+  {
+   "page": "sunday-tile-set-mahjong-tile-matches",
+   "card": "Sunday Tile Set + The Polo Club",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@a908626c99b7d53b65dc354b785717040d261d23/assets/cards/sunday-tile-set-v4/sunday-mahjong-tiles-luxe-mahjong-the-polo-club-mat-v4.jpg",
+   "why": "blurry mat r=0.129 e2=1.687"
+  },
+  {
+   "page": "sunday-tile-set-mahjong-tile-matches",
+   "card": "Sunday Tile Set + The Hunt Club",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@a908626c99b7d53b65dc354b785717040d261d23/assets/cards/sunday-tile-set-v4/sunday-mahjong-tiles-charleston-mahjong-club-the-hunt-club-mat-v4.jpg",
+   "why": "blurry mat r=0.172 e2=4.117"
   }
  ]
 }

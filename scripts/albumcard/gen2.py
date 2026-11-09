@@ -33,12 +33,17 @@ if _tp: sys.exit(f'REFUSED (tile_photo_check): {_tp_problem(_tp)}. Record her ye
 # (white border band > 3% on the tile inset). Locked filled crops (config/tile-fill-locks.json) replace the padded originals.
 import card_sharpness as _CS, tile_fill_check as _TF
 _FILL = json.load(open(R + 'config/tile-fill-locks.json'))['files']
+LOOSE_FILES_GATE = {v['file'] for v in json.load(open(R + 'assets/tiles/album/index.json')).values() if isinstance(v, dict) and v.get('tile_mode') == 'loose'}
 _SOK = _CS.ok_list()
 _refuse = []
 for _c in spec['cards']:
     if not _c['tile_file'].startswith('data:'):
         _c['tile_file'] = _FILL.get(_c['tile_file'], _c['tile_file'])
-        if not (_c.get('tile_mode') == 'loose'):
+        if _c.get('tile_mode') == 'loose' or _c['tile_file'] in LOOSE_FILES_GATE:
+            _im = Image.open(R + _c['tile_file'])
+            if _im.mode not in ('RGBA', 'LA', 'PA') or min(_im.split()[-1].getextrema()) > 10:
+                _refuse.append(f"{_c['file']}: loose tiles need a transparent cut-out, {_c['tile_file']} has none (draws a solid box on the mat)")
+        else:
             _tp = _TF.problem(_c['tile_file'])
             if _tp: _refuse.append(f"{_c['file']}: {_c['tile_file']}: {_tp}")
 def _mat_size(c):
