@@ -255,6 +255,35 @@
    "route": "none (pending UpPromote approval, then code-site)",
    "added_by": "deco-lagoon go-live 2026-11-08T18:52-05:00",
    "note": "Tiffany brought it into Deco Lagoon Nov 8 6:20pm; Lemondrop applied on UpPromote, awaiting approval: product link, no code until approved"
+  },
+  {
+   "key": "lemondropmahjongco.com/floral-affair-mat",
+   "name": "Floral Affair",
+   "brand": "Lemondrop Mahjong Co",
+   "b": "Lemondrop Mahjong Co",
+   "u": "https://lemondropmahjongco.com/products/floral-affair-mat",
+   "product_url": "https://lemondropmahjongco.com/products/floral-affair-mat",
+   "img": "assets/albums/catalog-new/lemondrop-mahjong-co--floral-affair.jpg",
+   "src": "Shopify image 1 (watermarked like every Lemondrop photo)",
+   "hol": false,
+   "hid": false,
+   "reason": "",
+   "colours": {
+    "neutral": 33.2,
+    "dark": 19.5,
+    "brown": 13.3,
+    "blue": 12.5,
+    "pink": 6.1,
+    "red": 4.7,
+    "purple": 3.7,
+    "teal": 2.9,
+    "orange": 1.6,
+    "earthy": 1.5,
+    "green": 1.0
+   },
+   "price": "$80",
+   "route": "none (pending UpPromote approval, then code-site)",
+   "note": "Deco Lagoon album add (Nov 8 research redo)"
   }
  ]
 }

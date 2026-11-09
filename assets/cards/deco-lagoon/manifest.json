@@ -130,11 +130,11 @@
    ],
    "mat_racks": [
     "Bird & Bamboo French Blue",
-    "Bird & Bamboo Eggplant"
+    "Bird & Bamboo Wine"
    ],
    "why": "A teal scallop center, the same fan-shell deco as her backs, framed in mulberry and gold inside a navy garden of plum, berry and teal peonies. Her two colours plus gold, in one mat.",
    "fym": "",
-   "lowres": false,
+   "lowres": true,
    "caption_note": null,
    "rack_notes": []
   },
@@ -642,6 +642,31 @@
   },
   {
    "order": 26,
+   "group": "deco",
+   "mat": "Floral Affair",
+   "brand": "Lemondrop Mahjong Co",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "deco-lagoon-mahjong-tiles-lemondrop-mahjong-co-floral-affair-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/deco/mats/lemondrop-mahjong-co-floral-affair.jpg",
+   "racks": [
+    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Mulberry Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo Mulberry"
+   ],
+   "why": "A navy garden of teal ferns and berry-pink blooms inside a gold art deco arc border. Her teal and mulberry, and the deco line work of her tiles.",
+   "fym": "",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 27,
    "group": "stand",
    "mat": "Ocean Florals",
    "brand": "Let's Be Besties",
@@ -666,7 +691,7 @@
    "rack_notes": []
   },
   {
-   "order": 27,
+   "order": 28,
    "group": "teal",
    "mat": "Year of the Snake",
    "brand": "Wren Mats",
@@ -691,7 +716,7 @@
    "rack_notes": []
   },
   {
-   "order": 28,
+   "order": 29,
    "group": "contrast",
    "mat": "Garden Party – Mulberry",
    "brand": "My Fair Mahjong",
@@ -716,7 +741,7 @@
    "rack_notes": []
   },
   {
-   "order": 29,
+   "order": 30,
    "group": "contrast",
    "mat": "East Meets West – Magenta",
    "brand": "Bam Bird Boutique",
@@ -741,7 +766,7 @@
    "rack_notes": []
   },
   {
-   "order": 30,
+   "order": 31,
    "group": "tnt",
    "mat": "Jade",
    "brand": "Oh My Mahjong",
@@ -766,7 +791,7 @@
    "rack_notes": []
   },
   {
-   "order": 31,
+   "order": 32,
    "group": "contrast",
    "mat": "Hawthorne",
    "brand": "Oh My Mahjong",
@@ -791,7 +816,7 @@
    "rack_notes": []
   },
   {
-   "order": 32,
+   "order": 33,
    "group": "tnt",
    "mat": "White Lotus",
    "brand": "Mahj Tile Haus",
@@ -816,7 +841,7 @@
    "rack_notes": []
   },
   {
-   "order": 33,
+   "order": 34,
    "group": "teal",
    "mat": "Plum Panda Premium",
    "brand": "Sunday Mahjong",
@@ -841,7 +866,7 @@
    "rack_notes": []
   },
   {
-   "order": 34,
+   "order": 35,
    "group": "best",
    "mat": "Deco Dragon (Lagoon)",
    "brand": "Bam Bird Boutique",
@@ -866,7 +891,7 @@
    "rack_notes": []
   },
   {
-   "order": 35,
+   "order": 36,
    "group": "tnt",
    "mat": "Brightside",
    "brand": "My Fair Mahjong",
@@ -891,7 +916,7 @@
    "rack_notes": []
   },
   {
-   "order": 36,
+   "order": 37,
    "group": "deco",
    "mat": "Gatsby Glow",
    "brand": "Let's Be Besties",
@@ -916,7 +941,7 @@
    "rack_notes": []
   },
   {
-   "order": 37,
+   "order": 38,
    "group": "deco",
    "mat": "SoHo",
    "brand": "Oh My Mahjong",
@@ -941,7 +966,7 @@
    "rack_notes": []
   },
   {
-   "order": 38,
+   "order": 39,
    "group": "holiday",
    "mat": "Winter Jewel",
    "brand": "Let's Be Besties",
@@ -966,7 +991,7 @@
    "rack_notes": []
   },
   {
-   "order": 39,
+   "order": 40,
    "group": "holiday",
    "mat": "Yuletide",
    "brand": "Oh My Mahjong",
@@ -991,7 +1016,7 @@
    "rack_notes": []
   },
   {
-   "order": 40,
+   "order": 41,
    "group": "holiday",
    "mat": "Poinsettia Party",
    "brand": "Soirée All Day",

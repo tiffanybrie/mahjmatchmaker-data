@@ -7,7 +7,7 @@ Checks, in playbook order:
   [1] FYM set ready     config/album-fym-sets.json colorcards.<set> -> an FYM slug, and that slug has walls
                         (a back colour in config/tableview-back-colors.json)
   [2] colour card       config/colorcards.json sets.<set> with backs + faces, and the colour card image exists
-  [3] TNT search        config/tnt-recs.json sets.<set> with scanned + source (scripts/checks/tnt_check.py)
+  [3] TNT search        config/tnt-recs.json sets.<set> with scanned + source + posts_read > 0 + terms[] + scrolled_to_end (tnt_check.py)
   [3b] other groups     config/tnt-recs.json sets.<set>.other_groups: scanned + groups[] (each with members),
                         or an empty groups list WITH a note
   [0] tile photo        record tile_photo approved_at set (her yes in chat; scripts/checks/tile_photo_check.py)
@@ -32,6 +32,8 @@ Usage:
 Imported by scripts/albumreview/build_review.py (refuses to write the page on FAIL) and scripts/hooks/front_door.py."""
 import json, os, sys, glob
 R = '/home/claude/mahjmatchmaker-data/'
+sys.path.insert(0, R + 'scripts/checks')
+from tnt_check import complete as _tnt_complete, why_incomplete as _tnt_why
 sys.path.insert(0, R + 'scripts/checks')
 
 
@@ -90,6 +92,7 @@ def check(s):
     # [3] TNT + [3b] other groups
     t = (J('config/tnt-recs.json', {}).get('sets') or {}).get(s)
     if not (isinstance(t, dict) and t.get('scanned') and t.get('source')): bad.append(f'[3] no Tiles & Tablescapes search on record (config/tnt-recs.json sets.{s})')
+    elif not _tnt_complete(t): bad.append(f'[3] Tiles & Tablescapes search not proven exhaustive ({_tnt_why(t)}): config/tnt-recs.json sets.{s} needs posts_read > 0, terms[], scrolled_to_end: true (Tiffany Nov 8 6:20pm)')
     og = (t or {}).get('other_groups')
     if not isinstance(og, dict) or not og.get('scanned'): bad.append(f'[3b] other big Facebook groups not searched (config/tnt-recs.json sets.{s}.other_groups)')
     elif not og.get('groups') and not og.get('note'): bad.append('[3b] other_groups has no groups and no note saying why')
@@ -133,7 +136,8 @@ def check(s):
     # [7] faces
     fz = rec.get('faces') or {}
     picks = [p['key'] if isinstance(p, dict) else p for p in fz.get('picks', [])]
-    if len(picks) != 5: bad.append(f'[7] faces not pre-picked: need 5, record has {len(picks)}')
+    # 5 = Claude's pre-picks; her own picks on the review page are final at any count >= 5 (A YES IS A YES; Deco Lagoon: 7, Nov 8)
+    if len(picks) < 5: bad.append(f'[7] faces not pre-picked: need 5, record has {len(picks)}')
     miss = [k for k in picks if not os.path.exists(R + fz.get('dir', '') + k + '.png')]
     if miss: bad.append('[7] face images missing: ' + ', '.join(miss))
     proof['faces'] = picks

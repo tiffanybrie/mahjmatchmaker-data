@@ -58,7 +58,9 @@
    "fym": "splashofcolorco.com/art-deco-mahjong-mat-lady-luck-s-teal-lounge",
    "lowres": false,
    "partner": true,
-   "added_after_review": "Nov 8 3:20pm: added after her review (her note: Splash of Color has a deco mat that should be brought in; and her New finds 'Bring it in' on Dreamframer Dark Blue Art Deco Gold Fans). Appended after her saved order."
+   "added_after_review": "Nov 8 3:20pm: added after her review (her note: Splash of Color has a deco mat that should be brought in; and her New finds 'Bring it in' on Dreamframer Dark Blue Art Deco Gold Fans). Appended after her saved order.",
+   "url": "https://splashofcolorco.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fart-deco-mahjong-mat-lady-luck-s-teal-lounge%3Fsca_ref%3D10059443.c9rDRhYNIB31oxJN",
+   "dc": "/splash-of-color-discount-code"
   },
   {
    "group": "teal",
@@ -163,7 +165,8 @@
    "fym": "www.etsy.com/listing/4491199204",
    "lowres": true,
    "partner": false,
-   "added_after_review": "Nov 8 3:20pm: added after her review (her note: Splash of Color has a deco mat that should be brought in; and her New finds 'Bring it in' on Dreamframer Dark Blue Art Deco Gold Fans). Appended after her saved order."
+   "added_after_review": "Nov 8 3:20pm: added after her review (her note: Splash of Color has a deco mat that should be brought in; and her New finds 'Bring it in' on Dreamframer Dark Blue Art Deco Gold Fans). Appended after her saved order.",
+   "url": "https://go.shopmy.us/p-102728926"
   },
   {
    "group": "best",
@@ -316,6 +319,27 @@
    "retired": false,
    "fym": "shop.andersruff.com/midnight-peacock-mahjong-mat",
    "lowres": true
+  },
+  {
+   "group": "deco",
+   "name": "Floral Affair",
+   "brand": "Lemondrop Mahjong Co",
+   "img": "assets/colorcards/deco/mats/lemondrop-mahjong-co-floral-affair.jpg",
+   "why": "A navy garden of teal ferns and berry-pink blooms inside a gold art deco arc border. Her teal and mulberry, and the deco line work of her tiles.",
+   "retired": false,
+   "fym": "",
+   "lowres": true,
+   "partner": false,
+   "box": [
+    0,
+    470,
+    530,
+    1000
+   ],
+   "url": "https://lemondropmahjongco.com/products/floral-affair-mat",
+   "price": "$80",
+   "added_after_review": "Nov 8 go-live: found in the exhaustive research redo (Lemondrop, the brand of her Sapphire Blooms bring-in; pending affiliate). True match at colour rank; product link, no code until Lemondrop approves.",
+   "photo_note": "Lemondrop watermark on every photo; bottom-left corner used"
   },
   {
    "group": "stand",
@@ -483,5 +507,5 @@
  "_nov08": "Tiffany Nov 8 10:11am edits: removed Petals After Dark, Crown Jewels, Royal Peacock, Imperial Peacock, Imperial Koi Pond, Indigo Reef, Teal Tapestry, Community Joy, Purple & Aqua Marble; added Deco Dragon (Lagoon), Deco Neoprene, Gatsby's Feathered Affair, OMM Jade, Britt Mills Ruby, East Meets West Magenta; Eden, Viola, Pretty in Plum into the top 10; TNT recs (config/tnt-recs.json deco-lagoon) lead the album, labelled 'TNT rec · mat · brand'. Reba stays the first non-TNT card; Deco Dragon (Mulberry) #8 (sister mat never #1).",
  "_order_nov08": "Re-ordered Nov 8 by the Playbook step 7 rule (Tiffany 1:46pm): standouts first (the 5-6 that look best together), colour theory carries the weight, her pairings + TNT recs add a little; TNT recs get no automatic front spot (label kept as information); the sister mat may be #1 if it is truly best.",
  "_added_after_review_nov08": "Nov 8 2:45pm: added after her review (she caught Scarlett + Flora; Fête (Peacock) from the re-pull). Appended after her saved order. Missed because the Nov 7 pull dropped mats with no Mat Gallery image (Scarlett) and ranked by a tonal score (Flora cut by eye); fixed in scripts/albumreview/pull.py.",
- "_final_nov08": "Tiffany's FINAL order (review round 1, saved Nov 8 6:19pm) + her two 6:20-6:25pm bring-ins placed by colour: Sapphire Blooms #5 (teal scallop center + mulberry frame, between Lady Luck's Teal Lounge and Pretty in Plum), Crane Cloud #11 (teal + gold, next to Deco Neoprene / the gold fans). Cocktail Club (Charleston) NOT added: Tiffany 6:24pm, wrong link. Duplicate bring-in of Dreamframer fans (already #12) removed."
+ "_final_nov08": "Tiffany's FINAL order (review round 1, saved Nov 8 6:19pm) + her two 6:20-6:25pm bring-ins placed by colour: Sapphire Blooms #5 (teal scallop center + mulberry frame, between Lady Luck's Teal Lounge and Pretty in Plum), Crane Cloud #11 (teal + gold, next to Deco Neoprene / the gold fans). Cocktail Club (Charleston) NOT added: Tiffany 6:24pm, wrong link. Duplicate bring-in of Dreamframer fans (already #12) removed. Research redo add: Lemondrop Floral Affair #26 (after Midnight Peacock)."
 }

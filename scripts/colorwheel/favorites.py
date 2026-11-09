@@ -29,7 +29,10 @@ tile=lambda k,w: f'<img src="{u(T+k+".png")}" style="width:{w}px;display:block">
 h=lambda t: f'<div style="font:700 27px Pop;letter-spacing:.24em;text-transform:uppercase;color:#1f3a6b;text-align:center;white-space:nowrap">{t}</div>'
 cap=lambda t: f'<div style="font:italic 400 29px/1.25 PF;color:#2c3e63;text-align:center;white-space:nowrap">{t}</div>'
 tp=SET['top']
-singles=''.join(f'<div style="display:flex;flex-direction:column;align-items:center;width:300px">{h(n)}<div style="margin-top:20px">{tile(k,232)}</div><div style="margin-top:18px">{cap(c)}</div></div>' for n,k,c in SET['singles'])
+# Nov 8: 4+ singles (Deco Lagoon: 7 face picks) shrink to fit; a single may be a PAIR of keys (e.g. the two irises)
+_SW=300 if len(SET['singles'])<=3 else 1020//len(SET['singles']); _TS=232 if len(SET['singles'])<=3 else 196
+def _one(k): return tile(k,_TS) if isinstance(k,str) else '<div style="display:flex;gap:10px">'+''.join(tile(x,int(_TS*.62)) for x in k)+'</div>'
+singles=''.join(f'<div style="display:flex;flex-direction:column;align-items:center;width:{_SW}px">{h(n)}<div style="margin-top:20px">{_one(k)}</div><div style="margin-top:18px">{cap(c)}</div></div>' for n,k,c in SET['singles'])
 html=f"""<!doctype html><html><head><meta charset=utf8><style>
 @font-face{{font-family:Capra;src:url('{F}/Caprasimo.ttf')}}
 @font-face{{font-family:Pop;font-weight:700;src:url('{G}/Poppins-Bold.ttf')}}
