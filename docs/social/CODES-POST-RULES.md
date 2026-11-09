@@ -10,3 +10,4 @@ Read before writing ANY Monday "Partner Codes + Updates" post.
 8. Skip minor items (a colourway of an existing mat). Lead with what sells now (season, deadlines like a preorder shipping date).
 9. Sales season: tease our Black Friday deals page.
 10. Never say an album is 'up before the tiles drop' - it always is (Tiffany Nov 9).
+11. Any post/reel that names Find Your Mat-ch shows the tool in use (screen recording or real screens), never just the name (Tiffany Nov 9 11:25am).
