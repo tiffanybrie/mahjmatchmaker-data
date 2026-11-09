@@ -52,7 +52,6 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 ## In progress
 | Item | Owner | Next step | Target |
 |---|---|---|---|
-| HOLIDAY PAGE FIX (Tiffany 1:39-1:44am): blurry cards (every section + album cards from the same low-res photos), Virora tile insets (Tinselle Emerald/Ruby, filled crops locked in config/tile-fill-locks.json), every holiday yes on the page incl. Dec 1994 card #1 Festive Plaid rebuild + Sugarplum Plaid | Matches & Catalog agent (session 01U7RfeJ), working NOW from 2:05am: do not duplicate; gates added (gen2 card sharpness + tile fill, scripts/checks/card_sharpness_check.py) | Re-render with hi-res brand photos, paste via Chrome, QA | Mon Nov 9 |
 | Google & Revenue report back (none since Nov 6) | Main | Priority 1a: 12:13pm run; fire by hand at 12:45pm if missing. | Mon Nov 9 |
 | Sitemap: Juniper + Lagoon missing, Mahjong Row 302s listed | Ops (Chrome) | Priority 1b. | Mon Nov 9 (FAIL Tue) |
 | Deco Lagoon indexing confirm + hq/indexing row | Main / Ops | Priority 1c. | Mon Nov 9 |
@@ -76,7 +75,6 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Work With v3 + Brands form | Ops | Default applies: goes up HIDDEN as is next Chrome trip unless she types wait/changes (HQ This week). | Next Chrome trip |
 | Holiday new-albums email | Main | Squarespace draft; now also names Juniper + Deco Lagoon; her final read. | Tue Nov 10 |
 | Holiday colour cards (Tinselle ×2, Dec 1994, PLM Spirit + Nutcracker) | Matches & Catalog | Not started (was Oct 31). | Thu Nov 12 |
-| December 1994 redo (her RTS notes) | Matches & Catalog | After holiday colour cards. | Fri Nov 13 |
 | Discount links not converted (Britt Mills, Register, YMI, RMS, Hip Hip, Wren/Soirée/Amanda Toppe) | Main | builder/fym_fix_oct21/discount_check_oct21.json; fold into link-routes. | Tue Nov 10 |
 | PEACE LOVE → Level 2 ($5K/month → cash) | Main | Plan + PLM MTD in the report. | Tue Nov 10 |
 | Affiliate applications: Lemondrop, Rack It!, The Mahjong House (waiting), Bloomjong (verified, not approved), Sweet Jojo (W-9 replaced) | Partner watch | Watch mahjmatchmaker@; onboard on approval (page, IG, newsletter). | On approval |
