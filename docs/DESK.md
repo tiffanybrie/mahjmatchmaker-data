@@ -34,7 +34,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **Matches & Catalog: FYM 1.19 racks + walls staged** (racks119.py; 13 new partner colourways + 12 unhidden; walls for 28 more sets). Ship in 1.19.
 - **Main: LBB code-equity email**: 2 drafts given in chat Nov 8 6:39-6:45pm (BBC 15% vs MAHJMATCH 10%); she sends it herself. Nothing for Claude unless she asks.
 - **Main: GoAffPro profile**: done except mailing address + Country (her personal data) and the Pinterest social slot (page didn't save it): Waiting on Tiffany.
-- **Main: Black Friday deals page** (site/livepatch/black-friday-2026, DRAFT): her yes (HQ Today). On yes: Ops pastes, index, link from home Holiday line + /links + Mon codes post comment. Live before PLM Black Friday Mon Nov 16.
+- **Black Friday deals page: HER YES Nov 8 ~10:50pm** (site/livepatch/black-friday-2026). OVERDUE line: first Chrome run puts it live Mon Nov 9 (refresh deals first). On yes: Ops pastes, index, link from home Holiday line + /links + Mon codes post comment. Live before PLM Black Friday Mon Nov 16.
 - **Main: FB group easy-engagement week Nov 9-15** (docs/social/fb-group-week-2026-11-09.md): one yes covers Tue poll / Thu table thread / Sat help-me-match (HQ Today). Mon codes post + Wed Juniper launch post are standing/approved formats.
 - **Matches & Catalog: missed-mats pick page** (https://claude.ai/artifact/C9RNQPxnYr7MdFiDNgoXmJ, 43 albums, 374 cards, yes-only): her yeses go straight into the albums + FYM m-lists. HQ This week.
 - **Rainy day (Tiffany Nov 8 1:11pm, tabled):** TNT search for albums live before the TNT gate: Papaya Spritz, Brownstone Bloom, Sunday, Shangri-la, Lilac Soirée, Preppy Soirée, Spring Love (Juniper done: none). Also replacing Mahjong Row Scalloped Tortoise in old albums. TNT group: facebook.com/groups/1350179120446918. **TNT gate tightened (OVERDUE):** nature-walk, sunday-blues, plum-panda, hummingbird records lack posts_read/terms/scrolled_to_end: redo before Sunday cards render.
@@ -68,7 +68,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Missed album picks (C2): 462 cards for 52 album pages | Ops paste (Chrome) | STAGED: site/livepatch/missed-album-picks-nov07/README.md (images @aa72f943, dry run 52/52). | Tue Nov 10 |
 | Pinned FYM reel v3 A/B | Tiffany picks A or B → Main | Files + README checklists in assets/social/fym-pinned-nov07/; on "send me the pinned reel": file + steps in chat. | When she posts |
 | Missed-mats picks into 43 albums | Tiffany yes → Matches & Catalog | Her yeses go in automatically. | On her picks |
-| Black Friday deals page | Tiffany yes → Ops | Paste + index before PLM Nov 16. | Thu Nov 12 |
+| Black Friday deals page (HER YES Nov 8) | First Chrome run (OVERDUE) | Refresh deals, paste, index, link. | Mon Nov 9 |
 | FB group week Nov 9-15 | Tiffany yes → Main (Chrome) | Tue poll needs the yes by Tue morning. | Tue Nov 10 |
 | Easy content button (3 samples → daily auto post) | Tiffany yes → Main | Switch the Fri prep task after her yes. | Fri Nov 13 |
 | ManyChat comment-for-links draft + trial reminder | Main (Chrome) | OVERDUE lines (low priority, her Nov 6 4:11pm). | Tue Nov 10 |
@@ -91,7 +91,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 ## Waiting on Tiffany (only things she can answer now)
 **On HQ Today, in this order (5):**
 1. **Google: Monday's report runs at 12:13pm ET (laptop on + Claude app open), plus one Bing tap.**
-2. **Black Friday deals page: yes / changes** (new public page; PLM sale Nov 16).
+2. ~~Black Friday deals page~~ YES Nov 8 night: going live Mon (OVERDUE).
 3. **Facebook group week Nov 9-15: one yes** (Tue poll, Thu table thread, Sat help-me-match).
 4. **Next week's posts: tell Claude which to schedule** (Mon-Sun drafts in Planoly; 0 scheduled).
 5. **Sunday albums: ♥/✕ the 31 new mats.**
