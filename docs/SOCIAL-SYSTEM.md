@@ -31,6 +31,7 @@ Brand-mix question (+ default) → quick storyboard from her picks/albums (still
 ## Measure
 Every Monday: per post, follows + profile visits (+ shares). Drop formats that earn nothing.
 - 2026-11-02 (Oct 26-Nov 1): 502 followers; account +61 follows (prev 32), reach 982. 3 posts, all reels: FYM teaser 263 reach / 0 visits / 0 follows; launch reel 145 / 0 / 0 / 2 shares; Miss Classic Jade 104 / 0 / 0. FLAG: reels 0 follows two weeks running (hotline reel Oct 21 also 0). No feed post Oct 28-Nov 1; reach fell 674 -> 9/day. Single 'It's a match' image is still the only post format that earns follows.
+- 2026-11-09 (Nov 2-8): 506 followers; account +6 follows (prev 61), reach 190 (prev 982), views 579. 2 posts: holiday intro reel (Nov 3) 125 reach / 0 visits / 0 follows / 0 shares / 1 save; IG codes post (profile-only, Nov 7) 2 / 0 / 0 / 0. FLAG: reels 0 follows THREE weeks running (hotline Oct 21, three reels Oct 26-Nov 1, holiday reel Nov 3). No 'It's a match' single image posted since Oct 21 (this week's are parked in the Dec 7-10 review week). Reach 116 on reel day, then 3-13/day.
 
 ## Later (not public yet)
 Restock page on the site ("we keep tabs on partner restocks in one place") + FB group posts, only once partner watch is reliably AHEAD of restocks.

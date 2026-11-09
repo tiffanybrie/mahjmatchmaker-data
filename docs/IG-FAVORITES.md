@@ -38,3 +38,8 @@ Method note: the favorites menu only updates after a reload, so each add was con
 - Sunday Mahjong read in Chrome: newest post Oct 16 (minis reel); nothing new this week.
 - Mahj Pit (partner, onboarded Nov 4): @mahjpit.co. Their site footer has no Instagram link; the handle is named on mahjpit.co/pages/return-policy ('@mahjpit.co') and resolves to their public business account (Planoly Business Discovery, posts reference mahjpit.co). Added to ig-handles.json. Follow + favorite from @mahjmatchmaker: DESK OPS line.
 - Mah Jongg Maven (direct partner, onboarding Nov 9): @mahjonggmaven, from the mahjonggmaven.com footer Instagram link (instagram.com/mahjonggmaven; one stray footer link points to 'mahjonggmaven.com', ignored). Added to ig-handles.json. Follow + favorite from @mahjmatchmaker: DESK OPS line (Chrome was offline Nov 9).
+
+## Nov 9 (Monday brand watch)
+- Chrome offline (extension not connected), so no follows/favorites this run and Sunday Mahjong's IG was not read.
+- New partners this week: Mah Jongg Maven (@mahjonggmaven, verified Nov 9 from the site footer; already in ig-handles.json): follow + favorite is in the DESK onboarding OPS line. Mahj Pit (@mahjpit.co, Nov 4): follow + favorite STILL NOT DONE (the DESK line was dropped in the Nov 8 desk rewrite); re-added to DESK as an OPS line.
+- New ShopMy brands: none this week (ShopMy check Nov 9 PASS, nothing new). The 58 Amazon pins staged Nov 8 are Amazon listings with no brand site to verify a handle from: skipped.
