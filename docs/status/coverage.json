@@ -1,37 +1,33 @@
 {
- "at": "2026-11-07T20:49:02",
- "fym": "v117",
+ "at": "2026-11-09T12:02:30",
+ "fym": "v118",
  "sources": {
-  "fym": "site-app/fym-v117/index.html @8a3081f2 (live /find-your-match)",
-  "gallery": "matgallery-v117.json @c90f4aaf (live /mahjong-mats, data-fym=v117)",
-  "search": "search-index.json @de5e43f1 (live search.js pin)"
+  "fym": "site-app/fym-v118/index.html @7817f04d (live /find-your-match)",
+  "gallery": "matgallery-v118.json @4cb195dc (live /mahjong-mats, data-fym=v118)",
+  "search": "search-index.json @3afb680e (live search.js pin)"
  },
- "net_at": "2026-11-07T20:49:02",
- "summary": "6 OK, 23 GAP, 1 UNKNOWN",
+ "net_at": "2026-11-09T12:02:20",
+ "summary": "10 OK, 19 GAP, 1 UNKNOWN",
  "gaps": [
-  "Removed pages still live or in the sitemap: 2 (target 0) | missing: /cypress-forest-mahjong-tile-matches (sitemap), /mahjong-row-and-co-discount-code (sitemap)",
-  "Hub brands with a code-truth % entry (live_codes_check can catch a wrong %): 27 of 38 (target all) | missing: Tigre de Tartan, Yellow Mountain Imports, I Love Mahj, Anders Ruff, Mahjong Studios, The Mahjong Press +5 more",
-  "Live brand pages with a verified line within 9 days: 37 of 39 (target all); as of 2026-11-07T20:49 | missing: bird-and-bamboo-discount-code-2 (no line), sunday-mahjong-discount-code (no line)",
+  "Live brand pages with a verified line within 9 days: 37 of 39 (target all); as of 2026-11-09T12:02 | missing: bird-and-bamboo-discount-code-2 (no line), sunday-mahjong-discount-code (no line)",
   "Hub brands with their own brand page: 37 of 38 (target all) | missing: Maison Mahj",
   "Live brand pages in the sitemap but not on the codes hub: 2 (target 0) | missing: /bird-and-bamboo-discount-code-2, /sunday-mahjong-discount-code",
-  "Approved/overdue items older than 3 days (OVERDUE + DESK Blocked): 0 (target 0); 9 more carry no date, so they cannot age (give each a date)",
-  "ShopMy mats live in FYM: 127 of 173 (target all); shopmy-crosscheck-nov07.json: 51 staged, 58 Amazon (her pick), 11 skipped, 5 photo-held",
-  "Mats with a price (price filter hides the rest): 813 of 1521 (target all) | missing: Let's Be Besties 284, Mahj & Moon 106, Betty June & Jeannette 75, Oh My Mahjong 33, Luna EK Studio 28, Piper Chase Studios 27 +27 more",
-  "Visible FYM mats that are in the live Mat Gallery: 1447 of 1469 (target all); House of Hearts (FYM only), Mahjong Studios, side-B twins left out | missing: Bespoke Mahjong: Year of the Dragon - Periwinkle, Mahjong Register: Letters to Santa Double-Sided Leatherette, Mahjong Register: Holly Jolly Double-Sided Leatherette, Tigre de Tartan: French Mural, Charleston Mahjong Club: Club Mat, My Fair Mahjong: Confetti Lemon Lime +16 more",
-  "Gallery mats that FYM hides: 23 (target 0); 0 gallery rows not found in FYM at all | missing: Betty June & Jeannette: The Most Wonderful Time of the Year, Etsy: Savannah Soirée, Let's Be Besties: Paint Feathers, Let's Be Besties: Tobacco Leaves, Let's Be Besties: Tobacco Leaves Blue, Mahj Squad: Pink Floral Chinoiserie +17 more",
-  "Live album pages wired to an FYM tile set: 37 of 43 (target all) | missing: lilac-soiree, papaya-spritz, preppy-soiree, shangri-la, spring-love, sunday-tile-set",
-  "FYM sets with her picks that link to their album: 47 of 52 (target all) | missing: December 1994, Hummingbird, Sunday, Papaya Spritz, Spirit of Christmas",
-  "Table view walls (back colour confirmed): 30 of 283 visible tile sets (target all) | missing: Heritage 2.0, Gemma, Jasmine, Luminaire, Osler, Pearlescent +247 more",
-  "Mats checked for Table view (have a class): 1187 of 1521 visible mats (target all) | missing: Tigre de Tartan: Queen Bee (retired), Sunday Mahjong: Vegan Leather (Ruby), Sunday Mahjong: Vegan Leather (Forrest), Let's Be Besties: Abstract, Let's Be Besties: Acrylic Flowers, Let's Be Besties: Agate Whirlpool +328 more",
-  "Racks usable in Table view: 169 of 293 visible racks (target all) | missing: Oh My Mahjong White Acrylic, Oh My Mahjong Tortoise Shell, Oh My Mahjong Agate, Miss Mahjong Peach Sorbet Scalloped, Miss Mahjong Cornflower Blue Scalloped, Oh My Mahjong Burl +118 more",
-  "Mats usable in Table view (class A/B): 1102 of 1521 (target all); 85 class C (need a flat photo)",
-  "Tile sets with a price: 249 of 283 (target all) | missing: Heritage 1.0, Emerald, Pearlescent, Miss Classic Jade, Miss Classic Malachite, Birdie +28 more",
-  "Racks with a price: 289 of 293 (target all) | missing: Bam! Let's Mahjong White Acrylic Scalloped, Tala Mahj Horizon Woven Rattan, Tala Mahj Shoreline Chocolate Woven Rattan, Mahj Pit White Beech Wood",
-  "Her FYM picks named on the live album page: 1326 of 1712 (target all); name match, a little noise | missing: Larkspur (27), Sugarplum Plaid (23), Very Merry Wreath Premium (19), Perfectly Wrapped (17), Poppins (15), Spirit of Christmas (15) +4 more",
+  "Approved/overdue items older than 3 days (OVERDUE + DESK Blocked): 0 (target 0); 5 more carry no date, so they cannot age (give each a date)",
+  "ShopMy mats live in FYM: 0 of 0 (target all); shopmy-crosscheck-nov08.json: ? staged, 0 Amazon (her pick), 0 skipped, 0 photo-held",
+  "Mats with a price (price filter hides the rest): 1451 of 1574 (target all) | missing: Oh My Mahjong 32, Amazon 28, Let's Be Besties 22, Rebecca Illustrated 7, Bespoke Mahjong 5, Tigre de Tartan 5 +13 more",
+  "Visible FYM mats that are in the Mat Gallery: 1502 of 1507 (target all); out on purpose: side B / twin listing 44, gallery photo hold (with reason) 8, House of Hearts (FYM only, Oct 25) 8, duplicate photo merged into its twin 7, removed brand: her album-matched mats kept in the gallery (Nov 6 1:33pm) 9 | missing: Bespoke Mahjong: Year of the Dragon - Periwinkle, Mahjong Register: Letters to Santa Double-Sided Leatherette, Mahjong Register: Holly Jolly Double-Sided Leatherette, Charleston Mahjong Club: Club Mat, My Fair Mahjong: Confetti Lemon Lime",
+  "Live album pages wired to an FYM tile set: 38 of 45 (target all) | missing: deco-lagoon, lilac-soiree, papaya-spritz, preppy-soiree, shangri-la, spring-love +1 more",
+  "FYM sets with her picks that link to their album: 48 of 53 (target all) | missing: December 1994, Hummingbird, Sunday, Papaya Spritz, Spirit of Christmas",
+  "Table view walls (back colour confirmed): 254 of 282 visible tile sets (target all) | missing: Holly Jolly (Rudolph Red), Holly Jolly (Grinch Green), Nutcracker Ballet, Round Top Stamped, White Signature, The Belle +22 more",
+  "Racks usable in Table view: 232 of 293 visible racks (target all) | missing: Dark Tortoise and Brass Acrylic Racks, Wood Racks with Classic Pusher, Dark Tortoise Classic Acrylic Racks, Clear Acrylic Racks with Scalloped Pusher, Wavy Mahjong Rack Pusher Set - White, Wavy Mahjong Rack Pusher Set - Light Pink +55 more",
+  "Mats usable in Table view (class A/B): 1492 of 1574 (target all); 82 class C (need a flat photo)",
+  "Tile sets with a price: 273 of 282 (target all) | missing: Emerald, Birdie, Dandy, Glitterville, Limoncello, Lola +3 more",
+  "Her FYM picks named on the live album page: 1751 of 1884 (target all); name match, a little noise | missing: Very Merry Wreath Premium (19), Festive Plaid Premium (9), Bespoke x Corey Paige - Holiday Love Mat - Red/Green (Side A: All-Over Hearts) (8), Letters to Santa Premium (7), Paige Spearin “Shell Yeah” (7), Ski Club Mat - Periwinkle Center (7) +4 more",
   "Search entries pointing at hidden/missing holiday sections: 4 (target 0) | missing: hummingbird, nature-walk, sunday, sunday-blues",
   "Holiday sets linking to their own holiday-page section: 0 of 10 (target all) | missing: Dear Santa, Rackin' Rudolph, Holly Jolly (Rudolph Red), Holly Jolly (Grinch Green), Holly Jolly (Sugarplum Pink), Nivalee (Glacier Blue) +4 more",
-  "Tile sets in a colour group (tile colour filter): 275 of 283 (target all) | missing: The Empress, Art Deco, Hocus Pocus Halloween, Mahj-O-Ween, Celebration, Fire + Fortune (Ember) +2 more",
-  "Tile sets with a tagline (\"dating profile\" line): 1 of 283 (target all) | missing: Heritage 1.0, Gatsby, Heritage 2.0, Drake, Lagoon, Seabreeze +40 more"
+  "Live album pages in the site search: 43 of 45 (target all) | missing: /deco-lagoon-mahjong-tile-matches, /juniper-mahjong-tile-matches",
+  "Tile sets in a colour group (tile colour filter): 274 of 282 (target all) | missing: The Empress, Art Deco, Hocus Pocus Halloween, Mahj-O-Ween, Celebration, Fire + Fortune (Ember) +2 more",
+  "Tile sets with a tagline (\"dating profile\" line): 1 of 282 (target all) | missing: Heritage 1.0, Gatsby, Heritage 2.0, Drake, Lagoon, Seabreeze +41 more"
  ],
  "unknown": [
   "Scheduled tasks switched off: unknown (no docs/status/tasks-off.json; an attended chat runs list_triggers and writes it)"
@@ -40,11 +36,11 @@
   {
    "id": "removed_live",
    "area": "Codes",
-   "status": "GAP",
-   "have": 2,
+   "status": "OK",
+   "have": 0,
    "total": 2,
    "target": "0",
-   "text": "Removed pages still live or in the sitemap: 2 (target 0) | missing: /cypress-forest-mahjong-tile-matches (sitemap), /mahjong-row-and-co-discount-code (sitemap)"
+   "text": "Removed pages still live or in the sitemap: 0 (target 0)"
   },
   {
    "id": "tasks_off",
@@ -58,11 +54,11 @@
   {
    "id": "truth_brands",
    "area": "Codes",
-   "status": "GAP",
-   "have": 27,
+   "status": "OK",
+   "have": 38,
    "total": 38,
    "target": "all",
-   "text": "Hub brands with a code-truth % entry (live_codes_check can catch a wrong %): 27 of 38 (target all) | missing: Tigre de Tartan, Yellow Mountain Imports, I Love Mahj, Anders Ruff, Mahjong Studios, The Mahjong Press +5 more"
+   "text": "Hub brands with a code-truth entry, pct or terms (live_codes_check can catch a wrong offer): 38 of 38 (target all)"
   },
   {
    "id": "verified",
@@ -71,7 +67,7 @@
    "have": 37,
    "total": 39,
    "target": "all",
-   "text": "Live brand pages with a verified line within 9 days: 37 of 39 (target all); as of 2026-11-07T20:49 | missing: bird-and-bamboo-discount-code-2 (no line), sunday-mahjong-discount-code (no line)"
+   "text": "Live brand pages with a verified line within 9 days: 37 of 39 (target all); as of 2026-11-09T12:02 | missing: bird-and-bamboo-discount-code-2 (no line), sunday-mahjong-discount-code (no line)"
   },
   {
    "id": "hub_pages",
@@ -96,16 +92,16 @@
    "area": "Ops",
    "status": "GAP",
    "have": 0,
-   "total": 19,
+   "total": 33,
    "target": "0",
-   "text": "Approved/overdue items older than 3 days (OVERDUE + DESK Blocked): 0 (target 0); 9 more carry no date, so they cannot age (give each a date)"
+   "text": "Approved/overdue items older than 3 days (OVERDUE + DESK Blocked): 0 (target 0); 5 more carry no date, so they cannot age (give each a date)"
   },
   {
    "id": "shopmy_unaccounted",
    "area": "ShopMy",
    "status": "OK",
    "have": 0,
-   "total": 247,
+   "total": 0,
    "target": "0",
    "text": "ShopMy mats not in FYM, staged or decided: 0 (target 0)"
   },
@@ -113,37 +109,37 @@
    "id": "shopmy_fym",
    "area": "ShopMy",
    "status": "GAP",
-   "have": 127,
-   "total": 173,
+   "have": 0,
+   "total": 0,
    "target": "all",
-   "text": "ShopMy mats live in FYM: 127 of 173 (target all); shopmy-crosscheck-nov07.json: 51 staged, 58 Amazon (her pick), 11 skipped, 5 photo-held"
+   "text": "ShopMy mats live in FYM: 0 of 0 (target all); shopmy-crosscheck-nov08.json: ? staged, 0 Amazon (her pick), 0 skipped, 0 photo-held"
   },
   {
    "id": "price_mats",
    "area": "FYM",
    "status": "GAP",
-   "have": 813,
-   "total": 1521,
+   "have": 1451,
+   "total": 1574,
    "target": "all",
-   "text": "Mats with a price (price filter hides the rest): 813 of 1521 (target all) | missing: Let's Be Besties 284, Mahj & Moon 106, Betty June & Jeannette 75, Oh My Mahjong 33, Luna EK Studio 28, Piper Chase Studios 27 +27 more"
+   "text": "Mats with a price (price filter hides the rest): 1451 of 1574 (target all) | missing: Oh My Mahjong 32, Amazon 28, Let's Be Besties 22, Rebecca Illustrated 7, Bespoke Mahjong 5, Tigre de Tartan 5 +13 more"
   },
   {
    "id": "gallery_has_fym",
    "area": "Gallery",
    "status": "GAP",
-   "have": 1447,
-   "total": 1469,
+   "have": 1502,
+   "total": 1507,
    "target": "all",
-   "text": "Visible FYM mats that are in the live Mat Gallery: 1447 of 1469 (target all); House of Hearts (FYM only), Mahjong Studios, side-B twins left out | missing: Bespoke Mahjong: Year of the Dragon - Periwinkle, Mahjong Register: Letters to Santa Double-Sided Leatherette, Mahjong Register: Holly Jolly Double-Sided Leatherette, Tigre de Tartan: French Mural, Charleston Mahjong Club: Club Mat, My Fair Mahjong: Confetti Lemon Lime +16 more"
+   "text": "Visible FYM mats that are in the Mat Gallery: 1502 of 1507 (target all); out on purpose: side B / twin listing 44, gallery photo hold (with reason) 8, House of Hearts (FYM only, Oct 25) 8, duplicate photo merged into its twin 7, removed brand: her album-matched mats kept in the gallery (Nov 6 1:33pm) 9 | missing: Bespoke Mahjong: Year of the Dragon - Periwinkle, Mahjong Register: Letters to Santa Double-Sided Leatherette, Mahjong Register: Holly Jolly Double-Sided Leatherette, Charleston Mahjong Club: Club Mat, My Fair Mahjong: Confetti Lemon Lime"
   },
   {
    "id": "gallery_shows_hidden",
    "area": "Gallery",
-   "status": "GAP",
-   "have": 23,
-   "total": 1455,
+   "status": "OK",
+   "have": 0,
+   "total": 1496,
    "target": "0",
-   "text": "Gallery mats that FYM hides: 23 (target 0); 0 gallery rows not found in FYM at all | missing: Betty June & Jeannette: The Most Wonderful Time of the Year, Etsy: Savannah Soirée, Let's Be Besties: Paint Feathers, Let's Be Besties: Tobacco Leaves, Let's Be Besties: Tobacco Leaves Blue, Mahj Squad: Pink Floral Chinoiserie +17 more"
+   "text": "Gallery mats that FYM hides: 0 (target 0); 0 gallery rows not found in FYM at all"
   },
   {
    "id": "gallery_version",
@@ -152,88 +148,88 @@
    "have": 1,
    "total": 1,
    "target": "all",
-   "text": "Live gallery built from the live FYM (v117): 1 of 1 (target all); gallery data-fym=v117"
+   "text": "Live gallery built from the live FYM (v118): 1 of 1 (target all); gallery data-fym=v118"
   },
   {
    "id": "albums_in_fym",
    "area": "Albums",
    "status": "GAP",
-   "have": 37,
-   "total": 43,
+   "have": 38,
+   "total": 45,
    "target": "all",
-   "text": "Live album pages wired to an FYM tile set: 37 of 43 (target all) | missing: lilac-soiree, papaya-spritz, preppy-soiree, shangri-la, spring-love, sunday-tile-set"
+   "text": "Live album pages wired to an FYM tile set: 38 of 45 (target all) | missing: deco-lagoon, lilac-soiree, papaya-spritz, preppy-soiree, shangri-la, spring-love +1 more"
   },
   {
    "id": "fym_album_link",
    "area": "Albums",
    "status": "GAP",
-   "have": 47,
-   "total": 52,
+   "have": 48,
+   "total": 53,
    "target": "all",
-   "text": "FYM sets with her picks that link to their album: 47 of 52 (target all) | missing: December 1994, Hummingbird, Sunday, Papaya Spritz, Spirit of Christmas"
+   "text": "FYM sets with her picks that link to their album: 48 of 53 (target all) | missing: December 1994, Hummingbird, Sunday, Papaya Spritz, Spirit of Christmas"
   },
   {
    "id": "walls",
    "area": "FYM",
    "status": "GAP",
-   "have": 30,
-   "total": 283,
+   "have": 254,
+   "total": 282,
    "target": "all",
-   "text": "Table view walls (back colour confirmed): 30 of 283 visible tile sets (target all) | missing: Heritage 2.0, Gemma, Jasmine, Luminaire, Osler, Pearlescent +247 more"
+   "text": "Table view walls (back colour confirmed): 254 of 282 visible tile sets (target all) | missing: Holly Jolly (Rudolph Red), Holly Jolly (Grinch Green), Nutcracker Ballet, Round Top Stamped, White Signature, The Belle +22 more"
   },
   {
    "id": "tv_mats_checked",
    "area": "FYM",
-   "status": "GAP",
-   "have": 1187,
-   "total": 1521,
+   "status": "OK",
+   "have": 1574,
+   "total": 1574,
    "target": "all",
-   "text": "Mats checked for Table view (have a class): 1187 of 1521 visible mats (target all) | missing: Tigre de Tartan: Queen Bee (retired), Sunday Mahjong: Vegan Leather (Ruby), Sunday Mahjong: Vegan Leather (Forrest), Let's Be Besties: Abstract, Let's Be Besties: Acrylic Flowers, Let's Be Besties: Agate Whirlpool +328 more"
+   "text": "Mats checked for Table view (have a class): 1574 of 1574 visible mats (target all)"
   },
   {
    "id": "tv_racks",
    "area": "FYM",
    "status": "GAP",
-   "have": 169,
+   "have": 232,
    "total": 293,
    "target": "all",
-   "text": "Racks usable in Table view: 169 of 293 visible racks (target all) | missing: Oh My Mahjong White Acrylic, Oh My Mahjong Tortoise Shell, Oh My Mahjong Agate, Miss Mahjong Peach Sorbet Scalloped, Miss Mahjong Cornflower Blue Scalloped, Oh My Mahjong Burl +118 more"
+   "text": "Racks usable in Table view: 232 of 293 visible racks (target all) | missing: Dark Tortoise and Brass Acrylic Racks, Wood Racks with Classic Pusher, Dark Tortoise Classic Acrylic Racks, Clear Acrylic Racks with Scalloped Pusher, Wavy Mahjong Rack Pusher Set - White, Wavy Mahjong Rack Pusher Set - Light Pink +55 more"
   },
   {
    "id": "tv_mats_usable",
    "area": "FYM",
    "status": "GAP",
-   "have": 1102,
-   "total": 1521,
+   "have": 1492,
+   "total": 1574,
    "target": "all",
-   "text": "Mats usable in Table view (class A/B): 1102 of 1521 (target all); 85 class C (need a flat photo)"
+   "text": "Mats usable in Table view (class A/B): 1492 of 1574 (target all); 82 class C (need a flat photo)"
   },
   {
    "id": "price_tiles",
    "area": "FYM",
    "status": "GAP",
-   "have": 249,
-   "total": 283,
+   "have": 273,
+   "total": 282,
    "target": "all",
-   "text": "Tile sets with a price: 249 of 283 (target all) | missing: Heritage 1.0, Emerald, Pearlescent, Miss Classic Jade, Miss Classic Malachite, Birdie +28 more"
+   "text": "Tile sets with a price: 273 of 282 (target all) | missing: Emerald, Birdie, Dandy, Glitterville, Limoncello, Lola +3 more"
   },
   {
    "id": "price_racks",
    "area": "FYM",
-   "status": "GAP",
-   "have": 289,
+   "status": "OK",
+   "have": 293,
    "total": 293,
    "target": "all",
-   "text": "Racks with a price: 289 of 293 (target all) | missing: Bam! Let's Mahjong White Acrylic Scalloped, Tala Mahj Horizon Woven Rattan, Tala Mahj Shoreline Chocolate Woven Rattan, Mahj Pit White Beech Wood"
+   "text": "Racks with a price: 293 of 293 (target all)"
   },
   {
    "id": "album_picks",
    "area": "Albums",
    "status": "GAP",
-   "have": 1326,
-   "total": 1712,
+   "have": 1751,
+   "total": 1884,
    "target": "all",
-   "text": "Her FYM picks named on the live album page: 1326 of 1712 (target all); name match, a little noise | missing: Larkspur (27), Sugarplum Plaid (23), Very Merry Wreath Premium (19), Perfectly Wrapped (17), Poppins (15), Spirit of Christmas (15) +4 more"
+   "text": "Her FYM picks named on the live album page: 1751 of 1884 (target all); name match, a little noise | missing: Very Merry Wreath Premium (19), Festive Plaid Premium (9), Bespoke x Corey Paige - Holiday Love Mat - Red/Green (Side A: All-Over Hearts) (8), Letters to Santa Premium (7), Paige Spearin “Shell Yeah” (7), Ski Club Mat - Periwinkle Center (7) +4 more"
   },
   {
    "id": "search_hidden",
@@ -256,72 +252,72 @@
   {
    "id": "search_albums",
    "area": "Search",
-   "status": "OK",
+   "status": "GAP",
    "have": 43,
-   "total": 43,
+   "total": 45,
    "target": "all",
-   "text": "Live album pages in the site search: 43 of 43 (target all)"
+   "text": "Live album pages in the site search: 43 of 45 (target all) | missing: /deco-lagoon-mahjong-tile-matches, /juniper-mahjong-tile-matches"
   },
   {
    "id": "search_mats",
    "area": "Search",
    "status": "OK",
-   "have": 1455,
-   "total": 1455,
+   "have": 1496,
+   "total": 1496,
    "target": "all",
-   "text": "Gallery mats findable in site search: 1455 of 1455 (target all)"
+   "text": "Gallery mats findable in site search: 1496 of 1496 (target all)"
   },
   {
    "id": "tile_colours",
    "area": "FYM",
    "status": "GAP",
-   "have": 275,
-   "total": 283,
+   "have": 274,
+   "total": 282,
    "target": "all",
-   "text": "Tile sets in a colour group (tile colour filter): 275 of 283 (target all) | missing: The Empress, Art Deco, Hocus Pocus Halloween, Mahj-O-Ween, Celebration, Fire + Fortune (Ember) +2 more"
+   "text": "Tile sets in a colour group (tile colour filter): 274 of 282 (target all) | missing: The Empress, Art Deco, Hocus Pocus Halloween, Mahj-O-Ween, Celebration, Fire + Fortune (Ember) +2 more"
   },
   {
    "id": "tile_photo",
    "area": "FYM",
    "status": "OK",
-   "have": 283,
-   "total": 283,
+   "have": 282,
+   "total": 282,
    "target": "all",
-   "text": "Tile sets with a tile photo: 283 of 283 (target all)"
+   "text": "Tile sets with a tile photo: 282 of 282 (target all)"
   },
   {
    "id": "pile",
    "area": "FYM",
    "status": "OK",
-   "have": 283,
-   "total": 283,
+   "have": 282,
+   "total": 282,
    "target": "all",
-   "text": "Tile sets with a pile image: 283 of 283 (target all)"
+   "text": "Tile sets with a pile image: 282 of 282 (target all)"
   },
   {
    "id": "tagline",
    "area": "FYM",
    "status": "GAP",
    "have": 1,
-   "total": 283,
+   "total": 282,
    "target": "all",
-   "text": "Tile sets with a tagline (\"dating profile\" line): 1 of 283 (target all) | missing: Heritage 1.0, Gatsby, Heritage 2.0, Drake, Lagoon, Seabreeze +40 more"
+   "text": "Tile sets with a tagline (\"dating profile\" line): 1 of 282 (target all) | missing: Heritage 1.0, Gatsby, Heritage 2.0, Drake, Lagoon, Seabreeze +41 more"
   }
  ],
  "net": {
-  "at": "2026-11-07T20:49:02",
+  "at": "2026-11-09T12:02:20",
   "errors": [],
   "fym_pin": {
-   "sha": "8a3081f2a0d177914c45fc621778230ab4b84efd",
-   "path": "site-app/fym-v117/index.html"
+   "sha": "7817f04d2c907d1ea0d4fd01d857fa7a3cffb8bf",
+   "path": "site-app/fym-v118/index.html"
   },
   "gallery_pin": {
-   "sha": "c90f4aaf1b5eff4315677b76999cfc94969d586f",
-   "path": "site/livepatch/matgallery/data/matgallery-v117.json"
+   "sha": "4cb195dc86d5ece199ea99f5e1bc6ae8676476bd",
+   "path": "site/livepatch/matgallery/data/matgallery-v118.json"
   },
-  "gallery_data_fym": "v117",
+  "gallery_data_fym": "v118",
   "search_pin": {
-   "sha": "de5e43f1110ede2f42b7434706e3395e4d834a9a",
+   "sha": "3afb680eebe81c98bc390014aed34b7c92ec6104",
    "path": "assets/search/search-index.json"
   },
   "sitemap": [
@@ -381,7 +377,6 @@
    "/yellow-mountain-imports-discount-code",
    "/mahjong-co-discount-code",
    "/i-love-mahj-discount-code",
-   "/mahjong-row-and-co-discount-code",
    "/heritage-mahjong-tile-matches",
    "/glow-wild-mahjong-tile-matches",
    "/moonlight-mahjong-tile-matches",
@@ -412,7 +407,6 @@
    "/smith-mahjong-tile-matches",
    "/seabreeze-mahjong-tile-matches",
    "/talulah-mahjong-tile-matches",
-   "/cypress-forest-mahjong-tile-matches",
    "/osler-mahjong-tile-matches",
    "/anders-ruff-discount-code",
    "/pink-mahjong-tile-matches",
@@ -455,6 +449,8 @@
    "/brownstone-bloom-mahjong-tile-matches",
    "/faq",
    "/mahj-pit-discount-code",
+   "/juniper-mahjong-tile-matches",
+   "/deco-lagoon-mahjong-tile-matches",
    "/mahjong-discount-codes"
   ],
   "hub_brands": [
@@ -763,8 +759,8 @@
    "/mahjong-register-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-08",
+    "verified_min": "2026-11-08"
    },
    "/mahjong-row-and-co-discount-code": {
     "status": 200,
@@ -906,11 +902,11 @@
     "status": 200,
     "redirected": false
    },
-   "/cypress-forest-mahjong-tile-matches": {
-    "status": 200,
-    "redirected": true
-   },
    "/dandy-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/deco-lagoon-mahjong-tile-matches": {
     "status": 200,
     "redirected": false
    },
@@ -959,6 +955,10 @@
     "redirected": false
    },
    "/jasmine-mahjong-tile-matches": {
+    "status": 200,
+    "redirected": false
+   },
+   "/juniper-mahjong-tile-matches": {
     "status": 200,
     "redirected": false
    },
@@ -1100,20 +1100,20 @@
    }
   },
   "album_picks": {
-   "fym": "v117",
-   "named": 1326,
-   "total": 1712,
+   "fym": "v118",
+   "named": 1751,
+   "total": 1884,
    "top_missing": [
-    "Larkspur (27)",
-    "Sugarplum Plaid (23)",
     "Very Merry Wreath Premium (19)",
-    "Perfectly Wrapped (17)",
-    "Poppins (15)",
-    "Spirit of Christmas (15)",
-    "Tied With A Bow (14)",
-    "Vivienne (13)",
-    "Merry Mix (13)",
-    "Peony and Parasol (12)"
+    "Festive Plaid Premium (9)",
+    "Bespoke x Corey Paige - Holiday Love Mat - Red/Green (Side A: All-Over Hearts) (8)",
+    "Letters to Santa Premium (7)",
+    "Paige Spearin “Shell Yeah” (7)",
+    "Ski Club Mat - Periwinkle Center (7)",
+    "Posy Pop Watercolor Floral (6)",
+    "Winslow 1920 Navy (6)",
+    "Ski Club Mat- Red Sweater Border (6)",
+    "Secret Garden – Watercolor Floral (6)"
    ]
   }
  }
