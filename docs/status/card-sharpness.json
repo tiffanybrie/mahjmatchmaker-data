@@ -1,8 +1,32 @@
 {
- "at": "2026-11-09T03:12",
+ "at": "2026-11-09T03:42",
  "cards": 2178,
  "pages": 56,
  "fails": [
+  {
+   "page": "amara-mahjong-tile-matches",
+   "card": "Amara + Chinoiserie",
+   "img": "https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/85e29571-1487-44ce-89be-5f6726ebf851/25-amara-mahjong-tiles-britt-mills-chinoiserie-mat.jpg?format=750w",
+   "why": "blurry mat r=0.236 e2=7.804"
+  },
+  {
+   "page": "amara-mahjong-tile-matches",
+   "card": "Amara + Peace Love Holiday",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/amara-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "why": "blurry mat r=0.203 e2=3.642"
+  },
+  {
+   "page": "amara-mahjong-tile-matches",
+   "card": "Amara + Sugarplum Plaid",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/amara-mahjong-tiles-peace-love-mahjong-sugarplum-plaid-mat.jpg",
+   "why": "blurry mat r=0.237 e2=6.11"
+  },
+  {
+   "page": "birdie-mahjong-tile-matches",
+   "card": "Birdie + Holiday Love Blue",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/birdie-mahjong-tiles-bespoke-mahjong-holiday-love-blue-mat.jpg",
+   "why": "blurry mat r=0.236 e2=8.491"
+  },
   {
    "page": "brownstone-bloom-mahjong-tile-matches",
    "card": "Brownstone Bloom + Neutre Blanc",
@@ -13,13 +37,217 @@
    "page": "coquette-mahjong-tile-matches",
    "card": "Coquette + Bejeweled Dream",
    "img": "https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/0a95d0c3-ea75-4b2b-bc78-b910c579b2cb/12-coquette-mahjong-tiles-mahj-squad-bejeweled-dream-mat.jpg?format=750w",
-   "why": "blurry mat r=0.17 e2=0.718"
+   "why": "blurry mat r=0.145 e2=0.845"
+  },
+  {
+   "page": "coquette-mahjong-tile-matches",
+   "card": "Coquette + Peace Love Holiday",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/coquette-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "why": "blurry mat r=0.203 e2=3.642"
+  },
+  {
+   "page": "coquette-mahjong-tile-matches",
+   "card": "Coquette + Sugarplum Plaid",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/coquette-mahjong-tiles-peace-love-mahjong-sugarplum-plaid-mat.jpg",
+   "why": "blurry mat r=0.237 e2=6.11"
+  },
+  {
+   "page": "dandy-mahjong-tile-matches",
+   "card": "Dandy + Peace Love Holiday",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/dandy-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "why": "blurry mat r=0.203 e2=3.642"
+  },
+  {
+   "page": "dandy-mahjong-tile-matches",
+   "card": "Dandy + Sugarplum Plaid",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/dandy-mahjong-tiles-peace-love-mahjong-sugarplum-plaid-mat.jpg",
+   "why": "blurry mat r=0.237 e2=6.11"
+  },
+  {
+   "page": "emerald-mahjong-tile-matches",
+   "card": "Emerald + Peace Love Holiday",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/emerald-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "why": "blurry mat r=0.203 e2=3.642"
+  },
+  {
+   "page": "emerald-mahjong-tile-matches",
+   "card": "Emerald + Sugarplum Plaid",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/emerald-mahjong-tiles-peace-love-mahjong-sugarplum-plaid-mat.jpg",
+   "why": "blurry mat r=0.237 e2=6.11"
+  },
+  {
+   "page": "glitterville-mahjong-tile-matches",
+   "card": "Glitterville + Peace Love Holiday",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/glitterville-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "why": "blurry mat r=0.203 e2=3.642"
+  },
+  {
+   "page": "glitterville-mahjong-tile-matches",
+   "card": "Glitterville + Sugarplum Plaid",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/glitterville-mahjong-tiles-peace-love-mahjong-sugarplum-plaid-mat.jpg",
+   "why": "blurry mat r=0.237 e2=6.11"
+  },
+  {
+   "page": "glow-wild-mahjong-tile-matches",
+   "card": "Glow Wild + Peace Love Holiday",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/glow-wild-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "why": "blurry mat r=0.203 e2=3.642"
+  },
+  {
+   "page": "glow-wild-mahjong-tile-matches",
+   "card": "Glow Wild + Sugarplum Plaid",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/glow-wild-mahjong-tiles-peace-love-mahjong-sugarplum-plaid-mat.jpg",
+   "why": "blurry mat r=0.237 e2=6.11"
+  },
+  {
+   "page": "jade-mahjong-tile-matches",
+   "card": "Jade + Holiday Love Red &amp; Green",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/jade-mahjong-tiles-bespoke-mahjong-holiday-love-red-green-mat.jpg",
+   "why": "blurry mat r=0.233 e2=8.248"
+  },
+  {
+   "page": "jade-mahjong-tile-matches",
+   "card": "Jade + Sugarplum Plaid",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/jade-mahjong-tiles-peace-love-mahjong-sugarplum-plaid-mat.jpg",
+   "why": "blurry mat r=0.237 e2=6.11"
+  },
+  {
+   "page": "jasmine-mahjong-tile-matches",
+   "card": "Jasmine + Sugarplum Plaid",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/jasmine-mahjong-tiles-peace-love-mahjong-sugarplum-plaid-mat.jpg",
+   "why": "blurry mat r=0.237 e2=6.11"
+  },
+  {
+   "page": "la-fete-mahjong-tile-matches",
+   "card": "La Fete + Peace Love Holiday",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/la-fete-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "why": "blurry mat r=0.203 e2=3.642"
+  },
+  {
+   "page": "la-fete-mahjong-tile-matches",
+   "card": "La Fete + Sugarplum Plaid",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/la-fete-mahjong-tiles-peace-love-mahjong-sugarplum-plaid-mat.jpg",
+   "why": "blurry mat r=0.237 e2=6.11"
   },
   {
    "page": "lagoon-mahjong-tile-matches",
    "card": "Lagoon + Gray Malin",
    "img": "https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/09334761-9db2-4a5a-bf17-20b45ec0d5ed/15-lagoon-mahjong-tiles-bespoke-mahjong-gray-malin-mat.jpg?format=750w",
    "why": "blurry mat r=0.188 e2=2.055"
+  },
+  {
+   "page": "moonlight-mahjong-tile-matches",
+   "card": "Moonlight + Holiday Love Blue",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/moonlight-mahjong-tiles-bespoke-mahjong-holiday-love-blue-mat.jpg",
+   "why": "blurry mat r=0.236 e2=8.491"
+  },
+  {
+   "page": "nantucket-mahjong-tile-matches",
+   "card": "Nantucket + Holiday Love Red &amp; Green",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/nantucket-mahjong-tiles-bespoke-mahjong-holiday-love-red-green-mat.jpg",
+   "why": "blurry mat r=0.233 e2=8.248"
+  },
+  {
+   "page": "nantucket-mahjong-tile-matches",
+   "card": "Nantucket + Peace Love Holiday",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/nantucket-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "why": "blurry mat r=0.203 e2=3.642"
+  },
+  {
+   "page": "nantucket-mahjong-tile-matches",
+   "card": "Nantucket + Sugarplum Plaid",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/nantucket-mahjong-tiles-peace-love-mahjong-sugarplum-plaid-mat.jpg",
+   "why": "blurry mat r=0.237 e2=6.11"
+  },
+  {
+   "page": "osler-mahjong-tile-matches",
+   "card": "Osler + Holiday Love Blue",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/osler-mahjong-tiles-bespoke-mahjong-holiday-love-blue-mat.jpg",
+   "why": "blurry mat r=0.236 e2=8.491"
+  },
+  {
+   "page": "palm-royale-mahjong-tile-matches",
+   "card": "Palm Royale + Holiday Love Red &amp; Green",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/palm-royale-mahjong-tiles-bespoke-mahjong-holiday-love-red-green-mat.jpg",
+   "why": "blurry mat r=0.233 e2=8.248"
+  },
+  {
+   "page": "papaya-spritz-mahjong-tile-matches",
+   "card": "Papaya Spritz + Boots &amp; Bubbles in Periwinkle",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@fbf7ec953d379647212f69722c3cf90239c09b8b/assets/cards/papaya-spritz/papaya-spritz-mahjong-tiles-bam-bird-boutique-boots-and-bubbles-in-periwinkle-mat.jpg",
+   "why": "blurry mat r=0.208 e2=1.869"
+  },
+  {
+   "page": "pearlescent-mahjong-tile-matches",
+   "card": "Pearlescent + Peace Love Holiday",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/pearlescent-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "why": "blurry mat r=0.203 e2=3.642"
+  },
+  {
+   "page": "pearlescent-mahjong-tile-matches",
+   "card": "Pearlescent + Sugarplum Plaid",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/pearlescent-mahjong-tiles-peace-love-mahjong-sugarplum-plaid-mat.jpg",
+   "why": "blurry mat r=0.237 e2=6.11"
+  },
+  {
+   "page": "pippa-mahjong-tile-matches",
+   "card": "Pippa + Sugarplum Plaid",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/pippa-mahjong-tiles-peace-love-mahjong-sugarplum-plaid-mat.jpg",
+   "why": "blurry mat r=0.237 e2=6.11"
+  },
+  {
+   "page": "seabreeze-mahjong-tile-matches",
+   "card": "Seabreeze + Peace Love Holiday",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/seabreeze-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "why": "blurry mat r=0.203 e2=3.642"
+  },
+  {
+   "page": "seabreeze-mahjong-tile-matches",
+   "card": "Seabreeze + Sugarplum Plaid",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/seabreeze-mahjong-tiles-peace-love-mahjong-sugarplum-plaid-mat.jpg",
+   "why": "blurry mat r=0.237 e2=6.11"
+  },
+  {
+   "page": "smith-mahjong-tile-matches",
+   "card": "Smith + Holiday Love Blue",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/smith-mahjong-tiles-bespoke-mahjong-holiday-love-blue-mat.jpg",
+   "why": "blurry mat r=0.236 e2=8.491"
+  },
+  {
+   "page": "solara-mahjong-tile-matches",
+   "card": "Solara + Vintage Floral Gingham",
+   "img": "https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/c0658ef0-0234-4fc2-a12f-398c2130aa3c/28-solara-mahjong-tiles-mahj-and-moon-vintage-floral-gingham-mat.jpg?format=750w",
+   "why": "blurry mat r=0.229 e2=5.177"
+  },
+  {
+   "page": "sorbet-mahjong-tile-matches",
+   "card": "Sorbet + Peace Love Holiday",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ee24b7ba1223737d925aef3ea5665c5dd418b566/assets/cards/holiday-v4/sorbet-mahjong-tiles-peace-love-mahjong-peace-love-holiday-mat.jpg",
+   "why": "blurry mat r=0.203 e2=3.642"
+  },
+  {
+   "page": "sorbet-mahjong-tile-matches",
+   "card": "Sorbet + Sugarplum Plaid",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/sorbet-mahjong-tiles-peace-love-mahjong-sugarplum-plaid-mat.jpg",
+   "why": "blurry mat r=0.237 e2=6.11"
+  },
+  {
+   "page": "sunday-tile-set-mahjong-tile-matches",
+   "card": "Sunday Tile Set + Sugarplum Plaid",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/sunday-tile-set-mahjong-tiles-peace-love-mahjong-sugarplum-plaid-mat.jpg",
+   "why": "blurry mat r=0.237 e2=6.11"
+  },
+  {
+   "page": "talulah-mahjong-tile-matches",
+   "card": "Talulah + Sugarplum Plaid",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@aa72f9439bc2c17378d057b363aa280d6779025f/assets/cards/missed-nov07/talulah-mahjong-tiles-peace-love-mahjong-sugarplum-plaid-mat.jpg",
+   "why": "blurry mat r=0.237 e2=6.11"
+  },
+  {
+   "page": "tortoise-mahjong-tile-matches",
+   "card": "Tortoise + Sugarplum Plaid",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@55b9ce20baa66d3d2db213042c2e40acf397ce44/assets/cards/missed-nov07/tortoise-mahjong-tiles-peace-love-mahjong-sugarplum-plaid-mat.jpg",
+   "why": "blurry mat r=0.237 e2=6.114"
   }
  ]
 }
