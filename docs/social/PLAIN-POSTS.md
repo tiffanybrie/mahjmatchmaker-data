@@ -39,3 +39,8 @@ Claude HANDLES this end to end, the moment the album is ready. She does not buil
 
 ## Do it the moment it happens (Tiffany Nov 10 12:06pm)
 Never hold work to batch it. Holding only means Chrome drops or something gets blocked later. Same usage either way: do it now.
+
+## Tags + reels (Tiffany Nov 10 12:33-12:36pm)
+- Every brand shown gets tagged: @brand in the caption (plain_post.py puts the set's brand as @handle) + a "Shown: <mat> by @brand" line for any other brand visible, and Tag people for every one of them. A collab invite is NOT a tag.
+- Reels are built 9:16 natively: background colour runs edge to edge (no bars), first frame = album cover, reel cover = album cover at 9:16.
+- Every reel comes with a suggested song + start point. The API catalog has no major-label songs, so a reel with her song is a reminder post with the steps sent in chat.

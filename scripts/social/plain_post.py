@@ -29,6 +29,10 @@ if not pct:
 # Her voice, from her own Nov 9 10:47am line: "The latest Oh My Mahjong set Juniper releases this Wednesday 11/11 at
 # 10am CT! As always I have an album for you (link below) and you can also match both Juniper and her new partner mat
 # Lotus up in Find-Your-Mat-ch!" Facts + a little excitement in HER words; no invented one-liners.
+H = json.load(open(R + '/config/social/ig-handles.json')); hb = H.get(x.brand)
+brand_at = f"@{hb}" if hb else x.brand   # IG: tag the brand in the caption (rule 5); group post keeps the name
+when_ig = (f"The latest {brand_at} set, {x.set}, is in stock now!" if x.instock
+        else f"The latest {brand_at} set, {x.set}, releases {x.release}!")
 when = (f"The latest {x.brand} set, {x.set}, is in stock now!" if x.instock
         else f"The latest {x.brand} set, {x.set}, releases {x.release}!")
 pm = f" and her new partner mat, {x.partner_mat}," if x.partner_mat else ""
@@ -37,7 +41,7 @@ code = f"Use code MAHJMATCH to save {pct}% at {x.brand} 💕"
 _m = json.load(open(R + '/config/fym-mats-snapshot.json'))['mats']
 depth = f"{(sum(1 for v in _m.values() if not v.get('hid')) // 100) * 100:,}"
 every = f" (plus an album for every {x.brand} set ever made)" if x.every_set else ""
-ig = (f"{when} {x.emoji}\n\nAs always, I have an album for you: {x.count} mats matched to {x.set}{every}, link in bio. "
+ig = (f"{when_ig} {x.emoji}\n\nAs always, I have an album for you: {x.count} mats matched to {x.set}{every}, link in bio. "
       f"You can also match {x.set}{pm} in Find Your Mat-ch, along with over {depth} mats on the mahj market!\n\n{code}\n\n"
       f"#mahjong #{x.tag} #mahjongtiles #mahjongmat #MahjMatch")
 grp = (f"{when} {x.emoji}\n\nAs always, I have an album for you: {x.count} mats matched to {x.set}{every}.\n{x.album}\n\n"
