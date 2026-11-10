@@ -44,3 +44,5 @@ Never hold work to batch it. Holding only means Chrome drops or something gets b
 - Every brand shown gets tagged: @brand in the caption (plain_post.py puts the set's brand as @handle) + a "Shown: <mat> by @brand" line for any other brand visible, and Tag people for every one of them. A collab invite is NOT a tag.
 - Reels are built 9:16 natively: background colour runs edge to edge (no bars), first frame = album cover, reel cover = album cover at 9:16.
 - Every reel comes with a suggested song + start point. The API catalog has no major-label songs, so a reel with her song is a reminder post with the steps sent in chat.
+- Reel covers: ALWAYS the standard tall album cover from scripts/social/covers/reel_tall.py (assets/covers/albums/reel-tall/<set>.jpg). Never mirror, flip or rearrange tile photos to fill space (Tiffany Nov 10 12:42pm).
+- No white bars around photos inside graphics: crop the photo to the mat so it fills its card (Tiffany Nov 10 12:42pm, Juniper slide 6).
