@@ -1,0 +1,8 @@
+{
+ "_rule": "ONE ALBUM A WEEK (Tiffany Nov 10 7:50am). A finished album is staged on a HIDDEN page until its slot. Each album gets a go-live date here BEFORE go-live, one per Mon-Sun week, chosen around partner launches (e.g. the week a set drops gets that set's album). The launch kit (group post, IG/FB, email) is built for that date. album_gate.py --golive fails [10c] with no slot, before the slot date, or if another album already holds that week.",
+ "slots": {
+  "deco-lagoon": "2026-11-08",
+  "juniper": "2026-11-09"
+ },
+ "_note": "Deco Lagoon (Nov 8) and Juniper (album live ~Nov 7-9) both went live in the week of Nov 9 by mistake: grandfathered. From here on, one per week."
+}

@@ -1280,3 +1280,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - 2026-11-10 7:48am Tiffany: correction - codes post went up MONDAY 11/9 (11:16am); partner watch caught Domino Blonde Monday 1:30pm (not Sunday).
 - 2026-11-10 7:49am Tiffany: TdT image-only code rule is for the WEBSITE/Google only. In our own FB group, type the code ("use code MAHJMATCH, save 10%"). Never send people to our own page to buy: link the BRAND's product page with our code/affiliate link.
 - 2026-11-10 7:52am: /links Juniper card LIVE (Juniper card first, Deco second; album strip Juniper first). Verified by curl.
+- 2026-11-10 7:50am Tiffany: ONE ALBUM A WEEK. Deco Lagoon should have waited a week (OMM Juniper week); going live early made extra work and undercut Deco's promotion. Ready albums stay on a hidden page with a scheduled go-live week + launch kit. Enforced: config/album-launch-slots.json + album_gate.py --golive [10c]; CLAUDE.md + NEW-ALBUM-CHECKLIST updated.

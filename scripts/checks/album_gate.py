@@ -203,6 +203,23 @@ def in_progress():
     return sorted(out - SKIP)
 
 
+def slot_check(s):
+    """[10c] ONE ALBUM A WEEK (Tiffany Nov 10): a go-live date in config/album-launch-slots.json,
+    not before it, and no other album in the same Mon-Sun week."""
+    import datetime as dt
+    sl = J('config/album-launch-slots.json', {}).get('slots', {})
+    slug = s.lower().replace(' ', '-').replace('(', '').replace(')', '')
+    keys = [k for k in sl if k == slug or k == s]
+    if not keys:
+        return [f"[10c] {s}: no go-live slot. Pick its week in config/album-launch-slots.json (one album a week; stage it hidden until then)"]
+    d = dt.date.fromisoformat(sl[keys[0]]); bad = []
+    if dt.date.today() < d: bad.append(f"[10c] {s}: slot is {d}, not yet. Keep the page hidden until then")
+    wk = d.isocalendar()[:2]
+    others = [k for k, v in sl.items() if k != keys[0] and dt.date.fromisoformat(v).isocalendar()[:2] == wk]
+    if others: bad.append(f"[10c] {s}: week of {d} already has {', '.join(others)}. One album a week: move it")
+    return bad
+
+
 def golive(s):
     """[10b] bring-in loop: every bring-in closed (paid link + catalog staging)."""
     sys.path.insert(0, R + 'scripts/albumreview')
@@ -228,7 +245,7 @@ def main(a):
         return 1 if fails else 0
     if not a: sys.exit(__doc__)
     bad, proof = check(a[0])
-    if '--golive' in a: bad += golive(a[0])
+    if '--golive' in a: bad += golive(a[0]) + slot_check(a[0])
     if bad:
         print(f'ALBUM GATE FAIL {a[0]} ({len(bad)}):'); [print('  ' + b) for b in bad]; return 1
     if proof.get('variety_warning'): print('WARNING (variety): ' + proof['variety_warning'])
