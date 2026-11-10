@@ -15,3 +15,10 @@ Claude does NOT write these captions freehand. Run `scripts/social/plain_post.py
 If a post needs words the script can't produce, it is not a plain post and goes to Tiffany.
 Graphics: plain labels too (Colors, Tile faces, Racks that match, Top mat match, N mats matched). No personality copy.
 Retired: hotline/character reels, tile-set "dating profiles", one-liners. Do not build new ones unless she asks.
+
+## Correction, Tiffany Nov 10 11:49am: facts, but in HER voice with a little excitement
+"You could still have a little bit of excitement in it and try to write it in my voice, not just like new album, colon."
+Not robotic. The template sentences are her own words (Nov 9 10:47am codes-post line): "The latest <Brand> set, <Set>,
+releases <when>!" / "As always, I have an album for you" / "You can also match <Set> and her new partner mat, <Mat>, in
+Find Your Mat-ch!" / "Use code MAHJMATCH to save N% at <Brand> 💕". Excitement = her exclamation points + 1-2 set-colour
+emojis. Still no invented one-liners or personality copy.

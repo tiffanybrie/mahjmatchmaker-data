@@ -6,7 +6,7 @@ monitor it, and I don't have time." So Claude no longer WRITES album-launch capt
 sentences with facts (set, brand, release time, match count, code %), and nothing else. No one-liners, no
 personality copy, no "she's a ...". Rules: docs/social/PLAIN-POSTS.md. Output is linted with content_lint.py.
 
-Usage: plain_post.py --set Juniper --brand "Oh My Mahjong" --release "Wed 11/11 at 10am CT" --count 42 \
+Usage: plain_post.py --set Juniper --brand "Oh My Mahjong" --release "this Wednesday 11/11 at 10am CT" --count 42 \
          --album https://www.mahjmatchmaker.com/juniper-mahjong-tile-matches --tag ohmymahjong --out <dir>
 Writes <dir>/ig-caption.txt (IG + FB Page) and <dir>/group-post.txt (FB group, links typed out)."""
 import argparse, json, os, subprocess, sys
@@ -17,22 +17,26 @@ a = argparse.ArgumentParser()
 for k in ('set', 'brand', 'release', 'album', 'tag', 'out'):
     a.add_argument('--' + k, required=True)
 a.add_argument('--count', type=int, required=True)
+a.add_argument('--partner-mat', default='')
+a.add_argument('--emoji', default='')
 a.add_argument('--instock', action='store_true', help='set is already for sale: no release line')
 x = a.parse_args()
 
 pct = json.load(open(R + '/config/code-truth.json'))['pct'].get(x.brand)
 if not pct:
     sys.exit(f'FAIL: no verified code % for {x.brand} in config/code-truth.json')
-when = f"{x.set} is in stock now at {x.brand}." if x.instock else f"{x.set} releases {x.release} at {x.brand}."
-code = f"Use code MAHJMATCH to save {pct}% at {x.brand}."
-
-ig = (f"New album: {x.set} by {x.brand}.\n\n{when}\n\n"
-      f"We matched {x.count} mats to {x.set}. See them all in the {x.set} album, or match {x.set} yourself in "
-      f"Find Your Mat-ch. Link in bio.\n\n{code}\n\n"
+# Her voice, from her own Nov 9 10:47am line: "The latest Oh My Mahjong set Juniper releases this Wednesday 11/11 at
+# 10am CT! As always I have an album for you (link below) and you can also match both Juniper and her new partner mat
+# Lotus up in Find-Your-Mat-ch!" Facts + a little excitement in HER words; no invented one-liners.
+when = (f"The latest {x.brand} set, {x.set}, is in stock now!" if x.instock
+        else f"The latest {x.brand} set, {x.set}, releases {x.release}!")
+pm = f" and her new partner mat, {x.partner_mat}," if x.partner_mat else ""
+code = f"Use code MAHJMATCH to save {pct}% at {x.brand} 💕"
+ig = (f"{when} {x.emoji}\n\nAs always, I have an album for you: {x.count} mats matched to {x.set} (link in bio). "
+      f"You can also match {x.set}{pm} in Find Your Mat-ch!\n\n{code}\n\n"
       f"#mahjong #{x.tag} #mahjongtiles #mahjongmat #MahjMatch")
-grp = (f"📸 New album: {x.set} by {x.brand}\n\n{when}\n\n"
-       f"We matched {x.count} mats to {x.set}. See them all in the album, or match {x.set} yourself in Find Your Mat-ch.\n"
-       f"Album: {x.album}\nFind Your Mat-ch: {FYM}\n\n{code}\n\n#MahjMatch")
+grp = (f"{when} {x.emoji}\n\nAs always, I have an album for you: {x.count} mats matched to {x.set}.\n{x.album}\n\n"
+       f"You can also match {x.set}{pm} in Find Your Mat-ch!\n{FYM}\n\n{code}\n\n#MahjMatch")
 
 os.makedirs(x.out, exist_ok=True)
 paths = []
