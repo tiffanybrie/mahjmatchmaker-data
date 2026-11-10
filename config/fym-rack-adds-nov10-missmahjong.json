@@ -1,0 +1,185 @@
+{
+ "_about": "FYM 1.19: Miss Mahjong scalloped acrylic racks, dropped Tue Nov 10 2026 10am CT (partner, code MAHJMATCH; scheduled task Tiffany asked for Nov 8). Source: missmahjong.com/products.json, 4:25pm UTC Nov 10: five separate single-variant products (published Nov 9 ~1:40pm CT, all available, $150, set of 4, 20in). Shopify image variant_ids are EMPTY on every image (single-variant products), so each colour's photo is its OWN product's featured image (position 1), picked by product handle, never by eye, never recoloured. Every brand photo crops the racks at the frame edge (angled group of 4 + a front view of 2, both cut off on the left), so no whole single rack can be cut out cleanly: shown as the brand photo on its own near-white background, c:false, like MFM Confetti / Mahj Mood Luxe (rule 6b fallback). Looked at on white AND navy Nov 10 (builder/fym_rack_images.py --sheet) and approved in rack_image_review.json. Rack length vs tiles: 20in racks, the same as every other Miss Mahjong rack and most partner acrylics; the brand says a full 160-tile wall fits even with large-format tiles, so they pair with any FYM tile set (vs 18.5in OMM). hx = median of the saturated (rack) pixels. Applied by builder/fym_fix_nov10/racks119_missmahjong.py <build> after racks119.py.",
+ "adds": [
+  {
+   "key": "missmahjong.com/bombshell-pink-scalloped-acrylic-racks",
+   "n": "Miss Mahjong Bombshell Pink Scalloped",
+   "bn": "Miss Mahjong",
+   "b": "Miss Mahjong",
+   "u": "https://missmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fbombshell-pink-scalloped-acrylic-racks%3Fref%3Dmahjmatch",
+   "u0": "https://missmahjong.com/products/bombshell-pink-scalloped-acrylic-racks?ref=mahjmatch",
+   "dc": "https://mahjmatchmaker.com/miss-mahjong-discount-code",
+   "pa": true,
+   "nc": false,
+   "rt": false,
+   "c": false,
+   "ml": false,
+   "sk": false,
+   "rf": [
+    "pink"
+   ],
+   "rs": {
+    "pink": 1.8
+   },
+   "hx": "#fa455f",
+   "pq": 3,
+   "len": 20.0,
+   "add": "nov10-v119",
+   "price": 150.0,
+   "sku": "RAC-BSP-FS",
+   "product_id": 9440655736970,
+   "variant_id": 50664851996810,
+   "src_image": {
+    "id": 43392176291978,
+    "position": 1,
+    "variant_ids": [],
+    "url": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Bombshell_Pink_Racks.png"
+   },
+   "img": "assets/racks/v119/missm-bombshell-pink.jpg"
+  },
+  {
+   "key": "missmahjong.com/butter-yellow-scalloped-acrylic-racks",
+   "n": "Miss Mahjong Butter Yellow Scalloped",
+   "bn": "Miss Mahjong",
+   "b": "Miss Mahjong",
+   "u": "https://missmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fbutter-yellow-scalloped-acrylic-racks%3Fref%3Dmahjmatch",
+   "u0": "https://missmahjong.com/products/butter-yellow-scalloped-acrylic-racks?ref=mahjmatch",
+   "dc": "https://mahjmatchmaker.com/miss-mahjong-discount-code",
+   "pa": true,
+   "nc": false,
+   "rt": false,
+   "c": false,
+   "ml": false,
+   "sk": false,
+   "rf": [
+    "yellow"
+   ],
+   "rs": {
+    "yellow": 1.8
+   },
+   "hx": "#fae8a7",
+   "pq": 3,
+   "len": 20.0,
+   "add": "nov10-v119",
+   "price": 150.0,
+   "sku": "RAC-BTY-FS",
+   "product_id": 9440625262730,
+   "variant_id": 50664755069066,
+   "src_image": {
+    "id": 43392175865994,
+    "position": 1,
+    "variant_ids": [],
+    "url": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Butter_Yellow_Racks.png"
+   },
+   "img": "assets/racks/v119/missm-butter-yellow.jpg"
+  },
+  {
+   "key": "missmahjong.com/pistachio-scalloped-acrylic-racks",
+   "n": "Miss Mahjong Pistachio Scalloped",
+   "bn": "Miss Mahjong",
+   "b": "Miss Mahjong",
+   "u": "https://missmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fpistachio-scalloped-acrylic-racks%3Fref%3Dmahjmatch",
+   "u0": "https://missmahjong.com/products/pistachio-scalloped-acrylic-racks?ref=mahjmatch",
+   "dc": "https://mahjmatchmaker.com/miss-mahjong-discount-code",
+   "pa": true,
+   "nc": false,
+   "rt": false,
+   "c": false,
+   "ml": false,
+   "sk": false,
+   "rf": [
+    "green"
+   ],
+   "rs": {
+    "green": 1.8
+   },
+   "hx": "#9fc7a0",
+   "pq": 3,
+   "len": 20.0,
+   "add": "nov10-v119",
+   "price": 150.0,
+   "sku": "RAC-PIS-FS",
+   "product_id": 9440608419978,
+   "variant_id": 50664695136394,
+   "src_image": {
+    "id": 43392176193674,
+    "position": 1,
+    "variant_ids": [],
+    "url": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Pistachio_Racks.png"
+   },
+   "img": "assets/racks/v119/missm-pistachio.jpg"
+  },
+  {
+   "key": "missmahjong.com/peony-scalloped-acrylic-racks",
+   "n": "Miss Mahjong Peony Scalloped",
+   "bn": "Miss Mahjong",
+   "b": "Miss Mahjong",
+   "u": "https://missmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fpeony-scalloped-acrylic-racks%3Fref%3Dmahjmatch",
+   "u0": "https://missmahjong.com/products/peony-scalloped-acrylic-racks?ref=mahjmatch",
+   "dc": "https://mahjmatchmaker.com/miss-mahjong-discount-code",
+   "pa": true,
+   "nc": false,
+   "rt": false,
+   "c": false,
+   "ml": false,
+   "sk": false,
+   "rf": [
+    "pink"
+   ],
+   "rs": {
+    "pink": 1.8
+   },
+   "hx": "#f4c3bd",
+   "pq": 3,
+   "len": 20.0,
+   "add": "nov10-v119",
+   "price": 150.0,
+   "sku": "RAC-PEO-FS",
+   "product_id": 9440637452426,
+   "variant_id": 50664797634698,
+   "src_image": {
+    "id": 43392176324746,
+    "position": 1,
+    "variant_ids": [],
+    "url": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Peony_Racks.png"
+   },
+   "img": "assets/racks/v119/missm-peony.jpg"
+  },
+  {
+   "key": "missmahjong.com/chartreuse-scalloped-acrylic-racks",
+   "n": "Miss Mahjong Chartreuse Scalloped",
+   "bn": "Miss Mahjong",
+   "b": "Miss Mahjong",
+   "u": "https://missmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fchartreuse-scalloped-acrylic-racks%3Fref%3Dmahjmatch",
+   "u0": "https://missmahjong.com/products/chartreuse-scalloped-acrylic-racks?ref=mahjmatch",
+   "dc": "https://mahjmatchmaker.com/miss-mahjong-discount-code",
+   "pa": true,
+   "nc": false,
+   "rt": false,
+   "c": false,
+   "ml": false,
+   "sk": false,
+   "rf": [
+    "green"
+   ],
+   "rs": {
+    "green": 1.8
+   },
+   "hx": "#c9cd3a",
+   "pq": 3,
+   "len": 20.0,
+   "add": "nov10-v119",
+   "price": 150.0,
+   "sku": "RAC-CHA-FS",
+   "product_id": 9436706439306,
+   "variant_id": 50654222844042,
+   "src_image": {
+    "id": 43392105283722,
+    "position": 1,
+    "variant_ids": [],
+    "url": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/ChartreuseRacks.png"
+   },
+   "img": "assets/racks/v119/missm-chartreuse.jpg"
+  }
+ ]
+}
