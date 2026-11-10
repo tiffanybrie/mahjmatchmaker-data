@@ -88,5 +88,35 @@
    "image_kb": 40,
    "live_words": 109
   }
+ },
+ {
+  "id": "new-album-juniper",
+  "name": "Campaign: Juniper album is live",
+  "kind": "campaign",
+  "when": "draft in Squarespace Nov 10; Tiffany sends (tiles drop Wed Nov 11, 10am CT)",
+  "to": "All subscribers",
+  "subject": "The Juniper album is live, tiles drop Wednesday 💚",
+  "preview": "42 mats matched to the new Oh My Mahjong set.",
+  "text": "[IMAGE heading: The Juniper album is live]\n\n[IMAGE: Juniper mahjong tiles by Oh My Mahjong: album cover → https://www.mahjmatchmaker.com/juniper-mahjong-tile-matches]\n\nThe latest Oh My Mahjong set, Juniper, releases Wednesday, November 11 at 10am CT! 💚\n\nAs always, I have an album for you: 42 mats matched to Juniper (plus an album for every Oh My Mahjong set ever made).\n\n[BUTTON: See the Juniper album → https://www.mahjmatchmaker.com/juniper-mahjong-tile-matches]\n\nYou can also match Juniper and her new partner mat, Lotus Cove, in Find Your Mat-ch™, along with over 1,500 mats on the mahj market!\n\nUse code MAHJMATCH to save 💕\n\nHappy mat-ching!\nxo, Tiffany",
+  "deliverability": {
+   "images": 2,
+   "image_kb": 285,
+   "live_words": 82
+  }
+ },
+ {
+  "id": "album-live-juniper",
+  "name": "Campaign: Your Juniper album is live (album requesters)",
+  "kind": "campaign",
+  "when": "draft in Squarespace Nov 10; only if someone requested Juniper; Tiffany sends",
+  "to": "everyone who requested a Juniper album (Request an Album form)",
+  "subject": "Your Juniper matches are here! 🎉",
+  "preview": "You asked, I matched!",
+  "text": "[IMAGE heading: You asked, I matched!]\n\nThe Juniper album is live, with all the mats and racks I’d pair with it: 42 mats in all. The tiles drop at Oh My Mahjong on Wednesday, November 11 at 10am CT.\n\n[BUTTON: See your matches → https://www.mahjmatchmaker.com/juniper-mahjong-tile-matches]\n\nUse code MAHJMATCH to save 💕\n\nHappy mat-ching!\nxo, Tiffany",
+  "deliverability": {
+   "images": 2,
+   "image_kb": 40,
+   "live_words": 44
+  }
  }
 ]

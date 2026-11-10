@@ -154,6 +154,44 @@ EMAILS = [
             CODE,
         ],
     },
+    {
+        # Tiffany Nov 10: Juniper album (this week's album) -> All subscribers. Plain/matter-of-fact (docs/social/PLAIN-POSTS.md),
+        # sentences from scripts/social/plain_post.py. Squarespace DRAFT only; Tiffany sends.
+        "id": "new-album-juniper",
+        "name": "Campaign: Juniper album is live",
+        "kind": "campaign",
+        "when": "draft in Squarespace Nov 10; Tiffany sends (tiles drop Wed Nov 11, 10am CT)",
+        "to": "All subscribers",
+        "subject": "The Juniper album is live, tiles drop Wednesday 💚",
+        "preview": "42 mats matched to the new Oh My Mahjong set.",
+        "h1": "The Juniper album is live",
+        "hero_src": ("assets/covers/albums/00-juniper-mahjong-tiles-cover.jpg", "Juniper mahjong tiles by Oh My Mahjong: album cover", 1080, 1350),
+        "hero_link": f"{SITE}/juniper-mahjong-tile-matches",
+        "paras": [
+            'The latest Oh My Mahjong set, <b>Juniper</b>, releases <b>Wednesday, November 11 at 10am CT</b>! 💚',
+            'As always, I have an album for you: <b>42 mats matched to Juniper</b> (plus an album for every Oh My Mahjong set ever made).',
+        ],
+        "button": ("See the Juniper album", f"{SITE}/juniper-mahjong-tile-matches"),
+        "after": [
+            f'You can also match Juniper and her new partner mat, Lotus Cove, in <a href="{SITE}/find-your-match">{FYM_HTML}</a>, along with over 1,500 mats on the mahj market!',
+            CODE,
+        ],
+    },
+    {
+        "id": "album-live-juniper",
+        "name": "Campaign: Your Juniper album is live (album requesters)",
+        "kind": "campaign",
+        "when": "draft in Squarespace Nov 10; only if someone requested Juniper; Tiffany sends",
+        "to": "everyone who requested a Juniper album (Request an Album form)",
+        "subject": "Your Juniper matches are here! 🎉",
+        "preview": "You asked, I matched!",
+        "h1img": "hl-live-h1",
+        "paras": [
+            'The <b>Juniper</b> album is live, with all the mats and racks I&rsquo;d pair with it: 42 mats in all. The tiles drop at Oh My Mahjong on Wednesday, November 11 at 10am CT.',
+        ],
+        "button": ("See your matches", f"{SITE}/juniper-mahjong-tile-matches"),
+        "after": [CODE],
+    },
 ]
 
 CSS = f"""
@@ -226,7 +264,15 @@ def render(e, with_meta=True):
         h.append(f'<div class="meta"><b>Subject:</b> {html.escape(e["subject"])}<br><b>Preview:</b> {html.escape(e["preview"])}<br><b>When:</b> {html.escape(e["when"])}</div>')
     wm = WORDMARK_CDN if CDN_IMG else "../../../assets/brand/mahjmatchmaker-wordmark.png"
     h.append(f'<div class="card"><div class="top"><img src="{wm}" alt="Mahj Matchmaker: matching mahjong tiles, mats &amp; racks"></div><div class="body">')
-    h.append(f'<div class="h1">{img(e["h1img"])}</div>')
+    if e.get("h1img"):
+        h.append(f'<div class="h1">{img(e["h1img"])}</div>')
+    else:
+        h.append(f'<h1>{e["h1"]}</h1>')
+    if e.get("hero_src"):
+        rel, alt, w, hh = e["hero_src"]
+        src = (CDN_ROOT + rel) if CDN_IMG else "../../../" + rel
+        im = f'<img src="{src}" width="480" height="{round(hh*480/w)}" alt="{html.escape(alt)}" style="display:block;margin:0 auto;max-width:100%;height:auto">'
+        h.append(f'<div class="hero"><a href="{e.get("hero_link", "#")}">{im}</a></div>')
     if e.get("hero"):
         h.append(f'<div class="hero">{img(e["hero"], display_w=480)}</div>')
     for p in e["paras"]:
@@ -250,7 +296,7 @@ def render(e, with_meta=True):
         h.append(f"<p{cls}>{nw(p)}</p>")
     h.append(f'<p class="sign">{SIGN}</p></div>')
     h.append('<div class="foot">Mahj Matchmaker · <a href="https://www.mahjmatchmaker.com">mahjmatchmaker.com</a><br>Hooking up tiles, mats &amp; racks'
-             '<br><span class="legal">[Mailing address: pending from Tiffany] · <a href="#">Unsubscribe</a> (Squarespace adds both to every send)</span></div></div>')
+             '<br><span class="legal">Mahj Matchmaker, 6817 W State Hwy 22, Crestwood, KY 40014 · <a href="#">Unsubscribe</a></span></div></div>')
     out = f'<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(e["name"])}</title><style>{CSS}</style></head><body><div class="outer">{"".join(h)}</div></body></html>'
     if CDN_IMG:  # cdn mode: no relative src may survive (templates live in site/email/templates/)
         def _abs(m):
@@ -266,6 +312,8 @@ def plain(e):
         s = re.sub(r"<[^>]+>", "", s)
         return html.unescape(s)
     out = [f'[IMAGE heading: {heading_text(e)}]']
+    if e.get("hero_src"):
+        out.append(f'[IMAGE: {e["hero_src"][1]} → {e.get("hero_link", "")}]')
     if e.get("hero"):
         out.append(f'[IMAGE: {MANI["alt"]["hero"]}]')
     out += [t(p) for p in e["paras"]]
@@ -290,6 +338,9 @@ def stats(e):
     body = render(e, with_meta=False)
     stems = set(re.findall(r'assets/fym/([\w-]+\.\w+)', body))
     kb = sum(MANI["sizes"][f][2] for f in stems) / 1024 + 35  # + wordmark logo
+    if e.get("hero_src"):
+        stems = stems | {e["hero_src"][0]}
+        kb += (ROOT.parent.parent / e["hero_src"][0]).stat().st_size / 1024
     words = len(re.sub(r"<[^>]+>", " ", re.sub(r"<style.*?</style>|<title>.*?</title>|<div class=\"foot\">.*", "", body, flags=re.S)).split())
     return {"images": len(stems) + 1, "image_kb": round(kb), "live_words": words}
 
