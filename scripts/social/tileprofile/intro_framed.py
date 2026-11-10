@@ -97,15 +97,15 @@ s4 = (hdr(('Her best features', 72)) +
       f'{ab(L, 676, "display:flex;justify-content:space-between", W)}{sing}</div>')
 
 # ---- slide 5: racks she's into
-RACK = {'Oh My Mahjong Hot Pink': 'assets/racks/card/oh-my-mahjong-hot-pink.png', 'Oh My Mahjong Agate': 'assets/racks/card/oh-my-mahjong-agate.png', 'Bird & Bamboo Lavender': 'assets/colorcards/papaya-spritz/racks/bird-and-bamboo-lavender.png', 'Peace Love Mahjong Chartreuse': 'assets/racks/card/peace-love-mahjong-chartreuse.png',
+RACK = {'Oh My Mahjong Pink Quartz': 'assets/racks/card/oh-my-mahjong-pink-quartz.png', 'Oh My Mahjong Hot Pink': 'assets/racks/card/oh-my-mahjong-hot-pink.png', 'Oh My Mahjong Agate': 'assets/racks/card/oh-my-mahjong-agate.png', 'Bird & Bamboo Lavender': 'assets/colorcards/papaya-spritz/racks/bird-and-bamboo-lavender.png', 'Peace Love Mahjong Chartreuse': 'assets/racks/card/peace-love-mahjong-chartreuse.png',
         'Peace Love Mahjong Oak': 'assets/racks/card/peace-love-mahjong-oak.png', 'Middle & Main Scalloped Beechwood': 'assets/racks/card/middle--main-scalloped-beechwood.png',
         'Mahjong Row & Co. Scalloped Tortoise': 'assets/racks/card/mahjong-row--co-scalloped-tortoise.png'}
 BRANDS = ('Oh My Mahjong', 'Bird & Bamboo', 'Peace Love Mahjong', 'Middle & Main', 'Miss Mahjong', 'Mahjong Row & Co.', 'Bam Bird Boutique')
 def rrow(r):   # same as the APPROVED carousel slide (carousel.py): brand + name on one line, racks at real proportions
     b = next((x for x in BRANDS if r['name'].startswith(x)), r['name'].split()[0]); c = r['name'][len(b) + 1:]
-    return (f'<div style="margin-top:22px"><div style="display:flex;align-items:baseline;gap:14px"><span class="caps" style="font-size:17px;color:#8a6a80">{e(b)}</span><span class="pf" style="font-size:40px;font-weight:600">{e(c)}</span></div>'
+    return (f'<div style="margin-top:32px"><div style="display:flex;align-items:baseline;gap:14px"><span class="caps" style="font-size:17px;color:#8a6a80">{e(b)}</span><span class="pf" style="font-size:40px;font-weight:600">{e(c)}</span></div>'
             f'<img src="{url(RACK[r["name"]])}" style="display:block;width:{W}px;height:{"auto" if P.get("rack_natural") else "84px"};object-fit:fill;margin-top:8px;filter:drop-shadow(0 8px 10px rgba(6,40,90,.18))"></div>')
-grp = lambda g: ''.join(rrow(r) for r in P['racks'] if r.get('group', 'color') == g)
+grp = lambda g: ''.join(rrow(r) for r in P['racks'] + P.get('racks_social_extra', []) if r.get('group', 'color') == g)  # extra = social-only racks (Nov 10 3:47pm)
 # Nov 10 3:46pm (Tiffany): the framed version is the APPROVED slide put in the frame. Same text, same racks, same
 # proportions as carousel.py s4. Never rewrite copy or reshape images when re-framing an approved graphic.
 _ver = grp("versatile")
@@ -116,7 +116,7 @@ if _ver:
              f'<span class="pf" style="font-size:27px;color:#3c4f73">my go-tos with any set</span></div>{_ver}'
              f'<div class="hand" style="font-size:40px;margin-top:22px;color:var(--pink)">now, who she&rsquo;s dating &rarr;</div>')
 else:
-    _body = (grp("color") + f'<div class="hand" style="font-size:44px;margin-top:34px;color:var(--navy)">{P.get("racks_hand", "all three picked for her, not just any rack")} &hearts;</div>'
+    _body = (grp("color") + f'<div class="hand" style="font-size:44px;margin-top:34px;color:var(--navy)">{P.get("racks_hand_framed") or P.get("racks_hand", "all three picked for her, not just any rack")} &hearts;</div>'
              f'<div class="hand" style="font-size:40px;margin-top:6px;color:var(--pink)">now, who she&rsquo;s dating &rarr;</div>')
 s5 = (hdr(("Racks she's into", 80)) +
       f'{ab(L, 180, "", W)}<div class="pf" style="font-size:29px;line-height:1.25;color:#3c4f73">A color from her layers, or a rack that goes with everything.</div>'
