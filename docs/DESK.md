@@ -38,6 +38,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **Matches & Catalog: It's a Mahjong Life (4 mats) + non-partner whole lines** (Birdsong, Isabel Hart, Lucky Daughters, Mahjong Moxie, Mary Benson, Silk Mahjong) + Maison Mahj full partner line: in 1.19.
 - **OPS: copy flat renders to Dropbox /Mahj Matchmaker Albums/New releases/<brand>/** (Fait à Main Texas Mon Amour Cream, LBB Tidal Glass / Seasons Mid-Century / Nutcracker / Tropical Travels, Bam! teaser, Soirée Holiday Chintz, Wren Gingham and Wine, LBB Artist Collective 174 mats, Let's Golf! ×2; assets/launches/<dir>/).
 - **OPS: search Tiles & Tablescapes for Let's Golf!** (Celadon Mist + Magnolia Blush): TNT rec + colour card before any swipe book (hq/albums needs-tnt).
+- **OPS: search Tiles & Tablescapes for Yellow Mountain Imports Aristo-Cat** (launch watch Nov 10 8:57am; listed Nov 9 as a $0 placeholder, no photos yet): once YMI adds photos, save them to assets/launches/ymimports-us-af036-a/ and copy to Dropbox /Mahj Matchmaker Albums/New releases/Yellow Mountain Imports/; then TNT rec + colour card before any swipe book (hq/albums needs-colourcard). Never feature YMI on social.
 - **OPS: Payout Tracker September check** for 'Close October' (her 2-dashboard rule: Quick calls, default do it once by hand this week).
 - **Main: blog posts name album tile sets but don't link them** (list in git show 09006524:docs/DESK.md). Slipped Nov 9 → Wed Nov 11.
 - **Main: revenue-alert cards**: per-brand alert docs sit archived; fold into one Money summary in the report.
