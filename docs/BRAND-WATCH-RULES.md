@@ -13,8 +13,17 @@ A Monday codes post that already went out does NOT cover anything caught after i
 a. Draft a same-day FACEBOOK GROUP post: docs/social/<brand-slug>-<product-slug>-<date>.post.txt with the brand's own photos (assets/social/<brand-slug>-<product-slug>/), the drop time, buy links to the BRAND's product page with our code/affiliate link (never our own page), and the code typed: "use code MAHJMATCH to save X%". The Tigre de Tartán image-only rule is for the WEBSITE/Google only; in our own group the code and name are typed (Tiffany Nov 10 7:49am).
 b. Add it to config/launch-actions.json as "drafted" (key = scripts/checks/launch_48h_check.py's key) so every chat's front door shows it until it is posted or she says skip.
 c. Message Tiffany the same run: first line "<Brand> <product> drops <day time>. Group post ready for your yes:" + the text + photos. Day before AND morning of.
-d. Album sets / Find Your Mat-ch items also get the story frames (existing restock playbook).
+d. NO STORY FRAMES, REELS OR GRAPHICS unless Tiffany asks for them for that item (Tiffany Nov 10 8:01am: "you guys are then just immediately building a story frame, which I don't believe I ever told you to do... burning up usage... It's not, let's go build a story frame, but not tell Tiffany. That is absolutely out of order."). The list and the group post come first; she reshares brand content herself from the list.
 No hype: never "goes fast"/"sells out"; "Set your alarms!" is fine.
 
 ## 3. Checks
 - scripts/checks/launch_48h_check.py (front door, every chat, every message) lists partner items within 48h that are not posted/skipped.
+
+## 4. Where everything goes (the flow)
+Sources (3x daily): partner stores (products.json diff), email (mahjmatchmaker@ + tiffanybrie@), partner Instagram (Planoly), Sunday release page.
+1. LIST FIRST: config/brand-watch-curated.json (this_week / coming_soon / just_dropped / sales), each with date, time, brand, what, buy link (brand page + our code), source link (their post, for her reshares), urgency NOW / SOON / LATER.
+2. HQ Brand Watch tab (hq/brandWatch) mirrors the list. This is her social cheat sheet: brand post links she can reshare.
+3. WEBSITE "Brand Watch" page (planned, Tiffany Nov 10): the same list, live, public; group + email list + page = where people get it.
+4. GROUP: Monday codes post carries the week; NOW items caught after Monday get their own group post (section 2), on her yes.
+5. Tiffany is told the same run for NOW items (one message: what, when, draft post). SOON/LATER: list only, no message.
+Nothing else gets built automatically.
