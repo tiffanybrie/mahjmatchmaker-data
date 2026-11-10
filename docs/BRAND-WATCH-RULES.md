@@ -1,7 +1,17 @@
 # Brand watch rules (binding; read FIRST every partner-watch run; overrides the task prompt)
 
+## 00. LIVE SHEET + PUSH THE MOMENT IT'S FOUND (Tiffany Nov 10 12:28pm; REPLACES section 0's "never messages Tiffany" for NOW items)
+Why: Nov 10 the watch found Cabana Club, Mahj Mood flash sale and Tinselle Ruby at ~9:50am; Main's check-in had fired at 9:55 (before the 9:58 DESK write), the next was 1:55pm, and the 12:03pm group post went out without them. Brand news must NOT wait for a chat check-in.
+- ONE live sheet: "Brand news (live) - read before every post" https://docs.google.com/spreadsheets/d/1Lm3mydRx3cXXYz9HTAkL2LLleQx8x5OrThr2IEXJRUM/edit (tab "Untitled", columns A-G: Found (ET) | Brand | News | When it happens | Posted where (group / IG / stories) | Draft | Notes).
+- Every watch task (partner watch, brand launch watch, Mahji Mentor check) APPENDS each new partner finding the moment it is found (Google Sheets append_values, range "Untitled!A:G", one row per item; read A:G first and skip a brand+news already there; Posted where = "NOT POSTED"). Mahjong Row & Co., Yellow Mountain Imports and Paige Spearin x TdT never go in.
+- When anything is posted (any chat or task), fill that row's "Posted where" (update_values) with where + time.
+- NOW items (live today or within 48h): send Tiffany a push RIGHT AWAY in the same run (PushNotification + SendUserMessage): one line per item ("<Brand> <what> <when>") + the sheet link. Don't wait for any chat check-in.
+- config/launch-actions.json stays as the machine copy (front door / launch_48h_check.py); keep writing it too.
+- Every chat reads the sheet right before ANY post (group, IG, FB Page) and includes everything not yet posted.
+- IF GOOGLE SHEETS TOOLS DON'T LOAD in a scheduled run (as of Nov 10 the cloud watch tasks' connector list has no Google Sheets): still send the NOW push (with the sheet link), append the rows to docs/status/brand-news-pending.jsonl (one JSON object per line, same 7 fields) and commit/push, and put a line at the TOP of docs/DESK.md "Main: append N rows from docs/status/brand-news-pending.jsonl to the Brand news (live) sheet NOW". Any attended chat that sees that file non-empty appends the rows to the sheet, empties the file and deletes the DESK line.
+
 ## 0. WHO TALKS TO TIFFANY (Tiffany Nov 10 8:02am: "I don't go to partner watch... They've got to report back to someone like you who then reports to me.")
-The partner watch is a background worker. It NEVER messages Tiffany (no SendUserMessage, no PushNotification, overriding any line in its task prompt). It writes:
+(Superseded for NOW items by section 00 above: the watch now pushes NOW items to her itself, the same run.) The partner watch is a background worker. Apart from the section 00 NOW push, it does not message Tiffany. It writes:
 - the list (config/brand-watch-curated.json + HQ Brand Watch tab),
 - NOW items + their draft group posts into config/launch-actions.json ("drafted") and docs/social/,
 - one line at the TOP of docs/DESK.md "Main: brand watch <time>: N NOW items ready (launch-actions.json)".
