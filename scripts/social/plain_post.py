@@ -33,18 +33,21 @@ when = (f"The latest {x.brand} set, {x.set}, is in stock now!" if x.instock
         else f"The latest {x.brand} set, {x.set}, releases {x.release}!")
 pm = f" and her new partner mat, {x.partner_mat}," if x.partner_mat else ""
 code = f"Use code MAHJMATCH to save {pct}% at {x.brand} 💕"
+# Depth of the library (Tiffany Nov 10 11:59am: "along with over however many mats on the mahj market"): count live FYM mats.
+_m = json.load(open(R + '/config/fym-mats-snapshot.json'))['mats']
+depth = f"{(sum(1 for v in _m.values() if not v.get('hid')) // 100) * 100:,}"
 every = f" (plus an album for every {x.brand} set ever made)" if x.every_set else ""
 ig = (f"{when} {x.emoji}\n\nAs always, I have an album for you: {x.count} mats matched to {x.set}{every}, link in bio. "
-      f"You can also match {x.set}{pm} in Find Your Mat-ch!\n\n{code}\n\n"
+      f"You can also match {x.set}{pm} in Find Your Mat-ch, along with over {depth} mats on the mahj market!\n\n{code}\n\n"
       f"#mahjong #{x.tag} #mahjongtiles #mahjongmat #MahjMatch")
 grp = (f"{when} {x.emoji}\n\nAs always, I have an album for you: {x.count} mats matched to {x.set}{every}.\n{x.album}\n\n"
-       f"You can also match {x.set}{pm} in Find Your Mat-ch!\n{FYM}\n\n{code}\n\n#MahjMatch")
+       f"You can also match {x.set}{pm} in Find Your Mat-ch, along with over {depth} mats on the mahj market!\n{FYM}\n\n{code}\n\n#MahjMatch")
 
 os.makedirs(x.out, exist_ok=True)
 paths = []
 for name, txt in (('ig-caption.txt', ig), ('group-post.txt', grp)):
     p = os.path.join(x.out, name); open(p, 'w').write(txt + '\n'); paths.append(p)
 L = R + '/scripts/social/content_lint.py'
-r1 = subprocess.run([sys.executable, L, paths[0]], capture_output=True, text=True)
-r2 = subprocess.run([sys.executable, L, '--codes-list', paths[1]], capture_output=True, text=True)  # group post: typed links, length exempt
+r1 = subprocess.run([sys.executable, L, '--codes-list', paths[0]], capture_output=True, text=True)
+r2 = subprocess.run([sys.executable, L, '--codes-list', paths[1]], capture_output=True, text=True)  # length exempt: the sentences are her own wording (Nov 10), incl. the depth line she asked for
 print(r1.stdout.strip()); print(r2.stdout.strip()); sys.exit(r1.returncode or r2.returncode)

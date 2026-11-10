@@ -25,3 +25,6 @@ emojis. Still no invented one-liners or personality copy.
 
 ## Sell what we have (Tiffany Nov 10 11:50am)
 Say the depth of the library when it is true: e.g. "(plus an album for every Oh My Mahjong set ever made)" (plain_post.py --every-set). Tell people what they get, not just that a post exists.
+
+## Speak to our depth (Tiffany Nov 10 11:59am)
+Every Find Your Mat-ch line says how big the library is: "along with over 1,500 mats on the mahj market" (number from the live FYM snapshot, rounded down to the hundred; plain_post.py does it).
