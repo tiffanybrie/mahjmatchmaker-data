@@ -1,6 +1,7 @@
 # Virora Mahjong (@viroramahjongofficial): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- 2026-11-10 (6:35pm watch): Tinselle Emerald Green back in stock (store); Ruby sold out again
 - Nov 10 1:40pm ET (store): Tinselle Ruby Red pre-order SOLD OUT again (opened this morning). Lilacée in Yellow restock still tonight 5pm PT / 7pm CT.
 - Nov 10 (store): Christmas Collection I Tinselle RUBY RED back on pre-order ($299, 4 layers). Lilacée in Yellow restock still set for tonight 5pm PT / 7pm CT (sold out at 9:55am ET). One group post drafted for both (docs/social/virora-lilacee-yellow-2026-11-10.post.txt).
 - Nov 8 9:00pm ET: 'Lilacée in Yellow is coming back' 2-slide carousel (sunny yellow, vintage florals; gramophone hidden on the Jokers). Restocking Tue Nov 10 5pm PT; comment 'Lilacee' for the link (https://www.instagram.com/p/DfgNXkPo43d/). Store Nov 9: yellow-lilacee still sold out (confirmed). Restock frames assets/social/restock-lilacee-nov10. Also Nov 9 (store): Hiverelle holiday mat back in stock.

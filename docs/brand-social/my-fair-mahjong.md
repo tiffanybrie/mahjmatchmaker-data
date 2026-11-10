@@ -1,6 +1,7 @@
 # My Fair Mahjong (@myfairmahjong): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- 2026-11-10 (6:35pm watch): Crystal Confetti Calm Blue tiles back in stock (store); IG pushing Lumera Series reviews
 - Nov 6 11:46am ET: Confetti Racks (purple, pink, blue, green) short preorder LIVE, delivery mid Nov, 'deck out your table for the holidays with a little glitter' (https://www.instagram.com/p/DfaD7aThh-_/).
 - Nov 4 5:25pm ET: NEW Mega Swirl Dice (jumbo 35mm pair in gift box, $40; pearl pink/orange/green/blue/silver), 'Grab yours now!' LIVE on store (https://www.instagram.com/p/DfVhlIEGdrJ/). Nov 4 4:49pm: humor reel 'the answer is always yes' (DfVWh1gh4Q_).
 - Oct 28: Poppy Red Racks launch reel (DfDRlHph5cK), paired with their holiday mats.

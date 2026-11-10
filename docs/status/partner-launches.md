@@ -1,11 +1,12 @@
-# Partner launches & restocks (2026-11-10 18:31 UTC)
+# Partner launches & restocks (2026-11-10 23:29 UTC)
 
-## Since last run: 5 to act on
-- **RESTOCK** Miss Mahjong · Chartreuse Scalloped Acrylic Racks (rack) · Default Title · https://missmahjong.com/products/chartreuse-scalloped-acrylic-racks
-- **RESTOCK** Miss Mahjong · Pistachio Scalloped Acrylic Racks (rack) · Default Title · https://missmahjong.com/products/pistachio-scalloped-acrylic-racks
-- **RESTOCK** Miss Mahjong · Butter Yellow Scalloped Acrylic Racks (rack) · Default Title · https://missmahjong.com/products/butter-yellow-scalloped-acrylic-racks
-- **RESTOCK** Miss Mahjong · Peony Scalloped Acrylic Racks (rack) · Default Title · https://missmahjong.com/products/peony-scalloped-acrylic-racks
-- **RESTOCK** Miss Mahjong · Bombshell Pink Scalloped Acrylic Racks (rack) · Default Title · https://missmahjong.com/products/bombshell-pink-scalloped-acrylic-racks
+## Since last run: 6 to act on
+- **NEW VARIANT** Britt Mills · Britt Mills Mahjong Mat Art Wall Calendars (2027) (mat) · 11" x 8.5" / Matte · https://brittmillsdesign.com/products/britt-mills-mahjong-mat-art-wall-calendars-2027
+- **RESTOCK** My Fair Mahjong · CRYSTAL CONFETTI  |  Calm Blue  |  Mahjong with a Sprinkle of Color and Joy (tiles) · Default Title · https://myfairmahjong.com/products/confetti-calm-blue
+- **RESTOCK** Tigre de Tartán · Mahjong Mat, DOMINO BLONDE (mat) · Default Title · https://tigredetartan.com/products/mahjong-mat-domino-blonde
+- **RESTOCK** Tigre de Tartán · Mahjong Mat, DOMINO BLONDE [W/ RULES] (mat) · Default Title · https://tigredetartan.com/products/mahjong-mat-domino-blonde-rules-edition
+- **PREORDER** Tigre de Tartán · Katherine Hartman X Tigre de Tartán Mahjong Mat, BIRDSONG (mat) · https://tigredetartan.com/products/katherine-hartman-x-tigre-de-tartan
+- **RESTOCK** Virora Mahjong · Christmas Collection I · Tinselle — Emerald Green (tiles) · Emerald Green -4 Layers · https://www.viroramahjong.com/products/tinselle-emerald-green
 
 ## Created/published in the last 7 days (tiles, mats, racks)
 - 2026-11-10 · Splash of Color · Saturday Night Mahj Fever Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/saturday-night-mahj-fever-mahjong-mat-sleek-surface-1
@@ -219,7 +220,7 @@
 - 2026-11-05 · Mac + Miller Mahjong · Perfectly Imperfect Laissez Les Bons Temps Rouler Collection Mahjong Mat (mat) · available · https://www.macandmillermahjong.com/products/laissez-les-bons-temps-rouler-collection-mahjong-mat-perfectly-imperfect
 - 2026-11-05 · Mac + Miller Mahjong · Perfectly Imperfect Sweet Dreams Collection Mahjong Mat (mat) · available · https://www.macandmillermahjong.com/products/sweet-dreams-collection-mahjong-mat-copy
 - 2026-11-05 · Mahj Mood · Playing For Keeps| Pre-Order, Ships January (tiles) · available · PREORDER/COMING SOON · https://mahjmood.com/products/playing-for-keeps-tiles
-- 2026-11-05 · Mahj Mood · Playing For Keeps Mat | Pre-Order, Ships January (mat) · available · PREORDER/COMING SOON · https://mahjmood.com/products/playing-for-keeps-mat
+- 2026-11-05 · Mahj Mood · Playing For Keeps Mat | Pre-Order, Ships January (NOT INCLUDED IN BOGO SALE) (mat) · available · PREORDER/COMING SOON · https://mahjmood.com/products/playing-for-keeps-mat
 - 2026-11-05 · Miss Mahjong · Lattice Travel Mat 21"x21" (travel mat) · available · https://missmahjong.com/products/lattice-travel-mat-21x21
 - 2026-11-05 · Miss Mahjong · Gingham Travel Mat 21"x21" (travel mat) · available · https://missmahjong.com/products/gingham-travel-mat
 - 2026-11-05 · Miss Mahjong · Wild West Travel Mat 21"x21" (travel mat) · available · https://missmahjong.com/products/wild-west-travel-mat
@@ -238,12 +239,12 @@
 ## Stores
 - amahjline.com: ok 33 products
 - birdandbamboo.com: ok 59 products
-- brittmillsdesign.com: ok 712 products
-- letsbebesties.com: ok 731 products
+- brittmillsdesign.com: ok 717 products
+- letsbebesties.com: ok 738 products
 - mahjandvine.com: ok 21 products
 - mahjmood.com: ok 54 products
 - mahjongco.com: ok 1 products
-- mahjongregister.com: ok 75 products
+- mahjongregister.com: ok 77 products
 - mahjongstudios.com: ok 155 products
 - mahjsquadshop.com: ok 60 products
 - minimahjer.com: ok 30 products
@@ -252,12 +253,12 @@
 - peacelovemahjong.com: ok 100 products
 - shop.andersruff.com: ok 161 products
 - soireeallday.co: not checkable (not Shopify or blocked)
-- splashofcolorco.com: ok 2175 products
+- splashofcolorco.com: ok 2176 products
 - sundaymahjong.com: ok 87 products
 - sweetjojomahjong.com: ok 82 products
 - themahjongpress.com: ok 7 products
 - theroyalmahjongsociety.com: ok 50 products
-- tigredetartan.com: ok 125 products
+- tigredetartan.com: ok 127 products
 - www.bambirdboutique.com: ok 117 products
 - www.bamletsmahjong.com: ok 68 products
 - www.bespokemahjong.com: ok 350 products

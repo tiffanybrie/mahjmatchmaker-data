@@ -4,6 +4,34 @@
   {
    "date": "2026-11-10",
    "day": "Tue 11/10",
+   "time": "LIVE now (store check 5:30pm CT)",
+   "brand": "My Fair Mahjong",
+   "partner": true,
+   "what": "Crystal Confetti tiles in Calm Blue BACK in stock ($375; labeled, chunky confetti set)",
+   "tag": "tiles",
+   "urgency": "NOW",
+   "buy": "https://myfairmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fconfetti-calm-blue",
+   "source": "https://myfairmahjong.com/products/confetti-calm-blue",
+   "action": "Group post drafted (docs/social/mfm-confetti-calm-blue-2026-11-10.post.txt), waiting Tiffany yes.",
+   "url": "https://myfairmahjong.com/products/confetti-calm-blue"
+  },
+  {
+   "date": "2026-11-10",
+   "day": "Tue 11/10",
+   "time": "LIVE now (store check 5:30pm CT)",
+   "brand": "Virora",
+   "partner": true,
+   "what": "Tinselle Emerald Green Christmas tiles BACK in stock ($299, 4 layers); Ruby Red is sold out",
+   "tag": "tiles",
+   "urgency": "NOW",
+   "buy": "https://www.viroramahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Ftinselle-emerald-green%3Fref%3DMahjmatchmaker",
+   "source": "https://www.viroramahjong.com/products/tinselle-emerald-green",
+   "action": "Group post drafted (docs/social/virora-tinselle-emerald-2026-11-10.post.txt), waiting Tiffany yes.",
+   "url": "https://www.viroramahjong.com/products/tinselle-emerald-green"
+  },
+  {
+   "date": "2026-11-10",
+   "day": "Tue 11/10",
    "time": "LIVE (email early access, 5:55am CT)",
    "brand": "Charleston Mahjong Club",
    "partner": true,
@@ -35,7 +63,7 @@
    "time": "4pm CT",
    "brand": "Tigre de Tartán",
    "partner": true,
-   "what": "Domino Blonde mat drops (sold out now; rules + no-text editions; already in Find Your Mat-ch)",
+   "what": "Domino Blonde mat drops (LIVE now since 4pm CT; rules + no-text editions; already in Find Your Mat-ch)",
    "tag": "mat",
    "action": "Group post drafted (docs/social/tdt-domino-blonde-2026-11-10.post.txt); waiting her yes.",
    "url": "https://www.instagram.com/reel/Dfh8nR1ttsi/",
@@ -226,9 +254,35 @@
    "action": "Add to Monday codes post as a preorder",
    "url": "https://www.instagram.com/p/DfaykcRzwQq/",
    "urgency": "LATER"
+  },
+  {
+   "brand": "The Royal Mahjong Society",
+   "partner": true,
+   "what": "Heirloom Crown Jewels (engraved + painted) 'arrive very soon'; Studio Series Crown Jewels (full + travel) on sale now",
+   "tag": "tiles",
+   "urgency": "LATER",
+   "source": "https://www.instagram.com/reel/DfkcDuRzIqZ/",
+   "url": "https://www.instagram.com/reel/DfkcDuRzIqZ/"
+  },
+  {
+   "brand": "Tigre de Tartán",
+   "partner": true,
+   "what": "Katherine Hartman x TdT Birdsong mat ($225) marked 'back soon' (no promo codes on this collab)",
+   "tag": "mat",
+   "urgency": "LATER",
+   "source": "https://tigredetartan.com/products/katherine-hartman-x-tigre-de-tartan",
+   "url": "https://tigredetartan.com/products/katherine-hartman-x-tigre-de-tartan"
   }
  ],
  "just_dropped": [
+  {
+   "brand": "Noli June",
+   "partner": true,
+   "what": "Sue Adores a Scallop mahjong table now taking orders (ships nationwide)",
+   "tag": "table",
+   "source": "https://www.instagram.com/reel/DfkkSTiTCNW/",
+   "url": "https://www.instagram.com/reel/DfkkSTiTCNW/"
+  },
   {
    "date": "2026-11-10",
    "brand": "Virora",
@@ -491,6 +545,18 @@
  ],
  "nonpartners": [
   {
+   "brand": "Bougie Mahjong",
+   "what": "Peppermint Chinoiserie holiday mat launched (mint green, poinsettias; 4 ready to ship)",
+   "source": "https://www.instagram.com/p/DfkxAiJlYPC/",
+   "url": "https://www.instagram.com/p/DfkxAiJlYPC/"
+  },
+  {
+   "brand": "Hutch & Nook",
+   "what": "All items restocked on their site (first-purchase code hinted)",
+   "source": "https://www.instagram.com/reel/DfkL_1ENKEA/",
+   "url": "https://www.instagram.com/reel/DfkL_1ENKEA/"
+  },
+  {
    "date": "2026-11-10",
    "brand": "Sweet Jojo Mahjong",
    "partner": false,
@@ -651,7 +717,7 @@
    "brand": "Mahj Mood",
    "partner": true,
    "kind": "launch",
-   "what": "Playing For Keeps Mat | Pre-Order, Ships January",
+   "what": "Playing For Keeps Mat | Pre-Order, Ships January (NOT INCLUDED IN BOGO SALE)",
    "url": "https://mahjmood.com/products/playing-for-keeps-mat",
    "src": "store"
   },
@@ -764,15 +830,6 @@
    "src": "instagram"
   },
   {
-   "date": "2026-11-10",
-   "brand": "Hutch & Nook",
-   "partner": false,
-   "kind": "sale",
-   "what": "Need we say more??!! \n\nAll items fully stocked on H&N website! There might be a code for first time purchases 👀💕 \n\nWww.hutchandnook.com\n\n#mahjong #hutchandnook ",
-   "url": "https://www.instagram.com/reel/DfkL_1ENKEA/",
-   "src": "instagram"
-  },
-  {
    "date": "2026-11-09",
    "brand": "LoveShackFancy",
    "partner": false,
@@ -780,11 +837,20 @@
    "what": "Something special is coming to LoveShackFancy SoHo 🎀 Our first ever Holiday Shop opens this week, a whimsical world of enchanting gifts, festive treasures and n",
    "url": "https://www.instagram.com/reel/DfhhHFmCFQH/",
    "src": "instagram"
+  },
+  {
+   "date": "2026-11-06",
+   "brand": "Mahjong Moxie",
+   "partner": false,
+   "kind": "drop date",
+   "what": "Here is an up-close look at the tile designs that will drop TOMORROW at 12 PM CST! \n\nAn added bonus: the numbers are LARGER! 🙌🏻❤️",
+   "url": "https://www.instagram.com/reel/DfYjDi4BWX3/",
+   "src": "instagram"
   }
  ],
- "updatedAt": "2026-11-10T18:36:27+00:00",
+ "updatedAt": "2026-11-10T23:34:19+00:00",
  "sources": {
-  "store_run": "2026-11-10T18:31:53+00:00",
-  "ig_run": "2026-11-10T18:35:12.139734+00:00"
+  "store_run": "2026-11-10T23:29:51+00:00",
+  "ig_run": "2026-11-10T23:34:19.123263+00:00"
  }
 }

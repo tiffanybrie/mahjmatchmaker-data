@@ -1,6 +1,6 @@
 # Mahj Matchmaker release calendar
 
-Updated 2026-11-10 from brand sites, the Sunday release schedule, brand Instagram feeds (Planoly) and Gmail. Source of truth: `config/release-calendar.json`; regenerate with `python3 scripts/release_calendar/build_md.py`.
+Updated 2026-11-10T23:36:00Z from brand sites, the Sunday release schedule, brand Instagram feeds (Planoly) and Gmail. Source of truth: `config/release-calendar.json`; regenerate with `python3 scripts/release_calendar/build_md.py`.
 
 **Rule (Tiffany, Oct 21):** save restock content for the buying window. Don't spend a set's content before you can buy it; post 1-2 weeks before a dated restock so people pick their mat and have the code ready when it drops.
 
@@ -35,6 +35,8 @@ Updated 2026-11-10 from brand sites, the Sunday release schedule, brand Instagra
 | 2026-11-10 | Miss Mahjong | Scalloped acrylic racks in 5 new colors: Butter Yellow, Pistachio, Chartreuse, Peony, Bombshell Pink ($150) | 2026-11-10 10:00 | no | yes |  |
 | 2026-11-10 | Virora Mahjong | Tinselle Ruby Red tiles (Christmas Collection I), pre-order |  | no | yes |  |
 | 2026-11-10 | Mahj Mood | Flash sale: buy one mat, second 1/2 off (codes don't stack) | 2026-11-10 | no | yes |  |
+| 2026-11-10 | My Fair Mahjong | Crystal Confetti tiles, Calm Blue | 2026-11-10 | no | yes |  |
+| 2026-11-10 | Virora Mahjong | Tinselle Emerald Green Christmas tiles ($299) | 2026-11-10 | no | yes |  |
 | 2026-11-11 | Mahj Pit | Christmas tiles launch (red backs with folk-floral faces + gold-glitter confetti tiles; looks like the Merry Merry Holiday Tiles Limited Edition design, currently sold out on the store) | 2026-11-11 | no | yes | Check store Nov 11; if it's a NEW design (not Merry Merry relisted) treat as a partner launch. Photo: assets/launches/mahjpit-christmas-tiles-teaser/. |
 | 2026-11-11 | Mahj Pit | Original Confetti tiles restock (Small $395 / Large $495) | 2026-11-11 | no | yes | Restock of existing set; check store Nov 11. |
 | 2026-11-11 | Oh My Mahjong | Juniper tiles ($475) + Lotus Cove mat ($90) | 2026-11-11 10:00 | Juniper (album set built, waits on her picks by Nov 9) | yes | Album live with the launch; group post per the Papaya precedent (needs/launch-juniper-mahjong-tiles). |
@@ -143,6 +145,7 @@ Updated 2026-11-10 from brand sites, the Sunday release schedule, brand Instagra
 | Miss Mahjong | Mini Miss Classic (ETA Nov 4) + Mini Miss Out of Office (ETA Nov 28) travel bundles | restock | Miss Classic travel Nov 3 10am CT (IG) / Mini Miss OOO Nov 28 | no | yes | Skip (travel tiles). Travel-tiles blog only. | [Product pages arrivalDate (Mini Miss Classic moved 2026-10-2](https://missmahjong.com/products/mini-miss-classic-travel-mahjong-bundle) |
 | My Fair Mahjong | Poppy Red Racks (new), shown with their holiday mats | launch | 2026-10-28 | no | yes | Racks: log only; rack-pairing option for red holiday mats. | [Instagram @myfairmahjong](https://www.instagram.com/reel/DfDRlHph5cK/) |
 | My Fair Mahjong | Confetti Racks (purple, pink, blue, green) short preorder | racks | 2026-11-06 | no | yes | Racks: record only. | [IG @myfairmahjong](https://www.instagram.com/p/DfaD7aThh-_/) |
+| My Fair Mahjong | Crystal Confetti tiles, Calm Blue | restock | 2026-11-10 | no | yes |  | [link](https://myfairmahjong.com/products/confetti-calm-blue) |
 | Noli June | FA LA LADIES winter collection: 4 mats (Marlene, Shirley, Ruth, Rochelle; $215) + 4 tablecloths + 4 dice dishes | launch | 2026-11-03 06:00 | no | yes | Partner (Shopify Collabs, MAHJMATCH 10% off $100+). Noli emails creator links 5am CT Tue. Add the 4 mats to FYM/gallery when public (MATCH-INBOX). Swipe book the day listings go public (check config/swipe-books.json first). Sweater Weather $197 -> $215 Tue. | [Noli June creator email Oct 31 + IG Oct 24/26](https://nolijune.com/pages/falaladies-waitlist) |
 | Oh My Mahjong | Southern Sparrow Shufflers (restock) | restock | 2026-10-20 | no | yes | Accessory: optional story mention with MAHJMATCH through Planoly. | [OMM customer email](https://ohmymahjong.com/products/southern-sparrow-shufflers) |
 | Oh My Mahjong | Papaya Spritz tiles + Vivienne mat | launch | 2026-10-21 10:00 | Papaya Spritz (live) | yes | In progress (launch-papaya-spritz needs doc). Follow-up 'still in stock' post Oct 23-24. | [OMM IG Oct 21 + email Oct 20](https://www.instagram.com/p/DewQIDREXg1/) |
@@ -177,6 +180,7 @@ Updated 2026-11-10 from brand sites, the Sunday release schedule, brand Instagra
 | Sunday Mahjong | Blonde Tortoise, Candy Blue, Clear, Tortoise, Mini Blonde Tortoise racks; Vegan Leather Mini mat; card sets | re-release | no date | no | no | Watch only. | [Release schedule](https://sundaymahjong.com/pages/release-schedule) |
 | Sunday Mahjong | Peachie Speechie tile set (first run) | launch | no date (new on release schedule, Oct 26) | no | no | Watch; album candidate once dated (no code, non-partner). | [Release schedule (updated Oct 26)](https://sundaymahjong.com/pages/release-schedule) |
 | Sweet Jojo Mahjong | Navy Blue Folk tile set: price drop | sale | 2026-11-03 | no | no | Non-partner: record only. | [email support@sweetjojomahjong.com](https://sweetjojomahjong.com) |
+| The Royal Mahjong Society | Heirloom Crown Jewels (engraved + painted) tiles | coming-soon |  | no | yes |  | [link](https://www.instagram.com/reel/DfkcDuRzIqZ/) |
 | Tigre de Tartán | Holiday roll-out: Ditsy Christmas Maraschino (live Oct 20), Birdsong by Katherine Hartman (live Oct 20), Estate Sale (week of Oct 26), Fair Isle Cashmere (November); DOMINO BLONDE mat (new, coming soon Oct 22) | launch | weekly drops, Tue 4pm CT | no | yes | Holiday mats: Holiday section only. Never promote Paige Spearin x TdT (no commission; Après Mahj drops alongside Estate Sale). | [TdT IG Oct 17-19](https://www.instagram.com/reel/DernpTbOPsJ/) |
 | Tigre de Tartán | Classic American Beechwood tiles (solid beechwood); House Tigers Oyster tiles | launch | 2026-10-27 16:00 | no | yes | No album. Launch-day story with code only if a fitting pairing; otherwise log. | [TdT IG Oct 24 ('next Tuesday they will go live')](https://www.instagram.com/reel/De4kvHDONLd/) |
 | Tigre de Tartán | House Tigers tiles (return + new oyster finish) | restock | 2026-11-03 16:00 | no | yes | Not an album set. Check store Nov 3 after 4pm CT; no MAHJMATCH/#MahjMatch in any text naming TdT. | [TdT IG Oct 30-31](https://www.instagram.com/reel/DfKFw-7srxS/) |
@@ -188,6 +192,7 @@ Updated 2026-11-10 from brand sites, the Sunday release schedule, brand Instagra
 | Virora Mahjong | Hiverelle holiday mat | restock | 2026-11-09 | no | yes |  | [link](https://www.viroramahjong.com/products/hiverelle) |
 | Virora Mahjong | Lilacée tiles (yellow-lilacee listing) | restock | 2026-11-10 17:00 | no | yes | No album. Optional restock story on the day with link + code. | [Product page ETA (release scan Nov 2)](https://www.instagram.com/p/DfgNXkPo43d/) |
 | Virora Mahjong | Tinselle Ruby Red tiles (Christmas Collection I), pre-order | preorder |  | no | yes |  | [link](https://www.viroramahjong.com/products/ruby-christmas) |
+| Virora Mahjong | Tinselle Emerald Green Christmas tiles ($299) | restock | 2026-11-10 | no | yes |  | [link](https://www.viroramahjong.com/products/tinselle-emerald-green) |
 | Virora Mahjong | Nivalee Glacier Blue (Christmas II) preorder | preorder | ships from Nov 15 | no | yes | Holiday tile set; holiday mats only. | [Virora IG Oct 14 + Oct 20](https://www.instagram.com/reel/DesfzYXCEEQ/) |
 | Wren Mats | Christmas Village holiday mat (first batch in stock) | restock | LIVE Sun Nov 8 | no | yes | Partner holiday mat, already in FYM: reshare their reel + code MAHJMATCH sticker; HQ needs/launch-wren-christmas-village-nov08. | [Wren IG reel Nov 8 3:31pm ET + store JSON (both sizes availa](https://www.instagram.com/reel/Dffng5YoZQi/) |
 
