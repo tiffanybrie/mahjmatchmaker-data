@@ -7,7 +7,8 @@ Rules live in docs/REVENUE-WATCH.md."""
 import json, glob, os, sys, collections, datetime as dt, argparse
 
 ALIAS = {  # one name per brand (money docs use several spellings)
-    'middle and main mahjong': 'Middle & Main', 'middle & main': 'Middle & Main',
+    'middle and main mahjong': 'Middle & Main', 'middle & main': 'Middle & Main', 'middle and main': 'Middle & Main',
+    'middle & main mahjong': 'Middle & Main',
     'anders ruff design co.': 'Anders Ruff', 'anders ruff': 'Anders Ruff',
     'mac + miller': 'Mac + Miller', 'mac+miller mahjong': 'Mac + Miller',
     'amanda toppe': 'Amanda Toppe Living', 'amanda toppe living': 'Amanda Toppe Living',
@@ -29,7 +30,7 @@ for f in files:
     agg = collections.defaultdict(lambda: [0, 0.0])
     for b in json.load(open(f)).get('brands', []):
         if b['brand'].startswith('ShopMy: Ambassador'): continue
-        k = norm(b['brand']); agg[k][0] += b.get('orders') or 0; agg[k][1] += b.get('commission') or 0
+        k = norm(b['brand']); agg[k][0] += b.get('orders') or 0; c_ = b.get('commission'); agg[k][1] += c_ if isinstance(c_, (int, float)) else 0  # '?' = amount unknown (Nov 8 rule): counts as an order, $0 until her screenshot
     day[d] = agg
 end = dt.date.fromisoformat(a.date) if a.date else max(dt.date.fromisoformat(d) for d in day)  # last COMPLETE day
 def rng(e, n): return [(e - dt.timedelta(i)).isoformat() for i in range(n)]
