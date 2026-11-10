@@ -1,6 +1,7 @@
 # Charleston Mahjong Club (@charlestonmahjongclub): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 9 4:38pm ET: reel 'Two BIG things': new STORE LOCATOR live (find CMC at retailers near you) + moved into new offices + showroom (visits by appointment) (https://www.instagram.com/reel/DfiTXf8xAYJ/). News, no product.
 - Nov 5 3:02pm ET: reel 'Our Biggest Giveaway Yet!!' (https://www.instagram.com/reel/DfX1w9hRo7l/): first batch of FULL-SIZE Cabana Club Edition tiles 'arriving any day now'; email subscribers get first access; next shipment not until DECEMBER. Giveaway = Cabana Club set + MATCHING MAT + matching tile bag + shufflers + 1 yr Mahj Passport (tags @mahjpassport), ends Mon Nov 9 8pm ET, winner Tue Nov 10. PAIRING: Cabana tiles shown on their Cabana Club (blue fretwork/palm) mat. Store Nov 5 6:35pm ET: full-size listing not public yet (only travel bundle preorder + Cabana neoprene mats $75).
 - Nov 2 11:24am ET: OTG|247 x Charleston Mahjong Club collab 'officially available today!': No. 8 Nudie Green (holds tiles) + No. 5 Charleston Mahjong Collab Clutch (card + shufflers), designed to coordinate with the Country Club Collection tile artwork (DfPuShzRLfn). Bags: record only. Comment 'MAHJONG' CTA.
 - Nov 1 8:35am ET: Cabana Club Travel Bundles 'officially open for pre-order', VERY short window, arriving 'in just a few weeks' (DfM2kP6EYPL). Candy-hangover Halloween tone. Travel: skip.

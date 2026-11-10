@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-09",
- "updatedBy": "partner watch 1:30pm ET",
+ "updatedBy": "partner watch Nov 9 evening",
  "rules": {
   "timing": {
    "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -812,7 +812,7 @@
    "window": "delayed to mid-November (IG Oct 29); was ~Nov 9",
    "windowStart": "2026-11-12",
    "windowEnd": "2026-11-25",
-   "status": "SNEAK PEEK Nov 2; Nov 4 reel: 'first wave gets here in a couple of weeks' (DfVnuhFjlMk). Not on store yet. Flagged to Tiffany Nov 2.",
+   "status": "Golf LIVE 2026-11-09 (Let's Golf! in Celadon Mist + Magnolia Blush, $385, store JSON); Wild, Sweet, Refined, Merry, Stir Things Up still coming",
    "source": "IG Oct 26 + Oct 29 delay",
    "sourceUrl": "https://www.instagram.com/reel/DfQNG0Ejejh/",
    "album": false,
@@ -1045,10 +1045,10 @@
    "id": "lbb-artist-collective",
    "brand": "Let's Be Besties",
    "product": "LBB Artist Collective (new artist-designed mats: OHBoN Studios, BeachyMahj, Wanda Viola Designs, AC Studios, Lillian Claire Designs, Spill the Mahj)",
-   "type": "coming soon",
+   "type": "launch",
    "window": "early November",
    "windowStart": "2026-11-02",
-   "status": "sneak peek (no designs shown yet)",
+   "status": "LIVE 2026-11-09 (174 mats, store JSON + IG reel DfiVSKTx2FJ)",
    "source": "LBB affiliate email + Instagram Oct 30 (new website live)",
    "sourceUrl": "https://www.instagram.com/reel/DfH0fj7RjRt/",
    "album": false,
@@ -1825,6 +1825,36 @@
    "album": false,
    "affiliate": true,
    "priority": 3
+  },
+  {
+   "id": "miss-muertos-mats-restock-nov09",
+   "brand": "Miss Mahjong",
+   "product": "Día de Muertos mats: Papel Picado, Toile de los Muertos ($80), El Último Refresco ($175, Tigre de Tartán collab)",
+   "type": "restock",
+   "window": "LIVE Mon Nov 9 5:36pm CT",
+   "windowStart": "2026-11-09",
+   "status": "LIVE 2026-11-09",
+   "source": "store JSON (tag coming-back)",
+   "sourceUrl": "https://missmahjong.com/products/papel-picado-mahjong-playing-mat",
+   "album": false,
+   "affiliate": true,
+   "priority": 3,
+   "contentTiming": "Pairs with Miss Catrina tiles; Brand Watch + needs card; no frames."
+  },
+  {
+   "id": "maven-coca-cola-preorder",
+   "brand": "Mah Jongg Maven",
+   "product": "Mah Jongg Maven x Coca-Cola Classic tile set",
+   "type": "preorder",
+   "window": "preorder open now ($100 deposit); ships early December",
+   "windowStart": "2026-11-06",
+   "status": "PREORDER open (IG Nov 6); full bundle sold out (waitlist)",
+   "source": "IG @mahjonggmaven Nov 6",
+   "sourceUrl": "https://www.instagram.com/p/DfaPJWblBLi/",
+   "album": false,
+   "affiliate": true,
+   "priority": 3,
+   "contentTiming": "Codes post line (5% off with MAHJMATCH)."
   }
  ],
  "sources": {
