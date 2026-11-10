@@ -19,6 +19,8 @@ NOTE 2026-11-08: automated Chrome submits on Shopify footer forms (Amahj, Bam!, 
 ## Chrome method that works (Nov 7)
 Shopify footer forms submitted by script or Enter do NOT confirm (page shows an hCaptcha badge; no customer_posted reload). Use the brand's signup POPUP instead (Klaviyo/Privy/Attentive): navigate, wait ~8s for it, screenshot, click the email box, type, click the button, then close/Escape the SMS step. ~2 browser calls per brand. If no popup shows, note it and move on.
 
+Gmail recheck 2026-11-10: still no welcome/confirm email for Bam Bird, Let's Mahj On, Mahj Squad, Virora, Wren Mats, YMI (searched brand names + shopifyemail/klaviyo). No TODO/NOT YET rows left; FAILED rows = Tiffany 10s on her phone.
+
 ## Status (Gmail check Nov 6: "seen" = their marketing emails already arrive)
 | Brand | Store | Status |
 |---|---|---|
@@ -58,5 +60,5 @@ Shopify footer forms submitted by script or Enter do NOT confirm (page shows an 
 | Wren Mats | wrenmats.com | signed up 2026-11-08 (Squarespace footer form, "Thank you!") |
 | Splash of Color | splashofcolorco.com | FAILED 2026-11-08 (store splashofcolorco.com; footer hCaptcha; its popup is a loyalty ACCOUNT signup, not used). Tiffany 10s |
 | Yellow Mountain Imports | ymimports.com | signed up 2026-11-08 (footer form, "Thanks for joining us"; confirmation email pending) (never featured on social) |
-| Mah Jongg Maven | mahjonggmaven.com | NOT YET (onboarding run Nov 9: Chrome offline). Footer box "subscribe to our newsletter!" (WordPress/Elementor). DESK OPS line |
+| Mah Jongg Maven | mahjonggmaven.com | signed up 2026-11-10 (WordPress footer form, "Thank you, you have successfully registered!"; reCAPTCHA badge only, no challenge); no welcome email yet |
 | Mahjong Row & Co. | - | EXCLUDED (out Nov 6) |
