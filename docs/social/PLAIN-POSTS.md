@@ -28,3 +28,14 @@ Say the depth of the library when it is true: e.g. "(plus an album for every Oh 
 
 ## Speak to our depth (Tiffany Nov 10 11:59am)
 Every Find Your Mat-ch line says how big the library is: "along with over 1,500 mats on the mahj market" (number from the live FYM snapshot, rounded down to the hundred; plain_post.py does it).
+
+## The social system now (Tiffany Nov 10 12:05pm, STANDING)
+Social = getting the album work she already did out into the world. No new concepts, no special content. For every album:
+1. The album's intro carousel (the slides she approved) -> IG carousel, auto-post, brand collab + tag.
+2. Every slide -> its own IG story frame, auto-post.
+3. The same slides -> a reel (slides in order, slow zoom, cross-fades, album cover as reel cover).
+4. Caption from scripts/social/plain_post.py. Group post from the same script.
+Claude HANDLES this end to end, the moment the album is ready. She does not build or monitor it.
+
+## Do it the moment it happens (Tiffany Nov 10 12:06pm)
+Never hold work to batch it. Holding only means Chrome drops or something gets blocked later. Same usage either way: do it now.
