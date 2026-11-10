@@ -1,5 +1,5 @@
 {
- "_note": "Curated Brand Watch lines for HQ (hq/brandWatch). The 3x-daily partner watch adds new store/IG events automatically (deduped); edit this file for dates/actions. Week = Sun-Sat. Times CT. Tigre de Tartan is image-only on social: never type its name in captions. YMI never on social. SCOPE (Tiffany Nov 9): product news only (launches, restocks, new products, preorders). Never giveaways or social minutiae.",
+ "_note": "Curated Brand Watch lines for HQ (hq/brandWatch). The 3x-daily partner watch adds new store/IG events automatically (deduped); edit this file for dates/actions. Week = Sun-Sat. Times CT. Tigre de Tartan is image-only on social: never type its name in captions. YMI never on social. SCOPE (Tiffany Nov 9): product news only (launches, restocks, new products, preorders). Never giveaways or social minutiae. ACTION RULE (Tiffany Nov 10): a partner launch/restock dated within 48h is ACTED ON the same run (draft group post/story, show her), never just filed; front_door shows it until posted/skip (scripts/checks/launch_48h_check.py).",
  "week_label": "Week of Sun Nov 8 – Sat Nov 14",
  "this_week": [
   {
@@ -17,11 +17,11 @@
    "date": "2026-11-10",
    "day": "Tue 11/10",
    "time": "4pm CT",
-   "brand": "Tigre de Tartán (image-only)",
+   "brand": "Tigre de Tartán",
    "partner": true,
    "what": "Domino Blonde mat drops (sold out now; rules + no-text editions; already in Find Your Mat-ch)",
    "tag": "mat",
-   "action": "Reshare their post with the code IMAGE only, never type the brand name",
+   "action": "Same-day group post + story with TdT product link (code typed in our group; image-only is website/Google only)",
    "url": "https://www.instagram.com/reel/Dfh8nR1ttsi/"
   },
   {

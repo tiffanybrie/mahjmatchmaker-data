@@ -83,5 +83,10 @@ try:
     r=subprocess.run(['python3','scripts/checks/tile_photo_check.py'],capture_output=True,text=True,timeout=20)
     if r.returncode: out[0:0]=[l for l in r.stdout.splitlines() if l.startswith('ASK TIFFANY NOW')]
 except Exception: pass
+# Nov 10 7:52am (Tiffany: Domino Blonde caught Monday, filed, never acted on): partner launches in the next 48h.
+try:
+    r=subprocess.run(['python3','scripts/checks/launch_48h_check.py'],capture_output=True,text=True,timeout=20)
+    if r.returncode: out[0:0]=[l for l in r.stdout.splitlines() if l.strip()]
+except Exception: pass
 if out:
     print('=== FRONT DOOR (automatic, every message) ===\n'+'\n'.join(out)+'\nRule: if you tell Tiffany you will fix something, fix it BEFORE you reply, or add it to docs/OVERDUE.md in the same turn and tell her who/when.')
