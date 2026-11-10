@@ -1277,3 +1277,6 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - 2026-11-09 2:25pm Tiffany: Juniper grid posted (12:30pm auto-post confirmed).
 - 2026-11-09 4:27pm Tiffany: /links (IG link in bio) must feature Juniper now (both OK, never leave Juniper out). Patch: site/livepatch/links-nov09/README.md. Chrome unreachable 4:28pm; retry scheduled.
 - 2026-11-10 7:39am Tiffany asked 'did we miss this?' (TdT Domino Blonde, today 4pm CT). Partner watch caught it Nov 9 1:30pm, AFTER the codes post (11:16am); nothing was built. Same-day group post + IG story drafted for her yes: docs/social/tdt-domino-blonde-2026-11-10.post.txt, photos assets/social/tdt-domino-blonde/.
+- 2026-11-10 7:48am Tiffany: correction - codes post went up MONDAY 11/9 (11:16am); partner watch caught Domino Blonde Monday 1:30pm (not Sunday).
+- 2026-11-10 7:49am Tiffany: TdT image-only code rule is for the WEBSITE/Google only. In our own FB group, type the code ("use code MAHJMATCH, save 10%"). Never send people to our own page to buy: link the BRAND's product page with our code/affiliate link.
+- 2026-11-10 7:52am: /links Juniper card LIVE (Juniper card first, Deco second; album strip Juniper first). Verified by curl.

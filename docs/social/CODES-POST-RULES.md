@@ -11,3 +11,4 @@ Read before writing ANY Monday "Partner Codes + Updates" post.
 9. Sales season: tease our Black Friday deals page.
 10. Never say an album is 'up before the tiles drop' - it always is (Tiffany Nov 9).
 11. Any post/reel that names Find Your Mat-ch shows the tool in use (screen recording or real screens), never just the name (Tiffany Nov 9 11:25am).
+12. Our own FB group: always type the code (TdT included: the image-only rule is website/Google only). Buy links go to the BRAND's product page with our code/affiliate link, never to our own page (Tiffany Nov 10).
