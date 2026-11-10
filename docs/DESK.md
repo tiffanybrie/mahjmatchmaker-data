@@ -55,7 +55,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **Main: hq/launches** is ~245 KB of the 256 KiB cap: archive pre-Oct 25 items before the next add.
 - **Main: config/pinterest/queue.json** vs Planoly: resync (Planoly healthy, 83 scheduled through Nov 30).
 - **OPS (standing): HQ ShopMy tab inbox** at the start of every Ops reply.
-- **Partner feedback watch** trig_01RKw9eUwTYPo39gbYHb65gh: last planned run Tue Nov 10 (disable after unless feedback is coming in; 0 real partner notes so far).
+- **Main: Partner feedback watch** trig_01RKw9eUwTYPo39gbYHb65gh: final run Tue Nov 10 2:15pm ET found 0 real partner items Nov 1-10. HQ needs card partner-feedback-watch-end (Quick, 1 min) asks her OK to turn it off; on her yes, disable it with update_trigger (enabled=false). Daily FYM feedback reading continues in the HQ cleanup.
 
 ## In progress
 | Item | Owner | Next step | Target |
