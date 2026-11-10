@@ -20,6 +20,7 @@ a.add_argument('--count', type=int, required=True)
 a.add_argument('--partner-mat', default='')
 a.add_argument('--emoji', default='')
 a.add_argument('--every-set', action='store_true', help='we have an album for every set this brand ever made (Tiffany: OMM, Nov 10)')
+a.add_argument('--also', default='', help='other brands shown, comma-separated names (tagged at the bottom)')
 a.add_argument('--instock', action='store_true', help='set is already for sale: no release line')
 x = a.parse_args()
 
@@ -41,9 +42,14 @@ code = f"Use code MAHJMATCH to save {pct}% at {x.brand} 💕"
 _m = json.load(open(R + '/config/fym-mats-snapshot.json'))['mats']
 depth = f"{(sum(1 for v in _m.values() if not v.get('hid')) // 100) * 100:,}"
 every = f" (plus an album for every {x.brand} set ever made)" if x.every_set else ""
-ig = (f"{when_ig} {x.emoji}\n\nAs always, I have an album for you: {x.count} mats matched to {x.set}{every}, link in bio. "
+# Brand tags go at the BOTTOM, after the caption, before hashtags (Tiffany Nov 10 12:44pm); every brand shown is tagged.
+_tb = [x.brand] + [b.strip() for b in x.also.split(',') if b.strip()]
+_miss = [b for b in _tb if not H.get(b)]
+if _miss: print('WARN no IG handle for:', ', '.join(_miss))
+tagline = ' '.join('@' + H[b] for b in _tb if H.get(b))
+ig = (f"{when} {x.emoji}\n\nAs always, I have an album for you: {x.count} mats matched to {x.set}{every}, link in bio. "
       f"You can also match {x.set}{pm} in Find Your Mat-ch, along with over {depth} mats on the mahj market!\n\n{code}\n\n"
-      f"#mahjong #{x.tag} #mahjongtiles #mahjongmat #MahjMatch")
+      f"{tagline}\n\n#mahjong #{x.tag} #mahjongtiles #mahjongmat #MahjMatch")
 grp = (f"{when} {x.emoji}\n\nAs always, I have an album for you: {x.count} mats matched to {x.set}{every}.\n{x.album}\n\n"
        f"You can also match {x.set}{pm} in Find Your Mat-ch, along with over {depth} mats on the mahj market!\n{FYM}\n\n{code}\n\n#MahjMatch")
 
