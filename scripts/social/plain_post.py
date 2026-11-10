@@ -19,6 +19,7 @@ for k in ('set', 'brand', 'release', 'album', 'tag', 'out'):
 a.add_argument('--count', type=int, required=True)
 a.add_argument('--partner-mat', default='')
 a.add_argument('--emoji', default='')
+a.add_argument('--every-set', action='store_true', help='we have an album for every set this brand ever made (Tiffany: OMM, Nov 10)')
 a.add_argument('--instock', action='store_true', help='set is already for sale: no release line')
 x = a.parse_args()
 
@@ -32,10 +33,11 @@ when = (f"The latest {x.brand} set, {x.set}, is in stock now!" if x.instock
         else f"The latest {x.brand} set, {x.set}, releases {x.release}!")
 pm = f" and her new partner mat, {x.partner_mat}," if x.partner_mat else ""
 code = f"Use code MAHJMATCH to save {pct}% at {x.brand} 💕"
-ig = (f"{when} {x.emoji}\n\nAs always, I have an album for you: {x.count} mats matched to {x.set} (link in bio). "
+every = f" (plus an album for every {x.brand} set ever made)" if x.every_set else ""
+ig = (f"{when} {x.emoji}\n\nAs always, I have an album for you: {x.count} mats matched to {x.set}{every}, link in bio. "
       f"You can also match {x.set}{pm} in Find Your Mat-ch!\n\n{code}\n\n"
       f"#mahjong #{x.tag} #mahjongtiles #mahjongmat #MahjMatch")
-grp = (f"{when} {x.emoji}\n\nAs always, I have an album for you: {x.count} mats matched to {x.set}.\n{x.album}\n\n"
+grp = (f"{when} {x.emoji}\n\nAs always, I have an album for you: {x.count} mats matched to {x.set}{every}.\n{x.album}\n\n"
        f"You can also match {x.set}{pm} in Find Your Mat-ch!\n{FYM}\n\n{code}\n\n#MahjMatch")
 
 os.makedirs(x.out, exist_ok=True)

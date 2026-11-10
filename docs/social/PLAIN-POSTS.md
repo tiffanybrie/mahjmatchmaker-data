@@ -22,3 +22,6 @@ Not robotic. The template sentences are her own words (Nov 9 10:47am codes-post 
 releases <when>!" / "As always, I have an album for you" / "You can also match <Set> and her new partner mat, <Mat>, in
 Find Your Mat-ch!" / "Use code MAHJMATCH to save N% at <Brand> 💕". Excitement = her exclamation points + 1-2 set-colour
 emojis. Still no invented one-liners or personality copy.
+
+## Sell what we have (Tiffany Nov 10 11:50am)
+Say the depth of the library when it is true: e.g. "(plus an album for every Oh My Mahjong set ever made)" (plain_post.py --every-set). Tell people what they get, not just that a post exists.
