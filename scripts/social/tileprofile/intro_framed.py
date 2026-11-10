@@ -44,19 +44,36 @@ diag = (f'<div style="position:absolute;left:0;top:0;width:1080px;height:1350px;
 labs = ''.join(f'{ab(M(798, 0)[0] + 12, M(0, y)[1] - 17, "display:flex;align-items:center;gap:10px;font:700 26px/1.05 Bit;color:var(--navy)", 236)}<i style="flex:0 0 24px;height:24px;border-radius:50%;background:{c};box-shadow:0 0 0 3px #fff,0 1px 4px rgba(5,40,90,.25)"></i><span>{t}</span></div>'
                for y, t, c in ((390, 'Papaya', cpap), (490, 'Lavender layer', clav), (590, 'Light lime layer', clime)))
 capy = M(0, 760)[1]
-s2 = (hdr(('Her colors', 84)) + diag + labs +
-      f'{ab(M(153,0)[0], capy, "text-align:center;font:700 19px Bit;letter-spacing:.2em;text-transform:uppercase;color:#5a6b85", 294*k)}the back</div>'
-      f'{ab(M(560,0)[0], capy, "text-align:center;font:700 19px Bit;letter-spacing:.2em;text-transform:uppercase;color:#5a6b85", 200*k)}the side</div>'
-      f'<img src="{url(f"assets/colorwheels/{key}-color-wheel-mini.png")}" style="position:absolute;left:14px;top:640px;width:430px;height:430px">'
-      f'{ab(458, 690, "", 330)}<div class="caps" style="font-size:19px;color:var(--pink)">On the color wheel</div>'
-      f'<div style="font:400 30px/1.3 Bit;color:#2c3e63;margin-top:18px"><b style="font-weight:700;color:var(--navy)">1 &nbsp;Papaya</b><br>bright, warm orange<div style="height:18px"></div><b style="font-weight:700;color:var(--navy)">2 &nbsp;Lavender</b><br>soft, cool, blue-leaning<div style="height:18px"></div><b style="font-weight:700;color:var(--navy)">3 &nbsp;Light lime</b><br>soft yellow-green</div>'
-      f'<div style="margin-top:20px;font:italic 400 25px/1.3 PF;color:#5a6b85">Outer edge = bright.<br>Toward the center = soft.</div></div>')
+LY = P.get('layers') or {}
+if LY.get('labels'):   # Juniper-style sets (Nov 10): layer arrows on OMM's own tile photo + wheel notes from the profile, no Papaya text
+    sc = 380 / 732; ox, oy = 110, 200
+    pts = [(ox + x * sc, oy + y * sc, t, c) for x, y, t, c in LY['labels']]
+    lys = [310, 390, 470][:len(pts)]
+    diag = (f'<img src="{url(LY["img"])}" style="position:absolute;left:{ox}px;top:{oy}px;width:380px;filter:drop-shadow(0 12px 16px rgba(80,40,20,.16))">'
+            '<svg style="position:absolute;left:0;top:0" width="1080" height="1350">' +
+            ''.join(f'<polyline points="{px},{py} {px+24},{ly} 500,{ly}" fill="none" stroke="#054689" stroke-width="3"/><circle cx="{px}" cy="{py}" r="7" fill="#fff" stroke="#054689" stroke-width="3"/>' for (px, py, t, c), ly in zip(pts, lys)) + '</svg>')
+    labs = ''.join(f'{ab(508, ly - 15, "display:flex;align-items:center;gap:8px;font:700 24px/1.05 Bit;color:var(--navy)", 330)}<i style="flex:0 0 24px;height:24px;border-radius:50%;background:{c};box-shadow:0 0 0 3px #fff,0 1px 4px rgba(5,40,90,.25)"></i><span>{e(t)}</span></div>' for (px, py, t, c), ly in zip(pts, lys))
+    notes = '<div style="height:14px"></div>'.join(f'<b style="font-weight:700;color:var(--navy)">{i+1} &nbsp;{e(n)}</b><br>{e(d)}' for i, (n, d) in enumerate(LY.get('wheel_notes', [])))
+    s2 = (hdr(('Her colors', 84)) + diag + labs +
+          f'<img src="{url(f"assets/colorwheels/{key}-color-wheel-mini.png")}" style="position:absolute;left:100px;top:640px;width:330px;height:330px">'
+          f'{ab(450, 640, "", 380)}<div class="caps" style="font-size:19px;color:var(--pink)">On the color wheel</div>'
+          f'<div style="font:400 25px/1.28 Bit;color:#2c3e63;margin-top:16px">{notes}</div>'
+          f'<div style="margin-top:18px;font:italic 400 23px/1.3 PF;color:#5a6b85">{LY.get("wheel_legend", "")}</div></div>')
+else:
+    capy = M(0, 760)[1]
+    s2 = (hdr(('Her colors', 84)) + diag + labs +
+          f'{ab(M(153,0)[0], capy, "text-align:center;font:700 19px Bit;letter-spacing:.2em;text-transform:uppercase;color:#5a6b85", 294*k)}the back</div>'
+          f'{ab(M(560,0)[0], capy, "text-align:center;font:700 19px Bit;letter-spacing:.2em;text-transform:uppercase;color:#5a6b85", 200*k)}the side</div>'
+          f'<img src="{url(f"assets/colorwheels/{key}-color-wheel-mini.png")}" style="position:absolute;left:14px;top:640px;width:430px;height:430px">'
+          f'{ab(458, 690, "", 330)}<div class="caps" style="font-size:19px;color:var(--pink)">On the color wheel</div>'
+          f'<div style="font:400 30px/1.3 Bit;color:#2c3e63;margin-top:18px"><b style="font-weight:700;color:var(--navy)">1 &nbsp;Papaya</b><br>bright, warm orange<div style="height:18px"></div><b style="font-weight:700;color:var(--navy)">2 &nbsp;Lavender</b><br>soft, cool, blue-leaning<div style="height:18px"></div><b style="font-weight:700;color:var(--navy)">3 &nbsp;Light lime</b><br>soft yellow-green</div>'
+          f'<div style="margin-top:20px;font:italic 400 25px/1.3 PF;color:#5a6b85">Outer edge = bright.<br>Toward the center = soft.</div></div>')
 
 # ---- slide 3: her faces
 def chip(n, h, w, sw, fs, hs):
     return (f'<div style="width:{w}px;background:#fff;border-radius:14px;box-shadow:0 2px 10px rgba(5,40,90,.13);overflow:hidden"><div style="height:{sw}px;background:{h}"></div>'
             f'<div style="padding:9px 6px 10px;text-align:center"><div style="font:700 {fs}px/1.1 Bit;color:var(--navy)">{e(n)}</div><div style="font:500 {hs}px Bit;letter-spacing:.06em;color:#7a879c;margin-top:4px">{h.upper()}</div></div></div>')
-mains = ''.join(chip(n, h, 236, 66, 27, 16) for n, h in [('Papaya', cpap), ('Lavender', clav), ('Light lime', clime)])
+mains = ''.join(chip(n, h, 236, 66, 27, 16) for n, h in ([(b[0].title() if b[0].islower() else b[0], b[1]) for b in hc['backs']][:3] if LY.get('labels') else [('Papaya', cpap), ('Lavender', clav), ('Light lime', clime)]))
 sw = (W - 3 * 16) // 4; sups = [chip(n, h, sw, 40, 23, 14) for n, h in hc['supporting']]
 s3 = (hdr(('Her faces', 84)) +
       f'<div style="position:absolute;left:{L}px;top:192px;width:{W}px;height:470px;border-radius:20px;background:#fff url({url(H + "/faces-crop.jpg")}) center/cover;box-shadow:0 0 0 8px #fff,0 12px 26px rgba(6,40,90,.16)"></div>'
@@ -79,7 +96,7 @@ s4 = (hdr(('Her best features', 72)) +
       f'{ab(L, 676, "display:flex;justify-content:space-between", W)}{sing}</div>')
 
 # ---- slide 5: racks she's into
-RACK = {'Bird & Bamboo Lavender': 'assets/colorcards/papaya-spritz/racks/bird-and-bamboo-lavender.png', 'Peace Love Mahjong Chartreuse': 'assets/racks/card/peace-love-mahjong-chartreuse.png',
+RACK = {'Oh My Mahjong Hot Pink': 'assets/racks/card/oh-my-mahjong-hot-pink.png', 'Oh My Mahjong Agate': 'assets/racks/card/oh-my-mahjong-agate.png', 'Bird & Bamboo Lavender': 'assets/colorcards/papaya-spritz/racks/bird-and-bamboo-lavender.png', 'Peace Love Mahjong Chartreuse': 'assets/racks/card/peace-love-mahjong-chartreuse.png',
         'Peace Love Mahjong Oak': 'assets/racks/card/peace-love-mahjong-oak.png', 'Middle & Main Scalloped Beechwood': 'assets/racks/card/middle--main-scalloped-beechwood.png',
         'Mahjong Row & Co. Scalloped Tortoise': 'assets/racks/card/mahjong-row--co-scalloped-tortoise.png'}
 BRANDS = ('Bird & Bamboo', 'Peace Love Mahjong', 'Middle & Main', 'Miss Mahjong', 'Mahjong Row & Co.', 'Bam Bird Boutique')

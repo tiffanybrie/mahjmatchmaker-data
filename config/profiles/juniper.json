@@ -1,295 +1,296 @@
 {
- "_note": "Juniper Tile Set Profile (doc 81), DRAFT Nov 6, built by Claude for Tiffany's review. Colours from config/colorcards.json sets.juniper (her Nov 5 wording: forest green JADE-LOOK back, never call the teal layer jade). Mats = Claude's round-2 top 3 (Garden Glow #1, Palm Royale #2, Lotus Cove #3 = OMM pair, never #1). Racks = OMM Hot Pink + OMM Agate (Tiffany Nov 6 2:11am: OMM racks only, one shape; no Jade & Brass, no pink + pink). best_features = Claude's 4 PROPOSALS until she picks (site/livepatch/juniper-album-nov06/). matches = round-2 count, not a live album count yet. PRONOUN: brand guide s3 says ask Tiffany for any set not listed; 'her' is used here as the draft default. Nov 6 round 3: Tiffany's notes applied (Palm Royale #1, 32 draft matches, 'Seeking:' line, new prompt, joker layers photo, Forest Green Jade wording, value colour wheel).",
- "key": "juniper",
- "name": "Juniper",
- "brand": "Oh My Mahjong",
- "status": "The new girl on the block",
- "launch_line": "Launching Wed 11/11 · Oh My Mahjong",
- "matches": 42,
- "album": "https://www.mahjmatchmaker.com/juniper-mahjong-tile-matches",
- "profile_line": [
-  "Seeking: hot pink, kelly or forest green.",
-  "Must love a garden party."
- ],
- "profile_line_options": {
-  "A": [
-   "Seeking: hot pink, kelly or forest green.",
-   "Must love a garden party."
+  "_note": "Juniper Tile Set Profile (doc 81), DRAFT Nov 6, built by Claude for Tiffany's review. Colours from config/colorcards.json sets.juniper (her Nov 5 wording: forest green JADE-LOOK back, never call the teal layer jade). Mats = Claude's round-2 top 3 (Garden Glow #1, Palm Royale #2, Lotus Cove #3 = OMM pair, never #1). Racks = OMM Hot Pink + OMM Agate (Tiffany Nov 6 2:11am: OMM racks only, one shape; no Jade & Brass, no pink + pink). best_features = Claude's 4 PROPOSALS until she picks (site/livepatch/juniper-album-nov06/). matches = round-2 count, not a live album count yet. PRONOUN: brand guide s3 says ask Tiffany for any set not listed; 'her' is used here as the draft default. Nov 6 round 3: Tiffany's notes applied (Palm Royale #1, 32 draft matches, 'Seeking:' line, new prompt, joker layers photo, Forest Green Jade wording, value colour wheel).",
+  "key": "juniper",
+  "name": "Juniper",
+  "brand": "Oh My Mahjong",
+  "status": "The new girl on the block",
+  "launch_line": "Launching Wed 11/11 · Oh My Mahjong",
+  "matches": 42,
+  "album": "https://www.mahjmatchmaker.com/juniper-mahjong-tile-matches",
+  "profile_line": [
+    "Seeking: hot pink, kelly or forest green.",
+    "Must love a garden party."
   ],
-  "B": [
-   "Her type: pink with a green streak.",
-   "Lotus ponds a plus."
-  ],
-  "C": [
-   "Seeking: deep green with a pink streak.",
-   "Must love a lantern-lit garden."
-  ]
- },
- "swipe": {
-  "looking": "Forest green, with a little pink",
-  "pills": [
-   "Lotus ponds",
-   "Lantern light",
-   "Peacocks",
-   "Garden parties"
-  ],
-  "love": "Moonlit garden strolls",
-  "prompt_q": "We'll get along if",
-  "prompt_a": "You bring the pink. I've got the green covered.",
-  "photo": "assets/launches/omm-juniper-mahjong-tiles/06-Tile_Juniper_F.jpg",
-  "_nov06r3": "Tiffany Nov 6: no reuse of Papaya's prompts ('My most irrational fear' / beige felt mat). New third prompt; looking-for + love language answers were already Juniper's own.",
-  "_nov07": "Tiffany Nov 7 7:40pm: 'Green flag I look for' sounded weird -> new prompt (not used on any other set: Papaya irrational fear, Deco weirdly attracted to / most likely to)."
- },
- "her_colors": {
-  "backs": [
-   [
-    "Forest green jade",
-    "#225d36",
-    "jade-look stone"
-   ],
-   [
-    "Chartreuse",
-    "#a9c54f",
-    "layer"
-   ],
-   [
-    "Teal",
-    "#00a792",
-    "layer"
-   ]
-  ],
-  "faces": [
-   [
-    "Hot pink",
-    "#f05aa5"
-   ],
-   [
-    "Coral",
-    "#f0857c"
-   ],
-   [
-    "Bamboo green",
-    "#43a16b"
-   ],
-   [
-    "Mint",
-    "#9fdcc5"
-   ],
-   [
-    "Navy",
-    "#1d4a5a"
-   ],
-   [
-    "Gold",
-    "#d9b85a"
-   ]
-  ],
-  "tone": "Clean jewel tones on a deep green: clean, not earthy, even though the back is dark.",
-  "supporting": [
-   [
-    "Hot pink",
-    "#f05aa5"
-   ],
-   [
-    "Coral",
-    "#f0857c"
-   ],
-   [
-    "Bamboo",
-    "#43a16b"
-   ],
-   [
-    "Mint",
-    "#9fdcc5"
-   ],
-   [
-    "Teal",
-    "#18b39c"
-   ],
-   [
-    "Navy",
-    "#1d4a5a"
-   ],
-   [
-    "Gold",
-    "#d9b85a"
-   ]
-  ],
-  "faces_photo": "assets/launches/omm-juniper-mahjong-tiles/01-Tile_Juniper_A.jpg",
-  "faces_crop": [
-   178,
-   1174,
-   2844,
-   2976
-  ],
-  "source": "config/colorcards.json sets.juniper (OMM pile photo 05-Tile_Juniper_Alt + flat lay 01-Tile_Juniper_A)",
-  "faces_blank": [
-   [
-    2300,
-    1765,
-    2666,
-    1802
-   ]
-  ],
-  "main_labels": [
-   "Forest Green Jade",
-   "Chartreuse",
-   "Teal"
-  ]
- },
- "layers": {
-  "_note": "Nov 6 round 3 (Tiffany): the arrows stay, on OMM's joker tile photo (ohmymahjong.com cdn juniper-mahjong-tiles-9588574.jpg, cut by scripts/colorwheel/juniper_joker_cutout.py). Labels = [x, y, text, hex] in cutout px, layer centres sampled at x=330 (band centres).",
-  "img": "assets/tiles/backs/juniper-layers-joker-cutout.png",
-  "labels": [
-   [
-    330,
-    526,
-    "Teal layer",
-    "#00a792"
-   ],
-   [
-    330,
-    573,
-    "Chartreuse layer",
-    "#a9c54f"
-   ],
-   [
-    330,
-    613,
-    "Forest Green Jade",
-    "#225d36"
-   ]
-  ],
-  "wheel_notes": [
-   [
-    "Forest Green Jade",
-    "deep, cool green (dark)"
-   ],
-   [
-    "Chartreuse",
-    "bright yellow-green"
-   ],
-   [
-    "Teal",
-    "vivid blue-green"
-   ],
-   [
-    "Hot pink + coral",
-    "her faces: across the wheel"
-   ]
-  ],
-  "label_y": [
-   590,
-   670,
-   750
-  ],
-  "wheel_legend": "Center = light. Outer ring = dark.<br>Middle ring = full, clear color."
- },
- "her_type": [
-  {
-   "label": "Pink center + kelly green",
-   "mat": "Palm Royale",
-   "brand": "Mahj Tile Haus",
-   "chips": [
-    "#2f8f4e",
-    "#f2b6c4"
-   ],
-   "why": "Her #1: a pink center gives her greens the most contrast (pink is green's opposite), with kelly lattice and blush palms."
+  "profile_line_options": {
+    "A": [
+      "Seeking: hot pink, kelly or forest green.",
+      "Must love a garden party."
+    ],
+    "B": [
+      "Her type: pink with a green streak.",
+      "Lotus ponds a plus."
+    ],
+    "C": [
+      "Seeking: deep green with a pink streak.",
+      "Must love a lantern-lit garden."
+    ]
   },
-  {
-   "label": "Hot pink + mint",
-   "mat": "Flora Belle",
-   "brand": "Anders Ruff",
-   "chips": [
-    "#e8458b",
-    "#a8dcc8"
-   ],
-   "why": "A hot pink frame and pink peonies, with a mint lattice center that echoes her mint layer."
+  "swipe": {
+    "looking": "Forest green, with a little pink",
+    "pills": [
+      "Lotus ponds",
+      "Lantern light",
+      "Peacocks",
+      "Garden parties"
+    ],
+    "love": "Moonlit garden strolls",
+    "prompt_q": "We'll get along if",
+    "prompt_a": "You bring the pink. I've got the green covered.",
+    "photo": "assets/launches/omm-juniper-mahjong-tiles/06-Tile_Juniper_F.jpg",
+    "_nov06r3": "Tiffany Nov 6: no reuse of Papaya's prompts ('My most irrational fear' / beige felt mat). New third prompt; looking-for + love language answers were already Juniper's own.",
+    "_nov07": "Tiffany Nov 7 7:40pm: 'Green flag I look for' sounded weird -> new prompt (not used on any other set: Papaya irrational fear, Deco weirdly attracted to / most likely to)."
   },
-  {
-   "label": "Her official pair",
-   "mat": "Lotus Cove",
-   "brand": "Oh My Mahjong",
-   "chips": [
-    "#f2a9bf",
-    "#9fdcc5"
-   ],
-   "why": "Oh My Mahjong designed it to go with her: a pink lotus pond that echoes her lotus flower tiles."
-  }
- ],
- "dealbreaker": "Dusty, earthy neutrals like tan and taupe. Next to her clean jewel greens and hot pink they read muddy. Keep the mat clean and saturated.",
- "racks": [
-  {
-   "name": "Oh My Mahjong Hot Pink",
-   "why": "Her hot pink dots and craks, turned up.",
-   "group": "color"
+  "her_colors": {
+    "backs": [
+      [
+        "Forest green jade",
+        "#225d36",
+        "jade-look stone"
+      ],
+      [
+        "Chartreuse",
+        "#a9c54f",
+        "layer"
+      ],
+      [
+        "Teal",
+        "#00a792",
+        "layer"
+      ]
+    ],
+    "faces": [
+      [
+        "Hot pink",
+        "#f05aa5"
+      ],
+      [
+        "Coral",
+        "#f0857c"
+      ],
+      [
+        "Bamboo green",
+        "#43a16b"
+      ],
+      [
+        "Mint",
+        "#9fdcc5"
+      ],
+      [
+        "Navy",
+        "#1d4a5a"
+      ],
+      [
+        "Gold",
+        "#d9b85a"
+      ]
+    ],
+    "tone": "Clean jewel tones on a deep green: clean, not earthy, even though the back is dark.",
+    "supporting": [
+      [
+        "Hot pink",
+        "#f05aa5"
+      ],
+      [
+        "Coral",
+        "#f0857c"
+      ],
+      [
+        "Bamboo",
+        "#43a16b"
+      ],
+      [
+        "Mint",
+        "#9fdcc5"
+      ],
+      [
+        "Teal",
+        "#18b39c"
+      ],
+      [
+        "Navy",
+        "#1d4a5a"
+      ],
+      [
+        "Gold",
+        "#d9b85a"
+      ]
+    ],
+    "faces_photo": "assets/launches/omm-juniper-mahjong-tiles/01-Tile_Juniper_A.jpg",
+    "faces_crop": [
+      178,
+      1174,
+      2844,
+      2976
+    ],
+    "source": "config/colorcards.json sets.juniper (OMM pile photo 05-Tile_Juniper_Alt + flat lay 01-Tile_Juniper_A)",
+    "faces_blank": [
+      [
+        2300,
+        1765,
+        2666,
+        1802
+      ]
+    ],
+    "main_labels": [
+      "Forest Green Jade",
+      "Chartreuse",
+      "Teal"
+    ]
   },
-  {
-   "name": "Oh My Mahjong Agate",
-   "why": "A green malachite swirl, like the jade-look stone pattern on her backs.",
-   "group": "color"
-  }
- ],
- "first_dates": [
-  "Palm Royale",
-  "Flora Belle",
-  "Lotus Cove"
- ],
- "bio": "A lantern-lit garden at dusk. Deep green, a little pink, and a peacock who knows it.",
- "best_features": {
-  "_status": "TIFFANY'S PICKS Nov 7 7:22pm (final, never swap)",
-  "top": [
-   "The dragons",
-   [
-    "dragon-green",
-    "dragon-red"
-   ],
-   "An emerald dragon and her pink twin"
+  "layers": {
+    "_note": "Nov 6 round 3 (Tiffany): the arrows stay, on OMM's joker tile photo (ohmymahjong.com cdn juniper-mahjong-tiles-9588574.jpg, cut by scripts/colorwheel/juniper_joker_cutout.py). Labels = [x, y, text, hex] in cutout px, layer centres sampled at x=330 (band centres).",
+    "img": "assets/tiles/backs/juniper-layers-joker-cutout.png",
+    "labels": [
+      [
+        330,
+        526,
+        "Teal layer",
+        "#00a792"
+      ],
+      [
+        330,
+        573,
+        "Chartreuse layer",
+        "#a9c54f"
+      ],
+      [
+        330,
+        613,
+        "Forest Green Jade",
+        "#225d36"
+      ]
+    ],
+    "wheel_notes": [
+      [
+        "Forest Green Jade",
+        "deep, cool green (dark)"
+      ],
+      [
+        "Chartreuse",
+        "bright yellow-green"
+      ],
+      [
+        "Teal",
+        "vivid blue-green"
+      ],
+      [
+        "Hot pink + coral",
+        "her faces: across the wheel"
+      ]
+    ],
+    "label_y": [
+      590,
+      670,
+      750
+    ],
+    "wheel_legend": "Center = light. Outer ring = dark.<br>Middle ring = full, clear color."
+  },
+  "her_type": [
+    {
+      "label": "Pink center + kelly green",
+      "mat": "Palm Royale",
+      "brand": "Mahj Tile Haus",
+      "chips": [
+        "#2f8f4e",
+        "#f2b6c4"
+      ],
+      "why": "Her #1: a pink center gives her greens the most contrast (pink is green's opposite), with kelly lattice and blush palms."
+    },
+    {
+      "label": "Hot pink + mint",
+      "mat": "Flora Belle",
+      "brand": "Anders Ruff",
+      "chips": [
+        "#e8458b",
+        "#a8dcc8"
+      ],
+      "why": "A hot pink frame and pink peonies, with a mint lattice center that echoes her mint layer."
+    },
+    {
+      "label": "Her official pair",
+      "mat": "Lotus Cove",
+      "brand": "Oh My Mahjong",
+      "chips": [
+        "#f2a9bf",
+        "#9fdcc5"
+      ],
+      "why": "Oh My Mahjong designed it to go with her: a pink lotus pond that echoes her lotus flower tiles."
+    }
   ],
-  "singles": [
-   [
-    "The peacock",
-    "bam-1-peacock",
-    "Her pink-tailed<br>peacock bird bam"
-   ],
-   [
-    "The lotus",
-    "flower-4a",
-    "A hot pink lotus<br>by a green pagoda"
-   ],
-   [
-    "The 7 Bam",
-    "bam-7",
-    "Green bamboo over<br>a pink bridge"
-   ]
-  ]
- },
- "omm_launch": {
-  "pair": {
-   "mat": "Lotus Cove",
-   "brand": "Oh My Mahjong",
-   "img": "assets/colorcards/juniper/mats/lotus-cove-oh-my-mahjong.jpg",
-   "together": "assets/launches/omm-lotus-cove-mat-in-tube/01-USK_Juniper_LotusCove_Alt.jpg",
-   "together_fit": "cover",
-   "together_caption": "Juniper on Lotus Cove, in Oh My Mahjong's own photo",
-   "why": "A pink lotus pond with mint lily pads, made for her lotus flowers. Sold together in Oh My Mahjong's Ultimate Starter Kit."
+  "dealbreaker": "Dusty, earthy neutrals like tan and taupe. Next to her clean jewel greens and hot pink they read muddy. Keep the mat clean and saturated.",
+  "racks": [
+    {
+      "name": "Oh My Mahjong Hot Pink",
+      "why": "Her hot pink dots and craks, turned up.",
+      "group": "color"
+    },
+    {
+      "name": "Oh My Mahjong Agate",
+      "why": "A green malachite swirl, like the jade-look stone pattern on her backs.",
+      "group": "color"
+    }
+  ],
+  "first_dates": [
+    "Palm Royale",
+    "Flora Belle",
+    "Lotus Cove"
+  ],
+  "bio": "A lantern-lit garden at dusk. Deep green, a little pink, and a peacock who knows it.",
+  "best_features": {
+    "_status": "TIFFANY'S PICKS Nov 7 7:22pm (final, never swap)",
+    "top": [
+      "The dragons",
+      [
+        "dragon-green",
+        "dragon-red"
+      ],
+      "An emerald dragon and her pink twin"
+    ],
+    "singles": [
+      [
+        "The peacock",
+        "bam-1-peacock",
+        "Her pink-tailed<br>peacock bird bam"
+      ],
+      [
+        "The lotus",
+        "flower-4a",
+        "A hot pink lotus<br>by a green pagoda"
+      ],
+      [
+        "The 7 Bam",
+        "bam-7",
+        "Green bamboo over<br>a pink bridge"
+      ]
+    ]
   },
-  "sisters": [],
-  "strong_label": "Strong match potential"
- },
- "launch_photos": {
-  "hero": "assets/launches/omm-juniper-mahjong-tiles/06-Tile_Juniper_F.jpg",
-  "single": "assets/launches/omm-juniper-mahjong-tiles/09-Tile_Juniper_H.jpg",
-  "all": "assets/launches/omm-juniper-mahjong-tiles/01-Tile_Juniper_A.jpg"
- },
- "album_peek": [
-  "mahj-tile-haus-palm-royale",
-  "anders-ruff-flora-belle",
-  "oh-my-mahjong-lotus-cove"
- ],
- "colors_line": "Forest Green Jade backs with a jade-look stone pattern, chartreuse and teal layers. Clean jewel tones on a deep green.",
- "layers_hand": "see the layers?<br>teal + chartreuse, over a Forest Green Jade back.",
- "rack_natural": true,
- "racks_hand": "both Oh My Mahjong, both picked for her",
- "_nov07_final": "Tiffany's final order Nov 7 11:21pm: 42 matches; top 3 Palm Royale, Flora Belle, Lotus Cove (first_dates, album_peek, her_type #2 = Flora Belle)."
+  "omm_launch": {
+    "pair": {
+      "mat": "Lotus Cove",
+      "brand": "Oh My Mahjong",
+      "img": "assets/colorcards/juniper/mats/lotus-cove-oh-my-mahjong.jpg",
+      "together": "assets/launches/omm-lotus-cove-mat-in-tube/01-USK_Juniper_LotusCove_Alt-matcrop.jpg",
+      "together_fit": "cover",
+      "together_caption": "Juniper on Lotus Cove, in Oh My Mahjong's own photo",
+      "why": "A pink lotus pond with mint lily pads, made for her lotus flowers. Sold together in Oh My Mahjong's Ultimate Starter Kit.",
+      "circle": "assets/tiles/album/juniper.jpg"
+    },
+    "sisters": [],
+    "strong_label": "Strong match potential"
+  },
+  "launch_photos": {
+    "hero": "assets/launches/omm-juniper-mahjong-tiles/06-Tile_Juniper_F.jpg",
+    "single": "assets/launches/omm-juniper-mahjong-tiles/09-Tile_Juniper_H.jpg",
+    "all": "assets/launches/omm-juniper-mahjong-tiles/01-Tile_Juniper_A.jpg"
+  },
+  "album_peek": [
+    "mahj-tile-haus-palm-royale",
+    "anders-ruff-flora-belle",
+    "oh-my-mahjong-lotus-cove"
+  ],
+  "colors_line": "Forest Green Jade backs with a jade-look stone pattern, chartreuse and teal layers. Clean jewel tones on a deep green.",
+  "layers_hand": "see the layers?<br>teal + chartreuse, over a Forest Green Jade back.",
+  "rack_natural": true,
+  "racks_hand": "both Oh My Mahjong, both picked for her",
+  "_nov07_final": "Tiffany's final order Nov 7 11:21pm: 42 matches; top 3 Palm Royale, Flora Belle, Lotus Cove (first_dates, album_peek, her_type #2 = Flora Belle)."
 }
