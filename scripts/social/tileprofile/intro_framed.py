@@ -125,8 +125,8 @@ s5 = (hdr(("Racks she's into", 80)) +
 # ---- slide 6: made for each other (text UNDER the photo row, Tiffany Oct 20)
 pr = P['omm_launch']['pair']
 cap = pr.get('together_caption') or f"{P['name']} on {pr['mat']}, in {pr['brand']}’s own photo"
-s6 = (hdr(('Made for each other', 70)) +
-      f'{ab(L, 166, "", W)}<div class="pf" style="font-size:31px;color:#3c4f73">Her official {e(pr["brand"])} pair: <b style="font-weight:600;color:var(--navy)">{e(pr["mat"])}</b></div></div>'
+s6 = (hdr(('Her soulmate', 84)) +   # Tiffany Nov 10 3:49pm: fits 'Her colors / Her faces / Racks she's into'
+      f'{ab(L, 166, "", W)}<div class="pf" style="font-size:31px;color:#3c4f73">Her official {e(pr["brand"])} mat pair: <b style="font-weight:600;color:var(--navy)">{e(pr["mat"])}</b></div></div>'
       f'<div style="position:absolute;left:{L}px;top:226px;width:{W}px;height:470px;border-radius:22px;background:url({url(pr["together"])}) 52% 42%/150%;box-shadow:0 10px 26px rgba(6,40,90,.16)">'
       f'<div style="position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.93);border-radius:99px;padding:8px 18px;font:600 20px Bit;color:var(--navy)">{e(cap)}</div></div>'
       f'{ab(0, 730, "display:flex;justify-content:center;align-items:center;gap:26px", CW)}'
