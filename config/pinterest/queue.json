@@ -397,7 +397,7 @@
    "title": "19 Mats That Match Pippa Mahjong Tiles",
    "board": "Oh My Mahjong Tile and Mat Matches",
    "boardId": "908319887286213303",
-   "status": "scheduled",
+   "status": "published",
    "postGroupId": "01a1531f-bcf6-72ac-8b60-ddec23f59e45",
    "postId": "01a1531f-bcfd-71ed-84eb-0091947f0944",
    "scheduledFor": "2026-11-07T16:00:00.000Z",
@@ -411,7 +411,7 @@
    "title": "Christmas Mahjong Mats That Match Tinselle Emerald Tiles",
    "board": "Christmas Mahjong Mats",
    "boardId": "908319887286213304",
-   "status": "scheduled",
+   "status": "published",
    "postGroupId": "01a15322-f228-728a-9905-3a59ad3311e6",
    "postId": "01a15322-f230-77b1-b254-284dd7941312",
    "scheduledFor": "2026-11-08T00:00:00.000Z",
@@ -425,7 +425,7 @@
    "title": "30 Mats That Match Seabreeze Mahjong Tiles",
    "board": "Blue Mahjong Tiles and Mat Matches",
    "boardId": "908319887286213299",
-   "status": "scheduled",
+   "status": "published",
    "postGroupId": "01a1531f-c3fb-716e-a023-738707058994",
    "postId": "01a1531f-c404-71ec-9043-a3738a3a66cd",
    "scheduledFor": "2026-11-08T16:00:00.000Z",
@@ -439,7 +439,7 @@
    "title": "Christmas Mahjong Mats That Match Nivalee Glacier Blue Tiles",
    "board": "Christmas Mahjong Mats",
    "boardId": "908319887286213304",
-   "status": "scheduled",
+   "status": "published",
    "postGroupId": "01a15322-f8ed-77cd-8695-6cdaae504657",
    "postId": "01a15322-f8f4-7635-9199-9ef80c514540",
    "scheduledFor": "2026-11-09T00:00:00.000Z",
@@ -453,7 +453,7 @@
    "title": "27 Mats That Match Talulah Mahjong Tiles",
    "board": "Neutral Mahjong Tiles and Mat Matches",
    "boardId": "908319887286213301",
-   "status": "scheduled",
+   "status": "published",
    "postGroupId": "01a1531f-ca80-77da-93d1-bb42ee6f51a9",
    "postId": "01a1531f-ca86-747c-878f-22a538d5c418",
    "scheduledFor": "2026-11-09T16:00:00.000Z",
@@ -467,7 +467,7 @@
    "title": "Christmas Mahjong Mats That Match Nutcracker Ballet Tiles",
    "board": "Christmas Mahjong Mats",
    "boardId": "908319887286213304",
-   "status": "scheduled",
+   "status": "published",
    "postGroupId": "01a15322-ff9d-769e-b536-70f7ec60109b",
    "postId": "01a15322-ffa4-7196-93a2-1181d1e834e2",
    "scheduledFor": "2026-11-10T00:00:00.000Z",
@@ -6131,11 +6131,13 @@
   {
    "id": "guide-juniper",
    "kind": "guide",
-   "status": "todo",
+   "status": "pending",
    "added": "2026-11-07",
    "name": "Juniper",
    "image": "assets/colorcards/juniper/00-juniper-mahjong-tiles-color-guide-mobile.jpg",
-   "note": "Our colour card exists, but https://www.mahjmatchmaker.com/juniper-mahjong-tile-matches is 404 (not in sitemap) as of Nov 7. Pin once the album page is live."
+   "note": "Album page live (200) as of Nov 10 autopin run.",
+   "url": "https://www.mahjmatchmaker.com/juniper-mahjong-tile-matches",
+   "link": "https://www.mahjmatchmaker.com/juniper-mahjong-tile-matches?utm_source=pinterest&utm_medium=social&utm_campaign=evergreen"
   },
   {
    "id": "guide-nature-walk",
@@ -6351,9 +6353,45 @@
    "title": "Deco Lagoon Mahjong Tiles With the Lady Luck's Teal Lounge Mahjong Mat by Splash of Color",
    "desc": "Bam Bird Boutique Deco Lagoon mahjong tiles on the Lady Luck's Teal Lounge mahjong mat by Splash of Color, with Bam Bird Lagoon and Mulberry wood racks. It is one of 41 mat and rack matches in the Deco Lagoon album, so see them all before you pick your mat. Save with code MAHJMATCH (affiliate) at participating partner shops. #mahjong #mahjongtiles #mahjongmat #mahjmatchmaker",
    "added": "2026-11-08"
+  },
+  {
+   "id": "guide-deco-indigo",
+   "kind": "guide",
+   "status": "todo",
+   "added": "2026-11-10",
+   "name": "Deco (Indigo)",
+   "image": "assets/colorcards/deco-indigo/00-deco-indigo-mahjong-tiles-color-guide-mobile.jpg",
+   "note": "Our colour card exists, but https://www.mahjmatchmaker.com/deco-indigo-mahjong-tile-matches is 404 as of Nov 10 (album staged / not live; one album a week). Pin once the album page is live."
+  },
+  {
+   "id": "guide-deco-mulberry",
+   "kind": "guide",
+   "status": "todo",
+   "added": "2026-11-10",
+   "name": "Deco (Mulberry)",
+   "image": "assets/colorcards/deco-mulberry/00-deco-mulberry-mahjong-tiles-color-guide-mobile.jpg",
+   "note": "Our colour card exists, but https://www.mahjmatchmaker.com/deco-mulberry-mahjong-tile-matches is 404 as of Nov 10 (album staged / not live; one album a week). Pin once the album page is live."
+  },
+  {
+   "id": "guide-green-light-gatsby",
+   "kind": "guide",
+   "status": "todo",
+   "added": "2026-11-10",
+   "name": "Green Light Gatsby",
+   "image": "assets/colorcards/green-light-gatsby/00-green-light-gatsby-mahjong-tiles-color-guide-mobile.jpg",
+   "note": "Our colour card exists, but https://www.mahjmatchmaker.com/green-light-gatsby-mahjong-tile-matches is 404 as of Nov 10 (album staged / not live; one album a week). Pin once the album page is live."
+  },
+  {
+   "id": "guide-style-of-your-life",
+   "kind": "guide",
+   "status": "todo",
+   "added": "2026-11-10",
+   "name": "Style of Your Life",
+   "image": "assets/colorcards/style-of-your-life/00-style-of-your-life-mahjong-tiles-color-guide-mobile.jpg",
+   "note": "Our colour card exists, but https://www.mahjmatchmaker.com/style-of-your-life-mahjong-tile-matches is 404 as of Nov 10 (album staged / not live; one album a week). Pin once the album page is live."
   }
  ],
- "updated": "2026-11-07T14:48:54Z",
+ "updated": "2026-11-10T14:46:12Z",
  "rules": {
   "pace": "2 new pins/day at 13:00Z and 20:00Z (on top of the Oct 19 batch: 15:00/16:00Z daily to Nov 9, holiday 00:00Z Nov 2-14). Keep ~7 days of new pins scheduled ahead; never more than 4 pins on one day.",
   "ownWorkOnly": "Pin only our own images: album covers (assets/covers/albums/uniform-v3), our color cards / mood boards / graphics, or grids of our covers. Never a brand product photo on its own.",

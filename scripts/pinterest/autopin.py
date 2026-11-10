@@ -145,7 +145,7 @@ def clean_title(t):
 
 # ---------------------------------------------------------------- refresh
 def refresh():
-    q = load(); have = {i['url'] for i in q['items']}
+    q = load(); have = {i.get('url') for i in q['items']}
     locs = re.findall(r'<loc>(.*?)</loc>', get(SITE + '/sitemap.xml'))
     hub = {}
     for h in HUBS:
