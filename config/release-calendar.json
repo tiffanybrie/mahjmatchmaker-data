@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-09",
- "updatedBy": "partner watch Nov 9 evening",
+ "updated": "2026-11-10",
+ "updatedBy": "partner watch Tue 9:55am ET",
  "rules": {
   "timing": {
    "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -1499,10 +1499,10 @@
    "brand": "Charleston Mahjong Club",
    "product": "The Cabana Club Edition (full-size tiles): first batch arriving",
    "type": "launch",
-   "window": "'arriving any day now' (IG Nov 5); email subscribers first access; next shipment December",
-   "windowStart": "2026-11-06",
+   "window": "LIVE Tue Nov 10 for email subscribers (early access, email 6:55am ET); public opening next; next batch December",
+   "windowStart": "2026-11-10",
    "windowEnd": "2026-11-20",
-   "status": "COMING SOON (IG Nov 5 3:02pm ET reel + giveaway ending Mon Nov 9 8pm ET). Full-size listing not public on store Nov 5 6:35pm ET.",
+   "status": "LIVE (subscriber early access) 2026-11-10; $425; product hidden from public store at 9:55am ET",
    "source": "IG @charlestonmahjongclub Nov 5",
    "sourceUrl": "https://www.instagram.com/reel/DfX1w9hRo7l/",
    "album": false,
@@ -1855,6 +1855,44 @@
    "affiliate": true,
    "priority": 3,
    "contentTiming": "Codes post line (5% off with MAHJMATCH)."
+  },
+  {
+   "id": "miss-scalloped-racks-nov10",
+   "brand": "Miss Mahjong",
+   "product": "Scalloped acrylic racks in 5 new colors: Butter Yellow, Pistachio, Chartreuse, Peony, Bombshell Pink ($150)",
+   "type": "launch",
+   "date": "2026-11-10T10:00-06:00",
+   "windowStart": "2026-11-10",
+   "status": "drops Tue Nov 10 10am CT (email Nov 9 + IG Nov 5); group post drafted",
+   "sourceUrl": "https://www.instagram.com/reel/DfXaYEaR791/",
+   "album": false,
+   "affiliate": true,
+   "priority": 2
+  },
+  {
+   "id": "virora-tinselle-ruby-preorder-nov10",
+   "brand": "Virora Mahjong",
+   "product": "Tinselle Ruby Red tiles (Christmas Collection I), pre-order",
+   "type": "preorder",
+   "windowStart": "2026-11-10",
+   "status": "pre-order available again 2026-11-10 ($299)",
+   "sourceUrl": "https://www.viroramahjong.com/products/ruby-christmas",
+   "album": false,
+   "affiliate": true,
+   "priority": 2
+  },
+  {
+   "id": "mahjmood-flash-bogo-nov10",
+   "brand": "Mahj Mood",
+   "product": "Flash sale: buy one mat, second 1/2 off (codes don't stack)",
+   "type": "sale",
+   "date": "2026-11-10",
+   "windowStart": "2026-11-10",
+   "status": "LIVE while supplies last (IG Nov 10)",
+   "sourceUrl": "https://www.instagram.com/p/DfkDtN-xu1t/",
+   "album": false,
+   "affiliate": true,
+   "priority": 3
   }
  ],
  "sources": {

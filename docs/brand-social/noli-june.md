@@ -1,6 +1,7 @@
 # Noli June (@nolijunemahjong): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks. Partner since Oct 30 (Shopify Collabs; MAHJMATCH = 10% off "Affiliate Eligible" collections, $100 minimum).
 
+- Nov 9 7:59pm ET IG carousel: Nine Pines mahjong retreat recap (Tiles & Tonic, Ordinary Hero charity); 'Drop TUESDAY below for 10% off' (same as our code; minor, not listed).
 - Nov 7 9:36pm ET: reel, comment LADIES for 10% off the FALALADIES winter collection (https://www.instagram.com/reel/DfdqlVAtDwp/). Same offer, no end date; on the Brand Watch sales list.
 - Nov 5 8:11am ET: reel for FALALADIES mat 'Rochelle Didn't Make it to Midnight' (New Year's Eve, disco ball + champagne), comment LADIES for link + 10% off (https://www.instagram.com/reel/DfXGrkmTl_R/). Same SEO keyword block (folding scalloped tables).
 - Nov 4 8:49am ET: reel 'FALALADIES is LIVE', 12 pieces (Christmas, Hanukkah, New Year's mats + tables + accessories), comment LADIES for link + 10% off (https://www.instagram.com/reel/DfUmNNZTm_v/).

@@ -1,6 +1,7 @@
 # Oh My Mahjong (@ohmymahjong): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 10 7:00am ET reel: 'Juniper Tiles are almost here! Your new favorite set launches tomorrow, 11.11 at 10 am CT' (https://www.instagram.com/reel/Dfj21bAyHCg/).
 - Nov 9 1:30pm ET (STORE, not IG): NANTUCKET tiles back in stock on ohmymahjong.com (updated 12:35pm CT; album set, 52 matches). No IG post about it yet. Story frames for review: assets/social/restock-nantucket-nov09/out/.
 - Nov 9 7:00am ET: '11:11, make a wish' reel: Juniper tiles styled with favourite mats incl. the new Lotus Cove mat; 'Your next favorite pairing is coming 11.11' (https://www.instagram.com/reel/DfhSF50yZlp/). Juniper album already live; launch Wed 11/11 10am CT.
 - Nov 8 7am ET: 9-slide holiday GIFT GUIDE carousel, 'perfect tile and mat pairings to accessories worth wrapping' (https://www.instagram.com/p/DfZjqMamsxG/). Nov 6: Juniper + Lotus Cove reel, launch Wed 11/11 10am CT, asks followers which pairings they want (DfZjqoCScnJ).

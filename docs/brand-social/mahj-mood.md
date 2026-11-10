@@ -1,6 +1,7 @@
 # Mahj Mood (@mahj_mood): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 10 8:54am ET IG post: FLASH SALE, buy one Mahj Mood mat get the second 1/2 off, while supplies last; 'Discount codes do not stack on sale' (https://www.instagram.com/p/DfkDtN-xu1t/). Group post drafted (docs/social/mahj-mood-flash-sale-2026-11-10.post.txt).
 - Nov 8 8:26am ET: holiday reminder, Holly Berry mat + Jade Luxe racks in stock, comment FESTIVE for links (https://www.instagram.com/p/Dfe20zPRPXH/). Same pairing as Oct 29: holiday table without holiday tiles.
 - Nov 6: Playing For Keeps preorder LIVE for everyone (tiles $390, mat $65, ships January). Nov 5 reel styles PFK tiles on 9 mats incl. fourwindssocial + brittmillsdesign: 'Versatile Tile' (https://www.instagram.com/reel/DfXZcMBx-99/). Valentine set sold as year-round.
 - Nov 5 10:55am ET: reel 'We love a Versatile Tile': Playing For Keeps (Valentine) tiles styled on 9 different mats, incl. fourwindssocial and brittmillsdesign (https://www.instagram.com/reel/DfXZcMBx-99/). PAIRING proof: they sell PFK as a year-round set, not just Valentine's. Preorder opens to everyone Fri Nov 6 10am CT (subscribers Nov 5), Jan delivery.
