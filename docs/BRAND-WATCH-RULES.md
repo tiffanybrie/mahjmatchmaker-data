@@ -1,4 +1,11 @@
 # Brand watch rules (binding; read FIRST every partner-watch run; overrides the task prompt)
+
+## 0. WHO TALKS TO TIFFANY (Tiffany Nov 10 8:02am: "I don't go to partner watch... They've got to report back to someone like you who then reports to me.")
+The partner watch is a background worker. It NEVER messages Tiffany (no SendUserMessage, no PushNotification, overriding any line in its task prompt). It writes:
+- the list (config/brand-watch-curated.json + HQ Brand Watch tab),
+- NOW items + their draft group posts into config/launch-actions.json ("drafted") and docs/social/,
+- one line at the TOP of docs/DESK.md "Main: brand watch <time>: N NOW items ready (launch-actions.json)".
+The MAIN chat reports to her: its front door shows every NOW item (scripts/checks/launch_48h_check.py), and Main checks in after each watch run (9:23am, 1:23pm, 6:23pm) and brings her the drafts for a yes.
 Tiffany Nov 10 7:59am, after TdT Domino Blonde (caught Mon 1:30pm, drops Tue 4pm CT) was filed and never acted on:
 "something that is launching today at 4 p.m. that gets caught the day before can't go on next week's partner launch document. So the partner watch has to understand dates and urgency... people are expecting us to do it for them... this is a test right now to see if you guys can actually keep up with how fast this world moves."
 
