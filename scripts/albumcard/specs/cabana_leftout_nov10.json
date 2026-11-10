@@ -1,3 +1,1434 @@
 {
- "cabana-club": []
+ "cabana-club": [
+  {
+   "name": "Zen Glow (retired)",
+   "brand": "Oh My Mahjong",
+   "key": "alb:amara:Zen Glow",
+   "why": "Retired, no longer sold",
+   "retired": true,
+   "scores": {
+    "tonal": 0.351,
+    "comp": 0.323
+   }
+  },
+  {
+   "name": "Delilah",
+   "brand": "Oh My Mahjong",
+   "key": "www.ohmymahjong.com/delilah-mat-in-tube",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.328,
+    "comp": 0.328
+   }
+  },
+  {
+   "name": "Glitterville Dragon (retired)",
+   "brand": "Oh My Mahjong",
+   "key": "alb:glitterville:Glitterville Dragon",
+   "why": "Retired, no longer sold",
+   "retired": true,
+   "scores": {
+    "tonal": 0.463,
+    "comp": 0.264
+   }
+  },
+  {
+   "name": "Lovely Lavender Double-Sided Leatherette",
+   "brand": "Mahjong Register",
+   "key": "mahjongregister.com/colette-s-kaleidoscope-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.258,
+    "comp": 0.401
+   }
+  },
+  {
+   "name": "Penelope",
+   "brand": "Oh My Mahjong",
+   "key": "www.ohmymahjong.com/penelope-mat-in-tube",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.252,
+    "comp": 0.392
+   }
+  },
+  {
+   "name": "Oasis",
+   "brand": "Miss Mahjong",
+   "key": "missmahjong.com/oasis-mahjong-playing-mat",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.234,
+    "comp": 0.419
+   }
+  },
+  {
+   "name": "Grateful Dead x Bespoke Mahjong Tie Dye Dream (Side B: Bears & Bolt)",
+   "brand": "Bespoke Mahjong",
+   "key": "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-sunshine-galaxy-copy#side-b",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.649,
+    "comp": 0.176
+   }
+  },
+  {
+   "name": "Flirty Leopards Mat - Vivid Blue",
+   "brand": "Bespoke Mahjong",
+   "key": "www.bespokemahjong.com/vivid-blue-leopard-game-mat",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.831,
+    "comp": 0.128
+   }
+  },
+  {
+   "name": "Chinoiserie Elephant with Pagodas",
+   "brand": "Sophie Clima",
+   "key": "www.etsy.com/listing/4530894010/preppy-chinoiserie-elephant-mahjong-mat",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.238,
+    "comp": 0.355
+   }
+  },
+  {
+   "name": "Lovely Lavender Double-Sided Mahjong Mat – Leatherette 31.5\"",
+   "brand": "Mahjong Register",
+   "key": "new:Mahjong Register|Lovely Lavender Double-Sided Mahjong Mat – Leatherette 31.5\"",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.226,
+    "comp": 0.4
+   }
+  },
+  {
+   "name": "Gatsby Glow",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/gatsby-glow-mahjong-mat",
+   "why": "More from Let's Be Besties (big catalog: best 6 are in the book); Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.636,
+    "comp": 0.163
+   }
+  },
+  {
+   "name": "Tropical Travels",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/tropical-travels-neoprene-mahjong-mat",
+   "why": "More from Let's Be Besties (big catalog: best 6 are in the book); Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.228,
+    "comp": 0.367
+   }
+  },
+  {
+   "name": "Eiffel Tower Wanda Viola Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Eiffel Tower Wanda Viola Artist Mahjong Mat",
+   "why": "More from Let's Be Besties (big catalog: best 6 are in the book); Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.273,
+    "comp": 0.251
+   }
+  },
+  {
+   "name": "Serengeti (retired)",
+   "brand": "Oh My Mahjong",
+   "key": "alb:amara:Serengeti",
+   "why": "Retired, no longer sold",
+   "retired": true,
+   "scores": {
+    "tonal": 0.339,
+    "comp": 0.217
+   }
+  },
+  {
+   "name": "Anastasia",
+   "brand": "Oh My Mahjong",
+   "key": "www.ohmymahjong.com/anastasia-mat-in-tube",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.216,
+    "comp": 0.338
+   }
+  },
+  {
+   "name": "Candy Crackers Lillian Claire Designs Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Candy Crackers Lillian Claire Designs Artist Mahjong Mat",
+   "why": "More from Let's Be Besties (big catalog: best 6 are in the book); Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.224,
+    "comp": 0.303
+   }
+  },
+  {
+   "name": "Indigo Marina Nautical",
+   "brand": "Bougie Mahjong",
+   "key": "bougiemahjong.com/indigo-marina-mahjong-mat",
+   "why": "Bougie: only her own picks go in albums",
+   "retired": false,
+   "scores": {
+    "tonal": 0.22,
+    "comp": 0.289
+   }
+  },
+  {
+   "name": "Octopus Wanda Viola Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Octopus Wanda Viola Artist Mahjong Mat",
+   "why": "More from Let's Be Besties (big catalog: best 6 are in the book); Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.287,
+    "comp": 0.216
+   }
+  },
+  {
+   "name": "Tropical Travels Monogram Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Tropical Travels Monogram Mahjong Mat",
+   "why": "More from Let's Be Besties (big catalog: best 6 are in the book); Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.144,
+    "comp": 0.56
+   }
+  },
+  {
+   "name": "Tropical Hibiscus",
+   "brand": "Mahj & Moon",
+   "key": "mahjandmoon.com/tropical-hibiscus-mahjong-mat-pink-blue-palm-print-mahjong-mat",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.264,
+    "comp": 0.217
+   }
+  },
+  {
+   "name": "Girl Talk (Side B: Starburst)",
+   "brand": "Bespoke Mahjong",
+   "key": "www.bespokemahjong.com/double-the-fun-pop-art-mat#side-b",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.757,
+    "comp": 0.091
+   }
+  },
+  {
+   "name": "Tropical Travels with Simple Middle Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Tropical Travels with Simple Middle Mahjong Mat",
+   "why": "More from Let's Be Besties (big catalog: best 6 are in the book); Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.14,
+    "comp": 0.561
+   }
+  },
+  {
+   "name": "Underwater Diva BeachyMahj Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Underwater Diva BeachyMahj Artist Mahjong Mat",
+   "why": "More from Let's Be Besties (big catalog: best 6 are in the book); Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.163,
+    "comp": 0.439
+   }
+  },
+  {
+   "name": "Folk Garden",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/folk-garden-neoprene-mahjong-mat",
+   "why": "More from Let's Be Besties (big catalog: best 6 are in the book); Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.648,
+    "comp": 0.109
+   }
+  },
+  {
+   "name": "Lion American",
+   "brand": "Mahj & Moon",
+   "key": "mahjandmoon.com/lion-american-mahjong-mat",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.298,
+    "comp": 0.19
+   }
+  },
+  {
+   "name": "Chartreuse Garden",
+   "brand": "Bespoke Mahjong",
+   "key": "www.bespokemahjong.com/preorder-sapphire-blue-garden-mat-copy",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.014,
+    "comp": 1.0
+   }
+  },
+  {
+   "name": "Hanukkah Glow",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/hanukkah-glow-mahjong-mat",
+   "why": "Holiday mat: the double album's holiday side is Apres-Ski Club",
+   "retired": false,
+   "scores": {
+    "tonal": 0.6,
+    "comp": 0.113
+   }
+  },
+  {
+   "name": "Vibrant Symphony",
+   "brand": "House of Hearts Studio",
+   "key": "houseofheartsstudio.com/vibrant-symphony-mahjong-mat-full-table-size",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.574,
+    "comp": 0.119
+   }
+  },
+  {
+   "name": "Teal Dots and Stripes with Instructions",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/teal-dots-and-stripes-with-directions-mahjong-mat",
+   "why": "More from Let's Be Besties (big catalog: best 6 are in the book); Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.847,
+    "comp": 0.05
+   }
+  },
+  {
+   "name": "Bright Abstract Neoprene",
+   "brand": "Bam Bird Boutique",
+   "key": "www.bambirdboutique.com/bright-abstract-neoprene-mahjong-mat",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.173,
+    "comp": 0.347
+   }
+  },
+  {
+   "name": "Sweet Marie (retired)",
+   "brand": "Oh My Mahjong",
+   "key": "alb:glitterville:Sweet Marie",
+   "why": "Holiday mat: the double album's holiday side is Apres-Ski Club",
+   "retired": true,
+   "scores": {
+    "tonal": 0.114,
+    "comp": 0.58
+   }
+  },
+  {
+   "name": "Aria Leatherette",
+   "brand": "Britt Mills",
+   "key": "brittmillsdesign.com/aria-leatherette-mahjong-mat",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.18,
+    "comp": 0.312
+   }
+  },
+  {
+   "name": "Aria",
+   "brand": "Britt Mills",
+   "key": "brittmillsdesign.com/aria-britt-mills-mahjong-mat",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.18,
+    "comp": 0.31
+   }
+  },
+  {
+   "name": "Coral Lake",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/coral-lake-mahjong-mat",
+   "why": "More from Let's Be Besties (big catalog: best 6 are in the book); Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.155,
+    "comp": 0.409
+   }
+  },
+  {
+   "name": "Turtles in Paradise Pink BeachyMahj Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Turtles in Paradise Pink BeachyMahj Artist Mahjong Mat",
+   "why": "More from Let's Be Besties (big catalog: best 6 are in the book); Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.165,
+    "comp": 0.359
+   }
+  },
+  {
+   "name": "Tropicana",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/tropicana-mahjong-mat",
+   "why": "More from Let's Be Besties (big catalog: best 6 are in the book); Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.116,
+    "comp": 0.552
+   }
+  },
+  {
+   "name": "Caroline in Peacock",
+   "brand": "Mahj & Vine",
+   "key": "mahjandvine.com/caroline-in-peacock",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.441,
+    "comp": 0.141
+   }
+  },
+  {
+   "name": "Electric Hibiscus",
+   "brand": "Bougie Mahjong",
+   "key": "bougiemahjong.com/electric-hibiscus-mahjong-mat",
+   "why": "Bougie: only her own picks go in albums",
+   "retired": false,
+   "scores": {
+    "tonal": 0.253,
+    "comp": 0.187
+   }
+  },
+  {
+   "name": "Chartreuse Cherries",
+   "brand": "Peace Love Mahjong",
+   "key": "peacelovemahjong.com/mahjong-mats-patterns?v=52799193973028",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 1.0
+   }
+  },
+  {
+   "name": "Poinsettia Party",
+   "brand": "Soirée All Day",
+   "key": "soireeallday.co/poinsettia-party-mahjong-mat",
+   "why": "Holiday mat: the double album's holiday side is Apres-Ski Club",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 1.0
+   }
+  },
+  {
+   "name": "Deco Dragon (Mulberry)",
+   "brand": "Bam Bird Boutique",
+   "key": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098347829",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.989
+   }
+  },
+  {
+   "name": "Fall Simply Scalloped Neoprene",
+   "brand": "Bam Bird Boutique",
+   "key": "www.bambirdboutique.com/fall-simply-scalloped-neoprene-mahjong-mat-copy",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.983
+   }
+  },
+  {
+   "name": "MCM – Geo Bloom- Green",
+   "brand": "Bam Bird Boutique",
+   "key": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy?v=53324522914101",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.977
+   }
+  },
+  {
+   "name": "Plaid Neoprene – Pink on Pink",
+   "brand": "Bam Bird Boutique",
+   "key": "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963728199989",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.977
+   }
+  },
+  {
+   "name": "Chartreuse Boho Rug Wanda Viola Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Chartreuse Boho Rug Wanda Viola Artist Mahjong Mat",
+   "why": "More from Let's Be Besties (big catalog: best 6 are in the book); Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.101,
+    "comp": 0.573
+   }
+  },
+  {
+   "name": "Prism Pink",
+   "brand": "My Fair Mahjong",
+   "key": "myfairmahjong.com/mahjong-mat-prism-33-x-33?v=50899700351287",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.963
+   }
+  },
+  {
+   "name": "East Meets West – Magenta",
+   "brand": "Bam Bird Boutique",
+   "key": "www.bambirdboutique.com/east-meets-west-neoprene-mat?v=49857170735413",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.956
+   }
+  },
+  {
+   "name": "Vintage Plum",
+   "brand": "Bam Bird Boutique",
+   "key": "www.bambirdboutique.com/vintage-plum-neoprene-mahjong-mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.947
+   }
+  },
+  {
+   "name": "Pink Amahj",
+   "brand": "Amahj",
+   "key": "amahjline.com/pink-amahj-game-mat-copy",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.942
+   }
+  },
+  {
+   "name": "Summer Wash Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Summer Wash Mahjong Mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.937,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Garden Party – Meadow",
+   "brand": "My Fair Mahjong",
+   "key": "myfairmahjong.com/mat-garden-party-meadow",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.001,
+    "comp": 0.932
+   }
+  },
+  {
+   "name": "Let's Be Refined! – Soft Blue",
+   "brand": "Let's Mahj On",
+   "key": "www.letsmahj-on.com/lets-be-refined-mahjong-mats?v=47969268465769",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.933,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Garland Christmas",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/garland-christmas-neoprene-mahjong-mat",
+   "why": "Holiday mat: the double album's holiday side is Apres-Ski Club",
+   "retired": false,
+   "scores": {
+    "tonal": 0.006,
+    "comp": 0.909
+   }
+  },
+  {
+   "name": "Hot Pink Crocodile",
+   "brand": "YOLO Mahjong",
+   "key": "www.yolomahjong.com/mahjong-mat-31-5x31-5-ship-folded-4",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.927
+   }
+  },
+  {
+   "name": "Christmas Village",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/christmas-village-neoprene-mahjong-mat",
+   "why": "Holiday mat: the double album's holiday side is Apres-Ski Club",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.922
+   }
+  },
+  {
+   "name": "Palm Blush",
+   "brand": "Bougie Mahjong",
+   "key": "bougiemahjong.com/palm-blush-mahjong-mat",
+   "why": "Bougie: only her own picks go in albums",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.92
+   }
+  },
+  {
+   "name": "French Blue Cherries",
+   "brand": "Peace Love Mahjong",
+   "key": "peacelovemahjong.com/mahjong-mats-patterns?v=52799368167716",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.833,
+    "comp": 0.02
+   }
+  },
+  {
+   "name": "Green Dragons Lillian Claire Designs Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Green Dragons Lillian Claire Designs Artist Mahjong Mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.901
+   }
+  },
+  {
+   "name": "Happy Day!",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/happy-day-mahjong-mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.018,
+    "comp": 0.819
+   }
+  },
+  {
+   "name": "Blue Abstract Neoprene",
+   "brand": "Bam Bird Boutique",
+   "key": "www.bambirdboutique.com/blue-abstract-neoprene-mahjong-mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.882,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Winter Jewel",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/winter-jewel-neoprene-mahjong-mat",
+   "why": "Holiday mat: the double album's holiday side is Apres-Ski Club",
+   "retired": false,
+   "scores": {
+    "tonal": 0.725,
+    "comp": 0.038
+   }
+  },
+  {
+   "name": "The Pastel Deco",
+   "brand": "Bird & Bamboo",
+   "key": "birdandbamboo.com/the-pastel-deco-mahjong-mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.005,
+    "comp": 0.847
+   }
+  },
+  {
+   "name": "Signature Logo Mat – Bright Pink",
+   "brand": "Let's Mahj On",
+   "key": "www.letsmahj-on.com/signature-logo-mat?v=42014260985961",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.865
+   }
+  },
+  {
+   "name": "Bandana – Olive Green/Dusty Lilac accents",
+   "brand": "Bam Bird Boutique",
+   "key": "www.bambirdboutique.com/bandana-neoprene-mahjong-mat?v=53345465172277",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.858
+   }
+  },
+  {
+   "name": "Year of the Horse Mat - Bubblegum (Side A: Pink)",
+   "brand": "Bespoke Mahjong",
+   "key": "www.bespokemahjong.com/preorder-double-sided-mat-double-the-fun-year-of-the-horse-mat-harlequin-copy",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.003,
+    "comp": 0.838
+   }
+  },
+  {
+   "name": "Lover Era – Pink",
+   "brand": "Peace Love Mahjong",
+   "key": "peacelovemahjong.com/mahjong-mats-patterns?v=52799194005796",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.847
+   }
+  },
+  {
+   "name": "Border – Dark Pink",
+   "brand": "Peace Love Mahjong",
+   "key": "peacelovemahjong.com/mahjong-mats-solid-borders?v=52799717769508",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.847
+   }
+  },
+  {
+   "name": "Hummingbird Spring",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/hummingbird-spring-mahjong-mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.015,
+    "comp": 0.788
+   }
+  },
+  {
+   "name": "Garden Glow Mat - Turquoise",
+   "brand": "Bespoke Mahjong",
+   "key": "www.bespokemahjong.com/preorder-garden-glow-mat-turquoise",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.462,
+    "comp": 0.095
+   }
+  },
+  {
+   "name": "Fiesta Flora",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/fiesta-flora-mahjong-mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.022,
+    "comp": 0.749
+   }
+  },
+  {
+   "name": "Cheyenne's Web Lillian Claire Designs Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Cheyenne's Web Lillian Claire Designs Artist Mahjong Mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.836
+   }
+  },
+  {
+   "name": "Neon Peacock Circle",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/neon-peacock-circle-mahjong-mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.772,
+    "comp": 0.015
+   }
+  },
+  {
+   "name": "Martini Shaken",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/martini-shaken-mahjong-mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.832
+   }
+  },
+  {
+   "name": "Southern Stained Glass",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/southern-stained-glass-mahjong-mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.826
+   }
+  },
+  {
+   "name": "Neon Daze Queen",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/neon-daze-queen-neoprene-mahjong-mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.027,
+    "comp": 0.715
+   }
+  },
+  {
+   "name": "Crimson & Black Paisley",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/crimson-black-paisley-neoprene-mahjong-mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.813
+   }
+  },
+  {
+   "name": "Grateful Dead x Bespoke Mahjong Dancing Bears (Side B: Pink)",
+   "brand": "Bespoke Mahjong",
+   "key": "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-corey-paige-electric-love-mat-copy#side-b",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.804
+   }
+  },
+  {
+   "name": "Pink Christmas Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Pink Christmas Mahjong Mat",
+   "why": "Holiday mat: the double album's holiday side is Apres-Ski Club",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.804
+   }
+  },
+  {
+   "name": "Festival Malachite",
+   "brand": "Miss Mahjong",
+   "key": "missmahjong.com/festival-mahjong-playing-mat-malachite",
+   "why": "Has some of the colours, but by sight the pattern/mood fights the beach-club faces (looked at next to the tiles)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.403,
+    "comp": 0.098
+   }
+  },
+  {
+   "name": "Grand Prix Estate",
+   "brand": "Bougie Mahjong",
+   "key": "bougiemahjong.com/grand-prix-estate-mahjong-mat",
+   "why": "Bougie: only her own picks go in albums",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.785
+   }
+  },
+  {
+   "name": "Day Dreamer (Pink and Green)",
+   "brand": "Betty June & Jeannette",
+   "key": "www.etsy.com/listing/4568403327/day-dreamer-pink-and-green",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.759
+   }
+  },
+  {
+   "name": "Pink Damask American",
+   "brand": "Mahj & Moon",
+   "key": "mahjandmoon.com/pink-damask-american-mahjong-mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.758
+   }
+  },
+  {
+   "name": "Flower Power Lillian Claire Designs Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Flower Power Lillian Claire Designs Artist Mahjong Mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.754
+   }
+  },
+  {
+   "name": "Signature Dragon Mat – Hot Pink",
+   "brand": "Let's Mahj On",
+   "key": "www.letsmahj-on.com/signature-dragon-mat?v=42014242865257",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.753
+   }
+  },
+  {
+   "name": "Scarlett Neoprene",
+   "brand": "Britt Mills",
+   "key": "brittmillsdesign.com/scarlett-neoprene-mahjong-mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.75
+   }
+  },
+  {
+   "name": "Peppermint Wishes",
+   "brand": "My Fair Mahjong",
+   "key": "myfairmahjong.com/mahjong-mat-peppermint-wishes",
+   "why": "Holiday mat: the double album's holiday side is Apres-Ski Club",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.747
+   }
+  },
+  {
+   "name": "Zodiac Sagittarius Lillian Claire Designs Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Zodiac Sagittarius Lillian Claire Designs Artist Mahjong Mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.744,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Zodiac Pisces Lillian Claire Designs Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Zodiac Pisces Lillian Claire Designs Artist Mahjong Mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.742,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Zodiac Taurus Lillian Claire Designs Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Zodiac Taurus Lillian Claire Designs Artist Mahjong Mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.74,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Zodiac Aries Lillian Claire Designs Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Zodiac Aries Lillian Claire Designs Artist Mahjong Mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.74,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Multi Hearts",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/multi-hearts-mahjong-mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.74
+   }
+  },
+  {
+   "name": "Zodiac Cancer Lillian Claire Designs Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Zodiac Cancer Lillian Claire Designs Artist Mahjong Mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.737,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Zodiac Leo Lillian Claire Designs Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Zodiac Leo Lillian Claire Designs Artist Mahjong Mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.735,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Spirit of Christmas",
+   "brand": "Peace Love Mahjong",
+   "key": "peacelovemahjong.com/mahjong-mats-holiday?v=67570521473316",
+   "why": "Holiday mat: the double album's holiday side is Apres-Ski Club",
+   "retired": false,
+   "scores": {
+    "tonal": 0.003,
+    "comp": 0.727
+   }
+  },
+  {
+   "name": "Zodiac Capricorn Lillian Claire Designs Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Zodiac Capricorn Lillian Claire Designs Artist Mahjong Mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.735,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Zodiac Libra Lillian Claire Designs Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Zodiac Libra Lillian Claire Designs Artist Mahjong Mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.734,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Zodiac Aquarius Lillian Claire Designs Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Zodiac Aquarius Lillian Claire Designs Mahjong Mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.733,
+    "comp": 0.001
+   }
+  },
+  {
+   "name": "Pink Pizzazz",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/pink-pizzazz-mahjong-mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.736
+   }
+  },
+  {
+   "name": "Pink Zebra in Bloom Premium Padded",
+   "brand": "Mahjong Register",
+   "key": "mahjongregister.com/pink-zebra-in-bloom-premium-padded-mahjong-mat-33",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.002,
+    "comp": 0.729
+   }
+  },
+  {
+   "name": "Zodiac Virgo Lillian Claire Designs Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Zodiac Virgo Lillian Claire Designs Artist Mahjong Mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.732,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Zodiac Scorpio Lillian Claire Designs Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Zodiac Scorpio Lillian Claire Designs Artist Mahjong Mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.732,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Garden Glow Mat - Emerald Green",
+   "brand": "Bespoke Mahjong",
+   "key": "www.bespokemahjong.com/garden-glow-mat-emerald-green",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.733
+   }
+  },
+  {
+   "name": "Playing For Keeps",
+   "brand": "Mahj Mood",
+   "key": "mahjmood.com/playing-for-keeps-mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.733
+   }
+  },
+  {
+   "name": "Zodiac Gemini Lillian Claire Designs Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Zodiac Gemini Lillian Claire Designs Mahjong Mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.727,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Mountain Green",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/mountain-green-mahjong-mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.001,
+    "comp": 0.722
+   }
+  },
+  {
+   "name": "Cherry Blossom Malachite",
+   "brand": "Miss Mahjong",
+   "key": "missmahjong.com/cherry-blossom-mahjong-playing-mat-malachite",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.632,
+    "comp": 0.022
+   }
+  },
+  {
+   "name": "Gingham - Americana",
+   "brand": "Miss Mahjong",
+   "key": "missmahjong.com/gingham-americana-mahjong-playing-mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.716,
+    "comp": 0.001
+   }
+  },
+  {
+   "name": "Color Wave – Pink Center- Blue Scallop",
+   "brand": "My Fair Mahjong",
+   "key": "myfairmahjong.com/standard-mahjong-mats?v=48312719769911",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.717
+   }
+  },
+  {
+   "name": "Signature Dragon Mat – Light Pink",
+   "brand": "Let's Mahj On",
+   "key": "www.letsmahj-on.com/signature-dragon-mat?v=42014242963561",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.714
+   }
+  },
+  {
+   "name": "Nutcracker Noel - Gold",
+   "brand": "Peace Love Mahjong",
+   "key": "peacelovemahjong.com/mahjong-mats-holiday?v=67570521342244",
+   "why": "Holiday mat: the double album's holiday side is Apres-Ski Club",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.705
+   }
+  },
+  {
+   "name": "Dusty Rose Peonies",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/dusty-rose-peonies-mahjong-mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.704
+   }
+  },
+  {
+   "name": "Bougie Dragons Lillian Claire Designs Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Bougie Dragons Lillian Claire Designs Artist Mahjong Mat",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.703
+   }
+  },
+  {
+   "name": "Bandit - Poppy Red",
+   "brand": "Miss Mahjong",
+   "key": "missmahjong.com/bandit-mahjong-playing-mat-poppy-red",
+   "why": "Only the face colours (pink, lime or yellow); nothing ties to the turquoise water backs (by sight)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.701
+   }
+  },
+  {
+   "name": "Hollivia",
+   "brand": "Virora Mahjong",
+   "key": "www.viroramahjong.com/hollivia",
+   "why": "Holiday mat: the double album's holiday side is Apres-Ski Club",
+   "retired": false,
+   "scores": {
+    "tonal": 0.0,
+    "comp": 0.698
+   }
+  },
+  {
+   "name": "Seaside Reef BeachyMahj Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Seaside Reef BeachyMahj Artist Mahjong Mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.499,
+    "comp": 0.048
+   }
+  },
+  {
+   "name": "Blue Stripes",
+   "brand": "Peace Love Mahjong",
+   "key": "peacelovemahjong.com/mahjong-mats-hanukkah?v=67570489458980",
+   "why": "Holiday mat: the double album's holiday side is Apres-Ski Club",
+   "retired": false,
+   "scores": {
+    "tonal": 0.676,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Signature Logo Mat – Light Blue",
+   "brand": "Let's Mahj On",
+   "key": "www.letsmahj-on.com/signature-logo-mats?v=48095523504233",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.583,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Esme (retired)",
+   "brand": "Oh My Mahjong",
+   "key": "www.ohmymahjong.com/esme-mat-w-tube",
+   "why": "Retired, no longer sold",
+   "retired": true,
+   "scores": {
+    "tonal": 0.432,
+    "comp": 0.037
+   }
+  },
+  {
+   "name": "Tidal Glass with Simple Middle Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "key": "new:Let's Be Besties|Tidal Glass with Simple Middle Mahjong Mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.576,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Ocean Jewel",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/ocean-jewel-ohbon-studios-artist-mahjong-mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.482,
+    "comp": 0.021
+   }
+  },
+  {
+   "name": "Grateful Dead x Bespoke Mahjong Sunshine to Starlight (Side A: Sky Blue)",
+   "brand": "Bespoke Mahjong",
+   "key": "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-dancing-bears-copy",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.427,
+    "comp": 0.028
+   }
+  },
+  {
+   "name": "Tidal Glass",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/tidal-glass-mahjong-mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.509,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Blue Bamboo",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/blue-bamboo-neoprene-mahjong-mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.444,
+    "comp": 0.014
+   }
+  },
+  {
+   "name": "Sea Glass",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/sea-glass-mahjong-mat-mahj-game-tabletop",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.489,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "White Sailboats",
+   "brand": "Rebecca Illustrated",
+   "key": "rebeccaillustrated.com/white-sailboats-mahjong-mat-preorder",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.486,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Agate Whirlpool",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/agate-whirlpool-neoprene-mahjong-mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.449,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Signature Logo Mat – Pastel Sea",
+   "brand": "Let's Mahj On",
+   "key": "www.letsmahj-on.com/signature-logo-mat?v=42705442537577",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.449,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Wild West - Americana",
+   "brand": "Miss Mahjong",
+   "key": "missmahjong.com/wild-west-americana-mahjong-playing-mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.401,
+    "comp": 0.008
+   }
+  },
+  {
+   "name": "Blue Octagon Pattern no. 53",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/leatherette-blue-octagon-pattern-no-53",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.426,
+    "comp": 0.0
+   }
+  },
+  {
+   "name": "Blue Octagon",
+   "brand": "Let's Be Besties",
+   "key": "letsbebesties.com/blue-octagon-ohbon-studios-artist-mahjong-mat",
+   "why": "Only the pool-blue side; none of the lime / raspberry / apricot faces (by sight on the contact sheet)",
+   "retired": false,
+   "scores": {
+    "tonal": 0.403,
+    "comp": 0.0
+   }
+  }
+ ]
 }

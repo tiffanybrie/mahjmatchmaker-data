@@ -1,0 +1,511 @@
+{
+ "title": "Cabana Club Swipe",
+ "col": "cabana-club-tilesswipe",
+ "mode": "tile",
+ "listTitle": "Cabana Club",
+ "group": {
+  "id": "cabana-club",
+  "label": "Cabana Club",
+  "sub": "Charleston Mahjong Club · new tile set, 25",
+  "pile": "/home/claude/mahjmatchmaker-data/assets/tiles/album/cabana-club.jpg"
+ },
+ "items": [
+  {
+   "id": "cc-cabana-club-neoprene-mat",
+   "key": "www.charlestonmahjongclub.com/cabana-club-neoprene-mat",
+   "label": "Cabana Club · Charleston Mahjong Club (made for these tiles)"
+  },
+  {
+   "id": "cc-maxine-mahjong-mat-preorder",
+   "key": "rebeccaillustrated.com/maxine-mahjong-mat-preorder",
+   "label": "Maxine · Rebecca Illustrated"
+  },
+  {
+   "id": "cc-hampton-mat-in-tube",
+   "key": "www.ohmymahjong.com/hampton-mat-in-tube",
+   "label": "Hampton · Oh My Mahjong"
+  },
+  {
+   "id": "cc-mat-waters-edge",
+   "key": "myfairmahjong.com/mat-waters-edge",
+   "label": "Water's Edge · My Fair Mahjong"
+  },
+  {
+   "id": "cc-leatherette-summer-wash",
+   "key": "letsbebesties.com/leatherette-summer-wash",
+   "label": "Summer Wash · Let's Be Besties"
+  },
+  {
+   "id": "cc-bird-bam-cheers-mahjong-mat",
+   "key": "letsbebesties.com/bird-bam-cheers-mahjong-mat",
+   "label": "Bird Bam Cheers · Let's Be Besties"
+  },
+  {
+   "id": "cc-cherry-blossom-mahjong-playing-mat-jade",
+   "key": "missmahjong.com/cherry-blossom-mahjong-playing-mat-jade",
+   "label": "Cherry Blossom Jade · Miss Mahjong"
+  },
+  {
+   "id": "cc-palm-beach-pink-cabana-blue-mahjong-mat",
+   "key": "shop.andersruff.com/palm-beach-pink-cabana-blue-mahjong-mat",
+   "label": "Palm Beach Pink Cabana Blue · Anders Ruff"
+  },
+  {
+   "id": "cc-mahjong-mat-blue-pool-float-mahjong-mat-summer-pool-party-mahjong-game-mat",
+   "key": "www.yolomahjong.com/mahjong-mat-blue-pool-float-mahjong-mat-summer-pool-party-mahjong-game-mat",
+   "label": "Blue Pool Float · YOLO Mahjong",
+   "file": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/cabbook/bluepoolfloat.jpg",
+   "url": "https://www.yolomahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fmahjong-mat-blue-pool-float-mahjong-mat-summer-pool-party-mahjong-game-mat%3Fsca_ref%3D12572562.5IBLjBHZ1vuX4J"
+  },
+  {
+   "id": "cc-veranda-mat-in-tube",
+   "key": "www.ohmymahjong.com/veranda-mat-in-tube",
+   "label": "Veranda · Oh My Mahjong"
+  },
+  {
+   "id": "cc-florida-flamingo-neoprene-mahjong-mat",
+   "key": "letsbebesties.com/florida-flamingo-neoprene-mahjong-mat",
+   "label": "Florida Flamingo · Let's Be Besties"
+  },
+  {
+   "id": "cc-surfs-up-mahjong-mat",
+   "key": "letsbebesties.com/surfs-up-mahjong-mat",
+   "label": "Surfs Up · Let's Be Besties"
+  },
+  {
+   "id": "cc-tropical-pop-neoprene-mahjong-mat",
+   "key": "letsbebesties.com/tropical-pop-neoprene-mahjong-mat",
+   "label": "Tropical Pop · Let's Be Besties"
+  },
+  {
+   "id": "cc-mahjong-mats-plaid-striped?v=52798578917668",
+   "key": "peacelovemahjong.com/mahjong-mats-plaid-striped?v=52798578917668",
+   "label": "Gingham - Teal Bloom · Peace Love Mahjong"
+  },
+  {
+   "id": "cc-coastal-aqua-marble-mahjong-mat",
+   "key": "shop.andersruff.com/coastal-aqua-marble-mahjong-mat",
+   "label": "Coastal Aqua Marble · Anders Ruff"
+  },
+  {
+   "id": "cc-pre-order-chinoiserie-elephant",
+   "key": "mahjandvine.com/pre-order-chinoiserie-elephant",
+   "label": "Shady Lady Umbrella Mat - Cabana Stripe Ocean · Mahj & Vine"
+  },
+  {
+   "id": "cc-neoprene-mat?v=47539954024757",
+   "key": "www.bambirdboutique.com/neoprene-mat?v=47539954024757",
+   "label": "Classic Neoprene – Teal · Bam Bird Boutique"
+  },
+  {
+   "id": "cc-vegan-leather-reversible-game-mat?v=50377156362545",
+   "key": "www.charlestonmahjongclub.com/vegan-leather-reversible-game-mat?v=50377156362545",
+   "label": "Reversible Vegan Leather – Sea Foam Green & Dusty Blue · Charleston Mahjong Club"
+  },
+  {
+   "id": "cc-island-mahjong-mat",
+   "key": "theroyalmahjongsociety.com/island-mahjong-mat",
+   "label": "Island · Royal Mahjong Society"
+  },
+  {
+   "id": "cc-mat-tropical-palm",
+   "key": "myfairmahjong.com/mat-tropical-palm",
+   "label": "Tropical Palm · My Fair Mahjong"
+  },
+  {
+   "id": "cc-listing-4527676776-the-benjamin-mahjong-mat",
+   "key": "www.etsy.com/listing/4527676776/the-benjamin-mahjong-mat",
+   "label": "Benjamin · Betty June & Jeannette"
+  },
+  {
+   "id": "cc-palm-beach-ocean-blue-green-mahjong-mat",
+   "key": "shop.andersruff.com/palm-beach-ocean-blue-green-mahjong-mat",
+   "label": "Palm Beach Ocean Blue Green · Anders Ruff"
+  },
+  {
+   "id": "cc-mahjong-mats-plaid-striped?v=52798578950436",
+   "key": "peacelovemahjong.com/mahjong-mats-plaid-striped?v=52798578950436",
+   "label": "Plaid - Pink Cabana · Peace Love Mahjong"
+  },
+  {
+   "id": "cc-mahjong-mats-flowers?v=52799162253604",
+   "key": "peacelovemahjong.com/mahjong-mats-flowers?v=52799162253604",
+   "label": "Mod Squad · Peace Love Mahjong"
+  },
+  {
+   "id": "cc-double-sided-mat-double-the-fun-girl-talk-mat-copy#side-b",
+   "key": "www.bespokemahjong.com/double-sided-mat-double-the-fun-girl-talk-mat-copy#side-b",
+   "label": "Table Talk (Side B: Pop Burst) · Bespoke Mahjong"
+  },
+  {
+   "id": "cc-hawaiian-sun-mahjong-mat",
+   "key": "letsbebesties.com/hawaiian-sun-mahjong-mat",
+   "label": "Hawaiian Sun · Let's Be Besties"
+  },
+  {
+   "id": "cc-bandit-mahjong-playing-mat",
+   "key": "missmahjong.com/bandit-mahjong-playing-mat",
+   "label": "Bandit - Butter Yellow · Miss Mahjong"
+  },
+  {
+   "id": "cc-mahjong-mats-solid-borders?v=52799171559716",
+   "key": "peacelovemahjong.com/mahjong-mats-solid-borders?v=52799171559716",
+   "label": "Border – Lemon · Peace Love Mahjong"
+  }
+ ],
+ "fym_mats": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/cabbook/fym_mats.json",
+ "fym_ref": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/cabbook/mc",
+ "template": "/tmp/claude-0/-home-claude/05549d34-8fe3-5ca9-a6a5-308991cb9a78/scratchpad/cabbook/tpl.html",
+ "pool": [
+  {
+   "id": "cc-anastasia-mat-in-tube",
+   "key": "www.ohmymahjong.com/anastasia-mat-in-tube"
+  },
+  {
+   "id": "cc-aria-britt-mills-mahjong-mat",
+   "key": "brittmillsdesign.com/aria-britt-mills-mahjong-mat"
+  },
+  {
+   "id": "cc-esme-mat-w-tube",
+   "key": "www.ohmymahjong.com/esme-mat-w-tube"
+  },
+  {
+   "id": "cc-preorder-sapphire-blue-garden-mat-copy",
+   "key": "www.bespokemahjong.com/preorder-sapphire-blue-garden-mat-copy"
+  },
+  {
+   "id": "cc-delilah-mat-in-tube",
+   "key": "www.ohmymahjong.com/delilah-mat-in-tube"
+  },
+  {
+   "id": "cc-penelope-mat-in-tube",
+   "key": "www.ohmymahjong.com/penelope-mat-in-tube"
+  },
+  {
+   "id": "cc-festival-mahjong-playing-mat-malachite",
+   "key": "missmahjong.com/festival-mahjong-playing-mat-malachite"
+  },
+  {
+   "id": "cc-cherry-blossom-mahjong-playing-mat-malachite",
+   "key": "missmahjong.com/cherry-blossom-mahjong-playing-mat-malachite"
+  },
+  {
+   "id": "cc-vintage-plum-neoprene-mahjong-mat",
+   "key": "www.bambirdboutique.com/vintage-plum-neoprene-mahjong-mat"
+  },
+  {
+   "id": "cc-oasis-mahjong-playing-mat",
+   "key": "missmahjong.com/oasis-mahjong-playing-mat"
+  },
+  {
+   "id": "cc-pink-amahj-game-mat-copy",
+   "key": "amahjline.com/pink-amahj-game-mat-copy"
+  },
+  {
+   "id": "cc-the-pastel-deco-mahjong-mat",
+   "key": "birdandbamboo.com/the-pastel-deco-mahjong-mat"
+  },
+  {
+   "id": "cc-scarlett-neoprene-mahjong-mat",
+   "key": "brittmillsdesign.com/scarlett-neoprene-mahjong-mat"
+  },
+  {
+   "id": "cc-gingham-americana-mahjong-playing-mat",
+   "key": "missmahjong.com/gingham-americana-mahjong-playing-mat"
+  },
+  {
+   "id": "cc-wild-west-americana-mahjong-playing-mat",
+   "key": "missmahjong.com/wild-west-americana-mahjong-playing-mat"
+  },
+  {
+   "id": "cc-mat-garden-party-meadow",
+   "key": "myfairmahjong.com/mat-garden-party-meadow"
+  },
+  {
+   "id": "cc-fall-simply-scalloped-neoprene-mahjong-mat-copy",
+   "key": "www.bambirdboutique.com/fall-simply-scalloped-neoprene-mahjong-mat-copy"
+  },
+  {
+   "id": "cc-bright-abstract-neoprene-mahjong-mat",
+   "key": "www.bambirdboutique.com/bright-abstract-neoprene-mahjong-mat"
+  },
+  {
+   "id": "cc-blue-abstract-neoprene-mahjong-mat",
+   "key": "www.bambirdboutique.com/blue-abstract-neoprene-mahjong-mat"
+  },
+  {
+   "id": "cc-double-sided-mat-double-the-fun-bespoke-x-grateful-dead-dancing-bears-copy",
+   "key": "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-dancing-bears-copy"
+  },
+  {
+   "id": "cc-preorder-double-sided-mat-double-the-fun-year-of-the-horse-mat-harlequin-copy",
+   "key": "www.bespokemahjong.com/preorder-double-sided-mat-double-the-fun-year-of-the-horse-mat-harlequin-copy"
+  },
+  {
+   "id": "cc-preorder-garden-glow-mat-turquoise",
+   "key": "www.bespokemahjong.com/preorder-garden-glow-mat-turquoise"
+  },
+  {
+   "id": "cc-garden-glow-mat-emerald-green",
+   "key": "www.bespokemahjong.com/garden-glow-mat-emerald-green"
+  },
+  {
+   "id": "cc-vivid-blue-leopard-game-mat",
+   "key": "www.bespokemahjong.com/vivid-blue-leopard-game-mat"
+  },
+  {
+   "id": "cc-bandana-neoprene-mahjong-mat?v=53345465172277",
+   "key": "www.bambirdboutique.com/bandana-neoprene-mahjong-mat?v=53345465172277"
+  },
+  {
+   "id": "cc-mahjong-mat-prism-33-x-33?v=50899700351287",
+   "key": "myfairmahjong.com/mahjong-mat-prism-33-x-33?v=50899700351287"
+  },
+  {
+   "id": "cc-standard-mahjong-mats?v=48312719769911",
+   "key": "myfairmahjong.com/standard-mahjong-mats?v=48312719769911"
+  },
+  {
+   "id": "cc-mahjong-mats-patterns?v=52799193973028",
+   "key": "peacelovemahjong.com/mahjong-mats-patterns?v=52799193973028"
+  },
+  {
+   "id": "cc-mahjong-mats-patterns?v=52799368167716",
+   "key": "peacelovemahjong.com/mahjong-mats-patterns?v=52799368167716"
+  },
+  {
+   "id": "cc-mahjong-mats-patterns?v=52799194005796",
+   "key": "peacelovemahjong.com/mahjong-mats-patterns?v=52799194005796"
+  },
+  {
+   "id": "cc-mahjong-mats-solid-borders?v=52799717769508",
+   "key": "peacelovemahjong.com/mahjong-mats-solid-borders?v=52799717769508"
+  },
+  {
+   "id": "cc-deco-neoprene-mahjong-mat-copy?v=53324522914101",
+   "key": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy?v=53324522914101"
+  },
+  {
+   "id": "cc-east-meets-west-neoprene-mat?v=49857170735413",
+   "key": "www.bambirdboutique.com/east-meets-west-neoprene-mat?v=49857170735413"
+  },
+  {
+   "id": "cc-signature-logo-mats?v=48095523504233",
+   "key": "www.letsmahj-on.com/signature-logo-mats?v=48095523504233"
+  },
+  {
+   "id": "cc-lets-be-refined-mahjong-mats?v=47969268465769",
+   "key": "www.letsmahj-on.com/lets-be-refined-mahjong-mats?v=47969268465769"
+  },
+  {
+   "id": "cc-signature-logo-mat?v=42014260985961",
+   "key": "www.letsmahj-on.com/signature-logo-mat?v=42014260985961"
+  },
+  {
+   "id": "cc-signature-logo-mat?v=42705442537577",
+   "key": "www.letsmahj-on.com/signature-logo-mat?v=42705442537577"
+  },
+  {
+   "id": "cc-signature-dragon-mat?v=42014242865257",
+   "key": "www.letsmahj-on.com/signature-dragon-mat?v=42014242865257"
+  },
+  {
+   "id": "cc-signature-dragon-mat?v=42014242963561",
+   "key": "www.letsmahj-on.com/signature-dragon-mat?v=42014242963561"
+  },
+  {
+   "id": "cc-pink-zebra-in-bloom-premium-padded-mahjong-mat-33",
+   "key": "mahjongregister.com/pink-zebra-in-bloom-premium-padded-mahjong-mat-33"
+  },
+  {
+   "id": "cc-pink-damask-american-mahjong-mat",
+   "key": "mahjandmoon.com/pink-damask-american-mahjong-mat"
+  },
+  {
+   "id": "cc-lion-american-mahjong-mat",
+   "key": "mahjandmoon.com/lion-american-mahjong-mat"
+  },
+  {
+   "id": "cc-tropical-hibiscus-mahjong-mat-pink-blue-palm-print-mahjong-mat",
+   "key": "mahjandmoon.com/tropical-hibiscus-mahjong-mat-pink-blue-palm-print-mahjong-mat"
+  },
+  {
+   "id": "cc-colette-s-kaleidoscope-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy",
+   "key": "mahjongregister.com/colette-s-kaleidoscope-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy"
+  },
+  {
+   "id": "cc-bandit-mahjong-playing-mat-poppy-red",
+   "key": "missmahjong.com/bandit-mahjong-playing-mat-poppy-red"
+  },
+  {
+   "id": "cc-coral-lake-mahjong-mat",
+   "key": "letsbebesties.com/coral-lake-mahjong-mat"
+  },
+  {
+   "id": "cc-southern-stained-glass-mahjong-mat",
+   "key": "letsbebesties.com/southern-stained-glass-mahjong-mat"
+  },
+  {
+   "id": "cc-leatherette-blue-octagon-pattern-no-53",
+   "key": "letsbebesties.com/leatherette-blue-octagon-pattern-no-53"
+  },
+  {
+   "id": "cc-caroline-in-peacock",
+   "key": "mahjandvine.com/caroline-in-peacock"
+  },
+  {
+   "id": "cc-listing-4530894010-preppy-chinoiserie-elephant-mahjong-mat",
+   "key": "www.etsy.com/listing/4530894010/preppy-chinoiserie-elephant-mahjong-mat"
+  },
+  {
+   "id": "cc-vibrant-symphony-mahjong-mat-full-table-size",
+   "key": "houseofheartsstudio.com/vibrant-symphony-mahjong-mat-full-table-size"
+  },
+  {
+   "id": "cc-deco-neoprene-mahjong-mat-copy-2?v=67663098347829",
+   "key": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098347829"
+  },
+  {
+   "id": "cc-double-sided-mat-double-the-fun-bespoke-x-grateful-dead-sunshine-galaxy-copy#sid",
+   "key": "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-sunshine-galaxy-copy#side-b"
+  },
+  {
+   "id": "cc-double-sided-mat-double-the-fun-bespoke-x-corey-paige-electric-love-mat-copy#sid",
+   "key": "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-corey-paige-electric-love-mat-copy#side-b"
+  },
+  {
+   "id": "cc-double-the-fun-pop-art-mat#side-b",
+   "key": "www.bespokemahjong.com/double-the-fun-pop-art-mat#side-b"
+  },
+  {
+   "id": "cc-plaid-neoprene-mahjong-mat?v=67963728199989",
+   "key": "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963728199989"
+  },
+  {
+   "id": "cc-tidal-glass-mahjong-mat",
+   "key": "letsbebesties.com/tidal-glass-mahjong-mat"
+  },
+  {
+   "id": "cc-mahjong-mat-31-5x31-5-ship-folded-4",
+   "key": "www.yolomahjong.com/mahjong-mat-31-5x31-5-ship-folded-4"
+  },
+  {
+   "id": "cc-palm-blush-mahjong-mat",
+   "key": "bougiemahjong.com/palm-blush-mahjong-mat"
+  },
+  {
+   "id": "cc-grand-prix-estate-mahjong-mat",
+   "key": "bougiemahjong.com/grand-prix-estate-mahjong-mat"
+  },
+  {
+   "id": "cc-electric-hibiscus-mahjong-mat",
+   "key": "bougiemahjong.com/electric-hibiscus-mahjong-mat"
+  },
+  {
+   "id": "cc-indigo-marina-mahjong-mat",
+   "key": "bougiemahjong.com/indigo-marina-mahjong-mat"
+  },
+  {
+   "id": "cc-listing-4568403327-day-dreamer-pink-and-green",
+   "key": "www.etsy.com/listing/4568403327/day-dreamer-pink-and-green"
+  },
+  {
+   "id": "cc-tropicana-mahjong-mat",
+   "key": "letsbebesties.com/tropicana-mahjong-mat"
+  },
+  {
+   "id": "cc-aria-leatherette-mahjong-mat",
+   "key": "brittmillsdesign.com/aria-leatherette-mahjong-mat"
+  },
+  {
+   "id": "cc-agate-whirlpool-neoprene-mahjong-mat",
+   "key": "letsbebesties.com/agate-whirlpool-neoprene-mahjong-mat"
+  },
+  {
+   "id": "cc-blue-bamboo-neoprene-mahjong-mat",
+   "key": "letsbebesties.com/blue-bamboo-neoprene-mahjong-mat"
+  },
+  {
+   "id": "cc-blue-octagon-ohbon-studios-artist-mahjong-mat",
+   "key": "letsbebesties.com/blue-octagon-ohbon-studios-artist-mahjong-mat"
+  },
+  {
+   "id": "cc-crimson-black-paisley-neoprene-mahjong-mat",
+   "key": "letsbebesties.com/crimson-black-paisley-neoprene-mahjong-mat"
+  },
+  {
+   "id": "cc-dusty-rose-peonies-mahjong-mat",
+   "key": "letsbebesties.com/dusty-rose-peonies-mahjong-mat"
+  },
+  {
+   "id": "cc-fiesta-flora-mahjong-mat",
+   "key": "letsbebesties.com/fiesta-flora-mahjong-mat"
+  },
+  {
+   "id": "cc-folk-garden-neoprene-mahjong-mat",
+   "key": "letsbebesties.com/folk-garden-neoprene-mahjong-mat"
+  },
+  {
+   "id": "cc-happy-day-mahjong-mat",
+   "key": "letsbebesties.com/happy-day-mahjong-mat"
+  },
+  {
+   "id": "cc-hummingbird-spring-mahjong-mat",
+   "key": "letsbebesties.com/hummingbird-spring-mahjong-mat"
+  },
+  {
+   "id": "cc-martini-shaken-mahjong-mat",
+   "key": "letsbebesties.com/martini-shaken-mahjong-mat"
+  },
+  {
+   "id": "cc-mountain-green-mahjong-mat",
+   "key": "letsbebesties.com/mountain-green-mahjong-mat"
+  },
+  {
+   "id": "cc-multi-hearts-mahjong-mat",
+   "key": "letsbebesties.com/multi-hearts-mahjong-mat"
+  },
+  {
+   "id": "cc-neon-daze-queen-neoprene-mahjong-mat",
+   "key": "letsbebesties.com/neon-daze-queen-neoprene-mahjong-mat"
+  },
+  {
+   "id": "cc-neon-peacock-circle-mahjong-mat",
+   "key": "letsbebesties.com/neon-peacock-circle-mahjong-mat"
+  },
+  {
+   "id": "cc-ocean-jewel-ohbon-studios-artist-mahjong-mat",
+   "key": "letsbebesties.com/ocean-jewel-ohbon-studios-artist-mahjong-mat"
+  },
+  {
+   "id": "cc-sea-glass-mahjong-mat-mahj-game-tabletop",
+   "key": "letsbebesties.com/sea-glass-mahjong-mat-mahj-game-tabletop"
+  },
+  {
+   "id": "cc-teal-dots-and-stripes-with-directions-mahjong-mat",
+   "key": "letsbebesties.com/teal-dots-and-stripes-with-directions-mahjong-mat"
+  },
+  {
+   "id": "cc-tropical-travels-neoprene-mahjong-mat",
+   "key": "letsbebesties.com/tropical-travels-neoprene-mahjong-mat"
+  },
+  {
+   "id": "cc-pink-pizzazz-mahjong-mat",
+   "key": "letsbebesties.com/pink-pizzazz-mahjong-mat"
+  },
+  {
+   "id": "cc-gatsby-glow-mahjong-mat",
+   "key": "letsbebesties.com/gatsby-glow-mahjong-mat"
+  },
+  {
+   "id": "cc-white-sailboats-mahjong-mat-preorder",
+   "key": "rebeccaillustrated.com/white-sailboats-mahjong-mat-preorder"
+  },
+  {
+   "id": "cc-playing-for-keeps-mat",
+   "key": "mahjmood.com/playing-for-keeps-mat"
+  }
+ ],
+ "pool_src": "fym-full-measured",
+ "pool_n": 1828
+}

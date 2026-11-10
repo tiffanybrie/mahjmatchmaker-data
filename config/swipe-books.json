@@ -1,53 +1,60 @@
 {
-  "_about": "Registry of published swipe books (Tiffany Oct 30 2:45am: she never swipes the same product twice). Key = the book's collection key D.col. book_gate.py [g] FAILS a new book whose D.col (or product handle) is already here with votes/completed, unless it is that same book being updated (--update-of <url>). Every task that publishes a swipe book adds its entry here in the same commit.",
-  "books": {
-    "poppins-mat-in-tubeswipe": {
-      "url": "https://claude.ai/artifact/FG8AbqV3YCXtURkQFbuncj",
-      "product": "Poppins mat (Oh My Mahjong, mat in tube)",
-      "handle": "poppins-mat-in-tube",
-      "status": "completed",
-      "completed": "2026-10-28",
-      "votes": true
-    },
-    "lotus-cove-mat-in-tubeswipe": {
-      "url": "https://claude.ai/artifact/L8teRCj5w9ncskZYkwNEoZ",
-      "product": "Lotus Cove mat (Oh My Mahjong, mat in tube)",
-      "handle": "lotus-cove-mat-in-tube",
-      "status": "open",
-      "votes": false,
-      "published": "2026-11-03",
-      "matEdit": "https://claude.ai/artifact/2AMicqwizjvGCs5nn9khcV"
-    },
-    "playing-for-keeps-matswipe": {
-      "url": "https://claude.ai/artifact/JTgtEfAAdS6qrDJUhvPB3n",
-      "product": "Playing For Keeps mat (Mahj Mood)",
-      "handle": "playing-for-keeps-mat",
-      "status": "open",
-      "votes": false
-    },
-    "le-bandana-pink-greenswipe": {
-      "url": "https://claude.ai/artifact/EMbrWBQp3ah2GGH62dfZB3",
-      "product": "Le Bandana Pink & Green mat (Fait \u00e0 Main)",
-      "handle": "le-bandana-pink-green",
-      "status": "open",
-      "votes": false,
-      "published": "2026-11-06"
-    },
-    "splashdigest3swipe": {
-      "url": "https://claude.ai/artifact/SNED3mKhfnp41Y5m6BZEUS",
-      "product": "Splash of Color new mats digest #3 (11 mats, Oct 29-Nov 6)",
-      "handle": "splash-digest-3",
-      "status": "open",
-      "votes": false,
-      "published": "2026-11-06"
-    },
-    "texas-mon-amour-mat-creamswipe": {
-      "url": "https://claude.ai/artifact/SQ95amcyW1VY8K5pNkDJZC",
-      "product": "Texas Mon Amour Cream mat (Fait \u00e0 Main)",
-      "handle": "texas-mon-amour-mat",
-      "status": "open",
-      "votes": false,
-      "published": "2026-11-07"
-    }
+ "_about": "Registry of published swipe books (Tiffany Oct 30 2:45am: she never swipes the same product twice). Key = the book's collection key D.col. book_gate.py [g] FAILS a new book whose D.col (or product handle) is already here with votes/completed, unless it is that same book being updated (--update-of <url>). Every task that publishes a swipe book adds its entry here in the same commit.",
+ "books": {
+  "poppins-mat-in-tubeswipe": {
+   "url": "https://claude.ai/artifact/FG8AbqV3YCXtURkQFbuncj",
+   "product": "Poppins mat (Oh My Mahjong, mat in tube)",
+   "handle": "poppins-mat-in-tube",
+   "status": "completed",
+   "completed": "2026-10-28",
+   "votes": true
+  },
+  "lotus-cove-mat-in-tubeswipe": {
+   "url": "https://claude.ai/artifact/L8teRCj5w9ncskZYkwNEoZ",
+   "product": "Lotus Cove mat (Oh My Mahjong, mat in tube)",
+   "handle": "lotus-cove-mat-in-tube",
+   "status": "open",
+   "votes": false,
+   "published": "2026-11-03",
+   "matEdit": "https://claude.ai/artifact/2AMicqwizjvGCs5nn9khcV"
+  },
+  "playing-for-keeps-matswipe": {
+   "url": "https://claude.ai/artifact/JTgtEfAAdS6qrDJUhvPB3n",
+   "product": "Playing For Keeps mat (Mahj Mood)",
+   "handle": "playing-for-keeps-mat",
+   "status": "open",
+   "votes": false
+  },
+  "le-bandana-pink-greenswipe": {
+   "url": "https://claude.ai/artifact/EMbrWBQp3ah2GGH62dfZB3",
+   "product": "Le Bandana Pink & Green mat (Fait à Main)",
+   "handle": "le-bandana-pink-green",
+   "status": "open",
+   "votes": false,
+   "published": "2026-11-06"
+  },
+  "splashdigest3swipe": {
+   "url": "https://claude.ai/artifact/SNED3mKhfnp41Y5m6BZEUS",
+   "product": "Splash of Color new mats digest #3 (11 mats, Oct 29-Nov 6)",
+   "handle": "splash-digest-3",
+   "status": "open",
+   "votes": false,
+   "published": "2026-11-06"
+  },
+  "texas-mon-amour-mat-creamswipe": {
+   "url": "https://claude.ai/artifact/SQ95amcyW1VY8K5pNkDJZC",
+   "product": "Texas Mon Amour Cream mat (Fait à Main)",
+   "handle": "texas-mon-amour-mat",
+   "status": "open",
+   "votes": false,
+   "published": "2026-11-07"
+  },
+  "cabana-club-tilesswipe": {
+   "url": "https://claude.ai/artifact/XRpLKsiby4hFpvVQUMNcVM",
+   "status": "open",
+   "set": "cabana-club",
+   "built": "2026-11-10",
+   "mode": "tile"
   }
+ }
 }
