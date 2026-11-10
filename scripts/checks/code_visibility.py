@@ -83,10 +83,16 @@ def money(d):
         agg = collections.defaultdict(lambda: [0, 0.0, False])
         for b in j.get('brands', []):
             if b['brand'].startswith('ShopMy'): continue
-            a = agg[norm(b['brand'])]; a[0] += b.get('orders') or 0; a[1] += b.get('commission') or 0
-            if b.get('commission') is None: a[2] = True
+            a = agg[norm(b['brand'])]; a[0] += _num(b.get('orders'))
+            c = b.get('commission')
+            if isinstance(c, (int, float)): a[1] += c
+            else: a[2] = True  # None or '?' (unknown amount) - Nov 10 fix, crashed on '?'
         day[k] = (agg, bool(j.get('partial')))
     return day
+
+def _num(v):
+    try: return float(v) if v not in (None, '') else 0
+    except (TypeError, ValueError): return 0
 
 def report(a):
     rows = [r for r in load() if norm(r['brand']) not in EXCLUDE]
