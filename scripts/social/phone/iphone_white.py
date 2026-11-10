@@ -43,7 +43,9 @@ def phone(shot, out):
     d.rounded_rectangle([s(ox + 3), s(3), s(ox + SW + 2 * (BZ + FR) - 3), s(H - 3)], radius=s(R_out - 3), fill=(246, 246, 247, 255))
     d.rounded_rectangle([s(ox + FR - 4), s(FR - 4), s(ox + SW + 2 * BZ + FR + 4), s(H - FR + 4)], radius=s(SR + BZ + 4), fill=(214, 216, 220, 255))
     # black glass bezel
-    d.rounded_rectangle([s(ox + FR), s(FR), s(ox + FR + SW + 2 * BZ), s(H - FR)], radius=s(SR + BZ), fill=(12, 12, 14, 255))
+    # WHITE front (Tiffany Nov 10 4:12pm: "the phone's supposed to be white"), with a fine grey line where glass meets screen
+    d.rounded_rectangle([s(ox + FR), s(FR), s(ox + FR + SW + 2 * BZ), s(H - FR)], radius=s(SR + BZ), fill=(250, 250, 251, 255))
+    d.rounded_rectangle([s(ox + FR + BZ - 4), s(FR + BZ - 4), s(ox + FR + BZ + SW + 4), s(FR + BZ + SH + 4)], radius=s(SR + 4), fill=(206, 208, 212, 255))
     im = im.resize((W, H), Image.LANCZOS)
     # screen, clipped to the display radius
     sc = statusbar(Image.open(shot).convert('RGBA').resize((SW, SH), Image.LANCZOS))
