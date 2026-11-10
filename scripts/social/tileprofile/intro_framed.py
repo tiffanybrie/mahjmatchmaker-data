@@ -135,9 +135,22 @@ s6 = (hdr(('Her soulmate', 84)) +   # Tiffany Nov 10 3:49pm: fits 'Her colors / 
       f'{ab(L, 984, "", W)}<div style="display:flex;align-items:center;gap:10px">{VER(34)}<span class="caps" style="font-size:20px;color:var(--pink)">Official pair</span></div>'
       f'<div style="font:400 29px/1.35 Bit;margin-top:10px;color:#2c3e63;text-wrap:balance">{e(pr["why"]).replace("light lime", "light&nbsp;lime")}</div></div>')
 NATIVE = {2: s2, 3: s3, 4: s4, 5: s5, 6: s6}
+# ---- card 8 (sits after 'Her soulmate'): "But she likes to play the field" (Tiffany Nov 10 3:56pm): her matches across brands,
+# shown in Find Your Mat-ch's own Table view, so the profile ends in the tool, not on one mat.
+FL = P.get('field')
+if FL:
+    import json as _j
+    _m = _j.load(open(R + 'config/fym-mats-snapshot.json'))['mats']; depth = f"{(sum(1 for v in _m.values() if not v.get('hid')) // 100) * 100:,}"
+    tiles = ''.join(f'<div><div style="width:360px;height:360px;border-radius:18px;background:url({url(f["img"])}) center/cover;box-shadow:0 8px 20px rgba(6,40,90,.16)"></div>'
+                    f'<div style="margin-top:10px;font:700 23px/1.1 Bit;color:var(--navy)">{e(f["mat"])}</div><div style="font:400 19px Bit;color:#5a6b85;margin-top:3px">{e(f["brand"])}</div></div>'
+                    for f in FL['mats'][:4])
+    NATIVE[8] = (f'<div class="caps" style="position:absolute;left:{L}px;top:48px;font-size:17px;color:#5a6b85">{e(P["name"])} · her profile</div>'
+                 f'<div class="cap" style="position:absolute;left:{L}px;top:80px;font-size:66px;line-height:1">But she likes to<br>play the field</div>'
+                 f'{ab(L, 228, "", W)}<div class="pf" style="font-size:29px;line-height:1.25;color:#3c4f73">Try {e(P["name"])} on {depth}+ mats in Find <span style="font-style:italic">Your</span> Mat-ch&trade;</div></div>'
+                 f'{ab(L, 292, "display:grid;grid-template-columns:360px 360px;gap:22px 28px", W)}{tiles}</div>')
 
 def page(n):
-    bars = ''.join(f'<i style="background:{"#054689" if j == n else "rgba(5,70,137,.16)"}"></i>' for j in range(1, 8))
+    bars = ''.join(f'<i style="background:{"#054689" if j == (7 if n == 8 else n) else "rgba(5,70,137,.16)"}"></i>' for j in range(1, 8))
     if n == 1:
         inner = f'<img src="file://{CARD}" style="position:absolute;inset:0;width:100%;height:100%"><div style="position:absolute;left:0;right:0;bottom:0;height:60px;background:#fff"></div>'
     else:
@@ -219,6 +232,11 @@ async def main():
             await pg.goto('file://' + hp); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready')
             png = f'{TMP}/framed-{n}@2x.png'; await pg.screenshot(path=png)
             Image.open(png).convert('RGB').resize((1080, 1350), Image.LANCZOS).save(f'{OUT}/{n}.jpg', quality=93)
+        if 8 in NATIVE:   # the play-the-field card, after 'Her soulmate'
+            hp = f'{TMP}/framed-8.html'; open(hp, 'w').write(page(8))
+            await pg.goto('file://' + hp); await pg.wait_for_load_state('networkidle'); await pg.evaluate('document.fonts.ready')
+            png = f'{TMP}/framed-8@2x.png'; await pg.screenshot(path=png)
+            Image.open(png).convert('RGB').resize((1080, 1350), Image.LANCZOS).save(f'{OUT}/6b-play-the-field.jpg', quality=93)
         await b.close()
     shutil.copy(f'{SRC}/7.jpg', f'{OUT}/7.jpg')
     if OPEN: shutil.copy(OUT.replace('-open', '') + '/1.jpg', f'{OUT}/1.jpg')   # slide 1 = the same profile card   # slide 7 = plain graphic, not in the card

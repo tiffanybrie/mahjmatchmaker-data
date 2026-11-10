@@ -300,5 +300,30 @@
       "group": "color"
     }
   ],
-  "racks_hand_framed": "all Oh My Mahjong, all picked for her"
+  "racks_hand_framed": "all Oh My Mahjong, all picked for her",
+  "field": {
+    "_note": "Tiffany Nov 10 3:56pm: closing profile card 'But she likes to play the field' = her matches across brands, straight into Find Your Mat-ch. Crops are real FYM Table-view screens (Juniper on each mat).",
+    "mats": [
+      {
+        "img": "assets/social/juniper-launch/fym-table/juniper-table-palm-royale.jpg",
+        "mat": "Palm Royale",
+        "brand": "Mahj Tile Haus"
+      },
+      {
+        "img": "assets/social/juniper-launch/fym-table/juniper-table-flora-belle.jpg",
+        "mat": "Flora Belle",
+        "brand": "Anders Ruff"
+      },
+      {
+        "img": "assets/social/juniper-launch/fym-table/juniper-table-garden-glow.jpg",
+        "mat": "Garden Glow",
+        "brand": "Bespoke Mahjong"
+      },
+      {
+        "img": "assets/social/juniper-launch/fym-table/juniper-table-cherry-blossom-jade.jpg",
+        "mat": "Cherry Blossom Jade",
+        "brand": "Miss Mahjong"
+      }
+    ]
+  }
 }
