@@ -48,11 +48,12 @@ LY = P.get('layers') or {}
 if LY.get('labels'):   # Juniper-style sets (Nov 10): layer arrows on OMM's own tile photo + wheel notes from the profile, no Papaya text
     sc = 380 / 732; ox, oy = 110, 200
     pts = [(ox + x * sc, oy + y * sc, t, c) for x, y, t, c in LY['labels']]
-    lys = [310, 390, 470][:len(pts)]
+    lys = (LY.get('label_y') or [310, 390, 470])[:len(pts)]
+    lx = 520 if LY.get('label_y') else 500   # Nov 10: short leaders off the right edge, text beside the layers
     diag = (f'<img src="{url(LY["img"])}" style="position:absolute;left:{ox}px;top:{oy}px;width:380px;filter:drop-shadow(0 12px 16px rgba(80,40,20,.16))">'
             '<svg style="position:absolute;left:0;top:0" width="1080" height="1350">' +
-            ''.join(f'<polyline points="{px},{py} {px+24},{ly} 500,{ly}" fill="none" stroke="#054689" stroke-width="3"/><circle cx="{px}" cy="{py}" r="7" fill="#fff" stroke="#054689" stroke-width="3"/>' for (px, py, t, c), ly in zip(pts, lys)) + '</svg>')
-    labs = ''.join(f'{ab(508, ly - 15, "display:flex;align-items:center;gap:8px;font:700 24px/1.05 Bit;color:var(--navy)", 330)}<i style="flex:0 0 24px;height:24px;border-radius:50%;background:{c};box-shadow:0 0 0 3px #fff,0 1px 4px rgba(5,40,90,.25)"></i><span>{e(t)}</span></div>' for (px, py, t, c), ly in zip(pts, lys))
+            ''.join(f'<polyline points="{px},{py} {lx-18},{ly} {lx},{ly}" fill="none" stroke="#054689" stroke-width="3"/><circle cx="{px}" cy="{py}" r="6" fill="#fff" stroke="#054689" stroke-width="3"/>' for (px, py, t, c), ly in zip(pts, lys)) + '</svg>')
+    labs = ''.join(f'{ab(lx + 8, ly - 15, "display:flex;align-items:center;gap:8px;font:700 24px/1.05 Bit;color:var(--navy)", 330)}<i style="flex:0 0 24px;height:24px;border-radius:50%;background:{c};box-shadow:0 0 0 3px #fff,0 1px 4px rgba(5,40,90,.25)"></i><span>{e(t)}</span></div>' for (px, py, t, c), ly in zip(pts, lys))
     notes = '<div style="height:14px"></div>'.join(f'<b style="font-weight:700;color:var(--navy)">{i+1} &nbsp;{e(n)}</b><br>{e(d)}' for i, (n, d) in enumerate(LY.get('wheel_notes', [])))
     s2 = (hdr(('Her colors', 84)) + diag + labs +
           f'<img src="{url(f"assets/colorwheels/{key}-color-wheel-mini.png")}" style="position:absolute;left:100px;top:640px;width:330px;height:330px">'
@@ -99,19 +100,27 @@ s4 = (hdr(('Her best features', 72)) +
 RACK = {'Oh My Mahjong Hot Pink': 'assets/racks/card/oh-my-mahjong-hot-pink.png', 'Oh My Mahjong Agate': 'assets/racks/card/oh-my-mahjong-agate.png', 'Bird & Bamboo Lavender': 'assets/colorcards/papaya-spritz/racks/bird-and-bamboo-lavender.png', 'Peace Love Mahjong Chartreuse': 'assets/racks/card/peace-love-mahjong-chartreuse.png',
         'Peace Love Mahjong Oak': 'assets/racks/card/peace-love-mahjong-oak.png', 'Middle & Main Scalloped Beechwood': 'assets/racks/card/middle--main-scalloped-beechwood.png',
         'Mahjong Row & Co. Scalloped Tortoise': 'assets/racks/card/mahjong-row--co-scalloped-tortoise.png'}
-BRANDS = ('Bird & Bamboo', 'Peace Love Mahjong', 'Middle & Main', 'Miss Mahjong', 'Mahjong Row & Co.', 'Bam Bird Boutique')
-def rrow(r):
+BRANDS = ('Oh My Mahjong', 'Bird & Bamboo', 'Peace Love Mahjong', 'Middle & Main', 'Miss Mahjong', 'Mahjong Row & Co.', 'Bam Bird Boutique')
+def rrow(r):   # same as the APPROVED carousel slide (carousel.py): brand + name on one line, racks at real proportions
     b = next((x for x in BRANDS if r['name'].startswith(x)), r['name'].split()[0]); c = r['name'][len(b) + 1:]
-    return (f'<div style="margin-top:16px"><div class="caps" style="font-size:17px;color:#8a6a80">{e(b)}</div><div class="pf" style="font-size:40px;font-weight:600;line-height:1.1;margin-top:2px">{e(c)}</div>'
-            f'<img src="{url(RACK[r["name"]])}" style="display:block;width:{W}px;height:84px;object-fit:fill;margin-top:8px;filter:drop-shadow(0 8px 10px rgba(6,40,90,.18))"></div>')
+    return (f'<div style="margin-top:22px"><div style="display:flex;align-items:baseline;gap:14px"><span class="caps" style="font-size:17px;color:#8a6a80">{e(b)}</span><span class="pf" style="font-size:40px;font-weight:600">{e(c)}</span></div>'
+            f'<img src="{url(RACK[r["name"]])}" style="display:block;width:{W}px;height:{"auto" if P.get("rack_natural") else "84px"};object-fit:fill;margin-top:8px;filter:drop-shadow(0 8px 10px rgba(6,40,90,.18))"></div>')
 grp = lambda g: ''.join(rrow(r) for r in P['racks'] if r.get('group', 'color') == g)
+# Nov 10 3:46pm (Tiffany): the framed version is the APPROVED slide put in the frame. Same text, same racks, same
+# proportions as carousel.py s4. Never rewrite copy or reshape images when re-framing an approved graphic.
+_ver = grp("versatile")
+if _ver:
+    _body = (f'<div class="caps" style="font-size:19px;color:var(--pink);margin-top:30px">Match her layers</div>{grp("color")}'
+             f'<div style="margin-top:34px;display:flex;align-items:center;gap:14px"><span class="hand" style="font-size:52px;color:var(--navy);line-height:1">super versatile</span>'
+             f'<svg width="62" height="40" viewBox="0 0 70 44"><path d="M4 8 C 28 4, 46 14, 58 34" fill="none" stroke="#c8325f" stroke-width="4" stroke-linecap="round"/><path d="M46 30 L 59 37 L 62 22" fill="none" stroke="#c8325f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+             f'<span class="pf" style="font-size:27px;color:#3c4f73">my go-tos with any set</span></div>{_ver}'
+             f'<div class="hand" style="font-size:40px;margin-top:22px;color:var(--pink)">now, who she&rsquo;s dating &rarr;</div>')
+else:
+    _body = (grp("color") + f'<div class="hand" style="font-size:44px;margin-top:34px;color:var(--navy)">{P.get("racks_hand", "all three picked for her, not just any rack")} &hearts;</div>'
+             f'<div class="hand" style="font-size:40px;margin-top:6px;color:var(--pink)">now, who she&rsquo;s dating &rarr;</div>')
 s5 = (hdr(("Racks she's into", 80)) +
       f'{ab(L, 180, "", W)}<div class="pf" style="font-size:29px;line-height:1.25;color:#3c4f73">A color from her layers, or a rack that goes with everything.</div>'
-      f'<div class="caps" style="font-size:19px;color:var(--pink);margin-top:30px">Match her layers</div>{grp("color")}'
-      f'<div style="margin-top:34px;display:flex;align-items:center;gap:14px"><span class="hand" style="font-size:52px;color:var(--navy);line-height:1">super versatile</span>'
-      f'<svg width="62" height="40" viewBox="0 0 70 44"><path d="M4 8 C 28 4, 46 14, 58 34" fill="none" stroke="#c8325f" stroke-width="4" stroke-linecap="round"/><path d="M46 30 L 59 37 L 62 22" fill="none" stroke="#c8325f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>'
-      f'<span class="pf" style="font-size:27px;color:#3c4f73">my go-tos</span></div>{grp("versatile")}'
-      f'<div class="hand" style="font-size:46px;margin-top:22px;color:var(--pink)">now, who she&rsquo;s dating &rarr;</div></div>')
+      + _body + '</div>')
 
 # ---- slide 6: made for each other (text UNDER the photo row, Tiffany Oct 20)
 pr = P['omm_launch']['pair']

@@ -138,24 +138,24 @@
     ]
   },
   "layers": {
-    "_note": "Nov 6 round 3 (Tiffany): the arrows stay, on OMM's joker tile photo (ohmymahjong.com cdn juniper-mahjong-tiles-9588574.jpg, cut by scripts/colorwheel/juniper_joker_cutout.py). Labels = [x, y, text, hex] in cutout px, layer centres sampled at x=330 (band centres).",
+    "_note": "Nov 6 round 3 (Tiffany): the arrows stay, on OMM's joker tile photo (ohmymahjong.com cdn juniper-mahjong-tiles-9588574.jpg, cut by scripts/colorwheel/juniper_joker_cutout.py). Labels = [x, y, text, hex] in cutout px, layer centres sampled at x=330 (band centres). Nov 10 3:44pm (Tiffany): dots touch each layer on the tile's right edge, nearest the text; text moved right; no line crosses the joker.",
     "img": "assets/tiles/backs/juniper-layers-joker-cutout.png",
     "labels": [
       [
-        330,
-        526,
+        701.2,
+        385.3,
         "Teal layer",
         "#00a792"
       ],
       [
-        330,
-        573,
+        676.1,
+        452.7,
         "Chartreuse layer",
         "#a9c54f"
       ],
       [
-        330,
-        613,
+        628.0,
+        539.4,
         "Forest Green Jade",
         "#225d36"
       ]
@@ -179,9 +179,9 @@
       ]
     ],
     "label_y": [
-      590,
-      670,
-      750
+      400,
+      450,
+      500
     ],
     "wheel_legend": "Center = light. Outer ring = dark.<br>Middle ring = full, clear color."
   },
