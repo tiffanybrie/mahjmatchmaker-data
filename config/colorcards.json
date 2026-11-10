@@ -1271,6 +1271,79 @@
    "racks_source": "Claude's own picks: Bam Bird's own 19in wood racks in Lagoon (her teal bams) + Mulberry (her crak frames), never Indigo on Indigo; Tiffany Oct 27 put Indigo with Bam Bird Lagoon racks",
    "_nov07": "Indigo back = Bam Bird's Indigo showroom photo (#2a3b5e) + FYM table-view wall (#233862, config/tableview-back-colors.json bam-bird-boutique-deco-indigo), checked by eye against the bag pile (listing img 18). Faces = same as Lagoon/Mulberry. Top 3: Peacock Garden (her Oct 27 two-colour pick: Indigo/Peacock Garden), Savannah (her Oct 27 'put Indigo on the green mat'), Deco Dragon (Mulberry) #3 = sister mat (never #1, never the Indigo Dragon). Indigo SOLD OUT on bambirdboutique.com Nov 7 (all 3 variants).",
    "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 1 BamBird_Deco-1-2.jpg (no variant attached; the navy box of the three stacked boxes; the only Indigo-variant images, 11 and 13, show bags or faces)"
+  },
+  "cabana-club": {
+   "name": "Cabana Club",
+   "col": "#0c92a7",
+   "brand": "Charleston Mahjong Club",
+   "sub": "Pool-water backs on soft yellow faces",
+   "backs": [
+    [
+     "POOL TURQUOISE",
+     "#57aabd",
+     "water-print back"
+    ],
+    [
+     "SEAFOAM",
+     "#b0dbe3",
+     "water highlights"
+    ],
+    [
+     "SOFT YELLOW",
+     "#f6f4b3",
+     "face layer"
+    ]
+   ],
+   "faces": [
+    [
+     "TEAL",
+     "#0c92a7"
+    ],
+    [
+     "LIME",
+     "#85c412"
+    ],
+    [
+     "RASPBERRY",
+     "#b83161"
+    ],
+    [
+     "APRICOT",
+     "#f9cc6f"
+    ],
+    [
+     "WHITE",
+     "#ffffff"
+    ]
+   ],
+   "racks": [
+    "Charleston Mahjong Club Key Lime",
+    "Charleston Mahjong Club Azalea Pink",
+    "Charleston Mahjong Club Winter White"
+   ],
+   "rack_imgs": {
+    "Charleston Mahjong Club Key Lime": "assets/racks/card/charleston-mahjong-club-key-lime-drawn.png",
+    "Charleston Mahjong Club Azalea Pink": "assets/racks/card/charleston-mahjong-club-azalea-pink-drawn.png",
+    "Charleston Mahjong Club Winter White": "assets/racks/card/charleston-mahjong-club-winter-white-drawn.png"
+   },
+   "tile": "assets/tiles/album/cabana-club.jpg",
+   "tag": [
+    "Vintage beach club",
+    "beach balls, palms, a diver, cabanas"
+   ],
+   "mats": [
+    "Cabana Club"
+   ],
+   "mat_imgs": {
+    "Cabana Club": "assets/launches/charlestonmahjongclub-cabana-club/cabana-club-mat-flat.jpg"
+   },
+   "shop": "Shop Cabana Club · Charleston Mahjong Club",
+   "shop_m": "Shop Cabana Club · Charleston Mahjong Club",
+   "profile_line": [
+    "Seeking: teal, lime or a pop of pink.",
+    "Must love a pool day."
+   ],
+   "_note": "Nov 10 (album start, Matches & Catalog agent): colours measured from CMC listing image 3 (flat layout) + image 9 (back tile). Racks = CMC 20in wooden Key Lime / Azalea Pink / Winter White (tile brand's own racks; drawn bars in measured colours until a clean rack cut-out exists). Top mats = the coordinated mat only until her picks; the top 3 get filled from her standouts."
   }
  },
  "_note_oct19_catchup": "Oct 19 catch-up: shangri-la, lilac-soiree, preppy-soiree, spring-love, sunday-tile-set got mat_imgs/rack_imgs and were rendered with the existing style. They use 'tag' (factual). When Tiffany approves the Papaya profile_line style, add profile_line to each set and re-run build.py <key>; nothing else changes."
