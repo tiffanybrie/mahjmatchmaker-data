@@ -1,0 +1,55 @@
+{
+ "_about": "Album record (Album Playbook, Nov 8): proof for steps 1-8 (scripts/checks/album_gate.py). Cabana Club = half of the DOUBLE album 'Cabana Club + Apres-Ski Club' (surf/ski, lead-up to Christmas vacation), Tiffany Nov 10 12:23pm. Go-live slot: week of Dec 7 (config/album-launch-slots.json cmc-cabana-apres-ski); everything built + scheduled by Fri Dec 4.",
+ "set": "cabana-club",
+ "name": "Cabana Club",
+ "brand": "Charleston Mahjong Club",
+ "double_with": {
+  "set": "cmc-apres-ski",
+  "name": "Apres-Ski Club",
+  "existing": "9 live cards on /holiday-mahjong-matches#cmc-apres-ski (Alpine Ski Lodge Winter, Hiverelle, Ski Club Red Sweater, The Chalet x2, Winterberry, Ski Club Periwinkle, Snowflake Lodge, The Polo Club); reuse them, no new Apres-Ski picking"
+ },
+ "spec": "scripts/albumcard/specs/cabana-club_nov10.json",
+ "leftout": {
+  "file": "scripts/albumcard/specs/cabana_leftout_nov10.json",
+  "key": "cabana-club"
+ },
+ "cards_dir": "assets/cards/cabana-club",
+ "product": {
+  "tiles": "https://www.charlestonmahjongclub.com/products/the-hunt-club-edition%E2%84%A2-copy",
+  "tiles_price": 425,
+  "mat": "https://www.charlestonmahjongclub.com/products/cabana-club-neoprene-mat",
+  "mat_price": 75,
+  "mat_shopmy": "https://go.shopmy.us/p-95958998",
+  "umbrella_mat": "https://www.charlestonmahjongclub.com/products/scratch-and-dent-cabana-club-neoprene-umbrella-mat-w-carrying-bag-copy",
+  "travel_bundle": "https://www.charlestonmahjongclub.com/products/the-cabana-club-travel-bundle",
+  "racks": "CMC 20in wooden racks Key Lime / Azalea Pink / Winter White ($135) https://www.charlestonmahjongclub.com/products/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue",
+  "source_email": "Gmail thread 1a1c55018f0a801a",
+  "link_route": "shopmy-site (ShopMy 15% vs own 10%); tile-set ShopMy pin still to make"
+ },
+ "tile_photo": {
+  "file": "assets/tiles/album/cabana-club.jpg",
+  "inset": "assets/tiles/album/cabana-club.jpg",
+  "fym": "assets/tiles/v119/charleston-mahjong-club-cabana-club-edition.jpg",
+  "source": "CMC split style approved Oct 26 (Apres Ski): faces = CMC listing image 3 (IMG_3657 flat layout, unedited crop); backs = the real back tile from listing image 9 (IMG_3645), deskewed + repeated 4x at angles, never recoloured.",
+  "asked_at": null,
+  "approved_at": null
+ },
+ "colorcard_img": "assets/colorcards/cabana-club/00-cabana-club-mahjong-tiles-color-guide-mobile.jpg",
+ "wheel_img": "assets/colorwheels/cabana-club-color-wheel.jpg",
+ "flats_saved": {
+  "dir": "assets/launches/charlestonmahjongclub-cabana-club/",
+  "files": [
+   "cabana-club-tiles-logo-flat.jpg",
+   "cabana-club-tiles-flat-layout.jpg",
+   "cabana-club-tiles-field-guide-flat.jpg",
+   "cabana-club-mat-flat.jpg"
+  ],
+  "dropbox": "pending: copy to Dropbox /Mahj Matchmaker Albums/New releases/Charleston Mahjong Club/ (DESK OPS line)"
+ },
+ "fym_staged": "config/fym-adds-nov10-cabana.json (+ walls config/tableview-back-colors.json, coordinated mat config/fym-coordinated.json, album map config/album-fym-sets.json)",
+ "holiday": {
+  "considered": true,
+  "note": "The holiday side of this double album IS Apres-Ski Club (its 9 live holiday cards). Cabana gets no Christmas mats of its own unless Tiffany wants them."
+ },
+ "rounds": []
+}

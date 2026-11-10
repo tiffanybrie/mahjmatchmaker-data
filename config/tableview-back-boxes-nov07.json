@@ -3489,6 +3489,19 @@
    "kind": "solid",
    "img": "assets/table-view/back-photos/middle-main-mahjong-charleston.jpg",
    "note": "Nov 8: ALL-WHITE. No Palmetto photo shows a back (7 brand images, faces only). Brand: \"The tiles are a glossy white acrylic\", the exact wording on Charleston, whose back photo (used here) is plain white; M&M sets with coloured backs (Peach Pine, Barrier Island) do not carry that wording. Every Palmetto tile edge is white, no coloured layer."
+  },
+  "charleston-mahjong-club-cabana-club-edition": {
+   "name": "The Cabana Club Edition",
+   "brand": "Charleston Mahjong Club",
+   "box": [
+    0.12,
+    0.08,
+    0.88,
+    0.62
+   ],
+   "kind": "pattern",
+   "img": "assets/tiles/v119/charleston-mahjong-club-cabana-club-back.png",
+   "_note": "Nov 10: box inside the real back (CMC listing image 9, deskewed); logo area excluded"
   }
  },
  "_needs_eye": {

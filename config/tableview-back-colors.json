@@ -1679,5 +1679,11 @@
   "back": "#f7f9fe",
   "type": "solid",
   "src": "back photo measured (nov07 box inside one back, assets/table-view/back-photos/middle-main-mahjong-charleston.jpg; checked by eye as back | wall swatch)"
+ },
+ "charleston-mahjong-club-cabana-club-edition": {
+  "back": "#91cad6",
+  "type": "pattern",
+  "src": "back photo measured (nov07 box inside one back, assets/tiles/v119/charleston-mahjong-club-cabana-club-back.png; checked by eye as back | wall swatch)",
+  "patch": "assets/table-view/backs/charleston-mahjong-club-cabana-club-edition.webp"
  }
 }

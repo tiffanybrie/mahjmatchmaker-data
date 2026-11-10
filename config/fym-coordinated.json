@@ -88,7 +88,8 @@
   "bam-bird-boutique-deco": "Bam Bird: Deco Dragon mats made for the Deco tiles (Tiffany Oct 25 20:24)",
   "bam-bird-boutique-deco-mulberry": "Bam Bird: Deco Dragon mats made for the Deco tiles (Tiffany Oct 25 20:24)",
   "bam-bird-boutique-deco-indigo": "Bam Bird: Deco Dragon mats made for the Deco tiles (Tiffany Oct 25 20:24)",
-  "juniper": "OMM: Juniper tiles + Lotus Cove mat are sold together in the Ultimate Starter Kit (Tiffany Nov 3 2:08pm). Tiffany Nov 6 1:10am: Lotus Cove is NOT Juniper's top match: keep it top 3 in FYM, but not #1 (Garden Glow first). General rule: a pair mat leads only when it really is the top match; ask her when unsure; on social avoid leading with the pair."
+  "juniper": "OMM: Juniper tiles + Lotus Cove mat are sold together in the Ultimate Starter Kit (Tiffany Nov 3 2:08pm). Tiffany Nov 6 1:10am: Lotus Cove is NOT Juniper's top match: keep it top 3 in FYM, but not #1 (Garden Glow first). General rule: a pair mat leads only when it really is the top match; ask her when unsure; on social avoid leading with the pair.",
+  "charleston-mahjong-club-cabana-club-edition": "CMC: The Cabana Club mat, made to complement the Cabana Club tiles (brand copy, Nov 10)"
  },
  "_skipped": {
   "bespoke-mahjong-the-chalet-*": "Bespoke says The Chalet Mat coordinates with the Chalet tiles, but the mat is tagged Holiday and the Chalet tiles are not: holiday rule wins until Tiffany says (could go on works_for_holiday/also_year_round)",
@@ -440,5 +441,8 @@
    "why": "Tiffany Nov 6 1:10am + Juniper round-3 notes: Lotus Cove (OMM's pair) is not Juniper's top match. Deck order Palm Royale (Mahj Tile Haus, her #1: pink centre = max contrast), Garden Glow Emerald Green, then Lotus Cove, then the rest."
   }
  },
- "_top3_about": "Tiffany Nov 6: a coordinated/pair mat is never automatically #1; it leads only when it truly is the top match. A set listed in _top3 keeps its coordinated mats inside the top 3 of s.cr and s.rank, after its 'lead' mats (in that order). Applied by builder/fym_fix_oct25/v92_coordinated.py; gate [57] checks top 3 + lead order for these sets, #1 for the rest."
+ "_top3_about": "Tiffany Nov 6: a coordinated/pair mat is never automatically #1; it leads only when it truly is the top match. A set listed in _top3 keeps its coordinated mats inside the top 3 of s.cr and s.rank, after its 'lead' mats (in that order). Applied by builder/fym_fix_oct25/v92_coordinated.py; gate [57] checks top 3 + lead order for these sets, #1 for the rest.",
+ "charleston-mahjong-club-cabana-club-edition": [
+  "www.charlestonmahjongclub.com/cabana-club-neoprene-mat"
+ ]
 }

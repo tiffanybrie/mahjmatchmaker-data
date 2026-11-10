@@ -1,0 +1,27 @@
+{
+ "_about": "Nov 10 2026 (Tiffany 12:24pm: start the Cabana Club album now; Album Playbook step 1 = tile set fully in Find Your Mat-ch before she reviews). STAGED for the next small FYM release (CLAUDE.md 0b: ships as its own small release; gate + independent QA + all three places). Same schema as config/fym-adds-nov05.json (builder/fym_fix_nov05/adds115.py pattern). Catalog set: m=[] until her album picks. The coordinated mat (Cabana Club, www.charlestonmahjongclub.com/cabana-club-neoprene-mat) is already in FYM v118 and on ShopMy pin 95958998 (config/link-route-fixes.json).",
+ "made": "2026-11-10",
+ "mats": [],
+ "tiles": [
+  {
+   "key": "www.charlestonmahjongclub.com/the-hunt-club-edition™-copy",
+   "slug": "charleston-mahjong-club-cabana-club-edition",
+   "name": "The Cabana Club Edition",
+   "bn": "Charleston Mahjong Club",
+   "img": "assets/tiles/v119/charleston-mahjong-club-cabana-club-edition.jpg",
+   "tc": "#0c92a7",
+   "group": "Blue",
+   "oos": 0,
+   "u": "SHOPMY_PIN_PENDING",
+   "u_fallback": "https://www.charlestonmahjongclub.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fthe-hunt-club-edition%25E2%2584%25A2-copy",
+   "u0": "https://www.charlestonmahjongclub.com/products/the-hunt-club-edition%E2%84%A2-copy",
+   "dc": "https://mahjmatchmaker.com/charleston-mahjong-club-discount-code",
+   "pa": true,
+   "price": 425,
+   "coordinated_mat": "www.charlestonmahjongclub.com/cabana-club-neoprene-mat",
+   "back": {"hex": "#91cad6", "kind": "pattern", "patch": "assets/table-view/backs/charleston-mahjong-club-cabana-club-edition.webp"},
+   "colors": {"backs": ["#57aabd", "#b0dbe3"], "face_layer": "#f6f4b3", "faces": ["#0c92a7", "#85c412", "#b83161", "#f9cc6f"]},
+   "photo_note": "CMC split style (approved Oct 26 for Apres Ski: real faces left | real back tiles at angles right): faces = listing image 3 (flat layout, IMG_3657), backs = the real back from listing image 9 (IMG_3645), deskewed, never recoloured. Same file = album photo assets/tiles/album/cabana-club.jpg. Awaiting Tiffany's yes (Playbook step 0)."
+  }
+ ]
+}
