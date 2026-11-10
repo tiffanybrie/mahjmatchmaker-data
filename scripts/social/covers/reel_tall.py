@@ -1,8 +1,10 @@
-"""Tall (9:16) reel-cover versions of the uniform-v3 album covers.
+"""RETIRED Nov 10 (Tiffany 12:46pm): blur bands look like bars. Use TALL=1 scripts/covers/album_cover_omm.py.
+Tall (9:16) reel-cover versions of the uniform-v3 album covers.
 The grid tile (3:4 middle) is cut only from the real cover, same size as the photo-post tile;
 the band above/below (only seen when the full reel cover opens) is a soft blur of the cover.
 Usage: python3 scripts/social/covers/reel_tall.py [slug ...]   (no args = all)"""
 import sys, os, glob
+sys.exit("reel_tall.py is retired: use TALL=1 FRAME=frame3.png python3 scripts/covers/album_cover_omm.py <album cover args>")
 from PIL import Image, ImageFilter, ImageEnhance
 SRC='assets/covers/albums/uniform-v3'; OUT='assets/covers/albums/reel-tall'
 slugs=sys.argv[1:] or [os.path.splitext(os.path.basename(p))[0] for p in glob.glob(SRC+'/*.jpg')]
