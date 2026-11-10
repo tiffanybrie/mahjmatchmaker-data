@@ -77,6 +77,8 @@ Never send any email to her list without her one-time template yes. Never send t
 - Automations: not built yet. The Oct 15 "Reply to form submission" draft is the untouched Squarespace sample ("Thank you for getting in touch", trigger Any form). The launch-day task turns it into the album-request thank-you (trigger: Request an Album form only). It also builds "Welcome new subscribers" from `welcome.html`. The Oct 8 "Tag Contacts who fill out a form" draft is not ours.
 - Notify-me form: not live (see §1). Until it is, the announcement bar's "Get notified" link (to /find-your-match) lands on a page with no signup.
 
+- Nov 10 12:50pm ET: Juniper album email DRAFT 6af357e97ff74f68f862d0ee (duplicated from the launch draft: cover image section, heading+text, button, tail text; legal address set). Album requests live in Contacts > Filter > Form Submitter details > Form submitted = Album Requests; each request's set is in the contact's Forms tab. Typing into the Legal Address fields opens the 1Password inline menu and freezes Claude in Chrome: set those inputs with JS (native value setter + input event) instead of clicking.
+
 ## 6. How to build in the Squarespace email editor (Claude in Chrome)
 
 - Use your own tab and close it when done.
