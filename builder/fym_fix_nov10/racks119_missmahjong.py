@@ -3,7 +3,8 @@ Pistachio, Peony, Chartreuse). Reads config/fym-rack-adds-nov10-missmahjong.json
 Same image path as builder/fym_fix_nov08/racks119.py: full -> <build>/r119/<name>.webp (hd index 'file:'), inline 360px
 thumbnail IMG['rk119<name>']. The photos are the brand's own featured product photos (c:false, shown on their white
 background); every one was looked at on white + navy Nov 10 (rule 6b) and approved in builder/fym_flags/rack_image_review.json.
-Run AFTER racks119.py, then `python3 builder/fym_rack_images.py <build>` must print 'all rack images reviewed ok'.
+Independent of racks119.py (touches only these 5 keys; also used alone on the live 1.18 build for the racks-only
+release Version 1.19, Nov 10). Then `python3 builder/fym_rack_images.py <build>` must print 'all rack images reviewed ok'.
 Idempotent. Usage: python3 builder/fym_fix_nov10/racks119_missmahjong.py <build_dir>"""
 import sys, os, io, json, base64
 from PIL import Image
@@ -24,10 +25,19 @@ def put(src):
     IMG[key] = 'data:image/webp;base64,' + base64.b64encode(b.getvalue()).decode()
     return key, f'file:r119/{base}.webp'
 
+TV = D.get('tv') or {}; PCT = json.load(open(REPO + 'config/fym-code-pct.json'))['pct']
+SIB = 'missmahjong.com/peach-sorbet-scalloped-acrylic-racks'  # same Miss Mahjong scalloped acrylic line (Table view finish/type)
 for x in S['adds']:
     k = x['key']; o = {f: v for f, v in x.items() if f not in DROP}
     o['im'], hd['r'][k] = put(x['img'])
     log.append(('update' if k in R else 'add', o['n'])); R[k] = o
+    # Nov 10 (racks-only release 1.19 on top of live 1.18): Table view finish/type + price, so the price filter keeps them
+    # (no D.tv.rk / ro: the brand photos are not clean single-rack cut-outs, like the other c:false racks)
+    for f in ('fin', 'rt'):
+        if f in TV and SIB in TV[f]: TV[f][k] = TV[f][SIB]
+    if 'price' in TV and x.get('price'):
+        pc = PCT.get(o['bn']) if o.get('pa') else None; p = float(x['price'])
+        TV['price'][k] = [p, round(p * (1 - pc / 100), 2) if pc else p, int(bool(pc))]
 
 json.dump(hd, open(B + '/hd/index.json', 'w'), separators=(',', ':'))
 h = h[:i] + json.dumps(D, ensure_ascii=False, separators=(',', ':')) + h[end:]
@@ -35,7 +45,10 @@ mark = '<!--racks119mm-->'
 if mark in h:  # idempotent: replace the earlier inline block
     a0 = h.index(mark); a1 = h.index('</script>', a0) + 9; h = h[:a0] + h[a1:]
 inl = mark + '<script>window.IMG=Object.assign(window.IMG||{},' + json.dumps(IMG, separators=(',', ':')) + ');</script>'
-a = '<script src="b24v1.js"></script>'; assert h.count(a) == 1; h = h.replace(a, a + inl, 1)
+a = '<script src="b24v1.js"></script>'
+if a not in h:  # website copy (no b24 bundle): right after the last thumbs*.js tag
+    import re; a = [m.group(0) for m in re.finditer(r'<script src="[^"]*/thumbs\d*\.js"></script>', h)][-1]
+assert h.count(a) == 1; h = h.replace(a, a + inl, 1)
 open(P, 'w').write(h)
 for l in log: print(*l)
 print('racks119_missmahjong:', len(log), 'changes')
