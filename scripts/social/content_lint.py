@@ -61,7 +61,10 @@ SHORT_BRAND = re.compile(r"\bBam Bird\b(?! Boutique)|\bMy Fair\b(?! Mahjong)|\bM
 NO_FEATURE = re.compile(r"yellow mountain|\bYMI\b|kaleidoscope|paige spearin", re.I)
 TDT = re.compile(r"\btigre\b|tart[áÁ]n|\bTdT\b|@tigredetartan", re.I)
 MAISON_NEW = re.compile(r"maison mahj[^.\n]{0,80}\bnew\b[^.\n]{0,20}\bcode|\bnew\b[^.\n]{0,20}\bcode[^.\n]{0,80}maison mahj", re.I)
-NEW_KINDS = {'mahjmatch-missing', 'hashtag', 'banned-phrase', 'short-brand', 'no-feature', 'tdt-policy', 'maison-mahj'}
+# brand-tag (Tiffany Nov 10 12:44pm): every brand NAMED in an Instagram caption has its @handle in the caption (tags at the bottom).
+_H = json.load(open(os.path.join(R, 'config', 'social', 'ig-handles.json')))
+HANDLES = {b: h for b, h in _H.items() if isinstance(h, str) and h and not b.startswith('_')}
+NEW_KINDS = {'brand-tag', 'mahjmatch-missing', 'hashtag', 'banned-phrase', 'short-brand', 'no-feature', 'tdt-policy', 'maison-mahj'}
 BASELINE_PATH = os.path.join(R, 'config', 'social', 'content_lint_baseline.json')
 LIMIT = {'instagram': 350, 'facebook': 350, 'pinterest': 500, 'file': 350}
 # Already posted: kept for the record, linted as INFO only. Add a path here only once the post is live.
@@ -130,6 +133,10 @@ def lint(text, platform='file', codes_list=False):
                 out.append(('short-brand', f'"{m.group(0)}" -> full brand name'))
             for m in NO_FEATURE.finditer(cap):
                 out.append(('no-feature', f'"{m.group(0)}" (never featured on social)'))
+        if platform == 'instagram' or (platform == 'file' and '@' in cap):
+            for b, h in HANDLES.items():
+                if re.search(r'(?<![\w@])' + re.escape(b) + r'(?!\w)', cap, re.I) and ('@' + h).lower() not in cap.lower() and not TDT.search(b):
+                    out.append(('brand-tag', f'"{b}" named but @{h} not tagged (tags go at the bottom)'))
     return out
 
 
