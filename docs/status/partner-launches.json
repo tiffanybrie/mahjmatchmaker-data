@@ -1,154 +1,95 @@
 {
- "run_at": "2026-11-10T14:34:14+00:00",
+ "run_at": "2026-11-10T18:31:53+00:00",
  "first_run": false,
  "days": 7,
  "events": [
   {
    "brand": "Bespoke Mahjong",
    "domain": "www.bespokemahjong.com",
-   "handle": "mat-bag-plastic-drawstring-sheath",
-   "title": "Bespoke Clear Mat Sleeves - Set of 5",
-   "kind": "mat",
-   "url": "https://www.bespokemahjong.com/products/mat-bag-plastic-drawstring-sheath",
-   "img": "https://cdn.shopify.com/s/files/1/0837/2142/1083/files/Photoroom_20251015_145626_d86771b6-b2c3-442b-9352-f7f32940381c.png?v=1776375646",
+   "handle": "bespoke-x-grateful-dead-travel-tiles-kit-cosmic-white-tiles",
+   "title": "Grateful Dead x Bespoke Mahjong Travel Tiles Kit - COSMIC WHITE PEARL",
+   "kind": "travel tiles",
+   "url": "https://www.bespokemahjong.com/products/bespoke-x-grateful-dead-travel-tiles-kit-cosmic-white-tiles",
+   "img": "https://cdn.shopify.com/s/files/1/0837/2142/1083/files/IMG-0788.png?v=1790267363",
    "album": false,
    "ev": "price",
-   "was": 40.0,
-   "now": 30.0
+   "was": 480.0,
+   "now": 500.0
   },
   {
-   "brand": "Britt Mills",
-   "domain": "brittmillsdesign.com",
-   "handle": "bella-neoprene-mahjong-mat",
-   "title": "Bella Neoprene Mahjong Mat",
-   "kind": "mat",
-   "url": "https://brittmillsdesign.com/products/bella-neoprene-mahjong-mat",
-   "img": "https://cdn.shopify.com/s/files/1/1184/0004/files/BellaListing.jpg?v=1786741999",
-   "album": false,
-   "ev": "soldout"
-  },
-  {
-   "brand": "Mahjong Studios",
-   "domain": "mahjongstudios.com",
-   "handle": "christmas-kiss-american-mahjong-tile-set-160-tiles-red-bundle",
-   "title": "Christmas Mahjong Set – Christmas Kiss | Mahjong Studios",
-   "kind": "tiles",
-   "url": "https://mahjongstudios.com/products/christmas-kiss-american-mahjong-tile-set-160-tiles-red-bundle",
-   "img": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/Website_photo_31.png?v=1790882684",
-   "album": false,
-   "ev": "new variant",
-   "variants": [
-    "Christmas Kiss Mat w/Tiles / No Racks",
-    "Christmas Kiss Mat w/Tiles / 18.5\" Red Racks",
-    "Christmas Kiss Mat w/Tiles / 18.5\" Solid Red Racks",
-    "Christmas Kiss Mat w/Tiles / 18.5\" Solid Green Racks",
-    "Christmas Kiss Mat w/Tiles / 18.5\" White Racks",
-    "Christmas Kiss Mat w/Tiles / 20\" Red Scalloped Racks",
-    "Christmas Kiss Mat w/Tiles / 20\" Solid Red Racks",
-    "Christmas Kiss Tiles Only / No Racks"
-   ],
-   "reshare": "30 sec: open the brand's IG post about Christmas Mahjong Set – Christmas Kiss | Mahjong Studios → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Christmas Mahjong Set – Christmas Kiss | Mahjong Studios is new.)"
-  },
-  {
-   "brand": "Mahjong Studios",
-   "domain": "mahjongstudios.com",
-   "handle": "christmas-mahjong-rack-and-pusher-set-red-green",
-   "title": "Christmas Mahjong Rack and Pusher Set Red & Green",
+   "brand": "Miss Mahjong",
+   "domain": "missmahjong.com",
+   "handle": "chartreuse-scalloped-acrylic-racks",
+   "title": "Chartreuse Scalloped Acrylic Racks",
    "kind": "rack",
-   "url": "https://mahjongstudios.com/products/christmas-mahjong-rack-and-pusher-set-red-green",
-   "img": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/Untitled_design_31_f59652d2-8e74-4e17-a7cf-c395fef81e73.png?v=1761773870",
-   "album": false,
-   "ev": "soldout"
-  },
-  {
-   "brand": "Mahjong Studios",
-   "domain": "mahjongstudios.com",
-   "handle": "mahjong-studios-tiles-only",
-   "title": "Mahjong Studios - Tile Sets",
-   "kind": "tiles",
-   "url": "https://mahjongstudios.com/products/mahjong-studios-tiles-only",
-   "img": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/1_0a9266ae-597f-4b85-8805-e4e1fe5d1894.png?v=1788635848",
-   "album": false,
-   "ev": "restock",
-   "variants": [
-    "Peony Garden"
-   ],
-   "reshare": "30 sec: open the brand's IG post about Mahjong Studios - Tile Sets → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Mahjong Studios - Tile Sets is back in stock.)"
-  },
-  {
-   "brand": "Mahjong Studios",
-   "domain": "mahjongstudios.com",
-   "handle": "20-clear-acrylic-scalloped-mahjong-rack-pushers-premium-american-mahjong-rack-set",
-   "title": "20\" Clear Acrylic Scalloped Mahjong Rack & Pushers | Premium American Mahjong Rack Set",
-   "kind": "rack",
-   "url": "https://mahjongstudios.com/products/20-clear-acrylic-scalloped-mahjong-rack-pushers-premium-american-mahjong-rack-set",
-   "img": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/20in-clear-scalloped-rack-set-1_26960bcc-d282-43d5-b7db-f85feda9fa70.png?v=1794136165",
-   "album": false,
-   "ev": "restock",
-   "variants": [
-    "Clear"
-   ],
-   "reshare": "30 sec: open the brand's IG post about 20\" Clear Acrylic Scalloped Mahjong Rack & Pushers | Premium American Mahjong Rack Set → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (20\" Clear Acrylic Scalloped Mahjong Rack & Pushers | Premium American Mahjong Rack Set is back in stock.)"
-  },
-  {
-   "brand": "Mahjong Studios",
-   "domain": "mahjongstudios.com",
-   "handle": "mahjong-rack-and-pusher-set-of-4-solid-colors-pink-yellow-green-purple",
-   "title": "Mahjong Rack and Pusher Set of 4 - Solid Colors Pink Yellow Green Purple",
-   "kind": "rack",
-   "url": "https://mahjongstudios.com/products/mahjong-rack-and-pusher-set-of-4-solid-colors-pink-yellow-green-purple",
-   "img": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/35_792963b1-1990-4bca-985f-00447d885d85.png?v=1780454084",
-   "album": false,
-   "ev": "restock",
-   "variants": [
-    "Solid Green"
-   ],
-   "reshare": "30 sec: open the brand's IG post about Mahjong Rack and Pusher Set of 4 - Solid Colors Pink Yellow Green Purple → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Mahjong Rack and Pusher Set of 4 - Solid Colors Pink Yellow Green Purple is back in stock.)"
-  },
-  {
-   "brand": "Mahjong Studios",
-   "domain": "mahjongstudios.com",
-   "handle": "mahjong-studios-peony-garden-american-mahjong-tile-set-160-tiles",
-   "title": "Mahjong Studios – Peony Garden American Mahjong Tile Set (160 Tiles)",
-   "kind": "tiles",
-   "url": "https://mahjongstudios.com/products/mahjong-studios-peony-garden-american-mahjong-tile-set-160-tiles",
-   "img": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/Website_photo_35.png?v=1790883874",
+   "url": "https://missmahjong.com/products/chartreuse-scalloped-acrylic-racks",
+   "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/ChartreuseRacks.png?v=1793726569",
    "album": false,
    "ev": "restock",
    "variants": [
     "Default Title"
    ],
-   "reshare": "30 sec: open the brand's IG post about Mahjong Studios – Peony Garden American Mahjong Tile Set (160 Tiles) → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Mahjong Studios – Peony Garden American Mahjong Tile Set (160 Tiles) is back in stock.)"
+   "reshare": "30 sec: open the brand's IG post about Chartreuse Scalloped Acrylic Racks → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Chartreuse Scalloped Acrylic Racks is back in stock.)"
   },
   {
-   "brand": "My Fair Mahjong",
-   "domain": "myfairmahjong.com",
-   "handle": "mahjong-pushers",
-   "title": "MAHJONG RACK PUSHER ADD-ON - MAGNETIC  |  Premium Acrylic  |  Patent Pending",
+   "brand": "Miss Mahjong",
+   "domain": "missmahjong.com",
+   "handle": "pistachio-scalloped-acrylic-racks",
+   "title": "Pistachio Scalloped Acrylic Racks",
    "kind": "rack",
-   "url": "https://myfairmahjong.com/products/mahjong-pushers",
-   "img": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/Mahjong_Acrylic_Pusher_Sets_Magneticagnetic_Pushers1.png?v=1782246340",
+   "url": "https://missmahjong.com/products/pistachio-scalloped-acrylic-racks",
+   "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Pistachio_Racks.png?v=1793726861",
    "album": false,
    "ev": "restock",
    "variants": [
-    "Confetti-Wavy-Purple"
+    "Default Title"
    ],
-   "reshare": "30 sec: open the brand's IG post about MAHJONG RACK PUSHER ADD-ON - MAGNETIC  |  Premium Acrylic  |  Patent Pending → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (MAHJONG RACK PUSHER ADD-ON - MAGNETIC  |  Premium Acrylic  |  Patent Pending is back in stock.)"
+   "reshare": "30 sec: open the brand's IG post about Pistachio Scalloped Acrylic Racks → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Pistachio Scalloped Acrylic Racks is back in stock.)"
   },
   {
-   "brand": "Virora Mahjong",
-   "domain": "www.viroramahjong.com",
-   "handle": "wooden-rack-pusher-set",
-   "title": "Magnetic Wooden Rack & Pusher Set",
+   "brand": "Miss Mahjong",
+   "domain": "missmahjong.com",
+   "handle": "butter-yellow-scalloped-acrylic-racks",
+   "title": "Butter Yellow Scalloped Acrylic Racks",
    "kind": "rack",
-   "url": "https://www.viroramahjong.com/products/wooden-rack-pusher-set",
-   "img": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/2_4_40e67f01-2755-4f4a-92b5-c4ba941fa221.jpg?v=1790649011",
+   "url": "https://missmahjong.com/products/butter-yellow-scalloped-acrylic-racks",
+   "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Butter_Yellow_Racks.png?v=1793726861",
    "album": false,
    "ev": "restock",
    "variants": [
-    "Ivory White"
+    "Default Title"
    ],
-   "reshare": "30 sec: open the brand's IG post about Magnetic Wooden Rack & Pusher Set → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Magnetic Wooden Rack & Pusher Set is back in stock.)"
+   "reshare": "30 sec: open the brand's IG post about Butter Yellow Scalloped Acrylic Racks → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Butter Yellow Scalloped Acrylic Racks is back in stock.)"
+  },
+  {
+   "brand": "Miss Mahjong",
+   "domain": "missmahjong.com",
+   "handle": "peony-scalloped-acrylic-racks",
+   "title": "Peony Scalloped Acrylic Racks",
+   "kind": "rack",
+   "url": "https://missmahjong.com/products/peony-scalloped-acrylic-racks",
+   "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Peony_Racks.png?v=1793726861",
+   "album": false,
+   "ev": "restock",
+   "variants": [
+    "Default Title"
+   ],
+   "reshare": "30 sec: open the brand's IG post about Peony Scalloped Acrylic Racks → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Peony Scalloped Acrylic Racks is back in stock.)"
+  },
+  {
+   "brand": "Miss Mahjong",
+   "domain": "missmahjong.com",
+   "handle": "bombshell-pink-scalloped-acrylic-racks",
+   "title": "Bombshell Pink Scalloped Acrylic Racks",
+   "kind": "rack",
+   "url": "https://missmahjong.com/products/bombshell-pink-scalloped-acrylic-racks",
+   "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Bombshell_Pink_Racks.png?v=1793726861",
+   "album": false,
+   "ev": "restock",
+   "variants": [
+    "Default Title"
+   ],
+   "reshare": "30 sec: open the brand's IG post about Bombshell Pink Scalloped Acrylic Racks → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Bombshell Pink Scalloped Acrylic Racks is back in stock.)"
   },
   {
    "brand": "Virora Mahjong",
@@ -159,66 +100,7 @@
    "url": "https://www.viroramahjong.com/products/ruby-christmas",
    "img": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20260824173647_7518_242.jpg?v=1787565251",
    "album": false,
-   "ev": "restock",
-   "variants": [
-    "Ruby Christmas - Ruby Red 4 Layers"
-   ],
-   "reshare": "30 sec: open the brand's IG post about 【Pre-Order】Christmas Collection I · Tinselle — Ruby Red → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (【Pre-Order】Christmas Collection I · Tinselle — Ruby Red is back in stock.)"
-  },
-  {
-   "brand": "Sweet Jojo Mahjong",
-   "domain": "sweetjojomahjong.com",
-   "handle": "mint-green-royal-palm-collection-american-mahjong-tile-set-160pc",
-   "title": "Mint Green Royal Palm Collection American Mahjong Tile Set (160pc)",
-   "kind": "tiles",
-   "url": "https://sweetjojomahjong.com/products/mint-green-royal-palm-collection-american-mahjong-tile-set-160pc",
-   "img": "https://cdn.shopify.com/s/files/1/0703/0685/7037/files/mint-green-royal-palm-collection-american-mahjong-tile-set-160pc-1-26in-layered-acrylic-with-paisley-travel-bag-luxury-pink-17.jpg?v=1778104658",
-   "album": false,
-   "ev": "price",
-   "was": 249.99,
-   "now": 209.99
-  },
-  {
-   "brand": "Splash of Color",
-   "domain": "splashofcolorco.com",
-   "handle": "saturday-night-mahj-fever-mahjong-mat-sleek-surface-1",
-   "title": "Saturday Night Mahj Fever Mahjong Mat Sleek Surface",
-   "kind": "mat",
-   "url": "https://splashofcolorco.com/products/saturday-night-mahj-fever-mahjong-mat-sleek-surface-1",
-   "img": "https://cdn.shopify.com/s/files/1/0766/9478/2170/files/Retro_Disco_Game_Table_Glow.png?v=1794095132",
-   "album": false,
-   "ev": "new",
-   "avail": true,
-   "pre": false,
-   "reshare": "Log only (this brand's mats are out of FYM)."
-  },
-  {
-   "brand": "Splash of Color",
-   "domain": "splashofcolorco.com",
-   "handle": "saturday-night-mahj-fever-4layer-engraved-american-mahjong-tiles",
-   "title": "Saturday Night Mahj Fever 4Layer Engraved American Mahjong Tiles",
-   "kind": "tiles",
-   "url": "https://splashofcolorco.com/products/saturday-night-mahj-fever-4layer-engraved-american-mahjong-tiles",
-   "img": "https://cdn.shopify.com/s/files/1/0766/9478/2170/files/Retro_Psychedelic_Floral_Tile_Close-Up.png?v=1794094964",
-   "album": false,
-   "ev": "new",
-   "avail": true,
-   "pre": false,
-   "reshare": "30 sec: open the brand's IG post about Saturday Night Mahj Fever 4Layer Engraved American Mahjong Tiles → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Saturday Night Mahj Fever 4Layer Engraved American Mahjong Tiles is new.)"
-  },
-  {
-   "brand": "Splash of Color",
-   "domain": "splashofcolorco.com",
-   "handle": "purple-passion-and-navy-blue-square-mahjong-tablecloth-dining-cover",
-   "title": "Purple Passion And Navy Blue Square Mahjong Tablecloth Dining Cover",
-   "kind": "mat",
-   "url": "https://splashofcolorco.com/products/purple-passion-and-navy-blue-square-mahjong-tablecloth-dining-cover",
-   "img": "https://cdn.shopify.com/s/files/1/0766/9478/2170/files/90964772e9eb33a6e052160337e21534.jpg?v=1794276907",
-   "album": false,
-   "ev": "new",
-   "avail": true,
-   "pre": false,
-   "reshare": "Log only (this brand's mats are out of FYM)."
+   "ev": "soldout"
   }
  ],
  "recent": [
@@ -293,7 +175,7 @@
    "album": false,
    "ev": "recent",
    "when": "2026-11-09",
-   "avail": false,
+   "avail": true,
    "pre": true,
    "reshare": "30 sec: open the brand's IG post about Chartreuse Scalloped Acrylic Racks → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Chartreuse Scalloped Acrylic Racks is new.)"
   },
@@ -308,7 +190,7 @@
    "album": false,
    "ev": "recent",
    "when": "2026-11-09",
-   "avail": false,
+   "avail": true,
    "pre": true,
    "reshare": "30 sec: open the brand's IG post about Pistachio Scalloped Acrylic Racks → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Pistachio Scalloped Acrylic Racks is new.)"
   },
@@ -323,7 +205,7 @@
    "album": false,
    "ev": "recent",
    "when": "2026-11-09",
-   "avail": false,
+   "avail": true,
    "pre": true,
    "reshare": "30 sec: open the brand's IG post about Butter Yellow Scalloped Acrylic Racks → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Butter Yellow Scalloped Acrylic Racks is new.)"
   },
@@ -338,7 +220,7 @@
    "album": false,
    "ev": "recent",
    "when": "2026-11-09",
-   "avail": false,
+   "avail": true,
    "pre": true,
    "reshare": "30 sec: open the brand's IG post about Peony Scalloped Acrylic Racks → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Peony Scalloped Acrylic Racks is new.)"
   },
@@ -353,7 +235,7 @@
    "album": false,
    "ev": "recent",
    "when": "2026-11-09",
-   "avail": false,
+   "avail": true,
    "pre": true,
    "reshare": "30 sec: open the brand's IG post about Bombshell Pink Scalloped Acrylic Racks → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Bombshell Pink Scalloped Acrylic Racks is new.)"
   },
@@ -3598,186 +3480,6 @@
    "reshare": "Log only (this brand's mats are out of FYM)."
   },
   {
-   "brand": "Bespoke Mahjong",
-   "domain": "www.bespokemahjong.com",
-   "handle": "holiday-mahjong-its-a-vibe-glitter-glow-tiles",
-   "title": "COMING SOON - Mahjong It's a Vibe - GLITTER GLOW RED",
-   "kind": "tiles",
-   "url": "https://www.bespokemahjong.com/products/holiday-mahjong-its-a-vibe-glitter-glow-tiles",
-   "img": "https://cdn.shopify.com/s/files/1/0837/2142/1083/files/Untitled_1500x1500px_Logo_32.png?v=1793802225",
-   "album": false,
-   "ev": "recent",
-   "when": "2026-11-03",
-   "avail": false,
-   "pre": true,
-   "reshare": "30 sec: open the brand's IG post about COMING SOON - Mahjong It's a Vibe - GLITTER GLOW RED → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (COMING SOON - Mahjong It's a Vibe - GLITTER GLOW RED is new.)"
-  },
-  {
-   "brand": "Bespoke Mahjong",
-   "domain": "www.bespokemahjong.com",
-   "handle": "coming-this-november-mahjong-its-a-vibe-glitter-glow-green",
-   "title": "COMING SOON - Mahjong It's a Vibe - GLITTER GLOW GREEN",
-   "kind": "tiles",
-   "url": "https://www.bespokemahjong.com/products/coming-this-november-mahjong-its-a-vibe-glitter-glow-green",
-   "img": "https://cdn.shopify.com/s/files/1/0837/2142/1083/files/Untitled_1500x1500px_Logo_33.png?v=1793802280",
-   "album": false,
-   "ev": "recent",
-   "when": "2026-11-03",
-   "avail": false,
-   "pre": true,
-   "reshare": "30 sec: open the brand's IG post about COMING SOON - Mahjong It's a Vibe - GLITTER GLOW GREEN → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (COMING SOON - Mahjong It's a Vibe - GLITTER GLOW GREEN is new.)"
-  },
-  {
-   "brand": "Miss Mahjong",
-   "domain": "missmahjong.com",
-   "handle": "garden-party-travel-mat-21x21",
-   "title": "Garden Party Travel Mat 21\"x21\"",
-   "kind": "travel mat",
-   "url": "https://missmahjong.com/products/garden-party-travel-mat-21x21",
-   "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/1_6e15083b-6472-4ba5-bbb6-73ec47b880d2.png?v=1780273004",
-   "album": false,
-   "ev": "recent",
-   "when": "2026-11-03",
-   "avail": true,
-   "pre": false,
-   "reshare": "30 sec: open the brand's IG post about Garden Party Travel Mat 21\"x21\" → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Garden Party Travel Mat 21\"x21\" is new.)"
-  },
-  {
-   "brand": "Miss Mahjong",
-   "domain": "missmahjong.com",
-   "handle": "cherry-blossom-travel-mat-21x21",
-   "title": "Cherry Blossom Travel Mat 21\"x21\"",
-   "kind": "travel mat",
-   "url": "https://missmahjong.com/products/cherry-blossom-travel-mat-21x21",
-   "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/4_fc1c8443-db7e-4d48-9630-ceae1ad03820.png?v=1793721595",
-   "album": false,
-   "ev": "recent",
-   "when": "2026-11-03",
-   "avail": true,
-   "pre": false,
-   "reshare": "30 sec: open the brand's IG post about Cherry Blossom Travel Mat 21\"x21\" → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Cherry Blossom Travel Mat 21\"x21\" is new.)"
-  },
-  {
-   "brand": "Let's Be Besties",
-   "domain": "letsbebesties.com",
-   "handle": "tiger-stripes-ohbon-studios-artist-mahjong-mat",
-   "title": "Tiger Stripes OHBoN Studios Artist Mahjong Mat",
-   "kind": "mat",
-   "url": "https://letsbebesties.com/products/tiger-stripes-ohbon-studios-artist-mahjong-mat",
-   "img": "https://cdn.shopify.com/s/files/1/0717/6178/9088/files/TigerStripes33smallfile.png?v=1793724243",
-   "album": false,
-   "ev": "recent",
-   "when": "2026-11-03",
-   "avail": true,
-   "pre": false,
-   "reshare": "30 sec: open the brand's IG post about Tiger Stripes OHBoN Studios Artist Mahjong Mat → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Tiger Stripes OHBoN Studios Artist Mahjong Mat is new.)"
-  },
-  {
-   "brand": "Let's Be Besties",
-   "domain": "letsbebesties.com",
-   "handle": "spinning-dreidel-ohbon-studios-artist-mahjong-mat",
-   "title": "Spinning Dreidel OHBoN Studios Artist Mahjong Mat",
-   "kind": "mat",
-   "url": "https://letsbebesties.com/products/spinning-dreidel-ohbon-studios-artist-mahjong-mat",
-   "img": "https://cdn.shopify.com/s/files/1/0717/6178/9088/files/SpinningDreidel33smallfile.png?v=1793722425",
-   "album": false,
-   "ev": "recent",
-   "when": "2026-11-03",
-   "avail": true,
-   "pre": false,
-   "reshare": "30 sec: open the brand's IG post about Spinning Dreidel OHBoN Studios Artist Mahjong Mat → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Spinning Dreidel OHBoN Studios Artist Mahjong Mat is new.)"
-  },
-  {
-   "brand": "Let's Be Besties",
-   "domain": "letsbebesties.com",
-   "handle": "champange-bubbles-mahjong-mat",
-   "title": "Champagne Bubbles Mahjong Mat",
-   "kind": "mat",
-   "url": "https://letsbebesties.com/products/champange-bubbles-mahjong-mat",
-   "img": "https://cdn.shopify.com/s/files/1/0717/6178/9088/files/ChampangeBubbles33smallfiles.png?v=1793721500",
-   "album": false,
-   "ev": "recent",
-   "when": "2026-11-03",
-   "avail": true,
-   "pre": false,
-   "reshare": "30 sec: open the brand's IG post about Champagne Bubbles Mahjong Mat → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Champagne Bubbles Mahjong Mat is new.)"
-  },
-  {
-   "brand": "Let's Be Besties",
-   "domain": "letsbebesties.com",
-   "handle": "mid-century-floral-mahjong-mat",
-   "title": "Mid Century Floral Mahjong Mat",
-   "kind": "mat",
-   "url": "https://letsbebesties.com/products/mid-century-floral-mahjong-mat",
-   "img": "https://cdn.shopify.com/s/files/1/0717/6178/9088/files/MidCenturyFloral33smallfile.png?v=1793721160",
-   "album": false,
-   "ev": "recent",
-   "when": "2026-11-03",
-   "avail": true,
-   "pre": false,
-   "reshare": "30 sec: open the brand's IG post about Mid Century Floral Mahjong Mat → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Mid Century Floral Mahjong Mat is new.)"
-  },
-  {
-   "brand": "Let's Be Besties",
-   "domain": "letsbebesties.com",
-   "handle": "pink-pizzazz-mahjong-mat",
-   "title": "Pink Pizzazz Mahjong Mat",
-   "kind": "mat",
-   "url": "https://letsbebesties.com/products/pink-pizzazz-mahjong-mat",
-   "img": "https://cdn.shopify.com/s/files/1/0717/6178/9088/files/PinkPizzazz33smallfile.png?v=1793720241",
-   "album": false,
-   "ev": "recent",
-   "when": "2026-11-03",
-   "avail": true,
-   "pre": false,
-   "reshare": "30 sec: open the brand's IG post about Pink Pizzazz Mahjong Mat → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Pink Pizzazz Mahjong Mat is new.)"
-  },
-  {
-   "brand": "Let's Be Besties",
-   "domain": "letsbebesties.com",
-   "handle": "gatsby-glow-mahjong-mat",
-   "title": "Gatsby Glow Mahjong Mat",
-   "kind": "mat",
-   "url": "https://letsbebesties.com/products/gatsby-glow-mahjong-mat",
-   "img": "https://cdn.shopify.com/s/files/1/0717/6178/9088/files/GatsbyGlow31smallfile.png?v=1793719891",
-   "album": false,
-   "ev": "recent",
-   "when": "2026-11-03",
-   "avail": true,
-   "pre": false,
-   "reshare": "30 sec: open the brand's IG post about Gatsby Glow Mahjong Mat → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Gatsby Glow Mahjong Mat is new.)"
-  },
-  {
-   "brand": "Let's Be Besties",
-   "domain": "letsbebesties.com",
-   "handle": "mad-for-plaid-mahjong-mat",
-   "title": "Mad for Plaid Mahjong Mat",
-   "kind": "mat",
-   "url": "https://letsbebesties.com/products/mad-for-plaid-mahjong-mat",
-   "img": "https://cdn.shopify.com/s/files/1/0717/6178/9088/files/MadforPlaid33smallfile.png?v=1793719003",
-   "album": false,
-   "ev": "recent",
-   "when": "2026-11-03",
-   "avail": true,
-   "pre": false,
-   "reshare": "30 sec: open the brand's IG post about Mad for Plaid Mahjong Mat → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Mad for Plaid Mahjong Mat is new.)"
-  },
-  {
-   "brand": "Let's Be Besties",
-   "domain": "letsbebesties.com",
-   "handle": "disco-dot-with-simple-middle-mahjong-mat",
-   "title": "Disco Dot with Simple Middle Mahjong Mat",
-   "kind": "mat",
-   "url": "https://letsbebesties.com/products/disco-dot-with-simple-middle-mahjong-mat",
-   "img": "https://cdn.shopify.com/s/files/1/0717/6178/9088/files/DiscoDotsSimpleMiddle31smallfile.png?v=1793719290",
-   "album": false,
-   "ev": "recent",
-   "when": "2026-11-03",
-   "avail": true,
-   "pre": false,
-   "reshare": "30 sec: open the brand's IG post about Disco Dot with Simple Middle Mahjong Mat → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Disco Dot with Simple Middle Mahjong Mat is new.)"
-  },
-  {
    "brand": "Splash of Color",
    "domain": "splashofcolorco.com",
    "handle": "palm-beach-harlequin-chinoiserie-engraved-american-mahjong-tiles-and-carry-tote",
@@ -3826,6 +3528,6 @@
   "www.fait-a-main.com": "ok 42 products",
   "soireeallday.co": "not checkable (not Shopify or blocked)",
   "sweetjojomahjong.com": "ok 82 products",
-  "splashofcolorco.com": "ok 2173 products"
+  "splashofcolorco.com": "ok 2175 products"
  }
 }

@@ -1,28 +1,22 @@
-# Partner launches & restocks (2026-11-10 14:34 UTC)
+# Partner launches & restocks (2026-11-10 18:31 UTC)
 
-## Since last run: 11 to act on
-- **NEW VARIANT** Mahjong Studios · Christmas Mahjong Set – Christmas Kiss | Mahjong Studios (tiles) · Christmas Kiss Mat w/Tiles / No Racks, Christmas Kiss Mat w/Tiles / 18.5" Red Racks, Christmas Kiss Mat w/Tiles / 18.5" Solid Red Racks, Christmas Kiss Mat w/Tiles / 18.5" Solid Green Racks, Christmas Kiss Mat w/Tiles / 18.5" White Racks, Christmas Kiss Mat w/Tiles / 20" Red Scalloped Racks, Christmas Kiss Mat w/Tiles / 20" Solid Red Racks, Christmas Kiss Tiles Only / No Racks · https://mahjongstudios.com/products/christmas-kiss-american-mahjong-tile-set-160-tiles-red-bundle
-- **RESTOCK** Mahjong Studios · Mahjong Studios - Tile Sets (tiles) · Peony Garden · https://mahjongstudios.com/products/mahjong-studios-tiles-only
-- **RESTOCK** Mahjong Studios · 20" Clear Acrylic Scalloped Mahjong Rack & Pushers | Premium American Mahjong Rack Set (rack) · Clear · https://mahjongstudios.com/products/20-clear-acrylic-scalloped-mahjong-rack-pushers-premium-american-mahjong-rack-set
-- **RESTOCK** Mahjong Studios · Mahjong Rack and Pusher Set of 4 - Solid Colors Pink Yellow Green Purple (rack) · Solid Green · https://mahjongstudios.com/products/mahjong-rack-and-pusher-set-of-4-solid-colors-pink-yellow-green-purple
-- **RESTOCK** Mahjong Studios · Mahjong Studios – Peony Garden American Mahjong Tile Set (160 Tiles) (tiles) · Default Title · https://mahjongstudios.com/products/mahjong-studios-peony-garden-american-mahjong-tile-set-160-tiles
-- **RESTOCK** My Fair Mahjong · MAHJONG RACK PUSHER ADD-ON - MAGNETIC  |  Premium Acrylic  |  Patent Pending (rack) · Confetti-Wavy-Purple · https://myfairmahjong.com/products/mahjong-pushers
-- **RESTOCK** Virora Mahjong · Magnetic Wooden Rack & Pusher Set (rack) · Ivory White · https://www.viroramahjong.com/products/wooden-rack-pusher-set
-- **RESTOCK** Virora Mahjong · 【Pre-Order】Christmas Collection I · Tinselle — Ruby Red (tiles) · Ruby Christmas - Ruby Red 4 Layers · https://www.viroramahjong.com/products/ruby-christmas
-- **NEW** Splash of Color · Saturday Night Mahj Fever Mahjong Mat Sleek Surface (mat) · https://splashofcolorco.com/products/saturday-night-mahj-fever-mahjong-mat-sleek-surface-1
-- **NEW** Splash of Color · Saturday Night Mahj Fever 4Layer Engraved American Mahjong Tiles (tiles) · https://splashofcolorco.com/products/saturday-night-mahj-fever-4layer-engraved-american-mahjong-tiles
-- **NEW** Splash of Color · Purple Passion And Navy Blue Square Mahjong Tablecloth Dining Cover (mat) · https://splashofcolorco.com/products/purple-passion-and-navy-blue-square-mahjong-tablecloth-dining-cover
+## Since last run: 5 to act on
+- **RESTOCK** Miss Mahjong · Chartreuse Scalloped Acrylic Racks (rack) · Default Title · https://missmahjong.com/products/chartreuse-scalloped-acrylic-racks
+- **RESTOCK** Miss Mahjong · Pistachio Scalloped Acrylic Racks (rack) · Default Title · https://missmahjong.com/products/pistachio-scalloped-acrylic-racks
+- **RESTOCK** Miss Mahjong · Butter Yellow Scalloped Acrylic Racks (rack) · Default Title · https://missmahjong.com/products/butter-yellow-scalloped-acrylic-racks
+- **RESTOCK** Miss Mahjong · Peony Scalloped Acrylic Racks (rack) · Default Title · https://missmahjong.com/products/peony-scalloped-acrylic-racks
+- **RESTOCK** Miss Mahjong · Bombshell Pink Scalloped Acrylic Racks (rack) · Default Title · https://missmahjong.com/products/bombshell-pink-scalloped-acrylic-racks
 
 ## Created/published in the last 7 days (tiles, mats, racks)
 - 2026-11-10 · Splash of Color · Saturday Night Mahj Fever Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/saturday-night-mahj-fever-mahjong-mat-sleek-surface-1
 - 2026-11-09 · Let's Mahj On · Let's Golf! in Celedon Mist (tiles) · available · https://www.letsmahj-on.com/products/lets-golf-celedon-mist
 - 2026-11-09 · Let's Mahj On · Let's Golf! in Magnolia Blush (tiles) · available · https://www.letsmahj-on.com/products/lets-golf-celedon-mist-copy
 - 2026-11-09 · Mini Mahjer · The Bitty Bundle: OG Edition (tiles) · available · https://minimahjer.com/products/the-bitty-bundle-og-edition
-- 2026-11-09 · Miss Mahjong · Chartreuse Scalloped Acrylic Racks (rack) · NOT available · PREORDER/COMING SOON · https://missmahjong.com/products/chartreuse-scalloped-acrylic-racks
-- 2026-11-09 · Miss Mahjong · Pistachio Scalloped Acrylic Racks (rack) · NOT available · PREORDER/COMING SOON · https://missmahjong.com/products/pistachio-scalloped-acrylic-racks
-- 2026-11-09 · Miss Mahjong · Butter Yellow Scalloped Acrylic Racks (rack) · NOT available · PREORDER/COMING SOON · https://missmahjong.com/products/butter-yellow-scalloped-acrylic-racks
-- 2026-11-09 · Miss Mahjong · Peony Scalloped Acrylic Racks (rack) · NOT available · PREORDER/COMING SOON · https://missmahjong.com/products/peony-scalloped-acrylic-racks
-- 2026-11-09 · Miss Mahjong · Bombshell Pink Scalloped Acrylic Racks (rack) · NOT available · PREORDER/COMING SOON · https://missmahjong.com/products/bombshell-pink-scalloped-acrylic-racks
+- 2026-11-09 · Miss Mahjong · Chartreuse Scalloped Acrylic Racks (rack) · available · PREORDER/COMING SOON · https://missmahjong.com/products/chartreuse-scalloped-acrylic-racks
+- 2026-11-09 · Miss Mahjong · Pistachio Scalloped Acrylic Racks (rack) · available · PREORDER/COMING SOON · https://missmahjong.com/products/pistachio-scalloped-acrylic-racks
+- 2026-11-09 · Miss Mahjong · Butter Yellow Scalloped Acrylic Racks (rack) · available · PREORDER/COMING SOON · https://missmahjong.com/products/butter-yellow-scalloped-acrylic-racks
+- 2026-11-09 · Miss Mahjong · Peony Scalloped Acrylic Racks (rack) · available · PREORDER/COMING SOON · https://missmahjong.com/products/peony-scalloped-acrylic-racks
+- 2026-11-09 · Miss Mahjong · Bombshell Pink Scalloped Acrylic Racks (rack) · available · PREORDER/COMING SOON · https://missmahjong.com/products/bombshell-pink-scalloped-acrylic-racks
 - 2026-11-09 · Let's Be Besties · Wildflowers Lillian Claire Designs Artist Mahjong Mat (mat) · available · https://letsbebesties.com/products/wildflowers-lillian-claire-designs-artist-mahjong-mat
 - 2026-11-09 · Let's Be Besties · Roatan Lillian Claire Designs Artist Mahjong Mat (mat) · available · https://letsbebesties.com/products/roatan-lillian-claire-designs-artist-mahjong-mat
 - 2026-11-09 · Let's Be Besties · Hanky Panky Lillian Claire Designs Artist Mahjong Mat (mat) · available · https://letsbebesties.com/products/hanky-panky-lillian-claire-designs-artist-mahjong-mat
@@ -239,18 +233,6 @@
 - 2026-11-04 · Splash of Color · Tuscan Tapestry Earthy Wine Botanical American Engraved  Mahjong Tiles (tiles) · available · https://splashofcolorco.com/products/tuscan-tapestry-earthy-wine-botanical-american-engraved-mahjong-tiles
 - 2026-11-04 · Splash of Color · The Kitschmas Mail Mahj Club Preppy Pink Christmas Mahjong Tiles (tiles) · available · https://splashofcolorco.com/products/the-kitschmas-mail-mahj-club-preppy-pink-christmas-mahjong-tiles
 - 2026-11-04 · Splash of Color · Kitschmas Mahj Mail Mahjong Christmas Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/kitschmas-mahj-mail-mahjong-christmas-mat-sleek-surface
-- 2026-11-03 · Bespoke Mahjong · COMING SOON - Mahjong It's a Vibe - GLITTER GLOW RED (tiles) · NOT available · PREORDER/COMING SOON · https://www.bespokemahjong.com/products/holiday-mahjong-its-a-vibe-glitter-glow-tiles
-- 2026-11-03 · Bespoke Mahjong · COMING SOON - Mahjong It's a Vibe - GLITTER GLOW GREEN (tiles) · NOT available · PREORDER/COMING SOON · https://www.bespokemahjong.com/products/coming-this-november-mahjong-its-a-vibe-glitter-glow-green
-- 2026-11-03 · Miss Mahjong · Garden Party Travel Mat 21"x21" (travel mat) · available · https://missmahjong.com/products/garden-party-travel-mat-21x21
-- 2026-11-03 · Miss Mahjong · Cherry Blossom Travel Mat 21"x21" (travel mat) · available · https://missmahjong.com/products/cherry-blossom-travel-mat-21x21
-- 2026-11-03 · Let's Be Besties · Tiger Stripes OHBoN Studios Artist Mahjong Mat (mat) · available · https://letsbebesties.com/products/tiger-stripes-ohbon-studios-artist-mahjong-mat
-- 2026-11-03 · Let's Be Besties · Spinning Dreidel OHBoN Studios Artist Mahjong Mat (mat) · available · https://letsbebesties.com/products/spinning-dreidel-ohbon-studios-artist-mahjong-mat
-- 2026-11-03 · Let's Be Besties · Champagne Bubbles Mahjong Mat (mat) · available · https://letsbebesties.com/products/champange-bubbles-mahjong-mat
-- 2026-11-03 · Let's Be Besties · Mid Century Floral Mahjong Mat (mat) · available · https://letsbebesties.com/products/mid-century-floral-mahjong-mat
-- 2026-11-03 · Let's Be Besties · Pink Pizzazz Mahjong Mat (mat) · available · https://letsbebesties.com/products/pink-pizzazz-mahjong-mat
-- 2026-11-03 · Let's Be Besties · Gatsby Glow Mahjong Mat (mat) · available · https://letsbebesties.com/products/gatsby-glow-mahjong-mat
-- 2026-11-03 · Let's Be Besties · Mad for Plaid Mahjong Mat (mat) · available · https://letsbebesties.com/products/mad-for-plaid-mahjong-mat
-- 2026-11-03 · Let's Be Besties · Disco Dot with Simple Middle Mahjong Mat (mat) · available · https://letsbebesties.com/products/disco-dot-with-simple-middle-mahjong-mat
 - 2026-11-03 · Splash of Color · Palm Beach Harlequin Chinoiserie  Engraved American Mahjong Tiles And Carry Tote (tiles) · available · https://splashofcolorco.com/products/palm-beach-harlequin-chinoiserie-engraved-american-mahjong-tiles-and-carry-tote
 
 ## Stores
@@ -270,7 +252,7 @@
 - peacelovemahjong.com: ok 100 products
 - shop.andersruff.com: ok 161 products
 - soireeallday.co: not checkable (not Shopify or blocked)
-- splashofcolorco.com: ok 2173 products
+- splashofcolorco.com: ok 2175 products
 - sundaymahjong.com: ok 87 products
 - sweetjojomahjong.com: ok 82 products
 - themahjongpress.com: ok 7 products

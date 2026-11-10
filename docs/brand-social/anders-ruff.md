@@ -1,6 +1,7 @@
 # Anders Ruff (@andersruffdesignco): what they're pushing on Instagram
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
+- Nov 10 10:02am ET: SNEAK PEEK carousel: 'Something MAHJ-ical is coming', surprise collab with 'an OG Bachelorette'; casting 4 Charlotte, NC brides-to-be for a shoot, each gets a bridal mahjong mat + tile set; comment BRIDE (https://www.instagram.com/p/DfkLmn4G0oh/). No date/price. Teaser images assets/launches/anders-ruff-bridal-teaser/.
 - Nov 9 (store): Bams & Bees mahjong mat back in stock (https://shop.andersruff.com/products/bams-bees-mahjong-mat). IG Nov 9: '25K Mahj besties' thank-you post (no product).
 - Nov 6 12pm ET: Christmas Solo Mats in stock, paired with Dear Santa tiles (https://www.instagram.com/reel/DfaF_DdAQ51/). Nov 5: '50 days to Christmas' Dear Santa unboxing. #DearSantaMahjong #SoloMahjong
 - Nov 5 10:02am ET: '50 days to Christmas' unboxing reel of Dear Santa tiles, 'Shop Dear Santa NOW' (https://www.instagram.com/reel/DfXTgcjiTwt/). In stock, not a new drop. #AndersRuffDesignCo #DearSantaMahjong #ChristmasMahjong #HolidayMahjong

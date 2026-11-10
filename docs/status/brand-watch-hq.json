@@ -84,9 +84,33 @@
    "urgency": "NOW",
    "buy": "https://ohmymahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Flotus-cove-mat-in-tube",
    "source": "https://www.instagram.com/reel/Dfj21bAyHCg/"
+  },
+  {
+   "date": "2026-11-11",
+   "day": "Wed 11/11",
+   "time": "8am (public; affiliates early access now)",
+   "brand": "Peace Love Mahjong",
+   "partner": true,
+   "what": "NEW Cane Tile Clutches ($60; Lilac / Mint / Teal; holds travel tiles) + PLM Keychains ($10; 3 designs)",
+   "tag": "accessory",
+   "urgency": "NOW",
+   "buy": "https://peacelovemahjong.com/products/cane-tile-clutch",
+   "source": "PLM affiliate email Nov 10 9:36am ET (keep off social until Wed 8am)",
+   "action": "Listed + sheet; no group draft (accessory). Not before Wed 8am.",
+   "url": "https://peacelovemahjong.com/products/cane-tile-clutch"
   }
  ],
  "coming_soon": [
+  {
+   "brand": "Anders Ruff",
+   "partner": true,
+   "what": "Sneak peek: bridal mahjong mat + tile set, surprise collab with 'an OG Bachelorette' (no date)",
+   "tag": "mat",
+   "action": "New in Find Your Mat-ch when live",
+   "url": "https://www.instagram.com/p/DfkLmn4G0oh/",
+   "urgency": "LATER",
+   "date": null
+  },
   {
    "date": "2026-11-06",
    "brand": "Mah Jongg Maven",
@@ -209,14 +233,14 @@
    "date": "2026-11-10",
    "brand": "Virora",
    "partner": true,
-   "what": "Tinselle Ruby Red Christmas tiles back on PRE-ORDER ($299, Christmas Collection I)",
+   "what": "Tinselle Ruby Red Christmas tiles pre-order ($299): reopened this morning, SOLD OUT again by 1:40pm ET",
    "tag": "tiles",
    "urgency": "NOW",
    "buy": "https://www.viroramahjong.com/products/ruby-christmas",
    "action": "In the Virora group post draft (with Lilacée Yellow).",
    "url": "https://www.viroramahjong.com/products/ruby-christmas",
    "day": "Tue 11/10",
-   "time": "now"
+   "time": "sold out 1:40pm ET"
   },
   {
    "date": "2026-11-09",
@@ -534,15 +558,6 @@
  "auto": [
   {
    "date": "2026-11-10",
-   "brand": "Peace Love Mahjong",
-   "partner": true,
-   "kind": "collab",
-   "what": "🚨 GIVEAWAY TIME! 🚨\n\nWe’ve teamed up with our friends at shopwonnit for a giveaway that’s bringing together two of our favorite things: MAHJONG + CUTE CLOTHES! A",
-   "url": "https://www.instagram.com/reel/Dfj4koQhdGg/",
-   "src": "instagram"
-  },
-  {
-   "date": "2026-11-10",
    "brand": "Noli June",
    "partner": true,
    "kind": "sale",
@@ -749,18 +764,27 @@
    "src": "instagram"
   },
   {
-   "date": "2026-11-03",
-   "brand": "Let's Be Besties",
-   "partner": true,
-   "kind": "launch",
-   "what": "8 new listings: Tiger Stripes OHBoN Studios Artist Mahjong Mat; Spinning Dreidel OHBoN Studios Artist Mahjong Mat; Champagne Bubbles Mahjong Mat; Mid Century Floral Mahjong Mat …",
-   "url": "https://letsbebesties.com/products/tiger-stripes-ohbon-studios-artist-mahjong-mat",
-   "src": "store"
+   "date": "2026-11-10",
+   "brand": "Hutch & Nook",
+   "partner": false,
+   "kind": "sale",
+   "what": "Need we say more??!! \n\nAll items fully stocked on H&N website! There might be a code for first time purchases 👀💕 \n\nWww.hutchandnook.com\n\n#mahjong #hutchandnook ",
+   "url": "https://www.instagram.com/reel/DfkL_1ENKEA/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-09",
+   "brand": "LoveShackFancy",
+   "partner": false,
+   "kind": "drop date",
+   "what": "Something special is coming to LoveShackFancy SoHo 🎀 Our first ever Holiday Shop opens this week, a whimsical world of enchanting gifts, festive treasures and n",
+   "url": "https://www.instagram.com/reel/DfhhHFmCFQH/",
+   "src": "instagram"
   }
  ],
- "updatedAt": "2026-11-10T14:42:07+00:00",
+ "updatedAt": "2026-11-10T18:36:27+00:00",
  "sources": {
-  "store_run": "2026-11-10T14:34:14+00:00",
-  "ig_run": "2026-11-10T14:38:53.472266+00:00"
+  "store_run": "2026-11-10T18:31:53+00:00",
+  "ig_run": "2026-11-10T18:35:12.139734+00:00"
  }
 }
