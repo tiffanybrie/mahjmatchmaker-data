@@ -117,23 +117,30 @@
   {
    "date": "2026-11-11",
    "day": "Wed 11/11",
-   "time": "",
+   "time": "LIVE since 11:11am CT",
    "brand": "Mahj Pit",
    "partner": true,
-   "what": "Christmas tiles launch + Confetti tiles restock",
+   "what": "LIVE now since 11:11am CT Wed 11/11: Merry Merry Holiday Travel Tiles ($465, limited edition), The Martha Tiles ($495), Commuter Christmas bundle ($625), Little Miss racks ($185) and new mats Birds of a Feather, LaMarie and Evergreen. The Original Confetti Tiles, Large ($495) show sold out right now.",
    "tag": "tiles",
-   "action": "Group post drafted (docs/social/mahj-pit-christmas-tiles-2026-11-11.post.txt); time not announced; swap in the product link when listed.",
+   "action": "Group post draft docs/social/mahj-pit-christmas-tiles-2026-11-11.post.txt: update with live products/prices",
    "url": "https://www.instagram.com/p/DfId2tWPVhq/",
    "urgency": "NOW",
-   "buy": "https://mahjpit.co/",
+   "buy": "https://mahjpit.co/products/merry-merry-holiday-tiles-limited-edition",
    "source": "https://www.instagram.com/p/DfId2tWPVhq/",
-   "found": "2026-11-10T09:50",
-   "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/aea45d1dabe3eda2742b19737e976382bf2a8498/assets/launches/mahjpit-christmas-tiles-teaser/christmas-tiles-launch-1111-DfId2tWPVhq.jpg"
+   "found": "2026-11-11T13:55",
+   "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/aea45d1dabe3eda2742b19737e976382bf2a8498/assets/launches/mahjpit-christmas-tiles-teaser/christmas-tiles-launch-1111-DfId2tWPVhq.jpg",
+   "history": [
+    {
+     "found": "2026-11-10T09:50",
+     "what": "Christmas tiles launch + Confetti tiles restock"
+    }
+   ],
+   "new": true
   },
   {
    "date": "2026-11-11",
    "day": "Wed 11/11",
-   "time": "10am CT",
+   "time": "LIVE since 10am CT",
    "brand": "Oh My Mahjong",
    "partner": true,
    "what": "Juniper tiles and the Lotus Cove mat are on sale now. See 42 matching mats in the Juniper album.",
@@ -339,6 +346,58 @@
   }
  ],
  "just_dropped": [
+  {
+   "date": "2026-11-11",
+   "day": "Wed 11/11",
+   "brand": "Peace Love Mahjong",
+   "partner": true,
+   "what": "Mahjong Racks & Pushers (set of 4) back in stock in Red",
+   "tag": "rack",
+   "urgency": "NOW",
+   "restock": true,
+   "buy": "https://peacelovemahjong.com/products/mahjong-racks-racks-pushers-set-of-4",
+   "url": "https://peacelovemahjong.com/products/mahjong-racks-racks-pushers-set-of-4",
+   "found": "2026-11-11T13:55"
+  },
+  {
+   "date": "2026-11-11",
+   "day": "Wed 11/11",
+   "brand": "Virora",
+   "partner": true,
+   "what": "Hollivia mat is back in stock",
+   "tag": "mat",
+   "urgency": "NOW",
+   "restock": true,
+   "buy": "https://www.viroramahjong.com/products/hollivia",
+   "url": "https://www.viroramahjong.com/products/hollivia",
+   "found": "2026-11-11T13:55"
+  },
+  {
+   "date": "2026-11-11",
+   "day": "Wed 11/11",
+   "brand": "Bespoke Mahjong",
+   "partner": true,
+   "what": "Gray Malin Beach Club tiles in Ocean Blue are back in stock",
+   "tag": "tiles",
+   "urgency": "NOW",
+   "restock": true,
+   "buy": "https://www.bespokemahjong.com/products/gray-malin-beach-club-set-oceanblue",
+   "url": "https://www.bespokemahjong.com/products/gray-malin-beach-club-set-oceanblue",
+   "found": "2026-11-11T13:55"
+  },
+  {
+   "date": "2026-11-11",
+   "day": "Wed 11/11",
+   "brand": "Let's Be Besties",
+   "partner": true,
+   "what": "NEW Lillian Claire artist mats: Sedona, Cajun Christmas and Blueberry Hill",
+   "tag": "mat",
+   "urgency": "NOW",
+   "new": true,
+   "buy": "https://letsbebesties.com/products/cajun-christmas-lillian-claire-designs-artist-mahjong-mat",
+   "url": "https://letsbebesties.com/products/cajun-christmas-lillian-claire-designs-artist-mahjong-mat",
+   "found": "2026-11-11T13:55"
+  },
   {
    "date": "2026-11-10",
    "brand": "Let's Be Besties",
@@ -731,6 +790,27 @@
  ],
  "nonpartners": [
   {
+   "date": "2026-11-14",
+   "day": "Sat 11/14",
+   "time": "11am CT",
+   "brand": "Ozark Mahjongg",
+   "partner": false,
+   "what": "Two vintage 1950s Royal Catalin sets for sale Sat 11/14 11am CT: 166-tile Depth Control set with case and racks, and 152-tile Perching Pheasant set with 4 racks",
+   "urgency": "SOON",
+   "url": "https://www.instagram.com/p/Dfmuzo8IZvR/",
+   "ends": null
+  },
+  {
+   "date": "2026-11-11",
+   "day": "Wed 11/11",
+   "brand": "Sweet Jojo Mahjong",
+   "partner": false,
+   "what": "New Blue Abstract and Blue Seaside melamine tile sets (160pc) and matching mats on preorder",
+   "urgency": "LATER",
+   "url": "https://sweetjojomahjong.com",
+   "ends": null
+  },
+  {
    "date": "2026-11-11",
    "day": "Tue 11/17",
    "time": "10am ET",
@@ -818,5 +898,5 @@
    "url": ""
   }
  ],
- "updated": "2026-11-11T12:25"
+ "updated": "2026-11-11T13:55"
 }
