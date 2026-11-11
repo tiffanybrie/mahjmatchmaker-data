@@ -65,3 +65,4 @@
 - since 2026-11-11 | LET'S BE BESTIES feature week (she reached out Nov 11 offering a feature + 15% for the week): Tiffany leads it. Reply yes + propose Claude's plan (see ANSWERS Nov 11 5:13pm); later ask for an ongoing 15% to match MJTI. Draft the reply for her yes. | Main
 - since 2026-11-11 | TORTOISE reel is weak (Tiffany 5:13pm): redo it in the new format after the tortoise rack piece. | Main
 - since 2026-11-11 | MAT LINE HQ tab (Tiffany 5:13pm): build the HQ tab for her own mat line (name options, printer research: US print-on-demand neoprene/rubber mat printers, minimums, cost per mat, how AI mats are made; partner-conflict note). | Main
+- since 2026-11-11 | SPARE-USAGE WEEKEND WORK (Tiffany 5:34pm, don't let usage go to waste): in order: (1) Maven gray-photo sets: clean + bring in (config/maven-cut-proposal-nov11.json 'gray', minus excused), (2) Sweet Jojo hidden staging, (3) other big-catalog brands at their rules. | Main / Partner coverage task
