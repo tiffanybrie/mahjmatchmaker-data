@@ -1,7 +1,22 @@
 {
  "_note": "Partners approved/onboarding but NOT yet on the live /mahjong-discount-codes page (Tiffany Nov 10 10:33pm: new affiliates must never fall off). scripts/checks/partner_checklist.py checks every loop for these too. Add a brand here THE MOMENT it is approved (any chat or task that sees the approval email); remove it once it is on the codes page. Applied-but-waiting brands live in HQ brands, not here.",
  "brands": [
-  {"brand": "Mahjong by SI", "stage": "approved Nov 6 (Stacie): Jenna sets up our account + code this week", "store": ""},
-  {"brand": "Sweet Jojo Designs", "stage": "approved: W-9 needed", "store": "sweetjojomahjong.com"}
+  {
+   "brand": "Mahjong by SI",
+   "stage": "approved Nov 6 (Stacie): Jenna sets up our account + code this week",
+   "store": ""
+  },
+  {
+   "brand": "Sweet Jojo Designs",
+   "stage": "approved: W-9 needed",
+   "store": "sweetjojomahjong.com"
+  },
+  {
+   "brand": "Fait à Main",
+   "stage": "live code partner, missing from codes page",
+   "store": "faitamainstudio.com",
+   "added": "2026-11-11",
+   "note": "found Nov 11 building the album lineup: link-routes says code-site but it is not on /mahjong-discount-codes"
+  }
  ]
 }
