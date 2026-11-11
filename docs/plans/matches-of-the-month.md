@@ -4,7 +4,7 @@ Idea: every month, one easy content piece that shows the depth of the album libr
 
 | Month | Her theme | Claude adds (dates are 2027 unless noted) |
 |---|---|---|
-| Jan | Winter blues (+ snow/ski again Jan-Feb). New: Mahj Squad Blue Chinoiserie (twin) | New Year's (late Dec: Noli June NYE mat, NYE dice dish, Splash NYE mat); "new year, new set" |
+| Jan | Winter blues (+ snow/ski again Jan-Feb). New: Mahj Squad Blue Chinoiserie (twin) or Middle & Main Clearwater Dockside (southern lake, new theme) | New Year's (late Dec: Noli June NYE mat, NYE dice dish, Splash NYE mat); "new year, new set" |
 | Feb | Valentine's reds + pinks (Galentine's; post-14th = done). Super Bowl? | Lunar New Year Sat Feb 6 2027 (Year of the Goat/Sheep): THE mahjong holiday, traditional/red-gold sets. Mardi Gras Tue Feb 9: Mac + Miller "Laissez Les Bons Temps Rouler" set. Mahj Mood Playing For Keeps (Valentine's set, ships Jan) |
 | Mar | Greens (St. Patrick's Wed Mar 17) | Easter is EARLY: Sun Mar 28 2027, so pastels/bunny jokers start mid-March |
 | Apr | Spring pastels / Easter / garden party (Sorbet, Luminaire, La Fete + TdT green/blue mat; Sunday Hummingbird) | Masters Apr 8-11: Let's Mahj On Let's Golf! album. Pools open: start pool/cabana |
