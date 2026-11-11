@@ -9,7 +9,7 @@ Run this list top to bottom the day an album goes live. Every item is Claude's j
 - [ ] **Tiles & Tablescapes recs, EVERY album, swipe book or not (Tiffany Nov 8 12:57pm: "I don't want to have to ask for the tiles and tablescape stuff... why does that stuff get missed every single time?").** Search the TNT group for the set name, colourway and brand; read the WHOLE post (every slide, full caption). Save `config/tnt-recs.json` sets.<set> {scanned, source, recs[]} even when nothing is found. Allowed recs LEAD the album, labelled "TNT rec · mat · brand". Code-enforced: `scripts/albumcard/gen2.py` refuses to render album cards for a set with no TNT record (`scripts/checks/tnt_check.py`), and the front-door hook lists every album set still missing one.
 
 ## 1. Before it's live
-- [ ] **Before the swipe book (code-enforced):** colour card built (config/colorcards.json / assets/colorcards/<set>/), TNT recs searched and saved in config/tnt-recs.json, book built from the WIDEST pool (full FYM catalog, measured colour shares) with FYM photos; `python3 scripts/swipe/book_gate.py <book>` = PASS (build_book.py / finish_patch.py refuse otherwise).
+- [ ] **Before Claude picks (code-enforced; NO swipe books since Nov 8: Claude picks, she reviews on the review page, Album Playbook):** colour card built (config/colorcards.json / assets/colorcards/<set>/), TNT recs searched and saved in config/tnt-recs.json, book built from the WIDEST pool (full FYM catalog, measured colour shares) with FYM photos; `python3 scripts/swipe/book_gate.py <book>` = PASS (build_book.py / finish_patch.py refuse otherwise).
 - [ ] Her card order saved (order page) and her yes on the cover.
 - [ ] Album page built + warmed on jsDelivr; color card first (doc 86b).
 
