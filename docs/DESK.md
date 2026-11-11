@@ -237,3 +237,4 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **HQ:** see the HQ log line for this run (needs before → after, archived ids + reasons; Albums: Cabana Club → Needs your yes, missed-picks hearts → Live).
 
 See CLAUDE.md.
+- Main: TIKTOK on the radar (Tiffany Nov 11 9:14am). Plan: she creates @mahjmatchmaker (business account) + connects it in Planoly; Claude reposts the reel bank (FYM, holiday, album reels) 3-5x/week as Planoly drafts with TikTok-library sounds, captions with MAHJMATCH typed (never next to Tigre de Tartan), varied cuts/hooks rather than identical reposts. Waiting on the account.
