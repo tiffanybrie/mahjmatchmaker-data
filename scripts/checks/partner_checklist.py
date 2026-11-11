@@ -31,7 +31,7 @@ for line in open(R + 'docs/PARTNER-NEWSLETTERS.md'):
     if len(c) == 3 and c[0] not in ('Brand', '---'): nl[norm(c[0])] = (c[0], c[1], c[2])
 snap = json.load(open(R + 'config/partner-products-snapshot.json'))
 snaphosts = {h.replace('www.', '') for h in snap}
-ALIAS = {norm('Mah Jongg Maven'): norm('MahjjMaven')}
+ALIAS = {}  # Nov 11: Mah Jongg Maven now has its own route; the MahjjMaven (Etsy) alias hid that it was never onboarded
 def find(d, b):
     k = norm(b)
     if d is routes: k = ALIAS.get(k, k)

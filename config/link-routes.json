@@ -187,6 +187,7 @@
   "Fait à Main": {
    "route": "code-site",
    "store_hosts": [
+    "fait-a-main.com",
     "faitamainstudio.com"
    ],
    "commission_pct": null,
@@ -778,6 +779,16 @@
    "commission_pct": null,
    "notes": "Sells American mahjong CARDS (no tiles). Code MAHJMATCH 10% (cart test Nov 7); our links carry ?ref=TIFFANYBEMERY. NOT The Mahjong House (themahjonghouse.com = ShopMy-only, not a partner).",
    "source": "Tiffany Nov 11 1:39pm + live /the-mahjong-press-discount-code links"
+  },
+  "Mah Jongg Maven": {
+   "route": "code-site",
+   "store_hosts": [
+    "mahjonggmaven.com"
+   ],
+   "commission_pct": 5,
+   "notes": "own WooCommerce site, code MAHJMATCH = 5% off / 5% payout (excludes NMJL cards + custom jokers). NOT the Etsy shop MahjjMaven (separate entry; same brand unconfirmed).",
+   "source": "Gmail 19be374f0891d44c (approved Jan 23 2026) + cart test Nov 8 11:35pm ET (docs/OVERDUE.md); added Nov 11 by partner_coverage fix",
+   "rate_compare": "code"
   }
  }
 }

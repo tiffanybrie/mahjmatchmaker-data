@@ -1,0 +1,42 @@
+{
+ "_about": "Excuses for scripts/checks/partner_coverage.py. Every excuse needs a reason (whose decision, when) and a review_by date; past review_by it stops counting and the gap shows on the front door again. Never excuse a gap just to quiet the check.",
+ "brands": {
+  "Mahjong Row & Co.": {
+   "codes_page": {
+    "reason": "Tiffany Nov 6 1:19pm: Mahjong Row removed from the site + FYM (parked)",
+    "review_by": "2027-01-15"
+   },
+   "store": {
+    "reason": "parked Nov 6 (Tiffany)",
+    "review_by": "2027-01-15"
+   }
+  },
+  "Mahjong by SI": {
+   "codes_page": {
+    "reason": "approved Nov 6; account + code not set up by them yet (pipeline)",
+    "review_by": "2026-11-14"
+   }
+  },
+  "Sweet Jojo Designs": {
+   "codes_page": {
+    "reason": "approved; W-9 upload is hers (SSN) before the code goes live (pipeline)",
+    "review_by": "2026-11-14"
+   },
+   "fym_tiles": {
+    "reason": "held until the partnership is live (Tiffany Nov 8 4:51pm rule: brand with a program = hold extras until set up)",
+    "review_by": "2026-11-14"
+   },
+   "fym_mat": {
+    "reason": "same as fym_tiles",
+    "review_by": "2026-11-14"
+   }
+  },
+  "I Love Mahj": {
+   "store": {
+    "reason": "no mats/tiles/racks to match (Tiffany Oct 26 11:28pm)",
+    "review_by": "2027-03-01"
+   }
+  }
+ },
+ "products": {}
+}
