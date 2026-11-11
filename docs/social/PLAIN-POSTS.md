@@ -46,3 +46,6 @@ Never hold work to batch it. Holding only means Chrome drops or something gets b
 - Every reel comes with a suggested song + start point. The API catalog has no major-label songs, so a reel with her song is a reminder post with the steps sent in chat.
 - Reel covers + the cover frame inside a reel: the SAME album cover design built at 9:16 with the real tile photo full-bleed: `TALL=1 FRAME=frame3.png python3 scripts/covers/album_cover_omm.py <same args as the album cover, see the album README>` -> assets/covers/albums/reel-tall/<set>.jpg. Never blur bands (reel_tall.py is retired), never mirror/flip/rearrange tiles (Tiffany Nov 10 12:42-12:47pm).
 - No white bars around photos inside graphics: crop the photo to the mat so it fills its card (Tiffany Nov 10 12:42pm, Juniper slide 6).
+
+## Album count line (Tiffany Nov 11 1:37pm)
+Every album post says WHICH number album it is for that brand ("our 31st Oh My Mahjong album"), not "every album ever made". Count = live albums for the brand on /mahjong-tile-matches (OMM: Juniper = 31st incl. retired sets + Coquette).
