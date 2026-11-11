@@ -4,7 +4,6 @@
   "mahjonggmaven.com": {"brand": "Mah Jongg Maven", "platform": "WooCommerce", "method": "woo", "api": "https://mahjonggmaven.com/wp-json/wc/store/v1/products?per_page=100&page={page}"},
   "amandatoppeart.com": {"brand": "Amanda Toppe", "platform": "Squarespace", "method": "squarespace", "collections": ["/shop"], "note": "Squarespace rate-limits our cloud fetch (429); Chrome fallback"},
   "soireeallday.co": {"brand": "Soirée All Day", "platform": "Squarespace", "method": "squarespace", "collections": ["/shop"], "note": "collection path to confirm in Chrome; 429 from cloud"},
-  "wrenmats.com": {"brand": "Wren Mats", "platform": "Squarespace", "method": "squarespace", "collections": ["/shop"], "note": "collection path to confirm in Chrome; 429 from cloud"},
-  "mahjongbysi": {"brand": "Mahjong by SI", "platform": "unknown", "method": "chrome", "note": "store URL not on file yet (approved Nov 6); find it and pick a method"}
+  "wrenmats.com": {"brand": "Wren Mats", "platform": "Squarespace", "method": "squarespace", "collections": ["/shop"], "note": "collection path to confirm in Chrome; 429 from cloud"}
  }
 }

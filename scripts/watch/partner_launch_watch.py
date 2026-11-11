@@ -47,6 +47,8 @@ STORES = {
     # Nov 10 10:45pm (partner checklist): newer partners were never watched
     'mahjpit.co': 'Mahj Pit', 'yolomahjong.com': 'YOLO Mahjong', 'nolijune.com': 'Noli June', 'maisonmahj.com': 'Maison Mahj',
     'www.middleandmainmahjong.com': 'Middle & Main Mahjong', 'sweetjojomahjong.com': 'Sweet Jojo Mahjong', 'splashofcolorco.com': 'Splash of Color',
+    # Nov 11 onboarding: Mahjong by SI is Shopify (products.json reads 2,042 products, 1,176 mats)
+    'www.mahjongbysi.com': 'Mahjong by SI',
 }
 # brand-specific handling (CLAUDE.md + ANSWERS)
 NO_SOCIAL = {'Yellow Mountain Imports'}                 # never featured on social

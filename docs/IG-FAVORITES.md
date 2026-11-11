@@ -43,3 +43,7 @@ Method note: the favorites menu only updates after a reload, so each add was con
 - Chrome offline (extension not connected), so no follows/favorites this run and Sunday Mahjong's IG was not read.
 - New partners this week: Mah Jongg Maven (@mahjonggmaven, verified Nov 9 from the site footer; already in ig-handles.json): follow + favorite is in the DESK onboarding OPS line. Mahj Pit (@mahjpit.co, Nov 4): follow + favorite STILL NOT DONE (the DESK line was dropped in the Nov 8 desk rewrite); re-added to DESK as an OPS line.
 - New ShopMy brands: none this week (ShopMy check Nov 9 PASS, nothing new). The 58 Amazon pins staged Nov 8 are Amazon listings with no brand site to verify a handle from: skipped.
+
+## Nov 11 (onboarding run, Chrome signed in as @mahjmatchmaker)
+- Mahjong by SI (direct partner, approved Nov 9): @mahjongbysi, verified from the mahjongbysi.com about page/footer (instagram.com/mahjongbysi). Added to ig-handles.json. FOLLOWED + ADDED TO FAVORITES (menu shows "Remove from favorites").
+- Mah Jongg Maven (@mahjonggmaven): checked, already followed and in Favorites. DONE.
