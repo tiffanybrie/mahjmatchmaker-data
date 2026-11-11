@@ -3,7 +3,7 @@
 ## 000. ONE FIND = FOUR WRITES, SAME RUN, NO CHECK-IN NEEDED (Tiffany Nov 10 10:32pm: "you can know a rule, but that doesn't mean that it's going to be followed or acted upon"; the hidden Brand Watch page is her test of whether we can keep up)
 The partner watch runs on its own schedule. A find must NEVER wait for another chat's scheduled check-in. Every partner find, in the run that finds it:
 1. **Sheet**: append a row to "Brand news (live)" (section 00). This is her scoreboard: found time, posted where.
-2. **List**: add it to config/brand-watch-curated.json (this_week / coming_soon / just_dropped / sales).
+2. **List**: add it to config/brand-watch-curated.json (this_week / coming_soon / just_dropped / sales) WITH `found` = when we found it, ET, `YYYY-MM-DDTHH:MM`, and bump top-level `updated` (Tiffany Nov 11 10:04am: every update timestamped, page shows 'Last updated', like a ticker). Page order (site_brand_watch.py): Launching now -> Just dropped (last 10 days) -> On sale now -> Coming soon; newest first; an item never shows twice.
 3. **Page**: run `python3 scripts/site_brand_watch.py && python3 scripts/site_brand_watch_preview.py`, publish site/livepatch/brand-watch/brand-watch-preview.html to the Brand Watch artifact https://claude.ai/artifact/18JAJeZRLcZtcqVejgKHMs, then write the new curated sha256 into site/livepatch/brand-watch/published.json. If the run can't publish, the front door (every chat, every message) prints "BRAND WATCH PAGE IS BEHIND" until a chat does it.
 4. **Push** (NOW items only): phone push to Tiffany with the draft group post (section 00/2).
 Before ANY group / IG / FB post, the chat posting reads the sheet and puts every NOT POSTED item in (one group post a day; later finds are EDITS to it), then fills "Posted where".

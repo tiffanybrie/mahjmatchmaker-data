@@ -84,7 +84,7 @@ s3 = (hdr(('Her faces', 84)) +
       f'{ab(L, 936, "display:flex;gap:16px", W)}{"".join(sups[:4])}</div>{ab(L, 1046, "display:flex;gap:16px", W)}{"".join(sups[4:8])}</div>')
 
 # ---- slide 4: her best features
-FT = R + f'assets/tiles/faces/{key}/clean/'
+FT = R + (P.get('faces_dir') or f'assets/tiles/faces/{key}/clean/')   # Nov 11: shared faces dir (Deco)
 FAV = P.get('best_features', {'top': ['The dancing dragons', ['dragon-coral', 'dragon-green'], 'My favorite dragons, and they come as a pair'],
        'singles': [['The crane', 'crane', 'Her gray-crowned<br>crane bird bam'], ['Ginger Lola', 'lola-ginger', 'The redheaded<br>matriarch'], ['The parasols', 'dot3', 'Little umbrellas']]})
 ft = lambda kk, w: f'<img src="file://{FT}{kk}.png" style="width:{w}px;display:block">'
@@ -100,6 +100,10 @@ s4 = (hdr(('Her best features', 72)) +
 RACK = {'Oh My Mahjong Pink Quartz': 'assets/racks/card/oh-my-mahjong-pink-quartz.png', 'Oh My Mahjong Hot Pink': 'assets/racks/card/oh-my-mahjong-hot-pink.png', 'Oh My Mahjong Agate': 'assets/racks/card/oh-my-mahjong-agate.png', 'Bird & Bamboo Lavender': 'assets/colorcards/papaya-spritz/racks/bird-and-bamboo-lavender.png', 'Peace Love Mahjong Chartreuse': 'assets/racks/card/peace-love-mahjong-chartreuse.png',
         'Peace Love Mahjong Oak': 'assets/racks/card/peace-love-mahjong-oak.png', 'Middle & Main Scalloped Beechwood': 'assets/racks/card/middle--main-scalloped-beechwood.png',
         'Mahjong Row & Co. Scalloped Tortoise': 'assets/racks/card/mahjong-row--co-scalloped-tortoise.png'}
+RACK.update({k: v for k, v in S.get('rack_imgs', {}).items() if k not in RACK})   # Nov 11: colour-card rack photos (as carousel.py)
+for _r in P['racks'] + P.get('racks_social_extra', []):   # Nov 11 (Deco): fall back to assets/racks/card/<slug>.png
+    _f = 'assets/racks/card/' + __import__('re').sub(r'[^a-z0-9]+', '-', _r['name'].lower()).strip('-') + '.png'
+    if _r['name'] not in RACK and os.path.exists(R + _f): RACK[_r['name']] = _f
 BRANDS = ('Oh My Mahjong', 'Bird & Bamboo', 'Peace Love Mahjong', 'Middle & Main', 'Miss Mahjong', 'Mahjong Row & Co.', 'Bam Bird Boutique')
 def rrow(r):   # same as the APPROVED carousel slide (carousel.py): brand + name on one line, racks at real proportions
     b = next((x for x in BRANDS if r['name'].startswith(x)), r['name'].split()[0]); c = r['name'][len(b) + 1:]
@@ -126,11 +130,11 @@ s5 = (hdr(("Racks she's into", 80)) +
 pr = P['omm_launch']['pair']
 cap = pr.get('together_caption') or f"{P['name']} on {pr['mat']}, in {pr['brand']}’s own photo"
 s6 = (hdr(('Her soulmate', 84)) +   # Tiffany Nov 10 3:49pm: fits 'Her colors / Her faces / Racks she's into'
-      f'{ab(L, 166, "", W)}<div class="pf" style="font-size:31px;color:#3c4f73">Her official {e(pr["brand"])} mat pair: <b style="font-weight:600;color:var(--navy)">{e(pr["mat"])}</b></div></div>'
+      f'{ab(L, 166, "", W)}<div class="pf" style="font-size:{31 if len(pr["mat"]) < 16 else 26}px;color:#3c4f73;white-space:nowrap">Her official {e(pr["brand"])} mat pair: <b style="font-weight:600;color:var(--navy)">{e(pr["mat"])}</b></div></div>'
       f'<div style="position:absolute;left:{L}px;top:226px;width:{W}px;height:470px;border-radius:22px;background:url({url(pr["together"])}) 52% 42%/150%;box-shadow:0 10px 26px rgba(6,40,90,.16)">'
       f'<div style="position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.93);border-radius:99px;padding:8px 18px;font:600 20px Bit;color:var(--navy)">{e(cap)}</div></div>'
       f'{ab(0, 730, "display:flex;justify-content:center;align-items:center;gap:26px", CW)}'
-      f'<div style="width:190px;height:190px;border-radius:50%;background:#fff url({url(pr["circle"])}) center/112% no-repeat;box-shadow:0 0 0 6px #fff,0 8px 20px rgba(6,40,90,.16)"></div>{HT(60)}'
+      f'<div style="width:190px;height:190px;border-radius:50%;background:#fff url({url(pr["circle"]) if pr.get("circle") else url(S["tile"])}) center/{"112%" if pr.get("circle") else "cover"} no-repeat;box-shadow:0 0 0 6px #fff,0 8px 20px rgba(6,40,90,.16)"></div>{HT(60)}'
       f'<div style="width:212px;height:212px;border-radius:18px;background:url({url(pr["img"])}) center/114%;box-shadow:0 8px 22px rgba(6,40,90,.16)"></div></div>'
       f'{ab(L, 984, "", W)}<div style="display:flex;align-items:center;gap:10px">{VER(34)}<span class="caps" style="font-size:20px;color:var(--pink)">Official pair</span></div>'
       f'<div style="font:400 29px/1.35 Bit;margin-top:10px;color:#2c3e63;text-wrap:balance">{e(pr["why"]).replace("light lime", "light&nbsp;lime")}</div></div>')

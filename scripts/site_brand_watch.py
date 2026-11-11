@@ -2,7 +2,7 @@
 """Public 'Brand Watch' page (Tiffany Nov 10 8:01am; asked again 7:39pm). Built from config/brand-watch-curated.json,
 partners only (no non-partners, no YMI), product news only. Output: site/livepatch/brand-watch/brand-watch.html
 (self-contained; the same markup goes into a Squarespace code block on a HIDDEN /brand-watch page until she says yes)."""
-import json, html, os, re
+import datetime, json, html, os, re
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + '/'
 d = json.load(open(R + 'config/brand-watch-curated.json')); e = html.escape
 # --- Nov 10 9:43pm (Tiffany): links must be CONSISTENT. Rule: a Shop button only when there is something to buy
@@ -66,12 +66,19 @@ def shop(x):
     u = (f'https://{host}/discount/MAHJMATCH?redirect={quote(path)}' if code and host.replace('www.', '') in AUTO else f'https://{host}{path}')
     return (u, code), (pr or {}).get('img')
 def clean(b): return re.sub(r'\s*\(image-only\)', '', b)
+def stamp(f):   # Tiffany Nov 11 10:04am: every update timestamped (when WE posted it), like a live ticker
+    if not f: return ''
+    try:
+        t = datetime.datetime.fromisoformat(f)
+        return t.strftime('%a %-m/%-d') + (t.strftime(' · %-I:%M%p').replace('AM', 'am').replace('PM', 'pm') + ' ET' if 'T' in f else '')
+    except Exception: return ''
 def line(x):
     (lk, img) = shop(x); when = ' · '.join(t for t in (x.get('day'), x.get('time')) if t)
     btn = ''
     if lk:
         u, code = lk; btn = f'<a class="bw-btn" href="{e(u)}" target="_blank" rel="noopener">Shop{" · use code MAHJMATCH" if code else ""}</a>'
-    return img, (f'<div class="bw-item"><div class="bw-what">{e(x["what"])}</div>' + (f'<div class="bw-when">{e(when)}</div>' if when else '') + btn + '</div>')
+    st = stamp(x.get('found'))
+    return img, (f'<div class="bw-item">' + (f'<div class="bw-stamp">Added {e(st)}</div>' if st else '') + f'<div class="bw-what">{e(x["what"])}</div>' + (f'<div class="bw-when">When: {e(when)}</div>' if when else '') + btn + '</div>')
 def card(group):
     parts = [line(x) for x in group]; img = next((i for i, _ in parts if i), None)
     pic = f'<img class="bw-img" src="{e(img)}" alt="" loading="lazy">' if img else ''
@@ -84,7 +91,27 @@ def grouped(L):
 P = lambda L: [x for x in L if x.get('partner') and 'yellow mountain' not in x.get('brand', '').lower() and 'ymi' not in x.get('brand', '').lower()]
 for _k in ('this_week', 'sales', 'coming_soon', 'just_dropped'):
     for _x in d[_k]: _x['_sec'] = _k
-sec = [('Happening this week', P(d['this_week'])), ('On sale now', P(d['sales'])), ('Coming soon', P(d['coming_soon'])), ('Just dropped', P(d['just_dropped']))]
+# Tiffany Nov 11 10:04am: launches first, then just dropped, then sales, then coming soon; newest first; no item twice.
+TODAY = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-5))).strftime('%Y-%m-%d')
+LIVE = re.compile(r'\blive\b|back in stock|restock(ed)?\b|arrived|in stock|sold out', re.I)
+launch, dropped = [], []
+for x in d['this_week']:
+    (launch if (x.get('date') or '') >= TODAY and not LIVE.search((x.get('time') or '') + ' ' + x['what']) else dropped).append(x)
+dropped += d['just_dropped']
+seen = set()
+def uniq(L):
+    out = []
+    for x in L:
+        k = (clean(x['brand']).lower(), re.sub(r'\W+', ' ', x['what'].lower())[:40])
+        if k in seen: continue
+        seen.add(k); out.append(x)
+    return out
+newest = lambda L: sorted(L, key=lambda x: x.get('found') or x.get('date') or '', reverse=True)
+cut = (datetime.datetime.now() - datetime.timedelta(days=10)).strftime('%Y-%m-%d')
+sec = [('Launching now', uniq(P(sorted(launch, key=lambda x: (x.get('date') or '', x.get('time') or ''))))),
+       ('Just dropped', uniq(P(newest([x for x in dropped if (x.get('found') or x.get('date') or '9') >= cut])))),
+       ('On sale now', uniq(P(newest(d['sales'])))),
+       ('Coming soon', uniq(P(newest(d['coming_soon']))))]
 body = ''.join(f'<section class="bw-sec"><h2>{t}</h2><div class="bw-grid">{"".join(card(g) for g in grouped(L))}</div></section>' for t, L in sec if L)
 page = f'''<title>Brand Watch</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -106,10 +133,13 @@ body{{background:var(--bg);color:var(--ink);font:16px/1.45 Georgia,'Times New Ro
 .bw-item+.bw-item{{border-top:1px solid var(--line);padding-top:12px}}
 .bw-brand{{font:700 13px/1.2 system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--pink)}}
 .bw-what{{font-size:17px}}
+.bw-stamp{{font:600 12px system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--pink)}}
+.bw-updated{{font:500 14px system-ui,sans-serif;color:var(--muted);margin:0 0 4px}}
 .bw-when{{font:500 13px system-ui,sans-serif;color:var(--muted)}}
 .bw-btn{{align-self:flex-start;margin-top:4px;background:var(--navy);color:var(--bg);text-decoration:none;font:600 14px system-ui,sans-serif;padding:8px 14px;border-radius:999px}}
 </style>
 <div class="bw"><div class="bw-week">{e(d.get("week_label",""))}</div><h1>Brand Watch</h1>
+<p class="bw-updated">Last updated {e(stamp(d.get("updated")))}</p>
 <p class="bw-intro">New tile sets, mats, racks, restocks and sales from our partner brands, updated through the day. Use code MAHJMATCH at checkout to save.</p>
 {body}</div>'''
 open(R + 'site/livepatch/brand-watch/brand-watch.html', 'w').write(page); print(sum(len(L) for _, L in sec), 'items')
