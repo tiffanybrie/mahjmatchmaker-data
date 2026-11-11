@@ -769,6 +769,15 @@
    "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
    "rate_compare": "code",
    "shopmy_pct": 0
+  },
+  "The Mahjong Press": {
+   "route": "code-site",
+   "store_hosts": [
+    "themahjongpress.com"
+   ],
+   "commission_pct": null,
+   "notes": "Sells American mahjong CARDS (no tiles). Code MAHJMATCH 10% (cart test Nov 7); our links carry ?ref=TIFFANYBEMERY. NOT The Mahjong House (themahjonghouse.com = ShopMy-only, not a partner).",
+   "source": "Tiffany Nov 11 1:39pm + live /the-mahjong-press-discount-code links"
   }
  }
 }
