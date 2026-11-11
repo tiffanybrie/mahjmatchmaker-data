@@ -8,6 +8,7 @@ The partner watch runs on its own schedule. A find must NEVER wait for another c
 4. **Push** (NOW items only): phone push to Tiffany with the draft group post (section 00/2).
 Before ANY group / IG / FB post, the chat posting reads the sheet and puts every NOT POSTED item in (one group post a day; later finds are EDITS to it), then fills "Posted where".
 The 9:55am "brand watch check-in" is only a safety net now, never the path.
+**Tiles first (Tiffany Nov 11 10:14am):** a new tile set is bigger news than a mat or rack. When tiles and a mat launch together, the item's photo and Shop link are the TILE SET (the mat is the lesser player), and tile news leads its section (site_brand_watch.py sorts tile news first; `buy` must point at the tiles).
 **Her test tab**: "Tiffany found it first" in the same sheet. When she sees partner news before we do, she logs it there (or tells any chat, which logs it). Claude fills "when we had it" + "why we missed it + fix" the same day and adds the fix (new source, new store in the snapshot, rule) so that miss can't repeat. Brand Watch goes public only when that tab stays empty for her test period.
 **Every partner is watched**: scripts/checks/partner_checklist.py lists any partner whose store is not in the store snapshot (config/partner-products-snapshot.json): add it the same day (Nov 10: Mahj Pit, YOLO, Noli June, Maison Mahj, Mah Jongg Maven, Soirée, Wren, Amanda Toppe, Middle & Main were missing).
 

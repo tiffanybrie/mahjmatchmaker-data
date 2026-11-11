@@ -27,6 +27,8 @@ TEASER = re.compile(r'tease|sneak peek|coming|soon|en route|no date|unannounced|
 LIVEWORDS = re.compile(r'dropped|reservations open|taking orders|back in stock|\\bback\\b|in stock|live|restock|pre-?order|now taking orders|arrived|on sale', re.I)
 SOLD = re.compile(r'sold out(?! now)|sold out again', re.I)
 words = lambda t: {w for w in re.findall(r'[a-z]{3,}', norm(t)) if w not in STOP}
+# Tiffany Nov 11 10:14am: tile sets are bigger news than mats/racks: a tile item's photo is the TILES, and tile news leads.
+TILEY = lambda x: bool(re.search(r'\btiles?\b|tile set', x['what'], re.I)) and not re.search(r'clutch|bag|case|travel|rack', x['what'], re.I)
 def product(x, hosts):
     for k in ('buy', 'url', 'source'):
         u = x.get(k) or ''
@@ -41,7 +43,7 @@ def product(x, hosts):
     for hk, P in SNAP.items():
         if not any(hk.replace('www.', '') == h.replace('www.', '') for h in hosts): continue
         for hd, pr in P.items():
-            sc = len(want & words(pr['title']))
+            sc = len(want & words(pr['title'])) + (3 if TILEY(x) and re.search(r'\btiles?\b|tile set', pr['title'], re.I) else 0)   # Nov 11: tiles beat mats for the photo
             if sc >= 1 and any(len(w) >= 5 for w in want & words(pr['title'])) and (best is None or sc > best[0]): best = (sc, hk, hd, pr)
     return best[1:] if best else None
 def shop(x):
@@ -87,7 +89,8 @@ def grouped(L):
     order, G = [], {}
     for x in L:
         k = clean(x['brand']); (order.append(k) if k not in G else None); G.setdefault(k, []).append(x)
-    return [G[k] for k in order]
+    gs = [G[k] for k in order]
+    return sorted(gs, key=lambda g: 0 if any(TILEY(x) for x in g) else 1)   # stable: tile news first, then the rest in date order
 P = lambda L: [x for x in L if x.get('partner') and 'yellow mountain' not in x.get('brand', '').lower() and 'ymi' not in x.get('brand', '').lower()]
 for _k in ('this_week', 'sales', 'coming_soon', 'just_dropped'):
     for _x in d[_k]: _x['_sec'] = _k
