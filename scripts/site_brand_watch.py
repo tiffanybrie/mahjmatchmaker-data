@@ -65,12 +65,16 @@ def KIND_OK(x, pr):
     k = (pr.get('kind') or '').replace('travel ', '')
     want = 'tiles' if re.search(r'\btiles?\b|tile set', x.get('tag') or '') else 'rack' if 'rack' in (x.get('tag') or '') else 'mat' if re.search(r'\bmats?\b', x.get('tag') or '') else ''
     return not want or not k or k == want
+def bcode(brand):   # Nov 11 4:41pm: each brand's OWN code (Yellow Mountain = MAHJMATCH10-YMI-2025), never assume MAHJMATCH
+    k = _ckey(brand); k2 = _ckey(_CTA.get(k, brand))
+    t = next((v for kk, v in (_CT.get('terms') or {}).items() if _ckey(kk) in (k, k2)), {}) or {}
+    return t.get('code') if t.get('code') and ' ' not in str(t.get('code')) else 'MAHJMATCH'
 def shop(x):
-    r = route(x['brand']); hosts = r.get('store_hosts') or []
+    r = route(x['brand']); hosts = r.get('store_hosts') or []; BC = quote(bcode(x['brand']))
     b = x.get('buy') or ''
     if b and '/products/' not in b.replace('%2F', '/') and not TEASER.search(x['what'].split(';')[0]):   # explicit store/collection link: use it as given
         code = r.get('route') == 'code-site'; h = urlparse(b).netloc.replace('www.', '')
-        if code and h in AUTO and '/discount/' not in b: b = f'https://{urlparse(b).netloc}/discount/MAHJMATCH?redirect={quote(urlparse(b).path or "/")}'
+        if code and h in AUTO and '/discount/' not in b: b = f'https://{urlparse(b).netloc}/discount/{BC}?redirect={quote(urlparse(b).path or "/")}'
         return (b, code), None
     hit = product(x, hosts)
     if not hit:
@@ -79,7 +83,7 @@ def shop(x):
         # send them to the brand's store with the code rather than leaving a live item with no button
         if hosts and r.get('route') == 'code-site' and (x.get('_sec') == 'sales' or (LIVEWORDS.search(head) and not TEASER.search(head) and not SOLD.search(head))) and 'comment ' not in head.lower():
             code = r.get('route') == 'code-site'; h = hosts[0]
-            return ((f'https://{h}/discount/MAHJMATCH' if code and h.replace('www.', '') in AUTO else f'https://{h}/'), code), None
+            return ((f'https://{h}/discount/{BC}' if code and h.replace('www.', '') in AUTO else f'https://{h}/'), code), None
         return None, None
     host, handle, pr = hit
     head = x['what'].split(';')[0]   # 'Emerald back in stock; Ruby Red is sold out' -> judge the item, not its sibling
@@ -89,7 +93,7 @@ def shop(x):
     if pr is not None and not (pr.get('avail') or pr.get('pre') or fresh_live): return None, pr.get('img')   # nothing to buy right now
     code = r.get('route') == 'code-site' and 'no promo code' not in x['what'].lower()   # every code partner shows the code, auto-applied or typed
     path = f'/products/{handle}'
-    u = (f'https://{host}/discount/MAHJMATCH?redirect={quote(path)}' if code and host.replace('www.', '') in AUTO else f'https://{host}{path}')
+    u = (f'https://{host}/discount/{BC}?redirect={quote(path)}' if code and host.replace('www.', '') in AUTO else f'https://{host}{path}')
     return (u, code), (pr or {}).get('img')
 def clean(b): return re.sub(r'\s*\(image-only\)', '', b)
 def stamp(f):   # Tiffany Nov 11 10:04am: every update timestamped (when WE posted it), like a live ticker
@@ -155,7 +159,8 @@ def save_line(brand):
     if t.get('perk'): what = 'for ' + t['perk'].replace('complimentary', 'free')
     elif pct: what = f'to save {pct}%' + (f' on orders over ${t["min_order"]}' if t.get('min_order') else '') + (f' (not on {t["scope"].replace("excludes ", "")})' if str(t.get('scope', '')).startswith('excludes') else '')
     else: what = ''
-    return f'<div class="bw-save">Use code <b>MAHJMATCH</b> at {e(b)}' + (f' {e(what)}' if what else '') + '.</div>'
+    code = (t.get('code') if t else None) or 'MAHJMATCH'   # Nov 11 4:41pm: Yellow Mountain's code is MAHJMATCH10-YMI-2025, never plain MAHJMATCH
+    return f'<div class="bw-save">Use code <b>{e(code)}</b> at {e(b)}' + (f' {e(what)}' if what else '') + '.</div>'
 CAP = 2   # Tiffany Nov 11 10:17am: big-inventory brands (Let's Be Besties: 175 new mats) can't dominate; 2 per brand per section, then "See all"
 bslug = lambda b: re.sub(r'[^a-z0-9]+', '-', clean(b).lower()).strip('-')
 def card(group, cap=CAP, label=''):

@@ -41,6 +41,7 @@ for b, v in J('config/link-routes.json')['brands'].items():
 for v in J('config/fym-partner-coverage.json', {'brands': []})['brands']:
     add(v['brand'], 'fym-coverage')
 for v in J('config/partners-pipeline.json', {'brands': []})['brands']:
+    if v.get('approved', True) is False: continue   # applied, not approved yet (e.g. Sweet Jojo Nov 11): not a partner
     add(v['brand'], 'pipeline', [v.get('store', '')])
 for b, v in J('config/link-routes.json')['brands'].items():  # store hosts for partners whatever their link route
     if norm(b) in partners: partners[norm(b)]['hosts'] |= {h.replace('www.', '') for h in v.get('store_hosts', [])}
@@ -97,8 +98,9 @@ for k, p in sorted(partners.items(), key=lambda x: x[1]['brand'].lower()):
         r['fym_' + kind] = ('excused: ' + ex) if (miss and ex) else (miss or 'ok')
         r['shop_' + kind] = r.get('shop_' + kind, 0) + sum(1 for h in hosts for it in snap[h].values() if it.get('kind') == kind and (it.get('min') or 0) >= floor and not BAD.search(it.get('title', '')))
         r['miss_' + kind] = miss
-        if k in CUR:
-            r['fym_' + kind] = f'curated: {len(miss)} not brought in on purpose (config/curated-brands.json)'; r['miss_' + kind] = []; continue
+        if k in CUR:   # big-catalog brand (Nov 11 4:41pm): whole store comes in, 10 per run, never floods suggestions
+            if miss: r['gaps'].append(f'BIG CATALOG: {len(miss)} {label} to bring in, 10 per coverage run (more on spare-usage weekends); suggestions capped')
+            continue
         if miss and not ex and not code_ok(k):
             r['gaps'].append(f'HELD {len(miss)} {label}: no working code yet, so do NOT add them (they would carry unpaid links). Get the code first')
         elif miss and not ex: r['gaps'].append(f'{len(miss)} {label} not in FYM: ' + '; '.join(miss[:6]) + (' …' if len(miss) > 6 else ''))
@@ -143,7 +145,7 @@ if not live:
     print('PARTNER COVERAGE: could not read the live codes page'); sys.exit(1)
 if '--front' in a:
     for r in g:
-        old = max((r.get('age') or {}).values() or [0])
+        old = max([v for g2, v in (r.get('age') or {}).items() if not g2.startswith('BIG CATALOG')] or [0])
         print(f"PARTNER HALF SET UP{' (OVERDUE ' + str(old) + ' days)' if old > 3 else ''}: {r['brand']}: {' | '.join(r['gaps'])}. Owner: the daily Partner coverage task; any chat may fix it now. Excuse only with a reason + review date in config/partner-coverage-excuse.json.")
     sys.exit(0)
 print(f'PARTNER COVERAGE: {len(rows)} partners, {len(g)} half set up')

@@ -1,21 +1,25 @@
 {
- "_about": "CURATED BRANDS (Tiffany Nov 11 4:15-4:17pm: \"I do not want the app to become a Splash of Color experience... They cannot hog the platform... these aren't even big earners\"). For these brands the app does NOT carry the whole store. Their products come in only as (a) Tiffany's album/match picks, (b) Claude's best few per album, or (c) items she OKs, and FYM's per-brand cap (gate [140] BCAP) keeps them from flooding colour chips. partner_coverage.py shows them as 'curated: N in app of M in store', never as missing items. Never bulk-import these. To change a brand's status: her word only.",
+ "_about": "BIG-CATALOG BRANDS (Tiffany Nov 11 4:15pm, REVISED 4:41pm). Their WHOLE inventory still comes into Find Your Mat-ch (we promise every partner mat is in there; someone searching a mat by name or brand must find it), but SLOWLY and SAFELY: 10 products per coverage run (bigger stretches only when Tiffany says she has spare usage, e.g. a Saturday night), and the app must never let them crowd suggestions: (1) per-brand cap in every suggestion list (gate [140] BCAP: max 6 of the first 30, never back to back), (2) tile sets from these brands rank BELOW all other partners' sets in colour lists and in mat-first tile suggestions, (3) colour theory still decides what matches. partner_coverage shows them as 'big catalog: N to bring in, 10 per run', not as overdue gaps.",
  "brands": {
   "Splash of Color": {
    "since": "2026-11-11",
-   "why": "huge print-on-demand catalog (47 tile sets, 600+ mats); she likes the brand least; must never flood tile or mat colour browsing"
+   "why": "huge print-on-demand catalog (47 tile sets, 600+ mats); she likes the brand least; must never flood tile or mat colour browsing; largest tile catalog of any partner (~300 tile sets in store)",
+   "mode": "big-catalog"
   },
   "Let's Be Besties": {
    "since": "2026-11-11",
-   "why": "191+ artist mats; already in with the per-brand cap; fine so far, watch for flooding"
+   "why": "191+ artist mats; already in with the per-brand cap; fine so far, watch for flooding",
+   "mode": "big-catalog"
   },
   "Mah Jongg Maven": {
    "since": "2026-11-11",
-   "why": "115 tile sets + 33 mats; generic; partner since Jan but brought in recently; she is concerned about flooding"
+   "why": "115 tile sets + 33 mats; generic; partner since Jan but brought in recently; she is concerned about flooding; ~116 full-size tile sets (2nd largest after Splash): ~29 blue, ~20 pink, ~15 white, ~12 green, ~10 jewel tone, ~9 turquoise, ~8 red, ~7 lavender, ~53 themed with no colour in the name (Peanuts, Coca-Cola, Christmas)",
+   "mode": "big-catalog"
   },
   "Mahjong by SI": {
    "since": "2026-11-11",
-   "why": "1,100+ mats (Shopify, mahjongbysi.com); same flooding risk"
+   "why": "1,100+ mats (Shopify, mahjongbysi.com); same flooding risk",
+   "mode": "big-catalog"
   }
  }
 }
