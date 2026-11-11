@@ -41,8 +41,9 @@ def thumb(src):
 
 STEPS = [('tile', 'Tile photo OK'), ('fym', 'Tiles in FYM'), ('colour', 'Colour card'), ('research', 'FB groups searched'),
          ('discover', 'Mat discovery'), ('cards', 'Cards built'), ('review', 'Review page sent'), ('answered', 'Your answers in'),
-         ('bringins', 'Bring-ins paid'), ('week', 'Launch week set'), ('kit', 'Launch kit in Planoly'), ('email', 'Email drafted'),
-         ('live', 'Live + announced')]
+         ('bringins', 'Bring-ins paid'), ('week', 'Launch week set'), ('carousel', 'Catalog carousel in Planoly'),
+         ('share', "It's a mat-ch! share card"), ('reel', 'Canva reel built (folder + music ideas)'), ('email', 'Email drafted'),
+         ('finish', 'You finish the reel + Duet checks'), ('live', 'Live + announced')]
 
 def gate(slug, golive=False):
     r = subprocess.run(['python3', R + 'scripts/checks/album_gate.py', slug] + (['--golive'] if golive else []), capture_output=True, text=True)
@@ -75,7 +76,10 @@ def readiness(a):
     if s['cards'] == 'done':
         gf, _ = gate(slug, True); s['bringins'] = 'todo' if '10b' in gf else 'done'
     kit = rec.get('launch_kit') or {}
-    s['kit'] = 'done' if kit.get('planoly_group_ids') else 'todo'
+    s['carousel'] = 'done' if kit.get('carousel_planoly_id') else 'todo'
+    s['share'] = 'done' if kit.get('share_card_planoly_id') else 'todo'
+    s['reel'] = 'done' if kit.get('canva_reel_id') and kit.get('canva_folder_id') and kit.get('music_ideas') else 'todo'
+    s['finish'] = 'done' if (kit.get('reel_finished_at') and kit.get('duet_checked_at')) else ('waiting' if s['reel'] == 'done' else 'todo')
     s['email'] = 'done' if (rec.get('email') or {}).get('campaign_id') else 'todo'
     return s, True
 
@@ -144,7 +148,7 @@ details{{margin-top:4px;font-size:13px}} summary{{cursor:pointer;color:var(--acc
 <p class="sub">One album a week. Each card's readiness is checked automatically from the album's own files, the album gates and the live site, so a step only turns green when the work actually exists. Weeks marked <em>proposed</em> are my suggestion until you OK them. Updated {now}.</p>
 <ul class="legend">{legend}</ul>
 {body}
-<p class="foot">Steps follow the Album Playbook: tile photo OK, tiles in Find Your Mat-ch, colour card, Facebook groups searched, mat discovery, cards built, review page, your answers, bring-ins paid, launch week, launch kit in Planoly, email, live + announced. Nothing goes live before its week, and never without its launch kit.</p>
+<p class="foot">Steps follow the Album Playbook: tile photo OK, tiles in Find Your Mat-ch, colour card, Facebook groups searched, mat discovery, cards built, review page, your answers, bring-ins paid, launch week, catalog carousel, It's a mat-ch! share card, Canva reel, email, then the last step: you finish the reel while Duet checks everything, then live + announced. Nothing goes live before its week, and never without its launch kit.</p>
 </div>'''
 os.makedirs(os.path.dirname(OUT), exist_ok=True); open(OUT, 'w').write(page)
 print('wrote', OUT, len(page) // 1024, 'KB;', len(Q), 'albums')
