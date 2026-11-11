@@ -14,3 +14,6 @@ Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune i
 - Oct 24: Ruth mat + Après Mahjong dice dish styled with Sue table, @luckydaughters_official racks and @maisonmahj tiles (De5Hx2DPeDI). Pairs with other brands' tiles/racks (they don't make their own).
 - Oct 22-23: folding scalloped table "made to order, four finishes"; fall giveaway with That Mahjong Moment tiles + Miss Mahjong Tortoise & Brass racks (DezJbl7keEc).
 Tone: witty storytelling names ("Ruth Took the Last Run in the Dark"), grandmillennial/heirloom; long SEO keyword lists; "Comment TABLE/LADIES" DM funnels. #mahjong #mahj #americanmahjong #mahjongmat #mahjongtable
+
+## Brand note (Tiffany Nov 11 2026)
+- Noli June sells That Mahjong Moment's tiles (Best in Show, Holiday Soiree) but not That Mahjong Moment's mats; likely the same owner. That Mahjong Moment has NO affiliate program (group codes only). Noli June IS an affiliate. Album pick: Best in Show (pink). Ask Noli June about the relationship only if Tiffany says so.
