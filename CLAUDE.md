@@ -1,6 +1,6 @@
 # Mahj Matchmaker repo: rules for any Claude session (read first)
 
-**THREE CHATS (Oct 22): read docs/CHATS.md first to see which chat you are and what you own.**
+**ONE CHAT NOW (Tiffany Nov 11 12:18pm): she talks to Main for albums + everything; Ops only for ShopMy/Amazon link chores. No handoffs between chats (that's where things dropped). Old split: docs/CHATS.md.**
 **STANDING AUTHORITY (Tiffany, Oct 22 2:51pm: "I don't want to have things that are so key to the number one objective that it would feel like it needs to ask me for permission"). Core recurring jobs NEVER ask her for an OK; just do them on schedule and log them:**
 - refreshing the "verified" date/line on brand pages (NO code re-testing: Tiffany Oct 22 11:17pm "our codes work"; commissions prove it and customers will report a problem. Only change a code if a partner email says it changed), discount codes + links checks, the Google code report fixes, /links weekly refresh, album "now available" wording after a launch, broken link/image fixes, catalog adds that pass the gates, HQ/DESK cleanup.
 Ask her ONLY for: new decisions (taste, matches, new brands, wording she hasn't approved), anything that costs money, deleting things, new public posts/content. If an unattended scheduled task is blocked by a safety check from publishing, it is NOT her question: put it on DESK for the next attended chat (Ops/Main) to do that same day, and flag it on HQ only as "overdue, Claude's job" if it slips past 2 days.
