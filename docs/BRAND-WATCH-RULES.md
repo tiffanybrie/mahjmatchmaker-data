@@ -82,3 +82,8 @@ Nothing else gets built automatically.
 - Coming soon must say WHEN, or "No date yet" / "No name or date yet". Build refuses otherwise.
 - Not drops: store openings, gift cards, in-store-only previews, brick-and-mortar news. Keep only the product news (e.g. Middle & Main's Summit to Sea under Coming soon).
 - Know the product before writing it: open the product page (Noli June "Sue Adores a Scallop" is a $1,699 folding table, not a tablecloth).
+
+## Ticker style is GOOD (Tiffany Nov 11 12:04pm, clarifying 11:33)
+- The ban is only on brand-insider talk ("pushing", "here's what we want"). Timestamps and live status ("LIVE now since 4pm CT") are wanted: they show the page is current.
+- Keep the history: when a heads-up turns into a drop, don't erase the heads-up. Put it in the item's `history` [{found, what}] (shows as "Earlier · <time>: ...") and make `what` the new status. It proves we warned people first.
+- Tigre de Tartán: button says just "Shop" (code is image-only on the website).

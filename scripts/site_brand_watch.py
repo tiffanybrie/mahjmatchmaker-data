@@ -104,9 +104,9 @@ def line(x):
     when = ' · '.join(t for t in (x.get('day'), x.get('time')) if t)
     btn = ''
     if lk:
-        u, code = lk; btn = f'<a class="bw-btn" href="{e(u)}" target="_blank" rel="noopener">Shop{" · use code MAHJMATCH" if code else ""}</a>' + (save_line(x['brand']) if code else '')
+        u, code = lk; btn = f'<a class="bw-btn" href="{e(u)}" target="_blank" rel="noopener">Shop{" · use code MAHJMATCH" if code and 'tigre' not in x['brand'].lower() else ""}</a>' + (save_line(x['brand']) if code else '')
     st = stamp(x.get('found'))
-    return img, (f'<div class="bw-item">' + (f'<div class="bw-stamp">Added {e(st)}</div>' if st else '') + f'<div class="bw-what">' + ('<span class="bw-kind bw-k-new">New</span>' if not RESTOCK(x) and x.get('_sec') != 'sales' else '<span class="bw-kind bw-k-re">Restock</span>' if RESTOCK(x) else '') + f'{e(re.sub(r"^NEW:\s*", "", x["what"]))}</div>' + (f'<div class="bw-when">When: {e(when)}</div>' if when else '') + btn + '</div>')
+    return img, (f'<div class="bw-item">' + (f'<div class="bw-stamp">Added {e(st)}</div>' if st else '') + f'<div class="bw-what">' + ('<span class="bw-kind bw-k-new">New</span>' if not RESTOCK(x) and x.get('_sec') != 'sales' else '<span class="bw-kind bw-k-re">Restock</span>' if RESTOCK(x) else '') + f'{e(re.sub(r"^NEW:\s*", "", x["what"]))}</div>' + (f'<div class="bw-when">When: {e(when)}</div>' if when else '') + ''.join(f'<div class="bw-hist">Earlier{(" · " + e(stamp(h.get("found")))) if h.get("found") else ""}: {e(h["what"])}</div>' for h in (x.get('history') or [])) + btn + '</div>')
 # NEWS RANK (Tiffany Nov 11 10:29am): a tile set (travel too: big ticket) > new racks > rack restocks > mat restocks.
 # Brand-new beats a restock of something everyone has seen; brands known for something get their own order (config/brand-known-for.json).
 def KIND(x):   # the item's tag decides first ("mat ... pair with Catrina tiles" is a mat), then the words
@@ -228,6 +228,7 @@ body{{background:var(--bg);color:var(--ink);font:16px/1.45 Georgia,'Times New Ro
 .bw-bh{{font-size:30px;color:var(--navy);margin:10px 0 0}}
 .bw-bsec{{font-size:18px;color:var(--navy);margin:22px 0 10px}}
 .bw-kind{{display:inline-block;margin-right:6px;font:700 10px/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:3px 6px;border-radius:4px;vertical-align:1px}}.bw-k-new{{background:#e8457a;color:#fff}}.bw-k-re{{background:var(--line);color:var(--navy)}}
+.bw-hist{{margin-top:4px;font-size:12px;color:var(--muted,#5a6478);border-left:2px solid var(--line);padding-left:8px}}
 .bw-save{{margin-top:6px;font-size:12.5px;color:var(--muted,#5a6478)}}.bw-save b{{letter-spacing:.04em}}
 .bw-tag{{display:inline-block;margin-left:8px;vertical-align:1px;font:700 10px/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;border-radius:999px;background:var(--line);color:var(--navy)}}
 .bw-t-launching-now{{background:var(--pink);color:#fff}}
