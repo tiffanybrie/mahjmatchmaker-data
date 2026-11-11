@@ -43,7 +43,10 @@ STORES = {
     'tigredetartan.com': 'Tigre de Tartán', 'www.viroramahjong.com': 'Virora Mahjong', 'www.ymimports.com': 'Yellow Mountain Imports',
     'mahjongregister.com': 'Mahjong Register', 'theroyalmahjongsociety.com': 'The Royal Mahjong Society',
     'sundaymahjong.com': 'Sunday Mahjong', 'letsbebesties.com': "Let's Be Besties", 'www.fait-a-main.com': 'Fait à Main',
-    'soireeallday.co': 'Soirée All Day', 'sweetjojomahjong.com': 'Sweet Jojo Mahjong', 'splashofcolorco.com': 'Splash of Color',
+    'soireeallday.co': 'Soirée All Day',
+    # Nov 10 10:45pm (partner checklist): newer partners were never watched
+    'mahjpit.co': 'Mahj Pit', 'yolomahjong.com': 'YOLO Mahjong', 'nolijune.com': 'Noli June', 'maisonmahj.com': 'Maison Mahj',
+    'www.middleandmainmahjong.com': 'Middle & Main Mahjong', 'sweetjojomahjong.com': 'Sweet Jojo Mahjong', 'splashofcolorco.com': 'Splash of Color',
 }
 # brand-specific handling (CLAUDE.md + ANSWERS)
 NO_SOCIAL = {'Yellow Mountain Imports'}                 # never featured on social
