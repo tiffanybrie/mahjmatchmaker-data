@@ -42,10 +42,11 @@ hd.ellipse([0, 0, 160, 160], fill=(232, 74, 120, 255)); hd.ellipse([140, 0, 300,
 heart = heart.filter(ImageFilter.GaussianBlur(0.6))
 PSC = 1270 / frame.height                        # phone height on canvas
 PW_, PH_ = int(frame.width * PSC), int(frame.height * PSC)
-INTRO, HOLD, XF, SWIPE = 1.1, 0.8, 0.22, 0.5   # seconds
+INTRO, HOLD, XF, SWIPE = 1.0, 0.635, 0.2, 0.42   # seconds; sized so the whole segment = TOTAL (her cut: 16s)
 T = []; t = INTRO
 for i in range(len(screens)): T.append(t); t += HOLD + (SWIPE if i % 2 == 1 else XF)
-DUR = t + 0.4
+TOTAL = float(sys.argv[3]) if len(sys.argv) > 3 else 16.0
+DUR = TOTAL  # last screen holds to the end; never runs past her cut (Tiffany Nov 10 9:19pm)
 eo = lambda x: 1 - (1 - min(max(x, 0), 1)) ** 3
 def eb(x):
     x = min(max(x, 0), 1); c1 = 1.70158; c3 = c1 + 1; return 1 + c3 * (x - 1) ** 3 + c1 * (x - 1) ** 2
@@ -73,7 +74,8 @@ pipe = subprocess.Popen(['ffmpeg', '-loglevel', 'error', '-y', '-f', 'rawvideo',
 for n in range(int(DUR * FPS)):
     tt = n / FPS; cv = Image.new('RGBA', (W, H), BG + (255,))
     # headline: grows toward the viewer, then breathes
-    hs = 0.55 + 0.45 * eb(tt / 0.7) if tt < 0.7 else 1 + 0.015 * math.sin((tt - 0.7) * 2 * math.pi / 2.4)
+    s0 = min(1.0, 880 / HEAD.width)   # never edge to edge: >= 100px margin each side, even at the breathe peak
+    hs = s0 * (0.55 + 0.45 * eb(tt / 0.7) if tt < 0.7 else 1 + 0.012 * math.sin((tt - 0.7) * 2 * math.pi / 2.4))
     paste_scaled(cv, HEAD, W / 2, 360, hs, min(1, tt / 0.25))
     # phone rises in, then a slow push-in toward the viewer
     rise = eo((tt - 0.25) / 0.7); push = 1 + 0.06 * min(max((tt - INTRO) / (DUR - INTRO), 0), 1)
