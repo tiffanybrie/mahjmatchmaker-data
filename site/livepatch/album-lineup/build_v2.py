@@ -8,7 +8,7 @@ ALB={"Oh My Mahjong":("31 albums (every set incl. retired, Coquette, Juniper)","
 "Anders Ruff":("2: Brownstone Bloom, Dear Santa (holiday)","Green Light Gatsby half done (32 yes)."),
 "Sunday Mahjong":("2: Sunday Tile Set, December 1994 (holiday)","Sunday Blues building; Nature Walk, Plum Panda, Hummingbird queued."),
 "Charleston Mahjong Club":("1: Après Ski Club (holiday)","Cabana Club swipe book is ready for you."),
-"Virora Mahjong":("1: Nivalee Glacier Blue (holiday)","Tinselle Emerald (holiday) kit queued; Petalée banked (61 cards)."),
+"Virora Mahjong":("3 holiday (Tinselle Emerald, Tinselle Ruby, Nivalee Glacier Blue) + Petalée banked","Petalée (their most popular set) is banked for February after a readiness check. Next, no rush: Floria vs Viozelle (purple). A new release can jump the line."),
 "Bam! Let's Mahjong":("1: Holly Jolly (holiday only)","Needs a year-round album."),
 "Hip Hip Mahjong":("1: Rackin' Rudolph (holiday only)","Needs a year-round album."),
 "Mahj Squad":("1: Nutcracker Ballet (holiday only)","Needs a year-round album."),
