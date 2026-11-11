@@ -2,9 +2,15 @@
 """Public 'Brand Watch' page (Tiffany Nov 10 8:01am; asked again 7:39pm). Built from config/brand-watch-curated.json,
 partners only (no non-partners, no YMI), product news only. Output: site/livepatch/brand-watch/brand-watch.html
 (self-contained; the same markup goes into a Squarespace code block on a HIDDEN /brand-watch page until she says yes)."""
-import datetime, json, html, os, re
+import datetime, json, html, os, re, sys
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + '/'
 d = json.load(open(R + 'config/brand-watch-curated.json')); e = html.escape
+# CUSTOMER-FACING WORDS ONLY (Tiffany Nov 11 11:33am: "Pushing Holly Berry" came from a brand email; that language is for us).
+# `what` is what shoppers read: plain facts. Our notes go in `action`. The build refuses internal words.
+_INTERNAL = re.compile(r"\bpush(ing|es|ed)?\b|affiliate|commission|\bdraft|waiting|her yes|tiffany|claude|codes post|album day|\bteaser\b|sneak peek|\bFYM\b|sca_ref|\bwe\b|\bour\b|told us|per (their|the) email|buyable|\bTBD\b", re.I)
+_bad = [(k, x['brand'], x['what']) for k in ('this_week', 'just_dropped', 'sales', 'coming_soon') for x in d[k] if x.get('partner') and _INTERNAL.search(x['what'])]
+if _bad:
+    sys.exit('BRAND WATCH: internal wording in customer text (rewrite the `what` as plain facts):\n' + '\n'.join(f'  {k} | {b} | {w}' for k, b, w in _bad))
 # --- Nov 10 9:43pm (Tiffany): links must be CONSISTENT. Rule: a Shop button only when there is something to buy
 # (a product page that is in stock or on preorder), and every partner Shop button carries the code the same way.
 # Products come from config/partner-products-snapshot.json (the partner watch's own store snapshot) so a restock

@@ -68,3 +68,8 @@ Nothing else gets built automatically.
 - Brands known for something get their own order in config/brand-known-for.json. Miss Mahjong: tile sets > new racks > rack restocks > mat restocks (her opal / brass / tortoise acrylic racks are in more demand than her mats).
 - The item's `tag` decides its kind ("mats back, pair with Catrina tiles" is a mat). Mark `new: true` / `restock: true` in curated when the words don't say it.
 - Coming-soon tile sets from the store (Shopify tag `coming-soon`) go on the watch the day they appear (missed: Miss Darling Lilac, on the store since Oct 20, added Nov 11).
+
+## Customer-facing words only (Tiffany Nov 11 11:33am)
+- `what` is what shoppers read: plain facts ("The Holly Berry holiday mat is in stock for holiday mahj. Jade Luxe racks are sold out."). Never brand-email or internal language: "pushing", affiliate, commission, draft, waiting on her yes, codes post, album day, teaser, sneak peek, FYM, we/our.
+- Our notes (what to post, who approved) go in `action`, which is never shown.
+- site_brand_watch.py refuses to build if `what` carries internal words (_INTERNAL).
