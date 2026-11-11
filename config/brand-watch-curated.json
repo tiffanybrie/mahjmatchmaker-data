@@ -89,10 +89,10 @@
   {
    "date": "2026-11-10",
    "day": "Tue 11/10",
-   "time": "7pm CT (5pm PT)",
+   "time": "LIVE now (restocked 7pm CT Tue)",
    "brand": "Virora",
    "partner": true,
-   "what": "Lilacée in Yellow tiles RESTOCK (sold out now; 4 layers, vintage florals)",
+   "what": "Lilacée in Yellow tiles BACK in stock (restocked Tue 7pm CT; confirmed in stock Wed 9:40am ET; 4 layers, vintage florals)",
    "tag": "tiles",
    "action": "Group post drafted (docs/social/virora-lilacee-yellow-2026-11-10.post.txt, also carries the Tinselle Ruby pre-order); waiting her yes.",
    "url": "https://www.instagram.com/p/DfgNXkPo43d/",
@@ -202,11 +202,13 @@
   {
    "brand": "Amahj",
    "partner": true,
-   "what": "'A new season is coming' (fall tease)",
-   "tag": "tiles?",
+   "what": "Sneak peek: NEW tile set coming to their Stamped line (mint-green tiles in the teaser photo; 'Any guesses what's coming?'), no name or date yet",
+   "tag": "sneak peek",
    "action": "Watch",
-   "url": "https://www.instagram.com/reel/DfXKgl6pwy_/",
-   "urgency": "LATER"
+   "url": "https://amahjline.com",
+   "urgency": "LATER",
+   "date": "2026-11-11",
+   "source": "https://www.instagram.com/p/Dfmp5g0pvn5/"
   },
   {
    "brand": "Amanda Toppe",
@@ -631,6 +633,17 @@
   }
  ],
  "nonpartners": [
+  {
+   "date": "2026-11-11",
+   "day": "Tue 11/17",
+   "time": "10am ET",
+   "brand": "Bird Bam Tiles",
+   "partner": false,
+   "what": "Sneak peek: The Grandmillennial Collection, PRE-ORDER opens Tue 11/17 10am ET (email Nov 10 8pm ET)",
+   "urgency": "SOON",
+   "url": "https://birdbamtiles.com",
+   "ends": null
+  },
   {
    "brand": "Bougie Mahjong",
    "what": "Peppermint Chinoiserie holiday mat launched (mint green, poinsettias; 4 ready to ship)",

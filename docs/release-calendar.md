@@ -1,10 +1,10 @@
 # Mahj Matchmaker release calendar
 
-Updated 2026-11-10T23:36:00Z from brand sites, the Sunday release schedule, brand Instagram feeds (Planoly) and Gmail. Source of truth: `config/release-calendar.json`; regenerate with `python3 scripts/release_calendar/build_md.py`.
+Updated 2026-11-11 from brand sites, the Sunday release schedule, brand Instagram feeds (Planoly) and Gmail. Source of truth: `config/release-calendar.json`; regenerate with `python3 scripts/release_calendar/build_md.py`.
 
 **Rule (Tiffany, Oct 21):** save restock content for the buying window. Don't spend a set's content before you can buy it; post 1-2 weeks before a dated restock so people pick their mat and have the code ready when it drops.
 
-## Next 8 weeks (Nov 10 - Jan 05)
+## Next 8 weeks (Nov 11 - Jan 06)
 
 | Post window | Brand | Product | Drop date / window | Album | Affiliate | What to post |
 |---|---|---|---|---|---|---|
@@ -28,19 +28,12 @@ Updated 2026-11-10T23:36:00Z from brand sites, the Sunday release schedule, bran
 | 2026-11-06 | Anders Ruff | Christmas Solo Mat (pairs with Dear Santa tiles) | 2026-11-06 | no | yes | Solo-play mat: record only. |
 | 2026-11-07 | Virora Mahjong | Florielle tiles (Rose Red, 4 layers) | 2026-11-07 | no | yes | Restock playbook: reshare + FYM frames assets/social/restock-florielle-nov07 (her review). |
 | 2026-11-08 | Sunday Mahjong | Vegan Leather Mat, Regular size 33in (Chestnut, Ruby, Forrest) - new size | 2026-11-08 | no | no | Non-partner, no code. FYM/catalog pass adds the full-size mats if not already in (match-inbox); no dedicated post. |
-| 2026-11-10 | Virora Mahjong | Lilacée tiles (yellow-lilacee listing) | 2026-11-10 17:00 | no | yes | No album. Optional restock story on the day with link + code. |
-| 2026-11-10 | Miss Mahjong | New acrylic racks: Bombshell Pink, Butter Yellow, Pistachio, Peony, Chartreuse | 2026-11-10 | no | yes | Accessory (racks): record only. Check store Nov 10; rack picks may use them. |
 | 2026-11-10 | Charleston Mahjong Club | The Cabana Club Edition (full-size tiles): first batch arriving | LIVE Tue Nov 10 for email subscribers (early access, email 6:55am ET); public opening next; next batch December | no | yes | Sneak-peek heads-up sent Nov 5. Swipe book already exists (https://claude.ai/artifact/Lwn53gw8cf28z5FUEKTijs): reuse it, no second book. When it goes live: reshare CMC's post to stories (MAHJMATCH). Teaser: assets/launches/cmc-cabana-club-teaser/ |
-| 2026-11-10 | Tigre de Tartán | Domino Blonde mat (rules + no-text editions) | 2026-11-10 | no | yes |  |
-| 2026-11-10 | Miss Mahjong | Scalloped acrylic racks in 5 new colors: Butter Yellow, Pistachio, Chartreuse, Peony, Bombshell Pink ($150) | 2026-11-10 10:00 | no | yes |  |
-| 2026-11-10 | Virora Mahjong | Tinselle Ruby Red tiles (Christmas Collection I), pre-order |  | no | yes |  |
-| 2026-11-10 | Mahj Mood | Flash sale: buy one mat, second 1/2 off (codes don't stack) | 2026-11-10 | no | yes |  |
-| 2026-11-10 | My Fair Mahjong | Crystal Confetti tiles, Calm Blue | 2026-11-10 | no | yes |  |
-| 2026-11-10 | Virora Mahjong | Tinselle Emerald Green Christmas tiles ($299) | 2026-11-10 | no | yes |  |
 | 2026-11-11 | Mahj Pit | Christmas tiles launch (red backs with folk-floral faces + gold-glitter confetti tiles; looks like the Merry Merry Holiday Tiles Limited Edition design, currently sold out on the store) | 2026-11-11 | no | yes | Check store Nov 11; if it's a NEW design (not Merry Merry relisted) treat as a partner launch. Photo: assets/launches/mahjpit-christmas-tiles-teaser/. |
 | 2026-11-11 | Mahj Pit | Original Confetti tiles restock (Small $395 / Large $495) | 2026-11-11 | no | yes | Restock of existing set; check store Nov 11. |
 | 2026-11-11 | Oh My Mahjong | Juniper tiles ($475) + Lotus Cove mat ($90) | 2026-11-11 10:00 | Juniper (album set built, waits on her picks by Nov 9) | yes | Album live with the launch; group post per the Papaya precedent (needs/launch-juniper-mahjong-tiles). |
 | 2026-11-11 | Peace Love Mahjong | Cane Tile Clutches ($60; Lilac/Mint/Teal) + PLM Keychains ($10) | 2026-11-11 | no | yes |  |
+| 2026-11-11 | Amahj | New tile set for the Stamped line (unnamed; mint-green tiles in teaser photo) | soon, no date | no | yes | Watch the store; when it lists, FYM pending queue + Brand news sheet + group post on her yes. |
 | 2026-11-12 | Let's Mahj On | New lineup: tile sets Wild, Sweet, Golf, Refined, Merry, Stir Things Up (was '7 new designs') | delayed to mid-November (IG Oct 29); was ~Nov 9 | no | yes | Sneak peek flagged Nov 2. Watch letsmahj-on.com; swipe book the day photos/listing appear (not an album jump: not MRC/OMM). Teaser: assets/launches/lmo-new-lineup-teaser/ |
 | 2026-11-13 | Mahjong Row & Co. | Sloane Floral mat (NEW: oversized botanicals + pinstripe, deep teal/cream/tobacco) + Foxhill Plaid mat (plaid with gingham border, camel/burgundy/brown) | 2026-11-13 | no | yes | Watch the store; swipe book the day photos/listing appear (book gate, no second book). Teaser photos: assets/launches/mahjongrow-sloane-foxhill-teaser/. Foxhill Plaid pairs with Moody Tortoise (drop Nov 6). |
 | 2026-11-16 to 2026-11-30 | Sunday Mahjong | Sunday Blues tiles | around Thanksgiving (Nov 26, 2026), limited, no preorder | Sunday Blues | no | Hold Sunday Blues album content. Tease once Sunday emails the date (expect the week of Nov 16-23); 'pick your mat' post 1-2 days before; launch-day story. Limited + no preorder = short window. No code (non-partner): plug partner mats/racks from the album instead. |
@@ -68,6 +61,7 @@ Updated 2026-11-10T23:36:00Z from brand sites, the Sunday release schedule, bran
 | Brand | Product | Type | Date / window | Album | Affiliate | Content timing | Source |
 |---|---|---|---|---|---|---|---|
 | Amahj | 'A new season is coming to Amahj soon' (unnamed; fall/winter) | coming soon | soon, no date | no | yes | Watch the store; if it's a new tile set or mat, launch watch logs it + swipe book per the gate. | [IG @amahjline Nov 5](https://www.instagram.com/reel/DfXKgl6pwy_/) |
+| Amahj | New tile set for the Stamped line (unnamed; mint-green tiles in teaser photo) | coming soon | soon, no date | no | yes | Watch the store; when it lists, FYM pending queue + Brand news sheet + group post on her yes. | [IG @amahjline Nov 11](https://www.instagram.com/p/Dfmp5g0pvn5/) |
 | Amahj | On The Water tiles: new batch (restock of existing set) | restock | 'in the works', no date | no | no | Record only; watch for a date. | [IG @amahjline Oct 31](https://www.instagram.com/reel/DfKSrOFpER2/) |
 | Amanda Toppe | Lila mat (full size 33in; travel 22.5in releases first) | coming soon | Travel Lila (22.5in, 100 made, with case) Mon Nov 2 10am ET; full-size 33in in production, preorder once arrival date is firm | no | yes | Sneak peek flagged to Tiffany Oct 29. Travel version: no album (travel rule). Full-size Lila: watch the store; swipe book the day photos/listing appear. Painterly hydrangea blues, lilac, pink and soft green. Photos: assets/launches/amandatoppe-lila-teaser/ | [Instagram @amandatoppeliving Oct 29](https://www.instagram.com/p/DfGBN7fGbpN/) |
 | Amanda Toppe | Full-size Lila mat (preorder details soon) | launch |  | no | yes |  | [link](https://www.instagram.com/p/Dfh3q5fyXYb/) |

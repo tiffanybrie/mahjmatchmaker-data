@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-10T23:36:00Z",
- "updatedBy": "Partner watch Tue 6:35pm ET",
+ "updated": "2026-11-11",
+ "updatedBy": "Partner watch Wed 9:55am ET",
  "rules": {
   "timing": {
    "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -1455,7 +1455,7 @@
    "windowStart": "2026-11-05",
    "windowEnd": "2026-11-30",
    "date": null,
-   "status": "teased IG Nov 5 8:43am ET; product not named (video withheld by Instagram); amahjline.com shows nothing new 9:45am ET",
+   "status": "teased IG Nov 5 8:43am ET; product not named (video withheld by Instagram); amahjline.com shows nothing new 9:45am ET | Nov 11: likely this = new Stamped-line set (see amahj-stamped-new-set-teaser-nov11)",
    "source": "IG @amahjline Nov 5",
    "sourceUrl": "https://www.instagram.com/reel/DfXKgl6pwy_/",
    "album": false,
@@ -1957,6 +1957,23 @@
    "album": false,
    "affiliate": true,
    "priority": 3
+  },
+  {
+   "id": "amahj-stamped-new-set-teaser-nov11",
+   "brand": "Amahj",
+   "product": "New tile set for the Stamped line (unnamed; mint-green tiles in teaser photo)",
+   "type": "coming soon",
+   "window": "soon, no date",
+   "windowStart": "2026-11-11",
+   "windowEnd": "2026-12-15",
+   "date": null,
+   "status": "sneak peek IG Nov 11 9:06am ET: 'Our Signature line got a new friend with On the Water… now it's our Stamped line's turn. Any guesses what's coming?' Teaser image saved assets/launches/amahj-stamped-teaser/",
+   "source": "IG @amahjline Nov 11",
+   "sourceUrl": "https://www.instagram.com/p/Dfmp5g0pvn5/",
+   "album": false,
+   "affiliate": true,
+   "priority": 3,
+   "contentTiming": "Watch the store; when it lists, FYM pending queue + Brand news sheet + group post on her yes."
   }
  ],
  "sources": {

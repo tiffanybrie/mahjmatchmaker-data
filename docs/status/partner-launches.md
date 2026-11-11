@@ -1,14 +1,26 @@
-# Partner launches & restocks (2026-11-10 23:29 UTC)
+# Partner launches & restocks (2026-11-11 14:33 UTC)
 
-## Since last run: 6 to act on
-- **NEW VARIANT** Britt Mills · Britt Mills Mahjong Mat Art Wall Calendars (2027) (mat) · 11" x 8.5" / Matte · https://brittmillsdesign.com/products/britt-mills-mahjong-mat-art-wall-calendars-2027
-- **RESTOCK** My Fair Mahjong · CRYSTAL CONFETTI  |  Calm Blue  |  Mahjong with a Sprinkle of Color and Joy (tiles) · Default Title · https://myfairmahjong.com/products/confetti-calm-blue
-- **RESTOCK** Tigre de Tartán · Mahjong Mat, DOMINO BLONDE (mat) · Default Title · https://tigredetartan.com/products/mahjong-mat-domino-blonde
-- **RESTOCK** Tigre de Tartán · Mahjong Mat, DOMINO BLONDE [W/ RULES] (mat) · Default Title · https://tigredetartan.com/products/mahjong-mat-domino-blonde-rules-edition
-- **PREORDER** Tigre de Tartán · Katherine Hartman X Tigre de Tartán Mahjong Mat, BIRDSONG (mat) · https://tigredetartan.com/products/katherine-hartman-x-tigre-de-tartan
-- **RESTOCK** Virora Mahjong · Christmas Collection I · Tinselle — Emerald Green (tiles) · Emerald Green -4 Layers · https://www.viroramahjong.com/products/tinselle-emerald-green
+## Since last run: 7 to act on
+- **RESTOCK** Virora Mahjong · Lilacée Mahjong Tiles (tiles) · Lilacée- Yellow 4 Layers · https://www.viroramahjong.com/products/yellow-lilacee
+- **NEW** Mahjong Register · Poppy & Prep Double-Sided Mahjong Mat – Neoprene 33" (mat) · https://mahjongregister.com/products/poppy-prep-double-sided-neoprene-mahjong-mat
+- **NEW** Mahjong Register · Tangerine & Twist Double-Sided Mahjong Mat – Neoprene 33" (mat) · https://mahjongregister.com/products/tangerine-twist-double-sided-neoprene-mahjong-mat
+- **NEW** Mahjong Register · Blaire & Briar Double-Sided Mahjong Mat – Neoprene 33" (mat) · https://mahjongregister.com/products/blaire-briar-double-sided-neoprene-mahjong-mat
+- **NEW** Mahjong Register · Rosewater & Wine Double-Sided Mahjong Mat – Neoprene 33" (mat) · https://mahjongregister.com/products/rosewater-wine-double-sided-neoprene-mahjong-mat
+- **NEW** Let's Be Besties · Sleeping Tiger Wanda Viola Artist Mahjong Mat (mat) · https://letsbebesties.com/products/sleeping-tiger-wanda-viola-artist-mahjong-mat
+- **NEW** Let's Be Besties · Chinoiserie Cabbage Plates Wanda Viola Artist Mahjong Mat (mat) · https://letsbebesties.com/products/chinoiserie-cabbage-plates-wanda-viola-artist-mahjong-mat
 
 ## Created/published in the last 7 days (tiles, mats, racks)
+- 2026-11-10 · Mahjong Register · Poppy & Prep Double-Sided Mahjong Mat – Neoprene 33" (mat) · available · https://mahjongregister.com/products/poppy-prep-double-sided-neoprene-mahjong-mat
+- 2026-11-10 · Mahjong Register · Tangerine & Twist Double-Sided Mahjong Mat – Neoprene 33" (mat) · available · https://mahjongregister.com/products/tangerine-twist-double-sided-neoprene-mahjong-mat
+- 2026-11-10 · Mahjong Register · Blaire & Briar Double-Sided Mahjong Mat – Neoprene 33" (mat) · available · https://mahjongregister.com/products/blaire-briar-double-sided-neoprene-mahjong-mat
+- 2026-11-10 · Mahjong Register · Rosewater & Wine Double-Sided Mahjong Mat – Neoprene 33" (mat) · available · https://mahjongregister.com/products/rosewater-wine-double-sided-neoprene-mahjong-mat
+- 2026-11-10 · Let's Be Besties · Sleeping Tiger Wanda Viola Artist Mahjong Mat (mat) · available · https://letsbebesties.com/products/sleeping-tiger-wanda-viola-artist-mahjong-mat
+- 2026-11-10 · Let's Be Besties · Chinoiserie Cabbage Plates Wanda Viola Artist Mahjong Mat (mat) · available · https://letsbebesties.com/products/chinoiserie-cabbage-plates-wanda-viola-artist-mahjong-mat
+- 2026-11-10 · Mahj Pit · Hand-Marbled Tile Box |  Large (tiles) · available · https://mahjpit.co/products/hand-marbled-keepsake-box-set-in-marais
+- 2026-11-10 · Mahj Pit · Nude Bamboo  - Set of 4 (rack) · available · https://mahjpit.co/products/nude-bamboo-set-of-4
+- 2026-11-10 · Mahj Pit · Travel Mat: Cranberry (travel mat) · available · https://mahjpit.co/products/travel-mat-snowport-copy
+- 2026-11-10 · Mahj Pit · Travel Mat: Snowport (travel mat) · available · https://mahjpit.co/products/travel-mat-freckles-copy
+- 2026-11-10 · YOLO Mahjong · Ivory Crocodile Print Mahjong Mat (Shipped Rolled Up) (mat) · available · https://yolomahjong.com/products/ivory-crocodile-print-mahjong-mat-shipped-rolled-up
 - 2026-11-10 · Splash of Color · Saturday Night Mahj Fever Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/saturday-night-mahj-fever-mahjong-mat-sleek-surface-1
 - 2026-11-09 · Let's Mahj On · Let's Golf! in Celedon Mist (tiles) · available · https://www.letsmahj-on.com/products/lets-golf-celedon-mist
 - 2026-11-09 · Let's Mahj On · Let's Golf! in Magnolia Blush (tiles) · available · https://www.letsmahj-on.com/products/lets-golf-celedon-mist-copy
@@ -226,31 +238,32 @@
 - 2026-11-05 · Miss Mahjong · Wild West Travel Mat 21"x21" (travel mat) · available · https://missmahjong.com/products/wild-west-travel-mat
 - 2026-11-05 · Miss Mahjong · Oasis Travel Mat 21"x21" (travel mat) · available · https://missmahjong.com/products/oasis-travel-mat-21x21
 - 2026-11-05 · Fait à Main · TEXAS MON AMOUR MAT GREEN (mat) · available · https://www.fait-a-main.com/products/texas-mon-amour-mat-green
+- 2026-11-05 · Middle & Main Mahjong · Clearwater Dockside Tiles- A Southern Lake Inspired Mahjong Set (tiles) · available · https://www.middleandmainmahjong.com/products/clearwater-dockside-tiles-a-southern-lake-inspired-mahjong-set
 - 2026-11-05 · Splash of Color · All I Want For Christmas Is Mahjong,Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/all-i-want-for-christmas-is-mahjong-mahjong-mat-sleek-surface
 - 2026-11-05 · Splash of Color · The Delmar Cocktail Club Modcentric Meowza 4Layer American Mahjong Tiles  Blue  Green (tiles) · available · https://splashofcolorco.com/products/the-delmar-cocktail-club-modcentric-meowza-4layer-american-mahjong-tiles-blue-green
 - 2026-11-04 · Sweet Jojo Mahjong · Blue Tiger Collection Mahjong Mat for Table - Shipped Rolled (mat) · available · PREORDER/COMING SOON · https://sweetjojomahjong.com/products/mahjmat-tig-bu-mahjong-mat-for-table
 - 2026-11-04 · Sweet Jojo Mahjong · Pink Masquerade Collection Mahjong Mat for Table - Shipped Rolled (mat) · available · PREORDER/COMING SOON · https://sweetjojomahjong.com/products/mahjmat-masquerade-pk-mahjong-mat-for-table
 - 2026-11-04 · Splash of Color · Tuscan Tapestry Earthy Wine Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/tuscan-tapestry-earhy-wine-mahjong-mat-sleek-surface
 - 2026-11-04 · Splash of Color · Tuscan Tapestry Earthy Wine Botanical American Engraved  Mahjong Tiles (tiles) · available · https://splashofcolorco.com/products/tuscan-tapestry-earthy-wine-botanical-american-engraved-mahjong-tiles
-- 2026-11-04 · Splash of Color · The Kitschmas Mail Mahj Club Preppy Pink Christmas Mahjong Tiles (tiles) · available · https://splashofcolorco.com/products/the-kitschmas-mail-mahj-club-preppy-pink-christmas-mahjong-tiles
-- 2026-11-04 · Splash of Color · Kitschmas Mahj Mail Mahjong Christmas Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/kitschmas-mahj-mail-mahjong-christmas-mat-sleek-surface
-- 2026-11-03 · Splash of Color · Palm Beach Harlequin Chinoiserie  Engraved American Mahjong Tiles And Carry Tote (tiles) · available · https://splashofcolorco.com/products/palm-beach-harlequin-chinoiserie-engraved-american-mahjong-tiles-and-carry-tote
 
 ## Stores
 - amahjline.com: ok 33 products
 - birdandbamboo.com: ok 59 products
 - brittmillsdesign.com: ok 717 products
-- letsbebesties.com: ok 738 products
+- letsbebesties.com: ok 740 products
 - mahjandvine.com: ok 21 products
 - mahjmood.com: ok 54 products
 - mahjongco.com: ok 1 products
-- mahjongregister.com: ok 77 products
+- mahjongregister.com: ok 81 products
 - mahjongstudios.com: ok 155 products
+- mahjpit.co: ok 166 products
 - mahjsquadshop.com: ok 60 products
+- maisonmahj.com: ok 39 products
 - minimahjer.com: ok 30 products
 - missmahjong.com: ok 102 products
 - myfairmahjong.com: ok 96 products
-- peacelovemahjong.com: ok 100 products
+- nolijune.com: ok 56 products
+- peacelovemahjong.com: ok 102 products
 - shop.andersruff.com: ok 161 products
 - soireeallday.co: not checkable (not Shopify or blocked)
 - splashofcolorco.com: ok 2176 products
@@ -263,10 +276,12 @@
 - www.bamletsmahjong.com: ok 68 products
 - www.bespokemahjong.com: ok 350 products
 - www.charlestonmahjongclub.com: ok 71 products
-- www.fait-a-main.com: ok 42 products
+- www.fait-a-main.com: ok 44 products
 - www.hiphipmahjong.com: ok 72 products
 - www.letsmahj-on.com: ok 85 products
 - www.macandmillermahjong.com: ok 36 products
+- www.middleandmainmahjong.com: ok 105 products
 - www.ohmymahjong.com: ok 246 products
 - www.viroramahjong.com: ok 37 products
 - www.ymimports.com: ok 430 products
+- yolomahjong.com: ok 92 products
