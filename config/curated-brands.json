@@ -1,1 +1,21 @@
-["Splash of Color", "Let's Be Besties"]
+{
+ "_about": "CURATED BRANDS (Tiffany Nov 11 4:15-4:17pm: \"I do not want the app to become a Splash of Color experience... They cannot hog the platform... these aren't even big earners\"). For these brands the app does NOT carry the whole store. Their products come in only as (a) Tiffany's album/match picks, (b) Claude's best few per album, or (c) items she OKs, and FYM's per-brand cap (gate [140] BCAP) keeps them from flooding colour chips. partner_coverage.py shows them as 'curated: N in app of M in store', never as missing items. Never bulk-import these. To change a brand's status: her word only.",
+ "brands": {
+  "Splash of Color": {
+   "since": "2026-11-11",
+   "why": "huge print-on-demand catalog (47 tile sets, 600+ mats); she likes the brand least; must never flood tile or mat colour browsing"
+  },
+  "Let's Be Besties": {
+   "since": "2026-11-11",
+   "why": "191+ artist mats; already in with the per-brand cap; fine so far, watch for flooding"
+  },
+  "Mah Jongg Maven": {
+   "since": "2026-11-11",
+   "why": "115 tile sets + 33 mats; generic; partner since Jan but brought in recently; she is concerned about flooding"
+  },
+  "Mahjong by SI": {
+   "since": "2026-11-11",
+   "why": "1,100+ mats (Shopify, mahjongbysi.com); same flooding risk"
+  }
+ }
+}

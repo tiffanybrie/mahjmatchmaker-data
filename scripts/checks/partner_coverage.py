@@ -28,6 +28,12 @@ def add(name, src, hosts=()):
     k = norm(name); p = partners.setdefault(k, {'brand': name, 'hosts': set(), 'sources': []})
     p['sources'].append(src); p['hosts'] |= {h.replace('www.', '') for h in hosts if h}
 ct = J('config/code-truth.json', {})
+# CODE FIRST (Tiffany Nov 11 4:15pm): a partner's products must NOT come into Find Your Mat-ch before its code/link works,
+# or the app fills with plain links that earn nothing and are hard to find later. code_ok = a live % in code-truth, or a
+# terms status that starts with "confirmed". Until then its missing products are HELD (not to be added), and the gap is
+# "get the working code". When the code is confirmed, the same items show as missing again: that is the hand-back.
+_terms = {norm(k): str(v.get('status', '')) for k, v in (ct.get('terms') or {}).items() if isinstance(v, dict)}
+code_ok = lambda k: k in {norm(x) for x in ct.get('pct', {})} or _terms.get(k, '').lower().startswith('confirmed')
 for b in ct.get('pct', {}):
     add(b, 'code-truth')
 for b, v in J('config/link-routes.json')['brands'].items():
@@ -66,6 +72,10 @@ ign = {k.split('/')[-1] for k in J('config/partner-mat-sweep-ignore.json', {'ite
 ign |= {k.split('/')[-1] for k in J('config/partner-coverage-excuse.json', {'products': {}}).get('products', {})}
 BAD = re.compile(r'travel|mini|solo|sample|gift card|e-?gift|bundle|replacement|single tile|blank|bag|case|pouch|sticker|preorder deposit|table ?cloth|table cover|tote|wall art|framed|kids|little mahj|odd lots|less than perfect|seconds|imperfect|rummi|rummy|special order - the \w+ table', re.I)
 
+REMOVED = {norm(b) for b in (ct.get('removed_brands') or {})}
+for _k in list(partners):
+    if _k in REMOVED: partners.pop(_k)  # removed partners (e.g. Mahjong Row) are not partners any more
+CUR = {norm(b): v for b, v in J('config/curated-brands.json', {'brands': {}})['brands'].items()}
 rows = []
 for k, p in sorted(partners.items(), key=lambda x: x[1]['brand'].lower()):
     r = {'brand': p['brand'], 'sources': sorted(set(p['sources'])), 'gaps': []}
@@ -87,7 +97,11 @@ for k, p in sorted(partners.items(), key=lambda x: x[1]['brand'].lower()):
         r['fym_' + kind] = ('excused: ' + ex) if (miss and ex) else (miss or 'ok')
         r['shop_' + kind] = r.get('shop_' + kind, 0) + sum(1 for h in hosts for it in snap[h].values() if it.get('kind') == kind and (it.get('min') or 0) >= floor and not BAD.search(it.get('title', '')))
         r['miss_' + kind] = miss
-        if miss and not ex: r['gaps'].append(f'{len(miss)} {label} not in FYM: ' + '; '.join(miss[:6]) + (' …' if len(miss) > 6 else ''))
+        if k in CUR:
+            r['fym_' + kind] = f'curated: {len(miss)} not brought in on purpose (config/curated-brands.json)'; r['miss_' + kind] = []; continue
+        if miss and not ex and not code_ok(k):
+            r['gaps'].append(f'HELD {len(miss)} {label}: no working code yet, so do NOT add them (they would carry unpaid links). Get the code first')
+        elif miss and not ex: r['gaps'].append(f'{len(miss)} {label} not in FYM: ' + '; '.join(miss[:6]) + (' …' if len(miss) > 6 else ''))
     if not hosts:
         r['store'] = 'store not read automatically (not Shopify, and no reader in config/non-shopify-partners.json yet)'
         if not excused(k, 'store'): r['gaps'].append('store not read automatically yet (not Shopify): check it in Chrome + its Instagram/emails today, and give it a reader in config/non-shopify-partners.json')
