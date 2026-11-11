@@ -60,3 +60,11 @@ Sources (3x daily): partner stores (products.json diff), email (mahjmatchmaker@ 
 4. GROUP: Monday codes post carries the week; NOW items caught after Monday get their own group post (section 2), on her yes.
 5. Tiffany is told the same run for NOW items (one message: what, when, draft post). SOON/LATER: list only, no message.
 Nothing else gets built automatically.
+
+## News rank: what leads (Tiffany Nov 11 10:29am)
+- A TILE SET always leads, travel sets included (big ticket; travel is only kept out of Find Your Mat-ch, not out of the news).
+- Brand-new beats a restock of something everyone has seen. Every item shows a **New** or **Restock** badge so "Just dropped" is never ambiguous.
+- Default order inside a brand: tile sets > new items > restocks, and racks > mats within each.
+- Brands known for something get their own order in config/brand-known-for.json. Miss Mahjong: tile sets > new racks > rack restocks > mat restocks (her opal / brass / tortoise acrylic racks are in more demand than her mats).
+- The item's `tag` decides its kind ("mats back, pair with Catrina tiles" is a mat). Mark `new: true` / `restock: true` in curated when the words don't say it.
+- Coming-soon tile sets from the store (Shopify tag `coming-soon`) go on the watch the day they appear (missed: Miss Darling Lilac, on the store since Oct 20, added Nov 11).

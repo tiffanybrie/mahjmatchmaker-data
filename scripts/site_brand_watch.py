@@ -98,11 +98,28 @@ def line(x):
     if lk:
         u, code = lk; btn = f'<a class="bw-btn" href="{e(u)}" target="_blank" rel="noopener">Shop{" · use code MAHJMATCH" if code else ""}</a>'
     st = stamp(x.get('found'))
-    return img, (f'<div class="bw-item">' + (f'<div class="bw-stamp">Added {e(st)}</div>' if st else '') + f'<div class="bw-what">{e(x["what"])}</div>' + (f'<div class="bw-when">When: {e(when)}</div>' if when else '') + btn + '</div>')
+    return img, (f'<div class="bw-item">' + (f'<div class="bw-stamp">Added {e(st)}</div>' if st else '') + f'<div class="bw-what">' + ('<span class="bw-kind bw-k-new">New</span>' if not RESTOCK(x) and x.get('_sec') != 'sales' else '<span class="bw-kind bw-k-re">Restock</span>' if RESTOCK(x) else '') + f'{e(re.sub(r"^NEW:\s*", "", x["what"]))}</div>' + (f'<div class="bw-when">When: {e(when)}</div>' if when else '') + btn + '</div>')
+# NEWS RANK (Tiffany Nov 11 10:29am): a tile set (travel too: big ticket) > new racks > rack restocks > mat restocks.
+# Brand-new beats a restock of something everyone has seen; brands known for something get their own order (config/brand-known-for.json).
+def KIND(x):   # the item's tag decides first ("mat ... pair with Catrina tiles" is a mat), then the words
+    t = (x.get('tag') or '').lower()
+    if re.search(r'\btiles?\b|tile set', t): return 0
+    if 'rack' in t: return 1
+    if re.search(r'\bmats?\b', t): return 2
+    w = x['what']
+    if re.search(r'\btiles?\b|tile set|travel set', w, re.I) and not re.search(r'clutch|bag|case|numbered flower|pair with', w, re.I): return 0
+    return 1 if re.search(r'\bracks?\b|pusher', w, re.I) else 2 if re.search(r'\bmats?\b', w, re.I) else 3
+RESTOCK = lambda x: bool(x.get('restock')) or (not x.get('new') and bool(re.search(r'back in stock|restock|\bback\b|coming back', x['what'], re.I)))
+try: KNOWN = {k.lower(): v for k, v in json.load(open(R + 'config/brand-known-for.json')).items() if not k.startswith('_')}
+except Exception: KNOWN = {}
+def RANK(x):
+    k = KNOWN.get(clean(x['brand']).lower())
+    if k: return (k.index(['tiles', 'racks', 'mats', 'other'][KIND(x)]) if ['tiles', 'racks', 'mats', 'other'][KIND(x)] in k else 9, RESTOCK(x))   # her order for that brand: kind first
+    return (0 if KIND(x) == 0 else 1, RESTOCK(x), KIND(x))   # default: any tile set, then new before restock, then racks > mats
 CAP = 2   # Tiffany Nov 11 10:17am: big-inventory brands (Let's Be Besties: 175 new mats) can't dominate; 2 per brand per section, then "See all"
 bslug = lambda b: re.sub(r'[^a-z0-9]+', '-', clean(b).lower()).strip('-')
 def card(group, cap=CAP, label=''):
-    rank = sorted(group, key=lambda x: 0 if TILEY(x) else 1)   # tiles lead inside a brand too
+    rank = sorted(group, key=RANK)   # Nov 11 10:29am news rank inside a brand
     shown = rank[:cap] if cap else rank
     parts = [line(x) for x in shown]; img = next((i for i, _ in parts if i), None)
     pic = f'<img class="bw-img" src="{e(img)}" alt="" loading="lazy">' if img else ''
@@ -113,7 +130,7 @@ def grouped(L):
     for x in L:
         k = clean(x['brand']); (order.append(k) if k not in G else None); G.setdefault(k, []).append(x)
     gs = [G[k] for k in order]
-    return sorted(gs, key=lambda g: (min(BIG(x) for x in g) if 'BIG' in globals() else 1, 0 if any(TILEY(x) for x in g) else 1))   # stable: tile news first, then the rest in date order
+    return sorted(gs, key=lambda g: (min(BIG(x) for x in g) if 'BIG' in globals() else 1, min(RANK(x)[:1] for x in g)))   # stable: tile news first, then the rest in date order
 P = lambda L: [x for x in L if x.get('partner') and 'yellow mountain' not in x.get('brand', '').lower() and 'ymi' not in x.get('brand', '').lower()]
 for _k in ('this_week', 'sales', 'coming_soon', 'just_dropped'):
     for _x in d[_k]: _x['_sec'] = _k
@@ -146,7 +163,7 @@ _allb = {}
 for t, L in sec:
     for x in L: _allb.setdefault(bslug(x['brand']), (clean(x['brand']), []))[1].append((t, x))
 bpages = ''.join(f'<section class="bw-bpage" id="p-{k}" hidden><a class="bw-back" href="#">&larr; All brands</a><h2 class="bw-bh">{e(n)}</h2>'
-                 + ''.join(f'<h3 class="bw-bsec">{t}</h3><div class="bw-grid">' + ''.join(card([x], cap=0, label=t) for x in sorted([x for tt, x in L if tt == t], key=lambda x: 0 if TILEY(x) else 1)) + '</div>' for t in dict.fromkeys(tt for tt, _ in L))   # Nov 11 10:21am: full page = a photo on every item we have one for
+                 + ''.join(f'<h3 class="bw-bsec">{t}</h3><div class="bw-grid">' + ''.join(card([x], cap=0, label=t) for x in sorted([x for tt, x in L if tt == t], key=RANK)) + '</div>' for t in dict.fromkeys(tt for tt, _ in L))   # Nov 11 10:21am: full page = a photo on every item we have one for
                  + '</section>' for k, (n, L) in _allb.items())
 body = f'<div id="bw-main">{body}</div>{bpages}'
 
@@ -176,6 +193,7 @@ body{{background:var(--bg);color:var(--ink);font:16px/1.45 Georgia,'Times New Ro
 .bw-back{{font:600 14px system-ui,sans-serif;color:var(--navy);text-decoration:none;display:inline-block;margin-top:18px}}
 .bw-bh{{font-size:30px;color:var(--navy);margin:10px 0 0}}
 .bw-bsec{{font-size:18px;color:var(--navy);margin:22px 0 10px}}
+.bw-kind{{display:inline-block;margin-right:6px;font:700 10px/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:3px 6px;border-radius:4px;vertical-align:1px}}.bw-k-new{{background:#e8457a;color:#fff}}.bw-k-re{{background:var(--line);color:var(--navy)}}
 .bw-tag{{display:inline-block;margin-left:8px;vertical-align:1px;font:700 10px/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;border-radius:999px;background:var(--line);color:var(--navy)}}
 .bw-t-launching-now{{background:var(--pink);color:#fff}}
 .bw-t-just-dropped{{background:var(--navy);color:var(--bg)}}

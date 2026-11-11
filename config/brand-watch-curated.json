@@ -157,6 +157,18 @@
  ],
  "coming_soon": [
   {
+   "date": "",
+   "brand": "Miss Mahjong",
+   "partner": true,
+   "what": "Full-size tile set coming: Miss Darling Lilac ($425). The party version of Miss Darling: hot pink + lime faces, blue stripe, lilac back with white cross-stitch",
+   "tag": "tiles",
+   "new": true,
+   "action": "Watch for the drop date (store tag coming-soon); full-size set = album candidate",
+   "url": "https://missmahjong.com/products/miss-darling-mahjong-tile-set-lilac",
+   "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Cover-DarlingLilac.png?v=1792516771",
+   "found": "2026-11-11T10:35"
+  },
+  {
    "brand": "Anders Ruff",
    "partner": true,
    "what": "Sneak peek: bridal mahjong mat + tile set, surprise collab with 'an OG Bachelorette' (no date)",
@@ -422,7 +434,8 @@
    "tag": "mat",
    "action": "Story with the product link + code MAHJMATCH (Refresco: image-only, collab)",
    "url": "https://missmahjong.com/products/papel-picado-mahjong-playing-mat",
-   "found": "2026-11-09"
+   "found": "2026-11-09",
+   "restock": true
   },
   {
    "date": "2026-11-09",
@@ -513,7 +526,8 @@
    "tag": "racks",
    "action": "Add to Monday codes post",
    "url": "https://missmahjong.com/products/blonde-tortoise-and-brass-acrylic-racks",
-   "found": "2026-11-10T09:50"
+   "found": "2026-11-10T09:50",
+   "restock": true
   },
   {
    "date": "2026-11-08",
@@ -639,11 +653,13 @@
    "date": "2026-11-03",
    "brand": "Miss Mahjong",
    "partner": true,
-   "what": "Miss Classic travel set (lattice back) LIVE",
+   "what": "NEW: Mini Miss Classic travel tile set ($375 bundle, lattice back, faces match Miss Classic Malachite). First travel version of Miss Classic",
    "tag": "travel tiles",
    "action": "Monday codes post only (travel)",
-   "url": "https://www.instagram.com/reel/DfP71tQRt_R/",
-   "found": "2026-11-03"
+   "url": "https://missmahjong.com/products/mini-miss-classic-travel-mahjong-bundle",
+   "found": "2026-11-03",
+   "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Cover-ClassicTravel.png?v=1792428199",
+   "new": true
   },
   {
    "date": "2026-11-03",
@@ -777,5 +793,5 @@
    "url": ""
   }
  ],
- "updated": "2026-11-11T10:05"
+ "updated": "2026-11-11T10:35"
 }
