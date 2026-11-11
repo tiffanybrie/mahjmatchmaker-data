@@ -89,8 +89,8 @@ for k, p in sorted(partners.items(), key=lambda x: x[1]['brand'].lower()):
         r['miss_' + kind] = miss
         if miss and not ex: r['gaps'].append(f'{len(miss)} {label} not in FYM: ' + '; '.join(miss[:6]) + (' …' if len(miss) > 6 else ''))
     if not hosts:
-        r['store'] = 'store not watched (cannot check FYM)'
-        if not excused(k, 'store'): r['gaps'].append('store not watched, so new tile sets/mats cannot be caught')
+        r['store'] = 'store not read automatically (not Shopify, and no reader in config/non-shopify-partners.json yet)'
+        if not excused(k, 'store'): r['gaps'].append('store not read automatically yet (not Shopify): check it in Chrome + its Instagram/emails today, and give it a reader in config/non-shopify-partners.json')
     rows.append(r)
 
 if arg('--json'): json.dump(rows, open(arg('--json'), 'w'), indent=1, ensure_ascii=False)

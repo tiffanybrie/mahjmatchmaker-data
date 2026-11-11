@@ -1,0 +1,10 @@
+{
+ "_about": "Partners whose stores are NOT Shopify (Tiffany Nov 11 3:04pm: \"that doesn't mean their store isn't watched... you have to watch it differently\"). We promise every partner their whole inventory is in the app, Shopify or not. scripts/watch/nonshopify_watch.py reads each store by its own method and writes into config/partner-products-snapshot.json, so partner_coverage and the partner watch treat them like everyone else. If a method fails (rate limit, page change), the run must fall back to Chrome (open the shop page, list every product) the same day, plus the brand's Instagram and newsletter. Add a brand here the moment we learn its store isn't Shopify.",
+ "stores": {
+  "mahjonggmaven.com": {"brand": "Mah Jongg Maven", "platform": "WooCommerce", "method": "woo", "api": "https://mahjonggmaven.com/wp-json/wc/store/v1/products?per_page=100&page={page}"},
+  "amandatoppeart.com": {"brand": "Amanda Toppe", "platform": "Squarespace", "method": "squarespace", "collections": ["/shop"], "note": "Squarespace rate-limits our cloud fetch (429); Chrome fallback"},
+  "soireeallday.co": {"brand": "Soirée All Day", "platform": "Squarespace", "method": "squarespace", "collections": ["/shop"], "note": "collection path to confirm in Chrome; 429 from cloud"},
+  "wrenmats.com": {"brand": "Wren Mats", "platform": "Squarespace", "method": "squarespace", "collections": ["/shop"], "note": "collection path to confirm in Chrome; 429 from cloud"},
+  "mahjongbysi": {"brand": "Mahjong by SI", "platform": "unknown", "method": "chrome", "note": "store URL not on file yet (approved Nov 6); find it and pick a method"}
+ }
+}
