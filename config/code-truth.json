@@ -89,6 +89,10 @@
     ],
     "The Royal Mahjong Society": [
       "Royal Mahjong Society"
+    ],
+    "Fait à Main": [
+      "Fait a Main",
+      "Fait À Main"
     ]
   },
   "page_brand": {
@@ -250,6 +254,14 @@
       "hub_must": "10%",
       "source": "Stacie Francombe email Nov 6 2026 (10% off for shoppers, 5% commission) + Jenna set up the code Nov 9 (thread 1a1b2d53c72f38af) + invite email 'Your followers get 10% off every mat purchase'; cart test Nov 11 2026 ~3:15pm ET: MAHJMATCH applicable, $5 off a $50 mat, fake code not applicable.",
       "status": "confirmed"
+    },
+    "Fait à Main": {
+      "code": "MAHJMATCH",
+      "pct": null,
+      "perk": "code coming soon",
+      "hub_must": "coming soon",
+      "source": "UpPromote approval Oct 19 2026 (no terms); MAHJMATCH not applicable at cart Oct 20-Nov 11 (cart test Nov 11 ~3:10pm ET: applicable=false). Listed as 'code coming soon' per Tiffany Nov 11 3:01pm.",
+      "status": "code coming soon"
     }
   },
   "sitemap_lag_days": 3
