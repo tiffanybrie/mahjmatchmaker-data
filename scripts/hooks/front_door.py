@@ -106,5 +106,10 @@ try:
     r=subprocess.run(['python3','scripts/checks/partner_coverage.py','--front'],capture_output=True,text=True,timeout=40)
     out[0:0]=[l for l in r.stdout.splitlines() if l.startswith('PARTNER HALF SET UP')]
 except Exception: pass
+# Nov 11 5:28pm (Tiffany: one FB group a day, approve the week in one place, "I want to be asked about Facebook groups every day").
+try:
+    r=subprocess.run(['python3','scripts/checks/fb_groups_check.py'],capture_output=True,text=True,timeout=10)
+    out[0:0]=[l for l in r.stdout.splitlines() if l.strip()]
+except Exception: pass
 if out:
     print('=== FRONT DOOR (automatic, every message) ===\n'+'\n'.join(out)+'\nRule: if you tell Tiffany you will fix something, fix it BEFORE you reply, or add it to docs/OVERDUE.md in the same turn and tell her who/when.')
