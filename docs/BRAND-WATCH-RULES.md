@@ -1,3 +1,10 @@
+# 0-USAGE. HOW THE WATCH RUNS (Tiffany Nov 11 12:26pm, BINDING; overrides the task prompt's step 2 "EVERY partner handle")
+- Model: the partner watch runs on Sonnet. Scripts do the routine work; Claude only reads what changed and writes the shopper-facing line.
+- INSTAGRAM BY TIER: read config/ig-watch-tiers.json. Each run fetches only the tiers its time slot lists (A every run: biggest earners + social-first brands; B morning + evening; C midday). A brand with a dated launch/restock in the next 7 days is read every run until it drops. Keep the 26-hour window, so nothing between runs is missed for A/B.
+- Planoly reads FEED posts and reels only, never Stories (Instagram doesn't share stories through that API). Brands that announce in stories also email/post; don't claim story coverage.
+- ONE OWNER: this partner watch is the only job that updates Brand Watch. After editing config/brand-watch-curated.json run `python3 scripts/site_brand_watch.py && python3 scripts/site_brand_watch_preview.py`, publish site/livepatch/brand-watch/brand-watch-preview.html to https://claude.ai/artifact/18JAJeZRLcZtcqVejgKHMs (Artifact tool, same url), then write the sha stamp to site/livepatch/brand-watch/published.json. If a script FAILS (error / refuses on internal wording, missing date), fix the item it names and re-run; never publish around it; if it can't be fixed, say so in the HQ log line and the DESK.
+- No separate brand-watch check-in task: NOW items are pushed to Tiffany by this run (section 00).
+
 # Brand watch rules (binding; read FIRST every partner-watch run; overrides the task prompt)
 
 ## 000. ONE FIND = FOUR WRITES, SAME RUN, NO CHECK-IN NEEDED (Tiffany Nov 10 10:32pm: "you can know a rule, but that doesn't mean that it's going to be followed or acted upon"; the hidden Brand Watch page is her test of whether we can keep up)
