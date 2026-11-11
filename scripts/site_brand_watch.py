@@ -75,7 +75,8 @@ def stamp(f):   # Tiffany Nov 11 10:04am: every update timestamped (when WE post
         return t.strftime('%a %-m/%-d') + (t.strftime(' · %-I:%M%p').replace('AM', 'am').replace('PM', 'pm') + ' ET' if 'T' in f else '')
     except Exception: return ''
 def line(x):
-    (lk, img) = shop(x); when = ' · '.join(t for t in (x.get('day'), x.get('time')) if t)
+    (lk, img) = shop(x); img = x.get('img') or img   # Nov 11: explicit launch photo (e.g. a brand's teaser) wins
+    when = ' · '.join(t for t in (x.get('day'), x.get('time')) if t)
     btn = ''
     if lk:
         u, code = lk; btn = f'<a class="bw-btn" href="{e(u)}" target="_blank" rel="noopener">Shop{" · use code MAHJMATCH" if code else ""}</a>'
@@ -104,7 +105,7 @@ TODAY = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-5))).s
 LIVE = re.compile(r'\blive\b|back in stock|restock(ed)?\b|arrived|in stock|sold out', re.I)
 launch, dropped = [], []
 for x in d['this_week']:
-    (launch if (x.get('date') or '') >= TODAY and not LIVE.search((x.get('time') or '') + ' ' + x['what']) else dropped).append(x)
+    (launch if (x.get('date') or '') >= TODAY and (re.search(r'\blaunch', x['what'], re.I) or not LIVE.search((x.get('time') or '') + ' ' + x['what'])) else dropped).append(x)
 dropped += d['just_dropped']
 seen = set()
 def uniq(L):
