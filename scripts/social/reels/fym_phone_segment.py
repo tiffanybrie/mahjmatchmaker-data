@@ -83,7 +83,7 @@ for n in range(int(DUR * FPS)):
     ph = frame.copy(); ph.paste(scr, (SX, SY), mask)
     paste_scaled(cv, ph, W / 2, 625 + PH_ / 2 + (1 - rise) * 900, PSC * push)
     # view label pops at each new screen
-    if tt >= T[0]:
+    if tt >= T[0] and os.environ.get('LABELS') == '1':   # off by default: Tiffany Nov 10 9:46pm, the view pills distract from the mats + racks
         lab = LAB[screens[idx][1]]; k = (tt - T[idx]) / 0.35
         paste_scaled(cv, lab, W / 2, 590, 0.9 * eb(k) if k < 1 else 0.9)
     if hz:  # pink heart pop on the swipe
