@@ -265,7 +265,14 @@
   "considered": "2026-11-08",
   "note": "Holiday section: Yuletide, Love & Light, Snowflake Reindeer Lodge, Alpine Snowflakes, Winter Jewel."
  },
- "rounds": [],
+ "rounds": [
+  {
+   "round": 1,
+   "sent": "2026-11-11T12:40",
+   "url": "https://claude.ai/artifact/A54V27DoUEgpgKitTFVjk8",
+   "note": "fresh review page (Nov 8 re-pull); Mulberry Plum Scallop card re-rendered from YOLO flat render (gate 8b)"
+  }
+ ],
  "pool": {
   "size_fym": 1574,
   "size": 1686,
@@ -2906,7 +2913,7 @@
   ],
   "partner_swept_at": "2026-11-08T18:54:22+00:00"
  },
- "review_url": "https://claude.ai/artifact/9VjoeB1ejRB3wVvnMaKMqH",
+ "review_url": "https://claude.ai/artifact/A54V27DoUEgpgKitTFVjk8",
  "discovery": {
   "at": "2026-11-08T14:04:25-05:00",
   "searches": [
@@ -3039,5 +3046,8 @@
    "GOLD"
   ],
   "why": "Indigo backs: berry sits 67 deg from indigo, under the 90-deg default, but it is the set's accent colour"
- }
+ },
+ "old_review_urls": [
+  "https://claude.ai/artifact/9VjoeB1ejRB3wVvnMaKMqH"
+ ]
 }

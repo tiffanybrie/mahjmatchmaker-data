@@ -2785,7 +2785,14 @@
  "rank": {
   "note": "Standouts: Viola, Caroline in Peacock, Deco Dragon (Lagoon), Wren, Ocean Florals, Spring Blooms (deep teal with berry/pink: her two colours). No TNT or other-group recs for Mulberry."
  },
- "rounds": [],
+ "rounds": [
+  {
+   "round": 1,
+   "sent": "2026-11-11T12:40",
+   "url": "https://claude.ai/artifact/FAiTL4JE8X4sjekeK8VJuE",
+   "note": "fresh review page (Nov 8 re-pull); Mulberry Plum Scallop card re-rendered from YOLO flat render (gate 8b)"
+  }
+ ],
  "catalog_checked": {
   "at": "2026-11-08T13:41:05-05:00",
   "shopmy_new": 58,
@@ -2911,7 +2918,7 @@
   ],
   "partner_swept_at": "2026-11-08T18:43:05+00:00"
  },
- "review_url": "https://claude.ai/artifact/8V74MMkepN9TnVCF5cRNAw",
+ "review_url": "https://claude.ai/artifact/FAiTL4JE8X4sjekeK8VJuE",
  "discovery": {
   "at": "2026-11-08T14:04:25-05:00",
   "searches": [
@@ -3031,5 +3038,8 @@
   "misses_added": [],
   "note": "Light targeted search (12 searches: Google, Etsy, Amazon via WebSearch/WebFetch). Terms from the colour card (teal/berry/navy/gold), mood (art deco, jewel tone) and the faces (peacock feather, crane, iris, fan). Many Etsy hits were unavailable listings; Mahjong by SI (Target) is not a partner.",
   "complementary": "Complementary re-check: teal/emerald mats lead the standouts (Viola, Caroline in Peacock, Deco Dragon Lagoon, Wren, Ocean Florals, Spring Blooms); Jade, Emerald Cove, Evergreen, Year of the Snake in the album."
- }
+ },
+ "old_review_urls": [
+  "https://claude.ai/artifact/8V74MMkepN9TnVCF5cRNAw"
+ ]
 }

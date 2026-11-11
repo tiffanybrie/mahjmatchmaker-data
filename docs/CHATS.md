@@ -26,3 +26,6 @@ FIRST JOB = NOW (Tiffany, Oct 22 1:39pm: the app is the launch; she tests Thu-Su
 ## 3. OPS chat (Sonnet) — the back office, and the ONLY chat that drives Chrome
 Owns: button-clicking and repetitive jobs: Planoly uploads, ShopMy/Amazon uploads + shelf covers (Rebecca Illustrated cover, Dice Dishes cover check), IG follows/favorites, Squarespace pastes handed over by the other chats, gmail filters, catalog data entry.
 Rules: one Chrome driver; close every tab you open; never type passwords, never check out, never delete without her yes.
+
+## Nov 11 12:18pm (Tiffany): ONE chat
+She now talks to Main for albums and everything else ("everything that dropped on the floor was because of missed handoffs between the chats"). Ops stays only for ShopMy/Amazon link chores she asks for. Matches & Catalog work (albums, FYM releases) is done in Main from now on. Don't hand work to another chat; do it here.
