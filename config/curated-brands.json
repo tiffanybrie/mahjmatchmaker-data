@@ -15,7 +15,8 @@
   "Mah Jongg Maven": {
    "since": "2026-11-11",
    "why": "115 tile sets + 33 mats; generic; partner since Jan but brought in recently; she is concerned about flooding; ~116 full-size tile sets (2nd largest after Splash): ~29 blue, ~20 pink, ~15 white, ~12 green, ~10 jewel tone, ~9 turquoise, ~8 red, ~7 lavender, ~53 themed with no colour in the name (Peanuts, Coca-Cola, Christmas)",
-   "mode": "big-catalog"
+   "mode": "big-catalog",
+   "tile_rules": "Tiffany Nov 11 5:27pm: bring them in. Drop a 2-layer where an identical 3-layer colour exists; no novelty/character sets (Siamese cat, Peanuts, Coca-Cola, Koi, flamingos, dolphins, butterflies, leopard); no multi-colour/bundles; Classic Ivory skipped. Gray/low-light photos must be cut out or background-brightened WITHOUT shifting tile colour before going in. 10 per coverage run, clean photos + black sets (the app has no black tiles) first. Excluded handles: config/partner-coverage-excuse.json products mahjonggmaven/*."
   },
   "Mahjong by SI": {
    "since": "2026-11-11",
