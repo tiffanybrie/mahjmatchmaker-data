@@ -85,6 +85,8 @@ for k, p in sorted(partners.items(), key=lambda x: x[1]['brand'].lower()):
                 miss.append(it['title'] + (' (queued since ' + pend[handle][:10] + ')' if handle in pend else ''))
         ex = excused(k, 'fym_' + kind)
         r['fym_' + kind] = ('excused: ' + ex) if (miss and ex) else (miss or 'ok')
+        r['shop_' + kind] = r.get('shop_' + kind, 0) + sum(1 for h in hosts for it in snap[h].values() if it.get('kind') == kind and (it.get('min') or 0) >= floor and not BAD.search(it.get('title', '')))
+        r['miss_' + kind] = miss
         if miss and not ex: r['gaps'].append(f'{len(miss)} {label} not in FYM: ' + '; '.join(miss[:6]) + (' …' if len(miss) > 6 else ''))
     if not hosts:
         r['store'] = 'store not watched (cannot check FYM)'
@@ -92,6 +94,24 @@ for k, p in sorted(partners.items(), key=lambda x: x[1]['brand'].lower()):
     rows.append(r)
 
 if arg('--json'): json.dump(rows, open(arg('--json'), 'w'), indent=1, ensure_ascii=False)
+if arg('--hq'):  # HQ 'Find Your Match' tab catalog card (hq/catalog): whole inventory, mats AND tile sets, every partner
+    cnt = {}
+    for x in idx.get('names', []): cnt[norm(x.split('|', 1)[0])] = cnt.get(norm(x.split('|', 1)[0]), 0) + 1
+    hr = []
+    for r in rows:
+        mm, mt = r.get('miss_mat') or [], r.get('miss_tiles') or []
+        mm = mm if isinstance(mm, list) else []; mt = mt if isinstance(mt, list) else []
+        hr.append({'brand': r['brand'], 'app_mats': cnt.get(norm(r['brand'])), 'shop_mats': (r.get('shop_mat', 0) + r.get('shop_tiles', 0)) if r.get('store') is None else None,
+                   'missing_mats': len(mm) + len(mt), 'missing_racks': 0, 'done': not r['gaps'] and not any(str(r.get(k, '')).startswith('excused') for k in ('codes_page', 'fym_tiles', 'fym_mat')),
+                   'top': ['tile set: ' + t for t in mt] + mm + [g for g in r['gaps'] if not g[0].isdigit()]})
+    hr.sort(key=lambda x: (x['done'], -x['missing_mats'], x['brand']))
+    tot_t = sum(len(r.get('miss_tiles') or []) if isinstance(r.get('miss_tiles'), list) else 0 for r in rows)
+    tot_m = sum(len(r.get('miss_mat') or []) if isinstance(r.get('miss_mat'), list) else 0 for r in rows)
+    import datetime as _d
+    json.dump({'headline': f"{sum(x['done'] for x in hr)} of {len(hr)} partners complete: whole store in the app + on the codes page",
+               'sub': f"Missing right now: {tot_t} tile sets and {tot_m} mats across partner shops (counts are tile sets + mats; racks not counted yet). 'In app' = items in Find Your Mat-ch for that brand; 'In shop' = full-size tile sets + mats in their store snapshot.",
+               'note': f"Checked {_d.datetime.now().strftime('%b %-d %-I:%M %p')} by scripts/checks/partner_coverage.py (live codes page + store snapshot vs the live app). A brand is complete only when nothing is missing; one mat in the app does not count. Stores we can't read automatically (not Shopify) show 'store not watched' and need a manual check.",
+               'rows': hr, 'at': _d.datetime.now(_d.timezone.utc).isoformat()}, open(arg('--hq'), 'w'), ensure_ascii=False, indent=1)
 g = [r for r in rows if r['gaps']]
 if not live:
     print('PARTNER COVERAGE: could not read the live codes page'); sys.exit(1)

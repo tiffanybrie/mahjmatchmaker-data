@@ -141,3 +141,6 @@ MONDAYS (and after she adds a ShopMy collection): `python3 scripts/checks/shopmy
 - FAIL "MISSING": standing catalog work, no ask. Non-Amazon mats: photo gates (FYM low bar, LOOK at a contact sheet), stage them like builder/fym_fix_nov07/prep_shopmy_nov07.py + shopmy_nov07.py, DESK line "Matches & Catalog: into FYM 1.NN + gallery vNNN". Not a mat / bundle / dead page / sold out: one line in config/shopmy-sync-skips.json with the reason. Same product under another link: `same_as` there.
 - "gallery-next-sync": visible in FYM, no gallery row yet; gallery_sync.py adds it at the next release (gate [159b]). Nothing to do unless it is still there after a release.
 Note in the HQ log one line: "ShopMy sync: PASS (N mats)" or what was staged.
+
+## Nov 11 rule: DESK rewrites never drop open items (Tiffany 3:01pm)
+The Nov 7 rewrite deleted "| Fait à Main code | Main | MAHJMATCH still not applicable at cart. | Watch |" with nothing done. Every desk cleanup: write the new DESK, commit locally, run `python3 scripts/checks/desk_drop_check.py --commit HEAD`, and for every line it lists either (a) put it back / append it to docs/OVERDUE.md with owner + next step + date, or (b) add the DONE proof line to docs/ANSWERS.md. Only then push. Hand-checked exceptions: config/desk-drop-ok.json with the proof. Statuses "Watch", "Ask once", "later" are banned.
