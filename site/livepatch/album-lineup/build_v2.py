@@ -23,7 +23,7 @@ NOTE={"Mahj Pit":"No Christmas album (too late; Christmas is planned Sept-Oct). 
 "Bird & Bamboo":"Lowest priority (your call): known for racks and heavily featured on the rack side. Newest set is The Iconic (July 2026); nothing coming soon on her store.",
 "Peace Love Mahjong":"Their store shows only kids' sets and holiday tiles (Spirit of Christmas, Merry Nutcracker); no year-round full-size set found.",
 "Splash of Color":"Mats are out of Find Your Mat-ch; they do sell tile sets.",
-"Yellow Mountain Imports":"Never featured (your rule).",
+"Yellow Mountain Imports":"Budget/gift full sets (many more than shown here). Ideas: Huntington kit (bestseller, apple-green, gift for men, pre-Father's Day) + a classic ivory American album as its sister. Currently never featured on social (your Oct 27 rule): album would be site-only unless you lift it.",
 "Mahjong Studios":"Budget sets; their mats are out, tiles are fine.",
 "Tigre de Tartan":"Code is image-only on the site.",
 "Mah Jongg Maven":"Their store isn't readable by our watch; Coca-Cola Classic found by hand.",
