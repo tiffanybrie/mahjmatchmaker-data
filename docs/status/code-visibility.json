@@ -1,35 +1,35 @@
 {
- "date": "2026-11-10",
+ "date": "2026-11-11",
  "window_days": 7,
  "surfaces": {
   "google_organic_top3": {
-   "latest": "2026-11-10",
+   "latest": "2026-11-11",
    "latest_hits": 32,
-   "latest_n": 37,
-   "window_hits": 181,
-   "window_n": 213,
-   "brands_checked": 38,
-   "brands_total": 38,
-   "always": 28
+   "latest_n": 39,
+   "window_hits": 213,
+   "window_n": 252,
+   "brands_checked": 39,
+   "brands_total": 39,
+   "always": 27
   },
   "google_ai_overview": {
-   "latest": "2026-11-10",
-   "latest_hits": 30,
-   "latest_n": 38,
+   "latest": "2026-11-11",
+   "latest_hits": 26,
+   "latest_n": 39,
    "window_hits": 202,
-   "window_n": 255,
-   "brands_checked": 38,
-   "brands_total": 38,
-   "always": 19
+   "window_n": 257,
+   "brands_checked": 39,
+   "brands_total": 39,
+   "always": 17
   },
   "google_ai_mode": {
-   "latest": "2026-11-07",
-   "latest_hits": 35,
-   "latest_n": 38,
-   "window_hits": 70,
-   "window_n": 76,
-   "brands_checked": 38,
-   "brands_total": 38,
+   "latest": "2026-11-11",
+   "latest_hits": 37,
+   "latest_n": 39,
+   "window_hits": 107,
+   "window_n": 115,
+   "brands_checked": 39,
+   "brands_total": 39,
    "always": 34
   },
   "chatgpt": {
@@ -39,7 +39,7 @@
    "window_hits": 23,
    "window_n": 46,
    "brands_checked": 38,
-   "brands_total": 38,
+   "brands_total": 39,
    "always": 3
   },
   "gemini": {
@@ -49,7 +49,7 @@
    "window_hits": 39,
    "window_n": 46,
    "brands_checked": 38,
-   "brands_total": 38,
+   "brands_total": 39,
    "always": 5
   },
   "claude_search": {
@@ -59,7 +59,7 @@
    "window_hits": 0,
    "window_n": 76,
    "brands_checked": 38,
-   "brands_total": 38,
+   "brands_total": 39,
    "always": 0
   }
  },
@@ -67,21 +67,21 @@
   {
    "brand": "Amahj",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
-    "hits": 6,
+    "hits": 5,
     "n": 7,
-    "last": "2026-11-10",
-    "lasthit": true
+    "last": "2026-11-11",
+    "lasthit": false
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -118,21 +118,21 @@
   {
    "brand": "Amanda Toppe",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 7,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -160,8 +160,8 @@
      false
     ],
     "prev7": [
-     5.0,
-     35.55,
+     4.0,
+     27.0,
      false
     ]
    }
@@ -169,21 +169,21 @@
   {
    "brand": "Anders Ruff",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
-    "hits": 7,
+    "hits": 6,
     "n": 7,
-    "last": "2026-11-10",
-    "lasthit": true
+    "last": "2026-11-11",
+    "lasthit": false
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -206,13 +206,13 @@
    },
    "sales": {
     "last7": [
-     10.0,
-     175.73,
+     8.0,
+     125.46,
      false
     ],
     "prev7": [
-     6.0,
-     124.56,
+     9.0,
+     183.47,
      false
     ]
    }
@@ -220,21 +220,21 @@
   {
    "brand": "Bam Bird Boutique",
    "google_organic_top3": {
-    "hits": 4,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 5,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 3,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": false
    },
    "google_ai_mode": {
-    "hits": 1,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 2,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -257,13 +257,13 @@
    },
    "sales": {
     "last7": [
-     5.0,
-     73.35,
+     4.0,
+     33.3,
      true
     ],
     "prev7": [
-     4.0,
-     45.0,
+     6.0,
+     92.25,
      false
     ]
    }
@@ -271,21 +271,21 @@
   {
    "brand": "Bam! Let's Mahjong",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
-    "hits": 5,
+    "hits": 6,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -308,13 +308,13 @@
    },
    "sales": {
     "last7": [
-     2.0,
-     56.25,
+     1.0,
+     40.5,
      false
     ],
     "prev7": [
      3.0,
-     41.86,
+     53.33,
      false
     ]
    }
@@ -322,22 +322,22 @@
   {
    "brand": "Bespoke Mahjong",
    "google_organic_top3": {
-    "hits": 0,
-    "n": 5,
-    "last": "2026-11-10",
-    "lasthit": false
+    "hits": 1,
+    "n": 6,
+    "last": "2026-11-11",
+    "lasthit": true
    },
    "google_ai_overview": {
     "hits": 3,
     "n": 6,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": false
    },
    "google_ai_mode": {
-    "hits": 1,
-    "n": 2,
-    "last": "2026-11-07",
-    "lasthit": false
+    "hits": 2,
+    "n": 3,
+    "last": "2026-11-11",
+    "lasthit": true
    },
    "chatgpt": {
     "hits": 1,
@@ -373,21 +373,21 @@
   {
    "brand": "Bird & Bamboo",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 7,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -410,13 +410,13 @@
    },
    "sales": {
     "last7": [
-     3.0,
+     6.0,
      51.3,
-     false
+     true
     ],
     "prev7": [
-     5.0,
-     91.8,
+     3.0,
+     39.15,
      false
     ]
    }
@@ -424,21 +424,21 @@
   {
    "brand": "Britt Mills",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
-    "hits": 4,
+    "hits": 5,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -475,21 +475,21 @@
   {
    "brand": "Charleston Mahjong Club",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
-    "hits": 7,
+    "hits": 6,
     "n": 7,
-    "last": "2026-11-10",
-    "lasthit": true
+    "last": "2026-11-11",
+    "lasthit": false
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -526,21 +526,21 @@
   {
    "brand": "Hip Hip Mahjong",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 7,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -578,20 +578,20 @@
    "brand": "I Love Mahj",
    "google_organic_top3": {
     "hits": 5,
-    "n": 5,
-    "last": "2026-11-10",
-    "lasthit": true
+    "n": 6,
+    "last": "2026-11-11",
+    "lasthit": false
    },
    "google_ai_overview": {
     "hits": 2,
     "n": 6,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": false
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -628,21 +628,21 @@
   {
    "brand": "Let's Be Besties",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 7,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -679,21 +679,21 @@
   {
    "brand": "Let's Mahj On",
    "google_organic_top3": {
-    "hits": 5,
-    "n": 5,
-    "last": "2026-11-10",
+    "hits": 6,
+    "n": 6,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 6,
     "n": 6,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -730,21 +730,21 @@
   {
    "brand": "Mac + Miller Mahjong",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 7,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -779,23 +779,59 @@
    }
   },
   {
+   "brand": "Mah Jongg Maven",
+   "google_organic_top3": {
+    "hits": 0,
+    "n": 1,
+    "last": "2026-11-11",
+    "lasthit": false
+   },
+   "google_ai_overview": {
+    "hits": 0,
+    "n": 1,
+    "last": "2026-11-11",
+    "lasthit": false
+   },
+   "google_ai_mode": {
+    "hits": 0,
+    "n": 1,
+    "last": "2026-11-11",
+    "lasthit": false
+   },
+   "chatgpt": null,
+   "gemini": null,
+   "claude_search": null,
+   "sales": {
+    "last7": [
+     0,
+     0,
+     false
+    ],
+    "prev7": [
+     0,
+     0,
+     false
+    ]
+   }
+  },
+  {
    "brand": "Mahj & Vine",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 7,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -818,8 +854,8 @@
    },
    "sales": {
     "last7": [
-     2.0,
-     12.6,
+     3.0,
+     19.35,
      false
     ],
     "prev7": [
@@ -832,21 +868,21 @@
   {
    "brand": "Mahj Mood",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 7,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -874,8 +910,8 @@
      false
     ],
     "prev7": [
-     3.0,
-     52.74,
+     0,
+     0,
      false
     ]
    }
@@ -883,21 +919,21 @@
   {
    "brand": "Mahj Pit",
    "google_organic_top3": {
-    "hits": 4,
-    "n": 4,
-    "last": "2026-11-10",
+    "hits": 5,
+    "n": 5,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
-    "hits": 4,
-    "n": 5,
-    "last": "2026-11-10",
+    "hits": 5,
+    "n": 6,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -934,21 +970,21 @@
   {
    "brand": "Mahj Squad",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 7,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -976,8 +1012,8 @@
      true
     ],
     "prev7": [
-     1.0,
-     8.1,
+     0,
+     0,
      false
     ]
    }
@@ -985,21 +1021,21 @@
   {
    "brand": "Mahjong Register",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 7,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -1037,20 +1073,20 @@
    "brand": "Mahjong Studios",
    "google_organic_top3": {
     "hits": 0,
-    "n": 5,
-    "last": "2026-11-10",
+    "n": 6,
+    "last": "2026-11-11",
     "lasthit": false
    },
    "google_ai_overview": {
     "hits": 6,
     "n": 6,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -1087,21 +1123,21 @@
   {
    "brand": "Maison Mahj",
    "google_organic_top3": {
-    "hits": 5,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 6,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 6,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -1138,21 +1174,21 @@
   {
    "brand": "Middle & Main Mahjong",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 7,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -1176,12 +1212,12 @@
    "sales": {
     "last7": [
      3.0,
-     21.21,
+     12.03,
      true
     ],
     "prev7": [
-     3.0,
-     72.5,
+     4.0,
+     81.68,
      false
     ]
    }
@@ -1189,21 +1225,21 @@
   {
    "brand": "Mini Mahjer",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 4,
     "n": 7,
-    "last": "2026-11-10",
-    "lasthit": false
+    "last": "2026-11-11",
+    "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -1226,7 +1262,7 @@
    },
    "sales": {
     "last7": [
-     8.0,
+     10.0,
      130.93,
      true
     ],
@@ -1241,20 +1277,20 @@
    "brand": "Miss Mahjong",
    "google_organic_top3": {
     "hits": 1,
-    "n": 5,
-    "last": "2026-11-10",
+    "n": 6,
+    "last": "2026-11-11",
     "lasthit": false
    },
    "google_ai_overview": {
     "hits": 6,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -1277,13 +1313,13 @@
    },
    "sales": {
     "last7": [
-     6.0,
-     103.5,
+     8.0,
+     157.5,
      false
     ],
     "prev7": [
-     4.0,
-     149.4,
+     3.0,
+     135.9,
      false
     ]
    }
@@ -1292,20 +1328,20 @@
    "brand": "My Fair Mahjong",
    "google_organic_top3": {
     "hits": 1,
-    "n": 6,
-    "last": "2026-11-10",
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": false
    },
    "google_ai_overview": {
-    "hits": 3,
+    "hits": 2,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": false
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -1328,13 +1364,13 @@
    },
    "sales": {
     "last7": [
-     11.0,
-     201.17,
+     9.0,
+     132.28,
      true
     ],
     "prev7": [
-     7.0,
-     84.88,
+     9.0,
+     142.52,
      false
     ]
    }
@@ -1342,21 +1378,21 @@
   {
    "brand": "Noli June",
    "google_organic_top3": {
-    "hits": 5,
-    "n": 5,
-    "last": "2026-11-10",
+    "hits": 6,
+    "n": 6,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
-    "hits": 4,
+    "hits": 5,
     "n": 6,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -1394,21 +1430,21 @@
    "brand": "Oh My Mahjong",
    "google_organic_top3": {
     "hits": 0,
-    "n": 3,
-    "last": "2026-11-08",
+    "n": 4,
+    "last": "2026-11-11",
     "lasthit": false
    },
    "google_ai_overview": {
     "hits": 0,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": false
    },
    "google_ai_mode": {
-    "hits": 0,
-    "n": 2,
-    "last": "2026-11-07",
-    "lasthit": false
+    "hits": 1,
+    "n": 3,
+    "last": "2026-11-11",
+    "lasthit": true
    },
    "chatgpt": {
     "hits": 0,
@@ -1435,8 +1471,8 @@
      false
     ],
     "prev7": [
-     8.0,
-     298.0,
+     5.0,
+     192.7,
      false
     ]
    }
@@ -1444,21 +1480,21 @@
   {
    "brand": "Peace Love Mahjong",
    "google_organic_top3": {
-    "hits": 5,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 6,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 2,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": false
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -1481,13 +1517,13 @@
    },
    "sales": {
     "last7": [
-     3.0,
-     51.1,
+     2.0,
+     34.35,
      false
     ],
     "prev7": [
-     2.0,
-     39.9,
+     3.0,
+     56.65,
      false
     ]
    }
@@ -1495,21 +1531,21 @@
   {
    "brand": "Soirée All Day",
    "google_organic_top3": {
-    "hits": 5,
-    "n": 5,
-    "last": "2026-11-10",
+    "hits": 6,
+    "n": 6,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 3,
     "n": 6,
-    "last": "2026-11-10",
-    "lasthit": true
+    "last": "2026-11-11",
+    "lasthit": false
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -1546,21 +1582,21 @@
   {
    "brand": "Splash of Color",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 7,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -1597,21 +1633,21 @@
   {
    "brand": "The Mahjong Co.",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 6,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -1648,21 +1684,21 @@
   {
    "brand": "The Mahjong Press",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 7,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -1699,21 +1735,21 @@
   {
    "brand": "The Royal Mahjong Society",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 7,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -1736,13 +1772,13 @@
    },
    "sales": {
     "last7": [
-     2.0,
-     27.63,
+     0,
+     0,
      false
     ],
     "prev7": [
-     1.0,
-     42.5,
+     3.0,
+     70.13,
      false
     ]
    }
@@ -1750,21 +1786,21 @@
   {
    "brand": "Tigre de Tartán",
    "google_organic_top3": {
-    "hits": 5,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 6,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
-    "hits": 5,
+    "hits": 6,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -1787,13 +1823,13 @@
    },
    "sales": {
     "last7": [
-     0.0,
-     -15.75,
+     1.0,
+     0.22,
      false
     ],
     "prev7": [
      2.0,
-     27.04,
+     11.29,
      false
     ]
    }
@@ -1801,21 +1837,21 @@
   {
    "brand": "Virora Mahjong",
    "google_organic_top3": {
-    "hits": 6,
-    "n": 6,
-    "last": "2026-11-10",
+    "hits": 7,
+    "n": 7,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
-    "hits": 4,
+    "hits": 3,
     "n": 7,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": false
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -1838,8 +1874,8 @@
    },
    "sales": {
     "last7": [
-     4.0,
-     111.6,
+     3.0,
+     84.69,
      false
     ],
     "prev7": [
@@ -1852,21 +1888,21 @@
   {
    "brand": "Wren Mats",
    "google_organic_top3": {
-    "hits": 5,
-    "n": 5,
-    "last": "2026-11-10",
+    "hits": 6,
+    "n": 6,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 6,
     "n": 6,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -1903,21 +1939,21 @@
   {
    "brand": "YOLO Mahjong",
    "google_organic_top3": {
-    "hits": 5,
-    "n": 5,
-    "last": "2026-11-10",
+    "hits": 6,
+    "n": 6,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_overview": {
     "hits": 6,
     "n": 6,
-    "last": "2026-11-10",
+    "last": "2026-11-11",
     "lasthit": true
    },
    "google_ai_mode": {
-    "hits": 2,
-    "n": 2,
-    "last": "2026-11-07",
+    "hits": 3,
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": true
    },
    "chatgpt": {
@@ -1955,20 +1991,20 @@
    "brand": "Yellow Mountain Imports",
    "google_organic_top3": {
     "hits": 0,
-    "n": 5,
-    "last": "2026-11-10",
+    "n": 6,
+    "last": "2026-11-11",
     "lasthit": false
    },
    "google_ai_overview": {
     "hits": 3,
     "n": 6,
-    "last": "2026-11-10",
-    "lasthit": true
+    "last": "2026-11-11",
+    "lasthit": false
    },
    "google_ai_mode": {
     "hits": 0,
-    "n": 2,
-    "last": "2026-11-07",
+    "n": 3,
+    "last": "2026-11-11",
     "lasthit": false
    },
    "chatgpt": {
