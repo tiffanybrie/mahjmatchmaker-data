@@ -111,5 +111,10 @@ try:
     r=subprocess.run(['python3','scripts/checks/fb_groups_check.py'],capture_output=True,text=True,timeout=10)
     out[0:0]=[l for l in r.stdout.splitlines() if l.strip()]
 except Exception: pass
+# Nov 11 5:53pm (Tiffany: FYM is all or nothing; nothing half-ready in Table view / price / colour).
+try:
+    _rd=json.load(open('config/fym-readiness.json'))
+    if _rd.get('total_gaps'): out.append(f"FYM ALL-OR-NOTHING (OVERDUE): {_rd['total_gaps']} visible items not ready in every view/filter (" + ', '.join(f"{b}: {sum(c.values())}" for b,c in sorted(_rd['brands'].items(),key=lambda x:-sum(x[1].values()))[:6]) + "). Details config/fym-readiness.json; fix in the next FYM release.")
+except Exception: pass
 if out:
     print('=== FRONT DOOR (automatic, every message) ===\n'+'\n'.join(out)+'\nRule: if you tell Tiffany you will fix something, fix it BEFORE you reply, or add it to docs/OVERDUE.md in the same turn and tell her who/when.')

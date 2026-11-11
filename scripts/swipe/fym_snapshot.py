@@ -34,3 +34,7 @@ json.dump({'_about': 'Every product handle in FYM by kind (fym_snapshot.py), rea
 print('items index', {k: len(v) for k, v in IDX.items()})
 if not VER:
     print('WARNING: no FYM build number recorded; book_gate [f] will FAIL. Re-run with --version vNN (the build you just published).')
+# Nov 11 5:53pm (Tiffany: FYM is all or nothing): refresh the per-brand readiness file from the same build every publish.
+import subprocess as _sp
+_r = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'checks', 'fym_all_or_nothing.py'), src], capture_output=True, text=True)
+print((_r.stdout.splitlines() or [''])[0])

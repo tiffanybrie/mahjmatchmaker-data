@@ -1320,6 +1320,14 @@ try:
     print('FYM GATE INFO [169] ' + (_r169.stdout.strip().splitlines() or [''])[0])
     if _r169.returncode != 0: F.append('[169] Table view mats: ' + ' | '.join(l for l in _r169.stdout.splitlines()[1:] if l.startswith('[tv-mats]'))[:900])
 except Exception as _e: F.append(f"[169] Table view mats check did not run: {_e}")
+# [173] Nov 11 2026 (Tiffany 5:53pm: "Find Your Match is an all or nothing"; Table view must not split FYM into before/after worlds):
+#       every visible tile set / mat / rack must be ready in EVERY view and filter (Table view walls/class/decision, price, card colour,
+#       photo). Gaps live on Nov 11 are baselined (config/fym-readiness-baseline.json, OVERDUE); any NEW gap fails. scripts/checks/fym_all_or_nothing.py
+try:
+    _r173 = subprocess.run([sys.executable, REPO + 'scripts/checks/fym_all_or_nothing.py', B], capture_output=True, text=True, timeout=120)
+    print('FYM GATE INFO [173] ' + (_r173.stdout.strip().splitlines() or [''])[0])
+    if _r173.returncode != 0: F.append('[173] item not ready in every view (all or nothing): ' + ' | '.join(l.strip() for l in _r173.stdout.splitlines() if l.strip().startswith('NEW'))[:900])
+except Exception as _e: F.append(f"[173] all-or-nothing check did not run: {_e}")
 # [104] Oct 30 (rules audit GA4; CLAUDE.md FYM 0 "every publish goes to BOTH places"): the build's public "Version X.Y" label
 # == the newest site-app/fym-vNN on the fym-site-preview branch == the page-block pinned at the TOP of
 # site/livepatch/fym-preview-oct21/README.md (that pin is what gets pasted on Squarespace). WARNING by default (the README

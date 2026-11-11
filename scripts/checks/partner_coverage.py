@@ -107,6 +107,9 @@ for k, p in sorted(partners.items(), key=lambda x: x[1]['brand'].lower()):
     if not hosts:
         r['store'] = 'store not read automatically (not Shopify, and no reader in config/non-shopify-partners.json yet)'
         if not excused(k, 'store'): r['gaps'].append('store not read automatically yet (not Shopify): check it in Chrome + its Instagram/emails today, and give it a reader in config/non-shopify-partners.json')
+    # Nov 11 5:53pm (Tiffany: FYM is all or nothing): items in the app but not ready in every view (Table view, price...) = not covered.
+    _rd = {norm(b): c for b, c in J('config/fym-readiness.json', {'brands': {}}).get('brands', {}).items()}
+    if _rd.get(k): r['gaps'].append('in the app but NOT ready in every view: ' + ', '.join(f'{v} {x}' for x, v in _rd[k].items()) + ' (config/fym-readiness.json)')
     rows.append(r)
 
 # AGE OF EVERY GAP (Tiffany Nov 11 3:18pm: "who's responsible if the fix doesn't get done?"). Each gap line gets a
