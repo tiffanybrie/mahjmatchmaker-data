@@ -101,13 +101,13 @@ def line(x):
     return img, (f'<div class="bw-item">' + (f'<div class="bw-stamp">Added {e(st)}</div>' if st else '') + f'<div class="bw-what">{e(x["what"])}</div>' + (f'<div class="bw-when">When: {e(when)}</div>' if when else '') + btn + '</div>')
 CAP = 2   # Tiffany Nov 11 10:17am: big-inventory brands (Let's Be Besties: 175 new mats) can't dominate; 2 per brand per section, then "See all"
 bslug = lambda b: re.sub(r'[^a-z0-9]+', '-', clean(b).lower()).strip('-')
-def card(group, cap=CAP):
+def card(group, cap=CAP, label=''):
     rank = sorted(group, key=lambda x: 0 if TILEY(x) else 1)   # tiles lead inside a brand too
     shown = rank[:cap] if cap else rank
     parts = [line(x) for x in shown]; img = next((i for i, _ in parts if i), None)
     pic = f'<img class="bw-img" src="{e(img)}" alt="" loading="lazy">' if img else ''
     more = (f'<a class="bw-more" href="#{bslug(group[0]["brand"])}">+{len(group) - cap} more · see everything from {e(clean(group[0]["brand"]))} &rarr;</a>' if cap and len(group) > cap else '')
-    return f'<article class="bw-card">{pic}<div class="bw-body"><div class="bw-brand">{e(clean(group[0]["brand"]))}</div>{"".join(h for _, h in parts)}{more}</div></article>'
+    return f'<article class="bw-card">{pic}<div class="bw-body"><div class="bw-brand">{e(clean(group[0]["brand"]))}' + (f'<span class="bw-tag bw-t-{bslug(label)}">{e(label)}</span>' if label else '') + f'</div>{"".join(h for _, h in parts)}{more}</div></article>'
 def grouped(L):
     order, G = [], {}
     for x in L:
@@ -139,14 +139,14 @@ sec = [('Launching now', uniq(P(sorted(launch, key=lambda x: (BIG(x), x.get('dat
        ('Just dropped', uniq(P(newest([x for x in dropped if (x.get('found') or x.get('date') or '9') >= cut])))),
        ('On sale now', uniq(P(newest(d['sales'])))),
        ('Coming soon', uniq(P(newest(d['coming_soon']))))]
-body = ''.join(f'<section class="bw-sec"><h2>{t}</h2><div class="bw-grid">{"".join(card(g) for g in grouped(L))}</div></section>' for t, L in sec if L)
+body = ''.join(f'<section class="bw-sec"><h2>{t}</h2><div class="bw-grid">{"".join(card(g, label=t) for g in grouped(L))}</div></section>' for t, L in sec if L)
 # One page per brand (Tiffany Nov 11 10:17am): every brand's full list lives on its own page; the main page feeds from them.
 # In the preview these are #<brand> views of the same file; on the website they become /brand-watch/<brand> pages.
 _allb = {}
 for t, L in sec:
     for x in L: _allb.setdefault(bslug(x['brand']), (clean(x['brand']), []))[1].append((t, x))
 bpages = ''.join(f'<section class="bw-bpage" id="p-{k}" hidden><a class="bw-back" href="#">&larr; All brands</a><h2 class="bw-bh">{e(n)}</h2>'
-                 + ''.join(f'<h3 class="bw-bsec">{t}</h3><div class="bw-grid">' + ''.join(card([x], cap=0) for x in sorted([x for tt, x in L if tt == t], key=lambda x: 0 if TILEY(x) else 1)) + '</div>' for t in dict.fromkeys(tt for tt, _ in L))   # Nov 11 10:21am: full page = a photo on every item we have one for
+                 + ''.join(f'<h3 class="bw-bsec">{t}</h3><div class="bw-grid">' + ''.join(card([x], cap=0, label=t) for x in sorted([x for tt, x in L if tt == t], key=lambda x: 0 if TILEY(x) else 1)) + '</div>' for t in dict.fromkeys(tt for tt, _ in L))   # Nov 11 10:21am: full page = a photo on every item we have one for
                  + '</section>' for k, (n, L) in _allb.items())
 body = f'<div id="bw-main">{body}</div>{bpages}'
 
@@ -176,6 +176,11 @@ body{{background:var(--bg);color:var(--ink);font:16px/1.45 Georgia,'Times New Ro
 .bw-back{{font:600 14px system-ui,sans-serif;color:var(--navy);text-decoration:none;display:inline-block;margin-top:18px}}
 .bw-bh{{font-size:30px;color:var(--navy);margin:10px 0 0}}
 .bw-bsec{{font-size:18px;color:var(--navy);margin:22px 0 10px}}
+.bw-tag{{display:inline-block;margin-left:8px;vertical-align:1px;font:700 10px/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;border-radius:999px;background:var(--line);color:var(--navy)}}
+.bw-t-launching-now{{background:var(--pink);color:#fff}}
+.bw-t-just-dropped{{background:var(--navy);color:var(--bg)}}
+.bw-t-on-sale-now{{background:#e7b33c;color:#1d2b4f}}
+.bw-sec h2{{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:2;padding-top:8px}}
 .bw-when{{font:500 13px system-ui,sans-serif;color:var(--muted)}}
 .bw-btn{{align-self:flex-start;margin-top:4px;background:var(--navy);color:var(--bg);text-decoration:none;font:600 14px system-ui,sans-serif;padding:8px 14px;border-radius:999px}}
 </style>
