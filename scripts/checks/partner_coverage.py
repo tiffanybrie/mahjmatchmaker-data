@@ -93,6 +93,18 @@ for k, p in sorted(partners.items(), key=lambda x: x[1]['brand'].lower()):
         if not excused(k, 'store'): r['gaps'].append('store not read automatically yet (not Shopify): check it in Chrome + its Instagram/emails today, and give it a reader in config/non-shopify-partners.json')
     rows.append(r)
 
+# AGE OF EVERY GAP (Tiffany Nov 11 3:18pm: "who's responsible if the fix doesn't get done?"). Each gap line gets a
+# first_seen date in config/partner-coverage-state.json (written on every run except --front, which only reads), so a gap
+# can't sit quietly: the front door prints its age, and the owner task escalates anything older than 3 days to HQ Today.
+ST_P = R + 'config/partner-coverage-state.json'
+state = json.load(open(ST_P)) if os.path.exists(ST_P) else {}
+cur = {}
+for r in rows:
+    for g in r['gaps']:
+        k = r['brand'] + ' :: ' + re.sub(r'^\d+ ', '', re.sub(r':.*', '', g))
+        cur[k] = state.get(k, today.isoformat())
+        r.setdefault('age', {})[g] = (today - datetime.date.fromisoformat(cur[k])).days
+if '--front' not in a: json.dump(dict(sorted(cur.items())), open(ST_P, 'w'), indent=1, ensure_ascii=False)
 if arg('--json'): json.dump(rows, open(arg('--json'), 'w'), indent=1, ensure_ascii=False)
 if arg('--hq'):  # HQ 'Find Your Match' tab catalog card (hq/catalog): whole inventory, mats AND tile sets, every partner
     cnt = {}
@@ -116,7 +128,9 @@ g = [r for r in rows if r['gaps']]
 if not live:
     print('PARTNER COVERAGE: could not read the live codes page'); sys.exit(1)
 if '--front' in a:
-    for r in g: print(f"PARTNER HALF SET UP: {r['brand']}: {' | '.join(r['gaps'])}. Fix now, or excuse it with a reason + review date in config/partner-coverage-excuse.json.")
+    for r in g:
+        old = max((r.get('age') or {}).values() or [0])
+        print(f"PARTNER HALF SET UP{' (OVERDUE ' + str(old) + ' days)' if old > 3 else ''}: {r['brand']}: {' | '.join(r['gaps'])}. Owner: the daily Partner coverage task; any chat may fix it now. Excuse only with a reason + review date in config/partner-coverage-excuse.json.")
     sys.exit(0)
 print(f'PARTNER COVERAGE: {len(rows)} partners, {len(g)} half set up')
 for r in g: print(f"  {r['brand']} ({', '.join(r['sources'])}): {' | '.join(r['gaps'])}")
