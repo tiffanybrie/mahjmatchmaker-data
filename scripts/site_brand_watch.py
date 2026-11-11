@@ -81,10 +81,15 @@ def line(x):
         u, code = lk; btn = f'<a class="bw-btn" href="{e(u)}" target="_blank" rel="noopener">Shop{" · use code MAHJMATCH" if code else ""}</a>'
     st = stamp(x.get('found'))
     return img, (f'<div class="bw-item">' + (f'<div class="bw-stamp">Added {e(st)}</div>' if st else '') + f'<div class="bw-what">{e(x["what"])}</div>' + (f'<div class="bw-when">When: {e(when)}</div>' if when else '') + btn + '</div>')
-def card(group):
-    parts = [line(x) for x in group]; img = next((i for i, _ in parts if i), None)
+CAP = 2   # Tiffany Nov 11 10:17am: big-inventory brands (Let's Be Besties: 175 new mats) can't dominate; 2 per brand per section, then "See all"
+bslug = lambda b: re.sub(r'[^a-z0-9]+', '-', clean(b).lower()).strip('-')
+def card(group, cap=CAP):
+    rank = sorted(group, key=lambda x: 0 if TILEY(x) else 1)   # tiles lead inside a brand too
+    shown = rank[:cap] if cap else rank
+    parts = [line(x) for x in shown]; img = next((i for i, _ in parts if i), None)
     pic = f'<img class="bw-img" src="{e(img)}" alt="" loading="lazy">' if img else ''
-    return f'<article class="bw-card">{pic}<div class="bw-body"><div class="bw-brand">{e(clean(group[0]["brand"]))}</div>{"".join(h for _, h in parts)}</div></article>'
+    more = (f'<a class="bw-more" href="#{bslug(group[0]["brand"])}">+{len(group) - cap} more · see everything from {e(clean(group[0]["brand"]))} &rarr;</a>' if cap and len(group) > cap else '')
+    return f'<article class="bw-card">{pic}<div class="bw-body"><div class="bw-brand">{e(clean(group[0]["brand"]))}</div>{"".join(h for _, h in parts)}{more}</div></article>'
 def grouped(L):
     order, G = [], {}
     for x in L:
@@ -116,6 +121,16 @@ sec = [('Launching now', uniq(P(sorted(launch, key=lambda x: (x.get('date') or '
        ('On sale now', uniq(P(newest(d['sales'])))),
        ('Coming soon', uniq(P(newest(d['coming_soon']))))]
 body = ''.join(f'<section class="bw-sec"><h2>{t}</h2><div class="bw-grid">{"".join(card(g) for g in grouped(L))}</div></section>' for t, L in sec if L)
+# One page per brand (Tiffany Nov 11 10:17am): every brand's full list lives on its own page; the main page feeds from them.
+# In the preview these are #<brand> views of the same file; on the website they become /brand-watch/<brand> pages.
+_allb = {}
+for t, L in sec:
+    for x in L: _allb.setdefault(bslug(x['brand']), (clean(x['brand']), []))[1].append((t, x))
+bpages = ''.join(f'<section class="bw-bpage" id="p-{k}" hidden><a class="bw-back" href="#">&larr; All brands</a><h2 class="bw-bh">{e(n)}</h2>'
+                 + ''.join(f'<h3 class="bw-bsec">{t}</h3><div class="bw-grid">{card([x for tt, x in L if tt == t], cap=0)}</div>' for t in dict.fromkeys(tt for tt, _ in L))
+                 + '</section>' for k, (n, L) in _allb.items())
+body = f'<div id="bw-main">{body}</div>{bpages}'
+
 page = f'''<title>Brand Watch</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <style>
@@ -138,11 +153,16 @@ body{{background:var(--bg);color:var(--ink);font:16px/1.45 Georgia,'Times New Ro
 .bw-what{{font-size:17px}}
 .bw-stamp{{font:600 12px system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--pink)}}
 .bw-updated{{font:500 14px system-ui,sans-serif;color:var(--muted);margin:0 0 4px}}
+.bw-more{{font:600 14px system-ui,sans-serif;color:var(--pink);text-decoration:none;margin-top:4px}}
+.bw-back{{font:600 14px system-ui,sans-serif;color:var(--navy);text-decoration:none;display:inline-block;margin-top:18px}}
+.bw-bh{{font-size:30px;color:var(--navy);margin:10px 0 0}}
+.bw-bsec{{font-size:18px;color:var(--navy);margin:22px 0 10px}}
 .bw-when{{font:500 13px system-ui,sans-serif;color:var(--muted)}}
 .bw-btn{{align-self:flex-start;margin-top:4px;background:var(--navy);color:var(--bg);text-decoration:none;font:600 14px system-ui,sans-serif;padding:8px 14px;border-radius:999px}}
 </style>
 <div class="bw"><div class="bw-week">{e(d.get("week_label",""))}</div><h1>Brand Watch</h1>
 <p class="bw-updated">Last updated {e(stamp(d.get("updated")))}</p>
 <p class="bw-intro">New tile sets, mats, racks, restocks and sales from our partner brands, updated through the day. Use code MAHJMATCH at checkout to save.</p>
-{body}</div>'''
+{body}</div>
+<script>(function(){{function r(){{var h=(location.hash||'').slice(1),p=h&&document.getElementById('p-'+h);document.getElementById('bw-main').hidden=!!p;document.querySelectorAll('.bw-bpage').forEach(function(s){{s.hidden=s!==p}});if(p)window.scrollTo(0,0)}}window.addEventListener('hashchange',r);r()}})();</script>'''
 open(R + 'site/livepatch/brand-watch/brand-watch.html', 'w').write(page); print(sum(len(L) for _, L in sec), 'items')
