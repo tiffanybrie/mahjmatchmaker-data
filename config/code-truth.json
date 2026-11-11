@@ -234,6 +234,14 @@
       "hub_listed": false,
       "source": "non-partner (Tiffany Oct 20 allow: whole line, personal favorite); page /sunday-mahjong-discount-code says there is no code",
       "status": "confirmed (no code)"
+    },
+    "Mah Jongg Maven": {
+      "code": "MAHJMATCH",
+      "pct": 5,
+      "scope": "excludes NMJL cards + custom jokers",
+      "hub_must": "5%",
+      "source": "Partner approval email Jan 23 2026 (mahjmatchmaker@ Gmail thread 19be374f0891d44c: MAHJMATCH, 5% off / 5% payout, excludes NMJL cards + custom jokers), found ANSWERS 2026-11-08 4:51pm; cart test Nov 8 11:35pm ET (coupon mahjmatch, $4.75 off $95 = 5%). Added by desk cleanup Nov 10 night after live_codes_check FAILed on the newly live page.",
+      "status": "confirmed"
     }
   },
   "sitemap_lag_days": 3
