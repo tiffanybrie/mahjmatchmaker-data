@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-11T14:10:37+00:00",
+ "swept_at": "2026-11-11T23:14:06+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v119",
  "stores": {
   "amahjline.com": {
@@ -220,7 +220,7 @@
   "bespokemahjong.com": {
    "brand": "Bespoke Mahjong",
    "status": "ok",
-   "products": 350,
+   "products": 338,
    "mats": [
     [
      "2026-10-22T12:17:12-05:00",
@@ -541,7 +541,7 @@
   "brittmillsdesign.com": {
    "brand": "Britt Mills",
    "status": "ok",
-   "products": 717,
+   "products": 718,
    "mats": [
     [
      "2026-11-02T10:05:36-05:00",
@@ -2203,7 +2203,7 @@
   "peacelovemahjong.com": {
    "brand": "Peace Love Mahjong",
    "status": "ok",
-   "products": 100,
+   "products": 102,
    "mats": [
     [
      "2026-09-30T06:45:19-05:00",
@@ -2832,8 +2832,28 @@
   "letsbebesties.com": {
    "brand": "Let's Be Besties",
    "status": "ok",
-   "products": 740,
+   "products": 744,
    "mats": [
+    [
+     "2026-11-11T14:35:20-05:00",
+     "Confetti Kaleidoscope OHBoN Studios Artist Mahjong Mat",
+     "confetti-kaleidoscope-ohbon-studios-artist-mahjong-ma"
+    ],
+    [
+     "2026-11-11T10:42:26-05:00",
+     "Sedona Lillian Claire Designs Artist Mahjong Mat",
+     "sedona-lillian-claire-designs-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-11T10:40:20-05:00",
+     "Cajun Christmas Lillian Claire Designs Artist Mahjong Mat",
+     "cajun-christmas-lillian-claire-designs-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-11T10:40:02-05:00",
+     "Blueberry Hill Lillian Claire Designs Artist Mahjong Mat",
+     "blueberry-hill-lillian-claire-designs-artist-mahjong-mat"
+    ],
     [
      "2026-11-10T20:10:40-05:00",
      "Sleeping Tiger Wanda Viola Artist Mahjong Mat",
@@ -5561,6 +5581,26 @@
     ]
    ],
    "missing": [
+    [
+     "2026-11-11T14:35:20-05:00",
+     "Confetti Kaleidoscope OHBoN Studios Artist Mahjong Mat",
+     "confetti-kaleidoscope-ohbon-studios-artist-mahjong-ma"
+    ],
+    [
+     "2026-11-11T10:42:26-05:00",
+     "Sedona Lillian Claire Designs Artist Mahjong Mat",
+     "sedona-lillian-claire-designs-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-11T10:40:20-05:00",
+     "Cajun Christmas Lillian Claire Designs Artist Mahjong Mat",
+     "cajun-christmas-lillian-claire-designs-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-11T10:40:02-05:00",
+     "Blueberry Hill Lillian Claire Designs Artist Mahjong Mat",
+     "blueberry-hill-lillian-claire-designs-artist-mahjong-mat"
+    ],
     [
      "2026-11-10T20:10:40-05:00",
      "Sleeping Tiger Wanda Viola Artist Mahjong Mat",
