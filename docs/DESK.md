@@ -243,3 +243,8 @@ See CLAUDE.md.
 - Trigger: Anders Ruff bridal mat + tile set (collab with an OG Bachelorette, no date yet). She knows from Heritage Sign Co that the wedding market is huge; mahj x wedding has almost no competition.
 - Search check Nov 11: "mahjong bridal shower" / "mahjong bachelorette party" / "mahjong wedding gift" return only Etsy listings, Anders Ruff's own party-theme post and one thin AI blog. Nobody owns it. Bam Bird bundles are sold at Crate & Barrel = registry-able (wedding registry angle).
 - Plan (Main, needs her yes on the post): one guide page "Mahjong for weddings: bridal shower, bachelorette and registry gift sets" built ahead, live the day Anders Ruff launches; brides' palettes -> matched tiles + mats; add terms to the next Keyword Planner pull; Pinterest board "Mahjong bridal shower".
+
+### Hanukkah + New Year's (Tiffany Nov 11 12:40pm; small, don't over-spend)
+- ONE Hanukkah table piece (mood board + short blog section) before Dec 1 (Hanukkah = Dec 4-12): Noli June Eighth Night mat + Hanukkah dish, a blue tile set; partner Hanukkah tiles exist (Splash of Color Hanukkah sets, Sweet Jojo Judaica Pearl). Less competition than Christmas.
+- New Year's phase (late Dec): Noli June Rochelle Didn't Make It to Midnight mat + NYE dice dish, Splash NYE Glitz Gold mat. config/seasonal-tags.json.
+- Winter tile sets for ski/apres content: CMC Apres Ski Club, Virora Nivalee, Bespoke The Chalet (Frosty Pearl White / Lilac), Maison Mahj Apres Mahj (sold out).
