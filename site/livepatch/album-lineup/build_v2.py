@@ -3,7 +3,7 @@ from PIL import Image
 e=html.escape
 S=json.load(open('/tmp/claude-0/plan2/sets2.json'))
 ALB={"Oh My Mahjong":("31 albums (every set incl. retired, Coquette, Juniper)",""),
-"Miss Mahjong":("2: Jade, Malachite","At your limit of 2 until everyone has one. A brand-new set can still jump the line."),
+"Miss Mahjong":("2: Jade, Malachite","Next: Miss Darling twins (Cameo Blue + Lilac), moved up with Charleston + Bespoke. Travel sets (Mini Miss Classic, Out of Office) = promo posts, not albums. Catrina next fall. Cowgirl unlikely."),
 "Bam Bird Boutique":("2: Classic Tortoise, Deco Lagoon","Deco Indigo + Mulberry review pages are ready for you; MCM after."),
 "Anders Ruff":("2: Brownstone Bloom, Dear Santa (holiday)","Green Light Gatsby half done (32 yes)."),
 "Sunday Mahjong":("2: Sunday Tile Set, December 1994 (holiday)","Sunday Blues building; Nature Walk, Plum Panda, Hummingbird queued."),
@@ -30,7 +30,7 @@ NOTE={"Mahj Pit":"No Christmas album (too late; Christmas is planned Sept-Oct). 
 "The Mahjong Press":"Store is The Mahjong House (themahjonghouse.com): they DO sell tile sets.",
 }
 NOTILES={"Britt Mills":"mats + racks","Amanda Toppe":"art mats (store not readable by our watch; please check)","Mini Mahjer":"mats, no tile sets in their store","Wren Mats":"mats (store not readable; please check)","Mahj & Vine":"mats","Mahjong Co.":"1 product (mat)","I Love Mahj":"app / lessons, no store","Soirée All Day":"mats + tablecloths (store not readable; please check)","Mahjong Register":"mats + racks (81 products, no tile set)","Let's Be Besties":"mats","Mahjong by SI":"onboarding; no store link yet","Sweet Jojo Designs":"Amazon mats","Fait à Main":"mats (bandana / Texas mats)"}
-PICKS=[("Charleston Cabana Club","your call; swipe book ready"),("Bespoke Glitter Glow Red","new red set, year-round, mid-holiday"),("Let's Mahj On: Let's Golf!","new Nov 9"),("Mahj Mood: Playing For Keeps or Mauve-Blush","your pick from the photos"),("Mac + Miller: Fire + Fortune","watermarked photos OK"),("Middle & Main: Peach & Pine","queued for me to build, not urgent"),("My Fair Mahjong","pick from photos"),("Noli June / Mahj Pit / Royal / The Mahjong Press / Amahj","year-round sets, pick from photos"),("Miss Mahjong: Darling Lilac","only when it gets a date"),("Bird & Bamboo","last: her racks are her strength and well featured")]
+PICKS=[("Charleston Cabana Club","your call; swipe book ready"),("Bespoke Glitter Glow Red","new red set, year-round, mid-holiday"),("Miss Mahjong: Miss Darling twins, Cameo Blue + Lilac","moved up: get it out before Lilac preorder opens; reshares + gets Miss Mahjong's attention"),("Let's Mahj On: Let's Golf!","new Nov 9"),("Mahj Mood: Playing For Keeps or Mauve-Blush","your pick from the photos"),("Mac + Miller: Fire + Fortune","watermarked photos OK"),("Middle & Main: Peach & Pine","queued for me to build, not urgent"),("My Fair Mahjong","pick from photos"),("Noli June / Mahj Pit / Royal / The Mahjong Press / Amahj","year-round sets, pick from photos"),("Bird & Bamboo","last: her racks are her strength and well featured")]
 def th(u):
   if not u: return ''
   u='https:'+u if u.startswith('//') else u
