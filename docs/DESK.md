@@ -248,3 +248,8 @@ See CLAUDE.md.
 - ONE Hanukkah table piece (mood board + short blog section) before Dec 1 (Hanukkah = Dec 4-12): Noli June Eighth Night mat + Hanukkah dish, a blue tile set; partner Hanukkah tiles exist (Splash of Color Hanukkah sets, Sweet Jojo Judaica Pearl). Less competition than Christmas.
 - New Year's phase (late Dec): Noli June Rochelle Didn't Make It to Midnight mat + NYE dice dish, Splash NYE Glitz Gold mat. config/seasonal-tags.json.
 - Winter tile sets for ski/apres content: CMC Apres Ski Club, Virora Nivalee, Bespoke The Chalet (Frosty Pearl White / Lilac), Maison Mahj Apres Mahj (sold out).
+
+### From Tiffany Nov 11 12:57pm
+- **Charleston Mahjong Club Hunt Club vlog (Main, Chrome):** her review VIDEO of CMC Hunt Club tiles on Mahjong Moxie's Duck Camp mat sits in our PRIVATE Facebook group. Find the post (facebook.com/groups/mahjmatchmaker, search "Hunt Club"), note its date, grab stills, and publish it as a BACKDATED blog post / vlog with photos (SEO: Charleston Mahjong Club Hunt Club tiles review, + their other theme sets: Après Ski, Cocktail Club 2.0, Yacht Club, Country Club, Cabana Club; code MAHJMATCH). CMC likely doesn't know she ever featured them. Ask before downloading the video file.
+- **Holiday-break TRAVEL week** (mid-Dec, when it's too late to ship holiday tiles): travel sets before vacations: Miss Mahjong Mini Miss Classic (new), Mini Miss Out of Office (sold out now, "coming back": watch), CMC Cabana Club travel bundle; Cabana Club album releases that week or EARLIER (as soon as it's done: leave shipping time, avoid sell-outs). Christmas Vacation theme.
+- **Priority:** Bespoke + Charleston are her top two of the lineup. Bespoke = decent-sized brand with no representation: work harder for them.
