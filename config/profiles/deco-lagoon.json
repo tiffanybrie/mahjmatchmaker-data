@@ -304,5 +304,30 @@
   ],
   "round": 1,
   "_note": "Tiffany's face picks from the review page; rebuild best_features from these"
+ },
+ "field": {
+  "_note": "Nov 11 (Tiffany: per-album kit like Juniper). Real FYM Table-view screens of Deco (Lagoon) on each mat, album racks.",
+  "mats": [
+   {
+    "img": "assets/social/deco-lagoon-launch/fym-table/deco-lagoon-table-reba.jpg",
+    "mat": "Reba",
+    "brand": "Britt Mills"
+   },
+   {
+    "img": "assets/social/deco-lagoon-launch/fym-table/deco-lagoon-table-viola.jpg",
+    "mat": "Viola",
+    "brand": "Britt Mills"
+   },
+   {
+    "img": "assets/social/deco-lagoon-launch/fym-table/deco-lagoon-table-gilded-peacock.jpg",
+    "mat": "Gilded Peacock",
+    "brand": "Bougie Mahjong"
+   },
+   {
+    "img": "assets/social/deco-lagoon-launch/fym-table/deco-lagoon-table-pretty-in-plum-premium.jpg",
+    "mat": "Pretty in Plum Premium",
+    "brand": "Mahjong Register"
+   }
+  ]
  }
 }

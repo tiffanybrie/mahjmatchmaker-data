@@ -91,7 +91,11 @@ ft = lambda kk, w: f'<img src="file://{FT}{kk}.png" style="width:{w}px;display:b
 fl = lambda t: f'<div class="caps" style="font-size:21px;color:var(--pink);text-align:center;white-space:nowrap">{t}</div>'
 fc = lambda t, s: f'<div class="pf" style="font-size:{s}px;line-height:1.22;color:#3c4f73;text-align:center">{t}</div>'
 t0 = FAV['top']
-sing = ''.join(f'<div style="display:flex;flex-direction:column;align-items:center;width:{W//3}px">{fl(n)}<div style="margin-top:14px">{ft(kk, 212)}</div><div style="margin-top:14px">{fc(c, 27)}</div></div>' for n, kk, c in FAV['singles'])
+_NS = len(FAV['singles']); _TW = 212 if _NS <= 3 else 150   # Nov 11 (Deco): 4 singles + a pair (her irises) fit too
+def _fts(kk):   # a single can be one face or a pair of faces
+    if isinstance(kk, list): return '<div style="display:flex;gap:6px">' + ''.join(ft(k, _TW * 2 // 3) for k in kk) + '</div>'
+    return ft(kk, _TW)
+sing = ''.join(f'<div style="display:flex;flex-direction:column;align-items:center;width:{W//_NS}px">{fl(n) if _NS <= 3 else fl(n).replace('font-size:21px', 'font-size:16px')}<div style="margin-top:14px">{_fts(kk)}</div><div style="margin-top:14px">{fc(c, 27 if _NS <= 3 else 22)}</div></div>' for n, kk, c in FAV['singles'])
 s4 = (hdr(('Her best features', 72)) +
       f'{ab(0, 196, "", CW)}{fl(t0[0])}<div style="display:flex;justify-content:center;gap:44px;margin-top:16px">{"".join(ft(kk, 250) for kk in t0[1])}</div><div style="margin-top:14px">{fc(t0[2], 31)}</div></div>'
       f'{ab(L, 676, "display:flex;justify-content:space-between", W)}{sing}</div>')
