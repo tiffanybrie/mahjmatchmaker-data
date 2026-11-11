@@ -1,0 +1,423 @@
+<style>
+.mmbg{--ink:#1e3a5f;--rose:#c8456f;--blush:#fdf2f5;--sand:#faf7f2;--line:#ead9df;max-width:880px;margin:0 auto;background:#fff;padding:36px 40px;border-radius:18px;color:var(--ink);line-height:1.65;font-size:17px}
+.mmbg *{box-sizing:border-box}
+.mmbg h1,.mmbg h2,.mmbg h3,.mmbg p,.mmbg li{color:var(--ink)}
+.mmbg a{color:var(--rose)}
+.mmbg .hero{position:relative;border-radius:20px;overflow:hidden;background:var(--sand)}
+.mmbg .hero img{display:block;width:100%;height:360px;object-fit:cover}
+.mmbg .hero-txt{padding:28px 36px 30px;background:#fff;margin:-70px 24px 0;position:relative;border-radius:16px;box-shadow:0 8px 30px rgba(30,58,95,.10)}
+.mmbg .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.72em;font-weight:700;color:var(--rose);margin:0 0 6px}
+.mmbg h1{font-size:2.3em;line-height:1.15;margin:0 0 10px}
+.mmbg .dek{font-size:1.08em;margin:0;opacity:.9}
+.mmbg section{margin:46px 0}
+.mmbg h2{font-size:1.55em;margin:0 0 14px;line-height:1.25}
+.mmbg .note{background:var(--sand);border-left:4px solid var(--rose);border-radius:0 14px 14px 0;padding:22px 26px}
+.mmbg .note p{margin:0 0 12px}.mmbg .note p:last-child{margin:0}
+.mmbg .sig{font-style:italic;font-weight:600}
+.mmbg .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.mmbg .card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.mmbg .card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--sand)}
+.mmbg .card .in{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.mmbg .card h3{font-size:1.08em;margin:0}
+.mmbg .card p{margin:0;font-size:.95em}
+.mmbg .card .go{margin-top:auto;font-weight:700;text-decoration:none;font-size:.92em}
+.mmbg .tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.mmbg .tiles a{text-decoration:none;color:var(--ink)}
+.mmbg .tiles img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;display:block}
+.mmbg .tiles span{display:block;font-weight:600;font-size:.92em;margin-top:6px}
+.mmbg .feat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;padding:0;margin:0}
+.mmbg .feat li{margin:0}
+.mmbg .feat a{display:block;padding:14px 16px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);background:#fff}
+.mmbg .feat a b{display:block;color:var(--rose);font-size:.75em;text-transform:uppercase;letter-spacing:.1em}
+.mmbg .perk{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--blush);border-radius:16px;padding:20px 24px}
+.mmbg .perk p{margin:0}
+.mmbg .perk .code{font-weight:800;letter-spacing:.08em;color:var(--rose)}
+.mmbg .btn{display:inline-block;background:var(--rose);color:#fff!important;padding:11px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.95em}
+.mmbg details{border-bottom:1px solid var(--line);padding:12px 0}
+.mmbg summary{cursor:pointer;font-weight:700}
+.mmbg details p{margin:8px 0 0}
+.mmbg .more{display:flex;flex-wrap:wrap;gap:8px}
+.mmbg .more a{border:1px solid var(--line);border-radius:999px;padding:6px 14px;text-decoration:none;font-size:.88em;color:var(--ink);background:#fff}
+.mmbg .small{font-size:.82em;opacity:.75}
+@media(max-width:700px){.mmbg{font-size:16px;padding:22px 16px}.mmbg .hero img{height:230px}.mmbg .hero-txt{margin:-40px 12px 0;padding:20px}.mmbg h1{font-size:1.8em}.mmbg .grid,.mmbg .feat{grid-template-columns:1fr}.mmbg .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.mmbg .me{display:flex;gap:16px;align-items:center;margin:0 0 16px}.mmbg .me img{width:76px;height:76px;border-radius:50%;object-fit:cover;flex:0 0 76px;border:3px solid #fff;box-shadow:0 2px 10px rgba(30,58,95,.15)}.mmbg .me strong{display:block;font-size:1.05em}.mmbg .me span{display:block;font-size:.88em;opacity:.8}
+
+
+.mmbg .tiles.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.mmbg .tiles small{display:block;font-size:.8em;margin-top:2px}
+.mmbg .tiles small a{color:var(--rose);font-weight:600}
+@media(max-width:700px){.mmbg .tiles.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<div class="mmbg">
+<div class="hero">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_7828fdec-5651-498b-8ffe-988d9a9a1253.png?v=1794295983&width=1500" style="object-position:50% 50%" alt="Mahjong by SI Palazzo Breeze mahjong mat">
+<div class="hero-txt">
+<p class="eyebrow">Brand guide</p>
+<h1>Mahjong by SI</h1>
+<p class="dek">Hundreds of printed mahjong mat designs, from florals and coastal prints to chinoiserie and holiday mats, printed in the USA. Plus, my Mahjong by SI discount code for readers.</p>
+</div>
+</div>
+<div class="perk perk-top" style="margin:22px 0 4px">
+<p><strong>A thank-you for Mahj Matchmaker readers:</strong> use code <span class="code">MAHJMATCH</span> for 10% off your mat at Mahjong by SI.</p>
+<p style="font-size:14px;opacity:.75;margin:6px 0 14px">&#10003; Mahjong by SI discount code: MAHJMATCH &middot; 10% off mats &middot; verified November 11, 2026</p>
+<a class="btn" href="https://www.mahjongbysi.com/" target="_blank" rel="noopener">Visit Mahjong by SI</a>
+</div>
+<section>
+<h2>About Mahjong by SI</h2>
+<div class="note">
+<p>Mahjong by SI is the mahjong mat line from Stacie Ivers Francombe, who grew up hearing her mom&rsquo;s weekly mahjong group shuffle tiles down the hall. Her Atlanta print and fabrication company, Signs by SI, printed custom mahjong mats for about five years before Mahjong by SI had a name, and her husband and three kids are part of the business.</p>
+<p>The designs come from an in-house designer and collaborations with independent artists, and every mat is printed to order in their U.S. facility. Natural rubber mats come in 20&quot;, 31.5&quot; and 33.5&quot;; the SI Signature faux leather mats come in square, scalloped and round shapes. They also offer personalized and fully custom mats, and new designs drop every Mahjong Monday.</p>
+</div>
+</section>
+<p>With hundreds of designs, here&rsquo;s where I&rsquo;d start.</p>
+<section>
+<h2>New Mahjong by SI mats</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_a4bf97d3-1d43-444c-8750-35f914c589b7.png?v=1794297751&width=700" alt="Mahjong by SI City Social mahjong mat" loading="lazy">
+<div class="in">
+<h3>City Social</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/city-social-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_7b84f19a-b766-427d-adf4-4d5d3b379e0b.png?v=1794297750&width=700" alt="Mahjong by SI Riviera Reverie mahjong mat" loading="lazy">
+<div class="in">
+<h3>Riviera Reverie</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/riviera-reverie-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_a6f43ac8-c714-40d4-b21b-e3873ec90a72.png?v=1794297748&width=700" alt="Mahjong by SI Little Sparrow mahjong mat" loading="lazy">
+<div class="in">
+<h3>Little Sparrow</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/flight-club-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_e7b4d4f5-a67e-4488-9c71-58f828db8f18.png?v=1794296937&width=700" alt="Mahjong by SI Party Toast mahjong mat" loading="lazy">
+<div class="in">
+<h3>Party Toast</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/party-toast-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_4dea7a8d-dc5d-440d-b19b-deaf7f04aedc.png?v=1794295984&width=700" alt="Mahjong by SI Palazzo Poise mahjong mat" loading="lazy">
+<div class="in">
+<h3>Palazzo Poise</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/palazzo-poise-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_65e9ecf6-15b1-4042-bb51-03f15708f01b.png?v=1794343353&width=700" alt="Mahjong by SI Respect the Marble mahjong mat" loading="lazy">
+<div class="in">
+<h3>Respect the Marble</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/respect-the-marble-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Floral mats</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_7828fdec-5651-498b-8ffe-988d9a9a1253.png?v=1794295983&width=700" alt="Mahjong by SI Palazzo Breeze mahjong mat" loading="lazy">
+<div class="in">
+<h3>Palazzo Breeze</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/palazzo-breeze-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_5ddcbca6-ca7a-41cb-b8d3-1a80afa38f14.png?v=1794343354&width=700" alt="Mahjong by SI The Florist mahjong mat" loading="lazy">
+<div class="in">
+<h3>The Florist</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/the-florist-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_66e62d6a-d4db-4c7d-86be-d1f4eb73df0a.png?v=1794260144&width=700" alt="Mahjong by SI Tulip Courtyard mahjong mat" loading="lazy">
+<div class="in">
+<h3>Tulip Courtyard</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/tulip-court-courtyard-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_a5943370-01ca-4ee9-a3f6-b1c5b2b1bd8e.png?v=1794260140&width=700" alt="Mahjong by SI Magnolia Reverie mahjong mat" loading="lazy">
+<div class="in">
+<h3>Magnolia Reverie</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/magnolia-reverie-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_3807fb23-1e69-4e92-810d-d620df9ed7e7.png?v=1794260139&width=700" alt="Mahjong by SI Peony Estate mahjong mat" loading="lazy">
+<div class="in">
+<h3>Peony Estate</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/peony-salon-estate-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_97db2e1a-1b5a-4311-82ee-8163b7849964.png?v=1794260136&width=700" alt="Mahjong by SI Whispering Branches mahjong mat" loading="lazy">
+<div class="in">
+<h3>Whispering Branches</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/whispering-branches-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Coastal mats</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_42ff886e-e003-4255-9fee-50872e363302.png?v=1794295982&width=700" alt="Mahjong by SI Palazzo Mist mahjong mat" loading="lazy">
+<div class="in">
+<h3>Palazzo Mist</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/palazzo-mist-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_8f1be5cf-359f-4d48-86d7-bd4e7031eb28.png?v=1792435437&width=700" alt="Mahjong by SI Tartan and Hound mahjong mat" loading="lazy">
+<div class="in">
+<h3>Tartan and Hound</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/tartan-and-hound" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_08fdcf27-eff0-4096-9dfd-18bf4dd0a2ea.png?v=1791325112&width=700" alt="Mahjong by SI Sea Glass Pink mahjong mat" loading="lazy">
+<div class="in">
+<h3>Sea Glass Pink</h3>
+<p>Sizes from 20" travel up. From $70.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/sea-glass-pink-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_05ffffc4-02da-4b63-9073-6d8d4a3202b3.png?v=1790975640&width=700" alt="Mahjong by SI Coastal Christmas mahjong mat" loading="lazy">
+<div class="in">
+<h3>Coastal Christmas</h3>
+<p>Sizes from 20" travel up. From $70.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/coastal-christmas-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_60ed67fa-2f2d-4dbe-ab72-d07ff36848ab.png?v=1790714466&width=700" alt="Mahjong by SI The Cane Club mahjong mat" loading="lazy">
+<div class="in">
+<h3>The Cane Club</h3>
+<p>Sizes from 20" travel up. From $70.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/the-cane-club-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_d8fe181f-751f-4a41-9461-c63dc1d9121b.png?v=1790019709&width=700" alt="Mahjong by SI Coral Me Pink mahjong mat" loading="lazy">
+<div class="in">
+<h3>Coral Me Pink</h3>
+<p>Sizes from 20" travel up. From $70.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/coral-me-pink-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Chinoiserie mats</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/MBSI-STARDRD-33_mahjong-mat-star-of-dreidel-delight-33-mahjong-by-si-print_SHOPIFY_Mockup.png?v=1794349935&width=700" alt="Mahjong by SI Mazel Tapestry mahjong mat" loading="lazy">
+<div class="in">
+<h3>Mazel Tapestry</h3>
+<p>Sizes from 20" travel up. From $70.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/mazel-tapestry-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_b0708caa-1171-4bab-92f4-0e6f79e7beee.png?v=1794260134&width=700" alt="Mahjong by SI Aviary Room mahjong mat" loading="lazy">
+<div class="in">
+<h3>Aviary Room</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/the-aviary-room-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_fbe9dc23-4230-45ad-86b2-27b0076c7c1f.png?v=1791867145&width=700" alt="Mahjong by SI The Conservatory mahjong mat" loading="lazy">
+<div class="in">
+<h3>The Conservatory</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/the-conservatory-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_f859c1e8-0573-40cd-b9a6-31c180d5acda.png?v=1791867142&width=700" alt="Mahjong by SI Jade Pavilion mahjong mat" loading="lazy">
+<div class="in">
+<h3>Jade Pavilion</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/jade-pavilion-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_a52fca25-9913-4123-944f-32dd09ad8c93.png?v=1791867141&width=700" alt="Mahjong by SI Golden Aviary mahjong mat" loading="lazy">
+<div class="in">
+<h3>Golden Aviary</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/golden-aviary-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_cd0b2007-1529-4e0f-be72-2d2631749253.png?v=1792430391&width=700" alt="Mahjong by SI Merry Dragons mahjong mat" loading="lazy">
+<div class="in">
+<h3>Merry Dragons</h3>
+<p>Sizes from 20" travel up. From $70.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/merry-dragons-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>For the holidays</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_4ea9cde8-9306-4345-b463-6732be2169d8.png?v=1793203076&width=700" alt="Mahjong by SI Bubble Pop Merry mahjong holiday mat" loading="lazy">
+<div class="in">
+<h3>Bubble Pop Merry</h3>
+<p>Sizes from 20" travel up. From $70.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/bubble-pop-merry-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_a1fcc617-fc50-4ad6-8c06-6eed997f9fa4.png?v=1792615693&width=700" alt="Mahjong by SI Vintage Poinsettia mahjong holiday mat" loading="lazy">
+<div class="in">
+<h3>Vintage Poinsettia</h3>
+<p>Sizes from 20" travel up. From $70.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/vintage-poinsettia-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_2628a8b4-b93a-430e-8a1c-d973ebe8376b.png?v=1792615694&width=700" alt="Mahjong by SI Holiday Bazaar mahjong holiday mat" loading="lazy">
+<div class="in">
+<h3>Holiday Bazaar</h3>
+<p>Sizes from 20" travel up. From $70.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/holiday-bazaar-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_adb96a47-c53a-46ab-b1ba-c7c88aa2cc22.png?v=1792771524&width=700" alt="Mahjong by SI Shalom Garden mahjong holiday mat" loading="lazy">
+<div class="in">
+<h3>Shalom Garden</h3>
+<p>Sizes from 20" travel up. From $70.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/shalom-garden-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/manorah_no_line.png?v=1792423645&width=700" alt="Mahjong by SI Midnight Menorah mahjong holiday mat" loading="lazy">
+<div class="in">
+<h3>Midnight Menorah</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/mahjong-by-si-midnight-menorah-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_57f80456-bf15-44ef-a415-70948d7bc3ea.png?v=1790878338&width=700" alt="Mahjong by SI Come Light the Menorah mahjong holiday mat" loading="lazy">
+<div class="in">
+<h3>Come Light the Menorah</h3>
+<p>Sizes from 20" travel up. From $50.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/mahjong-by-si-come-light-the-menorah-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Round and scalloped mats</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_5f1be53a-08db-4c11-ae04-edd897e4d768.png?v=1784672879&width=700" alt="Mahjong by SI Winter Cardinal Wreath mahjong mat" loading="lazy">
+<div class="in">
+<h3>Winter Cardinal Wreath</h3>
+<p>SI Signature faux leather, round. From $130.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/mahjong-mat-winter-cardinal-wreath-round" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_8f08dcdb-e8b3-445a-a9b8-de3e07477133.png?v=1784672880&width=700" alt="Mahjong by SI Holiday Wreath Botanical Circle mahjong mat" loading="lazy">
+<div class="in">
+<h3>Holiday Wreath Botanical Circle</h3>
+<p>SI Signature faux leather, round. From $130.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/mahjong-mat-holiday-wreath-botanical-circle-round" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_53a96cc7-7d8e-48cd-9d7d-d6fe31d26a88.png?v=1784672881&width=700" alt="Mahjong by SI Festive Garland Noir mahjong mat" loading="lazy">
+<div class="in">
+<h3>Festive Garland Noir</h3>
+<p>SI Signature faux leather, round. From $130.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/mahjong-mat-festive-garland-noir-round" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/fall_lanterns_scallop.png?v=1789053685&width=700" alt="Mahjong by SI Fall Lanterns mahjong mat" loading="lazy">
+<div class="in">
+<h3>Fall Lanterns</h3>
+<p>SI Signature faux leather, scalloped. From $90.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/fall-lanterns-faux-leather-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_6c596f6a-e176-40b9-91cc-1ccad032c851.png?v=1787938682&width=700" alt="Mahjong by SI Sunbeam Cabana Stripe mahjong mat" loading="lazy">
+<div class="in">
+<h3>Sunbeam Cabana Stripe</h3>
+<p>SI Signature faux leather, scalloped. From $120.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/sunbeam-cabana-stripe-scalloped-faux-leather-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_a87b3c1d-d358-4b76-b022-e48f4b909e86.png?v=1785528741&width=700" alt="Mahjong by SI Hummingbird in Fuchsia mahjong mat" loading="lazy">
+<div class="in">
+<h3>Hummingbird in Fuchsia</h3>
+<p>SI Signature faux leather, scalloped. From $90.</p>
+<a class="go" href="https://www.mahjongbysi.com/products/hummingbird-in-fuchsia-scalloped-faux-leather-mahjong-mat" target="_blank" rel="noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Mahjong by SI Discount Code</h2>
+<div class="perk">
+<p><strong>A thank-you for Mahj Matchmaker readers:</strong> use code <span class="code">MAHJMATCH</span> for 10% off your mat at Mahjong by SI.</p>
+<a class="btn" href="https://www.mahjongbysi.com/" target="_blank" rel="noopener">Visit Mahjong by SI</a>
+</div>
+</section>
+<section>
+<h2>Questions about Mahjong by SI</h2>
+<details><summary>Is there a Mahjong by SI discount code?</summary><p>Yes. Use code MAHJMATCH at checkout on mahjongbysi.com for 10% off your mahjong mat.</p></details>
+<details><summary>What is Mahjong by SI known for?</summary><p>Printed mahjong mats, with hundreds of designs from an in-house designer and artist collaborations, printed in the USA by its sister company Signs by SI in Atlanta. New designs drop every Mahjong Monday.</p></details>
+<details><summary>What sizes and materials do Mahjong by SI mats come in?</summary><p>Natural rubber mats come in 20" travel, 31.5" and 33.5". SI Signature faux leather mats come in 20" travel, 33" square, 33" scalloped and 34" round. Both use a 3mm construction.</p></details>
+<details><summary>Can I get a custom Mahjong by SI mat?</summary><p>Yes. You can personalize one of their designs with a name, monogram, logo or text, or start from a blank mat in their Custom Mat Builder and upload your own artwork.</p></details>
+<details><summary>Are the mats made to order?</summary><p>Yes. Every mat is printed to order in their U.S. facility, and most orders are final sale because they are made to order.</p></details>
+<details><summary>Can I combine the code with other offers?</summary><p>Most shops allow one discount code per order, so the code usually can&rsquo;t be combined with a sale or another code.</p></details>
+</section>
+<section>
+<h2>More brands I love</h2>
+<div class="more">
+<a href="/oh-my-mahjong-discount-code">Oh My Mahjong</a>
+<a href="/miss-mahjong-discount-code">Miss Mahjong</a>
+<a href="/my-fair-mahjong-discount-code">My Fair Mahjong</a>
+<a href="/mahj-mood-discount-code">Mahj Mood</a>
+<a href="/noli-june-discount-code">Noli June</a>
+<a href="/mahj-pit-discount-code">Mahj Pit</a>
+<a href="/mah-jongg-maven-discount-code">Mah Jongg Maven</a>
+<a href="/soiree-all-day-discount-code">Soir&eacute;e All Day</a>
+<a href="/mahjong-discount-codes">All brands &rarr;</a>
+</div>
+</section>
+<p class="small">Mahj Matchmaker may earn a commission when you use my code, at no extra cost to you. Thank you for supporting the tile match mock-ups and inspiration I share with the community.</p>
+</div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is there a Mahjong by SI discount code?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Use code MAHJMATCH at checkout on mahjongbysi.com for 10% off your mahjong mat."}}, {"@type": "Question", "name": "What is Mahjong by SI known for?", "acceptedAnswer": {"@type": "Answer", "text": "Printed mahjong mats, with hundreds of designs from an in-house designer and artist collaborations, printed in the USA by its sister company Signs by SI in Atlanta. New designs drop every Mahjong Monday."}}, {"@type": "Question", "name": "What sizes and materials do Mahjong by SI mats come in?", "acceptedAnswer": {"@type": "Answer", "text": "Natural rubber mats come in 20\" travel, 31.5\" and 33.5\". SI Signature faux leather mats come in 20\" travel, 33\" square, 33\" scalloped and 34\" round. Both use a 3mm construction."}}, {"@type": "Question", "name": "Can I get a custom Mahjong by SI mat?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can personalize one of their designs with a name, monogram, logo or text, or start from a blank mat in their Custom Mat Builder and upload your own artwork."}}, {"@type": "Question", "name": "Are the mats made to order?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every mat is printed to order in their U.S. facility, and most orders are final sale because they are made to order."}}]}</script>

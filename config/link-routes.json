@@ -789,6 +789,17 @@
    "notes": "own WooCommerce site, code MAHJMATCH = 5% off / 5% payout (excludes NMJL cards + custom jokers). NOT the Etsy shop MahjjMaven (separate entry; same brand unconfirmed).",
    "source": "Gmail 19be374f0891d44c (approved Jan 23 2026) + cart test Nov 8 11:35pm ET (docs/OVERDUE.md); added Nov 11 by partner_coverage fix",
    "rate_compare": "code"
+  },
+  "Mahjong by SI": {
+   "route": "code-site",
+   "store_hosts": [
+    "mahjongbysi.com",
+    "www.mahjongbysi.com"
+   ],
+   "commission_pct": 5,
+   "notes": "own Shopify site (Atlanta; Signs by SI). Code MAHJMATCH = 10% off mats, up to 5% commission. Affiliate link not issued yet (created when the free account is set up from the Nov 9 invite email); plain shop links until then.",
+   "source": "Gmail threads 1a1b2d53c72f38af + 1a1c0b4d8c62aeab; cart test Nov 11 2026; added by onboarding run Nov 11",
+   "rate_compare": "code"
   }
  }
 }

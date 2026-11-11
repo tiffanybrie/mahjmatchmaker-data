@@ -242,6 +242,14 @@
       "hub_must": "5%",
       "source": "Partner approval email Jan 23 2026 (mahjmatchmaker@ Gmail thread 19be374f0891d44c: MAHJMATCH, 5% off / 5% payout, excludes NMJL cards + custom jokers), found ANSWERS 2026-11-08 4:51pm; cart test Nov 8 11:35pm ET (coupon mahjmatch, $4.75 off $95 = 5%). Added by desk cleanup Nov 10 night after live_codes_check FAILed on the newly live page.",
       "status": "confirmed"
+    },
+    "Mahjong by SI": {
+      "code": "MAHJMATCH",
+      "pct": 10,
+      "scope": "mats",
+      "hub_must": "10%",
+      "source": "Stacie Francombe email Nov 6 2026 (10% off for shoppers, 5% commission) + Jenna set up the code Nov 9 (thread 1a1b2d53c72f38af) + invite email 'Your followers get 10% off every mat purchase'; cart test Nov 11 2026 ~3:15pm ET: MAHJMATCH applicable, $5 off a $50 mat, fake code not applicable.",
+      "status": "confirmed"
     }
   },
   "sitemap_lag_days": 3
