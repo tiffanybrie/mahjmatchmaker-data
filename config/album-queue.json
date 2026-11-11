@@ -1,0 +1,217 @@
+{
+ "_about": "THE album queue (Tiffany Nov 11 2:27pm: full queue, visual calendar by week, readiness columns that get everything done). One album per Mon-Sun week. 'week' = the Monday; 'proposed' until she OKs the week, then it is copied into config/album-launch-slots.json (album_gate --golive [10c] reads that). Readiness is COMPUTED by scripts/albumreview/album_calendar.py from the album record, album_gate.py and the live site: nothing on the calendar can be ticked by hand. Sources: docs/plans/album-calendar.md, her Nov 11 lineup calls (docs/ANSWERS.md 12:31-2:17pm), release-calendar.json.",
+ "albums": [
+  {
+   "slug": "mahjpit-merry-merry",
+   "name": "Merry Merry (holiday)",
+   "brand": "Mahj Pit",
+   "week": "2026-11-16",
+   "proposed": true,
+   "img": "assets/launches/mahjpit-merry-merry-holiday/01.jpg",
+   "why": "Christmas set launched Nov 11; you reversed the no-new-Christmas rule for it (1:08pm). Has to be out well before Christmas.",
+   "note": "Picks page sent (not the playbook review page): needs your tile-photo OK + travel-size OK, then rebuilt as a proper review page."
+  },
+  {
+   "slug": "sunday-blues",
+   "name": "Sunday Blues",
+   "brand": "Sunday Mahjong",
+   "week": "2026-11-23",
+   "proposed": true,
+   "img": "assets/tiles/album/sunday-blues.png",
+   "why": "Sunday restock ~Thanksgiving; it cuts the line (Nov 8)."
+  },
+  {
+   "slug": "miss-darling",
+   "name": "Miss Darling twins (Cameo Blue + Lilac)",
+   "brand": "Miss Mahjong",
+   "week": "2026-11-30",
+   "proposed": true,
+   "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Cover-DarlingLilac.png?v=1792516771",
+   "why": "You moved them up with CMC + Bespoke (1:34pm); Lilac is coming soon."
+  },
+  {
+   "slug": "cabana-club",
+   "name": "Cabana Club (+ Après Ski)",
+   "brand": "Charleston Mahjong Club",
+   "week": "2026-12-07",
+   "proposed": false,
+   "img": "assets/tiles/album/cabana-club.jpg",
+   "why": "Slot already set Dec 7; holiday-break travel week.",
+   "note": "Was started as a swipe book Nov 10 (against the playbook): redo as a review page. Tile photo never actually sent to you."
+  },
+  {
+   "slug": "deco-mulberry",
+   "name": "Deco Mulberry",
+   "brand": "Bam Bird Boutique",
+   "week": "2026-12-14",
+   "proposed": true,
+   "img": "assets/tiles/v92/bam-bird-boutique-deco-mulberry-split.jpg",
+   "why": "Review page waiting on you."
+  },
+  {
+   "slug": "bespoke-glitter-glow-red",
+   "name": "Glitter Glow Red",
+   "brand": "Bespoke Mahjong",
+   "week": "2026-12-21",
+   "proposed": true,
+   "img": "https://cdn.shopify.com/s/files/1/0837/2142/1083/files/Untitled_1500x1500px_Logo_32.png?v=1793802225",
+   "why": "Top-two brand; red works mid-holiday and year-round."
+  },
+  {
+   "slug": "deco-indigo",
+   "name": "Deco Indigo",
+   "brand": "Bam Bird Boutique",
+   "week": "2026-12-28",
+   "proposed": true,
+   "img": "assets/tiles/v92/bam-bird-boutique-deco-indigo-split.jpg",
+   "why": "Review page waiting on you; navy carries into winter."
+  },
+  {
+   "slug": "nature-walk",
+   "name": "Nature Walk",
+   "brand": "Sunday Mahjong",
+   "week": "2027-01-04",
+   "proposed": true,
+   "img": "assets/tiles/album/nature-walk.png",
+   "why": "Sunday early-January restock."
+  },
+  {
+   "slug": "clearwater-dockside",
+   "name": "Clearwater Dockside",
+   "brand": "Middle & Main Mahjong",
+   "week": "2027-01-11",
+   "proposed": true,
+   "img": "https://cdn.shopify.com/s/files/1/0662/4316/6361/files/Dockside_Tiles_Square_1.png?v=1793901357",
+   "why": "Lake theme, winter blues (1:31pm)."
+  },
+  {
+   "slug": "mahjsquad-blue-chinoiserie",
+   "name": "Blue Chinoiserie",
+   "brand": "Mahj Squad",
+   "week": "2027-01-18",
+   "proposed": true,
+   "img": "https://cdn.shopify.com/s/files/1/0659/3200/1489/files/blue-chinoiserie-mahjong-tiles-424.webp?v=1781193654",
+   "why": "Winter blues (1:18pm)."
+  },
+  {
+   "slug": "hummingbird",
+   "name": "Hummingbird",
+   "brand": "Sunday Mahjong",
+   "week": "2027-01-25",
+   "proposed": true,
+   "img": "assets/tiles/album/hummingbird.png",
+   "why": "Sunday restock late Jan / early Feb."
+  },
+  {
+   "slug": "playing-for-keeps",
+   "name": "Playing For Keeps",
+   "brand": "Mahj Mood",
+   "week": "2027-02-01",
+   "proposed": true,
+   "img": "https://cdn.shopify.com/s/files/1/0944/7712/3887/files/15A31917-1BD9-4EFA-AC5A-AD37D60C1280.jpg?v=1793800581",
+   "why": "Valentine's set, ships January (only if you love it; else Mauve-Blush)."
+  },
+  {
+   "slug": "petalee",
+   "name": "Petalée",
+   "brand": "Virora Mahjong",
+   "week": "2027-02-08",
+   "proposed": true,
+   "img": "assets/tiles/album/petalee.jpg",
+   "why": "Banked; February (2:03pm). Needs the readiness check against the playbook."
+  },
+  {
+   "slug": "peach-and-pine",
+   "name": "Peach & Pine",
+   "brand": "Middle & Main Mahjong",
+   "week": "2027-02-15",
+   "proposed": true,
+   "img": "https://cdn.shopify.com/s/files/1/0662/4316/6361/files/1_1b75f333-4edd-429e-9671-565e7ddda98c.png?v=1777329163",
+   "why": "Queued for Claude to build, not a priority; pretty peach, goes with many Britt Mills mats (12:32pm). Picked Oct 28, never swiped."
+  },
+  {
+   "slug": "plum-panda",
+   "name": "Plum Panda",
+   "brand": "Sunday Mahjong",
+   "week": "2027-02-22",
+   "proposed": true,
+   "img": "assets/tiles/album/plum-panda.png",
+   "why": "Sunday's last release, late Feb / early Mar."
+  },
+  {
+   "slug": "maven-royal-garden",
+   "name": "Royal Garden (+ Bam Bird MCM)",
+   "brand": "Mah Jongg Maven",
+   "week": "2027-03-01",
+   "proposed": true,
+   "img": "assets/launches/maven-royal-garden/royal-garden-navy-olive-green-mah-jongg-set-engraved-hand-painted.jpg",
+   "why": "Ships early 2027; built with Bam Bird MCM, released apart (12:54pm)."
+  },
+  {
+   "slug": "mac-miller-ember-fire",
+   "name": "Ember Fire (+ Verdant Fortune twin)",
+   "brand": "Mac + Miller Mahjong",
+   "week": null,
+   "img": "https://cdn.shopify.com/s/files/1/0957/7991/4038/files/ember-fire-mahjong-tile-set-coming-soon-heirloom-collection-fortune-tiles-744.webp?v=1793194339",
+   "why": "When it restocks (restock watch); build both twins."
+  },
+  {
+   "slug": "amahj-garden-stamped",
+   "name": "Garden Stamped",
+   "brand": "Amahj",
+   "week": null,
+   "img": "https://cdn.shopify.com/s/files/1/0675/3805/9486/files/IMG-4903.png?v=1757937750",
+   "why": "When it restocks (restock watch)."
+  },
+  {
+   "slug": "lets-golf",
+   "name": "Let's Golf! (both colours)",
+   "brand": "Let's Mahj On",
+   "week": "2027-03-29",
+   "proposed": true,
+   "img": "https://cdn.shopify.com/s/files/1/0599/5475/7737/files/Lets_Golf_V1_Square_RFC.jpg?v=1794165243",
+   "why": "Before the Masters (Apr 8-11)."
+  },
+  {
+   "slug": "cmc-hunt-club",
+   "name": "Hunt Club",
+   "brand": "Charleston Mahjong Club",
+   "week": "2027-05-17",
+   "proposed": true,
+   "img": "https://cdn.shopify.com/s/files/1/0880/7160/2481/files/HuntClubFieldGuideSquare-02.jpg?v=1759153021",
+   "why": "About a month before Father's Day (Jun 20)."
+  },
+  {
+   "slug": "mahjsquad-palm-springs",
+   "name": "Palm Springs",
+   "brand": "Mahj Squad",
+   "week": null,
+   "img": "https://cdn.shopify.com/s/files/1/0659/3200/1489/files/palm-springs-mahjong-tiles-224.webp?v=1791472568",
+   "why": "Summer."
+  },
+  {
+   "slug": "tdt-house-tigers-oyster",
+   "name": "House Tigers Oyster",
+   "brand": "Tigre de Tartán",
+   "week": null,
+   "img": "https://cdn.shopify.com/s/files/1/0567/2566/7876/files/4C765471-0C26-4378-A79F-4AFB5B670E64.jpg?v=1784937294",
+   "why": "Any open week; earthy, fall/winter. Your notes are on its record."
+  },
+  {
+   "slug": "noli-best-in-show",
+   "name": "Best in Show",
+   "brand": "Noli June",
+   "week": null,
+   "img": "https://cdn.shopify.com/s/files/1/1035/9898/1201/files/09F99E6C-79D0-4A6B-98BA-033D79885F75.jpg?v=1790121995",
+   "why": "Not a rush (1:27pm)."
+  },
+  {
+   "slug": "myfair-crystal-prism",
+   "name": "Crystal Prism",
+   "brand": "My Fair Mahjong",
+   "week": null,
+   "img": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/COD00C_1.jpg?v=1765812803",
+   "why": "Rack brand, lower priority (1:20pm)."
+  }
+ ]
+}
