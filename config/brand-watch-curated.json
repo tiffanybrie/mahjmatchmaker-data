@@ -160,7 +160,7 @@
    "date": "",
    "brand": "Miss Mahjong",
    "partner": true,
-   "what": "Full-size tile set coming: Miss Darling Lilac ($425). The party version of Miss Darling: hot pink + lime faces, blue stripe, lilac back with white cross-stitch",
+   "what": "Miss Darling Lilac, a new full-size tile set ($425): the party version of Miss Darling, with hot pink and lime faces, a blue stripe and a lilac back with white cross-stitch. No release date yet.",
    "tag": "tiles",
    "new": true,
    "action": "Watch for the drop date (store tag coming-soon); full-size set = album candidate",
@@ -184,25 +184,29 @@
    "date": "2026-11-06",
    "brand": "Mah Jongg Maven",
    "partner": true,
-   "what": "Coca-Cola Classic tile set on PREORDER now ($100 deposit, ships early December); full bundle (tote, racks) sold out, waitlist",
+   "what": "The Coca-Cola Classic tile set ($450) is on preorder now with a $100 deposit and ships in early December. The full bundle with tote and racks is sold out (waitlist open).",
    "tag": "tiles",
    "url": "https://www.instagram.com/p/DfaPJWblBLi/",
    "action": "Add to Monday codes post (5% off with code MAHJMATCH)",
    "urgency": "LATER",
-   "found": "2026-11-06"
+   "found": "2026-11-06",
+   "img": "https://mahjonggmaven.com/wp-content/uploads/2026/08/tile-set--scaled.jpg",
+   "buy": "https://mahjonggmaven.com/product/coca-cola-classic-mah-jongg-set-tile-set/"
   },
   {
    "brand": "Peace Love Mahjong",
    "partner": true,
-   "what": "Black Friday deals start Mon 11/16",
+   "what": "Black Friday sale on tiles, mats and racks starts Mon 11/16.",
    "tag": "sale",
-   "action": "Add to the 11/16 Monday codes post",
-   "urgency": "LATER"
+   "action": "dup of the sales BF row",
+   "urgency": "LATER",
+   "bf": true,
+   "hidden": true
   },
   {
    "brand": "Let's Mahj On",
    "partner": true,
-   "what": "6 new sets rolling out: Golf is LIVE (Nov 9); still coming: Wild, Sweet, Refined, Merry, Stir Things Up",
+   "what": "Six new sets are rolling out. Golf is out now (Nov 9). Still coming: Wild, Sweet, Refined, Merry and Stir Things Up. No dates yet.",
    "tag": "tiles",
    "action": "New in Find Your Mat-ch when live",
    "url": "https://www.instagram.com/reel/DfQNG0Ejejh/",
@@ -212,7 +216,7 @@
   {
    "brand": "Bespoke Mahjong",
    "partner": true,
-   "what": "Glitter Glow Red + Green tiles (holiday) coming in November",
+   "what": "Glitter Glow tiles in holiday red and green are coming in November. No exact date yet.",
    "tag": "tiles",
    "action": "New in Find Your Mat-ch (holiday) when live",
    "url": "https://www.bespokemahjong.com/products/holiday-mahjong-its-a-vibe-glitter-glow-tiles",
@@ -221,7 +225,7 @@
   {
    "brand": "Bam! Let's Mahjong",
    "partner": true,
-   "what": "New mat teased (Art Deco + pink)",
+   "what": "A new Art Deco mat in pink is coming. No name or date yet.",
    "tag": "mat",
    "action": "New in Find Your Mat-ch when live",
    "url": "https://www.instagram.com/p/DfZ5W0yEXtG/",
@@ -244,7 +248,7 @@
   {
    "brand": "Amanda Toppe",
    "partner": true,
-   "what": "The full-size Lila mat's first batch shipped Nov 9 and should arrive by Christmas. Preorder details are coming soon, email list first.",
+   "what": "The full-size Lila mat's first batch shipped Nov 9 and should arrive by Christmas. Preorder date not announced yet (email list first).",
    "tag": "mat",
    "action": "Watch",
    "url": "https://www.instagram.com/p/Dfh3q5fyXYb/",
@@ -254,7 +258,7 @@
   {
    "brand": "Maison Mahj",
    "partner": true,
-   "what": "House Line No. 1 public preorder (ships Feb 2027)",
+   "what": "House Line No. 1 is on public preorder now and ships in February 2027.",
    "tag": "tiles",
    "action": "Add to Monday codes post (free shipping on tile sets)",
    "url": "https://www.instagram.com/p/DfUkYeUDXrZ/",
@@ -263,16 +267,17 @@
   {
    "brand": "Mahj & Vine",
    "partner": true,
-   "what": "Chinoiserie Blue & Green mat restock en route (no date)",
+   "what": "The Chinoiserie Blue & Green mat is on its way back. No date yet.",
    "tag": "mat",
    "action": "Reshare when it lands",
    "url": "https://www.instagram.com/reel/DfZ6g55vpQs/",
-   "urgency": "LATER"
+   "urgency": "LATER",
+   "img": "https://cdn.shopify.com/s/files/1/0644/0769/9527/files/ChinoiserieStripe1.png?v=1767415243"
   },
   {
    "brand": "Mahj Mood",
    "partner": true,
-   "what": "Playing For Keeps tiles + mat on PREORDER (ships January)",
+   "what": "Playing For Keeps tiles and mat are on preorder now and ship in January.",
    "tag": "tiles + mat",
    "action": "Add to Monday codes post",
    "url": "https://mahjmood.com/products/playing-for-keeps-tiles",
@@ -281,24 +286,26 @@
   {
    "brand": "The Royal Mahjong Society",
    "partner": true,
-   "what": "In-person store coming soon",
+   "what": "An in-person store is coming. No date yet.",
    "tag": "news",
-   "action": "Watch",
-   "urgency": "LATER"
+   "action": "HIDDEN (Nov 11 11:42am rule): brick-and-mortar store news is not product news.",
+   "urgency": "LATER",
+   "hidden": true
   },
   {
    "brand": "Middle & Main",
    "partner": true,
-   "what": "A new tile set is on display in their new store and coming online soon. No name or date yet.",
+   "what": "Summit to Sea, a new tile set, is on display in their store and coming online soon. No date yet.",
    "tag": "tiles",
    "action": "Watch the store; swipe book the day the listing appears",
    "url": "https://www.instagram.com/reel/DfcJsTxyEiw/",
-   "urgency": "LATER"
+   "urgency": "LATER",
+   "img": "https://www.middleandmainmahjong.com/cdn/shop/files/Untitled_design_1.png?v=1736279896&width=1200"
   },
   {
    "brand": "YOLO Mahjong",
    "partner": true,
-   "what": "Journey to the West tiles: 1st allocation fully reserved; 2nd allocation reservations open (delivery Jan 2027)",
+   "what": "Journey to the West tiles: the first batch is fully reserved, and reservations are open for the second batch (delivery January 2027).",
    "tag": "tiles",
    "action": "Add to Monday codes post as a preorder",
    "url": "https://www.instagram.com/p/DfaykcRzwQq/",
@@ -307,7 +314,7 @@
   {
    "brand": "The Royal Mahjong Society",
    "partner": true,
-   "what": "Heirloom Crown Jewels (engraved + painted) 'arrive very soon'; Studio Series Crown Jewels (full + travel) on sale now",
+   "what": "Heirloom Crown Jewels (engraved and painted) arrive very soon, no exact date yet. The Studio Series Crown Jewels (full size and travel) are on sale now.",
    "tag": "tiles",
    "urgency": "LATER",
    "source": "https://www.instagram.com/reel/DfkcDuRzIqZ/",
@@ -318,7 +325,7 @@
   {
    "brand": "Tigre de Tartán",
    "partner": true,
-   "what": "Katherine Hartman x TdT Birdsong mat ($225) marked 'back soon' (no promo codes on this collab)",
+   "what": "The Katherine Hartman x Tigre de Tartán Birdsong mat ($225) is coming back soon, no date yet. No promo codes on this collab.",
    "tag": "mat",
    "urgency": "LATER",
    "source": "https://tigredetartan.com/products/katherine-hartman-x-tigre-de-tartan",
@@ -407,10 +414,12 @@
   {
    "brand": "Noli June",
    "partner": true,
-   "what": "Sue Adores a Scallop mahjong table now taking orders (ships nationwide)",
+   "what": "Sue Adores a Scallop: a hand-built folding mahjong table with a scalloped edge ($1,699; made to order, 6-8 weeks; 4 finishes). No promo codes on this one.",
    "tag": "table",
    "source": "https://www.instagram.com/reel/DfkkSTiTCNW/",
-   "url": "https://www.instagram.com/reel/DfkkSTiTCNW/"
+   "url": "https://www.instagram.com/reel/DfkkSTiTCNW/",
+   "buy": "https://nolijune.com/products/the-scalloped-mahjong-table",
+   "img": "https://cdn.shopify.com/s/files/1/1035/9898/1201/files/sue-marshmallow-35_1dd1da32-b62d-4d43-a6ae-8b81b4d91a8c.png?v=1788015490"
   },
   {
    "date": "2026-11-10",
@@ -506,7 +515,9 @@
    "tag": "mat",
    "action": "Reshare their reel + code MAHJMATCH sticker",
    "url": "https://www.instagram.com/reel/Dffng5YoZQi/",
-   "found": "2026-11-08"
+   "found": "2026-11-08",
+   "img": "https://static1.squarespace.com/static/64cdafb9b53cd929f2bc35bb/64e115f72e551d6425ba37c3/6abe885160109f5ce55476fb/1794241636111/",
+   "buy": "https://www.wrenmats.com/mats/p/fc4w3h7pft4wq6gvomnopyc41rknz3"
   },
   {
    "date": "2026-11-08",
@@ -605,9 +616,11 @@
    "partner": true,
    "what": "Flagship store opened; gift cards online; Summit to Sea tiles in-store preview",
    "tag": "news",
-   "action": "Congrats comment from @mahjmatchmaker",
+   "action": "HIDDEN (Tiffany Nov 11 11:42am): store opening / gift cards / in-store preview are not drops.",
    "url": "https://www.instagram.com/reel/DfcJsTxyEiw/",
-   "found": "2026-11-06"
+   "found": "2026-11-06",
+   "img": "https://www.middleandmainmahjong.com/cdn/shop/files/Untitled_design_1.png?v=1736279896&width=1200",
+   "hidden": true
   },
   {
    "date": "2026-11-05",
@@ -623,11 +636,13 @@
    "date": "2026-11-05",
    "brand": "Peace Love Mahjong",
    "partner": true,
-   "what": "Holiday Rack Pets",
+   "what": "Holiday Rack Pets: a mystery bag of 10 holiday rack charms ($15).",
    "tag": "accessory",
    "action": "Reshare + code MAHJMATCH",
    "url": "https://www.instagram.com/reel/DfVtmwtBVjc/",
-   "found": "2026-11-05"
+   "found": "2026-11-05",
+   "buy": "https://peacelovemahjong.com/products/holiday-rack-pets-mystery-bag-of-10",
+   "img": "https://cdn.shopify.com/s/files/1/0812/7230/8004/files/ColorfulCharmsinanOrganzaGiftBag.png?v=1793036947"
   },
   {
    "date": "2026-11-04",
@@ -682,16 +697,18 @@
    "ends": "while supplies last",
    "urgency": "NOW",
    "buy": "https://mahjmood.com/collections/mats",
-   "action": "Group post drafted (docs/social/mahj-mood-flash-sale-2026-11-10.post.txt); reshare their post.",
+   "action": "ASKED Tiffany Nov 11: promote this sale? Hidden until she says yes.",
    "url": "https://www.instagram.com/p/DfkDtN-xu1t/",
-   "found": "2026-11-10T09:50"
+   "found": "2026-11-10T09:50",
+   "approved": null
   },
   {
    "brand": "Peace Love Mahjong",
    "partner": true,
-   "what": "Black Friday deals start Mon 11/16",
+   "what": "Black Friday sale on tiles, mats and racks starts Mon 11/16.",
    "ends": "",
-   "action": "Monday codes post 11/16"
+   "action": "Monday codes post 11/16",
+   "bf": true
   },
   {
    "brand": "Noli June",
@@ -699,9 +716,10 @@
    "what": "10% off the FALALADIES winter collection: comment LADIES on their reel for the link",
    "tag": "sale",
    "ends": "no end date",
-   "action": "Add to Monday codes post",
+   "action": "HIDDEN (Tiffany Nov 11 11:37am): comment-for-link discount competes with our code; never promote.",
    "url": "https://www.instagram.com/reel/DfdqlVAtDwp/",
-   "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/089662ddfcef7047f14e756a4469e59fa87ab2d4/assets/launches/noli-june-falaladies-teaser/ig-De5Hx2DPeDI-ruth-on-table.jpg"
+   "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/089662ddfcef7047f14e756a4469e59fa87ab2d4/assets/launches/noli-june-falaladies-teaser/ig-De5Hx2DPeDI-ruth-on-table.jpg",
+   "hidden": true
   }
  ],
  "nonpartners": [
@@ -793,5 +811,5 @@
    "url": ""
   }
  ],
- "updated": "2026-11-11T11:36"
+ "updated": "2026-11-11T12:00"
 }

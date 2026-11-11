@@ -9,6 +9,8 @@ d = json.load(open(R + 'config/brand-watch-curated.json')); e = html.escape
 # `what` is what shoppers read: plain facts. Our notes go in `action`. The build refuses internal words.
 _INTERNAL = re.compile(r"\bpush(ing|es|ed)?\b|affiliate|commission|\bdraft|waiting|her yes|tiffany|claude|codes post|album day|\bteaser\b|sneak peek|\bFYM\b|sca_ref|\bwe\b|\bour\b|told us|per (their|the) email|buyable|\bTBD\b", re.I)
 _bad = [(k, x['brand'], x['what']) for k in ('this_week', 'just_dropped', 'sales', 'coming_soon') for x in d[k] if x.get('partner') and _INTERNAL.search(x['what'])]
+_CS_WHEN = re.compile(r'no (name or |release )?date|not announced|date not|\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b|\d{1,2}/\d{1,2}|ships|arriv|christmas|week|today|tomorrow|out now|on sale now|preorder|pre-order', re.I)
+_bad += [('coming_soon', x['brand'], x['what'] + '   <- say WHEN, or "No date yet" / "No name or date yet" (Tiffany Nov 11 11:40am)') for x in d['coming_soon'] if x.get('partner') and not x.get('hidden') and not _CS_WHEN.search(x['what'])]
 if _bad:
     sys.exit('BRAND WATCH: internal wording in customer text (rewrite the `what` as plain facts):\n' + '\n'.join(f'  {k} | {b} | {w}' for k, b, w in _bad))
 # --- Nov 10 9:43pm (Tiffany): links must be CONSISTENT. Rule: a Shop button only when there is something to buy
@@ -102,7 +104,7 @@ def line(x):
     when = ' · '.join(t for t in (x.get('day'), x.get('time')) if t)
     btn = ''
     if lk:
-        u, code = lk; btn = f'<a class="bw-btn" href="{e(u)}" target="_blank" rel="noopener">Shop{" · use code MAHJMATCH" if code else ""}</a>'
+        u, code = lk; btn = f'<a class="bw-btn" href="{e(u)}" target="_blank" rel="noopener">Shop{" · use code MAHJMATCH" if code else ""}</a>' + (save_line(x['brand']) if code else '')
     st = stamp(x.get('found'))
     return img, (f'<div class="bw-item">' + (f'<div class="bw-stamp">Added {e(st)}</div>' if st else '') + f'<div class="bw-what">' + ('<span class="bw-kind bw-k-new">New</span>' if not RESTOCK(x) and x.get('_sec') != 'sales' else '<span class="bw-kind bw-k-re">Restock</span>' if RESTOCK(x) else '') + f'{e(re.sub(r"^NEW:\s*", "", x["what"]))}</div>' + (f'<div class="bw-when">When: {e(when)}</div>' if when else '') + btn + '</div>')
 # NEWS RANK (Tiffany Nov 11 10:29am): a tile set (travel too: big ticket) > new racks > rack restocks > mat restocks.
@@ -122,6 +124,22 @@ def RANK(x):
     k = KNOWN.get(clean(x['brand']).lower())
     if k: return (k.index(['tiles', 'racks', 'mats', 'other'][KIND(x)]) if ['tiles', 'racks', 'mats', 'other'][KIND(x)] in k else 9, RESTOCK(x))   # her order for that brand: kind first
     return (0 if KIND(x) == 0 else 1, RESTOCK(x), KIND(x))   # default: any tile set, then new before restock, then racks > mats
+# SAVINGS LINE (Tiffany Nov 11 11:41am): under every code button, say exactly what the code gets you at that brand,
+# from config/code-truth.json (Maison Mahj = free shipping on tile sets, not a %). Tigre de Tartan's code is image-only: no typed line.
+_CT = json.load(open(R + 'config/code-truth.json'))
+_ckey = lambda b: re.sub(r'[^a-z0-9]', '', clean(b).lower().replace('&', 'and').replace('tartán', 'tartan'))
+_CTA = {_ckey(k): v for k, v in (_CT.get('aliases') or {}).items() if isinstance(v, str)}
+def save_line(brand):
+    k = _ckey(brand); k2 = _ckey(_CTA.get(k, brand))
+    t = next((v for kk, v in (_CT.get('terms') or {}).items() if _ckey(kk) in (k, k2)), {})
+    pct = t.get('pct') if t else None
+    if pct is None: pct = next((v for kk, v in _CT['pct'].items() if _ckey(kk) in (k, k2) or _ckey(kk).startswith(k) or k.startswith(_ckey(kk))), None)
+    if t.get('code_visible') == 'image_only' or 'tigre' in k: return ''
+    b = clean(brand)
+    if t.get('perk'): what = 'for ' + t['perk'].replace('complimentary', 'free')
+    elif pct: what = f'to save {pct}%' + (f' on orders over ${t["min_order"]}' if t.get('min_order') else '') + (f' (not on {t["scope"].replace("excludes ", "")})' if str(t.get('scope', '')).startswith('excludes') else '')
+    else: what = ''
+    return f'<div class="bw-save">Use code <b>MAHJMATCH</b> at {e(b)}' + (f' {e(what)}' if what else '') + '.</div>'
 CAP = 2   # Tiffany Nov 11 10:17am: big-inventory brands (Let's Be Besties: 175 new mats) can't dominate; 2 per brand per section, then "See all"
 bslug = lambda b: re.sub(r'[^a-z0-9]+', '-', clean(b).lower()).strip('-')
 def card(group, cap=CAP, label=''):
@@ -137,7 +155,7 @@ def grouped(L):
         k = clean(x['brand']); (order.append(k) if k not in G else None); G.setdefault(k, []).append(x)
     gs = [G[k] for k in order]
     return sorted(gs, key=lambda g: (min(BIG(x) for x in g) if 'BIG' in globals() else 1, min(RANK(x)[:1] for x in g)))   # stable: tile news first, then the rest in date order
-P = lambda L: [x for x in L if x.get('partner') and 'yellow mountain' not in x.get('brand', '').lower() and 'ymi' not in x.get('brand', '').lower()]
+P = lambda L: [x for x in L if x.get('partner') and not x.get('hidden') and 'yellow mountain' not in x.get('brand', '').lower() and 'ymi' not in x.get('brand', '').lower()]
 for _k in ('this_week', 'sales', 'coming_soon', 'just_dropped'):
     for _x in d[_k]: _x['_sec'] = _k
 # Tiffany Nov 11 10:04am: launches first, then just dropped, then sales, then coming soon; newest first; no item twice.
@@ -158,10 +176,20 @@ def uniq(L):
 newest = lambda L: sorted(L, key=lambda x: x.get('found') or x.get('date') or '', reverse=True)
 cut = (datetime.datetime.now() - datetime.timedelta(days=10)).strftime('%Y-%m-%d')
 BIG = lambda x: 0 if ('oh my mahjong' in x['brand'].lower() and TILEY(x)) else 1   # Tiffany Nov 11 10:22am: OMM tile launch day always leads
-sec = [('Launching now', uniq(P(sorted(launch, key=lambda x: (BIG(x), x.get('date') or '', x.get('time') or ''))))),
-       ('Just dropped', uniq(P(newest([x for x in dropped if (x.get('found') or x.get('date') or '9') >= cut])))),
-       ('On sale now', uniq(P(newest(d['sales'])))),
-       ('Coming soon', uniq(P(newest(d['coming_soon']))))]
+# SALES (Tiffany Nov 11 11:37am): a sale usually replaces our code, so a sale shows ONLY on her yes (`approved: true`).
+# Black Friday is a standing yes (too big to hide) and gets its own section at the very top; a huge sale (OMM warehouse) she
+# approves with `big: true` leads too. "On sale now" read like "for sale": the section is just "Sale".
+ALLS = d['sales'] + [x for x in d['coming_soon'] + d['this_week'] + d['just_dropped'] if x.get('bf')]
+BF = [x for x in ALLS if x.get('bf')]
+SALE = [x for x in d['sales'] if not x.get('bf') and x.get('approved') is True]
+sec = [('Black Friday deals', uniq(P(BF))),
+       ('Big sale', uniq(P(newest([x for x in SALE if x.get('big')])))),
+       ('Launching now', uniq(P(sorted(launch, key=lambda x: (BIG(x), x.get('date') or '', x.get('time') or ''))))),
+       ('Just dropped', uniq(P(newest([x for x in dropped if not x.get('bf') and (x.get('found') or x.get('date') or '9') >= cut])))),
+       ('Sale', uniq(P(newest([x for x in SALE if not x.get('big')])))),
+       ('Coming soon', uniq(P(newest([x for x in d['coming_soon'] if not x.get('bf')]))))]
+_pend = [x['brand'] for x in d['sales'] if x.get('partner') and not x.get('hidden') and not x.get('bf') and x.get('approved') is None]
+if _pend: print('BRAND WATCH: sales waiting on her yes (hidden until then): ' + ', '.join(_pend), file=sys.stderr)
 body = ''.join(f'<section class="bw-sec"><h2>{t}</h2><div class="bw-grid">{"".join(card(g, label=t) for g in grouped(L))}</div></section>' for t, L in sec if L)
 # One page per brand (Tiffany Nov 11 10:17am): every brand's full list lives on its own page; the main page feeds from them.
 # In the preview these are #<brand> views of the same file; on the website they become /brand-watch/<brand> pages.
@@ -200,10 +228,13 @@ body{{background:var(--bg);color:var(--ink);font:16px/1.45 Georgia,'Times New Ro
 .bw-bh{{font-size:30px;color:var(--navy);margin:10px 0 0}}
 .bw-bsec{{font-size:18px;color:var(--navy);margin:22px 0 10px}}
 .bw-kind{{display:inline-block;margin-right:6px;font:700 10px/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:3px 6px;border-radius:4px;vertical-align:1px}}.bw-k-new{{background:#e8457a;color:#fff}}.bw-k-re{{background:var(--line);color:var(--navy)}}
+.bw-save{{margin-top:6px;font-size:12.5px;color:var(--muted,#5a6478)}}.bw-save b{{letter-spacing:.04em}}
 .bw-tag{{display:inline-block;margin-left:8px;vertical-align:1px;font:700 10px/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;border-radius:999px;background:var(--line);color:var(--navy)}}
 .bw-t-launching-now{{background:var(--pink);color:#fff}}
 .bw-t-just-dropped{{background:var(--navy);color:var(--bg)}}
-.bw-t-on-sale-now{{background:#e7b33c;color:#1d2b4f}}
+.bw-t-sale{{background:#e7b33c;color:#1d2b4f}}
+.bw-t-black-friday-deals{{background:#111;color:#fff}}
+.bw-t-big-sale{{background:#e7b33c;color:#1d2b4f}}
 .bw-sec h2{{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:2;padding-top:8px}}
 .bw-when{{font:500 13px system-ui,sans-serif;color:var(--muted)}}
 .bw-btn{{align-self:flex-start;margin-top:4px;background:var(--navy);color:var(--bg);text-decoration:none;font:600 14px system-ui,sans-serif;padding:8px 14px;border-radius:999px}}

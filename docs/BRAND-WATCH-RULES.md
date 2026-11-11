@@ -73,3 +73,12 @@ Nothing else gets built automatically.
 - `what` is what shoppers read: plain facts ("The Holly Berry holiday mat is in stock for holiday mahj. Jade Luxe racks are sold out."). Never brand-email or internal language: "pushing", affiliate, commission, draft, waiting on her yes, codes post, album day, teaser, sneak peek, FYM, we/our.
 - Our notes (what to post, who approved) go in `action`, which is never shown.
 - site_brand_watch.py refuses to build if `what` carries internal words (_INTERNAL).
+
+## Sales, Black Friday, savings lines, timing, what counts (Tiffany Nov 11 11:37-11:42am)
+- Section is "Sale", never "On sale now" (reads like "for sale").
+- A sale usually replaces our code, so a sale shows ONLY on her yes (`approved: true`; `null` = asked, hidden). Never surface comment-for-link / DM-for-code discounts (Noli June FALALADIES: hidden, `hidden: true`).
+- Black Friday is a standing yes (too big to hide): `bf: true` items get their own "Black Friday deals" section at the very top. A huge sale she approves (OMM warehouse-sale size) gets `big: true` and leads too.
+- Under every code button: "Use code MAHJMATCH at <Brand> to save N%" from config/code-truth.json; Maison Mahj = free shipping on tile set orders; Tigre de Tartán gets no typed line (image-only code).
+- Coming soon must say WHEN, or "No date yet" / "No name or date yet". Build refuses otherwise.
+- Not drops: store openings, gift cards, in-store-only previews, brick-and-mortar news. Keep only the product news (e.g. Middle & Main's Summit to Sea under Coming soon).
+- Know the product before writing it: open the product page (Noli June "Sue Adores a Scallop" is a $1,699 folding table, not a tablecloth).
