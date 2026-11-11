@@ -1,0 +1,11 @@
+{
+ "_about": "BRAND WEIGHTS in Find Your Mat-ch suggestions (Tiffany Nov 11 4:59pm). On top of the general no-flooding rules (per-brand cap, never back to back), some brands get LESS room: weight 0.5 = half the slots every other brand gets, and a stricter match bar (their item must REALLY match: a high colour score, not a near miss). Their products are still in the app and always findable by name or brand search; weight only affects what we suggest. 1.0 = normal. Change only on Tiffany's word; revisit with FYM usage data.",
+ "default": 1.0,
+ "brands": {
+  "Splash of Color": {"weight": 0.5, "strict_match": true, "why": "one of her least favorite brands; very AI-looking; largest catalog"},
+  "Mahjong Studios": {"weight": 0.5, "strict_match": true, "why": "one of her least favorite brands (mats already excluded entirely)"},
+  "Yellow Mountain Imports": {"weight": 0.5, "strict_match": true, "why": "one of her least favorite brands"},
+  "Mah Jongg Maven": {"weight": 1.0, "strict_match": false, "why": "unexciting tile faces, but decently popular, good price point, colourful tiles: normal weight until we see how it does (big-catalog caps still apply)"},
+  "Mahjong by SI": {"weight": 1.0, "strict_match": false, "why": "she thinks it's a better brand than Splash (nicer site, some decent mats, every mat in 4 formats); she's going to look; normal weight for now"}
+ }
+}
