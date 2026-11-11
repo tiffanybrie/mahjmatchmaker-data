@@ -74,8 +74,25 @@ def stamp(f):   # Tiffany Nov 11 10:04am: every update timestamped (when WE post
         t = datetime.datetime.fromisoformat(f)
         return t.strftime('%a %-m/%-d') + (t.strftime(' · %-I:%M%p').replace('AM', 'am').replace('PM', 'pm') + ' ET' if 'T' in f else '')
     except Exception: return ''
+# Tiffany Nov 11 10:23am: every partner gets a photo (be fair). If the snapshot doesn't have the product yet (brand-new drop),
+# read the product's own image from its live page (/products/<handle>.js); teasers with no product page get an `img` in the list.
+_LIVE = {}
+def live_img(x):
+    import subprocess
+    for k in ('buy', 'url', 'source'):
+        u = (x.get(k) or '').replace('%2F', '/')
+        m = re.search(r'https?://([^/]+)/.*?/products/([^/?#&]+)', u) or re.search(r'https?://([^/]+)/products/([^/?#&]+)', u)
+        if not m or 'instagram' in m.group(1): continue
+        key = m.group(1) + '/' + m.group(2)
+        if key not in _LIVE:
+            try:
+                d = json.loads(subprocess.run(['curl', '-sL', '--max-time', '15', f'https://{m.group(1)}/products/{m.group(2)}.js'], capture_output=True, text=True).stdout)
+                f = d.get('featured_image') or ''; _LIVE[key] = ('https:' + f) if f.startswith('//') else f
+            except Exception: _LIVE[key] = ''
+        if _LIVE[key]: return _LIVE[key]
+    return None
 def line(x):
-    (lk, img) = shop(x); img = x.get('img') or img   # Nov 11: explicit launch photo (e.g. a brand's teaser) wins
+    (lk, img) = shop(x); img = x.get('img') or img or live_img(x)   # Nov 11: explicit photo > snapshot > the live product page
     when = ' · '.join(t for t in (x.get('day'), x.get('time')) if t)
     btn = ''
     if lk:
@@ -96,7 +113,7 @@ def grouped(L):
     for x in L:
         k = clean(x['brand']); (order.append(k) if k not in G else None); G.setdefault(k, []).append(x)
     gs = [G[k] for k in order]
-    return sorted(gs, key=lambda g: 0 if any(TILEY(x) for x in g) else 1)   # stable: tile news first, then the rest in date order
+    return sorted(gs, key=lambda g: (min(BIG(x) for x in g) if 'BIG' in globals() else 1, 0 if any(TILEY(x) for x in g) else 1))   # stable: tile news first, then the rest in date order
 P = lambda L: [x for x in L if x.get('partner') and 'yellow mountain' not in x.get('brand', '').lower() and 'ymi' not in x.get('brand', '').lower()]
 for _k in ('this_week', 'sales', 'coming_soon', 'just_dropped'):
     for _x in d[_k]: _x['_sec'] = _k
@@ -117,7 +134,8 @@ def uniq(L):
     return out
 newest = lambda L: sorted(L, key=lambda x: x.get('found') or x.get('date') or '', reverse=True)
 cut = (datetime.datetime.now() - datetime.timedelta(days=10)).strftime('%Y-%m-%d')
-sec = [('Launching now', uniq(P(sorted(launch, key=lambda x: (x.get('date') or '', x.get('time') or ''))))),
+BIG = lambda x: 0 if ('oh my mahjong' in x['brand'].lower() and TILEY(x)) else 1   # Tiffany Nov 11 10:22am: OMM tile launch day always leads
+sec = [('Launching now', uniq(P(sorted(launch, key=lambda x: (BIG(x), x.get('date') or '', x.get('time') or ''))))),
        ('Just dropped', uniq(P(newest([x for x in dropped if (x.get('found') or x.get('date') or '9') >= cut])))),
        ('On sale now', uniq(P(newest(d['sales'])))),
        ('Coming soon', uniq(P(newest(d['coming_soon']))))]
@@ -128,7 +146,7 @@ _allb = {}
 for t, L in sec:
     for x in L: _allb.setdefault(bslug(x['brand']), (clean(x['brand']), []))[1].append((t, x))
 bpages = ''.join(f'<section class="bw-bpage" id="p-{k}" hidden><a class="bw-back" href="#">&larr; All brands</a><h2 class="bw-bh">{e(n)}</h2>'
-                 + ''.join(f'<h3 class="bw-bsec">{t}</h3><div class="bw-grid">{card([x for tt, x in L if tt == t], cap=0)}</div>' for t in dict.fromkeys(tt for tt, _ in L))
+                 + ''.join(f'<h3 class="bw-bsec">{t}</h3><div class="bw-grid">' + ''.join(card([x], cap=0) for x in sorted([x for tt, x in L if tt == t], key=lambda x: 0 if TILEY(x) else 1)) + '</div>' for t in dict.fromkeys(tt for tt, _ in L))   # Nov 11 10:21am: full page = a photo on every item we have one for
                  + '</section>' for k, (n, L) in _allb.items())
 body = f'<div id="bw-main">{body}</div>{bpages}'
 
