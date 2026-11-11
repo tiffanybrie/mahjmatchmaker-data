@@ -1,1 +1,107 @@
-{"_note": "Checked by the partner watch (3x daily). Sold out is NEVER permanent (Tiffany Oct 28 3:21pm): re-check every run; when an item flips to available, act SAME DAY. 'personal': true = Tiffany wants to BUY it: message her right away (first line: '<item> is back in stock: <link>'). Remove an item once it's back and handled.", "updated": "2026-11-10", "items": [{"brand": "Bam Bird Boutique", "item": "Deco Indigo tiles", "site": "bambirdboutique.com", "find": "deco tile set", "variant": "Indigo", "why": "Deco trio albums release the day Indigo restocks: alert Main + Tiffany same day", "lastCheck": "2026-11-10 1:40pm ET: still sold out"}, {"brand": "Sunday Mahjong", "item": "December 1994 tiles (leftovers late Nov-early Dec)", "site": "sundaymahjong.com", "find": "december 1994", "lastCheck": "2026-11-10 1:40pm ET: still sold out"}, {"brand": "Britt Mills", "item": "Merrywood neoprene mat", "site": "brittmillsdesign.com", "find": "merrywood", "note": "Oct 30: the LEATHERETTE version is in stock; the watched NEOPRENE mat is still sold out. Oct 31 9:30am ET: neoprene still sold out.", "lastCheck": "2026-11-10 1:40pm ET: still sold out"}, {"brand": "Britt Mills", "item": "Nutcracker neoprene mat", "site": "brittmillsdesign.com", "find": "nutcracker", "note": "Oct 30: the LEATHERETTE version is in stock; the watched NEOPRENE mat is still sold out. Oct 31 9:30am ET: neoprene still sold out.", "lastCheck": "2026-11-10 1:40pm ET: still sold out"}, {"brand": "Britt Mills", "item": "Winter Berry neoprene mat", "site": "brittmillsdesign.com", "find": "winter berry", "note": "Oct 30: the LEATHERETTE version is in stock; the watched NEOPRENE mat is still sold out. Oct 31 9:30am ET: neoprene still sold out. Nov 2 10:05am ET: neoprene product NO LONGER LISTED (handle winter-berry-neoprene-mahjong-mat-arriving-late-october 404, absent from products.json); leatherette still in stock. Not retired yet (doc 90): keep watching for a relist.", "lastCheck": "2026-11-10 1:40pm ET: still sold out"}, {"brand": "Mahj Mood", "item": "Sleigh All Day mat", "find": "sleigh all day", "lastCheck": "2026-11-10 1:40pm ET: still sold out (not listed on mahjmood.com)"}, {"brand": "Mahj Squad", "item": "Candy Cane Pink Wonderland mat", "find": "candy cane pink", "note": "Oct 30 1:30pm ET: now LISTED on mahjsquadshop.com (candy-cane-pink-wonderland-mahjong-mat) but sold out. Keep watching. (Oct 29: not listed.)", "site": "mahjsquadshop.com", "lastCheck": "2026-11-10 1:40pm ET: still sold out"}, {"brand": "Bird & Bamboo", "item": "21in wood rack set", "find": "21", "note": "Nov 3: Emily (B&B) email says 21in racks sold out until January; 20in stains back.", "lastCheck": "2026-11-10 1:40pm ET: still sold out (not checked: no store site)"}], "retired_watch": [{"brand": "Oh My Mahjong", "item": "Dapper 2 mat", "note": "Product page 404 Oct 28; likely cleared in OMM's warehouse sale. If confirmed gone: mark retired per doc 90 (retired vs sold out), and find a masculine replacement mat for the works-for-holiday list (Tiffany: none of OMM's other mats are as fully masculine). Oct 28 6:40pm ET: CONFIRMED GONE (product URL 404 AND absent from ohmymahjong.com/products.json). Handed to Matches & Catalog via MATCH-INBOX to mark retired (doc 90) + find a masculine wfh replacement."}], "handled": [{"item": "Sunday Festive Plaid Premium mat", "back": "2026-10-28 6:40pm ET", "action": "Tiffany messaged + push (personal buy)"}, {"item": "Sunday Rattan Premium mat", "back": "2026-10-28 6:40pm ET", "action": "logged as restock; holiday-stock doc updated"}, {"item": "Mahjong Register Holly Jolly Double-Sided Leatherette mat", "back": "2026-10-29 9:55am ET", "action": "restock: Tiffany messaged + push; HQ launches + calendar + holiday-stock doc"}, {"item": "Virora Tinselle Emerald Green tiles", "back": "2026-10-31 ~9:35am ET (store updated_at 06:35 PT; $299, 4 layers)", "action": "restock playbook: frames assets/social/restock-tinselle-oct31/out, Tiffany messaged + push, needs/launch-virora-tinselle-emerald-oct31; holiday-stock doc updated"}], "_lastCheck": "2026-11-10 1:40pm ET"}
+{
+ "_note": "Checked by the partner watch (3x daily). Sold out is NEVER permanent (Tiffany Oct 28 3:21pm): re-check every run; when an item flips to available, act SAME DAY. 'personal': true = Tiffany wants to BUY it: message her right away (first line: '<item> is back in stock: <link>'). Remove an item once it's back and handled.",
+ "updated": "2026-11-10",
+ "items": [
+  {
+   "brand": "Bam Bird Boutique",
+   "item": "Deco Indigo tiles",
+   "site": "bambirdboutique.com",
+   "find": "deco tile set",
+   "variant": "Indigo",
+   "why": "Deco trio albums release the day Indigo restocks: alert Main + Tiffany same day",
+   "lastCheck": "2026-11-10 1:40pm ET: still sold out"
+  },
+  {
+   "brand": "Sunday Mahjong",
+   "item": "December 1994 tiles (leftovers late Nov-early Dec)",
+   "site": "sundaymahjong.com",
+   "find": "december 1994",
+   "lastCheck": "2026-11-10 1:40pm ET: still sold out"
+  },
+  {
+   "brand": "Britt Mills",
+   "item": "Merrywood neoprene mat",
+   "site": "brittmillsdesign.com",
+   "find": "merrywood",
+   "note": "Oct 30: the LEATHERETTE version is in stock; the watched NEOPRENE mat is still sold out. Oct 31 9:30am ET: neoprene still sold out.",
+   "lastCheck": "2026-11-10 1:40pm ET: still sold out"
+  },
+  {
+   "brand": "Britt Mills",
+   "item": "Nutcracker neoprene mat",
+   "site": "brittmillsdesign.com",
+   "find": "nutcracker",
+   "note": "Oct 30: the LEATHERETTE version is in stock; the watched NEOPRENE mat is still sold out. Oct 31 9:30am ET: neoprene still sold out.",
+   "lastCheck": "2026-11-10 1:40pm ET: still sold out"
+  },
+  {
+   "brand": "Britt Mills",
+   "item": "Winter Berry neoprene mat",
+   "site": "brittmillsdesign.com",
+   "find": "winter berry",
+   "note": "Oct 30: the LEATHERETTE version is in stock; the watched NEOPRENE mat is still sold out. Oct 31 9:30am ET: neoprene still sold out. Nov 2 10:05am ET: neoprene product NO LONGER LISTED (handle winter-berry-neoprene-mahjong-mat-arriving-late-october 404, absent from products.json); leatherette still in stock. Not retired yet (doc 90): keep watching for a relist.",
+   "lastCheck": "2026-11-10 1:40pm ET: still sold out"
+  },
+  {
+   "brand": "Mahj Mood",
+   "item": "Sleigh All Day mat",
+   "find": "sleigh all day",
+   "lastCheck": "2026-11-10 1:40pm ET: still sold out (not listed on mahjmood.com)"
+  },
+  {
+   "brand": "Mahj Squad",
+   "item": "Candy Cane Pink Wonderland mat",
+   "find": "candy cane pink",
+   "note": "Oct 30 1:30pm ET: now LISTED on mahjsquadshop.com (candy-cane-pink-wonderland-mahjong-mat) but sold out. Keep watching. (Oct 29: not listed.)",
+   "site": "mahjsquadshop.com",
+   "lastCheck": "2026-11-10 1:40pm ET: still sold out"
+  },
+  {
+   "brand": "Bird & Bamboo",
+   "item": "21in wood rack set",
+   "find": "21",
+   "note": "Nov 3: Emily (B&B) email says 21in racks sold out until January; 20in stains back.",
+   "lastCheck": "2026-11-10 1:40pm ET: still sold out (not checked: no store site)"
+  },
+  {
+   "brand": "Amahj",
+   "item": "Garden Stamped Mahjong Tile Set",
+   "store": "amahjline.com",
+   "handle": "garden-stamped-acrylic-tile-set",
+   "url": "https://amahjline.com/products/garden-stamped-acrylic-tile-set",
+   "personal": false,
+   "why": "Tiffany Nov 11 12:45pm: leaning to Garden Stamped for Amahj's album; sold out now; tell her the day it's back",
+   "added": "2026-11-11"
+  }
+ ],
+ "retired_watch": [
+  {
+   "brand": "Oh My Mahjong",
+   "item": "Dapper 2 mat",
+   "note": "Product page 404 Oct 28; likely cleared in OMM's warehouse sale. If confirmed gone: mark retired per doc 90 (retired vs sold out), and find a masculine replacement mat for the works-for-holiday list (Tiffany: none of OMM's other mats are as fully masculine). Oct 28 6:40pm ET: CONFIRMED GONE (product URL 404 AND absent from ohmymahjong.com/products.json). Handed to Matches & Catalog via MATCH-INBOX to mark retired (doc 90) + find a masculine wfh replacement."
+  }
+ ],
+ "handled": [
+  {
+   "item": "Sunday Festive Plaid Premium mat",
+   "back": "2026-10-28 6:40pm ET",
+   "action": "Tiffany messaged + push (personal buy)"
+  },
+  {
+   "item": "Sunday Rattan Premium mat",
+   "back": "2026-10-28 6:40pm ET",
+   "action": "logged as restock; holiday-stock doc updated"
+  },
+  {
+   "item": "Mahjong Register Holly Jolly Double-Sided Leatherette mat",
+   "back": "2026-10-29 9:55am ET",
+   "action": "restock: Tiffany messaged + push; HQ launches + calendar + holiday-stock doc"
+  },
+  {
+   "item": "Virora Tinselle Emerald Green tiles",
+   "back": "2026-10-31 ~9:35am ET (store updated_at 06:35 PT; $299, 4 layers)",
+   "action": "restock playbook: frames assets/social/restock-tinselle-oct31/out, Tiffany messaged + push, needs/launch-virora-tinselle-emerald-oct31; holiday-stock doc updated"
+  }
+ ],
+ "_lastCheck": "2026-11-10 1:40pm ET"
+}
