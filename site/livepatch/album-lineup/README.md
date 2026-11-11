@@ -1,0 +1,1 @@
+Album lineup review page (Nov 11): https://claude.ai/artifact/91eVvKy8zqamouEso1CtTa . Built by build.py from /tmp tiles_by_brand.json (partner snapshot, kind tiles, >=$150, no travel) + HQ hq/albums. Rough order only; Tiffany reviews.

@@ -47,15 +47,31 @@ def product(x, hosts):
                     if hk.replace('www.', '') == h.replace('www.', '') and m.group(1) in P: return hk, m.group(1), P[m.group(1)]
             return (urlparse(u).netloc or hosts[0] if hosts else ''), m.group(1), None
     if TEASER.search(x['what']): return None      # a tease / coming-soon line: nothing to buy yet
+    if x.get('buy'): return None                    # an explicit buy link (even a store home page) beats any word-guess
     want = words(x['what']); best = None
     for hk, P in SNAP.items():
         if not any(hk.replace('www.', '') == h.replace('www.', '') for h in hosts): continue
         for hd, pr in P.items():
             sc = len(want & words(pr['title'])) + (3 if TILEY(x) and re.search(r'\btiles?\b|tile set', pr['title'], re.I) else 0)   # Nov 11: tiles beat mats for the photo
-            if sc >= 1 and any(len(w) >= 5 for w in want & words(pr['title'])) and (best is None or sc > best[0]): best = (sc, hk, hd, pr)
+            if sc >= 1 and any(len(w) >= 5 for w in want & words(pr['title'])) and KIND_OK(x, pr) and (best is None or sc > best[0]): best = (sc, hk, hd, pr)
     return best[1:] if best else None
+# Nov 11 12:07pm: a word-guess linked Noli June's "Sue Adores a Scallop" TABLE to their "Sue Puts Out The Good China" TABLECLOTH
+# (shared word "Sue"). A guessed product must be the same KIND as the item (tiles / mat / rack / table / tablecloth), else no guess:
+# then the item needs an explicit `buy` link (the partner watch sets it from the store).
+def KIND_OK(x, pr):
+    t = ((x.get('tag') or '') + ' ' + x['what']).lower(); title = pr['title'].lower()
+    if re.search(r'table ?cloth', title) != re.search(r'table ?cloth', t) and ('table' in t or 'tablecloth' in title): return False
+    if (pr.get('kind') or '').startswith('travel') and 'travel' not in t: return False
+    k = (pr.get('kind') or '').replace('travel ', '')
+    want = 'tiles' if re.search(r'\btiles?\b|tile set', x.get('tag') or '') else 'rack' if 'rack' in (x.get('tag') or '') else 'mat' if re.search(r'\bmats?\b', x.get('tag') or '') else ''
+    return not want or not k or k == want
 def shop(x):
     r = route(x['brand']); hosts = r.get('store_hosts') or []
+    b = x.get('buy') or ''
+    if b and '/products/' not in b.replace('%2F', '/') and not TEASER.search(x['what'].split(';')[0]):   # explicit store/collection link: use it as given
+        code = r.get('route') == 'code-site'; h = urlparse(b).netloc.replace('www.', '')
+        if code and h in AUTO and '/discount/' not in b: b = f'https://{urlparse(b).netloc}/discount/MAHJMATCH?redirect={quote(urlparse(b).path or "/")}'
+        return (b, code), None
     hit = product(x, hosts)
     if not hit:
         head = x['what'].split(';')[0]

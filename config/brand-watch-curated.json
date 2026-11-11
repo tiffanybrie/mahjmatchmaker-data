@@ -703,10 +703,11 @@
    "ends": "while supplies last",
    "urgency": "NOW",
    "buy": "https://mahjmood.com/collections/mats",
-   "action": "ASKED Tiffany Nov 11: promote this sale? Hidden until she says yes.",
+   "action": "HIDDEN (Tiffany Nov 11 12:08pm): scraped from their Instagram, not sent to us; we don't surface code-bypassing sales from social.",
    "url": "https://www.instagram.com/p/DfkDtN-xu1t/",
    "found": "2026-11-10T09:50",
-   "approved": null
+   "approved": false,
+   "hidden": true
   },
   {
    "brand": "Peace Love Mahjong",
@@ -817,5 +818,5 @@
    "url": ""
   }
  ],
- "updated": "2026-11-11T12:10"
+ "updated": "2026-11-11T12:25"
 }

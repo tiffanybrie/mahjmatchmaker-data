@@ -87,3 +87,7 @@ Nothing else gets built automatically.
 - The ban is only on brand-insider talk ("pushing", "here's what we want"). Timestamps and live status ("LIVE now since 4pm CT") are wanted: they show the page is current.
 - Keep the history: when a heads-up turns into a drop, don't erase the heads-up. Put it in the item's `history` [{found, what}] (shows as "Earlier · <time>: ...") and make `what` the new status. It proves we warned people first.
 - Tigre de Tartán: button says just "Shop" (code is image-only on the website).
+
+## Where sales come from (Tiffany Nov 11 12:08pm)
+- Never scrape a partner's SALE off their social (it bypasses our code: "working a little too hard for them"). A sale is a candidate only if the brand sent it to us (affiliate update / partner email), or it is huge public news (OMM warehouse sale, Black Friday). Record `source_kind`: email | social | store. Social-sourced sales stay hidden; the watch doesn't even ask.
+- Buy links: an explicit `buy` always wins; the page never word-guesses a product unless the kind matches (tiles/mat/rack/table/tablecloth, travel vs full size). Two bad guesses found Nov 11: Noli June table -> tablecloth; Cabana Club full-size tiles -> a scratch-and-dent mat.
