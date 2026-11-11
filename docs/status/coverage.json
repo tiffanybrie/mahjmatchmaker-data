@@ -1,21 +1,20 @@
 {
- "at": "2026-11-09T12:02:30",
+ "at": "2026-11-11T11:58:38",
  "fym": "v118",
  "sources": {
   "fym": "site-app/fym-v118/index.html @7817f04d (live /find-your-match)",
   "gallery": "matgallery-v118.json @4cb195dc (live /mahjong-mats, data-fym=v118)",
   "search": "search-index.json @3afb680e (live search.js pin)"
  },
- "net_at": "2026-11-09T12:02:20",
- "summary": "10 OK, 19 GAP, 1 UNKNOWN",
+ "net_at": "2026-11-11T11:58:38",
+ "summary": "11 OK, 18 GAP, 1 UNKNOWN",
  "gaps": [
-  "Live brand pages with a verified line within 9 days: 37 of 39 (target all); as of 2026-11-09T12:02 | missing: bird-and-bamboo-discount-code-2 (no line), sunday-mahjong-discount-code (no line)",
-  "Hub brands with their own brand page: 37 of 38 (target all) | missing: Maison Mahj",
+  "Live brand pages with a verified line within 9 days: 38 of 40 (target all); as of 2026-11-11T11:58 | missing: bird-and-bamboo-discount-code-2 (no line), sunday-mahjong-discount-code (no line)",
+  "Hub brands with their own brand page: 38 of 39 (target all) | missing: Maison Mahj",
   "Live brand pages in the sitemap but not on the codes hub: 2 (target 0) | missing: /bird-and-bamboo-discount-code-2, /sunday-mahjong-discount-code",
-  "Approved/overdue items older than 3 days (OVERDUE + DESK Blocked): 0 (target 0); 5 more carry no date, so they cannot age (give each a date)",
+  "Approved/overdue items older than 3 days (OVERDUE + DESK Blocked): 8 (target 0); 8 more carry no date, so they cannot age (give each a date) | missing: OVERDUE Nov 7: since 2026-11-07 | Mahjong Register: code is LIVE since Nov 8 (MAHJMAT, OVERDUE Nov 6: since 2026-11-06 | ManyChat: build the first comment-for-links automat, OVERDUE Nov 6: since 2026-11-06 | ManyChat trial reminder: day 12 of the Essential tr, OVERDUE Nov 6: since 2026-11-06 | Mahjong Row & Co. OUT of the site: REMAINING ONLY (, OVERDUE Nov 6: (Nov 6, Main) LAUNCH GAP: Bam Bird MCM Olive restock (announced IG Nov, OVERDUE Nov 6: since 2026-11-06 | BING WEBMASTER TOOLS (Tiffany yes Nov 6): BLOCKED o +2 more",
   "ShopMy mats live in FYM: 0 of 0 (target all); shopmy-crosscheck-nov08.json: ? staged, 0 Amazon (her pick), 0 skipped, 0 photo-held",
   "Mats with a price (price filter hides the rest): 1451 of 1574 (target all) | missing: Oh My Mahjong 32, Amazon 28, Let's Be Besties 22, Rebecca Illustrated 7, Bespoke Mahjong 5, Tigre de Tartan 5 +13 more",
-  "Visible FYM mats that are in the Mat Gallery: 1502 of 1507 (target all); out on purpose: side B / twin listing 44, gallery photo hold (with reason) 8, House of Hearts (FYM only, Oct 25) 8, duplicate photo merged into its twin 7, removed brand: her album-matched mats kept in the gallery (Nov 6 1:33pm) 9 | missing: Bespoke Mahjong: Year of the Dragon - Periwinkle, Mahjong Register: Letters to Santa Double-Sided Leatherette, Mahjong Register: Holly Jolly Double-Sided Leatherette, Charleston Mahjong Club: Club Mat, My Fair Mahjong: Confetti Lemon Lime",
   "Live album pages wired to an FYM tile set: 38 of 45 (target all) | missing: deco-lagoon, lilac-soiree, papaya-spritz, preppy-soiree, shangri-la, spring-love +1 more",
   "FYM sets with her picks that link to their album: 48 of 53 (target all) | missing: December 1994, Hummingbird, Sunday, Papaya Spritz, Spirit of Christmas",
   "Table view walls (back colour confirmed): 254 of 282 visible tile sets (target all) | missing: Holly Jolly (Rudolph Red), Holly Jolly (Grinch Green), Nutcracker Ballet, Round Top Stamped, White Signature, The Belle +22 more",
@@ -55,35 +54,35 @@
    "id": "truth_brands",
    "area": "Codes",
    "status": "OK",
-   "have": 38,
-   "total": 38,
+   "have": 39,
+   "total": 39,
    "target": "all",
-   "text": "Hub brands with a code-truth entry, pct or terms (live_codes_check can catch a wrong offer): 38 of 38 (target all)"
+   "text": "Hub brands with a code-truth entry, pct or terms (live_codes_check can catch a wrong offer): 39 of 39 (target all)"
   },
   {
    "id": "verified",
    "area": "Codes",
    "status": "GAP",
-   "have": 37,
-   "total": 39,
+   "have": 38,
+   "total": 40,
    "target": "all",
-   "text": "Live brand pages with a verified line within 9 days: 37 of 39 (target all); as of 2026-11-09T12:02 | missing: bird-and-bamboo-discount-code-2 (no line), sunday-mahjong-discount-code (no line)"
+   "text": "Live brand pages with a verified line within 9 days: 38 of 40 (target all); as of 2026-11-11T11:58 | missing: bird-and-bamboo-discount-code-2 (no line), sunday-mahjong-discount-code (no line)"
   },
   {
    "id": "hub_pages",
    "area": "Codes",
    "status": "GAP",
-   "have": 37,
-   "total": 38,
+   "have": 38,
+   "total": 39,
    "target": "all",
-   "text": "Hub brands with their own brand page: 37 of 38 (target all) | missing: Maison Mahj"
+   "text": "Hub brands with their own brand page: 38 of 39 (target all) | missing: Maison Mahj"
   },
   {
    "id": "orphan_brand_pages",
    "area": "Codes",
    "status": "GAP",
    "have": 2,
-   "total": 39,
+   "total": 40,
    "target": "0",
    "text": "Live brand pages in the sitemap but not on the codes hub: 2 (target 0) | missing: /bird-and-bamboo-discount-code-2, /sunday-mahjong-discount-code"
   },
@@ -91,10 +90,10 @@
    "id": "approved_old",
    "area": "Ops",
    "status": "GAP",
-   "have": 0,
-   "total": 33,
+   "have": 8,
+   "total": 45,
    "target": "0",
-   "text": "Approved/overdue items older than 3 days (OVERDUE + DESK Blocked): 0 (target 0); 5 more carry no date, so they cannot age (give each a date)"
+   "text": "Approved/overdue items older than 3 days (OVERDUE + DESK Blocked): 8 (target 0); 8 more carry no date, so they cannot age (give each a date) | missing: OVERDUE Nov 7: since 2026-11-07 | Mahjong Register: code is LIVE since Nov 8 (MAHJMAT, OVERDUE Nov 6: since 2026-11-06 | ManyChat: build the first comment-for-links automat, OVERDUE Nov 6: since 2026-11-06 | ManyChat trial reminder: day 12 of the Essential tr, OVERDUE Nov 6: since 2026-11-06 | Mahjong Row & Co. OUT of the site: REMAINING ONLY (, OVERDUE Nov 6: (Nov 6, Main) LAUNCH GAP: Bam Bird MCM Olive restock (announced IG Nov, OVERDUE Nov 6: since 2026-11-06 | BING WEBMASTER TOOLS (Tiffany yes Nov 6): BLOCKED o +2 more"
   },
   {
    "id": "shopmy_unaccounted",
@@ -126,11 +125,11 @@
   {
    "id": "gallery_has_fym",
    "area": "Gallery",
-   "status": "GAP",
+   "status": "OK",
    "have": 1502,
-   "total": 1507,
+   "total": 1502,
    "target": "all",
-   "text": "Visible FYM mats that are in the Mat Gallery: 1502 of 1507 (target all); out on purpose: side B / twin listing 44, gallery photo hold (with reason) 8, House of Hearts (FYM only, Oct 25) 8, duplicate photo merged into its twin 7, removed brand: her album-matched mats kept in the gallery (Nov 6 1:33pm) 9 | missing: Bespoke Mahjong: Year of the Dragon - Periwinkle, Mahjong Register: Letters to Santa Double-Sided Leatherette, Mahjong Register: Holly Jolly Double-Sided Leatherette, Charleston Mahjong Club: Club Mat, My Fair Mahjong: Confetti Lemon Lime"
+   "text": "Visible FYM mats that are in the Mat Gallery: 1502 of 1502 (target all); out on purpose: side B / twin listing 44, duplicate (hidden_oct20.csv) 3, duplicate photo merged into its twin 9, gallery photo hold (with reason) 8, House of Hearts (FYM only, Oct 25) 8, removed brand: her album-matched mats kept in the gallery (Nov 6 1:33pm) 9"
   },
   {
    "id": "gallery_shows_hidden",
@@ -305,7 +304,7 @@
   }
  ],
  "net": {
-  "at": "2026-11-09T12:02:20",
+  "at": "2026-11-11T11:58:38",
   "errors": [],
   "fym_pin": {
    "sha": "7817f04d2c907d1ea0d4fd01d857fa7a3cffb8bf",
@@ -451,6 +450,7 @@
    "/mahj-pit-discount-code",
    "/juniper-mahjong-tile-matches",
    "/deco-lagoon-mahjong-tile-matches",
+   "/mah-jongg-maven-discount-code",
    "/mahjong-discount-codes"
   ],
   "hub_brands": [
@@ -605,6 +605,10 @@
    [
     "Mahj Pit",
     "/mahj-pit-discount-code"
+   ],
+   [
+    "Mah Jongg Maven",
+    "/mah-jongg-maven-discount-code"
    ]
   ],
   "holiday_ids": {
@@ -633,44 +637,44 @@
    "/amahj-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/amanda-toppe-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/anders-ruff-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/bam-bird-boutique-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/bam-lets-mahjong-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/bespoke-mahjong-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/bird-and-bamboo-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/bird-and-bamboo-discount-code-2": {
     "status": 200,
@@ -681,14 +685,14 @@
    "/britt-mills-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/charleston-mahjong-club-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/cypress-forest-mahjong-tile-matches": {
     "status": 200,
@@ -699,68 +703,74 @@
    "/hip-hip-mahjong-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/i-love-mahj-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/lets-be-besties-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/lets-mahj-on-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/mac-and-miller-mahjong-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
+   },
+   "/mah-jongg-maven-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-10",
+    "verified_min": "2026-11-10"
    },
    "/mahj-and-vine-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/mahj-mood-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/mahj-pit-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-04",
-    "verified_min": "2026-11-04"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/mahj-squad-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/mahjong-co-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/mahjong-register-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-08",
-    "verified_min": "2026-11-08"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/mahjong-row-and-co-discount-code": {
     "status": 200,
@@ -771,68 +781,68 @@
    "/mahjong-studios-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/middle-and-main-mahjong-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/mini-mahjer-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/miss-mahjong-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/my-fair-mahjong-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/noli-june-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/oh-my-mahjong-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/peace-love-mahjong-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/royal-mahjong-society-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/soiree-all-day-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/splash-of-color-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/sunday-mahjong-discount-code": {
     "status": 200,
@@ -843,20 +853,20 @@
    "/the-mahjong-press-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/tigre-de-tartan-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/virora-mahjong-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/wren-mats-discount-code": {
     "status": 200,
@@ -867,14 +877,14 @@
    "/yellow-mountain-imports-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    },
    "/yolo-mahjong-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-02",
-    "verified_min": "2026-11-02"
+    "verified": "2026-11-09",
+    "verified_min": "2026-11-09"
    }
   },
   "album_pages": {
