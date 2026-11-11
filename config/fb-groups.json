@@ -104,5 +104,18 @@
  "posted": [],
  "skipped_days": [
   "2026-11-11"
+ ],
+ "bonus": [
+  {
+   "date": "2026-11-12",
+   "group": "Oh My Mahjong Official VIP Group",
+   "id": "ommvipgroup",
+   "member": true,
+   "rules": "No promotions/spam, no irrelevant links; posts are admin-approved. 10.5K members.",
+   "plan": "OMM-only post, no link, no other brands, no code; day after Juniper launch (not on launch day).",
+   "image": "assets/social/omm-vip-nov12/omm-every-set.jpg",
+   "text_file": "assets/social/omm-vip-nov12/caption.txt",
+   "approved": false
+  }
  ]
 }
