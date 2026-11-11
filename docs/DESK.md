@@ -78,6 +78,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 
 - REVIEW WEEK Dec 7-10 in Planoly (Tiffany Nov 9 1:09am): parked feed posts + single-frame stories. Real date = Dec date minus 28 days. Before Dec 6 EVERY one must be moved back (approved) or unscheduled, or it auto-posts. Owner: Main + nightly desk cleanup.
 
+- Main: DECO LAGOON SOCIAL LAUNCH week of Mon 11/16 (Tiffany Nov 11 9:12am: true launch for social; album page already live). Build the Juniper-style kit: intro carousel (profile cards) -> It's a mat-ch -> reel + cover (FYM phones top 8, album racks), every-slide stories, FB Page targets, Planoly drafts; per-album Canva folder. Deco highlight was taken down; re-add a Deco highlight on launch day.
 ## Blocked, approved (raise at the top of every attended reply until done)
 - **Every new site pin (jsDelivr 403, repo over 50 MB)**: FYM racks release, FYM fixes, gallery, search, album images. Priority 3.
 - **Planoly roll-forward + story-caption fixes**: unattended update_post refused (7th night, Nov 10). Attended Main: past-dated drafts (Mon 11/9 FYM how-to 01a1b20c + story 01a1b20d-690f = Papaya, held for rebuild per her Nov 9 1:15am call; old Nov 4-8 multi-frame story drafts 01a1a2b6-7c27/-73c7/-7717/-7a6d are superseded by the single-frame review-week stories: ask her once whether "superseded" = remove).
