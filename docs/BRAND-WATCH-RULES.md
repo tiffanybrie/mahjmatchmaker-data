@@ -1,3 +1,12 @@
+# 00000. CATALOG ONLY, NO GROUP POSTS, NO YES-ASKS (Tiffany Nov 12 10:26am, BINDING; overrides 000.4, 00(b), 2(a-c), 4.4 and the task prompt's step 5 + "LIVE SHEET FIRST (b)")
+"I'm not planning on posting all of these things in the group live as they go... You're basically bombarding me with yeses. Please don't do that."
+- The watch CATALOGS: Brand Watch tab + Brand news sheet + release calendar + MATCH-INBOX/FYM queue. That's it.
+- NO per-item Facebook group post drafts, NO "group post ready for your yes" messages, NO pushes for NOW items, NO "Do:" / "I did it" lines (brand_watch_hq.py strips every `action`; never add one back).
+- The group gets the week through the Monday codes post only, unless she asks for a specific item.
+- Past dated drops leave "this week" automatically.
+# 0000. BURY MAHJONG STUDIOS + SPLASH OF COLOR (Tiffany Nov 12 10:27am, BINDING)
+"Bury them at the very bottom. They rank always last. Don't ever put them up front and center." brand_watch_hq.py moves every Mahjong Studios / Splash of Color line out of this week / just dropped / coming soon / sales to the very END of the last list. Same in any brand news list, sheet order or summary: they go last.
+
 # 0-USAGE. HOW THE WATCH RUNS (Tiffany Nov 11 12:26pm, BINDING; overrides the task prompt's step 2 "EVERY partner handle")
 - Model: the partner watch runs on Sonnet. Scripts do the routine work; Claude only reads what changed and writes the shopper-facing line.
 - INSTAGRAM BY TIER: read config/ig-watch-tiers.json. Each run fetches only the tiers its time slot lists (A every run: biggest earners + social-first brands; B morning + evening; C midday). A brand with a dated launch/restock in the next 7 days is read every run until it drops. Keep the 26-hour window, so nothing between runs is missed for A/B.
