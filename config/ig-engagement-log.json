@@ -1,1 +1,102 @@
-{"_about":"Log of Instagram actions from @mahjmatchmaker (docs/IG-ENGAGEMENT.md). likes = standing yes (Nov 12 7:17am); comments/reposts only from her approved daily list.","likes":[],"approved":[]}
+{
+ "_about": "Log of Instagram actions from @mahjmatchmaker (docs/IG-ENGAGEMENT.md). likes = standing yes (Nov 12 7:17am); comments/reposts only from her approved daily list.",
+ "likes": [
+  {
+   "date": "2026-11-12",
+   "brand": "LoveShackFancy",
+   "post": "https://www.instagram.com/p/DfnUrL2mmpB/",
+   "posted": "2026-11-11",
+   "what": "New November collection"
+  },
+  {
+   "date": "2026-11-12",
+   "brand": "LoveShackFancy",
+   "post": "https://www.instagram.com/p/DfnKQq-luYT/",
+   "posted": "2026-11-11",
+   "what": "LSF x Hunter boots teaser"
+  },
+  {
+   "date": "2026-11-12",
+   "brand": "LoveShackFancy",
+   "post": "https://www.instagram.com/p/DfnKIG0CEXb/",
+   "posted": "2026-11-11",
+   "what": "Chestnut Hill winter event"
+  },
+  {
+   "date": "2026-11-12",
+   "brand": "Amanda Toppe",
+   "post": "https://www.instagram.com/p/DflMHH_mkkI/",
+   "posted": "2026-11-11",
+   "what": "Grateful giveaway (liked in a batch that timed out; confirmed liked on recheck)"
+  },
+  {
+   "date": "2026-11-12",
+   "brand": "Anders Ruff",
+   "post": "https://www.instagram.com/p/Dfm-snJDC1Z/",
+   "posted": "2026-11-11",
+   "what": "Dear Santa ASMR reel (liked in a batch that timed out; confirmed liked on recheck)"
+  }
+ ],
+ "approved": [],
+ "runs": [
+  {
+   "date": "2026-11-12",
+   "time_et": "07:3x",
+   "list_sent": true,
+   "list_items": 6,
+   "likes_stopped": "Auto-mode permission check denied like clicks after ~20 brands; switched to read-only. Not liked (new, unliked): letsbebestiesmahjong x3 (DfnRCQ8saCA, Dfm9yOCt94M, Dfm7UWyJlpS, DfmvnoDEWQ6 = 4), ozarkmahjongg x3, macmillermahjong x2, tigre_de_tartan, myfairmahjong, amahjline, nolijunemahjong, mahjongbysi.",
+   "already_liked_by_her": [
+    "ohmymahjong x2",
+    "middleandmainmahjong",
+    "peacelovemahjong",
+    "letsmahjon",
+    "letsbebestiesmahjong Dfnd9lAItmd",
+    "mahjonggmaven"
+   ],
+   "pending_list": [
+    {
+     "n": 1,
+     "brand": "Let's Be Besties",
+     "post": "https://www.instagram.com/p/Dfnd9lAItmd/",
+     "action": "comment",
+     "text": "Congrats on your first mat collection! These are gorgeous, I can't wait to see them on tables everywhere."
+    },
+    {
+     "n": 2,
+     "brand": "Mahjong by SI",
+     "post": "https://www.instagram.com/p/Dfm6fS1EzSO/",
+     "action": "comment",
+     "text": "The paisley details are so fun! Perfect for a cowgirl mahj night."
+    },
+    {
+     "n": 3,
+     "brand": "Amahj",
+     "post": "https://www.instagram.com/p/Dfmp5g0pvn5/",
+     "action": "comment",
+     "text": "Ooh, my guess is something cozy for fall. Can't wait to see!"
+    },
+    {
+     "n": 4,
+     "brand": "Ozark Mahjongg",
+     "post": "https://www.instagram.com/p/Dfmyc7lxpYw/",
+     "action": "comment",
+     "text": "Brave with the scissors is right! These covers are adorable."
+    },
+    {
+     "n": 5,
+     "brand": "Middle & Main Mahjong",
+     "post": "https://www.instagram.com/p/Dfo4X1EjBt2/",
+     "action": "repost (hers)",
+     "bubble": "The sweetest stocking stuffer for your mahj friends. Code MAHJMATCH saves 10%."
+    },
+    {
+     "n": 6,
+     "brand": "Oh My Mahjong",
+     "post": "https://www.instagram.com/p/DfmbocZycHp/",
+     "action": "repost (hers)",
+     "bubble": "Juniper on Lotus Cove is such a dreamy pairing. Code MAHJMATCH saves 10%."
+    }
+   ]
+  }
+ ]
+}
