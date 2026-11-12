@@ -4,6 +4,9 @@
 
 Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cleanup (6:47am ET) reads it. Rules: CLAUDE.md ("THE DESK"), docs/CHATS.md. During the day, when an agent stops, Chrome drops or a QA stalls, add the item here right away with its next step.
 
+- OPS (launch watch Thu 11/12 9:05am): search Tiles & Tablescapes for Mahjong Studios Easter Morning + Some Bunny (new Easter tile sets; no colour card / TNT rec yet, so no swipe book).
+- OPS (launch watch Thu 11/12 9:05am): copy assets/launches/mahjongstudios-easter-morning-christian-mahjong-tile-set/ and assets/launches/mahjongstudios-some-bunny-easter-mahjong-tile-set/ to Dropbox /Mahj Matchmaker Albums/New releases/Mahjong Studios/ today.
+
 **Last rewrite:** Wed Nov 11, 2026, ~9:55pm ET (desk cleanup run, cloud, no computer linked). Covers the 60 commits of Nov 11 ET (13:30 Maison Mahj … b9828ecb usage report), docs/ANSWERS.md (Nov 11 lines, 12:26pm-9:17pm), docs/OVERDUE.md, docs/MATCH-INBOX.md, Planoly (IG workspace 019fc27c…: 36 scheduled groups, all in the Dec 7-10 review week or past reminders, + 32 drafts; exports docs/social/planoly-exports/ig-2026-11-11-desk.json + ig-2026-11-11-desk-drafts.json; Pinterest 019fc27b…: 4/day scheduled Nov 12-26+, 0 errors, pin-2026-11-11-desk-scheduled.json), HQ needs (17 open before → 13 after), hq/albums (94 items, live pages curl-checked), Ready to Ship (no new answers).
 
 **Owners (Tiffany Nov 11 4:41pm: ONE working chat):** **Main** owns everything (social/Planoly, site, email, HQ/DESK, Google + SEO, money decisions, Find Your Mat-ch, albums, gallery, catalog, search index, Chrome steps when her computer is on). **Ops (Sonnet)** = only money runs + Amazon-to-ShopMy link chores. The Matches & Catalog chat is RETIRED: any line below that still says "Main (was Matches & Catalog)" is Main's. Catalog gaps = scheduled task **Partner coverage owner (daily)** (trig_012DGkmgYqbH5ks6V9Dq9Ldz, 1:47pm ET).

@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-11T23:14:06+00:00",
+ "swept_at": "2026-11-12T14:13:12+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v119",
  "stores": {
   "amahjline.com": {
@@ -220,7 +220,7 @@
   "bespokemahjong.com": {
    "brand": "Bespoke Mahjong",
    "status": "ok",
-   "products": 338,
+   "products": 334,
    "mats": [
     [
      "2026-10-22T12:17:12-05:00",
@@ -915,7 +915,7 @@
   "charlestonmahjongclub.com": {
    "brand": "Charleston Mahjong Club",
    "status": "ok",
-   "products": 71,
+   "products": 72,
    "mats": [
     [
      "2026-08-28T08:23:55-04:00",
@@ -1180,7 +1180,7 @@
   "mahjmood.com": {
    "brand": "Mahj Mood",
    "status": "ok",
-   "products": 54,
+   "products": 53,
    "mats": [
     [
      "2026-11-05T15:11:45-06:00",
@@ -6799,6 +6799,26 @@
     ]
    ],
    "missing": []
+  },
+  "mahjongbysi.com": {
+   "brand": "mahjongbysi.com",
+   "status": "skipped: not a partner (builder/fym_flags/nonpartner_allow.json partners)"
+  },
+  "maisonmahj.com": {
+   "brand": "maisonmahj.com",
+   "status": "skipped: not a partner (builder/fym_flags/nonpartner_allow.json partners)"
+  },
+  "nolijune.com": {
+   "brand": "nolijune.com",
+   "status": "skipped: not a partner (builder/fym_flags/nonpartner_allow.json partners)"
+  },
+  "sweetjojomahjong.com": {
+   "brand": "sweetjojomahjong.com",
+   "status": "skipped: not a partner (builder/fym_flags/nonpartner_allow.json partners)"
+  },
+  "yolomahjong.com": {
+   "brand": "yolomahjong.com",
+   "status": "skipped: not a partner (builder/fym_flags/nonpartner_allow.json partners)"
   }
  }
 }
