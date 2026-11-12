@@ -15,3 +15,10 @@ if today not in done:
     else: print(f"ASK TIFFANY: FACEBOOK GROUP TODAY ({today}): {x['group']} is waiting on her week approval ({d['weeks'][-1].get('page','')}).")
 nxt = (now.date() + datetime.timedelta(days=(7 - now.weekday()) % 7 or 7)).isoformat()
 if now.weekday() >= 4 and nxt not in plan: print(f"FACEBOOK GROUPS: next week (from {nxt}) has no 7 groups planned yet: build them before Monday.")
+
+# Follow-up (Tiffany Nov 11 7:38pm: "Wherever you post, you need to track and follow up and look at the post").
+for p in d.get('posted', []):
+    try: age = (now.date() - datetime.date.fromisoformat(p['date'])).days
+    except Exception: continue
+    if age <= d.get('followup_days', 14) and p.get('last_checked') != today:
+        print(f"FACEBOOK GROUP FOLLOW-UP: check the {p['group']} post ({p['date']}, {p.get('url','url?')}): read comments, reply, log feedback in docs/FB-FEEDBACK.md, rate the group; set last_checked={today} in config/fb-groups.json.")
