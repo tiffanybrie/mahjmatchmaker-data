@@ -17,3 +17,8 @@ Never comment on or repost Mahjong Row & Co., Yellow Mountain Imports (off socia
 Safety: modest volume (likes: newest posts only, pause 3-8 s between actions; stop at the first "Try again later" /
 action block and log it). Never type a password, never solve a captcha, never DM, never tap buy links. One driver in
 Chrome; close every tab you open, even on errors.
+
+Reposts + our code (Tiffany Nov 12 7:20am): a repost may carry a short note with our code ("code MAHJMATCH saves you X%"),
+that's how a repost earns. EXCEPT Tigre de Tartan: they asked us not to repost with our code (it shows up tied to their
+content). Rare brands like that: list them here. No-code-on-repost: Tigre de Tartan. Draft each repost's note in the
+daily list so she approves the wording.
