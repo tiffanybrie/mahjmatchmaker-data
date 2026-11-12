@@ -1,0 +1,81 @@
+{
+ "run": "2026-11-12T12:37 ET stories check (ran 12:39-12:58)",
+ "handles_checked": [
+  "ohmymahjong",
+  "bambirdboutique",
+  "missmahjongofficial",
+  "myfairmahjong",
+  "bespoke_mahjong",
+  "andersruffdesignco",
+  "peacelovemahjong",
+  "bird_and_bamboo",
+  "mahj_mood",
+  "minimahjer",
+  "charlestonmahjongclub"
+ ],
+ "extra_dated_partners": "none: no partner launch/restock dated within 7 days beyond tier A (Mahj Mood Lake Day 11/20 is 8 days out and Mahj Mood is tier A)",
+ "with_stories": [
+  "ohmymahjong",
+  "bambirdboutique",
+  "missmahjongofficial",
+  "myfairmahjong",
+  "bespoke_mahjong",
+  "andersruffdesignco",
+  "peacelovemahjong",
+  "mahj_mood",
+  "minimahjer",
+  "charlestonmahjongclub"
+ ],
+ "no_story": [
+  "bird_and_bamboo"
+ ],
+ "frames_read": {
+  "ohmymahjong": 6,
+  "bambirdboutique": 3,
+  "missmahjongofficial": 1,
+  "myfairmahjong": 1,
+  "bespoke_mahjong": 1,
+  "andersruffdesignco": 12,
+  "peacelovemahjong": 2,
+  "mahj_mood": 12,
+  "minimahjer": 1,
+  "charlestonmahjongclub": 3
+ },
+ "frames_note": "Instagram opens each viewer at the first UNSEEN frame, so brands read last night start mid-reel; Mahj Mood was re-read from frame 1. Charleston frames before the 4h ones were read in the 11/11 20:37 run.",
+ "finds": [
+  {
+   "brand": "Mahj Mood",
+   "what": "NEW Lake Day tile set (clear aqua backs; lake/camp jokers), matching Lake Day mat shown; email subscribers shop early",
+   "when": "Fri 11/20 (CST, time not given)",
+   "urgency": "LATER",
+   "curated": "coming_soon",
+   "source": "IG story",
+   "img": "assets/launches/mahj-mood-lake-day/mahj-mood-lake-day-ig-story-nov12.jpg",
+   "sheet": "appended"
+  },
+  {
+   "brand": "Mahj Mood",
+   "what": "NEW wooden racks in 6 new colors: Dark Gray, Crimson Red, Slate Blue, Greige, Sea Foam/Mint, Mauve",
+   "when": "end of November, no date",
+   "urgency": "LATER",
+   "curated": "coming_soon",
+   "source": "IG story",
+   "img": "assets/launches/mahj-mood-wooden-racks/mahj-mood-wooden-racks-ig-story-nov12.jpg",
+   "sheet": "appended"
+  }
+ ],
+ "already_logged": [
+  "PLM red racks back in stock (just_dropped 11/11)",
+  "Mahj Mood BOGO 1/2 off mats (sales, hidden; story says ends tonight 11/12 8pm CST)",
+  "Mahj Mood Secret Garden retiring + last 4 Grey Marble racks (just_dropped)",
+  "Charleston Cabana Club tiles live, 'handful left', next-batch preorders after shipping (this_week)"
+ ],
+ "skipped": [
+  "OMM holiday gift guide frames (Gifts under $50/$250/$500, Shop Holiday): existing products",
+  "Mahj Mood 'only 9 Holly Berry mats remaining' + Splash mat in BOGO: low stock / sale, existing items",
+  "Bespoke 'shop in stock tables' customer repost",
+  "Charleston Thursday 6-8pm Boca event with otg247 (in-person event) + 'Not just a tile bag'",
+  "Customer reposts / reels: Bam Bird, Miss Mahjong, My Fair Mahjong, Anders Ruff (warehouse boxes video, Santa postcard), Mini Mahjer, PLM cane clutch reel"
+ ],
+ "push": "none: rule 00000 (Nov 12 10:26am) - no NOW pushes; both finds are LATER anyway"
+}
