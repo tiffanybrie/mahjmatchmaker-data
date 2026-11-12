@@ -1,82 +1,86 @@
 {
- "run_at": "2026-11-11T23:33:01+00:00",
+ "run_at": "2026-11-12T14:37:11+00:00",
  "first_run": false,
  "days": 7,
  "events": [
   {
-   "brand": "Mahj Squad",
-   "domain": "mahjsquadshop.com",
-   "handle": "the-gamekeeper-mat",
-   "title": "The Gamekeeper Mahjong Mat",
+   "brand": "Oh My Mahjong",
+   "domain": "www.ohmymahjong.com",
+   "handle": "lotus-cove-mat-in-tube",
+   "title": "Lotus Cove Mat in Tube",
    "kind": "mat",
-   "url": "https://mahjsquadshop.com/products/the-gamekeeper-mat",
-   "img": "https://cdn.shopify.com/s/files/1/0659/3200/1489/files/the-gamekeeper-mahjong-mat-mats-593.webp?v=1791222675",
+   "url": "https://www.ohmymahjong.com/products/lotus-cove-mat-in-tube",
+   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/lotus-cove-mat-in-tube-3067585.jpg?v=1793772310",
    "album": false,
-   "ev": "restock",
-   "variants": [
-    "Default Title"
-   ],
-   "reshare": "30 sec: open the brand's IG post about The Gamekeeper Mahjong Mat → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (The Gamekeeper Mahjong Mat is back in stock.)"
+   "ev": "soldout"
   },
   {
-   "brand": "Miss Mahjong",
-   "domain": "missmahjong.com",
-   "handle": "blonde-tortoise-and-brass-acrylic-racks",
-   "title": "Blonde Tortoise and Brass Acrylic Racks",
-   "kind": "rack",
-   "url": "https://missmahjong.com/products/blonde-tortoise-and-brass-acrylic-racks",
-   "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Cover-BlondeTortoiseandBrassRacks_1.png?v=1790045124",
-   "album": false,
-   "ev": "restock",
-   "variants": [
-    "Default Title"
-   ],
-   "reshare": "30 sec: open the brand's IG post about Blonde Tortoise and Brass Acrylic Racks → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Blonde Tortoise and Brass Acrylic Racks is back in stock.)"
-  },
-  {
-   "brand": "Miss Mahjong",
-   "domain": "missmahjong.com",
-   "handle": "dark-tortoise-and-brass-acrylic-racks",
-   "title": "Dark Tortoise and Brass Acrylic Racks",
-   "kind": "rack",
-   "url": "https://missmahjong.com/products/dark-tortoise-and-brass-acrylic-racks",
-   "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Cover-DarkTortoiseandBrassRacks_1.png?v=1790045123",
-   "album": false,
-   "ev": "restock",
-   "variants": [
-    "Default Title"
-   ],
-   "reshare": "30 sec: open the brand's IG post about Dark Tortoise and Brass Acrylic Racks → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Dark Tortoise and Brass Acrylic Racks is back in stock.)"
-  },
-  {
-   "brand": "My Fair Mahjong",
-   "domain": "myfairmahjong.com",
-   "handle": "mahjong-mat-parquet-petal-31-x-31",
-   "title": "(COMING SOON) MAHJONG MAT  |  Parquet Petal  |  31\" x 31\"",
-   "kind": "mat",
-   "url": "https://myfairmahjong.com/products/mahjong-mat-parquet-petal-31-x-31",
-   "img": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/Parquet_Petal_Pink_Mat_2.png?v=1790832939",
-   "album": false,
-   "ev": "restock",
-   "variants": [
-    "Default Title"
-   ],
-   "reshare": "30 sec: open the brand's IG post about (COMING SOON) MAHJONG MAT  |  Parquet Petal  |  31\" x 31\" → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. ((COMING SOON) MAHJONG MAT  |  Parquet Petal  |  31\" x 31\" is back in stock.)"
-  },
-  {
-   "brand": "My Fair Mahjong",
-   "domain": "myfairmahjong.com",
-   "handle": "crystal-confetti-purple",
-   "title": "CRYSTAL CONFETTI  |  Purple  |  Mahjong with a Sprinkle of Color and Joy",
+   "brand": "Oh My Mahjong",
+   "domain": "www.ohmymahjong.com",
+   "handle": "juniper-mahjong-tiles",
+   "title": "Juniper Mahjong Tiles",
    "kind": "tiles",
-   "url": "https://myfairmahjong.com/products/crystal-confetti-purple",
-   "img": "https://cdn.shopify.com/s/files/1/0703/3369/4263/files/LISTIN_2.png?v=1781135720",
+   "url": "https://www.ohmymahjong.com/products/juniper-mahjong-tiles",
+   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/juniper-mahjong-tiles-8551987.jpg?v=1793772313",
+   "album": false,
+   "ev": "soldout"
+  },
+  {
+   "brand": "Charleston Mahjong Club",
+   "domain": "www.charlestonmahjongclub.com",
+   "handle": "the-hunt-club-edition™-copy",
+   "title": "The Cabana Club Edition™",
+   "kind": "tiles",
+   "url": "https://www.charlestonmahjongclub.com/products/the-hunt-club-edition™-copy",
+   "img": "https://cdn.shopify.com/s/files/1/0880/7160/2481/files/CabannaFieldGuideSquare-02.jpg?v=1782409145",
+   "album": false,
+   "ev": "new",
+   "avail": true,
+   "pre": true,
+   "reshare": "30 sec: open the brand's IG post about The Cabana Club Edition™ → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (The Cabana Club Edition™ is new.)"
+  },
+  {
+   "brand": "Mahjong Studios",
+   "domain": "mahjongstudios.com",
+   "handle": "easter-morning-christian-mahjong-tile-set",
+   "title": "Easter Morning - Christian Mahjong Tile Set",
+   "kind": "tiles",
+   "url": "https://mahjongstudios.com/products/easter-morning-christian-mahjong-tile-set",
+   "img": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/Website_photo_42.png?v=1794447513",
+   "album": false,
+   "ev": "new",
+   "avail": true,
+   "pre": false,
+   "reshare": "30 sec: open the brand's IG post about Easter Morning - Christian Mahjong Tile Set → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Easter Morning - Christian Mahjong Tile Set is new.)"
+  },
+  {
+   "brand": "Mahjong Studios",
+   "domain": "mahjongstudios.com",
+   "handle": "some-bunny-easter-mahjong-tile-set",
+   "title": "Some Bunny - Easter Mahjong Tile Set",
+   "kind": "tiles",
+   "url": "https://mahjongstudios.com/products/some-bunny-easter-mahjong-tile-set",
+   "img": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/Websitephoto_43.png?v=1794455561",
+   "album": false,
+   "ev": "new",
+   "avail": true,
+   "pre": false,
+   "reshare": "30 sec: open the brand's IG post about Some Bunny - Easter Mahjong Tile Set → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Some Bunny - Easter Mahjong Tile Set is new.)"
+  },
+  {
+   "brand": "Mahjong Studios",
+   "domain": "mahjongstudios.com",
+   "handle": "mahjong-studios-tiles-only",
+   "title": "Mahjong Studios - Tile Sets",
+   "kind": "tiles",
+   "url": "https://mahjongstudios.com/products/mahjong-studios-tiles-only",
+   "img": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/1_0a9266ae-597f-4b85-8805-e4e1fe5d1894.png?v=1788635848",
    "album": false,
    "ev": "restock",
    "variants": [
-    "Default Title"
+    "Rose Dragon"
    ],
-   "reshare": "30 sec: open the brand's IG post about CRYSTAL CONFETTI  |  Purple  |  Mahjong with a Sprinkle of Color and Joy → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (CRYSTAL CONFETTI  |  Purple  |  Mahjong with a Sprinkle of Color and Joy is back in stock.)"
+   "reshare": "30 sec: open the brand's IG post about Mahjong Studios - Tile Sets → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Mahjong Studios - Tile Sets is back in stock.)"
   },
   {
    "brand": "Tigre de Tartán",
@@ -87,55 +91,52 @@
    "url": "https://tigredetartan.com/products/katherine-hartman-x-tigre-de-tartan",
    "img": "https://cdn.shopify.com/s/files/1/0567/2566/7876/files/2865BE2E-AE58-4429-81C6-F17A060BC41A.jpg?v=1792004848",
    "album": false,
-   "ev": "restock",
-   "variants": [
-    "Default Title"
-   ],
-   "reshare": "30 sec: open the brand's IG post about Katherine Hartman X Tigre de Tartán Mahjong Mat, BIRDSONG → paper-plane → Add to story → add @-mention + link sticker to the product. (Katherine Hartman X Tigre de Tartán Mahjong Mat, BIRDSONG is back in stock.)"
+   "ev": "soldout"
   },
   {
-   "brand": "Mahjong Register",
-   "domain": "mahjongregister.com",
-   "handle": "gold-hardware-acrylic-mahjong-racks-set-of-4",
-   "title": "Gold Hardware Acrylic Mahjong Racks – Set of 4, 20\" Straight Edge",
-   "kind": "rack",
-   "url": "https://mahjongregister.com/products/gold-hardware-acrylic-mahjong-racks-set-of-4",
-   "img": "https://cdn.shopify.com/s/files/1/0877/7039/9032/files/gold_hardware_racks.jpg?v=1793926492",
-   "album": false,
-   "ev": "restock",
-   "variants": [
-    "Admiral Navy",
-    "Admiral Navy + Rack Bag"
-   ],
-   "reshare": "30 sec: open the brand's IG post about Gold Hardware Acrylic Mahjong Racks – Set of 4, 20\" Straight Edge → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Gold Hardware Acrylic Mahjong Racks – Set of 4, 20\" Straight Edge is back in stock.)"
-  },
-  {
-   "brand": "Let's Be Besties",
-   "domain": "letsbebesties.com",
-   "handle": "confetti-kaleidoscope-ohbon-studios-artist-mahjong-ma",
-   "title": "Confetti Kaleidoscope OHBoN Studios Artist Mahjong Mat",
+   "brand": "Tigre de Tartán",
+   "domain": "tigredetartan.com",
+   "handle": "katherine-hartman-x-tigre-de-tartan",
+   "title": "Katherine Hartman X Tigre de Tartán Mahjong Mat, BIRDSONG",
    "kind": "mat",
-   "url": "https://letsbebesties.com/products/confetti-kaleidoscope-ohbon-studios-artist-mahjong-ma",
-   "img": "https://cdn.shopify.com/s/files/1/0717/6178/9088/files/ConfettiKaleidoscopesmallfile.png?v=1794425739",
+   "url": "https://tigredetartan.com/products/katherine-hartman-x-tigre-de-tartan",
+   "img": "https://cdn.shopify.com/s/files/1/0567/2566/7876/files/2865BE2E-AE58-4429-81C6-F17A060BC41A.jpg?v=1792004848",
    "album": false,
-   "ev": "new",
-   "avail": true,
-   "pre": false,
-   "reshare": "30 sec: open the brand's IG post about Confetti Kaleidoscope OHBoN Studios Artist Mahjong Mat → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Confetti Kaleidoscope OHBoN Studios Artist Mahjong Mat is new.)"
+   "ev": "preorder",
+   "reshare": "30 sec: open the brand's IG post about Katherine Hartman X Tigre de Tartán Mahjong Mat, BIRDSONG → paper-plane → Add to story → add @-mention + link sticker to the product. (Katherine Hartman X Tigre de Tartán Mahjong Mat, BIRDSONG is open for preorder.)"
+  },
+  {
+   "brand": "Virora Mahjong",
+   "domain": "www.viroramahjong.com",
+   "handle": "hollivia",
+   "title": "Hollivia Mahjong Mat",
+   "kind": "mat",
+   "url": "https://www.viroramahjong.com/products/hollivia",
+   "img": "https://cdn.shopify.com/s/files/1/0734/6605/2791/files/20261009140804_10624_242.jpg?v=1791526225",
+   "album": false,
+   "ev": "soldout"
+  },
+  {
+   "brand": "Sunday Mahjong",
+   "domain": "sundaymahjong.com",
+   "handle": "sunday-cola-mahjong-rack-set",
+   "title": "Sunday Cola Mahjong Rack Set",
+   "kind": "rack",
+   "url": "https://sundaymahjong.com/products/sunday-cola-mahjong-rack-set",
+   "img": "https://cdn.shopify.com/s/files/1/0946/7458/3873/files/Sunday-Cola-Racks-3_efbc2b19-a8e8-4b72-a76c-161fec8a7828.jpg?v=1785896823",
+   "album": false,
+   "ev": "soldout"
   },
   {
    "brand": "Mahj Pit",
    "domain": "mahjpit.co",
-   "handle": "the-raven-tiles-large",
-   "title": "The Raven Tiles - Large",
-   "kind": "tiles",
-   "url": "https://mahjpit.co/products/the-raven-tiles-large",
-   "img": "https://cdn.shopify.com/s/files/1/0699/1668/8550/files/6B57C8F4-3D11-434F-8C0C-B0223F8AB47D_1_201_a.jpg?v=1794337010",
+   "handle": "little-miss-racks-set-of-4",
+   "title": "Little Miss Racks  - Set of 4",
+   "kind": "rack",
+   "url": "https://mahjpit.co/products/little-miss-racks-set-of-4",
+   "img": "https://cdn.shopify.com/s/files/1/0699/1668/8550/files/1732D310-707B-4E9A-917E-8281D52633A2_1_102_o.jpg?v=1794342350",
    "album": false,
-   "ev": "new",
-   "avail": true,
-   "pre": false,
-   "reshare": "30 sec: open the brand's IG post about The Raven Tiles - Large → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (The Raven Tiles - Large is new.)"
+   "ev": "soldout"
   },
   {
    "brand": "Mahj Pit",
@@ -146,7 +147,85 @@
    "url": "https://mahjpit.co/products/merry-merry-holiday-tiles-limited-edition",
    "img": "https://cdn.shopify.com/s/files/1/0699/1668/8550/files/DO01020593.jpg?v=1783456495",
    "album": false,
-   "ev": "soldout"
+   "ev": "restock",
+   "variants": [
+    "Default Title"
+   ],
+   "reshare": "30 sec: open the brand's IG post about Merry Merry Holiday Travel Tiles  - Limited Edition → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Merry Merry Holiday Travel Tiles  - Limited Edition is back in stock.)"
+  },
+  {
+   "brand": "YOLO Mahjong",
+   "domain": "yolomahjong.com",
+   "handle": "sage-green-crocodile-print-mahjong-mat-shipped-rolled-up",
+   "title": "Sage Green Crocodile Print Mahjong Mat (Shipped Rolled Up)",
+   "kind": "mat",
+   "url": "https://yolomahjong.com/products/sage-green-crocodile-print-mahjong-mat-shipped-rolled-up",
+   "img": "https://cdn.shopify.com/s/files/1/0742/9613/1723/files/Mahjong_Mat_-_2026-11-12T151318.381.png?v=1794467632",
+   "album": false,
+   "ev": "new",
+   "avail": true,
+   "pre": false,
+   "reshare": "30 sec: open the brand's IG post about Sage Green Crocodile Print Mahjong Mat (Shipped Rolled Up) → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Sage Green Crocodile Print Mahjong Mat (Shipped Rolled Up) is new.)"
+  },
+  {
+   "brand": "YOLO Mahjong",
+   "domain": "yolomahjong.com",
+   "handle": "ivory-crocodile-print-mahjong-mat-shipped-rolled-up",
+   "title": "Ivory Crocodile Print Mahjong Mat (Shipped Rolled Up)",
+   "kind": "mat",
+   "url": "https://yolomahjong.com/products/ivory-crocodile-print-mahjong-mat-shipped-rolled-up",
+   "img": "https://cdn.shopify.com/s/files/1/0742/9613/1723/files/Mahjong_Mat_71.png?v=1794467520",
+   "album": false,
+   "ev": "new variant",
+   "variants": [
+    "3mm / 31.5\"x31.5\" - Black Bag",
+    "3mm / 31.5\"x31.5\" - White Bag",
+    "3mm / 33\"x33\" - Black Bag",
+    "3mm / 33\"x33\" - White Bag"
+   ],
+   "reshare": "30 sec: open the brand's IG post about Ivory Crocodile Print Mahjong Mat (Shipped Rolled Up) → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Ivory Crocodile Print Mahjong Mat (Shipped Rolled Up) is new.)"
+  },
+  {
+   "brand": "Noli June",
+   "domain": "nolijune.com",
+   "handle": "martini-mahjong-tile-set",
+   "title": "Martini Mahjong Tile Set",
+   "kind": "tiles",
+   "url": "https://nolijune.com/products/martini-mahjong-tile-set",
+   "img": "https://cdn.shopify.com/s/files/1/1035/9898/1201/files/2026_MRD_AshleyBenhamPhotography-7902copy_5b2b098a-2ab2-41b5-aa9d-1fce118a8dec.jpg?v=1794456342",
+   "album": false,
+   "ev": "new",
+   "avail": true,
+   "pre": false,
+   "reshare": "30 sec: open the brand's IG post about Martini Mahjong Tile Set → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Martini Mahjong Tile Set is new.)"
+  },
+  {
+   "brand": "Noli June",
+   "domain": "nolijune.com",
+   "handle": "sweetheart-mahjong-tile-set",
+   "title": "Sweetheart Mahjong Tile Set",
+   "kind": "tiles",
+   "url": "https://nolijune.com/products/sweetheart-mahjong-tile-set",
+   "img": "https://cdn.shopify.com/s/files/1/1035/9898/1201/files/2026_MRD_AshleyBenhamPhotography-7905copy.jpg?v=1794456336",
+   "album": false,
+   "ev": "new",
+   "avail": true,
+   "pre": false,
+   "reshare": "30 sec: open the brand's IG post about Sweetheart Mahjong Tile Set → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Sweetheart Mahjong Tile Set is new.)"
+  },
+  {
+   "brand": "Noli June",
+   "domain": "nolijune.com",
+   "handle": "mazel-mahjong-tile-set",
+   "title": "Mazel Mahjong Tile Set",
+   "kind": "tiles",
+   "url": "https://nolijune.com/products/mazel-mahjong-tile-set",
+   "img": "https://cdn.shopify.com/s/files/1/1035/9898/1201/files/MazelWebsite_286966d3-eb4b-493b-ab0f-839ec73e509b.jpg?v=1794456336",
+   "album": false,
+   "ev": "new",
+   "avail": true,
+   "pre": false,
+   "reshare": "30 sec: open the brand's IG post about Mazel Mahjong Tile Set → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Mazel Mahjong Tile Set is new.)"
   },
   {
    "brand": "Middle & Main Mahjong",
@@ -157,14 +236,124 @@
    "url": "https://www.middleandmainmahjong.com/products/peach-pine-tiles-a-georgia-inspired-mahjong-set",
    "img": "https://cdn.shopify.com/s/files/1/0662/4316/6361/files/1_1b75f333-4edd-429e-9671-565e7ddda98c.png?v=1777329163",
    "album": false,
-   "ev": "restock",
-   "variants": [
-    "Default Title"
-   ],
-   "reshare": "30 sec: open the brand's IG post about Peach & Pine Tiles- A Georgia Inspired Mahjong Set → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Peach & Pine Tiles- A Georgia Inspired Mahjong Set is back in stock.)"
+   "ev": "soldout"
+  },
+  {
+   "brand": "Splash of Color",
+   "domain": "splashofcolorco.com",
+   "handle": "preppy-mahjong-muumuu-dress-green-pink-whimsical-mahj-tile-designed",
+   "title": "Preppy Mahjong Muumuu Dress Green Pink Whimsical Mahj Tile Designed",
+   "kind": "tiles",
+   "url": "https://splashofcolorco.com/products/preppy-mahjong-muumuu-dress-green-pink-whimsical-mahj-tile-designed",
+   "img": "https://cdn.shopify.com/s/files/1/0766/9478/2170/files/530915bfa3c5864374e21ba7b2c2aee3.jpg?v=1762786384",
+   "album": false,
+   "ev": "price",
+   "was": 45.99,
+   "now": 55.0
+  },
+  {
+   "brand": "Splash of Color",
+   "domain": "splashofcolorco.com",
+   "handle": "mahjong-mat-bohemian-jeweled-tones-fusia-pink-teal-reddish-watercolor-mahj-game-night-mat",
+   "title": "Mahjong Mat Bohemian Jeweled Tones, Fusia, Pink, Teal Reddish, Watercolor Mahj Game Night Mat",
+   "kind": "mat",
+   "url": "https://splashofcolorco.com/products/mahjong-mat-bohemian-jeweled-tones-fusia-pink-teal-reddish-watercolor-mahj-game-night-mat",
+   "img": "https://cdn.shopify.com/s/files/1/0766/9478/2170/files/mahjong-room-design-1763648562513.png?v=1764860051",
+   "album": false,
+   "ev": "price",
+   "was": 70.0,
+   "now": 75.0
+  },
+  {
+   "brand": "Splash of Color",
+   "domain": "splashofcolorco.com",
+   "handle": "mahjong-lover-cute-green-pink-mahj-tiles-womens-muumuu-dress",
+   "title": "Mahjong Lover Cute Green Pink Mahj Tiles Women's Muumuu Dress",
+   "kind": "tiles",
+   "url": "https://splashofcolorco.com/products/mahjong-lover-cute-green-pink-mahj-tiles-womens-muumuu-dress",
+   "img": "https://cdn.shopify.com/s/files/1/0766/9478/2170/files/mahjong-lover-cute-green-pink-mahj-tiles-womens-muumuu-dress-pajamas-467.webp?v=1764116532",
+   "album": false,
+   "ev": "price",
+   "was": 45.99,
+   "now": 55.0
   }
  ],
  "recent": [
+  {
+   "brand": "Charleston Mahjong Club",
+   "domain": "www.charlestonmahjongclub.com",
+   "handle": "the-hunt-club-edition™-copy",
+   "title": "The Cabana Club Edition™",
+   "kind": "tiles",
+   "url": "https://www.charlestonmahjongclub.com/products/the-hunt-club-edition™-copy",
+   "img": "https://cdn.shopify.com/s/files/1/0880/7160/2481/files/CabannaFieldGuideSquare-02.jpg?v=1782409145",
+   "album": false,
+   "ev": "recent",
+   "when": "2026-11-12",
+   "avail": true,
+   "pre": true,
+   "reshare": "30 sec: open the brand's IG post about The Cabana Club Edition™ → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (The Cabana Club Edition™ is new.)"
+  },
+  {
+   "brand": "YOLO Mahjong",
+   "domain": "yolomahjong.com",
+   "handle": "sage-green-crocodile-print-mahjong-mat-shipped-rolled-up",
+   "title": "Sage Green Crocodile Print Mahjong Mat (Shipped Rolled Up)",
+   "kind": "mat",
+   "url": "https://yolomahjong.com/products/sage-green-crocodile-print-mahjong-mat-shipped-rolled-up",
+   "img": "https://cdn.shopify.com/s/files/1/0742/9613/1723/files/Mahjong_Mat_-_2026-11-12T151318.381.png?v=1794467632",
+   "album": false,
+   "ev": "recent",
+   "when": "2026-11-12",
+   "avail": true,
+   "pre": false,
+   "reshare": "30 sec: open the brand's IG post about Sage Green Crocodile Print Mahjong Mat (Shipped Rolled Up) → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Sage Green Crocodile Print Mahjong Mat (Shipped Rolled Up) is new.)"
+  },
+  {
+   "brand": "YOLO Mahjong",
+   "domain": "yolomahjong.com",
+   "handle": "ivory-crocodile-print-mahjong-mat-shipped-rolled-up",
+   "title": "Ivory Crocodile Print Mahjong Mat (Shipped Rolled Up)",
+   "kind": "mat",
+   "url": "https://yolomahjong.com/products/ivory-crocodile-print-mahjong-mat-shipped-rolled-up",
+   "img": "https://cdn.shopify.com/s/files/1/0742/9613/1723/files/Mahjong_Mat_71.png?v=1794467520",
+   "album": false,
+   "ev": "recent",
+   "when": "2026-11-12",
+   "avail": true,
+   "pre": false,
+   "reshare": "30 sec: open the brand's IG post about Ivory Crocodile Print Mahjong Mat (Shipped Rolled Up) → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Ivory Crocodile Print Mahjong Mat (Shipped Rolled Up) is new.)"
+  },
+  {
+   "brand": "Mahjong Studios",
+   "domain": "mahjongstudios.com",
+   "handle": "easter-morning-christian-mahjong-tile-set",
+   "title": "Easter Morning - Christian Mahjong Tile Set",
+   "kind": "tiles",
+   "url": "https://mahjongstudios.com/products/easter-morning-christian-mahjong-tile-set",
+   "img": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/Website_photo_42.png?v=1794447513",
+   "album": false,
+   "ev": "recent",
+   "when": "2026-11-11",
+   "avail": true,
+   "pre": false,
+   "reshare": "30 sec: open the brand's IG post about Easter Morning - Christian Mahjong Tile Set → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Easter Morning - Christian Mahjong Tile Set is new.)"
+  },
+  {
+   "brand": "Mahjong Studios",
+   "domain": "mahjongstudios.com",
+   "handle": "some-bunny-easter-mahjong-tile-set",
+   "title": "Some Bunny - Easter Mahjong Tile Set",
+   "kind": "tiles",
+   "url": "https://mahjongstudios.com/products/some-bunny-easter-mahjong-tile-set",
+   "img": "https://cdn.shopify.com/s/files/1/0772/7706/9549/files/Websitephoto_43.png?v=1794455561",
+   "album": false,
+   "ev": "recent",
+   "when": "2026-11-11",
+   "avail": true,
+   "pre": false,
+   "reshare": "30 sec: open the brand's IG post about Some Bunny - Easter Mahjong Tile Set → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Some Bunny - Easter Mahjong Tile Set is new.)"
+  },
   {
    "brand": "Let's Be Besties",
    "domain": "letsbebesties.com",
@@ -281,7 +470,7 @@
    "album": false,
    "ev": "recent",
    "when": "2026-11-11",
-   "avail": true,
+   "avail": false,
    "pre": false,
    "reshare": "30 sec: open the brand's IG post about Little Miss Racks  - Set of 4 → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Little Miss Racks  - Set of 4 is new.)"
   },
@@ -341,7 +530,7 @@
    "album": false,
    "ev": "recent",
    "when": "2026-11-11",
-   "avail": false,
+   "avail": true,
    "pre": false,
    "reshare": "30 sec: open the brand's IG post about Merry Merry Holiday Travel Tiles  - Limited Edition → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Merry Merry Holiday Travel Tiles  - Limited Edition is new.)"
   },
@@ -359,6 +548,51 @@
    "avail": true,
    "pre": false,
    "reshare": "30 sec: open the brand's IG post about The Martha Tiles → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (The Martha Tiles is new.)"
+  },
+  {
+   "brand": "Noli June",
+   "domain": "nolijune.com",
+   "handle": "martini-mahjong-tile-set",
+   "title": "Martini Mahjong Tile Set",
+   "kind": "tiles",
+   "url": "https://nolijune.com/products/martini-mahjong-tile-set",
+   "img": "https://cdn.shopify.com/s/files/1/1035/9898/1201/files/2026_MRD_AshleyBenhamPhotography-7902copy_5b2b098a-2ab2-41b5-aa9d-1fce118a8dec.jpg?v=1794456342",
+   "album": false,
+   "ev": "recent",
+   "when": "2026-11-11",
+   "avail": true,
+   "pre": false,
+   "reshare": "30 sec: open the brand's IG post about Martini Mahjong Tile Set → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Martini Mahjong Tile Set is new.)"
+  },
+  {
+   "brand": "Noli June",
+   "domain": "nolijune.com",
+   "handle": "sweetheart-mahjong-tile-set",
+   "title": "Sweetheart Mahjong Tile Set",
+   "kind": "tiles",
+   "url": "https://nolijune.com/products/sweetheart-mahjong-tile-set",
+   "img": "https://cdn.shopify.com/s/files/1/1035/9898/1201/files/2026_MRD_AshleyBenhamPhotography-7905copy.jpg?v=1794456336",
+   "album": false,
+   "ev": "recent",
+   "when": "2026-11-11",
+   "avail": true,
+   "pre": false,
+   "reshare": "30 sec: open the brand's IG post about Sweetheart Mahjong Tile Set → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Sweetheart Mahjong Tile Set is new.)"
+  },
+  {
+   "brand": "Noli June",
+   "domain": "nolijune.com",
+   "handle": "mazel-mahjong-tile-set",
+   "title": "Mazel Mahjong Tile Set",
+   "kind": "tiles",
+   "url": "https://nolijune.com/products/mazel-mahjong-tile-set",
+   "img": "https://cdn.shopify.com/s/files/1/1035/9898/1201/files/MazelWebsite_286966d3-eb4b-493b-ab0f-839ec73e509b.jpg?v=1794456336",
+   "album": false,
+   "ev": "recent",
+   "when": "2026-11-11",
+   "avail": true,
+   "pre": false,
+   "reshare": "30 sec: open the brand's IG post about Mazel Mahjong Tile Set → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Mazel Mahjong Tile Set is new.)"
   },
   {
    "brand": "Sweet Jojo Mahjong",
@@ -659,21 +893,6 @@
    "avail": true,
    "pre": false,
    "reshare": "30 sec: open the brand's IG post about Travel Mat: Snowport → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Travel Mat: Snowport is new.)"
-  },
-  {
-   "brand": "YOLO Mahjong",
-   "domain": "yolomahjong.com",
-   "handle": "ivory-crocodile-print-mahjong-mat-shipped-rolled-up",
-   "title": "Ivory Crocodile Print Mahjong Mat (Shipped Rolled Up)",
-   "kind": "mat",
-   "url": "https://yolomahjong.com/products/ivory-crocodile-print-mahjong-mat-shipped-rolled-up",
-   "img": "https://cdn.shopify.com/s/files/1/0742/9613/1723/files/Mahjong_Mat_71.png?v=1794372851",
-   "album": false,
-   "ev": "recent",
-   "when": "2026-11-10",
-   "avail": true,
-   "pre": false,
-   "reshare": "30 sec: open the brand's IG post about Ivory Crocodile Print Mahjong Mat (Shipped Rolled Up) → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (Ivory Crocodile Print Mahjong Mat (Shipped Rolled Up) is new.)"
   },
   {
    "brand": "Splash of Color",
@@ -4814,21 +5033,6 @@
    "avail": true,
    "pre": false,
    "reshare": "30 sec: open the brand's IG post about The Delmar Cocktail Club Modcentric Meowza 4Layer American Mahjong Tiles  Blue  Green → paper-plane → Add to story → add @-mention + 'code MAHJMATCH' text + link sticker to the product. (The Delmar Cocktail Club Modcentric Meowza 4Layer American Mahjong Tiles  Blue  Green is new.)"
-  },
-  {
-   "brand": "Splash of Color",
-   "domain": "splashofcolorco.com",
-   "handle": "tuscan-tapestry-earhy-wine-mahjong-mat-sleek-surface",
-   "title": "Tuscan Tapestry Earthy Wine Mahjong Mat Sleek Surface",
-   "kind": "mat",
-   "url": "https://splashofcolorco.com/products/tuscan-tapestry-earhy-wine-mahjong-mat-sleek-surface",
-   "img": "https://cdn.shopify.com/s/files/1/0766/9478/2170/files/Rustic_Mediterranean_Tabletop_in_Bloom.png?v=1793930647",
-   "album": false,
-   "ev": "recent",
-   "when": "2026-11-04",
-   "avail": true,
-   "pre": false,
-   "reshare": "Log only (this brand's mats are out of FYM)."
   }
  ],
  "stores": {
@@ -4837,18 +5041,18 @@
   "shop.andersruff.com": "ok 161 products",
   "www.bambirdboutique.com": "ok 117 products",
   "www.bamletsmahjong.com": "ok 68 products",
-  "www.bespokemahjong.com": "ok 338 products",
+  "www.bespokemahjong.com": "ok 334 products",
   "birdandbamboo.com": "ok 59 products",
   "brittmillsdesign.com": "ok 718 products",
-  "www.charlestonmahjongclub.com": "ok 71 products",
+  "www.charlestonmahjongclub.com": "ok 72 products",
   "www.hiphipmahjong.com": "ok 72 products",
   "www.letsmahj-on.com": "ok 85 products",
   "www.macandmillermahjong.com": "ok 36 products",
   "mahjandvine.com": "ok 21 products",
-  "mahjmood.com": "ok 54 products",
+  "mahjmood.com": "ok 53 products",
   "mahjsquadshop.com": "ok 60 products",
   "mahjongco.com": "ok 1 products",
-  "mahjongstudios.com": "ok 155 products",
+  "mahjongstudios.com": "ok 156 products",
   "minimahjer.com": "ok 30 products",
   "missmahjong.com": "ok 102 products",
   "myfairmahjong.com": "ok 96 products",
@@ -4864,12 +5068,12 @@
   "www.fait-a-main.com": "ok 44 products",
   "soireeallday.co": "not checkable (not Shopify or blocked)",
   "mahjpit.co": "ok 174 products",
-  "yolomahjong.com": "ok 92 products",
-  "nolijune.com": "ok 56 products",
+  "yolomahjong.com": "ok 93 products",
+  "nolijune.com": "ok 59 products",
   "maisonmahj.com": "ok 39 products",
   "www.middleandmainmahjong.com": "ok 105 products",
   "sweetjojomahjong.com": "ok 89 products",
-  "splashofcolorco.com": "ok 2178 products",
+  "splashofcolorco.com": "ok 2184 products",
   "www.mahjongbysi.com": "ok 2042 products"
  }
 }
