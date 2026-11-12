@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-12T14:13:12+00:00",
+ "swept_at": "2026-11-12T23:10:47+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v119",
  "stores": {
   "amahjline.com": {
@@ -54,7 +54,7 @@
   "bambirdboutique.com": {
    "brand": "Bam Bird Boutique",
    "status": "ok",
-   "products": 117,
+   "products": 116,
    "mats": [
     [
      "2026-10-27T13:47:10-05:00",
@@ -220,7 +220,7 @@
   "bespokemahjong.com": {
    "brand": "Bespoke Mahjong",
    "status": "ok",
-   "products": 334,
+   "products": 332,
    "mats": [
     [
      "2026-10-22T12:17:12-05:00",
@@ -541,8 +541,23 @@
   "brittmillsdesign.com": {
    "brand": "Britt Mills",
    "status": "ok",
-   "products": 718,
+   "products": 727,
    "mats": [
+    [
+     "2026-11-12T16:04:16-05:00",
+     "Grayson Leatherette Mahjong Mat",
+     "grayson-leatherette-mahjong-mat"
+    ],
+    [
+     "2026-11-12T11:03:47-05:00",
+     "Plumage Leatherette Mahjong Mat",
+     "plumage-leatherette-mahjong-mat"
+    ],
+    [
+     "2026-11-12T11:02:59-05:00",
+     "Mallard Manor Leatherette Mahjong Mat",
+     "mallard-manor-leatherette-mahjong-mat"
+    ],
     [
      "2026-11-02T10:05:36-05:00",
      "Isla Leatherette Mahjong Mat",
@@ -905,6 +920,21 @@
     ]
    ],
    "missing": [
+    [
+     "2026-11-12T16:04:16-05:00",
+     "Grayson Leatherette Mahjong Mat",
+     "grayson-leatherette-mahjong-mat"
+    ],
+    [
+     "2026-11-12T11:03:47-05:00",
+     "Plumage Leatherette Mahjong Mat",
+     "plumage-leatherette-mahjong-mat"
+    ],
+    [
+     "2026-11-12T11:02:59-05:00",
+     "Mallard Manor Leatherette Mahjong Mat",
+     "mallard-manor-leatherette-mahjong-mat"
+    ],
     [
      "2026-11-02T10:05:36-05:00",
      "Isla Leatherette Mahjong Mat",
@@ -2832,7 +2862,7 @@
   "letsbebesties.com": {
    "brand": "Let's Be Besties",
    "status": "ok",
-   "products": 744,
+   "products": 761,
    "mats": [
     [
      "2026-11-11T14:35:20-05:00",
