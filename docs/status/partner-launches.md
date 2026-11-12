@@ -1,22 +1,29 @@
-# Partner launches & restocks (2026-11-12 14:37 UTC)
+# Partner launches & restocks (2026-11-12 18:57 UTC)
 
 ## Since last run: 11 to act on
-- **NEW** Charleston Mahjong Club · The Cabana Club Edition™ (tiles) · https://www.charlestonmahjongclub.com/products/the-hunt-club-edition™-copy
-- **NEW** Mahjong Studios · Easter Morning - Christian Mahjong Tile Set (tiles) · https://mahjongstudios.com/products/easter-morning-christian-mahjong-tile-set
-- **NEW** Mahjong Studios · Some Bunny - Easter Mahjong Tile Set (tiles) · https://mahjongstudios.com/products/some-bunny-easter-mahjong-tile-set
-- **RESTOCK** Mahjong Studios · Mahjong Studios - Tile Sets (tiles) · Rose Dragon · https://mahjongstudios.com/products/mahjong-studios-tiles-only
-- **PREORDER** Tigre de Tartán · Katherine Hartman X Tigre de Tartán Mahjong Mat, BIRDSONG (mat) · https://tigredetartan.com/products/katherine-hartman-x-tigre-de-tartan
-- **RESTOCK** Mahj Pit · Merry Merry Holiday Travel Tiles  - Limited Edition (travel tiles) · Default Title · https://mahjpit.co/products/merry-merry-holiday-tiles-limited-edition
-- **NEW** YOLO Mahjong · Sage Green Crocodile Print Mahjong Mat (Shipped Rolled Up) (mat) · https://yolomahjong.com/products/sage-green-crocodile-print-mahjong-mat-shipped-rolled-up
-- **NEW VARIANT** YOLO Mahjong · Ivory Crocodile Print Mahjong Mat (Shipped Rolled Up) (mat) · 3mm / 31.5"x31.5" - Black Bag, 3mm / 31.5"x31.5" - White Bag, 3mm / 33"x33" - Black Bag, 3mm / 33"x33" - White Bag · https://yolomahjong.com/products/ivory-crocodile-print-mahjong-mat-shipped-rolled-up
-- **NEW** Noli June · Martini Mahjong Tile Set (tiles) · https://nolijune.com/products/martini-mahjong-tile-set
-- **NEW** Noli June · Sweetheart Mahjong Tile Set (tiles) · https://nolijune.com/products/sweetheart-mahjong-tile-set
-- **NEW** Noli June · Mazel Mahjong Tile Set (tiles) · https://nolijune.com/products/mazel-mahjong-tile-set
+- **NEW** Britt Mills · Plumage Desk Mat (mat) · https://brittmillsdesign.com/products/plumage-desk-mat
+- **NEW** Britt Mills · Plumage Leatherette Mahjong Mat (mat) · https://brittmillsdesign.com/products/plumage-leatherette-mahjong-mat
+- **NEW** Britt Mills · Mallard Manor Leatherette Mahjong Mat (mat) · https://brittmillsdesign.com/products/mallard-manor-leatherette-mahjong-mat
+- **NEW VARIANT** Britt Mills · Colorful Chinoiserie Leatherette Mahjong Mat (mat) · 33.5" Square · https://brittmillsdesign.com/products/colorful-chinoiserie-leatherette-mahjong-mat
+- **RESTOCK** Mahjong Studios · 20" Luxury Handmade Tortoise Shell Acrylic Mahjong Racks and Pusher Set (rack) · 20" Tortoise Shell Scalloped Pusher · https://mahjongstudios.com/products/20-luxury-handmade-tortoise-shell-acrylic-mahjong-racks-and-pusher-set
+- **RESTOCK** Middle & Main Mahjong · White Lace Mahjong Rack and Pusher, Set of 4 (rack) · Default Title · https://www.middleandmainmahjong.com/products/blue-and-white-chinoiserie-mahjong-rack-and-pusher-set-of-4-copy
+- **RESTOCK** Middle & Main Mahjong · Blue and White Chinoiserie Mahjong Rack and Pusher, Set of 4 (rack) · Default Title · https://www.middleandmainmahjong.com/products/blue-and-white-chinoiserie-rack-set-of-4
+- **NEW** Splash of Color · The Gilded Dragon Dynasty Club Mahjong Mat Sleek Surface (mat) · https://splashofcolorco.com/products/the-gilded-dragon-dynasty-club-mahjong-mat-sleek-surface
+- **NEW** Splash of Color · Gilded Dynasty Extended Mahjong Rack Set of 4  Scalloped Magnetic Tile Pusher (rack) · https://splashofcolorco.com/products/gilded-dynasty-extended-mahjong-rack-set-of-4-scalloped-magnetic-tile-pusher
+- **NEW** Splash of Color · Gilded Dragon Dynasty Chinoiserie Chic American Mahjong Engraved Layered Tiles (tiles) · https://splashofcolorco.com/products/gilded-dragon-dynasty-chinoiserie-chic-american-mahjong-engraved-layered-tiles
+- **NEW** Splash of Color · Gilded & Glorious Chinoiserie Chic American Engraved Layered Mahjong Tiles (tiles) · https://splashofcolorco.com/products/gilded-glorious-chinoiserie-chic-american-engraved-layered-mahjong-tiles
 
-## Created/published in the last 7 days (tiles, mats, racks)
-- 2026-11-12 · Charleston Mahjong Club · The Cabana Club Edition™ (tiles) · available · PREORDER/COMING SOON · https://www.charlestonmahjongclub.com/products/the-hunt-club-edition™-copy
+## Created/published in the last 14 days (tiles, mats, racks)
+- 2026-11-12 · Britt Mills · Plumage Desk Mat (mat) · available · https://brittmillsdesign.com/products/plumage-desk-mat
+- 2026-11-12 · Britt Mills · Plumage Leatherette Mahjong Mat (mat) · available · https://brittmillsdesign.com/products/plumage-leatherette-mahjong-mat
+- 2026-11-12 · Britt Mills · Mallard Manor Leatherette Mahjong Mat (mat) · available · https://brittmillsdesign.com/products/mallard-manor-leatherette-mahjong-mat
+- 2026-11-12 · Charleston Mahjong Club · The Cabana Club Edition™ (tiles) · NOT available · PREORDER/COMING SOON · https://www.charlestonmahjongclub.com/products/the-hunt-club-edition™-copy
 - 2026-11-12 · YOLO Mahjong · Sage Green Crocodile Print Mahjong Mat (Shipped Rolled Up) (mat) · available · https://yolomahjong.com/products/sage-green-crocodile-print-mahjong-mat-shipped-rolled-up
 - 2026-11-12 · YOLO Mahjong · Ivory Crocodile Print Mahjong Mat (Shipped Rolled Up) (mat) · available · https://yolomahjong.com/products/ivory-crocodile-print-mahjong-mat-shipped-rolled-up
+- 2026-11-12 · Splash of Color · The Gilded Dragon Dynasty Club Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/the-gilded-dragon-dynasty-club-mahjong-mat-sleek-surface
+- 2026-11-12 · Splash of Color · Gilded Dynasty Extended Mahjong Rack Set of 4  Scalloped Magnetic Tile Pusher (rack) · available · https://splashofcolorco.com/products/gilded-dynasty-extended-mahjong-rack-set-of-4-scalloped-magnetic-tile-pusher
+- 2026-11-12 · Splash of Color · Gilded Dragon Dynasty Chinoiserie Chic American Mahjong Engraved Layered Tiles (tiles) · available · https://splashofcolorco.com/products/gilded-dragon-dynasty-chinoiserie-chic-american-mahjong-engraved-layered-tiles
+- 2026-11-12 · Splash of Color · Gilded & Glorious Chinoiserie Chic American Engraved Layered Mahjong Tiles (tiles) · available · https://splashofcolorco.com/products/gilded-glorious-chinoiserie-chic-american-engraved-layered-mahjong-tiles
 - 2026-11-11 · Mahjong Studios · Easter Morning - Christian Mahjong Tile Set (tiles) · available · https://mahjongstudios.com/products/easter-morning-christian-mahjong-tile-set
 - 2026-11-11 · Mahjong Studios · Some Bunny - Easter Mahjong Tile Set (tiles) · available · https://mahjongstudios.com/products/some-bunny-easter-mahjong-tile-set
 - 2026-11-11 · Let's Be Besties · Confetti Kaleidoscope OHBoN Studios Artist Mahjong Mat (mat) · available · https://letsbebesties.com/products/confetti-kaleidoscope-ohbon-studios-artist-mahjong-ma
@@ -30,7 +37,7 @@
 - 2026-11-11 · Mahj Pit · Birds of a Feather Mat (mat) · available · https://mahjpit.co/products/birds-of-a-feather
 - 2026-11-11 · Mahj Pit · LaMarie Mat (mat) · available · https://mahjpit.co/products/lamarie-mat
 - 2026-11-11 · Mahj Pit · Evergreen Mat (mat) · available · https://mahjpit.co/products/evergreen-mat
-- 2026-11-11 · Mahj Pit · Merry Merry Holiday Travel Tiles  - Limited Edition (travel tiles) · available · https://mahjpit.co/products/merry-merry-holiday-tiles-limited-edition
+- 2026-11-11 · Mahj Pit · Merry Merry Holiday Travel Tiles  - Limited Edition (travel tiles) · NOT available · https://mahjpit.co/products/merry-merry-holiday-tiles-limited-edition
 - 2026-11-11 · Mahj Pit · The Martha Tiles (tiles) · available · https://mahjpit.co/products/the-martha-tiles
 - 2026-11-11 · Noli June · Martini Mahjong Tile Set (tiles) · available · https://nolijune.com/products/martini-mahjong-tile-set
 - 2026-11-11 · Noli June · Sweetheart Mahjong Tile Set (tiles) · available · https://nolijune.com/products/sweetheart-mahjong-tile-set
@@ -331,11 +338,62 @@
 - 2026-11-05 · Middle & Main Mahjong · Clearwater Dockside Tiles- A Southern Lake Inspired Mahjong Set (tiles) · available · https://www.middleandmainmahjong.com/products/clearwater-dockside-tiles-a-southern-lake-inspired-mahjong-set
 - 2026-11-05 · Splash of Color · All I Want For Christmas Is Mahjong,Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/all-i-want-for-christmas-is-mahjong-mahjong-mat-sleek-surface
 - 2026-11-05 · Splash of Color · The Delmar Cocktail Club Modcentric Meowza 4Layer American Mahjong Tiles  Blue  Green (tiles) · available · https://splashofcolorco.com/products/the-delmar-cocktail-club-modcentric-meowza-4layer-american-mahjong-tiles-blue-green
+- 2026-11-04 · YOLO Mahjong · Leatherette Mat Slip Case – Burgundy Golden (mat) · available · https://yolomahjong.com/products/yolo-mahjong-leatherette-mat-slip-case-burgundy-golden
+- 2026-11-04 · Sweet Jojo Mahjong · Blue Tiger Collection Mahjong Mat for Table - Shipped Rolled (mat) · available · PREORDER/COMING SOON · https://sweetjojomahjong.com/products/mahjmat-tig-bu-mahjong-mat-for-table
+- 2026-11-04 · Sweet Jojo Mahjong · Pink Masquerade Collection Mahjong Mat for Table - Shipped Rolled (mat) · available · PREORDER/COMING SOON · https://sweetjojomahjong.com/products/mahjmat-masquerade-pk-mahjong-mat-for-table
+- 2026-11-04 · Splash of Color · Tuscan Tapestry Earthy Wine Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/tuscan-tapestry-earhy-wine-mahjong-mat-sleek-surface
+- 2026-11-04 · Splash of Color · Tuscan Tapestry Earthy Wine Botanical American Engraved  Mahjong Tiles (tiles) · available · https://splashofcolorco.com/products/tuscan-tapestry-earthy-wine-botanical-american-engraved-mahjong-tiles
+- 2026-11-04 · Splash of Color · The Kitschmas Mail Mahj Club Preppy Pink Christmas Mahjong Tiles (tiles) · available · https://splashofcolorco.com/products/the-kitschmas-mail-mahj-club-preppy-pink-christmas-mahjong-tiles
+- 2026-11-04 · Splash of Color · Kitschmas Mahj Mail Mahjong Christmas Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/kitschmas-mahj-mail-mahjong-christmas-mat-sleek-surface
+- 2026-11-03 · Oh My Mahjong · Lotus Cove Mat in Tube (mat) · NOT available · https://www.ohmymahjong.com/products/lotus-cove-mat-in-tube
+- 2026-11-03 · Oh My Mahjong · Juniper Mahjong Tiles (tiles) · NOT available · https://www.ohmymahjong.com/products/juniper-mahjong-tiles
+- 2026-11-03 · Bespoke Mahjong · COMING SOON - Mahjong It's a Vibe - GLITTER GLOW RED (tiles) · NOT available · PREORDER/COMING SOON · https://www.bespokemahjong.com/products/holiday-mahjong-its-a-vibe-glitter-glow-tiles
+- 2026-11-03 · Bespoke Mahjong · COMING SOON - Mahjong It's a Vibe - GLITTER GLOW GREEN (tiles) · NOT available · PREORDER/COMING SOON · https://www.bespokemahjong.com/products/coming-this-november-mahjong-its-a-vibe-glitter-glow-green
+- 2026-11-03 · Miss Mahjong · Garden Party Travel Mat 21"x21" (travel mat) · available · https://missmahjong.com/products/garden-party-travel-mat-21x21
+- 2026-11-03 · Miss Mahjong · Cherry Blossom Travel Mat 21"x21" (travel mat) · available · https://missmahjong.com/products/cherry-blossom-travel-mat-21x21
+- 2026-11-03 · Let's Be Besties · Tiger Stripes OHBoN Studios Artist Mahjong Mat (mat) · available · https://letsbebesties.com/products/tiger-stripes-ohbon-studios-artist-mahjong-mat
+- 2026-11-03 · Let's Be Besties · Spinning Dreidel OHBoN Studios Artist Mahjong Mat (mat) · available · https://letsbebesties.com/products/spinning-dreidel-ohbon-studios-artist-mahjong-mat
+- 2026-11-03 · Let's Be Besties · Champagne Bubbles Mahjong Mat (mat) · available · https://letsbebesties.com/products/champange-bubbles-mahjong-mat
+- 2026-11-03 · Let's Be Besties · Mid Century Floral Mahjong Mat (mat) · available · https://letsbebesties.com/products/mid-century-floral-mahjong-mat
+- 2026-11-03 · Let's Be Besties · Pink Pizzazz Mahjong Mat (mat) · available · https://letsbebesties.com/products/pink-pizzazz-mahjong-mat
+- 2026-11-03 · Let's Be Besties · Gatsby Glow Mahjong Mat (mat) · available · https://letsbebesties.com/products/gatsby-glow-mahjong-mat
+- 2026-11-03 · Let's Be Besties · Mad for Plaid Mahjong Mat (mat) · available · https://letsbebesties.com/products/mad-for-plaid-mahjong-mat
+- 2026-11-03 · Let's Be Besties · Disco Dot with Simple Middle Mahjong Mat (mat) · available · https://letsbebesties.com/products/disco-dot-with-simple-middle-mahjong-mat
+- 2026-11-03 · YOLO Mahjong · Leatherette Mat Slip Case – Dusty Blush (mat) · available · https://yolomahjong.com/products/mahjong-slip-case-1
+- 2026-11-03 · YOLO Mahjong · Leatherette Mat Slip Case –  Champagne Beige (mat) · available · https://yolomahjong.com/products/mahjong-slip-case
+- 2026-11-03 · Splash of Color · Palm Beach Harlequin Chinoiserie  Engraved American Mahjong Tiles And Carry Tote (tiles) · available · https://splashofcolorco.com/products/palm-beach-harlequin-chinoiserie-engraved-american-mahjong-tiles-and-carry-tote
+- 2026-11-02 · Anders Ruff · Puppy Love Solo Play Mahjong Mat (travel mat) · available · PREORDER/COMING SOON · https://shop.andersruff.com/products/puppy-love-solo-play-mahjong-mat
+- 2026-11-02 · Bespoke Mahjong · SUNSHINE GLOW (tiles) · available · https://www.bespokemahjong.com/products/sunshineglow
+- 2026-11-02 · Britt Mills · Isla Leatherette Mahjong Mat (mat) · available · https://brittmillsdesign.com/products/isla-leatherette-mahjong-mat
+- 2026-11-01 · Let's Be Besties · Camellia Kaleidoscope OHBoN Studios Artist Mahjong Mat (mat) · available · https://letsbebesties.com/products/camellia-kaleidoscope-artist-collab-leatherette-mahjong-mat
+- 2026-11-01 · Let's Be Besties · Electric ZigZag Mahjong Mat (mat) · available · https://letsbebesties.com/products/electric-zigzag-mahjong-mat
+- 2026-11-01 · Let's Be Besties · Floral Pink Watercolor Mahjong Mat (mat) · available · https://letsbebesties.com/products/floral-pink-watercolor-travel-mahjong-mat-20-9-x-20-9-inch
+- 2026-11-01 · Let's Be Besties · Christmas Lights Mahjong Mat (mat) · available · https://letsbebesties.com/products/christmas-lights-mahjong-mat
+- 2026-11-01 · Maison Mahj · House Line No. 1 Tile Set (tiles) · available · https://maisonmahj.com/products/house-line-no-1-tile-set
+- 2026-11-01 · Splash of Color · The Kitschmas Mahj Club Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/the-kitschmas-mahj-club-mahjong-mat-sleek-surface
+- 2026-11-01 · Splash of Color · The Kitschmas Mahj Club Christmas Cardinal American Engraved Mahjong Tiles (tiles) · available · https://splashofcolorco.com/products/the-kitschmas-mahj-club-christmas-cardinal-american-engraved-mahjong-tiles
+- 2026-11-01 · Splash of Color · Jolly Nostalgic Santa Bam Bird Christmas Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/jolly-nostalgic-santa-bam-bird-christmas-mahjong-mat-sleek-surface
+- 2026-10-31 · Mahjong Register · Solid Wood Mahjong Racks | 20" Magnetic Pusher | Set of 4 (rack) · available · https://mahjongregister.com/products/solid-wood-mahjong-racks-20-magnetic-pusher-set-of-4-copy
+- 2026-10-31 · Mahjong Register · Solid Wood Mahjong Racks | 20" Magnetic Pusher | Set of 4 (rack) · available · https://mahjongregister.com/products/solid-wood-mahjong-racks-magnetic-pusher-set-of-4
+- 2026-10-31 · Let's Be Besties · Tropicana Mahjong Mat (mat) · available · https://letsbebesties.com/products/tropicana-mahjong-mat
+- 2026-10-30 · Britt Mills · Calista Leatherette Mahjong Mat (mat) · available · https://brittmillsdesign.com/products/calista-leatherette-mahjong-mat
+- 2026-10-30 · Britt Mills · Colorful Chinoiserie Leatherette Mahjong Mat (mat) · available · https://brittmillsdesign.com/products/colorful-chinoiserie-leatherette-mahjong-mat
+- 2026-10-30 · Britt Mills · Daphne Leatherette Mahjong Mat (mat) · available · https://brittmillsdesign.com/products/daphne-leatherette-mahjong-mat
+- 2026-10-30 · Britt Mills · Aria Leatherette Mahjong Mat (mat) · available · https://brittmillsdesign.com/products/aria-leatherette-mahjong-mat
+- 2026-10-30 · Britt Mills · Emerald Mirage Neoprene Mahjong Mat (mat) · NOT available · https://brittmillsdesign.com/products/emerald-mirage-neoprene-mahjong-mat
+- 2026-10-30 · Mahj Mood · Luxe Racks: Jade Acrylic (4) (rack) · NOT available · https://mahjmood.com/products/luxe-racks-jade-acrylic
+- 2026-10-30 · Let's Be Besties · Vibrant Vortex Open Middle Mahjong Mat (mat) · available · https://letsbebesties.com/products/vibrant-vortex-open-middle-mahjong-mat
+- 2026-10-30 · Let's Be Besties · Butterscotch Floral Simple Middle Mahjong Mat (mat) · available · https://letsbebesties.com/products/butterscotch-floral-simple-middle-mahjong-mat
+- 2026-10-30 · Let's Be Besties · Butterscotch Floral Mahjong Mat (mat) · available · https://letsbebesties.com/products/butterscotch-floral-mahjong-mat
+- 2026-10-30 · Splash of Color · Humorous Mahjong Leopard Print Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/humorous-mahjong-leopard-print-mahjong-mat-sleek-surface
+- 2026-10-29 · Oh My Mahjong · Poppins Mat in Tube (mat) · available · https://www.ohmymahjong.com/products/poppins-mat-in-tube
+- 2026-10-29 · Splash of Color · The Mod Squad Bird Club Modern Folk American Mahjong Tiles  4Layer Engraved Tiles (tiles) · available · https://splashofcolorco.com/products/the-mod-squad-bird-club-modern-folk-american-mahjong-tiles-4layer-engraved-tiles
+- 2026-10-29 · Splash of Color · The Mod Squad Bird Club Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/the-mod-squad-bird-club-mahjong-mat-sleek-surface
 
 ## Stores
 - amahjline.com: ok 33 products
 - birdandbamboo.com: ok 59 products
-- brittmillsdesign.com: ok 718 products
+- brittmillsdesign.com: ok 725 products
 - letsbebesties.com: ok 744 products
 - mahjandvine.com: ok 21 products
 - mahjmood.com: ok 53 products
@@ -352,15 +410,15 @@
 - peacelovemahjong.com: ok 102 products
 - shop.andersruff.com: ok 161 products
 - soireeallday.co: not checkable (not Shopify or blocked)
-- splashofcolorco.com: ok 2184 products
+- splashofcolorco.com: ok 2190 products
 - sundaymahjong.com: ok 87 products
 - sweetjojomahjong.com: ok 89 products
 - themahjongpress.com: ok 7 products
 - theroyalmahjongsociety.com: ok 50 products
 - tigredetartan.com: ok 127 products
-- www.bambirdboutique.com: ok 117 products
+- www.bambirdboutique.com: ok 114 products
 - www.bamletsmahjong.com: ok 68 products
-- www.bespokemahjong.com: ok 334 products
+- www.bespokemahjong.com: ok 332 products
 - www.charlestonmahjongclub.com: ok 72 products
 - www.fait-a-main.com: ok 44 products
 - www.hiphipmahjong.com: ok 72 products

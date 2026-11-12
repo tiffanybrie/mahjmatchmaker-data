@@ -145,6 +145,14 @@
    "status": "pending tile photo + walls",
    "source": "Tiffany Nov 11 1:30pm: 'Is it in Find Your Mat-ch? Are all their sets?' (none were)",
    "note": "partner; code = free shipping on tile sets; sold-out sets still go in (library)"
+  },
+  {
+   "added": "2026-11-12",
+   "brand": "(12 partners)",
+   "name": "38 partner items (24 mats + 14 tile sets: Noli June 13, Maison Mahj 4, Mahjong Register 4, Mahj Pit 3, YOLO 3, Britt Mills 2, Mahj Mood 2, Wren 2, YMI 2, Middle & Main 1, Miss Mahjong 1, Soirée 1) staged in config/fym-partner-adds-nov12-coverage.json with photo, colours, own-code link; 11 flagged hidden (packaging/close-up/too far/no photo)",
+   "kind": "mixed",
+   "status": "staged; tile sets need back colour + walls; ships in next small FYM release",
+   "source": "partner coverage owner"
   }
  ]
 }

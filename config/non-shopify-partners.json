@@ -12,27 +12,27 @@
    "platform": "Squarespace",
    "method": "squarespace",
    "collections": [
-    "/shop"
+    "/mahjong"
    ],
-   "note": "Squarespace rate-limits our cloud fetch (429); Chrome fallback"
+   "note": "Squarespace; cloud fetch 429. Chrome path confirmed Nov 12: /mahjong?format=json (9 full mats + 3 travel + totes/clutches). /shop redirects to /mahjong."
   },
   "soireeallday.co": {
    "brand": "Soirée All Day",
    "platform": "Squarespace",
    "method": "squarespace",
    "collections": [
-    "/shop"
+    "/the-mahjong-collection/mahjong-mats"
    ],
-   "note": "collection path to confirm in Chrome; 429 from cloud"
+   "note": "Squarespace; cloud 429. Chrome path confirmed Nov 12: /the-mahjong-collection/mahjong-mats?format=json (12 mats); /the-mahjong-collection has stationery too. /shop is 404."
   },
   "wrenmats.com": {
    "brand": "Wren Mats",
    "platform": "Squarespace",
    "method": "squarespace",
    "collections": [
-    "/shop"
+    "/mats"
    ],
-   "note": "collection path to confirm in Chrome; 429 from cloud"
+   "note": "Squarespace; cloud 429. Chrome path confirmed Nov 12: /mats?format=json (31 items, ~26 mats). /shop is 404."
   }
  }
 }
