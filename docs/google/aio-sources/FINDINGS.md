@@ -4,6 +4,22 @@ RULES (Tiffany Nov 12 11:37am): count MJTI out (it's the That's It group's only 
 codes in Mah Jongg, That's It! (admin deletes). October sales movement for a brand = Google. Do NOT conclude
 "just post and we'll be picked": find out WHY these specific posts are picked over the many that aren't (ours too).
 
+## Nov 12 ~11:45am: WHY Lucky Finds (LUCKYM) and not us? (Planoly Business Discovery, last 50 posts each)
+| | @lucky_finds_for_mahjong_lovers | @mahjmatchmaker |
+|---|---|---|
+| Followers | 1,120 | 509 |
+| Total posts | 2,092 | 54 |
+| Last 50 posts span | 9 days (Nov 3-12), ~5.5/day | 10 months; ~40 posted in one batch Oct 20 |
+| Reels in last 50 | 45 | 7 |
+| Median likes | 1 | 0 |
+| Caption starts with the brand name | 44 of 50 ("Bam Bird Boutique's MCM Mahjong Tile Set...") | 3 of 50 (emoji, then "Talulah Tiles by Oh My Mahjong") |
+| Code tied to the brand in the caption | "Use code LUCKYM" right after the brand + product | "Code MAHJMATCH saves at our partner brands" (generic) |
+| Brands follow the account | followed by bambirdboutique, mahjongrowandco + 170 more | ? |
+Engagement is NOT the reason (both ~0-1 likes). The cited Bam Bird reel is from Sep 28 and still cited = age/staying power.
+Differences that could matter (to test, not assume): volume + every drop gets its own post, reels (video) vs images,
+caption word order (brand possessive + full product name + product type first, code right after, @brand tag),
+brand-follows. Reddit: the browser tool blocks reddit.com, so Claude can't read or post there.
+
 ## Nov 12 2026 (OMM + Bam Bird sources read live; Oct 30-Nov 11 code history in codes-by-brand-oct30-nov11.txt)
 1. Sources are SOCIAL posts, not web pages: IG reels, FB PAGE posts/videos, FB group threads (Mah Jongg, That's It!),
    Reddit, YouTube Shorts, Instagram /popular/ topic pages, one competitor codes page (missymahjong.com). Our brand
