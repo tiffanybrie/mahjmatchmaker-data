@@ -36,7 +36,7 @@ gaps = []  # (kind, key, brand, name, missing)
 # "not every item needs a price, but if it doesn't have a price, it should be retired". So price is only required for
 # items NOT marked retired or sold out.
 SO = TV.get('so', {}) or {}
-def retired(k, it): return bool(it.get('oos') or k in SO or 'retired' in str(it.get('n') or it.get('name') or '').lower() or str(it.get('st') or '').lower() in ('retired', 'sold out'))
+def retired(k, it): return bool(it.get('rt') is True or it.get('oos') or k in SO or 'retired' in str(it.get('n') or it.get('name') or '').lower() or str(it.get('st') or '').lower() in ('retired', 'sold out'))
 for s in D['sets']:
     t = T.get(s['tile'], {})
     if s.get('hid') or t.get('hid'): continue
