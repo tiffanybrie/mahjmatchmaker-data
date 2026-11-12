@@ -20,13 +20,15 @@ Chrome; close every tab you open, even on errors.
 
 REPOSTS ARE HERS (Tiffany Nov 12 7:30am): Claude NEVER reposts and never drafts repost notes. She reposts from her phone
 and adds her own "Add a thought" bubble with our code (the bubble shows on the original post in followers' feeds; other
-brands do the same, so it's normal). No code in the bubble for brands that asked: Tigre de Tartan. The daily list may
-only point out "worth a repost" posts in one line (brand + what it is), no note, no approval needed.
+brands do the same, so it's normal). No code in the bubble for brands that asked: Tigre de Tartan. The daily list
+points out "worth a repost" posts (brand + what it is) WITH a suggested bubble note she can copy (Tiffany 7:31am: "you
+can put those notes in there"). She expects to turn the list off soon: her Favorites feed now shows the partners, so
+she reposts straight from it. When she says so, stop the list (likes keep going).
 
 FORMAT (Tiffany Nov 12 7:26am, overrides the doc/table/link wording above AND the task prompt): NO Claude Doc, NO table,
 NO links to posts. The whole list goes straight into ONE chat message (SendUserMessage, which pushes to her phone):
 one long scrollable list, each item = brand, a one-line summary of the post in words, the action (comment, or "worth a repost" for her to do),
-and the exact comment (comments only; never a repost note). She scrolls, reads, and replies with anything NOT to send (or edits). Post only
+and the exact comment, or the suggested repost bubble note for her to copy. She scrolls, reads, and replies with anything NOT to send (or edits). Post only
 after she replies (her reply is the approval for everything she didn't flag); no reply = nothing posted, items roll to
 tomorrow. "I don't need another Planoly type situation."
 
