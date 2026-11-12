@@ -29,3 +29,11 @@ one long scrollable list, each item = brand, a one-line summary of the post in w
 and the exact comment or repost note. She scrolls, reads, and replies with anything NOT to send (or edits). Post only
 after she replies (her reply is the approval for everything she didn't flag); no reply = nothing posted, items roll to
 tomorrow. "I don't need another Planoly type situation."
+
+CHROME CLOSED (Tiffany Nov 12 7:28am): the task runs at 2:23pm, 5:23pm and 8:23pm ET. Each run FIRST checks
+config/ig-engagement-log.json: if today's list was already sent (or today's likes done), stop quietly. Then check
+Chrome (list_connected_browsers / tabs_context_mcp). If Chrome is closed: send her ONE short message the first time it
+happens that day: "Chrome's closed, so today's Instagram likes and list didn't happen. I'll try again at <next time>, or
+reply 'it's open, do it now'." (record "chrome_closed_notified": <date> in the log so later runs don't repeat it). If she
+replies in that chat, run the whole job right then. The 8:23pm run, if Chrome is still closed, sends a last one-liner:
+"Instagram skipped today (Chrome closed all day)."
