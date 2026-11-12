@@ -4,6 +4,9 @@
 
 Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cleanup (6:47am ET) reads it. Rules: CLAUDE.md ("THE DESK"), docs/CHATS.md. During the day, when an agent stops, Chrome drops or a QA stalls, add the item here right away with its next step.
 
+- OPS (Thu 11/12 sweep 12:58pm, needs Chrome + her yes): album launch email = TEMPLATE now (her 10:59am). On her yes in HQ need juniper-drop-2026-11-11: open Squarespace draft 6af357e97ff74f68f862d0ee, change line 1 to "The latest Oh My Mahjong set, Juniper, is here! 💚" and subject to "The Juniper album is live 💚" (page https://claude.ai/artifact/6vTx8YprmPvDd52YhyGorJ), send to All subscribers, check Sent first; mark template `new-albums` APPROVED in docs/EMAIL.md so every later album launch sends without asking. No yes = nothing sends.
+- Main (her 11:04am): Work With page v3 is HELD (no hidden upload). After Brand Watch is fully set up, revise: partners FEATURED in FYM (no "we add non-partners", no "only partners"), New Releases & Restocks = we track + share their promotions with a Brand Watch link, drop the old Partner Brands card, use a few accurate brand tickers; then show her the revised draft.
+- RULE (her Nov 12 11:00am): never send her to a repo file path in HQ; put the actual words or picture in the card.
 - OPS (launch watch Thu 11/12 9:05am): search Tiles & Tablescapes for Mahjong Studios Easter Morning + Some Bunny (new Easter tile sets; no colour card / TNT rec yet, so no swipe book).
 - OPS (launch watch Thu 11/12 9:05am): copy assets/launches/mahjongstudios-easter-morning-christian-mahjong-tile-set/ and assets/launches/mahjongstudios-some-bunny-easter-mahjong-tile-set/ to Dropbox /Mahj Matchmaker Albums/New releases/Mahjong Studios/ today.
 
