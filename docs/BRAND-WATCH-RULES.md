@@ -2,7 +2,7 @@
 "I'm not planning on posting all of these things in the group live as they go... You're basically bombarding me with yeses. Please don't do that."
 - The watch CATALOGS: Brand Watch tab + Brand news sheet + release calendar + MATCH-INBOX/FYM queue. That's it.
 - NO per-item Facebook group post drafts, NO "group post ready for your yes" messages, NO pushes for NOW items, NO "Do:" / "I did it" lines (brand_watch_hq.py strips every `action`; never add one back).
-- The group gets the week through the Monday codes post only, unless she asks for a specific item.
+- The group gets the week through the Monday codes post only (links in comments; docs/FB-GROUP-STRATEGY.md). No one-off launch posts.
 - Past dated drops leave "this week" automatically.
 # 0000. BURY MAHJONG STUDIOS + SPLASH OF COLOR (Tiffany Nov 12 10:27am, BINDING)
 "Bury them at the very bottom. They rank always last. Don't ever put them up front and center." brand_watch_hq.py moves every Mahjong Studios / Splash of Color line out of this week / just dropped / coming soon / sales to the very END of the last list. Same in any brand news list, sheet order or summary: they go last.
