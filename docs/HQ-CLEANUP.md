@@ -144,3 +144,6 @@ Note in the HQ log one line: "ShopMy sync: PASS (N mats)" or what was staged.
 
 ## Nov 11 rule: DESK rewrites never drop open items (Tiffany 3:01pm)
 The Nov 7 rewrite deleted "| Fait à Main code | Main | MAHJMATCH still not applicable at cart. | Watch |" with nothing done. Every desk cleanup: write the new DESK, commit locally, run `python3 scripts/checks/desk_drop_check.py --commit HEAD`, and for every line it lists either (a) put it back / append it to docs/OVERDUE.md with owner + next step + date, or (b) add the DONE proof line to docs/ANSWERS.md. Only then push. Hand-checked exceptions: config/desk-drop-ok.json with the proof. Statuses "Watch", "Ask once", "later" are banned.
+
+## HQ layout (Tiffany Nov 12 10:48-10:50am, v59)
+Tabs in her order: **Now** (always opens first) → Money → Google → Affiliates → Brand Watch → Albums → Social → Find Your Match → ShopMy → SEO → Launch → Partner feedback → My notes → Done → Parking lot. The old "Needs you" tab is gone: everything that needs her is the FIRST thing on Now, money items (needs/amounts-*, screenshots, commission) always on top, then red / yellow / green. "Don't make me check every tab." Never add a tab that holds her to-dos anywhere but Now.
