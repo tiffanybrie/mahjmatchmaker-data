@@ -1,5 +1,9 @@
 # What the AI Overview pulls codes from (running findings; newest first)
 
+RULES (Tiffany Nov 12 11:37am): count MJTI out (it's the That's It group's only allowed code). Never reply or post
+codes in Mah Jongg, That's It! (admin deletes). October sales movement for a brand = Google. Do NOT conclude
+"just post and we'll be picked": find out WHY these specific posts are picked over the many that aren't (ours too).
+
 ## Nov 12 2026 (OMM + Bam Bird sources read live; Oct 30-Nov 11 code history in codes-by-brand-oct30-nov11.txt)
 1. Sources are SOCIAL posts, not web pages: IG reels, FB PAGE posts/videos, FB group threads (Mah Jongg, That's It!),
    Reddit, YouTube Shorts, Instagram /popular/ topic pages, one competitor codes page (missymahjong.com). Our brand
