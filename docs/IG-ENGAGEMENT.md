@@ -12,7 +12,7 @@ exactly what she approved, and logs it. No answer = nothing posted (roll the goo
 
 Voice: warm, short, a person not a brand ("Obsessed with this colorway!" / "These would be so pretty on a cream mat"),
 no ™, no links, no codes, no hashtags, never mention Find Your Mat-ch unless she adds it. 3-6 items a day max.
-Never comment on or repost Mahjong Row & Co., Yellow Mountain Imports (off social), Paige Spearin x TdT.
+Never COMMENT on or REPOST Mahjong Row & Co., Yellow Mountain Imports (off social), Paige Spearin x TdT. LIKES are fine on any of them when their posts come up (Tiffany Nov 12 7:25am: "You can like Yellow Mountain... That doesn't bother me. You don't have to go looking for it. It pops up. You can heart it"). Where this file and the scheduled task's prompt differ, this file wins.
 
 Safety: modest volume (likes: newest posts only, pause 3-8 s between actions; stop at the first "Try again later" /
 action block and log it). Never type a password, never solve a captcha, never DM, never tap buy links. One driver in
