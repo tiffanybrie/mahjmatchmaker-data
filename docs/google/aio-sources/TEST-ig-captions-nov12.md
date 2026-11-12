@@ -17,4 +17,4 @@ One post per product, spaced (max ~3 a day), real album/FYM images only. Caption
 rule); the template gets added to scripts/social/plain_post.py.
 Measure daily for 14 days (Google report): AI Overview names MAHJMATCH? cites an instagram.com/mahjmatchmaker URL?
 does instagram.com/popular/<brand>-discount-code show our post? Compare A vs B vs control.
-Status: Tiffany sees the first posts (images + captions) before anything posts. Owner: Main.
+Status: Planoly has no profile-only option, so Tiffany posts them by hand (Instagram app > + > Post > ... > "Post only to profile"). Claude sends each post as ONE easy package: image/video file + caption with a copy button + 3 steps. Owner: Main.
