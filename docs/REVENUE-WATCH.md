@@ -11,6 +11,12 @@ brands. So if one of those brands falls off, it's a really big deal."
   so a 51% weekly drop (148 orders / $3,388 → 84 / $1,661) never tripped it.
 - "Our code shows in Google" was treated as "fine". It isn't: code named + sales gone = something ELSE is wrong.
 
+## DAY ALARM is now real code (Nov 12 2026)
+Mon Nov 9 closed at $94 / 7 orders vs $224 / 12 the Monday before and nothing fired: the "<60% of the same weekday
+last week" alarm below was written here but never coded, and the day sat partial with '?' amounts. brand_watch.py now
+prints `DAY ALARM:` for the end day by ORDERS and dollars (unknown amounts can't hide it; holidays skip / compare two
+weeks back). Any DAY ALARM goes to her the same day with the likely cause, like a brand alarm.
+
 ## The daily check (morning report runs it; any chat can run it)
 1. Export HQ money docs: ArtifactData list collection `money` out_dir `<tmp>`; then
    `python3 scripts/money/brand_watch.py <tmp> --date <yesterday>`.
