@@ -4,7 +4,7 @@ STANDING YES: "like partner brands' new posts every day." Claude likes every NEW
 (handles in config/social/ig-handles.json for brands on the partner list) from @mahjmatchmaker in her Chrome. No other
 account, no old posts, no unliking. Log every like in config/ig-engagement-log.json.
 
-EVERYTHING ELSE NEEDS HER YES, from a DAILY LIST: comments, reposts (web has a Repost button), follows of non-partners,
+EVERYTHING ELSE NEEDS HER YES, from a DAILY LIST (FORMAT CHANGED Tiffany Nov 12 7:26am, see below): comments, reposts (web has a Repost button), follows of non-partners,
 replies. Each run builds ONE Claude Doc "Instagram today <Mon M/D>" (title + lead + one table: brand | post link | what it
 is | suggested action (comment / repost) | draft comment in her voice), pushes a notification to her phone with the doc
 link, and waits. She answers in that run's chat ("yes all", "yes 1 and 3, change 2 to ..."); only then the run posts
@@ -22,3 +22,10 @@ Reposts + our code (Tiffany Nov 12 7:20am): a repost may carry a short note with
 that's how a repost earns. EXCEPT Tigre de Tartan: they asked us not to repost with our code (it shows up tied to their
 content). Rare brands like that: list them here. No-code-on-repost: Tigre de Tartan. Draft each repost's note in the
 daily list so she approves the wording.
+
+FORMAT (Tiffany Nov 12 7:26am, overrides the doc/table/link wording above AND the task prompt): NO Claude Doc, NO table,
+NO links to posts. The whole list goes straight into ONE chat message (SendUserMessage, which pushes to her phone):
+one long scrollable list, each item = brand, a one-line summary of the post in words, the action (comment / repost),
+and the exact comment or repost note. She scrolls, reads, and replies with anything NOT to send (or edits). Post only
+after she replies (her reply is the approval for everything she didn't flag); no reply = nothing posted, items roll to
+tomorrow. "I don't need another Planoly type situation."
