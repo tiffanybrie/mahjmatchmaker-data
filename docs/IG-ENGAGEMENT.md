@@ -18,15 +18,15 @@ Safety: modest volume (likes: newest posts only, pause 3-8 s between actions; st
 action block and log it). Never type a password, never solve a captcha, never DM, never tap buy links. One driver in
 Chrome; close every tab you open, even on errors.
 
-Reposts + our code (Tiffany Nov 12 7:20am): a repost may carry a short note with our code ("code MAHJMATCH saves you X%"),
-that's how a repost earns. EXCEPT Tigre de Tartan: they asked us not to repost with our code (it shows up tied to their
-content). Rare brands like that: list them here. No-code-on-repost: Tigre de Tartan. Draft each repost's note in the
-daily list so she approves the wording.
+REPOSTS ARE HERS (Tiffany Nov 12 7:30am): Claude NEVER reposts and never drafts repost notes. She reposts from her phone
+and adds her own "Add a thought" bubble with our code (the bubble shows on the original post in followers' feeds; other
+brands do the same, so it's normal). No code in the bubble for brands that asked: Tigre de Tartan. The daily list may
+only point out "worth a repost" posts in one line (brand + what it is), no note, no approval needed.
 
 FORMAT (Tiffany Nov 12 7:26am, overrides the doc/table/link wording above AND the task prompt): NO Claude Doc, NO table,
 NO links to posts. The whole list goes straight into ONE chat message (SendUserMessage, which pushes to her phone):
-one long scrollable list, each item = brand, a one-line summary of the post in words, the action (comment / repost),
-and the exact comment or repost note. She scrolls, reads, and replies with anything NOT to send (or edits). Post only
+one long scrollable list, each item = brand, a one-line summary of the post in words, the action (comment, or "worth a repost" for her to do),
+and the exact comment (comments only; never a repost note). She scrolls, reads, and replies with anything NOT to send (or edits). Post only
 after she replies (her reply is the approval for everything she didn't flag); no reply = nothing posted, items roll to
 tomorrow. "I don't need another Planoly type situation."
 
