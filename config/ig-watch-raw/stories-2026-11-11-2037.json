@@ -1,0 +1,73 @@
+{
+ "run": "2026-11-11T20:37 ET stories check (ran 20:40-20:52)",
+ "handles_checked": [
+  "ohmymahjong",
+  "bambirdboutique",
+  "missmahjongofficial",
+  "myfairmahjong",
+  "bespoke_mahjong",
+  "andersruffdesignco",
+  "peacelovemahjong",
+  "bird_and_bamboo",
+  "mahj_mood",
+  "minimahjer",
+  "charlestonmahjongclub"
+ ],
+ "extra_dated_partners": "none added: coming_soon dated items within 7 days are sales (PLM BF 11/16, hidden) or already-live brands in tier A",
+ "with_stories": [
+  "ohmymahjong",
+  "bambirdboutique",
+  "missmahjongofficial",
+  "myfairmahjong",
+  "bespoke_mahjong",
+  "andersruffdesignco",
+  "peacelovemahjong",
+  "mahj_mood",
+  "minimahjer",
+  "charlestonmahjongclub"
+ ],
+ "frames_read": {
+  "ohmymahjong": 10,
+  "bambirdboutique": 7,
+  "missmahjongofficial": 1,
+  "myfairmahjong": 5,
+  "bespoke_mahjong": 5,
+  "andersruffdesignco": 6,
+  "peacelovemahjong": 2,
+  "mahj_mood": 6,
+  "minimahjer": 6,
+  "charlestonmahjongclub": 3
+ },
+ "frames_note": "Bam Bird frame 3 (event video) did not load. Frame stepping by screenshot; Instagram web API refused JSON reads.",
+ "finds": [
+  {
+   "brand": "Mahj Mood",
+   "what": "Last 4 sets of Grey Marble Luxe Racks",
+   "urgency": "NOW",
+   "curated": "just_dropped",
+   "source": "IG story"
+  },
+  {
+   "brand": "Mahj Mood",
+   "what": "Secret Garden mat retiring, final few",
+   "urgency": "NOW",
+   "curated": "just_dropped",
+   "source": "IG story"
+  }
+ ],
+ "already_logged": [
+  "OMM Juniper tiles + Lotus Cove mat live (countdown frame + 'Hello Juniper' shop frames) - this_week",
+  "PLM red racks back in stock - just_dropped 13:55",
+  "PLM cane tile clutch 'New Drop' - this_week",
+  "Mahj Mood BOGO mat flash sale - sales (hidden); story says it runs 11/11 8am CST to 11/12 8pm CST"
+ ],
+ "skipped": [
+  "Bespoke Black Friday Early Access sign-up (countdown ~23h at 10h ago -> opens ~Thu 11/12 mid-morning ET): social-sourced sale, hidden per rules; not logged",
+  "OMM 'American Mahjong for Babies' book now on website: book, not tiles/mat/rack",
+  "Charleston Mahjong Club 'On our way to Boca for the launch with @otg247': no product named, possibly in-person event; next run should re-check",
+  "Customer reposts / events: Miss Mahjong, My Fair Mahjong, Anders Ruff, Mini Mahjer, Bam Bird (Fort Worth giant mahjong, Bandana Mats link = existing product), Bespoke NYT crossword"
+ ],
+ "no_story": [
+  "bird_and_bamboo"
+ ]
+}
