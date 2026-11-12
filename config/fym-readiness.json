@@ -1,14 +1,14 @@
 {
  "_about": "Written by scripts/checks/fym_all_or_nothing.py on every FYM build. Per brand: visible items missing a view/filter.",
  "fym_version": "",
- "total_gaps": 146,
+ "total_gaps": 109,
  "new_gaps": 0,
  "brands": {
   "Amahj": {
    "tile set table-view walls": 3
   },
   "Amazon": {
-   "mat price": 28
+   "mat price (or mark retired)": 28
   },
   "Anders Ruff": {
    "tile set table-view walls": 1
@@ -18,34 +18,34 @@
   },
   "Bespoke Mahjong": {
    "tile set table-view walls": 1,
-   "mat price": 5
+   "mat price (or mark retired)": 5
   },
   "Bird & Bamboo": {
    "tile set table-view walls": 2
   },
   "Birdsong Mahjong": {
-   "mat price": 1
+   "mat price (or mark retired)": 1
   },
   "Case-Mate": {
-   "mat price": 4
+   "mat price (or mark retired)": 4
   },
   "Fait à Main": {
-   "mat price": 1
+   "mat price (or mark retired)": 1
   },
   "Golden Pond Mahjong": {
-   "mat price": 1
+   "mat price (or mark retired)": 1
   },
   "Hutch & Nook": {
-   "mat price": 1
+   "mat price (or mark retired)": 1
   },
   "Let's Be Besties": {
-   "mat price": 8
+   "mat price (or mark retired)": 8
   },
   "Mahj & Moon": {
-   "mat price": 5
+   "mat price (or mark retired)": 5
   },
   "Mahj Mood": {
-   "mat price": 1
+   "mat price (or mark retired)": 1
   },
   "Mahj Pit": {
    "tile set table-view walls": 3
@@ -60,38 +60,38 @@
    "tile set table-view walls": 2
   },
   "Oh My Mahjong": {
-   "tile set price": 9,
-   "mat price": 32
+   "tile set price (or mark retired)": 1,
+   "mat price (or mark retired)": 7
   },
   "Rebecca Illustrated": {
-   "mat price": 7
+   "mat price (or mark retired)": 7
   },
   "Southern Living": {
-   "mat price": 3
+   "mat price (or mark retired)": 3
   },
   "Splash of Color": {
-   "mat price": 1
+   "mat price (or mark retired)": 1
   },
   "Sunday Mahjong": {
    "tile set table-view walls": 1
   },
   "Sweet Jojo Designs": {
-   "mat price": 1
+   "mat price (or mark retired)": 1
   },
   "The Mahjong House": {
-   "mat price": 1
+   "mat price (or mark retired)": 1
   },
   "Tigre de Tartan": {
-   "mat price": 5
+   "mat price (or mark retired)": 1
   },
   "Tuckernuck": {
-   "mat price": 1
+   "mat price (or mark retired)": 1
   },
   "Virora Mahjong": {
    "tile set table-view walls": 3
   },
   "Waiting On Martha": {
-   "mat price": 3
+   "mat price (or mark retired)": 3
   },
   "YOLO Mahjong": {
    "tile set table-view walls": 1
@@ -104,79 +104,7 @@
    "brand": "Oh My Mahjong",
    "name": "Emerald",
    "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "tile set",
-   "key": "ret:birdie",
-   "brand": "Oh My Mahjong",
-   "name": "Birdie",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "tile set",
-   "key": "ret:dandy",
-   "brand": "Oh My Mahjong",
-   "name": "Dandy",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "tile set",
-   "key": "ret:glitterville",
-   "brand": "Oh My Mahjong",
-   "name": "Glitterville",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "tile set",
-   "key": "ret:limoncello",
-   "brand": "Oh My Mahjong",
-   "name": "Limoncello",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "tile set",
-   "key": "ret:lola",
-   "brand": "Oh My Mahjong",
-   "name": "Lola",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "tile set",
-   "key": "ret:sorbet",
-   "brand": "Oh My Mahjong",
-   "name": "Sorbet",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "tile set",
-   "key": "ret:sunset",
-   "brand": "Oh My Mahjong",
-   "name": "Sunset",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "tile set",
-   "key": "ret:taylor",
-   "brand": "Oh My Mahjong",
-   "name": "Taylor",
-   "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -437,7 +365,7 @@
    "brand": "Oh My Mahjong",
    "name": "Vivara",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -446,7 +374,7 @@
    "brand": "Oh My Mahjong",
    "name": "Darjeeling",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -455,25 +383,7 @@
    "brand": "Oh My Mahjong",
    "name": "Cognac",
    "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "www.ohmymahjong.com/dapper-mat-w-tube",
-   "brand": "Oh My Mahjong",
-   "name": "Dapper 2 (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "www.ohmymahjong.com/liberty-mat-w-tube",
-   "brand": "Oh My Mahjong",
-   "name": "Liberty",
-   "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -482,7 +392,7 @@
    "brand": "Oh My Mahjong",
    "name": "Astor",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -491,16 +401,7 @@
    "brand": "Oh My Mahjong",
    "name": "Vanderbilt",
    "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "www.ohmymahjong.com/esme-mat-w-tube",
-   "brand": "Oh My Mahjong",
-   "name": "Esme (retired)",
-   "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -509,7 +410,7 @@
    "brand": "Bespoke Mahjong",
    "name": "Tartan Plaid in Preppy Pink",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -518,7 +419,7 @@
    "brand": "Oh My Mahjong",
    "name": "Year of the Horse",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -527,7 +428,7 @@
    "brand": "Tigre de Tartan",
    "name": "Nantucket Basket, Round",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -536,7 +437,7 @@
    "brand": "Bespoke Mahjong",
    "name": "Argyle Girl",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -545,7 +446,7 @@
    "brand": "Bespoke Mahjong",
    "name": "Tartan Plaid - Black/Royal Blue/Pink",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -554,7 +455,7 @@
    "brand": "Bespoke Mahjong",
    "name": "Year of the Dragon - Periwinkle",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -563,205 +464,7 @@
    "brand": "Oh My Mahjong",
    "name": "Sugarplum",
    "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:amara:Goldie",
-   "brand": "Oh My Mahjong",
-   "name": "Goldie (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:amara:Spring Fling",
-   "brand": "Oh My Mahjong",
-   "name": "Spring Fling (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:amara:Zen Glow",
-   "brand": "Oh My Mahjong",
-   "name": "Zen Glow (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:amara:Camellia",
-   "brand": "Oh My Mahjong",
-   "name": "Camellia (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:amara:Imperial",
-   "brand": "Oh My Mahjong",
-   "name": "Imperial (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:amara:Enchanted",
-   "brand": "Oh My Mahjong",
-   "name": "Enchanted (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:amara:Citrus Songbird",
-   "brand": "Oh My Mahjong",
-   "name": "Citrus Songbird (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:amara:Mirage",
-   "brand": "Oh My Mahjong",
-   "name": "Mirage (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:amara:Birdie Pink",
-   "brand": "Oh My Mahjong",
-   "name": "Birdie Pink (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:amara:Serengeti",
-   "brand": "Oh My Mahjong",
-   "name": "Serengeti (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:amara:Palm Paradise",
-   "brand": "Oh My Mahjong",
-   "name": "Palm Paradise (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:amara:KY Derby",
-   "brand": "Oh My Mahjong",
-   "name": "KY Derby (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:drake:SoHo",
-   "brand": "Oh My Mahjong",
-   "name": "SoHo (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:cypress-forest:Dapper 1",
-   "brand": "Oh My Mahjong",
-   "name": "Dapper 1 (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:coquette:Capri",
-   "brand": "Oh My Mahjong",
-   "name": "Capri (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:coquette:Peri-twinkle",
-   "brand": "Oh My Mahjong",
-   "name": "Peri-twinkle (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:coquette:Birdie Green",
-   "brand": "Oh My Mahjong",
-   "name": "Birdie Green (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:emerald:Amethyst",
-   "brand": "Oh My Mahjong",
-   "name": "Amethyst (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:la-fete:La Fete",
-   "brand": "Oh My Mahjong",
-   "name": "La Fete (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:glitterville:Sweet Marie",
-   "brand": "Oh My Mahjong",
-   "name": "Sweet Marie (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:glitterville:Glitterville Dragon",
-   "brand": "Oh My Mahjong",
-   "name": "Glitterville Dragon (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb:limoncello:Garden Party",
-   "brand": "Oh My Mahjong",
-   "name": "Garden Party (retired)",
-   "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -770,7 +473,7 @@
    "brand": "Hutch & Nook",
    "name": "Songbird Bloom",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -779,7 +482,7 @@
    "brand": "Let's Be Besties",
    "name": "Zebra Pattern",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -788,7 +491,7 @@
    "brand": "Let's Be Besties",
    "name": "Garden Lilies",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -797,7 +500,7 @@
    "brand": "Let's Be Besties",
    "name": "White Pattern no. 10",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -806,7 +509,7 @@
    "brand": "Let's Be Besties",
    "name": "Diamond Pattern with Directions",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -815,7 +518,7 @@
    "brand": "Let's Be Besties",
    "name": "Blue Octagon Pattern no. 53",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -824,34 +527,7 @@
    "brand": "Birdsong Mahjong",
    "name": "Heaven Scent",
    "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb2:tigre-de-tartan-strawberry",
-   "brand": "Tigre de Tartan",
-   "name": "Strawberry (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb2:tigre-de-tartan-coconut-peony",
-   "brand": "Tigre de Tartan",
-   "name": "Coconut Peony (retired)",
-   "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb2:tigre-de-tartan-pop-art-roses",
-   "brand": "Tigre de Tartan",
-   "name": "Pop Art Roses (retired)",
-   "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -860,7 +536,7 @@
    "brand": "Bespoke Mahjong",
    "name": "Cranes and Clouds",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -869,16 +545,7 @@
    "brand": "Sweet Jojo Designs",
    "name": "Boho Wildflower",
    "missing": [
-    "price"
-   ]
-  },
-  {
-   "kind": "mat",
-   "key": "alb2:tigre-de-tartan-queen-bee",
-   "brand": "Tigre de Tartan",
-   "name": "Queen Bee (retired)",
-   "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -887,7 +554,7 @@
    "brand": "Let's Be Besties",
    "name": "Fall Flowers",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -896,7 +563,7 @@
    "brand": "Rebecca Illustrated",
    "name": "Rainbow Row",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -905,7 +572,7 @@
    "brand": "Splash of Color",
    "name": "Peony and Parasol",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -914,7 +581,7 @@
    "brand": "Golden Pond Mahjong",
    "name": "Midori Shadows",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -923,7 +590,7 @@
    "brand": "Let's Be Besties",
    "name": "Jingle Jungle Leatherette",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -932,7 +599,7 @@
    "brand": "Let's Be Besties",
    "name": "Camellia Kaleidoscope",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -941,7 +608,7 @@
    "brand": "Case-Mate",
    "name": "Classic Tortoiseshell",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -950,7 +617,7 @@
    "brand": "Amazon",
    "name": "Christmas Red Tartan Scalloped",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -959,7 +626,7 @@
    "brand": "Waiting On Martha",
    "name": "Cocktails Double Sided",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -968,7 +635,7 @@
    "brand": "Amazon",
    "name": "Green & Blue Scalloped Stripes",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -977,7 +644,7 @@
    "brand": "Rebecca Illustrated",
    "name": "Pink Gingham",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -986,7 +653,7 @@
    "brand": "Amazon",
    "name": "Hanukkah Menorah & Peacocks",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -995,7 +662,7 @@
    "brand": "Amazon",
    "name": "Light Blue Hanukkah Star",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1004,7 +671,7 @@
    "brand": "Mahj Mood",
    "name": "Playing For Keeps",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1013,7 +680,7 @@
    "brand": "Amazon",
    "name": "Pink & Green Christmas Tree Plaid",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1022,7 +689,7 @@
    "brand": "Amazon",
    "name": "Winter Berry Evergreen",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1031,7 +698,7 @@
    "brand": "Amazon",
    "name": "Vintage Boho Reindeer",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1040,7 +707,7 @@
    "brand": "Rebecca Illustrated",
    "name": "Chinoiserie & Citrus",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1049,7 +716,7 @@
    "brand": "Case-Mate",
    "name": "Classic Cabana Stripe",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1058,7 +725,7 @@
    "brand": "Mahj & Moon",
    "name": "Scalloped Pink Floral",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1067,7 +734,7 @@
    "brand": "Amazon",
    "name": "Christmas Holly & Berries",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1076,7 +743,7 @@
    "brand": "Mahj & Moon",
    "name": "Tropical Toucan Pink Palm",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1085,7 +752,7 @@
    "brand": "The Mahjong House",
    "name": "Ruby Table Double-Sided",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1094,7 +761,7 @@
    "brand": "Mahj & Moon",
    "name": "Lobster Coastal",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1103,7 +770,7 @@
    "brand": "Southern Living",
    "name": "Bird Floral",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1112,7 +779,7 @@
    "brand": "Amazon",
    "name": "Green Scottish Plaid",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1121,7 +788,7 @@
    "brand": "Amazon",
    "name": "Folk Christmas Reindeer",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1130,7 +797,7 @@
    "brand": "Amazon",
    "name": "Blue Hanukkah Menorah",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1139,7 +806,7 @@
    "brand": "Mahj & Moon",
    "name": "Vintage Floral Pink",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1148,7 +815,7 @@
    "brand": "Amazon",
    "name": "Red Nose Reindeer",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1157,7 +824,7 @@
    "brand": "Amazon",
    "name": "Red Tartan Scalloped (Lewtemi)",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1166,7 +833,7 @@
    "brand": "Amazon",
    "name": "Christmas Golden Retrievers",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1175,7 +842,7 @@
    "brand": "Tuckernuck",
    "name": "In Full Bloom (Oh My Mahjong x Tuckernuck)",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1184,7 +851,7 @@
    "brand": "Fait à Main",
    "name": "Texas Mon Amour Green",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1193,7 +860,7 @@
    "brand": "Amazon",
    "name": "Christmas Plaid Pinecone Border",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1202,7 +869,7 @@
    "brand": "Amazon",
    "name": "Blue & White Snowflake",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1211,7 +878,7 @@
    "brand": "Rebecca Illustrated",
    "name": "Canaries",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1220,7 +887,7 @@
    "brand": "Southern Living",
    "name": "Green Ikat",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1229,7 +896,7 @@
    "brand": "Amazon",
    "name": "Green Plaid Christmas Tree",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1238,7 +905,7 @@
    "brand": "Rebecca Illustrated",
    "name": "Maxine",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1247,7 +914,7 @@
    "brand": "Amazon",
    "name": "Gingerbread Gingham",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1256,7 +923,7 @@
    "brand": "Amazon",
    "name": "Pink Christmas Tree Gingham",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1265,7 +932,7 @@
    "brand": "Waiting On Martha",
    "name": "Tasslin' Double Sided",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1274,7 +941,7 @@
    "brand": "Rebecca Illustrated",
    "name": "Pool Pawty",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1283,7 +950,7 @@
    "brand": "Amazon",
    "name": "Red & Green Christmas Village",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1292,7 +959,7 @@
    "brand": "Rebecca Illustrated",
    "name": "White Sailboats",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1301,7 +968,7 @@
    "brand": "Amazon",
    "name": "Cardinal Evergreen Wreath",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1310,7 +977,7 @@
    "brand": "Amazon",
    "name": "Winter Christmas Trees Stripe",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1319,7 +986,7 @@
    "brand": "Case-Mate",
    "name": "Classic Carolina Blue",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1328,7 +995,7 @@
    "brand": "Case-Mate",
    "name": "Classic Ballet Pink",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1337,7 +1004,7 @@
    "brand": "Mahj & Moon",
    "name": "Palm Tree Retro Tropical",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1346,7 +1013,7 @@
    "brand": "Amazon",
    "name": "Pink & Blue Christmas Village",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1355,7 +1022,7 @@
    "brand": "Amazon",
    "name": "Christmas Tree Gingham",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1364,7 +1031,7 @@
    "brand": "Amazon",
    "name": "Christmas Dark Tartan",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1373,7 +1040,7 @@
    "brand": "Amazon",
    "name": "Christmas Cabana Stripe with Bows",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1382,7 +1049,7 @@
    "brand": "Amazon",
    "name": "Pink Winter Village",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1391,7 +1058,7 @@
    "brand": "Southern Living",
    "name": "Status Cats Pink",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1400,7 +1067,7 @@
    "brand": "Waiting On Martha",
    "name": "Vintage Twinkle Double Sided",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   },
   {
@@ -1409,7 +1076,7 @@
    "brand": "Amazon",
    "name": "Red Snowflake",
    "missing": [
-    "price"
+    "price (or mark retired)"
    ]
   }
  ]
