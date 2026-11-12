@@ -15,5 +15,5 @@ brands/<slug> in HQ (status applied, `how` = signup / contact form / email from 
 
 ## Form-field answers (Tiffany Nov 12 10:34am; the rest of the Apply Kit's shared answers stand: PayPal, MAHJMATCH, mahjmatchmaker@gmail.com)
 **Audience** (her rewrite ask: sell it to the brand; they're shoppers about to buy, not people matching what they already own):
-> Mahjong players and collectors who are actively shopping: they come to Mahj Matchmaker to choose their next tile set, mat and racks, and they leave with a product link and a code. Mostly women 35–64 in the US who host games at home, buy for their own tables and as gifts, and care how the whole table looks together.
+> Mahjong players and collectors who are actively shopping for their next tile set, mat and racks. Mahj Matchmaker helps them choose, then sends them straight to our partner brands' product pages to buy. Mostly women 35–64 in the US who host games at home, buy for their own tables and as gifts, and care how the whole table looks together.
 **Code (Tiffany Nov 12 10:35am):** never lead with or talk about the code. We just inquire with the script. Only when a form formally asks "what code would you like?" do we enter MAHJMATCH.
