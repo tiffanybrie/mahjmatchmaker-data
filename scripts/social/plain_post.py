@@ -24,7 +24,9 @@ a.add_argument('--also', default='', help='other brands shown, comma-separated n
 a.add_argument('--instock', action='store_true', help='set is already for sale: no release line')
 x = a.parse_args()
 
-pct = json.load(open(R + '/config/code-truth.json'))['pct'].get(x.brand)
+_ct = json.load(open(R + '/config/code-truth.json'))
+# Fallback (Nov 13): some verified partners (Anders Ruff, Mahjong Register) live only in code-truth 'terms' with a pct
+pct = _ct['pct'].get(x.brand) or (_ct.get('terms', {}).get(x.brand) or {}).get('pct')
 if not pct:
     sys.exit(f'FAIL: no verified code % for {x.brand} in config/code-truth.json')
 # Her voice, from her own Nov 9 10:47am line: "The latest Oh My Mahjong set Juniper releases this Wednesday 11/11 at
