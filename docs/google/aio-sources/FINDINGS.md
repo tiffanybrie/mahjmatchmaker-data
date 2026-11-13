@@ -33,3 +33,14 @@ brand-follows. Reddit: the browser tool blocks reddit.com, so Claude can't read 
    OMM TM10/MAHJONGEE/COASTAL 8/11; My Fair MIDLANDMAHJ10 + MAHJONGEE 9/10.
 5. AI Mode is easy for us (37/39) and must not be over-credited (Tiffany Nov 12): the AI Overview is the money.
 Next: identify each locked-in creator's sources; check Anders Ruff, Charleston, My Fair, Peace Love, Miss.
+
+## Nov 12 2026 evening: WHY sales fell (Tiffany 7:38pm "there's a Google problem")
+1. It IS Google. Google's November 2026 core update was announced Nov 10 1:07pm ET (big movements already Nov 8-9),
+   rolls out ~2 weeks (into Black Friday). Our AI Overview peak was Nov 8 (37/38 in her Chrome); since Nov 9 it fell.
+   Source: seroundtable.com/google-november-2026-core-update-42504.html
+2. Our laptop checks OVERSTATED us: her signed-in Chrome is personalised (she visits our site constantly). The signed-out
+   cloud check today: MAHJMATCH named for 18 of 40 brands; organic for "<brand> discount code": Bam Bird #6 (laptop said
+   #1), Anders Ruff #4, Peace Love #7, Charleston/OMM/Britt Mills/Bespoke/TdT/Virora not on page 1. Search Console agrees
+   (Bam Bird 4.4 -> 6.6, Peace Love 4.7 -> 5.7, OMM 8.7 -> 23). TRUTH SOURCE from now on = signed-out cloud check + SC.
+3. Where we ARE named (18), the Overview cites OUR page and we rank top 6. Where we're not, creator socials (IG reels, FB
+   Pages/groups, Reddit, creator code pages) carry the codes and our page is low or off page 1.
