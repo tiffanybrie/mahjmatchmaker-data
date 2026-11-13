@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-13T14:09:35+00:00",
+ "swept_at": "2026-11-13T23:09:36+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v119",
  "stores": {
   "amahjline.com": {
@@ -54,7 +54,7 @@
   "bambirdboutique.com": {
    "brand": "Bam Bird Boutique",
    "status": "ok",
-   "products": 116,
+   "products": 117,
    "mats": [
     [
      "2026-10-27T13:47:10-05:00",
@@ -541,8 +541,13 @@
   "brittmillsdesign.com": {
    "brand": "Britt Mills",
    "status": "ok",
-   "products": 727,
+   "products": 728,
    "mats": [
+    [
+     "2026-11-13T09:10:47-05:00",
+     "Plumage II Leatherette Mahjong Mat",
+     "plumage-ii-leatherette-mahjong-mat"
+    ],
     [
      "2026-11-12T16:04:16-05:00",
      "Grayson Leatherette Mahjong Mat",
@@ -921,6 +926,11 @@
    ],
    "missing": [
     [
+     "2026-11-13T09:10:47-05:00",
+     "Plumage II Leatherette Mahjong Mat",
+     "plumage-ii-leatherette-mahjong-mat"
+    ],
+    [
      "2026-11-12T16:04:16-05:00",
      "Grayson Leatherette Mahjong Mat",
      "grayson-leatherette-mahjong-mat"
@@ -1091,7 +1101,7 @@
   "letsmahj-on.com": {
    "brand": "Let's Mahj On",
    "status": "ok",
-   "products": 85,
+   "products": 86,
    "mats": [
     [
      "2026-09-20T12:00:24-04:00",
@@ -2012,7 +2022,7 @@
   "myfairmahjong.com": {
    "brand": "My Fair Mahjong",
    "status": "ok",
-   "products": 96,
+   "products": 102,
    "mats": [
     [
      "2026-10-19T12:03:31-05:00",
@@ -2646,7 +2656,7 @@
   "tigredetartan.com": {
    "brand": "Tigre de Tartan",
    "status": "ok",
-   "products": 127,
+   "products": 126,
    "mats": [
     [
      "2026-10-22T15:40:28-05:00",
@@ -2687,11 +2697,6 @@
      "2026-09-13T15:57:02-05:00",
      "Mahjong Mat, EL TIGRE [NEW EDITION]",
      "mahjong-mat-el-tigre-new-edition"
-    ],
-    [
-     "2026-09-10T10:33:45-05:00",
-     "Tigre de Tartán x Miss Mahjong: “El Último Refresco” Mahjong Mat",
-     "tigre-de-tartan-x-miss-mahjong-el-ultimo-refresco-mahjong-mat"
     ],
     [
      "2026-08-11T13:32:20-05:00",
