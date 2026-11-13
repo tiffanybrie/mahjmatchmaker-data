@@ -3,6 +3,30 @@
   "week_label": "Week of Sun Nov 8 – Sat Nov 14",
   "this_week": [
     {
+      "date": "2026-11-14",
+      "day": "Sat 11/14",
+      "time": "9am CT",
+      "brand": "Bespoke Mahjong",
+      "partner": true,
+      "what": "Glitter Glow holiday tiles in red and green drop Sat 11/14 at 9am CT.",
+      "tag": "tiles",
+      "new": true,
+      "urgency": "NOW",
+      "buy": "https://www.bespokemahjong.com/products/holiday-mahjong-its-a-vibe-glitter-glow-tiles",
+      "url": "https://www.instagram.com/reel/DfqFMexpF1k/",
+      "source": "IG story",
+      "source_link": "https://www.instagram.com/stories/bespoke_mahjong/",
+      "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/partner-catalogs-sqsp/assets/launches/bespoke-glitter-glow/bespoke-glitter-glow-drops-1114-ig-story-nov12.jpg",
+      "found": "2026-11-12T18:35",
+      "action": "Date first in Brand news sheet 6:35pm (reel DfqFMexpF1k); confirmed in IG story 10:40pm; curated was behind (6:23pm watch did not write it).",
+      "history": [
+        {
+          "found": "2026-11-04",
+          "what": "Glitter Glow tiles in holiday red and green are coming in November. No exact date yet."
+        }
+      ]
+    },
+    {
       "date": "2026-11-12",
       "day": "Thu 11/12",
       "time": "LIVE now (listed Wed 11/11 10:05pm CT)",
@@ -42,18 +66,22 @@
       "time": "LIVE now (page opened 7:58am ET)",
       "brand": "Charleston Mahjong Club",
       "partner": true,
-      "what": "Full-size Cabana Club tiles ($425) are now on the public product page, with a pre-order tag. Earlier: email subscribers had first access.",
+      "what": "Full-size Cabana Club tiles ($425) are live on their website, with only a handful left. Pre-orders for the next batch open once these ship.",
       "tag": "tiles",
       "urgency": "NOW",
       "buy": "https://www.charlestonmahjongclub.com/products/the-hunt-club-edition%E2%84%A2-copy",
       "url": "https://www.charlestonmahjongclub.com/products/the-hunt-club-edition%E2%84%A2-copy",
       "source": "store",
       "action": "Updates Cabana Club row from Tue 11/10.",
-      "found": "2026-11-12T09:45",
+      "found": "2026-11-12T22:40",
       "history": [
         {
           "found": "2026-11-10T09:50",
           "what": "Full-size Cabana Club tiles are here ($425), email subscribers first."
+        },
+        {
+          "found": "2026-11-12T09:45",
+          "what": "Full-size Cabana Club tiles ($425) are now on the public product page, with a pre-order tag. Earlier: email subscribers had first access."
         }
       ]
     },
@@ -225,6 +253,21 @@
   ],
   "coming_soon": [
     {
+      "date": "",
+      "brand": "Mahj Mood",
+      "partner": true,
+      "what": "New transparent blue racks launch later this month (shown with the Lake Day mat and tiles). No date yet.",
+      "tag": "racks",
+      "new": true,
+      "urgency": "LATER",
+      "url": "https://mahjmood.com",
+      "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/partner-catalogs-sqsp/assets/launches/mahj-mood-transparent-blue-racks/mahj-mood-blue-racks-lake-day-mat-ig-story-nov12.jpg",
+      "found": "2026-11-12T22:40",
+      "source": "IG story",
+      "source_link": "https://www.instagram.com/stories/mahj_mood/",
+      "action": "IG story 11/12 ~7:30pm ET Lake Day Q&A frame: 'transparent blue racks launching later this month'. Different from the wooden scalloped racks. Watch store."
+    },
+    {
       "date": "2026-11-20",
       "day": "Fri 11/20",
       "brand": "Mahj Mood",
@@ -256,16 +299,26 @@
       "action": "Samples in, bulk order in transit; watch store end of Nov"
     },
     {
-      "date": "",
+      "date": "2026-11-18",
       "brand": "Miss Mahjong",
       "partner": true,
-      "what": "Miss Darling Lilac, a new full-size tile set ($425): the party version of Miss Darling, with hot pink and lime faces, a blue stripe and a lilac back with white cross-stitch. No release date yet.",
+      "what": "Miss Darling Lilac, a new full-size tile set ($425), opens Wed 11/18 at 10am CT: the party version of Miss Darling, with hot pink and lime faces, a blue stripe and a lilac back with white cross-stitch.",
       "tag": "tiles",
       "new": true,
-      "action": "Watch for the drop date (store tag coming-soon); full-size set = album candidate",
+      "action": "Date from their IG post 11/12 2:43pm ET (Brand news sheet 6:35pm); curated was behind.",
       "url": "https://missmahjong.com/products/miss-darling-mahjong-tile-set-lilac",
       "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Cover-DarlingLilac.png?v=1792516771",
-      "found": "2026-11-11T10:35"
+      "found": "2026-11-12T18:35",
+      "history": [
+        {
+          "found": "2026-11-11T10:35",
+          "what": "Miss Darling Lilac, a new full-size tile set ($425). No release date yet."
+        }
+      ],
+      "day": "Wed 11/18",
+      "time": "10am CT",
+      "urgency": "SOON",
+      "source": "https://www.instagram.com/p/Dfp1bxnGepO/"
     },
     {
       "brand": "Anders Ruff",
@@ -311,15 +364,6 @@
       "url": "https://www.instagram.com/reel/DfQNG0Ejejh/",
       "urgency": "LATER",
       "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/089662ddfcef7047f14e756a4469e59fa87ab2d4/assets/launches/letsmahj-on-lets-golf-celedon-mist/01.jpg"
-    },
-    {
-      "brand": "Bespoke Mahjong",
-      "partner": true,
-      "what": "Glitter Glow tiles in holiday red and green are coming in November. No exact date yet.",
-      "tag": "tiles",
-      "action": "New in Find Your Mat-ch (holiday) when live",
-      "url": "https://www.bespokemahjong.com/products/holiday-mahjong-its-a-vibe-glitter-glow-tiles",
-      "urgency": "LATER"
     },
     {
       "brand": "Bam! Let's Mahjong",
@@ -432,6 +476,21 @@
     }
   ],
   "just_dropped": [
+    {
+      "date": "2026-11-12",
+      "day": "Thu 11/12",
+      "brand": "Mahj Mood",
+      "partner": true,
+      "what": "The Fall Fling mat ($65) is retiring. It is still in stock for now.",
+      "tag": "mat",
+      "urgency": "NOW",
+      "buy": "https://mahjmood.com/products/fall-fling-mat",
+      "url": "https://www.instagram.com/stories/mahj_mood/",
+      "img": "https://cdn.shopify.com/s/files/1/0944/7712/3887/files/76381C65-0957-4D7B-A77E-C776E89080DC.jpg?v=1789683609",
+      "found": "2026-11-12T22:40",
+      "source": "IG story",
+      "action": "IG story 11/12 (14h, repost of @pepmahjong): 'before this mat retires'. The BOGO sale it pushed ended 8pm CST (hidden, social-sourced)."
+    },
     {
       "date": "2026-11-11",
       "day": "Wed 11/11",
@@ -934,6 +993,23 @@
   ],
   "sales": [
     {
+      "date": "2026-11-12",
+      "brand": "Bespoke Mahjong",
+      "partner": true,
+      "what": "Black Friday sale: 25% off sitewide and 15% off tables.",
+      "tag": "sale",
+      "ends": "",
+      "urgency": "NOW",
+      "buy": "https://www.bespokemahjong.com",
+      "url": "https://www.instagram.com/stories/bespoke_mahjong/",
+      "found": "2026-11-12T22:40",
+      "source": "IG story",
+      "source_kind": "social",
+      "approved": null,
+      "hidden": true,
+      "action": "From IG story 11/12 (repost of @windsanddragonsmahjong): 'Black Friday EVENT is here'. Social-sourced: hidden, pending her yes (Stories task rule). BF is a standing yes per rules, so the next attended chat confirms with the store / partner email before un-hiding."
+    },
+    {
       "date": "2026-11-10",
       "brand": "Mahj Mood",
       "partner": true,
@@ -1078,5 +1154,5 @@
       "url": ""
     }
   ],
-  "updated": "2026-11-12T12:50"
+  "updated": "2026-11-12T22:40"
 }
