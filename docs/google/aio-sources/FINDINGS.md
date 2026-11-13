@@ -1,4 +1,5 @@
 # What the AI Overview pulls codes from (running findings; newest first)
+VOCABULARY: never 'Google AI' / 'AI answer'. AI Overview and AI Mode are separate and reported separately.
 
 RULES (Tiffany Nov 12 11:37am): count MJTI out (it's the That's It group's only allowed code). Never reply or post
 codes in Mah Jongg, That's It! (admin deletes). October sales movement for a brand = Google. Do NOT conclude
@@ -35,8 +36,10 @@ brand-follows. Reddit: the browser tool blocks reddit.com, so Claude can't read 
 Next: identify each locked-in creator's sources; check Anders Ruff, Charleston, My Fair, Peace Love, Miss.
 
 ## Nov 12 2026 evening: WHY sales fell (Tiffany 7:38pm "there's a Google problem")
-1. It IS Google. Google's November 2026 core update was announced Nov 10 1:07pm ET (big movements already Nov 8-9),
-   rolls out ~2 weeks (into Black Friday). Our AI Overview peak was Nov 8 (37/38 in her Chrome); since Nov 9 it fell.
+1. Google's November 2026 core update was announced Nov 10 1:07pm ET (big movements already Nov 8-9), rolls out ~2 weeks
+   (into Black Friday). CORRECTION (Tiffany 7:58pm): the old '37 of 38 on Nov 8' was NOT an AI Overview number (lumped
+   with AI Mode and from her personalised Chrome). There is NO clean AI Overview history before Nov 12.
+   Clean AI Overview (signed-out cloud) Nov 12: 18 of 40 at 12:26pm, 15 of 40 at 7:23pm.
    Source: seroundtable.com/google-november-2026-core-update-42504.html
 2. Our laptop checks OVERSTATED us: her signed-in Chrome is personalised (she visits our site constantly). The signed-out
    cloud check today: MAHJMATCH named for 18 of 40 brands; organic for "<brand> discount code": Bam Bird #6 (laptop said
