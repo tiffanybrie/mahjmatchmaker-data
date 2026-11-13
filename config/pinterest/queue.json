@@ -481,7 +481,7 @@
    "title": "Christmas Mahjong Mats: 40 Holiday Mahjong Mats to Shop",
    "board": "Christmas Mahjong Mats",
    "boardId": "908319887286213304",
-   "status": "scheduled",
+   "status": "published",
    "postGroupId": "01a15323-056e-715d-a5d3-9aff03ae7280",
    "postId": "01a15323-0573-71a4-9397-3ca4a8db37e5",
    "scheduledFor": "2026-11-11T00:00:00.000Z",
@@ -495,7 +495,7 @@
    "title": "Holiday Mahjong Table Decor: A Classic Plaid Holiday Table",
    "board": "Amazon Mahjong Finds",
    "boardId": "908319887286213307",
-   "status": "scheduled",
+   "status": "published",
    "postGroupId": "01a15323-0b78-700f-b398-e7047a94d76e",
    "postId": "01a15323-0b7d-761b-869b-c8768ce030d2",
    "scheduledFor": "2026-11-12T00:00:00Z",
@@ -519,7 +519,7 @@
    "title": "Mahjong Table Decor: A Retro Holiday Table",
    "board": "Amazon Mahjong Finds",
    "boardId": "908319887286213307",
-   "status": "scheduled",
+   "status": "published",
    "postGroupId": "01a15323-3677-74e5-bfa9-7613fcc6d22d",
    "postId": "01a15323-367c-70af-9b7f-bc8ec161f89f",
    "scheduledFor": "2026-11-13T00:00:00Z",
@@ -6389,9 +6389,27 @@
    "name": "Style of Your Life",
    "image": "assets/colorcards/style-of-your-life/00-style-of-your-life-mahjong-tiles-color-guide-mobile.jpg",
    "note": "Our colour card exists, but https://www.mahjmatchmaker.com/style-of-your-life-mahjong-tile-matches is 404 as of Nov 10 (album staged / not live; one album a week). Pin once the album page is live."
+  },
+  {
+   "id": "guide-cabana-club",
+   "kind": "guide",
+   "status": "todo",
+   "added": "2026-11-13",
+   "name": "Cabana Club",
+   "image": "assets/colorcards/cabana-club/00-cabana-club-mahjong-tiles-color-guide-mobile.jpg",
+   "note": "Our colour card exists, but https://www.mahjmatchmaker.com/cabana-club-mahjong-tile-matches is 404 as of Nov 13 (album not live). Pin once the album page is live."
+  },
+  {
+   "id": "album-petalee",
+   "kind": "album",
+   "status": "todo",
+   "added": "2026-11-13",
+   "name": "Petalée",
+   "image": "assets/covers/albums/00-petalee-mahjong-tiles-cover.jpg",
+   "note": "Our album cover exists, but https://www.mahjmatchmaker.com/petalee-mahjong-tile-matches is 404 as of Nov 13 (album staged, not live). Pin once the album page is live."
   }
  ],
- "updated": "2026-11-10T14:46:12Z",
+ "updated": "2026-11-13T14:48:03Z",
  "rules": {
   "pace": "2 new pins/day at 13:00Z and 20:00Z (on top of the Oct 19 batch: 15:00/16:00Z daily to Nov 9, holiday 00:00Z Nov 2-14). Keep ~7 days of new pins scheduled ahead; never more than 4 pins on one day.",
   "ownWorkOnly": "Pin only our own images: album covers (assets/covers/albums/uniform-v3), our color cards / mood boards / graphics, or grids of our covers. Never a brand product photo on its own.",
