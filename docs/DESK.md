@@ -11,7 +11,7 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 - OPS (launch watch Thu 11/12 9:05am): search Tiles & Tablescapes for Mahjong Studios Easter Morning + Some Bunny (new Easter tile sets; no colour card / TNT rec yet, so no swipe book).
 - OPS (launch watch Thu 11/12 9:05am): copy assets/launches/mahjongstudios-easter-morning-christian-mahjong-tile-set/ and assets/launches/mahjongstudios-some-bunny-easter-mahjong-tile-set/ to Dropbox /Mahj Matchmaker Albums/New releases/Mahjong Studios/ today.
 
-**Last rewrite:** Wed Nov 11, 2026, ~9:55pm ET (desk cleanup run, cloud, no computer linked). Covers the 60 commits of Nov 11 ET (13:30 Maison Mahj … b9828ecb usage report), docs/ANSWERS.md (Nov 11 lines, 12:26pm-9:17pm), docs/OVERDUE.md, docs/MATCH-INBOX.md, Planoly (IG workspace 019fc27c…: 36 scheduled groups, all in the Dec 7-10 review week or past reminders, + 32 drafts; exports docs/social/planoly-exports/ig-2026-11-11-desk.json + ig-2026-11-11-desk-drafts.json; Pinterest 019fc27b…: 4/day scheduled Nov 12-26+, 0 errors, pin-2026-11-11-desk-scheduled.json), HQ needs (17 open before → 13 after), hq/albums (94 items, live pages curl-checked), Ready to Ship (no new answers).
+**Last rewrite:** Thu Nov 12, 2026, ~10:00pm ET (desk cleanup run, cloud, no computer linked). Covers the 61 commits of Nov 12 ET (6ddc88ae IG engagement 7:20am … a715b3ad AI Overview ≠ AI Mode rule 7:58pm), docs/ANSWERS.md (Nov 12 lines, 7:17am-7:58pm), docs/OVERDUE.md, docs/MATCH-INBOX.md, Planoly (IG workspace 019fc27c…: **0 groups dated Nov 13-19**; export docs/social/planoly-exports/ig-2026-11-12-desk.json; Pinterest 019fc27b…: 28 pins Nov 13-19, ~4/day, 0 errors, 1 Mahjong Row pin on Nov 17), HQ needs (Today 7 → 5; 2 archived), hq/albums (97 items; non-live album pages curl-checked, none went live; Cabana moved out of 'Needs your yes'), hq/indexing (Deco Lagoon row added), Ready to Ship (no new answers).
 
 **Owners (Tiffany Nov 11 4:41pm: ONE working chat):** **Main** owns everything (social/Planoly, site, email, HQ/DESK, Google + SEO, money decisions, Find Your Mat-ch, albums, gallery, catalog, search index, Chrome steps when her computer is on). **Ops (Sonnet)** = only money runs + Amazon-to-ShopMy link chores. The Matches & Catalog chat is RETIRED: any line below that still says "Main (was Matches & Catalog)" is Main's. Catalog gaps = scheduled task **Partner coverage owner (daily)** (trig_012DGkmgYqbH5ks6V9Dq9Ldz, 1:47pm ET).
 
@@ -25,18 +25,21 @@ Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cle
 
 **Standing (Nov 4):** A YES IS A YES · BLOCKED IS NOT DROPPED · REVENUE WATCH · NO 'ASK ONCE' · SOCIAL 13 (nothing disappears from Planoly) · payouts are CASH via PayPal (Bam Bird = bank transfer), only Maison Mahj + PLM Level 1 are store credit · ShopMy pickup DAILY 9:02am · Chrome: no saved tabs · IG evergreen codes post = profile-only.
 
-## Tomorrow's top priorities (Thu Nov 12), in order
-Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm), then the newest ANSWERS (Nov 11: one working chat, FYM all-or-nothing, partner coverage, FB group intros, OMM VIP post, no swipe books), then DESK 'Never-ending'. **Restock check (c): no album-set RESTOCK is dated Thu Nov 12** (next album-set windows: Bam Bird Deco Indigo Nov 16-30, Sunday Blues Nov 23-30; Let's Mahj On new lineup window opens Nov 12 but is not an album set).
+## Tomorrow's top priorities (Fri Nov 13), in order
+Standing order: RESTOCK FIRST (rule c), then Google #1, then the newest ANSWERS (Nov 12: Google core update response, AI Overview ≠ AI Mode, album launch email template approved, IG caption test, FB group strategy, outreach = her script only), then DESK 'Never-ending'. **Restock check (c): no album-set RESTOCK is dated Fri Nov 13** (next album-set windows: Bam Bird Deco Indigo Nov 16-30 (album on her review page), Sunday Blues Nov 23-30).
 
-1. **Google (Main). First thing.** Wed's report (docs/reports/google-revenue/2026-11-11.md): MAHJMATCH named in **26 of 39** AI answers (Tue 30/38). NEW LOSSES Wed: **Anders Ruff** (top earner; MOCKINGBIRD10 now first), Charleston, Amahj, Yellow Mountain, Soirée. Still lost: Bam Bird (3rd check), Virora, Bespoke, I Love Mahj; OMM page 2 (~#9). (a) Indexing quota Thu: Anders Ruff + Charleston pages first, then Amahj, YMI, Soirée, then Bam Bird/Virora/Bespoke/I Love Mahj (15 requested Wed). (b) **Deco Lagoon has no hq/indexing row (3rd night)**: add it. (c) Fri M/W/F code report. (d) HQ Today #1 = 16 order screenshots (merged card).
-2. **Social, rule d (Main, attended for Planoly writes): 0 IG posts SCHEDULED Nov 12-18** (every scheduled group sits in the Dec 7-10 review week). **Juniper launched Wed 10am CT with NO IG mat-ch**: the Juniper × Palm Royale It's a mat-ch! + story (groups …1d8d96 / …03eeae, Dec 9 slot) never moved back. Default on her yes (HQ Today #2): post it Thu after 10am CT. Then Thu 'New this week' carousel (draft 01a1c214), Fri 'Tiles first or mat first?' (01a1b20d-761e + story -77bc), Sat 'Tap a color' (01a1b20d-794b + -7b0e), and the **Deco Lagoon social launch kit for the week of Mon 11/16** (her Nov 11 9:12am). Target ≥4 IG posts in the window.
-3. **jsDelivr 403 / FYM releases (Main).** Nothing new can pin (repo > 50 MB). Staged Nov 11: FYM 1.19 = Miss Mahjong racks + ALL current walls (282/282 visible sets) + 5 OMM retired mats; plus Lotus Cove photo, holiday-off mat-door bug, brand weights, plain-link conversions. Fix the asset host (slim repo/branch) → gate + independent QA → three places. Also FYM size ceiling (13 MB file, 20 MB jsDelivr cap) before any big-catalog import.
-4. **Newest asks (Main, Nov 11).** (a) **OMM VIP group post TODAY Thu** (her 5:32pm: OMM-only rainbow of our OMM albums + 'hope you got Juniper'; draft assets/social/omm-vip-nov12/; she posts it, her Mahji Mentor account) — it sits inside the FB-intros Google Doc card. (b) FB group intros: her wording in the Google Doc; reminder Thu evening (HQ Today #3). (c) Fait à Main real code (UpPromote portal) + Sweet Jojo follow-up draft Fri if no approval. (d) Let's Be Besties feature-week reply draft for her yes.
-5. **Match inbox (rule e) + Chrome backlog (Main).** MATCH-INBOX: **~120 dated lines older than 2 days have no DONE mark** (heuristic; ~96 Tue): mark each DONE with its build or fold into the next small release. Chrome (her computer on): **Black Friday deals page (her yes Nov 8; live before PLM Black Friday Mon Nov 16)**, Today-in-mahj 11/10 edit, Charleston + TdT link swaps, holiday blog lead image.
+1. **Google (Main). First thing.** November core update (Nov 8-9 movement) hit the top earners. AI Overview, signed-out cloud check (the only true number): **18/40 at 12:26pm, 15/40 at 7:23pm**. AI Mode, separately: 15 of 17 checked; lost Anders Ruff + Bam Bird. Never lump them (CLAUDE.md rule, her 7:58pm). (a) Fri M/W/F code report (AI Overview first, then AI Mode). (b) Indexing re-requests: Bam Bird, Anders Ruff, Peace Love, Charleston, OMM, Britt Mills; Deco Lagoon row now exists in hq/indexing (added tonight), request it at its social launch. (c) Brand-page strengthening for those 6 waits on her yes (HQ Today #1). (d) AI Overview source investigation: Bam Bird next, then Anders Ruff, Charleston, My Fair, Peace Love, Miss (OVERDUE). (e) IG caption test: send her post 1 (file + caption + 3 steps); she posts profile-only from her phone.
+2. **Social, rule d (Main, attended for Planoly writes): 0 IG posts scheduled Nov 13-19 (4th night).** Juniper It's a mat-ch! (groups …1d8d96 / …03eeae, still in the Dec 9 slot) on her 'post it' (HQ Today #2). Schedule ≥4 with FB Page target + every-slide stories ('New this week' 01a1c214, 'Tiles first or mat first?' 01a1b20d-761e, 'Tap a color' 01a1b20d-794b). Deco Lagoon kit for the week of Mon 11/16. Pinterest: pull the Mahjong Row Cypress Forest pin (group 01a15fba-8fcf, Mon Nov 17 16:28 UTC; brand OUT, page 302s) before it publishes.
+3. **jsDelivr 403 / FYM releases (Main).** Nothing new can pin. Queue behind the host fix: 1.19 (Miss Mahjong racks + all walls + 5 retired OMM mats), then the 38 partner items the coverage task staged tonight (config/fym-partner-adds-nov12-coverage.json) + plain-link conversions, each a small release: gate + independent QA + three places. FYM size ceiling before any big-catalog import.
+4. **Newest asks (Main, Nov 12).** (a) Juniper album email: draft fixed per her approved template; sends on her 'send it' in chat (HQ Today #2). (b) FB group: Sat 'Help me match' yes (HQ Today #4); Thu thread rolls to next Thu. (c) Sweet Jojo: no approval yet → draft the follow-up for her yes today (Fri). (d) LBB feature-week reply draft for her yes. (e) Affiliates: show her the filled-in outreach script (her copy only) for Fun Fun Mahjong (UpPromote 10%) + the 11 TNT brands in hq/applyList, one yes each. (f) TNT code list PDF: needs her OK to download. (g) Reddit: draft replies for the AI-Overview-cited threads for her to paste (Claude's browser can't open reddit.com). (h) Juniper practice reels A/B/C (launch-row format test) shown to her for a pick.
+5. **Black Friday page (deadline Mon Nov 16) + Match inbox + Chrome backlog (Main).** Black Friday deals page (her yes Nov 8) must be live before PLM Black Friday Mon Nov 16: first Chrome window Fri/Sat. MATCH-INBOX: **125 dated lines older than 2 days with no DONE mark** (heuristic; ~120 Wed): mark each DONE with its build or fold into the next small release. Chrome: Today-in-mahj 11/10 edit, Charleston + TdT link swaps, holiday blog lead image, Wren photos.
 
 - **Tiffany's approved matches** (config/tiffany-matches.json): social picks come from this list FIRST.
 
 ## Handoffs (do first)
+- **Found Thu Nov 12, given a home tonight:** Juniper email send blocked by the safety check (HQ Today #2 + OVERDUE); partner coverage release stopped at STAGED (38 items, jsDelivr 403; OVERDUE); Juniper practice reels A/B/C built, not yet picked (priority 4h); TNT code list PDF needs her download OK (priority 4f); Reddit replies blocked (priority 4g); Pinterest Mahjong Row pin Nov 17 (priority 2 + OVERDUE); Deco Lagoon hq/indexing row ADDED tonight; Cabana album re-statused (tile-photo sample never sent: OVERDUE line); Charleston still owes $115.65 (In progress).
+- **Launch watch Thu 11/12** (9:05am + 6:10pm): Mahjong Studios Easter Morning + Some Bunny (tile sets, on Albums tab as needs-tnt), Britt Mills Plumage / Mallard Manor / Grayson leatherette mats (handed to FYM); Splash Gilded Dynasty recorded only. Dropbox copies = the OPS lines at the top.
+- **Stories Thu 11/12 12:37pm**: Mahj Mood Lake Day tiles (drop 11/20) + 6 new wooden rack colours (end Nov): record; Lake Day = new product (FYM on the day), not an album unless she says.
 - **Found Wed Nov 11, given a home tonight:** Juniper launch passed with no IG post (priority 2); Juniper email send unconfirmed (HQ Today #2); OMM VIP post drafted for Thu (priority 4a); 2 new lint FAIL kinds (OVERDUE); Deco Lagoon hq/indexing row (priority 1b); App icon options + usage report built (b9828ecb) wait her look (HQ This week).
 - **Launch watch Wed 11/11 6:05pm ET**: NEW Mahj Pit The Raven Tiles - Large ($395 tile set; likely the Nov 7 'Full Sizes Black' placeholder, which is gone) + 7 new partner mats (Mahj Pit Birds of a Feather / LaMarie / Evergreen; LBB Confetti Kaleidoscope, Sedona, Cajun Christmas, Blueberry Hill). Sheet rows (Raven + Confetti Kaleidoscope; the rest were already there) + NOW push sent; MATCH-INBOX lines for FYM; Raven on Albums tab as needs-tnt. OPS: search Tiles & Tablescapes for Mahj Pit The Raven Tiles. OPS: copy assets/launches/mahjpit-{the-raven-tiles-large,birds-of-a-feather,lamarie-mat,evergreen-mat}/ and assets/launches/letsbebesties-{confetti-kaleidoscope-ohbon-studios-artist-mahjong-ma,sedona-lillian-claire-designs-artist-mahjong-mat,cajun-christmas-lillian-claire-designs-artist-mahjong-mat,blueberry-hill-lillian-claire-designs-artist-mahjong-mat}/ to Dropbox /Mahj Matchmaker Albums/New releases/<brand>/ today. Also recorded only: Mahj Pit Commuter Christmas (travel tiles), 3 Splash of Color engraved tile sets.
 - **Launch watch Wed 11/11 9:15am ET**: 6 new partner mats live (Mahjong Register Poppy & Prep / Tangerine & Twist / Blaire & Briar / Rosewater & Wine; Let's Be Besties Sleeping Tiger + Chinoiserie Cabbage Plates). Sheet rows added + push sent; MATCH-INBOX lines for FYM; no group post drafted, no swipe books built (non-OMM, waits its turn). OPS: copy assets/launches/mahjongregister-{poppy-prep,tangerine-twist,blaire-briar,rosewater-wine}-double-sided-neoprene-mahjong-mat/ and assets/launches/letsbebesties-{sleeping-tiger,chinoiserie-cabbage-plates}-wanda-viola-artist-mahjong-mat/ to Dropbox /Mahj Matchmaker Albums/New releases/<brand>/ today.
@@ -59,8 +62,8 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 |---|---|---|---|
 | Google: 4 lost AI answers (Bam Bird, Virora, Bespoke, I Love Mahj) + OMM/My Fair/PLM/Mini Mahjer | Main / Ops | Indexing re-requests in that order; Bam Bird revenue investigation. | Thu Nov 12 (slipped from Wed Nov 11) |
 | Google code report + scorecard | Main | Wed ran (26/39); next M/W/F run Fri. | Fri Nov 13 |
-| Indexing: 23 changed brand pages left + Deco Lagoon row | Main / Ops | ~10/day; add the Lagoon row. | Fri Nov 13 |
-| Juniper launch day | Main | Tiles + Lotus Cove LIVE Wed 10am CT. Left: IG It's a mat-ch! + story (parked Dec 9 slot) on her yes, email send (HQ Today #2), requester email. | Thu Nov 12 |
+| Indexing: 23 changed brand pages left + Deco Lagoon row | Main / Ops | ~10/day; Lagoon row ADDED Nov 12 night (request indexing at its social launch). | Fri Nov 13 |
+| Juniper launch day | Main | Tiles + Lotus Cove LIVE Wed 10am CT. Left: IG It's a mat-ch! + story (parked Dec 9 slot) on her 'post it', email send on her 'send it' (HQ Today #2), requester email. | Fri Nov 13 (slipped from Thu Nov 12) |
 | jsDelivr 403 → slim asset host | Main + Main (was Matches & Catalog) | Priority 3; curl new pins. | Thu Nov 12 (slipped from Wed Nov 11) |
 | FYM racks-only release (Miss Mahjong racks) — OVERDUE | Main | After the 403 fix: gate + independent QA + three places. | Thu Nov 12 (slipped from Wed Nov 11) |
 | FYM small releases: holiday-off mat-door bug, Lotus Cove photo, Cabana, Deco Lagoon m-list, Register links, LBB Artist Collective | Main (was Matches & Catalog) | One small release each, same day as unblocked. | Thu Nov 12 |
@@ -77,15 +80,21 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 | Album wiring gaps (C1: 7 live albums not wired to FYM) | Main (was Matches & Catalog) | Gap audit C1. | Thu Nov 12 |
 | Mahjong by SI onboarding | Main (+ Ops) | Code-truth, page, hub, FYM, IG, newsletter. | Thu Nov 12 |
 | Mah Jongg Maven onboarding (page live; code-truth done tonight) | Ops / Main (was Matches & Catalog) | Hub logo, IG follow/favorite, FYM. | Thu Nov 12 |
-| FB group week (Thu table thread, Sat help-me-match) | Tiffany yes → Main (Chrome) | Default: post both as drafted. | Thu Nov 12 |
+| FB group week (Thu table thread, Sat help-me-match) | Tiffany yes → Main (Chrome) | Thu passed with no yes (rolls to Thu Nov 19); Sat 9:30am on her yes (HQ Today #4). | Sat Nov 14 |
 | New arrivals carousel (Thu 11/12) | Tiffany yes → Main | Draft 01a1c214 in Planoly; schedule on yes. | Thu Nov 12 |
-| Work With v3 + Brands form | Ops | Default: goes up HIDDEN next Chrome trip unless she says wait. | Next Chrome trip |
+| Work With v3 + Brands form | Main | HELD by her Nov 12 11:04am: revise after Brand Watch is fully set up (see top Main line), then show her. | Brand Watch done (target Fri Nov 20) |
 | Planoly roll-forward + story-caption fixes | Main (attended) | Unattended update_post refused (7th night); this run made no Planoly writes (no FB target missing). | Thu Nov 12 (slipped from Wed Nov 11) |
 | ManyChat comment-for-links draft + trial reminder (OVERDUE) | Main (Chrome) | Low priority. | Fri Nov 13 |
 | Discount links not converted (Britt Mills, Register, YMI, RMS, Hip Hip, Wren/Soirée/Amanda Toppe) | Main | Fold into link-routes. | Fri Nov 13 |
 | PEACE LOVE → Level 2 ($5K/month → cash) | Main | Plan + PLM MTD in the report. | Fri Nov 13 |
 | Affiliate applications: Haus of Charleston, Lemondrop, The Mahjong House, Bloomjong, Sweet Jojo | Partner watch | Watch mahjmatchmaker@; onboard on approval. | On approval |
 | UpPromote accounts → mahjmatchmaker@ | Tiffany / Main | Screenshots before each switch. | Fri Nov 13 |
+| Google core update response (brand pages, indexing, AIO sources) | Main | Fri code report; re-requests; brand pages on her yes; AIO sources Bam Bird next. | Fri Nov 13 |
+| Album launch email template (approved Nov 12 3:58pm) + Juniper send | Main | Send on her 'send it'; from the next album on it sends on launch day without asking (docs/EMAIL.md). | Fri Nov 13 |
+| Launch-row format test (Juniper practice reels A/B/C) | Main | Show her A/B/C (assets/social/juniper-reel/practice-nov12/) for a pick; nothing posts before her pick. | Fri Nov 13 |
+| Charleston payout owed $115.65 (Oct 23 + Nov orders) | Ops (money run) | Watch the next CMC payout; flag on HQ Money if not paid by month-end. | Mon Nov 30 |
+| Affiliate outreach: Fun Fun Mahjong + 11 TNT brands (hq/applyList) | Main | Filled-in script per brand (her copy, hq/snippets outreach-general) shown for her yes; send only after it. | Fri Nov 13 |
+| Instagram engagement task (daily 2:23/5:23/8:23pm) | scheduled task | Standing likes; daily list as one message; Chrome-closed message once a day. | Daily |
 
 - REVIEW WEEK Dec 7-10 in Planoly (Tiffany Nov 9 1:09am): parked feed posts + single-frame stories. Real date = Dec date minus 28 days. Before Dec 6 EVERY one must be moved back (approved) or unscheduled, or it auto-posts. Owner: Main + nightly desk cleanup.
 
@@ -100,13 +109,15 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 
 ## Waiting on Tiffany (only things she can answer now)
 **On HQ Today, in this order (5):**
-1. **Google + sales: 16 order screenshots** (Bam Bird ×3, Bird & Bamboo ×3, Mini Mahjer ×3, Charleston ×2, My Fair ×2, Middle & Main ×2, +1); the Nov 10 + Nov 11 amounts cards and both Google alerts are merged into this one. Google's AI answer names MAHJMATCH for 26 of 39; Claude re-requests the lost pages.
-2. **Juniper is live: send the Juniper email (Squarespace draft) + yes to post the Juniper It's a mat-ch! Thu** (default: post it Thu after 10am CT).
-3. **Facebook group intros + OMM VIP post: her wording in the Google Doc** (reminder Thu evening).
-4. **Facebook group: Thu table thread + Sat help-me-match: one yes** (default: post both as drafted).
-5. **Work With page v3 + Brands form: live yes** (since Nov 1; default goes up hidden next Chrome trip).
+1. **Google core update: OK to add her own matches + photos to 6 dropped brand pages** (Bam Bird, Anders Ruff, Peace Love, Charleston, OMM, Britt Mills). AI Mode card merged in.
+2. **Juniper email: type 'send it'** (template approved, draft fixed) + 'post it' for the Juniper It's a mat-ch!.
+3. **Today's amounts: My Fair Mahjong** (1 order 1:23pm; commission screenshot).
+4. **Facebook group intros + OMM VIP post: her wording in the Google Doc.**
+5. **Facebook group: Sat 'Help me match': one yes.**
 
-**On HQ This week:** Holy Mahj full Canva image (moved from Today); Quick calls from Sunday (defaults in place); ShopMy 6 quick calls + 2 stray links; 1 hidden FYM photo (Grace Peacock); this week's posts in Planoly's review week; Brand Watch tab.
+**Archived tonight:** alert-site-drop-2026-11-12 (checked 6:22pm, nothing broken), code-drop-2026-11-12 (merged into the Google card). **Work With v3** is HELD (her Nov 12 call), off Today.
+
+**On HQ This week:** Deco Indigo + Mulberry review pages; Holy Mahj full Canva image (moved from Today); Quick calls from Sunday (defaults in place); ShopMy 6 quick calls + 2 stray links; 1 hidden FYM photo (Grace Peacock); this week's posts in Planoly's review week; Brand Watch tab.
 
 **Asked in chat, not yet answered (the owning chat RE-ASKS at the top of every reply, with its default):**
 - Main (was Matches & Catalog) (Nov 10): OK to delete the separate 'Today in mahj, part 2' group post now that the 11/10 post was edited to include it (default: leave it; deleting needs her yes); Cabana Club tile photo yes + swipes; Juniper reel swipes re-timed to the beat if she gives timestamps.
@@ -114,6 +125,8 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - Main (was Matches & Catalog) (older): Seabreeze × LBB Aloha card into FYM m-lists? (default no); Lagoon + Mulberry splits vs new pile photos; Bam Bird Classic Tortoise match pick; Sunday Rattan = Blue Rattan?; Fruit Stand rack-edge (default a); brand-lock pricing (undecided, don't push).
 
 ## Banked (finished, held on purpose)
+- **Noli June + CMC Cabana Club group-post drafts (Nov 12 morning)**: superseded by her 10:40am FB group strategy (no one-off launch posts; links in comments). docs/social/noli-june-margo-rebecca-tiles-2026-11-12.post.txt + cmc-cabana-club-2026-11-12.post.txt: reuse inside the weekly brand post.
+- **Favorite Things visual board (Nov 12)**: assets/social/favorite-things/favorite-things-board.jpg (15 items) for the gift-guide blog/social in December.
 - **OMM Nantucket restock frames (Nov 9)**: assets/social/restock-nantucket-nov09/out/nan-A/B/C (live FYM screens); same-day window passed, HQ card archived (rule 9). Reuse at the next Nantucket restock/reshare.
 - **Holiday album grids + 10s teaser reels (Nov 9 1:31am)**: assets/social/holiday-album-grids (11 albums): the base for the dynamic rebuild (OVERDUE line); not for use as-is (her 1:37am: must be dynamic + sell).
 - **Juniper eye-candy grid**: full-mat version POSTED Nov 9 12:30pm (IG + FB Page + story); close-up version rejected.
@@ -226,31 +239,31 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **Spare-usage projects (her rule Nov 11):** when she says "use the spend" (e.g. 40% left before the weekly reset), do banked/reel work: album reels, Petalée check, OMM thin-album rounds. Never burn usage mid-project.
 
 
-## Daily operations (Wed Nov 11)
+## Daily operations (Thu Nov 12)
 | Operation | Done today? | Notes |
 |---|---|---|
-| Affiliate tracking (Money tab) | ✅ Done (12:04am close pending) | Wed by 12:45pm: 6 orders, $54.22 known + 3 '?'; MTD $2,655.01 known. Tue closed: 11 orders. Screenshots = HQ Today #1 (16). |
-| Google & Revenue report | ✅ Done | docs/reports/google-revenue/2026-11-11.md: 26/39 named; lost Anders Ruff, Charleston, Amahj, YMI, Soirée; back Mini Mahjer; SC clicks -43% wk/wk. Alarm YES. TdT brand page 23 links → auto-apply. |
-| Google code report + scorecard | ✅ Done | Scorecard 2026-11-11: AI Overview 26/39, Google top3 32/39, AI Mode 37/39. Next: Fri. |
+| Affiliate tracking (Money tab) | ✅ Done | Nov 9-11 '?' filled from her 8 screenshots (MTD Nov 11 $3,349.43); Nov 12: 4 orders by 6:22pm (CMC, My Fair, Anders Ruff, Mahj Squad); payouts reconciled (Mahjong Row paid in full, CMC owes $115.65, PayPal fees $92.18). 12:04am close pending. |
+| Google & Revenue report | ✅ Done | docs/reports/google-revenue/2026-11-12.md (CAPTCHA at brand 19); core update confirmed 7:38pm. Alarm YES (HQ Today #1). |
+| Google code report + scorecard | ✅ Done | Scorecard 2026-11-12: 18 of 40 checked. AI Overview (signed-out cloud) 18/40 12:26pm, 15/40 7:23pm. AI Mode 15/17. Next: Fri. |
 | Verified dates (weekly, Mondays) | ⏭ Not due | Next Mon Nov 16. |
 | Codes post (Mondays) | ⏭ Not due | Next Mon Nov 16. |
-| Pinterest queue health | ✅ OK | 4/day scheduled Nov 12-26 (Nov 12: 3), more beyond, 0 errors. |
-| Indexing | ✅ 15 requested (hq/indexing) | Deco Lagoon row still missing (3rd night) → priority 1b. |
-| Planoly next-7-days (IG + FB Page) | ❌ 0 IG scheduled Nov 12-18 | All 36 scheduled groups are in the Dec 7-10 review week (every IG grid has its FB Page target + story groups) or are past-dated reminders (Oct 21 Papaya story, Nov 10 Juniper reminder grid: IG-only, past, left as-is). Tag people: all handles verified. content_lint --planoly --only-ig: 51 FAIL, same posts as Tue (brand-tag 32 = profile-only codes post; hashtag 8, mahjmatch-missing 7, length 4), no new kinds. No FB target needed adding. → priority 2. |
-| New albums (last 7 days) (f) | ⚠️ 1 miss | **Juniper**: /mahjong-tile-matches ✅, Green ✅, OMM page ✅, /links ✅, hq/indexing ✅, Pinterest ✅. **Deco Lagoon**: index ✅, Blue ✅, Bam Bird page ✅, /links ✅ (card is back), Pinterest ✅; ❌ no hq/indexing row (3rd night, OVERDUE). |
-| Repo caption lint (g) | ⚠️ 2 new kinds | 90 FAIL (length 45, naming 36, banned-phrase 5, brand-tag 2, mahjmatch-missing 1, hashtag 1). NEW kinds since Tue: **banned-phrase** (today's no-'every' rule hits the Juniper plain + reel-dating captions and banked S2/ep05 Heritage) and **mahjmatch-missing/hashtag** on assets/social/omm-vip-nov12/caption.txt (OMM-only VIP group post, MAHJMATCH left out on purpose: exempt it). OVERDUE line, Main. |
-| Live codes check | ✅ PASS | 40 brand pages + hub (morning report). |
+| Pinterest queue health | ⚠️ 1 issue | 28 pins Nov 13-19 (~4/day), 0 errors; Mahjong Row Cypress Forest pin on Nov 17 (brand OUT) → priority 2 + OVERDUE. |
+| Indexing | ✅ | OMM + lost pages re-requested Nov 12; Deco Lagoon row added to hq/indexing tonight. |
+| Planoly next-7-days (IG + FB Page) | ❌ 0 IG dated Nov 13-19 | 4th night. No IG group in the window, so no FB target/story/Tag people gaps to fix; content_lint --planoly --only-ig: 0 captions, PASS. → priority 2. |
+| New albums (last 7 days) (f) | ✅ | **Juniper**: /mahjong-tile-matches ✅, Green page ✅, OMM page ✅, /links ✅, hq/indexing ✅, Pinterest ✅ (queue). **Deco Lagoon**: index ✅, Blue page ✅, Bam Bird page ✅, /links ✅, Pinterest ✅, hq/indexing ✅ (row added tonight). |
+| Repo caption lint (g) | ⚠️ No new kinds | 90 FAIL (length 45, naming 36, banned-phrase 5, brand-tag 2, mahjmatch-missing 1, hashtag 1): same kinds as Wed, all on OVERDUE / legacy. |
+| Live codes check | ✅ PASS | 41 pages + hub (6:22pm check). |
 | Gallery sync check | ⚠️ Not run tonight | Live FYM still 1.18; nothing shipped (jsDelivr 403). Morning run. |
-| Coverage + card sharpness | ✅ Ran (coverage.json committed 1:30pm) | partner_coverage now on the front door; 146 FYM readiness gaps baselined (gate [173]). |
-| Restock first (c) | ✅ Checked | No album-set restock dated Thu Nov 12. |
-| Match inbox (e) | ⚠️ ~120 old lines unmarked | Priority 5. |
-| Launch + partner watch | ✅ Done | Partner watch 1:55pm + 6:30pm (6 restocks live, Mahj Pit holiday drop), launch watch 9:15am + 6:05pm (8 new handed to FYM), IG stories check 8:37pm (Brand Watch v21). |
-| FYM + partner feedback | ✅ 0 new | Partner feedback watch ended; HQ ask to turn it off still open (HQ This week). |
-| FYM releases | ❌ None | 1.19 (racks + walls) staged, blocked by jsDelivr 403 (priority 3). 1.18 still live. |
-| Albums | ✅ Planning | Album Calendar + lineup v7, Merry Merry (Mahj Pit) quick-look page (21 picks), OMM counts corrected from live pages, Maven tile review page, no-swipe-books rule. |
-| Social posted today | ⚠️ | Nothing auto-posted for the Juniper drop (priority 2). FB group plan/graphics built, nothing posted (her wording pending). |
-| TNT scan (weekly) | ⏭ Not due (ran Tue), not merged | 15 mats for 5 sets in project docs 81c (+81b): Main merges into config/tnt-recs.json (Handoffs 'TNT scans not merged'), target Fri Nov 13. |
-| HQ + Ready to Ship cleanup | ✅ Done | This run (HQ log). RTS: no new answers. |
+| Coverage + card sharpness | ✅ Coverage owner ran 7pm | Chrome read Amanda Toppe/Soirée/Wren; 38 missing partner items staged (not shipped, OVERDUE); HQ catalog 12/41. |
+| Restock first (c) | ✅ Checked | No album-set restock dated Fri Nov 13. |
+| Match inbox (e) | ⚠️ 125 old lines unmarked | Priority 5. |
+| Launch + partner watch | ✅ Done | Launch watch 9:05am + 6:10pm (5 new), partner watch 9:45am (Noli June tiles, YOLO mats, CMC Cabana Club), stories 12:37pm (2 finds), ShopMy check 9am (nothing new). |
+| FYM + partner feedback | ⚠️ Not checked tonight | Morning run. |
+| FYM releases | ❌ None | 1.19 + 38 coverage items staged, blocked by jsDelivr 403 (priority 3). Home-screen icon option B LIVE on /find-your-match (7:30am). |
+| Albums | ✅ Status check | No album went live; Cabana moved to Started, stalled (Claude's job). Deco Indigo + Mulberry review pages wait her (HQ This week). |
+| Social posted today | ⚠️ | Nothing on IG/FB Page. Built: Juniper practice reels A/B/C, FB group holiday graphic, IG caption-test plan. IG engagement task: partner likes done. |
+| TNT scan (weekly) | ⏭ Not due, not merged | 81b + 81c JSON still to merge into config/tnt-recs.json (Handoffs line), target Fri Nov 13. |
+| HQ + Ready to Ship cleanup | ✅ Done | Sweep 12:58pm + this run (HQ log). RTS: no new answers. |
 
 ## Never-ending projects
 - **Find Your Mat-ch™ app** (artifact 6epA9HuEdT32zUp79Qv3kd; public **Version 1.18** (artifact Version 117, id 1794137165-e544; both FYM pages page-block @9d331637; Mat Gallery v8 r3 @78072ca0 + search @3afb680e; all live Nov 8 ~11:15am); **1.19 = racks-only (Miss Mahjong)** blocked by the jsDelivr 403; the rest of the staged bundle (Deco Lagoon m-list, link routes [172], catalog adds incl. non-partner whole lines, racks, walls, Cabana) ships as small releases per rule 0b: gate + independent QA before every publish (QA loads the WEBSITE copy as live: 0 broken images, gate [115]); artifact AND website copy AND README 0a pin in the same step; +0.1 version label (docs/FYM-VERSIONS.md); her feedback the same day with a gate check; when a publish/paste fails, MESSAGE HER right away. Artifact file budget: run builder/fym_artifact_fit.py and publish ONCE. Every nav/header change: screenshot live at 1280, 1440 and 390 with the phone menu OPEN. New partner catalog in FYM within 24h of its inbox line (gate [114]). Refresh config/fym-mats-snapshot.json after every publish.
@@ -269,9 +282,9 @@ Standing order: RESTOCK FIRST (rule c), then Google #1 (Tiffany Oct 29 11:03pm),
 - **HQ hygiene**: Today ≤5, answered = gone, event passed = gone, timestamps on every card, inline previews; ANSWERS.md before asking anything; no answer is not a no.
 
 
-## Log of this rewrite (Wed Nov 11 night)
-- **Done today:** Google report (26/39) + scorecard; 15 indexing requests; TdT brand page links fixed; Mahjong by SI + Fait à Main (code coming soon) on the codes page; partner coverage check + daily owner task (trig_012DGkmgYqbH5ks6V9Dq9Ldz); FYM all-or-nothing gate [173]; Maven WooCommerce reader + tile review page; brand weights config; FB group intros plan + Google Doc + graphics; OMM VIP post draft; Album Calendar + lineup v7; Favorite Things doc; FYM App Roadmap doc; usage report + icon options; DESK drop check.
-- **Found mid-way and given a home:** see Handoffs line 'Found Wed Nov 11'.
-- **DESK: carried every open line (drop check 0).** Retired-chat owners read as Main. Lines added during the day (TikTok, weddings, Hanukkah, Nov 11 12:57pm notes) moved under Later / ideas, unchanged.
+## Log of this rewrite (Thu Nov 12 night)
+- **Done today:** money screenshots filled + payouts reconciled; HQ v59-v62 (Now first, money range toggle, tap-a-day chart); IG engagement task + rules; FB groups joined (9); Favorite Things doc + board; TNT affiliate list → HQ applyList (11 + 4); AIO source investigation (OMM) + caption test plan; album launch email template approved + draft fixed; Juniper practice reels A/B/C; Google core update diagnosis; AI Overview ≠ AI Mode rule; partner coverage staging (38 items); launch/partner/stories watches.
+- **Found mid-way and given a home:** see Handoffs line 'Found Thu Nov 12'.
+- **DESK: carried every open line (drop check 0).** Wed lines kept as-is; Thu rows added to In progress; Work With row re-owned to Main (HELD).
 
 See CLAUDE.md.
