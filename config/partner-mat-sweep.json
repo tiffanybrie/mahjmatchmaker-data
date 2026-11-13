@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-12T23:10:47+00:00",
+ "swept_at": "2026-11-13T14:09:35+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v119",
  "stores": {
   "amahjline.com": {
@@ -220,7 +220,7 @@
   "bespokemahjong.com": {
    "brand": "Bespoke Mahjong",
    "status": "ok",
-   "products": 332,
+   "products": 331,
    "mats": [
     [
      "2026-10-22T12:17:12-05:00",
@@ -1210,7 +1210,7 @@
   "mahjmood.com": {
    "brand": "Mahj Mood",
    "status": "ok",
-   "products": 53,
+   "products": 54,
    "mats": [
     [
      "2026-11-05T15:11:45-06:00",
@@ -2847,7 +2847,7 @@
   "ymimports.com": {
    "brand": "Yellow Mountain Imports",
    "status": "ok",
-   "products": 430,
+   "products": 431,
    "mats": [],
    "missing": []
   },
@@ -2862,8 +2862,28 @@
   "letsbebesties.com": {
    "brand": "Let's Be Besties",
    "status": "ok",
-   "products": 761,
+   "products": 767,
    "mats": [
+    [
+     "2026-11-12T21:59:13-05:00",
+     "Colorado River AA Artist Collective Mahjong Mat",
+     "colorado-river-aa-artist-collective-mahjong-mat"
+    ],
+    [
+     "2026-11-12T21:52:00-05:00",
+     "Bam Bird AA Artist Collective Mahjong Mat",
+     "bam-bird-aa-artist-collective-mahjong-mat"
+    ],
+    [
+     "2026-11-12T21:37:44-05:00",
+     "Miracle Lillian Claire Designs Artist Mahjong Mat",
+     "miracle-lillian-claire-designs-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-12T21:33:03-05:00",
+     "Indigo and Olive Lillian Claire Designs Artist Mahjong Mat",
+     "indigo-and-olive-lillian-claire-designs-artist-mahjong-mat"
+    ],
     [
      "2026-11-11T14:35:20-05:00",
      "Confetti Kaleidoscope OHBoN Studios Artist Mahjong Mat",
@@ -5611,6 +5631,26 @@
     ]
    ],
    "missing": [
+    [
+     "2026-11-12T21:59:13-05:00",
+     "Colorado River AA Artist Collective Mahjong Mat",
+     "colorado-river-aa-artist-collective-mahjong-mat"
+    ],
+    [
+     "2026-11-12T21:52:00-05:00",
+     "Bam Bird AA Artist Collective Mahjong Mat",
+     "bam-bird-aa-artist-collective-mahjong-mat"
+    ],
+    [
+     "2026-11-12T21:37:44-05:00",
+     "Miracle Lillian Claire Designs Artist Mahjong Mat",
+     "miracle-lillian-claire-designs-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-12T21:33:03-05:00",
+     "Indigo and Olive Lillian Claire Designs Artist Mahjong Mat",
+     "indigo-and-olive-lillian-claire-designs-artist-mahjong-mat"
+    ],
     [
      "2026-11-11T14:35:20-05:00",
      "Confetti Kaleidoscope OHBoN Studios Artist Mahjong Mat",
