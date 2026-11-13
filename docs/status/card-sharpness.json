@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T12:00",
+ "at": "2026-11-13T12:00",
  "cards": 2178,
  "pages": 56,
  "fails": [
@@ -7,7 +7,7 @@
    "page": "amara-mahjong-tile-matches",
    "card": "Amara + Chinoiserie",
    "img": "https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/85e29571-1487-44ce-89be-5f6726ebf851/25-amara-mahjong-tiles-britt-mills-chinoiserie-mat.jpg?format=750w",
-   "why": "blurry mat r=0.236 e2=7.804"
+   "why": "blurry mat r=0.235 e2=7.895"
   },
   {
    "page": "brownstone-bloom-mahjong-tile-matches",
@@ -22,16 +22,46 @@
    "why": "blurry mat r=0.17 e2=0.718"
   },
   {
+   "page": "jasmine-mahjong-tile-matches",
+   "card": "Jasmine + Nichole",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/jasmine-mahjong-tiles-betty-june-jeannette-nichole-mat.jpg",
+   "why": "unreadable (cannot identify image file '/tmp/card_sharpness_cache/42fe512838ad071fb085dcd9d9acc512')"
+  },
+  {
    "page": "lagoon-mahjong-tile-matches",
    "card": "Lagoon + Gray Malin",
    "img": "https://images.squarespace-cdn.com/content/69b1d01289d0f8016ee3d508/09334761-9db2-4a5a-bf17-20b45ec0d5ed/15-lagoon-mahjong-tiles-bespoke-mahjong-gray-malin-mat.jpg?format=750w",
    "why": "blurry mat r=0.188 e2=2.055"
   },
   {
+   "page": "limoncello-mahjong-tile-matches",
+   "card": "Limoncello + Seafoam Cabana",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/limoncello-mahjong-tiles-tala-mahj-cabana-seafoam-blue-ivory-with-citrus-fringe-mat.jpg",
+   "why": "unreadable (cannot identify image file '/tmp/card_sharpness_cache/b73290d9c3c2a882c3ccf2e7e547f3eb')"
+  },
+  {
+   "page": "papaya-spritz-mahjong-tile-matches",
+   "card": "Papaya Spritz + Classic in Lavender",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@fbf7ec953d379647212f69722c3cf90239c09b8b/assets/cards/papaya-spritz/papaya-spritz-mahjong-tiles-bam-bird-boutique-classic-in-lavender-mat.jpg",
+   "why": "blurry mat r=0.182 e2=0.657"
+  },
+  {
    "page": "papaya-spritz-mahjong-tile-matches",
    "card": "Papaya Spritz + Boots &amp; Bubbles in Periwinkle",
    "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@fbf7ec953d379647212f69722c3cf90239c09b8b/assets/cards/papaya-spritz/papaya-spritz-mahjong-tiles-bam-bird-boutique-boots-and-bubbles-in-periwinkle-mat.jpg",
    "why": "blurry mat r=0.208 e2=1.869"
+  },
+  {
+   "page": "pippa-mahjong-tile-matches",
+   "card": "Pippa + Watercolor Floral",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@e718949b/assets/cards/thin-oct26/pippa-mahjong-tiles-wren-mats-watercolor-floral-mat.jpg",
+   "why": "unreadable (cannot identify image file '/tmp/card_sharpness_cache/d16462ea0d7b1481422568d86b2e3d74')"
+  },
+  {
+   "page": "solara-mahjong-tile-matches",
+   "card": "Solara + Peaches and Cream",
+   "img": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@55b9ce20baa66d3d2db213042c2e40acf397ce44/assets/cards/album-fix-nov09/solara-mahjong-tiles-middle-and-main-mahjong-peaches-and-cream-mat.jpg",
+   "why": "blurry mat r=0.142 e2=0.747"
   }
  ]
 }

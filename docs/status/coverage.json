@@ -1,20 +1,21 @@
 {
- "at": "2026-11-11T11:58:38",
+ "at": "2026-11-13T11:55:23",
  "fym": "v118",
  "sources": {
   "fym": "site-app/fym-v118/index.html @7817f04d (live /find-your-match)",
   "gallery": "matgallery-v118.json @4cb195dc (live /mahjong-mats, data-fym=v118)",
   "search": "search-index.json @3afb680e (live search.js pin)"
  },
- "net_at": "2026-11-11T11:58:38",
- "summary": "11 OK, 18 GAP, 1 UNKNOWN",
+ "net_at": "2026-11-13T11:55:23",
+ "summary": "10 OK, 19 GAP, 1 UNKNOWN",
  "gaps": [
-  "Live brand pages with a verified line within 9 days: 38 of 40 (target all); as of 2026-11-11T11:58 | missing: bird-and-bamboo-discount-code-2 (no line), sunday-mahjong-discount-code (no line)",
-  "Hub brands with their own brand page: 38 of 39 (target all) | missing: Maison Mahj",
+  "Live brand pages with a verified line within 9 days: 39 of 41 (target all); as of 2026-11-13T11:55 | missing: bird-and-bamboo-discount-code-2 (no line), sunday-mahjong-discount-code (no line)",
+  "Hub brands with their own brand page: 39 of 41 (target all) | missing: Maison Mahj, Fait à Main",
   "Live brand pages in the sitemap but not on the codes hub: 2 (target 0) | missing: /bird-and-bamboo-discount-code-2, /sunday-mahjong-discount-code",
-  "Approved/overdue items older than 3 days (OVERDUE + DESK Blocked): 8 (target 0); 8 more carry no date, so they cannot age (give each a date) | missing: OVERDUE Nov 7: since 2026-11-07 | Mahjong Register: code is LIVE since Nov 8 (MAHJMAT, OVERDUE Nov 6: since 2026-11-06 | ManyChat: build the first comment-for-links automat, OVERDUE Nov 6: since 2026-11-06 | ManyChat trial reminder: day 12 of the Essential tr, OVERDUE Nov 6: since 2026-11-06 | Mahjong Row & Co. OUT of the site: REMAINING ONLY (, OVERDUE Nov 6: (Nov 6, Main) LAUNCH GAP: Bam Bird MCM Olive restock (announced IG Nov, OVERDUE Nov 6: since 2026-11-06 | BING WEBMASTER TOOLS (Tiffany yes Nov 6): BLOCKED o +2 more",
-  "ShopMy mats live in FYM: 0 of 0 (target all); shopmy-crosscheck-nov08.json: ? staged, 0 Amazon (her pick), 0 skipped, 0 photo-held",
+  "Approved/overdue items older than 3 days (OVERDUE + DESK Blocked): 25 (target 0); 8 more carry no date, so they cannot age (give each a date) | missing: OVERDUE Nov 7: since 2026-11-07 | Mahjong Register: code is LIVE since Nov 8 (MAHJMAT, OVERDUE Nov 6: since 2026-11-06 | ManyChat: build the first comment-for-links automat, OVERDUE Nov 6: since 2026-11-06 | ManyChat trial reminder: day 12 of the Essential tr, OVERDUE Nov 6: since 2026-11-06 | Mahjong Row & Co. OUT of the site: REMAINING ONLY (, OVERDUE Nov 6: (Nov 6, Main) LAUNCH GAP: Bam Bird MCM Olive restock (announced IG Nov, OVERDUE Nov 6: since 2026-11-06 | BING WEBMASTER TOOLS (Tiffany yes Nov 6): BLOCKED o +19 more",
+  "ShopMy mats live in FYM: 0 of 0 (target all); shopmy-crosscheck-nov10.json: ? staged, 0 Amazon (her pick), 0 skipped, 0 photo-held; checked against v119, live is v118",
   "Mats with a price (price filter hides the rest): 1451 of 1574 (target all) | missing: Oh My Mahjong 32, Amazon 28, Let's Be Besties 22, Rebecca Illustrated 7, Bespoke Mahjong 5, Tigre de Tartan 5 +13 more",
+  "Visible FYM mats that are in the Mat Gallery: 1502 of 1507 (target all); out on purpose: side B / twin listing 44, gallery photo hold (with reason) 8, House of Hearts (FYM only, Oct 25) 8, duplicate photo merged into its twin 7, removed brand: her album-matched mats kept in the gallery (Nov 6 1:33pm) 9 | missing: Bespoke Mahjong: Year of the Dragon - Periwinkle, Mahjong Register: Letters to Santa Double-Sided Leatherette, Mahjong Register: Holly Jolly Double-Sided Leatherette, Charleston Mahjong Club: Club Mat, My Fair Mahjong: Confetti Lemon Lime",
   "Live album pages wired to an FYM tile set: 38 of 45 (target all) | missing: deco-lagoon, lilac-soiree, papaya-spritz, preppy-soiree, shangri-la, spring-love +1 more",
   "FYM sets with her picks that link to their album: 48 of 53 (target all) | missing: December 1994, Hummingbird, Sunday, Papaya Spritz, Spirit of Christmas",
   "Table view walls (back colour confirmed): 254 of 282 visible tile sets (target all) | missing: Holly Jolly (Rudolph Red), Holly Jolly (Grinch Green), Nutcracker Ballet, Round Top Stamped, White Signature, The Belle +22 more",
@@ -54,35 +55,35 @@
    "id": "truth_brands",
    "area": "Codes",
    "status": "OK",
-   "have": 39,
-   "total": 39,
+   "have": 41,
+   "total": 41,
    "target": "all",
-   "text": "Hub brands with a code-truth entry, pct or terms (live_codes_check can catch a wrong offer): 39 of 39 (target all)"
+   "text": "Hub brands with a code-truth entry, pct or terms (live_codes_check can catch a wrong offer): 41 of 41 (target all)"
   },
   {
    "id": "verified",
    "area": "Codes",
    "status": "GAP",
-   "have": 38,
-   "total": 40,
+   "have": 39,
+   "total": 41,
    "target": "all",
-   "text": "Live brand pages with a verified line within 9 days: 38 of 40 (target all); as of 2026-11-11T11:58 | missing: bird-and-bamboo-discount-code-2 (no line), sunday-mahjong-discount-code (no line)"
+   "text": "Live brand pages with a verified line within 9 days: 39 of 41 (target all); as of 2026-11-13T11:55 | missing: bird-and-bamboo-discount-code-2 (no line), sunday-mahjong-discount-code (no line)"
   },
   {
    "id": "hub_pages",
    "area": "Codes",
    "status": "GAP",
-   "have": 38,
-   "total": 39,
+   "have": 39,
+   "total": 41,
    "target": "all",
-   "text": "Hub brands with their own brand page: 38 of 39 (target all) | missing: Maison Mahj"
+   "text": "Hub brands with their own brand page: 39 of 41 (target all) | missing: Maison Mahj, Fait à Main"
   },
   {
    "id": "orphan_brand_pages",
    "area": "Codes",
    "status": "GAP",
    "have": 2,
-   "total": 40,
+   "total": 41,
    "target": "0",
    "text": "Live brand pages in the sitemap but not on the codes hub: 2 (target 0) | missing: /bird-and-bamboo-discount-code-2, /sunday-mahjong-discount-code"
   },
@@ -90,10 +91,10 @@
    "id": "approved_old",
    "area": "Ops",
    "status": "GAP",
-   "have": 8,
-   "total": 45,
+   "have": 25,
+   "total": 88,
    "target": "0",
-   "text": "Approved/overdue items older than 3 days (OVERDUE + DESK Blocked): 8 (target 0); 8 more carry no date, so they cannot age (give each a date) | missing: OVERDUE Nov 7: since 2026-11-07 | Mahjong Register: code is LIVE since Nov 8 (MAHJMAT, OVERDUE Nov 6: since 2026-11-06 | ManyChat: build the first comment-for-links automat, OVERDUE Nov 6: since 2026-11-06 | ManyChat trial reminder: day 12 of the Essential tr, OVERDUE Nov 6: since 2026-11-06 | Mahjong Row & Co. OUT of the site: REMAINING ONLY (, OVERDUE Nov 6: (Nov 6, Main) LAUNCH GAP: Bam Bird MCM Olive restock (announced IG Nov, OVERDUE Nov 6: since 2026-11-06 | BING WEBMASTER TOOLS (Tiffany yes Nov 6): BLOCKED o +2 more"
+   "text": "Approved/overdue items older than 3 days (OVERDUE + DESK Blocked): 25 (target 0); 8 more carry no date, so they cannot age (give each a date) | missing: OVERDUE Nov 7: since 2026-11-07 | Mahjong Register: code is LIVE since Nov 8 (MAHJMAT, OVERDUE Nov 6: since 2026-11-06 | ManyChat: build the first comment-for-links automat, OVERDUE Nov 6: since 2026-11-06 | ManyChat trial reminder: day 12 of the Essential tr, OVERDUE Nov 6: since 2026-11-06 | Mahjong Row & Co. OUT of the site: REMAINING ONLY (, OVERDUE Nov 6: (Nov 6, Main) LAUNCH GAP: Bam Bird MCM Olive restock (announced IG Nov, OVERDUE Nov 6: since 2026-11-06 | BING WEBMASTER TOOLS (Tiffany yes Nov 6): BLOCKED o +19 more"
   },
   {
    "id": "shopmy_unaccounted",
@@ -111,7 +112,7 @@
    "have": 0,
    "total": 0,
    "target": "all",
-   "text": "ShopMy mats live in FYM: 0 of 0 (target all); shopmy-crosscheck-nov08.json: ? staged, 0 Amazon (her pick), 0 skipped, 0 photo-held"
+   "text": "ShopMy mats live in FYM: 0 of 0 (target all); shopmy-crosscheck-nov10.json: ? staged, 0 Amazon (her pick), 0 skipped, 0 photo-held; checked against v119, live is v118"
   },
   {
    "id": "price_mats",
@@ -125,11 +126,11 @@
   {
    "id": "gallery_has_fym",
    "area": "Gallery",
-   "status": "OK",
+   "status": "GAP",
    "have": 1502,
-   "total": 1502,
+   "total": 1507,
    "target": "all",
-   "text": "Visible FYM mats that are in the Mat Gallery: 1502 of 1502 (target all); out on purpose: side B / twin listing 44, duplicate (hidden_oct20.csv) 3, duplicate photo merged into its twin 9, gallery photo hold (with reason) 8, House of Hearts (FYM only, Oct 25) 8, removed brand: her album-matched mats kept in the gallery (Nov 6 1:33pm) 9"
+   "text": "Visible FYM mats that are in the Mat Gallery: 1502 of 1507 (target all); out on purpose: side B / twin listing 44, gallery photo hold (with reason) 8, House of Hearts (FYM only, Oct 25) 8, duplicate photo merged into its twin 7, removed brand: her album-matched mats kept in the gallery (Nov 6 1:33pm) 9 | missing: Bespoke Mahjong: Year of the Dragon - Periwinkle, Mahjong Register: Letters to Santa Double-Sided Leatherette, Mahjong Register: Holly Jolly Double-Sided Leatherette, Charleston Mahjong Club: Club Mat, My Fair Mahjong: Confetti Lemon Lime"
   },
   {
    "id": "gallery_shows_hidden",
@@ -304,7 +305,7 @@
   }
  ],
  "net": {
-  "at": "2026-11-11T11:58:38",
+  "at": "2026-11-13T11:55:23",
   "errors": [],
   "fym_pin": {
    "sha": "7817f04d2c907d1ea0d4fd01d857fa7a3cffb8bf",
@@ -451,6 +452,7 @@
    "/juniper-mahjong-tile-matches",
    "/deco-lagoon-mahjong-tile-matches",
    "/mah-jongg-maven-discount-code",
+   "/mahjong-by-si-discount-code",
    "/mahjong-discount-codes"
   ],
   "hub_brands": [
@@ -609,6 +611,14 @@
    [
     "Mah Jongg Maven",
     "/mah-jongg-maven-discount-code"
+   ],
+   [
+    "Mahjong by SI",
+    "/mahjong-by-si-discount-code"
+   ],
+   [
+    "Fait à Main",
+    "https://faitamainstudio.com/"
    ]
   ],
   "holiday_ids": {
@@ -759,6 +769,12 @@
     "redirected": false,
     "verified": "2026-11-09",
     "verified_min": "2026-11-09"
+   },
+   "/mahjong-by-si-discount-code": {
+    "status": 200,
+    "redirected": false,
+    "verified": "2026-11-11",
+    "verified_min": "2026-11-11"
    },
    "/mahjong-co-discount-code": {
     "status": 200,
