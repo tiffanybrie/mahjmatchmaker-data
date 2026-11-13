@@ -1,0 +1,22 @@
+{
+ "run": "2026-11-13T12:37 ET (read 12:40-13:20)",
+ "handles_checked": ["ohmymahjong","bambirdboutique","missmahjongofficial","myfairmahjong","bespoke_mahjong","andersruffdesignco","peacelovemahjong","bird_and_bamboo","mahj_mood","minimahjer","charlestonmahjongclub"],
+ "extra_dated_partners": "none beyond tier A (Bespoke 11/14, Miss Mahjong 11/18, Mahj Mood 11/20 are tier A)",
+ "with_stories": ["ohmymahjong","bambirdboutique","missmahjongofficial","myfairmahjong","bespoke_mahjong","andersruffdesignco","peacelovemahjong","mahj_mood","minimahjer","charlestonmahjongclub"],
+ "frames_read": 63,
+ "per_handle": {
+  "ohmymahjong": "13 frames: Charleston how-to series + reel share + customer repost. No product news.",
+  "bambirdboutique": "9 frames: Town & Country gift-guide press (Origami set), Outlook-outage joke, HK tiles, customer repost, Fleastyle 'Holiday Tiles & Tea' event Sat 12/5 Frisco TX (event, not a drop), box reel. No product news.",
+  "missmahjongofficial": "5 frames: Merchant of Mahjong reshare linking Miss Out Of Office (existing set since Jul), 'News, she's almost here' teaser + cross-stitch lilac reel (= Miss Darling Lilac, already on watch for Wed 11/18), customer cookies. No new news.",
+  "myfairmahjong": "2 frames: customer reposts.",
+  "bespoke_mahjong": "7 frames: Black Friday 25% off sitewide / 15% off tables (already on watch from affiliate email, approved), Chalet shop links (existing), customer reels. No new news; Glitter Glow 11/14 drop not mentioned.",
+  "andersruffdesignco": "~11 frames: customer reposts (holiday tiles, Bams & Bubbly, league tables), mahjongtablescapes code reshare, elf reel. No product news.",
+  "peacelovemahjong": "3 frames: Pause for a Cause sponsors ask, 'Just dropped' keychain reel (already on watch 11/11), 'Naughty or Nice, deals are coming' (BF from 11/16 already on watch).",
+  "bird_and_bamboo": "no active story",
+  "mahj_mood": "7 frames: Lake Day Q&A (tile size, Lake Day mat, transparent blue racks later this month, dragons, flowers) - all already on watch (Lake Day Fri 11/20); travel selfie (Jingle Bam Jam).",
+  "minimahjer": "2 frames: retailer repost, kids reel.",
+  "charlestonmahjongclub": "4 frames: Mahj with the Makers event repost, No. 8 'Bam Crack Dot' tile bag (existing since Oct 9), Cabana Club customer reposts."
+ },
+ "finds": [],
+ "notes": "Sales rule: Bespoke BF already approved from email source; nothing new logged. Story API read via page JS was denied by the permission classifier; frames read visually."
+}
