@@ -8,7 +8,7 @@
       "time": "9am CT",
       "brand": "Bespoke Mahjong",
       "partner": true,
-      "what": "Glitter Glow holiday tiles in red and green drop Sat 11/14 at 9am CT.",
+      "what": "Glitter Glow holiday tiles in red and green drop Sat 11/14 at 9am CT, and they are part of the Black Friday sale (25% off).",
       "tag": "tiles",
       "new": true,
       "urgency": "NOW",
@@ -16,7 +16,7 @@
       "url": "https://www.instagram.com/reel/DfqFMexpF1k/",
       "source": "IG story",
       "source_link": "https://www.instagram.com/stories/bespoke_mahjong/",
-      "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/partner-catalogs-sqsp/assets/launches/bespoke-glitter-glow/bespoke-glitter-glow-drops-1114-ig-story-nov12.jpg",
+      "img": "https://cdn.shopify.com/s/files/1/0837/2142/1083/files/Untitled_1500x1500px_Logo_32.png?v=1793802225",
       "found": "2026-11-12T18:35",
       "action": "Date first in Brand news sheet 6:35pm (reel DfqFMexpF1k); confirmed in IG story 10:40pm; curated was behind (6:23pm watch did not write it).",
       "history": [
@@ -24,7 +24,8 @@
           "found": "2026-11-04",
           "what": "Glitter Glow tiles in holiday red and green are coming in November. No exact date yet."
         }
-      ]
+      ],
+      "nocode": true
     },
     {
       "date": "2026-11-12",
@@ -83,7 +84,9 @@
           "found": "2026-11-12T09:45",
           "what": "Full-size Cabana Club tiles ($425) are now on the public product page, with a pre-order tag. Earlier: email subscribers had first access."
         }
-      ]
+      ],
+      "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/partner-catalogs-sqsp/assets/launches/charlestonmahjongclub-cabana-club/cabana-club-tiles-flat-layout.jpg",
+      "photo_note": "Nov 13: CMC's Cabana page is a copy of Hunt Club (handle the-hunt-club-edition-copy); the page had pulled the Hunt Club photo. Explicit photo set; build now refuses a copied page without one."
     },
     {
       "date": "2026-11-10",
@@ -133,22 +136,6 @@
     {
       "date": "2026-11-10",
       "day": "Tue 11/10",
-      "time": "LIVE (email early access, 5:55am CT)",
-      "brand": "Charleston Mahjong Club",
-      "partner": true,
-      "what": "Full-size Cabana Club tiles are here ($425). Email subscribers get first access; the next batch is due in December.",
-      "tag": "tiles",
-      "urgency": "NOW",
-      "buy": "https://www.charlestonmahjongclub.com/products/the-hunt-club-edition%E2%84%A2-copy",
-      "source": "email Nov 10 'Cabana Club Is Here!'; reel https://www.instagram.com/reel/DfX1w9hRo7l/",
-      "action": "Group post drafted (docs/social/cmc-cabana-club-2026-11-10.post.txt); swap in the product link when it opens to everyone; new in Find Your Mat-ch when listed.",
-      "url": "https://www.charlestonmahjongclub.com/products/the-hunt-club-edition%E2%84%A2-copy",
-      "found": "2026-11-10T09:50",
-      "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/089662ddfcef7047f14e756a4469e59fa87ab2d4/assets/launches/charlestonmahjongclub-cabana-club/cabana-club-tiles-flat-layout.jpg"
-    },
-    {
-      "date": "2026-11-10",
-      "day": "Tue 11/10",
       "time": "10am CT",
       "brand": "Miss Mahjong",
       "partner": true,
@@ -180,7 +167,8 @@
           "found": "2026-11-10T09:50",
           "what": "Domino Blonde mat drops today at 4pm CT, in the classic edition and with American Mahjong rules."
         }
-      ]
+      ],
+      "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/partner-catalogs-sqsp/assets/launches/tigredetartan-mahjong-mat-domino-blonde/1.jpg"
     },
     {
       "date": "2026-11-10",
@@ -476,6 +464,24 @@
     }
   ],
   "just_dropped": [
+    {
+      "date": "2026-11-09",
+      "day": "Mon 11/9",
+      "brand": "Rebecca Illustrated",
+      "partner": true,
+      "shopmy": true,
+      "what": "New Après-Mahjong mat ($115), an après-ski scene.",
+      "tag": "mat",
+      "urgency": "NOW",
+      "buy": "https://rebeccaillustrated.com/products/apres-mahjong-mat",
+      "nocode": true,
+      "url": "https://rebeccaillustrated.com/products/apres-mahjong-mat",
+      "img": "https://cdn.shopify.com/s/files/1/0276/5540/5642/files/Untitleddesign_32_fab1b9ac-0773-4560-93e1-7dec385585ce.png?v=1794502702",
+      "found": "2026-11-13T12:05",
+      "source": "store",
+      "source_kind": "store",
+      "note": "Missed Nov 9-13: ShopMy brands' stores were not in the store watch (added Nov 13). Link is the plain product page until a ShopMy link is made (OVERDUE)."
+    },
     {
       "date": "2026-11-12",
       "day": "Thu 11/12",
@@ -996,18 +1002,23 @@
       "date": "2026-11-12",
       "brand": "Bespoke Mahjong",
       "partner": true,
-      "what": "Black Friday sale: 25% off sitewide and 15% off tables.",
+      "what": "Black Friday sale: 25% off sitewide and 15% off tables, applied automatically at checkout (Nov 12-22). Discount codes can't be added on top.",
       "tag": "sale",
       "ends": "",
       "urgency": "NOW",
       "buy": "https://www.bespokemahjong.com",
       "url": "https://www.instagram.com/stories/bespoke_mahjong/",
       "found": "2026-11-12T22:40",
-      "source": "IG story",
-      "source_kind": "social",
-      "approved": null,
-      "hidden": true,
-      "action": "From IG story 11/12 (repost of @windsanddragonsmahjong): 'Black Friday EVENT is here'. Social-sourced: hidden, pending her yes (Stories task rule). BF is a standing yes per rules, so the next attended chat confirms with the store / partner email before un-hiding."
+      "source": "store banner + affiliate email Nov 13",
+      "source_kind": "email",
+      "approved": true,
+      "hidden": false,
+      "day": "Thu 11/12",
+      "time": "LIVE now through Sun 11/22",
+      "bf": true,
+      "nocode": true,
+      "affiliate_terms": "Sheri Wood (Bespoke) affiliate email Nov 13 10:03am: affiliate codes can't be combined with sale pricing and sale items earn NO affiliate commission Nov 12-22 (Glitter Glow included); commissions resume Nov 23.",
+      "updated": "2026-11-13T12:05"
     },
     {
       "date": "2026-11-10",
@@ -1042,6 +1053,40 @@
       "url": "https://www.instagram.com/reel/DfdqlVAtDwp/",
       "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/089662ddfcef7047f14e756a4469e59fa87ab2d4/assets/launches/noli-june-falaladies-teaser/ig-De5Hx2DPeDI-ruth-on-table.jpg",
       "hidden": true
+    },
+    {
+      "date": "2026-11-27",
+      "day": "Fri 11/27",
+      "time": "through Cyber Monday 11/30",
+      "brand": "Charleston Mahjong Club",
+      "partner": true,
+      "what": "Black Friday: buy 2 items save 10%, 3 save 15%, 4+ save 20%, plus Country Club, Cocktail Club and Yacht Club bundles (tiles + mat + tile bag) for $425 (regularly $530). Code MAHJMATCH takes another 10% off on top.",
+      "tag": "sale",
+      "bf": true,
+      "approved": true,
+      "urgency": "SOON",
+      "buy": "https://www.charlestonmahjongclub.com/",
+      "source": "affiliate email Nov 12 'Affiliate Sneak Peek'",
+      "source_kind": "email",
+      "affiliate_terms": "Codes STACK with the BF deals; commission paid.",
+      "found": "2026-11-13T12:05"
+    },
+    {
+      "date": "2026-11-20",
+      "day": "Fri 11/20",
+      "time": "through Sun 11/22",
+      "brand": "Bam Bird Boutique",
+      "partner": true,
+      "what": "Black Friday: 15% off sitewide Fri 11/20 to Sun 11/22, including Tortoise Travel Standard tiles (some exclusions).",
+      "tag": "sale",
+      "bf": true,
+      "approved": true,
+      "urgency": "SOON",
+      "buy": "https://www.bambirdboutique.com/",
+      "source": "brand email Nov 12 'Black Friday, Bam Bird Style!'",
+      "source_kind": "email",
+      "affiliate_terms": "Not stated whether our code stacks; ask Bam Bird (her yes needed to contact a brand).",
+      "found": "2026-11-13T12:05"
     }
   ],
   "nonpartners": [
@@ -1154,5 +1199,5 @@
       "url": ""
     }
   ],
-  "updated": "2026-11-12T22:40"
+  "updated": "2026-11-13T12:05"
 }

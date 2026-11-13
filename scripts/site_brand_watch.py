@@ -70,6 +70,7 @@ def bcode(brand):   # Nov 11 4:41pm: each brand's OWN code (Yellow Mountain = MA
     t = next((v for kk, v in (_CT.get('terms') or {}).items() if _ckey(kk) in (k, k2)), {}) or {}
     return t.get('code') if t.get('code') and ' ' not in str(t.get('code')) else 'MAHJMATCH'
 def shop(x):
+    if x.get('nocode') and x.get('buy'): return (x['buy'], False), None   # Nov 13: a sale our code can't be used with (Bespoke BF Nov 12-22): plain link, no code line
     r = route(x['brand']); hosts = r.get('store_hosts') or []; BC = quote(bcode(x['brand']))
     b = x.get('buy') or ''
     if b and '/products/' not in b.replace('%2F', '/') and not TEASER.search(x['what'].split(';')[0]):   # explicit store/collection link: use it as given
@@ -119,7 +120,12 @@ def live_img(x):
             except Exception: _LIVE[key] = ''
         if _LIVE[key]: return _LIVE[key]
     return None
+COPYPAGE = re.compile(r'/products/[^/?#]*-copy(?:-\d+)?(?:[/?#]|$)', re.I)
 def line(x):
+    # Nov 13 (Tiffany 11:22am): CMC built the Cabana Club page by copying Hunt Club ('the-hunt-club-edition-copy'); the page
+    # pulled the HUNT CLUB photo. A copied product page carries the old product's photos, so it needs its own `img`.
+    if x.get('partner') and not x.get('hidden') and not x.get('img') and COPYPAGE.search((x.get('buy') or x.get('url') or '').replace('%E2%84%A2', '')):
+        sys.exit(f"BRAND WATCH REFUSED: {x['brand']} '{x['what'][:60]}' links a COPIED product page ({x.get('buy') or x.get('url')}); its photo may be the old product's. Set `img` to a photo of THIS product.")
     (lk, img) = shop(x); img = x.get('img') or img or live_img(x)   # Nov 11: explicit photo > snapshot > the live product page
     when = ' · '.join(t for t in (x.get('day'), x.get('time')) if t)
     btn = ''
