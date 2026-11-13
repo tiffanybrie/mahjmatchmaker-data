@@ -38,7 +38,7 @@ Next: identify each locked-in creator's sources; check Anders Ruff, Charleston, 
 ## Nov 12 2026 evening: WHY sales fell (Tiffany 7:38pm "there's a Google problem")
 1. Google's November 2026 core update was announced Nov 10 1:07pm ET (big movements already Nov 8-9), rolls out ~2 weeks
    (into Black Friday). CORRECTION (Tiffany 7:58pm): the old '37 of 38 on Nov 8' was NOT an AI Overview number (lumped
-   with AI Mode and from her personalised Chrome). There is NO clean AI Overview history before Nov 12.
+   with AI Mode and from her personalised Chrome). WRONG AGAIN (Tiffany 10:52pm): AI Overview HAS been monitored separately since Oct 17 (HQ seo docs aiSummary). AI Overview series (her Chrome): Oct 17 23/35, Oct 19 26/35, Oct 21 25/35, Oct 22 26/35, Oct 23 27/35, Oct 26 29/35, Oct 28 24/35. From Oct 31 to Nov 11 the summaries say 'AI answers' (mixed wording; she says the AI Overview never reached 37/38, so those runs are not trusted as AI Overview counts).
    Clean AI Overview (signed-out cloud) Nov 12: 18 of 40 at 12:26pm, 15 of 40 at 7:23pm.
    Source: seroundtable.com/google-november-2026-core-update-42504.html
 2. Our laptop checks OVERSTATED us: her signed-in Chrome is personalised (she visits our site constantly). The signed-out
