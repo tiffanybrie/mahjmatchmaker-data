@@ -70,3 +70,6 @@ doesn't name us), Miss Mahjong (4 vs 9), Mahj Squad (1 vs 4).
 
 ## AI MODE TOO (Tiffany Nov 6 2026 ~1am: "brands we're showing up for in both AI and AI overview... none... only one")
 The morning report checks BOTH for every brand: AI Overview (normal results) AND AI Mode (same query + `&udm=50`). Record per brand: overview named/cited, aiMode named/cited, and report four lists: BOTH / OVERVIEW ONLY / AI MODE ONLY / NEITHER. AI Mode in her signed-in Chrome is personalized: click "Try without personalization" when shown. First full read: docs/reports/ai-mode/2026-11-06.md.
+
+## PACE RULE (Tiffany Nov 12 11:18pm, after Claude said "on track for \$9,000, ahead of October" from the month average)
+Any month projection = last 7 finished days x days left + month to date, stated with the 7-day average. Never project from the month-to-date average (launch days inflate it). Never say "on track"/"ahead" unless the 7-day pace says so.
