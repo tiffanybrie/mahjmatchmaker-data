@@ -25,3 +25,8 @@ IG /popular/ page, FB group post, Reddit, YouTube Short, codes page, coupon site
 Compare against the brand's history in ALL earlier reports (not just yesterday) and against its sales. The money is
 in the AI Overview; AI Mode is the easy one. Example (OMM, Nov 12): docs/google/aio-sources/2026-11-12-oh-my-mahjong.md.
 Skip Wren Mats' wrong-code issue (Tiffany: not worth the time).
+
+## AI OVERVIEW AND AI MODE ARE NEVER ONE NUMBER (Tiffany Nov 12 2026 7:58pm + 10:52pm)
+The summary line and every table report "AI Overview names MAHJMATCH for X of N" and, separately, "AI Mode: X of N".
+Never "AI answers", "Google AI" or any merged count (from Oct 31 the summaries said "AI answers" and the numbers became
+untrustworthy). AI Overview first: it is the one that makes money.
