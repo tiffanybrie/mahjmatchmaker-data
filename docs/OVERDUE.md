@@ -91,4 +91,6 @@
 - [Nov 13 Main] Partner newsletters blocked by hCaptcha (her ~10s each, moved off DESK): Tigre de Tartán, My Fair, Mini Mahjer, The Mahjong Press, Amahj, Bam! Let's Mahjong, Mahj Mood, Let's Be Besties, Splash of Color: sign up mahjmatchmaker@gmail.com in the site footer; then mark docs/PARTNER-NEWSLETTERS.md.
 - [Nov 13 Main] Rebecca Illustrated Après-Mahjong mat: make the ShopMy link (Brand Watch shows the plain product page until then) and bring it into FYM/gallery per gates.
 - [Nov 13 Main] Bam Bird BF (Nov 20-22, 15%): code stacking not stated in their email; ask Bam Bird only on her yes (brand contact).
-
+- since 2026-11-13 | DECO (LAGOON) WED REEL FB CAPTION too long: Planoly group 01a1d617-4740 (facebook reel post 01a1d617-4754) is 420 chars before hashtags (lint limit 350); also assets/social/week-2026-11-16/captions/plain-post-source/ig-caption.txt 359. Shorten both (plain_post.py, no freehand), re-run content_lint --planoly --only-ig | Main | Tue Nov 17
+- since 2026-11-13 | BRITT MILLS BRAND PAGE STALE COPY (Google report Nov 13): page still says neoprene restock 'late October' in 3 places. Edit the code block (standing authority), live_codes_check PASS | Main (Chrome) | Sun Nov 15
+- since 2026-11-13 | PINTEREST MAHJONG ROW PIN: the Nov 13 desk run's unschedule (set_post_group_schedule, no date) was refused by the unattended safety check. Do it in an attended chat (it publishes Tue Nov 17 11:28am ET) | Main | Sun Nov 15
