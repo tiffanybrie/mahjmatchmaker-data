@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-13T23:09:36+00:00",
+ "swept_at": "2026-11-14T23:09:54+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v119",
  "stores": {
   "amahjline.com": {
@@ -220,7 +220,7 @@
   "bespokemahjong.com": {
    "brand": "Bespoke Mahjong",
    "status": "ok",
-   "products": 331,
+   "products": 325,
    "mats": [
     [
      "2026-10-22T12:17:12-05:00",
@@ -1644,8 +1644,33 @@
   "mahjongrowandco.com": {
    "brand": "Mahjong Row & Co.",
    "status": "ok",
-   "products": 31,
+   "products": 39,
    "mats": [
+    [
+     "2026-11-13T17:48:59-06:00",
+     "Foxhill Plaid Mahjong Mat",
+     "foxhill-plaid-mahjong-mat"
+    ],
+    [
+     "2026-11-13T17:48:45-06:00",
+     "Ellington Navy Mahjong Mat",
+     "ellington-navy-mahjong-mat"
+    ],
+    [
+     "2026-11-13T17:48:30-06:00",
+     "Sloane Floral Mahjong Mat",
+     "sloane-floral-mahjong-mat"
+    ],
+    [
+     "2026-11-13T17:48:17-06:00",
+     "Hawthorne Plaid Mahjong Mat",
+     "hawthorne-floral-mahjong-mat"
+    ],
+    [
+     "2026-11-13T17:46:21-06:00",
+     "Marlowe Green Mahjong Mat",
+     "marlowe-green-mahjong-mat"
+    ],
     [
      "2026-10-05T15:00:47-05:00",
      "Marigold Mahjong Mat",
@@ -1692,7 +1717,33 @@
      "mocha-bloom-dark-mat"
     ]
    ],
-   "missing": []
+   "missing": [
+    [
+     "2026-11-13T17:48:59-06:00",
+     "Foxhill Plaid Mahjong Mat",
+     "foxhill-plaid-mahjong-mat"
+    ],
+    [
+     "2026-11-13T17:48:45-06:00",
+     "Ellington Navy Mahjong Mat",
+     "ellington-navy-mahjong-mat"
+    ],
+    [
+     "2026-11-13T17:48:30-06:00",
+     "Sloane Floral Mahjong Mat",
+     "sloane-floral-mahjong-mat"
+    ],
+    [
+     "2026-11-13T17:48:17-06:00",
+     "Hawthorne Plaid Mahjong Mat",
+     "hawthorne-floral-mahjong-mat"
+    ],
+    [
+     "2026-11-13T17:46:21-06:00",
+     "Marlowe Green Mahjong Mat",
+     "marlowe-green-mahjong-mat"
+    ]
+   ]
   },
   "mahjongstudios.com": {
    "brand": "Mahjong Studios",
@@ -2867,17 +2918,17 @@
   "letsbebesties.com": {
    "brand": "Let's Be Besties",
    "status": "ok",
-   "products": 767,
+   "products": 762,
    "mats": [
     [
-     "2026-11-12T21:59:13-05:00",
-     "Colorado River AA Artist Collective Mahjong Mat",
-     "colorado-river-aa-artist-collective-mahjong-mat"
+     "2026-11-14T11:41:31-05:00",
+     "Snowy Egret Bam Bird Andy Albert Artist Collective Mahjong Mat",
+     "egret-bam-bird-andy-albert-artist-collective-mahjong-mat"
     ],
     [
-     "2026-11-12T21:52:00-05:00",
-     "Bam Bird AA Artist Collective Mahjong Mat",
-     "bam-bird-aa-artist-collective-mahjong-mat"
+     "2026-11-12T21:59:13-05:00",
+     "Colorado River Andy Albert Artist Collective Mahjong Mat",
+     "colorado-river-aa-artist-collective-mahjong-mat"
     ],
     [
      "2026-11-12T21:37:44-05:00",
@@ -5637,14 +5688,14 @@
    ],
    "missing": [
     [
-     "2026-11-12T21:59:13-05:00",
-     "Colorado River AA Artist Collective Mahjong Mat",
-     "colorado-river-aa-artist-collective-mahjong-mat"
+     "2026-11-14T11:41:31-05:00",
+     "Snowy Egret Bam Bird Andy Albert Artist Collective Mahjong Mat",
+     "egret-bam-bird-andy-albert-artist-collective-mahjong-mat"
     ],
     [
-     "2026-11-12T21:52:00-05:00",
-     "Bam Bird AA Artist Collective Mahjong Mat",
-     "bam-bird-aa-artist-collective-mahjong-mat"
+     "2026-11-12T21:59:13-05:00",
+     "Colorado River Andy Albert Artist Collective Mahjong Mat",
+     "colorado-river-aa-artist-collective-mahjong-mat"
     ],
     [
      "2026-11-12T21:37:44-05:00",
