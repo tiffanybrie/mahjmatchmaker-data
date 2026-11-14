@@ -19,12 +19,12 @@
   },
   "Sweet Jojo Designs": {
    "fym_tiles": {
-    "reason": "held until the partnership is live (Tiffany Nov 8 4:51pm rule: brand with a program = hold extras until set up)",
-    "review_by": "2026-11-14"
+    "reason": "NOT approved yet: W-9 resubmitted Nov 8, no approval email in mahjmatchmaker@ as of Nov 14 (only promo mail). Code first: nothing visible before the code. (Tiffany Nov 8 4:51pm rule)",
+    "review_by": "2026-11-21"
    },
    "fym_mat": {
     "reason": "same as fym_tiles",
-    "review_by": "2026-11-14"
+    "review_by": "2026-11-21"
    }
   },
   "I Love Mahj": {
@@ -205,6 +205,46 @@
    "name": "The Pool Mat",
    "reason": "not a mahjong table mat: 36x24 poolside mat, thinner than their table mats (wrenmats.com listing text, coverage run Nov 13)",
    "review_by": "2026-11-27"
+  },
+  "bespokemahjong/special-order-the-palm-beach-table-bespoke-x-grateful-dead-tie-dye-dancing-bears-copy": {
+   "reason": "Bespoke $4,250-$12,000 'Mahjong Sets' listing = an automatic TABLE bundle (Laguna/Palm Beach table + racks + Mega tiles), not a tile set to match; the tiles/mats in it are already in the app (checked products.json body Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  },
+  "bespokemahjong/special-order-the-palm-beach-table-bespoke-x-grateful-dead-we-are-everywhere-skull": {
+   "reason": "Bespoke $4,250-$12,000 'Mahjong Sets' listing = an automatic TABLE bundle (Laguna/Palm Beach table + racks + Mega tiles), not a tile set to match; the tiles/mats in it are already in the app (checked products.json body Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  },
+  "bespokemahjong/special-order-the-palm-beach-table-bespoke-x-grateful-dead-tie-dye-dream": {
+   "reason": "Bespoke $4,250-$12,000 'Mahjong Sets' listing = an automatic TABLE bundle (Laguna/Palm Beach table + racks + Mega tiles), not a tile set to match; the tiles/mats in it are already in the app (checked products.json body Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  },
+  "bespokemahjong/special-order-the-palm-beach-table-bespoke-x-grateful-dead-pink-dancing-bears-copy-copy": {
+   "reason": "Bespoke $4,250-$12,000 'Mahjong Sets' listing = an automatic TABLE bundle (Laguna/Palm Beach table + racks + Mega tiles), not a tile set to match; the tiles/mats in it are already in the app (checked products.json body Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  },
+  "bespokemahjong/special-order-the-palm-beach-table-bespoke-x-grateful-dead-we-are-everywhere": {
+   "reason": "Bespoke $4,250-$12,000 'Mahjong Sets' listing = an automatic TABLE bundle (Laguna/Palm Beach table + racks + Mega tiles), not a tile set to match; the tiles/mats in it are already in the app (checked products.json body Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  },
+  "bespokemahjong/in-stock-love-graffiti": {
+   "reason": "Bespoke $4,250-$12,000 'Mahjong Sets' listing = an automatic TABLE bundle (Laguna/Palm Beach table + racks + Mega tiles), not a tile set to match; the tiles/mats in it are already in the app (checked products.json body Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  },
+  "bespokemahjong/coming-soon-midnight-garden": {
+   "reason": "Bespoke $4,250-$12,000 'Mahjong Sets' listing = an automatic TABLE bundle (Laguna/Palm Beach table + racks + Mega tiles), not a tile set to match; the tiles/mats in it are already in the app (checked products.json body Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  },
+  "bespokemahjong/special-order-bespoke-x-corey-paige-graffiti-street-style": {
+   "reason": "Bespoke $4,250-$12,000 'Mahjong Sets' listing = an automatic TABLE bundle (Laguna/Palm Beach table + racks + Mega tiles), not a tile set to match; the tiles/mats in it are already in the app (checked products.json body Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  },
+  "bespokemahjong/corey-paige-electric-love": {
+   "reason": "Bespoke $4,250-$12,000 'Mahjong Sets' listing = an automatic TABLE bundle (Laguna/Palm Beach table + racks + Mega tiles), not a tile set to match; the tiles/mats in it are already in the app (checked products.json body Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  },
+  "bespokemahjong/40mm-magnetic-tiles-acrylic-storage-container": {
+   "reason": "The Mega Tile Acrylic Box: product_type Accessories (storage box), not a tile set (Nov 14, coverage task)",
+   "review_by": "2026-11-28"
   }
  }
 }
