@@ -93,3 +93,4 @@
 - [Nov 13 Main] Bam Bird BF (Nov 20-22, 15%): code stacking not stated in their email; ask Bam Bird only on her yes (brand contact).
 - since 2026-11-13 | DECO (LAGOON) WED REEL FB CAPTION too long: Planoly group 01a1d617-4740 (facebook reel post 01a1d617-4754) is 420 chars before hashtags (lint limit 350); also assets/social/week-2026-11-16/captions/plain-post-source/ig-caption.txt 359. Shorten both (plain_post.py, no freehand), re-run content_lint --planoly --only-ig | Main | Tue Nov 17
 - since 2026-11-13 | BRITT MILLS BRAND PAGE STALE COPY (Google report Nov 13): page still says neoprene restock 'late October' in 3 places. Edit the code block (standing authority), live_codes_check PASS | Main (Chrome) | Sun Nov 15
+- since 2026-11-13 | Stories check Fri 11/13 8:37pm ET skipped: Claude in Chrome extension disconnected (computer asleep or Chrome closed); next attended chat with Chrome reads today's partner stories | Main
