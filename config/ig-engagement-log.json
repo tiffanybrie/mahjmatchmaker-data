@@ -301,6 +301,55 @@
    "post": "https://www.instagram.com/p/DfsfjllP070/",
    "posted": "2026-11-13",
    "what": "Grandma's brisket reel"
+  },
+  {
+   "date": "2026-11-15",
+   "brand": "Let's Be Besties",
+   "post": "https://www.instagram.com/p/DfxPAdtthgt/",
+   "posted": "2026-11-15",
+   "what": "5th collab mat with spill_the_mahj (collab post)"
+  },
+  {
+   "date": "2026-11-15",
+   "brand": "My Fair Mahjong",
+   "post": "https://www.instagram.com/p/DfxG2JOBPrk/",
+   "posted": "2026-11-15",
+   "what": "Balancing our expenses reel"
+  },
+  {
+   "date": "2026-11-15",
+   "brand": "Mahjong by SI",
+   "post": "https://www.instagram.com/p/DfxDZWQpn02/",
+   "posted": "2026-11-15",
+   "what": "Mahj in the Wild, Fall Lanterns mat"
+  },
+  {
+   "date": "2026-11-15",
+   "brand": "Anders Ruff",
+   "post": "https://www.instagram.com/p/Dfw51HVyZBR/",
+   "posted": "2026-11-15",
+   "what": "Charleston sneak peek: rack cases, totes, mat caddy"
+  },
+  {
+   "date": "2026-11-15",
+   "brand": "Oh My Mahjong",
+   "post": "https://www.instagram.com/p/DfwuwgAS0EN/",
+   "posted": "2026-11-15",
+   "what": "Charleston explainer part two"
+  },
+  {
+   "date": "2026-11-15",
+   "brand": "YOLO Mahjong",
+   "post": "https://www.instagram.com/p/DfvgqF7z1Ov/",
+   "posted": "2026-11-14",
+   "what": "Winter Ski + Green Christmas mats"
+  },
+  {
+   "date": "2026-11-15",
+   "brand": "Let's Be Besties",
+   "post": "https://www.instagram.com/p/DfvDAcIySjX/",
+   "posted": "2026-11-14",
+   "what": "Meet Beachy Mahj, Artist Collective"
   }
  ],
  "approved": [],
@@ -473,6 +522,60 @@
     }
    ],
    "later_runs": "17:23 and 20:23 ET runs stopped quietly (today done); 20:23 run wrote this entry from project doc 81d (GitHub 500s at 14:3x)."
+  },
+  {
+   "date": "2026-11-15",
+   "time_et": "15:1x",
+   "list_sent": true,
+   "list_items": 6,
+   "format": "one chat message (SendUserMessage) + push",
+   "likes_done": 7,
+   "method": "Favorites feed scanned back to 11-14 10:47 ET (overlaps last run). All 7 confirmed liked; no action block. Non-partners skipped (mommy.mahjong, mahj.and.more, pretty_little_mahjong, themahjarchive). spill_the_mahj post liked as a Let's Be Besties collab.",
+   "rolled_from_11_14": "No reply to 11-14 list; dropped as stale (Bespoke Glitter Glow rolled twice already).",
+   "pending_list": [
+    {
+     "n": 1,
+     "brand": "Let's Be Besties x Spill the Mahj",
+     "post": "https://www.instagram.com/p/DfxPAdtthgt/",
+     "action": "comment",
+     "text": "Polka dots AND leopard? Zero rules is right. This one is so fun!"
+    },
+    {
+     "n": 2,
+     "brand": "YOLO Mahjong",
+     "post": "https://www.instagram.com/p/DfvgqF7z1Ov/",
+     "action": "comment",
+     "text": "Green Christmas has my heart, that plaid is so classic!"
+    },
+    {
+     "n": 3,
+     "brand": "YOLO Mahjong",
+     "post": "https://www.instagram.com/p/DfvgqF7z1Ov/",
+     "action": "repost (hers)",
+     "bubble": "Two cozy new Christmas mats, arriving early December. Code MAHJMATCH (check YOLO code)"
+    },
+    {
+     "n": 4,
+     "brand": "Anders Ruff",
+     "post": "https://www.instagram.com/p/Dfw51HVyZBR/",
+     "action": "comment",
+     "text": "The mat caddy has me curious! Can't wait to see it all."
+    },
+    {
+     "n": 5,
+     "brand": "Mahjong by SI",
+     "post": "https://www.instagram.com/p/DfxDZWQpn02/",
+     "action": "comment",
+     "text": "What a cozy fall table! Fall Lanterns looks so pretty with those tiles."
+    },
+    {
+     "n": 6,
+     "brand": "Let's Be Besties",
+     "post": "https://www.instagram.com/p/DfvDAcIySjX/",
+     "action": "comment",
+     "text": "Welcome Dana and Debbie! We love a little coastal charm at the table."
+    }
+   ]
   }
  ]
 }
