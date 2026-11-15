@@ -3,31 +3,6 @@
  "week_label": "Week of Sun Nov 8 – Sat Nov 14",
  "this_week": [
   {
-   "date": "2026-11-14",
-   "day": "Sat 11/14",
-   "time": "9am CT",
-   "brand": "Bespoke Mahjong",
-   "partner": true,
-   "what": "Glitter Glow holiday tiles in red and green drop Sat 11/14 at 9am CT, and they are part of the Black Friday sale (25% off).",
-   "tag": "tiles",
-   "new": true,
-   "urgency": "NOW",
-   "buy": "https://www.bespokemahjong.com/products/holiday-mahjong-its-a-vibe-glitter-glow-tiles",
-   "url": "https://www.instagram.com/reel/DfqFMexpF1k/",
-   "source": "IG story",
-   "source_link": "https://www.instagram.com/stories/bespoke_mahjong/",
-   "img": "https://cdn.shopify.com/s/files/1/0837/2142/1083/files/Untitled_1500x1500px_Logo_32.png?v=1793802225",
-   "found": "2026-11-12T18:35",
-   "action": "Date first in Brand news sheet 6:35pm (reel DfqFMexpF1k); confirmed in IG story 10:40pm; curated was behind (6:23pm watch did not write it).",
-   "history": [
-    {
-     "found": "2026-11-04",
-     "what": "Glitter Glow tiles in holiday red and green are coming in November. No exact date yet."
-    }
-   ],
-   "nocode": true
-  },
-  {
    "date": "2026-11-12",
    "day": "Thu 11/12",
    "time": "LIVE now (listed Wed 11/11 10:05pm CT)",
@@ -482,9 +457,143 @@
    "url": "https://www.instagram.com/reel/DfsOal-jc6x/",
    "source": "https://www.instagram.com/reel/DfsOal-jc6x/",
    "found": "2026-11-13T14:10"
+  },
+  {
+   "date": "2026-11-17",
+   "day": "Tue 11/17",
+   "time": "10am ET",
+   "brand": "Bam Bird Boutique",
+   "what": "The Heritage Collection opens for pre-order Tue 11/17 at 10am ET.",
+   "tag": "collection",
+   "urgency": "SOON",
+   "buy": "https://www.bambirdboutique.com",
+   "url": "https://www.bambirdboutique.com",
+   "found": "2026-11-12T13:10",
+   "source": "brand email Nov 12",
+   "source_kind": "email",
+   "partner": true
+  },
+  {
+   "date": "2026-12-02",
+   "day": "Wed 12/2",
+   "brand": "Hip Hip Mahjong",
+   "what": "I Heart Mahj arrives at port 11/22 and should be here around Dec 2. No product page yet.",
+   "tag": "new",
+   "urgency": "LATER",
+   "url": "https://www.instagram.com/p/DfuZpewIGPy/",
+   "found": "2026-11-15T09:50",
+   "source": "IG",
+   "source_kind": "social",
+   "partner": true
+  },
+  {
+   "date": null,
+   "brand": "Anders Ruff",
+   "what": "New rack cases, totes and a mat caddy are coming. No name or date yet.",
+   "tag": "accessories",
+   "urgency": "LATER",
+   "url": "https://www.instagram.com/reel/Dfw51HVyZBR/",
+   "found": "2026-11-15T09:50",
+   "source": "IG",
+   "source_kind": "social",
+   "partner": true
   }
  ],
  "just_dropped": [
+  {
+   "date": "2026-11-13",
+   "day": "Fri 11/13",
+   "brand": "My Fair Mahjong",
+   "what": "Legacy Wave Series Blue Mist tiles ($380) are the newest color: layers of blue with semi-transparent backs.",
+   "tag": "tiles",
+   "new": true,
+   "buy": "https://myfairmahjong.com/products/legacy-wave-blue-mist",
+   "url": "https://www.instagram.com/p/DftNraqFUq7/",
+   "found": "2026-11-13T18:40",
+   "source": "IG + store",
+   "source_kind": "store",
+   "partner": true,
+   "urgency": "NOW"
+  },
+  {
+   "date": "2026-11-14",
+   "day": "Sat 11/14",
+   "brand": "Mahjong by SI",
+   "what": "20 NEW mats in the Mahjong by SI line, from $80: Valentine's (Be Mine, Cupid Crush, Kiss Kiss), Lunar New Year (Lantern Glow, Double Dragon) and more.",
+   "tag": "mat",
+   "new": true,
+   "buy": "https://www.mahjongbysi.com/products/be-mine-mahjong-mat",
+   "url": "https://www.mahjongbysi.com/products/be-mine-mahjong-mat",
+   "img": "https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_14067ec6-760d-48b3-b3c6-9e8348c2a2bf.png?v=1794551621",
+   "found": "2026-11-14T18:10",
+   "source": "store",
+   "source_kind": "store",
+   "partner": true,
+   "urgency": "NOW"
+  },
+  {
+   "date": "2026-11-14",
+   "day": "Sat 11/14",
+   "brand": "Maison Mahj",
+   "what": "NEW holiday mats ($95 each): The Winter Garland, The Maison Ribbon, The Snowfall and The Evergreen.",
+   "tag": "mat",
+   "new": true,
+   "buy": "https://maisonmahj.com/products/the-winter-garland-mat",
+   "url": "https://maisonmahj.com/products/the-winter-garland-mat",
+   "img": "https://cdn.shopify.com/s/files/1/0703/8513/9889/files/050A7321.png?v=1791831161",
+   "found": "2026-11-14T18:10",
+   "source": "store",
+   "source_kind": "store",
+   "partner": true,
+   "urgency": "NOW"
+  },
+  {
+   "date": "2026-11-15",
+   "day": "Sun 11/15",
+   "brand": "House of Hearts Studio",
+   "what": "NEW Folk Art Series mats: hand-painted, bright and whimsical designs, including the signature House of Hearts mat. They arrive in handmade Sunbrella mat bags.",
+   "tag": "mat",
+   "new": true,
+   "buy": "https://www.houseofheartsstudio.com",
+   "url": "https://www.houseofheartsstudio.com",
+   "img": "https://static.wixstatic.com/media/b0458a_43ab8845d6b141eda9b838bb28f32da2~mv2.jpg",
+   "found": "2026-11-15T09:50",
+   "source": "brand email Sun 11/15 8:29am ET",
+   "source_kind": "email",
+   "partner": true,
+   "urgency": "NOW"
+  },
+  {
+   "date": "2026-11-14",
+   "day": "Sat 11/14",
+   "time": "LIVE since Sat 11/14 9am CT",
+   "brand": "Bespoke Mahjong",
+   "partner": true,
+   "what": "Glitter Glow holiday tiles in red and green ($495) are live now. Dropped Sat 11/14 at 9am CT, and part of their Black Friday sale (25% off, no codes on top).",
+   "tag": "tiles",
+   "new": true,
+   "urgency": "NOW",
+   "buy": "https://www.bespokemahjong.com/products/holiday-mahjong-its-a-vibe-glitter-glow-tiles",
+   "url": "https://www.instagram.com/reel/DfqFMexpF1k/",
+   "source": "store",
+   "source_link": "https://www.instagram.com/stories/bespoke_mahjong/",
+   "img": "https://cdn.shopify.com/s/files/1/0837/2142/1083/files/Untitled_1500x1500px_Logo_32.png?v=1793802225",
+   "found": "2026-11-15T14:05",
+   "action": "Store check Sun 11/15 1:35pm ET: red + green both available.",
+   "history": [
+    {
+     "found": "2026-11-04",
+     "what": "Glitter Glow tiles in holiday red and green are coming in November. No exact date yet."
+    },
+    {
+     "found": "2026-11-12T18:35",
+     "what": "Glitter Glow red and green holiday tiles drop Sat 11/14 at 9am CT."
+    }
+   ],
+   "nocode": true,
+   "source_kind": "store",
+   "updated": "2026-11-15T14:05"
+  },
   {
    "date": "2026-11-13",
    "day": "Fri 11/13",
@@ -1173,6 +1282,47 @@
    "source_kind": "email",
    "affiliate_terms": "Not stated whether our code stacks; ask Bam Bird (her yes needed to contact a brand).",
    "found": "2026-11-13T12:05"
+  },
+  {
+   "date": "2026-11-14",
+   "day": "Sat 11/14",
+   "brand": "The Royal Mahjong Society",
+   "partner": true,
+   "what": "Black Friday: 20% off sitewide, including the new Heirloom tile sets (Cottage, Shore, Mahj Royale, Crown Jewels). Through Dec 1.",
+   "tag": "sale",
+   "ends": "2026-12-01",
+   "urgency": "NOW",
+   "buy": "https://theroyalmahjongsociety.com",
+   "url": "https://theroyalmahjongsociety.com",
+   "found": "2026-11-14T13:30",
+   "source": "affiliate email Sat 11/14",
+   "source_kind": "email",
+   "approved": true,
+   "hidden": false,
+   "bf": true,
+   "time": "LIVE now through Dec 1",
+   "affiliate_terms": "RMS affiliate email Nov 14: 20% off for our referrals via link; our code gives 20% too (up from 15%); commission unchanged."
+  },
+  {
+   "date": "2026-11-21",
+   "day": "Sat 11/21",
+   "brand": "Noli June",
+   "partner": true,
+   "what": "Black Friday sale Nov 21 to 30: two mats $329, three $469, four $589, five $699. Three or more ship free. The Postcard Collection is included.",
+   "tag": "sale",
+   "ends": "2026-11-30",
+   "urgency": "SOON",
+   "buy": "https://nolijune.com",
+   "url": "https://nolijune.com",
+   "found": "2026-11-15T14:05",
+   "source": "affiliate email Sun 11/15 11:07am ET",
+   "source_kind": "email",
+   "approved": true,
+   "hidden": true,
+   "bf": true,
+   "embargo": "2026-11-21",
+   "action": "Noli June asks affiliates to HOLD posts until Sat 11/21; full kit (graphics, dates, share-link change that protects commission) arrives Thu 11/19. Do not show before 11/21.",
+   "affiliate_terms": "Elyse (Noli June) email 11/15: tiered bundle pricing; code stacking not stated, kit Thu 11/19 explains the share-link change."
   }
  ],
  "nonpartners": [
@@ -1285,5 +1435,5 @@
    "url": ""
   }
  ],
- "updated": "2026-11-13T14:10"
+ "updated": "2026-11-15T14:05"
 }
