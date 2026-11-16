@@ -3,7 +3,7 @@
  "run": "2026-11-16",
  "gallery": "site/livepatch/matgallery/data/matgallery-v117.json",
  "gallery_fym": "v117",
- "fym_build": "v118",
+ "fym_build": "v119",
  "counts": {
   "collections": 43,
   "pins": 681,
@@ -278,8 +278,8 @@
   {
    "collection": "More Mahjong Mats",
    "brand": "Case-Mate",
-   "name": "Classic Carolina Blue",
-   "fym_key": "case-mate.com/mahjong-mats?v=67665869242504"
+   "name": "Classic Ballet Pink",
+   "fym_key": "case-mate.com/mahjong-mats?v=67665869275272"
   },
   {
    "collection": "More Mahjong Mats",
@@ -3774,7 +3774,7 @@
    "collection_id": 8478595,
    "private": true,
    "pin_id": 96620523,
-   "name": "Classic Carolina Blue",
+   "name": "Classic Ballet Pink",
    "brand": "Case-Mate",
    "shopmy_title": "CASE-MATE | Mahjong Mat",
    "shopmy_link": "https://go.shopmy.us/p-96620523",
@@ -3783,7 +3783,7 @@
    "gallery_img": null,
    "gallery_held": null,
    "in_fym": true,
-   "fym_key": "case-mate.com/mahjong-mats?v=67665869242504",
+   "fym_key": "case-mate.com/mahjong-mats?v=67665869275272",
    "fym_hidden": false,
    "fym_hidden_reason": "",
    "staged": "fym-shopmy-nov07.json",
