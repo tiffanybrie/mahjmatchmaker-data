@@ -3,8 +3,9 @@
 Done in the Instagram web UI (Following > Add to favorites). Signed-in account confirmed as @mahjmatchmaker (sidebar Profile link opens instagram.com/mahjmatchmaker/). Handles come only from config/social/ig-handles.json (verified list).
 Partner list: nonpartner_allow.json `partners` (35 brands, from the live discount codes page) plus Sunday Mahjong.
 
-## Favorited (32 of 50 slots), all reload-confirmed ("Remove from favorites")
+## Favorited (40 of 50 slots), all reload-confirmed ("Remove from favorites")
 First pass (19): ohmymahjong, mahjongrowandco, missmahjongofficial, bambirdboutique, bespoke_mahjong, peacelovemahjong, charlestonmahjongclub, tigre_de_tartan, brittmillsdesign, amandatoppeliving, middleandmainmahjong, mahj_mood, mahj_squad, bird_and_bamboo, bamletsmahjong, mahjandvine, viroramahjongofficial, andersruffdesignco, sunday_mahjong
+Later adds (each reload-confirmed, see dated sections below): yolomahjong, nolijunemahjong (Oct 31), soireeallday.co, maisonmahj (Nov 2), mahjongbysi, mahjonggmaven (Nov 11), mahjpit.co (confirmed Nov 16), fait.a.main (Nov 16).
 The 16 not confirmed last time (all but ohmymahjong, mahjongrowandco, sunday_mahjong) were reload-confirmed this pass.
 Second pass (13 new, each favorited then reload-confirmed): myfairmahjong, amahjline, macmillermahjong, letsmahjon, minimahjer, wrenmats, mahjong_co, i_love_mahj, themahjongpress, theroyalmahjongsociety, letsbebestiesmahjong, ozarkmahjongg, mahjongmoxie
 
@@ -47,3 +48,11 @@ Method note: the favorites menu only updates after a reload, so each add was con
 ## Nov 11 (onboarding run, Chrome signed in as @mahjmatchmaker)
 - Mahjong by SI (direct partner, approved Nov 9): @mahjongbysi, verified from the mahjongbysi.com about page/footer (instagram.com/mahjongbysi). Added to ig-handles.json. FOLLOWED + ADDED TO FAVORITES (menu shows "Remove from favorites").
 - Mah Jongg Maven (@mahjonggmaven): checked, already followed and in Favorites. DONE.
+
+## Nov 16 (Monday brand watch, Chrome signed in as @mahjmatchmaker)
+- Fait à Main (partner, codes page 'coming soon' Nov 11): @fait.a.main, verified from the faitamainstudio.com footer Instagram link. Added to ig-handles.json. Already followed; ADDED TO FAVORITES, reload-confirmed ('Remove from favorites').
+- Mahj Pit (@mahjpit.co): already followed and already in Favorites (menu shows 'Remove from favorites'). The DESK OPS line is done.
+- Mah Jongg Maven + Mahjong by SI: done Nov 11 (above); now also in the top Favorited list so partner_checklist.py counts them.
+- New partners this week: none approved (Sweet Jojo still not approved). New ShopMy brands: none (ShopMy check Nov 16 PASS).
+- Still no footer handle: Hip Hip Mahjong, Mahjong Register, Splash of Color (unchanged).
+- Sunday Mahjong read in Chrome: newest posts Nov 9 (December 1994 tiles packing/shipping reel) and Nov 4 (holiday game card). Non-partner, so not on the reshare list.
