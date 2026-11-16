@@ -218,18 +218,18 @@
   {
    "date": "2026-11-20",
    "day": "Fri 11/20",
-   "time": "No time yet",
+   "time": "10am CT",
    "brand": "Bam Bird Boutique",
    "partner": true,
-   "what": "Tortoise shell tiles are back in stock Fri 11/20, and they are part of the Black Friday sale (Fri 11/20 to Sun 11/22).",
+   "what": "Tortoise shell tiles are back in stock Fri 11/20 at 10am CT, and they are part of the Black Friday sale (Fri 11/20 to Sun 11/22).",
    "tag": "tiles",
    "restock": true,
    "urgency": "SOON",
    "buy": "https://www.bambirdboutique.com/search?q=tortoise",
-   "url": "https://www.instagram.com/stories/bambirdboutique/",
+   "url": "https://www.instagram.com/p/DfzlxDhxT9F/",
    "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/partner-catalogs-sqsp/assets/launches/bambirdboutique-tortoise-tiles/story-1116.jpg",
    "found": "2026-11-16T13:00",
-   "source": "IG story",
+   "source": "IG post + story",
    "source_kind": "social"
   },
   {
@@ -531,6 +531,36 @@
   }
  ],
  "just_dropped": [
+  {
+   "date": "2026-11-16",
+   "day": "Mon 11/16",
+   "brand": "Mahj Mood",
+   "what": "Scalloped Tortoise acrylic racks and pushers ($125) are back in stock.",
+   "tag": "racks",
+   "restock": true,
+   "buy": "https://mahjmood.com/products/scalloped-tortoise-acrylic-racks-and-pushers",
+   "url": "https://mahjmood.com/products/scalloped-tortoise-acrylic-racks-and-pushers",
+   "found": "2026-11-16T18:40",
+   "source": "store",
+   "source_kind": "store",
+   "partner": true,
+   "urgency": "NOW"
+  },
+  {
+   "date": "2026-11-16",
+   "day": "Mon 11/16",
+   "brand": "Virora",
+   "what": "Floréa tiles (Purple, 4 layers, $229) are back in stock.",
+   "tag": "tiles",
+   "restock": true,
+   "buy": "https://www.viroramahjong.com/products/florea",
+   "url": "https://www.viroramahjong.com/products/florea",
+   "found": "2026-11-16T18:40",
+   "source": "store",
+   "source_kind": "store",
+   "partner": true,
+   "urgency": "NOW"
+  },
   {
    "date": "2026-11-13",
    "day": "Fri 11/13",
@@ -1466,5 +1496,5 @@
    "url": ""
   }
  ],
- "updated": "2026-11-16T13:00"
+ "updated": "2026-11-16T18:40"
 }
