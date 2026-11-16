@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-15T23:04:33+00:00",
+ "swept_at": "2026-11-16T14:10:15+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v119",
  "stores": {
   "ohmymahjong.com": {
@@ -1598,8 +1598,18 @@
   "macandmillermahjong.com": {
    "brand": "Mac + Miller Mahjong",
    "status": "ok",
-   "products": 36,
+   "products": 38,
    "mats": [
+    [
+     "2026-11-15T22:12:41-06:00",
+     "Heirloom Collection: Gilded Ginkgo Classic Mahjong Mat",
+     "heirloom-collection-gilded-ginkgo-classic-mahjong-mat"
+    ],
+    [
+     "2026-11-15T22:12:25-06:00",
+     "Heirloom Collection: Chinoiserie Classic Square Mahjong Mat",
+     "heirloom-collection-chinoiserie-scalloped-mahjong-mat-copy"
+    ],
     [
      "2026-11-05T13:49:57-06:00",
      "Perfectly Imperfect Laissez Les Bons Temps Rouler Collection Mahjong Mat",
@@ -1637,7 +1647,7 @@
     ],
     [
      "2026-05-07T22:34:18-05:00",
-     "Year of the Horse Mahjong Mat: Heirloom Collection",
+     "Heirloom Collection: Year of the Horse Classic Mahjong Mat",
      "heirloom-fire-fortune-mahjong-mat"
     ],
     [
@@ -1652,6 +1662,16 @@
     ]
    ],
    "missing": [
+    [
+     "2026-11-15T22:12:41-06:00",
+     "Heirloom Collection: Gilded Ginkgo Classic Mahjong Mat",
+     "heirloom-collection-gilded-ginkgo-classic-mahjong-mat"
+    ],
+    [
+     "2026-11-15T22:12:25-06:00",
+     "Heirloom Collection: Chinoiserie Classic Square Mahjong Mat",
+     "heirloom-collection-chinoiserie-scalloped-mahjong-mat-copy"
+    ],
     [
      "2026-11-05T13:49:57-06:00",
      "Perfectly Imperfect Laissez Les Bons Temps Rouler Collection Mahjong Mat",
@@ -2914,8 +2934,23 @@
   "letsbebesties.com": {
    "brand": "Let's Be Besties",
    "status": "ok",
-   "products": 762,
+   "products": 765,
    "mats": [
+    [
+     "2026-11-15T20:32:52-05:00",
+     "The Hamptons Lillian Claire Designs Artist Mahjong Mat",
+     "the-hamptons-lillian-claire-designs-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-15T20:28:47-05:00",
+     "The Gilded Lotus Lillian Claire Designs Artist Mahjong Mat",
+     "lillian-claire-designs-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-15T20:20:29-05:00",
+     "Celestial Bloom by Charmaine J.W. Artist Mahjong Mat",
+     "celestial-bloom-by-charmaine-j-w-artist-mahjong-mat"
+    ],
     [
      "2026-11-14T11:41:31-05:00",
      "Snowy Egret Bam Bird Andy Albert Artist Collective Mahjong Mat",
@@ -3488,7 +3523,7 @@
     ],
     [
      "2026-11-09T13:46:23-05:00",
-     "Gilded Pearl STM Artist Mahjong Mat",
+     "Gilded Pearl STM Artist Mahjong Mat (Leatherette Only)",
      "gilded-pearl-stm-artist-mahjong-mat"
     ],
     [
@@ -5684,6 +5719,21 @@
    ],
    "missing": [
     [
+     "2026-11-15T20:32:52-05:00",
+     "The Hamptons Lillian Claire Designs Artist Mahjong Mat",
+     "the-hamptons-lillian-claire-designs-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-15T20:28:47-05:00",
+     "The Gilded Lotus Lillian Claire Designs Artist Mahjong Mat",
+     "lillian-claire-designs-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-15T20:20:29-05:00",
+     "Celestial Bloom by Charmaine J.W. Artist Mahjong Mat",
+     "celestial-bloom-by-charmaine-j-w-artist-mahjong-mat"
+    ],
+    [
      "2026-11-14T11:41:31-05:00",
      "Snowy Egret Bam Bird Andy Albert Artist Collective Mahjong Mat",
      "egret-bam-bird-andy-albert-artist-collective-mahjong-mat"
@@ -6255,7 +6305,7 @@
     ],
     [
      "2026-11-09T13:46:23-05:00",
-     "Gilded Pearl STM Artist Mahjong Mat",
+     "Gilded Pearl STM Artist Mahjong Mat (Leatherette Only)",
      "gilded-pearl-stm-artist-mahjong-mat"
     ],
     [
