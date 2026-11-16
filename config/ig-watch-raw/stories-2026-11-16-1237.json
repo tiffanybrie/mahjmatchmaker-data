@@ -1,0 +1,24 @@
+{
+ "run": "2026-11-16T13:00 ET (12:37 slot; started late after a slow repo checkout)",
+ "handles_checked": ["ohmymahjong","bambirdboutique","missmahjongofficial","myfairmahjong","bespoke_mahjong","andersruffdesignco","peacelovemahjong","bird_and_bamboo","mahj_mood","minimahjer","charlestonmahjongclub"],
+ "with_stories": {
+  "ohmymahjong": {"frames": 8, "notes": "Customer repost (Willow tiles), Jokers how-to series (Pung, what jokers can't do), 'find your perfect set' shop link. No product news. One frame was still loading when skipped."},
+  "bambirdboutique": {"frames": 8, "notes": "FIND: tortoise shell tiles 'making its return this Friday' (Fri 11/20) + 'included in our Black Friday sale'. Also BF 15% off sitewide Nov 20-22 (already logged from email), Friendsgiving open play Wed 11/18 (event, not a drop), bags/hats/game promos."},
+  "missmahjongofficial": {"frames": 2, "notes": "Customer reposts (Hallmark set, kid BTS). No product news."},
+  "myfairmahjong": {"frames": 1, "notes": "'Shop Ribbon Pink racks' promo. Ribbon Pink is an existing variant (on the store since Aug 25). Not news."},
+  "bespoke_mahjong": {"frames": 10, "notes": "Customer reposts, Gray Malin promo, giveaway, 'New tile drop' reshare from a creator (no new product in their store; newest sets Glitter Glow, already logged), 70M views reel. No new product news."},
+  "andersruffdesignco": {"frames": 2, "notes": "Customer repost (Moody Peach), Mahjong Runway Santa reel. Earlier frames read by previous runs. No product news."},
+  "peacelovemahjong": {"frames": 8, "notes": "SMS signup for BF alerts, BF daily deal 30% off Borders Dark Pink mat code PINK30 (social-sourced sale: hidden; already in sheet 9:35am), customer reposts, Marybeth Sonart-style mat promo. No new product news."},
+  "bird_and_bamboo": {"frames": 3, "notes": "FIND: five-maker collab teaser (Bird & Bamboo, Mahj Mood, Mahj Squad, Bamamahj, Mi Seen Mahjong) 'stay tuned'. Group photos / Christmas card."},
+  "mahj_mood": {"frames": 2, "notes": "Same five-maker collab teaser reshared from miseenmahjong."},
+  "minimahjer": {"frames": 8, "notes": "Customer reposts, Royal Mini Mahj event, holiday gift promo. No product news."}
+ },
+ "no_story": ["charlestonmahjongclub"],
+ "frames_read": 52,
+ "finds": [
+  {"brand": "Bam Bird Boutique", "what": "Tortoise shell tiles back in stock Fri 11/20; in the BF sale", "urgency": "SOON", "curated": "coming_soon", "img": "assets/launches/bambirdboutique-tortoise-tiles/story-1116.jpg"},
+  {"brand": "Bird & Bamboo", "what": "Five-maker collab teaser, no name or date", "urgency": "LATER", "curated": "coming_soon"}
+ ],
+ "not_logged": ["PLM PINK30 daily deal: social-sourced sale, stays hidden (already in sheet)", "Bam Bird BF sale: already curated from email"],
+ "push": "none: no NOW items, and section 00000 (Nov 12) stops NOW pushes"
+}
