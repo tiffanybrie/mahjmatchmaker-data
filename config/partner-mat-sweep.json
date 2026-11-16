@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-16T14:10:15+00:00",
+ "swept_at": "2026-11-16T23:12:27+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v119",
  "stores": {
   "ohmymahjong.com": {
@@ -193,10 +193,6 @@
     ]
    ],
    "missing": []
-  },
-  "amandatoppeart.com": {
-   "brand": "Amanda Toppe",
-   "status": "error (not a Shopify store / no products.json?): HTTP Error 404: Not Found"
   },
   "shop.andersruff.com": {
    "brand": "Anders Ruff",
@@ -991,8 +987,13 @@
   "brittmillsdesign.com": {
    "brand": "Britt Mills",
    "status": "ok",
-   "products": 728,
+   "products": 740,
    "mats": [
+    [
+     "2026-11-16T14:57:08-05:00",
+     "Plumage Neoprene Mahjong Mat",
+     "plumage-neoprene-mahjong-mat"
+    ],
     [
      "2026-11-13T09:10:47-05:00",
      "Plumage II Leatherette Mahjong Mat",
@@ -1376,6 +1377,11 @@
    ],
    "missing": [
     [
+     "2026-11-16T14:57:08-05:00",
+     "Plumage Neoprene Mahjong Mat",
+     "plumage-neoprene-mahjong-mat"
+    ],
+    [
      "2026-11-13T09:10:47-05:00",
      "Plumage II Leatherette Mahjong Mat",
      "plumage-ii-leatherette-mahjong-mat"
@@ -1547,10 +1553,6 @@
     ]
    ],
    "missing": []
-  },
-  "ilovemahj.com": {
-   "brand": "I Love Mahj",
-   "status": "error (not a Shopify store / no products.json?): HTTP Error 404: Not Found"
   },
   "letsmahj-on.com": {
    "brand": "Let's Mahj On",
@@ -1889,191 +1891,9 @@
    "mats": [],
    "missing": []
   },
-  "mahjongrowandco.com": {
-   "brand": "Mahjong Row & Co.",
-   "status": "ok",
-   "products": 39,
-   "mats": [
-    [
-     "2026-11-13T17:48:59-06:00",
-     "Foxhill Plaid Mahjong Mat",
-     "foxhill-plaid-mahjong-mat"
-    ],
-    [
-     "2026-11-13T17:48:45-06:00",
-     "Ellington Navy Mahjong Mat",
-     "ellington-navy-mahjong-mat"
-    ],
-    [
-     "2026-11-13T17:48:30-06:00",
-     "Sloane Floral Mahjong Mat",
-     "sloane-floral-mahjong-mat"
-    ],
-    [
-     "2026-11-13T17:48:17-06:00",
-     "Hawthorne Plaid Mahjong Mat",
-     "hawthorne-floral-mahjong-mat"
-    ],
-    [
-     "2026-11-13T17:46:21-06:00",
-     "Marlowe Green Mahjong Mat",
-     "marlowe-green-mahjong-mat"
-    ],
-    [
-     "2026-10-05T15:00:47-05:00",
-     "Marigold Mahjong Mat",
-     "marigold-mahjong-mat"
-    ],
-    [
-     "2026-01-13T12:11:49-06:00",
-     "Autumn Saffron Mahjong Mat",
-     "autumn-saffron-mat"
-    ],
-    [
-     "2026-01-06T13:17:24-06:00",
-     "Ivy Reverie Mahjong Mat",
-     "ivy-reverie-mat"
-    ],
-    [
-     "2026-01-06T13:17:23-06:00",
-     "Spring Awakening – Warm Honey Mahjong Mat",
-     "spring-awakening-warm-honey-mat"
-    ],
-    [
-     "2026-01-06T13:17:21-06:00",
-     "Spring Awakening – Porcelain Blue Mahjong Mat",
-     "spring-awakening-porcelain-blue-mat"
-    ],
-    [
-     "2026-01-06T13:17:20-06:00",
-     "Osmanthus Grove Mahjong Mat",
-     "osmanthus-grove-mat"
-    ],
-    [
-     "2026-01-06T13:17:18-06:00",
-     "Midnight Garden Mahjong Mat",
-     "midnight-garden-mat"
-    ],
-    [
-     "2026-01-06T13:17:17-06:00",
-     "Mocha Bloom – Light Mahjong Mat",
-     "mocha-bloom-light-mat"
-    ],
-    [
-     "2026-01-06T13:17:16-06:00",
-     "Mocha Bloom – Dark Mahjong Mat",
-     "mocha-bloom-dark-mat"
-    ]
-   ],
-   "missing": [
-    [
-     "2026-11-13T17:48:59-06:00",
-     "Foxhill Plaid Mahjong Mat",
-     "foxhill-plaid-mahjong-mat"
-    ],
-    [
-     "2026-11-13T17:48:45-06:00",
-     "Ellington Navy Mahjong Mat",
-     "ellington-navy-mahjong-mat"
-    ],
-    [
-     "2026-11-13T17:48:30-06:00",
-     "Sloane Floral Mahjong Mat",
-     "sloane-floral-mahjong-mat"
-    ],
-    [
-     "2026-11-13T17:48:17-06:00",
-     "Hawthorne Plaid Mahjong Mat",
-     "hawthorne-floral-mahjong-mat"
-    ],
-    [
-     "2026-11-13T17:46:21-06:00",
-     "Marlowe Green Mahjong Mat",
-     "marlowe-green-mahjong-mat"
-    ]
-   ]
-  },
   "mahjongstudios.com": {
    "brand": "Mahjong Studios",
    "status": "excluded: partner, every Mahjong Studios mat is out of FYM + the Mat Gallery by her Oct 20 22:31 decision (tiles/racks stay)"
-  },
-  "middleandmainmahjong.com": {
-   "brand": "Middle & Main Mahjong",
-   "status": "ok",
-   "products": 105,
-   "mats": [
-    [
-     "2026-07-02T17:05:30-04:00",
-     "Painted Water Florentine Mat",
-     "painted-water-mat"
-    ],
-    [
-     "2026-07-02T17:05:19-04:00",
-     "Violet Vines Wisteria Mat",
-     "violet-vines-wisteria-mat"
-    ],
-    [
-     "2025-11-26T21:50:10-05:00",
-     "All Season’s Robin’s Egg Blue Mat",
-     "all-season-s-robin-s-egg-blue-mat"
-    ],
-    [
-     "2025-11-26T21:47:53-05:00",
-     "Tobacco Leaf Ginger Jar Mat",
-     "tobacco-leaf-ginger-jar-mat"
-    ],
-    [
-     "2025-11-26T21:46:38-05:00",
-     "June Bride Bouquet Mat",
-     "june-bride-bouquet-mat"
-    ],
-    [
-     "2025-11-26T21:44:46-05:00",
-     "Fruit Stand Citrus Mat",
-     "fruit-stand-citrus-mat"
-    ],
-    [
-     "2025-11-20T22:51:55-05:00",
-     "Peaches ‘n Cream Mat",
-     "georgia-mat"
-    ],
-    [
-     "2025-04-26T23:13:54-04:00",
-     "Beautiful Beginnings: A New Mahjong Player’s Mat",
-     "seabee-avenue-monstera-plant-mat-copy"
-    ],
-    [
-     "2025-04-26T23:12:25-04:00",
-     "Seabee Avenue Monstera Plant Mat",
-     "martha-mae-vintage-quilt-pattern-mat-copy"
-    ],
-    [
-     "2025-04-26T23:08:57-04:00",
-     "Martha & Mae Vintage Quilt Pattern Mat",
-     "martha-mae-vintage-quilt-pattern-mat"
-    ],
-    [
-     "2025-04-26T23:08:30-04:00",
-     "Rebekah’s Wedding Pattern Mat",
-     "rebekah-s-wedding-pattern-mat"
-    ],
-    [
-     "2025-01-25T16:16:00-05:00",
-     "Grandmother \"Betty\" Vintage Quilt Mat",
-     "grandmother-kathryn-vintage-quilt-mat-copy"
-    ],
-    [
-     "2025-01-25T16:15:35-05:00",
-     "Grandmother \"Martha\" Vintage Quilt Mat",
-     "grandmother-martha-vintage-quilt-mat"
-    ],
-    [
-     "2025-01-25T16:13:16-05:00",
-     "Grandmother \"Kathryn\" Vintage Quilt Mat",
-     "grandmother-kathryn-vintage-quilt-mat"
-    ]
-   ],
-   "missing": []
   },
   "minimahjer.com": {
    "brand": "Mini Mahjer",
@@ -2321,10 +2141,6 @@
    ],
    "missing": []
   },
-  "splashofcolorco.com": {
-   "brand": "Splash of Color",
-   "status": "excluded: partner, pulled from FYM by her Oct 26 decision (too many mats); only her album-match Splash mats stay"
-  },
   "themahjongpress.com": {
    "brand": "The Mahjong Press",
    "status": "ok",
@@ -2523,10 +2339,6 @@
     ]
    ],
    "missing": []
-  },
-  "wrenmats.com": {
-   "brand": "Wren Mats",
-   "status": "error (not a Shopify store / no products.json?): HTTP Error 404: Not Found"
   },
   "ymimports.com": {
    "brand": "Yellow Mountain Imports",
@@ -6959,9 +6771,91 @@
    "brand": "maisonmahj.com",
    "status": "skipped: not a partner (builder/fym_flags/nonpartner_allow.json partners)"
   },
+  "middleandmainmahjong.com": {
+   "brand": "Middle & Main Mahjong",
+   "status": "ok",
+   "products": 105,
+   "mats": [
+    [
+     "2026-07-02T17:05:30-04:00",
+     "Painted Water Florentine Mat",
+     "painted-water-mat"
+    ],
+    [
+     "2026-07-02T17:05:19-04:00",
+     "Violet Vines Wisteria Mat",
+     "violet-vines-wisteria-mat"
+    ],
+    [
+     "2025-11-26T21:50:10-05:00",
+     "All Season’s Robin’s Egg Blue Mat",
+     "all-season-s-robin-s-egg-blue-mat"
+    ],
+    [
+     "2025-11-26T21:47:53-05:00",
+     "Tobacco Leaf Ginger Jar Mat",
+     "tobacco-leaf-ginger-jar-mat"
+    ],
+    [
+     "2025-11-26T21:46:38-05:00",
+     "June Bride Bouquet Mat",
+     "june-bride-bouquet-mat"
+    ],
+    [
+     "2025-11-26T21:44:46-05:00",
+     "Fruit Stand Citrus Mat",
+     "fruit-stand-citrus-mat"
+    ],
+    [
+     "2025-11-20T22:51:55-05:00",
+     "Peaches ‘n Cream Mat",
+     "georgia-mat"
+    ],
+    [
+     "2025-04-26T23:13:54-04:00",
+     "Beautiful Beginnings: A New Mahjong Player’s Mat",
+     "seabee-avenue-monstera-plant-mat-copy"
+    ],
+    [
+     "2025-04-26T23:12:25-04:00",
+     "Seabee Avenue Monstera Plant Mat",
+     "martha-mae-vintage-quilt-pattern-mat-copy"
+    ],
+    [
+     "2025-04-26T23:08:57-04:00",
+     "Martha & Mae Vintage Quilt Pattern Mat",
+     "martha-mae-vintage-quilt-pattern-mat"
+    ],
+    [
+     "2025-04-26T23:08:30-04:00",
+     "Rebekah’s Wedding Pattern Mat",
+     "rebekah-s-wedding-pattern-mat"
+    ],
+    [
+     "2025-01-25T16:16:00-05:00",
+     "Grandmother \"Betty\" Vintage Quilt Mat",
+     "grandmother-kathryn-vintage-quilt-mat-copy"
+    ],
+    [
+     "2025-01-25T16:15:35-05:00",
+     "Grandmother \"Martha\" Vintage Quilt Mat",
+     "grandmother-martha-vintage-quilt-mat"
+    ],
+    [
+     "2025-01-25T16:13:16-05:00",
+     "Grandmother \"Kathryn\" Vintage Quilt Mat",
+     "grandmother-kathryn-vintage-quilt-mat"
+    ]
+   ],
+   "missing": []
+  },
   "sweetjojomahjong.com": {
    "brand": "sweetjojomahjong.com",
    "status": "skipped: not a partner (builder/fym_flags/nonpartner_allow.json partners)"
+  },
+  "splashofcolorco.com": {
+   "brand": "Splash of Color",
+   "status": "excluded: partner, pulled from FYM by her Oct 26 decision (too many mats); only her album-match Splash mats stay"
   },
   "mahjongbysi.com": {
    "brand": "mahjongbysi.com",
@@ -6978,6 +6872,122 @@
   "themahjonghouse.com": {
    "brand": "themahjonghouse.com",
    "status": "skipped: not a partner (builder/fym_flags/nonpartner_allow.json partners)"
+  },
+  "amandatoppeart.com": {
+   "brand": "Amanda Toppe",
+   "status": "error (not a Shopify store / no products.json?): HTTP Error 404: Not Found"
+  },
+  "ilovemahj.com": {
+   "brand": "I Love Mahj",
+   "status": "error (not a Shopify store / no products.json?): HTTP Error 404: Not Found"
+  },
+  "mahjongrowandco.com": {
+   "brand": "Mahjong Row & Co.",
+   "status": "ok",
+   "products": 39,
+   "mats": [
+    [
+     "2026-11-13T17:48:59-06:00",
+     "Foxhill Plaid Mahjong Mat",
+     "foxhill-plaid-mahjong-mat"
+    ],
+    [
+     "2026-11-13T17:48:45-06:00",
+     "Ellington Navy Mahjong Mat",
+     "ellington-navy-mahjong-mat"
+    ],
+    [
+     "2026-11-13T17:48:30-06:00",
+     "Sloane Floral Mahjong Mat",
+     "sloane-floral-mahjong-mat"
+    ],
+    [
+     "2026-11-13T17:48:17-06:00",
+     "Hawthorne Floral Mahjong Mat",
+     "hawthorne-floral-mahjong-mat"
+    ],
+    [
+     "2026-11-13T17:46:21-06:00",
+     "Marlowe Green Mahjong Mat",
+     "marlowe-green-mahjong-mat"
+    ],
+    [
+     "2026-10-05T15:00:47-05:00",
+     "Marigold Mahjong Mat",
+     "marigold-mahjong-mat"
+    ],
+    [
+     "2026-01-13T12:11:49-06:00",
+     "Autumn Saffron Mahjong Mat",
+     "autumn-saffron-mat"
+    ],
+    [
+     "2026-01-06T13:17:24-06:00",
+     "Ivy Reverie Mahjong Mat",
+     "ivy-reverie-mat"
+    ],
+    [
+     "2026-01-06T13:17:23-06:00",
+     "Spring Awakening – Warm Honey Mahjong Mat",
+     "spring-awakening-warm-honey-mat"
+    ],
+    [
+     "2026-01-06T13:17:21-06:00",
+     "Spring Awakening – Porcelain Blue Mahjong Mat",
+     "spring-awakening-porcelain-blue-mat"
+    ],
+    [
+     "2026-01-06T13:17:20-06:00",
+     "Osmanthus Grove Mahjong Mat",
+     "osmanthus-grove-mat"
+    ],
+    [
+     "2026-01-06T13:17:18-06:00",
+     "Midnight Garden Mahjong Mat",
+     "midnight-garden-mat"
+    ],
+    [
+     "2026-01-06T13:17:17-06:00",
+     "Mocha Bloom – Light Mahjong Mat",
+     "mocha-bloom-light-mat"
+    ],
+    [
+     "2026-01-06T13:17:16-06:00",
+     "Mocha Bloom – Dark Mahjong Mat",
+     "mocha-bloom-dark-mat"
+    ]
+   ],
+   "missing": [
+    [
+     "2026-11-13T17:48:59-06:00",
+     "Foxhill Plaid Mahjong Mat",
+     "foxhill-plaid-mahjong-mat"
+    ],
+    [
+     "2026-11-13T17:48:45-06:00",
+     "Ellington Navy Mahjong Mat",
+     "ellington-navy-mahjong-mat"
+    ],
+    [
+     "2026-11-13T17:48:30-06:00",
+     "Sloane Floral Mahjong Mat",
+     "sloane-floral-mahjong-mat"
+    ],
+    [
+     "2026-11-13T17:48:17-06:00",
+     "Hawthorne Floral Mahjong Mat",
+     "hawthorne-floral-mahjong-mat"
+    ],
+    [
+     "2026-11-13T17:46:21-06:00",
+     "Marlowe Green Mahjong Mat",
+     "marlowe-green-mahjong-mat"
+    ]
+   ]
+  },
+  "wrenmats.com": {
+   "brand": "Wren Mats",
+   "status": "error (not a Shopify store / no products.json?): HTTP Error 404: Not Found"
   },
   "faitamainstudio.com": {
    "brand": "Fait à Main",
