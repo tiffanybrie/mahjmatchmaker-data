@@ -1,18 +1,18 @@
 {
- "at": "2026-11-15T11:55:17",
+ "at": "2026-11-16T11:57:15",
  "fym": "v118",
  "sources": {
   "fym": "site-app/fym-v118/index.html @7817f04d (live /find-your-match)",
   "gallery": "matgallery-v118.json @4cb195dc (live /mahjong-mats, data-fym=v118)",
   "search": "search-index.json @3afb680e (live search.js pin)"
  },
- "net_at": "2026-11-15T11:55:17",
+ "net_at": "2026-11-16T11:57:15",
  "summary": "11 OK, 18 GAP, 1 UNKNOWN",
  "gaps": [
-  "Live brand pages with a verified line within 9 days: 40 of 41 (target all); as of 2026-11-15T11:55 | missing: sunday-mahjong-discount-code (no line)",
+  "Live brand pages with a verified line within 9 days: 40 of 41 (target all); as of 2026-11-16T11:57 | missing: sunday-mahjong-discount-code (no line)",
   "Hub brands with their own brand page: 40 of 41 (target all) | missing: Fait à Main",
   "Live brand pages in the sitemap but not on the codes hub: 1 (target 0) | missing: /sunday-mahjong-discount-code",
-  "Approved/overdue items older than 3 days (OVERDUE + DESK Blocked): 67 (target 0); 8 more carry no date, so they cannot age (give each a date) | missing: OVERDUE Nov 7: since 2026-11-07 | Mahjong Register: code is LIVE since Nov 8 (MAHJMAT, OVERDUE Nov 6: since 2026-11-06 | ManyChat: build the first comment-for-links automat, OVERDUE Nov 6: since 2026-11-06 | ManyChat trial reminder: day 12 of the Essential tr, OVERDUE Nov 6: since 2026-11-06 | Mahjong Row & Co. OUT of the site: REMAINING ONLY (, OVERDUE Nov 6: (Nov 6, Main) LAUNCH GAP: Bam Bird MCM Olive restock (announced IG Nov, OVERDUE Nov 6: since 2026-11-06 | BING WEBMASTER TOOLS (Tiffany yes Nov 6): BLOCKED o +61 more",
+  "Approved/overdue items older than 3 days (OVERDUE + DESK Blocked): 76 (target 0); 8 more carry no date, so they cannot age (give each a date) | missing: OVERDUE Nov 7: since 2026-11-07 | Mahjong Register: code is LIVE since Nov 8 (MAHJMAT, OVERDUE Nov 6: since 2026-11-06 | ManyChat: build the first comment-for-links automat, OVERDUE Nov 6: since 2026-11-06 | ManyChat trial reminder: day 12 of the Essential tr, OVERDUE Nov 6: since 2026-11-06 | Mahjong Row & Co. OUT of the site: REMAINING ONLY (, OVERDUE Nov 6: (Nov 6, Main) LAUNCH GAP: Bam Bird MCM Olive restock (announced IG Nov, OVERDUE Nov 6: since 2026-11-06 | BING WEBMASTER TOOLS (Tiffany yes Nov 6): BLOCKED o +70 more",
   "ShopMy mats live in FYM: 0 of 0 (target all); shopmy-crosscheck-nov08.json: ? staged, 0 Amazon (her pick), 0 skipped, 0 photo-held",
   "Mats with a price (price filter hides the rest): 1451 of 1574 (target all) | missing: Oh My Mahjong 32, Amazon 28, Let's Be Besties 22, Rebecca Illustrated 7, Bespoke Mahjong 5, Tigre de Tartan 5 +13 more",
   "Live album pages wired to an FYM tile set: 38 of 45 (target all) | missing: deco-lagoon, lilac-soiree, papaya-spritz, preppy-soiree, shangri-la, spring-love +1 more",
@@ -66,7 +66,7 @@
    "have": 40,
    "total": 41,
    "target": "all",
-   "text": "Live brand pages with a verified line within 9 days: 40 of 41 (target all); as of 2026-11-15T11:55 | missing: sunday-mahjong-discount-code (no line)"
+   "text": "Live brand pages with a verified line within 9 days: 40 of 41 (target all); as of 2026-11-16T11:57 | missing: sunday-mahjong-discount-code (no line)"
   },
   {
    "id": "hub_pages",
@@ -90,10 +90,10 @@
    "id": "approved_old",
    "area": "Ops",
    "status": "GAP",
-   "have": 67,
-   "total": 96,
+   "have": 76,
+   "total": 95,
    "target": "0",
-   "text": "Approved/overdue items older than 3 days (OVERDUE + DESK Blocked): 67 (target 0); 8 more carry no date, so they cannot age (give each a date) | missing: OVERDUE Nov 7: since 2026-11-07 | Mahjong Register: code is LIVE since Nov 8 (MAHJMAT, OVERDUE Nov 6: since 2026-11-06 | ManyChat: build the first comment-for-links automat, OVERDUE Nov 6: since 2026-11-06 | ManyChat trial reminder: day 12 of the Essential tr, OVERDUE Nov 6: since 2026-11-06 | Mahjong Row & Co. OUT of the site: REMAINING ONLY (, OVERDUE Nov 6: (Nov 6, Main) LAUNCH GAP: Bam Bird MCM Olive restock (announced IG Nov, OVERDUE Nov 6: since 2026-11-06 | BING WEBMASTER TOOLS (Tiffany yes Nov 6): BLOCKED o +61 more"
+   "text": "Approved/overdue items older than 3 days (OVERDUE + DESK Blocked): 76 (target 0); 8 more carry no date, so they cannot age (give each a date) | missing: OVERDUE Nov 7: since 2026-11-07 | Mahjong Register: code is LIVE since Nov 8 (MAHJMAT, OVERDUE Nov 6: since 2026-11-06 | ManyChat: build the first comment-for-links automat, OVERDUE Nov 6: since 2026-11-06 | ManyChat trial reminder: day 12 of the Essential tr, OVERDUE Nov 6: since 2026-11-06 | Mahjong Row & Co. OUT of the site: REMAINING ONLY (, OVERDUE Nov 6: (Nov 6, Main) LAUNCH GAP: Bam Bird MCM Olive restock (announced IG Nov, OVERDUE Nov 6: since 2026-11-06 | BING WEBMASTER TOOLS (Tiffany yes Nov 6): BLOCKED o +70 more"
   },
   {
    "id": "shopmy_unaccounted",
@@ -304,7 +304,7 @@
   }
  ],
  "net": {
-  "at": "2026-11-15T11:55:17",
+  "at": "2026-11-16T11:57:15",
   "errors": [],
   "fym_pin": {
    "sha": "7817f04d2c907d1ea0d4fd01d857fa7a3cffb8bf",
@@ -665,8 +665,8 @@
    "/bam-bird-boutique-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-13",
-    "verified_min": "2026-11-13"
+    "verified": "2026-11-15",
+    "verified_min": "2026-11-15"
    },
    "/bam-lets-mahjong-discount-code": {
     "status": 200,
@@ -701,8 +701,8 @@
    "/charleston-mahjong-club-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-13",
-    "verified_min": "2026-11-13"
+    "verified": "2026-11-15",
+    "verified_min": "2026-11-15"
    },
    "/cypress-forest-mahjong-tile-matches": {
     "status": 200,
@@ -743,8 +743,8 @@
    "/mah-jongg-maven-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-13",
-    "verified_min": "2026-11-13"
+    "verified": "2026-11-15",
+    "verified_min": "2026-11-15"
    },
    "/mahj-and-vine-discount-code": {
     "status": 200,
@@ -761,8 +761,8 @@
    "/mahj-pit-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-13",
-    "verified_min": "2026-11-13"
+    "verified": "2026-11-15",
+    "verified_min": "2026-11-15"
    },
    "/mahj-squad-discount-code": {
     "status": 200,
@@ -815,8 +815,8 @@
    "/mini-mahjer-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-13",
-    "verified_min": "2026-11-13"
+    "verified": "2026-11-15",
+    "verified_min": "2026-11-15"
    },
    "/miss-mahjong-discount-code": {
     "status": 200,
@@ -833,8 +833,8 @@
    "/noli-june-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-13",
-    "verified_min": "2026-11-13"
+    "verified": "2026-11-15",
+    "verified_min": "2026-11-15"
    },
    "/oh-my-mahjong-discount-code": {
     "status": 200,
@@ -863,8 +863,8 @@
    "/splash-of-color-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-14",
-    "verified_min": "2026-11-14"
+    "verified": "2026-11-15",
+    "verified_min": "2026-11-15"
    },
    "/sunday-mahjong-discount-code": {
     "status": 200,
@@ -881,14 +881,14 @@
    "/tigre-de-tartan-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-13",
-    "verified_min": "2026-11-13"
+    "verified": "2026-11-15",
+    "verified_min": "2026-11-15"
    },
    "/virora-mahjong-discount-code": {
     "status": 200,
     "redirected": false,
-    "verified": "2026-11-13",
-    "verified_min": "2026-11-13"
+    "verified": "2026-11-15",
+    "verified_min": "2026-11-15"
    },
    "/wren-mats-discount-code": {
     "status": 200,
