@@ -1,9 +1,20 @@
 {
- "at": "2026-11-15T02:36:05",
- "date": "2026-11-15",
+ "at": "2026-11-16T02:34:08",
+ "date": "2026-11-16",
  "pages": 42,
  "hub_brands": 41,
- "fails": [],
+ "fails": [
+  "/mahjong-discount-codes: Splash of Color shows 15% (truth 10%): \"Splash of Color (15% off\"",
+  "/mahjong-discount-codes: Splash of Color shows 15% (truth 10%): \"Splash of Color: 15% off\"",
+  "/splash-of-color-discount-code: \"Save 15% at Splash of Color\" (truth 10%)",
+  "/splash-of-color-discount-code: FAQ says 15% (truth 10%)",
+  "/splash-of-color-discount-code: Splash of Color shows 15% (truth 10%): \"15% at Splash of Color\"",
+  "/splash-of-color-discount-code: Splash of Color shows 15% (truth 10%): \"15% off at Splash of Color\"",
+  "/splash-of-color-discount-code: code box says 15% (truth 10%)",
+  "/tigre-de-tartan-discount-code: Tigre de Tartan code MAHJMATCH shows as visible TEXT (image/auto-apply link only, Tiffany Oct 30)",
+  "hub row Splash of Color: does not show 10% off (truth 10%): \"\u2014 15% off with MAHJMATCH\"",
+  "hub row Splash of Color: shows [15] (truth 10%)"
+ ],
  "warns": [],
  "unconfirmed": [
   "I Love Mahj: MAHJMATCH 2-week free trial = page only, unconfirmed (page only (hub + brand page); Gmail has only the Jan 2026 partner-program application, no )"
