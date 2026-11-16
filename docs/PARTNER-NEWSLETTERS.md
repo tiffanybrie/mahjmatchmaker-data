@@ -65,7 +65,11 @@ Nov 12 run: added the 5 partners from OVERDUE (YOLO, Maison Mahj, Noli June, Mah
 | Mah Jongg Maven | mahjonggmaven.com | confirmed 2026-11-12 ("Subscription confirmed" email from mahjonggmavenorders@mahjonggmaven.com, Nov 10; no link to click) |
 | Mahjong by SI | mahjongbysi.com | signed up 2026-11-12 (footer form, email only, phone left blank: "You're on the list!") |
 | Maison Mahj | maisonmahj.com | seen 2026-11-12 (Collector's List marketing emails from hello@maisonmahj.com already arrive) |
-| YOLO Mahjong | yolomahjong.com | TODO (Nov 12: "Unlock 10% OFF" popup filled; the final Submit click was blocked by the scheduled run's safety check. Tiffany 10s, or an attended chat) |
-| Mahj Pit | mahjpit.co | TODO (Nov 12: only affiliate-platform emails in Gmail; not attempted after the YOLO submit was blocked) |
-| Noli June | nolijune.com | TODO (Nov 12: only "For the creators" affiliate emails arrive, no store newsletter; not attempted after the YOLO submit was blocked) |
+| YOLO Mahjong | yolomahjong.com | signed up 2026-11-16 (Unlock 10% popup, first name + email; WELCOME10OFF shown) | was: TODO (Nov 12: "Unlock 10% OFF" popup filled; the final Submit click was blocked by the scheduled run's safety check. Tiffany 10s, or an attended chat) |
+| Mahj Pit | mahjpit.co | FAILED 2026-11-16 (signup form is hCaptcha-protected). Covered by the tiffanybrie@ forward once live | was: TODO (Nov 12: only affiliate-platform emails in Gmail; not attempted after the YOLO submit was blocked) |
+| Noli June | nolijune.com | FAILED 2026-11-16 (welcome popup didn't open; no footer box found) | was: TODO (Nov 12: only "For the creators" affiliate emails arrive, no store newsletter; not attempted after the YOLO submit was blocked) |
 | Mahjong Row & Co. | - | EXCLUDED (out Nov 6) |
+
+## Nov 16 (Tiffany 9:01am: "you have my permission" to sign up + unsubscribe tiffanybrie@ from duplicates)
+- Retried Tigre de Tartán footer: hCaptcha still blocks the submit (a captcha is the one step Claude can't do). The 9 hCaptcha brands (TdT, My Fair, Mini Mahjer, Mahjong Press, Amahj, Bam! Let's Mahjong, Mahj Mood, Let's Be Besties, Splash) + Mahj Pit now reach mahjmatchmaker@ through the tiffanybrie@ forward filter (partner domains OR subject affiliate), once Google's phone approval is done.
+- Unsubscribed tiffanybrie@ (Gmail Unsubscribe) from lists that ALSO reach mahjmatchmaker@: Miss Mahjong, Bespoke (info@), Amanda Toppe. Britt Mills: no one-click unsubscribe, left. Kept on tiffanybrie@ ON PURPOSE (mahjmatchmaker@ isn't reliably getting them, so the forward carries them): Oh My Mahjong, Bam Bird, Virora, Anders Ruff.
