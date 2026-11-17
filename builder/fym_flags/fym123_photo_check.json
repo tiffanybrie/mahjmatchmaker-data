@@ -138,10 +138,11 @@
   "name": "Lady Luck's Teal Lounge",
   "img": "assets/colorcards/deco/mats/splash-of-color-lady-lucks-teal-lounge.jpg",
   "u": "https://splashofcolorco.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fart-deco-mahjong-mat-lady-luck-s-teal-lounge%3Fsca_ref%3D10059443.c9rDRhYNIB31oxJN",
-  "price": null,
+  "price": 75.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 12,
@@ -150,10 +151,11 @@
   "name": "Tidal Glass with Simple Middle Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--tidal-glass-with-simple-middle-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/tidal-glass-with-simple-middle-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Tidal Glass",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 13,
@@ -162,10 +164,11 @@
   "name": "Pink Christmas Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--pink-christmas-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/pink-christmas-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": true,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 14,
@@ -174,10 +177,11 @@
   "name": "Pop Bloom with Instructions Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--pop-bloom-with-instructions-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/pop-bloom-with-instructions-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Pop Bloom with Instructions",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 15,
@@ -186,10 +190,11 @@
   "name": "Fall Flowers Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--fall-flowers-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/fall-flowers-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Fall Flowers",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 16,
@@ -198,10 +203,11 @@
   "name": "Zebra Pattern OHBoN Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--zebra-pattern-ohbon-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/zebra-pattern-artist-collab-neoprene-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Zebra Pattern",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 17,
@@ -210,10 +216,11 @@
   "name": "Tobacco Leaves with Spanish Instructions Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--tobacco-leaves-with-spanish-instructions-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/tobacco-leaves-with-spanish-directions-neoprene-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Tobacco Leaves",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 18,
@@ -222,10 +229,11 @@
   "name": "Day of the Dead with Spanish Instructions Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--day-of-the-dead-with-spanish-instructions-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/day-of-the-dead-with-spanish-instructions-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Day of the Dead",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 19,
@@ -234,10 +242,11 @@
   "name": "Fall Pop Garden with Instructions Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--fall-pop-garden-with-instructions-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/fall-pop-garden-with-instructions-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Fall Pop Garden",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 20,
@@ -258,10 +267,11 @@
   "name": "Safari Garden with Instructions Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--safari-garden-with-instructions-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/safari-garden-with-instructions-neoprene-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Safari Garden",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 22,
@@ -270,10 +280,11 @@
   "name": "Hydrangea Haven Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--hydrangea-haven-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/hydrangea-haven-neoprene-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Hydrangea Haven",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 23,
@@ -282,10 +293,11 @@
   "name": "Fall Flowers with Instructions Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--fall-flowers-with-instructions-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/fall-flowers-with-directions-neoprene-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Fall Flowers",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 24,
@@ -294,10 +306,11 @@
   "name": "Tropical Travels Monogram Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--tropical-travels-monogram-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/tropical-travels-personalized-neoprene-mahjong-mat",
-  "price": null,
+  "price": 70.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Tropical Travels",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 25,
@@ -306,10 +319,11 @@
   "name": "Tobacco Leaves with Instructions Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--tobacco-leaves-with-instructions-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/tobacco-leaves-with-directions-neoprene-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Tobacco Leaves",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 26,
@@ -318,10 +332,11 @@
   "name": "Amalfi Fish with Instructions Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--amalfi-fish-with-instructions-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/amalfi-fish-with-directions-neoprene-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Amalfi Fish",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 27,
@@ -330,10 +345,11 @@
   "name": "Year of the Horse OHBoN Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--year-of-the-horse-ohbon-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/year-of-the-horse-ohbon-studios-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Year of the Horse 2",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 28,
@@ -342,10 +358,11 @@
   "name": "White Bulldog Game Day Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--white-bulldog-game-day-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/white-bulldog-game-day-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as UGA White Bulldogs Game Day",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 29,
@@ -354,10 +371,11 @@
   "name": "Sage Mosaic Custom Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--sage-mosaic-custom-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/sage-mosaic-personalized-neoprene-mahjong-mat",
-  "price": null,
+  "price": 70.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Sage Mosaic",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 30,
@@ -366,10 +384,11 @@
   "name": "Garden Lilies OHBoN Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--garden-lilies-ohbon-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/garden-lilies-artist-collab-leatherette-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Garden Lilies",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 31,
@@ -378,10 +397,11 @@
   "name": "Painted Bulldog OHBoN Studios Artist Game Day Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--painted-bulldog-ohbon-studios-artist-game-day-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/painted-bulldog-ohbon-studios-artist-game-day-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as UGA Bulldog Game Day",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 32,
@@ -390,10 +410,11 @@
   "name": "Halloween Happy Hour Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--halloween-happy-hour-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/halloween-happy-hour-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 33,
@@ -402,10 +423,11 @@
   "name": "Cheaper Than Christmas Tiles OHBoN Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--cheaper-than-christmas-tiles-ohbon-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/cheaper-than-christmas-tiles-ohbon-studios-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": true,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Cheaper Than Christmas Tiles",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 34,
@@ -414,10 +436,11 @@
   "name": "Winter Wonderland Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--winter-wonderland-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/winter-wonderland-neoprene-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": true,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Winter Wonderland Leatherette",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 35,
@@ -426,10 +449,11 @@
   "name": "Tossing Tiles OHBoN Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--tossing-tiles-ohbon-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/tossing-tiles-artist-collab-leatherette-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Tossing Tiles",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 36,
@@ -438,10 +462,11 @@
   "name": "Pineapple Pattern OHBoN Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--pineapple-pattern-ohbon-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/pineapple-pattern-ohbon-studios-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Pineapple Pattern",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 37,
@@ -462,10 +487,11 @@
   "name": "Garden Glass with Instructions OHBoN Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--garden-glass-with-instructions-ohbon-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/garden-glass-leatherette-with-instructions-ohbon-studios-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Garden Glass with Instructions",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 39,
@@ -474,10 +500,11 @@
   "name": "Porcelain Garden with Instructions OHBoN Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--porcelain-garden-with-instructions-ohbon-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/porcelain-garden-with-instructions-ohbon-studios-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Porcelain Garden",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 40,
@@ -486,10 +513,11 @@
   "name": "Ocean Jewel with Instructions OHBoN Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--ocean-jewel-with-instructions-ohbon-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/ocean-jewel-with-instructions-ohbon-studios-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Ocean Jewel",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 41,
@@ -498,10 +526,11 @@
   "name": "Pink Trellis with Instructions OHBoN Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--pink-trellis-with-instructions-ohbon-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/pink-trellis-with-instructions-ohbon-studios-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Pink Trellis",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 42,
@@ -522,10 +551,11 @@
   "name": "Pink Bam Bird Toile Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--pink-bam-bird-toile-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/pink-bam-bird-toile-neoprene-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Bam Bird Toile Pink",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 44,
@@ -534,10 +564,11 @@
   "name": "Summer Wash Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--summer-wash-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/summer-wash-neoprene-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Summer Wash",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 45,
@@ -546,10 +577,11 @@
   "name": "Ocean Palms Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--ocean-palms-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/ocean-palms-neoprene-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Ocean Palms",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 46,
@@ -558,10 +590,11 @@
   "name": "Sanford Stadium OHBoN Studios Artist Game Day Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--sanford-stadium-ohbon-studios-artist-game-day-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/sanford-stadium-artist-collab-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Sanford Stadium UGA Game Day",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 47,
@@ -570,10 +603,11 @@
   "name": "Garden Rorschach with Instructions OHBoN Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--garden-rorschach-with-instructions-ohbon-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/garden-rorschach-with-instructions-ohbon-studios-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 48,
@@ -582,10 +616,11 @@
   "name": "Year of the Horse Medallion OHBoN Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--year-of-the-horse-medallion-ohbon-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/year-of-the-horse-medallion-ohbon-studios-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Year of the Horse",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 49,
@@ -594,10 +629,11 @@
   "name": "Triple Crown with Instructions OHBoN Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--triple-crown-with-instructions-ohbon-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/triple-crown-with-instructions-ohbon-studios-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Triple Crown",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 50,
@@ -606,10 +642,11 @@
   "name": "Golfing OHBoN Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--golfing-ohbon-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/golfing-ohbon-studios-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Golfing",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 51,
@@ -618,10 +655,11 @@
   "name": "Floral Kaleidoscope Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--floral-kaleidoscope-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/floral-kaleidoscope-neoprene-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Floral Kaleidoscope",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 52,
@@ -630,10 +668,11 @@
   "name": "London Calling with Instructions Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--london-calling-with-instructions-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/london-calling-with-instructions-neoprene-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as London Calling",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 53,
@@ -642,10 +681,11 @@
   "name": "Tobacco Leaves Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--tobacco-leaves-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/tobacco-leaves-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Tobacco Leaves Blue",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 54,
@@ -654,10 +694,11 @@
   "name": "Black Bulldog Game Day Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--black-bulldog-game-day-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/black-bulldog-game-day-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as UGA Bulldogs Game Day",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 55,
@@ -726,10 +767,11 @@
   "name": "Champagne Toast with Instructions Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--champagne-toast-with-instructions-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/champagne-toast-with-instructions-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Champagne Toast",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 61,
@@ -762,10 +804,11 @@
   "name": "Ocean Florals with Instructions Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--ocean-florals-with-instructions-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/ocean-florals-with-directions-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Ocean Florals",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 64,
@@ -786,10 +829,11 @@
   "name": "Old Lady Funny with Border Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--old-lady-funny-with-border-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/old-lady-funny-mahjong-mat-with-border",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Funny Lady",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 66,
@@ -798,16 +842,17 @@
   "name": "Isla Leatherette",
   "img": "assets/albums/catalog-new/britt-mills--isla-leatherette-mahjong-mat.jpg",
   "u": "https://brittmillsdesign.com/products/isla-leatherette-mahjong-mat",
-  "price": null,
+  "price": 180.0,
   "hol": false,
-  "verdict": "crop",
+  "verdict": "already_in_app",
   "box": [
    0.20642857142857143,
    0.19785714285714287,
    0.8207142857142857,
    0.8092857142857143
   ],
-  "why": "Brand card around the mat; cropped to the mat"
+  "why": "Already in the app as Isla Neoprene",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 67,
@@ -816,10 +861,11 @@
   "name": "Lovely Lavender Double-Sided Mahjong Mat – Leatherette 31.5\"",
   "img": "assets/albums/catalog-new/mahjong-register--lovely-lavender-double-sided-mahjong-mat-leatherette-31-5.jpg",
   "u": "https://mahjongregister.com/products/lovely-lavender-double-sided-leatherette-mahjong-mat",
-  "price": null,
+  "price": 115.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Lovely Lavender Double-Sided Leatherette",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 68,
@@ -828,10 +874,11 @@
   "name": "Colette's Kaleidoscope Double-Sided Mahjong Mat – Leatherette 31.5\"",
   "img": "assets/albums/catalog-new/mahjong-register--colettes-kaleidoscope-double-sided-mahjong-mat-leatherette-31-5.jpg",
   "u": "https://mahjongregister.com/products/colette-s-kaleidoscope-double-sided-leatherette-mahjong-mat",
-  "price": null,
+  "price": 115.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Colette’s Kaleidoscope Double-Sided Leatherette",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 69,
@@ -840,10 +887,11 @@
   "name": "Sunday Sherbert Double-Sided Mahjong Mat – Leatherette 31.5\"",
   "img": "assets/albums/catalog-new/mahjong-register--sunday-sherbert-double-sided-mahjong-mat-leatherette-31-5.jpg",
   "u": "https://mahjongregister.com/products/sunday-sherbert-double-sided-leatherette-mahjong-mat",
-  "price": null,
+  "price": 115.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Sunday Sherbert Double-Sided Leatherette",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 70,
@@ -852,10 +900,11 @@
   "name": "Snowflake Reindeer Lodge Double-Sided Mahjong Mat – Leatherette 31.5\"",
   "img": "assets/albums/catalog-new/mahjong-register--snowflake-reindeer-lodge-double-sided-mahjong-mat-leatherette-31-5.jpg",
   "u": "https://mahjongregister.com/products/snowflake-reindeer-lodge-double-sided-leatherette-mahjong-mat",
-  "price": null,
+  "price": 95.0,
   "hol": true,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Snowflake Reindeer Lodge Double-Sided Leatherette",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 71,
@@ -864,10 +913,11 @@
   "name": "Letters to Santa Double-Sided Mahjong Mat – Leatherette 31.5\"",
   "img": "assets/albums/catalog-new/mahjong-register--letters-to-santa-double-sided-mahjong-mat-leatherette-31-5.jpg",
   "u": "https://mahjongregister.com/products/letters-to-santa-double-sided-leatherette-mahjong-mat",
-  "price": null,
+  "price": 115.0,
   "hol": true,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Letters to Santa Double-Sided Leatherette",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 72,
@@ -876,10 +926,11 @@
   "name": "Holly Jolly Double-Sided Mahjong Mat – Leatherette 31.5\"",
   "img": "assets/albums/catalog-new/mahjong-register--holly-jolly-double-sided-mahjong-mat-leatherette-31-5.jpg",
   "u": "https://mahjongregister.com/products/holly-jolly-double-sided-leatherette-mahjong-mat",
-  "price": null,
+  "price": 115.0,
   "hol": true,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Holly Jolly Double-Sided Leatherette",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 73,
@@ -888,10 +939,11 @@
   "name": "Very Merry Wreath Double-Sided Mahjong Mat – Leatherette 31.5\"",
   "img": "assets/albums/catalog-new/mahjong-register--very-merry-wreath-double-sided-mahjong-mat-leatherette-31-5.jpg",
   "u": "https://mahjongregister.com/products/very-merry-wreath-double-sided-leatherette-mahjong-mat",
-  "price": null,
+  "price": 115.0,
   "hol": true,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Very Merry Wreath Double-Sided Leatherette",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 74,
@@ -900,10 +952,12 @@
   "name": "Gold Leatherette Mahjong Mat – 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--gold-leatherette-mahjong-mat-33.jpg",
   "u": "https://mahjongregister.com/products/gold-leatherette-mahjong-mat",
-  "price": null,
+  "price": 75.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Gold Leatherette",
+  "price_src": "store product data, Nov 17",
+  "oos": 1
  },
  {
   "i": 75,
@@ -912,10 +966,11 @@
   "name": "Purple & Coral Pink Double-Sided Leatherette Mahjong Mat – 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--purple-and-coral-pink-double-sided-leatherette-mahjong-mat-33.jpg",
   "u": "https://mahjongregister.com/products/purple-coral-pink-double-sided-leatherette-mahjong-mat",
-  "price": null,
+  "price": 85.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Purple & Coral Pink Double-Sided Leatherette",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 76,
@@ -924,10 +979,11 @@
   "name": "Hunter Green & Navy Double-Sided Leatherette Mahjong Mat – 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--hunter-green-and-navy-double-sided-leatherette-mahjong-mat-33.jpg",
   "u": "https://mahjongregister.com/products/hunter-green-navy-double-sided-leatherette-mahjong-mat",
-  "price": null,
+  "price": 85.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Hunter Green & Navy Double-Sided Leatherette",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 77,
@@ -936,10 +992,11 @@
   "name": "Seafoam Green & Slate Blue Double-Sided Leatherette Mahjong Mat – 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--seafoam-green-and-slate-blue-double-sided-leatherette-mahjong-mat-33.jpg",
   "u": "https://mahjongregister.com/products/seafoam-green-slate-blue-double-sided-leatherette-mahjong-mat",
-  "price": null,
+  "price": 85.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Seafoam Green & Slate Blue Double-Sided Leatherette",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 78,
@@ -948,10 +1005,11 @@
   "name": "Navy Leatherette Mahjong Mat – 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--navy-leatherette-mahjong-mat-33.jpg",
   "u": "https://mahjongregister.com/products/navy-leatherette-mahjong-mat",
-  "price": null,
+  "price": 75.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Navy Leatherette",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 79,
@@ -960,10 +1018,11 @@
   "name": "Emerald Teal & Celadon Green Double-Sided Leatherette Mahjong Mat – 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--emerald-teal-and-celadon-green-double-sided-leatherette-mahjong-mat-33.jpg",
   "u": "https://mahjongregister.com/products/emerald-teal-celadon-green-double-sided-leatherette-mahjong-mat",
-  "price": null,
+  "price": 85.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Emerald Teal & Celedon Green Double-Sided Leatherette",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 80,
@@ -972,10 +1031,11 @@
   "name": "Coral & Aqua Double-Sided Leatherette Mahjong Mat – 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--coral-and-aqua-double-sided-leatherette-mahjong-mat-33.jpg",
   "u": "https://mahjongregister.com/products/coral-aqua-double-sided-leatherette-mahjong-mat",
-  "price": null,
+  "price": 85.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Coral & Aqua Double-Sided Leatherette",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 81,
@@ -984,10 +1044,11 @@
   "name": "Butterfly Belle Mahjong Mat – Neoprene 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--butterfly-belle-mahjong-mat-neoprene-33.jpg",
   "u": "https://mahjongregister.com/products/butterfly-belle-neoprene-mahjong-mat",
-  "price": null,
+  "price": 85.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Butterfly Belle Premium",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 82,
@@ -996,10 +1057,11 @@
   "name": "Pretty in Plum Mahjong Mat – Neoprene 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--pretty-in-plum-mahjong-mat-neoprene-33.jpg",
   "u": "https://mahjongregister.com/products/pretty-in-plum-neoprene-mahjong-mat",
-  "price": null,
+  "price": 85.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Pretty in Plum Premium",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 83,
@@ -1008,10 +1070,11 @@
   "name": "Buttercup Cherie Mahjong Mat – Neoprene 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--buttercup-cherie-mahjong-mat-neoprene-33.jpg",
   "u": "https://mahjongregister.com/products/buttercup-cherie-neoprene-mahjong-mat",
-  "price": null,
+  "price": 85.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Buttercup Cherie Premium",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 84,
@@ -1020,10 +1083,11 @@
   "name": "Snowflake Lodge Mahjong Mat – Neoprene 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--snowflake-lodge-mahjong-mat-neoprene-33.jpg",
   "u": "https://mahjongregister.com/products/snowflake-lodge-neoprene-mahjong-mat",
-  "price": null,
+  "price": 85.0,
   "hol": true,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Snowflake Lodge Premium",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 85,
@@ -1032,10 +1096,11 @@
   "name": "Peppermint Patty Mahjong Mat – Neoprene 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--peppermint-patty-mahjong-mat-neoprene-33.jpg",
   "u": "https://mahjongregister.com/products/peppermint-patty-neoprene-mahjong-mat",
-  "price": null,
+  "price": 85.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Peppermint Patty Premium",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 86,
@@ -1044,10 +1109,11 @@
   "name": "Letters to Santa Mahjong Mat – Neoprene 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--letters-to-santa-mahjong-mat-neoprene-33.jpg",
   "u": "https://mahjongregister.com/products/letters-to-santa-neoprene-mahjong-mat",
-  "price": null,
+  "price": 85.0,
   "hol": true,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Letters to Santa Premium",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 87,
@@ -1056,10 +1122,11 @@
   "name": "Very Merry Wreath Mahjong Mat – Neoprene 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--very-merry-wreath-mahjong-mat-neoprene-33.jpg",
   "u": "https://mahjongregister.com/products/very-merry-wreath-neoprene-mahjong-mat",
-  "price": null,
+  "price": 85.0,
   "hol": true,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Very Merry Wreath Premium",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 88,
@@ -1068,10 +1135,11 @@
   "name": "Holly Jolly Mahjong Mat – Neoprene 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--holly-jolly-mahjong-mat-neoprene-33.jpg",
   "u": "https://mahjongregister.com/products/holly-jolly-neoprene-mahjong-mat",
-  "price": null,
+  "price": 85.0,
   "hol": true,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Holly Jolly Christmas",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 89,
@@ -1080,10 +1148,11 @@
   "name": "Paisley Jubilee Mahjong Mat – Neoprene 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--paisley-jubilee-mahjong-mat-neoprene-33.jpg",
   "u": "https://mahjongregister.com/products/paisley-jubilee-neoprene-mahjong-mat",
-  "price": null,
+  "price": 85.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Paisley Jubilee Premium",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 90,
@@ -1092,10 +1161,11 @@
   "name": "Moonlit Crane Mahjong Mat – Neoprene 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--moonlit-crane-mahjong-mat-neoprene-33.jpg",
   "u": "https://mahjongregister.com/products/moonlit-crane-neoprene-mahjong-mat",
-  "price": null,
+  "price": 85.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Moonlit Crane Premium",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 91,
@@ -1104,10 +1174,11 @@
   "name": "Peony Sociale Mahjong Mat – Neoprene 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--peony-sociale-mahjong-mat-neoprene-33.jpg",
   "u": "https://mahjongregister.com/products/peony-sociale-neoprene-mahjong-mat",
-  "price": null,
+  "price": 85.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Peony Sociale Premium",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 92,
@@ -1116,10 +1187,11 @@
   "name": "Palm Beach Pink Leopard Mahjong Mat – Neoprene 33\"",
   "img": "assets/albums/catalog-new/mahjong-register--palm-beach-pink-leopard-mahjong-mat-neoprene-33.jpg",
   "u": "https://mahjongregister.com/products/palm-beach-pink-leopard-neoprene-mahjong-mat",
-  "price": null,
+  "price": 65.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Palm Beach Pink Leopard",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 93,
@@ -1128,10 +1200,11 @@
   "name": "Rainbow Rhapsody by Charmaine J.W. Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--rainbow-rhapsody-by-charmaine-j-w-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/rainbow-rhapsody-by-charmaine-j-w-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 94,
@@ -1140,10 +1213,11 @@
   "name": "Wildflowers Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--wildflowers-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/wildflowers-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 95,
@@ -1152,10 +1226,11 @@
   "name": "Roatan Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--roatan-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/roatan-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 96,
@@ -1164,10 +1239,11 @@
   "name": "Hanky Panky Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--hanky-panky-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/hanky-panky-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 97,
@@ -1176,10 +1252,11 @@
   "name": "Cheyenne's Web Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--cheyennes-web-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/cheyennes-web-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 98,
@@ -1188,10 +1265,11 @@
   "name": "Charlotte's Web Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--charlottes-web-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/charlottes-web-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 99,
@@ -1200,10 +1278,11 @@
   "name": "Summer Whimsy Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--summer-whimsy-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/summer-whimsy-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 100,
@@ -1212,10 +1291,11 @@
   "name": "Summer Whimsy Coral Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--summer-whimsy-coral-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/summer-whimsy-coral-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 101,
@@ -1224,10 +1304,11 @@
   "name": "Orange Blossoms Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--orange-blossoms-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/orange-blossoms-lillian-claire-designs-artist-mahjong-mat-1",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "fail",
-  "why": "Same mat listed twice; the other listing stays"
+  "why": "Same mat listed twice; the other listing stays",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 102,
@@ -1236,10 +1317,11 @@
   "name": "Red Dragon Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--red-dragon-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/red-dragon-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 103,
@@ -1248,10 +1330,11 @@
   "name": "Christmas Whimsy Stripes Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--christmas-whimsy-stripes-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/christmas-whimsy-stripes-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": true,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 104,
@@ -1260,10 +1343,11 @@
   "name": "Pink Calico Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--pink-calico-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/pink-calico-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 105,
@@ -1272,10 +1356,11 @@
   "name": "Lucchese Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--lucchese-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/lucchese-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 106,
@@ -1284,10 +1369,11 @@
   "name": "Jack's Black Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--jacks-black-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/jacks-black-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 107,
@@ -1296,10 +1382,11 @@
   "name": "Italian Piazza Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--italian-piazza-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/italian-piazza-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 108,
@@ -1308,10 +1395,11 @@
   "name": "Green Dragons Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--green-dragons-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/green-dragons-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 109,
@@ -1320,10 +1408,11 @@
   "name": "Gray Dragon Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--gray-dragon-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/gray-dragon-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 110,
@@ -1332,10 +1421,11 @@
   "name": "Gramercy Park Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--gramercy-park-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/gramercy-park-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 111,
@@ -1344,10 +1434,11 @@
   "name": "Fifth Ave Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--fifth-ave-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/fifth-ave-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 112,
@@ -1356,10 +1447,11 @@
   "name": "Christmas Party Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--christmas-party-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/christmas-party-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": true,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 113,
@@ -1368,10 +1460,11 @@
   "name": "Amy's Boots Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--amys-boots-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/amys-boots-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 114,
@@ -1380,10 +1473,11 @@
   "name": "Zodiac Virgo Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--zodiac-virgo-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/zodiac-virgo-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 115,
@@ -1392,10 +1486,11 @@
   "name": "Zodiac Taurus Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--zodiac-taurus-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/zodiac-taurus-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 116,
@@ -1404,10 +1499,11 @@
   "name": "Zodiac Scorpio Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--zodiac-scorpio-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/zodiac-scorpio-lillian-claire-designs",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 117,
@@ -1416,10 +1512,11 @@
   "name": "Zodiac Sagittarius Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--zodiac-sagittarius-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/zodiac-sagittarius-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 118,
@@ -1428,10 +1525,11 @@
   "name": "Zodiac Pisces Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--zodiac-pisces-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/zodiac-pisces-lillian-claire-designs",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 119,
@@ -1440,10 +1538,11 @@
   "name": "Zodiac Libra Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--zodiac-libra-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/zodiac-libra-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 120,
@@ -1452,10 +1551,11 @@
   "name": "Zodiac Leo Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--zodiac-leo-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/zodiac-leo-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 121,
@@ -1464,10 +1564,11 @@
   "name": "Zodiac Gemini Lillian Claire Designs Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--zodiac-gemini-lillian-claire-designs-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/zodiac-gemini-lillian-claire-designs-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 122,
@@ -1476,10 +1577,11 @@
   "name": "Zodiac Capricorn Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--zodiac-capricorn-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/zodiac-capricorn-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 123,
@@ -1488,10 +1590,11 @@
   "name": "Zodiac Cancer Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--zodiac-cancer-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/zodiac-cancer-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 124,
@@ -1500,10 +1603,11 @@
   "name": "Zodiac Aries Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--zodiac-aries-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/zodiac-aries-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 125,
@@ -1512,10 +1616,11 @@
   "name": "Zodiac Aquarius Lillian Claire Designs Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--zodiac-aquarius-lillian-claire-designs-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/zodiac-aquarius-lillian-claire-designs-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 126,
@@ -1524,10 +1629,11 @@
   "name": "Tea Time Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--tea-time-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/tea-time-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 127,
@@ -1536,10 +1642,11 @@
   "name": "Studio 54 Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--studio-54-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/studio-54-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 128,
@@ -1548,10 +1655,11 @@
   "name": "Speakeasy Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--speakeasy-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/speakeasy-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 129,
@@ -1560,10 +1668,11 @@
   "name": "Sparrow in Olive Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--sparrow-in-olive-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/sparrow-in-olive-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 130,
@@ -1572,10 +1681,11 @@
   "name": "Sparrow in Eggplant Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--sparrow-in-eggplant-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/sparrow-in-eggplant-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 131,
@@ -1584,10 +1694,11 @@
   "name": "Sparrow in Azure Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--sparrow-in-azure-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/sparrow-in-azure-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 132,
@@ -1596,10 +1707,11 @@
   "name": "Songbird Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--songbird-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/songbird-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 133,
@@ -1608,10 +1720,11 @@
   "name": "Serengeti Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--serengeti-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/serengeti-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 134,
@@ -1620,10 +1733,11 @@
   "name": "Seaside Holiday Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--seaside-holiday-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/seaside-holiday-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": true,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 135,
@@ -1632,10 +1746,11 @@
   "name": "Queen Bee Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--queen-bee-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/queen-bee-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 136,
@@ -1644,10 +1759,11 @@
   "name": "Queen Bee with Instructions Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--queen-bee-with-instructions-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/queen-bee-with-instructions-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 137,
@@ -1656,10 +1772,11 @@
   "name": "Purple Haze Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--purple-haze-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/purple-haze-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 138,
@@ -1668,10 +1785,11 @@
   "name": "Pretty in Pink Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--pretty-in-pink-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/pretty-in-pink-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 139,
@@ -1680,10 +1798,11 @@
   "name": "Poppies in Lime Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--poppies-in-lime-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/poppies-in-lime-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 140,
@@ -1692,10 +1811,11 @@
   "name": "Petals and Pungs with Instructions Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--petals-and-pungs-with-instructions-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/petals-and-pungs-with-instructions-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 141,
@@ -1704,10 +1824,11 @@
   "name": "Petals and Pungs Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--petals-and-pungs-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/petals-and-pungs-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 142,
@@ -1716,10 +1837,11 @@
   "name": "Peppermint Patty Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--peppermint-patty-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/peppermint-patty-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 143,
@@ -1728,10 +1850,11 @@
   "name": "Paisley Blues Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--paisley-blues-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/paisley-blues-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 144,
@@ -1740,10 +1863,11 @@
   "name": "Orange Blossoms Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--orange-blossoms-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/orange-blossoms-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 145,
@@ -1752,10 +1876,11 @@
   "name": "Ora's Dress Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--oras-dress-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/oras-dress-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 146,
@@ -1764,10 +1889,11 @@
   "name": "Oopsy Daisy Lillian Claire Designs Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--oopsy-daisy-lillian-claire-designs-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/oopsy-daisy-lillian-claire-designs-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 147,
@@ -1776,10 +1902,11 @@
   "name": "Off Duval Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--off-duval-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/off-duval-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 148,
@@ -1788,10 +1915,11 @@
   "name": "Oh Holy Night Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--oh-holy-night-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/oh-holy-night-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 149,
@@ -1800,10 +1928,11 @@
   "name": "Morocco Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--morocco-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/morocco-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 150,
@@ -1812,10 +1941,11 @@
   "name": "Midnight Flight Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--midnight-flight-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/midnight-flight-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 151,
@@ -1824,10 +1954,11 @@
   "name": "Midnight Blooms Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--midnight-blooms-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/midnight-blooms-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 152,
@@ -1836,10 +1967,11 @@
   "name": "Metro Botanicals Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--metro-botanicals-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/metro-botanicals-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 153,
@@ -1848,10 +1980,11 @@
   "name": "Lila's Garden Lillian Claire Designs Artist Mahjong Mats",
   "img": "assets/albums/catalog-new/lets-be-besties--lilas-garden-lillian-claire-designs-artist-mahjong-mats.jpg",
   "u": "https://letsbebesties.com/products/lilas-garden-lillian-claire-designs-artist-mahjong-mats",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 154,
@@ -1860,10 +1993,11 @@
   "name": "Kate's Gala Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--kates-gala-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/kates-gala-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 155,
@@ -1872,10 +2006,11 @@
   "name": "Jemma Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--jemma-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/jemma-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 156,
@@ -1884,10 +2019,11 @@
   "name": "Irish Cream Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--irish-cream-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/irish-cream-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 157,
@@ -1896,10 +2032,11 @@
   "name": "Hometown Christmas Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--hometown-christmas-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/hometown-christmas-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": true,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 158,
@@ -1908,10 +2045,11 @@
   "name": "Happy As A Lark Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--happy-as-a-lark-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/happy-as-a-lark-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 159,
@@ -1920,10 +2058,11 @@
   "name": "Great Frontier Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--great-frontier-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/great-frontier-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 160,
@@ -1932,10 +2071,11 @@
   "name": "Gray Empress Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--gray-empress-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/gray-empress-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 161,
@@ -1944,10 +2084,11 @@
   "name": "Flower Power Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--flower-power-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/flower-power-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 162,
@@ -1956,10 +2097,11 @@
   "name": "Florence Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--florence-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/florence-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 163,
@@ -1968,10 +2110,11 @@
   "name": "Fiji Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--fiji-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/fiji-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 164,
@@ -1980,10 +2123,11 @@
   "name": "Purple English Garden Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--purple-english-garden-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/purple-english-garden-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 165,
@@ -1992,10 +2136,11 @@
   "name": "Green English Garden Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--green-english-garden-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/green-english-garden-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 166,
@@ -2004,10 +2149,11 @@
   "name": "Emperor's Aviary Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--emperors-aviary-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/emperors-aviary-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 167,
@@ -2016,10 +2162,11 @@
   "name": "Eastern Blooms Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--eastern-blooms-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/eastern-blooms-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 168,
@@ -2028,10 +2175,11 @@
   "name": "Deck the Halls Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--deck-the-halls-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/deck-the-halls-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 169,
@@ -2040,10 +2188,11 @@
   "name": "Christmas Whimsy Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--christmas-whimsy-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/christmas-whimsy-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": true,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 170,
@@ -2052,10 +2201,11 @@
   "name": "Christmas Tradition Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--christmas-tradition-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/christmas-tradition-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": true,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 171,
@@ -2064,10 +2214,11 @@
   "name": "Christmas Eve Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--christmas-eve-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/christmas-eve-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": true,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 172,
@@ -2076,10 +2227,11 @@
   "name": "Chinoiserie Christmas Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--chinoiserie-christmas-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/chinoiserie-christmas-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": true,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 173,
@@ -2088,10 +2240,11 @@
   "name": "Caroline Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--caroline-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/caroline-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 174,
@@ -2100,10 +2253,11 @@
   "name": "Chinoiserie Garden Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--chinoiserie-garden-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/chinoiserie-garden-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 175,
@@ -2112,10 +2266,11 @@
   "name": "Candy Crackers Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--candy-crackers-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/lillian-claire-designs-10",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 176,
@@ -2124,10 +2279,11 @@
   "name": "Busy Bees Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--busy-bees-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/busy-bees-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 177,
@@ -2136,10 +2292,11 @@
   "name": "Bougie Dragons Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--bougie-dragons-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/bougie-dragons-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 178,
@@ -2148,10 +2305,11 @@
   "name": "Blue Empress Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--blue-empress-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/blue-empress-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 179,
@@ -2160,10 +2318,11 @@
   "name": "Blush and Bashful Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--blush-and-bashful-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/blush-and-bashful-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 180,
@@ -2172,10 +2331,11 @@
   "name": "Black Tie Affair Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--black-tie-affair-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/black-tie-affair-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 181,
@@ -2184,10 +2344,11 @@
   "name": "Autumn Blooms Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--autumn-blooms-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/autumn-blooms-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 182,
@@ -2196,10 +2357,11 @@
   "name": "Art Deco Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--art-deco-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/art-deco-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 183,
@@ -2208,10 +2370,11 @@
   "name": "Bam Dragons Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--bam-dragons-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/bam-dragons-lillian-claire-designs",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 184,
@@ -2220,10 +2383,11 @@
   "name": "American West Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--american-west-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/american-west-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 185,
@@ -2232,10 +2396,11 @@
   "name": "Amelia Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--amelia-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/amelia-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 186,
@@ -2244,10 +2409,11 @@
   "name": "Puffer Glam BeachMahj Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--puffer-glam-beachmahj-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/beachymahj-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 187,
@@ -2256,10 +2422,11 @@
   "name": "Autumn Wreath by Charmaine J.W. Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--autumn-wreath-by-charmaine-j-w-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/autumn-wreath-by-charmaine-j-w-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": true,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 188,
@@ -2268,10 +2435,11 @@
   "name": "Garden Glow by Charmaine J.W. Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--garden-glow-by-charmaine-j-w-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/garden-glow-by-charmaine-j-w-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 189,
@@ -2280,10 +2448,11 @@
   "name": "Blue Octopus BeachyMahj Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--blue-octopus-beachymahj-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/blue-octopus-beachymahj-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 190,
@@ -2292,10 +2461,11 @@
   "name": "Ocean Pop BeachyMahj Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--ocean-pop-beachymahj-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/ocean-pop-beachymahj-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 191,
@@ -2304,10 +2474,11 @@
   "name": "Gray Shark BeachyMahj Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--gray-shark-beachymahj-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/gray-shark-beachymahj-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 192,
@@ -2316,10 +2487,11 @@
   "name": "Crab Cabana BeachyMahj Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--crab-cabana-beachymahj-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/crab-cabana-beachymahj-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 193,
@@ -2328,10 +2500,11 @@
   "name": "Blue Shark BeachyMahj Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--blue-shark-beachymahj-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/blue-shark-beachymahj-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 194,
@@ -2340,10 +2513,11 @@
   "name": "Year of the G.O.A.T. STM Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--year-of-the-g-o-a-t-stm-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/year-of-the-g-o-a-t-stm-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 195,
@@ -2352,10 +2526,11 @@
   "name": "Ouro4us STM Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--ouro4us-stm-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/ouro4us-stm-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 196,
@@ -2364,10 +2539,11 @@
   "name": "Mahj Tab STM Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--mahj-tab-stm-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/mahj-tab-stm-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 197,
@@ -2376,10 +2552,11 @@
   "name": "Gilded Pearl STM Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--gilded-pearl-stm-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/gilded-pearl-stm-artist-mahjong-mat",
-  "price": null,
+  "price": 165.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 198,
@@ -2388,10 +2565,11 @@
   "name": "Electric Avenue STM Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--electric-avenue-stm-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/electric-avenue-stm-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 199,
@@ -2400,10 +2578,11 @@
   "name": "Denim Darling STM Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--denim-darling-stm-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/denim-darling-stm-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 200,
@@ -2412,10 +2591,11 @@
   "name": "Tomato Tango AC Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--tomato-tango-ac-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/tomato-tango-ac-studios-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 201,
@@ -2424,10 +2604,11 @@
   "name": "Swimming Tigers AC Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--swimming-tigers-ac-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/swimming-tigers-ac-studios-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 202,
@@ -2436,10 +2617,11 @@
   "name": "Rosy Posy AC Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--rosy-posy-ac-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/rosy-posy-ac-studios-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 203,
@@ -2448,10 +2630,11 @@
   "name": "Pink Panther Party AC Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--pink-panther-party-ac-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/pink-panther-party-ac-studios-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 204,
@@ -2460,10 +2643,11 @@
   "name": "Koi After Dark AC Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--koi-after-dark-ac-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/koi-after-dark-ac-studios-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 205,
@@ -2472,10 +2656,11 @@
   "name": "Garden Etchings AC Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--garden-etchings-ac-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/garden-etchings-ac-studios-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 206,
@@ -2484,10 +2669,11 @@
   "name": "Floral Embers AC Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--floral-embers-ac-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/floral-embers-ac-studios-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 207,
@@ -2496,10 +2682,11 @@
   "name": "Stay Groovy BeachyMahj Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--stay-groovy-beachymahj-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/stay-groovy-beachymahj-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 208,
@@ -2508,10 +2695,11 @@
   "name": "Underwater Diva BeachyMahj Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--underwater-diva-beachymahj-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/underwater-diva-beachymahj-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 209,
@@ -2520,10 +2708,11 @@
   "name": "Turtles in Paradise Green BeachyMahj Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--turtles-in-paradise-green-beachymahj-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/green-turtles-in-paradise-beachymahj-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 210,
@@ -2532,10 +2721,11 @@
   "name": "Turtles in Paradise Pink BeachyMahj Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--turtles-in-paradise-pink-beachymahj-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/pink-turtles-in-paradise-beachymahj-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 211,
@@ -2544,10 +2734,11 @@
   "name": "Seaside Reef BeachyMahj Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--seaside-reef-beachymahj-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/seaside-reef-beachymahj-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 212,
@@ -2556,10 +2747,11 @@
   "name": "Sea Garden Party BeachyMahj Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--sea-garden-party-beachymahj-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/sea-garden-party-beachymahj-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 213,
@@ -2568,10 +2760,11 @@
   "name": "Merry & Bright Octopus BeachyMahj Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--merry-and-bright-octopus-beachymahj-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/merry-bright-octopus-beachymahj-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": true,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 214,
@@ -2580,10 +2773,11 @@
   "name": "Mermaid Cove BeachyMahj Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--mermaid-cove-beachymahj-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/mermaid-cove-beachymahj-artist-mahjong-mat",
-  "price": null,
+  "price": 125.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 215,
@@ -2592,10 +2786,11 @@
   "name": "Whimsical Rug with a Simple Middle Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--whimsical-rug-with-a-simple-middle-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/whimsical-rug-with-a-simple-middle-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 216,
@@ -2604,10 +2799,11 @@
   "name": "Whimsical Rug Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--whimsical-rug-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/whimsical-rug-wanda-viola-artist-mahjong-mat-1",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 217,
@@ -2616,10 +2812,11 @@
   "name": "Blue Heron Striped Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--blue-heron-striped-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/blue-heron-striped-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 218,
@@ -2628,10 +2825,11 @@
   "name": "Red-Crowned Crane Red-Striped Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--red-crowned-crane-red-striped-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/red-crowned-crane-red-striped-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 219,
@@ -2640,10 +2838,11 @@
   "name": "Purple Boho Rug Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--purple-boho-rug-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/purple-boho-rug-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 220,
@@ -2652,10 +2851,11 @@
   "name": "Pink & Red Cheetahs Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--pink-and-red-cheetahs-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/pink-red-cheetahs-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 221,
@@ -2664,10 +2864,11 @@
   "name": "Oysters Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--oysters-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/oysters-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 222,
@@ -2676,10 +2877,11 @@
   "name": "Multi-Color Boho Rug Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--multi-color-boho-rug-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/multi-color-boho-rug-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 223,
@@ -2688,10 +2890,11 @@
   "name": "Luna Moth Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--luna-moth-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/luna-moth-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 224,
@@ -2700,10 +2903,11 @@
   "name": "Golf Cart Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--golf-cart-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/golf-cart-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 225,
@@ -2712,10 +2916,11 @@
   "name": "Dark Red & Cheetah Boho Rug Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--dark-red-and-cheetah-boho-rug-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/dark-red-cheetah-boho-rug-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 226,
@@ -2724,10 +2929,11 @@
   "name": "Dachshund Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--dachshund-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/dachshund-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 227,
@@ -2736,10 +2942,11 @@
   "name": "Coastal Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--coastal-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/coastal-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 228,
@@ -2748,10 +2955,11 @@
   "name": "Christmas Nutcracker Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--christmas-nutcracker-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/christmas-nutcracker-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": true,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 229,
@@ -2760,10 +2968,11 @@
   "name": "Christmas Chinoiserie Plates Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--christmas-chinoiserie-plates-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/christmas-chinoiserie-plates-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": true,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 230,
@@ -2772,10 +2981,11 @@
   "name": "Cheetah and Cockatoos Wanda Viola Artist Mahjong Mats",
   "img": "assets/albums/catalog-new/lets-be-besties--cheetah-and-cockatoos-wanda-viola-artist-mahjong-mats.jpg",
   "u": "https://letsbebesties.com/products/cheetah-and-cockatoos-wanda-viola",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 231,
@@ -2784,10 +2994,11 @@
   "name": "Book Lover Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--book-lover-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/book-lover-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 232,
@@ -2796,10 +3007,11 @@
   "name": "Blue Peacock Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--blue-peacock-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/blue-peacock-wanda-viola",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 233,
@@ -2808,10 +3020,11 @@
   "name": "Blue Heron Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--blue-heron-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/blue-heron-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 234,
@@ -2820,10 +3033,11 @@
   "name": "Year of the Horse Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--year-of-the-horse-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/year-of-the-horse-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 235,
@@ -2832,10 +3046,11 @@
   "name": "Scalloped & Striped Bright Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--scalloped-and-striped-bright-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/scalloped-striped-bright-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 236,
@@ -2844,10 +3059,11 @@
   "name": "Red & Chartreuse Boho Rug Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--red-and-chartreuse-boho-rug-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/red-chartreuse-boho-rug-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 237,
@@ -2856,10 +3072,11 @@
   "name": "Rainbow Row Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--rainbow-row-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/rainbow-row-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 238,
@@ -2868,10 +3085,11 @@
   "name": "Manatee Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--manatee-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/manatee-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 239,
@@ -2880,10 +3098,11 @@
   "name": "French Bulldog Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--french-bulldog-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/french-bulldog-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 240,
@@ -2892,10 +3111,11 @@
   "name": "Folk Art Floral Rug Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--folk-art-floral-rug-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/folk-art-floral-rug-wanda-viola",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 241,
@@ -2904,10 +3124,11 @@
   "name": "Dopamine Tiger Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--dopamine-tiger-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/dopamine-tiger-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 242,
@@ -2916,10 +3137,11 @@
   "name": "Chartreuse Boho Rug Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--chartreuse-boho-rug-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/chartreuse-boho-rug-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 243,
@@ -2928,10 +3150,11 @@
   "name": "Butter Your Pancakes Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--butter-your-pancakes-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/butter-your-pancakes-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 244,
@@ -2940,10 +3163,11 @@
   "name": "Red-Crowned Crane Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--red-crowned-crane-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/red-crowned-crane-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 245,
@@ -2952,10 +3176,11 @@
   "name": "Jewel Tone Western Rug Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--jewel-tone-western-rug-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/jewel-tone-western-rug-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 246,
@@ -2964,10 +3189,11 @@
   "name": "Jewel Tone Rug Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--jewel-tone-rug-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/jewel-tone-rug-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 247,
@@ -2976,10 +3202,11 @@
   "name": "Koi Fish Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--koi-fish-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/koi-fish-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 248,
@@ -2988,10 +3215,11 @@
   "name": "Pickleball Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--pickleball-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/pickleball-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 249,
@@ -3000,10 +3228,11 @@
   "name": "Octopus Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--octopus-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/octopus-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 250,
@@ -3012,10 +3241,11 @@
   "name": "Eiffel Tower Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--eiffel-tower-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/eiffel-tower-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 251,
@@ -3024,10 +3254,11 @@
   "name": "Chinoiserie Plates Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--chinoiserie-plates-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/chinoiserie-plates-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 252,
@@ -3036,10 +3267,11 @@
   "name": "Fall Pheasant Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--fall-pheasant-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/fall-pheasant-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 253,
@@ -3048,10 +3280,11 @@
   "name": "Dopamine Rug Simple Center Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--dopamine-rug-simple-center-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/dopamine-rug-simple-center-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 254,
@@ -3060,10 +3293,11 @@
   "name": "Chinoiserie Peacock Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--chinoiserie-peacock-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/chinoiserie-peacock-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 255,
@@ -3072,10 +3306,11 @@
   "name": "Christmas Leopard Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--christmas-leopard-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/christmas-leopard-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": true,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 256,
@@ -3084,10 +3319,11 @@
   "name": "Chinoiserie Pagoda Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--chinoiserie-pagoda-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/chinoiserie-pagoda-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 257,
@@ -3096,10 +3332,11 @@
   "name": "Chinoiserie Tiger Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--chinoiserie-tiger-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/chinoiserie-tiger-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 258,
@@ -3108,10 +3345,11 @@
   "name": "Boho Rug Wanda Viola  Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--boho-rug-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/boho-rug-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 259,
@@ -3120,10 +3358,11 @@
   "name": "Chinoiserie Dragonfly Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--chinoiserie-dragonfly-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/chinoiserie-dragonfly-wanda-viola",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 260,
@@ -3132,10 +3371,11 @@
   "name": "Chinoiserie Christmas Tree Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--chinoiserie-christmas-tree-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/chinoiserie-christmas-tree-wanda-viola",
-  "price": null,
+  "price": 110.0,
   "hol": true,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 261,
@@ -3144,10 +3384,11 @@
   "name": "Tennis Raquets Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--tennis-raquets-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/tennis-raquets-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 262,
@@ -3156,10 +3397,11 @@
   "name": "Cavalier King Charles Spaniel Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--cavalier-king-charles-spaniel-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/cavalier-king-charles-spaniel-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 263,
@@ -3168,10 +3410,11 @@
   "name": "Barn Owl Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--barn-owl-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/barn-owl-wanda-viola-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 264,
@@ -3180,10 +3423,11 @@
   "name": "Dopamine Rug Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--dopamine-rug-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/dopamine-rug-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 265,
@@ -3192,10 +3436,11 @@
   "name": "Tropical Travels with Simple Middle Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--tropical-travels-with-simple-middle-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/tropical-travels-with-simple-middle-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
-  "verdict": "pass",
-  "why": ""
+  "verdict": "already_in_app",
+  "why": "Already in the app as Tropical Travels",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 266,
@@ -3204,10 +3449,11 @@
   "name": "Seasons Mid-Century Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--seasons-mid-century-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/seasons-mid-century-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 267,
@@ -3216,10 +3462,11 @@
   "name": "Nutcracker Christmas Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--nutcracker-christmas-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/nutcracker-christmas-mahjong-mat",
-  "price": null,
+  "price": 60.0,
   "hol": true,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 268,
@@ -3684,7 +3931,7 @@
   "name": "Plumage Neoprene Mahjong Mat",
   "img": "assets/albums/catalog-new/britt-mills--plumage-neoprene-mahjong-mat.jpg",
   "u": "https://brittmillsdesign.com/products/plumage-neoprene-mahjong-mat",
-  "price": null,
+  "price": 90.0,
   "hol": false,
   "verdict": "crop",
   "box": [
@@ -3693,7 +3940,9 @@
    0.79125,
    0.811875
   ],
-  "why": "Brand card around the mat; cropped to the mat"
+  "why": "Brand card around the mat; cropped to the mat",
+  "price_src": "store product data, Nov 17",
+  "oos": 1
  },
  {
   "i": 304,
@@ -3702,7 +3951,7 @@
   "name": "Plumage II Leatherette Mahjong Mat",
   "img": "assets/albums/catalog-new/britt-mills--plumage-ii-leatherette-mahjong-mat.jpg",
   "u": "https://brittmillsdesign.com/products/plumage-ii-leatherette-mahjong-mat",
-  "price": null,
+  "price": 180.0,
   "hol": false,
   "verdict": "crop",
   "box": [
@@ -3711,7 +3960,8 @@
    0.822,
    0.812
   ],
-  "why": "Brand card around the mat; cropped to the mat"
+  "why": "Brand card around the mat; cropped to the mat",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 305,
@@ -3720,7 +3970,7 @@
   "name": "Grayson Leatherette Mahjong Mat",
   "img": "assets/albums/catalog-new/britt-mills--grayson-leatherette-mahjong-mat.jpg",
   "u": "https://brittmillsdesign.com/products/grayson-leatherette-mahjong-mat",
-  "price": null,
+  "price": 180.0,
   "hol": false,
   "verdict": "crop",
   "box": [
@@ -3729,7 +3979,8 @@
    0.83125,
    0.81125
   ],
-  "why": "Brand card around the mat; cropped to the mat"
+  "why": "Brand card around the mat; cropped to the mat",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 306,
@@ -3762,10 +4013,11 @@
   "name": "The Hamptons Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--the-hamptons-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/the-hamptons-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 309,
@@ -3774,10 +4026,11 @@
   "name": "The Gilded Lotus Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--the-gilded-lotus-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 310,
@@ -3786,10 +4039,11 @@
   "name": "Celestial Bloom by Charmaine J.W. Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--celestial-bloom-by-charmaine-j-w-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/celestial-bloom-by-charmaine-j-w-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 311,
@@ -3798,10 +4052,11 @@
   "name": "Snowy Egret Bam Bird Andy Albert Artist Collective Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--snowy-egret-bam-bird-andy-albert-artist-collective-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/egret-bam-bird-andy-albert-artist-collective-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": true,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 312,
@@ -3810,10 +4065,11 @@
   "name": "Colorado River Andy Albert Artist Collective Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--colorado-river-andy-albert-artist-collective-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/colorado-river-aa-artist-collective-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 313,
@@ -3822,10 +4078,11 @@
   "name": "Miracle Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--miracle-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/miracle-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 314,
@@ -3834,10 +4091,11 @@
   "name": "Indigo and Olive Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--indigo-and-olive-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/indigo-and-olive-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 315,
@@ -3846,10 +4104,11 @@
   "name": "Confetti Kaleidoscope OHBoN Studios Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--confetti-kaleidoscope-ohbon-studios-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/confetti-kaleidoscope-ohbon-studios-artist-mahjong-ma",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 316,
@@ -3858,10 +4117,11 @@
   "name": "Sedona Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--sedona-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/sedona-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 317,
@@ -3870,10 +4130,11 @@
   "name": "Cajun Christmas Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--cajun-christmas-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/cajun-christmas-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": true,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 318,
@@ -3882,10 +4143,11 @@
   "name": "Blueberry Hill Lillian Claire Designs Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--blueberry-hill-lillian-claire-designs-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/blueberry-hill-lillian-claire-designs-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 319,
@@ -3894,10 +4156,11 @@
   "name": "Sleeping Tiger Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--sleeping-tiger-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/sleeping-tiger-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 320,
@@ -3906,10 +4169,11 @@
   "name": "Chinoiserie Cabbage Plates Wanda Viola Artist Mahjong Mat",
   "img": "assets/albums/catalog-new/lets-be-besties--chinoiserie-cabbage-plates-wanda-viola-artist-mahjong-mat.jpg",
   "u": "https://letsbebesties.com/products/chinoiserie-cabbage-plates-wanda-viola-artist-mahjong-mat",
-  "price": null,
+  "price": 110.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 321,
@@ -3918,10 +4182,11 @@
   "name": "Foxhill Plaid Mahjong Mat",
   "img": "assets/albums/catalog-new/mahjong-row-and-co--foxhill-plaid-mahjong-mat.jpg",
   "u": "https://mahjongrowandco.com/products/foxhill-plaid-mahjong-mat",
-  "price": null,
+  "price": 80.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 322,
@@ -3930,10 +4195,11 @@
   "name": "Ellington Navy Mahjong Mat",
   "img": "assets/albums/catalog-new/mahjong-row-and-co--ellington-navy-mahjong-mat.jpg",
   "u": "https://mahjongrowandco.com/products/ellington-navy-mahjong-mat",
-  "price": null,
+  "price": 80.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 323,
@@ -3942,10 +4208,11 @@
   "name": "Sloane Floral Mahjong Mat",
   "img": "assets/albums/catalog-new/mahjong-row-and-co--sloane-floral-mahjong-mat.jpg",
   "u": "https://mahjongrowandco.com/products/sloane-floral-mahjong-mat",
-  "price": null,
+  "price": 80.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 324,
@@ -3954,10 +4221,11 @@
   "name": "Hawthorne Floral Mahjong Mat",
   "img": "assets/albums/catalog-new/mahjong-row-and-co--hawthorne-floral-mahjong-mat.jpg",
   "u": "https://mahjongrowandco.com/products/hawthorne-floral-mahjong-mat",
-  "price": null,
+  "price": 80.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  },
  {
   "i": 325,
@@ -3966,9 +4234,10 @@
   "name": "Marlowe Green Mahjong Mat",
   "img": "assets/albums/catalog-new/mahjong-row-and-co--marlowe-green-mahjong-mat.jpg",
   "u": "https://mahjongrowandco.com/products/marlowe-green-mahjong-mat",
-  "price": null,
+  "price": 80.0,
   "hol": false,
   "verdict": "pass",
-  "why": ""
+  "why": "",
+  "price_src": "store product data, Nov 17"
  }
 ]
