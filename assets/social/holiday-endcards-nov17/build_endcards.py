@@ -16,12 +16,12 @@ REELS={
  'dear-santa':dict(src=R+'assets/social/dear-santa-push/dear-santa-reel-v3.mp4', cut=499,
    frames=SCR+'../fix_ds', first=POOL['ar9']+json.load(open(R+'assets/social/dear-santa-push/reel-config.json'))['mats'],
    kicker='Your Christmas table, matched', sub='Start with your tiles. Swipe the mats that match.',
-   pill='Comment SANTA for the link', code='Code MAHJMATCH at Anders Ruff',
+   pill='Comment MATCH for the link', code='Code MAHJMATCH at Anders Ruff',
    out=R+'assets/social/dear-santa-push/v5/dear-santa-reel-v5'),
  'tinselle':dict(src=R+'assets/social/holiday-reels-nov17/tinselle-emerald-reel.mp4', cut=302,
    frames=SCR+'../fix_tin', first=json.load(open(R+'assets/social/holiday-endcards-nov17/tinselle-wall-mats.json')),
    kicker='Your Christmas table, matched', sub='Start with your tiles. Swipe the mats that match.',
-   pill='Comment TINSEL for the link', code='Code MAHJMATCH at Virora Mahjong',
+   pill='Comment MATCH for the link', code='Code MAHJMATCH at Virora Mahjong',
    out=R+'assets/social/holiday-reels-nov17/v2/tinselle-emerald-reel-v2'),
 }
 def trim(im):
