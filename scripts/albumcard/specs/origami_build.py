@@ -88,7 +88,7 @@ for c in A['mats']:
     for l in mr: RUSE[l] = RUSE.get(l, 0) + 1
     fn = f"{KEY}-mahjong-tiles-{slug(brand)}-{slug(nm)}-mat.jpg"; n = len(cards) + 1
     code = footer(c); hol = bool(c.get('holiday'))
-    cards.append({'slug': f'{KEY[:6]}{n:02d}', 'title': f"{CC['name']} + {nm}", 'col': CC['col'], 'tile_file': INSET,
+    cards.append({'slug': f'{KEY[:6]}{n:02d}', 'title': f"{CC['name']} + {c.get('short') or nm}", 'col': CC['col'], 'tile_file': INSET,
                   'tilefit': 'cover', 'racks': TRACKS, 'mat_racks': mr, 'file': fn, 'code': code, 'mat': uri(m), 'hol': hol, 'flame': FLAME if hol else None})
     note = 'TNT rec' if c.get('tnt') else 'Sister mat' if nm in SISTER else ('Holiday match' if c.get('holiday') else ('Retired' if c['retired'] else None))
     man.append({'order': n, 'group': c['group'], 'mat': nm, 'brand': brand, 'retired_mat': c['retired'], 'holiday': hol, 'partner': is_partner(c), 'file': fn,

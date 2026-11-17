@@ -45,6 +45,21 @@
   },
   {
    "group": "best",
+   "name": "Vegan Leather – Hunter Green",
+   "brand": "Bam Bird Boutique",
+   "short": "Vegan Leather – Hunter Green",
+   "img": "assets/colorcards/origami/mats/bam-bird-vegan-leather-hunter-green.jpg",
+   "why": "Your ask (Nov 17 2:41am): try Bam Bird's own vegan leatherette in Hunter Green, new colour on the same listing (not in Find Your Mat-ch yet). Clean studio shot.",
+   "retired": false,
+   "fym": "www.bambirdboutique.com/origami-leather-mat?v=67732658880821",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "new": true,
+   "partner": true
+  },
+  {
+   "group": "best",
    "name": "Rattan",
    "brand": "Sunday Mahjong",
    "img": "assets/colorcards/origami/mats/sunday-mahjong-rattan.jpg",
@@ -200,13 +215,15 @@
    "group": "yours",
    "name": "Emerald Teal & Celedon Green Double-Sided Leatherette",
    "brand": "Mahjong Register",
-   "img": "assets/colorcards/origami/leftout/mahjong-register-emerald-teal-and-celedon-green-double-sided-leatherette.jpg",
+   "img": "assets/colorcards/origami/leftout/mahjong-register-emerald-teal-and-celedon-green-double-sided-leatherette-nowhite.jpg",
    "why": "Your pick from Left out (round 2). Claude had said: Mahjong Register emerald teal leatherette: a good solid, but Dark Teal Cocktail Hour does the same job with a copper line.",
    "retired": false,
    "fym": "mahjongregister.com/pre-order-coral-aqua-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy-1",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "photo_note": "Nov 17: white border trimmed; turned so the folded corner (white behind it) sits under the tile box (Tiffany 2:26am: no white around the mat)",
+   "short": "Emerald Teal & Celadon"
   },
   {
    "group": "best",
@@ -217,33 +234,6 @@
    "retired": false,
    "fym": "alb2:mahjong-moxie-duck-camp",
    "lowres": true
-  },
-  {
-   "group": "yours",
-   "name": "Emerald Teal & Celadon Green Double-Sided Leatherette Mahjong Mat – 33\"",
-   "brand": "Mahjong Register",
-   "img": "assets/albums/catalog-new/mahjong-register--emerald-teal-and-celadon-green-double-sided-leatherette-mahjong-mat-33.jpg",
-   "why": "Your pick from Left out (round 2). Claude had said: Mahjong Register emerald teal leatherette: a good solid, but Dark Teal Cocktail Hour does the same job with a copper line.",
-   "retired": false,
-   "fym": null,
-   "lowres": false,
-   "holiday": false,
-   "her_pick": true
-  },
-  {
-   "group": "warm",
-   "name": "Vegan Leather (Chestnut)",
-   "brand": "Sunday Mahjong",
-   "img": "assets/colorcards/origami/mats/sunday-mahjong-vegan-leather-chestnut.jpg",
-   "why": "Chestnut leather: the same family as the backs, one step deeper.",
-   "retired": false,
-   "fym": "sundaymahjong.com/vegan-leather-premium-mahjong-mat",
-   "lowres": false,
-   "mat_racks": [
-    "Mahjong Register Navy Solid Wood",
-    "Bird & Bamboo Forest Green"
-   ],
-   "rack_note": "Tiffany Nov 17 2:24am: brown leather needs CONTRAST racks (burls are too close to the tone)"
   },
   {
    "group": "masc",
