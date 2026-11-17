@@ -1497,3 +1497,4 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - 2026-11-17 01:07 Tiffany: Google forward prompt never reached her phone; come back to it later (OVERDUE).
 - 2026-11-17 01:09 Tiffany: no black backgrounds ever (TdT Nantucket Basket). Album copy fixed; FYM/gallery on OVERDUE.
 - 2026-11-17 01:11 Tiffany asked about Britt Mills: only Novella Leatherette + Merrywood (holiday) were in. Sent her a sheet of all 43 other Britt Mills designs to pick from.
+- 2026-11-17 01:20 Tiffany: yes, Bam Bird plaids show in holiday picks -> added to works_for_holiday (late-calls); ships next FYM release (OVERDUE). She put her Britt Mills picks in the review page 'Missed one?' field and is sending the page back. Asked to see racks: rack board sent (12 options).
