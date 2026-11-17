@@ -1082,6 +1082,46 @@
    "holiday": false,
    "fym": "sundaymahjong.com/vegan-leather-premium-mahjong-mat",
    "removed_by_her": "chat-nov17"
+  },
+  {
+   "name": "Chinoiserie Garden",
+   "brand": "Mahj & Moon",
+   "img": "assets/colorcards/origami/leftout/mahj-and-moon-chinoiserie-garden.jpg",
+   "why": "You took it out (round 5).",
+   "retired": false,
+   "holiday": false,
+   "fym": "mahjandmoon.com/chinoiserie-garden-mahjong-mat",
+   "removed_by_her": 5
+  },
+  {
+   "name": "Birdie Green (retired)",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/origami/mats/oh-my-mahjong-birdie-green-retired.jpg",
+   "why": "You took it out (round 5).",
+   "retired": true,
+   "holiday": false,
+   "fym": "alb:coquette:Birdie Green",
+   "removed_by_her": 5
+  },
+  {
+   "name": "Darjeeling",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/origami/mats/oh-my-mahjong-darjeeling.jpg",
+   "why": "You took it out (round 5).",
+   "retired": false,
+   "holiday": false,
+   "fym": "www.ohmymahjong.com/darjeeling-mat-w-tube",
+   "removed_by_her": 5
+  },
+  {
+   "name": "Vanderbilt",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/origami/mats/oh-my-mahjong-vanderbilt.jpg",
+   "why": "You took it out (round 5).",
+   "retired": false,
+   "holiday": false,
+   "fym": "www.ohmymahjong.com/vanderbilt-mat-w-tube",
+   "removed_by_her": 5
   }
  ]
 }
