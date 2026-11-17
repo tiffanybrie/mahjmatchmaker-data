@@ -6321,18 +6321,8 @@
   "options": [
    {
     "img": "assets/covers/albums/00-origami-timber-mahjong-tiles-cover.jpg",
-    "label": "Faces on caramel",
-    "note": "Bam Bird listing image 12: the full face tray on caramel leather with Timber backs scattered. No box, no bag."
-   },
-   {
-    "img": "assets/covers/albums/options/00-origami-timber-mahjong-tiles-cover-B-box.jpg",
-    "label": "Timber backs",
-    "note": "Bam Bird listing image 4 (the Timber variant image): Timber backs in the display tray, faces below."
-   },
-   {
-    "img": "assets/covers/albums/options/00-origami-timber-mahjong-tiles-cover-C-navy.jpg",
-    "label": "Faces on navy",
-    "note": "Bam Bird listing image 13: face tray on navy leather with Timber backs."
+    "label": "Tile pile (her pick)",
+    "note": "Tiffany Nov 17 1:06am picked #1, the tile pile; Bam Bird logo bigger (160px), title 'Origami Timber Tiles' (set name first, then colourway)."
    }
   ],
   "default": 0,
@@ -6356,8 +6346,9 @@
     }
    ],
    "builder": "scripts/covers/origami/bgs.py + layout.py",
-   "picked": null
-  }
+   "picked": "pile"
+  },
+  "approved_at": "2026-11-17T01:06:00-05:00"
  },
  "bysight": {
   "done": "2026-11-16",
@@ -6409,6 +6400,8 @@
   "00:45 rack: not sure about Bam Bird Olive (doesn't see olive in the set); wants a better option considered. 00:50: thinking Peace Love Mahjong Dark Green (wavy) may be a good rack for Timber. DON'T CHANGE until she finishes the album.",
   "00:51 asked: closest Bird & Bamboo green = Forest Green (answered in chat; Deep Teal/Evergreen darker+greyer, Kelly too bright, Teal too aqua).",
   "00:52 Charleston Mahjong Club brown vegan leather: she LIKES it in this album but the photo is a hand next to the leather; no hands in mock-ups. Need a correct photo. DON'T swap yet.",
-  "00:53 Tigre de Tartan Caned Trompe L'oeil Natural: photo too muddy; if no better photo exists, it can't be used."
+  "00:53 Tigre de Tartan Caned Trompe L'oeil Natural: photo too muddy; if no better photo exists, it can't be used.",
+  "01:03 ADDED her picks: Luna EK Lotus Breeze Koi, Umbrella Koi Pond, Lotus Garden Koi (cards 59-61).",
+  "01:05 ADDED to holiday: Bam Bird Holiday Neoprene + Plaid Neoprene Green and Blue + Green with Pink (cards 62-64). All three already in FYM + Mat Gallery (checked live v120); plaids are tagged year-round, not holiday."
  ]
 }

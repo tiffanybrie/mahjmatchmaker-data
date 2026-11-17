@@ -1491,3 +1491,9 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - 2026-11-17 00:39 Tiffany: the Google (Gmail forward) prompts didn't work on her phone; retry.
 - 2026-11-17 00:44 Tiffany (Origami Timber cover): covers must be shown FULLY LAID OUT (panel, logo, title, wordmark), photo fills the frame, no white space; up to 3 versions. Built A pile / B backs wall / C backs over faces (record covers.layouts_nov17).
 - 2026-11-17 00:45-00:53 Tiffany (Origami Timber review notes, NOT to apply yet): unsure about Bam Bird Olive rack, thinking PLM Dark Green; Charleston Mahjong Club brown vegan leather stays but needs a no-hand photo; TdT Caned Trompe L'oeil Natural out unless a clearer photo exists. Asked closest Bird & Bamboo green: Forest Green. (config/album-records/origami-timber.json review_notes_nov17)
+- 2026-11-17 01:03 Tiffany: add Luna EK Lotus Breeze Koi, Umbrella Koi Pond, Lotus Garden Koi to Origami Timber. DONE (cards 59-61, review page v2).
+- 2026-11-17 01:05 Tiffany: add Bam Bird Holiday Neoprene + Plaid Neoprene Green and Blue + Green with Pink to Origami Timber holiday. DONE (cards 62-64). Checked: all three already in FYM and the live Mat Gallery (v120); plaids tagged year-round.
+- 2026-11-17 01:06 Tiffany: Origami Timber cover = #1 tile pile, Bam Bird logo bigger, title "Origami Timber Tiles". DONE. NAMING RULE: set name first, then colourway (Deco Lagoon, not Lagoon Deco). Deco covers rebuilt; rest of rename on OVERDUE.
+- 2026-11-17 01:07 Tiffany: Google forward prompt never reached her phone; come back to it later (OVERDUE).
+- 2026-11-17 01:09 Tiffany: no black backgrounds ever (TdT Nantucket Basket). Album copy fixed; FYM/gallery on OVERDUE.
+- 2026-11-17 01:11 Tiffany asked about Britt Mills: only Novella Leatherette + Merrywood (holiday) were in. Sent her a sheet of all 43 other Britt Mills designs to pick from.
