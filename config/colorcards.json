@@ -1344,6 +1344,68 @@
     "Must love a pool day."
    ],
    "_note": "Nov 10 (album start, Matches & Catalog agent): colours measured from CMC listing image 3 (flat layout) + image 9 (back tile). Racks = CMC 20in wooden Key Lime / Azalea Pink / Winter White (tile brand's own racks; drawn bars in measured colours until a clean rack cut-out exists). Top mats = the coordinated mat only until her picks; the top 3 get filled from her standouts."
+  },
+  "origami-timber": {
+   "name": "Origami (Timber)",
+   "col": "#8c4329",
+   "brand": "Bam Bird Boutique",
+   "sub": "Timber backs with an etched origami crane",
+   "backs": [
+    [
+     "TIMBER",
+     "#8c4329",
+     "warm wood back"
+    ],
+    [
+     "IVORY",
+     "#f4efe6",
+     "face layer"
+    ]
+   ],
+   "faces": [
+    [
+     "DEEP TEAL",
+     "#1d5f6b"
+    ],
+    [
+     "COPPER",
+     "#c47a45"
+    ],
+    [
+     "GREEN",
+     "#2e7a52"
+    ],
+    [
+     "PLUM",
+     "#5b2c40"
+    ],
+    [
+     "SEAFOAM",
+     "#87bec2"
+    ]
+   ],
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Olive"
+   ],
+   "rack_imgs": {
+    "Bam Bird Boutique Walnut": "assets/racks/card/bam-bird-boutique-walnut.png",
+    "Bam Bird Boutique Olive": "assets/racks/card/bam-bird-boutique-olive.png"
+   },
+   "tile": "assets/tiles/v92/bam-bird-origami-timber-split.jpg",
+   "tag": [
+    "Warm wood + jewel tones",
+    "teal, copper & green faces"
+   ],
+   "mats": [],
+   "mat_imgs": {},
+   "shop": "Shop Origami · Bam Bird Boutique",
+   "shop_m": "Shop Origami · Bam Bird Boutique",
+   "profile_line": [
+    "Seeking: deep teal, copper or forest green.",
+    "Must love a warm wood table."
+   ],
+   "_measured": "Nov 16 2026: back median rgb(140,67,41) from the FYM split photo right half; faces k-means on the left half (teal #0e525e 31%, copper #bf7c54 18%, seafoam-teal #3e8486 17%, copper-brown 17%); plum + green read by eye from winds/bams."
   }
  },
  "_note_oct19_catchup": "Oct 19 catch-up: shangri-la, lilac-soiree, preppy-soiree, spring-love, sunday-tile-set got mat_imgs/rack_imgs and were rendered with the existing style. They use 'tag' (factual). When Tiffany approves the Papaya profile_line style, add profile_line to each set and re-run build.py <key>; nothing else changes."

@@ -1,0 +1,949 @@
+{
+ "origami-timber": [
+  {
+   "name": "Moonlit Crane Garden",
+   "brand": "Bougie Mahjong",
+   "why": "Bougie: limited to your own picks. Cranes on black and gold.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/bougie-mahjong-moonlit-crane-garden.jpg",
+   "fym": "bougiemahjong.com/moonlit-crane-garden-mahjong-mat"
+  },
+  {
+   "name": "Imperial Koi Pond",
+   "brand": "Bougie Mahjong",
+   "why": "Bougie: limited to your own picks. Koi on deep navy-teal with copper koi: a strong motif match if you want it.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/bougie-mahjong-imperial-koi-pond.jpg",
+   "fym": "bougiemahjong.com/imperial-koi-pond-mahjong-mat"
+  },
+  {
+   "name": "Teal Dots and Stripes with Instructions",
+   "brand": "Let's Be Besties",
+   "why": "Let's Be Besties teal stripes with instructions: fine colour, but Folk Garden and Harvest Leaves are the better Let's Be Besties picks.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-teal-dots-and-stripes-with-instructions.jpg",
+   "fym": "letsbebesties.com/teal-dots-and-stripes-with-directions-mahjong-mat"
+  },
+  {
+   "name": "Grateful Dead x Bespoke Mahjong Tie Dye Dream (Side B: Bears & Bolt)",
+   "brand": "Bespoke Mahjong",
+   "why": "Theme/novelty mat (band, sports, Halloween, Thanksgiving) that doesn't carry her colours.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/bespoke-mahjong-grateful-dead-x-bespoke-mahjong-tie-dye-dream-side-b-bears-and-bolt.jpg",
+   "fym": "www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-grateful-dead-sunshine-galaxy-copy#side-b"
+  },
+  {
+   "name": "Seaside Reef BeachyMahj Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/albums/catalog-new/lets-be-besties--seaside-reef-beachymahj-artist-mahjong-mat.jpg",
+   "partner": true
+  },
+  {
+   "name": "Blue Pool Float",
+   "brand": "YOLO Mahjong",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/yolo-mahjong-blue-pool-float.jpg",
+   "fym": "www.yolomahjong.com/mahjong-mat-blue-pool-float-mahjong-mat-summer-pool-party-mahjong-game-mat"
+  },
+  {
+   "name": "Girl Talk (Side B: Starburst)",
+   "brand": "Bespoke Mahjong",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/bespoke-mahjong-girl-talk-side-b-starburst.jpg",
+   "fym": "www.bespokemahjong.com/double-the-fun-pop-art-mat#side-b"
+  },
+  {
+   "name": "Neon Peacock Circle",
+   "brand": "Let's Be Besties",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-neon-peacock-circle.jpg",
+   "fym": "letsbebesties.com/neon-peacock-circle-mahjong-mat"
+  },
+  {
+   "name": "Blue Abstract Neoprene",
+   "brand": "Bam Bird Boutique",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/bam-bird-boutique-blue-abstract-neoprene.jpg",
+   "fym": "www.bambirdboutique.com/blue-abstract-neoprene-mahjong-mat"
+  },
+  {
+   "name": "Nantucket Basket, Rope",
+   "brand": "Tigre de Tartan",
+   "why": "Same basket look as the round Nantucket Basket, which is in; one is enough.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/tigre-de-tartan-nantucket-basket-rope.jpg",
+   "fym": "tigredetartan.com/mahjong-mat-nantucket-basket-1"
+  },
+  {
+   "name": "Summer Wash",
+   "brand": "Let's Be Besties",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-summer-wash.jpg",
+   "fym": "letsbebesties.com/leatherette-summer-wash"
+  },
+  {
+   "name": "Flirty Leopards Mat - Vivid Blue",
+   "brand": "Bespoke Mahjong",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/bespoke-mahjong-flirty-leopards-mat-vivid-blue.jpg",
+   "fym": "www.bespokemahjong.com/vivid-blue-leopard-game-mat"
+  },
+  {
+   "name": "Bird Bam Cheers",
+   "brand": "Let's Be Besties",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-bird-bam-cheers.jpg",
+   "fym": "letsbebesties.com/bird-bam-cheers-mahjong-mat"
+  },
+  {
+   "name": "Summer Wash Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/albums/catalog-new/lets-be-besties--summer-wash-mahjong-mat.jpg",
+   "partner": true
+  },
+  {
+   "name": "Island",
+   "brand": "Royal Mahjong Society",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/royal-mahjong-society-island.jpg",
+   "fym": "theroyalmahjongsociety.com/island-mahjong-mat"
+  },
+  {
+   "name": "Gilded Pearl STM Artist Mahjong Mat (Leatherette Only)",
+   "brand": "Let's Be Besties",
+   "why": "Brown with pearls and a cane center: close to the backs, but the pearl motif adds nothing for her teal, copper or green.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/albums/catalog-new/lets-be-besties--gilded-pearl-stm-artist-mahjong-mat-leatherette-only.jpg",
+   "partner": true
+  },
+  {
+   "name": "Winter Jewel",
+   "brand": "Let's Be Besties",
+   "why": "Holiday: the holiday section has 14 mats; this one's colours don't add to them (red-forward or bright).",
+   "retired": false,
+   "hol": true,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-winter-jewel.jpg",
+   "fym": "letsbebesties.com/winter-jewel-neoprene-mahjong-mat"
+  },
+  {
+   "name": "Vibrant Symphony",
+   "brand": "House of Hearts Studio",
+   "why": "House of Hearts: rich colour, but the red-pink reads hotter than her copper and plum.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/house-of-hearts-studio-vibrant-symphony.jpg",
+   "fym": "houseofheartsstudio.com/vibrant-symphony-mahjong-mat-full-table-size"
+  },
+  {
+   "name": "Floral Scrolls",
+   "brand": "Let's Be Besties",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-floral-scrolls.jpg",
+   "fym": "letsbebesties.com/floral-scrolls-mahjong-mat"
+  },
+  {
+   "name": "Water's Edge",
+   "brand": "My Fair Mahjong",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/my-fair-mahjong-waters-edge.jpg",
+   "fym": "myfairmahjong.com/mat-waters-edge"
+  },
+  {
+   "name": "Nantucket Basket",
+   "brand": "Tigre de Tartan",
+   "why": "Same basket look as the round Nantucket Basket, which is in; one is enough.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/tigre-de-tartan-nantucket-basket.jpg",
+   "fym": "tigredetartan.com/mahjong-mat-no-cut-out-nantucket-basket-tdt-for-center-and-spring"
+  },
+  {
+   "name": "Florida Flamingo",
+   "brand": "Let's Be Besties",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-florida-flamingo.jpg",
+   "fym": "letsbebesties.com/florida-flamingo-neoprene-mahjong-mat"
+  },
+  {
+   "name": "Garden Party – Bluebell",
+   "brand": "My Fair Mahjong",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/my-fair-mahjong-garden-party-bluebell.jpg",
+   "fym": "myfairmahjong.com/mat-garden-party-bluebell"
+  },
+  {
+   "name": "Cherry Blossom Malachite",
+   "brand": "Miss Mahjong",
+   "why": "Malachite green with pink: her green, but the pink fights the copper koi.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/miss-mahjong-cherry-blossom-malachite.jpg",
+   "fym": "missmahjong.com/cherry-blossom-mahjong-playing-mat-malachite"
+  },
+  {
+   "name": "Texas Mon Amour Peach",
+   "brand": "Fait à Main",
+   "why": "Peach paisley: no teal or green for her faces to land on.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/fait-main-texas-mon-amour-peach.jpg",
+   "fym": "faitamainstudio.com/texas-mon-amour-mat-peach"
+  },
+  {
+   "name": "Green Malachite",
+   "brand": "Mahj Squad",
+   "why": "Green malachite: her green, but busy and glassy next to a wood grain.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/mahj-squad-green-malachite.jpg",
+   "fym": "mahjsquadshop.com/green-malachite-mahjong-mat-emerald-green-and-jewel-neoprene-mahjongg-mat-jewel-tone-mahj-mat-malachite-stone-mahj-ongg-mat-1"
+  },
+  {
+   "name": "Tropical Pop",
+   "brand": "Let's Be Besties",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-tropical-pop.jpg",
+   "fym": "letsbebesties.com/tropical-pop-neoprene-mahjong-mat"
+  },
+  {
+   "name": "Surfs Up",
+   "brand": "Let's Be Besties",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-surfs-up.jpg",
+   "fym": "letsbebesties.com/surfs-up-mahjong-mat"
+  },
+  {
+   "name": "Serengeti (retired)",
+   "brand": "Oh My Mahjong",
+   "why": "Retired OMM Serengeti in pinks and turquoise: too bright for Timber.",
+   "retired": true,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/oh-my-mahjong-serengeti-retired.jpg",
+   "fym": "alb:amara:Serengeti"
+  },
+  {
+   "name": "Glitterville Dragon (retired)",
+   "brand": "Oh My Mahjong",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": true,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/oh-my-mahjong-glitterville-dragon-retired.jpg",
+   "fym": "alb:glitterville:Glitterville Dragon"
+  },
+  {
+   "name": "Zen Glow (retired)",
+   "brand": "Oh My Mahjong",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": true,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/oh-my-mahjong-zen-glow-retired.jpg",
+   "fym": "alb:amara:Zen Glow"
+  },
+  {
+   "name": "Retro Plaid Premium",
+   "brand": "Sunday Mahjong",
+   "why": "Brown plaid: on tone, but Tartan Tweed-style plaids lose the faces at a distance.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/sunday-mahjong-retro-plaid-premium.jpg",
+   "fym": "sundaymahjong.com/retro-plaid"
+  },
+  {
+   "name": "Electric Bloom",
+   "brand": "Bougie Mahjong",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/bougie-mahjong-electric-bloom.jpg",
+   "fym": "bougiemahjong.com/electric-bloom-mahjong-mat"
+  },
+  {
+   "name": "Citrus Fronds",
+   "brand": "Let's Be Besties",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-citrus-fronds.jpg",
+   "fym": "letsbebesties.com/citrus-fronds-mahjong-mat"
+  },
+  {
+   "name": "Esme (retired)",
+   "brand": "Oh My Mahjong",
+   "why": "Not as strong a match as the mats in the album: kept here so you can put it in.",
+   "retired": true,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/oh-my-mahjong-esme-retired.jpg",
+   "fym": "www.ohmymahjong.com/esme-mat-w-tube"
+  },
+  {
+   "name": "Hot Tips – Bejeweled",
+   "brand": "Peace Love Mahjong",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/peace-love-mahjong-hot-tips-bejeweled.jpg",
+   "fym": "peacelovemahjong.com/mahjong-mats-hot-tips?v=52799151046948"
+  },
+  {
+   "name": "Giraffe Pattern",
+   "brand": "Let's Be Besties",
+   "why": "Animal print in browns: the same brown as the backs, so the tiles disappear into it.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-giraffe-pattern.jpg",
+   "fym": "letsbebesties.com/giraffe-pattern-mahjong-mat"
+  },
+  {
+   "name": "Botanical Garden",
+   "brand": "Let's Be Besties",
+   "why": "Orange frame with a striped center: busy, and the green stripes are lime, not her forest green.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-botanical-garden.jpg",
+   "fym": "letsbebesties.com/botanical-garden-neoprene-mahjong-mat"
+  },
+  {
+   "name": "Palm Beach Punch",
+   "brand": "Peace Love Mahjong",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/peace-love-mahjong-palm-beach-punch.jpg",
+   "fym": "peacelovemahjong.com/mahjong-mats-flowers?v=52799162417444"
+  },
+  {
+   "name": "Halloween Pumpkin & Sugar Skull",
+   "brand": "Mahj & Moon",
+   "why": "Theme/novelty mat (band, sports, Halloween, Thanksgiving) that doesn't carry her colours.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/mahj-and-moon-halloween-pumpkin-and-sugar-skull.jpg",
+   "fym": "mahjandmoon.com/halloween-pumpkin-sugar-skull-mahjong-mat"
+  },
+  {
+   "name": "Delilah",
+   "brand": "Oh My Mahjong",
+   "why": "Delilah: blue and red, no warm wood tone.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/oh-my-mahjong-delilah.jpg",
+   "fym": "www.ohmymahjong.com/delilah-mat-in-tube"
+  },
+  {
+   "name": "Electric Hibiscus",
+   "brand": "Bougie Mahjong",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/bougie-mahjong-electric-hibiscus.jpg",
+   "fym": "bougiemahjong.com/electric-hibiscus-mahjong-mat"
+  },
+  {
+   "name": "Plaid Tidings",
+   "brand": "My Fair Mahjong",
+   "why": "Holiday: the holiday section has 14 mats; this one's colours don't add to them (red-forward or bright).",
+   "retired": false,
+   "hol": true,
+   "img": "assets/colorcards/origami/leftout/my-fair-mahjong-plaid-tidings.jpg",
+   "fym": "myfairmahjong.com/mahjong-mat-plaid-tidings"
+  },
+  {
+   "name": "James (Pastel Floral)",
+   "brand": "Betty June & Jeannette",
+   "why": "Lime or kelly green, brighter and yellower than her forest-green bams.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/betty-june-and-jeannette-james-pastel-floral.jpg",
+   "fym": "www.etsy.com/listing/4483587170/james-pastel-floral"
+  },
+  {
+   "name": "Festival Malachite",
+   "brand": "Miss Mahjong",
+   "why": "Malachite green with pink: her green, but the pink fights the copper koi.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/miss-mahjong-festival-malachite.jpg",
+   "fym": "missmahjong.com/festival-mahjong-playing-mat-malachite"
+  },
+  {
+   "name": "Green Retro",
+   "brand": "Mahj & Moon",
+   "why": "Lime or kelly green, brighter and yellower than her forest-green bams.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/mahj-and-moon-green-retro.jpg",
+   "fym": "mahjandmoon.com/green-retro-mahjong-mat"
+  },
+  {
+   "name": "Confetti Lemon Lime",
+   "brand": "My Fair Mahjong",
+   "why": "Lime or kelly green, brighter and yellower than her forest-green bams.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/my-fair-mahjong-confetti-lemon-lime.jpg",
+   "fym": "alb2:my-fair-mahjong-confetti-lemon-lime"
+  },
+  {
+   "name": "Signature Logo Mat – Light Blue",
+   "brand": "Let's Mahj On",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-mahj-on-signature-logo-mat-light-blue.jpg",
+   "fym": "www.letsmahj-on.com/signature-logo-mats?v=48095523504233"
+  },
+  {
+   "name": "Dark Green Stamps",
+   "brand": "Let's Be Besties",
+   "why": "Dark green with travel stamps: novelty print; Harvest Leaves does deep green better.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-dark-green-stamps.jpg",
+   "fym": "letsbebesties.com/dark-green-travel-stamps-mahjong-mat"
+  },
+  {
+   "name": "Confetti – Green",
+   "brand": "My Fair Mahjong",
+   "why": "Lime or kelly green, brighter and yellower than her forest-green bams.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/my-fair-mahjong-confetti-green.jpg",
+   "fym": "myfairmahjong.com/mahjong-mat-confetti-33-x-33?v=50899721519415"
+  },
+  {
+   "name": "Pop Bloom with Instructions Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "why": "Bright florals on white around a teal circle: pretty, but too white and sweet for Timber.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/albums/catalog-new/lets-be-besties--pop-bloom-with-instructions-mahjong-mat.jpg",
+   "partner": true
+  },
+  {
+   "name": "Canopy Palm",
+   "brand": "Miss Mahjong",
+   "why": "Lime or kelly green, brighter and yellower than her forest-green bams.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/miss-mahjong-canopy-palm.jpg",
+   "fym": "missmahjong.com/canopy-mahjong-playing-mat"
+  },
+  {
+   "name": "Aloha",
+   "brand": "Let's Be Besties",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-aloha.jpg",
+   "fym": "letsbebesties.com/aloha-neoprene-mahjong-mat"
+  },
+  {
+   "name": "Hibiscus Lagoon",
+   "brand": "Bougie Mahjong",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/bougie-mahjong-hibiscus-lagoon.jpg",
+   "fym": "bougiemahjong.com/hibiscus-lagoon-mahjong-mat"
+  },
+  {
+   "name": "Bamboo Lotus",
+   "brand": "Let's Be Besties",
+   "why": "Lime or kelly green, brighter and yellower than her forest-green bams.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-bamboo-lotus.jpg",
+   "fym": "letsbebesties.com/bamboo-lotus-neoprene-mahjong-mat"
+  },
+  {
+   "name": "Lorelei",
+   "brand": "Oh My Mahjong",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/oh-my-mahjong-lorelei.jpg",
+   "fym": "www.ohmymahjong.com/lorelei-mat"
+  },
+  {
+   "name": "Teal Rivera Leopard",
+   "brand": "Mahjong Register",
+   "why": "Teal leopard: bright aqua plus leopard, too loud for the crane faces.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/mahjong-register-teal-rivera-leopard.jpg",
+   "fym": "mahjongregister.com/teal-rivera-leopard-33-mahjong-mat"
+  },
+  {
+   "name": "Pink and Green Open Heart",
+   "brand": "Let's Be Besties",
+   "why": "Lime or kelly green, brighter and yellower than her forest-green bams.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-pink-and-green-open-heart.jpg",
+   "fym": "letsbebesties.com/pink-and-green-open-heart-mahjong-mat"
+  },
+  {
+   "name": "Jaguar Royale",
+   "brand": "Bougie Mahjong",
+   "why": "Bougie: limited to your own picks.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/bougie-mahjong-jaguar-royale.jpg",
+   "fym": "bougiemahjong.com/jaguar-royale-mahjong-mat"
+  },
+  {
+   "name": "Floral Embers AC Studios Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "why": "Coral-red roses on gold: red-pink, not copper.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/albums/catalog-new/lets-be-besties--floral-embers-ac-studios-artist-mahjong-mat.jpg",
+   "partner": true
+  },
+  {
+   "name": "Green Dragon Scales",
+   "brand": "YOLO Mahjong",
+   "why": "Lime or kelly green, brighter and yellower than her forest-green bams.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/yolo-mahjong-green-dragon-scales.jpg",
+   "fym": "www.yolomahjong.com/mahjong-mat-green-dragon-scales-print-31-5-square-non-slip-table-mat"
+  },
+  {
+   "name": "Boots & Bubbles – Green",
+   "brand": "Bam Bird Boutique",
+   "why": "Lime or kelly green, brighter and yellower than her forest-green bams.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/bam-bird-boutique-boots-and-bubbles-green.jpg",
+   "fym": "www.bambirdboutique.com/boots-bubbles-neoprene-mahjong-mat?v=67615057051957"
+  },
+  {
+   "name": "Round Leopard Print",
+   "brand": "Mahj & Moon",
+   "why": "Animal print in browns: the same brown as the backs, so the tiles disappear into it.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/mahj-and-moon-round-leopard-print.jpg",
+   "fym": "mahjandmoon.com/round-leopard-print-mahjong-mat"
+  },
+  {
+   "name": "Emerald Teal & Celadon Green Double-Sided Leatherette Mahjong Mat – 33\"",
+   "brand": "Mahjong Register",
+   "why": "Mahjong Register emerald teal leatherette: a good solid, but Dark Teal Cocktail Hour does the same job with a copper line.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/albums/catalog-new/mahjong-register--emerald-teal-and-celadon-green-double-sided-leatherette-mahjong-mat-33.jpg",
+   "partner": true
+  },
+  {
+   "name": "Coastal Aqua Marble",
+   "brand": "Anders Ruff",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/anders-ruff-coastal-aqua-marble.jpg",
+   "fym": "shop.andersruff.com/coastal-aqua-marble-mahjong-mat"
+  },
+  {
+   "name": "Emerald Society",
+   "brand": "Bougie Mahjong",
+   "why": "Bougie: limited to your own picks (deep emerald would otherwise suit).",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/bougie-mahjong-emerald-society.jpg",
+   "fym": "bougiemahjong.com/emerald-society-mahjong-mat"
+  },
+  {
+   "name": "Palm Beach Summerween",
+   "brand": "Bougie Mahjong",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/bougie-mahjong-palm-beach-summerween.jpg",
+   "fym": "bougiemahjong.com/palm-beach-summerween-mahjong-mat"
+  },
+  {
+   "name": "Happy Halloween",
+   "brand": "Let's Be Besties",
+   "why": "Theme/novelty mat (band, sports, Halloween, Thanksgiving) that doesn't carry her colours.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-happy-halloween.jpg",
+   "fym": "letsbebesties.com/happy-halloween-neoprene-mahjong-mat"
+  },
+  {
+   "name": "Golden Gingham Premium",
+   "brand": "Sunday Mahjong",
+   "why": "Golden gingham: yellow-gold, warmer than the faces need.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/sunday-mahjong-golden-gingham-premium.jpg",
+   "fym": "sundaymahjong.com/golden-gingham-premium-mahjong-mat"
+  },
+  {
+   "name": "Emerald Teal & Celedon Green Double-Sided Leatherette",
+   "brand": "Mahjong Register",
+   "why": "Mahjong Register emerald teal leatherette: a good solid, but Dark Teal Cocktail Hour does the same job with a copper line.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/mahjong-register-emerald-teal-and-celedon-green-double-sided-leatherette.jpg",
+   "fym": "mahjongregister.com/pre-order-coral-aqua-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy-1"
+  },
+  {
+   "name": "Turtles in Paradise Green BeachyMahj Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "why": "Turtles in teal seas: bright aqua again.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/albums/catalog-new/lets-be-besties--turtles-in-paradise-green-beachymahj-artist-mahjong-mat.jpg",
+   "partner": true
+  },
+  {
+   "name": "Sleigh All Day Mat",
+   "brand": "Mahj Mood",
+   "why": "Holiday: the holiday section has 14 mats; this one's colours don't add to them (red-forward or bright).",
+   "retired": false,
+   "hol": true,
+   "img": "assets/colorcards/origami/leftout/mahj-mood-sleigh-all-day-mat.jpg",
+   "fym": "mahjmood.com/sleigh-all-day-mat"
+  },
+  {
+   "name": "Serengeti Lillian Claire Designs Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "why": "Not as strong a match as the mats in the album: kept here so you can put it in.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/albums/catalog-new/lets-be-besties--serengeti-lillian-claire-designs-artist-mahjong-mat.jpg",
+   "partner": true
+  },
+  {
+   "name": "Reversible Vegan Leather – Mint Green & Sea Foam Green",
+   "brand": "Charleston Mahjong Club",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/charleston-mahjong-club-reversible-vegan-leather-mint-green-and-sea-foam-green.jpg",
+   "fym": "www.charlestonmahjongclub.com/vegan-leather-reversible-game-mat?v=50377156329777"
+  },
+  {
+   "name": "Flirty Leopards Mint Julep",
+   "brand": "Bespoke Mahjong",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/bespoke-mahjong-flirty-leopards-mint-julep.jpg",
+   "fym": "www.bespokemahjong.com/flirtyleopardsmintjulep"
+  },
+  {
+   "name": "Checkerboard with Instructions",
+   "brand": "Let's Be Besties",
+   "why": "Deep red: a red mat next to red-brown wood flattens the backs.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-checkerboard-with-instructions.jpg",
+   "fym": "letsbebesties.com/checkerboard-with-instructions-mahjong-mat"
+  },
+  {
+   "name": "Peacock Lagoon",
+   "brand": "Let's Be Besties",
+   "why": "Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-peacock-lagoon.jpg",
+   "fym": "letsbebesties.com/peacock-lagoon-mahjong-mat"
+  },
+  {
+   "name": "Winslow 1920 Rouge",
+   "brand": "Ozark Mahjongg",
+   "why": "Rouge (red) version of Winslow 1920: the navy one is in, red flattens the wood backs.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/ozark-mahjongg-winslow-1920-rouge.jpg",
+   "fym": "ozarkmahjong.com/winslow-1920-rouge-mat"
+  },
+  {
+   "name": "Leopard Print",
+   "brand": "YOLO Mahjong",
+   "why": "Animal print in browns: the same brown as the backs, so the tiles disappear into it.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/yolo-mahjong-leopard-print.jpg",
+   "fym": "www.yolomahjong.com/mahjong-mat-31-5x31-5-ship-folded-3"
+  },
+  {
+   "name": "Tartan Tweed",
+   "brand": "Let's Be Besties",
+   "why": "Tartan Tweed: on tone, but a Let's Be Besties limit (Harvest Leaves, Folk Garden, Fall Barn Quilt are in).",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-tartan-tweed.jpg",
+   "fym": "letsbebesties.com/tartan-tweed-mahjong-mat"
+  },
+  {
+   "name": "Vintage Noel",
+   "brand": "Let's Be Besties",
+   "why": "Holiday: the holiday section has 14 mats; this one's colours don't add to them (red-forward or bright).",
+   "retired": false,
+   "hol": true,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-vintage-noel.jpg",
+   "fym": "letsbebesties.com/vintage-noel-leatherette-mahjong-mat"
+  },
+  {
+   "name": "Bird & Pear Blossom",
+   "brand": "Mahj & Moon",
+   "why": "Orange blossom on peach: no teal or green.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/mahj-and-moon-bird-and-pear-blossom.jpg",
+   "fym": "mahjandmoon.com/bird-pear-blossom-mahjong-mat"
+  },
+  {
+   "name": "Holly Starburst",
+   "brand": "Let's Be Besties",
+   "why": "Holiday: the holiday section has 14 mats; this one's colours don't add to them (red-forward or bright).",
+   "retired": false,
+   "hol": true,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-holly-starburst.jpg",
+   "fym": "letsbebesties.com/holly-starburst-leatherette-mahjong-mat"
+  },
+  {
+   "name": "Heirloom Collection: Fire + Fortune Year of the Horse Mahjong Mat",
+   "brand": "Mac + Miller Mahjong",
+   "why": "Red and gold Year of the Horse: red-gold, not her palette.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/mac-miller-mahjong-heirloom-collection-fire-fortune-year-of-the-horse-mahjong-mat.jpg",
+   "fym": "www.macandmillermahjong.com/heirloom-fire-fortune-mahjong-mat"
+  },
+  {
+   "name": "Red & Chartreuse Boho Rug Wanda Viola Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "why": "Red boho rug: red and chartreuse, too hot for the cool teal faces.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/albums/catalog-new/lets-be-besties--red-and-chartreuse-boho-rug-wanda-viola-artist-mahjong-mat.jpg",
+   "partner": true
+  },
+  {
+   "name": "Cottage Core",
+   "brand": "Wren Mats",
+   "why": "Cottage Core: red plaid with sage, red fights the wood.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/wren-mats-cottage-core.jpg",
+   "fym": "www.wrenmats.com/t4eyv0rb7euouw482trf20qmrqtpw7-krskj"
+  },
+  {
+   "name": "Tabitha",
+   "brand": "House of Hearts Studio",
+   "why": "House of Hearts: rich colour, but the red-pink reads hotter than her copper and plum.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/house-of-hearts-studio-tabitha.jpg",
+   "fym": "houseofheartsstudio.com/tabitha-mahjong-mat-full-table-mat"
+  },
+  {
+   "name": "Vegan Leather (Ruby)",
+   "brand": "Sunday Mahjong",
+   "why": "Deep red: a red mat next to red-brown wood flattens the backs.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/sunday-mahjong-vegan-leather-ruby.jpg",
+   "fym": "sundaymahjong.com/vegan-leather-premium-mahjong-mat?v=ruby"
+  },
+  {
+   "name": "Auburn Eagle Game Day",
+   "brand": "Let's Be Besties",
+   "why": "Theme/novelty mat (band, sports, Halloween, Thanksgiving) that doesn't carry her colours.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-auburn-eagle-game-day.jpg",
+   "fym": "letsbebesties.com/auburn-eagle-mahjong-mat"
+  },
+  {
+   "name": "All American",
+   "brand": "Anders Ruff",
+   "why": "Theme/novelty mat (band, sports, Halloween, Thanksgiving) that doesn't carry her colours.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/anders-ruff-all-american.jpg",
+   "fym": "shop.andersruff.com/all-american-mahjong-mat"
+  },
+  {
+   "name": "Retro Waves",
+   "brand": "Mahj & Moon",
+   "why": "Retro Waves in peach-pink: no teal or green.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/mahj-and-moon-retro-waves.jpg",
+   "fym": "mahjandmoon.com/retro-waves-mahjong-mat"
+  },
+  {
+   "name": "Butterscotch Floral",
+   "brand": "Let's Be Besties",
+   "why": "Butterscotch Floral: navy and roses, nice, but a Let's Be Besties limit.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-butterscotch-floral.jpg",
+   "fym": "letsbebesties.com/butterscotch-floral-mahjong-mat"
+  },
+  {
+   "name": "Le Drip Summer Colors",
+   "brand": "Fait à Main",
+   "why": "Le Drip in rainbow stripes: too many colours.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/fait-main-le-drip-summer-colors.jpg",
+   "fym": "faitamainstudio.com/le-drip-mat-summer-colors"
+  },
+  {
+   "name": "Highland Cow Hide Safari Club Collection",
+   "brand": "Mahjong Register",
+   "why": "Animal print in browns: the same brown as the backs, so the tiles disappear into it.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/mahjong-register-highland-cow-hide-safari-club-collection.jpg",
+   "fym": "mahjongregister.com/highland-cow-hide-safari-club-collection-mahjong-mat-33"
+  },
+  {
+   "name": "Pumpkin Patch",
+   "brand": "Mahj & Moon",
+   "why": "Theme/novelty mat (band, sports, Halloween, Thanksgiving) that doesn't carry her colours.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/mahj-and-moon-pumpkin-patch.jpg",
+   "fym": "mahjandmoon.com/pumpkin-patch-mahjong-mat"
+  },
+  {
+   "name": "Turkey Dinner",
+   "brand": "Mahj Pit",
+   "why": "Theme/novelty mat (band, sports, Halloween, Thanksgiving) that doesn't carry her colours.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/mahj-pit-turkey-dinner.jpg",
+   "fym": "mahjpit.co/turkey-dinner-mat"
+  },
+  {
+   "name": "Citrus Sherbet",
+   "brand": "Peace Love Mahjong",
+   "why": "Pink and orange flowers on mint: sweet, not her deep palette.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/peace-love-mahjong-citrus-sherbet.jpg",
+   "fym": "peacelovemahjong.com/mahjong-mats-flowers?v=52799162384676"
+  },
+  {
+   "name": "Novella",
+   "brand": "Britt Mills",
+   "why": "The neoprene version of Novella; the leatherette (in) photographs better.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/britt-mills-novella.jpg",
+   "fym": "brittmillsdesign.com/novella-neoprene-mahjong-mat-arriving-late-november"
+  },
+  {
+   "name": "Journey to the West",
+   "brand": "YOLO Mahjong",
+   "why": "YOLO Journey to the West: red and gold.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/yolo-mahjong-journey-to-the-west.jpg",
+   "fym": "www.yolomahjong.com/journey-to-the-west-collection-mat-31-5-shipped-rolled"
+  },
+  {
+   "name": "Dark Red & Cheetah Boho Rug Wanda Viola Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "why": "Red boho rug: red and chartreuse, too hot for the cool teal faces.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/albums/catalog-new/lets-be-besties--dark-red-and-cheetah-boho-rug-wanda-viola-artist-mahjong-mat.jpg",
+   "partner": true
+  },
+  {
+   "name": "Christmas Bows",
+   "brand": "Let's Be Besties",
+   "why": "Holiday: the holiday section has 14 mats; this one's colours don't add to them (red-forward or bright).",
+   "retired": false,
+   "hol": true,
+   "img": "assets/colorcards/origami/leftout/lets-be-besties-christmas-bows.jpg",
+   "fym": "letsbebesties.com/christmas-bows-neoprene-mahjong-mat"
+  },
+  {
+   "name": "Ora's Dress Lillian Claire Designs Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "why": "Ora's Dress: pink and gold florals on white.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/albums/catalog-new/lets-be-besties--oras-dress-lillian-claire-designs-artist-mahjong-mat.jpg",
+   "partner": true
+  },
+  {
+   "name": "Halloween Mandala",
+   "brand": "YOLO Mahjong",
+   "why": "Theme/novelty mat (band, sports, Halloween, Thanksgiving) that doesn't carry her colours.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/yolo-mahjong-halloween-mandala.jpg",
+   "fym": "www.yolomahjong.com/halloween-mandala-mahjong-mat"
+  },
+  {
+   "name": "Chinoiserie Garden",
+   "brand": "Mahj & Moon",
+   "why": "Chinoiserie Garden in navy and peach: busy, and peach over copper.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/leftout/mahj-and-moon-chinoiserie-garden.jpg",
+   "fym": "mahjandmoon.com/chinoiserie-garden-mahjong-mat"
+  },
+  {
+   "name": "Orange Splatter Star OHBoN Studios Artist Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "why": "Orange splatter: orange only, no teal or green.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/albums/catalog-new/lets-be-besties--orange-splatter-star-ohbon-studios-artist-mahjong-mat.jpg",
+   "partner": true
+  }
+ ]
+}
