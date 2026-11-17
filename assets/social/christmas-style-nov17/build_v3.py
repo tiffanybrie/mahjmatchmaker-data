@@ -155,7 +155,7 @@ for i,(t,sub) in enumerate(steps):
     for j,l in enumerate(lines): d.text((tx,ty+62+j*38),l,font=fs,fill=MUTED)
     y=ty+62+len(lines)*38+56
 assert y<=1150, y
-pill(base,1176,"Comment MATCH and I'll send you the link",ImageFont.truetype(BIT,36),h=72,padx=40)
+pill(base,1176,"Comment MATCH and we'll send you the link",ImageFont.truetype(BIT,36),h=72,padx=40)
 ct(d,1272,"Code MAHJMATCH at every brand here \u00b7 prices from each brand's site Nov 17",ImageFont.truetype(BIT6,24),MUTED)
 base.convert('RGB').save(OUT+'slide10-find-your-match.jpg',quality=92)
 json.dump(rows,open(OUT+'mats.json','w'),indent=1)
