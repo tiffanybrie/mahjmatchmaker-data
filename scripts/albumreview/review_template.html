@@ -105,6 +105,9 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{
 .mc{scroll-margin-top:12px}.mc.flash{box-shadow:0 0 0 3px var(--pink)}
 .hint{font-size:14px;color:var(--muted);margin:8px 0 0}
 .list.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+/* Tiffany Nov 17 2:15am: a WIDE grid (4-6 across) to weigh colours for the final order, and drag to move */
+@media (min-width:700px){.list.grid{position:relative;left:50%;transform:translateX(-50%);width:min(1500px,calc(100vw - 32px));grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}}
+.gc.drag{opacity:.35}.gc.over{outline:3px solid var(--pink);outline-offset:2px}
 .gc{position:relative;display:block;padding:0;border:2px solid var(--line);border-radius:10px;overflow:hidden;background:var(--dim);cursor:pointer}
 .gc img{display:block;width:100%;height:auto;aspect-ratio:auto 4/5}
 .mc .zoom img{aspect-ratio:auto 4/5}
@@ -290,7 +293,7 @@ ${c.tags.length?`<div class="tags">${c.tags.map(t=>`<span class="tag${t.startsWi
 <div class="mv"><label for="mv-${c.id}">Move to #</label><input id="mv-${c.id}" data-mv="${c.id}" data-sec="${sec}" inputmode="numeric" pattern="[0-9]*" enterkeyhint="go" autocomplete="off"><button data-go="mv-${c.id}" aria-label="Move ${esc(c.mat)} to that number">Go</button><span>of ${n}</span></div>
 <label class="bn" for="n-${c.id}">Note</label><input class="note" id="n-${c.id}" data-note="${c.id}" maxlength="500" placeholder="e.g. rank higher, wrong colour" value="${esc(S.notes[c.id]||'')}"></div></article>`}
 function gridHTML(c,i,sec){const v=S.v[c.id]||'',on=!!SEL&&SEL.id===c.id;
-  return `<button class="gc${v==='remove'?' rm':''}" data-gid="${c.id}" data-sec="${sec}" aria-pressed="${on}" aria-label="#${i+1} ${esc(c.mat)}${v==='keep'?', keeping':v==='remove'?', taking out':''}"><img src="c/${c.id}.jpg" alt="" loading="lazy"><span class="gn">#${i+1}</span>${v==='keep'?'<span class="gk">♥</span>':v==='remove'?'<span class="gk">✕</span>':''}</button>`}
+  return `<button draggable="true" class="gc${v==='remove'?' rm':''}" data-gid="${c.id}" data-sec="${sec}" aria-pressed="${on}" aria-label="#${i+1} ${esc(c.mat)}${v==='keep'?', keeping':v==='remove'?', taking out':''}"><img src="c/${c.id}.jpg" alt="" loading="lazy"><span class="gn">#${i+1}</span>${v==='keep'?'<span class="gk">♥</span>':v==='remove'?'<span class="gk">✕</span>':''}</button>`}
 function renderList(sec){ensureAll();const ids=S.order[sec];const el=$(sec==='main'?'#main':'#hol');const g=VIEW[sec]==='grid';
   el.classList.toggle('grid',g&&ids.length>0);
   el.innerHTML=ids.length?ids.map((id,i)=>g?gridHTML(byId[id],i,sec):cardHTML(byId[id],i,ids.length,sec)).join(''):'<p class="empty">No cards in this section.</p>';
@@ -404,6 +407,12 @@ $('#noorder').addEventListener('change',e=>{S.ordering_off=e.target.checked;SEL=
 /* Move to # applies + saves on Go, on Enter, and when she leaves the box (blur, or tapping the next card's box). The blur case runs
    once focus has landed on the next box, so that box keeps focus and stays where it is. */
 document.addEventListener('focusout',e=>{const t=e.target;if(t.dataset&&t.dataset.mv!==undefined&&t.value.trim())setTimeout(()=>applyMv(t,document.activeElement),0)});
+/* drag to move in grid view (desktop): drop a card on another card = it takes that card's number */
+let DRAG=null;
+document.addEventListener('dragstart',e=>{const g=e.target.closest&&e.target.closest('.gc');if(!g||S.ordering_off)return;DRAG={id:g.dataset.gid,sec:g.dataset.sec};g.classList.add('drag');try{e.dataTransfer.effectAllowed='move';e.dataTransfer.setData('text/plain',DRAG.id)}catch(_){}});
+document.addEventListener('dragend',e=>{document.querySelectorAll('.gc.drag,.gc.over').forEach(x=>x.classList.remove('drag','over'));DRAG=null});
+document.addEventListener('dragover',e=>{const g=e.target.closest&&e.target.closest('.gc');if(!DRAG||!g||g.dataset.sec!==DRAG.sec)return;e.preventDefault();document.querySelectorAll('.gc.over').forEach(x=>x!==g&&x.classList.remove('over'));g.classList.add('over')});
+document.addEventListener('drop',e=>{const g=e.target.closest&&e.target.closest('.gc');if(!DRAG||!g||g.dataset.sec!==DRAG.sec)return;e.preventDefault();const to=S.order[DRAG.sec].indexOf(g.dataset.gid)+1;const d=DRAG;DRAG=null;document.querySelectorAll('.gc.drag,.gc.over').forEach(x=>x.classList.remove('drag','over'));if(to>0)moveTo(d.sec,d.id,to,g)});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')$('#lb').hidden=true;
   if(e.key==='Enter'&&e.target.dataset&&e.target.dataset.mv!==undefined){e.preventDefault();applyMv(e.target)}});
 renderSteps();renderAll();connect();
