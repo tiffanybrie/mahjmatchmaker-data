@@ -10,6 +10,7 @@ AMBER=(176,106,18); GRAYB=(92,112,138); LINE=(170,196,222)
 GROUPS=[
  ('Code MAHJMATCH works on top',GREEN,[
   ('Charleston Mahjong Club','Buy 2 save 10%, 3 save 15%, 4+ save 20%. Club bundles $425 (reg. $530).','Fri 11/27 to Mon 11/30','Charleston says MAHJMATCH takes 10% more on top'),
+  ('Mini Mahjer','15% off all bundles, no code needed. Travel bundles $191.25 (reg. $225).','On now','MAHJMATCH takes 10% more, so a travel bundle is $172.13'),
   ('Mahj & Vine','Every mat $65 (reg. $70), with free US shipping','On now','MAHJMATCH takes 10% more, so a mat is $58.50'),
   ('The Royal Mahjong Society','20% off sitewide, new Heirloom sets included','On now through Dec 1','Use MAHJMATCH for the full 20% off'),
  ]),
@@ -63,16 +64,24 @@ def wrap(d,t,f,w):
 def kicker(d):
     t='BLACK FRIDAY MAHJONG DEALS'; sp=4; w=sum(d.textlength(ch,font=fKick) for ch in t)+sp*(len(t)-1); x=W/2-w/2
     for ch in t: d.text((x,44),ch,font=fKick,fill=RED); x+=d.textlength(ch,font=fKick)+sp
+def inline_when(d,it):
+    return d.textlength(it[0],font=fBrand)+40+d.textlength(it[2],font=fWhen)<=TW
 def item_h(d,it):
-    return 47+len(wrap(d,it[1],fOff,TW))*36+38+48
+    return 47+len(wrap(d,it[1],fOff,TW))*36+(0 if inline_when(d,it) else 38)+52
 BOX=[]
 def tx(d,xy,t,f,fill):
     d.text(xy,t,font=f,fill=fill); BOX.append(d.textbbox(xy,t,font=f))
 def draw_item(base,d,y,it,col):
     brand,off,when,chip=it
-    tx(d,(MX,y),brand,fBrand,NAVY); y+=47
+    tx(d,(MX,y),brand,fBrand,NAVY); inl=inline_when(d,it)
+    if inl:
+        # same baseline as the brand name, right-aligned
+        bb=d.textbbox((0,0),brand,font=fBrand,anchor='ls'); wy=y-bb[1]
+        ww=d.textlength(when,font=fWhen); d.text((W-MX-ww,wy),when,font=fWhen,fill=RED,anchor='ls'); BOX.append(d.textbbox((W-MX-ww,wy),when,font=fWhen,anchor='ls'))
+    y+=47
     for l in wrap(d,off,fOff,TW): tx(d,(MX,y),l,fOff,NAVY); y+=36
-    tx(d,(MX,y),when,fWhen,RED); assert d.textlength(when,font=fWhen)<=TW; y+=38
+    if not inl: tx(d,(MX,y),when,fWhen,RED); assert d.textlength(when,font=fWhen)<=TW; y+=38
+    y+=4
     cw=d.textlength(chip,font=fChip)+40; assert cw<=TW,(chip,cw); ch=42; BOX.append((MX,y+4,MX+cw,y+4+ch))
     d.rounded_rectangle((MX,y+4,MX+cw,y+4+ch),ch/2,fill=col); bb=fChip.getbbox(chip); d.text((MX+20,y+4+(ch-(bb[3]-bb[1]))/2-bb[1]),chip,font=fChip,fill=(255,255,255))
 def deal_slide(n,groups):
@@ -84,7 +93,7 @@ def deal_slide(n,groups):
         for j,it in enumerate(items): blocks.append(('item',it,col,item_h(d,it)))
     top,bot=94,1266; need=sum(b[3] for b in blocks); gaps=len(blocks)-1
     g=(bot-top-need)/gaps; assert g>=16,(n,g)
-    g=min(g,72); y=top+(bot-top-need-g*gaps)/2
+    g=min(g,84); y=top+(bot-top-need-g*gaps)/2
     prev=None
     for b in blocks:
         if b[0]=='sec':
@@ -107,7 +116,7 @@ wm=Image.open(R+'assets/brand/mahjmatchmaker-wordmark-holiday-notag.png').conver
 base.alpha_composite(wm,((W-400)//2,48)); BOX.append(((W-400)//2,48,(W+400)//2,48+wm.size[1]))
 ctb(d,112,'Black Friday',ImageFont.truetype(CAP,138),RED)
 ctb(d,272,'mahjong deals',ImageFont.truetype(CAP,84),NAVY)
-ctb(d,392,'9 partner sales, and which ones still take code MAHJMATCH',fit(d,'9 partner sales, and which ones still take code MAHJMATCH',BIT,34,W-180),NAVY)
+ctb(d,392,'10 partner sales, and which ones still take code MAHJMATCH',fit(d,'10 partner sales, and which ones still take code MAHJMATCH',BIT,34,W-180),NAVY)
 picks=[('Charleston Mahjong Club','Ski Club Mat- Red Sweater Border','Charleston'),('Mahj & Vine','Chinoiserie Elephant','Mahj & Vine'),('Bam Bird Boutique','Bandana – Holiday Green/Pink accents','Bam Bird'),
        ('Bespoke Mahjong','Bespoke x Corey Paige - Holiday Love Mat - Red/Green','Bespoke'),('Peace Love Mahjong','Merry & Striped','Peace Love'),('Mac + Miller Mahjong','Heirloom Collection: Fire + Fortune Year of the Horse','Mac + Miller')]
 S_=270; gx=48; x0=(W-3*S_-2*gx)//2; y0=468; rowh=S_+70
