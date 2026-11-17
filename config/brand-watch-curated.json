@@ -282,22 +282,26 @@
    "date": "2026-11-18",
    "brand": "Miss Mahjong",
    "partner": true,
-   "what": "Miss Darling Lilac, a new full-size tile set ($425), opens Wed 11/18 at 10am CT: the party version of Miss Darling, with hot pink and lime faces, a blue stripe and a lilac back with white cross-stitch.",
+   "what": "Miss Darling Lilac, a new full-size tile set ($425), opens Wed 11/18 at 10am CT: the party version of Miss Darling, with hot pink and lime faces, a blue stripe and a lilac back with white cross-stitch. Two new mats are made to go with it, Hope Chest (a hexagon quilt print) and Pressed Flowers (blue floral); no date for the mats yet.",
    "tag": "tiles",
    "new": true,
-   "action": "Date from their IG post 11/12 2:43pm ET (Brand news sheet 6:35pm); curated was behind.",
+   "action": "Date from their IG post 11/12 2:43pm ET (Brand news sheet 6:35pm); curated was behind. | IG stories Mon 11/16 (5h/2h): 'Darling Lilac coming Wednesday 10 AM CT'; new Hope Chest + Pressed Flowers mats shown, not on the store yet.",
    "url": "https://missmahjong.com/products/miss-darling-mahjong-tile-set-lilac",
    "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Cover-DarlingLilac.png?v=1792516771",
-   "found": "2026-11-12T18:35",
+   "found": "2026-11-16T20:53",
    "history": [
     {
      "found": "2026-11-11T10:35",
      "what": "Miss Darling Lilac, a new full-size tile set ($425). No release date yet."
+    },
+    {
+     "found": "2026-11-12T18:35",
+     "what": "Miss Darling Lilac, a new full-size tile set ($425), opens Wed 11/18 at 10am CT: the party version of Miss Darling, with hot pink and lime faces, a blue stripe and a lilac back with white cross-stitch."
     }
    ],
    "day": "Wed 11/18",
    "time": "10am CT",
-   "urgency": "SOON",
+   "urgency": "NOW",
    "source": "https://www.instagram.com/p/Dfp1bxnGepO/"
   },
   {
@@ -531,6 +535,46 @@
   }
  ],
  "just_dropped": [
+  {
+   "date": "2026-11-16",
+   "day": "Mon 11/16",
+   "brand": "Anders Ruff",
+   "partner": true,
+   "what": "Bams & Bubbly tiles ($450) are back on preorder, shipping Dec 4.",
+   "tag": "tiles",
+   "restock": true,
+   "urgency": "NOW",
+   "buy": "https://shop.andersruff.com/products/bams-bubbly-mahjong-tiles",
+   "url": "https://shop.andersruff.com/products/bams-bubbly-mahjong-tiles",
+   "img": "https://cdn.shopify.com/s/files/1/0593/2200/7719/files/Bams-Bubbly-Mahjong-Tiles.jpg?v=1791579117",
+   "found": "2026-11-16T20:53",
+   "source": "IG story",
+   "source_kind": "social",
+   "history": [
+    {
+     "found": "2026-11-13T18:40",
+     "what": "Bams & Bubbly tiles ($450) and mat ($96) are back in stock."
+    }
+   ],
+   "action": "IG story Mon 11/16 ~8:20pm ET 'Bams & Bubbly is back in stock!'; store product updated 8:51pm ET, tagged preorder ship-2026-12-04."
+  },
+  {
+   "date": "2026-11-16",
+   "day": "Mon 11/16",
+   "brand": "Mahj Mood",
+   "partner": true,
+   "what": "White Pearl travel tiles ($290) are back in stock in a small batch.",
+   "tag": "travel tiles",
+   "restock": true,
+   "urgency": "NOW",
+   "buy": "https://mahjmood.com/products/white-pearl-travel-tiles",
+   "url": "https://mahjmood.com/products/white-pearl-travel-tiles",
+   "found": "2026-11-16T20:53",
+   "source": "IG story",
+   "source_kind": "social",
+   "action": "IG story Mon 11/16 ~8pm ET '4 more travel tile sets in stock' (link sticker); White Pearl is their only travel tile set on the store, in stock.",
+   "img": "https://cdn.shopify.com/s/files/1/0944/7712/3887/files/52E114FA-04E2-4EB4-965E-F89CE30B7405.jpg?v=1779842939"
+  },
   {
    "date": "2026-11-16",
    "day": "Mon 11/16",
@@ -1496,5 +1540,5 @@
    "url": ""
   }
  ],
- "updated": "2026-11-16T18:40"
+ "updated": "2026-11-16T20:53"
 }
