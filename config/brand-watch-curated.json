@@ -216,6 +216,21 @@
  ],
  "coming_soon": [
   {
+   "partner": true,
+   "urgency": "LATER",
+   "found": "2026-11-17T13:35",
+   "day": "",
+   "date": "",
+   "brand": "Mah Jongg Maven",
+   "what": "Mahj in Bloom, a tile set with hummingbirds and florals (engraved and hand-painted), was shown up close. No date yet.",
+   "tag": "tiles",
+   "buy": "https://www.mahjonggmaven.com",
+   "url": "https://www.instagram.com/reel/Df0FdnDMixu/",
+   "source": "IG reel Mon 11/16 2:17pm ET",
+   "source_kind": "social",
+   "time": "No date yet"
+  },
+  {
    "date": "2026-11-20",
    "day": "Fri 11/20",
    "time": "10am CT",
@@ -520,6 +535,81 @@
   }
  ],
  "just_dropped": [
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-17T13:35",
+   "day": "Tue 11/17",
+   "date": "2026-11-17",
+   "brand": "Bam Bird Boutique",
+   "what": "NEW pre-orders open for two collections: The Grandmillennial Collection and The Heritage Collection.",
+   "tag": "tiles",
+   "new": true,
+   "buy": "https://www.bambirdboutique.com",
+   "url": "https://www.bambirdboutique.com",
+   "source": "brand email Tue 11/17 11:06am ET",
+   "source_kind": "email"
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-17T13:35",
+   "day": "Tue 11/17",
+   "date": "2026-11-17",
+   "brand": "Miss Mahjong",
+   "what": "Lasso mat is back in stock.",
+   "tag": "mat",
+   "restock": true,
+   "buy": "https://missmahjong.com/products/miss-cowgirl-lasso-mahjong-mat",
+   "url": "https://missmahjong.com/products/miss-cowgirl-lasso-mahjong-mat",
+   "source": "store",
+   "source_kind": "store"
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-17T13:35",
+   "day": "Tue 11/17",
+   "date": "2026-11-17",
+   "brand": "Bespoke Mahjong",
+   "what": "NEW pink colorways: Year of the Horse (Saddle Pink), Springtime Safari (Petal Pink and Wild Pink) tiles, and The Ultimate Rack in Highlighter Pink.",
+   "tag": "tiles",
+   "new": true,
+   "buy": "https://www.bespokemahjong.com/products/springtimesafaripetalpink",
+   "url": "https://www.bespokemahjong.com/products/springtimesafaripetalpink",
+   "source": "store",
+   "source_kind": "store"
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-17T13:35",
+   "day": "Tue 11/17",
+   "date": "2026-11-17",
+   "brand": "Hip Hip Mahjong",
+   "what": "NEW Freedom Isn't Free mat.",
+   "tag": "mat",
+   "new": true,
+   "buy": "https://www.hiphipmahjong.com/products/freedom-isnt-free-mahjong-mat",
+   "url": "https://www.hiphipmahjong.com/products/freedom-isnt-free-mahjong-mat",
+   "source": "store",
+   "source_kind": "store"
+  },
+  {
+   "partner": true,
+   "urgency": "NOW",
+   "found": "2026-11-17T13:35",
+   "day": "Tue 11/17",
+   "date": "2026-11-17",
+   "brand": "Mahjong by SI",
+   "what": "The Hunt Club, a forest-green tartan design with cognac details, was introduced. See their site for the pieces.",
+   "tag": "mat",
+   "new": true,
+   "buy": "https://www.mahjongbysi.com",
+   "url": "https://www.instagram.com/p/Df2hkM2jtGi/",
+   "source": "IG post Tue 11/17 1pm ET",
+   "source_kind": "social"
+  },
   {
    "date": "2026-11-16",
    "day": "Mon 11/16",
@@ -1413,6 +1503,46 @@
    "embargo": "2026-11-21",
    "action": "Noli June asks affiliates to HOLD posts until Sat 11/21; full kit (graphics, dates, share-link change that protects commission) arrives Thu 11/19. Do not show before 11/21.",
    "affiliate_terms": "Elyse (Noli June) email 11/15: tiered bundle pricing; code stacking not stated, kit Thu 11/19 explains the share-link change."
+  },
+  {
+   "date": "2026-11-23",
+   "day": "Mon 11/23",
+   "time": "VIP early access 11/23-25; everyone Thu 11/26",
+   "brand": "Mac + Miller Mahjong",
+   "partner": true,
+   "what": "Black Friday: VIP early access for returning customers Nov 23-25 (bundles: Laissez Bon Temps Rouler $395, Sweet Dreams $425, Verdant Fortune $350), then the sale opens to everyone Thursday 11/26. Free US shipping over $100.",
+   "tag": "sale",
+   "ends": "",
+   "urgency": "SOON",
+   "buy": "https://www.macandmillermahjong.com",
+   "url": "https://www.macandmillermahjong.com",
+   "found": "2026-11-17T13:35",
+   "source": "affiliate email Tue 11/17",
+   "source_kind": "email",
+   "approved": true,
+   "hidden": false,
+   "bf": true,
+   "nocode": true,
+   "affiliate_terms": "Mac+Miller affiliate email Nov 17: codes PAUSED during BF; affiliate LINKS stay active and earn commission; codes return Tue Dec 1."
+  },
+  {
+   "date": "2026-11-27",
+   "day": "Fri 11/27",
+   "time": "Fri 11/27 - Mon 11/30",
+   "brand": "Tigre de Tartán (image-only)",
+   "partner": true,
+   "what": "Black Friday: 15% off in-stock items Nov 27-30 (collab items excluded).",
+   "tag": "sale",
+   "ends": "2026-11-30",
+   "urgency": "SOON",
+   "buy": "https://tigredetartan.com",
+   "url": "",
+   "found": "2026-11-17T13:35",
+   "source": "affiliate email Tue 11/17 (EMBARGO until their holiday promo post)",
+   "source_kind": "email",
+   "approved": null,
+   "hidden": true,
+   "affiliate_terms": "TdT affiliate email Nov 17: customer discount 10%->15% Nov 27-30, commission stays 10%. Do NOT share until TdT posts the promo on IG (expected Nov 17); then link/code only in stories, emails, DMs; never code in post text or link in bio."
   }
  ],
  "nonpartners": [
@@ -1458,12 +1588,12 @@
    "url": "https://sweetjojomahjong.com/products/mint-green-royal-palm-collection-american-mahjong-tile-set-160pc"
   },
   {
-   "date": "2026-11-08",
+   "date": "2026-11-19",
    "brand": "Mahj Tile Haus",
    "partner": false,
-   "what": "'Tide & Leather' teased: launching soon",
+   "what": "'Tide & Leather' arrives Thu 11/19 at 12pm CT / 1pm ET (coastal-meets-equestrian; product type not stated)",
    "tag": "tiles?",
-   "url": "https://www.instagram.com/reel/DfgJrlOR-lD/"
+   "url": "https://www.instagram.com/p/Df0YoBvG5eN/"
   },
   {
    "date": "2026-11-08",
@@ -1514,5 +1644,5 @@
    "url": ""
   }
  ],
- "updated": "2026-11-16T20:53"
+ "updated": "2026-11-17T13:35"
 }
