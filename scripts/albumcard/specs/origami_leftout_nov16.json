@@ -1,6 +1,24 @@
 {
  "origami-timber": [
   {
+   "name": "Liberty",
+   "brand": "Oh My Mahjong",
+   "why": "Your Smith pick, but OMM no longer lists it and the only photo we have is too small for a sharp card.",
+   "retired": true,
+   "hol": false,
+   "img": "assets/colorcards/origami/mats/oh-my-mahjong-liberty.jpg",
+   "fym": "www.ohmymahjong.com/liberty-mat-w-tube"
+  },
+  {
+   "name": "MCM – Mod Geo- Blue/Orange",
+   "brand": "Bam Bird Boutique",
+   "why": "Bam Bird's own MCM mat in teal and orange (a good colour pair), but the only flat photo of this colourway is 600px, too small for a sharp card. Put it in if you want it; I'll ask Bam Bird's photos again when the MCM album starts.",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/mats/bam-bird-boutique-mcm-mod-geo-blue-orange.jpg",
+   "fym": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy?v=53324522979637"
+  },
+  {
    "name": "Moonlit Crane Garden",
    "brand": "Bougie Mahjong",
    "why": "Bougie: limited to your own picks. Cranes on black and gold.",

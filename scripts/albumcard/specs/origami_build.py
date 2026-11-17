@@ -20,7 +20,7 @@ KEY, W = sys.argv[1], sys.argv[2]; os.makedirs(W, exist_ok=True)
 A = json.load(open(R + f'scripts/albumcard/specs/{KEY}_nov16.json'))
 CC = json.load(open(R + 'config/colorcards.json'))['sets'][KEY]
 TRACKS = CC['racks']
-INSET = "assets/tiles/album/inset/origami-timber-cranes.jpg"  # Nov 16: 7-8 columns (dots, bams, koi, West/South cranes) | Timber backs
+INSET = "assets/tiles/album/inset/origami-timber-center.jpg"  # Tiffany Nov 16 11:37pm: the card gets the CENTER crop of the FYM split photo
 BAMBIRD = {'Bam Bird Boutique Olive': '#4c5221', 'Bam Bird Boutique Walnut': '#8c5529'}  # measured from assets/racks/card PNGs
 # Nov 8 2:12pm (Tiffany): use partners with big rack lines more (Mahjong Register, Anders Ruff) and their NEW colourways; a sold-out
 # new rack may go on a card with a note, never a card full of out-of-stock racks. Stock checked on the brand's .js Nov 8.

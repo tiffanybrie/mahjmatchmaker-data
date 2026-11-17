@@ -101,3 +101,4 @@
 - [Nov 16 Main] Origami (Timber) album: steps 1-7 done (config/album-records/origami-timber.json, commit 341c2d59). Waiting only on her tile-photo yes (asked 11:21pm in chat with the split photo). On her yes: set tile_photo.approved_at, run scripts/albumcard/specs/origami_build.py origami-timber <work> + gen2.py -> assets/cards/origami-timber, album_gate PASS, build_review.py, publish the review page, send her the link.
 - [Nov 16 Main] Lucky Daughters (70's Mat, TNT rec for Origami Timber): add to HQ hq/applyList (outreach list). Amanda Toppe Hydrangea mat (TNT rec): check her store, bring into the catalog if she sells it.
 
+- [Nov 16 Main] Check Crate & Barrel's ShopMy commission rate (Tiffany asked Nov 16 11:38pm whether Bam Bird's own 10% beats it); record in docs/shopmy-rates-oct20.md.
