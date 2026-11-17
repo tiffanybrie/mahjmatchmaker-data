@@ -30,7 +30,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo Red",
-    "Peace Love Mahjong Oak"
+    "Bird & Bamboo Peachy"
    ],
    "why": "Green vines, copper flowers and a plum butterfly: three of her face colours on one mat, framed in a warm red that sits next to the Timber backs.",
    "fym": "brittmillsdesign.com/novella-leatherette-mahjong-mat",
@@ -40,154 +40,30 @@
   },
   {
    "order": 2,
-   "group": "stand",
-   "mat": "Dark Teal Cocktail Hour",
-   "brand": "Peace Love Mahjong",
+   "group": "garden",
+   "mat": "Boho Wildflower",
+   "brand": "Sweet Jojo Designs",
    "retired_mat": false,
    "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-peace-love-mahjong-dark-teal-cocktail-hour-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/peace-love-mahjong-dark-teal-cocktail-hour.jpg",
+   "partner": false,
+   "file": "origami-timber-mahjong-tiles-sweet-jojo-designs-boho-wildflower-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/sweet-jojo-designs-boho-wildflower.jpg",
    "racks": [
     "Bam Bird Boutique Walnut",
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Forest Green"
+    "Peace Love Mahjong Acrylic Burl"
    ],
-   "why": "A deep teal field like her dots and North crane, with a copper line that picks up the koi. Teal against wood is the classic contrast for this set.",
-   "fym": "peacelovemahjong.com/mahjong-mats-patterns?v=52799368134948",
-   "lowres": false,
+   "why": "Your Smith pick: earthy wildflowers.",
+   "fym": "alb2:sweet-jojo-designs-boho-wildflower",
+   "lowres": true,
    "caption_note": null,
    "rack_notes": []
   },
   {
    "order": 3,
-   "group": "stand",
-   "mat": "Crane & Moon",
-   "brand": "YOLO Mahjong",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-yolo-mahjong-crane-and-moon-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/yolo-mahjong-crane-and-moon.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Mahjong Register Navy Solid Wood",
-    "Oh My Mahjong Burl"
-   ],
-   "why": "A rare one from the motif search: white cranes on deep teal-green with coral and copper blooms. Her crane winds, her deep teal, her copper, all at once.",
-   "fym": "www.yolomahjong.com/crane-moon-mahjong-mat-floral-chinese-mahjong-table-mat-for-mahjong-set-31-5-x-31-5-inch",
-   "lowres": true,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 4,
-   "group": "stand",
-   "mat": "Crane Lantern Pattern",
-   "brand": "Luna EK Studio",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": false,
-   "file": "origami-timber-mahjong-tiles-luna-ek-studio-crane-lantern-pattern-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/luna-ek-studio-crane-lantern-pattern.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Forest Green",
-    "Peace Love Mahjong Oak"
-   ],
-   "why": "Cranes over a deep green and teal tapestry with rust-red and gold: the origami cranes, the green bams and the copper koi in one mat (Luna EK Studio, the maker of your Smith Terracotta pick).",
-   "fym": "www.etsy.com/listing/4571747551/mahjong-mat-non-slip-tabletop-mat-home",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 5,
-   "group": "stand",
-   "mat": "Vegan Leather – Caramel",
-   "brand": "Bam Bird Boutique",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-bam-bird-boutique-vegan-leather-caramel-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/bam-bird-boutique-vegan-leather-caramel.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Peace Love Mahjong Acrylic Burl"
-   ],
-   "why": "Bam Bird shoots Origami Timber on this caramel leather themselves (listing photo 12). Warm on warm, so her teal and green faces do the talking.",
-   "fym": "www.bambirdboutique.com/origami-leather-mat?v=51114566746421",
-   "lowres": false,
-   "caption_note": "Sister mat",
-   "rack_notes": []
-  },
-  {
-   "order": 6,
-   "group": "stand",
-   "mat": "Harvest Leaves",
-   "brand": "Let's Be Besties",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-lets-be-besties-harvest-leaves-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/lets-be-besties-harvest-leaves.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Evergreen",
-    "Peace Love Mahjong Acrylic Burl"
-   ],
-   "why": "Deep forest green with rust and copper leaves: her green bams and copper koi, and the leaves echo the wood backs.",
-   "fym": "letsbebesties.com/harvest-leaves-neoprene-mahjong-mat",
-   "lowres": true,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 7,
-   "group": "stand",
-   "mat": "Astor",
-   "brand": "Oh My Mahjong",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-astor-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-astor.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Mahjong Register Navy Solid Wood",
-    "Bird & Bamboo Periwinkle Blue"
-   ],
-   "why": "The top Tiles & Tablescapes rec for Timber (three different posts): 'the shufflers are a perfect meld between the two'.",
-   "fym": "www.ohmymahjong.com/astor-mat-w-tube",
-   "lowres": false,
-   "caption_note": "TNT rec",
-   "rack_notes": []
-  },
-  {
-   "order": 8,
    "group": "best",
    "mat": "Rattan",
    "brand": "Sunday Mahjong",
@@ -212,282 +88,32 @@
    "rack_notes": []
   },
   {
-   "order": 9,
-   "group": "best",
-   "mat": "Vegan Leather – Navy",
-   "brand": "Bam Bird Boutique",
+   "order": 4,
+   "group": "stand",
+   "mat": "Crane & Moon",
+   "brand": "YOLO Mahjong",
    "retired_mat": false,
    "holiday": false,
    "partner": true,
-   "file": "origami-timber-mahjong-tiles-bam-bird-boutique-vegan-leather-navy-mat.jpg",
+   "file": "origami-timber-mahjong-tiles-yolo-mahjong-crane-and-moon-mat.jpg",
    "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/bam-bird-boutique-vegan-leather-navy.jpg",
+   "src": "assets/colorcards/origami/mats/yolo-mahjong-crane-and-moon.jpg",
    "racks": [
     "Bam Bird Boutique Walnut",
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Mahjong Register Navy Solid Wood",
-    "Bird & Bamboo Blackboard Black"
+    "Bird & Bamboo Evergreen",
+    "Oh My Mahjong Burl"
    ],
-   "why": "Bam Bird shoots Timber on navy leather too (listing photo 13), and a Tiles & Tablescapes member bought it for Timber. Dark navy makes the wood glow.",
-   "fym": "www.bambirdboutique.com/origami-leather-mat?v=51358452613429",
-   "lowres": false,
-   "caption_note": "TNT rec",
-   "rack_notes": []
-  },
-  {
-   "order": 10,
-   "group": "best",
-   "mat": "Cognac",
-   "brand": "Oh My Mahjong",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-cognac-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-cognac.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Peace Love Mahjong Acrylic Burl",
-    "Bird & Bamboo Radish"
-   ],
-   "why": "Your Smith pick. Asked about in Tiles & Tablescapes ('are the browns too close?'): Cognac is lighter and more golden than Timber, so it reads tone-on-tone, not muddy.",
-   "fym": "www.ohmymahjong.com/cognac-mat",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 11,
-   "group": "best",
-   "mat": "Hawthorne",
-   "brand": "Oh My Mahjong",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-hawthorne-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-hawthorne.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Wine",
-    "Mahjong Register Navy Solid Wood"
-   ],
-   "why": "Your Smith pick: deep green with warm accents for her bams and koi.",
-   "fym": "www.ohmymahjong.com/hawthorne-mat-in-tube",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 12,
-   "group": "best",
-   "mat": "Duck Camp",
-   "brand": "Mahjong Moxie",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": false,
-   "file": "origami-timber-mahjong-tiles-mahjong-moxie-duck-camp-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/mahjong-moxie-duck-camp.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Forest Green",
-    "Bird & Bamboo Light Blue"
-   ],
-   "why": "Your Smith pick: lodge greens and browns made for a wood-backed set.",
-   "fym": "alb2:mahjong-moxie-duck-camp",
+   "why": "A rare one from the motif search: white cranes on deep teal-green with coral and copper blooms. Her crane winds, her deep teal, her copper, all at once.",
+   "fym": "www.yolomahjong.com/crane-moon-mahjong-mat-floral-chinese-mahjong-table-mat-for-mahjong-set-31-5-x-31-5-inch",
    "lowres": true,
    "caption_note": null,
    "rack_notes": []
   },
   {
-   "order": 13,
-   "group": "best",
-   "mat": "Luna",
-   "brand": "Oh My Mahjong",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-luna-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-luna.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Cornflower Blue",
-    "Bird & Bamboo Pebble"
-   ],
-   "why": "Your Smith pick, and asked about for Timber in Tiles & Tablescapes.",
-   "fym": "www.ohmymahjong.com/luna-w-tube",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 14,
-   "group": "best",
-   "mat": "Palomino",
-   "brand": "Oh My Mahjong",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-palomino-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-palomino.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Peace Love Mahjong Acrylic Burl",
-    "Bird & Bamboo Red"
-   ],
-   "why": "Your Smith pick: saddle browns and cream, a wood-and-leather table.",
-   "fym": "www.ohmymahjong.com/palomino-mat-in-tube",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 15,
-   "group": "best",
-   "mat": "The Hunt Club",
-   "brand": "Charleston Mahjong Club",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-charleston-mahjong-club-the-hunt-club-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/charleston-mahjong-club-the-hunt-club.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Peace Love Mahjong Oak",
-    "Bird & Bamboo Seafoam"
-   ],
-   "why": "Your Smith pick: green hunting toile with warm tones.",
-   "fym": "charlestonmahjongclub.com/the-hunt-club-neoprene-mat-toile-w-carrying-bag",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 16,
-   "group": "warm",
-   "mat": "Brown Vegan Leather",
-   "brand": "Charleston Mahjong Club",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-charleston-mahjong-club-brown-vegan-leather-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/charleston-mahjong-club-brown-vegan-leather.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Oh My Mahjong Burl",
-    "Peace Love Mahjong Acrylic Burl"
-   ],
-   "why": "Your Smith pick: plain brown leather, so the faces stand out.",
-   "fym": "charlestonmahjongclub.com/new-brown-vegan-leather-mahjong-mat-w-carrying-bag-copy",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 17,
-   "group": "warm",
-   "mat": "Vegan Leather – Cognac",
-   "brand": "Peace Love Mahjong",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-peace-love-mahjong-vegan-leather-cognac-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/peace-love-mahjong-vegan-leather-cognac.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Oh My Mahjong Burl",
-    "Peace Love Mahjong Acrylic Burl"
-   ],
-   "why": "A cognac leather a shade lighter than the Timber backs.",
-   "fym": "peacelovemahjong.com/leather-mat-with-mat-tube?v=67801473679652",
-   "lowres": true,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 18,
-   "group": "warm",
-   "mat": "Vegan Leather (Chestnut)",
-   "brand": "Sunday Mahjong",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": false,
-   "file": "origami-timber-mahjong-tiles-sunday-mahjong-vegan-leather-chestnut-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/sunday-mahjong-vegan-leather-chestnut.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Oh My Mahjong Burl",
-    "Peace Love Mahjong Acrylic Burl"
-   ],
-   "why": "Chestnut leather: the same family as the backs, one step deeper.",
-   "fym": "sundaymahjong.com/vegan-leather-premium-mahjong-mat",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 19,
-   "group": "warm",
-   "mat": "Nantucket Basket, Round",
-   "brand": "Tigre de Tartan",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-tigre-de-tartan-nantucket-basket-round-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/tigre-de-tartan-nantucket-basket-round.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Oh My Mahjong Burl",
-    "Peace Love Mahjong Acrylic Burl"
-   ],
-   "why": "A woven basket look, like rattan: natural texture for a wood set.",
-   "fym": "tigredetartan.com/mahjong-mat-nantucket-basket-rules-edition-round",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 20,
+   "order": 5,
    "group": "warm",
    "mat": "Carson Vintage",
    "brand": "Ozark Mahjongg",
@@ -503,7 +129,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo Cream",
-    "Peace Love Mahjong Oak"
+    "Bird & Bamboo Cadet"
    ],
    "why": "Your Smith pick: vintage rug colours, rust and blue.",
    "fym": "alb2:ozark-mah-jongg-carson-vintage",
@@ -512,7 +138,32 @@
    "rack_notes": []
   },
   {
-   "order": 21,
+   "order": 6,
+   "group": "best",
+   "mat": "Duck Camp",
+   "brand": "Mahjong Moxie",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "origami-timber-mahjong-tiles-mahjong-moxie-duck-camp-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/mahjong-moxie-duck-camp.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Light Blue"
+   ],
+   "why": "Your Smith pick: lodge greens and browns made for a wood-backed set.",
+   "fym": "alb2:mahjong-moxie-duck-camp",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 7,
    "group": "warm",
    "mat": "Winslow 1920 Navy",
    "brand": "Ozark Mahjongg",
@@ -537,32 +188,32 @@
    "rack_notes": []
   },
   {
-   "order": 22,
+   "order": 8,
    "group": "warm",
-   "mat": "Terracotta Floral Tapestry",
-   "brand": "Luna EK Studio",
+   "mat": "Vegan Leather (Chestnut)",
+   "brand": "Sunday Mahjong",
    "retired_mat": false,
    "holiday": false,
    "partner": false,
-   "file": "origami-timber-mahjong-tiles-luna-ek-studio-terracotta-floral-tapestry-mat.jpg",
+   "file": "origami-timber-mahjong-tiles-sunday-mahjong-vegan-leather-chestnut-mat.jpg",
    "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/luna-ek-studio-terracotta-floral-tapestry.jpg",
+   "src": "assets/colorcards/origami/mats/sunday-mahjong-vegan-leather-chestnut.jpg",
    "racks": [
     "Bam Bird Boutique Walnut",
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Oh My Mahjong Burl",
-    "Bird & Bamboo Red"
+    "Peace Love Mahjong Acrylic Burl",
+    "Peace Love Mahjong Oak"
    ],
-   "why": "Your Smith pick: terracotta tapestry, warm on warm.",
-   "fym": "www.etsy.com/listing/4581591001/mahjong-mat-non-slip-tabletop-mat-home",
+   "why": "Chestnut leather: the same family as the backs, one step deeper.",
+   "fym": "sundaymahjong.com/vegan-leather-premium-mahjong-mat",
    "lowres": false,
    "caption_note": null,
    "rack_notes": []
   },
   {
-   "order": 23,
+   "order": 9,
    "group": "warm",
    "mat": "L'Été Indien Studio Print No. 1",
    "brand": "Fait à Main",
@@ -587,390 +238,89 @@
    "rack_notes": []
   },
   {
-   "order": 24,
+   "order": 10,
    "group": "warm",
-   "mat": "Fall Barn Quilt",
-   "brand": "Let's Be Besties",
+   "mat": "Vegan Leather – Cognac",
+   "brand": "Peace Love Mahjong",
    "retired_mat": false,
    "holiday": false,
    "partner": true,
-   "file": "origami-timber-mahjong-tiles-lets-be-besties-fall-barn-quilt-mat.jpg",
+   "file": "origami-timber-mahjong-tiles-peace-love-mahjong-vegan-leather-cognac-mat.jpg",
    "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/lets-be-besties-fall-barn-quilt.jpg",
+   "src": "assets/colorcards/origami/mats/peace-love-mahjong-vegan-leather-cognac.jpg",
    "racks": [
     "Bam Bird Boutique Walnut",
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Red",
-    "Bird & Bamboo Evergreen"
+    "Peace Love Mahjong Acrylic Burl"
    ],
-   "why": "Rust, gold and forest green quilt blocks: her copper and green with the wood colour in between.",
-   "fym": "letsbebesties.com/fall-barn-quilt-neoprene-mahjong-mat",
+   "why": "A cognac leather a shade lighter than the Timber backs.",
+   "fym": "peacelovemahjong.com/leather-mat-with-mat-tube?v=67801473679652",
    "lowres": true,
    "caption_note": null,
    "rack_notes": []
   },
   {
-   "order": 25,
-   "group": "warm",
-   "mat": "Cloud Crane Floral Frame",
-   "brand": "Luna EK Studio",
+   "order": 11,
+   "group": "stand",
+   "mat": "Vegan Leather – Caramel",
+   "brand": "Bam Bird Boutique",
    "retired_mat": false,
    "holiday": false,
-   "partner": false,
-   "file": "origami-timber-mahjong-tiles-luna-ek-studio-cloud-crane-floral-frame-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/luna-ek-studio-cloud-crane-floral-frame.jpg",
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-bam-bird-boutique-vegan-leather-caramel-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/bam-bird-boutique-vegan-leather-caramel.jpg",
    "racks": [
     "Bam Bird Boutique Walnut",
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Peace Love Mahjong Oak",
     "Peace Love Mahjong Acrylic Burl"
    ],
-   "why": "Cranes and peonies on warm parchment with teal and rust: a wood-toned frame for the set, from the crane motif search.",
-   "fym": "www.etsy.com/listing/4548889339/mahjong-mat-non-slip-tabletop-mat-home",
+   "why": "Bam Bird shoots Origami Timber on this caramel leather themselves (listing photo 12). Warm on warm, so her teal and green faces do the talking.",
+   "fym": "www.bambirdboutique.com/origami-leather-mat?v=51114566746421",
    "lowres": false,
-   "caption_note": null,
+   "caption_note": "Sister mat",
    "rack_notes": []
   },
   {
-   "order": 26,
-   "group": "teal",
-   "mat": "Vanderbilt",
-   "brand": "Oh My Mahjong",
+   "order": 12,
+   "group": "best",
+   "mat": "The Hunt Club",
+   "brand": "Charleston Mahjong Club",
    "retired_mat": false,
    "holiday": false,
    "partner": true,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-vanderbilt-mat.jpg",
+   "file": "origami-timber-mahjong-tiles-charleston-mahjong-club-the-hunt-club-mat.jpg",
    "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-vanderbilt.jpg",
+   "src": "assets/colorcards/origami/mats/charleston-mahjong-club-the-hunt-club.jpg",
    "racks": [
     "Bam Bird Boutique Walnut",
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Mahjong Register Navy Solid Wood",
-    "Peace Love Mahjong Oak"
-   ],
-   "why": "Your Smith pick: deep blue-green for her teal dots.",
-   "fym": "www.ohmymahjong.com/vanderbilt-mat-w-tube",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 27,
-   "group": "teal",
-   "mat": "Darjeeling",
-   "brand": "Oh My Mahjong",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-darjeeling-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-darjeeling.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Periwinkle Blue",
-    "Bird & Bamboo Lilac"
-   ],
-   "why": "Your Smith pick.",
-   "fym": "www.ohmymahjong.com/darjeeling-mat-w-tube",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 28,
-   "group": "teal",
-   "mat": "Isla",
-   "brand": "Oh My Mahjong",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-isla-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-isla.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Powder Blue",
+    "Bird & Bamboo Cream",
     "Bird & Bamboo Seafoam"
    ],
-   "why": "Your Smith pick.",
-   "fym": "www.ohmymahjong.com/isla-mat-in-tube",
+   "why": "Your Smith pick: green hunting toile with warm tones.",
+   "fym": "charlestonmahjongclub.com/the-hunt-club-neoprene-mat-toile-w-carrying-bag",
    "lowres": false,
    "caption_note": null,
    "rack_notes": []
   },
   {
-   "order": 29,
-   "group": "teal",
-   "mat": "Folk Garden",
-   "brand": "Let's Be Besties",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-lets-be-besties-folk-garden-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/lets-be-besties-folk-garden.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Ocean Slate",
-    "Peace Love Mahjong Acrylic Burl"
-   ],
-   "why": "Teal ground with orange and plum folk flowers: her three face colours in one pattern.",
-   "fym": "letsbebesties.com/folk-garden-neoprene-mahjong-mat",
-   "lowres": true,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 30,
-   "group": "teal",
-   "mat": "Caroline in Peacock",
-   "brand": "Mahj & Vine",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-mahj-and-vine-caroline-in-peacock-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/mahj-and-vine-caroline-in-peacock.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Forest Green",
-    "Bird & Bamboo Dark Blue"
-   ],
-   "why": "Deep teal center with jewel florals: teal plus a plum-berry contrast.",
-   "fym": "mahjandvine.com/caroline-in-peacock",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 31,
-   "group": "garden",
-   "mat": "Veranda",
+   "order": 13,
+   "group": "best",
+   "mat": "Palomino",
    "brand": "Oh My Mahjong",
    "retired_mat": false,
    "holiday": false,
    "partner": true,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-veranda-mat.jpg",
+   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-palomino-mat.jpg",
    "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-veranda.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Seafoam",
-    "Bird & Bamboo Ocean Slate"
-   ],
-   "why": "Your Smith pick.",
-   "fym": "www.ohmymahjong.com/veranda-mat-in-tube",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 32,
-   "group": "garden",
-   "mat": "Larkspur",
-   "brand": "Oh My Mahjong",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-larkspur-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-larkspur.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Flamingo",
-    "Bird & Bamboo Avocado"
-   ],
-   "why": "Your Smith pick.",
-   "fym": "www.ohmymahjong.com/larkspur-mat-in-tube",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 33,
-   "group": "garden",
-   "mat": "Chantilly",
-   "brand": "Oh My Mahjong",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-chantilly-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-chantilly.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Cornflower Blue",
-    "Bird & Bamboo Lavender"
-   ],
-   "why": "Your Smith pick.",
-   "fym": "www.ohmymahjong.com/chantilly-mat",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 34,
-   "group": "garden",
-   "mat": "Scarlett",
-   "brand": "Oh My Mahjong",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-scarlett-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-scarlett.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Red",
-    "Bird & Bamboo Dark Blue"
-   ],
-   "why": "Your Smith pick.",
-   "fym": "www.ohmymahjong.com/scarlett-mat-in-tube",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 35,
-   "group": "garden",
-   "mat": "Boho Wildflower",
-   "brand": "Sweet Jojo Designs",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": false,
-   "file": "origami-timber-mahjong-tiles-sweet-jojo-designs-boho-wildflower-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/sweet-jojo-designs-boho-wildflower.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Peace Love Mahjong Acrylic Burl"
-   ],
-   "why": "Your Smith pick: earthy wildflowers.",
-   "fym": "alb2:sweet-jojo-designs-boho-wildflower",
-   "lowres": true,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 36,
-   "group": "garden",
-   "mat": "Citrus Songbird (retired)",
-   "brand": "Oh My Mahjong",
-   "retired_mat": true,
-   "holiday": false,
-   "partner": false,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-citrus-songbird-retired-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-citrus-songbird-retired.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Seafoam",
-    "Bird & Bamboo Cream"
-   ],
-   "why": "A Tiles & Tablescapes member plays Timber on this one.",
-   "fym": "alb:amara:Citrus Songbird",
-   "lowres": false,
-   "caption_note": "TNT rec",
-   "rack_notes": []
-  },
-  {
-   "order": 37,
-   "group": "garden",
-   "mat": "Spring Fling (retired)",
-   "brand": "Oh My Mahjong",
-   "retired_mat": true,
-   "holiday": false,
-   "partner": false,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-spring-fling-retired-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-spring-fling-retired.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Pistachio",
-    "Bird & Bamboo Light Blue"
-   ],
-   "why": "A Tiles & Tablescapes member: 'Looks amazing' with Timber.",
-   "fym": "alb:amara:Spring Fling",
-   "lowres": false,
-   "caption_note": "TNT rec",
-   "rack_notes": []
-  },
-  {
-   "order": 38,
-   "group": "garden",
-   "mat": "Birdie Green (retired)",
-   "brand": "Oh My Mahjong",
-   "retired_mat": true,
-   "holiday": false,
-   "partner": false,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-birdie-green-retired-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-birdie-green-retired.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Kelly Green",
-    "Bird & Bamboo Forest Green"
-   ],
-   "why": "Green with birds, like her origami cranes; Origami was suggested with Birdie in Tiles & Tablescapes.",
-   "fym": "alb:coquette:Birdie Green",
-   "lowres": false,
-   "caption_note": "Retired",
-   "rack_notes": []
-  },
-  {
-   "order": 39,
-   "group": "garden",
-   "mat": "Tiger Print",
-   "brand": "YOLO Mahjong",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-yolo-mahjong-tiger-print-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/yolo-mahjong-tiger-print.jpg",
+   "src": "assets/colorcards/origami/mats/oh-my-mahjong-palomino.jpg",
    "racks": [
     "Bam Bird Boutique Walnut",
     "Bam Bird Boutique Lagoon Wood"
@@ -979,164 +329,14 @@
     "Peace Love Mahjong Acrylic Burl",
     "Bird & Bamboo Red"
    ],
-   "why": "Tiger stripes for her tiger jokers, in warm orange next to the wood. Someone in Tiles & Tablescapes went looking for exactly this.",
-   "fym": "www.yolomahjong.com/mahjong-mat-31-5x31-5-ship-folded-2",
-   "lowres": true,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 40,
-   "group": "quiet",
-   "mat": "Dapper 2 (retired)",
-   "brand": "Oh My Mahjong",
-   "retired_mat": true,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-dapper-2-retired-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-dapper-2-retired.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Blackboard Black",
-    "Bird & Bamboo Graphite"
-   ],
-   "why": "Your Smith pick, and asked about for Timber in Tiles & Tablescapes.",
-   "fym": "www.ohmymahjong.com/dapper-mat-w-tube",
-   "lowres": false,
-   "caption_note": "Retired",
-   "rack_notes": []
-  },
-  {
-   "order": 41,
-   "group": "quiet",
-   "mat": "Dapper 1 (retired)",
-   "brand": "Oh My Mahjong",
-   "retired_mat": true,
-   "holiday": false,
-   "partner": false,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-dapper-1-retired-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-dapper-1-retired.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Red",
-    "Peace Love Mahjong Acrylic Burl"
-   ],
-   "why": "Your Smith pick (the original Dapper, retired).",
-   "fym": "alb:cypress-forest:Dapper 1",
-   "lowres": false,
-   "caption_note": "Retired",
-   "rack_notes": []
-  },
-  {
-   "order": 42,
-   "group": "quiet",
-   "mat": "KY Derby (retired)",
-   "brand": "Oh My Mahjong",
-   "retired_mat": true,
-   "holiday": false,
-   "partner": false,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-ky-derby-retired-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-ky-derby-retired.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Forest Green",
-    "Bird & Bamboo Pistachio"
-   ],
-   "why": "Your Smith pick.",
-   "fym": "alb:amara:KY Derby",
-   "lowres": false,
-   "caption_note": "Retired",
-   "rack_notes": []
-  },
-  {
-   "order": 43,
-   "group": "quiet",
-   "mat": "SoHo (retired)",
-   "brand": "Oh My Mahjong",
-   "retired_mat": true,
-   "holiday": false,
-   "partner": false,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-soho-retired-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-soho-retired.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Dark Blue",
-    "Bird & Bamboo Forest Green"
-   ],
-   "why": "Your Smith pick.",
-   "fym": "alb:drake:SoHo",
-   "lowres": false,
-   "caption_note": "Retired",
-   "rack_notes": []
-  },
-  {
-   "order": 44,
-   "group": "teal",
-   "mat": "Lotus Breeze Koi",
-   "brand": "Luna EK Studio",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": false,
-   "file": "origami-timber-mahjong-tiles-luna-ek-studio-lotus-breeze-koi-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/luna-ek-studio-lotus-breeze-koi.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Cream",
-    "Bird & Bamboo Seafoam"
-   ],
-   "why": "Tiffany's pick (Nov 17 1:03am): Luna EK koi mat, a match for Timber.",
-   "fym": "www.etsy.com/listing/4549519810/mahjong-mat-non-slip-tabletop-mat-home",
+   "why": "Your Smith pick: saddle browns and cream, a wood-and-leather table.",
+   "fym": "www.ohmymahjong.com/palomino-mat-in-tube",
    "lowres": false,
    "caption_note": null,
    "rack_notes": []
   },
   {
-   "order": 45,
-   "group": "teal",
-   "mat": "Umbrella Koi Pond",
-   "brand": "Luna EK Studio",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": false,
-   "file": "origami-timber-mahjong-tiles-luna-ek-studio-umbrella-koi-pond-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/luna-ek-studio-umbrella-koi-pond.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Cream",
-    "Bird & Bamboo Radish"
-   ],
-   "why": "Tiffany's pick (Nov 17 1:03am): Luna EK koi mat, a match for Timber.",
-   "fym": "www.etsy.com/listing/4547279166/mahjong-mat-non-slip-tabletop-mat-home",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 46,
+   "order": 14,
    "group": "garden",
    "mat": "Lotus Garden Koi",
    "brand": "Luna EK Studio",
@@ -1161,379 +361,556 @@
    "rack_notes": []
   },
   {
-   "order": 47,
-   "group": "holiday",
-   "mat": "Winterberry",
-   "brand": "Oh My Mahjong",
+   "order": 15,
+   "group": "teal",
+   "mat": "Lotus Breeze Koi",
+   "brand": "Luna EK Studio",
    "retired_mat": false,
-   "holiday": true,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-winterberry-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-winterberry.jpg",
+   "holiday": false,
+   "partner": false,
+   "file": "origami-timber-mahjong-tiles-luna-ek-studio-lotus-breeze-koi-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/luna-ek-studio-lotus-breeze-koi.jpg",
    "racks": [
     "Bam Bird Boutique Walnut",
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo White",
-    "Bird & Bamboo Harbor Blue"
-   ],
-   "why": "Your Smith holiday pick.",
-   "fym": "www.ohmymahjong.com/winterberry-mat-in-tube",
-   "lowres": false,
-   "caption_note": "Holiday match",
-   "rack_notes": []
-  },
-  {
-   "order": 48,
-   "group": "holiday",
-   "mat": "Yuletide",
-   "brand": "Oh My Mahjong",
-   "retired_mat": false,
-   "holiday": true,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-yuletide-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/oh-my-mahjong-yuletide.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Forest Green",
+    "Bird & Bamboo Cream",
     "Bird & Bamboo Seafoam"
    ],
-   "why": "Your Smith holiday pick.",
-   "fym": "www.ohmymahjong.com/yuletide-mat-in-tube",
+   "why": "Tiffany's pick (Nov 17 1:03am): Luna EK koi mat, a match for Timber.",
+   "fym": "www.etsy.com/listing/4549519810/mahjong-mat-non-slip-tabletop-mat-home",
    "lowres": false,
-   "caption_note": "Holiday match",
+   "caption_note": null,
    "rack_notes": []
   },
   {
-   "order": 49,
-   "group": "holiday",
-   "mat": "Spirit of Christmas",
-   "brand": "Peace Love Mahjong",
+   "order": 16,
+   "group": "garden",
+   "mat": "Veranda",
+   "brand": "Oh My Mahjong",
    "retired_mat": false,
-   "holiday": true,
+   "holiday": false,
    "partner": true,
-   "file": "origami-timber-mahjong-tiles-peace-love-mahjong-spirit-of-christmas-mat.jpg",
+   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-veranda-mat.jpg",
    "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/peace-love-mahjong-spirit-of-christmas.jpg",
+   "src": "assets/colorcards/origami/mats/oh-my-mahjong-veranda.jpg",
    "racks": [
     "Bam Bird Boutique Walnut",
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Matcha"
+    "Bird & Bamboo Seafoam",
+    "Bird & Bamboo Ocean Slate"
    ],
-   "why": "Your Smith holiday pick.",
-   "fym": "peacelovemahjong.com/mahjong-mats-holiday?v=67570521473316",
+   "why": "Your Smith pick.",
+   "fym": "www.ohmymahjong.com/veranda-mat-in-tube",
    "lowres": false,
-   "caption_note": "Holiday match",
+   "caption_note": null,
    "rack_notes": []
   },
   {
-   "order": 50,
-   "group": "holiday",
-   "mat": "Frosted Flowers",
-   "brand": "Peace Love Mahjong",
+   "order": 17,
+   "group": "teal",
+   "mat": "Caroline in Peacock",
+   "brand": "Mahj & Vine",
    "retired_mat": false,
-   "holiday": true,
+   "holiday": false,
    "partner": true,
-   "file": "origami-timber-mahjong-tiles-peace-love-mahjong-frosted-flowers-mat.jpg",
+   "file": "origami-timber-mahjong-tiles-mahj-and-vine-caroline-in-peacock-mat.jpg",
    "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/peace-love-mahjong-frosted-flowers.jpg",
+   "src": "assets/colorcards/origami/mats/mahj-and-vine-caroline-in-peacock.jpg",
    "racks": [
     "Bam Bird Boutique Walnut",
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Dark Blue",
-    "Bird & Bamboo Light Blue"
+    "Bird & Bamboo Misty Spruce",
+    "Mahjong Register Navy Solid Wood"
    ],
-   "why": "Your Smith holiday pick (Hanukkah).",
-   "fym": "peacelovemahjong.com/mahjong-mats-hanukkah?v=67570489491748",
+   "why": "Deep teal center with jewel florals: teal plus a plum-berry contrast.",
+   "fym": "mahjandvine.com/caroline-in-peacock",
    "lowres": false,
-   "caption_note": "Holiday match",
+   "caption_note": null,
    "rack_notes": []
   },
   {
-   "order": 51,
-   "group": "holiday",
-   "mat": "Merrywood",
-   "brand": "Britt Mills",
+   "order": 18,
+   "group": "teal",
+   "mat": "Isla",
+   "brand": "Oh My Mahjong",
    "retired_mat": false,
-   "holiday": true,
+   "holiday": false,
    "partner": true,
-   "file": "origami-timber-mahjong-tiles-britt-mills-merrywood-mat.jpg",
+   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-isla-mat.jpg",
    "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/britt-mills-merrywood.jpg",
+   "src": "assets/colorcards/origami/mats/oh-my-mahjong-isla.jpg",
    "racks": [
     "Bam Bird Boutique Walnut",
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Basil",
-    "Bird & Bamboo Cadet"
+    "Bird & Bamboo Powder Blue",
+    "Bird & Bamboo Seafoam"
    ],
-   "why": "Your Smith holiday pick.",
-   "fym": "brittmillsdesign.com/merrywood-neoprene-mahjong-mat-arriving-late-october",
+   "why": "Your Smith pick.",
+   "fym": "www.ohmymahjong.com/isla-mat-in-tube",
    "lowres": false,
-   "caption_note": "Holiday match",
+   "caption_note": null,
    "rack_notes": []
   },
   {
-   "order": 52,
-   "group": "holiday",
-   "mat": "Rackin' Rudolph !",
-   "brand": "Hip Hip Mahjong",
-   "retired_mat": false,
-   "holiday": true,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-hip-hip-mahjong-rackin-rudolph-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/hip-hip-mahjong-rackin-rudolph.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Cherry Red",
-    "Bird & Bamboo Harbor Blue"
-   ],
-   "why": "Your Smith holiday pick: warm brown reindeer with the wood backs.",
-   "fym": "www.hiphipmahjong.com/rackin-rudolph-mahjong-mat",
-   "lowres": false,
-   "caption_note": "Holiday match",
-   "rack_notes": []
-  },
-  {
-   "order": 53,
-   "group": "holiday",
-   "mat": "Snowflake Lodge Premium",
-   "brand": "Mahjong Register",
-   "retired_mat": false,
-   "holiday": true,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-mahjong-register-snowflake-lodge-premium-mat.jpg",
+   "order": 19,
+   "group": "quiet",
+   "mat": "KY Derby (retired)",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "partner": false,
+   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-ky-derby-retired-mat.jpg",
    "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/mahjong-register-snowflake-lodge-premium.jpg",
+   "src": "assets/colorcards/origami/mats/oh-my-mahjong-ky-derby-retired.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "Peace Love Mahjong Oak"
+   ],
+   "why": "Your Smith pick.",
+   "fym": "alb:amara:KY Derby",
+   "lowres": false,
+   "caption_note": "Retired",
+   "rack_notes": []
+  },
+  {
+   "order": 20,
+   "group": "best",
+   "mat": "Vegan Leather – Navy",
+   "brand": "Bam Bird Boutique",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-bam-bird-boutique-vegan-leather-navy-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/bam-bird-boutique-vegan-leather-navy.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Mahjong Register Navy Solid Wood",
+    "Bird & Bamboo Blackboard Black"
+   ],
+   "why": "Bam Bird shoots Timber on navy leather too (listing photo 13), and a Tiles & Tablescapes member bought it for Timber. Dark navy makes the wood glow.",
+   "fym": "www.bambirdboutique.com/origami-leather-mat?v=51358452613429",
+   "lowres": false,
+   "caption_note": "TNT rec",
+   "rack_notes": []
+  },
+  {
+   "order": 21,
+   "group": "quiet",
+   "mat": "Dapper 1 (retired)",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "partner": false,
+   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-dapper-1-retired-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/oh-my-mahjong-dapper-1-retired.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Red",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "why": "Your Smith pick (the original Dapper, retired).",
+   "fym": "alb:cypress-forest:Dapper 1",
+   "lowres": false,
+   "caption_note": "Retired",
+   "rack_notes": []
+  },
+  {
+   "order": 22,
+   "group": "quiet",
+   "mat": "Dapper 2 (retired)",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-dapper-2-retired-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/oh-my-mahjong-dapper-2-retired.jpg",
    "racks": [
     "Bam Bird Boutique Walnut",
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
     "Bird & Bamboo Blackboard Black",
-    "Bird & Bamboo Ocean Slate"
+    "Bird & Bamboo Graphite"
    ],
-   "why": "Your Smith holiday pick: a lodge in the snow.",
-   "fym": "mahjongregister.com/pre-order-snowflake-lodge-premium-mahjong-mat-33-estimated-ship-sep-25th-2026-copy",
-   "lowres": true,
-   "caption_note": "Holiday match",
-   "rack_notes": []
-  },
-  {
-   "order": 54,
-   "group": "holiday",
-   "mat": "Tartan Toile Noël",
-   "brand": "Anders Ruff",
-   "retired_mat": false,
-   "holiday": true,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-anders-ruff-tartan-toile-no-l-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/anders-ruff-tartan-toile-no-l.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Red",
-    "Bird & Bamboo Cornflower Blue"
-   ],
-   "why": "Your Smith holiday pick.",
-   "fym": "shop.andersruff.com/tartan-toile-noel-mahjong-mat",
-   "lowres": true,
-   "caption_note": "Holiday match",
-   "rack_notes": []
-  },
-  {
-   "order": 55,
-   "group": "holiday",
-   "mat": "Tartan Tidings",
-   "brand": "Anders Ruff",
-   "retired_mat": false,
-   "holiday": true,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-anders-ruff-tartan-tidings-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/anders-ruff-tartan-tidings.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Red"
-   ],
-   "why": "Your Smith holiday pick.",
-   "fym": "shop.andersruff.com/tartan-tidings-mahjong-mat",
+   "why": "Your Smith pick, and asked about for Timber in Tiles & Tablescapes.",
+   "fym": "www.ohmymahjong.com/dapper-mat-w-tube",
    "lowres": false,
-   "caption_note": "Holiday match",
+   "caption_note": "Retired",
    "rack_notes": []
   },
   {
-   "order": 56,
-   "group": "holiday",
-   "mat": "Santa's Mahjong Mail",
-   "brand": "Anders Ruff",
+   "order": 23,
+   "group": "teal",
+   "mat": "Umbrella Koi Pond",
+   "brand": "Luna EK Studio",
    "retired_mat": false,
-   "holiday": true,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-anders-ruff-santas-mahjong-mail-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/anders-ruff-santas-mahjong-mail.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Red",
-    "Bird & Bamboo Basil"
-   ],
-   "why": "Your Smith holiday pick.",
-   "fym": "shop.andersruff.com/santas-mahjong-mail-mahjong-mat",
-   "lowres": false,
-   "caption_note": "Holiday match",
-   "rack_notes": []
-  },
-  {
-   "order": 57,
-   "group": "holiday",
-   "mat": "Hip Hip Hanukkah",
-   "brand": "Hip Hip Mahjong",
-   "retired_mat": false,
-   "holiday": true,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-hip-hip-mahjong-hip-hip-hanukkah-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/hip-hip-mahjong-hip-hip-hanukkah.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Dark Blue"
-   ],
-   "why": "Your Smith holiday pick (Hanukkah).",
-   "fym": "www.hiphipmahjong.com/hip-hip-hanukkah-mahjong-mat",
-   "lowres": false,
-   "caption_note": "Holiday match",
-   "rack_notes": []
-  },
-  {
-   "order": 58,
-   "group": "holiday",
-   "mat": "Festive Plaid Premium",
-   "brand": "Sunday Mahjong",
-   "retired_mat": false,
-   "holiday": true,
+   "holiday": false,
    "partner": false,
-   "file": "origami-timber-mahjong-tiles-sunday-mahjong-festive-plaid-premium-mat.jpg",
+   "file": "origami-timber-mahjong-tiles-luna-ek-studio-umbrella-koi-pond-mat.jpg",
    "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/sunday-mahjong-festive-plaid-premium.jpg",
+   "src": "assets/colorcards/origami/mats/luna-ek-studio-umbrella-koi-pond.jpg",
    "racks": [
     "Bam Bird Boutique Walnut",
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Brick Red",
+    "Bird & Bamboo Cream",
+    "Bird & Bamboo Radish"
+   ],
+   "why": "Tiffany's pick (Nov 17 1:03am): Luna EK koi mat, a match for Timber.",
+   "fym": "www.etsy.com/listing/4547279166/mahjong-mat-non-slip-tabletop-mat-home",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 24,
+   "group": "warm",
+   "mat": "Brown Vegan Leather",
+   "brand": "Charleston Mahjong Club",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-charleston-mahjong-club-brown-vegan-leather-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/charleston-mahjong-club-brown-vegan-leather.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Oh My Mahjong Burl",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "why": "Your Smith pick: plain brown leather, so the faces stand out.",
+   "fym": "charlestonmahjongclub.com/new-brown-vegan-leather-mahjong-mat-w-carrying-bag-copy",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 25,
+   "group": "stand",
+   "mat": "Dark Teal Cocktail Hour",
+   "brand": "Peace Love Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-peace-love-mahjong-dark-teal-cocktail-hour-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/peace-love-mahjong-dark-teal-cocktail-hour.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Forest Green"
+   ],
+   "why": "A deep teal field like her dots and North crane, with a copper line that picks up the koi. Teal against wood is the classic contrast for this set.",
+   "fym": "peacelovemahjong.com/mahjong-mats-patterns?v=52799368134948",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 26,
+   "group": "warm",
+   "mat": "Cloud Crane Floral Frame",
+   "brand": "Luna EK Studio",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "origami-timber-mahjong-tiles-luna-ek-studio-cloud-crane-floral-frame-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/luna-ek-studio-cloud-crane-floral-frame.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Oak",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "why": "Cranes and peonies on warm parchment with teal and rust: a wood-toned frame for the set, from the crane motif search.",
+   "fym": "www.etsy.com/listing/4548889339/mahjong-mat-non-slip-tabletop-mat-home",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 27,
+   "group": "warm",
+   "mat": "Nantucket Basket, Round",
+   "brand": "Tigre de Tartan",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-tigre-de-tartan-nantucket-basket-round-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/tigre-de-tartan-nantucket-basket-round.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Oh My Mahjong Burl",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "why": "A woven basket look, like rattan: natural texture for a wood set.",
+   "fym": "tigredetartan.com/mahjong-mat-nantucket-basket-rules-edition-round",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 28,
+   "group": "quiet",
+   "mat": "SoHo (retired)",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "partner": false,
+   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-soho-retired-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/oh-my-mahjong-soho-retired.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Forest Green"
+   ],
+   "why": "Your Smith pick.",
+   "fym": "alb:drake:SoHo",
+   "lowres": false,
+   "caption_note": "Retired",
+   "rack_notes": []
+  },
+  {
+   "order": 29,
+   "group": "stand",
+   "mat": "Crane Lantern Pattern",
+   "brand": "Luna EK Studio",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "origami-timber-mahjong-tiles-luna-ek-studio-crane-lantern-pattern-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/luna-ek-studio-crane-lantern-pattern.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Moss",
+    "Bird & Bamboo Cream"
+   ],
+   "why": "Cranes over a deep green and teal tapestry with rust-red and gold: the origami cranes, the green bams and the copper koi in one mat (Luna EK Studio, the maker of your Smith Terracotta pick).",
+   "fym": "www.etsy.com/listing/4571747551/mahjong-mat-non-slip-tabletop-mat-home",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 30,
+   "group": "best",
+   "mat": "Luna",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-luna-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/oh-my-mahjong-luna.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Cornflower Blue",
+    "Bird & Bamboo Pebble"
+   ],
+   "why": "Your Smith pick, and asked about for Timber in Tiles & Tablescapes.",
+   "fym": "www.ohmymahjong.com/luna-w-tube",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 31,
+   "group": "warm",
+   "mat": "Terracotta Floral Tapestry",
+   "brand": "Luna EK Studio",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "origami-timber-mahjong-tiles-luna-ek-studio-terracotta-floral-tapestry-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/luna-ek-studio-terracotta-floral-tapestry.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Acrylic Burl",
     "Bird & Bamboo Red"
    ],
-   "why": "Green holiday plaid with red: her green bams and a warm red near the wood.",
-   "fym": "sundaymahjong.com/festive-plaid-premium-mahjong-mat",
+   "why": "Your Smith pick: terracotta tapestry, warm on warm.",
+   "fym": "www.etsy.com/listing/4581591001/mahjong-mat-non-slip-tabletop-mat-home",
    "lowres": false,
-   "caption_note": "Holiday match",
+   "caption_note": null,
    "rack_notes": []
   },
   {
-   "order": 59,
-   "group": "holiday",
-   "mat": "Holly Berry Mat",
-   "brand": "Mahj Mood",
+   "order": 32,
+   "group": "stand",
+   "mat": "Astor",
+   "brand": "Oh My Mahjong",
    "retired_mat": false,
-   "holiday": true,
+   "holiday": false,
    "partner": true,
-   "file": "origami-timber-mahjong-tiles-mahj-mood-holly-berry-mat-mat.jpg",
+   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-astor-mat.jpg",
    "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/mahj-mood-holly-berry-mat.jpg",
+   "src": "assets/colorcards/origami/mats/oh-my-mahjong-astor.jpg",
    "racks": [
     "Bam Bird Boutique Walnut",
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Evergreen",
-    "Bird & Bamboo Moss"
+    "Mahjong Register Navy Solid Wood",
+    "Bird & Bamboo Periwinkle Blue"
    ],
-   "why": "Deep green holly with red berries: green and warm red, like her Green and Red Dragons.",
-   "fym": "mahjmood.com/holly-berry-mat",
+   "why": "The top Tiles & Tablescapes rec for Timber (three different posts): 'the shufflers are a perfect meld between the two'.",
+   "fym": "www.ohmymahjong.com/astor-mat-w-tube",
    "lowres": false,
-   "caption_note": "Holiday match",
+   "caption_note": "TNT rec",
    "rack_notes": []
   },
   {
-   "order": 60,
-   "group": "holiday",
-   "mat": "Bandana – Holiday Green/Pink accents",
-   "brand": "Bam Bird Boutique",
+   "order": 33,
+   "group": "best",
+   "mat": "Hawthorne",
+   "brand": "Oh My Mahjong",
    "retired_mat": false,
-   "holiday": true,
+   "holiday": false,
    "partner": true,
-   "file": "origami-timber-mahjong-tiles-bam-bird-boutique-bandana-holiday-green-pink-accents-mat.jpg",
+   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-hawthorne-mat.jpg",
    "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/bam-bird-boutique-bandana-holiday-green-pink-accents.jpg",
+   "src": "assets/colorcards/origami/mats/oh-my-mahjong-hawthorne.jpg",
    "racks": [
     "Bam Bird Boutique Walnut",
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Evergreen",
-    "Bird & Bamboo Forest Green"
+    "Bird & Bamboo Wine",
+    "Mahjong Register Navy Solid Wood"
    ],
-   "why": "Bam Bird's own holiday bandana in deep green.",
-   "fym": "www.bambirdboutique.com/bandana-neoprene-mahjong-mat?v=53345465237813",
+   "why": "Your Smith pick: deep green with warm accents for her bams and koi.",
+   "fym": "www.ohmymahjong.com/hawthorne-mat-in-tube",
    "lowres": false,
-   "caption_note": "Holiday match",
+   "caption_note": null,
    "rack_notes": []
   },
   {
-   "order": 61,
-   "group": "holiday",
-   "mat": "Plaid Neoprene – Green and Blue",
-   "brand": "Bam Bird Boutique",
+   "order": 34,
+   "group": "teal",
+   "mat": "Vanderbilt",
+   "brand": "Oh My Mahjong",
    "retired_mat": false,
-   "holiday": true,
+   "holiday": false,
    "partner": true,
-   "file": "origami-timber-mahjong-tiles-bam-bird-boutique-plaid-neoprene-green-and-blue-mat.jpg",
+   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-vanderbilt-mat.jpg",
    "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/bam-bird-boutique-plaid-neoprene-green-and-blue.jpg",
+   "src": "assets/colorcards/origami/mats/oh-my-mahjong-vanderbilt.jpg",
    "racks": [
     "Bam Bird Boutique Walnut",
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Evergreen",
-    "Bird & Bamboo Forest Green"
+    "Mahjong Register Navy Solid Wood",
+    "Peace Love Mahjong Oak"
    ],
-   "why": "Tiffany's pick (Nov 17 1:05am): Bam Bird's own plaid neoprene, flagged for holiday, the tile brand's own mat.",
-   "fym": "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963728232757",
+   "why": "Your Smith pick: deep blue-green for her teal dots.",
+   "fym": "www.ohmymahjong.com/vanderbilt-mat-w-tube",
    "lowres": false,
-   "caption_note": "Holiday match",
+   "caption_note": null,
    "rack_notes": []
   },
   {
-   "order": 62,
+   "order": 35,
+   "group": "teal",
+   "mat": "Darjeeling",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-darjeeling-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/oh-my-mahjong-darjeeling.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Lilac"
+   ],
+   "why": "Your Smith pick.",
+   "fym": "www.ohmymahjong.com/darjeeling-mat-w-tube",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 36,
+   "group": "garden",
+   "mat": "Birdie Green (retired)",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "partner": false,
+   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-birdie-green-retired-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/oh-my-mahjong-birdie-green-retired.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Periwinkle Blue"
+   ],
+   "why": "Green with birds, like her origami cranes; Origami was suggested with Birdie in Tiles & Tablescapes.",
+   "fym": "alb:coquette:Birdie Green",
+   "lowres": false,
+   "caption_note": "Retired",
+   "rack_notes": []
+  },
+  {
+   "order": 37,
    "group": "holiday",
    "mat": "Plaid Neoprene – Green with Pink",
    "brand": "Bam Bird Boutique",
@@ -1558,7 +935,32 @@
    "rack_notes": []
   },
   {
-   "order": 63,
+   "order": 38,
+   "group": "holiday",
+   "mat": "Plaid Neoprene – Green and Blue",
+   "brand": "Bam Bird Boutique",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-bam-bird-boutique-plaid-neoprene-green-and-blue-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/bam-bird-boutique-plaid-neoprene-green-and-blue.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Forest Green"
+   ],
+   "why": "Tiffany's pick (Nov 17 1:05am): Bam Bird's own plaid neoprene, flagged for holiday, the tile brand's own mat.",
+   "fym": "www.bambirdboutique.com/plaid-neoprene-mahjong-mat?v=67963728232757",
+   "lowres": false,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 39,
    "group": "holiday",
    "mat": "Holiday Neoprene",
    "brand": "Bam Bird Boutique",
@@ -1583,7 +985,181 @@
    "rack_notes": []
   },
   {
-   "order": 64,
+   "order": 40,
+   "group": "holiday",
+   "mat": "Bandana – Holiday Green/Pink accents",
+   "brand": "Bam Bird Boutique",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-bam-bird-boutique-bandana-holiday-green-pink-accents-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/bam-bird-boutique-bandana-holiday-green-pink-accents.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Forest Green"
+   ],
+   "why": "Bam Bird's own holiday bandana in deep green.",
+   "fym": "www.bambirdboutique.com/bandana-neoprene-mahjong-mat?v=53345465237813",
+   "lowres": false,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 41,
+   "group": "holiday",
+   "mat": "Yuletide",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-yuletide-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/oh-my-mahjong-yuletide.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Forest Green",
+    "Bird & Bamboo Seafoam"
+   ],
+   "why": "Your Smith holiday pick.",
+   "fym": "www.ohmymahjong.com/yuletide-mat-in-tube",
+   "lowres": false,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 42,
+   "group": "holiday",
+   "mat": "Festive Plaid Premium",
+   "brand": "Sunday Mahjong",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": false,
+   "file": "origami-timber-mahjong-tiles-sunday-mahjong-festive-plaid-premium-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/sunday-mahjong-festive-plaid-premium.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Brick Red",
+    "Bird & Bamboo Red"
+   ],
+   "why": "Green holiday plaid with red: her green bams and a warm red near the wood.",
+   "fym": "sundaymahjong.com/festive-plaid-premium-mahjong-mat",
+   "lowres": false,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 43,
+   "group": "holiday",
+   "mat": "Rackin' Rudolph !",
+   "brand": "Hip Hip Mahjong",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-hip-hip-mahjong-rackin-rudolph-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/hip-hip-mahjong-rackin-rudolph.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Cherry Red",
+    "Bird & Bamboo Harbor Blue"
+   ],
+   "why": "Your Smith holiday pick: warm brown reindeer with the wood backs.",
+   "fym": "www.hiphipmahjong.com/rackin-rudolph-mahjong-mat",
+   "lowres": false,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 44,
+   "group": "holiday",
+   "mat": "Winterberry",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-oh-my-mahjong-winterberry-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/oh-my-mahjong-winterberry.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo White",
+    "Bird & Bamboo Harbor Blue"
+   ],
+   "why": "Your Smith holiday pick.",
+   "fym": "www.ohmymahjong.com/winterberry-mat-in-tube",
+   "lowres": false,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 45,
+   "group": "holiday",
+   "mat": "Merrywood",
+   "brand": "Britt Mills",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-britt-mills-merrywood-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/britt-mills-merrywood.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Basil",
+    "Bird & Bamboo Cadet"
+   ],
+   "why": "Your Smith holiday pick.",
+   "fym": "brittmillsdesign.com/merrywood-neoprene-mahjong-mat-arriving-late-october",
+   "lowres": false,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 46,
+   "group": "holiday",
+   "mat": "Tartan Tidings",
+   "brand": "Anders Ruff",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-anders-ruff-tartan-tidings-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/anders-ruff-tartan-tidings.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Red"
+   ],
+   "why": "Your Smith holiday pick.",
+   "fym": "shop.andersruff.com/tartan-tidings-mahjong-mat",
+   "lowres": false,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 47,
    "group": "yours",
    "mat": "Cherry Blossom Malachite",
    "brand": "Miss Mahjong",
@@ -1608,7 +1184,7 @@
    "rack_notes": []
   },
   {
-   "order": 65,
+   "order": 48,
    "group": "yours",
    "mat": "Retro Plaid Premium",
    "brand": "Sunday Mahjong",
@@ -1633,7 +1209,7 @@
    "rack_notes": []
   },
   {
-   "order": 66,
+   "order": 49,
    "group": "yours",
    "mat": "Boots & Bubbles – Green",
    "brand": "Bam Bird Boutique",
@@ -1658,7 +1234,7 @@
    "rack_notes": []
   },
   {
-   "order": 67,
+   "order": 50,
    "group": "yours",
    "mat": "Emerald Teal & Celadon Green Double-Sided Leatherette Mahjong Mat – 33\"",
    "brand": "Mahjong Register",
@@ -1683,7 +1259,7 @@
    "rack_notes": []
   },
   {
-   "order": 68,
+   "order": 51,
    "group": "yours",
    "mat": "Emerald Society",
    "brand": "Bougie Mahjong",
@@ -1707,7 +1283,7 @@
    "rack_notes": []
   },
   {
-   "order": 69,
+   "order": 52,
    "group": "yours",
    "mat": "Golden Gingham Premium",
    "brand": "Sunday Mahjong",
@@ -1722,8 +1298,8 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Cream",
-    "Peace Love Mahjong Acrylic Burl"
+    "Peace Love Mahjong Oak",
+    "Bird & Bamboo Cream"
    ],
    "why": "Your pick from Left out (round 2). Claude had said: Golden gingham: yellow-gold, warmer than the faces need.",
    "fym": "sundaymahjong.com/golden-gingham-premium-mahjong-mat",
@@ -1732,7 +1308,7 @@
    "rack_notes": []
   },
   {
-   "order": 70,
+   "order": 53,
    "group": "yours",
    "mat": "Emerald Teal & Celedon Green Double-Sided Leatherette",
    "brand": "Mahjong Register",
@@ -1757,7 +1333,7 @@
    "rack_notes": []
   },
   {
-   "order": 71,
+   "order": 54,
    "group": "yours",
    "mat": "Winslow 1920 Rouge",
    "brand": "Ozark Mahjongg",
@@ -1773,7 +1349,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo Red",
-    "Peace Love Mahjong Acrylic Burl"
+    "Bird & Bamboo Mauve"
    ],
    "why": "Your pick from Left out (round 2). Claude had said: Rouge (red) version of Winslow 1920: the navy one is in, red flattens the wood backs.",
    "fym": "ozarkmahjong.com/winslow-1920-rouge-mat",
@@ -1782,7 +1358,7 @@
    "rack_notes": []
   },
   {
-   "order": 72,
+   "order": 55,
    "group": "yours",
    "mat": "Holly Starburst",
    "brand": "Let's Be Besties",
@@ -1798,7 +1374,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo Red",
-    "Peace Love Mahjong Acrylic Burl"
+    "Bird & Bamboo Moss"
    ],
    "why": "Your pick from Left out (round 2). Claude had said: Holiday: the holiday section has 14 mats; this one's colours don't add to them (red-forward or bright).",
    "fym": "letsbebesties.com/holly-starburst-leatherette-mahjong-mat",
@@ -1807,7 +1383,7 @@
    "rack_notes": []
   },
   {
-   "order": 73,
+   "order": 56,
    "group": "yours",
    "mat": "Cottage Core",
    "brand": "Wren Mats",
@@ -1832,7 +1408,7 @@
    "rack_notes": []
   },
   {
-   "order": 74,
+   "order": 57,
    "group": "yours",
    "mat": "Vegan Leather (Ruby)",
    "brand": "Sunday Mahjong",
@@ -1857,7 +1433,7 @@
    "rack_notes": []
   },
   {
-   "order": 75,
+   "order": 58,
    "group": "masc",
    "mat": "Trent Midnight",
    "brand": "Ozark Mahjongg",
@@ -1882,7 +1458,7 @@
    "rack_notes": []
   },
   {
-   "order": 76,
+   "order": 59,
    "group": "masc",
    "mat": "Trent Celadon",
    "brand": "Ozark Mahjongg",
@@ -1907,7 +1483,7 @@
    "rack_notes": []
   },
   {
-   "order": 77,
+   "order": 60,
    "group": "masc",
    "mat": "Baker Traditional",
    "brand": "Ozark Mahjongg",
@@ -1923,7 +1499,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo Radish",
-    "Peace Love Mahjong Acrylic Burl"
+    "Bird & Bamboo Mauve"
    ],
    "why": "Ozark rug mat: rust red, navy and cream like a study rug, a classic with wood. Out of stock at Ozark.",
    "fym": "www.ozarkmahjongg.com/product-page/baker-traditional-mat",
@@ -1932,7 +1508,7 @@
    "rack_notes": []
   },
   {
-   "order": 78,
+   "order": 61,
    "group": "masc",
    "mat": "Winslow 1920 Noir",
    "brand": "Ozark Mahjongg",
@@ -1957,7 +1533,7 @@
    "rack_notes": []
   },
   {
-   "order": 79,
+   "order": 62,
    "group": "masc",
    "mat": "Ellington Navy",
    "brand": "Mahjong Row & Co.",
@@ -1981,7 +1557,7 @@
    "rack_notes": []
   },
   {
-   "order": 80,
+   "order": 63,
    "group": "masc",
    "mat": "Foxhill Plaid",
    "brand": "Mahjong Row & Co.",
@@ -1997,7 +1573,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo Wine",
-    "Peace Love Mahjong Acrylic Burl"
+    "Bird & Bamboo Mauve"
    ],
    "why": "Mahjong Row & Co.: brown and rust plaid with a chocolate centre: wood tones all the way.",
    "fym": "mahjongrowandco.com/foxhill-plaid-mahjong-mat",
@@ -2006,7 +1582,7 @@
    "rack_notes": []
   },
   {
-   "order": 81,
+   "order": 64,
    "group": "masc",
    "mat": "Marlowe Green",
    "brand": "Mahjong Row & Co.",
@@ -2030,7 +1606,7 @@
    "rack_notes": []
   },
   {
-   "order": 82,
+   "order": 65,
    "group": "masc",
    "mat": "Hawthorne Floral",
    "brand": "Mahjong Row & Co.",
@@ -2045,7 +1621,7 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Peace Love Mahjong Acrylic Burl"
+    "Bird & Bamboo Radish"
    ],
    "why": "Mahjong Row & Co.: brown centre in a check and dark floral frame; quiet wood tones.",
    "fym": "mahjongrowandco.com/hawthorne-floral-mahjong-mat",
@@ -2054,7 +1630,7 @@
    "rack_notes": []
   },
   {
-   "order": 83,
+   "order": 66,
    "group": "masc",
    "mat": "Midnight Garden",
    "brand": "Mahjong Row & Co.",
@@ -2070,7 +1646,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo Blackboard Black",
-    "Peace Love Mahjong Acrylic Burl"
+    "Bird & Bamboo Mauve"
    ],
    "why": "Mahjong Row & Co. (was in Cypress + Heritage 2.0): navy with copper peonies and a plaid frame.",
    "fym": "mahjongrowandco.com/midnight-garden-mat",
@@ -2079,7 +1655,7 @@
    "rack_notes": []
   },
   {
-   "order": 84,
+   "order": 67,
    "group": "masc",
    "mat": "Osmanthus Grove",
    "brand": "Mahjong Row & Co.",
@@ -2103,7 +1679,7 @@
    "rack_notes": []
   },
   {
-   "order": 85,
+   "order": 68,
    "group": "masc",
    "mat": "Autumn Saffron",
    "brand": "Mahjong Row & Co.",
@@ -2118,7 +1694,7 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Red",
+    "Bird & Bamboo Wine",
     "Bird & Bamboo Matcha"
    ],
    "why": "Mahjong Row & Co. (Cypress + Heritage 2.0): chocolate border, saffron-and-green floral; warm and woody.",
@@ -2128,7 +1704,7 @@
    "rack_notes": []
   },
   {
-   "order": 86,
+   "order": 69,
    "group": "masc",
    "mat": "Mocha Bloom",
    "brand": "Mahjong Row & Co.",
@@ -2153,7 +1729,7 @@
    "rack_notes": []
   },
   {
-   "order": 87,
+   "order": 70,
    "group": "masc",
    "mat": "Marigold",
    "brand": "Mahjong Row & Co.",
@@ -2177,7 +1753,7 @@
    "rack_notes": []
   },
   {
-   "order": 88,
+   "order": 71,
    "group": "masc",
    "mat": "Heron Landing",
    "brand": "Mahjong Moxie",
@@ -2193,7 +1769,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo Dark Navy",
-    "Bird & Bamboo Cream"
+    "Peace Love Mahjong Oak"
    ],
    "why": "The Mahjong Moxie bird mat you remembered: a heron (crane-like) in a bamboo frame with navy and green.",
    "fym": "www.mahjong-moxie.com/heron-landing-mat",
@@ -2202,7 +1778,7 @@
    "rack_notes": []
   },
   {
-   "order": 89,
+   "order": 72,
    "group": "masc",
    "mat": "The Polo Club",
    "brand": "Luxe Mahjong",
@@ -2226,7 +1802,7 @@
    "rack_notes": []
   },
   {
-   "order": 90,
+   "order": 73,
    "group": "masc",
    "mat": "Jungle Turquoise",
    "brand": "Bespoke Mahjong",
@@ -2251,7 +1827,7 @@
    "rack_notes": []
   },
   {
-   "order": 91,
+   "order": 74,
    "group": "masc",
    "mat": "YOTD Black",
    "brand": "Bespoke Mahjong",
@@ -2276,7 +1852,7 @@
    "rack_notes": []
   },
   {
-   "order": 92,
+   "order": 75,
    "group": "masc",
    "mat": "Jade",
    "brand": "Oh My Mahjong",
@@ -2301,7 +1877,7 @@
    "rack_notes": []
   },
   {
-   "order": 93,
+   "order": 76,
    "group": "holiday",
    "mat": "Evergreen & Tartan",
    "brand": "Anders Ruff",
@@ -2317,7 +1893,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo Evergreen",
-    "Bird & Bamboo Red"
+    "Bird & Bamboo Wine"
    ],
    "why": "From Heritage 2.0 + Cypress holiday: dark green tartan with a wreath, deep red ribbon; a masculine holiday plaid.",
    "fym": "shop.andersruff.com/evergreen-tartan-mahjong-mat",
@@ -2326,7 +1902,7 @@
    "rack_notes": []
   },
   {
-   "order": 94,
+   "order": 77,
    "group": "yours",
    "mat": "Dabney Leatherette",
    "brand": "Britt Mills",
@@ -2342,7 +1918,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo Blackboard Black",
-    "Peace Love Mahjong Acrylic Burl"
+    "Bird & Bamboo Mauve"
    ],
    "why": "Your pick (Nov 17 1:31am).",
    "fym": "brittmillsdesign.com/dabney-leatherette-mahjong-mat",
@@ -2351,7 +1927,7 @@
    "rack_notes": []
   },
   {
-   "order": 95,
+   "order": 78,
    "group": "yours",
    "mat": "Eden Leatherette",
    "brand": "Britt Mills",
@@ -2376,7 +1952,7 @@
    "rack_notes": []
   },
   {
-   "order": 96,
+   "order": 79,
    "group": "yours",
    "mat": "Enchanted Leatherette",
    "brand": "Britt Mills",
@@ -2392,7 +1968,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo Cadet",
-    "Peace Love Mahjong Acrylic Burl"
+    "Oh My Mahjong Burl"
    ],
    "why": "Your pick (Nov 17 1:31am).",
    "fym": "brittmillsdesign.com/enchanted-leatherette-mahjong-mat",
@@ -2401,7 +1977,7 @@
    "rack_notes": []
   },
   {
-   "order": 97,
+   "order": 80,
    "group": "yours",
    "mat": "Huntley Leatherette",
    "brand": "Britt Mills",
@@ -2426,7 +2002,7 @@
    "rack_notes": []
   },
   {
-   "order": 98,
+   "order": 81,
    "group": "yours",
    "mat": "Peacock Garden Leatherette",
    "brand": "Britt Mills",
@@ -2451,7 +2027,7 @@
    "rack_notes": []
   },
   {
-   "order": 99,
+   "order": 82,
    "group": "yours",
    "mat": "SOIRÉE Leatherette",
    "brand": "Britt Mills",
@@ -2466,7 +2042,7 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Peace Love Mahjong Acrylic Burl",
+    "Oh My Mahjong Burl",
     "Bird & Bamboo Coral"
    ],
    "why": "Your pick (Nov 17 1:31am).",
@@ -2476,7 +2052,7 @@
    "rack_notes": []
   },
   {
-   "order": 100,
+   "order": 83,
    "group": "yours",
    "mat": "Ruby",
    "brand": "Britt Mills",
@@ -2501,7 +2077,7 @@
    "rack_notes": []
   },
   {
-   "order": 101,
+   "order": 84,
    "group": "yours",
    "mat": "Rosalie Leatherette",
    "brand": "Britt Mills",
@@ -2526,7 +2102,7 @@
    "rack_notes": []
   },
   {
-   "order": 102,
+   "order": 85,
    "group": "yours",
    "mat": "Savannah Leatherette",
    "brand": "Britt Mills",
@@ -2550,7 +2126,7 @@
    "rack_notes": []
   },
   {
-   "order": 103,
+   "order": 86,
    "group": "yours",
    "mat": "Wren",
    "brand": "Britt Mills",
@@ -2575,7 +2151,7 @@
    "rack_notes": []
   },
   {
-   "order": 104,
+   "order": 87,
    "group": "holiday",
    "mat": "Winter Berry Leatherette",
    "brand": "Britt Mills",
@@ -2596,6 +2172,179 @@
    "fym": "brittmillsdesign.com/winter-berry-leatherette-mahjong-mat",
    "lowres": false,
    "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 88,
+   "group": "yours",
+   "mat": "Imperial Koi Pond",
+   "brand": "Bougie Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "origami-timber-mahjong-tiles-bougie-mahjong-imperial-koi-pond-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/leftout/bougie-mahjong-imperial-koi-pond.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Blackboard Black",
+    "Bird & Bamboo Seafoam"
+   ],
+   "why": "Your pick from Left out (round 3). Claude had said: Bougie: limited to your own picks. Koi on deep navy-teal with copper koi: a strong motif match if you want it.",
+   "fym": "bougiemahjong.com/imperial-koi-pond-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 89,
+   "group": "yours",
+   "mat": "Teal Dots and Stripes with Instructions",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-lets-be-besties-teal-dots-and-stripes-with-instructions-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/leftout/lets-be-besties-teal-dots-and-stripes-with-instructions.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Misty Spruce"
+   ],
+   "why": "Your pick from Left out (round 3). Claude had said: Let's Be Besties teal stripes with instructions: fine colour, but Folk Garden and Harvest Leaves are the better Let's Be Besties picks.",
+   "fym": "letsbebesties.com/teal-dots-and-stripes-with-directions-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 90,
+   "group": "yours",
+   "mat": "Blue Abstract Neoprene",
+   "brand": "Bam Bird Boutique",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-bam-bird-boutique-blue-abstract-neoprene-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/leftout/bam-bird-boutique-blue-abstract-neoprene.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Electric Blue",
+    "Bird & Bamboo Harbor Blue"
+   ],
+   "why": "Your pick from Left out (round 3). Claude had said: Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "fym": "www.bambirdboutique.com/blue-abstract-neoprene-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 91,
+   "group": "yours",
+   "mat": "Nantucket Basket, Rope",
+   "brand": "Tigre de Tartan",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-tigre-de-tartan-nantucket-basket-rope-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/leftout/tigre-de-tartan-nantucket-basket-rope.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Pistachio",
+    "Bird & Bamboo Graphite"
+   ],
+   "why": "Your pick from Left out (round 3). Claude had said: Same basket look as the round Nantucket Basket, which is in; one is enough.",
+   "fym": "tigredetartan.com/mahjong-mat-nantucket-basket-1",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 92,
+   "group": "yours",
+   "mat": "Winter Jewel",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-lets-be-besties-winter-jewel-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/leftout/lets-be-besties-winter-jewel.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Misty Spruce",
+    "Bird & Bamboo Magenta"
+   ],
+   "why": "Your pick from Left out (round 3). Claude had said: Holiday: the holiday section has 14 mats; this one's colours don't add to them (red-forward or bright).",
+   "fym": "letsbebesties.com/winter-jewel-neoprene-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 93,
+   "group": "yours",
+   "mat": "Floral Scrolls",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-lets-be-besties-floral-scrolls-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/leftout/lets-be-besties-floral-scrolls.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Blue"
+   ],
+   "why": "Your pick from Left out (round 3). Claude had said: Bright aqua/turquoise, much brighter than her deep teal; next to the warm Timber backs it reads pool, not wood.",
+   "fym": "letsbebesties.com/floral-scrolls-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 94,
+   "group": "yours",
+   "mat": "Tartan Tweed",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-lets-be-besties-tartan-tweed-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/leftout/lets-be-besties-tartan-tweed.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Radish",
+    "Bird & Bamboo Basil"
+   ],
+   "why": "Your pick from Left out (round 3). Claude had said: Tartan Tweed: on tone, but a Let's Be Besties limit (Harvest Leaves, Folk Garden, Fall Barn Quilt are in).",
+   "fym": "letsbebesties.com/tartan-tweed-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
    "rack_notes": []
   }
  ],
