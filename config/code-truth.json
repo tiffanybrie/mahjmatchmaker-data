@@ -25,8 +25,8 @@
     "Oh My Mahjong": 10,
     "Peace Love Mahjong": 10,
     "Soirée All Day": 10,
-    "Splash of Color": 10,
-    "The Royal Mahjong Society": 15,
+    "Splash of Color": 15,
+    "The Royal Mahjong Society": 20,
     "Tigre de Tartan": 10,
     "Virora Mahjong": 10,
     "Wren Mats": 10,
@@ -35,7 +35,9 @@
   },
   "notes": {
     "Amanda Toppe": "10% (Tiffany Nov 2 2026)",
-    "_A4": "Nov 7 2026 (Ops, gap audit A4): 11 hub brands had no entry; added pct (4) + terms (12 incl. Sunday no-code). Sources per brand in terms.*.source."
+    "_A4": "Nov 7 2026 (Ops, gap audit A4): 11 hub brands had no entry; added pct (4) + terms (12 incl. Sunday no-code). Sources per brand in terms.*.source.",
+    "The Royal Mahjong Society": "20% until Dec 1 2026 (their Black Friday email Sat Nov 14 10:43am; Tiffany yes Nov 16 10:08pm ET 'Yes update it'). Back to 15% on Dec 2: revert this + Royal page, hub row/ItemList/FAQ/text block, SEO description.",
+    "Splash of Color": "15% (Google report Nov 17 12:55pm ET: MAHJMATCH cart test at splashofcolorco.com applies 15.0; HQ attended session Mon Nov 16 ~9:30pm cited her Nov 15 yes for 15%; the live site already said 15%). Was 10% until Nov 15. Re-check after Black Friday (Dec 2)."
   },
   "verified_max_age_days": 9,
   "removed_brands": {

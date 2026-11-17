@@ -71,6 +71,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1, then the newest ANSWERS 
 - **Main: older handoffs still open**: blog posts that name album tile sets without linking them (list in git show 09006524:docs/DESK.md); revenue-alert cards → one Money summary; prompt fixes (sales-check mails, "close leftover tab groups", mat-edit-alert step, "wholesale customers only"); config/pinterest/queue.json vs Planoly resync; Mahj & Moon 'pending_fix' when the 7 Etsy ShopMy links land.
 
 ## In progress
+- **Royal Mahjong Society back to 15% on Wed Dec 2** (20% is their Black Friday rate until Dec 1; changed Nov 17 by the Google report on her yes): config/code-truth.json + Royal page code block (4 spots) + Royal SEO description + hub (row, ItemList, FAQ line, H2 text block). Owner: Google report Dec 2. Splash of Color is 15% in code-truth since Nov 17 (cart-tested): re-check Dec 2 too.
 | Item | Owner | Next step | Target |
 |---|---|---|---|
 | Google: 4 lost AI answers (Bam Bird, Virora, Bespoke, I Love Mahj) + OMM/My Fair/PLM/Mini Mahjer | Claude Duet (analysis) / Main (Chrome fixes) | Indexing re-requests in that order (Mon: Mahj Mood, Charleston, Amahj, Virora); Bam Bird AIO-source investigation next. | Tue Nov 17 (slipped since Wed Nov 11) |
