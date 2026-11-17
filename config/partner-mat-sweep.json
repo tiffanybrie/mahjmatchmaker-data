@@ -1,7 +1,7 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-17T14:06:33+00:00",
- "fym_ref": "origin/fym-site-preview:site-app/fym-v121",
+ "swept_at": "2026-11-17T23:13:33+00:00",
+ "fym_ref": "origin/fym-site-preview:site-app/fym-v122",
  "stores": {
   "ohmymahjong.com": {
    "brand": "Oh My Mahjong",
@@ -500,7 +500,7 @@
   "bambirdboutique.com": {
    "brand": "Bam Bird Boutique",
    "status": "ok",
-   "products": 117,
+   "products": 118,
    "mats": [
     [
      "2026-10-27T13:47:10-05:00",
@@ -666,7 +666,7 @@
   "bespokemahjong.com": {
    "brand": "Bespoke Mahjong",
    "status": "ok",
-   "products": 323,
+   "products": 320,
    "mats": [
     [
      "2026-10-22T12:17:12-05:00",
@@ -987,7 +987,7 @@
   "brittmillsdesign.com": {
    "brand": "Britt Mills",
    "status": "ok",
-   "products": 740,
+   "products": 749,
    "mats": [
     [
      "2026-11-16T14:57:08-05:00",
@@ -1411,7 +1411,7 @@
   "charlestonmahjongclub.com": {
    "brand": "Charleston Mahjong Club",
    "status": "ok",
-   "products": 72,
+   "products": 75,
    "mats": [
     [
      "2026-08-28T08:23:55-04:00",
@@ -1905,8 +1905,13 @@
   "missmahjong.com": {
    "brand": "Miss Mahjong",
    "status": "ok",
-   "products": 102,
+   "products": 105,
    "mats": [
+    [
+     "2026-11-17T15:09:51-06:00",
+     "Giverny Mahjong Playing Mat",
+     "giverny-mahjong-playing-mat"
+    ],
     [
      "2026-09-28T12:32:13-05:00",
      "Bandit Mahjong Playing Mat - Poppy Red",
@@ -2018,7 +2023,13 @@
      "cowgirl-gingham-mahjong-playing-mat"
     ]
    ],
-   "missing": []
+   "missing": [
+    [
+     "2026-11-17T15:09:51-06:00",
+     "Giverny Mahjong Playing Mat",
+     "giverny-mahjong-playing-mat"
+    ]
+   ]
   },
   "myfairmahjong.com": {
    "brand": "My Fair Mahjong",
@@ -2746,8 +2757,28 @@
   "letsbebesties.com": {
    "brand": "Let's Be Besties",
    "status": "ok",
-   "products": 765,
+   "products": 769,
    "mats": [
+    [
+     "2026-11-17T15:12:30-05:00",
+     "Ducking Away AC Studios Artist Mahjong Mat",
+     "ducking-away-ac-studios-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-17T15:01:10-05:00",
+     "Peacock in the Hydrangeas Mahjong Mat",
+     "peacock-in-the-hydrangeas-mahjong-mat"
+    ],
+    [
+     "2026-11-17T14:47:31-05:00",
+     "Wildly Starstruck Mahjong Mat",
+     "wildly-starstruck-mahjong-mat"
+    ],
+    [
+     "2026-11-17T14:07:57-05:00",
+     "Midnight Jubilee Mahjong Mat",
+     "midnight-jubilee-mahjong-mat"
+    ],
     [
      "2026-11-15T20:32:52-05:00",
      "The Hamptons Lillian Claire Designs Artist Mahjong Mat",
@@ -5531,6 +5562,26 @@
    ],
    "missing": [
     [
+     "2026-11-17T15:12:30-05:00",
+     "Ducking Away AC Studios Artist Mahjong Mat",
+     "ducking-away-ac-studios-artist-mahjong-mat"
+    ],
+    [
+     "2026-11-17T15:01:10-05:00",
+     "Peacock in the Hydrangeas Mahjong Mat",
+     "peacock-in-the-hydrangeas-mahjong-mat"
+    ],
+    [
+     "2026-11-17T14:47:31-05:00",
+     "Wildly Starstruck Mahjong Mat",
+     "wildly-starstruck-mahjong-mat"
+    ],
+    [
+     "2026-11-17T14:07:57-05:00",
+     "Midnight Jubilee Mahjong Mat",
+     "midnight-jubilee-mahjong-mat"
+    ],
+    [
      "2026-11-15T20:32:52-05:00",
      "The Hamptons Lillian Claire Designs Artist Mahjong Mat",
      "the-hamptons-lillian-claire-designs-artist-mahjong-mat"
@@ -6774,7 +6825,7 @@
   "middleandmainmahjong.com": {
    "brand": "Middle & Main Mahjong",
    "status": "ok",
-   "products": 105,
+   "products": 108,
    "mats": [
     [
      "2026-07-02T17:05:30-04:00",
