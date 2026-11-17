@@ -19,7 +19,14 @@
  },
  "colorcard_img": "assets/colorcards/origami-timber/00-origami-timber-mahjong-tiles-color-guide-mobile.jpg",
  "wheel_img": "assets/colorwheels/origami-timber-color-wheel.jpg",
- "rounds": [],
+ "rounds": [
+  {
+   "round": 1,
+   "sent": "2026-11-17T00:20",
+   "url": "https://claude.ai/artifact/NdCHw9he47aFJfTDxKMMLM",
+   "note": "58 cards (14 holiday), 107 left out; center-crop inset per her 11:37pm yes"
+  }
+ ],
  "pool": {
   "new_candidates": [
    {
@@ -6374,5 +6381,6 @@
  },
  "notes": [
   "Not in the album: Smith picks Ivy Reverie + Spring Awakening Warm Honey (Mahjong Row on hold); TNT recs Lucky Daughters 70's Mat (Blue) (not in catalog, non-partner: outreach list) and Amanda Toppe Hydrangea (partner, mat not in catalog: check her store)."
- ]
+ ],
+ "review_url": "https://claude.ai/artifact/NdCHw9he47aFJfTDxKMMLM"
 }
