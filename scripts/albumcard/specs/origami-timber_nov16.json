@@ -616,7 +616,7 @@
    "her_pick": true
   },
   {
-   "group": "yours",
+   "group": "holiday",
    "name": "Holly Starburst",
    "brand": "Let's Be Besties",
    "img": "assets/colorcards/origami/leftout/lets-be-besties-holly-starburst.jpg",
@@ -624,7 +624,7 @@
    "retired": false,
    "fym": "letsbebesties.com/holly-starburst-leatherette-mahjong-mat",
    "lowres": false,
-   "holiday": false,
+   "holiday": true,
    "her_pick": true
   },
   {
@@ -1124,7 +1124,7 @@
    "her_pick": true
   },
   {
-   "group": "yours",
+   "group": "holiday",
    "name": "Winter Jewel",
    "brand": "Let's Be Besties",
    "img": "assets/colorcards/origami/leftout/lets-be-besties-winter-jewel.jpg",
@@ -1132,7 +1132,7 @@
    "retired": false,
    "fym": "letsbebesties.com/winter-jewel-neoprene-mahjong-mat",
    "lowres": false,
-   "holiday": false,
+   "holiday": true,
    "her_pick": true
   },
   {

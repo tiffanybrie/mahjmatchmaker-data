@@ -70,8 +70,11 @@ if rm: ch.append('Taken out: ' + ', '.join(rm))
 spec['groups'].setdefault('yours', 'Your adds')
 def lid(m): return f"lo-{slug(m['brand'])}-{slug(m['name'])}"
 put = [m for m in lo if lid(m) in set(A.get('putin') or [])]
+_snap = json.load(open(R + 'config/fym-mats-snapshot.json'))['mats']
+def _is_hol(m):  # Nov 17 bug: left-out rows say 'hol', not 'holiday'; Winter Jewel + Holly Starburst landed in the year-round list
+    return bool(m.get('holiday') or m.get('hol') or (_snap.get(m.get('fym') or '', {}) or {}).get('hol'))
 for m in put:
-    lo.remove(m)
+    lo.remove(m); m['holiday'] = _is_hol(m)
     spec['mats'].append({'group': 'holiday' if m.get('holiday') else 'yours', 'name': m['name'], 'brand': m['brand'], 'img': m['img'],
                          'why': f"Your pick from Left out (round {rnd}). Claude had said: {m['why']}", 'retired': m.get('retired', False),
                          'fym': m.get('fym'), 'lowres': False, 'holiday': bool(m.get('holiday')), 'her_pick': True})
