@@ -21,10 +21,16 @@ A = json.load(open(R + f'scripts/albumcard/specs/{KEY}_nov16.json'))
 CC = json.load(open(R + 'config/colorcards.json'))['sets'][KEY]
 TRACKS = CC['racks']
 INSET = "assets/tiles/album/inset/origami-timber-center.jpg"  # Tiffany Nov 16 11:37pm: the card gets the CENTER crop of the FYM split photo
-BAMBIRD = {'Bam Bird Boutique Olive': '#4c5221', 'Bam Bird Boutique Walnut': '#8c5529'}  # measured from assets/racks/card PNGs
+BAMBIRD = {'Bam Bird Boutique Walnut': '#8c5529', 'Bam Bird Boutique Lagoon Wood': '#16494d'}  # measured from assets/racks/card PNGs
 # Nov 8 2:12pm (Tiffany): use partners with big rack lines more (Mahjong Register, Anders Ruff) and their NEW colourways; a sold-out
 # new rack may go on a card with a note, never a card full of out-of-stock racks. Stock checked on the brand's .js Nov 8.
-PARTNER_RACKS = {'Mahjong Register Navy Solid Wood': '#2c3c53', 'Mahjong Register Admiral Navy': '#22375c', 'Mahjong Register Peacock Teal': '#018f9b'}
+PARTNER_RACKS = {'Mahjong Register Navy Solid Wood': '#2c3c53', 'Peace Love Mahjong Acrylic Burl': '#9b6a45', 'Oh My Mahjong Burl': '#d77e4d',
+                 'Peace Love Mahjong Oak': '#d9a86a', 'Bird & Bamboo Forest Green': '#017c5d'}
+# Tiffany Nov 17 1:28am (Origami Timber): B&B Forest Green = a really good green for these tiles; Mahjong Register Navy looks good;
+# wood tones (PLM Acrylic Burl, PLM Oak, OMM Burl) beat one-off colours like mustard; NO tortoise, NO teal, NO Miss Mahjong Jade & Brass,
+# NO PLM Dark Green (too deep). Olive is out.
+NOT_FOR_TIMBER = ['Bird & Bamboo ' + n for n in ('Retro Mustard', 'Dijon', 'Mango', 'Butter', 'Sunshine', 'Yellow', 'Glowstick', 'Teal', 'Dark Teal',
+                  'Turquoise Blue', 'Turks Blue', 'Tiffany Dusk', 'Mermaid', 'Jade', 'Icy Mint', 'Lime Green', 'Carrot', 'Orange', 'Persimmon')]
 SOLDOUT = {'Mahjong Register Admiral Navy': 'brand new (Oct 24), already sold out'}
 SISTER = {'Vegan Leather – Caramel'}
 def flat(im):
@@ -59,7 +65,7 @@ for c in A['mats']:
     # Nov 8 1:50pm (Playbook step 8): the tile brand's own racks first. Bam Bird's other cut-out racks (Olive, Walnut, 19in like
     # the set racks, so proportional) win when they match the mat; else Bird & Bamboo colours.
     _pref = {k: v for k, v in {**BAMBIRD, **PARTNER_RACKS}.items() if RUSE.get(k, 0) < 6}  # no rack on more than 6 cards (stale)
-    for l in pick(m, exclude=TRACKS, prefer=_pref):
+    for l in pick(m, exclude=list(TRACKS) + NOT_FOR_TIMBER, prefer=_pref, prefer_de=18):
         if l not in mr and len(mr) < 2: mr.append(l)
     if sum(1 for l in mr if l in SOLDOUT) > 1: mr = [l for l in mr if l not in SOLDOUT][:1] + [l for l in mr if l in SOLDOUT][:1]
     for j, l in enumerate(mr):  # a sold-out new rack: at most 2 cards per album, then its in-stock sibling

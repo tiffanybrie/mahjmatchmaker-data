@@ -175,7 +175,12 @@ steps = [
   'txt': f"{P['cards'].get('n')} match cards. Code band check: {P['cards'].get('band')} (every card with a partner piece says MAHJMATCH)."},
 ]
 rounds = rec.get('rounds', [])
-DATA = {'set': SET, 'name': rec['name'], 'brand': rec['brand'], 'round': len(rounds) + 1,
+# ROUND NUMBER = last APPLIED round + 1 (Tiffany Nov 17 1:35am: her X's and Move-to numbers vanished). A republish that only adds
+# cards/fixes photos must keep the SAME round, or the page treats her saved answers as an old round and starts her over (and the
+# next save overwrites them). Only read_review.py (which applies her answers) moves the round forward.
+_applied = [r.get('round', 0) for r in rounds if r.get('applied_at')]
+ROUND = (max(_applied) + 1) if _applied else 1
+DATA = {'set': SET, 'name': rec['name'], 'brand': rec['brand'], 'round': ROUND,
         'last': rounds[-1] if rounds else None, 'steps': steps, 'covers': covers, 'coverDefault': rec['covers'].get('default', 0),
         'finds': finds, 'faces': fgroups, 'picks': picks, 'legacyFaces': rec.get('legacy_faces_key'), 'cards': cards, 'leftout': leftout,
         'groupsOrder': list(dict.fromkeys(c['g'] for c in cards if not c['hol']))}

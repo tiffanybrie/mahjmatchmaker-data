@@ -28,7 +28,8 @@ rec_p = f'config/album-records/{SET}.json'; rec = J(rec_p)
 spec = J(rec['spec']); man = J(rec['cards_dir'] + '/manifest.json')
 lo_file = J(rec['leftout']['file']); lo = lo_file[rec['leftout']['key']]
 raw = json.load(open(SRC)); A = raw.get('data') if isinstance(raw.get('data'), dict) else raw
-rnd = len(rec.get('rounds', [])) + 1
+_ap = [r.get('round', 0) for r in rec.get('rounds', []) if r.get('applied_at')]
+rnd = (max(_ap) + 1) if _ap else 1  # same rule as build_review.py (Nov 17): only applied rounds count
 if A.get('round') not in (None, rnd): sys.exit(f"These answers are for round {A.get('round')}, the album is on round {rnd}. Nothing applied.")
 
 
