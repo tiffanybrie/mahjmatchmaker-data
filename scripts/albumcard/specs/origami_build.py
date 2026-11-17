@@ -74,9 +74,14 @@ for c in A['mats']:
             if SO_USED[0] >= 2: mr[j] = 'Mahjong Register Navy Solid Wood' if ('Mahjong Register Navy Solid Wood' not in mr and RUSE.get('Mahjong Register Navy Solid Wood', 0) < 6) else None
             else: SO_USED[0] += 1
     mr = [l for l in mr if l] or ['Bird & Bamboo Dark Navy']
+    # NEVER two burls on one card (Tiffany Nov 17 2:24am: OMM Burl + PLM Acrylic Burl together 'is stupid')
+    BURLS = {'Oh My Mahjong Burl', 'Peace Love Mahjong Acrylic Burl'}
+    if sum(1 for l in mr if l in BURLS) > 1: mr = [l for i, l in enumerate(mr) if l not in BURLS or l == next(x for x in mr if x in BURLS)]
+    # Mat-specific rack overrides (spec mat 'mat_racks'): e.g. brown leathers get CONTRAST racks, not same-tone burls (2:24am)
+    if c.get('mat_racks'): mr = list(c['mat_racks'])
     # ALWAYS TWO mat racks (Tiffany Nov 17 2:15am: 'You're supposed to pick two racks for the mat')
     if len(mr) < 2:
-        for l in pick(m, exclude=list(TRACKS) + NOT_FOR_TIMBER + _over + mr, k=8, maxn=2):
+        for l in pick(m, exclude=list(TRACKS) + NOT_FOR_TIMBER + _over + mr + [b for b in BURLS if any(x in BURLS for x in mr)], k=8, maxn=2):
             if l not in mr: mr.append(l); break
     if all(l in SOLDOUT for l in mr): mr = mr + ['Bird & Bamboo Dark Navy']  # never only out-of-stock racks
     rnotes = [f'{l}: {SOLDOUT[l]}' for l in mr if l in SOLDOUT]
