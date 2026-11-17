@@ -13,7 +13,7 @@ cur = json.load(open(R/'config/brand-watch-curated.json'))
 watch = json.load(open(R/'docs/status/mahj-watch.json'))
 launch = json.load(open(R/'docs/status/partner-launches.json'))
 MAHJ = re.compile(r'mahj|tile|mat\b|mats\b|rack|bam|dragon|joker', re.I)
-EXCL = re.compile(r'mahjong row|yellow mountain', re.I)
+EXCL = re.compile(r'mahjong row|yellow mountain|bird ?bam', re.I)  # Bird Bam Tiles: not a partner, never mention (Tiffany Nov 17)
 covered = set()
 for sec in ('this_week','coming_soon','just_dropped','sales','nonpartners'):
     for x in cur.get(sec, []):
