@@ -319,3 +319,5 @@ Standing order: RESTOCK FIRST (rule c), then Google #1, then the newest ANSWERS 
 - **DESK: carried every open line (drop check result in the commit message).** In-progress targets re-dated Mon Nov 16 → Tue Nov 17; 1 row closed with proof (Sunday amounts: ANSWERS DONE line).
 
 See CLAUDE.md.
+
+- Nov 17 12:55pm ET (FYM thread): Rackin' Rudolph match cards fixed. Tile panel on every Rudolph-tile card was the Hip Hip mat lifestyle photo (looked like mat matched to mat). Swapped to the sliced FYM tile strip (fym-v95/t95r/rackin-rudolph-strip.jpg, crop x=780). 84 library cards in assets/cards/** patched in place; the 37 live copies rebuilt from their pinned versions in assets/cards/rudolph-tiles-nov17/ @7092da77 and swapped on /holiday-mahjong-matches (36) and /red-mahjong-tile-matches (1). One file 403s on jsDelivr (repo over 50 MB): served from raw.githubusercontent @7092da77. Script: rebuild with patch box x667-1080 y592-1106. The other 14 holiday tile sets' cards show real tile photos. Not patched: assets/social/pinterest/pins/holiday-rackin-rudolph-...-candy-cane-lane-mat-pin.jpg (embeds the old card; Pinterest not a priority).
