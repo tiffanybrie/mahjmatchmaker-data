@@ -1,7 +1,7 @@
 {
-  "version": "1.19",
-  "index": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@569598b526e0b1b0bbd95344d2e8095bd6abbee8/site-app/fym-v119/index.html",
-  "base": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ad0675e42242c3abad40cac9f539a265220e26eb/site-app/fym-v72/",
-  "shipped": "2026-11-16T23:55:00-05:00",
-  "note": "Read by the Find Your Mat-ch page block (since Nov 17). Change index (and base if needed) to ship a new build; both must be pinned jsDelivr URLs (40-char commit) or the page falls back to its pinned build."
+ "version": "1.20",
+ "index": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@4ea9eda7efe22a2895b1cdf4266f4beac04efcef/site-app/fym-v120/index.html",
+ "base": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ad0675e42242c3abad40cac9f539a265220e26eb/site-app/fym-v72/",
+ "shipped": "2026-11-17T00:35:00-05:00",
+ "note": "Read by the Find Your Mat-ch page block (since Nov 17). Change index (and base if needed) to ship a new build; both must be pinned jsDelivr URLs (40-char commit) or the page falls back to its pinned build."
 }
