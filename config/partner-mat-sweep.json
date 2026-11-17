@@ -1,7 +1,7 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-17T04:26:07+00:00",
- "fym_ref": "origin/fym-site-preview:site-app/fym-v119",
+ "swept_at": "2026-11-17T14:06:33+00:00",
+ "fym_ref": "origin/fym-site-preview:site-app/fym-v121",
  "stores": {
   "ohmymahjong.com": {
    "brand": "Oh My Mahjong",
@@ -666,7 +666,7 @@
   "bespokemahjong.com": {
    "brand": "Bespoke Mahjong",
    "status": "ok",
-   "products": 324,
+   "products": 323,
    "mats": [
     [
      "2026-10-22T12:17:12-05:00",
