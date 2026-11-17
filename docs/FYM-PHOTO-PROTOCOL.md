@@ -10,3 +10,9 @@ Her words: "You guys have to have the protocol to make sure that garbage doesn't
 6. Each FYM release gets a preview page first (square tiles as the app shows them, pass / crop / pull). She sees it before it ships. 1.23 preview: https://claude.ai/artifact/VxiycRsum7K5sF9tzy72Qk (private review page; never link publicly). Verdicts: builder/fym_flags/fym123_photo_check.json.
 
 1.23 check result (Nov 17): 326 items, 291 pass, 10 cropped, 25 pulled. Most passing mats (nov10/nov16 LBB + Mahjong Register adds) still need a price before rule 0a lets them go live.
+
+## Big-catalog brands and app size (Tiffany Nov 12 + Nov 17)
+- Nov 12, her call: keeping the app updating beats onboarding big catalogs; "take 50 of everything". Nov 17: Besties' only value is that a shopper can search an obscure mat by name and find it; beyond that they must not over-suggest or crowd albums, and we can't break the app getting them in.
+- So: no more than 50 new items from one brand per release, until she says otherwise. 1.23 is held; the 230 staged Besties wait for her decision.
+- Size facts (Nov 17, v122): app page 11.2 MB, served by jsDelivr, which refuses single GitHub files over 20 MB. Each mat adds ~1.45 KB to the page plus an image in the data repo (repo already past jsDelivr's package limit, so some new files need the raw.githubusercontent fallback). The old in-chat copy is stuck at 1.18 on its 512-file / 256 MB cap.
+- Besties now: 322 visible of 1,789 mats. Raw colour ranking puts ~8 Besties in a tile set's top 30 (up to 19); BCAP trims to 6, and 209 of 336 sets hit the cap. Albums: 55 of 1,921 matches, in 21 of 49 albums.
