@@ -11,6 +11,9 @@ NOTE 2026-11-08: automated Chrome submits on Shopify footer forms (Amahj, Bam!, 
 4. Weekly (Monday desk cleanup): any partner with no email in 30 days -> recheck the signup.
 5. New partner onboarding = add a row here and sign up the same day.
 
+## Always open the www address
+Middle & Main's store is live at https://www.middleandmainmahjong.com. The bare domain (no www) shows Shopify's "This store is currently unavailable" page. That page is NOT the store and does not mean they closed: Tiffany has corrected this twice (Nov 8, Nov 16). Open every brand by the www address our links use.
+
 ## Chrome method that works (Nov 8 update)
 - Popups (Shopify Forms / Klaviyo): fill the email with form_input (typing into some fields triggers another browser extension's overlay that blocks the tab; navigate away to recover), click the button, decline SMS.
 - Footer forms: work on stores WITHOUT the hCaptcha badge (Mahj Squad: URL gets ?customer_posted=true) and on Squarespace sites (Amanda Toppe, Wren). On Shopify stores showing the hCaptcha badge the submit is silently dropped: that is a 10-second job for Tiffany on her phone.
@@ -56,7 +59,7 @@ Sources: brand list = codes-page brands (google-codes-audit/brand-pages-verified
 | The Mahjong Co. | mahjongco.com | Nov 8 | receiving (confirmed) |
 | Mahjong Register | mahjongregister.com | - | no newsletter: no signup form on the site (rechecked Nov 16) |
 | Mahjong Studios | mahjongstudios.com | Nov 8 | receiving |
-| Middle & Main | middleandmainmahjong.com | - | store offline ("This store is currently unavailable", Nov 16) |
+| Middle & Main | www.middleandmainmahjong.com | none yet | signed up 2026-11-16 (10% popup, first name + email: "A Little Treat, Just for You!" code shown). Store is LIVE: use the www address; the bare domain without www shows Shopify's "store unavailable" page, which is NOT the store. |
 | Mini Mahjer | minimahjer.com | Nov 16 | signed up 2026-11-16 (popup, first name + email; SMS step skipped); welcome email arrived 11:43pm ET |
 | My Fair | myfairmahjong.com | none | needs Tiffany: footer hCaptcha (Nov 16) |
 | The Mahjong Press | themahjongpress.com | none | needs Tiffany: footer hCaptcha (Nov 16) |
@@ -85,7 +88,7 @@ Sources: brand list = codes-page brands (google-codes-audit/brand-pages-verified
 | LoveShackFancy | loveshackfancy.com | Nov 16 | receiving |
 | Mahjong Row & Co. | - | - | EXCLUDED (out Nov 6) |
 
-Nov 16 totals: 28 receiving within 30 days; 8 signed up tonight in her Chrome (Bougie, Hutch & Nook, Ozark, Let's Mahj On, Yellow Mountain, Mini Mahjer, Splash, Oh My Mahjong re-sign) plus Bam Bird by the Bam Bird thread; 12 need Tiffany (11 captcha/phone + Virora); 6 have no newsletter to join.
+Nov 16 totals: 28 receiving within 30 days; 9 signed up tonight in her Chrome (Bougie, Hutch & Nook, Ozark, Let's Mahj On, Yellow Mountain, Mini Mahjer, Splash, Middle & Main, Oh My Mahjong re-sign) plus Bam Bird by the Bam Bird thread; 12 need Tiffany (11 captcha/phone + Virora); 5 have no newsletter to join.
 The tiffanybrie@ forward note below has not shown up in practice: as of Nov 16 none of the captcha brands has a newsletter in mahjmatchmaker@.
 
 ## Nov 16 (Tiffany 9:01am: "you have my permission" to sign up + unsubscribe tiffanybrie@ from duplicates)
