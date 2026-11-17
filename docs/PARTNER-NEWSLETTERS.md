@@ -29,7 +29,7 @@ Nov 12 run: added the 5 partners from OVERDUE (YOLO, Maison Mahj, Noli June, Mah
 | Mac + Miller | macandmillermahjong.com | seen (on list) |
 | Britt Mills | brittmillsdesign.com | seen |
 | Anders Ruff | andersruff.com | seen |
-| Bam Bird | bambirdboutique.com | signed up 2026-11-07 (popup, SMS declined); no welcome email in Gmail as of 2026-11-08: recheck Mon |
+| Bam Bird | bambirdboutique.com | signed up 2026-11-16 ~11:30pm ET (site footer form in her Chrome; page showed "Thanks for subscribing", URL got ?customer_posted=true). Old row was wrong: the Nov 7 popup signup never took (no Bam Bird mail reached mahjmatchmaker@ after Aug 12, while tiffanybrie@ got 7 Bam Bird newsletters Oct 22 to Nov 12). Check mahjmatchmaker@ for a welcome/confirm mail. |
 | Peace Love Mahjong | peacelovemahjong.com | seen |
 | Miss Mahjong | missmahjong.com | seen |
 | Royal Mahjong Society | theroyalmahjongsociety.com | seen |
