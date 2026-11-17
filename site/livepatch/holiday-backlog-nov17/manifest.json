@@ -1,0 +1,379 @@
+{
+ "sha": "5f51da3515c1f5ff34192b525ce7cc07210aef6e",
+ "order": [
+  "holiday#dear-santa",
+  "holiday#december-1994",
+  "holiday#holly-jolly-pink",
+  "holiday#holly-jolly-red",
+  "holiday#nutcracker-ballet",
+  "holiday#rackin-rudolph",
+  "holiday#tinselle-ruby",
+  "shangri-la",
+  "heritage",
+  "moonlight",
+  "preppy-soiree",
+  "emerald",
+  "heritage-2-0",
+  "jade",
+  "la-fete",
+  "malachite",
+  "nantucket",
+  "smith",
+  "tortoise",
+  "birdie",
+  "coquette",
+  "drake",
+  "gemma",
+  "glitterville",
+  "jasmine",
+  "limoncello",
+  "lola",
+  "luminaire",
+  "osler",
+  "palm-royale",
+  "papaya-spritz",
+  "pearlescent",
+  "sorbet",
+  "spring-love",
+  "sunday-tile-set",
+  "talulah",
+  "taylor"
+ ],
+ "pages": {
+  "taylor": {
+   "url": "https://www.mahjmatchmaker.com/taylor-mahjong-tile-matches",
+   "file": "pages/taylor.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "holiday#december-1994": {
+   "url": "https://www.mahjmatchmaker.com/holiday-mahjong-matches#december-1994",
+   "file": "pages/holiday--december-1994.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "la-fete": {
+   "url": "https://www.mahjmatchmaker.com/la-fete-mahjong-tile-matches",
+   "file": "pages/la-fete.json",
+   "main": 0,
+   "holiday": 2,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "birdie": {
+   "url": "https://www.mahjmatchmaker.com/birdie-mahjong-tile-matches",
+   "file": "pages/birdie.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "coquette": {
+   "url": "https://www.mahjmatchmaker.com/coquette-mahjong-tile-matches",
+   "file": "pages/coquette.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "heritage-2-0": {
+   "url": "https://www.mahjmatchmaker.com/heritage-2-0-mahjong-tile-matches",
+   "file": "pages/heritage-2-0.json",
+   "main": 0,
+   "holiday": 2,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "limoncello": {
+   "url": "https://www.mahjmatchmaker.com/limoncello-mahjong-tile-matches",
+   "file": "pages/limoncello.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "glitterville": {
+   "url": "https://www.mahjmatchmaker.com/glitterville-mahjong-tile-matches",
+   "file": "pages/glitterville.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "heritage": {
+   "url": "https://www.mahjmatchmaker.com/heritage-mahjong-tile-matches",
+   "file": "pages/heritage.json",
+   "main": 0,
+   "holiday": 3,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "nantucket": {
+   "url": "https://www.mahjmatchmaker.com/nantucket-mahjong-tile-matches",
+   "file": "pages/nantucket.json",
+   "main": 0,
+   "holiday": 2,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "lola": {
+   "url": "https://www.mahjmatchmaker.com/lola-mahjong-tile-matches",
+   "file": "pages/lola.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "malachite": {
+   "url": "https://www.mahjmatchmaker.com/malachite-mahjong-tile-matches",
+   "file": "pages/malachite.json",
+   "main": 0,
+   "holiday": 2,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "gemma": {
+   "url": "https://www.mahjmatchmaker.com/gemma-mahjong-tile-matches",
+   "file": "pages/gemma.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "holiday#tinselle-ruby": {
+   "url": "https://www.mahjmatchmaker.com/holiday-mahjong-matches#tinselle-ruby",
+   "file": "pages/holiday--tinselle-ruby.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "moonlight": {
+   "url": "https://www.mahjmatchmaker.com/moonlight-mahjong-tile-matches",
+   "file": "pages/moonlight.json",
+   "main": 0,
+   "holiday": 3,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "holiday#rackin-rudolph": {
+   "url": "https://www.mahjmatchmaker.com/holiday-mahjong-matches#rackin-rudolph",
+   "file": "pages/holiday--rackin-rudolph.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "jade": {
+   "url": "https://www.mahjmatchmaker.com/jade-mahjong-tile-matches",
+   "file": "pages/jade.json",
+   "main": 0,
+   "holiday": 2,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "holiday#holly-jolly-pink": {
+   "url": "https://www.mahjmatchmaker.com/holiday-mahjong-matches#holly-jolly-pink",
+   "file": "pages/holiday--holly-jolly-pink.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "sorbet": {
+   "url": "https://www.mahjmatchmaker.com/sorbet-mahjong-tile-matches",
+   "file": "pages/sorbet.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "smith": {
+   "url": "https://www.mahjmatchmaker.com/smith-mahjong-tile-matches",
+   "file": "pages/smith.json",
+   "main": 0,
+   "holiday": 2,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "palm-royale": {
+   "url": "https://www.mahjmatchmaker.com/palm-royale-mahjong-tile-matches",
+   "file": "pages/palm-royale.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "osler": {
+   "url": "https://www.mahjmatchmaker.com/osler-mahjong-tile-matches",
+   "file": "pages/osler.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "drake": {
+   "url": "https://www.mahjmatchmaker.com/drake-mahjong-tile-matches",
+   "file": "pages/drake.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "holiday#holly-jolly-red": {
+   "url": "https://www.mahjmatchmaker.com/holiday-mahjong-matches#holly-jolly-red",
+   "file": "pages/holiday--holly-jolly-red.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "preppy-soiree": {
+   "url": "https://www.mahjmatchmaker.com/preppy-soiree-mahjong-tile-matches",
+   "file": "pages/preppy-soiree.json",
+   "main": 0,
+   "holiday": 3,
+   "brands": [
+    "Oh My Mahjong",
+    "Peace Love Mahjong"
+   ]
+  },
+  "talulah": {
+   "url": "https://www.mahjmatchmaker.com/talulah-mahjong-tile-matches",
+   "file": "pages/talulah.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "emerald": {
+   "url": "https://www.mahjmatchmaker.com/emerald-mahjong-tile-matches",
+   "file": "pages/emerald.json",
+   "main": 0,
+   "holiday": 2,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "tortoise": {
+   "url": "https://www.mahjmatchmaker.com/tortoise-mahjong-tile-matches",
+   "file": "pages/tortoise.json",
+   "main": 0,
+   "holiday": 2,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "luminaire": {
+   "url": "https://www.mahjmatchmaker.com/luminaire-mahjong-tile-matches",
+   "file": "pages/luminaire.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "holiday#nutcracker-ballet": {
+   "url": "https://www.mahjmatchmaker.com/holiday-mahjong-matches#nutcracker-ballet",
+   "file": "pages/holiday--nutcracker-ballet.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "shangri-la": {
+   "url": "https://www.mahjmatchmaker.com/shangri-la-mahjong-tile-matches",
+   "file": "pages/shangri-la.json",
+   "main": 0,
+   "holiday": 6,
+   "brands": [
+    "Oh My Mahjong",
+    "Peace Love Mahjong"
+   ]
+  },
+  "pearlescent": {
+   "url": "https://www.mahjmatchmaker.com/pearlescent-mahjong-tile-matches",
+   "file": "pages/pearlescent.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "holiday#dear-santa": {
+   "url": "https://www.mahjmatchmaker.com/holiday-mahjong-matches#dear-santa",
+   "file": "pages/holiday--dear-santa.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "jasmine": {
+   "url": "https://www.mahjmatchmaker.com/jasmine-mahjong-tile-matches",
+   "file": "pages/jasmine.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "sunday-tile-set": {
+   "url": "https://www.mahjmatchmaker.com/sunday-tile-set-mahjong-tile-matches",
+   "file": "pages/sunday-tile-set.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Oh My Mahjong"
+   ]
+  },
+  "spring-love": {
+   "url": "https://www.mahjmatchmaker.com/spring-love-mahjong-tile-matches",
+   "file": "pages/spring-love.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Peace Love Mahjong"
+   ]
+  },
+  "papaya-spritz": {
+   "url": "https://www.mahjmatchmaker.com/papaya-spritz-mahjong-tile-matches",
+   "file": "pages/papaya-spritz.json",
+   "main": 0,
+   "holiday": 1,
+   "brands": [
+    "Peace Love Mahjong"
+   ]
+  }
+ }
+}
