@@ -1386,7 +1386,7 @@
    ],
    "racks": [
     "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Olive"
+    "Bam Bird Boutique Lagoon Wood"
    ],
    "rack_imgs": {
     "Bam Bird Boutique Walnut": "assets/racks/card/bam-bird-boutique-walnut.png",
@@ -1405,7 +1405,8 @@
     "Seeking: deep teal, copper or forest green.",
     "Must love a warm wood table."
    ],
-   "_measured": "Nov 16 2026: back median rgb(140,67,41) from the FYM split photo right half; faces k-means on the left half (teal #0e525e 31%, copper #bf7c54 18%, seafoam-teal #3e8486 17%, copper-brown 17%); plum + green read by eye from winds/bams."
+   "_measured": "Nov 16 2026: back median rgb(140,67,41) from the FYM split photo right half; faces k-means on the left half (teal #0e525e 31%, copper #bf7c54 18%, seafoam-teal #3e8486 17%, copper-brown 17%); plum + green read by eye from winds/bams.",
+   "racks_note": "Tiffany Nov 17 1:28am: Walnut + Lagoon Wood (Olive 'isn't it'). B&B Forest Green is a very good green for these tiles (use for mat racks); Mahjong Register Navy looks good; wood tones (PLM Acrylic Burl, PLM Oak, OMM Burl) beat one-off mustard; no tortoise, no Peacock Teal, no Miss Mahjong Jade & Brass, PLM Dark Green is the wrong (too deep) green."
   }
  },
  "_note_oct19_catchup": "Oct 19 catch-up: shangri-la, lilac-soiree, preppy-soiree, spring-love, sunday-tile-set got mat_imgs/rack_imgs and were rendered with the existing style. They use 'tag' (factual). When Tiffany approves the Papaya profile_line style, add profile_line to each set and re-run build.py <key>; nothing else changes."
