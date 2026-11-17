@@ -104,7 +104,9 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{
 .noord .mv{display:none}
 .mc{scroll-margin-top:12px}.mc.flash{box-shadow:0 0 0 3px var(--pink)}
 .hint{font-size:14px;color:var(--muted);margin:8px 0 0}
-.list.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.list.grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}
+/* Nov 17 2:26am: bird's-eye ordering, 5 across even on a phone */
+.list.grid .gc{border-width:1.5px;border-radius:6px}.list.grid .gc .gn{font-size:11px;padding:2px 5px;top:2px;left:2px}.list.grid .gc .gk{font-size:11px;padding:1px 4px}
 /* Tiffany Nov 17 2:15am: a WIDE grid (4-6 across) to weigh colours for the final order, and drag to move */
 @media (min-width:700px){.list.grid{position:relative;left:50%;transform:translateX(-50%);width:min(1500px,calc(100vw - 32px));grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}}
 .gc.drag{opacity:.35}.gc.over{outline:3px solid var(--pink);outline-offset:2px}
@@ -306,7 +308,7 @@ function renderList(sec){ensureAll();const ids=S.order[sec];const el=$(sec==='ma
 function ensureAll(){for(const sec of['main','hol']){const seen=new Set();S.order[sec]=S.order[sec].filter(id=>byId[id]&&(byId[id].hol?'hol':'main')===sec&&!seen.has(id)&&seen.add(id))}
   for(const c of D.cards){const sec=c.hol?'hol':'main';if(!S.order[sec].includes(c.id))S.order[sec].push(c.id)}}
 /* ---------- view (per viewer, browser only) + move to # ---------- */
-let VIEW={main:'cards',hol:'cards'},SEL=null;const VKEY='albumreview-view-'+D.set;
+let VIEW={main:'grid',hol:'grid'},SEL=null;const VKEY='albumreview-view2-'+D.set;  /* v2: grid is the default now (Nov 17) */
 try{const v=JSON.parse(localStorage.getItem(VKEY)||'null');if(v)for(const k of['main','hol'])if(v[k]==='grid'||v[k]==='cards')VIEW[k]=v[k]}catch(e){}
 function setView(sec,v){VIEW[sec]=v;if(SEL&&SEL.sec===sec)SEL=null;try{localStorage.setItem(VKEY,JSON.stringify(VIEW))}catch(e){}renderList(sec);renderSel()}
 function renderSel(){const b=$('#gsel');document.querySelectorAll('.gc').forEach(x=>x.setAttribute('aria-pressed',!!SEL&&x.dataset.gid===SEL.id));
