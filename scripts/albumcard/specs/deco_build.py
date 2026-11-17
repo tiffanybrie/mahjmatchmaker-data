@@ -25,7 +25,7 @@ BAMBIRD = {'Bam Bird Boutique Olive': '#4c5221', 'Bam Bird Boutique Walnut': '#8
 # new rack may go on a card with a note, never a card full of out-of-stock racks. Stock checked on the brand's .js Nov 8.
 PARTNER_RACKS = {'Mahjong Register Navy Solid Wood': '#2c3c53', 'Mahjong Register Admiral Navy': '#22375c', 'Mahjong Register Peacock Teal': '#018f9b'}
 SOLDOUT = {'Mahjong Register Admiral Navy': 'brand new (Oct 24), already sold out'}
-if KEY == 'deco-indigo':  # Tiffany Nov 17 3:11am: no MR Admiral Navy / Peacock Teal / other-brand navy; teal tones = Bam Bird Lagoon Wood
+if KEY in ('deco-indigo', 'deco-mulberry'):  # Tiffany Nov 17 3:11am: no MR Admiral Navy / Peacock Teal / other-brand navy; teal tones = Bam Bird Lagoon Wood
     BAMBIRD = {'Bam Bird Boutique Walnut': '#8c5529', 'Bam Bird Boutique Olive': '#4c5221', 'Bam Bird Boutique Lagoon Wood': '#16494d'}
     PARTNER_RACKS = {}
     NOT_FOR = ['Bird & Bamboo ' + n for n in ('Dark Navy', 'Dark Blue', 'Cadet', 'Mulberry', 'Harbor Blue', 'French Blue', 'Electric Blue', 'Blackboard Black', 'True Black',
@@ -66,8 +66,8 @@ for c in A['mats']:
     # Nov 8 1:50pm (Playbook step 8): the tile brand's own racks first. Bam Bird's other cut-out racks (Olive, Walnut, 19in like
     # the set racks, so proportional) win when they match the mat; else Bird & Bamboo colours.
     _pref = {k: v for k, v in {**BAMBIRD, **PARTNER_RACKS}.items() if RUSE.get(k, 0) < 6}  # no rack on more than 6 cards (stale)
-    if KEY == 'deco-indigo':  # navy clusters land on the Indigo TILE rack (already on the card) and are skipped: never a second navy
-        for l in pick(m, exclude=NOT_FOR, maxn=4, prefer={**_pref, 'Bam Bird Boutique Indigo': '#39486a', 'Bam Bird Boutique Mulberry Wood': '#6b1f45'}, prefer_de=PREF_DE):
+    if KEY in ('deco-indigo', 'deco-mulberry'):  # navy clusters land on the Indigo TILE rack (already on the card) and are skipped: never a second navy
+        for l in pick(m, exclude=NOT_FOR, maxn=4, prefer={**_pref, **({'Bam Bird Boutique Indigo': '#39486a'} if ('Bam Bird Boutique Indigo' in TRACKS or RUSE.get('Bam Bird Boutique Indigo', 0) < 8) else {}), 'Bam Bird Boutique Mulberry Wood': '#6b1f45', 'Bam Bird Boutique Lagoon Wood': '#16494d'}, prefer_de=PREF_DE):
             if l not in TRACKS and l not in mr and len(mr) < 2: mr.append(l)
         for l in ('Bam Bird Boutique Walnut', 'Bam Bird Boutique Olive', 'Bird & Bamboo Cream'):  # always 2 mat racks
             if len(mr) < 2 and l not in mr: mr.append(l)
@@ -79,8 +79,8 @@ for c in A['mats']:
         if l in SOLDOUT:
             if SO_USED[0] >= 2: mr[j] = 'Mahjong Register Navy Solid Wood' if ('Mahjong Register Navy Solid Wood' not in mr and RUSE.get('Mahjong Register Navy Solid Wood', 0) < 6) else None
             else: SO_USED[0] += 1
-    mr = [l for l in mr if l] or (['Bam Bird Boutique Walnut'] if KEY == 'deco-indigo' else ['Bird & Bamboo Dark Navy'])
-    if all(l in SOLDOUT for l in mr): mr = mr + (['Bam Bird Boutique Walnut'] if KEY == 'deco-indigo' else ['Bird & Bamboo Dark Navy'])  # never only out-of-stock racks
+    mr = [l for l in mr if l] or (['Bam Bird Boutique Walnut'] if KEY in ('deco-indigo', 'deco-mulberry') else ['Bird & Bamboo Dark Navy'])
+    if all(l in SOLDOUT for l in mr): mr = mr + (['Bam Bird Boutique Walnut'] if KEY in ('deco-indigo', 'deco-mulberry') else ['Bird & Bamboo Dark Navy'])  # never only out-of-stock racks
     rnotes = [f'{l}: {SOLDOUT[l]}' for l in mr if l in SOLDOUT]
     for l in mr: RUSE[l] = RUSE.get(l, 0) + 1
     fn = f"{KEY}-mahjong-tiles-{slug(brand)}-{slug(nm)}-mat.jpg"; n = len(cards) + 1

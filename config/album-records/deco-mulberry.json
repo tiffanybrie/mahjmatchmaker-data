@@ -38,7 +38,8 @@
     "note": "The Find Your Mat-ch photo (faces | backs). A smaller photo, so a little softer."
    }
   ],
-  "default": 0
+  "default": 0,
+  "chosen": 0
  },
  "faces": {
   "dir": "assets/tiles/faces/deco/clean/",
@@ -274,7 +275,17 @@
     "why": "Your pick."
    }
   ],
-  "shared_from": "deco-lagoon (Tiffany Nov 17 3:03am: same faces on all three Deco colourways, so the favorite faces are the same for all three albums)"
+  "shared_from": "deco-lagoon (Tiffany Nov 17 3:03am)",
+  "her": {
+   "round": 1,
+   "keys": [
+    "dragon-green",
+    "dragon-red",
+    "bam-1-crane",
+    "wind-south",
+    "joker-rose-lion"
+   ]
+  }
  },
  "pool": {
   "size": 1686,
@@ -2800,6 +2811,81 @@
    "sent": "2026-11-11T12:40",
    "url": "https://claude.ai/artifact/FAiTL4JE8X4sjekeK8VJuE",
    "note": "fresh review page (Nov 8 re-pull); Mulberry Plum Scallop card re-rendered from YOLO flat render (gate 8b)"
+  },
+  {
+   "round": 1,
+   "applied_at": "2026-11-17T03:28:13-05:00",
+   "changes": [
+    "Put back in: Deco Dragon (Mulberry), YOTD Plum, Mirage, Scarlett",
+    "Faces: dragon-green, dragon-red, bam-1-crane, wind-south, joker-rose-lion (5)"
+   ],
+   "anything": "",
+   "done": true,
+   "answers": {
+    "adds": [],
+    "anything": "",
+    "cover": 0,
+    "done": true,
+    "faces": [
+     "dragon-green",
+     "dragon-red",
+     "bam-1-crane",
+     "wind-south",
+     "joker-rose-lion"
+    ],
+    "finds": {},
+    "notes": {},
+    "order": {
+     "hol": [
+      "soir-e-all-day-poinsettia-party",
+      "lets-be-besties-winter-jewel",
+      "oh-my-mahjong-yuletide"
+     ],
+     "main": [
+      "britt-mills-viola",
+      "mahj-and-vine-caroline-in-peacock",
+      "bam-bird-boutique-deco-dragon-lagoon",
+      "britt-mills-wren",
+      "lets-be-besties-ocean-florals",
+      "sunday-mahjong-spring-blooms-premium",
+      "piper-chase-studios-tiger-fans",
+      "mahjong-register-peony-sociale-premium",
+      "bam-bird-boutique-deco-neoprene",
+      "peace-love-mahjong-dark-teal-cocktail-hour",
+      "oh-my-mahjong-jade",
+      "mahj-mood-emerald-cove-mat",
+      "that-mahjong-moment-evergreen",
+      "wren-mats-year-of-the-snake",
+      "mahj-mood-mahj-in-bloom-mat",
+      "lets-be-besties-the-mariner",
+      "mahjong-register-pretty-in-plum-premium",
+      "mahj-mood-fall-fling-mat",
+      "britt-mills-flourish-neoprene",
+      "britt-mills-regal-bloom-neoprene",
+      "wren-mats-mulberry-and-sage",
+      "my-fair-mahjong-garden-party-mulberry",
+      "bespoke-mahjong-yotd-raspberry",
+      "anders-ruff-burgundy-grove",
+      "bougie-mahjong-gilded-peacock",
+      "oh-my-mahjong-hawthorne",
+      "royal-mahjong-society-crown-jewels",
+      "lets-be-besties-peacock-flair",
+      "anders-ruff-purple-and-aqua-marble",
+      "yolo-mahjong-plum-scallop"
+     ]
+    },
+    "ordering_off": false,
+    "putin": [
+     "lo-bam-bird-boutique-deco-dragon-mulberry",
+     "lo-bespoke-mahjong-yotd-plum",
+     "lo-oh-my-mahjong-mirage",
+     "lo-britt-mills-scarlett"
+    ],
+    "round": 1,
+    "set": "deco-mulberry",
+    "updated": "2026-11-17T08:25:04.536Z",
+    "v": {}
+   }
   }
  ],
  "catalog_checked": {
