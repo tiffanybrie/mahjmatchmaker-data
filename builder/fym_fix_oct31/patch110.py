@@ -1,4 +1,4 @@
-"""FYM v110 = public "Version 1.10" (Oct 31 night): STARS (save favourites per device, no account yet; Tiffany Oct 27 6:01pm +
+"""FYM v110 = public "Version 1.10" (Oct 31 night): STARS (save favorites per device, no account yet; Tiffany Oct 27 6:01pm +
 Oct 31 9:33pm) + Mahj & Moon ShopMy links (config/mahj-moon-shopmy-links.json, Etsy 6%).
 Code-only patch + one data edit; applies identically to the app index, the artifact index and the website copy.
 Usage: python3 patch110.py <in index.html> <out index.html>"""
@@ -43,7 +43,7 @@ CSS = '''.stb{display:inline-flex;align-items:center;justify-content:center;flex
 '''
 i = h.rindex('</style></head>'); h = h[:i] + CSS + h[i:]
 
-JS = r'''/*v110 STARS: per-device favourites, no account (localStorage via LS, safe when storage is blocked)*/
+JS = r'''/*v110 STARS: per-device favorites, no account (localStorage via LS, safe when storage is blocked)*/
 const STAR={k:'fym_stars_v1',mem:null,get(){if(this.mem)return this.mem;let v=null;try{v=JSON.parse(LS.get(this.k)||'null');}catch(e){}this.mem=Array.isArray(v)?v:[];return this.mem;},has(x){return this.get().includes(x);},tog(x){const a=this.get(),i=a.indexOf(x);if(i>=0)a.splice(i,1);else a.unshift(x);LS.set(this.k,JSON.stringify(a));return i<0;}};
 function STB(t,id){const x=t+':'+id,on=STAR.has(x);return `<span class="stb" role="button" tabindex="0" data-star="${esc(x)}" aria-pressed="${on}" aria-label="${on?'Remove from':'Add to'} My stars">${on?'★':'☆'}</span>`;}
 function STG(t,id){return STB(t,id);}
