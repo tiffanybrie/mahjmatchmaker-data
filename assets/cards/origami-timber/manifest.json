@@ -1,5 +1,5 @@
 {
- "set": "Origami (Timber)",
+ "set": "Origami Timber",
  "status": "DRAFT: Claude's own picks, pending Tiffany's review",
  "groups": {
   "stand": "Standouts",
@@ -29,8 +29,8 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Wine",
-    "Bird & Bamboo True Black"
+    "Peace Love Mahjong Acrylic Burl",
+    "Bam Bird Boutique Slate Blue"
    ],
    "why": "Mahjong Row & Co. (Cypress): green pinstripe with a brown centre: menswear with wood.",
    "fym": "mahjongrowandco.com/marigold-mahjong-mat",
@@ -55,7 +55,7 @@
    ],
    "mat_racks": [
     "Peace Love Mahjong Acrylic Burl",
-    "Bird & Bamboo True Black"
+    "Bam Bird Boutique Slate Blue"
    ],
    "why": "Your Smith pick: earthy wildflowers.",
    "fym": "alb2:sweet-jojo-designs-boho-wildflower",
@@ -90,81 +90,6 @@
   },
   {
    "order": 4,
-   "group": "stand",
-   "mat": "Novella Leatherette",
-   "brand": "Britt Mills",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-britt-mills-novella-leatherette-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/britt-mills-novella-leatherette.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Red",
-    "Bird & Bamboo Peachy"
-   ],
-   "why": "Green vines, copper flowers and a plum butterfly: three of her face colours on one mat, framed in a warm red that sits next to the Timber backs.",
-   "fym": "brittmillsdesign.com/novella-leatherette-mahjong-mat",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 5,
-   "group": "yours",
-   "mat": "Emerald Society",
-   "brand": "Bougie Mahjong",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": false,
-   "file": "origami-timber-mahjong-tiles-bougie-mahjong-emerald-society-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/leftout/bougie-mahjong-emerald-society.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Evergreen",
-    "Bird & Bamboo Forest Green"
-   ],
-   "why": "Your pick from Left out (round 2). Claude had said: Bougie: limited to your own picks (deep emerald would otherwise suit).",
-   "fym": "bougiemahjong.com/emerald-society-mahjong-mat",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 6,
-   "group": "best",
-   "mat": "The Hunt Club",
-   "brand": "Charleston Mahjong Club",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-charleston-mahjong-club-the-hunt-club-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/charleston-mahjong-club-the-hunt-club.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Cream",
-    "Bird & Bamboo Seafoam"
-   ],
-   "why": "Your Smith pick: green hunting toile with warm tones.",
-   "fym": "charlestonmahjongclub.com/the-hunt-club-neoprene-mat-toile-w-carrying-bag",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 7,
    "group": "yours",
    "mat": "Dabney Leatherette",
    "brand": "Britt Mills",
@@ -179,11 +104,86 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Mahjong Register Navy Solid Wood",
+    "Bam Bird Boutique Indigo",
     "Peace Love Mahjong Acrylic Burl"
    ],
    "why": "Your pick (Nov 17 1:31am).",
    "fym": "brittmillsdesign.com/dabney-leatherette-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 5,
+   "group": "stand",
+   "mat": "Novella Leatherette",
+   "brand": "Britt Mills",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-britt-mills-novella-leatherette-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/britt-mills-novella-leatherette.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Acrylic Burl",
+    "Bird & Bamboo Forest Green"
+   ],
+   "why": "Green vines, copper flowers and a plum butterfly: three of her face colours on one mat, framed in a warm red that sits next to the Timber backs.",
+   "fym": "brittmillsdesign.com/novella-leatherette-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 6,
+   "group": "yours",
+   "mat": "Emerald Society",
+   "brand": "Bougie Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "origami-timber-mahjong-tiles-bougie-mahjong-emerald-society-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/leftout/bougie-mahjong-emerald-society.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Oh My Mahjong Burl",
+    "Bam Bird Boutique Indigo"
+   ],
+   "why": "Your pick from Left out (round 2). Claude had said: Bougie: limited to your own picks (deep emerald would otherwise suit).",
+   "fym": "bougiemahjong.com/emerald-society-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 7,
+   "group": "best",
+   "mat": "The Hunt Club",
+   "brand": "Charleston Mahjong Club",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-charleston-mahjong-club-the-hunt-club-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/charleston-mahjong-club-the-hunt-club.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Oak",
+    "Bam Bird Boutique Walnut"
+   ],
+   "why": "Your Smith pick: green hunting toile with warm tones.",
+   "fym": "charlestonmahjongclub.com/the-hunt-club-neoprene-mat-toile-w-carrying-bag",
    "lowres": false,
    "caption_note": null,
    "rack_notes": []
@@ -204,7 +204,7 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Cream",
+    "Peace Love Mahjong Acrylic Burl",
     "Bird & Bamboo Seafoam"
    ],
    "why": "Tiffany's pick (Nov 17 1:03am): Luna EK koi mat, a match for Timber.",
@@ -229,8 +229,8 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Evergreen",
-    "Bird & Bamboo Blackboard Black"
+    "Bam Bird Boutique Indigo",
+    "Peace Love Mahjong Acrylic Burl"
    ],
    "why": "Your ask (Nov 17 2:41am): try Bam Bird's own vegan leatherette in Hunter Green, new colour on the same listing (not in Find Your Mat-ch yet). Clean studio shot.",
    "fym": "www.bambirdboutique.com/origami-leather-mat?v=67732658880821",
@@ -254,8 +254,8 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Mahjong Register Navy Solid Wood",
-    "Bird & Bamboo Blackboard Black"
+    "Bird & Bamboo Forest Green",
+    "Peace Love Mahjong Acrylic Burl"
    ],
    "why": "Bam Bird shoots Timber on navy leather too (listing photo 13), and a Tiles & Tablescapes member bought it for Timber. Dark navy makes the wood glow.",
    "fym": "www.bambirdboutique.com/origami-leather-mat?v=51358452613429",
@@ -279,7 +279,7 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Radish",
+    "Bam Bird Boutique Indigo",
     "Peace Love Mahjong Acrylic Burl"
    ],
    "why": "Ozark rug mat: rust red, navy and cream like a study rug, a classic with wood. Out of stock at Ozark.",
@@ -304,8 +304,8 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Cream",
-    "Bird & Bamboo Radish"
+    "Bam Bird Boutique Indigo",
+    "Peace Love Mahjong Acrylic Burl"
    ],
    "why": "Tiffany's pick (Nov 17 1:03am): Luna EK koi mat, a match for Timber.",
    "fym": "www.etsy.com/listing/4547279166/mahjong-mat-non-slip-tabletop-mat-home",
@@ -354,8 +354,8 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Matcha",
-    "Peace Love Mahjong Acrylic Burl"
+    "Peace Love Mahjong Acrylic Burl",
+    "Bam Bird Boutique Walnut"
    ],
    "why": "Your Smith pick, and a Tiles & Tablescapes rec for Timber: rattan weave with wood tiles reads like one warm table.",
    "fym": "sundaymahjong.com/rattan-premium-mahjong-mat",
@@ -405,7 +405,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo Basil",
-    "Bird & Bamboo Moss"
+    "Bird & Bamboo Dark Navy"
    ],
    "why": "Mahjong by SI's navy-and-green tartan (your replacement for Luxe Polo Club on the holiday blog; MAHJMATCH works here).",
    "fym": "www.mahjongbysi.com/ralph-mahjong-mat",
@@ -430,7 +430,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo Misty Spruce",
-    "Bird & Bamboo Blackboard Black"
+    "Bird & Bamboo Evergreen"
    ],
    "why": "Your pick (Nov 17 1:31am).",
    "fym": "brittmillsdesign.com/ruby-neoprene-mahjong-mat",
@@ -455,7 +455,7 @@
    ],
    "mat_racks": [
     "Mahjong Register Navy Solid Wood",
-    "Bird & Bamboo Blackboard Black"
+    "Bird & Bamboo Peachy"
    ],
    "why": "Mahjong Row & Co. (was in Cypress + Heritage 2.0): navy with copper peonies and a plaid frame.",
    "fym": "mahjongrowandco.com/midnight-garden-mat",
@@ -480,7 +480,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo Radish",
-    "Bird & Bamboo Blackboard Black"
+    "Bam Bird Boutique Walnut"
    ],
    "why": "Mahjong Row & Co.: navy plaid with copper-rose florals, very masculine; copper matches the koi.",
    "fym": "mahjongrowandco.com/ellington-navy-mahjong-mat",
@@ -504,8 +504,8 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Cream",
-    "Bird & Bamboo Seafoam"
+    "Bird & Bamboo Seafoam",
+    "Peace Love Mahjong Oak"
    ],
    "why": "Tiffany's pick (Nov 17 1:03am): Luna EK koi mat, a match for Timber.",
    "fym": "www.etsy.com/listing/4545375717/mahjong-mat-non-slip-tabletop-mat-home",
@@ -529,8 +529,8 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Cream",
-    "Bird & Bamboo Cadet"
+    "Bam Bird Boutique Slate Blue",
+    "Peace Love Mahjong Oak"
    ],
    "why": "Your Smith pick: vintage rug colours, rust and blue.",
    "fym": "alb2:ozark-mah-jongg-carson-vintage",
@@ -554,8 +554,8 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Red",
-    "Peace Love Mahjong Acrylic Burl"
+    "Peace Love Mahjong Acrylic Burl",
+    "Bird & Bamboo Cream"
    ],
    "why": "Your pick from Left out (round 2). Claude had said: Rouge (red) version of Winslow 1920: the navy one is in, red flattens the wood backs.",
    "fym": "ozarkmahjong.com/winslow-1920-rouge-mat",
@@ -629,7 +629,7 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Mahjong Register Navy Solid Wood",
+    "Bam Bird Boutique Indigo",
     "Bird & Bamboo Coral"
    ],
    "why": "Your pick (Nov 17 1:31am).",
@@ -704,8 +704,8 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Mahjong Register Navy Solid Wood",
-    "Oh My Mahjong Burl"
+    "Bam Bird Boutique Indigo",
+    "Peace Love Mahjong Acrylic Burl"
    ],
    "why": "Your pick (Nov 17 1:31am).",
    "fym": "brittmillsdesign.com/enchanted-leatherette-mahjong-mat",
@@ -754,7 +754,7 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Mahjong Register Navy Solid Wood",
+    "Bam Bird Boutique Indigo",
     "Peace Love Mahjong Oak"
    ],
    "why": "The Mahjong Moxie bird mat you remembered: a heron (crane-like) in a bamboo frame with navy and green.",
@@ -854,8 +854,8 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Blackboard Black",
-    "Bird & Bamboo Pebble"
+    "Bird & Bamboo Pebble",
+    "Bird & Bamboo Harbor Blue"
    ],
    "why": "Your Smith pick (Winslow 1920): navy with warm vintage detail.",
    "fym": "ozarkmahjong.com/winslow-1920-original-navy-blue-mat",
@@ -954,7 +954,7 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Mahjong Register Navy Solid Wood",
+    "Bam Bird Boutique Indigo",
     "Bird & Bamboo Forest Green"
    ],
    "why": "A cognac leather a shade lighter than the Timber backs.",
@@ -979,7 +979,7 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Mahjong Register Navy Solid Wood",
+    "Bam Bird Boutique Indigo",
     "Bird & Bamboo Forest Green"
    ],
    "why": "Bam Bird shoots Origami Timber on this caramel leather themselves (listing photo 12). Warm on warm, so her teal and green faces do the talking.",
@@ -1004,7 +1004,7 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Mahjong Register Navy Solid Wood",
+    "Bam Bird Boutique Indigo",
     "Bird & Bamboo Forest Green"
    ],
    "why": "Your Smith pick: plain brown leather, so the faces stand out.",
@@ -1079,8 +1079,8 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Blackboard Black",
-    "Bird & Bamboo Mulberry"
+    "Bird & Bamboo Mulberry",
+    "Bird & Bamboo Evergreen"
    ],
    "why": "Your pick (Nov 17 1:31am).",
    "fym": "brittmillsdesign.com/wren-neoprene-mahjong-mat",
@@ -1130,7 +1130,7 @@
    ],
    "mat_racks": [
     "Bird & Bamboo Evergreen",
-    "Bird & Bamboo Blackboard Black"
+    "Bird & Bamboo Basil"
    ],
    "why": "Your pick (Nov 17 1:31am).",
    "fym": "brittmillsdesign.com/savannah-leatherette-mahjong-mat",
@@ -1154,8 +1154,8 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Blackboard Black",
-    "Bird & Bamboo Avocado"
+    "Bird & Bamboo Avocado",
+    "Bird & Bamboo Harbor Blue"
    ],
    "why": "Your pick (Nov 17 1:31am).",
    "fym": "brittmillsdesign.com/peacock-garden-leatherette-mahjong-mat",
@@ -1254,8 +1254,8 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Blackboard Black",
-    "Bird & Bamboo Cream"
+    "Bird & Bamboo Cream",
+    "Bird & Bamboo Wine"
    ],
    "why": "Ozark's cranes and peonies (same design as Winslow Navy and Rouge, both in) on near-black: the crane echoes the origami birds.",
    "fym": "www.ozarkmahjongg.com/product-page/winslow-1920-noir-mat",
@@ -1379,8 +1379,8 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Blackboard Black",
-    "Bird & Bamboo Graphite"
+    "Bird & Bamboo Graphite",
+    "Bird & Bamboo Wine"
    ],
    "why": "Your Smith pick, and asked about for Timber in Tiles & Tablescapes.",
    "fym": "www.ohmymahjong.com/dapper-mat-w-tube",
@@ -1554,8 +1554,8 @@
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Bird & Bamboo Blackboard Black",
-    "Bird & Bamboo Seafoam"
+    "Bird & Bamboo Seafoam",
+    "Bird & Bamboo Harbor Blue"
    ],
    "why": "Your pick from Left out (round 3). Claude had said: Bougie: limited to your own picks. Koi on deep navy-teal with copper koi: a strong motif match if you want it.",
    "fym": "bougiemahjong.com/imperial-koi-pond-mahjong-mat",

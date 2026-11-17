@@ -21,16 +21,18 @@ A = json.load(open(R + f'scripts/albumcard/specs/{KEY}_nov16.json'))
 CC = json.load(open(R + 'config/colorcards.json'))['sets'][KEY]
 TRACKS = CC['racks']
 INSET = "assets/tiles/album/inset/origami-timber-center.jpg"  # Tiffany Nov 16 11:37pm: the card gets the CENTER crop of the FYM split photo
-BAMBIRD = {'Bam Bird Boutique Walnut': '#8c5529', 'Bam Bird Boutique Lagoon Wood': '#16494d'}  # measured from assets/racks/card PNGs
+BAMBIRD = {'Bam Bird Boutique Walnut': '#8c5529', 'Bam Bird Boutique Lagoon Wood': '#16494d', 'Bam Bird Boutique Indigo': '#39486a', 'Bam Bird Boutique Slate Blue': '#859fb1'}
+# Tiffany Nov 17 9:02am: Bam Bird INDIGO is their navy: use it everywhere instead of Mahjong Register Navy; Bam Bird Slate Blue for slate/light-blue tones.  # measured from assets/racks/card PNGs
 # Nov 8 2:12pm (Tiffany): use partners with big rack lines more (Mahjong Register, Anders Ruff) and their NEW colourways; a sold-out
 # new rack may go on a card with a note, never a card full of out-of-stock racks. Stock checked on the brand's .js Nov 8.
-PARTNER_RACKS = {'Mahjong Register Navy Solid Wood': '#2c3c53', 'Peace Love Mahjong Acrylic Burl': '#9b6a45', 'Oh My Mahjong Burl': '#d77e4d',
+PARTNER_RACKS = {'Bird & Bamboo Forest Green': '#007E61', 'Peace Love Mahjong Acrylic Burl': '#9b6a45', 'Oh My Mahjong Burl': '#d77e4d',
                  'Peace Love Mahjong Oak': '#d9a86a'}
 # Tiffany Nov 17 1:28am (Origami Timber): B&B Forest Green = a really good green for these tiles; Mahjong Register Navy looks good;
 # wood tones (PLM Acrylic Burl, PLM Oak, OMM Burl) beat one-off colours like mustard; NO tortoise, NO teal, NO Miss Mahjong Jade & Brass,
 # NO PLM Dark Green (too deep). Olive is out.
 NOT_FOR_TIMBER = ['Bird & Bamboo ' + n for n in ('Retro Mustard', 'Dijon', 'Mango', 'Butter', 'Sunshine', 'Yellow', 'Glowstick', 'Teal', 'Dark Teal',
-                  'Turquoise Blue', 'Turks Blue', 'Tiffany Dusk', 'Mermaid', 'Jade', 'Icy Mint', 'Lime Green', 'Carrot', 'Orange', 'Persimmon')]
+                  'Turquoise Blue', 'Turks Blue', 'Tiffany Dusk', 'Mermaid', 'Jade', 'Icy Mint', 'Lime Green', 'Carrot', 'Orange', 'Persimmon',
+                  'True Black', 'Blackboard Black', 'Dark Navy')]  # 9:02am: no black racks on these mats; navy = Bam Bird Indigo
 SOLDOUT = {'Mahjong Register Admiral Navy': 'brand new (Oct 24), already sold out'}
 SISTER = {'Vegan Leather – Caramel'}
 def flat(im):
@@ -71,19 +73,20 @@ for c in A['mats']:
     if sum(1 for l in mr if l in SOLDOUT) > 1: mr = [l for l in mr if l not in SOLDOUT][:1] + [l for l in mr if l in SOLDOUT][:1]
     for j, l in enumerate(mr):  # a sold-out new rack: at most 2 cards per album, then its in-stock sibling
         if l in SOLDOUT:
-            if SO_USED[0] >= 2: mr[j] = 'Mahjong Register Navy Solid Wood' if ('Mahjong Register Navy Solid Wood' not in mr and RUSE.get('Mahjong Register Navy Solid Wood', 0) < 6) else None
+            if SO_USED[0] >= 2: mr[j] = None
             else: SO_USED[0] += 1
-    mr = [l for l in mr if l] or ['Bird & Bamboo Dark Navy']
+    mr = [l for l in mr if l] or ['Bam Bird Boutique Walnut']
     # NEVER two burls on one card (Tiffany Nov 17 2:24am: OMM Burl + PLM Acrylic Burl together 'is stupid')
     BURLS = {'Oh My Mahjong Burl', 'Peace Love Mahjong Acrylic Burl'}
     if sum(1 for l in mr if l in BURLS) > 1: mr = [l for i, l in enumerate(mr) if l not in BURLS or l == next(x for x in mr if x in BURLS)]
     # Mat-specific rack overrides (spec mat 'mat_racks'): e.g. brown leathers get CONTRAST racks, not same-tone burls (2:24am)
     if c.get('mat_racks'): mr = list(c['mat_racks'])
+    if not c.get('keep_mr_navy'): mr = ['Bam Bird Boutique Indigo' if l == 'Mahjong Register Navy Solid Wood' else l for l in mr]  # 9:02am: anywhere MR Navy was, Bam Bird Indigo
     # ALWAYS TWO mat racks (Tiffany Nov 17 2:15am: 'You're supposed to pick two racks for the mat')
     if len(mr) < 2:
         for l in pick(m, exclude=list(TRACKS) + NOT_FOR_TIMBER + _over + mr + [b for b in BURLS if any(x in BURLS for x in mr)], k=8, maxn=2):
             if l not in mr: mr.append(l); break
-    if all(l in SOLDOUT for l in mr): mr = mr + ['Bird & Bamboo Dark Navy']  # never only out-of-stock racks
+    if all(l in SOLDOUT for l in mr): mr = mr + ['Bam Bird Boutique Walnut']  # never only out-of-stock racks
     rnotes = [f'{l}: {SOLDOUT[l]}' for l in mr if l in SOLDOUT]
     for l in mr: RUSE[l] = RUSE.get(l, 0) + 1
     fn = f"{KEY}-mahjong-tiles-{slug(brand)}-{slug(nm)}-mat.jpg"; n = len(cards) + 1

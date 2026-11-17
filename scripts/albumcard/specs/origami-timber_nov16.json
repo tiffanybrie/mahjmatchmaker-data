@@ -24,7 +24,12 @@
    "discovery": true,
    "added_after_review": "2026-11-17T01:30",
    "photo_note": "Nov 17: brand listing photo, cropped to the mat",
-   "partner": false
+   "partner": false,
+   "mat_racks": [
+    "Peace Love Mahjong Acrylic Burl",
+    "Bam Bird Boutique Slate Blue"
+   ],
+   "racks_note": "Tiffany Nov 17 9:02am"
   },
   {
    "group": "garden",
@@ -34,7 +39,12 @@
    "why": "Your Smith pick: earthy wildflowers.",
    "retired": false,
    "fym": "alb2:sweet-jojo-designs-boho-wildflower",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Peace Love Mahjong Acrylic Burl",
+    "Bam Bird Boutique Slate Blue"
+   ],
+   "racks_note": "Tiffany Nov 17 9:02am"
   },
   {
    "group": "best",
@@ -44,39 +54,12 @@
    "why": "Your Smith pick: lodge greens and browns made for a wood-backed set.",
    "retired": false,
    "fym": "alb2:mahjong-moxie-duck-camp",
-   "lowres": true
-  },
-  {
-   "group": "stand",
-   "name": "Novella Leatherette",
-   "brand": "Britt Mills",
-   "img": "assets/colorcards/origami/mats/britt-mills-novella-leatherette.jpg",
-   "why": "Green vines, copper flowers and a plum butterfly: three of her face colours on one mat, framed in a warm red that sits next to the Timber backs.",
-   "retired": false,
-   "fym": "brittmillsdesign.com/novella-leatherette-mahjong-mat",
-   "lowres": false
-  },
-  {
-   "group": "yours",
-   "name": "Emerald Society",
-   "brand": "Bougie Mahjong",
-   "img": "assets/colorcards/origami/leftout/bougie-mahjong-emerald-society.jpg",
-   "why": "Your pick from Left out (round 2). Claude had said: Bougie: limited to your own picks (deep emerald would otherwise suit).",
-   "retired": false,
-   "fym": "bougiemahjong.com/emerald-society-mahjong-mat",
-   "lowres": false,
-   "holiday": false,
-   "her_pick": true
-  },
-  {
-   "group": "best",
-   "name": "The Hunt Club",
-   "brand": "Charleston Mahjong Club",
-   "img": "assets/colorcards/origami/mats/charleston-mahjong-club-the-hunt-club.jpg",
-   "why": "Your Smith pick: green hunting toile with warm tones.",
-   "retired": false,
-   "fym": "charlestonmahjongclub.com/the-hunt-club-neoprene-mat-toile-w-carrying-bag",
-   "lowres": false
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Light Blue"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "yours",
@@ -89,7 +72,59 @@
    "lowres": false,
    "her_pick": true,
    "added_after_review": "2026-11-17T01:31",
-   "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat"
+   "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat",
+   "mat_racks": [
+    "Bam Bird Boutique Indigo",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "racks_note": "Tiffany 9:02am: good job (MR Navy -> Indigo)"
+  },
+  {
+   "group": "stand",
+   "name": "Novella Leatherette",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/origami/mats/britt-mills-novella-leatherette.jpg",
+   "why": "Green vines, copper flowers and a plum butterfly: three of her face colours on one mat, framed in a warm red that sits next to the Timber backs.",
+   "retired": false,
+   "fym": "brittmillsdesign.com/novella-leatherette-mahjong-mat",
+   "lowres": false,
+   "mat_racks": [
+    "Peace Love Mahjong Acrylic Burl",
+    "Bird & Bamboo Forest Green"
+   ],
+   "racks_note": "Tiffany Nov 17 9:02am"
+  },
+  {
+   "group": "yours",
+   "name": "Emerald Society",
+   "brand": "Bougie Mahjong",
+   "img": "assets/colorcards/origami/leftout/bougie-mahjong-emerald-society.jpg",
+   "why": "Your pick from Left out (round 2). Claude had said: Bougie: limited to your own picks (deep emerald would otherwise suit).",
+   "retired": false,
+   "fym": "bougiemahjong.com/emerald-society-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "mat_racks": [
+    "Oh My Mahjong Burl",
+    "Bam Bird Boutique Indigo"
+   ],
+   "racks_note": "Tiffany Nov 17 9:02am"
+  },
+  {
+   "group": "best",
+   "name": "The Hunt Club",
+   "brand": "Charleston Mahjong Club",
+   "img": "assets/colorcards/origami/mats/charleston-mahjong-club-the-hunt-club.jpg",
+   "why": "Your Smith pick: green hunting toile with warm tones.",
+   "retired": false,
+   "fym": "charlestonmahjongclub.com/the-hunt-club-neoprene-mat-toile-w-carrying-bag",
+   "lowres": false,
+   "mat_racks": [
+    "Peace Love Mahjong Oak",
+    "Bam Bird Boutique Walnut"
+   ],
+   "racks_note": "Tiffany Nov 17 9:02am"
   },
   {
    "group": "teal",
@@ -102,7 +137,12 @@
    "lowres": false,
    "her_pick": true,
    "photo_note": "Nov 17: Etsy 2000px, cropped in until no table shows (Tiffany 1:36am)",
-   "added_after_review": "2026-11-17T01:03"
+   "added_after_review": "2026-11-17T01:03",
+   "mat_racks": [
+    "Peace Love Mahjong Acrylic Burl",
+    "Bird & Bamboo Seafoam"
+   ],
+   "racks_note": "Tiffany Nov 17 9:02am"
   },
   {
    "group": "best",
@@ -117,7 +157,12 @@
    "holiday": false,
    "her_pick": true,
    "new": true,
-   "partner": true
+   "partner": true,
+   "mat_racks": [
+    "Bam Bird Boutique Indigo",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "racks_note": "Tiffany Nov 17 9:02am"
   },
   {
    "group": "best",
@@ -128,7 +173,12 @@
    "retired": false,
    "fym": "www.bambirdboutique.com/origami-leather-mat?v=51358452613429",
    "lowres": false,
-   "tnt": true
+   "tnt": true,
+   "mat_racks": [
+    "Bird & Bamboo Forest Green",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "racks_note": "Tiffany Nov 17 9:02am"
   },
   {
    "group": "masc",
@@ -142,7 +192,12 @@
    "discovery": true,
    "added_after_review": "2026-11-17T01:30",
    "photo_note": "Nov 17: brand listing photo, cropped to the mat",
-   "partner": false
+   "partner": false,
+   "mat_racks": [
+    "Bam Bird Boutique Indigo",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "racks_note": "Tiffany Nov 17 9:02am"
   },
   {
    "group": "teal",
@@ -162,7 +217,12 @@
     1348,
     1160
    ],
-   "her_note": "Tiffany 1:33am: crop to the upper-right umbrella that picks up the tile back colour"
+   "her_note": "Tiffany 1:33am: crop to the upper-right umbrella that picks up the tile back colour",
+   "mat_racks": [
+    "Bam Bird Boutique Indigo",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "racks_note": "Tiffany Nov 17 9:02am"
   },
   {
    "group": "masc",
@@ -176,7 +236,12 @@
    "discovery": true,
    "added_after_review": "2026-11-17T01:30",
    "photo_note": "Nov 17: brand listing photo, cropped to the mat",
-   "partner": false
+   "partner": false,
+   "mat_racks": [
+    "Bird & Bamboo Wine",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "racks_note": "Tiffany Nov 17 9:02am"
   },
   {
    "group": "best",
@@ -188,7 +253,12 @@
    "fym": "sundaymahjong.com/rattan-premium-mahjong-mat",
    "lowres": false,
    "tnt": true,
-   "photo_note": "Nov 16: full-size brand photo from the store"
+   "photo_note": "Nov 16: full-size brand photo from the store",
+   "mat_racks": [
+    "Peace Love Mahjong Acrylic Burl",
+    "Bam Bird Boutique Walnut"
+   ],
+   "racks_note": "Tiffany Nov 17 9:02am"
   },
   {
    "group": "masc",
@@ -207,7 +277,12 @@
     551,
     1800,
     2400
-   ]
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Navy",
+    "Bird & Bamboo Wine"
+   ],
+   "racks_note": "Tiffany Nov 17 9:02am"
   },
   {
    "group": "masc",
@@ -220,7 +295,12 @@
    "lowres": false,
    "partner": true,
    "added_after_review": "2026-11-17T01:56",
-   "photo_note": "Nov 17: Mahjong by SI listing image 1"
+   "photo_note": "Nov 17: Mahjong by SI listing image 1",
+   "mat_racks": [
+    "Bird & Bamboo Basil",
+    "Bird & Bamboo Dark Navy"
+   ],
+   "racks_note": "Tiffany Nov 17 9:07am"
   },
   {
    "group": "yours",
@@ -233,7 +313,11 @@
    "lowres": false,
    "her_pick": true,
    "added_after_review": "2026-11-17T01:31",
-   "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat"
+   "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat",
+   "mat_racks": [
+    "Bird & Bamboo Misty Spruce"
+   ],
+   "racks_note": "Tiffany Nov 17 9:07am"
   },
   {
    "group": "masc",
@@ -247,7 +331,13 @@
    "discovery": true,
    "added_after_review": "2026-11-17T01:30",
    "photo_note": "Nov 17: brand listing photo, cropped to the mat",
-   "partner": false
+   "partner": false,
+   "mat_racks": [
+    "Mahjong Register Navy Solid Wood",
+    "Bird & Bamboo Peachy"
+   ],
+   "racks_note": "Tiffany Nov 17 9:07am",
+   "keep_mr_navy": true
   },
   {
    "group": "masc",
@@ -261,7 +351,12 @@
    "discovery": true,
    "added_after_review": "2026-11-17T01:30",
    "photo_note": "Nov 17: brand listing photo, cropped to the mat",
-   "partner": false
+   "partner": false,
+   "mat_racks": [
+    "Bird & Bamboo Radish",
+    "Bam Bird Boutique Walnut"
+   ],
+   "racks_note": "Tiffany Nov 17 9:07am"
   },
   {
    "group": "garden",
@@ -274,7 +369,12 @@
    "lowres": false,
    "her_pick": true,
    "photo_note": "Nov 17: Etsy 2000px, cropped in until no table shows (Tiffany 1:36am)",
-   "added_after_review": "2026-11-17T01:03"
+   "added_after_review": "2026-11-17T01:03",
+   "mat_racks": [
+    "Bird & Bamboo Seafoam",
+    "Peace Love Mahjong Oak"
+   ],
+   "racks_note": "Tiffany Nov 17 9:07am"
   },
   {
    "group": "warm",
@@ -284,7 +384,12 @@
    "why": "Your Smith pick: vintage rug colours, rust and blue.",
    "retired": false,
    "fym": "alb2:ozark-mah-jongg-carson-vintage",
-   "lowres": false
+   "lowres": false,
+   "mat_racks": [
+    "Bam Bird Boutique Slate Blue",
+    "Peace Love Mahjong Oak"
+   ],
+   "racks_note": "Tiffany Nov 17 9:07am"
   },
   {
    "group": "yours",
@@ -296,7 +401,12 @@
    "fym": "ozarkmahjong.com/winslow-1920-rouge-mat",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Peace Love Mahjong Acrylic Burl",
+    "Bird & Bamboo Cream"
+   ],
+   "racks_note": "Tiffany Nov 17 9:07am"
   },
   {
    "group": "warm",
@@ -306,7 +416,13 @@
    "why": "Your Smith pick: autumn warmth in a print.",
    "retired": false,
    "fym": "faitamainstudio.com/le-ete-indien-studio-print-no-1",
-   "lowres": true
+   "lowres": true,
+   "short": "L'Été Indien",
+   "mat_racks": [
+    "Peace Love Mahjong Acrylic Burl",
+    "Bird & Bamboo Flamingo"
+   ],
+   "racks_note": "Tiffany 9:07am: keep"
   },
   {
    "group": "teal",
@@ -316,7 +432,12 @@
    "why": "Your Smith pick.",
    "retired": false,
    "fym": "www.ohmymahjong.com/isla-mat-in-tube",
-   "lowres": false
+   "lowres": false,
+   "mat_racks": [
+    "Bird & Bamboo Powder Blue",
+    "Bird & Bamboo Seafoam"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "yours",
@@ -329,7 +450,12 @@
    "lowres": false,
    "her_pick": true,
    "added_after_review": "2026-11-17T01:31",
-   "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat"
+   "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat",
+   "mat_racks": [
+    "Bam Bird Boutique Indigo",
+    "Bird & Bamboo Coral"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "yours",
@@ -341,7 +467,12 @@
    "fym": "sundaymahjong.com/golden-gingham-premium-mahjong-mat",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Peace Love Mahjong Oak",
+    "Bird & Bamboo Cream"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "best",
@@ -352,7 +483,12 @@
    "retired": false,
    "fym": "www.ohmymahjong.com/palomino-mat-in-tube",
    "lowres": false,
-   "photo_note": "Nov 16: full-size brand photo from the store"
+   "photo_note": "Nov 16: full-size brand photo from the store",
+   "mat_racks": [
+    "Peace Love Mahjong Acrylic Burl",
+    "Bird & Bamboo Red"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "yours",
@@ -365,7 +501,12 @@
    "lowres": false,
    "her_pick": true,
    "added_after_review": "2026-11-17T01:31",
-   "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat"
+   "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat",
+   "mat_racks": [
+    "Bam Bird Boutique Indigo",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "racks_note": "Tiffany Nov 17 9:07am"
   },
   {
    "group": "masc",
@@ -378,7 +519,12 @@
    "lowres": false,
    "discovery": true,
    "added_after_review": "2026-11-17T01:30",
-   "photo_note": "Nov 17: brand listing photo, cropped to the mat"
+   "photo_note": "Nov 17: brand listing photo, cropped to the mat",
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Harbor Blue"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "masc",
@@ -392,7 +538,12 @@
    "discovery": true,
    "added_after_review": "2026-11-17T01:30",
    "photo_note": "Nov 17: brand listing photo, cropped to the mat",
-   "partner": false
+   "partner": false,
+   "mat_racks": [
+    "Bam Bird Boutique Indigo",
+    "Peace Love Mahjong Oak"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "stand",
@@ -403,7 +554,12 @@
    "retired": false,
    "fym": "www.yolomahjong.com/crane-moon-mahjong-mat-floral-chinese-mahjong-table-mat-for-mahjong-set-31-5-x-31-5-inch",
    "lowres": true,
-   "discovery": true
+   "discovery": true,
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Oh My Mahjong Burl"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "masc",
@@ -417,7 +573,12 @@
    "discovery": true,
    "added_after_review": "2026-11-17T01:30",
    "photo_note": "Nov 17: brand listing photo, cropped to the mat",
-   "partner": false
+   "partner": false,
+   "mat_racks": [
+    "Bird & Bamboo Matcha",
+    "Bird & Bamboo Red"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "stand",
@@ -427,7 +588,12 @@
    "why": "A deep teal field like her dots and North crane, with a copper line that picks up the koi. Teal against wood is the classic contrast for this set.",
    "retired": false,
    "fym": "peacelovemahjong.com/mahjong-mats-patterns?v=52799368134948",
-   "lowres": false
+   "lowres": false,
+   "mat_racks": [
+    "Bird & Bamboo Forest Green",
+    "Bird & Bamboo Misty Spruce"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "warm",
@@ -437,7 +603,11 @@
    "why": "Your Smith pick (Winslow 1920): navy with warm vintage detail.",
    "retired": false,
    "fym": "ozarkmahjong.com/winslow-1920-original-navy-blue-mat",
-   "lowres": false
+   "lowres": false,
+   "mat_racks": [
+    "Bird & Bamboo Pebble"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "yours",
@@ -449,7 +619,12 @@
    "fym": "sundaymahjong.com/retro-plaid",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Bird & Bamboo Red"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "warm",
@@ -461,7 +636,12 @@
    "fym": "www.etsy.com/listing/4548889339/mahjong-mat-non-slip-tabletop-mat-home",
    "lowres": false,
    "discovery": true,
-   "photo_note": "Nov 16: full-size brand photo (Etsy il_fullxfull cropped to the mat)"
+   "photo_note": "Nov 16: full-size brand photo (Etsy il_fullxfull cropped to the mat)",
+   "mat_racks": [
+    "Peace Love Mahjong Oak",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "yours",
@@ -475,7 +655,12 @@
    "holiday": false,
    "her_pick": true,
    "photo_note": "Nov 17: white border trimmed; turned so the folded corner (white behind it) sits under the tile box (Tiffany 2:26am: no white around the mat)",
-   "short": "Emerald Teal & Celadon"
+   "short": "Emerald Teal & Celadon",
+   "mat_racks": [
+    "Bird & Bamboo Forest Green",
+    "Bird & Bamboo Seafoam"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "warm",
@@ -533,7 +718,12 @@
    "fym": "www.bambirdboutique.com/blue-abstract-neoprene-mahjong-mat",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Electric Blue",
+    "Bird & Bamboo Harbor Blue"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "yours",
@@ -546,7 +736,12 @@
    "lowres": false,
    "her_pick": true,
    "added_after_review": "2026-11-17T01:31",
-   "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat"
+   "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat",
+   "mat_racks": [
+    "Peace Love Mahjong Oak",
+    "Bird & Bamboo Coral"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "yours",
@@ -559,7 +754,11 @@
    "lowres": false,
    "her_pick": true,
    "added_after_review": "2026-11-17T01:31",
-   "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat"
+   "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat",
+   "mat_racks": [
+    "Bird & Bamboo Mulberry"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "masc",
@@ -573,7 +772,12 @@
    "discovery": true,
    "added_after_review": "2026-11-17T01:30",
    "photo_note": "Nov 17: brand listing photo, cropped to the mat",
-   "partner": false
+   "partner": false,
+   "mat_racks": [
+    "Bird & Bamboo Wine",
+    "Bird & Bamboo Dark Navy"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "yours",
@@ -586,7 +790,11 @@
    "lowres": false,
    "her_pick": true,
    "added_after_review": "2026-11-17T01:31",
-   "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat"
+   "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat",
+   "mat_racks": [
+    "Bird & Bamboo Evergreen"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "yours",
@@ -599,7 +807,11 @@
    "lowres": false,
    "her_pick": true,
    "added_after_review": "2026-11-17T01:31",
-   "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat"
+   "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat",
+   "mat_racks": [
+    "Bird & Bamboo Avocado"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "yours",
@@ -612,7 +824,12 @@
    "lowres": false,
    "her_pick": true,
    "added_after_review": "2026-11-17T01:31",
-   "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat"
+   "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat",
+   "mat_racks": [
+    "Bird & Bamboo Matcha",
+    "Bird & Bamboo Flamingo"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "masc",
@@ -626,7 +843,12 @@
    "discovery": true,
    "added_after_review": "2026-11-17T01:30",
    "photo_note": "Nov 17: brand listing photo, cropped to the mat",
-   "partner": false
+   "partner": false,
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Moss"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "masc",
@@ -640,7 +862,12 @@
    "discovery": true,
    "added_after_review": "2026-11-17T01:30",
    "photo_note": "Nov 17: brand listing photo, cropped to the mat",
-   "partner": false
+   "partner": false,
+   "mat_racks": [
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Matcha"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "masc",
@@ -654,7 +881,11 @@
    "discovery": true,
    "added_after_review": "2026-11-17T01:30",
    "photo_note": "Nov 17: brand listing photo, cropped to the mat",
-   "partner": false
+   "partner": false,
+   "mat_racks": [
+    "Bird & Bamboo Cream"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "garden",
@@ -664,7 +895,12 @@
    "why": "Your Smith pick.",
    "retired": false,
    "fym": "www.ohmymahjong.com/veranda-mat-in-tube",
-   "lowres": false
+   "lowres": false,
+   "mat_racks": [
+    "Bird & Bamboo Seafoam",
+    "Bird & Bamboo Ocean Slate"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "teal",
@@ -674,7 +910,12 @@
    "why": "Deep teal center with jewel florals: teal plus a plum-berry contrast.",
    "retired": false,
    "fym": "mahjandvine.com/caroline-in-peacock",
-   "lowres": false
+   "lowres": false,
+   "mat_racks": [
+    "Bird & Bamboo Misty Spruce",
+    "Bird & Bamboo Dark Blue"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "quiet",
@@ -684,7 +925,12 @@
    "why": "Your Smith pick.",
    "retired": true,
    "fym": "alb:amara:KY Derby",
-   "lowres": false
+   "lowres": false,
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "Peace Love Mahjong Oak"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "quiet",
@@ -694,7 +940,12 @@
    "why": "Your Smith pick (the original Dapper, retired).",
    "retired": true,
    "fym": "alb:cypress-forest:Dapper 1",
-   "lowres": false
+   "lowres": false,
+   "mat_racks": [
+    "Bird & Bamboo Red",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "quiet",
@@ -704,7 +955,11 @@
    "why": "Your Smith pick, and asked about for Timber in Tiles & Tablescapes.",
    "retired": true,
    "fym": "www.ohmymahjong.com/dapper-mat-w-tube",
-   "lowres": false
+   "lowres": false,
+   "mat_racks": [
+    "Bird & Bamboo Graphite"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "warm",
@@ -714,7 +969,12 @@
    "why": "A woven basket look, like rattan: natural texture for a wood set.",
    "retired": false,
    "fym": "tigredetartan.com/mahjong-mat-nantucket-basket-rules-edition-round",
-   "lowres": false
+   "lowres": false,
+   "mat_racks": [
+    "Oh My Mahjong Burl",
+    "Bird & Bamboo Brick Red"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "quiet",
@@ -724,7 +984,12 @@
    "why": "Your Smith pick.",
    "retired": true,
    "fym": "alb:drake:SoHo",
-   "lowres": false
+   "lowres": false,
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Forest Green"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "stand",
@@ -736,7 +1001,12 @@
    "fym": "www.etsy.com/listing/4571747551/mahjong-mat-non-slip-tabletop-mat-home",
    "lowres": false,
    "discovery": true,
-   "photo_note": "Nov 16: full-size brand photo (Etsy il_fullxfull cropped to the mat)"
+   "photo_note": "Nov 16: full-size brand photo (Etsy il_fullxfull cropped to the mat)",
+   "mat_racks": [
+    "Bird & Bamboo Cream",
+    "Bird & Bamboo Moss"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "yours",
@@ -748,7 +1018,12 @@
    "fym": "missmahjong.com/cherry-blossom-mahjong-playing-mat-malachite",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Ocean Slate",
+    "Bird & Bamboo Seafoam"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "masc",
@@ -761,7 +1036,12 @@
    "lowres": false,
    "discovery": true,
    "added_after_review": "2026-11-17T01:30",
-   "photo_note": "Nov 17: brand listing photo, cropped to the mat"
+   "photo_note": "Nov 17: brand listing photo, cropped to the mat",
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Wine"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "yours",
@@ -773,7 +1053,12 @@
    "fym": "www.wrenmats.com/t4eyv0rb7euouw482trf20qmrqtpw7-krskj",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Mauve"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "yours",
@@ -785,7 +1070,11 @@
    "fym": "bougiemahjong.com/imperial-koi-pond-mahjong-mat",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Seafoam"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "yours",
@@ -797,7 +1086,12 @@
    "fym": "letsbebesties.com/teal-dots-and-stripes-with-directions-mahjong-mat",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Misty Spruce",
+    "Bird & Bamboo Harbor Blue"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "yours",
@@ -809,7 +1103,12 @@
    "fym": "tigredetartan.com/mahjong-mat-nantucket-basket-1",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Peace Love Mahjong Oak",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "yours",
@@ -821,7 +1120,12 @@
    "fym": "letsbebesties.com/floral-scrolls-mahjong-mat",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Light Blue",
+    "Bird & Bamboo Ocean Slate"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "yours",
@@ -833,7 +1137,12 @@
    "fym": "letsbebesties.com/tartan-tweed-mahjong-mat",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Red",
+    "Bird & Bamboo Basil"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "warm",
@@ -844,7 +1153,12 @@
    "retired": false,
    "fym": "www.etsy.com/listing/4581591001/mahjong-mat-non-slip-tabletop-mat-home",
    "lowres": false,
-   "photo_note": "Nov 16: full-size brand photo (Etsy il_fullxfull cropped to the mat)"
+   "photo_note": "Nov 16: full-size brand photo (Etsy il_fullxfull cropped to the mat)",
+   "mat_racks": [
+    "Peace Love Mahjong Acrylic Burl",
+    "Bird & Bamboo Red"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "best",
@@ -854,7 +1168,12 @@
    "why": "Your Smith pick: deep green with warm accents for her bams and koi.",
    "retired": false,
    "fym": "www.ohmymahjong.com/hawthorne-mat-in-tube",
-   "lowres": false
+   "lowres": false,
+   "mat_racks": [
+    "Bird & Bamboo Wine",
+    "Bird & Bamboo Dark Blue"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "stand",
@@ -865,7 +1184,12 @@
    "retired": false,
    "fym": "www.ohmymahjong.com/astor-mat-w-tube",
    "lowres": false,
-   "tnt": true
+   "tnt": true,
+   "mat_racks": [
+    "Bird & Bamboo Harbor Blue",
+    "Bird & Bamboo Eggplant"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "holiday",
@@ -879,7 +1203,12 @@
    "holiday": true,
    "her_pick": true,
    "added_after_review": "2026-11-17T01:05",
-   "photo_note": "Nov 17: Bam Bird listing image, full size, cropped to the mat"
+   "photo_note": "Nov 17: Bam Bird listing image, full size, cropped to the mat",
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Forest Green"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "holiday",
@@ -893,7 +1222,12 @@
    "holiday": true,
    "her_pick": true,
    "added_after_review": "2026-11-17T01:05",
-   "photo_note": "Nov 17: Bam Bird listing image, full size, cropped to the mat"
+   "photo_note": "Nov 17: Bam Bird listing image, full size, cropped to the mat",
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Forest Green"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "holiday",
@@ -904,7 +1238,12 @@
    "retired": false,
    "fym": "www.bambirdboutique.com/bandana-neoprene-mahjong-mat?v=53345465237813",
    "lowres": false,
-   "holiday": true
+   "holiday": true,
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Forest Green"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "holiday",
@@ -915,7 +1254,12 @@
    "retired": false,
    "fym": "www.hiphipmahjong.com/rackin-rudolph-mahjong-mat",
    "lowres": false,
-   "holiday": true
+   "holiday": true,
+   "mat_racks": [
+    "Bird & Bamboo Cherry Red",
+    "Bird & Bamboo Harbor Blue"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "holiday",
@@ -926,7 +1270,12 @@
    "retired": false,
    "fym": "brittmillsdesign.com/merrywood-neoprene-mahjong-mat-arriving-late-october",
    "lowres": false,
-   "holiday": true
+   "holiday": true,
+   "mat_racks": [
+    "Bird & Bamboo Basil",
+    "Bird & Bamboo Cadet"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "holiday",
@@ -937,7 +1286,12 @@
    "retired": false,
    "fym": "www.ohmymahjong.com/winterberry-mat-in-tube",
    "lowres": false,
-   "holiday": true
+   "holiday": true,
+   "mat_racks": [
+    "Bird & Bamboo White",
+    "Bird & Bamboo Harbor Blue"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "holiday",
@@ -950,7 +1304,12 @@
    "lowres": false,
    "holiday": true,
    "discovery": true,
-   "added_after_review": "2026-11-17T01:30"
+   "added_after_review": "2026-11-17T01:30",
+   "mat_racks": [
+    "Bird & Bamboo Evergreen",
+    "Bird & Bamboo Red"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "holiday",
@@ -964,7 +1323,12 @@
    "holiday": true,
    "her_pick": true,
    "added_after_review": "2026-11-17T01:05",
-   "photo_note": "Nov 17: Bam Bird listing image, full size, cropped to the mat"
+   "photo_note": "Nov 17: Bam Bird listing image, full size, cropped to the mat",
+   "mat_racks": [
+    "Bird & Bamboo Kelly Green",
+    "Bird & Bamboo Evergreen"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "holiday",
@@ -975,7 +1339,12 @@
    "retired": false,
    "fym": "sundaymahjong.com/festive-plaid-premium-mahjong-mat",
    "lowres": false,
-   "holiday": true
+   "holiday": true,
+   "mat_racks": [
+    "Bird & Bamboo Brick Red",
+    "Bird & Bamboo Red"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "holiday",
@@ -986,7 +1355,12 @@
    "retired": false,
    "fym": "www.ohmymahjong.com/yuletide-mat-in-tube",
    "lowres": false,
-   "holiday": true
+   "holiday": true,
+   "mat_racks": [
+    "Bird & Bamboo Forest Green",
+    "Bird & Bamboo Seafoam"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "holiday",
@@ -998,7 +1372,12 @@
    "fym": "letsbebesties.com/winter-jewel-neoprene-mahjong-mat",
    "lowres": false,
    "holiday": true,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Misty Spruce",
+    "Bird & Bamboo Magenta"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "holiday",
@@ -1009,7 +1388,12 @@
    "retired": false,
    "fym": "shop.andersruff.com/tartan-tidings-mahjong-mat",
    "lowres": false,
-   "holiday": true
+   "holiday": true,
+   "mat_racks": [
+    "Bird & Bamboo Radish",
+    "Bird & Bamboo Cherry Red"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   },
   {
    "group": "holiday",
@@ -1023,7 +1407,12 @@
    "her_pick": true,
    "added_after_review": "2026-11-17T01:31",
    "photo_note": "Nov 17: Britt Mills listing image, cropped to the mat",
-   "holiday": true
+   "holiday": true,
+   "mat_racks": [
+    "Bird & Bamboo Basil",
+    "Bird & Bamboo Evergreen"
+   ],
+   "racks_note": "kept from the round she reviewed (Nov 17 9:07am rules: no black, Indigo for MR Navy)"
   }
  ]
 }
