@@ -18,14 +18,14 @@ meta = json.load(open(W + '/rec/meta.json')); ts = [t - meta['ts'][0] for t in m
 bgp = W + '/bg.png'
 with sync_playwright() as p:
     b = p.chromium.launch(); pg = b.new_page(viewport={'width': 1080, 'height': 1920})
-    pg.set_content(f'''<html><head><style>@font-face{{font-family:Cap;src:url(file://{F}/Caprasimo.ttf)}}
+    open(W + '/bg.html', 'w').write(f'''<html><head><style>@font-face{{font-family:Cap;src:url(file://{F}/Caprasimo.ttf)}}
 @font-face{{font-family:PF;font-style:italic;src:url(file://{F}/playfair-display-latin-400-italic.woff2)}}
 @font-face{{font-family:Bit;font-weight:700;src:url(file://{F}/bitter-latin-700-normal.woff2)}}
 body{{margin:0;width:1080px;height:1920px;background:#f6e9df;text-align:center}}
 h1{{font:92px/1 Cap;color:#0d4a2d;margin:0;padding-top:250px}}h1 i{{font:italic 92px PF}}h1 sup{{font-size:40px}}
 p{{font:700 40px Bit;color:#b3152b;margin:22px 0 0}}</style></head><body>
 <h1>Find <i>Your</i> Mat-ch<sup>™</sup></h1><p>Pick {cfg["label"]}. Swipe the mats.</p></body></html>''')
-    pg.wait_for_timeout(800); pg.screenshot(path=bgp); b.close()
+    pg.goto('file://' + W + '/bg.html'); pg.wait_for_timeout(1200); pg.screenshot(path=bgp); b.close()
 bg = Image.open(bgp).convert('RGB')
 PW, PH, PX, PY = 700, 1380, 190, 470
 mask = Image.new('L', (PW, PH), 0); ImageDraw.Draw(mask).rounded_rectangle((0, 0, PW - 1, PH - 1), 58, fill=255)

@@ -8,7 +8,9 @@
   "deco": "Art deco and gold",
   "night": "Night gardens + peacocks",
   "warm": "Softer and warmer",
-  "holiday": "Holiday"
+  "holiday": "Holiday",
+  "yours": "Your adds",
+  "more": "More matches (Nov 17 re-pull)"
  },
  "mats": [
   {
@@ -23,13 +25,13 @@
    "holiday": false
   },
   {
-   "group": "stand",
-   "name": "Savannah",
-   "brand": "Britt Mills",
-   "img": "assets/colorcards/deco/mats/britt-mills-savannah.jpg",
-   "why": "You put Indigo on the green mat in October. Deep green with pink and plum flowers: the navy backs stand out, and the pinks pick up her crak frames.",
+   "group": "best",
+   "name": "Gilded Peacock",
+   "brand": "Bougie Mahjong",
+   "img": "assets/colorcards/deco/mats/bougie-mahjong-gilded-peacock.jpg",
+   "why": "Art deco on art deco: gold fan lines and peacock feathers on deep teal-green, with an ivory center like her faces.",
    "retired": false,
-   "fym": "brittmillsdesign.com/savannah-neoprene-mahjong-mat",
+   "fym": "bougiemahjong.com/gilded-peacock-mahjong-mat",
    "lowres": false,
    "holiday": false
   },
@@ -41,6 +43,85 @@
    "why": "Bam Bird Boutique's own Deco Dragon mat, in her sister color. The dragons match hers, and the berry plays off the navy instead of copying it.",
    "retired": false,
    "fym": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098347829",
+   "lowres": false,
+   "holiday": false,
+   "partner": true
+  },
+  {
+   "group": "berry",
+   "name": "Pretty in Plum Premium",
+   "brand": "Mahjong Register",
+   "img": "assets/colorcards/deco/mats/mahjong-register-pretty-in-plum-premium.jpg",
+   "why": "Plum, lilac and ivory with a scalloped deco pattern: her mulberry faces, big, against navy backs.",
+   "retired": false,
+   "fym": "mahjongregister.com/preorder-buttercup-cherie-premium-mahjong-mat-33-estimated-ship-oct-30th-copy",
+   "lowres": false,
+   "holiday": false
+  },
+  {
+   "group": "warm",
+   "name": "Tilly Neoprene",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-tilly-neoprene.jpg",
+   "why": "Lilac with a navy and berry floral frame: her navy and mulberry, softened.",
+   "retired": false,
+   "fym": "brittmillsdesign.com/tilly-neoprene-mahjong-mat",
+   "lowres": false,
+   "holiday": false
+  },
+  {
+   "group": "night",
+   "name": "Elysium",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/mats/oh-my-mahjong-elysium.jpg",
+   "why": "Oh My Mahjong's navy pagoda garden inside a bright green fretwork frame. Navy plus green.",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/elysium-mat-in-tube",
+   "lowres": false,
+   "holiday": false
+  },
+  {
+   "group": "berry",
+   "name": "Deco Dragon (Lagoon)",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-lagoon.jpg",
+   "why": "Bam Bird Boutique's Lagoon Deco Dragon: her teal bams and green dragon, with the same dragons as the tiles.",
+   "retired": false,
+   "fym": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098315061",
+   "lowres": false,
+   "holiday": false,
+   "partner": true
+  },
+  {
+   "group": "deco",
+   "name": "SoHo",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/mats/oh-my-mahjong-soho.jpg",
+   "why": "Oh My Mahjong's deco sunburst in blue and green. Retired, but a match if you already own it.",
+   "retired": true,
+   "fym": "alb:drake:SoHo",
+   "lowres": true,
+   "holiday": false
+  },
+  {
+   "group": "berry",
+   "name": "Garden Party – Mulberry",
+   "brand": "My Fair Mahjong",
+   "img": "assets/colorcards/deco/mats/my-fair-mahjong-garden-party-mulberry.jpg",
+   "why": "A berry center with a teal edge. The berry pops off her navy, and the teal ties in her bams.",
+   "retired": false,
+   "fym": "myfairmahjong.com/mat-garden-party-mulberry",
+   "lowres": false,
+   "holiday": false
+  },
+  {
+   "group": "berry",
+   "name": "Caroline in Peacock",
+   "brand": "Mahj & Vine",
+   "img": "assets/colorcards/deco/mats/mahj-and-vine-caroline-in-peacock.jpg",
+   "why": "A peacock teal center inside berry blooms: two of her face colors, none of her navy, so the backs stand out.",
+   "retired": false,
+   "fym": "mahjandvine.com/caroline-in-peacock",
    "lowres": false,
    "holiday": false
   },
@@ -84,6 +165,27 @@
    "discovery": "2026-11-08"
   },
   {
+   "group": "warm",
+   "name": "Butterscotch Floral Simple Middle",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-butterscotch-floral-simple-middle.jpg",
+   "why": "A navy center with a gold line, inside peach and coral roses. Warm flowers against her cool navy. Amber is her complement on the wheel.",
+   "retired": false,
+   "fym": "letsbebesties.com/butterscotch-floral-simple-middle-mahjong-mat",
+   "lowres": false
+  },
+  {
+   "group": "deco",
+   "name": "Vanderbilt",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/mats/oh-my-mahjong-vanderbilt.jpg",
+   "why": "Navy and ivory plaid inside a gold deco-scallop frame: her navy back and gold palm. (Found in the Nov 8 mat discovery.)",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/vanderbilt-mat-w-tube",
+   "lowres": true,
+   "discovery": "2026-11-08"
+  },
+  {
    "group": "stand",
    "name": "Crown Jewels",
    "brand": "Royal Mahjong Society",
@@ -106,17 +208,6 @@
    "holiday": false
   },
   {
-   "group": "best",
-   "name": "Gilded Peacock",
-   "brand": "Bougie Mahjong",
-   "img": "assets/colorcards/deco/mats/bougie-mahjong-gilded-peacock.jpg",
-   "why": "Art deco on art deco: gold fan lines and peacock feathers on deep teal-green, with an ivory center like her faces.",
-   "retired": false,
-   "fym": "bougiemahjong.com/gilded-peacock-mahjong-mat",
-   "lowres": false,
-   "holiday": false
-  },
-  {
    "group": "berry",
    "name": "Scarlett",
    "brand": "Britt Mills",
@@ -134,61 +225,6 @@
    "repull_nov08": "Nov 8 ~3pm re-pull (scripts/albumreview/pull.py, contrast side) after Tiffany caught Scarlett + Flora missing from Lagoon."
   },
   {
-   "group": "berry",
-   "name": "Pretty in Plum Premium",
-   "brand": "Mahjong Register",
-   "img": "assets/colorcards/deco/mats/mahjong-register-pretty-in-plum-premium.jpg",
-   "why": "Plum, lilac and ivory with a scalloped deco pattern: her mulberry faces, big, against navy backs.",
-   "retired": false,
-   "fym": "mahjongregister.com/preorder-buttercup-cherie-premium-mahjong-mat-33-estimated-ship-oct-30th-copy",
-   "lowres": false,
-   "holiday": false
-  },
-  {
-   "group": "berry",
-   "name": "Garden Party – Mulberry",
-   "brand": "My Fair Mahjong",
-   "img": "assets/colorcards/deco/mats/my-fair-mahjong-garden-party-mulberry.jpg",
-   "why": "A berry center with a teal edge. The berry pops off her navy, and the teal ties in her bams.",
-   "retired": false,
-   "fym": "myfairmahjong.com/mat-garden-party-mulberry",
-   "lowres": false,
-   "holiday": false
-  },
-  {
-   "group": "berry",
-   "name": "Caroline in Peacock",
-   "brand": "Mahj & Vine",
-   "img": "assets/colorcards/deco/mats/mahj-and-vine-caroline-in-peacock.jpg",
-   "why": "A peacock teal center inside berry blooms: two of her face colors, none of her navy, so the backs stand out.",
-   "retired": false,
-   "fym": "mahjandvine.com/caroline-in-peacock",
-   "lowres": false,
-   "holiday": false
-  },
-  {
-   "group": "berry",
-   "name": "Deco Dragon (Lagoon)",
-   "brand": "Bam Bird Boutique",
-   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-lagoon.jpg",
-   "why": "Bam Bird Boutique's Lagoon Deco Dragon: her teal bams and green dragon, with the same dragons as the tiles.",
-   "retired": false,
-   "fym": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098315061",
-   "lowres": false,
-   "holiday": false
-  },
-  {
-   "group": "berry",
-   "name": "Navy and Red Pop",
-   "brand": "Let's Be Besties",
-   "img": "assets/colorcards/deco/mats/lets-be-besties-navy-and-red-pop.jpg",
-   "why": "Navy with wavy teal and pink lines and red stars. Fun and graphic; navy plus two of her face colors.",
-   "retired": false,
-   "fym": "letsbebesties.com/navy-and-red-pop-mahjong-mat",
-   "lowres": false,
-   "holiday": false
-  },
-  {
    "group": "deco",
    "name": "Gatsby Glow",
    "brand": "Let's Be Besties",
@@ -201,34 +237,12 @@
   },
   {
    "group": "deco",
-   "name": "SoHo",
-   "brand": "Oh My Mahjong",
-   "img": "assets/colorcards/deco/mats/oh-my-mahjong-soho.jpg",
-   "why": "Oh My Mahjong's deco sunburst in blue and green. Retired, but a match if you already own it.",
-   "retired": true,
-   "fym": "alb:drake:SoHo",
-   "lowres": true,
-   "holiday": false
-  },
-  {
-   "group": "deco",
    "name": "The Speakeasy",
    "brand": "Mahj Squad",
    "img": "assets/colorcards/deco/mats/mahj-squad-the-speakeasy.jpg",
    "why": "Black with a gold deco frame. Simple and moody, and the gold frame matches the palm on her backs.",
    "retired": false,
    "fym": "mahjsquadshop.com/the-speakeasy-mat",
-   "lowres": false,
-   "holiday": false
-  },
-  {
-   "group": "night",
-   "name": "Peacock Feathers",
-   "brand": "Let's Be Besties",
-   "img": "assets/colorcards/deco/mats/lets-be-besties-peacock-feathers.jpg",
-   "why": "A peacock in teal and lime on black, like her peacock wind tiles.",
-   "retired": false,
-   "fym": "letsbebesties.com/peacock-feathers-mahjong-mat",
    "lowres": false,
    "holiday": false
   },
@@ -255,28 +269,6 @@
    "holiday": false
   },
   {
-   "group": "night",
-   "name": "Crane & Moon",
-   "brand": "YOLO Mahjong",
-   "img": "assets/colorcards/deco/mats/yolo-mahjong-crane-and-moon.jpg",
-   "why": "Deep teal with a gold moon, cranes and coral flowers. The crane is a twin of her 1 Bam.",
-   "retired": false,
-   "fym": "www.yolomahjong.com/crane-moon-mahjong-mat-floral-chinese-mahjong-table-mat-for-mahjong-set-31-5-x-31-5-inch",
-   "lowres": false,
-   "holiday": false
-  },
-  {
-   "group": "night",
-   "name": "Elysium",
-   "brand": "Oh My Mahjong",
-   "img": "assets/colorcards/deco/mats/oh-my-mahjong-elysium.jpg",
-   "why": "Oh My Mahjong's navy pagoda garden inside a bright green fretwork frame. Navy plus green.",
-   "retired": false,
-   "fym": "www.ohmymahjong.com/elysium-mat-in-tube",
-   "lowres": false,
-   "holiday": false
-  },
-  {
    "group": "warm",
    "name": "Calista Leatherette",
    "brand": "Britt Mills",
@@ -286,49 +278,6 @@
    "fym": "brittmillsdesign.com/calista-leatherette-mahjong-mat",
    "lowres": false,
    "holiday": false
-  },
-  {
-   "group": "warm",
-   "name": "Tilly Neoprene",
-   "brand": "Britt Mills",
-   "img": "assets/colorcards/deco/mats/britt-mills-tilly-neoprene.jpg",
-   "why": "Lilac with a navy and berry floral frame: her navy and mulberry, softened.",
-   "retired": false,
-   "fym": "brittmillsdesign.com/tilly-neoprene-mahjong-mat",
-   "lowres": false,
-   "holiday": false
-  },
-  {
-   "group": "warm",
-   "name": "Moody",
-   "brand": "Hutch & Nook",
-   "img": "assets/colorcards/deco/mats/hutch-and-nook-moody.jpg",
-   "why": "A blue center inside a garden of pink and orange flowers on teal.",
-   "retired": false,
-   "fym": "hutchandnook.com/mahjong-mat-moody-mat",
-   "lowres": true,
-   "holiday": false
-  },
-  {
-   "group": "deco",
-   "name": "Vanderbilt",
-   "brand": "Oh My Mahjong",
-   "img": "assets/colorcards/deco/mats/oh-my-mahjong-vanderbilt.jpg",
-   "why": "Navy and ivory plaid inside a gold deco-scallop frame: her navy back and gold palm. (Found in the Nov 8 mat discovery.)",
-   "retired": false,
-   "fym": "www.ohmymahjong.com/vanderbilt-mat-w-tube",
-   "lowres": true,
-   "discovery": "2026-11-08"
-  },
-  {
-   "group": "warm",
-   "name": "Butterscotch Floral Simple Middle",
-   "brand": "Let's Be Besties",
-   "img": "assets/colorcards/deco/mats/lets-be-besties-butterscotch-floral-simple-middle.jpg",
-   "why": "A navy center with a gold line, inside peach and coral roses. Warm flowers against her cool navy. Amber is her complement on the wheel.",
-   "retired": false,
-   "fym": "letsbebesties.com/butterscotch-floral-simple-middle-mahjong-mat",
-   "lowres": false
   },
   {
    "group": "holiday",
@@ -350,7 +299,14 @@
    "retired": false,
    "fym": "peacelovemahjong.com/mahjong-mats-hanukkah?v=67570489524516",
    "lowres": false,
-   "holiday": true
+   "holiday": true,
+   "box": [
+    16,
+    237,
+    952,
+    1198
+   ],
+   "photo_note": "Nov 17 3:14am: bottom white border cropped out, mat moved down"
   },
   {
    "group": "holiday",
@@ -365,17 +321,6 @@
   },
   {
    "group": "holiday",
-   "name": "Alpine Snowflakes",
-   "brand": "Let's Be Besties",
-   "img": "assets/colorcards/deco/mats/lets-be-besties-alpine-snowflakes.jpg",
-   "why": "Holiday: cobalt with snowflakes and a green dot border. Brighter blue than her backs, but a fun winter table.",
-   "retired": false,
-   "fym": "letsbebesties.com/alpine-snowflakes-neoprene-mahjong-mat",
-   "lowres": false,
-   "holiday": true
-  },
-  {
-   "group": "holiday",
    "name": "Winter Jewel",
    "brand": "Let's Be Besties",
    "img": "assets/colorcards/deco/mats/lets-be-besties-winter-jewel.jpg",
@@ -385,11 +330,307 @@
    "lowres": false,
    "holiday": true,
    "box": [
-    30,
     150,
-    1020,
-    1080
-   ]
+    300,
+    870,
+    1039
+   ],
+   "photo_note": "Nov 17 3:15am: cropped inside the mat, no floor/table corners"
+  },
+  {
+   "group": "yours",
+   "name": "Deco Dragon (Indigo)",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-indigo.jpg",
+   "why": "Your pick from Left out (round 1). Claude had said: Bam Bird Boutique's own Indigo mat: Indigo tiles on the Indigo mat is navy on navy (your Oct 26 rule).",
+   "retired": false,
+   "fym": null,
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "partner": true
+  },
+  {
+   "group": "yours",
+   "name": "Vegan Leather – Navy",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/colorcards/deco/leftout/bam-bird-boutique-vegan-leather-navy.jpg",
+   "why": "Your pick from Left out (round 1). Claude had said: Navy vegan leather: solid navy on navy, the tiles disappear.",
+   "retired": false,
+   "fym": null,
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "partner": true
+  },
+  {
+   "group": "yours",
+   "name": "Darjeeling Peacock Mat (Side A: Blue Scales)",
+   "brand": "Bespoke Mahjong",
+   "img": "assets/colorcards/deco/leftout/bespoke-mahjong-darjeeling-peacock-blue-scales.jpg",
+   "why": "Your pick from Left out (round 1). Claude had said: Found by the Nov 8 re-pull. The reverse of the Side B card: periwinkle-blue scales with the same pansies and feathers; lighter and busier than her navy. Side B is in.",
+   "retired": false,
+   "fym": null,
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Dark Blue Art Deco, Gold Geometric Fans",
+   "brand": "Dreamframer Art",
+   "img": "assets/albums/discovery/dreamframer-art-dark-blue-art-deco-gold-fans.jpg",
+   "why": "Your pick from New finds (round 1). Navy like her backs, with gold and teal deco fans: the same era and the same gold. A standout candidate.",
+   "retired": false,
+   "fym": null,
+   "lowres": true,
+   "her_pick": true,
+   "new_find": "https://www.etsy.com/listing/4491199204"
+  },
+  {
+   "group": "more",
+   "name": "Viola",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-viola.jpg",
+   "why": "From the Mulberry album: a near-navy center in a dark floral, berry and pink blooms for her mulberry frames. (Nov 17 re-pull: your note that Britt Mills, Amanda Toppe and the Mulberry mats were missing.)",
+   "retired": false,
+   "fym": "brittmillsdesign.com/viola-neoprene-mahjong-mat-arriving-late-october",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Wren",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-wren.jpg",
+   "why": "From the Mulberry album: deep teal-navy center with a mulberry scalloped line. (Nov 17 re-pull: your note that Britt Mills, Amanda Toppe and the Mulberry mats were missing.)",
+   "retired": false,
+   "fym": "brittmillsdesign.com/wren-neoprene-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Tiger Fans",
+   "brand": "Piper Chase Studios",
+   "img": "assets/colorcards/deco/mats/piper-chase-studios-tiger-fans.jpg",
+   "why": "From the Mulberry album: Art Deco fans in navy and berry: the Deco shape and both her colors. (Nov 17 re-pull: your note that Britt Mills, Amanda Toppe and the Mulberry mats were missing.)",
+   "retired": false,
+   "fym": "www.etsy.com/listing/4553922554/tiger-fans",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Jade",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/mats/oh-my-mahjong-jade.jpg",
+   "why": "From the Mulberry album: Oh My Mahjong blue and teal: navy backs with her teal bams. (Nov 17 re-pull: your note that Britt Mills, Amanda Toppe and the Mulberry mats were missing.)",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/jade-mat-in-tube",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Fall Fling Mat",
+   "brand": "Mahj Mood",
+   "img": "assets/colorcards/deco/mats/mahj-mood-fall-fling-mat.jpg",
+   "why": "From the Mulberry album: dark ground with berry and pink florals. (Nov 17 re-pull: your note that Britt Mills, Amanda Toppe and the Mulberry mats were missing.)",
+   "retired": false,
+   "fym": "mahjmood.com/fall-fling-mat",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Flourish Neoprene",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-flourish-neoprene.jpg",
+   "why": "From the Mulberry album: slate-navy center in a berry floral frame, gold corners. (Nov 17 re-pull: your note that Britt Mills, Amanda Toppe and the Mulberry mats were missing.)",
+   "retired": false,
+   "fym": "brittmillsdesign.com/flourish-neoprene-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Regal Bloom Neoprene",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-regal-bloom-neoprene.jpg",
+   "why": "From the Mulberry album: navy scalloped border around a mulberry-purple center. (Nov 17 re-pull: your note that Britt Mills, Amanda Toppe and the Mulberry mats were missing.)",
+   "retired": false,
+   "fym": "brittmillsdesign.com/regal-bloom-neoprene-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Ruby",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-ruby.jpg",
+   "why": "Britt Mills: navy floral border around a soft sage center: navy plus a second color. (Nov 17 re-pull: your note that Britt Mills, Amanda Toppe and the Mulberry mats were missing.)",
+   "retired": false,
+   "fym": "brittmillsdesign.com/ruby-neoprene-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Huntley Leatherette",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-huntley-leatherette.jpg",
+   "why": "Britt Mills: navy center inside a soft floral frame with a pink line. (Nov 17 re-pull: your note that Britt Mills, Amanda Toppe and the Mulberry mats were missing.)",
+   "retired": false,
+   "fym": "brittmillsdesign.com/huntley-leatherette-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Dabney Leatherette",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-dabney-leatherette.jpg",
+   "why": "Britt Mills: navy center inside a dark floral border: navy on navy, with florals. (Nov 17 re-pull: your note that Britt Mills, Amanda Toppe and the Mulberry mats were missing.)",
+   "retired": false,
+   "fym": "brittmillsdesign.com/dabney-leatherette-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Enchanted Leatherette",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-enchanted-leatherette.jpg",
+   "why": "Britt Mills: slate-navy ground with berry, orange and teal folk flowers: her mulberry and teal on navy. (Nov 17 re-pull: your note that Britt Mills, Amanda Toppe and the Mulberry mats were missing.)",
+   "retired": false,
+   "fym": "brittmillsdesign.com/enchanted-leatherette-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Haven Leatherette",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-haven-leatherette.jpg",
+   "why": "Britt Mills: navy and plum painterly florals. (Nov 17 re-pull: your note that Britt Mills, Amanda Toppe and the Mulberry mats were missing.)",
+   "retired": false,
+   "fym": "brittmillsdesign.com/haven-leatherette-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "City Queen",
+   "brand": "Amanda Toppe",
+   "img": "assets/colorcards/deco/mats/amanda-toppe-city-queen.jpg",
+   "why": "Amanda Toppe: navy and cornflower blue with a floral border; one of her best sellers. (Nov 17 re-pull: your note that Britt Mills, Amanda Toppe and the Mulberry mats were missing.)",
+   "retired": false,
+   "fym": "amandatoppeart.com/city-queen",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Vegan Leather – Hunter Green",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/colorcards/origami/mats/bam-bird-vegan-leather-hunter-green.jpg",
+   "why": "Your ask (Nov 17 3:16am): Bam Bird's own Hunter Green leather.",
+   "retired": false,
+   "fym": "www.bambirdboutique.com/origami-leather-mat?v=67732658880821",
+   "lowres": false,
+   "holiday": false,
+   "partner": true,
+   "her_pick": true,
+   "new": true
+  },
+  {
+   "group": "yours",
+   "name": "Peony Sociale Premium",
+   "brand": "Mahjong Register",
+   "img": "assets/colorcards/deco/mats/mahjong-register-peony-sociale-premium.jpg",
+   "why": "Your ask (Nov 17 3:24am): try it with Indigo.",
+   "retired": false,
+   "fym": "mahjongregister.com/paisley-jubilee-premium-mahjong-mat-33-copy",
+   "lowres": false,
+   "new": true,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Deco Neoprene",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-neoprene.jpg",
+   "why": "Your ask (Nov 17 3:24am): try it with Indigo.",
+   "retired": false,
+   "fym": "www.bambirdboutique.com/deco-neoprene-mahjong-mat",
+   "lowres": false,
+   "new": true,
+   "her_pick": true,
+   "partner": true
+  },
+  {
+   "group": "yours",
+   "name": "Evergreen",
+   "brand": "That Mahjong Moment",
+   "img": "assets/colorcards/deco/mats/that-mahjong-moment-evergreen.jpg",
+   "why": "Your ask (Nov 17 3:24am): try it with Indigo.",
+   "retired": false,
+   "fym": "alb2:that-mahjong-moment-evergreen",
+   "lowres": true,
+   "new": true,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "The Mariner",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-the-mariner.jpg",
+   "why": "Your ask (Nov 17 3:24am): try it with Indigo.",
+   "retired": false,
+   "fym": "letsbebesties.com/the-mariner-mahjong-mat",
+   "lowres": false,
+   "new": true,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Amethyst",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/mats/oh-my-mahjong-amethyst-retired.jpg",
+   "why": "Your ask (Nov 17 3:24am): try it with Indigo. Retired.",
+   "retired": true,
+   "fym": "alb:emerald:Amethyst",
+   "lowres": false,
+   "holiday": false,
+   "new": true,
+   "her_pick": true
+  },
+  {
+   "group": "holiday",
+   "name": "Merrywood",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-merrywood.jpg",
+   "why": "Your ask (Nov 17 3:24am): try it with Indigo.",
+   "retired": false,
+   "fym": "brittmillsdesign.com/merrywood-neoprene-mahjong-mat-arriving-late-october",
+   "lowres": false,
+   "holiday": true,
+   "new": true,
+   "her_pick": true
   }
  ],
  "_repull_nov08": "Nov 8 ~3pm re-pull (scripts/albumreview/pull.py, contrast side) after Tiffany caught Scarlett + Flora missing from Lagoon. Added: Darjeeling Peacock (Side B) as standout #5, Scarlett first in Berry + teal. Not reviewed yet, so placed by standout order."

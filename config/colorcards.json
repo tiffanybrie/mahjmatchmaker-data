@@ -1073,7 +1073,7 @@
    "_nov08": "Tiffany Nov 8 review: top 3 = Reba, Viola (moved up at her ask), Deco Dragon (Mulberry); TNT recs lead the album itself."
   },
   "deco-mulberry": {
-   "name": "Deco (Mulberry)",
+   "name": "Deco Mulberry",
    "col": "#7a2c55",
    "brand": "Bam Bird Boutique",
    "sub": "Mulberry backs with a gold-foil deco palm",
@@ -1173,7 +1173,7 @@
    "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 8 BamBird_40K_and_Christmas_-83.jpg (variant Mulberry / Lucite Display Box)"
   },
   "deco-indigo": {
-   "name": "Deco (Indigo)",
+   "name": "Deco Indigo",
    "col": "#253a66",
    "brand": "Bam Bird Boutique",
    "sub": "Indigo backs with a gold-foil deco palm",
@@ -1225,7 +1225,7 @@
     ]
    ],
    "racks": [
-    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Indigo",
     "Bam Bird Boutique Mulberry Wood"
    ],
    "rack_imgs": {
@@ -1270,7 +1270,8 @@
    "mats_source": "Claude's own picks (Tiffany Nov 7 7:03pm: 'You take them, just like you did this one'), not her picks yet",
    "racks_source": "Claude's own picks: Bam Bird's own 19in wood racks in Lagoon (her teal bams) + Mulberry (her crak frames), never Indigo on Indigo; Tiffany Oct 27 put Indigo with Bam Bird Lagoon racks",
    "_nov07": "Indigo back = Bam Bird's Indigo showroom photo (#2a3b5e) + FYM table-view wall (#233862, config/tableview-back-colors.json bam-bird-boutique-deco-indigo), checked by eye against the bag pile (listing img 18). Faces = same as Lagoon/Mulberry. Top 3: Peacock Garden (her Oct 27 two-colour pick: Indigo/Peacock Garden), Savannah (her Oct 27 'put Indigo on the green mat'), Deco Dragon (Mulberry) #3 = sister mat (never #1, never the Indigo Dragon). Indigo SOLD OUT on bambirdboutique.com Nov 7 (all 3 variants).",
-   "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 1 BamBird_Deco-1-2.jpg (no variant attached; the navy box of the three stacked boxes; the only Indigo-variant images, 11 and 13, show bags or faces)"
+   "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 1 BamBird_Deco-1-2.jpg (no variant attached; the navy box of the three stacked boxes; the only Indigo-variant images, 11 and 13, show bags or faces)",
+   "racks_note": "Tiffany Nov 17 3:11am: Indigo (navy) as the match-the-tiles rack instead of Lagoon (teal came out of nowhere); Mulberry for the mulberry frames. Bam Bird Indigo shows sold out on their site Nov 17."
   },
   "cabana-club": {
    "name": "Cabana Club",
