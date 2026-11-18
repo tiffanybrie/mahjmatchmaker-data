@@ -1,0 +1,77 @@
+{
+ "_rule": "Tiffany Nov 18 2026 2:58am: every partner brand page is SENT to her (link) and she is PROMPTED to (1) add something personal that makes it hers (Why I love / how she found them / favorites; helps SEO) and (2) review the photos/products Claude picked as 'my favorite'. The page may go live first (V1) so the rest of onboarding isn't blocked, and Claude keeps editing it after. Status stays 'pending' until she approves; front_door.py shows every pending page on every message so she keeps getting asked. Only her explicit approval sets status 'approved' (log in docs/ANSWERS.md).",
+ "pages": {
+  "Brewtifully": {
+   "url": "https://www.mahjmatchmaker.com/brewtifully-discount-code",
+   "status": "pending",
+   "note": "page not built yet (onboarding builder Nov 18 2:52pm)",
+   "asked": [
+    "2026-11-18 Main chat"
+   ],
+   "her_notes": ""
+  },
+  "Mahj Pit": {
+   "url": "https://www.mahjmatchmaker.com/mahj-pit-discount-code",
+   "status": "pending",
+   "note": "live; built by Claude, picks labelled 'my favorite' without her review; no 'Why I love' section",
+   "asked": [
+    "2026-11-18 Main chat"
+   ],
+   "her_notes": ""
+  },
+  "Mah Jongg Maven": {
+   "url": "https://www.mahjmatchmaker.com/mah-jongg-maven-discount-code",
+   "status": "pending",
+   "note": "live; built by Claude, picks labelled 'my favorite' without her review; no 'Why I love' section",
+   "asked": [
+    "2026-11-18 Main chat"
+   ],
+   "her_notes": ""
+  },
+  "Mahjong by SI": {
+   "url": "https://www.mahjmatchmaker.com/mahjong-by-si-discount-code",
+   "status": "pending",
+   "note": "live; built by Claude, picks labelled 'my favorite' without her review; no 'Why I love' section",
+   "asked": [
+    "2026-11-18 Main chat"
+   ],
+   "her_notes": ""
+  },
+  "Noli June": {
+   "url": "https://www.mahjmatchmaker.com/noli-june-discount-code",
+   "status": "pending",
+   "note": "live; built by Claude, picks labelled 'my favorite' without her review; no 'Why I love' section",
+   "asked": [
+    "2026-11-18 Main chat"
+   ],
+   "her_notes": ""
+  },
+  "YOLO Mahjong": {
+   "url": "https://www.mahjmatchmaker.com/yolo-mahjong-discount-code",
+   "status": "pending",
+   "note": "live; built by Claude, picks labelled 'my favorite' without her review; no 'Why I love' section",
+   "asked": [
+    "2026-11-18 Main chat"
+   ],
+   "her_notes": ""
+  },
+  "Let's Be Besties": {
+   "url": "https://www.mahjmatchmaker.com/lets-be-besties-discount-code",
+   "status": "pending",
+   "note": "live; built by Claude, picks labelled 'my favorite' without her review; no 'Why I love' section",
+   "asked": [
+    "2026-11-18 Main chat"
+   ],
+   "her_notes": ""
+  },
+  "Mahjong Register": {
+   "url": "https://www.mahjmatchmaker.com/mahjong-register-discount-code",
+   "status": "pending",
+   "note": "live; built by Claude, picks labelled 'my favorite' without her review; no 'Why I love' section",
+   "asked": [
+    "2026-11-18 Main chat"
+   ],
+   "her_notes": ""
+  }
+ }
+}
