@@ -44,20 +44,25 @@ def flow(pg, L):
     if fest:
         tap(pg, '#tvpanel [data-tvopen="mat"]'); pg.locator('#tvq').fill('festive plaid'); time.sleep(.5); tap(pg, '#tvgrid .tvit', 'Festive Plaid'); chk(pg, L + ' swap mat', 's-mats')
         if pg.evaluate("(document.querySelector('#top-m')||{dataset:{}}).dataset.id") != fest: F.append(f"[145] {L}: the swapped mat is not the current card")
-        tap(pg, '#tvpanel [data-tvclose]'); tap(pg, '#s-mats .sbx [data-yes="m"]'); time.sleep(.8)
-        tap(pg, f'#s-mats .tray [data-peek="{fest}"]'); time.sleep(.6); tap(pg, '#s-mats .acts.pk [data-mock]'); chk(pg, L + ' Racks after a swapped mat', 's-racks')
+        U = pg.evaluate("!!window.__fymUx123")  # v123 layout (Tiffany Nov 18): X/heart under the photo, shortlist cards, racks in the same frame
+        tap(pg, '#tvpanel [data-tvclose]'); tap(pg, '#s-mats [data-yes="m"]' if U else '#s-mats .sbx [data-yes="m"]'); time.sleep(.8)
+        tap(pg, f'#sgw [data-spk="{fest}"]' if U else f'#s-mats .tray [data-peek="{fest}"]'); time.sleep(.6); tap(pg, '#s-mats .acts.pk [data-mock]'); chk(pg, L + ' Racks after a swapped mat', 's-mats' if U else 's-racks')
+        if U: tap(pg, '#s-mats [data-rchoose]'); time.sleep(.6)
+        RS = '#rch' if U else '#s-racks'
         if pg.evaluate("S.fav") != fest: F.append(f"[145] {L}: hearting the swapped mat did not carry it to Racks")
         # [148] Tiffany Nov 3 2:27pm: rack deck right after the chosen mat, no filter row between (live DOM order)
-        o148 = pg.evaluate("""()=>{const c=document.querySelector('#s-racks .cmp');if(!c)return 'no .cmp';const k=[...c.children].map(e=>e.className.split(' ')[0]);
+        o148 = pg.evaluate("""()=>{if(window.__fymUx123){const s=document.querySelector('#s-mats'),c=s&&s.querySelector('.cmp'),r=s&&s.querySelector('#rch');if(!c||!r)return 'no big view / rack choices';if(!(c.compareDocumentPosition(r)&Node.DOCUMENT_POSITION_FOLLOWING))return 'rack choices above the big view';const g=r.querySelector('.rgrid'),f=r.querySelector('.rfil');if(g&&f&&!(g.compareDocumentPosition(f)&Node.DOCUMENT_POSITION_FOLLOWING))return 'filter row above the rack choices';return ''}
+          const c=document.querySelector('#s-racks .cmp');if(!c)return 'no .cmp';const k=[...c.children].map(e=>e.className.split(' ')[0]);
           const i=k.indexOf('deck');if(i<0)return 'no rack deck';if(k.slice(0,i).some(x=>x==='rfil'||x==='s2ctl'))return 'filter row before the rack deck: '+k.join(',');
           const f=document.querySelector('#s-racks .rfil');if(f&&!(c.compareDocumentPosition(f)&Node.DOCUMENT_POSITION_FOLLOWING))return 'filter row is not below the rack deck';return ''}""")
         if o148: F.append(f"[148] {L}: rack step: {o148}")
+        SEL = lambda x: x.replace('#s-racks', RS)
         # [146] rack filter = SINGLES (Tiffany Nov 1 11:33pm): one pick at a time across finish + colour, rows never shrink
-        if pg.evaluate("document.body.innerHTML.includes('v114 singles')"):
-            st = lambda: pg.evaluate("()=>({fin:S.f.r.fin||'',fam:S.f.r.fam.slice(),nf:document.querySelectorAll('#s-racks [data-fin]').length,nd:document.querySelectorAll('#s-racks [data-fam][data-k=\"r\"]').length})")
-            c0 = st(); fins = pg.evaluate("[...document.querySelectorAll('#s-racks [data-fin]')].map(b=>b.dataset.fin)"); dots = pg.evaluate("[...document.querySelectorAll('#s-racks [data-fam][data-k=\"r\"]')].map(b=>b.dataset.fam).filter(Boolean)")
+        if pg.evaluate(SEL("document.body.innerHTML.includes('v114 singles')")):
+            st = lambda: pg.evaluate(SEL("()=>({fin:S.f.r.fin||'',fam:S.f.r.fam.slice(),nf:document.querySelectorAll('#s-racks [data-fin]').length,nd:document.querySelectorAll('#s-racks [data-fam][data-k=\"r\"]').length})"))
+            c0 = st(); fins = pg.evaluate(SEL("[...document.querySelectorAll('#s-racks [data-fin]')].map(b=>b.dataset.fin)")); dots = pg.evaluate(SEL("[...document.querySelectorAll('#s-racks [data-fam][data-k=\"r\"]')].map(b=>b.dataset.fam).filter(Boolean)"))
             if fins and len(dots) >= 2:
-                cl = lambda sel: pg.locator(sel).first.evaluate('e=>e.click()')
+                cl = lambda sel: pg.locator(SEL(sel)).first.evaluate('e=>e.click()')
                 cl(f'#s-racks [data-fin="{fins[0]}"]'); time.sleep(.3); a1 = st()
                 cl(f'#s-racks [data-fam="{dots[0]}"][data-k="r"]'); time.sleep(.3); a2 = st()
                 cl(f'#s-racks [data-fam="{dots[1]}"][data-k="r"]'); time.sleep(.3); a3 = st()
@@ -75,9 +80,10 @@ def flow(pg, L):
     tap(pg, '[data-door="mat"]'); time.sleep(.6); synth(pg, 'data-dmat', lark); time.sleep(1.2)
     tap(pg, '#s-tiles [data-mode="table"]'); chk(pg, L + ' mat door: Table', 's-tiles')
     tap(pg, '#s-tiles [data-tvadj]'); tap(pg, '#tvpanel [data-tvopen="tiles"]'); pg.locator('#tvq').fill('dear santa'); time.sleep(.5); tap(pg, '#tvgrid .tvit', 'Dear Santa'); chk(pg, L + ' swap tiles', 's-tiles')
-    tap(pg, '#tvpanel [data-tvclose]'); tap(pg, '#s-tiles .sbx [data-tyes]'); time.sleep(1)
+    U = pg.evaluate("!!window.__fymUx123")
+    tap(pg, '#tvpanel [data-tvclose]'); tap(pg, '#s-tiles [data-tyes]' if U else '#s-tiles .sbx [data-tyes]'); time.sleep(1)
     if not pg.locator(f'#s-tiles [data-tpk="{ds}"]').count(): F.append(f"[145] {L}: a swapped-in tile set (Dear Santa) did not become a suitor"); return
-    tap(pg, f'#s-tiles [data-tpk="{ds}"]'); time.sleep(.6); tap(pg, '#s-tiles [data-tadd]'); chk(pg, L + ' Racks after swapped tiles', 's-racks')
+    tap(pg, f'#s-tiles [data-tpk="{ds}"]'); time.sleep(.6); tap(pg, '#s-tiles [data-tadd]'); chk(pg, L + ' Racks after swapped tiles', 's-mats' if U else 's-racks')
     if pg.evaluate("S.set") != ds: F.append(f"[145] {L}: Add racks did not take the swapped tile set")
 try:
     with sync_playwright() as p:

@@ -29,6 +29,8 @@ ACT = {'tiles': '#s-tiles .tgrid [data-tile]', 'mats': '[data-yes="m"]', 'table'
        'door': '[data-door="tiles"]', 'find': '[data-tour-next]', 'grid': '#tgrid [data-tile]', 'view': '[data-tour-next]', 'tv1': '[data-tour-next]',
        'tv2': '[data-tour-next]', 'tv3': '[data-tour-next]', 'rmenu': '[data-tour-next]', 'list': '[data-tour-next]', 'mine': '[data-tour-next]',
        'mfind': '[data-tour-next]', 'mgrid': '#mdgrid button', 'tswipe': '[data-tyes]', 'tpk': '#s-tiles .tray [data-tpk]', 'tadd': '#s-tiles [data-tadd]'}
+if '__fymUx123' in _H:  # v123 layout (Tiffany Nov 18): shortlist cards, racks chosen in the same frame (no rack deck / tray)
+    ACT.update({'pick': '#sgw [data-spk]', 'racks': '[data-rchoose]', 'rpick': '#rch [data-rp]'})
 # extra v114 walks: (name, door, view) -> the steps they must show (tv3 only when the top mat is grayed)
 WALKS = [('tiles-close', 'tiles', None)] + ([('tiles-table', 'tiles', 'table'), ('mat-aerial', 'mat', 'aerial'), ('mat-table', 'mat', 'table')] if V114 else [])
 def want(door, view):
@@ -132,12 +134,13 @@ with sync_playwright() as p:
         if not pg.locator('#s-tiles .tgrid [data-tile]').count(): pg.locator('#s-tiles .blg').first.click(); time.sleep(.7)
         pg.locator('#s-tiles .tgrid [data-tile]').first.click(); time.sleep(.9)
         if pg.locator('.frow [data-her="m"]').count(): pg.locator('.frow [data-her="m"]').first.click(); chk('picks toggle on step 2')
-        pg.locator('[data-yes="m"]').first.click(); time.sleep(.8); pg.locator('.tray .th button').first.click(); time.sleep(.8)
+        U123 = '__fymUx123' in _H; PK = '#sgw [data-spk]' if U123 else '.tray .th button'
+        pg.locator('[data-yes="m"]').first.click(); time.sleep(.8); pg.locator(PK).first.click(); time.sleep(.8)
         pg.locator('[data-unpeek]').click(); st = chk('Back to the deck on step 4')
         if 'Tap Add racks once' in st['ctext']: F(tag, 'step 4 still says "Tap Add racks once" with no suitor picked')
-        pg.locator('.tray .th button').first.click(); time.sleep(.7); pg.locator('.tray .go[data-mock]').click(); time.sleep(1)
+        pg.locator(PK).first.click(); time.sleep(.7); pg.locator('.acts.pk [data-mock]' if U123 else '.tray .go[data-mock]').first.click(); time.sleep(1)
         if pg.locator('.frow [data-her="r"]').count(): pg.locator('.frow [data-her="r"]').first.click(); chk('picks toggle on step 5')
-        pg.locator('[data-back-mats]').click(); time.sleep(1)
+        pg.locator('[data-uxback]' if U123 else '[data-back-mats]').first.click(); time.sleep(1)
         if pg.evaluate("document.getElementById('s-mats').getBoundingClientRect().bottom<0||document.getElementById('s-mats').getBoundingClientRect().top>innerHeight"): F(tag, 'Change mat during the tour did not scroll to the mats')
         if pg.evaluate("TOUR.log.length!==new Set(TOUR.log).size"): F(tag, f'tour step repeated: {pg.evaluate("TOUR.log")}')
         print(tag, 'log', pg.evaluate('TOUR.log')); br.close()

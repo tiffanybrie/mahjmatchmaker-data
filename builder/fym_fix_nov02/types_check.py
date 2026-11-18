@@ -30,8 +30,9 @@ try:
         if q['her']: F.append("[152] picking a tile set turns Tiffany's picks ON (default must be off)")
         if q['hm'] and q['first'] not in q['hm']: F.append("[152] with picks off, Tiffany's own matches no longer lead the mat deck")
         if q['sel'] != 1 or q['chips']: F.append(f"[152] price on the mat deck is not one dropdown (select {q['sel']}, chips {q['chips']})")
-        m = q['first']; pg.evaluate("m=>{S.liked=[m];S.fav=m;S._rdef=null;renderRacks()}", m); time.sleep(.8)
-        q = pg.evaluate("()=>({her:S.f.r.her,n:rackDeck().length,h:herRacks().length,type:(document.querySelector('#s-racks .finrow .fl')||{}).textContent})")
+        m = q['first']; pg.evaluate("m=>{S.liked=[m];S.fav=m;S._rdef=null;if(window.__fymUx123){S.rstage=true;S.rch=true;}renderRacks()}", m); time.sleep(.8)
+        # v123 layout (Tiffany Nov 18): the rack filters live in the rack choices (#rch) under the big view, not in #s-racks
+        q = pg.evaluate("()=>({her:S.f.r.her,n:rackDeck().length,h:herRacks().length,type:(document.querySelector(window.__fymUx123?'#rch .finrow .fl':'#s-racks .finrow .fl')||{}).textContent})")
         if q['her']: F.append("[152] the rack step starts with Tiffany's picks ON (default must be off)")
         if q['h'] and q['n'] <= q['h']: F.append("[152] the rack deck is limited to Tiffany's picks by default")
         if q['type'] != 'Type': F.append(f"[151] rack filter row label is {q['type']!r} (want 'Type')")

@@ -18,10 +18,17 @@ def flow(pg, L):
     pg.goto(f'http://127.0.0.1:{port}/index.html#notour'); pg.wait_for_function('window.__imgsReady===true', timeout=90000); time.sleep(1.5); chk(pg, L + ' open')
     if not pg.locator('#s-tiles .tgrid [data-tile]').count(): pg.locator('#s-tiles .blg').first.click(); time.sleep(.8)
     chk(pg, L + ' tile grid'); pg.locator('#s-tiles .tgrid [data-tile]').first.click(); time.sleep(1); chk(pg, L + ' mats step')
-    pg.locator('[data-yes="m"]').first.click(); time.sleep(.8); pg.locator('.tray .th button').first.click(); time.sleep(.8); chk(pg, L + ' mat picked')
-    pg.locator('.tray .go[data-mock]').first.click(); time.sleep(1); chk(pg, L + ' racks step')
-    pg.locator('[data-yes="r"]').first.click(); time.sleep(.8); pg.locator('#rtray .th button').first.click(); time.sleep(.6); chk(pg, L + ' rack picked')
-    pg.locator('#rtray [data-make]').first.click(); time.sleep(2); chk(pg, L + ' match card')
+    pg.locator('[data-yes="m"]').first.click(); time.sleep(.8)
+    if pg.locator('#sgw [data-spk]').count():  # v123 layout (Nov 18): shortlist cards; racks chosen in the same frame
+        pg.locator('#sgw [data-spk]').first.click(); time.sleep(.8); chk(pg, L + ' mat picked')
+        pg.locator('.acts.pk [data-mock]').first.click(); time.sleep(1); chk(pg, L + ' racks step')
+        pg.locator('[data-rchoose]').first.click(); time.sleep(.8); pg.locator('#rch [data-rp]').first.click(); time.sleep(.6); chk(pg, L + ' rack picked')
+        pg.locator('#s-mats [data-make]').first.click(); time.sleep(2); chk(pg, L + ' match card')
+    else:
+        pg.locator('.tray .th button').first.click(); time.sleep(.8); chk(pg, L + ' mat picked')
+        pg.locator('.tray .go[data-mock]').first.click(); time.sleep(1); chk(pg, L + ' racks step')
+        pg.locator('[data-yes="r"]').first.click(); time.sleep(.8); pg.locator('#rtray .th button').first.click(); time.sleep(.6); chk(pg, L + ' rack picked')
+        pg.locator('#rtray [data-make]').first.click(); time.sleep(2); chk(pg, L + ' match card')
     pg.evaluate("S.door='mat';S.dmat=null;renderAll()"); time.sleep(1); chk(pg, L + ' mat door')
 try:
     with sync_playwright() as p:

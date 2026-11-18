@@ -142,36 +142,39 @@ run('Tiles door', () => {
   if (S.hist.length || S.liked.length) fail('Osler: Back x5 did not undo all 5 swipes (hearts / X)');
   if (deckIds().slice(0, 6).join() !== q0.join()) fail('Osler: after Back x5 the cards are not back in order');
   pat.forEach(y => X.decide('m', y));
-  const r = H('s-racks');
+  // v123 layout (Tiffany Nov 18): the shortlist ("Pick your mat") and the racks live in the SAME frame (#s-mats); #s-racks stays empty.
+  const r = H('s-mats');
   if (S.fav) fail('Osler: a mat was chosen for the mock-up without her tapping one');
-  if (!/Which suitor is the one/.test(r)) fail('Osler: with several suitors the racks step does not ask her to pick one');
-  const nb = buttons(H('s-mats')).filter(b => /Add racks|Next/.test(b.text));
-  if (nb.some(b => 'data-mock' in b.a)) fail('Osler: Add racks offered before she picked a mat suitor (Oct 23: pick first, then Add racks)');
+  if (!/Pick your mat/.test(r) || !/data-spk=/.test(r)) fail('Osler: with several suitors the shortlist does not ask her to pick one ("Pick your mat")');
+  const nb = buttons(H('s-mats')).filter(b => /Add racks|Choose your racks|Next/.test(b.text));
+  if (nb.some(b => 'data-mock' in b.a)) fail('Osler: Choose your racks offered before she picked a mat from her shortlist (Oct 23: pick first, then racks)');
   const mine = S.liked[0]; click({ 'data-mock': mine });
   if (S.fav !== mine) fail('Osler: picking her suitor did not set the mock-up mat');
   if (!S.liked.includes(S.fav)) fail('Osler: mock-up mat is not one of HER hearts');
-  if (!/data-make disabled/.test(H('s-racks'))) fail('Osler: Make it official enabled before any racks');
+  if (!S.rstage || !/id="top-m"/.test(H('s-mats'))) fail('Osler: picking the mat left the big view (racks must stay in the same frame)');
+  if (H('s-racks').trim()) fail('Osler: a separate racks screen was drawn (v123: racks stay in the mat frame)');
+  { const mk = buttons(H('s-mats')).find(b => 'data-make' in b.a);
+    if (!mk || !('aria-disabled' in mk.a) || !/Pick your racks to finish/.test(mk.text)) fail('Osler: before any racks the finish button does not say what is missing ("Pick your racks to finish")'); }
   X.decide('r', true); X.decide('r', true); X.decide('r', true);
-  // v79 (Tiffany Oct 23 8:35pm): hearting never picks a rack; she taps suitors to see them on her mat (max 2)
-  if (S.rpick.length !== 0) fail(`Osler: hearting racks preselected ${S.rpick.length} (nothing is picked until she taps)`);
-  if (!/Pick 1 or 2 racks/.test(H('s-racks'))) fail('Osler: no "Pick 1 or 2 racks" note before a pick');
-  { const s0 = buttons(H('s-racks')).filter(b => 'data-rp' in b.a); click(s0[0].a);
-    // v91 (Tiffany Oct 25 20:08): picking a rack never locks the deck; the deck keeps swiping
-    if (!/id="top-r"/.test(H('s-racks'))) fail('Osler: picking a rack locked the rack deck (it must keep swiping)');
-    click(buttons(H('s-racks')).filter(b => 'data-rp' in b.a)[0].a);
-    if (S.rpick.length !== 2 || !/id="top-r"/.test(H('s-racks'))) fail('Osler: second pick did not land or the deck locked'); }
-  const rt = H('s-racks');
-  if (S.rpick.length !== 2) fail(`Osler: racks tray holds ${S.rpick.length} (max 2)`);
-  if (!/2 of 2/.test(rt) || (rt.match(/data-rx=/g) || []).length !== 2) fail('Osler: full racks tray lacks "2 of 2" / two x buttons');
+  // v79 (Tiffany Oct 23 8:35pm): nothing is picked until she taps a rack
+  if (S.rpick.length !== 0) fail(`Osler: racks preselected ${S.rpick.length} (nothing is picked until she taps)`);
+  if (!/Pick 1 or 2 racks/.test(H('s-mats'))) fail('Osler: no "Pick 1 or 2 racks" note before a pick');
+  if (!buttons(H('s-mats')).some(b => 'data-rchoose' in b.a && /Choose your racks/.test(b.text))) fail('Osler: no "Choose your racks" button under the big view');
+  click({ 'data-rchoose': '' });
+  if (!S.rch || !/id="rch"/.test(H('s-mats'))) fail('Osler: "Choose your racks" did not open the rack choices in the same frame');
+  { const s0 = buttons(H('s-mats')).filter(b => 'data-rp' in b.a); click(s0[0].a);
+    if (!/id="top-m"/.test(H('s-mats'))) fail('Osler: picking a rack left the big view');
+    click(buttons(H('s-mats')).filter(b => 'data-rp' in b.a)[0].a);
+    if (S.rpick.length !== 2) fail('Osler: second pick did not land'); }
+  const rt = H('s-mats');
+  if (S.rpick.length !== 2) fail(`Osler: racks hold ${S.rpick.length} (max 2)`);
+  if (!/2 of 2/.test(rt) || (rt.match(/data-rx=/g) || []).length !== 2) fail('Osler: 2 picked racks lack "2 of 2" / two ✓ (data-rx) buttons');
+  if (!buttons(rt).some(b => 'data-make' in b.a && !('aria-disabled' in b.a) && /Make it official/.test(b.text))) fail('Osler: finish button not ready ("Make it official") with 2 racks');
   const sug = buttons(rt).find(b => 'data-rp' in b.a);
-  if (!sug) fail('Osler: third hearted rack not in Rack suitors');
+  if (!sug) fail('Osler: no other rack to swap in');
   else { const older = S.rpick[0], newer = S.rpick[1]; click(sug.a);   // v91: a 3rd pick swaps out the OLDER pick
     if (!S.rpick.includes(sug.a['data-rp']) || S.rpick.length !== 2 || S.rpick.includes(older) || !S.rpick.includes(newer)) fail('Osler: a third pick did not swap out the older rack');
-    click({ 'data-rx': S.rpick[0] }); if (S.rpick.length !== 1) fail('Osler: tapping a \u2713 did not unpick it'); }
-  // Oct 22: Back on racks (Tiffany: "a missed rack is gone for good")
-  const rh0 = S.rhist.length, rb = H('s-racks');
-  if (!/data-back="r"/.test(rb) || /data-back="r" disabled/.test(rb)) fail('Osler: no enabled Back button above the rack deck after swiping');
-  else { click({ 'data-back': 'r' }); if (S.rhist.length !== rh0 - 1) fail('Osler: rack Back did not bring the last rack back'); }
+    click({ 'data-rx': S.rpick[0] }); if (S.rpick.length !== 1) fail('Osler: tapping a ✓ did not unpick it'); }
   if (X.codeLine) { const c = X.codeLine(); if (c && !/ to save$/.test(c)) fail(`card code line "${c}" does not end "to save"`); }
   // start over from the top logo (confirm sheet because there is a shortlist)
   const n0 = appended.length; click({ id: 'logo' });
