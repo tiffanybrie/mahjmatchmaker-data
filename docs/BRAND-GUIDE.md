@@ -543,3 +543,4 @@ Each is asked once. Until she answers, follow the default given here.
 
 - 2026-11-17 (Tiffany 3:02am) American spelling everywhere: favorite (never favourite), color (never colour). 'Favourite' reads as AI.
 - 2026-11-17 (Tiffany 3:16am) Album picks: tonal matches (navy on navy) are allowed; diversify beyond tonal but never leave out a tonal match, especially the tile brand's own pair mat.
+- 2026-11-18 02:14 (Tiffany): **Ribbon-tagline logo only where the tagline is readable.** If the "Matching mahjong tiles, mats & racks" ribbon can't be read at phone size, that logo size can't be used: use `assets/brand/mahjmatchmaker-wordmark-notag.png` instead. Supersedes the Oct 21 14:12 "always the ribbon logo on graphics" line for small placements. Branding refresh requested (headline font j, marketing card style, icons): pending her picks.

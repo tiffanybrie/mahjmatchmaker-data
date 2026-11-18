@@ -52,6 +52,8 @@ STORES = {
     # Nov 13 (Tiffany 11:22am: Rebecca Illustrated's Apres-Mahjong mat, new Nov 9, was never mentioned): ShopMy brands that
     # make mahjong goods earn us commission too, so their stores are watched like partners (link-routes route shopmy-site)
     'rebeccaillustrated.com': 'Rebecca Illustrated', 'talamahj.com': 'Tala Mahj', 'themahjonghouse.com': 'The Mahjong House',
+    # Nov 18 2:11am (Tiffany): Brewtifully approved (UpPromote, MAHJMATCH 10%)
+    'shop.brewtifully.com': 'Brewtifully',
 }
 # brand-specific handling (CLAUDE.md + ANSWERS)
 NO_SOCIAL = {'Yellow Mountain Imports'}                 # never featured on social

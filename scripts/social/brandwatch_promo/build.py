@@ -12,7 +12,7 @@ FONTS=f"""@font-face{{font-family:Capra;src:url({uri(F+'/Caprasimo.ttf')})}}
 @font-face{{font-family:PF;font-style:italic;font-weight:400;src:url({uri(F+'/playfair-display-latin-400-italic.woff2')})}}
 @font-face{{font-family:Bitter;font-weight:700;src:url({uri(F+'/bitter-latin-700-normal.woff2')})}}
 @font-face{{font-family:Bitter;font-weight:600;src:url({uri(F+'/bitter-latin-600-normal.woff2')})}}"""
-LOGO=uri(os.path.join(REPO,'assets/brand/mahjmatchmaker-wordmark.png'))
+LOGO=uri(os.path.join(REPO,'assets/brand/mahjmatchmaker-wordmark-notag.png'))
 NAVY,DEEP,ROSE,PINK,CREAM='#054689','#062a55','#c8325f','#f56c8c','#f6e9df'
 # (file, brand, tag, object-position)
 ITEMS=[('img/ar-bloom.jpg','Anders Ruff','Back in stock','50% 50%'),
@@ -66,18 +66,15 @@ ICON='''<circle cx="74" cy="150" r="48"/><circle cx="166" cy="150" r="48"/>
 <path d="M30 140L62 70Q70 56 86 60L104 66"/><path d="M210 140L178 70Q170 56 154 60L136 66"/>
 <path d="M104 66Q120 58 136 66"/><line x1="113" y1="140" x2="127" y2="140"/>
 <path class="a" d="M120 46C110 39 106 33 106 28C106 23 110 19 114 19C117 19 119 21 120 23C121 21 123 19 126 19C130 19 134 23 134 28C134 33 130 39 120 46Z" transform="translate(-48 28) scale(1.4) translate(0 0)"/>'''
-ICON='''<circle cx="72" cy="148" r="46"/><circle cx="168" cy="148" r="46"/>
-<path d="M30 138L60 74Q68 60 84 63L100 68"/><path d="M210 138L180 74Q172 60 156 63L140 68"/>
-<path d="M100 68Q120 58 140 68"/><line x1="118" y1="146" x2="122" y2="146"/>
-<path class="a" d="M72 172C58 162 53 154 53 147C53 140 58 135 64 135C68 135 70 137 72 140C74 137 76 135 80 135C86 135 91 140 91 147C91 154 86 162 72 172Z"/>
-<path class="a" d="M168 172C154 162 149 154 149 147C149 140 154 135 160 135C164 135 166 137 168 140C170 137 172 135 176 135C182 135 187 140 187 147C187 154 182 162 168 172Z"/>
-<path class="a" d="M120 22L125 35L138 40L125 45L120 58L115 45L102 40L115 35Z"/>'''
+ICON='''<circle cx="104" cy="104" r="64"/><line x1="152" y1="152" x2="206" y2="206" style="stroke-width:20"/>
+<path class="a" d="M104 136C80 120 72 108 72 96C72 84 80 76 91 76C97 76 101 79 104 84C107 79 111 76 117 76C128 76 136 84 136 96C136 108 128 120 104 136Z"/>
+<path class="a" d="M196 22L201 35L214 40L201 45L196 58L191 45L178 40L191 35Z"/>'''
 def cover(guide=False):
     g='<div style="position:absolute;left:50%;top:50%;width:1080px;height:1080px;margin:-540px;border-radius:50%;border:4px dashed red"></div>' if guide else ''
     return f"""<style>html,body{{margin:0;width:1080px;height:1920px;background:{BG};overflow:hidden}}
 svg{{position:absolute;left:50%;top:50%;width:420px;height:420px;margin:-210px}}
 svg *{{fill:none;stroke:{INK};stroke-width:11;stroke-linecap:round;stroke-linejoin:round}} svg .a{{fill:{ACC};stroke:none}}</style>
-<svg viewBox="0 0 240 240"><g transform="translate(120 128) scale(1.12) translate(-120 -108)">{ICON}</g></svg>{g}"""
+<svg viewBox="0 0 240 240"><g transform="translate(120 120) scale(1.05) translate(-118 -116)">{ICON}</g></svg>{g}"""
 def row(files):
     circ=''.join(f'<div class="c"><div class="ring"><img src="{uri(p)}"></div><div class="l">{l}</div></div>' for p,l in files)
     return f"""<style>body{{margin:0;font-family:-apple-system,Helvetica,Arial;background:#fff}}

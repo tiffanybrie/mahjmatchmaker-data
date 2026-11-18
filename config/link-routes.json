@@ -132,6 +132,17 @@
    "notes": "non-partner (Oct 31 picks)",
    "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
   },
+  "Brewtifully": {
+   "route": "code-site",
+   "store_hosts": [
+    "shop.brewtifully.com",
+    "tracy-2833.myshopify.com"
+   ],
+   "commission_pct": 10,
+   "notes": "UpPromote (approved Nov 18). Affiliate link https://tracy-2833.myshopify.com/Mahjmatchmaker",
+   "source": "Tiffany Nov 18 2026 2:11am: approved; code MAHJMATCH 10% off; 10% commission per order (UpPromote Program details screenshot)",
+   "rate_compare": "code"
+  },
   "Britt Mills": {
    "route": "code-site",
    "store_hosts": [
