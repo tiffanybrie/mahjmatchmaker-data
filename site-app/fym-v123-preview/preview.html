@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow"><title>Find Your Mat-ch 1.23 layout preview</title>
+<style>html,body{margin:0;height:100%;background:#faf3ea;font-family:Georgia,serif}#bar{height:34px;display:flex;align-items:center;justify-content:center;background:#054689;color:#fff;font:600 13px/1 Georgia,serif;letter-spacing:.04em}
+#f{display:block;border:0;width:100%;height:calc(100% - 34px)}#ld{position:absolute;top:50%;left:0;right:0;text-align:center;color:#054689}</style></head>
+<body><div id="bar">PRIVATE PREVIEW &middot; Version 1.23 layout preview &middot; not live</div><div id="ld">Loading Find Your Mat-ch 1.23 layout preview&hellip;</div><iframe id="f" title="Find Your Mat-ch 1.23 layout preview" allow="web-share; clipboard-write; fullscreen"></iframe>
+<script>
+var IDX='https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@f035b3db457d8e51d78fea41cf19ac7898bf151a/site-app/fym-v123-preview/index.html';
+var BASE='https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ad0675e42242c3abad40cac9f539a265220e26eb/site-app/fym-v72/';
+var fr=document.getElementById('f'),ld=document.getElementById('ld');
+fetch(IDX).then(function(r){if(!r.ok)throw r.status;return r.text()}).then(function(t){
+ t=t.replace(/<head>/i,'<head><base href="'+BASE+'">');fr.addEventListener('load',function(){ld.style.display='none'});fr.srcdoc=t;
+}).catch(function(){ld.textContent='The preview did not load. Please refresh.'});
+</script></body></html>
