@@ -44,7 +44,7 @@ def bg(recipe, out):
         m = Image.linear_gradient('L').resize((W, 2 * fz)); mask = Image.new('L', (W, HH), 0); mask.paste(255, (0, seam + fz, W, HH)); mask.paste(m, (0, seam - fz))
         im = Image.composite(b, a, mask)
     im.save(out, quality=92)
-FONT = '<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Bagel+Fat+One&family=Montserrat:wght@700&display=block" rel="stylesheet">'
+FONT = '<link href="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@17d40ae30cb59484162d4134b6fb9edd082b92a0/assets/fonts/css/mm-09320292.css" rel="stylesheet">'
 def page(s):
     i, t, cw, lg, lh, rgb, foc, sz, alpha = s[:9]
     fs = 104 if '<br>' in t else 118

@@ -7,7 +7,7 @@ H = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'holiday')
 bg, logo, lh, title, rgb, out = sys.argv[1:7]
 pos = sys.argv[7] if len(sys.argv) > 7 else '50% 50%'
 fs = 104 if '<br>' in title else 118
-html = f'''<html><head><link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@700&display=block" rel="stylesheet"><style>
+html = f'''<html><head><link href="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@17d40ae30cb59484162d4134b6fb9edd082b92a0/assets/fonts/css/mm-ebcda258.css" rel="stylesheet"><style>
 body{{margin:0;width:1080px;height:1350px;overflow:hidden;background:#000;position:relative}}
 .bg{{position:absolute;inset:0;background:url("{os.path.abspath(bg)}") {pos}/cover no-repeat}}
 .p{{position:absolute;left:87px;top:281px;width:906px;height:788px;background:rgba({rgb},.88)}}

@@ -4,7 +4,7 @@ import sys, os, subprocess, tempfile
 C = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); H = C + '/holiday'
 bg, out = sys.argv[1:3]; rgb = sys.argv[3] if len(sys.argv) > 3 else '140,67,41'; al = sys.argv[4] if len(sys.argv) > 4 else '.88'
 title = os.environ.get('TITLE', 'Origami<br>Timber Tiles'); lh = os.environ.get('LOGO_H', '160')  # Tiffany Nov 17 1:06am: SET name first, then colourway; Bam Bird logo bigger (delicate)
-html = f'''<html><head><link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=block" rel="stylesheet"><style>
+html = f'''<html><head><link href="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@17d40ae30cb59484162d4134b6fb9edd082b92a0/assets/fonts/css/mm-39787744.css" rel="stylesheet"><style>
 body{{margin:0;width:1080px;height:1350px;overflow:hidden;position:relative}}
 .bg{{position:absolute;inset:0;background:url("{os.path.abspath(bg)}") center/cover}}
 .p{{position:absolute;left:87px;top:281px;width:906px;height:788px;background:rgba({rgb},{al})}}

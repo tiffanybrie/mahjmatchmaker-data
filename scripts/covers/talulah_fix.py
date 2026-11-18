@@ -11,7 +11,7 @@ fill = cv2.GaussianBlur(fill, (0, 0), 6)
 w = cv2.GaussianBlur(m.astype(np.float32), (0, 0), 12)[..., None]
 out = (a * (1 - w) + fill * w).clip(0, 255).astype(np.uint8)
 d = tempfile.mkdtemp(); Image.fromarray(out).save(d + '/bg.png')
-html = f'''<html><head><link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=block" rel="stylesheet"><style>
+html = f'''<html><head><link href="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@17d40ae30cb59484162d4134b6fb9edd082b92a0/assets/fonts/css/mm-39787744.css" rel="stylesheet"><style>
 body{{margin:0;width:1080px;height:1350px;overflow:hidden;position:relative;background:url("{d}/bg.png")}}
 .c{{position:absolute;left:87px;top:300px;height:600px;width:906px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#fbf6ee;text-align:center}}
 h1{{font:400 132px/1.0 Caprasimo;margin:14px 0 0;text-shadow:none}}</style></head>

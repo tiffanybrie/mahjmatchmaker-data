@@ -54,7 +54,7 @@ codes = json.dumps([[c, F.LABEL[c]] for c in F.CODES])
 tones = json.dumps([[t, F.TONE_LABEL[t]] for t in F.TONES])
 html = r"""<title>Mat Color Tagger</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Bitter:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@17d40ae30cb59484162d4134b6fb9edd082b92a0/assets/fonts/css/mm-6f91861f.css">
 <style>
 /* layout: sticky toolbar, then a single column of mat cards (2-up on wide screens) */
 :root{--bg:#fffaf7;--card:#ffffff;--ink:#14305f;--soft:#5d6b86;--pink:#e8457f;--pinksoft:#fde6ef;--line:#ecdfe6;--ok:#2f8a5b;--disp:"Caprasimo",Georgia,serif;--body:"Bitter",Georgia,serif}

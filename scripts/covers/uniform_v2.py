@@ -84,7 +84,7 @@ def rebuild_panel(a, k):
         im = Image.fromarray(out).convert('RGBA'); im.alpha_composite(Image.open(C + 'holiday/frame3.png').convert('RGBA').resize((906, 788)), (87, 281)); out = np.asarray(im.convert('RGB'))
     return out
 NP = subprocess.run(['npm', 'root', '-g'], capture_output=True, text=True).stdout.strip()
-FONT = '<link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=block" rel="stylesheet">'
+FONT = '<link href="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@17d40ae30cb59484162d4134b6fb9edd082b92a0/assets/fonts/css/mm-39787744.css" rel="stylesheet">'
 WM = C + 'holiday/ourlogo.png'
 for k in sys.argv[2:]:
     a = np.asarray(Image.open(src(k)).convert('RGB').resize((1080, 1350), Image.LANCZOS)).copy(); tmp = tempfile.mkdtemp()

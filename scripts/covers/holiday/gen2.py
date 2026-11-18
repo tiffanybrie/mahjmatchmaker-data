@@ -37,7 +37,7 @@ SETS=[
  ('december-1994','December<br>1994','','sunday',84,'120,26,38','45% 4%','auto 128%'),
  ('cmc-apres-ski','Après Ski<br>Club','','cmc',130,'24,120,140','50% 50%','cover'),
 ]
-FONT='<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@700&display=block" rel="stylesheet">'
+FONT='<link href="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@17d40ae30cb59484162d4134b6fb9edd082b92a0/assets/fonts/css/mm-ebcda258.css" rel="stylesheet">'
 def page(s,var):
     i,t,cw,lg,lh,rgb,foc,sz=s
     fs=104 if '<br>' in t else 118

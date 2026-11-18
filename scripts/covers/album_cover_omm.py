@@ -16,7 +16,7 @@ pos = args[6] if len(args) > 6 else '50% 50%'
 BAR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tagbar.png')
 fs = (96 if max(len(x) for x in title.split('<br>'))>10 else 112) if '<br>' in title else 124
 logo_html = f'<div class="tag"><img src="{os.path.abspath(logo)}"></div>' if tag else f'<img class="lg" src="{os.path.abspath(logo)}">'
-html = f'''<html><head><link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=block" rel="stylesheet"><style>
+html = f'''<html><head><link href="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@17d40ae30cb59484162d4134b6fb9edd082b92a0/assets/fonts/css/mm-39787744.css" rel="stylesheet"><style>
 body{{margin:0;width:1080px;height:{HH}px;overflow:hidden;background:#000;position:relative}}
 .bg{{position:absolute;inset:0;background:url("{os.path.abspath(bg)}") {pos}/cover no-repeat}}
 .p{{position:absolute;left:87px;top:{281+DY}px;width:906px;height:788px;background:rgba({rgb},.88)}}

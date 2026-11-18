@@ -61,7 +61,7 @@ NP = subprocess.run(['npm', 'root', '-g'], capture_output=True, text=True).stdou
 def shot(html, out):
     d = tempfile.mkdtemp(); hf = d + '/c.html'; open(hf, 'w').write(html)
     subprocess.run(['node', R + 'scripts/albumcard/shot.js', hf, out], check=True, env={**os.environ, 'NODE_PATH': NP}, stdout=subprocess.DEVNULL)
-FONT = '<link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=block" rel="stylesheet">'
+FONT = '<link href="https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@17d40ae30cb59484162d4134b6fb9edd082b92a0/assets/fonts/css/mm-39787744.css" rel="stylesheet">'
 MAXW = 720
 if not TITLE_PX:   # measure: the biggest size where every single word fits the panel opening
     words = sorted({w for k in sys.argv[2:] for part in title(k) for w in part.split()}, key=len)
