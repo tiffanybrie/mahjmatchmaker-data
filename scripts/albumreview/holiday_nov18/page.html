@@ -1,0 +1,89 @@
+<title>Holiday Album Picks</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+:root{--bg:#fbf7f4;--fg:#26324a;--mut:#6b7385;--card:#fff;--line:#e8e1dc;--pink:#d4497c;--green:#2f7d5b;--chip:#f3ece7;--chipon:#26324a;--chipfg:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#181b22;--fg:#eef0f5;--mut:#a6adbd;--card:#232733;--line:#333a48;--pink:#ef7aa5;--green:#5cc493;--chip:#2c3140;--chipon:#eef0f5;--chipfg:#181b22;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#181b22;--fg:#eef0f5;--mut:#a6adbd;--card:#232733;--line:#333a48;--pink:#ef7aa5;--green:#5cc493;--chip:#2c3140;--chipon:#eef0f5;--chipfg:#181b22;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.45 system-ui,-apple-system,sans-serif;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:14px 110px}
+h1{font-size:22px;margin:2px 0 4px;text-wrap:balance}.sub{color:var(--mut);margin:0 0 12px;max-width:70ch}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding:8px 0;z-index:3}
+.tabs button{border:1.5px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:7px 12px;font:600 13.5px system-ui,sans-serif;cursor:pointer}
+.tabs button small{color:var(--mut);font-weight:500;margin-left:4px}
+.tabs button[aria-pressed=true]{background:var(--pink);border-color:var(--pink);color:#fff}.tabs button[aria-pressed=true] small{color:#fde7ef}
+.head{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:0 0 10px}
+.head img{width:120px;height:120px;object-fit:cover;border-radius:12px}
+.head h2{margin:0;font-size:20px}.head p{margin:2px 0 0;color:var(--mut)}
+.head .tot{font-weight:700;color:var(--green)}
+.cur{display:flex;gap:6px;overflow-x:auto;padding:4px 0 10px;scrollbar-width:thin}
+.cur figure{flex:none;width:74px;margin:0;text-align:center;font-size:10.5px;color:var(--mut);line-height:1.2}
+.cur img{width:74px;height:74px;object-fit:cover;border-radius:8px;display:block;margin-bottom:3px}
+.lab{font:700 11.5px system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin:12px 0 6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;max-width:1300px}
+.c{background:var(--card);border:2px solid var(--line);border-radius:14px;overflow:hidden;min-width:0}
+.c.yes{border-color:var(--green)}.c.no{opacity:.45}
+.ph{position:relative;aspect-ratio:1;max-width:100%;cursor:zoom-in;background:#fff}.ph img.m{width:100%;height:100%;object-fit:cover;display:block}
+.ph img.t{position:absolute;right:8px;bottom:8px;width:44%;aspect-ratio:1;object-fit:cover;border-radius:8px;box-shadow:0 2px 10px #0006;border:3px solid #fff}
+.meta{padding:9px 12px 2px}.n{font-weight:650}.b{color:var(--mut);font-size:13px}.note{font-size:12px;color:var(--pink);font-weight:600}
+.act{display:flex;gap:8px;padding:8px 12px 12px}.act button{flex:1;font-size:22px;padding:7px;border-radius:10px;border:1.5px solid var(--line);background:transparent;color:var(--fg);cursor:pointer}
+.act button[aria-pressed=true].x{background:#888;color:#fff;border-color:#888}.act button[aria-pressed=true].h{background:var(--pink);color:#fff;border-color:var(--pink)}
+.chips{display:flex;flex-wrap:wrap;gap:5px;padding:6px 12px 12px}
+.chips button{border:0;border-radius:999px;padding:5px 9px;font:600 12px system-ui,sans-serif;background:var(--chip);color:var(--fg);cursor:pointer}
+.chips button[aria-pressed=true]{background:var(--chipon);color:var(--chipfg)}
+.chips button[aria-pressed=true]::before{content:"✓ "}
+.etsyc .ph img.m{object-fit:cover}
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));display:flex;gap:10px;align-items:center;flex-wrap:wrap;z-index:5}
+.bar textarea{flex:1;min-width:0;min-height:38px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg);padding:6px;font:inherit}
+.bar button{padding:10px 16px;border-radius:10px;border:0;background:var(--green);color:#fff;font-weight:650;cursor:pointer}
+#st{color:var(--mut);font-size:13px}
+.zoom{position:fixed;inset:0;background:#000d;display:flex;align-items:center;justify-content:center;z-index:9;cursor:zoom-out}.zoom img{max-width:96vw;max-height:92vh}
+</style>
+<h1>Holiday albums: picks before the push</h1>
+<p class="sub">One tab per album, plus an Etsy tab. Each mat is shown with that album's tiles in the corner. Heart the ones you want, X the ones you don't; anything left blank I count as a yes. On the Etsy tab, the albums I suggest are already ticked: tap a name to add or remove it. Tap a photo to zoom. Your choices save as you go.</p>
+<div class="tabs" id="tabs"></div>
+<div id="view"></div>
+<div class="bar"><textarea id="note" placeholder="Anything else? (a mat I missed, a note)"></textarea><button id="done">Done</button><span id="st">loading…</span></div>
+<script>
+const D=/*DATA*/null;
+let S={v:{},chips:{},note:'',done:false};let doc=null;let tab=D.albums[0].id;
+const $=s=>document.querySelector(s);
+const chipName=Object.fromEntries(D.chips);
+function chipOn(e,a){const c=S.chips[e.k];if(c&&a in c)return c[a];return e.sug.includes(a)}
+function total(a){const st=S.v[a.id]||{};let n=a.live;for(const c of a.cands)if(st[c.k]!=='remove')n++;for(const e of D.etsy)if(chipOn(e,a.id))n++;return n}
+function zoom(src){const z=document.createElement('div');z.className='zoom';const im=document.createElement('img');im.src=src;z.appendChild(im);z.onclick=()=>z.remove();document.body.appendChild(z)}
+function tabs(){const t=$('#tabs');t.innerHTML='';
+ for(const a of D.albums){const b=document.createElement('button');b.setAttribute('aria-pressed',tab===a.id);b.innerHTML='<span></span><small></small>';b.firstChild.textContent=a.name;b.lastChild.textContent=a.live+' → '+total(a);b.onclick=()=>{tab=a.id;render();scrollTo(0,0)};t.appendChild(b)}
+ const b=document.createElement('button');b.setAttribute('aria-pressed',tab==='etsy');b.innerHTML='Etsy mats<small></small>';b.lastChild.textContent=D.etsy.length;b.onclick=()=>{tab='etsy';render();scrollTo(0,0)};t.appendChild(b)}
+function card(m,tiles,st,set){const c=document.createElement('div');c.className='c'+(st==='keep'?' yes':st==='remove'?' no':'');
+ c.innerHTML='<div class="ph"><img class="m" alt=""></div><div class="meta"><div class="n"></div><div class="b"></div></div>';
+ c.querySelector('.m').src=m.img;c.querySelector('.n').textContent=m.n;c.querySelector('.b').textContent=m.b;
+ if(m.note){const p=document.createElement('div');p.className='note';p.textContent=m.note;c.querySelector('.meta').appendChild(p)}
+ if(tiles){const t=document.createElement('img');t.className='t';t.alt='tiles';t.src=tiles;c.querySelector('.ph').appendChild(t)}
+ c.querySelector('.ph').onclick=e=>zoom(e.target.classList.contains('t')?tiles:m.img);
+ if(set){const a=document.createElement('div');a.className='act';a.innerHTML='<button class="x" aria-label="No">✕</button><button class="h" aria-label="Yes">♥</button>';
+  a.querySelector('.x').setAttribute('aria-pressed',st==='remove');a.querySelector('.h').setAttribute('aria-pressed',st==='keep');
+  a.querySelector('.x').onclick=()=>set(st==='remove'?'':'remove');a.querySelector('.h').onclick=()=>set(st==='keep'?'':'keep');c.appendChild(a)}
+ return c}
+function render(){tabs();const v=$('#view');v.innerHTML='';
+ if(tab==='etsy'){const h=document.createElement('div');h.innerHTML='<p class="sub">Every Etsy-sold holiday mat in Find Your Mat-ch (Etsy listings, Betty June &amp; Jeannette, Piper Chase, Mahj &amp; Moon). None of them is in a holiday album yet. Ticked = goes into that album.</p>';v.appendChild(h);
+  const g=document.createElement('div');g.className='grid';
+  for(const e of D.etsy){const c=card(e,null,'',null);c.classList.add('etsyc');const ch=document.createElement('div');ch.className='chips';
+   for(const [id,nm] of D.chips){const b=document.createElement('button');const on=chipOn(e,id);b.setAttribute('aria-pressed',on);b.textContent=nm;b.onclick=()=>{(S.chips[e.k]=S.chips[e.k]||{})[id]=!on;save();render()};ch.appendChild(b)}
+   c.appendChild(ch);g.appendChild(c)}
+  v.appendChild(g);return}
+ const a=D.albums.find(x=>x.id===tab);const st=S.v[a.id]||{};
+ const hd=document.createElement('div');hd.className='head';hd.innerHTML='<img alt="tiles"><div><h2></h2><p></p><p class="tot"></p></div>';
+ hd.querySelector('img').src=a.tiles;hd.querySelector('img').onclick=()=>zoom(a.tiles);hd.querySelector('h2').textContent=a.name;hd.querySelector('p').textContent=a.maker+' · '+a.live+(a.id==='spirit-of-christmas'?' cards built Oct 20 (Peace Love Mahjong mats)':' cards live now');
+ const et=D.etsy.filter(e=>chipOn(e,a.id)).length;hd.querySelector('.tot').textContent='With your picks: '+total(a)+' ('+et+' of them from the Etsy tab)';v.appendChild(hd);
+ const l1=document.createElement('div');l1.className='lab';l1.textContent=a.id==='spirit-of-christmas'?'Already in (Oct 20)':'Already in the album';v.appendChild(l1);
+ const cu=document.createElement('div');cu.className='cur';for(const m of a.cur){const f=document.createElement('figure');f.innerHTML='<img alt=""><figcaption></figcaption>';f.querySelector('img').src=m.img;f.querySelector('figcaption').textContent=m.n;cu.appendChild(f)}v.appendChild(cu);
+ const l2=document.createElement('div');l2.className='lab';l2.textContent='New picks ('+a.cands.length+')';v.appendChild(l2);
+ const g=document.createElement('div');g.className='grid';
+ for(const m of a.cands){const s=st[m.k]||'';g.appendChild(card(m,a.tiles,s,val=>{(S.v[a.id]=S.v[a.id]||{})[m.k]=val;save();render()}))}
+ v.appendChild(g)}
+let tm=null;function save(){if(!doc){$('#st').textContent='not saving (offline)';return}clearTimeout(tm);$('#st').textContent='saving…';tm=setTimeout(async()=>{try{await doc.set({...S,at:new Date().toISOString()});$('#st').textContent='saved'+(S.done?' · done':'')}catch(e){$('#st').textContent='save failed: '+(e.code||e.message)}},400)}
+$('#note').oninput=e=>{S.note=e.target.value;save()};
+$('#done').onclick=()=>{S.done=true;save();$('#done').textContent='Done ✓'};
+render();
+(async()=>{let to=setTimeout(()=>{$('#st').textContent='not saving (offline)'},10000);try{const db=await claude.use('db');if(!db){clearTimeout(to);$('#st').textContent='not saving (offline)';return}
+ doc=db.doc('picks/holiday-nov18');const snap=await doc.get();clearTimeout(to);const d=snap.exists?snap.data():null;if(d){S={v:d.v||{},chips:d.chips||{},note:d.note||'',done:!!d.done};$('#note').value=S.note;if(S.done)$('#done').textContent='Done ✓'}$('#st').textContent='ready';render()}catch(e){clearTimeout(to);$('#st').textContent='not saving: '+(e.code||e.message)}})();
+</script>

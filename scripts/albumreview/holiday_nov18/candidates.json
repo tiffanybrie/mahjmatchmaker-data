@@ -1,0 +1,446 @@
+{
+ "chips": [
+  [
+   "dear-santa",
+   "Dear Santa"
+  ],
+  [
+   "rackin-rudolph",
+   "Rackin' Rudolph"
+  ],
+  [
+   "holly-jolly-red",
+   "Rudolph Red"
+  ],
+  [
+   "holly-jolly-green",
+   "Grinch Green"
+  ],
+  [
+   "holly-jolly-pink",
+   "Sugarplum Pink"
+  ],
+  [
+   "tinselle-emerald",
+   "Tinselle Emerald"
+  ],
+  [
+   "tinselle-ruby",
+   "Tinselle Ruby"
+  ],
+  [
+   "nivalee-blue",
+   "Nivalee Blue"
+  ],
+  [
+   "nutcracker-ballet",
+   "Nutcracker Ballet"
+  ],
+  [
+   "december-1994",
+   "December 1994"
+  ],
+  [
+   "cmc-apres-ski",
+   "Après Ski"
+  ],
+  [
+   "spirit-of-christmas",
+   "Spirit of Christmas"
+  ]
+ ],
+ "holly-jolly-green": [
+  "Perfectly Wrapped|Peace Love Mahjong",
+  "Spirit of Christmas|Peace Love Mahjong",
+  "Classic Very Merry Mahj|Anders Ruff",
+  "Holly Berry Mat|Mahj Mood",
+  "Bespoke x Corey Paige - Holiday Love Mat - Red/Green (Side B: Heart Frame)|Bespoke Mahjong",
+  "Evergreen Christmas Plaid|YOLO Mahjong",
+  "Plaid Tidings|My Fair Mahjong",
+  "Bandana – Holiday Green/Pink accents|Bam Bird Boutique",
+  "lbb:apres-green",
+  "Festive Frost|Let's Be Besties",
+  "Nutcracker Noel - Red & Green|Peace Love Mahjong",
+  "Merry Mix|Peace Love Mahjong",
+  "Merry & Striped|Peace Love Mahjong",
+  "Candy Cane Lane|Anders Ruff",
+  "Very Merry Mahj|Anders Ruff",
+  "Watercolor Christmas Tree|Anders Ruff",
+  "Letters to Santa Premium|Mahjong Register",
+  "Holly Jolly Christmas|Mahjong Register",
+  "Rackin' Rudolph !|Hip Hip Mahjong",
+  "Merry & Bright, Holiday Prism|Let's Be Besties",
+  "Color Me Merry|Soirée All Day",
+  "Christmas Botanical Bow|YOLO Mahjong",
+  "Christmas Cabana Stripe with Bows|Amazon",
+  "Sleigh All Day Mat|Mahj Mood",
+  "maison:evergreen"
+ ],
+ "nivalee-blue": [
+  "The Chalet|Maison Mahj",
+  "maison:alpine",
+  "lbb:apres-teal",
+  "lbb:apres-teal-skiers",
+  "lbb:alpine-snowflakes",
+  "lbb:fair-isle",
+  "The Chalet Mat (Side B: Ski Lift)|Bespoke Mahjong",
+  "Snowflake Lodge Premium|Mahjong Register",
+  "Snowflake Reindeer Lodge Double-Sided Leatherette|Mahjong Register",
+  "Winter Jewel|Let's Be Besties",
+  "Holly Jolly|Oh My Mahjong",
+  "Sugarplum|Oh My Mahjong",
+  "Merriment|Oh My Mahjong",
+  "Clara|Oh My Mahjong",
+  "The Ornamental|Bird & Bamboo",
+  "Bespoke x Corey Paige - Holiday Love Mat - Blue (Side A: All-Over Hearts)|Bespoke Mahjong",
+  "Frosted Flowers|Peace Love Mahjong",
+  "Holiday Neoprene|Bam Bird Boutique",
+  "Gray Malin Getaway Dogs (Side B: Ski Lift)|Bespoke Mahjong",
+  "Winter Ski Resort|YOLO Mahjong",
+  "Blue & White Snowflake|Amazon",
+  "Color Me Merry|Soirée All Day",
+  "maison:winter-garland"
+ ],
+ "cmc-apres-ski": [
+  "maison:alpine",
+  "lbb:apres-teal",
+  "lbb:apres-teal-skiers",
+  "lbb:apres-green",
+  "lbb:winter-wonderland",
+  "Snowflake Reindeer Lodge Double-Sided Leatherette|Mahjong Register",
+  "Gray Malin Getaway Dogs (Side B: Ski Lift)|Bespoke Mahjong",
+  "Winter Ski Resort|YOLO Mahjong",
+  "Buffalo Plaid Snow Day|Bougie Mahjong",
+  "Yuletide|Oh My Mahjong",
+  "Holly Jolly|Oh My Mahjong",
+  "Clara|Oh My Mahjong",
+  "Holiday Neoprene|Bam Bird Boutique",
+  "Winter Jewel|Let's Be Besties",
+  "Festive Frost|Let's Be Besties",
+  "The Ornamental|Bird & Bamboo",
+  "Sleigh All Day Mat|Mahj Mood",
+  "Winter Berry|Britt Mills",
+  "Winter Wreath|Wren Mats",
+  "Blue & White Snowflake|Amazon",
+  "Winter Christmas Trees Stripe|Amazon",
+  "maison:snowfall"
+ ],
+ "dear-santa": [
+  "Rackin' Rudolph !|Hip Hip Mahjong",
+  "Clara|Oh My Mahjong",
+  "Holly Berry Mat|Mahj Mood",
+  "Spirit of Christmas|Peace Love Mahjong",
+  "Tied With A Bow|Peace Love Mahjong",
+  "Peace Love & Mistletoe|Peace Love Mahjong",
+  "Home for the Holidays|Soirée All Day",
+  "Color Me Merry|Soirée All Day",
+  "soiree:holiday-chintz",
+  "Very Merry Mahj|Anders Ruff",
+  "Evergreen Christmas Plaid|YOLO Mahjong",
+  "maison:evergreen"
+ ],
+ "spirit-of-christmas": [
+  "Candy Cane Lane|Anders Ruff",
+  "Classic Very Merry Mahj|Anders Ruff",
+  "Santa's Mahjong Mail|Anders Ruff",
+  "Watercolor Christmas Tree|Anders Ruff",
+  "Holly Jolly Christmas|Bam! Let's Mahjong",
+  "Bespoke x Corey Paige - Holiday Love Mat - Red/Green (Side A: All-Over Hearts)|Bespoke Mahjong",
+  "Holiday Neoprene|Bam Bird Boutique",
+  "Letters to Santa Premium|Mahjong Register",
+  "Holly Jolly|Oh My Mahjong",
+  "Winterberry|Oh My Mahjong",
+  "Clara|Oh My Mahjong",
+  "Sleigh All Day Mat|Mahj Mood",
+  "Holly Berry Mat|Mahj Mood",
+  "Rackin' Rudolph !|Hip Hip Mahjong",
+  "Perfectly Wrapped|Peace Love Mahjong",
+  "Candy Cane Lane|Peace Love Mahjong",
+  "Color Me Merry|Soirée All Day",
+  "Home for the Holidays|Soirée All Day",
+  "Evergreen Christmas Plaid|YOLO Mahjong",
+  "Merry & Bright, Holiday Prism|Let's Be Besties"
+ ],
+ "etsy": [
+  [
+   "Christmas Holly & Bows|Etsy",
+   [
+    "dear-santa",
+    "rackin-rudolph",
+    "holly-jolly-red",
+    "tinselle-ruby",
+    "december-1994",
+    "spirit-of-christmas"
+   ]
+  ],
+  [
+   "Hand-Painted Christmas Garland|Etsy",
+   [
+    "dear-santa",
+    "rackin-rudolph",
+    "holly-jolly-red"
+   ]
+  ],
+  [
+   "Scandi Folk Christmas (Cream)|Etsy",
+   [
+    "dear-santa",
+    "rackin-rudolph",
+    "spirit-of-christmas"
+   ]
+  ],
+  [
+   "Scandi Folk Christmas (Green)|Etsy",
+   [
+    "december-1994",
+    "tinselle-emerald"
+   ]
+  ],
+  [
+   "Green Christmas Watercolor|Etsy",
+   [
+    "tinselle-emerald",
+    "december-1994"
+   ]
+  ],
+  [
+   "Winter Village Tree|Etsy",
+   [
+    "nivalee-blue",
+    "cmc-apres-ski"
+   ]
+  ],
+  [
+   "Whimsical Holiday|Etsy",
+   [
+    "spirit-of-christmas"
+   ]
+  ],
+  [
+   "Christmas Ice Skaters|Etsy",
+   [
+    "cmc-apres-ski",
+    "nivalee-blue"
+   ]
+  ],
+  [
+   "Christmas Ice Pond|Etsy",
+   [
+    "cmc-apres-ski",
+    "nivalee-blue"
+   ]
+  ],
+  [
+   "Deck the Halls|Etsy",
+   [
+    "nivalee-blue",
+    "spirit-of-christmas",
+    "holly-jolly-pink"
+   ]
+  ],
+  [
+   "Christmas Nutcracker Toyland|Etsy",
+   [
+    "holly-jolly-pink",
+    "nutcracker-ballet",
+    "holly-jolly-green"
+   ]
+  ],
+  [
+   "Nutcracker Merry and Bright|Etsy",
+   [
+    "nutcracker-ballet",
+    "holly-jolly-green"
+   ]
+  ],
+  [
+   "Chinoiserie Christmas Tree|Etsy",
+   [
+    "holly-jolly-pink",
+    "holly-jolly-green"
+   ]
+  ],
+  [
+   "Benjamin Goes Snow Skiing|Betty June & Jeannette",
+   [
+    "cmc-apres-ski",
+    "nivalee-blue"
+   ]
+  ],
+  [
+   "Hippie Holiday|Betty June & Jeannette",
+   [
+    "rackin-rudolph",
+    "holly-jolly-red",
+    "spirit-of-christmas"
+   ]
+  ],
+  [
+   "Chinoiserie Cheer|Betty June & Jeannette",
+   [
+    "nivalee-blue"
+   ]
+  ],
+  [
+   "Cozy Christmas|Betty June & Jeannette",
+   [
+    "nivalee-blue",
+    "nutcracker-ballet"
+   ]
+  ],
+  [
+   "Oh Little Town|Betty June & Jeannette",
+   []
+  ],
+  [
+   "Sugarplum & Spruce|Betty June & Jeannette",
+   [
+    "holly-jolly-pink"
+   ]
+  ],
+  [
+   "Merry and Bright|Betty June & Jeannette",
+   [
+    "holly-jolly-pink"
+   ]
+  ],
+  [
+   "Jingle All the Way|Betty June & Jeannette",
+   [
+    "holly-jolly-pink"
+   ]
+  ],
+  [
+   "Jingle Belle|Betty June & Jeannette",
+   [
+    "holly-jolly-pink"
+   ]
+  ],
+  [
+   "Christmas Peacock Poinsettia|Betty June & Jeannette",
+   [
+    "holly-jolly-pink"
+   ]
+  ],
+  [
+   "The Wonder (Manger)|Betty June & Jeannette",
+   []
+  ],
+  [
+   "Holy Night|Betty June & Jeannette",
+   []
+  ],
+  [
+   "Red Bows and Trees|Piper Chase Studios",
+   [
+    "dear-santa",
+    "rackin-rudolph",
+    "holly-jolly-red"
+   ]
+  ],
+  [
+   "Christmas Wreath|Piper Chase Studios",
+   [
+    "rackin-rudolph",
+    "spirit-of-christmas"
+   ]
+  ],
+  [
+   "Santa Ornament|Piper Chase Studios",
+   [
+    "holly-jolly-pink"
+   ]
+  ],
+  [
+   "Christmas Tree Trellis|Piper Chase Studios",
+   [
+    "holly-jolly-pink",
+    "holly-jolly-red"
+   ]
+  ],
+  [
+   "Peppermint Bows|Piper Chase Studios",
+   [
+    "holly-jolly-pink",
+    "holly-jolly-red"
+   ]
+  ],
+  [
+   "Ornament Plaid|Piper Chase Studios",
+   [
+    "holly-jolly-pink"
+   ]
+  ],
+  [
+   "Poinsettia Ornament|Piper Chase Studios",
+   [
+    "holly-jolly-pink"
+   ]
+  ],
+  [
+   "Nutcracker Bows|Piper Chase Studios",
+   [
+    "nutcracker-ballet",
+    "holly-jolly-pink"
+   ]
+  ],
+  [
+   "Nutcracker Floral|Piper Chase Studios",
+   [
+    "nutcracker-ballet",
+    "holly-jolly-pink"
+   ]
+  ],
+  [
+   "Pink Christmas Tree|Piper Chase Studios",
+   [
+    "holly-jolly-pink"
+   ]
+  ],
+  [
+   "Pink Bow Lattice|Piper Chase Studios",
+   [
+    "holly-jolly-pink"
+   ]
+  ],
+  [
+   "Christmas Toile|Mahj & Moon",
+   [
+    "dear-santa",
+    "december-1994",
+    "rackin-rudolph"
+   ]
+  ],
+  [
+   "Candy Cane Christmas Village|Mahj & Moon",
+   [
+    "holly-jolly-pink",
+    "tinselle-emerald"
+   ]
+  ],
+  [
+   "Christmas Village Gingham|Mahj & Moon",
+   [
+    "holly-jolly-pink"
+   ]
+  ],
+  [
+   "Festive Citrus Chinoiserie|Mahj & Moon",
+   [
+    "nivalee-blue"
+   ]
+  ],
+  [
+   "Pastel Christmas Tree|Mahj & Moon",
+   [
+    "holly-jolly-pink"
+   ]
+  ],
+  [
+   "Midnight Woodland Christmas|Mahj & Moon",
+   [
+    "december-1994"
+   ]
+  ]
+ ]
+}
