@@ -1,0 +1,231 @@
+<style>
+.mmbg{--ink:#1e3a5f;--rose:#c8456f;--blush:#fdf2f5;--sand:#faf7f2;--line:#ead9df;max-width:880px;margin:0 auto;background:#fff;padding:36px 40px;border-radius:18px;color:var(--ink);line-height:1.65;font-size:17px}
+.mmbg *{box-sizing:border-box}
+.mmbg h1,.mmbg h2,.mmbg h3,.mmbg p,.mmbg li{color:var(--ink)}
+.mmbg a{color:var(--rose)}
+.mmbg .hero{position:relative;border-radius:20px;overflow:hidden;background:var(--sand)}
+.mmbg .hero img{display:block;width:100%;height:360px;object-fit:cover}
+.mmbg .hero-txt{padding:28px 36px 30px;background:#fff;margin:-70px 24px 0;position:relative;border-radius:16px;box-shadow:0 8px 30px rgba(30,58,95,.10)}
+.mmbg .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.72em;font-weight:700;color:var(--rose);margin:0 0 6px}
+.mmbg h1{font-size:2.3em;line-height:1.15;margin:0 0 10px}
+.mmbg .dek{font-size:1.08em;margin:0;opacity:.9}
+.mmbg section{margin:46px 0}
+.mmbg h2{font-size:1.55em;margin:0 0 14px;line-height:1.25}
+.mmbg .note{background:var(--sand);border-left:4px solid var(--rose);border-radius:0 14px 14px 0;padding:22px 26px}
+.mmbg .note p{margin:0 0 12px}.mmbg .note p:last-child{margin:0}
+.mmbg .sig{font-style:italic;font-weight:600}
+.mmbg .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.mmbg .card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.mmbg .card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--sand)}
+.mmbg .card .in{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.mmbg .card h3{font-size:1.08em;margin:0}
+.mmbg .card p{margin:0;font-size:.95em}
+.mmbg .card .go{margin-top:auto;font-weight:700;text-decoration:none;font-size:.92em}
+.mmbg .tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.mmbg .tiles a{text-decoration:none;color:var(--ink)}
+.mmbg .tiles img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;display:block}
+.mmbg .tiles span{display:block;font-weight:600;font-size:.92em;margin-top:6px}
+.mmbg .feat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;padding:0;margin:0}
+.mmbg .feat li{margin:0}
+.mmbg .feat a{display:block;padding:14px 16px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);background:#fff}
+.mmbg .feat a b{display:block;color:var(--rose);font-size:.75em;text-transform:uppercase;letter-spacing:.1em}
+.mmbg .perk{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--blush);border-radius:16px;padding:20px 24px}
+.mmbg .perk p{margin:0}
+.mmbg .perk .code{font-weight:800;letter-spacing:.08em;color:var(--rose)}
+.mmbg .btn{display:inline-block;background:var(--rose);color:#fff!important;padding:11px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.95em}
+.mmbg details{border-bottom:1px solid var(--line);padding:12px 0}
+.mmbg summary{cursor:pointer;font-weight:700}
+.mmbg details p{margin:8px 0 0}
+.mmbg .more{display:flex;flex-wrap:wrap;gap:8px}
+.mmbg .more a{border:1px solid var(--line);border-radius:999px;padding:6px 14px;text-decoration:none;font-size:.88em;color:var(--ink);background:#fff}
+.mmbg .small{font-size:.82em;opacity:.75}
+@media(max-width:700px){.mmbg{font-size:16px;padding:22px 16px}.mmbg .hero img{height:230px}.mmbg .hero-txt{margin:-40px 12px 0;padding:20px}.mmbg h1{font-size:1.8em}.mmbg .grid,.mmbg .feat{grid-template-columns:1fr}.mmbg .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.mmbg .me{display:flex;gap:16px;align-items:center;margin:0 0 16px}.mmbg .me img{width:76px;height:76px;border-radius:50%;object-fit:cover;flex:0 0 76px;border:3px solid #fff;box-shadow:0 2px 10px rgba(30,58,95,.15)}.mmbg .me strong{display:block;font-size:1.05em}.mmbg .me span{display:block;font-size:.88em;opacity:.8}
+
+
+.mmbg .tiles.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.mmbg .tiles small{display:block;font-size:.8em;margin-top:2px}
+.mmbg .tiles small a{color:var(--rose);font-weight:600}
+@media(max-width:700px){.mmbg .tiles.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<div class="mmbg">
+<div class="hero">
+<img src="https://cdn.shopify.com/s/files/1/0558/4850/1302/files/IMG_2326.jpg?width=1500" style="object-position:50% 50%" alt="Brewtifully Moody mahjong mat">
+<div class="hero-txt">
+<p class="eyebrow">Brand guide</p>
+<h1>Brewtifully</h1>
+<p class="dek">Hand-painted mahjong mats, tile sets and accessories from artist Tracy Dawn Brewer. Plus, my Brewtifully discount code for readers.</p>
+</div>
+</div>
+<div class="perk perk-top" style="margin:22px 0 4px">
+<p><strong>A thank-you for Mahj Matchmaker readers:</strong> use code <span class="code">MAHJMATCH</span> for 15% off at Brewtifully.</p>
+<p style="font-size:14px;opacity:.75;margin:6px 0 14px">&#10003; Brewtifully discount code: MAHJMATCH &middot; 15% off &middot; verified November 18, 2026</p>
+<a class="btn" href="https://shop.brewtifully.com/?sca_ref=12791501.UkLEYdzzWXP" target="_blank" rel="sponsored noopener">Visit Brewtifully</a>
+</div>
+<section>
+<h2>About Brewtifully</h2>
+<div class="note">
+<p>Brewtifully is the mahjong line of Tracy Dawn Brewer, a surface pattern designer who has sold her own patterns for over a decade. Every design starts as her own hand-drawn, hand-painted artwork (folk-art botanicals, chinoiserie gardens, Roaring &rsquo;20s art deco, prairie cowgirls and playful holiday characters), with no AI art.</p>
+<p>Pieces are made to order, so you pick the design, colorway and size, from travel mats to 33&quot; full size. Tracy also makes custom mats for clubs and events. Her artwork appears in the Brewtifully x Mahjong by SI collection, and Miss Mahjong&rsquo;s Deep Green Garden Party mat comes from one of her paintings. She taught art at the Canton Museum of Art in Ohio and now works from her studio in Seattle.</p>
+</div>
+</section>
+<p>A few Brewtifully pieces to start with:</p>
+<section>
+<h2>Brewtifully tile sets</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0558/4850/1302/files/e3f4f0fa4fdf2c2594cabc9fa38230fe.jpg?width=700" alt="Brewtifully Modern Folk Tiles mahjong tiles" loading="lazy">
+<div class="in">
+<h3>Modern Folk Tiles</h3>
+<p>Four-layer acrylic American mahjong tiles with Tracy’s folk-art florals, in several designs. From $350.</p>
+<a class="go" href="https://shop.brewtifully.com/products/modern-folk-american-mahjong-tiles-4layer-acrylic-in-multiple-designs?sca_ref=12791501.UkLEYdzzWXP" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0558/4850/1302/files/ecf5d2a2245bd7b34ddfbba0fdcbfb22.jpg?width=700" alt="Brewtifully Folk Art Floral Tiles mahjong tiles" loading="lazy">
+<div class="in">
+<h3>Folk Art Floral Tiles</h3>
+<p>Four-layer American mahjong tiles with a folk-art floral back. From $350.</p>
+<a class="go" href="https://shop.brewtifully.com/products/4-layer-american-mahjong-tiles-set-folk-art-floral?sca_ref=12791501.UkLEYdzzWXP" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0558/4850/1302/files/182641fe3c698247641bd35b8339bc49.jpg?width=700" alt="Brewtifully Stark County Tiles mahjong tiles" loading="lazy">
+<div class="in">
+<h3>Stark County Tiles</h3>
+<p>Named for her Ohio home county, with a hand-drawn patterned back. From $350.</p>
+<a class="go" href="https://shop.brewtifully.com/products/american-mahjong-tiles-stark-county?sca_ref=12791501.UkLEYdzzWXP" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0558/4850/1302/files/a54e9e588dcd5f31785166f6c81bbe7e.jpg?width=700" alt="Brewtifully Scandi Folk Art Christmas Tiles mahjong tiles" loading="lazy">
+<div class="in">
+<h3>Scandi Folk Art Christmas Tiles</h3>
+<p>Pink and green swirl backs with Scandinavian folk-art Christmas faces. From $350.</p>
+<a class="go" href="https://shop.brewtifully.com/products/scandi-folk-art-christmas-mahjong-tiles-pink-and-green-swirl?sca_ref=12791501.UkLEYdzzWXP" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0558/4850/1302/files/4e6abe5a050cb4fb447e949d6e50972f.jpg?width=700" alt="Brewtifully Après Ski Winter Tiles mahjong tiles" loading="lazy">
+<div class="in">
+<h3>Après Ski Winter Tiles</h3>
+<p>Winter tiles with skiers and snowy backs. From $350.</p>
+<a class="go" href="https://shop.brewtifully.com/products/apresski-winter-american-mahjong-tiles-with-skiers?sca_ref=12791501.UkLEYdzzWXP" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0558/4850/1302/files/16356535ad4d34749211950406c6385c.jpg?width=700" alt="Brewtifully Heritage Hanukkah Tiles mahjong tiles" loading="lazy">
+<div class="in">
+<h3>Heritage Hanukkah Tiles</h3>
+<p>Hanukkah tiles with doves, menorahs and dreidels. From $350.</p>
+<a class="go" href="https://shop.brewtifully.com/products/heritage-hanukkah-mahjong-tiles-peaceful-holiday?sca_ref=12791501.UkLEYdzzWXP" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Brewtifully mats</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0558/4850/1302/files/IMG_2326.jpg?width=700" alt="Brewtifully Moody mahjong mat" loading="lazy">
+<div class="in">
+<h3>Moody</h3>
+<p>Dark folk-art botanicals; smooth SleekSurface mat made in the USA, in several colorways. From $95.</p>
+<a class="go" href="https://shop.brewtifully.com/products/mahjong-mat-sleeksurface-made-in-usa-moody-multiple-colorways?sca_ref=12791501.UkLEYdzzWXP" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0558/4850/1302/files/9230e217517f7429c96afd88ccdceb86.jpg?width=700" alt="Brewtifully Nature’s Holiday Gifts mahjong mat" loading="lazy">
+<div class="in">
+<h3>Nature’s Holiday Gifts</h3>
+<p>Holiday botanicals and fruit; choose from many colorways. From $150.</p>
+<a class="go" href="https://shop.brewtifully.com/products/mahjong-mat-sleeksurface-made-in-usa-natures-holiday-gifts-multiple-colorways?sca_ref=12791501.UkLEYdzzWXP" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0558/4850/1302/files/23f5efe032921f6bfc23c6b2b27ba4ff.jpg?width=700" alt="Brewtifully Pretty, Pretty Players mahjong mat" loading="lazy">
+<div class="in">
+<h3>Pretty, Pretty Players</h3>
+<p>Woodland friends at the mahjong table; choose your colorway. From $95.</p>
+<a class="go" href="https://shop.brewtifully.com/products/mahjong-mat-sleeksurface-made-in-usa-pretty-prettyplayers-choose-uour-colorway?sca_ref=12791501.UkLEYdzzWXP" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0558/4850/1302/files/d66d2182969bd4ee02b234a6934f8942.jpg?width=700" alt="Brewtifully Christmas Memories and Traditions mahjong mat" loading="lazy">
+<div class="in">
+<h3>Christmas Memories and Traditions</h3>
+<p>A navy Christmas design full of holiday traditions. From $95.</p>
+<a class="go" href="https://shop.brewtifully.com/products/mahjong-mat-sleeksurface-made-in-usa-christmas-memories-and-traditions?sca_ref=12791501.UkLEYdzzWXP" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0558/4850/1302/files/bca4dfe2caa5b23cbe4ad1a7c95bb1c6.jpg?width=700" alt="Brewtifully Emerald Parasol mahjong mat" loading="lazy">
+<div class="in">
+<h3>Emerald Parasol</h3>
+<p>Lily pads and blooms in emerald green. From $95.</p>
+<a class="go" href="https://shop.brewtifully.com/products/mahjong-mat-sleeksurface-made-in-usa-emerald-parasol?sca_ref=12791501.UkLEYdzzWXP" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0558/4850/1302/files/075778adb5fdc63eb980e44358eeae9f_cc05c7bf-0bd9-403b-b982-8b759f09a2a8.jpg?width=700" alt="Brewtifully Spring Collection mahjong mat" loading="lazy">
+<div class="in">
+<h3>Spring Collection</h3>
+<p>Rubber-backed mats in many Spring colorways and sizes, from travel to full size. From $45.</p>
+<a class="go" href="https://shop.brewtifully.com/products/mahjong-mat-made-in-usa-spring-collection-3mm-w-instructions?sca_ref=12791501.UkLEYdzzWXP" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0558/4850/1302/files/d73439518496c6e97d8f3978f3740f2e.jpg?width=700" alt="Brewtifully Folk Art Autumn Love mahjong mat" loading="lazy">
+<div class="in">
+<h3>Folk Art Autumn Love</h3>
+<p>Warm folk-art florals for fall; travel to full size. From $45.</p>
+<a class="go" href="https://shop.brewtifully.com/products/mahjong-mat-made-in-usa-folkarts-autumn-love?sca_ref=12791501.UkLEYdzzWXP" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Brewtifully racks</h2>
+<div class="grid">
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0558/4850/1302/files/33eaf51a68fbc190881a39b8efaaa988.jpg?width=700" alt="Brewtifully Extended Racks with Scalloped Pushers (set of 4) mahjong racks" loading="lazy">
+<div class="in">
+<h3>Extended Racks with Scalloped Pushers (set of 4)</h3>
+<p>Clear extended racks with a magnetic scalloped pusher in your choice of pattern. From $75.</p>
+<a class="go" href="https://shop.brewtifully.com/products/extended-mahjong-rack-set-of-4-scalloped-magnetic-tile-pusher-choice?sca_ref=12791501.UkLEYdzzWXP" target="_blank" rel="sponsored noopener">Shop it &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2>Brewtifully Discount Code</h2>
+<div class="perk">
+<p><strong>A thank-you for Mahj Matchmaker readers:</strong> use code <span class="code">MAHJMATCH</span> for 15% off at Brewtifully. Shop through my link so the code tracks.</p>
+<a class="btn" href="https://shop.brewtifully.com/?sca_ref=12791501.UkLEYdzzWXP" target="_blank" rel="sponsored noopener">Visit Brewtifully</a>
+</div>
+</section>
+<section>
+<h2>Questions about Brewtifully</h2>
+<details><summary>Is there a Brewtifully discount code?</summary><p>Yes. Use code MAHJMATCH at checkout on shop.brewtifully.com for 15% off.</p></details>
+<details><summary>What is Brewtifully known for?</summary><p>Mahjong mats, tiles and accessories made from original hand-drawn and hand-painted artwork by surface pattern designer Tracy Dawn Brewer: folk-art botanicals, chinoiserie gardens, art deco, cowgirls and holiday characters. No AI art.</p></details>
+<details><summary>Where are Brewtifully mats made?</summary><p>Many Brewtifully mats are made in the USA and made to order, in sizes from 20.9&quot; travel to 31.5&quot; and 33&quot; full size, in 2mm or 3mm.</p></details>
+<details><summary>Does Brewtifully make custom mahjong mats?</summary><p>Yes. Tracy creates custom mahjong mats for players, clubs, organizations and events.</p></details>
+<details><summary>Who has Brewtifully collaborated with?</summary><p>Her artwork is in the Brewtifully x Mahjong by SI collection of 57 mats, and Miss Mahjong&#x27;s Deep Green Garden Party mat is reproduced from one of her paintings.</p></details>
+<details><summary>Can I combine the code with other offers?</summary><p>Most shops allow one discount code per order, so the code usually can&#x27;t be combined with a sale or another code.</p></details>
+</section>
+<section>
+<h2>More brands I love</h2>
+<div class="more">
+<a href="/oh-my-mahjong-discount-code">Oh My Mahjong</a>
+<a href="/miss-mahjong-discount-code">Miss Mahjong</a>
+<a href="/mahjong-by-si-discount-code">Mahjong by SI</a>
+<a href="/my-fair-mahjong-discount-code">My Fair Mahjong</a>
+<a href="/bird-and-bamboo-discount-code">Bird &amp; Bamboo</a>
+<a href="/mahj-mood-discount-code">Mahj Mood</a>
+<a href="/noli-june-discount-code">Noli June</a>
+<a href="/mahjong-discount-codes">All brands &rarr;</a>
+</div>
+</section>
+<p class="small">Mahj Matchmaker may earn a commission when you shop through these links, at no extra cost to you. Thank you for supporting the tile match mock-ups and inspiration I share with the community.</p>
+</div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is there a Brewtifully discount code?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Use code MAHJMATCH at checkout on shop.brewtifully.com for 15% off."}}, {"@type": "Question", "name": "What is Brewtifully known for?", "acceptedAnswer": {"@type": "Answer", "text": "Mahjong mats, tiles and accessories made from original hand-drawn and hand-painted artwork by surface pattern designer Tracy Dawn Brewer: folk-art botanicals, chinoiserie gardens, art deco, cowgirls and holiday characters. No AI art."}}, {"@type": "Question", "name": "Where are Brewtifully mats made?", "acceptedAnswer": {"@type": "Answer", "text": "Many Brewtifully mats are made in the USA and made to order, in sizes from 20.9\" travel to 31.5\" and 33\" full size, in 2mm or 3mm."}}, {"@type": "Question", "name": "Does Brewtifully make custom mahjong mats?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Tracy creates custom mahjong mats for players, clubs, organizations and events."}}, {"@type": "Question", "name": "Who has Brewtifully collaborated with?", "acceptedAnswer": {"@type": "Answer", "text": "Her artwork is in the Brewtifully x Mahjong by SI collection of 57 mats, and Miss Mahjong's Deep Green Garden Party mat is reproduced from one of her paintings."}}, {"@type": "Question", "name": "Can I combine the code with other offers?", "acceptedAnswer": {"@type": "Answer", "text": "Most shops allow one discount code per order, so the code usually can't be combined with a sale or another code."}}]}</script>
