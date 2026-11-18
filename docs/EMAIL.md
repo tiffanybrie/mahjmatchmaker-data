@@ -19,6 +19,14 @@ Lists and segments on Oct 21: All Subscribers (9), Email Subscribers (9), New Em
 
 **Decision: send ONE launch email to "All subscribers".** Squarespace sends each opted-in person one copy, so one email reaches everyone (homepage signups, notify-me signups, form subscribers) and nobody gets it twice. That is why the separate launch newsletter (RTS d-newsletter2) was merged into the launch email.
 
+## ALBUM LAUNCH EMAIL = APPROVED TEMPLATE (Tiffany Nov 12 3:58pm, "good to go")
+Page: https://claude.ai/artifact/6vTx8YprmPvDd52YhyGorJ (source site/email/page/album-launch-email.html). Sent on every
+album's launch day without asking. Her fixes, now fixed rules: headline ("The [Set] album is live") CENTERED and BOLD
+(headline text style); the "Use code MAHJMATCH to save" box text CENTERED; footer = "Mahj Matchmaker · mahjmatchmaker.com",
+then the address only (NO tagline like "Hooking up tiles, mats & racks", no second "Mahj Matchmaker" before the address),
+unsubscribe stays. "(plus an album for every Oh My Mahjong set ever made)" ONLY in Oh My Mahjong emails; never mention
+Oh My Mahjong in another brand's email.
+
 ## 2. Templates
 
 Source of truth: `site/email/build.py`. It holds the copy and builds `site/email/templates/<id>.html`, `site/email/shots/<id>.png` (600px) and `<id>-390.png` (phone), and `site/email/emails.json` (subject, preview, plain text). Run `python3 site/email/build.py shots`. The build fails (lint) on TEACHMAHJ, %, Amazon links, ®, "Find Your Match" or "Happy Mat-ching", or ™ used more than once in a body.

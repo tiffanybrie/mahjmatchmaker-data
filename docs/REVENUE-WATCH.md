@@ -11,6 +11,12 @@ brands. So if one of those brands falls off, it's a really big deal."
   so a 51% weekly drop (148 orders / $3,388 → 84 / $1,661) never tripped it.
 - "Our code shows in Google" was treated as "fine". It isn't: code named + sales gone = something ELSE is wrong.
 
+## DAY ALARM is now real code (Nov 12 2026)
+Mon Nov 9 closed at $94 / 7 orders vs $224 / 12 the Monday before and nothing fired: the "<60% of the same weekday
+last week" alarm below was written here but never coded, and the day sat partial with '?' amounts. brand_watch.py now
+prints `DAY ALARM:` for the end day by ORDERS and dollars (unknown amounts can't hide it; holidays skip / compare two
+weeks back). Any DAY ALARM goes to her the same day with the likely cause, like a brand alarm.
+
 ## The daily check (morning report runs it; any chat can run it)
 1. Export HQ money docs: ArtifactData list collection `money` out_dir `<tmp>`; then
    `python3 scripts/money/brand_watch.py <tmp> --date <yesterday>`.
@@ -64,3 +70,6 @@ doesn't name us), Miss Mahjong (4 vs 9), Mahj Squad (1 vs 4).
 
 ## AI MODE TOO (Tiffany Nov 6 2026 ~1am: "brands we're showing up for in both AI and AI overview... none... only one")
 The morning report checks BOTH for every brand: AI Overview (normal results) AND AI Mode (same query + `&udm=50`). Record per brand: overview named/cited, aiMode named/cited, and report four lists: BOTH / OVERVIEW ONLY / AI MODE ONLY / NEITHER. AI Mode in her signed-in Chrome is personalized: click "Try without personalization" when shown. First full read: docs/reports/ai-mode/2026-11-06.md.
+
+## PACE RULE (Tiffany Nov 12 11:18pm, after Claude said "on track for \$9,000, ahead of October" from the month average)
+Any month projection = last 7 finished days x days left + month to date, stated with the 7-day average. Never project from the month-to-date average (launch days inflate it). Never say "on track"/"ahead" unless the 7-day pace says so.

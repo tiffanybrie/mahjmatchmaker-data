@@ -1,0 +1,93 @@
+{
+ "run": "2026-11-16T20:44 ET (8:37pm slot)",
+ "handles_checked": [
+  "ohmymahjong",
+  "bambirdboutique",
+  "missmahjongofficial",
+  "myfairmahjong",
+  "bespoke_mahjong",
+  "andersruffdesignco",
+  "peacelovemahjong",
+  "bird_and_bamboo",
+  "mahj_mood",
+  "minimahjer",
+  "charlestonmahjongclub",
+  "nolijunemahjong"
+ ],
+ "with_stories": {
+  "ohmymahjong": {
+   "frames": 2,
+   "notes": "New since midday: 'Mahjong Community' reel, customer repost (Talulah). No product news."
+  },
+  "bambirdboutique": {
+   "frames": 3,
+   "notes": "Extended BF store hours Sat 11/21-Sun 11/22 (in-store, not a drop), Friendsgiving open play Wed 11/18 with early BF access (event), customer repost."
+  },
+  "missmahjongofficial": {
+   "frames": 10,
+   "notes": "Darling Lilac preview series: link sticker 'Darling Lilac coming Wednesday 10 AM CT' (already curated); racks shown with it; FIND: two new mats made to go with it, Hope Chest (hexagon quilt, from an 80-year-old quilt) and Pressed Flowers; not on the store. First frame Hallmark repost (old)."
+  },
+  "myfairmahjong": {
+   "frames": 1,
+   "notes": "Customer repost. No product news."
+  },
+  "bespoke_mahjong": {
+   "frames": 2,
+   "notes": "Town & Country 'best mahjong sets to gift' press frames (Gray Malin Getaway Dogs, existing). No product news."
+  },
+  "andersruffdesignco": {
+   "frames": 5,
+   "notes": "Creator promo BBB10, Mahjong Runway Santa reel, Dear Santa tiles preorder via creator code PINK (existing product), FIND: 'Bams & Bubbly is back in stock!' (store: preorder, ships Dec 4), Forever Mahjong reel."
+  },
+  "peacelovemahjong": {
+   "frames": 6,
+   "notes": "PINK30 daily deal (social sale, hidden, already in sheet), customer reposts, Mary Benson-style mat promo. No new product news."
+  },
+  "bird_and_bamboo": {
+   "frames": 1,
+   "notes": "Five-maker Christmas card photo (collab teaser already logged)."
+  },
+  "mahj_mood": {
+   "frames": 2,
+   "notes": "Customer repost; FIND: '4 more travel tile sets in stock' link sticker = White Pearl travel tiles restock."
+  },
+  "minimahjer": {
+   "frames": 2,
+   "notes": "Classroom repost, holiday gift promo. No product news."
+  },
+  "nolijunemahjong": {
+   "frames": 3,
+   "notes": "Folding table setup reels (existing), event repost. BF sale Nov 21 already logged from email."
+  }
+ },
+ "no_story": [
+  "charlestonmahjongclub"
+ ],
+ "frames_read": 37,
+ "finds": [
+  {
+   "brand": "Anders Ruff",
+   "what": "Bams & Bubbly tiles back on preorder ($450, ships Dec 4)",
+   "urgency": "NOW",
+   "curated": "just_dropped"
+  },
+  {
+   "brand": "Mahj Mood",
+   "what": "White Pearl travel tiles ($290) back in stock, small batch",
+   "urgency": "NOW",
+   "curated": "just_dropped"
+  },
+  {
+   "brand": "Miss Mahjong",
+   "what": "Hope Chest + Pressed Flowers mats shown with Darling Lilac, no date",
+   "urgency": "LATER (tiles NOW Wed 10am CT)",
+   "curated": "coming_soon (merged into Darling Lilac item)"
+  }
+ ],
+ "not_logged": [
+  "PLM PINK30 daily deal: social-sourced sale, stays hidden",
+  "Bam Bird BF store hours: in-store news, not a drop"
+ ],
+ "notes": "Chrome tab was viewed via the story viewer; a Chrome connection drop mid-run meant Miss Mahjong was re-read from frame 1. No Miss Mahjong mat screenshot saved (screenshots land on Tiffany's computer, not the repo); mats are merged into the Darling Lilac item, which has its product photo.",
+ "push": "none: section 00000 (Nov 12) stops NOW pushes; sheet + page updated instead"
+}

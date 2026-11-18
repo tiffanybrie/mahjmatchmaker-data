@@ -1068,12 +1068,12 @@
    },
    "mats_source": "Claude's own picks (Tiffany Nov 7 7:03pm: 'You take them, just like you did this one'), not her picks yet",
    "racks_source": "Claude's own picks: Bam Bird's own 19in wood racks, one per tile colour (Lagoon = backs, Mulberry = the crak frames), same shape so they lie the same",
-   "_nov07": "Colours measured from Bam Bird's Deco listing photos (backs tray img 07, faces tray img 16, pile img 14) and checked by eye. Bam Bird's own words: 'two jewel-toned colorways: Lagoon and Mulberry', 'inspired by the bold elegance of the Art Deco era'. Same faces on every colourway. Top 3: Reba #1 (her favourite Deco pairing Oct 27), Wren #2, Deco Dragon (Mulberry) #3 = Bam Bird's own sister mat (pair rule: never #1; her Oct 26 rule: Lagoon tiles on the MULBERRY Dragon, never Lagoon on Lagoon).",
+   "_nov07": "Colours measured from Bam Bird's Deco listing photos (backs tray img 07, faces tray img 16, pile img 14) and checked by eye. Bam Bird's own words: 'two jewel-toned colorways: Lagoon and Mulberry', 'inspired by the bold elegance of the Art Deco era'. Same faces on every colourway. Top 3: Reba #1 (her favorite Deco pairing Oct 27), Wren #2, Deco Dragon (Mulberry) #3 = Bam Bird's own sister mat (pair rule: never #1; her Oct 26 rule: Lagoon tiles on the MULBERRY Dragon, never Lagoon on Lagoon).",
    "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 7 BamBird_40K_and_Christmas_-102.jpg (variant Lagoon / Lucite Display Box)",
    "_nov08": "Tiffany Nov 8 review: top 3 = Reba, Viola (moved up at her ask), Deco Dragon (Mulberry); TNT recs lead the album itself."
   },
   "deco-mulberry": {
-   "name": "Deco (Mulberry)",
+   "name": "Deco Mulberry",
    "col": "#7a2c55",
    "brand": "Bam Bird Boutique",
    "sub": "Mulberry backs with a gold-foil deco palm",
@@ -1173,7 +1173,7 @@
    "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 8 BamBird_40K_and_Christmas_-83.jpg (variant Mulberry / Lucite Display Box)"
   },
   "deco-indigo": {
-   "name": "Deco (Indigo)",
+   "name": "Deco Indigo",
    "col": "#253a66",
    "brand": "Bam Bird Boutique",
    "sub": "Indigo backs with a gold-foil deco palm",
@@ -1225,7 +1225,7 @@
     ]
    ],
    "racks": [
-    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Indigo",
     "Bam Bird Boutique Mulberry Wood"
    ],
    "rack_imgs": {
@@ -1270,7 +1270,8 @@
    "mats_source": "Claude's own picks (Tiffany Nov 7 7:03pm: 'You take them, just like you did this one'), not her picks yet",
    "racks_source": "Claude's own picks: Bam Bird's own 19in wood racks in Lagoon (her teal bams) + Mulberry (her crak frames), never Indigo on Indigo; Tiffany Oct 27 put Indigo with Bam Bird Lagoon racks",
    "_nov07": "Indigo back = Bam Bird's Indigo showroom photo (#2a3b5e) + FYM table-view wall (#233862, config/tableview-back-colors.json bam-bird-boutique-deco-indigo), checked by eye against the bag pile (listing img 18). Faces = same as Lagoon/Mulberry. Top 3: Peacock Garden (her Oct 27 two-colour pick: Indigo/Peacock Garden), Savannah (her Oct 27 'put Indigo on the green mat'), Deco Dragon (Mulberry) #3 = sister mat (never #1, never the Indigo Dragon). Indigo SOLD OUT on bambirdboutique.com Nov 7 (all 3 variants).",
-   "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 1 BamBird_Deco-1-2.jpg (no variant attached; the navy box of the three stacked boxes; the only Indigo-variant images, 11 and 13, show bags or faces)"
+   "_photos": "Nov 7 late (Tiffany 11:47pm 'find the correct shot', never recolour): tile photo = the FYM faces|backs split (approved Oct 25). Cover = backs-only shot: listing img 1 BamBird_Deco-1-2.jpg (no variant attached; the navy box of the three stacked boxes; the only Indigo-variant images, 11 and 13, show bags or faces)",
+   "racks_note": "Tiffany Nov 17 3:11am: Indigo (navy) as the match-the-tiles rack instead of Lagoon (teal came out of nowhere); Mulberry for the mulberry frames. Bam Bird Indigo shows sold out on their site Nov 17."
   },
   "cabana-club": {
    "name": "Cabana Club",
@@ -1344,6 +1345,69 @@
     "Must love a pool day."
    ],
    "_note": "Nov 10 (album start, Matches & Catalog agent): colours measured from CMC listing image 3 (flat layout) + image 9 (back tile). Racks = CMC 20in wooden Key Lime / Azalea Pink / Winter White (tile brand's own racks; drawn bars in measured colours until a clean rack cut-out exists). Top mats = the coordinated mat only until her picks; the top 3 get filled from her standouts."
+  },
+  "origami-timber": {
+   "name": "Origami Timber",
+   "col": "#8c4329",
+   "brand": "Bam Bird Boutique",
+   "sub": "Timber backs with an etched origami crane",
+   "backs": [
+    [
+     "TIMBER",
+     "#8c4329",
+     "warm wood back"
+    ],
+    [
+     "IVORY",
+     "#f4efe6",
+     "face layer"
+    ]
+   ],
+   "faces": [
+    [
+     "DEEP TEAL",
+     "#1d5f6b"
+    ],
+    [
+     "COPPER",
+     "#c47a45"
+    ],
+    [
+     "GREEN",
+     "#2e7a52"
+    ],
+    [
+     "PLUM",
+     "#5b2c40"
+    ],
+    [
+     "SEAFOAM",
+     "#87bec2"
+    ]
+   ],
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "rack_imgs": {
+    "Bam Bird Boutique Walnut": "assets/racks/card/bam-bird-boutique-walnut.png",
+    "Bam Bird Boutique Olive": "assets/racks/card/bam-bird-boutique-olive.png"
+   },
+   "tile": "assets/tiles/v92/bam-bird-origami-timber-split.jpg",
+   "tag": [
+    "Warm wood + jewel tones",
+    "teal, copper & green faces"
+   ],
+   "mats": [],
+   "mat_imgs": {},
+   "shop": "Shop Origami · Bam Bird Boutique",
+   "shop_m": "Shop Origami · Bam Bird Boutique",
+   "profile_line": [
+    "Seeking: deep teal, copper or forest green.",
+    "Must love a warm wood table."
+   ],
+   "_measured": "Nov 16 2026: back median rgb(140,67,41) from the FYM split photo right half; faces k-means on the left half (teal #0e525e 31%, copper #bf7c54 18%, seafoam-teal #3e8486 17%, copper-brown 17%); plum + green read by eye from winds/bams.",
+   "racks_note": "Tiffany Nov 17 1:28am: Walnut + Lagoon Wood (Olive 'isn't it'). B&B Forest Green is a very good green for these tiles (use for mat racks); Mahjong Register Navy looks good; wood tones (PLM Acrylic Burl, PLM Oak, OMM Burl) beat one-off mustard; no tortoise, no Peacock Teal, no Miss Mahjong Jade & Brass, PLM Dark Green is the wrong (too deep) green."
   }
  },
  "_note_oct19_catchup": "Oct 19 catch-up: shangri-la, lilac-soiree, preppy-soiree, spring-love, sunday-tile-set got mat_imgs/rack_imgs and were rendered with the existing style. They use 'tag' (factual). When Tiffany approves the Papaya profile_line style, add profile_line to each set and re-run build.py <key>; nothing else changes."

@@ -38,7 +38,8 @@
     "note": "The Find Your Mat-ch photo (faces | backs). A smaller photo, so a little softer."
    }
   ],
-  "default": 0
+  "default": 0,
+  "chosen": 0
  },
  "faces": {
   "dir": "assets/tiles/faces/deco/clean/",
@@ -247,25 +248,44 @@
   "picks": [
    {
     "key": "dragon-green",
-    "why": "The teal-framed dragon in gold: her teal bams on a face."
+    "why": "The teal-framed dragon in gold, her back colour on a face."
    },
    {
     "key": "dragon-red",
-    "why": "Its mulberry twin: her back colour, framed."
+    "why": "Its mulberry twin: her sister colour."
    },
    {
     "key": "bam-1-crane",
     "why": "The signature tile: a gold-winged crane with a teal crest."
    },
    {
-    "key": "wind-south",
-    "why": "A mulberry heart in a peacock crest: her back colour, in bloom."
+    "key": "wind-east",
+    "why": "A gold peacock feather: the gold palm on her back, on the face."
+   },
+   {
+    "key": "flower-iris-gold",
+    "why": "Your pick."
+   },
+   {
+    "key": "flower-iris-navy",
+    "why": "Your pick."
    },
    {
     "key": "joker-rose-lion",
-    "why": "The rose lion in teal stripes: her two colours, swapped."
+    "why": "Your pick."
    }
-  ]
+  ],
+  "shared_from": "deco-lagoon (Tiffany Nov 17 3:03am)",
+  "her": {
+   "round": 1,
+   "keys": [
+    "dragon-green",
+    "dragon-red",
+    "bam-1-crane",
+    "wind-south",
+    "joker-rose-lion"
+   ]
+  }
  },
  "pool": {
   "size": 1686,
@@ -2785,7 +2805,89 @@
  "rank": {
   "note": "Standouts: Viola, Caroline in Peacock, Deco Dragon (Lagoon), Wren, Ocean Florals, Spring Blooms (deep teal with berry/pink: her two colours). No TNT or other-group recs for Mulberry."
  },
- "rounds": [],
+ "rounds": [
+  {
+   "round": 1,
+   "sent": "2026-11-11T12:40",
+   "url": "https://claude.ai/artifact/FAiTL4JE8X4sjekeK8VJuE",
+   "note": "fresh review page (Nov 8 re-pull); Mulberry Plum Scallop card re-rendered from YOLO flat render (gate 8b)"
+  },
+  {
+   "round": 1,
+   "applied_at": "2026-11-17T03:28:13-05:00",
+   "changes": [
+    "Put back in: Deco Dragon (Mulberry), YOTD Plum, Mirage, Scarlett",
+    "Faces: dragon-green, dragon-red, bam-1-crane, wind-south, joker-rose-lion (5)"
+   ],
+   "anything": "",
+   "done": true,
+   "answers": {
+    "adds": [],
+    "anything": "",
+    "cover": 0,
+    "done": true,
+    "faces": [
+     "dragon-green",
+     "dragon-red",
+     "bam-1-crane",
+     "wind-south",
+     "joker-rose-lion"
+    ],
+    "finds": {},
+    "notes": {},
+    "order": {
+     "hol": [
+      "soir-e-all-day-poinsettia-party",
+      "lets-be-besties-winter-jewel",
+      "oh-my-mahjong-yuletide"
+     ],
+     "main": [
+      "britt-mills-viola",
+      "mahj-and-vine-caroline-in-peacock",
+      "bam-bird-boutique-deco-dragon-lagoon",
+      "britt-mills-wren",
+      "lets-be-besties-ocean-florals",
+      "sunday-mahjong-spring-blooms-premium",
+      "piper-chase-studios-tiger-fans",
+      "mahjong-register-peony-sociale-premium",
+      "bam-bird-boutique-deco-neoprene",
+      "peace-love-mahjong-dark-teal-cocktail-hour",
+      "oh-my-mahjong-jade",
+      "mahj-mood-emerald-cove-mat",
+      "that-mahjong-moment-evergreen",
+      "wren-mats-year-of-the-snake",
+      "mahj-mood-mahj-in-bloom-mat",
+      "lets-be-besties-the-mariner",
+      "mahjong-register-pretty-in-plum-premium",
+      "mahj-mood-fall-fling-mat",
+      "britt-mills-flourish-neoprene",
+      "britt-mills-regal-bloom-neoprene",
+      "wren-mats-mulberry-and-sage",
+      "my-fair-mahjong-garden-party-mulberry",
+      "bespoke-mahjong-yotd-raspberry",
+      "anders-ruff-burgundy-grove",
+      "bougie-mahjong-gilded-peacock",
+      "oh-my-mahjong-hawthorne",
+      "royal-mahjong-society-crown-jewels",
+      "lets-be-besties-peacock-flair",
+      "anders-ruff-purple-and-aqua-marble",
+      "yolo-mahjong-plum-scallop"
+     ]
+    },
+    "ordering_off": false,
+    "putin": [
+     "lo-bam-bird-boutique-deco-dragon-mulberry",
+     "lo-bespoke-mahjong-yotd-plum",
+     "lo-oh-my-mahjong-mirage",
+     "lo-britt-mills-scarlett"
+    ],
+    "round": 1,
+    "set": "deco-mulberry",
+    "updated": "2026-11-17T08:25:04.536Z",
+    "v": {}
+   }
+  }
+ ],
  "catalog_checked": {
   "at": "2026-11-08T13:41:05-05:00",
   "shopmy_new": 58,
@@ -2911,7 +3013,7 @@
   ],
   "partner_swept_at": "2026-11-08T18:43:05+00:00"
  },
- "review_url": "https://claude.ai/artifact/8V74MMkepN9TnVCF5cRNAw",
+ "review_url": "https://claude.ai/artifact/FAiTL4JE8X4sjekeK8VJuE",
  "discovery": {
   "at": "2026-11-08T14:04:25-05:00",
   "searches": [
@@ -3031,5 +3133,8 @@
   "misses_added": [],
   "note": "Light targeted search (12 searches: Google, Etsy, Amazon via WebSearch/WebFetch). Terms from the colour card (teal/berry/navy/gold), mood (art deco, jewel tone) and the faces (peacock feather, crane, iris, fan). Many Etsy hits were unavailable listings; Mahjong by SI (Target) is not a partner.",
   "complementary": "Complementary re-check: teal/emerald mats lead the standouts (Viola, Caroline in Peacock, Deco Dragon Lagoon, Wren, Ocean Florals, Spring Blooms); Jade, Emerald Cove, Evergreen, Year of the Snake in the album."
- }
+ },
+ "old_review_urls": [
+  "https://claude.ai/artifact/8V74MMkepN9TnVCF5cRNAw"
+ ]
 }

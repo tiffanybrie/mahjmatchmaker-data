@@ -121,6 +121,21 @@ for path,h,err in got:
             if len(set(ds))>1: fails.append(f'{path}: {len(set(ds))} different verified dates {sorted(set(map(str,ds)))}')
             if (today-min(ds)).days>MAXAGE: fails.append(f'{path}: verified {min(ds)} is {(today-min(ds)).days} days old')
     brand_pct_fails(path,t,path)
+    # SEO DESCRIPTION DATE (Tiffany Nov 13 2026 7:40am: "the verified line was in two places"): the meta description is
+    # what Google shows; it must carry the same verified date as the page, and no page may say an older month.
+    if path!='/mahjong-discount-codes':
+        dm2=re.search(r'<meta name="description" content="([^"]*)"',h); desc=html.unescape(dm2.group(1)) if dm2 else ''
+        MONRX='January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec'
+        mm=re.search(r'verified (?:on )?('+MONRX+r')\.?(?: (\d{1,2}),?)? (20\d\d)',desc,flags=re.I)
+        if mm and ds:
+            vis=max(ds); mon=mm.group(1)[:3].lower(); vmon=vis.strftime('%b').lower()
+            if mon!=vmon or (mm.group(2) and int(mm.group(2))!=vis.day):
+                fails.append(f'{path}: SEO description says "{mm.group(0)}" but the page says verified {vis} (Google shows the description)')
+        for m in re.finditer(r'(?:launch(?:es|ing)?|drops?|releases?|coming)\s+(?:on\s+)?('+MONRX+r')\.? (\d{1,2})\b',t,flags=re.I):
+            try:
+                d=datetime.datetime.strptime(f'{m.group(1)[:3]} {m.group(2)} {today.year}','%b %d %Y').date()
+                if d<today: fails.append(f'{path}: stale launch wording "{m.group(0)}" (date passed)')
+            except Exception: pass
     b=PB.get(path); tb=T.get(b,{}) if b else {}
     if tb.get('code_visible')=='image_only' and tb.get('code') and tb['code'] in body_text(h):
         fails.append(f'{path}: {b} code {tb["code"]} shows as visible TEXT (image/auto-apply link only, Tiffany Oct 30)')

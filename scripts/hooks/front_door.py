@@ -88,5 +88,33 @@ try:
     r=subprocess.run(['python3','scripts/checks/launch_48h_check.py'],capture_output=True,text=True,timeout=20)
     if r.returncode: out[0:0]=[l for l in r.stdout.splitlines() if l.strip()]
 except Exception: pass
+# Nov 10 10:40pm (Tiffany: the hidden Brand Watch page must keep up with every find; she checks it against what she sees).
+try:
+    import hashlib
+    _bw=json.load(open('site/livepatch/brand-watch/published.json'))
+    if hashlib.sha256(open('config/brand-watch-curated.json','rb').read()).hexdigest()!=_bw['curated_sha256']:
+        out.insert(0,'BRAND WATCH PAGE IS BEHIND the latest finds: run scripts/site_brand_watch.py + scripts/site_brand_watch_preview.py, publish site/livepatch/brand-watch/brand-watch-preview.html to '+_bw['artifact']+', then update site/livepatch/brand-watch/published.json (curated_sha256). Do it this turn.')
+except Exception: pass
+# Nov 10 10:33pm (Tiffany: new affiliates get forgotten and left out of everything): new partners with open onboarding steps.
+try:
+    r=subprocess.run(['python3','scripts/checks/partner_checklist.py','--front'],capture_output=True,text=True,timeout=30)
+    out[0:0]=[l for l in r.stdout.splitlines() if l.startswith('NEW PARTNER')]
+except Exception: pass
+# Nov 11 2:19pm (Tiffany: Fait à Main + Maison Mahj half set up; "no gap between what we say and what happens"):
+# every partner, in ANY of our partner lists, checked against the codes page AND the app (tile sets + mats).
+try:
+    r=subprocess.run(['python3','scripts/checks/partner_coverage.py','--front'],capture_output=True,text=True,timeout=40)
+    out[0:0]=[l for l in r.stdout.splitlines() if l.startswith('PARTNER HALF SET UP')]
+except Exception: pass
+# Nov 11 5:28pm (Tiffany: one FB group a day, approve the week in one place, "I want to be asked about Facebook groups every day").
+try:
+    r=subprocess.run(['python3','scripts/checks/fb_groups_check.py'],capture_output=True,text=True,timeout=10)
+    out[0:0]=[l for l in r.stdout.splitlines() if l.strip()]
+except Exception: pass
+# Nov 11 5:53pm (Tiffany: FYM is all or nothing; nothing half-ready in Table view / price / colour).
+try:
+    _rd=json.load(open('config/fym-readiness.json'))
+    if _rd.get('total_gaps'): out.append(f"FYM ALL-OR-NOTHING (OVERDUE): {_rd['total_gaps']} visible items not ready in every view/filter (" + ', '.join(f"{b}: {sum(c.values())}" for b,c in sorted(_rd['brands'].items(),key=lambda x:-sum(x[1].values()))[:6]) + "). Details config/fym-readiness.json; fix in the next FYM release.")
+except Exception: pass
 if out:
     print('=== FRONT DOOR (automatic, every message) ===\n'+'\n'.join(out)+'\nRule: if you tell Tiffany you will fix something, fix it BEFORE you reply, or add it to docs/OVERDUE.md in the same turn and tell her who/when.')

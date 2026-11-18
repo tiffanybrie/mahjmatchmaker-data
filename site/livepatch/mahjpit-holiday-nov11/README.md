@@ -1,0 +1,3 @@
+Mahj Pit Merry Merry Holiday Tiles (launched Nov 11 2026, $465, limited, TRAVEL size 0.79x1.26 but playable everyday). Holiday album (Tiffany Nov 11 1:08pm: jumps the line; Claude picks the mats, no swiping: bright colourful fun Christmas reds/party + Noli June NYE "Rochelle Didn't Make It to Midnight").
+Quick-look page: https://claude.ai/artifact/JGzFgUR5xx6Y3mnQWzLLnx (21 picks, Mahj Pit's own Ditsy Christmas Maraschino first).
+Open: her ok on tile photo (assets/launches/mahjpit-merry-merry-holiday/02.jpg) + travel-size album ok. Next: build holiday match cards (gen_hol pipeline) for the kept picks -> add to /holiday-mahjong-matches as a new set section; FYM holiday set.

@@ -1320,6 +1320,14 @@ try:
     print('FYM GATE INFO [169] ' + (_r169.stdout.strip().splitlines() or [''])[0])
     if _r169.returncode != 0: F.append('[169] Table view mats: ' + ' | '.join(l for l in _r169.stdout.splitlines()[1:] if l.startswith('[tv-mats]'))[:900])
 except Exception as _e: F.append(f"[169] Table view mats check did not run: {_e}")
+# [173] Nov 11 2026 (Tiffany 5:53pm: "Find Your Match is an all or nothing"; Table view must not split FYM into before/after worlds):
+#       every visible tile set / mat / rack must be ready in EVERY view and filter (Table view walls/class/decision, price, card colour,
+#       photo). Gaps live on Nov 11 are baselined (config/fym-readiness-baseline.json, OVERDUE); any NEW gap fails. scripts/checks/fym_all_or_nothing.py
+try:
+    _r173 = subprocess.run([sys.executable, REPO + 'scripts/checks/fym_all_or_nothing.py', B], capture_output=True, text=True, timeout=120)
+    print('FYM GATE INFO [173] ' + (_r173.stdout.strip().splitlines() or [''])[0])
+    if _r173.returncode != 0: F.append('[173] item not ready in every view (all or nothing): ' + ' | '.join(l.strip() for l in _r173.stdout.splitlines() if l.strip().startswith('NEW'))[:900])
+except Exception as _e: F.append(f"[173] all-or-nothing check did not run: {_e}")
 # [104] Oct 30 (rules audit GA4; CLAUDE.md FYM 0 "every publish goes to BOTH places"): the build's public "Version X.Y" label
 # == the newest site-app/fym-vNN on the fym-site-preview branch == the page-block pinned at the TOP of
 # site/livepatch/fym-preview-oct21/README.md (that pin is what gets pasted on Squarespace). WARNING by default (the README
@@ -2057,6 +2065,23 @@ try:
     if len(_r172['fails']) > 25: F.append(f"[172] ... {len(_r172['fails']) - 25} more link-route mismatches (python3 scripts/checks/link_route_check.py <build> --gate)")
     print('FYM GATE INFO [172] ' + '; '.join(_r172['info']) + (f"; {len(_r172['staged'])} staged (gallery follows the build)" if _r172['staged'] else ''))
 except Exception as _e: F.append(f"[172] link-route check did not run: {_e}")
+# [172b] Nov 11 2026 (Tiffany 4:15pm: products added before a brand is onboarded end up with generic links that earn nothing,
+#        "hard for us to discover after the fact"). Visible items of a code partner on a store where the code goes in the cart by
+#        link must carry /discount/<CODE> (or the affiliate ref); a brand with no confirmed code may have NO visible items.
+#        Plain links already live on Nov 11 are in config/code-link-baseline.json (warn); any other plain link FAILS.
+try:
+    import subprocess as _sp172b, tempfile as _tf172b
+    _j = _tf172b.mktemp(suffix='.json')
+    _idx = B if B.endswith('.html') else os.path.join(B, 'index.html')
+    _sp172b.run(['python3', REPO + 'scripts/checks/code_link_check.py', _idx, '--json', _j], capture_output=True, text=True)
+    _r = json.load(open(_j)); _base = json.load(open(REPO + 'config/code-link-baseline.json'))['items']
+    _new = {b: [x for x in xs if str(x) not in set(_base.get(b, []))] for b, xs in _r['plain'].items()}
+    for b, xs in _new.items():
+        if xs: F.append(f"[172b] {b}: {len(xs)} visible item(s) with a plain link (no code in the cart), e.g. {', '.join(map(str, xs[:3]))}")
+    for b, xs in _r['held_visible'].items(): F.append(f"[172b] {b} has no confirmed code but {len(xs)} item(s) are visible: hide them until the code works")
+    _old = sum(len([x for x in xs if str(x) in set(_base.get(b, []))]) for b, xs in _r['plain'].items())
+    if _old: print(f'FYM GATE WARN [172b] {_old} plain links from before Nov 11 still to convert (config/code-link-baseline.json)')
+except Exception as _e: F.append(f"[172b] code-link check did not run: {_e}")
 if W104:
     if '--release' in sys.argv:
         F.append("[104] artifact / website copy / README pin are not the same version: " + '; '.join(W104))

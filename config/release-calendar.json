@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-10T23:36:00Z",
- "updatedBy": "Partner watch Tue 6:35pm ET",
+ "updated": "2026-11-16",
+ "updatedBy": "Weekly release calendar refresh Mon",
  "rules": {
   "timing": {
    "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -127,14 +127,19 @@
    "brand": "Miss Mahjong",
    "product": "Miss Darling Lilac tile set",
    "type": "launch",
-   "window": "coming soon (no date)",
-   "status": "coming-soon tag, $425",
-   "source": "products.json tag coming-soon (created Oct 20)",
-   "sourceUrl": "https://missmahjong.com/products/miss-darling-mahjong-tile-set-lilac",
+   "window": "Wed Nov 18, 10am CT",
+   "status": "DATED: doors open Wed Nov 18 10am CT (IG Nov 12 + Nov 13); product page arrivalDate 2026-11-19; still coming-soon/unavailable Nov 16 scan",
+   "source": "Miss Mahjong IG Nov 12 (Dfp1bxnGepO) + Nov 13 reel (DfsIMGsBwhI); product page Jedi arrivalDate 2026-11-19 (scan Nov 16)",
+   "sourceUrl": "https://www.instagram.com/p/Dfp1bxnGepO/",
    "album": false,
    "affiliate": true,
    "priority": 2,
-   "contentTiming": "Swipe book exists (HQ). Post on launch day; watch for date."
+   "contentTiming": "No album (swipe book only). Launch-day story/mention Wed Nov 18 after 10am CT with MAHJMATCH; the hourly launch watch handles go-live.",
+   "date": "2026-11-18T10:00-06:00",
+   "windowStart": "2026-11-18",
+   "windowEnd": "2026-11-18",
+   "contentWindowStart": "2026-11-18",
+   "contentWindowEnd": "2026-11-20"
   },
   {
    "id": "miss-mini-travel",
@@ -169,8 +174,8 @@
    "brand": "Sunday Mahjong",
    "product": "Premium Mahjong Mats (all designs, incl. Rattan)",
    "type": "re-release",
-   "window": "'Now' (schedule Updated 9 Nov 2026: still 'Next drop = Premium Mahjong Mats (all designs)'; restocked, being added as inspected; email list notified once all listed).",
-   "status": "MOSTLY BACK. Sunday email Nov 8 'Sunday Updates': restocked many mats + new Regular-size vegan leathers (Chestnut, Ruby, Forrest), Blue Gingham, Green Gingham ('perfect for Christmas'), Blue Rattan; brought back Plum Panda, Sunday, Retro Plaid. Store scan Nov 9 7:35am ET: Retro Plaid, Green Rattan, Spring Blooms, Blue Diamond, Bold Blooms, Coastal Grandma show sold out (Retro Plaid likely sold through again).",
+   "window": "'Now' (schedule Updated 16 Nov 2026: Premium mats re-release 'Now', new designs Blue Rattan, Green Gingham, Blue Gingham joining)",
+   "status": "MOSTLY BACK. Sunday email Nov 8 'Sunday Updates': restocked many mats + new Regular-size vegan leathers (Chestnut, Ruby, Forrest), Blue Gingham, Green Gingham ('perfect for Christmas'), Blue Rattan; brought back Plum Panda, Sunday, Retro Plaid. Store scan Nov 9 7:35am ET: Retro Plaid, Green Rattan, Spring Blooms, Blue Diamond, Bold Blooms, Coastal Grandma show sold out (Retro Plaid likely sold through again). Nov 16 store scan: Retro Plaid, Green Rattan, Spring Blooms, Blue Diamond, Bold Blooms, Coastal Grandma, Festive Plaid show sold out.",
    "source": "Release schedule 'Next drop'",
    "sourceUrl": "https://sundaymahjong.com/pages/release-schedule",
    "album": "many album mats (Rattan = works_for_holiday)",
@@ -189,7 +194,7 @@
    "windowStart": "2026-11-23",
    "windowEnd": "2026-11-30",
    "status": "sold out",
-   "source": "Release schedule: 'restocking around Thanksgiving in limited quantities ... not offered for preorder ... email list notified' (re-checked Nov 2: still 'Around Thanksgiving'; also the site's 'Next tile release'); re-checked Nov 9 (Updated 9 Nov 2026): still 'Around Thanksgiving', still the site's 'Next tile release'; Nov 8 email gives no date",
+   "source": "Release schedule: 'restocking around Thanksgiving in limited quantities ... not offered for preorder ... email list notified' (re-checked Nov 2: still 'Around Thanksgiving'; also the site's 'Next tile release'); re-checked Nov 9 (Updated 9 Nov 2026): still 'Around Thanksgiving', still the site's 'Next tile release'; Nov 8 email gives no date; re-checked Nov 16 (schedule 'Updated 16 Nov 2026'): still 'Around Thanksgiving', still the site's 'Next tile release', no exact date",
    "sourceUrl": "https://sundaymahjong.com/pages/release-schedule",
    "album": "Sunday Blues",
    "affiliate": false,
@@ -206,7 +211,7 @@
    "window": "next restock around Thanksgiving (Nov 26)",
    "windowStart": "2026-11-23",
    "windowEnd": "2026-11-30",
-   "source": "Sunday email Oct 22 'Cola is back on tap'",
+   "source": "Sunday email Oct 22 'Cola is back on tap'; schedule Nov 16 still 'Around Thanksgiving'",
    "sourceUrl": "https://sundaymahjong.com/pages/release-schedule",
    "album": false,
    "affiliate": false,
@@ -238,7 +243,7 @@
    "window": "preorders deliver November; leftovers listed late Nov/early Dec",
    "windowStart": "2026-11-25",
    "windowEnd": "2026-12-11",
-   "source": "Release schedule",
+   "source": "Release schedule; schedule Nov 16 unchanged (preorders deliver Nov; leftovers late Nov/early Dec)",
    "sourceUrl": "https://sundaymahjong.com/pages/release-schedule",
    "album": false,
    "affiliate": false,
@@ -431,10 +436,11 @@
    "windowEnd": "2026-11-30",
    "source": "Bam Bird IG Oct 20",
    "sourceUrl": "https://www.instagram.com/reel/DeuhDVtp6QT/",
-   "album": false,
+   "album": "Deco (Indigo)",
    "affiliate": true,
-   "priority": 3,
-   "contentTiming": "Watch."
+   "priority": 2,
+   "contentTiming": "WINDOW ONLY (mid-late Nov, IG Oct 20): album is built but HOLD restock content until Bam Bird dates the Indigo drop; then tease 7-10 days out (or immediately if <7) + launch-day story. Indigo reels are also held by HQ albums-review-deco-nov12. Claude watches; not an HQ need until dated.",
+   "status": "sold out (Nov 16: Indigo variants available=false; Lagoon + Mulberry in stock; product tagged comingsoon)"
   },
   {
    "id": "bbb-tortoise",
@@ -469,7 +475,7 @@
    "brand": "Mahj Mood",
    "product": "90s, Mauve-Blush, White Pearl (Radiant Mood) preorder tiles ship",
    "type": "preorder",
-   "window": "ships late November",
+   "window": "White Pearl + Mauve-Blush ship late/end of November; 90s now ships December",
    "windowStart": "2026-11-16",
    "windowEnd": "2026-11-30",
    "source": "Product titles 'Pre-Order, Ships Late November'",
@@ -477,7 +483,8 @@
    "album": false,
    "affiliate": true,
    "priority": 3,
-   "contentTiming": "Watch."
+   "contentTiming": "Watch.",
+   "status": "Nov 16 scan: White Pearl \"Ships End of November\", Mauve-Blush \"Ships Late Nov\" (both available), 90s \"Ships December\" (unavailable)"
   },
   {
    "id": "mm-luxe-jade-racks",
@@ -515,12 +522,14 @@
    "product": "Fall collection: Brunette Burl tile set (fox Joker) + botanical tile set + new mats",
    "type": "launch",
    "window": "'coming soon' (shoot day Oct 20, Christmas tree in set)",
-   "source": "IG Sep 11, Sep 22, Oct 20",
-   "sourceUrl": "https://www.instagram.com/p/Ddm1P_ug1Rm/",
+   "source": "MRC IG Nov 3, Nov 4, Nov 5, Nov 13 (Dfs7V9zm5t_), Nov 14 (Dfuld1Nm1ID)",
+   "sourceUrl": "https://www.instagram.com/p/Dfuld1Nm1ID/",
    "album": false,
-   "affiliate": true,
+   "affiliate": false,
    "priority": 1,
-   "contentTiming": "Top earner brand: build swipe books as soon as product pages appear; post launch day."
+   "contentTiming": "Launched (no album yet; upcomingAlbums entry). Swipe books per the album workflow; no restock timing needed.",
+   "status": "LIVE in waves: Brunette Burl + Moody Tortoise tiles Nov 6 10am CT; mats (Foxhill Plaid, Sloane Floral, Ellington Navy, Hawthorne Plaid, Marlowe Green) ~Nov 13; Egyptian Alabaster + Amber Tortoise tiles new arrivals Nov 14; Cognac Burl racks due before Thanksgiving",
+   "notes": "HQ brands row mahjong-row-co status is \"removed\" (checked Nov 16), so affiliate=false per the calendar rule; confirm with Tiffany before using a code."
   },
   {
    "id": "plm-navy-vegan",
@@ -652,7 +661,8 @@
    "album": false,
    "affiliate": true,
    "priority": 3,
-   "contentTiming": "Holiday tile set; holiday mats only."
+   "contentTiming": "Holiday tile set; holiday mats only.",
+   "status": "first batch shipping from Nov 15 (IG Oct 20); product page now \"Expected delivery Dec\", preorder unavailable"
   },
   {
    "id": "lsf-coquette",
@@ -915,13 +925,13 @@
    "product": "Lake Day tile set preorder $390 + Lake Day mat + transparent blue racks",
    "type": "preorder",
    "date": "2026-11-20T10:00-06:00",
-   "status": "announced (affiliate email Oct 28); delivery targeted February",
-   "source": "Mahj Mood affiliate email Oct 28 12:26pm ET",
-   "sourceUrl": "https://mail.google.com/mail/?authuser=mahjmatchmaker@gmail.com#all/thread-f:1880311529352408712",
+   "status": "PUBLIC (Mahj Mood IG Nov 12): Lake Day set launches Thu Nov 20 10am CST, preorder, February shipping; first of the new Watercolor Series",
+   "source": "Mahj Mood IG Nov 12 (DfpVD8lxO6G); earlier affiliate email Oct 28",
+   "sourceUrl": "https://www.instagram.com/p/DfpVD8lxO6G/",
    "album": false,
    "affiliate": true,
    "priority": 3,
-   "contentTiming": "No album. Log."
+   "contentTiming": "No album. Public now, OK to mention on launch day (Nov 20) with the code; affiliate pipeline beyond Lake Day stays DO NOT POST."
   },
   {
    "id": "bambird-plaid-mats",
@@ -1207,7 +1217,7 @@
    "product": "Lilacée tiles (yellow-lilacee listing)",
    "type": "restock",
    "date": "2026-11-10T17:00-08:00",
-   "status": "sold out; restock CONFIRMED Tue Nov 10 5pm PT (IG Nov 8 9pm ET DfgNXkPo43d 'Lilacée in Yellow is coming back'); product page 'Expected Stock On November 10, 2026'; Nov 9 9:40am ET store re-check: still sold out; story frames assets/social/restock-lilacee-nov10/out; HQ needs/launch-virora-lilacee-nov10; Tiffany messaged Nov 9 (day before)",
+   "status": "LIVE 2026-11-10 5pm PT (IG DflQEDBD3je \"back in stock\"); Nov 16 scan: Lilacee shows sold out again | was: sold out; restock CONFIRMED Tue Nov 10 5pm PT (IG Nov 8 9pm ET DfgNXkPo43d 'Lilacée in Yellow is coming back'); product page 'Expected Stock On November 10, 2026'; Nov 9 9:40am ET store re-check: still sold out; story frames assets/social/restock-lilacee-nov10/out; HQ needs/launch-virora-lilacee-nov10; Tiffany messaged Nov 9 (day before)",
    "source": "Product page ETA (release scan Nov 2)",
    "sourceUrl": "https://www.instagram.com/p/DfgNXkPo43d/",
    "album": false,
@@ -1224,15 +1234,16 @@
    "product": "Black Friday sale (tiles, mats, racks)",
    "type": "sale",
    "date": "2026-11-16",
-   "status": "announced ('SAVE THE DATE: NOVEMBER 16!')",
-   "source": "PLM IG Nov 1 8pm ET",
-   "sourceUrl": "https://www.instagram.com/p/DfOE0UmMPwe/",
+   "status": "LIVE 2026-11-16: Early Black Friday, a different mat 30% off each day for 24h, Nov 16-20 (day 1 Borders Dark Pink, code PINK30); Black Friday extended store hours Nov 27",
+   "source": "PLM IG Nov 13 (Dfr5C4gTR1b) + Nov 16 (Dfsah0DzSuk)",
+   "sourceUrl": "https://www.instagram.com/p/Dfsah0DzSuk/",
    "album": false,
    "affiliate": true,
    "priority": 2,
    "contentTiming": "Partner sale: include in the weekly codes post the week of Nov 16 + one story on Nov 16 (holiday mats/tiles from PLM).",
    "contentWindowStart": "2026-11-16",
-   "contentWindowEnd": "2026-11-16"
+   "contentWindowEnd": "2026-11-16",
+   "windowEnd": "2026-11-20"
   },
   {
    "id": "ar-brownstone-bloom-wic",
@@ -1455,7 +1466,7 @@
    "windowStart": "2026-11-05",
    "windowEnd": "2026-11-30",
    "date": null,
-   "status": "teased IG Nov 5 8:43am ET; product not named (video withheld by Instagram); amahjline.com shows nothing new 9:45am ET",
+   "status": "teased IG Nov 5 8:43am ET; product not named (video withheld by Instagram); amahjline.com shows nothing new 9:45am ET | Nov 11: likely this = new Stamped-line set (see amahj-stamped-new-set-teaser-nov11)",
    "source": "IG @amahjline Nov 5",
    "sourceUrl": "https://www.instagram.com/reel/DfXKgl6pwy_/",
    "album": false,
@@ -1502,7 +1513,7 @@
    "window": "LIVE Tue Nov 10 for email subscribers (early access, email 6:55am ET); public opening next; next batch December",
    "windowStart": "2026-11-10",
    "windowEnd": "2026-11-20",
-   "status": "LIVE (subscriber early access) 2026-11-10; $425; product hidden from public store at 9:55am ET",
+   "status": "LIVE (subscriber early access) 2026-11-10; $425; product hidden from public store at 9:55am ET | Nov 12 IG: next-batch preorders open once the first batch ships; next shipment December (email Nov 10).",
    "source": "IG @charlestonmahjongclub Nov 5",
    "sourceUrl": "https://www.instagram.com/reel/DfX1w9hRo7l/",
    "album": false,
@@ -1536,13 +1547,13 @@
    "window": "Wed Nov 11, 10am CT",
    "windowStart": "2026-11-11",
    "windowEnd": "2026-11-11",
-   "status": "Coming Soon on store since Nov 3 (sold out/unavailable Nov 6 9:45am ET); mentor presale Nov 5-6; public IG reveal Nov 6 7am ET (DfZjqoCScnJ, 'which tile and mat pairings do you want to see?')",
+   "status": "LIVE 2026-11-11 10am CT; SOLD OUT by Nov 16 (store scan: Juniper tiles + Lotus Cove mat available=false, no restock date) | was: Coming Soon on store since Nov 3 (sold out/unavailable Nov 6 9:45am ET); mentor presale Nov 5-6; public IG reveal Nov 6 7am ET (DfZjqoCScnJ, 'which tile and mat pairings do you want to see?')",
    "source": "OMM Mahji Minute email Nov 2 + IG Nov 6",
    "sourceUrl": "https://www.instagram.com/reel/DfZjqoCScnJ/",
    "album": "Juniper (album set built, waits on her picks by Nov 9)",
    "affiliate": true,
    "priority": 1,
-   "contentTiming": "Album live with the launch; group post per the Papaya precedent (needs/launch-juniper-mahjong-tiles)."
+   "contentTiming": "Launch done. Juniper album content: hold any restock content until OMM dates a restock (watch weekly). Parked Juniper x Palm Royale posts sit in Planoly review week (Dec 9) per the social workflow."
   },
   {
    "id": "plm-40kmat-flash-nov6",
@@ -1601,7 +1612,7 @@
    "windowStart": "2026-11-07",
    "windowEnd": "2026-11-07",
    "window": "Sat Nov 7, 5pm PT",
-   "status": "announced IG Nov 6 (DfaF8KTjAiB)",
+   "status": "LIVE 2026-11-07 5pm PT (IG Dfdol0EDdnf, launch price $49)",
    "source": "IG @viroramahjongofficial",
    "sourceUrl": "https://www.instagram.com/p/DfaF8KTjAiB/",
    "album": false,
@@ -1808,7 +1819,7 @@
    "product": "Domino Blonde mat (rules + no-text editions)",
    "type": "restock",
    "date": "2026-11-10",
-   "status": "coming 2026-11-10 4pm CT (IG Nov 9 Dfh8nR1ttsi; store listed, sold out)",
+   "status": "DROPPED 2026-11-10 4pm CT (IG Dfh8nR1ttsi) | was: coming 2026-11-10 4pm CT (IG Nov 9 Dfh8nR1ttsi; store listed, sold out)",
    "sourceUrl": "https://www.instagram.com/reel/Dfh8nR1ttsi/",
    "album": false,
    "affiliate": true,
@@ -1863,7 +1874,7 @@
    "type": "launch",
    "date": "2026-11-10T10:00-06:00",
    "windowStart": "2026-11-10",
-   "status": "drops Tue Nov 10 10am CT (email Nov 9 + IG Nov 5); group post drafted",
+   "status": "LIVE 2026-11-10 10am CT (email Nov 9 + IG DfXaYEaR791) | was: drops Tue Nov 10 10am CT (email Nov 9 + IG Nov 5); group post drafted",
    "sourceUrl": "https://www.instagram.com/reel/DfXaYEaR791/",
    "album": false,
    "affiliate": true,
@@ -1913,7 +1924,7 @@
    "type": "launch",
    "date": "2026-11-11",
    "windowStart": "2026-11-11",
-   "status": "affiliate early access Nov 10; public Wed 11/11 8am (keep off social until then)",
+   "status": "PUBLIC LIVE 2026-11-11 8am (affiliate embargo lifted; IG DfnuodUBZEL)",
    "sourceUrl": "https://peacelovemahjong.com/products/cane-tile-clutch",
    "album": false,
    "affiliate": true,
@@ -1957,6 +1968,135 @@
    "album": false,
    "affiliate": true,
    "priority": 3
+  },
+  {
+   "id": "amahj-stamped-new-set-teaser-nov11",
+   "brand": "Amahj",
+   "product": "New tile set for the Stamped line (unnamed; mint-green tiles in teaser photo)",
+   "type": "coming soon",
+   "window": "soon, no date",
+   "windowStart": "2026-11-11",
+   "windowEnd": "2026-12-15",
+   "date": null,
+   "status": "sneak peek IG Nov 11 9:06am ET: 'Our Signature line got a new friend with On the Water… now it's our Stamped line's turn. Any guesses what's coming?' Teaser image saved assets/launches/amahj-stamped-teaser/",
+   "source": "IG @amahjline Nov 11",
+   "sourceUrl": "https://www.instagram.com/p/Dfmp5g0pvn5/",
+   "album": false,
+   "affiliate": true,
+   "priority": 3,
+   "contentTiming": "Watch the store; when it lists, FYM pending queue + Brand news sheet + group post on her yes."
+  },
+  {
+   "id": "mrc-alabaster-amber-tortoise-nov14",
+   "brand": "Mahjong Row & Co.",
+   "product": "Egyptian Alabaster + Amber Tortoise tile sets (Fall Collection)",
+   "type": "launch",
+   "date": "2026-11-14",
+   "window": "new arrivals Sat Nov 14",
+   "windowStart": "2026-11-14",
+   "windowEnd": "2026-11-14",
+   "status": "LIVE 2026-11-14 (IG \"New arrivals!\")",
+   "source": "MRC IG Nov 12 (DfiXPyuAEE7, coming soon) + Nov 14 (Dfuld1Nm1ID)",
+   "sourceUrl": "https://www.instagram.com/p/Dfuld1Nm1ID/",
+   "album": false,
+   "affiliate": false,
+   "priority": 2,
+   "contentTiming": "New sets: album workflow decides (add to upcomingAlbums MRC Fall item). No timing hold."
+  },
+  {
+   "id": "mrc-cognac-burl-racks",
+   "brand": "Mahjong Row & Co.",
+   "product": "Cognac Burl racks (pair with Brunette Burl)",
+   "type": "launch",
+   "window": "\"should be here before Thanksgiving\"",
+   "windowStart": "2026-11-16",
+   "windowEnd": "2026-11-25",
+   "status": "coming (no exact date)",
+   "source": "MRC IG Nov 13 (Dfs7V9zm5t_)",
+   "sourceUrl": "https://www.instagram.com/p/Dfs7V9zm5t_/",
+   "album": false,
+   "affiliate": false,
+   "priority": 3,
+   "contentTiming": "Racks only: record. Watch."
+  },
+  {
+   "id": "birdbamtiles-heritage-grandmillennial-nov17",
+   "brand": "Bird Bam Tiles",
+   "product": "The Heritage Collection + The Grandmillennial Collection (preorder)",
+   "type": "preorder",
+   "date": "2026-11-17T10:00-05:00",
+   "window": "Tue Nov 17, 10am ET",
+   "windowStart": "2026-11-17",
+   "windowEnd": "2026-11-17",
+   "status": "announced (emails Nov 11 + Nov 12 sneak peeks)",
+   "source": "Bird Bam Tiles emails info@birdbamtiles.com Nov 11 + Nov 12 (first newsletters seen)",
+   "sourceUrl": "https://mail.google.com/mail/?authuser=mahjmatchmaker@gmail.com#all/1a1d0118f79f952f",
+   "album": false,
+   "affiliate": false,
+   "priority": 3,
+   "contentTiming": "Non-partner, no album (our \"Heritage\" album is the retired OMM set, unrelated). Log only."
+  },
+  {
+   "id": "noli-june-bf-bundles-nov21",
+   "brand": "Noli June",
+   "product": "Black Friday mat bundles (2 mats $329 to 5 mats $699; free shipping 3+; Postcard Collection out of the Summer Archive until Dec 1)",
+   "type": "sale",
+   "window": "Sat Nov 21 - Mon Nov 30",
+   "windowStart": "2026-11-21",
+   "windowEnd": "2026-11-30",
+   "status": "affiliate pre-brief Nov 15; affiliate kit arrives Thu Nov 19. DO NOT POST before Sat Nov 21",
+   "source": "Noli June affiliate email Nov 15",
+   "sourceUrl": "https://mail.google.com/mail/?authuser=mahjmatchmaker@gmail.com#all/1a1dff6f6c608b9f",
+   "album": false,
+   "affiliate": true,
+   "priority": 2,
+   "contentTiming": "HOLD until Sat Nov 21 (brand embargo). Black Friday roundup slot Nov 21-30.",
+   "contentWindowStart": "2026-11-21",
+   "contentWindowEnd": "2026-11-30"
+  },
+  {
+   "id": "tala-rosewood-heirloom-nov13",
+   "brand": "Tala Mahj",
+   "product": "Rosewood (Heirloom Collection no.1, blush acrylic face + wood back, $1,595) + White Lotus display case $245",
+   "type": "launch",
+   "date": "2026-11-13",
+   "status": "LIVE 2026-11-13, made to order, ships ~12 weeks",
+   "source": "Tala email Nov 13",
+   "sourceUrl": "https://mail.google.com/mail/?authuser=mahjmatchmaker@gmail.com#all/1a1d55e8b44fc730",
+   "album": false,
+   "affiliate": false,
+   "priority": 3,
+   "contentTiming": "Non-partner. Log only."
+  },
+  {
+   "id": "sweetjojo-blue-melamine-preorder-nov11",
+   "brand": "Sweet Jojo Mahjong",
+   "product": "Blue Seaside + Blue Abstract melamine sets ($149.99, blue backs exclusive); Mint Green Royal Palm price drop $249.99; SAVE50 48h sale ended ~Nov 16",
+   "type": "preorder",
+   "date": "2026-11-11",
+   "status": "preorder LIVE 2026-11-11",
+   "source": "Sweet Jojo emails Nov 10, 11, 14",
+   "sourceUrl": "https://mail.google.com/mail/?authuser=mahjmatchmaker@gmail.com#all/1a1cc675721a4fe4",
+   "album": false,
+   "affiliate": false,
+   "priority": 3,
+   "contentTiming": "Affiliate application pending (HQ brands: applied). Log only."
+  },
+  {
+   "id": "mahjong-studios-bf-tbd",
+   "brand": "Mahjong Studios",
+   "product": "Black Friday sale (text subscribers early access)",
+   "type": "sale",
+   "window": "Black Friday, date not given",
+   "windowStart": "2026-11-27",
+   "windowEnd": "2026-11-30",
+   "status": "coming soon (email Nov 8)",
+   "source": "Mahjong Studios welcome email Nov 8",
+   "sourceUrl": "https://mail.google.com/mail/?authuser=mahjmatchmaker@gmail.com#all/1a1bc7106261ee12",
+   "album": false,
+   "affiliate": true,
+   "priority": 3,
+   "contentTiming": "Watch for dates; Black Friday roundup."
   }
  ],
  "sources": {
@@ -1966,7 +2106,7 @@
   "gmail": "mahjmatchmaker@gmail.com (Gmail connector). tiffanybrie@ is not visible to the connector."
  },
  "newsletters": {
-  "checked": "2026-11-09, mahjmatchmaker@gmail.com",
+  "checked": "2026-11-16, mahjmatchmaker@gmail.com",
   "receiving": [
    {
     "brand": "Oh My Mahjong",
@@ -2042,16 +2182,22 @@
     "brand": "Mahjong Studios",
     "from": "info@mahjongstudios.com",
     "kind": "customer newsletter (welcome 5% off + early Black Friday look; first seen Nov 8)"
+   },
+   {
+    "brand": "Bird Bam Tiles",
+    "from": "info@birdbamtiles.com",
+    "kind": "customer newsletter (first seen Nov 11; non-partner)"
+   },
+   {
+    "brand": "Charleston Mahjong Club",
+    "from": "store+88071602481@g.shopifyemail.com",
+    "kind": "customer newsletter via Shopify Email (first seen Nov 10: Cabana Club early access)"
    }
   ],
   "gaps": [
    {
     "brand": "Bam Bird Boutique",
     "signup": "https://www.bambirdboutique.com/pages/newsletter-signup-form"
-   },
-   {
-    "brand": "Charleston Mahjong Club",
-    "signup": "https://www.charlestonmahjongclub.com/ (footer 'Join the Club' signup)"
    },
    {
     "brand": "Middle & Main",
@@ -2093,8 +2239,8 @@
     "brand": "Mahjong Row & Co.",
     "added": "2026-10-26",
     "why": "Tiffany Oct 26 4:34pm: teased in their Oct 20 reel (https://www.instagram.com/reel/Deu6rYyu0LS/, shoot in Austin incl. Christmas tree); a comment suggests ~mid-November. Big, beautiful launch: must get into Find Your Mat-ch fast, get matched + promoted. Don't let it fall off.",
-    "state": "Watching: store launch watch (mahjongrowandco.com) + weekly IG brand watch",
-    "when": "~mid-November 2026 (unconfirmed)"
+    "state": "LAUNCHED (Nov 6 tiles; ~Nov 13 mats; Nov 14 Egyptian Alabaster + Amber Tortoise). Needs swipe books. Note: HQ brand row status \"removed\" (Nov 16).",
+    "when": "Launched Nov 6-14, 2026"
    }
   ]
  }

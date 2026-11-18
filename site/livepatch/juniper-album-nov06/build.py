@@ -1,5 +1,5 @@
 """Juniper full album set review page (Nov 6, Tiffany 1:11am: cover, colour card, colour wheel + colour theory,
-favourite faces run-through, dating profile + intro carousel, all the match cards).
+favorite faces run-through, dating profile + intro carousel, all the match cards).
 One phone-first page (390px). Faces: tap the heart on up to 4, then 'Copy my picks' (text for the chat). Claude's 4
 proposals are marked. Images = jsDelivr pinned to a pushed commit (pass the SHA).
 Usage: python3 build.py <commit sha> <out.html>"""

@@ -1,0 +1,20 @@
+{
+ "run": "2026-11-15T12:53 ET (12:37 slot)",
+ "source": "Instagram Stories via Claude in Chrome, signed in as @mahjmatchmaker",
+ "handles_checked": ["ohmymahjong", "bambirdboutique", "missmahjongofficial", "myfairmahjong", "bespoke_mahjong", "andersruffdesignco", "peacelovemahjong", "bird_and_bamboo", "mahj_mood", "minimahjer", "charlestonmahjongclub"],
+ "_who": "A_every_run from config/ig-watch-tiers.json. Dated launches in the next 7 days (Miss Mahjong Miss Darling Lilac 11/18, Mahj Mood Lake Day 11/20, PLM BF 11/16, Bam Bird BF 11/20) are all A-tier brands already in the list.",
+ "with_stories": {
+  "ohmymahjong": {"frames": 11, "notes": "Build-your-set promo (mat, tiles, storage, shufflers); 'The Story Behind Osler' founder tribute + Hawthorne mat / Osler tiles / Tortoise racks pairing + 'Shop the Osler Collection' (Osler already in catalog); reel repost. No new product news."},
+  "bambirdboutique": {"frames": 4, "notes": "Customer reposts (901bam, mahjongandmics), Boston event video, Fleastyle Holiday Tiles & Tea event Dec 5. No product news."},
+  "bespoke_mahjong": {"frames": 3, "notes": "Customer reposts, Audi x Beach Mahj event. No product news."},
+  "andersruffdesignco": {"frames": 15, "notes": "AR Rack and Roller in Charleston (existing Roll With It rack roller bag), store visit, Green Light Gatsby (existing) photoshoot set, customer reposts of Christmas / Dear Santa / Bams & Bubbly tiles. No product news."},
+  "peacelovemahjong": {"frames": 1, "notes": "Mahjong 101 lesson spots Sun 11/15. Not product news."},
+  "bird_and_bamboo": {"frames": 1, "notes": "Jingle Bam Jam event day 2. Not product news."},
+  "mahj_mood": {"frames": 1, "notes": "Customer repost. Not product news."},
+  "minimahjer": {"frames": 1, "notes": "Customer repost / play tip. Not product news."}
+ },
+ "no_active_story": ["missmahjongofficial", "myfairmahjong", "charlestonmahjongclub"],
+ "frames_read": 37,
+ "finds": [],
+ "ops_note": "Local clone could not pull (branch is ~8 GB behind; fetch timed out), so this record was written straight to the branch via the GitHub API. No finds, so no Brand news / curated / Brand Watch writes were needed."
+}

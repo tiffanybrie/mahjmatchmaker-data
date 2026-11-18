@@ -1,6 +1,6 @@
 {
-"_about": "FYM stock check (Tiffany Nov 1 12:04am: 'In stock only' filter). Checks every visible FYM mat / rack / tile product on its",
-"checked": "2026-11-01",
+"_about": "FYM stock check (In stock only filter). Nov 17: answers fetched in her Chrome, applied by builder/fym_fix_nov17/stock120.py.",
+"checked": "2026-11-17",
 "items": {
 "m:alb2:bespoke-mahjong-cranes-and-clouds": {
 "in": true,
@@ -43,9 +43,8 @@
 "how": "unknown (not a Shopify product link)"
 },
 "m:alb2:ozark-mah-jongg-carson-vintage": {
-"in": false,
-"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
-"price": 75.0
+"in": true,
+"how": "unknown (not a Shopify product link)"
 },
 "m:alb2:splash-of-color-preppy-animal-print": {
 "in": true,
@@ -57,7 +56,7 @@
 "how": "unknown (not a Shopify product link)"
 },
 "m:alb2:that-mahjong-moment-evergreen": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 85.0
 },
@@ -76,6 +75,10 @@
 "price": 175.0
 },
 "m:alb2:tigre-de-tartan-pop-art-roses": {
+"in": false,
+"how": "retired"
+},
+"m:alb2:tigre-de-tartan-queen-bee": {
 "in": false,
 "how": "retired"
 },
@@ -347,8 +350,7 @@
 },
 "m:bougiemahjong.com/azure-dolphin-cove-mahjong-mat": {
 "in": true,
-"how": "shopify product",
-"price": 80.0
+"how": "unknown (404 (product page gone))"
 },
 "m:bougiemahjong.com/azure-harbor-regatta-mahjong-mat": {
 "in": true,
@@ -397,13 +399,11 @@
 },
 "m:bougiemahjong.com/citrus-veranda-mahjong-mat": {
 "in": true,
-"how": "shopify product",
-"price": 80.0
+"how": "unknown (404 (product page gone))"
 },
 "m:bougiemahjong.com/coastal-hibiscus-plaid-mahjong-mat": {
 "in": true,
-"how": "shopify product",
-"price": 85.0
+"how": "unknown (404 (product page gone))"
 },
 "m:bougiemahjong.com/cobalt-garden-mahjong-mat": {
 "in": true,
@@ -422,8 +422,7 @@
 },
 "m:bougiemahjong.com/electric-citrus-social-mahjong-mat": {
 "in": true,
-"how": "shopify product",
-"price": 80.0
+"how": "unknown (404 (product page gone))"
 },
 "m:bougiemahjong.com/electric-hibiscus-mahjong-mat": {
 "in": true,
@@ -482,8 +481,7 @@
 },
 "m:bougiemahjong.com/hibiscus-ribbon-mahjong-mat": {
 "in": true,
-"how": "shopify product",
-"price": 80.0
+"how": "unknown (404 (product page gone))"
 },
 "m:bougiemahjong.com/imperial-koi-pond-mahjong-mat": {
 "in": true,
@@ -551,7 +549,7 @@
 "price": 80.0
 },
 "m:bougiemahjong.com/lotus-pavilion-mahjong-mat": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 80.0
 },
@@ -572,8 +570,7 @@
 },
 "m:bougiemahjong.com/nantucket-hydrangea-harbor-mahjong-mat": {
 "in": true,
-"how": "shopify product",
-"price": 80.0
+"how": "unknown (404 (product page gone))"
 },
 "m:bougiemahjong.com/navy-club-mahjong-mat": {
 "in": true,
@@ -582,13 +579,11 @@
 },
 "m:bougiemahjong.com/northpoint-club-mahjong-mat": {
 "in": true,
-"how": "shopify product",
-"price": 80.0
+"how": "unknown (404 (product page gone))"
 },
 "m:bougiemahjong.com/octopus-reef-mahjong-mat": {
 "in": true,
-"how": "shopify product",
-"price": 80.0
+"how": "unknown (404 (product page gone))"
 },
 "m:bougiemahjong.com/palm-beach-blossom-mahjong-mat": {
 "in": true,
@@ -762,7 +757,7 @@
 },
 "m:brittmillsdesign.com/dabney-neoprene-mahjong-mat-arriving-late-october": {
 "in": true,
-"how": "preorder (store says unavailable, link says arriving / pre-order)"
+"how": "shopify product"
 },
 "m:brittmillsdesign.com/daphne-leatherette-mahjong-mat": {
 "in": true,
@@ -780,7 +775,7 @@
 "price": 180.0
 },
 "m:brittmillsdesign.com/eden-neoprene-mahjong-mat": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 90.0
 },
@@ -799,7 +794,7 @@
 "how": "preorder (store says unavailable, link says arriving / pre-order)"
 },
 "m:brittmillsdesign.com/flora-neoprene-mahjong-mat": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 90.0
 },
@@ -819,7 +814,7 @@
 "price": 180.0
 },
 "m:brittmillsdesign.com/haven-neoprene-mahjong-mat": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 90.0
 },
@@ -849,7 +844,7 @@
 },
 "m:brittmillsdesign.com/isla-neoprene-mahjong-mat-arriving-late-november": {
 "in": true,
-"how": "v115 add (brand store Nov 4-5)"
+"how": "preorder (store says unavailable, link says arriving / pre-order)"
 },
 "m:brittmillsdesign.com/knox-neoprene-mahjong-mat": {
 "in": true,
@@ -857,7 +852,7 @@
 "price": 90.0
 },
 "m:brittmillsdesign.com/legacy-britt-mills-mahjong-mat": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 90.0
 },
@@ -867,7 +862,7 @@
 "price": 180.0
 },
 "m:brittmillsdesign.com/lucy-neoprene-mahjong-mat": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 90.0
 },
@@ -882,8 +877,8 @@
 "price": 180.0
 },
 "m:brittmillsdesign.com/merrywood-neoprene-mahjong-mat-arriving-late-october": {
-"in": false,
-"how": "brittmillsdesign.com /products/<handle>.js available=false, Nov 6 (v116)"
+"in": true,
+"how": "preorder (store says unavailable, link says arriving / pre-order)"
 },
 "m:brittmillsdesign.com/mia-leatherette-mahjong-mat": {
 "in": true,
@@ -910,8 +905,8 @@
 "price": 180.0
 },
 "m:brittmillsdesign.com/nutcracker-neoprene-mahjong-mat-arriving-late-october": {
-"in": false,
-"how": "brittmillsdesign.com /products/<handle>.js available=false, Nov 6 (v116)"
+"in": true,
+"how": "preorder (store says unavailable, link says arriving / pre-order)"
 },
 "m:brittmillsdesign.com/peacock-garden-leatherette-mahjong-mat": {
 "in": true,
@@ -920,7 +915,7 @@
 },
 "m:brittmillsdesign.com/peacock-garden-neoprene-mahjong-mat-arriving-late-october": {
 "in": true,
-"how": "preorder (store says unavailable, link says arriving / pre-order)"
+"how": "shopify product"
 },
 "m:brittmillsdesign.com/quinn-britt-mills-mahjong-mat": {
 "in": false,
@@ -983,12 +978,12 @@
 "price": 180.0
 },
 "m:brittmillsdesign.com/savannah-neoprene-mahjong-mat": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 90.0
 },
 "m:brittmillsdesign.com/scarlett-neoprene-mahjong-mat": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 90.0
 },
@@ -1056,15 +1051,41 @@
 "how": "shopify product",
 "price": 90.0
 },
+"m:case-mate.com/mahjong-mats?v=67665869209736": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:case-mate.com/mahjong-mats?v=67665869242504": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:case-mate.com/mahjong-mats?v=67665869275272": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:case-mate.com/mahjong-mats?v=67665869406344": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
 "m:charlestonmahjongclub.com/new-brown-vegan-leather-mahjong-mat-w-carrying-bag-copy": {
 "in": true,
-"how": "shopify product",
-"price": 85.0
+"how": "unknown (not a Shopify product link)"
 },
 "m:charlestonmahjongclub.com/the-hunt-club-neoprene-mat-toile-w-carrying-bag": {
 "in": true,
-"how": "shopify product",
-"price": 75.0
+"how": "unknown (not a Shopify product link)"
+},
+"m:dillards.com/southern-living-mahjong-bird-floral-mat": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:dillards.com/southern-living-mahjong-green-ikat-mat": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:dillards.com/southern-living-mahjong-status-cats-pink-mat": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
 },
 "m:faitamainstudio.com/automne-provencal": {
 "in": true,
@@ -1072,12 +1093,12 @@
 "price": 175.0
 },
 "m:faitamainstudio.com/le-drip-mat-summer-colors": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 175.0
 },
 "m:faitamainstudio.com/le-ete-indien-studio-print-no-1": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 175.0
 },
@@ -1087,7 +1108,7 @@
 "price": 175.0
 },
 "m:faitamainstudio.com/saint-remy-mat": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 175.0
 },
@@ -1100,6 +1121,10 @@
 "in": true,
 "how": "shopify product",
 "price": 175.0
+},
+"m:faitamainstudio.com/texas-mon-amour-mat-green": {
+"in": true,
+"how": "shopify product"
 },
 "m:faitamainstudio.com/texas-mon-amour-mat-peach": {
 "in": true,
@@ -1164,7 +1189,7 @@
 },
 "m:hutchandnook.com/mahjong-mat-moody-mat-songbird-bloom": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
 },
 "m:hutchandnook.com/mahjong-mat-peacock-garden": {
 "in": true,
@@ -1190,10 +1215,150 @@
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
+"m:letsbebesties.com/abstract-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/acrylic-flowers-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/agate-whirlpool-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/alabama-elephant-black-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/aloha-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/alpine-snowflakes-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/amalfi-fish-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/america-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/amethyst-garden-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/apres-skiing-in-teal-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/apres-skiing-in-teal-with-skiers-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/auburn-eagle-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/bam-bird-toile-pink-neoprene-mahjong-mat": {
+"in": true,
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/bamboo-lotus-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/basketball-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/beachy-wreath-christmas-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/bird-bam-cheers-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/birds-kissing-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/black-peacock-circle-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/black-snake-skin-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/black-tie-plaid-ohbon-studios-artist-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/bloom-blessings-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/blooming-lotus-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/blue-and-coral-floral-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/blue-bamboo-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/blue-hamsa-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/blue-hamsa-open-middle-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/blue-me-away-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/blue-octagon-ohbon-studios-artist-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/blue-palms-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/blue-willow-chinoiserie-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/blush-burst-ohbon-studios-artist-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
 "m:letsbebesties.com/bohemian-kaleidoscope-artist-collab-neoprene-mahjong-mat": {
 "in": true,
 "how": "shopify product",
 "price": 110.0
+},
+"m:letsbebesties.com/botanical-garden-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/botanical-jewel-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/bow-baubles-christmas-mahjong-mat": {
+"in": true,
+"how": "shopify product"
 },
 "m:letsbebesties.com/brooklyn-branches-mahjong-mat": {
 "in": true,
@@ -1215,10 +1380,98 @@
 "how": "shopify product",
 "price": 60.0
 },
+"m:letsbebesties.com/camellia-kaleidoscope-ohbon-studios-artist-mahjong-mat": {
+"in": true,
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/candy-cane-christmas-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/candy-stripe-confetti-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/catrina-blooms-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/cats-play-mahj-with-directions-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/champagne-toast-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/champange-bubbles-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/checkerboard-with-instructions-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/chino-monkey-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/chocolate-gator-leatherette-mahjong-mat": {
+"in": true,
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/christmas-bows-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/christmas-lights-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
 "m:letsbebesties.com/christmas-ribbon-rhapsody": {
 "in": true,
 "how": "shopify product",
 "price": 60.0
+},
+"m:letsbebesties.com/christmas-village-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/citrus-fronds-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/city-lights-octagon-ohbon-studios-artist-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/city-lights-ohbon-studios-artist-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/cold-steel-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/color-me-birdie-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/colorful-corners-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/community-garden-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/community-joy-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/confetti-pop-mahjong-mat": {
+"in": true,
+"how": "shopify product"
 },
 "m:letsbebesties.com/coral-lake-mahjong-mat": {
 "in": true,
@@ -1230,32 +1483,236 @@
 "how": "shopify product",
 "price": 110.0
 },
+"m:letsbebesties.com/cranberry-tapestry-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/crimson-black-paisley-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/crimson-crane-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/dark-blue-travel-stamps-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/dark-green-travel-stamps-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/dawgs-on-campus-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/day-of-the-dead-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/deep-blue-floral-mahjong-mat-with-instructions": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/deep-sea-besties-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
 "m:letsbebesties.com/diamond-pattern-with-directions-artist-collab-leatherette": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/disco-dot-with-simple-middle-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/disco-dots-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/dolly-smiles-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/dots-and-stripes-travel-mahjong-mat-mahj-game-tabletop-20-9-inch": {
+"in": true,
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/dusty-rose-peonies-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/easter-eggs-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/egyptian-eye-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/electric-zigzag-mahjong-mat": {
+"in": true,
+"how": "shopify product"
 },
 "m:letsbebesties.com/emerald-lace-mahjong-mat": {
 "in": true,
 "how": "shopify product",
 "price": 60.0
 },
+"m:letsbebesties.com/emerald-night-christmas-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/evergreen-medallion-ohbon-studios-artist-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/evil-eye-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/exotic-snakes-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/fair-isle-pink-snowflakes-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/fall-barn-quilt-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/fall-pop-garden-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/falling-flowers-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/festival-bloom-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/festival-of-lights-artist-collab-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/festive-frost-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/fiesta-flora-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/flaming-dreidels-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/floral-bam-bird-mahjong-mat-mahj-game-tabletop-31-5-inch": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/floral-instincts-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
 "m:letsbebesties.com/floral-kaleidoscope-leatherette-mahjong-mat": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/floral-pink-watercolor-travel-mahjong-mat-20-9-x-20-9-inch": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/floral-scrolls-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/florida-flamingo-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/flower-paper-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/flutter-for-a-cause-mahjong-mat-charity-donation-included": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/folk-garden-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
 },
 "m:letsbebesties.com/forest-haze-artist-collab-neoprene-mahjong-mat": {
 "in": true,
 "how": "shopify product",
 "price": 110.0
 },
+"m:letsbebesties.com/fruit-stripe-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/funny-lady-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/gallery-glow-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/game-day-tailgate-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/garden-glass-with-instructions-ohbon-studios-artist-mahjong-mat": {
+"in": true,
+"how": "unknown (404 (product page gone))"
+},
 "m:letsbebesties.com/garden-lilies-neoprene-artist-collab-mahjong-mat": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/garland-christmas-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/gatsby-glow-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/georgia-peach-mahjong-mat": {
+"in": true,
+"how": "shopify product"
 },
 "m:letsbebesties.com/giraffe-pattern-mahjong-mat": {
 "in": true,
 "how": "shopify product",
 "price": 110.0
+},
+"m:letsbebesties.com/go-blue-michigan-artist-collab-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/go-gators-artist-collab-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/grand-rose-medallion-chinoiserie-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/green-apres-skiing-in-teal-with-skiers-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/green-bamboo-blossoms-mahjong-mat": {
+"in": true,
+"how": "shopify product"
 },
 "m:letsbebesties.com/green-blooms-neoprene-mahjong-mat": {
 "in": true,
@@ -1267,35 +1724,299 @@
 "how": "shopify product",
 "price": 60.0
 },
+"m:letsbebesties.com/grinches-mahj-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/groovy-vibes-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/halloween-neoprene-mahjong-mat": {
+"in": true,
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/halloween-pumpkin-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/hanukkah-glow-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/happy-birthday-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/happy-day-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/happy-halloween-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/harvest-leaves-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/hawaiian-sun-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/hearts-outlined-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/highland-clover-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/ho-ho-ho-christmas-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/holly-coastal-christmas-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/holly-jolly-gingham-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/holly-starburst-leatherette-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/honeybees-and-hydrangeas-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/hummingbird-blossoms-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/hummingbird-spring-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/indigo-wings-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/jewel-garden-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/jewel-of-diwali-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/jewish-star-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/jewish-star-wave-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
 "m:letsbebesties.com/jingle-jungle-leatherette-mahjong-mat": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/jingle-jungle-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/just-wing-it-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/koi-swimming-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/lagoon-lace-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/lavender-flowers-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/lavender-gator-skin-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
 },
 "m:letsbebesties.com/leatherette-blue-octagon-pattern-no-53": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
 },
 "m:letsbebesties.com/leatherette-summer-wash": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
 },
 "m:letsbebesties.com/leatherette-summer-wash-copy": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
 },
-"m:letsbebesties.com/leatherette-tobacco-leaves": {
+"m:letsbebesties.com/leopard-love-mahjong-mat": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "shopify product"
+},
+"m:letsbebesties.com/lets-celebrate-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/london-calling-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/mad-for-plaid-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/magic-castle-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/mahjong-dragon-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/mandala-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/mandala-peonies-burst-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/mardi-gras-argyle-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/mardi-gras-celebration-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/martini-shaken-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/mediterranean-fishes-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
 },
 "m:letsbebesties.com/merry-bright-holiday-prism-artist-collab-neoprene-mahjong-mat": {
 "in": true,
 "how": "shopify product",
 "price": 110.0
 },
+"m:letsbebesties.com/merry-gnome-mas-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/mid-century-floral-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/mid-century-pop-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/midnight-mosaic-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
 "m:letsbebesties.com/mocha-kaleidoscope-artist-collab-leatherette-mahjong-mat": {
 "in": true,
 "how": "shopify product",
 "price": 110.0
+},
+"m:letsbebesties.com/mod-daisies-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/mod-flowers-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/mod-merry-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/morning-meadow-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/mountain-green-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/multi-hearts-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/mums-the-word-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/nantucket-floral-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/navy-and-red-pop-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/navy-dots-and-stripes-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/navy-green-sky-gator-skin-leatherette": {
+"in": true,
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/navy-sky-mint-gator-skin-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/neon-daze-queen-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/neon-peacock-circle-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/new-york-city-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/ocean-florals-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/ocean-jewel-ohbon-studios-artist-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/oh-canada-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/ohbon-studios-artist-collab-mahjong-mat": {
+"in": true,
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/olive-plaid-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/orange-and-pink-christmas-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
 },
 "m:letsbebesties.com/ornamental-charm-artist-collab-neoprene-mahjong-mat": {
 "in": true,
@@ -1307,10 +2028,102 @@
 "how": "shopify product",
 "price": 60.0
 },
+"m:letsbebesties.com/paint-feathers-simple-middle-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/painted-paradise-artist-collab-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/paisley-petals-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/palm-court-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/palm-fronds-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/pandas-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/par-3-argyle-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/paradise-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/peach-petals-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/peacock-and-the-lotus-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/peacock-circle-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/peacock-feathers-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/peacock-flair-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/peacock-lagoon-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
 "m:letsbebesties.com/peacock-on-a-branch-artist-collab-neoprene-mahjong-mat": {
 "in": true,
 "how": "shopify product",
 "price": 110.0
+},
+"m:letsbebesties.com/peonies-burst-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/periwinkle-open-heart-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/petals-after-dark-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/pickleball-club-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/pickleball-with-directions-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/pineapple-pattern-no-36-artist-collab-leatherette-mahjong-mat": {
+"in": true,
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/pink-and-blue-tie-dye-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/pink-and-green-gator-skin-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/pink-and-green-open-heart-mahjong-mat": {
+"in": true,
+"how": "shopify product"
 },
 "m:letsbebesties.com/pink-and-orange-tie-dye-mahjong-mat": {
 "in": true,
@@ -1322,10 +2135,98 @@
 "how": "shopify product",
 "price": 60.0
 },
+"m:letsbebesties.com/pink-paris-watercolor-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/pink-pizzazz-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/pink-trellis-ohbon-studios-artist-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/pink-voltage-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/plum-lotus-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/pop-bloom-with-directions-mahjong-mat": {
+"in": true,
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/pop-of-spring-mahjong-mat": {
+"in": true,
+"how": "unknown (lookup failed)"
+},
+"m:letsbebesties.com/porcelain-garden-ohbon-studios-artist-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/preppy-palms-mahjong-mat": {
+"in": true,
+"how": "unknown (lookup failed)"
+},
+"m:letsbebesties.com/primary-arabesque-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/primary-floral-red-and-white-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/primary-florals-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/pumpkin-patch-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/pups-at-play-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
 "m:letsbebesties.com/purple-and-pink-plaid-mahjong-mat": {
 "in": true,
 "how": "shopify product",
 "price": 60.0
+},
+"m:letsbebesties.com/purple-peacock-circle-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/rainbow-border-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/rainbow-flower-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/rainbow-sun-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/ramblin-wreck-artist-collab-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/red-and-blue-paisley-bandana-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/red-hearts-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/retro-palm-burst-mahjong-mat": {
+"in": true,
+"how": "shopify product"
 },
 "m:letsbebesties.com/retro-riviera-mahjong-mat": {
 "in": true,
@@ -1337,34 +2238,126 @@
 "how": "shopify product",
 "price": 60.0
 },
+"m:letsbebesties.com/rooster-sphere-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/rose-bunches-mahjong-mat-mahj-game-tabletop": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/rose-water-dots-and-stripes-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
 "m:letsbebesties.com/royal-peacock-mahjong-mat": {
 "in": true,
 "how": "shopify product",
 "price": 60.0
+},
+"m:letsbebesties.com/royal-peacock-mahjong-mat-2": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/safari-garden-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/sage-mosaic-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/sanford-stadium-uga-artist-collab-mahjong-mat": {
+"in": true,
+"how": "unknown (404 (product page gone))"
 },
 "m:letsbebesties.com/sapphire-leaves-mahjong-mat": {
 "in": true,
 "how": "shopify product",
 "price": 60.0
 },
+"m:letsbebesties.com/save-the-tatas-charity-donation-included-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/scandinavian-floral-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/sea-glass-mahjong-mat-mahj-game-tabletop": {
+"in": true,
+"how": "shopify product"
+},
 "m:letsbebesties.com/sea-of-hydrangeas-leatherette": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/sea-of-hydrangeas-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/seahorse-and-mermaids-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/secret-garden-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
 },
 "m:letsbebesties.com/sky-blue-florals-mahjong-mat": {
 "in": true,
 "how": "shopify product",
 "price": 60.0
 },
+"m:letsbebesties.com/slate-steel-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/snake-skin-leatherette": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/snakes-of-eden-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/snowflake-holiday-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
 "m:letsbebesties.com/southern-stained-glass-mahjong-mat": {
 "in": true,
 "how": "shopify product",
 "price": 60.0
 },
+"m:letsbebesties.com/spill-the-tea-plaid-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/spinning-dreidel-ohbon-studios-artist-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
 "m:letsbebesties.com/stained-glass-neoprene-mahjong-mat": {
 "in": true,
 "how": "shopify product",
 "price": 60.0
+},
+"m:letsbebesties.com/starfish-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/sunny-lemons-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/surfs-up-mahjong-mat": {
+"in": true,
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/swifties-mahj-mahjong-mat": {
+"in": true,
+"how": "shopify product"
 },
 "m:letsbebesties.com/talulah-panda-neoprene-mahjong-mat": {
 "in": true,
@@ -1375,6 +2368,38 @@
 "in": true,
 "how": "shopify product",
 "price": 60.0
+},
+"m:letsbebesties.com/teal-dots-and-stripes-with-directions-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/teal-marble-with-gold-splash-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/teal-tapestry-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/tee-time-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/tennis-club-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/texas-a-m-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/texas-horns-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/texas-yellow-rose-and-pink-celebration-mahjong-mat": {
+"in": true,
+"how": "shopify product"
 },
 "m:letsbebesties.com/the-country-house-mahjong-mat": {
 "in": true,
@@ -1396,14 +2421,50 @@
 "how": "shopify product",
 "price": 60.0
 },
-"m:letsbebesties.com/tobacco-leaves-blue-neoprene-mahjong-mat": {
+"m:letsbebesties.com/tiger-stripes-ohbon-studios-artist-mahjong-mat": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "shopify product"
+},
+"m:letsbebesties.com/tossing-tiles-ohbon-studios-artist-mahjong-mat": {
+"in": true,
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/travel-stamps-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/tropical-pop-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/tropical-travels-navy-directions-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/tropical-travels-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
 },
 "m:letsbebesties.com/tropicana-mahjong-mat": {
 "in": true,
 "how": "shopify product",
 "price": 60.0
+},
+"m:letsbebesties.com/uga-bulldog-artist-collab-mahjong-mat": {
+"in": true,
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/uga-bulldogs-mahjong-mat": {
+"in": true,
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/uga-white-bulldogs-mahjong-mat": {
+"in": true,
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/valentines-day-hearts-mahjong-mat": {
+"in": true,
+"how": "shopify product"
 },
 "m:letsbebesties.com/vibrant-purple-scarf-leatherette": {
 "in": true,
@@ -1417,25 +2478,68 @@
 },
 "m:letsbebesties.com/vibrant-vortex-with-simple-middle-mahjong-mat": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "shopify product"
+},
+"m:letsbebesties.com/vintage-noel-leatherette-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/walking-on-sunshine-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/watercolor-lilies-leatherette": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/watercolor-pink-blooms-artist-collab-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/welcome-to-the-80s-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/western-boot-mahjong-mat": {
+"in": true,
+"how": "shopify product"
 },
 "m:letsbebesties.com/white-pattern-no-10-artist-collab-leatherette-mahjong-mat": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/whoosh-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/wild-horses-artist-collab-leatherette-mahjong-mat": {
+"in": true,
+"how": "shopify product"
+},
+"m:letsbebesties.com/willow-wings-neoprene-mahjong-mat": {
+"in": true,
+"how": "shopify product"
 },
 "m:letsbebesties.com/winter-jewel-neoprene-mahjong-mat": {
 "in": true,
 "how": "shopify product",
 "price": 60.0
 },
+"m:letsbebesties.com/winter-wonderland-leatherette": {
+"in": true,
+"how": "unknown (404 (product page gone))"
+},
 "m:letsbebesties.com/year-of-the-horse-artist-collab-mahjong-mat": {
 "in": true,
-"how": "shopify product",
-"price": 110.0
+"how": "unknown (404 (product page gone))"
+},
+"m:letsbebesties.com/year-of-the-horse-artist-collab-mahjong-mat-mahj-game-tabletop-31-5-inch": {
+"in": true,
+"how": "unknown (404 (product page gone))"
 },
 "m:letsbebesties.com/zebra-leatherette-pattern": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
 },
 "m:luckydaughters.com/astor-place-mat": {
 "in": true,
@@ -1495,8 +2599,7 @@
 },
 "m:mahjandmoon.com/blue-pastel-palm-beach-mahjong-mat": {
 "in": true,
-"how": "shopify product",
-"price": 32.55
+"how": "unknown (not a Shopify product link)"
 },
 "m:mahjandmoon.com/blue-white-lemon-mahjong-mat": {
 "in": true,
@@ -2045,6 +3148,10 @@
 "how": "shopify product",
 "price": 65.0
 },
+"m:mahjmood.com/playing-for-keeps-mat": {
+"in": true,
+"how": "shopify product"
+},
 "m:mahjmood.com/rally-in-pink-mat-four-winds-social-collab-mat-benefitting-pink-fund": {
 "in": true,
 "how": "preorder (store says unavailable, link says arriving / pre-order)"
@@ -2073,40 +3180,9 @@
 "how": "shopify product",
 "price": 65.0
 },
-"m:mahjongco.com/gatsby-mahjong-mat": {
-"in": true,
-"how": "shopify product",
-"price": 70.0
-},
-"m:mahjongco.com/mahjong-by-si-highland-house-mahjong-mat": {
-"in": true,
-"how": "shopify product",
-"price": 50.0
-},
-"m:mahjongco.com/mahjong-by-si-the-hunt-club-mahjong-mat": {
-"in": true,
-"how": "shopify product",
-"price": 50.0
-},
-"m:mahjongco.com/mahjong-by-si-tracing-the-tides-mahjong-mat": {
-"in": true,
-"how": "shopify product",
-"price": 50.0
-},
-"m:mahjongco.com/mahjong-mat-vintage-oxblood-leather-sclp": {
-"in": false,
-"how": "shopify product",
-"price": 80.0
-},
-"m:mahjongco.com/the-lodge-mahjong-mat": {
-"in": true,
-"how": "shopify product",
-"price": 70.0
-},
 "m:mahjongregister.com/colette-s-kaleidoscope-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy": {
 "in": true,
-"how": "shopify product",
-"price": 115.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/emerald-leopard-in-bloom-premium-padded-mahjong-mat-33": {
 "in": true,
@@ -2120,8 +3196,7 @@
 },
 "m:mahjongregister.com/paisley-jubilee-premium-mahjong-mat-33-copy": {
 "in": true,
-"how": "shopify product",
-"price": 85.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/peach-spotted-cheetah-in-bloom-premium-mahjong-mat-33": {
 "in": true,
@@ -2130,13 +3205,11 @@
 },
 "m:mahjongregister.com/peach-spotted-cheetah-in-bloom-premium-mahjong-mat-33-copy": {
 "in": true,
-"how": "shopify product",
-"price": 85.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/peony-sociale-premium-mahjong-mat-33-copy": {
 "in": true,
-"how": "shopify product",
-"price": 85.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/pink-zebra-in-bloom-premium-padded-mahjong-mat-33": {
 "in": true,
@@ -2145,98 +3218,79 @@
 },
 "m:mahjongregister.com/pre-order-coral-aqua-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy": {
 "in": true,
-"how": "shopify product",
-"price": 65.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/pre-order-coral-aqua-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy-1": {
 "in": true,
-"how": "shopify product",
-"price": 80.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/pre-order-emerald-teal-celedon-green-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy": {
 "in": true,
-"how": "shopify product",
-"price": 80.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/pre-order-gold-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy": {
 "in": true,
-"how": "shopify product",
-"price": 65.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/pre-order-gold-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy-1": {
 "in": true,
-"how": "shopify product",
-"price": 115.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/pre-order-letters-to-santa-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy": {
 "in": true,
-"how": "shopify product",
-"price": 105.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/pre-order-letters-to-santa-premium-mahjong-mat-33-estimated-ship-sep-25th-2026-copy": {
 "in": true,
-"how": "shopify product",
-"price": 85.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/pre-order-purple-coral-pink-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy-copy": {
 "in": true,
-"how": "shopify product",
-"price": 80.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/pre-order-seafoam-green-slate-blue-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy": {
 "in": true,
-"how": "shopify product",
-"price": 80.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/pre-order-snowflake-lodge-premium-mahjong-mat-33-estimated-ship-sep-25th-2026-copy": {
 "in": true,
-"how": "shopify product",
-"price": 85.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/pre-order-very-merry-wreath-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy": {
 "in": true,
-"how": "shopify product",
-"price": 125.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/pre-order-very-merry-wreath-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy-1": {
 "in": true,
-"how": "shopify product",
-"price": 115.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/preorder-buttercup-cherie-premium-mahjong-mat-33-estimated-ship-oct-30th-copy": {
 "in": true,
-"how": "shopify product",
-"price": 85.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/preorder-butterfly-belle-premium-mahjong-mat-33-estimated-ship-oct-30th-copy": {
 "in": true,
-"how": "shopify product",
-"price": 80.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/preorder-holly-jolly-christams-mahjong-mat-33-estimated-ship-oct-1st-2026": {
 "in": true,
-"how": "shopify product",
-"price": 85.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/preorder-letters-to-santa-premium-mahjong-mat-33-estimated-ship-oct-1st-2026": {
 "in": true,
-"how": "shopify product",
-"price": 85.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/preorder-moonlit-crane-premium-mahjong-mat-33-estimated-ship-aug-20th-copy": {
 "in": true,
-"how": "shopify product",
-"price": 85.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/preorder-moonlit-crane-premium-mahjong-mat-33-estimated-ship-oct-30th": {
 "in": true,
-"how": "shopify product",
-"price": 85.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/preorder-pretty-in-plum-premium-mahjong-mat-33-estimated-ship-oct-30th-copy": {
 "in": true,
-"how": "shopify product",
-"price": 85.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/savannah-stripe-safari-club-collection-33-mahjong-mat": {
 "in": true,
@@ -2245,13 +3299,11 @@
 },
 "m:mahjongregister.com/snowflake-reindeer-lodge-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy": {
 "in": true,
-"how": "shopify product",
-"price": 115.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/sunday-sherbert-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy": {
 "in": true,
-"how": "shopify product",
-"price": 115.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/teal-rivera-leopard-33-mahjong-mat": {
 "in": true,
@@ -2260,58 +3312,117 @@
 },
 "m:mahjongregister.com/teal-rivera-leopard-33-mahjong-mat-copy": {
 "in": true,
-"how": "shopify product",
-"price": 65.0
+"how": "unknown (404 (product page gone))"
 },
 "m:mahjongregister.com/zebra-noir-safari-club-collection-33-mahjong-mat": {
 "in": true,
 "how": "shopify product",
 "price": 80.0
 },
-"m:mahjongrowandco.com/autumn-saffron-mat": {
-"in": true,
+"m:mahjpit.co/acid-in-the-library-may": {
+"in": false,
 "how": "shopify product",
-"price": 80.0
+"price": 98.0
 },
-"m:mahjongrowandco.com/ivy-reverie-mat": {
-"in": true,
+"m:mahjpit.co/all-vibes-mat": {
+"in": false,
 "how": "shopify product",
-"price": 80.0
+"price": 98.0
 },
-"m:mahjongrowandco.com/marigold-mahjong-mat": {
-"in": true,
+"m:mahjpit.co/deep-blue-mat": {
+"in": false,
 "how": "shopify product",
-"price": 80.0
+"price": 98.0
 },
-"m:mahjongrowandco.com/midnight-garden-mat": {
-"in": true,
+"m:mahjpit.co/flower-shop": {
+"in": false,
 "how": "shopify product",
-"price": 80.0
+"price": 98.0
 },
-"m:mahjongrowandco.com/mocha-bloom-dark-mat": {
+"m:mahjpit.co/inky-mat": {
 "in": true,
 "how": "shopify product",
-"price": 80.0
+"price": 98.0
 },
-"m:mahjongrowandco.com/mocha-bloom-light-mat": {
-"in": true,
+"m:mahjpit.co/mahjong-gaming-mat-el-tigre-rules-edition": {
+"in": false,
 "how": "shopify product",
-"price": 80.0
+"price": 195.0
 },
-"m:mahjongrowandco.com/osmanthus-grove-mat": {
+"m:mahjpit.co/mahjong-mat-ditsy-christmas-maraschino-w-rules": {
 "in": true,
 "how": "shopify product",
-"price": 80.0
+"price": 175.0
 },
-"m:mahjongrowandco.com/spring-awakening-porcelain-blue-mat": {
+"m:mahjpit.co/mahjong-mat-domino-oxblood": {
 "in": true,
 "how": "shopify product",
-"price": 80.0
+"price": 175.0
 },
-"m:mahjongrowandco.com/spring-awakening-warm-honey-mat": {
+"m:mahjpit.co/mahjong-mat-french-mural": {
 "in": true,
 "how": "shopify product",
-"price": 80.0
+"price": 175.0
+},
+"m:mahjpit.co/paint-party-mat": {
+"in": false,
+"how": "shopify product",
+"price": 98.0
+},
+"m:mahjpit.co/pixel-pusher-mat": {
+"in": false,
+"how": "shopify product",
+"price": 98.0
+},
+"m:mahjpit.co/poppylicious-mat": {
+"in": false,
+"how": "shopify product",
+"price": 98.0
+},
+"m:mahjpit.co/primary-on-broughton": {
+"in": false,
+"how": "shopify product",
+"price": 98.0
+},
+"m:mahjpit.co/primary-on-broughton-game-mat-copy": {
+"in": false,
+"how": "shopify product",
+"price": 98.0
+},
+"m:mahjpit.co/savannah": {
+"in": false,
+"how": "shopify product",
+"price": 98.0
+},
+"m:mahjpit.co/seaside-game-mat": {
+"in": false,
+"how": "shopify product",
+"price": 98.0
+},
+"m:mahjpit.co/the-butterfly-dolly-mat": {
+"in": false,
+"how": "shopify product",
+"price": 98.0
+},
+"m:mahjpit.co/the-line-mat": {
+"in": false,
+"how": "shopify product",
+"price": 98.0
+},
+"m:mahjpit.co/the-line-mat-copy": {
+"in": false,
+"how": "shopify product",
+"price": 98.0
+},
+"m:mahjpit.co/the-quigley-mat": {
+"in": false,
+"how": "shopify product",
+"price": 98.0
+},
+"m:mahjpit.co/turkey-dinner-mat": {
+"in": true,
+"how": "shopify product",
+"price": 98.0
 },
 "m:mahjsquadshop.com/bejeweled-dream-mahjong-mat": {
 "in": true,
@@ -2389,7 +3500,7 @@
 "price": 90.0
 },
 "m:mahjsquadshop.com/the-gamekeeper-mat": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 90.0
 },
@@ -2429,7 +3540,7 @@
 "price": 120.0
 },
 "m:mahjtilehaus.com/white-lotus-mat": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 145.0
 },
@@ -2509,7 +3620,7 @@
 "price": 75.0
 },
 "m:missmahjong.com/miss-cowgirl-lasso-mahjong-mat": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 70.0
 },
@@ -2564,7 +3675,7 @@
 "price": 70.0
 },
 "m:myfairmahjong.com/mahjong-mat-parquet-petal-31-x-31": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 65.0
 },
@@ -2658,6 +3769,22 @@
 "how": "shopify product",
 "price": 197.0
 },
+"m:nolijune.com/marlene-put-out-a-spread-on-the-eighth-night": {
+"in": true,
+"how": "shopify product"
+},
+"m:nolijune.com/rochelle-didnt-make-it-to-midnight": {
+"in": true,
+"how": "shopify product"
+},
+"m:nolijune.com/ruth-took-the-last-run-in-the-dark": {
+"in": true,
+"how": "shopify product"
+},
+"m:nolijune.com/shirley-wore-a-parka-to-the-beach": {
+"in": true,
+"how": "shopify product"
+},
 "m:nolijune.com/soiree-at-sues": {
 "in": true,
 "how": "shopify product",
@@ -2674,19 +3801,16 @@
 "price": 90.0
 },
 "m:ozarkmahjong.com/winslow-1920-noir-mat": {
-"in": false,
-"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
-"price": 75.0
+"in": true,
+"how": "unknown (not a Shopify product link)"
 },
 "m:ozarkmahjong.com/winslow-1920-original-navy-blue-mat": {
-"in": false,
-"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
-"price": 75.0
+"in": true,
+"how": "unknown (not a Shopify product link)"
 },
 "m:ozarkmahjong.com/winslow-1920-rouge-mat": {
-"in": false,
-"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
-"price": 75.0
+"in": true,
+"how": "unknown (not a Shopify product link)"
 },
 "m:peacelovemahjong.com/leather-mat-with-mat-tube?v=67801473679652": {
 "in": true,
@@ -2779,7 +3903,7 @@
 "price": 70.0
 },
 "m:peacelovemahjong.com/mahjong-mats-holiday?v=67570521375012": {
-"in": true,
+"in": false,
 "how": "shopify variant",
 "price": 70.0
 },
@@ -2794,7 +3918,7 @@
 "price": 70.0
 },
 "m:peacelovemahjong.com/mahjong-mats-holiday?v=67570521473316": {
-"in": true,
+"in": false,
 "how": "shopify variant",
 "price": 70.0
 },
@@ -2974,6 +4098,30 @@
 "price": 70.0
 },
 "m:rebecca:rainbow-row": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:rebeccaillustrated.com/canaries-mahjong-mat-preorder": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:rebeccaillustrated.com/chinoiserie-citrus-mahjong-mat-preorder": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:rebeccaillustrated.com/maxine-mahjong-mat-preorder": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:rebeccaillustrated.com/pink-gingham-mahjong-mat-preorder": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:rebeccaillustrated.com/pool-pawty-mahjong-mat-preorder": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:rebeccaillustrated.com/white-sailboats-mahjong-mat-preorder": {
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
@@ -3335,6 +4483,10 @@
 "how": "shopify product",
 "price": 80.0
 },
+"m:splashofcolorco.com/santa-baby-s-cocktail-hour-mahjong-mat-sleek-surface": {
+"in": true,
+"how": "shopify product"
+},
 "m:sundaymahjong.com/blue-diamond-premium-mahjong-mat": {
 "in": false,
 "how": "shopify product",
@@ -3356,7 +4508,7 @@
 "price": 89.0
 },
 "m:sundaymahjong.com/festive-plaid-premium-mahjong-mat": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 89.0
 },
@@ -3386,7 +4538,7 @@
 "price": 79.0
 },
 "m:sundaymahjong.com/rattan-premium-mahjong-mat-blue": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 69.0
 },
@@ -3409,6 +4561,14 @@
 "in": true,
 "how": "shopify variant",
 "price": 149.0
+},
+"m:sundaymahjong.com/vegan-leather-premium-mahjong-mat?v=forrest": {
+"in": true,
+"how": "shopify variant"
+},
+"m:sundaymahjong.com/vegan-leather-premium-mahjong-mat?v=ruby": {
+"in": true,
+"how": "shopify variant"
 },
 "m:talamahj.com/cabana-mahjong-mat-eucalyptus-ivory-with-soft-coral-fringe": {
 "in": true,
@@ -3454,6 +4614,10 @@
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
+"m:themahjonghouse.com/ruby-table-double-sided-mahjong-mat": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
 "m:theroyalmahjongsociety.com/cottage-mahjong-mat": {
 "in": true,
 "how": "shopify product",
@@ -3495,7 +4659,7 @@
 "price": 75.0
 },
 "m:tigredetartan.com/jardin-de-los-jefes-printed-needlepoint-canvas-14-mesh": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 395.0
 },
@@ -3525,7 +4689,7 @@
 "price": 175.0
 },
 "m:tigredetartan.com/mahjong-mat-domino-blonde": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 175.0
 },
@@ -3566,12 +4730,11 @@
 },
 "m:tigredetartan.com/mahjong-mat-nantucket-basket-rules-edition-round": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
 },
 "m:tigredetartan.com/mahjong-mat-no-cut-out-nantucket-basket-tdt-for-center-and-spring": {
 "in": true,
-"how": "shopify product",
-"price": 175.0
+"how": "unknown (404 (product page gone))"
 },
 "m:tigredetartan.com/mahjong-mat-plum-peony-rules-edition": {
 "in": true,
@@ -3613,6 +4776,134 @@
 "how": "shopify product",
 "price": 175.0
 },
+"m:tnuck.com/in-full-bloom-mat-in-tube": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:waitingonmarthahome.com/cocktails-double-sided-mahjong-mat-pre-order": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:waitingonmarthahome.com/tasslin-double-sided-mahjong-mat-pre-order": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:waitingonmarthahome.com/vintage-twinkle-double-sided-mahjong-mat-pre-order": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0FMPWC2S7": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0FQJBYPDZ": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0G1LV2VZ9": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0GZW7N1K5": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0GZYBH8SX": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0H2F86F6X": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0H2HVMT2W": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0H2XW7LJF": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0H7LYW7S2": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0H7MW297H": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0H82R6CKQ": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0H83P1L37": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0H8DLFXGV": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0H98V5YHR": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0H98XCQH7": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0HB314FBP": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0HC57C8QW": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0HCJ6FVP4": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0HCZ5G7NH": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0HCZBJ3ZD": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0HD73R4PF": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0HDZ9G4RN": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0HFZGHMR7": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0HG139XMD": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0HG532FPS": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0HGB77679": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0HGKYCBBB": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.amazon.com/dp/B0HK75566H": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
 "m:www.bambirdboutique.com/bandana-neoprene-mahjong-mat?v=53345465172277": {
 "in": true,
 "how": "shopify variant",
@@ -3644,7 +4935,7 @@
 "price": 80.0
 },
 "m:www.bambirdboutique.com/boots-bubbles-neoprene-mahjong-mat?v=67615057051957": {
-"in": false,
+"in": true,
 "how": "shopify variant",
 "price": 80.0
 },
@@ -3884,7 +5175,7 @@
 "price": 90.0
 },
 "m:www.bespokemahjong.com/cheetah-couture-instructional-mat-copy": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 60.0
 },
@@ -3910,13 +5201,11 @@
 },
 "m:www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-brooks-brothers-oxford-classic": {
 "in": false,
-"how": "shopify product",
-"price": 145.0
+"how": "kept earlier sold-out flag (404 (product page gone))"
 },
 "m:www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-brooks-brothers-oxford-classic#side-b": {
 "in": false,
-"how": "shopify product",
-"price": 145.0
+"how": "kept earlier sold-out flag (404 (product page gone))"
 },
 "m:www.bespokemahjong.com/double-sided-mat-double-the-fun-bespoke-x-corey-paige-electric-love-mat-copy": {
 "in": true,
@@ -4159,7 +5448,7 @@
 "price": 90.0
 },
 "m:www.bespokemahjong.com/year-of-the-dragon-black": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 90.0
 },
@@ -4209,69 +5498,57 @@
 "price": 0.0
 },
 "m:www.bespokemahjong.com/year-of-the-dragon-pink-blush-1": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 90.0
 },
 "m:www.charlestonmahjongclub.com/cabana-club-neoprene-mat": {
 "in": true,
-"how": "shopify product",
-"price": 75.0
+"how": "unknown (not a Shopify product link)"
 },
 "m:www.charlestonmahjongclub.com/cocktail-club-neoprene-mat-w-carrying-bag": {
 "in": true,
-"how": "shopify product",
-"price": 75.0
+"how": "unknown (not a Shopify product link)"
 },
 "m:www.charlestonmahjongclub.com/neoprene-club-mat-w-matching-bag-2-color-options": {
 "in": true,
-"how": "shopify product",
-"price": 75.0
+"how": "unknown (not a Shopify product link)"
 },
 "m:www.charlestonmahjongclub.com/new-ski-mat-with-red-sweater-border-and-toilet-pattern": {
 "in": true,
-"how": "shopify product",
-"price": 75.0
+"how": "unknown (not a Shopify product link)"
 },
 "m:www.charlestonmahjongclub.com/the-club-mat-2-color-options-copy": {
 "in": true,
-"how": "shopify product",
-"price": 75.0
+"how": "unknown (not a Shopify product link)"
 },
 "m:www.charlestonmahjongclub.com/the-migration-mat-2-color-options-copy": {
 "in": true,
-"how": "shopify product",
-"price": 75.0
+"how": "unknown (not a Shopify product link)"
 },
 "m:www.charlestonmahjongclub.com/the-migration-mat-in-pink-with-matching-mat-bag": {
 "in": true,
-"how": "shopify product",
-"price": 75.0
+"how": "unknown (not a Shopify product link)"
 },
 "m:www.charlestonmahjongclub.com/the-ski-club-mat-in-toile-w-matching-bag": {
-"in": false,
-"how": "shopify product",
-"price": 75.0
+"in": true,
+"how": "unknown (not a Shopify product link)"
 },
 "m:www.charlestonmahjongclub.com/vegan-leather-reversible-game-mat?v=50377156264241": {
 "in": true,
-"how": "shopify variant",
-"price": 85.0
+"how": "unknown (not a Shopify product link)"
 },
 "m:www.charlestonmahjongclub.com/vegan-leather-reversible-game-mat?v=50377156297009": {
 "in": true,
-"how": "shopify variant",
-"price": 85.0
+"how": "unknown (not a Shopify product link)"
 },
 "m:www.charlestonmahjongclub.com/vegan-leather-reversible-game-mat?v=50377156329777": {
 "in": false,
-"how": "shopify variant",
-"price": 85.0
+"how": "kept earlier sold-out flag (not a Shopify product link)"
 },
 "m:www.charlestonmahjongclub.com/vegan-leather-reversible-game-mat?v=50377156362545": {
 "in": true,
-"how": "shopify variant",
-"price": 85.0
+"how": "unknown (not a Shopify product link)"
 },
 "m:www.etsy.com/listing/4375629208/pink-rose-bamboo": {
 "in": true,
@@ -4457,6 +5734,18 @@
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
+"m:www.etsy.com/listing/4524615723/tropical-toucan-pink-palm-mahjong-mat": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4526609807/mahjong-mat-dark-wood-butterfly-funginon": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4527319810/william-morris-strawberry-thief-mahjong": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
 "m:www.etsy.com/listing/4527669219/the-luna-mahjong-mat": {
 "in": true,
 "how": "unknown (not a Shopify product link)"
@@ -4469,7 +5758,19 @@
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
+"m:www.etsy.com/listing/4529665568/mahjong-mat-non-slip-tabletop-mat-herbal": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4530808773/mahjong-mat-non-slip-tabletop-mat": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
 "m:www.etsy.com/listing/4530894010/preppy-chinoiserie-elephant-mahjong-mat": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4531322993/mahjong-mat-non-slip-tabletop-mat-lotus": {
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
@@ -4501,7 +5802,15 @@
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
+"m:www.etsy.com/listing/4540678803/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
 "m:www.etsy.com/listing/4541372273/custom-mahjong-mat-gift-for-her-scandi": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4541531978/pink-hummingbird-mahjong-mat-with": {
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
@@ -4525,11 +5834,55 @@
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
+"m:www.etsy.com/listing/4544761281/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4544774758/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4545375717/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4546673909/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4546686178/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
 "m:www.etsy.com/listing/4546870972/mahjong-chinoiserie-christmas-tree-game": {
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
+"m:www.etsy.com/listing/4547276996/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4547279166/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
 "m:www.etsy.com/listing/4547665298/my-lucky": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4548889339/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4548904608/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4549519810/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4549533535/personalized-mahjong-mat-sage-green": {
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
@@ -4569,11 +5922,27 @@
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
+"m:www.etsy.com/listing/4556179040/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4557223507/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4559186456/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
 "m:www.etsy.com/listing/4561868498/blythe": {
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
 "m:www.etsy.com/listing/4564264751/kiki": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4566953251/lobster-coastal-mahjong-mat": {
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
@@ -4645,11 +6014,23 @@
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
+"m:www.etsy.com/listing/4571747551/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4571764912/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
 "m:www.etsy.com/listing/4572624117/hey-punkin": {
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
 "m:www.etsy.com/listing/4573023179/benjamin-goes-snow-skiing": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4573770797/mahjong-mat-non-slip-tabletop-mat-home": {
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
@@ -4693,11 +6074,23 @@
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
+"m:www.etsy.com/listing/4574925306/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4575845329/vintage-floral-pink-mahjong-mat": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
 "m:www.etsy.com/listing/4576618613/christmas-mahjong-mat": {
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
 "m:www.etsy.com/listing/4576855989/mahjong-mat-christmas-mah-jong-design": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4577957885/palm-tree-retro-tropical-mahjong-mat": {
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
@@ -4737,7 +6130,23 @@
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
+"m:www.etsy.com/listing/4581591001/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4587515141/the-grace-abstract": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
 "m:www.etsy.com/listing/4587515423/on-holiday": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4588582719/grace-watercolor-version": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4589473769/mahjong-mat-non-slip-tabletop-mat-home": {
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
@@ -4753,6 +6162,14 @@
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
+"m:www.etsy.com/listing/4590227066/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4591687944/mahjong-mat-non-slip-tabletop-mat-home": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
 "m:www.etsy.com/listing/4591990743/christmas-nutcracker-mahjong-mat-festive": {
 "in": true,
 "how": "unknown (not a Shopify product link)"
@@ -4762,6 +6179,10 @@
 "how": "unknown (not a Shopify product link)"
 },
 "m:www.etsy.com/listing/4596835638/pink-christmas-mahjong-mat-colorful": {
+"in": true,
+"how": "unknown (not a Shopify product link)"
+},
+"m:www.etsy.com/listing/4600985202/scalloped-pink-floral-mahjong-mat": {
 "in": true,
 "how": "unknown (not a Shopify product link)"
 },
@@ -4783,7 +6204,7 @@
 "price": 80.0
 },
 "m:www.hiphipmahjong.com/freedom-isnt-free-mahjong-mat": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 80.0
 },
@@ -4944,8 +6365,7 @@
 },
 "m:www.loveshackfancy.com/pink-floral-designer-mahjong-mat": {
 "in": false,
-"how": "shopify product",
-"price": 100.0
+"how": "kept earlier sold-out flag (not a Shopify product link)"
 },
 "m:www.macandmillermahjong.com/heirloom-collection-navy-chinoiserie-mahjong-mat": {
 "in": true,
@@ -5034,7 +6454,7 @@
 },
 "m:www.ohmymahjong.com/astor-mat-w-tube": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
 },
 "m:www.ohmymahjong.com/chantilly-mat": {
 "in": true,
@@ -5048,7 +6468,7 @@
 },
 "m:www.ohmymahjong.com/cognac-mat": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
 },
 "m:www.ohmymahjong.com/dapper-mat-w-tube": {
 "in": false,
@@ -5056,7 +6476,7 @@
 },
 "m:www.ohmymahjong.com/darjeeling-mat-w-tube": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
 },
 "m:www.ohmymahjong.com/delilah-mat-in-tube": {
 "in": true,
@@ -5070,7 +6490,7 @@
 },
 "m:www.ohmymahjong.com/esme-mat-w-tube": {
 "in": false,
-"how": "retired: gone from ohmymahjong.com Nov 4"
+"how": "retired"
 },
 "m:www.ohmymahjong.com/hampton-mat-in-tube": {
 "in": true,
@@ -5110,6 +6530,11 @@
 "in": true,
 "how": "shopify product",
 "price": 90.0
+},
+"m:www.ohmymahjong.com/lotus-cove-mat-in-tube": {
+"in": false,
+"how": "shopify product",
+"price": 90
 },
 "m:www.ohmymahjong.com/luna-w-tube": {
 "in": true,
@@ -5158,11 +6583,11 @@
 },
 "m:www.ohmymahjong.com/sugarplum-mat": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
 },
 "m:www.ohmymahjong.com/vanderbilt-mat-w-tube": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
 },
 "m:www.ohmymahjong.com/veranda-mat-in-tube": {
 "in": true,
@@ -5171,7 +6596,7 @@
 },
 "m:www.ohmymahjong.com/vivara-mat-w-tube": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
 },
 "m:www.ohmymahjong.com/vivienne-mat-in-tube": {
 "in": true,
@@ -5185,7 +6610,7 @@
 },
 "m:www.ohmymahjong.com/year-of-the-horse-mat": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
 },
 "m:www.ohmymahjong.com/yuletide-mat-in-tube": {
 "in": true,
@@ -5203,7 +6628,7 @@
 "price": 45.0
 },
 "m:www.viroramahjong.com/hiverelle": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 45.0
 },
@@ -5382,8 +6807,7 @@
 },
 "m:www.yolomahjong.com/christmas-cat-square-mahjong-mat-ship-rolled-up": {
 "in": true,
-"how": "shopify product",
-"price": 89.0
+"how": "unknown (404 (product page gone))"
 },
 "m:www.yolomahjong.com/christmas-holly-mahjong-mat": {
 "in": true,
@@ -5472,13 +6896,11 @@
 },
 "m:www.yolomahjong.com/mahjong-mat-31-5x31-5-ship-rolled-up-2": {
 "in": true,
-"how": "shopify product",
-"price": 89.0
+"how": "unknown (404 (product page gone))"
 },
 "m:www.yolomahjong.com/mahjong-mat-31-5x31-5-ship-rolled-up-blue-chinoiserie-mahjong-mat-with-hydrangea-floral-design": {
 "in": true,
-"how": "shopify product",
-"price": 89.0
+"how": "unknown (404 (product page gone))"
 },
 "m:www.yolomahjong.com/mahjong-mat-31-5x31-5-ship-rolled-up-blue-hydrangea-mahjong-mat-with-soft-yellow-floral-border": {
 "in": true,
@@ -5507,8 +6929,7 @@
 },
 "m:www.yolomahjong.com/mahjong-mat-miami-beach-vibes": {
 "in": true,
-"how": "shopify product",
-"price": 89.0
+"how": "unknown (404 (product page gone))"
 },
 "m:www.yolomahjong.com/mocha-ripple-mahjong-mat": {
 "in": true,
@@ -5816,7 +7237,7 @@
 "price": 135.0
 },
 "r:bb:Gold Metallic": {
-"in": false,
+"in": true,
 "how": "shopify variant",
 "price": 135.0
 },
@@ -6176,19 +7597,18 @@
 "price": 95.0
 },
 "r:mahjmood.com/scalloped-tortoise-acrylic-racks-and-pushers": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 125.0
 },
 "r:mahjmood.com/scalloped-white-and-clear-acrylic-rack-and-pusher-set": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 98.0
 },
 "r:mahjmood.com/white-acrylic-racks-set-of-4-no-pushers-included": {
 "in": true,
-"how": "shopify product",
-"price": 42.0
+"how": "unknown (404 (product page gone))"
 },
 "r:mahjmood.com/white-wooden-racks-with-scalloped-pushers": {
 "in": true,
@@ -6197,53 +7617,43 @@
 },
 "r:mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53555876069688": {
 "in": true,
-"how": "shopify variant",
-"price": 149.0
+"how": "unknown (404 (product page gone))"
 },
 "r:mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53555876102456": {
 "in": true,
-"how": "shopify variant",
-"price": 149.0
+"how": "unknown (404 (product page gone))"
 },
 "r:mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53555876135224": {
 "in": true,
-"how": "shopify variant",
-"price": 149.0
+"how": "unknown (404 (product page gone))"
 },
 "r:mahjongregister.com/set-of-4-luxury-pearlized-acrylic-mahjong-racks-20-scalloped-edge-design-copy?v=53555876167992": {
 "in": true,
-"how": "shopify variant",
-"price": 149.0
+"how": "unknown (404 (product page gone))"
 },
 "r:mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959156536": {
 "in": true,
-"how": "shopify variant",
-"price": 135.0
+"how": "unknown (404 (product page gone))"
 },
 "r:mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959189304": {
 "in": false,
-"how": "shopify variant",
-"price": 135.0
+"how": "kept earlier sold-out flag (404 (product page gone))"
 },
 "r:mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959222072": {
 "in": true,
-"how": "shopify variant",
-"price": 135.0
+"how": "unknown (404 (product page gone))"
 },
 "r:mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959254840": {
 "in": true,
-"how": "shopify variant",
-"price": 135.0
+"how": "unknown (404 (product page gone))"
 },
 "r:mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959287608": {
 "in": true,
-"how": "shopify variant",
-"price": 135.0
+"how": "unknown (404 (product page gone))"
 },
 "r:mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders-copy?v=53016959320376": {
 "in": true,
-"how": "shopify variant",
-"price": 135.0
+"how": "unknown (404 (product page gone))"
 },
 "r:mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=52971299897656": {
 "in": true,
@@ -6262,7 +7672,7 @@
 },
 "r:mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53017129550136": {
 "in": true,
-"how": "shopify variant",
+"how": "shopify product",
 "price": 135.0
 },
 "r:mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53017141248312": {
@@ -6277,46 +7687,16 @@
 },
 "r:mahjongregister.com/signature-collection-acrylic-mahjong-racks-set-of-4-20-luxury-tile-holders?v=53563340915000": {
 "in": true,
-"how": "shopify variant",
+"how": "shopify product",
 "price": 135.0
 },
-"r:mahjongrowandco.com/autumn-brown-rack-pusher-set": {
-"in": true,
+"r:mahjpit.co/white-beech-wood-mahjong-racks-with-magnetic-pushers-custom-storage-bag-1": {
+"in": false,
 "how": "shopify product",
-"price": 60.0
-},
-"r:mahjongrowandco.com/chestnut-cream-rack-pusher-set": {
-"in": true,
-"how": "shopify product",
-"price": 60.0
-},
-"r:mahjongrowandco.com/matcha-green-rack-pusher-set": {
-"in": true,
-"how": "shopify product",
-"price": 60.0
-},
-"r:mahjongrowandco.com/porcelain-blue-rack-pusher-set": {
-"in": true,
-"how": "shopify product",
-"price": 60.0
-},
-"r:mahjongrowandco.com/scalloped-deluxe-tortoise-rack": {
-"in": true,
-"how": "shopify product",
-"price": 130.0
-},
-"r:mahjongrowandco.com/translucent-chocolate-rack-pusher-set": {
-"in": true,
-"how": "shopify product",
-"price": 60.0
-},
-"r:mahjongrowandco.com/white-rack-pusher-set": {
-"in": true,
-"how": "shopify product",
-"price": 60.0
+"price": 145.0
 },
 "r:missmahjong.com/blonde-tortoise-and-brass-acrylic-racks": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 175.0
 },
@@ -6324,6 +7704,18 @@
 "in": true,
 "how": "shopify product",
 "price": 150.0
+},
+"r:missmahjong.com/bombshell-pink-scalloped-acrylic-racks": {
+"in": true,
+"how": "shopify product"
+},
+"r:missmahjong.com/butter-yellow-scalloped-acrylic-racks": {
+"in": true,
+"how": "shopify product"
+},
+"r:missmahjong.com/chartreuse-scalloped-acrylic-racks": {
+"in": true,
+"how": "shopify product"
 },
 "r:missmahjong.com/cornflower-blue-scalloped-acrylic-racks": {
 "in": true,
@@ -6359,6 +7751,14 @@
 "in": true,
 "how": "shopify product",
 "price": 150.0
+},
+"r:missmahjong.com/peony-scalloped-acrylic-racks": {
+"in": true,
+"how": "shopify product"
+},
+"r:missmahjong.com/pistachio-scalloped-acrylic-racks": {
+"in": true,
+"how": "shopify product"
 },
 "r:missmahjong.com/scalloped-acrylic-racks": {
 "in": true,
@@ -6396,17 +7796,17 @@
 "price": 150.0
 },
 "r:myfairmahjong.com/acrylic-mahjong-racks?v=52896919683383": {
-"in": true,
+"in": false,
 "how": "shopify variant",
 "price": 150.0
 },
 "r:myfairmahjong.com/acrylic-mahjong-racks?v=52896920207671": {
-"in": true,
+"in": false,
 "how": "shopify variant",
 "price": 150.0
 },
 "r:myfairmahjong.com/wooden-painted-mahjong-racks-20-set-of-4-blue-and-pink-sets-magnetic-attached-pusher": {
-"in": true,
+"in": false,
 "how": "shopify variant",
 "price": 125.0
 },
@@ -6626,7 +8026,7 @@
 "price": 139.0
 },
 "r:sundaymahjong.com/sunday-cola-mahjong-rack-set": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 189.0
 },
@@ -6649,7 +8049,7 @@
 "price": 52.0
 },
 "r:theroyalmahjongsociety.com/mahjong-rack-white": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 52.0
 },
@@ -6784,7 +8184,7 @@
 "price": 90.0
 },
 "r:www.bambirdboutique.com/wooden-mahjong-rack-pusher-set?v=52307844137269": {
-"in": true,
+"in": false,
 "how": "shopify variant",
 "price": 90.0
 },
@@ -6888,7 +8288,7 @@
 "price": 250.0
 },
 "r:www.bespokemahjong.com/the-ultimate-rack-hottie-pink": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 250.0
 },
@@ -6909,23 +8309,19 @@
 },
 "r:www.charlestonmahjongclub.com/clear-acrylic-mahjong-racks-with-magnetic-pushers-set-of-4-20-long": {
 "in": false,
-"how": "shopify product",
-"price": 155.0
+"how": "kept earlier sold-out flag (not a Shopify product link)"
 },
 "r:www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue": {
 "in": true,
-"how": "shopify product",
-"price": 135.0
+"how": "unknown (not a Shopify product link)"
 },
 "r:www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue?v=55711274926385": {
 "in": true,
-"how": "shopify variant",
-"price": 135.0
+"how": "unknown (not a Shopify product link)"
 },
 "r:www.charlestonmahjongclub.com/new-20-wooden-mahjong-racks-w-strong-magnetic-pusher-admiral-blue?v=55711274959153": {
 "in": true,
-"how": "shopify variant",
-"price": 135.0
+"how": "unknown (not a Shopify product link)"
 },
 "r:www.hiphipmahjong.com/hostess-with-the-mostest-racks": {
 "in": false,
@@ -6933,7 +8329,7 @@
 "price": 225.0
 },
 "r:www.hiphipmahjong.com/santa-baby-racks": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 210.0
 },
@@ -6958,12 +8354,12 @@
 "price": 165.0
 },
 "r:www.middleandmainmahjong.com/blue-and-white-chinoiserie-mahjong-rack-and-pusher-set-of-4-copy": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 88.0
 },
 "r:www.middleandmainmahjong.com/blue-and-white-chinoiserie-rack-set-of-4": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 88.0
 },
@@ -7068,17 +8464,17 @@
 "price": 69.0
 },
 "r:www.viroramahjong.com/wooden-rack-pusher-set?v=49226736009399": {
-"in": true,
+"in": false,
 "how": "shopify variant",
 "price": 69.0
 },
 "r:www.viroramahjong.com/wooden-rack-pusher-set?v=49226736042167": {
-"in": true,
+"in": false,
 "how": "shopify variant",
 "price": 69.0
 },
 "r:www.viroramahjong.com/wooden-rack-pusher-set?v=49226736074935": {
-"in": true,
+"in": false,
 "how": "shopify variant",
 "price": 69.0
 },
@@ -7108,7 +8504,7 @@
 "price": 20.94
 },
 "r:www.ymimports.com/us-rl017-a": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 60.99
 },
@@ -7238,13 +8634,11 @@
 },
 "t:charlestonmahjongclub.com/the-country-club-edition": {
 "in": true,
-"how": "shopify product",
-"price": 400.0
+"how": "unknown (not a Shopify product link)"
 },
 "t:hol:cmc-apres-ski": {
 "in": true,
-"how": "shopify product",
-"price": 400.0
+"how": "unknown (not a Shopify product link)"
 },
 "t:hol:dear-santa": {
 "in": true,
@@ -7296,14 +8690,12 @@
 "how": "preorder (store says unavailable, link says arriving / pre-order)"
 },
 "t:mahjmood.com/90s-tile-set?v=58077240328495": {
-"in": false,
-"how": "shopify variant",
-"price": 390.0
+"in": true,
+"how": "preorder (store says unavailable, link says arriving / pre-order)"
 },
 "t:mahjmood.com/90s-tile-set?v=58077240361263": {
-"in": false,
-"how": "shopify variant",
-"price": 390.0
+"in": true,
+"how": "preorder (store says unavailable, link says arriving / pre-order)"
 },
 "t:mahjmood.com/ballerina-pink-tiles": {
 "in": false,
@@ -7520,6 +8912,31 @@
 "how": "shopify product",
 "price": 395.0
 },
+"t:mahjpit.co/large-confetti-tiles": {
+"in": false,
+"how": "shopify product",
+"price": 495.0
+},
+"t:mahjpit.co/merry-merry-holiday-tiles-limited-edition": {
+"in": false,
+"how": "shopify product",
+"price": 465.0
+},
+"t:mahjpit.co/the-commuter-skinny-tiles-only": {
+"in": false,
+"how": "shopify product",
+"price": 285.0
+},
+"t:mahjpit.co/the-martha-tiles": {
+"in": true,
+"how": "shopify product",
+"price": 495.0
+},
+"t:mahjpit.co/the-original-confetti-tiles-small": {
+"in": false,
+"how": "shopify product",
+"price": 395.0
+},
 "t:mahjsquadshop.com/blue-chinoiserie-mahjong-tiles-cornflower-blue-and-white-mahjongg-set-blue-mahj-tiles-american-mahjong-tiles-1": {
 "in": true,
 "how": "shopify product",
@@ -7598,7 +9015,7 @@
 "price": 350.0
 },
 "t:myfairmahjong.com/confetti-calm-blue": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 375.0
 },
@@ -7841,7 +9258,7 @@
 "how": "unknown (not a Shopify product link)"
 },
 "t:theroyalmahjongsociety.com/cottage-mahjong-tile-set": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 425.0
 },
@@ -7861,7 +9278,7 @@
 "price": 425.0
 },
 "t:theroyalmahjongsociety.com/mahj-royale-mahjong-tile-set": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 425.0
 },
@@ -7871,7 +9288,7 @@
 "price": 425.0
 },
 "t:theroyalmahjongsociety.com/shore-mahjong-tile-set": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 425.0
 },
@@ -7917,7 +9334,7 @@
 },
 "t:tigredetartan.com/house-tigers-mahjong-tile-set-oyster": {
 "in": true,
-"how": "store check Nov 3 6:40pm ET (available, $295)",
+"how": "shopify product",
 "price": 295.0
 },
 "t:www.bambirdboutique.com/boots-bubbles-mahjong-tile-set": {
@@ -7971,7 +9388,7 @@
 "price": 370.0
 },
 "t:www.bambirdboutique.com/mcm-mahjong-tile-set?v=53323821482293": {
-"in": false,
+"in": true,
 "how": "shopify variant",
 "price": 370.0
 },
@@ -8056,8 +9473,8 @@
 "price": 450.0
 },
 "t:www.bamletsmahjong.com/the-nantucket-tile-collection?v=46467206021278": {
-"in": false,
-"how": "shopify variant",
+"in": true,
+"how": "shopify product",
 "price": 450.0
 },
 "t:www.bamletsmahjong.com/the-palm-royale-tile-collection?v=45502168072350": {
@@ -8135,8 +9552,13 @@
 "how": "shopify product",
 "price": 450.0
 },
-"t:www.bespokemahjong.com/gardenglowtiles": {
+"t:www.bespokemahjong.com/coming-this-november-mahjong-its-a-vibe-glitter-glow-green": {
 "in": true,
+"how": "shopify product",
+"price": 495
+},
+"t:www.bespokemahjong.com/gardenglowtiles": {
+"in": false,
 "how": "shopify product",
 "price": 495.0
 },
@@ -8146,12 +9568,12 @@
 "price": 545.0
 },
 "t:www.bespokemahjong.com/lucky-charms-marshmallow": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 450.0
 },
 "t:www.bespokemahjong.com/pearlcream": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 495.0
 },
@@ -8166,14 +9588,19 @@
 "price": 495.0
 },
 "t:www.bespokemahjong.com/springtimesafaripetalpink": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 450.0
 },
 "t:www.bespokemahjong.com/springtimesafariskyblue": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 475.0
+},
+"t:www.bespokemahjong.com/sunshineglow": {
+"in": true,
+"how": "shopify product",
+"price": 495
 },
 "t:www.bespokemahjong.com/the-chalet-frostypearlwhite": {
 "in": true,
@@ -8181,24 +9608,21 @@
 "price": 485.0
 },
 "t:www.bespokemahjong.com/yearofhorsesaddlepink": {
-"in": true,
+"in": false,
 "how": "shopify product",
 "price": 380.0
 },
 "t:www.charlestonmahjongclub.com/cocktail-club-2-0": {
 "in": true,
-"how": "shopify product",
-"price": 400.0
+"how": "unknown (not a Shopify product link)"
 },
 "t:www.charlestonmahjongclub.com/the-hunt-club-edition": {
 "in": true,
-"how": "shopify product",
-"price": 425.0
+"how": "unknown (not a Shopify product link)"
 },
 "t:www.charlestonmahjongclub.com/the-yacht-club-edition": {
 "in": true,
-"how": "shopify product",
-"price": 400.0
+"how": "unknown (not a Shopify product link)"
 },
 "t:www.hiphipmahjong.com/birthday-mahjong-tiles": {
 "in": true,
@@ -8292,8 +9716,7 @@
 },
 "t:www.loveshackfancy.com/pink-floral-mahjong-tile-set": {
 "in": false,
-"how": "shopify product",
-"price": 550.0
+"how": "kept earlier sold-out flag (not a Shopify product link)"
 },
 "t:www.macandmillermahjong.com/coming-soon-red-white-blues-collection": {
 "in": true,
@@ -8355,13 +9778,13 @@
 "price": 325.0
 },
 "t:www.ohmymahjong.com/drake-mahjong-tiles": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 400.0
 },
 "t:www.ohmymahjong.com/emerald-mahjong-tile-set": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
 },
 "t:www.ohmymahjong.com/gatsby-tile-set": {
 "in": true,
@@ -8395,10 +9818,15 @@
 },
 "t:www.ohmymahjong.com/jubilee-mahjong-tiles": {
 "in": true,
-"how": "unknown (HTTP Error 404: Not Found)"
+"how": "unknown (404 (product page gone))"
+},
+"t:www.ohmymahjong.com/juniper-mahjong-tiles": {
+"in": false,
+"how": "shopify product",
+"price": 475
 },
 "t:www.ohmymahjong.com/la-fete-mahjong-tiles": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 400.0
 },
@@ -8434,7 +9862,7 @@
 },
 "t:www.ohmymahjong.com/pearlescent-tile-set": {
 "in": true,
-"how": "shopify product (revive_links 2026-11-07)",
+"how": "shopify product",
 "price": 475.0
 },
 "t:www.ohmymahjong.com/pippa-mahjong-tiles": {
@@ -8494,8 +9922,7 @@
 },
 "t:www.viroramahjong.com/christmas-collection-ii-nivalee": {
 "in": true,
-"how": "shopify product",
-"price": 299.0
+"how": "preorder (store says unavailable, link says arriving / pre-order)"
 },
 "t:www.viroramahjong.com/elanisse": {
 "in": false,
@@ -8543,7 +9970,7 @@
 "price": 229.0
 },
 "t:www.viroramahjong.com/yellow-lilacee": {
-"in": false,
+"in": true,
 "how": "shopify product",
 "price": 229.0
 },
@@ -8765,276 +10192,6 @@
 "in": true,
 "how": "shopify product",
 "price": 438.0
-},
-"m:letsbebesties.com/electric-zigzag-mahjong-mat": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)"
-},
-"m:letsbebesties.com/christmas-lights-mahjong-mat": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)"
-},
-"m:letsbebesties.com/tiger-stripes-ohbon-studios-artist-mahjong-mat": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)"
-},
-"m:letsbebesties.com/spinning-dreidel-ohbon-studios-artist-mahjong-mat": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)"
-},
-"m:letsbebesties.com/champange-bubbles-mahjong-mat": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)"
-},
-"m:letsbebesties.com/mid-century-floral-mahjong-mat": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)"
-},
-"m:letsbebesties.com/pink-pizzazz-mahjong-mat": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)"
-},
-"m:letsbebesties.com/gatsby-glow-mahjong-mat": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)"
-},
-"m:letsbebesties.com/mad-for-plaid-mahjong-mat": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)"
-},
-"m:letsbebesties.com/disco-dot-with-simple-middle-mahjong-mat": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)"
-},
-"m:nolijune.com/marlene-put-out-a-spread-on-the-eighth-night": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)"
-},
-"m:nolijune.com/rochelle-didnt-make-it-to-midnight": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)"
-},
-"m:nolijune.com/ruth-took-the-last-run-in-the-dark": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)"
-},
-"m:nolijune.com/shirley-wore-a-parka-to-the-beach": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)"
-},
-"m:mahjpit.co/mahjong-mat-domino-oxblood": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 175.0
-},
-"m:mahjpit.co/mahjong-mat-french-mural": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 175.0
-},
-"m:mahjpit.co/mahjong-mat-ditsy-christmas-maraschino-w-rules": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 175.0
-},
-"m:mahjpit.co/savannah": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 98.0
-},
-"m:mahjpit.co/inky-mat": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 98.0
-},
-"m:mahjpit.co/the-butterfly-dolly-mat": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 98.0
-},
-"m:mahjpit.co/pixel-pusher-mat": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 98.0
-},
-"m:mahjpit.co/paint-party-mat": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 98.0
-},
-"m:mahjpit.co/turkey-dinner-mat": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 98.0
-},
-"m:mahjpit.co/the-line-mat-copy": {
-"in": false,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 98.0
-},
-"m:mahjpit.co/the-line-mat": {
-"in": false,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 98.0
-},
-"m:mahjpit.co/the-quigley-mat": {
-"in": false,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 98.0
-},
-"m:mahjpit.co/poppylicious-mat": {
-"in": false,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 98.0
-},
-"m:mahjpit.co/acid-in-the-library-may": {
-"in": false,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 98.0
-},
-"m:mahjpit.co/flower-shop": {
-"in": false,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 98.0
-},
-"m:mahjpit.co/primary-on-broughton-game-mat-copy": {
-"in": false,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 98.0
-},
-"m:mahjpit.co/primary-on-broughton": {
-"in": false,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 98.0
-},
-"m:mahjpit.co/seaside-game-mat": {
-"in": false,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 98.0
-},
-"m:mahjpit.co/mahjong-gaming-mat-el-tigre-rules-edition": {
-"in": false,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 195.0
-},
-"m:mahjpit.co/deep-blue-mat": {
-"in": false,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 98.0
-},
-"m:mahjpit.co/all-vibes-mat": {
-"in": false,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 98.0
-},
-"m:www.ohmymahjong.com/lotus-cove-mat-in-tube": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 90
-},
-"m:splashofcolorco.com/santa-baby-s-cocktail-hour-mahjong-mat-sleek-surface": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)"
-},
-"t:www.ohmymahjong.com/juniper-mahjong-tiles": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 475
-},
-"t:www.bespokemahjong.com/sunshineglow": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 495
-},
-"t:www.bespokemahjong.com/coming-this-november-mahjong-its-a-vibe-glitter-glow-green": {
-"in": true,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 495
-},
-"t:mahjpit.co/the-original-confetti-tiles-small": {
-"in": false,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 395.0
-},
-"t:mahjpit.co/large-confetti-tiles": {
-"in": false,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 495.0
-},
-"t:mahjpit.co/the-martha-tiles": {
-"in": false,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 495.0
-},
-"t:mahjpit.co/merry-merry-holiday-tiles-limited-edition": {
-"in": false,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 465.0
-},
-"t:mahjpit.co/the-commuter-skinny-tiles-only": {
-"in": false,
-"how": "v115 add (brand store Nov 4-5)",
-"price": 285.0
-},
-"r:mahjpit.co/white-beech-wood-mahjong-racks-with-magnetic-pushers-custom-storage-bag-1": {
-"in": true,
-"how": "v116 add (mahjpit.co products.json Nov 6)",
-"price": 145.0
-},
-"m:ozarkmahjongg.com/baker-bright-mat": {
-"in": false,
-"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
-"price": 75.0
-},
-"m:ozarkmahjongg.com/baker-traditional-mat": {
-"in": false,
-"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
-"price": 75.0
-},
-"m:ozarkmahjongg.com/carson-revel-mat": {
-"in": false,
-"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
-"price": 75.0
-},
-"m:ozarkmahjongg.com/eaton-indigo-mat": {
-"in": false,
-"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
-"price": 75.0
-},
-"m:ozarkmahjongg.com/trent-joy-mahjong-mat": {
-"in": false,
-"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
-"price": 75.0
-},
-"m:ozarkmahjongg.com/trent-midnight-mahjong-mat": {
-"in": false,
-"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
-"price": 75.0
-},
-"m:ozarkmahjongg.com/trent-neutral-mahjong-mat": {
-"in": false,
-"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
-"price": 75.0
-},
-"m:ozarkmahjongg.com/fitz-carmine-mahjong-mat": {
-"in": false,
-"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
-"price": 75.0
-},
-"m:ozarkmahjongg.com/fitz-verdant-mahjong-mat": {
-"in": false,
-"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
-"price": 75.0
-},
-"m:ozarkmahjongg.com/trent-celadon-mahjong-mat": {
-"in": false,
-"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
-"price": 75.0
-},
-"m:ozarkmahjongg.com/trent-neutral-mahjong-mat-1": {
-"in": false,
-"how": "wix product page inventory out_of_stock (Nov 7, real domain ozarkmahjongg.com)",
-"price": 75.0
 }
 }
 }

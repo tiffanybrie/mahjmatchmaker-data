@@ -1,0 +1,506 @@
+[
+ {
+  "style": "plaid",
+  "name": "Tartan Tidings",
+  "brand": "Anders Ruff",
+  "price": 96.0,
+  "slug": "anders-ruff--tartan-tidings-mahjong-mat"
+ },
+ {
+  "style": "plaid",
+  "name": "Evergreen & Tartan",
+  "brand": "Anders Ruff",
+  "price": 96.0,
+  "slug": "anders-ruff--evergreen-tartan-mahjong-mat"
+ },
+ {
+  "style": "plaid",
+  "name": "Candy Cane Lane",
+  "brand": "Anders Ruff",
+  "price": 96.0,
+  "slug": "anders-ruff--candy-cane-lane-mahjong-mat"
+ },
+ {
+  "style": "plaid",
+  "name": "Heritage Tartan",
+  "brand": "Anders Ruff",
+  "price": 96.0,
+  "slug": "anders-ruff--heritage-tartan"
+ },
+ {
+  "style": "plaid",
+  "name": "Yuletide",
+  "brand": "Oh My Mahjong",
+  "price": 90.0,
+  "slug": "oh-my-mahjong--yuletide"
+ },
+ {
+  "style": "plaid",
+  "name": "Holly Jolly Christmas",
+  "brand": "Bam! Let's Mahjong",
+  "price": 95.0,
+  "slug": "bam-let-s-mahjong--holly-jolly-christmas-mahjong-mat"
+ },
+ {
+  "style": "plaid",
+  "name": "Plaid Tidings",
+  "brand": "My Fair Mahjong",
+  "price": 65.0,
+  "slug": "my-fair-mahjong--plaid-tidings"
+ },
+ {
+  "style": "plaid",
+  "name": "Green with Pink Plaid",
+  "brand": "Bam Bird Boutique",
+  "price": 80.0,
+  "slug": "bam-bird-boutique--plaid-neoprene-green-with-pink"
+ },
+ {
+  "style": "plaid",
+  "name": "Green and Blue Plaid",
+  "brand": "Bam Bird Boutique",
+  "price": 80.0,
+  "slug": "bam-bird-boutique--plaid-neoprene-green-and-blue"
+ },
+ {
+  "style": "plaid",
+  "name": "Ho Ho Ho! Christmas",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--ho-ho-ho-christmas"
+ },
+ {
+  "style": "plaid",
+  "name": "Grinches",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--grinches"
+ },
+ {
+  "style": "plaid",
+  "name": "Tartan Tweed",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--tartan-tweed"
+ },
+ {
+  "style": "plaid",
+  "name": "Olive Plaid",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--olive-plaid"
+ },
+ {
+  "style": "plaid",
+  "name": "Red Gingham",
+  "brand": "Peace Love Mahjong",
+  "price": 70.0,
+  "slug": "peace-love-mahjong--gingham-red"
+ },
+ {
+  "style": "plaid",
+  "name": "Sugarplum Plaid",
+  "brand": "Peace Love Mahjong",
+  "price": 70.0,
+  "slug": "peace-love-mahjong--sugarplum-plaid"
+ },
+ {
+  "style": "plaid",
+  "name": "Holly Jolly Gingham",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--holly-jolly-gingham"
+ },
+ {
+  "style": "plaid",
+  "name": "Merry Gnome Mas",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--merry-gnome-mas"
+ },
+ {
+  "style": "plaid",
+  "name": "Pink on Pink Plaid",
+  "brand": "Bam Bird Boutique",
+  "price": 80.0,
+  "slug": "bam-bird-boutique--plaid-neoprene-pink-on-pink"
+ },
+ {
+  "style": "pink",
+  "name": "Very Merry Mahj",
+  "brand": "Anders Ruff",
+  "price": 96.0,
+  "slug": "anders-ruff--very-merry-mahj-mahjong-mat"
+ },
+ {
+  "style": "pink",
+  "name": "Nutcracker",
+  "brand": "Britt Mills",
+  "price": 180.0,
+  "slug": "britt-mills--nutcracker-leatherette"
+ },
+ {
+  "style": "pink",
+  "name": "Peppermint Wishes",
+  "brand": "My Fair Mahjong",
+  "price": 65.0,
+  "slug": "my-fair-mahjong--peppermint-wishes"
+ },
+ {
+  "style": "pink",
+  "name": "Clara",
+  "brand": "Oh My Mahjong",
+  "price": 90.0,
+  "slug": "oh-my-mahjong--clara"
+ },
+ {
+  "style": "pink",
+  "name": "Merriment",
+  "brand": "Oh My Mahjong",
+  "price": 90.0,
+  "slug": "oh-my-mahjong--merriment"
+ },
+ {
+  "style": "pink",
+  "name": "Tied With A Bow",
+  "brand": "Peace Love Mahjong",
+  "price": 70.0,
+  "slug": "peace-love-mahjong--tied-with-a-bow"
+ },
+ {
+  "style": "pink",
+  "name": "Candy Cane Lane",
+  "brand": "Peace Love Mahjong",
+  "price": 70.0,
+  "slug": "peace-love-mahjong--candy-cane-lane"
+ },
+ {
+  "style": "pink",
+  "name": "Orange and Pink Christmas",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--orange-and-pink-christmas"
+ },
+ {
+  "style": "pink",
+  "name": "Jingle Jungle",
+  "brand": "Let's Be Besties",
+  "price": 110.0,
+  "slug": "let-s-be-besties--jingle-jungle"
+ },
+ {
+  "style": "pink",
+  "name": "A Very Merry Getaway",
+  "brand": "Bespoke Mahjong",
+  "price": 155.0,
+  "slug": "bespoke-mahjong--gray-malin-a-very-merry-getaway-double-sided-side-a-lighthouse"
+ },
+ {
+  "style": "pink",
+  "name": "Merry & Bright",
+  "brand": "Let's Be Besties",
+  "price": 110.0,
+  "slug": "let-s-be-besties--merry-bright-holiday-prism"
+ },
+ {
+  "style": "pink",
+  "name": "Bow & Baubles Christmas",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--bow-baubles-christmas"
+ },
+ {
+  "style": "pink",
+  "name": "MOD Merry",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--mod-merry"
+ },
+ {
+  "style": "pink",
+  "name": "Poinsettia & Peace",
+  "brand": "Peace Love Mahjong",
+  "price": 70.0,
+  "slug": "peace-love-mahjong--poinsettia-peace"
+ },
+ {
+  "style": "pink",
+  "name": "The Chalet",
+  "brand": "Bespoke Mahjong",
+  "price": 130.0,
+  "slug": "bespoke-mahjong--double-sided-mat-double-the-fun-the-chalet-mat"
+ },
+ {
+  "style": "pink",
+  "name": "Fair Isle Pink Snowflakes",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--fair-isle-pink-snowflakes"
+ },
+ {
+  "style": "pink",
+  "name": "Merry Mix",
+  "brand": "Peace Love Mahjong",
+  "price": 70.0,
+  "slug": "peace-love-mahjong--merry-mix"
+ },
+ {
+  "style": "pink",
+  "name": "Vintage Noel",
+  "brand": "Peace Love Mahjong",
+  "price": 70.0,
+  "slug": "peace-love-mahjong--vintage-noel"
+ },
+ {
+  "style": "green",
+  "name": "Holiday Love",
+  "brand": "Bespoke Mahjong",
+  "price": 145.0,
+  "slug": "bespoke-mahjong--double-sided-mat-double-the-fun-bespoke-x-corey-paige-holiday-love-mat-red-green"
+ },
+ {
+  "style": "green",
+  "name": "Watercolor Christmas Tree",
+  "brand": "Anders Ruff",
+  "price": 96.0,
+  "slug": "anders-ruff--watercolor-christmas-tree-mahjong-mat"
+ },
+ {
+  "style": "green",
+  "name": "Winter Berry",
+  "brand": "Britt Mills",
+  "price": 180.0,
+  "slug": "britt-mills--winter-berry-leatherette"
+ },
+ {
+  "style": "green",
+  "name": "Perfectly Wrapped",
+  "brand": "Peace Love Mahjong",
+  "price": 70.0,
+  "slug": "peace-love-mahjong--perfectly-wrapped"
+ },
+ {
+  "style": "green",
+  "name": "Holly Berry",
+  "brand": "Mahj Mood",
+  "price": 65.0,
+  "slug": "mahj-mood--holly-berry-mat"
+ },
+ {
+  "style": "green",
+  "name": "Christmas Ribbon Rhapsody",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--christmas-ribbon-rhapsody"
+ },
+ {
+  "style": "green",
+  "name": "Holiday Green Bandana",
+  "brand": "Bam Bird Boutique",
+  "price": 80.0,
+  "slug": "bam-bird-boutique--bandana-holiday-green-pink-accents"
+ },
+ {
+  "style": "green",
+  "name": "Christmas Lights",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--christmas-lights"
+ },
+ {
+  "style": "green",
+  "name": "Christmas Village",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--christmas-village"
+ },
+ {
+  "style": "green",
+  "name": "Emerald Night Christmas",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--emerald-night-christmas"
+ },
+ {
+  "style": "green",
+  "name": "Festive Frost",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--festive-frost"
+ },
+ {
+  "style": "green",
+  "name": "Garland Christmas",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--garland-christmas"
+ },
+ {
+  "style": "green",
+  "name": "Holly Coastal Christmas",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--holly-coastal-christmas"
+ },
+ {
+  "style": "green",
+  "name": "Spirit of Christmas",
+  "brand": "Peace Love Mahjong",
+  "price": 70.0,
+  "slug": "peace-love-mahjong--spirit-of-christmas"
+ },
+ {
+  "style": "green",
+  "name": "Peace Love & Mistletoe",
+  "brand": "Peace Love Mahjong",
+  "price": 70.0,
+  "slug": "peace-love-mahjong--peace-love-mistletoe"
+ },
+ {
+  "style": "green",
+  "name": "Candy Cane Christmas",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--candy-cane-christmas"
+ },
+ {
+  "style": "green",
+  "name": "Nutcracker Noel",
+  "brand": "Peace Love Mahjong",
+  "price": 70.0,
+  "slug": "peace-love-mahjong--nutcracker-noel-red-green"
+ },
+ {
+  "style": "green",
+  "name": "Clara's Dream Christmas",
+  "brand": "Mahj Squad",
+  "price": 90.0,
+  "slug": "mahj-squad--clara-s-dream-christmas-mahjong-mat"
+ },
+ {
+  "style": "blue",
+  "name": "Winterberry",
+  "brand": "Oh My Mahjong",
+  "price": 90.0,
+  "slug": "oh-my-mahjong--winterberry"
+ },
+ {
+  "style": "blue",
+  "name": "Holiday Love Blue",
+  "brand": "Bespoke Mahjong",
+  "price": 145.0,
+  "slug": "bespoke-mahjong--double-sided-mat-double-the-fun-bespoke-x-corey-paige-holiday-love-mat-blue"
+ },
+ {
+  "style": "blue",
+  "name": "Tartan Toile No\u00ebl",
+  "brand": "Anders Ruff",
+  "price": 96.0,
+  "slug": "anders-ruff--tartan-toile-no-l-mahjong-mat"
+ },
+ {
+  "style": "blue",
+  "name": "Frosted Flowers",
+  "brand": "Peace Love Mahjong",
+  "price": 70.0,
+  "slug": "peace-love-mahjong--frosted-flowers"
+ },
+ {
+  "style": "blue",
+  "name": "Hiverelle",
+  "brand": "Virora Mahjong",
+  "price": 45.0,
+  "slug": "virora-mahjong--hiverelle-mahjong-mat"
+ },
+ {
+  "style": "blue",
+  "name": "Alpine Snowflakes",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--alpine-snowflakes"
+ },
+ {
+  "style": "blue",
+  "name": "Holly Jolly",
+  "brand": "Oh My Mahjong",
+  "price": 90.0,
+  "slug": "oh-my-mahjong--holly-jolly"
+ },
+ {
+  "style": "blue",
+  "name": "Pretty Little Christmas",
+  "brand": "Peace Love Mahjong",
+  "price": 70.0,
+  "slug": "peace-love-mahjong--pretty-little-christmas"
+ },
+ {
+  "style": "blue",
+  "name": "Blue Christmas",
+  "brand": "Mahj Squad",
+  "price": 90.0,
+  "slug": "mahj-squad--blue-christmas"
+ },
+ {
+  "style": "blue",
+  "name": "Snowflake Holiday",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--snowflake-holiday"
+ },
+ {
+  "style": "blue",
+  "name": "Whoosh",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--whoosh"
+ },
+ {
+  "style": "blue",
+  "name": "Winter Jewel",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--winter-jewel"
+ },
+ {
+  "style": "blue",
+  "name": "Apres Skiing in Teal",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--apres-skiing-in-teal"
+ },
+ {
+  "style": "blue",
+  "name": "Green Apres Skiing",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--green-apres-skiing-with-skiers"
+ },
+ {
+  "style": "blue",
+  "name": "Holiday Neoprene",
+  "brand": "Bam Bird Boutique",
+  "price": 80.0,
+  "slug": "bam-bird-boutique--holiday-neoprene-mahjong-mat"
+ },
+ {
+  "style": "blue",
+  "name": "Nativity",
+  "brand": "Hip Hip Mahjong",
+  "price": 80.0,
+  "slug": "hip-hip-mahjong--nativity-mahjong-mat"
+ },
+ {
+  "style": "blue",
+  "name": "Beachy Wreath Christmas",
+  "brand": "Let's Be Besties",
+  "price": 60.0,
+  "slug": "let-s-be-besties--beachy-wreath-christmas"
+ },
+ {
+  "style": "blue",
+  "name": "Santa's Mahjong Mail",
+  "brand": "Anders Ruff",
+  "price": 96.0,
+  "slug": "anders-ruff--santa-s-mahjong-mail-mahjong-mat"
+ }
+]

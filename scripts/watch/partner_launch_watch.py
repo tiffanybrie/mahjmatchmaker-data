@@ -43,7 +43,17 @@ STORES = {
     'tigredetartan.com': 'Tigre de Tartán', 'www.viroramahjong.com': 'Virora Mahjong', 'www.ymimports.com': 'Yellow Mountain Imports',
     'mahjongregister.com': 'Mahjong Register', 'theroyalmahjongsociety.com': 'The Royal Mahjong Society',
     'sundaymahjong.com': 'Sunday Mahjong', 'letsbebesties.com': "Let's Be Besties", 'www.fait-a-main.com': 'Fait à Main',
-    'soireeallday.co': 'Soirée All Day', 'sweetjojomahjong.com': 'Sweet Jojo Mahjong', 'splashofcolorco.com': 'Splash of Color',
+    'soireeallday.co': 'Soirée All Day',
+    # Nov 10 10:45pm (partner checklist): newer partners were never watched
+    'mahjpit.co': 'Mahj Pit', 'yolomahjong.com': 'YOLO Mahjong', 'nolijune.com': 'Noli June', 'maisonmahj.com': 'Maison Mahj',
+    'www.middleandmainmahjong.com': 'Middle & Main Mahjong', 'sweetjojomahjong.com': 'Sweet Jojo Mahjong', 'splashofcolorco.com': 'Splash of Color',
+    # Nov 11 onboarding: Mahjong by SI is Shopify (products.json reads 2,042 products, 1,176 mats)
+    'www.mahjongbysi.com': 'Mahjong by SI',
+    # Nov 13 (Tiffany 11:22am: Rebecca Illustrated's Apres-Mahjong mat, new Nov 9, was never mentioned): ShopMy brands that
+    # make mahjong goods earn us commission too, so their stores are watched like partners (link-routes route shopmy-site)
+    'rebeccaillustrated.com': 'Rebecca Illustrated', 'talamahj.com': 'Tala Mahj', 'themahjonghouse.com': 'The Mahjong House',
+    # Nov 18 2:11am (Tiffany): Brewtifully approved (UpPromote, MAHJMATCH 10%)
+    'shop.brewtifully.com': 'Brewtifully',
 }
 # brand-specific handling (CLAUDE.md + ANSWERS)
 NO_SOCIAL = {'Yellow Mountain Imports'}                 # never featured on social
@@ -221,6 +231,7 @@ def main():
     L += ['', '## Stores'] + [f"- {d}: {s}" for d, s in sorted(status.items())]
     open(OUT_MD, 'w').write('\n'.join(L) + '\n')
     if not a.no_save:
+        for k, v in old.items(): new_snap.setdefault(k, v)   # --only must never wipe the other stores' snapshot
         json.dump(new_snap, open(SNAP, 'w'), separators=(',', ':'), ensure_ascii=False)
     print(f"events {len(events)} (act {len(act)}), recent {len(recent)}, stores ok {sum(1 for s in status.values() if s.startswith('ok'))}/{len(status)}")
 

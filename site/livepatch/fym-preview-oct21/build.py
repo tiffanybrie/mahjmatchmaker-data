@@ -252,9 +252,17 @@ JS = r'''
   addEventListener('orientationchange',function(){setTimeout(size,250)});
   if(window.ResizeObserver){try{new ResizeObserver(size).observe(root.parentElement)}catch(e){}}
   var started=false;
+  /* Nov 17 (Tiffany yes 11:43pm ET): the newest approved build comes from a pointer file, so a release ships with a git push, no paste.
+     Pointer = site-app/live.json on fym-site-preview (raw GitHub, ~5 min cache). Anything missing or odd -> the pinned build below. */
+  var PTR='https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/fym-site-preview/site-app/live.json';
+  var OKU=/^https:\/\/cdn\.jsdelivr\.net\/gh\/tiffanybrie\/mahjmatchmaker-data@[0-9a-f]{40}\/site-app\/fym-v\d+[a-z0-9-]*\/(index\.html)?$/;
+  function ptr(){var c=window.AbortController?new AbortController():null;var t=setTimeout(function(){if(c)c.abort()},4000);
+    return fetch(PTR+'?t='+Math.floor(Date.now()/300000),c?{signal:c.signal,cache:'no-store'}:{cache:'no-store'}).then(function(r){clearTimeout(t);if(!r.ok)throw r.status;return r.json()})
+      .then(function(j){if(j&&OKU.test(j.index||'')&&/index\.html$/.test(j.index)&&OKU.test(j.base||'')&&/\/$/.test(j.base)){IDX=j.index;BASE=j.base;}})
+      .catch(function(){clearTimeout(t);});}
   function get(n){return fetch(IDX,{cache:'force-cache'}).then(function(r){if(!r.ok)throw r.status;return r.text()}).catch(function(e){if(n>0)return new Promise(function(ok){setTimeout(ok,1500)}).then(function(){return get(n-1)});throw e;});}
   function start(){if(started)return;started=true;
-    get(4).then(function(t){
+    ptr().then(function(){return get(4)}).then(function(t){
       t=t.replace(/<head>/i,'<head><base href="'+BASE+'"><style>html{scrollbar-width:thin;scrollbar-color:#f3b9cb transparent}[data-door] *{text-wrap:balance}html,body{overscroll-behavior:contain}#stage,#stage.scroll,.rail,.msr,.sheet .box{overscroll-behavior:contain}.dots,.frow,.tray .th,.rsug .th{overscroll-behavior-x:contain}</style>');
       fr.addEventListener('load',function(){ld.style.display='none';});
       var tries=0,poll=setInterval(function(){tries++;try{var d=fr.contentDocument;if(d&&d.querySelector('#app .top')){ld.style.display='none';clearInterval(poll);}}catch(e){}if(tries>200)clearInterval(poll);},300);

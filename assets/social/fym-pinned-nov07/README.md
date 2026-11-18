@@ -4,7 +4,7 @@ fym-pinned-reel-v3A.mp4 / fym-pinned-reel-v3B.mp4: 1080x1920, 30fps, **58.9s** e
 Covers: fym-pinned-reel-v3A-cover.jpg / -v3B-cover.jpg (18.6s, Find Your Mat-ch + 3 phones, same as v2).
 Contact sheets (1 frame / 0.5s): fym-pinned-reel-v3A-contact-sheet.jpg, -v3B-contact-sheet.jpg. Safe-zone overlay sheets: -v3A-safezones.jpg, -v3B-safezones.jpg
 (red = IG top 14% / bottom 20% / right icon rail, orange = bottom 35%, blue hatch = story link-sticker lane y 1450-1640, green box = text area y 270-1440).
-Not in Planoly yet: she picks A or B first.
+**PICKED: B (Tiffany Nov 10 10:28pm).** Final = fym-pinned-reel-v3B-endcard.mp4 (58.9s): v3B 0-52.8 + the full-frame Find Your Mat-ch end card (scripts/social/endcard/fym_brands.py - + animate.py fym, 6.1s, cream, wordmark, 1,500+ line, MAHJMATCH pill, 6 scrolling logo rows to the bottom), replacing the navy end page with the empty bottom half. Cover = v3B-cover.jpg.
 
 | Time | Scene (A) | B differs |
 |---|---|---|

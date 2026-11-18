@@ -105,6 +105,7 @@ Failure that triggered this: the "Launch email: type your footer mailing address
 6. **Every review card shows the thing:** set `img` (a jsDelivr-pinned image or contact sheet) so she sees it inline. Never ask her to find files by repo path.
 7. Log before/after counts AND list each archived card id + reason in the log detail, so she can see the cleanup actually happened.
 8. **Ready to Ship gets every item that is one step from done** (an album waiting only on her card order, a page waiting on one yes). Not just yes/no drafts. Check hq/albums + needs for "order", "final look", "yes" items daily and make sure each has a Ready to Ship entry (NOW list) with the thing shown inline.
+8b. **Her words close it.** Any card she answered with "over", "too late", "not happening", "skip", "no" (or the same meaning) is archived today with her words as `archivedReason` and never reopened (Nov 16 rule below).
 9. **Restock/launch cards expire the same day.** If a restock card is still open the next day, check stock: sold out or a day passed = archive ("too late"), never re-surface it.
 
 10. (Oct 27 10pm, Tiffany) The SOCIAL PLAN always lives in HQ's Social tab: hq/social.plan = [{day, today, posts:[{time, where, what, detail, status, you}]}], status = needs-you | ready | making | scheduled | posted | claude | dropped. Every cleanup run refreshes it: drop past days, mark posted/scheduled from Planoly, add the next days. Never leave the tab empty or out of date.
@@ -112,7 +113,15 @@ Failure that triggered this: the "Launch email: type your footer mailing address
 ## Oct 29 rule: DECIDED BUT NEVER SHIPPED sweep (Tiffany 12:33pm: "Why do things keep falling on the floor?")
 Every run (morning cleanup AND the 9:23pm desk cleanup): read docs/ANSWERS.md for the last 14 days. For every line where she decided/approved/asked for something to be BUILT or PUBLISHED, check for proof it shipped (live URL curl, commit, HQ done). If there is none and it is older than 3 days, put it on the DESK top list with an OWNER chat and a real DATE (never "next week" / "later" without a date), and on HQ only as "overdue, Claude's job". Items parked with no date are not allowed. First catch: the footer Brands link + /brands form + /work-with-us page (decided Oct 19 + Oct 24, never built).
 
+## Nov 16 rule: HER "IT'S OVER" CLOSES IT, THAT DAY, FOR GOOD (Tiffany Nov 16 2026 10:11pm)
+When Tiffany has said an item is over, too late, not happening, or anything that means the same (in chat, the HQ box, a card answer, docs/ANSWERS.md, a Planoly note), archive it THAT DAY:
+- HQ `status: "archived"` (RTS `archived: true`), `archivedAt` today, `archivedReason` = her own words in quotes + when she said them, e.g. `Tiffany Nov 16 9:40pm: "that's over"`.
+- NEVER reopen it, re-surface it on Today, roll it forward, or recreate it under a new id. Before creating or reopening any need, search archived needs AND docs/ANSWERS.md for her closing words on that topic; if found, don't.
+- Also close its twins the same run: the DESK / OVERDUE line (with a DONE line in ANSWERS quoting her), the Planoly draft roll-forward, and any scheduled follow-up that would re-ask it.
+- Only she reopens it ("bring X back").
+
 ## Oct 29 rule: NO ANSWER IS NOT A NO (Tiffany 1:08pm: "Not getting my yes is not an indicator that I don't want it done")
+This rule applies ONLY when she has said NOTHING about the item. If she has said it's over / too late / not happening, the Nov 16 rule above wins: archive it, never re-raise it.
 Never archive or park an item because she did not answer. Unanswered asks older than 2 days go back on HQ Today as one quick line with the default Claude would pick; reversible on-brand steps go ahead with that default (tell her). Only her explicit "no" / "skip" closes an ask.
 
 
@@ -141,3 +150,9 @@ MONDAYS (and after she adds a ShopMy collection): `python3 scripts/checks/shopmy
 - FAIL "MISSING": standing catalog work, no ask. Non-Amazon mats: photo gates (FYM low bar, LOOK at a contact sheet), stage them like builder/fym_fix_nov07/prep_shopmy_nov07.py + shopmy_nov07.py, DESK line "Matches & Catalog: into FYM 1.NN + gallery vNNN". Not a mat / bundle / dead page / sold out: one line in config/shopmy-sync-skips.json with the reason. Same product under another link: `same_as` there.
 - "gallery-next-sync": visible in FYM, no gallery row yet; gallery_sync.py adds it at the next release (gate [159b]). Nothing to do unless it is still there after a release.
 Note in the HQ log one line: "ShopMy sync: PASS (N mats)" or what was staged.
+
+## Nov 11 rule: DESK rewrites never drop open items (Tiffany 3:01pm)
+The Nov 7 rewrite deleted "| Fait à Main code | Main | MAHJMATCH still not applicable at cart. | Watch |" with nothing done. Every desk cleanup: write the new DESK, commit locally, run `python3 scripts/checks/desk_drop_check.py --commit HEAD`, and for every line it lists either (a) put it back / append it to docs/OVERDUE.md with owner + next step + date, or (b) add the DONE proof line to docs/ANSWERS.md. Only then push. Hand-checked exceptions: config/desk-drop-ok.json with the proof. Statuses "Watch", "Ask once", "later" are banned.
+
+## HQ layout (Tiffany Nov 12 10:48-10:50am, v59)
+Tabs in her order: **Now** (always opens first) → Money → Google → Affiliates → Brand Watch → Albums → Social → Find Your Match → ShopMy → SEO → Launch → Partner feedback → My notes → Done → Parking lot. The old "Needs you" tab is gone: everything that needs her is the FIRST thing on Now, money items (needs/amounts-*, screenshots, commission) always on top, then red / yellow / green. "Don't make me check every tab." Never add a tab that holds her to-dos anywhere but Now.

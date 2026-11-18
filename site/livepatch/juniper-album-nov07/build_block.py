@@ -1,6 +1,6 @@
 """Juniper (Oh My Mahjong) album page code block, FINAL (Tiffany's order Nov 7 11:21pm, 42 cards).
 Template = the LIVE Papaya Spritz album block (papaya_live_template.html, curled Nov 7 from /papaya-spritz-mahjong-tile-matches:
-same CSS, hero, FAQ + JSON-LD, Colors & racks guides with colour card + favourite faces, lightbox + Pinterest script).
+same CSS, hero, FAQ + JSON-LD, Colors & racks guides with colour card + favorite faces, lightbox + Pinterest script).
 Card captions = Brownstone Bloom style ("Match the tiles / Match the mat"); holiday cards go in their own holiday section
 (id="holiday-matches", mm3-hol, holcss from site/livepatch/missed-album-picks-nov07/holcss.html, numbering 01.. inside it, her
 relative order kept). Links = the FYM 1.18 build (shop + rack auto-apply links, brand pages); Mahjong Register uses the plain product

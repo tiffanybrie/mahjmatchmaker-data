@@ -88,6 +88,7 @@ def run(path, doc=None):
         pg.add_init_script(STUB % json.dumps(doc))
         pg.goto('file://' + os.path.abspath(path))
         pg.wait_for_function("document.querySelector('#st').textContent.includes('loaded')", timeout=8000)
+        pg.evaluate("try{setView('main','cards');setView('hol','cards')}catch(e){}")  # grid is the default since Nov 17; tests start in cards view
         ids = lambda sel, attr: pg.eval_on_selector_all(sel, f'els=>els.map(e=>e.dataset.{attr})')
         if doc.get('done') and pg.locator('#donebar').is_hidden(): bad.append('Done state not shown (Still ordering bar missing)')
         for s in ('main', 'hol'):

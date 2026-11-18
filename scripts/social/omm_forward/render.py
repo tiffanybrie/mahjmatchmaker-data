@@ -6,7 +6,7 @@ Planoly/IG profile header at the top; grid crop at the bottom). Headlines in Cap
 font, never the script); logo = wordmark + 'Matching mahjong tiles, mats & racks' ribbon:
   slide1  OMM's styled pair shot (Vivienne with Papaya Spritz tiles + racks), "Made for each other",
           "Papaya Spritz tiles · Vivienne mat", OH MY MAHJONG.
-  slide2  "My favorite faces": OMM photo crops of her favourite Papaya faces with short warm labels.
+  slide2  "My favorite faces": OMM photo crops of her favorite Papaya faces with short warm labels.
   slide3  Her OMM match cards from the Papaya album fanned behind "50 matches and counting", navy pill
           "Swipe all 50 of Papaya's matches / mahjmatchmaker.com", wordmark + brand line.
           Match cards are cropped above their code band (never a hard-coded % on social).

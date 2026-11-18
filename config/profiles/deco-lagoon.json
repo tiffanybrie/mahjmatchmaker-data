@@ -9,7 +9,7 @@
   "single": "assets/tiles/v92/bam-bird-boutique-deco-lagoon-split.jpg",
   "all": "assets/launches/bambird-deco-tile-set/16-faces-tray.jpg"
  },
- "_note": "Deco (Lagoon) Tile Set Profile (doc 81), DRAFT Nov 7, built by Claude for Tiffany's review (her Nov 7 7:03pm: run it like Juniper). Colours from config/colorcards.json sets.deco-lagoon. Mats = Claude's top 3 (Reba #1 = her Oct 27 favourite Deco pairing, Viola #2 (Tiffany Nov 8: rank Viola higher; was Wren), Deco Dragon (Mulberry) #3 = Bam Bird's own sister mat, never #1 and never Lagoon on Lagoon). Racks = Bam Bird Lagoon Wood + Mulberry Wood (same 19in shape). best_features = Claude's 4 PROPOSALS until she picks. PRONOUN: brand guide s3 says ask Tiffany; 'her' is the draft default. Prompts are new (not Papaya's irrational fear, not Juniper's green flag).",
+ "_note": "Deco (Lagoon) Tile Set Profile (doc 81), DRAFT Nov 7, built by Claude for Tiffany's review (her Nov 7 7:03pm: run it like Juniper). Colours from config/colorcards.json sets.deco-lagoon. Mats = Claude's top 3 (Reba #1 = her Oct 27 favorite Deco pairing, Viola #2 (Tiffany Nov 8: rank Viola higher; was Wren), Deco Dragon (Mulberry) #3 = Bam Bird's own sister mat, never #1 and never Lagoon on Lagoon). Racks = Bam Bird Lagoon Wood + Mulberry Wood (same 19in shape). best_features = Claude's 4 PROPOSALS until she picks. PRONOUN: brand guide s3 says ask Tiffany; 'her' is the draft default. Prompts are new (not Papaya's irrational fear, not Juniper's green flag).",
  "key": "deco-lagoon",
  "name": "Deco (Lagoon)",
  "matches": 30,
@@ -304,5 +304,30 @@
   ],
   "round": 1,
   "_note": "Tiffany's face picks from the review page; rebuild best_features from these"
+ },
+ "field": {
+  "_note": "Nov 11 (Tiffany: per-album kit like Juniper). Real FYM Table-view screens of Deco (Lagoon) on each mat, album racks.",
+  "mats": [
+   {
+    "img": "assets/social/deco-lagoon-launch/fym-table/deco-lagoon-table-reba.jpg",
+    "mat": "Reba",
+    "brand": "Britt Mills"
+   },
+   {
+    "img": "assets/social/deco-lagoon-launch/fym-table/deco-lagoon-table-viola.jpg",
+    "mat": "Viola",
+    "brand": "Britt Mills"
+   },
+   {
+    "img": "assets/social/deco-lagoon-launch/fym-table/deco-lagoon-table-gilded-peacock.jpg",
+    "mat": "Gilded Peacock",
+    "brand": "Bougie Mahjong"
+   },
+   {
+    "img": "assets/social/deco-lagoon-launch/fym-table/deco-lagoon-table-pretty-in-plum-premium.jpg",
+    "mat": "Pretty in Plum Premium",
+    "brand": "Mahjong Register"
+   }
+  ]
  }
 }

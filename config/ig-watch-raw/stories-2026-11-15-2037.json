@@ -1,0 +1,10 @@
+{
+ "run": "2026-11-15T20:46 ET (20:37 slot)",
+ "status": "SKIPPED: Claude in Chrome extension disconnected",
+ "handles_checked": [],
+ "planned": ["ohmymahjong", "bambirdboutique", "missmahjongofficial", "myfairmahjong", "bespoke_mahjong", "andersruffdesignco", "peacelovemahjong", "bird_and_bamboo", "mahj_mood", "minimahjer", "charlestonmahjongclub"],
+ "with_stories": {},
+ "frames_read": 0,
+ "finds": [],
+ "ops_note": "tabs_context_mcp returned 'not connected', then once connected with no group, then createIfEmpty timed out and the extension disconnected. No tabs were opened. OVERDUE line added."
+}

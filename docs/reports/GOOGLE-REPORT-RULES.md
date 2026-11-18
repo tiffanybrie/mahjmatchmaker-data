@@ -17,3 +17,16 @@ Two different ways the report stops (explain them separately):
   2. EVERY BRAND, EVERY COLUMN: each aiBrands row has overview, namesUs, otherCode, position AND aiMode (same query + &udm=50; AI boxes load late, wait ~5s before reading). A brand not checked gets notChecked: "<reason>" instead, never a silent gap.
   3. GATE: run `python3 scripts/checks/report_complete.py <seo.json>` before writing the seo doc. FAIL = finish the missing columns this run (or mark notChecked with the reason) and re-run. Never write a report that fails it without saying FAIL in the aiSummary.
 - Nov 9 2026 ~12:15am, Tiffany: "Do you know where that traffic comes from ... You need to be in Squarespace Analytics." A traffic rise or drop is never explained by a guess. Read Squarespace Analytics > Traffic Sources (daily table: Direct / Search / Social / Email / Referral) for both weeks, plus Search Console Pages + Queries for both weeks, and say which source and which pages moved. Store it in sc.sources.
+
+
+## AI OVERVIEW SOURCES, EVERY RUN (Tiffany Nov 12 2026 11:27am)
+For every brand whose AI Overview does NOT name MAHJMATCH, write down the sources it cites (URL + type: IG reel,
+IG /popular/ page, FB group post, Reddit, YouTube Short, codes page, coupon site) and which code each one feeds.
+Compare against the brand's history in ALL earlier reports (not just yesterday) and against its sales. The money is
+in the AI Overview; AI Mode is the easy one. Example (OMM, Nov 12): docs/google/aio-sources/2026-11-12-oh-my-mahjong.md.
+Skip Wren Mats' wrong-code issue (Tiffany: not worth the time).
+
+## AI OVERVIEW AND AI MODE ARE NEVER ONE NUMBER (Tiffany Nov 12 2026 7:58pm + 10:52pm)
+The summary line and every table report "AI Overview names MAHJMATCH for X of N" and, separately, "AI Mode: X of N".
+Never "AI answers", "Google AI" or any merged count (from Oct 31 the summaries said "AI answers" and the numbers became
+untrustworthy). AI Overview first: it is the one that makes money.

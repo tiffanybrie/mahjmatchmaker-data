@@ -1,0 +1,10 @@
+{
+ "_why": "Tiffany Nov 11 12:26pm: read Instagram smarter WITH brand weight. Big earners and social-first brands (Miss Mahjong, Bam Bird, Bespoke) are read every run; quiet brands less. Earnings = HQ money tab Oct 12-Nov 11. Any brand with a dated launch/restock in the next 7 days (brand-watch-curated this_week / coming_soon with a date) is read every run until it drops.",
+ "runs_et": ["09:23", "13:23", "18:23"],
+ "A_every_run": ["Oh My Mahjong", "Bam Bird Boutique", "Miss Mahjong", "My Fair Mahjong", "Bespoke Mahjong", "Anders Ruff", "Peace Love Mahjong", "Bird & Bamboo", "Mahj Mood", "Mini Mahjer", "Charleston Mahjong Club"],
+ "B_morning_and_evening": ["Middle & Main Mahjong", "Virora Mahjong", "Hip Hip Mahjong", "Mahj Squad", "Mac + Miller Mahjong", "Bam! Let's Mahjong", "Amanda Toppe", "The Royal Mahjong Society", "Tigre de Tartan", "Britt Mills", "Maison Mahj", "Let's Mahj On", "Mahj Pit", "Noli June", "Sunday Mahjong"],
+ "C_midday_only": "every other partner handle in config/social/ig-handles.json, plus config/watch-major-nonpartners.json",
+ "schedule": {"09:23": ["A", "B"], "13:23": ["A", "C"], "18:23": ["A", "B"]},
+ "limits": {"A": 6, "B": 4, "C": 3},
+ "never": ["Mahjong Row & Co.", "Yellow Mountain Imports"]
+}

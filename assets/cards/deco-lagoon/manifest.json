@@ -1039,6 +1039,56 @@
    "lowres": true,
    "caption_note": "Holiday match",
    "rack_notes": []
+  },
+  {
+   "order": 42,
+   "group": "yours",
+   "mat": "Tiger Fans",
+   "brand": "Piper Chase Studios",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "deco-lagoon-mahjong-tiles-piper-chase-studios-tiger-fans-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/deco/mats/piper-chase-studios-tiger-fans.jpg",
+   "racks": [
+    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Mulberry Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Wine",
+    "Bam Bird Boutique Walnut"
+   ],
+   "why": "Tiffany Nov 17 3:24am: should be in the Lagoon album too.",
+   "fym": "www.etsy.com/listing/4553922554/tiger-fans",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 43,
+   "group": "yours",
+   "mat": "Mirage",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "partner": false,
+   "file": "deco-lagoon-mahjong-tiles-oh-my-mahjong-mirage-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/deco/leftout/oh-my-mahjong-mirage.jpg",
+   "racks": [
+    "Bam Bird Boutique Lagoon Wood",
+    "Bam Bird Boutique Mulberry Wood"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Light Pink"
+   ],
+   "why": "Tiffany Nov 17 3:24am: should be in the Lagoon album too.",
+   "fym": null,
+   "lowres": false,
+   "caption_note": "Retired",
+   "rack_notes": []
   }
  ],
  "title_color": "#0a5560",

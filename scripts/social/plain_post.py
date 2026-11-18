@@ -21,10 +21,13 @@ a.add_argument('--partner-mat', default='')
 a.add_argument('--emoji', default='')
 a.add_argument('--every-set', action='store_true', help='we have an album for every set this brand ever made (Tiffany: OMM, Nov 10)')
 a.add_argument('--also', default='', help='other brands shown, comma-separated names (tagged at the bottom)')
+a.add_argument('--not-latest', action='store_true', help='holiday/older set: say "<brand>\'s <set> is in stock now!", never "the latest" (Nov 17)')
 a.add_argument('--instock', action='store_true', help='set is already for sale: no release line')
 x = a.parse_args()
 
-pct = json.load(open(R + '/config/code-truth.json'))['pct'].get(x.brand)
+_ct = json.load(open(R + '/config/code-truth.json'))
+# Fallback (Nov 13): some verified partners (Anders Ruff, Mahjong Register) live only in code-truth 'terms' with a pct
+pct = _ct['pct'].get(x.brand) or (_ct.get('terms', {}).get(x.brand) or {}).get('pct')
 if not pct:
     sys.exit(f'FAIL: no verified code % for {x.brand} in config/code-truth.json')
 # Her voice, from her own Nov 9 10:47am line: "The latest Oh My Mahjong set Juniper releases this Wednesday 11/11 at
@@ -32,9 +35,9 @@ if not pct:
 # Lotus up in Find-Your-Mat-ch!" Facts + a little excitement in HER words; no invented one-liners.
 H = json.load(open(R + '/config/social/ig-handles.json')); hb = H.get(x.brand)
 brand_at = f"@{hb}" if hb else x.brand   # IG: tag the brand in the caption (rule 5); group post keeps the name
-when_ig = (f"The latest {brand_at} set, {x.set}, is in stock now!" if x.instock
+when_ig = (f"{brand_at}'s {x.set} is in stock now!" if (x.instock and x.not_latest) else f"The latest {brand_at} set, {x.set}, is in stock now!" if x.instock
         else f"The latest {brand_at} set, {x.set}, releases {x.release}!")
-when = (f"The latest {x.brand} set, {x.set}, is in stock now!" if x.instock
+when = (f"{x.brand}'s {x.set} is in stock now!" if (x.instock and x.not_latest) else f"The latest {x.brand} set, {x.set}, is in stock now!" if x.instock
         else f"The latest {x.brand} set, {x.set}, releases {x.release}!")
 pm = f" and her new partner mat, {x.partner_mat}," if x.partner_mat else ""
 code = f"Use code MAHJMATCH to save {pct}% at {x.brand} 💕"

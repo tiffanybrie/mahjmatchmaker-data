@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Reel end frame: Find Your Mat-ch + partner brand logo wall (holiday intro reel end card, year-round version,
 Tiffany Nov 10 6:00pm). 1080x1920. Logos = assets/hub/build-2026-11-07/trim (37 code partners, no Mahjong Row / YMI);
-Tigre de Tartan left out (sits next to 'use code', affiliate policy). Usage: fym_brands.py <set> <out.png>"""
+Tigre de Tartan left out (sits next to 'use code', affiliate policy). Usage: fym_brands.py <set> <out.png>  (set '-' = generic 'Match your tiles', for the pinned FYM reel)"""
 import sys, os, json, asyncio
 from playwright.async_api import async_playwright
 R = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))) + '/'
@@ -24,7 +24,7 @@ html,body{{width:1080px;height:1920px;overflow:hidden;background:#fbf6ef}}
 <img src="{u("assets/brand/flame-heart.png")}" style="position:absolute;left:470px;top:250px;width:140px">
 <img src="{u("assets/brand/mahjmatchmaker-wordmark-notag.png")}" style="position:absolute;left:265px;top:420px;width:550px">
 <div style="position:absolute;left:0;right:0;top:530px;text-align:center"><span style="display:inline-block;font:400 104px/1 Cap;color:#054689;white-space:nowrap;position:relative">Find <span style="font:italic 600 108px/1 PF;color:#c8325f">Your</span> Mat-ch<span style="position:absolute;font:400 38px Bit;margin-left:4px;margin-top:4px">™</span></span></div>
-<div style="position:absolute;left:0;right:0;top:675px;text-align:center;font:italic 600 56px/1.28 PF;color:#054689">Match {name} with {depth}+ mats<br>&amp; racks across brands</div>
+<div style="position:absolute;left:0;right:0;top:675px;text-align:center;font:italic 600 56px/1.28 PF;color:#054689">Match {name if name != '-' else 'your tiles'} with {depth}+ mats<br>&amp; racks across brands</div>
 <div style="position:absolute;left:0;right:0;top:860px;text-align:center"><span class="pill" style="background:#c8325f;color:#fff">Shop now · use code MAHJMATCH</span></div>
 <div style="position:absolute;left:0;right:0;top:985px;text-align:center"><span class="pill" style="background:#fff;border:4px solid #225d36;color:#225d36;font-size:34px;letter-spacing:4px;padding:12px 36px">LINK IN BIO</span></div>
 <div id="g">{chips}</div>

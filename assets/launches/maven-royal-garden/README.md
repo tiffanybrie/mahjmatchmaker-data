@@ -1,0 +1,4 @@
+Mah Jongg Maven Royal Garden (engraved + hand painted, $350, coming early 2027). Design renders only (no real photos yet), saved Nov 11 from mahjonggmaven.com product pages:
+- Navy & Olive Green: https://mahjonggmaven.com/product/royal-garden-navy-olive-green-mah-jongg-set-engraved-hand-painted/  (render titled "Rustic Blue": navy back with small rust leaves, olive middle layer, white face; navy/olive/brown/rust/stone faces)
+- Olive Green, Burgundy & White: https://mahjonggmaven.com/product/royal-garden-olive-green-burgundy-white-mah-jongg-set-engraved-hand-painted/
+Tiffany Nov 11 12:54pm: earmark these for Maven's album (designer line, $350, so we promote her without calling her "the affordable brand", which she doesn't want). Build alongside Bam Bird MCM (same olive/navy/earth palette), release the albums separately.

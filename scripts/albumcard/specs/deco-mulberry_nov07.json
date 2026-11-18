@@ -8,7 +8,9 @@
   "berry": "Berry + a teal accent",
   "jewel": "Jewel box",
   "quiet": "Quiet + clean",
-  "holiday": "Holiday"
+  "holiday": "Holiday",
+  "yours": "Your adds",
+  "more": "More matches (Nov 17 re-pull)"
  },
  "mats": [
   {
@@ -39,7 +41,8 @@
    "why": "Bam Bird Boutique's own Deco Dragon mat, in her sister color. Bam Bird shoots Mulberry tiles on it, and the gold palms glow against the teal.",
    "retired": false,
    "fym": "www.bambirdboutique.com/deco-neoprene-mahjong-mat-copy-2?v=67663098315061",
-   "lowres": false
+   "lowres": false,
+   "partner": true
   },
   {
    "group": "stand",
@@ -100,7 +103,8 @@
    "why": "Bam Bird Boutique's teal neoprene with gold deco corners, the plain sister of the Dragon mat.",
    "retired": false,
    "fym": "www.bambirdboutique.com/deco-neoprene-mahjong-mat",
-   "lowres": false
+   "lowres": false,
+   "partner": true
   },
   {
    "group": "teal",
@@ -334,11 +338,12 @@
    "lowres": false,
    "holiday": true,
    "box": [
-    30,
     150,
-    1020,
-    1080
-   ]
+    300,
+    870,
+    1039
+   ],
+   "photo_note": "Nov 17: cropped inside the mat, no floor/table"
   },
   {
    "group": "holiday",
@@ -350,6 +355,216 @@
    "fym": "www.ohmymahjong.com/yuletide-mat-in-tube",
    "lowres": false,
    "holiday": true
+  },
+  {
+   "group": "yours",
+   "name": "Deco Dragon (Mulberry)",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-mulberry.jpg",
+   "why": "Your pick from Left out (round 1). Claude had said: Bam Bird Boutique's own Mulberry mat. Mulberry on Mulberry, so the Lagoon Dragon is in instead.",
+   "retired": false,
+   "fym": null,
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "partner": true
+  },
+  {
+   "group": "yours",
+   "name": "YOTD Plum",
+   "brand": "Bespoke Mahjong",
+   "img": "assets/colorcards/deco/leftout/bespoke-mahjong-yotd-plum.jpg",
+   "why": "Your pick from Left out (round 1). Claude had said: Violet, not berry, with lilac roses.",
+   "retired": false,
+   "fym": null,
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Mirage",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/leftout/oh-my-mahjong-mirage.jpg",
+   "why": "Your pick from Left out (round 1). Claude had said: Pink and red, warmer than her berry.",
+   "retired": true,
+   "fym": null,
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Scarlett",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-scarlett.jpg",
+   "why": "Your pick from Left out (round 1). Claude had said: Nov 8 Britt Mills check (Reba's berry sister). Mulberry on Mulberry, the same reason Deco Dragon (Mulberry) is out; it's in Lagoon and Indigo.",
+   "retired": false,
+   "fym": null,
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "more",
+   "name": "Peacock Garden",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-peacock-garden.jpg",
+   "why": "Nov 17 re-pull from the Indigo album (Tiffany 3:24am: 'I bet a lot of these go with both'). Your Indigo pick from October. A navy center holds her backs, and the olive frame and paisley border give her a second color, so she doesn't fade into it.",
+   "retired": false,
+   "fym": "brittmillsdesign.com/peacock-garden-neoprene-mahjong-mat-arriving-late-october",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Tilly Neoprene",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-tilly-neoprene.jpg",
+   "why": "Nov 17 re-pull from the Indigo album (Tiffany 3:24am: 'I bet a lot of these go with both'). Lilac with a navy and berry floral frame: her navy and mulberry, softened.",
+   "retired": false,
+   "fym": "brittmillsdesign.com/tilly-neoprene-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Elysium",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/mats/oh-my-mahjong-elysium.jpg",
+   "why": "Nov 17 re-pull from the Indigo album (Tiffany 3:24am: 'I bet a lot of these go with both'). Oh My Mahjong's navy pagoda garden inside a bright green fretwork frame. Navy plus green.",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/elysium-mat-in-tube",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "SoHo",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/mats/oh-my-mahjong-soho.jpg",
+   "why": "Nov 17 re-pull from the Indigo album (Tiffany 3:24am: 'I bet a lot of these go with both'). Oh My Mahjong's deco sunburst in blue and green. Retired, but a match if you already own it.",
+   "retired": true,
+   "fym": "alb:drake:SoHo",
+   "lowres": true,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Caroline in Navy",
+   "brand": "Mahj & Vine",
+   "img": "assets/colorcards/deco/mats/mahj-and-vine-caroline-in-navy.jpg",
+   "why": "Nov 17 re-pull from the Indigo album (Tiffany 3:24am: 'I bet a lot of these go with both'). A navy center framed in magenta and berry blooms with teal leaves: her back, her craks and her bams in one mat.",
+   "retired": false,
+   "fym": "mahjandvine.com/caroline-in-navy",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Darjeeling Peacock (Navy Floral)",
+   "brand": "Bespoke Mahjong",
+   "img": "assets/colorcards/deco/mats/bespoke-mahjong-darjeeling-peacock-navy-floral.jpg",
+   "why": "Nov 17 re-pull from the Indigo album (Tiffany 3:24am: 'I bet a lot of these go with both'). Navy as deep as her backs, scattered with embroidered berry pansies and peacock feathers: her mulberry faces and her peacock-feather winds on her own navy.",
+   "retired": false,
+   "fym": "www.bespokemahjong.com/double-the-fun-darjeeling-peacock-mat#side-b",
+   "lowres": true,
+   "repull_nov08": "Nov 8 ~3pm re-pull (scripts/albumreview/pull.py, contrast side) after Tiffany caught Scarlett + Flora missing from Lagoon.",
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Astor",
+   "brand": "Oh My Mahjong",
+   "img": "assets/colorcards/deco/mats/oh-my-mahjong-astor.jpg",
+   "why": "Nov 17 re-pull from the Indigo album (Tiffany 3:24am: 'I bet a lot of these go with both'). Navy floral with berry and coral inside a navy-plum plaid border: navy plus her berry. The colour pull missed it (measured as blue/purple, not navy). (Found in the Nov 8 mat discovery.)",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/astor-mat-w-tube",
+   "lowres": true,
+   "discovery": "2026-11-08",
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Calista Leatherette",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-calista-leatherette.jpg",
+   "why": "Nov 17 re-pull from the Indigo album (Tiffany 3:24am: 'I bet a lot of these go with both'). A navy center with a cream and sage floral frame and navy fretwork. Soft, and very her.",
+   "retired": false,
+   "fym": "brittmillsdesign.com/calista-leatherette-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Deco Dragon (Indigo)",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-indigo.jpg",
+   "why": "Nov 17 re-pull from the Indigo album (Tiffany 3:24am: 'I bet a lot of these go with both'). Your pick from Left out (round 1). Claude had said: Bam Bird Boutique's own Indigo mat: Indigo tiles on the Indigo mat is navy on navy (your Oct 26 rule).",
+   "retired": false,
+   "fym": null,
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
+   "partner": true,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Dark Blue Art Deco, Gold Geometric Fans",
+   "brand": "Dreamframer Art",
+   "img": "assets/albums/discovery/dreamframer-art-dark-blue-art-deco-gold-fans.jpg",
+   "why": "Nov 17 re-pull from the Indigo album (Tiffany 3:24am: 'I bet a lot of these go with both'). Your pick from New finds (round 1). Navy like her backs, with gold and teal deco fans: the same era and the same gold. A standout candidate.",
+   "retired": false,
+   "fym": null,
+   "lowres": true,
+   "her_pick": true,
+   "new_find": "https://www.etsy.com/listing/4491199204",
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Enchanted Leatherette",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-enchanted-leatherette.jpg",
+   "why": "Nov 17 re-pull from the Indigo album (Tiffany 3:24am: 'I bet a lot of these go with both'). Britt Mills: slate-navy ground with berry, orange and teal folk flowers: her mulberry and teal on navy.",
+   "retired": false,
+   "fym": "brittmillsdesign.com/enchanted-leatherette-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Haven Leatherette",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-haven-leatherette.jpg",
+   "why": "Nov 17 re-pull from the Indigo album (Tiffany 3:24am: 'I bet a lot of these go with both'). Britt Mills: navy and plum painterly florals.",
+   "retired": false,
+   "fym": "brittmillsdesign.com/haven-leatherette-mahjong-mat",
+   "lowres": false,
+   "holiday": false,
+   "new": true
+  },
+  {
+   "group": "more",
+   "name": "Vegan Leather – Hunter Green",
+   "brand": "Bam Bird Boutique",
+   "img": "assets/colorcards/origami/mats/bam-bird-vegan-leather-hunter-green.jpg",
+   "why": "Nov 17 re-pull from the Indigo album (Tiffany 3:24am: 'I bet a lot of these go with both'). Your ask",
+   "retired": false,
+   "fym": "www.bambirdboutique.com/origami-leather-mat?v=67732658880821",
+   "lowres": false,
+   "holiday": false,
+   "partner": true,
+   "her_pick": true,
+   "new": true
   }
  ],
  "_order_nov08": "Standouts first (Playbook step 7, Tiffany Nov 8 1:46pm): colour theory carries the weight; no automatic TNT-first, sister mat may be #1 if truly best."

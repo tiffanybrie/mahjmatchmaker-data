@@ -55,6 +55,7 @@ CODE_SHAPE = re.compile(r"\b([A-Z]{3,}\d{1,3}|TEACHMAHJ)\b")
 MAHJMATCH = re.compile(r"(?<!#)\bMAHJMATCH\b", re.I)      # the code typed out (the #MahjMatch hashtag does not count)
 MAHJMATCH_ANY = re.compile(r"MAHJMATCH", re.I)               # code OR hashtag (TdT policy: neither next to their name)
 HASHTAG = re.compile(r"#mahjmatch\b", re.I)
+EVERY_CLAIM = re.compile(r"\b(?:every|all)\s+(?!time|week|day|month|year|sunday)(?:the\s+)?(?:\w+\s+){0,2}?(?:tiles?|tile sets?|sets?|mats?|racks?|brands?|albums?|OMM|Oh My Mahjong)\b", re.I)
 BANNED_PHRASE = re.compile(r"saves? you money|\bevery mats?\b(?!-)|\bevery brands?\b|\ball the mats\b|still available|still in stock|"
                            r"\(affiliate\)|\btinder\b|\bhinge\b|\bbumble\b|\bbachelor(?:ette)?\b", re.I)
 SHORT_BRAND = re.compile(r"\bBam Bird\b(?! Boutique)|\bMy Fair\b(?! Mahjong)|\bMahjong Row\b(?!\s*(?:&|&amp;|and)\s*Co)")
@@ -129,6 +130,9 @@ def lint(text, platform='file', codes_list=False):
                 out.append(('hashtag', 'no #MahjMatch'))
             for m in BANNED_PHRASE.finditer(cap):
                 out.append(('banned-phrase', f'"{m.group(0)}"'))
+        # Tiffany Nov 11 7:31pm: "you cannot say every... We don't have every. You just give the numbers." (any caption/copy, social or not)
+        for m in EVERY_CLAIM.finditer(cap):
+            out.append(('banned-phrase', f'"{m.group(0)}": never claim "every"; give the number (e.g. 1,300+ mats, 280+ tile sets)'))
             for m in SHORT_BRAND.finditer(cap):
                 out.append(('short-brand', f'"{m.group(0)}" -> full brand name'))
             for m in NO_FEATURE.finditer(cap):

@@ -1,0 +1,250 @@
+{
+ "_about": "Excuses for scripts/checks/partner_coverage.py. Every excuse needs a reason (whose decision, when) and a review_by date; past review_by it stops counting and the gap shows on the front door again. Never excuse a gap just to quiet the check.",
+ "brands": {
+  "Mahjong Row & Co.": {
+   "codes_page": {
+    "reason": "Tiffany Nov 6 1:19pm: Mahjong Row removed from the site + FYM (parked)",
+    "review_by": "2027-01-15"
+   },
+   "store": {
+    "reason": "parked Nov 6 (Tiffany)",
+    "review_by": "2027-01-15"
+   }
+  },
+  "Mahjong by SI": {
+   "codes_page": {
+    "reason": "approved Nov 6; account + code not set up by them yet (pipeline)",
+    "review_by": "2026-11-14"
+   }
+  },
+  "Sweet Jojo Designs": {
+   "fym_tiles": {
+    "reason": "NOT approved yet: W-9 resubmitted Nov 8, no approval email in mahjmatchmaker@ as of Nov 14 (only promo mail). Code first: nothing visible before the code. (Tiffany Nov 8 4:51pm rule)",
+    "review_by": "2026-11-21"
+   },
+   "fym_mat": {
+    "reason": "same as fym_tiles",
+    "review_by": "2026-11-21"
+   }
+  },
+  "I Love Mahj": {
+   "store": {
+    "reason": "no mats/tiles/racks to match (Tiffany Oct 26 11:28pm)",
+    "review_by": "2027-03-01"
+   }
+  },
+  "Splash of Color": {
+   "fym_tiles": {
+    "reason": "Tiffany Nov 11 5:13pm EXECUTIVE DECISION: no Splash of Color tile sets in the app, ever (~300 sets, AI artwork, would swamp shop-by-colour). Only if the brand or a shopper asks. Their MATS still come in (big-catalog pace, half weight).",
+    "review_by": "2027-11-11"
+   }
+  }
+ },
+ "products": {
+  "mahjonggmaven/2-layer-blue-wave-engraved-hand-painted-mah-jongg-set-jewel-tone-ink": {
+   "reason": "2-layer with an identical 3-layer colour (Tiffany Nov 11 5:27pm: one per colour)",
+   "name": "2  Layer Blue Wave Engraved & Hand Painted Mah Jongg Set- Jewel tone Ink",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/3-layer-teal-blue-with-dolphins-american-mahjongg-tile-set": {
+   "reason": "novelty/character tiles she hates (Tiffany Nov 11 5:27pm)",
+   "name": "3 Layer Teal Blue with Dolphins American MahJongg tile set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/royal-blue-mah-jongg-mat-with-mosaic-tile-design": {
+   "reason": "not one single-colour tile set",
+   "name": "Royal Blue Mah Jongg Mat with Mosaic tile design",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/2-layer-turquoise-engraved-hand-painted-american-mah-jongg-tile-set": {
+   "reason": "2-layer with an identical 3-layer colour (Tiffany Nov 11 5:27pm: one per colour)",
+   "name": "2 Layer Turquoise- Engraved and  Hand Painted American Mah Jongg tile set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/2-layer-light-blue-engraved-hand-painted-american-mahjongg-tile-set": {
+   "reason": "2-layer with an identical 3-layer colour (Tiffany Nov 11 5:27pm: one per colour)",
+   "name": "2 Layer Light Blue- Engraved and Hand Painted American MahJongg tile set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/3-layer-siamese-cat-blue-iris-tile-set-engraved-hand-painted": {
+   "reason": "novelty/character tiles she hates (Tiffany Nov 11 5:27pm)",
+   "name": "3 Layer Siamese cat Blue Iris tile set Engraved & Hand Painted",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/3-layer-pink-leopard-mah-jongg-set": {
+   "reason": "novelty/character tiles she hates (Tiffany Nov 11 5:27pm)",
+   "name": "3 Layer Pink Leopard Mah Jongg Set | Engraved & Hand Painted Tiles",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/3-layer-cranberry-tiles-with-flamingos-american-mah-jongg-set": {
+   "reason": "novelty/character tiles she hates (Tiffany Nov 11 5:27pm)",
+   "name": "3 Layer Cranberry Jelly tiles with Flamingo’s  American Mah Jongg set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/3-layer-cranberry-tiles-with-butterflies-engraved-and-handpainted-american-mah-jongg-set": {
+   "reason": "novelty/character tiles she hates (Tiffany Nov 11 5:27pm)",
+   "name": "3 layer  Cranberry tiles with Butterflies, engraved and handpainted American Mah Jongg set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/2-layer-light-pink-engraved-handpainted-american-mah-jongg-tile-set": {
+   "reason": "2-layer with an identical 3-layer colour (Tiffany Nov 11 5:27pm: one per colour)",
+   "name": "2 Layer Light Pink- Engraved & Handpainted American Mah Jongg tile set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/2-layer-dark-pink-engraved-hand-painted-american-mah-jongg-set": {
+   "reason": "2-layer with an identical 3-layer colour (Tiffany Nov 11 5:27pm: one per colour)",
+   "name": "2 Layer- Dark Pink, Engraved and Hand Painted American Mah Jongg set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/ivory-colored-tiles": {
+   "reason": "always sold out; Yellow Mountain fills ivory (Tiffany Nov 11 5:27pm)",
+   "name": "Classic Ivory  MahJongg Tiles",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/2-layer-green-engraved-hand-painted-american-mah-jongg-tile-set": {
+   "reason": "2-layer with an identical 3-layer colour (Tiffany Nov 11 5:27pm: one per colour)",
+   "name": "2 Layer Green- Engraved  and Hand Painted American Mah Jongg tile set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/2-layer-lavender-engraved-hand-painted-american-mah-jongg-tile-set": {
+   "reason": "2-layer with an identical 3-layer colour (Tiffany Nov 11 5:27pm: one per colour)",
+   "name": "2 Layer Lavender -Engraved and Hand Painted American Mah Jongg tile set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/2-layer-purple-engraved-handpainted-american-mah-jongg-tile-set": {
+   "reason": "2-layer with an identical 3-layer colour (Tiffany Nov 11 5:27pm: one per colour)",
+   "name": "2 Layer Purple- Engraved and Handpainted American Mah Jongg tile set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/9-color-choices-2-layer-engraved-and-hand-painted-american-mahjongg-tile-set": {
+   "reason": "2-layer with an identical 3-layer colour (Tiffany Nov 11 5:27pm: one per colour)",
+   "name": "2 Layer – Red , Engraved and  Hand Painted American MahJongg tile set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/2-layer-silver-sparkle-engraved-hand-painted-american-mah-jongg-set": {
+   "reason": "2-layer with an identical 3-layer colour (Tiffany Nov 11 5:27pm: one per colour)",
+   "name": "2 Layer Gold Sparkle, Engraved & Hand Painted American Mah Jongg set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/mahjong-insider-black-friday-bundle": {
+   "reason": "not one single-colour tile set",
+   "name": "MahJong Insider -Mah Jongg Maven Black Friday  Mah Jongg set Bundle",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/2-layer-silver-sparkle-engraved-hand-painted-american-mah-jongg-tile-set": {
+   "reason": "2-layer with an identical 3-layer colour (Tiffany Nov 11 5:27pm: one per colour)",
+   "name": "2 Layer Silver Sparkle- Engraved & Hand Painted American Mah Jongg tile set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/2-layer-black-engraved-hand-painted-american-mah-jongg-tile-set": {
+   "reason": "2-layer with an identical 3-layer colour (Tiffany Nov 11 5:27pm: one per colour)",
+   "name": "2 Layer Black- Engraved & Hand Painted American Mah Jongg tile set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/3-layer-sparkle-chicklet-set-with-jewel-tone-ink-american-mah-jongg-set": {
+   "reason": "not one single-colour tile set",
+   "name": "3 Layer Sparkle Chicklet set with Jewel tone ink- American Mah Jongg set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/3-layer-rainbow-mosaic-glass-tile-set": {
+   "reason": "not one single-colour tile set",
+   "name": "3 Layer Jewel Color Mosaic tile set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/chicklet-rainbow-set-engraved-and-hand-painted-mahjongg-tile-set": {
+   "reason": "not one single-colour tile set",
+   "name": "Chicklet/Rainbow set-engraved and hand painted Mahjongg tile set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/peanuts-gang-mah-jongg-set": {
+   "reason": "novelty/character tiles she hates (Tiffany Nov 11 5:27pm)",
+   "name": "Peanuts Gang Mah Jongg set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/coca-cola-classic-mah-jongg-set-tile-set": {
+   "reason": "novelty/character tiles she hates (Tiffany Nov 11 5:27pm)",
+   "name": "Coca-Cola® Classic American Mah Jongg Tile Set only",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/engraved-heart-set-available-on-any-2-layer-sparkle-engraved-hand-painted-tile-set": {
+   "reason": "not one single-colour tile set",
+   "name": "Engraved Heart set- available on any 2 layer Sparkle Engraved & Hand painted tile set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/2-layer-mauve-engraved-handpainted-american-mah-jongg-tile-set": {
+   "reason": "2-layer with an identical 3-layer colour (Tiffany Nov 11 5:27pm: one per colour)",
+   "name": "2 Layer Mauve- Engraved and  Handpainted American Mah Jongg tile set",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/sparkle-chicklet-american-mahjongg-tile-set-engraved-and-hand-painted": {
+   "reason": "not one single-colour tile set",
+   "name": "Sparkle Chicklet American  MahJongg tile set- Engraved and Hand Painted",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/chinese-mah-jongg-set-large-tiles-382819-5mm": {
+   "reason": "not one single-colour tile set",
+   "name": "Chinese Mahjong  set- Large tiles:  38*28*19.5mm",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/slightly-taller-koi-fish-mahjong-tiles": {
+   "reason": "novelty/character tiles she hates (Tiffany Nov 11 5:27pm)",
+   "name": "Slightly Taller  Koi Fish Mahjong Tiles",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/3-layer-granite-inspired-mah-jongg-tile-design-4-colors-engraved-and-hand-painted-tiles-american": {
+   "reason": "not one single-colour tile set",
+   "name": "3 Layer Granite inspired Mah Jongg tile design  (4 colors) Engraved and Hand Painted tiles American",
+   "review_by": "2027-11-11"
+  },
+  "mahjonggmaven/two-layer-koi-fish-tiles": {
+   "reason": "novelty/character tiles she hates (Tiffany Nov 11 5:27pm)",
+   "name": "Two Layer Koi Fish Tiles",
+   "review_by": "2027-11-11"
+  },
+  "wrenmats/the-pool-mat": {
+   "name": "The Pool Mat",
+   "reason": "not a mahjong table mat: 36x24 poolside mat, thinner than their table mats (wrenmats.com listing text, coverage run Nov 13)",
+   "review_by": "2026-11-27"
+  },
+  "bespokemahjong/special-order-the-palm-beach-table-bespoke-x-grateful-dead-tie-dye-dancing-bears-copy": {
+   "reason": "Bespoke $4,250-$12,000 'Mahjong Sets' listing = an automatic TABLE bundle (Laguna/Palm Beach table + racks + Mega tiles), not a tile set to match; the tiles/mats in it are already in the app (checked products.json body Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  },
+  "bespokemahjong/special-order-the-palm-beach-table-bespoke-x-grateful-dead-we-are-everywhere-skull": {
+   "reason": "Bespoke $4,250-$12,000 'Mahjong Sets' listing = an automatic TABLE bundle (Laguna/Palm Beach table + racks + Mega tiles), not a tile set to match; the tiles/mats in it are already in the app (checked products.json body Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  },
+  "bespokemahjong/special-order-the-palm-beach-table-bespoke-x-grateful-dead-tie-dye-dream": {
+   "reason": "Bespoke $4,250-$12,000 'Mahjong Sets' listing = an automatic TABLE bundle (Laguna/Palm Beach table + racks + Mega tiles), not a tile set to match; the tiles/mats in it are already in the app (checked products.json body Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  },
+  "bespokemahjong/special-order-the-palm-beach-table-bespoke-x-grateful-dead-pink-dancing-bears-copy-copy": {
+   "reason": "Bespoke $4,250-$12,000 'Mahjong Sets' listing = an automatic TABLE bundle (Laguna/Palm Beach table + racks + Mega tiles), not a tile set to match; the tiles/mats in it are already in the app (checked products.json body Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  },
+  "bespokemahjong/special-order-the-palm-beach-table-bespoke-x-grateful-dead-we-are-everywhere": {
+   "reason": "Bespoke $4,250-$12,000 'Mahjong Sets' listing = an automatic TABLE bundle (Laguna/Palm Beach table + racks + Mega tiles), not a tile set to match; the tiles/mats in it are already in the app (checked products.json body Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  },
+  "bespokemahjong/in-stock-love-graffiti": {
+   "reason": "Bespoke $4,250-$12,000 'Mahjong Sets' listing = an automatic TABLE bundle (Laguna/Palm Beach table + racks + Mega tiles), not a tile set to match; the tiles/mats in it are already in the app (checked products.json body Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  },
+  "bespokemahjong/coming-soon-midnight-garden": {
+   "reason": "Bespoke $4,250-$12,000 'Mahjong Sets' listing = an automatic TABLE bundle (Laguna/Palm Beach table + racks + Mega tiles), not a tile set to match; the tiles/mats in it are already in the app (checked products.json body Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  },
+  "bespokemahjong/special-order-bespoke-x-corey-paige-graffiti-street-style": {
+   "reason": "Bespoke $4,250-$12,000 'Mahjong Sets' listing = an automatic TABLE bundle (Laguna/Palm Beach table + racks + Mega tiles), not a tile set to match; the tiles/mats in it are already in the app (checked products.json body Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  },
+  "bespokemahjong/corey-paige-electric-love": {
+   "reason": "Bespoke $4,250-$12,000 'Mahjong Sets' listing = an automatic TABLE bundle (Laguna/Palm Beach table + racks + Mega tiles), not a tile set to match; the tiles/mats in it are already in the app (checked products.json body Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  },
+  "bespokemahjong/40mm-magnetic-tiles-acrylic-storage-container": {
+   "reason": "The Mega Tile Acrylic Box: product_type Accessories (storage box), not a tile set (Nov 14, coverage task)",
+   "review_by": "2026-11-28"
+  }
+ }
+}

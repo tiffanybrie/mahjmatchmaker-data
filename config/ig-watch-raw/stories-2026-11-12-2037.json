@@ -1,0 +1,17 @@
+{
+ "run": "2026-11-12T20:37 ET stories check (fired late; ran 10:28-10:45pm ET)",
+ "handles_checked": ["ohmymahjong","bambirdboutique","missmahjongofficial","myfairmahjong","bespoke_mahjong","andersruffdesignco","peacelovemahjong","bird_and_bamboo","mahj_mood","minimahjer","charlestonmahjongclub"],
+ "extra_dated_partners": "none beyond tier A (Bespoke Glitter Glow 11/14 and Mahj Mood Lake Day 11/20 are tier A; Miss Darling Lilac 11/18 is Miss Mahjong, tier A)",
+ "with_stories": ["ohmymahjong","bambirdboutique","missmahjongofficial","myfairmahjong","bespoke_mahjong","andersruffdesignco","peacelovemahjong","mahj_mood","minimahjer","charlestonmahjongclub"],
+ "no_story": ["bird_and_bamboo"],
+ "frames_read": {"ohmymahjong": 8, "bambirdboutique": 8, "missmahjongofficial": 4, "myfairmahjong": 2, "bespoke_mahjong": 7, "andersruffdesignco": 12, "peacelovemahjong": 2, "mahj_mood": 11, "minimahjer": 2, "charlestonmahjongclub": 4},
+ "frames_note": "OMM frame 1 (11h) loaded blank and frame 9 auto-skipped; the rest are holiday gift guides (under $50/$250/$500, 'Oh My Holiday'), WAM event, Outlook poll. Bam Bird: open play / Friendsgiving / Holiday Tiles & Tea events, Town & Country press, reposts. Miss Mahjong: Mini Miss Classic + Miss Out of Office link frames, repost of their 'Pop the top, she's almost here' feed post (no date; Miss Darling Lilac already dated 11/18), customer cookies. Anders Ruff, MFM: customer reposts only. PLM: Pause for a Cause sponsor call + 'Just dropped' keychain reel share (keychains already listed 11/11). Mini Mahjer: 'Big Bundle' reel share + customer repost. Mahj Mood BOGO sale ended 8pm CST (hidden).",
+ "finds": [
+  {"brand": "Mahj Mood", "what": "NEW transparent blue racks launching later this month (shown with Lake Day mat)", "when": "later in November, no date", "urgency": "LATER", "curated": "coming_soon", "source": "IG story", "img": "assets/launches/mahj-mood-transparent-blue-racks/mahj-mood-blue-racks-lake-day-mat-ig-story-nov12.jpg", "sheet": "appended"},
+  {"brand": "Mahj Mood", "what": "Fall Fling mat ($65) retiring", "when": "now", "urgency": "NOW", "curated": "just_dropped", "source": "IG story", "sheet": "appended"},
+  {"brand": "Bespoke Mahjong", "what": "Black Friday event: 25% off sitewide, 15% off tables", "when": "live now", "urgency": "NOW", "curated": "sales (hidden, approved null: pending her yes)", "source": "IG story", "sheet": "appended"},
+  {"brand": "Charleston Mahjong Club", "what": "Cabana Club tiles: only a handful left; next-batch pre-orders open once these ship", "when": "live now", "urgency": "NOW", "curated": "this_week (update, history kept)", "source": "IG story", "sheet": "appended"}
+ ],
+ "also_fixed": "Curated was behind the 6:35pm sheet rows (Bespoke Glitter Glow drops Sat 11/14 9am CT, also confirmed in tonight's story; Miss Darling Lilac opens Wed 11/18 10am CT): both written to curated. Brand Watch v25.",
+ "push": "none (BRAND-WATCH-RULES 00000, Nov 12: catalog only, no pushes for NOW items)"
+}

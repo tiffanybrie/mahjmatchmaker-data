@@ -532,5 +532,96 @@
   "flag": "no_tiles",
   "photo": "t15/177.jpg",
   "note": "Nov 8 (FYM 1.18 QA F3): showed the 'PHOTO COMING SOON' placeholder; set stays hidden until a real photo exists. Brand images checked Nov 8 (ymimports.com/products/hb-at002-a.json): a single-tile face/side/back shot and a full-set layout strip."
+ },
+ "middleandmainmahjong.com/clearwater-dockside-tiles-a-southern-lake-inspired-mahjong-set": {
+  "name": "Clearwater Dockside Tiles- A Southern Lake Inspired Mahjong Set",
+  "maker": "Middle & Main Mahjong",
+  "flag": "no_tiles",
+  "note": "2026-11-17 1.23 photo check (looked at): Limited Edition banner over the photo, and the tiles are small",
+  "photo": "assets/tiles/v120/middle-and-main-mahjong-clearwater-dockside-tiles-a-southern-lake-inspired-mahjo.jpg"
+ },
+ "nolijune.com/martini-mahjong-tile-set": {
+  "name": "Martini Mahjong Tile Set",
+  "maker": "Noli June",
+  "flag": "faces_only",
+  "note": "2026-11-17 1.23 photo check (looked at): Shows tile faces only, no tile backs",
+  "photo": "assets/tiles/v120/noli-june-martini-mahjong-tile-set.jpg"
+ },
+ "nolijune.com/sweetheart-mahjong-tile-set": {
+  "name": "Sweetheart Mahjong Tile Set",
+  "maker": "Noli June",
+  "flag": "faces_only",
+  "note": "2026-11-17 1.23 photo check (looked at): Shows tile faces only, no tile backs",
+  "photo": "assets/tiles/v120/noli-june-sweetheart-mahjong-tile-set.jpg"
+ },
+ "nolijune.com/mazel-mahjong-tile-set": {
+  "name": "Mazel Mahjong Tile Set",
+  "maker": "Noli June",
+  "flag": "faces_only",
+  "note": "2026-11-17 1.23 photo check (looked at): Shows tile faces only, no tile backs",
+  "photo": "assets/tiles/v120/noli-june-mazel-mahjong-tile-set.jpg"
+ },
+ "nolijune.com/the-riviera-jet-set-mahjong-tiles-portofino-blue": {
+  "name": "THE RIVIERA JET SET -  MAHJONG TILES:  PORTOFINO BLUE",
+  "maker": "Noli June",
+  "flag": "no_tiles",
+  "note": "2026-11-17 1.23 photo check (looked at): The tiles are too small to see; it's mostly the mat",
+  "photo": "assets/tiles/v120/noli-june-the-riviera-jet-set-mahjong-tiles-portofino-blue.jpg"
+ },
+ "ymimports.com/hb-cb005-c": {
+  "name": "Chinese Mahjong Bone and Bamboo Tiles - Vintage \"Qilin Kirin\" Set",
+  "maker": "Yellow Mountain Imports",
+  "flag": "no_tiles",
+  "note": "2026-11-17 1.23 photo check (looked at): Mostly the wooden case, not the tiles",
+  "photo": "assets/tiles/v120/yellow-mountain-imports-chinese-mahjong-bone-and-bamboo-tiles-vintage-qilin-kiri.jpg"
+ },
+ "charleston-mahjong-club-cabana-club-edition": {
+  "name": "The Cabana Club Edition",
+  "maker": "Charleston Mahjong Club",
+  "flag": "ok",
+  "note": "Nov 17 v123 add",
+  "photo": "V123PIN/t123/charleston-mahjong-club-cabana-club-edition.jpg"
+ },
+ "mahj-mood-playing-for-keeps": {
+  "name": "Playing For Keeps",
+  "maker": "Mahj Mood",
+  "flag": "ok",
+  "note": "Nov 17 v123 add",
+  "photo": "V123PIN/t123/mahj-mood-playing-for-keeps.jpg"
+ },
+ "miss-mahjong-miss-darling-lilac": {
+  "name": "Miss Darling (Lilac)",
+  "maker": "Miss Mahjong",
+  "flag": "ok",
+  "note": "Nov 17 v123 add",
+  "photo": "V123PIN/t123/miss-mahjong-miss-darling-lilac.jpg"
+ },
+ "noli-june-holiday-soiree": {
+  "name": "Holiday Soirée",
+  "maker": "Noli June",
+  "flag": "ok",
+  "note": "Nov 17 v123 add",
+  "photo": "V123PIN/t123/noli-june-holiday-soiree.jpg"
+ },
+ "noli-june-best-in-show-pink": {
+  "name": "Best In Show (Pink)",
+  "maker": "Noli June",
+  "flag": "ok",
+  "note": "Nov 17 v123 add",
+  "photo": "V123PIN/t123/noli-june-best-in-show-pink.jpg"
+ },
+ "noli-june-chinoiserie-polished-pink": {
+  "name": "Chinoiserie Polished Pink",
+  "maker": "Noli June",
+  "flag": "ok",
+  "note": "Nov 17 v123 add",
+  "photo": "V123PIN/t123/noli-june-chinoiserie-polished-pink.jpg"
+ },
+ "noli-june-chinoiserie-breezy-blue": {
+  "name": "Chinoiserie Breezy Blue",
+  "maker": "Noli June",
+  "flag": "ok",
+  "note": "Nov 17 v123 add",
+  "photo": "V123PIN/t123/noli-june-chinoiserie-breezy-blue.jpg"
  }
 }

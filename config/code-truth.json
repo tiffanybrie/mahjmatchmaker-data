@@ -7,6 +7,7 @@
     "Bam! Let's Mahjong": 10,
     "Bespoke Mahjong": 10,
     "Bird & Bamboo": 10,
+    "Brewtifully": 15,
     "Britt Mills": 15,
     "Charleston Mahjong Club": 10,
     "Hip Hip Mahjong": 10,
@@ -25,8 +26,8 @@
     "Oh My Mahjong": 10,
     "Peace Love Mahjong": 10,
     "Soirée All Day": 10,
-    "Splash of Color": 10,
-    "The Royal Mahjong Society": 15,
+    "Splash of Color": 15,
+    "The Royal Mahjong Society": 20,
     "Tigre de Tartan": 10,
     "Virora Mahjong": 10,
     "Wren Mats": 10,
@@ -35,7 +36,9 @@
   },
   "notes": {
     "Amanda Toppe": "10% (Tiffany Nov 2 2026)",
-    "_A4": "Nov 7 2026 (Ops, gap audit A4): 11 hub brands had no entry; added pct (4) + terms (12 incl. Sunday no-code). Sources per brand in terms.*.source."
+    "_A4": "Nov 7 2026 (Ops, gap audit A4): 11 hub brands had no entry; added pct (4) + terms (12 incl. Sunday no-code). Sources per brand in terms.*.source.",
+    "The Royal Mahjong Society": "20% until Dec 1 2026 (their Black Friday email Sat Nov 14 10:43am; Tiffany yes Nov 16 10:08pm ET 'Yes update it'). Back to 15% on Dec 2: revert this + Royal page, hub row/ItemList/FAQ/text block, SEO description.",
+    "Splash of Color": "15% (Google report Nov 17 12:55pm ET: MAHJMATCH cart test at splashofcolorco.com applies 15.0; HQ attended session Mon Nov 16 ~9:30pm cited her Nov 15 yes for 15%; the live site already said 15%). Was 10% until Nov 15. Re-check after Black Friday (Dec 2)."
   },
   "verified_max_age_days": 9,
   "removed_brands": {
@@ -89,6 +92,10 @@
     ],
     "The Royal Mahjong Society": [
       "Royal Mahjong Society"
+    ],
+    "Fait à Main": [
+      "Fait a Main",
+      "Fait À Main"
     ]
   },
   "page_brand": {
@@ -234,6 +241,37 @@
       "hub_listed": false,
       "source": "non-partner (Tiffany Oct 20 allow: whole line, personal favorite); page /sunday-mahjong-discount-code says there is no code",
       "status": "confirmed (no code)"
+    },
+    "Mah Jongg Maven": {
+      "code": "MAHJMATCH",
+      "pct": 5,
+      "scope": "excludes NMJL cards + custom jokers",
+      "hub_must": "5%",
+      "source": "Partner approval email Jan 23 2026 (mahjmatchmaker@ Gmail thread 19be374f0891d44c: MAHJMATCH, 5% off / 5% payout, excludes NMJL cards + custom jokers), found ANSWERS 2026-11-08 4:51pm; cart test Nov 8 11:35pm ET (coupon mahjmatch, $4.75 off $95 = 5%). Added by desk cleanup Nov 10 night after live_codes_check FAILed on the newly live page.",
+      "status": "confirmed"
+    },
+    "Mahjong by SI": {
+      "code": "MAHJMATCH",
+      "pct": 10,
+      "scope": "mats",
+      "hub_must": "10%",
+      "source": "Stacie Francombe email Nov 6 2026 (10% off for shoppers, 5% commission) + Jenna set up the code Nov 9 (thread 1a1b2d53c72f38af) + invite email 'Your followers get 10% off every mat purchase'; cart test Nov 11 2026 ~3:15pm ET: MAHJMATCH applicable, $5 off a $50 mat, fake code not applicable.",
+      "status": "confirmed"
+    },
+    "Fait à Main": {
+      "code": "MAHJMATCH",
+      "pct": null,
+      "perk": "code coming soon",
+      "hub_must": "coming soon",
+      "source": "UpPromote approval Oct 19 2026 (no terms); MAHJMATCH not applicable at cart Oct 20-Nov 11 (cart test Nov 11 ~3:10pm ET: applicable=false). Listed as 'code coming soon' per Tiffany Nov 11 3:01pm.",
+      "status": "code coming soon"
+    },
+    "Brewtifully": {
+      "code": "MAHJMATCH",
+      "pct": 15,
+      "hub_must": "15% off",
+      "source": "Tiffany Nov 18 2026 2:11am: Brewtifully approved us (UpPromote, af.uppromote.com); code MAHJMATCH, 10% off; commission 10% per order (Program details screenshot); affiliate link https://tracy-2833.myshopify.com/Mahjmatchmaker (redirects to shop.brewtifully.com) | CORRECTED Tiffany Nov 18 2:53am: customer discount is 15% (as in Tracy's Nov 17 email), commission stays 10%",
+      "status": "confirmed"
     }
   },
   "sitemap_lag_days": 3

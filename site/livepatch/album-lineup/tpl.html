@@ -1,0 +1,35 @@
+<title>Album Lineup by Brand</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap">
+<style>
+/* layout: one column of brand cards; tile-set candidates as photo chips */
+:root{--bg:#fbf8f6;--card:#fff;--fg:#1d2b4f;--muted:#5d6680;--line:#eadfe3;--pink:#d9467a;--green:#2f7a5b;--disp:'Fraunces',Georgia,serif;--body:'Inter',system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141a2b;--card:#1c2338;--fg:#eef0f6;--muted:#a3abc2;--line:#2d3550;--pink:#f07aa3;--green:#6fc59b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141a2b;--card:#1c2338;--fg:#eef0f6;--muted:#a3abc2;--line:#2d3550;--pink:#f07aa3;--green:#6fc59b;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+main{max-width:920px;margin:0 auto;display:grid;gap:18px}
+h1,h2,h3{font-family:var(--disp);font-weight:600;text-wrap:balance;margin:0}
+h1{font-size:30px}h2{font-size:22px;margin-top:18px}h3{font-size:18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.lede{color:var(--muted);max-width:65ch;margin:4px 0 0}
+.brand{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:8px;min-width:0}
+.brand p{margin:0;color:var(--muted)}.brand p b{color:var(--fg)}
+.pill{font:600 11px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;padding:5px 8px;border-radius:999px;background:var(--line);color:var(--fg)}
+.pill.zero{background:var(--pink);color:#fff}
+.cands{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+.cand{display:grid;grid-template-columns:72px 1fr;gap:10px;align-items:start;min-width:0}
+.cand img,.noimg{width:72px;height:72px;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+.noimg{display:grid;place-items:center;font-size:10px;color:var(--muted);text-align:center}
+.cn{display:grid;gap:2px;min-width:0}.cn small{color:var(--muted)}
+.st{font-size:12px;color:var(--muted)}.st.new{color:var(--green);font-weight:600}
+ol{margin:6px 0 0;padding-left:22px;display:grid;gap:4px}ol span{color:var(--muted)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+</style>
+<main>
+<header><h1>Album lineup by brand</h1><p class="lede">Every partner that makes tile sets, how many match albums they have, and the sets we could do next. Your rule: get every tile maker to one album before a brand gets a third (Miss Mahjong is at two). New sets beat re-releases and can jump the line. Rough order only, nothing decided. Built Wed 11/11 from the partner store watch and HQ albums.</p></header>
+<div class="box"><h2 style="margin:0">My rough suggested order</h2><ol>{{PICKS}}</ol><p class="lede" style="margin-top:8px">Holiday albums you already have ready keep going in their own slots. I don't have per-set sales numbers, so this is ordered by newness and your rules.</p></div>
+<h2>No album yet (tile makers)</h2>
+{{NONE}}
+<h2>Have albums</h2>
+{{HAVE}}
+<div class="box"><h2 style="margin:0">Mat and rack partners (no tile album needed)</h2><p class="lede">{{MATONLY}}. Their mats show up inside other brands' albums.</p></div>
+</main>

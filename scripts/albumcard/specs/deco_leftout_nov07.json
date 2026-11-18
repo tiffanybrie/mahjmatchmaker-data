@@ -291,13 +291,6 @@
  ],
  "deco-mulberry": [
   {
-   "name": "Deco Dragon (Mulberry)",
-   "brand": "Bam Bird Boutique",
-   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-mulberry.jpg",
-   "why": "Bam Bird Boutique's own Mulberry mat. Mulberry on Mulberry, so the Lagoon Dragon is in instead.",
-   "retired": false
-  },
-  {
    "name": "East Meets West – Magenta",
    "brand": "Bam Bird Boutique",
    "img": "assets/colorcards/deco/leftout/bam-bird-boutique-east-meets-west-magenta.jpg",
@@ -310,20 +303,6 @@
    "img": "assets/colorcards/deco/leftout/anders-ruff-brownstone-bloom.jpg",
    "why": "Rust and olive: warm and earthy next to her cool berry.",
    "retired": false
-  },
-  {
-   "name": "YOTD Plum",
-   "brand": "Bespoke Mahjong",
-   "img": "assets/colorcards/deco/leftout/bespoke-mahjong-yotd-plum.jpg",
-   "why": "Violet, not berry, with lilac roses.",
-   "retired": false
-  },
-  {
-   "name": "Mirage",
-   "brand": "Oh My Mahjong",
-   "img": "assets/colorcards/deco/leftout/oh-my-mahjong-mirage.jpg",
-   "why": "Pink and red, warmer than her berry.",
-   "retired": true
   },
   {
    "name": "Plum Peony",
@@ -422,13 +401,6 @@
    "more_note": "Big catalog: only the best few go in the album (Tiffany Nov 8 2:03pm)"
   },
   {
-   "name": "Scarlett",
-   "brand": "Britt Mills",
-   "img": "assets/colorcards/deco/mats/britt-mills-scarlett.jpg",
-   "why": "Nov 8 Britt Mills check (Reba's berry sister). Mulberry on Mulberry, the same reason Deco Dragon (Mulberry) is out; it's in Lagoon and Indigo.",
-   "retired": false
-  },
-  {
    "name": "Flora",
    "brand": "Britt Mills",
    "img": "assets/colorcards/deco/mats/britt-mills-flora.jpg",
@@ -451,20 +423,6 @@
   }
  ],
  "deco-indigo": [
-  {
-   "name": "Deco Dragon (Indigo)",
-   "brand": "Bam Bird Boutique",
-   "img": "assets/colorcards/deco/mats/bam-bird-boutique-deco-dragon-indigo.jpg",
-   "why": "Bam Bird Boutique's own Indigo mat: Indigo tiles on the Indigo mat is navy on navy (your Oct 26 rule).",
-   "retired": false
-  },
-  {
-   "name": "Vegan Leather – Navy",
-   "brand": "Bam Bird Boutique",
-   "img": "assets/colorcards/deco/leftout/bam-bird-boutique-vegan-leather-navy.jpg",
-   "why": "Navy vegan leather: solid navy on navy, the tiles disappear.",
-   "retired": false
-  },
   {
    "name": "Navy Leatherette",
    "brand": "Mahjong Register",
@@ -623,18 +581,71 @@
    "more_note": "Big catalog: only the best few go in the album"
   },
   {
-   "name": "Darjeeling Peacock Mat (Side A: Blue Scales)",
-   "brand": "Bespoke Mahjong",
-   "img": "assets/colorcards/deco/leftout/bespoke-mahjong-darjeeling-peacock-blue-scales.jpg",
-   "why": "Found by the Nov 8 re-pull. The reverse of the Side B card: periwinkle-blue scales with the same pansies and feathers; lighter and busier than her navy. Side B is in.",
-   "retired": false
-  },
-  {
    "name": "Flora",
    "brand": "Britt Mills",
    "img": "assets/colorcards/deco/mats/britt-mills-flora.jpg",
    "why": "Nov 8 Britt Mills check. Berry roses and teal bars, but on lilac and sage: soft and light next to her navy.",
    "retired": false
+  },
+  {
+   "name": "Savannah",
+   "brand": "Britt Mills",
+   "img": "assets/colorcards/deco/mats/britt-mills-savannah.jpg",
+   "why": "You took it out (round 1).",
+   "retired": false,
+   "holiday": false,
+   "fym": "brittmillsdesign.com/savannah-neoprene-mahjong-mat",
+   "removed_by_her": 1
+  },
+  {
+   "name": "Moody",
+   "brand": "Hutch & Nook",
+   "img": "assets/colorcards/deco/mats/hutch-and-nook-moody.jpg",
+   "why": "You took it out (round 1).",
+   "retired": false,
+   "holiday": false,
+   "fym": "hutchandnook.com/mahjong-mat-moody-mat",
+   "removed_by_her": 1
+  },
+  {
+   "name": "Alpine Snowflakes",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-alpine-snowflakes.jpg",
+   "why": "You took it out (round 1).",
+   "retired": false,
+   "holiday": true,
+   "fym": "letsbebesties.com/alpine-snowflakes-neoprene-mahjong-mat",
+   "removed_by_her": 1
+  },
+  {
+   "name": "Navy and Red Pop",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-navy-and-red-pop.jpg",
+   "why": "You took it out (round 1).",
+   "retired": false,
+   "holiday": false,
+   "fym": "letsbebesties.com/navy-and-red-pop-mahjong-mat",
+   "removed_by_her": 1
+  },
+  {
+   "name": "Peacock Feathers",
+   "brand": "Let's Be Besties",
+   "img": "assets/colorcards/deco/mats/lets-be-besties-peacock-feathers.jpg",
+   "why": "You took it out (round 1).",
+   "retired": false,
+   "holiday": false,
+   "fym": "letsbebesties.com/peacock-feathers-mahjong-mat",
+   "removed_by_her": 1
+  },
+  {
+   "name": "Crane & Moon",
+   "brand": "YOLO Mahjong",
+   "img": "assets/colorcards/deco/mats/yolo-mahjong-crane-and-moon.jpg",
+   "why": "You took it out (round 1).",
+   "retired": false,
+   "holiday": false,
+   "fym": "www.yolomahjong.com/crane-moon-mahjong-mat-floral-chinese-mahjong-table-mat-for-mahjong-set-31-5-x-31-5-inch",
+   "removed_by_her": 1
   }
  ]
 }

@@ -132,6 +132,17 @@
    "notes": "non-partner (Oct 31 picks)",
    "source": "builder/fym_flags/nonpartner_allow.json + docs/ANSWERS.md 2026-11-08 4:51pm"
   },
+  "Brewtifully": {
+   "route": "code-site",
+   "store_hosts": [
+    "shop.brewtifully.com",
+    "tracy-2833.myshopify.com"
+   ],
+   "commission_pct": 10,
+   "notes": "UpPromote (approved Nov 18). Affiliate link https://tracy-2833.myshopify.com/Mahjmatchmaker",
+   "source": "Tiffany Nov 18 2026 2:11am: approved; code MAHJMATCH 10% off; 10% commission per order (UpPromote Program details screenshot)",
+   "rate_compare": "code"
+  },
   "Britt Mills": {
    "route": "code-site",
    "store_hosts": [
@@ -187,6 +198,7 @@
   "Fait à Main": {
    "route": "code-site",
    "store_hosts": [
+    "fait-a-main.com",
     "faitamainstudio.com"
    ],
    "commission_pct": null,
@@ -769,6 +781,36 @@
    "source": "config/autoapply-hosts.json + docs/shopmy-rates-oct20.md (ShopMy link-maker rate check) + ShopMy merchant data (apiv3 Pins/get_merchant_data, her signed-in Chrome) Nov 8 2026: a domain ShopMy does not list pays 0 through ShopMy",
    "rate_compare": "code",
    "shopmy_pct": 0
+  },
+  "The Mahjong Press": {
+   "route": "code-site",
+   "store_hosts": [
+    "themahjongpress.com"
+   ],
+   "commission_pct": null,
+   "notes": "Sells American mahjong CARDS (no tiles). Code MAHJMATCH 10% (cart test Nov 7); our links carry ?ref=TIFFANYBEMERY. NOT The Mahjong House (themahjonghouse.com = ShopMy-only, not a partner).",
+   "source": "Tiffany Nov 11 1:39pm + live /the-mahjong-press-discount-code links"
+  },
+  "Mah Jongg Maven": {
+   "route": "code-site",
+   "store_hosts": [
+    "mahjonggmaven.com"
+   ],
+   "commission_pct": 5,
+   "notes": "own WooCommerce site, code MAHJMATCH = 5% off / 5% payout (excludes NMJL cards + custom jokers). NOT the Etsy shop MahjjMaven (separate entry; same brand unconfirmed).",
+   "source": "Gmail 19be374f0891d44c (approved Jan 23 2026) + cart test Nov 8 11:35pm ET (docs/OVERDUE.md); added Nov 11 by partner_coverage fix",
+   "rate_compare": "code"
+  },
+  "Mahjong by SI": {
+   "route": "code-site",
+   "store_hosts": [
+    "mahjongbysi.com",
+    "www.mahjongbysi.com"
+   ],
+   "commission_pct": 5,
+   "notes": "own Shopify site (Atlanta; Signs by SI). Code MAHJMATCH = 10% off mats, up to 5% commission. Affiliate link not issued yet (created when the free account is set up from the Nov 9 invite email); plain shop links until then.",
+   "source": "Gmail threads 1a1b2d53c72f38af + 1a1c0b4d8c62aeab; cart test Nov 11 2026; added by onboarding run Nov 11",
+   "rate_compare": "code"
   }
  }
 }
