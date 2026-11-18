@@ -116,5 +116,11 @@ try:
     _rd=json.load(open('config/fym-readiness.json'))
     if _rd.get('total_gaps'): out.append(f"FYM ALL-OR-NOTHING (OVERDUE): {_rd['total_gaps']} visible items not ready in every view/filter (" + ', '.join(f"{b}: {sum(c.values())}" for b,c in sorted(_rd['brands'].items(),key=lambda x:-sum(x[1].values()))[:6]) + "). Details config/fym-readiness.json; fix in the next FYM release.")
 except Exception: pass
+# Nov 18 2:58am (Tiffany: "you can't just make a page for a partner brand and not send it to me"; keep prompting until she approves).
+try:
+    _bp=json.load(open('config/brand-page-reviews.json'))['pages']
+    _pend=[f"{b} {v['url']}" for b,v in _bp.items() if v.get('status')!='approved']
+    if _pend: out.append(f"BRAND PAGES WAITING ON TIFFANY'S REVIEW ({len(_pend)}): ask her in THIS reply for her personal note + to check the 'my favorite' picks, with the links: " + '; '.join(_pend) + ". Only her yes sets approved in config/brand-page-reviews.json.")
+except Exception: pass
 if out:
     print('=== FRONT DOOR (automatic, every message) ===\n'+'\n'.join(out)+'\nRule: if you tell Tiffany you will fix something, fix it BEFORE you reply, or add it to docs/OVERDUE.md in the same turn and tell her who/when.')
