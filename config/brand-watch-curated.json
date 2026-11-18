@@ -247,6 +247,40 @@
  ],
  "coming_soon": [
   {
+   "partner": true,
+   "urgency": "SOON",
+   "found": "2026-11-18T13:45",
+   "day": "Wed 11/25",
+   "date": "2026-11-25",
+   "time": "10:00am CT",
+   "source": "store",
+   "source_kind": "store",
+   "brand": "Oh My Mahjong",
+   "what": "Sadie Jane Mahjong Tiles ($400), a new tile set in blush pink, soft blue and sage green with garden florals, launch Wednesday 11/25 at 10am CT.",
+   "tag": "tiles",
+   "new": true,
+   "buy": "https://www.ohmymahjong.com/products/sadie-jane-mahjong-tiles",
+   "url": "https://www.ohmymahjong.com/products/sadie-jane-mahjong-tiles",
+   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/Tile_SadieJane_a.jpg?v=1784046943"
+  },
+  {
+   "partner": true,
+   "urgency": "SOON",
+   "found": "2026-11-18T13:45",
+   "day": "Wed 11/25",
+   "date": "2026-11-25",
+   "time": "10:00am CT",
+   "source": "store",
+   "source_kind": "store",
+   "brand": "Oh My Mahjong",
+   "what": "Serendipity Mat in Tube ($90), a new mat in sky blue, blush pink and chartreuse with florals and ginkgo leaves, launches with the Sadie Jane tiles Wednesday 11/25 at 10am CT.",
+   "tag": "mat",
+   "new": true,
+   "buy": "https://www.ohmymahjong.com/products/serendipity-mat-in-tube",
+   "url": "https://www.ohmymahjong.com/products/serendipity-mat-in-tube",
+   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/Mat_Serendipity_a.jpg?v=1784046007"
+  },
+  {
    "date": "",
    "brand": "Miss Mahjong",
    "partner": true,
@@ -1707,5 +1741,5 @@
    "url": ""
   }
  ],
- "updated": "2026-11-18T13:10"
+ "updated": "2026-11-18T13:45"
 }
