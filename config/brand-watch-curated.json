@@ -3,6 +3,37 @@
  "week_label": "Week of Sun Nov 8 – Sat Nov 14",
  "this_week": [
   {
+   "date": "2026-11-18",
+   "brand": "Miss Mahjong",
+   "partner": true,
+   "what": "Miss Darling Lilac, a new full-size tile set ($425), is live now (since Wed 11/18 10am CT): the party version of Miss Darling, with hot pink and lime faces, a blue stripe and a lilac back with white cross-stitch. The Pressed Flowers mat ($80, blue floral) made to go with it dropped at the same time.",
+   "tag": "tiles",
+   "new": true,
+   "action": "Date from their IG post 11/12 2:43pm ET (Brand news sheet 6:35pm); curated was behind. | IG stories Mon 11/16 (5h/2h): 'Darling Lilac coming Wednesday 10 AM CT'; new Hope Chest + Pressed Flowers mats shown, not on the store yet. | IG story Wed 11/18 (22h): 'Darling Lilac and Pressed Flowers mat drop tomorrow, Hope Chest mat in 1-2 weeks'. Store check 12:55pm ET: Darling Lilac + Pressed Flowers ($80) available.",
+   "url": "https://missmahjong.com/products/miss-darling-mahjong-tile-set-lilac",
+   "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Cover-DarlingLilac.png?v=1792516771",
+   "found": "2026-11-18T13:10",
+   "history": [
+    {
+     "found": "2026-11-11T10:35",
+     "what": "Miss Darling Lilac, a new full-size tile set ($425). No release date yet."
+    },
+    {
+     "found": "2026-11-12T18:35",
+     "what": "Miss Darling Lilac, a new full-size tile set ($425), opens Wed 11/18 at 10am CT: the party version of Miss Darling, with hot pink and lime faces, a blue stripe and a lilac back with white cross-stitch."
+    },
+    {
+     "found": "2026-11-16T20:53",
+     "what": "Miss Darling Lilac, a new full-size tile set ($425), opens Wed 11/18 at 10am CT: the party version of Miss Darling, with hot pink and lime faces, a blue stripe and a lilac back with white cross-stitch. Two new mats are made to go with it, Hope Chest (a hexagon quilt print) and Pressed Flowers (blue floral); no date for the mats yet."
+    }
+   ],
+   "day": "Wed 11/18",
+   "time": "LIVE since 10am CT",
+   "urgency": "NOW",
+   "source": "https://www.instagram.com/p/Dfp1bxnGepO/",
+   "buy": "https://missmahjong.com/products/miss-darling-mahjong-tile-set-lilac"
+  },
+  {
    "date": "2026-11-12",
    "day": "Thu 11/12",
    "time": "LIVE now (listed Wed 11/11 10:05pm CT)",
@@ -216,6 +247,22 @@
  ],
  "coming_soon": [
   {
+   "date": "",
+   "brand": "Miss Mahjong",
+   "partner": true,
+   "what": "Hope Chest, a new mat with a hexagon quilt print ($80), made to go with Miss Darling Lilac, drops in about 1-2 weeks. No exact date yet.",
+   "tag": "mat",
+   "new": true,
+   "urgency": "SOON",
+   "url": "https://missmahjong.com/products/hope-chest-mahjong-playing-mat",
+   "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Hope-Chest-Mat-quilted-quilt-mahjong-neoprene-mat.png?v=1794972502",
+   "found": "2026-11-18T13:10",
+   "source": "IG story",
+   "source_kind": "social",
+   "source_link": "https://www.instagram.com/stories/missmahjongofficial/",
+   "action": "IG story Wed 11/18 (22h): 'Hope Chest mat drops in 1-2 weeks'. Store page listed, not available. Story frame saved assets/launches/miss-mahjong-hope-chest/."
+  },
+  {
    "partner": true,
    "urgency": "LATER",
    "found": "2026-11-17T13:35",
@@ -267,16 +314,24 @@
    "day": "Fri 11/20",
    "brand": "Mahj Mood",
    "partner": true,
-   "what": "Lake Day, a new tile set with clear aqua backs (lantern, campfire, lake cap and sunrise jokers, dragonflies, cattails), launches Fri 11/20. A matching navy pine-tree Lake Day mat is shown with it. Email subscribers shop first.",
+   "what": "Lake Day, a new tile set ($390) with clear aqua backs and a pale yellow middle layer (10 lake-and-Americana jokers, fishing-rod bams, dragonflies, cattails), opens for pre-order Fri 11/20 at 10am CT and ships in February. Email subscribers shop first on Thu 11/19 in the evening. A matching navy pine-tree Lake Day mat is shown with it.",
    "tag": "tiles",
    "new": true,
-   "urgency": "LATER",
-   "url": "https://mahjmood.com",
-   "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/partner-catalogs-sqsp/assets/launches/mahj-mood-lake-day/mahj-mood-lake-day-ig-story-nov12.jpg",
-   "found": "2026-11-12T12:50",
+   "urgency": "NOW",
+   "url": "https://mahjmood.com/products/lake-day-pre-order-ships-february",
+   "img": "https://cdn.shopify.com/s/files/1/0944/7712/3887/files/347AE50C-41F1-40DB-B73D-6D0B74D20EBD.jpg?v=1795022299",
+   "found": "2026-11-18T13:10",
    "source": "IG story",
    "source_link": "https://www.instagram.com/stories/mahj_mood/",
-   "action": "Tile launch 11/20 CST; watch store for product page + time; album candidate"
+   "action": "Tile launch 11/20 CST; watch store for product page + time; album candidate | IG stories Wed 11/18 (~3h): public Fri 10am CST $390, subscribers early access Thu evening. Product page up (pre-order, ships Feb, not yet available).",
+   "history": [
+    {
+     "found": "2026-11-12T12:50",
+     "what": "Lake Day, a new tile set with clear aqua backs (lantern, campfire, lake cap and sunrise jokers, dragonflies, cattails), launches Fri 11/20. A matching navy pine-tree Lake Day mat is shown with it. Email subscribers shop first."
+    }
+   ],
+   "time": "10am CT",
+   "buy": "https://mahjmood.com/products/lake-day-pre-order-ships-february"
   },
   {
    "date": "",
@@ -292,32 +347,6 @@
    "source": "IG story",
    "source_link": "https://www.instagram.com/stories/mahj_mood/",
    "action": "Samples in, bulk order in transit; watch store end of Nov"
-  },
-  {
-   "date": "2026-11-18",
-   "brand": "Miss Mahjong",
-   "partner": true,
-   "what": "Miss Darling Lilac, a new full-size tile set ($425), opens Wed 11/18 at 10am CT: the party version of Miss Darling, with hot pink and lime faces, a blue stripe and a lilac back with white cross-stitch. Two new mats are made to go with it, Hope Chest (a hexagon quilt print) and Pressed Flowers (blue floral); no date for the mats yet.",
-   "tag": "tiles",
-   "new": true,
-   "action": "Date from their IG post 11/12 2:43pm ET (Brand news sheet 6:35pm); curated was behind. | IG stories Mon 11/16 (5h/2h): 'Darling Lilac coming Wednesday 10 AM CT'; new Hope Chest + Pressed Flowers mats shown, not on the store yet.",
-   "url": "https://missmahjong.com/products/miss-darling-mahjong-tile-set-lilac",
-   "img": "https://cdn.shopify.com/s/files/1/0653/2294/2602/files/Cover-DarlingLilac.png?v=1792516771",
-   "found": "2026-11-16T20:53",
-   "history": [
-    {
-     "found": "2026-11-11T10:35",
-     "what": "Miss Darling Lilac, a new full-size tile set ($425). No release date yet."
-    },
-    {
-     "found": "2026-11-12T18:35",
-     "what": "Miss Darling Lilac, a new full-size tile set ($425), opens Wed 11/18 at 10am CT: the party version of Miss Darling, with hot pink and lime faces, a blue stripe and a lilac back with white cross-stitch."
-    }
-   ],
-   "day": "Wed 11/18",
-   "time": "10am CT",
-   "urgency": "NOW",
-   "source": "https://www.instagram.com/p/Dfp1bxnGepO/"
   },
   {
    "brand": "Anders Ruff",
@@ -535,6 +564,23 @@
   }
  ],
  "just_dropped": [
+  {
+   "date": "2026-11-18",
+   "day": "Wed 11/18",
+   "brand": "Mahj Mood",
+   "partner": true,
+   "what": "Malachite acrylic scalloped pushers (add-on set of 4, $42) are back in stock, two sets only.",
+   "tag": "racks",
+   "restock": true,
+   "urgency": "NOW",
+   "url": "https://mahjmood.com/products/malachite-acrylic-scalloped-pusher-add-ons-4",
+   "buy": "https://mahjmood.com/products/malachite-acrylic-scalloped-pusher-add-ons-4",
+   "found": "2026-11-18T13:10",
+   "source": "IG story",
+   "source_kind": "social",
+   "source_link": "https://www.instagram.com/stories/mahj_mood/",
+   "action": "IG story Wed 11/18 (~19h): 'Loaded 2 sets of Malachite Pushers on the website'. Store check 12:55pm ET: available."
+  },
   {
    "partner": true,
    "urgency": "NOW",
@@ -1543,6 +1589,23 @@
    "approved": null,
    "hidden": true,
    "affiliate_terms": "TdT affiliate email Nov 17: customer discount 10%->15% Nov 27-30, commission stays 10%. Do NOT share until TdT posts the promo on IG (expected Nov 17); then link/code only in stories, emails, DMs; never code in post text or link in bio."
+  },
+  {
+   "date": "2026-11-18",
+   "day": "Wed 11/18",
+   "time": "today only",
+   "brand": "Peace Love Mahjong",
+   "partner": true,
+   "what": "Black Friday daily deal: the Chartreuse Cherries mat is 30% off today only.",
+   "tag": "mat",
+   "approved": null,
+   "hidden": true,
+   "bf": false,
+   "source_kind": "social",
+   "found": "2026-11-18T13:10",
+   "source": "IG story",
+   "source_link": "https://www.instagram.com/stories/peacelovemahjong/",
+   "action": "IG story Wed 11/18 (4h). Social-sourced sale on PLM's own daily code: hidden, pending her yes (same series as the Mon 11/16 PINK30 row)."
   }
  ],
  "nonpartners": [
@@ -1644,5 +1707,5 @@
    "url": ""
   }
  ],
- "updated": "2026-11-17T13:35"
+ "updated": "2026-11-18T13:10"
 }

@@ -1,0 +1,61 @@
+{
+ "run": "2026-11-18 12:37 ET (started 12:46)",
+ "source": "Instagram stories via Claude in Chrome (@mahjmatchmaker)",
+ "handles_checked": [
+  "ohmymahjong",
+  "bambirdboutique",
+  "missmahjongofficial",
+  "myfairmahjong",
+  "bespoke_mahjong",
+  "andersruffdesignco",
+  "peacelovemahjong",
+  "bird_and_bamboo",
+  "mahj_mood",
+  "minimahjer",
+  "charlestonmahjongclub"
+ ],
+ "with_stories": {
+  "ohmymahjong": 12,
+  "bambirdboutique": 10,
+  "missmahjongofficial": 9,
+  "myfairmahjong": 2,
+  "bespoke_mahjong": 4,
+  "andersruffdesignco": 17,
+  "peacelovemahjong": 4,
+  "bird_and_bamboo": 1,
+  "mahj_mood": 13,
+  "minimahjer": 2,
+  "charlestonmahjongclub": 1
+ },
+ "frames_read": 75,
+ "extra_dated_partners": "none beyond tier A (Bam Bird, Mahj Mood, Miss Mahjong already in A)",
+ "finds": [
+  {
+   "brand": "Miss Mahjong",
+   "kind": "launch date",
+   "what": "Story text: Darling Lilac + Pressed Flowers mat drop Wed 11/18 (both live per store check 12:55pm ET, mat $80); Hope Chest mat drops in 1-2 weeks",
+   "curated": "this_week (Darling Lilac live) + coming_soon (Hope Chest)",
+   "img": "assets/launches/miss-mahjong-hope-chest/miss-mahjong-hope-chest-ig-story-nov18.jpg"
+  },
+  {
+   "brand": "Mahj Mood",
+   "kind": "launch details",
+   "what": "Lake Day $390 pre-order, public Fri 11/20 10am CT, email subscribers early access Thu 11/19 evening, ships Feb; product page now up",
+   "curated": "coming_soon updated (history kept)"
+  },
+  {
+   "brand": "Mahj Mood",
+   "kind": "restock",
+   "what": "Malachite acrylic scalloped pusher add-ons (4), $42, 2 sets loaded",
+   "curated": "just_dropped"
+  },
+  {
+   "brand": "Peace Love Mahjong",
+   "kind": "sale",
+   "what": "Black Friday daily deal: Chartreuse Cherries mat 30% off today",
+   "curated": "sales, hidden, approved null (social-sourced; pending her yes)"
+  }
+ ],
+ "skipped": "customer reposts, gift-guide frames (OMM, Bam Bird), events (Bam Bird Friendsgiving/Holiday Tiles & Tea, Anders Ruff Southern Christmas Show), BF store hours, giveaways",
+ "notes": "No NOW push: BRAND-WATCH-RULES 00000 (Nov 12) bans per-item pushes. Local repo fetch hit disk-full from stale tmp packs; worked in a git worktree."
+}
