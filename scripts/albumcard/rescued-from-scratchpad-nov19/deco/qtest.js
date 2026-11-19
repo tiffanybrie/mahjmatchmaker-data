@@ -1,0 +1,12 @@
+const {chromium}=require('playwright');(async()=>{const [inp,out]=process.argv.slice(2);const b=await chromium.launch();const ctx=await b.newContext({viewport:{width:390,height:844},permissions:['clipboard-read','clipboard-write']});const p=await ctx.newPage();
+const errs=[];p.on('pageerror',e=>errs.push(e.message));p.on('console',m=>{if(m.type()==='error')errs.push(m.text())});
+await p.goto('file://'+inp);await p.waitForTimeout(800);
+const n=await p.$$eval('.q .mcard',c=>c.length);console.log('cards',n);
+const first=await p.$$eval('.q .mcard',c=>c.slice(0,3).map(x=>x.dataset.mat));console.log(first);
+await p.click('#q .mcard:nth-child(2) .up');await p.click('#q .mcard:nth-child(3) .out');
+const after=await p.$$eval('.q .mcard',c=>c.slice(0,4).map(x=>x.querySelector('.pos').textContent+' '+x.dataset.mat));console.log(after);
+await p.click('.face[data-key="bam-1-crane"] .heart');
+await p.click('#copyo');await p.waitForTimeout(300);console.log((await p.evaluate(()=>navigator.clipboard.readText())).slice(0,300));
+console.log('sw',await p.evaluate(()=>document.documentElement.scrollWidth));
+await p.evaluate(()=>document.querySelector('#cards').scrollIntoView());await p.waitForTimeout(1500);await p.screenshot({path:out,type:'jpeg',quality:70});
+console.log('errs',errs.join('|'));await b.close()})();
