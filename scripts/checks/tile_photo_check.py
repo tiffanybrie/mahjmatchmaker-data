@@ -1,5 +1,10 @@
-"""Tile photo approval gate (Album Playbook step 0, Tiffany Nov 8 1:37pm): before ANY album card is built, she approves the
-set's tile pile / matching shot in chat.
+"""Tile photo gate (Album Playbook step 0).
+
+TILE PILE RULE (Tiffany Nov 19 2026 3:27pm, replaces the Nov 8 "her yes on every tile photo" step): every album uses the
+brand's tile pile shot (the one WITHOUT the zippered bag). Look for it first for any brand. If it exists, record it with
+"pile_shot": true and build: NO yes needed, never send it to her. Oh My Mahjong always has one: never show her another kind
+of photo for an OMM set. Only when a brand truly has no pile shot: send her the single best alternative, say "no tile pile
+shot exists for this set", set asked_at, and wait for approved_at.
 
 Record: config/album-records/<set>.json "tile_photo": {file, inset, source, asked_at, approved_at|null}
   file = the tile photo shown on the review page (the FYM photo), inset = the shot on the cards (what she approves),
@@ -37,13 +42,13 @@ def tile_photo(s):
 def approved(s):
     if s in live(): return True
     tp = tile_photo(s)
-    return bool(tp and tp.get('approved_at'))
+    return bool(tp and (tp.get('approved_at') or tp.get('pile_shot') is True))
 
 
 def problem(s):
     if approved(s): return None
     tp = tile_photo(s)
-    if not tp: return f'no tile photo on record for {s} (config/album-records/{s}.json tile_photo): send it to Tiffany for a yes first'
+    if not tp: return f'no tile photo on record for {s} (config/album-records/{s}.json tile_photo): record the brand\'s tile pile shot with pile_shot true; ask Tiffany only if no pile shot exists'
     if not tp.get('asked_at'): return f'tile photo for {s} not sent to Tiffany yet (tile_photo.asked_at)'
     return f'tile photo for {s} waiting on her yes (asked {tp["asked_at"]})'
 
@@ -61,7 +66,7 @@ def asks_pending():
     out = []
     for f in sorted(os.listdir(R + 'config/album-records')) if os.path.isdir(R + 'config/album-records') else []:
         s = f[:-5]; tp = tile_photo(s)
-        if tp and tp.get('asked_at') and not tp.get('approved_at') and s not in live():
+        if tp and tp.get('asked_at') and not tp.get('approved_at') and tp.get('pile_shot') is not True and s not in live():
             out.append((s, tp))
     return out
 
