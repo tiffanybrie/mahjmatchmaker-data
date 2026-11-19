@@ -15,5 +15,5 @@ vs the live page curled Nov 19 ~5:55am ET. Squarespace keeps no edit history, so
 6. A "Brand Watch" link appeared (site nav/footer, Nov 17 launch).
 Unchanged: title "Oh My Mahjong Discount Code: 10% Off with MAHJMATCH", the hero line "I'm a certified Oh My Mahjong instructor...", lower code box, share image.
 
-Google report (signed-out check), "oh my mahjong discount code" AI Overview names MAHJMATCH: Nov 10 NO, Nov 11-12 not named,
+Google report (signed-out check), "oh my mahjong discount code" AI Overview names MAHJMATCH: Nov 10 NO, Nov 11 no OMM line in the report, Nov 12 not named (her Chrome check, docs/google/aio-sources),
 Nov 13 yes (not first), Nov 15-18 yes, first.
