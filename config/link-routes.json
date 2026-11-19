@@ -817,11 +817,12 @@
    "store_hosts": [
     "spools.com"
    ],
-   "commission_pct": null,
-   "notes": "GoAffPro (shopspools.goaffpro.com); affiliate link + commission not known until her account is set up (invite Nov 18 11:33pm ET). Code MAHJMATCH requested, not confirmed.",
+   "commission_pct": 10,
+   "notes": "GoAffPro (shopspools.goaffpro.com). CONFIRMED Nov 19 from her dashboard: coupon MAHJMATCH 10% off, 10% commission, referral link https://spools.com/?ref=MAHJMATCH; /discount/MAHJMATCH auto-apply verified.",
    "source": "Gmail: Keen (Spools) invite Nov 19 04:33 UTC; Tiffany's reply Nov 19 04:24 UTC",
    "rate_compare": "code",
-   "shopmy_pct": null
+   "shopmy_pct": null,
+   "affiliate_link": "https://spools.com/?ref=MAHJMATCH"
   }
  }
 }

@@ -32,7 +32,8 @@
     "Virora Mahjong": 10,
     "Wren Mats": 10,
     "Yellow Mountain Imports": 10,
-    "YOLO Mahjong": 10
+    "YOLO Mahjong": 10,
+    "Spools": 10
   },
   "notes": {
     "Amanda Toppe": "10% (Tiffany Nov 2 2026)",
@@ -272,6 +273,13 @@
       "hub_must": "15% off",
       "source": "Tiffany Nov 18 2026 2:11am: Brewtifully approved us (UpPromote, af.uppromote.com); code MAHJMATCH, 10% off; commission 10% per order (Program details screenshot); affiliate link https://tracy-2833.myshopify.com/Mahjmatchmaker (redirects to shop.brewtifully.com) | CORRECTED Tiffany Nov 18 2:53am: customer discount is 15% (as in Tracy's Nov 17 email), commission stays 10%",
       "status": "confirmed"
+    },
+    "Spools": {
+      "code": "MAHJMATCH",
+      "pct": 10,
+      "hub_must": "10% off",
+      "status": "confirmed",
+      "source": "Spools GoAffPro dashboard shopspools.goaffpro.com (her signed-in Chrome, read by Partner coverage owner Nov 19 2026 ~19:20 UTC): Coupon Code MAHJMATCH 10% off; referral link https://spools.com/?ref=MAHJMATCH, 10% commission. Account approved email Nov 19 05:56 UTC. /discount/MAHJMATCH sets discount_code cookie (Playwright Nov 19)."
     }
   },
   "sitemap_lag_days": 3

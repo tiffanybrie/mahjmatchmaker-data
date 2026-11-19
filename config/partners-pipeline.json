@@ -19,16 +19,27 @@
   },
   {
    "brand": "Spools",
-   "stage": "APPROVED Nov 18 (Keen at Spools said yes by email; Tiffany Nov 18: 'Spools is a new brand'). Network GoAffPro (portal shopspools.goaffpro.com). Tiffany told Keen Nov 18 11:24pm ET 'Our code is MAHJMATCH'. Keen sent the GoAffPro invite Nov 18 11:33pm ET; she accepts it and sets her password (her step). Code NOT confirmed yet: no discount %, no affiliate link. CODE FIRST: no FYM products and no live code page until confirmed; codes hub shows 'code coming soon'.",
+   "stage": "APPROVED Nov 18 (Keen at Spools said yes by email; Tiffany Nov 18: 'Spools is a new brand'). Network GoAffPro (portal shopspools.goaffpro.com). Tiffany told Keen Nov 18 11:24pm ET 'Our code is MAHJMATCH'. Keen sent the GoAffPro invite Nov 18 11:33pm ET; she accepts it and sets her password (her step). Code NOT confirmed yet: no discount %, no affiliate link. CODE FIRST: no FYM products and no live code page until confirmed; codes hub shows 'code coming soon'. | CODE CONFIRMED Nov 19 (GoAffPro dashboard: MAHJMATCH 10% off, 10% commission). Next: brand page live + codes hub row with the code (onboarding builder), then FYM via coverage.",
    "store": "spools.com",
    "store_note": "Shopify; shopspools.com redirects to spools.com",
    "approved": true,
    "approvedAt": "2026-11-18",
    "network": "GoAffPro",
-   "code": "MAHJMATCH (requested, not confirmed)",
-   "pct": null,
-   "affiliate_link": null,
+   "code": "MAHJMATCH",
+   "pct": 10,
+   "affiliate_link": "https://spools.com/?ref=MAHJMATCH",
    "recheck": "one-shot recheck routine Nov 19 (see HQ brands/spools next)"
+  },
+  {
+   "brand": "Averill",
+   "stage": "APPROVED Nov 19 2026 16:09 UTC (UpPromote approval email from hello@averillmahjong.com, Gmail thread 1a1f4918be2749a6; portal https://af.uppromote.com/1129i1-nf). Seen by Partner coverage owner run. Code NOT confirmed yet: read it in the UpPromote dashboard (never log in; Tiffany logs in if asked). CODE FIRST: codes hub 'code coming soon' + Full Brand Onboarding (onboarding builder).",
+   "store": "averillmahjong.com",
+   "approved": true,
+   "approvedAt": "2026-11-19",
+   "network": "UpPromote",
+   "code": null,
+   "pct": null,
+   "affiliate_link": null
   }
  ]
 }

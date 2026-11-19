@@ -127,6 +127,10 @@
     "yolomahjong.com": {
       "brand": "YOLO Mahjong",
       "code": "MAHJMATCH"
+    },
+    "spools.com": {
+      "brand": "Spools",
+      "code": "MAHJMATCH"
     }
   },
   "skip": {
@@ -632,6 +636,15 @@
           "final": "https://www.yolomahjong.com/products/pink-black-polka-dot-square-mahjong-mat-ship-rolled-up?sca_ref=12572562.5IBLjBHZ1vuX4J",
           "cookie": "MAHJMATCH",
           "ok": true
+        }
+      ],
+      "spools.com": [
+        {
+          "link": "https://spools.com/discount/MAHJMATCH?redirect=%2Fcollections%2Fall",
+          "status": 200,
+          "final": "https://spools.com/collections/all",
+          "cookie": "discount_code=MAHJMATCH",
+          "date": "2026-11-19"
         }
       ]
     }
