@@ -86,6 +86,7 @@ Sources: brand list = codes-page brands (google-codes-audit/brand-pages-verified
 | Rebecca Illustrated | rebeccaillustrated.com | none | needs Tiffany: hCaptcha (Nov 16) |
 | Piper Chase Studios | etsy.com/shop/PiperChaseStudios | - | no newsletter: Etsy shop only |
 | LoveShackFancy | loveshackfancy.com | Nov 16 | receiving |
+| Brewtifully | shop.brewtifully.com | affiliate only | signed up 2026-11-19 ~12:50pm ET (footer form in her Chrome, no captcha; "Thanks for subscribing", URL got ?customer_posted=true). No double opt-in needed yet; weekly check confirms first newsletter |
 | Mahjong Row & Co. | - | - | EXCLUDED (out Nov 6) |
 
 Nov 16 totals: 28 receiving within 30 days; 9 signed up tonight in her Chrome (Bougie, Hutch & Nook, Ozark, Let's Mahj On, Yellow Mountain, Mini Mahjer, Splash, Middle & Main, Oh My Mahjong re-sign) plus Bam Bird by the Bam Bird thread; 12 need Tiffany (11 captcha/phone + Virora); 5 have no newsletter to join.
@@ -103,3 +104,6 @@ The tiffanybrie@ forward note below has not shown up in practice: as of Nov 16 n
 - Middle & Main, Splash of Color: hCaptcha on the form in the cloud browser. Low priority for Tiffany to sign up herself.
 - Rule (coordinator, Nov 19): sites that keep serving human checks are NOT asked of her again. They sit on the sheet as "Low priority: sign up yourself", not an ask: Amahj, Bam! Let's Mahjong, Let's Be Besties, Mahj Mood, Mahj Pit, Mahj Squad, Mahjong Moxie, My Fair, Rebecca Illustrated, The Mahjong Press, Tigre de Tartán, Middle & Main, Splash of Color.
 - Sheet: https://docs.google.com/spreadsheets/d/1W1PyfFcAoCtZK-Bdycrs1n1pggHVJG0vCR8XEefxdck/edit
+
+## Nov 19 scheduled run
+- No TODO rows were left. Brewtifully (approved Nov 18) had no row: added and signed up (footer form, Chrome). Scheduled newsletter task retired: from now on, new partners are signed up by the onboarding step (CLAUDE.md) and the weekly 30-day recheck.
