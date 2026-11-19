@@ -148,7 +148,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1, then the newest ANSWERS 
 4. **OMM Sadie Jane + Serendipity Nov 25: swipe Serendipity.**
 5. **Approve 5 holiday posts** (Yes/Skip each; nothing posts without her yes).
 
-**Moved to This week tonight (Today max 5):** codes post 'post it' (top), broken-link fix to 15 brands, brand-page reviews (8).
+**Moved to This week tonight (Today max 5):** brand-page reviews (8). CLOSED Nov 19 morning cleanup on her words: codes post (Tiffany Nov 19 12:43am "Why is this still here?"), broken-link fix to 15 brands (Tiffany Nov 19 12:44am "No forget it, take this off."; Woodlands follow-up on OVERDUE).
 
 **Closed/passed since last night:** Brewtifully discount (her 15% answer, done); Caprasimo font pick (straight j everywhere, done in repo); Britt Mills stale copy (gone from the live page); amounts-2026-11-17 merged into amounts-2026-11-18.
 
@@ -282,7 +282,7 @@ Standing order: RESTOCK FIRST (rule c), then Google #1, then the newest ANSWERS 
 | Google & Revenue report | ✅ Done | dde4a749 (2 OVERDUE lines closed); sitemap frozen alert on HQ Today. |
 | Google code report + scorecard | ✅ Done | f9883bd7: AI Overview 37/40, Google top3 36/38, AI Mode 39/40; no drops. |
 | Verified dates (weekly, Mondays; daily from Nov 17) | ⚠️ Partial | Pages re-dated, but sitemap lastmod still frozen (most Nov 13) → HQ alert + OVERDUE. |
-| Codes post (Mondays) | ⚠️ Drafted | Waiting on her 'post it' (HQ This week, top). |
+| Codes post (Mondays) | ✅ Closed | Nov 16 post archived on her words (Nov 19 12:43am "Why is this still here?"). Next: Sat draft, Mon check, Tue post (new routines). |
 | Pinterest queue health | ⚠️ 1 issue | 4 pins published Wed, 32 queued Nov 19-26, 0 errors. 2nd Mahjong Row pin Nov 24: unschedule refused (11th) → attended chat. |
 | Indexing | ⚠️ | Search Console quota ran out after 3 requests (Google report); queue ordered Tigre, My Fair, Hip Hip, Royal, Soirée. |
 | Planoly next-7-days (IG + FB Page) | ❌ 0 IG SCHEDULED Nov 19-25 | 10th night. FB Page target on every dated IG draft; 4 undated holiday drafts lack story versions (OVERDUE). 16 Wed groups (32 posts) rolled to Thu 11/19. Tag people = verified handles. content_lint --planoly --only-ig: 65 FAIL, 0 new kinds. |
