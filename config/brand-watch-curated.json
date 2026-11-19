@@ -354,17 +354,21 @@
    "day": "Fri 11/20",
    "brand": "Mahj Mood",
    "partner": true,
-   "what": "Lake Day, a new tile set ($390) with clear aqua backs and a pale yellow middle layer (10 lake-and-Americana jokers, fishing-rod bams, dragonflies, cattails), opens for pre-order Fri 11/20 at 10am CT and ships in February. Email subscribers shop first on Thu 11/19 in the evening. A matching navy pine-tree Lake Day mat is shown with it.",
+   "what": "Lake Day, a new tile set ($390) with clear aqua backs and a pale yellow middle layer (10 lake-and-Americana jokers, fishing-rod bams, dragonflies, cattails), opens for pre-order Fri 11/20 at 10am CT. Email subscribers get an early link Thu 11/19 around 6pm CT. Delivery is quoted for February, and production is ahead of schedule. A matching navy pine-tree Lake Day mat is shown with it.",
    "tag": "tiles",
    "new": true,
    "urgency": "NOW",
    "url": "https://mahjmood.com/products/lake-day-pre-order-ships-february",
    "img": "https://cdn.shopify.com/s/files/1/0944/7712/3887/files/347AE50C-41F1-40DB-B73D-6D0B74D20EBD.jpg?v=1795022299",
-   "found": "2026-11-18T13:10",
+   "found": "2026-11-19T12:53",
    "source": "IG story",
    "source_link": "https://www.instagram.com/stories/mahj_mood/",
-   "action": "Tile launch 11/20 CST; watch store for product page + time; album candidate | IG stories Wed 11/18 (~3h): public Fri 10am CST $390, subscribers early access Thu evening. Product page up (pre-order, ships Feb, not yet available).",
+   "action": "IG stories Thu 11/19 (2-4h): subscriber early link ~6pm CST tonight; 'quoting February but AHEAD OF SCHEDULE, cut/glued/polished, now engraving'. Tile launch 11/20 CST; watch store for product page + time; album candidate | IG stories Wed 11/18 (~3h): public Fri 10am CST $390, subscribers early access Thu evening. Product page up (pre-order, ships Feb, not yet available).",
    "history": [
+    {
+     "found": "2026-11-18T13:10",
+     "what": "Lake Day, a new tile set ($390) with clear aqua backs and a pale yellow middle layer (10 lake-and-Americana jokers, fishing-rod bams, dragonflies, cattails), opens for pre-order Fri 11/20 at 10am CT and ships in February. Email subscribers shop first on Thu 11/19 in the evening. A matching navy pine-tree Lake Day mat is shown with it."
+    },
     {
      "found": "2026-11-12T12:50",
      "what": "Lake Day, a new tile set with clear aqua backs (lantern, campfire, lake cap and sunrise jokers, dragonflies, cattails), launches Fri 11/20. A matching navy pine-tree Lake Day mat is shown with it. Email subscribers shop first."
@@ -391,14 +395,24 @@
   {
    "brand": "Anders Ruff",
    "partner": true,
-   "what": "A bridal mahjong mat and tile set are coming, a collab with an OG Bachelorette. No date yet.",
+   "what": "Anders Ruff x Trista Sutter, a bridal mahjong collab (mat and tile set), launches Wed 12/2.",
    "tag": "mat",
-   "action": "New in Find Your Mat-ch when live",
+   "action": "IG story Thu 11/19 (~1h): reel 'Something old, something new...' names Trista Sutter and shows 12.2.26. No product page or time yet. New in Find Your Mat-ch when live",
    "url": "https://www.instagram.com/p/DfkLmn4G0oh/",
    "urgency": "LATER",
-   "date": null,
-   "found": "2026-11-10T13:40",
-   "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/089662ddfcef7047f14e756a4469e59fa87ab2d4/assets/launches/anders-ruff-bridal-teaser/1.jpg"
+   "date": "2026-12-02",
+   "found": "2026-11-19T12:53",
+   "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/089662ddfcef7047f14e756a4469e59fa87ab2d4/assets/launches/anders-ruff-bridal-teaser/1.jpg",
+   "history": [
+    {
+     "found": "2026-11-10T13:40",
+     "what": "A bridal mahjong mat and tile set are coming, a collab with an OG Bachelorette. No date yet."
+    }
+   ],
+   "day": "Wed 12/2",
+   "new": true,
+   "source": "IG story",
+   "source_link": "https://www.instagram.com/stories/andersruffdesignco/"
   },
   {
    "date": "2026-11-06",
@@ -1691,6 +1705,23 @@
    "source": "IG story",
    "source_link": "https://www.instagram.com/stories/peacelovemahjong/",
    "action": "IG story Wed 11/18 (4h). Social-sourced sale on PLM's own daily code: hidden, pending her yes (same series as the Mon 11/16 PINK30 row)."
+  },
+  {
+   "date": "2026-11-19",
+   "day": "Thu 11/19",
+   "time": "today only",
+   "brand": "Peace Love Mahjong",
+   "partner": true,
+   "what": "Black Friday daily deal: the Light Pink mat is 30% off today only.",
+   "tag": "mat",
+   "approved": null,
+   "hidden": true,
+   "bf": false,
+   "source_kind": "social",
+   "found": "2026-11-19T12:53",
+   "source": "IG story",
+   "source_link": "https://www.instagram.com/stories/peacelovemahjong/",
+   "action": "IG story Thu 11/19 (4h), code LIGHT30 on PLM's own daily code. Social-sourced sale: hidden, pending her yes (same series as PINK30 / Chartreuse Cherries)."
   }
  ],
  "nonpartners": [
@@ -1792,5 +1823,5 @@
    "url": ""
   }
  ],
- "updated": "2026-11-19T09:45"
+ "updated": "2026-11-19T12:53"
 }
