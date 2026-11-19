@@ -3,6 +3,8 @@
 **BEFORE ANY POST (group, IG, FB Page): open the Brand news (live) sheet https://docs.google.com/spreadsheets/d/1Lm3mydRx3cXXYz9HTAkL2LLleQx8x5OrThr2IEXJRUM/edit (tab 'Brand news', range 'Brand news'!A:G) and include everything not yet posted; after posting, fill 'Posted where'. One post per day in the group: EDIT the day's post, never a second post (Tiffany Nov 10 12:28pm + 12:30pm + 7:39pm).**
 **ALBUM LAUNCH TRACKER (her visible source of truth, Nov 10): https://docs.google.com/spreadsheets/d/18wyQ2mQ9epIIuDEyijYy86XAL4SEmtiVU06mzoWms6c/edit . Every chat that does a launch step fills its cell (date + proof link) the same turn. Process doc: https://docs.google.com/document/d/1vYacaqeyXufkly5aA1CGm-OwWxgqtGcx47x8WYy-qwc/edit**
 
+OPS: copy assets/launches/brewtifully-mahjong-mat-sleeksurface-made-in-usa-folkarts-autumn-love/ to Dropbox /Mahj Matchmaker Albums/New releases/Brewtifully/ today (launch watch Nov 19 9:15am)
+
 Rewritten nightly by the end-of-day desk cleanup (9:23pm ET). The morning HQ cleanup (6:47am ET) reads it. Rules: CLAUDE.md ("THE DESK"), docs/CHATS.md. During the day, when an agent stops, Chrome drops or a QA stalls, add the item here right away with its next step.
 
 
