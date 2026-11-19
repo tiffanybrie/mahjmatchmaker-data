@@ -6407,9 +6407,49 @@
    "name": "Petalée",
    "image": "assets/covers/albums/00-petalee-mahjong-tiles-cover.jpg",
    "note": "Our album cover exists, but https://www.mahjmatchmaker.com/petalee-mahjong-tile-matches is 404 as of Nov 13 (album staged, not live). Pin once the album page is live."
+  },
+  {
+   "id": "album-nantucket",
+   "kind": "album",
+   "url": "https://www.mahjmatchmaker.com/nantucket-mahjong-tile-matches",
+   "slug": "nantucket",
+   "name": "Nantucket",
+   "brand": "Oh My Mahjong",
+   "colors": [
+    "red"
+   ],
+   "image": "assets/covers/albums/uniform-v3/nantucket.jpg",
+   "status": "pending",
+   "added": "2026-11-19",
+   "prio": 30,
+   "link": "https://www.mahjmatchmaker.com/nantucket-mahjong-tile-matches?utm_source=pinterest&utm_medium=social&utm_campaign=evergreen",
+   "title": "Nantucket Mahjong Tiles by Oh My Mahjong: Mat & Rack Matches",
+   "desc": "Which mahjong mat goes with Oh My Mahjong Nantucket mahjong tiles? See every mat and rack match I styled for Nantucket, from red mahjong mats to racks that pull the tile colors. Ideas for mahjong table decor, gifts and your next mahjong set. Save with code MAHJMATCH (affiliate) at participating partner shops. #mahjong #mahjongtiles #mahjongmat #mahjongtable #mahjmatchmaker",
+   "board": "Oh My Mahjong Tile and Mat Matches",
+   "boardId": "908319887286213303"
+  },
+  {
+   "id": "album-pippa",
+   "kind": "album",
+   "url": "https://www.mahjmatchmaker.com/pippa-mahjong-tile-matches",
+   "slug": "pippa",
+   "name": "Pippa",
+   "brand": "Oh My Mahjong",
+   "colors": [
+    "yellow-orange"
+   ],
+   "image": "assets/covers/albums/uniform-v3/pippa.jpg",
+   "status": "pending",
+   "added": "2026-11-19",
+   "prio": 30,
+   "link": "https://www.mahjmatchmaker.com/pippa-mahjong-tile-matches?utm_source=pinterest&utm_medium=social&utm_campaign=evergreen",
+   "title": "Pippa Mahjong Tiles by Oh My Mahjong: Mat & Rack Matches",
+   "desc": "Which mahjong mat goes with Oh My Mahjong Pippa mahjong tiles? See every mat and rack match I styled for Pippa, from yellow and orange mahjong mats to racks that pull the tile colors. Ideas for mahjong table decor, gifts and your next mahjong set. Save with code MAHJMATCH (affiliate) at participating partner shops. #mahjong #mahjongtiles #mahjongmat #mahjongtable #mahjmatchmaker",
+   "board": "Oh My Mahjong Tile and Mat Matches",
+   "boardId": "908319887286213303"
   }
  ],
- "updated": "2026-11-16T14:53:13Z",
+ "updated": "2026-11-19T14:47:30Z",
  "rules": {
   "pace": "2 new pins/day at 13:00Z and 20:00Z (on top of the Oct 19 batch: 15:00/16:00Z daily to Nov 9, holiday 00:00Z Nov 2-14). Keep ~7 days of new pins scheduled ahead; never more than 4 pins on one day.",
   "ownWorkOnly": "Pin only our own images: album covers (assets/covers/albums/uniform-v3), our color cards / mood boards / graphics, or grids of our covers. Never a brand product photo on its own.",
