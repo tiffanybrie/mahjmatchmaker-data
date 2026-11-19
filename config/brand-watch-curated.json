@@ -601,6 +601,20 @@
    "found": "2026-11-16T13:00",
    "source": "IG story",
    "source_kind": "social"
+  },
+  {
+   "date": null,
+   "brand": "Mahj Squad",
+   "partner": true,
+   "what": "Mint and white Nutcracker tile sets are coming soon. No date yet.",
+   "tag": "tiles",
+   "new": true,
+   "urgency": "SOON",
+   "buy": "https://mahjsquadshop.com/products/mint-nutcracker-tiles",
+   "url": "https://mahjsquadshop.com/products/mint-nutcracker-tiles",
+   "found": "2026-11-19T09:40",
+   "source": "store",
+   "source_kind": "store"
   }
  ],
  "just_dropped": [
@@ -1473,6 +1487,20 @@
    "action": "Reshare with code IMAGE only, never type the brand name",
    "url": "",
    "found": "2026-11-03"
+  },
+  {
+   "date": "2026-11-19",
+   "brand": "Mahj Pit",
+   "partner": true,
+   "what": "Pixel Pusher mat is back in stock.",
+   "tag": "mat",
+   "restock": true,
+   "urgency": "NOW",
+   "buy": "https://mahjpit.co/products/pixel-pusher-mat",
+   "url": "https://mahjpit.co/products/pixel-pusher-mat",
+   "found": "2026-11-19T09:40",
+   "source": "store",
+   "source_kind": "store"
   }
  ],
  "sales": [
@@ -1764,5 +1792,5 @@
    "url": ""
   }
  ],
- "updated": "2026-11-18T23:39"
+ "updated": "2026-11-19T09:45"
 }
