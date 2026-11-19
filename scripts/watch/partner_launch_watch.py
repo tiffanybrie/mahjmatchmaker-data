@@ -54,6 +54,8 @@ STORES = {
     'rebeccaillustrated.com': 'Rebecca Illustrated', 'talamahj.com': 'Tala Mahj', 'themahjonghouse.com': 'The Mahjong House',
     # Nov 18 2:11am (Tiffany): Brewtifully approved (UpPromote, MAHJMATCH 10%)
     'shop.brewtifully.com': 'Brewtifully',
+    # Nov 19 (Tiffany Nov 18: Spools is a new brand; GoAffPro, code MAHJMATCH pending)
+    'spools.com': 'Spools',
 }
 # brand-specific handling (CLAUDE.md + ANSWERS)
 NO_SOCIAL = {'Yellow Mountain Imports'}                 # never featured on social
