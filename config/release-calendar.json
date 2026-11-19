@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16",
- "updatedBy": "Weekly release calendar refresh Mon",
+ "updated": "2026-11-19",
+ "updatedBy": "Partner watch Thu 1pm ET",
  "rules": {
   "timing": {
    "restock_known_date": "Tease 7-10 days before (pick your mat now + album link + MAHJMATCH), reminder 1-2 days before or the day the brand announces the exact drop time, launch-day story with link, one follow-up 2-3 days later only if still in stock.",
@@ -2097,6 +2097,51 @@
    "affiliate": true,
    "priority": 3,
    "contentTiming": "Watch for dates; Black Friday roundup."
+  },
+  {
+   "id": "mahjsquad-mint-nutcracker-1122",
+   "brand": "Mahj Squad",
+   "product": "Mint Nutcracker tile set",
+   "type": "tiles",
+   "window": "Sun 11/22 3pm ET",
+   "windowStart": "2026-11-22",
+   "windowEnd": "2026-11-22",
+   "status": "coming soon (dated)",
+   "source": "Mahj Squad IG reel Nov 19",
+   "sourceUrl": "https://www.instagram.com/reel/Df7fG1Sp97V/",
+   "album": false,
+   "affiliate": true,
+   "priority": 3
+  },
+  {
+   "id": "faitamain-fleurs-de-fete-1121",
+   "brand": "Fait à Main",
+   "product": "Fleurs de Fête holiday mats (Vert, Bleu)",
+   "type": "mat",
+   "window": "Sat 11/21",
+   "windowStart": "2026-11-21",
+   "windowEnd": "2026-11-21",
+   "status": "coming soon (dated)",
+   "source": "Fait à Main IG reel Nov 19",
+   "sourceUrl": "https://www.instagram.com/reel/Df6Q8O2MZeG/",
+   "album": false,
+   "affiliate": true,
+   "priority": 3
+  },
+  {
+   "id": "macmiller-clubhouse-feb27",
+   "brand": "Mac + Miller Mahjong",
+   "product": "The Clubhouse travel tile set",
+   "type": "tiles",
+   "window": "Feb 2027",
+   "windowStart": "2027-02-01",
+   "windowEnd": "2027-02-01",
+   "status": "teaser",
+   "source": "Mac + Miller IG reel Nov 18",
+   "sourceUrl": "https://www.instagram.com/reel/Df4iOFxTk85/",
+   "album": false,
+   "affiliate": true,
+   "priority": 3
   }
  ],
  "sources": {

@@ -1,10 +1,10 @@
 # Mahj Matchmaker release calendar
 
-Updated 2026-11-16 from brand sites, the Sunday release schedule, brand Instagram feeds (Planoly) and Gmail. Source of truth: `config/release-calendar.json`; regenerate with `python3 scripts/release_calendar/build_md.py`.
+Updated 2026-11-19 from brand sites, the Sunday release schedule, brand Instagram feeds (Planoly) and Gmail. Source of truth: `config/release-calendar.json`; regenerate with `python3 scripts/release_calendar/build_md.py`.
 
 **Rule (Tiffany, Oct 21):** save restock content for the buying window. Don't spend a set's content before you can buy it; post 1-2 weeks before a dated restock so people pick their mat and have the code ready when it drops.
 
-## Next 8 weeks (Nov 16 - Jan 11)
+## Next 8 weeks (Nov 19 - Jan 14)
 
 | Post window | Brand | Product | Drop date / window | Album | Affiliate | What to post |
 |---|---|---|---|---|---|---|
@@ -34,13 +34,13 @@ Updated 2026-11-16 from brand sites, the Sunday release schedule, brand Instagra
 | 2026-11-16 | Bam Bird Boutique | Deco Indigo tiles | mid to late November | Deco (Indigo) | yes | WINDOW ONLY (mid-late Nov, IG Oct 20): album is built but HOLD restock content until Bam Bird dates the Indigo drop; then tease 7-10 days out (or immediately if <7) + launch-day story. Indigo reels are also held by HQ albums-review-deco-nov12. Claude watches; not an HQ need until dated. |
 | 2026-11-16 | Mahj Mood | 90s, Mauve-Blush, White Pearl (Radiant Mood) preorder tiles ship | White Pearl + Mauve-Blush ship late/end of November; 90s now ships December | no | yes | Watch. |
 | 2026-11-16 | Britt Mills | Isla, Novella, Enchanted neoprene mats (preorders) | ship late November | Novella/Enchanted (material twins) | yes | Preorder is open now: a 'preorder before they ship' story is fine any time. |
-| 2026-11-16 to 2026-11-16 | Peace Love Mahjong | Black Friday sale (tiles, mats, racks) | 2026-11-16 | no | yes | Partner sale: include in the weekly codes post the week of Nov 16 + one story on Nov 16 (holiday mats/tiles from PLM). |
 | 2026-11-16 | Mahjong Row & Co. | Cognac Burl racks (pair with Brunette Burl) | "should be here before Thanksgiving" | no | no | Racks only: record. Watch. |
-| 2026-11-17 | Bird Bam Tiles | The Heritage Collection + The Grandmillennial Collection (preorder) | 2026-11-17 10:00 | no | no | Non-partner, no album (our "Heritage" album is the retired OMM set, unrelated). Log only. |
 | 2026-11-18 to 2026-11-20 | Miss Mahjong | Miss Darling Lilac tile set | 2026-11-18 10:00 | no | yes | No album (swipe book only). Launch-day story/mention Wed Nov 18 after 10am CT with MAHJMATCH; the hourly launch watch handles go-live. |
 | 2026-11-20 to 2026-11-27 | Miss Mahjong | Jade and Brass acrylic racks | ETA week of Nov 24, 2026 | Jade (rack pairing) | yes | Small follow-up for Jade buyers ~Nov 20 ('the racks are coming back too'), then a story when live. Thanksgiving week: keep it short. |
 | 2026-11-20 | Mahj Mood | Lake Day tile set preorder $390 + Lake Day mat + transparent blue racks | 2026-11-20 10:00 | no | yes | No album. Public now, OK to mention on launch day (Nov 20) with the code; affiliate pipeline beyond Lake Day stays DO NOT POST. |
 | 2026-11-21 to 2026-11-30 | Noli June | Black Friday mat bundles (2 mats $329 to 5 mats $699; free shipping 3+; Postcard Collection out of the Summer Archive until Dec 1) | Sat Nov 21 - Mon Nov 30 | no | yes | HOLD until Sat Nov 21 (brand embargo). Black Friday roundup slot Nov 21-30. |
+| 2026-11-21 | Fait à Main | Fleurs de Fête holiday mats (Vert, Bleu) | Sat 11/21 | no | yes |  |
+| 2026-11-22 | Mahj Squad | Mint Nutcracker tile set | Sun 11/22 3pm ET | no | yes |  |
 | 2026-11-23 | Sunday Mahjong | Sunday Cola racks | next restock around Thanksgiving (Nov 26) | no | no | Optional rack-pairing story for Sunday album sets when it restocks with Sunday Blues; no code (non-partner). |
 | 2026-11-25 | Sunday Mahjong | December 1994 tiles (Christmas) | preorders deliver November; leftovers listed late Nov/early Dec | no | no | Holiday content: holiday mat matches post when leftovers list (holiday mats only; never single-colour). |
 | 2026-11-27 | Mahjong Studios | Black Friday sale (text subscribers early access) | Black Friday, date not given | no | yes | Watch for dates; Black Friday roundup. |
@@ -90,6 +90,7 @@ Updated 2026-11-16 from brand sites, the Sunday release schedule, brand Instagra
 | Charleston Mahjong Club | CMC x OTG|247 collab bags: No. 8 Nudie Green (tiles) + No. 5 Collab Clutch (card + shufflers) | launch | 2026-11-02 | no | yes | Bags: record only (not a tile set/mat). | [IG Nov 2 11:24am ET](https://www.instagram.com/reel/DfPuShzRLfn/) |
 | Charleston Mahjong Club | The Cabana Club Edition (full-size tiles): first batch arriving | launch | LIVE Tue Nov 10 for email subscribers (early access, email 6:55am ET); public opening next; next batch December | no | yes | Sneak-peek heads-up sent Nov 5. Swipe book already exists (https://claude.ai/artifact/Lwn53gw8cf28z5FUEKTijs): reuse it, no second book. When it goes live: reshare CMC's post to stories (MAHJMATCH). Teaser: assets/launches/cmc-cabana-club-teaser/ | [IG @charlestonmahjongclub Nov 5](https://www.instagram.com/reel/DfX1w9hRo7l/) |
 | Charleston Mahjong Club | Cabana Club travel bundles | preorder | 'on their way' (giveaway closes Mon Oct 26 8pm ET before launch) | no | yes | Skip (travel). | [IG Oct 11, Oct 19](https://www.instagram.com/p/DfM2kP6EYPL/) |
+| Fait à Main | Fleurs de Fête holiday mats (Vert, Bleu) | mat | Sat 11/21 | no | yes |  | [Fait à Main IG reel Nov 19](https://www.instagram.com/reel/Df6Q8O2MZeG/) |
 | Four Winds Social | Drop 4 (mats) | drop | Thu Oct 29 8pm CT | no | no | Log (not a partner; FWS mats removed from gallery Oct 20). | [Four Winds Social email Oct 29 5:03am ET](https://www.fourwindssocial.com/) |
 | Hip Hip Mahjong | Rackin' Rudolph tiles (restock) + mat, shufflers | restock | 2026-10-20 | no | yes | Holiday: a Rudolph mood board / story only through Planoly. Restock is the money window. No holiday feed posts before Nov 1 unless Tiffany says. | [products.json + product page, Oct 20 17:25 UTC](https://www.hiphipmahjong.com/products/rackin-rudolph-tiles) |
 | House of Hearts Studio | The Juliette mat (new design) | launch | 2026-11-01 | no | no | Non-partner, no code. Add the full-table-size mat to FYM when listed (brand-watchlist: Tiffany wants all their mats). Log only. | [Jenni Horne email Nov 1 8:31am ET](https://www.houseofheartsstudio.com/) |
@@ -99,6 +100,7 @@ Updated 2026-11-16 from brand sites, the Sunday release schedule, brand Instagra
 | LoveShackFancy x Oh My Mahjong | Coquette tiles | restock | no date ('Notify Me') | Coquette | no | HOLD Coquette content. LSF '12 Days of Fancy' holiday drops started Oct 21: watch daily for a Coquette restock in that series. | [Product page 'Expected to ship: Sold out, Notify Me'](https://www.loveshackfancy.com/products/pink-floral-mahjong-tile-set) |
 | Lucky Bam | The Mat & Rack Event, 25% off select mats and racks | sale | starts Thu Oct 29 (limited time) | no | no | Log (not a watched partner). | Lucky Bam email Oct 28 9:04am ET |
 | Lucky Bam | New holiday mats: The Rosé Noël + The Slopes | launch | LIVE Sun Nov 8 | no | no | Non-partner: Brand Watch non-partner list only. | [Lucky Bam email Nov 8 11:03am ET](https://luckybam.com) |
+| Mac + Miller Mahjong | The Clubhouse travel tile set | tiles | Feb 2027 | no | yes |  | [Mac + Miller IG reel Nov 18](https://www.instagram.com/reel/Df4iOFxTk85/) |
 | Mah Jongg Maven | Mah Jongg Maven x Coca-Cola Classic tile set | preorder | preorder open now ($100 deposit); ships early December | no | yes | Codes post line (5% off with MAHJMATCH). | [IG @mahjonggmaven Nov 6](https://www.instagram.com/p/DfaPJWblBLi/) |
 | Mahj & Vine | Whispering Winds debut tiles (Sky Blue first, then Tortoise Shell) | coming soon | no date (in production) | no | no | Watch. | [Instagram @mahjandvine Oct 28](https://www.instagram.com/p/DfDBWKxHd5h/) |
 | Mahj & Vine | Chinoiserie Blue & Green mat restock | restock | 'restock en route', no date | no | yes | Watch the store; restock playbook when live. | [IG @mahjandvine Nov 6](https://www.instagram.com/reel/DfZ6g55vpQs/) |
@@ -112,6 +114,7 @@ Updated 2026-11-16 from brand sites, the Sunday release schedule, brand Instagra
 | Mahj Mood | Pipeline: Plot Twist, Mahj Manor, Fore the Girls, Summer/Mediterranean tiles, 2nd Radiant Mood colorway, 6 fall/winter wood rack colors | launch | no dates | no | yes | DO NOT POST. Watch. Oct 28: Playing for Keeps + Lake Day now dated (own rows). | Affiliate-only email Oct 20 (NOT public) |
 | Mahj Pit | Christmas tiles launch (red backs with folk-floral faces + gold-glitter confetti tiles; looks like the Merry Merry Holiday Tiles Limited Edition design, currently sold out on the store) | launch | 2026-11-11 | no | yes | Check store Nov 11; if it's a NEW design (not Merry Merry relisted) treat as a partner launch. Photo: assets/launches/mahjpit-christmas-tiles-teaser/. | [IG @mahjpit.co Oct 30 4:43pm ET (found Nov 5; Mahj Pit affil](https://www.instagram.com/p/DfId2tWPVhq/) |
 | Mahj Pit | Original Confetti tiles restock (Small $395 / Large $495) | restock | 2026-11-11 | no | yes | Restock of existing set; check store Nov 11. | [IG @mahjpit.co Oct 30](https://www.instagram.com/p/DfIeMuMPHrL/) |
+| Mahj Squad | Mint Nutcracker tile set | tiles | Sun 11/22 3pm ET | no | yes |  | [Mahj Squad IG reel Nov 19](https://www.instagram.com/reel/Df7fG1Sp97V/) |
 | Mahj Tile Haus | Tide & Leather (teased, non-partner) | launch |  | no | no |  | [link](https://www.instagram.com/reel/DfgJrlOR-lD/) |
 | Mahjong Moxie | Moxie Tiles (first tile set; bold colours, chinoiserie) | launch | 2026-11-06 12:00 | no | no | Non-partner: record only. | [IG Nov 2 2:26pm ET](https://www.instagram.com/reel/DfQDWuzhKvH/) |
 | Mahjong Register | Holly Jolly Double-Sided Leatherette mat 31.5in (restock) | restock | LIVE Oct 29 (store check 9:55am ET, $125) | no | yes | Holiday mat back in stock: holiday content can use it again. Not in FYM (no app frames). | [restock watchlist store check](https://mahjongregister.com/products/pre-order-very-merry-wreath-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy) |

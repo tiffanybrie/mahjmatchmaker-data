@@ -395,10 +395,10 @@
   {
    "brand": "Anders Ruff",
    "partner": true,
-   "what": "Anders Ruff x Trista Sutter, a bridal mahjong collab (mat and tile set), launches Wed 12/2.",
+   "what": "Something Blue, a bridal mahjong collab with Trista Sutter (mat and tile set), launches Wed 12/2. Comment BLUE on their reel for first access.",
    "tag": "mat",
    "action": "IG story Thu 11/19 (~1h): reel 'Something old, something new...' names Trista Sutter and shows 12.2.26. No product page or time yet. New in Find Your Mat-ch when live",
-   "url": "https://www.instagram.com/p/DfkLmn4G0oh/",
+   "url": "https://www.instagram.com/reel/Df7fmlzS4tt/",
    "urgency": "LATER",
    "date": "2026-12-02",
    "found": "2026-11-19T12:53",
@@ -617,18 +617,55 @@
    "source_kind": "social"
   },
   {
-   "date": null,
+   "date": "2026-11-22",
    "brand": "Mahj Squad",
    "partner": true,
-   "what": "Mint and white Nutcracker tile sets are coming soon. No date yet.",
+   "what": "The Mint Nutcracker tile set drops Sun 11/22 at 3pm ET. A Notify me button is on the product page.",
    "tag": "tiles",
    "new": true,
    "urgency": "SOON",
    "buy": "https://mahjsquadshop.com/products/mint-nutcracker-tiles",
-   "url": "https://mahjsquadshop.com/products/mint-nutcracker-tiles",
-   "found": "2026-11-19T09:40",
-   "source": "store",
-   "source_kind": "store"
+   "url": "https://www.instagram.com/reel/Df7fG1Sp97V/",
+   "found": "2026-11-19T13:40",
+   "source": "IG reel Thu 11/19 + store",
+   "source_kind": "store",
+   "day": "Sun 11/22",
+   "time": "3pm ET",
+   "history": [
+    {
+     "found": "2026-11-19T09:40",
+     "what": "Mint and white Nutcracker tile sets are coming soon. No date yet."
+    }
+   ]
+  },
+  {
+   "date": "2026-11-21",
+   "day": "Sat 11/21",
+   "brand": "Fait à Main",
+   "partner": true,
+   "what": "Fleurs de Fête holiday mats arrive Sat 11/21 in Vert (green) and Bleu (blue). A double-sided Vert/Bleu version is on preorder. Monogramming is available.",
+   "tag": "mat",
+   "new": true,
+   "urgency": "SOON",
+   "buy": "https://www.fait-a-main.com",
+   "url": "https://www.instagram.com/reel/Df6Q8O2MZeG/",
+   "found": "2026-11-19T13:40",
+   "source": "IG reel Thu 11/19",
+   "source_kind": "social"
+  },
+  {
+   "date": null,
+   "brand": "Mac + Miller Mahjong",
+   "partner": true,
+   "what": "The Clubhouse, a new travel tile set, is aiming for February 2027.",
+   "tag": "tiles",
+   "new": true,
+   "urgency": "LATER",
+   "buy": "https://www.macandmillermahjong.com",
+   "url": "https://www.instagram.com/reel/Df4iOFxTk85/",
+   "found": "2026-11-19T13:40",
+   "source": "IG reel Wed 11/18",
+   "source_kind": "social"
   }
  ],
  "just_dropped": [
@@ -797,15 +834,15 @@
    "urgency": "NOW"
   },
   {
-   "date": "2026-11-16",
-   "day": "Mon 11/16",
+   "date": "2026-11-19",
+   "day": "Thu 11/19",
    "brand": "Virora",
-   "what": "Floréa tiles (Purple, 4 layers, $229) are back in stock.",
+   "what": "Floréa tiles (Purple, 4 layers, $229) are back in stock again.",
    "tag": "tiles",
    "restock": true,
    "buy": "https://www.viroramahjong.com/products/florea",
    "url": "https://www.viroramahjong.com/products/florea",
-   "found": "2026-11-16T18:40",
+   "found": "2026-11-19T13:40",
    "source": "store",
    "source_kind": "store",
    "partner": true,
@@ -1823,5 +1860,5 @@
    "url": ""
   }
  ],
- "updated": "2026-11-19T12:53"
+ "updated": "2026-11-19T13:45"
 }

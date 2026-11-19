@@ -1,30 +1,17 @@
-# Partner launches & restocks (2026-11-19 14:29 UTC)
+# Partner launches & restocks (2026-11-19 18:30 UTC)
 
-## Since last run: 15 to act on
-- **NEW** Let's Mahj On · Let's Get Wild! (tiles) · https://www.letsmahj-on.com/products/lets-get-wild
-- **NEW** Let's Mahj On · Let's Stir Things Up! (tiles) · https://www.letsmahj-on.com/products/lets-stir-things-up
-- **NEW** Mahj Squad · Mint and white Nutcracker Mahjong Tiles with tile bag (tiles) · https://mahjsquadshop.com/products/mint-nutcracker-tiles
-- **NEW VARIANT** Mahjong Studios · Christmas Mahjong Set – Christmas Kiss | Mahjong Studios (tiles) · Christmas Kiss Tiles Only / OPEN BOX - customer return - all tiles dice box bag brand new but open · https://mahjongstudios.com/products/christmas-kiss-american-mahjong-tile-set-160-tiles-red-bundle
-- **RESTOCK** Mini Mahjer · The Complete Travel Bundle: Bubbles & Bows Edition (travel tiles) · Blue · https://minimahjer.com/products/bubbles-bows-travel-bundle
-- **RESTOCK** Mini Mahjer · The Complete Travel Bundle: Ski Edition (travel tiles) · Blue · https://minimahjer.com/products/ski-travel-bundle
-- **RESTOCK** Mini Mahjer · The Complete Travel Bundle: Beach Edition (travel tiles) · Blue · https://minimahjer.com/products/beach-travel-bundle
-- **RESTOCK** Mini Mahjer · The Complete Travel Bundle: Rookie Edition (travel tiles) · Blue · https://minimahjer.com/products/rookie-travel-bundle
-- **RESTOCK** Mini Mahjer · The Complete Travel Bundle: Woodlands Edition (travel tiles) · Blue · https://minimahjer.com/products/woodlands-travel-bundle
-- **RESTOCK** Mini Mahjer · The Complete Travel Bundle: Rackin' Rosie Edition (travel tiles) · Blue · https://minimahjer.com/products/rackin-rosie-travel-bundle
-- **RESTOCK** Mini Mahjer · The Complete Travel Bundle: OG Edition (travel tiles) · Blue · https://minimahjer.com/products/og-travel-bundle
-- **NEW** My Fair Mahjong · SINGLE-TILE FRAME  |  4 Color Options  |  Keepsake Collection (tiles) · https://myfairmahjong.com/products/single-tile-frame
-- **NEW** My Fair Mahjong · THREE-TILE FRAME  |  4 Mat Color Options  |  Keepsake Collection (mat) · https://myfairmahjong.com/products/keepsake-triple-frame
-- **RESTOCK** Mahj Pit · Pixel Pusher Mat (mat) · Default Title · https://mahjpit.co/products/pixel-pusher-mat
-- **NEW** Brewtifully · Mahjong Mat SleekSurface (Made in USA) FolkArts autumn love (mat) · https://shop.brewtifully.com/products/mahjong-mat-sleeksurface-made-in-usa-folkarts-autumn-love
+## Since last run: 3 to act on
+- **RESTOCK** Mahjong Studios · Mahjong Studios – Rose Dragon American Mahjong Bundle Tile Set (166 Tiles) (tiles) · All In One - G Carry Bag + Tiles & Bag + Mat + BrM Racks + Instructions · https://mahjongstudios.com/products/mahjong-studios-rose-dragon-american-mahjong-bundle-tile-set-166-tiles-1
+- **RESTOCK** Virora Mahjong · Floréa  Mahjong Tiles (tiles) · Floréa - Purple 4 Layers · https://www.viroramahjong.com/products/florea
+- **NEW VARIANT** Brewtifully · 33.5” textured leatherette mahjong mat with bag-Multipe Designs (mat) · Spring green, November 26 · https://shop.brewtifully.com/products/33-5-textured-leatherette-mahjong-mat-with-bag-spring-green
 
 ## Created/published in the last 7 days (tiles, mats, racks)
-- 2026-11-19 · Mahj Squad · Mint and white Nutcracker Mahjong Tiles with tile bag (tiles) · NOT available · https://mahjsquadshop.com/products/mint-nutcracker-tiles
+- 2026-11-19 · Mahj Squad · Mint and white Nutcracker Mahjong Tiles with tile bag- 15% off all Thanksgiving week! (tiles) · NOT available · https://mahjsquadshop.com/products/mint-nutcracker-tiles
 - 2026-11-19 · Brewtifully · Mahjong Mat SleekSurface (Made in USA) FolkArts autumn love (mat) · available · https://shop.brewtifully.com/products/mahjong-mat-sleeksurface-made-in-usa-folkarts-autumn-love
 - 2026-11-18 · Oh My Mahjong · Sadie Jane Mahjong Tiles (tiles) · NOT available · https://www.ohmymahjong.com/products/sadie-jane-mahjong-tiles
 - 2026-11-18 · Oh My Mahjong · Serendipity Mat in Tube (mat) · NOT available · https://www.ohmymahjong.com/products/serendipity-mat-in-tube
 - 2026-11-18 · Let's Mahj On · Let's Get Wild! (tiles) · NOT available · https://www.letsmahj-on.com/products/lets-get-wild
 - 2026-11-18 · Let's Mahj On · Let's Stir Things Up! (tiles) · available · https://www.letsmahj-on.com/products/lets-stir-things-up
-- 2026-11-18 · Mahj Mood · **LAUNCHING FRIDAY 11/20***Lake Day| Pre-Order, Ships February (tiles) · NOT available · PREORDER/COMING SOON · https://mahjmood.com/products/lake-day-pre-order-ships-february
 - 2026-11-18 · Mahj Mood · Pearl Acrylic Pusher Add Ons (4) (rack) · available · https://mahjmood.com/products/pearl-acrylic-pusher-add-ons-4
 - 2026-11-18 · My Fair Mahjong · SINGLE-TILE FRAME  |  4 Color Options  |  Keepsake Collection (tiles) · NOT available · https://myfairmahjong.com/products/single-tile-frame
 - 2026-11-18 · My Fair Mahjong · THREE-TILE FRAME  |  4 Mat Color Options  |  Keepsake Collection (mat) · NOT available · https://myfairmahjong.com/products/keepsake-triple-frame
@@ -112,9 +99,6 @@
 - 2026-11-13 · Splash of Color · Snow Much for Summer Après-Ski Engraved American Mahjong Tiles (tiles) · available · https://splashofcolorco.com/products/snow-much-for-summer-apres-ski-winter-engraved-american-mahjong-tiles
 - 2026-11-12 · Bam Bird Boutique · Holiday Tiles & Tea - Dec. 5 at Heirloom Haul in Frisco (tiles) · available · https://www.bambirdboutique.com/products/mischief-mahj-tiles-tastings-event-wed-oct-21-copy-1
 - 2026-11-12 · Britt Mills · Grayson Leatherette Mahjong Mat (mat) · available · https://brittmillsdesign.com/products/grayson-leatherette-mahjong-mat
-- 2026-11-12 · Britt Mills · Plumage Desk Mat (mat) · available · https://brittmillsdesign.com/products/plumage-desk-mat
-- 2026-11-12 · Britt Mills · Plumage Leatherette Mahjong Mat (mat) · available · https://brittmillsdesign.com/products/plumage-leatherette-mahjong-mat
-- 2026-11-12 · Britt Mills · Mallard Manor Leatherette Mahjong Mat (mat) · available · https://brittmillsdesign.com/products/mallard-manor-leatherette-mahjong-mat
 - 2026-11-12 · Mahj Mood · IMPERFECT Serenity Mood Tiles (tiles) · available · https://mahjmood.com/products/imperfect-serenity-mood-tiles
 - 2026-11-12 · Let's Be Besties · Christmas Lights Mahjong Tile Pouch (tiles) · available · https://letsbebesties.com/products/christmas-lights-mahjong-tile-pouch
 - 2026-11-12 · Let's Be Besties · Holly Starburst Mahjong Tile Pouch (tiles) · available · https://letsbebesties.com/products/holly-starburst-mahjong-tile-pouch
@@ -128,18 +112,14 @@
 - 2026-11-12 · Splash of Color · Mini Mahjong Travel Set Pink And Green Preppy Single Layer Tiles (travel tiles) · available · https://splashofcolorco.com/products/mini-mahjong-travel-set-pink-and-green-preppy-single-layer-tiles
 - 2026-11-12 · Splash of Color · Snow Much For Summer Flamingo Winter Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/snow-much-for-summer-flamingo-winter-mahjong-mat-sleek-surface
 - 2026-11-12 · Splash of Color · Snow Much For Summer Mahjong Winter Blue 4Layer Engraved American Mahjong Tiles Set (tiles) · available · https://splashofcolorco.com/products/snow-much-for-summer-mahjong-winter-blue-4layer-engraved-american-mahjong-tiles-set
-- 2026-11-12 · Splash of Color · The Gilded Dragon Dynasty Club Mahjong Mat Sleek Surface (mat) · available · https://splashofcolorco.com/products/the-gilded-dragon-dynasty-club-mahjong-mat-sleek-surface
-- 2026-11-12 · Splash of Color · Gilded Dynasty Extended Mahjong Rack Set of 4  Scalloped Magnetic Tile Pusher (rack) · available · https://splashofcolorco.com/products/gilded-dynasty-extended-mahjong-rack-set-of-4-scalloped-magnetic-tile-pusher
-- 2026-11-12 · Splash of Color · Gilded Dragon Dynasty Chinoiserie Chic American Mahjong Engraved Layered Tiles (tiles) · available · https://splashofcolorco.com/products/gilded-dragon-dynasty-chinoiserie-chic-american-mahjong-engraved-layered-tiles
-- 2026-11-12 · Splash of Color · Gilded & Glorious Chinoiserie Chic American Engraved Layered Mahjong Tiles (tiles) · available · https://splashofcolorco.com/products/gilded-glorious-chinoiserie-chic-american-engraved-layered-mahjong-tiles
 
 ## Stores
 - amahjline.com: ok 33 products
 - birdandbamboo.com: ok 59 products
-- brittmillsdesign.com: ok 751 products
+- brittmillsdesign.com: ok 752 products
 - letsbebesties.com: ok 769 products
 - mahjandvine.com: ok 21 products
-- mahjmood.com: ok 51 products
+- mahjmood.com: ok 50 products
 - mahjongco.com: ok 1 products
 - mahjongregister.com: ok 80 products
 - mahjongstudios.com: ok 156 products
@@ -155,7 +135,7 @@
 - shop.andersruff.com: ok 163 products
 - shop.brewtifully.com: ok 616 products
 - soireeallday.co: not checkable (not Shopify or blocked)
-- splashofcolorco.com: ok 2220 products
+- splashofcolorco.com: ok 2225 products
 - spools.com: ok 101 products
 - sundaymahjong.com: ok 87 products
 - sweetjojomahjong.com: ok 89 products
@@ -163,7 +143,7 @@
 - themahjonghouse.com: ok 104 products
 - themahjongpress.com: ok 7 products
 - theroyalmahjongsociety.com: ok 50 products
-- tigredetartan.com: ok 127 products
+- tigredetartan.com: ok 128 products
 - www.bambirdboutique.com: ok 118 products
 - www.bamletsmahjong.com: ok 68 products
 - www.bespokemahjong.com: ok 319 products
