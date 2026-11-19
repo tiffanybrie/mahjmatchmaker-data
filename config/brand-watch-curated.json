@@ -332,16 +332,22 @@
    "date": "",
    "brand": "Mahj Mood",
    "partner": true,
-   "what": "New transparent blue racks launch later this month (shown with the Lake Day mat and tiles). No date yet.",
+   "what": "New transparent racks in blue, pink and plum launch in stock later this month (blue shown with the Lake Day mat and tiles). No date yet.",
    "tag": "racks",
    "new": true,
    "urgency": "LATER",
    "url": "https://mahjmood.com",
    "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/partner-catalogs-sqsp/assets/launches/mahj-mood-transparent-blue-racks/mahj-mood-blue-racks-lake-day-mat-ig-story-nov12.jpg",
-   "found": "2026-11-12T22:40",
+   "found": "2026-11-18T23:39",
    "source": "IG story",
    "source_link": "https://www.instagram.com/stories/mahj_mood/",
-   "action": "IG story 11/12 ~7:30pm ET Lake Day Q&A frame: 'transparent blue racks launching later this month'. Different from the wooden scalloped racks. Watch store."
+   "action": "IG story 11/12 ~7:30pm ET Lake Day Q&A frame: 'transparent blue racks launching later this month'. Different from the wooden scalloped racks. Watch store. | IG story 11/18 Lake Day Q&A: 'Launching in stock later this month along with transparent pink and the highly anticipated transparent plum'.",
+   "history": [
+    {
+     "found": "2026-11-12T22:40",
+     "what": "New transparent blue racks launch later this month (shown with the Lake Day mat and tiles). No date yet."
+    }
+   ]
   },
   {
    "date": "2026-11-20",
@@ -598,6 +604,23 @@
   }
  ],
  "just_dropped": [
+  {
+   "date": "2026-11-18",
+   "brand": "Oh My Mahjong",
+   "partner": true,
+   "what": "NEW Tennis Shufflers and Football Shufflers ($20 each), with play reminders printed on the back, are in stock now (listed Wed 11/18).",
+   "tag": "shufflers",
+   "new": true,
+   "urgency": "NOW",
+   "url": "https://www.ohmymahjong.com/products/tennis-shufflers",
+   "buy": "https://www.ohmymahjong.com/products/tennis-shufflers",
+   "img": "https://cdn.shopify.com/s/files/1/0680/9639/3500/files/TennisShuffler_b.jpg?v=1793583642",
+   "found": "2026-11-18T23:39",
+   "source": "IG story",
+   "source_kind": "social",
+   "source_link": "https://www.instagram.com/stories/ohmymahjong/",
+   "action": "IG story 11/18 ~1:30pm ET 'NEW Shufflers have entered the chat' (Tennis + Football, link stickers). Store: both published 11/18 12:09pm CT, $20, available. Football: /products/football-shufflers. Story frame saved assets/launches/oh-my-mahjong-shufflers/."
+  },
   {
    "date": "2026-11-18",
    "day": "Wed 11/18",
@@ -1741,5 +1764,5 @@
    "url": ""
   }
  ],
- "updated": "2026-11-18T13:45"
+ "updated": "2026-11-18T23:39"
 }

@@ -1,0 +1,49 @@
+{
+ "run": "2026-11-18 20:37 ET slot (started 23:28 ET; fired late)",
+ "source": "Instagram stories via Claude in Chrome (@mahjmatchmaker)",
+ "handles_checked": [
+  "ohmymahjong",
+  "bambirdboutique",
+  "missmahjongofficial",
+  "myfairmahjong",
+  "bespoke_mahjong",
+  "andersruffdesignco",
+  "peacelovemahjong",
+  "bird_and_bamboo",
+  "mahj_mood",
+  "minimahjer",
+  "charlestonmahjongclub"
+ ],
+ "with_stories": {
+  "ohmymahjong": 13,
+  "bambirdboutique": 4,
+  "missmahjongofficial": 4,
+  "myfairmahjong": 2,
+  "bespoke_mahjong": 8,
+  "andersruffdesignco": 17,
+  "peacelovemahjong": 2,
+  "mahj_mood": 14,
+  "minimahjer": 2,
+  "charlestonmahjongclub": 1
+ },
+ "frames_read": 67,
+ "extra_dated_partners": "none beyond tier A (OMM 11/25, Bam Bird 11/20, Mahj Mood 11/20 all in A)",
+ "finds": [
+  {
+   "brand": "Oh My Mahjong",
+   "kind": "new product",
+   "what": "NEW Tennis Shufflers + Football Shufflers, $20 each, store-published 11/18 12:09pm CT, in stock",
+   "curated": "just_dropped (NOW)",
+   "img": "OMM CDN product photo; story frame saved assets/launches/oh-my-mahjong-shufflers/omm-tennis-shufflers-ig-story-nov18.png"
+  },
+  {
+   "brand": "Mahj Mood",
+   "kind": "launch details",
+   "what": "Transparent racks coming in stock later this month in blue, pink and plum (pink + plum new)",
+   "curated": "coming_soon item updated, history kept"
+  }
+ ],
+ "skipped": "customer reposts (OMM, My Fair, Bespoke, Anders Ruff Dear Santa tiles = existing product, CMC), OMM holiday gift-guide frames, Bam Bird events/lessons, Anders Ruff Southern Christmas Show event, PLM Chartreuse Cherries BF deal (already logged hidden), Bespoke BF repost, Mahj Mood Holly Berry 'final 3 mats' (existing item), Mahj Mood unnamed glitter tile sample, Mini Mahjer YouTube guide. Bird & Bamboo: no active story.",
+ "not_read": "Bam Bird 'BREAKING' reel (video, no text overlay; feed reel, covered by Planoly feed watch)",
+ "notes": "No NOW push: BRAND-WATCH-RULES 00000 bans per-item pushes. Sheet rows appended (Brand news A132:G133). Brand Watch republished v41. git fetch of full repo hung; shallow fetch used."
+}
