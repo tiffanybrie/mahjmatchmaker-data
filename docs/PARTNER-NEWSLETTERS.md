@@ -94,3 +94,12 @@ The tiffanybrie@ forward note below has not shown up in practice: as of Nov 16 n
 ## Nov 16 (Tiffany 9:01am: "you have my permission" to sign up + unsubscribe tiffanybrie@ from duplicates)
 - Retried Tigre de Tartán footer: hCaptcha still blocks the submit (a captcha is the one step Claude can't do). The 9 hCaptcha brands (TdT, My Fair, Mini Mahjer, Mahjong Press, Amahj, Bam! Let's Mahjong, Mahj Mood, Let's Be Besties, Splash) + Mahj Pit now reach mahjmatchmaker@ through the tiffanybrie@ forward filter (partner domains OR subject affiliate), once Google's phone approval is done.
 - Unsubscribed tiffanybrie@ (Gmail Unsubscribe) from lists that ALSO reach mahjmatchmaker@: Miss Mahjong, Bespoke (info@), Amanda Toppe. Britt Mills: no one-click unsubscribe, left. Kept on tiffanybrie@ ON PURPOSE (mahjmatchmaker@ isn't reliably getting them, so the forward carries them): Oh My Mahjong, Bam Bird, Virora, Anders Ruff.
+
+## Nov 19 update (cloud browser; her Chrome not used)
+- Ozark Mahjongg: signed up again on mahjmatchmaker@ (Wix footer form, "Thanks for joining our mailing list"). Waiting for first newsletter.
+- Bespoke: footer form shows hCaptcha; already on the mahjmatchmaker@ list since the Nov 7 welcome, so marked covered.
+- Hip Hip: no signup box anywhere on the site (rechecked Nov 19); newsletter reaches tiffanybrie@ only. Covered via personal Gmail.
+- Oh My Mahjong, Bam Bird: no newsletter at mahjmatchmaker@ in the last 30 days (connector search Nov 19), but both reached tiffanybrie@ Nov 18. Marked "Covered via personal Gmail"; do NOT unsubscribe tiffanybrie@ from them.
+- Middle & Main, Splash of Color: hCaptcha on the form in the cloud browser. Low priority for Tiffany to sign up herself.
+- Rule (coordinator, Nov 19): sites that keep serving human checks are NOT asked of her again. They sit on the sheet as "Low priority: sign up yourself", not an ask: Amahj, Bam! Let's Mahjong, Let's Be Besties, Mahj Mood, Mahj Pit, Mahj Squad, Mahjong Moxie, My Fair, Rebecca Illustrated, The Mahjong Press, Tigre de Tartán, Middle & Main, Splash of Color.
+- Sheet: https://docs.google.com/spreadsheets/d/1W1PyfFcAoCtZK-Bdycrs1n1pggHVJG0vCR8XEefxdck/edit
