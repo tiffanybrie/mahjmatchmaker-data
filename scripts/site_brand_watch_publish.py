@@ -20,6 +20,7 @@ if re.search(r'claude\.ai|sca_ref=[^"&]*["&][^>]*>Shop[^<]*</a>\s*<div class="bw
 if re.search(r'Yellow Mountain', h): bad.append('Yellow Mountain Imports is never featured')
 if bad: sys.exit('NOT PUBLISHED: ' + '; '.join(bad))
 run = lambda *a: subprocess.run(a, check=True, capture_output=True, text=True).stdout.strip()
+subprocess.run('git stash -q -- %s; git pull -q --rebase origin partner-catalogs-sqsp; git stash pop -q' % B, shell=True)   # be current BEFORE committing, so the pinned commit is never rewritten
 run('git', 'add', B)
 if run('git', 'diff', '--cached', '--name-only'):
     run('git', 'commit', '-q', '-m', 'Brand Watch block ' + (re.search(r'Last updated[^<]*', h) or [''])[0])
@@ -28,5 +29,5 @@ j = json.load(open(J)); now = datetime.datetime.now(datetime.timezone(datetime.t
 j['block'] = f'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@{sha}/{B}'; j['version'] = now.strftime('%Y-%m-%dT%H:%M'); j['published'] = now.isoformat(timespec='seconds')
 open(J, 'w').write(json.dumps(j, indent=2) + '\n')
 run('git', 'add', J); run('git', 'commit', '-q', '-m', 'Brand Watch live.json -> ' + sha[:8])
-subprocess.run('git pull -q --rebase origin partner-catalogs-sqsp && git push -q origin HEAD:partner-catalogs-sqsp', shell=True, check=True)
+subprocess.run('git push -q origin HEAD:partner-catalogs-sqsp', shell=True, check=True)   # if this is refused (someone pushed meanwhile), run the script again: never rebase after pinning
 print('PUBLISHED', j['version'], sha[:8], '(live within about 5 minutes)')
