@@ -56,6 +56,7 @@ STORES = {
     'shop.brewtifully.com': 'Brewtifully',
     # Nov 19 (Tiffany Nov 18: Spools is a new brand; GoAffPro, code MAHJMATCH pending)
     'spools.com': 'Spools',
+    'www.averillmahjong.com': 'Averill',  # Shopify; products.json works from cloud on the www host (coverage run Nov 20)
 }
 # brand-specific handling (CLAUDE.md + ANSWERS)
 NO_SOCIAL = {'Yellow Mountain Imports'}                 # never featured on social
