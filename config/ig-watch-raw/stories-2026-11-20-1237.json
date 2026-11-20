@@ -1,0 +1,73 @@
+{
+ "run": "2026-11-20 12:37 ET slot (started 12:46 ET)",
+ "source": "Instagram stories via Claude in Chrome (@mahjmatchmaker)",
+ "handles_checked": [
+  "ohmymahjong",
+  "bambirdboutique",
+  "missmahjongofficial",
+  "myfairmahjong",
+  "bespoke_mahjong",
+  "andersruffdesignco",
+  "peacelovemahjong",
+  "bird_and_bamboo",
+  "mahj_mood",
+  "minimahjer",
+  "charlestonmahjongclub",
+  "mahj_squad",
+  "fait.a.main",
+  "nolijunemahjong",
+  "macmillermahjong"
+ ],
+ "extra_dated_partners": "Mahj Squad (11/22), Fait a Main (11/21), Noli June (sale 11/21), Mac + Miller (VIP 11/23) from curated; OMM 11/25, Bam Bird 11/20, Mahj Mood 11/20 already tier A. CMC 11/27 is tier A.",
+ "with_stories": {
+  "ohmymahjong": 8,
+  "bambirdboutique": 11,
+  "missmahjongofficial": 2,
+  "myfairmahjong": 4,
+  "bespoke_mahjong": 8,
+  "andersruffdesignco": 15,
+  "bird_and_bamboo": 2,
+  "mahj_mood": 3,
+  "minimahjer": 2,
+  "mahj_squad": 1,
+  "fait.a.main": 7,
+  "nolijunemahjong": 1,
+  "macmillermahjong": 4
+ },
+ "no_story": [
+  "peacelovemahjong",
+  "charlestonmahjongclub"
+ ],
+ "frames_read": 66,
+ "frames_note": "Read every frame; 3 frames never loaded (1 Bam Bird ~12h, 1 My Fair ~23h, last few Anders Ruff merrygomahjong unboxing reposts skimmed).",
+ "finds": [
+  {
+   "brand": "Mahj Mood",
+   "what": "Lake Day tiles + mat LIVE for pre-order (status change from coming soon); delivery Feb, possibly January",
+   "when": "Fri 11/20 10am CT",
+   "writes": "sheet + curated (moved to just_dropped with history) + page v45"
+  },
+  {
+   "brand": "Fait à Main",
+   "what": "Fleurs de Fête new Minuit colorway drops Sat 11/21 alongside Vert & Blue; double-sided mat preorder starts Sat 11/21",
+   "when": "Sat 11/21",
+   "img": "assets/launches/faitamain-fleurs-de-fete-minuit/story-1120.jpg",
+   "writes": "sheet + curated (history) + page v45"
+  },
+  {
+   "brand": "Fait à Main",
+   "what": "SALE Sat 11/21: special pricing on select pieces + free monogramming & shipping $350+",
+   "kind": "sale, social-sourced, hidden pending her yes",
+   "writes": "sheet + curated sales (hidden)"
+  }
+ ],
+ "already_logged": [
+  "Bam Bird BF 15% off sitewide Nov 20-22 + Classic Tortoise restock today ('Shop at 10am CT', 'Tortoise on sale', countdown sticker); both in curated. Countdown read 01:14:40 at ~12:50 ET, so the restock time may have moved to ~2pm ET: not changed, check store.",
+  "Anders Ruff Pink Friday 30% off select pink (sheet Fri 9:35am, brand email).",
+  "My Fair Mahjong 'My Fair Holiday' 20% off Nov 27-30 (sheet Thu 1:45pm, hidden).",
+  "OMM Sadie Jane + Serendipity countdown (launch Wed 11/25 10am CT in curated). Story adds: 5% of Sadie Jane sales go to the Women's Alzheimer's Movement. Countdown read 05:00:42 at ~12:50 ET (= ~1:30pm ET 11/25), vs curated 10am CT: worth a check.",
+  "Mac + Miller Black Friday Nov 26-30 (curated); 'our new mats arrived early' with Gilded Ginkgo (known)."
+ ],
+ "skipped": "OMM Travel Set gift-guide reshare; Bam Bird Ask-Me-Anything plaid/Deco pairings, replacement tile link, Cancun repost, Dallas store hours; Miss Mahjong reposts; My Fair Lumera unboxing + travel bag repost; Bespoke customer reposts (Gingerbread House tiles, known), giveaway; Anders Ruff Bears event, Christmas mat reposts, merrygomahjong MERRYGO unboxing (another seller's code); Bird & Bamboo meetup + Scorpio styling; Mini Mahjer reposts; Mahj Squad meetup photo; Fait a Main Fetes de Noel reel, journal, Shop Small Saturday card; Noli June meme reel.",
+ "notes": "No per-item push (BRAND-WATCH-RULES 00000). Old checkout's git fetch hung; used a fresh shallow clone."
+}
