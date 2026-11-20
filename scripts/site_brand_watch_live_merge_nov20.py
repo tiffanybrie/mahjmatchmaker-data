@@ -1,5 +1,5 @@
 import re,html,sys,datetime
-blk=open('bw/live_block.html').read()
+blk=open(sys.argv[1]).read()
 repo=open('/home/claude/mahjmatchmaker-data/site/livepatch/brand-watch/brand-watch.html').read()
 ART=re.compile(r'<article class="bw-card">.*?</article>',re.S)
 txt=lambda h:re.sub(r'\s+',' ',html.unescape(re.sub(r'<[^>]+>',' ',h))).strip()
@@ -27,12 +27,16 @@ def mk(b,stamp,what,when,href,btn,save):
 sqh='https://mahjsquadshop.com/discount/MAHJMATCH?redirect=/'
 blh='https://bamletsmahjong.com/discount/MAHJMATCH?redirect=/'
 NOSTACK='Whether <b>MAHJMATCH</b> works on top of this sale is not confirmed yet. Shop through our link.'
-ST='Added Fri 11/20 · 8:20am ET'
+ST='Added Fri 11/20 · 8:45am ET'
 NEWBF=[mk('My Fair Mahjong',ST,"My Fair Holiday: 20% off sitewide for Black Friday. Seen on their Instagram, Thu 11/19.",'Fri 11/27 · through Mon 11/30','https://myfairmahjong.com/discount/MAHJMATCH?redirect=/','Shop',NOSTACK),
  mk('Mahj Squad',ST,"15% off and free shipping on the new Mint Nutcracker tiles during Thanksgiving week. The tiles drop Sun 11/22 at 3pm ET. Seen on their Instagram, Thu 11/19.",'Thanksgiving week',sqh,'Shop',NOSTACK),
- mk('Peace Love Mahjong',ST,"Black Friday sale: up to 25% off tile sets, mats and accessories, plus free shipping. Seen on their site, Thu 11/19.",'Through Sun 11/29','https://peacelovemahjong.com/?ref=Mahjmatch','Shop',NOSTACK),
- mk('Amanda Toppe',ST,"Black Friday sale with their own code BLACKFRIDAY20. It can't be combined with MAHJMATCH.",'Black Friday week','https://www.amandatoppeart.com/?ref=mahjmatchmaker','Shop','<b>MAHJMATCH</b> does not stack with BLACKFRIDAY20. Shop through our link.')]
-NEWBF.append(mk("Bam! Let's Mahjong",ST,"Early Black Friday: 15% off. Seen on their Instagram, Thu 11/19.",'Early Black Friday · no end date given',blh,'Shop',NOSTACK))
+ mk('Peace Love Mahjong',ST,"Black Friday sale: the more in the cart, the more off, from 10% off at $150 up to 25% off at $750, plus free shipping. Seen on their site, Thu 11/19.",'Through Sun 11/29','https://peacelovemahjong.com/?ref=Mahjmatch','Shop',NOSTACK),
+ mk('Hip Hip Mahjong',ST,"Black Friday: 20% off, taken off in the cart with no code needed. Seen on their site, Fri 11/20.",'Fri 11/20 · through Mon 11/30','https://hiphipmahjong.com/discount/MAHJMATCH?redirect=/','Shop',NOSTACK),
+ mk('Averill Mahjong',ST,"Black Friday sale: about 17% off featured tile sets, plus free US shipping, no code needed. Seen on their site, Fri 11/20.",'Fri 11/20 · through Mon 11/30','https://www.averillmahjong.com/?sca_ref=12804202.cJsndO0eauww8PN','Shop',NOSTACK),
+ mk('Spools',ST,"Black Friday: about $105 in extras comes with every tile set. No percent off. Seen on their site, Fri 11/20.",'Fri 11/20 · through Mon 11/30','https://spools.com/?ref=MAHJMATCH','Shop',NOSTACK),
+ mk('Amanda Toppe',ST,"Black Friday sale with their own code BLACKFRIDAY20. It can't be combined with MAHJMATCH. Seen on their Instagram, Thu 11/19.",'Black Friday week','https://www.amandatoppeart.com/?ref=mahjmatchmaker','Shop','<b>MAHJMATCH</b> does not stack with BLACKFRIDAY20. Shop through our link.'),
+ mk("Bam! Let's Mahjong",ST,"Early Black Friday: 15% off, taken off automatically with no code needed. Seen on their site, Fri 11/20.",'LIVE now · no end date given',blh,'Shop',NOSTACK),
+ mk('Fait à Main',ST,"A Small Business Saturday event is planned for Fri 11/27 to Mon 11/30. Terms are not announced yet.",'Fri 11/27 · through Mon 11/30','https://www.fait-a-main.com','Shop',NOSTACK)]
 # MAIN
 for sid,title in SECS:
     g,e=live_sec_span(Lmain,sid); grid=Lmain[g:e]; lc=ART.findall(grid); out=list(lc)
@@ -87,6 +91,6 @@ last=[k for k,_ in bpages(Lbp)][-1]; order=[k for k in order if k!=last]+[last]
 Lbp=''.join(('</div>\n' if k==last else '')+f'<section class="bw-bpage" id="p-{k}" hidden>{L[k]}</section>' for k in order)
 out=Lmain+Lbp+Ltail
 if 'value="mahj-squad"' not in out: out=out.replace('<option value="mahj-vine">','<option value="mahj-squad">Mahj Squad</option><option value="mahj-vine">')
-out,n=re.subn(r'<p class="bw-updated">[^<]*</p>','<p class="bw-updated">Last updated Fri 11/20 · 8:20am ET</p>',out); assert n==1
-open('bwmerge/merged_block.html','w').write(out)
+out,n=re.subn(r'<p class="bw-updated">[^<]*</p>','<p class="bw-updated">Last updated Fri 11/20 · 8:45am ET</p>',out); assert n==1
+open(sys.argv[2],'w').write(out)
 print('\n'.join(log)); print(len(blk),'->',len(out)); print('arts',len(ART.findall(out)), 'div balance',out.count('<div')-out.count('</div>'),'vs live',blk.count('<div')-blk.count('</div>'),'sections',out.count('<section')-out.count('</section>'))
