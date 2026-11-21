@@ -1694,6 +1694,33 @@
    "found": "2026-11-19T09:40",
    "source": "store",
    "source_kind": "store"
+  },
+  {
+   "date": "2026-11-20",
+   "brand": "Averill",
+   "partner": true,
+   "what": "Charleston Garden No. 8 Four-Layer Edition tile set is on the site.",
+   "tag": "tiles",
+   "urgency": "NOW",
+   "buy": "https://www.averillmahjong.com/products/charleston-garden-no-8-four-layer-edition",
+   "url": "https://www.averillmahjong.com/products/charleston-garden-no-8-four-layer-edition",
+   "found": "2026-11-21T18:40",
+   "source": "store",
+   "source_kind": "store"
+  },
+  {
+   "date": "2026-11-21",
+   "brand": "Sunday Mahjong",
+   "partner": true,
+   "what": "Clear Mahjong Rack Set is back in stock.",
+   "tag": "rack",
+   "restock": true,
+   "urgency": "NOW",
+   "buy": "https://sundaymahjong.com/products/clear-mahjong-rack-set",
+   "url": "https://sundaymahjong.com/products/clear-mahjong-rack-set",
+   "found": "2026-11-21T18:40",
+   "source": "store",
+   "source_kind": "store"
   }
  ],
  "sales": [
@@ -2061,5 +2088,5 @@
    "url": ""
   }
  ],
- "updated": "2026-11-21T13:45"
+ "updated": "2026-11-21T18:40"
 }
