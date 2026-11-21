@@ -10,7 +10,8 @@
   "source": "assets/launches/omm-sadie-jane-mahjong-tiles/06.jpg (OMM listing tile pile shot, no bag)",
   "pile_shot": true,
   "basis": "Tile pile rule, Tiffany Nov 19 2026 3:27pm: OMM pile shot used, no yes needed",
-  "withdrawn": "01.jpg laid-out faces crop sent 3:25pm was withdrawn 3:29pm; she does not answer it"
+  "withdrawn": "01.jpg laid-out faces crop sent 3:25pm was withdrawn 3:29pm; she does not answer it",
+  "inset": "assets/tiles/album/sadie-jane.jpg"
  },
  "colorcard_draft": {
   "at": "2026-11-21T14:45:00-05:00",
@@ -76,5 +77,18 @@
    "pull.py also needs a spec + left-out file for the set, which come after the first candidate pass."
   ],
   "next": "With Chrome: FB research + store sweep, then pull, by-sight pass, cards (gen2), review page. FYM build for Sadie Jane + Serendipity + Averill x4 in the same sitting."
+ },
+ "spec": "scripts/albumcard/specs/sadie-jane_nov21.json",
+ "leftout": {
+  "file": "scripts/albumcard/specs/sadie-jane_leftout.json",
+  "key": "sadie-jane"
+ },
+ "pull": {
+  "contrast": [
+   "DENIM BLUE",
+   "NAVY",
+   "SKY BLUE",
+   "LILY GREEN"
+  ]
  }
 }
