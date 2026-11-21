@@ -1,6 +1,355 @@
 {
- "_about": "Sadie Jane album spec (draft, Nov 21 2026). Empty until the first candidate pass.",
- "set": "sadie-jane",
- "groups": [],
- "mats": []
+ "_note": "Sadie Jane album DRAFT (Nov 21 2026): Claude's by-sight candidates from the catalog pull (Playbook: Claude picks, Tiffany reviews). Facebook TNT recs and store-sweep finds get added when Chrome is up.",
+ "groups": {
+  "pair": "Made for Sadie Jane",
+  "picks": "Claude's candidates",
+  "holiday": "Holiday"
+ },
+ "mats": [
+  {
+   "group": "pair",
+   "name": "Serendipity",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/serendipity-mat-in-tube",
+   "img": "assets/launches/omm-serendipity-mat-in-tube/01.jpg",
+   "why": "Oh My Mahjong's own mat for Sadie Jane: sky blue, blush and chartreuse, sold together in the starter kit.",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Petalwing",
+   "brand": "Virora Mahjong",
+   "fym": "www.viroramahjong.com/petalwing",
+   "why": "pink + denim, birds and florals",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Julia (Blush)",
+   "brand": "Betty June & Jeannette",
+   "fym": "www.etsy.com/listing/4493549424/blush-mahjong-mat-the-julia-mahjong-mat",
+   "why": "cranes + bamboo on blush: same garden as the faces",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Year of the Horse",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/year-of-the-horse-mat",
+   "why": "pink medallion on denim blue",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Vivara",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/vivara-mat-w-tube",
+   "why": "pale blue + pink",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Talulah Panda",
+   "brand": "Let's Be Besties",
+   "fym": "letsbebesties.com/talulah-panda-neoprene-mahjong-mat",
+   "why": "pandas + bamboo on blush",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Watercolor Lilies",
+   "brand": "Let's Be Besties",
+   "fym": "letsbebesties.com/watercolor-lilies-leatherette",
+   "why": "lily pads + lotus on denim",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Plum Lotus",
+   "brand": "Let's Be Besties",
+   "fym": "letsbebesties.com/plum-lotus-mahjong-mat",
+   "why": "lotus",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Moonlit Crane Premium",
+   "brand": "Mahjong Register",
+   "fym": "mahjongregister.com/peony-sociale-premium-mahjong-mat-33-copy",
+   "why": "cranes, denim + white",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Grandmillennial",
+   "brand": "Bam! Let's Mahjong",
+   "fym": "www.bamletsmahjong.com/grandmillennial-mahjong-mat",
+   "why": "pink/green/blue stripes",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Gigi (Canvas Art)",
+   "brand": "Betty June & Jeannette",
+   "fym": "www.etsy.com/listing/4571558388/the-gigi-katelyn-bruhn-and-bjj-collab",
+   "why": "blush + pale blue wash",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Chantilly",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/chantilly-mat",
+   "why": "pale blue + blush frame",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Porcelain Crane Garden",
+   "brand": "Bougie Mahjong",
+   "fym": "bougiemahjong.com/porcelain-crane-garden-mahjong-mat",
+   "why": "cranes, blue chinoiserie",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Elysium",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/elysium-mat-in-tube",
+   "why": "pagoda garden, navy + green",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Let's Be Refined! – Refined Blue/Soft Blue Border",
+   "brand": "Let's Mahj On",
+   "fym": "www.letsmahj-on.com/lets-be-refined-mahjong-mats?v=47969268531305",
+   "why": "denim solid with white line",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Hydrangea",
+   "brand": "Royal Mahjong Society",
+   "fym": "theroyalmahjongsociety.com/hydrangea-mahjong-mat",
+   "why": "denim + hydrangea stripe",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Hamptons Hydrangea",
+   "brand": "Anders Ruff",
+   "fym": "shop.andersruff.com/hamptons-hydrangea-mahjong-mat",
+   "why": "pale blue hydrangea",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "The Pink Classic Neoprene",
+   "brand": "Bam Bird Boutique",
+   "fym": "www.bambirdboutique.com/classic-neoprene-mahjong-mat-copy",
+   "why": "blush solid",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Vegan Leather – Dusty Rose",
+   "brand": "Peace Love Mahjong",
+   "fym": "peacelovemahjong.com/leather-mat-with-mat-tube?v=67801473745188",
+   "why": "dusty rose solid",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Rose Water Dots and Stripes",
+   "brand": "Let's Be Besties",
+   "fym": "letsbebesties.com/rose-water-dots-and-stripes-mahjong-mat",
+   "why": "blush with green + blue line",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Botanical Garden",
+   "brand": "Anders Ruff",
+   "fym": "shop.andersruff.com/botanical-garden-mahjong-mat",
+   "why": "pink botanical",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Butterfly Belle Premium",
+   "brand": "Mahjong Register",
+   "fym": "mahjongregister.com/preorder-pretty-in-plum-premium-mahjong-mat-33-estimated-ship-oct-30th-copy",
+   "why": "denim + pink butterfly",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Darjeeling",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/darjeeling-mat-w-tube",
+   "why": "blue + green chinoiserie",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Pink Lemonade",
+   "brand": "Mahj Mood",
+   "fym": "mahjmood.com/pink-lemonade-mat",
+   "why": "blush plaid",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Porcelain Bloom",
+   "brand": "Mahj & Vine",
+   "fym": "mahjandvine.com/citrus-grove-copy",
+   "why": "pink + blue tile border",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Chinoiserie Citrus Grove",
+   "brand": "Mahj & Vine",
+   "fym": "mahjandvine.com/citrus-grove",
+   "why": "blue chinoiserie + florals",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Blue Willow Chinoiserie",
+   "brand": "Let's Be Besties",
+   "fym": "letsbebesties.com/blue-willow-chinoiserie-mahjong-mat",
+   "why": "blue willow",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Paris Conservatory",
+   "brand": "Bougie Mahjong",
+   "fym": "bougiemahjong.com/paris-conservatory-mahjong-mat",
+   "why": "pink Paris + denim frame",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Umbrella Koi Pond",
+   "brand": "Luna EK Studio",
+   "fym": "www.etsy.com/listing/4547279166/mahjong-mat-non-slip-tabletop-mat-home",
+   "why": "koi pond, muted",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Birdie Pink (retired)",
+   "brand": "Oh My Mahjong",
+   "fym": "alb:amara:Birdie Pink",
+   "why": "retired OMM pink",
+   "retired": true
+  },
+  {
+   "group": "picks",
+   "name": "Peri-twinkle (retired)",
+   "brand": "Oh My Mahjong",
+   "fym": "alb:coquette:Peri-twinkle",
+   "why": "retired OMM periwinkle + pink",
+   "retired": true
+  },
+  {
+   "group": "holiday",
+   "name": "Nutcracker",
+   "brand": "Britt Mills",
+   "fym": "brittmillsdesign.com/nutcracker-neoprene-mahjong-mat-arriving-late-october",
+   "why": "pink nutcrackers around a periwinkle-blue center: both tile colours",
+   "retired": false
+  },
+  {
+   "group": "holiday",
+   "name": "Pink & Blue Christmas Village",
+   "brand": "Amazon",
+   "fym": "www.amazon.com/dp/B0HG139XMD",
+   "why": "pink + blue Christmas village",
+   "retired": false
+  },
+  {
+   "group": "holiday",
+   "name": "Vintage Twinkle Double Sided",
+   "brand": "Waiting On Martha",
+   "fym": "waitingonmarthahome.com/vintage-twinkle-double-sided-mahjong-mat-pre-order",
+   "why": "pink and green trees, blush center",
+   "retired": false
+  },
+  {
+   "group": "holiday",
+   "name": "Ski Club Mat - Periwinkle Center",
+   "brand": "Charleston Mahjong Club",
+   "fym": "www.charlestonmahjongclub.com/the-ski-club-mat-in-toile-w-matching-bag",
+   "why": "periwinkle ski toile",
+   "retired": false
+  },
+  {
+   "group": "holiday",
+   "name": "Peppermint Patty Premium",
+   "brand": "Mahjong Register",
+   "fym": "mahjongregister.com/pre-order-letters-to-santa-premium-mahjong-mat-33-estimated-ship-sep-25th-2026-copy",
+   "why": "pink peppermint",
+   "retired": false
+  },
+  {
+   "group": "holiday",
+   "name": "Christmas Cat",
+   "brand": "YOLO Mahjong",
+   "fym": "www.yolomahjong.com/christmas-cat-square-mahjong-mat-ship-rolled-up",
+   "why": "blush painted Christmas",
+   "retired": false
+  },
+  {
+   "group": "holiday",
+   "name": "Love & Light",
+   "brand": "Peace Love Mahjong",
+   "fym": "peacelovemahjong.com/mahjong-mats-hanukkah?v=67570489524516",
+   "why": "Hanukkah, navy + pale blue",
+   "retired": false
+  },
+  {
+   "group": "holiday",
+   "name": "Blue & White Snowflake",
+   "brand": "Amazon",
+   "fym": "www.amazon.com/dp/B0HB314FBP",
+   "why": "denim blue snowflakes",
+   "retired": false
+  },
+  {
+   "group": "holiday",
+   "name": "Christmas Tree Trellis",
+   "brand": "Piper Chase Studios",
+   "fym": "www.etsy.com/listing/4567716075/christmas-tree-trellis",
+   "why": "pink + green tree trellis",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "The Afternoon Tea",
+   "brand": "Maison Mahj",
+   "fym": "maisonmahj.com/the-afternoon-tea-mat",
+   "why": "blush with denim-blue stripes and line drawings: both tile colours",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "The Gilded Lotus",
+   "brand": "Let's Be Besties",
+   "fym": "letsbebesties.com/lillian-claire-designs-artist-mahjong-mat",
+   "why": "lotus and lily garden, blush blooms on blue",
+   "retired": false
+  },
+  {
+   "group": "picks",
+   "name": "Caroline",
+   "brand": "Let's Be Besties",
+   "fym": "letsbebesties.com/caroline-lillian-claire-designs-artist-mahjong-mat",
+   "why": "blush damask on white, soft like the faces",
+   "retired": false
+  }
+ ]
 }

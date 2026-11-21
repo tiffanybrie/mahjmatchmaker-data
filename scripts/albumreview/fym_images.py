@@ -18,6 +18,12 @@ def _git(spec):
 
 
 def latest_index():
+    # Nov 21 2026: the LIVE build is whatever site-app/live.json names (fym-v122-7 style folders do not sort by number).
+    try:
+        lj = json.loads(_git(f'{BRANCH}:site-app/live.json')); m = re.search(r'@([0-9a-f]{40})/(site-app/[^/]+)/index\.html', lj['index'])
+        h = _git(f'{m.group(1)}:{m.group(2)}/index.html') or _git(f'{BRANCH}:{m.group(2)}/index.html')
+        if h: return m.group(2), h.decode('utf8', 'replace')
+    except Exception: pass
     names = subprocess.run(['git', '-C', R, 'ls-tree', '--name-only', BRANCH, 'site-app/'], capture_output=True, text=True).stdout.split()
     v = max((n for n in names if re.match(r'site-app/fym-v\d+$', n)), key=lambda n: int(n.split('-v')[1]))
     return v, _git(f'{BRANCH}:{v}/index.html').decode('utf8', 'replace')

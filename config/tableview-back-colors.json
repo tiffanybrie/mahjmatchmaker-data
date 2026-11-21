@@ -1685,5 +1685,10 @@
   "type": "pattern",
   "src": "back photo measured (nov07 box inside one back, assets/tiles/v119/charleston-mahjong-club-cabana-club-back.png; checked by eye as back | wall swatch)",
   "patch": "assets/table-view/backs/charleston-mahjong-club-cabana-club-edition.webp"
+ },
+ "sadie-jane": {
+  "back": "#ead2d4",
+  "type": "solid",
+  "src": "blush back measured on the OMM pile shot assets/tiles/album/sadie-jane.jpg (lightest back cluster; Nov 21 2026). The denim + pale blue stripe is the tile's side layers, not the back."
  }
 }
