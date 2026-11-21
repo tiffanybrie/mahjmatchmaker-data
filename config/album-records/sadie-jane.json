@@ -90,5 +90,254 @@
    "SKY BLUE",
    "LILY GREEN"
   ]
+ },
+ "candidates_by_sight": {
+  "at": "2026-11-21T17:35:00-05:00",
+  "by": "Main",
+  "pool": 1574,
+  "shortlist": 159,
+  "note": "First by-sight pass from the catalog pull (6 contact sheets viewed against the pile shot). NOT her picks. Still to add: OMM Serendipity (the mat launching with the set, not in the catalog yet), TNT recs from the FB research, store sweep finds (both need Chrome). Holiday mats left for the holiday section pass.",
+  "list": [
+   {
+    "key": "www.viroramahjong.com/petalwing",
+    "name": "Petalwing",
+    "brand": "Virora Mahjong",
+    "why": "pink + denim, birds and florals",
+    "tonal": 0.243,
+    "comp": 0.664
+   },
+   {
+    "key": "www.etsy.com/listing/4493549424/blush-mahjong-mat-the-julia-mahjong-mat",
+    "name": "Julia (Blush)",
+    "brand": "Betty June & Jeannette",
+    "why": "cranes + bamboo on blush: same garden as the faces",
+    "tonal": 0.436,
+    "comp": 0.0
+   },
+   {
+    "key": "www.ohmymahjong.com/year-of-the-horse-mat",
+    "name": "Year of the Horse",
+    "brand": "Oh My Mahjong",
+    "why": "pink medallion on denim blue",
+    "tonal": 0.271,
+    "comp": 0.613
+   },
+   {
+    "key": "www.ohmymahjong.com/vivara-mat-w-tube",
+    "name": "Vivara",
+    "brand": "Oh My Mahjong",
+    "why": "pale blue + pink",
+    "tonal": 0.153,
+    "comp": 0.667
+   },
+   {
+    "key": "letsbebesties.com/talulah-panda-neoprene-mahjong-mat",
+    "name": "Talulah Panda",
+    "brand": "Let's Be Besties",
+    "why": "pandas + bamboo on blush",
+    "tonal": 0.474,
+    "comp": 0.014
+   },
+   {
+    "key": "letsbebesties.com/watercolor-lilies-leatherette",
+    "name": "Watercolor Lilies",
+    "brand": "Let's Be Besties",
+    "why": "lily pads + lotus on denim",
+    "tonal": 0.017,
+    "comp": 0.769
+   },
+   {
+    "key": "letsbebesties.com/plum-lotus-mahjong-mat",
+    "name": "Plum Lotus",
+    "brand": "Let's Be Besties",
+    "why": "lotus",
+    "tonal": 0.025,
+    "comp": 1.0
+   },
+   {
+    "key": "mahjongregister.com/peony-sociale-premium-mahjong-mat-33-copy",
+    "name": "Moonlit Crane Premium",
+    "brand": "Mahjong Register",
+    "why": "cranes, denim + white",
+    "tonal": 0.002,
+    "comp": 0.838
+   },
+   {
+    "key": "www.bamletsmahjong.com/grandmillennial-mahjong-mat",
+    "name": "Grandmillennial",
+    "brand": "Bam! Let's Mahjong",
+    "why": "pink/green/blue stripes",
+    "tonal": 0.148,
+    "comp": 0.541
+   },
+   {
+    "key": "www.etsy.com/listing/4571558388/the-gigi-katelyn-bruhn-and-bjj-collab",
+    "name": "Gigi (Canvas Art)",
+    "brand": "Betty June & Jeannette",
+    "why": "blush + pale blue wash",
+    "tonal": 0.261,
+    "comp": 0.199
+   },
+   {
+    "key": "www.ohmymahjong.com/chantilly-mat",
+    "name": "Chantilly",
+    "brand": "Oh My Mahjong",
+    "why": "pale blue + blush frame",
+    "tonal": 0.016,
+    "comp": 0.784
+   },
+   {
+    "key": "bougiemahjong.com/porcelain-crane-garden-mahjong-mat",
+    "name": "Porcelain Crane Garden",
+    "brand": "Bougie Mahjong",
+    "why": "cranes, blue chinoiserie",
+    "tonal": 0.005,
+    "comp": 1.0
+   },
+   {
+    "key": "www.ohmymahjong.com/elysium-mat-in-tube",
+    "name": "Elysium",
+    "brand": "Oh My Mahjong",
+    "why": "pagoda garden, navy + green",
+    "tonal": 0.001,
+    "comp": 0.73
+   },
+   {
+    "key": "www.letsmahj-on.com/lets-be-refined-mahjong-mats?v=47969268531305",
+    "name": "Let's Be Refined! – Refined Blue/Soft Blue Border",
+    "brand": "Let's Mahj On",
+    "why": "denim solid with white line",
+    "tonal": 0.0,
+    "comp": 1.0
+   },
+   {
+    "key": "theroyalmahjongsociety.com/hydrangea-mahjong-mat",
+    "name": "Hydrangea",
+    "brand": "Royal Mahjong Society",
+    "why": "denim + hydrangea stripe",
+    "tonal": 0.0,
+    "comp": 1.0
+   },
+   {
+    "key": "shop.andersruff.com/hamptons-hydrangea-mahjong-mat",
+    "name": "Hamptons Hydrangea",
+    "brand": "Anders Ruff",
+    "why": "pale blue hydrangea",
+    "tonal": 0.137,
+    "comp": 0.451
+   },
+   {
+    "key": "www.bambirdboutique.com/classic-neoprene-mahjong-mat-copy",
+    "name": "The Pink Classic Neoprene",
+    "brand": "Bam Bird Boutique",
+    "why": "blush solid",
+    "tonal": 0.859,
+    "comp": 0.0
+   },
+   {
+    "key": "peacelovemahjong.com/leather-mat-with-mat-tube?v=67801473745188",
+    "name": "Vegan Leather – Dusty Rose",
+    "brand": "Peace Love Mahjong",
+    "why": "dusty rose solid",
+    "tonal": 0.947,
+    "comp": 0.0
+   },
+   {
+    "key": "letsbebesties.com/rose-water-dots-and-stripes-mahjong-mat",
+    "name": "Rose Water Dots and Stripes",
+    "brand": "Let's Be Besties",
+    "why": "blush with green + blue line",
+    "tonal": 0.846,
+    "comp": 0.0
+   },
+   {
+    "key": "shop.andersruff.com/botanical-garden-mahjong-mat",
+    "name": "Botanical Garden",
+    "brand": "Anders Ruff",
+    "why": "pink botanical",
+    "tonal": 0.764,
+    "comp": 0.0
+   },
+   {
+    "key": "mahjongregister.com/preorder-pretty-in-plum-premium-mahjong-mat-33-estimated-ship-oct-30th-copy",
+    "name": "Butterfly Belle Premium",
+    "brand": "Mahjong Register",
+    "why": "denim + pink butterfly",
+    "tonal": 0.17,
+    "comp": 0.289
+   },
+   {
+    "key": "www.ohmymahjong.com/darjeeling-mat-w-tube",
+    "name": "Darjeeling",
+    "brand": "Oh My Mahjong",
+    "why": "blue + green chinoiserie",
+    "tonal": 0.031,
+    "comp": 0.907
+   },
+   {
+    "key": "mahjmood.com/pink-lemonade-mat",
+    "name": "Pink Lemonade",
+    "brand": "Mahj Mood",
+    "why": "blush plaid",
+    "tonal": 0.43,
+    "comp": 0.0
+   },
+   {
+    "key": "mahjandvine.com/citrus-grove-copy",
+    "name": "Porcelain Bloom",
+    "brand": "Mahj & Vine",
+    "why": "pink + blue tile border",
+    "tonal": 0.31,
+    "comp": 0.224
+   },
+   {
+    "key": "mahjandvine.com/citrus-grove",
+    "name": "Chinoiserie Citrus Grove",
+    "brand": "Mahj & Vine",
+    "why": "blue chinoiserie + florals",
+    "tonal": 0.33,
+    "comp": 0.338
+   },
+   {
+    "key": "letsbebesties.com/blue-willow-chinoiserie-mahjong-mat",
+    "name": "Blue Willow Chinoiserie",
+    "brand": "Let's Be Besties",
+    "why": "blue willow",
+    "tonal": 0.0,
+    "comp": 0.832
+   },
+   {
+    "key": "bougiemahjong.com/paris-conservatory-mahjong-mat",
+    "name": "Paris Conservatory",
+    "brand": "Bougie Mahjong",
+    "why": "pink Paris + denim frame",
+    "tonal": 0.428,
+    "comp": 0.1
+   },
+   {
+    "key": "www.etsy.com/listing/4547279166/mahjong-mat-non-slip-tabletop-mat-home",
+    "name": "Umbrella Koi Pond",
+    "brand": "Luna EK Studio",
+    "why": "koi pond, muted",
+    "tonal": 0.437,
+    "comp": 0.0
+   },
+   {
+    "key": "alb:amara:Birdie Pink",
+    "name": "Birdie Pink (retired)",
+    "brand": "Oh My Mahjong",
+    "why": "retired OMM pink",
+    "tonal": 0.469,
+    "comp": 0.022
+   },
+   {
+    "key": "alb:coquette:Peri-twinkle",
+    "name": "Peri-twinkle (retired)",
+    "brand": "Oh My Mahjong",
+    "why": "retired OMM periwinkle + pink",
+    "tonal": 0.18,
+    "comp": 0.232
+   }
+  ]
  }
 }
