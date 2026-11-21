@@ -301,6 +301,11 @@ Standing order: RESTOCK FIRST (rule c), then Google #1, then the newest ANSWERS 
 | Albums | ✅ Status check | hq/albums 102 items; 61 live 200 (Cypress 302 = brand out); holiday picks → Claude building. |
 | Social posted today | ❓ Unknown | Nothing via Planoly (by design); Tortoise post + holiday reels sit on HQ Social for Duet. |
 | HQ + Ready to Ship cleanup | ✅ | Morning cleanup closed Juniper + Planoly twins on her words; HQ 9 open needs. |
+| AI Overview signed-out checks (Duet) | ⚠️ Not seen tonight | Last read: Thu 7:20pm run (aioCloud/2026-11-19-pm); Google report Fri counts 37/39; OMM page re-read still the single test (00p). |
+| Verified dates (weekly, Mondays; daily from Nov 17) | ✅ | Superseded by her Nov 20 rule: current month is enough; live codes check PASS. |
+| Coverage + card sharpness | ✅ Ran | Partner coverage 1:47pm (Averill read); card sharpness not run tonight. |
+| FYM + partner feedback | ✅ (morning run) | Morning HQ cleanup 6:57am. |
+| TNT scan (weekly) | ⚠️ Not merged | 81b/81c/81d JSON still to merge into config/tnt-recs.json (Main, target Sun Nov 22); Sadie Jane needs its own TNT search (priority 3). |
 
 ## Never-ending projects
 - **Find Your Mat-ch™ app** (artifact 6epA9HuEdT32zUp79Qv3kd; public **Version 1.18** (artifact Version 117, id 1794137165-e544; both FYM pages page-block @9d331637; Mat Gallery v8 r3 @78072ca0 + search @3afb680e; all live Nov 8 ~11:15am); **1.19 = racks-only (Miss Mahjong)** blocked by the jsDelivr 403; the rest of the staged bundle (Deco Lagoon m-list, link routes [172], catalog adds incl. non-partner whole lines, racks, walls, Cabana) ships as small releases per rule 0b: gate + independent QA before every publish (QA loads the WEBSITE copy as live: 0 broken images, gate [115]); artifact AND website copy AND README 0a pin in the same step; +0.1 version label (docs/FYM-VERSIONS.md); her feedback the same day with a gate check; when a publish/paste fails, MESSAGE HER right away. Artifact file budget: run builder/fym_artifact_fit.py and publish ONCE. Every nav/header change: screenshot live at 1280, 1440 and 390 with the phone menu OPEN. New partner catalog in FYM within 24h of its inbox line (gate [114]). Refresh config/fym-mats-snapshot.json after every publish.
