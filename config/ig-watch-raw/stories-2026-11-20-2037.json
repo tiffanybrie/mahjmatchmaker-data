@@ -1,0 +1,19 @@
+{
+ "run": "2026-11-20 20:37 ET slot (started ~20:40 ET)",
+ "source": "Instagram stories via Claude in Chrome (@mahjmatchmaker)",
+ "handles_checked": ["ohmymahjong","bambirdboutique","missmahjongofficial","myfairmahjong","bespoke_mahjong","andersruffdesignco","peacelovemahjong","bird_and_bamboo","mahj_mood","minimahjer","charlestonmahjongclub","mahj_squad","fait.a.main","nolijunemahjong","macmillermahjong"],
+ "extra_dated_partners": "Mahj Squad (11/22), Fait a Main (11/21), Noli June (sale 11/21), Mac + Miller (VIP 11/23) from curated; rest tier A.",
+ "with_stories": {"ohmymahjong": 9, "bambirdboutique": 12, "myfairmahjong": 10, "bespoke_mahjong": 9, "andersruffdesignco": 12, "peacelovemahjong": 1, "bird_and_bamboo": 1, "mahj_mood": 1, "minimahjer": 1, "mahj_squad": 2, "fait.a.main": 3, "macmillermahjong": 4},
+ "no_story": ["missmahjongofficial", "charlestonmahjongclub", "nolijunemahjong"],
+ "frames_read": 64,
+ "frames_note": "OMM, Bam Bird, My Fair and Bespoke read from frame 1; Anders Ruff, Bird & Bamboo, Mahj Mood, Mini Mahjer, Fait a Main, Mac + Miller from the first frame not read by the 12:37 run (Instagram opens at the first unseen frame). My Fair's last frame (shared reel) never loaded.",
+ "finds": [],
+ "already_logged": [
+  "Peace Love Mahjong story (6h): 'SOC TILES ARE BACK!!!' + shop link = Spirit of Christmas Mahjong Tiles Set + Pouch + Dice ($300, in stock on store). Already on the Brand news sheet (Fri 6:35 PM row, from the 6:25pm partner watch). NOT yet in brand-watch-curated.json: the 6:25pm run could not clone the repo; its pending curated writes (PLM SOC restock, Mahj Mood BF week, My Fair BF) are for the next attended chat (project doc 81g2).",
+  "Mahj Mood story (5h): Black Friday = specific items on sale each day Mon-Wed 11/23-25, announced Sunday; full-size tiles not on sale. Matches the affiliate-email sheet row (Fri 6:30 PM).",
+  "Bam Bird BF 15% off sitewide Nov 20-22 + Tortoise restock (in curated). New frames: extended Dallas store hours Sat 11/21 10-4, Sun 11/22 12-4 (store news, not a drop).",
+  "OMM Sadie Jane + Serendipity launch Wed 11/25 10am CT (in curated; story says 'Launching November 25th at 10 AM CST'). 5% of Sadie Jane sales to the Women's Alzheimer's Movement (noted at 12:37)."
+ ],
+ "skipped": "OMM gift-guide press reshare, Talulah tiles customer repost; Bam Bird Ask-Me-Anything pairings, replacement-tile link, Cancun repost, travel mats in stock (no change); My Fair NY event recap + store hours; Bespoke customer reposts (Gingerbread House 'second peek' and a blue-dots 'Peek #3', both tampamahjongclub reposts, no name/date), Tampa club repost, giveaway; Anders Ruff merrygomahjong unboxing (another seller's MERRYGO code), Evergreen & Tartan mat giveaway, Dear Santa reel at Theory Collective (known); Bird & Bamboo + Mahj Squad meetup photos; Mini Mahjer press repost; Fait a Main Le Carnet customer reposts; Mac + Miller Blue Leaf Houston stockist reel, Dream Sling repost, Tuscaloosa store reel.",
+ "notes": "No push (BRAND-WATCH-RULES 00000: no NOW pushes). Old checkout fetch hangs (leftover 10GB tmp packs deleted); used a blob-less sparse clone."
+}
