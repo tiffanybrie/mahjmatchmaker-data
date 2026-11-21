@@ -1,6 +1,6 @@
 {
  "_about": "Partner store mat sweep (Tiffany Oct 27 2:21am: \"This is going to get very old, me chasing down mats\"). Written by builder/partner_mat_sweep.py; read by builder/fym_gate.py [100].",
- "swept_at": "2026-11-19T14:08:59+00:00",
+ "swept_at": "2026-11-21T23:38:26+00:00",
  "fym_ref": "origin/fym-site-preview:site-app/fym-v123",
  "stores": {
   "ohmymahjong.com": {
@@ -208,8 +208,13 @@
   "shop.andersruff.com": {
    "brand": "Anders Ruff",
    "status": "ok",
-   "products": 163,
+   "products": 165,
    "mats": [
+    [
+     "2026-11-19T15:55:37-05:00",
+     "Mahj Ever After Mahjong Mat | Anders Ruff x Trista Sutter, The Original Bachelorette",
+     "mahj-ever-after-mahjong-mat"
+    ],
     [
      "2026-10-27T23:11:59-04:00",
      "Paws in the Garden Mahjong Mat",
@@ -506,7 +511,13 @@
      "bams-bubbly-mahjong-mat"
     ]
    ],
-   "missing": []
+   "missing": [
+    [
+     "2026-11-19T15:55:37-05:00",
+     "Mahj Ever After Mahjong Mat | Anders Ruff x Trista Sutter, The Original Bachelorette",
+     "mahj-ever-after-mahjong-mat"
+    ]
+   ]
   },
   "bambirdboutique.com": {
    "brand": "Bam Bird Boutique",
@@ -599,7 +610,7 @@
   "bamletsmahjong.com": {
    "brand": "Bam! Let's Mahjong",
    "status": "ok",
-   "products": 68,
+   "products": 67,
    "mats": [
     [
      "2026-09-24T14:57:54-05:00",
@@ -677,7 +688,7 @@
   "bespokemahjong.com": {
    "brand": "Bespoke Mahjong",
    "status": "ok",
-   "products": 319,
+   "products": 320,
    "mats": [
     [
      "2026-10-22T12:17:12-05:00",
@@ -998,7 +1009,7 @@
   "brittmillsdesign.com": {
    "brand": "Britt Mills",
    "status": "ok",
-   "products": 751,
+   "products": 761,
    "mats": [
     [
      "2026-11-16T14:57:08-05:00",
@@ -1397,7 +1408,7 @@
   "charlestonmahjongclub.com": {
    "brand": "Charleston Mahjong Club",
    "status": "ok",
-   "products": 75,
+   "products": 74,
    "mats": [
     [
      "2026-08-28T08:23:55-04:00",
@@ -1445,11 +1456,6 @@
      "neoprene-club-mat-w-matching-bag-2-color-options"
     ],
     [
-     "2025-09-24T14:51:56-04:00",
-     "Ski Club Mat - Periwinkle Center",
-     "the-ski-club-mat-in-toile-w-matching-bag"
-    ],
-    [
      "2024-11-27T16:03:27-05:00",
      "Reversible Vegan Leather Game Mat",
      "vegan-leather-reversible-game-mat"
@@ -1460,7 +1466,7 @@
   "hiphipmahjong.com": {
    "brand": "Hip Hip Mahjong",
    "status": "ok",
-   "products": 72,
+   "products": 70,
    "mats": [
     [
      "2026-09-06T09:58:58-05:00",
@@ -1682,8 +1688,13 @@
   "mahjmood.com": {
    "brand": "Mahj Mood",
    "status": "ok",
-   "products": 51,
+   "products": 52,
    "mats": [
+    [
+     "2026-11-20T09:57:19-06:00",
+     "Lake Day Mahjong Mat | Pre-Order, Ships January",
+     "lake-day-mahjong-mat-pre-order-ships-january"
+    ],
     [
      "2026-11-05T15:11:45-06:00",
      "Playing For Keeps Mat | Pre-Order, Ships January",
@@ -1750,12 +1761,18 @@
      "90s-girl-mat"
     ]
    ],
-   "missing": []
+   "missing": [
+    [
+     "2026-11-20T09:57:19-06:00",
+     "Lake Day Mahjong Mat | Pre-Order, Ships January",
+     "lake-day-mahjong-mat-pre-order-ships-january"
+    ]
+   ]
   },
   "mahjsquadshop.com": {
    "brand": "Mahj Squad",
    "status": "ok",
-   "products": 60,
+   "products": 61,
    "mats": [
     [
      "2026-10-03T09:03:08-04:00",
@@ -2040,7 +2057,7 @@
   "myfairmahjong.com": {
    "brand": "My Fair Mahjong",
    "status": "ok",
-   "products": 109,
+   "products": 111,
    "mats": [
     [
      "2026-11-18T16:01:47-06:00",
@@ -2179,7 +2196,7 @@
   "tigredetartan.com": {
    "brand": "Tigre de Tartan",
    "status": "ok",
-   "products": 127,
+   "products": 131,
    "mats": [
     [
      "2026-10-22T15:40:28-05:00",
@@ -2195,11 +2212,6 @@
      "2026-10-22T13:23:53-05:00",
      "Mahjong Mat, DOMINO BLONDE [W/ RULES]",
      "mahjong-mat-domino-blonde-rules-edition"
-    ],
-    [
-     "2026-10-19T13:42:04-05:00",
-     "Mahjong Mat, Fair Isle, CASHMERE",
-     "mahjong-mat-fair-isle-cashmere"
     ],
     [
      "2026-10-19T13:29:24-05:00",
@@ -2702,7 +2714,7 @@
   "theroyalmahjongsociety.com": {
    "brand": "The Royal Mahjong Society",
    "status": "ok",
-   "products": 50,
+   "products": 57,
    "mats": [
     [
      "2026-09-21T16:30:46-04:00",
@@ -2754,7 +2766,7 @@
   "letsbebesties.com": {
    "brand": "Let's Be Besties",
    "status": "ok",
-   "products": 769,
+   "products": 770,
    "mats": [
     [
      "2026-11-17T15:12:30-05:00",
@@ -6074,7 +6086,7 @@
   "faitamainstudio.com": {
    "brand": "Fait à Main",
    "status": "ok",
-   "products": 44,
+   "products": 49,
    "mats": [
     [
      "2026-11-07T14:02:16-06:00",

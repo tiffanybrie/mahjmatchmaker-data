@@ -1,0 +1,1089 @@
+{
+ "set": "Sadie Jane",
+ "status": "DRAFT: Claude's own picks, pending Tiffany's review",
+ "groups": {
+  "pair": "Made for Sadie Jane",
+  "picks": "Claude's candidates",
+  "holiday": "Holiday"
+ },
+ "cards": [
+  {
+   "order": 1,
+   "group": "pair",
+   "mat": "Serendipity",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-oh-my-mahjong-serendipity-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/serendipity.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Blue",
+    "Bird & Bamboo Avocado"
+   ],
+   "why": "Oh My Mahjong's own mat for Sadie Jane: sky blue, blush and chartreuse, sold together in the starter kit.",
+   "fym": "www.ohmymahjong.com/serendipity-mat-in-tube",
+   "lowres": false,
+   "caption_note": "Sister mat",
+   "rack_notes": []
+  },
+  {
+   "order": 2,
+   "group": "picks",
+   "mat": "Petalwing",
+   "brand": "Virora Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-virora-mahjong-petalwing-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/virora-mahjong-petalwing.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Cornflower Blue",
+    "Bird & Bamboo Powder Blue"
+   ],
+   "why": "pink + denim, birds and florals",
+   "fym": "www.viroramahjong.com/petalwing",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 3,
+   "group": "picks",
+   "mat": "Julia (Blush)",
+   "brand": "Betty June & Jeannette",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "sadie-jane-mahjong-tiles-betty-june-and-jeannette-julia-blush-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/betty-june-and-jeannette-julia-blush.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Peachy",
+    "Bird & Bamboo Seafoam"
+   ],
+   "why": "cranes + bamboo on blush: same garden as the faces",
+   "fym": "www.etsy.com/listing/4493549424/blush-mahjong-mat-the-julia-mahjong-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 4,
+   "group": "picks",
+   "mat": "Year of the Horse",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-oh-my-mahjong-year-of-the-horse-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-year-of-the-horse.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Ocean Slate",
+    "Bird & Bamboo Peony"
+   ],
+   "why": "pink medallion on denim blue",
+   "fym": "www.ohmymahjong.com/year-of-the-horse-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 5,
+   "group": "picks",
+   "mat": "Vivara",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-oh-my-mahjong-vivara-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-vivara.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Ocean Slate",
+    "Bird & Bamboo Petal Purple"
+   ],
+   "why": "pale blue + pink",
+   "fym": "www.ohmymahjong.com/vivara-mat-w-tube",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 6,
+   "group": "picks",
+   "mat": "Talulah Panda",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-lets-be-besties-talulah-panda-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/let-s-be-besties-talulah-panda.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Bird & Bamboo Mermaid"
+   ],
+   "why": "pandas + bamboo on blush",
+   "fym": "letsbebesties.com/talulah-panda-neoprene-mahjong-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 7,
+   "group": "picks",
+   "mat": "Watercolor Lilies",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-lets-be-besties-watercolor-lilies-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/let-s-be-besties-watercolor-lilies.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Lavender"
+   ],
+   "why": "lily pads + lotus on denim",
+   "fym": "letsbebesties.com/watercolor-lilies-leatherette",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 8,
+   "group": "picks",
+   "mat": "Plum Lotus",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-lets-be-besties-plum-lotus-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/let-s-be-besties-plum-lotus.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Turquoise Blue"
+   ],
+   "why": "lotus",
+   "fym": "letsbebesties.com/plum-lotus-mahjong-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 9,
+   "group": "picks",
+   "mat": "Moonlit Crane Premium",
+   "brand": "Mahjong Register",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-mahjong-register-moonlit-crane-premium-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/mahjong-register-moonlit-crane-premium.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Cornflower Blue",
+    "Bird & Bamboo Dark Navy"
+   ],
+   "why": "cranes, denim + white",
+   "fym": "mahjongregister.com/peony-sociale-premium-mahjong-mat-33-copy",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 10,
+   "group": "picks",
+   "mat": "Grandmillennial",
+   "brand": "Bam! Let's Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-bam-lets-mahjong-grandmillennial-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/bam-let-s-mahjong-grandmillennial.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "why": "pink/green/blue stripes",
+   "fym": "www.bamletsmahjong.com/grandmillennial-mahjong-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 11,
+   "group": "picks",
+   "mat": "Gigi (Canvas Art)",
+   "brand": "Betty June & Jeannette",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "sadie-jane-mahjong-tiles-betty-june-and-jeannette-gigi-canvas-art-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/betty-june-and-jeannette-gigi-canvas-art.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Lavender",
+    "Bird & Bamboo Coral"
+   ],
+   "why": "blush + pale blue wash",
+   "fym": "www.etsy.com/listing/4571558388/the-gigi-katelyn-bruhn-and-bjj-collab",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 12,
+   "group": "picks",
+   "mat": "Chantilly",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-oh-my-mahjong-chantilly-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-chantilly.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Cornflower Blue",
+    "Bird & Bamboo Lavender"
+   ],
+   "why": "pale blue + blush frame",
+   "fym": "www.ohmymahjong.com/chantilly-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 13,
+   "group": "picks",
+   "mat": "Porcelain Crane Garden",
+   "brand": "Bougie Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "sadie-jane-mahjong-tiles-bougie-mahjong-porcelain-crane-garden-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/bougie-mahjong-porcelain-crane-garden.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Ocean Slate"
+   ],
+   "why": "cranes, blue chinoiserie",
+   "fym": "bougiemahjong.com/porcelain-crane-garden-mahjong-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 14,
+   "group": "picks",
+   "mat": "Elysium",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-oh-my-mahjong-elysium-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-elysium.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Harbor Blue",
+    "Bird & Bamboo Pistachio"
+   ],
+   "why": "pagoda garden, navy + green",
+   "fym": "www.ohmymahjong.com/elysium-mat-in-tube",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 15,
+   "group": "picks",
+   "mat": "Let's Be Refined! – Refined Blue/Soft Blue Border",
+   "brand": "Let's Mahj On",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-lets-mahj-on-lets-be-refined-refined-blue-soft-blue-border-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/let-s-mahj-on-let-s-be-refined-refined-blue-soft-blue-border.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Bird & Bamboo Ocean Slate"
+   ],
+   "why": "denim solid with white line",
+   "fym": "www.letsmahj-on.com/lets-be-refined-mahjong-mats?v=47969268531305",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 16,
+   "group": "picks",
+   "mat": "Hydrangea",
+   "brand": "Royal Mahjong Society",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-royal-mahjong-society-hydrangea-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/royal-mahjong-society-hydrangea.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Ocean Slate",
+    "Bird & Bamboo Lavender"
+   ],
+   "why": "denim + hydrangea stripe",
+   "fym": "theroyalmahjongsociety.com/hydrangea-mahjong-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 17,
+   "group": "picks",
+   "mat": "Hamptons Hydrangea",
+   "brand": "Anders Ruff",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-anders-ruff-hamptons-hydrangea-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/anders-ruff-hamptons-hydrangea.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Cornflower Blue",
+    "Bird & Bamboo Cream"
+   ],
+   "why": "pale blue hydrangea",
+   "fym": "shop.andersruff.com/hamptons-hydrangea-mahjong-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 18,
+   "group": "picks",
+   "mat": "The Pink Classic Neoprene",
+   "brand": "Bam Bird Boutique",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-bam-bird-boutique-the-pink-classic-neoprene-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/bam-bird-boutique-the-pink-classic-neoprene.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Bird & Bamboo Peachy"
+   ],
+   "why": "blush solid",
+   "fym": "www.bambirdboutique.com/classic-neoprene-mahjong-mat-copy",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 19,
+   "group": "picks",
+   "mat": "Vegan Leather – Dusty Rose",
+   "brand": "Peace Love Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-peace-love-mahjong-vegan-leather-dusty-rose-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/peace-love-mahjong-vegan-leather-dusty-rose.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Bird & Bamboo Mauve"
+   ],
+   "why": "dusty rose solid",
+   "fym": "peacelovemahjong.com/leather-mat-with-mat-tube?v=67801473745188",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 20,
+   "group": "picks",
+   "mat": "Rose Water Dots and Stripes",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-lets-be-besties-rose-water-dots-and-stripes-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/let-s-be-besties-rose-water-dots-and-stripes.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Bird & Bamboo Peachy"
+   ],
+   "why": "blush with green + blue line",
+   "fym": "letsbebesties.com/rose-water-dots-and-stripes-mahjong-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 21,
+   "group": "picks",
+   "mat": "Botanical Garden",
+   "brand": "Anders Ruff",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-anders-ruff-botanical-garden-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/anders-ruff-botanical-garden.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Petal Purple"
+   ],
+   "why": "pink botanical",
+   "fym": "shop.andersruff.com/botanical-garden-mahjong-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 22,
+   "group": "picks",
+   "mat": "Butterfly Belle Premium",
+   "brand": "Mahjong Register",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-mahjong-register-butterfly-belle-premium-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/mahjong-register-butterfly-belle-premium.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Ocean Slate",
+    "Bird & Bamboo Coral"
+   ],
+   "why": "denim + pink butterfly",
+   "fym": "mahjongregister.com/preorder-pretty-in-plum-premium-mahjong-mat-33-estimated-ship-oct-30th-copy",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 23,
+   "group": "picks",
+   "mat": "Darjeeling",
+   "brand": "Oh My Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-oh-my-mahjong-darjeeling-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-darjeeling.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Cornflower Blue",
+    "Bird & Bamboo Lilac"
+   ],
+   "why": "blue + green chinoiserie",
+   "fym": "www.ohmymahjong.com/darjeeling-mat-w-tube",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 24,
+   "group": "picks",
+   "mat": "Pink Lemonade",
+   "brand": "Mahj Mood",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-mahj-mood-pink-lemonade-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/mahj-mood-pink-lemonade-full.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Bird & Bamboo Peachy"
+   ],
+   "why": "blush plaid",
+   "fym": "mahjmood.com/pink-lemonade-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 25,
+   "group": "picks",
+   "mat": "Chinoiserie Citrus Grove",
+   "brand": "Mahj & Vine",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-mahj-and-vine-chinoiserie-citrus-grove-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/mahj-and-vine-chinoiserie-citrus-grove.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Powder Blue",
+    "Bird & Bamboo Cornflower Blue"
+   ],
+   "why": "blue chinoiserie + florals",
+   "fym": "mahjandvine.com/citrus-grove",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 26,
+   "group": "picks",
+   "mat": "Blue Willow Chinoiserie",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-lets-be-besties-blue-willow-chinoiserie-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/let-s-be-besties-blue-willow-chinoiserie.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Cornflower Blue"
+   ],
+   "why": "blue willow",
+   "fym": "letsbebesties.com/blue-willow-chinoiserie-mahjong-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 27,
+   "group": "picks",
+   "mat": "Paris Conservatory",
+   "brand": "Bougie Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "sadie-jane-mahjong-tiles-bougie-mahjong-paris-conservatory-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/bougie-mahjong-paris-conservatory.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Coral"
+   ],
+   "why": "pink Paris + denim frame",
+   "fym": "bougiemahjong.com/paris-conservatory-mahjong-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 28,
+   "group": "picks",
+   "mat": "Birdie Pink (retired)",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "partner": false,
+   "file": "sadie-jane-mahjong-tiles-oh-my-mahjong-birdie-pink-retired-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-birdie-pink-retired.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Petal Purple"
+   ],
+   "why": "retired OMM pink",
+   "fym": "alb:amara:Birdie Pink",
+   "lowres": true,
+   "caption_note": "Retired",
+   "rack_notes": []
+  },
+  {
+   "order": 29,
+   "group": "picks",
+   "mat": "Peri-twinkle (retired)",
+   "brand": "Oh My Mahjong",
+   "retired_mat": true,
+   "holiday": false,
+   "partner": false,
+   "file": "sadie-jane-mahjong-tiles-oh-my-mahjong-peri-twinkle-retired-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-peri-twinkle-retired.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Blue",
+    "Bird & Bamboo Lilac"
+   ],
+   "why": "retired OMM periwinkle + pink",
+   "fym": "alb:coquette:Peri-twinkle",
+   "lowres": true,
+   "caption_note": "Retired",
+   "rack_notes": []
+  },
+  {
+   "order": 30,
+   "group": "holiday",
+   "mat": "Nutcracker",
+   "brand": "Britt Mills",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-britt-mills-nutcracker-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/britt-mills-nutcracker.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Lavender",
+    "Bird & Bamboo Cornflower Blue"
+   ],
+   "why": "pink nutcrackers around a periwinkle-blue center: both tile colours",
+   "fym": "brittmillsdesign.com/nutcracker-neoprene-mahjong-mat-arriving-late-october",
+   "lowres": true,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 31,
+   "group": "holiday",
+   "mat": "Pink & Blue Christmas Village",
+   "brand": "Amazon",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": false,
+   "file": "sadie-jane-mahjong-tiles-amazon-pink-and-blue-christmas-village-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/amazon-pink-and-blue-christmas-village.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Pink Coral",
+    "Bird & Bamboo Periwinkle Blue"
+   ],
+   "why": "pink + blue Christmas village",
+   "fym": "www.amazon.com/dp/B0HG139XMD",
+   "lowres": true,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 32,
+   "group": "holiday",
+   "mat": "Vintage Twinkle Double Sided",
+   "brand": "Waiting On Martha",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": false,
+   "file": "sadie-jane-mahjong-tiles-waiting-on-martha-vintage-twinkle-double-sided-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/waiting-on-martha-vintage-twinkle-double-sided.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Bird & Bamboo Kelly Green"
+   ],
+   "why": "pink and green trees, blush center",
+   "fym": "waitingonmarthahome.com/vintage-twinkle-double-sided-mahjong-mat-pre-order",
+   "lowres": true,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 33,
+   "group": "picks",
+   "mat": "Sunday Sherbert Double-Sided Mahjong Mat – Leatherette 31.5\"",
+   "brand": "Mahjong Register",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-mahjong-register-sunday-sherbert-double-sided-mahjong-mat-leatherette-31-5-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/albums/catalog-new/mahjong-register--sunday-sherbert-double-sided-mahjong-mat-leatherette-31-5.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Bird & Bamboo Light Blue"
+   ],
+   "why": "blush center with a denim-and-coral reverse: both tile colours, double-sided",
+   "fym": null,
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 34,
+   "group": "picks",
+   "mat": "Hydrangea Haven Mahjong Mat",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-lets-be-besties-hydrangea-haven-mahjong-mat-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/catalog-new/lets-be-besties--hydrangea-haven-mahjong-mat.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Petal Purple",
+    "Bird & Bamboo Cornflower Blue"
+   ],
+   "why": "pale blue and pink hydrangeas, soft like the faces",
+   "fym": null,
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 35,
+   "group": "holiday",
+   "mat": "Ski Club Mat - Periwinkle Center",
+   "brand": "Charleston Mahjong Club",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-charleston-mahjong-club-ski-club-mat-periwinkle-center-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/charleston-mahjong-club-ski-club-mat-periwinkle-center.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Cornflower Blue",
+    "Bird & Bamboo Powder Blue"
+   ],
+   "why": "periwinkle ski toile",
+   "fym": "www.charlestonmahjongclub.com/the-ski-club-mat-in-toile-w-matching-bag",
+   "lowres": true,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 36,
+   "group": "holiday",
+   "mat": "Peppermint Patty Premium",
+   "brand": "Mahjong Register",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-mahjong-register-peppermint-patty-premium-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/mahjong-register-peppermint-patty-premium.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Ballet Pink",
+    "Bird & Bamboo Brick Red"
+   ],
+   "why": "pink peppermint",
+   "fym": "mahjongregister.com/pre-order-letters-to-santa-premium-mahjong-mat-33-estimated-ship-sep-25th-2026-copy",
+   "lowres": true,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 37,
+   "group": "holiday",
+   "mat": "Christmas Cat",
+   "brand": "YOLO Mahjong",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-yolo-mahjong-christmas-cat-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/yolo-mahjong-christmas-cat.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Peachy",
+    "Bird & Bamboo Orange"
+   ],
+   "why": "blush painted Christmas",
+   "fym": "www.yolomahjong.com/christmas-cat-square-mahjong-mat-ship-rolled-up",
+   "lowres": true,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 38,
+   "group": "holiday",
+   "mat": "Love & Light",
+   "brand": "Peace Love Mahjong",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-peace-love-mahjong-love-and-light-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/peace-love-mahjong-love-and-light.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Ocean Slate"
+   ],
+   "why": "Hanukkah, navy + pale blue",
+   "fym": "peacelovemahjong.com/mahjong-mats-hanukkah?v=67570489524516",
+   "lowres": true,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 39,
+   "group": "holiday",
+   "mat": "Blue & White Snowflake",
+   "brand": "Amazon",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": false,
+   "file": "sadie-jane-mahjong-tiles-amazon-blue-and-white-snowflake-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/amazon-blue-and-white-snowflake.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Harbor Blue",
+    "Bird & Bamboo Ocean Slate"
+   ],
+   "why": "denim blue snowflakes",
+   "fym": "www.amazon.com/dp/B0HB314FBP",
+   "lowres": true,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 40,
+   "group": "holiday",
+   "mat": "Christmas Tree Trellis",
+   "brand": "Piper Chase Studios",
+   "retired_mat": false,
+   "holiday": true,
+   "partner": false,
+   "file": "sadie-jane-mahjong-tiles-piper-chase-studios-christmas-tree-trellis-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/piper-chase-studios-christmas-tree-trellis.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Magenta",
+    "Bird & Bamboo Seafoam"
+   ],
+   "why": "pink + green tree trellis",
+   "fym": "www.etsy.com/listing/4567716075/christmas-tree-trellis",
+   "lowres": true,
+   "caption_note": "Holiday match",
+   "rack_notes": []
+  },
+  {
+   "order": 41,
+   "group": "picks",
+   "mat": "The Afternoon Tea",
+   "brand": "Maison Mahj",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "sadie-jane-mahjong-tiles-maison-mahj-the-afternoon-tea-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/maison-mahj-the-afternoon-tea-full.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Bird & Bamboo Cornflower Blue"
+   ],
+   "why": "blush with denim-blue stripes and line drawings: both tile colours",
+   "fym": "maisonmahj.com/the-afternoon-tea-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 42,
+   "group": "picks",
+   "mat": "The Gilded Lotus",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-lets-be-besties-the-gilded-lotus-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/let-s-be-besties-the-gilded-lotus.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Bird & Bamboo Evergreen"
+   ],
+   "why": "lotus and lily garden, blush blooms on blue",
+   "fym": "letsbebesties.com/lillian-claire-designs-artist-mahjong-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 43,
+   "group": "picks",
+   "mat": "Caroline",
+   "brand": "Let's Be Besties",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-lets-be-besties-caroline-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/sadie-jane/mats/let-s-be-besties-caroline.jpg",
+   "racks": [
+    "Bird & Bamboo Shell Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Peony",
+    "Bird & Bamboo Coral"
+   ],
+   "why": "blush damask on white, soft like the faces",
+   "fym": "letsbebesties.com/caroline-lillian-claire-designs-artist-mahjong-mat",
+   "lowres": true,
+   "caption_note": null,
+   "rack_notes": []
+  }
+ ],
+ "title_color": "#37709a",
+ "tile": "assets/tiles/album/sadie-jane.jpg",
+ "racks_note": "tile racks = Bird & Bamboo Shell Pink + French Blue (draft); mat racks = matpick nearest Bird & Bamboo colours"
+}

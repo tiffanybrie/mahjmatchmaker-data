@@ -91,6 +91,10 @@ def check(s):
     if not img or not os.path.exists(R + img): bad.append(f'[2] colour card image missing ({img})')
     proof['colorcard'] = {'img': img, 'wheel': rec.get('wheel_img'), 'backs': (cc or {}).get('backs'), 'faces': (cc or {}).get('faces')}
     # [3] TNT + [3b] other groups
+    # Nov 21 2026 (Tiffany 6:35pm, Sadie Jane): she may tell Claude to build the album WITHOUT the Facebook research and add it
+    # after (record research_deferred {by: 'Tiffany', at, words}). Then [3] [3b] [3c] [4a] do not block; they stay owed (OVERDUE).
+    _defer = isinstance(rec.get('research_deferred'), dict) and rec['research_deferred'].get('by') == 'Tiffany' and rec['research_deferred'].get('words')
+    _n3 = len(bad)
     t = (J('config/tnt-recs.json', {}).get('sets') or {}).get(s)
     if not (isinstance(t, dict) and t.get('scanned') and t.get('source')): bad.append(f'[3] no Tiles & Tablescapes search on record (config/tnt-recs.json sets.{s})')
     elif not _tnt_complete(t): bad.append(f'[3] Tiles & Tablescapes search not proven exhaustive ({_tnt_why(t)}): config/tnt-recs.json sets.{s} needs posts_read > 0, terms[], scrolled_to_end: true (Tiffany Nov 8 6:20pm)')
@@ -102,6 +106,7 @@ def check(s):
     # [3c] mat discovery (Playbook step 3b, Tiffany Nov 8 1:59pm): a light targeted web search on record (finds may be empty)
     dsc = rec.get('discovery') or {}
     if not dsc.get('at') or not dsc.get('searches'): bad.append(f'[3c] no mat discovery on record (record discovery {{at, searches, new_finds, misses_added}})')
+    if _defer: proof['research_deferred'] = {'record': rec['research_deferred'], 'owed': bad[_n3:]}; del bad[_n3:]
     # variety (warning only): the top 6 should not all be mats already in the top 6 of 5+ other albums
     proof['variety_warning'] = variety(s, rec)
     # [4] pool

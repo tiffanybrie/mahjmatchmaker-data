@@ -43,9 +43,23 @@ def why_incomplete(v):
     return ', '.join(out)
 
 
+def _deferred():
+    """Nov 21 2026 (Tiffany 6:35pm): sets she told Claude to build without the Facebook research first (added after, as an add-on).
+    config/album-records/<set>.json research_deferred {by: 'Tiffany', at, words}. Still owed: docs/OVERDUE.md."""
+    out = {}
+    import glob
+    for f in glob.glob(R + 'config/album-records/*.json'):
+        try: r = json.load(open(f))
+        except Exception: continue
+        rd = r.get('research_deferred')
+        if isinstance(rd, dict) and rd.get('by') == 'Tiffany' and rd.get('words'): out[r.get('set')] = {'deferred': rd}
+    return out
+
+
 def tnt_sets():
     d = json.load(open(R + 'config/tnt-recs.json'))
-    return {k: v for k, v in d.get('sets', {}).items() if complete(v)}
+    out = _deferred(); out.update({k: v for k, v in d.get('sets', {}).items() if complete(v)})
+    return out
 
 
 def missing():
