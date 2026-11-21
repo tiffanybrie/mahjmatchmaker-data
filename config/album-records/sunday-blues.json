@@ -15,5 +15,144 @@
   "Rebuild on the Album Playbook (Nov 8). Her Oct 29 swipe yeses (56 cards, assets/cards/sunday-blues) are kept as yeses (A YES IS A YES); the 31 post-swipe mats become New finds.",
   "Tile-side racks: one pair on every card. Mat-side racks: rotate, max 6 cards per rack.",
   "Held for Sunday's ~Thanksgiving restock (config/release-calendar.json sunday-blues-rerelease); launch kit built before go-live (CLAUDE.md ALBUM LAUNCH = ANNOUNCED)."
- ]
+ ],
+ "spec": "scripts/albumcard/specs/sunday-blues_nov21.json",
+ "leftout": {
+  "file": "scripts/albumcard/specs/sunday-blues_leftout.json",
+  "key": "sunday-blues"
+ },
+ "cards_dir": "assets/cards/sunday-blues",
+ "new_finds_by_sight": {
+  "at": "2026-11-21T18:20:00-05:00",
+  "by": "Main",
+  "pool": 1574,
+  "shortlist": 155,
+  "not_in_album": 135,
+  "sheets_viewed": "3 of 5 (ranks 0-89); sheets 3-4 (ranks 90-134) still to view",
+  "note": "Candidates for the New finds group next to her 56 swipe yeses. Not her picks.",
+  "list": [
+   {
+    "key": "sundaymahjong.com/rattan-premium-mahjong-mat-blue",
+    "name": "Blue Rattan Premium",
+    "brand": "Sunday Mahjong",
+    "why": "Sunday's own mat: navy + orange rattan"
+   },
+   {
+    "key": "sundaymahjong.com/blue-gingham-premium-mahjong-mat",
+    "name": "Blue Gingham Premium",
+    "brand": "Sunday Mahjong",
+    "why": "Sunday's own: navy gingham, ivory frame"
+   },
+   {
+    "key": "sundaymahjong.com/vegan-leather-premium-mahjong-mat",
+    "name": "Vegan Leather (Chestnut)",
+    "brand": "Sunday Mahjong",
+    "why": "Sunday's own chestnut leather"
+   },
+   {
+    "key": "bougiemahjong.com/navy-club-mahjong-mat",
+    "name": "Navy Club",
+    "brand": "Bougie Mahjong",
+    "why": "solid navy, gold line: the backs"
+   },
+   {
+    "key": "bougiemahjong.com/indigo-reef-mahjong-mat",
+    "name": "Indigo Reef",
+    "brand": "Bougie Mahjong",
+    "why": "navy + ivory + gold, sea turtles"
+   },
+   {
+    "key": "bougiemahjong.com/imperial-koi-pond-mahjong-mat",
+    "name": "Imperial Koi Pond",
+    "brand": "Bougie Mahjong",
+    "why": "navy with gold frame, koi"
+   },
+   {
+    "key": "letsbebesties.com/butterscotch-floral-simple-middle-mahjong-mat",
+    "name": "Butterscotch Floral Simple Middle",
+    "brand": "Let's Be Besties",
+    "why": "navy with butterscotch florals"
+   },
+   {
+    "key": "www.bespokemahjong.com/sapphireblue-garden-mat-copy",
+    "name": "Sapphire Blue Garden Mat",
+    "brand": "Bespoke Mahjong",
+    "why": "navy garden"
+   },
+   {
+    "key": "soireeallday.co/midnight-garden-club-floral-mahjong-mat",
+    "name": "Midnight Garden Club",
+    "brand": "Soirée All Day",
+    "why": "navy, aqua floral ring"
+   },
+   {
+    "key": "letsbebesties.com/sapphire-leaves-mahjong-mat",
+    "name": "Sapphire Leaves",
+    "brand": "Let's Be Besties",
+    "why": "navy + steel blue leaves"
+   },
+   {
+    "key": "letsbebesties.com/blue-palms-neoprene-mahjong-mat",
+    "name": "Blue Palms",
+    "brand": "Let's Be Besties",
+    "why": "steel blue palms, navy center"
+   },
+   {
+    "key": "mahjongregister.com/peony-sociale-premium-mahjong-mat-33-copy",
+    "name": "Moonlit Crane Premium",
+    "brand": "Mahjong Register",
+    "why": "cranes, cornflower"
+   },
+   {
+    "key": "www.letsmahj-on.com/lets-be-refined-mahjong-mats?v=47969268498537",
+    "name": "Let's Be Refined! – Refined Blue",
+    "brand": "Let's Mahj On",
+    "why": "steel blue solid, ivory line"
+   },
+   {
+    "key": "www.ohmymahjong.com/palomino-mat-in-tube",
+    "name": "Palomino",
+    "brand": "Oh My Mahjong",
+    "why": "gold/brown plaid with blue flowers"
+   },
+   {
+    "key": "peacelovemahjong.com/leather-mat-with-mat-tube?v=67801473679652",
+    "name": "Vegan Leather – Cognac",
+    "brand": "Peace Love Mahjong",
+    "why": "cognac leather: the gold side"
+   },
+   {
+    "key": "mahjongregister.com/pre-order-emerald-teal-celedon-green-double-sided-leatherette-mahjong-mat-33-x-33-estimated-ship-oct-9th-copy",
+    "name": "Seafoam Green & Slate Blue Double-Sided Leatherette",
+    "brand": "Mahjong Register",
+    "why": "slate blue solid"
+   },
+   {
+    "key": "www.wrenmats.com/o38vd0wgy28795bx3627e56suycza9",
+    "name": "Green and Blue",
+    "brand": "Wren Mats",
+    "why": "slate blue, gold bamboo edge"
+   }
+  ],
+  "holiday": [
+   {
+    "key": "letsbebesties.com/hanukkah-glow-mahjong-mat",
+    "name": "Hanukkah Glow",
+    "brand": "Let's Be Besties",
+    "why": "Hanukkah, blue glass + gold menorah"
+   },
+   {
+    "key": "letsbebesties.com/winter-jewel-neoprene-mahjong-mat",
+    "name": "Winter Jewel",
+    "brand": "Let's Be Besties",
+    "why": "teal snowflake"
+   },
+   {
+    "key": "peacelovemahjong.com/mahjong-mats-hanukkah?v=67570489458980",
+    "name": "Blue Stripes",
+    "brand": "Peace Love Mahjong",
+    "why": "blue stripes (tagged holiday: check why)"
+   }
+  ]
+ }
 }
