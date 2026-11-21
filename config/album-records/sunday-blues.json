@@ -23,12 +23,12 @@
  },
  "cards_dir": "assets/cards/sunday-blues",
  "new_finds_by_sight": {
-  "at": "2026-11-21T18:20:00-05:00",
+  "at": "2026-11-21T18:30:00-05:00",
   "by": "Main",
   "pool": 1574,
   "shortlist": 155,
   "not_in_album": 135,
-  "sheets_viewed": "3 of 5 (ranks 0-89); sheets 3-4 (ranks 90-134) still to view",
+  "sheets_viewed": "5 of 5 (all 135)",
   "note": "Candidates for the New finds group next to her 56 swipe yeses. Not her picks.",
   "list": [
    {
@@ -132,6 +132,36 @@
     "name": "Green and Blue",
     "brand": "Wren Mats",
     "why": "slate blue, gold bamboo edge"
+   },
+   {
+    "key": "sundaymahjong.com/retro-plaid",
+    "name": "Retro Plaid Premium",
+    "brand": "Sunday Mahjong",
+    "why": "Sunday's own Retro Plaid: rust plaid, the warm side"
+   },
+   {
+    "key": "www.macandmillermahjong.com/heirloom-collection-navy-chinoiserie-mahjong-mat",
+    "name": "Heirloom Collection: Chinoiserie Classic Mahjong Mat",
+    "brand": "Mac + Miller Mahjong",
+    "why": "navy chinoiserie with ivory center"
+   },
+   {
+    "key": "www.ohmymahjong.com/elysium-mat-in-tube",
+    "name": "Elysium",
+    "brand": "Oh My Mahjong",
+    "why": "navy pagoda garden"
+   },
+   {
+    "key": "letsbebesties.com/blue-willow-chinoiserie-mahjong-mat",
+    "name": "Blue Willow Chinoiserie",
+    "brand": "Let's Be Besties",
+    "why": "blue willow, ivory ground"
+   },
+   {
+    "key": "letsbebesties.com/blue-octagon-ohbon-studios-artist-mahjong-mat",
+    "name": "Blue Octagon",
+    "brand": "Let's Be Besties",
+    "why": "steel blue + ivory geometric"
    }
   ],
   "holiday": [
@@ -152,7 +182,48 @@
     "name": "Blue Stripes",
     "brand": "Peace Love Mahjong",
     "why": "blue stripes (tagged holiday: check why)"
+   },
+   {
+    "key": "mahjongregister.com/pre-order-snowflake-lodge-premium-mahjong-mat-33-estimated-ship-sep-25th-2026-copy",
+    "name": "Snowflake Lodge Premium",
+    "brand": "Mahjong Register",
+    "why": "navy snowflake lodge"
+   },
+   {
+    "key": "mahjongregister.com/pre-order-letters-to-santa-double-sided-leatherette-mahjong-mat-31-5-x-31-5-copy",
+    "name": "Snowflake Reindeer Lodge Double-Sided Leatherette",
+    "brand": "Mahjong Register",
+    "why": "navy reindeer lodge, pale blue center"
+   },
+   {
+    "key": "www.amazon.com/dp/B0HB314FBP",
+    "name": "Blue & White Snowflake",
+    "brand": "Amazon",
+    "why": "blue + white snowflake"
    }
   ]
+ },
+ "bysight": {
+  "done": "2026-11-21",
+  "note": "All 135 shortlisted mats not already in her 56 yeses looked at on 5 contact sheets next to the tile photo; 22 new-find + 6 holiday candidates kept, 107 in Left out with a reason. Main finding: navy + ivory wants deep navy grounds, ivory frames and gold or cognac; bright aqua, periwinkle and orange read off."
+ },
+ "holiday": {
+  "considered": "2026-11-21",
+  "note": "Holiday rows of the pull looked at next to the tiles: 6 kept as candidates (Hanukkah Glow, Winter Jewel, Blue Stripes, 2 Mahjong Register snowflake lodges, Blue & White Snowflake). Her swipe had 0 holiday yeses."
+ },
+ "pool": {
+  "size": 1574,
+  "sources": [
+   "config/fym-mats-snapshot.json (Find Your Mat-ch catalog, live build)"
+  ],
+  "pulled_at": "2026-11-21T18:17:12-05:00",
+  "shortlist": 155,
+  "pulled_by": "scripts/albumreview/pull.py",
+  "no_photo": 0,
+  "contrast_colours": [
+   "GOLD",
+   "HONEY GOLD"
+  ],
+  "size_fym": 1574
  }
 }

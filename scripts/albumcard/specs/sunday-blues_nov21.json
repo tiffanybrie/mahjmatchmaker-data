@@ -58,23 +58,25 @@
   },
   {
    "group": "yes",
-   "name": "Year of the Dragon - Periwinkle",
+   "name": "Year of the Dragon Periwinkle",
    "brand": "Bespoke Mahjong",
    "card": "assets/cards/sunday-blues/sunday-blues-mahjong-tiles-bespoke-mahjong-year-of-the-dragon-periwinkle-mat.jpg",
    "why": "Her Oct 29 swipe-book yes",
    "retired": false,
    "tnt": true,
-   "order": 6
+   "order": 6,
+   "name_full": "Year of the Dragon - Periwinkle"
   },
   {
    "group": "yes",
-   "name": "Holy Mahj (Bluest Blooms, retired)",
+   "name": "Holy Mahj",
    "brand": "Tigre de Tartan",
    "card": "assets/cards/sunday-blues/sunday-blues-mahjong-tiles-tigre-de-tartan-holy-mahj-mat.jpg",
    "why": "Her Oct 29 swipe-book yes",
    "retired": true,
    "tnt": true,
-   "order": 7
+   "order": 7,
+   "name_full": "Holy Mahj (Bluest Blooms, retired)"
   },
   {
    "group": "yes",
@@ -158,13 +160,14 @@
   },
   {
    "group": "yes",
-   "name": "Bespoke x Brooks Brothers Oxford Classic (Side B: Navy)",
+   "name": "Oxford Classic Navy",
    "brand": "Bespoke Mahjong",
    "card": "assets/cards/sunday-blues/sunday-blues-mahjong-tiles-bespoke-mahjong-oxford-classic-navy-mat.jpg",
    "why": "Her Oct 29 swipe-book yes",
    "retired": false,
    "tnt": false,
-   "order": 16
+   "order": 16,
+   "name_full": "Bespoke x Brooks Brothers Oxford Classic (Side B: Navy)"
   },
   {
    "group": "yes",
@@ -178,13 +181,14 @@
   },
   {
    "group": "yes",
-   "name": "Vegan Leather – Navy",
+   "name": "Navy Vegan Leather",
    "brand": "Bam Bird Boutique",
    "card": "assets/cards/sunday-blues/sunday-blues-mahjong-tiles-bam-bird-boutique-navy-vegan-leather-mat.jpg",
    "why": "Her Oct 29 swipe-book yes",
    "retired": false,
    "tnt": false,
-   "order": 18
+   "order": 18,
+   "name_full": "Vegan Leather – Navy"
   },
   {
    "group": "yes",
@@ -238,23 +242,25 @@
   },
   {
    "group": "yes",
-   "name": "Calista Neoprene",
+   "name": "Calista",
    "brand": "Britt Mills",
    "card": "assets/cards/sunday-blues/sunday-blues-mahjong-tiles-britt-mills-calista-mat.jpg",
    "why": "Her Oct 29 swipe-book yes",
    "retired": false,
    "tnt": false,
-   "order": 24
+   "order": 24,
+   "name_full": "Calista Neoprene"
   },
   {
    "group": "yes",
-   "name": "Peacock Garden Leatherette",
+   "name": "Peacock Garden",
    "brand": "Britt Mills",
    "card": "assets/cards/sunday-blues/sunday-blues-mahjong-tiles-britt-mills-peacock-garden-mat.jpg",
    "why": "Her Oct 29 swipe-book yes",
    "retired": false,
    "tnt": false,
-   "order": 25
+   "order": 25,
+   "name_full": "Peacock Garden Leatherette"
   },
   {
    "group": "yes",
@@ -278,13 +284,14 @@
   },
   {
    "group": "yes",
-   "name": "Midnight Wildflowers with Camel Fringe",
+   "name": "Midnight Wildflowers",
    "brand": "Tala Mahj",
    "card": "assets/cards/sunday-blues/sunday-blues-mahjong-tiles-tala-mahj-midnight-wildflowers-mat.jpg",
    "why": "Her Oct 29 swipe-book yes",
    "retired": false,
    "tnt": false,
-   "order": 28
+   "order": 28,
+   "name_full": "Midnight Wildflowers with Camel Fringe"
   },
   {
    "group": "yes",
@@ -368,13 +375,14 @@
   },
   {
    "group": "yes",
-   "name": "MCM – Geo Bloom- Blue",
+   "name": "MCM Geo Bloom Blue",
    "brand": "Bam Bird Boutique",
    "card": "assets/cards/sunday-blues/sunday-blues-mahjong-tiles-bam-bird-boutique-mcm-geo-bloom-blue-mat.jpg",
    "why": "Her Oct 29 swipe-book yes",
    "retired": false,
    "tnt": false,
-   "order": 37
+   "order": 37,
+   "name_full": "MCM – Geo Bloom- Blue"
   },
   {
    "group": "yes",
@@ -408,13 +416,14 @@
   },
   {
    "group": "yes",
-   "name": "Vegan Leather – Slate Blue",
+   "name": "Slate Blue Vegan Leather",
    "brand": "Peace Love Mahjong",
    "card": "assets/cards/sunday-blues/sunday-blues-mahjong-tiles-peace-love-mahjong-slate-blue-vegan-leather-mat.jpg",
    "why": "Her Oct 29 swipe-book yes",
    "retired": false,
    "tnt": false,
-   "order": 41
+   "order": 41,
+   "name_full": "Vegan Leather – Slate Blue"
   },
   {
    "group": "yes",
@@ -428,13 +437,14 @@
   },
   {
    "group": "yes",
-   "name": "Flourish Neoprene",
+   "name": "Flourish",
    "brand": "Britt Mills",
    "card": "assets/cards/sunday-blues/sunday-blues-mahjong-tiles-britt-mills-flourish-mat.jpg",
    "why": "Her Oct 29 swipe-book yes",
    "retired": false,
    "tnt": false,
-   "order": 43
+   "order": 43,
+   "name_full": "Flourish Neoprene"
   },
   {
    "group": "yes",
@@ -448,13 +458,14 @@
   },
   {
    "group": "yes",
-   "name": "Let's Be Refined! – Soft Blue",
+   "name": "Let's Be Refined Soft Blue",
    "brand": "Let's Mahj On",
    "card": "assets/cards/sunday-blues/sunday-blues-mahjong-tiles-lets-mahj-on-lets-be-refined-soft-blue-mat.jpg",
    "why": "Her Oct 29 swipe-book yes",
    "retired": false,
    "tnt": false,
-   "order": 45
+   "order": 45,
+   "name_full": "Let's Be Refined! – Soft Blue"
   },
   {
    "group": "yes",
@@ -488,13 +499,14 @@
   },
   {
    "group": "yes",
-   "name": "Bandana – Blue/Pink accents",
+   "name": "Bandana Blue & Pink",
    "brand": "Bam Bird Boutique",
    "card": "assets/cards/sunday-blues/sunday-blues-mahjong-tiles-bam-bird-boutique-bandana-blue-and-pink-mat.jpg",
    "why": "Her Oct 29 swipe-book yes",
    "retired": false,
    "tnt": false,
-   "order": 49
+   "order": 49,
+   "name_full": "Bandana – Blue/Pink accents"
   },
   {
    "group": "yes",
@@ -508,13 +520,14 @@
   },
   {
    "group": "yes",
-   "name": "Bespoke x Brooks Brothers Oxford Classic (Side A: Oxford Stripe)",
+   "name": "Oxford Stripe",
    "brand": "Bespoke Mahjong",
    "card": "assets/cards/sunday-blues/sunday-blues-mahjong-tiles-bespoke-mahjong-oxford-stripe-mat.jpg",
    "why": "Her Oct 29 swipe-book yes",
    "retired": false,
    "tnt": false,
-   "order": 51
+   "order": 51,
+   "name_full": "Bespoke x Brooks Brothers Oxford Classic (Side A: Oxford Stripe)"
   },
   {
    "group": "yes",
@@ -538,13 +551,14 @@
   },
   {
    "group": "yes",
-   "name": "Let's Be Refined! – Refined Blue/Soft Blue Border",
+   "name": "Let's Be Refined Blue & Soft Blue",
    "brand": "Let's Mahj On",
    "card": "assets/cards/sunday-blues/sunday-blues-mahjong-tiles-lets-mahj-on-lets-be-refined-blue-and-soft-blue-mat.jpg",
    "why": "Her Oct 29 swipe-book yes",
    "retired": false,
    "tnt": false,
-   "order": 54
+   "order": 54,
+   "name_full": "Let's Be Refined! – Refined Blue/Soft Blue Border"
   },
   {
    "group": "yes",
