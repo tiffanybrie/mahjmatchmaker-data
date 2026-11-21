@@ -3,7 +3,7 @@
  "set": "sadie-jane",
  "name": "Sadie Jane",
  "brand": "Oh My Mahjong",
- "status": "steps 0, 1 (in FYM 1.22.7), 2 draft, 4-6 done by sight; 3/3b/3c/4a need Chrome; 7 faces, colour card image, 8 cards not done",
+ "status": "0, 1, 2 (draft card), 4, 5, 6, 7 done; 3/3b/3c/4a need Chrome; 8 cards not built",
  "slot_hint": "launch Wed Nov 25 2026 10am CT (11am ET); album staged hidden before then",
  "tile_photo": {
   "file": "assets/tiles/album/sadie-jane.jpg",
@@ -413,6 +413,119 @@
    "LILY GREEN",
    "SKY BLUE"
   ],
-  "size_fym": 1826
- }
+  "size_fym": 1826,
+  "size": 1826
+ },
+ "faces": {
+  "dir": "assets/tiles/faces/sadie-jane/clean/",
+  "source": "Cut from OMM listing image 01.jpg (all faces laid out, 2400x3000), Nov 21 2026. Nothing recoloured.",
+  "groups": [
+   {
+    "title": "Lotus dots",
+    "items": [
+     {
+      "key": "dot-1",
+      "label": "1 Dot: pink lotus on a lily pad"
+     },
+     {
+      "key": "dot-6",
+      "label": "6 Dot: lotus blooms and green lily pads"
+     },
+     {
+      "key": "dot-9",
+      "label": "9 Dot: lotus and lily pads"
+     }
+    ]
+   },
+   {
+    "title": "Crane + bamboo",
+    "items": [
+     {
+      "key": "bam-1-crane",
+      "label": "1 Bam: red-crowned crane"
+     },
+     {
+      "key": "bam-5",
+      "label": "5 Bam: green bamboo over blue clouds"
+     }
+    ]
+   },
+   {
+    "title": "Dragons + craks",
+    "items": [
+     {
+      "key": "dragon-green",
+      "label": "Green Dragon: foo dog in blue and green"
+     },
+     {
+      "key": "dragon-red",
+      "label": "Red Dragon: foo dog in coral"
+     },
+     {
+      "key": "dragon-white",
+      "label": "White Dragon: blue lattice frame with a lotus"
+     },
+     {
+      "key": "crak-5",
+      "label": "5 Crak: plum characters, ginkgo and blue leaves"
+     }
+    ]
+   },
+   {
+    "title": "Flowers",
+    "items": [
+     {
+      "key": "flower-blue",
+      "label": "Flower 1: blue orchid"
+     },
+     {
+      "key": "flower-orchid",
+      "label": "Flower 1: coral orchid"
+     },
+     {
+      "key": "flower-peony",
+      "label": "Flower 2: coral peony, teal leaves"
+     },
+     {
+      "key": "flower-pink-peony",
+      "label": "Flower 4: pink peony"
+     }
+    ]
+   },
+   {
+    "title": "Winds + Joker",
+    "items": [
+     {
+      "key": "wind-north",
+      "label": "North: blue N with cherry blossoms"
+     },
+     {
+      "key": "wind-east",
+      "label": "East: green E"
+     },
+     {
+      "key": "wind-west",
+      "label": "West: plum W with cranes"
+     },
+     {
+      "key": "wind-south",
+      "label": "South: coral S with a pagoda"
+     },
+     {
+      "key": "joker-panda",
+      "label": "Joker: panda"
+     }
+    ]
+   }
+  ],
+  "picks": [
+   "joker-panda",
+   "dot-6",
+   "bam-1-crane",
+   "flower-peony",
+   "wind-north"
+  ],
+  "picks_by": "Main pre-pick Nov 21 2026 (she changes them on the review page)"
+ },
+ "colorcard_img": "assets/colorcards/sadie-jane/00-sadie-jane-mahjong-tiles-color-guide-mobile.jpg"
 }

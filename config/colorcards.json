@@ -1458,18 +1458,29 @@
 "#5b94c3"
 ]
 ],
-"racks": [],
+"racks": [
+"Bird & Bamboo Ballet Pink",
+"Bird & Bamboo Dark Blue"
+],
 "rack_imgs": {},
 "tile": "assets/tiles/album/sadie-jane.jpg",
 "tag": [
 "Lotus ponds, lily pads and pandas",
 "blush backs, denim stripes"
 ],
-"mats": [],
-"mat_imgs": {},
+"mats": [
+"Serendipity",
+"Petalwing",
+"Julia (Blush)"
+],
+"mat_imgs": {
+"Serendipity": "assets/colorcards/sadie-jane/mats/serendipity.jpg",
+"Petalwing": "assets/colorcards/sadie-jane/mats/petalwing.jpg",
+"Julia (Blush)": "assets/colorcards/sadie-jane/mats/julia-blush.jpg"
+},
 "shop": "Shop Sadie Jane · Oh My Mahjong",
 "shop_m": "Shop Sadie Jane · Oh My Mahjong",
-"draft": "Nov 21 2026: colours measured from the pile shot; card image not built yet; top-3 mats filled after her review"
+"draft": "Nov 21 2026 DRAFT card: colours measured from the pile shot; top 3 mats = Claude's lead candidates and racks = nearest Bird & Bamboo colours, both replaced by her picks after the review"
 }
 },
 "_note_oct19_catchup": "Oct 19 catch-up: shangri-la, lilac-soiree, preppy-soiree, spring-love, sunday-tile-set got mat_imgs/rack_imgs and were rendered with the existing style. They use 'tag' (factual). When Tiffany approves the Papaya profile_line style, add profile_line to each set and re-run build.py <key>; nothing else changes."
