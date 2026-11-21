@@ -104,33 +104,6 @@
    ]
   },
   {
-   "date": "2026-11-20",
-   "day": "Fri 11/20",
-   "brand": "Mahj Mood",
-   "partner": true,
-   "what": "Lake Day, a new tile set ($390) with clear aqua backs and a pale yellow middle layer (10 lake-and-Americana jokers, fishing-rod bams, dragonflies, cattails), opens for pre-order Fri 11/20 at 10am CT. Email subscribers get an early link Thu 11/19 around 6pm CT. Delivery is quoted for February, and production is ahead of schedule. A matching navy pine-tree Lake Day mat is shown with it.",
-   "tag": "tiles",
-   "new": true,
-   "urgency": "NOW",
-   "url": "https://mahjmood.com/products/lake-day-pre-order-ships-february",
-   "img": "https://cdn.shopify.com/s/files/1/0944/7712/3887/files/347AE50C-41F1-40DB-B73D-6D0B74D20EBD.jpg?v=1795022299",
-   "found": "2026-11-19T12:53",
-   "source": "IG story",
-   "source_link": "https://www.instagram.com/stories/mahj_mood/",
-   "history": [
-    {
-     "found": "2026-11-18T13:10",
-     "what": "Lake Day, a new tile set ($390) with clear aqua backs and a pale yellow middle layer (10 lake-and-Americana jokers, fishing-rod bams, dragonflies, cattails), opens for pre-order Fri 11/20 at 10am CT and ships in February. Email subscribers shop first on Thu 11/19 in the evening. A matching navy pine-tree Lake Day mat is shown with it."
-    },
-    {
-     "found": "2026-11-12T12:50",
-     "what": "Lake Day, a new tile set with clear aqua backs (lantern, campfire, lake cap and sunrise jokers, dragonflies, cattails), launches Fri 11/20. A matching navy pine-tree Lake Day mat is shown with it. Email subscribers shop first."
-    }
-   ],
-   "time": "10am CT",
-   "buy": "https://mahjmood.com/products/lake-day-pre-order-ships-february"
-  },
-  {
    "date": "",
    "brand": "Mahj Mood",
    "partner": true,
@@ -382,15 +355,23 @@
    "day": "Sat 11/21",
    "brand": "Fait à Main",
    "partner": true,
-   "what": "Fleurs de Fête holiday mats arrive Sat 11/21 in Vert (green) and Bleu (blue). A double-sided Vert/Bleu version is on preorder. Monogramming is available.",
+   "what": "Fleurs de Fête holiday mats drop Sat 11/21 in Vert (green), Bleu (blue) and a new Minuit colorway. The double-sided Fleurs de Fête mat opens for preorder the same day. Monogramming is available.",
    "tag": "mat",
    "new": true,
-   "urgency": "SOON",
+   "urgency": "NOW",
    "buy": "https://www.fait-a-main.com",
    "url": "https://www.instagram.com/reel/Df6Q8O2MZeG/",
-   "found": "2026-11-19T13:40",
-   "source": "IG reel Thu 11/19",
-   "source_kind": "social"
+   "found": "2026-11-20T12:58",
+   "source": "IG story Fri 11/20 + IG reel Thu 11/19",
+   "source_kind": "social",
+   "history": [
+    {
+     "found": "2026-11-19T13:40",
+     "what": "Fleurs de Fête holiday mats arrive Sat 11/21 in Vert (green) and Bleu (blue). A double-sided Vert/Bleu version is on preorder. Monogramming is available."
+    }
+   ],
+   "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/partner-catalogs-sqsp/assets/launches/faitamain-fleurs-de-fete-minuit/story-1120.jpg",
+   "source_link": "https://www.instagram.com/stories/fait.a.main/"
   },
   {
    "date": null,
@@ -405,9 +386,137 @@
    "found": "2026-11-19T13:40",
    "source": "IG reel Wed 11/18",
    "source_kind": "social"
+  },
+  {
+   "date": "2026-12-08",
+   "day": "Tue 12/8",
+   "time": "4pm CT",
+   "brand": "Tigre de Tartán",
+   "what": "Preview of an exclusive collection with The House of Scalamandre, Tue 12/8 at 4pm CT.",
+   "tag": "tiles",
+   "urgency": "LATER",
+   "buy": "https://tigredetartan.com",
+   "url": "https://tigredetartan.com",
+   "source": "email",
+   "source_kind": "email",
+   "partner": true,
+   "found": "2026-11-21T13:40"
   }
  ],
  "just_dropped": [
+  {
+   "date": "2026-11-20",
+   "day": "Fri 11/20",
+   "time": "LIVE now",
+   "brand": "Mah Jongg Maven",
+   "what": "New hand-painted, engraved tile sets are on the website now (shown in a carousel; set names not given).",
+   "tag": "tiles",
+   "new": true,
+   "urgency": "NOW",
+   "buy": "https://mahjonggmaven.com",
+   "url": "https://www.instagram.com/p/Df-d9qUo5WF/",
+   "source": "social",
+   "source_kind": "social",
+   "partner": true,
+   "found": "2026-11-21T13:40"
+  },
+  {
+   "date": "2026-11-21",
+   "day": "Sat 11/21",
+   "time": "LIVE now",
+   "brand": "Mac + Miller Mahjong",
+   "what": "The Heirloom Collection Chinoiserie Scalloped mat is back in stock.",
+   "tag": "mat",
+   "restock": true,
+   "urgency": "NOW",
+   "buy": "https://www.macandmillermahjong.com/products/heirloom-collection-white-chinoiserie-scalloped-mahjong-mat",
+   "url": "https://www.macandmillermahjong.com/products/heirloom-collection-white-chinoiserie-scalloped-mahjong-mat",
+   "source": "store",
+   "source_kind": "store",
+   "partner": true,
+   "found": "2026-11-21T13:40"
+  },
+  {
+   "date": "2026-11-21",
+   "day": "Sat 11/21",
+   "time": "LIVE now",
+   "brand": "Anders Ruff",
+   "what": "The Tartan Tidings mat is back in stock, and the Bams & Bubbly mat is open for pre-order.",
+   "tag": "mat",
+   "restock": true,
+   "urgency": "NOW",
+   "buy": "https://shop.andersruff.com/products/tartan-tidings-mahjong-mat",
+   "url": "https://shop.andersruff.com/products/tartan-tidings-mahjong-mat",
+   "img": "https://cdn.shopify.com/s/files/1/0593/2200/7719/files/Holiday-Mahjong-Mat-03.png",
+   "source": "store",
+   "source_kind": "store",
+   "partner": true,
+   "found": "2026-11-21T13:40"
+  },
+  {
+   "date": "2026-11-18",
+   "day": "Wed 11/18",
+   "time": "LIVE now (listed Wed 11/18 ~3pm ET)",
+   "brand": "Let's Mahj On",
+   "what": "Two new tile sets ($385 each): Let's Get Wild! (safari animals) and Let's Stir Things Up! (cocktail set).",
+   "tag": "tiles",
+   "new": true,
+   "urgency": "NOW",
+   "buy": "https://www.letsmahj-on.com/products/lets-get-wild",
+   "url": "https://www.letsmahj-on.com/products/lets-get-wild",
+   "img": "https://cdn.shopify.com/s/files/1/0599/5475/7737/files/Lets_Get_Wild_Square_RFC.jpg",
+   "source": "store",
+   "source_kind": "store",
+   "partner": true,
+   "found": "2026-11-21T13:40"
+  },
+  {
+   "date": "2026-11-20",
+   "day": "Fri 11/20",
+   "time": "LIVE now",
+   "brand": "Peace Love Mahjong",
+   "what": "Spirit of Christmas tiles are back in stock, and the Spirit of Christmas mats are back too in limited quantities.",
+   "tag": "tiles",
+   "restock": true,
+   "urgency": "NOW",
+   "buy": "https://peacelovemahjong.com",
+   "url": "https://www.instagram.com/p/Df-VLWMpadU/",
+   "source": "social",
+   "source_kind": "social",
+   "partner": true,
+   "found": "2026-11-21T13:40"
+  },
+  {
+   "date": "2026-11-20",
+   "day": "Fri 11/20",
+   "brand": "Mahj Mood",
+   "partner": true,
+   "what": "Lake Day, a new tile set ($390) with clear aqua backs, is live for pre-order now (opened Fri 11/20 at 10am CT). Delivery is quoted for February and could ship as early as January. The matching navy pine-tree Lake Day mat is live too.",
+   "tag": "tiles",
+   "new": true,
+   "urgency": "NOW",
+   "url": "https://mahjmood.com/products/lake-day-pre-order-ships-february",
+   "img": "https://cdn.shopify.com/s/files/1/0944/7712/3887/files/347AE50C-41F1-40DB-B73D-6D0B74D20EBD.jpg?v=1795022299",
+   "found": "2026-11-20T12:58",
+   "source": "IG story Fri 11/20",
+   "source_link": "https://www.instagram.com/stories/mahj_mood/",
+   "history": [
+    {
+     "found": "2026-11-19T12:53",
+     "what": "Lake Day, a new tile set ($390) with clear aqua backs and a pale yellow middle layer (10 lake-and-Americana jokers, fishing-rod bams, dragonflies, cattails), opens for pre-order Fri 11/20 at 10am CT. Email subscribers get an early link Thu 11/19 around 6pm CT. Delivery is quoted for February, and production is ahead of schedule. A matching navy pine-tree Lake Day mat is shown with it."
+    },
+    {
+     "found": "2026-11-18T13:10",
+     "what": "Lake Day, a new tile set ($390) with clear aqua backs and a pale yellow middle layer (10 lake-and-Americana jokers, fishing-rod bams, dragonflies, cattails), opens for pre-order Fri 11/20 at 10am CT and ships in February. Email subscribers shop first on Thu 11/19 in the evening. A matching navy pine-tree Lake Day mat is shown with it."
+    },
+    {
+     "found": "2026-11-12T12:50",
+     "what": "Lake Day, a new tile set with clear aqua backs (lantern, campfire, lake cap and sunrise jokers, dragonflies, cattails), launches Fri 11/20. A matching navy pine-tree Lake Day mat is shown with it. Email subscribers shop first."
+    }
+   ],
+   "time": "10am CT",
+   "buy": "https://mahjmood.com/products/lake-day-pre-order-ships-february"
+  },
   {
    "date": "2026-11-18",
    "brand": "Oh My Mahjong",
@@ -584,21 +693,6 @@
    "urgency": "NOW"
   },
   {
-   "date": "2026-11-13",
-   "day": "Fri 11/13",
-   "brand": "My Fair Mahjong",
-   "what": "Legacy Wave Series Blue Mist tiles ($380) are the newest color: layers of blue with semi-transparent backs.",
-   "tag": "tiles",
-   "new": true,
-   "buy": "https://myfairmahjong.com/products/legacy-wave-blue-mist",
-   "url": "https://www.instagram.com/p/DftNraqFUq7/",
-   "found": "2026-11-13T18:40",
-   "source": "IG + store",
-   "source_kind": "store",
-   "partner": true,
-   "urgency": "NOW"
-  },
-  {
    "date": "2026-11-14",
    "day": "Sat 11/14",
    "brand": "Mahjong by SI",
@@ -677,85 +771,6 @@
    "updated": "2026-11-15T14:05"
   },
   {
-   "date": "2026-11-13",
-   "day": "Fri 11/13",
-   "brand": "Tigre de Tartán (image-only)",
-   "partner": true,
-   "what": "The Katherine Hartman x Tigre de Tartán Birdsong mat is back in stock ($225).",
-   "tag": "mat",
-   "urgency": "NOW",
-   "buy": "https://tigredetartan.com/products/katherine-hartman-x-tigre-de-tartan",
-   "url": "https://tigredetartan.com/products/katherine-hartman-x-tigre-de-tartan",
-   "img": "https://cdn.shopify.com/s/files/1/0567/2566/7876/files/2865BE2E-AE58-4429-81C6-F17A060BC41A.jpg?v=1792004848",
-   "found": "2026-11-13T13:40",
-   "source": "store",
-   "source_kind": "store",
-   "restock": true,
-   "nocode": true
-  },
-  {
-   "date": "2026-11-13",
-   "day": "Fri 11/13",
-   "brand": "Anders Ruff",
-   "partner": true,
-   "what": "The Mahj in Bloom mat is back in stock.",
-   "tag": "mat",
-   "urgency": "NOW",
-   "buy": "https://shop.andersruff.com/products/mahj-in-bloom-mahjong-mat",
-   "url": "https://shop.andersruff.com/products/mahj-in-bloom-mahjong-mat",
-   "img": "https://cdn.shopify.com/s/files/1/0593/2200/7719/files/Mahjong-Mat-21.jpg?v=1782939199",
-   "found": "2026-11-13T13:40",
-   "source": "store",
-   "source_kind": "store",
-   "restock": true
-  },
-  {
-   "date": "2026-11-13",
-   "day": "Fri 11/13",
-   "brand": "Britt Mills",
-   "partner": true,
-   "what": "NEW Plumage II and Grayson leatherette mats, plus Peacock Garden, Dabney, Knox, Bella, Eden and Scarlett neoprene mats back in stock.",
-   "tag": "mat",
-   "urgency": "NOW",
-   "buy": "https://brittmillsdesign.com/products/plumage-ii-leatherette-mahjong-mat",
-   "url": "https://brittmillsdesign.com/products/plumage-ii-leatherette-mahjong-mat",
-   "img": "https://cdn.shopify.com/s/files/1/1184/0004/files/PlumageIIlisting.jpg?v=1794579035",
-   "found": "2026-11-13T13:40",
-   "source": "store",
-   "source_kind": "store",
-   "new": true
-  },
-  {
-   "date": "2026-11-13",
-   "day": "Fri 11/13",
-   "brand": "The Royal Mahjong Society",
-   "partner": true,
-   "what": "Heirloom Collection tiles back in stock: Shore, Mahj Royale and Cottage.",
-   "tag": "tiles",
-   "urgency": "NOW",
-   "buy": "https://theroyalmahjongsociety.com/products/shore-mahjong-tile-set",
-   "url": "https://theroyalmahjongsociety.com/products/shore-mahjong-tile-set",
-   "img": "https://cdn.shopify.com/s/files/1/0925/0491/6333/files/Shoretiles_0201773a-228a-4d59-9890-f97e7da0bd35.png?v=1790022414",
-   "found": "2026-11-13T13:40",
-   "source": "store",
-   "source_kind": "store",
-   "restock": true
-  },
-  {
-   "date": "2026-11-12",
-   "day": "Thu 11/12",
-   "brand": "Mahj Mood",
-   "partner": true,
-   "what": "The Fall Fling mat ($65) is retiring. It is still in stock for now.",
-   "tag": "mat",
-   "urgency": "NOW",
-   "buy": "https://mahjmood.com/products/fall-fling-mat",
-   "url": "https://www.instagram.com/stories/mahj_mood/",
-   "img": "https://cdn.shopify.com/s/files/1/0944/7712/3887/files/76381C65-0957-4D7B-A77E-C776E89080DC.jpg?v=1789683609",
-   "found": "2026-11-12T22:40",
-   "source": "IG story"
-  },
-  {
    "brand": "Noli June",
    "partner": true,
    "what": "Sue Adores a Scallop: a hand-built folding mahjong table with a scalloped edge ($1,699; made to order, 6-8 weeks; 4 finishes). No promo codes on this one.",
@@ -781,6 +796,47 @@
   }
  ],
  "sales": [
+  {
+   "date": "2026-11-27",
+   "day": "Fri 11/27",
+   "time": "Fri 11/27 to Mon 11/30",
+   "brand": "My Fair Mahjong",
+   "what": "My Fair Holiday: 20% off sitewide.",
+   "tag": "sale",
+   "bf": true,
+   "approved": true,
+   "hidden": false,
+   "nocode": true,
+   "urgency": "LATER",
+   "ends": "2026-11-30",
+   "buy": "https://myfairmahjong.com",
+   "url": "https://www.instagram.com/reel/Df7udvySa6x/",
+   "source": "affiliate email Nov 20",
+   "source_kind": "email",
+   "affiliate_terms": "My Fair Mahjong affiliate email Nov 20: affiliate codes do NOT stack with the sale; commission is still earned through the affiliate link.",
+   "partner": true,
+   "found": "2026-11-21T13:40"
+  },
+  {
+   "date": "2026-11-23",
+   "day": "Mon 11/23",
+   "time": "Mon 11/23 to Wed 11/25, 8am to 11pm CT each day",
+   "brand": "Mahj Mood",
+   "what": "Black Friday Week, one deal a day: Mon 11/23 $10 off four mats (Bow & Bloom, Color Splash, Pink Lemonade, Midnight Bloom); Tue 11/24 $10 off two racks (Baby Blue Wooden, White Acrylic); Wed 11/25 free travel mat (Color Splash or Secret Garden) with White Pearl Travel Tiles, which ship late December.",
+   "tag": "sale",
+   "bf": true,
+   "approved": true,
+   "hidden": false,
+   "urgency": "NOW",
+   "ends": "2026-11-25",
+   "buy": "https://mahjmood.com",
+   "url": "https://www.instagram.com/p/DgAa45okUPt/",
+   "source": "affiliate email Nov 20",
+   "source_kind": "email",
+   "affiliate_terms": "Mahj Mood affiliate email Nov 20: our code stacks on each day's deal and commission is paid as normal.",
+   "partner": true,
+   "found": "2026-11-21T13:40"
+  },
   {
    "date": "2026-11-12",
    "brand": "Bespoke Mahjong",
@@ -979,6 +1035,23 @@
    "found": "2026-11-19T12:53",
    "source": "IG story",
    "source_link": "https://www.instagram.com/stories/peacelovemahjong/"
+  },
+  {
+   "date": "2026-11-21",
+   "day": "Sat 11/21",
+   "brand": "Fait à Main",
+   "partner": true,
+   "what": "Sat 11/21 only: special pricing on select pieces, plus free monogramming and free shipping on orders of $350 or more.",
+   "tag": "sale",
+   "approved": null,
+   "hidden": true,
+   "urgency": "SOON",
+   "buy": "https://www.fait-a-main.com",
+   "source": "IG story Fri 11/20",
+   "source_kind": "social",
+   "source_link": "https://www.instagram.com/stories/fait.a.main/",
+   "affiliate_terms": "Not stated whether our code stacks.",
+   "found": "2026-11-20T12:58"
   }
  ],
  "nonpartners": [
@@ -1080,26 +1153,8 @@
    "url": ""
   }
  ],
- "updated": "2026-11-19T13:45",
+ "updated": "2026-11-21T13:45",
  "auto": [
-  {
-   "date": "2026-11-19",
-   "brand": "My Fair Mahjong",
-   "partner": true,
-   "kind": "sale",
-   "what": "We’re really bad at keeping secrets… especially when they’re THIS good. 🤭 MY FAIR HOLIDAY is coming, and we’re making your holiday shopping a whole lot more fun",
-   "url": "https://www.instagram.com/reel/Df7udvySa6x/",
-   "src": "instagram"
-  },
-  {
-   "date": "2026-11-19",
-   "brand": "Peace Love Mahjong",
-   "partner": true,
-   "kind": "sale",
-   "what": "TODAY’S DEAL: 30% OFF Borders Light Pink Mat! 🎁 Use code LIGHT30 at checkout. Today only!\n\n🎁SURPRISE! We’re kicking off Black Friday EARLY!🎁\n\nFrom 11/16–11/20, ",
-   "url": "https://www.instagram.com/p/DfsbA_fTsOh/",
-   "src": "instagram"
-  },
   {
    "date": "2026-11-19",
    "brand": "Amanda Toppe",
@@ -1180,15 +1235,6 @@
    "what": "Your Mah Jongg Maven Holiday Gift Guide is HERE!☕️🎁🍁🤎🍂\n\nWe've got something special for every player AND every budget! From fun little accessories to beautiful ",
    "url": "https://www.instagram.com/p/Df5QnGYo15T/",
    "src": "instagram"
-  },
-  {
-   "date": "2026-11-18",
-   "brand": "Let's Mahj On",
-   "partner": true,
-   "kind": "launch",
-   "what": "2 new listings: Let's Get Wild!; Let's Stir Things Up!",
-   "url": "https://www.letsmahj-on.com/products/lets-get-wild",
-   "src": "store"
   },
   {
    "date": "2026-11-18",
@@ -1308,6 +1354,33 @@
    "src": "instagram"
   },
   {
+   "date": "2026-11-16",
+   "brand": "Amanda Toppe",
+   "partner": true,
+   "kind": "sale",
+   "what": "My popular holiday acrylic blocks featuring my original art are BACK! With Hanukkah coming early this year, the holiday decorating has already begun!\n\nStarting ",
+   "url": "https://www.instagram.com/reel/Df0QNU4ui1X/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-16",
+   "brand": "Maison Mahj",
+   "partner": true,
+   "kind": "launch",
+   "what": "Your holiday table awaits. 🎄✨\n\nIntroducing four festive mats to complement any Maison Mahj collection. Swipe to find your favorite, then shop at the link in bio",
+   "url": "https://www.instagram.com/p/Dfz5NpbDLVM/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-16",
+   "brand": "Britt Mills",
+   "partner": true,
+   "kind": "launch",
+   "what": "5 new listings: Plumage Square Tablecloth; Plumage Personalized Mahjong Tile Pouch; Plumage Neoprene Mahjong Mat; House Cheetah Personalized Mahjong Tile Pouch (Olive) …",
+   "url": "https://brittmillsdesign.com/products/plumage-square-tablecloth-polyester",
+   "src": "store"
+  },
+  {
    "date": "2026-11-15",
    "brand": "Splash of Color",
    "partner": true,
@@ -1324,29 +1397,11 @@
    "what": "7 new listings: I'd Rather Be Playing Funny Mahjong Absorbent Coffee Bar Mat; Funny Mahjong Welcome To The Crak House Absorbent Coffee Bar Mat; Funny Mahjong I Don't Give A Crak  Coffee, Cafe, Bar Mat; Pretty Chinoiserie Mahjong Kitchen Square Mahjong Tablecloth …",
    "url": "https://splashofcolorco.com/products/id-rather-be-playing-funny-mahjong-absorbent-coffee-bar-mat",
    "src": "store"
-  },
-  {
-   "date": "2026-11-13",
-   "brand": "Splash of Color",
-   "partner": true,
-   "kind": "launch",
-   "what": "Snow Much for Summer Après-Ski Engraved American Mahjong Tiles",
-   "url": "https://splashofcolorco.com/products/snow-much-for-summer-apres-ski-winter-engraved-american-mahjong-tiles",
-   "src": "store"
-  },
-  {
-   "date": "2026-11-12",
-   "brand": "Splash of Color",
-   "partner": true,
-   "kind": "launch",
-   "what": "4 new listings: Mahj Airways 3Layer Mini American Mahjong Set; Mini Mahjong Travel Set Pink And Green Preppy Single Layer Tiles; Snow Much For Summer Flamingo Winter Mahjong Mat Sleek Surface; Snow Much For Summer Mahjong Winter Blue 4Layer Engraved American Mahjong Tiles Set",
-   "url": "https://splashofcolorco.com/products/mahj-airways-3layer-mini-american-mahjong-set",
-   "src": "store"
   }
  ],
- "updatedAt": "2026-11-19T18:35:39+00:00",
+ "updatedAt": "2026-11-21T18:31:53+00:00",
  "sources": {
-  "store_run": "2026-11-19T18:30:36+00:00",
+  "store_run": "2026-11-21T18:30:07+00:00",
   "ig_run": "2026-11-19T18:34:42.700435+00:00"
  }
 }

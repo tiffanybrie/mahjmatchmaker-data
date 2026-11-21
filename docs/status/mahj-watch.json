@@ -1,7 +1,124 @@
 {
- "run_at": "2026-11-19T18:34:42.700435+00:00",
+ "run_at": "2026-11-21T18:32:56.420092+00:00",
  "days": 10,
  "instagram": [
+  {
+   "src": "instagram",
+   "brand": "Bam Bird Boutique",
+   "handle": "bambirdboutique",
+   "partner": true,
+   "kind": "sale",
+   "kinds": [
+    "sale"
+   ],
+   "products": [],
+   "dates": [],
+   "posted": "2026-11-21",
+   "url": "https://www.instagram.com/reel/DgAeawIRH3R/",
+   "caption": "Sitewide Black Friday Sale NOW! 15% off sitewide",
+   "slides": 0,
+   "never_name": false,
+   "never_social": false
+  },
+  {
+   "src": "instagram",
+   "brand": "Bam Bird Boutique",
+   "handle": "bambirdboutique",
+   "partner": true,
+   "kind": "sale",
+   "kinds": [
+    "sale"
+   ],
+   "products": [],
+   "dates": [
+    "11/22"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://www.instagram.com/p/Df-yH-7H1yD/",
+   "caption": "Black Friday Sale 15% OFF sitewide through Sunday 11/22 midnight",
+   "slides": 0,
+   "never_name": false,
+   "never_social": false
+  },
+  {
+   "src": "instagram",
+   "brand": "Bam Bird Boutique",
+   "handle": "bambirdboutique",
+   "partner": true,
+   "kind": "restock",
+   "kinds": [
+    "restock"
+   ],
+   "products": [
+    "tiles"
+   ],
+   "dates": [],
+   "posted": "2026-11-20",
+   "url": "https://www.instagram.com/p/Df-FN7ckQpX/",
+   "caption": "Classic Tortoise tile set BACK IN STOCK",
+   "slides": 0,
+   "never_name": false,
+   "never_social": false
+  },
+  {
+   "src": "instagram",
+   "brand": "Peace Love Mahjong",
+   "handle": "peacelovemahjong",
+   "partner": true,
+   "kind": "restock",
+   "kinds": [
+    "restock"
+   ],
+   "products": [
+    "tiles",
+    "mat"
+   ],
+   "dates": [],
+   "posted": "2026-11-20",
+   "url": "https://www.instagram.com/p/Df-VLWMpadU/",
+   "caption": "SPIRIT OF CHRISTMAS TILES ARE BACK IN STOCK; mats back in limited quantities",
+   "slides": 0,
+   "never_name": false,
+   "never_social": false
+  },
+  {
+   "src": "instagram",
+   "brand": "Anders Ruff",
+   "handle": "andersruffdesignco",
+   "partner": true,
+   "kind": "sale",
+   "kinds": [
+    "sale"
+   ],
+   "products": [],
+   "dates": [],
+   "posted": "2026-11-20",
+   "url": "https://www.instagram.com/reel/Df97aphIX7t/",
+   "caption": "Pink Friday 30% OFF select pink, 24 hours only, comment PINK for code",
+   "slides": 0,
+   "never_name": false,
+   "never_social": false
+  },
+  {
+   "src": "instagram",
+   "brand": "Mini Mahjer",
+   "handle": "minimahjer",
+   "partner": true,
+   "kind": "sale",
+   "kinds": [
+    "sale"
+   ],
+   "products": [
+    "travel"
+   ],
+   "dates": [],
+   "posted": "2026-11-20",
+   "url": "https://www.instagram.com/reel/DfzaeOUhh1i/",
+   "caption": "Ski Edition Complete Travel Bundle is 15% off all holiday season",
+   "slides": 0,
+   "never_name": false,
+   "never_social": false
+  },
   {
    "src": "instagram",
    "brand": "Oh My Mahjong",
@@ -307,6 +424,46 @@
   },
   {
    "src": "instagram",
+   "brand": "Oh My Mahjong",
+   "handle": "ohmymahjong",
+   "partner": true,
+   "kind": "drop date",
+   "kinds": [
+    "drop date"
+   ],
+   "products": [],
+   "dates": [
+    "November 25th"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.instagram.com/p/Df7CBwumjA0/",
+   "caption": "Sadie Jane reveal. Launching November 25th at 10:00AM CT",
+   "slides": 0,
+   "never_name": false,
+   "never_social": false
+  },
+  {
+   "src": "instagram",
+   "brand": "My Fair Mahjong",
+   "handle": "myfairmahjong",
+   "partner": true,
+   "kind": "sale",
+   "kinds": [
+    "sale"
+   ],
+   "products": [],
+   "dates": [
+    "November 27"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.instagram.com/reel/Df7udvySa6x/",
+   "caption": "MY FAIR HOLIDAY 20% OFF SITEWIDE November 27-30",
+   "slides": 0,
+   "never_name": false,
+   "never_social": false
+  },
+  {
+   "src": "instagram",
    "brand": "Peace Love Mahjong",
    "handle": "peacelovemahjong",
    "partner": true,
@@ -546,6 +703,26 @@
      "t": "IMAGE"
     }
    ],
+   "never_name": false,
+   "never_social": false
+  },
+  {
+   "src": "instagram",
+   "brand": "Bespoke Mahjong",
+   "handle": "bespoke_mahjong",
+   "partner": true,
+   "kind": "sale",
+   "kinds": [
+    "sale"
+   ],
+   "products": [
+    "tiles"
+   ],
+   "dates": [],
+   "posted": "2026-11-18",
+   "url": "https://www.instagram.com/reel/Df5eYhKJAgX/",
+   "caption": "Christmas tiles Mahjong Its a Vibe Glitter Glow 25% off through Sunday",
+   "slides": 0,
    "never_name": false,
    "never_social": false
   },
@@ -1846,1521 +2023,387 @@
    "slides": [],
    "never_name": false,
    "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Ozark Mahjongg",
-   "handle": "ozarkmahjongg",
-   "partner": false,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [
-    "tiles",
-    "rack"
-   ],
-   "dates": [
-    "this Saturday"
-   ],
-   "posted": "2026-11-11",
-   "url": "https://www.instagram.com/p/Dfmuzo8IZvR/",
-   "caption": "Two Royal Sets will be for sale this Saturday at 11am Central. Links in Bio. \n\n1950s | 166 Tiles | Original Case and Catalin Racks\n\nA remarkably complete Royal Depth Control set from the 1950s, featuring glossy, sunny-yellow Catalin tiles with hand-painted designs and the distinctive Perching Pheasant One Bam.\n\n1950s | 152 Tiles | Complete Flower Runs and Four Original Racks\n\nOne of the loveliest ",
-   "slides": [
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/900664653_17955271602339675_2197007634836432184_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=JLg6gHBKaO4Q7kNvwHjcNK5&_nc_oc=AdrKk4Veorvmt1QpdRZ8S4lvT5Gjso6dUr0XRcq_Aw3hoH9avtvH1KoFbmR33uUi8Zo&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=b88a4Oqig-Qh_7cq6vE2yw&oh=00_AQT6huJQNoYoRBdfWGl3LQgQLoWr5Gny_yyZaNE8PLRbxA&oe=6AFA73DA",
-    "https://scontent-sea5-2.cdninstagram.com/v/t51.82787-15/899063382_17955271617339675_6199204976048617673_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=TCd6m_OZ16wQ7kNvwH7_zMx&_nc_oc=AdqFji8scALYDoTM9SMIR5EvrgcfbwXlLaJMu8cAYt7lkbDkA0EPxhEsCwkrWj48K1I&_nc_zt=23&_nc_ht=scontent-sea5-2.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=b88a4Oqig-Qh_7cq6vE2yw&oh=00_AQSjcQ-2ZGCKB4p2hHKmH_4zKFkejBYQg0-88BDCA8bn-g&oe=6AFA89DE",
-    "(+12 more carousel images not stored)"
-   ],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Virora Mahjong",
-   "handle": "viroramahjongofficial",
-   "partner": true,
-   "kind": "restock",
-   "kinds": [
-    "restock",
-    "launch"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-11",
-   "url": "https://www.instagram.com/p/DflQEDBD3je/",
-   "caption": "Lilacée - Yellow is back in stock! 💛\n\nWarm golden tones, autumn charm, and a touch of vintage elegance. Bring the cozy beauty of fall to your Mahjong table. 🍂\n\nIn stock & ready to ship!\n\nComment “Lilacée” for the link!\n\n #Virora #mahjong #AmericanMahjong #mahjongset #MahjongStyle #MahjongCommunity #MahjongLovers",
-   "slides": [
-    "https://scontent-sea5-1.cdninstagram.com/v/t39.30808-6/898015533_122118684957321690_4847058727980526954_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=r7cPgbfjiXwQ7kNvwEVQUCj&_nc_oc=AdpI1VaU2hGp1i5Y3obHk_dnFGfc-khf0mjVfzHX724z2Pcy0clng9CMkXRhzaCO7II&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=m1ux1y3sRwsbyQSQB1PHvA&oh=00_AQTVdri1xmMqNb8YiwtMByRFTdJlISyz66jBATgdf30h-A&oe=6AFA8D9D",
-    "https://scontent-sea5-1.cdninstagram.com/v/t39.30808-6/899197492_122118684981321690_5705035343893537111_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nJDl41mrVdAQ7kNvwG9tFsc&_nc_oc=AdokOfQdMgqe1nUGi4JG51-7wH2d3QlFd-JOtbRdOIYTDl2omE6PGDu4RftjYbKess4&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=m1ux1y3sRwsbyQSQB1PHvA&oh=00_AQS0BkQG6e5XVirLtleFFkyACFZRxPi1QrPtEBVOZCwCjQ&oe=6AFA822E"
-   ],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Noli June",
-   "handle": "nolijunemahjong",
-   "partner": true,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [
-    "mat"
-   ],
-   "dates": [],
-   "posted": "2026-11-11",
-   "url": "https://www.instagram.com/reel/DfnBdR5TvRB/",
-   "caption": "Same girl, different stakes.\n🤍 Comment TUESDAY and we'll send you 10% off your first heirloom leatherette NOLI JUNE mahjong mat.\n[hashtags/keywords omitted]",
-   "slides": [
-    "(thumb) https://scontent-sea5-2.cdninstagram.com/v/t51.71878-15/896923745_1498874975419041_6743598018404047157_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=buEaIY7R9L0Q7kNvwFLWfrM&_nc_oc=AdonGConJdR4xUjQG6WnfE3vSyC7gVraWhRUnS2zjPvMV0PnuXEwxbb8UyKbzVb2dCY&_nc_zt=23&_nc_ht=scontent-sea5-2.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=Js9oHxB8GCdlM_69uN2cHQ&_nc_tpa=Q5bMBQJVXvl--uOIvITZc_uZWK9cB7_4B-oWdUZtJ9fEE5TmNndDn2LEyMy_aSJnmS9K9rJCtzupil7l&_nc_ct=RQYsPBUKFQgAAAA&oh=00_AQQqynDZS5a-7U9Suw2m2colQUsrX7EJ_KSol1vsWbwzdQ&oe=6AFA7649"
-   ],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Virora Mahjong",
-   "handle": "viroramahjongofficial",
-   "partner": true,
-   "kind": "restock",
-   "kinds": [
-    "restock",
-    "launch"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-11",
-   "url": "https://www.instagram.com/p/DflQEDBD3je/",
-   "caption": "Lilacée - Yellow is back in stock! 💛\n\nWarm golden tones, autumn charm, and a touch of vintage elegance. Bring the cozy beauty of fall to your Mahjong table. 🍂\n\nIn stock & ready to ship!\n\nComment “Lilacée” for the link!\n\n #Virora #mahjong #AmericanMahjong #mahjongset #MahjongStyle #MahjongCommunity #MahjongLovers",
-   "slides": 2,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Virora Mahjong",
-   "handle": "viroramahjongofficial",
-   "partner": true,
-   "kind": "restock",
-   "kinds": [
-    "restock",
-    "launch"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-11",
-   "url": "https://www.instagram.com/p/DflQEDBD3je/",
-   "caption": "Lilacee - Yellow is back in stock! In stock & ready to ship. Comment Lilacee for the link",
-   "slides": 2,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Noli June",
-   "handle": "nolijunemahjong",
-   "partner": true,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [
-    "mat"
-   ],
-   "dates": [],
-   "posted": "2026-11-11",
-   "url": "https://www.instagram.com/reel/DfnBdR5TvRB/",
-   "caption": "Same girl, different stakes. Comment TUESDAY for 10% off first mat (comment-for-code: hidden)",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Virora Mahjong",
-   "handle": "viroramahjongofficial",
-   "partner": true,
-   "kind": "restock",
-   "kinds": [
-    "restock",
-    "launch"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-11",
-   "url": "https://www.instagram.com/p/DflQEDBD3je/",
-   "caption": "Lilacée - Yellow is back in stock! 💛\n\nWarm golden tones, autumn charm, and a touch of vintage elegance. Bring the cozy beauty of fall to your Mahjong table. 🍂\n\nIn stock & ready to ship!\n\nComment “Lilacée” for the link!\n\n #Virora #mahjong #AmericanMahjong #mahjongset #MahjongStyle #MahjongCommunity #MahjongLovers",
-   "slides": 2,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Ozark Mahjongg",
-   "handle": "ozarkmahjongg",
-   "partner": false,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [
-    "tiles",
-    "rack"
-   ],
-   "dates": [
-    "this Saturday"
-   ],
-   "posted": "2026-11-11",
-   "url": "https://www.instagram.com/p/Dfmuzo8IZvR/",
-   "caption": "Two Royal Sets will be for sale this Saturday at 11am Central. Links in Bio. \n\n1950s | 166 Tiles | Original Case and Catalin Racks\n\nA remarkably complete Royal Depth Control set from the 1950s, featuring glossy, sunny-yellow Catalin tiles with hand-painted designs and the distinctive Perching Pheasant One Bam.\n\n1950s | 152 Tiles | Complete Flower Runs and Four Original Racks\n\nOne of the loveliest ",
-   "slides": 14,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Noli June",
-   "handle": "nolijunemahjong",
-   "partner": true,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [
-    "mat",
-    "card"
-   ],
-   "dates": [],
-   "posted": "2026-11-11",
-   "url": "https://www.instagram.com/reel/DfnBdR5TvRB/",
-   "caption": "Same girl, different stakes.\n🤍 Comment TUESDAY and we’ll send you 10% off your first heirloom leatherette NOLI JUNE mahjong mat.\n.\n.\n.\n#mahjong #americanmahjong #mahjongmat #mahjonglife #nolijune\n\nmahjong mat, leather mahjong mat, luxury mahjong mat, American mahjong, mahjong table setup, mahjong gifts, mahjong night, mahjong card 2026, competitive mahjong, mahjong humor, gifts for mahjong players",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Mahjong by SI",
-   "handle": "mahjongbysi",
-   "partner": true,
-   "kind": "launch",
-   "kinds": [
-    "launch"
-   ],
-   "products": [
-    "mat"
-   ],
-   "dates": [],
-   "posted": "2026-11-11",
-   "url": "https://www.instagram.com/p/Dfm6fS1EzSO/",
-   "caption": "Boots, Bandanas & Mahjong. This week's Midweek Drop is bringing a little Western flair to the table! Meet our Bandana Social Mats, featuring classic bandana-inspired prints, intricate paisley details, and bold color combinations that make every game a little more fun.\n\nFrom pretty pinks to sunny yellows and classic blues, these designs are ready to steal the show at your next mahjong gathering.\n\nA",
-   "slides": 9,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Virora Mahjong",
-   "handle": "viroramahjongofficial",
-   "partner": true,
-   "kind": "restock",
-   "kinds": [
-    "restock",
-    "launch"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-11",
-   "url": "https://www.instagram.com/p/DflQEDBD3je/",
-   "caption": "Lilacée - Yellow is back in stock! 💛\n\nWarm golden tones, autumn charm, and a touch of vintage elegance. Bring the cozy beauty of fall to your Mahjong table. 🍂\n\nIn stock & ready to ship!\n\nComment “Lilacée” for the link!\n\n #Virora #mahjong #AmericanMahjong #mahjongset #MahjongStyle #MahjongCommunity #MahjongLovers",
-   "slides": 2,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Noli June",
-   "handle": "nolijunemahjong",
-   "partner": true,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [
-    "mat",
-    "card"
-   ],
-   "dates": [],
-   "posted": "2026-11-11",
-   "url": "https://www.instagram.com/reel/DfnBdR5TvRB/",
-   "caption": "Same girl, different stakes.\n🤍 Comment TUESDAY and we’ll send you 10% off your first heirloom leatherette NOLI JUNE mahjong mat.\n.\n.\n.\n#mahjong #americanmahjong #mahjongmat #mahjonglife #nolijune\n\nmahjong mat, leather mahjong mat, luxury mahjong mat, American mahjong, mahjong table setup, mahjong gifts, mahjong night, mahjong card 2026, competitive mahjong, mahjong humor, gifts for mahjong players",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Ozark Mahjongg",
-   "handle": "ozarkmahjongg",
-   "partner": false,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [
-    "tiles",
-    "rack"
-   ],
-   "dates": [
-    "this Saturday"
-   ],
-   "posted": "2026-11-11",
-   "url": "https://www.instagram.com/p/Dfmuzo8IZvR/",
-   "caption": "Two Royal Sets will be for sale this Saturday at 11am Central. Links in Bio. 1950s | 166 Tiles | Original Case and Catalin Racks - Royal Depth Control, sunny-yellow Catalin, Perching Pheasant One Bam. 1950s | 152 Tiles | Complete Flower Runs and Four Original Racks - Royal Games Perching Pheasant, creamy butterscotch Catalin.",
-   "slides": 14,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Ozark Mahjongg",
-   "handle": "ozarkmahjongg",
-   "partner": false,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [
-    "tiles",
-    "rack"
-   ],
-   "dates": [
-    "this Saturday"
-   ],
-   "posted": "2026-11-11",
-   "url": "https://www.instagram.com/p/Dfmuzo8IZvR/",
-   "caption": "Two Royal Sets will be for sale this Saturday at 11am Central. Links in Bio. \n\n1950s | 166 Tiles | Original Case and Catalin Racks\n\nA remarkably complete Royal Depth Control set from the 1950s, featuring glossy, sunny-yellow Catalin tiles with hand-painted designs and the distinctive Perching Pheasant One Bam.\n\n1950s | 152 Tiles | Complete Flower Runs and Four Original Racks\n\nOne of the loveliest ",
-   "slides": [
-    {
-     "t": "IMAGE"
-    },
-    {
-     "t": "IMAGE"
-    },
-    {
-     "t": "IMAGE"
-    },
-    {
-     "t": "IMAGE"
-    },
-    {
-     "t": "IMAGE"
-    },
-    {
-     "t": "IMAGE"
-    },
-    {
-     "t": "IMAGE"
-    },
-    {
-     "t": "IMAGE"
-    },
-    {
-     "t": "IMAGE"
-    },
-    {
-     "t": "IMAGE"
-    },
-    {
-     "t": "IMAGE"
-    },
-    {
-     "t": "IMAGE"
-    },
-    {
-     "t": "IMAGE"
-    },
-    {
-     "t": "IMAGE"
-    }
-   ],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Oh My Mahjong",
-   "handle": "ohmymahjong",
-   "partner": true,
-   "kind": "drop date",
-   "kinds": [
-    "drop date"
-   ],
-   "products": [
-    "tiles"
-   ],
-   "dates": [
-    "tomorrow"
-   ],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/reel/Dfj21bAyHCg/",
-   "caption": "Juniper Tiles are almost here! Your new favorite set launches tomorrow, 11.11 at 10 am CT.💚",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Peace Love Mahjong",
-   "handle": "peacelovemahjong",
-   "partner": true,
-   "kind": "collab",
-   "kinds": [
-    "collab"
-   ],
-   "products": [],
-   "dates": [
-    "November 10th",
-    "November 12"
-   ],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/reel/Dfj4koQhdGg/",
-   "caption": "🚨 GIVEAWAY TIME! 🚨\n\nWe’ve teamed up with our friends at shopwonnit for a giveaway that’s bringing together two of our favorite things: MAHJONG + CUTE CLOTHES! And because one winner just isn’t enough, we’re picking TWO LUCKY WINNERS! 🎉\n\nEach winner will receive:\n• A shopwonnit outfit of their choice, including a pair of shorts, a shirt AND a hoodie — all in their preferred colors and sizes!\n• A Ga",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Mahj Mood",
-   "handle": "mahj_mood",
-   "partner": true,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [
-    "mat"
-   ],
-   "dates": [
-    "1/2"
-   ],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfkDtN-xu1t/",
-   "caption": "FLASH SALE! Buy one Mahj Mood mat and get the second 1/2 off!!! Whether you want two for yourself or one for you and one for a friend! \n\nAvailable while supplies last! \n\n**Discount codes do not stack on sale**",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Noli June",
-   "handle": "nolijunemahjong",
-   "partner": true,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [
-    "mat"
-   ],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfirOP9jewc/",
-   "caption": "Beautiful tablescapes. Even more beautiful souls.\n\nA Mahjong retreat at Nine Pines with nolijunemahjong mats setting every table and women who made it unforgettable. Every Mahjong table setting told a story, and every seat held a friend.\n\nThank you tilesandntonic for gathering us to support ordinary_hero, and to hottommies for keeping us warm under the pines.\n\nDrop TUESDAY below for 10% off your n",
-   "slides": 19,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Oh My Mahjong",
-   "handle": "ohmymahjong",
-   "partner": true,
-   "kind": "drop date",
-   "kinds": [
-    "drop date"
-   ],
-   "products": [
-    "tiles"
-   ],
-   "dates": [
-    "tomorrow"
-   ],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/reel/Dfj21bAyHCg/",
-   "caption": "Juniper Tiles are almost here! Your new favorite set launches tomorrow, 11.11 at 10 am CT.💚",
-   "slides": [],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Anders Ruff",
-   "handle": "andersruffdesignco",
-   "partner": true,
-   "kind": "collab",
-   "kinds": [
-    "collab"
-   ],
-   "products": [
-    "tiles",
-    "mat"
-   ],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfkLmn4G0oh/",
-   "caption": "💍 CHARLOTTE BRIDES… THIS ONE’S FOR YOU! 🌹\n\nSomething MAHJ-ical is coming, and we’re looking for 4 brides-to-be in the Charlotte, NC area to be part of a very special photoshoot! ✨\n\nWe’re teaming up with an OG Bachelorette for a SURPRISE collaboration, and YOU could be part of the magic!\n\nEach of our 4 selected brides will receive a gorgeous bridal Mahjong mat + tile set! 🀄💕\n\nHere’s how to get the ",
-   "slides": [
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/899733400_18642763216019042_3501984124605636279_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=XSxyDM-_oOgQ7kNvwHP-8H4&_nc_oc=AdqXUwRMfglzJrTxtrUnM4lb466QXsY2KdxCnEelp-8o837noXVlJonqZOkM9n5nej4&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=-mv2PW2yBfCCYoiIOGyMsg&oh=00_AQQWkO8Utu8p45Yxp6-io_YGaLQjIZNjGP_9UhU8bqntkQ&oe=6AF9237D",
-    "https://scontent-sea5-2.cdninstagram.com/v/t51.82787-15/899484232_18642763225019042_6308494305498522047_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=thK93hf0IaEQ7kNvwEjTRrS&_nc_oc=AdqcmYEWcN1m06HaNf5guX0XjL9gYDC-X1B3rjdvLNjvRZYiE10SZHkyG5HQvA6FbP8&_nc_zt=23&_nc_ht=scontent-sea5-2.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=-mv2PW2yBfCCYoiIOGyMsg&oh=00_AQTItgKzc_mGJAAd71TBzz2oG3UdBmpvLgIuACFp9x7BPQ&oe=6AF92C15"
-   ],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Peace Love Mahjong",
-   "handle": "peacelovemahjong",
-   "partner": true,
-   "kind": "collab",
-   "kinds": [
-    "collab"
-   ],
-   "products": [],
-   "dates": [
-    "November 10th",
-    "November 12"
-   ],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/reel/Dfj4koQhdGg/",
-   "caption": "🚨 GIVEAWAY TIME! 🚨\n\nWe’ve teamed up with our friends at shopwonnit for a giveaway that’s bringing together two of our favorite things: MAHJONG + CUTE CLOTHES! And because one winner just isn’t enough, we’re picking TWO LUCKY WINNERS! 🎉\n\nEach winner will receive:\n• A shopwonnit outfit of their choice, including a pair of shorts, a shirt AND a hoodie — all in their preferred colors and sizes!\n• A Ga",
-   "slides": [],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Mahj Mood",
-   "handle": "mahj_mood",
-   "partner": true,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [
-    "mat"
-   ],
-   "dates": [
-    "1/2"
-   ],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfkDtN-xu1t/",
-   "caption": "FLASH SALE! Buy one Mahj Mood mat and get the second 1/2 off!!! Whether you want two for yourself or one for you and one for a friend! \n\nAvailable while supplies last! \n\n**Discount codes do not stack on sale**",
-   "slides": [],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Let's Be Besties",
-   "handle": "letsbebestiesmahjong",
-   "partner": true,
-   "kind": "launch",
-   "kinds": [
-    "launch"
-   ],
-   "products": [
-    "mat"
-   ],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfkL2z5EbX5/",
-   "caption": "Meet the artist behind Wanda Viola Designs! 🎨🀄️💕\n\nSay hello to Wendy Stewart, one of the talented artists in our LBB Artist Collective! From business professor to mahjong mat designer, Wendy’s story is proof that it’s never too late to follow your dreams! ✨\n\nSwipe to get to know Wendy, discover her favorite mat design, and learn a few fun facts about her! 💚\n\nWe are SO excited to have wandaviolades",
-   "slides": [
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/898875700_17916890931557487_5301070107336414665_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=HD5wMNBUy4YQ7kNvwFv-J1Q&_nc_oc=Adq1Nb1HwTSX2MTm2-PaIf5nA9-ZiS-x-sm2kIHUAAUtq62QDKX1-3fz_NQtnCOg0zs&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=lg0h4w-SeCi2NAZUrpUEew&oh=00_AQTR3eu4PmDjbz1ljD5E_RK7MbuPzi9NL6RvMiSDB3sjlw&oe=6AF93FF6",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/900838600_17916890949557487_8902025678304495243_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ck4ml82HjQkQ7kNvwF40oAb&_nc_oc=AdrjA6hZOkPvFMW2Q2i8su_Rz-d7FDBMuDPftbpZLioyiuI-ho0S74XaOlMR6XsoaEo&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=lg0h4w-SeCi2NAZUrpUEew&oh=00_AQSKnD83hqRJOmLD4sUpZUxbbsVnH5_aGE4B3QSm2gBj-A&oe=6AF930D2",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/901280437_17916890940557487_5655760298493878368_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=APaHNEgWy6kQ7kNvwHBdLWC&_nc_oc=AdpVOyoiyO0smeMZhfOiUK0uzmTtfF3UtogzGiW5HpvTjiP70RUBUHshRcWL8cxPZok&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=lg0h4w-SeCi2NAZUrpUEew&oh=00_AQSX1CvgQexrgpPrG_gJOjE-8ZT2g5hukoc0tlTzyrg3jA&oe=6AF93902",
-    "https://scontent-sea5-2.cdninstagram.com/v/t51.82787-15/899629898_17916890958557487_5606478047151334809_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Cvc1cClm0CYQ7kNvwE2f3i8&_nc_oc=Adrl7UvmQy2tvVSp2299pVMPFLw4soxoM7umluQkhM1GPawnW3-CZCiVPxKI5NFxXak&_nc_zt=23&_nc_ht=scontent-sea5-2.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=lg0h4w-SeCi2NAZUrpUEew&oh=00_AQSJ_Q7IIGsWF6pCf7KEDlMbC-ytViWbSeS6nCn0V8Ckew&oe=6AF9395A",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/894461040_17916890928557487_8630773582331382321_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=LeAHsE9qUuEQ7kNvwETooLQ&_nc_oc=Adocjdxuf3FKeK2IDg6-FFuDT5p9QYcAr8q2iRKgVounW6iYITMdJlpGQ4RYFQqhDHU&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=lg0h4w-SeCi2NAZUrpUEew&oh=00_AQQd08ChXdV3a02wwAUZnVfuTMSnxiGFzdvba1xUdntqLQ&oe=6AF944AD",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/901433560_17916890913557487_3216276648229662097_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=M_IQB8qAvGEQ7kNvwFr1Y-F&_nc_oc=AdrEmsOl2fh1ZiMgDT9IBAnyw011rQWzLl_n0pBLmT8Y9W0cn-CP72egUeNI5wcm-9A&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=lg0h4w-SeCi2NAZUrpUEew&oh=00_AQRD8ddrqgjyjI2hzFZD3wioGBGjt6VnYrmR7muougVW1A&oe=6AF927EE"
-   ],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Noli June",
-   "handle": "nolijunemahjong",
-   "partner": true,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [
-    "mat"
-   ],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfirOP9jewc/",
-   "caption": "Beautiful tablescapes. Even more beautiful souls.\n\nA Mahjong retreat at Nine Pines with nolijunemahjong mats setting every table and women who made it unforgettable. Every Mahjong table setting told a story, and every seat held a friend.\n\nThank you tilesandntonic for gathering us to support ordinary_hero, and to hottommies for keeping us warm under the pines.\n\nDrop TUESDAY below for 10% off your n",
-   "slides": [
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/899192924_17995597947052549_7047913612591966395_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=cL6PVvDKHEYQ7kNvwE1ZNMY&_nc_oc=AdruLfc78S0TU-vUWUtTcPVhWXfRdFI9RI5cc7rrZxG02uXynIgwZgonXxGydCG_Hfs&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQStzAG-GvV6LoTbagaRY4g3zsdGeTBRtrZVll4IGXN0Xg&oe=6AF93A3E",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/898652298_17995597971052549_4421490219532440904_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=kf141n3OrNAQ7kNvwFp2KNA&_nc_oc=Ado8ABRa0oqWIwqwcV97CwLJBAFXoUVjrAK39UBejwI05AiP8bhWdt6lxEJR4p_3ORs&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQTASMx3ztV7gffot5GBDsLuQhmUkp0QqW-rmxPuWVxpdg&oe=6AF93CDE",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/892790077_17995597986052549_3534069922455761074_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=P6MhJe-5q90Q7kNvwFnkZEb&_nc_oc=AdohTWKGOOs-qQQStxH-2z1nieK5KLFntrI2G59HarIdWvbhfSsbIwhY2xQE-31yhq4&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQS3BGZJNZTU05SOf9bnki3XfJW3_K274xF07hT_LRp8Qw&oe=6AF94B70",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/896733399_17995598097052549_1275175706309872659_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=_wv6javOdc0Q7kNvwFzFPvn&_nc_oc=AdrfAh_0-qPCbOJXYExEkjyxTZqNHs8fyrlEQ2RGbUbRgAgwkeqwHyWKBGXG5XrduU8&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQRJvobsqNCaCmdkwAdU9VA47yMsZ67ax5t48KhDmRSVRQ&oe=6AF92F27",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/861843622_17995598034052549_2893465505751986993_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0ld8JY2m1zEQ7kNvwF-GtvQ&_nc_oc=AdoI6HvYD2QgcgXevAbYVT079E4BSzD0Ax59Ah_JFVOkgLB-T03UId_LPll55YdutZg&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQQY5fFOlONv2arq6t_dPPXMVx52m_hGxaP80W-0OEEhJg&oe=6AF945DE",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/896733399_17995598130052549_2329340743778873653_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=lD2cq27tatAQ7kNvwHZ7-_L&_nc_oc=AdqCDrWCK_3nMmgR5RPWn5wVlTztfWZu29i5nf3hEhfqm5tVO8SqgoO4R8WwpZB7eO4&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQQK4hvQa10rLutjRZjiglbV4U-z2HGMeMBH7NYaNPGPNg&oe=6AF93E5C",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/858429409_17995598037052549_8595797606545755578_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nVgAVvdqKMAQ7kNvwG5Q-B7&_nc_oc=Adpt-xi_lQTG-XT5T7WpzzorGbAtxg33T_iPqW2xp-BXe_mL5gY937cPRj7ODCrJ0hU&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQTU4z1WIrVaQ1Cj-5e4jqx8oSbrnaBm7r4-jaCFLzpZCA&oe=6AF92AD0",
-    "https://scontent-sea5-2.cdninstagram.com/v/t51.82787-15/898080191_17995598004052549_4646402030092383034_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=uDPe8vBw99kQ7kNvwFGEdRy&_nc_oc=AdokttpBcLMQ7p3dmKmhZrdg26apcOsN2BvS_dG2XkMRUNpxQ16f_ixGUW2QVOoKKSo&_nc_zt=23&_nc_ht=scontent-sea5-2.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQQjnrZ0WVddeISByLwdrvY6mMD11Hoi_KZttP6iLdNbiA&oe=6AF94D7A",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/897505751_17995598100052549_3354680012621862847_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=UPuz1rCtFTMQ7kNvwEV1nb-&_nc_oc=AdrZtJ1FexGpXmpiBfx-80cd4PL9cwVN5Cd7Knzkgjija2hTHPS6ncysd9lMoUfzeAc&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQR8Do4Ib_8On37A-rvPuqAESOs71MPeZR95gu_ut7EjJw&oe=6AF94F34",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/900661314_17995598082052549_7429688936772484060_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=oR8FDyeNfNQQ7kNvwE4YWxp&_nc_oc=AdpC-XNFPWdCH-a1QW7xpNNUIw5D05QDZLoZtd-VqLCxBGMT6pGxBVdbrJ8VJeyp2Uk&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQQ-_a00X1_sUmEKurbmFtxtVCJDuNlPZqtfgeYjkVl0xw&oe=6AF940B8",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/900634902_17995598127052549_2604272464450530494_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=bJd2-W1ousIQ7kNvwG1VUIg&_nc_oc=Adqw8l72iFyo-uSzd3XB4LaFjN6tfNigYZ5WBWOyTVMJC0rtQTwQbchDyqQVawNuAV8&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQR-msLj4RqHTH70cAMK2ZBaI58hU1DZoZH60qsRfDq5lQ&oe=6AF94C31",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/898712694_17995598250052549_5123530635488290773_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=PohAbOI7GWgQ7kNvwFobLF2&_nc_oc=AdqFuAoMZNcj2DnGdQTrbyUopNSv5m5AeiWnJzGFM7XuztddawGKH4RsLHo6wr2-qys&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQQZwNMyZIfPEqarGyrKxO0zWW7YKwv1cL2c3NuZm6Bvnw&oe=6AF92F79",
-    "https://scontent-sea5-2.cdninstagram.com/v/t51.82787-15/899463631_17995598274052549_365892987568035403_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0jwdlM8n5OgQ7kNvwFUnylH&_nc_oc=AdqP0lZkFkEP58hWCMBkaq8N_iNdvi3xuztojvwzQsipzFCuo3uYQGq6k3aDUUJUEt0&_nc_zt=23&_nc_ht=scontent-sea5-2.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQRxFmeZlMYQaQRIz1_aOgexrfQmYMHBTs-FlsI9g0J9uA&oe=6AF92D69",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/898869269_17995598331052549_8542538102530026793_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=szAWoH4wXRwQ7kNvwHZL5iL&_nc_oc=Adrvj6QEuhlbyvxHnmw2ZIYp14jfZAgeq2J25w0E5yVP3oGWISi37A3XAxKp5gfphcI&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQQbN7YWXRjYYEdkaN9ot3y0rLntzjcha5TVVB8ASfDyWg&oe=6AF9490D",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/899667811_17995598358052549_3062179536805644815_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Kbx0zaoD4SwQ7kNvwEJP369&_nc_oc=Adpx8cna4dRjZ4tPfWcTWZ-tz_hNF-1T5E-25BIzR54MZHWzEdrhsiTizE72BCKL7jM&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQS4YptX5WcitBRkdYm8gMeHGF3HDTmaX2B37-bLCwhDNQ&oe=6AF940F4",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/896977408_17995598340052549_4333437020113366042_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=lU0qYLlZ-WwQ7kNvwECxsxz&_nc_oc=AdqBASDeOhHirv25WxeKiG07iv2bhaklk5xcXiVklwyoh9E1h1S7Pe1CbyJs20HFu_U&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQTsCW7ESD5rQKQP4Mmq4cUMlaTTR7sYTLh5jno2hAgL6Q&oe=6AF93844",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/898165076_17995598322052549_117688267075519225_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=rJ1uD46NW2wQ7kNvwG7f0CC&_nc_oc=Adri6pH69TcygSeZhwaLYPZ0n0sB8syuXDliL1EE4s7NeLnYIcFkkg264EiLlXYdUzg&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQTrK_foxp6Qs5DYzVNk7inhC9qWf7M7amDwg4TCPBPZZw&oe=6AF94511",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/896977406_17995598370052549_1825503501854453014_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=5DCtbb2TmYgQ7kNvwFRs3xK&_nc_oc=Adq07BQNMS1SebzJmJxM9lNvQj4R0zpRFn69UtYn7rjd2JimeE3LMCzelDsyKilxMtY&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQQ1E342Rtyp2rSOSsT59bxcNUoqEGBbOiIgp6nPwpF7ig&oe=6AF9285D",
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/892745307_17995598283052549_8049021447111995988_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Pt3NMMAAmyIQ7kNvwFL2Qx_&_nc_oc=Adr1ItG984TyPKr03J1YDlXvDmDOz4hgzu7iL9qOdiV_JpxFJod4ba3vQIJ3PsfK59U&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WkkBpz2NY5j91s3BPdZdjQ&oh=00_AQTtWo59nQvlrz6oqRZ9Y3HUJL27hrFigu4Ys50zLZvxqw&oe=6AF9334F"
-   ],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Hutch & Nook",
-   "handle": "hutchandnook",
-   "partner": false,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/reel/DfkL_1ENKEA/",
-   "caption": "Need we say more??!! \n\nAll items fully stocked on H&N website! There might be a code for first time purchases 👀💕 \n\nWww.hutchandnook.com\n\n#mahjong #hutchandnook #mahjongg #mahj #mahjongtiles",
-   "slides": [],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Oh My Mahjong",
-   "handle": "ohmymahjong",
-   "partner": true,
-   "kind": "drop date",
-   "kinds": [
-    "drop date"
-   ],
-   "products": [
-    "tiles"
-   ],
-   "dates": [
-    "tomorrow"
-   ],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/reel/Dfj21bAyHCg/",
-   "caption": "Juniper Tiles are almost here! Your new favorite set launches tomorrow, 11.11 at 10 am CT.💚",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Anders Ruff",
-   "handle": "andersruffdesignco",
-   "partner": true,
-   "kind": "collab",
-   "kinds": [
-    "collab"
-   ],
-   "products": [
-    "tiles",
-    "mat"
-   ],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfkLmn4G0oh/",
-   "caption": "💍 CHARLOTTE BRIDES… THIS ONE’S FOR YOU! 🌹\n\nSomething MAHJ-ical is coming, and we’re looking for 4 brides-to-be in the Charlotte, NC area to be part of a very special photoshoot! ✨\n\nWe’re teaming up with an OG Bachelorette for a SURPRISE collaboration, and YOU could be part of the magic!\n\nEach of our 4 selected brides will receive a gorgeous bridal Mahjong mat + tile set! 🀄💕\n\nHere’s how to get the ",
-   "slides": 2,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Mahj Mood",
-   "handle": "mahj_mood",
-   "partner": true,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [
-    "mat"
-   ],
-   "dates": [
-    "1/2"
-   ],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfkDtN-xu1t/",
-   "caption": "FLASH SALE! Buy one Mahj Mood mat and get the second 1/2 off!!! Whether you want two for yourself or one for you and one for a friend! \n\nAvailable while supplies last! \n\n**Discount codes do not stack on sale**",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Peace Love Mahjong",
-   "handle": "peacelovemahjong",
-   "partner": true,
-   "kind": "collab",
-   "kinds": [
-    "collab"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/reel/Dfj4koQhdGg/",
-   "caption": "🚨 GIVEAWAY TIME! 🚨\n\nWe’ve teamed up with our friends at shopwonnit for a giveaway that’s bringing together two of our favorite things: MAHJONG + CUTE CLOTHES! And because one winner just isn’t enough, we’re picking TWO LUCKY WINNERS! 🎉\n\nEach winner will receive:\n• A shopwonnit outfit of their choice, including a pair of shorts, a shirt AND a hoodie — all in their preferred colors and sizes!\n• A Ga",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Let's Be Besties",
-   "handle": "letsbebestiesmahjong",
-   "partner": true,
-   "kind": "launch",
-   "kinds": [
-    "launch"
-   ],
-   "products": [
-    "mat"
-   ],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfkL2z5EbX5/",
-   "caption": "Meet the artist behind Wanda Viola Designs! 🎨🀄️💕\n\nSay hello to Wendy Stewart, one of the talented artists in our LBB Artist Collective! From business professor to mahjong mat designer, Wendy’s story is proof that it’s never too late to follow your dreams! ✨\n\nSwipe to get to know Wendy, discover her favorite mat design, and learn a few fun facts about her! 💚\n\nWe are SO excited to have wandaviolades",
-   "slides": 6,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Hutch & Nook",
-   "handle": "hutchandnook",
-   "partner": false,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/reel/DfkL_1ENKEA/",
-   "caption": "Need we say more??!! \n\nAll items fully stocked on H&N website! There might be a code for first time purchases 👀💕 \n\nWww.hutchandnook.com\n\n#mahjong #hutchandnook #mahjongg #mahj #mahjongtiles",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Noli June",
-   "handle": "nolijunemahjong",
-   "partner": true,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [
-    "mat"
-   ],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfirOP9jewc/",
-   "caption": "Beautiful tablescapes. Even more beautiful souls.\n\nA Mahjong retreat at Nine Pines with nolijunemahjong mats setting every table and women who made it unforgettable. Every Mahjong table setting told a story, and every seat held a friend.\n\nThank you tilesandntonic for gathering us to support ordinary_hero, and to hottommies for keeping us warm under the pines.\n\nDrop TUESDAY below for 10% off your n",
-   "slides": 19,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Oh My Mahjong",
-   "handle": "ohmymahjong",
-   "partner": true,
-   "kind": "drop date",
-   "kinds": [
-    "drop date"
-   ],
-   "products": [
-    "tiles"
-   ],
-   "dates": [
-    "tomorrow"
-   ],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/reel/Dfj21bAyHCg/",
-   "caption": "Juniper Tiles are almost here! Your new favorite set launches tomorrow, 11.11 at 10 am CT.💚",
-   "slides": [
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/890236817_18039133208895789_1663942929964595519_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=pc14SYlU0PwQ7kNvwG6HIms&_nc_oc=Adou-VRCNZcDjG8tFToMuGBJwF79O-FLIjgR34JlYR-OXR3VguHy07QO7G5wINdvKF8&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=A7vwC6eh6dquR3XERVRQKg&_nc_tpa=Q5bMBQJiBY664NnbXqPcoZLwGQNFudq7oRmMHx-_wAlZLVCVFfAY8cAioUzdMbhEgAJeNAi6rFC8_9g_&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQnHFA4kuXbdvqFuzWRtOZUDQoq2t3hRyBgP6AjIXdWtQ&oe=6AFA974C"
-   ],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Anders Ruff",
-   "handle": "andersruffdesignco",
-   "partner": true,
-   "kind": "collab",
-   "kinds": [
-    "collab"
-   ],
-   "products": [
-    "tiles",
-    "mat"
-   ],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfkLmn4G0oh/",
-   "caption": "💍 CHARLOTTE BRIDES… THIS ONE’S FOR YOU! 🌹\n\nSomething MAHJ-ical is coming, and we’re looking for 4 brides-to-be in the Charlotte, NC area to be part of a very special photoshoot! ✨\n\nWe’re teaming up with an OG Bachelorette for a SURPRISE collaboration, and YOU could be part of the magic!\n\nEach of our 4 selected brides will receive a gorgeous bridal Mahjong mat + tile set! 🀄💕\n\nHere’s how to get the ",
-   "slides": [
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/899733400_18642763216019042_3501984124605636279_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=XSxyDM-_oOgQ7kNvwFq42_2&_nc_oc=AdpM3xOb4h51n7S7T-Qm-dcH-PiK6gGv-mmTWi0eTUG7k2yfMNVwb4jq88zhHt4R7ag&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=-8AQWg9Cx9u_5wxR_-QlGA&oh=00_AQRKZ_Aj2i13cZQooPRGNMF8Qz40UEnai3OR-gTxrWDblQ&oe=6AFA74FD",
-    "https://scontent-sea5-2.cdninstagram.com/v/t51.82787-15/899484232_18642763225019042_6308494305498522047_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=thK93hf0IaEQ7kNvwGk4mdE&_nc_oc=Adp4iRmqBXTliEieP1tgw1C0V7TuPAzC1I6MKLu1k_f_OOlB4glzubiYDfdn1ot2wtA&_nc_zt=23&_nc_ht=scontent-sea5-2.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=-8AQWg9Cx9u_5wxR_-QlGA&oh=00_AQTfZNwQb27sRWByS2TaAsN5l_YdWaixmk7JqMtVLFXM7g&oe=6AFA7D95"
-   ],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Peace Love Mahjong",
-   "handle": "peacelovemahjong",
-   "partner": true,
-   "kind": "collab",
-   "kinds": [
-    "collab"
-   ],
-   "products": [],
-   "dates": [
-    "November 10th",
-    "November 12"
-   ],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/reel/Dfj4koQhdGg/",
-   "caption": "🚨 GIVEAWAY TIME! 🚨\n\nWe’ve teamed up with our friends at shopwonnit for a giveaway that’s bringing together two of our favorite things: MAHJONG + CUTE CLOTHES! And because one winner just isn’t enough, we’re picking TWO LUCKY WINNERS! 🎉\n\nEach winner will receive:\n• A shopwonnit outfit of their choice, including a pair of shorts, a shirt AND a hoodie — all in their preferred colors and sizes!\n• A Ga",
-   "slides": [
-    "https://scontent-sea5-2.cdninstagram.com/v/t51.82787-15/888383147_18025610948943879_2918578180593033144_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Y6kym2dzgEAQ7kNvwHlayg4&_nc_oc=AdooStJt6mkBBrt77HkTkfNFbAMXEQzRAHs8Fqj410CQHDeexyd7vzlHxd7sc5J_gsg&_nc_zt=23&_nc_ht=scontent-sea5-2.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=L6yVNN_1Pg6cQt3uIGIPRA&_nc_tpa=Q5bMBQJdj9COcHGtK1VFLUseGI5tWHPMP8VNAQvGorxQ8Hx-VkY2iewvNzcsfZvwqYd-9cfjfb0JESPx&oh=00_AQSh1L5rPMEj6OUhM51528zqjSxxjlYAtwL-89JdjTjJlA&oe=6AFA8EE4"
-   ],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Mahj Mood",
-   "handle": "mahj_mood",
-   "partner": true,
-   "kind": "sale",
-   "kinds": [
-    "sale",
-    "preorder"
-   ],
-   "products": [
-    "mat"
-   ],
-   "dates": [
-    "1/2"
-   ],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfkDtN-xu1t/",
-   "caption": "FLASH SALE! Buy one Mahj Mood mat and get the second 1/2 off!!! Whether you want two for yourself or one for you and one for a friend! \n\nAvailable while supplies last! \n\n**All mats except for Playing For Keeps Pre-Order Mat included**\n\n**Discount codes do not stack on sale**",
-   "slides": [
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/900605291_17918347350521293_7440150240312478709_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=R1QFn4aDmaMQ7kNvwGLCshh&_nc_oc=AdrcxTRT1-nCwifWB5P327YR5qNUTkP_fvcTXzo5Is-k-w9BElF4Fwq01XMOsBfSqgA&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WBjJLQwxlIWiLabcifz5cg&oh=00_AQQ_zZKo-5zqpJNGv2Ju0T5334npxaHi_HS6amqZD6bhJg&oe=6AFA7371"
-   ],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Let's Be Besties",
-   "handle": "letsbebestiesmahjong",
-   "partner": true,
-   "kind": "launch",
-   "kinds": [
-    "launch"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfkL2z5EbX5/",
-   "caption": "Meet the artist behind Wanda Viola Designs! ... Wendy Stewart, one of the talented artists in our LBB Artist Collective! ... Shop the LBB Artist Collective through the link in our bio!",
-   "slides": [
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/898875700_17916890931557487_5301070107336414665_n.jpg"
-   ],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Soirée All Day",
-   "handle": "soireeallday.co",
-   "partner": true,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [
-    "tiles",
-    "mat"
-   ],
-   "dates": [
-    "Nov 13",
-    "Nov 15"
-   ],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/Dfkrdo9nxIH/",
-   "caption": "Holiday Giveaway: THAT MAHJONG MOMENT Holiday Soirée tiles + SOIREE ALL DAY Color Me Merry Mat. Follow thatmahjongmoment & soireeallday.co, like, tag three friends. Closes Fri Nov 13 11:59 PM CT; winner announced Sun Nov 15, contacted by DM. US 18+. (Giveaway; no sale.)",
-   "slides": [
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/895741469_18102472163647331_8587715305711031659_n.jpg"
-   ],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Hutch & Nook",
-   "handle": "hutchandnook",
-   "partner": false,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/reel/DfkL_1ENKEA/",
-   "caption": "Need we say more??!! \n\nAll items fully stocked on H&N website! There might be a code for first time purchases \n\nWww.hutchandnook.com",
-   "slides": [
-    "(thumb) https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/902584778_2371047620309701_4609966252699532034_n.jpg"
-   ],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Oh My Mahjong",
-   "handle": "ohmymahjong",
-   "partner": true,
-   "kind": "drop date",
-   "kinds": [
-    "drop date"
-   ],
-   "products": [
-    "tiles"
-   ],
-   "dates": [
-    "tomorrow"
-   ],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/reel/Dfj21bAyHCg/",
-   "caption": "Juniper Tiles are almost here! Your new favorite set launches tomorrow, 11.11 at 10 am CT.💚",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Anders Ruff",
-   "handle": "andersruffdesignco",
-   "partner": true,
-   "kind": "collab",
-   "kinds": [
-    "collab"
-   ],
-   "products": [
-    "tiles",
-    "mat"
-   ],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfkLmn4G0oh/",
-   "caption": "💍 CHARLOTTE BRIDES… THIS ONE’S FOR YOU! 🌹\n\nSomething MAHJ-ical is coming, and we’re looking for 4 brides-to-be in the Charlotte, NC area to be part of a very special photoshoot! ✨\n\nWe’re teaming up with an OG Bachelorette for a SURPRISE collaboration, and YOU could be part of the magic!\n\nEach of our 4 selected brides will receive a gorgeous bridal Mahjong mat + tile set! 🀄💕\n\nHere’s how to get the ",
-   "slides": 2,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Peace Love Mahjong",
-   "handle": "peacelovemahjong",
-   "partner": true,
-   "kind": "collab",
-   "kinds": [
-    "collab"
-   ],
-   "products": [],
-   "dates": [
-    "November 10th",
-    "November 12"
-   ],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/reel/Dfj4koQhdGg/",
-   "caption": "🚨 GIVEAWAY TIME! 🚨\n\nWe’ve teamed up with our friends at shopwonnit for a giveaway that’s bringing together two of our favorite things: MAHJONG + CUTE CLOTHES! And because one winner just isn’t enough, we’re picking TWO LUCKY WINNERS! 🎉\n\nEach winner will receive:\n• A shopwonnit outfit of their choice, including a pair of shorts, a shirt AND a hoodie — all in their preferred colors and sizes!\n• A Ga",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Mahj Mood",
-   "handle": "mahj_mood",
-   "partner": true,
-   "kind": "sale",
-   "kinds": [
-    "sale",
-    "preorder"
-   ],
-   "products": [
-    "mat"
-   ],
-   "dates": [
-    "1/2"
-   ],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfkDtN-xu1t/",
-   "caption": "FLASH SALE! Buy one Mahj Mood mat and get the second 1/2 off!!! Whether you want two for yourself or one for you and one for a friend! \n\nAvailable while supplies last! \n\n**All mats except for Playing For Keeps Pre-Order Mat included**\n\n**Discount codes do not stack on sale**",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Let's Be Besties",
-   "handle": "letsbebestiesmahjong",
-   "partner": true,
-   "kind": "launch",
-   "kinds": [
-    "launch"
-   ],
-   "products": [
-    "mat"
-   ],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfkL2z5EbX5/",
-   "caption": "Meet the artist behind Wanda Viola Designs! 🎨🀄️💕\n\nSay hello to Wendy Stewart, one of the talented artists in our LBB Artist Collective! From business professor to mahjong mat designer, Wendy’s story is proof that it’s never too late to follow your dreams! ✨\n\nSwipe to get to know Wendy, discover her favorite mat design, and learn a few fun facts about her! 💚\n\nWe are SO excited to have wandaviolades",
-   "slides": 6,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Noli June",
-   "handle": "nolijunemahjong",
-   "partner": true,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [
-    "mat"
-   ],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfirOP9jewc/",
-   "caption": "Beautiful tablescapes. Even more beautiful souls.\n\nA Mahjong retreat at Nine Pines with nolijunemahjong mats setting every table and women who made it unforgettable. Every Mahjong table setting told a story, and every seat held a friend.\n\nThank you tilesandntonic for gathering us to support ordinary_hero, and to hottommies for keeping us warm under the pines.\n\nDrop TUESDAY below for 10% off your n",
-   "slides": 19,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Hutch & Nook",
-   "handle": "hutchandnook",
-   "partner": false,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/reel/DfkL_1ENKEA/",
-   "caption": "Need we say more??!! \n\nAll items fully stocked on H&N website! There might be a code for first time purchases 👀💕 \n\nWww.hutchandnook.com\n\n#mahjong #hutchandnook #mahjongg #mahj #mahjongtiles",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Let's Be Besties",
-   "handle": "letsbebestiesmahjong",
-   "partner": true,
-   "kind": "launch",
-   "kinds": [
-    "launch"
-   ],
-   "products": [
-    "mat"
-   ],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfkL2z5EbX5/",
-   "caption": "Meet the artist behind Wanda Viola Designs! 🎨🀄️💕\n\nSay hello to Wendy Stewart, one of the talented artists in our LBB Artist Collective! From business professor to mahjong mat designer, Wendy’s story is proof that it’s never too late to follow your dreams! ✨\n\nSwipe to get to know Wendy, discover her favorite mat design, and learn a few fun facts about her! 💚\n\nWe are SO excited to have wandaviolades",
-   "slides": 6,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Hutch & Nook",
-   "handle": "hutchandnook",
-   "partner": false,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/reel/DfkL_1ENKEA/",
-   "caption": "Need we say more??!! \n\nAll items fully stocked on H&N website! There might be a code for first time purchases 👀💕 \n\nWww.hutchandnook.com\n\n#mahjong #hutchandnook #mahjongg #mahj #mahjongtiles",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Mahj Mood",
-   "handle": "mahj_mood",
-   "partner": true,
-   "kind": "sale",
-   "kinds": [
-    "sale",
-    "preorder"
-   ],
-   "products": [
-    "mat"
-   ],
-   "dates": [
-    "1/2"
-   ],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfkDtN-xu1t/",
-   "caption": "FLASH SALE! Buy one Mahj Mood mat, get second 1/2 off. All mats except Playing For Keeps Pre-Order Mat. Codes don't stack.",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Hutch & Nook",
-   "handle": "hutchandnook",
-   "partner": false,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/reel/DfkL_1ENKEA/",
-   "caption": "Need we say more?? All items fully stocked on H&N website. There might be a code for first time purchases. hutchandnook.com",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Peace Love Mahjong",
-   "handle": "peacelovemahjong",
-   "partner": true,
-   "kind": "collab",
-   "kinds": [
-    "collab"
-   ],
-   "products": [],
-   "dates": [
-    "November 10th",
-    "November 12"
-   ],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/reel/Dfj4koQhdGg/",
-   "caption": "🚨 GIVEAWAY CLOSED! 🚨\n\nWe’ve teamed up with our friends at shopwonnit for a giveaway that’s bringing together two of our favorite things: MAHJONG + CUTE CLOTHES! And because one winner just isn’t enough, we’re picking TWO LUCKY WINNERS! 🎉\n\nEach winner will receive:\n• A shopwonnit outfit of their choice, including a pair of shorts, a shirt AND a hoodie — all in their preferred colors and sizes!\n• A ",
-   "slides": [],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Mahj Mood",
-   "handle": "mahj_mood",
-   "partner": true,
-   "kind": "sale",
-   "kinds": [
-    "sale",
-    "preorder"
-   ],
-   "products": [
-    "mat"
-   ],
-   "dates": [
-    "1/2"
-   ],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/p/DfkDtN-xu1t/",
-   "caption": "FLASH SALE! Buy one Mahj Mood mat and get the second 1/2 off!!! Whether you want two for yourself or one for you and one for a friend! \n\nAvailable while supplies last! \n\n**All mats except for Playing For Keeps Pre-Order Mat included**\n\n**Discount codes do not stack on sale**",
-   "slides": [],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Hutch & Nook",
-   "handle": "hutchandnook",
-   "partner": false,
-   "kind": "sale",
-   "kinds": [
-    "sale"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-10",
-   "url": "https://www.instagram.com/reel/DfkL_1ENKEA/",
-   "caption": "Need we say more??!! \n\nAll items fully stocked on H&N website! There might be a code for first time purchases 👀💕 \n\nWww.hutchandnook.com\n\n#mahjong #hutchandnook #mahjongg #mahj #mahjongtiles",
-   "slides": [],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Charleston Mahjong Club",
-   "handle": "charlestonmahjongclub",
-   "partner": true,
-   "kind": "drop date",
-   "kinds": [
-    "drop date",
-    "launch"
-   ],
-   "products": [
-    "tiles"
-   ],
-   "dates": [],
-   "posted": "2026-11-09",
-   "url": "https://www.instagram.com/reel/DfiTXf8xAYJ/",
-   "caption": "Well, look at us growing up! 😉🥂\n\nTwo BIG things happening around here at CMC!\n\nFirst, our NEW STORE LOCATOR is officially LIVE! You can now find your favorite Charleston Mahjong Club products at a retailer near you. Because sometimes you just need to see those tiles in person!\n\nAND… we’ve got a new place to call home! We’ve officially moved into our NEW OFFICES + SHOWROOM, and we’re busy making it",
-   "slides": 1,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Let's Be Besties",
-   "handle": "letsbebestiesmahjong",
-   "partner": true,
-   "kind": "launch",
-   "kinds": [
-    "launch",
-    "collab"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-09",
-   "url": "https://www.instagram.com/reel/DfiVSKTx2FJ/",
-   "caption": "The LBB Artist Collective is officially LIVE! 🌟We’ve teamed up with some incredibly talented artists to bring you a collection full of creativity, color, and one-of-a-kind designs!\n\nA HUGE shoutout to the amazing artists who helped bring this collection to life! 🎨💕 We couldn’t be more excited to share their talent with our mahjong besties!\n\nMeet some of our artists: ✨\nohbonstudios \nbeachymahj \nart",
-   "slides": 1,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "LoveShackFancy",
-   "handle": "loveshackfancy",
-   "partner": false,
-   "kind": "collab",
-   "kinds": [
-    "collab"
-   ],
-   "products": [],
-   "dates": [
-    "November 13"
-   ],
-   "posted": "2026-11-09",
-   "url": "https://www.instagram.com/reel/DficNjJCiV-/",
-   "caption": "Snow day bliss, unboxed📦🎀 New LoveShackFancy x hunterboots arrives November 13 at 11 AM ET💗",
-   "slides": 1,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "LoveShackFancy",
-   "handle": "loveshackfancy",
-   "partner": false,
-   "kind": "drop date",
-   "kinds": [
-    "drop date"
-   ],
-   "products": [],
-   "dates": [
-    "TOMORROW"
-   ],
-   "posted": "2026-11-09",
-   "url": "https://www.instagram.com/reel/DfiS0FrCyNN/",
-   "caption": "LAUNCHING TOMORROW !! Entering our Gilded Age era✨🥂Get ready and mark your calendar 11.10.26👀",
-   "slides": 1,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Charleston Mahjong Club",
-   "handle": "charlestonmahjongclub",
-   "partner": true,
-   "kind": "drop date",
-   "kinds": [
-    "drop date",
-    "launch"
-   ],
-   "products": [
-    "tiles"
-   ],
-   "dates": [],
-   "posted": "2026-11-09",
-   "url": "https://www.instagram.com/reel/DfiTXf8xAYJ/",
-   "caption": "Well, look at us growing up! 😉🥂\n\nTwo BIG things happening around here at CMC!\n\nFirst, our NEW STORE LOCATOR is officially LIVE! You can now find your favorite Charleston Mahjong Club products at a retailer near you. Because sometimes you just need to see those tiles in person!\n\nAND… we’ve got a new place to call home! We’ve officially moved into our NEW OFFICES + SHOWROOM, and we’re busy making it",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Let's Be Besties",
-   "handle": "letsbebestiesmahjong",
-   "partner": true,
-   "kind": "launch",
-   "kinds": [
-    "launch",
-    "collab"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-09",
-   "url": "https://www.instagram.com/reel/DfiVSKTx2FJ/",
-   "caption": "The LBB Artist Collective is officially LIVE! 🌟We’ve teamed up with some incredibly talented artists to bring you a collection full of creativity, color, and one-of-a-kind designs!\n\nA HUGE shoutout to the amazing artists who helped bring this collection to life! 🎨💕 We couldn’t be more excited to share their talent with our mahjong besties!\n\nMeet some of our artists: ✨\nohbonstudios\nbeachymahj\nart.b",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "LoveShackFancy",
-   "handle": "loveshackfancy",
-   "partner": false,
-   "kind": "collab",
-   "kinds": [
-    "collab"
-   ],
-   "products": [],
-   "dates": [
-    "November 13"
-   ],
-   "posted": "2026-11-09",
-   "url": "https://www.instagram.com/reel/DficNjJCiV-/",
-   "caption": "Snow day bliss, unboxed📦🎀 New LoveShackFancy x hunterboots arrives November 13 at 11 AM ET💗",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Charleston Mahjong Club",
-   "handle": "charlestonmahjongclub",
-   "partner": true,
-   "kind": "drop date",
-   "kinds": [
-    "drop date",
-    "launch"
-   ],
-   "products": [
-    "tiles"
-   ],
-   "dates": [],
-   "posted": "2026-11-09",
-   "url": "https://www.instagram.com/reel/DfiTXf8xAYJ/",
-   "caption": "Well, look at us growing up! 😉🥂\n\nTwo BIG things happening around here at CMC!\n\nFirst, our NEW STORE LOCATOR is officially LIVE! You can now find your favorite Charleston Mahjong Club products at a retailer near you. Because sometimes you just need to see those tiles in person!\n\nAND… we’ve got a new place to call home! We’ve officially moved into our NEW OFFICES + SHOWROOM, and we’re busy making it",
-   "slides": [],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Let's Be Besties",
-   "handle": "letsbebestiesmahjong",
-   "partner": true,
-   "kind": "launch",
-   "kinds": [
-    "launch",
-    "collab"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-09",
-   "url": "https://www.instagram.com/reel/DfiVSKTx2FJ/",
-   "caption": "The LBB Artist Collective is officially LIVE! 🌟We’ve teamed up with some incredibly talented artists to bring you a collection full of creativity, color, and one-of-a-kind designs!\n\nA HUGE shoutout to the amazing artists who helped bring this collection to life! 🎨💕 We couldn’t be more excited to share their talent with our mahjong besties!\n\nMeet some of our artists: ✨\nohbonstudios \nbeachymahj \nart",
-   "slides": [],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Charleston Mahjong Club",
-   "handle": "charlestonmahjongclub",
-   "partner": true,
-   "kind": "launch",
-   "kinds": [
-    "launch"
-   ],
-   "products": [
-    "tiles"
-   ],
-   "dates": [],
-   "posted": "2026-11-09",
-   "url": "https://www.instagram.com/reel/DfiTXf8xAYJ/",
-   "caption": "Well, look at us growing up! 😉🥂\n\nTwo BIG things happening around here at CMC!\n\nFirst, our NEW STORE LOCATOR is officially LIVE! You can now find your favorite Charleston Mahjong Club products at a retailer near you. Because sometimes you just need to see those tiles in person!\n\nAND… we’ve got a new place to call home! We’ve officially moved into our NEW OFFICES + SHOWROOM, and we’re busy making it",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Let's Be Besties",
-   "handle": "letsbebestiesmahjong",
-   "partner": true,
-   "kind": "launch",
-   "kinds": [
-    "launch",
-    "collab"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-09",
-   "url": "https://www.instagram.com/reel/DfiVSKTx2FJ/",
-   "caption": "The LBB Artist Collective is officially LIVE! 🌟We’ve teamed up with some incredibly talented artists to bring you a collection full of creativity, color, and one-of-a-kind designs!\n\nA HUGE shoutout to the amazing artists who helped bring this collection to life! 🎨💕 We couldn’t be more excited to share their talent with our mahjong besties!\n\nMeet some of our artists: ✨\nohbonstudios \nbeachymahj \nart",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Charleston Mahjong Club",
-   "handle": "charlestonmahjongclub",
-   "partner": true,
-   "kind": "drop date",
-   "kinds": [
-    "drop date",
-    "launch"
-   ],
-   "products": [
-    "tiles"
-   ],
-   "dates": [],
-   "posted": "2026-11-09",
-   "url": "https://www.instagram.com/reel/DfiTXf8xAYJ/",
-   "caption": "Well, look at us growing up! 😉🥂\n\nTwo BIG things happening around here at CMC!\n\nFirst, our NEW STORE LOCATOR is officially LIVE! You can now find your favorite Charleston Mahjong Club products at a retailer near you. Because sometimes you just need to see those tiles in person!\n\nAND… we’ve got a new place to call home! We’ve officially moved into our NEW OFFICES + SHOWROOM, and we’re busy making it",
-   "slides": [
-    "https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/901506304_17966572047219161_8560443719526728868_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=gr4bYfogIbkQ7kNvwHAZ0kZ&_nc_oc=AdrZAXYxM8Olb9wFb_ezkPqtLuFra5PrVbdxtGWC4byQzho7VTwRmy8EV69gh7--tYk&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=h-RTYyIyOjiB6rU36A6IJA&_nc_tpa=Q5bMBQIC3_Dc2lJYlmTmEXHJDuR4NoN7fap1LlCA-TdlqWX0gBQvl71M0PSSPSotGFdtllrRuZ14ghIF&oh=00_AQSPwnQncsAl_kEBQJbG8j-gBDT3P1AFZwwVUSiN2tgEmw&oe=6AFA8805"
-   ],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Let's Be Besties",
-   "handle": "letsbebestiesmahjong",
-   "partner": true,
-   "kind": "launch",
-   "kinds": [
-    "launch"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-09",
-   "url": "https://www.instagram.com/reel/DfiVSKTx2FJ/",
-   "caption": "The LBB Artist Collective is officially LIVE! ... artists: ohbonstudios, beachymahj, art.by_ac, wandavioladesigns, spill_the_mahj ... Shop NOW through the link in our bio!",
-   "slides": [
-    "(thumb) https://scontent-sea5-1.cdninstagram.com/v/t51.71878-15/901293303_2017486732273705_7016816311749536549_n.jpg"
-   ],
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Charleston Mahjong Club",
-   "handle": "charlestonmahjongclub",
-   "partner": true,
-   "kind": "drop date",
-   "kinds": [
-    "drop date",
-    "launch"
-   ],
-   "products": [
-    "tiles"
-   ],
-   "dates": [],
-   "posted": "2026-11-09",
-   "url": "https://www.instagram.com/reel/DfiTXf8xAYJ/",
-   "caption": "Well, look at us growing up! 😉🥂\n\nTwo BIG things happening around here at CMC!\n\nFirst, our NEW STORE LOCATOR is officially LIVE! You can now find your favorite Charleston Mahjong Club products at a retailer near you. Because sometimes you just need to see those tiles in person!\n\nAND… we’ve got a new place to call home! We’ve officially moved into our NEW OFFICES + SHOWROOM, and we’re busy making it",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Let's Be Besties",
-   "handle": "letsbebestiesmahjong",
-   "partner": true,
-   "kind": "launch",
-   "kinds": [
-    "launch",
-    "collab"
-   ],
-   "products": [],
-   "dates": [],
-   "posted": "2026-11-09",
-   "url": "https://www.instagram.com/reel/DfiVSKTx2FJ/",
-   "caption": "The LBB Artist Collective is officially LIVE! 🌟We’ve teamed up with some incredibly talented artists to bring you a collection full of creativity, color, and one-of-a-kind designs!\n\nA HUGE shoutout to the amazing artists who helped bring this collection to life! 🎨💕 We couldn’t be more excited to share their talent with our mahjong besties!\n\nMeet some of our artists: ✨\nohbonstudios \nbeachymahj \nart",
-   "slides": 0,
-   "never_name": false,
-   "never_social": false
-  },
-  {
-   "src": "instagram",
-   "brand": "Charleston Mahjong Club",
-   "handle": "charlestonmahjongclub",
-   "partner": true,
-   "kind": "drop date",
-   "kinds": [
-    "drop date",
-    "launch"
-   ],
-   "products": [
-    "tiles"
-   ],
-   "dates": [],
-   "posted": "2026-11-09",
-   "url": "https://www.instagram.com/reel/DfiTXf8xAYJ/",
-   "caption": "Well, look at us growing up! 😉🥂\n\nTwo BIG things happening around here at CMC!\n\nFirst, our NEW STORE LOCATOR is officially LIVE! You can now find your favorite Charleston Mahjong Club products at a retailer near you. Because sometimes you just need to see those tiles in person!\n\nAND… we’ve got a new place to call home! We’ve officially moved into our NEW OFFICES + SHOWROOM, and we’re busy making it",
-   "slides": [],
-   "never_name": false,
-   "never_social": false
   }
  ],
  "store": [
+  {
+   "src": "store",
+   "brand": "Splash of Color",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "tiles"
+   ],
+   "posted": "2026-11-21",
+   "url": "https://splashofcolorco.com/products/funny-valentine-conversation-hearts-4-layer-american-mahjong-tiles-set",
+   "caption": "Funny Valentine Conversation Hearts 4 Layer American Mahjong Tiles Set",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Splash of Color",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-21",
+   "url": "https://splashofcolorco.com/products/vintage-valentine-conversation-hearts-mahjong-mat-sleek-surface",
+   "caption": "Vintage Valentine Conversation Hearts Mahjong Mat Sleek Surface",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Splash of Color",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-21",
+   "url": "https://splashofcolorco.com/products/sorry-i-cant-talk-right-now-valentine-love-mahjong-mat-sleek-surface",
+   "caption": "Sorry I Can't Talk Right Now, Valentine Love Mahjong Mat Sleek Surface",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-21",
+   "url": "https://www.mahjongbysi.com/products/beads-and-brass-mahjong-mat",
+   "caption": "Mahjong by SI™ Beads & Brass Mahjong Mat",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-21",
+   "url": "https://www.mahjongbysi.com/products/brass-beneath-the-oaks-mahjong-mat",
+   "caption": "Mahjong by SI™ Brass Beneath the Oaks Mahjong Mat",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-21",
+   "url": "https://www.mahjongbysi.com/products/midnight-masquerade-mahjong-mat",
+   "caption": "Mahjong by SI™ Masquerade at Midnight Mahjong Mat",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Britt Mills",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://brittmillsdesign.com/products/colette-square-tablecloth",
+   "caption": "Colette Square Tablecloth",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahj Mood",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://mahjmood.com/products/lake-day-mahjong-mat-pre-order-ships-january",
+   "caption": "Lake Day Mahjong Mat | Pre-Order, Ships January",
+   "preorder": true,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahj Mood",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "tiles"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://mahjmood.com/products/lake-day-pre-order-ships-february",
+   "caption": "Lake Day| Pre-Order, Ships February",
+   "preorder": true,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong Studios",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://mahjongstudios.com/products/mistletoe-christmas-mahjong-mat",
+   "caption": "Mistletoe Christmas Mahjong Mat - Christmas Kiss - Meet me under the Mistletoe",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "My Fair Mahjong",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "tiles"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://myfairmahjong.com/products/keepsake-tile-box-builder-ynfptay",
+   "caption": "Keepsake Tile Box Builder",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "My Fair Mahjong",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "tiles"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://myfairmahjong.com/products/new-box-occyaag",
+   "caption": "Keepsake Frame and Tile Builder",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Sweet Jojo Mahjong",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://sweetjojomahjong.com/products/mahjmat-italiansummer-bu-coast-mahjong-mat-for-table",
+   "caption": "Blue Italian Summer Collection Mahjong Mat for Table - Shipped Rolled",
+   "preorder": true,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Sweet Jojo Mahjong",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://sweetjojomahjong.com/products/mahjmat-italiansummer-bu-lemon-mahjong-mat-for-table",
+   "caption": "Blue Italian Summer Collection - Lemon Print Mahjong Mat for Table - Shipped Rolled",
+   "preorder": true,
+   "available": false
+  },
+  {
+   "src": "store",
+   "brand": "Splash of Color",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "tiles"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://splashofcolorco.com/products/cherry-baby-4-layer-american-mahjong-tiles-set",
+   "caption": "Cherry Baby 4 Layer American Mahjong Tiles Set",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Splash of Color",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://splashofcolorco.com/products/the-way-to-my-heart-vintage-valentine-mahjong-mat-sleek-surface",
+   "caption": "The Way To My Heart Vintage Valentine Mahjong Mat Sleek Surface",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Splash of Color",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://splashofcolorco.com/products/mahjonmg-vintage-valentine-love-birds-mahjong-mat-sleek-surface",
+   "caption": "Mahjong Vintage Valentine Love Birds Mahjong Mat Sleek Surface",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://www.mahjongbysi.com/products/ho-ho-holly-mahjong-mat",
+   "caption": "Mahjong by SI™ Ho Ho Holly Mahjong Mat",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://www.mahjongbysi.com/products/santas-little-wink-mahjong-mat",
+   "caption": "Mahjong by SI™ Santa’s Little Wink Mahjong Mat",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://www.mahjongbysi.com/products/woven-together-mahjong-mat",
+   "caption": "Mahjong by SI™ Woven Together Mahjong Mat",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://www.mahjongbysi.com/products/seven-lights-mahjong-mat",
+   "caption": "Mahjong by SI™ Seven Lights Mahjong Mat",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://www.mahjongbysi.com/products/the-unity-kinara-mahjong-mat",
+   "caption": "Mahjong by SI™ The Unity Kinara Mahjong Mat",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://www.mahjongbysi.com/products/the-gathering-circle-mahjong-mat",
+   "caption": "Mahjong by SI™ The Gathering Circle Mahjong Mat",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://www.mahjongbysi.com/products/wildflower-waltz-mahjong-mat",
+   "caption": "Mahjong by SI™ Wildflower Waltz Mahjong Mat",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Averill",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "tiles"
+   ],
+   "posted": "2026-11-20",
+   "url": "https://www.averillmahjong.com/products/charleston-garden-no-8-four-layer-edition",
+   "caption": "The Averill Mahjong Set — Charleston Garden No. 8 Four-Layer Edition",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Anders Ruff",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://shop.andersruff.com/products/mahj-ever-after-mahjong-mat",
+   "caption": "Mahj Ever After Mahjong Mat | Anders Ruff x Trista Sutter, The Original Bachelorette",
+   "preorder": true,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Anders Ruff",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "tiles"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://shop.andersruff.com/products/something-blue-mahjong-tile-set",
+   "caption": "Something Blue Mahjong Tile Set | Trista Sutter x Anders Ruff Design Co.",
+   "preorder": true,
+   "available": true
+  },
   {
    "src": "store",
    "brand": "Mahj Squad",
@@ -3374,6 +2417,258 @@
    "caption": "Mint and white Nutcracker Mahjong Tiles with tile bag- 15% off all Thanksgiving week!",
    "preorder": false,
    "available": false
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.mahjongbysi.com/products/bubblegum-mahjong-mat",
+   "caption": "Bubblegum",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.mahjongbysi.com/products/valentine-pink-mahjong-mat",
+   "caption": "Valentine Pink",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.mahjongbysi.com/products/valentine-red-mahjong-mat",
+   "caption": "Valentine Red",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.mahjongbysi.com/products/wilderness-burgundy-antlers-mahjong-mat",
+   "caption": "Wilderness – Burgundy Antlers",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.mahjongbysi.com/products/love-blue-mahjong-mat",
+   "caption": "Love Blue",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.mahjongbysi.com/products/wilderness-silver-antlers-mahjong-mat",
+   "caption": "Wilderness – Silver Antlers",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.mahjongbysi.com/products/kickin-cowgirl-mahjong-mat",
+   "caption": "Kickin’ Cowgirl",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.mahjongbysi.com/products/birding-cowgirl-mahjong-mat",
+   "caption": "Birding Cowgirl",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.mahjongbysi.com/products/snowday-cowgirl-mahjong-mat",
+   "caption": "Snowday Cowgirl",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.mahjongbysi.com/products/cowgirl-cardinal-mahjong-mat",
+   "caption": "Cowgirl Cardinal",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.mahjongbysi.com/products/chickadee-mahjong-mat",
+   "caption": "Chickadee",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.mahjongbysi.com/products/stitched-cowgirl-mahjong-mat",
+   "caption": "Stitched Cowgirl",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.mahjongbysi.com/products/alpine-mahjong-mat",
+   "caption": "Alpine",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.mahjongbysi.com/products/galentines-mahjong-mat",
+   "caption": "Galentine’s",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.mahjongbysi.com/products/rangoli-royale-mahjong-mat",
+   "caption": "Mahjong by SI™ Rangoli Royale Mahjong Mat",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.mahjongbysi.com/products/lotus-in-full-glow-mahjong-mat",
+   "caption": "Mahjong by SI™ Lotus in Full Glow Mahjong Mat",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.mahjongbysi.com/products/midnight-diyas-mahjong-mat",
+   "caption": "Mahjong by SI™ Midnight Diyas Mahjong Mat",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Mahjong by SI",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "mat"
+   ],
+   "posted": "2026-11-19",
+   "url": "https://www.mahjongbysi.com/products/marigold-after-dark-mahjong-mat",
+   "caption": "Mahjong by SI™ Marigold After Dark Mahjong Mat",
+   "preorder": false,
+   "available": true
   },
   {
    "src": "store",
@@ -3429,7 +2724,7 @@
    "url": "https://www.letsmahj-on.com/products/lets-get-wild",
    "caption": "Let's Get Wild!",
    "preorder": false,
-   "available": false
+   "available": true
   },
   {
    "src": "store",
@@ -3471,7 +2766,7 @@
    "url": "https://myfairmahjong.com/products/single-tile-frame",
    "caption": "SINGLE-TILE FRAME  |  4 Color Options  |  Keepsake Collection",
    "preorder": false,
-   "available": false
+   "available": true
   },
   {
    "src": "store",
@@ -3485,7 +2780,7 @@
    "url": "https://myfairmahjong.com/products/keepsake-triple-frame",
    "caption": "THREE-TILE FRAME  |  4 Mat Color Options  |  Keepsake Collection",
    "preorder": false,
-   "available": false
+   "available": true
   },
   {
    "src": "store",
@@ -3611,7 +2906,7 @@
    "url": "https://myfairmahjong.com/products/single-tile-keepsake-optic-white",
    "caption": "SINGLE TILE KEEPSAKE IN GIFT BOX  |  Optic White  |  Keepsake Collection",
    "preorder": false,
-   "available": false
+   "available": true
   },
   {
    "src": "store",
@@ -3625,7 +2920,7 @@
    "url": "https://myfairmahjong.com/products/single-tile-keepsake-crimson-red",
    "caption": "SINGLE TILE KEEPSAKE IN GIFT BOX  |  Crimson Red  |  Keepsake Collection",
    "preorder": false,
-   "available": false
+   "available": true
   },
   {
    "src": "store",
@@ -3639,7 +2934,7 @@
    "url": "https://myfairmahjong.com/products/single-tile-keepsake-pacific-blue",
    "caption": "SINGLE TILE KEEPSAKE IN GIFT BOX  |  Pacific Blue  |  Keepsake Collection",
    "preorder": false,
-   "available": false
+   "available": true
   },
   {
    "src": "store",
@@ -3653,7 +2948,7 @@
    "url": "https://myfairmahjong.com/products/single-tile-keepsake-plum-purple",
    "caption": "SINGLE TILE KEEPSAKE IN GIFT BOX  |  Plum Purple  |  Keepsake Collection",
    "preorder": false,
-   "available": false
+   "available": true
   },
   {
    "src": "store",
@@ -3667,7 +2962,7 @@
    "url": "https://myfairmahjong.com/products/single-tile-keepsake-forest-green",
    "caption": "SINGLE TILE KEEPSAKE IN GIFT BOX  |  Forest Green  |  Keepsake Collection",
    "preorder": false,
-   "available": false
+   "available": true
   },
   {
    "src": "store",
@@ -3764,6 +3059,20 @@
    "posted": "2026-11-17",
    "url": "https://shop.brewtifully.com/products/mini-mahjong-travel-setsinglelayer-tiles-folk-water-color-florals",
    "caption": "Mini Mahjong Travel Set- Single Layer Tiles - Folk water color florals",
+   "preorder": false,
+   "available": true
+  },
+  {
+   "src": "store",
+   "brand": "Averill",
+   "partner": true,
+   "kind": "launch",
+   "products": [
+    "tiles"
+   ],
+   "posted": "2026-11-17",
+   "url": "https://www.averillmahjong.com/products/monets-garden-pearl-christmas-gift-edition",
+   "caption": "The Averill Mahjong Set — Christmas Gift Edition",
    "preorder": false,
    "available": true
   },
@@ -4049,90 +3358,6 @@
   },
   {
    "src": "store",
-   "brand": "Let's Be Besties",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-14",
-   "url": "https://letsbebesties.com/products/egret-bam-bird-andy-albert-artist-collective-mahjong-mat",
-   "caption": "Snowy Egret Bam Bird Andy Albert Artist Collective Mahjong Mat",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Maison Mahj",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "tiles"
-   ],
-   "posted": "2026-11-14",
-   "url": "https://maisonmahj.com/products/let-it-mahj-holiday-accessory",
-   "caption": "Let It Mahj | Holiday Tile Accessory",
-   "preorder": false,
-   "available": false
-  },
-  {
-   "src": "store",
-   "brand": "Maison Mahj",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-14",
-   "url": "https://maisonmahj.com/products/the-winter-garland-mat",
-   "caption": "The Winter Garland Mat",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Maison Mahj",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-14",
-   "url": "https://maisonmahj.com/products/the-maison-ribbon-mat",
-   "caption": "The Maison Ribbon Mat",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Maison Mahj",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-14",
-   "url": "https://maisonmahj.com/products/the-snowfall-mat",
-   "caption": "The Snowfall Mat",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Maison Mahj",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-14",
-   "url": "https://maisonmahj.com/products/the-evergreen-mat",
-   "caption": "The Evergreen Mat",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
    "brand": "Splash of Color",
    "partner": true,
    "kind": "launch",
@@ -4184,48 +3409,6 @@
    "posted": "2026-11-14",
    "url": "https://splashofcolorco.com/products/pretty-chinoiserie-mahjong-kitchen-square-mahjong-tablecloth",
    "caption": "Pretty Chinoiserie Mahjong Kitchen Square Mahjong Tablecloth",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Splash of Color",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-14",
-   "url": "https://splashofcolorco.com/products/preppy-mahjong-oven-skirt-custom-oven-curtain",
-   "caption": "Preppy Mahjong Oven Skirt Custom Oven Curtain",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Splash of Color",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-14",
-   "url": "https://splashofcolorco.com/products/funny-mahjong-oven-skirt-curtain-welcome-to-the-crak-house",
-   "caption": "Funny Mahjong Oven Skirt Curtain, Welcome To The Crak House",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Splash of Color",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-14",
-   "url": "https://splashofcolorco.com/products/funny-mahjong-oven-skirt-id-rather-be-playing-mahjong",
-   "caption": "Funny Mahjong Oven Skirt, I'd Rather Be Playing Mahjong",
    "preorder": false,
    "available": true
   },
@@ -4408,440 +3591,6 @@
    "posted": "2026-11-14",
    "url": "https://www.mahjongbysi.com/products/night-bloom-mahjong-mat",
    "caption": "Mahjong by SI™ Night Bloom Mahjong Mat",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Mahjong by SI",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-14",
-   "url": "https://www.mahjongbysi.com/products/be-mine-mahjong-mat",
-   "caption": "Mahjong by SI™ Be Mine Mahjong Mat",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Mahjong by SI",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-14",
-   "url": "https://www.mahjongbysi.com/products/wild-love-mahjong-mat",
-   "caption": "Mahjong by SI™ Wild Love Mahjong Mat",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Mahjong by SI",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-14",
-   "url": "https://www.mahjongbysi.com/products/love-birds-mahjong-mat",
-   "caption": "Mahjong by SI™ Love Birds Mahjong Mat",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Mahjong by SI",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-14",
-   "url": "https://www.mahjongbysi.com/products/sweet-hearts-mahjong-mat",
-   "caption": "Mahjong by SI™ Sweet Hearts Mahjong Mat",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Mahjong by SI",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-14",
-   "url": "https://www.mahjongbysi.com/products/cupid-crush-mahjong-mat",
-   "caption": "Mahjong by SI™ Cupid Crush Mahjong Mat",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Mahjong by SI",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-14",
-   "url": "https://www.mahjongbysi.com/products/kiss-kiss-mahjong-mat",
-   "caption": "Mahjong by SI™ Kiss Kiss Mahjong Mat",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Mahjong by SI",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-14",
-   "url": "https://www.mahjongbysi.com/products/sage-advice-mahjong-mat",
-   "caption": "Mahjong by SI™ Sage Advice Mahjong Mat",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Britt Mills",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-13",
-   "url": "https://brittmillsdesign.com/products/plumage-ii-leatherette-mahjong-mat",
-   "caption": "Plumage II Leatherette Mahjong Mat",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "My Fair Mahjong",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "travel mat"
-   ],
-   "posted": "2026-11-13",
-   "url": "https://myfairmahjong.com/products/mini-mat-brightside-blue",
-   "caption": "(PRE-ORDER) MINI MAHJONG MAT  |  Brightside- Blue  |  21 x 21\"",
-   "preorder": true,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "My Fair Mahjong",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "travel mat"
-   ],
-   "posted": "2026-11-13",
-   "url": "https://myfairmahjong.com/products/mini-mat-brightside-green",
-   "caption": "(PRE-ORDER) MINI MAHJONG MAT  |  Brightside- Green  |  21 x 21\"",
-   "preorder": true,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "My Fair Mahjong",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "travel mat"
-   ],
-   "posted": "2026-11-13",
-   "url": "https://myfairmahjong.com/products/pre-order-mini-mahjong-mat-brightside-pink-21-x-21",
-   "caption": "(PRE-ORDER) MINI MAHJONG MAT  |  Brightside- Pink  |  21 x 21\"",
-   "preorder": true,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "My Fair Mahjong",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "travel mat"
-   ],
-   "posted": "2026-11-13",
-   "url": "https://myfairmahjong.com/products/mini-mat-garden-party-bluebell",
-   "caption": "(PRE-ORDER) MINI MAHJONG MAT  |  Garden Party - Bluebell  |  21\" x 21\"",
-   "preorder": true,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "My Fair Mahjong",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "travel mat"
-   ],
-   "posted": "2026-11-13",
-   "url": "https://myfairmahjong.com/products/mini-mat-garden-party-mulberry",
-   "caption": "(PRE-ORDER) MINI MAHJONG MAT  |  Garden Party - Mulberry  |  21\" x 21\"",
-   "preorder": true,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "My Fair Mahjong",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "travel mat"
-   ],
-   "posted": "2026-11-13",
-   "url": "https://myfairmahjong.com/products/pre-order-mini-mahjong-mat-garden-party-meadow-21-x-21",
-   "caption": "(PRE-ORDER) MINI MAHJONG MAT  |  Garden Party- Meadow  |  21 x 21\"",
-   "preorder": true,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Yellow Mountain Imports",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "rack"
-   ],
-   "posted": "2026-11-13",
-   "url": "https://www.ymimports.com/products/fx-am025-a",
-   "caption": "American Mahjong Set “Garden Club” with 166 Green Tiles, 4 All-in-One Wooden Racks with Pushers, Wright Patterson Scoring Coins, and Beige Canvas Tote",
-   "preorder": false,
-   "available": false
-  },
-  {
-   "src": "store",
-   "brand": "Splash of Color",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "tiles"
-   ],
-   "posted": "2026-11-13",
-   "url": "https://splashofcolorco.com/products/snow-much-for-summer-apres-ski-winter-engraved-american-mahjong-tiles",
-   "caption": "Snow Much for Summer Après-Ski Engraved American Mahjong Tiles",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Bam Bird Boutique",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "tiles"
-   ],
-   "posted": "2026-11-12",
-   "url": "https://www.bambirdboutique.com/products/mischief-mahj-tiles-tastings-event-wed-oct-21-copy-1",
-   "caption": "Holiday Tiles & Tea - Dec. 5 at Heirloom Haul in Frisco",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Britt Mills",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-12",
-   "url": "https://brittmillsdesign.com/products/grayson-leatherette-mahjong-mat",
-   "caption": "Grayson Leatherette Mahjong Mat",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Mahj Mood",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "tiles"
-   ],
-   "posted": "2026-11-12",
-   "url": "https://mahjmood.com/products/imperfect-serenity-mood-tiles",
-   "caption": "IMPERFECT Serenity Mood Tiles",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Let's Be Besties",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "tiles"
-   ],
-   "posted": "2026-11-12",
-   "url": "https://letsbebesties.com/products/christmas-lights-mahjong-tile-pouch",
-   "caption": "Christmas Lights Mahjong Tile Pouch",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Let's Be Besties",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "tiles"
-   ],
-   "posted": "2026-11-12",
-   "url": "https://letsbebesties.com/products/holly-starburst-mahjong-tile-pouch",
-   "caption": "Holly Starburst Mahjong Tile Pouch",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Let's Be Besties",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-12",
-   "url": "https://letsbebesties.com/products/colorado-river-aa-artist-collective-mahjong-mat",
-   "caption": "Colorado River Andy Albert Artist Collective Mahjong Mat",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Let's Be Besties",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-12",
-   "url": "https://letsbebesties.com/products/miracle-lillian-claire-designs-artist-mahjong-mat",
-   "caption": "Miracle Lillian Claire Designs Artist Mahjong Mat",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Let's Be Besties",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-12",
-   "url": "https://letsbebesties.com/products/indigo-and-olive-lillian-claire-designs-artist-mahjong-mat",
-   "caption": "Indigo and Olive Lillian Claire Designs Artist Mahjong Mat",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Let's Be Besties",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "rack"
-   ],
-   "posted": "2026-11-12",
-   "url": "https://letsbebesties.com/products/travel-mahjong-pusher-set-of-4",
-   "caption": "Travel Mahjong Pusher (Set of 4)",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Let's Be Besties",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "rack"
-   ],
-   "posted": "2026-11-12",
-   "url": "https://letsbebesties.com/products/travel-mahjong-racks-set-of-4",
-   "caption": "Travel Mahjong Racks (Set of 4)",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Let's Be Besties",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "rack"
-   ],
-   "posted": "2026-11-12",
-   "url": "https://letsbebesties.com/products/double-travel-mahjong-racks-set-of-2",
-   "caption": "Double Travel Mahjong Racks (Set of 2)",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Splash of Color",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "travel tiles"
-   ],
-   "posted": "2026-11-12",
-   "url": "https://splashofcolorco.com/products/mahj-airways-3layer-mini-american-mahjong-set",
-   "caption": "Mahj Airways 3Layer Mini American Mahjong Set",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Splash of Color",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "travel tiles"
-   ],
-   "posted": "2026-11-12",
-   "url": "https://splashofcolorco.com/products/mini-mahjong-travel-set-pink-and-green-preppy-single-layer-tiles",
-   "caption": "Mini Mahjong Travel Set Pink And Green Preppy Single Layer Tiles",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Splash of Color",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "mat"
-   ],
-   "posted": "2026-11-12",
-   "url": "https://splashofcolorco.com/products/snow-much-for-summer-flamingo-winter-mahjong-mat-sleek-surface",
-   "caption": "Snow Much For Summer Flamingo Winter Mahjong Mat Sleek Surface",
-   "preorder": false,
-   "available": true
-  },
-  {
-   "src": "store",
-   "brand": "Splash of Color",
-   "partner": true,
-   "kind": "launch",
-   "products": [
-    "tiles"
-   ],
-   "posted": "2026-11-12",
-   "url": "https://splashofcolorco.com/products/snow-much-for-summer-mahjong-winter-blue-4layer-engraved-american-mahjong-tiles-set",
-   "caption": "Snow Much For Summer Mahjong Winter Blue 4Layer Engraved American Mahjong Tiles Set",
    "preorder": false,
    "available": true
   }
