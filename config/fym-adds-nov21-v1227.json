@@ -1,0 +1,61 @@
+{
+ "_about": "FYM 1.22.7 adds (Nov 21 2026): OMM Sadie Jane tiles + Serendipity mat, launching Wed Nov 25 11am ET (Coming Soon on the store Nov 21: pre). Averill x4 HELD: checkout refused MAHJMATCH, code-first rule.",
+ "made": "2026-11-21",
+ "tiles": [
+  {
+   "key": "www.ohmymahjong.com/sadie-jane-mahjong-tiles",
+   "slug": "sadie-jane",
+   "name": "Sadie Jane",
+   "bn": "Oh My Mahjong",
+   "u": "https://ohmymahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fsadie-jane-mahjong-tiles",
+   "u0": "https://www.ohmymahjong.com/products/sadie-jane-mahjong-tiles",
+   "dc": "https://mahjmatchmaker.com/oh-my-mahjong-discount-code",
+   "pa": true,
+   "img": "assets/tiles/album/sadie-jane.jpg",
+   "tc": "#37709a",
+   "group": "Pink",
+   "back": {
+    "b": "#ead2d4"
+   },
+   "pt": [
+    400.0,
+    360.0,
+    1
+   ],
+   "pre": 1,
+   "oos": 0,
+   "hol": false
+  }
+ ],
+ "mats": [
+  {
+   "key": "www.ohmymahjong.com/serendipity-mat-in-tube",
+   "name": "Serendipity",
+   "bn": "Oh My Mahjong",
+   "u": "https://ohmymahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fserendipity-mat-in-tube",
+   "u0": "https://www.ohmymahjong.com/products/serendipity-mat-in-tube",
+   "dc": "https://mahjmatchmaker.com/oh-my-mahjong-discount-code",
+   "pa": true,
+   "img": "assets/launches/omm-serendipity-mat-in-tube/01.jpg",
+   "box": [
+    0.0612,
+    0.1473,
+    0.9317,
+    0.8503
+   ],
+   "hol": false,
+   "oos": 0,
+   "pre": 1,
+   "pm": [
+    90.0,
+    81.0,
+    1
+   ],
+   "cls": "A",
+   "why": ""
+  }
+ ],
+ "held": [
+  "Averill Mahjong x4 tile sets (code refused at checkout; waiting on Tiffany/Averill)"
+ ]
+}
