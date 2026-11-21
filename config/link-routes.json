@@ -823,6 +823,16 @@
    "rate_compare": "code",
    "shopmy_pct": null,
    "affiliate_link": "https://spools.com/?ref=MAHJMATCH"
+  },
+  "Averill Mahjong": {
+   "route": "code-site",
+   "store_hosts": [
+    "averillmahjong.com"
+   ],
+   "commission_pct": null,
+   "notes": "LINK ONLY for now (Tiffany Nov 21 2026 6:35pm): UpPromote affiliate link ?sca_ref=12804202.cJsndO0eauww8PN on every product link; code MAHJMATCH requested from Averill, not working yet, so no code claim in the app (items nc:true). When the code is confirmed: /discount/MAHJMATCH links, nc false, dc page.",
+   "source": "Tiffany in chat Nov 21 2026; Duet handoff Nov 19 (HQ brands/averill)",
+   "link_only_until_code": true
   }
  }
 }
