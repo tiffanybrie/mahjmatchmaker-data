@@ -13,14 +13,11 @@
   "file": "assets/tiles/v92/bam-bird-origami-timber-split.jpg",
   "source": "The FYM photo (faces|backs split from Bam Bird listing images; Timber variant image BamBird_Origami_and_others-13.jpg), same treatment as Deco. Never recoloured.",
   "asked_at": "2026-11-16T23:21:00-05:00",
-  "inset": "assets/tiles/album/inset/origami-timber-center.jpg",
+  "inset": "assets/tiles/album/inset/origami-timber-winds-2col.jpg",
   "approved_at": "2026-11-16T23:37:00-05:00",
   "approved_note": "Tiffany Nov 16 11:37pm: 'Yes, it's the right photo for the app and it will get the center crop for the card'",
-  "inset_pending": {
-   "file": "assets/tiles/album/inset/origami-timber-winds-2col.jpg",
-   "note": "Tiffany Nov 21 5:14pm chose B (winds row), straightened + centered, 2 face columns. Fixed crop sent to her in chat 5:20pm; on her yes it becomes 'inset' and the cards are rebuilt.",
-   "built_by": "ot_fix (affine fit to tile gutters, faces 7-8 cols + 2 back cols)"
-  }
+  "inset_previous": "assets/tiles/album/inset/origami-timber-center.jpg",
+  "inset_approved": "Tiffany Nov 21 2026 6:32pm: 'Yes, rebuild the origami cards with it.' (B: winds row, 2 face columns, centered, squared)"
  },
  "colorcard_img": "assets/colorcards/origami-timber/00-origami-timber-mahjong-tiles-color-guide-mobile.jpg",
  "wheel_img": "assets/colorwheels/origami-timber-color-wheel.jpg",

@@ -40,26 +40,26 @@
   },
   {
    "order": 2,
-   "group": "garden",
-   "mat": "Boho Wildflower",
-   "brand": "Sweet Jojo Designs",
+   "group": "best",
+   "mat": "Origami Neoprene – Midnight Gray",
+   "brand": "Bam Bird Boutique",
    "retired_mat": false,
    "holiday": false,
-   "partner": false,
-   "file": "origami-timber-mahjong-tiles-sweet-jojo-designs-boho-wildflower-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/sweet-jojo-designs-boho-wildflower.jpg",
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-bam-bird-boutique-origami-neoprene-midnight-gray-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/bam-bird-boutique-origami-neoprene.jpg",
    "racks": [
     "Bam Bird Boutique Walnut",
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
-    "Peace Love Mahjong Acrylic Burl",
-    "Bam Bird Boutique Slate Blue"
+    "Bird & Bamboo Forest Green",
+    "Peace Love Mahjong Acrylic Burl"
    ],
-   "why": "Your Smith pick: earthy wildflowers.",
-   "fym": "alb2:sweet-jojo-designs-boho-wildflower",
-   "lowres": true,
+   "why": "Bam Bird's own Origami mat: midnight navy with the origami crane in the corner. The pair mat for Timber (Tiffany Nov 19: position 2, replaces Vegan Leather Navy). Sold out at Bam Bird right now.",
+   "fym": "www.bambirdboutique.com/origami-neoprene-mat",
+   "lowres": false,
    "caption_note": null,
    "rack_notes": []
   },
@@ -90,81 +90,31 @@
   },
   {
    "order": 4,
-   "group": "yours",
-   "mat": "Dabney Leatherette",
-   "brand": "Britt Mills",
+   "group": "garden",
+   "mat": "Boho Wildflower",
+   "brand": "Sweet Jojo Designs",
    "retired_mat": false,
    "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-britt-mills-dabney-leatherette-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/britt-mills-dabney-leatherette.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bam Bird Boutique Indigo",
-    "Peace Love Mahjong Acrylic Burl"
-   ],
-   "why": "Your pick (Nov 17 1:31am).",
-   "fym": "brittmillsdesign.com/dabney-leatherette-mahjong-mat",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 5,
-   "group": "stand",
-   "mat": "Novella Leatherette",
-   "brand": "Britt Mills",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-britt-mills-novella-leatherette-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/britt-mills-novella-leatherette.jpg",
+   "partner": false,
+   "file": "origami-timber-mahjong-tiles-sweet-jojo-designs-boho-wildflower-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/sweet-jojo-designs-boho-wildflower.jpg",
    "racks": [
     "Bam Bird Boutique Walnut",
     "Bam Bird Boutique Lagoon Wood"
    ],
    "mat_racks": [
     "Peace Love Mahjong Acrylic Burl",
-    "Bird & Bamboo Forest Green"
+    "Bam Bird Boutique Slate Blue"
    ],
-   "why": "Green vines, copper flowers and a plum butterfly: three of her face colours on one mat, framed in a warm red that sits next to the Timber backs.",
-   "fym": "brittmillsdesign.com/novella-leatherette-mahjong-mat",
-   "lowres": false,
+   "why": "Your Smith pick: earthy wildflowers.",
+   "fym": "alb2:sweet-jojo-designs-boho-wildflower",
+   "lowres": true,
    "caption_note": null,
    "rack_notes": []
   },
   {
-   "order": 6,
-   "group": "yours",
-   "mat": "Emerald Society",
-   "brand": "Bougie Mahjong",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": false,
-   "file": "origami-timber-mahjong-tiles-bougie-mahjong-emerald-society-mat.jpg",
-   "code": "SAVE WITH CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/leftout/bougie-mahjong-emerald-society.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Oh My Mahjong Burl",
-    "Bam Bird Boutique Indigo"
-   ],
-   "why": "Your pick from Left out (round 2). Claude had said: Bougie: limited to your own picks (deep emerald would otherwise suit).",
-   "fym": "bougiemahjong.com/emerald-society-mahjong-mat",
-   "lowres": false,
-   "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 7,
+   "order": 5,
    "group": "best",
    "mat": "The Hunt Club",
    "brand": "Charleston Mahjong Club",
@@ -189,7 +139,82 @@
    "rack_notes": []
   },
   {
+   "order": 6,
+   "group": "yours",
+   "mat": "Dabney Leatherette",
+   "brand": "Britt Mills",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-britt-mills-dabney-leatherette-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/britt-mills-dabney-leatherette.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Bam Bird Boutique Indigo",
+    "Peace Love Mahjong Acrylic Burl"
+   ],
+   "why": "Your pick (Nov 17 1:31am).",
+   "fym": "brittmillsdesign.com/dabney-leatherette-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 7,
+   "group": "yours",
+   "mat": "Emerald Society",
+   "brand": "Bougie Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": false,
+   "file": "origami-timber-mahjong-tiles-bougie-mahjong-emerald-society-mat.jpg",
+   "code": "SAVE WITH CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/leftout/bougie-mahjong-emerald-society.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Oh My Mahjong Burl",
+    "Bam Bird Boutique Indigo"
+   ],
+   "why": "Your pick from Left out (round 2). Claude had said: Bougie: limited to your own picks (deep emerald would otherwise suit).",
+   "fym": "bougiemahjong.com/emerald-society-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
    "order": 8,
+   "group": "stand",
+   "mat": "Novella Leatherette",
+   "brand": "Britt Mills",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "origami-timber-mahjong-tiles-britt-mills-novella-leatherette-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/colorcards/origami/mats/britt-mills-novella-leatherette.jpg",
+   "racks": [
+    "Bam Bird Boutique Walnut",
+    "Bam Bird Boutique Lagoon Wood"
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Acrylic Burl",
+    "Bird & Bamboo Forest Green"
+   ],
+   "why": "Green vines, copper flowers and a plum butterfly: three of her face colours on one mat, framed in a warm red that sits next to the Timber backs.",
+   "fym": "brittmillsdesign.com/novella-leatherette-mahjong-mat",
+   "lowres": false,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 9,
    "group": "teal",
    "mat": "Lotus Breeze Koi",
    "brand": "Luna EK Studio",
@@ -214,7 +239,7 @@
    "rack_notes": []
   },
   {
-   "order": 9,
+   "order": 10,
    "group": "best",
    "mat": "Vegan Leather – Hunter Green",
    "brand": "Bam Bird Boutique",
@@ -236,31 +261,6 @@
    "fym": "www.bambirdboutique.com/origami-leather-mat?v=67732658880821",
    "lowres": false,
    "caption_note": null,
-   "rack_notes": []
-  },
-  {
-   "order": 10,
-   "group": "best",
-   "mat": "Vegan Leather – Navy",
-   "brand": "Bam Bird Boutique",
-   "retired_mat": false,
-   "holiday": false,
-   "partner": true,
-   "file": "origami-timber-mahjong-tiles-bam-bird-boutique-vegan-leather-navy-mat.jpg",
-   "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/origami/mats/bam-bird-boutique-vegan-leather-navy.jpg",
-   "racks": [
-    "Bam Bird Boutique Walnut",
-    "Bam Bird Boutique Lagoon Wood"
-   ],
-   "mat_racks": [
-    "Bird & Bamboo Forest Green",
-    "Peace Love Mahjong Acrylic Burl"
-   ],
-   "why": "Bam Bird shoots Timber on navy leather too (listing photo 13), and a Tiles & Tablescapes member bought it for Timber. Dark navy makes the wood glow.",
-   "fym": "www.bambirdboutique.com/origami-leather-mat?v=51358452613429",
-   "lowres": false,
-   "caption_note": "TNT rec",
    "rack_notes": []
   },
   {

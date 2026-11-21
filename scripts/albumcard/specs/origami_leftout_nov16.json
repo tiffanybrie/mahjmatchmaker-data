@@ -1126,9 +1126,18 @@
   {
    "name": "Teal Dots and Stripes with Instructions",
    "brand": "Let's Be Besties",
-   "img": "",
+   "img": "assets/colorcards/origami/mats/lets-be-besties-teal-dots-and-stripes.jpg",
    "why": "You took it out (Nov 17 10:52am): \"I don't want that mat in there.\"",
    "removed_by_her": "chat-nov17"
+  },
+  {
+   "name": "Vegan Leather – Navy",
+   "brand": "Bam Bird Boutique",
+   "why": "Replaced by Bam Bird's Origami Neoprene mat at #2 (Tiffany Nov 19 2:32pm).",
+   "retired": false,
+   "hol": false,
+   "img": "assets/colorcards/origami/mats/bam-bird-boutique-vegan-leather-navy.jpg",
+   "fym": "www.bambirdboutique.com/origami-leather-mat?v=51358452613429"
   }
  ]
 }

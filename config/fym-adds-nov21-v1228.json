@@ -1,0 +1,128 @@
+{
+ "_about": "FYM 1.22.8 adds (Nov 21 2026): Averill Mahjong 5 tile sets. Tiffany 6:35pm: partner, LINK ONLY for now (code requested): affiliate link, no code claim (nc true). When the code is confirmed: code link + nc false + dc page, same day.",
+ "made": "2026-11-21",
+ "tiles": [
+  {
+   "key": "www.averillmahjong.com/charleston-garden-no-8-four-layer-edition",
+   "slug": "averill-charleston-garden-no-8-four-layer",
+   "name": "Charleston Garden No. 8 Four-Layer Edition",
+   "bn": "Averill Mahjong",
+   "u": "https://www.averillmahjong.com/products/charleston-garden-no-8-four-layer-edition?sca_ref=12804202.cJsndO0eauww8PN",
+   "u0": "https://www.averillmahjong.com/products/charleston-garden-no-8-four-layer-edition?sca_ref=12804202.cJsndO0eauww8PN",
+   "dc": "",
+   "pa": true,
+   "nc": true,
+   "img": "assets/tiles/v1228/averill-charleston-garden-no-8-four-layer.jpg",
+   "tc": "#8d72b6",
+   "group": "Purple",
+   "back": {
+    "b": "#8d72b6"
+   },
+   "pt": [
+    189.99,
+    189.99,
+    0
+   ],
+   "oos": 0,
+   "hol": false
+  },
+  {
+   "key": "www.averillmahjong.com/monets-garden-pearl-christmas-gift-edition",
+   "slug": "averill-christmas-gift-edition",
+   "name": "Christmas Gift Edition",
+   "bn": "Averill Mahjong",
+   "u": "https://www.averillmahjong.com/products/monets-garden-pearl-christmas-gift-edition?sca_ref=12804202.cJsndO0eauww8PN",
+   "u0": "https://www.averillmahjong.com/products/monets-garden-pearl-christmas-gift-edition?sca_ref=12804202.cJsndO0eauww8PN",
+   "dc": "",
+   "pa": true,
+   "nc": true,
+   "img": "assets/tiles/v1228/averill-christmas-gift-edition.jpg",
+   "tc": "#b3262e",
+   "group": "Holiday",
+   "back": {
+    "b": "#dfdce0"
+   },
+   "pt": [
+    189.99,
+    189.99,
+    0
+   ],
+   "oos": 0,
+   "hol": true
+  },
+  {
+   "key": "www.averillmahjong.com/monets-garden-pearl-edition",
+   "slug": "averill-monets-garden-pearl",
+   "name": "Monet's Garden Pearl Edition",
+   "bn": "Averill Mahjong",
+   "u": "https://www.averillmahjong.com/products/monets-garden-pearl-edition?sca_ref=12804202.cJsndO0eauww8PN",
+   "u0": "https://www.averillmahjong.com/products/monets-garden-pearl-edition?sca_ref=12804202.cJsndO0eauww8PN",
+   "dc": "",
+   "pa": true,
+   "nc": true,
+   "img": "assets/tiles/v1228/averill-monets-garden-pearl.jpg",
+   "tc": "#c8325f",
+   "group": "Pink",
+   "back": {
+    "b": "#e0b9cb"
+   },
+   "pt": [
+    189.99,
+    189.99,
+    0
+   ],
+   "oos": 0,
+   "hol": false
+  },
+  {
+   "key": "www.averillmahjong.com/charleston-garden-no-8",
+   "slug": "averill-charleston-garden-no-8",
+   "name": "Charleston Garden No. 8",
+   "bn": "Averill Mahjong",
+   "u": "https://www.averillmahjong.com/products/charleston-garden-no-8?sca_ref=12804202.cJsndO0eauww8PN",
+   "u0": "https://www.averillmahjong.com/products/charleston-garden-no-8?sca_ref=12804202.cJsndO0eauww8PN",
+   "dc": "",
+   "pa": true,
+   "nc": true,
+   "img": "assets/tiles/v1228/averill-charleston-garden-no-8.jpg",
+   "tc": "#7a5aa8",
+   "group": "Purple",
+   "back": {
+    "b": "#c3a8d5"
+   },
+   "pt": [
+    159.99,
+    159.99,
+    0
+   ],
+   "oos": 1,
+   "hol": false
+  },
+  {
+   "key": "www.averillmahjong.com/monets-garden",
+   "slug": "averill-monets-garden",
+   "name": "Monet's Garden",
+   "bn": "Averill Mahjong",
+   "u": "https://www.averillmahjong.com/products/monets-garden?sca_ref=12804202.cJsndO0eauww8PN",
+   "u0": "https://www.averillmahjong.com/products/monets-garden?sca_ref=12804202.cJsndO0eauww8PN",
+   "dc": "",
+   "pa": true,
+   "nc": true,
+   "img": "assets/tiles/v1228/averill-monets-garden.jpg",
+   "tc": "#fd8d73",
+   "group": "Yellow & Orange",
+   "back": {
+    "b": "#fd8d73"
+   },
+   "pt": [
+    159.99,
+    159.99,
+    0
+   ],
+   "oos": 1,
+   "hol": false
+  }
+ ],
+ "mats": [],
+ "held": []
+}

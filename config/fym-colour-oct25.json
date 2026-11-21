@@ -79185,6 +79185,153 @@
 "tone": null,
 "src": "photo",
 "back": "#ead2d4"
+},
+"averill-charleston-garden-no-8-four-layer": {
+"sw": [
+[
+"#bec5ac",
+0.275
+],
+[
+"#b1c3d9",
+0.18
+],
+[
+"#97a957",
+0.176
+],
+[
+"#9980c1",
+0.156
+],
+[
+"#eca1b4",
+0.147
+],
+[
+"#d28752",
+0.067
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#8d72b6"
+},
+"averill-christmas-gift-edition": {
+"sw": [
+[
+"#d6bdc2",
+0.39
+],
+[
+"#b4d3ca",
+0.199
+],
+[
+"#635f4e",
+0.132
+],
+[
+"#da7f90",
+0.11
+],
+[
+"#75c491",
+0.108
+],
+[
+"#c4303c",
+0.061
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#dfdce0"
+},
+"averill-monets-garden-pearl": {
+"sw": [
+[
+"#f7b8c0",
+0.48
+],
+[
+"#bdc1da",
+0.175
+],
+[
+"#acd1bc",
+0.144
+],
+[
+"#b77c87",
+0.081
+],
+[
+"#de6bb6",
+0.074
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#e0b9cb"
+},
+"averill-charleston-garden-no-8": {
+"sw": [
+[
+"#b9c0a4",
+0.26
+],
+[
+"#bcc5d4",
+0.226
+],
+[
+"#aa94cc",
+0.172
+],
+[
+"#8ea152",
+0.167
+],
+[
+"#e491a5",
+0.123
+],
+[
+"#d8874e",
+0.053
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#c3a8d5"
+},
+"averill-monets-garden": {
+"sw": [
+[
+"#bcd6d4",
+0.344
+],
+[
+"#95dcb0",
+0.205
+],
+[
+"#e2b3c0",
+0.185
+],
+[
+"#80aad1",
+0.125
+],
+[
+"#dc6692",
+0.096
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#fd8d73"
 }
 }
 }
