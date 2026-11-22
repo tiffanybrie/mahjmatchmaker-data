@@ -1,9 +1,9 @@
 {
  "fym_version": "v122",
  "before_rows": 793,
- "after_rows": 1740,
+ "after_rows": 1744,
  "before_active": 764,
- "after_active": 1681,
+ "after_active": 1685,
  "before_retired": 29,
  "after_retired": 59,
  "added": [
@@ -216,6 +216,7 @@
   "Let's Be Besties | Autumn Wreath (let-s-be-besties--autumn-wreath)",
   "Let's Be Besties | Bam Bird Toile Pink (let-s-be-besties--bam-bird-toile-pink)",
   "Let's Be Besties | Bam Dragons (let-s-be-besties--bam-dragons)",
+  "Let's Be Besties | Bamboo Butterfly Garden (let-s-be-besties--bamboo-butterfly-garden)",
   "Let's Be Besties | Bamboo Lotus (let-s-be-besties--bamboo-lotus)",
   "Let's Be Besties | Barn Owl (let-s-be-besties--barn-owl)",
   "Let's Be Besties | Basketball Custom Game Day (let-s-be-besties--basketball-custom-game-day)",
@@ -462,6 +463,7 @@
   "Let's Be Besties | Mid Century Pop (let-s-be-besties--mid-century-pop)",
   "Let's Be Besties | Midnight Blooms (let-s-be-besties--midnight-blooms)",
   "Let's Be Besties | Midnight Flight (let-s-be-besties--midnight-flight)",
+  "Let's Be Besties | Midnight Jubilee (let-s-be-besties--midnight-jubilee)",
   "Let's Be Besties | Midnight Mosaic (let-s-be-besties--midnight-mosaic)",
   "Let's Be Besties | Miracle (let-s-be-besties--miracle)",
   "Let's Be Besties | Morning Meadow (let-s-be-besties--morning-meadow)",
@@ -485,6 +487,7 @@
   "Let's Be Besties | Off Duval (let-s-be-besties--off-duval)",
   "Let's Be Besties | Oh Canada! (let-s-be-besties--oh-canada)",
   "Let's Be Besties | Oh Holy Night (let-s-be-besties--oh-holy-night)",
+  "Let's Be Besties | Old Lady Funny with Border (let-s-be-besties--old-lady-funny-with-border)",
   "Let's Be Besties | Olive Plaid (let-s-be-besties--olive-plaid)",
   "Let's Be Besties | Oopsy Daisy (let-s-be-besties--oopsy-daisy)",
   "Let's Be Besties | Ora's Dress (let-s-be-besties--ora-s-dress)",
@@ -648,6 +651,7 @@
   "Let's Be Besties | Whoosh (let-s-be-besties--whoosh)",
   "Let's Be Besties | Wild Horses (let-s-be-besties--wild-horses)",
   "Let's Be Besties | Wildflowers (let-s-be-besties--wildflowers)",
+  "Let's Be Besties | Wildly Starstruck (let-s-be-besties--wildly-starstruck)",
   "Let's Be Besties | Willow & Wings (let-s-be-besties--willow-wings)",
   "Let's Be Besties | Winter Wonderland Leatherette (let-s-be-besties--winter-wonderland-leatherette)",
   "Let's Be Besties | Year of the G.O.A.T. (let-s-be-besties--year-of-the-g-o-a-t)",
@@ -1049,7 +1053,7 @@
   "Wren Mats | Sitting Sea Side: ['neutral', 'simple'] -> ['neutral', 'simple', 'yellow', 'blue']"
  ],
  "added_by_brand": {
-  "Let's Be Besties": 470,
+  "Let's Be Besties": 474,
   "Mahj & Moon": 107,
   "Bougie Mahjong": 75,
   "YOLO Mahjong": 67,
