@@ -89,12 +89,15 @@ def shop(x):
     host, handle, pr = hit
     head = x['what'].split(';')[0]   # 'Emerald back in stock; Ruby Red is sold out' -> judge the item, not its sibling
     fresh_live = bool(LIVEWORDS.search(head)) and not SOLD.search(head)   # the watch saw it newer than the snapshot
-    if SOLD.search(head) and 'restock' not in head.lower(): return None, (pr or {}).get('img')
-    if TEASER.search(head) and not (pr or {}).get('avail'): return None, (pr or {}).get('img')
-    if pr is not None and not (pr.get('avail') or pr.get('pre') or fresh_live): return None, pr.get('img')   # nothing to buy right now
     code = r.get('route') == 'code-site' and 'no promo code' not in x['what'].lower()   # every code partner shows the code, auto-applied or typed
     path = f'/products/{handle}'
     u = (f'https://{host}/discount/{BC}?redirect={quote(path)}' if code and host.replace('www.', '') in AUTO else f'https://{host}{path}')
+    # Nov 20 8:56am (Tiffany): "if there is a product page, you should link to it... Just because it's a coming soon... We should
+    # link to it with our code." A product page that can't be bought right now (coming soon, teaser, sold out) gets a 'See it'
+    # button with the code on the link; 'Shop' stays for things that can be bought now.
+    if SOLD.search(head) and 'restock' not in head.lower(): return (u, code, 'See it'), (pr or {}).get('img')
+    if TEASER.search(head) and not (pr or {}).get('avail'): return (u, code, 'See it'), (pr or {}).get('img')
+    if pr is not None and not (pr.get('avail') or pr.get('pre') or fresh_live): return (u, code, 'See it'), pr.get('img')
     return (u, code), (pr or {}).get('img')
 def clean(b): return re.sub(r'\s*\(image-only\)', '', b)
 def stamp(f):   # Tiffany Nov 11 10:04am: every update timestamped (when WE posted it), like a live ticker
@@ -130,7 +133,8 @@ def line(x):
     when = ' · '.join(t for t in (x.get('day'), x.get('time')) if t)
     btn = ''
     if lk:
-        u, code = lk; btn = f'<a class="bw-btn" href="{e(u)}" target="_blank" rel="noopener">Shop{" · use code MAHJMATCH" if code and 'tigre' not in x['brand'].lower() else ""}</a>' + (save_line(x['brand']) if code else '')
+        u, code = lk[0], lk[1]; _lab = lk[2] if len(lk) > 2 else 'Shop'
+        btn = f'<a class="bw-btn" href="{e(u)}" target="_blank" rel="noopener">{_lab}{" · use code MAHJMATCH" if code and 'tigre' not in x['brand'].lower() else ""}</a>' + (save_line(x['brand']) if code else '')
     st = stamp(x.get('found'))
     return img, (f'<div class="bw-item">' + (f'<div class="bw-stamp">Added {e(st)}</div>' if st else '') + f'<div class="bw-what">' + ('<span class="bw-kind bw-k-new">New</span>' if not RESTOCK(x) and x.get('_sec') != 'sales' else '<span class="bw-kind bw-k-re">Restock</span>' if RESTOCK(x) else '') + f'{e(re.sub(r"^NEW:\s*", "", x["what"]))}</div>' + (f'<div class="bw-when">When: {e(when)}</div>' if when else '') + ''.join(f'<div class="bw-hist">Earlier{(" · " + e(stamp(h.get("found")))) if h.get("found") else ""}: {e(h["what"])}</div>' for h in (x.get('history') or [])) + btn + '</div>')
 # NEWS RANK (Tiffany Nov 11 10:29am): a tile set (travel too: big ticket) > new racks > rack restocks > mat restocks.
@@ -273,3 +277,30 @@ body{{background:var(--bg);color:var(--ink);font:16px/1.45 Georgia,'Times New Ro
 {body}</div>
 <script>(function(){{function r(){{var h=(location.hash||'').slice(1),p=h&&document.getElementById('p-'+h);document.getElementById('bw-main').hidden=!!p;document.querySelectorAll('.bw-bpage').forEach(function(s){{s.hidden=s!==p}});if(p)window.scrollTo(0,0)}}window.addEventListener('hashchange',r);r()}})();</script>'''
 open(R + 'site/livepatch/brand-watch/brand-watch.html', 'w').write(page); print(sum(len(L) for _, L in sec), 'items')
+
+# --- LIVE SKIN (Nov 21 2026; Tiffany Nov 20 9:10am "make the page load from the repo"): the same items in the design that is live
+# on /brand-watch (Duet's Nov 20 design: chips, brand filter, 'Partner Brand Watch' title). Style + script are the live ones
+# (site/livepatch/brand-watch/live-skin-style.html / live-skin-script.html). Output: block-built.html. It becomes block.html (the
+# file scripts/site_brand_watch_publish.py publishes) only with --publish-block, after a look: block.html may hold hand edits.
+_BW = R + 'site/livepatch/brand-watch/'
+_style = open(_BW + 'live-skin-style.html').read(); _script = open(_BW + 'live-skin-script.html').read()
+_sid = {'Black Friday deals': 'black-friday', 'Coming soon': 'coming-soon', 'Just dropped': 'just-dropped', 'This week': 'this-week', 'Sales': 'sales'}
+_main = body[body.index('<div id="bw-main">') + len('<div id="bw-main">'):]
+_secs = re.findall(r'<section class="bw-sec">.*?</section>', body, re.S)
+_rest = body[body.index(_secs[-1]) + len(_secs[-1]):] if _secs else ''
+_chips = []; _out = []
+_order = ['Black Friday deals', 'Sales', 'This week', 'Coming soon', 'Just dropped']
+def _h2(x): return html.unescape(re.search(r'<h2[^>]*>(.*?)</h2>', x, re.S).group(1))
+for x in sorted(_secs, key=lambda x: _order.index(_h2(x)) if _h2(x) in _order else 99):
+    name = _h2(x); sid = _sid.get(name) or re.sub(r'[^a-z0-9]+', '-', name.lower()).strip('-')
+    _out.append(x.replace('<section class="bw-sec">', f'<section class="bw-sec" id="{sid}">', 1))
+    _chips.append(f'<a class="bw-chip" href="#{sid}">{e(name.replace(" deals", ""))}<span>{x.count("<article")}</span></a>')
+_brands = sorted({(m.group(1), html.unescape(m.group(2))) for m in re.finditer(r'<section class="bw-bpage" id="p-([^"]+)" hidden>.*?<h2 class="bw-bh">(.*?)</h2>', body, re.S)}, key=lambda t: t[1].lower().replace('the ', ''))
+_opts = ''.join(f'<option value="{k}">{e(n)}</option>' for k, n in _brands)
+block = (_style + f'\n<div class="bw" id="bw-top"><div class="bw-week">{e(d.get("week_label",""))}</div><h1>Partner Brand Watch</h1>\n'
+         f'<p class="bw-updated">Last updated {e(stamp(d.get("updated")))}</p>\n'
+         '<p class="bw-intro">News from our partner brands, all in one place: new tile sets, mats and racks, restocks and sales, updated through the day. Use code MAHJMATCH at checkout to save wherever a brand offers it.</p>\n'
+         f'<div class="bw-tools"><nav class="bw-jump" aria-label="Jump to a section">{"".join(_chips)}</nav><label class="bw-filter"><span>Filter by brand</span><select id="bw-brand"><option value="">All brands</option>{_opts}</select></label></div>'
+         '<div id="bw-main">' + ''.join(_out) + _rest + '</div>\n' + _script)
+open(_BW + 'block-built.html', 'w').write(block); print('block-built.html', len(block), 'bytes;', block.count('<article'), 'cards;', len(_brands), 'brands in the filter')
+if '--publish-block' in sys.argv: open(_BW + 'block.html', 'w').write(block); print('block.html replaced: run scripts/site_brand_watch_publish.py')
