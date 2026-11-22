@@ -122,5 +122,17 @@ try:
     _pend=[f"{b} {v['url']}" for b,v in _bp.items() if v.get('status')!='approved']
     if _pend: out.append(f"BRAND PAGES WAITING ON TIFFANY'S REVIEW ({len(_pend)}): ask her in THIS reply for her personal note + to check the 'my favorite' picks, with the links: " + '; '.join(_pend) + ". Only her yes sets approved in config/brand-page-reviews.json.")
 except Exception: pass
+# Nov 9 / Nov 22 (YES-vs-LIVE: her yeses must not be dropped): reads the last run of scripts/checks/yes_live_check.py
+# (docs/status/yes-live-check.json; rerun the script after any album page edit), and the code-paused revert list.
+try:
+    _yl=json.load(open('docs/status/yes-live-check.json'))
+    if not _yl.get('pass'): out.append(f"YES NOT LIVE (OVERDUE): {_yl.get('summary')} (last run {_yl.get('at')}; list: docs/audits/yes-live-check-2026-11-22.md; rerun scripts/checks/yes_live_check.py after fixing)")
+except Exception: pass
+try:
+    import datetime as _dt
+    _today=_dt.date.today().isoformat()
+    _due=[r['brand'] for r in json.load(open('config/code-paused-reverts.json'))['rows'] if str(r.get('revert_on',''))[:10]<=_today and str(r.get('revert_on',''))[:4]=='2026']
+    if _due: out[0:0]=[f"CODE PAUSED -> LINKS: PUT THE CODE BACK TODAY for {', '.join(_due)} (config/code-paused-reverts.json has the exact text; Tiffany Nov 21: links must never stay without their code)"]
+except Exception: pass
 if out:
     print('=== FRONT DOOR (automatic, every message) ===\n'+'\n'.join(out)+'\nRule: if you tell Tiffany you will fix something, fix it BEFORE you reply, or add it to docs/OVERDUE.md in the same turn and tell her who/when.')
