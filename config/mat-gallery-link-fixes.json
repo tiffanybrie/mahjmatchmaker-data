@@ -137,6 +137,46 @@
    "url": "https://www.ozarkmahjongg.com/product-page/carson-vintage-mat",
    "name": "Ozark Mahjongg Carson Vintage",
    "why": "Tiffany Nov 7 10:45pm: the store is ozarkmahjongg.com (Wix /product-page/); this album mat had no link"
+  },
+  "bespoke-mahjong--vintage-floral-mat": {
+   "url": "https://bespokemahjong.com/products/copy-of-leopard-floral",
+   "name": "Bespoke Vintage Floral",
+   "why": "Nov 22 (v122-14 build link check): /products/cheetah-couture-instructional-mat-copy 404; the store now lists the mat as VINTAGE FLORAL at /products/copy-of-leopard-floral (same pattern, photo compared; the instructional version is gone). FYM still carries the dead link."
+  },
+  "charleston-mahjong-club--ski-club-mat-periwinkle-center": {
+   "url": "",
+   "name": "Charleston Mahjong Club Ski Club Mat - Periwinkle Center",
+   "why": "Nov 22 (v122-14 build link check): ShopMy p-95959041 lands on /products/the-ski-club-mat-in-toile-w-matching-bag = 404; not in products.json or search/suggest (only the Red Sweater Border Ski Club mat is listed). No shop button, not retired (Oct 20 precedent). FYM still carries the dead link."
+  },
+  "soiree-all-day--holiday-chintz": {
+   "url": "https://www.soireeallday.co/the-mahjong-collection/p/holiday-chintz-mahjong-mat?ref=MAHJMATCH",
+   "name": "Soirée All Day Holiday Chintz",
+   "why": "Nov 22 (v122-14 build link check): /the-mahjong-collection/mahjong-mats/p/holiday-chintz-mahjong-mat 404; the store lists it at /the-mahjong-collection/p/holiday-chintz-mahjong-mat (200). Same ?ref=MAHJMATCH form. FYM still carries the dead link."
+  },
+  "mahjong-row-co--foxhill-plaid": {
+   "url": "https://mahjongrowandco.com/products/foxhill-plaid-mahjong-mat?sca_ref=12475363.JLitn0fWe79Xnn",
+   "name": "Mahjong Row & Co. Foxhill Plaid",
+   "why": "Nov 22: REMOVED brand (config/code-truth.json removed_brands; link route \"none\"): no code claim. FYM v122-14 carries /discount/MAHJMATCH on these 5 adds-nov17 mats; the gallery uses the same plain product link form as the 9 Mahjong Row mats already there. Decision for Tiffany whether these 5 belong in the gallery at all."
+  },
+  "mahjong-row-co--ellington-navy": {
+   "url": "https://mahjongrowandco.com/products/ellington-navy-mahjong-mat?sca_ref=12475363.JLitn0fWe79Xnn",
+   "name": "Mahjong Row & Co. Ellington Navy",
+   "why": "Nov 22: REMOVED brand (config/code-truth.json removed_brands; link route \"none\"): no code claim. FYM v122-14 carries /discount/MAHJMATCH on these 5 adds-nov17 mats; the gallery uses the same plain product link form as the 9 Mahjong Row mats already there. Decision for Tiffany whether these 5 belong in the gallery at all."
+  },
+  "mahjong-row-co--sloane-floral": {
+   "url": "https://mahjongrowandco.com/products/sloane-floral-mahjong-mat?sca_ref=12475363.JLitn0fWe79Xnn",
+   "name": "Mahjong Row & Co. Sloane Floral",
+   "why": "Nov 22: REMOVED brand (config/code-truth.json removed_brands; link route \"none\"): no code claim. FYM v122-14 carries /discount/MAHJMATCH on these 5 adds-nov17 mats; the gallery uses the same plain product link form as the 9 Mahjong Row mats already there. Decision for Tiffany whether these 5 belong in the gallery at all."
+  },
+  "mahjong-row-co--hawthorne-floral": {
+   "url": "https://mahjongrowandco.com/products/hawthorne-floral-mahjong-mat?sca_ref=12475363.JLitn0fWe79Xnn",
+   "name": "Mahjong Row & Co. Hawthorne Floral",
+   "why": "Nov 22: REMOVED brand (config/code-truth.json removed_brands; link route \"none\"): no code claim. FYM v122-14 carries /discount/MAHJMATCH on these 5 adds-nov17 mats; the gallery uses the same plain product link form as the 9 Mahjong Row mats already there. Decision for Tiffany whether these 5 belong in the gallery at all."
+  },
+  "mahjong-row-co--marlowe-green": {
+   "url": "https://mahjongrowandco.com/products/marlowe-green-mahjong-mat?sca_ref=12475363.JLitn0fWe79Xnn",
+   "name": "Mahjong Row & Co. Marlowe Green",
+   "why": "Nov 22: REMOVED brand (config/code-truth.json removed_brands; link route \"none\"): no code claim. FYM v122-14 carries /discount/MAHJMATCH on these 5 adds-nov17 mats; the gallery uses the same plain product link form as the 9 Mahjong Row mats already there. Decision for Tiffany whether these 5 belong in the gallery at all."
   }
  }
 }

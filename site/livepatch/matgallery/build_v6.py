@@ -34,7 +34,10 @@ DATA_COMMIT = sys.argv[sys.argv.index('--data-commit') + 1] if '--data-commit' i
 if DATA_COMMIT: ARGS.remove(DATA_COMMIT)
 IDX = ARGS[0]
 COMMIT = ARGS[1] if len(ARGS) > 1 else 'ae02d66a4404ebec83cae6b54b019aee4a1dc0a9'
-VER = re.search(r'fym-(v\d+)', os.path.abspath(IDX)).group(1)
+VER = re.search(r'fym-(v\d+)', os.path.abspath(IDX)).group(1)  # data file name: data/matgallery-<VER>.json (gallery_sync_check --links reads matgallery-v\d+.json)
+BUILD = re.search(r'fym-(v\d+(?:-\d+)?)', os.path.abspath(IDX)).group(1)  # Nov 22: point release (fym-v122-14) goes in data-fym-build + the comment; data-fym stays "vNNN" because fym_gate [90]/[159b], gallery_sync_check, coverage_check and shopmy_sync_check all read data-fym="v\d+"
+STAGE = '--stage' in sys.argv  # Nov 22: staging build BEFORE the webps are committed: new rows keep img_commit PENDING (their card images do not load); never with --data-commit
+if STAGE and DATA_COMMIT: sys.exit('build_v6: --stage is a local staging build; a pinned (--data-commit) build needs the webps committed')
 log = lambda *a: print(*a, file=sys.stderr)
 h = open(IDX).read(); i = h.index('const D=') + 8; D, _ = json.JSONDecoder().raw_decode(h, i); M = D['mats']
 
@@ -44,13 +47,16 @@ X = json.load(open(XP)); fixed = 0
 for a in X['rows']:
     if a.get('img_commit') == 'PENDING':
         _p = f"assets/mats/gallery/{a['img']}.webp"
-        if subprocess.run(['git', '-C', REPO, 'status', '--porcelain', '--', _p], capture_output=True, text=True).stdout.strip():
+        _dirty = subprocess.run(['git', '-C', REPO, 'status', '--porcelain', '--', _p], capture_output=True, text=True).stdout.strip()
+        if _dirty and STAGE: continue
+        if _dirty:
             sys.exit(f"build_v6: {_p} has uncommitted changes: commit + push the gallery_sync.py webps first, then rebuild")
         c = subprocess.run(['git', '-C', REPO, 'log', '--format=%H', '-1', '--', _p], capture_output=True, text=True).stdout.strip()  # LAST commit that changed it (a re-picked photo gets a new pin)
         if not c: sys.exit(f"build_v6: {a['img']}.webp is not committed yet: commit the gallery_sync.py webps first, then rebuild")
         a['img_commit'] = c; fixed += 1
 if fixed:
     json.dump(X, open(XP, 'w'), indent=1, ensure_ascii=False); log('img_commit filled for', fixed, 'rows')
+if STAGE: log('STAGE build:', sum(1 for a in X['rows'] if a.get('img_commit') == 'PENDING'), 'rows still PENDING (webps not committed): rebuild without --stage after the commit')
 
 # --- 1. build_v5 ---
 r5 = subprocess.run([sys.executable, os.path.join(HERE, 'build_v5.py'), REPO + 'builder/fym_fix_oct20/mat_audit_report.csv', os.path.join(HERE, 'phash_pairs_oct20.json'), COMMIT],
@@ -250,8 +256,8 @@ out = out.replace("+shop+'</div></li>'", "+shop+(x[15]&&x[15][1]&&!x[4]?'<a clas
 assert 'mmg-shop2' in out, 'card end markup changed'
 CSS6 = '.mmg-also{display:block;font-size:.82em;color:#6f655d;font-style:italic;margin-top:.15em}.mmg-shop2{margin-top:2px!important;padding-top:2px!important;font-size:.78em!important}.mmg-img{position:relative}.mmg-pill{position:absolute;top:8px;left:8px;z-index:2;background:#9a8f86;color:#fff;font-style:normal;font-weight:700;font-size:10px;line-height:1;letter-spacing:.12em;text-transform:uppercase;padding:5px 9px;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.18);pointer-events:none}.mmg-card.is-sold .mmg-img img{opacity:.82}\n'
 out = out.replace('</style>', CSS6 + '</style>', 1)
-out = out.replace('<div class="mmg">', f'<div class="mmg" data-fym="{VER}">', 1)
-out = f'<!--mmg-fym:{VER} built by site/livepatch/matgallery/build_v6.py from Find Your Mat-ch {VER}; gate [159b]-->\n' + out
+out = out.replace('<div class="mmg">', f'<div class="mmg" data-fym="{VER}" data-fym-build="{BUILD}">', 1)
+out = f'<!--mmg-fym:{VER} built by site/livepatch/matgallery/build_v6.py from Find Your Mat-ch {BUILD}{" (STAGE build: new card images PENDING, not for paste)" if STAGE else ""}; gate [159b]-->\n' + out
 sys.stdout.write(out)
 
 # --- 4. counts + diff vs the staged v5 page ---

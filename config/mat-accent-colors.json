@@ -17144,29 +17144,6 @@
    },
    "src": "pixel-families"
   },
-  "let-s-be-besties--jingle-jungle-leatherette": {
-   "accents": [
-    "pink",
-    "red"
-   ],
-   "major": [
-    "pink",
-    "red"
-   ],
-   "shares": {
-    "blue": 0.2,
-    "earthy": 0.0,
-    "dark": 0.0,
-    "green": 1.2,
-    "neutral": 3.3,
-    "orange": 2.3,
-    "pink": 56.8,
-    "red": 31.7,
-    "teal": 2.5,
-    "yellow": 1.9
-   },
-   "src": "pixel-families"
-  },
   "let-s-be-besties--ornamental-charm": {
    "accents": [
     "green",
@@ -25964,22 +25941,6 @@
    },
    "src": "pixel-families"
   },
-  "let-s-be-besties--navy-green-sky-gator-skin-leatherette": {
-   "accents": [
-    "green"
-   ],
-   "major": [
-    "green"
-   ],
-   "shares": {
-    "blue": 3.9,
-    "dark": 7.4,
-    "green": 86.6,
-    "neutral": 0.8,
-    "teal": 1.3
-   },
-   "src": "pixel-families"
-  },
   "let-s-be-besties--navy-sky-mint-gator-skin": {
    "accents": [
     "green"
@@ -30477,6 +30438,5460 @@
     "neutral": 6.2,
     "pink": 2.4,
     "teal": 0.9
+   },
+   "src": "pixel-families"
+  },
+  "silk-mahjong--silk-tassel": {
+   "accents": [
+    "earthy",
+    "orange",
+    "purple"
+   ],
+   "major": [
+    "orange"
+   ],
+   "shares": {
+    "earthy": 47.1,
+    "dark": 4.2,
+    "neutral": 0.2,
+    "orange": 16.0,
+    "pink": 0.0,
+    "purple": 12.1,
+    "red": 10.9,
+    "yellow": 9.4
+   },
+   "src": "pixel-families"
+  },
+  "silk-mahjong--imperial-dragon": {
+   "accents": [
+    "earthy",
+    "orange"
+   ],
+   "major": [
+    "orange"
+   ],
+   "shares": {
+    "earthy": 41.0,
+    "dark": 16.2,
+    "green": 10.0,
+    "neutral": 6.9,
+    "orange": 19.4,
+    "red": 2.8,
+    "yellow": 3.6
+   },
+   "src": "pixel-families"
+  },
+  "silk-mahjong--peony-paradise": {
+   "accents": [
+    "red",
+    "green",
+    "earthy"
+   ],
+   "major": [
+    "red",
+    "green"
+   ],
+   "shares": {
+    "earthy": 19.8,
+    "dark": 1.0,
+    "green": 27.4,
+    "neutral": 7.9,
+    "orange": 5.6,
+    "pink": 0.2,
+    "purple": 0.0,
+    "red": 35.4,
+    "yellow": 2.6
+   },
+   "src": "pixel-families"
+  },
+  "silk-mahjong--crane-cloud": {
+   "accents": [
+    "green",
+    "teal"
+   ],
+   "major": [
+    "green",
+    "teal"
+   ],
+   "shares": {
+    "blue": 6.2,
+    "earthy": 10.0,
+    "dark": 3.2,
+    "green": 38.1,
+    "neutral": 16.2,
+    "orange": 2.8,
+    "teal": 21.9,
+    "yellow": 1.4
+   },
+   "src": "pixel-families"
+  },
+  "silk-mahjong--jade-butterfly": {
+   "accents": [
+    "earthy",
+    "orange",
+    "yellow",
+    "green"
+   ],
+   "major": [
+    "orange"
+   ],
+   "shares": {
+    "earthy": 43.4,
+    "dark": 8.6,
+    "green": 13.5,
+    "neutral": 0.4,
+    "orange": 19.8,
+    "yellow": 14.4
+   },
+   "src": "pixel-families"
+  },
+  "silk-mahjong--lacquer-red": {
+   "accents": [
+    "earthy",
+    "red",
+    "orange"
+   ],
+   "major": [
+    "red",
+    "orange"
+   ],
+   "shares": {
+    "earthy": 35.2,
+    "dark": 13.9,
+    "neutral": 4.6,
+    "orange": 18.7,
+    "pink": 0.2,
+    "red": 25.8,
+    "yellow": 1.6
+   },
+   "src": "pixel-families"
+  },
+  "silk-mahjong--noir": {
+   "accents": [
+    "earthy",
+    "dark"
+   ],
+   "major": [],
+   "shares": {
+    "earthy": 53.8,
+    "dark": 33.6,
+    "neutral": 9.0,
+    "orange": 3.6,
+    "red": 0.0,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "silk-mahjong--porcelain-blue": {
+   "accents": [
+    "blue",
+    "earthy"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 35.3,
+    "earthy": 13.3,
+    "dark": 0.2,
+    "neutral": 44.4,
+    "orange": 0.6,
+    "pink": 5.8,
+    "yellow": 0.3
+   },
+   "src": "pixel-families"
+  },
+  "splash-of-color--lady-luck-s-teal-lounge": {
+   "accents": [
+    "blue",
+    "earthy"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 48.0,
+    "earthy": 31.4,
+    "green": 1.6,
+    "neutral": 14.8,
+    "orange": 0.8,
+    "pink": 0.2,
+    "teal": 2.0,
+    "yellow": 1.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--pink-christmas": {
+   "accents": [
+    "purple",
+    "pink",
+    "green"
+   ],
+   "major": [
+    "purple",
+    "pink",
+    "green"
+   ],
+   "shares": {
+    "earthy": 0.2,
+    "dark": 2.0,
+    "green": 15.4,
+    "neutral": 2.5,
+    "pink": 28.3,
+    "purple": 50.8,
+    "red": 0.8
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--garden-rorschach-with-instructions": {
+   "accents": [
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 2.7,
+    "earthy": 2.7,
+    "dark": 0.6,
+    "green": 52.7,
+    "neutral": 23.4,
+    "orange": 0.8,
+    "pink": 10.6,
+    "purple": 2.8,
+    "red": 3.0,
+    "yellow": 0.6
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--rainbow-rhapsody": {
+   "accents": [
+    "green",
+    "pink",
+    "yellow"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 8.3,
+    "earthy": 2.8,
+    "dark": 2.8,
+    "green": 38.2,
+    "neutral": 0.7,
+    "orange": 4.2,
+    "pink": 14.7,
+    "purple": 2.8,
+    "red": 1.3,
+    "teal": 10.1,
+    "yellow": 14.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--wildflowers": {
+   "accents": [
+    "yellow",
+    "blue"
+   ],
+   "major": [
+    "yellow",
+    "blue"
+   ],
+   "shares": {
+    "blue": 17.8,
+    "earthy": 6.0,
+    "green": 0.3,
+    "neutral": 20.8,
+    "orange": 4.8,
+    "pink": 9.7,
+    "red": 0.0,
+    "yellow": 40.5
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--roatan": {
+   "accents": [
+    "pink",
+    "orange"
+   ],
+   "major": [
+    "pink",
+    "orange"
+   ],
+   "shares": {
+    "blue": 3.2,
+    "earthy": 9.6,
+    "green": 1.4,
+    "neutral": 2.0,
+    "orange": 15.6,
+    "pink": 56.0,
+    "purple": 1.2,
+    "red": 2.4,
+    "yellow": 8.6
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--hanky-panky": {
+   "accents": [
+    "green",
+    "yellow"
+   ],
+   "major": [
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "earthy": 1.0,
+    "green": 49.7,
+    "neutral": 16.0,
+    "yellow": 33.4
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--cheyenne-s-web": {
+   "accents": [
+    "pink",
+    "red"
+   ],
+   "major": [
+    "pink",
+    "red"
+   ],
+   "shares": {
+    "green": 0.1,
+    "neutral": 0.1,
+    "orange": 0.5,
+    "pink": 50.4,
+    "red": 48.8,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--charlotte-s-web": {
+   "accents": [
+    "green",
+    "blue",
+    "earthy"
+   ],
+   "major": [
+    "green",
+    "blue"
+   ],
+   "shares": {
+    "blue": 17.1,
+    "earthy": 12.7,
+    "green": 38.7,
+    "neutral": 23.0,
+    "orange": 4.1,
+    "pink": 0.8,
+    "teal": 2.0,
+    "yellow": 1.6
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--summer-whimsy": {
+   "accents": [
+    "green",
+    "teal"
+   ],
+   "major": [
+    "green",
+    "teal"
+   ],
+   "shares": {
+    "blue": 7.7,
+    "earthy": 1.2,
+    "green": 40.3,
+    "neutral": 2.5,
+    "orange": 4.0,
+    "pink": 4.1,
+    "purple": 0.0,
+    "red": 0.0,
+    "teal": 35.1,
+    "yellow": 5.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--summer-whimsy-coral": {
+   "accents": [
+    "orange",
+    "pink"
+   ],
+   "major": [
+    "orange",
+    "pink"
+   ],
+   "shares": {
+    "earthy": 5.9,
+    "green": 9.1,
+    "neutral": 3.9,
+    "orange": 45.5,
+    "pink": 30.3,
+    "purple": 1.0,
+    "red": 2.4,
+    "yellow": 1.9
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--red-dragon": {
+   "accents": [
+    "red",
+    "orange"
+   ],
+   "major": [
+    "red",
+    "orange"
+   ],
+   "shares": {
+    "earthy": 0.4,
+    "orange": 18.9,
+    "red": 80.7
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--christmas-whimsy-stripes": {
+   "accents": [
+    "green",
+    "pink"
+   ],
+   "major": [
+    "green",
+    "pink"
+   ],
+   "shares": {
+    "blue": 0.1,
+    "earthy": 4.1,
+    "dark": 0.1,
+    "green": 53.3,
+    "neutral": 10.4,
+    "orange": 1.3,
+    "pink": 20.7,
+    "purple": 0.0,
+    "red": 3.4,
+    "teal": 1.4,
+    "yellow": 5.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--pink-calico": {
+   "accents": [
+    "orange",
+    "yellow",
+    "pink"
+   ],
+   "major": [
+    "orange",
+    "yellow",
+    "pink"
+   ],
+   "shares": {
+    "green": 0.0,
+    "neutral": 0.3,
+    "orange": 35.4,
+    "pink": 24.7,
+    "red": 8.7,
+    "yellow": 30.8
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--lucchese": {
+   "accents": [
+    "earthy",
+    "orange"
+   ],
+   "major": [
+    "orange"
+   ],
+   "shares": {
+    "earthy": 67.1,
+    "neutral": 17.2,
+    "orange": 15.7
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--jack-s-black": {
+   "accents": [
+    "earthy"
+   ],
+   "major": [],
+   "shares": {
+    "earthy": 82.8,
+    "dark": 17.1,
+    "neutral": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--italian-piazza": {
+   "accents": [
+    "pink"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "green": 1.0,
+    "neutral": 2.2,
+    "orange": 11.3,
+    "pink": 79.2,
+    "red": 5.8,
+    "yellow": 0.6
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--green-dragons": {
+   "accents": [
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "green": 100.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--gray-dragon": {
+   "accents": [
+    "neutral",
+    "earthy"
+   ],
+   "major": [],
+   "shares": {
+    "earthy": 17.1,
+    "neutral": 82.9,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--gramercy-park": {
+   "accents": [
+    "pink",
+    "orange"
+   ],
+   "major": [
+    "pink",
+    "orange"
+   ],
+   "shares": {
+    "blue": 0.1,
+    "earthy": 0.8,
+    "green": 1.3,
+    "neutral": 0.2,
+    "orange": 16.3,
+    "pink": 77.8,
+    "teal": 1.6,
+    "yellow": 1.8
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--fifth-ave": {
+   "accents": [
+    "pink",
+    "earthy"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "earthy": 16.1,
+    "green": 0.1,
+    "neutral": 6.4,
+    "orange": 3.9,
+    "pink": 73.4,
+    "teal": 0.0,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--christmas-party": {
+   "accents": [
+    "earthy",
+    "red"
+   ],
+   "major": [
+    "red"
+   ],
+   "shares": {
+    "earthy": 62.7,
+    "dark": 0.5,
+    "green": 7.3,
+    "neutral": 0.8,
+    "orange": 4.0,
+    "red": 17.7,
+    "yellow": 7.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--amy-s-boots": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 100.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--zodiac-virgo": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 97.7,
+    "earthy": 0.1,
+    "neutral": 2.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--zodiac-taurus": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 97.7,
+    "earthy": 0.2,
+    "neutral": 2.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--zodiac-scorpio": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 97.7,
+    "earthy": 0.2,
+    "neutral": 2.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--zodiac-sagittarius": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 97.6,
+    "earthy": 0.2,
+    "neutral": 2.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--zodiac-pisces": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 97.7,
+    "earthy": 0.2,
+    "neutral": 2.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--zodiac-libra": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 96.3,
+    "earthy": 0.2,
+    "neutral": 3.5
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--zodiac-leo": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 97.4,
+    "earthy": 0.3,
+    "neutral": 2.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--zodiac-gemini": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 97.7,
+    "earthy": 0.3,
+    "neutral": 2.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--zodiac-capricorn": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 98.0,
+    "earthy": 0.1,
+    "neutral": 1.9
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--zodiac-cancer": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 98.6,
+    "earthy": 0.2,
+    "neutral": 1.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--zodiac-aries": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 98.2,
+    "earthy": 0.1,
+    "neutral": 1.7
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--zodiac-aquarius": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 97.6,
+    "earthy": 0.2,
+    "neutral": 2.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--tea-time": {
+   "accents": [
+    "green",
+    "pink",
+    "earthy"
+   ],
+   "major": [
+    "green",
+    "pink"
+   ],
+   "shares": {
+    "blue": 2.0,
+    "earthy": 15.6,
+    "dark": 0.1,
+    "green": 44.2,
+    "neutral": 12.3,
+    "orange": 1.4,
+    "pink": 20.1,
+    "purple": 0.4,
+    "red": 1.7,
+    "teal": 0.5,
+    "yellow": 1.8
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--studio-54": {
+   "accents": [
+    "orange",
+    "pink"
+   ],
+   "major": [
+    "orange",
+    "pink"
+   ],
+   "shares": {
+    "orange": 83.2,
+    "pink": 16.8,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--speakeasy-lillian-claire-designs": {
+   "accents": [
+    "dark"
+   ],
+   "major": [],
+   "shares": {
+    "blue": 0.1,
+    "earthy": 10.9,
+    "dark": 80.4,
+    "green": 4.0,
+    "neutral": 4.3,
+    "red": 0.4
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--sparrow-in-olive": {
+   "accents": [
+    "neutral"
+   ],
+   "major": [],
+   "shares": {
+    "neutral": 100.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--sparrow-in-eggplant": {
+   "accents": [
+    "dark"
+   ],
+   "major": [],
+   "shares": {
+    "dark": 100.0,
+    "purple": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--sparrow-in-azure": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 96.1,
+    "dark": 3.9,
+    "teal": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--songbird": {
+   "accents": [
+    "green",
+    "pink",
+    "blue"
+   ],
+   "major": [
+    "green",
+    "pink"
+   ],
+   "shares": {
+    "blue": 14.6,
+    "earthy": 0.5,
+    "green": 44.0,
+    "neutral": 0.6,
+    "orange": 0.9,
+    "pink": 30.1,
+    "purple": 2.2,
+    "red": 0.1,
+    "teal": 1.4,
+    "yellow": 5.5
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--serengeti": {
+   "accents": [
+    "earthy",
+    "orange"
+   ],
+   "major": [
+    "orange"
+   ],
+   "shares": {
+    "blue": 2.4,
+    "earthy": 55.5,
+    "dark": 5.4,
+    "green": 0.3,
+    "neutral": 6.7,
+    "orange": 19.7,
+    "pink": 1.3,
+    "red": 5.9,
+    "teal": 0.0,
+    "yellow": 2.8
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--seaside-holiday": {
+   "accents": [
+    "blue",
+    "yellow",
+    "green",
+    "earthy"
+   ],
+   "major": [
+    "blue",
+    "yellow",
+    "green"
+   ],
+   "shares": {
+    "blue": 32.9,
+    "earthy": 15.9,
+    "green": 18.2,
+    "neutral": 10.0,
+    "teal": 0.2,
+    "yellow": 22.8
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--queen-bee": {
+   "accents": [
+    "yellow"
+   ],
+   "major": [
+    "yellow"
+   ],
+   "shares": {
+    "blue": 1.7,
+    "earthy": 6.8,
+    "dark": 0.2,
+    "green": 3.9,
+    "neutral": 4.6,
+    "orange": 11.3,
+    "pink": 1.7,
+    "red": 0.5,
+    "teal": 0.3,
+    "yellow": 69.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--queen-bee-with-instructions": {
+   "accents": [
+    "yellow"
+   ],
+   "major": [
+    "yellow"
+   ],
+   "shares": {
+    "blue": 1.7,
+    "earthy": 6.1,
+    "dark": 0.2,
+    "green": 3.7,
+    "neutral": 4.6,
+    "orange": 11.3,
+    "pink": 1.5,
+    "purple": 0.0,
+    "red": 0.6,
+    "teal": 0.3,
+    "yellow": 69.9
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--purple-haze": {
+   "accents": [
+    "blue",
+    "pink",
+    "yellow"
+   ],
+   "major": [
+    "blue",
+    "pink"
+   ],
+   "shares": {
+    "blue": 33.8,
+    "green": 10.1,
+    "neutral": 4.7,
+    "orange": 2.3,
+    "pink": 32.0,
+    "purple": 2.3,
+    "teal": 1.6,
+    "yellow": 13.4
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--pretty-in-pink": {
+   "accents": [
+    "pink",
+    "green",
+    "red"
+   ],
+   "major": [
+    "pink",
+    "green"
+   ],
+   "shares": {
+    "earthy": 1.0,
+    "green": 21.0,
+    "neutral": 10.7,
+    "pink": 55.1,
+    "purple": 0.1,
+    "red": 12.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--poppies-in-lime": {
+   "accents": [
+    "green",
+    "yellow",
+    "pink"
+   ],
+   "major": [
+    "green",
+    "yellow",
+    "pink"
+   ],
+   "shares": {
+    "blue": 0.5,
+    "earthy": 2.8,
+    "green": 55.2,
+    "neutral": 3.8,
+    "orange": 4.1,
+    "pink": 15.3,
+    "purple": 0.2,
+    "red": 0.8,
+    "teal": 1.5,
+    "yellow": 15.6
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--petals-and-pungs-with-instructions": {
+   "accents": [
+    "pink",
+    "green",
+    "earthy",
+    "purple"
+   ],
+   "major": [
+    "pink",
+    "green"
+   ],
+   "shares": {
+    "earthy": 13.6,
+    "green": 23.2,
+    "neutral": 17.4,
+    "orange": 1.3,
+    "pink": 29.2,
+    "purple": 13.2,
+    "red": 0.2,
+    "yellow": 1.8
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--petals-and-pungs": {
+   "accents": [
+    "pink",
+    "green",
+    "earthy",
+    "purple"
+   ],
+   "major": [
+    "pink",
+    "green"
+   ],
+   "shares": {
+    "earthy": 14.3,
+    "dark": 0.0,
+    "green": 24.5,
+    "neutral": 16.7,
+    "orange": 0.8,
+    "pink": 27.8,
+    "purple": 14.2,
+    "red": 0.1,
+    "yellow": 1.6
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--peppermint-patty": {
+   "accents": [
+    "pink",
+    "green"
+   ],
+   "major": [
+    "pink",
+    "green"
+   ],
+   "shares": {
+    "blue": 0.5,
+    "earthy": 1.1,
+    "dark": 0.0,
+    "green": 34.9,
+    "neutral": 1.5,
+    "orange": 0.1,
+    "pink": 57.5,
+    "purple": 0.1,
+    "red": 0.6,
+    "teal": 3.1,
+    "yellow": 0.6
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--paisley-blues": {
+   "accents": [
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 78.1,
+    "green": 13.0,
+    "neutral": 6.4,
+    "pink": 0.1,
+    "purple": 0.0,
+    "teal": 1.3,
+    "yellow": 1.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--orange-blossoms": {
+   "accents": [
+    "green",
+    "orange",
+    "earthy",
+    "pink"
+   ],
+   "major": [
+    "green",
+    "orange",
+    "pink"
+   ],
+   "shares": {
+    "earthy": 16.0,
+    "dark": 1.4,
+    "green": 29.5,
+    "neutral": 10.3,
+    "orange": 18.9,
+    "pink": 15.5,
+    "purple": 0.1,
+    "red": 1.3,
+    "teal": 0.0,
+    "yellow": 7.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--ora-s-dress": {
+   "accents": [
+    "earthy",
+    "orange",
+    "yellow"
+   ],
+   "major": [
+    "orange",
+    "yellow"
+   ],
+   "shares": {
+    "blue": 0.1,
+    "earthy": 41.4,
+    "dark": 0.5,
+    "green": 4.0,
+    "neutral": 9.8,
+    "orange": 18.6,
+    "pink": 6.9,
+    "red": 1.1,
+    "teal": 0.3,
+    "yellow": 17.4
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--oopsy-daisy": {
+   "accents": [
+    "red",
+    "blue"
+   ],
+   "major": [
+    "red",
+    "blue"
+   ],
+   "shares": {
+    "blue": 43.9,
+    "earthy": 1.6,
+    "green": 0.9,
+    "neutral": 0.3,
+    "pink": 4.0,
+    "purple": 0.6,
+    "red": 46.0,
+    "teal": 0.5,
+    "yellow": 2.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--off-duval": {
+   "accents": [
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "earthy": 11.3,
+    "dark": 0.1,
+    "green": 74.8,
+    "neutral": 6.3,
+    "orange": 1.7,
+    "pink": 3.3,
+    "red": 0.1,
+    "yellow": 2.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--oh-holy-night": {
+   "accents": [
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "dark": 17.3,
+    "earthy": 7.2,
+    "green": 72.7,
+    "neutral": 2.9
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--morocco": {
+   "accents": [
+    "yellow",
+    "orange",
+    "blue"
+   ],
+   "major": [
+    "yellow",
+    "orange",
+    "blue"
+   ],
+   "shares": {
+    "blue": 17.3,
+    "earthy": 2.3,
+    "green": 0.3,
+    "neutral": 4.1,
+    "orange": 17.9,
+    "pink": 9.8,
+    "purple": 8.4,
+    "red": 2.1,
+    "yellow": 37.9
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--midnight-flight": {
+   "accents": [
+    "dark",
+    "earthy",
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 1.6,
+    "earthy": 19.5,
+    "dark": 25.1,
+    "green": 15.4,
+    "neutral": 12.2,
+    "orange": 8.1,
+    "pink": 5.3,
+    "purple": 0.8,
+    "red": 4.3,
+    "yellow": 7.7
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--midnight-blooms": {
+   "accents": [
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 58.9,
+    "earthy": 0.0,
+    "dark": 1.3,
+    "green": 14.2,
+    "neutral": 0.4,
+    "pink": 8.2,
+    "purple": 1.2,
+    "red": 9.6,
+    "teal": 6.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--metro-botanicals": {
+   "accents": [
+    "green",
+    "orange",
+    "pink",
+    "earthy"
+   ],
+   "major": [
+    "green",
+    "orange",
+    "pink"
+   ],
+   "shares": {
+    "blue": 0.0,
+    "earthy": 15.3,
+    "dark": 1.6,
+    "green": 23.3,
+    "neutral": 10.5,
+    "orange": 21.8,
+    "pink": 16.4,
+    "purple": 0.1,
+    "red": 1.6,
+    "teal": 0.0,
+    "yellow": 9.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--lila-s-garden": {
+   "accents": [
+    "earthy",
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "earthy": 45.1,
+    "dark": 7.7,
+    "green": 23.3,
+    "neutral": 1.1,
+    "orange": 7.5,
+    "pink": 4.4,
+    "red": 0.8,
+    "yellow": 10.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--kate-s-gala": {
+   "accents": [
+    "green",
+    "blue",
+    "pink"
+   ],
+   "major": [
+    "green",
+    "blue",
+    "pink"
+   ],
+   "shares": {
+    "blue": 27.3,
+    "earthy": 0.8,
+    "green": 39.6,
+    "neutral": 2.0,
+    "orange": 6.2,
+    "pink": 18.8,
+    "purple": 0.0,
+    "red": 0.1,
+    "teal": 1.8,
+    "yellow": 3.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--jemma": {
+   "accents": [
+    "dark",
+    "blue",
+    "yellow"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 18.4,
+    "earthy": 5.8,
+    "dark": 22.7,
+    "green": 2.7,
+    "neutral": 31.4,
+    "orange": 1.9,
+    "pink": 3.6,
+    "purple": 0.0,
+    "red": 0.4,
+    "teal": 0.3,
+    "yellow": 12.6
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--irish-cream": {
+   "accents": [
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "dark": 0.3,
+    "green": 47.4,
+    "neutral": 26.9,
+    "orange": 3.8,
+    "pink": 12.0,
+    "yellow": 9.6
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--hometown-christmas": {
+   "accents": [
+    "pink"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "earthy": 11.5,
+    "green": 4.3,
+    "neutral": 14.0,
+    "orange": 3.0,
+    "pink": 67.0,
+    "red": 0.0,
+    "yellow": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--happy-as-a-lark": {
+   "accents": [
+    "green",
+    "pink"
+   ],
+   "major": [
+    "green",
+    "pink"
+   ],
+   "shares": {
+    "blue": 3.8,
+    "earthy": 2.5,
+    "green": 57.9,
+    "neutral": 1.9,
+    "orange": 2.3,
+    "pink": 28.2,
+    "purple": 0.3,
+    "red": 0.4,
+    "teal": 0.4,
+    "yellow": 2.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--great-frontier": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 67.5,
+    "earthy": 6.9,
+    "dark": 14.7,
+    "neutral": 9.6,
+    "orange": 0.8,
+    "purple": 0.0,
+    "red": 0.5
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--gray-empress": {
+   "accents": [
+    "neutral",
+    "yellow",
+    "earthy"
+   ],
+   "major": [
+    "yellow"
+   ],
+   "shares": {
+    "blue": 0.1,
+    "earthy": 13.2,
+    "neutral": 57.3,
+    "orange": 0.1,
+    "purple": 0.0,
+    "yellow": 29.4
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--flower-power": {
+   "accents": [
+    "earthy",
+    "red",
+    "pink",
+    "orange"
+   ],
+   "major": [
+    "red",
+    "pink",
+    "orange"
+   ],
+   "shares": {
+    "blue": 0.0,
+    "earthy": 37.7,
+    "dark": 0.3,
+    "green": 0.9,
+    "neutral": 2.5,
+    "orange": 15.7,
+    "pink": 17.1,
+    "red": 22.0,
+    "teal": 0.4,
+    "yellow": 3.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--florence": {
+   "accents": [
+    "orange",
+    "green",
+    "earthy"
+   ],
+   "major": [
+    "orange",
+    "green"
+   ],
+   "shares": {
+    "earthy": 13.1,
+    "green": 20.4,
+    "neutral": 20.2,
+    "orange": 34.8,
+    "pink": 1.0,
+    "yellow": 10.6
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--fiji": {
+   "accents": [
+    "blue",
+    "pink"
+   ],
+   "major": [
+    "blue",
+    "pink"
+   ],
+   "shares": {
+    "blue": 33.2,
+    "earthy": 3.8,
+    "dark": 3.4,
+    "neutral": 28.7,
+    "orange": 5.8,
+    "pink": 23.3,
+    "red": 1.6,
+    "teal": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--purple-english-garden": {
+   "accents": [
+    "blue",
+    "green",
+    "purple"
+   ],
+   "major": [
+    "blue",
+    "green",
+    "purple"
+   ],
+   "shares": {
+    "blue": 61.7,
+    "green": 18.7,
+    "neutral": 0.4,
+    "orange": 0.0,
+    "pink": 0.2,
+    "purple": 17.7,
+    "teal": 1.1,
+    "yellow": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--green-english-garden": {
+   "accents": [
+    "green",
+    "blue",
+    "purple"
+   ],
+   "major": [
+    "green",
+    "blue",
+    "purple"
+   ],
+   "shares": {
+    "blue": 31.0,
+    "green": 42.1,
+    "neutral": 0.6,
+    "orange": 0.0,
+    "pink": 0.3,
+    "purple": 23.6,
+    "teal": 1.9,
+    "yellow": 0.5
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--emperor-s-aviary": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 71.5,
+    "earthy": 5.7,
+    "dark": 0.9,
+    "green": 8.1,
+    "neutral": 12.7,
+    "purple": 0.1,
+    "red": 0.2,
+    "teal": 0.0,
+    "yellow": 0.8
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--eastern-blooms": {
+   "accents": [
+    "green",
+    "blue"
+   ],
+   "major": [
+    "green",
+    "blue"
+   ],
+   "shares": {
+    "blue": 15.1,
+    "earthy": 11.0,
+    "dark": 7.7,
+    "green": 41.8,
+    "neutral": 3.5,
+    "orange": 2.4,
+    "pink": 2.4,
+    "purple": 4.1,
+    "red": 3.1,
+    "teal": 8.8
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--deck-the-halls": {
+   "accents": [
+    "green",
+    "blue",
+    "teal"
+   ],
+   "major": [
+    "green",
+    "blue",
+    "teal"
+   ],
+   "shares": {
+    "blue": 22.4,
+    "earthy": 3.9,
+    "dark": 0.5,
+    "green": 36.7,
+    "neutral": 2.1,
+    "orange": 1.7,
+    "pink": 11.6,
+    "purple": 1.8,
+    "red": 1.6,
+    "teal": 16.9,
+    "yellow": 0.7
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--christmas-whimsy": {
+   "accents": [
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 0.1,
+    "earthy": 6.4,
+    "dark": 0.1,
+    "green": 63.4,
+    "neutral": 3.3,
+    "orange": 1.1,
+    "pink": 11.6,
+    "purple": 2.5,
+    "red": 4.2,
+    "teal": 1.9,
+    "yellow": 5.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--christmas-tradition": {
+   "accents": [
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 0.1,
+    "earthy": 7.2,
+    "dark": 0.0,
+    "green": 71.7,
+    "neutral": 5.6,
+    "orange": 0.5,
+    "pink": 5.1,
+    "red": 8.3,
+    "teal": 0.6,
+    "yellow": 1.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--christmas-eve": {
+   "accents": [
+    "orange",
+    "earthy",
+    "green"
+   ],
+   "major": [
+    "orange",
+    "green"
+   ],
+   "shares": {
+    "blue": 0.2,
+    "earthy": 20.0,
+    "dark": 1.0,
+    "green": 19.2,
+    "neutral": 6.4,
+    "orange": 29.4,
+    "pink": 1.1,
+    "red": 10.8,
+    "yellow": 11.9
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--chinoiserie-christmas": {
+   "accents": [
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 62.5,
+    "earthy": 1.5,
+    "dark": 0.0,
+    "green": 19.5,
+    "neutral": 6.1,
+    "orange": 0.2,
+    "pink": 1.9,
+    "purple": 0.1,
+    "red": 7.4,
+    "teal": 0.0,
+    "yellow": 0.6
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--caroline": {
+   "accents": [
+    "pink",
+    "yellow",
+    "red"
+   ],
+   "major": [
+    "pink",
+    "yellow",
+    "red"
+   ],
+   "shares": {
+    "blue": 0.1,
+    "green": 2.1,
+    "neutral": 0.3,
+    "orange": 2.9,
+    "pink": 59.6,
+    "purple": 0.0,
+    "red": 15.2,
+    "teal": 1.8,
+    "yellow": 17.9
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--chinoiserie-garden": {
+   "accents": [
+    "blue",
+    "green",
+    "pink"
+   ],
+   "major": [
+    "blue",
+    "green",
+    "pink"
+   ],
+   "shares": {
+    "blue": 51.2,
+    "earthy": 1.0,
+    "dark": 0.3,
+    "green": 18.1,
+    "neutral": 1.2,
+    "orange": 3.7,
+    "pink": 16.4,
+    "purple": 0.2,
+    "red": 0.1,
+    "teal": 0.9,
+    "yellow": 6.9
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--candy-crackers": {
+   "accents": [
+    "pink",
+    "blue",
+    "green"
+   ],
+   "major": [
+    "pink",
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 26.5,
+    "earthy": 0.4,
+    "dark": 0.0,
+    "green": 20.5,
+    "neutral": 2.2,
+    "orange": 0.3,
+    "pink": 41.5,
+    "purple": 5.3,
+    "red": 1.0,
+    "teal": 2.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--busy-bees": {
+   "accents": [
+    "yellow",
+    "orange"
+   ],
+   "major": [
+    "yellow",
+    "orange"
+   ],
+   "shares": {
+    "blue": 0.4,
+    "earthy": 9.3,
+    "dark": 0.2,
+    "green": 7.5,
+    "neutral": 17.9,
+    "orange": 27.3,
+    "pink": 2.2,
+    "purple": 0.1,
+    "red": 0.6,
+    "yellow": 34.5
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--bougie-dragons": {
+   "accents": [
+    "green",
+    "pink"
+   ],
+   "major": [
+    "green",
+    "pink"
+   ],
+   "shares": {
+    "blue": 0.3,
+    "earthy": 6.5,
+    "dark": 0.2,
+    "green": 63.5,
+    "neutral": 2.8,
+    "orange": 0.5,
+    "pink": 25.1,
+    "purple": 0.1,
+    "red": 0.4,
+    "teal": 0.5,
+    "yellow": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--blue-empress": {
+   "accents": [
+    "neutral",
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 41.3,
+    "earthy": 0.1,
+    "neutral": 58.7
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--blush-and-bashful": {
+   "accents": [
+    "green",
+    "earthy",
+    "pink"
+   ],
+   "major": [
+    "green",
+    "pink"
+   ],
+   "shares": {
+    "blue": 0.0,
+    "earthy": 25.2,
+    "green": 29.4,
+    "neutral": 10.9,
+    "orange": 6.9,
+    "pink": 23.5,
+    "teal": 0.8,
+    "yellow": 3.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--black-tie-affair": {
+   "accents": [
+    "orange",
+    "earthy"
+   ],
+   "major": [
+    "orange"
+   ],
+   "shares": {
+    "earthy": 14.4,
+    "neutral": 38.9,
+    "orange": 43.1,
+    "yellow": 3.6
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--autumn-blooms": {
+   "accents": [
+    "earthy",
+    "yellow"
+   ],
+   "major": [
+    "yellow"
+   ],
+   "shares": {
+    "earthy": 26.6,
+    "dark": 0.6,
+    "green": 5.9,
+    "neutral": 38.8,
+    "orange": 8.2,
+    "pink": 0.2,
+    "red": 1.8,
+    "yellow": 18.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--art-deco": {
+   "accents": [
+    "pink",
+    "green"
+   ],
+   "major": [
+    "pink",
+    "green"
+   ],
+   "shares": {
+    "blue": 0.1,
+    "earthy": 2.2,
+    "green": 16.8,
+    "neutral": 42.3,
+    "orange": 3.5,
+    "pink": 24.1,
+    "teal": 1.8,
+    "yellow": 9.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--bam-dragons": {
+   "accents": [
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 44.5,
+    "earthy": 4.6,
+    "green": 26.1,
+    "neutral": 4.8,
+    "orange": 1.4,
+    "pink": 10.0,
+    "purple": 3.1,
+    "red": 0.3,
+    "teal": 1.0,
+    "yellow": 4.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--american-west": {
+   "accents": [
+    "earthy"
+   ],
+   "major": [],
+   "shares": {
+    "earthy": 100.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--amelia": {
+   "accents": [
+    "blue",
+    "pink"
+   ],
+   "major": [
+    "blue",
+    "pink"
+   ],
+   "shares": {
+    "blue": 51.0,
+    "earthy": 0.5,
+    "green": 2.6,
+    "neutral": 0.8,
+    "orange": 5.0,
+    "pink": 30.4,
+    "purple": 1.7,
+    "red": 0.4,
+    "teal": 3.6,
+    "yellow": 3.9
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--puffer-glam": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 72.0,
+    "earthy": 2.7,
+    "dark": 1.5,
+    "green": 0.5,
+    "neutral": 2.3,
+    "orange": 7.0,
+    "pink": 5.3,
+    "purple": 2.7,
+    "red": 2.2,
+    "teal": 3.7,
+    "yellow": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--autumn-wreath": {
+   "accents": [
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "earthy": 2.6,
+    "dark": 16.0,
+    "green": 52.4,
+    "neutral": 0.6,
+    "orange": 11.7,
+    "pink": 0.4,
+    "red": 5.9,
+    "yellow": 10.5
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--garden-glow": {
+   "accents": [
+    "green",
+    "pink"
+   ],
+   "major": [
+    "green",
+    "pink"
+   ],
+   "shares": {
+    "blue": 1.6,
+    "earthy": 7.6,
+    "dark": 11.1,
+    "green": 28.5,
+    "neutral": 4.8,
+    "orange": 8.5,
+    "pink": 20.5,
+    "purple": 5.3,
+    "red": 2.8,
+    "teal": 0.2,
+    "yellow": 9.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--blue-octopus": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 74.8,
+    "earthy": 7.5,
+    "dark": 0.0,
+    "green": 2.3,
+    "neutral": 3.3,
+    "orange": 0.5,
+    "pink": 1.8,
+    "purple": 5.7,
+    "red": 3.8,
+    "teal": 0.0,
+    "yellow": 0.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--ocean-pop": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 77.4,
+    "earthy": 4.6,
+    "dark": 0.9,
+    "green": 5.1,
+    "neutral": 1.7,
+    "orange": 1.8,
+    "pink": 1.0,
+    "purple": 0.1,
+    "red": 1.0,
+    "teal": 4.3,
+    "yellow": 2.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--gray-shark": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 39.3,
+    "earthy": 0.0,
+    "dark": 12.2,
+    "green": 0.1,
+    "neutral": 43.1,
+    "orange": 0.0,
+    "pink": 0.8,
+    "purple": 0.8,
+    "red": 2.7,
+    "teal": 1.0,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--crab-cabana": {
+   "accents": [
+    "orange",
+    "teal",
+    "blue"
+   ],
+   "major": [
+    "orange",
+    "teal",
+    "blue"
+   ],
+   "shares": {
+    "blue": 19.5,
+    "earthy": 2.8,
+    "dark": 0.2,
+    "green": 8.5,
+    "neutral": 2.5,
+    "orange": 37.2,
+    "pink": 4.4,
+    "purple": 0.6,
+    "red": 1.4,
+    "teal": 21.2,
+    "yellow": 1.7
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--blue-shark": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 89.2,
+    "earthy": 0.0,
+    "dark": 3.4,
+    "green": 0.1,
+    "neutral": 2.1,
+    "orange": 0.1,
+    "pink": 0.9,
+    "purple": 0.7,
+    "red": 2.6,
+    "teal": 1.0,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--year-of-the-g-o-a-t": {
+   "accents": [
+    "blue",
+    "pink",
+    "earthy"
+   ],
+   "major": [
+    "blue",
+    "pink"
+   ],
+   "shares": {
+    "blue": 25.1,
+    "earthy": 12.3,
+    "dark": 15.6,
+    "green": 0.4,
+    "neutral": 7.7,
+    "orange": 6.5,
+    "pink": 18.8,
+    "purple": 7.2,
+    "red": 4.9,
+    "teal": 0.5,
+    "yellow": 1.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--ouro4us": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 62.3,
+    "dark": 14.8,
+    "green": 8.4,
+    "neutral": 3.9,
+    "teal": 10.6
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--mahj-tab": {
+   "accents": [
+    "pink"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "blue": 1.1,
+    "neutral": 0.1,
+    "pink": 98.5,
+    "purple": 0.2,
+    "red": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--gilded-pearl": {
+   "accents": [
+    "earthy",
+    "orange"
+   ],
+   "major": [
+    "orange"
+   ],
+   "shares": {
+    "earthy": 69.4,
+    "green": 0.0,
+    "neutral": 2.5,
+    "orange": 27.9,
+    "pink": 0.1,
+    "red": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--electric-avenue": {
+   "accents": [
+    "pink",
+    "earthy"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "blue": 0.3,
+    "earthy": 31.1,
+    "dark": 12.4,
+    "green": 0.8,
+    "neutral": 13.2,
+    "orange": 0.2,
+    "pink": 33.6,
+    "purple": 3.7,
+    "red": 0.3,
+    "teal": 3.3,
+    "yellow": 1.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--denim-darling": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 64.6,
+    "earthy": 1.7,
+    "dark": 14.2,
+    "green": 1.8,
+    "neutral": 1.3,
+    "orange": 3.4,
+    "pink": 3.9,
+    "purple": 0.7,
+    "red": 5.1,
+    "teal": 0.1,
+    "yellow": 3.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--tomato-tango": {
+   "accents": [
+    "red",
+    "purple"
+   ],
+   "major": [
+    "red",
+    "purple"
+   ],
+   "shares": {
+    "blue": 9.6,
+    "earthy": 5.1,
+    "dark": 10.2,
+    "green": 7.7,
+    "neutral": 1.6,
+    "orange": 0.3,
+    "pink": 2.0,
+    "purple": 20.6,
+    "red": 42.5,
+    "teal": 0.1,
+    "yellow": 0.4
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--swimming-tigers": {
+   "accents": [
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 47.3,
+    "earthy": 5.9,
+    "dark": 14.4,
+    "green": 24.5,
+    "neutral": 3.4,
+    "orange": 0.1,
+    "teal": 4.1,
+    "yellow": 0.5
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--rosy-posy": {
+   "accents": [
+    "pink",
+    "blue",
+    "purple"
+   ],
+   "major": [
+    "pink",
+    "blue"
+   ],
+   "shares": {
+    "blue": 18.6,
+    "earthy": 8.4,
+    "dark": 4.7,
+    "green": 6.5,
+    "neutral": 2.0,
+    "orange": 11.4,
+    "pink": 26.2,
+    "purple": 13.2,
+    "red": 3.7,
+    "teal": 0.3,
+    "yellow": 5.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--pink-panther-party": {
+   "accents": [
+    "pink",
+    "earthy",
+    "red"
+   ],
+   "major": [
+    "pink",
+    "red"
+   ],
+   "shares": {
+    "blue": 0.3,
+    "earthy": 21.7,
+    "dark": 0.0,
+    "green": 11.1,
+    "neutral": 4.9,
+    "orange": 7.7,
+    "pink": 35.0,
+    "purple": 2.0,
+    "red": 17.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--koi-after-dark": {
+   "accents": [
+    "red",
+    "earthy"
+   ],
+   "major": [
+    "red"
+   ],
+   "shares": {
+    "blue": 0.1,
+    "earthy": 24.5,
+    "dark": 7.9,
+    "green": 11.6,
+    "neutral": 6.1,
+    "orange": 4.3,
+    "pink": 2.7,
+    "purple": 1.7,
+    "red": 39.3,
+    "yellow": 1.9
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--garden-etchings": {
+   "accents": [
+    "earthy",
+    "green",
+    "orange"
+   ],
+   "major": [
+    "green",
+    "orange"
+   ],
+   "shares": {
+    "earthy": 23.1,
+    "dark": 1.0,
+    "green": 19.2,
+    "neutral": 39.1,
+    "orange": 17.4,
+    "pink": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--floral-embers": {
+   "accents": [
+    "red",
+    "earthy",
+    "orange"
+   ],
+   "major": [
+    "red",
+    "orange"
+   ],
+   "shares": {
+    "earthy": 30.1,
+    "orange": 16.1,
+    "red": 53.5,
+    "yellow": 0.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--stay-groovy": {
+   "accents": [
+    "pink",
+    "purple",
+    "blue"
+   ],
+   "major": [
+    "pink",
+    "purple"
+   ],
+   "shares": {
+    "blue": 12.8,
+    "earthy": 0.5,
+    "green": 1.2,
+    "neutral": 0.6,
+    "orange": 1.3,
+    "pink": 36.5,
+    "purple": 34.3,
+    "red": 10.3,
+    "teal": 2.1,
+    "yellow": 0.4
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--underwater-diva": {
+   "accents": [
+    "pink",
+    "blue"
+   ],
+   "major": [
+    "pink",
+    "blue"
+   ],
+   "shares": {
+    "blue": 23.0,
+    "earthy": 8.5,
+    "dark": 4.7,
+    "green": 1.0,
+    "neutral": 6.8,
+    "orange": 0.7,
+    "pink": 40.3,
+    "purple": 4.0,
+    "red": 8.8,
+    "teal": 2.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--turtles-in-paradise-green": {
+   "accents": [
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 7.5,
+    "earthy": 1.4,
+    "dark": 0.3,
+    "green": 60.0,
+    "neutral": 10.4,
+    "orange": 0.0,
+    "pink": 5.7,
+    "purple": 3.7,
+    "red": 0.2,
+    "teal": 10.8,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--turtles-in-paradise-pink": {
+   "accents": [
+    "pink",
+    "green"
+   ],
+   "major": [
+    "pink",
+    "green"
+   ],
+   "shares": {
+    "blue": 10.0,
+    "earthy": 1.3,
+    "dark": 0.4,
+    "green": 25.3,
+    "neutral": 11.4,
+    "orange": 0.0,
+    "pink": 36.8,
+    "purple": 3.7,
+    "red": 0.2,
+    "teal": 10.8,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--seaside-reef": {
+   "accents": [
+    "teal",
+    "blue"
+   ],
+   "major": [
+    "teal",
+    "blue"
+   ],
+   "shares": {
+    "blue": 38.8,
+    "earthy": 2.8,
+    "dark": 0.0,
+    "green": 6.1,
+    "neutral": 3.4,
+    "orange": 2.3,
+    "pink": 4.5,
+    "purple": 0.5,
+    "red": 2.3,
+    "teal": 39.1,
+    "yellow": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--sea-garden-party": {
+   "accents": [
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 50.8,
+    "earthy": 3.4,
+    "dark": 0.4,
+    "green": 13.5,
+    "neutral": 3.4,
+    "orange": 6.2,
+    "pink": 7.7,
+    "purple": 7.1,
+    "red": 3.2,
+    "teal": 4.0,
+    "yellow": 0.4
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--merry-bright-octopus": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 65.6,
+    "earthy": 6.8,
+    "dark": 0.1,
+    "green": 6.1,
+    "neutral": 4.0,
+    "orange": 0.6,
+    "pink": 1.2,
+    "purple": 7.5,
+    "red": 7.7,
+    "teal": 0.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--mermaid-cove": {
+   "accents": [
+    "green",
+    "blue"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 13.4,
+    "earthy": 11.0,
+    "dark": 6.3,
+    "green": 52.8,
+    "neutral": 2.7,
+    "orange": 5.6,
+    "pink": 1.2,
+    "purple": 0.3,
+    "red": 0.4,
+    "teal": 5.9,
+    "yellow": 0.4
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--whimsical-rug-with-a-simple-middle": {
+   "accents": [
+    "pink",
+    "green",
+    "yellow",
+    "earthy"
+   ],
+   "major": [
+    "pink",
+    "green"
+   ],
+   "shares": {
+    "blue": 8.4,
+    "earthy": 12.3,
+    "dark": 0.0,
+    "green": 18.0,
+    "neutral": 4.5,
+    "orange": 8.3,
+    "pink": 33.0,
+    "purple": 0.7,
+    "teal": 0.7,
+    "yellow": 14.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--whimsical-rug": {
+   "accents": [
+    "blue",
+    "pink",
+    "green",
+    "yellow"
+   ],
+   "major": [
+    "blue",
+    "pink",
+    "green"
+   ],
+   "shares": {
+    "blue": 23.4,
+    "earthy": 10.6,
+    "dark": 0.1,
+    "green": 15.0,
+    "neutral": 8.3,
+    "orange": 10.4,
+    "pink": 15.5,
+    "purple": 0.9,
+    "red": 0.0,
+    "teal": 0.9,
+    "yellow": 14.9
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--blue-heron-striped": {
+   "accents": [
+    "blue",
+    "pink",
+    "orange",
+    "green"
+   ],
+   "major": [
+    "blue",
+    "pink",
+    "orange",
+    "green"
+   ],
+   "shares": {
+    "blue": 22.0,
+    "earthy": 5.4,
+    "dark": 2.4,
+    "green": 16.1,
+    "neutral": 15.5,
+    "orange": 16.6,
+    "pink": 18.3,
+    "purple": 0.4,
+    "teal": 2.4,
+    "yellow": 1.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--red-crowned-crane-red-striped": {
+   "accents": [
+    "green",
+    "earthy",
+    "red"
+   ],
+   "major": [
+    "green",
+    "red"
+   ],
+   "shares": {
+    "blue": 6.6,
+    "earthy": 18.9,
+    "dark": 3.7,
+    "green": 31.9,
+    "neutral": 3.2,
+    "orange": 5.6,
+    "pink": 5.5,
+    "purple": 6.4,
+    "red": 17.6,
+    "teal": 0.1,
+    "yellow": 0.4
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--purple-boho-rug": {
+   "accents": [
+    "pink",
+    "blue",
+    "earthy",
+    "purple"
+   ],
+   "major": [
+    "pink",
+    "blue",
+    "purple"
+   ],
+   "shares": {
+    "blue": 17.2,
+    "earthy": 15.8,
+    "dark": 0.4,
+    "green": 2.6,
+    "neutral": 22.3,
+    "orange": 0.1,
+    "pink": 17.7,
+    "purple": 15.8,
+    "red": 1.5,
+    "teal": 0.2,
+    "yellow": 6.5
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--pink-red-cheetahs": {
+   "accents": [
+    "blue",
+    "pink",
+    "green"
+   ],
+   "major": [
+    "blue",
+    "pink",
+    "green"
+   ],
+   "shares": {
+    "blue": 30.6,
+    "earthy": 3.2,
+    "dark": 0.0,
+    "green": 23.4,
+    "neutral": 1.8,
+    "orange": 4.8,
+    "pink": 26.0,
+    "purple": 2.0,
+    "red": 8.0,
+    "yellow": 0.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--oysters": {
+   "accents": [
+    "blue",
+    "pink"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 52.6,
+    "earthy": 11.2,
+    "dark": 1.1,
+    "green": 10.1,
+    "neutral": 6.8,
+    "orange": 2.0,
+    "pink": 14.8,
+    "purple": 1.0,
+    "teal": 0.3,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--multi-color-boho-rug": {
+   "accents": [
+    "pink",
+    "red",
+    "earthy"
+   ],
+   "major": [
+    "pink",
+    "red"
+   ],
+   "shares": {
+    "blue": 7.7,
+    "earthy": 17.0,
+    "dark": 0.7,
+    "green": 4.7,
+    "neutral": 6.0,
+    "orange": 6.6,
+    "pink": 22.0,
+    "purple": 4.0,
+    "red": 21.2,
+    "teal": 0.3,
+    "yellow": 9.8
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--luna-moth": {
+   "accents": [
+    "green",
+    "pink",
+    "blue"
+   ],
+   "major": [
+    "green",
+    "pink"
+   ],
+   "shares": {
+    "blue": 12.5,
+    "earthy": 3.8,
+    "dark": 0.0,
+    "green": 40.6,
+    "neutral": 12.5,
+    "orange": 1.4,
+    "pink": 15.8,
+    "purple": 11.0,
+    "red": 0.1,
+    "teal": 0.1,
+    "yellow": 2.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--golf-cart": {
+   "accents": [
+    "pink",
+    "green",
+    "blue"
+   ],
+   "major": [
+    "pink",
+    "green",
+    "blue"
+   ],
+   "shares": {
+    "blue": 23.1,
+    "earthy": 3.3,
+    "dark": 2.4,
+    "green": 31.6,
+    "neutral": 5.7,
+    "orange": 0.5,
+    "pink": 32.7,
+    "purple": 0.0,
+    "red": 0.2,
+    "teal": 0.2,
+    "yellow": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--dark-red-cheetah-boho-rug": {
+   "accents": [
+    "red",
+    "earthy"
+   ],
+   "major": [
+    "red"
+   ],
+   "shares": {
+    "earthy": 19.0,
+    "dark": 17.0,
+    "neutral": 0.5,
+    "orange": 2.2,
+    "pink": 0.8,
+    "purple": 0.2,
+    "red": 60.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--dachshund": {
+   "accents": [
+    "blue",
+    "earthy",
+    "green"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 48.8,
+    "earthy": 19.4,
+    "dark": 2.3,
+    "green": 12.7,
+    "neutral": 8.4,
+    "orange": 0.3,
+    "pink": 5.3,
+    "purple": 0.2,
+    "teal": 0.3,
+    "yellow": 2.4
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--coastal": {
+   "accents": [
+    "pink",
+    "green",
+    "blue"
+   ],
+   "major": [
+    "pink",
+    "green",
+    "blue"
+   ],
+   "shares": {
+    "blue": 18.7,
+    "earthy": 1.5,
+    "dark": 0.7,
+    "green": 31.0,
+    "neutral": 2.5,
+    "orange": 8.8,
+    "pink": 32.7,
+    "purple": 1.8,
+    "red": 0.6,
+    "teal": 0.5,
+    "yellow": 1.4
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--christmas-nutcracker": {
+   "accents": [
+    "blue",
+    "dark",
+    "red"
+   ],
+   "major": [
+    "blue",
+    "red"
+   ],
+   "shares": {
+    "blue": 38.9,
+    "earthy": 2.0,
+    "dark": 30.3,
+    "green": 2.6,
+    "neutral": 6.0,
+    "orange": 0.2,
+    "pink": 2.6,
+    "purple": 0.3,
+    "red": 15.5,
+    "teal": 0.8,
+    "yellow": 0.7
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--christmas-chinoiserie-plates": {
+   "accents": [
+    "green",
+    "earthy"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 11.4,
+    "earthy": 13.3,
+    "dark": 3.5,
+    "green": 39.9,
+    "neutral": 15.3,
+    "orange": 4.8,
+    "pink": 3.4,
+    "purple": 0.0,
+    "red": 7.0,
+    "yellow": 1.4
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--cheetah-and-cockatoos": {
+   "accents": [
+    "green",
+    "blue",
+    "pink",
+    "earthy"
+   ],
+   "major": [
+    "green",
+    "blue"
+   ],
+   "shares": {
+    "blue": 19.9,
+    "earthy": 13.5,
+    "dark": 3.6,
+    "green": 28.9,
+    "neutral": 6.8,
+    "orange": 8.1,
+    "pink": 14.5,
+    "purple": 2.5,
+    "red": 0.1,
+    "teal": 1.1,
+    "yellow": 1.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--book-lover": {
+   "accents": [
+    "blue",
+    "purple",
+    "green"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 47.2,
+    "earthy": 7.9,
+    "dark": 3.1,
+    "green": 12.0,
+    "neutral": 6.3,
+    "orange": 0.4,
+    "pink": 8.2,
+    "purple": 13.3,
+    "red": 0.4,
+    "teal": 0.7,
+    "yellow": 0.4
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--blue-peacock": {
+   "accents": [
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 51.5,
+    "earthy": 10.3,
+    "dark": 4.1,
+    "green": 17.2,
+    "neutral": 8.4,
+    "orange": 0.0,
+    "pink": 4.9,
+    "red": 0.0,
+    "teal": 2.0,
+    "yellow": 1.5
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--blue-heron": {
+   "accents": [
+    "blue",
+    "pink",
+    "green"
+   ],
+   "major": [
+    "blue",
+    "pink"
+   ],
+   "shares": {
+    "blue": 33.5,
+    "earthy": 7.2,
+    "dark": 1.7,
+    "green": 14.2,
+    "neutral": 8.7,
+    "orange": 11.2,
+    "pink": 16.3,
+    "purple": 0.7,
+    "teal": 1.6,
+    "yellow": 5.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--year-of-the-horse-wanda-viola": {
+   "accents": [
+    "blue",
+    "green",
+    "earthy",
+    "pink"
+   ],
+   "major": [
+    "blue",
+    "green",
+    "pink"
+   ],
+   "shares": {
+    "blue": 30.2,
+    "earthy": 16.1,
+    "dark": 1.3,
+    "green": 18.9,
+    "neutral": 5.4,
+    "orange": 7.6,
+    "pink": 15.9,
+    "purple": 2.2,
+    "red": 0.5,
+    "teal": 0.7,
+    "yellow": 1.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--scalloped-striped-bright": {
+   "accents": [
+    "pink",
+    "green"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "blue": 1.5,
+    "earthy": 1.3,
+    "green": 14.7,
+    "neutral": 0.7,
+    "orange": 0.0,
+    "pink": 75.1,
+    "purple": 0.0,
+    "red": 0.4,
+    "teal": 2.9,
+    "yellow": 3.4
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--red-chartreuse-boho-rug": {
+   "accents": [
+    "earthy",
+    "red"
+   ],
+   "major": [
+    "red"
+   ],
+   "shares": {
+    "blue": 0.0,
+    "earthy": 47.0,
+    "dark": 5.5,
+    "green": 2.2,
+    "neutral": 2.0,
+    "orange": 4.7,
+    "pink": 1.4,
+    "purple": 0.2,
+    "red": 36.1,
+    "yellow": 0.9
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--rainbow-row": {
+   "accents": [
+    "blue",
+    "green",
+    "teal",
+    "pink"
+   ],
+   "major": [
+    "blue",
+    "green",
+    "teal"
+   ],
+   "shares": {
+    "blue": 29.4,
+    "earthy": 1.6,
+    "dark": 0.0,
+    "green": 27.7,
+    "neutral": 0.8,
+    "orange": 1.9,
+    "pink": 13.3,
+    "purple": 0.3,
+    "red": 0.1,
+    "teal": 19.0,
+    "yellow": 5.8
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--manatee": {
+   "accents": [
+    "teal",
+    "pink",
+    "blue",
+    "green"
+   ],
+   "major": [
+    "teal",
+    "pink",
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 19.5,
+    "earthy": 7.4,
+    "dark": 1.1,
+    "green": 15.1,
+    "neutral": 10.4,
+    "orange": 4.1,
+    "pink": 19.8,
+    "purple": 1.2,
+    "red": 0.5,
+    "teal": 20.8,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--french-bulldog": {
+   "accents": [
+    "blue",
+    "earthy"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 50.4,
+    "earthy": 12.6,
+    "dark": 4.3,
+    "green": 11.6,
+    "neutral": 11.4,
+    "orange": 1.1,
+    "pink": 6.9,
+    "purple": 0.1,
+    "red": 0.0,
+    "yellow": 1.5
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--folk-art-floral-rug": {
+   "accents": [
+    "pink",
+    "purple",
+    "blue"
+   ],
+   "major": [
+    "pink",
+    "purple",
+    "blue"
+   ],
+   "shares": {
+    "blue": 17.3,
+    "earthy": 7.8,
+    "dark": 0.1,
+    "green": 4.2,
+    "neutral": 2.0,
+    "orange": 1.6,
+    "pink": 35.6,
+    "purple": 19.6,
+    "red": 2.1,
+    "yellow": 9.8
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--dopamine-tiger": {
+   "accents": [
+    "pink",
+    "earthy",
+    "green"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "blue": 8.7,
+    "earthy": 12.8,
+    "dark": 2.4,
+    "green": 12.1,
+    "neutral": 13.4,
+    "orange": 9.5,
+    "pink": 32.6,
+    "purple": 2.3,
+    "red": 2.3,
+    "teal": 0.5,
+    "yellow": 3.4
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--chartreuse-boho-rug": {
+   "accents": [
+    "earthy",
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 10.8,
+    "earthy": 27.3,
+    "dark": 4.7,
+    "green": 23.5,
+    "neutral": 9.8,
+    "orange": 1.7,
+    "pink": 2.6,
+    "purple": 0.6,
+    "red": 1.4,
+    "teal": 6.3,
+    "yellow": 11.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--butter-your-pancakes": {
+   "accents": [
+    "pink",
+    "green",
+    "blue",
+    "earthy"
+   ],
+   "major": [
+    "pink",
+    "green",
+    "blue"
+   ],
+   "shares": {
+    "blue": 17.0,
+    "earthy": 16.4,
+    "dark": 1.9,
+    "green": 17.7,
+    "neutral": 13.9,
+    "orange": 7.8,
+    "pink": 23.1,
+    "purple": 0.6,
+    "red": 0.4,
+    "yellow": 1.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--red-crowned-crane": {
+   "accents": [
+    "green",
+    "pink"
+   ],
+   "major": [
+    "green",
+    "pink"
+   ],
+   "shares": {
+    "blue": 6.6,
+    "earthy": 9.4,
+    "dark": 4.4,
+    "green": 33.1,
+    "neutral": 11.1,
+    "orange": 9.4,
+    "pink": 23.6,
+    "purple": 1.4,
+    "red": 0.5,
+    "teal": 0.3,
+    "yellow": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--jewel-tone-western-rug": {
+   "accents": [
+    "red",
+    "earthy",
+    "orange"
+   ],
+   "major": [
+    "red"
+   ],
+   "shares": {
+    "blue": 5.9,
+    "earthy": 22.1,
+    "dark": 2.2,
+    "green": 0.9,
+    "neutral": 10.2,
+    "orange": 14.6,
+    "pink": 4.4,
+    "purple": 1.6,
+    "red": 38.0,
+    "teal": 0.0,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--jewel-tone-rug": {
+   "accents": [
+    "dark",
+    "blue",
+    "purple"
+   ],
+   "major": [
+    "blue",
+    "purple"
+   ],
+   "shares": {
+    "blue": 23.2,
+    "earthy": 9.1,
+    "dark": 24.7,
+    "green": 3.5,
+    "neutral": 8.4,
+    "orange": 2.6,
+    "pink": 8.4,
+    "purple": 16.3,
+    "red": 1.5,
+    "teal": 0.8,
+    "yellow": 1.4
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--koi-fish": {
+   "accents": [
+    "teal",
+    "blue",
+    "pink"
+   ],
+   "major": [
+    "teal",
+    "blue",
+    "pink"
+   ],
+   "shares": {
+    "blue": 24.4,
+    "earthy": 0.6,
+    "dark": 2.9,
+    "green": 6.4,
+    "neutral": 3.1,
+    "orange": 1.5,
+    "pink": 23.5,
+    "purple": 0.0,
+    "red": 0.5,
+    "teal": 37.0,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--pickleball": {
+   "accents": [
+    "pink",
+    "blue",
+    "green"
+   ],
+   "major": [
+    "pink",
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 22.2,
+    "earthy": 5.1,
+    "dark": 0.7,
+    "green": 20.5,
+    "neutral": 8.0,
+    "orange": 1.0,
+    "pink": 37.6,
+    "purple": 1.3,
+    "red": 0.9,
+    "teal": 1.5,
+    "yellow": 1.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--octopus": {
+   "accents": [
+    "blue",
+    "teal",
+    "pink"
+   ],
+   "major": [
+    "blue",
+    "teal",
+    "pink"
+   ],
+   "shares": {
+    "blue": 32.2,
+    "earthy": 3.3,
+    "dark": 0.6,
+    "green": 0.3,
+    "neutral": 3.3,
+    "orange": 0.2,
+    "pink": 22.7,
+    "purple": 5.6,
+    "red": 0.9,
+    "teal": 26.9,
+    "yellow": 3.9
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--eiffel-tower": {
+   "accents": [
+    "blue",
+    "teal",
+    "pink"
+   ],
+   "major": [
+    "blue",
+    "teal",
+    "pink"
+   ],
+   "shares": {
+    "blue": 34.9,
+    "earthy": 3.6,
+    "dark": 1.2,
+    "green": 5.6,
+    "neutral": 4.2,
+    "orange": 2.1,
+    "pink": 17.3,
+    "purple": 3.8,
+    "red": 0.6,
+    "teal": 22.7,
+    "yellow": 4.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--chinoiserie-plates": {
+   "accents": [
+    "pink",
+    "green"
+   ],
+   "major": [
+    "pink",
+    "green"
+   ],
+   "shares": {
+    "blue": 12.0,
+    "earthy": 6.6,
+    "dark": 0.1,
+    "green": 24.5,
+    "neutral": 4.4,
+    "orange": 1.7,
+    "pink": 43.7,
+    "purple": 0.4,
+    "red": 1.2,
+    "teal": 0.9,
+    "yellow": 4.4
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--fall-pheasant": {
+   "accents": [
+    "earthy"
+   ],
+   "major": [],
+   "shares": {
+    "blue": 7.1,
+    "earthy": 30.7,
+    "dark": 14.9,
+    "green": 2.2,
+    "neutral": 20.3,
+    "orange": 9.6,
+    "pink": 2.0,
+    "purple": 3.8,
+    "red": 1.1,
+    "teal": 0.2,
+    "yellow": 8.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--dopamine-rug-simple-center": {
+   "accents": [
+    "red",
+    "pink",
+    "earthy"
+   ],
+   "major": [
+    "red",
+    "pink"
+   ],
+   "shares": {
+    "blue": 1.2,
+    "earthy": 14.5,
+    "dark": 0.3,
+    "green": 2.0,
+    "neutral": 4.9,
+    "orange": 5.2,
+    "pink": 20.6,
+    "purple": 7.3,
+    "red": 37.6,
+    "teal": 0.4,
+    "yellow": 6.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--chinoiserie-peacock": {
+   "accents": [
+    "pink",
+    "green",
+    "blue"
+   ],
+   "major": [
+    "pink",
+    "green",
+    "blue"
+   ],
+   "shares": {
+    "blue": 16.0,
+    "earthy": 2.6,
+    "dark": 0.2,
+    "green": 16.1,
+    "neutral": 9.4,
+    "orange": 5.7,
+    "pink": 44.7,
+    "purple": 2.2,
+    "red": 0.3,
+    "teal": 2.6,
+    "yellow": 0.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--christmas-leopard": {
+   "accents": [
+    "pink",
+    "green",
+    "earthy",
+    "blue"
+   ],
+   "major": [
+    "pink",
+    "green",
+    "blue"
+   ],
+   "shares": {
+    "blue": 17.5,
+    "earthy": 17.7,
+    "dark": 2.9,
+    "green": 18.4,
+    "neutral": 8.7,
+    "orange": 2.8,
+    "pink": 19.3,
+    "purple": 7.6,
+    "red": 3.8,
+    "teal": 0.4,
+    "yellow": 0.9
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--chinoiserie-pagoda": {
+   "accents": [
+    "pink",
+    "blue",
+    "green"
+   ],
+   "major": [
+    "pink",
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 23.3,
+    "earthy": 5.1,
+    "dark": 1.4,
+    "green": 18.4,
+    "neutral": 3.4,
+    "orange": 4.6,
+    "pink": 40.6,
+    "purple": 0.2,
+    "red": 0.3,
+    "teal": 1.4,
+    "yellow": 1.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--chinoiserie-tiger": {
+   "accents": [
+    "pink",
+    "green",
+    "blue"
+   ],
+   "major": [
+    "pink",
+    "green",
+    "blue"
+   ],
+   "shares": {
+    "blue": 16.6,
+    "earthy": 7.4,
+    "dark": 1.0,
+    "green": 21.6,
+    "neutral": 14.4,
+    "orange": 7.1,
+    "pink": 26.4,
+    "purple": 1.3,
+    "red": 1.1,
+    "teal": 0.1,
+    "yellow": 2.9
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--boho-rug": {
+   "accents": [
+    "pink",
+    "earthy",
+    "blue"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "blue": 12.1,
+    "earthy": 16.9,
+    "green": 3.8,
+    "neutral": 10.1,
+    "orange": 5.3,
+    "pink": 36.1,
+    "purple": 11.5,
+    "red": 3.0,
+    "teal": 0.4,
+    "yellow": 0.7
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--chinoiserie-dragonfly": {
+   "accents": [
+    "blue",
+    "pink",
+    "green",
+    "orange"
+   ],
+   "major": [
+    "blue",
+    "pink",
+    "green",
+    "orange"
+   ],
+   "shares": {
+    "blue": 31.8,
+    "earthy": 0.8,
+    "dark": 0.5,
+    "green": 16.7,
+    "neutral": 5.0,
+    "orange": 15.1,
+    "pink": 26.3,
+    "purple": 0.1,
+    "red": 0.0,
+    "teal": 0.1,
+    "yellow": 3.6
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--chinoiserie-christmas-tree": {
+   "accents": [
+    "pink",
+    "green"
+   ],
+   "major": [
+    "pink",
+    "green"
+   ],
+   "shares": {
+    "blue": 5.2,
+    "earthy": 2.5,
+    "dark": 0.5,
+    "green": 35.6,
+    "neutral": 0.9,
+    "orange": 0.7,
+    "pink": 47.7,
+    "purple": 0.4,
+    "red": 4.8,
+    "teal": 1.4,
+    "yellow": 0.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--tennis-raquets": {
+   "accents": [
+    "pink",
+    "blue",
+    "green"
+   ],
+   "major": [
+    "pink",
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 33.1,
+    "earthy": 5.6,
+    "dark": 0.7,
+    "green": 15.2,
+    "neutral": 5.0,
+    "orange": 1.9,
+    "pink": 35.2,
+    "purple": 0.6,
+    "red": 0.7,
+    "teal": 0.1,
+    "yellow": 1.9
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--cavalier-king-charles-spaniel": {
+   "accents": [
+    "blue",
+    "earthy",
+    "green"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 46.7,
+    "earthy": 17.8,
+    "dark": 2.0,
+    "green": 14.6,
+    "neutral": 10.8,
+    "orange": 0.2,
+    "pink": 6.0,
+    "purple": 0.1,
+    "teal": 0.1,
+    "yellow": 1.6
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--barn-owl": {
+   "accents": [
+    "blue",
+    "pink",
+    "green"
+   ],
+   "major": [
+    "blue",
+    "pink"
+   ],
+   "shares": {
+    "blue": 33.1,
+    "earthy": 1.7,
+    "dark": 0.2,
+    "green": 14.5,
+    "neutral": 11.6,
+    "orange": 7.4,
+    "pink": 28.9,
+    "purple": 1.1,
+    "red": 0.0,
+    "teal": 1.2,
+    "yellow": 0.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--dopamine-rug": {
+   "accents": [
+    "red",
+    "pink",
+    "earthy"
+   ],
+   "major": [
+    "red",
+    "pink"
+   ],
+   "shares": {
+    "blue": 2.4,
+    "earthy": 16.3,
+    "dark": 0.5,
+    "green": 2.6,
+    "neutral": 6.1,
+    "orange": 8.5,
+    "pink": 23.0,
+    "purple": 7.8,
+    "red": 24.7,
+    "teal": 1.9,
+    "yellow": 6.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--seasons-mid-century": {
+   "accents": [
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 69.1,
+    "earthy": 0.3,
+    "green": 13.7,
+    "neutral": 0.2,
+    "orange": 2.9,
+    "pink": 0.9,
+    "purple": 0.0,
+    "red": 8.1,
+    "teal": 1.0,
+    "yellow": 3.7
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--nutcracker-christmas": {
+   "accents": [
+    "green",
+    "pink",
+    "earthy"
+   ],
+   "major": [
+    "green",
+    "pink"
+   ],
+   "shares": {
+    "blue": 2.6,
+    "earthy": 13.0,
+    "dark": 0.2,
+    "green": 42.4,
+    "neutral": 4.2,
+    "orange": 4.1,
+    "pink": 29.5,
+    "purple": 0.7,
+    "red": 2.3,
+    "teal": 0.3,
+    "yellow": 0.8
+   },
+   "src": "pixel-families"
+  },
+  "britt-mills--plumage-leatherette": {
+   "accents": [
+    "earthy",
+    "orange"
+   ],
+   "major": [
+    "orange"
+   ],
+   "shares": {
+    "blue": 0.0,
+    "earthy": 67.4,
+    "dark": 1.3,
+    "green": 0.8,
+    "neutral": 5.3,
+    "orange": 19.0,
+    "pink": 2.6,
+    "red": 1.4,
+    "yellow": 2.2
+   },
+   "src": "pixel-families"
+  },
+  "britt-mills--mallard-manor-leatherette": {
+   "accents": [
+    "pink"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "blue": 10.9,
+    "earthy": 9.7,
+    "dark": 3.8,
+    "green": 5.1,
+    "neutral": 10.3,
+    "orange": 1.0,
+    "pink": 45.7,
+    "purple": 1.0,
+    "red": 7.2,
+    "teal": 5.1,
+    "yellow": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-register--poppy-prep-double-sided-neoprene": {
+   "accents": [
+    "blue",
+    "pink"
+   ],
+   "major": [
+    "blue",
+    "pink"
+   ],
+   "shares": {
+    "blue": 38.4,
+    "earthy": 5.7,
+    "dark": 2.1,
+    "green": 1.6,
+    "neutral": 6.1,
+    "orange": 0.3,
+    "pink": 33.2,
+    "purple": 10.3,
+    "red": 1.3,
+    "teal": 0.1,
+    "yellow": 1.0
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-register--tangerine-twist-double-sided-neoprene": {
+   "accents": [
+    "pink",
+    "yellow",
+    "green"
+   ],
+   "major": [
+    "pink",
+    "yellow"
+   ],
+   "shares": {
+    "blue": 0.6,
+    "earthy": 11.5,
+    "dark": 0.0,
+    "green": 13.4,
+    "neutral": 3.5,
+    "orange": 8.4,
+    "pink": 34.4,
+    "purple": 1.7,
+    "red": 4.5,
+    "teal": 0.8,
+    "yellow": 21.3
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-register--blaire-briar-double-sided-neoprene": {
+   "accents": [
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 46.8,
+    "green": 42.4,
+    "neutral": 0.1,
+    "orange": 0.2,
+    "pink": 1.2,
+    "purple": 0.3,
+    "teal": 8.5,
+    "yellow": 0.5
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-register--rosewater-wine-double-sided-neoprene": {
+   "accents": [
+    "pink",
+    "red",
+    "green"
+   ],
+   "major": [
+    "pink",
+    "red"
+   ],
+   "shares": {
+    "blue": 0.0,
+    "earthy": 10.1,
+    "dark": 0.2,
+    "green": 12.2,
+    "neutral": 2.8,
+    "orange": 0.2,
+    "pink": 43.1,
+    "purple": 3.1,
+    "red": 26.0,
+    "teal": 2.2
+   },
+   "src": "pixel-families"
+  },
+  "maison-mahj--the-alpine-mat": {
+   "accents": [
+    "blue",
+    "dark"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 35.1,
+    "earthy": 11.2,
+    "dark": 21.0,
+    "green": 0.0,
+    "neutral": 27.1,
+    "orange": 0.6,
+    "pink": 2.0,
+    "purple": 0.0,
+    "red": 3.1
+   },
+   "src": "pixel-families"
+  },
+  "maison-mahj--the-archway-mat": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 66.2,
+    "earthy": 2.0,
+    "dark": 0.3,
+    "green": 0.2,
+    "neutral": 16.2,
+    "orange": 3.8,
+    "pink": 2.4,
+    "purple": 1.2,
+    "red": 5.3,
+    "teal": 2.4
+   },
+   "src": "pixel-families"
+  },
+  "maison-mahj--the-palm-mat": {
+   "accents": [
+    "orange",
+    "pink",
+    "teal"
+   ],
+   "major": [
+    "orange",
+    "pink",
+    "teal"
+   ],
+   "shares": {
+    "blue": 6.3,
+    "earthy": 3.2,
+    "dark": 0.0,
+    "green": 0.7,
+    "neutral": 5.2,
+    "orange": 36.9,
+    "pink": 25.1,
+    "purple": 1.1,
+    "red": 2.6,
+    "teal": 17.5,
+    "yellow": 1.4
+   },
+   "src": "pixel-families"
+  },
+  "maison-mahj--the-monogram-house-mat": {
+   "accents": [
+    "earthy",
+    "orange"
+   ],
+   "major": [],
+   "shares": {
+    "earthy": 74.6,
+    "dark": 9.6,
+    "green": 0.1,
+    "neutral": 1.0,
+    "orange": 12.9,
+    "pink": 0.1,
+    "red": 1.1,
+    "yellow": 0.7
+   },
+   "src": "pixel-families"
+  },
+  "noli-june--rochelle-stayed-an-extra-week-at-the-dude-ranch": {
+   "accents": [
+    "earthy",
+    "pink"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "earthy": 35.7,
+    "green": 2.7,
+    "neutral": 19.2,
+    "orange": 7.9,
+    "pink": 22.1,
+    "red": 11.7,
+    "teal": 0.5,
+    "yellow": 0.3
+   },
+   "src": "pixel-families"
+  },
+  "noli-june--marlene-ate-gelato-three-times-a-day": {
+   "accents": [
+    "neutral",
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 9.5,
+    "earthy": 5.9,
+    "dark": 0.3,
+    "green": 15.9,
+    "neutral": 64.8,
+    "orange": 1.5,
+    "pink": 0.1,
+    "teal": 1.0,
+    "yellow": 1.2
+   },
+   "src": "pixel-families"
+  },
+  "noli-june--ruth-stared-down-a-lion": {
+   "accents": [
+    "neutral",
+    "earthy"
+   ],
+   "major": [],
+   "shares": {
+    "blue": 4.8,
+    "earthy": 28.9,
+    "green": 1.9,
+    "neutral": 51.7,
+    "orange": 10.7,
+    "pink": 1.6,
+    "teal": 0.1,
+    "yellow": 0.4
+   },
+   "src": "pixel-families"
+  },
+  "noli-june--shirley-ran-off-with-the-scuba-instructor": {
+   "accents": [
+    "pink",
+    "earthy"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "blue": 1.7,
+    "earthy": 15.2,
+    "dark": 0.4,
+    "green": 2.0,
+    "neutral": 27.5,
+    "orange": 11.0,
+    "pink": 36.3,
+    "purple": 0.1,
+    "red": 3.0,
+    "teal": 1.5,
+    "yellow": 1.2
+   },
+   "src": "pixel-families"
+  },
+  "soiree-all-day--holiday-chintz": {
+   "accents": [
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 38.2,
+    "earthy": 6.1,
+    "green": 15.7,
+    "neutral": 13.5,
+    "orange": 0.0,
+    "pink": 7.7,
+    "red": 7.3,
+    "teal": 11.5
+   },
+   "src": "pixel-families"
+  },
+  "wren-mats--gingham-and-wine": {
+   "accents": [
+    "red",
+    "dark"
+   ],
+   "major": [
+    "red"
+   ],
+   "shares": {
+    "earthy": 3.0,
+    "dark": 21.5,
+    "neutral": 41.0,
+    "pink": 1.7,
+    "purple": 0.6,
+    "red": 32.2
+   },
+   "src": "pixel-families"
+  },
+  "yolo-mahjong--sage-green-crocodile-print": {
+   "accents": [
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "green": 99.1,
+    "neutral": 0.9
+   },
+   "src": "pixel-families"
+  },
+  "yolo-mahjong--ivory-crocodile-print": {
+   "accents": [
+    "yellow",
+    "orange"
+   ],
+   "major": [
+    "yellow",
+    "orange"
+   ],
+   "shares": {
+    "neutral": 9.5,
+    "orange": 18.3,
+    "yellow": 72.2
+   },
+   "src": "pixel-families"
+  },
+  "yolo-mahjong--coastal-blue-ripple": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 100.0
+   },
+   "src": "pixel-families"
+  },
+  "britt-mills--plumage-neoprene": {
+   "accents": [
+    "earthy"
+   ],
+   "major": [],
+   "shares": {
+    "blue": 0.0,
+    "earthy": 78.5,
+    "dark": 1.6,
+    "green": 0.6,
+    "neutral": 5.4,
+    "orange": 10.6,
+    "pink": 1.3,
+    "red": 1.1,
+    "yellow": 0.8
+   },
+   "src": "pixel-families"
+  },
+  "britt-mills--plumage-ii-leatherette": {
+   "accents": [
+    "earthy",
+    "orange"
+   ],
+   "major": [
+    "orange"
+   ],
+   "shares": {
+    "earthy": 52.9,
+    "dark": 5.2,
+    "green": 0.7,
+    "neutral": 6.2,
+    "orange": 26.3,
+    "pink": 3.3,
+    "red": 1.5,
+    "yellow": 3.9
+   },
+   "src": "pixel-families"
+  },
+  "britt-mills--grayson-leatherette": {
+   "accents": [
+    "pink"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "blue": 8.9,
+    "earthy": 10.6,
+    "dark": 15.4,
+    "green": 1.1,
+    "neutral": 32.2,
+    "orange": 4.3,
+    "pink": 18.7,
+    "purple": 5.7,
+    "red": 0.5,
+    "yellow": 2.5
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--the-hamptons": {
+   "accents": [
+    "green",
+    "pink",
+    "blue"
+   ],
+   "major": [
+    "green",
+    "pink",
+    "blue"
+   ],
+   "shares": {
+    "blue": 21.5,
+    "earthy": 2.1,
+    "dark": 0.3,
+    "green": 49.9,
+    "neutral": 0.7,
+    "orange": 1.2,
+    "pink": 22.1,
+    "purple": 0.2,
+    "red": 1.7,
+    "teal": 0.0,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--the-gilded-lotus": {
+   "accents": [
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 59.4,
+    "earthy": 5.5,
+    "dark": 1.3,
+    "green": 13.6,
+    "neutral": 6.5,
+    "orange": 1.9,
+    "pink": 8.8,
+    "purple": 0.3,
+    "red": 0.3,
+    "teal": 0.5,
+    "yellow": 1.7
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--celestial-bloom": {
+   "accents": [
+    "blue",
+    "purple"
+   ],
+   "major": [
+    "blue",
+    "purple"
+   ],
+   "shares": {
+    "blue": 50.3,
+    "earthy": 2.6,
+    "dark": 0.5,
+    "green": 9.2,
+    "neutral": 6.1,
+    "orange": 0.4,
+    "pink": 7.0,
+    "purple": 19.1,
+    "red": 0.2,
+    "teal": 0.0,
+    "yellow": 4.5
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--snowy-egret": {
+   "accents": [
+    "dark"
+   ],
+   "major": [],
+   "shares": {
+    "blue": 10.7,
+    "earthy": 1.1,
+    "dark": 66.2,
+    "green": 11.2,
+    "neutral": 10.7,
+    "orange": 0.1,
+    "purple": 0.0,
+    "teal": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--colorado-river": {
+   "accents": [
+    "earthy",
+    "blue"
+   ],
+   "major": [],
+   "shares": {
+    "blue": 13.9,
+    "earthy": 35.4,
+    "dark": 8.7,
+    "green": 3.1,
+    "neutral": 32.0,
+    "orange": 0.0,
+    "yellow": 6.8
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--miracle": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 60.8,
+    "earthy": 9.1,
+    "dark": 0.5,
+    "green": 0.4,
+    "neutral": 22.8,
+    "orange": 0.4,
+    "yellow": 5.9
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--indigo-and-olive": {
+   "accents": [
+    "earthy",
+    "blue"
+   ],
+   "major": [],
+   "shares": {
+    "blue": 14.6,
+    "earthy": 15.8,
+    "dark": 14.0,
+    "green": 0.0,
+    "neutral": 44.7,
+    "orange": 0.0,
+    "yellow": 10.7
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--confetti-kaleidoscope": {
+   "accents": [
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 54.7,
+    "earthy": 2.3,
+    "green": 26.2,
+    "neutral": 2.3,
+    "pink": 0.0,
+    "purple": 0.0,
+    "teal": 2.9,
+    "yellow": 11.6
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--sedona": {
+   "accents": [
+    "yellow",
+    "green",
+    "orange"
+   ],
+   "major": [
+    "yellow",
+    "green"
+   ],
+   "shares": {
+    "blue": 1.4,
+    "earthy": 6.3,
+    "dark": 0.1,
+    "green": 19.0,
+    "neutral": 6.4,
+    "orange": 13.1,
+    "pink": 1.0,
+    "red": 0.0,
+    "teal": 0.2,
+    "yellow": 52.7
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--cajun-christmas": {
+   "accents": [
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 34.2,
+    "earthy": 8.6,
+    "dark": 0.0,
+    "green": 31.4,
+    "neutral": 6.4,
+    "orange": 0.2,
+    "pink": 1.3,
+    "red": 10.4,
+    "teal": 6.3,
+    "yellow": 1.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--blueberry-hill": {
+   "accents": [
+    "blue",
+    "green",
+    "pink"
+   ],
+   "major": [
+    "blue",
+    "green",
+    "pink"
+   ],
+   "shares": {
+    "blue": 37.0,
+    "earthy": 1.5,
+    "dark": 7.6,
+    "green": 22.5,
+    "neutral": 2.6,
+    "orange": 0.1,
+    "pink": 21.7,
+    "purple": 1.4,
+    "red": 0.0,
+    "teal": 4.7,
+    "yellow": 0.8
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--sleeping-tiger": {
+   "accents": [
+    "blue",
+    "earthy"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 50.0,
+    "earthy": 14.5,
+    "dark": 1.5,
+    "green": 5.5,
+    "neutral": 9.7,
+    "orange": 4.4,
+    "pink": 4.9,
+    "purple": 1.3,
+    "red": 0.0,
+    "teal": 0.0,
+    "yellow": 8.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--chinoiserie-cabbage-plates": {
+   "accents": [
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 53.3,
+    "earthy": 3.8,
+    "dark": 2.1,
+    "green": 20.0,
+    "neutral": 19.0,
+    "orange": 1.0,
+    "pink": 0.2,
+    "purple": 0.0,
+    "teal": 0.4,
+    "yellow": 0.3
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-row-co--foxhill-plaid": {
+   "accents": [
+    "earthy",
+    "red"
+   ],
+   "major": [],
+   "shares": {
+    "blue": 0.3,
+    "earthy": 58.9,
+    "dark": 19.6,
+    "green": 0.0,
+    "neutral": 6.0,
+    "orange": 0.0,
+    "pink": 0.1,
+    "red": 14.9,
+    "teal": 0.2,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-row-co--ellington-navy": {
+   "accents": [
+    "dark",
+    "red"
+   ],
+   "major": [
+    "red"
+   ],
+   "shares": {
+    "blue": 0.2,
+    "earthy": 6.3,
+    "dark": 50.6,
+    "green": 0.1,
+    "neutral": 21.1,
+    "orange": 0.0,
+    "pink": 0.6,
+    "purple": 0.1,
+    "red": 20.3,
+    "teal": 0.5,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-row-co--sloane-floral": {
+   "accents": [
+    "earthy"
+   ],
+   "major": [],
+   "shares": {
+    "blue": 0.5,
+    "earthy": 42.4,
+    "dark": 14.7,
+    "green": 0.0,
+    "neutral": 42.1,
+    "pink": 0.0,
+    "red": 0.0,
+    "teal": 0.1,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-row-co--hawthorne-floral": {
+   "accents": [
+    "neutral",
+    "earthy"
+   ],
+   "major": [],
+   "shares": {
+    "blue": 0.3,
+    "earthy": 43.5,
+    "dark": 0.0,
+    "green": 0.1,
+    "neutral": 55.8,
+    "pink": 0.0,
+    "red": 0.1,
+    "teal": 0.1,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-row-co--marlowe-green": {
+   "accents": [
+    "neutral",
+    "dark"
+   ],
+   "major": [],
+   "shares": {
+    "blue": 0.1,
+    "earthy": 8.5,
+    "dark": 28.5,
+    "green": 0.2,
+    "neutral": 56.1,
+    "orange": 0.0,
+    "pink": 0.3,
+    "red": 6.2,
+    "teal": 0.0,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "miss-mahjong--pressed-flowers": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 100.0,
+    "green": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "mahj-mood--lake-day": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 42.1,
+    "earthy": 4.4,
+    "dark": 15.6,
+    "green": 0.1,
+    "neutral": 35.3,
+    "pink": 1.5,
+    "red": 0.8
+   },
+   "src": "pixel-families"
+  },
+  "maison-mahj--the-winter-garland": {
+   "accents": [
+    "purple",
+    "pink",
+    "blue"
+   ],
+   "major": [
+    "purple",
+    "pink"
+   ],
+   "shares": {
+    "blue": 13.3,
+    "earthy": 1.9,
+    "dark": 0.7,
+    "green": 1.1,
+    "neutral": 11.6,
+    "orange": 2.5,
+    "pink": 18.1,
+    "purple": 48.0,
+    "red": 2.6,
+    "teal": 0.0,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "maison-mahj--the-maison-ribbon": {
+   "accents": [
+    "purple",
+    "pink"
+   ],
+   "major": [
+    "purple",
+    "pink"
+   ],
+   "shares": {
+    "earthy": 0.1,
+    "dark": 11.9,
+    "neutral": 36.7,
+    "orange": 0.5,
+    "pink": 16.9,
+    "purple": 33.8,
+    "red": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "maison-mahj--the-snowfall": {
+   "accents": [
+    "purple"
+   ],
+   "major": [
+    "purple"
+   ],
+   "shares": {
+    "blue": 0.1,
+    "earthy": 0.1,
+    "dark": 9.4,
+    "neutral": 4.1,
+    "orange": 0.1,
+    "pink": 4.1,
+    "purple": 80.4,
+    "red": 1.8
+   },
+   "src": "pixel-families"
+  },
+  "maison-mahj--the-evergreen": {
+   "accents": [
+    "neutral",
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "earthy": 3.6,
+    "dark": 2.8,
+    "green": 38.7,
+    "neutral": 53.3,
+    "orange": 0.9,
+    "pink": 0.6,
+    "purple": 0.0,
+    "red": 0.0,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "oh-my-mahjong--serendipity": {
+   "accents": [
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 45.8,
+    "earthy": 8.7,
+    "green": 19.8,
+    "neutral": 1.5,
+    "pink": 11.6,
+    "purple": 1.8,
+    "red": 0.1,
+    "teal": 1.0,
+    "yellow": 9.7
+   },
+   "src": "pixel-families"
+  },
+  "mac-miller-mahjong--heirloom-collection-gilded-ginkgo-classic": {
+   "accents": [
+    "earthy",
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "earthy": 56.8,
+    "dark": 0.4,
+    "green": 35.2,
+    "neutral": 7.3,
+    "orange": 0.1,
+    "pink": 0.0,
+    "yellow": 0.1
+   },
+   "src": "pixel-families"
+  },
+  "mac-miller-mahjong--heirloom-collection-chinoiserie-classic-square": {
+   "accents": [
+    "green",
+    "pink",
+    "blue"
+   ],
+   "major": [
+    "green",
+    "pink",
+    "blue"
+   ],
+   "shares": {
+    "blue": 15.5,
+    "earthy": 0.0,
+    "green": 42.9,
+    "neutral": 8.3,
+    "pink": 24.1,
+    "purple": 0.8,
+    "red": 7.9,
+    "teal": 0.5,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "miss-mahjong--hope-chest": {
+   "accents": [
+    "blue",
+    "green",
+    "pink"
+   ],
+   "major": [
+    "blue",
+    "green",
+    "pink"
+   ],
+   "shares": {
+    "blue": 29.0,
+    "earthy": 10.9,
+    "green": 20.3,
+    "neutral": 11.1,
+    "orange": 2.5,
+    "pink": 19.2,
+    "purple": 5.4,
+    "red": 1.2,
+    "yellow": 0.5
+   },
+   "src": "pixel-families"
+  },
+  "miss-mahjong--giverny": {
+   "accents": [
+    "earthy",
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 5.4,
+    "earthy": 34.3,
+    "dark": 7.2,
+    "green": 26.0,
+    "neutral": 16.8,
+    "orange": 6.3,
+    "pink": 0.3,
+    "red": 2.9,
+    "teal": 0.7,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "anders-ruff--mahj-ever-after": {
+   "accents": [
+    "pink",
+    "blue"
+   ],
+   "major": [
+    "pink",
+    "blue"
+   ],
+   "shares": {
+    "blue": 17.6,
+    "green": 0.4,
+    "orange": 0.1,
+    "pink": 80.9,
+    "purple": 0.1,
+    "teal": 0.7,
+    "yellow": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-register--butterfly-belle-neoprene": {
+   "accents": [
+    "blue",
+    "pink"
+   ],
+   "major": [
+    "blue",
+    "pink"
+   ],
+   "shares": {
+    "blue": 58.7,
+    "earthy": 1.9,
+    "dark": 0.4,
+    "green": 0.9,
+    "neutral": 2.5,
+    "orange": 0.5,
+    "pink": 33.1,
+    "purple": 0.2,
+    "red": 1.5,
+    "teal": 0.1,
+    "yellow": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-register--pretty-in-plum-neoprene": {
+   "accents": [
+    "pink",
+    "purple"
+   ],
+   "major": [
+    "pink",
+    "purple"
+   ],
+   "shares": {
+    "earthy": 4.0,
+    "dark": 16.8,
+    "green": 0.1,
+    "neutral": 13.7,
+    "pink": 32.3,
+    "purple": 30.2,
+    "red": 2.8
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-register--buttercup-cherie-neoprene": {
+   "accents": [
+    "blue",
+    "yellow"
+   ],
+   "major": [
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "blue": 54.7,
+    "earthy": 1.2,
+    "green": 0.5,
+    "neutral": 9.3,
+    "teal": 0.0,
+    "yellow": 34.3
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-register--snowflake-lodge-neoprene": {
+   "accents": [
+    "blue",
+    "dark"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 62.6,
+    "dark": 21.6,
+    "neutral": 15.8
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-register--peppermint-patty-neoprene": {
+   "accents": [
+    "pink",
+    "red"
+   ],
+   "major": [
+    "pink",
+    "red"
+   ],
+   "shares": {
+    "blue": 0.4,
+    "earthy": 0.7,
+    "green": 5.3,
+    "neutral": 0.2,
+    "orange": 0.0,
+    "pink": 67.4,
+    "purple": 0.2,
+    "red": 25.0,
+    "teal": 0.9,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-register--letters-to-santa-neoprene": {
+   "accents": [
+    "red",
+    "green"
+   ],
+   "major": [
+    "red",
+    "green"
+   ],
+   "shares": {
+    "earthy": 6.4,
+    "dark": 5.9,
+    "green": 22.1,
+    "neutral": 11.6,
+    "orange": 4.7,
+    "pink": 2.8,
+    "red": 41.7,
+    "yellow": 4.7
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-register--very-merry-wreath-neoprene": {
+   "accents": [
+    "pink",
+    "red"
+   ],
+   "major": [
+    "pink",
+    "red"
+   ],
+   "shares": {
+    "blue": 2.9,
+    "earthy": 6.1,
+    "dark": 0.3,
+    "green": 11.5,
+    "neutral": 12.9,
+    "orange": 0.2,
+    "pink": 45.5,
+    "purple": 0.9,
+    "red": 18.9,
+    "teal": 0.9
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-register--holly-jolly-neoprene": {
+   "accents": [
+    "pink",
+    "red",
+    "green"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "blue": 0.1,
+    "earthy": 5.0,
+    "dark": 1.5,
+    "green": 13.5,
+    "neutral": 7.3,
+    "orange": 1.0,
+    "pink": 57.6,
+    "purple": 0.1,
+    "red": 13.7,
+    "teal": 0.1,
+    "yellow": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-register--paisley-jubilee-neoprene": {
+   "accents": [
+    "pink",
+    "green",
+    "yellow"
+   ],
+   "major": [
+    "pink",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "blue": 1.8,
+    "earthy": 5.3,
+    "green": 17.7,
+    "neutral": 10.4,
+    "orange": 7.2,
+    "pink": 31.6,
+    "purple": 0.1,
+    "red": 0.0,
+    "teal": 9.4,
+    "yellow": 16.5
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-register--moonlit-crane-neoprene": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 92.4,
+    "dark": 0.3,
+    "green": 0.3,
+    "neutral": 6.0,
+    "orange": 0.0,
+    "pink": 0.1,
+    "teal": 0.3,
+    "yellow": 0.6
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-register--peony-sociale-neoprene": {
+   "accents": [
+    "pink",
+    "blue"
+   ],
+   "major": [
+    "pink",
+    "blue"
+   ],
+   "shares": {
+    "blue": 30.7,
+    "dark": 0.4,
+    "neutral": 3.0,
+    "pink": 45.2,
+    "purple": 5.7,
+    "red": 0.5,
+    "teal": 14.5
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-register--palm-beach-pink-leopard-neoprene": {
+   "accents": [
+    "pink"
+   ],
+   "major": [
+    "pink"
+   ],
+   "shares": {
+    "earthy": 0.1,
+    "dark": 4.1,
+    "neutral": 40.6,
+    "orange": 0.0,
+    "pink": 52.6,
+    "purple": 1.3,
+    "red": 1.2
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--ducking-away-ac-studios": {
+   "accents": [
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 8.2,
+    "earthy": 1.0,
+    "dark": 3.3,
+    "green": 82.9,
+    "neutral": 2.8,
+    "teal": 1.6,
+    "yellow": 0.3
+   },
+   "src": "pixel-families"
+  },
+  "let-s-be-besties--peacock-in-the-hydrangeas": {
+   "accents": [
+    "dark",
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 23.2,
+    "earthy": 10.2,
+    "dark": 24.0,
+    "green": 4.6,
+    "neutral": 10.7,
+    "orange": 2.3,
+    "pink": 0.0,
+    "red": 0.6,
+    "teal": 13.4,
+    "yellow": 11.0
+   },
+   "src": "pixel-families"
+  },
+  "mahj-pit--birds-of-a-feather": {
+   "accents": [
+    "red",
+    "dark"
+   ],
+   "major": [
+    "red"
+   ],
+   "shares": {
+    "blue": 0.1,
+    "earthy": 11.6,
+    "dark": 25.5,
+    "green": 6.0,
+    "neutral": 20.3,
+    "orange": 1.0,
+    "pink": 0.8,
+    "purple": 0.9,
+    "red": 33.8
+   },
+   "src": "pixel-families"
+  },
+  "mahj-pit--lamarie": {
+   "accents": [
+    "earthy",
+    "red"
+   ],
+   "major": [],
+   "shares": {
+    "earthy": 55.0,
+    "dark": 5.5,
+    "green": 0.4,
+    "neutral": 12.7,
+    "orange": 7.6,
+    "pink": 5.2,
+    "purple": 0.0,
+    "red": 13.2,
+    "yellow": 0.3
+   },
+   "src": "pixel-families"
+  },
+  "mahj-pit--evergreen": {
+   "accents": [
+    "green",
+    "dark"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 0.0,
+    "dark": 39.5,
+    "green": 60.5,
+    "teal": 0.0
+   },
+   "src": "pixel-families"
+  },
+  "britt-mills--isla-leatherette": {
+   "accents": [
+    "pink",
+    "orange"
+   ],
+   "major": [
+    "pink",
+    "orange"
+   ],
+   "shares": {
+    "blue": 6.3,
+    "earthy": 8.6,
+    "dark": 2.4,
+    "green": 0.1,
+    "neutral": 4.7,
+    "orange": 16.3,
+    "pink": 52.3,
+    "purple": 0.3,
+    "red": 6.0,
+    "teal": 0.1,
+    "yellow": 3.0
+   },
+   "src": "pixel-families"
+  },
+  "yolo-mahjong--preppy-pink-floral": {
+   "accents": [
+    "pink",
+    "orange"
+   ],
+   "major": [
+    "pink",
+    "orange"
+   ],
+   "shares": {
+    "earthy": 2.7,
+    "neutral": 3.0,
+    "orange": 21.7,
+    "pink": 72.4,
+    "red": 0.0,
+    "yellow": 0.2
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-by-si--peony-reverie": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 100.0
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-by-si--peony-keepsake": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 98.9,
+    "neutral": 1.1
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-by-si--porch-blooms": {
+   "accents": [
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 88.8,
+    "dark": 0.4,
+    "green": 10.6,
+    "neutral": 0.2,
+    "purple": 0.0,
+    "teal": 0.1
    },
    "src": "pixel-families"
   }
