@@ -7846,6 +7846,50 @@
    "gallery_only": true,
    "src": "gallery_sync fym-v122-sync",
    "why": "saturated orange 2%, peach 1% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow)"
+  },
+  "mahjong-by-si--ralph": {
+   "drop": [
+    "orange",
+    "yellow"
+   ],
+   "gallery_only": true,
+   "src": "gallery_sync fym-v122-sync",
+   "why": "saturated orange 0%, peach 0% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow)"
+  },
+  "mahjong-by-si--fall-lanterns": {
+   "drop": [
+    "yellow"
+   ],
+   "gallery_only": true,
+   "src": "gallery_sync fym-v122-sync",
+   "why": " saturated yellow 1% (cream read as yellow)"
+  },
+  "ozark-mahjongg--baker-traditional": {
+   "drop": [
+    "orange",
+    "yellow"
+   ],
+   "gallery_only": true,
+   "src": "gallery_sync fym-v122-sync",
+   "why": "saturated orange 2%, peach 8% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow)"
+  },
+  "ozark-mahjongg--trent-celadon": {
+   "drop": [
+    "orange",
+    "yellow"
+   ],
+   "gallery_only": true,
+   "src": "gallery_sync fym-v122-sync",
+   "why": "saturated orange 0%, peach 0% of the photo (cream/beige read as orange) saturated yellow 0% (cream read as yellow)"
+  },
+  "ozark-mahjongg--trent-midnight": {
+   "drop": [
+    "orange",
+    "yellow"
+   ],
+   "gallery_only": true,
+   "src": "gallery_sync fym-v122-sync",
+   "why": "saturated orange 0%, peach 0% of the photo (cream/beige read as orange) saturated yellow 2% (cream read as yellow)"
   }
  },
  "checked_kept": {

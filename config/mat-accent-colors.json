@@ -35976,6 +35976,106 @@
     "yellow": 0.2
    },
    "src": "pixel-families"
+  },
+  "mahjong-by-si--ralph": {
+   "accents": [
+    "green"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 10.2,
+    "earthy": 8.5,
+    "dark": 13.9,
+    "green": 62.5,
+    "neutral": 4.4,
+    "orange": 0.2,
+    "teal": 0.3
+   },
+   "src": "pixel-families"
+  },
+  "mahjong-by-si--fall-lanterns": {
+   "accents": [
+    "earthy",
+    "blue"
+   ],
+   "major": [
+    "blue"
+   ],
+   "shares": {
+    "blue": 23.5,
+    "earthy": 26.6,
+    "green": 0.6,
+    "neutral": 31.4,
+    "orange": 3.2,
+    "pink": 4.9,
+    "purple": 3.2,
+    "red": 6.6
+   },
+   "src": "pixel-families"
+  },
+  "ozark-mahjongg--baker-traditional": {
+   "accents": [
+    "neutral",
+    "earthy",
+    "red"
+   ],
+   "major": [],
+   "shares": {
+    "blue": 0.4,
+    "earthy": 31.7,
+    "dark": 0.0,
+    "neutral": 55.1,
+    "orange": 0.1,
+    "pink": 0.4,
+    "purple": 0.1,
+    "red": 12.3
+   },
+   "src": "pixel-families"
+  },
+  "ozark-mahjongg--trent-celadon": {
+   "accents": [
+    "neutral",
+    "green",
+    "red"
+   ],
+   "major": [
+    "green"
+   ],
+   "shares": {
+    "blue": 0.2,
+    "earthy": 1.9,
+    "green": 26.8,
+    "neutral": 57.7,
+    "purple": 0.0,
+    "red": 13.3
+   },
+   "src": "pixel-families"
+  },
+  "ozark-mahjongg--trent-midnight": {
+   "accents": [
+    "dark",
+    "blue",
+    "green"
+   ],
+   "major": [
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "blue": 25.8,
+    "earthy": 1.9,
+    "dark": 30.3,
+    "green": 17.7,
+    "neutral": 4.7,
+    "pink": 2.6,
+    "purple": 8.4,
+    "red": 1.5,
+    "teal": 6.7,
+    "yellow": 0.3
+   },
+   "src": "pixel-families"
   }
  }
 }
