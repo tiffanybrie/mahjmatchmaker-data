@@ -69,7 +69,7 @@ specmat = {m['name']: m for m in spec['mats']}
 cards = []
 for c in man['cards']:
     i = cid(c['file'])
-    put(f'c/{i}.jpg', src=f"{rec['cards_dir']}/{c['file']}", maxs=1080, q=82)
+    put(f'c/{i}.jpg', src=f"{rec['cards_dir']}/{c['file']}", maxs=2025, q=86)  # Nov 22 (Tiffany: tile shot soft on the cards): was maxs=1080, which shrank a 1080x1350 card to 864x1080; now the card at full size (2x cards capped at 1620 wide)
     m = specmat.get(c['mat'], {})
     tags = ['NEW, added after your review'] if m.get('added_after_review') else []
     if c.get('caption_note') == 'TNT rec': tags.append('TNT rec')
