@@ -1,7 +1,21 @@
 {
- "week_label": "Week of Sun Nov 8 – Sat Nov 14",
+ "week_label": "Week of Sun Nov 22 – Sat Nov 28",
  "this_week": [],
  "coming_soon": [
+  {
+   "date": "",
+   "brand": "Mahj Mood",
+   "partner": true,
+   "what": "New tile sets are on the way: gray marble backs with a green layer, shown on a Britt Mills mat. No name or date yet.",
+   "tag": "tiles",
+   "new": true,
+   "urgency": "LATER",
+   "url": "https://mahjmood.com",
+   "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/partner-catalogs-sqsp/assets/launches/mahj-mood-new-tiles-sneak-nov21/mahj-mood-new-tiles-sneak-ig-story-nov21.jpg",
+   "found": "2026-11-21T21:44",
+   "source": "IG story",
+   "source_link": "https://www.instagram.com/stories/mahj_mood/"
+  },
   {
    "partner": true,
    "urgency": "SOON",
@@ -81,7 +95,8 @@
    "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/partner-catalogs-sqsp/assets/launches/bambirdboutique-tortoise-tiles/story-1116.jpg",
    "found": "2026-11-16T13:00",
    "source": "IG post + story",
-   "source_kind": "social"
+   "source_kind": "social",
+   "hidden": true
   },
   {
    "date": "",
@@ -257,7 +272,8 @@
    "source": "https://www.instagram.com/reel/DfkcDuRzIqZ/",
    "url": "https://www.instagram.com/reel/DfkcDuRzIqZ/",
    "found": "2026-11-10T18:35",
-   "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/089662ddfcef7047f14e756a4469e59fa87ab2d4/assets/launches/royalmahjongsociety-studio-series-crown-jewels/1.png"
+   "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/089662ddfcef7047f14e756a4469e59fa87ab2d4/assets/launches/royalmahjongsociety-studio-series-crown-jewels/1.png",
+   "hidden": true
   },
   {
    "brand": "Tigre de Tartán",
@@ -371,7 +387,8 @@
     }
    ],
    "img": "https://raw.githubusercontent.com/tiffanybrie/mahjmatchmaker-data/partner-catalogs-sqsp/assets/launches/faitamain-fleurs-de-fete-minuit/story-1120.jpg",
-   "source_link": "https://www.instagram.com/stories/fait.a.main/"
+   "source_link": "https://www.instagram.com/stories/fait.a.main/",
+   "hidden": true
   },
   {
    "date": null,
@@ -404,6 +421,38 @@
   }
  ],
  "just_dropped": [
+  {
+   "date": "2026-11-22",
+   "day": "Sun 11/22",
+   "time": "LIVE now",
+   "brand": "Bespoke Mahjong",
+   "partner": true,
+   "what": "Back in stock: The Ultimate Rack in Mojito Dream and Highlighter Pink, plus The Ultimate Travel Racks.",
+   "tag": "rack",
+   "restock": true,
+   "urgency": "NOW",
+   "buy": "https://www.bespokemahjong.com/products/the-ultimate-rack-garden-green",
+   "url": "https://www.bespokemahjong.com/products/the-ultimate-rack-garden-green",
+   "found": "2026-11-22T18:40",
+   "source": "store",
+   "source_kind": "store"
+  },
+  {
+   "date": "2026-11-22",
+   "day": "Sun 11/22",
+   "time": "LIVE now",
+   "brand": "Sunday Mahjong",
+   "partner": true,
+   "what": "New Georgia Mahjong Rack Set is in stock. A Sunday Cherry Cola rack set is also listed (not yet available to order).",
+   "tag": "rack",
+   "new": true,
+   "urgency": "NOW",
+   "buy": "https://sundaymahjong.com/products/georgia-mahjong-rack-set",
+   "url": "https://sundaymahjong.com/products/georgia-mahjong-rack-set",
+   "found": "2026-11-22T18:40",
+   "source": "store",
+   "source_kind": "store"
+  },
   {
    "date": "2026-11-20",
    "day": "Fri 11/20",
@@ -693,38 +742,6 @@
    "urgency": "NOW"
   },
   {
-   "date": "2026-11-14",
-   "day": "Sat 11/14",
-   "brand": "Mahjong by SI",
-   "what": "20 NEW mats in the Mahjong by SI line, from $80: Valentine's (Be Mine, Cupid Crush, Kiss Kiss), Lunar New Year (Lantern Glow, Double Dragon) and more.",
-   "tag": "mat",
-   "new": true,
-   "buy": "https://www.mahjongbysi.com/products/be-mine-mahjong-mat",
-   "url": "https://www.mahjongbysi.com/products/be-mine-mahjong-mat",
-   "img": "https://cdn.shopify.com/s/files/1/0688/5182/6771/files/download_14067ec6-760d-48b3-b3c6-9e8348c2a2bf.png?v=1794551621",
-   "found": "2026-11-14T18:10",
-   "source": "store",
-   "source_kind": "store",
-   "partner": true,
-   "urgency": "NOW"
-  },
-  {
-   "date": "2026-11-14",
-   "day": "Sat 11/14",
-   "brand": "Maison Mahj",
-   "what": "NEW holiday mats ($95 each): The Winter Garland, The Maison Ribbon, The Snowfall and The Evergreen.",
-   "tag": "mat",
-   "new": true,
-   "buy": "https://maisonmahj.com/products/the-winter-garland-mat",
-   "url": "https://maisonmahj.com/products/the-winter-garland-mat",
-   "img": "https://cdn.shopify.com/s/files/1/0703/8513/9889/files/050A7321.png?v=1791831161",
-   "found": "2026-11-14T18:10",
-   "source": "store",
-   "source_kind": "store",
-   "partner": true,
-   "urgency": "NOW"
-  },
-  {
    "date": "2026-11-15",
    "day": "Sun 11/15",
    "brand": "House of Hearts Studio",
@@ -739,36 +756,6 @@
    "source_kind": "email",
    "partner": true,
    "urgency": "NOW"
-  },
-  {
-   "date": "2026-11-14",
-   "day": "Sat 11/14",
-   "time": "LIVE since Sat 11/14 9am CT",
-   "brand": "Bespoke Mahjong",
-   "partner": true,
-   "what": "Glitter Glow holiday tiles in red and green ($495) are live now. Dropped Sat 11/14 at 9am CT, and part of their Black Friday sale (25% off, no codes on top).",
-   "tag": "tiles",
-   "new": true,
-   "urgency": "NOW",
-   "buy": "https://www.bespokemahjong.com/products/holiday-mahjong-its-a-vibe-glitter-glow-tiles",
-   "url": "https://www.instagram.com/reel/DfqFMexpF1k/",
-   "source": "store",
-   "source_link": "https://www.instagram.com/stories/bespoke_mahjong/",
-   "img": "https://cdn.shopify.com/s/files/1/0837/2142/1083/files/Untitled_1500x1500px_Logo_32.png?v=1793802225",
-   "found": "2026-11-15T14:05",
-   "history": [
-    {
-     "found": "2026-11-04",
-     "what": "Glitter Glow tiles in holiday red and green are coming in November. No exact date yet."
-    },
-    {
-     "found": "2026-11-12T18:35",
-     "what": "Glitter Glow red and green holiday tiles drop Sat 11/14 at 9am CT."
-    }
-   ],
-   "nocode": true,
-   "source_kind": "store",
-   "updated": "2026-11-15T14:05"
   },
   {
    "brand": "Noli June",
@@ -796,16 +783,20 @@
   },
   {
    "date": "2026-11-20",
-   "brand": "Averill",
+   "brand": "Averill Mahjong",
    "partner": true,
    "what": "Charleston Garden No. 8 Four-Layer Edition tile set is on the site.",
    "tag": "tiles",
    "urgency": "NOW",
-   "buy": "https://www.averillmahjong.com/products/charleston-garden-no-8-four-layer-edition",
+   "buy": "https://www.averillmahjong.com/products/charleston-garden-no-8-four-layer-edition?sca_ref=12804202.cJsndO0eauww8PN",
    "url": "https://www.averillmahjong.com/products/charleston-garden-no-8-four-layer-edition",
    "found": "2026-11-21T18:40",
    "source": "store",
-   "source_kind": "store"
+   "source_kind": "store",
+   "nocode": true,
+   "img": "https://cdn.shopify.com/s/files/1/0947/6161/5657/files/charleston-four-layer-main.png?v=1795181522",
+   "save_note": "MAHJMATCH isn't active at Averill yet (checked at checkout Fri 11/20, 8:45am ET).",
+   "updated": "2026-11-22T09:30"
   },
   {
    "date": "2026-11-21",
@@ -828,7 +819,7 @@
    "day": "Fri 11/27",
    "time": "Fri 11/27 to Mon 11/30",
    "brand": "My Fair Mahjong",
-   "what": "My Fair Holiday: 20% off sitewide.",
+   "what": "Black Friday: 20% off sitewide.",
    "tag": "sale",
    "bf": true,
    "approved": true,
@@ -842,7 +833,9 @@
    "source_kind": "email",
    "affiliate_terms": "My Fair Mahjong affiliate email Nov 20: affiliate codes do NOT stack with the sale; commission is still earned through the affiliate link.",
    "partner": true,
-   "found": "2026-11-21T13:40"
+   "found": "2026-11-21T13:40",
+   "save_note": "MAHJMATCH can't be added on top of the sale (their affiliate email, Fri 11/20). Shop through our link.",
+   "order": 90
   },
   {
    "date": "2026-11-23",
@@ -853,7 +846,7 @@
    "tag": "sale",
    "bf": true,
    "approved": true,
-   "hidden": false,
+   "hidden": true,
    "urgency": "NOW",
    "ends": "2026-11-25",
    "buy": "https://mahjmood.com",
@@ -870,7 +863,7 @@
    "partner": true,
    "what": "Black Friday sale: 25% off sitewide and 15% off tables, applied automatically at checkout (Nov 12-22). Discount codes can't be added on top.",
    "tag": "sale",
-   "ends": "",
+   "ends": "2026-11-22",
    "urgency": "NOW",
    "buy": "https://www.bespokemahjong.com",
    "url": "https://www.instagram.com/stories/bespoke_mahjong/",
@@ -880,11 +873,12 @@
    "approved": true,
    "hidden": false,
    "day": "Thu 11/12",
-   "time": "LIVE now through Sun 11/22",
+   "time": "ends Sun 11/22",
    "bf": true,
    "nocode": true,
    "affiliate_terms": "Sheri Wood (Bespoke) affiliate email Nov 13 10:03am: affiliate codes can't be combined with sale pricing and sale items earn NO affiliate commission Nov 12-22 (Glitter Glow included); commissions resume Nov 23.",
-   "updated": "2026-11-13T12:05"
+   "updated": "2026-11-22T09:30",
+   "order": 90
   },
   {
    "date": "2026-11-10",
@@ -905,7 +899,8 @@
    "partner": true,
    "what": "Black Friday sale on tiles, mats and racks starts Mon 11/16.",
    "ends": "",
-   "bf": true
+   "bf": true,
+   "hidden": true
   },
   {
    "brand": "Noli June",
@@ -932,12 +927,13 @@
    "source": "affiliate email Nov 12 'Affiliate Sneak Peek'",
    "source_kind": "email",
    "affiliate_terms": "Codes STACK with the BF deals; commission paid.",
-   "found": "2026-11-13T12:05"
+   "found": "2026-11-13T12:05",
+   "order": 12
   },
   {
    "date": "2026-11-20",
    "day": "Fri 11/20",
-   "time": "through Sun 11/22",
+   "time": "ends today, Sun 11/22",
    "brand": "Bam Bird Boutique",
    "partner": true,
    "what": "Black Friday: 15% off sitewide Fri 11/20 to Sun 11/22, including Tortoise Travel Standard tiles (some exclusions).",
@@ -945,18 +941,23 @@
    "bf": true,
    "approved": true,
    "urgency": "SOON",
-   "buy": "https://www.bambirdboutique.com/",
+   "buy": "https://bambirdboutique.com/Mahjmatch",
    "source": "brand email Nov 12 'Black Friday, Bam Bird Style!'",
    "source_kind": "email",
-   "affiliate_terms": "Not stated whether our code stacks; ask Bam Bird (her yes needed to contact a brand).",
-   "found": "2026-11-13T12:05"
+   "affiliate_terms": "Checkout test Fri 11/20 10:00am ET: MAHJMATCH is refused on top of the sale. Link only: https://bambirdboutique.com/Mahjmatch (no code wording). Sale ends Sun 11/22.",
+   "found": "2026-11-13T12:05",
+   "nocode": true,
+   "ends": "2026-11-22",
+   "updated": "2026-11-22T09:30",
+   "save_note": "The 15% comes off automatically at checkout. MAHJMATCH can't be added on top: Bam Bird's checkout refused it in our test Fri 11/20, 10:00am ET. Shop through our link.",
+   "order": 90
   },
   {
    "date": "2026-11-14",
    "day": "Sat 11/14",
    "brand": "The Royal Mahjong Society",
    "partner": true,
-   "what": "Black Friday: 20% off sitewide, including the new Heirloom tile sets (Cottage, Shore, Mahj Royale, Crown Jewels). Through Dec 1.",
+   "what": "Black Friday: 20% off sitewide, including the new Heirloom tile sets (Cottage, Shore, Mahj Royale). Through Dec 1.",
    "tag": "sale",
    "ends": "2026-12-01",
    "urgency": "NOW",
@@ -969,7 +970,9 @@
    "hidden": false,
    "bf": true,
    "time": "LIVE now through Dec 1",
-   "affiliate_terms": "RMS affiliate email Nov 14: 20% off for our referrals via link; our code gives 20% too (up from 15%); commission unchanged."
+   "affiliate_terms": "RMS affiliate email Nov 14: 20% off for our referrals via link; our code gives 20% too (up from 15%); commission unchanged.",
+   "order": 11,
+   "updated": "2026-11-22T09:30"
   },
   {
    "date": "2026-11-21",
@@ -1007,7 +1010,7 @@
    "source": "affiliate email Tue 11/17",
    "source_kind": "email",
    "approved": true,
-   "hidden": false,
+   "hidden": true,
    "bf": true,
    "nocode": true,
    "affiliate_terms": "Mac+Miller affiliate email Nov 17: codes PAUSED during BF; affiliate LINKS stay active and earn commission; codes return Tue Dec 1."
@@ -1079,6 +1082,277 @@
    "source_link": "https://www.instagram.com/stories/fait.a.main/",
    "affiliate_terms": "Not stated whether our code stacks.",
    "found": "2026-11-20T12:58"
+  },
+  {
+   "brand": "Let's Mahj On",
+   "what": "20% off with their own code Holiday20, plus free shipping on orders over $200. Seen in their email, Fri 11/20.",
+   "partner": true,
+   "approved": true,
+   "hidden": false,
+   "source": "live Brand Watch block (Duet's edit), merged into the curated file by Main Nov 21",
+   "source_kind": "duet",
+   "day": "Fri 11/20",
+   "time": "through Fri 12/4",
+   "date": "2026-11-20",
+   "found": "2026-11-21T14:30",
+   "buy": "https://www.letsmahj-on.com/",
+   "nocode": true,
+   "save_note": "Whether MAHJMATCH works on top of Holiday20 is not confirmed yet. Shop through our link.",
+   "bf": true,
+   "tag": "sale",
+   "order": 22
+  },
+  {
+   "brand": "Mahj Squad",
+   "what": "15% off and free shipping on the new Mint Nutcracker tiles during Thanksgiving week. The tiles drop Sun 11/22 at 3pm ET. Seen on their Instagram, Thu 11/19.",
+   "partner": true,
+   "approved": true,
+   "hidden": false,
+   "source": "live Brand Watch block (Duet's edit), merged into the curated file by Main Nov 21",
+   "source_kind": "duet",
+   "day": "Thanksgiving week",
+   "found": "2026-11-20T08:45",
+   "buy": "https://mahjsquadshop.com/",
+   "nocode": true,
+   "save_note": "Whether MAHJMATCH works on top of this sale is not confirmed yet. Shop through our link.",
+   "bf": true,
+   "tag": "sale",
+   "order": 21
+  },
+  {
+   "brand": "Peace Love Mahjong",
+   "what": "Black Friday sale: the more in the cart, the more off, from 10% off at $150 up to 25% off at $750, plus free shipping. Seen on their site, Thu 11/19.",
+   "partner": true,
+   "approved": true,
+   "hidden": false,
+   "source": "live Brand Watch block (Duet's edit), merged into the curated file by Main Nov 21",
+   "source_kind": "duet",
+   "day": "Through Sun 11/29",
+   "date": "2026-11-29",
+   "found": "2026-11-20T08:45",
+   "buy": "https://peacelovemahjong.com/?ref=Mahjmatch",
+   "nocode": true,
+   "save_note": "Whether MAHJMATCH works on top of this sale is not confirmed yet. Shop through our link.",
+   "bf": true,
+   "tag": "sale",
+   "order": 23
+  },
+  {
+   "brand": "Averill Mahjong",
+   "what": "Black Friday: sale prices on featured sets, like the Monet's Garden Pearl Christmas Gift Edition at $189.99 (regularly $229.99), plus free US shipping.",
+   "partner": true,
+   "approved": true,
+   "hidden": false,
+   "source": "live Brand Watch block (Duet's edit), merged into the curated file by Main Nov 21",
+   "source_kind": "duet",
+   "day": "LIVE now",
+   "time": "through Mon 11/30",
+   "found": "2026-11-20T08:45",
+   "buy": "https://www.averillmahjong.com/products/monets-garden-pearl-christmas-gift-edition?sca_ref=12804202.cJsndO0eauww8PN",
+   "nocode": true,
+   "save_note": "MAHJMATCH isn't active at Averill yet (checked at checkout Fri 11/20, 8:45am ET).",
+   "bf": true,
+   "tag": "sale",
+   "order": 32
+  },
+  {
+   "brand": "Spools",
+   "what": "Black Friday: $105 in extras with every mahjong tile set.",
+   "partner": true,
+   "approved": true,
+   "hidden": false,
+   "source": "live Brand Watch block (Duet's edit), merged into the curated file by Main Nov 21",
+   "source_kind": "duet",
+   "day": "LIVE now",
+   "time": "through Mon 11/30",
+   "found": "2026-11-20T08:45",
+   "buy": "https://spools.com/collections/mahjong",
+   "nocode": true,
+   "save_note": "There's no MAHJMATCH code at Spools yet.",
+   "bf": true,
+   "tag": "sale",
+   "order": 31
+  },
+  {
+   "brand": "Amanda Toppe",
+   "what": "Black Friday sale: 20% off sitewide with their own code BLACKFRIDAY20. It can't be combined with MAHJMATCH. Seen in their email, Fri 11/20.",
+   "partner": true,
+   "approved": true,
+   "hidden": false,
+   "source": "live Brand Watch block (Duet's edit), merged into the curated file by Main Nov 21",
+   "source_kind": "duet",
+   "day": "Through Mon 11/30",
+   "date": "2026-11-30",
+   "found": "2026-11-20T08:45",
+   "buy": "https://www.amandatoppeart.com/?ref=mahjmatchmaker",
+   "nocode": true,
+   "save_note": "MAHJMATCH does not stack with BLACKFRIDAY20. Shop through our link.",
+   "bf": true,
+   "tag": "sale",
+   "order": 90
+  },
+  {
+   "brand": "Fait à Main",
+   "what": "Small Business Saturday event: a free monogram on orders of $350 or more. Personalized holiday orders are due by Mon 12/7.",
+   "partner": true,
+   "approved": true,
+   "hidden": false,
+   "source": "live Brand Watch block (Duet's edit), merged into the curated file by Main Nov 21",
+   "source_kind": "duet",
+   "day": "Fri 11/27",
+   "time": "through Mon 11/30",
+   "date": "2026-11-27",
+   "found": "2026-11-20T08:45",
+   "buy": "https://faitamainstudio.com",
+   "nocode": true,
+   "save_note": "This is a free monogram, not a discount. Fait à Main's MAHJMATCH code isn't live yet.",
+   "bf": true,
+   "tag": "sale",
+   "order": 33
+  },
+  {
+   "brand": "Mini Mahjer",
+   "what": "Bundle sale: 15% off all bundles, no code needed. The Complete Travel Bundles are $191.25 (regularly $225).",
+   "partner": true,
+   "approved": true,
+   "hidden": false,
+   "source": "live Brand Watch block (Duet's edit), merged into the curated file by Main Nov 21",
+   "source_kind": "duet",
+   "day": "LIVE now",
+   "time": "no end date given",
+   "found": "2026-11-17T16:00",
+   "buy": "https://minimahjer.com?sca_ref=10080756.sEthzw6DMEH5JFUf",
+   "save_note": "Tested at checkout Tue 11/17, 4:00pm ET: MAHJMATCH stacks on the sale price and takes another 10% off. A $191.25 travel bundle came to $172.13 before shipping and tax.",
+   "bf": true,
+   "tag": "sale",
+   "order": 13
+  },
+  {
+   "brand": "Mahj & Vine",
+   "what": "Black Friday: every Mahj & Vine mahjong mat is $65 (regularly $70), with free US shipping and returns on mats.",
+   "partner": true,
+   "approved": true,
+   "hidden": false,
+   "source": "live Brand Watch block (Duet's edit), merged into the curated file by Main Nov 21",
+   "source_kind": "duet",
+   "day": "LIVE now",
+   "time": "no end date given",
+   "found": "2026-11-17T11:35",
+   "buy": "https://mahjandvine.com?sca_ref=10366165.hDgHZlY4LYtU0W",
+   "nocode": true,
+   "save_note": "Tested at checkout Tue 11/17, 12:15pm ET: MAHJMATCH takes another 10% off the $65 sale price, so a mat comes to $58.50.",
+   "bf": true,
+   "tag": "sale",
+   "order": 14
+  },
+  {
+   "brand": "Mac + Miller Mahjong",
+   "what": "Black Friday bundles: Laissez Bon Temps Rouler tiles with the purple tile bag and a mat ($395), Sweet Dreams tiles with their mat and tile bag ($425), and Verdant Fortune tiles with the Year of the Fire Horse mat ($350). Also the Dream Sling ($99) and Card Clutch ($10). Free US shipping over $100, while supplies last.",
+   "partner": true,
+   "approved": true,
+   "hidden": false,
+   "source": "live Brand Watch block (Duet's edit), merged into the curated file by Main Nov 21",
+   "source_kind": "duet",
+   "day": "Mon 11/23 to Wed 11/25 for returning customers",
+   "time": "open to everyone from Thu 11/26",
+   "date": "2026-11-23",
+   "found": "2026-11-17T11:00",
+   "buy": "https://www.macandmillermahjong.com/mahjmatchmaker",
+   "nocode": true,
+   "save_note": "Discount codes are paused during the sale, so MAHJMATCH won't work from 11/23 until Tue 12/1.",
+   "bf": true,
+   "tag": "sale",
+   "order": 90
+  },
+  {
+   "brand": "Virora",
+   "what": "Black Friday sale: 20% off Petalée, Marivelle and Aveline tiles, all mats except Hollivia and Hiverelle, all pushers and all bags.",
+   "partner": true,
+   "approved": true,
+   "hidden": false,
+   "source": "live Brand Watch block (Duet's edit), merged into the curated file by Main Nov 21",
+   "source_kind": "duet",
+   "day": "Thu 11/19 through Mon 11/30, 11:59pm PT",
+   "date": "2026-11-19",
+   "found": "2026-11-18T08:45",
+   "buy": "https://www.viroramahjong.com/?ref=Mahjmatchmaker",
+   "nocode": true,
+   "save_note": "Virora says MAHJMATCH is turned off during the sale and can't be combined with the 20% off.",
+   "bf": true,
+   "tag": "sale",
+   "order": 90
+  },
+  {
+   "brand": "Mah Jongg Maven",
+   "what": "Holiday sale: 5% off with code HOLIDAY5.",
+   "partner": true,
+   "approved": true,
+   "hidden": false,
+   "source": "live Brand Watch block (Duet's edit), merged into the curated file by Main Nov 21",
+   "source_kind": "duet",
+   "day": "LIVE now",
+   "time": "no end date given",
+   "found": "2026-11-17T15:45",
+   "buy": "https://mahjonggmaven.com/",
+   "nocode": true,
+   "save_note": "Tested at checkout Tue 11/17, 3:45pm ET: HOLIDAY5 takes 5% off. MAHJMATCH also takes 5%, but only one code works per order, so they don't stack. Either code saves the same.",
+   "bf": true,
+   "tag": "sale",
+   "order": 90
+  },
+  {
+   "brand": "Hip Hip Mahjong",
+   "what": "Black Friday: 20% off with code SoBamGrateful.",
+   "partner": true,
+   "approved": true,
+   "hidden": false,
+   "source": "live Brand Watch block (Duet's edit), merged into the curated file by Main Nov 21",
+   "source_kind": "duet",
+   "day": "LIVE now",
+   "time": "through Mon 11/30",
+   "found": "2026-11-20T08:45",
+   "buy": "https://www.hiphipmahjong.com/mahjmatchmaker",
+   "nocode": true,
+   "save_note": "Tested at checkout Fri 11/20, 8:30am ET: MAHJMATCH can't be added on top of SoBamGrateful, so use the sale code.",
+   "bf": true,
+   "tag": "sale",
+   "order": 90
+  },
+  {
+   "brand": "Bam! Let's Mahjong",
+   "what": "Black Friday: 15% off taken automatically at checkout, plus free shipping on every tile set.",
+   "partner": true,
+   "approved": true,
+   "hidden": false,
+   "source": "live Brand Watch block (Duet's edit), merged into the curated file by Main Nov 21",
+   "source_kind": "duet",
+   "day": "LIVE now",
+   "time": "no end date given",
+   "found": "2026-11-20T08:45",
+   "buy": "https://bamletsmahjong.myshopify.com/mahjmatchmaker",
+   "nocode": true,
+   "save_note": "Tested at checkout Fri 11/20, 8:35am ET: MAHJMATCH can't be added on top of the automatic 15%.",
+   "bf": true,
+   "tag": "sale",
+   "order": 90
+  },
+  {
+   "brand": "Noli June",
+   "what": "Early Black Friday on their leatherette mats: two for $329, three $469, four $589, five $699. Three or more ship free. The Postcard Collection mats are in the sale until it ends.",
+   "partner": true,
+   "approved": true,
+   "hidden": false,
+   "source": "live Brand Watch block (Duet's edit), merged into the curated file by Main Nov 21",
+   "source_kind": "duet",
+   "day": "LIVE now",
+   "time": "through Mon 11/30 (midnight CT)",
+   "found": "2026-11-21T08:30",
+   "buy": "https://nolijune.com/pages/blackfriday?dt_id=3655694",
+   "nocode": true,
+   "save_note": "No code needed: the sale price is on the page. MAHJMATCH drops off at checkout during this sale, per Noli June's affiliate email.",
+   "bf": true,
+   "tag": "sale",
+   "order": 90
   }
  ],
  "nonpartners": [
@@ -1180,8 +1454,91 @@
    "url": ""
   }
  ],
- "updated": "2026-11-21T18:40",
+ "updated": "2026-11-22T18:45",
+ "never_show": [
+  {
+   "brand": "Royal Mahjong Society",
+   "pattern": "heirloom[^.;]{0,80}crown jewels|crown jewels[^.;]{0,80}heirloom|heirloom-crown-jewels",
+   "why": "Standing rule (Nov 22 2026): never show Royal's Heirloom Crown Jewels on Brand Watch. site_brand_watch.py drops any visible item of this brand whose text or link matches, and says so on stderr."
+  }
+ ],
+ "no_photo_brands": [
+  "Splash of Color"
+ ],
+ "_order_note": "`order` (Nov 22 2026) sorts brand cards inside a section, low first; items without it are 50 and keep the builder's usual order. Black Friday: 11-19 = MAHJMATCH works on top of the sale, 21-29 = not confirmed yet, 31-39 = the brand has no working MAHJMATCH code yet, 90 = the sale does not stack with MAHJMATCH (bottom). Give every new Black Friday item one of these.",
  "auto": [
+  {
+   "date": "2026-11-22",
+   "brand": "Oh My Mahjong",
+   "partner": true,
+   "kind": "drop date",
+   "what": "Some things are too special not to share. Named in honor of Megan's grandmother, this collection is a personal tribute... Launching November 25 at 10 AM CT.",
+   "url": "https://www.instagram.com/reel/DgCwWY8yVKl/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-22",
+   "brand": "Bam Bird Boutique",
+   "partner": true,
+   "kind": "sale",
+   "what": "The #1 thing on your wishlist this year is 15% off through the end of TODAY! Classic Tote, genuine pebbled leather, 5 colors.",
+   "url": "https://www.instagram.com/reel/DgDSC9xR8rA/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-22",
+   "brand": "Mahj Squad",
+   "partner": true,
+   "kind": "sale",
+   "what": "Today's the day!!! The Mint Nutcracker tiles are now 15% off with free shipping all week!\n\n#mahjong #mahjongtiles #blackfriday #mahjongtable",
+   "url": "https://www.instagram.com/p/DgDTH-3Bp14/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-22",
+   "brand": "Let's Be Besties",
+   "partner": true,
+   "kind": "launch",
+   "what": "4 new listings: Electric Petal Garden Mahjong Mat; Savannah Lillian Claire Designs Artist Mahjong Mat; Pine Valley Lillian Claire Designs Artist Mahjong Mat; Eat Pray Love Lillian Claire Designs Artist Mahjong Mat",
+   "url": "https://letsbebesties.com/products/electric-petal-garden-mahjong-mat",
+   "src": "store"
+  },
+  {
+   "date": "2026-11-21",
+   "brand": "Mahj Squad",
+   "partner": true,
+   "kind": "sale",
+   "what": "Your mahjong table called… she has NOTHING to wear for Christmas.\n\nAnd while everyone else is planning their Thanksgiving menu, we’re busy planning her holiday ",
+   "url": "https://www.instagram.com/p/DgA5ZfUG4sJ/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-21",
+   "brand": "Bam! Let's Mahjong",
+   "partner": true,
+   "kind": "sale",
+   "what": "Playing a little Mahj and watching a little football!  Black Friday 15% off storewide\n\n#bamletsmahjong #holidayfun #dearsanta #mahjong #mahjongtiles",
+   "url": "https://www.instagram.com/p/DgBKKJjBll1/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-21",
+   "brand": "Amanda Toppe",
+   "partner": true,
+   "kind": "sale",
+   "what": "A little something for your mahjong table. 20% off everything! Shop your favorites now at www.amandatoppeliving.com! Use code BLACKFRIDAY20 💕 Which one is your ",
+   "url": "https://www.instagram.com/p/DgAoxZlhkDw/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-21",
+   "brand": "Let's Be Besties",
+   "partner": true,
+   "kind": "launch",
+   "what": "Bamboo Butterfly Garden Mahjong Mat",
+   "url": "https://letsbebesties.com/products/bamboo-butterfly-garden-mahjong-mat",
+   "src": "store"
+  },
   {
    "date": "2026-11-21",
    "brand": "Mahjong by SI",
@@ -1198,6 +1555,33 @@
    "kind": "sale",
    "what": "Ski Edition Complete Travel Bundle is 15% off all holiday season",
    "url": "https://www.instagram.com/reel/DfzaeOUhh1i/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-20",
+   "brand": "Middle & Main Mahjong",
+   "partner": true,
+   "kind": "launch",
+   "what": "Wedding Registry Open! {kidding, obviously}Who would register for mahjong china for their wedding? {wait, don’t answer that}\n\nThese plates are a whimsical homag",
+   "url": "https://www.instagram.com/p/Df-PsFISDVD/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-20",
+   "brand": "Amanda Toppe",
+   "partner": true,
+   "kind": "preorder",
+   "what": "The Lila full-size mahjong mat is now available for pre-order! Visit www.amandatoppeliving.com\n\nIt is on track to be here by mid-December 🎁",
+   "url": "https://www.instagram.com/p/Df-LXGtBLfr/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-20",
+   "brand": "Let's Mahj On",
+   "partner": true,
+   "kind": "sale",
+   "what": "We're poppin' the bubbles because Black Friday is here and you won't want to miss this one - take 20% off all things mahjong with code HOLIDAY20!\n\n✅ Tiles\n✅ Acc",
+   "url": "https://www.instagram.com/reel/Df9tW-wCacc/",
    "src": "instagram"
   },
   {
@@ -1256,6 +1640,24 @@
   },
   {
    "date": "2026-11-19",
+   "brand": "Mac + Miller Mahjong",
+   "partner": true,
+   "kind": "sale",
+   "what": "Dreamers, it’s almost time to untie the bow! 🎀✨ We’ve wrapped up some of our favorite mahjong pairings into holiday bundles, and we can’t wait to show you what’",
+   "url": "https://www.instagram.com/p/Df7zdDwTi0p/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-19",
+   "brand": "Noli June",
+   "partner": true,
+   "kind": "sale",
+   "what": "🤍 Comment TUESDAY and we’ll send you 10% off your first heirloom leatherette NOLI JUNE mahjong mat.\n.\n.\n.\n#mahjong #americanmahjong #mahjongmat #mahjonglife #no",
+   "url": "https://www.instagram.com/reel/Df77GJGvpHe/",
+   "src": "instagram"
+  },
+  {
+   "date": "2026-11-19",
    "brand": "Anders Ruff",
    "partner": true,
    "kind": "launch",
@@ -1291,129 +1693,67 @@
    "src": "store"
   },
   {
-   "date": "2026-11-18",
-   "brand": "Peace Love Mahjong",
+   "date": "2026-11-20",
+   "brand": "Splash of Color",
    "partner": true,
-   "kind": "sale",
-   "what": "TODAY'S DEAL 30% off Chartreuse Cherries mat, CHERRIES30, today only (Black Friday early, daily mat 11/16-11/20)",
-   "url": "https://www.instagram.com/p/Dfsa4cDTv0h/",
-   "src": "instagram"
+   "what": "Cherry Baby 4-layer tile set ($275).",
+   "tag": "tiles",
+   "new": true,
+   "urgency": "NOW",
+   "buy": "https://splashofcolorco.com/products/cherry-baby-4-layer-american-mahjong-tiles-set",
+   "url": "https://splashofcolorco.com/products/cherry-baby-4-layer-american-mahjong-tiles-set",
+   "found": "2026-11-22T09:30",
+   "source": "store (published Fri 11/20 6:29pm ET; product page checked Sun 11/22)",
+   "source_kind": "store",
+   "noimg": true,
+   "order": 99,
+   "kind": "tiles"
   },
   {
-   "date": "2026-11-18",
-   "brand": "Virora Mahjong",
+   "brand": "Mahjong Studios",
+   "what": "Black Friday: 30% off with Mahjong Studios' own Black Friday code, shown on their site now, plus free US shipping over $49.",
    "partner": true,
-   "kind": "sale",
-   "what": "BLACK FRIDAY SALE | 20% OFF!\n\nEnjoy 20% OFF selected Virora Mahjong products from November 19–30 (PST)!\n\nIncluded in the Sale:\n\nMahjong Tile Sets: Petalée, Mari",
-   "url": "https://www.instagram.com/p/Df4_gVOlJ-0/",
-   "src": "instagram"
+   "approved": true,
+   "hidden": false,
+   "source": "live Brand Watch block (Duet's edit), merged into the curated file by Main Nov 21",
+   "source_kind": "duet",
+   "day": "LIVE now",
+   "time": "no end date given",
+   "found": "2026-11-17T11:00",
+   "buy": "https://www.mahjongstudios.com/mahjmatchmaker",
+   "nocode": true,
+   "save_note": "Tested at checkout Tue 11/17, 12:15pm ET: their Black Friday code takes 30% off and replaces MAHJMATCH (10%). The two don't stack.",
+   "bf": true,
+   "tag": "sale",
+   "order": 90,
+   "kind": "sale"
   },
   {
-   "date": "2026-11-18",
-   "brand": "Virora Mahjong",
+   "brand": "Splash of Color",
+   "what": "Flash sale: 15% off the whole shop with code 15BF, or 20% off the new Mahjong Keychains and Office Desk Pads with code 20BF. Everything is made to order, and they say tiles likely won't arrive in time for Christmas.",
    "partner": true,
-   "kind": "launch",
-   "what": "The Wait Is Over. They're Finally Here!\n\nOur four new Mahjong Carrying Bags have officially arrived!\n\nBlue, Mint Green, Rose Red & Cognac Brown — four beautiful",
-   "url": "https://www.instagram.com/p/Df3RnueBKJD/",
-   "src": "instagram"
+   "approved": true,
+   "hidden": false,
+   "source": "live Brand Watch block (Duet's edit), merged into the curated file by Main Nov 21",
+   "source_kind": "duet",
+   "day": "LIVE now",
+   "time": "through Mon 11/23",
+   "found": "2026-11-21T11:00",
+   "buy": "https://splashofcolorco.com",
+   "nocode": true,
+   "save_note": "MAHJMATCH can't be added on top: their email says discounts can't be combined (Sat 11/21).",
+   "bf": true,
+   "tag": "sale",
+   "order": 90,
+   "kind": "sale"
   },
   {
-   "date": "2026-11-18",
-   "brand": "Mah Jongg Maven",
-   "partner": true,
-   "kind": "drop date",
-   "what": "Your Mah Jongg Maven Holiday Gift Guide is HERE!☕️🎁🍁🤎🍂\n\nWe've got something special for every player AND every budget! From fun little accessories to beautiful ",
-   "url": "https://www.instagram.com/p/Df5QnGYo15T/",
-   "src": "instagram"
-  },
-  {
-   "date": "2026-11-18",
-   "brand": "My Fair Mahjong",
-   "partner": true,
-   "kind": "launch",
-   "what": "2 new listings: SINGLE-TILE FRAME  |  4 Color Options  |  Keepsake Collection; THREE-TILE FRAME  |  4 Mat Color Options  |  Keepsake Collection",
-   "url": "https://myfairmahjong.com/products/single-tile-frame",
-   "src": "store"
-  },
-  {
-   "date": "2026-11-18",
-   "brand": "Spools",
-   "partner": true,
-   "kind": "launch",
-   "what": "Travel Mahjong Tiles - Traditional",
-   "url": "https://spools.com/products/travel-mahjong-tiles-traditional",
-   "src": "store"
-  },
-  {
-   "date": "2026-11-17",
-   "brand": "Peace Love Mahjong",
-   "partner": true,
-   "kind": "sale",
-   "what": "TODAY'S DEAL: 30% OFF Plaid Desert Mat! Use code PLAID30. Today only! Early Black Friday 11/16-11/20: a different mat at 30% off each day, 24 hours only.",
-   "url": "https://www.instagram.com/p/DfsawGXzWkX/",
-   "src": "instagram"
-  },
-  {
-   "date": "2026-11-17",
-   "brand": "Mahj & Vine",
-   "partner": true,
-   "kind": "sale",
-   "what": "Black Friday starts now, and every mat is on sale! Shop $65 mahjong mats and $70 umbrella mats. All mats in stock and ready to ship, complimentary U.S. shipping",
-   "url": "https://www.instagram.com/p/Df2Sz3qFiod/",
-   "src": "instagram"
-  },
-  {
-   "date": "2026-11-17",
-   "brand": "Britt Mills",
-   "partner": true,
-   "kind": "launch",
-   "what": "Lainey Square Tablecloth",
-   "url": "https://brittmillsdesign.com/products/lainey-square-tablecloth",
-   "src": "store"
-  },
-  {
-   "date": "2026-11-17",
-   "brand": "Charleston Mahjong Club",
-   "partner": true,
-   "kind": "launch",
-   "what": "3 new listings: The Yacht Club Bundle; The Cocktail Club Bundle; The Country Club Bundle",
-   "url": "https://www.charlestonmahjongclub.com/products/the-yacht-club-bundle",
-   "src": "store"
-  },
-  {
-   "date": "2026-11-17",
-   "brand": "My Fair Mahjong",
-   "partner": true,
-   "kind": "launch",
-   "what": "5 new listings: SINGLE TILE KEEPSAKE IN GIFT BOX  |  Optic White  |  Keepsake Collection; SINGLE TILE KEEPSAKE IN GIFT BOX  |  Crimson Red  |  Keepsake Collection; SINGLE TILE KEEPSAKE IN GIFT BOX  |  Pacific Blue  |  Keepsake Collection; SINGLE TILE KEEPSAKE IN GIFT BOX  |  Plum Purple  |  Keepsake Collection …",
-   "url": "https://myfairmahjong.com/products/single-tile-keepsake-optic-white",
-   "src": "store"
-  },
-  {
-   "date": "2026-11-17",
-   "brand": "Let's Be Besties",
-   "partner": true,
-   "kind": "launch",
-   "what": "4 new listings: Ducking Away AC Studios Artist Mahjong Mat; Peacock in the Hydrangeas Mahjong Mat; Wildly Starstruck Mahjong Mat; Midnight Jubilee Mahjong Mat",
-   "url": "https://letsbebesties.com/products/ducking-away-ac-studios-artist-mahjong-mat",
-   "src": "store"
-  },
-  {
-   "date": "2026-11-17",
-   "brand": "Middle & Main Mahjong",
-   "partner": true,
-   "kind": "launch",
-   "what": "Summit to Sea Tiles- A North Carolina Inspired Mahjong Set",
-   "url": "https://www.middleandmainmahjong.com/products/summit-sea-tiles-a-north-carolina-inspired-mahjong-set",
-   "src": "store"
-  },
-  {
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "brand": "Splash of Color",
    "partner": true,
    "kind": "launch",
-   "what": "3 new listings: Funny Valentine Conversation Hearts 4 Layer American Mahjong Tiles Set; Vintage Valentine Conversation Hearts Mahjong Mat Sleek Surface; Sorry I Can't Talk Right Now, Valentine Love Mahjong Mat Sleek Surface",
-   "url": "https://splashofcolorco.com/products/funny-valentine-conversation-hearts-4-layer-american-mahjong-tiles-set",
+   "what": "Festive Frankenstein And Bride Modtastic Christmas Mahjong Mat Sleek Surface",
+   "url": "https://splashofcolorco.com/products/festive-frankenstein-and-bride-modtastic-christmas-mahjong-mat-sleek-surface",
    "src": "store"
   },
   {
@@ -1426,15 +1766,6 @@
    "src": "store"
   },
   {
-   "date": "2026-11-20",
-   "brand": "Splash of Color",
-   "partner": true,
-   "kind": "launch",
-   "what": "3 new listings: Cherry Baby 4 Layer American Mahjong Tiles Set; The Way To My Heart Vintage Valentine Mahjong Mat Sleek Surface; Mahjong Vintage Valentine Love Birds Mahjong Mat Sleek Surface",
-   "url": "https://splashofcolorco.com/products/cherry-baby-4-layer-american-mahjong-tiles-set",
-   "src": "store"
-  },
-  {
    "date": "2026-11-15",
    "brand": "Splash of Color",
    "partner": true,
@@ -1442,20 +1773,11 @@
    "what": "2 new listings: Spill The Mahj Modcentric Mahjong Mat Sleek Surface; I'd Rather Be Playing Mahjong Mat Sleek Surface",
    "url": "https://splashofcolorco.com/products/spill-the-mahj-modcentric-mahjong-mat-sleek-surface",
    "src": "store"
-  },
-  {
-   "date": "2026-11-14",
-   "brand": "Splash of Color",
-   "partner": true,
-   "kind": "launch",
-   "what": "4 new listings: I'd Rather Be Playing Funny Mahjong Absorbent Coffee Bar Mat; Funny Mahjong Welcome To The Crak House Absorbent Coffee Bar Mat; Funny Mahjong I Don't Give A Crak  Coffee, Cafe, Bar Mat; Pretty Chinoiserie Mahjong Kitchen Square Mahjong Tablecloth",
-   "url": "https://splashofcolorco.com/products/id-rather-be-playing-funny-mahjong-absorbent-coffee-bar-mat",
-   "src": "store"
   }
  ],
- "updatedAt": "2026-11-21T23:31:17+00:00",
+ "updatedAt": "2026-11-22T23:28:30+00:00",
  "sources": {
-  "store_run": "2026-11-21T23:29:48+00:00",
-  "ig_run": "2026-11-21T18:32:56.420092+00:00"
+  "store_run": "2026-11-22T23:24:14+00:00",
+  "ig_run": "2026-11-22T23:28:05.300549+00:00"
  }
 }

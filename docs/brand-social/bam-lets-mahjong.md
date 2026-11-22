@@ -1,4 +1,5 @@
 # Bam! Let's Mahjong (@bamletsmahjong): what they're pushing on Instagram
+- 2026-11-22: IG feature of Holly Jolly Christmas tiles (2025 product, not new).
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
 - Nov 6 10:10am ET: SNEAK PEEK of a NEW mat 'coming soon' (white, hand-painted pink/peach rose bouquet + pink bow, lime-green wavy border, pink polka dots, pink script logo), styled with their black-and-white Art Deco tiles, black-back tiles + clear racks: 'a little Art Deco, a little floral fabulousness' (https://www.instagram.com/p/DfZ5W0yEXtG/). Pairing they push: graphic B&W tiles + girly pink. #BamLetsMahjong #ArtDecoMahjong #MahjongMat

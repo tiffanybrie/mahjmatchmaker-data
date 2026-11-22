@@ -1,4 +1,5 @@
 # Oh My Mahjong (@ohmymahjong): what they're pushing on Instagram
+- 2026-11-22: IG reel again confirms Sadie Jane launch Wed 11/25 10am CT.
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
 - Nov 10 7:00am ET reel: 'Juniper Tiles are almost here! Your new favorite set launches tomorrow, 11.11 at 10 am CT' (https://www.instagram.com/reel/Dfj21bAyHCg/).

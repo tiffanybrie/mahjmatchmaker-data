@@ -719,6 +719,38 @@
  ],
  "just_dropped": [
   {
+   "date": "2026-11-22",
+   "day": "Sun 11/22",
+   "time": "LIVE now",
+   "brand": "Bespoke Mahjong",
+   "partner": true,
+   "what": "Back in stock: The Ultimate Rack in Mojito Dream and Highlighter Pink, plus The Ultimate Travel Racks.",
+   "tag": "rack",
+   "restock": true,
+   "urgency": "NOW",
+   "buy": "https://www.bespokemahjong.com/products/the-ultimate-rack-garden-green",
+   "url": "https://www.bespokemahjong.com/products/the-ultimate-rack-garden-green",
+   "found": "2026-11-22T18:40",
+   "source": "store",
+   "source_kind": "store"
+  },
+  {
+   "date": "2026-11-22",
+   "day": "Sun 11/22",
+   "time": "LIVE now",
+   "brand": "Sunday Mahjong",
+   "partner": true,
+   "what": "New Georgia Mahjong Rack Set is in stock. A Sunday Cherry Cola rack set is also listed (not yet available to order).",
+   "tag": "rack",
+   "new": true,
+   "urgency": "NOW",
+   "buy": "https://sundaymahjong.com/products/georgia-mahjong-rack-set",
+   "url": "https://sundaymahjong.com/products/georgia-mahjong-rack-set",
+   "found": "2026-11-22T18:40",
+   "source": "store",
+   "source_kind": "store"
+  },
+  {
    "date": "2026-11-20",
    "day": "Fri 11/20",
    "time": "LIVE now",
@@ -2451,7 +2483,7 @@
    "url": ""
   }
  ],
- "updated": "2026-11-22T09:30",
+ "updated": "2026-11-22T18:45",
  "never_show": [
   {
    "brand": "Royal Mahjong Society",

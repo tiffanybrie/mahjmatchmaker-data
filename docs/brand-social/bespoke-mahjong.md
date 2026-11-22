@@ -1,4 +1,5 @@
 # Bespoke Mahjong (@bespoke_mahjong): what they're pushing on Instagram
+- 2026-11-22: Ultimate Travel Racks, Ultimate Rack Mojito Dream + Highlighter Pink back in stock (store). Black Friday 25% sitewide ends tonight 11/22. No new IG posts since 11/18.
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
 - Nov 5 3:51pm ET: brand appeared in the NYT crossword, celebratory carousel (https://www.instagram.com/p/DfX7pIpiUE_/). No product news.

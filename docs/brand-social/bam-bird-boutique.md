@@ -1,4 +1,5 @@
 # Bam Bird Boutique (@bambirdboutique): what they're pushing on Instagram
+- 2026-11-22: Classic Tote 15% off ended tonight (social, not listed); BF 15% sitewide ends midnight 11/22.
 Newest first. Read before featuring this brand (FYM-REEL-RULES rule 12). Prune items older than ~6 weeks.
 
 - Nov 6 10am CT: MCM Olive/Pink restock LIVE (mcm-mahjong-tile-set Olive/Pink variants available, $350/$370). Nov 5 carousel explained the MCM motifs: monkey jokers, geometric winds/dragons, partridge 1 Bam (https://www.instagram.com/p/DfX7JrXnz5H/). Pushes MCM neoprene mats (Geo Bloom, Mod Geo) with it.
