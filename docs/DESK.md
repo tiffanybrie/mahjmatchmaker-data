@@ -293,6 +293,8 @@ Standing order: RESTOCK FIRST (rule c), then Google #1, then the newest ANSWERS 
 | Google & Revenue report | ❌ Not run | Computer away; task switched OFF (HQ red card). Main did the per-brand AI Overview rate out of 7 (166ccd5e); Duet cloud AI Overview checks ran 11:20am + 7:21pm. |
 | Indexing (noon job) | ❌ OFF | Paused on her Nov 20 word; STEP A rewrite = OVERDUE (Main). |
 | Verified dates | ✅ | Current month is enough (her Nov 20 rule). |
+| Verified dates (weekly, Mondays; daily from Nov 17) | ✅ | Superseded by her Nov 20 rule: current month is enough. |
+| Live codes check | ❓ Not run tonight | Last PASS Fri ~9:30pm; next attended run. |
 | Codes post (Mondays) | ⏸ Paused | Her word Nov 19. |
 | Pinterest queue health | ⏸ Off by her word | 0 scheduled Nov 21-28; nothing re-scheduled. |
 | Planoly next-7-days (IG + FB Page) (d) | ⏸ 0 scheduled, on purpose | Both workspaces 0 groups dated Nov 21-28 (her Nov 19 9pm 'not using Planoly'); no FB-target / Tag-people / Planoly lint items. Nothing scheduled, nothing deleted. |
