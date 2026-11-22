@@ -16,7 +16,12 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/virora-mahjong-petalwing.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Oh My Mahjong Pink Quartz",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "mat_racks_by": "Tiffany Nov 22 1:26am"
   },
   {
    "group": "pair",
@@ -35,7 +40,12 @@
     1054
    ],
    "box_note": "Tiffany review note Nov 21 night: reframed",
-   "her_note": "you need to reframe the mat in this shot because racks cover up the blush part.  move the mat down  so you can see blush portion in upper left corner"
+   "her_note": "you need to reframe the mat in this shot because racks cover up the blush part.  move the mat down  so you can see blush portion in upper left corner",
+   "mat_racks": [
+    "Peace Love Mahjong Light Pink",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "mat_racks_by": "Tiffany Nov 22 1:26am"
   },
   {
    "group": "picks",
@@ -45,8 +55,19 @@
    "why": "blush + pale blue wash",
    "retired": false,
    "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/betty-june-and-jeannette-gigi-canvas-art.jpg",
-   "lowres": true
+   "img": "assets/colorcards/sadie-jane/mats/betty-june-and-jeannette-gigi-canvas-art-table.jpg",
+   "lowres": true,
+   "box": [
+    585,
+    375,
+    2565,
+    2355
+   ],
+   "mat_racks": [
+    "Mahj Mood Scalloped Clear Acrylic",
+    "Oh My Mahjong Pink Quartz"
+   ],
+   "mat_racks_by": "Tiffany Nov 22 1:26am"
   },
   {
    "group": "picks",
@@ -57,7 +78,12 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-chantilly.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Cornflower Blue",
+    "Middle & Main Milk Glass Scalloped Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -84,7 +110,12 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-year-of-the-horse.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Ocean Slate",
+    "Mahj Mood Scalloped Clear Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -95,7 +126,12 @@
    "retired": true,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-peri-twinkle-retired.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Miss Mahjong Cornflower Blue Scalloped",
+    "Miss Mahjong Iridescent Opal Scalloped"
+   ],
+   "mat_racks_by": "Tiffany Nov 22 1:26am"
   },
   {
    "group": "picks",
@@ -125,7 +161,12 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-vivara.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Ocean Slate",
+    "Miss Mahjong Iridescent Opal Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -136,7 +177,12 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/betty-june-and-jeannette-julia-blush.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Peachy",
+    "Middle & Main Milk Glass Scalloped Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -147,7 +193,12 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/let-s-be-besties-talulah-panda.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Mahj Mood Scalloped Clear Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -158,7 +209,12 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/let-s-be-besties-watercolor-lilies.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Oh My Mahjong Pink Quartz"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -169,7 +225,12 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/let-s-be-besties-plum-lotus.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Miss Mahjong Peach Sorbet Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -180,7 +241,12 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/bam-let-s-mahjong-grandmillennial.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Middle & Main White Lace Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -191,7 +257,12 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-elysium.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Harbor Blue",
+    "Middle & Main Milk Glass Scalloped Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -203,7 +274,12 @@
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/let-s-mahj-on-let-s-be-refined-refined-blue-soft-blue-border.jpg",
    "lowres": true,
-   "short": "Refined Blue"
+   "short": "Refined Blue",
+   "mat_racks": [
+    "Bird & Bamboo Periwinkle Blue",
+    "Mahj Mood Scalloped Clear Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -214,7 +290,12 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/royal-mahjong-society-hydrangea.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Ocean Slate",
+    "Miss Mahjong Iridescent Opal Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -225,7 +306,12 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/anders-ruff-hamptons-hydrangea.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Cornflower Blue",
+    "Oh My Mahjong Pink Quartz"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -248,7 +334,12 @@
     648
    ],
    "box_note": "Tiffany review note Nov 21 night: reframed",
-   "her_note": "This photo has a hand in it.  You've got to be kidding me."
+   "her_note": "This photo has a hand in it.  You've got to be kidding me.",
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Miss Mahjong Iridescent Opal Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -259,7 +350,12 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/anders-ruff-botanical-garden.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -270,7 +366,12 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/mahjong-register-butterfly-belle-premium.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Ocean Slate",
+    "Miss Mahjong Peach Sorbet Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -288,7 +389,12 @@
     1110,
     1130
    ],
-   "box_note": "Tiffany Nov 22 1:10am: white border; crop inside the mat edge"
+   "box_note": "Tiffany Nov 22 1:10am: white border; crop inside the mat edge",
+   "mat_racks": [
+    "Bird & Bamboo Cornflower Blue",
+    "Middle & Main White Lace Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -307,7 +413,12 @@
     1064
    ],
    "box_note": "Tiffany review note Nov 21 night: reframed",
-   "her_note": "Photoshop hack job on the edge of this mat.  And mat should extend the frame"
+   "her_note": "Photoshop hack job on the edge of this mat.  And mat should extend the frame",
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Middle & Main Milk Glass Scalloped Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -326,7 +437,12 @@
     1130
    ],
    "box_note": "Tiffany review note Nov 21 night: reframed",
-   "her_note": "Mat has a white border, must be move to the edge so it takes up the whole space.  I shouldn't have to tell you this."
+   "her_note": "Mat has a white border, must be move to the edge so it takes up the whole space.  I shouldn't have to tell you this.",
+   "mat_racks": [
+    "Bird & Bamboo Cornflower Blue",
+    "Middle & Main Milk Glass Scalloped Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -364,7 +480,12 @@
    ],
    "partner": false,
    "store_url": "https://www.amazon.com/dp/B0H49Q8KMS",
-   "found": "Etsy/Amazon discovery Nov 21"
+   "found": "Etsy/Amazon discovery Nov 21",
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Mahj Mood Scalloped Clear Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -383,7 +504,12 @@
    ],
    "partner": false,
    "store_url": "https://www.etsy.com/listing/4587877778",
-   "found": "Etsy/Amazon discovery Nov 21"
+   "found": "Etsy/Amazon discovery Nov 21",
+   "mat_racks": [
+    "Bird & Bamboo Jade",
+    "Oh My Mahjong Pink Quartz"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -394,7 +520,12 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/peace-love-mahjong-vegan-leather-dusty-rose.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -405,7 +536,12 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/let-s-be-besties-rose-water-dots-and-stripes.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Middle & Main Milk Glass Scalloped Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -416,7 +552,12 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/mahj-mood-pink-lemonade-full.jpg",
-   "lowres": false
+   "lowres": false,
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Mahj Mood Scalloped Clear Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -427,7 +568,12 @@
    "retired": true,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-birdie-pink-retired.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Miss Mahjong Iridescent Opal Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "picks",
@@ -439,7 +585,12 @@
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/bam-bird-boutique-the-pink-classic-neoprene.jpg",
    "lowres": true,
-   "her_note": "Very tonal, can be in but it's not this early in the album"
+   "her_note": "Very tonal, can be in but it's not this early in the album",
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Miss Mahjong Iridescent Opal Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "holiday",
@@ -450,7 +601,12 @@
    "retired": false,
    "holiday": true,
    "img": "assets/colorcards/sadie-jane/mats/britt-mills-nutcracker.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Cornflower Blue",
+    "Mahj Mood Scalloped Clear Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "holiday",
@@ -462,7 +618,12 @@
    "holiday": true,
    "img": "assets/colorcards/sadie-jane/mats/amazon-pink-and-blue-christmas-village.jpg",
    "lowres": true,
-   "short": "Pink & Blue Village"
+   "short": "Pink & Blue Village",
+   "mat_racks": [
+    "Bird & Bamboo Pink Coral",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "holiday",
@@ -474,7 +635,12 @@
    "holiday": true,
    "img": "assets/colorcards/sadie-jane/mats/waiting-on-martha-vintage-twinkle-double-sided.jpg",
    "lowres": true,
-   "short": "Vintage Twinkle"
+   "short": "Vintage Twinkle",
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Oh My Mahjong Pink Quartz"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "holiday",
@@ -486,7 +652,12 @@
    "holiday": true,
    "img": "assets/colorcards/sadie-jane/mats/charleston-mahjong-club-ski-club-mat-periwinkle-center.jpg",
    "lowres": true,
-   "short": "Ski Club Periwinkle"
+   "short": "Ski Club Periwinkle",
+   "mat_racks": [
+    "Bird & Bamboo Cornflower Blue",
+    "Miss Mahjong Iridescent Opal Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "holiday",
@@ -497,7 +668,12 @@
    "retired": false,
    "holiday": true,
    "img": "assets/colorcards/sadie-jane/mats/mahjong-register-peppermint-patty-premium.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Middle & Main Milk Glass Scalloped Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "holiday",
@@ -508,7 +684,12 @@
    "retired": false,
    "holiday": true,
    "img": "assets/colorcards/sadie-jane/mats/yolo-mahjong-christmas-cat.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Peachy",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "holiday",
@@ -519,7 +700,12 @@
    "retired": false,
    "holiday": true,
    "img": "assets/colorcards/sadie-jane/mats/peace-love-mahjong-love-and-light.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Dark Blue",
+    "Oh My Mahjong Pink Quartz"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "holiday",
@@ -530,7 +716,12 @@
    "retired": false,
    "holiday": true,
    "img": "assets/colorcards/sadie-jane/mats/amazon-blue-and-white-snowflake.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Harbor Blue",
+    "Miss Mahjong Peach Sorbet Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "holiday",
@@ -541,7 +732,12 @@
    "retired": false,
    "holiday": true,
    "img": "assets/colorcards/sadie-jane/mats/piper-chase-studios-christmas-tree-trellis.jpg",
-   "lowres": true
+   "lowres": true,
+   "mat_racks": [
+    "Bird & Bamboo Magenta",
+    "Mahj Mood Scalloped Clear Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "yours",
@@ -553,7 +749,12 @@
    "fym": "www.etsy.com/listing/4493549326/the-kerry-mahjong-mat-watercolor-pink",
    "lowres": true,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Avocado",
+    "Middle & Main Milk Glass Scalloped Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "yours",
@@ -565,7 +766,12 @@
    "fym": "www.ohmymahjong.com/anastasia-mat-in-tube",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Berry Purple",
+    "Miss Mahjong Iridescent Opal Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "yours",
@@ -577,7 +783,12 @@
    "fym": "www.ohmymahjong.com/jade-mat-in-tube",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Cornflower Blue",
+    "Middle & Main White Lace Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "yours",
@@ -589,7 +800,12 @@
    "fym": "tigredetartan.com/mahjong-mat-chinoiserie-denim",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Middle & Main Milk Glass Scalloped Acrylic",
+    "Bird & Bamboo Cornflower Blue"
+   ],
+   "mat_racks_by": "Tiffany Nov 22 1:26am"
   },
   {
    "group": "yours",
@@ -601,7 +817,12 @@
    "fym": "alb:amara:Citrus Songbird",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Seafoam",
+    "Mahj Mood Scalloped Clear Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "yours",
@@ -619,7 +840,12 @@
     480,
     992,
     1440
-   ]
+   ],
+   "mat_racks": [
+    "Peace Love Mahjong Light Pink",
+    "Mahj Mood Scalloped Clear Acrylic"
+   ],
+   "mat_racks_by": "Tiffany Nov 22 1:26am"
   },
   {
    "group": "yours",
@@ -637,7 +863,12 @@
     480,
     2057,
     2316
-   ]
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Peony",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "yours",
@@ -656,7 +887,12 @@
     2400,
     2730
    ],
-   "box_note": "Tiffany Nov 22 12:51am: low-res / white bar fixed (full-size Etsy photo, crop inside the mat)"
+   "box_note": "Tiffany Nov 22 12:51am: low-res / white bar fixed (full-size Etsy photo, crop inside the mat)",
+   "mat_racks": [
+    "Mahj Mood Scalloped Clear Acrylic",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "mat_racks_by": "Tiffany Nov 22 1:26am"
   },
   {
    "group": "yours",
@@ -674,7 +910,12 @@
     2399,
     2700
    ],
-   "box_note": "Tiffany Nov 22 12:51am: low-res / white bar fixed (full-size Etsy photo, crop inside the mat)"
+   "box_note": "Tiffany Nov 22 12:51am: low-res / white bar fixed (full-size Etsy photo, crop inside the mat)",
+   "mat_racks": [
+    "Bird & Bamboo Peony",
+    "Middle & Main Milk Glass Scalloped Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "yours",
@@ -692,7 +933,12 @@
     930,
     1390
    ],
-   "box_note": "Tiffany Nov 22 12:51am: low-res / white bar fixed (full-size Etsy photo, crop inside the mat)"
+   "box_note": "Tiffany Nov 22 12:51am: low-res / white bar fixed (full-size Etsy photo, crop inside the mat)",
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Mahjong Register Peacock Teal"
+   ],
+   "mat_racks_by": "Tiffany Nov 22 1:26am"
   },
   {
    "group": "yours",
@@ -704,7 +950,12 @@
    "fym": "alb:amara:Camellia",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Peony",
+    "Mahj Mood Scalloped Clear Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "yours",
@@ -716,7 +967,12 @@
    "fym": "alb:limoncello:Garden Party",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Butter",
+    "Miss Mahjong Iridescent Opal Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "yours",
@@ -728,7 +984,12 @@
    "fym": "www.ohmymahjong.com/heron-mat-in-tube",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Oh My Mahjong Pink Quartz"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "yours",
@@ -740,7 +1001,12 @@
    "fym": "alb:amara:Imperial",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Butter",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "yours",
@@ -752,7 +1018,12 @@
    "fym": "alb:la-fete:La Fete",
    "lowres": false,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Coral",
+    "Middle & Main Milk Glass Scalloped Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "holiday",
@@ -769,7 +1040,12 @@
     1035,
     2220,
     2715
-   ]
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Light Pink",
+    "Miss Mahjong Iridescent Opal Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "yours",
@@ -781,7 +1057,12 @@
    "fym": "alb:coquette:Blue Willow",
    "lowres": true,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "mat_racks": [
+    "Bird & Bamboo Powder Blue",
+    "Middle & Main Milk Glass Scalloped Acrylic"
+   ],
+   "mat_racks_by": "Tiffany Nov 22 1:26am"
   },
   {
    "group": "yours",
@@ -800,7 +1081,12 @@
    ],
    "partner": false,
    "store_url": "https://www.etsy.com/listing/4527255793",
-   "her_add": true
+   "her_add": true,
+   "mat_racks": [
+    "Middle & Main Milk Glass Scalloped Acrylic",
+    "Miss Mahjong Cornflower Blue Scalloped"
+   ],
+   "mat_racks_by": "Tiffany Nov 22 1:26am"
   },
   {
    "group": "yours",
@@ -819,7 +1105,12 @@
    ],
    "partner": false,
    "store_url": "https://www.etsy.com/listing/4497703295",
-   "her_add": true
+   "her_add": true,
+   "mat_racks": [
+    "Bird & Bamboo Seafoam",
+    "Mahj Mood Scalloped Clear Acrylic"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   },
   {
    "group": "yours",
@@ -837,7 +1128,12 @@
     1330
    ],
    "partner": true,
-   "her_add": true
+   "her_add": true,
+   "mat_racks": [
+    "Bird & Bamboo Butter",
+    "Miss Mahjong Iridescent Opal Scalloped"
+   ],
+   "mat_racks_by": "Claude Nov 22: one colour-matched rack + one scallop/clear/white/opal (her 1:26am guide; she reviews)"
   }
  ]
 }
