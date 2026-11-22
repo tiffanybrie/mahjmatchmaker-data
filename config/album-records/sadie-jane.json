@@ -2465,13 +2465,68 @@
    }
   ],
   "picks": [
-   "joker-panda",
-   "dot-6",
-   "bam-1-crane",
-   "flower-peony",
-   "wind-north"
+   {
+    "key": "joker-panda",
+    "why": "Your pick."
+   },
+   {
+    "key": "bam-1-crane",
+    "why": "Your pick."
+   },
+   {
+    "key": "flower-peony",
+    "why": "Your pick."
+   },
+   {
+    "key": "wind-north",
+    "why": "Your pick."
+   },
+   {
+    "key": "flower-blue",
+    "why": "Your pick."
+   },
+   {
+    "key": "flower-orchid",
+    "why": "Your pick."
+   },
+   {
+    "key": "flower-pink-peony",
+    "why": "Your pick."
+   },
+   {
+    "key": "wind-east",
+    "why": "Your pick."
+   },
+   {
+    "key": "wind-west",
+    "why": "Your pick."
+   },
+   {
+    "key": "wind-south",
+    "why": "Your pick."
+   },
+   {
+    "key": "crak-5",
+    "why": "Your pick."
+   }
   ],
-  "picks_by": "Main pre-pick Nov 21 2026 (she changes them on the review page)"
+  "picks_by": "Main pre-pick Nov 21 2026 (she changes them on the review page)",
+  "her": {
+   "round": 1,
+   "keys": [
+    "joker-panda",
+    "bam-1-crane",
+    "flower-peony",
+    "wind-north",
+    "flower-blue",
+    "flower-orchid",
+    "flower-pink-peony",
+    "wind-east",
+    "wind-west",
+    "wind-south",
+    "crak-5"
+   ]
+  }
  },
  "colorcard_img": "assets/colorcards/sadie-jane/00-sadie-jane-mahjong-tiles-color-guide-mobile.jpg",
  "catalog_checked": {
@@ -2590,7 +2645,8 @@
     "note": "Draft Nov 21: OMM pile shot, denim blue panel, OMM logo, frame3."
    }
   ],
-  "default": 0
+  "default": 0,
+  "chosen": 0
  },
  "review_url": "https://claude.ai/artifact/B9DYMfdvxG3473xRz1rzKk",
  "research_deferred_was": {
@@ -2693,5 +2749,216 @@
  "research": {
   "tnt": "2026-11-21: no posts about Sadie Jane or Serendipity (set unreleased); re-scan after Nov 25",
   "other_groups": "4 groups, nothing"
- }
+ },
+ "rounds": [
+  {
+   "round": 1,
+   "applied_at": "2026-11-22T00:03:14-05:00",
+   "changes": [
+    "Note on The Pink Classic Neoprene: “Very tonal, can be in but it's not this early in the album”",
+    "Note on Peony Keepsake: “Mat has a white border, must be move to the edge so it takes up the whole space.  I shouldn't have to tell you this.”",
+    "Note on Sunday Sherbert Double-Sided Mahjong Mat – Leatherette 31.5\": “This photo has a hand in it.  You've got to be kidding me.”",
+    "Note on The Afternoon Tea: “Photoshop hack job on the edge of this mat.  And mat should extend the frame”",
+    "Note on Serendipity: “you need to reframe the mat in this shot because racks cover up the blush part.  move the mat down  so you can see blush portion in upper left corner”",
+    "Order updated (44 positions changed); new top 3: Petalwing, Serendipity, Gigi (Canvas Art)",
+    "Taken out: Porch Blooms, Moonlit Crane Premium, Darjeeling",
+    "Added from the catalog: The Kerry, Anastasia, Jade, Chinoiserie Denim, Citrus Songbird (retired), Parrotia, Lotus Cove, Nichole, Livy, Grace Watercolor, Camellia (retired), Garden Party (retired), Heron, Imperial (retired), La Fete (retired), Merriment, Blue Willow",
+    "Faces: joker-panda, bam-1-crane, flower-peony, wind-north, flower-blue, flower-orchid, flower-pink-peony, wind-east, wind-west, wind-south, crak-5 (11)",
+    "Your note: “https://www.etsy.com/listing/4527255793/pink-blue-grandmillennial-mahjong-mat?utm_source=ran&utm_medium=affiliate&utm_campaign=US_Indirect+Subnetwork_influencer&utm_content=3704027&ranMID=54064&ranEAID=8yaPBDQV8ls&ranSiteID=8yaPBDQV8ls-CT9ON4LgKDGgT2.7YB.47g&AffGroup=Indirect+Subnetwork\n\nhttps://www”"
+   ],
+   "anything": "https://www.etsy.com/listing/4527255793/pink-blue-grandmillennial-mahjong-mat?utm_source=ran&utm_medium=affiliate&utm_campaign=US_Indirect+Subnetwork_influencer&utm_content=3704027&ranMID=54064&ranEAID=8yaPBDQV8ls&ranSiteID=8yaPBDQV8ls-CT9ON4LgKDGgT2.7YB.47g&AffGroup=Indirect+Subnetwork\n\nhttps://www.etsy.com/listing/4599338148/luxury-retro-mahjong-mat-chinoiserie?ls=r&sr_prefetch=1&pf_from=shop_home&ref=items-pagination-2&pro=1&frs=1&content_source=56b43fa471bd31d554f72950590bbfc7%253ALT273b99ad55053dd53e6a62aa5045c5a19d891198&logging_key=56b43fa471bd31d554f72950590bbfc7%3ALT273b99ad55053dd53e6a62aa5045c5a19d891198\n\nhttps://www.etsy.com/listing/4610389308/blue-and-pink-floral-mahjong-mat?ls=s&ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=blue+and+pink+mahjong+mat&ref=sr_gallery-1-3&sr_prefetch=1&pf_from=search&pro=1&sts=1&content_source=5077070f-045a-40e3-a0ff-2fbed73a65ac%253ALTb01c428a32d767c4c9cb96fbdc0656755dfd0737&organic_search_click=1&logging_key=5077070f-045a-40e3-a0ff-2fbed73a65ac%3ALTb01c428a32d767c4c9cb96fbdc0656755dfd0737\n\nhttps://www.etsy.com/listing/4497703295/chinoiserie-pastel-floral-mahjong-mat?ls=s&ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=blue+and+pink+mahjong+mat&ref=sr_gallery-2-32&sr_prefetch=1&pf_from=search&pro=1&frs=1&content_source=27c5a7f1-5b97-4430-8b13-ab5a1112c124%253ALT60641175e9e82e372e9c9345e914d90c11f58674&organic_search_click=1&logging_key=27c5a7f1-5b97-4430-8b13-ab5a1112c124%3ALT60641175e9e82e372e9c9345e914d90c11f58674",
+   "done": true,
+   "answers": {
+    "adds": [
+     {
+      "b": "Betty June & Jeannette",
+      "k": "www.etsy.com/listing/4493549326/the-kerry-mahjong-mat-watercolor-pink",
+      "n": "The Kerry"
+     },
+     {
+      "b": "Oh My Mahjong",
+      "k": "www.ohmymahjong.com/anastasia-mat-in-tube",
+      "n": "Anastasia"
+     },
+     {
+      "b": "Oh My Mahjong",
+      "k": "www.ohmymahjong.com/jade-mat-in-tube",
+      "n": "Jade"
+     },
+     {
+      "b": "Tigre de Tartan",
+      "k": "tigredetartan.com/mahjong-mat-chinoiserie-denim",
+      "n": "Chinoiserie Denim"
+     },
+     {
+      "b": "Oh My Mahjong",
+      "k": "alb:amara:Citrus Songbird",
+      "n": "Citrus Songbird (retired)"
+     },
+     {
+      "b": "Virora Mahjong",
+      "k": "www.viroramahjong.com/parrotia",
+      "n": "Parrotia"
+     },
+     {
+      "b": "Oh My Mahjong",
+      "k": "www.ohmymahjong.com/lotus-cove-mat-in-tube",
+      "n": "Lotus Cove"
+     },
+     {
+      "b": "Betty June & Jeannette",
+      "k": "www.etsy.com/listing/4537970849/the-nichole-mahjong-mat",
+      "n": "Nichole"
+     },
+     {
+      "b": "Betty June & Jeannette",
+      "k": "www.etsy.com/listing/4544550775/the-livy-mahjong-mat",
+      "n": "Livy"
+     },
+     {
+      "b": "Betty June & Jeannette",
+      "k": "www.etsy.com/listing/4588582719/grace-watercolor-version",
+      "n": "Grace Watercolor"
+     },
+     {
+      "b": "Oh My Mahjong",
+      "k": "alb:amara:Camellia",
+      "n": "Camellia (retired)"
+     },
+     {
+      "b": "Oh My Mahjong",
+      "k": "www.ohmymahjong.com/chantilly-mat",
+      "n": "Chantilly"
+     },
+     {
+      "b": "Oh My Mahjong",
+      "k": "alb:limoncello:Garden Party",
+      "n": "Garden Party (retired)"
+     },
+     {
+      "b": "Oh My Mahjong",
+      "k": "www.ohmymahjong.com/heron-mat-in-tube",
+      "n": "Heron"
+     },
+     {
+      "b": "Oh My Mahjong",
+      "k": "alb:amara:Imperial",
+      "n": "Imperial (retired)"
+     },
+     {
+      "b": "Oh My Mahjong",
+      "k": "alb:la-fete:La Fete",
+      "n": "La Fete (retired)"
+     },
+     {
+      "b": "Oh My Mahjong",
+      "k": "www.ohmymahjong.com/merriment-mat-in-tube",
+      "n": "Merriment"
+     },
+     {
+      "b": "Amanda Toppe",
+      "k": "alb:coquette:Blue Willow",
+      "n": "Blue Willow"
+     }
+    ],
+    "anything": "https://www.etsy.com/listing/4527255793/pink-blue-grandmillennial-mahjong-mat?utm_source=ran&utm_medium=affiliate&utm_campaign=US_Indirect+Subnetwork_influencer&utm_content=3704027&ranMID=54064&ranEAID=8yaPBDQV8ls&ranSiteID=8yaPBDQV8ls-CT9ON4LgKDGgT2.7YB.47g&AffGroup=Indirect+Subnetwork\n\nhttps://www.etsy.com/listing/4599338148/luxury-retro-mahjong-mat-chinoiserie?ls=r&sr_prefetch=1&pf_from=shop_home&ref=items-pagination-2&pro=1&frs=1&content_source=56b43fa471bd31d554f72950590bbfc7%253ALT273b99ad55053dd53e6a62aa5045c5a19d891198&logging_key=56b43fa471bd31d554f72950590bbfc7%3ALT273b99ad55053dd53e6a62aa5045c5a19d891198\n\nhttps://www.etsy.com/listing/4610389308/blue-and-pink-floral-mahjong-mat?ls=s&ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=blue+and+pink+mahjong+mat&ref=sr_gallery-1-3&sr_prefetch=1&pf_from=search&pro=1&sts=1&content_source=5077070f-045a-40e3-a0ff-2fbed73a65ac%253ALTb01c428a32d767c4c9cb96fbdc0656755dfd0737&organic_search_click=1&logging_key=5077070f-045a-40e3-a0ff-2fbed73a65ac%3ALTb01c428a32d767c4c9cb96fbdc0656755dfd0737\n\nhttps://www.etsy.com/listing/4497703295/chinoiserie-pastel-floral-mahjong-mat?ls=s&ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=blue+and+pink+mahjong+mat&ref=sr_gallery-2-32&sr_prefetch=1&pf_from=search&pro=1&frs=1&content_source=27c5a7f1-5b97-4430-8b13-ab5a1112c124%253ALT60641175e9e82e372e9c9345e914d90c11f58674&organic_search_click=1&logging_key=27c5a7f1-5b97-4430-8b13-ab5a1112c124%3ALT60641175e9e82e372e9c9345e914d90c11f58674",
+    "cover": 0,
+    "done": true,
+    "faces": [
+     "joker-panda",
+     "bam-1-crane",
+     "flower-peony",
+     "wind-north",
+     "flower-blue",
+     "flower-orchid",
+     "flower-pink-peony",
+     "wind-east",
+     "wind-west",
+     "wind-south",
+     "crak-5"
+    ],
+    "finds": {},
+    "notes": {
+     "bam-bird-boutique-the-pink-classic-neoprene": "Very tonal, can be in but it's not this early in the album",
+     "mahjong-by-si-peony-keepsake": "Mat has a white border, must be move to the edge so it takes up the whole space.  I shouldn't have to tell you this.",
+     "mahjong-register-sunday-sherbert-double-sided-mahjong-mat-leatherette-31-5": "This photo has a hand in it.  You've got to be kidding me.",
+     "maison-mahj-the-afternoon-tea": "Photoshop hack job on the edge of this mat.  And mat should extend the frame",
+     "oh-my-mahjong-serendipity": "you need to reframe the mat in this shot because racks cover up the blush part.  move the mat down  so you can see blush portion in upper left corner"
+    },
+    "order": {
+     "hol": [
+      "britt-mills-nutcracker",
+      "amazon-pink-and-blue-christmas-village",
+      "waiting-on-martha-vintage-twinkle-double-sided",
+      "charleston-mahjong-club-ski-club-mat-periwinkle-center",
+      "mahjong-register-peppermint-patty-premium",
+      "yolo-mahjong-christmas-cat",
+      "peace-love-mahjong-love-and-light",
+      "amazon-blue-and-white-snowflake",
+      "piper-chase-studios-christmas-tree-trellis"
+     ],
+     "main": [
+      "virora-mahjong-petalwing",
+      "oh-my-mahjong-serendipity",
+      "betty-june-and-jeannette-gigi-canvas-art",
+      "oh-my-mahjong-chantilly",
+      "mahj-and-vine-chinoiserie-citrus-grove",
+      "oh-my-mahjong-year-of-the-horse",
+      "oh-my-mahjong-peri-twinkle-retired",
+      "amazon-blue-and-pink-floral",
+      "oh-my-mahjong-vivara",
+      "betty-june-and-jeannette-julia-blush",
+      "lets-be-besties-talulah-panda",
+      "lets-be-besties-watercolor-lilies",
+      "lets-be-besties-plum-lotus",
+      "mahjong-register-moonlit-crane-premium",
+      "bam-lets-mahjong-grandmillennial",
+      "oh-my-mahjong-elysium",
+      "lets-mahj-on-lets-be-refined-refined-blue-soft-blue-border",
+      "royal-mahjong-society-hydrangea",
+      "anders-ruff-hamptons-hydrangea",
+      "mahjong-register-sunday-sherbert-double-sided-mahjong-mat-leatherette-31-5",
+      "anders-ruff-botanical-garden",
+      "mahjong-register-butterfly-belle-premium",
+      "oh-my-mahjong-darjeeling",
+      "mahjong-by-si-peony-reverie",
+      "maison-mahj-the-afternoon-tea",
+      "mahjong-by-si-peony-keepsake",
+      "mahjong-by-si-porch-blooms",
+      "craftinmy-blue-and-pink-chinoiserie-trellis",
+      "amazon-pink-blue-bow-floral",
+      "mahjaurastudio-pink-hydrangea-preppy-floral",
+      "bam-bird-boutique-the-pink-classic-neoprene",
+      "peace-love-mahjong-vegan-leather-dusty-rose",
+      "lets-be-besties-rose-water-dots-and-stripes",
+      "mahj-mood-pink-lemonade",
+      "oh-my-mahjong-birdie-pink-retired"
+     ]
+    },
+    "ordering_off": false,
+    "putin": [],
+    "round": 1,
+    "set": "sadie-jane",
+    "updated": "2026-11-22T04:59:43.181Z",
+    "v": {
+     "mahjong-by-si-porch-blooms": "remove",
+     "mahjong-register-moonlit-crane-premium": "remove",
+     "oh-my-mahjong-darjeeling": "remove"
+    }
+   }
+  }
+ ],
+ "when_released": [
+  {
+   "mat": "Poppins",
+   "brand": "Oh My Mahjong",
+   "note": "Tiffany Nov 22 12:04am: the unreleased OMM Poppins mat (hidden listing; OMM has never announced it; scraped too early) is a really good match for Sadie Jane, probably a top match. Do NOT put it in this album or talk about it until OMM releases it. The day it releases: add it to the Sadie Jane album near the top. It may stay in the La Fete album."
+  }
+ ],
+ "shopmy_links_owed": [
+  "https://www.etsy.com/listing/4527255793",
+  "https://www.etsy.com/listing/4599338148",
+  "https://www.etsy.com/listing/4610389308",
+  "https://www.etsy.com/listing/4497703295"
+ ]
 }

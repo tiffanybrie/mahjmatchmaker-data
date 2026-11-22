@@ -3,9 +3,21 @@
  "groups": {
   "pair": "Made for Sadie Jane",
   "picks": "Claude's candidates",
-  "holiday": "Holiday"
+  "holiday": "Holiday",
+  "yours": "Your adds"
  },
  "mats": [
+  {
+   "group": "picks",
+   "name": "Petalwing",
+   "brand": "Virora Mahjong",
+   "fym": "www.viroramahjong.com/petalwing",
+   "why": "pink + denim, birds and florals",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/colorcards/sadie-jane/mats/virora-mahjong-petalwing.jpg",
+   "lowres": true
+  },
   {
    "group": "pair",
    "name": "Serendipity",
@@ -22,28 +34,40 @@
     1026,
     1054
    ],
-   "box_note": "Tiffany review note Nov 21 night: reframed"
+   "box_note": "Tiffany review note Nov 21 night: reframed",
+   "her_note": "you need to reframe the mat in this shot because racks cover up the blush part.  move the mat down  so you can see blush portion in upper left corner"
   },
   {
    "group": "picks",
-   "name": "Petalwing",
-   "brand": "Virora Mahjong",
-   "fym": "www.viroramahjong.com/petalwing",
-   "why": "pink + denim, birds and florals",
+   "name": "Gigi (Canvas Art)",
+   "brand": "Betty June & Jeannette",
+   "fym": "www.etsy.com/listing/4571558388/the-gigi-katelyn-bruhn-and-bjj-collab",
+   "why": "blush + pale blue wash",
    "retired": false,
    "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/virora-mahjong-petalwing.jpg",
+   "img": "assets/colorcards/sadie-jane/mats/betty-june-and-jeannette-gigi-canvas-art.jpg",
    "lowres": true
   },
   {
    "group": "picks",
-   "name": "Julia (Blush)",
-   "brand": "Betty June & Jeannette",
-   "fym": "www.etsy.com/listing/4493549424/blush-mahjong-mat-the-julia-mahjong-mat",
-   "why": "cranes + bamboo on blush: same garden as the faces",
+   "name": "Chantilly",
+   "brand": "Oh My Mahjong",
+   "fym": "www.ohmymahjong.com/chantilly-mat",
+   "why": "pale blue + blush frame",
    "retired": false,
    "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/betty-june-and-jeannette-julia-blush.jpg",
+   "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-chantilly.jpg",
+   "lowres": true
+  },
+  {
+   "group": "picks",
+   "name": "Chinoiserie Citrus Grove",
+   "brand": "Mahj & Vine",
+   "fym": "mahjandvine.com/citrus-grove",
+   "why": "blue chinoiserie + florals",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/colorcards/sadie-jane/mats/mahj-and-vine-chinoiserie-citrus-grove.jpg",
    "lowres": true
   },
   {
@@ -59,6 +83,36 @@
   },
   {
    "group": "picks",
+   "name": "Peri-twinkle (retired)",
+   "brand": "Oh My Mahjong",
+   "fym": "alb:coquette:Peri-twinkle",
+   "why": "retired OMM periwinkle + pink",
+   "retired": true,
+   "holiday": false,
+   "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-peri-twinkle-retired.jpg",
+   "lowres": true
+  },
+  {
+   "group": "picks",
+   "name": "Blue and Pink Floral",
+   "brand": "Amazon",
+   "fym": null,
+   "why": "powder blue center, blush scallop and soft blue, pink and sage flowers: very close to the tile palette",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/newfinds/sadie-jane/amazon-blue-and-pink-floral-big.jpg",
+   "box": [
+    58,
+    290,
+    1120,
+    1390
+   ],
+   "partner": false,
+   "store_url": "https://www.amazon.com/dp/B0H8HDRX87",
+   "found": "Etsy/Amazon discovery Nov 21"
+  },
+  {
+   "group": "picks",
    "name": "Vivara",
    "brand": "Oh My Mahjong",
    "fym": "www.ohmymahjong.com/vivara-mat-w-tube",
@@ -66,6 +120,17 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-vivara.jpg",
+   "lowres": true
+  },
+  {
+   "group": "picks",
+   "name": "Julia (Blush)",
+   "brand": "Betty June & Jeannette",
+   "fym": "www.etsy.com/listing/4493549424/blush-mahjong-mat-the-julia-mahjong-mat",
+   "why": "cranes + bamboo on blush: same garden as the faces",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/colorcards/sadie-jane/mats/betty-june-and-jeannette-julia-blush.jpg",
    "lowres": true
   },
   {
@@ -103,17 +168,6 @@
   },
   {
    "group": "picks",
-   "name": "Moonlit Crane Premium",
-   "brand": "Mahjong Register",
-   "fym": "mahjongregister.com/peony-sociale-premium-mahjong-mat-33-copy",
-   "why": "cranes, denim + white",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/mahjong-register-moonlit-crane-premium.jpg",
-   "lowres": true
-  },
-  {
-   "group": "picks",
    "name": "Grandmillennial",
    "brand": "Bam! Let's Mahjong",
    "fym": "www.bamletsmahjong.com/grandmillennial-mahjong-mat",
@@ -121,28 +175,6 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/bam-let-s-mahjong-grandmillennial.jpg",
-   "lowres": true
-  },
-  {
-   "group": "picks",
-   "name": "Gigi (Canvas Art)",
-   "brand": "Betty June & Jeannette",
-   "fym": "www.etsy.com/listing/4571558388/the-gigi-katelyn-bruhn-and-bjj-collab",
-   "why": "blush + pale blue wash",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/betty-june-and-jeannette-gigi-canvas-art.jpg",
-   "lowres": true
-  },
-  {
-   "group": "picks",
-   "name": "Chantilly",
-   "brand": "Oh My Mahjong",
-   "fym": "www.ohmymahjong.com/chantilly-mat",
-   "why": "pale blue + blush frame",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-chantilly.jpg",
    "lowres": true
   },
   {
@@ -192,36 +224,26 @@
   },
   {
    "group": "picks",
-   "name": "The Pink Classic Neoprene",
-   "brand": "Bam Bird Boutique",
-   "fym": "www.bambirdboutique.com/classic-neoprene-mahjong-mat-copy",
-   "why": "blush solid",
+   "name": "Sunday Sherbert Double-Sided Mahjong Mat – Leatherette 31.5\"",
+   "brand": "Mahjong Register",
+   "fym": null,
+   "img": "assets/albums/catalog-new/mahjong-register--sunday-sherbert-double-sided-mahjong-mat-leatherette-31-5.jpg",
+   "why": "blush center with a denim-and-coral reverse: both tile colours, double-sided",
    "retired": false,
+   "partner": true,
+   "link": "https://mahjongregister.com/products/sunday-sherbert-double-sided-leatherette-mahjong-mat",
+   "catalog_new": true,
    "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/bam-bird-boutique-the-pink-classic-neoprene.jpg",
-   "lowres": true
-  },
-  {
-   "group": "picks",
-   "name": "Vegan Leather – Dusty Rose",
-   "brand": "Peace Love Mahjong",
-   "fym": "peacelovemahjong.com/leather-mat-with-mat-tube?v=67801473745188",
-   "why": "dusty rose solid",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/peace-love-mahjong-vegan-leather-dusty-rose.jpg",
-   "lowres": true
-  },
-  {
-   "group": "picks",
-   "name": "Rose Water Dots and Stripes",
-   "brand": "Let's Be Besties",
-   "fym": "letsbebesties.com/rose-water-dots-and-stripes-mahjong-mat",
-   "why": "blush with green + blue line",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/let-s-be-besties-rose-water-dots-and-stripes.jpg",
-   "lowres": true
+   "lowres": false,
+   "short": "Sunday Sherbert",
+   "box": [
+    10,
+    0,
+    640,
+    648
+   ],
+   "box_note": "Tiffany review note Nov 21 night: reframed",
+   "her_note": "This photo has a hand in it.  You've got to be kidding me."
   },
   {
    "group": "picks",
@@ -247,13 +269,130 @@
   },
   {
    "group": "picks",
-   "name": "Darjeeling",
-   "brand": "Oh My Mahjong",
-   "fym": "www.ohmymahjong.com/darjeeling-mat-w-tube",
-   "why": "blue + green chinoiserie",
+   "name": "Peony Reverie",
+   "brand": "Mahjong by SI",
+   "fym": "www.mahjongbysi.com/peony-salon-reverie-mahjong-mat",
+   "why": "periwinkle line-drawn peonies: the tiles' peony flower and denim blue",
    "retired": false,
    "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-darjeeling.jpg",
+   "img": "assets/albums/catalog-new/mahjong-by-si-peony-salon-reverie.jpg",
+   "partner": true
+  },
+  {
+   "group": "picks",
+   "name": "The Afternoon Tea",
+   "brand": "Maison Mahj",
+   "fym": "maisonmahj.com/the-afternoon-tea-mat",
+   "why": "blush with denim-blue stripes and line drawings: both tile colours",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/colorcards/sadie-jane/mats/maison-mahj-the-afternoon-tea-full.jpg",
+   "lowres": false,
+   "box": [
+    92,
+    108,
+    1022,
+    1064
+   ],
+   "box_note": "Tiffany review note Nov 21 night: reframed",
+   "her_note": "Photoshop hack job on the edge of this mat.  And mat should extend the frame"
+  },
+  {
+   "group": "picks",
+   "name": "Peony Keepsake",
+   "brand": "Mahjong by SI",
+   "fym": "www.mahjongbysi.com/peony-salon-keepsake-mahjong-mat",
+   "why": "white ground with blue line peonies: lets the blush backs stand out",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/catalog-new/mahjong-by-si-peony-salon-keepsake.jpg",
+   "partner": true,
+   "box": [
+    80,
+    72,
+    1110,
+    1130
+   ],
+   "box_note": "Tiffany review note Nov 21 night: reframed",
+   "her_note": "Mat has a white border, must be move to the edge so it takes up the whole space.  I shouldn't have to tell you this."
+  },
+  {
+   "group": "picks",
+   "name": "Blue and Pink Chinoiserie Trellis",
+   "brand": "CraftinMy",
+   "fym": null,
+   "why": "powder blue border, pink peonies and blue-and-white jars around a quiet trellis center",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/newfinds/sadie-jane/etsy-craftinmy-blue-pink-chinoiserie-big.jpg",
+   "box": [
+    222,
+    286,
+    1350,
+    1382
+   ],
+   "partner": false,
+   "store_url": "https://www.etsy.com/listing/4610389308",
+   "found": "Etsy/Amazon discovery Nov 21"
+  },
+  {
+   "group": "picks",
+   "name": "Pink Blue Bow Floral",
+   "brand": "Amazon",
+   "fym": null,
+   "why": "blush center with pink bows on blue and green florals",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/newfinds/sadie-jane/amazon-pink-blue-bow-floral-big.jpg",
+   "box": [
+    44,
+    278,
+    871,
+    1070
+   ],
+   "partner": false,
+   "store_url": "https://www.amazon.com/dp/B0H49Q8KMS",
+   "found": "Etsy/Amazon discovery Nov 21"
+  },
+  {
+   "group": "picks",
+   "name": "Pink Hydrangea Preppy Floral",
+   "brand": "MahjAuraStudio",
+   "fym": null,
+   "why": "pink hydrangeas with blue and green: the bolder option",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/newfinds/sadie-jane/etsy-mahjaura-pink-hydrangea-big.jpg",
+   "box": [
+    286,
+    270,
+    1413,
+    1286
+   ],
+   "partner": false,
+   "store_url": "https://www.etsy.com/listing/4587877778",
+   "found": "Etsy/Amazon discovery Nov 21"
+  },
+  {
+   "group": "picks",
+   "name": "Vegan Leather – Dusty Rose",
+   "brand": "Peace Love Mahjong",
+   "fym": "peacelovemahjong.com/leather-mat-with-mat-tube?v=67801473745188",
+   "why": "dusty rose solid",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/colorcards/sadie-jane/mats/peace-love-mahjong-vegan-leather-dusty-rose.jpg",
+   "lowres": true
+  },
+  {
+   "group": "picks",
+   "name": "Rose Water Dots and Stripes",
+   "brand": "Let's Be Besties",
+   "fym": "letsbebesties.com/rose-water-dots-and-stripes-mahjong-mat",
+   "why": "blush with green + blue line",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/colorcards/sadie-jane/mats/let-s-be-besties-rose-water-dots-and-stripes.jpg",
    "lowres": true
   },
   {
@@ -269,17 +408,6 @@
   },
   {
    "group": "picks",
-   "name": "Chinoiserie Citrus Grove",
-   "brand": "Mahj & Vine",
-   "fym": "mahjandvine.com/citrus-grove",
-   "why": "blue chinoiserie + florals",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/mahj-and-vine-chinoiserie-citrus-grove.jpg",
-   "lowres": true
-  },
-  {
-   "group": "picks",
    "name": "Birdie Pink (retired)",
    "brand": "Oh My Mahjong",
    "fym": "alb:amara:Birdie Pink",
@@ -291,14 +419,15 @@
   },
   {
    "group": "picks",
-   "name": "Peri-twinkle (retired)",
-   "brand": "Oh My Mahjong",
-   "fym": "alb:coquette:Peri-twinkle",
-   "why": "retired OMM periwinkle + pink",
-   "retired": true,
+   "name": "The Pink Classic Neoprene",
+   "brand": "Bam Bird Boutique",
+   "fym": "www.bambirdboutique.com/classic-neoprene-mahjong-mat-copy",
+   "why": "blush solid",
+   "retired": false,
    "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/oh-my-mahjong-peri-twinkle-retired.jpg",
-   "lowres": true
+   "img": "assets/colorcards/sadie-jane/mats/bam-bird-boutique-the-pink-classic-neoprene.jpg",
+   "lowres": true,
+   "her_note": "Very tonal, can be in but it's not this early in the album"
   },
   {
    "group": "holiday",
@@ -334,28 +463,6 @@
    "img": "assets/colorcards/sadie-jane/mats/waiting-on-martha-vintage-twinkle-double-sided.jpg",
    "lowres": true,
    "short": "Vintage Twinkle"
-  },
-  {
-   "group": "picks",
-   "name": "Sunday Sherbert Double-Sided Mahjong Mat – Leatherette 31.5\"",
-   "brand": "Mahjong Register",
-   "fym": null,
-   "img": "assets/albums/catalog-new/mahjong-register--sunday-sherbert-double-sided-mahjong-mat-leatherette-31-5.jpg",
-   "why": "blush center with a denim-and-coral reverse: both tile colours, double-sided",
-   "retired": false,
-   "partner": true,
-   "link": "https://mahjongregister.com/products/sunday-sherbert-double-sided-leatherette-mahjong-mat",
-   "catalog_new": true,
-   "holiday": false,
-   "lowres": false,
-   "short": "Sunday Sherbert",
-   "box": [
-    10,
-    0,
-    640,
-    648
-   ],
-   "box_note": "Tiffany review note Nov 21 night: reframed"
   },
   {
    "group": "holiday",
@@ -425,138 +532,273 @@
    "lowres": true
   },
   {
-   "group": "picks",
-   "name": "The Afternoon Tea",
-   "brand": "Maison Mahj",
-   "fym": "maisonmahj.com/the-afternoon-tea-mat",
-   "why": "blush with denim-blue stripes and line drawings: both tile colours",
+   "group": "yours",
+   "name": "The Kerry",
+   "brand": "Betty June & Jeannette",
+   "img": "assets/albums/sadie-jane/adds/betty-june-and-jeannette-the-kerry.jpg",
+   "why": "Your add from the catalog search (round 1).",
    "retired": false,
+   "fym": "www.etsy.com/listing/4493549326/the-kerry-mahjong-mat-watercolor-pink",
+   "lowres": true,
    "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/maison-mahj-the-afternoon-tea-full.jpg",
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Anastasia",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-anastasia.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/anastasia-mat-in-tube",
    "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Jade",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-jade.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/jade-mat-in-tube",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Chinoiserie Denim",
+   "brand": "Tigre de Tartan",
+   "img": "assets/albums/sadie-jane/adds/tigre-de-tartan-chinoiserie-denim.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "tigredetartan.com/mahjong-mat-chinoiserie-denim",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Citrus Songbird (retired)",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-citrus-songbird-retired.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "alb:amara:Citrus Songbird",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Parrotia",
+   "brand": "Virora Mahjong",
+   "img": "assets/albums/sadie-jane/adds/virora-mahjong-parrotia-full.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "www.viroramahjong.com/parrotia",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true,
    "box": [
-    92,
-    108,
-    1022,
-    1064
-   ],
-   "box_note": "Tiffany review note Nov 21 night: reframed"
+    32,
+    480,
+    992,
+    1440
+   ]
   },
   {
-   "group": "picks",
-   "name": "Peony Reverie",
-   "brand": "Mahjong by SI",
-   "fym": "www.mahjongbysi.com/peony-salon-reverie-mahjong-mat",
-   "why": "periwinkle line-drawn peonies: the tiles' peony flower and denim blue",
+   "group": "yours",
+   "name": "Lotus Cove",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-lotus-cove-full.jpg",
+   "why": "Your add from the catalog search (round 1).",
    "retired": false,
+   "fym": "www.ohmymahjong.com/lotus-cove-mat-in-tube",
+   "lowres": true,
    "holiday": false,
-   "img": "assets/albums/catalog-new/mahjong-by-si-peony-salon-reverie.jpg",
-   "partner": true
-  },
-  {
-   "group": "picks",
-   "name": "Peony Keepsake",
-   "brand": "Mahjong by SI",
-   "fym": "www.mahjongbysi.com/peony-salon-keepsake-mahjong-mat",
-   "why": "white ground with blue line peonies: lets the blush backs stand out",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/albums/catalog-new/mahjong-by-si-peony-salon-keepsake.jpg",
-   "partner": true,
+   "her_pick": true,
    "box": [
-    80,
-    72,
-    1110,
-    1130
-   ],
-   "box_note": "Tiffany review note Nov 21 night: reframed"
+    181,
+    480,
+    2057,
+    2316
+   ]
   },
   {
-   "group": "picks",
-   "name": "Porch Blooms",
-   "brand": "Mahjong by SI",
-   "fym": "www.mahjongbysi.com/porch-blooms-mahjong-mat",
-   "why": "blue hydrangeas on a blue stripe: the denim stripe plus a floral",
+   "group": "yours",
+   "name": "Nichole",
+   "brand": "Betty June & Jeannette",
+   "img": "assets/albums/sadie-jane/adds/betty-june-and-jeannette-nichole.jpg",
+   "why": "Your add from the catalog search (round 1).",
    "retired": false,
+   "fym": "www.etsy.com/listing/4537970849/the-nichole-mahjong-mat",
+   "lowres": true,
    "holiday": false,
-   "img": "assets/albums/catalog-new/mahjong-by-si-porch-blooms.jpg",
-   "partner": true
+   "her_pick": true
   },
   {
-   "group": "picks",
-   "name": "Blue and Pink Floral",
-   "brand": "Amazon",
+   "group": "yours",
+   "name": "Livy",
+   "brand": "Betty June & Jeannette",
+   "img": "assets/albums/sadie-jane/adds/betty-june-and-jeannette-livy-full.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "www.etsy.com/listing/4544550775/the-livy-mahjong-mat",
+   "holiday": false,
+   "her_pick": true,
+   "box": [
+    64,
+    95,
+    1270,
+    1429
+   ]
+  },
+  {
+   "group": "yours",
+   "name": "Grace Watercolor",
+   "brand": "Betty June & Jeannette",
+   "img": "assets/albums/sadie-jane/adds/betty-june-and-jeannette-grace-watercolor-full.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "www.etsy.com/listing/4588582719/grace-watercolor-version",
+   "holiday": false,
+   "her_pick": true,
+   "box": [
+    48,
+    667,
+    921,
+    1540
+   ]
+  },
+  {
+   "group": "yours",
+   "name": "Camellia (retired)",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-camellia-retired.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "alb:amara:Camellia",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Garden Party (retired)",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-garden-party-retired.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "alb:limoncello:Garden Party",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Heron",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-heron.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/heron-mat-in-tube",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Imperial (retired)",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-imperial-retired.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "alb:amara:Imperial",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "La Fete (retired)",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-la-fete-retired.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "alb:la-fete:La Fete",
+   "lowres": false,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "holiday",
+   "name": "Merriment",
+   "brand": "Oh My Mahjong",
+   "img": "assets/albums/sadie-jane/adds/oh-my-mahjong-merriment-full.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "www.ohmymahjong.com/merriment-mat-in-tube",
+   "holiday": true,
+   "her_pick": true,
+   "box": [
+    216,
+    1035,
+    2220,
+    2715
+   ]
+  },
+  {
+   "group": "yours",
+   "name": "Blue Willow",
+   "brand": "Amanda Toppe",
+   "img": "assets/albums/sadie-jane/adds/amanda-toppe-blue-willow.jpg",
+   "why": "Your add from the catalog search (round 1).",
+   "retired": false,
+   "fym": "alb:coquette:Blue Willow",
+   "lowres": true,
+   "holiday": false,
+   "her_pick": true
+  },
+  {
+   "group": "yours",
+   "name": "Pink & Blue Grandmillennial",
+   "brand": "Mahj & Moon",
    "fym": null,
-   "why": "powder blue center, blush scallop and soft blue, pink and sage flowers: very close to the tile palette",
+   "why": "your Etsy link (review note)",
    "retired": false,
    "holiday": false,
-   "img": "assets/albums/newfinds/sadie-jane/amazon-blue-and-pink-floral-big.jpg",
+   "img": "assets/albums/sadie-jane/adds/mahj-and-moon-pink-blue-grandmillennial.jpg",
    "box": [
-    58,
-    290,
-    1120,
-    1390
+    143,
+    143,
+    1445,
+    1445
    ],
    "partner": false,
-   "store_url": "https://www.amazon.com/dp/B0H8HDRX87",
-   "found": "Etsy/Amazon discovery Nov 21"
+   "store_url": "https://www.etsy.com/listing/4527255793",
+   "her_add": true
   },
   {
-   "group": "picks",
-   "name": "Blue and Pink Chinoiserie Trellis",
-   "brand": "CraftinMy",
+   "group": "yours",
+   "name": "Chinoiserie Pastel Floral",
+   "brand": "Mahj & Moon",
    "fym": null,
-   "why": "powder blue border, pink peonies and blue-and-white jars around a quiet trellis center",
+   "why": "your Etsy links (review note); also sold as Luxury Faux Leather, listing 4599338148",
    "retired": false,
    "holiday": false,
-   "img": "assets/albums/newfinds/sadie-jane/etsy-craftinmy-blue-pink-chinoiserie-big.jpg",
+   "img": "assets/albums/sadie-jane/adds/mahj-and-moon-chinoiserie-pastel-floral.jpg",
    "box": [
-    222,
-    286,
-    1350,
-    1382
-   ],
-   "partner": false,
-   "store_url": "https://www.etsy.com/listing/4610389308",
-   "found": "Etsy/Amazon discovery Nov 21"
-  },
-  {
-   "group": "picks",
-   "name": "Pink Blue Bow Floral",
-   "brand": "Amazon",
-   "fym": null,
-   "why": "blush center with pink bows on blue and green florals",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/albums/newfinds/sadie-jane/amazon-pink-blue-bow-floral-big.jpg",
-   "box": [
-    44,
-    278,
-    871,
-    1070
-   ],
-   "partner": false,
-   "store_url": "https://www.amazon.com/dp/B0H49Q8KMS",
-   "found": "Etsy/Amazon discovery Nov 21"
-  },
-  {
-   "group": "picks",
-   "name": "Pink Hydrangea Preppy Floral",
-   "brand": "MahjAuraStudio",
-   "fym": null,
-   "why": "pink hydrangeas with blue and green: the bolder option",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/albums/newfinds/sadie-jane/etsy-mahjaura-pink-hydrangea-big.jpg",
-   "box": [
-    286,
-    270,
+    159,
+    238,
     1413,
-    1286
+    1461
    ],
    "partner": false,
-   "store_url": "https://www.etsy.com/listing/4587877778",
-   "found": "Etsy/Amazon discovery Nov 21"
+   "store_url": "https://www.etsy.com/listing/4497703295",
+   "her_add": true
   }
  ]
 }
