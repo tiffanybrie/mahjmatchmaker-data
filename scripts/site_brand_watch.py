@@ -5,6 +5,9 @@ partners only (no non-partners, no YMI), product news only. Output: site/livepat
 import datetime, json, html, os, re, sys
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + '/'
 d = json.load(open(R + 'config/brand-watch-curated.json')); e = html.escape
+# Nov 21: the week label is always the current Sun-Sat week (it sat on 'Nov 8 - Nov 14' for a week in the file)
+_t = datetime.date.today(); _sun = _t - datetime.timedelta(days=(_t.weekday() + 1) % 7); _sat = _sun + datetime.timedelta(days=6)
+d['week_label'] = f"Week of Sun {_sun:%b} {_sun.day} \u2013 Sat {_sat:%b} {_sat.day}"
 # CUSTOMER-FACING WORDS ONLY (Tiffany Nov 11 11:33am: "Pushing Holly Berry" came from a brand email; that language is for us).
 # `what` is what shoppers read: plain facts. Our notes go in `action`. The build refuses internal words.
 _INTERNAL = re.compile(r"\bpush(ing|es|ed)?\b|affiliate|commission|\bdraft|waiting|her yes|tiffany|claude|codes post|album day|\bteaser\b|sneak peek|\bFYM\b|sca_ref|\bwe\b|\bour\b|told us|per (their|the) email|buyable|\bTBD\b", re.I)
@@ -134,7 +137,8 @@ def line(x):
     btn = ''
     if lk:
         u, code = lk[0], lk[1]; _lab = lk[2] if len(lk) > 2 else 'Shop'
-        btn = f'<a class="bw-btn" href="{e(u)}" target="_blank" rel="noopener">{_lab}{" · use code MAHJMATCH" if code and 'tigre' not in x['brand'].lower() else ""}</a>' + (save_line(x['brand']) if code else '')
+        btn = f'<a class="bw-btn" href="{e(u)}" target="_blank" rel="noopener">{_lab}{" · use code MAHJMATCH" if code and 'tigre' not in x['brand'].lower() else ""}</a>' + (save_line(x['brand']) if code and not x.get('save_note') else '')
+        if x.get('save_note'): btn += '<div class="bw-save">' + e(x['save_note']).replace('MAHJMATCH', '<b>MAHJMATCH</b>') + '</div>'   # Nov 21: a hand-written note under the button (e.g. 'Whether MAHJMATCH works on top of this sale is not confirmed yet.')
     st = stamp(x.get('found'))
     return img, (f'<div class="bw-item">' + (f'<div class="bw-stamp">Added {e(st)}</div>' if st else '') + f'<div class="bw-what">' + ('<span class="bw-kind bw-k-new">New</span>' if not RESTOCK(x) and x.get('_sec') != 'sales' else '<span class="bw-kind bw-k-re">Restock</span>' if RESTOCK(x) else '') + f'{e(re.sub(r"^NEW:\s*", "", x["what"]))}</div>' + (f'<div class="bw-when">When: {e(when)}</div>' if when else '') + ''.join(f'<div class="bw-hist">Earlier{(" · " + e(stamp(h.get("found")))) if h.get("found") else ""}: {e(h["what"])}</div>' for h in (x.get('history') or [])) + btn + '</div>')
 # NEWS RANK (Tiffany Nov 11 10:29am): a tile set (travel too: big ticket) > new racks > rack restocks > mat restocks.
