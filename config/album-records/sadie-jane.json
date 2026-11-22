@@ -2627,7 +2627,10 @@
     "hits": "3 fit by sight: Peony Reverie (periwinkle line peonies), Peony Keepsake (white with blue line peonies), Porch Blooms (blue hydrangeas on blue stripe). Not in Find Your Mat-ch yet."
    }
   ],
-  "new_finds": [
+  "new_finds": [],
+  "misses_added": [],
+  "next": "3 Mahjong by SI mats are cards (added_after_review) and go into Find Your Mat-ch 1.22.11",
+  "added_as_cards": [
    {
     "mat": "Peony Reverie",
     "brand": "Mahjong by SI",
@@ -2643,9 +2646,7 @@
     "brand": "Mahjong by SI",
     "handle": "porch-blooms-mahjong-mat"
    }
-  ],
-  "misses_added": [],
-  "next": "bring the 3 into Find Your Mat-ch (SI run of 10), then add as cards with added_after_review"
+  ]
  },
  "research": {
   "tnt": "2026-11-21: no posts about Sadie Jane or Serendipity (set unreleased); re-scan after Nov 25",
