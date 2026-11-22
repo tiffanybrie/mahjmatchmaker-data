@@ -1,0 +1,12 @@
+{
+ "_about": "Album big-catalog rule (Tiffany Nov 7-8: best few in, rest under 'More from <brand>'; Bougie only her picks). max_per_album is Claude's number (4) until she gives hers (asked Nov 21 10:55pm). Holiday-group mats are not counted. album_gate [5b].",
+ "max_per_album": 4,
+ "brands": [
+  "Let's Be Besties",
+  "YOLO Mahjong",
+  "Bougie Mahjong"
+ ],
+ "her_picks_only": [
+  "Bougie Mahjong"
+ ]
+}

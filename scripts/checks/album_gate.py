@@ -135,6 +135,15 @@ def check(s):
     proof['leftout'] = len(lst or [])
     # [6] holiday
     spec = J(rec.get('spec', ''), {}) or {}
+    # [5b] big catalogs (Tiffany Nov 7-8; broken on Sadie Jane Nov 21 with 8 Let's Be Besties + 2 unpicked Bougie): only the best few
+    # in the album, the rest in the left-out list with more_from; Bougie only from her own picks (record her_picks_ok: [names]).
+    _bc = J('config/album-big-catalogs.json', {}) or {}
+    _max, _ok = _bc.get('max_per_album', 4), set(rec.get('her_picks_ok') or [])
+    for _b in _bc.get('brands', ["Let's Be Besties", 'YOLO Mahjong', 'Bougie Mahjong']):
+        _n = [m['name'] for m in spec.get('mats', []) if m.get('brand') == _b and m.get('group') != 'holiday' and not m.get('holiday') and m['name'] not in _ok]
+        if len(_n) > _max: bad.append(f"[5b] {len(_n)} {_b} mats in the album (max {_max}; her picks in record her_picks_ok don't count): move the weakest to the left-out list with more_from: " + ', '.join(_n))
+    _bg = [m['name'] for m in spec.get('mats', []) if m.get('brand') in _bc.get('her_picks_only', ['Bougie Mahjong']) and m['name'] not in _ok]
+    if _bg: bad.append('[5b] Bougie Mahjong only through her picks; not on record her_picks_ok: ' + ', '.join(_bg))
     nh = sum(1 for m in spec.get('mats', []) if m.get('holiday'))
     hol = rec.get('holiday') or {}
     if not nh and not (hol.get('considered') and hol.get('note')): bad.append('[6] no holiday section and no record that holiday mats were considered')
