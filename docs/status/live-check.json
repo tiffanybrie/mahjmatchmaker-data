@@ -1,9 +1,11 @@
 {
- "at": "2026-11-20T21:31:31",
- "date": "2026-11-20",
- "pages": 41,
+ "at": "2026-11-22T09:27:06",
+ "date": "2026-11-22",
+ "pages": 42,
  "hub_brands": 41,
- "fails": [],
+ "fails": [
+  "/averill-mahjong-discount-code: live brand code page with NO entry in config/code-truth.json (add the brand, or page_brand if the slug differs)"
+ ],
  "warns": [],
  "unconfirmed": [
   "I Love Mahj: MAHJMATCH 2-week free trial = page only, unconfirmed (page only (hub + brand page); Gmail has only the Jan 2026 partner-program application, no )"
