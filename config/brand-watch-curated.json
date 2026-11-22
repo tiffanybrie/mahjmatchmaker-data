@@ -1744,7 +1744,7 @@
    "day": "Fri 11/27",
    "time": "Fri 11/27 to Mon 11/30",
    "brand": "My Fair Mahjong",
-   "what": "My Fair Holiday: 20% off sitewide.",
+   "what": "Black Friday: 20% off sitewide.",
    "tag": "sale",
    "bf": true,
    "approved": true,
@@ -1758,7 +1758,8 @@
    "source_kind": "email",
    "affiliate_terms": "My Fair Mahjong affiliate email Nov 20: affiliate codes do NOT stack with the sale; commission is still earned through the affiliate link.",
    "partner": true,
-   "found": "2026-11-21T13:40"
+   "found": "2026-11-21T13:40",
+   "save_note": "MAHJMATCH can't be added on top of the sale (their affiliate email, Fri 11/20). Shop through our link."
   },
   {
    "date": "2026-11-23",
@@ -1769,7 +1770,7 @@
    "tag": "sale",
    "bf": true,
    "approved": true,
-   "hidden": false,
+   "hidden": true,
    "urgency": "NOW",
    "ends": "2026-11-25",
    "buy": "https://mahjmood.com",
@@ -1778,7 +1779,8 @@
    "source_kind": "email",
    "affiliate_terms": "Mahj Mood affiliate email Nov 20: our code stacks on each day's deal and commission is paid as normal.",
    "partner": true,
-   "found": "2026-11-21T13:40"
+   "found": "2026-11-21T13:40",
+   "action": "HOLD until Mahj Mood posts it publicly (their Sun 11/22 carousel; Duet handoff Nov 21). Unhide then."
   },
   {
    "date": "2026-11-12",
@@ -1822,8 +1824,9 @@
    "partner": true,
    "what": "Black Friday sale on tiles, mats and racks starts Mon 11/16.",
    "ends": "",
-   "action": "Monday codes post 11/16",
-   "bf": true
+   "action": "stale Nov 21: replaced by the live sale row",
+   "bf": true,
+   "hidden": true
   },
   {
    "brand": "Noli June",
@@ -1927,10 +1930,11 @@
    "source": "affiliate email Tue 11/17",
    "source_kind": "email",
    "approved": true,
-   "hidden": false,
+   "hidden": true,
    "bf": true,
    "nocode": true,
-   "affiliate_terms": "Mac+Miller affiliate email Nov 17: codes PAUSED during BF; affiliate LINKS stay active and earn commission; codes return Tue Dec 1."
+   "affiliate_terms": "Mac+Miller affiliate email Nov 17: codes PAUSED during BF; affiliate LINKS stay active and earn commission; codes return Tue Dec 1.",
+   "action": "dup of the Duet row (kept: it has the bundle detail + link)"
   },
   {
    "date": "2026-11-27",
