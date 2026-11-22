@@ -1640,3 +1640,5 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - Nov 22 8:13am (Main): Tiffany: her usage limit resets fully at 10am and she has a lot left: do the usage-heavy tasks NOW (covers 'bigger stretches only when she says she has spare usage' for the big-catalog brands, until 10am today).
 
 - Nov 22 8:29am (Main): Tiffany: move the 15 MacBook scheduled tasks to Sonnet (model only; try the sales check first; stop if it fails). TRIED 8:45am: the server refused the sales check with 'model cannot be patched directly on a device-bound routine; set the model inside the signed session_request edit' (no approval prompt shown). Stopped after one, nothing changed. Recorded on hand-off 2026-11-22-all-scheduled-tasks-on-sonnet (status blocked). A chat cannot change the model of a task that requires her computer; it is set in each task's own settings in the desktop app.
+
+- 2026-11-22 8:41/8:46am Tiffany: recreate all 15 MacBook scheduled tasks on Sonnet (copy, confirm model, switch old off, never delete); approved switching off olds. DONE 13:58Z, ID pairs on HQ handoffs 2026-11-22-all-scheduled-tasks-on-sonnet.
