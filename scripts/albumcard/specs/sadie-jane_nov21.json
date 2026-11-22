@@ -140,17 +140,6 @@
   },
   {
    "group": "picks",
-   "name": "Porcelain Crane Garden",
-   "brand": "Bougie Mahjong",
-   "fym": "bougiemahjong.com/porcelain-crane-garden-mahjong-mat",
-   "why": "cranes, blue chinoiserie",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/bougie-mahjong-porcelain-crane-garden.jpg",
-   "lowres": true
-  },
-  {
-   "group": "picks",
    "name": "Elysium",
    "brand": "Oh My Mahjong",
    "fym": "www.ohmymahjong.com/elysium-mat-in-tube",
@@ -284,28 +273,6 @@
   },
   {
    "group": "picks",
-   "name": "Blue Willow Chinoiserie",
-   "brand": "Let's Be Besties",
-   "fym": "letsbebesties.com/blue-willow-chinoiserie-mahjong-mat",
-   "why": "blue willow",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/let-s-be-besties-blue-willow-chinoiserie.jpg",
-   "lowres": true
-  },
-  {
-   "group": "picks",
-   "name": "Paris Conservatory",
-   "brand": "Bougie Mahjong",
-   "fym": "bougiemahjong.com/paris-conservatory-mahjong-mat",
-   "why": "pink Paris + denim frame",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/bougie-mahjong-paris-conservatory.jpg",
-   "lowres": true
-  },
-  {
-   "group": "picks",
    "name": "Birdie Pink (retired)",
    "brand": "Oh My Mahjong",
    "fym": "alb:amara:Birdie Pink",
@@ -375,21 +342,6 @@
    "holiday": false,
    "lowres": false,
    "short": "Sunday Sherbert"
-  },
-  {
-   "group": "picks",
-   "name": "Hydrangea Haven Mahjong Mat",
-   "brand": "Let's Be Besties",
-   "fym": null,
-   "img": "assets/albums/catalog-new/lets-be-besties--hydrangea-haven-mahjong-mat.jpg",
-   "why": "pale blue and pink hydrangeas, soft like the faces",
-   "retired": false,
-   "partner": true,
-   "link": "https://letsbebesties.com/products/hydrangea-haven-neoprene-mahjong-mat",
-   "catalog_new": true,
-   "holiday": false,
-   "lowres": false,
-   "short": "Hydrangea Haven"
   },
   {
    "group": "holiday",
@@ -468,28 +420,6 @@
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/maison-mahj-the-afternoon-tea-full.jpg",
    "lowres": false
-  },
-  {
-   "group": "picks",
-   "name": "The Gilded Lotus",
-   "brand": "Let's Be Besties",
-   "fym": "letsbebesties.com/lillian-claire-designs-artist-mahjong-mat",
-   "why": "lotus and lily garden, blush blooms on blue",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/let-s-be-besties-the-gilded-lotus.jpg",
-   "lowres": true
-  },
-  {
-   "group": "picks",
-   "name": "Caroline",
-   "brand": "Let's Be Besties",
-   "fym": "letsbebesties.com/caroline-lillian-claire-designs-artist-mahjong-mat",
-   "why": "blush damask on white, soft like the faces",
-   "retired": false,
-   "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/let-s-be-besties-caroline.jpg",
-   "lowres": true
   },
   {
    "group": "picks",
