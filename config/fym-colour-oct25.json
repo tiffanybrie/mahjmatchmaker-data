@@ -80611,6 +80611,52 @@
 "tone": null,
 "src": "photo",
 "back": "#141414"
+},
+"middle-main-mahjong-summit-to-sea": {
+"sw": [
+[
+"#97ccdc",
+0.699
+],
+[
+"#6ea2b7",
+0.108
+],
+[
+"#d1b3c4",
+0.089
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#aed8e4"
+},
+"middle-main-mahjong-clearwater-dockside": {
+"sw": [
+[
+"#c2cfe5",
+0.378
+],
+[
+"#95c2d9",
+0.293
+],
+[
+"#aab2ce",
+0.157
+],
+[
+"#8ebda8",
+0.07
+],
+[
+"#648baa",
+0.063
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#a8d2eb"
 }
 }
 }
