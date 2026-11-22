@@ -69058,6 +69058,183 @@
 ]
 ],
 "tone": "bright"
+},
+"mahjpit.co/birds-of-a-feather": {
+"sw": [
+[
+"#282822",
+0.282
+],
+[
+"#44473d",
+0.201
+],
+[
+"#553b38",
+0.153
+],
+[
+"#783631",
+0.09
+],
+[
+"#b03f43",
+0.077
+],
+[
+"#7b766b",
+0.077
+],
+[
+"#536148",
+0.07
+],
+[
+"#9d5b5c",
+0.051
+]
+],
+"tone": "muted"
+},
+"mahjpit.co/lamarie-mat": {
+"sw": [
+[
+"#caaea0",
+0.26
+],
+[
+"#736256",
+0.17
+],
+[
+"#a28777",
+0.158
+],
+[
+"#4b3e29",
+0.105
+],
+[
+"#996d37",
+0.095
+],
+[
+"#ce8627",
+0.09
+],
+[
+"#8c3f41",
+0.066
+],
+[
+"#cd3246",
+0.057
+]
+],
+"tone": "muted"
+},
+"mahjpit.co/evergreen-mat": {
+"sw": [
+[
+"#111a19",
+0.159
+],
+[
+"#215047",
+0.149
+],
+[
+"#172a26",
+0.14
+],
+[
+"#25675b",
+0.132
+],
+[
+"#1c3d36",
+0.125
+],
+[
+"#299a86",
+0.123
+],
+[
+"#278070",
+0.103
+],
+[
+"#3eb3a0",
+0.068
+]
+],
+"tone": "muted"
+},
+"brittmillsdesign.com/isla-leatherette-mahjong-mat": {
+"sw": [
+[
+"#f0d9d1",
+0.348
+],
+[
+"#edbda0",
+0.182
+],
+[
+"#edbecd",
+0.148
+],
+[
+"#ea8980",
+0.088
+],
+[
+"#b4a64e",
+0.085
+],
+[
+"#9aabb4",
+0.068
+],
+[
+"#253546",
+0.044
+],
+[
+"#e64747",
+0.036
+]
+],
+"tone": "pastel"
+},
+"yolomahjong.com/mahjong-mat-preppy-pink-floral-mahjong-mat-watercolor-peony-hydrangea-game-mat": {
+"sw": [
+[
+"#fbd8d6",
+0.271
+],
+[
+"#fcf1ea",
+0.238
+],
+[
+"#f9cdcd",
+0.173
+],
+[
+"#f9e4de",
+0.142
+],
+[
+"#f4bdbf",
+0.07
+],
+[
+"#ddcabb",
+0.056
+]
+],
+"tone": "pastel"
 }
 },
 "sets": {
@@ -80003,6 +80180,334 @@
 "tone": null,
 "src": "photo",
 "back": "#fd8d73"
+},
+"bespoke-mahjong-xl-mega-pop-divas-hottie-pink": {
+"sw": [
+[
+"#c8bcca",
+0.288
+],
+[
+"#d92a52",
+0.193
+],
+[
+"#3288d6",
+0.182
+],
+[
+"#d76fa0",
+0.151
+],
+[
+"#b9c52f",
+0.121
+],
+[
+"#4f5248",
+0.065
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#d71257"
+},
+"bespoke-mahjong-xl-mega-springtime-safari-petal-pink": {
+"sw": [
+[
+"#c2bbbc",
+0.411
+],
+[
+"#938d8e",
+0.325
+],
+[
+"#d98d99",
+0.097
+],
+[
+"#44573d",
+0.073
+],
+[
+"#833e4a",
+0.054
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#ec899f"
+},
+"bespoke-mahjong-gray-malin-beach-club-ocean-blue": {
+"sw": [
+[
+"#c4c9ca",
+0.6
+],
+[
+"#b2b88c",
+0.094
+],
+[
+"#ce949d",
+0.09
+],
+[
+"#6c8a9f",
+0.087
+],
+[
+"#568532",
+0.072
+],
+[
+"#cc484f",
+0.057
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#2e6bb5"
+},
+"bespoke-mahjong-gray-malin-beach-club-xl-mega-cabana-blue": {
+"sw": [
+[
+"#cecbc5",
+0.564
+],
+[
+"#d392a1",
+0.125
+],
+[
+"#7b8aa5",
+0.122
+],
+[
+"#9dba85",
+0.1
+],
+[
+"#c84874",
+0.052
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#6583cf"
+},
+"bespoke-mahjong-xl-mega-springtime-safari-bright-white": {
+"sw": [
+[
+"#abced7",
+0.319
+],
+[
+"#dfc4ca",
+0.278
+],
+[
+"#dd96a6",
+0.167
+],
+[
+"#67b88b",
+0.145
+],
+[
+"#eea862",
+0.059
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#d9d9d6"
+},
+"bespoke-mahjong-xl-mega-pop-divas-petal-pink": {
+"sw": [
+[
+"#bbbdc0",
+0.635
+],
+[
+"#a88490",
+0.16
+],
+[
+"#934453",
+0.081
+],
+[
+"#545f55",
+0.057
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#ec899f"
+},
+"bespoke-mahjong-xl-mega-pop-divas-baddie-black": {
+"sw": [
+[
+"#d4c2cc",
+0.518
+],
+[
+"#e68cc0",
+0.231
+],
+[
+"#ebbd5c",
+0.094
+],
+[
+"#29372f",
+0.079
+],
+[
+"#5d8bd8",
+0.05
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#17171a"
+},
+"let-s-mahj-on-let-s-get-wild": {
+"sw": [
+[
+"#221a5d",
+0.309
+],
+[
+"#8e82b3",
+0.247
+],
+[
+"#4e4b8d",
+0.209
+],
+[
+"#251f96",
+0.136
+],
+[
+"#d2c3bb",
+0.071
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#2f2b89"
+},
+"let-s-mahj-on-let-s-stir-things-up": {
+"sw": [
+[
+"#792e06",
+0.427
+],
+[
+"#8d4a1e",
+0.282
+],
+[
+"#b7743e",
+0.198
+],
+[
+"#cbb3aa",
+0.068
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#b08a4a"
+},
+"let-s-mahj-on-let-s-golf-in-celedon-mist": {
+"sw": [
+[
+"#086538",
+0.28
+],
+[
+"#7aba9d",
+0.246
+],
+[
+"#3da276",
+0.181
+],
+[
+"#b4dac9",
+0.168
+],
+[
+"#c4c5c9",
+0.077
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#90c7af"
+},
+"let-s-mahj-on-let-s-golf-in-magnolia-blush": {
+"sw": [
+[
+"#ca8582",
+0.229
+],
+[
+"#be665e",
+0.207
+],
+[
+"#e0afad",
+0.191
+],
+[
+"#9c3f34",
+0.177
+],
+[
+"#d0c4ca",
+0.165
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#e3a7a6"
+},
+"mahj-pit-the-raven-large": {
+"sw": [
+[
+"#0d0f0c",
+0.296
+],
+[
+"#2a2d2a",
+0.214
+],
+[
+"#515148",
+0.214
+],
+[
+"#b4b4b0",
+0.117
+],
+[
+"#868238",
+0.083
+],
+[
+"#66777d",
+0.075
+]
+],
+"tone": null,
+"src": "photo",
+"back": "#141414"
 }
 }
 }

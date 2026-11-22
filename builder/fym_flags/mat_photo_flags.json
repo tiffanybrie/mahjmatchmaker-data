@@ -6223,22 +6223,22 @@
   "note": "2026-11-17 1.23 photo check (looked at): Same mat listed twice; the other listing stays"
  },
  "mahjpit.co/birds-of-a-feather": {
-  "name": "Birds of a Feather Mat",
+  "name": "Birds of a Feather",
   "brand": "Mahj Pit",
-  "flag": "questionable",
-  "note": "2026-11-17 1.23 photo check (looked at): Close-up of the fabric only; you can't see the whole mat"
+  "flag": "ok",
+  "note": "Nov 21 v12210 add (photo check: builder/fym_flags/fym123_photo_check.json)"
  },
  "mahjpit.co/lamarie-mat": {
-  "name": "LaMarie Mat",
+  "name": "LaMarie",
   "brand": "Mahj Pit",
-  "flag": "questionable",
-  "note": "2026-11-17 1.23 photo check (looked at): Close-up of the fabric only; you can't see the whole mat"
+  "flag": "ok",
+  "note": "Nov 21 v12210 add (photo check: builder/fym_flags/fym123_photo_check.json)"
  },
  "mahjpit.co/evergreen-mat": {
-  "name": "Evergreen Mat",
+  "name": "Evergreen",
   "brand": "Mahj Pit",
-  "flag": "questionable",
-  "note": "2026-11-17 1.23 photo check (looked at): Close-up of the fabric only; you can't see the whole mat"
+  "flag": "ok",
+  "note": "Nov 21 v12210 add (photo check: builder/fym_flags/fym123_photo_check.json)"
  },
  "macandmillermahjong.com/heirloom-collection-gilded-ginkgo-classic-mahjong-mat": {
   "name": "Heirloom Collection: Gilded Ginkgo Classic Mahjong Mat",
@@ -7715,5 +7715,17 @@
   "brand": "Let's Be Besties",
   "flag": "ok",
   "note": "Nov 21 v1229 add (photo check: builder/fym_flags/fym123_photo_check.json)"
+ },
+ "brittmillsdesign.com/isla-leatherette-mahjong-mat": {
+  "name": "Isla Leatherette",
+  "brand": "Britt Mills",
+  "flag": "ok",
+  "note": "Nov 21 v12210 add (photo check: builder/fym_flags/fym123_photo_check.json)"
+ },
+ "yolomahjong.com/mahjong-mat-preppy-pink-floral-mahjong-mat-watercolor-peony-hydrangea-game-mat": {
+  "name": "Preppy Pink Floral",
+  "brand": "YOLO Mahjong",
+  "flag": "ok",
+  "note": "Nov 21 v12210 add (photo check: builder/fym_flags/fym123_photo_check.json)"
  }
 }
