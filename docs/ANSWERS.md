@@ -1593,3 +1593,5 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - Nov 21 9:45pm (desk cleanup): FYM small release: Sadie Jane + Serendipity + Averill 4 tile sets DONE: shipped as FYM 1.22.7 (da5a20fd, Sadie Jane tiles + Serendipity) and 1.22.8 (40b7d6fc, Averill 5 tile sets, link only per her 6:35pm); live build 1.22.10 confirmed by the Duet nightly ship log 9:40pm. Averill code switch stays on OVERDUE.
 
 - Nov 21 10:30pm (Main): Brand Watch page re-pasted with the loader (handoff 2026-11-21-brand-watch-noli-june-add done; signed-out read OK). Tiffany asked why a Mahjong Row & Co UpPromote login tab was open: not Main's tab (Main had one Squarespace tab); told her, likely a scheduled sales check.
+
+- Nov 21 9:39pm (Main): Tiffany: 'Go ahead and do the Tile & Tablescapes / Facebook portion and anything else you needed to do for the Sadie Jane album then update it.' Done 10:55pm: T&T + 4 big groups searched (nothing: set unreleased), mat discovery found 3 Mahjong by SI mats (Peony Reverie, Peony Keepsake, Porch Blooms) now cards; review page republished with 46 cards; HQ item updated.
