@@ -1,7 +1,7 @@
 {
-  "version": "1.22.15",
-  "index": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@c6c7d5e02062ce018bf07af03a3e5c0f4c6f4faf/site-app/fym-v122-15/index.html",
+  "version": "1.22.16",
+  "index": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@875eab6911a4a93caab81ac12fe1ec851ef111ba/site-app/fym-v122-16/index.html",
   "base": "https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@ad0675e42242c3abad40cac9f539a265220e26eb/site-app/fym-v72/",
-  "shipped": "2026-11-22T10:26:20-05:00",
+  "shipped": "2026-11-22T13:32:58-05:00",
   "note": "Read by the Find Your Mat-ch page block (since Nov 17). Change index (and base if needed) to ship a new build; both must be pinned jsDelivr URLs (40-char commit) or the page falls back to its pinned build."
 }
