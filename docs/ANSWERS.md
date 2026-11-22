@@ -1591,3 +1591,5 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 
 - Nov 21 9:27pm (Main): Tiffany: 'Read hand-off 2026-11-21-main-chat-is-not-a-change-log now and follow it from your next message on.' Done: rule in CLAUDE.md (MAIN CHAT IS NOT A CHANGE LOG); 3 open asks moved to hq/now ten (sadie-jane-review, origami-neoprene-turn, averill-banner); hand-off set done.
 - Nov 21 9:45pm (desk cleanup): FYM small release: Sadie Jane + Serendipity + Averill 4 tile sets DONE: shipped as FYM 1.22.7 (da5a20fd, Sadie Jane tiles + Serendipity) and 1.22.8 (40b7d6fc, Averill 5 tile sets, link only per her 6:35pm); live build 1.22.10 confirmed by the Duet nightly ship log 9:40pm. Averill code switch stays on OVERDUE.
+
+- Nov 21 10:30pm (Main): Brand Watch page re-pasted with the loader (handoff 2026-11-21-brand-watch-noli-june-add done; signed-out read OK). Tiffany asked why a Mahjong Row & Co UpPromote login tab was open: not Main's tab (Main had one Squarespace tab); told her, likely a scheduled sales check.
