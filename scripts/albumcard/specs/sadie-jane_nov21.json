@@ -500,8 +500,7 @@
    "retired": false,
    "holiday": false,
    "img": "assets/albums/catalog-new/mahjong-by-si-peony-salon-reverie.jpg",
-   "partner": true,
-   "added_after_review": "2026-11-21 mat discovery"
+   "partner": true
   },
   {
    "group": "picks",
@@ -512,8 +511,7 @@
    "retired": false,
    "holiday": false,
    "img": "assets/albums/catalog-new/mahjong-by-si-peony-salon-keepsake.jpg",
-   "partner": true,
-   "added_after_review": "2026-11-21 mat discovery"
+   "partner": true
   },
   {
    "group": "picks",
@@ -524,8 +522,83 @@
    "retired": false,
    "holiday": false,
    "img": "assets/albums/catalog-new/mahjong-by-si-porch-blooms.jpg",
-   "partner": true,
-   "added_after_review": "2026-11-21 mat discovery"
+   "partner": true
+  },
+  {
+   "group": "picks",
+   "name": "Blue and Pink Floral",
+   "brand": "Amazon",
+   "fym": null,
+   "why": "powder blue center, blush scallop and soft blue, pink and sage flowers: very close to the tile palette",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/newfinds/sadie-jane/amazon-blue-and-pink-floral-big.jpg",
+   "box": [
+    58,
+    290,
+    1120,
+    1390
+   ],
+   "partner": false,
+   "store_url": "https://www.amazon.com/dp/B0H8HDRX87",
+   "found": "Etsy/Amazon discovery Nov 21"
+  },
+  {
+   "group": "picks",
+   "name": "Blue and Pink Chinoiserie Trellis",
+   "brand": "CraftinMy",
+   "fym": null,
+   "why": "powder blue border, pink peonies and blue-and-white jars around a quiet trellis center",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/newfinds/sadie-jane/etsy-craftinmy-blue-pink-chinoiserie-big.jpg",
+   "box": [
+    222,
+    286,
+    1350,
+    1382
+   ],
+   "partner": false,
+   "store_url": "https://www.etsy.com/listing/4610389308",
+   "found": "Etsy/Amazon discovery Nov 21"
+  },
+  {
+   "group": "picks",
+   "name": "Pink Blue Bow Floral",
+   "brand": "Amazon",
+   "fym": null,
+   "why": "blush center with pink bows on blue and green florals",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/newfinds/sadie-jane/amazon-pink-blue-bow-floral-big.jpg",
+   "box": [
+    44,
+    278,
+    871,
+    1070
+   ],
+   "partner": false,
+   "store_url": "https://www.amazon.com/dp/B0H49Q8KMS",
+   "found": "Etsy/Amazon discovery Nov 21"
+  },
+  {
+   "group": "picks",
+   "name": "Pink Hydrangea Preppy Floral",
+   "brand": "MahjAuraStudio",
+   "fym": null,
+   "why": "pink hydrangeas with blue and green: the bolder option",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/newfinds/sadie-jane/etsy-mahjaura-pink-hydrangea-big.jpg",
+   "box": [
+    286,
+    270,
+    1413,
+    1286
+   ],
+   "partner": false,
+   "store_url": "https://www.etsy.com/listing/4587877778",
+   "found": "Etsy/Amazon discovery Nov 21"
   }
  ]
 }

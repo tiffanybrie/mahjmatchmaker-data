@@ -1602,3 +1602,6 @@ Tiffany: tabletop room images look AI, don't want them. Use the clean flat/aeria
 - Nov 21 10:21pm (Main): Tiffany asked how the Sadie Jane research was done: told her no direct Etsy/Amazon search had been run (FB groups + 3 Google searches + Mahjong by SI store). Etsy search run in her Chrome 10:30pm.
 
 - Nov 21 10:45pm (Main): Sadie Jane Etsy + Amazon discovery done in her Chrome: 4 Etsy + 2 Amazon finds on the review page as Bring it in / Skip (record discovery.new_finds); page republished v3.
+
+- Nov 21 10:40pm (Main): Tiffany on the Sadie Jane page: work the research finds INTO the album as cards; no separate section at the top; she goes through the whole album at once. DONE: 3 Mahjong by SI + 2 Amazon + 2 Etsy finds are ordinary cards (50 cards), no 'new' flags, no Bring-in section; 2 Etsy finds dropped (photos not album-grade; record discovery.not_album_grade). Page republished v4. RULE: before her first pass, research finds go in as cards; 'new since you finished' is only for albums she already reviewed.
+- Nov 21 10:55pm (Main): Deco Indigo (51 cards, 14 new) and Deco Mulberry (50 cards, 13 new) review pages republished with the Nov 17 re-pull matches flagged new; asks on hq/now ten (deco-indigo-review, deco-mulberry-review).
