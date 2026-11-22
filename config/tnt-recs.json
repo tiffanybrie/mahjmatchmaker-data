@@ -837,6 +837,55 @@
     "recs": [],
     "note": "No mat recs for Origami Timber outside Tiles & Tablescapes."
    }
+  },
+  "sadie-jane": {
+   "scanned": "2026-11-21",
+   "source": "Tiles & Tablescapes group search, Claude in Chrome, read only",
+   "posts_read": 7,
+   "terms": [
+    "sadie jane",
+    "serendipity",
+    "omm sadie"
+   ],
+   "scrolled_to_end": true,
+   "recs": [],
+   "nonpartner_out": [],
+   "questions_no_rec": [],
+   "note": "Set is not released yet (launch Wed Nov 25): no post in the group names Sadie Jane or the Serendipity mat. The 7 results were name matches (members called Sadie / Jane) and unrelated OMM posts. Re-scan after launch.",
+   "rescan_after": "2026-11-25",
+   "other_groups": {
+    "scanned": "2026-11-21",
+    "how": "Claude in Chrome, read only; own search for 'sadie jane' in each joined group over 30,000 members, scrolled to the end.",
+    "terms": [
+     "sadie jane"
+    ],
+    "groups": [
+     {
+      "name": "Mahjong Community",
+      "members": "123K",
+      "url": "https://www.facebook.com/groups/mahjongcommunity/",
+      "found": "nothing about Sadie Jane (6 unrelated posts)"
+     },
+     {
+      "name": "The Mahj Lounge",
+      "members": "46K",
+      "url": "https://www.facebook.com/groups/1514161333186568/",
+      "found": "nothing (2 unrelated posts)"
+     },
+     {
+      "name": "The Mahjong Table - buy, sell, share",
+      "members": "37K",
+      "url": "https://www.facebook.com/groups/1628897271459610/",
+      "found": "nothing (6 unrelated ISO/sale posts)"
+     },
+     {
+      "name": "Ask the Mah Jongg Teacher",
+      "members": "36K",
+      "url": "https://www.facebook.com/groups/AsktheMahJonggTeacher/",
+      "found": "nothing (3 unrelated posts)"
+     }
+    ]
+   }
   }
  }
 }

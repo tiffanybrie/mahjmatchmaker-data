@@ -2580,16 +2580,6 @@
   ],
   "partner_swept_at": "2026-11-21T23:38:26+00:00"
  },
- "research_deferred": {
-  "by": "Tiffany",
-  "at": "2026-11-21T18:35:00-05:00",
-  "words": "Go ahead and put together your album for Sadie Jane without the Facebook research or tiles and tablescapes information, and then you can do those as an add-on once you have Chrome. That way it's not holding the whole process up.",
-  "owed": [
-   "[3] Tiles & Tablescapes search",
-   "[3b] other big Facebook groups",
-   "[3c] mat discovery (web)"
-  ]
- },
  "cards_dir": "assets/cards/sadie-jane",
  "wheel_img": "assets/colorwheels/sadie-jane-color-wheel.jpg",
  "covers": {
@@ -2602,5 +2592,63 @@
   ],
   "default": 0
  },
- "review_url": "https://claude.ai/artifact/B9DYMfdvxG3473xRz1rzKk"
+ "review_url": "https://claude.ai/artifact/B9DYMfdvxG3473xRz1rzKk",
+ "research_deferred_was": {
+  "by": "Tiffany",
+  "at": "2026-11-21T18:35:00-05:00",
+  "words": "Go ahead and put together your album for Sadie Jane without the Facebook research or tiles and tablescapes information, and then you can do those as an add-on once you have Chrome. That way it's not holding the whole process up.",
+  "owed": [
+   "[3] Tiles & Tablescapes search",
+   "[3b] other big Facebook groups",
+   "[3c] mat discovery (web)"
+  ]
+ },
+ "discovery": {
+  "at": "2026-11-21T22:05:00-05:00",
+  "searches": [
+   {
+    "where": "Google",
+    "terms": "mahjong mat blue and pink peony chinoiserie neoprene",
+    "hits": "Mahjong by SI peony / bloom mats (Target + own store), Etsy peony mats, ABC Home Esme"
+   },
+   {
+    "where": "Google",
+    "terms": "panda mahjong mat blue pink",
+    "hits": "no panda mat from a partner; Mahjong by SI blue/pink lines, My Fair Garden Party Bluebell (already a card)"
+   },
+   {
+    "where": "Google",
+    "terms": "Oh My Mahjong \"Sadie Jane\" tiles mat pairing",
+    "hits": "nothing published yet (set launches Nov 25)"
+   },
+   {
+    "where": "Mahjong by SI store (products.json, 1,250 products)",
+    "terms": "peony / bloom / cloud nine mats, 12 photos viewed",
+    "hits": "3 fit by sight: Peony Reverie (periwinkle line peonies), Peony Keepsake (white with blue line peonies), Porch Blooms (blue hydrangeas on blue stripe). Not in Find Your Mat-ch yet."
+   }
+  ],
+  "new_finds": [
+   {
+    "mat": "Peony Reverie",
+    "brand": "Mahjong by SI",
+    "handle": "peony-salon-reverie-mahjong-mat"
+   },
+   {
+    "mat": "Peony Keepsake",
+    "brand": "Mahjong by SI",
+    "handle": "peony-salon-keepsake-mahjong-mat"
+   },
+   {
+    "mat": "Porch Blooms",
+    "brand": "Mahjong by SI",
+    "handle": "porch-blooms-mahjong-mat"
+   }
+  ],
+  "misses_added": [],
+  "next": "bring the 3 into Find Your Mat-ch (SI run of 10), then add as cards with added_after_review"
+ },
+ "research": {
+  "tnt": "2026-11-21: no posts about Sadie Jane or Serendipity (set unreleased); re-scan after Nov 25",
+  "other_groups": "4 groups, nothing"
+ }
 }
