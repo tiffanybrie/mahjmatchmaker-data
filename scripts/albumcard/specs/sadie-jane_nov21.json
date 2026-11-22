@@ -15,7 +15,14 @@
    "why": "Oh My Mahjong's own mat for Sadie Jane: sky blue, blush and chartreuse, sold together in the starter kit.",
    "retired": false,
    "holiday": false,
-   "lowres": false
+   "lowres": false,
+   "box": [
+    28,
+    28,
+    1026,
+    1054
+   ],
+   "box_note": "Tiffany review note Nov 21 night: reframed"
   },
   {
    "group": "picks",
@@ -341,7 +348,14 @@
    "catalog_new": true,
    "holiday": false,
    "lowres": false,
-   "short": "Sunday Sherbert"
+   "short": "Sunday Sherbert",
+   "box": [
+    10,
+    0,
+    640,
+    648
+   ],
+   "box_note": "Tiffany review note Nov 21 night: reframed"
   },
   {
    "group": "holiday",
@@ -419,7 +433,14 @@
    "retired": false,
    "holiday": false,
    "img": "assets/colorcards/sadie-jane/mats/maison-mahj-the-afternoon-tea-full.jpg",
-   "lowres": false
+   "lowres": false,
+   "box": [
+    92,
+    108,
+    1022,
+    1064
+   ],
+   "box_note": "Tiffany review note Nov 21 night: reframed"
   },
   {
    "group": "picks",
@@ -441,7 +462,14 @@
    "retired": false,
    "holiday": false,
    "img": "assets/albums/catalog-new/mahjong-by-si-peony-salon-keepsake.jpg",
-   "partner": true
+   "partner": true,
+   "box": [
+    80,
+    72,
+    1110,
+    1130
+   ],
+   "box_note": "Tiffany review note Nov 21 night: reframed"
   },
   {
    "group": "picks",
