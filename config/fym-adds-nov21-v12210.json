@@ -1,0 +1,391 @@
+{
+ "_about": "FYM 1.22.10 adds (Nov 21 2026): 12 partner tile sets (Bespoke 7, Let's Mahj On 4, Mahj Pit 1) + 5 partner mats (Mahj Pit 3, Britt Mills Isla, YOLO Preppy Pink Floral). Back colours: reused from the same colourway already in the app where one exists, else read by eye from the listing photo (to re-measure; Let's Stir Things Up! has GOLD GLITTER backs and Baddie Black / Raven are black: textured-backs list).",
+ "made": "2026-11-21",
+ "tiles": [
+  {
+   "key": "www.bespokemahjong.com/xl-mega-pop-divas-hottie-pink",
+   "slug": "bespoke-mahjong-xl-mega-pop-divas-hottie-pink",
+   "name": "XL Mega Pop Divas (Hottie Pink)",
+   "bn": "Bespoke Mahjong",
+   "u": "https://bespokemahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fxl-mega-pop-divas-hottie-pink%3Fsca_ref%3D10217561.eoZg0pKJHSf8IQSE",
+   "u0": "https://www.bespokemahjong.com/products/xl-mega-pop-divas-hottie-pink",
+   "dc": "https://mahjmatchmaker.com/bespoke-mahjong-discount-code",
+   "pa": true,
+   "img": "assets/tiles/v12210/bespoke-mahjong-xl-mega-pop-divas-hottie-pink.jpg",
+   "tc": "#d71257",
+   "group": "Pink",
+   "back": {
+    "b": "#d71257"
+   },
+   "pt": [
+    525.0,
+    472.5,
+    1
+   ],
+   "oos": 0,
+   "hol": false
+  },
+  {
+   "key": "www.bespokemahjong.com/xl-mega-springtime-safari-petal-pink",
+   "slug": "bespoke-mahjong-xl-mega-springtime-safari-petal-pink",
+   "name": "XL Mega Springtime Safari (Petal Pink)",
+   "bn": "Bespoke Mahjong",
+   "u": "https://bespokemahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fxl-mega-springtime-safari-petal-pink%3Fsca_ref%3D10217561.eoZg0pKJHSf8IQSE",
+   "u0": "https://www.bespokemahjong.com/products/xl-mega-springtime-safari-petal-pink",
+   "dc": "https://mahjmatchmaker.com/bespoke-mahjong-discount-code",
+   "pa": true,
+   "img": "assets/tiles/v12210/bespoke-mahjong-xl-mega-springtime-safari-petal-pink.jpg",
+   "tc": "#d6568a",
+   "group": "Pink",
+   "back": {
+    "b": "#ec899f"
+   },
+   "pt": [
+    525.0,
+    472.5,
+    1
+   ],
+   "oos": 1,
+   "hol": false
+  },
+  {
+   "key": "www.bespokemahjong.com/gray-malin-beach-club-set-oceanblue",
+   "slug": "bespoke-mahjong-gray-malin-beach-club-ocean-blue",
+   "name": "Gray Malin Beach Club (Ocean Blue)",
+   "bn": "Bespoke Mahjong",
+   "u": "https://bespokemahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fgray-malin-beach-club-set-oceanblue%3Fsca_ref%3D10217561.eoZg0pKJHSf8IQSE",
+   "u0": "https://www.bespokemahjong.com/products/gray-malin-beach-club-set-oceanblue",
+   "dc": "https://mahjmatchmaker.com/bespoke-mahjong-discount-code",
+   "pa": true,
+   "img": "assets/tiles/v12210/bespoke-mahjong-gray-malin-beach-club-ocean-blue.jpg",
+   "tc": "#2e6bb5",
+   "group": "Blue",
+   "back": {
+    "b": "#2e6bb5"
+   },
+   "pt": [
+    545.0,
+    490.5,
+    1
+   ],
+   "oos": 0,
+   "hol": false
+  },
+  {
+   "key": "www.bespokemahjong.com/bespoke-mahjong-x-gray-malin-beach-club-xl-mega-tiles-cabana-blue",
+   "slug": "bespoke-mahjong-gray-malin-beach-club-xl-mega-cabana-blue",
+   "name": "Gray Malin Beach Club XL Mega (Cabana Blue)",
+   "bn": "Bespoke Mahjong",
+   "u": "https://bespokemahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fbespoke-mahjong-x-gray-malin-beach-club-xl-mega-tiles-cabana-blue%3Fsca_ref%3D10217561.eoZg0pKJHSf8IQSE",
+   "u0": "https://www.bespokemahjong.com/products/bespoke-mahjong-x-gray-malin-beach-club-xl-mega-tiles-cabana-blue",
+   "dc": "https://mahjmatchmaker.com/bespoke-mahjong-discount-code",
+   "pa": true,
+   "img": "assets/tiles/v12210/bespoke-mahjong-gray-malin-beach-club-xl-mega-cabana-blue.jpg",
+   "tc": "#2f6fc8",
+   "group": "Blue",
+   "back": {
+    "b": "#6583cf"
+   },
+   "pt": [
+    525.0,
+    472.5,
+    1
+   ],
+   "oos": 0,
+   "hol": false
+  },
+  {
+   "key": "www.bespokemahjong.com/mega-springtime-safari-bright-white",
+   "slug": "bespoke-mahjong-xl-mega-springtime-safari-bright-white",
+   "name": "XL Mega Springtime Safari (Bright White)",
+   "bn": "Bespoke Mahjong",
+   "u": "https://bespokemahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fmega-springtime-safari-bright-white%3Fsca_ref%3D10217561.eoZg0pKJHSf8IQSE",
+   "u0": "https://www.bespokemahjong.com/products/mega-springtime-safari-bright-white",
+   "dc": "https://mahjmatchmaker.com/bespoke-mahjong-discount-code",
+   "pa": true,
+   "img": "assets/tiles/v12210/bespoke-mahjong-xl-mega-springtime-safari-bright-white.jpg",
+   "tc": "#d6568a",
+   "group": "Ivory",
+   "back": {
+    "b": "#d9d9d6"
+   },
+   "pt": [
+    525.0,
+    472.5,
+    1
+   ],
+   "oos": 1,
+   "hol": false
+  },
+  {
+   "key": "www.bespokemahjong.com/pop-divas-mega-tiles-baddie-black-copy",
+   "slug": "bespoke-mahjong-xl-mega-pop-divas-petal-pink",
+   "name": "XL Mega Pop Divas (Petal Pink)",
+   "bn": "Bespoke Mahjong",
+   "u": "https://bespokemahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fpop-divas-mega-tiles-baddie-black-copy%3Fsca_ref%3D10217561.eoZg0pKJHSf8IQSE",
+   "u0": "https://www.bespokemahjong.com/products/pop-divas-mega-tiles-baddie-black-copy",
+   "dc": "https://mahjmatchmaker.com/bespoke-mahjong-discount-code",
+   "pa": true,
+   "img": "assets/tiles/v12210/bespoke-mahjong-xl-mega-pop-divas-petal-pink.jpg",
+   "tc": "#d6568a",
+   "group": "Pink",
+   "back": {
+    "b": "#ec899f"
+   },
+   "pt": [
+    525.0,
+    472.5,
+    1
+   ],
+   "oos": 0,
+   "hol": false
+  },
+  {
+   "key": "www.bespokemahjong.com/lucky-charms-mega-tiles-mint-green-copy",
+   "slug": "bespoke-mahjong-xl-mega-pop-divas-baddie-black",
+   "name": "XL Mega Pop Divas (Baddie Black)",
+   "bn": "Bespoke Mahjong",
+   "u": "https://bespokemahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Flucky-charms-mega-tiles-mint-green-copy%3Fsca_ref%3D10217561.eoZg0pKJHSf8IQSE",
+   "u0": "https://www.bespokemahjong.com/products/lucky-charms-mega-tiles-mint-green-copy",
+   "dc": "https://mahjmatchmaker.com/bespoke-mahjong-discount-code",
+   "pa": true,
+   "img": "assets/tiles/v12210/bespoke-mahjong-xl-mega-pop-divas-baddie-black.jpg",
+   "tc": "#17171a",
+   "group": "Blue",
+   "back": {
+    "b": "#17171a"
+   },
+   "pt": [
+    525.0,
+    472.5,
+    1
+   ],
+   "oos": 1,
+   "hol": false
+  },
+  {
+   "key": "www.letsmahj-on.com/lets-get-wild",
+   "slug": "let-s-mahj-on-let-s-get-wild",
+   "name": "Let's Get Wild!",
+   "bn": "Let's Mahj On",
+   "u": "https://www.letsmahj-on.com/discount/MAHJMATCH?redirect=%2Fproducts%2Flets-get-wild",
+   "u0": "https://www.letsmahj-on.com/products/lets-get-wild",
+   "dc": "https://mahjmatchmaker.com/lets-mahj-on-discount-code",
+   "pa": true,
+   "img": "assets/tiles/v12210/let-s-mahj-on-let-s-get-wild.jpg",
+   "tc": "#2f2b89",
+   "group": "Blue",
+   "back": {
+    "b": "#2f2b89"
+   },
+   "pt": [
+    249.0,
+    224.1,
+    1
+   ],
+   "oos": 0,
+   "hol": false
+  },
+  {
+   "key": "www.letsmahj-on.com/lets-stir-things-up",
+   "slug": "let-s-mahj-on-let-s-stir-things-up",
+   "name": "Let's Stir Things Up!",
+   "bn": "Let's Mahj On",
+   "u": "https://www.letsmahj-on.com/discount/MAHJMATCH?redirect=%2Fproducts%2Flets-stir-things-up",
+   "u0": "https://www.letsmahj-on.com/products/lets-stir-things-up",
+   "dc": "https://mahjmatchmaker.com/lets-mahj-on-discount-code",
+   "pa": true,
+   "img": "assets/tiles/v12210/let-s-mahj-on-let-s-stir-things-up.jpg",
+   "tc": "#9a6a1e",
+   "group": "Yellow & Orange",
+   "back": {
+    "b": "#b08a4a"
+   },
+   "pt": [
+    385.0,
+    346.5,
+    1
+   ],
+   "oos": 0,
+   "hol": false
+  },
+  {
+   "key": "www.letsmahj-on.com/lets-golf-celedon-mist",
+   "slug": "let-s-mahj-on-let-s-golf-in-celedon-mist",
+   "name": "Let's Golf! in Celedon Mist",
+   "bn": "Let's Mahj On",
+   "u": "https://www.letsmahj-on.com/discount/MAHJMATCH?redirect=%2Fproducts%2Flets-golf-celedon-mist",
+   "u0": "https://www.letsmahj-on.com/products/lets-golf-celedon-mist",
+   "dc": "https://mahjmatchmaker.com/lets-mahj-on-discount-code",
+   "pa": true,
+   "img": "assets/tiles/v12210/let-s-mahj-on-let-s-golf-in-celedon-mist.jpg",
+   "tc": "#188e5e",
+   "group": "Green",
+   "back": {
+    "b": "#90c7af"
+   },
+   "pt": [
+    385.0,
+    346.5,
+    1
+   ],
+   "oos": 0,
+   "hol": false
+  },
+  {
+   "key": "www.letsmahj-on.com/lets-golf-celedon-mist-copy",
+   "slug": "let-s-mahj-on-let-s-golf-in-magnolia-blush",
+   "name": "Let's Golf! in Magnolia Blush",
+   "bn": "Let's Mahj On",
+   "u": "https://www.letsmahj-on.com/discount/MAHJMATCH?redirect=%2Fproducts%2Flets-golf-celedon-mist-copy",
+   "u0": "https://www.letsmahj-on.com/products/lets-golf-celedon-mist-copy",
+   "dc": "https://mahjmatchmaker.com/lets-mahj-on-discount-code",
+   "pa": true,
+   "img": "assets/tiles/v12210/let-s-mahj-on-let-s-golf-in-magnolia-blush.jpg",
+   "tc": "#b65d55",
+   "group": "Pink",
+   "back": {
+    "b": "#e3a7a6"
+   },
+   "pt": [
+    385.0,
+    346.5,
+    1
+   ],
+   "oos": 0,
+   "hol": false
+  },
+  {
+   "key": "mahjpit.co/the-raven-tiles-large",
+   "slug": "mahj-pit-the-raven-large",
+   "name": "The Raven (Large)",
+   "bn": "Mahj Pit",
+   "u": "https://mahjpit.co/discount/MAHJMATCH?redirect=%2Fproducts%2Fthe-raven-tiles-large%3Fsca_ref%3D12703261.srer4OxWkeRwwDVs",
+   "u0": "https://mahjpit.co/products/the-raven-tiles-large",
+   "dc": "https://www.mahjmatchmaker.com/mahj-pit-discount-code",
+   "pa": true,
+   "img": "assets/tiles/v12210/mahj-pit-the-raven-large.jpg",
+   "tc": "#141414",
+   "group": "Blue",
+   "back": {
+    "b": "#141414"
+   },
+   "pt": [
+    395.0,
+    355.5,
+    1
+   ],
+   "oos": 0,
+   "hol": false
+  }
+ ],
+ "mats": [
+  {
+   "key": "mahjpit.co/birds-of-a-feather",
+   "name": "Birds of a Feather",
+   "bn": "Mahj Pit",
+   "u": "https://mahjpit.co/discount/MAHJMATCH?redirect=%2Fproducts%2Fbirds-of-a-feather%3Fsca_ref%3D12703261.srer4OxWkeRwwDVs",
+   "u0": "https://mahjpit.co/products/birds-of-a-feather",
+   "dc": "https://www.mahjmatchmaker.com/mahj-pit-discount-code",
+   "pa": true,
+   "img": "assets/albums/catalog-new/mahj-pit-birds-of-a-feather.jpg",
+   "box": null,
+   "hol": false,
+   "oos": 0,
+   "pm": [
+    98.0,
+    88.2,
+    1
+   ],
+   "cls": "A",
+   "why": ""
+  },
+  {
+   "key": "mahjpit.co/lamarie-mat",
+   "name": "LaMarie",
+   "bn": "Mahj Pit",
+   "u": "https://mahjpit.co/discount/MAHJMATCH?redirect=%2Fproducts%2Flamarie-mat%3Fsca_ref%3D12703261.srer4OxWkeRwwDVs",
+   "u0": "https://mahjpit.co/products/lamarie-mat",
+   "dc": "https://www.mahjmatchmaker.com/mahj-pit-discount-code",
+   "pa": true,
+   "img": "assets/albums/catalog-new/mahj-pit-lamarie.jpg",
+   "box": null,
+   "hol": false,
+   "oos": 0,
+   "pm": [
+    98.0,
+    88.2,
+    1
+   ],
+   "cls": "A",
+   "why": ""
+  },
+  {
+   "key": "mahjpit.co/evergreen-mat",
+   "name": "Evergreen",
+   "bn": "Mahj Pit",
+   "u": "https://mahjpit.co/discount/MAHJMATCH?redirect=%2Fproducts%2Fevergreen-mat%3Fsca_ref%3D12703261.srer4OxWkeRwwDVs",
+   "u0": "https://mahjpit.co/products/evergreen-mat",
+   "dc": "https://www.mahjmatchmaker.com/mahj-pit-discount-code",
+   "pa": true,
+   "img": "assets/albums/catalog-new/mahj-pit-evergreen.jpg",
+   "box": null,
+   "hol": false,
+   "oos": 0,
+   "pm": [
+    98.0,
+    88.2,
+    1
+   ],
+   "cls": "A",
+   "why": ""
+  },
+  {
+   "key": "brittmillsdesign.com/isla-leatherette-mahjong-mat",
+   "name": "Isla Leatherette",
+   "bn": "Britt Mills",
+   "u": "https://brittmillsdesign.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fisla-leatherette-mahjong-mat%3Fsca_ref%3D11205153.24gc8ncLZw3",
+   "u0": "https://brittmillsdesign.com/products/isla-leatherette-mahjong-mat",
+   "dc": "https://mahjmatchmaker.com/britt-mills-discount-code",
+   "pa": true,
+   "img": "assets/albums/catalog-new/britt-mills-isla-leatherette.jpg",
+   "box": null,
+   "hol": false,
+   "oos": 0,
+   "pm": [
+    180.0,
+    153.0,
+    1
+   ],
+   "cls": "A",
+   "why": ""
+  },
+  {
+   "key": "yolomahjong.com/mahjong-mat-preppy-pink-floral-mahjong-mat-watercolor-peony-hydrangea-game-mat",
+   "name": "Preppy Pink Floral",
+   "bn": "YOLO Mahjong",
+   "u": "https://www.yolomahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fmahjong-mat-preppy-pink-floral-mahjong-mat-watercolor-peony-hydrangea-game-mat%3Fsca_ref%3D12572562.5IBLjBHZ1vuX4J",
+   "u0": "https://yolomahjong.com/products/mahjong-mat-preppy-pink-floral-mahjong-mat-watercolor-peony-hydrangea-game-mat",
+   "dc": "https://mahjmatchmaker.com/yolo-mahjong-discount-code",
+   "pa": true,
+   "img": "assets/albums/catalog-new/yolo-mahjong-preppy-pink-floral.jpg",
+   "box": null,
+   "hol": false,
+   "oos": 0,
+   "pm": [
+    74.0,
+    66.6,
+    1
+   ],
+   "cls": "A",
+   "why": ""
+  }
+ ],
+ "held": [
+  "Middle & Main 2 tile sets (store did not answer products.json from the cloud)",
+  "Noli June 5 tile sets (hold)",
+  "Mahjong Studios 2 Easter sets",
+  "YMI 2",
+  "Bespoke Gray Malin Travel Tiles Kit"
+ ]
+}
