@@ -1,0 +1,133 @@
+{
+ "_about": "FYM 1.22.16 adds (Nov 22 2026): 5 album mats that were not in the app (config/fym-prep-nov22/sync/report.md album_mats_not_in_fym). Every listing photo was looked at (Mahjong by SI: 15 and 8 photos, the flat print file 00 chosen; Ozark: the product page's own flat photo on wood, cropped to the mat by eye). Mahjong by SI price = 33in neoprene $110, 10% off with MAHJMATCH. Ralph is a tartan with no holiday graphic (year-round; the store's 'christmas' tag is not trusted). Ozark: non-partner allowed whole line (nonpartner_allow), plain link, $75; Baker Traditional is Out of Stock on the product page (schema OutOfStock) Nov 22.",
+ "made": "2026-11-22",
+ "tiles": [],
+ "held": [],
+ "mats": [
+  {
+   "key": "www.mahjongbysi.com/ralph-mahjong-mat",
+   "name": "Ralph",
+   "bn": "Mahjong by SI",
+   "u": "https://www.mahjongbysi.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fralph-mahjong-mat",
+   "u0": "https://www.mahjongbysi.com/products/ralph-mahjong-mat",
+   "dc": "https://www.mahjmatchmaker.com/mahjong-by-si-discount-code",
+   "pa": true,
+   "img": "assets/albums/catalog-new/mahjong-by-si-ralph.jpg",
+   "box": [
+    0.056,
+    0.058,
+    0.946,
+    0.948
+   ],
+   "hol": false,
+   "oos": 0,
+   "pm": [
+    110.0,
+    99.0,
+    1
+   ],
+   "cls": "A",
+   "why": ""
+  },
+  {
+   "key": "www.mahjongbysi.com/fall-lanterns-mahjong-mat",
+   "name": "Fall Lanterns",
+   "bn": "Mahjong by SI",
+   "u": "https://www.mahjongbysi.com/discount/MAHJMATCH?redirect=%2Fproducts%2Ffall-lanterns-mahjong-mat",
+   "u0": "https://www.mahjongbysi.com/products/fall-lanterns-mahjong-mat",
+   "dc": "https://www.mahjmatchmaker.com/mahjong-by-si-discount-code",
+   "pa": true,
+   "img": "assets/albums/catalog-new/mahjong-by-si-fall-lanterns.jpg",
+   "box": [
+    0.056,
+    0.06,
+    0.946,
+    0.948
+   ],
+   "hol": false,
+   "oos": 0,
+   "pm": [
+    110.0,
+    99.0,
+    1
+   ],
+   "cls": "A",
+   "why": ""
+  },
+  {
+   "key": "ozarkmahjong.com/baker-traditional-mat",
+   "name": "Baker Traditional",
+   "bn": "Ozark Mahjongg",
+   "u": "https://www.ozarkmahjongg.com/product-page/baker-traditional-mat",
+   "u0": "https://www.ozarkmahjongg.com/product-page/baker-traditional-mat",
+   "dc": "",
+   "pa": false,
+   "img": "assets/albums/catalog-new/ozark-mahjongg-baker-traditional.jpg",
+   "box": [
+    0.165,
+    0.185,
+    0.85,
+    0.805
+   ],
+   "hol": false,
+   "oos": 1,
+   "pm": [
+    75.0,
+    75.0,
+    0
+   ],
+   "cls": "A",
+   "why": ""
+  },
+  {
+   "key": "ozarkmahjong.com/trent-celadon-mahjong-mat",
+   "name": "Trent Celadon",
+   "bn": "Ozark Mahjongg",
+   "u": "https://www.ozarkmahjongg.com/product-page/trent-celadon-mahjong-mat",
+   "u0": "https://www.ozarkmahjongg.com/product-page/trent-celadon-mahjong-mat",
+   "dc": "",
+   "pa": false,
+   "img": "assets/albums/catalog-new/ozark-mahjongg-trent-celadon.jpg",
+   "box": [
+    0.16,
+    0.185,
+    0.835,
+    0.799
+   ],
+   "hol": false,
+   "oos": 0,
+   "pm": [
+    75.0,
+    75.0,
+    0
+   ],
+   "cls": "A",
+   "why": ""
+  },
+  {
+   "key": "ozarkmahjong.com/trent-midnight-mahjong-mat",
+   "name": "Trent Midnight",
+   "bn": "Ozark Mahjongg",
+   "u": "https://www.ozarkmahjongg.com/product-page/trent-midnight-mahjong-mat",
+   "u0": "https://www.ozarkmahjongg.com/product-page/trent-midnight-mahjong-mat",
+   "dc": "",
+   "pa": false,
+   "img": "assets/albums/catalog-new/ozark-mahjongg-trent-midnight.jpg",
+   "box": [
+    0.155,
+    0.185,
+    0.838,
+    0.79
+   ],
+   "hol": false,
+   "oos": 0,
+   "pm": [
+    75.0,
+    75.0,
+    0
+   ],
+   "cls": "A",
+   "why": ""
+  }
+ ]
+}

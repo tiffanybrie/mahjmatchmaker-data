@@ -10217,6 +10217,31 @@
 "in": true,
 "how": "shopify product (prep Nov 22, config/fym-prep-nov22/adds)",
 "price": 162.99
+},
+"m:www.mahjongbysi.com/ralph-mahjong-mat": {
+"in": true,
+"how": "product page read Nov 22 (config/fym-adds-nov22-v12216.json)",
+"price": 110.0
+},
+"m:www.mahjongbysi.com/fall-lanterns-mahjong-mat": {
+"in": true,
+"how": "product page read Nov 22 (config/fym-adds-nov22-v12216.json)",
+"price": 110.0
+},
+"m:ozarkmahjong.com/baker-traditional-mat": {
+"in": false,
+"how": "product page read Nov 22 (config/fym-adds-nov22-v12216.json)",
+"price": 75.0
+},
+"m:ozarkmahjong.com/trent-celadon-mahjong-mat": {
+"in": true,
+"how": "product page read Nov 22 (config/fym-adds-nov22-v12216.json)",
+"price": 75.0
+},
+"m:ozarkmahjong.com/trent-midnight-mahjong-mat": {
+"in": true,
+"how": "product page read Nov 22 (config/fym-adds-nov22-v12216.json)",
+"price": 75.0
 }
 }
 }
