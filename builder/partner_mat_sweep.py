@@ -91,8 +91,17 @@ def load_fym(path):
     else:
         subprocess.run(['git', '-C', REPO, 'fetch', '-q', 'origin', 'fym-site-preview'], check=False)
         ls = subprocess.run(['git', '-C', REPO, 'ls-tree', '--name-only', 'origin/fym-site-preview', 'site-app/'], capture_output=True, text=True).stdout.split()
-        v = max((x for x in ls if re.search(r'fym-v\d+$', x)), key=lambda x: int(re.search(r'(\d+)$', x).group(1)))
-        h = subprocess.run(['git', '-C', REPO, 'show', f'origin/fym-site-preview:{v}/index.html'], capture_output=True, text=True).stdout; ref = 'origin/fym-site-preview:' + v
+        # Nov 21 2026: the LIVE build is the one site-app/live.json names (1.22.x folders are fym-v122-N and do not match fym-vNN;
+        # the old 'newest fym-vNN' picked the unshipped v123 preview and over-counted missing mats: 93 reported, 19 real).
+        h = ''
+        try:
+            lj = json.loads(subprocess.run(['git', '-C', REPO, 'show', 'origin/fym-site-preview:site-app/live.json'], capture_output=True, text=True).stdout)
+            m_ = re.search(r'@([0-9a-f]{40})/(site-app/[^/]+)/index\.html', lj['index'])
+            h = subprocess.run(['git', '-C', REPO, 'show', f'{m_.group(1)}:{m_.group(2)}/index.html'], capture_output=True, text=True).stdout; ref = f'live.json {lj.get("version")} {m_.group(2)}'
+        except Exception: h = ''
+        if not h:
+            v = max((x for x in ls if re.search(r'fym-v\d+$', x)), key=lambda x: int(re.search(r'(\d+)$', x).group(1)))
+            h = subprocess.run(['git', '-C', REPO, 'show', f'origin/fym-site-preview:{v}/index.html'], capture_output=True, text=True).stdout; ref = 'origin/fym-site-preview:' + v
     i = h.index('const D=') + 8; D, _ = json.JSONDecoder().raw_decode(h[i:]); return D, ref
 
 
