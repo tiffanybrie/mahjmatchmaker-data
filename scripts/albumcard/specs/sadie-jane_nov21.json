@@ -631,30 +631,38 @@
    "group": "yours",
    "name": "Nichole",
    "brand": "Betty June & Jeannette",
-   "img": "assets/albums/sadie-jane/adds/betty-june-and-jeannette-nichole.jpg",
+   "img": "assets/albums/sadie-jane/adds/betty-june-and-jeannette-nichole-fullxfull.jpg",
    "why": "Your add from the catalog search (round 1).",
    "retired": false,
    "fym": "www.etsy.com/listing/4537970849/the-nichole-mahjong-mat",
    "lowres": true,
    "holiday": false,
-   "her_pick": true
+   "her_pick": true,
+   "box": [
+    180,
+    270,
+    2400,
+    2730
+   ],
+   "box_note": "Tiffany Nov 22 12:51am: low-res / white bar fixed (full-size Etsy photo, crop inside the mat)"
   },
   {
    "group": "yours",
    "name": "Livy",
    "brand": "Betty June & Jeannette",
-   "img": "assets/albums/sadie-jane/adds/betty-june-and-jeannette-livy-full.jpg",
+   "img": "assets/albums/sadie-jane/adds/betty-june-and-jeannette-livy-fullxfull.jpg",
    "why": "Your add from the catalog search (round 1).",
    "retired": false,
    "fym": "www.etsy.com/listing/4544550775/the-livy-mahjong-mat",
    "holiday": false,
    "her_pick": true,
    "box": [
-    64,
-    95,
-    1270,
-    1429
-   ]
+    121,
+    179,
+    2399,
+    2700
+   ],
+   "box_note": "Tiffany Nov 22 12:51am: low-res / white bar fixed (full-size Etsy photo, crop inside the mat)"
   },
   {
    "group": "yours",
@@ -667,11 +675,12 @@
    "holiday": false,
    "her_pick": true,
    "box": [
-    48,
-    667,
-    921,
-    1540
-   ]
+    60,
+    520,
+    930,
+    1390
+   ],
+   "box_note": "Tiffany Nov 22 12:51am: low-res / white bar fixed (full-size Etsy photo, crop inside the mat)"
   },
   {
    "group": "yours",
