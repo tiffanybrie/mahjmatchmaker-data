@@ -67,8 +67,13 @@
    "why": "blue chinoiserie + florals",
    "retired": false,
    "holiday": false,
-   "img": "assets/colorcards/sadie-jane/mats/mahj-and-vine-chinoiserie-citrus-grove.jpg",
-   "lowres": true
+   "img": "assets/albums/sadie-jane/adds/mahj-and-vine-chinoiserie-citrus-grove-full.png",
+   "box": [
+    192,
+    288,
+    1920,
+    2112
+   ]
   },
   {
    "group": "picks",
@@ -276,7 +281,14 @@
    "retired": false,
    "holiday": false,
    "img": "assets/albums/catalog-new/mahjong-by-si-peony-salon-reverie.jpg",
-   "partner": true
+   "partner": true,
+   "box": [
+    80,
+    72,
+    1110,
+    1130
+   ],
+   "box_note": "Tiffany Nov 22 1:10am: white border; crop inside the mat edge"
   },
   {
    "group": "picks",
@@ -807,6 +819,24 @@
    ],
    "partner": false,
    "store_url": "https://www.etsy.com/listing/4497703295",
+   "her_add": true
+  },
+  {
+   "group": "yours",
+   "name": "Lattice",
+   "brand": "Miss Mahjong",
+   "fym": "missmahjong.com/lattice-mahjong-playing-mat-pre-order",
+   "why": "your add (chat, Nov 22 1:12am): the Miss Darling tiles' mat",
+   "retired": false,
+   "holiday": false,
+   "img": "assets/albums/sadie-jane/adds/miss-mahjong-lattice-full.png",
+   "box": [
+    314,
+    27,
+    1606,
+    1330
+   ],
+   "partner": true,
    "her_add": true
   }
  ]

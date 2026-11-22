@@ -118,18 +118,18 @@
    "partner": true,
    "file": "sadie-jane-mahjong-tiles-mahj-and-vine-chinoiserie-citrus-grove-mat.jpg",
    "code": "10% OFF  USE CODE : MAHJMATCH",
-   "src": "assets/colorcards/sadie-jane/mats/mahj-and-vine-chinoiserie-citrus-grove.jpg",
+   "src": "assets/albums/sadie-jane/adds/mahj-and-vine-chinoiserie-citrus-grove-full.png",
    "racks": [
     "Bird & Bamboo Ballet Pink",
     "Bird & Bamboo French Blue"
    ],
    "mat_racks": [
     "Bird & Bamboo Powder Blue",
-    "Bird & Bamboo Cornflower Blue"
+    "Bird & Bamboo Forest Green"
    ],
    "why": "blue chinoiserie + florals",
    "fym": "mahjandvine.com/citrus-grove",
-   "lowres": true,
+   "lowres": null,
    "caption_note": null,
    "rack_notes": []
   },
@@ -1504,6 +1504,31 @@
    ],
    "why": "your Etsy links (review note); also sold as Luxury Faux Leather, listing 4599338148",
    "fym": null,
+   "lowres": null,
+   "caption_note": null,
+   "rack_notes": []
+  },
+  {
+   "order": 61,
+   "group": "yours",
+   "mat": "Lattice",
+   "brand": "Miss Mahjong",
+   "retired_mat": false,
+   "holiday": false,
+   "partner": true,
+   "file": "sadie-jane-mahjong-tiles-miss-mahjong-lattice-mat.jpg",
+   "code": "10% OFF  USE CODE : MAHJMATCH",
+   "src": "assets/albums/sadie-jane/adds/miss-mahjong-lattice-full.png",
+   "racks": [
+    "Bird & Bamboo Ballet Pink",
+    "Bird & Bamboo French Blue"
+   ],
+   "mat_racks": [
+    "Bird & Bamboo Butter",
+    "Bird & Bamboo Ocean Slate"
+   ],
+   "why": "your add (chat, Nov 22 1:12am): the Miss Darling tiles' mat",
+   "fym": "missmahjong.com/lattice-mahjong-playing-mat-pre-order",
    "lowres": null,
    "caption_note": null,
    "rack_notes": []
