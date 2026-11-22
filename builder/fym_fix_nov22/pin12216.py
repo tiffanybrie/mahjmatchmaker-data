@@ -2,4 +2,4 @@
 import sys, re
 p, sha = sys.argv[1], sys.argv[2]; assert re.fullmatch(r'[0-9a-f]{40}', sha)
 h = open(p).read(); n = h.count('V12216PIN/'); assert n > 0
-h = h.replace('V12216PIN/', f'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@{sha}/site-app/fym-v122-15/'); open(p, 'w').write(h); print('pinned', n)
+h = h.replace('V12216PIN/', f'https://cdn.jsdelivr.net/gh/tiffanybrie/mahjmatchmaker-data@{sha}/site-app/fym-v122-16/'); open(p, 'w').write(h); print('pinned', n)
