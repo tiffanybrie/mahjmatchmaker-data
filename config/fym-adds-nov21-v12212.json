@@ -1,0 +1,54 @@
+{
+ "_about": "FYM 1.22.12 (Nov 21 night): Middle & Main's 2 missing full-size tile sets (store read with www + browser UA). Travel bundles and Rummy tiles are not full-size mahjong sets: not added.",
+ "made": "2026-11-21",
+ "tiles": [
+  {
+   "key": "www.middleandmainmahjong.com/summit-sea-tiles-a-north-carolina-inspired-mahjong-set",
+   "slug": "middle-main-mahjong-summit-to-sea",
+   "name": "Summit to Sea",
+   "bn": "Middle & Main Mahjong",
+   "u": "https://www.middleandmainmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fsummit-sea-tiles-a-north-carolina-inspired-mahjong-set",
+   "u0": "https://www.middleandmainmahjong.com/products/summit-sea-tiles-a-north-carolina-inspired-mahjong-set",
+   "dc": "https://mahjmatchmaker.com/middle-and-main-mahjong-discount-code",
+   "pa": true,
+   "img": "assets/tiles/v12212/middle-main-mahjong-summit-to-sea.jpg",
+   "tc": "#aed8e4",
+   "group": "Blue",
+   "back": {
+    "b": "#aed8e4"
+   },
+   "pt": [
+    325.0,
+    292.5,
+    1
+   ],
+   "oos": 0,
+   "hol": false
+  },
+  {
+   "key": "www.middleandmainmahjong.com/clearwater-dockside-tiles-a-southern-lake-inspired-mahjong-set",
+   "slug": "middle-main-mahjong-clearwater-dockside",
+   "name": "Clearwater Dockside",
+   "bn": "Middle & Main Mahjong",
+   "u": "https://www.middleandmainmahjong.com/discount/MAHJMATCH?redirect=%2Fproducts%2Fclearwater-dockside-tiles-a-southern-lake-inspired-mahjong-set",
+   "u0": "https://www.middleandmainmahjong.com/products/clearwater-dockside-tiles-a-southern-lake-inspired-mahjong-set",
+   "dc": "https://mahjmatchmaker.com/middle-and-main-mahjong-discount-code",
+   "pa": true,
+   "img": "assets/tiles/v12212/middle-main-mahjong-clearwater-dockside.jpg",
+   "tc": "#a8d2eb",
+   "group": "Blue",
+   "back": {
+    "b": "#a8d2eb"
+   },
+   "pt": [
+    250.0,
+    225.0,
+    1
+   ],
+   "oos": 0,
+   "hol": false
+  }
+ ],
+ "mats": [],
+ "held": []
+}
